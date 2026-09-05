@@ -108,6 +108,7 @@ def anexar(identificador: str, arquivo: Path, legenda: str | None) -> int:
             "manual": True,
         }
     )
+    questao["figuraPendente"] = False
     gravar_json(caminho, dados)
     print(f"Imagem anexada a {identificador}: public/imagens/{slug}/{nome}")
     print("Rode agora:  python3 scripts/gerar_indice.py && python3 scripts/validar_acervo.py")

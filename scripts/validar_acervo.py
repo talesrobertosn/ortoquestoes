@@ -118,6 +118,8 @@ def principal() -> int:
                 avisos.append(f"{onde}: sem ano")
             if questao.get("prova") is None:
                 avisos.append(f"{onde}: sem tipo de prova")
+            if questao.get("figuraPendente"):
+                avisos.append(f"{onde}: cita figura que não veio no PDF de origem")
             if questao.get("subtemasPendentes"):
                 avisos.append(f"{onde}: classificação de subtema pendente de conferência")
             if not questao.get("revisado"):

@@ -762,7 +762,8 @@ def principal() -> int:
 
         if len(questao.alternativas) not in (4, 5):
             alternativas_fora.append(questao.numero)
-        if cita_figura(questao.enunciado) and not questao.imagens:
+        figura_pendente = cita_figura(questao.enunciado) and not questao.imagens
+        if figura_pendente:
             figura_sem_imagem.append(questao.numero)
             questao.avisos.append("enunciado cita figura, nenhuma imagem associada")
             questao.confianca -= 0.2
@@ -810,6 +811,9 @@ def principal() -> int:
             "comentariosComunidade": [],
             "referencias": list(questao.fontes),
             "anulada": anulada,
+            # A interface avisa o leitor em vez de entregar em silêncio uma
+            # questão que pergunta sobre uma figura que não está lá.
+            "figuraPendente": figura_pendente,
             "revisado": False,
             # Etiqueta que veio do PDF não é proposta: é dado de origem.
             "subtemasPendentes": (not do_pdf) and bool(subtemas),

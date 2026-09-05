@@ -171,6 +171,16 @@ export function CartaoQuestao({
 
         <div className="questao__enunciado">{questao.enunciado}</div>
 
+        {questao.figuraPendente && (
+          <div className="estado" style={{ marginBottom: '1.25rem' }}>
+            <p className="estado__titulo">A figura desta questão ainda não está aqui.</p>
+            <p style={{ margin: 0 }}>
+              O enunciado se refere a uma imagem que não veio no arquivo de origem. Ela entra assim
+              que for recuperada — até lá, esta questão fica incompleta.
+            </p>
+          </div>
+        )}
+
         {questao.imagens.length > 0 && (
           <div className="questao__figuras">
             {questao.imagens.map((imagem) => (

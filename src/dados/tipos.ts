@@ -56,6 +56,8 @@ export interface Questao {
   comentariosComunidade?: ComentarioComunidade[]
   referencias: string[]
   anulada: boolean
+  /** Enunciado se refere a uma figura que não veio no PDF de origem. */
+  figuraPendente?: boolean
   revisado: boolean
   /** Subtemas propostos pelo pipeline e ainda não conferidos por humano. */
   subtemasPendentes?: boolean
