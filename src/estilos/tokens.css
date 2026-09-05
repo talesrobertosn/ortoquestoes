@@ -1,0 +1,100 @@
+/* ==========================================================================
+   OrtoQuestões — tokens
+   Tema claro é o padrão. O tema escuro é desenhado à parte, não invertido:
+   as superfícies escuras têm um leve viés verde para acompanhar o verdete,
+   e o destaque ganha luminância para manter contraste acima de 4,5:1.
+   ========================================================================== */
+
+:root {
+  /* Paleta base — tema claro */
+  --porcelana: #f1f3f2;
+  --superficie: #ffffff;
+  --superficie-2: #f7f9f8; /* superfície recuada: cabeçalhos de tabela, campos */
+  --traco: #dce2e0;
+  --traco-forte: #c3ccc9;
+  --grafite: #12181a;
+  --ardosia: #5b686c;
+  --verdete: #14655e;
+  --verdete-tinta: #0f4f49; /* estado pressionado */
+  --verdete-veu: #e6efee; /* fundo de seleção, 1 uso por tela */
+
+  /* Semânticos — só em resultado de resposta */
+  --acerto: #1f7a4d;
+  --acerto-veu: #e8f3ec;
+  --erro: #b3423a;
+  --erro-veu: #f8ebea;
+
+  /* Papéis */
+  --fundo: var(--porcelana);
+  --texto: var(--grafite);
+  --texto-2: var(--ardosia);
+  --sobre-destaque: #ffffff; /* texto sobre o verdete */
+
+  /* Tipografia */
+  --fonte-texto: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  --fonte-dados: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Menlo,
+    Consolas, monospace;
+  --corpo: 1.0625rem; /* 17px */
+  --corpo-menor: 0.9375rem; /* 15px */
+  --meta: 0.8125rem; /* 13px */
+  --entrelinha: 1.6;
+  --coluna-leitura: 68ch;
+
+  /* Estrutura */
+  --raio: 6px;
+  --raio-pequeno: 4px;
+  --sombra: 0 1px 2px rgba(18, 24, 26, 0.06);
+  --borda: 1px solid var(--traco);
+  --toque: 44px; /* alvo mínimo de toque */
+
+  color-scheme: light;
+}
+
+:root[data-tema="escuro"] {
+  --porcelana: #0f1413;
+  --superficie: #171e1d;
+  --superficie-2: #1e2726;
+  --traco: #2a3432;
+  --traco-forte: #3b4745;
+  --grafite: #e7ecea;
+  --ardosia: #9aa8a5;
+  --verdete: #4fb3a5;
+  --verdete-tinta: #6cc7ba;
+  --verdete-veu: #17302e;
+
+  --acerto: #4fbe85;
+  --acerto-veu: #14291f;
+  --erro: #e8776c;
+  --erro-veu: #2c1a18;
+
+  --sobre-destaque: #0f1413;
+  --sombra: none;
+
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) {
+    --porcelana: #0f1413;
+    --superficie: #171e1d;
+    --superficie-2: #1e2726;
+    --traco: #2a3432;
+    --traco-forte: #3b4745;
+    --grafite: #e7ecea;
+    --ardosia: #9aa8a5;
+    --verdete: #4fb3a5;
+    --verdete-tinta: #6cc7ba;
+    --verdete-veu: #17302e;
+
+    --acerto: #4fbe85;
+    --acerto-veu: #14291f;
+    --erro: #e8776c;
+    --erro-veu: #2c1a18;
+
+    --sobre-destaque: #0f1413;
+    --sombra: none;
+
+    color-scheme: dark;
+  }
+}

@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Impressão — a sessão vira um PDF legível pelo comando de impressão.
+   Fundo branco, sem navegação, sem elementos interativos.
+   ========================================================================== */
+
+@media print {
+  :root {
+    --fundo: #ffffff;
+    --superficie: #ffffff;
+    --superficie-2: #ffffff;
+    --texto: #000000;
+    --texto-2: #333333;
+    --traco: #999999;
+    --traco-forte: #666666;
+    --verdete: #000000;
+    --verdete-veu: #ffffff;
+    --acerto: #000000;
+    --acerto-veu: #ffffff;
+    --erro: #000000;
+    --erro-veu: #ffffff;
+    --sombra: none;
+  }
+
+  @page {
+    margin: 16mm;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+
+  .cabecalho,
+  .rodape,
+  .barra-sessao,
+  .questao__acoes,
+  .riscar,
+  .veu,
+  .painel,
+  .pular-para-conteudo,
+  .nao-imprime {
+    display: none !important;
+  }
+
+  .principal {
+    padding: 0;
+  }
+
+  .conteudo {
+    max-width: none;
+    padding: 0;
+  }
+
+  .cartao {
+    border: 0;
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  .cartao__corpo {
+    padding: 0;
+  }
+
+  .alternativa {
+    border-color: #999;
+  }
+
+  .alternativa__letra {
+    background: #fff !important;
+    color: #000 !important;
+    border-right-color: #999;
+  }
+
+  .questao-impressa {
+    break-inside: avoid;
+    padding-bottom: 8mm;
+    margin-bottom: 8mm;
+    border-bottom: 1px solid #ccc;
+  }
+
+  a[href]::after {
+    content: "";
+  }
+
+  .so-impressao {
+    display: block !important;
+  }
+}
+
+.so-impressao {
+  display: none;
+}

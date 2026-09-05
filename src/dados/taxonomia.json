@@ -1,0 +1,219 @@
+{
+  "versao": 1,
+  "observacao": "Taxonomia de dois níveis: tema (arquivo do acervo) e subtemas. Editável — o pipeline de importação só propõe subtemas que existam aqui, e toda proposta entra marcada como pendente de conferência.",
+  "temas": [
+    {
+      "slug": "mao",
+      "nome": "Mão e punho",
+      "subtemas": [
+        "Anatomia e biomecânica da mão",
+        "Síndrome do túnel do carpo",
+        "Compressão do nervo ulnar",
+        "Tenossinovites e dedo em gatilho",
+        "Doença de Dupuytren",
+        "Fraturas do rádio distal",
+        "Fraturas e pseudartrose do escafoide",
+        "Instabilidade do carpo",
+        "Fraturas de metacarpos e falanges",
+        "Lesões tendinosas flexoras e extensoras",
+        "Lesões nervosas periféricas do membro superior",
+        "Reimplante e microcirurgia",
+        "Artrite e artrose da mão e do punho",
+        "Infecções da mão",
+        "Tumores da mão",
+        "Malformações congênitas da mão"
+      ]
+    },
+    {
+      "slug": "ombro-cotovelo",
+      "nome": "Ombro e cotovelo",
+      "subtemas": [
+        "Anatomia e biomecânica do ombro",
+        "Manguito rotador",
+        "Instabilidade glenoumeral",
+        "Lesão SLAP e bíceps",
+        "Capsulite adesiva",
+        "Artrose e artroplastia do ombro",
+        "Fraturas da extremidade proximal do úmero",
+        "Fraturas da clavícula e luxação acromioclavicular",
+        "Fraturas da escápula",
+        "Anatomia e biomecânica do cotovelo",
+        "Epicondilites",
+        "Instabilidade do cotovelo",
+        "Fraturas do úmero distal",
+        "Fraturas do olécrano e da cabeça do rádio",
+        "Artroplastia e rigidez do cotovelo"
+      ]
+    },
+    {
+      "slug": "quadril",
+      "nome": "Quadril",
+      "subtemas": [
+        "Anatomia e biomecânica do quadril",
+        "Artrose do quadril",
+        "Artroplastia total do quadril",
+        "Revisão de artroplastia do quadril",
+        "Impacto femoroacetabular",
+        "Osteonecrose da cabeça femoral",
+        "Fraturas do colo do fêmur",
+        "Fraturas transtrocantéricas",
+        "Fraturas do acetábulo",
+        "Luxação do quadril",
+        "Infecção periprotética",
+        "Osteotomias do quadril"
+      ]
+    },
+    {
+      "slug": "joelho",
+      "nome": "Joelho",
+      "subtemas": [
+        "Anatomia e biomecânica do joelho",
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral",
+        "Lesões meniscais",
+        "Lesões condrais",
+        "Instabilidade femoropatelar",
+        "Artrose do joelho",
+        "Artroplastia total do joelho",
+        "Osteotomias ao redor do joelho",
+        "Fraturas do planalto tibial",
+        "Fraturas do fêmur distal e da patela",
+        "Luxação do joelho e lesão vascular"
+      ]
+    },
+    {
+      "slug": "coluna",
+      "nome": "Coluna",
+      "subtemas": [
+        "Anatomia e biomecânica da coluna",
+        "Hérnia de disco lombar",
+        "Estenose do canal lombar",
+        "Espondilolistese",
+        "Cervicalgia e mielopatia cervical",
+        "Deformidades: escoliose e cifose",
+        "Trauma raquimedular",
+        "Fraturas da coluna toracolombar",
+        "Fraturas da coluna cervical",
+        "Infecções da coluna",
+        "Tumores e metástases da coluna",
+        "Espondiloartrites"
+      ]
+    },
+    {
+      "slug": "pe-tornozelo",
+      "nome": "Pé e tornozelo",
+      "subtemas": [
+        "Anatomia e biomecânica do pé e tornozelo",
+        "Hálux valgo e hálux rígido",
+        "Deformidades dos dedos menores",
+        "Fascite plantar e talalgias",
+        "Tendão calcâneo",
+        "Disfunção do tibial posterior e pé plano",
+        "Pé cavo",
+        "Instabilidade do tornozelo",
+        "Fraturas do tornozelo",
+        "Fraturas do calcâneo e do tálus",
+        "Lesões de Lisfranc e do médio-pé",
+        "Pé diabético e neuroartropatia de Charcot",
+        "Artrodeses e artroplastias do tornozelo"
+      ]
+    },
+    {
+      "slug": "trauma",
+      "nome": "Trauma",
+      "subtemas": [
+        "Atendimento inicial ao politraumatizado",
+        "Princípios de consolidação óssea",
+        "Princípios de fixação interna",
+        "Fixação externa e controle de danos",
+        "Fraturas expostas",
+        "Síndrome compartimental",
+        "Embolia gordurosa",
+        "Retardo de consolidação e pseudartrose",
+        "Consolidação viciosa",
+        "Fraturas da diáfise do úmero",
+        "Fraturas do antebraço",
+        "Fraturas da diáfise do fêmur",
+        "Fraturas da diáfise da tíbia",
+        "Fraturas do anel pélvico",
+        "Lesões vasculares e nervosas associadas ao trauma"
+      ]
+    },
+    {
+      "slug": "pediatria",
+      "nome": "Ortopedia pediátrica",
+      "subtemas": [
+        "Desenvolvimento neuropsicomotor e crescimento",
+        "Displasia do desenvolvimento do quadril",
+        "Doença de Legg-Calvé-Perthes",
+        "Epifisiólise proximal do fêmur",
+        "Pé torto congênito",
+        "Deformidades angulares e rotacionais dos membros",
+        "Discrepância de comprimento dos membros",
+        "Paralisia cerebral",
+        "Mielomeningocele",
+        "Doenças neuromusculares",
+        "Osteogênese imperfeita",
+        "Displasias esqueléticas",
+        "Artrogripose",
+        "Osteocondroses",
+        "Fraturas na criança e lesões fisárias",
+        "Trauma não acidental",
+        "Infecção osteoarticular na criança",
+        "Escoliose idiopática do adolescente"
+      ]
+    },
+    {
+      "slug": "tumores",
+      "nome": "Tumores ósseos e de partes moles",
+      "subtemas": [
+        "Princípios de estadiamento e biópsia",
+        "Lesões ósseas benignas",
+        "Osteossarcoma",
+        "Sarcoma de Ewing",
+        "Condrossarcoma",
+        "Tumor de células gigantes",
+        "Metástases ósseas",
+        "Mieloma múltiplo e linfoma ósseo",
+        "Tumores de partes moles",
+        "Cirurgia de preservação de membro e endopróteses",
+        "Quimioterapia e radioterapia em ortopedia"
+      ]
+    },
+    {
+      "slug": "ciencias-basicas",
+      "nome": "Ciências básicas",
+      "subtemas": [
+        "Biologia do tecido ósseo",
+        "Cartilagem articular",
+        "Tendões e ligamentos",
+        "Músculo esquelético",
+        "Nervo periférico",
+        "Metabolismo ósseo e osteoporose",
+        "Biomateriais e implantes",
+        "Biomecânica geral",
+        "Farmacologia em ortopedia",
+        "Epidemiologia e bioestatística",
+        "Imagem e métodos diagnósticos",
+        "Bioética e medicina legal"
+      ]
+    },
+    {
+      "slug": "ortopedia-geral",
+      "nome": "Ortopedia geral",
+      "subtemas": [
+        "Infecção osteoarticular no adulto",
+        "Osteomielite",
+        "Artrite séptica",
+        "Artrite reumatoide",
+        "Espondiloartrites e artrite psoriásica",
+        "Gota e artropatias por cristais",
+        "Osteoartrose",
+        "Medicina esportiva e lesões por esforço repetitivo",
+        "Órteses, próteses e amputações",
+        "Reabilitação",
+        "Tromboprofilaxia e complicações clínicas"
+      ]
+    }
+  ]
+}

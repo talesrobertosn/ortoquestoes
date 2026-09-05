@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>OrtoQuestões — banco de questões de ortopedia e traumatologia</title>
+    <meta
+      name="description"
+      content="Questões de provas anteriores de TEOT e TARO organizadas por assunto, ano e tipo de prova. Sem cadastro, sem custo."
+    />
+    <meta name="theme-color" content="#F1F3F2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#101615" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OrtoQuestões" />
+    <meta property="og:title" content="OrtoQuestões — banco de questões de ortopedia e traumatologia" />
+    <meta
+      property="og:description"
+      content="Questões de provas anteriores de TEOT e TARO organizadas por assunto, ano e tipo de prova. Sem cadastro, sem custo."
+    />
+    <meta property="og:image" content="./previa.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+    <script>
+      // Aplica o tema antes da primeira pintura, para não haver piscada de tema claro.
+      (function () {
+        try {
+          var t = localStorage.getItem('ortoquestoes:tema')
+          if (t === 'escuro' || t === 'claro') document.documentElement.dataset.tema = t
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="raiz"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

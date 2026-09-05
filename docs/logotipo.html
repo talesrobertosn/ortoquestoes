@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>OrtoQuestões — três direções de logotipo</title>
+<style>
+  body { font: 15px/1.6 system-ui, sans-serif; margin: 0; padding: 2rem; background: #F1F3F2; color: #12181A; }
+  h1 { font-size: 1.4rem; }
+  table { border-collapse: collapse; background: #fff; border: 1px solid #DCE2E0; margin-bottom: 2rem; width: 100%; max-width: 62rem; }
+  th, td { border-bottom: 1px solid #DCE2E0; padding: 0.9rem 1rem; text-align: left; vertical-align: middle; }
+  th { font-size: 0.8rem; color: #5B686C; background: #F7F9F8; }
+  .escuro { background: #0F1413; color: #E7ECEA; padding: 1rem; display: inline-flex; gap: 1rem; align-items: center; border-radius: 6px; }
+  .verdete { color: #14655E; }
+  .nota { max-width: 62rem; color: #5B686C; }
+  svg { display: block; }
+  .linha { display: flex; align-items: center; gap: 1.25rem; }
+</style>
+</head>
+<body>
+<h1>OrtoQuestões — três direções de logotipo</h1>
+<p class="nota">Todas em SVG desenhado em código, uma cor só, sem gradiente e sem sombra. A escolha final é do responsável pelo projeto: para trocar a marca do site inteiro basta mudar a constante <code>DIRECAO_MARCA</code> em <code>src/marca/Simbolo.tsx</code>.</p>
+
+<table>
+  <thead><tr><th>Direção</th><th>16 px</th><th>24 px</th><th>48 px</th><th>Sobre fundo escuro</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>A</strong> — ponto do interrogação vira cabeça de parafuso cortical</td>
+      <td><span id="a16"></span></td><td><span id="a24"></span></td><td><span id="a48"></span></td>
+      <td><span class="escuro" id="ae"></span></td>
+    </tr>
+    <tr>
+      <td><strong>B</strong> — letra Q com cauda de fio de Kirschner <em>(recomendada)</em></td>
+      <td><span id="b16"></span></td><td><span id="b24"></span></td><td><span id="b48"></span></td>
+      <td><span class="escuro" id="be"></span></td>
+    </tr>
+    <tr>
+      <td><strong>C</strong> — corte transversal de osso longo como o O</td>
+      <td><span id="c16"></span></td><td><span id="c24"></span></td><td><span id="c48"></span></td>
+      <td><span class="escuro" id="ce"></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Marca completa, na direção recomendada</h2>
+<div class="linha verdete" style="margin-bottom:1.5rem">
+  <span id="mh"></span>
+  <span id="me"></span>
+</div>
+
+<script>
+const A = '<circle cx="15.9" cy="26.4" r="3.9" stroke="currentColor" stroke-width="2.4" fill="none"/><path d="M9.5 11.2a6.6 6.6 0 1 1 8.4 6.4c-1.4.45-2 1.4-2 2.9v1.1" stroke="currentColor" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M13.6 24.1l4.6 4.6M18.2 24.1l-4.6 4.6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>'
+const B = '<circle cx="14" cy="14" r="9.6" stroke="currentColor" stroke-width="3.3" fill="none"/><path d="M14.37 16.63 16.63 14.37 24.63 22.37 26.2 26.2 22.37 24.63Z" fill="currentColor"/>'
+const C = '<path d="M16 2.6c7.1 0 12.8 5.6 12.8 13.4S22.6 29.4 16 29.4 3.2 23.8 3.2 16 8.9 2.6 16 2.6Z" stroke="currentColor" stroke-width="3.4" fill="none"/><path d="M16.9 9.6c3.7 0 6.3 2.9 6.3 6.6s-2.6 6.6-6.3 6.6-6.4-2.9-6.4-6.6 2.7-6.6 6.4-6.6Z" stroke="currentColor" stroke-width="2.2" fill="none"/>'
+function svg(corpo, tamanho) {
+  return `<svg width="${tamanho}" height="${tamanho}" viewBox="0 0 32 32">${corpo}</svg>`
+}
+const mapa = { a: A, b: B, c: C }
+for (const [chave, corpo] of Object.entries(mapa)) {
+  for (const tamanho of [16, 24, 48]) document.getElementById(chave + tamanho).innerHTML = svg(corpo, tamanho)
+  document.getElementById(chave + 'e').innerHTML = svg(corpo, 24) + svg(corpo, 40)
+}
+document.getElementById('mh').innerHTML =
+  `<span style="display:inline-flex;align-items:center;gap:9px">${svg(B, 26)}<span style="font-size:19px;letter-spacing:-.015em"><b style="font-weight:650">Orto</b><span style="font-weight:400">Questões</span></span></span>`
+document.getElementById('me').innerHTML =
+  `<span style="display:inline-flex;flex-direction:column;align-items:center;gap:6px">${svg(B, 44)}<span style="font-size:15px"><b style="font-weight:650">Orto</b><span style="font-weight:400">Questões</span></span></span>`
+</script>
+</body>
+</html>
