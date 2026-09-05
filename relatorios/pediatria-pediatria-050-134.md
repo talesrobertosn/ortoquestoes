@@ -1,7 +1,7 @@
 # Relatório de importação — Ortopedia pediátrica
 
 - Arquivo: `pediatria-050-134.pdf` (85 páginas)
-- Gerado em: 2026-09-05T13:30:49+00:00
+- Gerado em: 2026-09-05T13:39:59+00:00
 - Camada de texto: sim
 - Gabarito: arquivo separado pediatria-gabarito.pdf (formato grade) — 502 respostas lidas
 
@@ -19,8 +19,9 @@
 - Citam figura sem imagem associada: **1**
 - Sem tipo de prova: **300** | sem ano: **300**
 - Questões revisadas preservadas: **0**
-- Questões repetidas no tema: **26** grupos (54 questões)
+- Questões repetidas no tema: **23** grupos (48 questões)
 - Repetidas com RESPOSTA DIVERGENTE: **2**
+- Questões com imagem, fora da comparação por enunciado: **54**
 
 ## Alertas
 
@@ -56,10 +57,8 @@ Mesmo enunciado em mais de um lugar do banco. Onde a resposta é a mesma, é só
 - `pediatria-0161` (nº 161), `pediatria-0487` (nº 487)
 - `pediatria-0162` (nº 162), `pediatria-0479` (nº 479)
 - `pediatria-0163` (nº 163), `pediatria-0480` (nº 480)
-- `pediatria-0164` (nº 164), `pediatria-0478` (nº 478)
 - `pediatria-0165` (nº 165), `pediatria-0475` (nº 475)
 - `pediatria-0166` (nº 166), `pediatria-0482` (nº 482)
-- `pediatria-0168` (nº 168), `pediatria-0453` (nº 453)
 - `pediatria-0171` (nº 171), `pediatria-0467` (nº 467)
 - `pediatria-0175` (nº 175), `pediatria-0469` (nº 469)
 - `pediatria-0177` (nº 177), `pediatria-0405` (nº 405)
@@ -70,7 +69,6 @@ Mesmo enunciado em mais de um lugar do banco. Onde a resposta é a mesma, é só
 - `pediatria-0264` (nº 264), `pediatria-0411` (nº 411), `pediatria-0452` (nº 452)
 - `pediatria-0265` (nº 265), `pediatria-0456` (nº 456)
 - `pediatria-0266` (nº 266), `pediatria-0417` (nº 417), `pediatria-0457` (nº 457)
-- `pediatria-0267` (nº 267), `pediatria-0458` (nº 458)
 - `pediatria-0270` (nº 270), `pediatria-0462` (nº 462)
 - `pediatria-0271` (nº 271), `pediatria-0466` (nº 466)
 - `pediatria-0390` (nº 390), `pediatria-0408` (nº 408)

@@ -87,24 +87,44 @@ PADRAO_FONTE = re.compile(
     re.IGNORECASE,
 )
 
-# Citar "radiografia" não quer dizer que a questão traga uma. Só conta como
-# figura ausente quando há também linguagem que aponta para algo mostrado —
-# "a imagem a seguir", "a linha assinalada". Sem esse rigor o relatório pede
-# dezenas de imagens que a questão nunca teve.
-PADRAO_VISUAL = re.compile(
-    r"\b(figura|figuras|imagem|imagens|radiografi\w*|tomografi\w*|resson\w*|"
-    r"foto\w*|esquema|gr[áa]fico|exame de imagem)\b",
+# Citar "radiografia" não quer dizer que a questão traga uma: em
+# "a radiografia está indicada se", nada é mostrado. Só conta como figura
+# ausente quando a frase aponta para algo exibido. Três formas cobrem os casos
+# reais sem arrastar falso positivo junto.
+# Só as formas substantivas. "achados radiográficos abaixo" fala das
+# alternativas, não de uma radiografia mostrada.
+# O \b inicial não é decoração: sem ele, "gráficos" casa dentro de
+# "radiográficos" e a questão vira falso positivo.
+PADRAO_VISUAL = (
+    r"\b(figuras?|imagem|imagens|radiografias?|tomografias?|resson[âa]ncias?|"
+    r"fotografias?|fotos?|esquemas?|gr[áa]ficos?|exame de imagem)\b"
+)
+# "a figura abaixo", "a imagem a seguir"
+PADRAO_LOCATIVO = re.compile(
+    PADRAO_VISUAL + r"[^.;]{0,20}?\b(abaixo|acima|a seguir|ao lado|seguinte|em anexo)\b",
     re.IGNORECASE,
 )
-PADRAO_DEITICO = re.compile(
-    r"\b(abaixo|a seguir|acima|ao lado|em anexo|apresentad\w+|assinalad\w+|indicad\w+|"
-    r"demonstrad\w+|ilustrad\w+|representad\w+|tra[çc]ad\w+|mostrad\w+|deste caso|do caso)\b",
+# "traçada na figura", "apontada na imagem"
+PADRAO_MOSTRA_EM = re.compile(
+    r"\b(assinalad|apontad|tra[çc]ad|representad|mostrad|destacad|ilustrad|demonstrad)\w*"
+    r"\s+(na|no|em|pela|pelo|nas|nos)\s+" + PADRAO_VISUAL,
     re.IGNORECASE,
+)
+# "o dermátomo assinalado", "a linha traçada" — sem substantivo visual, mas
+# inequivocamente sobre algo mostrado. Ficam de fora "indicada" e "apontada",
+# que em português quase sempre significam "recomendada" e "citada":
+# "a radiografia está indicada", "a idade apontada na literatura".
+PADRAO_APONTA = re.compile(
+    r"\b(assinalad|tra[çc]ad|destacad)\w+\b", re.IGNORECASE
 )
 
 
 def cita_figura(enunciado: str) -> bool:
-    return bool(PADRAO_VISUAL.search(enunciado) and PADRAO_DEITICO.search(enunciado))
+    return bool(
+        PADRAO_LOCATIVO.search(enunciado)
+        or PADRAO_MOSTRA_EM.search(enunciado)
+        or PADRAO_APONTA.search(enunciado)
+    )
 PADRAO_CABECALHO_GABARITO = re.compile(
     r"^\s*(gabarito|respostas|chave de respostas|gabarito oficial|folha de respostas)\b",
     re.IGNORECASE,
@@ -508,9 +528,52 @@ def salvar_figura(documento, figura: Figura, destino: Path):
     return base.get("width"), base.get("height"), caminho.name
 
 
+def _limites_de_tinta(pixmap, limiar: int = 245):
+    """Caixa dos pixels que não são fundo, em fração da largura e da altura."""
+    cinza = pymupdf.Pixmap(pymupdf.csGRAY, pixmap)
+    largura, altura, passo = cinza.width, cinza.height, cinza.stride
+    dados = cinza.samples
+    linhas = [
+        y for y in range(altura) if min(dados[y * passo : y * passo + largura]) < limiar
+    ]
+    if not linhas:
+        return None
+    colunas = [x for x in range(largura) if min(dados[x::passo][:altura]) < limiar]
+    if not colunas:
+        return None
+    return (
+        colunas[0] / largura,
+        linhas[0] / altura,
+        (colunas[-1] + 1) / largura,
+        (linhas[-1] + 1) / altura,
+    )
+
+
 def renderizar_area(documento, pagina: int, retangulo, destino: Path, dpi: int = 200):
+    """
+    Renderiza uma área da página. O recorte inicial é a largura inteira da
+    página, então a imagem sai com muito fundo em volta: um segundo passe
+    aperta o enquadramento na tinta de verdade.
+    """
     matriz = pymupdf.Matrix(dpi / 72, dpi / 72)
-    pixmap = documento[pagina].get_pixmap(matrix=matriz, clip=retangulo)
+    pagina_pdf = documento[pagina]
+    pixmap = pagina_pdf.get_pixmap(matrix=matriz, clip=retangulo)
+
+    limites = _limites_de_tinta(pixmap)
+    if limites:
+        x0f, y0f, x1f, y1f = limites
+        largura = retangulo.width
+        altura = retangulo.height
+        folga_x, folga_y = largura * 0.01, altura * 0.02
+        apertado = pymupdf.Rect(
+            max(retangulo.x0, retangulo.x0 + largura * x0f - folga_x),
+            max(retangulo.y0, retangulo.y0 + altura * y0f - folga_y),
+            min(retangulo.x1, retangulo.x0 + largura * x1f + folga_x),
+            min(retangulo.y1, retangulo.y0 + altura * y1f + folga_y),
+        )
+        if apertado.width > 30 and apertado.height > 30:
+            pixmap = pagina_pdf.get_pixmap(matrix=matriz, clip=apertado)
+
     destino.parent.mkdir(parents=True, exist_ok=True)
     caminho = destino.with_suffix(".png")
     pixmap.save(caminho)
@@ -603,7 +666,16 @@ def principal() -> int:
         linhas_corpo = linhas
     else:
         indice, motivo = localizar_gabarito_interno(linhas, len(documento))
-        if indice >= 0:
+        paginas_grade = mod_gabarito.paginas_de_grade(documento)
+        if paginas_grade:
+            # Folha de respostas no fim do próprio arquivo, sem cabeçalho algum.
+            chave = mod_gabarito.ler_grade(documento, paginas_grade)
+            linhas_corpo = [l for l in linhas if l.pagina not in set(paginas_grade)]
+            origem_gabarito = (
+                "folha de respostas no próprio arquivo, páginas "
+                + ", ".join(str(p + 1) for p in paginas_grade)
+            )
+        elif indice >= 0:
             linhas_corpo = linhas[:indice]
             chave = mod_gabarito.ler_lista("\n".join(l.texto for l in linhas[indice:]))
             origem_gabarito = motivo
@@ -865,8 +937,15 @@ def principal() -> int:
                 return normalizar(alternativa["texto"]).strip(" .")
         return None
 
+    # Questão com imagem fica fora da comparação por enunciado: duas questões
+    # podem trazer a mesma frase ("o dermátomo assinalado corresponde a raiz
+    # de") e figuras diferentes. O que as distingue está na imagem, não no
+    # texto — tratá-las como cópia inventaria um conflito de gabarito.
+    com_imagem = sum(1 for q in todas if q.get("imagens"))
     grupos: dict[str, list[dict]] = {}
     for questao in todas:
+        if questao.get("imagens"):
+            continue
         grupos.setdefault(normalizar(questao["enunciado"])[:220], []).append(questao)
 
     repetidas = [g for g in grupos.values() if len(g) > 1]
@@ -945,6 +1024,9 @@ def principal() -> int:
         f"({sum(len(g) for g in repetidas)} questões)"
     )
     r.append(f"- Repetidas com RESPOSTA DIVERGENTE: **{len(conflitos)}**")
+    r.append(
+        f"- Questões com imagem, fora da comparação por enunciado: **{com_imagem}**"
+    )
     r.append("")
 
     if alertas:

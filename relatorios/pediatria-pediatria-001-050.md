@@ -1,7 +1,7 @@
 # Relatório de importação — Ortopedia pediátrica
 
 - Arquivo: `pediatria-001-050.pdf` (50 páginas)
-- Gerado em: 2026-09-05T13:30:44+00:00
+- Gerado em: 2026-09-05T13:39:58+00:00
 - Camada de texto: sim
 - Gabarito: arquivo separado pediatria-gabarito.pdf (formato grade) — 502 respostas lidas
 - Faixa importada: 1–202 (5 questões do arquivo ficaram de fora)
@@ -22,6 +22,7 @@
 - Questões revisadas preservadas: **0**
 - Questões repetidas no tema: **1** grupos (2 questões)
 - Repetidas com RESPOSTA DIVERGENTE: **0**
+- Questões com imagem, fora da comparação por enunciado: **19**
 
 ## Alertas
 

@@ -63,12 +63,34 @@ def _colunas(xs: list[float], tolerancia: float = 25.0) -> list[float]:
     return [min(g) for g in grupos]
 
 
-def ler_grade(documento) -> Gabarito:
+def paginas_de_grade(documento, minimo: int = 20) -> list[int]:
+    """
+    Páginas que parecem folha de respostas: muitos números soltos e muitas
+    letras soltas. Serve para achar o gabarito dentro do próprio arquivo de
+    questões quando não há cabeçalho "GABARITO" nenhum — e para não confundir
+    as páginas de questão, onde a alternativa é "A)" e não "A".
+    """
+    encontradas: list[int] = []
+    for numero in range(len(documento)):
+        palavras = documento[numero].get_text("words")
+        letras = sum(1 for p in palavras if re.fullmatch(r"[A-Ea-e]", p[4]))
+        numeros = sum(1 for p in palavras if re.fullmatch(r"\d{1,4}", p[4]))
+        outras = sum(
+            1 for p in palavras if not re.fullmatch(r"[A-Ea-e]|\d{1,4}", p[4])
+        )
+        if letras >= minimo and (numeros >= minimo or letras >= minimo * 2):
+            if outras <= (letras + numeros) * 0.25:
+                encontradas.append(numero)
+    return encontradas
+
+
+def ler_grade(documento, paginas: list[int] | None = None) -> Gabarito:
     gabarito = Gabarito(formato="grade")
-    paginas: list[dict] = []
+    alvo = list(range(len(documento))) if paginas is None else list(paginas)
+    resultado: list[dict] = []
 
     xs_numericos: list[float] = []
-    for numero in range(len(documento)):
+    for numero in alvo:
         palavras = documento[numero].get_text("words")
         for palavra in palavras:
             if re.fullmatch(r"\d{1,4}", palavra[4]):
@@ -81,7 +103,7 @@ def ler_grade(documento) -> Gabarito:
         )
         return gabarito
 
-    for numero in range(len(documento)):
+    for numero in alvo:
         palavras = documento[numero].get_text("words")
         linhas = _agrupar_linhas(palavras)
         celulas: dict[tuple[int, int], dict] = {}
@@ -98,7 +120,7 @@ def ler_grade(documento) -> Gabarito:
                     celulas.setdefault((indice_linha, coluna), {})["letra"] = texto.upper()
                 elif re.fullmatch(r"(?i)anulad[ao]|anul\.?|nula", texto):
                     celulas.setdefault((indice_linha, coluna), {})["anulada"] = True
-        paginas.append(
+        resultado.append(
             {
                 "pagina": numero,
                 "linhas": len(linhas),
@@ -108,8 +130,8 @@ def ler_grade(documento) -> Gabarito:
         )
 
     # Páginas sem números: inferir a partir da primeira página numerada.
-    ancora = next((p for p in paginas if p["tem_numeros"]), None)
-    for pagina in paginas:
+    ancora = next((p for p in resultado if p["tem_numeros"]), None)
+    for pagina in resultado:
         if pagina["tem_numeros"]:
             continue
         if ancora is None:
@@ -120,10 +142,12 @@ def ler_grade(documento) -> Gabarito:
             continue
         # Quantas respostas cabem numa página completa, medido na página-âncora.
         por_pagina = len(ancora["celulas"])
+        indice_pagina = resultado.index(pagina)
+        indice_ancora = resultado.index(ancora)
         inicio_ancora = min(
             c["numero"] for c in ancora["celulas"].values() if "numero" in c
         )
-        distancia = ancora["pagina"] - pagina["pagina"]
+        distancia = indice_ancora - indice_pagina
         inicio = inicio_ancora - distancia * por_pagina
         linhas_por_coluna = pagina["linhas"]
         for (linha, coluna), celula in pagina["celulas"].items():
@@ -139,7 +163,7 @@ def ler_grade(documento) -> Gabarito:
             f"{inicio + por_pagina - 1}."
         )
 
-    for pagina in paginas:
+    for pagina in resultado:
         for celula in pagina["celulas"].values():
             numero = celula.get("numero")
             if numero is None:

@@ -191,6 +191,7 @@ scripts/texto_pdf.py            extração por identificador de glifo, para font
 scripts/gabarito.py             leitura de gabarito em lista ou em folha de respostas
 fixtures/gerar_pdf_teste.py     PDF sintético para exercitar o pipeline
 fixtures/verificacao.mjs        verificação de ponta a ponta no navegador
+fixtures/testar_deteccao.py     casos que o detector de figura ausente precisa acertar
 docs/logotipo.html              as três direções de logotipo, lado a lado
 ```
 
@@ -235,6 +236,12 @@ CHROMIUM=/caminho/do/chromium node fixtures/verificacao.mjs
 A verificação exercita: filtros e contadores, dez questões respondidas pelo teclado, mapa pelo
 atalho, resumo, link direto de questão, id inexistente, 320 pixels sem rolagem horizontal e sem
 texto cortado, tema escuro, funcionamento com `localStorage` bloqueado e console limpo.
+
+O detector de figura ausente tem teste próprio, com casos tirados de enunciados reais:
+
+```bash
+python3 fixtures/testar_deteccao.py
+```
 
 Para exercitar o pipeline sem um PDF real:
 
