@@ -2,7 +2,9 @@ name: Publicar no GitHub Pages
 
 on:
   push:
-    branches: [main]
+    # O repositório ainda não tem branch principal: enquanto não tiver, a
+    # publicação sai da branch de trabalho. Ao criar a main, ela assume.
+    branches: [main, master, "claude/**"]
   workflow_dispatch:
 
 permissions:
@@ -24,6 +26,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Testar o detector de figura ausente
+        run: python3 fixtures/testar_deteccao.py
       - name: Validar o acervo
         run: python3 scripts/validar_acervo.py
       - name: Construir

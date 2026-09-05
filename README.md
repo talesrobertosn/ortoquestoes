@@ -168,8 +168,26 @@ npm run build
 git add -A && git commit -m "acervo: importa tema X" && git push
 ```
 
-O workflow `.github/workflows/publicar.yml` publica no GitHub Pages a cada push na branch padrão.
-Para funcionar, é preciso habilitar uma vez em **Settings → Pages → Source: GitHub Actions**.
+### Primeira publicação
+
+Uma vez só, no repositório: **Settings → Pages → Source: GitHub Actions**.
+
+Feito isso, `.github/workflows/publicar.yml` publica a cada push. Ele valida o acervo e roda os
+testes antes de construir: se a validação falhar, nada vai ao ar. O endereço fica
+
+```
+https://<usuario>.github.io/ortoquestoes/
+```
+
+O workflow dispara em `main`, `master` e nas branches `claude/**` — enquanto o repositório não
+tiver branch principal, a publicação sai da branch de trabalho.
+
+### Subir o build à mão
+
+Se preferir não usar Actions, `npm run build` gera `dist/`, que é o site inteiro e funciona em
+qualquer hospedagem estática. Para o GitHub Pages por branch, jogue o conteúdo de `dist/` na raiz
+de uma branch `gh-pages` e aponte **Settings → Pages → Source: Deploy from a branch**. O
+`.nojekyll` já vai junto no build, para o Pages não tentar processar os arquivos com Jekyll.
 
 ---
 
