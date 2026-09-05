@@ -969,7 +969,15 @@ def principal() -> int:
     r.append(f"- Questões sem gabarito: **{len(sem_gabarito)}**")
     r.append(f"- Alternativas fora de 4 ou 5: **{len(alternativas_fora)}**")
     r.append(f"- Etiquetas de assunto lidas do PDF: **{com_etiqueta}** de {len(questoes)}")
-    r.append(f"- Imagens extraídas: **{extraidas}** | figuras renderizadas: **{renderizadas}**")
+    if argumentos.seco:
+        r.append(
+            "- Imagens: **não extraídas** (modo seco). A contagem de figuras ausentes abaixo "
+            "não vale nada nesta execução."
+        )
+    else:
+        r.append(
+            f"- Imagens extraídas: **{extraidas}** | figuras renderizadas: **{renderizadas}**"
+        )
     r.append(
         "- Créditos de figura movidos do enunciado para as referências: "
         f"**{sum(1 for q in questoes if q.fontes)}**"
