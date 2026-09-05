@@ -9,3 +9,14 @@ __pycache__/
 # repositório aberto é decisão do responsável, não padrão do projeto.
 pdfs/*.pdf
 fixtures/*.pdf
+
+# Artefatos de compilação nunca voltam para a raiz do repositório: o site
+# construído colide com o index.html de código-fonte e quebra o build.
+tsconfig.tsbuildinfo
+/acervo/
+/assets/
+/imagens/
+/marca/
+/favicon.svg
+/previa.png
+/.nojekyll

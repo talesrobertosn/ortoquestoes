@@ -182,6 +182,11 @@ https://<usuario>.github.io/ortoquestoes/
 O workflow dispara em `main`, `master` e nas branches `claude/**` — enquanto o repositório não
 tiver branch principal, a publicação sai da branch de trabalho.
 
+> **Nunca copie o conteúdo de `dist/` para a raiz do repositório.** O `index.html` construído
+> ocupa o mesmo caminho do `index.html` que é o código-fonte, e sobrescrevê-lo quebra o build
+> (`Rollup failed to resolve import "/ortoquestoes/assets/..."`). O site publicado sai do
+> workflow ou de uma branch separada, nunca de dentro da branch de código.
+
 ### Subir o build à mão
 
 Se preferir não usar Actions, `npm run build` gera `dist/`, que é o site inteiro e funciona em
