@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
 import type { Questao } from '../dados/tipos'
+import { formatarDuracao, segundosRestantes } from '../dados/tipos'
 import { CartaoQuestao } from '../componentes/CartaoQuestao'
 import { MapaQuestoes } from '../componentes/MapaQuestoes'
 import { Painel } from '../componentes/Painel'
@@ -42,6 +43,19 @@ export function Sessao() {
 
   const respondidas = sessao ? Object.keys(sessao.respostas).length : 0
   const painelAberto = mapaAberto || atalhosAbertos
+  const simulado = !!sessao?.simulado
+
+  // Cronômetro do simulado. O relógio corre no mundo: fechar a aba não pausa
+  // a prova, e reabrir mostra o tempo que sobrou de verdade.
+  const [restante, definirRestante] = useState<number | null>(() =>
+    sessao ? segundosRestantes(sessao) : null,
+  )
+  useEffect(() => {
+    if (!sessao || !sessao.limiteSegundos || sessao.concluidaEm) return
+    definirRestante(segundosRestantes(sessao))
+    const relogio = window.setInterval(() => definirRestante(segundosRestantes(sessao)), 1000)
+    return () => window.clearInterval(relogio)
+  }, [sessao])
 
   useEffect(() => {
     if (!sessao || painelAberto) return
@@ -71,6 +85,14 @@ export function Sessao() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' })
   }, [posicao])
+
+  // Tempo esgotado encerra o simulado sozinho e leva ao resumo.
+  useEffect(() => {
+    if (restante === null || restante > 0) return
+    if (!sessao || sessao.concluidaEm) return
+    finalizar()
+    navegar('/resumo')
+  }, [restante, sessao, finalizar])
 
   if (!sessao || total === 0) {
     return (
@@ -130,6 +152,15 @@ export function Sessao() {
           <span className="barra-sessao__texto">
             {respondidas} de {total}
           </span>
+          {restante !== null && (
+            <span
+              className={'cronometro' + (restante <= 300 ? ' cronometro--acabando' : '')}
+              role="timer"
+              aria-label={`Tempo restante do simulado: ${formatarDuracao(restante)}`}
+            >
+              {formatarDuracao(restante)}
+            </span>
+          )}
           <div
             className="progresso"
             role="progressbar"
@@ -181,6 +212,7 @@ export function Sessao() {
           aoRevisar={() => alternarRevisar(questaoAtual.id)}
           aoAvancar={avancar}
           atalhosAtivos={!painelAberto}
+          revelarResposta={!simulado}
         />
       ) : (
         <Estado titulo="Esta questão saiu do acervo.">
@@ -210,7 +242,7 @@ export function Sessao() {
             </button>
           )}
           <button type="button" className="botao" onClick={concluir}>
-            Encerrar e ver resumo
+            {simulado ? 'Entregar o simulado' : 'Encerrar e ver resumo'}
           </button>
           <button
             type="button"
@@ -236,6 +268,7 @@ export function Sessao() {
           ids={sessao.ids}
           respostas={sessao.respostas}
           revisar={sessao.revisar}
+          revelar={!simulado}
           posicao={posicao}
           aoEscolher={(i) => {
             irPara(i)

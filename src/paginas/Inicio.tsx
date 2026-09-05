@@ -1,16 +1,17 @@
 import { useMemo } from 'react'
 import { usarIndice } from '../dados/usarIndice'
-import { contar } from '../dados/acervo'
+import { contar, montarSessao } from '../dados/acervo'
 import { FILTROS_VAZIOS } from '../dados/tipos'
-import { href } from '../util/rotas'
+import { href, navegar } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
-import { lerHistorico } from '../estado/sessao'
+import { lerHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 
 export function Inicio() {
   const { indice, carregando } = usarIndice()
+  const { iniciar } = usarSessao()
   const [sessao] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
 
   const contagens = useMemo(
@@ -24,6 +25,14 @@ export function Inicio() {
   const maiorTema = contagens
     ? Math.max(1, ...Object.values(contagens.porTema))
     : 1
+
+  /** Treino rápido: uma sessão embaralhada de todo o acervo, num clique. */
+  function treinoRapido(quantidade: number) {
+    if (!indice) return
+    const filtros = { ...FILTROS_VAZIOS, embaralhar: true, limite: quantidade }
+    iniciar(filtros, montarSessao(indice, filtros, Date.now()))
+    navegar('/sessao')
+  }
 
   const sessaoEmAndamento =
     sessao && !sessao.concluidaEm && Object.keys(sessao.respostas).length < sessao.ids.length
@@ -72,9 +81,29 @@ export function Inicio() {
 
       {indice && contagens && indice.total > 0 && (
         <>
+          <section className="treino-rapido">
+            <h2 className="treino-rapido__titulo">Treino rápido</h2>
+            <p className="meta">
+              Questões sorteadas de todo o acervo. Começa na hora, sem escolher nada.
+            </p>
+            <div className="linha linha--empilha-celular" style={{ marginTop: '0.75rem' }}>
+              {[10, 15, 20].map((quantidade) => (
+                <button
+                  key={quantidade}
+                  type="button"
+                  className="botao botao--principal botao--grande"
+                  onClick={() => treinoRapido(quantidade)}
+                  disabled={contagens.total < quantidade}
+                >
+                  <span className="numerico">{quantidade}</span> questões
+                </button>
+              ))}
+            </div>
+          </section>
+
           <div className="linha linha--empilha-celular">
-            <a className="botao botao--principal botao--grande" href={href('/treinar')}>
-              Começar a responder
+            <a className="botao botao--grande" href={href('/treinar')}>
+              Montar uma sessão com filtros
             </a>
             {sessaoEmAndamento && (
               <a className="botao botao--grande" href={href('/sessao')}>

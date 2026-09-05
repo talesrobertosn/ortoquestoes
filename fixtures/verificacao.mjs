@@ -30,7 +30,7 @@ checar(
 )
 
 console.log('\n2. Montagem de sessão')
-await pagina.click('text=Começar a responder')
+await pagina.click('text=Montar uma sessão com filtros')
 await pagina.waitForSelector('.seletor')
 const naoAnuladas = indice.questoes.filter((q) => q.an !== 1).length
 const textoBotao = await pagina.locator('button:has-text("Responder")').last().innerText()
@@ -74,7 +74,62 @@ if (await caixas.count() >= 2) {
   await pagina.click('.seletor__rodape button:has-text("Limpar")')
 }
 
+console.log('\n3b. Treino rápido')
+await pagina.goto(BASE, { waitUntil: 'networkidle' })
+await pagina.waitForSelector('.treino-rapido')
+await pagina.click('.treino-rapido button:has-text("15")')
+await pagina.waitForSelector('.alternativa')
+const totalRapido = await pagina.locator('.barra-sessao__texto').innerText()
+checar(totalRapido.endsWith('de 15'), 'treino rápido monta 15 questões', totalRapido)
+checar(
+  (await pagina.locator('.cronometro').count()) === 0,
+  'treino rápido não tem cronômetro',
+)
+
+console.log('\n3c. Simulado com tempo')
+await pagina.goto(BASE + '#/treinar', { waitUntil: 'networkidle' })
+await pagina.waitForSelector('.seletor')
+await pagina.locator('.interruptor__trilho').click()
+await pagina.click('.opcao-segmento:has-text("1 hora")')
+await pagina.click('button.opcao-segmento:has-text("10")')
+await pagina.click('button:has-text("Iniciar simulado")')
+await pagina.waitForSelector('.alternativa')
+const relogio = await pagina.locator('.cronometro').innerText()
+checar(/^0?59:\d\d$|^1:00:00$|^59:\d\d$/.test(relogio), 'cronômetro conta de 1 hora', relogio)
+await pagina.keyboard.press('1')
+await pagina.waitForTimeout(200)
+checar(
+  (await pagina.locator('.resultado--acerto, .resultado--erro').count()) === 0,
+  'simulado não revela o gabarito ao marcar',
+)
+checar(
+  (await pagina.locator('.alternativa--certa, .alternativa--errada').count()) === 0,
+  'simulado não marca a alternativa correta',
+)
+checar(
+  (await pagina.locator('.alternativa--escolhida').count()) === 1,
+  'a alternativa marcada fica destacada',
+)
+checar(
+  (await pagina.locator('button:has-text("Comentar esta questão")').count()) === 0,
+  'formulário de comentário fica fora do simulado (o e-mail traz o gabarito)',
+)
+await pagina.keyboard.press('2')
+await pagina.waitForTimeout(200)
+checar(
+  await pagina.locator('.alternativa').nth(1).evaluate((e) => e.className.includes('escolhida')),
+  'dá para trocar a resposta durante o simulado',
+)
+await pagina.click('button:has-text("Entregar o simulado")')
+await pagina.waitForSelector('h1:has-text("Resultado do simulado")')
+checar(true, 'entregar leva ao resultado do simulado')
+
 console.log('\n4. Responder dez questões pelo teclado')
+// Os testes de treino rápido e simulado saíram da tela de montagem: volta e
+// monta de novo, agora no modo comum.
+await pagina.goto(BASE + '#/treinar', { waitUntil: 'networkidle' })
+await pagina.waitForSelector('.seletor')
+await pagina.click('button.opcao-segmento:has-text("10")')
 await pagina.locator('button:has-text("Responder")').last().click()
 await pagina.waitForSelector('.alternativa')
 for (let i = 0; i < 10; i++) {

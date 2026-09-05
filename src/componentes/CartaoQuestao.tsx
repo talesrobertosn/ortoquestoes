@@ -20,6 +20,11 @@ interface Props {
   aoRevisar: () => void
   aoAvancar?: () => void
   atalhosAtivos?: boolean
+  /**
+   * Em simulado fica falso: a resposta é registrada, mas o gabarito só aparece
+   * no fim. Enquanto isso a alternativa continua trocável, como numa prova.
+   */
+  revelarResposta?: boolean
 }
 
 export function CartaoQuestao({
@@ -36,11 +41,15 @@ export function CartaoQuestao({
   aoRevisar,
   aoAvancar,
   atalhosAtivos = true,
+  revelarResposta = true,
 }: Props) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
   const [copiado, definirCopiado] = useState(false)
   const inicio = useRef<number>(Date.now())
   const respondida = !!resposta
+  const mostrarGabarito = respondida && revelarResposta
+  const marcada = escolhida ?? resposta?.escolhida ?? null
+  const travada = mostrarGabarito
 
   useEffect(() => {
     definirEscolhida(null)
@@ -54,10 +63,17 @@ export function CartaoQuestao({
   )
 
   function confirmar(letra: Letra) {
-    if (respondida) return
+    if (travada) return
     const correta = questao.anulada || !questao.gabarito ? null : letra === questao.gabarito
     const segundos = Math.max(1, Math.round((Date.now() - inicio.current) / 1000))
     aoResponder(letra, correta, segundos)
+  }
+
+  /** Em simulado marcar já registra; no treino comum ainda passa pelo botão. */
+  function escolher(letra: Letra) {
+    if (travada) return
+    definirEscolhida(letra)
+    if (!revelarResposta) confirmar(letra)
   }
 
   useEffect(() => {
@@ -71,16 +87,16 @@ export function CartaoQuestao({
       if (Number.isInteger(posicao) && posicao >= 0 && posicao < letrasDisponiveis.length) {
         evento.preventDefault()
         const letra = letrasDisponiveis[posicao]
-        if (respondida) return
+        if (travada) return
         if (evento.shiftKey) aoRiscar(letra)
-        else definirEscolhida(letra)
+        else escolher(letra)
         return
       }
 
       if (evento.key === 'Enter') {
         evento.preventDefault()
-        if (!respondida && escolhida) confirmar(escolhida)
-        else if (respondida) aoAvancar?.()
+        if (!travada && revelarResposta && escolhida) confirmar(escolhida)
+        else aoAvancar?.()
         return
       }
 
@@ -212,7 +228,7 @@ export function CartaoQuestao({
             const classes = ['alternativa']
             let marca: { texto: string; icone: 'certo' | 'errado' } | null = null
 
-            if (respondida) {
+            if (mostrarGabarito) {
               const eGabarito = questao.gabarito === letra
               const eEscolhida = resposta!.escolhida === letra
               if (eGabarito) {
@@ -224,7 +240,7 @@ export function CartaoQuestao({
                 marca = { texto: 'Sua resposta', icone: 'errado' }
               }
               if (eEscolhida && eGabarito) marca = { texto: 'Sua resposta, correta', icone: 'certo' }
-            } else if (escolhida === letra) {
+            } else if (marcada === letra) {
               classes.push('alternativa--escolhida')
             }
             if (riscada) classes.push('alternativa--riscada')
@@ -234,9 +250,9 @@ export function CartaoQuestao({
                 <button
                   type="button"
                   className={classes.join(' ')}
-                  onClick={() => (respondida ? undefined : definirEscolhida(letra))}
-                  disabled={respondida}
-                  aria-pressed={!respondida ? escolhida === letra : undefined}
+                  onClick={() => escolher(letra)}
+                  disabled={travada}
+                  aria-pressed={!travada ? marcada === letra : undefined}
                 >
                   <span className="alternativa__letra" aria-hidden="true">
                     {letra}
@@ -252,7 +268,7 @@ export function CartaoQuestao({
                     </span>
                   )}
                 </button>
-                {!respondida && (
+                {!travada && (
                   <button
                     type="button"
                     className="riscar nao-imprime"
@@ -269,7 +285,13 @@ export function CartaoQuestao({
           })}
         </ul>
 
-        {!respondida ? (
+        {!revelarResposta ? (
+          <div className="resultado resultado--neutro" role="status">
+            {marcada
+              ? `Resposta marcada: ${marcada}. Pode trocar até o fim do simulado.`
+              : 'Marque uma alternativa. O gabarito aparece quando o simulado terminar.'}
+          </div>
+        ) : !respondida ? (
           <div className="linha nao-imprime acao-responder">
             <button
               type="button"
@@ -288,7 +310,7 @@ export function CartaoQuestao({
           <Resultado questao={questao} resposta={resposta!} />
         )}
 
-        {respondida && (
+        {mostrarGabarito && (
           <div className="comentario">
             <p className="comentario__titulo">COMENTÁRIO</p>
             {questao.comentario ? (
@@ -360,7 +382,7 @@ export function CartaoQuestao({
         )}
 
         <div className="linha nao-imprime" style={{ marginTop: '1rem' }}>
-          {respondida && <ContribuirComentario questao={questao} />}
+          {mostrarGabarito && <ContribuirComentario questao={questao} />}
           <a className="botao botao--fantasma" href={href(`/contato?questao=${questao.id}`)}>
             Relatar erro nesta questão
           </a>

@@ -10,12 +10,15 @@ export function MapaQuestoes({
   revisar,
   posicao,
   aoEscolher,
+  revelar = true,
 }: {
   ids: string[]
   respostas: Record<string, Resposta>
   revisar: string[]
   posicao: number
   aoEscolher: (indice: number) => void
+  /** Em simulado o mapa mostra só o que foi respondido, sem dizer se acertou. */
+  revelar?: boolean
 }) {
   return (
     <>
@@ -26,7 +29,11 @@ export function MapaQuestoes({
           const classes = ['mapa__item']
           let glifo = '·'
           let estado = 'não respondida'
-          if (resposta) {
+          if (resposta && !revelar) {
+            classes.push('mapa__item--marcada')
+            glifo = '•'
+            estado = 'respondida'
+          } else if (resposta) {
             if (resposta.correta === true) {
               classes.push('mapa__item--certa')
               glifo = '✓'
@@ -65,6 +72,13 @@ export function MapaQuestoes({
       </div>
 
       <div className="legenda">
+        {!revelar && (
+          <span className="legenda__item">
+            <span aria-hidden="true">•</span> respondida
+          </span>
+        )}
+        {revelar && (
+          <>
         <span className="legenda__item">
           <span aria-hidden="true">✓</span> correta
         </span>
@@ -77,6 +91,8 @@ export function MapaQuestoes({
         <span className="legenda__item">
           <span aria-hidden="true">–</span> anulada
         </span>
+          </>
+        )}
         <span className="legenda__item">contorno tracejado: marcada para revisão</span>
       </div>
     </>

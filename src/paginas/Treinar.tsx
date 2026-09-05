@@ -12,6 +12,12 @@ import { href } from '../util/rotas'
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
 const LIMITES = [10, 20, 30, 50, 100]
+const DURACOES: Array<[number, string]> = [
+  [60, '1 hora'],
+  [120, '2 horas'],
+  [180, '3 horas'],
+  [240, '4 horas'],
+]
 
 export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const { indice, carregando } = usarIndice()
@@ -20,6 +26,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   // faz aqui, não faz sentido esconder atrás de um menu.
   const telaLarga = usarMedia('(min-width: 64rem)')
   const [filtros, definirFiltros] = useState<Filtros>(() => consultaParaFiltros(consulta))
+  const [simulado, definirSimulado] = useState(false)
+  const [minutos, definirMinutos] = useState(180)
 
   // A URL acompanha os filtros: o endereço da barra é o filtro compartilhável.
   useEffect(() => {
@@ -53,7 +61,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   function comecar() {
     if (!indice || total === 0) return
     const ids = montarSessao(indice, filtros, Date.now())
-    iniciar(filtros, ids)
+    iniciar(filtros, ids, simulado ? { simulado: true, limiteSegundos: minutos * 60 } : {})
     navegar('/sessao')
   }
 
@@ -201,6 +209,41 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           </div>
 
           <div className="campo" style={{ marginBottom: 0 }}>
+            <span className="campo__rotulo">Modo</span>
+            <div className="empilha" style={{ marginTop: '0.25rem' }}>
+              <label className="interruptor">
+                <input
+                  type="checkbox"
+                  checked={simulado}
+                  onChange={(e) => definirSimulado(e.target.checked)}
+                />
+                <span className="interruptor__trilho" />
+                <span>
+                  Simulado com tempo
+                  <span className="campo__auxilio" style={{ marginTop: 0 }}>
+                    O gabarito fica guardado até você entregar, como em prova.
+                  </span>
+                </span>
+              </label>
+              {simulado && (
+                <div className="grupo-opcoes">
+                  {DURACOES.map(([valor, rotulo]) => (
+                    <button
+                      key={valor}
+                      type="button"
+                      className="opcao-segmento"
+                      aria-pressed={minutos === valor}
+                      onClick={() => definirMinutos(valor)}
+                    >
+                      {rotulo}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div className="campo" style={{ marginBottom: 0 }}>
             <span className="campo__rotulo">Quantas questões</span>
             <div className="grupo-opcoes">
               <button
@@ -242,6 +285,12 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             >
               {total === 0 ? (
                 'Nenhuma questão com esses filtros'
+              ) : simulado ? (
+                <>
+                  Iniciar simulado de{' '}
+                  <span className="botao__contador">{quantidadeSessao}</span> questões ·{' '}
+                  {DURACOES.find(([v]) => v === minutos)?.[1]}
+                </>
               ) : (
                 <>
                   Responder <span className="botao__contador">{quantidadeSessao}</span>{' '}

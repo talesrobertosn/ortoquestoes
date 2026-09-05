@@ -19,7 +19,16 @@ export interface ResumoHistorico {
   descricao: string
 }
 
-export function novaSessao(filtros: Filtros, ids: string[]): EstadoSessao {
+export interface OpcoesSessao {
+  simulado?: boolean
+  limiteSegundos?: number | null
+}
+
+export function novaSessao(
+  filtros: Filtros,
+  ids: string[],
+  opcoes: OpcoesSessao = {},
+): EstadoSessao {
   return {
     id: String(Date.now().toString(36)),
     criadaEm: Date.now(),
@@ -30,6 +39,8 @@ export function novaSessao(filtros: Filtros, ids: string[]): EstadoSessao {
     revisar: [],
     riscadas: {},
     concluidaEm: null,
+    simulado: opcoes.simulado ?? false,
+    limiteSegundos: opcoes.limiteSegundos ?? null,
   }
 }
 
@@ -37,8 +48,8 @@ export function usarSessao() {
   const [sessao, definirSessao] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
 
   const iniciar = useCallback(
-    (filtros: Filtros, ids: string[]) => {
-      const nova = novaSessao(filtros, ids)
+    (filtros: Filtros, ids: string[], opcoes: OpcoesSessao = {}) => {
+      const nova = novaSessao(filtros, ids, opcoes)
       definirSessao(nova)
       return nova
     },
@@ -147,7 +158,8 @@ function registrarHistorico(sessao: EstadoSessao) {
     respondidas: respostas.length,
     acertos: respostas.filter((r) => r.correta === true).length,
     segundos: respostas.reduce((soma, r) => soma + r.segundos, 0),
-    descricao: descreverFiltros(sessao.filtros),
+    descricao:
+      (sessao.simulado ? 'Simulado · ' : '') + descreverFiltros(sessao.filtros),
   }
   const historico = ler<ResumoHistorico[]>(CHAVE_HISTORICO, [])
   gravar(CHAVE_HISTORICO, [resumo, ...historico].slice(0, 50))

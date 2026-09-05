@@ -5,6 +5,7 @@ import type { Questao } from '../dados/tipos'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { descreverFiltros, usarSessao } from '../estado/sessao'
+import { formatarDuracao } from '../dados/tipos'
 import { href, navegar } from '../util/rotas'
 
 export function Resumo() {
@@ -116,9 +117,22 @@ export function Resumo() {
   return (
     <div className="empilha-2">
       <header className="limite-leitura">
-        <h1>Resumo da sessão</h1>
+        <h1>{sessao.simulado ? 'Resultado do simulado' : 'Resumo da sessão'}</h1>
         <p className="texto-2" style={{ marginTop: '0.5rem' }}>
           {descreverFiltros(sessao.filtros)}
+          {sessao.simulado && sessao.limiteSegundos ? (
+            <>
+              {' · '}
+              {formatarDuracao(sessao.limiteSegundos)} de prova, usados{' '}
+              {formatarDuracao(
+                Math.round(((sessao.concluidaEm ?? Date.now()) - sessao.criadaEm) / 1000),
+              )}
+              {(sessao.concluidaEm ?? Date.now()) - sessao.criadaEm >=
+              sessao.limiteSegundos * 1000
+                ? ' — tempo esgotado'
+                : ''}
+            </>
+          ) : null}
         </p>
       </header>
 

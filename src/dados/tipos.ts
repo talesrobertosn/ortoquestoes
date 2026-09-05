@@ -154,4 +154,26 @@ export interface EstadoSessao {
   revisar: string[]
   riscadas: Record<string, Letra[]>
   concluidaEm: number | null
+  /**
+   * Simulado: o gabarito fica guardado até o fim, como em prova. Sem isso, o
+   * modo seria só um cronômetro em cima do treino comum.
+   */
+  simulado?: boolean
+  /** Tempo total do simulado. O relógio corre no mundo, não na aba aberta. */
+  limiteSegundos?: number | null
+}
+
+/** Quanto falta, em segundos. Negativo quando o tempo acabou. */
+export function segundosRestantes(sessao: EstadoSessao, agora = Date.now()): number | null {
+  if (!sessao.limiteSegundos) return null
+  return Math.round((sessao.criadaEm + sessao.limiteSegundos * 1000 - agora) / 1000)
+}
+
+export function formatarDuracao(segundos: number): string {
+  const total = Math.max(0, segundos)
+  const h = Math.floor(total / 3600)
+  const m = Math.floor((total % 3600) / 60)
+  const s = total % 60
+  const dois = (n: number) => String(n).padStart(2, "0")
+  return h > 0 ? `${h}:${dois(m)}:${dois(s)}` : `${dois(m)}:${dois(s)}`
 }

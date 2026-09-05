@@ -373,6 +373,27 @@ textarea {
   color: var(--texto-2);
 }
 
+.treino-rapido {
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  padding: 1.25rem;
+}
+
+.treino-rapido__titulo {
+  font-size: 1.0625rem;
+  margin-bottom: 0.125rem;
+}
+
+@media (min-width: 40rem) {
+  .treino-rapido {
+    padding: 1.5rem;
+  }
+  .treino-rapido .botao {
+    min-width: 10rem;
+  }
+}
+
 /* ---------- Formulário -------------------------------------------------- */
 
 .campo {
@@ -983,6 +1004,11 @@ textarea {
   color: var(--erro);
   background: var(--erro-veu);
 }
+.mapa__item--marcada {
+  border-color: var(--verdete);
+  color: var(--verdete);
+  background: var(--verdete-veu);
+}
 .mapa__item--atual {
   outline: 2px solid var(--verdete);
   outline-offset: 1px;
@@ -1006,6 +1032,29 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 0.375rem;
+}
+
+/* ---------- Cronômetro do simulado -------------------------------------- */
+
+.cronometro {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-family: var(--fonte-dados);
+  font-variant-numeric: tabular-nums;
+  font-size: var(--corpo-menor);
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  white-space: nowrap;
+}
+
+.cronometro--acabando {
+  border-color: var(--erro);
+  color: var(--erro);
+  background: var(--erro-veu);
 }
 
 /* ---------- Painel lateral / folha deslizante --------------------------- */
