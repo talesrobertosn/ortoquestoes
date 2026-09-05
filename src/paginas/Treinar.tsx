@@ -199,7 +199,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             </div>
           </div>
 
-          <div className="entre" style={{ marginTop: '0.5rem' }}>
+          <div className="acoes" style={{ marginTop: '0.5rem' }}>
             <button
               type="button"
               className="botao botao--fantasma"

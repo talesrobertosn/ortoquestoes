@@ -16,18 +16,29 @@ const pagina = await contexto.newPage()
 pagina.on('console', (m) => { if (m.type() === 'error') erros.push(m.text()) })
 pagina.on('pageerror', (e) => erros.push('pageerror: ' + e.message))
 
+const indice = await (await fetch(BASE + 'acervo/indice.json')).json()
+console.log(`   acervo: ${indice.total} questões em ${indice.temas.length} tema(s)`)
+
 console.log('\n1. Página inicial')
 await pagina.goto(BASE, { waitUntil: 'networkidle' })
 await pagina.waitForSelector('.numeros__valor')
 const total = await pagina.locator('.numeros__valor').first().innerText()
-checar(total === '12', 'total do acervo aparece', `(veio "${total}")`)
-checar(await pagina.locator('text=Mão e punho').count() > 0, 'distribuição por tema')
+checar(total === String(indice.total), 'total do acervo bate com o índice', `(veio "${total}")`)
+checar(
+  await pagina.locator(`text=${indice.temas[0].nome}`).count() > 0,
+  'distribuição por tema',
+)
 
 console.log('\n2. Montagem de sessão')
 await pagina.click('text=Começar a responder')
 await pagina.waitForSelector('.seletor__gatilho')
+const naoAnuladas = indice.questoes.filter((q) => q.an !== 1).length
 const textoBotao = await pagina.locator('button:has-text("Responder")').last().innerText()
-checar(/11/.test(textoBotao), 'contador dentro do botão exclui a anulada', `(veio "${textoBotao}")`)
+checar(
+  textoBotao.includes(String(naoAnuladas)),
+  'contador dentro do botão exclui as anuladas',
+  `(veio "${textoBotao}", esperado ${naoAnuladas})`,
+)
 await pagina.click('button.opcao-segmento:has-text("10")')
 const textoBotao2 = await pagina.locator('button:has-text("Responder")').last().innerText()
 checar(/10/.test(textoBotao2), 'limite de 10 reflete no botão', `(veio "${textoBotao2}")`)
@@ -35,9 +46,10 @@ checar(pagina.url().includes('limite=10'), 'filtros vão para a URL', pagina.url
 
 console.log('\n3. Filtro por assunto')
 await pagina.click('.seletor__gatilho')
-await pagina.fill('input[type="search"]', 'carpo')
+const termo = indice.subtemas[0].split(' ')[0].slice(0, 6)
+await pagina.fill('input[type="search"]', termo)
 const achou = await pagina.locator('.arvore__linha').count()
-checar(achou > 0, 'busca dentro do seletor encontra assunto')
+checar(achou > 0, 'busca dentro do seletor encontra assunto', `termo "${termo}"`)
 await pagina.keyboard.press('Escape')
 
 console.log('\n4. Responder dez questões pelo teclado')
@@ -74,11 +86,35 @@ checar(await pagina.locator('text=Refazer só as').count() === 1, 'refazer só a
 checar(await pagina.locator('text=Por tema').count() === 1, 'desempenho por tema')
 
 console.log('\n7. Link direto de questão')
-await pagina.goto(BASE + '#/questao/mao-0004', { waitUntil: 'networkidle' })
+const idExemplo = indice.questoes[3].id
+await pagina.goto(BASE + `#/questao/${idExemplo}`, { waitUntil: 'networkidle' })
 await pagina.waitForSelector('.alternativa')
-checar(await pagina.locator('text=Dupuytren').count() > 0, 'questão carrega por link direto')
+checar(
+  await pagina.locator(`text=${idExemplo}`).count() > 0,
+  'questão carrega por link direto',
+  idExemplo,
+)
 await pagina.goto(BASE + '#/questao/nao-existe-0001', { waitUntil: 'networkidle' })
 checar(await pagina.locator('text=Questão não encontrada').count() === 1, 'id inexistente dá estado claro')
+
+console.log('\n7b. Comentário da comunidade')
+await pagina.goto(BASE + `#/questao/${idExemplo}`, { waitUntil: 'networkidle' })
+await pagina.waitForSelector('.alternativa')
+await pagina.keyboard.press('1')
+await pagina.keyboard.press('Enter')
+await pagina.waitForSelector('.resultado')
+await pagina.click('button:has-text("Comentar esta questão")')
+await pagina.waitForSelector('.painel')
+checar(await pagina.locator('textarea').count() === 1, 'formulário de comentário abre')
+const botaoEnvio = pagina.locator('.painel button:has-text("Escreva o comentário")')
+checar(await botaoEnvio.isDisabled(), 'envio bloqueado sem texto e sem assinatura')
+await pagina.fill('textarea', 'A alternativa correta se justifica pelo mecanismo descrito em Tachdjian.')
+await pagina.fill('.painel fieldset input >> nth=0', 'Dra. Exemplo')
+checar(
+  await pagina.locator('.painel button:has-text("Abrir o e-mail já preenchido")').isEnabled(),
+  'envio libera com comentário e assinatura',
+)
+await pagina.keyboard.press('Escape')
 
 console.log('\n8. Largura de 320 pixels')
 await pagina.setViewportSize({ width: 320, height: 720 })

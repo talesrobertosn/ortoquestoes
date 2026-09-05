@@ -94,6 +94,21 @@ def principal() -> int:
                 if subtema not in subtemas_validos:
                     erros.append(f"{onde}: subtema fora da taxonomia: '{subtema}'")
 
+            for i, contribuicao in enumerate(questao.get("comentariosComunidade") or []):
+                if not (contribuicao.get("texto") or "").strip():
+                    erros.append(f"{onde}: comentário da comunidade {i} sem texto")
+                if not (contribuicao.get("autor") or "").strip():
+                    erros.append(
+                        f"{onde}: comentário da comunidade {i} sem autor — contribuição "
+                        "publicada precisa de crédito"
+                    )
+                for imagem in contribuicao.get("imagens") or []:
+                    if not (DIR_IMAGENS / imagem.get("arquivo", "")).exists():
+                        erros.append(
+                            f"{onde}: imagem de comentário ausente no disco: "
+                            f"{imagem.get('arquivo')}"
+                        )
+
             for imagem in questao.get("imagens") or []:
                 caminho = DIR_IMAGENS / imagem.get("arquivo", "")
                 if not caminho.exists():
@@ -120,11 +135,18 @@ def principal() -> int:
     print(f"Acervo: {total} questões em {len(arquivos)} tema(s).")
 
     if avisos:
-        print(f"\n{len(avisos)} aviso(s):")
-        for aviso in avisos[:30]:
-            print(f"  · {aviso}")
-        if len(avisos) > 30:
-            print(f"  … e mais {len(avisos) - 30}")
+        # Agrupados por tipo: 1500 linhas iguais não ajudam ninguém a decidir.
+        import collections
+
+        por_tipo: dict[str, list[str]] = collections.defaultdict(list)
+        for aviso in avisos:
+            onde, _, motivo = aviso.partition(": ")
+            por_tipo[motivo].append(onde)
+        print(f"\n{len(avisos)} aviso(s) em {len(por_tipo)} categoria(s):")
+        for motivo, onde in sorted(por_tipo.items(), key=lambda x: -len(x[1])):
+            exemplos = ", ".join(o.split(":")[-1] for o in onde[:3])
+            resto = f" … e mais {len(onde) - 3}" if len(onde) > 3 else ""
+            print(f"  · {len(onde):>5}  {motivo}  ({exemplos}{resto})")
 
     if erros:
         print(f"\n{len(erros)} ERRO(S):")

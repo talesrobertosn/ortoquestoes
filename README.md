@@ -49,10 +49,14 @@ As questões chegam em PDFs separados por tema. O pipeline é reproduzível e id
 reprocessar o mesmo PDF gera o mesmo resultado, e reprocessar um tema não toca nos outros.
 
 ```bash
-pip install pymupdf
+pip install pymupdf fonttools
 
-# 1. importar
+# 1. importar (gabarito no fim do próprio PDF)
 python3 scripts/importar_pdf.py pdfs/mao.pdf --tema mao
+
+# 1b. ou com o gabarito em arquivo separado
+python3 scripts/importar_pdf.py pdfs/pediatria.pdf --tema pediatria \
+    --gabarito pdfs/pediatria-gabarito.pdf
 
 # 2. reconstruir o índice que a interface baixa
 python3 scripts/gerar_indice.py
@@ -68,6 +72,10 @@ existe lá é recusado — a taxonomia é a fonte da verdade e deve ser editada 
 
 | Opção | Quando usar |
 | --- | --- |
+| `--gabarito arquivo.pdf` | o gabarito veio em arquivo separado |
+| `--gabarito-formato grade` | forçar leitura posicional de folha de respostas |
+| `--gabarito-formato lista` | forçar leitura de pares "número letra" pelo texto |
+| `--faixa 1-202` | importar só parte da numeração, quando dois arquivos se sobrepõem |
 | `--colunas 2` | PDF diagramado em duas colunas |
 | `--prova TEOT --ano 2019` | o PDF não informa prova/ano em lugar nenhum |
 | `--seco` | só ver o relatório, sem gravar nada |
@@ -77,24 +85,42 @@ existe lá é recusado — a taxonomia é a fonte da verdade e deve ser editada 
 
 ### O que o pipeline faz
 
-1. Detecta camada de texto. Sem camada, aplica reconhecimento óptico e **sinaliza no relatório** que
+1. **Lê o texto pelos identificadores de glifo.** Muitos PDFs de prova usam fonte
+   Type0/Identity-H sem `ToUnicode` utilizável. Nesses arquivos a extração comum devolve o
+   enunciado embaralhado, **sem espaço nenhum**, e troca por espaço ou por U+FFFD os glifos que não
+   consegue mapear — perda silenciosa. O pipeline usa `get_texttrace()` para pegar o glifo
+   verdadeiro e traduz pelo `cmap` da fonte embutida no próprio PDF.
+2. **Agrupa por linha visual.** Pedaços na mesma altura viram uma linha, e um vão largo dentro da
+   linha separa blocos. É isso que permite ler um cabeçalho `Questão 288 | Tema | Etiqueta`, que no
+   fluxo do PDF são quatro operações de texto sem relação nenhuma.
+3. Detecta camada de texto. Sem camada, aplica reconhecimento óptico e **sinaliza no relatório** que
    o arquivo exige conferência mais atenta.
-2. Segmenta as questões pela numeração, usando a maior subsequência crescente de números — é o que
+4. Segmenta as questões pela numeração, usando a maior subsequência crescente de números — é o que
    separa `12.` de início de questão de um `12` citado dentro do enunciado.
-3. Separa enunciado das alternativas exigindo delimitador após a letra (`A)`, `(A)`, `A -`). Sem
-   isso, um enunciado que começa com "A radiografia…" seria lido como alternativa A. Se nada for
-   encontrado com o padrão estrito, tenta o frouxo **e avisa**.
-4. Localiza o gabarito no fim do documento (cabeçalho, ou página majoritariamente composta de pares
-   número-letra), interpreta coluna, linha ou tabela, e marca `anulada: true` onde a prova anulou.
-   Questões anuladas ficam fora do cálculo de desempenho.
-5. Extrai as imagens do enunciado com nome previsível (`mao/mao-0003-1.png`) e, quando a figura é
-   vetorial, renderiza a lacuna vertical da página — sempre sinalizando para conferência do recorte.
-6. Identifica prova e ano quando o PDF informa; quando não informa, deixa **nulo** e registra no
-   relatório. Nada é inventado.
-7. Propõe subtema a partir do enunciado, sempre marcado como `subtemasPendentes: true`. Proposta
-   nunca vira definitiva sem revisão humana.
-8. Emite `relatorios/<tema>.md` com os números, as listas para conferência e as 20 extrações de
-   menor confiança, com o trecho problemático.
+5. Separa enunciado das alternativas exigindo delimitador após a letra (`A)`, `(A)`, `A -`, `A=`).
+   Sem isso, um enunciado que começa com "A radiografia…" seria lido como alternativa A. Se nada
+   for encontrado com o padrão estrito, tenta o frouxo **e avisa**.
+6. **Usa a etiqueta do próprio PDF como subtema** quando ela existe — etiqueta de origem não é
+   proposta, é dado. Onde não existe, propõe a partir do enunciado e marca
+   `subtemasPendentes: true`. Proposta nunca vira definitiva sem revisão humana.
+7. Lê o gabarito no fim do próprio arquivo ou em arquivo separado. Reconhece dois formatos: pares
+   "número letra" em texto, e **folha de respostas em grade**, lida por posição. Numeração de
+   página de grade sem números impressos é **inferida pela geometria e o relatório diz exatamente
+   quais questões conferir**. Questões anuladas recebem `anulada: true` e ficam fora do cálculo de
+   desempenho.
+8. Extrai as imagens do enunciado com nome previsível (`pediatria/pediatria-0288-1.jpeg`) e, quando
+   a figura é vetorial, renderiza a lacuna vertical da página — sempre sinalizando o recorte para
+   conferência. Crédito de figura ("Fonte: …") sai do enunciado e vai para `referencias` e para a
+   legenda da imagem: nada é descartado, só colocado no campo certo.
+9. Identifica prova e ano **só** em cabeçalho de prova de verdade (`TEOT 2019`). Um ano solto numa
+   linha não conta: quase sempre é a quebra final de uma referência bibliográfica, e aceitá-lo
+   contamina todas as questões seguintes. Sem cabeçalho, os campos ficam nulos e vão para o
+   relatório.
+10. Detecta **questões repetidas** no tema e separa as que têm resposta divergente — mesma pergunta
+    com gabaritos que apontam para conteúdos diferentes é erro na fonte, e vai para o relatório sem
+    que nenhuma cópia seja alterada.
+11. Emite `relatorios/<tema>-<arquivo>.md` com os números, as listas para conferência e as 20
+    extrações de menor confiança, com o trecho problemático.
 
 **Regra central: em caso de dúvida, sinalizar e não adivinhar.** Uma questão com gabarito errado é
 pior do que uma questão ausente.
@@ -103,10 +129,14 @@ pior do que uma questão ausente.
 
 Abra `relatorios/<tema>.md` e confira, nesta ordem:
 
-1. **Questões sem gabarito** — se forem muitas, o formato do gabarito não foi reconhecido.
-2. **Alternativas fora de 4 ou 5** — quase sempre significa quebra de segmentação.
-3. **Citam figura sem imagem** — vá ao PDF e veja se a figura existe.
-4. **As 20 de menor confiança** — leia o trecho de cada uma no PDF original.
+1. **Alertas** — em especial qualquer numeração de gabarito que tenha sido inferida. O relatório
+   nomeia as questões exatas a conferir no original.
+2. **Questões sem gabarito** — se forem muitas, o formato do gabarito não foi reconhecido.
+3. **Alternativas fora de 4 ou 5** — quase sempre significa quebra de segmentação.
+4. **Repetidas com resposta divergente** — decisão sua: uma das cópias está errada na fonte.
+5. **Citam figura sem imagem** — vá ao PDF e veja se a figura existe mesmo. Às vezes o próprio PDF
+   de origem tem o espaço em branco.
+6. **As 20 de menor confiança** — leia o trecho de cada uma no PDF original.
 
 Depois de conferir uma questão no JSON do tema, marque `"revisado": true`. A partir daí a
 reimportação **preserva** aquela questão inteira. Comentário, referências e dificuldade são
@@ -168,7 +198,8 @@ docs/logotipo.html              as três direções de logotipo, lado a lado
 }
 ```
 
-`comentario`, `referencias`, `dificuldade`, `ano`, `prova` e `imagens` são opcionais. A interface se
+`comentario`, `comentariosComunidade`, `referencias`, `dificuldade`, `ano`, `prova` e `imagens` são
+opcionais. A interface se
 comporta corretamente com qualquer um ausente, com cinco alternativas e com questões anuladas.
 `origem` existe para voltar ao PDF e conferir; `revisado` diz se um humano já validou a extração.
 
@@ -194,6 +225,35 @@ python3 scripts/importar_pdf.py fixtures/teste-mao.pdf --tema mao --seco
 ```
 
 ---
+
+## Comentários da comunidade
+
+O site não tem servidor nem cadastro, então não existe formulário que grave direto no acervo. O
+caminho é o e-mail, e ele é curto: na questão respondida, **Comentar esta questão** abre um
+formulário que monta a mensagem já estruturada (identificador da questão, link direto, gabarito,
+enunciado, comentário, referência e o crédito de quem escreveu) e abre o programa de e-mail do
+colega, onde ele anexa os prints do livro. A identificação fica guardada no navegador dele para não
+ser redigitada a cada questão.
+
+Do outro lado, o comentário conferido entra no JSON do tema:
+
+```json
+"comentariosComunidade": [
+  {
+    "texto": "…",
+    "autor": "Dra. Fulana de Tal",
+    "especialidade": "Ortopedia e Traumatologia",
+    "subespecialidade": "Ortopedia pediátrica",
+    "centro": "Hospital X, São Paulo",
+    "referencias": ["Tachdjian, 6ª ed., p. 412"],
+    "imagens": [{ "arquivo": "comunidade/sprengel-1.png", "legenda": "Tachdjian, p. 412" }],
+    "data": "2026-09-05"
+  }
+]
+```
+
+A validação recusa contribuição sem texto ou sem crédito — o que é publicado tem autor. A
+reimportação do PDF nunca apaga esse campo.
 
 ## Marca
 

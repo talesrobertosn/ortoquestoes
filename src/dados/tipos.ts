@@ -24,6 +24,23 @@ export interface Origem {
   numeroOriginal: number | null
 }
 
+/**
+ * Comentário enviado por um colega e publicado com crédito.
+ * Chega por e-mail, é conferido e entra no acervo pela mão do autor do site —
+ * não há servidor nem envio automático, o que mantém o site estático e sem
+ * moderação automática de conteúdo médico.
+ */
+export interface ComentarioComunidade {
+  texto: string
+  autor: string
+  especialidade?: string | null
+  subespecialidade?: string | null
+  centro?: string | null
+  referencias?: string[]
+  imagens?: Imagem[]
+  data?: string | null
+}
+
 export interface Questao {
   id: string
   tema: string
@@ -36,6 +53,7 @@ export interface Questao {
   alternativas: Alternativa[]
   gabarito: Letra | null
   comentario: string | null
+  comentariosComunidade?: ComentarioComunidade[]
   referencias: string[]
   anulada: boolean
   revisado: boolean

@@ -1,10 +1,6640 @@
 {
   "versao": 1,
-  "geradoEm": "2026-09-05T01:37:34+00:00",
-  "total": 0,
-  "temas": [],
-  "subtemas": [],
+  "geradoEm": "2026-09-05T02:15:20+00:00",
+  "total": 502,
+  "temas": [
+    {
+      "slug": "pediatria",
+      "nome": "Ortopedia pediátrica",
+      "arquivo": "temas/pediatria.json",
+      "total": 502
+    }
+  ],
+  "subtemas": [
+    "Pé Torto Congênito",
+    "Alterações Congênitas",
+    "Paralisia Cerebral",
+    "Epifisiólise",
+    "Displasia do Desenvolvimento do Quadril",
+    "Mielomeningocele",
+    "Deformidades dos Membros Inferiores",
+    "Osteogênese Imperfeita",
+    "Maus Tratos",
+    "Miscelânea",
+    "Osteocondroses",
+    "Tíbia Vara de Blount",
+    "Doença de Legg-Calvè-Perthes",
+    "Síndromes Genéticas",
+    "Quadril",
+    "Osteotomias",
+    "Desenvolvimento Neuropsicomotor",
+    "Marcha",
+    "Artrogripose",
+    "Torcicolo congênito",
+    "Sinovite Transitória",
+    "Síndrome de Grisel",
+    "Luxação congênita da cabeça do rádio",
+    "Osteometabólicas",
+    "Joelho",
+    "Menisco discoide",
+    "Lesões Meniscais",
+    "Pé e tornozelo",
+    "Amputações",
+    "Biomecânica",
+    "Instabilidade Femoropatelar",
+    "Exame Físico",
+    "Fraturas do Punho e Mão",
+    "Deformidades dos Pés",
+    "Mão",
+    "Alterações Congênitas dos MMSS",
+    "Radiologia do joelho",
+    "Radiologia do quadril",
+    "Ossificação",
+    "Anatomia",
+    "Escoliose",
+    "Artrites Inflamatórias",
+    "Conceitos básicos",
+    "Artrite Séptica",
+    "Ombro e cotovelo",
+    "Osteocondrite Dissecante",
+    "Trauma Pediátrico",
+    "Lesões Fisárias",
+    "Síndromes da Coluna"
+  ],
   "provas": [],
   "anos": [],
-  "questoes": []
+  "questoes": [
+    {
+      "id": "pediatria-0001",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0002",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0003",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0004",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0005",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0006",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0007",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0008",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0009",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0010",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0011",
+      "t": 0,
+      "s": [
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0012",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0013",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0014",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0015",
+      "t": 0,
+      "s": [
+        10
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0016",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0017",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0018",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0019",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0020",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0021",
+      "t": 0,
+      "s": [
+        14,
+        2,
+        15
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0022",
+      "t": 0,
+      "s": [
+        16
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0023",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0024",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0025",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0026",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0027",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0028",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0029",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0030",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0031",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0032",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0033",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0034",
+      "t": 0,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0035",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0036",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0037",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0038",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0039",
+      "t": 0,
+      "s": [
+        10
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0040",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0041",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0042",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0043",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0044",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0045",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0046",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0047",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0048",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0049",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0050",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0051",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0052",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0053",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0054",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0055",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0056",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0057",
+      "t": 0,
+      "s": [
+        16
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0058",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0059",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0060",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0061",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0062",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0063",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0064",
+      "t": 0,
+      "s": [
+        16
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0065",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0066",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0067",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0068",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0069",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0070",
+      "t": 0,
+      "s": [
+        14,
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0071",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0072",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0073",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0074",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0075",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0076",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0077",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0078",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0079",
+      "t": 0,
+      "s": [
+        10
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0080",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0081",
+      "t": 0,
+      "s": [
+        20
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0082",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0083",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0084",
+      "t": 0,
+      "s": [
+        10
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0085",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0086",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0087",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0088",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0089",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0090",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0091",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0092",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0093",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0094",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0095",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0096",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0097",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0098",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0099",
+      "t": 0,
+      "s": [
+        20
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0100",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0101",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0102",
+      "t": 0,
+      "s": [
+        10
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0103",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0104",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0105",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0106",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0107",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0108",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0109",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0110",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0111",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0112",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0113",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0114",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0115",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0116",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0117",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0118",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0119",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0120",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0121",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0122",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0123",
+      "t": 0,
+      "s": [
+        10
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0124",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0125",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0126",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0127",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0128",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0129",
+      "t": 0,
+      "s": [
+        20
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0130",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0131",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0132",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0133",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0134",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0135",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0136",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0137",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0138",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0139",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0140",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0141",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0142",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0143",
+      "t": 0,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0144",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0145",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0146",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0147",
+      "t": 0,
+      "s": [
+        22
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0148",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0149",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0150",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0151",
+      "t": 0,
+      "s": [
+        20
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0152",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0153",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0154",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0155",
+      "t": 0,
+      "s": [
+        23,
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0156",
+      "t": 0,
+      "s": [
+        24,
+        25,
+        26
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0157",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0158",
+      "t": 0,
+      "s": [
+        27,
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0159",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0160",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0161",
+      "t": 0,
+      "s": [
+        25
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0162",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0163",
+      "t": 0,
+      "s": [
+        20
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0164",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0165",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0166",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0167",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0168",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0169",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0170",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0171",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0172",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0173",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0174",
+      "t": 0,
+      "s": [
+        16
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0175",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0176",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0177",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0178",
+      "t": 0,
+      "s": [
+        10
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0179",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0180",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0181",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0182",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0183",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0184",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0185",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0186",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0187",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0188",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0189",
+      "t": 0,
+      "s": [
+        28,
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0190",
+      "t": 0,
+      "s": [
+        9,
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0191",
+      "t": 0,
+      "s": [
+        29,
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0192",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0193",
+      "t": 0,
+      "s": [
+        27,
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0194",
+      "t": 0,
+      "s": [
+        10
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0195",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0196",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0197",
+      "t": 0,
+      "s": [
+        24,
+        26,
+        25
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0198",
+      "t": 0,
+      "s": [
+        30,
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0199",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0200",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0201",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0202",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0203",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0204",
+      "t": 0,
+      "s": [
+        20
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0205",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0206",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0207",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0208",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0209",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0210",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0211",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0212",
+      "t": 0,
+      "s": [
+        27,
+        2,
+        31
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0213",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0214",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0215",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0216",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0217",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0218",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0219",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0220",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0221",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0222",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0223",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0224",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0225",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0226",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0227",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0228",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0229",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0230",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0231",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0232",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0233",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0234",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0235",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0236",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0237",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0238",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0239",
+      "t": 0,
+      "s": [
+        16
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0240",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0241",
+      "t": 0,
+      "s": [
+        32
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0242",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0243",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0244",
+      "t": 0,
+      "s": [
+        33,
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0245",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0246",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0247",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0248",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0249",
+      "t": 0,
+      "s": [
+        10
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0250",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0251",
+      "t": 0,
+      "s": [
+        2,
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0252",
+      "t": 0,
+      "s": [
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0253",
+      "t": 0,
+      "s": [
+        34,
+        1,
+        35
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0254",
+      "t": 0,
+      "s": [
+        25
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0255",
+      "t": 0,
+      "s": [
+        24,
+        25,
+        26
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0256",
+      "t": 0,
+      "s": [
+        24,
+        25
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0257",
+      "t": 0,
+      "s": [
+        25
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0258",
+      "t": 0,
+      "s": [
+        36,
+        25
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0259",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0260",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0261",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0262",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0263",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0264",
+      "t": 0,
+      "s": [
+        16
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0265",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0266",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0267",
+      "t": 0,
+      "s": [
+        37
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0268",
+      "t": 0,
+      "s": [
+        10
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0269",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0270",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0271",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0272",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0273",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0274",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0275",
+      "t": 0,
+      "s": [
+        38,
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0276",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0277",
+      "t": 0,
+      "s": [
+        25
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0278",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0279",
+      "t": 0,
+      "s": [
+        35
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0280",
+      "t": 0,
+      "s": [
+        35
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0281",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0282",
+      "t": 0,
+      "s": [
+        27,
+        2,
+        33
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0283",
+      "t": 0,
+      "s": [
+        10
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0284",
+      "t": 0,
+      "s": [
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0285",
+      "t": 0,
+      "s": [
+        14,
+        17,
+        29
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0286",
+      "t": 0,
+      "s": [
+        38
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0287",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0288",
+      "t": 0,
+      "s": [
+        39,
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0289",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0290",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0291",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0292",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0293",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0294",
+      "t": 0,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0295",
+      "t": 0,
+      "s": [
+        16
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0296",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0297",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0298",
+      "t": 0,
+      "s": [
+        37
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0299",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0300",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0301",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0302",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0303",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0304",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0305",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0306",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0307",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0308",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0309",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0310",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0311",
+      "t": 0,
+      "s": [
+        16
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0312",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0313",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0314",
+      "t": 0,
+      "s": [
+        40,
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0315",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0316",
+      "t": 0,
+      "s": [
+        1,
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0317",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0318",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0319",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0320",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0321",
+      "t": 0,
+      "s": [
+        10
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0322",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0323",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0324",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0325",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0326",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0327",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0328",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0329",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0330",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0331",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0332",
+      "t": 0,
+      "s": [
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0333",
+      "t": 0,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0334",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0335",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0336",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0337",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0338",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0339",
+      "t": 0,
+      "s": [
+        23,
+        9,
+        41
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0340",
+      "t": 0,
+      "s": [
+        42,
+        20,
+        43
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0341",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0342",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0343",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0344",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0345",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0346",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0347",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0348",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0349",
+      "t": 0,
+      "s": [
+        16
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0350",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0351",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0352",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0353",
+      "t": 0,
+      "s": [
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0354",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0355",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0356",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0357",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0358",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0359",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0360",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0361",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0362",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0363",
+      "t": 0,
+      "s": [
+        26,
+        25
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0364",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0365",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0366",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0367",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0368",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0369",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0370",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0371",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0372",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0373",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0374",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0375",
+      "t": 0,
+      "s": [
+        20
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0376",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0377",
+      "t": 0,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0378",
+      "t": 0,
+      "s": [
+        44,
+        16
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0379",
+      "t": 0,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0380",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0381",
+      "t": 0,
+      "s": [
+        42,
+        20,
+        43
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0382",
+      "t": 0,
+      "s": [
+        40,
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0383",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0384",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0385",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0386",
+      "t": 0,
+      "s": [
+        16
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0387",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0388",
+      "t": 0,
+      "s": [
+        29,
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0389",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0390",
+      "t": 0,
+      "s": [
+        20
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0391",
+      "t": 0,
+      "s": [
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0392",
+      "t": 0,
+      "s": [
+        45
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0393",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0394",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0395",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0396",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0397",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0398",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0399",
+      "t": 0,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0400",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0401",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0402",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0403",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0404",
+      "t": 0,
+      "s": [
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0405",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0406",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0407",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0408",
+      "t": 0,
+      "s": [
+        20
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0409",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0410",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0411",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0412",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0413",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0414",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0415",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0416",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0417",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0418",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0419",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0420",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0421",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0422",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0423",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0424",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0425",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0426",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0427",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0428",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0429",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0430",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0431",
+      "t": 0,
+      "s": [
+        46,
+        9,
+        47
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0432",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0433",
+      "t": 0,
+      "s": [
+        48
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0434",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0435",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0436",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0437",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0438",
+      "t": 0,
+      "s": [
+        42,
+        20,
+        43
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0439",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0440",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0441",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0442",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0443",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0444",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0445",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0446",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0447",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0448",
+      "t": 0,
+      "s": [
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0449",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0450",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0451",
+      "t": 0,
+      "s": [
+        18
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0452",
+      "t": 0,
+      "s": [
+        16
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0453",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0454",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0455",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0456",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0457",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0458",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0459",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0460",
+      "t": 0,
+      "s": [
+        20
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0461",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0462",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0463",
+      "t": 0,
+      "s": [
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0464",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0465",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0466",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0467",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0468",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0469",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0470",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0471",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0472",
+      "t": 0,
+      "s": [
+        7
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0473",
+      "t": 0,
+      "s": [
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0474",
+      "t": 0,
+      "s": [
+        9
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0475",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0476",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0477",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0478",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0479",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0480",
+      "t": 0,
+      "s": [
+        20
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0481",
+      "t": 0,
+      "s": [
+        8
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0482",
+      "t": 0,
+      "s": [
+        5
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0483",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0484",
+      "t": 0,
+      "s": [
+        13
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0485",
+      "t": 0,
+      "s": [
+        17
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0486",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0487",
+      "t": 0,
+      "s": [
+        25
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0488",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0489",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0490",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0491",
+      "t": 0,
+      "s": [
+        25
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0492",
+      "t": 0,
+      "s": [
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0493",
+      "t": 0,
+      "s": [
+        0
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0494",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0495",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0496",
+      "t": 0,
+      "s": [
+        2
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0497",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0498",
+      "t": 0,
+      "s": [
+        11
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0499",
+      "t": 0,
+      "s": [
+        16
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0500",
+      "t": 0,
+      "s": [
+        6
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0501",
+      "t": 0,
+      "s": [
+        1
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "pediatria-0502",
+      "t": 0,
+      "s": [
+        4
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    }
+  ]
 }

@@ -4,6 +4,7 @@ import { ROTULO_DIFICULDADE } from '../dados/tipos'
 import { recurso } from '../config'
 import { href } from '../util/rotas'
 import { EstrelaCheia, Icone } from './Icone'
+import { ContribuirComentario } from './ContribuirComentario'
 
 interface Props {
   questao: Questao
@@ -289,6 +290,45 @@ export function CartaoQuestao({
                 prova.
               </p>
             )}
+
+            {(questao.comentariosComunidade?.length ?? 0) > 0 && (
+              <div style={{ marginTop: '1.25rem' }}>
+                <p className="comentario__titulo">DA COMUNIDADE</p>
+                <ul className="empilha" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                  {questao.comentariosComunidade!.map((item, i) => (
+                    <li key={i} className="contribuicao">
+                      <div style={{ whiteSpace: 'pre-wrap' }}>{item.texto}</div>
+                      {item.imagens && item.imagens.length > 0 && (
+                        <div className="questao__figuras" style={{ marginTop: '0.75rem' }}>
+                          {item.imagens.map((imagem) => (
+                            <figure className="questao__figura" key={imagem.arquivo}>
+                              <img
+                                src={recurso(`imagens/${imagem.arquivo}`)}
+                                alt={imagem.legenda ?? 'Imagem enviada por colega'}
+                                loading="lazy"
+                                style={{ maxHeight: '18rem', width: 'auto' }}
+                              />
+                              {imagem.legenda && <figcaption>{imagem.legenda}</figcaption>}
+                            </figure>
+                          ))}
+                        </div>
+                      )}
+                      {item.referencias && item.referencias.length > 0 && (
+                        <p className="meta" style={{ marginTop: '0.5rem' }}>
+                          {item.referencias.join(' · ')}
+                        </p>
+                      )}
+                      <p className="contribuicao__credito">
+                        <strong>{item.autor}</strong>
+                        {[item.subespecialidade || item.especialidade, item.centro]
+                          .filter(Boolean)
+                          .map((parte) => ` · ${parte}`)}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             {questao.referencias.length > 0 && (
               <>
                 <p className="comentario__titulo" style={{ marginTop: '1rem' }}>
@@ -311,6 +351,7 @@ export function CartaoQuestao({
         )}
 
         <div className="linha nao-imprime" style={{ marginTop: '1rem' }}>
+          {respondida && <ContribuirComentario questao={questao} />}
           <a className="botao botao--fantasma" href={href(`/contato?questao=${questao.id}`)}>
             Relatar erro nesta questão
           </a>

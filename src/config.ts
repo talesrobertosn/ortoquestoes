@@ -18,7 +18,7 @@ export const SITE = {
   descricao:
     'Questões de provas anteriores de TEOT e TARO organizadas por assunto, ano e tipo de prova. Sem cadastro, sem custo.',
   autor: 'Tales',
-  contato: 'contato@ortoquestoes.com.br',
+  contato: 'talesroberto23@gmail.com',
 } as const
 
 /** Prefixo de todas as chaves gravadas no localStorage. */
