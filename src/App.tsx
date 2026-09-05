@@ -7,7 +7,7 @@ import { Treinar } from './paginas/Treinar'
 import { Sessao } from './paginas/Sessao'
 import { Resumo } from './paginas/Resumo'
 import { QuestaoDireta } from './paginas/QuestaoDireta'
-import { ComoEstudar, Contato, DadosLocais, NaoEncontrada, Sobre } from './paginas/Apoio'
+import { Contato, DadosLocais, NaoEncontrada, Sobre } from './paginas/Apoio'
 import { SITE } from './config'
 
 const TITULOS: Record<string, string> = {
@@ -16,9 +16,8 @@ const TITULOS: Record<string, string> = {
   '/sessao': 'Respondendo — OrtoQuestões',
   '/resumo': 'Resumo da sessão — OrtoQuestões',
   '/sobre': 'Sobre — OrtoQuestões',
-  '/como-estudar': 'Como estudar — OrtoQuestões',
   '/contato': 'Relatar erro — OrtoQuestões',
-  '/dados': 'Dados locais — OrtoQuestões',
+  '/dados': 'Seu desempenho — OrtoQuestões',
 }
 
 export function App() {
@@ -39,7 +38,9 @@ export function App() {
       pagina = <Inicio />
       break
     case 'treinar':
-      pagina = <Treinar key={rota.consulta.toString()} consulta={rota.consulta} />
+      // Sem `key` aqui: trocar a chave a cada filtro remonta a página inteira,
+      // e a remontagem fecha o seletor de assuntos no meio da seleção.
+      pagina = <Treinar consulta={rota.consulta} />
       break
     case 'sessao':
       pagina = <Sessao />
@@ -52,9 +53,6 @@ export function App() {
       break
     case 'sobre':
       pagina = <Sobre />
-      break
-    case 'como-estudar':
-      pagina = <ComoEstudar />
       break
     case 'contato':
       pagina = <Contato consulta={rota.consulta} />

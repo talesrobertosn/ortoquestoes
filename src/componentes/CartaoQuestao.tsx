@@ -114,7 +114,6 @@ export function CartaoQuestao({
     <article className="cartao questao-impressa" aria-label={`Questão ${numero ?? ''}`}>
       <div className="cartao__corpo">
         <div className="questao__topo">
-          <span className="etiqueta etiqueta--dado">{questao.id}</span>
           {questao.ano && <span className="etiqueta etiqueta--dado">{questao.ano}</span>}
           {questao.prova && <span className="etiqueta">{questao.prova}</span>}
           <span className="etiqueta">{questao.tema}</span>
@@ -271,7 +270,7 @@ export function CartaoQuestao({
         </ul>
 
         {!respondida ? (
-          <div className="linha nao-imprime">
+          <div className="linha nao-imprime acao-responder">
             <button
               type="button"
               className="botao botao--principal botao--grande"
@@ -280,7 +279,7 @@ export function CartaoQuestao({
             >
               {escolhida ? `Responder ${escolhida}` : 'Escolha uma alternativa'}
             </button>
-            <span className="meta">
+            <span className="meta so-teclado">
               Teclas <kbd>1</kbd>–<kbd>{letrasDisponiveis.length}</kbd> selecionam,{' '}
               <kbd>Enter</kbd> confirma
             </span>
@@ -366,6 +365,7 @@ export function CartaoQuestao({
             Relatar erro nesta questão
           </a>
           {copiado && <span className="meta">Link copiado.</span>}
+          <span className="meta numerico questao__id">{questao.id}</span>
         </div>
       </div>
     </article>

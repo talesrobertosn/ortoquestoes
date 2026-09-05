@@ -251,9 +251,11 @@ npm run preview &                                   # serve em /ortoquestoes/
 CHROMIUM=/caminho/do/chromium node fixtures/verificacao.mjs
 ```
 
-A verificação exercita: filtros e contadores, dez questões respondidas pelo teclado, mapa pelo
-atalho, resumo, link direto de questão, id inexistente, 320 pixels sem rolagem horizontal e sem
-texto cortado, tema escuro, funcionamento com `localStorage` bloqueado e console limpo.
+A verificação exercita: filtros e contadores, árvore de assuntos com seleção múltipla sem fechar,
+dez questões respondidas pelo teclado, mapa pelo atalho, resumo, link direto de questão, id
+inexistente, desempenho por tema, formulário de comentário da comunidade, 320 pixels sem rolagem
+horizontal e sem texto cortado, tema escuro, funcionamento com `localStorage` bloqueado e console
+limpo.
 
 O detector de figura ausente tem teste próprio, com casos tirados de enunciados reais:
 

@@ -127,18 +127,32 @@ textarea {
 
 .conteudo {
   width: 100%;
-  max-width: 68rem;
+  max-width: 76rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
+@media (min-width: 48rem) {
+  .conteudo {
+    padding: 0 1.75rem;
+  }
+}
+
+/* Coluna de leitura da questão: larga o bastante para não espremer o
+   enunciado, estreita o bastante para a linha não cansar. */
 .conteudo--estreito {
-  max-width: 46rem;
+  max-width: 54rem;
 }
 
 .principal {
   flex: 1 0 auto;
-  padding: 1.5rem 0 3rem;
+  padding: 1.25rem 0 3rem;
+}
+
+@media (min-width: 48rem) {
+  .principal {
+    padding: 2rem 0 4rem;
+  }
 }
 
 /* ---------- Cabeçalho ---------------------------------------------------- */
@@ -325,13 +339,38 @@ textarea {
 }
 
 .cartao__corpo {
-  padding: 1.25rem;
+  padding: 1rem;
 }
 
 @media (min-width: 40rem) {
   .cartao__corpo {
-    padding: 1.5rem;
+    padding: 1.75rem 2rem;
   }
+}
+
+/* ---------- Herói da página inicial ------------------------------------ */
+
+.heroi {
+  max-width: 34ch;
+}
+
+.heroi h1 {
+  font-size: clamp(1.875rem, 1.2rem + 3vw, 3rem);
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.heroi__linha {
+  max-width: 52ch;
+  margin-top: 1rem;
+  font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
+  color: var(--texto);
+}
+
+.heroi__nota {
+  margin-top: 0.5rem;
+  font-size: var(--corpo-menor);
+  color: var(--texto-2);
 }
 
 /* ---------- Formulário -------------------------------------------------- */
@@ -417,8 +456,8 @@ textarea {
 .caixa input {
   margin: 0.3rem 0 0;
   accent-color: var(--verdete);
-  width: 1rem;
-  height: 1rem;
+  width: 1.125rem;
+  height: 1.125rem;
   flex: 0 0 auto;
 }
 
@@ -507,15 +546,41 @@ textarea {
   border-radius: var(--raio);
   box-shadow: 0 6px 20px rgba(18, 24, 26, 0.12);
   padding: 0.5rem;
-  max-height: 20rem;
+  max-height: min(32rem, 70dvh);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
+/* Variante sempre aberta: sem sombra, sem flutuar, ocupando o lugar dela. */
+.seletor--lista .seletor__painel {
+  position: static;
+  box-shadow: none;
+  border-color: var(--traco);
+  max-height: none;
+}
+.seletor--lista .seletor__lista {
+  max-height: 26rem;
+}
+
 .seletor__lista {
   overflow-y: auto;
   overscroll-behavior: contain;
+}
+
+.seletor__rodape {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: var(--borda);
+}
+.seletor__rodape .meta {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.seletor__rodape .botao {
+  min-height: 36px;
 }
 
 .arvore__tema {
@@ -533,8 +598,9 @@ textarea {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.25rem 0.25rem;
+  padding: 0.25rem;
   border-radius: var(--raio-pequeno);
+  min-height: 38px;
 }
 .arvore__linha:hover {
   background: var(--superficie-2);
@@ -614,8 +680,16 @@ textarea {
 
 .questao__enunciado {
   max-width: var(--coluna-leitura);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   white-space: pre-wrap;
+  font-size: 1.09375rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 30rem) {
+  .questao__enunciado {
+    font-size: 1.0625rem;
+  }
 }
 
 .questao__figuras {
@@ -648,7 +722,7 @@ textarea {
 .alternativas {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.625rem;
   margin: 0 0 1.25rem;
   padding: 0;
   list-style: none;
@@ -675,7 +749,7 @@ textarea {
 
 .alternativa__letra {
   flex: 0 0 auto;
-  width: 2.75rem;
+  width: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -688,7 +762,7 @@ textarea {
 }
 
 .alternativa__texto {
-  padding: 0.75rem 0.875rem;
+  padding: 0.875rem 1rem;
   flex: 1 1 auto;
   min-width: 0;
 }
@@ -773,6 +847,17 @@ textarea {
 .riscar[aria-pressed="true"] {
   color: var(--erro);
   border-color: var(--erro);
+}
+
+.questao__id {
+  margin-left: auto;
+  opacity: 0.65;
+}
+
+@media (max-width: 30rem) {
+  .questao__id {
+    display: none;
+  }
 }
 
 /* ---------- Resultado e comentário -------------------------------------- */
@@ -1231,6 +1316,26 @@ kbd {
 }
 .limite-leitura {
   max-width: var(--coluna-leitura);
+}
+
+/* Dica de teclado não serve a quem está no toque. */
+@media (max-width: 47.99rem), (pointer: coarse) {
+  .so-teclado {
+    display: none;
+  }
+}
+
+/* No celular o botão de ação ocupa a linha inteira: alvo grande e ao alcance
+   do polegar vale mais do que economia de espaço. */
+@media (max-width: 30rem) {
+  .acao-responder .botao,
+  .heroi + .linha .botao,
+  .linha--empilha-celular .botao {
+    width: 100%;
+  }
+  .riscar {
+    width: 2rem;
+  }
 }
 
 /* ---------- Contribuições da comunidade -------------------------------- */

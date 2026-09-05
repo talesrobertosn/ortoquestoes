@@ -10,6 +10,8 @@ interface Props {
   porTema: Record<string, number>
   porSubtema: Record<string, number>
   aoMudar: (temas: string[], subtemas: string[]) => void
+  /** 'menu' abre num painel flutuante; 'lista' fica sempre aberta na página. */
+  variante?: 'menu' | 'lista'
 }
 
 /**
@@ -24,15 +26,22 @@ export function SeletorArvore({
   porTema,
   porSubtema,
   aoMudar,
+  variante = 'menu',
 }: Props) {
-  const [aberto, definirAberto] = useState(false)
+  const lista = variante === 'lista'
+  const [aberto, definirAberto] = useState(lista)
   const [busca, definirBusca] = useState('')
-  const [abertos, definirAbertos] = useState<string[]>([])
+  // Abre tudo só quando a lista inteira cabe na tela. Com dezenas de
+  // subtemas, abrir tudo empurra o segundo tema para fora do campo de visão.
+  const [abertos, definirAbertos] = useState<string[]>(() => {
+    const linhas = arvore.reduce((n, tema) => n + 1 + tema.subtemas.length, 0)
+    return linhas <= 16 ? arvore.map((n) => n.slug) : []
+  })
   const caixa = useRef<HTMLDivElement>(null)
   const idBusca = useId()
 
   useEffect(() => {
-    if (!aberto) return
+    if (!aberto || lista) return
     function foraDaCaixa(evento: MouseEvent) {
       if (caixa.current && !caixa.current.contains(evento.target as Node)) definirAberto(false)
     }
@@ -45,7 +54,7 @@ export function SeletorArvore({
       document.removeEventListener('mousedown', foraDaCaixa)
       document.removeEventListener('keydown', aoTeclar)
     }
-  }, [aberto])
+  }, [aberto, lista])
 
   const filtrada = useMemo(() => {
     const termo = normalizar(busca.trim())
@@ -94,19 +103,21 @@ export function SeletorArvore({
   const buscando = busca.trim().length > 0
 
   return (
-    <div className="seletor" ref={caixa}>
-      <button
-        type="button"
-        className="seletor__gatilho"
-        aria-expanded={aberto}
-        aria-haspopup="true"
-        onClick={() => definirAberto((a) => !a)}
-      >
-        <span className={'seletor__resumo' + (total === 0 ? ' seletor__resumo--vazio' : '')}>
-          {resumo}
-        </span>
-        <Icone nome={aberto ? 'cima' : 'baixo'} tamanho={18} />
-      </button>
+    <div className={'seletor' + (lista ? ' seletor--lista' : '')} ref={caixa}>
+      {!lista && (
+        <button
+          type="button"
+          className="seletor__gatilho"
+          aria-expanded={aberto}
+          aria-haspopup="true"
+          onClick={() => definirAberto((a) => !a)}
+        >
+          <span className={'seletor__resumo' + (total === 0 ? ' seletor__resumo--vazio' : '')}>
+            {resumo}
+          </span>
+          <Icone nome={aberto ? 'cima' : 'baixo'} tamanho={18} />
+        </button>
+      )}
 
       {aberto && (
         <div className="seletor__painel">
@@ -120,7 +131,7 @@ export function SeletorArvore({
             placeholder="Buscar assunto"
             value={busca}
             onChange={(e) => definirBusca(e.target.value)}
-            autoFocus
+            autoFocus={!lista}
           />
 
           <div className="seletor__lista">
@@ -186,15 +197,29 @@ export function SeletorArvore({
             })}
           </div>
 
-          <div className="linha linha--fim">
+          <div className="seletor__rodape">
+            <span className="meta">
+              {total === 0
+                ? 'Marque quantos quiser — a lista continua aberta.'
+                : `${total} selecionado${total > 1 ? 's' : ''}`}
+            </span>
             <button
               type="button"
               className="botao botao--fantasma"
               onClick={() => aoMudar([], [])}
               disabled={total === 0}
             >
-              Limpar assuntos
+              Limpar
             </button>
+            {!lista && (
+              <button
+                type="button"
+                className="botao botao--principal"
+                onClick={() => definirAberto(false)}
+              >
+                Pronto
+              </button>
+            )}
           </div>
         </div>
       )}

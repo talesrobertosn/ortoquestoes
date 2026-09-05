@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react'
 import { SITE } from '../config'
 import { href } from '../util/rotas'
-import { Atalhos } from '../componentes/Atalhos'
 import { armazenamentoDisponivel, limparTudo, tamanhoArmazenado } from '../estado/armazenamento'
 import { lerHistorico, lerRespondidas, usarFavoritos } from '../estado/sessao'
+import { usarIndice } from '../dados/usarIndice'
 
 export function Sobre() {
   return (
@@ -39,45 +39,6 @@ export function Sobre() {
         rápido para corrigir.
       </p>
       <p className="texto-2">Feito por {SITE.autor}.</p>
-    </article>
-  )
-}
-
-export function ComoEstudar() {
-  return (
-    <article className="limite-leitura empilha">
-      <h1>Como estudar com o site</h1>
-      <p>
-        Não existe um jeito certo, mas alguns recortes rendem mais do que outros na reta final da
-        prova.
-      </p>
-      <h2>Um tema por vez, do começo ao fim</h2>
-      <p>
-        Escolha um tema na página inicial e responda tudo. O padrão é embaralhado, o que evita
-        decorar a ordem da prova. Ao terminar, o resumo mostra onde o tema está fraco.
-      </p>
-      <h2>Simulado por ano</h2>
-      <p>
-        Filtre por um ano específico e desmarque o embaralhamento: a sessão sai na ordem da prova
-        original. Bom para calibrar tempo por questão.
-      </p>
-      <h2>Blocos de 20</h2>
-      <p>
-        Limite a sessão a 20 questões. É um bloco que cabe num intervalo e ainda dá um resumo com
-        significado estatístico razoável.
-      </p>
-      <h2>Refazer as erradas</h2>
-      <p>
-        No fim de cada sessão há um botão que monta uma sessão nova só com o que você errou. Repetir
-        no dia seguinte vale mais do que responder cinquenta questões novas.
-      </p>
-      <h2>Riscar antes de marcar</h2>
-      <p>
-        Riscar as alternativas improváveis muda o desempenho em prova de múltipla escolha. Use o
-        risco também aqui, com <kbd>Shift</kbd> e o número da alternativa.
-      </p>
-      <h2>Atalhos</h2>
-      <Atalhos />
     </article>
   )
 }
@@ -156,18 +117,49 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
 
 export function DadosLocais() {
   const { favoritos } = usarFavoritos()
+  const { indice } = usarIndice()
   const historico = useMemo(() => lerHistorico(), [])
-  const respondidas = useMemo(() => Object.keys(lerRespondidas()).length, [])
+  const marcadas = useMemo(() => lerRespondidas(), [])
+  const respondidas = Object.keys(marcadas).length
   const [apagado, definirApagado] = useState(false)
   const bytes = tamanhoArmazenado()
 
+  // Desempenho acumulado por tema: cruza as questões já respondidas neste
+  // navegador com o tema de cada uma, que vem do índice do acervo.
+  const porTema = useMemo(() => {
+    if (!indice) return []
+    const temaPorId = new Map<string, string>()
+    for (const item of indice.questoes) {
+      const tema = indice.temas[item.t]
+      if (tema) temaPorId.set(item.id, tema.nome)
+    }
+    const soma = new Map<string, { certas: number; total: number }>()
+    for (const [id, registro] of Object.entries(marcadas)) {
+      if (registro.c === null) continue
+      const nome = temaPorId.get(id)
+      if (!nome) continue
+      const atual = soma.get(nome) ?? { certas: 0, total: 0 }
+      atual.total++
+      if (registro.c) atual.certas++
+      soma.set(nome, atual)
+    }
+    return [...soma.entries()]
+      .map(([nome, valores]) => ({ nome, ...valores }))
+      .sort((a, b) => b.total - a.total)
+  }, [indice, marcadas])
+
+  const totalCertas = porTema.reduce((n, t) => n + t.certas, 0)
+  const totalContadas = porTema.reduce((n, t) => n + t.total, 0)
+
   return (
-    <article className="limite-leitura empilha">
-      <h1>Dados locais</h1>
-      <p>
-        Tudo que o site guarda sobre você fica neste navegador, em localStorage. Nada é enviado para
-        servidor nenhum, porque não existe servidor: o site é um conjunto de arquivos estáticos.
-      </p>
+    <article className="empilha-2">
+      <header className="limite-leitura">
+        <h1>Seu desempenho</h1>
+        <p style={{ marginTop: '0.5rem' }} className="texto-2">
+          Contado a partir de todas as questões que você já respondeu neste navegador, não só da
+          última sessão.
+        </p>
+      </header>
 
       {!armazenamentoDisponivel() && (
         <div className="estado">
@@ -181,22 +173,69 @@ export function DadosLocais() {
 
       <div className="numeros">
         <div className="numeros__celula">
+          <span className="numeros__valor">
+            {totalContadas > 0 ? `${Math.round((totalCertas / totalContadas) * 100)}%` : '—'}
+          </span>
+          <span className="numeros__rotulo">de acerto no total</span>
+        </div>
+        <div className="numeros__celula">
           <span className="numeros__valor">{respondidas}</span>
-          <span className="numeros__rotulo">questões já respondidas</span>
+          <span className="numeros__rotulo">questões respondidas</span>
+        </div>
+        <div className="numeros__celula">
+          <span className="numeros__valor">{historico.length}</span>
+          <span className="numeros__rotulo">sessões concluídas</span>
         </div>
         <div className="numeros__celula">
           <span className="numeros__valor">{favoritos.length}</span>
           <span className="numeros__rotulo">favoritas</span>
         </div>
-        <div className="numeros__celula">
-          <span className="numeros__valor">{historico.length}</span>
-          <span className="numeros__rotulo">sessões no histórico</span>
-        </div>
-        <div className="numeros__celula">
-          <span className="numeros__valor">{(bytes / 1024).toFixed(1)} kB</span>
-          <span className="numeros__rotulo">guardados</span>
-        </div>
       </div>
+
+      <section>
+        <h2>Por tema</h2>
+        {porTema.length === 0 ? (
+          <p className="texto-2" style={{ marginTop: '0.5rem' }}>
+            Ainda não há questões respondidas neste navegador. Responda uma sessão e o desempenho
+            por tema aparece aqui.
+          </p>
+        ) : (
+          <ul className="distribuicao" style={{ marginTop: '0.75rem' }}>
+            {porTema.map((tema) => {
+              const percentual = Math.round((tema.certas / tema.total) * 100)
+              return (
+                <li className="distribuicao__item" key={tema.nome}>
+                  <div className="distribuicao__link" style={{ cursor: 'default' }}>
+                    <span>{tema.nome}</span>
+                    <span className="distribuicao__quantidade">
+                      {tema.certas}/{tema.total} · {percentual}%
+                    </span>
+                    <span className="distribuicao__trilho">
+                      <span
+                        className="distribuicao__parte"
+                        style={{
+                          width: `${percentual}%`,
+                          background: percentual >= 60 ? 'var(--acerto)' : 'var(--erro)',
+                          opacity: 0.75,
+                        }}
+                      />
+                    </span>
+                  </div>
+                </li>
+              )
+            })}
+          </ul>
+        )}
+      </section>
+
+      <section className="limite-leitura">
+        <h2>Onde isso fica guardado</h2>
+        <p>
+          Tudo que o site sabe sobre você fica neste navegador, em localStorage. Nada é enviado para
+          servidor nenhum, porque não existe servidor: o site é um conjunto de arquivos estáticos.
+          São {(bytes / 1024).toFixed(1)} kB no total.
+        </p>
+      </section>
 
       <h2>Apagar tudo</h2>
       <p>

@@ -30,12 +30,20 @@ export function Inicio() {
 
   return (
     <div className="empilha-2">
-      <section className="limite-leitura">
-        <h1>Questões de TEOT e TARO, organizadas para estudar hoje.</h1>
-        <p style={{ marginTop: '0.75rem' }}>
-          Provas anteriores separadas por assunto, ano e tipo de prova. Você escolhe o filtro e
-          começa a responder na mesma tela. Sem cadastro, sem cobrança e sem interrupção.
+      <section className="heroi">
+        <h1>Treine para o TEOT e o TARO.</h1>
+        <p className="heroi__linha">
+          {indice && indice.total > 0 ? (
+            <>
+              <strong className="numerico">{indice.total}</strong> questões de provas anteriores,
+              organizadas por assunto. Você filtra, responde e vê seu desempenho na hora.
+            </>
+          ) : (
+            <>Questões de provas anteriores, organizadas por assunto, para responder e medir o seu
+              desempenho.</>
+          )}
         </p>
+        <p className="heroi__nota">Sem cadastro, sem custo, sem rastreadores.</p>
       </section>
 
       {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
@@ -63,28 +71,7 @@ export function Inicio() {
 
       {indice && contagens && indice.total > 0 && (
         <>
-          <section className="numeros" aria-label="O que há no acervo">
-            <div className="numeros__celula">
-              <span className="numeros__valor">{indice.total}</span>
-              <span className="numeros__rotulo">questões no acervo</span>
-            </div>
-            <div className="numeros__celula">
-              <span className="numeros__valor">{indice.temas.filter((t) => t.total > 0).length}</span>
-              <span className="numeros__rotulo">temas</span>
-            </div>
-            <div className="numeros__celula">
-              <span className="numeros__valor">{indice.provas.length}</span>
-              <span className="numeros__rotulo">tipos de prova</span>
-            </div>
-            <div className="numeros__celula">
-              <span className="numeros__valor">
-                {anos.length > 0 ? `${Math.min(...anos)}–${Math.max(...anos)}` : '—'}
-              </span>
-              <span className="numeros__rotulo">anos cobertos</span>
-            </div>
-          </section>
-
-          <div className="linha">
+          <div className="linha linha--empilha-celular">
             <a className="botao botao--principal botao--grande" href={href('/treinar')}>
               Começar a responder
             </a>
