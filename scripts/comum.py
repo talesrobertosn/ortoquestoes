@@ -83,6 +83,20 @@ def ler_json(caminho: Path, padrao=None):
     return json.loads(caminho.read_text(encoding="utf-8"))
 
 
+def e_o_proprio_tema(rotulo: str, nomes: set[str]) -> bool:
+    """
+    O rótulo de área do PDF é o próprio tema? Vale para o nome, para os
+    apelidos declarados na taxonomia e para o rótulo cortado na diagramação
+    ("Ombro e cotovel..." para "Ombro e cotovelo").
+    """
+    alvo = normalizar(rotulo).strip(" .…")
+    if alvo in nomes:
+        return True
+    if rotulo.endswith(("...", "…")):
+        return any(nome.startswith(alvo) for nome in nomes)
+    return False
+
+
 def juntar_linhas(linhas: list[str]) -> str:
     """
     Junta linhas de um bloco de PDF em texto corrido, preservando parágrafos.

@@ -27,7 +27,7 @@ except ImportError:  # pragma: no cover
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from comum import CAMINHO_TAXONOMIA, normalizar  # noqa: E402
+from comum import CAMINHO_TAXONOMIA, e_o_proprio_tema, normalizar  # noqa: E402
 from texto_pdf import extrair_linhas_visuais  # noqa: E402
 
 PADRAO_CABECALHO = re.compile(r"^\s*Quest[ãa]o\s*(?:n?[º°.]?\s*)?(\d{1,4})\s*[).:\-–—]?\s*$", re.IGNORECASE)
@@ -79,7 +79,9 @@ def principal() -> int:
     if argumentos.apelido:
         tema["apelidos"] = sorted({*tema.get("apelidos", []), *argumentos.apelido})
 
-    proprios = {normalizar(tema["nome"])} | {normalizar(a) for a in tema.get("apelidos", [])}
+    proprios = {normalizar(tema["nome"]).strip(" .…")} | {
+        normalizar(a).strip(" .…") for a in tema.get("apelidos", [])
+    }
 
     areas: dict[str, int] = {}
     etiquetas: dict[str, int] = {}
@@ -100,7 +102,7 @@ def principal() -> int:
 
     vocabulario: dict[str, int] = {}
     for chave, quantas in {**areas, **etiquetas}.items():
-        if normalizar(chave) in proprios:
+        if e_o_proprio_tema(chave, proprios):
             continue
         vocabulario[limpar(chave)] = vocabulario.get(limpar(chave), 0) + quantas
 

@@ -48,6 +48,7 @@ from comum import (  # noqa: E402
     LETRAS,
     PALAVRAS_VAZIAS,
     carregar_sinonimos,
+    e_o_proprio_tema,
     gravar_json,
     juntar_linhas,
     ler_json,
@@ -753,8 +754,8 @@ def principal() -> int:
     nome_pdf = argumentos.pdf.name
     sinonimos = carregar_sinonimos()
     validos = tema["subtemas"]
-    nomes_do_tema = {normalizar(tema["nome"])} | {
-        normalizar(apelido) for apelido in tema.get("apelidos", [])
+    nomes_do_tema = {normalizar(tema["nome"]).strip(" .…")} | {
+        normalizar(apelido).strip(" .…") for apelido in tema.get("apelidos", [])
     }
 
     usados = set(anteriores)
@@ -818,7 +819,7 @@ def principal() -> int:
             # Isso é rótulo de área, não subtema: os apelidos declarados na
             # taxonomia evitam que ele vire uma etiqueta repetida em todas as
             # questões do tema.
-            if normalizar(etiqueta) in nomes_do_tema:
+            if e_o_proprio_tema(etiqueta, nomes_do_tema):
                 continue
             casada = casar_etiqueta(etiqueta, validos)
             if casada:

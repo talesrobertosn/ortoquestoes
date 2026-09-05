@@ -128,10 +128,28 @@ await pagina.waitForSelector('.resultado')
 await pagina.click('button:has-text("Comentar esta questão")')
 await pagina.waitForSelector('.painel')
 checar(await pagina.locator('textarea').count() === 1, 'formulário de comentário abre')
-const botaoEnvio = pagina.locator('.painel button:has-text("Escreva o comentário")')
-checar(await botaoEnvio.isDisabled(), 'envio bloqueado sem texto e sem assinatura')
-await pagina.fill('textarea', 'A alternativa correta se justifica pelo mecanismo descrito em Tachdjian.')
-await pagina.fill('.painel fieldset input >> nth=0', 'Dra. Exemplo')
+checar(
+  await pagina.locator('.painel button:has-text("Escreva o comentário")').isDisabled(),
+  'envio bloqueado sem texto e sem assinatura',
+)
+
+// Regressão: o painel roubava o foco a cada tecla e o cursor pulava fora
+// da caixa depois da primeira letra.
+const frase = 'A alternativa correta se justifica pelo mecanismo descrito'
+await pagina.locator('textarea').click()
+await pagina.keyboard.type(frase, { delay: 12 })
+checar(
+  (await pagina.locator('textarea').inputValue()) === frase,
+  'digitar no comentário não perde o foco',
+  `(ficou "${(await pagina.locator('textarea').inputValue()).slice(0, 30)}…")`,
+)
+const nome = 'Dra. Exemplo de Teste'
+await pagina.locator('.painel fieldset input').first().click()
+await pagina.keyboard.type(nome, { delay: 12 })
+checar(
+  (await pagina.locator('.painel fieldset input').first().inputValue()) === nome,
+  'digitar a assinatura não perde o foco',
+)
 checar(
   await pagina.locator('.painel button:has-text("Abrir o e-mail já preenchido")').isEnabled(),
   'envio libera com comentário e assinatura',

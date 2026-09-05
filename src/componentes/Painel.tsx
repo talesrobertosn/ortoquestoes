@@ -21,6 +21,14 @@ export function Painel({
   const referencia = useRef<HTMLDivElement>(null)
   const anterior = useRef<HTMLElement | null>(null)
 
+  // aoFechar costuma ser uma função nova a cada render de quem abre o painel.
+  // Se ela entrar nas dependências do efeito, cada tecla digitada dentro do
+  // painel refaz o efeito: a limpeza devolve o foco a quem abriu e a montagem
+  // foca o primeiro campo de novo. Na prática, o cursor pula para fora depois
+  // da primeira letra. Guardar em ref mantém o efeito preso só a `aberto`.
+  const fechar = useRef(aoFechar)
+  fechar.current = aoFechar
+
   useEffect(() => {
     if (!aberto) return
     anterior.current = document.activeElement as HTMLElement | null
@@ -30,7 +38,7 @@ export function Painel({
     function aoTeclar(evento: KeyboardEvent) {
       if (evento.key === 'Escape') {
         evento.stopPropagation()
-        aoFechar()
+        fechar.current()
         return
       }
       if (evento.key !== 'Tab' || !caixa) return
@@ -54,7 +62,7 @@ export function Painel({
       document.removeEventListener('keydown', aoTeclar, true)
       anterior.current?.focus?.()
     }
-  }, [aberto, aoFechar])
+  }, [aberto])
 
   if (!aberto) return null
 
