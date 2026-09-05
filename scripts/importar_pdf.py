@@ -753,6 +753,9 @@ def principal() -> int:
     nome_pdf = argumentos.pdf.name
     sinonimos = carregar_sinonimos()
     validos = tema["subtemas"]
+    nomes_do_tema = {normalizar(tema["nome"])} | {
+        normalizar(apelido) for apelido in tema.get("apelidos", [])
+    }
 
     usados = set(anteriores)
     proximo = 1
@@ -810,8 +813,12 @@ def principal() -> int:
         # Etiquetas do próprio PDF valem mais do que qualquer proposta automática.
         subtemas: list[str] = []
         for etiqueta in questao.etiquetas:
-            # O primeiro segmento costuma repetir o nome do tema: não é subtema.
-            if normalizar(etiqueta) == normalizar(tema["nome"]):
+            # O primeiro segmento costuma repetir o nome do tema — às vezes com
+            # outra palavra ("Tumor" para "Tumores ósseos e de partes moles").
+            # Isso é rótulo de área, não subtema: os apelidos declarados na
+            # taxonomia evitam que ele vire uma etiqueta repetida em todas as
+            # questões do tema.
+            if normalizar(etiqueta) in nomes_do_tema:
                 continue
             casada = casar_etiqueta(etiqueta, validos)
             if casada:

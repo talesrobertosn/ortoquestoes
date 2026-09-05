@@ -65,22 +65,28 @@ def _colunas(xs: list[float], tolerancia: float = 25.0) -> list[float]:
 
 def paginas_de_grade(documento, minimo: int = 20) -> list[int]:
     """
-    Páginas que parecem folha de respostas: muitos números soltos e muitas
-    letras soltas. Serve para achar o gabarito dentro do próprio arquivo de
+    Páginas que parecem folha de respostas: números e letras soltos, quase nada
+    de outro texto. Serve para achar o gabarito dentro do próprio arquivo de
     questões quando não há cabeçalho "GABARITO" nenhum — e para não confundir
     as páginas de questão, onde a alternativa é "A)" e não "A".
+
+    Duas exigências que parecem detalhe e não são:
+
+    * **pelo menos uma letra marcada.** Folha de respostas em branco (o modelo
+      vazio, que alguns arquivos trazem junto) não é gabarito, e incluí-la
+      estraga a inferência de numeração: a página vazia viraria a âncora.
+    * **nenhum piso de letras.** A última folha costuma ter poucas marcas — a de
+      tumores tem 14 —, e exigir vinte deixaria essas questões sem gabarito.
     """
     encontradas: list[int] = []
     for numero in range(len(documento)):
         palavras = documento[numero].get_text("words")
         letras = sum(1 for p in palavras if re.fullmatch(r"[A-Ea-e]", p[4]))
         numeros = sum(1 for p in palavras if re.fullmatch(r"\d{1,4}", p[4]))
-        outras = sum(
-            1 for p in palavras if not re.fullmatch(r"[A-Ea-e]|\d{1,4}", p[4])
-        )
-        if letras >= minimo and (numeros >= minimo or letras >= minimo * 2):
-            if outras <= (letras + numeros) * 0.25:
-                encontradas.append(numero)
+        outras = sum(1 for p in palavras if not re.fullmatch(r"[A-Ea-e]|\d{1,4}", p[4]))
+        celulas = letras + numeros
+        if letras >= 1 and celulas >= minimo and outras <= celulas * 0.25:
+            encontradas.append(numero)
     return encontradas
 
 
