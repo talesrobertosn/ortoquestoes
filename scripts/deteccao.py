@@ -36,10 +36,13 @@ PADRAO_MOSTRA_EM = re.compile(
 )
 
 # "o dermátomo assinalado", "a linha traçada" — sem substantivo visual, mas
-# inequivocamente sobre algo mostrado. Ficam de fora "indicada" e "apontada",
-# que em português quase sempre significam "recomendada" e "citada":
-# "a radiografia está indicada", "a idade apontada na literatura".
-PADRAO_APONTA = re.compile(r"\b(assinalad|tra[çc]ad|destacad)\w+\b", re.IGNORECASE)
+# inequivocamente sobre algo mostrado. Ficam de fora, de propósito:
+#   "indicada"  — "a radiografia está indicada" é recomendação, não figura;
+#   "apontada"  — "a idade apontada na literatura" é citação;
+#   "destacado" — "fragmento osteocondral destacado" é fragmento solto.
+# Todas as três continuam valendo quando vêm com o substantivo visual junto,
+# pela regra PADRAO_MOSTRA_EM ("destacada na figura").
+PADRAO_APONTA = re.compile(r"\b(assinalad|tra[çc]ad)\w+\b", re.IGNORECASE)
 
 
 def cita_figura(enunciado: str) -> bool:

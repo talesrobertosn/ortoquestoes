@@ -10,15 +10,15 @@ export function Sobre() {
     <article className="limite-leitura empilha">
       <h1>Sobre o OrtoQuestões</h1>
       <p>
-        O OrtoQuestões reúne questões de provas anteriores de TEOT e TARO em um lugar só,
-        organizadas por assunto, ano e tipo de prova. Foi feito por um ortopedista para residentes
+        O OrtoQuestões reúne questões de provas anteriores de ortopedia em um lugar só — TEOT,
+        TARO, SBOT e outras —, organizadas por assunto. Foi feito por um ortopedista para residentes
         que estudam entre plantões e cirurgias, com uma regra simples: da página inicial até a
         primeira questão respondida, no máximo dois cliques.
       </p>
       <h2>O que ele é</h2>
       <p>
-        Um acervo de questões originais das provas, transcritas dos PDFs oficiais sem reescrita,
-        sem resumo e sem correção do enunciado. O gabarito vem da própria prova. Questões anuladas
+        Um acervo de questões originais das provas, transcritas dos PDFs sem reescrita, sem resumo
+        e sem correção do enunciado. O gabarito vem da própria prova. Questões anuladas
         ficam marcadas como anuladas e não entram no cálculo de desempenho.
       </p>
       <h2>O que ele não é</h2>

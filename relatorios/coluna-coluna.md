@@ -1,7 +1,7 @@
 # Relatório de importação — Coluna
 
 - Arquivo: `coluna.pdf` (91 páginas)
-- Gerado em: 2026-09-05T13:40:14+00:00
+- Gerado em: 2026-09-05T15:37:27+00:00
 - Camada de texto: sim
 - Gabarito: folha de respostas no próprio arquivo, páginas 87, 88, 89 — 289 respostas lidas
 

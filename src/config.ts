@@ -16,7 +16,7 @@ export function recurso(caminho: string): string {
 export const SITE = {
   nome: 'OrtoQuestões',
   descricao:
-    'Questões de provas anteriores de TEOT e TARO organizadas por assunto, ano e tipo de prova. Sem cadastro, sem custo.',
+    'Questões de provas anteriores de ortopedia — TEOT, TARO, SBOT e outras — organizadas por assunto. Sem cadastro, sem custo.',
   autor: 'Tales',
   contato: 'talesroberto23@gmail.com',
 } as const

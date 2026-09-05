@@ -1,7 +1,7 @@
 # Relatório de importação — Ortopedia pediátrica
 
 - Arquivo: `pediatria-050-134.pdf` (85 páginas)
-- Gerado em: 2026-09-05T13:39:59+00:00
+- Gerado em: 2026-09-05T15:37:12+00:00
 - Camada de texto: sim
 - Gabarito: arquivo separado pediatria-gabarito.pdf (formato grade) — 502 respostas lidas
 

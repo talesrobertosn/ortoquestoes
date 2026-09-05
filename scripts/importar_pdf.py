@@ -909,7 +909,10 @@ def principal() -> int:
     for questao in todas:
         if questao.get("imagens"):
             continue
-        grupos.setdefault(normalizar(questao["enunciado"])[:220], []).append(questao)
+        # Enunciado inteiro, não um prefixo: um caso clínico compartilhado por
+        # duas questões diferentes tem centenas de caracteres iguais no começo
+        # e pergunta coisas distintas no fim.
+        grupos.setdefault(normalizar(questao["enunciado"]), []).append(questao)
 
     repetidas = [g for g in grupos.values() if len(g) > 1]
     duplicadas = [

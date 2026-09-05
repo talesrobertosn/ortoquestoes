@@ -34,6 +34,10 @@ CASOS: list[tuple[str, bool]] = [
     ("Na mielomeningocele, a presença de medula presa na ressonância magnética é", False),
     ("Paciente com hemimelia fibular. Radiografias demonstram deformidade antero-medial da perna", False),
     ("No desenvolvimento da coxa, o centro de ossificação da cabeça do fêmur é visibilizado na radiografia:", False),
+    ("A fratura osteocondral do tálus com fragmento destacado e posicionado sobre o seu leito corresponde ao estágio", False),
+    ("A estrutura destacada na figura corresponde a", True),
+    ("Qual a alternativa correta sobre a imagem a seguir:", True),
+    ("A incidência radiográfica tangencial dorsal, mostrada na figura a seguir, é realizada com o punho", True),
 ]
 
 

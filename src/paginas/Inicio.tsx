@@ -31,12 +31,13 @@ export function Inicio() {
   return (
     <div className="empilha-2">
       <section className="heroi">
-        <h1>Treine para o TEOT e o TARO.</h1>
+        <h1>Treine para o TEOT, o TARO e as demais provas.</h1>
         <p className="heroi__linha">
           {indice && indice.total > 0 ? (
             <>
-              <strong className="numerico">{indice.total}</strong> questões de provas anteriores,
-              organizadas por assunto. Você filtra, responde e vê seu desempenho na hora.
+              <strong className="numerico">{indice.total}</strong> questões de provas anteriores de
+              TEOT, TARO, SBOT e outras, organizadas por assunto. Você filtra, responde e vê seu
+              desempenho na hora.
             </>
           ) : (
             <>Questões de provas anteriores, organizadas por assunto, para responder e medir o seu
