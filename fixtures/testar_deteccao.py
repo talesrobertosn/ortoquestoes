@@ -14,7 +14,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
-from importar_pdf import cita_figura  # noqa: E402
+from deteccao import cita_figura  # noqa: E402
 
 CASOS: list[tuple[str, bool]] = [
     # Pergunta sobre algo mostrado — precisa de figura.

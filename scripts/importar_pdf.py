@@ -40,6 +40,7 @@ except ImportError:  # pragma: no cover
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import gabarito as mod_gabarito  # noqa: E402
+from deteccao import cita_figura  # noqa: E402
 from comum import (  # noqa: E402
     DIR_IMAGENS,
     DIR_RELATORIOS,
@@ -87,44 +88,6 @@ PADRAO_FONTE = re.compile(
     re.IGNORECASE,
 )
 
-# Citar "radiografia" não quer dizer que a questão traga uma: em
-# "a radiografia está indicada se", nada é mostrado. Só conta como figura
-# ausente quando a frase aponta para algo exibido. Três formas cobrem os casos
-# reais sem arrastar falso positivo junto.
-# Só as formas substantivas. "achados radiográficos abaixo" fala das
-# alternativas, não de uma radiografia mostrada.
-# O \b inicial não é decoração: sem ele, "gráficos" casa dentro de
-# "radiográficos" e a questão vira falso positivo.
-PADRAO_VISUAL = (
-    r"\b(figuras?|imagem|imagens|radiografias?|tomografias?|resson[âa]ncias?|"
-    r"fotografias?|fotos?|esquemas?|gr[áa]ficos?|exame de imagem)\b"
-)
-# "a figura abaixo", "a imagem a seguir"
-PADRAO_LOCATIVO = re.compile(
-    PADRAO_VISUAL + r"[^.;]{0,20}?\b(abaixo|acima|a seguir|ao lado|seguinte|em anexo)\b",
-    re.IGNORECASE,
-)
-# "traçada na figura", "apontada na imagem"
-PADRAO_MOSTRA_EM = re.compile(
-    r"\b(assinalad|apontad|tra[çc]ad|representad|mostrad|destacad|ilustrad|demonstrad)\w*"
-    r"\s+(na|no|em|pela|pelo|nas|nos)\s+" + PADRAO_VISUAL,
-    re.IGNORECASE,
-)
-# "o dermátomo assinalado", "a linha traçada" — sem substantivo visual, mas
-# inequivocamente sobre algo mostrado. Ficam de fora "indicada" e "apontada",
-# que em português quase sempre significam "recomendada" e "citada":
-# "a radiografia está indicada", "a idade apontada na literatura".
-PADRAO_APONTA = re.compile(
-    r"\b(assinalad|tra[çc]ad|destacad)\w+\b", re.IGNORECASE
-)
-
-
-def cita_figura(enunciado: str) -> bool:
-    return bool(
-        PADRAO_LOCATIVO.search(enunciado)
-        or PADRAO_MOSTRA_EM.search(enunciado)
-        or PADRAO_APONTA.search(enunciado)
-    )
 PADRAO_CABECALHO_GABARITO = re.compile(
     r"^\s*(gabarito|respostas|chave de respostas|gabarito oficial|folha de respostas)\b",
     re.IGNORECASE,
