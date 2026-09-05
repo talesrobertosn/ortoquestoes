@@ -1,7 +1,7 @@
 {
   "versao": 1,
-  "geradoEm": "2026-09-05T23:13:43+00:00",
-  "total": 3344,
+  "geradoEm": "2026-09-05T23:28:25+00:00",
+  "total": 3421,
   "temas": [
     {
       "slug": "ombro-cotovelo",
@@ -50,6 +50,12 @@
       "nome": "Conceitos básicos",
       "arquivo": "temas/conceitos-basicos.json",
       "total": 266
+    },
+    {
+      "slug": "osteometabolicas",
+      "nome": "Osteometabólicas",
+      "arquivo": "temas/osteometabolicas.json",
+      "total": 77
     }
   ],
   "subtemas": [
@@ -44207,6 +44213,982 @@
       "t": 7,
       "s": [
         31
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0001",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0002",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0003",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0004",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0005",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0006",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0007",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0008",
+      "t": 8,
+      "s": [
+        154
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0009",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0010",
+      "t": 8,
+      "s": [
+        154
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0011",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0012",
+      "t": 8,
+      "s": [
+        154
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0013",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0014",
+      "t": 8,
+      "s": [
+        29
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0015",
+      "t": 8,
+      "s": [
+        154
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0016",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0017",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0018",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0019",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0020",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0021",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0022",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0023",
+      "t": 8,
+      "s": [
+        18,
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0024",
+      "t": 8,
+      "s": [
+        141
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0025",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0026",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0027",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0028",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0029",
+      "t": 8,
+      "s": [
+        154
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0030",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0031",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0032",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0033",
+      "t": 8,
+      "s": [
+        5,
+        154
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0034",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0035",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0036",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0037",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0038",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0039",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0040",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0041",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0042",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0043",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0044",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0045",
+      "t": 8,
+      "s": [
+        154
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0046",
+      "t": 8,
+      "s": [
+        126,
+        19,
+        42
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0047",
+      "t": 8,
+      "s": [
+        126
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0048",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0049",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0050",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0051",
+      "t": 8,
+      "s": [
+        20,
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0052",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0053",
+      "t": 8,
+      "s": [
+        29,
+        154
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0054",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0055",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0056",
+      "t": 8,
+      "s": [
+        68,
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0057",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0058",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0059",
+      "t": 8,
+      "s": [
+        14,
+        154,
+        132
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0060",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0061",
+      "t": 8,
+      "s": [
+        126,
+        19,
+        42
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0062",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0063",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0064",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0065",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0066",
+      "t": 8,
+      "s": [
+        154
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0067",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0068",
+      "t": 8,
+      "s": [
+        154
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0069",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0070",
+      "t": 8,
+      "s": [
+        72,
+        78,
+        54
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0071",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0072",
+      "t": 8,
+      "s": [
+        154
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0073",
+      "t": 8,
+      "s": [
+        154
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0074",
+      "t": 8,
+      "s": [
+        19
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0075",
+      "t": 8,
+      "s": [],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0076",
+      "t": 8,
+      "s": [
+        78
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 0
+    },
+    {
+      "id": "osteometabolicas-0077",
+      "t": 8,
+      "s": [
+        78
       ],
       "p": null,
       "a": null,

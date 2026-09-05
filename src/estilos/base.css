@@ -129,7 +129,13 @@ textarea {
   width: 100%;
   max-width: 76rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 0.75rem;
+}
+
+@media (min-width: 30rem) {
+  .conteudo {
+    padding: 0 1rem;
+  }
 }
 
 @media (min-width: 48rem) {
@@ -138,10 +144,11 @@ textarea {
   }
 }
 
-/* Coluna de leitura da questão: larga o bastante para não espremer o
-   enunciado, estreita o bastante para a linha não cansar. */
+/* Coluna de leitura da questão. O enunciado tem limite próprio de caracteres
+   por linha; o cartão pode ser mais largo do que ele, e as alternativas
+   agradecem — enunciado de duas linhas cabe em uma. */
 .conteudo--estreito {
-  max-width: 54rem;
+  max-width: 64rem;
 }
 
 .principal {
@@ -339,7 +346,13 @@ textarea {
 }
 
 .cartao__corpo {
-  padding: 1rem;
+  padding: 0.875rem;
+}
+
+@media (min-width: 30rem) {
+  .cartao__corpo {
+    padding: 1.125rem;
+  }
 }
 
 @media (min-width: 40rem) {
@@ -1383,7 +1396,44 @@ kbd {
     width: 100%;
   }
   .riscar {
-    width: 2rem;
+    width: 1.875rem;
+  }
+  .alternativa__letra {
+    width: 2.125rem;
+  }
+  .alternativa__texto {
+    padding: 0.75rem 0.625rem;
+  }
+  /* No celular o rótulo do resultado desce para a própria linha: ao lado do
+     texto ele espremia a alternativa a ponto de quebrar palavra no meio. */
+  .alternativa {
+    flex-wrap: wrap;
+  }
+  /* base zero: o texto encolhe em vez de pular para a linha de baixo, o que
+     deixaria a letra sozinha no topo. */
+  .alternativa__texto {
+    flex: 1 1 0;
+  }
+  .alternativa__marca {
+    flex: 1 0 100%;
+    justify-content: flex-start;
+    padding: 0 0.625rem 0.625rem 2.75rem;
+  }
+  /* No celular a margem lateral é espaço de leitura desperdiçado: o cartão
+     encosta na borda e o enunciado ganha a largura de volta. */
+  .principal > .conteudo--estreito {
+    padding: 0;
+  }
+  .conteudo--estreito .cartao {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+  .conteudo--estreito .barra-sessao__interno,
+  .conteudo--estreito > nav,
+  .conteudo--estreito > .linha {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 

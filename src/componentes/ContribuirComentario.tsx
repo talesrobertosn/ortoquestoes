@@ -84,7 +84,7 @@ export function ContribuirComentario({ questao }: { questao: Questao }) {
         aberto={aberto}
         aoFechar={() => definirAberto(false)}
       >
-        <div className="empilha">
+        <form className="empilha" autoComplete="off" onSubmit={(e) => e.preventDefault()}>
           <p className="menor texto-2">
             Justifique a resposta e assine. O comentário é conferido e publicado com o seu crédito.
             Print de livro ajuda muito: você anexa no seu programa de e-mail, na mensagem que este
@@ -95,6 +95,8 @@ export function ContribuirComentario({ questao }: { questao: Questao }) {
             <span className="campo__rotulo">Comentário</span>
             <textarea
               className="entrada"
+              name="comentario"
+              autoComplete="off"
               rows={7}
               style={{ padding: '0.625rem 0.75rem', minHeight: 'auto', resize: 'vertical' }}
               placeholder="Por que a alternativa correta é essa, e por que as outras não são."
@@ -112,6 +114,8 @@ export function ContribuirComentario({ questao }: { questao: Questao }) {
             <span className="campo__rotulo">Referência</span>
             <input
               className="entrada"
+              name="referencia"
+              autoComplete="off"
               placeholder="Tachdjian, 6ª ed., p. 412"
               value={referencia}
               onChange={(e) => definirReferencia(e.target.value)}
@@ -126,6 +130,8 @@ export function ContribuirComentario({ questao }: { questao: Questao }) {
               <span className="campo__rotulo">Nome</span>
               <input
                 className="entrada"
+                name="nome"
+                autoComplete="name"
                 value={identificacao.nome}
                 onChange={(e) => definirIdentificacao({ ...identificacao, nome: e.target.value })}
               />
@@ -134,6 +140,8 @@ export function ContribuirComentario({ questao }: { questao: Questao }) {
               <span className="campo__rotulo">Especialidade</span>
               <input
                 className="entrada"
+                name="especialidade"
+                autoComplete="off"
                 placeholder="Ortopedia e Traumatologia"
                 value={identificacao.especialidade}
                 onChange={(e) =>
@@ -145,6 +153,8 @@ export function ContribuirComentario({ questao }: { questao: Questao }) {
               <span className="campo__rotulo">Subespecialidade</span>
               <input
                 className="entrada"
+                name="subespecialidade"
+                autoComplete="off"
                 placeholder="Ortopedia pediátrica"
                 value={identificacao.subespecialidade}
                 onChange={(e) =>
@@ -156,6 +166,8 @@ export function ContribuirComentario({ questao }: { questao: Questao }) {
               <span className="campo__rotulo">Centro onde trabalha</span>
               <input
                 className="entrada"
+                name="centro"
+                autoComplete="organization"
                 placeholder="Hospital, cidade"
                 value={identificacao.centro}
                 onChange={(e) => definirIdentificacao({ ...identificacao, centro: e.target.value })}
@@ -182,7 +194,7 @@ export function ContribuirComentario({ questao }: { questao: Questao }) {
               <span className="numerico">{questao.id}</span>.
             </p>
           )}
-        </div>
+        </form>
       </Painel>
     </>
   )

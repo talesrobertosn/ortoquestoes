@@ -102,10 +102,28 @@ def ler_grade(documento, paginas: list[int] | None = None) -> Gabarito:
             if re.fullmatch(r"\d{1,4}", palavra[4]):
                 xs_numericos.append(palavra[0])
 
-    origens = _colunas(xs_numericos) if xs_numericos else []
+    if xs_numericos:
+        origens = _colunas(xs_numericos)
+    else:
+        # Folha de uma página só, com os números fora da camada de texto: as
+        # colunas saem das próprias letras marcadas. Dentro de uma coluna as
+        # bolhas A a E ficam a ~20 pontos uma da outra; entre colunas o vão
+        # passa de 70. Uma tolerância no meio disso separa sem ambiguidade.
+        xs_letras: list[float] = []
+        for numero in alvo:
+            for palavra in documento[numero].get_text("words"):
+                if re.fullmatch(r"[A-Ea-e]", palavra[4]):
+                    xs_letras.append(palavra[0])
+        origens = _colunas(xs_letras, tolerancia=40.0) if xs_letras else []
+        if origens:
+            gabarito.avisos.append(
+                f"O gabarito não traz número nenhum na camada de texto. As {len(origens)} "
+                "colunas foram descobertas pela posição das letras marcadas."
+            )
+
     if not origens:
         gabarito.avisos.append(
-            "Nenhum número encontrado no gabarito: as colunas não puderam ser descobertas."
+            "Nenhum número nem letra encontrados: as colunas não puderam ser descobertas."
         )
         return gabarito
 
@@ -141,9 +159,22 @@ def ler_grade(documento, paginas: list[int] | None = None) -> Gabarito:
         if pagina["tem_numeros"]:
             continue
         if ancora is None:
+            # Nenhuma página numerada no arquivo inteiro. A leitura só faz
+            # sentido assumindo que a grade começa em 1 — o que é o normal numa
+            # folha de página única. É uma suposição, e vai dita no relatório.
+            linhas_por_coluna = pagina["linhas"]
+            for (linha, coluna), celula in pagina["celulas"].items():
+                celula["numero"] = 1 + coluna * linhas_por_coluna + linha
+                celula["inferido"] = True
+            maior = max(
+                (c["numero"] for c in pagina["celulas"].values() if "numero" in c), default=0
+            )
             gabarito.avisos.append(
-                f"Página {pagina['pagina'] + 1} do gabarito não traz números e não há "
-                "nenhuma página numerada para servir de âncora."
+                f"Página {pagina['pagina'] + 1} do gabarito não traz número nenhum e não há "
+                "outra página numerada no arquivo. A numeração 1–"
+                f"{maior} foi SUPOSTA: grade lida coluna a coluna, "
+                f"{linhas_por_coluna} linhas por coluna. CONFIRA no original as questões 1, "
+                f"{linhas_por_coluna}, {linhas_por_coluna + 1} e {maior}."
             )
             continue
         # Quantas respostas cabem numa página completa, medido na página-âncora.
