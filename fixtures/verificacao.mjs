@@ -206,10 +206,33 @@ checar(
   'digitar a assinatura não perde o foco',
 )
 checar(
-  await pagina.locator('.painel button:has-text("Abrir o e-mail já preenchido")').isEnabled(),
+  await pagina.locator('.painel button:has-text("Copiar o comentário")').isEnabled(),
   'envio libera com comentário e assinatura',
 )
+checar(
+  (await pagina.locator('.painel a:has-text("Abrir no Gmail")').count()) === 1,
+  'oferece o Gmail, que não depende de programa de e-mail instalado',
+)
 await pagina.keyboard.press('Escape')
+
+console.log('\n7b2. Relatar erro')
+await pagina.goto(BASE + '#/contato?questao=' + idExemplo, { waitUntil: 'networkidle' })
+await pagina.waitForSelector('h1:has-text("Relatar erro")')
+checar(
+  (await pagina.locator('button:has-text("Copiar o relato")').count()) === 1,
+  'relatar erro tem ação que não depende de programa de e-mail',
+)
+checar(
+  (await pagina.locator('a:has-text("Abrir no Gmail")').count()) === 1,
+  'relatar erro oferece o Gmail',
+)
+const linkMailto = await pagina
+  .locator('a:has-text("Abrir no meu programa de e-mail")')
+  .getAttribute('href')
+checar(
+  (linkMailto ?? '').startsWith('mailto:') && (linkMailto ?? '').includes(idExemplo),
+  'o mailto continua disponível e leva o identificador da questão',
+)
 
 console.log('\n7c. Desempenho por tema')
 await pagina.goto(BASE + '#/dados', { waitUntil: 'networkidle' })

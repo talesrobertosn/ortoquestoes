@@ -5,6 +5,7 @@ import { href } from '../util/rotas'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { Painel } from './Painel'
 import { Icone } from './Icone'
+import { AcoesDeEmail } from './AcoesDeEmail'
 
 interface Identificacao {
   nome: string
@@ -31,14 +32,15 @@ export function ContribuirComentario({ questao }: { questao: Questao }) {
   )
   const [texto, definirTexto] = useState('')
   const [referencia, definirReferencia] = useState('')
-  const [enviado, definirEnviado] = useState(false)
 
   const alternativaCorreta = questao.alternativas.find((a) => a.letra === questao.gabarito)
   const podeEnviar = texto.trim().length >= 20 && identificacao.nome.trim().length >= 2
 
-  function montarEmail(): string {
+  const assunto = `OrtoQuestões — comentário da questão ${questao.id}`
+
+  function corpoDoEmail(): string {
     const link = window.location.href.split('#')[0] + href(`/questao/${questao.id}`)
-    const corpo = [
+    return [
       `Questão: ${questao.id}`,
       `Link: ${link}`,
       `Gabarito: ${questao.gabarito ?? '—'}${alternativaCorreta ? ` (${alternativaCorreta.texto})` : ''}`,
@@ -58,14 +60,6 @@ export function ContribuirComentario({ questao }: { questao: Questao }) {
       '',
       'Se houver print do livro ou imagem, anexe a esta mensagem antes de enviar.',
     ].join('\n')
-
-    const assunto = `OrtoQuestões — comentário da questão ${questao.id}`
-    return `mailto:${SITE.contato}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`
-  }
-
-  function enviar() {
-    window.location.href = montarEmail()
-    definirEnviado(true)
   }
 
   return (
@@ -178,21 +172,17 @@ export function ContribuirComentario({ questao }: { questao: Questao }) {
             </p>
           </fieldset>
 
-          <button
-            type="button"
-            className="botao botao--principal botao--largo botao--grande"
-            disabled={!podeEnviar}
-            onClick={enviar}
-          >
-            {podeEnviar ? 'Abrir o e-mail já preenchido' : 'Escreva o comentário e assine'}
-          </button>
-
-          {enviado && (
-            <p className="menor texto-2">
-              Se o seu programa de e-mail não abriu, escreva para{' '}
-              <span className="numerico">{SITE.contato}</span> com o identificador{' '}
-              <span className="numerico">{questao.id}</span>.
-            </p>
+          {podeEnviar ? (
+            <AcoesDeEmail
+              para={SITE.contato}
+              assunto={assunto}
+              corpo={corpoDoEmail()}
+              rotuloCopiar="Copiar o comentário"
+            />
+          ) : (
+            <button type="button" className="botao botao--largo botao--grande" disabled>
+              Escreva o comentário e assine
+            </button>
           )}
         </form>
       </Painel>

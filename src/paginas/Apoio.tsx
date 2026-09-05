@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { SITE } from '../config'
 import { href } from '../util/rotas'
+import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
 import { armazenamentoDisponivel, limparTudo, tamanhoArmazenado } from '../estado/armazenamento'
 import { lerHistorico, lerRespondidas, usarFavoritos } from '../estado/sessao'
 import { usarIndice } from '../dados/usarIndice'
@@ -45,7 +46,6 @@ export function Sobre() {
 
 export function Contato({ consulta }: { consulta: URLSearchParams }) {
   const questao = consulta.get('questao')
-  const [copiado, definirCopiado] = useState(false)
 
   const modelo = useMemo(
     () =>
@@ -58,9 +58,9 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
     [questao],
   )
 
-  const assunto = encodeURIComponent(
-    questao ? `OrtoQuestões — erro na questão ${questao}` : 'OrtoQuestões — relato de erro',
-  )
+  const assunto = questao
+    ? `OrtoQuestões — erro na questão ${questao}`
+    : 'OrtoQuestões — relato de erro' 
 
   return (
     <article className="limite-leitura empilha">
@@ -87,30 +87,9 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
       >
         {modelo}
       </pre>
-      <div className="linha">
-        <a className="botao botao--principal" href={`mailto:${SITE.contato}?subject=${assunto}&body=${encodeURIComponent(modelo)}`}>
-          Escrever por e-mail
-        </a>
-        <button
-          type="button"
-          className="botao"
-          onClick={async () => {
-            try {
-              await navigator.clipboard.writeText(modelo)
-              definirCopiado(true)
-              window.setTimeout(() => definirCopiado(false), 2500)
-            } catch {
-              window.prompt('Copie o modelo:', modelo)
-            }
-          }}
-        >
-          Copiar o modelo
-        </button>
-        {copiado && <span className="meta">Copiado.</span>}
-      </div>
-      <p className="texto-2">
-        Endereço: <span className="numerico">{SITE.contato}</span>
-      </p>
+      <AcoesDeEmail para={SITE.contato} assunto={assunto} corpo={modelo} />
+
+
     </article>
   )
 }

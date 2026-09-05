@@ -300,7 +300,10 @@ python3 scripts/importar_pdf.py fixtures/teste-mao.pdf --tema mao --seco
 ## Comentários da comunidade
 
 O site não tem servidor nem cadastro, então não existe formulário que grave direto no acervo. O
-caminho é o e-mail, e ele é curto: na questão respondida, **Comentar esta questão** abre um
+caminho é o e-mail — mas **`mailto:` sozinho não serve**: quando o navegador não tem programa de
+e-mail registrado, o clique não faz nada e a pessoa acha que o site quebrou. Por isso a ação
+principal é copiar o texto, que funciona em qualquer lugar, e o e-mail vem como caminho
+secundário (Gmail na web, ou o programa instalado). O fluxo: na questão respondida, **Comentar esta questão** abre um
 formulário que monta a mensagem já estruturada (identificador da questão, link direto, gabarito,
 enunciado, comentário, referência e o crédito de quem escreveu) e abre o programa de e-mail do
 colega, onde ele anexa os prints do livro. A identificação fica guardada no navegador dele para não
