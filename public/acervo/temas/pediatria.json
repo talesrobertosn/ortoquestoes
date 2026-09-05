@@ -1,7 +1,7 @@
 {
   "tema": "Ortopedia pediátrica",
   "slug": "pediatria",
-  "geradoEm": "2026-09-05T02:15:14+00:00",
+  "geradoEm": "2026-09-05T02:22:39+00:00",
   "questoes": [
     {
       "id": "pediatria-0001",
@@ -1569,7 +1569,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na doença de LEGG-CALVÉ-PERTHES, de acordo com classificação de CATTERALL, a imagem a seguir corresponde ao tipo",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0038-1.jpeg",
+          "legenda": null,
+          "largura": 172,
+          "altura": 263
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -1611,7 +1618,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Em uma paciente de 15 anos de idade, com dor no pé, claudicação e a imagem radiográfica a seguir, o diagnóstico mais provável é a doença de",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0039-1.jpeg",
+          "legenda": null,
+          "largura": 234,
+          "altura": 365
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -3691,7 +3705,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "O índice demonstrado na figura é o de",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0088-1.jpeg",
+          "legenda": null,
+          "largura": 428,
+          "altura": 364
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -3733,7 +3754,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "A técnica cirúrgica demonstrada na figura para tratar espasticidade do tríceps sural realizada na zona 2 é a de:",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0089-1.jpeg",
+          "legenda": null,
+          "largura": 548,
+          "altura": 859
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -4279,7 +4307,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "A osteocondrose representada na imagem a seguir é a doença de",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0102-1.jpeg",
+          "legenda": null,
+          "largura": 522,
+          "altura": 362
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -4363,7 +4398,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na epifisiólise proximal do fêmur, a imagem a seguir representa a técnica de",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0104-1.jpeg",
+          "legenda": null,
+          "largura": 591,
+          "altura": 322
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -6134,7 +6176,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "A fratura representada na foto, em uma criança abaixo de 2 anos é sugestiva de",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0146-1.jpeg",
+          "legenda": null,
+          "largura": 240,
+          "altura": 320
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -6260,7 +6309,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Segundo a Classificação de HENINIGAN & KUO para a síndrome de STREETER, a maior parte ocorre na zona",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0149-1.jpeg",
+          "legenda": null,
+          "largura": 188,
+          "altura": 324
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -6636,12 +6692,13 @@
       "tema": "Ortopedia pediátrica",
       "subtemas": [
         "Pé e tornozelo",
-        "Deformidades dos Membros Inferiores"
+        "Deformidades dos Membros Inferiores",
+        "Deformidades dos Pés"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Deformidades dos Pés O pé metatarso aduto é caracterizado por",
+      "enunciado": "O pé metatarso aduto é caracterizado por",
       "imagens": [],
       "alternativas": [
         {
@@ -6894,7 +6951,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Qual a principal hipótese diagnóstica do caso apresentado?",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0164-1.jpeg",
+          "legenda": null,
+          "largura": 588,
+          "altura": 378
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -8124,12 +8188,14 @@
       "tema": "Ortopedia pediátrica",
       "subtemas": [
         "Pé e tornozelo",
-        "Pé Torto Congênito"
+        "Pé Torto Congênito",
+        "Deformidades dos Membros Inferiores",
+        "Deformidades dos Pés"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Deformidades dos Membros Inferiores Deformidades dos Pés No tratamento do pé cavo varo na criança, a osteotomia representada na imagem a seguir é a de",
+      "enunciado": "No tratamento do pé cavo varo na criança, a osteotomia representada na imagem a seguir é a de",
       "imagens": [
         {
           "arquivo": "pediatria/pediatria-0193-1.jpeg",
@@ -8308,12 +8374,13 @@
       "subtemas": [
         "Joelho",
         "Lesões Meniscais",
-        "Menisco discoide"
+        "Menisco discoide",
+        "Anatomia"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Anatomia O corno posterior do menisco medial está aderido à borda superior da tíbia por meio",
+      "enunciado": "O corno posterior do menisco medial está aderido à borda superior da tíbia por meio",
       "imagens": [],
       "alternativas": [
         {
@@ -8399,7 +8466,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "O tratamento da osteogênese imperfeita em crianças demonstrado na imagem a seguir é a osteotomia com fixação através da haste telescopada de",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0199-1.jpeg",
+          "legenda": null,
+          "largura": 769,
+          "altura": 356
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -8484,12 +8558,13 @@
       "id": "pediatria-0201",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Alterações Congênitas"
+        "Alterações Congênitas",
+        "Deformidades dos Membros Inferiores"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Deformidades dos Membros Inferiores Em relação à epidemiologia da coxa vara do desenvolvimento, é correto afirmar que acomete",
+      "enunciado": "Em relação à epidemiologia da coxa vara do desenvolvimento, é correto afirmar que acomete",
       "imagens": [],
       "alternativas": [
         {
@@ -9711,7 +9786,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na avaliação ultrassonográfica do quadril pediátrico com suspeita de displasia:",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0229-1.jpeg",
+          "legenda": null,
+          "largura": 487,
+          "altura": 388
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -9753,7 +9835,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Segundo Sillence a alteração a seguir é mais encontrada nos tipos:",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0230-1.jpeg",
+          "legenda": null,
+          "largura": 539,
+          "altura": 334
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -9795,7 +9884,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "A alteração abaixo é vista em qual tipo de osteogênese imperfeita e qual seu principal diagnóstico diferencial:",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0231-1.jpeg",
+          "legenda": null,
+          "largura": 373,
+          "altura": 561
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -10817,12 +10913,13 @@
       "subtemas": [
         "Joelho",
         "Menisco discoide",
-        "Lesões Meniscais"
+        "Lesões Meniscais",
+        "Anatomia"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Anatomia Os ligamentos meniscofemorais:",
+      "enunciado": "Os ligamentos meniscofemorais:",
       "imagens": [],
       "alternativas": [
         {
@@ -10860,12 +10957,13 @@
       "tema": "Ortopedia pediátrica",
       "subtemas": [
         "Joelho",
-        "Menisco discoide"
+        "Menisco discoide",
+        "Radiologia do joelho"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Radiologia do joelho A imagem a seguir é mais sugestiva de:",
+      "enunciado": "A imagem a seguir é mais sugestiva de:",
       "imagens": [
         {
           "arquivo": "pediatria/pediatria-0256-1.jpeg",
@@ -10957,7 +11055,7 @@
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Menisco discoide Qual dos achados radiográficos abaixo não é sugestivo de menisco discoide lateral:",
+      "enunciado": "Qual dos achados radiográficos abaixo não é sugestivo de menisco discoide lateral:",
       "imagens": [],
       "alternativas": [
         {
@@ -11330,13 +11428,21 @@
       "id": "pediatria-0267",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Radiologia do quadril"
+        "Radiologia do quadril",
+        "Displasia do Desenvolvimento do Quadril"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Displasia do Desenvolvimento do Quadril Nomeie as linhas indicadas, na sequência (A-B-C-D-E)",
-      "imagens": [],
+      "enunciado": "Nomeie as linhas indicadas, na sequência (A-B-C-D-E)",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0267-1.jpeg",
+          "legenda": null,
+          "largura": 443,
+          "altura": 251
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -11595,7 +11701,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "No tratamento da deformidade causada pela epifisiólise femoral proximal, a osteotomia de localização subcapital demonstrada na imagem a seguir é a de:",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0273-1.jpeg",
+          "legenda": "Fonte: HERRING, J. A. Tachdjian’s pediatric orthopaedics. 6.ed. Philadelphia: Elsevier, 2022.",
+          "largura": 652,
+          "altura": 726
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -11724,7 +11837,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na criança com doença de BLOUNT, o estágio de LANGENSKIÖLD representado na imagem a seguir é o Philadelphia: Lippincott Williams & Wilkins, 2021.",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0276-1.jpeg",
+          "legenda": "Fonte: WEINSTEIN, S. L.; FLYNN, J. M. Lovell and Winter’s pediatric orthopaedics. 8. ed.",
+          "largura": 126,
+          "altura": 165
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -11846,12 +11966,13 @@
       "id": "pediatria-0279",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Alterações Congênitas dos MMSS"
+        "Alterações Congênitas dos MMSS",
+        "Alterações Congênitas"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Alterações Congênitas A pseudoartrose congênita da clavícula ocorre mais comumente em pacientes do sexo",
+      "enunciado": "A pseudoartrose congênita da clavícula ocorre mais comumente em pacientes do sexo",
       "imagens": [],
       "alternativas": [
         {
@@ -11888,12 +12009,13 @@
       "id": "pediatria-0280",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Alterações Congênitas dos MMSS"
+        "Alterações Congênitas dos MMSS",
+        "Alterações Congênitas"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Alterações Congênitas Na luxação congênita da cabeça do rádio, o desvio mais comum é para",
+      "enunciado": "Na luxação congênita da cabeça do rádio, o desvio mais comum é para",
       "imagens": [],
       "alternativas": [
         {
@@ -12144,12 +12266,13 @@
       "id": "pediatria-0286",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Ossificação"
+        "Ossificação",
+        "Desenvolvimento Neuropsicomotor"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Desenvolvimento Neuropsicomotor Uma criança do sexo feminino, com desenvolvimento normal, esta semana conseguiu pela primeira vez deambular com apoio de um braço. É possível observar em sua radiografia atual do membro inferior, ossificação",
+      "enunciado": "Uma criança do sexo feminino, com desenvolvimento normal, esta semana conseguiu pela primeira vez deambular com apoio de um braço. É possível observar em sua radiografia atual do membro inferior, ossificação",
       "imagens": [],
       "alternativas": [
         {
@@ -12295,7 +12418,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "A deformidade presente na imagem abaixo está comumente relacionada com",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0289-1.jpeg",
+          "legenda": null,
+          "largura": 120,
+          "altura": 376
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -12667,12 +12797,13 @@
       "id": "pediatria-0298",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Radiologia do quadril"
+        "Radiologia do quadril",
+        "Displasia do Desenvolvimento do Quadril"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Displasia do Desenvolvimento do Quadril Na avaliação da radiografia em AP da bacia, o ângulo que sugere displasia do quadril, quando maior que 10 graus, é o",
+      "enunciado": "Na avaliação da radiografia em AP da bacia, o ângulo que sugere displasia do quadril, quando maior que 10 graus, é o",
       "imagens": [],
       "alternativas": [
         {
@@ -12841,7 +12972,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "No tratamento da displasia do desenvolvimento do quadril a cirurgia abaixo é a de:",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0302-1.jpeg",
+          "legenda": null,
+          "largura": 1360,
+          "altura": 1414
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -12925,7 +13063,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Criança de 5 meses de idade com sinal da Hart positivo à esquerda apresenta a radiografia abaixo. Qual sinal não encontrado no exame:",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0304-1.jpeg",
+          "legenda": null,
+          "largura": 1178,
+          "altura": 856
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -13950,12 +14095,13 @@
       "id": "pediatria-0328",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Alterações Congênitas"
+        "Alterações Congênitas",
+        "Deformidades dos Membros Inferiores"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Deformidades dos Membros Inferiores Na deficiência focal femoral proximal, o encurtamento muscular provoca alteração na função dos:",
+      "enunciado": "Na deficiência focal femoral proximal, o encurtamento muscular provoca alteração na função dos:",
       "imagens": [],
       "alternativas": [
         {
@@ -15221,12 +15367,13 @@
       "id": "pediatria-0358",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Pé Torto Congênito"
+        "Pé Torto Congênito",
+        "Alterações Congênitas"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Alterações Congênitas A luxação congênita do joelho está frequentemente associada à luxação do(a)",
+      "enunciado": "A luxação congênita do joelho está frequentemente associada à luxação do(a)",
       "imagens": [],
       "alternativas": [
         {
@@ -15360,7 +15507,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Correlacione as fraturas abaixo com seus prováveis mecanismos de lesão. As imagens estão numeradas e com as respectivas idades de cada paciente",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0361-1.jpeg",
+          "legenda": null,
+          "largura": 702,
+          "altura": 358
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -16070,12 +16224,13 @@
       "tema": "Ortopedia pediátrica",
       "subtemas": [
         "Ombro e cotovelo",
-        "Desenvolvimento Neuropsicomotor"
+        "Desenvolvimento Neuropsicomotor",
+        "Anatomia"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Anatomia O primeiro centro de ossificação do cotovelo a aparecer é o",
+      "enunciado": "O primeiro centro de ossificação do cotovelo a aparecer é o",
       "imagens": [],
       "alternativas": [
         {
@@ -16204,7 +16359,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Criança com dois meses de vida apresentando febre, irritabilidade e pseudoparalisia do membro inferior direito há três dias. Apresenta-se em atitude de flexão e rotação externa do quadril. Recebeu alta da UTI neonatal há uma semana. O ultrassom do quadril direito mostra um aumento da quantidade de líquido articular. A radiografia a seguir mostra um aumento do espaço articular à direita. O diagnóstico e o tratamento para o caso em questão são, respectivamente: Philadelphia: Lippincott Williams & Wilkins, 2021.",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0381-1.jpeg",
+          "legenda": "Fonte: WEINSTEIN, S. L.; FLYNN, J. M. Lovell and Winter’s pediatric orthopaedics. 8. ed.",
+          "largura": 476,
+          "altura": 443
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -16333,7 +16495,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na osteogênese imperfeita, o excesso de calo ósseo produzido após fratura ou osteotomia está associado ao defeito no gene: Philadelphia: Lippincott Williams & Wilkins, 2021.",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0384-1.jpeg",
+          "legenda": "Fonte: WEINSTEIN, S. L.; FLYNN, J. M. Lovell and Winter’s pediatric orthopaedics. 8. ed.",
+          "largura": 279,
+          "altura": 612
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -16675,12 +16844,13 @@
       "id": "pediatria-0392",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Osteocondrite Dissecante",
+        "Menisco discoide"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Menisco discoide No joelho da criança, o menisco discoide de WRISBERG relaciona-se com a osteocondrite dissecante do",
+      "enunciado": "No joelho da criança, o menisco discoide de WRISBERG relaciona-se com a osteocondrite dissecante do",
       "imagens": [],
       "alternativas": [
         {
@@ -17179,12 +17349,13 @@
       "id": "pediatria-0404",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Miscelânea"
+        "Miscelânea",
+        "Deformidades dos Membros Inferiores"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Deformidades dos Membros Inferiores No desenvolvimento normal dos membros inferiores das crianças, o gene varo e geno valgo fisiológico máximos são atingidos respectivamente, na idade de:",
+      "enunciado": "No desenvolvimento normal dos membros inferiores das crianças, o gene varo e geno valgo fisiológico máximos são atingidos respectivamente, na idade de:",
       "imagens": [],
       "alternativas": [
         {
@@ -18399,12 +18570,13 @@
       "id": "pediatria-0433",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Síndromes da Coluna"
+        "Síndromes da Coluna",
+        "Síndromes Genéticas"
       ],
       "prova": null,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Síndromes Genéticas Na doença de SPRENGEL, a classificação de CAVENDISH baseia-se na",
+      "enunciado": "Na doença de SPRENGEL, a classificação de CAVENDISH baseia-se na",
       "imagens": [],
       "alternativas": [
         {
@@ -18876,7 +19048,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "No tratamento da displasia do desenvolvimento do quadril, a técnica cirúrgica representada na imagem a seguir é a de:",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0444-1.png",
+          "legenda": null,
+          "largura": 544,
+          "altura": 675
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -18918,7 +19097,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na distrofia muscular de Duchenne, a imagem a seguir corresponde ao sinal de:",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0445-1.png",
+          "legenda": null,
+          "largura": 394,
+          "altura": 615
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -19086,7 +19272,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na epifisiólise da região proximal do fêmur, a linha e o sinal demonstrados na imagem a seguir são, respectivamente:",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0449-1.png",
+          "legenda": null,
+          "largura": 544,
+          "altura": 528
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -19473,7 +19666,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Nomeie as linhas indicadas, na sequência (A-B-C-D-E)",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0458-1.png",
+          "legenda": null,
+          "largura": 561,
+          "altura": 279
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -20950,7 +21150,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na imagem a seguir, sobre a anatomia patológica do pé torto congênito, os números 1 e 2 representam, respectivamente,",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0493-1.png",
+          "legenda": null,
+          "largura": 559,
+          "altura": 703
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -21341,6 +21548,48 @@
           "legenda": null,
           "largura": 523,
           "altura": 216
+        },
+        {
+          "arquivo": "pediatria/pediatria-0502-2.jpeg",
+          "legenda": null,
+          "largura": 631,
+          "altura": 895
+        },
+        {
+          "arquivo": "pediatria/pediatria-0502-3.jpeg",
+          "legenda": null,
+          "largura": 1728,
+          "altura": 2464
+        },
+        {
+          "arquivo": "pediatria/pediatria-0502-4.jpeg",
+          "legenda": null,
+          "largura": 1728,
+          "altura": 2464
+        },
+        {
+          "arquivo": "pediatria/pediatria-0502-5.jpeg",
+          "legenda": null,
+          "largura": 1728,
+          "altura": 2464
+        },
+        {
+          "arquivo": "pediatria/pediatria-0502-6.jpeg",
+          "legenda": null,
+          "largura": 1728,
+          "altura": 2464
+        },
+        {
+          "arquivo": "pediatria/pediatria-0502-7.jpeg",
+          "legenda": null,
+          "largura": 1728,
+          "altura": 2464
+        },
+        {
+          "arquivo": "pediatria/pediatria-0502-8.jpeg",
+          "legenda": null,
+          "largura": 631,
+          "altura": 895
         }
       ],
       "alternativas": [

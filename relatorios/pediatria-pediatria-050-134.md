@@ -1,7 +1,7 @@
 # Relatório de importação — Ortopedia pediátrica
 
 - Arquivo: `pediatria-050-134.pdf` (85 páginas)
-- Gerado em: 2026-09-05T02:15:14+00:00
+- Gerado em: 2026-09-05T02:22:39+00:00
 - Camada de texto: sim
 - Gabarito: arquivo separado pediatria-gabarito.pdf (formato grade) — 502 respostas lidas
 
@@ -14,12 +14,12 @@
 - Questões sem gabarito: **0**
 - Alternativas fora de 4 ou 5: **0**
 - Etiquetas de assunto lidas do PDF: **300** de 300
-- Imagens extraídas: **18** | figuras renderizadas: **0**
+- Imagens extraídas: **42** | figuras renderizadas: **0**
 - Créditos de figura movidos do enunciado para as referências: **8**
-- Citam figura sem imagem associada: **22**
+- Citam figura sem imagem associada: **1**
 - Sem tipo de prova: **300** | sem ano: **300**
 - Questões revisadas preservadas: **0**
-- Questões repetidas no tema: **25** grupos (52 questões)
+- Questões repetidas no tema: **26** grupos (54 questões)
 - Repetidas com RESPOSTA DIVERGENTE: **2**
 
 ## Alertas
@@ -70,6 +70,7 @@ Mesmo enunciado em mais de um lugar do banco. Onde a resposta é a mesma, é só
 - `pediatria-0264` (nº 264), `pediatria-0411` (nº 411), `pediatria-0452` (nº 452)
 - `pediatria-0265` (nº 265), `pediatria-0456` (nº 456)
 - `pediatria-0266` (nº 266), `pediatria-0417` (nº 417), `pediatria-0457` (nº 457)
+- `pediatria-0267` (nº 267), `pediatria-0458` (nº 458)
 - `pediatria-0270` (nº 270), `pediatria-0462` (nº 462)
 - `pediatria-0271` (nº 271), `pediatria-0466` (nº 466)
 - `pediatria-0390` (nº 390), `pediatria-0408` (nº 408)
@@ -78,7 +79,7 @@ Mesmo enunciado em mais de um lugar do banco. Onde a resposta é a mesma, é só
 
 - Sem gabarito: nenhuma
 - Alternativas fora do esperado: nenhuma
-- Citam figura sem imagem: 220, 221, 273, 276, 286, 289, 297, 298, 304, 319, 331, 332, 361, 381, 386, 444, 445, 449, 463, 470, 483, 493
+- Citam figura sem imagem: 483
 - Sem tipo de prova: 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242 … (+260)
 - Sem ano: 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242 … (+260)
 
@@ -108,100 +109,10 @@ Mesmo enunciado em mais de um lugar do banco. Onde a resposta é a mesma, é só
 - Trecho: `O metatarso aduto:`
 - Alternativas: A, B, C, D
 
-### Questão 220 (página 4, confiança 0.80)
+### Questão 483 (página 72, confiança 0.80)
 
 - Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `Paciente com diagnóstico de hemimelia fibular. Radiografias demonstram deformidade antero-medial da perna, com presença apenas da tíbia. Qual a classificação po`
-- Alternativas: A, B, C, D
-
-### Questão 221 (página 4, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `Paciente de 5 anos apresenta encurtamento do MID e limitação da abdução do quadril. Radiografias demonstram coxa vara. Você faz o cálculo do ângulo de Hilgenrei`
-- Alternativas: A, B, C, D
-
-### Questão 273 (página 19, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `No tratamento da deformidade causada pela epifisiólise femoral proximal, a osteotomia de localização subcapital demonstrada na imagem a seguir é a de:`
-- Alternativas: A, B, C, D
-
-### Questão 276 (página 20, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `Na criança com doença de BLOUNT, o estágio de LANGENSKIÖLD representado na imagem a seguir é o Philadelphia: Lippincott Williams & Wilkins, 2021.`
-- Alternativas: A, B, C, D
-
-### Questão 286 (página 23, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `Desenvolvimento Neuropsicomotor Uma criança do sexo feminino, com desenvolvimento normal, esta semana conseguiu pela primeira vez deambular com apoio de um braç`
-- Alternativas: A, B, C, D
-
-### Questão 289 (página 24, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `A deformidade presente na imagem abaixo está comumente relacionada com`
-- Alternativas: A, B, C, D
-
-### Questão 297 (página 26, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `Na displasia do desenvolvimento do quadril, o que diferencia radiograficamente um quadril displásico de um subluxado é`
-- Alternativas: A, B, C, D
-
-### Questão 298 (página 27, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `Displasia do Desenvolvimento do Quadril Na avaliação da radiografia em AP da bacia, o ângulo que sugere displasia do quadril, quando maior que 10 graus, é o`
-- Alternativas: A, B, C, D
-
-### Questão 304 (página 28, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `Criança de 5 meses de idade com sinal da Hart positivo à esquerda apresenta a radiografia abaixo. Qual sinal não encontrado no exame:`
-- Alternativas: A, B, C, D
-
-### Questão 319 (página 32, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `Na radiografia da bacia pediátrica, o índice de REIMERS é utilizado em pacientes com`
-- Alternativas: A, B, C, D
-
-### Questão 331 (página 35, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `Na doença de Legg-Calvé-Perthes, de acordo com a classificação de Herring, a imagem radiográfica que apresenta diminuição de mais de 50% do pilar lateral corres`
-- Alternativas: A, B, C, D
-
-### Questão 332 (página 35, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `Na avaliação da idade óssea radiográfica, o método de SAUVEGRAIN utiliza imagens:`
-- Alternativas: A, B, C, D
-
-### Questão 361 (página 41, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `Correlacione as fraturas abaixo com seus prováveis mecanismos de lesão. As imagens estão numeradas e com as respectivas idades de cada paciente`
-- Alternativas: A, B, C, D
-
-### Questão 381 (página 46, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `Criança com dois meses de vida apresentando febre, irritabilidade e pseudoparalisia do membro inferior direito há três dias. Apresenta-se em atitude de flexão e`
-- Alternativas: A, B, C, D
-
-### Questão 386 (página 49, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `Em uma criança com desenvolvimento normal, em que a radiografia demonstra o início da ossificação da cabeça do fêmur, é esperado que ela tenha adquirido recente`
-- Alternativas: A, B, C, D
-
-### Questão 444 (página 61, confiança 0.80)
-
-- Avisos: enunciado cita figura, nenhuma imagem associada
-- Trecho: `No tratamento da displasia do desenvolvimento do quadril, a técnica cirúrgica representada na imagem a seguir é a de:`
+- Trecho: `Qual o nome da linha traçada na figura?`
 - Alternativas: A, B, C, D
 
 ## Próximo passo

@@ -87,11 +87,24 @@ PADRAO_FONTE = re.compile(
     re.IGNORECASE,
 )
 
-PADRAO_CITA_FIGURA = re.compile(
-    r"\b(figura|figuras|imagem|imagens|radiografi\w*|tomografi\w*|resson\w*|foto\w*|"
-    r"esquema|gr[áa]fico|abaixo\s+(?:ilustra|demonstra|apresenta))\b",
+# Citar "radiografia" não quer dizer que a questão traga uma. Só conta como
+# figura ausente quando há também linguagem que aponta para algo mostrado —
+# "a imagem a seguir", "a linha assinalada". Sem esse rigor o relatório pede
+# dezenas de imagens que a questão nunca teve.
+PADRAO_VISUAL = re.compile(
+    r"\b(figura|figuras|imagem|imagens|radiografi\w*|tomografi\w*|resson\w*|"
+    r"foto\w*|esquema|gr[áa]fico|exame de imagem)\b",
     re.IGNORECASE,
 )
+PADRAO_DEITICO = re.compile(
+    r"\b(abaixo|a seguir|acima|ao lado|em anexo|apresentad\w+|assinalad\w+|indicad\w+|"
+    r"demonstrad\w+|ilustrad\w+|representad\w+|tra[çc]ad\w+|mostrad\w+|deste caso|do caso)\b",
+    re.IGNORECASE,
+)
+
+
+def cita_figura(enunciado: str) -> bool:
+    return bool(PADRAO_VISUAL.search(enunciado) and PADRAO_DEITICO.search(enunciado))
 PADRAO_CABECALHO_GABARITO = re.compile(
     r"^\s*(gabarito|respostas|chave de respostas|gabarito oficial|folha de respostas)\b",
     re.IGNORECASE,
@@ -128,6 +141,7 @@ class Figura:
 class QuestaoBruta:
     numero: int
     pagina: int
+    y_cabecalho: float = 0.0
     etiquetas: list[str] = field(default_factory=list)
     corpo: list[Linha] = field(default_factory=list)
     fontes: list[str] = field(default_factory=list)
@@ -256,7 +270,7 @@ def localizar_gabarito_interno(linhas: list[Linha], total_paginas: int) -> tuple
     return -1, "nenhum cabeçalho de gabarito dentro do arquivo de questões"
 
 
-def segmentar_questoes(linhas: list[Linha]) -> list[QuestaoBruta]:
+def segmentar_questoes(linhas: list[Linha], etiquetas_validas: set[str]) -> list[QuestaoBruta]:
     candidatos: list[tuple[int, int, list[str], bool]] = []
     for i, linha in enumerate(linhas):
         achado_cabecalho = PADRAO_CABECALHO.match(linha.primeiro)
@@ -276,10 +290,28 @@ def segmentar_questoes(linhas: list[Linha]) -> list[QuestaoBruta]:
     escolhidos = maior_sequencia_crescente([(c[0], c[1]) for c in candidatos])
     inicios = [candidatos[i] for i in escolhidos]
 
+    def so_etiquetas(linha: Linha) -> bool:
+        """Linha composta apenas de etiquetas conhecidas: é cabeçalho que quebrou."""
+        if not linha.blocos:
+            return False
+        return all(
+            normalizar(bloco.texto).strip(" .…") in etiquetas_validas for bloco in linha.blocos
+        )
+
     questoes: list[QuestaoBruta] = []
     for posicao, (indice, numero, etiquetas, isolado) in enumerate(inicios):
         fim = inicios[posicao + 1][0] if posicao + 1 < len(inicios) else len(linhas)
-        corpo = linhas[indice + 1 : fim] if isolado else linhas[indice:fim]
+        primeira_do_corpo = indice + 1 if isolado else indice
+        if isolado:
+            # As etiquetas nem sempre cabem na linha do número: quando sobram,
+            # descem para a linha seguinte. Sem consumi-las aqui, elas entram
+            # no enunciado e somem da classificação.
+            while primeira_do_corpo < fim and so_etiquetas(linhas[primeira_do_corpo]):
+                etiquetas.extend(
+                    b.texto.strip() for b in linhas[primeira_do_corpo].blocos if b.texto.strip()
+                )
+                primeira_do_corpo += 1
+        corpo = linhas[primeira_do_corpo:fim] if isolado else linhas[indice:fim]
         if not isolado and corpo:
             primeira = corpo[0]
             from texto_pdf import Bloco
@@ -302,6 +334,7 @@ def segmentar_questoes(linhas: list[Linha]) -> list[QuestaoBruta]:
             QuestaoBruta(
                 numero=numero,
                 pagina=linhas[indice].pagina,
+                y_cabecalho=linhas[indice].y0,
                 etiquetas=etiquetas,
                 corpo=corpo,
             )
@@ -589,7 +622,8 @@ def principal() -> int:
     contexto, cabecalhos_contexto = detectar_contexto(
         linhas_corpo, argumentos.prova, argumentos.ano
     )
-    questoes = segmentar_questoes(linhas_corpo)
+    etiquetas_validas = {normalizar(t) for t in tema["subtemas"]} | {normalizar(tema["nome"])}
+    questoes = segmentar_questoes(linhas_corpo, etiquetas_validas)
     if not questoes:
         print(
             "Nenhuma questão reconhecida. Confira se o PDF é de duas colunas (--colunas 2) "
@@ -614,14 +648,18 @@ def principal() -> int:
     # ---------------- figuras ----------------
     dir_imagens = DIR_IMAGENS / argumentos.tema
     extraidas = renderizadas = 0
-    for figura in figuras:
+
+    # A figura pertence à última questão iniciada antes dela na ordem de
+    # leitura. Casar por intervalo de coordenadas na mesma página não serve:
+    # quando a questão atravessa a quebra de página, a figura aparece no topo
+    # da página seguinte, acima de todo o texto restante daquela questão.
+    ordenadas = sorted(questoes, key=lambda q: (q.pagina, q.y_cabecalho))
+    for figura in sorted(figuras, key=lambda f: (f.pagina, f.y0)):
         dona = None
-        for questao in questoes:
-            na_pagina = [l for l in questao.corpo if l.pagina == figura.pagina]
-            if not na_pagina:
-                continue
-            if min(l.y0 for l in na_pagina) - 12 <= figura.y0 <= max(l.y1 for l in na_pagina) + 12:
+        for questao in ordenadas:
+            if (questao.pagina, questao.y_cabecalho) <= (figura.pagina, figura.y0):
                 dona = questao
+            else:
                 break
         if dona is None or argumentos.seco:
             continue
@@ -641,7 +679,7 @@ def principal() -> int:
 
     if not argumentos.sem_render_lacunas and not argumentos.seco:
         for questao in questoes:
-            if questao.imagens or not PADRAO_CITA_FIGURA.search(questao.enunciado):
+            if questao.imagens or not cita_figura(questao.enunciado):
                 continue
             for pagina_numero in sorted({l.pagina for l in questao.corpo}):
                 da_pagina = sorted(
@@ -724,7 +762,7 @@ def principal() -> int:
 
         if len(questao.alternativas) not in (4, 5):
             alternativas_fora.append(questao.numero)
-        if PADRAO_CITA_FIGURA.search(questao.enunciado) and not questao.imagens:
+        if cita_figura(questao.enunciado) and not questao.imagens:
             figura_sem_imagem.append(questao.numero)
             questao.avisos.append("enunciado cita figura, nenhuma imagem associada")
             questao.confianca -= 0.2
@@ -783,9 +821,16 @@ def principal() -> int:
         }
 
         if anterior:
-            for campo in ("comentario", "referencias", "dificuldade", "comentariosComunidade"):
+            for campo in ("comentario", "dificuldade", "comentariosComunidade"):
                 if anterior.get(campo) not in (None, [], ""):
                     registro[campo] = anterior[campo]
+            if anterior.get("referencias") and not registro["referencias"]:
+                registro["referencias"] = anterior["referencias"]
+            # Imagens anexadas à mão (figura que faltava no PDF de origem) não
+            # podem ser perdidas quando o PDF é reprocessado.
+            manuais = [i for i in (anterior.get("imagens") or []) if i.get("manual")]
+            if manuais:
+                registro["imagens"] = registro["imagens"] + manuais
             if anterior.get("revisado") and not argumentos.sobrescrever_revisadas:
                 registro = {**anterior}
                 preservadas += 1

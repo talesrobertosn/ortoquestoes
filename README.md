@@ -144,6 +144,22 @@ preservados sempre, revisada ou não — o pipeline nunca apaga trabalho humano.
 
 ---
 
+### Figura que falta no PDF
+
+Às vezes o PDF de origem cita uma figura e o espaço vem em branco, ou traz um
+ícone de imagem quebrada. O relatório lista essas questões, e a imagem entra à mão:
+
+```bash
+python3 scripts/anexar_imagem.py --listar-faltantes pediatria
+python3 scripts/anexar_imagem.py pediatria-0483 ~/prints/linha-perkins.png \
+    --legenda "Fonte: Tachdjian, 6. ed."
+python3 scripts/gerar_indice.py
+```
+
+A imagem entra marcada com `"manual": true` e, por causa dessa marca, **sobrevive
+a qualquer reimportação do PDF** — o pipeline reextrai as figuras do arquivo e
+mantém as anexadas à mão por cima.
+
 ## Publicar uma atualização
 
 ```bash
@@ -169,7 +185,10 @@ src/dados/tipos.ts              modelo de dados, espelhado no pipeline
 scripts/importar_pdf.py         pipeline de importação
 scripts/gerar_indice.py         reconstrói o índice a partir dos temas
 scripts/validar_acervo.py       validação, retorna código de erro
+scripts/anexar_imagem.py        anexa à mão a figura que falta no PDF de origem
 scripts/sinonimos.json          palavras-chave por subtema, para a proposta de classificação
+scripts/texto_pdf.py            extração por identificador de glifo, para fonte sem ToUnicode
+scripts/gabarito.py             leitura de gabarito em lista ou em folha de respostas
 fixtures/gerar_pdf_teste.py     PDF sintético para exercitar o pipeline
 fixtures/verificacao.mjs        verificação de ponta a ponta no navegador
 docs/logotipo.html              as três direções de logotipo, lado a lado

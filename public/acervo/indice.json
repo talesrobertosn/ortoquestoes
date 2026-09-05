@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "geradoEm": "2026-09-05T02:15:20+00:00",
+  "geradoEm": "2026-09-05T02:23:13+00:00",
   "total": 502,
   "temas": [
     {
@@ -39,18 +39,18 @@
     "Menisco discoide",
     "Lesões Meniscais",
     "Pé e tornozelo",
+    "Deformidades dos Pés",
     "Amputações",
     "Biomecânica",
+    "Anatomia",
     "Instabilidade Femoropatelar",
     "Exame Físico",
     "Fraturas do Punho e Mão",
-    "Deformidades dos Pés",
     "Mão",
     "Alterações Congênitas dos MMSS",
     "Radiologia do joelho",
     "Radiologia do quadril",
     "Ossificação",
-    "Anatomia",
     "Escoliose",
     "Artrites Inflamatórias",
     "Conceitos básicos",
@@ -556,7 +556,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -569,7 +569,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -1207,7 +1207,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -1220,7 +1220,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -1389,7 +1389,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -1415,7 +1415,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -1961,7 +1961,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -2000,7 +2000,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -2116,7 +2116,8 @@
       "t": 0,
       "s": [
         27,
-        6
+        6,
+        28
       ],
       "p": null,
       "a": null,
@@ -2199,7 +2200,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -2519,7 +2520,7 @@
       "id": "pediatria-0189",
       "t": 0,
       "s": [
-        28,
+        29,
         9
       ],
       "p": null,
@@ -2547,7 +2548,7 @@
       "id": "pediatria-0191",
       "t": 0,
       "s": [
-        29,
+        30,
         17
       ],
       "p": null,
@@ -2575,7 +2576,9 @@
       "t": 0,
       "s": [
         27,
-        0
+        0,
+        6,
+        28
       ],
       "p": null,
       "a": null,
@@ -2629,7 +2632,8 @@
       "s": [
         24,
         26,
-        25
+        25,
+        31
       ],
       "p": null,
       "a": null,
@@ -2642,7 +2646,7 @@
       "id": "pediatria-0198",
       "t": 0,
       "s": [
-        30,
+        32,
         9
       ],
       "p": null,
@@ -2661,7 +2665,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -2682,7 +2686,8 @@
       "id": "pediatria-0201",
       "t": 0,
       "s": [
-        1
+        1,
+        6
       ],
       "p": null,
       "a": null,
@@ -2827,7 +2832,7 @@
       "s": [
         27,
         2,
-        31
+        33
       ],
       "p": null,
       "a": null,
@@ -3053,7 +3058,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -3066,7 +3071,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -3079,7 +3084,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -3204,7 +3209,7 @@
       "id": "pediatria-0241",
       "t": 0,
       "s": [
-        32
+        34
       ],
       "p": null,
       "a": null,
@@ -3243,7 +3248,7 @@
       "id": "pediatria-0244",
       "t": 0,
       "s": [
-        33,
+        28,
         9
       ],
       "p": null,
@@ -3362,9 +3367,9 @@
       "id": "pediatria-0253",
       "t": 0,
       "s": [
-        34,
+        35,
         1,
-        35
+        36
       ],
       "p": null,
       "a": null,
@@ -3392,7 +3397,8 @@
       "s": [
         24,
         25,
-        26
+        26,
+        31
       ],
       "p": null,
       "a": null,
@@ -3406,7 +3412,8 @@
       "t": 0,
       "s": [
         24,
-        25
+        25,
+        37
       ],
       "p": null,
       "a": null,
@@ -3432,7 +3439,7 @@
       "id": "pediatria-0258",
       "t": 0,
       "s": [
-        36,
+        37,
         25
       ],
       "p": null,
@@ -3550,12 +3557,13 @@
       "id": "pediatria-0267",
       "t": 0,
       "s": [
-        37
+        38,
+        4
       ],
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -3633,7 +3641,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -3654,7 +3662,7 @@
       "id": "pediatria-0275",
       "t": 0,
       "s": [
-        38,
+        39,
         9
       ],
       "p": null,
@@ -3673,7 +3681,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -3707,7 +3715,8 @@
       "id": "pediatria-0279",
       "t": 0,
       "s": [
-        35
+        36,
+        1
       ],
       "p": null,
       "a": null,
@@ -3720,7 +3729,8 @@
       "id": "pediatria-0280",
       "t": 0,
       "s": [
-        35
+        36,
+        1
       ],
       "p": null,
       "a": null,
@@ -3748,7 +3758,7 @@
       "s": [
         27,
         2,
-        33
+        28
       ],
       "p": null,
       "a": null,
@@ -3789,7 +3799,7 @@
       "s": [
         14,
         17,
-        29
+        30
       ],
       "p": null,
       "a": null,
@@ -3802,7 +3812,8 @@
       "id": "pediatria-0286",
       "t": 0,
       "s": [
-        38
+        39,
+        16
       ],
       "p": null,
       "a": null,
@@ -3828,7 +3839,7 @@
       "id": "pediatria-0288",
       "t": 0,
       "s": [
-        39,
+        31,
         19
       ],
       "p": null,
@@ -3847,7 +3858,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -3959,7 +3970,8 @@
       "id": "pediatria-0298",
       "t": 0,
       "s": [
-        37
+        38,
+        4
       ],
       "p": null,
       "a": null,
@@ -4016,7 +4028,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -4042,7 +4054,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -4351,7 +4363,8 @@
       "id": "pediatria-0328",
       "t": 0,
       "s": [
-        1
+        1,
+        6
       ],
       "p": null,
       "a": null,
@@ -4745,7 +4758,8 @@
       "id": "pediatria-0358",
       "t": 0,
       "s": [
-        0
+        0,
+        1
       ],
       "p": null,
       "a": null,
@@ -4789,7 +4803,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -5007,7 +5021,8 @@
       "t": 0,
       "s": [
         44,
-        16
+        16,
+        31
       ],
       "p": null,
       "a": null,
@@ -5053,7 +5068,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -5093,7 +5108,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -5140,7 +5155,7 @@
       "id": "pediatria-0388",
       "t": 0,
       "s": [
-        29,
+        30,
         17
       ],
       "p": null,
@@ -5193,7 +5208,8 @@
       "id": "pediatria-0392",
       "t": 0,
       "s": [
-        45
+        45,
+        25
       ],
       "p": null,
       "a": null,
@@ -5349,7 +5365,8 @@
       "id": "pediatria-0404",
       "t": 0,
       "s": [
-        9
+        9,
+        6
       ],
       "p": null,
       "a": null,
@@ -5728,7 +5745,8 @@
       "id": "pediatria-0433",
       "t": 0,
       "s": [
-        48
+        48,
+        13
       ],
       "p": null,
       "a": null,
@@ -5878,7 +5896,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -5891,7 +5909,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -5943,7 +5961,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -6060,7 +6078,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
@@ -6515,7 +6533,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 0
     },
