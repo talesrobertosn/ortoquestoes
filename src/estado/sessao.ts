@@ -109,6 +109,15 @@ export function usarSessao() {
   return { sessao, iniciar, responder, irPara, alternarRevisar, alternarRiscada, finalizar, encerrar, definirSessao }
 }
 
+/**
+ * Registra uma resposta no histórico local. Vale para qualquer lugar em que a
+ * questão seja respondida — dentro de uma sessão ou por link direto —, senão o
+ * desempenho conta menos do que a pessoa realmente fez.
+ */
+export function registrarResposta(id: string, correta: boolean | null) {
+  registrarRespondida(id, correta)
+}
+
 function registrarRespondida(id: string, correta: boolean | null) {
   const mapa = ler<Record<string, { c: boolean | null; q: number }>>(CHAVE_RESPONDIDAS, {})
   mapa[id] = { c: correta, q: Date.now() }

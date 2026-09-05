@@ -4,7 +4,7 @@ import { carregarQuestao } from '../dados/acervo'
 import type { Letra, Questao, Resposta } from '../dados/tipos'
 import { CartaoQuestao } from '../componentes/CartaoQuestao'
 import { Carregando, Estado } from '../componentes/Estados'
-import { usarFavoritos } from '../estado/sessao'
+import { registrarResposta, usarFavoritos } from '../estado/sessao'
 import { href } from '../util/rotas'
 
 /** Link direto para uma questão: responde ali mesmo, sem abrir sessão. */
@@ -60,9 +60,10 @@ export function QuestaoDireta({ id }: { id: string }) {
         riscadas={riscadas}
         favorita={favoritos.includes(questao.id)}
         marcadaRevisao={false}
-        aoResponder={(escolhida, correta, segundos) =>
+        aoResponder={(escolhida, correta, segundos) => {
           definirResposta({ escolhida, correta, segundos })
-        }
+          registrarResposta(questao.id, correta)
+        }}
         aoRiscar={(letra) =>
           definirRiscadas((atuais) =>
             atuais.includes(letra) ? atuais.filter((l) => l !== letra) : [...atuais, letra],
