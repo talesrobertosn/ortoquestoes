@@ -201,16 +201,24 @@ def ler_lista(texto: str) -> Gabarito:
 
 
 def ler_arquivo(caminho, formato: str = "auto") -> Gabarito:
+    """
+    Lê o gabarito de um arquivo. O arquivo pode conter só a folha de respostas
+    ou trazer as questões junto — por isso a grade é lida apenas nas páginas
+    que parecem folha. Ler a grade sobre o documento inteiro faz as páginas de
+    questão entrarem na descoberta das colunas e o casamento número-letra sair
+    torto, deixando dezenas de questões sem gabarito.
+    """
     documento = pymupdf.open(caminho)
+    texto = "\n".join(documento[i].get_text("text") for i in range(len(documento)))
     if formato == "lista":
-        return ler_lista("\n".join(documento[i].get_text("text") for i in range(len(documento))))
-    if formato == "grade":
-        return ler_grade(documento)
+        return ler_lista(texto)
 
-    grade = ler_grade(documento)
-    lista = ler_lista(
-        "\n".join(documento[i].get_text("text") for i in range(len(documento)))
-    )
+    paginas = paginas_de_grade(documento)
+    if formato == "grade":
+        return ler_grade(documento, paginas or None)
+
+    grade = ler_grade(documento, paginas or None) if paginas else Gabarito(formato="grade")
+    lista = ler_lista(texto)
     if len(grade.respostas) >= len(lista.respostas):
         return grade
     return lista
