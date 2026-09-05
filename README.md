@@ -65,8 +65,26 @@ python3 scripts/gerar_indice.py
 python3 scripts/validar_acervo.py
 ```
 
-O slug do tema (`mao`, `joelho`, `coluna`, …) vem de `src/dados/taxonomia.json`. Um tema que não
-existe lá é recusado — a taxonomia é a fonte da verdade e deve ser editada primeiro.
+O slug do tema (`quadril`, `joelho`, `coluna`, …) vem de `src/dados/taxonomia.json`. Um tema que
+não existe lá é recusado — a taxonomia é a fonte da verdade e deve ser editada primeiro.
+
+### Etiquetas: deixe o PDF ditar
+
+Quando o PDF já traz etiqueta de assunto em cada questão, ela vale mais do que qualquer lista
+inventada — é o vocabulário de quem montou o banco. Um script lê e grava:
+
+```bash
+python3 scripts/etiquetas_do_pdf.py --tema quadril --seco pdfs/quadril.pdf   # só mostra
+python3 scripts/etiquetas_do_pdf.py --tema quadril pdfs/quadril.pdf          # grava
+```
+
+O primeiro rótulo do cabeçalho é a área, e às vezes ela é o próprio tema com outra palavra
+("Tumor" para "Tumores ósseos e de partes moles"). Declare isso com `--apelido` para não virar
+uma etiqueta repetida em todas as questões:
+
+```bash
+python3 scripts/etiquetas_do_pdf.py --tema tumores --apelido Tumor pdfs/tumores.pdf
+```
 
 ### Opções úteis
 
@@ -209,6 +227,7 @@ scripts/importar_pdf.py         pipeline de importação
 scripts/gerar_indice.py         reconstrói o índice a partir dos temas
 scripts/validar_acervo.py       validação, retorna código de erro
 scripts/anexar_imagem.py        anexa à mão a figura que falta no PDF de origem
+scripts/etiquetas_do_pdf.py     lê as etiquetas do PDF e atualiza a taxonomia
 scripts/sinonimos.json          palavras-chave por subtema, para a proposta de classificação
 scripts/texto_pdf.py            extração por identificador de glifo, para fonte sem ToUnicode
 scripts/gabarito.py             leitura de gabarito em lista ou em folha de respostas
