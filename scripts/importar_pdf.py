@@ -94,6 +94,12 @@ PADRAO_CABECALHO_GABARITO = re.compile(
     re.IGNORECASE,
 )
 
+# A chave de respostas em texto puro nem sempre vem com cabeçalho: em vários
+# e-books ela começa direto, como uma parede de "101 126 151 176 …". Sem
+# reconhecê-la, a última questão do arquivo emenda a chave inteira dentro da
+# própria alternativa final — que costuma ser justamente a do gabarito.
+PADRAO_LINHA_DE_CHAVE = re.compile(r"^(?:(?:\d{1,4}|[A-E])(?:\s+|$)){8,}$")
+
 
 
 MARCA_ANULADA = re.compile(r"^\s*ANULAD[AO]\s*[:\-–—.]?\s*", re.IGNORECASE)
@@ -267,6 +273,21 @@ def localizar_gabarito_interno(linhas: list[Linha], total_paginas: int) -> tuple
         if PADRAO_CABECALHO_GABARITO.match(linhas[i].texto):
             return i, f"cabeçalho '{linhas[i].texto[:40]}' na página {linhas[i].pagina + 1}"
     return -1, "nenhum cabeçalho de gabarito dentro do arquivo de questões"
+
+
+def cortar_chave_solta(linhas: list[Linha], total_paginas: int) -> tuple[list[Linha], str | None]:
+    """Corta o corpo na primeira linha que já é chave de respostas.
+
+    Só procura na metade final do arquivo: uma linha só de números no meio de
+    uma prova é outra coisa, e cortar ali apagaria questões de verdade.
+    """
+    limite = max(0, int(total_paginas * 0.5))
+    for i, linha in enumerate(linhas):
+        if linha.pagina < limite:
+            continue
+        if PADRAO_LINHA_DE_CHAVE.match(linha.texto.strip()):
+            return linhas[:i], f"chave sem cabeçalho na página {linha.pagina + 1}"
+    return linhas, None
 
 
 def segmentar_questoes(linhas: list[Linha], etiquetas_validas: set[str]) -> list[QuestaoBruta]:
@@ -700,6 +721,25 @@ def principal() -> int:
             alertas.append(
                 "Nenhum gabarito localizado. Todas as questões ficam sem gabarito até que um "
                 "arquivo seja informado com --gabarito."
+            )
+
+    # A folha de bolhas some pelo filtro de páginas, mas a chave em texto puro
+    # que costuma vir antes dela não: ela é texto comum numa página comum.
+    linhas_corpo, corte = cortar_chave_solta(linhas_corpo, len(documento))
+    if corte:
+        alertas.append(f"Corpo do arquivo cortado antes da chave de respostas ({corte}).")
+
+    # Figura depois da última página de texto é página de fim de e-book: capa,
+    # folha de respostas, logotipo. Sem este corte elas viravam figuras da
+    # última questão, que passava a ilustrar anatomia com folha de gabarito.
+    if linhas_corpo:
+        ultima = max(l.pagina for l in linhas_corpo)
+        descartadas = [f for f in figuras if f.pagina > ultima]
+        if descartadas:
+            figuras = [f for f in figuras if f.pagina <= ultima]
+            alertas.append(
+                f"{len(descartadas)} figura(s) das páginas finais descartada(s): estão depois "
+                f"da última página com texto de questão (página {ultima + 1})."
             )
 
     alertas.extend(chave.avisos)

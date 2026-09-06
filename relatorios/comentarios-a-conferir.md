@@ -22,6 +22,7 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0338` | Phalen positivo em 20 segundos é fator de **sucesso** do tratamento conservador | Os cinco fatores de Kaplan, Glickel e Eaton prevêem **falha**, e Phalen positivo em menos de 30 segundos é um deles. A alternativa de sucesso é "idade menor que 50 anos" |
 | `mao-0238` | O número 6 do desenho é o ligamento **transverso retinacular** | A figura é uma vista dorsal do punho e o número 6 parece ser o ligamento intercarpal dorsal. "Transverso retinacular" é nome do aparelho extensor do dedo, não do punho |
 | `mao-0311` | A instabilidade semilunopiramidal é avaliada pelo teste de **Masquelet** | Não conheço um teste de punho com esse nome — Masquelet dá nome à técnica da membrana induzida. Os testes lunopiramidais que conheço são o balote de Reagan e o cisalhamento de Kleinman, e Linscheid (que é uma das alternativas) descreveu instabilidade do carpo |
+| `mao-0576` | A perda da sensibilidade protetora corresponde ao monofilamento **amarelo** de Semmes-Weinstein | Nas duas escalas que conheço quem marca essa fronteira é o **vermelho**: no kit de cinco cores (verde, azul, violeta, vermelho) e no estesiômetro brasileiro de seis (verde 0,05 g, azul 0,2 g, violeta 2 g, vermelho 4 g, laranja 10 g, magenta 300 g). O amarelo não aparece em nenhuma delas |
 
 ## Afirmação que não consegui sustentar
 
@@ -32,6 +33,14 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0242` | A "gota de lágrima" da borda volar do rádio mede **5 mm** de largura máxima | Conheço a descrição do ângulo da gota (~70°), não a da largura |
 | `mao-0418` | O padrão mais comum de fratura do semilunar no Kienböck acomete o polo **anterior** | Conheço a fratura coronal do semilunar, que separa fragmento volar e dorsal, mas não consigo confirmar qual polo é o mais acometido |
 | `mao-0542` | Na macrodactilia o polegar deforma em **abdução e hiperextensão** | A macrodactilia do polegar costuma vir descrita pelo excesso de volume e pelo desvio no plano do dedo acometido, e não achei fonte que fixe esse par de deformidades como o padrão |
+
+## Figura que não consigo interpretar com segurança
+
+| Questão | O que a figura pede | O que me trava |
+|---|---|---|
+| `mao-0565` | Quais dos nove pontos marcados na pele do antebraço doem no túnel radial e na compressão do mediano | A foto é um esquema de nove pontos numerados de um trabalho que não identifiquei. Sem saber como o autor orientou a grade, não consigo dizer qual coluna é radial e qual é ulnar — e a resposta depende exatamente disso |
+| `mao-0569` | Nomear o músculo que a seta aponta num corte transversal do antebraço | Não consigo orientar o corte com segurança: não distingo qual metade é volar e qual é dorsal nessa resolução, e sem isso o mesmo ponto pode ser flexor superficial ou supinador |
+| `mao-0577` | Nomear os ligamentos apontados pelas setas 1 e 2 numa figura anatômica do carpo | A figura não veio no PDF. O que o importador havia guardado no lugar dela eram as páginas finais do e-book (folha de respostas e logotipo), removidas agora, e a questão passou a avisar que a figura está faltando |
 
 ## Classificação que não domino com essa granularidade
 
@@ -55,6 +64,8 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0263` | O enunciado descreve nódulo sem contratura, e nódulo isolado não é indicação cirúrgica — o que indica operar é a perda de extensão |
 | `mao-0269` | O gabarito diz que o ligamento **escafossemilunar** liga o rádio ao escafoide. Ele liga o escafoide ao semilunar. Quem sai do rádio e abraça o escafoide é o radioescafocapitato, e nenhuma alternativa o nomeia |
 | `mao-0276` | O enunciado descreve **perda de tecido** e pergunta o objetivo de uma zetaplastia, que não repõe tecido — redistribui o que existe. A alternativa mais precisa (corrigir contratura) não corresponde ao caso apresentado |
+| `mao-0558` | O comentário diz que a média de discriminação de dois pontos após reimplante de polegar por corte limpo fica em torno de 11 mm, mas separar 11 de 14 mm depende da casuística citada — o que se sustenta com firmeza é a ordem de grandeza |
+| `mao-0573` | A foto cirúrgica é de baixa resolução. O que sustenta a identificação da corda retrovascular é a posição da estrutura em relação ao feixe neurovascular, não um detalhe visível na imagem |
 
 ---
 
