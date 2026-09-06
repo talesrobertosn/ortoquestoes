@@ -491,7 +491,24 @@ def casar_etiqueta(etiqueta: str, validos: list[str]) -> str | None:
 # --------------------------------------------------------------------------
 
 
+# Área mínima, em pixels, para uma figura embutida ser legível na tela. O
+# critério é a área e não o lado menor de propósito: um esquema largo e baixo,
+# de 476 por 163, se lê muito bem, enquanto um quadrado de 99 por 117 não.
+AREA_MINIMA_FIGURA = 40_000  # cerca de 200 x 200
+# Renderizar não cria detalhe que o arquivo não tem: passar de um certo tamanho
+# só produz um borrão maior e um arquivo mais pesado para quem abre no celular.
+LADO_MAXIMO_FIGURA = 1200
+
+
 def salvar_figura(documento, figura: Figura, destino: Path):
+    """Grava a figura de uma questão, preferindo a imagem embutida no PDF.
+
+    Quando a imagem embutida é pequena demais para ser lida — e há PDFs em que
+    ela vem com 99 pixels de largura —, extraí-la fielmente entrega ao leitor
+    uma figura ilegível. Nesses casos vale mais renderizar a área da página em
+    alta resolução: não se inventa detalhe que não existe, mas se entrega a
+    mesma imagem que a pessoa veria ampliando o PDF, em vez de um borrão.
+    """
     if figura.xref is None:
         return None
     try:
@@ -501,10 +518,26 @@ def salvar_figura(documento, figura: Figura, destino: Path):
     dados = base.get("image")
     if not dados:
         return None
+
+    largura, altura = base.get("width") or 0, base.get("height") or 0
+    if largura * altura < AREA_MINIMA_FIGURA:
+        retangulo = pymupdf.Rect(figura.x0, figura.y0, figura.x1, figura.y1)
+        maior_lado = max(retangulo.width, retangulo.height) or 1
+        renderizada = renderizar_area(
+            documento,
+            figura.pagina,
+            retangulo,
+            destino,
+            dpi=min(300, 72 * LADO_MAXIMO_FIGURA / maior_lado),
+            apertar=False,
+        )
+        if renderizada and renderizada[0] * renderizada[1] > largura * altura:
+            return renderizada
+
     caminho = destino.with_suffix("." + base.get("ext", "png"))
     caminho.parent.mkdir(parents=True, exist_ok=True)
     caminho.write_bytes(dados)
-    return base.get("width"), base.get("height"), caminho.name
+    return largura, altura, caminho.name
 
 
 def _limites_de_tinta(pixmap, limiar: int = 245):
@@ -528,7 +561,9 @@ def _limites_de_tinta(pixmap, limiar: int = 245):
     )
 
 
-def renderizar_area(documento, pagina: int, retangulo, destino: Path, dpi: int = 200):
+def renderizar_area(
+    documento, pagina: int, retangulo, destino: Path, dpi: int = 200, apertar: bool = True
+):
     """
     Renderiza uma área da página. O recorte inicial é a largura inteira da
     página, então a imagem sai com muito fundo em volta: um segundo passe
@@ -538,7 +573,7 @@ def renderizar_area(documento, pagina: int, retangulo, destino: Path, dpi: int =
     pagina_pdf = documento[pagina]
     pixmap = pagina_pdf.get_pixmap(matrix=matriz, clip=retangulo)
 
-    limites = _limites_de_tinta(pixmap)
+    limites = _limites_de_tinta(pixmap) if apertar else None
     if limites:
         x0f, y0f, x1f, y1f = limites
         largura = retangulo.width
