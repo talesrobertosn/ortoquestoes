@@ -5,6 +5,7 @@ import { FILTROS_VAZIOS, type Questao } from '../dados/tipos'
 import { Carregando, Estado } from '../componentes/Estados'
 import { EstrelaCheia, Icone } from '../componentes/Icone'
 import { usarFavoritos, usarSessao } from '../estado/sessao'
+import { usarEtiquetas } from '../estado/preferencias'
 import { href, navegar } from '../util/rotas'
 
 /**
@@ -16,6 +17,9 @@ export function Favoritas() {
   const { indice } = usarIndice()
   const { favoritos, alternar } = usarFavoritos()
   const { iniciar } = usarSessao()
+  // Quem escondeu as etiquetas para não se entregar não quer vê-las aqui
+  // tampouco: desta lista se sai direto para uma sessão com essas questões.
+  const { mostrarEtiquetas } = usarEtiquetas()
   const [questoes, definirQuestoes] = useState<Questao[] | null>(null)
 
   const chave = favoritos.join(',')
@@ -90,14 +94,16 @@ export function Favoritas() {
                 <a className="favorita__texto" href={href(`/questao/${id}`)}>
                   {questao ? (
                     <>
-                      <span className="etiquetas" style={{ marginBottom: '0.25rem' }}>
-                        <span className="etiqueta">{questao.tema}</span>
-                        {questao.subtemas.slice(0, 2).map((s) => (
-                          <span className="etiqueta" key={s}>
-                            {s}
-                          </span>
-                        ))}
-                      </span>
+                      {mostrarEtiquetas && (
+                        <span className="etiquetas" style={{ marginBottom: '0.25rem' }}>
+                          <span className="etiqueta">{questao.tema}</span>
+                          {questao.subtemas.slice(0, 2).map((s) => (
+                            <span className="etiqueta" key={s}>
+                              {s}
+                            </span>
+                          ))}
+                        </span>
+                      )}
                       <span>
                         {questao.enunciado.slice(0, 160)}
                         {questao.enunciado.length > 160 ? '…' : ''}

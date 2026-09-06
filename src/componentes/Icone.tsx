@@ -26,6 +26,9 @@ const CAMINHOS: Record<string, string> = {
   reiniciar: 'M20 12a8 8 0 1 1-2.6-5.9M20 4v4.5h-4.5',
   baixar: 'M12 3.5v11M7.5 10.5 12 15l4.5-4.5M4.5 19.5h15',
   interrogacao: 'M9 9a3 3 0 1 1 4 2.8c-.8.3-1 .9-1 1.7v.8M12 17.6v.2',
+  olho: 'M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z',
+  'olho-riscado':
+    'M4 4l16 16M9.9 5.9A9.6 9.6 0 0 1 12 5.5c6 0 9.5 6.5 9.5 6.5a17 17 0 0 1-3.3 4M6.3 8.1A17 17 0 0 0 2.5 12S6 18.5 12 18.5c1 0 1.9-.2 2.7-.5M9.9 9.9a3 3 0 0 0 4.2 4.2',
 }
 
 export type NomeIcone = keyof typeof CAMINHOS

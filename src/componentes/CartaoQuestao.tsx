@@ -5,6 +5,7 @@ import { recurso } from '../config'
 import { href } from '../util/rotas'
 import { EstrelaCheia, Icone } from './Icone'
 import { ContribuirComentario } from './ContribuirComentario'
+import { usarEtiquetas } from '../estado/preferencias'
 
 interface Props {
   questao: Questao
@@ -76,6 +77,8 @@ export function CartaoQuestao({
     if (!revelarResposta) confirmar(letra)
   }
 
+  const { mostrarEtiquetas, alternarEtiquetas } = usarEtiquetas()
+
   useEffect(() => {
     if (!atalhosAtivos) return
     function aoTeclar(evento: KeyboardEvent) {
@@ -107,6 +110,9 @@ export function CartaoQuestao({
       } else if (tecla === 'r') {
         evento.preventDefault()
         aoRevisar()
+      } else if (tecla === 'e') {
+        evento.preventDefault()
+        alternarEtiquetas()
       }
     }
     document.addEventListener('keydown', aoTeclar)
@@ -125,6 +131,9 @@ export function CartaoQuestao({
   }
 
   const semGabarito = !questao.gabarito && !questao.anulada
+  // Etiquetas de assunto adiantam a resposta; quando escondidas, voltam junto
+  // com o gabarito, que é quando elas servem para estudar em vez de entregar.
+  const etiquetasVisiveis = mostrarEtiquetas || mostrarGabarito
 
   return (
     <article className="cartao questao-impressa" aria-label={`Questão ${numero ?? ''}`}>
@@ -132,18 +141,40 @@ export function CartaoQuestao({
         <div className="questao__topo">
           {questao.ano && <span className="etiqueta etiqueta--dado">{questao.ano}</span>}
           {questao.prova && <span className="etiqueta">{questao.prova}</span>}
-          <span className="etiqueta">{questao.tema}</span>
-          {questao.subtemas.slice(0, 2).map((s) => (
-            <span className="etiqueta" key={s}>
-              {s}
-            </span>
-          ))}
-          {questao.dificuldade && (
-            <span className="etiqueta">{ROTULO_DIFICULDADE[questao.dificuldade]}</span>
+          {etiquetasVisiveis && (
+            <>
+              <span className="etiqueta">{questao.tema}</span>
+              {questao.subtemas.slice(0, 2).map((s) => (
+                <span className="etiqueta" key={s}>
+                  {s}
+                </span>
+              ))}
+              {questao.dificuldade && (
+                <span className="etiqueta">{ROTULO_DIFICULDADE[questao.dificuldade]}</span>
+              )}
+            </>
           )}
           {questao.anulada && <span className="etiqueta etiqueta--alerta">Anulada</span>}
 
           <div className="questao__acoes nao-imprime">
+            <button
+              type="button"
+              className="botao-icone"
+              onClick={alternarEtiquetas}
+              aria-pressed={!mostrarEtiquetas}
+              aria-label={
+                mostrarEtiquetas
+                  ? 'Esconder as etiquetas de assunto até responder'
+                  : 'Mostrar sempre as etiquetas de assunto'
+              }
+              title={
+                mostrarEtiquetas
+                  ? 'Esconder as etiquetas de assunto (E) — elas adiantam a resposta'
+                  : 'Mostrar sempre as etiquetas de assunto (E)'
+              }
+            >
+              <Icone nome={mostrarEtiquetas ? 'olho' : 'olho-riscado'} />
+            </button>
             <button
               type="button"
               className="botao-icone"

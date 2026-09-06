@@ -6,6 +6,7 @@ const LISTA: Array<[string, string]> = [
   ['M', 'Abrir o mapa de questões'],
   ['F', 'Favoritar a questão'],
   ['R', 'Marcar para revisão'],
+  ['E', 'Esconder ou mostrar as etiquetas de assunto'],
   ['Shift + 1 … 5', 'Riscar uma alternativa'],
   ['?', 'Mostrar estes atalhos'],
 ]

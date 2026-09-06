@@ -16,6 +16,7 @@ import { Carregando, Estado } from '../componentes/Estados'
 import { usarSessao } from '../estado/sessao'
 import { usarMedia } from '../util/usarMedia'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
+import { usarEtiquetas } from '../estado/preferencias'
 import { href } from '../util/rotas'
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
@@ -45,6 +46,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   }, [filtros])
 
   const { contexto, carregandoBusca } = usarContextoLocal(filtros.busca)
+  const { mostrarEtiquetas, definirEtiquetas } = usarEtiquetas()
   const contagens = useMemo(
     () => (indice ? contar(indice, filtros, contexto) : null),
     [indice, filtros, contexto],
@@ -258,6 +260,20 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                   onChange={(e) => atualizar({ embaralhar: e.target.checked })}
                 />
                 <span>Embaralhar a ordem</span>
+              </label>
+              <label className="caixa">
+                <input
+                  type="checkbox"
+                  checked={!mostrarEtiquetas}
+                  onChange={(e) => definirEtiquetas(!e.target.checked)}
+                />
+                <span>
+                  Esconder as etiquetas de assunto até responder
+                  <span className="campo__auxilio" style={{ marginTop: 0 }}>
+                    Ler "Salter-Harris" antes do enunciado já elimina metade das alternativas. Vale
+                    para todas as sessões e dá para trocar no meio, pela tecla E.
+                  </span>
+                </span>
               </label>
             </div>
           </div>

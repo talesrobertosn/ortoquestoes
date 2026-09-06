@@ -324,6 +324,44 @@ checar(
 await pagina.fill('#busca-acervo', '')
 await pagina.waitForTimeout(200)
 
+console.log('\n7g. Esconder as etiquetas de assunto')
+// Etiquetas adiantam a resposta: ler o subtema antes do enunciado elimina
+// metade das alternativas. Escondê-las é opcional; o padrão é mostrar.
+await pagina.goto(BASE + `#/questao/${idExemplo}`, { waitUntil: 'networkidle' })
+await pagina.waitForSelector('.alternativa')
+const etiquetasAntes = await pagina.locator('.questao__topo .etiqueta').count()
+checar(etiquetasAntes > 0, 'por padrão as etiquetas aparecem', String(etiquetasAntes))
+await pagina.click('button[aria-label^="Esconder as etiquetas"]')
+await pagina.waitForTimeout(150)
+const etiquetasDepois = await pagina.locator('.questao__topo .etiqueta').count()
+checar(etiquetasDepois < etiquetasAntes, 'esconder tira as etiquetas de assunto da questão')
+checar(
+  (await pagina.locator(`.questao__topo .etiqueta:has-text("${indice.temas[0].nome}")`).count()) === 0,
+  'o tema deixa de aparecer',
+)
+// A preferência vale para as próximas questões, não só para esta.
+await pagina.goto(BASE + `#/questao/${indice.questoes[7].id}`, { waitUntil: 'networkidle' })
+await pagina.waitForSelector('.alternativa')
+checar(
+  (await pagina.locator('.questao__topo .etiqueta').count()) < etiquetasAntes,
+  'a escolha vale para as outras questões e sobrevive à navegação',
+)
+// Respondida, a etiqueta volta: aí ela ensina em vez de entregar.
+await pagina.keyboard.press('1')
+await pagina.keyboard.press('Enter')
+await pagina.waitForSelector('.resultado')
+checar(
+  (await pagina.locator('.questao__topo .etiqueta').count()) >= etiquetasAntes - 1,
+  'depois de responder as etiquetas voltam',
+)
+// E a tecla E devolve o padrão.
+await pagina.keyboard.press('e')
+await pagina.waitForTimeout(150)
+checar(
+  (await pagina.locator('button[aria-label^="Esconder as etiquetas"]').count()) === 1,
+  'a tecla E volta a mostrar sempre',
+)
+
 console.log('\n8. Largura de 320 pixels')
 await pagina.setViewportSize({ width: 320, height: 720 })
 await pagina.goto(BASE, { waitUntil: 'networkidle' })
