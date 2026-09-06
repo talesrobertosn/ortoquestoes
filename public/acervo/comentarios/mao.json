@@ -3177,6 +3177,18 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "mao-0297": {
+  "conceito": "Tachdjian gradua a sinostose radioulnar congênita pelo que aconteceu com a cabeça do rádio e pela natureza da fusão. Grau I: cabeça do rádio ausente, com rádio e ulna fundidos de forma lisa e contínua ao longo de vários centímetros da porção proximal. Grau II: cabeça do rádio presente porém luxada, em geral posteriormente, com a fusão logo distal à epífise radial proximal. Grau III: sinostose fibrosa, sem fusão óssea visível, mas com a pronossupinação igualmente bloqueada.",
+  "correta": "O tipo III é a sinostose fibrosa que bloqueia a pronossupinação. Ela é a que mais engana: a radiografia pode parecer quase normal, sem ponte óssea evidente, e a criança chega com o antebraço travado sem que se veja o motivo — o que costuma atrasar o diagnóstico e levar a pensar em rigidez de partes moles ou em falta de colaboração. A tomografia é o exame que resolve a dúvida.",
+  "incorretas": {
+   "A": "Ausência da cabeça do rádio com fusão radioulnar proximal é o grau I, a apresentação mais típica.",
+   "B": "Luxação da cabeça do rádio com fusão radioulnar proximal é o grau II — a cabeça existe, mas nunca se articulou corretamente.",
+   "C": "Cabeça do rádio em posição normal com fusão radioulnar proximal não corresponde a nenhum dos graus descritos: se há fusão óssea proximal, a cabeça está ausente ou deslocada."
+  },
+  "alerta": "Duas classificações são usadas para esta doença e numeram de forma diferente. A resposta segue Tachdjian. Na de Cleary e Omer, a sinostose fibrosa com cabeça do rádio normal é o tipo I, e não o III — se o enunciado não disser qual sistema está usando, confira antes de responder.",
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
  "mao-0298": {
   "conceito": "A gota de lágrima é o contorno da borda volar da fossa semilunar do rádio, visto no perfil. O ângulo dela — formado entre o eixo da gota e o eixo longo do rádio — mede se essa borda está no lugar, e o valor normal fica em torno de 70 graus.",
   "correta": "Ângulo em torno de 45 graus indica lesão da fossa semilunar: a borda volar rodou, o que significa que o fragmento volar-ulnar do rádio distal — a chamada esquina crítica — está desviado ou mal reduzido. O achado importa porque esse fragmento é pequeno, frequentemente não é alcançado pela placa volar padrão, cuja borda distal fica proximal a ele, e a sua perda leva à subluxação volar do carpo no pós-operatório. Reconhecer a gota rodada no perfil é o que indica fixação específica dessa borda, com placa de sustentação distal ou fio de sutura ancorado.",
@@ -3658,6 +3670,183 @@
    "A": "O flexor radial do carpo passa pelo punho num compartimento próprio, escavado no trapézio, e por isso fica fora do túnel do carpo propriamente dito — detalhe anatômico que costuma escapar.",
    "C": "Os flexores profundos dos dedos formam o plano mais dorsal do bloco central, atrás dos superficiais, e não ocupam o canto radial.",
    "D": "O flexor profundo do quinto dedo está na extremidade ulnar do bloco, do lado oposto ao indicado."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0343": {
+  "conceito": "A escápula alada tem duas causas nervosas principais, e cada uma tem a sua cirurgia. Lesão do torácico longo paralisa o serrátil e se trata com transferência do peitoral maior. Lesão do nervo acessório paralisa o trapézio e se trata com a cirurgia de Eden-Lange.",
+  "correta": "Eden-Lange lateraliza as inserções dos romboides e do elevador da escápula, transferindo-as para mais lateral na espinha e no corpo da escápula. Com isso esses músculos passam a reproduzir o vetor do trapézio que se perdeu: o elevador substitui a porção superior, o romboide menor a média e o romboide maior a inferior. É por isso que a cirurgia só funciona com romboides e elevador íntegros — eles são inervados pelo nervo dorsal da escápula, e é preciso confirmar que essa raiz está preservada antes de indicar.",
+  "incorretas": {
+   "B": "Nem o elevador é inferiorizado, nem o serrátil é medializado. E o serrátil, na paralisia do torácico longo, é justamente o músculo que não funciona — não há o que transferir dele.",
+   "C": "Centralizar os romboides no ângulo inferior não corresponde à técnica e não reproduz o vetor do trapézio.",
+   "D": "A transferência do peitoral maior para a escápula é o tratamento da escápula alada por lesão do torácico longo, com paralisia do serrátil — a outra doença, com a escápula alando para o lado oposto."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0344": {
+  "conceito": "A camada superficial do compartimento volar do antebraço nasce do epicôndilo medial e é toda inervada pelo nervo mediano, com uma única exceção: o flexor ulnar do carpo, que é do ulnar.",
+  "correta": "O pronador redondo é inervado pelo nervo mediano, e por ramos que saem acima da origem do interósseo anterior. Isso tem duas consequências que caem em prova. Primeira: na síndrome do interósseo anterior o pronador redondo é poupado, porque o ramo dele já saiu antes. Segunda: é o próprio pronador redondo que comprime o mediano na síndrome do pronador, o que faz dele agressor e não vítima.",
+  "incorretas": {
+   "A": "O musculocutâneo inerva os flexores do braço — bíceps, braquial e coracobraquial — e termina como nervo cutâneo lateral do antebraço.",
+   "C": "O radial inerva o compartimento dorsal e o braquiorradial. Nenhum músculo pronador é dele.",
+   "D": "Do ulnar, no antebraço, são apenas dois músculos: o flexor ulnar do carpo e a metade ulnar do flexor profundo dos dedos."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0345": {
+  "conceito": "Gilford descreveu o carpo como uma cadeia de segmentos em que a fileira proximal é um segmento intercalado — ela não tem tendão inserido e se move por consequência do que acontece em volta. Uma cadeia assim é instável por natureza, e precisa de algo que a amarre.",
+  "correta": "O escafoide é esse elo. Ele atravessa as duas fileiras, articulando-se com o rádio e com o semilunar de um lado e com o trapézio, o trapezoide e o capitato do outro, e por isso funciona como a barra que impede a cadeia de colapsar em ziguezague. Daí duas consequências: quando o ligamento escafossemilunar rompe, o escafoide se desliga do semilunar e cada fileira passa a rodar por conta própria, produzindo o padrão DISI; e quando o escafoide fratura na cintura, o efeito é o mesmo, porque o elo se parte no meio.",
+  "incorretas": {
+   "A": "O capitato é o centro de rotação do punho e a peça central da fileira distal, mas não pertence às duas fileiras.",
+   "B": "O semilunar é o coração da fileira proximal e o osso que dá nome às instabilidades, mas ele fica inteiramente na fileira proximal.",
+   "D": "O hamato pertence à fileira distal, articulando-se com o quarto e o quinto metacarpos."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0346": {
+  "conceito": "A tabaqueira anatômica é a depressão que aparece na borda radial do punho quando o polegar é estendido. Ela é limitada dorsalmente pelo tendão do extensor longo do polegar e volarmente pelos tendões do abdutor longo e do extensor curto do polegar.",
+  "correta": "A letra C indica o extensor longo do polegar, a borda dorsal e ulnar, e a letra A o extensor curto do polegar, na borda volar e radial. Entre os dois fica a depressão propriamente dita — e o que importa dela é o assoalho: ali se palpa o escafoide, e dor à palpação da tabaqueira é o achado mais sensível na suspeita de fratura do escafoide. Também passam por ali a artéria radial e ramos do nervo radial superficial, o que explica o Tinel positivo nessa topografia na síndrome de Wartenberg.",
+  "incorretas": {
+   "A": "Extensor curto e abdutor longo são os dois tendões da borda volar, e a letra C está claramente na borda oposta, dorsal.",
+   "C": "Nomeia uma estrutura tendínea e um espaço, mas troca a ordem: a tabaqueira é a depressão entre as bordas, não uma delas.",
+   "D": "Mesma inversão, agora começando pelo espaço."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0347": {
+  "conceito": "O músculo acessório de Gantzer é uma cabeça acessória do flexor longo do polegar, presente numa parcela grande das pessoas, que nasce do processo coronoide ou do epicôndilo medial e desce até o tendão do flexor longo.",
+  "correta": "Ele se relaciona com o nervo mediano, e mais precisamente com o ramo interósseo anterior, que costuma passar por baixo dele ou entre ele e o flexor profundo. É por isso que ele figura entre as causas anatômicas de síndrome do interósseo anterior — compressão que produz déficit motor puro, com o gesto de \"ok\" achatado e sem qualquer alteração de sensibilidade. Ele é achado anatômico frequente e quase sempre assintomático, mas precisa ser procurado quando se explora um interósseo anterior sem outra causa aparente.",
+  "incorretas": {
+   "A": "O ulnar não tem relação com esse músculo acessório: ele corre medialmente e o Gantzer é uma estrutura do compartimento volar profundo, no território do mediano.",
+   "B": "O radial e seus ramos ficam do lado radial e dorsal.",
+   "D": "O axilar está no ombro, muito longe do antebraço."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0348": {
+  "conceito": "As duas técnicas endoscópicas de liberação do túnel do carpo se distinguem por quantos portais usam, e os dois nomes costumam ser cobrados juntos justamente por isso.",
+  "correta": "Chow usa dois portais — entrada no antebraço distal e saída na palma, com o aparelho atravessando o túnel de proximal para distal — e Agee usa um portal único proximal, com todo o procedimento feito por uma incisão no punho. Ambas trazem o mesmo ganho sobre a técnica aberta: retorno mais precoce ao trabalho e menos dor nos pilares tenar e hipotenar nas primeiras semanas, com resultados que se igualam aos da aberta depois de alguns meses. E ambas trazem o mesmo risco: liberação incompleta e lesão de estruturas que não se enxerga.",
+  "incorretas": {
+   "A": "Inverte as duas técnicas.",
+   "C": "Nenhuma das duas é de portal único distal.",
+   "D": "As duas não são iguais — é justamente o número de portais que as separa."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0349": {
+  "conceito": "Cada corda de Dupuytren produz uma contratura própria, e saber qual é qual permite prever o que a cirurgia vai encontrar e o que vai conseguir corrigir.",
+  "correta": "A corda pré-tendínea, derivada da banda pré-tendínea da aponeurose palmar, é a responsável pela contratura primária da metacarpofalângica. É a mais superficial e a mais segura de dissecar, porque corre na linha média da palma e não tem relação íntima com o feixe vasculonervoso. É também a que dá o melhor resultado cirúrgico: a contratura da metacarpofalângica corrige quase sempre por completo, ao contrário da interfalângica proximal.",
+  "incorretas": {
+   "B": "A banda espiral, ao se transformar em corda espiral, produz contratura da interfalângica proximal e desloca o feixe vasculonervoso para a linha média e para a superfície. É a corda perigosa, não a da metacarpofalângica.",
+   "C": "O ligamento de Grayson participa da formação da corda espiral, e portanto também da contratura da interfalângica proximal.",
+   "D": "O ligamento de Cleland é dorsal ao feixe e não é acometido pela doença — é a estrutura que o cirurgião encontra íntegra e usa como referência de plano."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0350": {
+  "alerta": "Na classificação de Nalebuff a botoeira do polegar é o tipo I, e não o II. O tipo II é a botoeira que já vem com subluxação da carpometacarpiana — variante rara. Guarde a série: I botoeira, II botoeira com carpometacarpiana acometida, III pescoço de cisne, IV polegar do guarda-caça, V pescoço de cisne por frouxidão da placa volar da metacarpofalângica, VI artrite mutilante.",
+  "conceito": "Nalebuff organizou o polegar reumatoide por qual articulação adoeceu primeiro e em que direção a deformidade se instalou. A botoeira nasce na metacarpofalângica; o pescoço de cisne nasce na trapeziometacarpiana.",
+  "correta": "O gabarito aponta o tipo II. O que o tipo II descreve, na classificação, é a botoeira acompanhada de subluxação da carpometacarpiana — ou seja, botoeira ela é, mas não é a forma característica nem a mais comum. A botoeira típica, e de longe a deformidade mais frequente do polegar reumatoide, é o tipo I. O mecanismo dela vale ser guardado: a sinovite distende a cápsula dorsal da metacarpofalângica, o extensor curto do polegar se afrouxa e as fibras do extensor longo escorregam para ulnar e volar; a metacarpofalângica cai em flexão e a interfalângica compensa em hiperextensão, com o primeiro metacarpo em abdução.",
+  "incorretas": {
+   "A": "Esta é a resposta que corresponde à classificação: o tipo I é a botoeira.",
+   "C": "O tipo III é o pescoço de cisne, que começa na trapeziometacarpiana com subluxação dorsal da base e adução do metacarpo, e a metacarpofalângica hiperestendendo para compensar.",
+   "D": "O tipo IV é o polegar do guarda-caça reumatoide — frouxidão do ligamento colateral ulnar da metacarpofalângica, com adução secundária do metacarpo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0351": {
+  "conceito": "Bain e Begg classificam a doença de Kienböck contando quantas superfícies articulares já perderam cartilagem, e não pelo aspecto do semilunar. As quatro superfícies em jogo são: a proximal do semilunar, a fossa semilunar do rádio, a distal do semilunar e a proximal do capitato.",
+  "correta": "Lesão na faceta do rádio e na superfície proximal do semilunar são duas superfícies — grau II. A lógica da classificação é cirúrgica: ela responde à pergunta de quais procedimentos ainda estão disponíveis. Com a fossa semilunar do rádio comprometida, por exemplo, a ressecção da fileira proximal perde sentido, porque é justamente ali que o capitato passaria a apoiar. Guarde o par de sistemas: Lichtman descreve o que aconteceu com o osso e com o alinhamento, Bain e Begg descrevem o que sobrou de cartilagem.",
+  "incorretas": {
+   "A": "O grau I corresponde a uma única superfície acometida, em geral a proximal do semilunar.",
+   "C": "O grau III são três superfícies, incluindo a cabeça do capitato — e é aí que a ressecção da fileira proximal fica contraindicada.",
+   "D": "O grau IV são as quatro superfícies, situação em que restam apenas artrodese total ou artroplastia."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0352": {
+  "conceito": "Tachdjian gradua a sinostose radioulnar congênita pelo que aconteceu com a cabeça do rádio, que é o que a radiografia mostra e o que determina o que se pode fazer cirurgicamente.",
+  "correta": "A ausência da cabeça do rádio, com rádio e ulna fundidos de forma lisa e contínua na sua porção proximal ao longo de vários centímetros, é o grau I — e é a apresentação mais típica. No grau II a cabeça do rádio existe, mas está luxada, em geral posteriormente, e a fusão fica logo distal à epífise radial proximal. A distinção importa porque a presença de uma cabeça, ainda que luxada, muda o que a cirurgia pode tentar.",
+  "incorretas": {
+   "B": "O grau II é o que tem cabeça do rádio presente e luxada.",
+   "C": "O grau III não é definido pela ausência da cabeça.",
+   "D": "Um grau IV não faz parte dessa classificação, que descreve três tipos."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0353": {
+  "conceito": "O ligamento de Vickers é uma banda anômala e espessada que ancora o carpo ao canto da fise do rádio que deveria crescer.",
+  "correta": "Ele é o achado característico da deformidade de Madelung. Preso entre a metáfise volar e ulnar do rádio e o semilunar — e, em algumas descrições, alcançando também o complexo da fibrocartilagem triangular —, ele impede o crescimento daquele canto da placa enquanto o resto continua. O resultado é o rádio encurvado com a superfície articular voltada para volar e ulnar, a ulna proeminente no dorso e o carpo em cunha entre os dois ossos. Em criança ainda em crescimento, ressecá-lo junto com a fisiólise pode interromper a progressão.",
+  "incorretas": {
+   "B": "A artrogripose é caracterizada por contraturas articulares múltiplas e congênitas, com rigidez e pouco tecido muscular — outro mecanismo e outra doença.",
+   "C": "Na sinostose radioulnar congênita os dois ossos estão fundidos entre si; não há banda anômala ancorando o carpo.",
+   "D": "Na mão torta radial falta o próprio rádio, e o problema não é uma banda que trava um canto da fise."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0354": {
+  "conceito": "A sequência de Mayfield é fixa e dá a volta em torno do semilunar, sempre no mesmo sentido: I escafossemilunar, II capitossemilunar pelo espaço de Poirier, III lunopiramidal, IV luxação volar do semilunar.",
+  "correta": "O estágio III é a instabilidade semilunopiramidal. A essa altura a força já se desligou do escafoide e do capitato e chega ao lado ulnar: o carpo inteiro fica desconectado do semilunar, que permanece articulado com o rádio. É a luxação perissemilunar propriamente dita.",
+  "incorretas": {
+   "A": "A instabilidade radiossemilunar não corresponde a nenhum estágio da série de Mayfield, que descreve a progressão em torno do semilunar e não entre ele e o rádio.",
+   "C": "A luxação capitossemilunar é o estágio II.",
+   "D": "O sinal de Terry Thomas é um achado radiográfico — o intervalo aberto entre escafoide e semilunar — e corresponde ao estágio I, não ao III. Além disso, ele é sinal, não estágio."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0355": {
+  "conceito": "Na botoeira crônica a banda central está rota e as bandas laterais escorregaram para volar do eixo da interfalângica proximal. As técnicas se dividem por qual tecido usam para refazer a extensão: as próprias bandas laterais, um retalho do tendão extensor ou a soltura do tendão terminal.",
+  "correta": "Mobilizar duas hemifitas das bandas laterais e suturá-las na linha média sobre a articulação é a técnica de Aiache. A lógica é aproveitar o que já existe: as bandas laterais continuam íntegras e apenas se deslocaram, então trazê-las de volta para dorsal e uni-las refaz a extensão sem enxerto e sem tecido de fora. E como só metade de cada banda é usada, a outra metade continua servindo à extensão da interfalângica distal.",
+  "incorretas": {
+   "B": "A técnica de Snow usa um retalho do próprio tendão extensor, rebatido distalmente a partir da porção proximal, para cobrir a falha da banda central.",
+   "C": "A técnica de Matev encurta uma banda lateral e alonga a outra em cortes escalonados, transferindo uma delas para reconstruir a banda central.",
+   "D": "Tsuge e Kessler dão nome a técnicas de sutura tendínea — pontos de aproximação de cotos —, e não a reconstruções do aparelho extensor."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0356": {
+  "conceito": "As lesões de ponta de dedo com perda de polpa e osso exposto exigem cobertura com pele sensível e resistente, e as opções se distinguem pela direção de onde a pele é trazida.",
+  "correta": "Kutler descreveu o avanço duplo de pele lateral: dois retalhos triangulares em V-Y, um de cada lado do dedo, avançados para a linha média e fechados juntos. Ele é indicado para amputações transversas ou com viés lateral, cobre uma perda pequena — cerca de 0,5 centímetro — e mantém a sensibilidade, já que cada triângulo vem com o seu feixe. Compare com o avanço volar único de Atasoy-Kleinert, que é um V-Y só, vindo da polpa, e cobre perdas com viés dorsal.",
+  "incorretas": {
+   "A": "O avanço de pele volar é a técnica de Atasoy-Kleinert nos dedos longos, e a de Moberg no polegar.",
+   "B": "Avanço dorsal não é técnica descrita para cobertura de polpa: a pele dorsal é fina e sem coxim, e não substitui polpa.",
+   "D": "O avanço adipofascial com enxerto é outra opção de cobertura, mas não tem o nome de Kutler nem o desenho em dois triângulos laterais."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0357": {
+  "conceito": "Gelberman estudou a irrigação do semilunar e mostrou que ela não é igual em todo mundo. A maioria dos semilunares recebe vasos por duas faces, dorsal e volar, com boa rede de anastomoses dentro do osso. Uma minoria, não.",
+  "correta": "A faixa descrita é de 8% a 20%: são os semilunares com artéria nutrícia única — entrando só pela face volar ou só pela dorsal — ou com padrão intraósseo pobre em anastomoses. Esses são os de maior risco de necrose, porque não têm caminho alternativo quando o suprimento é interrompido. É esse dado que sustenta a hipótese vascular da doença e que se soma às outras vulnerabilidades: o padrão intraósseo em I, a variância ulnar negativa e a forma do semilunar sem faceta para o hamato.",
+  "incorretas": {
+   "B": "De 22% a 30% já superestima a proporção descrita.",
+   "C": "De 32% a 40% descreveria quase metade da população com anatomia de risco, o que não corresponde à raridade da doença.",
+   "D": "De 42% a 50% está muito acima de qualquer série."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0358": {
+  "conceito": "A radiografia mostra o resultado de uma ressecção da fileira proximal do carpo: escafoide, semilunar e piramidal foram retirados, e a cabeça do capitato passou a apoiar diretamente na fossa semilunar do rádio, formando uma articulação nova.",
+  "correta": "O procedimento é mais bem indicado no estágio III-B de Lichtman — semilunar colapsado, escafoide em rotação fixa, altura carpal reduzida e alinhamento carpal perdido. Nesse ponto os procedimentos que descarregam o semilunar já não têm o que salvar. A condição para que a ressecção funcione é visível na própria radiografia: a cabeça do capitato e a fossa semilunar do rádio precisam ter cartilagem preservada, porque são elas que formarão a nova articulação. Perde-se cerca de metade do arco de movimento e parte da força de preensão, e ganha-se alívio da dor sem material de síntese.",
+  "incorretas": {
+   "A": "No estágio I a radiografia é normal e o diagnóstico se faz por ressonância. O tratamento é imobilização e descarga.",
+   "B": "No estágio II há esclerose sem colapso e com alinhamento carpal normal — cabem osteotomia de nivelamento, quando há variância ulnar negativa, ou revascularização.",
+   "C": "No III-A o semilunar já colapsou, mas o escafoide ainda não rodou e o alinhamento está mantido. Ressecar a fileira proximal aí seria desproporcional."
   },
   "geradoEm": "2026-09-06",
   "conferido": false
