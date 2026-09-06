@@ -39,3 +39,6 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0022` | A alternativa dada como certa ("formação de aderências") e uma das erradas ("mecanismo extrínseco") descrevem o mesmo fenômeno com nomes diferentes |
 | `mao-0117` | Watson é o único teste do escafoide entre as opções, mas foi descrito para instabilidade escafossemilunar, não para fratura. O comentário lista o que de fato se examina |
 | `mao-0214` | A vitamina C tem evidência de **prevenção** da síndrome dolorosa regional complexa, não de tratamento do quadro já instalado, como o enunciado sugere |
+| `mao-0263` | O enunciado descreve nódulo sem contratura, e nódulo isolado não é indicação cirúrgica — o que indica operar é a perda de extensão |
+| `mao-0269` | O gabarito diz que o ligamento **escafossemilunar** liga o rádio ao escafoide. Ele liga o escafoide ao semilunar. Quem sai do rádio e abraça o escafoide é o radioescafocapitato, e nenhuma alternativa o nomeia |
+| `mao-0276` | O enunciado descreve **perda de tecido** e pergunta o objetivo de uma zetaplastia, que não repõe tecido — redistribui o que existe. A alternativa mais precisa (corrigir contratura) não corresponde ao caso apresentado |
