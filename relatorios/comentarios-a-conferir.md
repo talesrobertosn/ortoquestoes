@@ -17,7 +17,8 @@ gabarito sugere, e sem essa leitura o comentário seria adivinhação. As quest�
 com figura já comentadas até aqui tiveram todas as imagens abertas e conferidas
 uma a uma.
 
-Contagem por tema do que ficou de fora por esse motivo: quadril, 52 questões.
+Contagem por tema do que ficou de fora por esse motivo: quadril, 52 questões;
+conceitos básicos, 11 questões.
 
 ## Gabarito que parece errado
 
@@ -41,6 +42,8 @@ Contagem por tema do que ficou de fora por esse motivo: quadril, 52 questões.
 | `quadril-0192` e `quadril-0202` | Mesma pergunta sobre fatores de risco de fratura periprotética, com gabaritos oficiais **diferentes** (B numa, A na outra) | As duas listas só contêm fatores de risco reconhecidos. Não há como escolher uma e descartar a outra pelo conteúdo |
 | `quadril-0193` e `quadril-0203` | Mesma pergunta sobre qual ramo do nervo glúteo superior inerva o glúteo médio, com gabaritos oficiais **diferentes** (superior numa, inferior na outra) | O glúteo médio recebe fibras dos dois ramos: o superior vai a ele, e o inferior corre entre o médio e o mínimo inervando os dois. As duas alternativas têm respaldo |
 | `quadril-0172` | Mesmo caso da `osteometabolicas-0046`: a osteoporose transitória do quadril seria mais comum em gestantes | As séries trazem mais homens de meia-idade do que gestantes, em proporção próxima de três para um |
+| `conceitos-basicos-0210` | No fixador circular, aumentar a rigidez se faz **reduzindo o ângulo de cruzamento entre os fios** | É o contrário: fios cruzando perto de 90 graus dão a montagem mais estável. E a alternativa B (aumentar o diâmetro dos fios), marcada como errada, é medida reconhecida para aumentar a rigidez |
+| `conceitos-basicos-0211` | A distrofia simpático-reflexa é mais incidente com uso continuado de **opioide** | A associação medicamentosa clássica, nos textos de cirurgia da mão, é com BARBITÚRICOS (fenobarbital), na síndrome ombro-mão. Não encontro base para a do opioide |
 | `quadril-0035` | O ramo **medial** da lágrima de Köhler corresponde à fossa acetabular | A descrição clássica é o inverso: o ramo lateral é a parede da fossa acetabular e o medial é a superfície quadrilátera — que é a alternativa D, marcada como errada. A `quadril-0053`, no mesmo acervo, reforça isso ao ligar a dissociação entre lágrima e coluna posterior à fratura da superfície quadrilátera |
 | `quadril-0031` | O movimento passivo que exacerba a síndrome do piriforme é rotação medial com **abdução** | Alongar o piriforme exige rotação interna com ADUÇÃO (teste FAIR, sinal de Freiberg). Abdução com rotação externa é o teste ATIVO — e a `quadril-0046` e a `quadril-0065`, no mesmo acervo, respondem exatamente isso |
 
@@ -78,6 +81,9 @@ Contagem por tema do que ficou de fora por esse motivo: quadril, 52 questões.
 | `quadril-0034` | A fratura periprotética acetabular traumática é **tipo III** de Della Valle e Paprosky | Conheço a lógica da classificação — separar a fratura reconhecida no pós-operatório, a traumática e a espontânea por osteólise, e cada uma com componente estável ou solto —, mas não a numeração exata dos tipos, e a questão depende só do número |
 | `quadril-0179` | Qual critério NÃO é contemplado pela classificação de Bombelli para a artrose do quadril | Conheço os eixos de Bombelli — direção da migração da cabeça e reatividade biológica (hipertrófica, normotrófica, atrófica) —, mas não a lista fechada de critérios que a questão pede, e a resposta depende exatamente dela |
 | `quadril-0195` | Quais são, depois da trocantérica, as duas bursas mais acometidas | O trio que conheço é trocantérica, iliopsoas (iliopectínea) e isquioglútea. O gabarito troca a isquioglútea pela subglútea, e como a subglútea faz parte do próprio complexo trocantérico já nomeado no enunciado, não consigo decidir a intenção da banca |
+| `conceitos-basicos-0099` | Qual não união de osso longo determina o menor escore de qualidade de vida | A questão responde antebraço. Conheço os trabalhos que mostram o impacto devastador da pseudartrose da tíbia sobre a qualidade de vida, mas não a comparação entre sítios que a pergunta exige |
+| `conceitos-basicos-0166` | Na artrite séptica do idoso, a mortalidade é maior quando acomete **ombro e cotovelo** | Não consigo sustentar essa hierarquia. Meu palpite iria para o quadril, e palpite não vira comentário |
+| `conceitos-basicos-0173` | Qual atributo tem maior pontuação no escore NURD de risco de não união | Conheço os componentes do escore, mas não os pesos de cada um — e a questão se decide exatamente pelo peso |
 | `mao-0544` | Subtipos A1/A2/B1/B2 da classificação de **Albertoni** para dedo em martelo | Conheço a divisão de Albertoni entre lesão tendínea pura e lesão com arrancamento ósseo, mas não a numeração dos subtipos nem o ponto de corte de 30º que o enunciado usa para separá-los |
 
 ## Enunciado que não consigo reconstruir
