@@ -1,0 +1,476 @@
+{
+ "coluna-0001": {
+  "conceito": "O choque neurogênico do trauma raquimedular acima de T6 tem dois componentes: a perda do tônus simpático dilata os vasos e derruba a resistência periférica, e a atividade vagal sem oposição produz bradicardia. Repor volume sozinho não resolve — e em excesso agrava o edema medular. O vasopressor precisa, portanto, agir nas duas frentes: efeito ALFA para vasoconstrição e efeito BETA para sustentar a frequência e a contratilidade. Noradrenalina e dopamina cumprem isso; a fenilefrina, alfa pura, corrige a pressão mas piora a bradicardia. O alvo é manter a pressão arterial média entre 85 e 90 mmHg nos primeiros dias, para preservar a perfusão medular.",
+  "correta": "Ação alfa e beta-agonista, para corrigir ao mesmo tempo a vasoplegia e a bradicardia.",
+  "incorretas": {
+   "A": "O alfa-agonista puro eleva a resistência periférica, mas agrava a bradicardia por reflexo barorreceptor.",
+   "B": "O beta-agonista isolado melhora a frequência sem corrigir a vasoplegia, que é o problema central.",
+   "C": "O beta-antagonista faria o oposto do necessário, aprofundando a bradicardia."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0002": {
+  "conceito": "O glúteo médio é abdutor do quadril e recebe inervação do nervo glúteo superior, formado por L4, L5 e S1 — mas a raiz dominante é L5. Por isso a lesão de L5 produz fraqueza de abdução do quadril com marcha de Trendelenburg, além do achado mais conhecido, que é a fraqueza do extensor longo do hálux e a queda do pé por déficit do tibial anterior. Vale reter o mapa motor lombar: L2-L3 flexão do quadril, L3-L4 extensão do joelho, L4 dorsiflexão do tornozelo, L5 extensão do hálux e abdução do quadril, S1 flexão plantar.",
+  "correta": "L5, raiz dominante do nervo glúteo superior.",
+  "incorretas": {
+   "A": "L3 comanda sobretudo a flexão do quadril e a extensão do joelho.",
+   "B": "L4 comanda a dorsiflexão do tornozelo e o reflexo patelar.",
+   "D": "S1 comanda a flexão plantar, os glúteos máximos e o reflexo aquileu."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0003": {
+  "conceito": "Wiltse classifica a espondilolistese em cinco tipos por etiologia: I displásica (congênita, no L5-S1, criança), II ístmica (defeito da pars, também L5-S1, do adolescente atleta), III DEGENERATIVA, IV traumática e V patológica. A degenerativa é doença de adulto, tipicamente mulher acima de 50 anos, e acomete preferencialmente L4-L5, por duas razões anatômicas: as facetas ali são mais sagitalizadas, permitindo o deslizamento anterior, e o nível está imediatamente acima do segmento mais fixo. Não há defeito na pars — o arco posterior está íntegro —, e por isso a estenose acompanha o escorregamento.",
+  "correta": "L4-L5, associado a alterações degenerativas.",
+  "incorretas": {
+   "A": "O alongamento da pars é achado da forma displásica, e não da degenerativa.",
+   "B": "L5-S1 com alongamento da pars descreve a displásica, que é o tipo I.",
+   "D": "A degeneração está certa, mas o segmento típico dela é L4-L5, e não L5-S1."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0004": {
+  "conceito": "A doença de Charcot-Marie-Tooth é neuropatia hereditária sensitivomotora, e o padrão é de acometimento distal e progressivo. Isso produz a tríade que o ortopedista reconhece: ATROFIA da panturrilha e da musculatura intrínseca (a clássica perna em garrafa de champanhe invertida), pé CAVOVARO — porque o fibular longo, mais forte, verticaliza o primeiro raio, enquanto o tibial anterior e os fibulares curtos falham — e escoliose, presente em cerca de um terço dos pacientes, geralmente LEVE e frequentemente com padrão atípico, à esquerda ou cifoescoliótico.",
+  "correta": "Escoliose leve, atrofia da panturrilha e pé equinocavo.",
+  "incorretas": {
+   "B": "A escoliose costuma ser leve, e o pé é cavovaro, não planovalgo.",
+   "C": "A hipertrofia da panturrilha (pseudo-hipertrofia) é da distrofia muscular de Duchenne, e não da CMT.",
+   "D": "O pé está certo, mas a escoliose é leve e a panturrilha é atrófica."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0005": {
+  "conceito": "Vale ter o mapa das três raízes lombares baixas pronto, porque quase toda questão de hérnia se resolve com ele. L4: sensibilidade na face MEDIAL da perna, força na dorsiflexão do tornozelo (tibial anterior), reflexo PATELAR alterado. L5: sensibilidade no dorso do pé e no primeiro espaço, força na extensão do hálux e na abdução do quadril, sem reflexo próprio. S1: sensibilidade na borda lateral do pé e na planta, força na flexão plantar, reflexo AQUILEU alterado. A hérnia lombar posterolateral comprime a raiz que sai um nível abaixo — a de L4-L5 pega a raiz de L5.",
+  "correta": "Déficit sensitivo na face medial da perna com alteração do reflexo patelar.",
+  "incorretas": {
+   "A": "O dorso do pé é território de L5, e L5 não tem reflexo próprio.",
+   "C": "Borda lateral do pé e reflexo aquileu correspondem a S1.",
+   "D": "Não existe reflexo do tibial posterior de uso corrente nesse contexto, e o território descrito não é o de L4."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0006": {
+  "conceito": "A distinção entre claudicação neurogênica e vascular se faz por duas perguntas, e as duas aparecem aqui. A distância: na claudicação VASCULAR ela é fixa e reprodutível, porque a demanda metabólica do músculo é constante; na NEUROGÊNICA é variável, dependendo da postura adotada. E o alívio: na vascular basta parar de andar, em qualquer posição; na neurogênica é preciso FLETIR a coluna — sentar, apoiar-se no carrinho do supermercado, subir uma ladeira —, porque a flexão aumenta a área do canal e o forame. Parar de pé, em extensão, não alivia a neurogênica.",
+  "correta": "Distância variável, com alívio ao sentar-se.",
+  "incorretas": {
+   "A": "A distância fixa é característica da claudicação vascular.",
+   "B": "Erra as duas: a distância é variável, e ficar de pé em extensão não alivia.",
+   "C": "A variabilidade está certa, mas ficar de pé mantém a coluna em extensão e não alivia."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0007": {
+  "conceito": "A espondilolistese displásica (tipo I de Wiltse) decorre de uma falha congênita dos elementos posteriores de L5 e do sacro — facetas hipoplásicas, orientação anômala, espinha bífida oculta associada — e por isso o segmento afetado é sempre L5-S1. Ela predomina no sexo feminino, na proporção aproximada de duas para uma, e é a que mais progride, podendo alcançar graus altos e produzir a deformidade em bermuda com retificação lombossacra e retroversão pélvica. É também a de maior risco neurológico, porque o arco posterior íntegro acompanha o corpo no escorregamento e estrangula a cauda equina.",
+  "correta": "Sexo feminino, no segmento L5-S1.",
+  "incorretas": {
+   "A": "Erra o sexo e o segmento: L4-L5 é da forma degenerativa.",
+   "B": "O segmento está certo, mas o predomínio é feminino.",
+   "C": "O sexo está certo, mas o segmento da displásica é L5-S1."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0008": {
+  "conceito": "Os critérios de Sörensen para a doença de Scheuermann são radiográficos e se apoiam num achado principal somado a achados de acompanhamento. O principal: acunhamento anterior de pelo menos 5 graus em TRÊS vértebras adjacentes no ápice da deformidade. Os associados: irregularidade das placas terminais, nódulos de Schmorl e ESTREITAMENTO do espaço discal — este último presente porque o material discal se hernia através da placa terminal enfraquecida, reduzindo a altura do disco. A hiperlordose lombar compensatória existe, mas é consequência da cifose, e não critério diagnóstico.",
+  "correta": "O estreitamento do espaço intervertebral, achado que acompanha os critérios de Sörensen.",
+  "incorretas": {
+   "A": "A hiperlordose lombar é compensação da cifose torácica, e não critério.",
+   "B": "O equilíbrio sagital é parâmetro de avaliação global da deformidade, e não critério de Sörensen.",
+   "D": "O critério exige TRÊS vértebras adjacentes com acunhamento de 5 graus ou mais — duas não bastam."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0009": {
+  "conceito": "A lesão medular tem dois tempos. A lesão PRIMÁRIA é o dano mecânico do instante do trauma, e o mecanismo mais frequente é o impacto com compressão PERSISTENTE — a fratura explosiva que retropulsa fragmento para dentro do canal, ou a fratura-luxação que mantém a medula comprimida. É por ser persistente que existe janela para intervenção: descomprimir precocemente muda o prognóstico, o que não aconteceria se o dano fosse instantâneo e completo. Depois vem a lesão SECUNDÁRIA — isquemia, edema, radicais livres, excitotoxicidade —, alvo do controle pressórico e da estabilização precoce.",
+  "correta": "Impacto com compressão persistente.",
+  "incorretas": {
+   "A": "A distração é mecanismo possível, típico da lesão sem alteração radiográfica na criança, mas não o mais frequente.",
+   "B": "Laceração ou transecção verdadeira é rara, e ocorre sobretudo em ferimentos penetrantes.",
+   "C": "O impacto com compressão transitória é o mecanismo da lesão por hiperextensão em canal estreito, menos frequente que a compressão mantida."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0011": {
+  "conceito": "O teste de Schober mede quanto a coluna lombar realmente flete, separando a flexão do tronco que vem da coluna daquela que vem dos quadris. Com o paciente em pé, marca-se um ponto na junção lombossacra e outro 10 cm acima (na versão modificada, também 5 cm abaixo, medindo 15 cm no total); pede-se flexão anterior máxima e mede-se de novo. O normal é a distância aumentar pelo menos 5 cm. Aumento menor indica rigidez lombar — e o uso clássico é no acompanhamento da espondilite anquilosante, em que a perda progressiva de mobilidade é um dos parâmetros de atividade da doença.",
+  "correta": "Limitação dos movimentos da coluna lombar.",
+  "incorretas": {
+   "A": "A obliquidade pélvica se avalia pela altura das cristas ilíacas e pela medida de comprimento dos membros.",
+   "B": "A escoliose se avalia pelo teste de Adams e pela radiografia panorâmica, não pelo Schober.",
+   "C": "O Schober mede mobilidade, e não o grau nem a rigidez da lordose."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0012": {
+  "conceito": "A ossificação da espondilite anquilosante começa nas ênteses e nas fibras periféricas do ânulo fibroso, formando os sindesmófitos — pontes ósseas FINAS e VERTICAIS que unem os cantos de vértebras vizinhas e produzem a coluna em bambu. Ela acomete também as facetas, que anquilosam, e o ligamento interespinhoso, cuja ossificação desenha o sinal do punhal no AP. O ligamento longitudinal anterior é relativamente poupado — e é justamente isso que a distingue da hiperostose esquelética difusa idiopática (DISH), em que a ossificação é grossa, exuberante e escorre pela face anterior dos corpos ao longo desse ligamento.",
+  "correta": "O ligamento longitudinal anterior, cuja ossificação exuberante caracteriza a DISH, e não a espondilite anquilosante.",
+  "incorretas": {
+   "A": "As fibras periféricas do ânulo fibroso são justamente onde o sindesmófito nasce.",
+   "B": "As facetas anquilosam na doença, contribuindo para a rigidez completa.",
+   "C": "A ossificação do ligamento interespinhoso produz o sinal do punhal, achado clássico da doença."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0013": {
+  "conceito": "Tudo na claudicação neurogênica gira em torno de uma observação: a FLEXÃO da coluna alarga o canal e o forame, e a extensão os estreita. Daí decorrem todos os achados. O paciente anda melhor em ACLIVE, porque subir obriga a inclinar o tronco para frente; anda pior em declive, que exige extensão. Alivia sentado e apoiando-se no carrinho do supermercado. Tolera bem a bicicleta, cuja posição é de flexão — por isso o teste da bicicleta é NEGATIVO na claudicação neurogênica e positivo na vascular. E os sintomas costumam progredir de proximal para distal, ao contrário da dor vascular.",
+  "correta": "Menor desconforto para deambular em aclives, porque subir obriga a fletir o tronco.",
+  "incorretas": {
+   "A": "O teste da bicicleta é negativo na claudicação neurogênica: pedalar em flexão não reproduz os sintomas.",
+   "B": "A posição ortostática mantém a coluna em extensão e piora, em vez de aliviar.",
+   "D": "A progressão costuma ser de proximal para distal; o padrão distal-proximal sugere origem vascular."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0014": {
+  "conceito": "Na espondilolistese de alto grau, a forma dos ossos conta a história e prevê o futuro. O platô sacral REDONDO (domo sacral cupuliforme) indica que o topo do sacro já foi remodelado pela carga anormal e perdeu a barreira anterior que segurava L5 — sem essa contenção óssea, o escorregamento continua. E o corpo de L5 TRAPEZOIDAL indica que ele próprio já se deformou, mais alto atrás do que na frente, o que aumenta o ângulo de escorregamento. Somados a um alto índice de incidência pélvica e a uma pelve verticalizada, esses dois achados compõem o perfil de maior risco de progressão.",
+  "correta": "Platô sacral redondo com corpo de L5 trapezoidal.",
+  "incorretas": {
+   "A": "Platô plano e L5 retangular é o padrão de melhor prognóstico, com menor risco de progressão.",
+   "B": "O platô plano ainda oferece contenção anterior, mesmo com L5 já deformado.",
+   "C": "O domo redondo é fator de risco, mas L5 retangular indica que a remodelação do corpo ainda não ocorreu."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0015": {
+  "conceito": "As síndromes medulares incompletas se distinguem pelo que cada trato carrega. O corticoespinhal (motor) corre lateralmente; o espinotalâmico (dor e temperatura, cruzado) corre anterolateralmente; e o funículo POSTERIOR (propriocepção, vibração e tato discriminativo) corre atrás. A síndrome medular ANTERIOR compromete os dois primeiros — perda motora e perda de dor e temperatura — e poupa o funículo posterior, de modo que a propriocepção e a vibração permanecem. É a de PIOR prognóstico entre as incompletas, com recuperação em torno de 10 a 15%, e frequentemente decorre de lesão da artéria espinhal anterior.",
+  "correta": "Síndrome medular anterior.",
+  "incorretas": {
+   "A": "A paralisia cruzada de Bell é lesão da decussação piramidal, com déficit desproporcional nos membros superiores.",
+   "B": "A síndrome medular central acomete desproporcionalmente os membros superiores e as fibras mais centrais, com preservação sacral.",
+   "D": "Brown-Séquard é a hemissecção: perda motora e proprioceptiva IPSILATERAL e perda de dor e temperatura contralateral — a propriocepção não é poupada."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0016": {
+  "alerta": "O sinal de Hoffmann, alternativa A, é sinal de mielopatia cervical tão esperado quanto o Babinski numa compressão medular em C6-C7 — a lesão está acima do arco reflexo (C8-T1) que o medeia, e as duas respostas de primeiro neurônio motor tendem a aparecer juntas. A questão elege apenas o Babinski, e não encontro razão para descartar a A. As duas descrevem corretamente o quadro de uma hérnia central nesse nível.",
+  "conceito": "A posição da hérnia cervical decide a síndrome. Hérnia CENTRAL comprime a medula e produz MIELOPATIA: marcha desequilibrada, perda de destreza fina, hiper-reflexia abaixo do nível, clônus, Babinski e Hoffmann. Hérnia POSTEROLATERAL comprime a raiz e produz radiculopatia. E vale fixar a numeração cervical, que é diferente da lombar: o disco C6-C7 comprime a raiz de C7 — na coluna cervical a raiz sai ACIMA do pedículo correspondente, de modo que a raiz comprimida leva o número da vértebra inferior. C7 dá fraqueza de tríceps e alteração do reflexo tricipital; o braquiorradial é reflexo de C6.",
+  "correta": "Mielopatia com reflexo de Babinski presente — a hérnia central comprime a medula.",
+  "incorretas": {
+   "A": "Descreve corretamente a mesma mielopatia por outro sinal, e mesmo assim foi dada como errada. Veja o aviso acima.",
+   "C": "O nível da raiz está certo (C6-C7 comprime C7), mas o reflexo de C7 é o TRICIPITAL; o braquiorradial é de C6. E hérnia central não produz radiculopatia isolada.",
+   "D": "A raiz comprimida pelo disco C6-C7 é C7, e não C6; a face lateral do braço é território de C5."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0017": {
+  "conceito": "Os critérios de Sörensen para a doença de Scheuermann são radiográficos. O principal é o acunhamento anterior de pelo menos 5 graus em TRÊS vértebras adjacentes no ápice da cifose — é ele que distingue a doença da cifose postural, na qual as vértebras são normais e a curva se corrige em hiperextensão. Acompanham-no a irregularidade das placas terminais, os nódulos de Schmorl e o estreitamento do espaço discal, todos decorrentes da herniação do material discal através de placas terminais enfraquecidas. Escoliose leve pode coexistir, mas não é critério e não é degenerativa.",
+  "correta": "Acunhamento anterior maior que 5 graus em três vértebras adjacentes no ápice, somado à irregularidade das placas terminais.",
+  "incorretas": {
+   "A": "O estreitamento discal acompanha o quadro, mas escoliose degenerativa não é critério de Sörensen.",
+   "B": "A hiperlordose lombar é compensatória, e não critério.",
+   "C": "O acunhamento está certo, mas escoliose degenerativa não integra os critérios."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0018": {
+  "conceito": "O nível sensitivo é o dado mais confiável para localizar a lesão medular, e alguns dermátomos funcionam como marcos anatômicos que vale decorar: T4 na linha dos mamilos, T6 no apêndice xifoide, T10 na CICATRIZ UMBILICAL, T12 na região inguinal, e no membro superior C6 no polegar, C7 no dedo médio e C8 no dedo mínimo. Perda motora dos membros inferiores com nível sensitivo na cicatriz umbilical corresponde, portanto, a T10 — e é preciso lembrar que o nível ósseo da fratura costuma ser mais alto que o nível neurológico, já que a medula termina em L1-L2.",
+  "correta": "T10, o dermátomo da cicatriz umbilical.",
+  "incorretas": {
+   "A": "T4 corresponde à linha dos mamilos, bem acima da cicatriz umbilical.",
+   "B": "T7 fica entre o xifoide e a cicatriz umbilical.",
+   "D": "T12 corresponde à região inguinal, abaixo da cicatriz umbilical."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0019": {
+  "conceito": "A neurofibromatose tipo 1 tem várias manifestações esqueléticas, e a ESCOLIOSE é a mais frequente — presente em torno de 10 a 30% dos pacientes. Ela vem em duas formas, e distingui-las muda tudo: a não distrófica, semelhante à escoliose idiopática e de comportamento parecido; e a DISTRÓFICA, com curva curta e angulada de poucos níveis, escalopamento vertebral, afilamento de costelas e pedículos, alargamento do forame e ectasia dural — de progressão rápida, com má resposta a órtese e alto índice de pseudartrose na cirurgia. As outras manifestações são bem menos frequentes.",
+  "correta": "Escoliose.",
+  "incorretas": {
+   "B": "A sinostose radioulnar não é manifestação característica da neurofibromatose.",
+   "C": "A pseudartrose congênita da tíbia é fortemente associada à doença — cerca de metade dos casos ocorre em portadores —, mas é bem menos frequente que a escoliose entre os pacientes.",
+   "D": "A pseudartrose congênita da clavícula é entidade independente, sem essa associação."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0020": {
+  "conceito": "Na espondilolistese ístmica, o defeito da pars separa o arco posterior do corpo, e esse arco solto — junto com o tecido fibrocartilaginoso que se forma no defeito, o calo de Gill — permanece para trás enquanto o corpo escorrega para frente, comprimindo a raiz de L5 no recesso e no forame. O procedimento de Gill consiste em remover esse elemento posterior solto de L5, com o tecido do defeito, descomprimindo a raiz. Isoladamente ele resolve a compressão mas remove o que restava de contenção posterior, e por isso hoje é feito acompanhado de artrodese.",
+  "correta": "Laminectomia descompressiva de L5, com remoção do arco posterior solto.",
+  "incorretas": {
+   "A": "A artrodese posterolateral é o complemento que se associa ao Gill, e não a técnica em si.",
+   "C": "O elemento removido é o arco posterior solto de L5, e não a lâmina de S1.",
+   "D": "A artrodese intersomática anterior é outro procedimento, com outra finalidade."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0021": {
+  "conceito": "Vale ter o mapa cervical pronto. C5: sensibilidade na face lateral do ombro e braço, força na abdução do ombro (deltoide), reflexo bicipital. C6: sensibilidade na face lateral do antebraço, POLEGAR e INDICADOR, força na flexão do cotovelo (bíceps) e extensão do punho, reflexo BRAQUIORRADIAL. C7: dedo médio, extensão do cotovelo (tríceps) e flexão do punho, reflexo tricipital. C8: dedo mínimo e flexão dos dedos. Na coluna cervical a raiz comprimida leva o número da vértebra INFERIOR: o disco C5-C6 comprime a raiz de C6.",
+  "correta": "Disco C5/C6 comprimindo a raiz de C6 — polegar e indicador, bíceps e reflexo braquiorradial.",
+  "incorretas": {
+   "A": "O disco C4/C5 comprime a raiz de C5, e não C4; e o quadro descrito não é o de C5.",
+   "B": "O nível do disco está errado para o quadro, e C5 dá alteração no reflexo bicipital, não no braquiorradial.",
+   "C": "O disco está certo, mas o disco C5/C6 comprime C6, e não C5."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0023": {
+  "conceito": "A artéria vertebral sobe pelos forames transversos e, ao sair de C1, faz uma curva característica: ela corre horizontalmente sobre a face superior do arco posterior do atlas, dentro do sulco da artéria vertebral, antes de perfurar a membrana atlantoccipital e entrar no crânio. Esse trajeto a coloca a cerca de 1,5 cm da linha média de cada lado — daí a regra de ouro do acesso posterior à coluna cervical alta: dissecar o arco posterior de C1 no máximo até essa distância. Passar disso significa alcançar a artéria, e o sangramento é grave e de controle difícil.",
+  "correta": "A artéria vertebral, que corre no sulco sobre a face superior do arco posterior de C1.",
+  "incorretas": {
+   "B": "A raiz de C1 é pequena e predominantemente motora, sem a gravidade da lesão arterial.",
+   "C": "A raiz de C2 (nervo occipital maior) corre abaixo do arco de C1, e sua lesão causa dor occipital, não hemorragia.",
+   "D": "O gânglio de C2 fica na região do istmo de C2 e também não é a estrutura que a regra de 1,5 cm protege."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0024": {
+  "conceito": "Na escoliose idiopática do adolescente a decisão depende de duas variáveis: o tamanho da curva e o potencial de crescimento restante. Curvas abaixo de 25 graus são observadas; entre 25 e 45 graus, com esqueleto IMATURO, indica-se colete; acima de 45 a 50 graus, cirurgia. A paciente descrita tem 14 anos e menarca há dois anos — está portanto perto da maturidade esquelética, com Risser alto e velocidade de crescimento já em queda. Nessa situação o colete tem pouco a oferecer, porque ele age freando a progressão durante o crescimento, e 35 graus está abaixo do limiar cirúrgico. O que resta é acompanhar.",
+  "correta": "Observação com radiografias seriadas: curva abaixo do limiar cirúrgico em paciente já perto da maturidade.",
+  "incorretas": {
+   "A": "Alta é precipitada: curvas acima de 30 graus podem progredir mesmo depois da maturidade, cerca de 1 grau por ano na vida adulta.",
+   "C": "O colete atua durante o crescimento; com menarca há dois anos, o potencial restante é pequeno demais para justificá-lo.",
+   "D": "35 graus está bem abaixo do limiar de 45 a 50 graus que indica artrodese."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0025": {
+  "conceito": "Distinguir choque neurogênico de choque hemorrágico no politraumatizado é decisão de sala de emergência, e a diferença está no padrão. O HEMORRÁGICO tem taquicardia (resposta simpática), extremidades frias e pálidas (vasoconstrição) e débito urinário baixo (hipoperfusão renal). O NEUROGÊNICO tem o oposto: bradicardia, porque o tônus simpático cardíaco se perdeu e o vago age sem oposição; extremidades quentes e coradas, porque os vasos estão dilatados; e débito urinário preservado, porque a perfusão renal se mantém apesar da pressão baixa. Isso não dispensa procurar sangramento — os dois podem coexistir.",
+  "correta": "Bradicardia, débito urinário normal e extremidades quentes.",
+  "incorretas": {
+   "A": "A bradicardia está certa, mas débito baixo e extremidades frias apontam para hipovolemia.",
+   "B": "É o quadro do choque hemorrágico, e não do neurogênico.",
+   "D": "A taquicardia contradiz a perda do tônus simpático que define o choque neurogênico."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0026": {
+  "conceito": "O bíceps braquial recebe inervação de C5 e C6, pelo nervo musculocutâneo — e é por isso que dois níveis discais diferentes podem comprometê-lo. Na coluna cervical a raiz comprimida leva o número da vértebra INFERIOR: o disco C4-C5 comprime a raiz de C5 e o disco C5-C6 comprime a raiz de C6. Ambos, portanto, produzem fraqueza de flexão do cotovelo. O que os separa é o resto do exame: C5 dá fraqueza de abdução do ombro e alteração do reflexo bicipital, enquanto C6 dá alteração do reflexo braquiorradial e hipoestesia no polegar e no indicador.",
+  "correta": "C4-C5 ou C5-C6, os dois discos que comprimem as raízes de C5 e C6.",
+  "incorretas": {
+   "A": "O disco C3-C4 comprime a raiz de C4, que não inerva o bíceps.",
+   "C": "O disco C6-C7 comprime C7, raiz do tríceps, e não do bíceps.",
+   "D": "C7 e C8 não participam da inervação do bíceps braquial."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0027": {
+  "conceito": "A artéria de Adamkiewicz (arteria radicularis magna) é o principal reforço arterial da medula torácica baixa e lombar, e o cuidado com ela é um dos motivos pelos quais a abordagem anterior da coluna torácica se faz preferencialmente pela DIREITA. Ela nasce da aorta como ramo de uma artéria intercostal ou lombar, e na maioria das pessoas o faz entre T9 e T11 e do lado ESQUERDO — em cerca de 75% dos casos. Sua lesão ou ligadura pode produzir síndrome medular anterior, com paraplegia e perda de dor e temperatura, poupando a propriocepção.",
+  "correta": "Entre T9 e T11, e à esquerda.",
+  "incorretas": {
+   "A": "Erra o nível e o lado.",
+   "B": "O nível está certo, mas o lado predominante é o esquerdo.",
+   "C": "O lado está certo, mas a origem mais frequente é entre T9 e T11."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0028": {
+  "conceito": "O tríceps sural (gastrocnêmio e sóleo) faz a flexão plantar, comandada pelo nervo tibial a partir de S1. Como a força de flexão plantar é enorme, o teste sensível não é a resistência manual, e sim pedir ao paciente que faça elevação repetida do calcanhar apoiado num pé só: quem tem S1 comprometida se cansa muito antes. Acompanham a alteração do reflexo AQUILEU e a hipoestesia na borda lateral do pé e na planta. Vale reter a correspondência: L4 dorsiflexão e reflexo patelar, L5 extensão do hálux sem reflexo próprio, S1 flexão plantar e reflexo aquileu.",
+  "correta": "S1.",
+  "incorretas": {
+   "A": "L4 comanda a dorsiflexão do tornozelo e o reflexo patelar.",
+   "B": "L5 comanda a extensão do hálux e a abdução do quadril.",
+   "D": "S2 participa da flexão dos dedos e da função vesical e intestinal, não da flexão plantar principal."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0029": {
+  "conceito": "A estenose CENTRAL comprime o saco dural e, dentro dele, várias raízes ao mesmo tempo, de forma difusa e variável com a postura. O resultado clínico é uma queixa bilateral, mal delimitada, que não se encaixa em nenhum dermátomo — peso, cansaço, queimação e parestesia nas coxas e pernas, aparecendo ao caminhar e aliviando ao fletir a coluna. É diferente da estenose do recesso lateral ou do forame, que comprime UMA raiz e produz dor unilateral seguindo o dermátomo, muitas vezes presente também em repouso.",
+  "correta": "Bilaterais e sem respeitar o dermátomo.",
+  "incorretas": {
+   "A": "A bilateralidade está certa, mas o padrão dermatomérico é da compressão radicular isolada.",
+   "C": "Sintoma unilateral e dermatomérico é o da estenose foraminal ou de recesso lateral.",
+   "D": "A unilateralidade não corresponde à compressão difusa do saco dural."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0030": {
+  "conceito": "A tabela de Lonstein e Carlson cruza o tamanho da curva com o sinal de Risser para estimar o risco de progressão, e é o instrumento que orienta a frequência do acompanhamento. Para Risser 0 ou 1 — ou seja, muito crescimento pela frente — uma curva abaixo de 19 graus tem risco em torno de 22%, e uma curva entre 20 e 29 graus salta para cerca de 68%. Já com Risser 2 a 4, a mesma curva pequena cai para cerca de 1,6% e a curva de 20 a 29 graus para cerca de 23%. A lição prática: o que assusta não é o grau isolado, é o grau somado ao crescimento restante.",
+  "correta": "Cerca de 22%.",
+  "incorretas": {
+   "A": "18% não corresponde ao valor da tabela para essa combinação.",
+   "C": "26% também não é o valor tabelado.",
+   "D": "30% superestima o risco para curva abaixo de 19 graus."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0031": {
+  "conceito": "A doença de Scheuermann tem duas formas, e o ápice as distingue. A forma TORÁCICA, clássica e mais comum, tem ápice entre T7 e T9 e produz a cifose rígida que não se corrige em hiperextensão — daí a diferença para a cifose postural. A forma TORACOLOMBAR, com ápice entre T10 e L2, é menos frequente, dói mais, progride mais na vida adulta e tem pior prognóstico funcional. Em ambas o diagnóstico exige os critérios de Sörensen: acunhamento de pelo menos 5 graus em três vértebras adjacentes, com irregularidade de placas terminais e nódulos de Schmorl.",
+  "correta": "Entre T7 e T9.",
+  "incorretas": {
+   "A": "T5-T7 é mais alto que o ápice descrito para a forma torácica clássica.",
+   "C": "T9-T11 já se aproxima da transição, mais compatível com a forma toracolombar.",
+   "D": "T11-L1 é o território da forma toracolombar, que é a menos frequente."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0032": {
+  "conceito": "Brown-Séquard é a hemissecção medular, e o quadro se deduz do trajeto dos tratos. O corticoespinhal já cruzou lá em cima, no bulbo, e o funículo posterior sobe do mesmo lado até o bulbo — portanto déficit motor e perda de propriocepção, vibração e tato discriminativo IPSILATERAIS à lesão. Já o espinotalâmico cruza na própria medula, um ou dois níveis acima da entrada, de modo que a perda de dor e temperatura é CONTRALATERAL, começando alguns segmentos abaixo do nível da lesão. É a síndrome incompleta de MELHOR prognóstico, com recuperação funcional na grande maioria dos casos.",
+  "correta": "Déficit motor e proprioceptivo ipsilateral, com perda contralateral de dor e temperatura.",
+  "incorretas": {
+   "A": "Inverte os dois lados.",
+   "C": "A sensibilidade térmica e a dolorosa viajam juntas pelo espinotalâmico: não podem se dissociar entre os lados.",
+   "D": "Mesma objeção, e a propriocepção não se perde do lado contralateral."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0033": {
+  "conceito": "A raiz de C6 é comprimida pelo disco C5-C6 e tem três marcadores no exame: fraqueza do BÍCEPS (flexão do cotovelo) e dos extensores radiais do carpo, alteração do reflexo braquiorradial (estilorradial) e hipoestesia na face lateral do antebraço, no polegar e no indicador. Vale ter os vizinhos para comparar: C5 dá fraqueza de abdução do ombro e reflexo bicipital alterado, com sensibilidade na face lateral do braço; C7 dá fraqueza de tríceps, reflexo tricipital e dedo médio; C8 dá fraqueza dos flexores dos dedos e dedo mínimo.",
+  "correta": "Fraqueza do bíceps.",
+  "incorretas": {
+   "A": "O sinal de Hoffmann indica MIELOPATIA, ou seja, compressão da medula — não de uma raiz isolada.",
+   "C": "O dedo mínimo é território de C8.",
+   "D": "O reflexo tricipital corresponde a C7."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0034": {
+  "conceito": "A coluna cervical tem uma divisão de trabalho bem definida entre os segmentos altos e o resto. A articulação atlantoaxial (C1-C2) é responsável por cerca de METADE de toda a rotação axial do pescoço — algo em torno de 45 graus para cada lado —, graças ao pivô formado pelo processo odontoide e ao arranjo praticamente horizontal das facetas. A articulação occipitoatlantal responde por cerca de metade da flexoextensão (o movimento do \"sim\"), e a coluna cervical baixa (C3 a C7) reparte entre seus níveis o restante de todos os movimentos.",
+  "correta": "Aproximadamente 50%.",
+  "incorretas": {
+   "A": "10% subestima muito a contribuição do segmento mais rotatório da coluna.",
+   "B": "25% ainda fica bem abaixo do descrito.",
+   "D": "75% superestima: a coluna cervical baixa contribui com a outra metade."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0035": {
+  "conceito": "O choque neurogênico decorre da perda do tônus simpático nas lesões acima de T6, e o padrão hemodinâmico é o oposto do hemorrágico. A frequência cai — bradicardia — porque a inervação simpática do coração se perdeu e o vago age sem oposição. As extremidades ficam quentes e coradas, por vasodilatação. E o débito urinário se mantém, porque a perfusão renal é preservada apesar da hipotensão. Esse último dado é o mais útil na beira do leito: débito urinário normal em paciente hipotenso afasta hipovolemia significativa.",
+  "correta": "Bradicardia e débito urinário normal.",
+  "incorretas": {
+   "A": "É o padrão do choque hemorrágico.",
+   "B": "A taquicardia contradiz a perda do tônus simpático.",
+   "C": "A bradicardia está certa, mas débito urinário baixo indicaria hipoperfusão, ou seja, componente hipovolêmico."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0036": {
+  "conceito": "Na lombalgia aguda sem sinais de alarme, a radiografia inicial não muda conduta e ainda expõe o paciente a radiação e a achados incidentais que geram ansiedade e mais exames. Ela se justifica quando há bandeira vermelha — trauma significativo, idade acima de 50 ou abaixo de 20 anos, febre, perda de peso, história de câncer, uso de corticoide, déficit neurológico progressivo, síndrome da cauda equina — ou quando a dor NÃO cede no prazo esperado. O retorno do paciente pela mesma queixa dentro de poucas semanas é exatamente esse segundo caso: a evolução fugiu do curso benigno esperado.",
+  "correta": "Segunda visita ao médico em menos de 30 dias pelo mesmo motivo — a dor que não segue o curso esperado justifica a imagem.",
+  "incorretas": {
+   "A": "A intensidade da dor não prediz doença estrutural nem indica imagem.",
+   "B": "Parestesia em membros superiores não decorre de patologia lombar; se presente, o exame a pedir é da coluna cervical.",
+   "C": "História FAMILIAR de artrite reumatoide não é bandeira vermelha."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0037": {
+  "conceito": "A síndrome centromedular é a lesão medular incompleta mais frequente, e tem um cenário típico: idoso com espondilose cervical e canal já estreito que cai de altura própria e bate o queixo, sofrendo HIPEREXTENSÃO. A medula é comprimida entre os osteófitos anteriores e o ligamento amarelo pregueado posteriormente, e o dano se concentra na região central. Como as fibras do trato corticoespinhal destinadas aos membros superiores correm mais medialmente, o déficit é desproporcionalmente maior nos BRAÇOS e nas mãos do que nas pernas — o paciente anda, mas não usa as mãos.",
+  "correta": "Hiperextensão, com tetraparesia que afeta mais os membros superiores.",
+  "incorretas": {
+   "A": "O mecanismo é de hiperextensão, não de hiperflexão.",
+   "C": "Erra mecanismo e distribuição: o predomínio é nos membros superiores.",
+   "D": "O mecanismo está certo, mas o déficit predomina nos membros superiores."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0038": {
+  "conceito": "A lombalgia aguda sem sinais de alarme é autolimitada na grande maioria dos casos, e o tratamento tem três pilares: analgesia simples (paracetamol e anti-inflamatório, eventualmente relaxante muscular por poucos dias), orientação e retorno precoce à atividade. O repouso no leito é o ponto que mais mudou: hoje se sabe que ele PIORA o desfecho, e a recomendação é manter-se ativo dentro do tolerado. Quando o repouso é usado, deve ficar restrito a um a três dias no pico da dor, seguido de progressão para exercícios — que é justamente o que a alternativa descreve.",
+  "correta": "Repouso de 1 a 3 dias no máximo, com progressão para programa de exercícios físicos.",
+  "incorretas": {
+   "A": "Corticoide sistêmico não tem benefício demonstrado na lombalgia aguda inespecífica.",
+   "B": "Antidepressivos tricíclicos e opioides pertencem ao manejo da dor crônica ou refratária, e não ao quadro agudo inicial.",
+   "C": "Calor profundo tem efeito limitado, e afastar o paciente por duas semanas atrasa a recuperação em vez de acelerá-la."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0039": {
+  "conceito": "A raiz de C6, comprimida pelo disco C5-C6, tem três marcadores que aparecem juntos: fraqueza do bíceps braquial (flexão do cotovelo), fraqueza dos extensores radiais do carpo (extensão do punho) e diminuição do reflexo braquiorradial, também chamado estilorradial. Completa o quadro a hipoestesia na face lateral do antebraço, no polegar e no indicador. Guardar o pacote inteiro por raiz — músculo, reflexo e dermátomo — é o que permite responder qualquer variação dessas questões sem hesitar.",
+  "correta": "C6.",
+  "incorretas": {
+   "A": "C5 dá fraqueza de abdução do ombro e alteração do reflexo bicipital, com sensibilidade na face lateral do braço.",
+   "C": "C7 dá fraqueza de tríceps, alteração do reflexo tricipital e hipoestesia no dedo médio.",
+   "D": "C8 dá fraqueza dos flexores dos dedos e hipoestesia no dedo mínimo, sem reflexo próprio."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0040": {
+  "conceito": "Os fatores que predizem progressão da escoliose idiopática do adolescente antes da maturidade são todos ligados a crescimento restante e a sexo. Curvas maiores no momento do diagnóstico progridem mais; menor idade cronológica, Risser baixo e estado pré-menarca indicam mais crescimento pela frente; curvas duplas progridem mais que as únicas; e o SEXO FEMININO é fator independente — as meninas têm risco de progressão várias vezes maior que os meninos com a mesma curva e a mesma maturidade, motivo pelo qual a proporção entre os sexos, equilibrada nas curvas pequenas, se torna francamente feminina nas grandes.",
+  "correta": "Acometimento no sexo feminino.",
+  "incorretas": {
+   "A": "A história familiar aumenta a chance de TER escoliose, mas não é fator estabelecido de progressão da curva já existente.",
+   "B": "A escoliose idiopática torácica cursa tipicamente com HIPOcifose, e não com aumento da cifose.",
+   "D": "A relação altura-peso não figura entre os preditores estabelecidos de progressão."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0041": {
+  "conceito": "O mapa sensitivo da mão resolve praticamente todas as questões de radiculopatia cervical, e vale decorá-lo de uma vez: C6 no POLEGAR e no INDICADOR, C7 no dedo médio, C8 no anular e no mínimo. Some-se a isso a face lateral do braço para C5 e a face medial do antebraço para T1. No caso de C6, o dermátomo se completa pela face lateral do antebraço, e o quadro motor é fraqueza de bíceps e de extensores radiais do carpo, com alteração do reflexo braquiorradial. A raiz de C6 é comprimida pelo disco C5-C6.",
+  "correta": "Dedo indicador (junto com o polegar).",
+  "incorretas": {
+   "A": "O dedo anular é território de C8.",
+   "B": "O dedo médio corresponde a C7.",
+   "C": "O dedo mínimo corresponde a C8."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0042": {
+  "conceito": "O diferencial que se enfrenta na prática é com a cifose POSTURAL, e ele se resolve à beira do leito, sem exame nenhum: peça ao adolescente que faça hiperextensão em decúbito ventral, ou observe-o deitado sobre um coxim. A cifose postural CORRIGE — ela é flexível, as vértebras são normais e a curva é suave e de raio longo. A de Scheuermann NÃO corrige: é rígida, angular, de raio curto, e a radiografia em perfil confirma os critérios de Sörensen (acunhamento de 5 graus ou mais em três vértebras adjacentes, irregularidade de placas terminais, nódulos de Schmorl).",
+  "correta": "Cifose postural.",
+  "incorretas": {
+   "B": "A cifose congênita decorre de falha de formação ou de segmentação, aparece cedo, é angular e progride rápido, com risco neurológico — quadro bem distinto.",
+   "C": "A espondilite infecciosa cursa com dor intensa, sintomas constitucionais e destruição óssea.",
+   "D": "A fratura por compressão tem história de trauma ou fragilidade óssea e acomete uma vértebra, não três adjacentes com acunhamento progressivo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0043": {
+  "conceito": "A hemissecção medular produz um quadro que só faz sentido quando se lembra onde cada trato cruza. Corticoespinhal: cruza no bulbo, bem acima — déficit motor IPSILATERAL. Funículo posterior (propriocepção, vibração, tato discriminativo): sobe do mesmo lado até o bulbo — perda IPSILATERAL. Espinotalâmico (dor e temperatura): cruza na própria medula, um ou dois níveis acima da entrada — perda CONTRALATERAL, começando alguns segmentos abaixo do nível da lesão. É a síndrome incompleta de melhor prognóstico, com boa recuperação funcional na maioria dos casos.",
+  "correta": "Déficit motor e proprioceptivo ipsilateral, com perda contralateral de dor e temperatura.",
+  "incorretas": {
+   "A": "Inverte os lados.",
+   "C": "Dor e temperatura viajam juntas pelo espinotalâmico e não se dissociam entre os lados.",
+   "D": "Mesma objeção, e a propriocepção não se perde contralateralmente."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0044": {
+  "conceito": "O recesso lateral é o corredor entre a face posterior do corpo vertebral e do disco, à frente, e o processo articular SUPERIOR da vértebra de baixo, atrás — e é por ele que a raiz caminha antes de entrar no forame. Como o teto desse corredor é a faceta, a hipertrofia do processo articular superior, que é a expressão da artrose facetária, é a causa mais comum de estenose ali. O quadro é de dor radicular unilateral, muitas vezes presente em repouso e no leito, e que piora na extensão. Protrusão discal e ligamento amarelo espessado contribuem, mas em segundo plano.",
+  "correta": "Hipertrofia facetária, especificamente do processo articular superior, que forma a parede posterior do recesso.",
+  "incorretas": {
+   "A": "A espondilolistese estreita sobretudo o forame e o canal central, ao deslocar um corpo sobre o outro.",
+   "C": "A protrusão discal posterolateral contribui pela frente, mas não é a causa dominante da estenose de recesso.",
+   "D": "O ligamento amarelo hipertrofiado atua sobretudo na estenose CENTRAL, pela parte posterior do canal."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0045": {
+  "conceito": "Na espondilolistese ístmica do adulto, o segmento é instável e a musculatura é o único estabilizador que se pode treinar. Por isso o tratamento não cirúrgico eficaz é ativo: fortalecimento do transverso do abdome, dos multífidos e do assoalho pélvico, com controle motor lombopélvico, associado a alongamento de isquiotibiais (que costumam estar retraídos e aumentam a retroversão pélvica) e a orientação postural e de peso. Repouso prolongado e colete por tempo longo fazem o oposto: atrofiam justamente a musculatura de que o segmento depende.",
+  "correta": "Fortalecimento da musculatura estabilizadora do tronco.",
+  "incorretas": {
+   "A": "A manipulação não tem benefício demonstrado num segmento já instável, e pode agravar.",
+   "B": "Repouso prolongado atrofia a musculatura estabilizadora e piora o quadro.",
+   "C": "Colete por tempo prolongado tem o mesmo problema: substitui e enfraquece a musculatura que se quer treinar."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ }
+}
