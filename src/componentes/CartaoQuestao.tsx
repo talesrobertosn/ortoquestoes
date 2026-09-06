@@ -1,11 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import type { Letra, Questao, Resposta } from '../dados/tipos'
+import type { ComentarioIA, Letra, Questao, Resposta } from '../dados/tipos'
 import { ROTULO_DIFICULDADE } from '../dados/tipos'
 import { recurso } from '../config'
 import { href } from '../util/rotas'
 import { EstrelaCheia, Icone } from './Icone'
 import { ContribuirComentario } from './ContribuirComentario'
 import { usarEtiquetas } from '../estado/preferencias'
+import { usarComentarioIA } from '../dados/comentarios'
+import { usarIndice } from '../dados/usarIndice'
 
 interface Props {
   questao: Questao
@@ -78,6 +80,12 @@ export function CartaoQuestao({
   }
 
   const { mostrarEtiquetas, alternarEtiquetas } = usarEtiquetas()
+  const { indice } = usarIndice()
+  const { comentario: comentarioIA, carregando: carregandoIA } = usarComentarioIA(
+    questao,
+    indice,
+    mostrarGabarito,
+  )
 
   useEffect(() => {
     if (!atalhosAtivos) return
@@ -343,19 +351,24 @@ export function CartaoQuestao({
 
         {mostrarGabarito && (
           <div className="comentario">
-            <p className="comentario__titulo">COMENTÁRIO</p>
-            {questao.comentario ? (
-              <div style={{ whiteSpace: 'pre-wrap' }}>{questao.comentario}</div>
-            ) : (
-              <p className="comentario__pendente">
-                O comentário desta questão ainda está em preparo. O gabarito acima já é o oficial da
-                prova.
-              </p>
+            {questao.comentario && (
+              <div className="bloco-comentario">
+                <p className="comentario__titulo">COMENTÁRIO DO AUTOR</p>
+                <div style={{ whiteSpace: 'pre-wrap' }}>{questao.comentario}</div>
+              </div>
             )}
 
-            {(questao.comentariosComunidade?.length ?? 0) > 0 && (
-              <div style={{ marginTop: '1.25rem' }}>
-                <p className="comentario__titulo">DA COMUNIDADE</p>
+            <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} />
+
+            <div className="bloco-comentario">
+              <p className="comentario__titulo">COMENTÁRIOS DA COMUNIDADE</p>
+              {(questao.comentariosComunidade?.length ?? 0) === 0 ? (
+                <p className="comentario__pendente">
+                  Ninguém comentou esta ainda. Se você sabe por que a resposta é essa, escreva —
+                  pode mandar print do livro. Sai com o seu nome, a sua especialidade e o seu
+                  serviço, e ajuda quem cair nesta questão depois de você.
+                </p>
+              ) : (
                 <ul className="empilha" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   {questao.comentariosComunidade!.map((item, i) => (
                     <li key={i} className="contribuicao">
@@ -389,8 +402,14 @@ export function CartaoQuestao({
                     </li>
                   ))}
                 </ul>
-              </div>
-            )}
+              )}
+              {mostrarGabarito && (
+                <div className="linha nao-imprime" style={{ marginTop: '0.75rem' }}>
+                  <ContribuirComentario questao={questao} />
+                </div>
+              )}
+            </div>
+
             {questao.referencias.length > 0 && (
               <>
                 <p className="comentario__titulo" style={{ marginTop: '1rem' }}>
@@ -413,7 +432,6 @@ export function CartaoQuestao({
         )}
 
         <div className="linha nao-imprime" style={{ marginTop: '1rem' }}>
-          {mostrarGabarito && <ContribuirComentario questao={questao} />}
           <a className="botao botao--fantasma" href={href(`/contato?questao=${questao.id}`)}>
             Relatar erro nesta questão
           </a>
@@ -451,6 +469,87 @@ function Resultado({ questao, resposta }: { questao: Questao; resposta: Resposta
     <div className="resultado resultado--erro" role="status">
       <Icone nome="errado" />
       Você errou. Gabarito {questao.gabarito}, você marcou {resposta.escolhida}.
+    </div>
+  )
+}
+
+
+/**
+ * Comentário escrito por inteligência artificial. Fica em bloco próprio e
+ * anunciado como tal: um comentário errado num banco de questões é pior do que
+ * comentário nenhum, e quem lê precisa saber o que tem na mão para decidir se
+ * confere no livro antes de fixar aquilo.
+ */
+function ComentarioDaIA({
+  questao,
+  comentario,
+  carregando,
+}: {
+  questao: Questao
+  comentario: ComentarioIA | null
+  carregando: boolean
+}) {
+  const erradas = questao.alternativas
+    .map((a) => a.letra)
+    .filter((letra) => letra !== questao.gabarito && comentario?.incorretas[letra])
+
+  return (
+    <div className="bloco-comentario">
+      <p className="comentario__titulo">
+        COMENTÁRIO DA INTELIGÊNCIA ARTIFICIAL
+        {comentario &&
+          (comentario.conferido ? (
+            <span className="selo selo--conferido">conferido por médico</span>
+          ) : (
+            <span className="selo">não conferido</span>
+          ))}
+      </p>
+
+      {carregando && <p className="comentario__pendente">Carregando o comentário…</p>}
+
+      {!carregando && !comentario && (
+        <p className="comentario__pendente">
+          Esta questão ainda não tem comentário. O gabarito acima é o oficial da prova.
+        </p>
+      )}
+
+      {comentario && (
+        <>
+          {!comentario.conferido && (
+            <p className="aviso-ia">
+              Texto gerado por inteligência artificial e ainda não revisado por um médico. Serve
+              para orientar o raciocínio, não para substituir o livro. Achou erro?{' '}
+              <a href={href(`/contato?questao=${questao.id}`)}>avise</a>.
+            </p>
+          )}
+
+          {comentario.conceito && <p className="ia__conceito">{comentario.conceito}</p>}
+
+          {questao.gabarito && (
+            <div className="ia__item ia__item--certa">
+              <span className="ia__letra">{questao.gabarito}</span>
+              <div>
+                <strong>Correta.</strong> {comentario.correta}
+              </div>
+            </div>
+          )}
+
+          {erradas.map((letra) => (
+            <div className="ia__item" key={letra}>
+              <span className="ia__letra">{letra}</span>
+              <div>
+                <strong>Incorreta.</strong> {comentario.incorretas[letra]}
+              </div>
+            </div>
+          ))}
+
+          {comentario.referencias && comentario.referencias.length > 0 && (
+            <p className="meta" style={{ marginTop: '0.75rem' }}>
+              {comentario.referencias.join(' · ')}
+            </p>
+          )}
+        </>
+      )}
     </div>
   )
 }

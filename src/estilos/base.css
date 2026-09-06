@@ -944,6 +944,77 @@ textarea {
   color: var(--texto-2);
 }
 
+/* Os três comentários — do autor, da IA e da comunidade — moram em blocos
+   separados e nomeados. De onde vem o texto muda o peso que ele tem. */
+.bloco-comentario + .bloco-comentario {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: var(--borda);
+}
+
+.selo {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.0625rem 0.4rem;
+  border: var(--borda);
+  border-radius: 999px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--texto-2);
+  vertical-align: 1px;
+}
+.selo--conferido {
+  border-color: var(--acerto);
+  background: var(--acerto-veu);
+  color: var(--acerto);
+}
+
+.aviso-ia {
+  margin-bottom: 0.875rem;
+  padding: 0.625rem 0.75rem;
+  border-left: 3px solid var(--traco-forte);
+  background: var(--superficie-2);
+  border-radius: 0 var(--raio-pequeno) var(--raio-pequeno) 0;
+  font-size: var(--corpo-menor);
+  color: var(--texto-2);
+}
+
+.ia__conceito {
+  margin-bottom: 0.875rem;
+}
+
+.ia__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  padding: 0.5rem 0;
+  font-size: var(--corpo-menor);
+}
+.ia__item + .ia__item {
+  border-top: 1px dashed var(--traco);
+}
+
+.ia__letra {
+  flex: 0 0 auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  place-items: center;
+  border: var(--borda);
+  border-radius: var(--raio-pequeno);
+  font-family: var(--fonte-dados);
+  font-size: var(--meta);
+  font-weight: 700;
+  color: var(--texto-2);
+}
+.ia__item--certa .ia__letra {
+  border-color: var(--acerto);
+  background: var(--acerto-veu);
+  color: var(--acerto);
+}
+
 /* ---------- Progresso e mapa -------------------------------------------- */
 
 .barra-sessao {

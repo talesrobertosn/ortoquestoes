@@ -41,6 +41,27 @@ export interface ComentarioComunidade {
   data?: string | null
 }
 
+/**
+ * Comentário escrito por inteligência artificial: por que a certa está certa e
+ * por que cada uma das outras não está. Fica separado do comentário do autor e
+ * dos da comunidade de propósito — quem lê precisa saber de onde veio o texto
+ * para decidir quanto peso dar. Enquanto `conferido` for falso, a interface diz
+ * em letras claras que ninguém revisou aquilo.
+ */
+export interface ComentarioIA {
+  /** Conceito de fundo, quando ajuda a entender antes de ir alternativa a alternativa. */
+  conceito?: string | null
+  /** Por que a alternativa do gabarito é a correta. */
+  correta: string
+  /** Por que cada uma das outras está errada, indexado pela letra. */
+  incorretas: Partial<Record<Letra, string>>
+  referencias?: string[]
+  /** Quando o texto foi gerado, para saber o que reler quando a conduta mudar. */
+  geradoEm?: string | null
+  /** Conferido por médico. Enquanto falso, o aviso fica em destaque. */
+  conferido?: boolean
+}
+
 export interface Questao {
   id: string
   tema: string
@@ -53,6 +74,7 @@ export interface Questao {
   alternativas: Alternativa[]
   gabarito: Letra | null
   comentario: string | null
+  comentarioIA?: ComentarioIA | null
   comentariosComunidade?: ComentarioComunidade[]
   referencias: string[]
   anulada: boolean

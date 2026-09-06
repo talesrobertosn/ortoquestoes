@@ -362,6 +362,50 @@ checar(
   'a tecla E volta a mostrar sempre',
 )
 
+console.log('\n7h. Comentário da IA e comentário da comunidade')
+// Os dois blocos são separados e nomeados de propósito: quem lê precisa saber
+// de onde veio o texto para decidir quanto peso dar.
+const comComentario = await (await fetch(BASE + 'acervo/comentarios/mao.json')).json()
+const idComentado = Object.keys(comComentario)[0]
+await pagina.goto(BASE + `#/questao/${idComentado}`, { waitUntil: 'networkidle' })
+await pagina.waitForSelector('.alternativa')
+checar(
+  (await pagina.locator('.bloco-comentario').count()) === 0,
+  'nenhum comentário aparece antes de responder',
+)
+await pagina.keyboard.press('1')
+await pagina.keyboard.press('Enter')
+await pagina.waitForSelector('.resultado')
+await pagina.waitForSelector('.ia__item', { timeout: 5000 })
+checar(
+  (await pagina.locator('text=COMENTÁRIO DA INTELIGÊNCIA ARTIFICIAL').count()) === 1,
+  'o comentário da IA tem seção própria e nomeada',
+)
+checar(
+  (await pagina.locator('.aviso-ia').count()) === 1,
+  'o aviso de que o texto não foi conferido aparece',
+)
+const alternativasComentadas = await pagina.locator('.ia__item').count()
+const totalAlternativas = await pagina.locator('.alternativa').count()
+checar(
+  alternativasComentadas === totalAlternativas,
+  'toda alternativa recebe explicação, a certa e as erradas',
+  `${alternativasComentadas} de ${totalAlternativas}`,
+)
+checar(
+  (await pagina.locator('.ia__item--certa .ia__letra').innerText()) ===
+    (await pagina.locator('.alternativa--certa .alternativa__letra').innerText()),
+  'a alternativa marcada como correta no comentário é a do gabarito',
+)
+checar(
+  (await pagina.locator('text=COMENTÁRIOS DA COMUNIDADE').count()) === 1,
+  'o comentário da comunidade tem seção própria',
+)
+checar(
+  (await pagina.locator('.bloco-comentario button:has-text("Comentar esta questão")').count()) === 1,
+  'dá para mandar o seu comentário de dentro da seção da comunidade',
+)
+
 console.log('\n8. Largura de 320 pixels')
 await pagina.setViewportSize({ width: 320, height: 720 })
 await pagina.goto(BASE, { waitUntil: 'networkidle' })

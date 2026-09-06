@@ -26,6 +26,8 @@ from comum import (  # noqa: E402
     normalizar,
 )
 
+DIR_COMENTARIOS = DIR_ACERVO / "comentarios"
+
 
 def principal() -> int:
     taxonomia = carregar_taxonomia()
@@ -56,6 +58,11 @@ def principal() -> int:
             continue
         dados = ler_json(caminho, {"questoes": []}) or {"questoes": []}
         lista = dados.get("questoes", [])
+        # Os comentários moram fora do arquivo do tema; o filtro "só as
+        # comentadas" precisa saber quais questões têm um.
+        comentados = set(
+            ler_json(DIR_COMENTARIOS / f"{slug}.json", {}) or {}
+        )
         indice_tema = len(temas)
         temas.append(
             {
@@ -76,7 +83,11 @@ def principal() -> int:
                     "d": questao.get("dificuldade"),
                     "img": 1 if questao.get("imagens") else 0,
                     "an": 1 if questao.get("anulada") else 0,
-                    "c": 1 if questao.get("comentario") else 0,
+                    "c": 1
+                    if questao.get("comentario")
+                    or questao.get("comentarioIA")
+                    or questao["id"] in comentados
+                    else 0,
                 }
             )
             if questao.get("ano") and questao["ano"] not in anos:
