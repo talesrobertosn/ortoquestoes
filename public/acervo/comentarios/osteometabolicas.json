@@ -1,0 +1,843 @@
+{
+ "osteometabolicas-0001": {
+  "conceito": "A tuberculose vertebral (mal de Pott) chega pelo sangue e se instala onde a irrigação é terminal e lenta: a região anterior do corpo vertebral, junto à placa terminal. Dali ela mina o osso por baixo do ligamento longitudinal anterior, poupando o disco no início — o oposto da piogênica, que destrói o disco cedo. O segmento preferido é a transição toracolombar, e é a destruição da coluna anterior nessa altura que produz a cifose angular da doença.",
+  "correta": "Corpo vertebral na transição toracolombar: o corpo é o alvo porque é ali que está o osso esponjoso bem vascularizado, e a transição toracolombar é o segmento mais acometido.",
+  "incorretas": {
+   "A": "O arco posterior é acometido em uma minoria de casos, e a coluna torácica alta não é o segmento mais frequente.",
+   "B": "Acerta a estrutura e erra o segmento: a torácica alta é menos acometida do que a transição toracolombar.",
+   "C": "Erra as duas coisas ao mesmo tempo — o arco posterior é exceção, não regra."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0002": {
+  "conceito": "As duas osteoporoses primárias se separam pela velocidade da remodelação. A tipo I, pós-menopausa, é de alta remodelação: a queda do estrogênio solta o osteoclasto, o osso trabecular se perde rápido e o cálcio liberado aparece na urina — calciúria alta. A tipo II, senil, é de baixa remodelação: a atividade osteoclástica cai junto com a osteoblástica, a perda é lenta e cortical, e a calciúria permanece normal. Saber de qual das duas se trata muda o que se espera dos marcadores bioquímicos.",
+  "correta": "Diminuída e a calciúria normal: a osteoporose senil é a forma de baixa remodelação, sem liberação aumentada de cálcio para a urina.",
+  "incorretas": {
+   "B": "Atividade osteoclástica aumentada com calciúria normal é uma combinação incoerente — o cálcio reabsorvido precisa aparecer em algum lugar.",
+   "C": "Inverte a calciúria: com osteoclasto pouco ativo não há por que o cálcio urinário subir.",
+   "D": "Este é o perfil da osteoporose tipo I, pós-menopausa, de alta remodelação — não o da senil."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0003": {
+  "conceito": "No escorbuto falta vitamina C, e sem ela o osteoblasto não produz matriz colágena. O resultado é que a cartilagem calcifica normalmente mas ninguém constrói osso em cima dela: a zona de calcificação provisória se acumula, virando uma linha densa na metáfise dos ossos longos — a linha branca de Frankel. Ao lado dela fica uma faixa clara de matriz que não se formou (zona de Trümmerfeld) e, nas bordas, os esporões de Pelkan. Tudo isso acontece onde o crescimento é mais rápido: a metáfise dos ossos longos, sobretudo joelho e punho.",
+  "correta": "Ossos longos, com áreas de calcificação metafisária: é na metáfise que a cartilagem calcificada se acumula sem ser substituída por osso.",
+  "incorretas": {
+   "A": "Ossos chatos não têm placa de crescimento em atividade equivalente, e não é neles que os sinais aparecem.",
+   "B": "Acerta o osso e erra o local. A epífise no escorbuto mostra o sinal do anel de Wimberger — uma borda esclerótica ao redor de uma epífise rarefeita —, que é diferente da área de calcificação que a questão descreve, e não é o achado dominante.",
+   "C": "Erra o osso e o local ao mesmo tempo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0004": {
+  "conceito": "Os remédios da osteoporose se dividem em dois grupos por mecanismo. Os antirreabsortivos travam a perda: bifosfonatos, denosumabe, calcitonina, estrogênio. Os anabólicos constroem osso novo: teriparatida, abaloparatida, romosozumabe (que faz as duas coisas). O bifosfonato se liga à hidroxiapatita, é engolido pelo osteoclasto durante a reabsorção e o inutiliza por dentro, inibindo a farnesil-pirofosfato-sintase. Ele não manda ninguém formar osso — apenas impede que o osso existente seja retirado.",
+  "correta": "Antirreabsorção do tecido ósseo, por inibição da atividade osteoclástica.",
+  "incorretas": {
+   "A": "Inibir osteoclasto não é o mesmo que estimular formação. O ganho de densidade que aparece na densitometria vem de preencher o espaço de remodelação, não de anabolismo.",
+   "B": "Estimulação osteoblástica direta é o mecanismo dos anabólicos, como a teriparatida.",
+   "D": "Mistura os dois: o efeito é antirreabsortivo, mas por inibição do osteoclasto e não por estímulo do osteoblasto."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0005": {
+  "conceito": "A osteodistrofia renal começa por um rim que não excreta fosfato. O fosfato sobe, o cálcio cai por precipitação, e o rim doente também deixa de hidroxilar a vitamina D na posição 1-alfa, o que reduz a absorção intestinal de cálcio. Duas vias empurram o cálcio para baixo ao mesmo tempo, e a paratireoide responde com PTH alto — hiperparatireoidismo secundário. O padrão laboratorial resultante é fosfato alto, cálcio baixo ou normal e PTH alto.",
+  "correta": "Fosfato elevado e PTH elevado: a retenção de fosfato é o gatilho, e o PTH sobe como resposta à hipocalcemia.",
+  "incorretas": {
+   "A": "Fosfato baixo é o padrão da perda renal de fosfato (raquitismo hipofosfatêmico), não da insuficiência renal, e PTH normal contradiz o hiperparatireoidismo secundário.",
+   "B": "O PTH está certo, mas o fosfato baixo não: o rim insuficiente retém fosfato, não o perde.",
+   "C": "Com fosfato alto e cálcio baixo é impossível que o PTH permaneça normal."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0006": {
+  "conceito": "A tuberculose chega à vértebra pelas artérias segmentares, que irrigam sobretudo a porção anterior do corpo, junto à placa terminal. É ali que o bacilo se instala e começa a destruição. Do foco anterior a doença espalha por baixo do ligamento longitudinal anterior, atinge a vértebra vizinha e só depois compromete o disco — que é avascular e resiste, motivo pelo qual a altura discal costuma estar preservada nas radiografias iniciais, ao contrário da espondilodiscite piogênica. A perda da coluna anterior explica a cifose angular do mal de Pott.",
+  "correta": "Terço anterior do corpo vertebral, que é a região irrigada pelas artérias segmentares e onde o foco começa.",
+  "incorretas": {
+   "A": "O arco vertebral é acometido em uma minoria de casos e não é a apresentação típica.",
+   "B": "O disco é avascular e resiste no início; é justamente a preservação relativa dele que distingue a tuberculose da espondilodiscite piogênica.",
+   "C": "O terço médio pode ser atingido pela progressão, mas não é onde a doença começa."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0007": {
+  "conceito": "O bifosfonato tem afinidade química pela hidroxiapatita e fica depositado na superfície óssea. Quando o osteoclasto reabsorve aquele ponto, engole a droga junto e é envenenado por ela: os aminobifosfonatos bloqueiam a farnesil-pirofosfato-sintase, a célula perde a borda pregueada e entra em apoptose. É um mecanismo de freio, não de construção — daí o efeito rebote da suspensão do denosumabe não se repetir da mesma forma com bifosfonato, que permanece ligado ao osso por anos.",
+  "correta": "Inibe a ação dos osteoclastos.",
+  "incorretas": {
+   "B": "Inibir osteoblasto seria piorar a osteoporose, não tratá-la.",
+   "C": "Estimular osteoclasto é o oposto do efeito da droga.",
+   "D": "Estímulo osteoblástico é mecanismo de anabólico, como a teriparatida — não do bifosfonato."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0008": {
+  "conceito": "A classificação funcional da artrite reumatoide (Steinbrocker, adotada pelo Colégio Americano de Reumatologia) separa quatro classes pelo que o paciente ainda consegue fazer, em três domínios: autocuidado, atividade profissional e atividade de lazer. Classe I faz os três. Classe II faz autocuidado e trabalho, mas perde o lazer. Classe III só faz o autocuidado. Classe IV não faz nenhum dos três. A leitura é sempre do que sobrou, nunca do exame radiográfico.",
+  "correta": "Classe III: o paciente ainda cuida de si, mas já perdeu tanto a atividade profissional quanto a de lazer — está reduzido a pouca atividade diária.",
+  "incorretas": {
+   "A": "A classe I é a do paciente sem limitação funcional nenhuma nos três domínios.",
+   "B": "Na classe II a limitação é só no lazer; a atividade profissional está preservada.",
+   "D": "A classe IV é a incapacidade completa, incluindo o autocuidado — mais grave do que o quadro descrito."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0009": {
+  "conceito": "O estrogênio segura o osteoclasto por várias vias: aumenta a osteoprotegerina, reduz o RANKL e induz apoptose do osteoclasto. Quando ele cai abruptamente na menopausa, esse freio se solta de uma vez, e a remodelação dispara. Como o osso trabecular tem muito mais superfície por volume do que o cortical, é ele que se perde primeiro — daí as fraturas vertebrais e do rádio distal surgirem antes das do colo do fêmur. A perda é mais rápida nos primeiros cinco a dez anos após a menopausa.",
+  "correta": "Estrogênio: a queda dele é o que libera a atividade osteoclástica e produz a perda óssea acelerada.",
+  "incorretas": {
+   "A": "Tiroxina em excesso acelera a remodelação e causa osteoporose secundária, mas não é o hormônio que cai na menopausa.",
+   "C": "A calcitonina inibe o osteoclasto, mas seu papel fisiológico no adulto é pequeno e ela não é o que despenca na menopausa.",
+   "D": "A progesterona também cai, mas o efeito protetor sobre o osso e a associação com a perda abrupta são do estrogênio."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0010": {
+  "conceito": "Picada de carrapato remete à doença de Lyme, causada pela Borrelia e transmitida pelo Ixodes. A doença tem fases: primeiro o eritema migratório na pele, depois manifestações neurológicas e cardíacas, e tardiamente a artrite. A artrite de Lyme é oligoarticular e assimétrica, com predileção marcada por articulações grandes — e o joelho é de longe a mais acometida, tipicamente com derrame volumoso e dor desproporcionalmente pequena para o tamanho do derrame.",
+  "correta": "Joelho: é a articulação característica da artrite de Lyme, com derrame grande e sintomas relativamente discretos.",
+  "incorretas": {
+   "A": "O ombro pode ser acometido, mas não é a apresentação típica.",
+   "C": "O cotovelo entra no espectro de articulações grandes, porém bem atrás do joelho em frequência.",
+   "D": "O tornozelo também é possível, mas não é a articulação que caracteriza a doença."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0011": {
+  "conceito": "O raquitismo medicamentoso vem quase sempre de drogas que aceleram a destruição da vitamina D. Fenitoína, fenobarbital, carbamazepina e primidona induzem o citocromo P450 hepático, que converte a vitamina D e seus metabólitos em compostos inativos mais rápido do que o organismo repõe. O resultado é 25-OH-vitamina D baixa, cálcio baixo, PTH alto e mineralização deficiente — raquitismo na criança, osteomalácia no adulto. Por isso quem usa anticonvulsivante por tempo longo precisa de reposição.",
+  "correta": "Anticonvulsivantes, que induzem o P450 hepático e aceleram a inativação da vitamina D.",
+  "incorretas": {
+   "A": "Hipoglicemiantes orais não têm esse efeito sobre o metabolismo da vitamina D.",
+   "C": "Hormônio tireoidiano em excesso causa perda óssea por aumento da remodelação, e não raquitismo por falha de mineralização.",
+   "D": "Complexo vitamínico contém vitamina D — se algo, protege contra o raquitismo em vez de causá-lo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0012": {
+  "conceito": "A síndrome de Reiter é a forma clássica da artrite reativa: aparece semanas depois de uma infecção urogenital (Chlamydia) ou entérica (Shigella, Salmonella, Yersinia, Campylobacter), sem que o germe esteja na articulação. A tríade é conjuntivite, uretrite e artrite. O acometimento articular é oligoarticular, assimétrico e de predomínio nos membros inferiores, com entesite e dactilite; acomete sobretudo homens jovens e tem forte associação com o HLA-B27.",
+  "correta": "Sinovite assimétrica no homem — o padrão oligoarticular assimétrico de membros inferiores em homens jovens HLA-B27 positivos.",
+  "incorretas": {
+   "A": "Erra as duas características: a sinovite não é simétrica e a predominância não é feminina.",
+   "B": "Simetria é padrão de artrite reumatoide, não de artrite reativa.",
+   "C": "O padrão assimétrico está certo, mas o predomínio é masculino."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0013": {
+  "conceito": "A fratura vertebral osteoporótica é, em regra, estável e por compressão: a coluna posterior está íntegra, o osso é frágil mas o padrão não é explosivo. Por isso o tratamento é conservador na maioria — analgesia, mobilização precoce, órtese quando tolerada — e a cirurgia se reserva a duas situações: déficit neurológico e dor que não cede apesar do tratamento bem conduzido. O procedimento típico para a segunda é a vertebroplastia ou cifoplastia, cujo alvo é exatamente a dor.",
+  "correta": "Dor refratária ao tratamento conservador: é o que sobra como indicação quando não há déficit neurológico.",
+  "incorretas": {
+   "A": "Cifose torácica é comum no paciente osteoporótico e por si só não indica cirurgia — a decisão depende de sintoma, não da curva radiográfica.",
+   "B": "Fragmento no canal só pesa quando comprime e produz déficit. O que indica cirurgia nesses casos é o déficit neurológico, e não o achado de imagem isolado.",
+   "C": "Não tolerar a órtese muda o plano conservador, mas não é em si indicação de operar."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0014": {
+  "conceito": "A osteólise pós-traumática é a reabsorção progressiva de uma extremidade óssea depois de trauma único ou de microtraumas repetidos, com dor local e imagem de rarefação e perda de contorno cortical. O sítio clássico, e o que consolida a resposta, é a extremidade distal da clavícula — a chamada osteólise do levantador de peso, ligada à sobrecarga repetida da acromioclavicular. A sínfise púbica é o outro sítio descrito, também em atletas e após trauma pélvico.",
+  "correta": "Púbis e clavícula: é a única alternativa que contém a extremidade distal da clavícula, que é o sítio clássico da doença.",
+  "incorretas": {
+   "B": "Escápula e tornozelo não figuram entre os sítios descritos de osteólise pós-traumática.",
+   "C": "Trocanter maior e punho também não: a reabsorção pós-traumática não tem predileção por esses pontos.",
+   "D": "Cabeça do úmero e joelho remetem a osteonecrose, que é outra doença — infarto ósseo, e não reabsorção progressiva da extremidade."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0015": {
+  "conceito": "Os critérios maiores de Jones não têm o mesmo peso epidemiológico. Na criança com febre reumática aguda, a artrite é a manifestação mais comum (cerca de três em cada quatro), seguida da cardite (metade a dois terços) e da coreia de Sydenham (perto de um sexto). Os dois critérios cutâneos fecham a lista bem abaixo: o eritema marginado e os nódulos subcutâneos aparecem em menos de um em vinte casos. É por isso que o eritema, embora quase específico da doença, quase nunca é o que traz a criança ao consultório.",
+  "correta": "O eritema marginado é a manifestação mais rara — muito específico, porém presente em uma pequena minoria dos casos.",
+  "incorretas": {
+   "A": "A artrite é justamente a manifestação mais frequente: poliartrite migratória de grandes articulações.",
+   "B": "A coreia é incomum, mas ainda assim várias vezes mais frequente do que o eritema.",
+   "C": "A cardite aparece em cerca de metade dos casos e é a manifestação que determina o prognóstico."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0016": {
+  "conceito": "O disco intervertebral do adulto é avascular e não tem as enzimas proteolíticas que o piogênico usa para destruí-lo. O bacilo da tuberculose chega pelo sangue à porção anterior do corpo vertebral, prolifera ali e caminha por baixo do ligamento longitudinal anterior até a vértebra vizinha, contornando o disco em vez de atravessá-lo. Radiograficamente isso aparece como duas vértebras destruídas com a altura discal ainda razoável — o inverso da espondilodiscite piogênica, em que o disco some primeiro.",
+  "correta": "Os discos intervertebrais, que resistem por serem avasculares e por o bacilo não produzir as enzimas que degradam a matriz discal.",
+  "incorretas": {
+   "A": "O canal medular não é poupado: o abscesso frio, o tecido de granulação e a retropulsão óssea invadem o canal, e é essa invasão que produz a paraplegia de Pott.",
+   "B": "Os corpos vertebrais são o alvo principal da doença, não o que ela poupa.",
+   "D": "Os ligamentos longitudinais são justamente o caminho de disseminação: o abscesso descola o ligamento longitudinal anterior e escorre por baixo dele."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0017": {
+  "conceito": "A tuberculose osteoarticular segue a carga e a vascularização. A coluna vem em primeiro lugar, com cerca de metade dos casos, e depois vêm as duas grandes articulações que sustentam o peso do corpo: quadril e joelho. A sinovite tuberculosa é insidiosa, com derrame, atrofia muscular e dor noturna, e a radiografia mostra a tríade de Phemister — osteopenia periarticular, erosões marginais e estreitamento articular tardio, que é justamente o que a distingue da artrite piogênica, em que o espaço articular some cedo.",
+  "correta": "Joelho e quadril: depois da coluna, são as articulações mais acometidas.",
+  "incorretas": {
+   "B": "O quadril está certo, mas o ombro é bem menos acometido do que o joelho.",
+   "C": "O joelho está certo, mas o tornozelo não figura entre os sítios preferenciais.",
+   "D": "Nem tornozelo nem ombro estão entre as articulações mais frequentemente atingidas."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0018": {
+  "conceito": "Na anemia falciforme a medula trabalha em excesso a vida inteira para repor hemácias que se destroem cedo. A hiperplasia eritroide ocupa o espaço da medula, alarga os espaços medulares e afina as trabéculas, e isso aparece onde a medula vermelha persiste no adulto — sobretudo na coluna. O corpo vertebral fica rarefeito, com trabeculado grosseiro, e a placa terminal central afunda por infarto, produzindo a vértebra em H (vértebra de Lincoln), que é o achado mais característico da doença no esqueleto axial.",
+  "correta": "Na coluna, onde a medula vermelha persiste e onde surge a vértebra em H característica.",
+  "incorretas": {
+   "A": "A tíbia sofre com crises vaso-oclusivas e osteomielite, mas a rarefação por hiperplasia medular não predomina ali.",
+   "B": "A pelve tem medula ativa, mas não é onde a rarefação se manifesta de forma mais característica.",
+   "D": "O esterno também abriga medula vermelha, porém não é o sítio de expressão radiográfica dominante."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0019": {
+  "conceito": "O paciente renal crônico não tem apenas menos osso: tem osso de qualidade ruim. O hiperparatireoidismo secundário retira preferencialmente osso cortical, e é a perda cortical que compromete o colo do fêmur. Some-se a isso o risco de queda desse paciente — hipotensão pós-diálise, neuropatia, fraqueza muscular, distúrbio visual — e o resultado é uma incidência de fratura de quadril várias vezes maior do que na população geral, com mortalidade também maior depois dela.",
+  "correta": "No colo do fêmur: é a fratura com maior excesso de incidência documentado no renal crônico, somando perda cortical por PTH alto e risco elevado de queda.",
+  "incorretas": {
+   "B": "Fraturas vertebrais ocorrem, mas a coluna é osso predominantemente trabecular, e o padrão do hiperparatireoidismo secundário castiga mais o cortical.",
+   "C": "O colo do úmero não é sítio de fratura por fragilidade com incidência comparável.",
+   "D": "O rádio distal é osso cortical e também sofre, mas não é a fratura de maior incidência nesse grupo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0020": {
+  "conceito": "O PTH faz três coisas ao mesmo tempo: retira cálcio do osso, aumenta a reabsorção renal de cálcio e ativa a vitamina D no rim, o que aumenta a absorção intestinal. Todas empurram o cálcio para cima. No rim, porém, ele faz o contrário com o fosfato: inibe a reabsorção tubular e joga fosfato fora na urina. Daí o par que define o hiperparatireoidismo primário — cálcio alto e fosfato baixo. Guardar essa dissociação resolve praticamente todas as questões de bioquímica da paratireoide.",
+  "correta": "Hipercalcemia e hipofosfatemia: o PTH sobe o cálcio por três vias e elimina fosfato pela urina.",
+  "incorretas": {
+   "A": "Cálcio baixo não combina com excesso de PTH primário — se o cálcio estivesse baixo, o PTH alto seria resposta, não causa.",
+   "C": "Este é o padrão do hipoparatireoidismo (ou da insuficiência renal): cálcio baixo com fosfato alto.",
+   "D": "Fosfato alto contraria o efeito fosfatúrico do PTH; esse par aparece no hiperparatireoidismo secundário à doença renal, em que o rim não consegue excretar."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0021": {
+  "conceito": "A teriparatida é o fragmento 1-34 do PTH humano, e o segredo dela é o modo de administração. PTH em nível continuamente elevado reabsorve osso — é o que acontece no hiperparatireoidismo. O mesmo PTH em pulsos diários, ao contrário, estimula o osteoblasto e reduz sua apoptose, e o balanço vira anabólico: osso novo é formado antes que a reabsorção acompanhe. Por isso ela é o único grupo verdadeiramente formador, com a ressalva de que a janela terapêutica é limitada no tempo e não deve ser interrompida sem antirreabsortivo em seguida.",
+  "correta": "Ação anabólica com estimulação da atividade osteoblástica — o PTH em pulsos favorece o osteoblasto.",
+  "incorretas": {
+   "A": "Anabolismo por inibição do osteoclasto é uma contradição: inibir reabsorção preserva osso, não o forma.",
+   "C": "Antirreabsortivo com inibição do osteoclasto é a descrição do bifosfonato ou do denosumabe, não da teriparatida.",
+   "D": "Mistura os dois mecanismos: se o osteoblasto é estimulado, o efeito é anabólico e não antirreabsortivo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0022": {
+  "conceito": "A pergunta separa as doenças ósseas não neoplásicas em dois grupos: as que se corrigem tratando a causa e as que não. Hiperparatireoidismo se corrige removendo o adenoma; osteomalácia se corrige repondo vitamina D e fosfato; osteodistrofia renal melhora com controle do fosfato, análogos de vitamina D, calcimiméticos e, no limite, transplante — nos três, o osso volta a mineralizar e a fratura consolida. A doença de Paget é diferente: bifosfonato controla a atividade e a dor, mas o osso pagético permanece estruturalmente desorganizado, e é por isso que ela fica fora da lista.",
+  "correta": "Hiperparatireoidismo, osteomalácia e osteodistrofia renal — as três se corrigem tratando o distúrbio metabólico de base.",
+  "incorretas": {
+   "A": "Inclui a doença de Paget, que se controla mas não se corrige: o osso remodelado de forma anárquica permanece assim.",
+   "C": "Mesmo problema — a presença de Paget na lista é o que a invalida.",
+   "D": "Idem: duas condições corrigíveis acompanhadas de Paget, que não é."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0023": {
+  "conceito": "A questão testa quatro pontos independentes da imagem do ombro. O perfil axilar exige o braço abduzido, para que o feixe passe entre o tórax e o úmero. A série trauma tem três incidências: AP no plano da escápula, perfil em Y da escápula e axilar (ou uma substituta como a de Velpeau, quando a abdução é impossível). A incidência de Grashey é o AP verdadeiro da glenoumeral, obtido girando o paciente cerca de 30 a 45 graus para alinhar o feixe perpendicularmente ao plano escapular — é isso que abre a interlinha. E a tomografia, além da anatomia óssea, mostra a qualidade do osso, informação que pesa no planejamento da artroplastia.",
+  "correta": "A tomografia informa sobre o estoque ósseo e o grau de osteopenia, o que importa na hora de escolher e planejar um implante.",
+  "incorretas": {
+   "A": "É o contrário: o perfil axilar exige abdução do braço, não adução.",
+   "B": "A série trauma tem três incidências, não duas.",
+   "C": "A afirmação está invertida: o AP de Grashey é justamente o que fica perpendicular ao plano escapular, e é por isso que ele abre o espaço glenoumeral."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0024": {
+  "conceito": "As mucopolissacaridoses se dividem clinicamente em dois padrões articulares opostos. Hurler, Hunter e Scheie acumulam dermatan e heparan sulfato e produzem rigidez: contraturas progressivas, mão em garra, síndrome do túnel do carpo na criança. Morquio (tipo IV) acumula queratan sulfato, tem inteligência preservada e faz o oposto — frouxidão ligamentar generalizada, com displasia espondiloepifisária, genu valgo e, o que mais importa ao ortopedista, hipoplasia do odontoide com instabilidade atlantoaxial, motivo pelo qual toda criança com Morquio precisa ser avaliada antes de qualquer anestesia.",
+  "correta": "Morquio: é a mucopolissacaridose da frouxidão, e a instabilidade atlantoaxial é a consequência que muda a conduta.",
+  "incorretas": {
+   "A": "Hurler cursa com rigidez articular e contraturas, além de comprometimento neurológico grave.",
+   "B": "Scheie é a forma atenuada do mesmo defeito enzimático de Hurler, e também segue o padrão rígido.",
+   "C": "Hunter é ligado ao X e também apresenta rigidez articular, não frouxidão."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0025": {
+  "conceito": "A osteoporose senil (tipo II) é a de baixa remodelação e tem uma causa em cadeia: com o envelhecimento, a pele produz menos vitamina D, o rim a hidroxila menos e o intestino absorve menos cálcio. O cálcio sérico tende a cair, e a paratireoide responde com PTH cronicamente elevado — hiperparatireoidismo secundário leve. Esse é o traço bioquímico que a separa da tipo I, pós-menopausa, em que o PTH está normal ou até suprimido porque o cálcio vem sobrando do osso reabsorvido.",
+  "correta": "Paratormônio aumentado, por hiperparatireoidismo secundário à má absorção de cálcio e à deficiência de vitamina D do idoso.",
+  "incorretas": {
+   "A": "Calciúria aumentada é da tipo I: o cálcio retirado do osso em alta velocidade transborda na urina.",
+   "C": "Maior atividade osteoclástica também caracteriza a tipo I. A senil é de baixa remodelação.",
+   "D": "A senil acomete mais mulheres do que homens (cerca de duas para um). O que muda em relação à tipo I é que a proporção de homens aumenta, não que eles passem a predominar."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0026": {
+  "conceito": "A vitamina D no tratamento da osteoporose não é opcional: sem ela o cálcio ingerido não é absorvido, e o antirreabsortivo trabalha em um organismo que continua roubando cálcio do osso. A recomendação para adultos mais velhos com osteoporose é de pelo menos 800 UI ao dia, valor no qual os ensaios mostraram redução de fratura quando associado ao cálcio. Doses menores, das que constam de multivitamínicos comuns, não alcançam o nível sérico de 25-OH-vitamina D considerado suficiente.",
+  "correta": "700-800 UI ao dia é o piso recomendado para o tratamento da osteoporose no idoso.",
+  "incorretas": {
+   "B": "200-400 UI é dose de suplementação geral e fica abaixo do necessário para o tratamento da osteoporose.",
+   "C": "400-600 UI ainda é insuficiente para esse objetivo.",
+   "D": "200 UI ao dia é a menor das opções e a mais distante do que se recomenda."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0027": {
+  "conceito": "O mal de Pott engana pela lentidão. O bacilo se multiplica devagar, não produz pus com enzimas líticas nem desencadeia a resposta aguda de uma bactéria piogênica, e por isso a doença leva meses a anos até dar o sinal que traz o paciente ao médico — muitas vezes já a cifose angular ou o déficit neurológico. O que acompanha essa progressão arrastada são sintomas generalizados, de doença consumptiva: febre baixa vespertina, sudorese noturna, perda de peso e mal-estar. Dor local intensa e febre alta de início súbito apontam para infecção piogênica, não para tuberculose.",
+  "correta": "Sintomas generalizados e progressão indolente: quadro constitucional arrastado, que é a assinatura da tuberculose vertebral.",
+  "incorretas": {
+   "A": "Sintomas agudos não são a apresentação da tuberculose; começo súbito sugere germe piogênico.",
+   "C": "Os sintomas generalizados estão certos, mas a progressão rápida não: a doença leva meses.",
+   "D": "Erra as duas características ao mesmo tempo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0028": {
+  "conceito": "É a mesma pergunta que aparece antes no acervo, e a resposta tem a mesma base: o disco intervertebral do adulto é avascular, e o bacilo não dispõe das enzimas proteolíticas com que o germe piogênico o destrói. A tuberculose se instala na porção anterior do corpo vertebral, avança por baixo do ligamento longitudinal anterior e alcança a vértebra vizinha contornando o disco. O resultado radiográfico — duas vértebras arruinadas com espaço discal relativamente conservado — é o que separa a tuberculose da espondilodiscite piogênica na primeira olhada.",
+  "correta": "Os discos intervertebrais, poupados por serem avasculares e por o bacilo não degradar a matriz discal.",
+  "incorretas": {
+   "A": "O canal é invadido: abscesso frio, granulação e osso retropulsado comprimem a medula e produzem a paraplegia de Pott.",
+   "B": "Os corpos vertebrais são o alvo, não o poupado.",
+   "D": "Os ligamentos longitudinais servem de caminho: o abscesso descola o longitudinal anterior e escorre sob ele."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0029": {
+  "conceito": "A artrite idiopática juvenil poliarticular se divide pelo fator reumatoide, e a divisão importa porque as duas formas são doenças diferentes. A forma com FR positivo aparece em meninas mais velhas, na adolescência, e se comporta como a artrite reumatoide do adulto: acometimento simétrico das pequenas articulações das mãos e dos pés, nódulos reumatoides, erosões precoces e pior prognóstico articular. A forma com FR negativo é mais heterogênea, começa mais cedo e pode envolver articulações grandes de modo assimétrico.",
+  "correta": "Simétrico de pequenas articulações — o padrão da artrite reumatoide do adulto, que é como a forma FR positiva se comporta.",
+  "incorretas": {
+   "A": "Grandes articulações de forma simétrica não é o padrão da forma FR positiva.",
+   "C": "Assimetria em grandes articulações aponta para as formas oligoarticulares ou relacionadas à entesite, não para a poliarticular FR positiva.",
+   "D": "As pequenas articulações estão certas, mas o padrão dessa forma é simétrico, não assimétrico."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0030": {
+  "conceito": "O cotovelo é a articulação mais acometida do membro superior pela tuberculose, e o ponto de partida é a região proximal da ulna — o olécrano. O acervo confirma isso por dentro: outras duas questões perguntam a mesma coisa com outras palavras e respondem \"região proximal da ulna\". O quadro é de monoartrite arrastada, com aumento de volume, atrofia do tríceps e do bíceps e perda progressiva da extensão, porque o cotovelo inflamado se acomoda em flexão.",
+  "correta": "O olécrano, na região proximal da ulna, é o sítio típico da tuberculose do cotovelo.",
+  "incorretas": {
+   "A": "A tróclea faz parte do úmero distal e não é o ponto de início descrito.",
+   "B": "O capítulo também é úmero distal, e pelo mesmo motivo não é o sítio típico.",
+   "D": "A cabeça do rádio é acometida com frequência bem menor do que a ulna proximal."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0031": {
+  "conceito": "O raquitismo da osteodistrofia renal é raquitismo por vitamina D, mas por falha na ativação e não na ingestão. O rim doente não hidroxila a vitamina D na posição 1-alfa, e ao mesmo tempo não excreta fosfato. Fosfato alto e calcitriol baixo derrubam o cálcio, e a paratireoide responde com PTH elevado. O padrão bioquímico resultante — fosfato alto com PTH alto — é o que separa esse raquitismo do nutricional e do hipofosfatêmico, nos quais o fosfato está baixo.",
+  "correta": "Fosfato aumentado e PTH aumentado: retenção de fosfato pelo rim insuficiente e hiperparatireoidismo secundário.",
+  "incorretas": {
+   "A": "Fosfato baixo e PTH baixo não descreve doença metabólica óssea alguma nesse contexto.",
+   "B": "O PTH alto está certo, mas o fosfato baixo é do raquitismo hipofosfatêmico ou do nutricional, não da doença renal.",
+   "C": "Com fosfato alto e cálcio baixo, PTH normal ou baixo é impossível."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0032": {
+  "conceito": "A vértebra recebe sangue pelas artérias segmentares, que entram pela face anterolateral do corpo e formam uma rede terminal junto às placas terminais. É esse território de fluxo lento que recebe o bacilo por via hematogênica, e por isso a doença de Pott começa quase sempre na porção anterior do corpo vertebral, em posição paradiscal. A partir dali o processo escorre por baixo do ligamento longitudinal anterior. A destruição preferencial da coluna anterior, com a posterior preservada, é exatamente o que produz a cifose angular característica.",
+  "correta": "Na porção anterior do corpo vertebral, território das artérias segmentares e ponto de partida do foco.",
+  "incorretas": {
+   "A": "A lâmina faz parte do arco posterior, acometido em uma minoria dos casos.",
+   "B": "O pedículo também é arco posterior e não é o ponto inicial típico.",
+   "D": "A porção posterior do corpo pode ser atingida pela progressão, mas não é onde a doença começa — e se fosse, não haveria a cifose angular por colapso anterior."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0033": {
+  "conceito": "A artroplastia total do cotovelo tem sobrevida limitada porque o cotovelo é uma articulação de braço de alavanca longo: pequenas cargas na mão viram forças grandes no implante. O melhor resultado, portanto, é o do paciente que exige pouco da prótese. O reumatoide clássico é esse paciente: idoso, com demanda funcional baixa, com dor que domina o quadro e com osso e partes moles alterados pela doença, mas sem a distorção anatômica e a fibrose de um cotovelo já operado várias vezes.",
+  "correta": "Artrite reumatoide: baixa demanda funcional e ganho grande em dor e função — a melhor indicação e a de melhor sobrevida do implante.",
+  "incorretas": {
+   "B": "Doença neurológica com perda de sensibilidade protetora leva à articulação neuropática e é contraindicação, não indicação: o paciente sobrecarrega o implante sem perceber.",
+   "C": "A sequela pós-traumática costuma ter osso deformado, cicatriz e demanda maior, e apresenta índices de complicação e soltura mais altos.",
+   "D": "Idade abaixo de 50 anos joga contra: mais anos de uso e mais exigência sobre uma prótese de sobrevida limitada."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0034": {
+  "conceito": "A divisão que a questão cobra é simples: fator genético ou biológico é aquele que a pessoa não escolhe — sexo, idade, raça, herança, doença de base, momento da menopausa. Fator comportamental é o que depende de conduta — tabagismo, álcool, sedentarismo, alimentação. A estratégia de resposta, então, não é decorar listas: é varrer cada alternativa procurando qualquer hábito. Encontrou hábito, a alternativa está fora.",
+  "correta": "Menopausa precoce, raça branca e osteogênese imperfeita: os três são condições do próprio organismo, nenhum é escolha de conduta.",
+  "incorretas": {
+   "B": "Alcoolismo é comportamento.",
+   "C": "Alcoolismo e sedentarismo são ambos comportamentais.",
+   "D": "Sedentarismo e tabagismo são comportamentais, embora a osteogênese imperfeita seja genética.",
+   "E": "O tabagismo é comportamental e derruba a alternativa."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0035": {
+  "conceito": "É a mesma divisão da questão anterior, lida ao contrário: aqui só podem entrar hábitos. A importância prática dessa separação é que os fatores comportamentais são os únicos sobre os quais a consulta pode agir — parar de fumar, reduzir álcool, corrigir a ingestão de cálcio e proteína, sair do sedentarismo com exercício de impacto e de resistência. A varredura é a mesma: encontrou qualquer característica que a pessoa não escolheu, a alternativa está fora.",
+  "correta": "Má nutrição, sedentarismo e alcoolismo: os três são hábitos modificáveis.",
+  "incorretas": {
+   "B": "Raça branca é característica biológica, não comportamento.",
+   "C": "Raça branca e escoliose não são hábitos.",
+   "D": "Raça branca, escoliose e história familiar são todos não comportamentais.",
+   "E": "Sedentarismo e alcoolismo são comportamentais, mas história familiar é herança."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0036": {
+  "conceito": "Os critérios de Altman para osteoartrite vêm em três conjuntos: clínico, clínico com laboratório e clínico com radiografia. Antes de discutir o valor de corte de cada item, vale classificar a alternativa: VHS e fator reumatoide são laboratório, estreitamento e osteófito são radiografia, e o que sobra — rigidez, crepitação, dor à palpação óssea, aumento ósseo, temperatura da articulação — é o conjunto clínico. Ressalva: a formulação original desse item fala em ausência de calor palpável, ou seja, a articulação artrósica não fica quente; a alternativa aqui está redigida de outro jeito, e o que a sustenta é a eliminação das demais por categoria e por valor de corte.",
+  "correta": "É o único item que pertence ao conjunto clínico e cujo valor de corte não está invertido nas demais alternativas.",
+  "incorretas": {
+   "A": "VHS é critério laboratorial — e o valor de corte é abaixo de 40 mm/h, justamente porque a artrose não é doença inflamatória sistêmica.",
+   "B": "Fator reumatoide também é laboratorial, e o critério é abaixo de 1:40.",
+   "C": "Rigidez é item clínico, mas o critério é de menos de 30 minutos: rigidez matinal prolongada aponta para artrite inflamatória, não para artrose.",
+   "E": "Estreitamento é achado radiográfico, e portanto do conjunto radiográfico."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0037": {
+  "conceito": "A esclerostina é produzida pelo osteócito e funciona como freio do osso: ela bloqueia a via Wnt e, com isso, impede o osteoblasto de formar. O romosozumabe é um anticorpo monoclonal contra a esclerostina — tirar o freio é o mecanismo. O efeito resultante é duplo e incomum: a formação aumenta e a reabsorção diminui ao mesmo tempo, o que nenhum outro medicamento faz. A questão pergunta o mecanismo, e mecanismo é o alvo molecular, não o efeito observado.",
+  "correta": "Neutralizar os efeitos da esclerostina — é o alvo do anticorpo, e dele decorrem os demais efeitos.",
+  "incorretas": {
+   "A": "Estimular a remodelação é o oposto: o romosozumabe desacopla formação e reabsorção, aumentando uma e reduzindo a outra.",
+   "B": "A inibição da reabsorção é uma das consequências do bloqueio da esclerostina, mas não é o mecanismo — e descrita sozinha, confunde a droga com um antirreabsortivo.",
+   "C": "O aumento da atividade osteoblástica também é consequência, não mecanismo, e igualmente descreve só metade do efeito."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0038": {
+  "conceito": "A tuberculose osteoarticular concentra-se onde há osso esponjoso bem irrigado e carga: a coluna responde por cerca de metade dos casos e, fora dela, no esqueleto apendicular, quadril e joelho lideram. A apresentação é uma monoartrite arrastada, com derrame, atrofia da coxa e dor noturna em paciente com sintomas constitucionais. A radiografia mostra a tríade de Phemister — osteopenia periarticular, erosões marginais e redução tardia do espaço articular —, e é o caráter tardio dessa redução que a diferencia da artrite piogênica.",
+  "correta": "Quadril e joelho, as duas grandes articulações de carga, são os sítios apendiculares mais acometidos.",
+  "incorretas": {
+   "A": "Ombro e cotovelo são acometidos, mas com frequência bem menor.",
+   "B": "Punho e mão entram no espectro (a espina ventosa da criança, por exemplo), sem serem os mais frequentes.",
+   "D": "Tornozelo e pé são sítios incomuns de tuberculose osteoarticular."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0039": {
+  "conceito": "Vale fixar a divisão inteira de uma vez. Antirreabsortivos: bifosfonatos (alendronato, risedronato, ibandronato, ácido zoledrônico), denosumabe, moduladores do receptor de estrogênio e calcitonina. Anabólicos: teriparatida e abaloparatida. E o romosozumabe, que é caso à parte — anticorpo antiesclerostina, com efeito duplo, aumentando formação e reduzindo reabsorção. A questão pede uma dupla exclusivamente antirreabsortiva, e a única que não traz nenhum dos outros dois grupos é a do ácido zoledrônico com o denosumabe.",
+  "correta": "Ácido zoledrônico e denosumabe: bifosfonato intravenoso e anticorpo anti-RANKL, ambos puramente antirreabsortivos.",
+  "incorretas": {
+   "A": "O risedronato é antirreabsortivo, mas a teriparatida é anabólica.",
+   "B": "O ibandronato é antirreabsortivo, mas o romosozumabe não pertence a esse grupo.",
+   "C": "O denosumabe é antirreabsortivo; o romosozumabe, de novo, não é."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0040": {
+  "conceito": "A tuberculose osteoarticular é quase sempre secundária: o bacilo chega ao osso por via hematogênica, a partir de um foco pulmonar que pode estar ativo ou já cicatrizado. Por isso a radiografia de tórax faz parte da investigação de todo caso suspeito, e em cerca de metade dos pacientes ela mostra alteração compatível com tuberculose pulmonar, atual ou pregressa. O corolário prático é o que mais importa: nos outros cerca de 50%, o tórax é normal — e tórax limpo não afasta tuberculose do esqueleto.",
+  "correta": "Aproximadamente 50%: cerca de metade dos pacientes com tuberculose óssea mostra alteração pulmonar compatível.",
+  "incorretas": {
+   "A": "10% subestima muito a associação e sugeriria que a forma óssea é quase sempre isolada.",
+   "B": "30% também fica abaixo do que as séries descrevem.",
+   "D": "70% superestima: se fosse assim, o tórax normal praticamente excluiria o diagnóstico, o que não acontece."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0041": {
+  "conceito": "Entre os medicamentos da osteoporose, o que forma osso novo é a teriparatida (PTH 1-34), administrada em injeção diária — é o pulso, e não o nível contínuo, que produz o efeito anabólico. O uso é limitado a 24 meses ao longo da vida, restrição que vem dos estudos de toxicidade em ratos, que mostraram osteossarcoma com exposição prolongada. Terminado esse período, o ganho se perde se nada for feito: é obrigatório sequenciar com um antirreabsortivo para consolidar o osso formado.",
+  "correta": "Teriparatida, com tempo máximo de 24 meses de uso.",
+  "incorretas": {
+   "A": "A droga está certa, mas 12 meses é metade do período autorizado.",
+   "C": "O ácido zoledrônico é antirreabsortivo, não formador de osso.",
+   "D": "Mesmo problema: o ácido zoledrônico não aumenta a formação óssea, e o tempo citado não corresponde a essa lógica."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0042": {
+  "conceito": "O leite materno é o melhor alimento do lactente em quase tudo, menos em vitamina D: o teor é baixo e não cobre a necessidade diária. A criança amamentada exclusivamente, sem suplementação e com pouca exposição solar, é justamente o perfil clássico do raquitismo nutricional — risco maior ainda em pele mais pigmentada, em latitudes de pouco sol e quando a mãe também tem deficiência. A prevenção é simples e barata: 400 UI de vitamina D ao dia desde os primeiros dias de vida.",
+  "correta": "A amamentação materna exclusiva é fator de risco, porque o leite humano tem pouca vitamina D e a suplementação de 400 UI/dia é necessária.",
+  "incorretas": {
+   "A": "O pico de incidência é mais precoce, concentrado nos primeiros dezoito meses de vida — a faixa citada começa tarde demais.",
+   "C": "100 UI ao dia é muito pouco: a recomendação de prevenção no lactente é de 400 UI.",
+   "D": "A doença é definida pela deficiência de vitamina D; dizer que o consumo não influi contradiz o próprio diagnóstico."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0043": {
+  "conceito": "A osteoporose transitória do quadril é edema de medula óssea, e edema significa água. Na ressonância isso aparece com sinal baixo em T1 e sinal alto em T2, e fica muito mais evidente nas sequências que suprimem a gordura (STIR ou T2 com saturação), porque sem o brilho da gordura o único sinal alto que sobra é o da água. O padrão é difuso: toma a cabeça, o colo e às vezes a região intertrocantérica, sem linha de demarcação. É isso que a separa da osteonecrose, em que o edema cerca uma lesão subcondral focal delimitada por uma linha serpiginosa.",
+  "correta": "Edema acentuado pela técnica de supressão de gordura — é ela que faz o edema saltar aos olhos.",
+  "incorretas": {
+   "B": "Em T1 o edema tem sinal BAIXO. Alto sinal em T1 é gordura, ou seja, medula normal.",
+   "C": "O edema não se limita à região subcapital: estende-se pelo colo e frequentemente além dele.",
+   "D": "Edema focal na área de carga da cabeça femoral, com linha de delimitação, é a descrição da osteonecrose — e é justamente o diagnóstico diferencial a afastar."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0044": {
+  "conceito": "Vale ter as quatro linhagens claras. A célula osteoprogenitora, de origem mesenquimal, é a reserva que se diferencia em osteoblasto. O osteoblasto sintetiza a matriz e a mineraliza. O osteócito é o osteoblasto que ficou aprisionado na matriz e passou a funcionar como sensor mecânico, comandando onde remodelar. O osteoclasto é o único de origem hematopoiética, vem da linhagem dos monócitos, é multinucleado e possui a borda pregueada com bomba de prótons e catepsina K — a única maquinaria capaz de dissolver mineral e digerir colágeno.",
+  "correta": "Os osteoclastos: célula multinucleada de origem hematopoiética, a única com a maquinaria de reabsorção.",
+  "incorretas": {
+   "A": "As células osteoprogenitoras são a reserva que origina o osteoblasto; não reabsorvem nada.",
+   "B": "O osteoblasto forma osso. Ele participa da reabsorção apenas indiretamente, sinalizando ao osteoclasto pelo sistema RANK/RANKL/osteoprotegerina.",
+   "C": "O osteócito percebe carga e microdano e dirige a remodelação, mas quem executa a reabsorção é o osteoclasto."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0045": {
+  "conceito": "O diagnóstico da artrite idiopática juvenil é clínico e de exclusão: artrite persistente por pelo menos seis semanas, em criança com menos de 16 anos, depois de afastadas infecção, neoplasia e outras doenças reumáticas. Fator reumatoide e FAN entram depois, e não para diagnosticar: o FR separa subtipos da forma poliarticular e o FAN identifica quem tem maior risco de uveíte anterior crônica e precisa de rastreamento oftalmológico regular. Nenhum dos dois confirma nem afasta a doença.",
+  "correta": "Fator reumatoide e FAN não servem para diagnosticar: são exames de classificação e de estratificação de risco, e o diagnóstico continua clínico.",
+  "incorretas": {
+   "A": "O critério de duração é de seis semanas, não três.",
+   "B": "A forma mais comum é a oligoarticular, e a poliarticular com fator reumatoide positivo é justamente a minoria.",
+   "C": "Na forma oligoarticular a articulação mais acometida é o joelho. Acometimento do quadril logo no início inclusive fala contra esse diagnóstico."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0046": {
+  "alerta": "A literatura que conheço descreve dois grupos para a osteoporose transitória do quadril: gestantes no terceiro trimestre e homens de meia-idade — e, em número absoluto, a maioria das séries traz mais homens do que gestantes, em proporção próxima de três para um. Se o critério da pergunta for frequência, a alternativa C tem tanto respaldo quanto a A. O que é seguro, e vale guardar, é que esses dois são os grupos afetados; qual deles é o maior depende da série citada.",
+  "conceito": "A osteoporose transitória do quadril é um edema de medula óssea autolimitado, com dor de início relativamente rápido, claudicação e limitação da rotação, sem trauma que a explique. A radiografia inicial é normal e só depois de semanas mostra rarefação da cabeça femoral; quem faz o diagnóstico é a ressonância, com edema difuso de cabeça e colo, sem linha de delimitação e sem lesão subcondral focal — o que a separa da osteonecrose. Resolve sozinha em seis a doze meses, e o tratamento é proteção de carga e analgesia. Na gestante, a associação com o terceiro trimestre é clássica e costuma acometer o quadril esquerdo.",
+  "correta": "A resposta oficial são as gestantes no terceiro trimestre, associação clássica da doença.",
+  "incorretas": {
+   "B": "Mulheres acima de 45 anos fora da gestação não constituem o grupo descrito para essa condição.",
+   "C": "Homens de meia-idade são, na verdade, o outro grupo clássico da doença — veja o aviso acima.",
+   "D": "Homens jovens não são o perfil descrito; a faixa citada na literatura é a de meia-idade."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0047": {
+  "conceito": "A articulação de Charcot é a articulação que perdeu a sensibilidade protetora e continua sendo usada. Sem dor para limitar a carga, microtraumas se somam e a destruição corre solta, produzindo a imagem desproporcional ao sintoma que é a marca da doença: destruição, detritos intra-articulares, desorganização, deslocamento e aumento de densidade. No quadril isso se traduz em fragmentação da cabeça femoral, com fragmentos soltos e perda completa do contorno articular — muito além do que qualquer artrose produziria.",
+  "correta": "Fragmentação da cabeça femoral, com detritos e desorganização — a destruição exuberante e desproporcional aos sintomas.",
+  "incorretas": {
+   "B": "Neuroartropatia pode ter padrão hipertrófico, com osteófitos exuberantes, mas \"megacabeça\" não é a descrição radiográfica do quadril de Charcot; ali predomina a destruição.",
+   "C": "Protrusão acetabular remete a artrite reumatoide, doença de Paget e osteomalácia, não a articulação neuropática.",
+   "D": "Alterações discretas são o oposto do quadro: o que chama atenção no Charcot é justamente a destruição desproporcional."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0048": {
+  "conceito": "A separação de Riggs e Melton em dois tipos é útil porque cada um tem um osso alvo e uma velocidade. A tipo I, pós-menopausa, é rápida e ataca o osso trabecular: fratura vertebral por compressão e fratura do rádio distal, entre os 50 e os 65 anos, com alta remodelação. A tipo II, senil, é lenta e atinge cortical e trabecular, com predomínio da perda cortical: fratura do colo do fêmur e do úmero proximal, depois dos 70 anos, com número e função reduzidos de osteoblastos e hiperparatireoidismo secundário leve.",
+  "correta": "Perda óssea lenta do osso cortical com diminuição do número de osteoblastos — o perfil de baixa remodelação da osteoporose senil.",
+  "incorretas": {
+   "A": "Perda acelerada de osso medular é da tipo I, e aumento de osteoblastos não caracteriza nenhuma das duas.",
+   "B": "A lentidão está certa, mas o osso predominantemente atingido na tipo II é o cortical, não o medular.",
+   "C": "Perda acelerada não é da tipo II, e o número de osteoblastos nela está reduzido, não aumentado."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0049": {
+  "conceito": "A tuberculose osteoarticular responde por uma fração pequena de todos os casos de tuberculose, mas dentro dela a distribuição é bem desigual: cerca de metade é vertebral. Depois da coluna vêm quadril e joelho, e só então os sítios menos comuns. Vale saber isso porque muda a suspeita: dor lombar ou torácica arrastada, com sintomas constitucionais, em paciente de área endêmica, é doença de Pott até prova em contrário — e o exame que se pede é a ressonância, não a radiografia, que só mostra o que já foi destruído.",
+  "correta": "A espondilite tuberculosa (doença de Pott), responsável por cerca de metade dos casos de tuberculose osteoarticular.",
+  "incorretas": {
+   "A": "A artrite tuberculosa de médias e grandes articulações existe — quadril e joelho, sobretudo —, mas vem depois da coluna em frequência. E ela não é \"séptica\" no sentido piogênico: é insidiosa.",
+   "B": "A tenossinovite tuberculosa é apresentação rara, tipicamente no punho e na bainha dos flexores, com os corpos arroz.",
+   "C": "Osteomielite tuberculosa de ossos longos, sem articulação vizinha, é forma incomum."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0050": {
+  "conceito": "No pé, a tuberculose prefere o osso esponjoso de maior volume e maior carga, e por isso o calcâneo é o tarso mais acometido, seguido pelo tálus. A apresentação é arrastada — dor, aumento de volume e às vezes fístula —, e a radiografia mostra área lítica de contorno mal definido com osteopenia ao redor, com pouca reação periosteal. É a escassez de reação óssea, em contraste com a destruição, que sugere tuberculose em vez de osteomielite piogênica.",
+  "correta": "Tálus e calcâneo: os dois maiores ossos do tarso, e os mais acometidos quando a lesão do pé é isolada.",
+  "incorretas": {
+   "A": "O tálus está certo, mas o navicular é sítio menos frequente do que o calcâneo.",
+   "C": "O calcâneo está certo, e o cuboide é acometimento incomum.",
+   "D": "Navicular e cuboide são os dois menos representados entre as opções."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0051": {
+  "conceito": "Os dois números desta questão contam uma história só: extravasamento de cimento é quase a regra, e consequência clínica é quase exceção. O cimento escapa por veias, pelo disco, pelas fissuras da vértebra fraturada, e a tomografia de controle o encontra na imensa maioria dos casos — a maior parte sem sintoma nenhum. Complicação neurológica, quando o cimento entra no canal ou no forame, é da ordem de um em mil. Daí a conduta na prática: injeção sob fluoroscopia, cimento de viscosidade alta, volume pequeno e vigilância do trajeto venoso.",
+  "correta": "Extravasamento em cerca de 90% dos pacientes, com complicação neurológica em torno de 0,1% — muito vazamento, quase nenhuma consequência.",
+  "incorretas": {
+   "A": "Subestima o extravasamento: ele é achado quase universal quando procurado com tomografia, e não algo que ocorra em um décimo dos casos.",
+   "B": "Erra nos dois números: pouco extravasamento e uma taxa de complicação neurológica cem vezes maior do que a real.",
+   "D": "O extravasamento está certo, mas complicação neurológica em 10% dos casos tornaria o procedimento inaceitável — e não é o que se observa."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0052": {
+  "conceito": "O FRAX existe porque densidade óssea sozinha explica só parte do risco de fratura. Ele combina idade, sexo, peso e altura (de onde sai o IMC), fratura prévia, história de fratura de quadril nos pais, tabagismo, corticoide, artrite reumatoide, osteoporose secundária e álcool, com ou sem a densidade do colo do fêmur, e devolve duas probabilidades em dez anos: a de fratura osteoporótica maior e a de fratura de quadril. O horizonte de dez anos é o que permite comparar o risco com o limiar de tratamento.",
+  "correta": "IMC, com probabilidade calculada para dez anos.",
+  "incorretas": {
+   "A": "O dado antropométrico está certo, mas o horizonte do FRAX é de dez anos, não de cinco.",
+   "C": "O FRAX não usa escore Z: quando a densitometria entra, é o T-score do colo femoral. E o prazo é de dez anos.",
+   "D": "O prazo está certo, mas o escore Z continua sendo o dado errado — ele compara com a mesma faixa etária e serve a outro propósito."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0053": {
+  "conceito": "A forma oligoarticular é a mais comum da artrite idiopática juvenil e tem um perfil bem definido: menina pequena, entre dois e quatro anos, com quatro ou menos articulações acometidas — quase sempre o joelho —, FAN positivo com frequência e, o que mais importa, risco alto de uveíte anterior crônica. Essa uveíte é silenciosa: não dói, não avermelha o olho e pode levar à perda visual antes de qualquer queixa. Por isso toda criança com essa forma precisa de exame oftalmológico com lâmpada de fenda em intervalos regulares.",
+  "correta": "Meninas entre 2 e 4 anos, o perfil característico da forma oligoarticular.",
+  "incorretas": {
+   "A": "O sexo está certo, mas a faixa é mais tardia do que 1 a 2 anos.",
+   "C": "O predomínio é feminino, e a faixa etária também não corresponde.",
+   "D": "A faixa etária está certa, mas o predomínio é de meninas."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0054": {
+  "conceito": "A osteopetrose é a falha do osteoclasto em reabsorver: o osso se acumula, fica denso e, paradoxalmente, quebradiço. As formas se separam pela herança e pela gravidade. A maligna (infantil) é autossômica recessiva: manifesta-se no primeiro ano com pancitopenia por obliteração da medula, hepatoesplenomegalia compensatória, cegueira e surdez por compressão de nervos cranianos nos forames estreitados, e é fatal sem transplante de medula. A benigna (tarda, de Albers-Schönberg) é autossômica dominante, aparece no adulto e costuma ser descoberta por fratura ou achado radiográfico.",
+  "correta": "A forma maligna é autossômica recessiva — herança que explica o quadro grave do lactente.",
+  "incorretas": {
+   "A": "A cegueira por compressão do nervo óptico é da forma maligna infantil, não da benigna do adulto.",
+   "B": "A forma intermediária é recessiva, e não dominante.",
+   "D": "A forma tardia (benigna do adulto) é autossômica dominante — o oposto do que a alternativa diz."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0055": {
+  "alerta": "Esta questão tem duas alternativas verdadeiras. A alternativa C descreve corretamente o quadro clínico do raquitismo — fraqueza muscular proximal, geno varo ou valgo e rosário raquítico realmente podem estar presentes —, e mesmo assim está marcada como errada. O gabarito escolheu a A, que também é verdadeira. Se você marcou C, o erro não foi seu.",
+  "conceito": "O raquitismo é a falha de mineralização da placa de crescimento da criança (no adulto, sem placa aberta, o mesmo distúrbio chama-se osteomalácia). A causa mais comum no mundo continua sendo a carência de vitamina D, por pouca exposição solar, aleitamento exclusivo sem suplementação ou dieta pobre. Sem mineralização, a cartilagem hipertrófica se acumula: a placa alarga, as bordas metafisárias ficam desfiadas e escavadas, o crescimento longitudinal diminui e o osso mole entorta sob carga.",
+  "correta": "A deficiência de vitamina D é de fato a principal causa do raquitismo nutricional.",
+  "incorretas": {
+   "B": "Está invertido: as placas de crescimento ficam ALARGADAS e indistintas, com aspecto desfiado e taça metafisária. Estreitamento é o oposto do achado.",
+   "C": "A alternativa está correta e mesmo assim foi dada como errada — veja o aviso acima. Fraqueza muscular proximal, deformidade angular dos joelhos e rosário raquítico compõem o quadro clássico.",
+   "D": "O crescimento longitudinal DIMINUI no raquitismo, e é justamente por isso que a criança tem baixa estatura. A deformidade angular está certa; o aumento do crescimento, não."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0056": {
+  "conceito": "Entre as formas extrapulmonares de tuberculose, a osteoarticular concentra-se na coluna, e dentro da vértebra o foco inicial é a porção anterior do corpo — território das artérias segmentares, de fluxo lento. Dali a doença avança por baixo do ligamento longitudinal anterior até a vértebra vizinha, poupando o disco. Perceber que a pergunta quer o ponto dentro da vértebra, e não apenas o osso, é o que separa as duas últimas alternativas.",
+  "correta": "Elementos anteriores do corpo vertebral, que é onde o foco hematogênico se instala.",
+  "incorretas": {
+   "A": "A bacia é sítio possível, sobretudo a sacroilíaca, mas fica muito atrás da coluna em frequência.",
+   "B": "O fêmur entra pelo quadril, e o quadril é o segundo sítio — não o primeiro.",
+   "D": "Os elementos posteriores são acometidos em uma minoria de casos; se fossem a regra, não haveria a cifose angular por colapso anterior."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0057": {
+  "conceito": "As mucopolissacaridoses acumulam glicosaminoglicanos em todos os tecidos, e o coração está entre os mais atingidos: depósito nas valvas, no miocárdio e nas coronárias. A síndrome de Hurler (MPS I-H) é a forma mais grave do espectro: começa no primeiro ano, com fácies infiltrada, hepatoesplenomegalia, opacificação de córnea, atraso mental progressivo, giba toracolombar e mão em garra, e leva à morte por insuficiência cardiorrespiratória antes dos dez anos. Scheie é o outro extremo do mesmo defeito enzimático, com sobrevida normal.",
+  "correta": "Hurler: a forma mais grave da MPS I, com desfecho cardiorrespiratório fatal antes dos dez anos.",
+  "incorretas": {
+   "A": "Scheie é a forma atenuada do mesmo defeito de Hurler, com inteligência preservada e sobrevida até a idade adulta.",
+   "C": "Hunter (MPS II) é ligada ao X, tem formas grave e atenuada e não apresenta opacificação de córnea; a morte, quando ocorre, é mais tardia.",
+   "D": "Morquio tem inteligência normal e sobrevida longa; o risco maior dela é neurológico, pela instabilidade atlantoaxial."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0058": {
+  "conceito": "A densitometria mede onde a fratura importa: coluna lombar e fêmur proximal. Quando esses dois sítios não servem — artrodese, artroplastia, artrose grave, fratura prévia, obesidade que excede a mesa, hiperparatireoidismo —, o substituto é o rádio, medido no ponto correspondente a um terço do comprimento do osso, e no antebraço não dominante, para evitar a densidade extra que o uso repetido confere ao lado dominante.",
+  "correta": "Antebraço não dominante, no sítio de 33% do rádio.",
+  "incorretas": {
+   "A": "Erra o osso e o lado: o calcâneo não é sítio válido de diagnóstico por DXA, e o lado dominante tem massa óssea aumentada pelo uso.",
+   "B": "O osso está certo, mas o lado dominante superestima a densidade.",
+   "C": "O calcâneo serve para rastreamento com aparelhos periféricos, não para o diagnóstico densitométrico que substitui coluna e fêmur."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0059": {
+  "conceito": "A artrodese do punho com pino intramedular é a solução clássica do punho reumatoide destruído: um fio de Steinmann percorre o canal medular de um metacarpo, atravessa o carpo e entra no rádio, mantendo o punho fixo enquanto o osso consolida. A técnica de Clayton, modificada por Millender e Nalebuff, usa o terceiro metacarpo. A variante que sai pelo segundo espaço intermetacarpal deixa a mão em leve desvio ulnar, o que é vantajoso no reumatoide, cuja deformidade natural puxa os dedos para a ulna.",
+  "correta": "A inserção retrógrada saindo pelo segundo espaço intermetacarpal é técnica alternativa descrita, e o discreto desvio ulnar resultante é mecanicamente favorável.",
+  "incorretas": {
+   "A": "É o contrário: a artrite reumatoide é a principal indicação dessa artrodese, e a técnica foi desenvolvida justamente para esse osso frágil, que não tolera fixações mais volumosas.",
+   "C": "A técnica de Clayton modificada por Millender e Nalebuff usa o TERCEIRO metacarpo, não o segundo.",
+   "D": "Inverte o sentido da migração. A pseudartrose na carpometacarpiana do terceiro dedo mantém movimento no ponto que o pino atravessa, e o pino se solta e migra distalmente, tornando-se proeminente na cabeça do metacarpo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0061": {
+  "conceito": "O caso reúne todos os elementos da osteoporose transitória do quadril: gestante no terceiro trimestre, dor no quadril sem trauma, radiografia normal na fase inicial e ressonância com edema difuso e homogêneo tomando cabeça e colo femoral. O que fecha o diagnóstico é o padrão do edema — difuso, sem linha de demarcação e sem lesão subcondral focal. É condição autolimitada, que se resolve em seis a doze meses; o tratamento é proteção de carga e analgesia, e o cuidado principal é evitar a fratura do colo enquanto o osso está fragilizado.",
+  "correta": "Osteoporose transitória do quadril, cuja assinatura é justamente o hipersinal homogêneo de cabeça e colo com radiografia inicialmente normal.",
+  "incorretas": {
+   "A": "Na osteonecrose o edema cerca uma lesão subcondral focal na zona de carga, delimitada por linha serpiginosa — e o colo costuma ser poupado, ao contrário do que a ressonância descrita mostra.",
+   "C": "A sinovite transitória é doença da criança, com derrame articular e quadro de dias, não de gestante com edema ósseo.",
+   "D": "A fratura por estresse apareceria como linha de baixo sinal atravessando o colo, dentro do edema — e o enunciado descreve hipersinal homogêneo, sem traço."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0062": {
+  "conceito": "A densitometria devolve dois escores porque responde a duas perguntas diferentes. O T-score compara a densidade do paciente com a do adulto jovem no pico de massa óssea, por volta dos 20 aos 30 anos: é ele que define osteopenia e osteoporose pelos critérios da OMS, e é ele que interessa na mulher pós-menopausa e no homem acima de 50. O Z-score compara com pessoas da mesma idade, sexo e etnia: um Z muito baixo diz que a perda vai além do esperado para a idade e obriga a procurar causa secundária. Em criança e adulto jovem, só se usa o Z.",
+  "correta": "T-score para adultos de cerca de 20 anos (pico de massa óssea) e Z-score para a própria idade do paciente, 60 anos.",
+  "incorretas": {
+   "B": "A referência do T-score é o pico de massa óssea do adulto jovem, e não a faixa dos 30 anos como par oposto ao Z.",
+   "C": "Inverte os dois escores: quem compara com a mesma idade é o Z, não o T.",
+   "D": "Também inverte a ordem, além de errar a referência do escore comparado ao adulto jovem."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0063": {
+  "conceito": "A vitamina D vem em maior parte da pele, e não da dieta: a radiação ultravioleta B converte o 7-desidrocolesterol em colecalciferol. Tudo o que reduz essa conversão aumenta a prevalência de deficiência — e a melanina é um filtro solar natural, de modo que pele mais pigmentada precisa de várias vezes mais tempo de exposição para produzir a mesma quantidade. As mulheres somam a isso menor exposição solar, maior uso de proteção e maior longevidade, e aparecem com prevalência mais alta nos levantamentos.",
+  "correta": "Sexo feminino e indivíduos negros: menor exposição efetiva ao sol em um caso, filtro natural da melanina no outro.",
+  "incorretas": {
+   "B": "A pele caucasiana sintetiza vitamina D com menos exposição, e não mais deficiência.",
+   "C": "A cor está certa, mas o predomínio nos levantamentos é feminino.",
+   "D": "Erra os dois: nem o sexo masculino nem a pele clara são os grupos de maior prevalência."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0064": {
+  "conceito": "No homem, boa parte do efeito protetor sobre o osso vem da testosterona convertida em estradiol pela aromatase — é o estrogênio, mesmo no homem, o principal freio da reabsorção. Quando o hipogonadismo instala, esse freio some: o RANKL sobe, a osteoprotegerina cai e o osteoclasto trabalha mais. Ao mesmo tempo a formação não acompanha, com atividade osteoblástica reduzida, e a absorção intestinal de cálcio diminui. O resultado é balanço negativo por dois lados ao mesmo tempo — e é por isso que o hipogonadismo é a causa secundária mais comum de osteoporose no homem.",
+  "correta": "Aumento da atividade osteoclástica com redução da atividade osteoblástica e da absorção de cálcio: perda por excesso de reabsorção e falta de reposição.",
+  "incorretas": {
+   "A": "Aumento das duas atividades descreveria alta remodelação equilibrada, e a absorção de cálcio não aumenta no hipogonadismo.",
+   "C": "Inverte o quadro: se a reabsorção caísse e a formação subisse, o hipogonadismo protegeria o osso em vez de causar osteoporose.",
+   "D": "Redução das duas atividades é o padrão de baixa remodelação da osteoporose senil, e não o do hipogonadismo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0065": {
+  "conceito": "Sem vitamina C o colágeno sai defeituoso, e o vaso sanguíneo, que depende dele, fica frágil. No lactente isso produz hemorragia subperiosteal, sobretudo perto das metáfises dos ossos longos, e essa hemorragia dói de forma intensa a qualquer movimento. A criança então para de mexer o membro e fica imóvel, com as pernas em posição de rã — parece paralisia, mas é dor. Daí o nome pseudoparalisia de Parrot, e daí o diagnóstico diferencial obrigatório com maus-tratos e com osteomielite.",
+  "correta": "A pseudoparalisia: imobilidade por dor da hemorragia subperiosteal, não por perda de força.",
+  "incorretas": {
+   "B": "Deformidade angular dos joelhos é do raquitismo, doença de mineralização, e não do escorbuto.",
+   "C": "Alargamento do crânio remete a outras doenças; no escorbuto o achado craniano é a hemorragia, não o alargamento.",
+   "D": "A hipercifose toracolombar (giba) é achado das mucopolissacaridoses e do raquitismo, não a complicação característica do escorbuto."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0066": {
+  "conceito": "A acro-osteólise — reabsorção do tufo da falange distal — depende de doença que ataque a interfalângica distal, e isso restringe muito a lista. A artrite psoriásica é a artropatia inflamatória que caracteristicamente acomete a IFD, junto com a unha alterada e a dactilite; ali ela produz erosão do tufo e, nas formas mutilantes, a imagem de lápis na taça e o dedo em telescópio. Fora da reumatologia, a acro-osteólise ainda aparece na esclerose sistêmica, na hiperparatireoidismo e na exposição ao cloreto de vinila.",
+  "correta": "Artrite psoriásica: a artropatia inflamatória da interfalângica distal, com erosão do tufo, alteração ungueal e dactilite.",
+  "incorretas": {
+   "A": "A artrite reumatoide poupa caracteristicamente a interfalângica distal — é justamente por isso que a IFD acometida aponta para psoríase ou artrose.",
+   "C": "O lúpus faz artropatia de Jaccoud: deformidade redutível por frouxidão de partes moles, sem erosão óssea.",
+   "D": "A gota produz erosões em saca-bocado com borda saliente e tofos, e não a reabsorção do tufo distal."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0067": {
+  "conceito": "Duas informações independentes numa pergunta só. O osso: a tuberculose do cotovelo começa na região proximal da ulna, no olécrano. O movimento: articulação inflamada com derrame acomoda-se na posição de maior volume capsular, e no cotovelo essa posição é a de flexão em torno de 70 a 80 graus. O paciente passa o dia com o cotovelo dobrado, a cápsula posterior retrai e a extensão é o que se perde primeiro — e é também o que mais custa a recuperar depois de curada a infecção.",
+  "correta": "Ulna proximal como osso e extensão como movimento limitado — o cotovelo inflamado se acomoda em flexão e perde a extensão.",
+  "incorretas": {
+   "A": "O osso está certo, mas a flexão é o movimento preservado: é justamente a posição em que a articulação se acomoda.",
+   "B": "Erra os dois: o úmero distal não é o sítio típico, e a flexão não é o movimento perdido.",
+   "D": "O movimento está certo, mas o osso não: o foco é na ulna proximal, não no úmero."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0068": {
+  "conceito": "A gota é a artrite inflamatória mais comum do homem depois dos 40 anos, e a razão é hormonal: o estrogênio é uricosúrico, de modo que a mulher só alcança o homem em prevalência depois da menopausa. O componente familiar é forte — a uricemia é traço poligênico, com transportadores renais de urato como o SLC2A9 e o ABCG2 respondendo por boa parte da variação —, e as séries trazem história familiar positiva em torno de 40% dos pacientes. Vale lembrar que a hiperuricemia isolada não é doença: o que define a gota é o depósito de cristais.",
+  "correta": "Artrite gotosa, com história familiar positiva em cerca de 40% dos casos.",
+  "incorretas": {
+   "B": "A doença está certa, mas 20% subestima a agregação familiar descrita para a gota.",
+   "C": "A espondilite anquilosante começa antes, tipicamente antes dos 40, e é bem menos prevalente que a gota nessa faixa.",
+   "D": "Erra a doença pelo mesmo motivo, e a proporção também não corresponde."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0069": {
+  "conceito": "O rim insuficiente não excreta fosfato e não hidroxila a vitamina D na posição 1-alfa. O fosfato sobe, o calcitriol cai, e as duas coisas juntas derrubam o cálcio: a paratireoide responde com PTH cronicamente alto. É o hiperparatireoidismo secundário, e é ele que produz a osteíte fibrosa cística e a mineralização deficiente da placa de crescimento na criança. O par fosfato alto com PTH alto é o que separa esse raquitismo do nutricional e do hipofosfatêmico, nos quais o fosfato está baixo.",
+  "correta": "Fosfato aumentado e PTH aumentado.",
+  "incorretas": {
+   "A": "Fosfato e PTH ambos baixos não corresponde a nenhum quadro dessa doença.",
+   "B": "O PTH alto está certo; o fosfato baixo aponta para outro tipo de raquitismo.",
+   "C": "Com fosfato alto e cálcio baixo, o PTH não tem como permanecer normal ou baixo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0070": {
+  "conceito": "No cotovelo, a tuberculose se instala na região proximal da ulna, no olécrano, e a partir dali invade a articulação. A apresentação é a de uma monoartrite insidiosa em paciente com sintomas constitucionais: aumento de volume, atrofia muscular do braço e antebraço, perda progressiva da extensão e, às vezes, fístula posterior. A radiografia mostra osteopenia periarticular, erosões marginais e redução tardia do espaço — a tríade de Phemister, que é o que separa a tuberculose da artrite piogênica, em que o espaço some cedo.",
+  "correta": "Região proximal da ulna, ou seja, o olécrano.",
+  "incorretas": {
+   "A": "O côndilo lateral do úmero distal não é o sítio de início descrito.",
+   "B": "O côndilo medial tampouco: o foco é na ulna, não no úmero.",
+   "C": "A região proximal do rádio é acometida com frequência bem menor."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0071": {
+  "conceito": "A tuberculose vertebral prefere a transição toracolombar, na faixa de T10 a L2. Essa é a região de maior concentração de carga axial da coluna, onde a cifose torácica encontra a lordose lombar, e é também um território de irrigação segmentar terminal. A consequência prática de o foco ser ali é a deformidade: destruída a coluna anterior nesse ponto de dobradiça, a coluna colapsa em cifose angular — a giba do mal de Pott — e o ápice dessa angulação é justamente onde a medula corre maior risco.",
+  "correta": "Transição toracolombar, o segmento mais acometido da coluna pela tuberculose.",
+  "incorretas": {
+   "A": "A coluna cervical é sítio incomum, embora seja o de maior gravidade quando acometida.",
+   "B": "A torácica alta é acometida, mas menos do que a transição toracolombar.",
+   "D": "A transição lombossacral é sítio pouco frequente na doença de Pott."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0072": {
+  "conceito": "Nalebuff separa as deformidades do polegar reumatoide pelo que acontece em cada articulação. O tipo I é a botoeira: sinovite da metacarpofalângica que estira a inserção do extensor curto, a falange proximal flete e a distal hiperestende. É de longe a mais comum. O tipo II é a botoeira acompanhada de subluxação da carpometacarpiana. O tipo III é o pescoço de cisne, que começa na carpometacarpiana com subluxação dorsal, adução do metacarpo e hiperextensão da metacarpofalângica. Guardar essa sequência resolve toda a classificação.",
+  "correta": "A deformidade em botoeira (tipo I) é a mais comum do polegar reumatoide.",
+  "incorretas": {
+   "B": "O pescoço de cisne é o tipo III e começa pela carpometacarpiana; é menos frequente que a botoeira.",
+   "C": "A lesão do colateral ulnar corresponde ao polegar do guarda-caça e não é a deformidade típica da artrite reumatoide.",
+   "D": "Botoeira com subluxação da metacarpofalângica é o tipo II — uma evolução do tipo I, portanto menos comum do que ele."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0073": {
+  "conceito": "Acro-osteólise é a reabsorção do tufo da falange distal, e para isso a doença precisa acometer a interfalângica distal. A artrite psoriásica é a artropatia inflamatória que caracteristicamente ataca a IFD, junto com a unha alterada (pontilhado, onicólise) e a dactilite. Nas formas mais agressivas ela produz o lápis na taça e o dedo em telescópio. Fora das artrites, a acro-osteólise ainda aparece na esclerose sistêmica, no hiperparatireoidismo e na exposição ao cloreto de vinila.",
+  "correta": "Artrite psoriásica: acomete a interfalângica distal e reabsorve o tufo.",
+  "incorretas": {
+   "A": "A artrite reumatoide caracteristicamente poupa a interfalângica distal.",
+   "C": "A artropatia do lúpus (Jaccoud) é deformante mas não erosiva: a deformidade é redutível e vem de frouxidão capsuloligamentar.",
+   "D": "A gota produz erosão em saca-bocado com borda saliente, ao lado de tofo, e não reabsorção do tufo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0074": {
+  "conceito": "Antirreabsortivo sem vitamina D e cálcio suficientes trabalha contra a corrente: se a absorção intestinal de cálcio permanece baixa, o organismo continua retirando cálcio do osso para manter a calcemia. Por isso a reposição é parte do tratamento, e não acessório. Para o idoso com osteoporose, a recomendação é de pelo menos 800 UI de vitamina D ao dia, dose na qual os ensaios com cálcio associado mostraram redução de fratura. Doses menores, típicas de multivitamínicos, não elevam a 25-OH-vitamina D ao nível considerado suficiente.",
+  "correta": "700-800 UI ao dia é o piso recomendado no tratamento da osteoporose.",
+  "incorretas": {
+   "B": "200-400 UI é dose de suplementação geral, abaixo do necessário para tratar osteoporose.",
+   "C": "400-600 UI ainda fica aquém do recomendado para esse objetivo.",
+   "D": "200 UI ao dia é a menor das opções e a mais distante do necessário."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0075": {
+  "conceito": "As mucopolissacaridoses acumulam glicosaminoglicanos porque falta a enzima lisossomal que os degrada, e o excesso é excretado na urina. O rastreamento, portanto, é urinário: dosagem quantitativa dos glicosaminoglicanos e depois eletroforese, que mostra qual deles se acumula — dermatan e heparan sulfato em Hurler, Hunter e Scheie, queratan sulfato em Morquio. Isso aponta o grupo; a confirmação vem da dosagem da enzima específica em leucócitos ou fibroblastos e, quando necessário, do estudo genético.",
+  "correta": "Urina: é nela que se dosam e se separam os glicosaminoglicanos acumulados, e é ela que faz o rastreamento.",
+  "incorretas": {
+   "B": "O sangue entra na etapa seguinte, para dosar a enzima em leucócitos — não é o exame de rastreamento.",
+   "C": "As fezes não têm papel no diagnóstico dessas doenças.",
+   "D": "A lágrima também não é material de diagnóstico das mucopolissacaridoses."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0076": {
+  "conceito": "O bacilo da tuberculose se multiplica devagar e não produz as enzimas líticas de um germe piogênico. Por isso o mal de Pott se arrasta por meses ou anos antes de dar o sinal que traz o paciente ao médico, muitas vezes já a cifose angular ou o déficit neurológico. O que acompanha essa evolução lenta é um quadro constitucional de doença consumptiva: febre baixa no fim do dia, sudorese noturna, perda de peso e mal-estar. Dor intensa de início súbito com febre alta aponta para infecção piogênica, não para tuberculose.",
+  "correta": "Sintomas generalizados e progressão indolente.",
+  "incorretas": {
+   "A": "Início agudo não é a apresentação da tuberculose vertebral.",
+   "C": "Os sintomas generalizados estão certos, mas a progressão é lenta, e não rápida.",
+   "D": "Erra as duas características ao mesmo tempo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "osteometabolicas-0077": {
+  "conceito": "Fora da coluna, a tuberculose osteoarticular prefere as grandes articulações de carga — quadril e joelho. No membro superior, onde a carga é menor, a articulação mais acometida é o cotovelo, com foco na região proximal da ulna. A apresentação é de monoartrite arrastada, com aumento de volume, atrofia muscular e perda progressiva da extensão, em paciente com sintomas constitucionais. Outras duas questões deste mesmo acervo confirmam o cotovelo e o olécrano como o par típico.",
+  "correta": "O cotovelo é a articulação do membro superior mais acometida pela tuberculose osteoarticular.",
+  "incorretas": {
+   "A": "O ombro é acometido com frequência menor, e a forma descrita ali é a caries sicca, seca e com pouco derrame.",
+   "B": "O punho entra no espectro, sobretudo como tenossinovite dos flexores com corpos arroz, mas fica atrás do cotovelo.",
+   "D": "A acromioclavicular é sítio raro de tuberculose."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ }
+}

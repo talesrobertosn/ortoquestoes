@@ -23,6 +23,8 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0238` | O número 6 do desenho é o ligamento **transverso retinacular** | A figura é uma vista dorsal do punho e o número 6 parece ser o ligamento intercarpal dorsal. "Transverso retinacular" é nome do aparelho extensor do dedo, não do punho |
 | `mao-0311` | A instabilidade semilunopiramidal é avaliada pelo teste de **Masquelet** | Não conheço um teste de punho com esse nome — Masquelet dá nome à técnica da membrana induzida. Os testes lunopiramidais que conheço são o balote de Reagan e o cisalhamento de Kleinman, e Linscheid (que é uma das alternativas) descreveu instabilidade do carpo |
 | `mao-0576` | A perda da sensibilidade protetora corresponde ao monofilamento **amarelo** de Semmes-Weinstein | Nas duas escalas que conheço quem marca essa fronteira é o **vermelho**: no kit de cinco cores (verde, azul, violeta, vermelho) e no estesiômetro brasileiro de seis (verde 0,05 g, azul 0,2 g, violeta 2 g, vermelho 4 g, laranja 10 g, magenta 300 g). O amarelo não aparece em nenhuma delas |
+| `osteometabolicas-0046` | A osteoporose transitória do quadril ocorre mais comumente em **gestantes** no terceiro trimestre | A literatura descreve dois grupos, e na maioria das séries os homens de meia-idade (alternativa C) são mais numerosos, em proporção próxima de três para um |
+| `osteometabolicas-0055` | Sobre o raquitismo, a única alternativa correta seria a da deficiência de vitamina D | A alternativa C — fraqueza muscular proximal, geno varo ou valgo e rosário raquítico — também é verdadeira, e está marcada como errada. A questão tem duas respostas certas |
 
 ## Afirmação que não consegui sustentar
 
@@ -54,6 +56,12 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0491` | O tipo **T/1** representa hemimelia terminal, longitudinal paraxial completa | Conheço os eixos da classificação de Frantz e O'Rahilly (terminal ou intercalar, transversa ou longitudinal, completa ou parcial), mas não a notação "T/1" que o enunciado usa |
 | `mao-0544` | Subtipos A1/A2/B1/B2 da classificação de **Albertoni** para dedo em martelo | Conheço a divisão de Albertoni entre lesão tendínea pura e lesão com arrancamento ósseo, mas não a numeração dos subtipos nem o ponto de corte de 30º que o enunciado usa para separá-los |
 
+## Enunciado que não consigo reconstruir
+
+| Questão | O que a banca escreveu | O que me trava |
+|---|---|---|
+| `osteometabolicas-0060` | "O raquitismo por hipovitaminose D apresenta anomalia genética do cromossomo X com herança dominante em 1/2 dos casos" | Não consigo dizer o que a fração mede. Se for a proporção de filhos afetados na herança dominante ligada ao X, 1/2 faz sentido genético — mas aí a pergunta não é sobre raquitismo por hipovitaminose D, e sim sobre o raquitismo hipofosfatêmico ligado ao X, que é outra doença. Sem saber qual das duas leituras a banca quis, qualquer comentário seria chute |
+
 ## Comentado, mas com ressalva escrita no próprio texto
 
 | Questão | A ressalva |
@@ -66,6 +74,7 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0276` | O enunciado descreve **perda de tecido** e pergunta o objetivo de uma zetaplastia, que não repõe tecido — redistribui o que existe. A alternativa mais precisa (corrigir contratura) não corresponde ao caso apresentado |
 | `mao-0558` | O comentário diz que a média de discriminação de dois pontos após reimplante de polegar por corte limpo fica em torno de 11 mm, mas separar 11 de 14 mm depende da casuística citada — o que se sustenta com firmeza é a ordem de grandeza |
 | `mao-0573` | A foto cirúrgica é de baixa resolução. O que sustenta a identificação da corda retrovascular é a posição da estrutura em relação ao feixe neurovascular, não um detalhe visível na imagem |
+| `osteometabolicas-0036` | A formulação original do critério de Altman fala em ausência de calor palpável. A alternativa dada como certa está redigida de outro jeito, e o que a sustenta é a eliminação das demais por categoria e por valor de corte |
 
 ---
 
@@ -73,4 +82,5 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 
 | Questão | O que resolveu |
 |---|---|
+| `osteometabolicas-0030` | Outras duas questões do mesmo acervo (`osteometabolicas-0067` e `osteometabolicas-0070`) perguntam a mesma coisa com outras palavras e respondem "região proximal da ulna". Isso sustentou o olécrano, e o comentário saiu |
 | `mao-0297` | A `mao-0352`, no mesmo acervo, confirma que o grau I de Tachdjian é a ausência da cabeça do rádio — o que valida o esquema e sustenta o grau III como a sinostose fibrosa. O comentário saiu, com alerta avisando que Cleary e Omer numeram diferente |
