@@ -95,6 +95,21 @@ PADRAO_CABECALHO_GABARITO = re.compile(
 )
 
 
+
+MARCA_ANULADA = re.compile(r"^\s*ANULAD[AO]\s*[:\-–—.]?\s*", re.IGNORECASE)
+
+
+def despir_marca_de_anulada(enunciado: str) -> tuple[bool, str]:
+    """Tira o carimbo "ANULADA" do começo do enunciado e diz se ele estava lá.
+
+    O carimbo é informação da banca, não texto da questão: mantê-lo no
+    enunciado polui a leitura e a busca, e descartá-lo sem registrar faria a
+    questão anulada ser servida como se valesse.
+    """
+    limpo = MARCA_ANULADA.sub("", enunciado, count=1)
+    return limpo != enunciado, limpo.strip()
+
+
 def letra_de_alternativa(texto: str, frouxo: bool = False):
     padrao = PADRAO_ALTERNATIVA_FROUXO if frouxo else PADRAO_ALTERNATIVA
     achado = padrao.match(texto)
@@ -787,6 +802,26 @@ def principal() -> int:
 
         resposta = chave.respostas.get(questao.numero)
         anulada = questao.numero in chave.anuladas
+
+        # A banca às vezes marca a anulação no próprio enunciado, e não só na
+        # folha de respostas. Ignorar isso servia a questão como se valesse:
+        # ela contava no desempenho de quem estudava e o gabarito impresso
+        # podia estar errado justamente por isso.
+        marcada, questao.enunciado = despir_marca_de_anulada(questao.enunciado)
+        if marcada:
+            anulada = True
+        # Alternativa cujo texto é só "Anulada" é anotação da banca lida como
+        # se fosse opção de resposta. Ela não é alternativa nenhuma.
+        fantasmas = [
+            a for a in questao.alternativas
+            if normalizar(a.get("texto", "")).strip(" .:") == "anulada"
+        ]
+        if fantasmas:
+            anulada = True
+            for alternativa in fantasmas:
+                questao.alternativas.remove(alternativa)
+            if resposta and resposta not in {a["letra"] for a in questao.alternativas}:
+                resposta = None
         if resposta is None and not anulada:
             sem_gabarito.append(questao.numero)
             questao.confianca -= 0.3
