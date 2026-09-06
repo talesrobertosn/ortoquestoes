@@ -38,6 +38,12 @@ CASOS: list[tuple[str, bool]] = [
     ("A estrutura destacada na figura corresponde a", True),
     ("Qual a alternativa correta sobre a imagem a seguir:", True),
     ("A incidência radiográfica tangencial dorsal, mostrada na figura a seguir, é realizada com o punho", True),
+    # Verbo que pressupõe a figura na tela, sem locativo nenhum.
+    ("Assinale a alternativa que melhor preenche a imagem:", True),
+    ("Complete a figura com os nomes dos compartimentos extensores.", True),
+    # E o que não pode ser arrastado junto: aqui nada é exibido.
+    ("A radiografia completa a investigação quando o exame físico é duvidoso.", False),
+    ("O tratamento completo inclui fisioterapia e analgesia.", False),
 ]
 
 

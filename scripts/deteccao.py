@@ -44,6 +44,15 @@ PADRAO_MOSTRA_EM = re.compile(
 # pela regra PADRAO_MOSTRA_EM ("destacada na figura").
 PADRAO_APONTA = re.compile(r"\b(assinalad|tra[çc]ad)\w+\b", re.IGNORECASE)
 
+# "assinale a alternativa que melhor preenche a imagem" — o verbo já pressupõe
+# uma figura na tela, e sem ela a questão não tem como ser respondida. Não é
+# preciso locativo aqui: quem preenche, completa ou legenda uma imagem está
+# olhando para ela.
+PADRAO_PREENCHE = re.compile(
+    r"\b(preench|complet|legend)\w*\s+(?:a|as|à|o|os)?\s*" + PADRAO_VISUAL,
+    re.IGNORECASE,
+)
+
 
 def cita_figura(enunciado: str) -> bool:
     """A questão pergunta sobre algo que precisa estar na tela?"""
@@ -51,4 +60,5 @@ def cita_figura(enunciado: str) -> bool:
         PADRAO_LOCATIVO.search(enunciado)
         or PADRAO_MOSTRA_EM.search(enunciado)
         or PADRAO_APONTA.search(enunciado)
+        or PADRAO_PREENCHE.search(enunciado)
     )
