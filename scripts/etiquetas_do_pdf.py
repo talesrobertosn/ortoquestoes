@@ -111,6 +111,15 @@ def principal() -> int:
     saindo = sorted(antes - set(vocabulario), key=str.lower)
     tema["subtemas"] = sorted(set(vocabulario), key=str.lower)
 
+    # Grava antes de imprimir. A listagem é longa, e quem canalizar a saída
+    # para `head` fecha o cano no meio: o processo morre de SIGPIPE e o
+    # trabalho se perde em silêncio — foi o que aconteceu com o tema de mão.
+    if not argumentos.seco:
+        CAMINHO_TAXONOMIA.write_text(
+            json.dumps(taxonomia, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        print(f"Taxonomia gravada: {len(tema['subtemas'])} etiquetas em {tema['slug']}.")
+
     print(f"Tema: {tema['nome']} ({tema['slug']})")
     if tema.get("apelidos"):
         print(f"Apelidos: {', '.join(tema['apelidos'])}")
@@ -124,12 +133,8 @@ def principal() -> int:
 
     if argumentos.seco:
         print("\n(modo seco: taxonomia não gravada)")
-        return 0
-
-    CAMINHO_TAXONOMIA.write_text(
-        json.dumps(taxonomia, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
-    print(f"\nTaxonomia atualizada. Agora rode a importação.")
+    else:
+        print("\nAgora rode a importação.")
     return 0
 
 
