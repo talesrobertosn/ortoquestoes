@@ -8,6 +8,7 @@ import { Sessao } from './paginas/Sessao'
 import { Resumo } from './paginas/Resumo'
 import { QuestaoDireta } from './paginas/QuestaoDireta'
 import { Contato, DadosLocais, NaoEncontrada, Sobre } from './paginas/Apoio'
+import { Favoritas } from './paginas/Favoritas'
 import { SITE } from './config'
 
 const TITULOS: Record<string, string> = {
@@ -18,6 +19,7 @@ const TITULOS: Record<string, string> = {
   '/sobre': 'Sobre — OrtoQuestões',
   '/contato': 'Relatar erro — OrtoQuestões',
   '/dados': 'Seu desempenho — OrtoQuestões',
+  '/favoritas': 'Suas favoritas — OrtoQuestões',
 }
 
 export function App() {
@@ -59,6 +61,9 @@ export function App() {
       break
     case 'dados':
       pagina = <DadosLocais />
+      break
+    case 'favoritas':
+      pagina = <Favoritas />
       break
     default:
       pagina = <NaoEncontrada />

@@ -39,7 +39,7 @@ checar(
   'contador dentro do botão exclui as anuladas',
   `(veio "${textoBotao}", esperado ${naoAnuladas})`,
 )
-await pagina.click('button.opcao-segmento:has-text("10")')
+await pagina.click('#filtro-limite button.opcao-segmento:has-text("10")')
 const textoBotao2 = await pagina.locator('button:has-text("Responder")').last().innerText()
 checar(/10/.test(textoBotao2), 'limite de 10 reflete no botão', `(veio "${textoBotao2}")`)
 checar(pagina.url().includes('limite=10'), 'filtros vão para a URL', pagina.url())
@@ -51,10 +51,10 @@ if (await pagina.locator('.seletor__gatilho').count() > 0) {
 }
 checar(await pagina.locator('.seletor__painel').count() === 1, 'árvore de assuntos visível')
 const termo = indice.subtemas[0].split(' ')[0].slice(0, 6)
-await pagina.fill('input[type="search"]', termo)
+await pagina.fill('.seletor__painel input[type="search"]', termo)
 const achou = await pagina.locator('.arvore__linha').count()
 checar(achou > 0, 'busca dentro do seletor encontra assunto', `termo "${termo}"`)
-await pagina.fill('input[type="search"]', '')
+await pagina.fill('.seletor__painel input[type="search"]', '')
 await pagina.locator('.arvore__abrir').first().click()
 await pagina.waitForTimeout(200)
 const caixas = pagina.locator('.seletor__painel .arvore__linha--filho input')
@@ -90,8 +90,8 @@ console.log('\n3c. Simulado com tempo')
 await pagina.goto(BASE + '#/treinar', { waitUntil: 'networkidle' })
 await pagina.waitForSelector('.seletor')
 await pagina.locator('.interruptor__trilho').click()
-await pagina.click('.opcao-segmento:has-text("1 hora")')
-await pagina.click('button.opcao-segmento:has-text("10")')
+await pagina.click('#filtro-duracao .opcao-segmento:has-text("1 hora")')
+await pagina.click('#filtro-limite button.opcao-segmento:has-text("10")')
 await pagina.click('button:has-text("Iniciar simulado")')
 await pagina.waitForSelector('.alternativa')
 const relogio = await pagina.locator('.cronometro').innerText()
@@ -129,7 +129,7 @@ console.log('\n4. Responder dez questões pelo teclado')
 // monta de novo, agora no modo comum.
 await pagina.goto(BASE + '#/treinar', { waitUntil: 'networkidle' })
 await pagina.waitForSelector('.seletor')
-await pagina.click('button.opcao-segmento:has-text("10")')
+await pagina.click('#filtro-limite button.opcao-segmento:has-text("10")')
 await pagina.locator('button:has-text("Responder")').last().click()
 await pagina.waitForSelector('.alternativa')
 for (let i = 0; i < 10; i++) {
@@ -242,6 +242,87 @@ checar(
   await pagina.locator('.distribuicao__item').count() > 0,
   'temas respondidos aparecem no desempenho',
 )
+
+console.log('\n7d. Favoritas têm para onde levar')
+// Regressão: a estrela guardava a marcação e não havia tela nenhuma para ver
+// o que foi marcado — favoritar não levava a lugar algum.
+await pagina.goto(BASE + `#/questao/${idExemplo}`, { waitUntil: 'networkidle' })
+await pagina.waitForSelector('.alternativa')
+await pagina.click('button[aria-label="Favoritar questão"]')
+await pagina.waitForTimeout(150)
+await pagina.click('.rodape a:has-text("Favoritas")')
+await pagina.waitForSelector('h1:has-text("Suas favoritas")')
+checar(
+  (await pagina.locator('.favorita').count()) === 1,
+  'a questão favoritada aparece na lista',
+)
+checar(
+  (await pagina.locator('.favorita__texto').first().getAttribute('href')) ?.includes(idExemplo) === true,
+  'o item leva de volta para a questão',
+)
+await pagina.click('button:has-text("Treinar as")')
+await pagina.waitForSelector('.alternativa')
+const totalFavoritas = await pagina.locator('.barra-sessao__texto').innerText()
+checar(totalFavoritas.endsWith('de 1'), 'treinar as favoritas monta a sessão só com elas', totalFavoritas)
+await pagina.goto(BASE + '#/favoritas', { waitUntil: 'networkidle' })
+await pagina.waitForSelector('.favorita')
+await pagina.click('button[aria-label^="Remover"]')
+await pagina.waitForTimeout(150)
+checar(
+  (await pagina.locator('text=Você ainda não favoritou').count()) === 1,
+  'desfavoritar esvazia a lista e explica para que serve a estrela',
+)
+
+console.log('\n7e. Filtro por situação')
+await pagina.goto(BASE + '#/treinar', { waitUntil: 'networkidle' })
+await pagina.waitForSelector('#filtro-situacao')
+const numero = async (rotulo) =>
+  Number(await pagina.locator(`#filtro-situacao button:has-text("${rotulo}") .numerico`).innerText())
+const [todas, naoResp, erradas, acertadas] = await Promise.all([
+  numero('Todas'), numero('Não respondidas'), numero('Que eu errei'), numero('Que eu acertei'),
+])
+checar(todas === naoAnuladas, 'situação "todas" conta o acervo inteiro', `${todas} vs ${naoAnuladas}`)
+checar(
+  naoResp + erradas + acertadas === todas,
+  'respondidas e não respondidas somam o acervo',
+  `${naoResp}+${erradas}+${acertadas} != ${todas}`,
+)
+checar(
+  erradas + acertadas >= 10,
+  'as questões já respondidas nesta execução foram contadas',
+  String(erradas + acertadas),
+)
+const situacaoComContagem = erradas > 0 ? 'Que eu errei' : 'Que eu acertei'
+const esperado = erradas > 0 ? erradas : acertadas
+await pagina.click(`#filtro-situacao button:has-text("${situacaoComContagem}")`)
+await pagina.waitForTimeout(150)
+const botaoSituacao = await pagina.locator('button:has-text("Responder")').last().innerText()
+checar(
+  botaoSituacao.includes(String(esperado)),
+  `filtrar por "${situacaoComContagem}" leva ${esperado} questões ao botão`,
+  botaoSituacao,
+)
+checar(pagina.url().includes('situacao='), 'a situação vai para a URL', pagina.url())
+
+console.log('\n7f. Busca por texto')
+await pagina.goto(BASE + '#/treinar', { waitUntil: 'networkidle' })
+await pagina.waitForSelector('#busca-acervo')
+const palavras = indice.questoes.length > 0 ? 'fratura' : ''
+await pagina.fill('#busca-acervo', palavras)
+await pagina.waitForTimeout(600)
+const botaoBusca = await pagina.locator('button:has-text("Responder")').last().innerText()
+const achadas = Number(
+  (await pagina.locator('.botao__contador').last().innerText()).replace(/\D/g, ''),
+)
+checar(achadas > 0 && achadas < naoAnuladas, `busca por "${palavras}" estreita o acervo`, botaoBusca)
+await pagina.fill('#busca-acervo', 'xilofone kryptonita')
+await pagina.waitForTimeout(600)
+checar(
+  (await pagina.locator('text=Nenhuma questão contém').count()) === 1,
+  'busca sem resultado explica o que aconteceu em vez de sumir com tudo',
+)
+await pagina.fill('#busca-acervo', '')
+await pagina.waitForTimeout(200)
 
 console.log('\n8. Largura de 320 pixels')
 await pagina.setViewportSize({ width: 320, height: 720 })

@@ -167,7 +167,9 @@ export function DadosLocais() {
         </div>
         <div className="numeros__celula">
           <span className="numeros__valor">{favoritos.length}</span>
-          <span className="numeros__rotulo">favoritas</span>
+          <span className="numeros__rotulo">
+            <a href={href('/favoritas')}>favoritas</a>
+          </span>
         </div>
       </div>
 

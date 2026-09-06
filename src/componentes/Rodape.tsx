@@ -5,6 +5,7 @@ export function Rodape() {
   return (
     <footer className="rodape nao-imprime">
       <div className="conteudo rodape__interno">
+        <a href={href('/favoritas')}>Favoritas</a>
         <a href={href('/sobre')}>Sobre</a>
         <a href={href('/contato')}>Relatar erro</a>
         <a href={href('/dados')}>Seu desempenho</a>

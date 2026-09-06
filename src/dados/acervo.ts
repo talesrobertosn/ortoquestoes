@@ -74,12 +74,54 @@ export async function carregarQuestao(indice: Indice, id: string): Promise<Quest
   return q ?? null
 }
 
-type ChaveFaceta = 'assunto' | 'provas' | 'anos' | 'dificuldades' | 'comImagem' | 'comComentario'
+type ChaveFaceta =
+  | 'assunto'
+  | 'provas'
+  | 'anos'
+  | 'dificuldades'
+  | 'comImagem'
+  | 'comComentario'
+  | 'situacao'
+  | 'busca'
+
+/**
+ * O que o navegador sabe sobre quem está estudando. Fica fora do índice do
+ * acervo de propósito: são dados locais da pessoa, não do conteúdo.
+ */
+export interface ContextoLocal {
+  respondidas: Record<string, { c: boolean | null }>
+  favoritos: string[]
+  /** id → enunciado e alternativas, normalizados. Só existe depois de buscar. */
+  textos: Map<string, string> | null
+}
+
+export const CONTEXTO_VAZIO: ContextoLocal = {
+  respondidas: {},
+  favoritos: [],
+  textos: null,
+}
+
+let ultimaBusca: string | null = null
+let ultimosTermos: string[] = []
+
+/**
+ * A contagem por faceta roda o filtro várias vezes sobre o acervo inteiro a
+ * cada tecla digitada. Normalizar a busca uma vez por texto, e não uma vez por
+ * questão, é a diferença entre digitar liso e digitar travado.
+ */
+function termosDeBusca(busca: string): string[] {
+  if (busca !== ultimaBusca) {
+    ultimaBusca = busca
+    ultimosTermos = normalizar(busca).split(/\s+/).filter(Boolean)
+  }
+  return ultimosTermos
+}
 
 function aplicaUm(
   indice: Indice,
   item: ItemIndice,
   filtros: Filtros,
+  contexto: ContextoLocal,
   ignorar?: ChaveFaceta,
 ): boolean {
   if (!filtros.incluirAnuladas && item.an === 1) return false
@@ -106,12 +148,37 @@ function aplicaUm(
   }
   if (ignorar !== 'comImagem' && filtros.comImagem && item.img !== 1) return false
   if (ignorar !== 'comComentario' && filtros.comComentario && item.c !== 1) return false
+
+  if (ignorar !== 'situacao' && filtros.situacao !== 'todas') {
+    const registro = contexto.respondidas[item.id]
+    if (filtros.situacao === 'naoRespondidas' && registro) return false
+    if (filtros.situacao === 'erradas' && registro?.c !== false) return false
+    if (filtros.situacao === 'acertadas' && registro?.c !== true) return false
+    if (filtros.situacao === 'favoritas' && !contexto.favoritos.includes(item.id)) return false
+  }
+
+  if (ignorar !== 'busca' && filtros.busca.trim()) {
+    // Sem o índice de texto carregado ainda, a busca não exclui nada: melhor
+    // mostrar demais por um instante do que piscar "nenhuma questão".
+    if (contexto.textos) {
+      const alvo = contexto.textos.get(item.id)
+      if (!alvo) return false
+      for (const termo of termosDeBusca(filtros.busca)) {
+        if (!alvo.includes(termo)) return false
+      }
+    }
+  }
+
   return true
 }
 
 /** Itens do índice que atendem aos filtros. */
-export function filtrar(indice: Indice, filtros: Filtros): ItemIndice[] {
-  return indice.questoes.filter((item) => aplicaUm(indice, item, filtros))
+export function filtrar(
+  indice: Indice,
+  filtros: Filtros,
+  contexto: ContextoLocal = CONTEXTO_VAZIO,
+): ItemIndice[] {
+  return indice.questoes.filter((item) => aplicaUm(indice, item, filtros, contexto))
 }
 
 /**
@@ -125,9 +192,14 @@ export interface Contagens {
   porProva: Record<string, number>
   porAno: Record<number, number>
   porDificuldade: Record<string, number>
+  porSituacao: Record<string, number>
 }
 
-export function contar(indice: Indice, filtros: Filtros): Contagens {
+export function contar(
+  indice: Indice,
+  filtros: Filtros,
+  contexto: ContextoLocal = CONTEXTO_VAZIO,
+): Contagens {
   const contagens: Contagens = {
     total: 0,
     porTema: {},
@@ -135,12 +207,28 @@ export function contar(indice: Indice, filtros: Filtros): Contagens {
     porProva: {},
     porAno: {},
     porDificuldade: {},
+    porSituacao: {},
   }
 
   for (const item of indice.questoes) {
-    if (aplicaUm(indice, item, filtros)) contagens.total++
+    if (aplicaUm(indice, item, filtros, contexto)) contagens.total++
 
-    if (aplicaUm(indice, item, filtros, 'assunto')) {
+    if (aplicaUm(indice, item, filtros, contexto, 'situacao')) {
+      const registro = contexto.respondidas[item.id]
+      contagens.porSituacao.todas = (contagens.porSituacao.todas ?? 0) + 1
+      if (!registro) {
+        contagens.porSituacao.naoRespondidas = (contagens.porSituacao.naoRespondidas ?? 0) + 1
+      } else if (registro.c === false) {
+        contagens.porSituacao.erradas = (contagens.porSituacao.erradas ?? 0) + 1
+      } else if (registro.c === true) {
+        contagens.porSituacao.acertadas = (contagens.porSituacao.acertadas ?? 0) + 1
+      }
+      if (contexto.favoritos.includes(item.id)) {
+        contagens.porSituacao.favoritas = (contagens.porSituacao.favoritas ?? 0) + 1
+      }
+    }
+
+    if (aplicaUm(indice, item, filtros, contexto, 'assunto')) {
       const tema = indice.temas[item.t]
       if (tema) contagens.porTema[tema.slug] = (contagens.porTema[tema.slug] ?? 0) + 1
       for (const i of item.s) {
@@ -148,14 +236,14 @@ export function contar(indice: Indice, filtros: Filtros): Contagens {
         if (nome) contagens.porSubtema[nome] = (contagens.porSubtema[nome] ?? 0) + 1
       }
     }
-    if (aplicaUm(indice, item, filtros, 'provas') && item.p !== null) {
+    if (aplicaUm(indice, item, filtros, contexto, 'provas') && item.p !== null) {
       const prova = indice.provas[item.p]
       if (prova) contagens.porProva[prova] = (contagens.porProva[prova] ?? 0) + 1
     }
-    if (aplicaUm(indice, item, filtros, 'anos') && item.a !== null) {
+    if (aplicaUm(indice, item, filtros, contexto, 'anos') && item.a !== null) {
       contagens.porAno[item.a] = (contagens.porAno[item.a] ?? 0) + 1
     }
-    if (aplicaUm(indice, item, filtros, 'dificuldades') && item.d) {
+    if (aplicaUm(indice, item, filtros, contexto, 'dificuldades') && item.d) {
       contagens.porDificuldade[item.d] = (contagens.porDificuldade[item.d] ?? 0) + 1
     }
   }
@@ -179,8 +267,13 @@ export function embaralhar<T>(lista: T[], semente: number): T[] {
 }
 
 /** Monta a lista de ids de uma sessão a partir dos filtros. */
-export function montarSessao(indice: Indice, filtros: Filtros, semente: number): string[] {
-  let ids = filtrar(indice, filtros).map((i) => i.id)
+export function montarSessao(
+  indice: Indice,
+  filtros: Filtros,
+  semente: number,
+  contexto: ContextoLocal = CONTEXTO_VAZIO,
+): string[] {
+  let ids = filtrar(indice, filtros, contexto).map((i) => i.id)
   if (filtros.embaralhar) ids = embaralhar(ids, semente)
   if (filtros.limite && filtros.limite > 0) ids = ids.slice(0, filtros.limite)
   return ids
@@ -219,4 +312,19 @@ export function normalizar(texto: string): string {
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
+}
+
+let promessaBusca: Promise<Map<string, string>> | null = null
+
+/**
+ * Índice de busca por texto. Fica num arquivo à parte e só é baixado quando
+ * alguém digita algo: é grande, e a maioria das visitas nunca busca.
+ */
+export function carregarBusca(): Promise<Map<string, string>> {
+  if (!promessaBusca) {
+    promessaBusca = buscarJson<Array<[string, string]>>('acervo/busca.json')
+      .then((linhas) => new Map(linhas))
+      .catch(() => new Map())
+  }
+  return promessaBusca
 }

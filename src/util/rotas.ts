@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { FILTROS_VAZIOS, type Dificuldade, type Filtros } from '../dados/tipos'
+import { FILTROS_VAZIOS, type Dificuldade, type Filtros, type Situacao } from '../dados/tipos'
 
 /**
  * Roteamento por hash. Escolha deliberada: funciona igual em
@@ -57,6 +57,13 @@ export function href(destino: string): string {
 /* ---------- Filtros na URL --------------------------------------------- */
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
+const SITUACOES: Situacao[] = [
+  'todas',
+  'naoRespondidas',
+  'erradas',
+  'acertadas',
+  'favoritas',
+]
 
 export function filtrosParaConsulta(filtros: Filtros): string {
   const p = new URLSearchParams()
@@ -70,6 +77,8 @@ export function filtrosParaConsulta(filtros: Filtros): string {
   if (filtros.incluirAnuladas) p.set('anuladas', '1')
   if (!filtros.embaralhar) p.set('ordem', 'prova')
   if (filtros.limite) p.set('limite', String(filtros.limite))
+  if (filtros.situacao !== 'todas') p.set('situacao', filtros.situacao)
+  if (filtros.busca.trim()) p.set('busca', filtros.busca.trim())
   const texto = p.toString()
   return texto ? '?' + texto : ''
 }
@@ -100,5 +109,9 @@ export function consultaParaFiltros(consulta: URLSearchParams): Filtros {
     incluirAnuladas: consulta.get('anuladas') === '1',
     embaralhar: consulta.get('ordem') !== 'prova',
     limite: Number.isFinite(limite) && limite > 0 ? limite : null,
+    situacao: SITUACOES.includes(consulta.get('situacao') as Situacao)
+      ? (consulta.get('situacao') as Situacao)
+      : 'todas',
+    busca: consulta.get('busca') ?? '',
   }
 }

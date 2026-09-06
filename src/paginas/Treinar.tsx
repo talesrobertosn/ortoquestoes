@@ -1,17 +1,26 @@
 import { useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { arvoreAssuntos, contar, montarSessao } from '../dados/acervo'
-import { FILTROS_VAZIOS, ROTULO_DIFICULDADE, type Dificuldade, type Filtros } from '../dados/tipos'
+import {
+  FILTROS_VAZIOS,
+  ROTULO_DIFICULDADE,
+  ROTULO_SITUACAO,
+  type Dificuldade,
+  type Filtros,
+  type Situacao,
+} from '../dados/tipos'
 import { consultaParaFiltros, filtrosParaConsulta, navegar } from '../util/rotas'
 import { SeletorArvore } from '../componentes/SeletorArvore'
 import { SeletorMultiplo } from '../componentes/SeletorMultiplo'
 import { Carregando, Estado } from '../componentes/Estados'
 import { usarSessao } from '../estado/sessao'
 import { usarMedia } from '../util/usarMedia'
+import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { href } from '../util/rotas'
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
 const LIMITES = [10, 20, 30, 50, 100]
+const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'erradas', 'acertadas', 'favoritas']
 const DURACOES: Array<[number, string]> = [
   [60, '1 hora'],
   [120, '2 horas'],
@@ -35,9 +44,10 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     navegar(destino, true)
   }, [filtros])
 
+  const { contexto, carregandoBusca } = usarContextoLocal(filtros.busca)
   const contagens = useMemo(
-    () => (indice ? contar(indice, filtros) : null),
-    [indice, filtros],
+    () => (indice ? contar(indice, filtros, contexto) : null),
+    [indice, filtros, contexto],
   )
   const arvore = useMemo(() => (indice ? arvoreAssuntos(indice) : []), [indice])
 
@@ -60,7 +70,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
   function comecar() {
     if (!indice || total === 0) return
-    const ids = montarSessao(indice, filtros, Date.now())
+    const ids = montarSessao(indice, filtros, Date.now(), contexto)
     iniciar(filtros, ids, simulado ? { simulado: true, limiteSegundos: minutos * 60 } : {})
     navegar('/sessao')
   }
@@ -94,6 +104,50 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
       <div className="cartao">
         <div className="cartao__corpo empilha">
+          <div className="campo" style={{ marginBottom: 0 }}>
+            <label className="campo__rotulo" htmlFor="busca-acervo">
+              Buscar no texto das questões
+            </label>
+            <input
+              id="busca-acervo"
+              className="entrada"
+              type="search"
+              name="busca"
+              autoComplete="off"
+              placeholder="Salter-Harris, Weber, manguito…"
+              value={filtros.busca}
+              onChange={(e) => atualizar({ busca: e.target.value })}
+            />
+            {carregandoBusca && (
+              <span className="campo__auxilio">Carregando o texto das questões…</span>
+            )}
+          </div>
+
+          <div className="campo" style={{ marginBottom: 0 }}>
+            <span className="campo__rotulo">Situação</span>
+            <div className="grupo-opcoes" id="filtro-situacao">
+              {SITUACOES.map((situacao) => (
+                <button
+                  key={situacao}
+                  type="button"
+                  className="opcao-segmento"
+                  aria-pressed={filtros.situacao === situacao}
+                  disabled={situacao !== 'todas' && !(contagens?.porSituacao[situacao] ?? 0)}
+                  onClick={() => atualizar({ situacao })}
+                >
+                  {ROTULO_SITUACAO[situacao]}{' '}
+                  <span className="texto-2 numerico">
+                    {contagens?.porSituacao[situacao] ?? 0}
+                  </span>
+                </button>
+              ))}
+            </div>
+            <span className="campo__auxilio">
+              Vem do que você já respondeu neste navegador. Refazer o que errou rende mais do que
+              questão nova.
+            </span>
+          </div>
+
           <div className="campo" style={{ marginBottom: 0 }}>
             <span className="campo__rotulo">Assuntos</span>
             <SeletorArvore
@@ -226,7 +280,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                 </span>
               </label>
               {simulado && (
-                <div className="grupo-opcoes">
+                <div className="grupo-opcoes" id="filtro-duracao">
                   {DURACOES.map(([valor, rotulo]) => (
                     <button
                       key={valor}
@@ -245,7 +299,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
           <div className="campo" style={{ marginBottom: 0 }}>
             <span className="campo__rotulo">Quantas questões</span>
-            <div className="grupo-opcoes">
+            <div className="grupo-opcoes" id="filtro-limite">
               <button
                 type="button"
                 className="opcao-segmento"
@@ -305,8 +359,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
       {total === 0 && (
         <Estado titulo="Nenhuma questão atende a esse recorte.">
           <p>
-            Tire um filtro por vez — o ano costuma ser o mais restritivo. O botão volta a habilitar
-            assim que houver questões.
+            {filtros.busca.trim()
+              ? `Nenhuma questão contém "${filtros.busca.trim()}". A busca procura no enunciado, nas alternativas e nas etiquetas, e exige todas as palavras.`
+              : 'Tire um filtro por vez. O botão volta a habilitar assim que houver questões.'}
           </p>
         </Estado>
       )}

@@ -10,6 +10,7 @@ questões por filtro sem baixar o acervo inteiro.
 from __future__ import annotations
 
 import datetime as dt
+import json
 import sys
 from pathlib import Path
 
@@ -17,10 +18,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from comum import (  # noqa: E402
     CAMINHO_INDICE,
+    DIR_ACERVO,
     DIR_TEMAS,
     carregar_taxonomia,
     gravar_json,
     ler_json,
+    normalizar,
 )
 
 
@@ -35,6 +38,9 @@ def principal() -> int:
 
     temas: list[dict] = []
     subtemas: list[str] = []
+    # Índice de busca por texto, num arquivo à parte: ele é grande e só faz
+    # sentido baixar quando alguém realmente digita algo.
+    busca: list[list[str]] = []
     provas: list[str] = []
     anos: list[int] = []
     questoes: list[dict] = []
@@ -75,6 +81,12 @@ def principal() -> int:
             )
             if questao.get("ano") and questao["ano"] not in anos:
                 anos.append(questao["ano"])
+            texto = " ".join(
+                [questao.get("enunciado", "")]
+                + [a.get("texto", "") for a in questao.get("alternativas") or []]
+                + (questao.get("subtemas") or [])
+            )
+            busca.append([questao["id"], " ".join(normalizar(texto).split())])
 
     indice = {
         "versao": 1,
@@ -89,8 +101,15 @@ def principal() -> int:
 
     gravar_json(CAMINHO_INDICE, indice)
 
+    caminho_busca = DIR_ACERVO / "busca.json"
+    caminho_busca.write_text(
+        json.dumps(busca, ensure_ascii=False, separators=(",", ":")) + "\n",
+        encoding="utf-8",
+    )
+
     tamanho = CAMINHO_INDICE.stat().st_size / 1024
     print(f"Índice gravado: {len(questoes)} questões, {len(temas)} temas, {tamanho:.1f} kB")
+    print(f"Índice de busca: {caminho_busca.stat().st_size / 1024:.1f} kB (baixado só ao buscar)")
     for tema in temas:
         print(f"  {tema['slug']:<18} {tema['total']:>5}")
     if desconhecidos:

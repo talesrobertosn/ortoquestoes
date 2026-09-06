@@ -104,6 +104,21 @@ export interface Indice {
   questoes: ItemIndice[]
 }
 
+/**
+ * Recorte pelo que já aconteceu neste navegador. Não é propriedade da questão
+ * e sim do histórico de quem está estudando — por isso mora aqui e não no
+ * índice do acervo.
+ */
+export type Situacao = 'todas' | 'naoRespondidas' | 'erradas' | 'acertadas' | 'favoritas'
+
+export const ROTULO_SITUACAO: Record<Situacao, string> = {
+  todas: 'Todas',
+  naoRespondidas: 'Não respondidas',
+  erradas: 'Que eu errei',
+  acertadas: 'Que eu acertei',
+  favoritas: 'Favoritas',
+}
+
 /** Filtros de montagem de sessão. */
 export interface Filtros {
   temas: string[]
@@ -116,6 +131,8 @@ export interface Filtros {
   incluirAnuladas: boolean
   embaralhar: boolean
   limite: number | null
+  situacao: Situacao
+  busca: string
 }
 
 export const FILTROS_VAZIOS: Filtros = {
@@ -129,6 +146,8 @@ export const FILTROS_VAZIOS: Filtros = {
   incluirAnuladas: false,
   embaralhar: true,
   limite: null,
+  situacao: 'todas',
+  busca: '',
 }
 
 export const ROTULO_DIFICULDADE: Record<Dificuldade, string> = {
