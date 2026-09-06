@@ -406,6 +406,28 @@ checar(
   'dá para mandar o seu comentário de dentro da seção da comunidade',
 )
 
+// Questão cujo gabarito oficial parece errado: o aviso vem antes de tudo, e
+// em destaque próprio, porque quem estuda precisa saber disso antes de ler a
+// explicação — não depois de já ter decorado a resposta.
+const comAlerta = Object.entries(comComentario).find(([, c]) => c.alerta)
+if (comAlerta) {
+  await pagina.goto(BASE + `#/questao/${comAlerta[0]}`, { waitUntil: 'networkidle' })
+  await pagina.waitForSelector('.alternativa')
+  await pagina.keyboard.press('1')
+  await pagina.keyboard.press('Enter')
+  await pagina.waitForSelector('.aviso-ia--gabarito', { timeout: 5000 })
+  checar(true, 'gabarito duvidoso ganha aviso em destaque', comAlerta[0])
+  const ordem = await pagina.evaluate(() => {
+    const bloco = document.querySelector('.bloco-comentario:has(.aviso-ia--gabarito)')
+    const filhos = [...bloco.children]
+    return filhos.findIndex((e) => e.classList.contains('aviso-ia--gabarito'))
+      < filhos.findIndex((e) => e.classList.contains('ia__item'))
+  })
+  checar(ordem, 'o aviso aparece antes das explicações das alternativas')
+} else {
+  checar(false, 'nenhum comentário com alerta de gabarito para testar')
+}
+
 console.log('\n8. Largura de 320 pixels')
 await pagina.setViewportSize({ width: 320, height: 720 })
 await pagina.goto(BASE, { waitUntil: 'networkidle' })

@@ -228,7 +228,8 @@
    "D": "A proliferação de fibroblastos vindos da periferia é parte do mecanismo extrínseco, e vale aqui a mesma observação feita para a alternativa C: descreve o processo por trás da aderência, não algo diferente dela."
   },
   "geradoEm": "2026-09-06",
-  "conferido": false
+  "conferido": false,
+  "alerta": "A alternativa dada como certa (\"formação de aderências\") e uma das dadas como erradas (\"mecanismo extrínseco de cicatrização\") descrevem o mesmo fenômeno com nomes diferentes: aderência é o resultado da cicatrização extrínseca. A distinção que a banca faz não se sustenta."
  },
  "mao-0023": {
   "conceito": "A classificação de Lichtman acompanha a necrose do semilunar do que só a ressonância vê até a artrose estabelecida. O que separa IIIA de IIIB não é o semilunar — é o que o carpo em volta fez para compensar.",
@@ -1251,7 +1252,8 @@
    "D": "O mecanismo está certo, mas Finkelstein é teste de outra doença: a dor dele fica sobre o estiloide radial e piora com o polegar dentro da mão e desvio ulnar do punho."
   },
   "geradoEm": "2026-09-06",
-  "conferido": false
+  "conferido": false,
+  "alerta": "O teste de Watson é o único do escafoide entre as alternativas, mas ele foi descrito para instabilidade escafossemilunar, e não para fratura. O exame clínico da fratura aguda do escafoide se apoia em outros achados, listados no comentário."
  },
  "mao-0118": {
   "conceito": "O sistema de polias tem anulares, que prendem o tendão ao osso, e cruciformes, que permitem à bainha dobrar sem colabar. Só as anulares longas, situadas sobre a diáfise e não sobre a articulação, seguram o tendão onde ele mais tende a se afastar.",
@@ -2876,7 +2878,8 @@
    "E": "Ligamento palmar é designação genérica. Os ligamentos palmares do punho existem e é entre eles que está a resposta anatomicamente correta — o radioescafocapitato —, mas o termo solto não nomeia estrutura nenhuma em particular."
   },
   "geradoEm": "2026-09-06",
-  "conferido": false
+  "conferido": false,
+  "alerta": "O gabarito afirma que o ligamento escafossemilunar liga o rádio ao escafoide. Ele liga o escafoide ao semilunar. Quem sai do rádio e abraça o escafoide é o radioescafocapitato — e nenhuma alternativa o nomeia. Guarde a anatomia, não a letra."
  },
  "mao-0270": {
   "conceito": "A lesão de Stener é a do polegar do esquiador levada ao extremo: o ligamento colateral ulnar da metacarpofalângica do polegar se rompe, o coto retrai e escapa para cima da aponeurose do adutor.",
@@ -2960,7 +2963,8 @@
    "D": "Não é procedimento anti-inflamatório."
   },
   "geradoEm": "2026-09-06",
-  "conferido": false
+  "conferido": false,
+  "alerta": "O enunciado descreve perda de tecido e pergunta o objetivo de uma zetaplastia, que não repõe tecido — ela redistribui o que existe. A alternativa mais precisa sobre a técnica (corrigir contratura) não corresponde ao caso apresentado."
  },
  "mao-0277": {
   "conceito": "A zetaplastia troca comprimento por largura: a cicatriz retrátil vira o ramo central de um Z, e dois triângulos de pele adjacente são transpostos, trocando de lugar entre si.",
@@ -3477,6 +3481,183 @@
    "A": "Compressão insuficiente é possível como erro de técnica, mas a questão pergunta a causa anatômica habitual do achado.",
    "B": "Não existe uma artéria radial acessória como variação frequente com esse papel.",
    "C": "Tampouco uma ulnar acessória — a variação anatômica descrita e frequente nesse contexto é a mediana persistente."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0327": {
+  "conceito": "A aponeurose do adutor do polegar cobre a face ulnar da metacarpofalângica e passa por cima do ligamento colateral ulnar. Enquanto o ligamento está no lugar, ele fica por baixo dessa lâmina.",
+  "correta": "Lesão do ligamento colateral ulnar com interposição da aponeurose do adutor do polegar. O coto ligamentar, avulsionado da base da falange proximal, retrai e escapa para cima da aponeurose, que passa a separá-lo fisicamente do osso onde deveria cicatrizar. Nenhuma imobilização resolve isso — o tratamento é cirúrgico, com redução do coto para baixo da aponeurose e reinserção.",
+  "incorretas": {
+   "A": "Erra nas duas partes. Não existe um músculo chamado apenas abdutor do polegar nesse contexto, e o ligamento lesado é o ulnar.",
+   "B": "O músculo está certo e o ligamento não. Ruptura do colateral radial existe e é menos falada, mas do lado radial não há aponeurose do adutor para se interpor — e por isso ela não recebe o nome de Stener.",
+   "C": "O ligamento está certo e o músculo não. O adutor é que cobre a face ulnar; o abdutor curto é tenar e fica do lado radial."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0328": {
+  "conceito": "O ligamento colateral ulnar da metacarpofalângica do polegar vai da cabeça do metacarpo à base da falange proximal, e a ruptura tem lado preferencial — sempre a mesma extremidade.",
+  "correta": "É o colateral ulnar, e a avulsão é mais frequente na falange proximal, ou seja, na inserção distal. Isso não é detalhe: é justamente o coto distal, solto, que retrai e escapa para cima da aponeurose do adutor, produzindo a lesão de Stener. Quando há fragmento ósseo, ele vem da base da falange proximal, e a decisão entre fixá-lo ou ressecá-lo e usar âncora depende do tamanho — abaixo de 15% a 20% da superfície articular, ressecar e ancorar.",
+  "incorretas": {
+   "A": "O ligamento está certo, o local não: a avulsão típica é distal, e não da cabeça do metacarpo.",
+   "B": "Erra o ligamento e o local.",
+   "D": "O local está certo e o ligamento não."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0329": {
+  "conceito": "Na mão torta radial, alinhar o punho sobre a ulna melhora aparência e alavanca. Mas alinhar nem sempre é o melhor negócio funcional — e a decisão depende do que existe acima do punho.",
+  "correta": "Cotovelo rígido ipsilateral é a contraindicação. Com o cotovelo que não dobra, a única forma de a criança levar a mão ao rosto e à boca é justamente pelo desvio radial do punho, que funciona como articulação de substituição. Corrigir o punho nesse caso troca uma mão torta e útil por uma mão alinhada que não alcança o rosto. A conduta é tratar antes a mobilidade do cotovelo, ou aceitar o desvio.",
+  "incorretas": {
+   "A": "Desvio radial acentuado é a razão de operar, não de não operar.",
+   "B": "O encurtamento da ulna é parte do quadro em todos os tipos e não contraindica a correção — ele pode, inclusive, ser tratado por alongamento em tempo próprio.",
+   "D": "Déficit cognitivo não contraindica por si só. O que pesa é o benefício funcional esperado e a capacidade de cooperar com a reabilitação, avaliados caso a caso."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0330": {
+  "conceito": "No estágio III de Eaton a trapeziometacarpiana está gasta e a escafotrapézio-trapezoide ainda está preservada. Isso abre duas estratégias: retirar o trapézio, o que preserva movimento à custa de força, ou fundir a articulação, o que devolve força à custa de movimento.",
+  "correta": "A artrodese trapeziometacarpiana é a melhor escolha no estágio III do paciente jovem. Ela devolve força de pinça durável, o que importa para quem tem alta demanda manual e ainda tem décadas de uso pela frente, e é justamente no jovem que a trapeziectomia tende a decepcionar com o tempo, por perda de força e migração proximal do metacarpo. O preço é conhecido: perde-se a mobilidade da base do polegar, exige-se consolidação e há risco de pseudoartrose. A condição para indicá-la é a escafotrapézio-trapezoide estar sadia — do contrário, a artrodese só transfere a carga para uma articulação também doente.",
+  "incorretas": {
+   "B": "No idoso a preferência é pela trapeziectomia, com ou sem interposição e suspensão: recuperação mais rápida, sem espera de consolidação, e a menor força resultante é bem tolerada numa demanda menor.",
+   "C": "No estágio IV a artrose é pantrapezial — a escafotrapézio-trapezoide também está comprometida. Fundir a trapeziometacarpiana ali é jogar a carga sobre uma articulação já gasta, e a dor permanece.",
+   "D": "Pelo mesmo motivo do anterior, agravado pelo perfil de menor demanda do idoso."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0331": {
+  "conceito": "Swanson organizou as malformações congênitas do membro superior em sete grupos, e o primeiro deles é o das falhas de formação — quando uma parte simplesmente não se formou, por interrupção do desenvolvimento. Os demais incluem falha de diferenciação, duplicação, crescimento excessivo, crescimento insuficiente, síndrome das bandas de constrição e anomalias esqueléticas generalizadas.",
+  "correta": "A mão torta radial é uma falha de formação das partes, na sua variedade longitudinal — falta o rádio, no todo ou em parte, ao longo de um eixo. Falhas de formação se dividem em transversas, que produzem cotos como uma amputação, e longitudinais, que produzem as deficiências radial, ulnar e central.",
+  "incorretas": {
+   "A": "Anomalias generalizadas do esqueleto são outro grupo, que reúne as displasias esqueléticas — acondroplasia, displasia diastrófica e afins.",
+   "B": "Falha de diferenciação é quando as partes se formaram mas não se separaram ou não se moldaram: sindactilia, sinostose radioulnar, camptodactilia, clinodactilia.",
+   "D": "Duplicação é o grupo da polidactilia e da mão em espelho."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0332": {
+  "conceito": "A pseudoartrose congênita da clavícula é rara e, ao contrário da pseudoartrose congênita da tíbia, não tem relação com neurofibromatose. A hipótese mais aceita para explicá-la é mecânica e vascular: a pulsação da artéria subclávia contra a clavícula em formação.",
+  "correta": "Ela é mais comum em meninas e do lado direito. O lado é a parte mais reveladora: a artéria subclávia direita passa mais alta, o que sustenta a hipótese da pulsação, e explica também por que os casos à esquerda quase sempre se associam a dextrocardia. Casos bilaterais existem e são raros. O quadro é uma proeminência indolor no terço médio da clavícula, presente ao nascimento e sem história de trauma — o que a separa da fratura obstétrica, que dói, e que consolida com calo em duas ou três semanas.",
+  "incorretas": {
+   "B": "O lado está certo e o sexo não.",
+   "C": "O sexo está certo, mas o lado esquerdo é a exceção — e quando ocorre, obriga a investigar dextrocardia.",
+   "D": "Erra as duas características."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0333": {
+  "conceito": "A luxação congênita da cabeça do rádio é a anomalia congênita mais comum do cotovelo, e o que a diferencia da luxação traumática crônica é justamente a forma do osso: sendo congênita, a cabeça do rádio nunca se articulou corretamente e por isso não se modelou.",
+  "correta": "O desvio mais comum é posterior, e a cabeça do rádio é menor que o normal, hipoplásica e com a superfície convexa ou em cúpula, em vez de côncava. Junto com isso: colo do rádio longo e afilado, capítulo hipoplásico e ausência de história de trauma. Esses achados morfológicos são o que permite dizer que a luxação é congênita e não a sequela de um Monteggia despercebido — distinção que muda tudo, porque o Monteggia crônico se reduz com osteotomia da ulna e o congênito, não.",
+  "incorretas": {
+   "A": "O desvio anterior ocorre e é menos comum; e uma cabeça de tamanho normal aponta para luxação adquirida, não congênita.",
+   "B": "O desvio está errado, ainda que a morfologia esteja certa.",
+   "C": "O desvio está certo e a morfologia não — e é a morfologia que faz o diagnóstico diferencial."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0334": {
+  "conceito": "As técnicas cirúrgicas do Dupuytren se distinguem pelo que fazem com a pele depois de retirar a fáscia doente. Fechar sob tensão é a receita do hematoma e da necrose de borda, e várias soluções foram descritas para evitar isso.",
+  "correta": "A figura mostra o dedo mínimo fechado em zigue-zague e uma área triangular deixada aberta na base da palma, para cicatrizar por segunda intenção — a técnica que a banca atribui a Jacobsen. Vale registrar que esse nome é pouco citado na literatura de mão que consulto; o que importa entender é o princípio, e ele é o mesmo de McCash: depois de uma fasciectomia extensa, a pele não sobra, e fechá-la sob tensão comprime o leito e produz hematoma. Deixar um trecho aberto elimina a tensão, drena o leito e cicatriza em três a seis semanas com resultado estético aceitável na palma.",
+  "incorretas": {
+   "A": "Skoog descreveu a fasciectomia que preserva o ligamento transverso superficial da palma — o ligamento de Skoog —, poupado pela doença e útil como referência de plano. É uma técnica de ressecção, não de manejo da pele.",
+   "B": "McCash é a técnica da palma aberta propriamente dita: uma incisão transversa na palma é deixada inteiramente aberta para cicatrizar por segunda intenção. O princípio é o mesmo da figura, mas o desenho é transverso e palmar, não triangular na base do dedo.",
+   "C": "Hueston dá nome à dermofasciectomia com enxerto de pele total — o enxerto de barreira, indicado na recidiva e na doença de diátese, porque a pele enxertada não recidiva. Além disso, Hueston é o nome do teste da mesa e da própria diátese."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0335": {
+  "conceito": "A lesão do nervo ulnar tem uma coleção de sinais com nome próprio, e vale organizá-los pelo que cada um mostra. Duchenne é a garra; Froment é a interfalângica do polegar dobrando na pinça; Jeanne é a metacarpofalângica do polegar hiperestendida; Wartenberg é o mínimo abduzido; Egawa é a incapacidade de desviar o dedo médio; Masse é o achatamento do arco transverso da palma; André-Thomas é a flexão do punho como compensação.",
+  "correta": "A atitude em garra é o sinal de Duchenne. Ela vem da perda dos intrínsecos: sem eles, o extensor extrínseco hiperestende as metacarpofalângicas e os flexores extrínsecos, sem oposição, fletem as interfalângicas. Aparece no quarto e no quinto dedos, porque os lumbricais do indicador e do médio são do nervo mediano e continuam funcionando. E aqui cabe o paradoxo ulnar: a garra é mais evidente na lesão baixa, no punho, do que na alta, no cotovelo — porque na alta o flexor profundo do quarto e do quinto dedos também está fraco e não consegue fletir as interfalângicas com a mesma força.",
+  "incorretas": {
+   "B": "A mão da bênção é atribuída à lesão do mediano, e o que ela mostra é a incapacidade de fletir indicador e médio ao tentar fechar a mão — não uma garra em repouso.",
+   "C": "O sinal de Pitres-Testut é a incapacidade de fazer um cone com os dedos, ou de desviar o médio lateralmente. Também é ulnar, mas testa os interósseos, não a atitude em garra.",
+   "D": "O sinal de André-Thomas é a flexão do punho que o paciente faz para tentar estender os dedos por tenodese, compensando a perda intrínseca. É consequência da garra, não o nome dela."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0336": {
+  "conceito": "Na classe 1 de Palmer as lesões traumáticas do complexo triangular são nomeadas pela borda que se soltou: A é a perfuração central, B a avulsão ulnar, C a distal e D a radial.",
+  "correta": "A fratura marginal da fossa sigmoide — ou seja, a avulsão do disco da sua inserção na borda do rádio, com fragmento ósseo — é a lesão 1D. Como a borda que se soltou é a radial, o reparo reinsere o disco ali, por via artroscópica ou aberta. Guarde a série acompanhando o giro em torno do disco: centro, ulnar, distal, radial.",
+  "incorretas": {
+   "A": "A 1A é a perfuração central, numa região avascular que não cicatriza — o tratamento é desbridamento, não reparo.",
+   "B": "A 1B é a avulsão ulnar, na fóvea e no estiloide, e é a mais associada a instabilidade da radioulnar distal.",
+   "C": "A 1C é a avulsão distal, dos ligamentos ulnossemilunar e ulnopiramidal, com quadro de instabilidade ulnocarpal."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0337": {
+  "conceito": "A descompressão isolada, ou neurólise in situ, abre o teto do túnel cubital sem mover o nervo. É a cirurgia menos agressiva e a que menos desvasculariza — mas, ao remover a contenção posterior, pode deixar o nervo livre para saltar por cima do epicôndilo medial na flexão.",
+  "correta": "A revisão é mais necessária em quem tem menos de 50 anos e foi operado com sintomas leves. Duas razões se somam. No mais jovem os tecidos são elásticos e pouco fibrosados, e o nervo ganha mobilidade suficiente para subluxar quando o teto é aberto — no mais velho, a fibrose da compressão crônica acaba servindo de contenção. E quem chegou à cirurgia com pouco sintoma tinha pouco a ganhar: qualquer estalido ou desconforto novo é percebido como piora. Daí a regra prática: testar a estabilidade do nervo em flexão máxima ainda na mesa, e transpor de saída se ele subluxar.",
+  "incorretas": {
+   "A": "Idade acima de 50 anos protege, pela menor mobilidade do nervo nos tecidos já fibrosados.",
+   "B": "Junta dois fatores de menor risco — idade maior e sintomas graves, em que a margem de melhora é grande e a satisfação é alta.",
+   "D": "A idade está certa, o perfil de sintomas não: sintoma grave prévio significa muito a ganhar, e o resultado, mesmo parcial, costuma satisfazer."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0338": {
+  "alerta": "Os cinco fatores de Kaplan, Glickel e Eaton prevêem FALHA do tratamento não cirúrgico, e três das quatro alternativas — inclusive a apontada pelo gabarito — descrevem justamente fatores de falha. A única que se associa a sucesso é a idade menor que 50 anos, alternativa A. Guarde os cinco fatores e não a letra.",
+  "conceito": "Kaplan, Glickel e Eaton identificaram cinco fatores que prevêem que o tratamento não cirúrgico da síndrome do túnel do carpo vai fracassar: idade acima de 50 anos, sintomas há mais de 10 meses, parestesia constante, tenossinovite estenosante associada e teste de Phalen positivo em menos de 30 segundos.",
+  "correta": "O gabarito aponta o Phalen positivo em 20 segundos. Isso é menos de 30 segundos e, portanto, é um dos cinco fatores de falha — não de sucesso. O que a série de Kaplan mostra é uma escala: sem nenhum fator, cerca de dois terços melhoram só com tratamento conservador; com três fatores, menos de um em cada dez; com quatro ou cinco, praticamente ninguém. É por isso que a lista é útil na conversa de consultório: ela transforma \"vamos tentar por três meses\" numa estimativa concreta de quanto essa tentativa vale a pena.",
+  "incorretas": {
+   "A": "Esta é a alternativa que de fato se associa a sucesso: idade abaixo de 50 anos é a ausência do primeiro fator da lista.",
+   "B": "Doze meses de sintomas ultrapassa os 10 meses do critério, e é fator de falha.",
+   "C": "Tenossinovite estenosante associada é o quarto fator da lista, e também prevê falha."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0339": {
+  "conceito": "A deformidade de Madelung vem de uma falha de crescimento da porção volar e ulnar da fise distal do rádio, e o que trava esse canto é uma banda anômala com nome próprio.",
+  "correta": "O ligamento espessado é o de Vickers, que vai da metáfise volar e ulnar do rádio ao semilunar. Preso ali, ele impede o crescimento daquele canto da fise enquanto o resto continua: o rádio se encurva, a superfície articular volta-se para volar e ulnar, a ulna fica proeminente no dorso e o carpo assume forma de cunha entre os dois ossos. Em criança ainda em crescimento, ressecá-lo junto com a fisiólise pode interromper a progressão — o que não se consegue tratando só o osso.",
+  "incorretas": {
+   "A": "Salter dá nome à classificação das lesões fisárias, junto com Harris, e à osteotomia inominada do quadril. Não a esse ligamento.",
+   "B": "Bowels não corresponde a nenhuma estrutura descrita nesta deformidade.",
+   "C": "Langer dá nome às linhas de tensão da pele, que orientam o desenho das incisões, e à mesodermal dysplasia de Langer. Não ao ligamento do Madelung."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0340": {
+  "conceito": "Vale conhecer a ambiguidade deste nome. A mão da bênção clássica é a da lesão alta do nervo mediano: ao tentar fechar a mão, indicador e médio ficam estendidos porque tanto o flexor superficial quanto o profundo desses dedos estão paralisados. A síndrome do interósseo anterior produz um quadro aparentado, porém distinto, porque nela o flexor superficial é poupado.",
+  "correta": "Entre as alternativas oferecidas, a única do território do mediano é o interósseo anterior, e é ela que o gabarito aponta. O que o interósseo anterior de fato produz: perda da flexão da interfalângica do polegar, pelo flexor longo, e da interfalângica distal do indicador e do médio, pelo flexor profundo — daí o sinal próprio dele, o do círculo ou de Kiloh-Nevin, com as polpas achatadas em vez de um círculo ao pedir o gesto de \"ok\". Como o ramo é motor puro, não há alteração de sensibilidade.",
+  "incorretas": {
+   "A": "O ulnar produz a mão em garra, que se parece com a da bênção mas envolve o quarto e o quinto dedos, aparece em repouso e não ao tentar fechar a mão.",
+   "B": "O radial produz punho e dedos caídos, com alteração sensitiva no dorso da mão.",
+   "D": "O interósseo posterior dá queda dos dedos na metacarpofalângica, com o punho ainda estendendo em desvio radial e sem déficit sensitivo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0341": {
+  "conceito": "Sunderland nomeou cada grau pela estrutura que se perde, e a nomenclatura é precisa: grau II lesa o axônio; grau III lesa a fibra nervosa, que é o axônio mais o seu tubo endoneural; grau IV lesa o fascículo, ou seja, também o perineuro; grau V lesa o tronco nervoso inteiro, incluindo o epineuro.",
+  "correta": "Lesão da fibra nervosa corresponde ao grau III. Perdido o tubo endoneural, os axônios em regeneração podem trocar de canal dentro do mesmo fascículo e chegar a um alvo que não é o seu: a recuperação existe, mas é parcial e imprevisível. É nesse grau que a reeducação sensitiva tem papel real, ensinando o cérebro a reinterpretar o que passa a chegar.",
+  "incorretas": {
+   "A": "O grau II é a lesão apenas do axônio, com o tubo endoneural íntegro guiando a regeneração de volta ao alvo original — recuperação completa, à razão de cerca de um milímetro por dia.",
+   "C": "O grau IV é a lesão do fascículo, com perineuro roto e neuroma em continuidade. Não recupera espontaneamente.",
+   "D": "O grau V é a secção do tronco nervoso, a neurotmese de Seddon."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0342": {
+  "conceito": "Dentro do túnel do carpo os dez tendões não estão embolados: os flexores superficiais e profundos dos dedos ocupam a bursa ulnar, ao centro e do lado ulnar, enquanto o flexor longo do polegar corre isolado no canto radial, dentro da bursa radial, com bainha própria.",
+  "correta": "O tendão assinalado é o flexor longo do polegar — reconhecível por estar sozinho, no canto radial, separado do bloco dos flexores dos dedos. Essa posição isolada explica dois fatos clínicos: a bursa radial se comunica com a bainha do polegar e com o espaço de Parona, o que permite o abscesso em ferradura; e é ali, contra uma espícula do escafoide, que o tendão se rompe por atrito na artrite reumatoide — a lesão de Mannerfelt.",
+  "incorretas": {
+   "A": "O flexor radial do carpo passa pelo punho num compartimento próprio, escavado no trapézio, e por isso fica fora do túnel do carpo propriamente dito — detalhe anatômico que costuma escapar.",
+   "C": "Os flexores profundos dos dedos formam o plano mais dorsal do bloco central, atrás dos superficiais, e não ocupam o canto radial.",
+   "D": "O flexor profundo do quinto dedo está na extremidade ulnar do bloco, do lado oposto ao indicado."
   },
   "geradoEm": "2026-09-06",
   "conferido": false

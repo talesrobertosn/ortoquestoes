@@ -515,6 +515,12 @@ function ComentarioDaIA({
 
       {comentario && (
         <>
+          {comentario.alerta && (
+            <p className="aviso-ia aviso-ia--gabarito">
+              <strong>Atenção ao gabarito desta questão.</strong> {comentario.alerta}
+            </p>
+          )}
+
           {!comentario.conferido && (
             <p className="aviso-ia">
               Texto gerado por inteligência artificial e ainda não revisado por um médico. Serve

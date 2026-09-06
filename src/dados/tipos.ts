@@ -49,6 +49,12 @@ export interface ComentarioComunidade {
  * em letras claras que ninguém revisou aquilo.
  */
 export interface ComentarioIA {
+  /**
+   * Aviso sobre a própria questão, quando o gabarito oficial parece errado ou
+   * o enunciado é incoerente. Aparece antes de tudo, em destaque: quem estuda
+   * precisa saber disso antes de ler a explicação, não depois.
+   */
+  alerta?: string | null
   /** Conceito de fundo, quando ajuda a entender antes de ir alternativa a alternativa. */
   conceito?: string | null
   /** Por que a alternativa do gabarito é a correta. */

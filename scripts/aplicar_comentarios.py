@@ -14,7 +14,11 @@ recusa o lote inteiro quando encontra:
   - questão sem gabarito (não há o que explicar como correta);
   - letra em ``incorretas`` que não existe entre as alternativas;
   - a letra do gabarito listada entre as incorretas;
-  - alternativa errada sem explicação.
+  - alternativa errada sem explicação;
+  - campo ``alerta`` presente e vazio.
+
+Quando o gabarito oficial parece errado, o comentário pode trazer um campo
+``alerta``, que a interface mostra em destaque antes de qualquer explicação.
 
 Uso:
     python3 scripts/aplicar_comentarios.py lote.json
@@ -60,6 +64,12 @@ def conferir(qid: str, comentario: dict, questao: dict) -> list[str]:
 
     if not str(comentario.get("correta", "")).strip():
         problemas.append(f"{qid}: falta o texto da alternativa correta")
+
+    # O alerta existe para dizer que o gabarito oficial parece errado. Deixá-lo
+    # vazio é pior do que não tê-lo: a interface mostraria um aviso em destaque
+    # sem dizer do quê.
+    if "alerta" in comentario and not str(comentario["alerta"] or "").strip():
+        problemas.append(f"{qid}: o campo alerta está presente e vazio")
 
     incorretas = comentario.get("incorretas") or {}
     if gabarito in incorretas:

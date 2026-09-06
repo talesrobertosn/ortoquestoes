@@ -981,6 +981,14 @@ textarea {
   color: var(--texto-2);
 }
 
+/* Aviso de gabarito duvidoso: precisa se distinguir do aviso de rotina sobre
+   o texto ser de IA, porque diz respeito ao conteúdo da própria questão. */
+.aviso-ia--gabarito {
+  border-left-color: var(--erro);
+  background: var(--erro-veu);
+  color: var(--texto);
+}
+
 .ia__conceito {
   margin-bottom: 0.875rem;
 }
