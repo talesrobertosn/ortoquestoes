@@ -16,6 +16,7 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0025` | Deficiência longitudinal da **ulna**: tipo I de Bayne é o mais comum | A literatura que conheço aponta o tipo II (aplasia parcial). Para o rádio, o tipo IV do gabarito está certo |
 | `mao-0053` | Polegar trifalângico: comissura estreita + ausência de tenar = tipo **III** | Esse é exatamente o quadro do tipo **II de Blauth**, e Blauth é classificação de hipoplasia do polegar, não de polegar trifalângico |
 | `mao-0238` | O número 6 do desenho é o ligamento **transverso retinacular** | A figura é uma vista dorsal do punho e o número 6 parece ser o ligamento intercarpal dorsal. "Transverso retinacular" é nome do aparelho extensor do dedo, não do punho |
+| `mao-0311` | A instabilidade semilunopiramidal é avaliada pelo teste de **Masquelet** | Não conheço um teste de punho com esse nome — Masquelet dá nome à técnica da membrana induzida. Os testes lunopiramidais que conheço são o balote de Reagan e o cisalhamento de Kleinman, e Linscheid (que é uma das alternativas) descreveu instabilidade do carpo |
 
 ## Afirmação que não consegui sustentar
 
