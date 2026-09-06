@@ -27,6 +27,7 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0178` | A infiltração no túnel do carpo responde mais rápido em **homens acima de 40 anos** | Não achei base para esse recorte, e os preditores de boa resposta que conheço apontam para outro lado |
 | `mao-0237` | Liberação do túnel do carpo é necessária em **67%** depois de artrodese total do punho | Número muito alto e não consigo confirmá-lo |
 | `mao-0242` | A "gota de lágrima" da borda volar do rádio mede **5 mm** de largura máxima | Conheço a descrição do ângulo da gota (~70°), não a da largura |
+| `mao-0418` | O padrão mais comum de fratura do semilunar no Kienböck acomete o polo **anterior** | Conheço a fratura coronal do semilunar, que separa fragmento volar e dorsal, mas não consigo confirmar qual polo é o mais acometido |
 
 ## Classificação que não domino com essa granularidade
 
