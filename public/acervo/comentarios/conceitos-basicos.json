@@ -1,0 +1,939 @@
+{
+ "conceitos-basicos-0001": {
+  "conceito": "O osso tem duas fontes de sangue: a medular (nutrícia), que irriga de dentro para fora os dois terços internos da cortical, e a periosteal, que irriga o terço externo. A fratura diafisária rompe justamente a circulação medular, e é aí que entra o tecido mole ao redor. O periósteo e a musculatura aderida assumem o suprimento e passam a nutrir o foco de fora para dentro, e é dessa vascularização extraóssea que vem a maior parte da resposta na consolidação. Daí decorre a regra prática de toda a osteossíntese moderna: preservar o envelope de partes moles importa mais do que a redução anatômica perfeita.",
+  "correta": "Tecido mole adjacente: rompida a circulação medular, é o envelope de partes moles que passa a nutrir o foco.",
+  "incorretas": {
+   "A": "O endósteo é justamente o que se perde com a fratura e com a fresagem do canal; ele se recupera depois, mas não é a fonte principal na fase inicial.",
+   "B": "O periósteo participa e muito, mas ele próprio depende da vascularização que vem do tecido mole que o recobre — a resposta mais completa é o envelope adjacente.",
+   "C": "O osso cortical é o tecido irrigado, não a fonte de irrigação."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0002": {
+  "conceito": "Duas particularidades anatômicas explicam a associação. Até cerca de 18 meses de vida existem vasos transfisários, que atravessam a placa de crescimento e permitem que a infecção metafisária alcance a epífise e a articulação — depois dessa idade a fise fecha esse caminho e funciona como barreira. E há articulações em que a metáfise é intracapsular, de modo que a infecção rompe a cortical e cai direto dentro da articulação: o quadril é o exemplo maior, seguido de ombro, cotovelo e tornozelo. Lactente com osteomielite proximal do fêmur é, portanto, artrite séptica do quadril até prova em contrário.",
+  "correta": "Crianças menores de 18 meses e no quadril: vasos transfisários ainda presentes somados à metáfise intracapsular.",
+  "incorretas": {
+   "A": "Acima de 18 meses a fise já funciona como barreira, e o joelho tem metáfise extracapsular.",
+   "B": "A idade está certa, mas a metáfise proximal da tíbia e a distal do fêmur são extracapsulares — a infecção não cai direto na articulação.",
+   "C": "A articulação está certa, mas acima de 18 meses os vasos transfisários já regrediram."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0003": {
+  "conceito": "O parafuso de tração comprime os fragmentos e é excelente contra a separação, mas sozinho não resiste a nada além disso: qualquer flexão ou torção o arranca. A placa de neutralização não comprime nem sustenta carga — ela existe para absorver as forças de flexão, rotação e carga axial que de outro modo incidiriam sobre o parafuso, deixando-o cumprir apenas o papel de manter a compressão interfragmentária. O nome diz exatamente isso: ela neutraliza o que o parafuso não aguenta.",
+  "correta": "Proteger o parafuso de tração das forças de flexão.",
+  "incorretas": {
+   "A": "O alvo da proteção é o parafuso, e não o foco: o foco já está comprimido pelo parafuso.",
+   "C": "Erra o alvo pelo mesmo motivo.",
+   "D": "O alvo está certo, mas as forças que a placa de neutralização absorve são descritas como flexão, rotação e carga axial — outra questão deste acervo (`conceitos-basicos-0017`) responde justamente flexão e rotação."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0004": {
+  "conceito": "O ácido tranexâmico não coagula nada: ele impede que o coágulo já formado seja desmanchado. É um análogo da lisina que ocupa os sítios de ligação do plasminogênio à fibrina; sem essa ligação, o plasminogênio não é convertido em plasmina e a fibrina não é degradada. O efeito é antifibrinolítico, e é por isso que ele reduz sangramento na artroplastia e no trauma sem aumentar de forma clinicamente relevante o risco de trombose — ele não cria coágulo novo, apenas preserva o que já existe.",
+  "correta": "Inibição da ativação do plasminogênio, que impede a formação de plasmina e a degradação da fibrina.",
+  "incorretas": {
+   "A": "A prostaciclina é vasodilatadora e antiagregante — ativá-la aumentaria o sangramento.",
+   "B": "A ativação da antitrombina é o mecanismo da heparina, que é anticoagulante e faz o oposto do pretendido.",
+   "D": "Inibir fatores da coagulação é mecanismo de anticoagulante, e não de antifibrinolítico."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0005": {
+  "conceito": "As três propriedades de um enxerto se separam pelo que ele traz. Osteogênese é trazer células vivas capazes de formar osso — só o enxerto autólogo fresco tem. Osteoindução é trazer sinal que recruta e diferencia células do hospedeiro, papel das proteínas morfogenéticas e da matriz óssea desmineralizada. Osteocondução é oferecer apenas o andaime tridimensional sobre o qual o osso do hospedeiro cresce. A biocerâmica — hidroxiapatita, fosfato tricálcico, sulfato de cálcio — não tem célula nem fator de crescimento: ela é andaime, e por isso sua propriedade é a osteocondução.",
+  "correta": "Osteocondução: a biocerâmica é o arcabouço sobre o qual o osso do hospedeiro cresce.",
+  "incorretas": {
+   "A": "Osteogênese exige células vivas no enxerto, e a cerâmica é material inorgânico sem célula alguma.",
+   "B": "Osteoindução exige sinalização biológica; a cerâmica pura não induz diferenciação celular.",
+   "D": "\"Osteovascularização\" não é uma das propriedades classicamente descritas para enxertos."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0006": {
+  "conceito": "Cada exame do líquido sinovial pede um recipiente. Para contagem celular e citologia usa-se tubo com EDTA, o mesmo do hemograma: o anticoagulante impede que o líquido, muitas vezes rico em fibrina, coagule dentro do tubo e leve as células junto no coágulo, o que falsearia a contagem para baixo. Para cultura, seringa ou frasco de hemocultura, sem anticoagulante que interfira no crescimento. Para pesquisa de cristais, tubo simples ou com heparina, porque o EDTA pode produzir artefatos cristalinos que confundem a leitura.",
+  "correta": "Tubo com EDTA, que preserva as células e evita a coagulação do líquido antes da contagem.",
+  "incorretas": {
+   "A": "Sem anticoagulante o líquido sinovial pode coagular, e as células ficam presas no coágulo.",
+   "B": "A heparina serve melhor à pesquisa de cristais; para contagem celular o padrão é o EDTA.",
+   "C": "Frasco de cultura ou seringa é o acondicionamento da amostra para microbiologia, não para citologia."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0007": {
+  "conceito": "O processamento da dor tem cinco fases em sequência. Transdução: o estímulo nocivo vira potencial de ação no nociceptor periférico. Condução: o impulso viaja pela fibra até o corno posterior. Transmissão: a sinapse no corno posterior e a subida pelos tratos espinotalâmicos. Percepção: a experiência consciente no córtex. E modulação: as vias que DESCEM do tronco encefálico — periaquedutal, rafe magno — até o corno posterior, liberando opioides endógenos, serotonina e noradrenalina para amplificar ou reduzir o sinal. É nela que agem os opioides e os antidepressivos usados na dor crônica.",
+  "correta": "Modulação: é a fase das vias descendentes que chegam ao nível medular.",
+  "incorretas": {
+   "A": "Condução é o trajeto ascendente do impulso pela fibra periférica.",
+   "B": "Percepção é a experiência consciente, no córtex — o fim da via, não uma via descendente.",
+   "D": "Transmissão é a sinapse no corno posterior e a subida pelos tratos ascendentes."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0008": {
+  "conceito": "A órtese funcional de Sarmiento trata a fratura da diáfise umeral sem imobilizar articulação nenhuma, e a lógica é a oposta à do gesso. A luva de material termoplástico circunda o braço e comprime as partes moles; quando o músculo contrai, ele empurra contra essa parede rígida e o compartimento se comporta como uma coluna de líquido incompressível, que alinha os fragmentos — é o efeito hidráulico. A gravidade, com o braço pendente, faz a tração e corrige o encurtamento. Cotovelo e ombro seguem se movendo, o que evita rigidez.",
+  "correta": "Órtese funcional de Sarmiento.",
+  "incorretas": {
+   "A": "A tipoia Velpeau imobiliza o braço junto ao tórax, sem efeito hidráulico nem tração pela gravidade.",
+   "C": "O gesso circular axilopalmar imobiliza articulações e não permite a contração ativa que o método exige.",
+   "D": "A tala em pinça de confeiteiro é imobilização inicial, provisória, e não trata pelos princípios descritos."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0010": {
+  "conceito": "O consenso internacional organiza o diagnóstico em critérios maiores e menores. Os maiores, suficientes sozinhos, são dois: fístula comunicando com a prótese e duas culturas positivas para o MESMO germe. Os menores — PCR e VHS elevados, leucócitos elevados no líquido sinovial, percentual elevado de polimorfonucleares, esterase leucocitária ++, histologia com neutrófilos e uma única cultura positiva — fecham o diagnóstico quando três deles estão presentes. Reparar na exigência de germe idêntico é o que resolve duas das alternativas erradas.",
+  "correta": "Esterase leucocitária ++, histologia positiva e percentual elevado de polimorfonucleares: três critérios menores.",
+  "incorretas": {
+   "A": "Na lista da MSIS, \"VHS e PCR elevados\" contam juntos como UM único critério menor, o sorológico. Somado à histologia, dão dois — falta um para fechar o diagnóstico.",
+   "B": "Duas culturas positivas com bactérias DIFERENTES não constituem o critério maior, que exige germe idêntico — culturas discordantes sugerem contaminação.",
+   "D": "Mesmo problema: culturas com germes diferentes não fecham critério maior."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0011": {
+  "conceito": "Os critérios de Kocher separam artrite séptica do quadril de sinovite transitória na criança, e são quatro, todos objetivos: febre acima de 38,5 graus, incapacidade de apoiar o membro, VHS acima de 40 mm/h e leucócitos acima de 12.000. A probabilidade de artrite séptica sobe de cerca de 3% com um critério para mais de 90% com todos os quatro. A modificação de Caird acrescentou a PCR acima de 20 mg/l como quinto critério, mas ela não faz parte da lista original.",
+  "correta": "Incapacidade de apoio do membro inferior.",
+  "incorretas": {
+   "A": "O critério é VHS acima de 40 mm/h; 20 mm fica abaixo do ponto de corte.",
+   "B": "A PCR entra na modificação de Caird, e não nos critérios originais de Kocher.",
+   "C": "Diminuição da mobilidade é achado clínico esperado, mas não é um dos quatro critérios."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0012": {
+  "conceito": "O nervo femoral inerva o compartimento anterior da coxa — quadríceps e sartório — e leva sensibilidade para a face anterior da coxa e, pelo seu ramo terminal safeno, para a face medial da perna. Bloqueá-lo na região inguinal, portanto, analgesia a face anterior da coxa e o joelho, o que faz dele o bloqueio de escolha na artroplastia total do joelho e na fratura do fêmur distal. A face medial da COXA é território do obturatório, e a região do quadril recebe inervação de várias fontes, o que exige bloqueios mais amplos.",
+  "correta": "Joelho e face anterior da coxa.",
+  "incorretas": {
+   "A": "A face medial da coxa é do nervo obturatório, e não do femoral.",
+   "B": "Erra as duas regiões: o quadril não é coberto isoladamente pelo femoral, e a face medial é do obturatório.",
+   "D": "A face anterior da coxa está certa, mas a analgesia do quadril não se obtém com o bloqueio femoral isolado."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0013": {
+  "conceito": "Cierny e Mader classificam a osteomielite em quatro tipos anatômicos, e o critério que separa o III do IV é a estabilidade. Tipo I: medular, só o canal. Tipo II: superficial, a partir de uma ferida, atingindo a superfície externa da cortical. Tipo III: localizada, com sequestro de espessura total da cortical, porém em segmento que ainda mantém a estabilidade axial do osso — é o caso do orifício ou do trajeto de parafuso infectado. Tipo IV: difusa, circunferencial, cuja limpeza cria instabilidade e exige reconstrução. Não existe tipo V nessa classificação.",
+  "correta": "Tipo III: lesão localizada, de espessura total, sem comprometer a estabilidade axial.",
+  "incorretas": {
+   "A": "O tipo II é superficial, sem penetrar toda a espessura da cortical.",
+   "C": "O tipo IV é difuso e sua ressecção cria instabilidade — exatamente o que o enunciado nega.",
+   "D": "Não há tipo V na classificação anatômica de Cierny e Mader, que vai de I a IV."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0014": {
+  "conceito": "A cintilografia na pseudartrose lê a atividade biológica das pontas. A hipertrófica capta intensamente nos dois fragmentos: há biologia de sobra, o que falta é estabilidade. A atrófica capta pouco ou nada: falta biologia. A pseudartrose SINOVIAL é a que tem um achado próprio — duas áreas quentes separadas por uma fenda fria no meio, porque entre as pontas se formou uma cavidade revestida por pseudomembrana e preenchida por líquido, tecido avascular que não capta. É um diagnóstico que muda a cirurgia: não basta estabilizar, é preciso ressecar a pseudoarticulação.",
+  "correta": "Sinovial: a fenda fria entre duas áreas quentes corresponde à cavidade com líquido e pseudomembrana entre as pontas.",
+  "incorretas": {
+   "B": "A atrófica mostra hipocaptação difusa, e não duas áreas quentes.",
+   "C": "A oligotrófica tem captação intermediária, sem o padrão de fenda fria interposta.",
+   "D": "A hipertrófica capta intensamente e de forma contínua, sem interrupção no meio."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0015": {
+  "conceito": "A classificação de Gledhill, modificada por Roberts, organiza a osteomielite subaguda pela localização e pela imagem. Tipo I: lesão lítica central metafisária (abscesso de Brodie). Tipo II: metafisária com erosão cortical. Tipo III: cortical diafisária. Tipo IV: diafisária com reação periosteal em camadas de cebola, que simula tumor. Tipo V: epifisária. Tipo VI: vertebral. Guardar a sequência importa porque os tipos IV e V são os que mais confundem com sarcoma de Ewing e com lesão tumoral epifisária.",
+  "correta": "Tipo VI, reservado ao acometimento vertebral.",
+  "incorretas": {
+   "A": "O tipo II é metafisário com erosão cortical.",
+   "B": "O tipo III é cortical diafisário.",
+   "C": "O tipo IV é diafisário com reação periosteal em camadas de cebola."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0016": {
+  "conceito": "A fresagem destrói a circulação endosteal do segmento fresado, e a resposta do osso é aumentar o fluxo periosteal para compensar — fenômeno documentado experimentalmente e que se acompanha de hiperemia local. O receio de que isso piorasse a fratura exposta não se confirmou: os ensaios mostraram que a haste fresada na tíbia reduz o número de procedimentos secundários e o tempo até a consolidação em comparação com a não fresada, o que a tornou a escolha padrão também nas expostas de baixo grau.",
+  "correta": "Aumento do fluxo sanguíneo periosteal, resposta compensatória à perda da circulação endosteal.",
+  "incorretas": {
+   "B": "A haste fresada tende a REDUZIR o tempo de consolidação, não a aumentá-lo.",
+   "C": "Complicações patelofemorais dependem da via de introdução da haste e do ponto de entrada, e não da fresagem.",
+   "D": "É o contrário: a fresagem reduz o número de procedimentos secundários, e foi esse achado que consolidou sua indicação."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0017": {
+  "conceito": "O parafuso de tração faz uma coisa muito bem — comprimir os fragmentos um contra o outro — e nada além disso. Ele não resiste a flexão, não resiste a torção e não sustenta carga axial: qualquer uma dessas forças o afrouxa ou o quebra. A placa de neutralização é colocada sobre a fratura já comprimida exatamente para absorver essas forças, permitindo que o parafuso mantenha apenas a compressão interfragmentária. É a combinação clássica da fratura espiral ou oblíqua longa da diáfise.",
+  "correta": "Flexão e rotação — as forças que o parafuso de tração isolado não suporta.",
+  "incorretas": {
+   "B": "A flexão está certa, mas compressão é justamente o que o parafuso PRODUZ, e não do que precisa ser protegido.",
+   "C": "A rotação está certa, e a compressão, de novo, é o efeito desejado do parafuso.",
+   "D": "A rotação está certa, mas cisalhamento não é o par classicamente citado com ela nessa definição."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0018": {
+  "conceito": "A haste intramedular controla bem alinhamento e translação por si só: ela ocupa o canal e funciona como tutor interno, e os fragmentos se alinham ao redor dela. O que ela NÃO controla, quando a fratura é multifragmentar e não há contato cortical estável, são a rotação — nada impede o fragmento de girar em torno da haste — e o encurtamento — nada impede que os fragmentos deslizem um sobre o outro ao longo dela. Os parafusos de bloqueio proximais e distais existem para travar exatamente essas duas coisas, transformando a haste em construto estático.",
+  "correta": "Desvio rotacional e encurtamento — o que o bloqueio acrescenta ao que a haste já faz sozinha.",
+  "incorretas": {
+   "A": "Alinhamento angular e translação já são controlados pela própria haste dentro do canal.",
+   "B": "O encurtamento está certo, mas o desvio angular não depende do bloqueio.",
+   "C": "A rotação está certa, mas a translação é controlada pela haste, e não pelos parafusos."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0019": {
+  "conceito": "A ruptura da cabeça medial do gastrocnêmio — a chamada perna de tenista — tem um mecanismo bem definido, e ele decorre de o músculo ser biarticular. O gastrocnêmio cruza joelho e tornozelo, e portanto atinge o alongamento máximo com o joelho ESTENDIDO e o tornozelo em DORSIFLEXÃO. Se nessa posição ele é obrigado a contrair enquanto continua sendo alongado — contração excêntrica, como no arranque para uma bola —, a junção miotendínea cede. Daí a dor súbita na panturrilha, com a sensação de pedrada, e o diagnóstico diferencial com trombose venosa e com ruptura do tendão calcâneo.",
+  "correta": "Contração excêntrica, com o joelho em extensão e o tornozelo em dorsiflexão — a posição de máximo alongamento de um músculo biarticular.",
+  "incorretas": {
+   "A": "Com o joelho fletido o gastrocnêmio está relaxado, e o mecanismo não se reproduz.",
+   "C": "Contração concêntrica encurta o músculo; a lesão exige alongamento sob carga. E joelho e tornozelo fletidos relaxam o músculo.",
+   "D": "A extensão do joelho está certa, mas a flexão plantar relaxa o gastrocnêmio, e a contração concêntrica não é o mecanismo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0020": {
+  "conceito": "A estabilidade do fixador externo uniplanar segue quatro regras, e todas se deduzem pensando no aparelho como uma alavanca. Pinos mais grossos e em maior número aumentam a rigidez. Pinos do mesmo fragmento afastados entre si aumentam o braço de apoio e a resistência à angulação. Pinos próximos do foco encurtam o vão livre. E a barra próxima do osso reduz o braço de alavanca entre osso e montagem — barra afastada é a maneira mais rápida de tornar um fixador instável.",
+  "correta": "Maior distância entre os pinos do mesmo lado da fratura, que amplia o braço de apoio em cada fragmento.",
+  "incorretas": {
+   "A": "Barras muito próximas entre si reduzem a rigidez do conjunto; barras separadas em montagem dupla aumentam.",
+   "B": "É o contrário: quanto mais longe a barra estiver do osso, maior o braço de alavanca e menor a estabilidade.",
+   "D": "Também é o contrário: os pinos centrais devem ficar PRÓXIMOS ao foco, para encurtar o vão sem apoio."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0021": {
+  "conceito": "O vocabulário da dor tem termos que se confundem e que vale separar de uma vez. Alodinia: dor provocada por estímulo que normalmente não dói — o lençol sobre o pé, a brisa na pele. Hiperalgesia: dor exagerada diante de estímulo que já é doloroso. Hipoestesia e anestesia: redução e ausência de sensibilidade. Parestesia: sensação anormal espontânea, formigamento ou picada, sem ser desagradável. Disestesia: sensação anormal e desagradável. Alodinia e hiperalgesia são as marcas da sensibilização, central ou periférica, e aparecem na dor neuropática e na síndrome dolorosa regional complexa.",
+  "correta": "Dor a estímulo que normalmente não deveria ser doloroso.",
+  "incorretas": {
+   "A": "Ausência de sensibilidade à dor é analgesia.",
+   "B": "Sensação anormal de picadas e formigamentos é parestesia.",
+   "C": "Diminuição de sensibilidade num dermátomo é hipoestesia."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0022": {
+  "conceito": "A dipirona (metamizol) é analgésica e antitérmica potente, e praticamente sem efeito anti-inflamatório periférico — e é essa dissociação que denuncia o mecanismo. Ela age predominantemente no sistema nervoso central, inibindo a síntese de prostaglandinas centrais, com participação também de vias canabinoides e opioidérgicas endógenas. Por não bloquear de forma relevante a COX-1 periférica, não produz o dano gástrico nem a inibição plaquetária dos anti-inflamatórios não esteroides — o que a torna útil no perioperatório ortopédico. O efeito adverso que a marca é hematológico: a agranulocitose, rara.",
+  "correta": "Inibição das prostaglandinas centrais.",
+  "incorretas": {
+   "A": "A inibição da COX-1 periférica é o mecanismo dos anti-inflamatórios não esteroides, e a dipirona não a produz de forma relevante — daí não ter o efeito gástrico nem o antiagregante.",
+   "B": "A dipirona não age por bloqueio de serotonina.",
+   "C": "O citocromo P450 metaboliza a droga; não é alvo dela."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0023": {
+  "conceito": "Na análise de deformidade de Paley, o CORA é o ponto onde os eixos proximal e distal do osso se cruzam. Numa deformidade angular pura, esse cruzamento cai exatamente sobre o ápice visível da angulação — o ponto óbvio. Quando o CORA não coincide com o ápice, é sinal de que há um segundo componente somado à angulação: uma translação. Reconhecer isso muda a cirurgia, porque uma osteotomia feita no ápice aparente, sem corrigir a translação, alinha o ângulo e deixa o osso deslocado.",
+  "correta": "Deformidade translacional: é a translação somada à angulação que separa o CORA do ápice aparente.",
+  "incorretas": {
+   "A": "Deformidade axial diz respeito ao comprimento (encurtamento ou alongamento), e não desloca o CORA em relação ao ápice.",
+   "B": "Uniapical é justamente o caso em que existe um único ápice e o CORA coincide com ele.",
+   "C": "A deformidade rotacional ocorre em torno do eixo longo e não aparece na radiografia em duas dimensões."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0024": {
+  "conceito": "CORA quer dizer centro de rotação da angulação, e a definição é operacional: traça-se o eixo do fragmento proximal, traça-se o eixo do fragmento distal e marca-se onde as duas linhas se cruzam. Esse ponto é a chave do planejamento, porque uma osteotomia feita no nível do CORA, com a dobradiça nele, corrige o ângulo sem criar translação nenhuma. Osteotomia feita fora do CORA corrige o ângulo mas introduz um degrau — e é por isso que localizar o CORA vem antes de decidir onde cortar.",
+  "correta": "A intersecção dos eixos proximal e distal do osso envolvido.",
+  "incorretas": {
+   "A": "O centro anatômico do osso não define ponto algum de rotação da angulação.",
+   "B": "O alinhamento mecânico é a linha do centro da articulação proximal ao centro da distal — serve para medir o desvio, não para localizar o CORA.",
+   "C": "O alinhamento anatômico descreve o eixo do osso, e é matéria-prima do traçado; o CORA é o cruzamento de dois desses eixos."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0025": {
+  "conceito": "A análise do líquido sinovial separa os três grandes grupos pela contagem e pelo diferencial. Normal ou mecânico (artrose, trauma): abaixo de 2.000 células, com predomínio de mononucleares. Inflamatório (gota, artrite reumatoide, doenças reativas): entre 2.000 e 50.000, com predomínio variável de neutrófilos. Séptico: acima de 50.000 — muitas vezes acima de 100.000 —, com mais de 75% de neutrófilos, glicose baixa e aspecto turvo. Vale lembrar que o número é orientação, não veredito: artrite séptica inicial pode vir com contagem menor, e a cultura é o que decide.",
+  "correta": "Acima de 50.000 células por milímetro cúbico, com predomínio de neutrófilos.",
+  "incorretas": {
+   "A": "Predomínio de linfócitos não é o padrão da infecção bacteriana aguda, que recruta neutrófilos.",
+   "C": "A faixa de 15.000 a 25.000 corresponde a derrame inflamatório, e o predomínio linfocitário afasta ainda mais da infecção piogênica.",
+   "D": "O predomínio de neutrófilos está certo, mas a contagem nessa faixa aponta para inflamatório, e não para séptico."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0026": {
+  "conceito": "O enxerto homólogo (aloenxerto) passa por processamento — congelamento, liofilização, irradiação — que elimina as células vivas e reduz muito os fatores de crescimento. O que sobra é a arquitetura mineralizada: um arcabouço tridimensional sobre o qual o osso do hospedeiro cresce, ou seja, osteocondução. A osteogênese ele não tem, porque não há célula viva; a osteoindução residual é pequena e depende muito do método de processamento — a matriz óssea desmineralizada é a exceção que preserva proteínas indutoras.",
+  "correta": "Osteocondução: o aloenxerto oferece o arcabouço, e o osso do hospedeiro cresce sobre ele.",
+  "incorretas": {
+   "A": "Osteogênese exige células vivas no enxerto, e o processamento do aloenxerto as elimina.",
+   "B": "A osteoindução residual é pequena e variável — não é a propriedade principal do aloenxerto convencional.",
+   "D": "\"Osteorregulação\" não é uma das propriedades classicamente descritas para enxertos."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0027": {
+  "conceito": "A estabilidade absoluta exige compressão uniforme nas duas corticais, e é isso que dita as duas escolhas. Uma placa moldada exatamente ao contorno do osso comprime a cortical de baixo dela e deixa a cortical oposta se abrir — daí o pré-tensionamento, um leve sobrecontorno que faz a placa tocar primeiro nas pontas e, ao ser aparafusada, comprimir também a cortical distante. E os parafusos que geram a compressão são os mais próximos do traço, colocados em posição excêntrica no orifício, porque é o deslizamento dessa cabeça na rampa do orifício que empurra os fragmentos um contra o outro.",
+  "correta": "Pré-tensionada, com os parafusos iniciais próximos ao traço de fratura.",
+  "incorretas": {
+   "A": "Os parafusos estão certos, mas a placa apenas moldada ao osso deixa a cortical oposta abrir em vez de comprimir.",
+   "B": "Erra as duas coisas.",
+   "D": "O pré-tensionamento está certo, mas parafusos distantes do traço não produzem a compressão interfragmentária."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0028": {
+  "conceito": "O sobrecrescimento terminal é uma complicação exclusiva da criança amputada e não tem a ver com a placa de crescimento: o osso cresce por aposição na extremidade seccionada, formando uma espícula que perfura a pele por dentro do coto. A ordem de frequência é úmero, fíbula, tíbia e fêmur. Epifisiodese não resolve, porque o crescimento não vem da fise, e ressecções repetidas apenas repetem o problema. O tratamento eficaz é capear a extremidade com enxerto osteocondral autólogo, que fecha a ponta com cartilagem e interrompe a aposição.",
+  "correta": "Úmero, tratado com enxerto osteocondral que capeia a extremidade do coto.",
+  "incorretas": {
+   "A": "O osso mais acometido é o úmero, e a epifisiodese não resolve um crescimento que não vem da fise.",
+   "B": "O osso está certo, mas a epifisiodese é ineficaz para essa complicação.",
+   "C": "O tratamento está certo, mas o osso mais acometido é o úmero."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0029": {
+  "conceito": "A perna de tenista é a lesão da junção miotendínea da cabeça MEDIAL do gastrocnêmio, e ela é quase sempre PARCIAL. A cabeça medial é a acometida porque é a maior, a que mais cruza o joelho e a que sofre o maior alongamento na posição de risco — joelho estendido com tornozelo em dorsiflexão. A dor é súbita, com sensação de pedrada na panturrilha, e o exame mostra dor localizada na transição entre o ventre e o tendão, com equimose que desce pelo tornozelo dias depois. Ruptura completa é rara, e o tratamento é conservador.",
+  "correta": "Lesão parcial da cabeça medial.",
+  "incorretas": {
+   "A": "A cabeça lateral é raramente acometida, e lesão total ali é excepcional.",
+   "B": "A cabeça está certa, mas a ruptura completa do gastrocnêmio medial é rara.",
+   "C": "O caráter parcial está certo, mas a cabeça acometida é a medial."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0030": {
+  "conceito": "Comparar os dois enxertos esponjosos resolve a questão. O autólogo tem as três propriedades: osteogênese (traz células vivas), osteoindução (traz fatores de crescimento) e osteocondução (traz o arcabouço mineralizado). O homólogo perde a osteogênese no processamento, que elimina as células, e mantém o arcabouço e alguma capacidade indutora. O que os dois têm em comum, portanto, é a osteocondução e a osteoindução — e a osteogênese é justamente o que distingue o autólogo, motivo pelo qual ele continua sendo o padrão-ouro na pseudartrose.",
+  "correta": "Osteocondução e osteoindução — a osteogênese é exclusiva do autólogo.",
+  "incorretas": {
+   "A": "A osteogênese não existe no enxerto homólogo, que não tem célula viva.",
+   "B": "Mesmo problema com a osteogênese.",
+   "D": "Vascularização não é uma das propriedades classicamente atribuídas ao enxerto esponjoso não vascularizado — ele é revascularizado pelo hospedeiro."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0031": {
+  "conceito": "A placa convencional só funciona pelo atrito: os parafusos a apertam contra o osso, e é essa compressão que segura. O preço é duplo — a placa esmaga o periósteo sob ela, prejudicando a irrigação, e cada parafuso trabalha isoladamente, podendo se soltar em osso ruim. A placa bloqueada tem rosca na cabeça do parafuso e no orifício: ela funciona como fixador externo interno, não precisa encostar no osso (o que preserva o fluxo periosteal) e forma um construto de ângulo fixo em que os parafusos não se soltam um a um.",
+  "correta": "Preservação do fluxo periosteal e resistência ao deslocamento (arrancamento) do parafuso.",
+  "incorretas": {
+   "A": "O fluxo preservado é o periosteal, não o endosteal — o endósteo é poupado por técnicas de haste ou por placa em ponte, mas não é o mérito específico da placa bloqueada.",
+   "B": "O fluxo está certo, mas a vantagem mecânica é o parafuso não se soltar; a placa, aliás, nem precisa se apoiar no osso.",
+   "C": "Erra as duas: o fluxo é periosteal, e o mérito é a estabilidade angular do parafuso."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0032": {
+  "conceito": "A hemicalotase corrige deformidade angular alongando um só lado do osso: faz-se uma osteotomia incompleta e o fixador distrai apenas a cortical do lado côncavo, deixando a cortical oposta funcionar como dobradiça. O regime de distração é o mesmo do alongamento ósseo clássico de Ilizarov — período de latência de cerca de uma semana para que o calo mole se forme antes de começar a puxar, e depois 1 mm por dia fracionado em quatro incrementos de 0,25 mm. Distrair antes da latência rompe o calo; distrair mais rápido gera consolidação insuficiente.",
+  "correta": "Sétimo dia de pós-operatório, com 0,25 mm quatro vezes ao dia.",
+  "incorretas": {
+   "A": "A taxa está certa, mas o terceiro dia é cedo demais: o calo mole ainda não se formou.",
+   "C": "0,50 mm quatro vezes ao dia dá 2 mm diários, o dobro da taxa que o osso acompanha.",
+   "D": "A latência está certa, mas a taxa é excessiva pelo mesmo motivo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0033": {
+  "conceito": "O quadril é articulação profunda, coberta por musculatura espessa: edema e hiperemia, que denunciam a artrite séptica do joelho ou do tornozelo, simplesmente não aparecem nele. O que se vê é funcional — a criança deixa de apoiar o membro, claudica ou se recusa a andar, e mantém o quadril em flexão, abdução e rotação externa, que é a posição de maior volume capsular. A recusa de apoio é justamente um dos quatro critérios de Kocher, e é o achado que mais consistentemente aparece nas séries.",
+  "correta": "Claudicação e não apoio do membro na marcha.",
+  "incorretas": {
+   "A": "Edema local não é visível num quadril, por ser articulação profunda.",
+   "B": "A atitude viciosa em flexão, abdução e rotação externa também está presente e é achado clássico — mas o sinal que domina a apresentação, e que integra os critérios de Kocher, é a recusa de apoio.",
+   "C": "Hiperemia é achado de articulação superficial; no quadril ela não se manifesta."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0034": {
+  "conceito": "O parafuso é uma rampa enrolada em torno de um cilindro: girá-lo transforma o movimento rotacional em avanço linear. No parafuso de tração, a rosca só pega no fragmento distante — porque no fragmento próximo se faz o furo de deslizamento, com diâmetro igual ao da rosca — de modo que, ao apertar, a cabeça puxa o fragmento distante contra o próximo. O torque aplicado na chave vira, portanto, compressão interfragmentária. Se a rosca pegar nos dois fragmentos, não há tração: o parafuso apenas mantém a distância entre eles.",
+  "correta": "Converte torque em compressão.",
+  "incorretas": {
+   "A": "Força linear em torque é o inverso do que acontece: quem aplica o torque é o cirurgião.",
+   "C": "Compressão em torque também inverte a cadeia.",
+   "D": "A compressão é o produto final, e não a energia de entrada."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0035": {
+  "conceito": "A osteomielite vertebral é a forma mais comum de osteomielite hematogênica do adulto, mas responde por uma fração pequena do total de osteomielites piogênicas — algo em torno de 3 a 5%. A relevância dela não está na frequência e sim no atraso diagnóstico: a apresentação é dor lombar ou torácica arrastada, muitas vezes sem febre, com VHS e PCR elevados, e o intervalo médio entre o início e o diagnóstico é de meses. O germe mais comum é o Staphylococcus aureus, e o exame que faz o diagnóstico é a ressonância.",
+  "correta": "3 a 5% de todas as osteomielites piogênicas.",
+  "incorretas": {
+   "B": "8 a 10% superestima a proporção descrita.",
+   "C": "15 a 18% é bem acima do que as séries relatam.",
+   "D": "20 a 22% tornaria a coluna quase tão frequente quanto os ossos longos, o que não corresponde à realidade."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0036": {
+  "conceito": "A vitamina C é antioxidante e reduz a formação de radicais livres na fase inflamatória da consolidação — e é aí que se acredita estar seu papel na prevenção da síndrome dolorosa regional complexa. Os ensaios em fratura do rádio distal mostraram redução da incidência com 500 mg ao dia por 50 dias a partir do trauma. Vale reter o limite do achado: a evidência é de PREVENÇÃO, e não de tratamento do quadro já instalado — depois de instalada, a síndrome se trata com reabilitação precoce, analgesia multimodal e bloqueios.",
+  "correta": "Vitamina C.",
+  "incorretas": {
+   "A": "A vitamina A não tem esse papel descrito.",
+   "C": "A vitamina D importa para mineralização e consolidação, mas não é a estudada para prevenção dessa síndrome.",
+   "D": "A vitamina E é antioxidante, porém não é a que os ensaios testaram nesse cenário."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0037": {
+  "alerta": "O local clássico da lesão muscular por estiramento, e o dos isquiotibiais em particular, é a JUNÇÃO MIOTENDÍNEA — que é a alternativa C, marcada como errada. É ali que a rigidez do tendão encontra a complacência do músculo, e é ali que a força se concentra na contração excêntrica; nos isquiotibiais, o ponto mais acometido é a junção miotendínea proximal da cabeça longa do bíceps femoral. Há uma nuance que talvez explique o gabarito: esse tendão proximal se estende para dentro do ventre muscular como tendão intramuscular, de modo que a lesão da junção miotendínea aparece, na imagem, no meio do ventre. Ainda assim, a resposta que a literatura sustenta é a junção miotendínea.",
+  "conceito": "O estiramento muscular acontece na contração excêntrica — o músculo contrai enquanto está sendo alongado — e o ponto que cede é a transição entre tecidos de rigidez diferente. Nos isquiotibiais isso ocorre na corrida em velocidade, no fim da fase de balanço, quando o músculo freia a extensão do joelho com o quadril fletido. A cabeça longa do bíceps femoral é a mais acometida, por ser biarticular e por ter o maior alongamento nesse instante. A recidiva é alta, e o que a previne é reabilitação com fortalecimento excêntrico, não repouso.",
+  "correta": "A resposta oficial é o ventre muscular.",
+  "incorretas": {
+   "A": "Lesão no tendão propriamente dito, longe da transição com o músculo, é incomum no estiramento — ela aparece em ruptura crônica ou degenerativa.",
+   "C": "É o local classicamente descrito para o estiramento dos isquiotibiais, e mesmo assim foi dado como errado. Veja o aviso acima.",
+   "D": "A avulsão da tuberosidade isquiática é o padrão do adolescente com apófise aberta, e não a lesão mais frequente do adulto."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0038": {
+  "conceito": "Na terceira semana o embrião tem três folhetos, e cada um origina um conjunto de tecidos. O ectoderma dá pele e sistema nervoso; o endoderma, o revestimento do tubo digestivo e das vias respiratórias; e o mesoderma se organiza em três colunas — paraxial (somitos), intermediário (rim e gônadas) e placa lateral. É a PLACA LATERAL do mesoderma que origina o broto do membro, e dela vêm osso, cartilagem, tendão, ligamento e todo o tecido conjuntivo do membro. Já a musculatura do membro migra dos somitos, ou seja, do mesoderma paraxial — motivo pelo qual osso e músculo do membro têm origens distintas.",
+  "correta": "Placa lateral do mesoderma.",
+  "incorretas": {
+   "A": "O ectoderma origina pele e sistema nervoso; a crista ectodérmica apical dirige o crescimento do broto, mas não forma osso.",
+   "B": "Não há \"placa medial do ectoderma\" com esse papel.",
+   "D": "O mesoderma medial (paraxial, dos somitos) origina a musculatura esquelética e o esqueleto axial, e não o osso do membro."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0039": {
+  "conceito": "A metáfise é o alvo da osteomielite hematogênica da criança por causa da arquitetura vascular local. As artérias metafisárias terminam em alças em grampo de cabelo junto à placa de crescimento e desembocam em sinusoides largos, onde o fluxo é lento e turbulento — condição ideal para a bactéria se depositar. E esses sinusoides metafisários têm poucas células fagocitárias: faltam macrófagos do sistema reticuloendotelial, que nas alças venosas de outras regiões capturariam o germe. Fluxo lento somado a poucos fagócitos explica por que o inóculo prospera exatamente ali.",
+  "correta": "Pequeno número de macrófagos nos sinusoides metafisários, que deixa o germe sem quem o capture.",
+  "incorretas": {
+   "A": "Os linfócitos não são a primeira linha contra a bactéria piogênica nesse território.",
+   "C": "Os osteoblastos são células formadoras, sem papel de defesa.",
+   "D": "Os osteoclastos reabsorvem osso e participam da destruição na infecção instalada, mas não são a defesa que falta."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0041": {
+  "conceito": "A dor do membro fantasma é a complicação mais frequente da amputação — está presente na grande maioria dos amputados em algum grau — e precisa ser separada de dois vizinhos: a sensação fantasma, que é a percepção não dolorosa do membro ausente e é praticamente universal, e a dor do coto, que é local e tem causa identificável, como neuroma, isquemia ou prótese mal ajustada. A prevenção começa antes da cirurgia, com analgesia adequada no pré e no intraoperatório, e o tratamento é multimodal, com gabapentinoides, antidepressivos e terapia do espelho.",
+  "correta": "Dor do membro fantasma.",
+  "incorretas": {
+   "A": "A falha da miodese é complicação técnica, bem menos frequente.",
+   "B": "Contratura articular é mais problema das amputações de membro inferior e do coto mal posicionado.",
+   "C": "Ossificação heterotópica ocorre sobretudo em amputações traumáticas e por explosão, e não é a complicação mais comum."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0042": {
+  "conceito": "As linhas de Harris, ou linhas de parada de crescimento, são faixas densas transversais na metáfise, paralelas à placa de crescimento. Elas se formam quando o crescimento longitudinal cessa ou desacelera por um período — doença grave, desnutrição, quimioterapia, imobilização, trauma — e depois é retomado: a matriz mineralizada depositada durante a pausa fica como um registro horizontal. Na lesão fisária traumática elas têm valor prático: se a linha de Harris corre paralela à fise, o crescimento se recuperou de modo simétrico; se converge para um dos lados, há ponte fisária e barra óssea em formação.",
+  "correta": "Retardo ou parada do crescimento — a linha é o registro da pausa e da retomada.",
+  "incorretas": {
+   "A": "Consolidação viciosa é desvio do alinhamento após a fratura, e não produz essa linha.",
+   "B": "Retardo de consolidação é atraso na formação do calo, fenômeno do foco de fratura, não da fise.",
+   "C": "É o oposto: a linha marca a interrupção, e não a aceleração do crescimento."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0043": {
+  "conceito": "Basta pensar no que acontece geometricamente ao girar em torno de um ponto. A dobradiça é o eixo em torno do qual o fragmento distal roda: o osso adjacente a ela não muda de posição, e o osso do lado oposto se afasta. Colocando a dobradiça sobre a cortical CONVEXA, a rotação corretiva mantém aquele lado encostado e abre um espaço do lado côncavo — cunha de abertura, que alonga o osso e exige preencher a falha com regenerado ou enxerto. Colocando-a do lado côncavo, o lado convexo se fecha — cunha de fechamento, que encurta. Dobradiça exatamente no CORA corrige o ângulo sem mudar o comprimento nem criar translação.",
+  "correta": "Cunha de abertura: com a dobradiça na convexidade, o lado côncavo se afasta e cria a falha.",
+  "incorretas": {
+   "B": "A cunha de fechamento resulta da dobradiça posicionada do lado côncavo.",
+   "C": "Rotação dos fragmentos em torno do eixo longo é outro parâmetro, não decorrente da posição da dobradiça na bissetriz.",
+   "D": "Translação aparece quando a osteotomia é feita fora do nível do CORA, e não pela posição da dobradiça na bissetriz."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0044": {
+  "conceito": "No fixador circular a estabilidade depende de tensão e de geometria. Fios olivados — que têm uma esfera metálica soldada perto da ponta — permitem apoiar essa oliva contra a cortical e travar o fragmento contra a translação, o que um fio liso não faz; usados em pares, com as olivas opostas, funcionam como pinças. As outras regras: anéis de menor diâmetro (o osso o mais centrado possível dentro deles), fios cruzando o mais próximo de 90 graus e fios bem tensionados. Anel largo, fios paralelos e osso excêntrico são as três maneiras de tornar a montagem frouxa.",
+  "correta": "Uso de fios olivados, que travam o fragmento contra a translação.",
+  "incorretas": {
+   "B": "Anel de maior diâmetro reduz a estabilidade: quanto maior o vão entre osso e anel, mais o fio flexiona.",
+   "C": "Menor angulação entre os fios reduz a estabilidade; o ideal é aproximar-se de 90 graus.",
+   "D": "O osso deve ficar o mais centrado possível no anel — o posicionamento excêntrico desequilibra a tensão dos fios."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0045": {
+  "alerta": "A hidrossolubilidade, alternativa D, também é requisito do antibiótico misturado ao cimento — é justamente ela que permite a eluição da droga para o tecido ao redor. Um antibiótico lipossolúvel ficaria preso no polímero e não seria liberado. As duas alternativas, portanto, descrevem exigências reais; o gabarito escolheu apenas uma delas. Se você marcou D, o erro não foi seu.",
+  "conceito": "Misturar antibiótico ao polimetilmetacrilato transforma o cimento em reservatório de liberação local, alcançando concentrações muito acima do que a via sistêmica atinge no osso. A droga escolhida precisa cumprir várias condições ao mesmo tempo: resistir ao calor da polimerização, que ultrapassa 80 graus; ser hidrossolúvel, para eluir; vir em pó, para não comprometer a resistência mecânica; ter espectro adequado e baixa alergenicidade. Vancomicina, gentamicina e tobramicina atendem a esses requisitos, e são as usadas na prática.",
+  "correta": "Termoestável: a polimerização do cimento é exotérmica e destruiria um antibiótico termolábil.",
+  "incorretas": {
+   "A": "Termolábil é o oposto do necessário — a droga seria destruída pelo calor da polimerização.",
+   "B": "Lipossolúvel atrapalha: a droga precisa se dissolver em meio aquoso para eluir do cimento.",
+   "D": "É também um requisito real, e mesmo assim foi dado como errado. Veja o aviso acima."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0046": {
+  "conceito": "O paciente amputado por doença vascular periférica chega com o tecido do coto já mal perfundido, quase sempre diabético, muitas vezes desnutrido e frequentemente com uma úlcera ou gangrena infectada como causa da amputação. A cicatrização, portanto, acontece em terreno hostil, e a complicação que domina as séries é a infecção da ferida operatória — que costuma vir acompanhada de necrose de borda, com a qual se confunde e se retroalimenta. É esse risco que orienta escolher o nível de amputação pela perfusão, e não pela vontade de preservar comprimento.",
+  "correta": "Infecção: no coto isquêmico, mal perfundido e frequentemente contaminado na origem, ela é a complicação mais frequente.",
+  "incorretas": {
+   "A": "A dor, incluindo a do membro fantasma, é frequente em qualquer amputação, e não é o que caracteriza especificamente a amputação por vasculopatia.",
+   "C": "A necrose de pele é o problema vizinho e frequentemente coexiste, sendo a falha de cicatrização o outro grande problema desse grupo — mas a complicação registrada como mais comum é a infecção.",
+   "D": "Contratura do coto é problema de posicionamento e reabilitação, e não a complicação dominante nesse cenário."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0047": {
+  "conceito": "A serra de gesso não gira: ela oscila, e é por isso que corta o gesso rígido sem cortar a pele elástica. O que queima o paciente é o calor, e o calor vem de dois lugares — lâmina cega, que atrita em vez de cortar, e contato prolongado num mesmo ponto. Daí as duas regras: lâmina afiada e movimento intermitente, mergulhando e retirando a lâmina, avançando ponto a ponto em vez de deslizar continuamente pelo gesso. Vale ainda evitar as proeminências ósseas, onde a pele fica mais próxima da lâmina.",
+  "correta": "Serras afiadas, com a lâmina movida de forma intermitente.",
+  "incorretas": {
+   "A": "A lâmina afiada está certa, mas o movimento contínuo aquece o mesmo ponto e é a causa clássica da queimadura.",
+   "C": "Lâmina pouco afiada atrita mais e aquece mais.",
+   "D": "O movimento intermitente está certo, mas a lâmina cega gera calor por atrito e ainda dificulta o corte."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0048": {
+  "conceito": "A síndrome dolorosa regional complexa é classicamente descrita em três estágios que traduzem a evolução vasomotora. Estágio 1, agudo (até cerca de três meses): dor desproporcional, edema, pele quente, avermelhada, com sudorese aumentada e crescimento acelerado de pelos e unhas. Estágio 2, distrófico (três a nove meses): a vasodilatação dá lugar à vasoconstrição, a pele fica fria, cianótica e úmida, o edema endurece e começam a rigidez e a atrofia. Estágio 3, atrófico: pele fina, seca, brilhante e pálida, com contraturas fixas e osteopenia difusa.",
+  "correta": "Estágio 2, o distrófico, em que a pele passa a fria, cianótica e úmida.",
+  "incorretas": {
+   "A": "No estágio 1 a pele é quente e avermelhada, com edema mole — o oposto do descrito.",
+   "C": "No estágio 3 a pele é seca, pálida e brilhante, com contraturas já instaladas.",
+   "D": "A classificação clássica tem três estágios, não quatro."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0049": {
+  "conceito": "Paley descreve três regras de osteotomia conforme a relação entre o CORA, o eixo de correção (a dobradiça) e a linha de corte. Quando os três coincidem no mesmo ponto, a correção é uma rotação pura no plano da deformidade: o ângulo se corrige e nada mais muda — sem translação, sem alteração de comprimento. Quando a osteotomia é feita fora do nível do CORA, a correção angular vem acompanhada de um degrau, e é preciso transladar deliberadamente para compensar. Por isso localizar o CORA é o primeiro passo do planejamento.",
+  "correta": "Angulação pura: com CORA, eixo de correção e osteotomia no mesmo ponto, corrige-se o ângulo sem introduzir outro desvio.",
+  "incorretas": {
+   "A": "A rotação, no sentido de torção em torno do eixo longo, é outro parâmetro e não decorre dessa configuração.",
+   "C": "A translação é justamente o que essa configuração evita.",
+   "D": "Translação somada à angulação é o que acontece quando a osteotomia é feita fora do nível do CORA."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0050": {
+  "conceito": "Os quatro critérios de Kocher — febre acima de 38,5 graus, incapacidade de apoiar o membro, VHS acima de 40 mm/h e leucócitos acima de 12.000 — não valem por si: valem pela probabilidade acumulada. Com um critério, a chance de artrite séptica é de cerca de 3%; com dois, cerca de 40%; com três, mais de 90%; com quatro, praticamente 100%. A criança do enunciado tem dois (não apoia o membro e leucócitos acima de 12.000), portanto cerca de 40% — faixa que não permite nem tratar como sinovite transitória nem operar sem mais dados: é onde entram a punção e a ultrassonografia.",
+  "correta": "Cerca de 40%, correspondente a dois critérios de Kocher presentes.",
+  "incorretas": {
+   "A": "10% aproxima-se da probabilidade com apenas um critério (cerca de 3%).",
+   "C": "70% não corresponde a nenhum patamar da série: com três critérios a probabilidade já passa de 90%.",
+   "D": "90% corresponde a três critérios presentes, e a criança do enunciado tem dois."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0051": {
+  "conceito": "Depois de uma haste intramedular, a radiografia simples é péssima para julgar consolidação: o implante metálico se sobrepõe ao canal, as corticais ficam parcialmente escondidas e o traço pode parecer preenchido em uma incidência e aberto em outra. A tomografia resolve isso ao permitir cortes finos em vários planos e reconstruções, mostrando quantas corticais estão de fato unidas — o critério prático de consolidação. É o exame de maior sensibilidade para pseudartrose nesse contexto, com a ressalva de que os artefatos metálicos exigem protocolo adequado.",
+  "correta": "Tomografia computadorizada.",
+  "incorretas": {
+   "A": "A planigrafia é técnica antiga, superada pela tomografia.",
+   "B": "A radiografia simples é o exame inicial, mas a haste esconde justamente a região que interessa.",
+   "C": "A ressonância sofre muito com artefato metálico e não é o exame para avaliar ponte óssea."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0052": {
+  "conceito": "Dois fatores explicam por que certos músculos rompem e outros não. O primeiro é ser biarticular: um músculo que cruza duas articulações pode ser alongado nas duas ao mesmo tempo e chega ao limite antes dos demais — reto femoral, isquiotibiais, gastrocnêmio. O segundo é a composição de fibras: as do tipo II, rápidas e de contração potente, geram e absorvem força em velocidade alta e sofrem mais na contração excêntrica do que as do tipo I, lentas e resistentes. Somando as duas coisas, o perfil de risco é o de um músculo biarticular rico em fibras rápidas.",
+  "correta": "Biarticulares e com predomínio de fibras do tipo II.",
+  "incorretas": {
+   "A": "Erra os dois: músculos monoarticulares e de fibras lentas são os menos sujeitos a estiramento.",
+   "B": "A condição biarticular está certa, mas as fibras tipo I são as menos suscetíveis.",
+   "C": "As fibras tipo II estão certas, mas o músculo monoarticular não sofre o duplo alongamento."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0053": {
+  "conceito": "Até cerca de 18 meses de vida existem vasos transfisários, que atravessam a placa de crescimento ligando a circulação metafisária à epifisária. Nessa janela, a osteomielite metafisária do fêmur proximal alcança a epífise por essas comunicações e destrói a irrigação da cabeça femoral, produzindo osteonecrose. Depois disso a fise se torna barreira vascular, a infecção fica contida na metáfise e o risco cai. Some-se a isso a metáfise proximal do fêmur ser intracapsular, o que faz a infecção romper para dentro da articulação e comprimir os vasos retinaculares.",
+  "correta": "Entre zero e 18 meses, período em que os vasos transfisários ainda estão presentes.",
+  "incorretas": {
+   "B": "Depois dos 18 meses a fise já funciona como barreira, e o risco cai bastante.",
+   "C": "Nessa faixa a infecção fica contida na metáfise; a osteonecrose epifisária é bem menos provável.",
+   "D": "Mesma razão, com risco ainda menor."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0054": {
+  "conceito": "A infecção vertebral chega, na imensa maioria dos casos, por via hematogênica ARTERIAL: as artérias segmentares irrigam a porção anterior do corpo, junto à placa terminal, onde o fluxo é lento e a rede é terminal — e é ali que o germe se deposita, a partir de um foco distante (urinário, cutâneo, endocardite, cateter). A teoria do plexo venoso de Batson, retrógrado, explica casos particulares mas hoje é tida como via secundária. Contiguidade e inoculação direta por procedimento existem, mas são minoria.",
+  "correta": "Hematogênica arterial, pelas artérias segmentares que irrigam a porção anterior do corpo vertebral.",
+  "incorretas": {
+   "B": "O plexo venoso de Batson explica casos selecionados, mas não é a via principal.",
+   "C": "A contiguidade a partir de órgãos abdominais é rara.",
+   "D": "A inoculação direta por procedimento percutâneo é causa reconhecida, mas responde por parcela pequena dos casos."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0055": {
+  "conceito": "Conhecer o calendário de ossificação do atlas e do áxis é o que evita confundir sincondrose normal com fratura na criança traumatizada. O arco POSTERIOR do atlas funde na linha média por volta dos 3 a 4 anos. O arco ANTERIOR funde com as massas laterais entre 5 e 9 anos (as sincondroses neurocentrais). No áxis, a sincondrose entre o odontoide e o corpo fecha por volta dos 6 anos, e o ossículo terminal do ápice funde perto dos 12. Uma linha regular, com bordas escleróticas e sem edema de partes moles, é sincondrose; fratura tem borda irregular.",
+  "correta": "Entre 3 e 4 anos.",
+  "incorretas": {
+   "B": "6 a 7 anos corresponde melhor à fusão do arco anterior com as massas laterais.",
+   "C": "9 a 10 anos já está além do fechamento do arco posterior.",
+   "D": "11 a 12 anos é a época da fusão do ossículo terminal do odontoide."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0056": {
+  "conceito": "O parafuso de tração converte o torque aplicado na chave em compressão entre os fragmentos, e a magnitude dessa compressão depende do diâmetro e do passo da rosca. Para o parafuso cortical de 4,5 mm, o valor de referência dos ensaios da AO é da ordem de 2.500 a 3.000 N — força suficiente para produzir estabilidade absoluta e consolidação primária, sem calo visível. Vale reter o corolário prático: apertar além disso não aumenta a compressão, apenas espana a rosca no osso, e osso osteoporótico atinge valores bem menores.",
+  "correta": "Cerca de 2.500 N.",
+  "incorretas": {
+   "A": "500 N seria insuficiente para gerar a estabilidade absoluta pretendida.",
+   "B": "1.000 N ainda fica abaixo do valor de referência descrito para esse parafuso.",
+   "D": "5.000 N excede a resistência do osso à ancoragem da rosca — o parafuso espanaria antes de alcançar essa compressão."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0057": {
+  "conceito": "O parafuso de tração isolado só funciona quando o traço é longo o bastante para acomodar mais de um parafuso perpendicular a ele e para oferecer superfície de contato ampla — a regra prática é que o comprimento do traço seja pelo menos duas vezes o diâmetro do osso. A fratura espiral do metacarpo cumpre exatamente isso: traço longo, oblíquo, com boa área de contato entre os fragmentos, que ficam estáveis à compressão. Traço curto ou transverso não oferece onde comprimir sem que o parafuso escorregue.",
+  "correta": "Traço espiral, longo o bastante para acomodar os parafusos e oferecer área de contato.",
+  "incorretas": {
+   "B": "O traço transverso não permite compressão interfragmentária por parafuso: ali a indicação é placa ou haste.",
+   "C": "Fratura cominutiva não tem contato cortical para comprimir; a fixação é em ponte, com estabilidade relativa.",
+   "D": "O oblíquo curto não oferece comprimento suficiente para os parafusos, e a fixação isolada por eles é instável."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0058": {
+  "conceito": "A infecção após osteossíntese se divide pelo tempo, e o tempo diz qual germe esperar. A precoce, nas primeiras semanas, vem de contaminação intraoperatória ou da própria ferida por germes virulentos, capazes de produzir doença rapidamente: Staphylococcus aureus e bacilos gram-negativos. A tardia, meses depois, vem de germes de baixa virulência que levaram todo esse tempo para formar biofilme: estafilococos coagulase-negativos e Cutibacterium acnes. A distinção importa porque a precoce ainda admite desbridamento com manutenção do implante, e a tardia geralmente não.",
+  "correta": "Staphylococcus aureus e bacilos gram-negativos.",
+  "incorretas": {
+   "A": "O S. aureus está certo, mas os estreptococos não são os acompanhantes típicos da infecção precoce pós-osteossíntese.",
+   "C": "O coagulase-negativo é germe da infecção tardia, de baixa virulência.",
+   "D": "Mesmo problema: o coagulase-negativo caracteriza a infecção tardia."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0059": {
+  "conceito": "Certos germes se associam a certos hospedeiros, e vale ter essas associações prontas: Salmonella na doença falciforme, Pseudomonas aeruginosa no usuário de droga intravenosa e na ferida perfurante do pé através do tênis, Haemophilus influenzae na criança não vacinada, Pasteurella na mordida de gato, Eikenella na mordida humana. No usuário de droga intravenosa a Pseudomonas tem predileção por articulações axiais — esternoclavicular, sacroilíaca e coluna. Ressalva: mesmo nesse grupo o Staphylococcus aureus continua sendo o agente mais frequente em números absolutos; o que a Pseudomonas faz é caracterizar o grupo, aparecendo nele muito mais do que na população geral.",
+  "correta": "Pseudomonas, o agente caracteristicamente associado ao uso de droga intravenosa.",
+  "incorretas": {
+   "A": "A Salmonella é a associação clássica da doença falciforme.",
+   "B": "O Haemophilus era agente importante em crianças pequenas antes da vacinação, e não nesse grupo.",
+   "D": "O Staphylococcus é o agente mais comum de osteomielite em geral — inclusive neste grupo —, e por isso mesmo não é o que a pergunta busca ao especificar o usuário de droga intravenosa."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0061": {
+  "conceito": "A contusão do quadríceps é lesão fechada por trauma direto, com hematoma intramuscular e dor à flexão do joelho. As complicações que se esperam dela decorrem do hematoma que organiza: fibrose muscular, perda de flexão do joelho por retração e miosite ossificante — esta última favorecida por massagem precoce, alongamento agressivo e retorno prematuro. A síndrome compartimental da coxa é possível, mas rara: o compartimento anterior é volumoso e complacente, e absorve muito sangue antes de a pressão subir a ponto de comprometer a perfusão.",
+  "correta": "Síndrome compartimental: possível, porém a menos frequente das quatro, pela complacência do compartimento anterior da coxa.",
+  "incorretas": {
+   "A": "A fibrose muscular é consequência esperada da organização do hematoma.",
+   "B": "A miosite ossificante é complicação clássica e relativamente frequente da contusão do quadríceps.",
+   "C": "A perda de flexão do joelho é a tradução funcional da fibrose e da dor, e ocorre com frequência."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0062": {
+  "conceito": "O comprimento do coto transtibial tem um ponto ideal: curto demais não dá alavanca para controlar a prótese e não permite encaixe estável; longo demais deixa a extremidade em território de pele fina e má perfusão e não sobra espaço para o pé protético. A regra prática é 2,5 cm de tíbia para cada 30 cm de altura do paciente, medidos a partir da interlinha articular. Para 1,80 m, isso dá exatamente 15 cm — que na prática corresponde à junção do terço proximal com o terço médio da tíbia.",
+  "correta": "15 cm, aplicando a proporção de 2,5 cm de tíbia para cada 30 cm de altura.",
+  "incorretas": {
+   "A": "7 cm é coto curto, com pouca alavanca e encaixe difícil.",
+   "B": "10 cm corresponderia a um paciente de cerca de 1,20 m de altura.",
+   "D": "20 cm é longo demais: alcança o terço distal, de pele fina e má vascularização, e compromete o espaço da prótese."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0063": {
+  "conceito": "Discite e osteomielite vertebral na criança são pontos de um mesmo espectro, mas separá-los muda a conduta. A discite acomete crianças pequenas, com idade média em torno de 2,5 anos, costuma ser afebril ou subfebril, com marcadores pouco alterados, e o quadro é recusa em andar ou sentar, com irritabilidade; responde a imobilização e antibiótico, com bom prognóstico. A osteomielite vertebral acomete crianças mais velhas, com idade média perto de 7,5 anos, cursa com febre, marcadores mais elevados e destruição óssea visível — e exige tratamento mais longo.",
+  "correta": "Idade média de 7,5 anos e frequentemente com febre.",
+  "incorretas": {
+   "A": "2,5 anos sem febre é o perfil da discite, e não o da osteomielite.",
+   "B": "A idade é a da discite; e a discite costuma não ter febre.",
+   "C": "A idade está certa, mas a osteomielite cursa com febre, ao contrário da discite."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0064": {
+  "conceito": "O biofilme se forma em etapas. Primeiro o implante é revestido por proteínas do hospedeiro — fibronectina, fibrinogênio, colágeno —, e é a elas que a bactéria adere pelas suas adesinas. Depois a bactéria se fixa de forma irreversível e começa a produzir a matriz que a protege: uma malha exopolissacarídea, o glicocálix, dentro da qual as células passam a viver em baixa atividade metabólica. É essa matriz que define a MATURAÇÃO do biofilme, e é ela que impede o antibiótico e as células de defesa de alcançarem as bactérias — daí a necessidade de remover o implante na infecção crônica.",
+  "correta": "Matriz exopolissacarídea (glicocálix), que é o que define a maturação do biofilme.",
+  "incorretas": {
+   "A": "A fibronectina participa da fase inicial, revestindo o implante e servindo de ancoragem para a bactéria — não é a matriz que amadurece o biofilme.",
+   "B": "O fibrinogênio tem o mesmo papel de condicionamento da superfície, e igualmente na etapa inicial.",
+   "C": "Proteoglicanos são componentes da matriz extracelular do hospedeiro, e não da matriz bacteriana."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0065": {
+  "conceito": "A síndrome dolorosa regional complexa após fratura do rádio distal é mais frequente em mulheres, na faixa da meia-idade — o mesmo grupo em que a fratura por fragilidade é mais comum. O que se demonstrou eficaz na prevenção foi a vitamina C, 500 mg ao dia por cerca de 50 dias a partir do trauma, provavelmente por reduzir a formação de radicais livres na fase inflamatória. Vale reter o limite: a evidência é de prevenção, não de tratamento do quadro instalado, que se maneja com reabilitação precoce, analgesia multimodal e bloqueios.",
+  "correta": "Sexo feminino, com prevenção pela vitamina C.",
+  "incorretas": {
+   "B": "O sexo está certo, mas a vitamina estudada nesse cenário é a C, e não a do complexo B.",
+   "C": "A vitamina está certa, mas o predomínio é feminino.",
+   "D": "Erra as duas informações."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0066": {
+  "conceito": "A bactéria dentro da articulação consome glicose e desencadeia um afluxo maciço de neutrófilos, e o líquido sinovial reflete as duas coisas. A glicose cai — costuma ficar abaixo de metade da glicemia medida ao mesmo tempo — e a proteína sobe, tanto pelo exsudato quanto pelos produtos da degradação celular. Acompanham a contagem acima de 50.000 células com mais de 75% de neutrófilos, o aspecto turvo ou francamente purulento e a queda da viscosidade, porque as enzimas bacterianas degradam o ácido hialurônico. Cultura e Gram fecham o diagnóstico.",
+  "correta": "Glicose diminuída e proteína elevada.",
+  "incorretas": {
+   "A": "A glicose cai na infecção, porque a bactéria e as células a consomem.",
+   "B": "Erra as duas: a glicose cai e a proteína sobe.",
+   "D": "A glicose está certa, mas a proteína sobe, e não diminui."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0067": {
+  "conceito": "A pseudartrose diafisária da tíbia é, na maioria das vezes, hipertrófica: há biologia de sobra e falta estabilidade. A haste intramedular fresada, colocada por técnica fechada, resolve os dois lados do problema de uma vez — a fresagem produz enxerto autólogo endógeno que se deposita no foco, e a haste dá a estabilidade que faltava, sem abrir o foco nem desnudar o osso das partes moles que o irrigam. Além disso permite carga precoce. É por isso que ela é o método preferencial, ficando a placa reservada às pseudartroses metafisárias, às com deformidade a corrigir e às infectadas já tratadas.",
+  "correta": "Haste intramedular fresada fechada: estabiliza e enxerta ao mesmo tempo, sem abrir o foco.",
+  "incorretas": {
+   "A": "A placa exige abrir o foco e desnudar o osso, sacrificando a vascularização que resta — indicação de exceção nesse cenário.",
+   "C": "A osteotomia da fíbula é adjuvante, para permitir compressão no foco tibial, mas não trata sozinha a pseudartrose.",
+   "D": "Abrir o foco para colocar a haste soma os inconvenientes das duas técnicas sem acrescentar vantagem: a própria fresagem já enxerta."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0068": {
+  "conceito": "As lacunas de Howship são as depressões escavadas na superfície óssea por um osteoclasto em atividade — o rastro que ele deixa. O osteoclasto é a única célula óssea de origem HEMATOPOIÉTICA, derivada da linhagem monocítica sob comando do RANKL e do M-CSF; as demais (osteoprogenitora, osteoblasto, osteócito) vêm do mesênquima. Ele é multinucleado e possui a borda pregueada, com bomba de prótons que acidifica o microambiente e catepsina K que digere o colágeno — a maquinaria que produz a lacuna.",
+  "correta": "Osteoclasto.",
+  "incorretas": {
+   "A": "O fibroblasto é mesenquimal e produz matriz conjuntiva; não reabsorve osso.",
+   "C": "O osteoblasto é mesenquimal e forma osso — ele preenche a lacuna, não a escava.",
+   "D": "O condroblasto forma cartilagem e também é de origem mesenquimal."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0069": {
+  "conceito": "Cada anticoagulante tem seu antídoto, e vale ter o pareamento pronto: heparina não fracionada e heparinas de baixo peso molecular (enoxaparina) revertem-se com protamina; varfarina, com vitamina K e complexo protrombínico; dabigatrana, com idarucizumabe; rivaroxabana e apixabana, com andexanet alfa ou complexo protrombínico. Vale a ressalva prática sobre a enoxaparina: a protamina reverte apenas parte do efeito (em torno de 60%), porque neutraliza bem a atividade antitrombina mas mal a atividade anti-Xa.",
+  "correta": "Protamina, que neutraliza a heparina de baixo peso molecular — ainda que de forma parcial.",
+  "incorretas": {
+   "A": "O fator VIIa é agente pró-hemostático de resgate em sangramento refratário, e não antídoto específico da enoxaparina.",
+   "C": "A vitamina K reverte antagonistas da vitamina K, como a varfarina.",
+   "D": "O ácido tranexâmico é antifibrinolítico: preserva o coágulo formado, mas não neutraliza a heparina."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0070": {
+  "conceito": "A teoria da deformação de Perren explica por que a mesma fixação serve para uma fratura e não para outra. Deformação (strain) é a variação de comprimento dividida pelo comprimento inicial da falha. Numa fratura transversa há uma única fenda estreitíssima: qualquer micromovimento representa uma deformação enorme naquele espaço, acima do que o tecido de reparo tolera, e o calo não se forma. Numa fratura multifragmentar o mesmo movimento se reparte entre muitas fendas, e a deformação em cada uma fica baixa. Por isso a transversa exige estabilidade absoluta — compressão que zera a fenda —, e a multifragmentar aceita, e prefere, estabilidade relativa.",
+  "correta": "Maior deformação na transversa, com indicação de estabilidade absoluta.",
+  "incorretas": {
+   "A": "A deformação está certa, mas deformação alta é justamente o que a estabilidade relativa não resolve.",
+   "B": "Inverte a deformação: a fenda única e estreita concentra o movimento, e não o dilui.",
+   "D": "A conduta está certa, mas o raciocínio parte de uma premissa errada sobre a deformação."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0071": {
+  "conceito": "Dois fatores tornam um músculo candidato ao estiramento. Ser biarticular: cruzando duas articulações, ele pode ser alongado nas duas ao mesmo tempo e chega ao limite antes dos demais — reto femoral, isquiotibiais, gastrocnêmio. E ser solicitado em contração excêntrica: o músculo contrai enquanto está sendo alongado, funcionando como freio, e a força que ele suporta nessa condição é maior do que a que consegue gerar concentricamente. É por isso que a lesão acontece na desaceleração — no fim da fase de balanço da corrida, na aterrissagem do salto — e não no impulso.",
+  "correta": "Músculos biarticulares, em contração excêntrica.",
+  "incorretas": {
+   "B": "A contração excêntrica está certa, mas o músculo monoarticular não sofre o duplo alongamento.",
+   "C": "A condição biarticular está certa, mas a contração concêntrica encurta o músculo em vez de alongá-lo.",
+   "D": "Erra as duas condições."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0072": {
+  "conceito": "No adulto o disco intervertebral é avascular, e por isso a infecção hematogênica não começa nele. As artérias segmentares terminam em arteríolas na região da PLACA TERMINAL, junto ao osso subcondral do corpo vertebral, onde o fluxo é lento — é ali que o germe se deposita e é ali que a infecção começa. Do foco na placa terminal ela invade o disco por contiguidade e alcança a placa terminal da vértebra vizinha, produzindo a imagem característica de duas placas destruídas com o disco no meio. Na criança, em que o disco ainda tem vasos, a discite primária é possível.",
+  "correta": "Na placa terminal, território das arteríolas terminais das artérias segmentares.",
+  "incorretas": {
+   "B": "A faceta articular é sítio possível, mas incomum, e não é onde a infecção hematogênica começa.",
+   "C": "O corpo vertebral é acometido, mas o ponto inicial preciso é a região subcondral da placa terminal.",
+   "D": "O disco do adulto é avascular: ele é atingido por contiguidade, e não por via hematogênica direta."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0074": {
+  "conceito": "Os critérios de Kocher foram construídos para serem objetivos e reprodutíveis à beira do leito, com dados que qualquer serviço tem: febre acima de 38,5 graus, incapacidade de apoiar o membro, VHS acima de 40 mm/h e leucócitos acima de 12.000. Exames de imagem não entram — o derrame na ultrassonografia aparece tanto na sinovite transitória quanto na artrite séptica e não distingue as duas. A modificação de Caird acrescentou a PCR acima de 20 mg/l como quinto critério.",
+  "correta": "Não apoiar o membro inferior afetado.",
+  "incorretas": {
+   "A": "O derrame articular à ultrassonografia está presente nas duas condições e não as separa — por isso não é critério.",
+   "B": "A alfa-1 glicoproteína ácida é marcador inflamatório, mas não faz parte dos critérios.",
+   "D": "Achados de ressonância não integram os critérios de Kocher."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0075": {
+  "conceito": "O fixador externo é uma alavanca, e a estabilidade dele se governa por poucas regras que se deduzem dessa imagem. A rigidez do pino cresce com a quarta potência do raio, de modo que aumentar o diâmetro do Schanz é a medida isolada mais eficaz — respeitado o limite de um terço do diâmetro do osso, para não fragilizá-lo. E aproximar a barra do osso encurta o braço de alavanca entre a montagem e o esqueleto: barra afastada é a maneira mais rápida de deixar o fixador frouxo. Somam-se a isso pinos afastados entre si no mesmo fragmento e próximos do foco.",
+  "correta": "Diminuir a distância da barra ao osso e aumentar o diâmetro dos pinos de Schanz.",
+  "incorretas": {
+   "A": "Erra as duas: barra afastada e pino fino são as duas maneiras de reduzir a rigidez.",
+   "B": "A barra próxima está certa, mas o pino de menor diâmetro reduz muito a rigidez.",
+   "C": "O pino grosso está certo, mas afastar a barra do osso desfaz o ganho."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0076": {
+  "conceito": "O sequestro é osso morto isolado dentro do foco infectado, e ele se forma por um mecanismo mecânico antes de ser bacteriológico. O pus se acumula sob pressão dentro do canal de Havers e da medular, atravessa a cortical e disseca o periósteo, descolando-o do osso. Como o terço externo da cortical é irrigado justamente pelos vasos periosteais, esse descolamento corta a irrigação daquele segmento — que, somado à trombose dos vasos medulares, morre. O periósteo elevado, por sua vez, forma osso novo ao redor, o invólucro, com orifícios (cloacas) por onde o pus drena.",
+  "correta": "Elevação periosteal e necrose óssea: descolado o periósteo, o osso perde a irrigação e morre.",
+  "incorretas": {
+   "A": "Acometimento epifisário e pioartrite são consequências possíveis da infecção, mas não explicam a formação do sequestro.",
+   "C": "Neoformação óssea é o invólucro, e a fístula é a via de drenagem — são consequências do processo, não a causa do sequestro.",
+   "D": "As células inflamatórias e o estado imunológico do hospedeiro influem no curso da doença, mas o sequestro se forma por isquemia mecânica."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0077": {
+  "conceito": "As prostaglandinas participam da fase inflamatória da consolidação, e é por elas que a COX-2 importa: a enzima é induzida no foco de fratura e sua expressão é necessária para a diferenciação das células mesenquimais em osteoblastos. Bloqueá-la — com anti-inflamatório seletivo ou não seletivo, já que ambos inibem a COX-2 — atrasa a consolidação em modelos experimentais e se associa a maior risco de retardo e pseudartrose nos estudos clínicos, sobretudo com uso prolongado e em dose alta. O efeito é dose e tempo dependente, e reversível.",
+  "correta": "Ambos interferem: seletivos e não seletivos inibem a COX-2, que é a enzima necessária à consolidação.",
+  "incorretas": {
+   "B": "Dizer que nenhum interfere contraria os dados experimentais e clínicos disponíveis.",
+   "C": "Não há essa dissociação: os não seletivos também inibem a COX-2, além da COX-1.",
+   "D": "Mesma razão, com a lógica invertida."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0078": {
+  "conceito": "O padrão de sinal da infecção é o padrão do edema e da inflamação, ou seja, o padrão da água: sinal BAIXO em T1, porque a água substitui a gordura da medula óssea, e sinal ALTO em T2 e nas sequências com supressão de gordura. Some-se a isso o realce após o gadolínio, o hipersinal do disco em T2 com perda da fenda intranuclear e as coleções paravertebrais e epidurais que se realçam perifericamente. Esse conjunto é o que faz da ressonância o exame de escolha, com sensibilidade e especificidade acima de 90%.",
+  "correta": "Hipossinal em T1 e hipersinal em T2 — o padrão do edema e da inflamação.",
+  "incorretas": {
+   "A": "Hipossinal nas duas sequências corresponde a osso esclerótico ou fibrose, e não a processo inflamatório ativo.",
+   "C": "Hipersinal em T1 é gordura ou sangue subagudo — ou seja, medula normal ou hemorragia, e não infecção.",
+   "D": "Hipersinal nas duas sequências aponta para gordura ou conteúdo proteico, não para o edema da infecção."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0079": {
+  "conceito": "É uma das associações mais cobradas da ortopedia: ferimento perfurante na planta do pé, atravessando a sola do tênis, e osteomielite ou osteocondrite por Pseudomonas aeruginosa. A explicação está na própria espuma úmida do calçado, que abriga o germe, inoculado em profundidade pelo objeto perfurante. A apresentação é dor persistente dias depois de um ferimento aparentemente banal, e o tratamento exige desbridamento e antibiótico com cobertura antipseudomonas — a cobertura empírica habitual para estafilococo não serve.",
+  "correta": "Pseudomonas aeruginosa.",
+  "incorretas": {
+   "A": "A Kingella kingae é agente de artrite séptica e osteomielite em crianças pequenas, de curso indolente, e não a do ferimento perfurante.",
+   "B": "A Salmonella é a associação clássica da doença falciforme.",
+   "C": "A Klebsiella não é o agente típico desse mecanismo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0080": {
+  "conceito": "A doença vascular periférica, quase sempre associada ao diabetes, responde pela grande maioria das amputações de membro inferior — na casa dos 80 a 90% nas estatísticas de países com população envelhecida. O trauma vem em segundo lugar e é a principal causa nos membros superiores e nos pacientes jovens. Tumor e deformidade congênita são minoria. Essa distribuição explica o perfil do amputado que se atende na prática: idoso, diabético, com comorbidades, cicatrização difícil e alto risco de amputação contralateral nos anos seguintes.",
+  "correta": "Doença vascular periférica.",
+  "incorretas": {
+   "A": "O tumor responde por uma fração pequena das amputações.",
+   "B": "O trauma é a segunda causa nos membros inferiores e a principal nos superiores e nos jovens.",
+   "C": "A deformidade congênita é causa minoritária."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0081": {
+  "conceito": "O princípio da banda de tensão converte força de tração em compressão, e para isso o implante precisa estar do lado que sofre tração. Num osso longo carregado excentricamente, a carga cria compressão de um lado e tração do outro: a face CONVEXA é a que traciona. Colocando a placa ali, a carga fisiológica que tenderia a abrir o foco passa a comprimi-lo através do implante. Colocá-la na concavidade faz o oposto — a placa fica no lado que já comprime, e o foco se abre do outro lado a cada ciclo de carga, o que leva à falha por fadiga.",
+  "correta": "Face convexa, que é a que sofre tração.",
+  "incorretas": {
+   "A": "Volar e dorsal são referências anatômicas que variam com o osso; o princípio é definido pela mecânica, não pela face anatômica.",
+   "B": "Mesma razão: no fêmur a face de tração é a lateral, e no úmero depende da carga.",
+   "D": "A face côncava é a que sofre compressão — placa ali não converte tração em compressão e tende a falhar por fadiga."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0082": {
+  "conceito": "A lesão muscular evolui em três fases. Destruição: ruptura das miofibrilas, retração dos cotos, hematoma e necrose. Reparo: os macrófagos fagocitam o tecido necrótico e, ao mesmo tempo, as células satélites — as células-tronco do músculo, alojadas sob a lâmina basal — são ativadas, proliferam e regeneram miofibrilas, enquanto fibroblastos produzem a cicatriz de tecido conjuntivo entre os cotos. Remodelação: as miofibrilas novas amadurecem, a cicatriz se retrai e a função é recuperada. É a competição entre regeneração e cicatriz que determina o resultado final.",
+  "correta": "Fagocitose do tecido necrótico e regeneração das miofibrilas — as duas coisas acontecem simultaneamente na fase de reparo.",
+  "incorretas": {
+   "A": "A necrose pertence à fase de destruição, e a maturação à de remodelação.",
+   "B": "A regeneração está certa, mas a necrose é da fase anterior.",
+   "C": "A fagocitose está certa, mas a maturação das miofibrilas é da fase de remodelação."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0083": {
+  "conceito": "Cada exame do líquido sinovial pede um recipiente, e a pesquisa de cristais é a mais exigente. O EDTA e o oxalato de potássio podem precipitar como cristais próprios e produzir falsos positivos, confundindo a leitura na luz polarizada. A heparina com lítio também pode formar artefatos cristalinos. Por isso o recomendado é a heparina SÓDICA, que preserva o líquido sem interferir na análise. Para contagem celular usa-se EDTA; para cultura, seringa ou frasco próprio, sem anticoagulante.",
+  "correta": "Heparina sódica, que anticoagula sem produzir artefatos cristalinos.",
+  "incorretas": {
+   "A": "O EDTA pode precipitar em cristais e falsear a pesquisa — ele serve à contagem celular, não a esta.",
+   "C": "A heparina com lítio também pode gerar artefatos cristalinos.",
+   "D": "O oxalato de potássio forma cristais e é justamente o que se evita nesta análise."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0084": {
+  "conceito": "Fratura da diáfise da tíbia com fíbula ÍNTEGRA tem uma armadilha previsível: a fíbula intacta funciona como uma escora do lado lateral e impede que aquele lado se encurte, enquanto o lado medial, fraturado, colapsa. O resultado é o desvio progressivo em varo durante o tratamento conservador, muitas vezes surgindo depois da primeira ou segunda semana, quando o edema cede e o gesso afrouxa. Daí a necessidade de moldagem em valgo no aparelho gessado e de radiografias de controle semanais no primeiro mês.",
+  "correta": "Varo — a fíbula íntegra escora o lado lateral e o lado medial colapsa.",
+  "incorretas": {
+   "B": "O valgo é o que a moldagem procura induzir para compensar, e não a tendência natural do desvio.",
+   "C": "O recurvato não é o desvio característico dessa combinação.",
+   "D": "O antecurvato tampouco: o desvio previsível ocorre no plano frontal."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0085": {
+  "conceito": "Na classificação de Gledhill modificada por Roberts, o tipo V é a osteomielite subaguda EPIFISÁRIA — lesão lítica bem delimitada dentro da epífise, exatamente onde o condroblastoma aparece, na mesma faixa etária e com a mesma imagem de lesão lítica com halo esclerótico. É o diagnóstico diferencial mais difícil da série, e a distinção costuma exigir ressonância (que mostra o edema perilesional exuberante da infecção e o realce periférico do abscesso) e, muitas vezes, biópsia. O tipo IV, com reação em camadas de cebola, é o que confunde com sarcoma de Ewing.",
+  "correta": "Tipo V, epifisário — mesmo território e mesma imagem do condroblastoma.",
+  "incorretas": {
+   "A": "O tipo II é metafisário com erosão cortical.",
+   "B": "O tipo III é cortical diafisário.",
+   "C": "O tipo IV é diafisário com reação periosteal em camadas de cebola, e confunde com sarcoma de Ewing."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0086": {
+  "conceito": "Cierny e Mader combinam duas informações: um tipo anatômico (I medular, II superficial, III localizado com sequestro de espessura total mas osso ainda estável, IV difuso, cuja ressecção cria instabilidade) e uma classe do hospedeiro (A sem comprometimento, B com comprometimento local (L), sistêmico (S) ou ambos, C aquele em que o tratamento seria pior que a doença). O enunciado diz que a lesão cria instabilidade axial — tipo IV — e descreve um diabético insulinodependente mal controlado, que é comprometimento sistêmico: B(S).",
+  "correta": "IV-B(S): lesão difusa com instabilidade, em hospedeiro com comprometimento sistêmico.",
+  "incorretas": {
+   "A": "O tipo II é superficial, sem penetrar toda a espessura da cortical, e A é o hospedeiro sem comprometimento algum.",
+   "B": "O tipo III não cria instabilidade — o enunciado diz que ela existe. E (L) indica comprometimento LOCAL, enquanto o diabetes descompensado é sistêmico.",
+   "D": "Não há tipo V na classificação anatômica, e a classe C corresponde ao paciente em que o tratamento é mais mórbido que a doença."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0087": {
+  "conceito": "A cintilografia com difosfonato marcado com tecnécio tem três fases, e cada uma mostra uma coisa. Fase de fluxo (angiográfica), nos primeiros segundos: a passagem do radiofármaco pelos vasos, equivalente a um angiograma. Fase de equilíbrio (blood pool), nos primeiros minutos: a distribuição no espaço extracelular, que reflete hiperemia e inflamação de partes moles. Fase tardia, após duas a quatro horas: já excretada pelo rim a maior parte do isótopo circulante, o que resta está fixado ao osso, e a imagem mostra atividade osteoblástica. O estudo em três fases acrescenta ESPECIFICIDADE — a sensibilidade já é alta na fase tardia isolada.",
+  "correta": "A fase tardia mostra a atividade osteoblástica, depois da excreção renal da maior parte do isótopo.",
+  "incorretas": {
+   "A": "O estudo em três fases aumenta sobretudo a especificidade; a sensibilidade da cintilografia óssea já é alta.",
+   "B": "A distribuição no espaço extracelular é da fase de EQUILÍBRIO, e não da de fluxo.",
+   "C": "Quem se assemelha ao angiograma é a fase de FLUXO, e não a de equilíbrio."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0088": {
+  "conceito": "As regras de montagem do fixador externo se deduzem pensando no conjunto como uma alavanca. Pinos afastados entre si dentro do mesmo fragmento ampliam a base de apoio e resistem melhor à angulação — é a regra que a resposta cobra. Pinos grossos aumentam muito a rigidez, que cresce com a quarta potência do raio. Barra próxima do osso encurta o braço de alavanca. E a inserção do Schanz se faz com baixa rotação, após pré-perfuração e com irrigação, porque o calor gerado por alta rotação necrosa o osso ao redor e é a causa principal de afrouxamento e infecção do trajeto.",
+  "correta": "A distância entre os pinos de Schanz de um mesmo fragmento deve ser a maior possível.",
+  "incorretas": {
+   "A": "Alta rotação gera necrose térmica no trajeto do pino, que é a origem do afrouxamento e da infecção — a inserção se faz em baixa rotação, com pré-perfuração e irrigação.",
+   "C": "É o contrário: a barra deve ficar o mais PRÓXIMA possível do osso, respeitado o espaço para o edema, porque assim se encurta o braço de alavanca.",
+   "D": "Os pinos devem ficar próximos do foco, e não a 3 cm dele — o que se evita é colocá-los dentro da zona de lesão e a menos de 1 a 2 cm da articulação."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0089": {
+  "conceito": "Os quatro critérios de Kocher — febre acima de 38,5 graus, incapacidade de apoiar o membro, VHS acima de 40 mm/h e leucócitos acima de 12.000 — valem pela probabilidade acumulada, e é isso que se cobra. Um critério: cerca de 3%. Dois: cerca de 40%. Três: mais de 90%. Quatro: praticamente 100%. A criança do enunciado tem dois (não apoia o membro e leucócitos acima de 12.000), o que a coloca na faixa dos 40% — território em que não se pode nem tranquilizar nem operar às cegas, e em que entram a ultrassonografia e a punção articular.",
+  "correta": "Cerca de 40%, correspondente a dois critérios presentes.",
+  "incorretas": {
+   "A": "10% aproxima-se do patamar de um único critério (cerca de 3%).",
+   "C": "70% não corresponde a nenhum patamar da série.",
+   "D": "99% corresponde aos quatro critérios presentes."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ }
+}
