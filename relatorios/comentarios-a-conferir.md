@@ -17,6 +17,8 @@ gabarito sugere, e sem essa leitura o comentário seria adivinhação. As quest�
 com figura já comentadas até aqui tiveram todas as imagens abertas e conferidas
 uma a uma.
 
+Contagem por tema do que ficou de fora por esse motivo: quadril, 52 questões.
+
 ## Gabarito que parece errado
 
 | Questão | O que a banca diz | O que me faz duvidar |
@@ -34,6 +36,11 @@ uma a uma.
 | `mao-0576` | A perda da sensibilidade protetora corresponde ao monofilamento **amarelo** de Semmes-Weinstein | Nas duas escalas que conheço quem marca essa fronteira é o **vermelho**: no kit de cinco cores (verde, azul, violeta, vermelho) e no estesiômetro brasileiro de seis (verde 0,05 g, azul 0,2 g, violeta 2 g, vermelho 4 g, laranja 10 g, magenta 300 g). O amarelo não aparece em nenhuma delas |
 | `osteometabolicas-0046` | A osteoporose transitória do quadril ocorre mais comumente em **gestantes** no terceiro trimestre | A literatura descreve dois grupos, e na maioria das séries os homens de meia-idade (alternativa C) são mais numerosos, em proporção próxima de três para um |
 | `osteometabolicas-0055` | Sobre o raquitismo, a única alternativa correta seria a da deficiência de vitamina D | A alternativa C — fraqueza muscular proximal, geno varo ou valgo e rosário raquítico — também é verdadeira, e está marcada como errada. A questão tem duas respostas certas |
+| `quadril-0178` | A pelve de Otto está **associada a artrite reumatoide e/ou osteomalácia** | Essa associação define a protrusão SECUNDÁRIA. A pelve de Otto é a protrusão primária, idiopática — como dizem as próprias `quadril-0021`, `0028` e `0120` do acervo. A alternativa sustentável é a B (bilateral na quase totalidade dos casos) |
+| `quadril-0146` | No came as lesões condrais são por cisalhamento e no pinçamento são circunferenciais | A alternativa D também está correta: no came a lesão é extensa e por cisalhamento, e no pinçamento é restrita a uma banda estreita junto à borda. A questão tem duas respostas defensáveis |
+| `quadril-0192` e `quadril-0202` | Mesma pergunta sobre fatores de risco de fratura periprotética, com gabaritos oficiais **diferentes** (B numa, A na outra) | As duas listas só contêm fatores de risco reconhecidos. Não há como escolher uma e descartar a outra pelo conteúdo |
+| `quadril-0193` e `quadril-0203` | Mesma pergunta sobre qual ramo do nervo glúteo superior inerva o glúteo médio, com gabaritos oficiais **diferentes** (superior numa, inferior na outra) | O glúteo médio recebe fibras dos dois ramos: o superior vai a ele, e o inferior corre entre o médio e o mínimo inervando os dois. As duas alternativas têm respaldo |
+| `quadril-0172` | Mesmo caso da `osteometabolicas-0046`: a osteoporose transitória do quadril seria mais comum em gestantes | As séries trazem mais homens de meia-idade do que gestantes, em proporção próxima de três para um |
 | `quadril-0035` | O ramo **medial** da lágrima de Köhler corresponde à fossa acetabular | A descrição clássica é o inverso: o ramo lateral é a parede da fossa acetabular e o medial é a superfície quadrilátera — que é a alternativa D, marcada como errada. A `quadril-0053`, no mesmo acervo, reforça isso ao ligar a dissociação entre lágrima e coluna posterior à fratura da superfície quadrilátera |
 | `quadril-0031` | O movimento passivo que exacerba a síndrome do piriforme é rotação medial com **abdução** | Alongar o piriforme exige rotação interna com ADUÇÃO (teste FAIR, sinal de Freiberg). Abdução com rotação externa é o teste ATIVO — e a `quadril-0046` e a `quadril-0065`, no mesmo acervo, respondem exatamente isso |
 
@@ -45,6 +52,7 @@ uma a uma.
 | `mao-0237` | Liberação do túnel do carpo é necessária em **67%** depois de artrodese total do punho | Número muito alto e não consigo confirmá-lo |
 | `mao-0242` | A "gota de lágrima" da borda volar do rádio mede **5 mm** de largura máxima | Conheço a descrição do ângulo da gota (~70°), não a da largura |
 | `mao-0418` | O padrão mais comum de fratura do semilunar no Kienböck acomete o polo **anterior** | Conheço a fratura coronal do semilunar, que separa fragmento volar e dorsal, mas não consigo confirmar qual polo é o mais acometido |
+| `quadril-0119` | As alterações degenerativas vizinhas começam a doer **15 a 25 anos** depois da artrodese do quadril | O número que a literatura cita é "cerca de duas décadas", e ele cabe tanto na faixa do gabarito quanto na alternativa C (10 a 20 anos). A questão se decide só pelo intervalo, e não consigo separar os dois |
 | `mao-0542` | Na macrodactilia o polegar deforma em **abdução e hiperextensão** | A macrodactilia do polegar costuma vir descrita pelo excesso de volume e pelo desvio no plano do dedo acometido, e não achei fonte que fixe esse par de deformidades como o padrão |
 
 ## Figura que não consigo interpretar com segurança
@@ -54,6 +62,8 @@ uma a uma.
 | `mao-0565` | Quais dos nove pontos marcados na pele do antebraço doem no túnel radial e na compressão do mediano | A foto é um esquema de nove pontos numerados de um trabalho que não identifiquei. Sem saber como o autor orientou a grade, não consigo dizer qual coluna é radial e qual é ulnar — e a resposta depende exatamente disso |
 | `mao-0569` | Nomear o músculo que a seta aponta num corte transversal do antebraço | Não consigo orientar o corte com segurança: não distingo qual metade é volar e qual é dorsal nessa resolução, e sem isso o mesmo ponto pode ser flexor superficial ou supinador |
 | `mao-0577` | Nomear os ligamentos apontados pelas setas 1 e 2 numa figura anatômica do carpo | A figura não veio no PDF. O que o importador havia guardado no lugar dela eram as páginas finais do e-book (folha de respostas e logotipo), removidas agora, e a questão passou a avisar que a figura está faltando |
+| `quadril-0113` | Medir um ângulo a partir de uma figura para definir impacto femoroacetabular | A figura não veio no PDF. Sem ela não dá para saber o que está sendo medido, e o "ângulo beta" do gabarito não é uma medida que eu consiga situar com segurança na avaliação do impacto |
+| `quadril-0137` | Nomear o músculo indicado numa figura da região posterior da coxa | A figura não veio no PDF |
 
 ## Classificação que não domino com essa granularidade
 
@@ -66,6 +76,8 @@ uma a uma.
 | `mao-0504` | A redução da luxação dorsal metacarpofalângica se faz com força em direção **volar** da cabeça do metacarpo | A cabeça do metacarpo já está deslocada volarmente, e a descrição clássica empurra a cabeça dorsalmente enquanto a falange é levada sobre ela. O que é certo, e o comentário não pôde ser escrito sem isso, é que tracionar piora — mas não consigo justificar a direção que o gabarito escolhe |
 | `mao-0491` | O tipo **T/1** representa hemimelia terminal, longitudinal paraxial completa | Conheço os eixos da classificação de Frantz e O'Rahilly (terminal ou intercalar, transversa ou longitudinal, completa ou parcial), mas não a notação "T/1" que o enunciado usa |
 | `quadril-0034` | A fratura periprotética acetabular traumática é **tipo III** de Della Valle e Paprosky | Conheço a lógica da classificação — separar a fratura reconhecida no pós-operatório, a traumática e a espontânea por osteólise, e cada uma com componente estável ou solto —, mas não a numeração exata dos tipos, e a questão depende só do número |
+| `quadril-0179` | Qual critério NÃO é contemplado pela classificação de Bombelli para a artrose do quadril | Conheço os eixos de Bombelli — direção da migração da cabeça e reatividade biológica (hipertrófica, normotrófica, atrófica) —, mas não a lista fechada de critérios que a questão pede, e a resposta depende exatamente dela |
+| `quadril-0195` | Quais são, depois da trocantérica, as duas bursas mais acometidas | O trio que conheço é trocantérica, iliopsoas (iliopectínea) e isquioglútea. O gabarito troca a isquioglútea pela subglútea, e como a subglútea faz parte do próprio complexo trocantérico já nomeado no enunciado, não consigo decidir a intenção da banca |
 | `mao-0544` | Subtipos A1/A2/B1/B2 da classificação de **Albertoni** para dedo em martelo | Conheço a divisão de Albertoni entre lesão tendínea pura e lesão com arrancamento ósseo, mas não a numeração dos subtipos nem o ponto de corte de 30º que o enunciado usa para separá-los |
 
 ## Enunciado que não consigo reconstruir
@@ -89,6 +101,9 @@ uma a uma.
 | `osteometabolicas-0036` | A formulação original do critério de Altman fala em ausência de calor palpável. A alternativa dada como certa está redigida de outro jeito, e o que a sustenta é a eliminação das demais por categoria e por valor de corte |
 | `quadril-0039` | A direção perpendicular das perfurantes ao fêmur é o que sustenta a resposta; o intervalo de cerca de 3 cm é o número da banca, e esse eu não consigo confirmar de forma independente |
 | `quadril-0032` | Pelo mesmo mecanismo do braço de alavanca, a força exigida dos abdutores também aumenta com o centro superolateral — a alternativa B não é falsa em fisiologia, e o comentário registra isso |
+| `quadril-0149` | O teste do meio da sequência, atribuído a Hart, eu não consigo situar de forma independente — o que sustenta a resposta é a eliminação pelos testes de Thomas e de Ely |
+| `quadril-0207` | A bursa iliopectínea também se associa a ressalto do quadril, o interno; o comentário registra que a resposta aponta a bursa do ressalto externo, que é o mais frequente |
+| `quadril-0204` | A resposta clássica (artrose primária como a mais frequente) vem encolhendo: boa parte do que se chamava idiopático corresponde a impacto femoroacetabular ou displasia sutil, e o comentário registra isso |
 
 ---
 
