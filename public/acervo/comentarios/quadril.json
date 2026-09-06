@@ -1,0 +1,785 @@
+{
+ "quadril-0001": {
+  "conceito": "O portal anterior da artroscopia do quadril é o único que passa perto do nervo cutâneo femoral lateral. O nervo sai da pelve junto à espinha ilíaca anterossuperior e logo se divide em ramos que se espalham pelo tecido subcutâneo da coxa, medialmente ao portal. Quanto mais medial for a punção, mais perto desses ramos ela passa — daí a lesão vir da medialização, e daí a recomendação prática de fazer a incisão só na pele, com bisturi, e dilatar o subcutâneo às cegas em vez de cortá-lo.",
+  "correta": "A medialização do portal anterior, que aproxima a punção dos ramos do cutâneo femoral lateral.",
+  "incorretas": {
+   "B": "Lateralizar o portal anterior afasta o trajeto do nervo, e não o contrário.",
+   "C": "O portal anterolateral fica bem distante do cutâneo femoral lateral; ali o risco é o nervo glúteo superior, mais proximal.",
+   "D": "Mesma razão: o anterolateral não é o portal em conflito com esse nervo, medializado ou não."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0002": {
+  "conceito": "A classificação de Vancouver resolve a fratura periprotética com três perguntas: onde é a fratura, o implante está solto e como está o estoque ósseo. A radiografia mostra a haste femoral desalinhada em relação ao canal, migrada e apoiada fora do seu leito, com o fêmur proximal fraturado ao redor dela — ou seja, haste solta. Isso é um tipo B2 (ou B3, se o osso proximal for insuficiente), e nesse cenário a fratura não é o problema principal: o problema é que a haste perdeu a fixação. Fixar a fratura mantendo um implante solto reproduz a falha em pouco tempo.",
+  "correta": "Revisão do componente femoral: com a haste solta, a solução é trocá-la por uma haste longa que ultrapasse o traço e se fixe no osso diafisário distal íntegro, associando cerclagem ou placa conforme necessário.",
+  "incorretas": {
+   "A": "Enxerto ósseo é adjuvante — ele repõe estoque, mas não devolve fixação a uma haste que já está solta.",
+   "B": "Cerclagem isolada serve para fratura sem desvio ao redor de haste bem fixa (tipo B1), não para haste migrada.",
+   "D": "Manter o componente femoral é justamente o que a imagem contraindica: a haste já perdeu a fixação, e conservá-la leva à nova falha."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0003": {
+  "conceito": "A jump distance é o quanto a cabeça precisa se deslocar lateralmente dentro do componente acetabular antes de alcançar a borda dele e luxar. Numa taça hemisférica, esse percurso é o raio da cabeça, ou seja, metade do diâmetro. Daí decorre o motivo pelo qual cabeça maior é mais estável: dobrando o diâmetro, dobra-se a distância a percorrer. É também por isso que uma taça com cobertura menor que a hemisfera, ou um inserto mal posicionado, reduz a jump distance mesmo com a cabeça do mesmo tamanho.",
+  "correta": "Percorrer até a borda do componente acetabular, e equivale à metade do diâmetro da cabeça — ou seja, ao raio.",
+  "incorretas": {
+   "A": "A metade do diâmetro está certa, mas a definição não é \"sair do acetábulo\": a medida é até a borda do componente, que é onde a estabilidade acaba.",
+   "B": "Erra as duas partes: nem a definição, nem a medida, que é o raio e não o dobro do diâmetro.",
+   "D": "A referência da borda está certa, mas a distância é a metade do diâmetro, não o dobro dele."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0004": {
+  "conceito": "O impacto extra-articular posterior é o conflito entre estruturas ósseas fora da articulação — tipicamente o pequeno trocanter contra o ísquio, o impacto isquiofemoral — e ocorre com o quadril em extensão, adução e rotação externa. A anteversão femoral aumentada é o fator anatômico que o favorece: com o colo apontado mais para frente, é preciso rodar externamente menos para que a região posterior do fêmur encoste no ísquio. E como o colo já está \"pré-rodado\", o exame físico mostra rotação interna ampla e rotação externa reduzida.",
+  "correta": "Aumento da anteversão com diminuição da rotação externa — o mesmo achado anatômico explica o conflito posterior e o padrão do exame físico.",
+  "incorretas": {
+   "A": "A anteversão está certa, mas anteversão aumentada reduz a rotação externa e amplia a interna, não o contrário.",
+   "C": "Anteversão diminuída (ou retroversão) favorece o impacto anterior, não o posterior, e aumenta a rotação externa.",
+   "D": "A rotação externa reduzida está certa, mas ela decorre do excesso de anteversão, e não da falta dela."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0005": {
+  "conceito": "A manobra de Ludloff testa o iliopsoas isolando-o dos outros flexores do quadril. Com o paciente sentado e o joelho fletido, o reto femoral fica encurtado e perde eficiência como flexor do quadril, de modo que a flexão ativa contra resistência depende sobretudo do iliopsoas. Foi descrita para a avulsão do pequeno trocanter no adolescente, em que a incapacidade de fletir o quadril nessa posição é o sinal clássico, e continua servindo para lesão ou tendinopatia do iliopsoas.",
+  "correta": "Flexão do quadril contra resistência com os joelhos fletidos — a posição que tira o reto femoral da jogada e isola o iliopsoas.",
+  "incorretas": {
+   "B": "A extensão testa glúteo máximo e isquiotibiais, não o iliopsoas.",
+   "C": "A flexão está certa, mas com o joelho estendido o reto femoral participa e a manobra deixa de isolar o iliopsoas.",
+   "D": "Erra o movimento e a posição do joelho ao mesmo tempo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0006": {
+  "conceito": "A osteotomia periacetabular de Ganz (Berna) redireciona o acetábulo para cobrir a cabeça femoral, e o que ela oferece é cartilagem melhor distribuída — não cartilagem nova. Por isso as duas condições que definem a indicação são a displasia com cobertura insuficiente, expressa por ângulo centro-borda abaixo de 20 a 25 graus, e a articulação ainda sem artrose, ou seja, Tönnis grau 0 (ou no máximo 1). Exige também congruência articular e placa de crescimento fechada. Com artrose instalada, a cobertura redirecionada não resolve, e o caminho é a artroplastia.",
+  "correta": "Ângulo centro-borda inferior a 20 graus com Tönnis grau 0: displasia verdadeira em articulação ainda preservada.",
+  "incorretas": {
+   "B": "Ângulo acima de 20 graus já não caracteriza a displasia que a osteotomia corrige.",
+   "C": "O ângulo está certo, mas Tönnis grau 2 significa artrose estabelecida — redirecionar o acetábulo não devolve cartilagem.",
+   "D": "Erra os dois critérios: sem displasia e com artrose instalada, a osteotomia não tem o que oferecer."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0007": {
+  "conceito": "A coxa tem três compartimentos, e cada um vem com seu nervo. O anterior é do nervo femoral (quadríceps, sartório) e contém a artéria femoral superficial dentro do canal dos adutores. O posterior é do ciático (isquiotibiais). O medial é do nervo obturatório: adutores longo, curto e magno, grácil e obturador externo, e é por ele que corre a artéria femoral profunda, que se origina da femoral comum e emite as circunflexas e as perfurantes. Trocar o nervo ou a artéria é o erro que as alternativas exploram.",
+  "correta": "Grácil, artéria femoral profunda e nervo obturatório — músculo, vaso e nervo do compartimento medial.",
+  "incorretas": {
+   "A": "O grácil está certo, mas a artéria femoral superficial corre no compartimento anterior, e o nervo femoral comanda o anterior.",
+   "C": "O adutor curto e a femoral profunda pertencem ao compartimento medial, porém o nervo dele é o obturatório, não o femoral.",
+   "D": "O adutor curto e o obturatório estão certos, mas a artéria femoral superficial não é do compartimento medial."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0008": {
+  "conceito": "O quadril funciona como uma alavanca: de um lado, o peso do corpo agindo a partir do centro de gravidade; do outro, os abdutores puxando a partir do trocanter maior. A força que os abdutores precisam fazer, e portanto a carga resultante na cabeça femoral, depende da razão entre os dois braços de alavanca. Medializar a cabeça encurta o braço do peso corporal e alonga relativamente o braço dos abdutores — os abdutores fazem menos força e a carga na cabeça cai. É esse raciocínio que sustenta medializar a taça na artroplastia e a osteotomia de Chiari.",
+  "correta": "Medialização da cabeça femoral, que encurta o braço de alavanca do peso corporal e reduz a força necessária dos abdutores.",
+  "incorretas": {
+   "A": "Lateralizar faz o oposto: alonga o braço do peso corporal e aumenta a carga articular.",
+   "C": "O deslocamento anterior não altera essa relação de alavanca, que se dá no plano frontal.",
+   "D": "O deslocamento posterior tampouco muda os braços de alavanca do plano frontal."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0009": {
+  "conceito": "Cabeça maior melhora as duas coisas ao mesmo tempo, e por dois mecanismos distintos. O arco de movimento aumenta porque a relação entre o diâmetro da cabeça e o do colo fica maior, de modo que o colo demora mais a bater na borda do inserto. A estabilidade aumenta porque a jump distance — o percurso até a borda do componente — é o raio da cabeça, e cabeça maior significa percurso maior antes de luxar. O preço a pagar é o desgaste: inserto mais fino e maior distância percorrida por ciclo, o que reacende a preocupação com partículas nos pares mais antigos.",
+  "correta": "Amplia o arco de movimento e a estabilidade, por melhor relação cabeça-colo e maior jump distance.",
+  "incorretas": {
+   "A": "Inverte o efeito nas duas variáveis.",
+   "C": "O arco de movimento está certo, mas a estabilidade aumenta em vez de diminuir.",
+   "D": "A estabilidade está certa, mas o arco de movimento aumenta em vez de reduzir."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0010": {
+  "conceito": "A bactéria adere à superfície do implante em minutos, e em cerca de 72 horas já produziu a matriz de polissacarídeos que a protege — o biofilme. Dentro dele as bactérias ficam em baixa atividade metabólica, o antibiótico não penetra e a célula de defesa não alcança. Daí a regra clínica: o desbridamento com troca de componentes móveis e manutenção do implante (DAIR) só faz sentido na infecção precoce ou hematogênica aguda, com poucas semanas de sintomas; passado esse tempo, o biofilme maduro exige remover o implante.",
+  "correta": "A partir de cerca de 3 dias: a matriz do biofilme está formada em torno de 72 horas.",
+  "incorretas": {
+   "B": "1 semana já é tarde para descrever a formação do biofilme, que ocorre antes disso.",
+   "C": "2 semanas corresponde mais à maturação e ao amadurecimento do biofilme do que à sua formação.",
+   "D": "1 mês é o terreno da infecção crônica, com biofilme plenamente estabelecido — e não o momento em que ele se forma."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0011": {
+  "conceito": "A osteotomia proximal do fêmur na osteonecrose funciona por um princípio geométrico simples: girar ou angular o fêmur de modo que o segmento necrótico saia da zona de carga e osso viável ocupe o lugar dele. Isso só é possível se o segmento necrótico for pequeno o bastante para caber fora da área de carga — daí o critério de extensão da lesão, medida pelo ângulo necrótico combinado ou pela proporção da cabeça acometida. Lesão extensa não tem para onde ser girada, e a osteotomia falha.",
+  "correta": "Lesões menores que 50% da cabeça femoral: só um segmento necrótico pequeno pode ser deslocado para fora da área de carga.",
+  "incorretas": {
+   "A": "As lesões pós-traumáticas têm resultados piores com osteotomia, porque somam alteração vascular e deformidade prévia.",
+   "B": "Nos estágios pré-colapso de Ficat e Arlet o tratamento habitual é a descompressão do núcleo; a osteotomia entra quando já há colapso segmentar limitado.",
+   "C": "65 anos é idade alta demais para esse procedimento: a osteotomia é operação de paciente jovem, e no idoso a artroplastia dá resultado melhor e mais previsível."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0012": {
+  "conceito": "Existem duas classificações de Vancouver, e confundi-las é o erro clássico. A pós-operatória usa A, B1, B2, B3 e C conforme o local, a fixação da haste e o estoque ósseo. A intraoperatória, de Masri e Duncan, usa a letra para o nível — A metáfise proximal, B diáfise, C região distal — e o número para o tipo de dano: 1 é perfuração cortical, 2 é fratura sem desvio e 3 é fratura desviada ou instável. Como o enunciado diz que a fratura é intraoperatória, B1 é perfuração cortical da diáfise.",
+  "correta": "Perfuração cortical da diáfise: letra B para o nível diafisário, número 1 para a perfuração.",
+  "incorretas": {
+   "A": "Fratura sem desvio da diáfise é o tipo B2.",
+   "C": "Perfuração cortical da metáfise é o tipo A1.",
+   "D": "Fratura sem desvio da metáfise é o tipo A2."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0013": {
+  "conceito": "O planejamento da osteotomia do fêmur proximal se faz simulando o resultado antes de operar: pede-se uma radiografia em AP na posição que reproduz o efeito da osteotomia, e olha-se o que acontece com a cabeça dentro do acetábulo. Como a osteotomia valgizante aumenta o ângulo cervicodiafisário, o equivalente clínico dela é o quadril em adução — e é nessa radiografia que se verifica se a cabeça se centraliza e a congruência melhora. Para a osteotomia varizante, a lógica é a mesma ao contrário: a radiografia é em abdução.",
+  "correta": "Adução máxima, para verificar a centralização da cabeça: é a posição que simula o resultado da valgização.",
+  "incorretas": {
+   "A": "A posição está certa, mas o que se procura é a centralização e a melhora da congruência, e não a extrusão.",
+   "B": "A abdução simula a osteotomia varizante, e não a valgizante.",
+   "D": "Erra a posição pelo mesmo motivo, ainda que o objetivo esteja bem enunciado."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0014": {
+  "conceito": "A cabeça femoral do adulto é irrigada quase inteiramente pelo ramo profundo (ascendente) da artéria circunflexa femoral medial. Ele corre entre o obturador externo e o quadrado femoral, sobe pela crista intertrocantérica e perfura a cápsula perto da inserção posterossuperior, dando origem aos vasos retinaculares. No acesso posterior, isso se traduz numa regra de mesa cirúrgica: o quadrado femoral não deve ser desinserido, e a dissecção dos rotadores curtos se faz a mais de 1,5 cm da inserção femoral, para não seccionar o vaso que corre junto a eles.",
+  "correta": "O ramo ascendente (profundo) da artéria circunflexa femoral medial, principal responsável pela irrigação da cabeça femoral no adulto.",
+  "incorretas": {
+   "A": "A circunflexa femoral lateral irriga sobretudo a região trocantérica e a porção anterior; o ramo transverso dela não é o responsável pela cabeça.",
+   "B": "O ramo transverso da circunflexa medial não é o que sobe para a cabeça — quem faz isso é o ascendente.",
+   "D": "O ramo descendente da circunflexa lateral desce pela coxa e não tem relação com a irrigação da cabeça femoral."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0015": {
+  "conceito": "A sínfise púbica é uma articulação com disco fibrocartilaginoso envolto por uma cápsula ligamentar, sobre a qual convergem, por cima, o reto do abdome e, por baixo, o adutor longo. O sinal da fenda é uma coleção linear de líquido que se insinua entre o disco e esse envoltório capsular quando ele se rompe — na forma primária, dentro do próprio disco; na secundária, estendendo-se para baixo e para o lado, em direção à origem dos adutores. É achado de sobrecarga repetida em atletas, e é o que dá substrato de imagem à osteíte púbica.",
+  "correta": "Lesão do ligamento capsular que envolve o disco fibrocartilaginoso: é por essa ruptura que o líquido se insinua e desenha a fenda.",
+  "incorretas": {
+   "A": "Mioma uterino não tem relação com a sínfise púbica nem produz esse achado.",
+   "B": "A tendinose do reto do abdome faz parte do complexo da pubalgia do atleta, mas não é o que produz a fenda.",
+   "C": "O músculo que converge para a sínfise por baixo é o adutor longo, não o adutor magno — e, mesmo assim, a tendinose insercional não é o substrato do sinal."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0016": {
+  "conceito": "A síndrome da implantação do cimento acontece na pressurização: o monômero cai na corrente sanguínea e gordura e medula óssea são empurradas para as veias, com liberação de mediadores. O resultado é hipotensão, queda da saturação, arritmia e, no extremo, parada. O que mudou esse cenário foi sobretudo a anestesia — reposição volêmica antes da cimentação, monitorização contínua, aviso do cirurgião ao anestesista no momento da pressurização — somada a técnicas de lavagem pulsátil e alívio de pressão no canal. Trombose e embolia caíram por outro motivo: a profilaxia farmacológica.",
+  "correta": "A queda da pressão arterial, evento central da síndrome da implantação do cimento, hoje muito reduzida pelo preparo hemodinâmico e pela comunicação com o anestesista.",
+  "incorretas": {
+   "A": "Broncoespasmo não é a manifestação típica dessa síndrome.",
+   "C": "A trombose venosa profunda diminuiu por causa da profilaxia farmacológica e da mobilização precoce, e não por conduta anestésica na cimentação.",
+   "D": "O tromboembolismo pulmonar segue a mesma lógica da trombose: a redução veio da profilaxia."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0017": {
+  "conceito": "O vasto lateral faz parte do quadríceps, e todo o quadríceps é do nervo femoral. A vascularização vem do ramo descendente da artéria circunflexa femoral lateral, que por sua vez nasce da artéria femoral profunda — daí a resposta apontar a profunda como o tronco. Vale reter a divisão maior: femoral profunda irriga a musculatura da coxa (por suas circunflexas e perfurantes), enquanto a femoral superficial atravessa o canal dos adutores praticamente sem dar ramos musculares, indo irrigar a perna.",
+  "correta": "Nervo femoral e artéria femoral profunda.",
+  "incorretas": {
+   "B": "A artéria está certa, mas o obturatório comanda o compartimento medial (adutores e grácil), não o quadríceps.",
+   "C": "O nervo está certo, mas a femoral superficial é vaso de passagem: ela atravessa a coxa para irrigar a perna.",
+   "D": "Erra o nervo e a artéria ao mesmo tempo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0018": {
+  "conceito": "A osteotomia de Chiari secciona o ilíaco logo acima do acetábulo e medializa o segmento distal, ampliando a cobertura com uma superfície de osso e cápsula interposta. O corte caminha de lateral para medial em direção à incisura isquiática maior, e é justamente ali que a artéria glútea superior deixa a pelve, sobre a borda superior da incisura. Uma osteotomia que sai baixo demais ou que avança além do limite alcança esse vaso, e o sangramento é abundante e difícil de controlar, porque o coto retrai para dentro da pelve.",
+  "correta": "A artéria glútea superior, que emerge pela incisura isquiática maior — exatamente onde a osteotomia termina.",
+  "incorretas": {
+   "A": "A glútea inferior sai abaixo do piriforme, distante do trajeto do corte.",
+   "C": "A circunflexa femoral lateral corre na região anterior do fêmur proximal, e não no ilíaco.",
+   "D": "A circunflexa femoral medial é o vaso do colo femoral, sem relação com a osteotomia ilíaca."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0019": {
+  "conceito": "As rupturas dos tendões do glúteo médio e mínimo na sua inserção no trocanter maior são a versão quadril do manguito rotador — são inclusive chamadas de manguito rotador do quadril. São degenerativas, e o perfil é o mesmo da tendinopatia do manguito do ombro: mulheres a partir da quinta década. A apresentação é dor lateral no trocanter que piora ao deitar sobre o lado, fraqueza de abdução e, nos casos maiores, Trendelenburg. Costuma ser tratada por anos como bursite trocantérica, quando a lesão está no tendão e não na bursa.",
+  "correta": "Mulheres acima de 50 anos, o mesmo perfil da tendinopatia degenerativa do manguito rotador do ombro.",
+  "incorretas": {
+   "A": "A faixa etária está certa, mas o predomínio é feminino, e por larga margem.",
+   "C": "Erra o sexo e a idade: abaixo dos 50 a lesão degenerativa é incomum.",
+   "D": "O sexo está certo, mas abaixo dos 50 anos a ruptura degenerativa não é a apresentação típica."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0020": {
+  "conceito": "Os três ligamentos capsulares do quadril se organizam em espiral e cada um freia um movimento. O iliofemoral (ligamento em Y de Bigelow), anterior e o mais forte do corpo, limita a extensão e a rotação externa — é ele que segura o quadril em pé sem esforço muscular. O pubofemoral, anteroinferior, limita a abdução e a rotação externa. O isquiofemoral é o único posterior, corre do ísquio para o colo cruzando por trás, e é o que se tensiona na rotação interna, limitando-a. Como todos se enrolam na extensão, o quadril estendido é o mais estável.",
+  "correta": "A rotação medial: o isquiofemoral é o ligamento posterior, e é ele que se retesa quando o fêmur roda para dentro.",
+  "incorretas": {
+   "A": "A adução não é freada primariamente por ligamento capsular, e sim pelo contato ósseo e pelas partes moles laterais.",
+   "B": "A abdução é limitada sobretudo pelo ligamento pubofemoral.",
+   "C": "A rotação lateral é limitada pelo iliofemoral e pelo pubofemoral, que são anteriores."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0021": {
+  "conceito": "A protrusão acetabular é o afundamento da cabeça femoral para dentro da pelve, com a linha ilioisquiática ultrapassada pelo fundo do acetábulo. Ela pode ser secundária — artrite reumatoide, doença de Paget, osteomalácia, sequela de trauma ou infecção, e nesses casos costuma acompanhar o lado doente — ou primária, idiopática, que é a pelve de Otto (artrocatadise). A forma primária é bilateral, aparece em mulheres jovens e evolui para artrose precoce com perda importante da rotação e da abdução.",
+  "correta": "Primária e bilateral: a pelve de Otto é a protrusão idiopática, e a bilateralidade faz parte da definição.",
+  "incorretas": {
+   "B": "A forma primária não é unilateral; protrusão de um lado só sugere causa secundária.",
+   "C": "A bilateralidade está certa, mas a pelve de Otto é primária por definição — protrusão secundária tem causa identificável.",
+   "D": "Erra as duas características."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0022": {
+  "conceito": "Ressalto do quadril tem duas versões, e distingui-las é o que orienta o exame. O externo é a banda iliotibial ou a borda anterior do glúteo máximo saltando sobre o trocanter maior: é visível, palpável de fora e reproduzido com o paciente em pé. O interno é o tendão do iliopsoas deslizando sobre a eminência iliopectínea ou sobre a cabeça femoral: é audível e sentido na virilha, e se reproduz levando o quadril de flexão, abdução e rotação externa para extensão com adução e rotação interna.",
+  "correta": "O tendão do iliopsoas, que cruza a eminência iliopectínea e salta sobre ela ao sair da flexão para a extensão.",
+  "incorretas": {
+   "B": "O pectíneo é músculo curto, sem tendão longo cruzando a eminência dessa maneira.",
+   "C": "O adutor longo se insere no púbis e no fêmur, longe da eminência iliopectínea.",
+   "D": "O obturador interno é rotador externo profundo, posterior — sem relação com o ressalto anterior."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0023": {
+  "conceito": "Na fratura periprotética do fêmur, o que decide o tratamento é a fixação da haste, não o traço. O tipo B de Vancouver é a fratura ao redor da haste ou logo abaixo dela, e se divide pela fixação e pelo estoque ósseo: B1 tem haste firme, e a fratura se fixa com placa ou cabos; B2 tem haste solta com osso proximal aceitável, e a solução é revisar a haste; B3 tem haste solta com osso proximal ruim, o que acrescenta enxerto ou implante de reconstrução. A haste de revisão deve ultrapassar o traço e ganhar fixação no osso diafisário distal íntegro.",
+  "correta": "Revisão com troca por componente femoral mais longo, que passa além da fratura e se fixa na diáfise íntegra.",
+  "incorretas": {
+   "A": "Imobilização e repouso não estabilizam uma haste solta dentro de um fêmur fraturado.",
+   "B": "Cerclagem isolada é conduta de fratura sem desvio ao redor de haste bem fixa, não de haste solta.",
+   "C": "Placa bloqueada resolve a fratura e deixa o problema principal de pé: a haste continua solta e a falha se repete."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0024": {
+  "conceito": "A lesão em contragolpe é o dano articular que aparece do lado oposto ao do conflito: quando a borda anterossuperior do acetábulo trava o colo femoral, a cabeça é alavancada para trás e para baixo, e a cartilagem sofre na região posteroinferior do acetábulo e na porção posterior da cabeça. Vale registrar uma nuance: essa lesão foi descrita sobretudo no impacto do tipo pincer, em que a cobertura excessiva funciona como ponto de apoio; no cam puro o dano dominante é a delaminação anterossuperior. A localização perguntada, porém, é a mesma nos dois casos.",
+  "correta": "Região posterior da cabeça do fêmur e posteroinferior do acetábulo — o lado oposto ao ponto de conflito.",
+  "incorretas": {
+   "A": "Anterior com anterior descreve a lesão direta do impacto, não o contragolpe.",
+   "B": "Lateral e anterolateral também descrevem a zona do conflito primário, e não a oposta.",
+   "C": "Mistura o lado do conflito com o lado do contragolpe; a cabeça acometida no contragolpe é a posterior."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0025": {
+  "conceito": "A classificação de Steinberg é a única que separa estágio e extensão de forma independente, e é isso que a torna útil no prognóstico. O estágio vai de 0 (tudo normal) a VI (artrose avançada), com o III definido pelo colapso subcondral — o sinal do crescente — ainda sem achatamento da cabeça, que é o estágio IV. A extensão é dada pela letra: A abaixo de 15%, B entre 15% e 30%, C acima de 30% da superfície articular. Vinte por cento com sinal do crescente cai, portanto, em III B.",
+  "correta": "IIIB: o sinal do crescente define o estágio III, e 20% da superfície articular corresponde à letra B.",
+  "incorretas": {
+   "A": "O estágio II é o de alteração óssea sem colapso subcondral — o crescente já significa colapso.",
+   "B": "Erra o estágio pelo mesmo motivo, e ainda a letra: 20% é B, não C.",
+   "D": "O estágio está certo, mas a letra C corresponde a mais de 30% da superfície."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0026": {
+  "conceito": "A sínfise púbica é o ponto onde se cruzam duas forças opostas: o reto do abdome puxa para cima e o adutor longo puxa para baixo, por uma aponeurose comum que se insere no púbis. O gesto esportivo repetido de aceleração e mudança de direção sobrecarrega esse ponto, e a ressonância mostra edema ósseo periarticular, o sinal da fenda e tendinose insercional — a do reto do abdome de um lado, a do adutor longo do outro. Reconhecer esse par explica por que tratar só o adutor costuma não resolver.",
+  "correta": "Reto do abdome: junto com o adutor longo, forma a aponeurose que se insere no púbis e sofre a sobrecarga.",
+  "incorretas": {
+   "A": "O grácil origina-se do púbis, mas não faz parte do complexo aponeurótico que caracteriza a osteíte púbica.",
+   "B": "O pectíneo é flexor e adutor curto, sem participação nesse complexo.",
+   "C": "O adutor envolvido é o longo, e não o magno."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0027": {
+  "conceito": "O offset femoral é a distância horizontal entre o centro da cabeça femoral e o eixo longitudinal do fêmur — na prótese, o eixo da haste. Na figura, o eixo da haste é a linha tracejada, marcada em B, e o centro da cabeça é D; a distância entre eles é o offset. Ele importa porque é o braço de alavanca dos abdutores: offset restaurado significa abdutores tensionados na medida certa, marcha sem Trendelenburg e menor força resultante na articulação. Offset a menos gera claudicação e instabilidade; offset a mais aumenta a carga na interface do implante.",
+  "correta": "BD: do eixo longitudinal da haste (a linha tracejada, B) até o centro da cabeça femoral (D).",
+  "incorretas": {
+   "A": "A está na borda lateral do implante, e não no eixo dele — AD é maior que o offset verdadeiro.",
+   "C": "BC parte do eixo certo, mas termina numa linha de referência que não é o centro da cabeça.",
+   "D": "CD nem parte do eixo da haste nem corresponde à distância que define o offset."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0028": {
+  "conceito": "A pelve de Otto é a protrusão acetabular primária, e o perfil epidemiológico dela é bem definido: mulheres, com acometimento dos dois lados. Como a cabeça afunda para dentro da pelve, o contato passa a se concentrar no fundo do acetábulo, a rotação e a abdução se perdem cedo e a artrose se instala precocemente. Na hora de operar, a protrusão traz dificuldades próprias: o centro de rotação está medializado, o fundo acetabular é fino e o enxerto do fundo com autoenxerto da própria cabeça costuma ser necessário para restaurar a posição da taça.",
+  "correta": "Mulheres, bilateralmente — o padrão da protrusão acetabular primária.",
+  "incorretas": {
+   "B": "Acometimento de um lado só sugere protrusão secundária, com causa identificável.",
+   "C": "O predomínio da forma primária é feminino.",
+   "D": "Erra o sexo e a lateralidade ao mesmo tempo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0029": {
+  "conceito": "No quadril displásico alto (Crowe III e IV) a cabeça está deslocada muito acima do acetábulo verdadeiro, e reconstruir a articulação no lugar anatômico significa descer o fêmur vários centímetros. O nervo isquiático é a estrutura que menos tolera esse alongamento, e dentro dele a divisão fibular é a mais vulnerável, por ser mais fixa na incisura e ter menos tecido conjuntivo protetor. Por isso a recomendação prática de limitar o alongamento agudo (em torno de 3 a 4 cm), considerar osteotomia femoral de encurtamento e avaliar o nervo com o joelho fletido no fim da cirurgia.",
+  "correta": "O nervo isquiático, estirado pelo descenso do fêmur até o acetábulo verdadeiro — com a divisão fibular como a parte mais vulnerável.",
+  "incorretas": {
+   "A": "O femoral pode ser lesado por afastador mal posicionado na borda anterior, mas não é a complicação principal do alongamento.",
+   "B": "O pudendo se lesa por compressão do poste de tração na mesa ortopédica, situação diferente da descrita.",
+   "C": "O obturatório corre risco na parede medial e em cirurgia de revisão com cimento intrapélvico, e não no descenso do fêmur."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0030": {
+  "conceito": "No adulto, o ligamento redondo contribui pouco e os vasos metafisários ficam bloqueados pela placa de crescimento fechada: quem irriga a cabeça femoral são os vasos retinaculares, ramos terminais do ramo profundo da artéria circunflexa femoral medial. Eles entram na cápsula perto da inserção posterossuperior do colo, sobem pelo retináculo de Weitbrecht e perfuram o osso logo abaixo da cartilagem. Essa é a razão anatômica de a fratura desviada do colo produzir necrose, de a cápsula posterossuperior ser território proibido e de a luxação cirúrgica de Ganz ser feita por trocantérica, poupando o quadrado femoral.",
+  "correta": "Superior e posterior: é ali que os vasos retinaculares entram e sobem para a cabeça.",
+  "incorretas": {
+   "A": "Os vasos anteriores e inferiores existem, mas contribuem pouco para a cabeça no adulto.",
+   "B": "A porção posterior está certa, mas a contribuição decisiva vem dos vasos superiores, não dos inferiores.",
+   "C": "A porção superior está certa, mas a entrada principal é posterior, não anterior."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0031": {
+  "alerta": "Esta resposta não fecha com as manobras que conheço, e o próprio acervo ajuda a mostrar por quê. O piriforme é rotador externo com o quadril estendido, de modo que alongá-lo passivamente exige rotação INTERNA com ADUÇÃO — é o que fazem o teste FAIR (flexão, adução e rotação interna) e o sinal de Freiberg (rotação interna forçada com o quadril estendido). Abdução com rotação externa é a combinação do teste ATIVO, contra resistência (sinal de Pace) — e a `quadril-0046`, neste mesmo acervo, responde exatamente isso quando pergunta pelo teste ativo. O gabarito daqui mistura a rotação de um teste com a abdução do outro. Entre as alternativas, a mais próxima do teste passivo consagrado é a B.",
+  "conceito": "A síndrome do piriforme é a compressão do nervo isquiático pelo músculo piriforme na saída da incisura isquiática maior. O exame provoca o conflito de dois jeitos opostos: alongando o músculo passivamente, o que comprime o nervo contra a borda óssea, ou contraindo-o contra resistência, o que o faz aumentar de volume sobre o nervo. Alongamento passivo: FAIR (flexão, adução e rotação interna) e Freiberg. Contração resistida: Pace (abdução e rotação externa, sentado) e Beatty. Confundir os dois grupos é o erro mais fácil de cometer aqui.",
+  "correta": "A resposta oficial combina rotação medial com abdução. A rotação medial de fato alonga o piriforme; a abdução, não — ela pertence ao teste ativo.",
+  "incorretas": {
+   "A": "A rotação lateral encurta o piriforme em vez de alongá-lo, e portanto alivia em vez de provocar.",
+   "B": "É a alternativa mais próxima do teste FAIR — flexão associada à rotação interna —, e mesmo assim foi dada como errada. Veja o aviso acima.",
+   "C": "Erra nas duas: rotação lateral encurta o músculo e abdução o relaxa."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0032": {
+  "conceito": "Deslocar o centro de rotação para cima e para fora aumenta a distância horizontal entre a linha média, onde age o peso do corpo, e o ponto de apoio da alavanca. O braço do peso corporal cresce, o braço dos abdutores não acompanha, e a força resultante que atravessa a articulação sobe. O que a literatura registra como consequência clínica desse arranjo é o aumento da carga sobre o implante, com mais soltura e mais desgaste — motivo pelo qual se prefere, quando é preciso subir o centro, subi-lo medializado em vez de lateralizado. Ressalva: pelo mesmo mecanismo a força exigida dos abdutores também aumenta; a alternativa B não é falsa em fisiologia, e o que a questão cobra é o efeito descrito como relevante na sobrevida da artroplastia.",
+  "correta": "O implante: a força resultante que o atravessa aumenta, e com ela o risco de soltura e de desgaste.",
+  "incorretas": {
+   "B": "A força dos abdutores realmente sobe, mas o abdutor não é o que falha — quem paga a conta em sobrevida é o implante.",
+   "C": "O osso periacetabular sofre indiretamente, pela transmissão da carga; o efeito descrito, porém, é sobre a interface do implante.",
+   "D": "Os ligamentos anteriores não são o alvo da alteração de braço de alavanca no plano frontal."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0033": {
+  "conceito": "O enxerto vascularizado de fíbula na osteonecrose faz três coisas ao mesmo tempo: descomprime o núcleo, sustenta mecanicamente o osso subcondral e leva circulação nova para dentro da cabeça. Para isso a fíbula é retirada com seu pedículo — a artéria fibular (peroneira) e as veias acompanhantes —, introduzida pelo colo até logo abaixo da cartilagem e revascularizada por anastomose microcirúrgica no sistema da circunflexa femoral lateral, cujo ramo ascendente fica acessível no mesmo campo do acesso anterolateral do quadril.",
+  "correta": "Circunflexa femoral lateral, cujo ramo ascendente está no campo do acesso e tem calibre compatível com o da fibular.",
+  "incorretas": {
+   "A": "A artéria femoral é vaso principal do membro: anastomosar nela seria expor a perfusão de toda a perna sem necessidade.",
+   "B": "A glútea inferior fica na região posterior, fora do campo do acesso usado para esse enxerto.",
+   "C": "A glútea superior também é posterior e não está acessível por essa via."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0035": {
+  "alerta": "A descrição clássica é o inverso desta. Na lágrima radiográfica, o ramo LATERAL corresponde à parede da fossa acetabular (fossa cotiloide) e o ramo MEDIAL corresponde à superfície quadrilátera — a placa quadrilateral, que é a alternativa D, marcada como errada. Se você respondeu placa quadrilateral, o erro não foi seu.",
+  "conceito": "A lágrima radiográfica é uma imagem em U que aparece no AP da pelve porque duas superfícies ósseas quase paralelas são atravessadas pelo feixe no mesmo ponto: a parede lateral da fossa acetabular, do lado de fora, e a superfície quadrilátera, do lado de dentro da pelve. Ela importa por ser um dos poucos pontos de referência confiáveis da pelve: serve para medir protrusão acetabular (quando a linha ilioisquiática ultrapassa a lágrima), para conferir a posição do centro de rotação na artroplastia e para comparar os dois lados. Nas fraturas, a lágrima distorcida indica acometimento da parede medial.",
+  "correta": "A resposta oficial é a fossa acetabular.",
+  "incorretas": {
+   "A": "A coluna anterior é uma estrutura maior, que no AP se projeta pela linha iliopectínea, e não compõe a lágrima.",
+   "B": "A coluna posterior corresponde à linha ilioisquiática, que corre ao lado da lágrima e serve justamente para compará-la, mas não a forma.",
+   "D": "É a alternativa que a descrição clássica atribui ao ramo medial da lágrima, e mesmo assim foi dada como errada. Veja o aviso acima."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0036": {
+  "conceito": "A deformidade tipo came é ósseo: a perda da concavidade da transição entre a cabeça e o colo, medida pelo ângulo alfa. Como o problema é forma óssea em três dimensões, e a giba pode estar em qualquer ponto do contorno anterossuperior, o exame que melhor a demonstra é a tomografia com reconstrução tridimensional, que permite girar o fêmur na tela e ver a giba de todos os ângulos. A radiografia flagra apenas o que o perfil escolhido revelar, e a ressonância é o exame das partes moles — labrum e cartilagem.",
+  "correta": "Tomografia computadorizada com reconstrução tridimensional, que mostra o contorno ósseo por inteiro e permite localizar a giba.",
+  "incorretas": {
+   "A": "A radiografia simples faz o rastreamento (perfil de Dunn, cross-table, falso perfil), mas só mostra o contorno na direção em que o feixe passou — a giba pode escapar.",
+   "B": "A ressonância é o exame do labrum e da cartilagem, e mede o ângulo alfa em cortes radiais, mas não é onde a deformidade óssea aparece melhor.",
+   "C": "A artrorressonância acrescenta contraste intra-articular e melhora ainda mais o labrum — de novo, partes moles, não contorno ósseo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0037": {
+  "conceito": "A anteversão femoral é máxima ao nascer e diminui progressivamente até a maturidade: fica em torno de 30 a 40 graus no recém-nascido, cai cerca de 1 a 2 graus por ano e estabiliza entre 10 e 15 graus no adulto. Aos 10 anos ela já passou pela faixa dos 20 graus. Guardar a direção da curva é o que resolve a questão sem decorar números: qualquer alternativa em que a anteversão AUMENTA com a idade está errada de saída. É essa remodelação espontânea que justifica não operar a marcha com os pés para dentro da criança pequena.",
+  "correta": "30 graus ao nascer e 20 graus aos 10 anos — valores decrescentes, como manda a remodelação normal.",
+  "incorretas": {
+   "A": "Inverte o sentido da curva: a anteversão diminui com a idade, não aumenta.",
+   "C": "Anteversão zero ao nascimento não existe, e o aumento para 40 graus contraria a evolução normal.",
+   "D": "O valor inicial é plausível, mas anteversão zero aos 10 anos não corresponde a nada: o adulto normal fica entre 10 e 15 graus."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0038": {
+  "conceito": "No componente acetabular cimentado, a carga chega ao osso através do polietileno e do manto de cimento. Polietileno espesso distribui essa carga por uma área maior e amortece o pico de tensão, enquanto polietileno fino transmite tensão concentrada e ainda se desgasta mais rápido. E o osso subcondral é a camada mais rígida e resistente do acetábulo: fresar até removê-lo entrega o cimento ao osso esponjoso, mole, que deforma e afunda. Preservá-lo, perfurando apenas orifícios de ancoragem para o cimento, é o que sustenta a fixação a longo prazo.",
+  "correta": "Polietilenos espessos e preservação do osso subcondral — distribuição melhor da carga sobre a camada óssea mais resistente.",
+  "incorretas": {
+   "A": "Erra as duas coisas: polietileno fino concentra tensão e remover o subcondral entrega a carga ao osso esponjoso.",
+   "B": "A preservação do subcondral está certa, mas o polietileno fino concentra tensão e se desgasta mais.",
+   "C": "A espessura está certa, mas remover o osso subcondral desfaz a vantagem, porque a carga passa a incidir sobre osso esponjoso."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0039": {
+  "conceito": "A artéria femoral profunda desce por trás dos adutores e emite as perfurantes, que atravessam o adutor magno junto ao fêmur e cruzam o campo cirúrgico em direção ao compartimento posterior. Elas correm perpendiculares ao osso, e não paralelas — é essa direção que faz com que sejam encontradas de forma repetida e transversal durante a elevação do vasto lateral, e é por isso que a técnica manda identificá-las e ligá-las em vez de deixá-las retrair. Ressalva: a direção perpendicular é o que sustenta a resposta com firmeza; o intervalo de cerca de 3 centímetros é o número que a banca adota, e esse eu não consigo confirmar de forma independente.",
+  "correta": "Perpendiculares ao fêmur, em intervalos de cerca de 3 cm.",
+  "incorretas": {
+   "A": "Erra a direção: as perfurantes cruzam o campo transversalmente, e um vaso paralelo ao fêmur seria acompanhado, não cortado.",
+   "B": "Mesmo erro de direção.",
+   "D": "A direção está certa, mas o intervalo adotado pela banca é o de 3 cm."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0040": {
+  "conceito": "O ramo profundo da artéria circunflexa femoral medial é o vaso que mantém a cabeça femoral viva no adulto. Ele contorna o fêmur por trás caminhando entre o quadrado femoral, que fica abaixo, e o gêmeo inferior, acima, cruza a face posterior do tendão do obturador externo e então sobe pela crista intertrocantérica até perfurar a cápsula. Essa relação anatômica gera duas regras de mesa: nunca desinserir o quadrado femoral no acesso posterior, e seccionar os rotadores curtos a pelo menos 1,5 cm da inserção femoral. O tendão do obturador externo, íntegro, é o que protege o vaso na luxação cirúrgica.",
+  "correta": "Entre o quadrado femoral e o gêmeo inferior — o intervalo por onde o vaso contorna o fêmur.",
+  "incorretas": {
+   "B": "O gêmeo superior fica mais acima; não é ele que delimita a passagem do vaso.",
+   "C": "O ramo cruza a face posterior do obturador externo, mas não emerge entre ele e o gêmeo inferior.",
+   "D": "Erra os dois músculos que fazem o intervalo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0041": {
+  "conceito": "Osteonecrose e osteoporose transitória se distinguem na ressonância pelo desenho do edema, não pela intensidade dele. Na osteonecrose há uma lesão focal delimitada por linha serpiginosa na zona de carga da cabeça, com edema ao redor que não costuma passar do colo. Na osteoporose transitória o edema é difuso e homogêneo, sem lesão focal e sem linha de demarcação, e se estende pelo colo até a região intertrocantérica — é justamente essa extensão que fecha o diagnóstico. A distinção muda tudo: uma é doença autolimitada, a outra evolui para colapso.",
+  "correta": "O edema medular que se estende para a região intertrocantérica, difuso e sem linha de delimitação.",
+  "incorretas": {
+   "A": "Perda de densidade óssea é achado de radiografia, e tardio; a ressonância mostra o edema muito antes disso.",
+   "B": "Amolecimento da cartilagem não é o que a ressonância caracteriza nessa condição, e não é o que a separa da osteonecrose.",
+   "C": "Proliferação mieloproliferativa é infiltração medular por doença hematológica, um diagnóstico diferente."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0042": {
+  "conceito": "A figura mostra a parede posterior do abdome com o plexo lombar dissecado, e a seta aponta o nervo mais alto entre os que saem da borda lateral do psoas e cruzam obliquamente o quadrado lombar em direção à crista ilíaca: o ílio-hipogástrico (L1). Ele importa ao ortopedista por dois motivos: é o nervo em risco na retirada de enxerto da crista ilíaca anterior e nos acessos ilioinguinais, e sua lesão produz dor e alteração de sensibilidade na região suprapúbica e glútea lateral.",
+  "correta": "Ílio-hipogástrico: o ramo mais cranial do plexo lombar a cruzar o quadrado lombar rumo à crista ilíaca.",
+  "incorretas": {
+   "A": "O femoral é o maior ramo do plexo, emerge bem mais abaixo na borda lateral do psoas e desce para a coxa entre o psoas e o ilíaco.",
+   "C": "O genitofemoral é o único que perfura o psoas e corre sobre a face ANTERIOR do músculo, e não lateralmente a ele.",
+   "D": "O cutâneo femoral lateral sai mais abaixo e cruza o músculo ilíaco em direção à espinha ilíaca anterossuperior."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0043": {
+  "conceito": "A classificação de Vancouver responde a três perguntas, nessa ordem: onde está a fratura (A no maciço trocantérico, B ao redor ou logo abaixo da haste, C bem abaixo da ponta), a haste está solta, e quanto osso proximal restou. As duas últimas são o que decide a conduta — daí a resposta apontar estabilidade do componente e estoque ósseo. Idade e tipo de fixação, cimentada ou não, não entram na classificação: uma haste cimentada bem fixa e uma não cimentada bem fixa recebem a mesma letra e o mesmo tratamento.",
+  "correta": "Estabilidade do componente femoral e estoque ósseo — os dois dados que definem o subtipo e a conduta.",
+  "incorretas": {
+   "A": "Idade não é critério de Vancouver; o estoque ósseo é.",
+   "B": "Nem a idade nem o tipo de fixação entram na classificação.",
+   "D": "A estabilidade está certa, mas o segundo critério é o estoque ósseo, e não se a haste é cimentada."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0044": {
+  "conceito": "O ressalto interno é o tendão do iliopsoas escapando bruscamente sobre um relevo ósseo quando o quadril sai da flexão com abdução e rotação externa para a extensão com adução e rotação interna. O relevo é a eminência iliopectínea ou a própria cabeça femoral, pontos sobre os quais o tendão desliza no seu trajeto para o pequeno trocanter. Ele é audível, muitas vezes ouvido pelo próprio paciente, e sentido na virilha — diferente do ressalto externo, que é visível e palpável sobre o trocanter maior.",
+  "correta": "Iliopsoas atritando com a eminência iliopectínea ou com a cabeça femoral, os dois relevos sobre os quais o tendão desliza.",
+  "incorretas": {
+   "B": "O pequeno trocanter é a inserção do tendão, e não a saliência sobre a qual ele salta.",
+   "C": "O reto femoral tem sua cabeça refletida próxima ao acetábulo, mas não é o tendão do ressalto interno clássico.",
+   "D": "Erra o músculo e o relevo ao mesmo tempo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0045": {
+  "conceito": "A incisão da figura começa na crista ilíaca, contorna a espinha ilíaca anterossuperior e desce pela face anterolateral da coxa — o traçado do acesso de Smith-Petersen, o anterior clássico do quadril. Ele explora dois intervalos internervosos: superficialmente entre o sartório (femoral) e o tensor da fáscia lata (glúteo superior), e profundamente entre o reto femoral (femoral) e o glúteo médio (glúteo superior). É o acesso da artroplastia por via anterior, da redução aberta da displasia e das osteotomias pélvicas, e o nervo em risco é o cutâneo femoral lateral, que cruza logo medial à espinha ilíaca.",
+  "correta": "Smith-Petersen: incisão da crista ilíaca sobre a espinha ilíaca anterossuperior, descendo pela face anterolateral da coxa.",
+  "incorretas": {
+   "A": "O acesso de Hardinge é lateral direto, com incisão longitudinal centrada no trocanter maior e divisão do glúteo médio e do vasto lateral.",
+   "B": "Kocher dá nome ao acesso lateral do cotovelo, entre o ancôneo e o extensor ulnar do carpo, e não a um acesso do quadril.",
+   "C": "O acesso de Ludloff é medial, feito entre os adutores, usado sobretudo na redução aberta da displasia do lactente."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0046": {
+  "conceito": "As manobras do piriforme vêm em dois grupos opostos, e é preciso saber qual está sendo pedida. As passivas alongam o músculo e comprimem o nervo contra a borda óssea: FAIR (flexão, adução e rotação interna) e Freiberg (rotação interna forçada com o quadril estendido). As ativas fazem o músculo contrair contra resistência, aumentando seu volume sobre o nervo: o teste de Pace, com o paciente sentado fazendo abdução e rotação externa contra resistência, e o de Beatty. Como o piriforme é rotador externo e abdutor com o quadril fletido, contraí-lo é justamente abduzir e rodar externamente.",
+  "correta": "Abdução e rotação lateral contra resistência — as duas ações do piriforme, que é o que se pede quando o teste é ativo.",
+  "incorretas": {
+   "A": "A adução resistida recruta os adutores, e não o piriforme.",
+   "B": "A rotação medial é o movimento contrário à ação do músculo; resistir a ela não o contrai.",
+   "D": "A abdução está certa, mas a rotação medial é justamente o oposto do que o piriforme faz."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0047": {
+  "conceito": "A seta aponta a longa faixa muscular que atravessa obliquamente a face anterior da coxa, da espinha ilíaca anterossuperior até a face medial da tíbia: o sartório, o músculo mais longo do corpo. Ele pertence ao compartimento anterior e, como todo o compartimento anterior, é inervado pelo nervo femoral. Vale notar que duas alternativas caem só pela categoria: o safeno e o cutâneo femoral lateral são nervos puramente sensitivos e não inervam músculo nenhum — o safeno, aliás, é o ramo terminal do próprio femoral e acompanha o sartório no canal dos adutores.",
+  "correta": "Nervo femoral: o sartório é do compartimento anterior da coxa.",
+  "incorretas": {
+   "A": "O safeno é ramo sensitivo terminal do femoral, para a face medial da perna. Não inerva músculo.",
+   "C": "O obturatório comanda o compartimento medial — adutores, grácil e obturador externo —, e não o sartório.",
+   "D": "O cutâneo femoral (lateral) também é puramente sensitivo, para a face lateral da coxa."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0048": {
+  "conceito": "As figuras mostram um acesso lateral do quadril, com incisão longitudinal centrada no trocanter maior, abertura da fáscia lata no eixo e — o detalhe que decide a questão — uma osteotomia de lâmina do trocanter, com as superfícies ósseas cruentas expostas, levando junto a inserção dos abdutores. Dos quatro nomes oferecidos, apenas o de McLauchlan corresponde à variante com osteotomia trocantérica; a vantagem alegada é reinserir tendão por osso, e não tendão por tendão, ao custo dos problemas próprios de uma osteotomia.",
+  "correta": "McLauchlan: acesso lateral com osteotomia de uma lâmina do trocanter maior carregando a inserção dos abdutores.",
+  "incorretas": {
+   "A": "Osborne descreveu o acesso lateral com desinserção dos abdutores em manguito de partes moles, sem cortar osso.",
+   "B": "Hardinge divide o glúteo médio e o vasto lateral deixando um manguito contínuo sobre o trocanter — também sem osteotomia.",
+   "C": "McFarland, junto com Osborne, é o nome ligado ao acesso lateral por manguito de partes moles, e não à osteotomia."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0049": {
+  "conceito": "O nervo desenhado sai da pelve pela incisura isquiática maior acima do músculo piriforme e se abre em leque entre o glúteo médio e o glúteo mínimo, em direção ao tensor da fáscia lata: é o nervo glúteo superior. Na artroscopia do quadril, o portal que caminha nessa região é o anterolateral, feito logo à frente e acima do trocanter maior. A distância descrita até o nervo é da ordem de poucos centímetros, o que explica por que o portal deve ser feito rente ao trocanter e por que a distração prolongada e a distensão excessiva aumentam o risco.",
+  "correta": "Portal anterolateral, que passa perto do nervo glúteo superior no seu trajeto sobre o glúteo médio.",
+  "incorretas": {
+   "A": "O portal anterior põe em risco o nervo cutâneo femoral lateral, que é sensitivo e superficial — outro nervo e outra região.",
+   "B": "Não há um portal simplesmente \"posterior\" na artroscopia padrão do quadril, e o nervo desenhado não é o isquiático.",
+   "D": "O portal posterolateral é o que se aproxima do nervo isquiático, e não do glúteo superior."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0050": {
+  "conceito": "Vale fixar os dois ressaltos de uma vez, porque a prova volta neles com frequência. O interno é do iliopsoas, saltando sobre a eminência iliopectínea ou a cabeça femoral: audível, sentido na virilha, reproduzido ao levar o quadril de flexão-abdução-rotação externa para extensão-adução-rotação interna. O externo é da banda iliotibial ou da borda anterior do glúteo máximo sobre o trocanter maior: visível, palpável de fora, reproduzido em pé. O primeiro se trata com alongamento e, se necessário, alongamento cirúrgico do tendão; o segundo com fisioterapia e, raramente, plastia da banda.",
+  "correta": "Iliopsoas: o tendão do ressalto interno.",
+  "incorretas": {
+   "A": "O piriforme é rotador externo profundo e não produz ressalto; ele dá nome à síndrome compressiva do isquiático.",
+   "C": "O trato iliotibial é o responsável pelo ressalto EXTERNO, sobre o trocanter maior.",
+   "D": "O adutor magno não tem trajeto que cruze relevo ósseo dessa maneira."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0051": {
+  "conceito": "Duas informações numa alternativa só, e as duas precisam estar certas. A classificação de Vancouver se apoia na estabilidade do componente femoral e no estoque ósseo (além do local da fratura), e não na idade nem no tipo de cimentação. E dentro do tipo B, que é a fratura ao redor da haste, o subtipo B2 é exatamente aquele em que a haste está solta com osso proximal ainda aceitável — o que indica revisar a haste por uma mais longa. O B3 é a haste solta com osso proximal deficiente, e não \"haste cimentada em osso osteoporótico\".",
+  "correta": "Estabilidade do componente femoral e estoque ósseo, com B2 significando implante solto.",
+  "incorretas": {
+   "B": "Acerta o significado de B2, mas erra a base da classificação: idade e tipo de fixação não entram nela.",
+   "C": "A base está certa, mas B3 é haste solta com osso proximal deficiente, e não haste cimentada em osso osteoporótico.",
+   "D": "Erra as duas partes ao mesmo tempo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0052": {
+  "conceito": "A pergunta soma o vaso e o intervalo anatômico. O ramo ascendente (profundo) da artéria circunflexa femoral MEDIAL é o responsável pela irrigação da cabeça femoral no adulto, e ele contorna o fêmur por trás passando entre o quadrado femoral, abaixo, e o gêmeo inferior, acima. Daí sobe pela crista intertrocantérica e perfura a cápsula posterossuperior, dando os vasos retinaculares. As duas regras práticas do acesso posterior saem daí: não desinserir o quadrado femoral e seccionar os rotadores curtos a pelo menos 1,5 cm da inserção femoral.",
+  "correta": "Ramo ascendente da circunflexa femoral medial, emergindo entre o quadrado femoral e o gêmeo inferior.",
+  "incorretas": {
+   "A": "Erra a artéria (a lateral não irriga a cabeça) e o intervalo.",
+   "B": "O intervalo está certo, mas a artéria é a circunflexa medial, e não a lateral.",
+   "C": "A artéria está certa, mas o ramo não emerge entre o gêmeo inferior e o obturador externo — ele cruza a face posterior do tendão do obturador externo depois de já ter passado entre o quadrado femoral e o gêmeo inferior."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0053": {
+  "conceito": "No AP da bacia, cada linha corresponde a uma estrutura: a iliopectínea desenha a coluna anterior, a ilioisquiática desenha a coluna posterior, e a lágrima de Köhler tem um ramo lateral (parede da fossa acetabular) e um medial (superfície quadrilátera). Como a lágrima e a linha ilioisquiática correm lado a lado e quase se sobrepõem no quadril normal, elas funcionam como um par de referência: quando se separam uma da outra, alguma das duas se deslocou. A dissociação indica que a superfície quadrilátera migrou medialmente, o que é a marca da fratura dessa parede.",
+  "correta": "Fratura da superfície quadrilátera: é o deslocamento medial dela que separa a lágrima da linha ilioisquiática.",
+  "incorretas": {
+   "A": "A fratura da parede posterior aparece como um fragmento sobreposto à cabeça no AP e se confirma no oblíquo obturador — não altera a relação entre lágrima e coluna posterior.",
+   "B": "A transversa infratectal cruza abaixo do teto acetabular e interrompe as duas linhas de coluna, sem produzir especificamente essa dissociação.",
+   "C": "A transversa transtectal cruza o teto e tem outra assinatura radiográfica, com desabamento da superfície de carga."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0054": {
+  "conceito": "Tudo aqui se resolve identificando qual braço de alavanca cada manobra altera. O braço do peso corporal vai da linha média até o centro de rotação: medializar o acetábulo o ENCURTA. O braço dos abdutores vai do centro de rotação até o trocanter maior: aumentar o offset do colo o ALONGA, porque afasta o fêmur do centro sem mudar a posição do centro. Alongar o braço dos abdutores significa que o mesmo músculo produz mais momento — é nesse sentido que a alternativa fala em aumentar a força da musculatura abdutora — e, como consequência, a força resultante na articulação cai.",
+  "correta": "Offset aumentado alonga o braço de alavanca dos abdutores, que passam a gerar mais momento para a mesma contração.",
+  "incorretas": {
+   "A": "Medializar o acetábulo ENCURTA o braço do peso corporal, e é por isso que reduz a carga articular.",
+   "B": "Medializar melhora a eficiência dos abdutores em vez de piorá-la, pela mesma razão geométrica.",
+   "C": "O offset do colo não interfere no braço do peso corporal, que depende da posição do centro de rotação em relação à linha média — ele altera o braço dos abdutores."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0055": {
+  "conceito": "O osso só se mantém onde é solicitado. Uma haste femoral rígida transmite a carga direto para a diáfise, onde ela está bem fixa, e o fêmur proximal deixa de ser carregado — é o desvio de carga (stress shielding). A região que mais perde densidade é a cortical proximal e medial, o calcar, correspondente à zona 7 de Gruen, seguida da zona 1 lateral. Isso vale tanto para haste cimentada quanto não cimentada, e é mais acentuado quanto mais rígida e mais volumosa a haste — daí o interesse por hastes de menor módulo e por fixação metafisária.",
+  "correta": "Região cortical proximal e medial — o calcar, zona 7 de Gruen, que é onde o desvio de carga mais se manifesta.",
+  "incorretas": {
+   "A": "A cortical distal é justamente onde a carga passa a ser transmitida, e ali costuma haver hipertrofia em vez de perda.",
+   "B": "Mesma razão: distalmente o osso é solicitado, não poupado.",
+   "C": "A perda proximal existe também na cortical lateral (zona 1), mas é menor do que no calcar medial."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0056": {
+  "conceito": "É a mesma mecânica da questão sobre como reduzir o estresse, lida ao contrário. Polietileno fino transmite a carga concentrada em vez de distribuí-la, e ressecar o osso subcondral entrega o cimento ao osso esponjoso, que é muito menos rígido. Somando as duas coisas, o pico de tensão no cimento e no osso trabecular é máximo. Daí as duas regras de técnica: manter espessura mínima de polietileno (o que limita o tamanho de cabeça que a taça cimentada aceita) e fresar o acetábulo com parcimônia, preservando a placa subcondral e fazendo apenas orifícios de ancoragem.",
+  "correta": "Copa mais fina com osso subcondral ressecado: carga concentrada apoiada em osso esponjoso.",
+  "incorretas": {
+   "A": "É a combinação de menor estresse, e não de maior.",
+   "B": "A ressecção do subcondral piora, mas a copa espessa compensa parcialmente ao distribuir melhor a carga.",
+   "C": "A copa fina piora, mas preservar o subcondral mantém o apoio na camada óssea mais resistente."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0057": {
+  "conceito": "Vale separar as categorias antes de olhar as listas. Contraindicação absoluta é o que impede operar enquanto existir: infecção ativa local ou sistêmica, ausência de aparelho abdutor funcionante, doença clínica que torne a anestesia inviável. Contraindicação relativa é o que piora o resultado e entra na balança: demência grave (o paciente não colabora com o programa e cai mais), obesidade mórbida (mais infecção, mais luxação, mais complicação técnica) e tabagismo (menos osteointegração, mais infecção e mais problema de cicatrização). Bacteriúria é do território da infecção, e o que se faz com ela é tratar antes, não pesar contra.",
+  "correta": "Demência grave, obesidade mórbida e tabagismo — as três pesam contra o resultado sem impedir a cirurgia.",
+  "incorretas": {
+   "A": "A bacteriúria é a peça que não pertence ao grupo: ela entra na conta da infecção, a ser resolvida antes da cirurgia.",
+   "C": "Mesmo problema: a presença da bacteriúria descaracteriza o trio.",
+   "D": "Também traz a bacteriúria, e por isso não é a lista pedida."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0058": {
+  "conceito": "Cada portal da artroscopia do quadril tem um nervo de referência, e é assim que se estuda. O anterior corre perto do nervo cutâneo femoral lateral, que se ramifica no subcutâneo logo medial à espinha ilíaca anterossuperior — por isso a incisão do portal anterior se faz só na pele, dilatando o subcutâneo em vez de cortá-lo. O anterolateral aproxima-se do glúteo superior. O posterolateral, do isquiático. E o femoral, mais medial e mais profundo, fica em risco quando o portal anterior é levado medialmente demais.",
+  "correta": "Nervo cutâneo femoral lateral, que se ramifica no subcutâneo exatamente no trajeto do portal anterior.",
+  "incorretas": {
+   "A": "O femoral fica mais medial e mais profundo; ele é ameaçado por medialização excessiva, mas não é o nervo de referência do portal.",
+   "B": "O isquiático é o nervo em risco do portal posterolateral.",
+   "C": "O glúteo superior é o nervo em risco do portal anterolateral."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0059": {
+  "conceito": "A ossificação heterotópica nasce da resposta inflamatória ao trauma muscular: célula mesenquimal indiferenciada, exposta a osso fresado, hematoma e músculo desvitalizado, diferencia-se em osteoblasto. Por isso a incidência acompanha o quanto de músculo foi manipulado e de resíduo ósseo ficou no campo, e as vias anteriores e anterolaterais aparecem com taxas mais altas do que a posterior nas séries comparativas. Os fatores de risco do paciente são ossificação prévia, espondilite anquilosante, hiperostose esquelética difusa e sexo masculino, e a profilaxia é indometacina ou dose única de radioterapia.",
+  "correta": "Acesso anterior: entre os oferecidos, é o que as séries comparativas associam a maior incidência de ossificação heterotópica.",
+  "incorretas": {
+   "B": "O acesso posterior é justamente o termo de comparação com menor incidência nessas séries.",
+   "C": "A osteotomia trocantérica também eleva o risco, por deixar osso cruento e hematoma no campo, mas a comparação que a literatura registra aponta as vias anterior e anterolateral como as de maior taxa.",
+   "D": "O posterolateral compartilha com o posterior a menor incidência."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0060": {
+  "conceito": "Ficat e Arlet organizam a osteonecrose pelo que a radiografia mostra, em quatro estágios. O I tem radiografia normal com paciente sintomático. O II tem alteração óssea sem colapso — esclerose, cistos, rarefação —, e a cabeça continua redonda. O III é o colapso subcondral: a linha radiotransparente logo abaixo da cartilagem, o sinal do crescente, que significa que o osso subcondral já cedeu embora o espaço articular ainda esteja preservado. O IV acrescenta a perda do espaço articular e as alterações acetabulares, ou seja, artrose secundária.",
+  "correta": "Estágio 3: o sinal do crescente é a marca do colapso subcondral, com espaço articular ainda preservado.",
+  "incorretas": {
+   "A": "No estágio 1 a radiografia é normal — é o estágio em que só a ressonância faz o diagnóstico.",
+   "B": "O 2a é alteração óssea difusa sem colapso, com a cabeça ainda íntegra.",
+   "C": "O 2b é descrito como estágio de transição, imediatamente antes do colapso; o crescente estabelecido, porém, já define o estágio 3."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0061": {
+  "conceito": "A osteotomia intertrocantérica só funciona se o quadril ainda tiver movimento para redistribuir: ela troca a área de contato, mas não devolve mobilidade. Por isso os pré-requisitos são arco de movimento razoável — na prática, pelo menos 60 graus de flexão — e ausência de deformidade fixa importante. Um quadril que já flete menos que isso é um quadril rígido, e a osteotomia apenas transfere a rigidez de posição. Deformidade em adução fixa, ao contrário, é indicação para a valgização, porque a osteotomia valgizante abduz o membro e a corrige.",
+  "correta": "Flexão do quadril menor que 60 graus: sem arco de movimento, a osteotomia não tem o que redistribuir.",
+  "incorretas": {
+   "A": "Adução fixa é justamente o que a valgização corrige — é indicação, e não contraindicação.",
+   "C": "A extensão não é o parâmetro limitante dessa decisão; o que se exige é arco de flexão suficiente.",
+   "D": "A perda de esfericidade não impede: a osteotomia serve exatamente para trazer para a zona de carga uma porção congruente de uma cabeça deformada."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0062": {
+  "conceito": "O polietileno de alta reticulação (crosslinked) foi a resposta à osteólise por partículas: a irradiação cria ligações cruzadas entre as cadeias e reduz drasticamente o desgaste. O problema criado no caminho foram os radicais livres deixados pela irradiação, que oxidam o material e o tornam frágil — e foi para isso que vieram os processos de segunda geração, com refusão, recozimento ou incorporação de vitamina E. O resultado é um polietileno que desgasta pouco e resiste bem à oxidação, o que permitiu voltar a usar cabeças maiores sem pagar em partículas.",
+  "correta": "O polietileno crosslinked sofre menos oxidação e menos desgaste, sobretudo nas versões de segunda geração, estabilizadas.",
+  "incorretas": {
+   "A": "O \"sempre\" derruba a alternativa: o desgaste volumétrico depende do par, do diâmetro e do material, e não é uma regra fixa da cabeça metálica.",
+   "B": "No polietileno convencional é o contrário: cabeça maior percorre distância maior por ciclo e gera mais desgaste volumétrico. Foi o crosslinked que tornou o diâmetro grande viável.",
+   "C": "O par cerâmica-cerâmica tem complicações próprias e bem descritas — rangido (squeaking) e fratura do componente, esta rara mas grave."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0063": {
+  "conceito": "O diagnóstico de infecção periprotética é feito por critérios combinados, e não por um exame isolado. Há dois critérios maiores, cada um suficiente sozinho: fístula comunicando com a prótese e duas culturas positivas para o mesmo germe. E há critérios menores — VHS e PCR elevados, contagem de leucócitos no líquido sinovial elevada, percentual de polimorfonucleares elevado, esterase leucocitária positiva, histologia com neutrófilos e uma única cultura positiva. Três menores fecham o diagnóstico. Entender essa estrutura resolve toda a questão.",
+  "correta": "Três critérios menores fecham o diagnóstico, na ausência de critério maior.",
+  "incorretas": {
+   "B": "Secreção purulenta não é obrigatória: a infecção crônica de baixa virulência costuma se apresentar apenas com dor persistente e soltura precoce.",
+   "C": "A alfa-defensina 1 no líquido sinovial é justamente um dos marcadores de melhor desempenho para esse diagnóstico.",
+   "D": "Uma única cultura positiva é critério MENOR: sozinha ela não fecha, e pode ser contaminação. São duas culturas concordantes que constituem critério maior."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0064": {
+  "conceito": "Medir impacto femoroacetabular exige uma radiografia padronizada, porque a inclinação e a rotação da bacia mudam a aparência da cobertura acetabular — uma bacia inclinada para trás simula retroversão e cria um sinal do cruzamento que não existe. O controle da inclinação é a distância entre a ponta do cóccix e a sínfise púbica, que deve ficar em torno de 1 a 2 cm; o controle da rotação é a simetria dos forames obturadores e das lágrimas. Sem esses dois cuidados, os sinais de pincer não são confiáveis.",
+  "correta": "Entre 1 cm e 2 cm entre a ponta do cóccix e a sínfise púbica.",
+  "incorretas": {
+   "B": "4 a 6 cm indica bacia inclinada para trás em excesso, o que exagera a cobertura anterior e cria sinais falsos.",
+   "C": "O cóccix tocando a sínfise indica inclinação anterior excessiva, que subestima a cobertura anterior.",
+   "D": "A referência é a ponta do cóccix, e a articulação sacrococcígea encostando na sínfise significa inclinação anterior ainda maior."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0065": {
+  "conceito": "O teste de Freiberg é uma das manobras passivas da síndrome do piriforme: com o paciente deitado e o quadril estendido, o examinador faz a rotação interna forçada do membro. Como o piriforme é rotador externo nessa posição, rodar para dentro o alonga e o comprime contra a borda da incisura isquiática, sobre o nervo. É o oposto do teste de Pace, que é ativo — o paciente faz abdução e rotação externa contra resistência e o músculo aumenta de volume sobre o nervo. Passivo alonga, ativo contrai: separar isso resolve todas as questões dessa síndrome.",
+  "correta": "Passiva, com o membro em rotação interna: é o examinador quem roda, e a rotação interna é a que alonga o piriforme.",
+  "incorretas": {
+   "A": "O movimento está certo, mas Freiberg é manobra passiva; a versão ativa contra resistência é o teste de Pace.",
+   "B": "Erra a forma e o sentido: a rotação externa é a ação do próprio músculo, e portanto não o alonga.",
+   "D": "A forma passiva está certa, mas rodar externamente encurta o piriforme e alivia em vez de provocar."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0066": {
+  "conceito": "A osteíte púbica é a resposta da sínfise à sobrecarga repetida do gesto esportivo de aceleração e mudança de direção, com o reto do abdome puxando para cima e o adutor longo puxando para baixo pela mesma aponeurose. A imagem acompanha essa história: irregularidade e esclerose das bordas, erosões, cistos subcondrais e edema ósseo na ressonância, além do sinal da fenda. O achado que a questão pede é o cisto subcondral, expressão da sobrecarga crônica no osso logo abaixo da cartilagem.",
+  "correta": "Cistos subcondrais na região da sínfise, expressão da sobrecarga crônica.",
+  "incorretas": {
+   "A": "Os tendões envolvidos são os adutores, e não os abdutores.",
+   "B": "Os rotadores externos não participam do complexo que sobrecarrega a sínfise.",
+   "D": "A sínfise na osteíte púbica mostra irregularidade, esclerose e frequentemente alargamento com instabilidade nas incidências em flamingo — a redução do espaço não é o achado característico."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0067": {
+  "conceito": "Wasielewski dividiu o acetábulo em quatro quadrantes traçando duas linhas: uma da espinha ilíaca anterossuperior até o centro do acetábulo, prolongada posteriormente, e outra perpendicular a ela pelo centro. O quadrante posterossuperior é o único com osso espesso e sem estruturas nobres logo além da cortical — é para lá que vão os parafusos. O posteroinferior é aceitável como segunda opção. Os dois anteriores são zona proibida: o anterossuperior é a \"zona da morte\", com os vasos ilíacos externos logo do outro lado, e o anteroinferior tem o nervo e os vasos obturatórios.",
+  "correta": "Póstero-superior: osso espesso e ausência de estruturas nobres imediatamente além da cortical interna.",
+  "incorretas": {
+   "A": "O anteroinferior expõe o feixe obturatório.",
+   "B": "O posteroinferior é a segunda opção aceitável, mas com osso menos espesso do que o posterossuperior.",
+   "C": "O anterossuperior é o pior de todos: os vasos ilíacos externos correm imediatamente do outro lado da parede."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0068": {
+  "conceito": "O quadril em apoio monopodal é uma balança de braços desiguais. De um lado, o peso do corpo age a partir do centro de gravidade, com braço de alavanca longo (cerca de duas vezes e meia o do outro lado). Do outro, os abdutores puxam do trocanter maior, com braço curto. Para equilibrar, a força dos abdutores precisa ser várias vezes maior que o peso corporal, e a força resultante que atravessa a articulação é a soma vetorial das duas — daí a carga na cabeça femoral em apoio monopodal chegar a três ou quatro vezes o peso do corpo.",
+  "correta": "O peso corporal é equilibrado pela força dos abdutores — é essa a balança que sustenta a pelve no apoio monopodal.",
+  "incorretas": {
+   "B": "Na marcha antálgica o tronco se inclina PARA O LADO do quadril doente, deslocando o centro de gravidade lateralmente: é assim que se encurta o braço do peso e se alivia a articulação.",
+   "C": "As forças não podem ser iguais porque os braços de alavanca não são: com braço curto, o abdutor precisa fazer força bem maior que o peso corporal.",
+   "D": "A soma vetorial envolve a musculatura ABDUTORA, e não a adutora."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0069": {
+  "conceito": "Quatro testes numa questão só, e cada um com uma pegadinha própria. Thomas: com um quadril fletido ao máximo contra o abdome para apagar a lordose, o quadril contralateral que se levanta da mesa denuncia contratura em flexão — e o ângulo entre a coxa e a mesa é a medida dela. Sinal do C: o paciente segura o próprio quadril com a mão em C sobre o trocanter, com o polegar atrás e os dedos na virilha, e isso indica dor INTRA-articular. Impacto anterior: flexão, adução e rotação INTERNA. Ober: avalia a banda iliotibial e o tensor da fáscia lata.",
+  "correta": "O teste de Thomas avalia contratura em flexão do quadril.",
+  "incorretas": {
+   "B": "O sinal do C indica dor intra-articular do quadril, e não síndrome dolorosa pertrocantérica — apesar de o paciente apontar a mão sobre a região lateral.",
+   "C": "O teste de impacto anterior é feito com flexão, adução e rotação INTERNA; com rotação externa ele não reproduz o conflito anterossuperior.",
+   "D": "O teste de Ober avalia a retração da banda iliotibial e do tensor da fáscia lata, não do glúteo máximo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0070": {
+  "conceito": "Quatro afirmações independentes, e vale conferir cada uma contra o que se sabe da anatomia. O colo femoral tem ANTEversão de 10 a 15 graus no adulto. O calcar femoral é uma placa vertical densa que se projeta do córtex posteromedial, e é ele que sustenta a haste apoiada no calcar. Glúteo médio e mínimo, mais o tensor da fáscia lata, são inervados pelo nervo glúteo superior — o que explica a marcha de Trendelenburg quando ele é lesado. E quem irriga a cabeça femoral no adulto é a circunflexa femoral MEDIAL, pelo seu ramo profundo.",
+  "correta": "Glúteo médio e mínimo são inervados pelo nervo glúteo superior.",
+  "incorretas": {
+   "A": "O colo é anteversado, e não retroversado, em torno de 10 a 15 graus no adulto.",
+   "B": "O calcar femoral é posteromedial, e não anterolateral — é a espessa placa de osso que dá apoio à haste.",
+   "D": "A principal fonte de irrigação da cabeça femoral é a circunflexa femoral medial; a lateral irriga sobretudo a região trocantérica e a face anterior."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0071": {
+  "conceito": "De novo quatro afirmações a conferir uma a uma. O acesso posterior não previne osteonecrose — ele é justamente o que exige cuidado com o ramo profundo da circunflexa medial, que corre naquele campo. O acesso de Hardinge é lateral direto e trabalha por divisão do glúteo médio e do vasto lateral em manguito contínuo, sem osteotomia; quem osteotomiza o trocanter é o acesso transtrocantérico. O ilioinguinal, de Letournel, aborda a coluna ANTERIOR e a superfície quadrilátera. E o acesso anterior atravessa o território do nervo cutâneo femoral lateral, que cruza logo medial à espinha ilíaca anterossuperior.",
+  "correta": "No acesso anterior há risco de lesão do nervo cutâneo femoral lateral — a queixa mais comum depois dessa via.",
+  "incorretas": {
+   "A": "O acesso posterior não previne osteonecrose; ao contrário, é a via em que o vaso responsável pela cabeça precisa ser protegido.",
+   "B": "Hardinge não faz osteotomia trocantérica: ele divide o glúteo médio e o vasto lateral deixando um manguito contínuo.",
+   "D": "O ilioinguinal aborda a coluna anterior e a parede medial; a coluna posterior é território do acesso de Kocher-Langenbeck."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "quadril-0072": {
+  "conceito": "As duas condições cursam com dor no quadril, radiografia inicialmente pouco alterada e edema ósseo — e a distinção muda tudo, porque uma é autolimitada e a outra caminha para o colapso. Só a ressonância mostra o que as separa: na osteonecrose há uma lesão focal na zona de carga, delimitada por linha serpiginosa, com o colo geralmente poupado; na osteoporose transitória o edema é difuso e homogêneo, sem linha de demarcação, estendendo-se pelo colo até a região intertrocantérica. Cintilografia e tomografia não fazem essa leitura.",
+  "correta": "Ressonância magnética: é o único exame que mostra o padrão do edema e a presença ou ausência da lesão focal delimitada.",
+  "incorretas": {
+   "A": "A cintilografia é sensível mas inespecífica: mostra hipercaptação nas duas condições, sem desenhar a lesão.",
+   "C": "A tomografia mostra bem o osso e serve para avaliar colapso já instalado, mas não enxerga edema medular.",
+   "D": "A angiografia digital não tem papel no diagnóstico diferencial dessas duas condições."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ }
+}

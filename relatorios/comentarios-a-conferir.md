@@ -8,6 +8,15 @@ tem como saber que aquele parágrafo é chute.
 Esta lista é o que ficou de fora. Cada item diz o que me travou. Quando você
 souber a resposta, é só me dizer — o comentário sai na hora.
 
+## Questões com imagem
+
+A partir de setembro de 2026, por decisão de custo, as questões que dependem de
+figura passaram a ficar sem comentário. Ler cada imagem antes de escrever era o
+que garantia que o comentário descrevesse o que está na figura e não o que o
+gabarito sugere, e sem essa leitura o comentário seria adivinhação. As questões
+com figura já comentadas até aqui tiveram todas as imagens abertas e conferidas
+uma a uma.
+
 ## Gabarito que parece errado
 
 | Questão | O que a banca diz | O que me faz duvidar |
@@ -25,6 +34,8 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0576` | A perda da sensibilidade protetora corresponde ao monofilamento **amarelo** de Semmes-Weinstein | Nas duas escalas que conheço quem marca essa fronteira é o **vermelho**: no kit de cinco cores (verde, azul, violeta, vermelho) e no estesiômetro brasileiro de seis (verde 0,05 g, azul 0,2 g, violeta 2 g, vermelho 4 g, laranja 10 g, magenta 300 g). O amarelo não aparece em nenhuma delas |
 | `osteometabolicas-0046` | A osteoporose transitória do quadril ocorre mais comumente em **gestantes** no terceiro trimestre | A literatura descreve dois grupos, e na maioria das séries os homens de meia-idade (alternativa C) são mais numerosos, em proporção próxima de três para um |
 | `osteometabolicas-0055` | Sobre o raquitismo, a única alternativa correta seria a da deficiência de vitamina D | A alternativa C — fraqueza muscular proximal, geno varo ou valgo e rosário raquítico — também é verdadeira, e está marcada como errada. A questão tem duas respostas certas |
+| `quadril-0035` | O ramo **medial** da lágrima de Köhler corresponde à fossa acetabular | A descrição clássica é o inverso: o ramo lateral é a parede da fossa acetabular e o medial é a superfície quadrilátera — que é a alternativa D, marcada como errada. A `quadril-0053`, no mesmo acervo, reforça isso ao ligar a dissociação entre lágrima e coluna posterior à fratura da superfície quadrilátera |
+| `quadril-0031` | O movimento passivo que exacerba a síndrome do piriforme é rotação medial com **abdução** | Alongar o piriforme exige rotação interna com ADUÇÃO (teste FAIR, sinal de Freiberg). Abdução com rotação externa é o teste ATIVO — e a `quadril-0046` e a `quadril-0065`, no mesmo acervo, respondem exatamente isso |
 
 ## Afirmação que não consegui sustentar
 
@@ -54,6 +65,7 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0427` | Wassel IV corresponde ao tipo **I de Ezaki** | Não conheço uma classificação de Ezaki para duplicação do polegar |
 | `mao-0504` | A redução da luxação dorsal metacarpofalângica se faz com força em direção **volar** da cabeça do metacarpo | A cabeça do metacarpo já está deslocada volarmente, e a descrição clássica empurra a cabeça dorsalmente enquanto a falange é levada sobre ela. O que é certo, e o comentário não pôde ser escrito sem isso, é que tracionar piora — mas não consigo justificar a direção que o gabarito escolhe |
 | `mao-0491` | O tipo **T/1** representa hemimelia terminal, longitudinal paraxial completa | Conheço os eixos da classificação de Frantz e O'Rahilly (terminal ou intercalar, transversa ou longitudinal, completa ou parcial), mas não a notação "T/1" que o enunciado usa |
+| `quadril-0034` | A fratura periprotética acetabular traumática é **tipo III** de Della Valle e Paprosky | Conheço a lógica da classificação — separar a fratura reconhecida no pós-operatório, a traumática e a espontânea por osteólise, e cada uma com componente estável ou solto —, mas não a numeração exata dos tipos, e a questão depende só do número |
 | `mao-0544` | Subtipos A1/A2/B1/B2 da classificação de **Albertoni** para dedo em martelo | Conheço a divisão de Albertoni entre lesão tendínea pura e lesão com arrancamento ósseo, mas não a numeração dos subtipos nem o ponto de corte de 30º que o enunciado usa para separá-los |
 
 ## Enunciado que não consigo reconstruir
@@ -75,6 +87,8 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0558` | O comentário diz que a média de discriminação de dois pontos após reimplante de polegar por corte limpo fica em torno de 11 mm, mas separar 11 de 14 mm depende da casuística citada — o que se sustenta com firmeza é a ordem de grandeza |
 | `mao-0573` | A foto cirúrgica é de baixa resolução. O que sustenta a identificação da corda retrovascular é a posição da estrutura em relação ao feixe neurovascular, não um detalhe visível na imagem |
 | `osteometabolicas-0036` | A formulação original do critério de Altman fala em ausência de calor palpável. A alternativa dada como certa está redigida de outro jeito, e o que a sustenta é a eliminação das demais por categoria e por valor de corte |
+| `quadril-0039` | A direção perpendicular das perfurantes ao fêmur é o que sustenta a resposta; o intervalo de cerca de 3 cm é o número da banca, e esse eu não consigo confirmar de forma independente |
+| `quadril-0032` | Pelo mesmo mecanismo do braço de alavanca, a força exigida dos abdutores também aumenta com o centro superolateral — a alternativa B não é falsa em fisiologia, e o comentário registra isso |
 
 ---
 
