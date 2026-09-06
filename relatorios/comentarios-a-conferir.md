@@ -39,6 +39,7 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0227` | Teste de flexão ativa de **Smith** no Dupuytren | Não conheço um teste com esse nome. O de Elson eu conheço, e é de banda central |
 | `mao-0295` | Retalho de **Jacobsen** no Dupuytren do quinto dedo | Não conheço um retalho com esse nome |
 | `mao-0427` | Wassel IV corresponde ao tipo **I de Ezaki** | Não conheço uma classificação de Ezaki para duplicação do polegar |
+| `mao-0491` | O tipo **T/1** representa hemimelia terminal, longitudinal paraxial completa | Conheço os eixos da classificação de Frantz e O'Rahilly (terminal ou intercalar, transversa ou longitudinal, completa ou parcial), mas não a notação "T/1" que o enunciado usa |
 
 ## Comentado, mas com ressalva escrita no próprio texto
 
