@@ -31,6 +31,7 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0237` | Liberação do túnel do carpo é necessária em **67%** depois de artrodese total do punho | Número muito alto e não consigo confirmá-lo |
 | `mao-0242` | A "gota de lágrima" da borda volar do rádio mede **5 mm** de largura máxima | Conheço a descrição do ângulo da gota (~70°), não a da largura |
 | `mao-0418` | O padrão mais comum de fratura do semilunar no Kienböck acomete o polo **anterior** | Conheço a fratura coronal do semilunar, que separa fragmento volar e dorsal, mas não consigo confirmar qual polo é o mais acometido |
+| `mao-0542` | Na macrodactilia o polegar deforma em **abdução e hiperextensão** | A macrodactilia do polegar costuma vir descrita pelo excesso de volume e pelo desvio no plano do dedo acometido, e não achei fonte que fixe esse par de deformidades como o padrão |
 
 ## Classificação que não domino com essa granularidade
 
@@ -42,6 +43,7 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0427` | Wassel IV corresponde ao tipo **I de Ezaki** | Não conheço uma classificação de Ezaki para duplicação do polegar |
 | `mao-0504` | A redução da luxação dorsal metacarpofalângica se faz com força em direção **volar** da cabeça do metacarpo | A cabeça do metacarpo já está deslocada volarmente, e a descrição clássica empurra a cabeça dorsalmente enquanto a falange é levada sobre ela. O que é certo, e o comentário não pôde ser escrito sem isso, é que tracionar piora — mas não consigo justificar a direção que o gabarito escolhe |
 | `mao-0491` | O tipo **T/1** representa hemimelia terminal, longitudinal paraxial completa | Conheço os eixos da classificação de Frantz e O'Rahilly (terminal ou intercalar, transversa ou longitudinal, completa ou parcial), mas não a notação "T/1" que o enunciado usa |
+| `mao-0544` | Subtipos A1/A2/B1/B2 da classificação de **Albertoni** para dedo em martelo | Conheço a divisão de Albertoni entre lesão tendínea pura e lesão com arrancamento ósseo, mas não a numeração dos subtipos nem o ponto de corte de 30º que o enunciado usa para separá-los |
 
 ## Comentado, mas com ressalva escrita no próprio texto
 
