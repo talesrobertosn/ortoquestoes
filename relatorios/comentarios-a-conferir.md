@@ -31,6 +31,8 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 |---|---|---|
 | `mao-0220` | Subdivisão IIa/IIb do McGowan modificado | Não consigo justificar por que a alternativa que atribui fraqueza intrínseca ao IIb estaria errada |
 | `mao-0227` | Teste de flexão ativa de **Smith** no Dupuytren | Não conheço um teste com esse nome. O de Elson eu conheço, e é de banda central |
+| `mao-0295` | Retalho de **Jacobsen** no Dupuytren do quinto dedo | Não conheço um retalho com esse nome |
+| `mao-0297` | Tipo **III de Tachdjian** na sinostose radioulnar = sinostose fibrosa | "Sinostose fibrosa com cabeça do rádio normal" é o tipo **I** de Cleary e Omer. Não consigo confirmar a numeração de Tachdjian |
 
 ## Comentado, mas com ressalva escrita no próprio texto
 
