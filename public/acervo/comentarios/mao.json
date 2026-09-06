@@ -1087,5 +1087,357 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "mao-0103": {
+  "conceito": "A doença de Dupuytren tem preferência ulnar: começa e predomina do lado do dedo mínimo, e é raro ver o polegar e o indicador acometidos isoladamente.",
+  "correta": "O anelar é o dedo mais acometido na forma usual, seguido de perto pelo mínimo. Isso importa na prática porque a corda do anelar costuma travar a metacarpofalângica, que responde bem à cirurgia, enquanto a do mínimo compromete a interfalângica proximal, que é a contratura mais difícil de corrigir e a que mais recidiva.",
+  "incorretas": {
+   "A": "O médio é acometido, mas com frequência menor que a do anelar.",
+   "C": "Doença no polegar e na primeira comissura existe, mas é bem menos comum e costuma vir em quadros mais extensos.",
+   "D": "O indicador é dos menos acometidos, e a doença isolada nele deve levantar dúvida diagnóstica."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0104": {
+  "conceito": "O segundo compartimento dorsal do punho contém os dois extensores radiais do carpo. Ele fica logo radial ao tubérculo de Lister, que é a referência óssea que o separa do terceiro compartimento.",
+  "correta": "Os tendões são o extensor radial curto e o longo do carpo, e o longo é o mais radial dos dois. A ordem faz sentido pela inserção: o longo vai à base do segundo metacarpo e o curto à base do terceiro, então o longo corre por fora. Vale guardar a relação com o terceiro compartimento: o extensor longo do polegar contorna o tubérculo de Lister e cruza por cima desses dois, e o atrito nesse cruzamento é a síndrome da interseção distal.",
+  "incorretas": {
+   "A": "Extensor curto e abdutor longo do polegar são o primeiro compartimento, o da tenossinovite de De Quervain — e ali o abdutor longo é o mais radial e volar, não ulnar.",
+   "B": "Compartimento errado, ainda que a posição relativa esteja certa dentro dele.",
+   "C": "Acerta os tendões e inverte a posição: quem é mais ulnar é o curto, não o longo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0105": {
+  "conceito": "Polidactilia pré-axial é a duplicação do lado radial, quase sempre do polegar, e obedece a um padrão bem diferente da pós-axial: esta é frequentemente bilateral, hereditária e mais comum em pessoas negras, enquanto a pré-axial costuma ser esporádica.",
+  "correta": "O polegar mais hipoplásico fica em geral do lado radial, e o quadro costuma ser unilateral. É por isso que a regra cirúrgica é ressecar o polegar radial e reconstruir o ulnar, transferindo para ele o colateral radial e reinserindo o abdutor curto — o ulnar é o mais desenvolvido e o que já carrega a melhor articulação com o trapézio.",
+  "incorretas": {
+   "A": "Erra os dois pontos: o hipoplásico é o radial, e a apresentação bilateral é característica da polidactilia pós-axial, não da pré-axial.",
+   "B": "O lado está certo, a lateralidade não: bilateralidade não é a regra aqui.",
+   "C": "A unilateralidade está certa, mas o polegar mais hipoplásico é o radial, e reconstruir o radial em vez do ulnar é o erro técnico clássico."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0106": {
+  "conceito": "Verdan numerou as zonas dos extensores do polegar de T-I a T-V, separadas pelo prefixo T das zonas dos dedos longos. As ímpares ficam sobre as articulações: T-I na interfalângica, T-III na metacarpofalângica, T-V no punho.",
+  "correta": "No nível do punho a zona é a T-V. É ali que o extensor longo do polegar passa junto dos tendões do primeiro compartimento e onde uma lesão pode comprometer os três ao mesmo tempo — motivo pelo qual ferimento no dorso radial do punho exige testar retropulsão e abdução do polegar separadamente.",
+  "incorretas": {
+   "A": "A T-IV corresponde ao metacarpo do polegar, proximal à metacarpofalângica e distal ao punho.",
+   "C": "A zona VI existe na numeração dos dedos longos, correspondendo ao dorso da mão. Na do polegar, a série termina em V.",
+   "D": "A T-VII tampouco existe: na numeração dos dedos longos, VII é o nível do retináculo, e ela não tem correspondente na série do polegar."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0107": {
+  "conceito": "O retalho inguinal pediculado, descrito por McGregor, foi por décadas a solução de cobertura para grandes perdas do dorso da mão. Ele é um retalho axial, isto é, tem um vaso próprio e conhecido, e não depende de proporção entre comprimento e base.",
+  "correta": "O vaso é a artéria circunflexa ilíaca superficial, ramo da femoral, que emerge cerca de 2,5 cm abaixo do ligamento inguinal e corre paralela a ele em direção à espinha ilíaca anterossuperior. É essa linha que define o eixo do retalho no desenho. A desvantagem é conhecida: exige a mão presa à virilha por cerca de três semanas até a autonomização, com rigidez de ombro e cotovelo como preço — razão pela qual ele hoje é reserva, e não primeira escolha.",
+  "incorretas": {
+   "A": "Ilioinguinal é o nome de um nervo, não da artéria que supre o retalho.",
+   "B": "A pudenda externa irriga a região genital e o terço medial da virilha, fora do território do retalho.",
+   "C": "A epigástrica superficial existe e sobe em direção ao umbigo, sendo base de outro retalho — o abdominal. Não é o eixo do retalho inguinal, que corre lateralmente."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0108": {
+  "conceito": "Lesão pré-ganglionar é avulsão da raiz junto à medula. Para reconhecê-la sem abrir, procura-se déficit em músculos cujos nervos saem das raízes muito proximalmente — antes de qualquer tronco se formar. Se esses músculos estão paralisados, a lesão está lá em cima.",
+  "correta": "O serrátil anterior é inervado pelo nervo torácico longo, que nasce diretamente das raízes C5, C6 e C7, praticamente na saída do forame. Serrátil paralisado, com escápula alada, é sinal de que a lesão é pré-ganglionar. A mesma lógica vale para os romboides, pelo nervo dorsal da escápula, para o diafragma, pelo frênico, e para a síndrome de Horner, por T1 — todos sinais de avulsão, todos de mau prognóstico e todos indicativos de reconstrução com transferências, já que não há coto proximal para enxertar.",
+  "incorretas": {
+   "A": "O trapézio é inervado pelo nervo acessório, o décimo primeiro par craniano, que não vem do plexo braquial. Por isso ele é preservado mesmo nas lesões completas — e é justamente essa preservação que o torna doador nas transferências para o supraescapular.",
+   "B": "O tríceps é inervado pelo nervo radial, que vem do fascículo posterior, bem distal no plexo. A paralisia dele não localiza a lesão nas raízes.",
+   "D": "O flexor radial do carpo é do nervo mediano, também distal. Serve para mapear a extensão da lesão, não para dizer se ela é pré ou pós-ganglionar."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0109": {
+  "conceito": "O aparelho extensor do dedo se divide sobre a falange proximal em três feixes: a banda central, que segue no meio e se insere na base da falange média, e duas bandas laterais, que correm pelas laterais, recebem os tendões dos intrínsecos e se unem distalmente no tendão terminal, na base da falange distal.",
+  "correta": "A seta indica a banda lateral. É ela que se desloca nas duas grandes deformidades do dedo: para volar do eixo da interfalângica proximal na botoeira, quando a banda central rompe, deixando de estender a proximal e passando a hiperestender a distal; e para dorsal no pescoço de cisne, quando as bandas laterais escorregam para cima do eixo. Reconhecer isso é o que explica por que o tratamento da botoeira aguda é prender a proximal em extensão e mandar fletir ativamente a distal — o gesto que puxa a banda lateral de volta ao lugar.",
+  "incorretas": {
+   "A": "O tendão do lumbrical vem de volar e radial e se junta à banda lateral, mas mais proximalmente, ao nível da falange proximal. Não é a estrutura que corre até a inserção terminal.",
+   "B": "O interósseo também contribui para a banda lateral e para a bandeleta sagital, mas de novo a contribuição é proximal — o que a seta mostra é a banda já formada.",
+   "D": "A banda central corre no meio do dorso do dedo e termina na base da falange média. A estrutura indicada é lateral e segue além dela."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0110": {
+  "conceito": "A figura mostra uma zetaplastia: a cicatriz retrátil vira o ramo central do Z e dois retalhos triangulares são transpostos, ganhando comprimento no eixo da retração à custa de largura no eixo transversal.",
+  "correta": "Os ângulos A e B devem ficar entre 45 e 60 graus. O ganho de comprimento é proporcional ao ângulo — 60 graus rendem cerca de 75%, 45 graus cerca de 50% —, mas ângulos maiores exigem pele lateral que nem sempre existe e dificultam a transposição sem tensão. Abaixo de 45 graus o ganho é pequeno e as pontas dos retalhos ficam finas demais, com risco de necrose. A faixa de 45 a 60 é o equilíbrio entre ganhar comprimento e conseguir fechar.",
+  "incorretas": {
+   "A": "Entre 5 e 20 graus os triângulos seriam lâminas finas, sem vascularização confiável, e o ganho de comprimento seria irrisório.",
+   "B": "De 25 a 40 graus ainda se ganha pouco, e a ponta do retalho continua estreita demais para ser segura.",
+   "D": "De 65 a 80 graus o ganho teórico é maior, mas a transposição exige tanta pele lateral e gera tanta tensão de fechamento que na prática se perde o retalho ou a cicatriz nova fica pior que a antiga."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0111": {
+  "conceito": "A interfalângica proximal é uma dobradiça com três estabilizadores que formam uma caixa: os dois ligamentos colaterais nas laterais, a placa volar à frente e a própria congruência óssea atrás. Cada um responde por um plano.",
+  "correta": "No plano coronal, ou seja, contra o desvio lateral, o estabilizador primário é o ligamento colateral — o feixe próprio, que vai do côndilo da falange proximal à base da falange média e fica tenso na flexão. É por causa disso que a imobilização dessa articulação nunca deve ser em extensão prolongada: em extensão o colateral fica frouxo e encurta nessa posição, e o dedo perde a flexão. A posição segura é com a interfalângica próxima da extensão, mas com mobilização precoce.",
+  "incorretas": {
+   "A": "A placa volar é o estabilizador primário contra a hiperextensão, no plano sagital. É ela que se avulsa na luxação dorsal e cuja cicatrização em encurtamento leva à contratura em flexão.",
+   "C": "O côndilo da falange proximal dá estabilidade pela congruência e é importante — mas ele é contenção óssea, e o que a questão pede é o estabilizador ligamentar do plano coronal.",
+   "D": "A bandeleta central extensora estende a articulação e a estabiliza no plano sagital, dorsalmente. Não é freio de desvio lateral."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0112": {
+  "conceito": "Todo coto de amputação forma neuroma; o que se quer evitar é o neuroma sintomático, aquele que dói ao toque e impede o uso do coto. Dois fatores pesam: onde ele fica e como o nervo foi lesado.",
+  "correta": "O indicador é o dedo em que o neuroma mais incomoda, porque é o dedo da pinça e da exploração — o coto encosta em tudo. E a avulsão é o mecanismo que mais produz neuroma sintomático: o nervo é arrancado com tração, lesado muito além do nível visível, e o coto fica irregular em tecido mal vascularizado. Daí a conduta de tracionar o nervo e seccioná-lo proximalmente, alojando o neuroma em tecido mole e longe da área de contato.",
+  "incorretas": {
+   "B": "O dedo está certo e o mecanismo não: a laceração limpa lesa o nervo num nível só e permite tratar o coto no próprio ato.",
+   "C": "O mecanismo está certo e o dedo não: o médio fica protegido entre os vizinhos e encosta menos.",
+   "D": "Erra os dois fatores."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0113": {
+  "conceito": "No dedo, dois ligamentos cruzam transversalmente em relação ao feixe vasculonervoso: o de Grayson, à frente dele, e o de Cleland, atrás. Guardar quem está na frente e quem está atrás é o que resolve a questão — e o que orienta a dissecção.",
+  "correta": "A corda indicada é formada pelo ligamento de Grayson, que é volar ao feixe vasculonervoso. Ele é uma das estruturas que participam da formação da corda espiral, junto com a banda pré-tendínea, a banda espiral e a lâmina digital lateral — e é por isso que essa corda desloca o feixe para a linha média e para a superfície. O contraponto vale a pena decorar: o ligamento de Cleland, dorsal ao feixe, não é acometido pela doença de Dupuytren. É a estrutura que o cirurgião encontra íntegra e usa como referência para saber que está no plano certo.",
+  "incorretas": {
+   "A": "O ligamento natatório fica na comissura, transversal entre os dedos, e adoece na doença de Dupuytren — mas a corda que ele forma é a natatória, responsável pelo fechamento da comissura, e não a corda digital indicada na figura.",
+   "B": "O ligamento de Cleland é dorsal ao feixe e é justamente o que não é acometido pela doença.",
+   "D": "O ligamento transverso superficial da palma, de Skoog, também é poupado pela doença e serve como referência na dissecção palmar. Além disso, está na palma, não no dedo."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0114": {
+  "conceito": "As complicações da artroscopia do punho se separam pela causa: as ligadas ao portal e ao instrumento, as ligadas ao fluxo de líquido e as ligadas à tração e ao posicionamento do braço na torre.",
+  "correta": "A rigidez articular é a complicação do grupo da tração e do posicionamento. O punho fica suspenso pelos dedos, com tração mantida por tempo prolongado, e ombro e cotovelo permanecem numa posição fixa durante todo o procedimento: o resultado é rigidez, sobretudo em quem já tinha limitação. Reduzir o tempo de tração, usar a força mínima necessária e mobilizar precocemente no pós-operatório é o que previne.",
+  "incorretas": {
+   "B": "Lesão de tendão extensor é complicação de portal: acontece na hora de fazer a incisão e introduzir o trocarte, por isso a técnica recomenda incisar só a pele e divulsionar o resto com pinça hemostática.",
+   "C": "Síndrome compartimental na artroscopia do punho decorre de extravasamento de líquido para o antebraço, ligada à pressão da bomba e ao tempo de irrigação — não à tração.",
+   "D": "Lesão da cartilagem é complicação do instrumento, causada pela entrada do trocarte ou pela manipulação dentro de uma articulação pequena e apertada."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0115": {
+  "conceito": "Na botoeira a banda central rompe, a interfalângica proximal cai em flexão e as bandas laterais escorregam para volar do eixo de rotação, passando a hiperestender a distal em vez de estender a proximal.",
+  "correta": "A imobilização mantém a interfalângica proximal em extensão e estimula a flexão ativa da distal. A flexão ativa da distal não é exercício acessório: é o que traciona as bandas laterais de volta para dorsal e distal e alonga o ligamento retinacular oblíquo, que se encurtou. Por isso a órtese deve deixar a distal completamente livre, e o programa exige que a pessoa flita a ponta do dedo várias vezes ao dia durante as seis a oito semanas de uso.",
+  "incorretas": {
+   "A": "Imobilizar a proximal em flexão é perpetuar a deformidade que se quer desfazer.",
+   "B": "Erra nas duas partes: a proximal não pode ficar fletida, e estimular a extensão da distal reforça exatamente a hiperextensão que caracteriza a segunda metade da botoeira.",
+   "D": "A proximal está certa, mas estimular extensão da distal trabalha a favor da deformidade, não contra ela."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0116": {
+  "conceito": "Os três parâmetros radiográficos do rádio distal são a inclinação ulnar, ou desvio radial, medida na incidência posteroanterior; a inclinação volar, medida no perfil; e a altura ou comprimento radial, também na posteroanterior.",
+  "correta": "A inclinação ulnar é o ângulo entre a linha que une a ponta do processo estiloide do rádio ao ponto mais ulnar da superfície articular do rádio e uma perpendicular ao eixo longo do osso. O valor normal é de cerca de 22 graus, com faixa aceita de 21 a 25. Perder inclinação ulnar significa que a superfície articular ficou horizontal, e isso transfere carga para a ulna e para o lado ulnar do carpo — daí a dor ulnar residual depois de uma fratura mal consolidada.",
+  "incorretas": {
+   "A": "O ângulo se mede dentro do rádio, entre dois pontos do próprio rádio. Usar o estiloide da ulna como referência mistura os dois ossos e mede outra coisa.",
+   "B": "Os pontos estão certos e o valor não: 11 graus é aproximadamente o valor normal da inclinação volar, medida no perfil. É a troca que a questão arma.",
+   "C": "Erra os dois itens: pontos de referência errados e o valor da inclinação volar no lugar do da ulnar."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0117": {
+  "conceito": "O escafoide fratura quando o punho é forçado além dos 95 graus de extensão com desvio radial: nessa posição o polo proximal fica preso entre o rádio e o ligamento radioescafocapitato enquanto o polo distal continua sendo empurrado, e o osso quebra no meio.",
+  "correta": "O mecanismo é a queda com hiperextensão e desvio radial do punho, e entre os testes oferecidos o de Watson é o único que se refere ao escafoide. Vale uma ressalva honesta: o teste de Watson foi descrito para instabilidade escafossemilunar, não para fratura. O exame clínico da fratura aguda do escafoide se apoia em outros três achados, que valem mais na prática — dor à palpação da tabaqueira anatômica, dor à palpação do tubérculo do escafoide na face volar e dor à compressão axial do polegar. Nenhum deles é sensível o bastante para excluir a fratura, e é por isso que a suspeita clínica com radiografia normal se trata como fratura até nova avaliação ou exame de maior resolução.",
+  "incorretas": {
+   "A": "O teste está certo, o desvio não: é radial, não ulnar. O desvio radial é o que trava o polo proximal contra o rádio.",
+   "C": "O teste de Finkelstein avalia a tenossinovite de De Quervain, no primeiro compartimento dorsal — e o desvio do mecanismo também está errado.",
+   "D": "O mecanismo está certo, mas Finkelstein é teste de outra doença: a dor dele fica sobre o estiloide radial e piora com o polegar dentro da mão e desvio ulnar do punho."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0118": {
+  "conceito": "O sistema de polias tem anulares, que prendem o tendão ao osso, e cruciformes, que permitem à bainha dobrar sem colabar. Só as anulares longas, situadas sobre a diáfise e não sobre a articulação, seguram o tendão onde ele mais tende a se afastar.",
+  "correta": "A A2, sobre a falange proximal, e a A4, sobre a falange média, são as duas essenciais. Sem elas o tendão arqueia ao fletir, encurta o braço de alavanca e a ponta do dedo deixa de fechar por completo, mesmo com a musculatura íntegra. Consequência prática: na cirurgia de flexores essas duas se preservam sempre, e quando é preciso ganhar espaço prefere-se ventilar as cruciformes ou a A3, ou alargar a A2 parcialmente, em vez de sacrificá-las.",
+  "incorretas": {
+   "A": "A A1 é a polia da metacarpofalângica — a que se secciona no dedo em gatilho justamente porque pode ser sacrificada sem produzir arqueamento.",
+   "C": "A C1 é cruciforme: ela existe para permitir a dobra da bainha, não para reter o tendão contra o osso.",
+   "D": "A A4 está certa, mas a C2, sendo cruciforme, tampouco tem função de retenção."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0119": {
+  "conceito": "Esta questão junta num só bloco tudo o que se cobra de epidemiologia da doença de Dupuytren. A alternativa certa é a que não erra nenhum dos cinco itens.",
+  "correta": "Predomínio masculino da ordem de dez para um, maior prevalência em diabéticos, acometimento bilateral porém assimétrico, forte influência genética — a doença dos vikings, com herança autossômica dominante de penetrância variável — e o anelar como dedo mais atingido. As demais associações que valem guardar: alcoolismo, epilepsia e anticonvulsivantes, tabagismo e HIV.",
+  "incorretas": {
+   "B": "A assimetria e a influência genética estão certas, mas a proporção entre os sexos é bem maior que três para um, e o dedo mais acometido é o anelar, não o mínimo — ainda que o mínimo venha logo atrás e produza a contratura mais difícil de corrigir.",
+   "C": "Inverte o sexo predominante, afirma simetria, que não é a regra, e nega a influência genética, que é justamente uma das características mais marcantes da doença.",
+   "D": "Erra em quatro dos cinco itens: sexo, simetria, ausência de genética e dedo mais acometido."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0120": {
+  "conceito": "A instabilidade perissemilunar de Mayfield progride sempre na mesma direção: começa radial ao semilunar e dá a volta nele até chegar ao lado ulnar e depois ao dorso.",
+  "correta": "Estágio I é a falha do ligamento escafossemilunar e estágio III a do piramidal-semilunar. Entre eles, o estágio II é o capitossemilunar, e o IV é a ruptura do radiocarpal dorsal, que libera o semilunar para rodar e luxar para volar, para dentro do túnel do carpo. Guardar a sequência resolve todas as questões do assunto: escafossemilunar, capitossemilunar, lunopiramidal, radiocarpal dorsal.",
+  "incorretas": {
+   "A": "Acerta o estágio I e coloca no lugar do III o ligamento do estágio II.",
+   "B": "Desloca a série inteira em um degrau: nomeia os ligamentos dos estágios II e IV.",
+   "C": "Inverte a ordem, começando pelo ligamento do último estágio."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0121": {
+  "conceito": "A distrofia simpático-reflexa, hoje chamada síndrome dolorosa regional complexa, tem duas caras conforme a fase. Na fase aguda predomina o quadro vasomotor quente; na tardia, o atrófico e frio.",
+  "correta": "Os achados mais frequentes são aumento da temperatura, edema e eritema — a mão quente, inchada e vermelha da fase inicial, acompanhada de dor desproporcional ao trauma, alodinia e hiperidrose. É essa combinação que deve acender o alerta no pós-operatório ou depois de uma fratura banal, porque o tratamento precoce, com analgesia adequada e fisioterapia, muda o desfecho.",
+  "incorretas": {
+   "B": "Edema e eritema estão certos, pele seca não. Na fase inicial a mão sua mais, não menos: a hiperidrose é parte do quadro. A pele seca e atrófica aparece na fase tardia, junto com a mão fria, pálida e rígida.",
+   "C": "Mesmo problema: mistura dois achados da fase quente com um da fase fria.",
+   "D": "Também combina fases diferentes, e é a alternativa que mais se apoia no achado tardio."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0122": {
+  "conceito": "O nervo supraescapular tem dois pontos de compressão, e o quadro clínico depende de qual deles: na incisura supraescapular a lesão pega supraespinal e infraespinal; na incisura espinoglenoidal, só o infraespinal.",
+  "correta": "O cisto, ou gânglio, no entalhe espinoglenoidal é causa consagrada de lesão do supraescapular. Ele quase sempre vem de uma lesão do lábio posterossuperior, com líquido articular escapando por um mecanismo de válvula, e o quadro típico é atrofia isolada da fossa infraespinal com fraqueza de rotação externa, clássico em jogador de vôlei e de tênis. Detalhe importante: tratar só o cisto sem tratar a lesão labral que o alimenta leva à recidiva.",
+  "incorretas": {
+   "A": "A luxação posterior do ombro não tem relação estabelecida com lesão do supraescapular. Quem sofre nas luxações, sobretudo anteriores, é o nervo axilar.",
+   "C": "A porção inferomedial da escápula fica longe do trajeto do nervo, que corre na borda superior. Fraturas relevantes para ele são as do colo e as que envolvem a incisura supraescapular.",
+   "D": "O nervo supraescapular corre no triângulo posterior do pescoço, não no anterior. Ferimento no triângulo anterior atinge outras estruturas."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0123": {
+  "conceito": "Seddon dividiu as lesões de nervo em três, e Sunderland detalhou o meio-termo em graus, seguindo a ordem em que as camadas se rompem: axônio, endoneuro, perineuro, epineuro.",
+  "correta": "A axonotmese corresponde ao tipo II de Sunderland: o axônio é interrompido, com degeneração walleriana distal, mas o tubo endoneural permanece íntegro. Como o tubo guia a regeneração de volta ao alvo original, a recuperação é completa e espontânea, avançando cerca de um milímetro por dia — daí o Tinel que caminha distalmente ao longo das semanas.",
+  "incorretas": {
+   "A": "O tipo I é a neuropraxia: bloqueio de condução por desmielinização focal, sem lesão do axônio e sem degeneração walleriana. Recupera em dias a semanas, e é o que acontece na paralisia por compressão postural.",
+   "C": "O tipo III acrescenta lesão do endoneuro. Já não é axonotmese pura na classificação de Sunderland, e a recuperação passa a ser incompleta e imprevisível.",
+   "D": "O tipo IV soma a lesão do perineuro, com neuroma em continuidade e sem recuperação espontânea."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0124": {
+  "conceito": "Os intrínsecos fletem a metacarpofalângica e estendem as interfalângicas, cruzando as duas articulações. Por isso a posição da metacarpofalângica muda a tensão deles, e é dessa propriedade que o teste se serve.",
+  "correta": "O teste de Bunnell-Littler positiva na contratura, ou retração, da musculatura intrínseca. Com a metacarpofalângica mantida em extensão, os intrínsecos ficam esticados e limitam a flexão passiva da interfalângica proximal; fletindo a metacarpofalângica, eles relaxam e a proximal volta a fletir. A conclusão prática é imediata: se a limitação muda com a posição da metacarpofalângica, o freio é muscular; se não muda, é capsular ou articular, e a conduta é outra.",
+  "incorretas": {
+   "A": "Ruptura de tendão causa perda de movimento ativo, não limitação passiva. O teste avalia mobilidade passiva justamente para separar as duas coisas.",
+   "B": "Sinovite da interfalângica limita a flexão nas duas posições da metacarpofalângica, porque o obstáculo está dentro da articulação. É a resposta que o teste dá quando é negativo.",
+   "D": "Subluxação da metacarpofalângica é achado de outra natureza, típico da mão reumatoide, e não é o que o teste procura."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0125": {
+  "conceito": "Na doença de Kienböck a escolha do procedimento acompanha dois eixos: quanto o semilunar colapsou e o carpo se desalinhou, que é o que Lichtman mede, e quantas superfícies articulares já se perderam, que é o que Bain e Begg contam.",
+  "correta": "A carpectomia da fileira proximal é indicada no estágio III-B de Lichtman — semilunar colapsado, escafoide em rotação fixa, altura carpal reduzida e alinhamento perdido. Nesse ponto os procedimentos que descarregam o semilunar já não têm o que salvar, e a saída é retirar a fileira proximal e passar a apoiar o capitato na fossa semilunar do rádio. A condição para que funcione é justamente essa: a cabeça do capitato e a fossa semilunar do rádio precisam estar com cartilagem preservada, porque são elas que formarão a nova articulação.",
+  "incorretas": {
+   "A": "No estágio II de Lichtman há esclerose do semilunar sem colapso e com alinhamento carpal normal. Aí ainda cabem procedimentos que preservam o carpo: osteotomia de nivelamento articular quando há variância ulnar negativa, ou revascularização. Ressecar a fileira proximal nessa fase é sacrificar o que ainda funciona.",
+   "C": "A classificação de Bain e Begg conta quantas superfícies articulares estão comprometidas, e o grau III significa três delas — incluindo a cabeça do capitato. Com o capitato acometido, a carpectomia da fileira proximal fica contraindicada, porque a superfície que iria formar a nova articulação já está gasta.",
+   "D": "O grau IIA de Bain e Begg descreve acometimento ainda limitado, e além disso a alternativa troca de sistema no meio do caminho: a indicação clássica da carpectomia é enunciada em Lichtman, e é por esse sistema que a questão pergunta."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0126": {
+  "conceito": "A contratura de Dupuytren tem uma lista de associações bem estabelecida, e a maioria delas passa por doenças crônicas ou por medicações de uso prolongado.",
+  "correta": "O uso crônico de anticonvulsivantes é fator predisponente reconhecido, junto com a própria epilepsia. Os demais fatores da lista: diabetes, alcoolismo, doença hepática crônica, tabagismo e HIV. E a chamada diátese de Hueston, que prevê recidiva: história familiar, início antes dos 50 anos, doença bilateral, acometimento do lado radial da mão e focos ectópicos — nódulos de Garrod nos dedos, doença de Ledderhose na planta e doença de Peyronie.",
+  "incorretas": {
+   "A": "O sexo feminino não é fator predisponente — é o contrário: a doença é bem mais frequente em homens, e nas mulheres começa mais tarde e evolui mais devagar.",
+   "B": "Doença reumática não integra a lista de associações. Aliás, a artrite reumatoide produz deformidades de mecanismo completamente diferente, articulares e tendíneas, não fasciais.",
+   "C": "Estatinas não têm relação descrita com a doença. Quem entra na lista de medicações é o anticonvulsivante."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0127": {
+  "conceito": "O primeiro compartimento dorsal contém o abdutor longo e o extensor curto do polegar, e é o compartimento da tenossinovite de De Quervain. As variações anatômicas dele explicam boa parte das falhas de tratamento.",
+  "correta": "O extensor curto do polegar está ausente em cerca de 5% dos punhos. Vale, no entanto, guardar a variação que mais importa na prática e que é muito mais frequente: em boa parte dos punhos existe um septo separando o extensor curto num subcompartimento próprio. Quando ele existe, a infiltração ou a liberação que trata apenas o compartimento principal não alcança o extensor curto, e o sintoma persiste — é a causa mais comum de falha no tratamento de De Quervain, e a razão de a liberação cirúrgica exigir procurar e abrir esse septo.",
+  "incorretas": {
+   "B": "Dez por cento superestima a frequência da ausência do tendão.",
+   "C": "Quinze por cento também está acima do descrito.",
+   "D": "Vinte por cento é um número que se aproxima do da presença do septo intracompartimental, não da ausência do tendão — é a troca que a alternativa arma."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0128": {
+  "conceito": "Nalebuff classificou o pescoço de cisne na artrite reumatoide pelo que limita a flexão da interfalângica proximal, e o tratamento segue diretamente daí. Tipo I: proximal flexível em qualquer posição. Tipo II: flexão limitada conforme a posição da metacarpofalângica, ou seja, retração intrínseca. Tipo III: flexão limitada em todas as posições, mas com superfícies articulares preservadas na radiografia. Tipo IV: rígida e com articulação destruída.",
+  "correta": "No tipo III a articulação ainda tem cartilagem, e o obstáculo é de partes moles fixas — bandas laterais deslocadas dorsalmente e pele dorsal retraída. O tratamento começa por recuperar a mobilidade passiva: manipulação, mobilização das bandas laterais e órteses seriadas. Só depois de reconquistar o arco passivo é que faz sentido acrescentar um procedimento de partes moles para manter a correção. Operar um dedo rígido sem antes mobilizá-lo é repetir a deformidade.",
+  "incorretas": {
+   "A": "Artrodese é a conduta do tipo IV, em que a superfície articular já está destruída e não há mobilidade a recuperar. Na interfalângica proximal do indicador ela é preferida à artroplastia, pela demanda de pinça.",
+   "B": "Dermodese é opção do tipo I, o pescoço de cisne flexível: uma elipse de pele volar é ressecada sobre a interfalângica proximal para criar um freio à hiperextensão.",
+   "C": "Tenodese com o flexor superficial dos dedos, ou a reconstrução do ligamento retinacular oblíquo de Littler, também tratam o tipo I flexível — não o tipo III rígido."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0129": {
+  "conceito": "O ramo cutâneo dorsal do nervo ulnar se separa do tronco principal bem antes do punho e passa por trás da cabeça da ulna, por fora do canal de Guyon. É esse detalhe que localiza a compressão sem exame nenhum.",
+  "correta": "O ramo sensitivo dorsal sai cerca de 8 cm proximal ao pisiforme. Duas consequências práticas. Primeira, sensibilidade alterada no dorso ulnar da mão exclui o canal de Guyon e aponta compressão mais proximal, no cotovelo. Segunda, o ramo é vulnerável nas incisões e nos portais artroscópicos ulnares do punho, e lesá-lo deixa um neuroma doloroso justamente na borda de apoio da mão.",
+  "incorretas": {
+   "A": "A compressão do mediano no punho — a síndrome do túnel do carpo — é de longe a neuropatia compressiva mais comum de todo o corpo. A do ulnar no punho é rara em comparação.",
+   "B": "A compressão do ulnar no cotovelo, no túnel cubital, é a segunda neuropatia compressiva mais frequente do membro superior, e supera com larga margem a compressão no canal de Guyon.",
+   "C": "É justamente o contrário, e pelo motivo explicado acima: no canal de Guyon os sintomas são apenas palmares, porque o ramo dorsal já saiu antes."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0130": {
+  "conceito": "O prazo do reimplante não é uma regra só: ele depende de haver ou não massa muscular no segmento amputado. Músculo isquêmico morre rápido e, ao ser reperfundido, devolve à circulação potássio, mioglobina e ácido — daí a diferença entre dedo e braço.",
+  "correta": "O dedo não tem ventre muscular, apenas tendões, osso e pele, e por isso tolera isquemia longa: cerca de 12 horas em temperatura ambiente e até 24 a 30 horas se resfriado a 4 graus. Resfriar bem é o que compra esse tempo — o segmento vai em gaze úmida, dentro de saco plástico fechado, e o saco no gelo, nunca o dedo em contato direto com o gelo nem submerso em água.",
+  "incorretas": {
+   "B": "Amputações proximais à mão carregam massa muscular e tolerâncias muito menores: cerca de 6 horas em isquemia quente e até 12 horas resfriadas. Dezesseis horas ultrapassa com folga o limite seguro.",
+   "C": "Inverte o risco mais temido. Reperfundir uma massa muscular isquêmica há 10 horas é justamente o que provoca mioglobinúria, hipercalemia, acidose e insuficiência renal — a síndrome de reperfusão. É por isso que, no braço, salvar a vida pode significar não reimplantar.",
+   "D": "As alterações irreversíveis da musculatura começam por volta das 6 horas em isquemia quente, não das 4. O número da alternativa antecipa o limiar descrito."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0131": {
+  "conceito": "A zetaplastia troca comprimento por largura: a cicatriz retrátil vira o ramo central do Z e dois retalhos triangulares são transpostos, ganhando comprimento no eixo da retração à custa do eixo transversal. O ângulo dos triângulos é o que decide quanto se ganha.",
+  "correta": "A faixa recomendada é de 45 a 60 graus. Sessenta graus rendem cerca de 75% de ganho no comprimento e 45 graus cerca de 50% — o equilíbrio entre ganhar comprimento e conseguir transpor os retalhos sem tensão e com vascularização confiável.",
+  "incorretas": {
+   "A": "De 30 a 50 graus a faixa começa baixa demais: abaixo de 45 o ganho cai depressa e as pontas dos retalhos ficam finas.",
+   "C": "Inverte a lógica. Ângulos pequenos produzem retalhos estreitos, que são fáceis de transpor — o problema deles é outro: ganho de comprimento pequeno e ponta com vascularização precária.",
+   "D": "Também inverte. Ângulos maiores dão retalhos mais largos e, portanto, mais bem irrigados; o que eles dificultam é a transposição, que exige pele lateral disponível e fecha sob tensão."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0132": {
+  "conceito": "A artrodese triescafo, ou escafotrapézio-trapezoide, funciona travando o escafoide numa posição corrigida para que ele volte a sustentar a coluna radial. Isso só faz sentido se a articulação que passará a receber a carga — a radioescafoide — ainda tiver cartilagem.",
+  "correta": "Artrose radioescafoide progredindo com colapso escafossemilunar é contraindicação. Nesse cenário a superfície entre o rádio e o escafoide já está gasta, e fixar o escafoide em posição corrigida apenas mantém a carga sobre uma articulação doente: a dor não cede. O padrão de colapso avançado por dissociação escafossemilunar pede outra estratégia — ressecção da fileira proximal do carpo ou escafoidectomia com artrodese das quatro esquinas, ambas justamente por retirarem a articulação radioescafoide da equação.",
+  "incorretas": {
+   "A": "Pseudoartrose do escafoide não é contraindicação por si só; ela é um dos cenários em que a triescafo já foi empregada, isolada ou associada a outros procedimentos.",
+   "B": "A subluxação rotatória do escafoide é indicação clássica da triescafo: a artrodese impede o escafoide de fletir e corrige o desalinhamento — é para isso que a técnica foi descrita.",
+   "D": "Artrose escafotrapézio-trapezoide é a outra indicação clássica, porque a artrodese elimina justamente a articulação doente."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0133": {
+  "conceito": "A artrodese do punho troca movimento por estabilidade e ausência de dor. Como o resultado é definitivo, a posição em que se fixa é a decisão mais importante da cirurgia.",
+  "correta": "A posição recomendada é de 10 a 20 graus de extensão, com o punho alinhado ao eixo do terceiro metacarpo. A extensão leve reproduz a posição funcional de preensão: com o punho estendido, os flexores trabalham em comprimento favorável e a força de garra é maior. E o alinhamento com o terceiro metacarpo, que é o eixo central da mão, evita desvio radial ou ulnar residual. Vale a ressalva: na artrodese bilateral, um dos punhos costuma ser fixado mais próximo do neutro ou em leve flexão, para permitir a higiene íntima e alcançar o próprio corpo.",
+  "incorretas": {
+   "B": "Erra a extensão e o eixo. Punho em posição próxima da neutra perde força de preensão, e o alinhamento ao segundo metacarpo deixa a mão em desvio radial.",
+   "C": "A extensão está certa, o eixo não: alinhar ao segundo metacarpo desvia a mão para radial.",
+   "D": "O eixo está certo, a extensão não: entre 0 e 10 graus o punho fica plano demais e a força de garra cai."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "mao-0134": {
+  "conceito": "Na classe 1 de Palmer, as lesões traumáticas do complexo triangular são nomeadas pela borda que se soltou, e a conduta segue a vascularização: centro avascular se desbrida, bordas vascularizadas se reinserem ao osso de onde saíram.",
+  "correta": "A 1C é a avulsão distal — os ligamentos ulnossemilunar e ulnopiramidal se soltam das suas inserções no carpo. O quadro é de instabilidade ulnocarpal, com dor no lado ulnar do punho e sensação de falseio na pronossupinação sob carga, e o tratamento é o reparo dessa borda distal.",
+  "incorretas": {
+   "A": "A 1B é a avulsão ulnar, na fóvea e no estiloide ulnar, com ou sem fratura do estiloide. É a que mais se associa a instabilidade da radioulnar distal.",
+   "C": "A classe 2 é degenerativa, não traumática — é o espectro do impacto ulnocarpal. A 2A é apenas o desgaste do disco, sem perfuração e sem lesão condral.",
+   "D": "A 2C também é degenerativa, já com perfuração do disco e condromalácia do semilunar ou do piramidal. A questão pede lesão traumática, o que exclui toda a classe 2."
+  },
+  "geradoEm": "2026-09-06",
+  "conferido": false
  }
 }
