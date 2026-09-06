@@ -17,6 +17,7 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0053` | Polegar trifalângico: comissura estreita + ausência de tenar = tipo **III** | Esse é exatamente o quadro do tipo **II de Blauth**, e Blauth é classificação de hipoplasia do polegar, não de polegar trifalângico |
 | `mao-0350` | Botoeira do polegar = Nalebuff tipo **II** | Na classificação de Nalebuff a botoeira é o tipo **I**. O tipo II é a botoeira que já vem com subluxação da carpometacarpiana |
 | `mao-0477` | A coloração **rósea** do dedo reimplantado sugere isquemia | Rósea é a cor do dedo bem perfundido. Quem descreve o quadro certo é a alternativa D, marcada como errada: trombose venosa é a complicação mais comum e dá tonalidade azulada |
+| `mao-0513` | A instabilidade **perissemilunar** é classificada como dissociativa (CID) | Na classificação de Mayo a perissemilunar é CIC, complexa: soma dissociação dentro da fileira com deslocamento entre as fileiras. O exemplo clássico de CID é a subluxação rotatória do escafoide, que a questão marca como errada |
 | `mao-0482` | "Sutura medializada das hemibandeletas laterais" é a técnica de **Matev** | Essa descrição é a de **Aiache**, e a própria `mao-0355` do acervo responde Aiache para o mesmo enunciado. Matev é o corte escalonado, que corresponde à alternativa C |
 | `mao-0338` | Phalen positivo em 20 segundos é fator de **sucesso** do tratamento conservador | Os cinco fatores de Kaplan, Glickel e Eaton prevêem **falha**, e Phalen positivo em menos de 30 segundos é um deles. A alternativa de sucesso é "idade menor que 50 anos" |
 | `mao-0238` | O número 6 do desenho é o ligamento **transverso retinacular** | A figura é uma vista dorsal do punho e o número 6 parece ser o ligamento intercarpal dorsal. "Transverso retinacular" é nome do aparelho extensor do dedo, não do punho |
@@ -39,6 +40,7 @@ souber a resposta, é só me dizer — o comentário sai na hora.
 | `mao-0227` | Teste de flexão ativa de **Smith** no Dupuytren | Não conheço um teste com esse nome. O de Elson eu conheço, e é de banda central |
 | `mao-0295` | Retalho de **Jacobsen** no Dupuytren do quinto dedo | Não conheço um retalho com esse nome |
 | `mao-0427` | Wassel IV corresponde ao tipo **I de Ezaki** | Não conheço uma classificação de Ezaki para duplicação do polegar |
+| `mao-0504` | A redução da luxação dorsal metacarpofalângica se faz com força em direção **volar** da cabeça do metacarpo | A cabeça do metacarpo já está deslocada volarmente, e a descrição clássica empurra a cabeça dorsalmente enquanto a falange é levada sobre ela. O que é certo, e o comentário não pôde ser escrito sem isso, é que tracionar piora — mas não consigo justificar a direção que o gabarito escolhe |
 | `mao-0491` | O tipo **T/1** representa hemimelia terminal, longitudinal paraxial completa | Conheço os eixos da classificação de Frantz e O'Rahilly (terminal ou intercalar, transversa ou longitudinal, completa ou parcial), mas não a notação "T/1" que o enunciado usa |
 
 ## Comentado, mas com ressalva escrita no próprio texto
