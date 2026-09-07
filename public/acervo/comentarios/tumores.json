@@ -1674,5 +1674,140 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0171": {
+  "conceito": "O cordoma deriva de restos da NOTOCORDA e ocupa a LINHA MÉDIA do neuroeixo. A distribuição segue os dois extremos da notocorda: cerca de 50% na região SACROCOCCÍGEA, 30 a 35% na esfeno-occipital (clivus) e o restante na coluna móvel, com preferência pela cervical. É tumor MALIGNO de baixo grau, de crescimento lento, com predomínio MASCULINO (cerca de 2 para 1) e pico entre a quinta e a sétima décadas. A lentidão explica a apresentação: DOR sacrococcígea ou lombar baixa inespecífica por meses ou anos, atribuída a lombalgia mecânica — as parestesias e a disfunção esfincteriana são TARDIAS, quando o tumor já comprime raízes. E a massa cresce sobretudo para ANTERIOR, para o espaço pré-sacral, o que a torna invisível à inspeção e palpável apenas ao TOQUE RETAL, exame obrigatório e frequentemente esquecido. Histologia com células FISALÍFERAS em matriz mixoide, positivas para braquiúria, citoqueratina e S100. Tratamento: ressecção EM BLOCO com margem ampla — o prognóstico depende quase inteiramente disso —, com radioterapia por partículas (prótons, íons de carbono) quando a margem é comprometida; a quimioterapia convencional não funciona.",
+  "correta": "A maior parte se localiza no sacro e no cóccix.",
+  "incorretas": {
+   "A": "É MALIGNO, e de BAIXO grau — a alternativa erra as duas coisas ao chamá-lo de benigno de alto grau.",
+   "B": "O predomínio é masculino, cerca de 2 para 1.",
+   "D": "As parestesias são tardias; o sintoma precoce é a dor inespecífica.",
+   "E": "A massa cresce predominantemente para ANTERIOR, no espaço pré-sacral — daí a importância do toque retal."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0172": {
+  "conceito": "A síndrome de Morquio (mucopolissacaridose tipo IV) tem DOIS subtipos, separados pela enzima deficiente e pelo mucopolissacarídeo acumulado. TIPO A (IV-A): deficiência de N-ACETILGALACTOSAMINA-6-SULFATASE (GALNS), com acúmulo de queratan sulfato e condroitin-6-sulfato; é a forma clássica e mais grave. TIPO B (IV-B): deficiência de BETA-GALACTOSIDASE, com acúmulo apenas de queratan sulfato; é a forma mais branda, com estatura menos comprometida. As duas são autossômicas recessivas e compartilham o fenótipo ortopédico, que é o que interessa aqui: nanismo de tronco curto, PLATISPONDILIA (corpos vertebrais achatados com projeção anterior central em bico), HIPOPLASIA DO ODONTOIDE com INSTABILIDADE ATLANTOAXIAL — a complicação mais temida, causa de mielopatia e de morte súbita, que obriga a radiografias dinâmicas e frequentemente a artrodese occipitocervical profilática —, genu valgo grave, displasia do quadril, tórax em quilha e frouxidão ligamentar difusa. Ponto que separa Morquio das demais mucopolissacaridoses: a INTELIGÊNCIA É PRESERVADA e não há opacificação de córnea grosseira como em Hurler.",
+  "correta": "Beta-galactosidase.",
+  "incorretas": {
+   "A": "A N-acetilgalactosamina-6-sulfatase é a enzima deficiente no Morquio tipo A.",
+   "B": "A alfa-glucosaminida acetiltransferase é deficiente na síndrome de Sanfilippo tipo C (MPS III-C).",
+   "C": "A heparam N-sulfatase é deficiente no Sanfilippo tipo A.",
+   "E": "A N-acetilglucosamina-6-sulfatase é deficiente no Sanfilippo tipo D."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0173": {
+  "conceito": "O PET-CT com FDG mede CONSUMO DE GLICOSE, e é isso que define o que ele pode e o que não pode fazer. ELE PODE: sugerir se um tecido é benigno ou maligno pelo grau de captação (o SUV), sobretudo dentro de uma lesão heterogênea; rastrear metástases locais e a distância em corpo inteiro numa única aquisição; monitorar a RESPOSTA ao tratamento, porque a queda do SUV após a quimioterapia neoadjuvante se correlaciona com a necrose tumoral e tem valor prognóstico; detectar RECIDIVA precocemente, distinguindo tumor viável de fibrose cicatricial pós-operatória — situação em que a ressonância costuma ser ambígua; e guiar a BIÓPSIA para a área de maior atividade metabólica, evitando amostrar necrose. ELE NÃO PODE: dizer QUAL É O TUMOR. Definir o TIPO HISTOLÓGICO é atribuição exclusiva da biópsia, com histologia, imuno-histoquímica e, quando necessário, biologia molecular. Vale acrescentar a limitação que decorre disso: processos INFLAMATÓRIOS e INFECCIOSOS também consomem glicose e captam FDG, de modo que uma lesão hipercaptante pode ser osteomielite, e uma lesão de baixo grau (condrossarcoma grau I, lipoma atípico) pode captar pouco e enganar no sentido oposto.",
+  "correta": "A informação que NÃO deve ser dada é a de que o PET-CT define o tipo histológico do tumor.",
+  "incorretas": {
+   "A": "Diferenciar tecido benigno de maligno pelo grau de captação é uma das funções do exame — com as ressalvas conhecidas quanto a infecção e a tumores de baixo grau.",
+   "B": "Pesquisar metástases locais e a distância em corpo inteiro é uma das principais indicações.",
+   "D": "Monitorar resposta ao tratamento pela queda do SUV é uso estabelecido, com valor prognóstico.",
+   "E": "Detectar recidiva local precoce, separando tumor viável de fibrose, é justamente onde o PET-CT supera a ressonância."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0174": {
+  "conceito": "No estadiamento AJCC dos sarcomas ÓSSEOS, o pior cenário é a METÁSTASE NÃO PULMONAR. A escala se organiza assim: estágios I e II reúnem doença localizada, separados por grau (I baixo, II alto) e tamanho (T1 até 8 cm, T2 acima de 8 cm); ESTÁGIO III é o T3 de alto grau, isto é, tumores DESCONTÍNUOS no mesmo osso — as metástases SALTITANTES; ESTÁGIO IVA é a metástase PULMONAR (M1a); e ESTÁGIO IVB é a metástase para OUTROS SÍTIOS ou para LINFONODO (M1b/N1). A razão de o pulmão ter categoria própria e melhor que a dos demais sítios é prática: metástase pulmonar limitada e RESSECÁVEL ainda comporta tratamento com intenção curativa — a metastasectomia pulmonar somada à quimioterapia produz sobrevida em cinco anos que chega a 20 a 40% em séries selecionadas. Já a metástase óssea, hepática ou linfonodal significa doença amplamente disseminada, com prognóstico muito pior e tratamento essencialmente paliativo. Note ainda que a metástase LINFONODAL é rara em sarcomas — quando presente, ela sinaliza os poucos subtipos que a produzem (sarcoma epitelioide, sinovial, células claras, rabdomiossarcoma, angiossarcoma) e é fator de mau prognóstico por si só.",
+  "correta": "Metástases não pulmonares.",
+  "incorretas": {
+   "A": "As metástases saltitantes compõem o estágio III, que é grave, mas ainda melhor que o IV.",
+   "B": "A metástase pulmonar é o estágio IVA — pior que o III, porém melhor que a metástase em outros sítios, porque pode ser ressecável.",
+   "D": "Sarcoma de alto grau invadindo mais de um compartimento é uma descrição do sistema de Enneking (IIB), e no AJCC corresponderia apenas a doença localizada."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0175": {
+  "conceito": "O osteossarcoma tem distribuição etária BIMODAL: um pico grande na SEGUNDA década, ligado ao estirão de crescimento, e um segundo pico depois dos 60 anos, quase sempre SECUNDÁRIO a doença de Paget ou a radiação prévia. Entre esses dois picos — na TERCEIRA E QUARTA DÉCADAS — o subtipo que predomina é o PAROSTEAL. Ele tem perfil próprio: é de SUPERFÍCIE, de BAIXO grau, surge como massa densa e lobulada aderida à face POSTERIOR da metáfise DISTAL DO FÊMUR (região poplítea), com discreto predomínio feminino, e tem sobrevida acima de 90% com ressecção ampla isolada, sem quimioterapia. Os cuidados que importam: a DESDIFERENCIAÇÃO para alto grau ocorre em 15 a 25% dos casos e muda inteiramente o tratamento, de modo que a peça inteira precisa ser estudada; e o diferencial com MIOSITE OSSIFICANTE se faz pelo padrão de maturação, já que a miosite ossifica de fora para dentro (periferia madura) e o parosteal é mais denso no centro e junto ao osso.",
+  "correta": "Parosteal.",
+  "incorretas": {
+   "A": "O convencional intramedular tem seu pico na SEGUNDA década, no estirão de crescimento.",
+   "B": "O secundário a Paget aparece no segundo pico, depois dos 60 anos.",
+   "C": "O periosteal ocorre em faixa semelhante à do parosteal, porém é bem mais raro — o parosteal responde por cerca de 75% dos osteossarcomas de superfície."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0176": {
+  "conceito": "Na MÃO, o encondroma benigno é dezenas de vezes mais comum que qualquer tumor maligno — mas entre os MALIGNOS PRIMÁRIOS, o CONDROSSARCOMA lidera, e costuma surgir sobre encondroma prévio, sobretudo em pacientes com doença de Ollier. O sinal de alerta é o encondroma da mão que DÓI sem fratura, que cresce ou que destrói a cortical. Sobre as demais afirmações, vale acertar os números que a questão embaralha. O condrossarcoma NÃO é o tumor ósseo maligno primário mais comum no geral — esse posto é do OSTEOSSARCOMA (excluindo as neoplasias hematológicas); ele é o mais comum apenas no adulto acima de 40 anos. E as taxas de malignização são o inverso do que a questão sugere: o OSTEOCONDROMA SOLITÁRIO maligniza em MENOS DE 1%, enquanto a OSTEOCONDROMATOSE MÚLTIPLA HEREDITÁRIA (exostose múltipla, genes EXT1/EXT2) tem risco de 1 a 5%, chegando a 10% em algumas séries. Os sinais de transformação são os mesmos em ambos: capa cartilaginosa acima de 1,5 a 2 cm no adulto, dor nova e crescimento após o fechamento da fise.",
+  "correta": "É o tumor ósseo maligno primário mais comum da mão.",
+  "incorretas": {
+   "A": "O tumor ósseo maligno primário mais comum (excluindo as hematológicas) é o osteossarcoma; o condrossarcoma é o segundo, e o primeiro apenas no adulto acima de 40 anos.",
+   "B": "A osteocondromatose múltipla tem risco de 1 a 5% (até 10% em algumas séries), e não 1%.",
+   "D": "O osteocondroma solitário maligniza em MENOS de 1%, e não em 5%."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0177": {
+  "conceito": "O SPLIT FAT SIGN é um achado de ressonância nas lesões que crescem DENTRO do compartimento intermuscular, ao longo do trajeto de um feixe neurovascular: como esse trajeto é envolvido por gordura, uma massa que cresce ali mantém um HALO OU LÍNGUA DE GORDURA nos polos proximal e distal, visível no corte longitudinal — a gordura parece \"partida\" pela lesão. É um sinal de origem NEUROGÊNICA e aponta para tumor da bainha do nervo periférico, sendo classicamente descrito no NEURILEMOMA (SCHWANNOMA). Ele vem acompanhado de outros sinais do mesmo grupo, e vale guardá-los juntos: SINAL DA CAUDA (o nervo entrando e saindo dos polos da lesão), SINAL DO ALVO (centro fibroso hipointenso com halo mixoide hiperintenso em T2), SINAL FASCICULAR (múltiplos anéis internos, mais típico do schwannoma) e ATROFIA do músculo inervado. A distinção prática entre os dois principais tumores da bainha é cirúrgica e precisa ser feita antes de operar: o SCHWANNOMA é encapsulado e EXCÊNTRICO ao nervo, podendo ser enucleado com preservação dos fascículos; o NEUROFIBROMA é INTRAFASCICULAR, e retirá-lo custa a função do nervo.",
+  "correta": "Neurilemoma (schwannoma).",
+  "incorretas": {
+   "A": "O lipoma é ele próprio gordura — não há gordura peritumoral a ser \"partida\", e o sinal não faz sentido nele.",
+   "B": "O lipossarcoma contém gordura de forma heterogênea, com septos espessos e componente sólido, mas não produz esse sinal.",
+   "C": "O neurofibroma é também neurogênico e pode mostrar sinais da mesma família (sobretudo o sinal do alvo), mas o split fat sign é descrito de forma característica no neurilemoma."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0178": {
+  "conceito": "O adamantinoma é um tumor MALIGNO de BAIXO GRAU, raro (menos de 1% dos tumores ósseos), com um endereço quase exclusivo: a CORTICAL ANTERIOR DA DIÁFISE DA TÍBIA, com a fíbula ipsilateral acometida em parte dos casos. Ocorre entre a SEGUNDA E A TERCEIRA DÉCADAS de vida, com discreto predomínio masculino. A imagem é de lesão lítica multiloculada, em bolhas de sabão, intracortical, com esclerose reativa e frequente arqueamento anterior do osso. A histologia mostra NINHOS EPITELIAIS em meio a estroma fibroso, com positividade para CITOQUERATINA — e é isso que o separa da DISPLASIA OSTEOFIBROSA (de Campanacci), que ocupa exatamente o mesmo lugar, produz a mesma imagem, é benigna, ocorre na primeira década e mostra trabéculas com rimming osteoblástico sem ninhos epiteliais. Como existe uma forma intermediária (displasia osteofibrosa tipo adamantinoma), a biópsia precisa ser AMPLA. E a conduta diverge radicalmente: observação ou curetagem na displasia osteofibrosa, RESSECÇÃO AMPLA no adamantinoma — que recidiva quando tratado como lesão benigna e pode dar metástase pulmonar tardia, às vezes uma década depois.",
+  "correta": "Segunda e terceira décadas, na diáfise da tíbia.",
+  "incorretas": {
+   "B": "A faixa etária está deslocada: o adamantinoma é de adultos jovens.",
+   "C": "O fêmur não é sede: a exclusividade tibial é um dos traços diagnósticos.",
+   "D": "Erra idade e osso."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0179": {
+  "conceito": "O diagnóstico diferencial do tumor de células gigantes se organiza em torno de duas perguntas: quem partilha a IMAGEM (lesão lítica epifisária excêntrica em adulto com fise fechada) e quem partilha a HISTOLOGIA (células gigantes multinucleadas). Partilham uma coisa ou outra: o TUMOR MARROM DO HIPERPARATIREOIDISMO — o mais perigoso de todos, porque a histologia é INDISTINGUÍVEL e só o PTH e o cálcio separam, e porque tratá-lo como tumor deixa a doença de base intocada; o CISTO ÓSSEO ANEURISMÁTICO, que tem células gigantes e pode inclusive coexistir como lesão secundária dentro de um tumor de células gigantes; o CONDROBLASTOMA, epifisário e com células gigantes, separado sobretudo pela idade e pela fise aberta; e ainda o condrossarcoma de células claras e o osteossarcoma telangiectásico. A HISTIOCITOSE DE CÉLULAS DE LANGERHANS é a que menos compete: ela é DIAFISÁRIA ou do crânio, da coluna (vértebra plana) e da pelve, ocorre em CRIANÇAS, tem aspecto permeativo e agressivo que remete ao sarcoma de Ewing e à osteomielite, e sua histologia é de histiócitos de núcleo em grão de café com EOSINÓFILOS abundantes, sem o quadro gigantocelular dominante.",
+  "correta": "A menos provável é a histiocitose de células de Langerhans.",
+  "incorretas": {
+   "A": "O tumor marrom é o diferencial mais importante de todos — histologia idêntica, separada apenas pelo laboratório.",
+   "B": "O cisto ósseo aneurismático compete por imagem e por histologia, e pode inclusive coexistir como componente secundário.",
+   "C": "O condroblastoma é epifisário e tem células gigantes; a idade e o estado da fise são o que os separam."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0180": {
+  "conceito": "A doença de Ollier é a ENCONDROMATOSE MÚLTIPLA: encondromas em vários ossos, com predileção pelos ossos tubulares das mãos e dos pés e pelas metáfises dos ossos longos, distribuídos de forma ASSIMÉTRICA e predominantemente UNILATERAL. Não é hereditária — decorre de mutação PÓS-ZIGÓTICA em mosaico dos genes IDH1 ou IDH2, o que explica justamente a assimetria. O impacto clínico tem duas faces. A ORTOPÉDICA: deformidade angular progressiva, encurtamento e discrepância de comprimento dos membros, e fraturas patológicas. E a ONCOLÓGICA: risco de transformação em CONDROSSARCOMA na ordem de 25 A 30% ao longo da vida — muito acima do encondroma solitário, cuja malignização é rara. Isso obriga a seguimento vitalício, com investigação por ressonância diante de dor sem fratura, crescimento de lesão previamente estável, festonamento endosteal profundo ou massa de partes moles. Quando a encondromatose vem acompanhada de HEMANGIOMAS de partes moles, o quadro passa a se chamar SÍNDROME DE MAFFUCCI, com risco de malignização ainda maior (30 a 50%, e algumas séries falam em quase 100% ao longo da vida) e também de neoplasias viscerais.",
+  "correta": "Encondroma, com taxa de malignização em torno de 25%.",
+  "incorretas": {
+   "A": "O osteossarcoma não é a lesão da doença de Ollier, ainda que o percentual citado se aproxime.",
+   "B": "O sarcoma de Ewing não tem relação com encondromatose.",
+   "C": "Osteocondromas múltiplos configuram a exostose múltipla hereditária (genes EXT1/EXT2), doença distinta, com risco de malignização bem menor — de 1 a 5%."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0181": {
+  "conceito": "Cada dado do caso aponta para a DOENÇA DE PAGET. PERFIL: homem, BRANCO, 50 anos — a doença acomete descendentes caucasianos do norte europeu, com discreto predomínio masculino, e a prevalência cresce a partir dessa faixa. QUADRO: deformidade PROGRESSIVA do membro inferior, que corresponde ao arqueamento típico da tíbia em sabre, resultado do osso pagético expandido, hipervascular e mecanicamente frágil. IMAGEM: áreas de esclerose ALTERNADAS com áreas de rarefação na mesma tíbia — o que traduz a coexistência das fases da doença, com reabsorção osteoclástica exagerada e formação osteoblástica igualmente exagerada e desorganizada. E o achado que fecha: PADRÃO EM MOSAICO na biópsia, formado pelas linhas de cimento irregulares dos ciclos sucessivos e descoordenados de remodelamento. Confirma-se com FOSFATASE ALCALINA muito elevada e cálcio e fósforo normais, e trata-se com BISFOSFONATOS. Duas vigilâncias: a fratura por insuficiência transversal na convexidade (fratura em giz), e a transformação em osteossarcoma pagético — menos de 1% dos casos, mas o subtipo de pior prognóstico de todos, anunciada por mudança no padrão da dor ou nova elevação da fosfatase.",
+  "correta": "Doença de Paget.",
+  "incorretas": {
+   "A": "O fibroma ossificante (displasia osteofibrosa) é lesão da primeira década, intracortical e localizada na tíbia — não produz padrão em mosaico nem deformidade progressiva no adulto.",
+   "B": "A histiocitose X é doença de crianças e adolescentes, com histologia de histiócitos e eosinófilos.",
+   "D": "A metástase óssea não produz padrão em mosaico, e a deformidade progressiva com alternância de esclerose e rarefação em um único osso não é seu comportamento."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0182": {
+  "conceito": "Os critérios clássicos de HARRINGTON para fixação profilática de metástase em osso longo são: DESTRUIÇÃO DE MAIS DE 50% DA CORTICAL circunferencial, lesão maior que 2,5 cm no fêmur proximal, fratura por avulsão do trocanter menor e DOR PERSISTENTE após radioterapia. O corte histórico, portanto, é de 50%, e este enunciado usa 60% — dentro da faixa que a literatura descreve como zona de risco alto (várias fontes falam em 50 a 75% de destruição cortical), e coerente com o ESCORE DE MIRELS, em que lesão acima de dois terços do diâmetro recebe a pontuação máxima. Vale registrar a ressalva: o número exato varia entre fontes, e o que se sustenta com firmeza é a ordem de grandeza — mais de metade do diâmetro é risco alto. Na prática, hoje se prefere o escore de MIRELS, que combina quatro variáveis (sítio, dor, tipo de lesão e tamanho) e fornece um número: até 7 pontos, radioterapia e observação; 8, zona cinzenta; 9 ou mais, fixação profilática. E a lógica clínica que sustenta tudo isso: fixar antes é operação menor, com menos sangramento, menos dor e recuperação mais rápida do que tratar uma fratura já consumada, que ainda atrasa a radioterapia e o tratamento sistêmico.",
+  "correta": "A partir de cerca de 60% do diâmetro do osso — ou seja, mais da metade da cortical comprometida.",
+  "incorretas": {
+   "A": "15% é um comprometimento pequeno, sem risco significativo de fratura.",
+   "B": "30% corresponde ao limiar inferior da pontuação intermediária de Mirels, ainda longe do risco que indica fixação isoladamente.",
+   "D": "80% já é destruição avançada: esperar chegar a esse ponto significa, na prática, aguardar a fratura acontecer."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
  }
 }
