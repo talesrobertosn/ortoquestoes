@@ -768,5 +768,258 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0078": {
+  "conceito": "Cada método de imagem tem uma pergunta que só ele responde bem, e a tomografia responde a duas. OSTEOMA OSTEOIDE: o diagnóstico depende de enxergar o NICHO — uma zona radiolucente de menos de 1,5 cm, com centro por vezes calcificado, cercada de esclerose reativa densa. Essa esclerose é justamente o que esconde o nicho na radiografia e na ressonância (que, aliás, costuma mostrar edema ósseo e de partes moles tão exuberante que já levou a diagnóstico equivocado de tumor maligno ou de osteomielite). A tomografia com cortes finos mostra o nicho com nitidez, e é também por ela que se guia a ablação por radiofrequência. METÁSTASE PULMONAR: o pulmão é o primeiro sítio de metástase dos sarcomas ósseos, e a tomografia de tórax é o exame de estadiamento e de seguimento — detecta nódulos milimétricos que a radiografia simples não vê, e é ela que define se o paciente é estágio IVA no AJCC. Para contraste: metástase ÓSSEA se rastreia por CINTILOGRAFIA (visão de corpo inteiro), e cisto ósseo se diagnostica por RADIOGRAFIA simples, com o sinal do fragmento caído.",
+  "correta": "Osteoma osteoide e metástase pulmonar.",
+  "incorretas": {
+   "A": "O cisto ósseo é diagnóstico radiográfico, e a metástase óssea é rastreada por cintilografia, não por tomografia.",
+   "B": "Acerta a metástase pulmonar, mas o cisto ósseo não precisa de tomografia.",
+   "C": "Acerta o osteoma osteoide, mas o rastreio de metástase óssea é cintilográfico — a tomografia entra depois, para caracterizar uma lesão já localizada."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0079": {
+  "conceito": "A síndrome de Maffucci é a associação de ENCONDROMAS MÚLTIPLOS com HEMANGIOMAS de partes moles — nódulos azulados e compressíveis na pele e no subcutâneo, que podem mostrar FLEBÓLITOS na radiografia, calcificações arredondadas que são a assinatura da lesão vascular. Como a doença de Ollier, decorre de mutação pós-zigótica em mosaico dos genes IDH1/IDH2: não é hereditária e o acometimento é assimétrico. O que a distingue é a gravidade: a degeneração sarcomatosa é ALTA (30 a 50%, e algumas séries falam em risco que se aproxima de 100% ao longo de uma vida inteira, contra 25 a 30% em Ollier), e o risco não se limita ao condrossarcoma — inclui angiossarcoma, glioma, tumores ovarianos e neoplasias pancreáticas e hepatobiliares. Não confundir com a SÍNDROME DE MAZABRAUD, que associa displasia fibrosa a MIXOMAS intramusculares: são pares diferentes de doenças, e as bancas gostam de trocá-los.",
+  "correta": "Múltiplos encondromas e hemangiomas.",
+  "incorretas": {
+   "A": "Encondromas com MIXOMAS não descreve nenhuma síndrome; os mixomas pertencem à síndrome de Mazabraud, junto com a displasia fibrosa.",
+   "B": "Osteocondromas múltiplos configuram a exostose múltipla hereditária (genes EXT1/EXT2), outra doença.",
+   "D": "Erra os dois componentes."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0080": {
+  "conceito": "O infarto ósseo é a necrose de um segmento de osso medular, e sua imagem tem uma assinatura que quase nunca engana: lesão de localização METAFISÁRIA ou metadiafisária, com uma BORDA SERPIGINOSA CALCIFICADA na PERIFERIA — o contorno em mapa geográfico ou em fumaça —, e centro que permanece com densidade de gordura ou de osso normal. Essa borda é a zona de interface entre o osso morto e o osso vivo, onde ocorre a reação reparadora. Sedes preferenciais: fêmur distal, tíbia proximal e úmero proximal. As causas são as mesmas da osteonecrose epifisária: corticoide, álcool, doença falciforme, doença descompressiva (o mergulhador), lúpus, pancreatite, gaucher. O que precisa ser separado é o CONDROSSARCOMA de baixo grau, que ocupa a mesma região: nele as calcificações são CENTRAIS, em anéis e arcos ou em pipoca, há festonamento endosteal profundo e a lesão cresce e dói — enquanto o infarto tem calcificação PERIFÉRICA, é estável e assintomático. A ressonância confirma: o infarto mostra a linha dupla característica em T2 e centro com sinal de gordura preservado.",
+  "correta": "Metafisária, com periferia calcificada.",
+  "incorretas": {
+   "A": "Centro calcificado com periferia limpa é o padrão dos tumores CONDROIDES (encondroma, condrossarcoma) — exatamente a imagem oposta.",
+   "B": "Acerta a localização e erra o padrão de calcificação, que é o dado diferencial mais importante.",
+   "C": "Acerta o padrão periférico, mas a sede característica é metafisária ou metadiafisária."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0081": {
+  "conceito": "No sistema de ENNEKING para tumores ósseos MALIGNOS, cada estágio combina duas informações. O ALGARISMO ROMANO dá o GRAU: I é baixo grau, II é ALTO grau, e III significa presença de METÁSTASE (regional ou a distância), independentemente do grau e do compartimento. A LETRA dá o COMPARTIMENTO: A é INTRAcompartimental — o tumor está contido pelas barreiras anatômicas naturais (cortical, periósteo, cartilagem articular, fáscia, cápsula) — e B é EXTRAcompartimental, quando essas barreiras foram rompidas. Logo, os estágios que comportam extensão EXTRACOMPARTIMENTAL são: IB (baixo grau já fora do compartimento), IIB (alto grau fora do compartimento — a apresentação mais comum do osteossarcoma) e III (com metástase, que pode ser extracompartimental por definição, já que o estágio III não distingue letra). Repare no que isso implica na prática: a letra é uma decisão anatômica que se toma na ressonância antes de operar, e ela determina o tamanho da ressecção — a margem ampla exige atravessar tecido normal para além de onde o tumor chegou, e um tumor B obriga a incluir tecidos de outro compartimento.",
+  "correta": "IB, IIB e III.",
+  "incorretas": {
+   "A": "IA e IIA são justamente os estágios INTRAcompartimentais — a letra A significa contido.",
+   "B": "IA é intracompartimental; só IIB, das duas citadas, comporta extensão extracompartimental.",
+   "C": "IA e IIA são intracompartimentais; apenas o III da lista se qualifica."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0082": {
+  "conceito": "A histiocitose de células de Langerhans forma um espectro de três apresentações, que se separam pelo número de focos e pelo envolvimento sistêmico. GRANULOMA EOSINOFÍLICO: forma localizada, com lesão única ou poucas, restrita ao osso, em criança e adolescente — a mais comum (cerca de 70%) e a mais benigna; a vértebra plana de CALVÉ é sua apresentação na coluna. DOENÇA DE HAND-SCHÜLLER-CHRISTIAN: forma crônica multifocal, com a tríade de lesões ósseas múltiplas, EXOFTALMIA e DIABETES INSIPIDUS, tipicamente entre 2 e 5 anos. DOENÇA DE LETTERER-SIWE: forma AGUDA DISSEMINADA do LACTENTE (abaixo de 2 anos), com febre, hepatoesplenomegalia, linfadenopatia, pancitopenia por infiltração medular e lesões cutâneas eczematosas — é a mais grave e a única frequentemente FATAL, com mortalidade alta apesar da quimioterapia. Vale registrar que BIRBECK não é doença: os GRÂNULOS DE BIRBECK são as estruturas citoplasmáticas em raquete de tênis vistas à microscopia eletrônica, marcadores da célula de Langerhans — hoje substituídos na prática pela imuno-histoquímica com CD1a, S100 e langerina (CD207).",
+  "correta": "Doença de Letterer-Siwe.",
+  "incorretas": {
+   "A": "Calvé dá nome à VÉRTEBRA PLANA, a apresentação vertebral do granuloma eosinofílico — não a uma forma sistêmica.",
+   "B": "Birbeck nomeia os grânulos citoplasmáticos da célula de Langerhans, não uma doença.",
+   "D": "Hand-Schüller-Christian é a forma crônica multifocal, mais grave que o granuloma eosinofílico, porém bem menos letal que a de Letterer-Siwe."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0083": {
+  "conceito": "O mieloma múltiplo é a neoplasia maligna PRIMÁRIA mais comum do osso, e seu comportamento se explica pela distribuição da MEDULA ÓSSEA VERMELHA no adulto: coluna, costelas, crânio, pelve e esqueleto proximal. A COLUNA é o sítio mais acometido, e a DOR ÓSSEA é a queixa mais frequente — presente em cerca de 70% dos pacientes ao diagnóstico, tipicamente lombar ou torácica, mecânica, que piora ao movimento (o que a distingue da dor noturna e de repouso das metástases, embora haja sobreposição). O restante do quadro compõe a sigla CRAB: hiperCalcemia, insuficiência Renal, Anemia (a fraqueza que a alternativa distratora cita, real mas menos frequente como queixa inicial) e lesões ósseas (Bone). Radiologicamente, lesões líticas em SACA-BOCADO, sem esclerose reativa e sem reação periosteal; e um detalhe que decide condutas: a CINTILOGRAFIA ÓSSEA é tipicamente FRIA no mieloma, porque não há atividade osteoblástica — motivo pelo qual o rastreio se faz por inventário ósseo radiográfico, tomografia de baixa dose de corpo inteiro ou ressonância, e não por cintilografia. O diagnóstico se completa com eletroforese de proteínas, imunofixação, cadeias leves livres e mielograma.",
+  "correta": "Dor óssea, com a coluna como sítio mais frequente.",
+  "incorretas": {
+   "A": "A fraqueza existe (pela anemia), mas não é a queixa mais frequente, e o fêmur não é o sítio principal.",
+   "B": "A coluna está certa, mas a queixa dominante é a dor.",
+   "C": "A dor está certa, mas o sítio mais acometido é a coluna, e não o fêmur."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0084": {
+  "conceito": "A SÍNDROME DE McCUNE-ALBRIGHT é a tríade de DISPLASIA FIBROSA POLIOSTÓTICA, MANCHAS CAFÉ-COM-LEITE e ENDOCRINOPATIA. Cada componente tem um detalhe que cai em prova. As manchas têm bordas IRREGULARES, comparadas à costa do Maine — o que as distingue das bordas lisas, em costa da Califórnia, da neurofibromatose — e caracteristicamente respeitam a linha média. A endocrinopatia mais frequente é a PUBERDADE PRECOCE independente de gonadotrofina, sobretudo em meninas, mas o espectro inclui hipertireoidismo, acromegalia, síndrome de Cushing e raquitismo hipofosfatêmico por excesso de FGF23. A base é a mesma mutação PÓS-ZIGÓTICA EM MOSAICO do gene GNAS que causa a displasia fibrosa isolada — a diferença é o momento embrionário em que ela ocorre: quanto mais cedo, mais linhagens celulares afetadas e mais órgãos envolvidos. Separando das vizinhas: MAZABRAUD é displasia fibrosa com MIXOMAS intramusculares; JAFFE-CAMPANACCI é fibromas NÃO OSSIFICANTES múltiplos com manchas café-com-leite; LI-FRAUMENI é a síndrome hereditária do TP53, com predisposição a sarcomas e a câncer de mama precoce.",
+  "correta": "Síndrome de McCune-Albright.",
+  "incorretas": {
+   "A": "Li-Fraumeni é síndrome hereditária de predisposição a câncer, sem relação com displasia fibrosa.",
+   "B": "Mazabraud associa displasia fibrosa a mixomas intramusculares, sem endocrinopatia nem manchas.",
+   "D": "Jaffe-Campanacci envolve fibromas não ossificantes múltiplos, e não displasia fibrosa."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0085": {
+  "conceito": "O tumor de células gigantes tem comportamento notoriamente mais AGRESSIVO no RÁDIO DISTAL, com taxas de recidiva local que superam as das demais localizações e chegam a 40 a 60% após curetagem simples. Três razões se somam. ANATOMIA: o rádio distal tem epífise pequena e cortical fina, de modo que o tumor rompe a cortical e alcança partes moles precocemente, deixando pouco osso subcondral para uma curetagem segura. AUSÊNCIA DE CONTENÇÃO: não há a massa óssea que existe no fêmur distal ou na tíbia proximal para conter a expansão. E CONSEQUÊNCIA MECÂNICA: qualquer perda óssea ali compromete diretamente a articulação radiocarpal. Por isso, no rádio distal se costuma indicar mais cedo a RESSECÇÃO EM BLOCO com reconstrução — artrodese do punho, enxerto fibular vascularizado ou não, ou artroplastia —, em vez da curetagem com adjuvante que basta em outras sedes. Vale lembrar que o rádio distal é a TERCEIRA sede mais comum do tumor, depois do fêmur distal e da tíbia proximal, e que o sacro vem logo em seguida.",
+  "correta": "Extremidade distal do rádio.",
+  "incorretas": {
+   "A": "A tíbia distal é sede pouco frequente e sem esse comportamento particular.",
+   "C": "O fêmur distal é a sede MAIS COMUM do tumor, mas ali a massa óssea permite curetagem ampla com adjuvante e taxas de recidiva menores.",
+   "D": "O úmero distal é sede incomum e não carrega essa fama."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0086": {
+  "conceito": "As metástases ósseas superam em muito todos os tumores ósseos primários somados, e cinco primários respondem pela imensa maioria: MAMA, PRÓSTATA, PULMÃO, RIM e TIREOIDE. Os dois primeiros dominam, e por dois motivos que se somam — são os cânceres mais PREVALENTES em mulheres e homens, e ambos têm alta AFINIDADE pelo osso, com sobrevida longa o bastante para que a metástase óssea se manifeste. A distribuição segue a medula vermelha e o plexo venoso de Batson: coluna (o sítio mais acometido), pelve, costelas, crânio, fêmur e úmero proximais. Padrão radiográfico: próstata é BLÁSTICA; rim e tireoide são LÍTICAS e hipervasculares (com implicação cirúrgica direta — exigem embolização pré-operatória); pulmão é lítica; mama é MISTA. E a regra prática que atravessa tudo: acima de 40 anos, lesão óssea destrutiva é metástase até prova em contrário, e a investigação começa por exame físico completo (mama, tireoide, próstata, toque retal), laboratório, tomografia de tórax, abdome e pelve, cintilografia óssea e, se necessário, biópsia — nessa ordem, e antes de qualquer cirurgia.",
+  "correta": "Mama e próstata.",
+  "incorretas": {
+   "A": "A mama está certa, mas o rim, embora clássico pela hipervascularização, é bem menos frequente que a próstata.",
+   "B": "Pulmão e rim são causas importantes, mas não as duas principais.",
+   "D": "A próstata está certa; o pulmão vem depois dela e da mama em frequência de metástase óssea."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0087": {
+  "conceito": "O RABDOMIOSSARCOMA é o sarcoma de partes moles mais prevalente em crianças e adolescentes, respondendo por cerca de metade dos casos nessa faixa. Origina-se de células mesenquimais com diferenciação para músculo estriado e pode surgir em qualquer sítio, inclusive onde não há músculo esquelético. Subtipos e prognóstico: EMBRIONÁRIO, o mais comum e o melhor, em criança pequena, com predileção por cabeça, pescoço, órbita e trato geniturinário; ALVEOLAR, de adolescentes, nas EXTREMIDADES, com as translocações PAX3-FOXO1 ou PAX7-FOXO1, mais agressivo e com metástase linfonodal frequente; PLEOMÓRFICO, do adulto, raro. O traço que define o tratamento é a QUIMIOSSENSIBILIDADE — incomum entre sarcomas de partes moles —, que levou a sobrevida de menos de 25% para 70% ou mais nas formas localizadas, com esquema multimodal de quimioterapia, cirurgia e radioterapia. Para contraste: o segundo mais comum em adolescentes e adultos jovens é o SINOVIOSSARCOMA (tipicamente perto de articulações, com calcificações em 30% dos casos e translocação X;18), e no adulto o mais comum é o lipossarcoma.",
+  "correta": "Rabdomiossarcoma.",
+  "incorretas": {
+   "A": "O lipossarcoma é do adulto, com predileção por coxa e retroperitônio.",
+   "B": "O fibrossarcoma tem uma forma congênita de bom prognóstico, mas é bem menos frequente.",
+   "C": "O sinoviossarcoma é o segundo mais comum em adolescentes e adultos jovens, atrás do rabdomiossarcoma."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0088": {
+  "conceito": "O ESCORE DE MIRELS prediz o risco de fratura patológica em metástase óssea de osso longo somando QUATRO variáveis, cada uma valendo de 1 a 3 pontos — o total vai de 4 a 12. SÍTIO: membro superior 1, membro inferior 2, região PERITROCANTÉRICA 3 (a região peritrocantérica pesa mais porque concentra as maiores forças do esqueleto). DOR: leve 1, moderada 2, FUNCIONAL (dor ao apoiar, que impede o uso do membro) 3. TIPO DE LESÃO: blástica 1, mista 2, LÍTICA 3. TAMANHO em relação ao diâmetro do osso: menos de 1/3 vale 1, entre 1/3 e 2/3 vale 2, mais de 2/3 vale 3. No caso do enunciado: diáfise femoral = membro inferior = 2; dor moderada = 2; lesão lítica = 3; metade da largura, isto é, entre 1/3 e 2/3 = 2. TOTAL = 9 PONTOS. A leitura do resultado é o que importa: 7 ou menos, risco baixo (cerca de 4%) e conduta com radioterapia e observação; 8 pontos, zona cinzenta, decisão individualizada; 9 OU MAIS, risco alto (em torno de 33% ou mais) e indicação de FIXAÇÃO PROFILÁTICA — que é exatamente o caso aqui. A lógica por trás disso é clínica: fixar antes é operação menor, com menos sangramento, menos dor e recuperação mais rápida do que tratar a fratura já consumada.",
+  "correta": "9 pontos — faixa de indicação de fixação profilática.",
+  "incorretas": {
+   "A": "7 pontos exigiria pontuação menor em algum item: por exemplo, dor leve em vez de moderada.",
+   "B": "8 pontos resultaria de lesão mista em vez de lítica, ou de lesão menor que um terço do diâmetro.",
+   "D": "10 pontos exigiria dor funcional, lesão maior que dois terços, ou localização peritrocantérica."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0089": {
+  "conceito": "Três informações sobre o mieloma múltiplo numa alternativa só. QUEIXA: DOR ÓSSEA, presente em cerca de 70% dos pacientes ao diagnóstico — a fraqueza existe, pela anemia, mas é menos frequente como queixa inicial. LOCALIZAÇÃO: a COLUNA, seguida de costelas, crânio, pelve e esqueleto proximal — a distribuição segue a MEDULA ÓSSEA VERMELHA do adulto, e é por isso que o mieloma poupa o esqueleto distal. HISTOLOGIA: CÉLULAS REDONDAS — plasmócitos monoclonais com núcleo excêntrico em roda de carroça, halo perinuclear claro e citoplasma basofílico — COM PRODUÇÃO DE AMILOIDE, resultado do depósito das cadeias leves monoclonais (amiloide AL), que se cora pelo vermelho-congo com birrefringência verde-maçã. Esse depósito não é detalhe de lâmina: ele explica manifestações sistêmicas que o ortopedista encontra, como a síndrome do túnel do carpo bilateral, além de macroglossia, cardiopatia restritiva e nefropatia. Complete o quadro com o CRAB (hipercalcemia, insuficiência renal, anemia, lesões ósseas), com as lesões líticas em saca-bocado e com o fato de a CINTILOGRAFIA SER FRIA — motivo pelo qual o rastreio se faz por inventário radiográfico, tomografia de baixa dose ou ressonância.",
+  "correta": "Dor como queixa principal, coluna como localização mais comum, células redondas com produção de amiloide.",
+  "incorretas": {
+   "A": "Erra a queixa e a localização; acerta apenas a histologia.",
+   "C": "Erra a queixa e o tipo celular — plasmócito é célula redonda, não fusiforme.",
+   "D": "Acerta a queixa, mas erra localização e tipo celular."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0090": {
+  "conceito": "O caso descreve um tumor de células gigantes com METÁSTASE PULMONAR BENIGNA, e cada dado do enunciado aponta para lá. MULHER DE 30 ANOS: o tumor tem pico entre 20 e 40 anos, DEPOIS do fechamento fisário, com discreto predomínio feminino. LESÃO LÍTICA EXCÊNTRICA NA EPÍFISE DISTAL DO FÊMUR: a região do joelho concentra mais da metade dos casos, e a epífise subarticular é a topografia característica. E a METÁSTASE PULMONAR, que parece contradizer o rótulo de tumor benigno, é justamente uma das duas exceções conhecidas do tumor de células gigantes: ocorre em 1 a 4% dos pacientes, os implantes têm histologia IDÊNTICA à do primário, comportam-se de forma indolente — podendo estabilizar ou regredir espontaneamente — e a mortalidade associada é baixa. O mecanismo aceito é embolização vascular de fragmentos, e o fator de risco principal é a recidiva local. Por isso a tomografia de tórax faz parte do estadiamento e do seguimento mesmo de uma lesão classificada como benigna. Antes de qualquer conduta, ainda assim, dosa-se CÁLCIO E PTH, para excluir o tumor marrom do hiperparatireoidismo, cuja histologia é indistinguível.",
+  "correta": "Tumor de células gigantes.",
+  "incorretas": {
+   "A": "O osteossarcoma periosteal é de SUPERFÍCIE e DIAFISÁRIO, com predileção pela tíbia — não produz lesão lítica epifisária.",
+   "B": "O sarcoma de Ewing é diafisário ou metadiafisário, permeativo, com reação periosteal em casca de cebola, e acomete faixa etária mais jovem.",
+   "D": "O condrossarcoma de células claras é epifisário e do adulto, e é o principal diferencial maligno — mas é raro, prefere o fêmur PROXIMAL e o úmero proximal, e mostra matriz condroide."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0091": {
+  "conceito": "A EPÍFISE é o compartimento mais restritivo do osso: poucas lesões vivem ali, e a idade decide entre elas. Aos 15 ANOS, com a fise ainda ABERTA, a resposta é CONDROBLASTOMA — tumor benigno raro (cerca de 1% dos tumores ósseos), de adolescentes entre 10 e 20 anos, com predomínio masculino, que acomete fêmur distal, tíbia proximal e úmero proximal. Clinicamente engana: dor articular persistente, derrame e limitação de movimento, muitas vezes tratados por meses como lesão meniscal ou sinovite. Radiograficamente é lítico, bem delimitado, com fina borda esclerótica e calcificações puntiformes; a histologia mostra condroblastos poligonais em aspecto de calçamento, células gigantes esparsas e a calcificação pericelular em TELA DE GALINHEIRO. Trata-se por curetagem com enxerto, tomando cuidado com a fise e com a cartilagem articular. A regra que resolve toda essa família de questões é o par: EPÍFISE + FISE ABERTA = condroblastoma; EPÍFISE + FISE FECHADA = tumor de células gigantes. E vale lembrar que o abscesso de Brodie entra sempre no diferencial.",
+  "correta": "Condroblastoma.",
+  "incorretas": {
+   "A": "O cisto ósseo aneurismático é METAFISÁRIO e expansivo, com níveis líquido-líquido — pode ocorrer como lesão secundária sobre um condroblastoma, o que é outra situação.",
+   "C": "O condrossarcoma é doença do adulto, com pico entre 40 e 60 anos.",
+   "D": "O tumor de células gigantes é epifisário, mas só DEPOIS do fechamento da fise — aos 15 anos ela ainda está aberta."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0092": {
+  "conceito": "A pergunta não é qual primário mais metastatiza para o osso — seriam mama e próstata —, e sim qual costuma se apresentar como metástase óssea de PRIMÁRIO DESCONHECIDO. E aí a resposta muda, porque mama, próstata, pulmão e tireoide costumam ser detectados de forma relativamente simples: exame físico e mamografia, PSA e toque retal, tomografia de tórax, palpação cervical e ultrassom. O CARCINOMA DE CÉLULAS RENAIS é o que mais frequentemente se manifesta primeiro pela metástase: o tumor primário é silencioso, cresce no retroperitônio sem sintoma, a hematúria pode faltar, e a metástase pode surgir ANOS depois de uma nefrectomia — ou antes de qualquer suspeita. A lesão óssea é LÍTICA, EXPANSIVA, muitas vezes SOLITÁRIA e HIPERVASCULAR, o que traz duas consequências práticas incontornáveis: a embolização pré-operatória é mandatória, sob risco de sangramento maciço, e a ressecção com margem ampla de uma lesão única melhora a sobrevida, ao contrário do que ocorre na maioria das metástases. Daí a regra do roteiro de investigação: diante de lesão óssea destrutiva acima dos 40 anos sem primário conhecido, a tomografia de ABDOME (com os rins) é tão obrigatória quanto a de tórax.",
+  "correta": "Rim.",
+  "incorretas": {
+   "A": "O carcinoma intestinal raramente metastatiza para osso, e quando o faz já há doença visceral evidente.",
+   "B": "O carcinoma de pâncreas dá metástase óssea muito raramente e cursa com doença disseminada precoce.",
+   "C": "A próstata é uma das principais fontes de metástase óssea, mas dificilmente permanece oculta — PSA e toque retal a identificam com facilidade."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0093": {
+  "conceito": "O sistema de ENNEKING para tumores ósseos malignos usa duas informações. ALGARISMO ROMANO = GRAU: I é BAIXO grau, II é ALTO grau, III é presença de METÁSTASE (independentemente de grau e de compartimento). LETRA = COMPARTIMENTO: A é INTRAcompartimental, com o tumor contido pelas barreiras anatômicas naturais (cortical, periósteo, cartilagem articular, fáscia, cápsula articular); B é EXTRAcompartimental, quando essas barreiras foram rompidas. Logo, baixo grau com extensão extracompartimental é ESTÁGIO IB. Exemplo típico: um condrossarcoma grau I que rompeu a cortical e alcançou partes moles. A letra não é detalhe acadêmico — ela é decidida na ressonância antes de operar e determina o tamanho da ressecção, porque a margem ampla exige atravessar tecido normal para além de onde o tumor chegou, e um tumor B obriga a incluir tecido de outro compartimento. Vale lembrar o sistema paralelo para tumores BENIGNOS, com algarismos arábicos: 1 latente, 2 ativo, 3 agressivo.",
+  "correta": "IB.",
+  "incorretas": {
+   "A": "IA é baixo grau INTRAcompartimental — a letra A significa contido.",
+   "C": "IIA é alto grau, contido no compartimento.",
+   "D": "IIB é alto grau extracompartimental, a apresentação mais comum do osteossarcoma."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0094": {
+  "conceito": "O encondroma é a lesão óssea benigna mais comum da MÃO — responde por cerca de 90% dos tumores ósseos da mão — e sua sede preferencial é a FALANGE PROXIMAL, seguida do metacarpo e da falange média. A lesão nasce de restos de cartilagem fisária retidos na metáfise, é central, lítica, bem delimitada, com afinamento e insuflação da cortical, e pode conter calcificações puntiformes. É tipicamente ASSINTOMÁTICA, e o modo de apresentação mais comum é a FRATURA PATOLÓGICA após trauma banal — a mesma história do cisto ósseo simples no úmero. A conduta é conservadora: deixa-se a fratura consolidar e, só então, se a lesão persistir e for grande, faz-se curetagem com enxerto. Um ponto importante distingue mão de esqueleto axial: na MÃO, o encondroma raramente maligniza, e achados que seriam alarmantes em outro lugar (insuflação, afinamento cortical) são comuns e benignos; já no fêmur, no úmero e sobretudo na PELVE, dor sem fratura, festonamento endosteal profundo e destruição cortical apontam para CONDROSSARCOMA — e nesses sítios a distinção entre encondroma e condrossarcoma grau I é uma das mais difíceis da patologia óssea.",
+  "correta": "Falange proximal.",
+  "incorretas": {
+   "A": "O metacarpo é a segunda sede em frequência.",
+   "B": "O rádio distal não faz parte da mão e não é sede preferencial do encondroma.",
+   "C": "A falange distal é sede pouco frequente — lesão lítica ali levanta outras hipóteses, como tumor glômico, cisto epidermoide de inclusão e metástase."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0095": {
+  "conceito": "A coluna é o sítio esquelético mais acometido por metástases, e dentro dela o segmento TORÁCICO responde por cerca de 60 a 70% dos casos, seguido do lombar (20 a 30%) e do cervical (cerca de 10%). Três fatores explicam esse predomínio. NÚMERO: são doze vértebras torácicas, mais que qualquer outro segmento. VASCULARIZAÇÃO: o plexo venoso vertebral de BATSON, sem válvulas, comunica-se diretamente com os plexos venosos do tórax, da mama e do abdome, e o aumento da pressão intratorácica ou intra-abdominal inverte o fluxo, empurrando êmbolos tumorais para a coluna sem que eles passem pelo filtro pulmonar. PROXIMIDADE ANATÔMICA dos primários mais frequentes — mama e pulmão. Isso tem consequência clínica direta: o canal medular é ESTREITO na coluna torácica, com pouca reserva, de modo que a metástase torácica é a que mais produz COMPRESSÃO MEDULAR — e dor nova nas costas em paciente oncológico, sobretudo noturna, exige ressonância de toda a coluna, e não apenas do segmento doloroso, porque lesões múltiplas são a regra.",
+  "correta": "Torácica.",
+  "incorretas": {
+   "A": "O sacro é acometido, sobretudo por tumores pélvicos e por cordoma (que é primário), mas fica atrás dos demais segmentos em metástases.",
+   "B": "A coluna lombar é a segunda mais acometida.",
+   "C": "A cervical é a menos acometida das três."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0096": {
+  "conceito": "O cordoma nasce de restos da NOTOCORDA e, por isso, ocupa obrigatoriamente a LINHA MÉDIA do neuroeixo. A distribuição segue os dois extremos da notocorda: cerca de 50% na REGIÃO SACROCOCCÍGEA, 30 a 35% na região esfeno-occipital (clivus) e o restante na coluna móvel, com preferência pela cervical. É doença de ADULTOS de meia-idade e idosos (quinta à sétima décadas), com predomínio masculino, e cresce lentamente — o que explica o atraso diagnóstico de meses a anos, com dor lombar baixa inespecífica como primeira queixa. No sacro ele acomete o CORPO vertebral e o sacro distal, e não os elementos posteriores. A histologia mostra células FISALÍFERAS (com vacúolos citoplasmáticos, em bolha de sabão) em matriz mixoide, com positividade para braquiúria (brachyury), citoqueratina e S100. O tratamento é a ressecção EM BLOCO com margem ampla, tecnicamente difícil pelo custo neurológico (a preservação de S3 bilateral costuma garantir continência), e o prognóstico depende quase inteiramente da qualidade da margem — margem comprometida significa recidiva. A radioterapia com partículas (prótons, íons de carbono) tem papel crescente, e a quimioterapia convencional não funciona.",
+  "correta": "A coluna sacrococcígea.",
+  "incorretas": {
+   "A": "É tumor de adultos de meia-idade e idosos; em crianças é excepcional (e quando ocorre, é na base do crânio).",
+   "B": "Não há associação com imunossupressão.",
+   "D": "O cordoma ocupa o CORPO vertebral, na linha média — os elementos posteriores são território do osteoblastoma, do osteoma osteoide e do cisto ósseo aneurismático."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0097": {
+  "conceito": "Quatro afirmações sobre condrossarcoma, e vale corrigir cada uma. A verdadeira é a de que ele é o TUMOR MALIGNO PRIMÁRIO MAIS COMUM DA MÃO — dado que surpreende, porque na mão o encondroma benigno é dezenas de vezes mais frequente que qualquer tumor maligno; mas entre os malignos primários, o condrossarcoma lidera, geralmente surgindo sobre encondroma prévio, sobretudo em pacientes com doença de Ollier. O sinal de alerta é o encondroma da mão que DÓI sem fratura, que cresce ou que destrói a cortical. Sobre os outros pontos: o condrossarcoma de CÉLULAS CLARAS é uma variante de BAIXO grau e bom prognóstico, epifisária, que imita tumor de células gigantes; a doença de OLLIER é encondromatose SEM hemangiomas (os hemangiomas caracterizam a síndrome de MAFFUCCI); e o condrossarcoma CONVENCIONAL não responde a quimioterapia nem a radioterapia — o tratamento é exclusivamente cirúrgico, com margem ampla, e essa é uma das informações mais cobradas do tema. Escapam à regra o condrossarcoma MESENQUIMAL e o DESDIFERENCIADO, que recebem quimioterapia.",
+  "correta": "É o tumor maligno primário ósseo mais comum da mão.",
+  "incorretas": {
+   "A": "O subtipo de células claras é de BAIXO grau, com bom prognóstico — o alto grau está no desdiferenciado e no mesenquimal.",
+   "C": "Hemangiomas em partes moles caracterizam a síndrome de MAFFUCCI; a doença de Ollier é a encondromatose isolada.",
+   "D": "O condrossarcoma convencional é quimiorresistente e radiorresistente: o tratamento é cirúrgico, e a margem é o que define o prognóstico."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0098": {
+  "conceito": "O osteoma osteoide na VÉRTEBRA produz ESCOLIOSE DOLOROSA, e o mecanismo é simples: a lesão fica quase sempre nos ELEMENTOS POSTERIORES, e a dor provoca espasmo muscular assimétrico reflexo, com a criança inclinando-se para o lado oposto ao da lesão — a lesão fica na CONCAVIDADE da curva. É uma escoliose atípica e deve levantar suspeita: curva de instalação rápida, DOLOROSA (a escoliose idiopática não dói), rígida e sem rotação vertebral proporcional. O achado é reversível se a lesão for tratada cedo, antes que a deformidade se estruture. O restante do quadro: dor NOTURNA que alivia dramaticamente com anti-inflamatório (a lesão produz prostaglandinas em concentrações muito altas), pico na SEGUNDA E TERCEIRA DÉCADAS (não na primeira), predomínio masculino de 2 a 3 para 1, e sedes preferenciais no FÊMUR PROXIMAL e na TÍBIA — a coluna vem depois, com cerca de 10 a 20% dos casos. O diagnóstico é feito por TOMOGRAFIA com cortes finos, que mostra o nicho radiolucente de menos de 1,5 cm; e o tratamento de escolha, quando o anti-inflamatório não resolve, é a ABLAÇÃO POR RADIOFREQUÊNCIA GUIADA POR TOMOGRAFIA — nunca por ultrassom, que não enxerga dentro do osso.",
+  "correta": "Quando na vértebra, pode provocar escoliose.",
+  "incorretas": {
+   "A": "O pico é na segunda e terceira décadas, não na primeira.",
+   "C": "As sedes mais frequentes são o fêmur proximal e a tíbia; pelve e coluna são menos comuns.",
+   "D": "A ablação por radiofrequência é guiada por TOMOGRAFIA — o ultrassom não penetra a cortical óssea e não localiza o nicho."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0099": {
+  "conceito": "O mieloma múltiplo é doença sistêmica de idosos — mediana de idade ao diagnóstico em torno de 65 a 70 anos —, e o paciente costuma estar clinicamente comprometido: anêmico, com perda de peso, infecções de repetição e insuficiência renal. A DOR ÓSSEA é a queixa mais frequente (cerca de 70%), e a FRATURA PATOLÓGICA é uma das apresentações iniciais mais características: o plasmócito produz fatores que ativam osteoclastos sem estimular osteoblastos, de modo que o osso é destruído sem nenhuma tentativa de reparo — daí as lesões líticas em SACA-BOCADO, sem esclerose e sem reação periosteal, e daí a fratura de fragilidade em osso que parece apenas osteoporótico. É por isso, aliás, que a CINTILOGRAFIA ÓSSEA É FRIA no mieloma: sem atividade osteoblástica, não há captação — e o rastreio se faz por inventário ósseo radiográfico, tomografia de baixa dose de corpo inteiro ou ressonância. Regra prática que salva diagnósticos: idoso com fratura vertebral ou de osso longo por trauma mínimo, sobretudo com anemia, velocidade de hemossedimentação muito alta, hipercalcemia ou creatinina elevada, precisa de ELETROFORESE DE PROTEÍNAS com imunofixação e dosagem de cadeias leves livres.",
+  "correta": "Fratura patológica como uma das primeiras apresentações.",
+  "incorretas": {
+   "A": "A dor óssea é justamente a queixa mais comum, presente em cerca de 70% dos pacientes ao diagnóstico.",
+   "B": "A faixa etária é bem mais alta: mediana entre 65 e 70 anos, e o diagnóstico abaixo dos 40 é raro.",
+   "C": "O acometimento sistêmico é a regra — o acrônimo CRAB resume: hipercalcemia, insuficiência renal, anemia e lesões ósseas."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "tumores-0100": {
+  "conceito": "O sarcoma de Ewing tem uma topografia que o distingue dos demais tumores da mesma faixa etária: ele é DIAFISÁRIO ou metadiafisário, ao contrário do osteossarcoma, que é METAFISÁRIO. As sedes mais comuns são os OSSOS LONGOS dos membros inferiores — fêmur em primeiro lugar, seguido de tíbia e fíbula —, com a pelve logo depois; costelas, escápula e vértebras completam a lista. A imagem é agressiva: lesão PERMEATIVA ou roída de traça, reação periosteal em CASCA DE CEBOLA (lamelar, por surtos sucessivos de crescimento) ou em raios de sol, com triângulo de Codman, e uma MASSA DE PARTES MOLES desproporcionalmente grande em relação à destruição óssea — achado tão característico que é um dos melhores discriminadores na ressonância. Clinicamente engana: dor, febre, leucocitose e velocidade de hemossedimentação elevada fazem pensar em OSTEOMIELITE, e não é raro o paciente receber antibiótico antes do diagnóstico. Histologia de células redondas pequenas e azuis, CD99 positivo em membrana, com a translocação t(11;22) e fusão EWSR1-FLI1. É QUIMIOSSENSÍVEL e RADIOSSENSÍVEL, o que o separa do osteossarcoma.",
+  "correta": "Diáfise de ossos longos.",
+  "incorretas": {
+   "A": "A epífise não é sede do Ewing; lesão epifisária remete a condroblastoma (criança) ou tumor de células gigantes (adulto).",
+   "B": "Os ossos chatos (pelve, escápula, costelas) são sedes importantes do Ewing, mas os ossos longos vêm em primeiro lugar — e a pergunta pede o mais frequente.",
+   "C": "Mesma objeção quanto à epífise."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
  }
 }
