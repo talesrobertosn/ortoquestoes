@@ -460,5 +460,456 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "pe-tornozelo-0044": {
+  "conceito": "O estágio II de Johnson e Strom é o da deformidade FLEXÍVEL com tendão já insuficiente. O achado que o define no exame é a falência funcional do tibial posterior: o paciente não consegue mais o apoio monopodal na ponta do pé (single heel rise), o calcâneo não inverte ao tentá-lo, e quando se pede inversão contra resistência ele recruta o TIBIAL ANTERIOR para substituir o tendão doente. Testar corretamente exige colocar o pé em flexão plantar e inversão a partir da eversão — só assim se isola o tibial posterior e se flagra a compensação. Ressalva: o valgo do retropé também está presente no estágio II, embora flexível; o que distingue o estágio II do I não é a existência do valgo, e sim a falência do tendão que a compensação denuncia.",
+  "correta": "Compensação para a inversão do pé usando o tibial anterior — sinal de que o tibial posterior já não cumpre sua função.",
+  "incorretas": {
+   "A": "O valgo do retropé existe no estágio II, mas é FLEXÍVEL e ainda redutível; o valgo evidente e rígido, com artrose subtalar, é o que caracteriza o estágio III.",
+   "B": "A manutenção do apoio monopodal na ponta do pé é achado do estágio I. Perder essa capacidade é justamente o que marca a passagem para o estágio II.",
+   "D": "Enfraquecimento apenas leve aos testes manuais corresponde ao estágio I, em que há tenossinovite e dor sem deformidade."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0045": {
+  "conceito": "O tendão calcâneo rompe quando é carregado ao máximo enquanto está sendo alongado — contração excêntrica em posição de estiramento. Isso acontece com o JOELHO ESTENDIDO (que alonga o gastrocnêmio, biarticular) e o tornozelo indo para DORSIFLEXÃO, seja no arranque do jogador que empurra o pé contra o chão com o joelho estendendo, seja na dorsiflexão súbita e inesperada de quem pisa num buraco ou escorrega de um degrau. É por isso que a lesão é típica do atleta de fim de semana entre 30 e 50 anos: tendão já degenerado, com zona hipovascular de 2 a 6 cm da inserção, submetido a uma carga que o músculo ainda consegue gerar.",
+  "correta": "Flexão dorsal do pé com o joelho em extensão.",
+  "incorretas": {
+   "A": "Com o joelho fletido o gastrocnêmio relaxa, e o pé plantígrado não gera estiramento — é a posição de menor tensão sobre o tendão.",
+   "B": "A flexão plantar ENCURTA a unidade musculotendínea; ruptura por encurtamento ativo não é o mecanismo descrito.",
+   "C": "Trauma indireto realmente é a regra (a ruptura raramente vem de um golpe direto), mas com o tornozelo já em flexão plantar o tendão está frouxo, e é a dorsiflexão que o põe sob tensão."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0046": {
+  "conceito": "A classificação de Wagner gradua a úlcera do pé diabético pela PROFUNDIDADE e pela presença de infecção ou necrose. Grau 0: pé de risco, sem úlcera, mas com deformidade ou calosidade. Grau 1: úlcera SUPERFICIAL, restrita à pele. GRAU 2: úlcera PROFUNDA, que atinge tendão, cápsula ou osso, SEM abscesso e SEM osteomielite — é aqui que se enquadra a exposição de tendões. Grau 3: úlcera profunda COM abscesso, osteomielite ou artrite séptica. Grau 4: gangrena localizada (antepé ou calcanhar). Grau 5: gangrena de todo o pé. A limitação conhecida do sistema é não avaliar isquemia de forma independente, o que motivou classificações como a da Universidade do Texas.",
+  "correta": "Grau 2.",
+  "incorretas": {
+   "A": "O grau 1 é a úlcera superficial, que não ultrapassa a pele — exposição de tendão já significa profundidade.",
+   "C": "O grau 3 exige infecção profunda estabelecida: abscesso, osteomielite ou artrite séptica.",
+   "D": "O grau 4 já é gangrena localizada, com tecido necrosado."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0047": {
+  "conceito": "A classificação de Coughlin e Shurnas para o hálux rígido combina três coisas: arco de dorsiflexão, achados radiográficos e — o detalhe que decide as questões — o padrão da dor. Grau 0: 40 a 60 graus de dorsiflexão, sem dor. Grau 1: 30 a 40 graus, dor ocasional, osteófito dorsal, espaço articular preservado. GRAU 2: 10 a 30 graus, dor mais constante, redução MODERADA do espaço articular e restrição moderada. Grau 3: menos de 10 graus, espaço articular gravemente reduzido, dor constante nos extremos do movimento mas COM ARCO MÉDIO INDOLOR. Grau 4: igual ao 3, porém COM DOR NO ARCO MÉDIO — e é essa dor no meio do arco que separa 3 de 4, e que muda a conduta da queilectomia para a artrodese.",
+  "correta": "Grau 2.",
+  "incorretas": {
+   "A": "No grau 1 a dor é ocasional e o espaço articular ainda está preservado.",
+   "C": "O grau 3 tem restrição grave (menos de 10 graus) e espaço articular gravemente reduzido, não moderado.",
+   "D": "O grau 4 acrescenta ao grau 3 a dor no arco médio de movimento."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0048": {
+  "conceito": "São quatro os testes clássicos da ruptura do tendão calcâneo, e vale guardar cada um pelo gesto. MATLES: paciente em decúbito ventral, joelhos fletidos ativamente a 90 graus — o pé do lado íntegro fica em discreta flexão plantar pelo tônus de repouso do tríceps, e o pé do lado roto cai para neutro ou dorsiflexão. THOMPSON (ou Simmonds): aperta-se a panturrilha e observa-se a ausência de flexão plantar. O'BRIEN: introduz-se uma agulha no tendão proximal e observa-se se ela se movimenta com a dorsiflexão passiva. COPELAND: infla-se um manguito na panturrilha e mede-se a variação de pressão com a dorsiflexão do pé. O teste do enunciado, com o joelho fletido a 90 graus e observação da posição de repouso do pé, é o de Matles.",
+  "correta": "Matles.",
+  "incorretas": {
+   "B": "O'Brien é o teste da agulha, invasivo e hoje pouco usado.",
+   "C": "Copeland é o teste do esfigmomanômetro na panturrilha.",
+   "D": "Thompson é o teste da compressão da panturrilha — o mais usado na prática, mas não é o descrito no enunciado."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0049": {
+  "conceito": "A dor da fasceíte plantar tem uma assinatura clínica quase patognomônica: é PIOR NOS PRIMEIROS PASSOS DA MANHÃ, ou depois de qualquer período prolongado sentado, e melhora ao caminhar alguns minutos — para voltar a piorar com carga prolongada no fim do dia. A explicação é o repouso: com o pé relaxado, a fáscia se acomoda encurtada e cicatriza nessa posição; o primeiro passo a estica de forma abrupta. A dor se localiza na região inferoMEDIAL da tuberosidade do calcâneo, ponto de origem da fáscia, e o quadro costuma ser unilateral.",
+  "correta": "Dor pior na pisada logo depois de acordar (protokinetic pain).",
+  "incorretas": {
+   "A": "O acometimento habitual é unilateral. Fasceíte bilateral em paciente jovem levanta a suspeita de espondiloartrite soronegativa e merece investigação.",
+   "C": "É o inverso: depois de um período sentado, a primeira pisada PIORA, pelo mesmo mecanismo do primeiro passo da manhã.",
+   "D": "A origem da fáscia é no tubérculo medial do calcâneo, e a dor é inferoMEDIAL. Dor inferolateral sugere outro diagnóstico, como a compressão do nervo do abdutor do quinto dedo (nervo de Baxter)."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0050": {
+  "conceito": "A artrite reumatoide ataca a sinovial e, no pé, começa quase sempre pelas METATARSOFALÂNGICAS — o antepé é acometido antes do retropé em cerca de 90% dos pacientes, e não raro o pé é o primeiro sítio de toda a doença. A evolução é característica: a sinovite distende a cápsula e a placa plantar, as falanges luxam dorsalmente, o coxim gorduroso plantar migra para frente e as cabeças dos metatarsos ficam expostas na planta, produzindo metatarsalgia, calosidades e a sensação de andar sobre pedras. Some-se o hálux valgo e os dedos em garra e está desenhado o antepé reumatoide. Detalhe que também separa das artroses: a AR poupa as interfalângicas distais, que são o território da artrose e da artrite psoriática.",
+  "correta": "Metatarsofalângicas.",
+  "incorretas": {
+   "A": "As tarsometatársicas são acometidas mais tarde, na progressão para o médio-pé.",
+   "C": "As interfalângicas DISTAIS são caracteristicamente POUPADAS pela artrite reumatoide — seu acometimento aponta para artrose ou artrite psoriática.",
+   "D": "As interfalângicas proximais são acometidas na doença, mas depois das metatarsofalângicas."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0051": {
+  "conceito": "O ligamento deltoide tem uma camada superficial (tibionavicular, tibiocalcâneo, tibiotalar posterior superficial e a expansão tibioespringue) e uma camada PROFUNDA (tibiotalar anterior e tibiotalar posterior profundo). O componente mais forte e mais espesso é o TIBIOTALAR POSTERIOR PROFUNDO — é ele o principal estabilizador contra a translação lateral e a rotação externa do tálus, e é a sua integridade que decide se uma fratura maleolar isolada se comporta como estável. Isso tem consequência direta: uma fratura de maléolo lateral com deltoide íntegro é tratada de forma conservadora; com deltoide roto, o tornozelo é instável.",
+  "correta": "Tibiotalar posterior (porção profunda).",
+  "incorretas": {
+   "A": "O tibionavicular é superficial e mais delgado, contribuindo pouco para a estabilidade contra translação do tálus.",
+   "B": "O tibiocalcâneo também é superficial; resiste sobretudo à eversão, e não à translação lateral do tálus.",
+   "C": "O tibiotalar anterior é profundo, mas nitidamente menos robusto que o posterior."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0052": {
+  "conceito": "Os fatores de risco da ruptura do tendão calcâneo se dividem em extrínsecos (aumento súbito de carga de treino, quinolonas, corticoide local ou sistêmico, calçado inadequado) e INTRÍNSECOS, ligados à mecânica e ao próprio tendão. Entre estes, o mais citado é o AUMENTO DA PRONAÇÃO SUBTALAR: a eversão excessiva do calcâneo durante o apoio gera um movimento de chicote sobre o tendão — as fibras mediais e laterais são tensionadas de forma desigual e as fibras se cisalham entre si (whipping action), justamente na zona hipovascular de 2 a 6 cm da inserção. Somam-se encurtamento do tríceps, dorsiflexão limitada e a própria degeneração tendínea da meia-idade.",
+  "correta": "Aumento da pronação subtalar.",
+  "incorretas": {
+   "B": "A supinação subtalar excessiva se associa a outros problemas — sobrecarga da borda lateral, entorses de repetição, fratura de estresse do quinto metatarso —, mas não ao cisalhamento característico do tendão calcâneo.",
+   "C": "A pronação do antepé é achado do pé cavovaro e não descreve o mecanismo em causa, que é do retropé.",
+   "D": "A supinação do antepé é a compensação do pé plano; de novo, não é o fator descrito para o tendão."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0053": {
+  "conceito": "No hálux valgo, o primeiro passo é sempre perguntar se a articulação metatarsofalângica é CONGRUENTE (superfícies paralelas, sem subluxação) ou incongruente (subluxada lateralmente). Com articulação congruente e ângulo metatarsofalângico de 22 graus — deformidade leve —, não se deve fazer liberação lateral nem realinhamento articular, que criaria incongruência num conjunto ainda alinhado. O procedimento é uma OSTEOTOMIA DO PRIMEIRO METATARSO que desloque a superfície articular como um bloco, tipicamente uma osteotomia distal em chevron, eventualmente biplanar se houver AAMD aumentado. Se ainda restar valgismo à custa da falange, acrescenta-se um Akin — mas como complemento, não como procedimento isolado.",
+  "correta": "Osteotomia do primeiro metatarsal.",
+  "incorretas": {
+   "A": "Artrodese metatarsofalângica é reservada a deformidades graves, recidivas, hálux valgo com artrose, artrite reumatoide ou doença neuromuscular — nada disso está no enunciado.",
+   "B": "A osteotomia da falange proximal (Akin) corrige o hálux valgo interfalângico e serve como complemento; sozinha, não corrige a deformidade metatarsofalângica.",
+   "D": "A ressecção da base da falange proximal (Keller) é procedimento de salvação para pacientes idosos, de baixa demanda, e deixa o hálux instável e sem função de apoio."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0054": {
+  "conceito": "O ângulo de Méary, ou ângulo talo-primeiro metatarso, é medido na radiografia em PERFIL COM CARGA, entre o eixo longitudinal do tálus e o eixo do primeiro metatarso. No pé normal os dois estão alinhados e o ângulo é de zero grau, com o ápice na altura da articulação naviculocuneiforme ou talonavicular. No pé PLANO o ângulo abre com ápice PLANTAR (valores negativos por convenção), e no pé CAVO abre com ápice DORSAL. É a medida mais usada para quantificar o colapso do arco longitudinal medial, e o local do ápice ainda informa onde está o vértice da deformidade — o que orienta onde fazer a osteotomia.",
+  "correta": "Entre o tálus e o primeiro metatarsal.",
+  "incorretas": {
+   "A": "O tálus com o cuneiforme medial não compõe o ângulo de Méary; a linha vai até o metatarso.",
+   "C": "Navicular com cuneiforme medial não é uma medida angular padronizada nesse contexto.",
+   "D": "O navicular não entra na medida: o eixo proximal é o do tálus."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0059": {
+  "conceito": "A manobra avalia se o hálux valgo é REDUTÍVEL passivamente: o examinador tenta trazer o hálux de volta ao eixo do primeiro metatarso. Se ele não alinha, a limitação está nas estruturas laterais encurtadas — cápsula lateral retraída, ligamento metatarsossesamoideo lateral e tendão adutor do hálux. É por isso que a cirurgia de McBride, que dá nome ao teste, tem como etapa fundamental exatamente a LIBERAÇÃO LATERAL desses elementos, sem a qual nenhuma osteotomia mantém a correção — o hálux volta a ser puxado para valgo.",
+  "correta": "Retração capsular lateral.",
+  "incorretas": {
+   "A": "Os sesamoides realmente ficam lateralizados em relação à cabeça do metatarso no hálux valgo, mas isso é achado RADIOGRÁFICO, avaliado pela classificação de Hardy e Clapham, e não o que essa manobra clínica testa.",
+   "C": "Artrose metatarsofalângica se traduz em dor e limitação do arco de movimento (o quadro do hálux rígido), não em impossibilidade de realinhar passivamente um hálux desviado.",
+   "D": "O abdutor do hálux puxa o dedo para MEDIAL — seu espasmo produziria hálux varo, e não a impossibilidade de corrigir um valgo."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0060": {
+  "conceito": "A via posterolateral do tornozelo é a preferida para acessar o maléolo posterior e para artrodeses tibiotalares por via posterior. A incisão fica a meio caminho entre a borda lateral do tendão calcâneo e a borda posterior da fíbula, protegendo o nervo sural e a veia safena parva, que correm nesse intervalo superficialmente. O plano PROFUNDO passa entre os TENDÕES FIBULARES (lateral) e o FLEXOR LONGO DO HÁLUX (medial); afastando o flexor longo do hálux para medial, ele funciona como escudo, porque é medial a ele que corre o feixe tibial posterior. Detalhe anatômico útil: na face posterior do tornozelo o flexor longo do hálux é o músculo que desce mais baixo, com ventre muscular visível quase até a articulação — é assim que se o identifica.",
+  "correta": "Entre os tendões fibulares e o tendão flexor longo do hálux.",
+  "incorretas": {
+   "A": "Entre o tendão calcâneo e os fibulares está o plano SUPERFICIAL do acesso, onde correm o nervo sural e a veia safena parva; ainda não é o plano profundo.",
+   "B": "Não há um intervalo cirúrgico útil entre o tendão calcâneo e o flexor longo do hálux nesse acesso.",
+   "D": "O flexor longo dos DEDOS fica mais medial ainda, junto ao feixe neurovascular; usá-lo como limite do intervalo aproximaria o dissecção da artéria e do nervo tibial posterior."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0061": {
+  "conceito": "O pé cavovaro da doença de Charcot-Marie-Tooth se explica por quais músculos a doença poupa, não por quais ela atinge. Enfraquecem primeiro o TIBIAL ANTERIOR e o FIBULAR CURTO; permanecem fortes o TIBIAL POSTERIOR e o FIBULAR LONGO. As consequências vêm em par: o fibular longo, sem o antagonista tibial anterior, plantiflete o primeiro raio e deprime a cabeça do primeiro metatarso; e o tibial posterior, sem o antagonista fibular curto, inverte o retropé. Junte-se a fraqueza dos intrínsecos, que dá os dedos em garra, e o pé está completo. Essa lógica também explica a cirurgia: a transferência do fibular longo para o fibular curto retira a força que deprime o primeiro raio e devolve eversão.",
+  "correta": "Tibial posterior e fibular longo.",
+  "incorretas": {
+   "A": "Tibial anterior e fibular curto são justamente os DOIS que enfraquecem — é a fraqueza deles que permite a deformidade.",
+   "B": "O fibular longo está certo, mas o tibial anterior é o músculo fraco, não o preservado.",
+   "C": "O tibial posterior está certo, mas o fibular curto é o fraco; é a fraqueza dele que deixa o tibial posterior inverter o retropé sem oposição."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0063": {
+  "conceito": "A artrodese do tornozelo é procedimento de salvação e tolera muita coisa: infecção prévia controlada, necrose do tálus (que apenas estende a artrodese para tibiotalocalcânea), artropatias inflamatórias e metabólicas. O que ela NÃO tolera é osso que não consolida por falta de sangue. COMPROMETIMENTO VASCULAR do membro é contraindicação porque compromete a cicatrização da ferida, a consolidação e, no limite, a viabilidade do pé — uma pseudartrose infectada num membro isquêmico termina em amputação. Por isso a avaliação vascular precede a indicação: pulsos, índice tornozelo-braço e, se necessário, arteriografia. Vale a comparação: doença vascular contraindica artrodese, enquanto necrose do tálus e infecção prévia contraindicam sobretudo a ARTROPLASTIA.",
+  "correta": "Comprometimento vascular do membro inferior.",
+  "incorretas": {
+   "A": "A artrite gotosa com destruição articular é indicação de artrodese, não contraindicação.",
+   "B": "A osteonecrose do tálus não impede a artrodese: apenas muda a técnica, estendendo a fusão ao calcâneo (tibiotalocalcânea) e exigindo enxertia. É contraindicação para artroplastia.",
+   "C": "A artrose pós-infecciosa é uma das indicações clássicas de artrodese, desde que a infecção esteja erradicada — e é justamente o cenário em que a artroplastia está proscrita."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0064": {
+  "conceito": "O tálus vertical congênito é o pé em mata-borrão (rocker-bottom) do recém-nascido: rígido, com a cabeça do tálus palpável e proeminente na planta, arco invertido e sola convexa. A montagem é a seguinte — o tálus está verticalizado, o navicular luxado dorsalmente sobre seu colo, o calcâneo em EQUINO e VALGO, e o antepé DORSIFLETIDO e ABDUZIDO. Clinicamente isso se traduz num pé EVERTIDO EM VALGO E RODADO EXTERNAMENTE. A radiografia confirma pelo Kite aumentado nas duas incidências e, sobretudo, pelo perfil em máxima flexão plantar forçada, em que a luxação talonavicular não reduz — o que separa o tálus vertical verdadeiro do pé plano oblíquo, que reduz.",
+  "correta": "Evertido em valgo e rodado externamente.",
+  "incorretas": {
+   "A": "Mistura eversão com varo, que são incompatíveis: eversão do retropé é valgo.",
+   "C": "Invertido em varo com rotação interna descreve o pé torto congênito, a deformidade oposta.",
+   "D": "Inversão com valgo é outra combinação contraditória."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0065": {
+  "conceito": "O ligamento de Bassett é o fascículo mais distal e acessório do ligamento tibiofibular anteroinferior, separado do corpo principal por um espaço. Ele repousa sobre a face anterolateral da tróclea do tálus, e quando o tálus avança para dentro da pinça — o que acontece na FLEXÃO DORSAL, porque a tróclea é mais larga na frente — a borda do ligamento pode roçar e comprimir a cartilagem talar. O resultado é a síndrome do impacto anterolateral do tornozelo: dor anterolateral que piora na dorsiflexão e ao subir escadas, tipicamente depois de entorses de repetição, que hipertrofiam o fascículo e engrossam a sinovial da goteira lateral. O tratamento, quando o conservador falha, é a ressecção artroscópica do fascículo.",
+  "correta": "Flexão dorsal.",
+  "incorretas": {
+   "A": "A eversão não empurra a porção larga da tróclea contra o fascículo anterolateral.",
+   "B": "A inversão é o mecanismo da entorse que hipertrofia o ligamento, mas o impacto em si acontece quando o tálus avança na dorsiflexão.",
+   "D": "Na flexão plantar a porção mais estreita da tróclea ocupa a pinça, e o espaço anterior aumenta — é a posição em que o impacto alivia."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0067": {
+  "conceito": "As duas coalizões mais comuns têm cada uma o seu sinal radiográfico, e a maneira de não trocar é lembrar a incidência. A COALIZÃO TALOCALCANEANA dá o SINAL DO C no PERFIL: a cortical medial do domo do tálus se continua com a cortical do sustentaculum tali e da face medial do calcâneo, desenhando um C contínuo, porque a barra une os dois ossos e apaga o intervalo entre eles. Já a COALIZÃO CALCANEONAVICULAR dá o SINAL DO TAMANDUÁ (anteater nose) — o processo anterior do calcâneo alongado e afilado, apontando para o navicular — e é mais bem vista na incidência OBLÍQUA a 45 graus. A talocalcaneana costuma exigir tomografia com cortes coronais para confirmação.",
+  "correta": "Perfil, indicando coalizão talocalcaneana.",
+  "incorretas": {
+   "A": "Acerta a coalizão, erra a incidência: a oblíqua é a das calcaneonaviculares.",
+   "C": "Acerta a incidência oblíqua, mas nela o sinal esperado é o do tamanduá, e a coalizão é a calcaneonavicular.",
+   "D": "Erra os dois: no perfil não se avalia bem a calcaneonavicular, e o C não é dela."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0068": {
+  "conceito": "Na via posterolateral do tornozelo, o flexor longo do hálux é a referência que separa o campo cirúrgico do feixe neurovascular. Ele é o tendão mais medial do compartimento posterior profundo acessível por essa via, e MEDIAL A ELE correm a artéria tibial posterior e o NERVO TIBIAL, junto com o flexor longo dos dedos e o tibial posterior. Afastando o flexor longo do hálux para medial, ele funciona como um anteparo entre o instrumental e o feixe. Identificá-lo é fácil: é o músculo que desce mais baixo na face posterior, com ventre carnoso quase até a articulação, e sua contração move o hálux.",
+  "correta": "Nervo tibial.",
+  "incorretas": {
+   "A": "O sural corre no plano SUPERFICIAL, entre o tendão calcâneo e a fíbula, e é protegido pelo cuidado com a incisão de pele — não pelo afastamento do flexor longo do hálux.",
+   "C": "O nervo safeno é MEDIAL e ANTERIOR, acompanhando a veia safena magna à frente do maléolo medial; está fora deste acesso.",
+   "D": "O fibular superficial é anterolateral, no território dos portais artroscópicos anteriores."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0069": {
+  "conceito": "A classificação de Eichenholtz descreve a história natural da artropatia de Charcot em três estágios (mais o estágio 0 acrescentado depois). ESTÁGIO 0: pé quente e edemaciado, com radiografia ainda normal — só a ressonância mostra edema ósseo; é a janela de ouro para imobilizar. ESTÁGIO 1, de FRAGMENTAÇÃO: debris ósseos, fraturas periarticulares, subluxação, pé quente e instável. ESTÁGIO 2, de COALESCÊNCIA: o edema e o calor diminuem, os fragmentos começam a se absorver e a se unir. ESTÁGIO 3, de CONSOLIDAÇÃO ou reconstrução: o pé está frio, o osso consolidado e remodelado, e a deformidade — se houver — está agora fixa. A regra prática que decorre disso: o gesso de contato total é o tratamento dos estágios 1 e 2, e a cirurgia reconstrutiva, quando indicada, espera o estágio 3.",
+  "correta": "Estágio 3.",
+  "incorretas": {
+   "A": "O estágio 0 é o inflamatório inicial, com radiografia normal.",
+   "B": "O estágio 1 é o de fragmentação e destruição, exatamente o oposto da consolidação.",
+   "C": "O estágio 2 é o de coalescência: o processo já esfriou, mas o osso ainda não consolidou."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0070": {
+  "conceito": "A dor plantar no retropé nem sempre é fasceíte. O diagnóstico diferencial mais importante é a compressão do PRIMEIRO RAMO DO NERVO PLANTAR LATERAL, conhecido como NERVO DE BAXTER — ele é o nervo do abdutor do quinto dedo e fica comprimido entre a fáscia profunda do abdutor do hálux e a borda medial do quadrado plantar. Três achados o separam da fasceíte: a dor é mais MEDIAL e PROXIMAL, muitas vezes irradiando para a borda lateral do calcanhar; não tem o padrão típico dos primeiros passos da manhã; e pode vir com fraqueza do abdutor do quinto dedo. Ele responde por algo em torno de 15 a 20% dos casos de dor crônica no calcanhar e é a principal razão de uma fasceíte não melhorar com o tratamento habitual. Outros diferenciais: fratura de estresse do calcâneo, síndrome do túnel do tarso e atrofia do coxim gorduroso.",
+  "correta": "Primeiro ramo do nervo plantar lateral (nervo de Baxter).",
+  "incorretas": {
+   "A": "Os ramos calcâneos mediais do tibial são sensitivos puros e inervam a pele do calcanhar; sua irritação (neuroma, cicatriz cirúrgica) causa dor cutânea, mas não é o diferencial clássico da dor plantar profunda.",
+   "C": "O nervo plantar medial pode ser comprimido no seu túnel — é a chamada jogger's foot —, mas a dor é no arco medial, não no retropé plantar.",
+   "D": "O nervo safeno não emite ramos calcâneos plantares: sua distribuição termina na face medial da perna e do pé, e é sensitivo puro."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0071": {
+  "conceito": "A queilectomia é a ressecção do osteófito dorsal com cerca de 25 a 30% da porção dorsal da cabeça do primeiro metatarso: descomprime o impacto dorsal e devolve dorsiflexão, mas NÃO trata a cartilagem já perdida. Por isso o fator que decide o resultado é o grau de comprometimento ARTICULAR — resultados bons e duradouros nos graus 1 e 2 de Coughlin e Shurnas, e alta taxa de falha quando o arco médio de movimento já dói (grau 4), situação em que a artrodese é a escolha. O enunciado acrescenta o corte de idade acima de 60 anos, e aí cabe ressalva honesta: a lógica do menor nível de demanda favorece o paciente mais velho, mas esse corte etário é o número da banca, e a metade sólida da resposta é o envolvimento articular leve.",
+  "correta": "Pacientes acima de 60 anos com envolvimento articular leve.",
+  "incorretas": {
+   "B": "O envolvimento leve está certo; o que a alternativa muda é a faixa etária — e no paciente jovem, de alta demanda, a queilectomia costuma ser oferecida com a advertência de que pode ser um procedimento intermediário, não definitivo.",
+   "C": "Envolvimento articular grave é o cenário em que a queilectomia falha: não há cartilagem para preservar, e o alívio é breve.",
+   "D": "Erra as duas condições."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0072": {
+  "conceito": "O pé reumatoide é valgo em cima e valgo embaixo, e as duas coisas têm a mesma origem — a sinovite que destrói tecidos moles. No RETROPÉ, a sinovite da subtalar e da talonavicular soma-se à tenossinovite do tibial posterior, que falha e deixa o calcâneo desabar em VALGO, com colapso do arco. No ANTEPÉ, a sinovite das metatarsofalângicas distende a cápsula e a placa plantar: o hálux desvia em VALGO, as falanges dos dedos menores luxam dorsalmente, as cabeças dos metatarsos ficam proeminentes na planta e aparecem os dedos em garra. É um conjunto tão característico que muitas vezes é o pé, e não a mão, quem dá o diagnóstico.",
+  "correta": "Hálux valgo e retropé valgo.",
+  "incorretas": {
+   "A": "Varo em ambos descreve o pé cavovaro neurológico, mecanismo oposto.",
+   "B": "Hálux varo na artrite reumatoide é raro, e quando aparece costuma ser complicação de cirurgia prévia por hipercorreção.",
+   "C": "Retropé varo contradiz o mecanismo central da doença no retropé, que é a falência do tibial posterior."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0074": {
+  "conceito": "Os dois ângulos que definem o hálux valgo na radiografia com carga são o metatarsofalângico (ou de valgismo do hálux, HVA), medido entre os eixos do primeiro metatarso e da falange proximal, e o intermetatársico (IMA), entre o primeiro e o segundo metatarsos. Os limites da normalidade são HVA ATÉ 15 GRAUS e IMA até 9 graus. A partir daí a graduação habitual é: leve com HVA até 20 e IMA até 11; moderado com HVA até 40 e IMA até 16; grave acima disso — e é essa graduação que orienta a escolha entre osteotomia distal, diafisária ou proximal, e a artrodese da primeira tarsometatársica.",
+  "correta": "Entre 15 e 20 graus — o corte da normalidade fica em 15 graus, e valores até 20 configuram deformidade leve.",
+  "incorretas": {
+   "A": "0 a 5 graus é bem abaixo do limite: um hálux com 10 graus de valgo ainda é normal.",
+   "B": "7 a 12 graus é a ordem de grandeza do ângulo INTERMETATÁRSICO, não do metatarsofalângico.",
+   "D": "25 a 30 graus já configura deformidade estabelecida, na faixa moderada."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0075": {
+  "conceito": "A conduta na lesão osteocondral do tálus se decide por fatores da LESÃO, não do paciente: TAMANHO (a fronteira habitual fica em torno de 1 a 1,5 cm² ou 15 mm de diâmetro), profundidade e presença de cisto subcondral, estabilidade do fragmento, cronicidade e localização. A regra prática que decorre disso: lesões pequenas e estáveis vão para desbridamento com microfraturas ou perfurações; lesões maiores, com cisto profundo ou que falharam à microfratura, exigem procedimentos de reconstrução — enxerto osteocondral autólogo (mosaicoplastia, OATS), transplante de aloenxerto ou implante de condrócitos autólogos. O tamanho é o fator isolado que mais influencia esse limiar e o prognóstico.",
+  "correta": "Tamanho da lesão.",
+  "incorretas": {
+   "A": "O sexo não altera a indicação nem o prognóstico da lesão osteocondral.",
+   "B": "Não há fator genético estabelecido que oriente a escolha terapêutica aqui.",
+   "D": "O índice de massa corpórea pesa no resultado funcional geral e no risco cirúrgico, mas não é o fator que define a técnica."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0077": {
+  "conceito": "O pé plano flexível da criança é, na imensa maioria das vezes, uma variação da normalidade: assintomático, com arco que reaparece na ponta dos pés e no teste de Jack (dorsiflexão do hálux), e que não precisa de tratamento nenhum — nem palmilha, nem bota. O que muda esse cenário é o ENCURTAMENTO DO TRÍCEPS SURAL. Com o tornozelo sem dorsiflexão, o pé é obrigado a buscar o movimento no médio-pé: a cada passo o arco colapsa mais, a fáscia plantar é sobrecarregada, e surgem dor no médio-pé, no arco e no calcanhar. Por isso a avaliação obrigatória em toda criança com pé plano é o teste de Silfverskiöld — medir a dorsiflexão com o joelho estendido e fletido —, e o tratamento inicial do pé plano doloroso é justamente o alongamento do gastrocnêmio.",
+  "correta": "Tríceps sural.",
+  "incorretas": {
+   "A": "O fibular longo contraturado plantiflete o primeiro raio e participa do pé CAVOvaro, deformidade oposta.",
+   "C": "O tibial anterior contraturado eleva o antepé e aparece no tálus vertical, não no pé plano flexível.",
+   "D": "O tibial posterior no pé plano está INSUFICIENTE ou alongado, não contraído — é justamente a falência dele, no adulto, que produz o pé plano adquirido."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0078": {
+  "conceito": "Turf toe é a lesão do COMPLEXO CAPSULOLIGAMENTAR PLANTAR (a placa plantar) da primeira metatarsofalângica. O mecanismo é a carga axial sobre um pé em flexão plantar com o hálux forçado em HIPERDORSIFLEXÃO: o atleta é atingido por trás ou empurra o pé contra o solo enquanto o dedo dobra para cima além do limite. O nome vem da grama sintética e do calçado flexível, que aumentaram a incidência ao permitir mais dorsiflexão do antepé. Vale distinguir do sand toe, que é o mecanismo inverso — hiperflexão plantar do hálux — e da fratura de sesamoide, em que a dor é localizada no próprio osso. A avaliação inclui radiografia comparativa para ver se os sesamoides migraram proximalmente, sinal de ruptura completa da placa.",
+  "correta": "Lesão da placa plantar por carga axial com o antepé em dorsiflexão (hiperextensão do hálux).",
+  "incorretas": {
+   "A": "Acerta o mecanismo, mas a estrutura lesada é a placa plantar. Os sesamoides estão embutidos nesse complexo e podem se fraturar ou migrar, mas a lesão que define o turf toe é a capsuloligamentar.",
+   "B": "Erra a estrutura e o mecanismo: a flexão plantar forçada corresponde ao sand toe.",
+   "D": "Acerta a estrutura e erra o mecanismo, pela mesma razão."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0079": {
+  "conceito": "Os testes do complexo lateral do tornozelo seguem a direção em que cada ligamento trabalha. O TALOFIBULAR ANTERIOR resiste à translação anterior do tálus e à inversão em flexão plantar — é o primeiro a romper e o mais frequentemente lesado, e é ele que o TESTE DA GAVETA ANTERIOR avalia (com o tornozelo em leve flexão plantar, tracionando o calcâneo para frente e comparando com o lado sadio). O CALCANEOFIBULAR resiste à inversão com o tornozelo em neutro ou dorsiflexão, e se avalia pelo teste da inclinação talar (talar tilt). O talofibular posterior é o mais forte e raramente rompe, salvo em luxação franca.",
+  "correta": "Ligamento fibulotalar anterior.",
+  "incorretas": {
+   "A": "O fibulocalcâneo é testado pela inclinação talar, com estresse em varo, não pela gaveta.",
+   "C": "O fibulotalar posterior é o mais resistente do complexo e só é lesado em traumas de alta energia com luxação.",
+   "D": "O deltoide é o complexo medial; sua lesão se investiga com estresse em eversão e rotação externa."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0080": {
+  "conceito": "A osteotomia de Cotton é uma cunha de ADIÇÃO com abertura DORSAL no cuneiforme medial. Ao abrir o osso pelo dorso, ela empurra a coluna medial para baixo: a cabeça do primeiro metatarso desce (flexão PLANTAR do primeiro raio) e, com isso, o antepé gira em PRONAÇÃO. É exatamente o gesto que corrige o supinatus do antepé residual da correção do pé plano — depois de medializar o calcâneo e alongar a coluna lateral, sobra um antepé supinado com a borda medial elevada, e o Cotton devolve o apoio da cabeça do primeiro metatarso ao chão. Guardar o par ajuda: Cotton pronaciona o antepé no pé plano; a osteotomia dorsiflexora da base do primeiro metatarso faz o contrário, e serve ao pé cavo.",
+  "correta": "Flexão plantar da cabeça do primeiro metatarso e pronação do antepé.",
+  "incorretas": {
+   "A": "A flexão dorsal do primeiro raio é o efeito da osteotomia dorsiflexora da base do primeiro metatarso, usada no pé CAVO — o oposto da indicação do Cotton.",
+   "B": "Erra a direção da cabeça do metatarso e o sentido da rotação do antepé.",
+   "D": "Acerta a flexão plantar, mas a rotação decorrente é pronação: baixar a borda medial é, por definição, pronar o antepé."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0081": {
+  "conceito": "Berndt e Harty descreveram dois padrões, cada um com seu mecanismo. A lesão ANTEROLATERAL vem da INVERSÃO com DORSIFLEXÃO: a borda anterolateral da tróclea é cisalhada contra o maléolo lateral, e o resultado é uma lesão rasa, em lasca, quase sempre com história de trauma e instável. A POSTEROMEDIAL vem da inversão com flexão plantar e rotação externa da tíbia: lesão mais profunda, em taça, muitas vezes sem trauma identificado. Ressalva importante: nas casuísticas, a lesão MEDIAL é a mais frequente — em torno de 60% dos casos. A alternativa que o gabarito aponta só se sustenta porque as opções oferecidas restringem a escolha ao par anterolateral e ao par anteroMEDIAL, e este último vem casado com um mecanismo que pertence à lesão posteromedial.",
+  "correta": "Anterolateral, por inversão e dorsiflexão do tornozelo — o par mecanismo-topografia internamente coerente entre as opções oferecidas.",
+  "incorretas": {
+   "B": "A eversão não impacta a borda anterolateral do tálus contra o maléolo lateral.",
+   "C": "Inversão com flexão plantar é o mecanismo da lesão POSTEROmedial, não anteromedial.",
+   "D": "Combina uma topografia que não corresponde ao padrão descrito com um mecanismo que não a produz."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0082": {
+  "conceito": "O teste avalia se o hálux valgo é passivamente REDUTÍVEL: o examinador segura o hálux e o VARIZA, tentando trazê-lo de volta ao eixo do primeiro metatarso. Se ele não alinha, o que está travando são as estruturas laterais encurtadas — cápsula lateral retraída, ligamento metatarsossesamoideo lateral e tendão adutor do hálux. O dado é cirúrgico: é exatamente por isso que a operação de McBride, de onde vem o nome, tem como etapa fundamental a LIBERAÇÃO LATERAL desses elementos. Sem ela, nenhuma osteotomia mantém a correção — o hálux volta a ser puxado para o valgo.",
+  "correta": "Varização do hálux; a ausência de alinhamento indica retração capsular lateral.",
+  "incorretas": {
+   "A": "Acerta a manobra, erra a interpretação: a posição lateralizada dos sesamoides é achado RADIOGRÁFICO (graduado por Hardy e Clapham), não o que essa manobra clínica revela.",
+   "C": "Erra a manobra — valgizar é acentuar a deformidade, não testá-la — e a artrose metatarsofalângica se manifestaria por dor e perda de arco de movimento, quadro do hálux rígido.",
+   "D": "Erra a manobra e o mecanismo: o abdutor do hálux puxa o dedo para MEDIAL, e seu espasmo produziria hálux varo."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0083": {
+  "conceito": "A ordem das estruturas na face anterior do tornozelo, de medial para lateral, é: tibial anterior, extensor longo do hálux, FEIXE NEUROVASCULAR (artéria tibial anterior e nervo fibular profundo) e extensor longo dos dedos. O feixe corre entre o extensor longo do hálux e o extensor longo dos dedos. Portanto, se o acesso usa a janela entre TIBIAL ANTERIOR e EXTENSOR LONGO DO HÁLUX, o plano de dissecção fica MEDIAL ao feixe, e ele é afastado para LATERAL junto com o extensor longo dos dedos. A regra vale ao contrário também: um acesso feito lateralmente ao extensor longo do hálux levaria o feixe para medial.",
+  "correta": "Lateralmente, com o tendão extensor longo dos dedos.",
+  "incorretas": {
+   "A": "O tibial anterior é o tendão mais medial de todos: nada afastado com ele vai para lateral.",
+   "B": "O feixe não acompanha o tibial anterior — está duas estruturas mais lateral.",
+   "D": "O extensor longo dos dedos é lateral ao feixe; afastá-lo medialmente contraria a anatomia e a geometria do acesso."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0084": {
+  "conceito": "As duas coalizões mais comuns somam cerca de 90% dos casos, e cada uma tem seu sinal e sua incidência. TALOCALCANEANA: SINAL DO C no PERFIL — a cortical do domo do tálus se continua com a do sustentaculum tali, desenhando um C fechado, porque a barra apaga o intervalo entre os dois ossos; confirma-se com tomografia em cortes coronais e costuma dar sintomas entre 12 e 16 anos. CALCANEONAVICULAR: SINAL DO TAMANDUÁ (anteater nose) — o processo anterior do calcâneo alongado e afilado apontando para o navicular, mais bem visto na OBLÍQUA a 45 graus; dá sintomas mais cedo, entre 8 e 12 anos.",
+  "correta": "Talocalcaneana com sinal do C; calcaneonavicular com sinal do tamanduá.",
+  "incorretas": {
+   "B": "Troca os dois sinais de lugar.",
+   "C": "A coalizão talonavicular existe, associada a síndromes e à deficiência longitudinal da fíbula, mas é rara — não figura entre as mais prevalentes.",
+   "D": "Erra o sinal da talocalcaneana e ainda substitui a calcaneonavicular pela talonavicular."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0085": {
+  "conceito": "O acesso de Gatellier e Chastang é a via posterolateral TRANSFIBULAR: faz-se uma osteotomia da fíbula distal, rebate-se o fragmento com os ligamentos ainda inseridos e ganha-se ampla exposição da porção posterior e lateral da tróclea do TÁLUS e da tíbia distal. Ao final, a fíbula é reduzida e fixada. É a via clássica para lesões osteocondrais posterolaterais de difícil alcance e para fraturas do maléolo posterior — e vale saber que hoje ela compete com a artroscopia posterior e com o acesso posterolateral sem osteotomia, muito menos agressivos.",
+  "correta": "Tálus.",
+  "incorretas": {
+   "B": "Nenhuma parte da via alcança o fêmur, que está a duas articulações de distância.",
+   "C": "O joelho tem seus próprios acessos; a osteotomia da fíbula DISTAL não o expõe.",
+   "D": "O calcâneo é acessado pela via lateral estendida em L, pelo acesso do seio do tarso ou por vias mediais, e não por esta."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0086": {
+  "conceito": "Nas fraturas do pilão, a escolha do acesso é ditada pela localização da cominuição e pela condição da pele — e a regra de ouro é esperar as partes moles, tratando primeiro com fixador externo em ponte, para reduzir e fixar em definitivo entre 7 e 21 dias. Entre as vias, a ANTEROMEDIAL é a que expõe a MAIOR ÁREA da tíbia distal: a face medial da tíbia é subcutânea e permite uma exposição extensa da superfície articular. O preço é justamente esse — cobertura cutânea fina, mal vascularizada e com alto risco de deiscência e exposição do implante, motivo pelo qual a via anterolateral, com melhor envelope de partes moles, ganhou espaço nas últimas décadas.",
+  "correta": "Anteromedial.",
+  "incorretas": {
+   "A": "O acesso anterolateral tem melhor cobertura de partes moles e permite placa em posição mais segura, mas expõe área menor da superfície articular e não alcança bem o fragmento medial.",
+   "C": "O posteromedial serve ao fragmento posteromedial e ao acesso ao feixe tibial posterior; é uma janela restrita.",
+   "D": "O posterolateral é usado para o fragmento posterolateral (de Volkmann) e para a fíbula, também com exposição limitada da tíbia distal."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0087": {
+  "conceito": "A radiografia de estresse nas fraturas do tornozelo procura responder a uma pergunta: o complexo medial (ligamento deltoide) está íntegro? Se estiver, uma fratura isolada do maléolo lateral é estável e pode ser tratada sem cirurgia; se não, o tornozelo é instável. O teste padrão é feito com o tornozelo em NEUTRO e ROTAÇÃO EXTERNA do pé (external rotation stress), medindo-se o espaço claro medial na incidência em mortise. Um espaço medial maior que 4 a 5 mm, ou maior que o espaço tibiotalar superior, indica lesão do deltoide. Alternativa aceita é a radiografia com carga (weight-bearing), hoje preferida por muitos por ser fisiológica e mais tolerável ao paciente.",
+  "correta": "Neutro e rotação externa do antepé.",
+  "incorretas": {
+   "A": "A rotação interna fecha a pinça e aproxima o tálus do maléolo medial: é o movimento que ESCONDE a instabilidade, não o que a revela.",
+   "C": "Além da rotação interna estar errada, a flexão plantar coloca a porção estreita da tróclea na pinça e cria folga inespecífica, prejudicando a interpretação.",
+   "D": "A rotação externa está certa, mas a flexão plantar introduz o mesmo artefato: o teste se faz em neutro."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0088": {
+  "conceito": "A chave anatômica da articulação de Lisfranc é uma AUSÊNCIA: NÃO existe ligamento intermetatársico entre a base do primeiro e a do segundo metatarso. Como a base do segundo metatarso é encaixada, recuada entre os cuneiformes (a pedra angular do arco transverso), a estabilidade dessa junção medial depende de um único ligamento oblíquo — o LIGAMENTO DE LISFRANC, que vai do CUNEIFORME MEDIAL à base do SEGUNDO metatarso, na face plantar. É a estrutura mais forte do complexo, e sua ruptura é o que produz a diástase entre o primeiro e o segundo metatarsos e o sinal do fleck (avulsão óssea nesse espaço). As colunas se dividem em medial (cuneiforme medial e primeiro metatarso), intermédia (cuneiformes intermédio e lateral com o segundo e terceiro metatarsos) e lateral (cuboide com quarto e quinto metatarsos), esta última móvel e que não deve ser artrodesada.",
+  "correta": "Não existe ligamento intermetatársico entre o primeiro e o segundo metatarso.",
+  "incorretas": {
+   "A": "A coluna lateral é formada pelo cuboide com o QUARTO e o quinto metatarsos, não apenas com o quinto.",
+   "C": "O ligamento de Lisfranc vai do cuneiforme MEDIAL à base do SEGUNDO metatarso — a alternativa troca os dois extremos.",
+   "D": "A coluna medial é apenas o cuneiforme medial com o primeiro metatarso; o segundo metatarso e o cuneiforme intermédio pertencem à coluna intermédia."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0090": {
+  "conceito": "O hálux valgo é uma deformidade tridimensional, e a parte mais esquecida é a rotacional. No plano transverso a falange desvia lateralmente, aumentando o ângulo metatarsofalângico; o primeiro metatarso, ao mesmo tempo, varíza, o que AUMENTA o ângulo intermetatársico. No plano frontal o hálux PRONA, girando sobre o próprio eixo — é o que se vê pela unha voltada para medial. E a cabeça do metatarso escorrega medialmente por cima do aparelho sesamoideo, de modo que os sesamoides ficam LATERALIZADOS em relação a ela (embora permaneçam no lugar, presos ao adutor e ao ligamento intermetatársico transverso).",
+  "correta": "Valgismo da articulação metatarsofalângica e pronação do hálux.",
+  "incorretas": {
+   "A": "O ângulo intermetatársico AUMENTA — é justamente o varo do primeiro metatarso que abre o espaço e forma a proeminência medial.",
+   "B": "O ângulo metatarsofalângico também aumenta: é ele que define a deformidade.",
+   "D": "Inverte a direção do desvio sesamoideo: em relação à cabeça do metatarso, os sesamoides ficam LATERAIS. A subluxação metatarsofalângica, essa sim, existe."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0091": {
+  "conceito": "O pé é acometido em cerca de 90% dos pacientes com artrite reumatoide, e frequentemente é o primeiro sítio da doença. No antepé — que é onde tudo começa, pelas metatarsofalângicas — a manifestação predominante é o HÁLUX VALGO, muitas vezes grave, com o hálux cavalgando os dedos vizinhos. Ele vem acompanhado do restante do antepé reumatoide: dedos menores com HIPEREXTENSÃO da metatarsofalângica e flexão das interfalângicas (dedos em garra), luxação dorsal das falanges, migração distal do coxim gorduroso e cabeças metatarsais proeminentes na planta, com calosidades dolorosas.",
+  "correta": "O hálux valgo é a manifestação clínica predominante.",
+  "incorretas": {
+   "B": "A proporção de pacientes com acometimento sintomático dos pés é muito maior que um terço — chega a cerca de 90% ao longo da doença.",
+   "C": "A deformidade das metatarsofalângicas dos dedos menores é de HIPEREXTENSÃO com subluxação dorsal, não de flexão; a flexão fica nas interfalângicas.",
+   "D": "Hálux rígido não é a manifestação característica do pé reumatoide, e não tem esse predomínio masculino — o hálux rígido é, aliás, mais frequente em mulheres."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0092": {
+  "conceito": "Wagner gradua a úlcera do pé diabético pela profundidade e pela presença de infecção profunda ou necrose. Grau 0: pé de risco sem úlcera. Grau 1: úlcera superficial, só pele. Grau 2: úlcera profunda até tendão, cápsula ou osso, SEM infecção profunda. GRAU 3: úlcera profunda COM abscesso, OSTEOMIELITE ou artrite séptica. Grau 4: gangrena localizada. Grau 5: gangrena de todo o pé. Na prática, o que separa o grau 2 do 3 é a resposta a uma pergunta clínica: há coleção, osso infectado ou artrite séptica? O teste do probe-to-bone e a ressonância são os instrumentos usuais para respondê-la.",
+  "correta": "Tipo 3.",
+  "incorretas": {
+   "A": "O grau 2 é a úlcera profunda SEM osteomielite nem abscesso.",
+   "C": "O grau 4 corresponde a gangrena localizada, com tecido já necrosado.",
+   "D": "O grau 5 é a gangrena extensa de todo o pé, que leva à amputação maior."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "pe-tornozelo-0093": {
+  "conceito": "Na doença de Charcot-Marie-Tooth, o fibular longo permanece forte enquanto o tibial anterior enfraquece, e o resultado é o primeiro raio plantifletido. Com a cabeça do primeiro metatarso mais baixa que a do quinto, a borda MEDIAL do antepé desce: isso é, por definição, PRONAÇÃO do antepé, que na nomenclatura do pé recebe também o nome de antepé VALGO (o valgo do antepé é o desvio em que a face plantar olha para lateral). É esse antepé pronado que, para permitir o apoio plantígrado, obriga o retropé a compensar em VARO — e é por isso que o teste de Coleman, apoiando o antepé lateral sobre um bloco e deixando o primeiro raio pender, corrige o varo do retropé quando ele ainda é flexível.",
+  "correta": "Pronação e valgo do antepé — dois nomes para o mesmo desvio, com o primeiro raio baixo.",
+  "incorretas": {
+   "A": "Varo do antepé é o desvio oposto, com a borda medial elevada; ele não decorre da flexão plantar do primeiro raio. O varo, aqui, é do RETROPÉ.",
+   "C": "Supinação do antepé também descreve a borda medial elevada — o contrário do que a plantiflexão do primeiro raio produz.",
+   "D": "Supinação e valgo são termos contraditórios entre si aplicados ao mesmo segmento."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
  }
 }
