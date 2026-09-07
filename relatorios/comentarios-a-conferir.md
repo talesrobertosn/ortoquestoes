@@ -57,6 +57,7 @@ conceitos básicos, 11 questões.
 | `mao-0418` | O padrão mais comum de fratura do semilunar no Kienböck acomete o polo **anterior** | Conheço a fratura coronal do semilunar, que separa fragmento volar e dorsal, mas não consigo confirmar qual polo é o mais acometido |
 | `quadril-0119` | As alterações degenerativas vizinhas começam a doer **15 a 25 anos** depois da artrodese do quadril | O número que a literatura cita é "cerca de duas décadas", e ele cabe tanto na faixa do gabarito quanto na alternativa C (10 a 20 anos). A questão se decide só pelo intervalo, e não consigo separar os dois |
 | `mao-0542` | Na macrodactilia o polegar deforma em **abdução e hiperextensão** | A macrodactilia do polegar costuma vir descrita pelo excesso de volume e pelo desvio no plano do dedo acometido, e não achei fonte que fixe esse par de deformidades como o padrão |
+| `coluna-0210` | Na síndrome de Grisel o queixo fica rodado **para o lado da lesão** | A postura clássica do torcicolo atlantoaxial ("cock-robin") é inclinação para um lado e rotação para o outro. O que muda a resposta é o que a banca chama de "lado da lesão": o lado para onde a massa lateral escorregou para frente ou o lado oposto. A questão se decide só por essa convenção, e ela não é uniforme na literatura |
 
 ## Figura que não consigo interpretar com segurança
 

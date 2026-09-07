@@ -154,15 +154,14 @@
   "conferido": false
  },
  "coluna-0016": {
-  "alerta": "O sinal de Hoffmann, alternativa A, é sinal de mielopatia cervical tão esperado quanto o Babinski numa compressão medular em C6-C7 — a lesão está acima do arco reflexo (C8-T1) que o medeia, e as duas respostas de primeiro neurônio motor tendem a aparecer juntas. A questão elege apenas o Babinski, e não encontro razão para descartar a A. As duas descrevem corretamente o quadro de uma hérnia central nesse nível.",
-  "conceito": "A posição da hérnia cervical decide a síndrome. Hérnia CENTRAL comprime a medula e produz MIELOPATIA: marcha desequilibrada, perda de destreza fina, hiper-reflexia abaixo do nível, clônus, Babinski e Hoffmann. Hérnia POSTEROLATERAL comprime a raiz e produz radiculopatia. E vale fixar a numeração cervical, que é diferente da lombar: o disco C6-C7 comprime a raiz de C7 — na coluna cervical a raiz sai ACIMA do pedículo correspondente, de modo que a raiz comprimida leva o número da vértebra inferior. C7 dá fraqueza de tríceps e alteração do reflexo tricipital; o braquiorradial é reflexo de C6.",
-  "correta": "Mielopatia com reflexo de Babinski presente — a hérnia central comprime a medula.",
+  "conceito": "Duas coisas resolvem esta questão. A primeira é a posição da hérnia: CENTRAL comprime a medula e produz mielopatia; posterolateral comprime a raiz e produz radiculopatia. A segunda é sutil e vale guardar: o sinal de HOFFMANN tem seu arco reflexo em C8-T1, e o segmento medular C8 fica na altura das vértebras C6-C7. Para o Hoffmann se exaltar, a lesão precisa estar ACIMA desse arco — na prática, no nível de C5-C6 ou acima. Uma hérnia central em C6-C7 comprime a medula bem no nível do arco, e ali o reflexo não se exalta. Já o BABINSKI, mediado por segmentos muito abaixo, aparece normalmente.",
+  "correta": "Mielopatia com reflexo de Babinski presente — a hérnia central comprime a medula, e o Babinski é mediado abaixo do nível da lesão.",
   "incorretas": {
-   "A": "Descreve corretamente a mesma mielopatia por outro sinal, e mesmo assim foi dada como errada. Veja o aviso acima.",
-   "C": "O nível da raiz está certo (C6-C7 comprime C7), mas o reflexo de C7 é o TRICIPITAL; o braquiorradial é de C6. E hérnia central não produz radiculopatia isolada.",
+   "A": "O sinal de Hoffmann depende de um arco reflexo em C8-T1, cujo nível vertebral é justamente C6-C7. Uma lesão nesse ponto compromete o próprio arco, e por isso não se espera Hoffmann exaltado — ele indica mielopatia em C5-C6 ou acima, como diz a `coluna-0219` deste acervo.",
+   "C": "O nível da raiz está certo (o disco C6-C7 comprime C7), mas o reflexo de C7 é o TRICIPITAL; o braquiorradial é de C6. E hérnia central não produz radiculopatia isolada.",
    "D": "A raiz comprimida pelo disco C6-C7 é C7, e não C6; a face lateral do braço é território de C5."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-07",
   "conferido": false
  },
  "coluna-0017": {
@@ -1663,6 +1662,480 @@
    "D": "A medular posterior isolada é rara."
   },
   "geradoEm": "2026-09-06",
+  "conferido": false
+ },
+ "coluna-0178": {
+  "conceito": "A escoliose idiopática do adolescente tem um padrão tão constante que a fuga dele é sinal de alarme: curva TORÁCICA com convexidade à DIREITA, em menina, indolor. E ela vem acompanhada de uma alteração no plano sagital que muita gente esquece — a HIPOcifose torácica. A deformidade é tridimensional: a coluna roda e, ao rodar, a cifose torácica se achata, produzindo o dorso plano característico. Isso importa na cirurgia, porque uma instrumentação que só corrige o plano frontal e ignora o sagital deixa o paciente plano demais.",
+  "correta": "Convexidade à direita, com a cifose torácica diminuída.",
+  "incorretas": {
+   "B": "O lado está certo, mas a cifose torácica se ACHATA na escoliose idiopática, e não se acentua.",
+   "C": "A hipocifose está certa, mas curva torácica à esquerda é padrão atípico, que obriga a investigar causa secundária com ressonância de todo o neuroeixo.",
+   "D": "Erra o lado e o comportamento da cifose."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0179": {
+  "conceito": "SCIWORA é a lesão medular sem alteração radiográfica, e ela existe por uma razão anatômica da criança: a coluna infantil é muito elástica — facetas horizontalizadas, ligamentos frouxos, cartilagem abundante — e pode se distender o suficiente para lesar a medula e voltar ao lugar, sem fratura nem luxação visíveis. Quem faz o diagnóstico é a ressonância. No trauma de baixa energia, a lesão costuma ser leve e transitória, e o tratamento é IMOBILIZAÇÃO por algumas semanas, para evitar a recorrência enquanto a estabilidade se restabelece. Não há o que descomprimir: não há compressão persistente.",
+  "correta": "Imobilização, que protege a coluna enquanto a lesão se recupera.",
+  "incorretas": {
+   "B": "Não há estrutura comprimindo a medula — a lesão foi por distensão momentânea.",
+   "C": "Pelo mesmo motivo, não há indicação de descompressão; e artrodese numa coluna infantil sem instabilidade estabelecida seria excessiva.",
+   "D": "Dispensar a imobilização expõe a criança à recorrência, que é justamente o que se quer evitar."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0180": {
+  "conceito": "A osteomielite vertebral é a forma mais comum de osteomielite hematogênica do adulto, mas responde por uma fração pequena do total — algo em torno de 3 a 5%. A relevância dela não está na frequência e sim no atraso diagnóstico: a apresentação é dor axial arrastada, muitas vezes sem febre, com VHS e PCR elevados, e o intervalo entre o início e o diagnóstico se mede em meses. O germe mais comum é o Staphylococcus aureus, a via é hematogênica arterial, o foco se instala junto à placa terminal e o exame que faz o diagnóstico é a ressonância.",
+  "correta": "3 a 5% dos casos.",
+  "incorretas": {
+   "B": "6 a 8% superestima a proporção descrita.",
+   "C": "10 a 12% é bem acima do que as séries relatam.",
+   "D": "13 a 15% tornaria a coluna quase tão frequente quanto os ossos longos, o que não corresponde à realidade."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0181": {
+  "conceito": "Duas informações do enunciado orientam a resposta. A hérnia é FORAMINAL e sem compressão central: portanto radiculopatia, e não mielopatia — o que já elimina os sinais de primeiro neurônio motor. E o nível é C4-C5: na coluna cervical a raiz leva o número da vértebra INFERIOR, então a raiz comprimida é C5. O pacote de C5 é sensibilidade na face lateral do OMBRO e do braço, fraqueza da abdução do ombro pelo DELTOIDE e alteração do reflexo BICIPITAL.",
+  "correta": "Fraqueza do deltoide com alteração do reflexo bicipital — o quadro da raiz de C5.",
+  "incorretas": {
+   "A": "Dificuldade de marcha e Hoffmann positivo são sinais de mielopatia, e o enunciado diz que não há compressão central.",
+   "B": "Dedo médio e tríceps correspondem a C7, comprimida pelo disco C6-C7.",
+   "C": "A parestesia no ombro corresponde a C5, mas o reflexo de C5 é o bicipital; o tricipital é de C7."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0182": {
+  "conceito": "Escoliose idiopática do adolescente não dói. Quando a curva vem acompanhada de dor — sobretudo dor NOTURNA, que melhora com anti-inflamatório —, o diagnóstico a afastar é o OSTEOMA OSTEOIDE. Ele se instala nos elementos posteriores, e o espasmo muscular antálgico produz uma escoliose de curva curta, rígida, com o ápice no nível da lesão e sem a rotação típica da idiopática. A radiografia pode não mostrar nada; quem encontra o nidus é a tomografia, e a cintilografia mostra hipercaptação intensa e localizada. Ressecado o nidus, a curva costuma desaparecer — desde que a criança ainda tenha crescimento.",
+  "correta": "Osteoma osteoide.",
+  "incorretas": {
+   "A": "A espondilodiscite dói, mas vem com sintomas constitucionais e marcadores inflamatórios elevados, e não é a causa mais comum de escoliose dolorosa.",
+   "B": "A escoliose da neurofibromatose é distrófica e progressiva, mas não caracteristicamente dolorosa.",
+   "D": "A dismetria produz escoliose postural, compensatória e indolor, que desaparece ao sentar ou ao compensar o encurtamento."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0183": {
+  "conceito": "Lee dividiu o trajeto da raiz lombar em três zonas, e cada uma tem sua causa típica de estenose. Zona 1, de ENTRADA — o recesso lateral —, delimitada pelo processo articular superior atrás e pelo pedículo lateralmente: é ali que a hipertrofia facetária aperta a raiz, e o quadro é de dor radicular unilateral, presente inclusive em repouso, que piora na extensão. Zona 2, MÉDIA, abaixo da pars e do pedículo, estreitada por osteófito da pars ou tecido fibroso. Zona 3, de SAÍDA, o forame propriamente dito, comprometido por protrusão lateral, osteófito e perda de altura discal.",
+  "correta": "Zona 1, a de entrada.",
+  "incorretas": {
+   "B": "A zona 2 é a média, sob a pars interarticular.",
+   "C": "A zona 3 é a de saída, o forame propriamente dito.",
+   "D": "A classificação de Lee tem três zonas, não quatro."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0184": {
+  "alerta": "Os dois termos existem e nomeiam coisas diferentes. Escoliose IDIOPÁTICA DO ADULTO é a curva que começou na adolescência e envelheceu junto com o paciente. Escoliose DEGENERATIVA, ou DE NOVO, é a que surge depois da quarta ou quinta década numa coluna que era reta — nasce da degeneração assimétrica do disco e da faceta, tem curva curta, geralmente lombar, com subluxação rotatória e estenose associada. O enunciado descreve exatamente essa segunda, e a alternativa que a nomeia é a A, marcada como errada. Se você respondeu \"de novo\", o erro não foi seu.",
+  "conceito": "A escoliose do adulto se divide pela origem, e a divisão muda o tratamento. A idiopática do adulto tem curva longa, harmoniosa, herdada da adolescência, e o problema costuma ser deformidade e desequilíbrio. A degenerativa (de novo) tem curva curta, de poucos níveis, com colapso discal assimétrico, artrose facetária e subluxação rotatória — e o problema dominante é a ESTENOSE: o paciente chega por claudicação neurogênica e dor radicular, e não por deformidade. É por isso que a cirurgia de uma costuma ser descompressão com fusão curta, e a da outra, correção longa com atenção ao equilíbrio sagital.",
+  "correta": "A resposta oficial é escoliose idiopática do adulto.",
+  "incorretas": {
+   "A": "É o termo que a literatura usa exatamente para a curva descrita no enunciado, e mesmo assim foi dado como errado. Veja o aviso acima.",
+   "B": "\"Escoliose metabólica\" não é uma categoria usada na classificação da escoliose do adulto.",
+   "C": "A neuromuscular decorre de doença neurológica ou muscular de base, aparece na infância e não em coluna previamente normal."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0185": {
+  "conceito": "A lordose lombar não se distribui igualmente entre os cinco níveis: ela se concentra embaixo. L4-L5 e L5-S1 respondem juntos por cerca de dois terços de toda a lordose, e L5-S1 sozinho por perto de 40%. A consequência cirúrgica é direta: uma artrodese desses dois níveis feita em posição retificada consome a maior parte da lordose disponível e produz desequilíbrio sagital positivo, com dor e incapacidade. Restaurar lordose segmentar embaixo é, portanto, prioridade em qualquer fusão lombossacra — e é a razão de existirem cages lordóticos e osteotomias de subtração.",
+  "correta": "Discos de L4-L5 e L5-S1.",
+  "incorretas": {
+   "A": "L1-L2 e L2-L3 contribuem pouco para a lordose.",
+   "B": "L2-L3 e L3-L4 estão no meio da curva, com contribuição intermediária.",
+   "C": "L3-L4 e L4-L5 já se aproximam, mas o par que concentra a lordose inclui L5-S1."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0187": {
+  "conceito": "O balanço sagital global se mede pela linha de prumo traçada a partir do centro do corpo de C7. No indivíduo equilibrado ela cai dentro de uma faixa de cerca de 2 cm à frente ou atrás do canto posterossuperior de S1 — posição em que o tronco se sustenta com gasto energético mínimo. Quando a linha cai À FRENTE do sacro, o balanço é POSITIVO: o tronco está deslocado para diante e o paciente precisa de esforço muscular contínuo para se manter em pé, o que se associa fortemente a dor e incapacidade. Corrigir esse desequilíbrio é o objetivo central da cirurgia de deformidade do adulto.",
+  "correta": "Quando a linha de prumo cruza na frente do sacro.",
+  "incorretas": {
+   "A": "O canto posterossuperior de S1 é justamente a referência do equilíbrio neutro.",
+   "B": "L5 não é a referência usada nessa medida.",
+   "D": "Linha de prumo atrás do sacro caracteriza balanço sagital NEGATIVO."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0188": {
+  "conceito": "A cirurgia na doença de Scheuermann é indicação de exceção, e exige que dois requisitos apareçam juntos. A deformidade precisa ser grande e, sobretudo, PROGRESSIVA — o número que se cita é 70 a 75 graus ou mais, com progressão documentada em radiografias sucessivas —, e precisa haver DOR que não cede ao tratamento conservador bem conduzido. Deformidade grande porém estável e indolor é acompanhada, não operada. Acrescentam-se, como indicações menos frequentes, o comprometimento neurológico e a repercussão respiratória, ambos raros.",
+  "correta": "Ângulo progressivo de 70 graus ou mais associado a dor refratária ao tratamento conservador.",
+  "incorretas": {
+   "A": "Deformidade estável, ainda que grande, não indica cirurgia por si só — o que pesa é a progressão.",
+   "B": "Sem dor e sem progressão, a conduta é acompanhar.",
+   "D": "A progressão está certa, mas a ausência de dor retira o segundo requisito da indicação."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0189": {
+  "conceito": "A espondilolistese degenerativa é doença de evolução ARRASTADA, e isso a distingue das causas agudas de compressão. O escorregamento acontece ao longo de anos, à custa de artrose facetária e degeneração discal, e o quadro se instala devagar: dor lombar mecânica que vem primeiro, depois irradiação para as nádegas e coxas e, mais tarde, claudicação neurogênica pela estenose que o deslizamento produz. Progressão rápida, déficit motor instalado em dias ou alteração esfincteriana não pertencem a esse quadro — quando aparecem, obrigam a procurar outra causa.",
+  "correta": "Dor lombar com irradiação para os membros inferiores e progressão lenta.",
+  "incorretas": {
+   "A": "A estenose se instala, mas de forma gradual; progressão rápida não é o comportamento típico.",
+   "C": "A claudicação neurogênica é frequente, mas também se instala devagar.",
+   "D": "A dor lombar mecânica costuma abrir o quadro, e não faltar nele."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0190": {
+  "conceito": "A lição prática desta questão é maior do que o número: alteração degenerativa na ressonância lombar é achado quase UNIVERSAL a partir da quinta década, e por isso ela não pode ser tratada como explicação automática da dor. Nos estudos com voluntários assintomáticos, a degeneração discal aparece na esmagadora maioria dos indivíduos acima de 50 anos, e protrusões e abaulamentos são achados corriqueiros em quem nunca teve lombalgia. Daí a regra clínica: pedir ressonância na lombalgia sem bandeira vermelha costuma criar diagnóstico, e não resolvê-lo.",
+  "correta": "Praticamente 100% dos pacientes com 50 anos ou mais têm alguma alteração degenerativa na ressonância.",
+  "incorretas": {
+   "A": "60% aos 60 anos subestima muito: nessa idade a alteração é quase universal.",
+   "B": "70% aos 40 anos fica abaixo do que os estudos com assintomáticos mostram.",
+   "C": "80% aos 70 anos também subestima, e ainda desloca a idade para cima."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0191": {
+  "conceito": "A hérnia de disco lombar tem um pico etário estreito, entre a terceira e a quarta décadas, e a razão é mecânica. Nessa faixa o núcleo pulposo ainda está hidratado e com pressão suficiente para herniar, enquanto o ânulo já acumulou microfissuras — a combinação exata que permite a extrusão. No jovem, o disco é hidratado mas o ânulo é íntegro; no idoso, o disco já perdeu água e altura, e o problema deixa de ser hérnia e passa a ser estenose por artrose facetária, hipertrofia do ligamento amarelo e colapso discal.",
+  "correta": "Terceira e quarta décadas de vida.",
+  "incorretas": {
+   "A": "Na segunda década o ânulo ainda é íntegro e a hérnia é incomum.",
+   "C": "A quarta e a quinta décadas já vão além do pico descrito.",
+   "D": "Na quinta e sexta décadas o quadro dominante passa a ser a estenose degenerativa."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0193": {
+  "conceito": "O teste de Spurling é a manobra da radiculopatia cervical: com o pescoço em EXTENSÃO, inclinação lateral e rotação PARA O LADO sintomático, aplica-se compressão axial sobre a cabeça, fechando o forame — dor irradiada para o membro, seguindo o dermátomo, reproduz o teste. Vale a ressalva: a especificidade dele é alta, em torno de 90%, mas a SENSIBILIDADE é limitada, algo entre 30 e 50%. Ou seja, teste positivo praticamente confirma; teste negativo não afasta nada. Os outros nomes pertencem a outro território: Hoffmann e L'Hermitte são sinais de MIELOPATIA, e não de compressão radicular.",
+  "correta": "Teste de Spurling.",
+  "incorretas": {
+   "A": "O sinal de Hoffmann indica comprometimento de primeiro neurônio motor — mielopatia, e não radiculopatia.",
+   "B": "O sinal de L'Hermitte, o choque descendente à flexão do pescoço, também aponta para irritação medular.",
+   "D": "Não há um teste de Yamamoto consagrado na propedêutica da coluna cervical."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0194": {
+  "conceito": "A repercussão respiratória da escoliose depende da curva TORÁCICA, porque é ela que deforma a caixa e reduz o volume disponível. Curvas abaixo de 60 graus praticamente não alteram a função pulmonar de forma clinicamente perceptível. A partir de cerca de 70 graus começa a aparecer restrição mensurável e sintomática, com queda da capacidade vital. Curvas acima de 100 a 120 graus levam a hipoventilação alveolar, hipertensão pulmonar e cor pulmonale. Curvas lombares e toracolombares, por não deformarem a caixa torácica, não produzem esse efeito.",
+  "correta": "A partir de 70 graus.",
+  "incorretas": {
+   "A": "50 graus é limiar cirúrgico por deformidade e progressão, mas ainda não produz restrição clinicamente significativa.",
+   "C": "90 graus já corresponde a comprometimento importante — o problema começa antes.",
+   "D": "110 graus é o terreno do cor pulmonale, e não do início da repercussão."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0195": {
+  "conceito": "O colete de Milwaukee é uma órtese cervicotoracolombossacral e funciona por pressão em TRÊS PONTOS: almofadas posteriores no ápice da cifose empurram para frente, enquanto o cesto pélvico e o anel cervical seguram as extremidades no sentido contrário. O que o torna DINÂMICO é o paciente: o desconforto do apoio cervical faz com que ele se estenda ativamente para escapar da pressão, e essa correção ativa repetida é parte do mecanismo. Por isso ele exige colaboração e uso de muitas horas por dia — e por isso o ápice torácico alto, que uma órtese sem apoio cervical não alcança, é sua indicação.",
+  "correta": "Correção dinâmica em três pontos.",
+  "incorretas": {
+   "B": "Nenhuma órtese derrota curva; a derrotação é objetivo da instrumentação cirúrgica.",
+   "C": "O alongamento da musculatura anterior é parte do programa de fisioterapia associado, e não o mecanismo do colete.",
+   "D": "Guiar o crescimento descreve de forma vaga o efeito remodelador, mas o mecanismo do Milwaukee é a pressão em três pontos com correção ativa."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0200": {
+  "conceito": "Os critérios NEXUS permitem liberar a coluna cervical sem imagem, e são cinco, todos negativos — o paciente precisa NÃO ter nenhum deles: dor à palpação na linha média posterior do pescoço, déficit neurológico focal, alteração do nível de consciência, evidência de INTOXICAÇÃO e lesão dolorosa distratora. Preenchidos os cinco, a probabilidade de lesão cervical significativa é próxima de zero. A regra canadense é a alternativa, e acrescenta a avaliação da rotação ativa de 45 graus para cada lado — teste que o NEXUS não exige.",
+  "correta": "Não apresentar evidências de intoxicação.",
+  "incorretas": {
+   "A": "Deformidade visível não integra os cinco critérios.",
+   "B": "Equimose tampouco é critério — o que se procura é dor à palpação da linha média posterior.",
+   "D": "A mobilização ativa faz parte da regra CANADENSE, e não do NEXUS."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0201": {
+  "conceito": "O quadro se lê pelo trajeto dos tratos. Perda motora aponta o corticoespinhal, lateral. Perda de dor e temperatura aponta o espinotalâmico, anterolateral. Propriocepção e vibração PRESERVADAS apontam que o funículo posterior escapou. Os dois primeiros são irrigados pela artéria espinhal anterior, e o terceiro pelas espinhais posteriores — daí a síndrome medular ANTERIOR, que pode ocorrer por compressão anterior direta (fragmento retropulsado, hérnia) ou por lesão da artéria espinhal anterior. É a síndrome incompleta de pior prognóstico, com recuperação motora útil em cerca de 10 a 15%.",
+  "correta": "Síndrome medular anterior.",
+  "incorretas": {
+   "A": "Brown-Séquard é a hemissecção: o déficit é lateralizado, com perda motora e proprioceptiva de um lado e térmico-dolorosa do outro.",
+   "B": "A síndrome da cauda equina cursa com déficit assimétrico de raízes, anestesia em sela e alteração esfincteriana, abaixo do nível medular.",
+   "C": "A síndrome medular posterior é o oposto: perde propriocepção e vibração, poupando força, dor e temperatura."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0202": {
+  "conceito": "O teste de Adson investiga a compressão da artéria subclávia na síndrome do desfiladeiro torácico, mais especificamente no triângulo dos escalenos. Com o paciente sentado, palpa-se o pulso radial e pede-se que ele abduza e rode externamente o braço, inspire profundamente prendendo a respiração e gire a cabeça para o lado testado — manobras que tensionam os escalenos e elevam a primeira costela, fechando o espaço. Redução ou desaparecimento do pulso sugere compressão vascular. Vale a ressalva de que o teste tem muitos falsos positivos, e por isso não fecha diagnóstico sozinho.",
+  "correta": "Teste de Adson.",
+  "incorretas": {
+   "A": "O teste de Adams é o da inclinação anterior do tronco, usado no rastreamento da escoliose estruturada.",
+   "C": "Apley dá nome a testes do menisco e do ombro (a manobra de coçar as costas).",
+   "D": "O teste de Hoover investiga simulação de déficit motor."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0204": {
+  "conceito": "A escoliose congênita nasce de falha de formação ou de segmentação vertebral entre a quinta e a oitava semanas de gestação — exatamente o período em que se formam também o tubo neural, o coração e o trato geniturinário. Por isso as malformações associadas seguem esses três sistemas: alterações do NEUROEIXO em cerca de um terço (medula presa, diastematomielia, siringomielia, Chiari), CARDÍACAS em torno de 10 a 25%, e GENITURINÁRIAS em 20 a 30% (agenesia renal, rim em ferradura, duplicação ureteral). A consequência prática é obrigatória: toda criança com escoliose congênita precisa de ressonância de todo o neuroeixo, ecocardiograma e ultrassonografia renal antes de qualquer cirurgia.",
+  "correta": "Do neuroeixo, cardíacas e do sistema geniturinário.",
+  "incorretas": {
+   "A": "Fístula traqueoesofágica e alterações de membros fazem parte da associação VACTERL, que é outro contexto.",
+   "C": "Ânus imperfurado e alterações de membros também pertencem ao espectro VACTERL.",
+   "D": "A deformidade de Sprengel pode coexistir, mas não integra a tríade de associações mais frequentes."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0205": {
+  "conceito": "A espondilolistese da criança e do adolescente costuma ser descoberta pela DOR LOMBAR, e essa é a manifestação inicial em larga maioria — dor axial na região lombossacra, que piora com extensão e com atividade esportiva, tipicamente em quem pratica ginástica, mergulho, futebol americano ou levantamento. A radiculopatia de L5 aparece depois, quando o escorregamento estreita o forame. A alteração de marcha, com retração de isquiotibiais e a marcha em bermuda, e a deformidade lombossacra visível pertencem às formas de alto grau, que são a minoria.",
+  "correta": "A dor lombar.",
+  "incorretas": {
+   "A": "A deformidade lombossacra visível só aparece nas listeses de alto grau.",
+   "B": "A alteração de marcha, com retração de isquiotibiais, também é achado de alto grau.",
+   "C": "A radiculopatia surge mais tarde, quando o forame se estreita."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0207": {
+  "conceito": "Na coluna cervical a raiz comprimida leva o número da vértebra INFERIOR, de modo que o disco C6-C7 comprime a raiz de C7. O pacote de C7 tem três marcadores: sensibilidade no dedo MÉDIO, fraqueza da extensão do cotovelo pelo TRÍCEPS (e da flexão do punho e da extensão dos dedos) e diminuição do reflexo TRICIPITAL. Vale ter os vizinhos prontos para comparar: C5 dá face lateral do braço, deltoide e reflexo bicipital; C6 dá polegar e indicador, bíceps e reflexo braquiorradial; C8 dá dedo mínimo e intrínsecos, sem reflexo próprio.",
+  "correta": "Diminuição do reflexo tricipital.",
+  "incorretas": {
+   "A": "A face lateral do braço é território de C5.",
+   "B": "A fraqueza do bíceps corresponde a C5 e C6.",
+   "D": "A região tenar é inervada pelo mediano e corresponde ao território de C6, além de ser mais sugestiva de compressão distal do que radicular."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0208": {
+  "conceito": "A orientação das facetas define que movimento cada segmento permite, e é ela que separa as regiões da coluna. As facetas LOMBARES ficam no plano SAGITAL, o que libera flexoextensão e trava a rotação — daí a lombar fletir e estender bem e rodar pouco. As TORÁCICAS ficam no plano coronal, o que libera rotação e limita a flexoextensão, restrição reforçada pelas costelas. E as CERVICAIS ficam num plano oblíquo, a cerca de 45 graus, o que permite todos os movimentos e explica a mobilidade da região. As costelas contribuem para a rigidez torácica, mas quem governa a direção do movimento é a faceta.",
+  "correta": "A orientação das facetas articulares, que na lombar é sagital.",
+  "incorretas": {
+   "A": "A altura do disco influencia a amplitude, mas não determina em qual direção o segmento se move.",
+   "B": "A ausência de costelas retira uma restrição, e não cria a liberdade de flexoextensão — a torácica também roda apesar das costelas.",
+   "C": "A musculatura abdominal move e estabiliza o tronco, sem definir a direção permitida pela articulação."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0209": {
+  "conceito": "O disco intervertebral do adulto é a maior estrutura AVASCULAR do corpo, e essa é a raiz de quase tudo o que acontece com ele. Os vasos que existiam na infância regridem, e a partir daí as células do núcleo e do ânulo interno passam a se alimentar por DIFUSÃO através das placas terminais cartilaginosas, num fluxo que depende da alternância de carga e descarga — o disco absorve nutriente quando descomprimido e expulsa metabólitos quando comprimido. Daí três consequências: a cicatrização é péssima, o tabagismo e a aterosclerose das artérias segmentares aceleram a degeneração, e a calcificação da placa terminal com a idade fecha a via de entrada.",
+  "correta": "Por difusão através dos platôs vertebrais.",
+  "incorretas": {
+   "B": "Os vasos perianulares irrigam apenas o terço externo do ânulo, e não as células do núcleo.",
+   "C": "Não há vasos DENTRO da placa terminal alcançando o disco no adulto — eles regridem na infância; o que existe é o leito capilar subcondral do lado ósseo.",
+   "D": "A artéria vertebral irriga a coluna cervical e o tronco encefálico, e não os discos."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0211": {
+  "conceito": "SCIWORA existe por uma desproporção: a coluna da criança é elástica e pode se alongar vários centímetros sob distração, enquanto a medula tolera pouquíssimo estiramento antes de lesar. O mecanismo dominante é, portanto, o de FLEXÃO e DISTRAÇÃO — a coluna estica, a medula não acompanha, e depois tudo volta ao lugar, deixando radiografia e tomografia normais. Some-se a isso o componente isquêmico, por estiramento das artérias radiculares. Quem faz o diagnóstico é a ressonância, e o tratamento é imobilização, porque não há nada comprimindo para descomprimir.",
+  "correta": "Flexão ou distração.",
+  "incorretas": {
+   "A": "Rotação e translação produziriam luxação visível na imagem — e SCIWORA é definida justamente pela ausência dela.",
+   "C": "A hiperextensão é o mecanismo da síndrome centromedular do IDOSO com canal estreito, e não o da SCIWORA infantil.",
+   "D": "Mesma objeção quanto à hiperextensão."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0212": {
+  "conceito": "Duas características definem a estenose CENTRAL, e as duas decorrem da anatomia. Como a compressão atinge o saco dural inteiro, várias raízes sofrem ao mesmo tempo e a queixa é difusa, bilateral e sem seguir dermátomo — peso, cansaço, queimação nas coxas e pernas. E como a EXTENSÃO estreita o canal (o ligamento amarelo se pregueia para dentro, as facetas deslizam e a altura do forame cai), os sintomas pioram ao caminhar e ao ficar em pé, e aliviam ao fletir: sentar, apoiar-se no carrinho do supermercado, subir uma ladeira.",
+  "correta": "Não respeitam dermátomo e pioram com caminhadas e com a coluna em extensão.",
+  "incorretas": {
+   "A": "O padrão dermatomérico é da compressão de UMA raiz, no recesso lateral ou no forame.",
+   "C": "Erra as duas coisas: a flexão ALIVIA a estenose central.",
+   "D": "A ausência de padrão dermatomérico está certa, mas a flexão alivia, e não piora."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0213": {
+  "conceito": "O caso descreve síndrome da CAUDA EQUINA, e ela é emergência cirúrgica: quanto mais tempo a compressão persiste, menor a chance de recuperar esfíncter e função sexual. Os achados que obrigam a ressonância imediata são os neurológicos — anestesia em sela, retenção ou incontinência urinária, déficit motor progressivo como o pé caído, e alteração do tônus anal. A intensidade da DOR, por maior que seja, não é um deles: dor 10 em 10 é comum na lombalgia aguda benigna e não prediz compressão. Confundir os dois leva a pedir imagem para quem não precisa e a atrasar quem precisa.",
+  "correta": "A intensidade da dor não indica ressonância de urgência — ela não prediz compressão neurológica.",
+  "incorretas": {
+   "B": "O pé caído é déficit motor instalado e exige imagem imediata.",
+   "C": "A anestesia em sela é um dos sinais cardinais da síndrome da cauda equina.",
+   "D": "A perda urinária, com três dias de evolução, é o achado de pior prognóstico do quadro."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0214": {
+  "conceito": "A classificação de Lenke combina três informações. O TIPO (1 a 6) descreve quais curvas são estruturadas: 1 é torácica principal, 2 é DUPLA TORÁCICA, 3 é dupla maior, 4 é tripla maior, 5 é toracolombar/lombar e 6 é toracolombar/lombar com torácica principal. O MODIFICADOR LOMBAR olha onde a linha sacral central vertical passa em relação aos pedículos da vértebra apical lombar: A se passa entre eles (lombar não envolvida), B se toca, C se passa medialmente a eles. E o MODIFICADOR SAGITAL julga a cifose torácica de T5 a T12: menos de 10 graus é (−), de 10 a 40 é N (normal), acima de 40 é (+).",
+  "correta": "2AN: dupla torácica, sem envolvimento lombar e com cifose torácica normal.",
+  "incorretas": {
+   "A": "O tipo 1 é torácica principal única, e o modificador B indicaria a linha sacral tocando os pedículos.",
+   "C": "O tipo está certo, mas B indica envolvimento lombar e (+) indica hipercifose — o enunciado nega os dois.",
+   "D": "O tipo 3 é dupla maior, C indica lombar envolvida e (−) indica hipocifose."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0215": {
+  "conceito": "A espondilolistese ístmica (tipo II de Wiltse) decorre de fratura por estresse da pars interarticular, produzida por hiperextensão e rotação repetidas — e é por isso que ela tem esportes de assinatura: ginástica olímpica, mergulho, futebol americano (linha ofensiva), levantamento de peso, remo. O adolescente chega com dor lombar que piora na extensão, e o teste da cegonha (apoio unipodal com extensão) costuma reproduzi-la. O nível é L5-S1 na grande maioria, e o exame que mostra a lesão em fase aguda, ainda antes de a radiografia alterar, é a ressonância com sequências sensíveis a edema ou a tomografia.",
+  "correta": "Ístmica.",
+  "incorretas": {
+   "A": "A displásica é congênita, decorre de falha dos elementos posteriores e aparece independentemente de esporte.",
+   "C": "A degenerativa é doença de adulto acima de 50 anos, tipicamente em L4-L5.",
+   "D": "A patológica decorre de doença óssea que enfraquece o arco posterior, como tumor ou osteogênese imperfeita."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0217": {
+  "conceito": "A durotomia acidental é complicação conhecida da cirurgia lombar, e quando a sutura não é estanque o líquor continua vazando, formando pseudomeningocele ou fístula. Um dos recursos para diminuir a pressão sobre o reparo enquanto ele cicatriza é reduzir a PRODUÇÃO de líquor, e é aí que entra a acetazolamida: ela inibe a anidrase carbônica no plexo coroide, enzima necessária à secreção liquórica, funcionando como um dreno químico. Acompanha as medidas mecânicas — repouso, decúbito e, quando necessário, dreno lombar externo.",
+  "correta": "Acetazolamida, inibidora da anidrase carbônica.",
+  "incorretas": {
+   "A": "A naloxona é antagonista opioide, usada na reversão de depressão respiratória.",
+   "B": "O ibuprofeno é anti-inflamatório e não interfere na produção liquórica.",
+   "C": "O acetaminofeno (paracetamol) é analgésico e antitérmico, sem esse efeito."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0219": {
+  "conceito": "O sinal de Hoffmann é PATOLÓGICO: pesquisa-se dando um piparote na falange distal do dedo médio, e a resposta anormal é a flexão do polegar e do indicador. Ele indica liberação de primeiro neurônio motor, ou seja, mielopatia — mas com uma condição que vale entender, e não decorar: o arco reflexo dele passa por C8 e T1, e o segmento medular C8 fica na altura das vértebras C6-C7. Para que o reflexo se exalte, a lesão precisa estar ACIMA desse arco — na prática, no nível de C5-C6 ou acima. Lesão mais baixa compromete o próprio arco e o reflexo não aparece.",
+  "correta": "Patológico, e sua presença sugere mielopatia no nível de C5-C6 ou acima.",
+  "incorretas": {
+   "A": "O reflexo não é fisiológico, e não é a ausência dele que preocupa.",
+   "B": "Mesma objeção: a presença é que é anormal.",
+   "C": "\"Em qualquer nível\" é o erro: uma lesão abaixo de C6-C7 atinge o arco C8-T1 e abole o reflexo em vez de exaltá-lo."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0221": {
+  "conceito": "O espaço epidural não é uniforme: ele é praticamente virtual na região cervical, onde a dura quase encosta no canal, e vai ficando mais amplo e mais rico em gordura à medida que desce, sendo maior na região LOMBAR posterior. É nesse espaço amplo que o abscesso se acomoda com mais frequência, e por isso a lombar baixa é o sítio mais comum. A relação se inverte quando se pergunta pela gravidade: no cervical, onde não há espaço de reserva, o mesmo abscesso comprime a medula rapidamente e produz tetraplegia — daí a cirurgia ali ser preferencial.",
+  "correta": "Lombar baixa, onde o espaço epidural é mais amplo.",
+  "incorretas": {
+   "A": "A cervical é a região MENOS acometida, e ao mesmo tempo a mais perigosa quando acometida.",
+   "B": "A torácica é sítio frequente, mas fica atrás da lombar.",
+   "D": "A transição toracolombar não é o sítio de maior frequência descrito."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0223": {
+  "conceito": "A forma TÍPICA da doença de Scheuermann é a torácica, com ápice entre T7 e T9: cifose rígida que não corrige em hiperextensão, hiperlordose lombar e cervical compensatórias, e pouca dor — muitas vezes é a família que traz o adolescente, incomodada com a postura. A forma ATÍPICA é toracolombar ou lombar, com ápice entre T10 e L2, mais rara, mais dolorosa, associada a carga axial e atividade intensa, e de pior evolução na vida adulta. Em ambas o diagnóstico exige os critérios de Sörensen.",
+  "correta": "Entre T7 e T9.",
+  "incorretas": {
+   "A": "T3-T5 é mais alto que o ápice descrito.",
+   "B": "T3-T6 também está acima da faixa clássica.",
+   "D": "T7-T10 se sobrepõe em parte, mas a faixa descrita para a forma torácica típica é T7 a T9; ápice em T10 já se aproxima da forma toracolombar."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0224": {
+  "conceito": "Na escoliose congênita o prognóstico depende de quanto crescimento assimétrico a malformação permite, e é isso que separa as hemivértebras. A TOTALMENTE SEGMENTADA tem disco e placa de crescimento dos dois lados, livres: ela cresce por conta própria a cada ano e é a de PIOR prognóstico, com progressão em torno de 1 a 2 graus ao ano, ou mais na transição toracolombar. A parcialmente segmentada tem disco de um lado só e cresce menos. A não segmentada está fundida às vizinhas e praticamente não cresce. E a ENCARCERADA fica encaixada num nicho das vértebras vizinhas, sem produzir deformidade.",
+  "correta": "Hemivértebra totalmente segmentada.",
+  "incorretas": {
+   "A": "A encarcerada é a de melhor prognóstico: acomodada entre as vizinhas, praticamente não deforma.",
+   "B": "A não segmentada está fundida e não tem placa de crescimento livre para progredir.",
+   "D": "A parcialmente segmentada progride, mas bem menos que a totalmente segmentada."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0225": {
+  "conceito": "O reflexo cutâneo abdominal é pesquisado riscando os quatro quadrantes do abdome e observando o desvio da cicatriz umbilical para o lado estimulado. É reflexo superficial e desaparece nas lesões de primeiro neurônio motor — e a assimetria dele, num adolescente com escoliose, é um dos sinais de alarme mais úteis que existem: aponta para SIRINGOMIELIA, muitas vezes associada a malformação de Chiari. Somado a curva torácica à esquerda, dor, pé cavo ou déficit neurológico, ele obriga a pedir ressonância de todo o neuroeixo antes de qualquer decisão sobre a curva.",
+  "correta": "Siringomielia.",
+  "incorretas": {
+   "B": "O pectus excavatum é deformidade da parede torácica anterior e não altera reflexo algum.",
+   "C": "O fêmur curto congênito produz dismetria e escoliose postural, sem repercussão neurológica.",
+   "D": "A paralisia braquial obstétrica compromete o membro superior, e não os reflexos abdominais."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0226": {
+  "conceito": "A espondilólise e a listese ístmica de baixo grau são, na maioria, achados que respondem bem ao tratamento conservador: repouso do gesto que dói, órtese em alguns casos, fortalecimento do tronco e retorno progressivo. A cirurgia se reserva a três situações: dor persistente apesar de tratamento conservador bem conduzido por seis meses, PROGRESSÃO do escorregamento — o limiar citado é 50%, ou seja, a passagem para alto grau — e déficit neurológico. Vale lembrar que escorregamento acima de 50% em criança em crescimento é indicação mesmo sem sintoma, pelo risco de progredir mais.",
+  "correta": "Progressão do escorregamento acima de 50% ou dor persistente são indicações de tratamento cirúrgico.",
+  "incorretas": {
+   "A": "Achado incidental em paciente assintomático é justamente o oposto: costuma ser estável e não exige tratamento.",
+   "B": "A dor da criança é tipicamente AXIAL, lombar e ligada à extensão; radiculopatia é apresentação de alto grau e minoritária.",
+   "D": "Gesso toracolombar com repouso no leito não é o tratamento inicial — ele é ativo, com afastamento do gesto lesivo e reabilitação."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0227": {
+  "conceito": "SCIWORA é doença da coluna elástica, e a criança pequena é quem a tem: abaixo de 8 anos a cabeça é proporcionalmente grande, as facetas são horizontalizadas, os ligamentos são frouxos e boa parte do esqueleto ainda é cartilagem. Isso desloca o fulcro do movimento para a coluna CERVICAL ALTA e permite que a coluna se distenda sem quebrar, enquanto a medula não acompanha. Acima de 8 anos a anatomia se aproxima da do adulto, o fulcro desce para a cervical baixa e as lesões passam a produzir fratura visível. A coluna lombar praticamente não apresenta esse padrão.",
+  "correta": "Coluna cervical, em menores de 8 anos.",
+  "incorretas": {
+   "A": "A coluna lombar não é o sítio característico, e acima de 8 anos a elasticidade já diminuiu.",
+   "C": "A idade está certa, mas o sítio é cervical.",
+   "D": "O sítio está certo, mas acima de 8 anos o padrão passa a ser o de lesão com fratura visível."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0228": {
+  "conceito": "A escoliose distrófica da neurofibromatose tem uma geometria própria, e reconhecê-la muda a conduta: curva TORÁCICA, CURTA e agudamente angulada, tomando apenas quatro a seis níveis, quase sempre com cifose acentuada associada. Acompanham os sinais displásicos — escalopamento posterior dos corpos, costelas em fita, afilamento de pedículos, alargamento do forame e ectasia dural. Ela progride rápido, não responde a órtese e tem alto índice de pseudartrose, exigindo artrodese circunferencial com enxerto abundante. A forma NÃO distrófica, ao contrário, tem curva longa e se comporta como a idiopática.",
+  "correta": "Torácica, de ângulo curto, envolvendo de quatro a seis vértebras.",
+  "incorretas": {
+   "A": "Curva de ângulo longo é o padrão da forma não distrófica.",
+   "C": "A localização típica da forma distrófica é torácica, e a curva é curta.",
+   "D": "A curva curta está certa, mas a localização característica é torácica."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0229": {
+  "conceito": "A síndrome de Guillain-Barré é uma polirradiculoneuropatia desmielinizante aguda, geralmente pós-infecciosa, e o padrão dela é bem definido: paralisia flácida ASCENDENTE, que começa nos membros inferiores e sobe, com ARREFLEXIA — sinal de lesão de segundo neurônio motor — e dissociação albuminocitológica no líquor (proteína alta com celularidade normal). Ela importa ao ortopedista como diferencial da criança que deixa de andar: ao contrário da mielopatia compressiva, aqui não há nível sensitivo, não há hiper-reflexia e não há Babinski. O risco maior é a progressão para a musculatura respiratória.",
+  "correta": "Paralisia flácida ascendente com arreflexia.",
+  "incorretas": {
+   "B": "A progressão descendente é característica do botulismo, e não do Guillain-Barré.",
+   "C": "Hiper-reflexia indica lesão de primeiro neurônio motor — o oposto do que ocorre aqui.",
+   "D": "Erra a direção e o padrão reflexo ao mesmo tempo."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0230": {
+  "conceito": "Entre as formas extrapulmonares de tuberculose, a osteoarticular concentra-se na coluna — cerca de metade dos casos —, e dentro da vértebra o foco inicial é a porção ANTERIOR do corpo, território das artérias segmentares, onde o fluxo é lento e a rede é terminal. Dali a doença avança por baixo do ligamento longitudinal anterior até a vértebra vizinha, POUPANDO o disco, que é avascular. É essa preservação relativa do disco, com duas vértebras destruídas, que distingue a tuberculose da espondilodiscite piogênica na primeira olhada. E é a destruição da coluna anterior que produz a cifose angular do mal de Pott.",
+  "correta": "Elementos anteriores do corpo vertebral.",
+  "incorretas": {
+   "A": "A bacia é sítio possível, sobretudo a sacroilíaca, mas fica muito atrás da coluna.",
+   "B": "O fêmur entra pelo quadril, que é o segundo sítio — não o primeiro.",
+   "D": "Os elementos posteriores são acometidos em uma minoria de casos."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0232": {
+  "conceito": "Na escoliose neuromuscular a decisão de estender a artrodese até a pelve se apoia em duas perguntas. O paciente DEAMBULA? Se sim, evita-se incluir a pelve, porque a mobilidade lombossacra é necessária para andar e fundi-la piora a marcha. E existe OBLIQUIDADE PÉLVICA significativa? Acima de cerca de 15 graus, a pelve inclinada descompensa o assento, concentra pressão numa tuberosidade isquiática — com risco de úlcera — e impede que a correção acima se sustente. A soma das duas, paciente não deambulador com obliquidade acima de 15 graus, é a indicação clássica de incluir a pelve.",
+  "correta": "Não deambuladores com obliquidade pélvica maior que 15 graus.",
+  "incorretas": {
+   "A": "No paciente que anda, incluir a pelve compromete a marcha e é evitado.",
+   "B": "Mesma objeção, agravada por dispensar qualquer limiar de obliquidade.",
+   "D": "Obliquidade pequena não justifica a morbidade de estender a fixação até a pelve."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0234": {
+  "conceito": "Wiltse, Newman e Macnab separam a espondilolistese por etiologia, e o tipo IV, traumático, tem uma definição precisa: é a fratura AGUDA de um elemento do arco posterior que NÃO seja a pars interarticular — pedículo, lâmina ou faceta. A distinção importa porque a fratura da própria pars, quando aguda, é classificada dentro do tipo II (ístmico, subtipo de fratura aguda da pars), e não como traumática. Na prática, o tipo IV decorre de trauma de alta energia e o escorregamento aparece porque o arco perdeu a continuidade que segurava o corpo.",
+  "correta": "Fratura do pedículo e da faceta — elementos do arco posterior que não a pars.",
+  "incorretas": {
+   "B": "A fratura da pars, mesmo aguda, é classificada no tipo II (ístmico), e não no traumático.",
+   "C": "Mesma objeção quanto à pars.",
+   "D": "Idem: a presença da pars na descrição desloca o caso para o tipo II."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "coluna-0235": {
+  "conceito": "A cascata degenerativa de Kirkaldy-Willis descreve a história natural do segmento em TRÊS estágios, e entendê-la explica por que o mesmo paciente muda de queixa ao longo dos anos. DISFUNÇÃO: fissuras circunferenciais no ânulo e sinovite facetária, com dor localizada e episódica, sem instabilidade. INSTABILIDADE: o disco perde altura, a cápsula facetária se distende, aparecem o deslizamento anormal e a espondilolistese degenerativa — é a fase mais sintomática e a de maior movimento anômalo. ESTABILIZAÇÃO: osteófitos, hipertrofia facetária e do ligamento amarelo travam o segmento; a instabilidade cede, mas o preço é a ESTENOSE.",
+  "correta": "Três estágios: disfunção, instabilidade e estabilização.",
+  "incorretas": {
+   "A": "Inverte os dois primeiros: a disfunção precede a instabilidade.",
+   "C": "A cascata tem três estágios, e \"degeneração\" não é um deles — ela é o processo inteiro.",
+   "D": "Mesma objeção quanto ao número de estágios."
+  },
+  "geradoEm": "2026-09-07",
   "conferido": false
  }
 }
