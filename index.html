@@ -3,21 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>OrtoQuestões — banco de questões de ortopedia e traumatologia</title>
+    <title>
+      OrtoQuestões — banco de questões de ortopedia e traumatologia para o TEOT e o TARO
+    </title>
     <meta
       name="description"
-      content="Questões de provas anteriores de ortopedia — TEOT, TARO, SBOT e outras — organizadas por assunto. Sem cadastro, sem custo."
+      content="Banco de questões de ortopedia e traumatologia com provas anteriores do TEOT e do TARO, organizadas por assunto. Questões comentadas por IA e pela comunidade de ortopedistas e residentes."
     />
+    <meta
+      name="keywords"
+      content="questões de ortopedia, banco de questões de ortopedia, questões TEOT, prova TEOT, questões TARO, prova TARO, questões comentadas de ortopedia, simulado de ortopedia, residência de ortopedia, ortopedia e traumatologia, título de especialista em ortopedia, provas anteriores de ortopedia, estudo para o TEOT"
+    />
+    <meta name="author" content="Tales" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://ortoquestoes.com.br/" />
     <meta name="theme-color" content="#F1F3F2" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#101615" media="(prefers-color-scheme: dark)" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="OrtoQuestões" />
-    <meta property="og:title" content="OrtoQuestões — banco de questões de ortopedia e traumatologia" />
+    <meta property="og:url" content="https://ortoquestoes.com.br/" />
+    <meta
+      property="og:title"
+      content="OrtoQuestões — banco de questões de ortopedia e traumatologia"
+    />
     <meta
       property="og:description"
-      content="Questões de provas anteriores de ortopedia — TEOT, TARO, SBOT e outras — organizadas por assunto. Sem cadastro, sem custo."
+      content="Provas anteriores de TEOT e TARO organizadas por assunto, com questões comentadas por IA e pela comunidade de ortopedistas e residentes."
     />
-    <meta property="og:image" content="./previa.png" />
+    <meta property="og:image" content="https://ortoquestoes.com.br/previa.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <!--
       O SVG sozinho não basta: Safari e navegadores antigos ignoram favicon
@@ -39,9 +53,62 @@
         } catch (e) {}
       })()
     </script>
+    <!--
+      Dados estruturados. O buscador entende com isso o que o site é, quem o
+      mantém e que existe uma busca interna — informação que ele não extrairia
+      sozinho de uma aplicação que só monta o conteúdo depois do JavaScript.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "OrtoQuestões",
+        "alternateName": "Orto Questões",
+        "url": "https://ortoquestoes.com.br/",
+        "inLanguage": "pt-BR",
+        "description": "Banco de questões de ortopedia e traumatologia com provas anteriores do TEOT e do TARO, organizadas por assunto, comentadas por IA e pela comunidade.",
+        "author": { "@type": "Person", "name": "Tales" },
+        "audience": {
+          "@type": "EducationalAudience",
+          "educationalRole": "Residentes e especialistas em ortopedia e traumatologia"
+        },
+        "about": [
+          "Ortopedia e traumatologia",
+          "TEOT",
+          "TARO",
+          "Residência médica",
+          "Questões de prova comentadas"
+        ],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://ortoquestoes.com.br/#/treinar?busca={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="raiz"></div>
+    <!--
+      Só para quem não executa JavaScript — rastreadores antigos e leitores de
+      texto. O conteúdo repete o que a aplicação mostra; não é texto escondido
+      de usuário, porque quem tem JavaScript nunca chega a ver esta marcação.
+    -->
+    <noscript>
+      <h1>OrtoQuestões — banco de questões de ortopedia e traumatologia</h1>
+      <p>
+        O OrtoQuestões reúne questões de provas anteriores de ortopedia e traumatologia — TEOT,
+        TARO e outras — organizadas por assunto: mão, ombro e cotovelo, quadril, joelho, pé e
+        tornozelo, coluna, trauma, tumores, ortopedia pediátrica, doenças osteometabólicas e
+        conceitos básicos. As questões vão sendo comentadas uma a uma, por inteligência artificial
+        e pela comunidade de ortopedistas e residentes, com explicação de por que cada alternativa
+        está certa ou errada.
+      </p>
+      <p>
+        Este site precisa de JavaScript para funcionar. Habilite o JavaScript para responder as
+        questões, filtrar por assunto, prova e ano, e acompanhar o seu desempenho.
+      </p>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

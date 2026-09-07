@@ -4,7 +4,7 @@ export type Letra = 'A' | 'B' | 'C' | 'D' | 'E'
 
 export type Dificuldade = 'facil' | 'medio' | 'dificil'
 
-export type TipoProva = string // "TEOT", "TARO", "SBOT", "Simulado"
+export type TipoProva = string // "TEOT", "TARO", "Simulado"
 
 export interface Alternativa {
   letra: Letra

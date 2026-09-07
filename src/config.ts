@@ -16,7 +16,9 @@ export function recurso(caminho: string): string {
 export const SITE = {
   nome: 'OrtoQuestões',
   descricao:
-    'Questões de provas anteriores de ortopedia — TEOT, TARO, SBOT e outras — organizadas por assunto. Sem cadastro, sem custo.',
+    'Banco de questões de ortopedia e traumatologia com provas anteriores do TEOT e do TARO, organizadas por assunto, com comentários de IA e da comunidade.',
+  /** Endereço público, usado em canonical, Open Graph e sitemap. */
+  url: 'https://ortoquestoes.com.br/',
   autor: 'Tales',
   contato: 'talesroberto23@gmail.com',
 } as const

@@ -9,36 +9,94 @@ import { usarIndice } from '../dados/usarIndice'
 export function Sobre() {
   return (
     <article className="limite-leitura empilha">
-      <h1>Sobre o OrtoQuestões</h1>
+      <h1>O projeto OrtoQuestões</h1>
       <p>
-        O OrtoQuestões reúne questões de provas anteriores de ortopedia em um lugar só — TEOT,
-        TARO, SBOT e outras —, organizadas por assunto. Foi feito por um ortopedista para residentes
-        que estudam entre plantões e cirurgias, com uma regra simples: da página inicial até a
-        primeira questão respondida, no máximo dois cliques.
+        O OrtoQuestões é um banco de questões de ortopedia e traumatologia. Reúne questões de
+        provas anteriores — TEOT, TARO e outras — organizadas por assunto, para quem se prepara
+        para o título de especialista ou para as provas da residência. Foi feito por um ortopedista
+        para residentes que estudam entre plantões e cirurgias, com uma regra simples: da página
+        inicial até a primeira questão respondida, no máximo dois cliques.
       </p>
-      <h2>O que ele é</h2>
+
+      <h2>O foco é a comunidade</h2>
       <p>
-        Um acervo de questões originais das provas, transcritas dos PDFs sem reescrita, sem resumo
-        e sem correção do enunciado. O gabarito vem da própria prova. Questões anuladas
-        ficam marcadas como anuladas e não entram no cálculo de desempenho.
+        A ideia que sustenta o projeto é a de que conhecimento de prova circula melhor quando é
+        compartilhado. Quem passou pelo TEOT sabe explicar a questão que caiu; quem está estudando
+        agora tem a dúvida fresca. O OrtoQuestões existe para juntar as duas pontas: um lugar em
+        que ortopedistas e residentes deixam registrado o que aprenderam, e onde a explicação de
+        uma questão fica disponível para quem vier depois.
       </p>
-      <h2>O que ele não é</h2>
       <p>
-        Não é curso, não vende nada e não pede cadastro. Não há rastreador de terceiros: seu
-        progresso fica guardado apenas no seu navegador, e você pode apagá-lo quando quiser na
-        página de <a href={href('/dados')}>dados locais</a>.
+        Não é um curso e não substitui livro nem serviço. É um ponto de encontro em torno das
+        questões — e cresce na medida em que as pessoas contribuem.
       </p>
-      <h2>Comentários</h2>
+
+      <h2>Duas fontes de comentário</h2>
       <p>
-        Os comentários das questões estão em preparo e vão aparecendo aos poucos, escritos e
-        revisados um a um. Enquanto não existem, o gabarito oficial já é mostrado.
+        Cada questão pode ter dois tipos de comentário, e eles não competem:
       </p>
+      <ul className="lista">
+        <li>
+          <strong>Comentário de IA.</strong> Escrito com apoio de inteligência artificial e
+          conferido antes de entrar no ar. Explica o conceito por trás da questão, por que a
+          alternativa correta é correta e por que cada uma das erradas está errada. Quando há
+          dúvida sobre o gabarito ou sobre uma afirmação da banca, o comentário diz isso em vez de
+          inventar uma explicação segura de aparência.
+        </li>
+        <li>
+          <strong>Comentário da comunidade.</strong> Escrito por ortopedistas e residentes que
+          usam o site. É o espaço da experiência de prova: o macete que ficou, a divergência entre
+          serviços, a referência que a banca costuma seguir, a correção de um gabarito que não
+          fecha. Toda questão tem um botão para enviar o seu.
+        </li>
+      </ul>
+
+      <h2>O acervo</h2>
+      <p>
+        As questões são originais das provas, transcritas dos PDFs sem reescrita, sem resumo e sem
+        correção do enunciado. O gabarito vem da própria prova. Questões anuladas ficam marcadas
+        como anuladas e não entram no cálculo de desempenho.
+      </p>
+      <p>
+        Os assuntos cobrem o programa inteiro da especialidade: mão e punho, ombro e cotovelo,
+        quadril, joelho, pé e tornozelo, coluna, trauma e fraturas, tumores ósseos, ortopedia
+        pediátrica, doenças osteometabólicas e conceitos básicos (biomateriais, infecção,
+        consolidação óssea, metodologia científica). Dá para filtrar por assunto, por prova, por
+        ano, por dificuldade e por questões que você errou.
+      </p>
+
+      <h2>Como funciona hoje, e o que vem depois</h2>
+      <p>
+        Hoje o site é aberto e o acervo inteiro está disponível para responder. No futuro pretendo
+        cobrar uma taxa pequena para manter o projeto de pé, preservando um uso diário livre — a
+        ideia é que ninguém fique sem estudar por causa disso. Quando isso mudar, será avisado
+        aqui, com antecedência.
+      </p>
+
+      <h2>Seus dados</h2>
+      <p>
+        O progresso — questões respondidas, favoritas, histórico de sessões — fica guardado apenas
+        no seu navegador, e você pode apagá-lo quando quiser na página de{' '}
+        <a href={href('/dados')}>dados locais</a>.
+      </p>
+
       <h2>Erros</h2>
       <p>
         Extração de PDF erra. Se um enunciado estiver truncado, uma figura faltando ou um gabarito
         parecer errado, use o <a href={href('/contato')}>relato de erro</a> — é o caminho mais
-        rápido para corrigir.
+        rápido para corrigir. Vale o mesmo princípio do acervo: uma questão com gabarito errado é
+        pior do que uma questão ausente.
       </p>
+
+      <div className="linha linha--empilha-celular">
+        <a className="botao botao--principal" href={href('/treinar')}>
+          Montar uma sessão
+        </a>
+        <a className="botao" href={href('/contato')}>
+          Falar com o autor
+        </a>
+      </div>
+
       <p className="texto-2">Feito por {SITE.autor}.</p>
     </article>
   )

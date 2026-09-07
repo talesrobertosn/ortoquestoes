@@ -6,7 +6,7 @@ import { Icone } from './Icone'
 const LINKS = [
   { destino: '/treinar', rotulo: 'Treinar', secundario: false },
   { destino: '/favoritas', rotulo: 'Favoritas', secundario: true },
-  { destino: '/sobre', rotulo: 'Sobre', secundario: true },
+  { destino: '/sobre', rotulo: 'O projeto', secundario: true },
 ]
 
 export function Cabecalho({ caminho }: { caminho: string }) {

@@ -16,7 +16,8 @@ const TITULOS: Record<string, string> = {
   '/treinar': 'Montar sessão — OrtoQuestões',
   '/sessao': 'Respondendo — OrtoQuestões',
   '/resumo': 'Resumo da sessão — OrtoQuestões',
-  '/sobre': 'Sobre — OrtoQuestões',
+  '/sobre': 'O projeto — OrtoQuestões: questões de ortopedia comentadas',
+  '/projeto': 'O projeto — OrtoQuestões: questões de ortopedia comentadas',
   '/contato': 'Relatar erro — OrtoQuestões',
   '/dados': 'Seu desempenho — OrtoQuestões',
   '/favoritas': 'Suas favoritas — OrtoQuestões',
@@ -53,7 +54,10 @@ export function App() {
     case 'questao':
       pagina = segundo ? <QuestaoDireta id={segundo} /> : <NaoEncontrada />
       break
+    // Duas rotas para a mesma página: "sobre" é o endereço antigo, que
+    // continua valendo, e "projeto" é como o site passou a chamá-la.
     case 'sobre':
+    case 'projeto':
       pagina = <Sobre />
       break
     case 'contato':

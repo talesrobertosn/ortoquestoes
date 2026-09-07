@@ -1485,6 +1485,11 @@ kbd {
   max-width: var(--coluna-leitura);
 }
 
+/* Lista dentro de texto corrido: itens longos precisam respirar entre si. */
+.lista > li + li {
+  margin-top: 0.6em;
+}
+
 /* Dica de teclado não serve a quem está no toque. */
 @media (max-width: 47.99rem), (pointer: coarse) {
   .so-teclado {

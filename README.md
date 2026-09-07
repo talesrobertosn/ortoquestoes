@@ -1,7 +1,8 @@
 # OrtoQuestões
 
 Banco de questões de ortopedia e traumatologia para quem se prepara para o **TEOT** e o **TARO**.
-Gratuito, sem cadastro, sem paywall e sem rastreador. Site estático, publicável no GitHub Pages.
+Provas anteriores organizadas por assunto, com comentários de IA e da comunidade. Site estático,
+sem cadastro e sem rastreador de terceiros, publicável no GitHub Pages.
 
 Feito por Tales.
 

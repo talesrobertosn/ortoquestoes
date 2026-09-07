@@ -45,7 +45,7 @@ export function Inicio() {
           {indice && indice.total > 0 ? (
             <>
               <strong className="numerico">{indice.total}</strong> questões de provas anteriores de
-              TEOT, TARO, SBOT e outras, organizadas por assunto. Você filtra, responde e vê seu
+              TEOT, TARO e outras, organizadas por assunto. Você filtra, responde e vê seu
               desempenho na hora.
             </>
           ) : (
@@ -53,7 +53,10 @@ export function Inicio() {
               desempenho.</>
           )}
         </p>
-        <p className="heroi__nota">Sem cadastro, sem custo, sem rastreadores.</p>
+        <p className="heroi__nota">
+          Questões comentadas por IA e pela comunidade. <a href={href('/sobre')}>Conheça o projeto</a>
+          .
+        </p>
       </section>
 
       {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
@@ -156,6 +159,23 @@ export function Inicio() {
               </div>
             </section>
           )}
+
+          <section className="limite-leitura">
+            <h2>O que é o OrtoQuestões</h2>
+            <p style={{ marginTop: '0.5rem' }}>
+              Um banco de questões de ortopedia e traumatologia montado a partir de provas
+              anteriores do TEOT, do TARO e de outros concursos da especialidade. As questões são
+              transcritas das provas originais, com o gabarito da própria banca, e vão sendo
+              comentadas uma a uma — por inteligência artificial e pela comunidade de ortopedistas
+              e residentes — com a explicação de por que cada alternativa está certa ou errada.
+            </p>
+            <p style={{ marginTop: '0.5rem' }}>
+              Os assuntos cobrem o programa inteiro: mão e punho, ombro e cotovelo, quadril,
+              joelho, pé e tornozelo, coluna, trauma, tumores ósseos, ortopedia pediátrica, doenças
+              osteometabólicas e conceitos básicos.{' '}
+              <a href={href('/sobre')}>Leia mais sobre o projeto</a>.
+            </p>
+          </section>
 
           {historico.length > 0 && (
             <section>
