@@ -31,6 +31,27 @@ export function slugDoTema(indice: Indice | null, questao: Questao): string | nu
 }
 
 /**
+ * Ids que têm comentário, lidos do próprio índice (campo `c`).
+ *
+ * Sem isso, revelar o gabarito de uma questão de tema ainda não comentado
+ * dispara um fetch de arquivo inexistente: o código trata o 404, mas o
+ * navegador registra um erro no console e a rede carrega uma requisição inútil
+ * a cada tema. Como o índice já sabe quem tem comentário, basta perguntar a
+ * ele antes de sair buscando.
+ */
+let indiceDoConjunto: Indice | null = null
+let conjuntoComentados: Set<string> = new Set()
+
+function temComentario(indice: Indice | null, id: string): boolean {
+  if (!indice) return false
+  if (indice !== indiceDoConjunto) {
+    indiceDoConjunto = indice
+    conjuntoComentados = new Set(indice.questoes.filter((q) => q.c === 1).map((q) => q.id))
+  }
+  return conjuntoComentados.has(id)
+}
+
+/**
  * Comentário de IA de uma questão. Busca o arquivo do tema na primeira vez que
  * alguém revela um gabarito daquele tema e reaproveita dali em diante.
  */
@@ -48,6 +69,9 @@ export function usarComentarioIA(questao: Questao, indice: Indice | null, ativo:
       definir(questao.comentarioIA)
       return
     }
+    // O índice já diz quem tem comentário. Perguntar a ele evita baixar o
+    // arquivo do tema — ou pedir um que nem existe — sem necessidade.
+    if (!temComentario(indice, questao.id)) return
     let vivo = true
     definirCarregando(true)
     carregarComentarios(slug).then((arquivo) => {
@@ -58,7 +82,7 @@ export function usarComentarioIA(questao: Questao, indice: Indice | null, ativo:
     return () => {
       vivo = false
     }
-  }, [questao.id, questao.comentarioIA, slug, ativo])
+  }, [questao.id, questao.comentarioIA, slug, ativo, indice])
 
   return { comentario, carregando: carregando && !comentario }
 }

@@ -1,6 +1,8 @@
 import { chromium } from 'playwright'
 
-const BASE = 'http://localhost:4173/ortoquestoes/'
+// O build usa caminho relativo, então o preview serve na raiz. A variável
+// permite apontar para um subdiretório quando se quer testar esse caso.
+const BASE = process.env.BASE_E2E ?? 'http://localhost:4173/'
 const erros = []
 const falhas = []
 function checar(condicao, nome, detalhe = '') {

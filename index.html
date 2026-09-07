@@ -19,8 +19,17 @@
     />
     <meta property="og:image" content="./previa.png" />
     <meta name="twitter:card" content="summary_large_image" />
+    <!--
+      O SVG sozinho não basta: Safari e navegadores antigos ignoram favicon
+      vetorial, e o apple-touch-icon precisa ser PNG opaco. A ordem importa —
+      quem entende SVG usa o primeiro, o resto cai no .ico. Todos saem do mesmo
+      desenho, gerados por scripts/gerar_icones.py.
+    -->
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./favicon.svg" />
+    <link rel="icon" href="./favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="./favicon-16.png" type="image/png" sizes="16x16" />
+    <link rel="icon" href="./favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180" />
     <script>
       // Aplica o tema antes da primeira pintura, para não haver piscada de tema claro.
       (function () {

@@ -31,10 +31,10 @@ jobs:
       - name: Validar o acervo
         run: python3 scripts/validar_acervo.py
       - name: Construir
+        # Sem BASE_ORTOQUESTOES: o vite.config.ts usa caminho relativo, e o
+        # mesmo build serve tanto usuario.github.io/ortoquestoes/ quanto
+        # ortoquestoes.com.br/ — não é preciso reconstruir ao trocar o endereço.
         run: npm run build
-        env:
-          # Trocar para "/" ao migrar para o domínio próprio.
-          BASE_ORTOQUESTOES: /ortoquestoes/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
