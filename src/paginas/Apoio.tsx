@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { SITE } from '../config'
+import { SITE, recurso } from '../config'
 import { href } from '../util/rotas'
 import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
 import { armazenamentoDisponivel, limparTudo, tamanhoArmazenado } from '../estado/armazenamento'
@@ -63,6 +63,11 @@ export function Sobre() {
         pediátrica, doenças osteometabólicas e conceitos básicos (biomateriais, infecção,
         consolidação óssea, metodologia científica). Dá para filtrar por assunto, por prova, por
         ano, por dificuldade e por questões que você errou.
+      </p>
+
+      <p>
+        Há também uma <a href={recurso('questoes/')}>coleção de questões comentadas por assunto</a>,
+        em páginas abertas que podem ser lidas e compartilhadas sem entrar no site.
       </p>
 
       <h2>Como funciona hoje, e o que vem depois</h2>

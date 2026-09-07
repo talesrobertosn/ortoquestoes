@@ -32,6 +32,11 @@ PAGINAS = [
     ("#/contato", "0.3", "yearly"),
 ]
 
+# As páginas por assunto de public/questoes/ são as ÚNICAS com conteúdo real em
+# HTML — o resto do site só existe depois do JavaScript. São elas que dão ao
+# buscador algo para indexar, e por isso entram no sitemap com prioridade alta.
+DIR_QUESTOES = DIR_PUBLICO / "questoes"
+
 ROBOTS = f"""User-agent: *
 Allow: /
 
@@ -57,13 +62,25 @@ def principal() -> int:
         linhas.append(f"    <changefreq>{frequencia}</changefreq>")
         linhas.append(f"    <priority>{prioridade}</priority>")
         linhas.append("  </url>")
+    if DIR_QUESTOES.is_dir():
+        for arquivo in sorted(DIR_QUESTOES.glob("*.html")):
+            nome = "" if arquivo.stem == "index" else arquivo.name
+            prioridade = "0.9" if nome else "0.8"
+            linhas.append("  <url>")
+            linhas.append(f"    <loc>{SITE}questoes/{nome}</loc>")
+            linhas.append(f"    <lastmod>{data}</lastmod>")
+            linhas.append("    <changefreq>monthly</changefreq>")
+            linhas.append(f"    <priority>{prioridade}</priority>")
+            linhas.append("  </url>")
+
     linhas.append("</urlset>")
 
     destino = DIR_PUBLICO / "sitemap.xml"
     destino.write_text("\n".join(linhas) + "\n", encoding="utf-8")
     (DIR_PUBLICO / "robots.txt").write_text(ROBOTS, encoding="utf-8")
 
-    print(f"sitemap.xml: {len(PAGINAS)} endereços, lastmod {data}")
+    total = len(PAGINAS) + (len(list(DIR_QUESTOES.glob("*.html"))) if DIR_QUESTOES.is_dir() else 0)
+    print(f"sitemap.xml: {total} endereços, lastmod {data}")
     print("robots.txt: gravado")
     return 0
 
