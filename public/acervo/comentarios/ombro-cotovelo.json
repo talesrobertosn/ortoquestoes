@@ -130,5 +130,126 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "ombro-cotovelo-0013": {
+  "conceito": "O TESTE DE YOCUM é uma das manobras de impacto subacromial: o paciente coloca a MÃO NO OMBRO OPOSTO e ELEVA ATIVAMENTE O COTOVELO, sem elevar o ombro — a dor indica conflito. Ele é considerado o mais específico dos testes de impacto, porque essa posição de adução horizontal com elevação ativa combina o pinçamento subacromial com a compressão acromioclavicular, e faz o paciente gerar o movimento (ativo), o que recruta o manguito. Vale organizar a bateria inteira, porque as bancas trocam os nomes. IMPACTO SUBACROMIAL: NEER (elevação PASSIVA em rotação interna, com a escápula estabilizada — dor por volta de 90 a 130 graus), HAWKINS-KENNEDY (ombro e cotovelo a 90 graus, rotação interna passiva forçada) e YOCUM. TENDÃO DO BÍCEPS: SPEED (flexão anterior resistida com cotovelo estendido e antebraço supinado) e YERGASON (supinação resistida com cotovelo a 90 graus). LESÃO SLAP: O'BRIEN (compressão ativa: 90 graus de flexão, 10 a 15 de adução, dor com o polegar para baixo que melhora com a palma para cima) e o teste de tração-rotação. ACROMIOCLAVICULAR: cross-body (adução horizontal máxima).",
+  "correta": "Colocar a mão no ombro oposto e elevar ativamente o cotovelo.",
+  "incorretas": {
+   "A": "Elevar o braço com flexão contra resistência descreve manobras de força do manguito e do bíceps, como o teste de Speed.",
+   "B": "Rotação externa contra resistência avalia infraespinal e redondo menor, não impacto.",
+   "C": "A adução ativa com a mão no ombro oposto se aproxima do cross-body, que avalia a articulação acromioclavicular — o que define o Yocum é ELEVAR o cotovelo."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0014": {
+  "conceito": "A epicondilite lateral (cotovelo do tenista) NÃO é uma inflamação — e essa é a informação que muda todo o tratamento. A histologia descrita por NIRSCHL mostra HIPERPLASIA ANGIOFIBROBLÁSTICA: tecido de reparo imaturo e desorganizado, com fibroblastos, vasos neoformados que não amadurecem, colágeno desalinhado e degeneração mucoide — e, caracteristicamente, AUSÊNCIA DE CÉLULAS INFLAMATÓRIAS. O tendão acometido é o EXTENSOR RADIAL CURTO DO CARPO, na sua origem no epicôndilo lateral, e o processo é uma falha crônica de cicatrização por microtraumas repetidos, não uma inflamação aguda. Consequências práticas diretas: o termo correto é tendinose, e não tendinite; anti-inflamatórios têm efeito limitado e apenas sintomático; o CORTICOIDE infiltrado alivia a curto prazo mas piora os resultados a médio e longo prazo, porque inibe justamente a cicatrização já deficiente; e o que funciona é o EXERCÍCIO EXCÊNTRICO, que estimula remodelação do colágeno, ao lado de modificação de atividade e órtese. Como 80 a 90% resolvem em um ano com tratamento conservador, a cirurgia (desbridamento do tecido angiofibroblástico) fica reservada aos casos refratários após 6 a 12 meses.",
+  "correta": "Hiperplasia angiofibroblástica.",
+  "incorretas": {
+   "A": "Hiperplasia lipomatosa descreve substituição por tecido adiposo, e não é o achado da epicondilite.",
+   "B": "\"Calcinomatosa\" não é um termo histológico existente; depósito de cálcio ocorre na tendinite calcária, que é outra entidade.",
+   "D": "Não há componente condroblástico: o tecido é fibrovascular, sem cartilagem."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0015": {
+  "conceito": "O TESTE DE NEER é PASSIVO: o examinador estabiliza a escápula com uma das mãos e, com a outra, ELEVA O BRAÇO em rotação interna, no plano da escápula, sem que o paciente participe — a dor entre 90 e 130 graus indica conflito subacromial, pelo pinçamento do supraespinal e da bursa contra a face anteroinferior do acrômio e o ligamento coracoacromial. A estabilização da escápula é o detalhe que muitos esquecem e que muda o resultado: sem ela, o paciente compensa com báscula escapular e o teste perde sensibilidade. Confirma-se pelo TESTE DE INFILTRAÇÃO DE NEER, com anestésico no espaço subacromial: a abolição da dor confirma a origem subacromial. Contrastando com os demais: YOCUM é ATIVO (mão no ombro oposto, elevar o cotovelo); SPEED é RESISTIDO (flexão anterior contra resistência, com cotovelo estendido e antebraço supinado, para o bíceps); e O'BRIEN é ATIVO E RESISTIDO em duas posições (para lesão SLAP e para a acromioclavicular). Vale a ressalva conhecida: os testes de impacto são sensíveis, mas pouco específicos — dor à manobra de Neer aparece também na capsulite adesiva, na artrose acromioclavicular e na rotura do manguito.",
+  "correta": "Teste de Neer.",
+  "incorretas": {
+   "B": "Speed é teste RESISTIDO, voltado ao tendão da cabeça longa do bíceps.",
+   "C": "Yocum é ATIVO: o paciente eleva o cotovelo com a mão no ombro oposto.",
+   "D": "O'Brien (compressão ativa) é ativo e resistido, e investiga lesão SLAP e articulação acromioclavicular."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0016": {
+  "conceito": "A estabilidade do cotovelo se organiza em estabilizadores PRIMÁRIOS e SECUNDÁRIOS, e essa divisão é o que orienta toda a reconstrução das fraturas-luxações. PRIMÁRIOS, três: a ARTICULAÇÃO UMEROULNAR — cuja peça-chave no lado ulnar é o PROCESSO CORONOIDE, que funciona como um batente anterior contra a subluxação posterior; a BANDA ANTERIOR DO LIGAMENTO COLATERAL MEDIAL, principal restritor ao valgo entre 20 e 120 graus de flexão; e o COMPLEXO COLATERAL LATERAL, sobretudo o ligamento colateral ulnar lateral, que impede a instabilidade rotatória posterolateral. SECUNDÁRIOS: a CABEÇA DO RÁDIO (restritor secundário ao valgo, que se torna crítico quando o colateral medial falha), a cápsula e as origens musculares comuns dos flexores e dos extensores. É essa hierarquia que explica a TRÍADE TERRÍVEL — luxação com fratura da cabeça do rádio e do coronoide —, cuja reconstrução segue uma ordem lógica: fixar ou substituir o coronoide, depois a cabeça do rádio, depois reparar o colateral lateral e, se ainda houver instabilidade, o colateral medial ou fixador externo articulado.",
+  "correta": "O processo coronoide e o ligamento colateral lateral.",
+  "incorretas": {
+   "A": "A tróclea integra a articulação umeroulnar, mas a cápsula é estabilizador SECUNDÁRIO.",
+   "B": "A tróclea é o lado umeral da articulação; a peça habitualmente nomeada como estabilizador primário no par ósseo é o coronoide, do lado ulnar.",
+   "C": "O coronoide está certo, mas a cápsula é secundária."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0017": {
+  "conceito": "A lesão de HILL-SACHS REVERSA é a impactação da porção ANTEROMEDIAL da cabeça umeral contra a borda posterior da glenoide, produzida pela LUXAÇÃO POSTERIOR — quadro clássico da crise convulsiva, do choque elétrico e do trauma com o braço em adução e rotação interna, e um dos diagnósticos mais perdidos da ortopedia (o AP simples engana; o que revela é o PERFIL AXILAR ou a tomografia). A conduta depende do TAMANHO do defeito. Até cerca de 20 a 25% da superfície articular: redução e imobilização em rotação externa, ou reparo capsular. ENTRE 25 E 50%: TRANSFERÊNCIA DO SUBESCAPULAR para dentro do defeito — a operação de McLAUGHLIN — ou sua variante de NEER, em que se transfere o subescapular junto com o tubérculo menor osteotomizado, o que dá fixação óssea mais robusta. O princípio é o mesmo do remplissage na instabilidade anterior: preencher o defeito com tecido mole para que ele deixe de engatar na glenoide. ACIMA DE 50%, ou com cartilagem inviável: enxerto osteocondral, ou artroplastia (hemiartroplastia ou reversa, conforme idade e integridade do manguito e da glenoide).",
+  "correta": "Transferência do músculo subescapular (procedimento de McLaughlin).",
+  "incorretas": {
+   "A": "A hemiartroplastia é reservada a defeitos acima de 50% ou a cartilagem inviável, sobretudo em luxação inveterada.",
+   "B": "A transferência do coracoide (Latarjet) trata a perda óssea da GLENOIDE na instabilidade ANTERIOR, e não o defeito da cabeça umeral na posterior.",
+   "C": "A reinserção da cápsula posterior é insuficiente diante de um defeito ósseo de 25%: a cabeça continua engatando na borda glenoidal."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0020": {
+  "conceito": "O REMPLISSAGE (do francês, \"preenchimento\") é a TENODESE DO TENDÃO INFRAESPINAL — junto com a cápsula posterior — DENTRO do defeito de HILL-SACHS. A lógica é converter um defeito INTRA-articular em EXTRA-articular: preenchida a cratera, ela deixa de engatar na borda anterior da glenoide durante a abdução com rotação externa, e o engatilhamento cessa. É procedimento COMPLEMENTAR, feito junto com o reparo de Bankart, e sua indicação clássica é a lesão de Hill-Sachs ENGATILHANTE (off-track) com perda óssea glenoidal PEQUENA — abaixo de 20 a 25%. Quando a perda glenoidal é maior, a solução passa a ser óssea: LATARJET, que além de repor osso acrescenta o efeito de cinta do tendão conjunto e a reconstrução do ligamento coracoacromial. O conceito que organiza essa decisão é o de GLENOID TRACK: mede-se a via de contato da glenoide sobre a cabeça umeral e verifica-se se a lesão de Hill-Sachs cai dentro dela (on-track, não engata) ou a ultrapassa (off-track, engata). O preço do remplissage é conhecido: perda de alguns graus de rotação externa, geralmente bem tolerada.",
+  "correta": "A tenodese do tendão infraespinhoso (com a cápsula posterior) dentro do defeito de Hill-Sachs.",
+  "incorretas": {
+   "A": "A plicatura capsular reduz o volume capsular na instabilidade multidirecional, e não preenche defeito ósseo.",
+   "B": "A sutura do lábio é o reparo de Bankart, que o remplissage complementa — mas não é ele.",
+   "C": "O fechamento do intervalo rotador é gesto acessório na instabilidade multidirecional e inferior."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0022": {
+  "conceito": "Diante de um complexo ligamentar LATERAL insuficiente, a PRONAÇÃO do antebraço é o que estabiliza dinamicamente o cotovelo — e entender por quê resolve várias questões do tema. A instabilidade rotatória posterolateral consiste na SUPINAÇÃO da ulna sobre o úmero, com subluxação posterior da cabeça do rádio. Ao PRONAR o antebraço, dois mecanismos se somam: a musculatura extensora comum e o supinador ficam tensionados sobre o compartimento lateral, funcionando como estabilizadores dinâmicos que compensam o ligamento roto; e a própria geometria da pronação leva o rádio e a ulna para a posição oposta à do deslocamento. Isso tem três aplicações práticas. Primeira: o PIVOT SHIFT posterolateral é feito em SUPINAÇÃO, porque é ela que provoca a instabilidade. Segunda: após redução de luxação com lesão lateral, imobiliza-se e reabilita-se em PRONAÇÃO. Terceira, e simétrica: quando a lesão é MEDIAL, com o colateral lateral íntegro, a posição protetora passa a ser a SUPINAÇÃO — e é por isso que o teste de estabilidade pós-redução deve ser feito nas duas rotações, para saber em qual delas o cotovelo se mantém reduzido.",
+  "correta": "Pronação.",
+  "incorretas": {
+   "A": "A flexão do cotovelo aumenta a estabilidade em geral (é o motivo de o cotovelo luxado se manter reduzido em flexão), mas não é o mecanismo específico de compensação do complexo lateral.",
+   "B": "A extensão é a posição de MAIOR risco de subluxação nessa instabilidade.",
+   "D": "A supinação é justamente a posição que PROVOCA a instabilidade posterolateral — é a usada no teste diagnóstico."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0023": {
+  "conceito": "O DIABETES é o fator de pior prognóstico da capsulite adesiva, e o DIABETES TIPO 1 é o pior deles. Os números explicam: a prevalência de capsulite na população geral é de 2 a 5%, sobe para 10 a 20% nos diabéticos em geral e chega a 30 a 40% no diabetes tipo 1 — que também tem maior taxa de acometimento BILATERAL, evolução mais arrastada, maior rigidez residual e pior resposta tanto ao tratamento conservador quanto à manipulação e à liberação artroscópica. O mecanismo proposto é a GLICAÇÃO NÃO ENZIMÁTICA do colágeno: os produtos finais de glicação avançada formam ligações cruzadas anômalas entre as fibras, tornando a cápsula mais rígida e menos remodelável. Vale conhecer as demais associações da doença, que também são cobradas: hipotireoidismo e hipertireoidismo, doença de Dupuytren (que compartilha a biologia fibroproliferativa), doença de Parkinson, dislipidemia, imobilização prolongada e cirurgia ou trauma recentes do ombro. E a lembrança clínica que decorre disso: todo paciente com capsulite adesiva merece rastreio de diabetes e de disfunção tireoidiana, porque a doença de base muda a expectativa de evolução que se comunica ao paciente.",
+  "correta": "Diabetes tipo 1.",
+  "incorretas": {
+   "B": "O hipotireoidismo é associação reconhecida, mas não confere o pior prognóstico.",
+   "C": "O hiperparatireoidismo não tem associação estabelecida com a capsulite adesiva.",
+   "D": "A doença de Dupuytren se associa à capsulite por compartilhar a biologia fibroproliferativa, mas não é o fator de pior prognóstico."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0024": {
+  "conceito": "A epicondilite lateral é uma TENDINOSE — degeneração, e não inflamação —, e o que a ressonância mostra reflete exatamente isso. O tendão extensor comum, que normalmente é UNIFORMEMENTE HIPOINTENSO (escuro) em todas as sequências por ser tecido fibroso denso e organizado, passa a apresentar SINAL AUMENTADO TANTO EM T1 QUANTO EM T2, além de espessamento. O substrato desse hipersinal é a degeneração MUCOIDE e a hiperplasia angiofibroblástica de Nirschl — tecido de reparo imaturo, com fibroblastos, vasos neoformados e colágeno desalinhado, cujo conteúdo de água e de mucopolissacarídeos é maior que o do tendão normal. O sinal em T1 é o que distingue a tendinose crônica do EDEMA puro: edema e líquido (paratendinite, bursite, ruptura aguda) dão hipersinal em T2 com hipossinal em T1, enquanto a degeneração mucoide eleva o sinal nas duas sequências. Nos casos mais avançados somam-se descontinuidade das fibras, edema ósseo no epicôndilo lateral e, eventualmente, lesão do ligamento colateral lateral — achado que deve ser procurado ativamente, porque muda o planejamento cirúrgico.",
+  "correta": "Hipersinal em T1 e em T2.",
+  "incorretas": {
+   "A": "Hipossinal em T1 e T2 é o sinal do tendão NORMAL, fibroso e organizado.",
+   "C": "Hipersinal em T2 com hipossinal em T1 corresponde a líquido ou edema puro, e não à degeneração mucoide crônica.",
+   "D": "Essa combinação não corresponde a nenhum achado característico do tendão."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0025": {
+  "conceito": "O restritor primário ao estresse em VALGO do cotovelo é a BANDA ANTERIOR DO LIGAMENTO COLATERAL MEDIAL, e ela é máxima justamente por volta dos 90 GRAUS DE FLEXÃO — motivo pelo qual o teste de estresse em valgo e a manobra de ordenha (milking maneuver) são feitos nessa posição. O ligamento colateral medial tem três porções, e vale saber a hierarquia: a BANDA ANTERIOR, que vai do epicôndilo medial ao tubérculo sublime da ulna, é a mais importante e resiste ao valgo de 20 a 120 graus de flexão; a banda posterior contribui sobretudo além dos 120 graus; e a banda transversa (ligamento de Cooper) não acrescenta estabilidade relevante. Quanto à CABEÇA DO RÁDIO, ela é o restritor SECUNDÁRIO ao valgo — e essa hierarquia tem consequência cirúrgica decisiva: com o colateral medial ÍNTEGRO, a cabeça do rádio pode ser ressecada sem instabilidade; com o colateral medial ROTO, ressecá-la produz instabilidade grave em valgo e migração proximal do rádio, e é por isso que na tríade terrível a cabeça do rádio é SEMPRE fixada ou substituída, jamais simplesmente removida.",
+  "correta": "O ligamento colateral medial (banda anterior).",
+  "incorretas": {
+   "A": "A cabeça do rádio é o restritor SECUNDÁRIO ao valgo — importante, mas só se torna crítica quando o colateral medial falha.",
+   "B": "A cápsula é estabilizador secundário e contribui pouco ao valgo em flexão.",
+   "C": "O colateral lateral resiste ao varo e à instabilidade rotatória posterolateral, não ao valgo."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0026": {
+  "conceito": "O LIGAMENTO GLENOUMERAL INFERIOR é o principal estabilizador ESTÁTICO da glenoumeral, e sua importância decorre da posição em que ele age: ele é o restritor primário à translação ANTERIOR e INFERIOR com o braço em ABDUÇÃO DE 90 GRAUS E ROTAÇÃO EXTERNA — exatamente a posição de apreensão e a posição em que o ombro luxa. Ele funciona como uma REDE em forma de U, com uma banda anterior, uma banda posterior e o recesso axilar entre elas, e sua banda anterior é a estrutura destacada da glenoide na LESÃO DE BANKART. Completando o conjunto dos estabilizadores: os demais ESTÁTICOS são o lábio glenoidal (que aprofunda a glenoide em cerca de 50% e cria o efeito de sucção), os ligamentos glenoumerais superior (translação inferior com o braço ao lado do corpo — o sinal do sulco) e médio (translação anterior em abdução média), o ligamento coracoumeral, a congruência óssea, a pressão intra-articular negativa e a adesão-coesão do líquido sinovial. Os DINÂMICOS são o manguito rotador (par de forças que centra a cabeça), a cabeça longa do bíceps e os estabilizadores escapulotorácicos — serrátil anterior e trapézio à frente.",
+  "correta": "Ligamento glenoumeral inferior.",
+  "incorretas": {
+   "A": "O coracoumeral compõe o intervalo rotador, restringe a translação inferior em adução e a rotação externa; sua contratura é o que limita a rotação externa na capsulite adesiva.",
+   "B": "O glenoumeral médio restringe a translação anterior em abdução MÉDIA (45 a 60 graus), posição menos crítica para a luxação.",
+   "D": "O glenoumeral superior é o principal restritor à translação inferior com o braço ao lado do corpo — responsável pelo sinal do sulco quando insuficiente."
+  },
+  "geradoEm": "2026-09-07",
+  "conferido": false
  }
 }
