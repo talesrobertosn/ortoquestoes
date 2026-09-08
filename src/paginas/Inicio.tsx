@@ -84,26 +84,6 @@ export function Inicio() {
 
       {indice && contagens && indice.total > 0 && (
         <>
-          <section className="treino-rapido">
-            <h2 className="treino-rapido__titulo">Treino rápido</h2>
-            <p className="meta">
-              Questões sorteadas de todo o acervo. Começa na hora, sem escolher nada.
-            </p>
-            <div className="linha linha--empilha-celular" style={{ marginTop: '0.75rem' }}>
-              {[10, 15, 20].map((quantidade) => (
-                <button
-                  key={quantidade}
-                  type="button"
-                  className="botao botao--principal botao--grande"
-                  onClick={() => treinoRapido(quantidade)}
-                  disabled={contagens.total < quantidade}
-                >
-                  <span className="numerico">{quantidade}</span> questões
-                </button>
-              ))}
-            </div>
-          </section>
-
           <div className="linha linha--empilha-celular">
             <a className="botao botao--grande" href={href('/treinar')}>
               Montar uma sessão com filtros
@@ -144,6 +124,26 @@ export function Inicio() {
                   )
                 })}
             </ul>
+          </section>
+
+          <section className="treino-rapido">
+            <h2 className="treino-rapido__titulo">Treino rápido</h2>
+            <p className="meta">
+              Questões sorteadas de todo o acervo. Começa na hora, sem escolher nada.
+            </p>
+            <div className="linha linha--empilha-celular" style={{ marginTop: '0.75rem' }}>
+              {[10, 15, 20].map((quantidade) => (
+                <button
+                  key={quantidade}
+                  type="button"
+                  className="botao botao--principal botao--grande"
+                  onClick={() => treinoRapido(quantidade)}
+                  disabled={contagens.total < quantidade}
+                >
+                  <span className="numerico">{quantidade}</span> questões
+                </button>
+              ))}
+            </div>
           </section>
 
           {anosRecentes.length > 0 && (
