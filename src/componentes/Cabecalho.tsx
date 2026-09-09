@@ -5,6 +5,7 @@ import { Icone } from './Icone'
 
 const LINKS = [
   { destino: '/treinar', rotulo: 'Treinar', secundario: false },
+  { destino: '/dados', rotulo: 'Desempenho', secundario: true },
   { destino: '/favoritas', rotulo: 'Favoritas', secundario: true },
   { destino: '/sobre', rotulo: 'O projeto', secundario: true },
 ]

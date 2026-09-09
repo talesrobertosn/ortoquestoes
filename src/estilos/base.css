@@ -363,18 +363,22 @@ textarea {
 
 /* ---------- Herói da página inicial ------------------------------------ */
 
-.heroi {
-  max-width: 34ch;
-}
-
 .heroi h1 {
-  font-size: clamp(1.875rem, 1.2rem + 3vw, 3rem);
+  /* Sem limite de coluna no título: quem controla a quebra é o `balance`,
+     que distribui as linhas em blocos de largura parecida em vez de deixar
+     uma palavra órfã na última. Em telas largas ele cabe em duas linhas. */
+  max-width: 30ch;
+  font-size: clamp(1.875rem, 1.2rem + 3vw, 2.625rem);
   letter-spacing: -0.025em;
   line-height: 1.1;
+  text-wrap: balance;
+}
+
+.heroi__texto {
+  max-width: 52ch;
 }
 
 .heroi__linha {
-  max-width: 52ch;
   margin-top: 1rem;
   font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
   color: var(--texto);
@@ -384,6 +388,31 @@ textarea {
   margin-top: 0.5rem;
   font-size: var(--corpo-menor);
   color: var(--texto-2);
+}
+
+/* No computador o herói vira duas colunas: título à esquerda, texto de
+   apoio à direita. Em uma só coluna, a largura de leitura confortável
+   deixaria dois terços da tela vazios e o título quebrado em quatro linhas. */
+@media (min-width: 75rem) {
+  .heroi {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: 0 3rem;
+    align-items: end;
+  }
+
+  .heroi h1 {
+    max-width: none;
+  }
+
+  .heroi__texto {
+    max-width: none;
+    padding-bottom: 0.35rem;
+  }
+
+  .heroi__linha {
+    margin-top: 0;
+  }
 }
 
 .treino-rapido {
@@ -1295,6 +1324,22 @@ textarea {
 }
 .distribuicao__item:first-child {
   border-top: 0;
+}
+
+/* Onze temas empilhados em uma coluna só desperdiçam a largura do
+   computador e alongam a página. Em duas colunas a lista cabe na dobra. */
+@media (min-width: 60rem) {
+  .distribuicao {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 3rem;
+  }
+
+  /* Numa grade de duas colunas, quem abre cada coluna são os dois
+     primeiros itens — e são eles que dispensam a linha de cima. */
+  .distribuicao__item:nth-child(-n + 2) {
+    border-top: 0;
+  }
 }
 
 .distribuicao__link {

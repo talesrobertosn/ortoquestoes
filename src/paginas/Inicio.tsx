@@ -41,22 +41,24 @@ export function Inicio() {
     <div className="empilha-2">
       <section className="heroi">
         <h1>Treine para o TEOT, o TARO e as demais provas.</h1>
-        <p className="heroi__linha">
-          {indice && indice.total > 0 ? (
-            <>
-              <strong className="numerico">{indice.total}</strong> questões de provas anteriores de
-              TEOT, TARO e outras, organizadas por assunto. Você filtra, responde e vê seu
-              desempenho na hora.
-            </>
-          ) : (
-            <>Questões de provas anteriores, organizadas por assunto, para responder e medir o seu
-              desempenho.</>
-          )}
-        </p>
-        <p className="heroi__nota">
-          Questões comentadas por IA e pela comunidade. <a href={href('/sobre')}>Conheça o projeto</a>
-          .
-        </p>
+        <div className="heroi__texto">
+          <p className="heroi__linha">
+            {indice && indice.total > 0 ? (
+              <>
+                <strong className="numerico">{indice.total}</strong> questões de provas anteriores
+                de TEOT, TARO e outras, organizadas por assunto. Você filtra, responde e vê seu
+                desempenho na hora.
+              </>
+            ) : (
+              <>Questões de provas anteriores, organizadas por assunto, para responder e medir o
+                seu desempenho.</>
+            )}
+          </p>
+          <p className="heroi__nota">
+            Questões comentadas por IA e pela comunidade.{' '}
+            <a href={href('/sobre')}>Conheça o projeto</a>.
+          </p>
+        </div>
       </section>
 
       {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
