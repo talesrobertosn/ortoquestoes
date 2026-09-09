@@ -395,7 +395,11 @@ export function CartaoQuestao({
                       )}
                       <p className="contribuicao__credito">
                         <strong>{item.autor}</strong>
-                        {[item.subespecialidade || item.especialidade, item.centro]
+                        {[
+                          item.subespecialidade || item.especialidade,
+                          item.centro,
+                          formatarData(item.data),
+                        ]
                           .filter(Boolean)
                           .map((parte) => ` · ${parte}`)}
                       </p>
@@ -441,6 +445,19 @@ export function CartaoQuestao({
       </div>
     </article>
   )
+}
+
+/**
+ * Data do comentário da comunidade no crédito. Vem como "AAAA-MM-DD" e é
+ * montada com `new Date(ano, mês, dia)` de propósito: `new Date('2026-09-09')`
+ * seria lida como UTC e, em fuso negativo, mostraria o dia anterior.
+ */
+function formatarData(iso?: string | null) {
+  if (!iso) return null
+  const partes = iso.split('-').map(Number)
+  if (partes.length !== 3 || partes.some(Number.isNaN)) return null
+  const [ano, mes, dia] = partes
+  return new Date(ano, mes - 1, dia).toLocaleDateString('pt-BR')
 }
 
 function Resultado({ questao, resposta }: { questao: Questao; resposta: Resposta }) {
