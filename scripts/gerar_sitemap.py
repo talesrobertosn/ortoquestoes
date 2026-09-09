@@ -29,6 +29,7 @@ PAGINAS = [
     ("", "1.0", "weekly"),
     ("#/sobre", "0.8", "monthly"),
     ("#/treinar", "0.6", "weekly"),
+    ("#/progresso", "0.4", "weekly"),
     ("#/contato", "0.3", "yearly"),
 ]
 

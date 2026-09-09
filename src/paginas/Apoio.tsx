@@ -70,6 +70,12 @@ export function Sobre() {
         em páginas abertas que podem ser lidas e compartilhadas sem entrar no site.
       </p>
 
+      <p>
+        O acervo é comentado aos poucos, e o andamento é público: a{' '}
+        <a href={href('/progresso')}>página de progresso</a> mostra quanto já tem comentário de IA
+        e quanto já tem comentário da comunidade, tema por tema.
+      </p>
+
       <h2>Como funciona hoje, e o que vem depois</h2>
       <p>
         Hoje o site é aberto e o acervo inteiro está disponível para responder. No futuro pretendo

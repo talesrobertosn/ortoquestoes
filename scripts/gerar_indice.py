@@ -28,6 +28,8 @@ from comum import (  # noqa: E402
 
 DIR_COMENTARIOS = DIR_ACERVO / "comentarios"
 
+from gerar_progresso import acrescentar_hoje  # noqa: E402
+
 
 def principal() -> int:
     taxonomia = carregar_taxonomia()
@@ -88,6 +90,13 @@ def principal() -> int:
                     or questao.get("comentarioIA")
                     or questao["id"] in comentados
                     else 0,
+                    # "c" junta as três origens porque é ele que alimenta o
+                    # filtro "só as comentadas". A página de progresso precisa
+                    # distinguir quem comentou, e para isso vêm estes dois.
+                    "cia": 1
+                    if questao.get("comentarioIA") or questao["id"] in comentados
+                    else 0,
+                    "cc": 1 if questao.get("comentariosComunidade") else 0,
                 }
             )
             if questao.get("ano") and questao["ano"] not in anos:
@@ -118,8 +127,17 @@ def principal() -> int:
         encoding="utf-8",
     )
 
+    # Um ponto por dia na série de progresso, para a página de cobertura. O
+    # histórico anterior veio do git e fica intocado; aqui só se acrescenta hoje.
+    progresso = acrescentar_hoje()
+    ultimo = progresso["marcos"][-1]
+
     tamanho = CAMINHO_INDICE.stat().st_size / 1024
     print(f"Índice gravado: {len(questoes)} questões, {len(temas)} temas, {tamanho:.1f} kB")
+    print(
+        f"Progresso: {ultimo['ia']} com comentário de IA e "
+        f"{ultimo['comunidade']} com comentário da comunidade, de {ultimo['total']}"
+    )
     print(f"Índice de busca: {caminho_busca.stat().st_size / 1024:.1f} kB (baixado só ao buscar)")
     for tema in temas:
         print(f"  {tema['slug']:<18} {tema['total']:>5}")

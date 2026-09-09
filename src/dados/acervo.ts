@@ -1,5 +1,5 @@
 import { recurso } from '../config'
-import type { Filtros, Indice, ItemIndice, Questao } from './tipos'
+import type { Filtros, Indice, ItemIndice, Progresso, Questao } from './tipos'
 
 const INDICE_VAZIO: Indice = {
   versao: 1,
@@ -31,6 +31,19 @@ export function carregarIndice(): Promise<Indice> {
     })
   }
   return promessaIndice
+}
+
+/**
+ * Série histórica de cobertura dos comentários. Arquivo pequeno e só usado na
+ * página de progresso, por isso fica fora do índice e é buscado sob demanda.
+ */
+let promessaProgresso: Promise<Progresso | null> | null = null
+
+export function carregarProgresso(): Promise<Progresso | null> {
+  if (!promessaProgresso) {
+    promessaProgresso = buscarJson<Progresso>('acervo/progresso.json').catch(() => null)
+  }
+  return promessaProgresso
 }
 
 /** Questões completas de um tema, carregadas sob demanda e memorizadas. */

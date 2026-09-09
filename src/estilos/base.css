@@ -1604,3 +1604,148 @@ kbd {
   font-size: var(--meta);
   color: var(--texto-2);
 }
+
+/* ---------- Página de progresso ---------------------------------------- */
+
+.painel-progresso {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 40rem) {
+  .painel-progresso {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.cartao-progresso {
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  padding: 1.25rem;
+}
+
+.cartao-progresso__rotulo {
+  font-size: var(--meta);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--texto-2);
+}
+
+/* Figura de destaque na mesma fonte do resto e com algarismos
+   proporcionais: `tabular-nums` só serve onde números se alinham em coluna. */
+.cartao-progresso__valor {
+  margin-top: 0.35rem;
+  font-size: clamp(2.25rem, 1.5rem + 3vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-variant-numeric: proportional-nums;
+}
+
+.cartao-progresso__apoio {
+  margin-top: 0.15rem;
+  font-size: var(--corpo-menor);
+  color: var(--texto-2);
+}
+
+.cartao-progresso .barra-cobertura {
+  margin-top: 0.9rem;
+}
+
+/* Barra de cobertura: trilho recuado, parte preenchida na cor da marca.
+   Ponta arredondada só na extremidade do dado — a base fica reta. */
+.barra-cobertura {
+  display: block;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--superficie-2);
+  border: 1px solid var(--traco);
+  overflow: hidden;
+}
+
+.barra-cobertura__parte {
+  display: block;
+  height: 100%;
+  background: var(--verdete);
+  border-radius: 0 999px 999px 0;
+}
+
+.tabela--progresso td .barra-cobertura {
+  min-width: 6rem;
+  margin-bottom: 0.3rem;
+}
+
+.barra-cobertura__valor {
+  font-size: var(--meta);
+  color: var(--texto-2);
+}
+
+/* ---------- Gráfico ----------------------------------------------------- */
+
+.grafico {
+  margin: 0;
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  padding: 1rem;
+}
+
+.grafico__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Grade e eixos: traço de 1px, sólido, um passo fora da superfície. */
+.grafico__grade {
+  stroke: var(--traco);
+  stroke-width: 1;
+}
+
+.grafico__tique {
+  fill: var(--texto-2);
+  font-size: 11px;
+  font-family: var(--fonte-dados);
+}
+
+.grafico__area {
+  fill: var(--verdete);
+  opacity: 0.1;
+}
+
+.grafico__linha {
+  fill: none;
+  stroke: var(--verdete);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.grafico__mira {
+  stroke: var(--traco-forte);
+  stroke-width: 1;
+}
+
+/* Anel na cor da superfície para o ponto continuar legível sobre a linha. */
+.grafico__ponto {
+  fill: var(--verdete);
+  stroke: var(--superficie);
+  stroke-width: 2;
+}
+
+.grafico__legenda {
+  margin-top: 0.6rem;
+  font-size: var(--corpo-menor);
+  color: var(--texto-2);
+}
+
+.grafico__tabela {
+  margin-top: 0.75rem;
+  font-size: var(--corpo-menor);
+}
+
+.grafico__tabela summary {
+  cursor: pointer;
+  color: var(--texto-2);
+}

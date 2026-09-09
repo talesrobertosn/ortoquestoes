@@ -110,8 +110,30 @@ export interface ItemIndice {
   img: 0 | 1
   /** anulada */
   an: 0 | 1
-  /** tem comentário */
+  /** tem comentário, de qualquer origem — é o que alimenta o filtro */
   c: 0 | 1
+  /** tem comentário de IA */
+  cia: 0 | 1
+  /** tem ao menos um comentário da comunidade */
+  cc: 0 | 1
+}
+
+/**
+ * Um ponto da série de progresso: quantas questões do acervo já estavam
+ * comentadas naquela data. Vem de public/acervo/progresso.json, reconstruído
+ * do histórico do git e acrescido de um ponto por dia de trabalho.
+ */
+export interface MarcoProgresso {
+  /** AAAA-MM-DD */
+  data: string
+  total: number
+  ia: number
+  comunidade: number
+}
+
+export interface Progresso {
+  geradoEm: string
+  marcos: MarcoProgresso[]
 }
 
 export interface TemaIndice {
