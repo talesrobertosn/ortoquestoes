@@ -149,7 +149,7 @@ conceitos básicos, 11 questões.
 | Questão | O que a banca escreveu | O que me trava |
 |---|---|---|
 | `osteometabolicas-0060` | "O raquitismo por hipovitaminose D apresenta anomalia genética do cromossomo X com herança dominante em 1/2 dos casos" | Não consigo dizer o que a fração mede. Se for a proporção de filhos afetados na herança dominante ligada ao X, 1/2 faz sentido genético — mas aí a pergunta não é sobre raquitismo por hipovitaminose D, e sim sobre o raquitismo hipofosfatêmico ligado ao X, que é outra doença. Sem saber qual das duas leituras a banca quis, qualquer comentário seria chute |
-
+| `trauma-0174` | "Segundo a classificação de TLICS, podemos definir a fratura com" — e as alternativas são 1, 2, 3 ou 4 pontos | O enunciado termina sem dizer QUAL fratura. A imagem ou a descrição do caso ficou para trás na transcrição do PDF (trauma-a.pdf, p. 36), e sem ela não há o que somar: morfologia, estado neurológico e integridade do complexo ligamentar posterior são todos desconhecidos |
 ## Comentado, mas com ressalva escrita no próprio texto
 
 | Questão | A ressalva |
