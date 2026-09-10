@@ -197,6 +197,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0110": {
+  "conceito": "O escafoide é quase todo cartilagem articular, o que deixa pouca superfície livre para vasos entrarem. Toda a irrigação vem de ramos da artéria radial, e a distribuição dela é o que explica o comportamento das fraturas.",
+  "correta": "De 70% a 80% do suprimento, e a totalidade do polo proximal, entram por ramos que penetram na crista dorsal, no terço médio do osso, e caminham para dentro em sentido retrógrado — do distal para o proximal. Duas consequências saem daí. A fratura do terço proximal interrompe esse fluxo e tem alto risco de necrose e de retardo de consolidação, tanto mais quanto mais proximal for o traço. E a via de acesso dorsal deve poupar essa crista, sob pena de desvascularizar o que se pretende fixar.",
+  "incorretas": {
+   "A": "Medial não é um termo usado para descrever a entrada vascular do escafoide, e a face ulnar do osso é articular com o capitato e o semilunar — não há espaço para pedículo ali.",
+   "B": "Lateral tampouco corresponde ao pedículo descrito. A referência anatômica consagrada é a crista dorsal, palpável na tabaqueira anatômica.",
+   "D": "Existem vasos entrando pela tuberosidade palmar, mas eles suprem apenas de 20% a 30% do osso, e só o polo distal. Não é por eles que chega o sangue do polo proximal — se fosse, a fratura proximal não teria o prognóstico que tem."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
  "trauma-0116": {
   "conceito": "A classificação de TSCHERNE existe para preencher uma lacuna que a de Gustilo deixa: ela gradua a LESÃO DE PARTES MOLES, e não apenas o tamanho da ferida — e tem duas escalas, uma para fraturas FECHADAS e outra para ABERTAS. Guardar as duas é útil porque as bancas alternam entre elas. FRATURAS FECHADAS (graus 0 a III): GRAU 0, lesão de partes moles ausente ou insignificante, por mecanismo indireto e de baixa energia; GRAU I, abrasão superficial ou contusão causada por fragmento de dentro para fora; GRAU II, abrasão profunda e contaminada, com contusão muscular localizada, por trauma direto (o exemplo clássico é o para-choque); GRAU III, contusão extensa com esmagamento muscular, descolamento subcutâneo (lesão de Morel-Lavallée), lesão vascular maior ou SÍNDROME COMPARTIMENTAL. FRATURAS ABERTAS (graus I a IV): GRAU I, ferida puntiforme de dentro para fora, contaminação desprezível, traço simples; GRAU II, laceração com lesão circunscrita de pele e partes moles, contaminação moderada, qualquer traço; GRAU III, lesão extensa de partes moles, frequentemente com lesão vascular ou nervosa e incluindo a SÍNDROME COMPARTIMENTAL; GRAU IV, amputação subtotal ou total. Repare no padrão que resolve a questão nos dois sentidos: em AMBAS as escalas, a síndrome compartimental é marcador do grau III, o penúltimo — ela sinaliza que a lesão muscular e a hipertensão tecidual atingiram o patamar de comprometimento fisiológico, sem chegar à desvascularização completa do segmento (que é o grau IV das abertas). A utilidade prática dessa graduação é prognóstica: quanto maior o grau de Tscherne, maior o risco de infecção, de retardo de consolidação e de necessidade de cobertura, independentemente do padrão radiográfico da fratura — o que ajuda a decidir entre fixação definitiva imediata e controle de danos com fixador externo.",
   "correta": "C. A síndrome compartimental corresponde ao GRAU III de Tscherne — tanto na escala das fraturas abertas quanto na das fechadas —, marcando a lesão extensa de partes moles, frequentemente com comprometimento vascular ou nervoso, sem chegar à amputação subtotal do grau IV.",
@@ -439,6 +450,29 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0248": {
+  "conceito": "Os três parâmetros radiográficos do rádio distal são a inclinação ulnar, ou desvio radial, medida na incidência posteroanterior; a inclinação volar, medida no perfil; e a altura ou comprimento radial, também na posteroanterior.",
+  "correta": "A inclinação ulnar é o ângulo entre a linha que une a ponta do processo estiloide do rádio ao ponto mais ulnar da superfície articular do rádio e uma perpendicular ao eixo longo do osso. O valor normal é de cerca de 22 graus, com faixa aceita de 21 a 25. Perder inclinação ulnar significa que a superfície articular ficou horizontal, e isso transfere carga para a ulna e para o lado ulnar do carpo — daí a dor ulnar residual depois de uma fratura mal consolidada.",
+  "incorretas": {
+   "A": "O ângulo se mede dentro do rádio, entre dois pontos do próprio rádio. Usar o estiloide da ulna como referência mistura os dois ossos e mede outra coisa.",
+   "B": "Os pontos estão certos e o valor não: 11 graus é aproximadamente o valor normal da inclinação volar, medida no perfil. É a troca que a questão arma.",
+   "C": "Erra os dois itens: pontos de referência errados e o valor da inclinação volar no lugar do da ulnar."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0249": {
+  "conceito": "O escafoide fratura quando o punho é forçado além dos 95 graus de extensão com desvio radial: nessa posição o polo proximal fica preso entre o rádio e o ligamento radioescafocapitato enquanto o polo distal continua sendo empurrado, e o osso quebra no meio.",
+  "correta": "O mecanismo é a queda com hiperextensão e desvio radial do punho, e entre os testes oferecidos o de Watson é o único que se refere ao escafoide. Vale uma ressalva honesta: o teste de Watson foi descrito para instabilidade escafossemilunar, não para fratura. O exame clínico da fratura aguda do escafoide se apoia em outros três achados, que valem mais na prática — dor à palpação da tabaqueira anatômica, dor à palpação do tubérculo do escafoide na face volar e dor à compressão axial do polegar. Nenhum deles é sensível o bastante para excluir a fratura, e é por isso que a suspeita clínica com radiografia normal se trata como fratura até nova avaliação ou exame de maior resolução.",
+  "incorretas": {
+   "A": "O teste está certo, o desvio não: é radial, não ulnar. O desvio radial é o que trava o polo proximal contra o rádio.",
+   "C": "O teste de Finkelstein avalia a tenossinovite de De Quervain, no primeiro compartimento dorsal — e o desvio do mecanismo também está errado.",
+   "D": "O mecanismo está certo, mas Finkelstein é teste de outra doença: a dor dele fica sobre o estiloide radial e piora com o polegar dentro da mão e desvio ulnar do punho."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false,
+  "alerta": "O teste de Watson é o único do escafoide entre as alternativas, mas ele foi descrito para instabilidade escafossemilunar, e não para fratura. O exame clínico da fratura aguda do escafoide se apoia em outros achados, listados no comentário."
+ },
  "trauma-0261": {
   "conceito": "A diáfise do fêmur é o osso mais envolvido por músculo de todo o esqueleto, e é essa cobertura que explica tanto a raridade relativa da exposição quanto a sua topografia quando ela ocorre. Vale percorrer os compartimentos: MEDIALMENTE está a massa dos adutores (adutor magno, longo e curto, grácil, pectíneo), espessa e contínua; POSTERIORMENTE, os isquiotibiais (bíceps femoral, semitendíneo, semimembranáceo) e a cabeça curta do bíceps, também volumosos; ANTERIORMENTE e LATERALMENTE, o quadríceps — mas com uma diferença decisiva, porque ali o vasto lateral se apoia sobre a linha áspera e o osso se aproxima da superfície, tendo por fora apenas o trato iliotibial e a pele, sem outra camada muscular interposta. Some-se a isso a mecânica da fratura: no traço oblíquo ou espiral típico do trauma de alta energia, o fragmento proximal é tracionado em FLEXÃO, ABDUÇÃO e ROTAÇÃO EXTERNA pelo iliopsoas e pelos glúteos médio e mínimo, enquanto o distal é puxado em ADUÇÃO e EXTENSÃO pelos adutores e pelo gastrocnêmio. A extremidade afiada do fragmento é então projetada para diante e para fora — na direção de menor resistência —, produzindo a exposição de dentro para fora, tipicamente uma ferida do tipo I de Gustilo, ANTERIOR ou LATERAL. A consequência prática é grande e frequentemente subestimada: a musculatura que impede a exposição é a mesma que sangra. A fratura fechada da diáfise femoral acomoda de 1 a 1,5 litro de sangue no compartimento da coxa, e a exposta perde ainda mais para fora — razão pela qual ela é uma fonte de choque hemorrágico que precisa ser considerada no item C do atendimento inicial, e pela qual o alinhamento e a imobilização precoces (tração ou fixador externo) são medidas de controle de sangramento, e não apenas de conforto.",
   "correta": "A. A exposição ocorre mais frequentemente na região ANTERIOR ou LATERAL, onde o fêmur tem a menor cobertura de partes moles — apenas o vasto lateral, o trato iliotibial e a pele — e para onde o fragmento afiado é projetado pelo desvio muscular característico.",
@@ -494,6 +528,39 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0291": {
+  "conceito": "A força de arrancamento do parafuso pedicular depende de quanto osso a rosca consegue segurar — e isso é determinado, antes de tudo, pela DENSIDADE MINERAL do osso em que ela se ancora. Num corpo osteoporótico, nenhuma escolha de rosca, comprimento ou trajetória compensa a falta de osso, e é por isso que ali se recorre a artifícios: parafusos de maior diâmetro, trajetória cortical, aumento com cimento, ganchos ou aumento do número de níveis instrumentados. Desenho da rosca, diâmetro e comprimento importam, mas atuam sobre a matéria-prima que a densidade oferece.",
+  "correta": "Densidade mineral óssea do corpo vertebral.",
+  "incorretas": {
+   "A": "A localização da vértebra muda a anatomia do pedículo e a técnica, mas não é o determinante primário da fixação.",
+   "B": "O tipo de rosca influencia, e por isso existem desenhos específicos para osso osteoporótico — mas o fator primário continua sendo a qualidade do osso.",
+   "C": "O ângulo de inserção importa para a segurança e para o comprimento útil, e não como determinante primário da resistência ao arrancamento."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0299": {
+  "conceito": "Nas fraturas do pilão, a escolha do acesso é ditada pela localização da cominuição e pela condição da pele — e a regra de ouro é esperar as partes moles, tratando primeiro com fixador externo em ponte, para reduzir e fixar em definitivo entre 7 e 21 dias. Entre as vias, a ANTEROMEDIAL é a que expõe a MAIOR ÁREA da tíbia distal: a face medial da tíbia é subcutânea e permite uma exposição extensa da superfície articular. O preço é justamente esse — cobertura cutânea fina, mal vascularizada e com alto risco de deiscência e exposição do implante, motivo pelo qual a via anterolateral, com melhor envelope de partes moles, ganhou espaço nas últimas décadas.",
+  "correta": "Anteromedial.",
+  "incorretas": {
+   "A": "O acesso anterolateral tem melhor cobertura de partes moles e permite placa em posição mais segura, mas expõe área menor da superfície articular e não alcança bem o fragmento medial.",
+   "C": "O posteromedial serve ao fragmento posteromedial e ao acesso ao feixe tibial posterior; é uma janela restrita.",
+   "D": "O posterolateral é usado para o fragmento posterolateral (de Volkmann) e para a fíbula, também com exposição limitada da tíbia distal."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0304": {
+  "conceito": "O tálus tem dois terços da superfície cobertos por cartilagem, nenhuma inserção muscular e um fluxo predominantemente RETRÓGRADO — do colo para o corpo. Isso explica a taxa de necrose depois de fraturas do colo. As fontes são três. A ARTÉRIA DO CANAL DO TARSO, ramo da TIBIAL POSTERIOR, é a principal: entra pelo canal entre tálus e calcâneo e irriga a maior parte do corpo. A ARTÉRIA DO SEIO DO TARSO, formada pela perfurante da fibular e pela tarsal lateral (da dorsal do pé), irriga a porção LATERAL do colo e da cabeça. E os ramos deltoideos, também da tibial posterior, irrigam a porção medial do corpo — são eles que costumam sobreviver na Hawkins II e explicam por que nem toda fratura desloca para a necrose.",
+  "correta": "A artéria do canal do tarso é ramo da tibial posterior.",
+  "incorretas": {
+   "A": "A artéria do seio do tarso não vem da tibial posterior: é formada pela perfurante da artéria fibular e pela tarsal lateral, ramo da dorsal do pé.",
+   "C": "A artéria do seio do tarso irriga a porção LATERAL do colo; a porção medial fica a cargo dos ramos deltoideos, da tibial posterior.",
+   "D": "O tubérculo posterior recebe ramos tanto da tibial posterior quanto da fibular, e não há base para eleger a fibular como a principal responsável."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
  "trauma-0308": {
   "conceito": "O nervo RADIAL se divide na altura da articulação radiocapitelar em dois ramos com destinos distintos. O ramo SUPERFICIAL é sensitivo puro: desce sob o ventre do braquiorradial, na face anterolateral do antebraço, e emerge entre ele e o extensor radial longo do carpo no terço distal, para inervar o dorso radial da mão. O ramo PROFUNDO, que a partir da saída do supinador passa a se chamar NERVO INTERÓSSEO POSTERIOR, é motor puro, e o seu trajeto tem três etapas que convém separar. No terço PROXIMAL, ele mergulha no músculo SUPINADOR, passando sob a sua borda proximal fibrosa — a ARCADA DE FROHSE — e contorna o colo do rádio por dentro do músculo, a cerca de 3 a 4 cm da articulação radiocapitelar; é aqui que ele é lesado nas luxações de Monteggia e nas vias de acesso ao terço proximal do rádio. No terço MÉDIO, ele já emergiu da borda distal do supinador e desce no compartimento extensor PROFUNDO, entre a camada superficial e a profunda dos extensores, ACOMPANHADO PELA ARTÉRIA INTERÓSSEA POSTERIOR — os dois formam um feixe neurovascular que se distribui aos extensores, ao abdutor longo e aos extensores do polegar. No terço DISTAL, o que resta do nervo, já muito fino, alcança a MEMBRANA INTERÓSSEA e caminha sobre ela até terminar na cápsula dorsal do punho, onde funciona como ramo articular — é esse segmento terminal que se resseca na denervação do punho. Essa topografia tem consequência prática direta: na via dorsal de THOMPSON, para o terço médio e distal do rádio, o feixe do interósseo posterior está no plano de dissecção, e o descolamento deve ser feito com o antebraço SUPINADO, que traz o supinador e o nervo para a face anterior, afastando-os da linha de trabalho.",
   "correta": "B. No terço médio do antebraço o ramo profundo do radial já saiu do supinador e desce entre as camadas superficial e profunda dos extensores, acompanhado pela ARTÉRIA INTERÓSSEA POSTERIOR, com a qual forma um feixe neurovascular.",
@@ -501,6 +568,17 @@
    "A": "O nervo só alcança a membrana interóssea no terço DISTAL, já muito afilado, onde caminha sobre ela até terminar como ramo articular da cápsula dorsal do punho. No terço médio ele ainda está no plano muscular, com a artéria interóssea posterior.",
    "C": "A borda anteromedial da ulna é território do nervo ULNAR e do flexor ulnar do carpo, no compartimento flexor. O ramo profundo do radial é um nervo do compartimento EXTENSOR e não se aproxima da ulna.",
    "D": "A borda anterolateral do rádio, sob o braquiorradial, é o trajeto do ramo SUPERFICIAL do radial, o sensitivo — e é ali que ele corre risco nas vias volares e nas cirurgias do punho. O ramo profundo está do lado dorsal."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0309": {
+  "conceito": "No AP da bacia, a linha ilioisquiática desenha a coluna posterior e corre imediatamente ao lado da lágrima de Köhler — tão próximas que funcionam como par de referência. Quando elas se dissociam, alguma das duas mudou de lugar, e o que se desloca medialmente nesse cenário é a superfície quadrilátera, que forma o ramo medial da lágrima. Daí a dissociação apontar para a fratura da parede medial do acetábulo, achado que muda o planejamento porque a coluna anterior e a superfície quadrilátera exigem acesso e fixação diferentes da parede posterior.",
+  "correta": "Fratura da superfície quadrilátera, cujo deslocamento medial separa a lágrima da linha ilioisquiática.",
+  "incorretas": {
+   "A": "A fratura da parede posterior se revela pelo fragmento sobreposto à cabeça e pelo oblíquo obturador, sem alterar essa relação.",
+   "B": "A transversa infratectal interrompe as duas linhas de coluna abaixo do teto, e não produz especificamente essa dissociação.",
+   "C": "A transversa transtectal atravessa a superfície de carga e tem outra assinatura radiográfica."
   },
   "geradoEm": "2026-09-10",
   "conferido": false
@@ -681,6 +759,50 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0417": {
+  "conceito": "A fratura por avulsão ISOLADA do TROCANTER MENOR no ADULTO é um sinal clássico de doença metastática oculta, e por um motivo mecânico claro: o trocanter menor é apófise e recebe apenas a tração do iliopsoas — força insuficiente para arrancá-lo de um osso normal depois do fechamento fisário. Quando isso acontece, quase sempre há uma lesão lítica minando o osso: metástase (mama, pulmão, rim, tireoide, próstata), mieloma ou linfoma. As séries mostram malignidade em mais de 90% desses casos no adulto. Na CRIANÇA e no ADOLESCENTE atleta, a mesma fratura é avulsão apofisária banal, de tratamento conservador — a diferença é a fise aberta. A conduta correta, portanto, NÃO é fixar: é INVESTIGAR — radiografia de todo o fêmur, ressonância para medir a extensão intramedular, tomografia de tórax, abdome e pelve, cintilografia e, se o primário não for encontrado, biópsia. Só então se planeja, e o planejamento costuma envolver haste intramedular LONGA, protegendo o osso inteiro, e não fixação daquele fragmento.",
+  "correta": "Trocanter menor.",
+  "incorretas": {
+   "A": "A avulsão isolada do trocanter maior ocorre por trauma direto ou por tração dos glúteos, sem essa associação com malignidade.",
+   "C": "A avulsão do tubérculo maior do úmero é traumática, ligada a luxação anterior do ombro e a lesões do manguito rotador.",
+   "D": "A avulsão do tubérculo menor é rara e ligada a trauma com contração forçada do subescapular, sobretudo em adolescentes."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0418": {
+  "conceito": "No acesso posterior, os rotadores curtos são seccionados para expor a coluna posterior e a cápsula — e é justamente ao lado deles que corre o ramo profundo da artéria circunflexa femoral MEDIAL, o vaso do qual depende a viabilidade da cabeça femoral no adulto. Ele contorna o fêmur entre o quadrado femoral e o gêmeo inferior e sobe pela crista intertrocantérica. Seccionar os tendões a pelo menos 1,5 cm da inserção no trocanter deixa uma margem de segurança entre o corte e o vaso — e é por isso, também, que o quadrado femoral não se desinsere.",
+  "correta": "1,5 cm do grande trocanter, para preservar os ramos da circunflexa femoral medial.",
+  "incorretas": {
+   "B": "Erra a distância e a artéria: 0,5 cm não dá margem nenhuma, e a lateral não irriga a cabeça.",
+   "C": "A distância está certa, mas a artéria em risco é a medial.",
+   "D": "A artéria está certa, mas 0,5 cm é margem insuficiente."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0419": {
+  "conceito": "A coxa tem três compartimentos, cada um com seu nervo e sua função. Anterior: quadríceps e sartório, nervo femoral, extensão do joelho. Medial: adutores, grácil e obturador externo, nervo obturatório, adução. Posterior: isquiotibiais, nervo isquiático, extensão do quadril e flexão do joelho. Não existe compartimento lateral na coxa — o tensor da fáscia lata pertence funcionalmente ao grupo glúteo, e a banda iliotibial é fáscia, não compartimento. Essa divisão em três é o que orienta a fasciotomia e a interpretação de síndrome compartimental da coxa.",
+  "correta": "Anterior, medial e posterior.",
+  "incorretas": {
+   "A": "Não há compartimento lateral na coxa, e o posterior ficou de fora da lista.",
+   "C": "O compartimento anterior não se subdivide em superficial e profundo, e o lateral não existe.",
+   "D": "O posterior é um só compartimento, sem subdivisão em superficial e profundo."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0423": {
+  "conceito": "O pino supra-acetabular atravessa um corredor ósseo estreito entre a espinha ilíaca anteroinferior e a incisura isquiática maior, e a fluoroscopia oferece uma imagem que o desenha: na incidência oblíqua obturadora combinada com a de saída, as duas tábuas do ílio — interna e externa — se projetam sobrepostas formando um contorno em gota, cujo fundo é o topo da incisura isquiática maior. Colocar a ponta do pino dentro dessa gota garante que ele caminhe entre as duas corticais, sem sair para a pelve nem para a articulação nem descer sobre a incisura, onde correm os vasos e o nervo glúteo superior.",
+  "correta": "As tábuas interna e externa do ílio, com o topo da incisura isquiática maior formando o limite inferior.",
+  "incorretas": {
+   "A": "A gota é formada pelas DUAS tábuas sobrepostas — é essa sobreposição que define o corredor.",
+   "B": "Além de citar apenas uma tábua, o limite inferior é a incisura isquiática MAIOR, não a menor.",
+   "D": "As tábuas estão certas, mas o limite inferior é a incisura maior."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
  "trauma-0431": {
   "conceito": "A lesão de ESSEX-LOPRESTI é a INSTABILIDADE LONGITUDINAL do antebraço: fratura cominuída da cabeça do rádio, ruptura da MEMBRANA INTERÓSSEA e lesão da articulação RADIOULNAR DISTAL. Para entender por que ela é tão frequentemente perdida, é preciso enxergar o antebraço como uma unidade — três estabilizadores em série que impedem a migração proximal do rádio: a cabeça do rádio contra o capítulo (o batente proximal), a membrana interóssea (com a sua banda central, o ligamento interósseo central, que transmite cerca de 70% a 80% da carga axial do punho para o cotovelo) e o complexo da fibrocartilagem triangular com os ligamentos radioulnares distais (o batente distal). Rompidos os três, o rádio migra proximalmente e o antebraço 'desmonta'. A armadilha clínica é que o paciente chega com uma queixa só, a do COTOVELO — dor e limitação após queda com carga axial —, e o cirurgião trata a fratura da cabeça do rádio como se fosse isolada. O achado que denuncia a lesão é a DOR NO PUNHO, à palpação da articulação RADIOULNAR DISTAL e na região ulnar do carpo, muitas vezes acompanhada de dor ao longo do antebraço, no trajeto da membrana interóssea. Daí a regra de ouro: em TODA fratura da cabeça ou do colo do rádio, examinar e radiografar o PUNHO, comparando a variância ulnar com o lado contralateral. A consequência prática é a mais importante de todas: nunca RESSECAR a cabeça do rádio nessa situação, porque se retira o único batente proximal que ainda resta — o rádio migra, a ulna passa a impactar contra o carpo (impacto ulnocarpal doloroso) e o resgate tardio é difícil e de resultados medíocres. O tratamento agudo é fixar ou SUBSTITUIR a cabeça do rádio por prótese, reduzir e estabilizar a radioulnar distal (em regra com fio transfixante e imobilização em supinação por quatro a seis semanas).",
   "correta": "C. A dor à palpação da articulação radioulnar DISTAL é o sinal que denuncia a Essex-Lopresti: o paciente se queixa do cotovelo, e é o exame do punho que revela a instabilidade longitudinal do antebraço.",
@@ -737,6 +859,50 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0465": {
+  "conceito": "A altura radial, ou comprimento radial, é o terceiro dos parâmetros radiográficos do rádio distal, ao lado da inclinação ulnar e da inclinação volar. Ela se mede na incidência posteroanterior.",
+  "correta": "Mede-se a distância entre duas linhas perpendiculares ao eixo longo do rádio: uma passando pela ponta do processo estiloide radial e outra pelo limite distal da superfície articular da cabeça da ulna. O valor normal é de cerca de 11 a 12 milímetros. Perder altura radial significa que o rádio encurtou e a carga migrou para o lado ulnar — daí a dor ulnar e o impacto ulnocarpal que aparecem depois de uma fratura consolidada em encurtamento, e daí o encurtamento ser um dos critérios de instabilidade que indicam fixação.",
+  "incorretas": {
+   "A": "O estiloide ulnar é referência instável para essa medida: ele tem comprimento muito variável entre as pessoas e frequentemente está fraturado no mesmo trauma.",
+   "C": "O centro da radioulnar distal não é uma referência usada, e 9 milímetros está abaixo do valor normal descrito.",
+   "D": "Troca as duas referências e o valor. O canto medial da superfície do rádio é ponto usado na medida da inclinação ulnar, não da altura."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0467": {
+  "conceito": "Ruptura tendínea depois de fratura do rádio distal quase sempre é ruptura por atrito, e ela acontece onde um tendão muda de direção contra uma quina óssea.",
+  "correta": "O extensor longo do polegar é de longe o mais acometido. Ele contorna o tubérculo de Lister num ângulo fechado, dentro de um túnel apertado e com vascularização pobre justamente nesse trecho. A ruptura aparece semanas ou meses depois do trauma, com perda súbita e indolor da retropulsão do polegar, e — o que é contraintuitivo — é mais frequente nas fraturas sem desvio tratadas de forma conservadora, em que o hematoma e o edema comprimem o tendão dentro de um compartimento que continuou fechado. Como o coto está degenerado, o reparo direto raramente funciona: a solução habitual é a transferência do extensor próprio do indicador.",
+  "incorretas": {
+   "A": "O extensor comum para o indicador não faz esse trajeto anguloso e não é o tendão de risco.",
+   "B": "O extensor próprio do indicador raramente rompe — e é justamente por isso que ele é o doador de escolha para substituir o extensor longo do polegar rompido.",
+   "C": "O extensor radial curto do carpo corre no segundo compartimento, sem a mudança brusca de direção que caracteriza o trajeto do longo do polegar."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0508": {
+  "conceito": "A figura desta questão não veio no PDF de origem, mas as alternativas se resolvem sozinhas, porque cada uma junta um parâmetro a um valor. Os três parâmetros do rádio distal e seus valores normais: inclinação ulnar (ou desvio radial) em torno de 22 graus, inclinação volar em torno de 11 graus, e altura radial entre 11 e 12 milímetros.",
+  "correta": "Altura radial entre 11 e 12 milímetros é a única combinação coerente. Ela se mede na incidência posteroanterior, entre duas linhas perpendiculares ao eixo longo do rádio: uma pela ponta do processo estiloide radial e outra pelo limite distal da superfície articular da cabeça da ulna. Perder altura significa que o rádio encurtou e a carga migrou para o lado ulnar — daí a dor ulnar e o impacto ulnocarpal depois de uma fratura consolidada em encurtamento, e daí o encurtamento ser um dos critérios de instabilidade que indicam fixação.",
+  "incorretas": {
+   "A": "Junta o nome de um parâmetro com o valor de outro: 11 a 12 é a faixa da inclinação volar em graus, e da altura radial em milímetros — nunca da inclinação radial.",
+   "B": "A inclinação ulnar normal fica em torno de 22 graus, com faixa aceita de 21 a 25. De 10 a 20 graus já é perda de inclinação.",
+   "D": "De 10 a 20 milímetros é faixa larga demais: 20 milímetros de altura radial não existe em punho nenhum."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0510": {
+  "conceito": "O escafoide é quase todo revestido de cartilagem articular, o que deixa pouca superfície livre para vasos entrarem. Toda a irrigação vem de ramos da artéria radial, e ela se organiza em dois sistemas extraósseos.",
+  "correta": "O segundo sistema em importância é o extraósseo volar. Ramos da artéria radial entram pelo tubérculo do escafoide, na face volar e distal, e respondem por cerca de 20% a 30% do suprimento — irrigando apenas o polo distal. O primeiro sistema, responsável por 70% a 80% do osso e pela totalidade do polo proximal, é o extraósseo dorsal, cujos vasos penetram na crista dorsal e caminham para dentro em sentido retrógrado. Duas consequências: fratura do terço proximal interrompe o fluxo retrógrado e tem alto risco de necrose, e a via de acesso dorsal deve poupar essa crista.",
+  "incorretas": {
+   "A": "A rede intraóssea dorsal é a distribuição dos vasos já dentro do osso, e não um sistema de entrada. A questão pergunta pelos sistemas de vascularização, que são extraósseos.",
+   "B": "Mesma observação: intraósseo descreve o trajeto interno, não a origem.",
+   "C": "O extraósseo dorsal é o primeiro em importância, não o segundo."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
  "trauma-0527": {
   "conceito": "A luxação do cotovelo é a segunda luxação mais comum do adulto, atrás apenas da glenoumeral, e mais de 90% são POSTERIORES ou posterolaterais. O primeiro passo é distinguir a luxação SIMPLES (puramente ligamentar) da COMPLEXA (com fratura associada — cabeça do rádio, coronoide, olécrano), porque o prognóstico e o tratamento são outros: a simples é, na esmagadora maioria, tratada de forma incruenta, com redução fechada e mobilização precoce. Reduzida a articulação, a conduta se decide por dois exames feitos ali mesmo. O primeiro é o ARCO DE MOVIMENTO sob controle: leva-se o cotovelo da extensão à flexão e testa-se a PRONOSSUPINAÇÃO. O segundo é a radiografia pós-redução, procurando o 'drop sign' (alargamento do espaço ulnoumeral) e qualquer perda da congruência concêntrica. Um cotovelo que, depois de reduzido, NÃO faz pronossupinação livre tem um BLOQUEIO MECÂNICO, e bloqueio mecânico não se resolve com tipoia: significa fragmento osteocondral encarcerado na articulação, fratura da cabeça do rádio impedindo a rotação, interposição de partes moles ou redução não concêntrica. Todos esses achados são indicação cirúrgica. A pesquisa complementar obrigatória é a TOMOGRAFIA depois da redução, que revela fraturas do coronoide e da cabeça do rádio invisíveis na radiografia simples. O outro critério de instabilidade é a redução que se perde antes dos 30 graus de extensão — se o cotovelo só é estável em flexão maior que 30 graus, há lesão ligamentar significativa. Quanto ao restante, a dor é universal na luxação e não discrimina nada, e as parestesias, quase sempre do nervo ULNAR, são neuropraxias que se recuperam espontaneamente na maioria dos casos.",
   "correta": "B. A incapacidade de pronar e supinar depois da redução denuncia BLOQUEIO MECÂNICO — fragmento osteocondral encarcerado, fratura da cabeça do rádio, interposição de partes moles ou redução não concêntrica. Bloqueio mecânico é indicação cirúrgica.",
@@ -759,6 +925,39 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0545": {
+  "conceito": "A ossificação heterotópica nasce da agressão ao músculo: célula mesenquimal indiferenciada, exposta a hematoma e a fragmentos ósseos, diferencia-se em osteoblasto. No fêmur isso depende de por onde o pino passa. O pino ANTERIOR atravessa o reto femoral e o vasto intermédio, no ventre do quadríceps, e é o que mais traumatiza músculo — além de amarrar o quadríceps ao osso, limitando a flexão do joelho. O pino lateral atravessa a banda iliotibial e a borda do vasto lateral, com muito menos massa muscular no caminho, e é por isso o trajeto preferido.",
+  "correta": "Anterior, que atravessa o ventre do quadríceps.",
+  "incorretas": {
+   "A": "O trajeto anteromedial aproxima-se do feixe femoral, o que é outro problema, mas não é o de maior risco de ossificação.",
+   "C": "O anterolateral atravessa menos músculo do que o anterior direto.",
+   "D": "O lateral é justamente o trajeto de escolha, com menor lesão muscular."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0550": {
+  "conceito": "A gota de lágrima é o contorno da borda volar da fossa semilunar do rádio, visto no perfil. O ângulo dela — formado entre o eixo da gota e o eixo longo do rádio — mede se essa borda está no lugar, e o valor normal fica em torno de 70 graus.",
+  "correta": "Ângulo em torno de 45 graus indica lesão da fossa semilunar: a borda volar rodou, o que significa que o fragmento volar-ulnar do rádio distal — a chamada esquina crítica — está desviado ou mal reduzido. O achado importa porque esse fragmento é pequeno, frequentemente não é alcançado pela placa volar padrão, cuja borda distal fica proximal a ele, e a sua perda leva à subluxação volar do carpo no pós-operatório. Reconhecer a gota rodada no perfil é o que indica fixação específica dessa borda, com placa de sustentação distal ou fio de sutura ancorado.",
+  "incorretas": {
+   "B": "O estiloide ulnar não participa da gota de lágrima, que é uma referência do rádio.",
+   "C": "A fossa escafoide fica radial à semilunar e não é o que a gota contorna.",
+   "D": "O estiloide radial é avaliado pela altura e pela inclinação radial na incidência posteroanterior, e não por esse ângulo no perfil."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0560": {
+  "conceito": "O gesso de Burkhalter trata fraturas de metacarpo pelo princípio da posição intrínseca-plus, que mantém as estruturas no comprimento em que não retraem: punho em cerca de 40 graus de extensão, metacarpofalângicas em 70 a 90 graus de flexão e interfalângicas LIVRES, para que o paciente mova os dedos desde o início. A extensão do punho é o que mantém a tensão dos flexores e ajuda a reduzir a angulação apical dorsal; a flexão das metacarpofalângicas mantém os colaterais alongados, evitando a rigidez em extensão que é a complicação clássica.",
+  "correta": "40 graus de extensão do punho.",
+  "incorretas": {
+   "A": "Punho neutro não gera a tensão dos flexores que ajuda a manter a redução.",
+   "B": "10 graus é extensão insuficiente para o princípio da técnica.",
+   "C": "20 graus ainda fica aquém da posição descrita."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
  "trauma-0567": {
   "conceito": "O processo coronoide é o principal estabilizador ÓSSEO anterior do cotovelo: ele bloqueia a translação posterior da ulna e resiste ao varo. A classificação antiga, de REGAN E MORREY, media apenas a ALTURA do fragmento — tipo I, avulsão da ponta; tipo II, até 50% da altura; tipo III, mais de 50%. Ela é útil na radiografia, mas ignora a informação que realmente decide o tratamento. O'DRISCOLL reclassificou o coronoide pela LOCALIZAÇÃO ANATÔMICA do fragmento, porque a localização revela o MECANISMO da lesão e prediz o padrão de instabilidade. São três tipos, cada um com subtipos: TIPO 1 — PONTA do coronoide (subtipo 1, fragmento de até 2 mm; subtipo 2, maior que 2 mm). É a fratura da tríade terrível, do mecanismo em valgo e rotação externa. TIPO 2 — FACETA ANTEROMEDIAL, o fragmento da instabilidade rotatória em VARO, produzido pelo mecanismo de varo com rotação interna do antebraço, e cuja armadilha é parecer pequeno na radiografia em frente enquanto compromete um pilar de sustentação; seus subtipos são 1, a borda anteromedial isolada; 2, a borda anteromedial MAIS a ponta; e 3, a borda anteromedial MAIS o TUBÉRCULO SUBLIME — que é a inserção umeral distal do feixe anterior do ligamento colateral medial, e por isso o subtipo mais instável dos três, porque perde de uma vez o apoio ósseo e a ancoragem ligamentar medial. TIPO 3 — BASE do coronoide, com mais de 50% da altura (subtipo 1, corpo e base; subtipo 2, fratura basal transolecraniana). A regra prática: fratura da faceta anteromedial pede TOMOGRAFIA, é subestimada na radiografia simples, e quando desviada ou instável exige fixação por via medial (Hotchkiss ou over-the-top), sob pena de artrose precoce por subluxação em varo.",
   "correta": "C. O tipo 2 de O'Driscoll é o da faceta ANTEROMEDIAL; o subtipo 3 acrescenta o TUBÉRCULO SUBLIME, inserção do feixe anterior do ligamento colateral medial — o subtipo mais instável, porque combina perda do apoio ósseo anteromedial com perda da ancoragem ligamentar.",
@@ -766,6 +965,39 @@
    "A": "A base do coronoide corresponde ao TIPO 3 de O'Driscoll (subtipo 1, corpo e base; subtipo 2, basal transolecraniana), fraturas com mais de 50% da altura — não ao tipo 2.",
    "B": "A ponta isolada é o TIPO 1 (subtipo 1 até 2 mm, subtipo 2 acima de 2 mm), a fratura característica da tríade terrível. O tipo 2 é definido pelo acometimento da faceta anteromedial.",
    "D": "Faceta anteromedial MAIS a ponta é o tipo 2 subtipo 2, e não o subtipo 3. A diferença é exatamente essa: o subtipo 3 acrescenta o tubérculo sublime, com a inserção do colateral medial, e não a ponta."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0574": {
+  "conceito": "O acesso lateral direto de Hardinge divide o glúteo médio no seu terço anterior e continua pelo vasto lateral, formando um manguito contínuo de partes moles sobre o trocanter. O limite proximal dessa divisão é anatômico: o nervo glúteo superior entra no glúteo médio pela face profunda, correndo transversalmente a cerca de 3 a 5 cm acima da ponta do trocanter maior. Passar desse ponto secciona o nervo, e o resultado é insuficiência abdutora permanente com marcha de Trendelenburg — uma complicação que não tem tratamento reconstrutivo satisfatório.",
+  "correta": "Nervo glúteo superior, que cruza a face profunda do glúteo médio a 3 a 5 cm acima do trocanter.",
+  "incorretas": {
+   "A": "O isquiático corre posteriormente e não está no campo do acesso lateral direto.",
+   "B": "O femoral é anterior e profundo, e também não é alcançado por essa via.",
+   "C": "O glúteo inferior inerva o glúteo máximo e entra abaixo do piriforme, fora do trajeto dessa dissecção."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0576": {
+  "conceito": "A vitamina C é antioxidante e reduz a formação de radicais livres na fase inflamatória da consolidação — e é aí que se acredita estar o efeito preventivo sobre a síndrome dolorosa regional complexa. Os ensaios em fratura do rádio distal usaram 500 mg ao dia por cerca de 50 dias a partir do trauma e mostraram redução da incidência. Vale reter o limite: a evidência é de PREVENÇÃO. Depois de instalada, a síndrome se trata com reabilitação precoce, analgesia multimodal, gabapentinoides e bloqueios — e nenhuma vitamina resolve.",
+  "correta": "Vitamina C.",
+  "incorretas": {
+   "A": "A vitamina A não tem esse papel descrito.",
+   "B": "As vitaminas do complexo B têm papel em neuropatias carenciais, e não nessa profilaxia.",
+   "D": "A vitamina D importa para mineralização e consolidação, mas não é a estudada nesse cenário."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0577": {
+  "conceito": "A regra de Spence avalia a integridade do ligamento TRANSVERSO do atlas na fratura de Jefferson, e é medida na radiografia transoral: soma-se o quanto cada massa lateral de C1 ultrapassa lateralmente a borda do corpo de C2. Se a soma passa de 6,9 mm (na prática, cerca de 7 mm), presume-se ruptura do ligamento transverso — e a fratura, que seria estável e tratada com colar, passa a ser instável, exigindo halo ou artrodese C1-C2. Vale lembrar que a tomografia e a ressonância hoje avaliam isso diretamente, mas a regra continua sendo cobrada e continua útil.",
+  "correta": "Ligamento transverso, na fratura de C1.",
+  "incorretas": {
+   "A": "Os ligamentos alares limitam a rotação e são avaliados de outra forma; não é o que a regra de Spence mede.",
+   "B": "Nem o ligamento nem o osso correspondem: a regra é sobre C1.",
+   "D": "O ligamento está certo, mas a fratura avaliada é a de C1, e não a de C2."
   },
   "geradoEm": "2026-09-10",
   "conferido": false
@@ -975,6 +1207,39 @@
    "A": "A rigidez é justamente uma das complicações mais frequentes do cotovelo flutuante: são duas fraturas, alta energia, muita lesão de partes moles e risco aumentado de ossificação heterotópica. É por antecipá-la que se busca fixação estável e mobilização precoce.",
    "C": "O tratamento é CIRÚRGICO na quase totalidade dos casos, e obriga a estabilizar os DOIS níveis. Fixar apenas um segmento — ou nenhum — deixa o cotovelo sem controle entre duas fraturas instáveis e inviabiliza tanto a redução quanto a reabilitação.",
    "D": "A associação com lesão neurovascular PIORA o prognóstico, e de forma significativa. O cotovelo flutuante tem taxa elevada de lesão do mediano e do interósseo anterior, de lesão da artéria braquial e, sobretudo, de síndrome compartimental do antebraço, que exige vigilância seriada."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0794": {
+  "conceito": "A FRATURA EM BANANA (ou fratura em giz, chalk-stick) é a fratura TRANSVERSA que ocorre em OSSO PATOLÓGICO sob trauma de BAIXA ENERGIA — e sua imagem clássica é a do osso pagético. Três características a definem e todas decorrem da mesma causa. É TRANSVERSA porque o osso doente perde a capacidade de dissipar energia por planos oblíquos; parte de forma limpa, como um giz. Ocorre na CONVEXIDADE da deformidade — a face lateral do fêmur arqueado, a face anterior da tíbia em sabre —, que é onde as forças de tração se concentram. E é precedida por FISSURAS DE INSUFICIÊNCIA (fissuras de Looser, ou pseudofraturas), traços incompletos e transversos que aparecem meses antes na cortical convexa e que são o sinal de alarme a procurar. Além do Paget, a mesma fratura aparece na osteomalácia, na osteopetrose e nas fraturas atípicas por bisfosfonato. Duas consequências práticas: fissura na convexidade do fêmur pagético é indicação de FIXAÇÃO PROFILÁTICA, preferencialmente com haste intramedular; e a cirurgia nesse osso hipervascular sangra muito, o que justifica preparo com bisfosfonato e reserva de sangue.",
+  "correta": "Transversa, associada a trauma de baixa energia em osso patológico.",
+  "incorretas": {
+   "A": "Fratura transversa por alta energia ocorre em osso normal e é outro contexto — a marca da fratura em banana é justamente o trauma mínimo.",
+   "B": "Fratura segmentar por alta energia é típica do trauma de trânsito em osso normal.",
+   "D": "O padrão em osso patológico é transverso e único, não segmentar."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0799": {
+  "conceito": "O acesso do seio do tarso é hoje a via preferida para a maioria das fraturas intra-articulares do calcâneo, no lugar do acesso lateral estendido em L, cuja taxa de complicação de ferida chegava a 20 a 30%. A incisão vai da ponta do maléolo lateral em direção à base do quarto metatarso, sobre o seio do tarso. Para expor a FACETA POSTERIOR da subtalar — que é o alvo da redução — é preciso liberar o que amarra o calcâneo à fíbula: o LIGAMENTO CALCANEOFIBULAR, que cruza o campo por baixo dos tendões fibulares. Seccioná-lo é passo descrito da técnica e não deixa instabilidade clinicamente relevante nesse contexto, porque o ligamento cicatriza e a mobilidade subtalar já estará limitada pela própria fratura. Cuidados do acesso: o nervo sural corre distal e plantar à incisão, e os tendões fibulares são afastados em bloco, para cima ou para baixo, conforme a exposição necessária.",
+  "correta": "Ligamento calcaneofibular.",
+  "incorretas": {
+   "A": "O retináculo dos extensores fica na face anterior do tornozelo, fora deste acesso.",
+   "C": "O talofibular anterior é o ligamento da entorse comum; ele está acima do campo e sua secção não melhora a visão da faceta posterior — além de comprometer o estabilizador primário do tornozelo.",
+   "D": "O ventre do extensor curto dos dedos é ELEVADO e afastado no acesso, não seccionado; ele inclusive serve de proteção para a cobertura da placa ao final."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0800": {
+  "conceito": "A gota de lágrima é o contorno da borda volar da fossa semilunar do rádio, visto no perfil. O ângulo dela é medido entre o eixo da gota e o eixo longo do rádio, e é o parâmetro que diz se essa borda está no lugar.",
+  "correta": "O valor normal é de cerca de 70 graus. Reduzido, em torno de 45 graus, ele indica que a borda volar rodou — ou seja, que o fragmento volar-ulnar, a chamada esquina crítica, está desviado ou mal reduzido. O achado importa porque esse fragmento é pequeno, frequentemente fica além da borda distal da placa volar padrão, e a sua perda leva à subluxação volar do carpo no pós-operatório. Reconhecer a gota rodada no perfil é o que indica fixação específica dessa borda.",
+  "incorretas": {
+   "A": "Trinta graus está bem abaixo do normal e indicaria desvio grave.",
+   "B": "Cinquenta e cinco graus já é valor reduzido.",
+   "D": "Oitenta e cinco graus está acima da faixa descrita."
   },
   "geradoEm": "2026-09-10",
   "conferido": false
@@ -1211,6 +1476,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0917": {
+  "conceito": "A síndrome compartimental aguda é um diagnóstico CLÍNICO, e a frase não é um clichê: é a constatação de que nenhum sinal isolado, nenhum exame de imagem e nem mesmo a medida de pressão substituem a observação repetida do paciente ao longo do tempo. A razão está na fisiopatologia. O compartimento é um espaço inextensível fechado por fáscia; quando a pressão dentro dele sobe (por sangramento, edema pós-isquêmico, gesso apertado, reperfusão), ela primeiro colaba as VÊNULAS, não as artérias. Sem drenagem venosa, o gradiente arteriovenoso cai, a perfusão capilar cessa e o músculo entra em isquemia — tudo isso com PULSO DISTAL PRESENTE, porque a pressão arterial sistólica é muito maior que a pressão compartimental. Daí a regra que salva membros: a ausência de pulso NÃO é critério diagnóstico; quando ela aparece, o dano muscular e nervoso já está instalado há horas. O sinal precoce e mais confiável é a DOR DESPROPORCIONAL ao esperado para a lesão, e sobretudo a dor à EXTENSÃO PASSIVA dos dedos ou do pé, que estira o músculo isquêmico dentro do compartimento. Somam-se a ele a necessidade CRESCENTE de analgésico — o dado mais valioso na prática, porque é dinâmico — e, mais tardiamente, a parestesia no território do nervo que atravessa o compartimento, o compartimento tenso à palpação, a paresia e, por último, a ausência de pulso. Os clássicos cinco P (pain, paresthesia, pallor, paralysis, pulselessness) são didáticos mas enganosos, porque estão ordenados do precoce ao tardio e três deles já significam dano estabelecido. É por isso que o EXAME FÍSICO SERIADO é o que mais importa: o diagnóstico se faz na TENDÊNCIA, não no instantâneo — dor que aumenta, analgésico que não segura mais, compartimento que endurece entre uma visita e outra. A medida da pressão intracompartimental é reservada ao paciente que não pode informar (inconsciente, sedado, intubado, criança pequena, bloqueio regional, lesão medular) e ao caso duvidoso, usando o delta-P (pressão diastólica menos pressão do compartimento) com limiar abaixo de 30 mmHg para indicar a fasciotomia.",
+  "correta": "C. O EXAME FÍSICO SERIADO é o mais importante: o diagnóstico se faz pela tendência ao longo do tempo — dor que cresce, necessidade crescente de analgésico, compartimento que endurece — e não por um sinal isolado em uma única avaliação.",
+  "incorretas": {
+   "A": "Os pulsos distais permanecem PRESENTES durante praticamente toda a evolução da síndrome compartimental, porque a pressão sistólica é muito superior à pressão do compartimento. A ausência de pulso é achado tardio e, quando aparece, significa que o dano muscular e nervoso já está estabelecido — esperar por ela é perder o membro.",
+   "B": "O grau de edema é subjetivo, varia com o mecanismo do trauma e com a posição do membro, e não guarda correlação confiável com a pressão intracompartimental. Um membro muito edemaciado pode ter compartimentos complacentes, e um pouco edemaciado pode estar sob pressão crítica.",
+   "D": "A parestesia é sinal relativamente precoce entre os cinco P e deve ser valorizada, mas surge DEPOIS da dor desproporcional e da dor à extensão passiva, e é menos sensível que elas. Além disso, ela é interpretada com dificuldade em membro traumatizado, em que a lesão nervosa direta é diagnóstico diferencial."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
  "trauma-0928": {
   "conceito": "A conduta nas fraturas diafisárias do RÁDIO depende de entender que o osso é comandado por forças rotatórias antagônicas, e que o divisor de águas é a inserção do PRONADOR REDONDO, no terço médio da face lateral do rádio. Acima dela agem dois SUPINADORES: o músculo SUPINADOR, que se insere no terço proximal do rádio, e o BÍCEPS BRAQUIAL, que se insere na tuberosidade bicipital. Abaixo dela agem os PRONADORES: o próprio pronador redondo e, mais distalmente, o pronador quadrado. Daí decorre a regra dos desvios. Nas fraturas PROXIMAIS ao pronador redondo — as do terço proximal —, o fragmento superior é levado em SUPINAÇÃO e flexão pelo bíceps e pelo supinador, enquanto o fragmento distal é pronado pelo pronador redondo e pelo quadrado: os dois fragmentos ficam em rotações OPOSTAS, e o fragmento distal precisa ser levado à supinação para se alinhar ao proximal. Nas fraturas DISTAIS ao pronador redondo — terço médio e distal —, o fragmento proximal fica em posição NEUTRA, porque o pronador redondo neutraliza os supinadores acima, e o distal é pronado apenas pelo pronador quadrado; a redução se faz então com o antebraço em posição neutra. Duas consequências práticas seguem dessa anatomia. A primeira é o controle radiográfico da ROTAÇÃO: a TUBEROSIDADE BICIPITAL e o ESTILOIDE DO RÁDIO ficam a 180 graus um do outro, de modo que uma radiografia que mostre a tuberosidade de perfil deve mostrar o estiloide em direção oposta — critério objetivo para conferir a redução rotacional no intraoperatório. A segunda é o cuidado com a via de acesso: no terço proximal, a osteossíntese esbarra no nervo INTERÓSSEO POSTERIOR, que corre dentro do supinador, e é ali também que se concentra o risco de sinostose radioulnar.",
   "correta": "D. Na fratura diafisária PROXIMAL do rádio, acima da inserção do pronador redondo, o fragmento superior é desviado em supinação e flexão pela ação do músculo SUPINADOR e do BÍCEPS BRAQUIAL, que se insere na tuberosidade bicipital.",
@@ -1229,6 +1505,17 @@
    "A": "Erra a localização e o número de incisões. O terço DISTAL é o de menor risco — o espaço interósseo é mais amplo e as vias aos dois ossos são naturalmente separadas —, e a incisão dupla é justamente a medida PREVENTIVA, não o fator de risco.",
    "B": "Acerta o risco da incisão única, mas erra o nível: no terço distal os dois ossos estão mais afastados e o risco de ponte óssea é bem menor. A concentração da sinostose é proximal.",
    "D": "Acerta o nível proximal, que é de fato o de maior risco, mas a incisão DUPLA é a técnica recomendada para evitar a sinostose — duas vias separadas, com músculo interposto e sem abertura da membrana interóssea. A incisão única é que multiplica o risco."
+  },
+  "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0940": {
+  "conceito": "O CORA é o ponto onde as linhas do eixo proximal e do eixo distal do osso se cruzam. A regra que a questão cobra é de coerência: pode-se usar o eixo anatômico dos dois lados ou o eixo mecânico dos dois lados, mas nunca misturar um com o outro — a intersecção de um eixo anatômico com um mecânico produz um ponto que não corresponde a CORA nenhum e leva a osteotomia para o lugar errado. Localizado o CORA, uma osteotomia feita nesse nível, com a dobradiça sobre ele, corrige o ângulo sem introduzir translação.",
+  "correta": "O ponto em que os eixos proximal e distal se encontram, tomados do mesmo tipo — no caso, mecânicos dos dois lados.",
+  "incorretas": {
+   "A": "O ponto mais convexo da cortical é o ápice aparente da deformidade, que só coincide com o CORA quando não há translação associada.",
+   "C": "Mistura eixo mecânico proximal com anatômico distal — a intersecção resultante não é um CORA.",
+   "D": "Mistura os dois tipos pelo mesmo motivo, com a ordem invertida."
   },
   "geradoEm": "2026-09-10",
   "conferido": false
