@@ -101,6 +101,7 @@ conceitos básicos, 11 questões.
 | `trauma-0683` | Que a melhor exposição para implantar a prótese da cabeça do rádio se faça com distração, varo e **supinação** | O varo é claro: abre o compartimento lateral, sobretudo com o colateral lateral já roto. A rotação do antebraço é que me trava — a manobra que memorizo para esse acesso é a PRONAÇÃO, que afasta o nervo interósseo posterior do colo do rádio, e não consigo confirmar se a supinação é mesmo a posição que entrega o coto proximal do rádio na ferida |
 | `trauma-0044` | Que o tipo **I** de Bado seja o mais comum da Monteggia **no adulto** | O tipo I é sem dúvida o mais frequente no conjunto (cerca de 60%) e o padrão da criança. Mas a literatura que separa a população adulta aponta o tipo II como o predominante nela, e a questão pergunta justamente pelo adulto. As duas convenções circulam nos textos, e não consigo decidir qual a banca seguiu |
 | `trauma-0066` | Que a tuberosidade bicipital seja mais bem vista com o **cotovelo fletido a 90 graus e a fonte com 20 graus de inclinação posterior** | Domino o uso da tuberosidade bicipital como referência de rotação (ela fica a 180 graus do estiloide do rádio, e a radiografia que mostra uma de perfil deve mostrar a outra em direção oposta), mas não reconheço essa técnica radiográfica específica, nem consigo confirmar o valor de 20 graus ou o sentido da inclinação |
+| `trauma-0311` | Que o mecanismo da fratura de Galeazzi ocorra com o antebraço **supinado** e o punho estendido | O punho em extensão é pacífico (é a queda sobre a mão espalmada). A rotação é que divide a literatura: boa parte dos textos descreve a HIPERPRONAÇÃO como a posição do mecanismo clássico, e há ainda a variante por trauma direto na face dorsorradial do punho. Ao contrário de `trauma-0437`, esta questão não especifica o padrão de angulação, e sem esse dado não consigo sustentar a escolha entre pronação e supinação |
 
 ## Figura que não consigo interpretar com segurança
 
@@ -177,7 +178,7 @@ conceitos básicos, 11 questões.
 | `quadril-0204` | A resposta clássica (artrose primária como a mais frequente) vem encolhendo: boa parte do que se chamava idiopático corresponde a impacto femoroacetabular ou displasia sutil, e o comentário registra isso |
 
 ---
-
+| `trauma-0437` | O gabarito adota SUPINAÇÃO com o punho estendido para o mecanismo da Galeazzi de ápice volar; parte da literatura descreve a HIPERPRONAÇÃO como o mecanismo habitual. O comentário segue a convenção do gabarito e traz o alerta em destaque |
 ## Resolvidas depois
 
 | Questão | O que resolveu |
