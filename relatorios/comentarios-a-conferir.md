@@ -192,6 +192,7 @@ conceitos básicos, 11 questões.
 | `trauma-0668` | A alternativa D ("descompressão do túnel do carpo e do lacerto fibroso") não é falsa como descrição técnica — a fasciotomia volar padrão faz as duas coisas. Ela é dada como errada por ser menos completa do que a C, que enuncia o princípio de descomprimir todos os quatro compartimentos; o comentário diz isso com todas as letras |
 | `trauma-0486` | O enunciado descreve deformidade dorsal e INCAPACIDADE DE ESTENDER OS DEDOS após esmagamento no dorso da mão — quadro de lesão dos tendões extensores ou de fratura dos metacarpos, não de fratura do escafoide. O gabarito (escafoide) só se sustenta pela frequência do osso entre as fraturas do carpo, e o comentário diz isso com todas as letras |
 | `trauma-0117` | O enunciado transcrito do PDF diz "fratura da doença femoral", corrupção evidente de "fratura da CABEÇA femoral". O comentário assume essa leitura — que é a única que torna a questão coerente, já que a resposta (fragmento anteromedial) é a das fraturas de Pipkin — e diz isso na primeira linha |
+| `trauma-0523` | Nenhuma alternativa enuncia a definição do tipo II de Anderson e D'Alonzo, que é TOPOGRÁFICA (traço na junção do odontoide com o corpo do áxis). O gabarito escolhe o "comprometimento do ligamento transverso", que só se sustenta como consequência: o fragmento fica preso a C1 por esse ligamento e desliza sobre C2. O comentário explicita essa leitura |
 ## Resolvidas depois
 
 | Questão | O que resolveu |
