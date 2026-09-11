@@ -240,6 +240,11 @@ textarea {
   gap: 0.5rem 1.25rem;
   align-items: center;
 }
+.rodape__social {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
 .rodape__creditos {
   margin-left: auto;
 }

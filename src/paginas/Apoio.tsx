@@ -99,12 +99,29 @@ export function Sobre() {
         pior do que uma questão ausente.
       </p>
 
+      <h2>Onde acompanhar</h2>
+      <p>
+        O projeto tem um perfil no Instagram —{' '}
+        <a href={SITE.instagram} target="_blank" rel="noopener noreferrer me">
+          @{SITE.instagramUsuario}
+        </a>{' '}
+        — com questão comentada, avisos de acervo novo e o andamento do que está sendo comentado.
+      </p>
+
       <div className="linha linha--empilha-celular">
         <a className="botao botao--principal" href={href('/treinar')}>
           Montar uma sessão
         </a>
         <a className="botao" href={href('/contato')}>
           Falar com o autor
+        </a>
+        <a
+          className="botao"
+          href={SITE.instagram}
+          target="_blank"
+          rel="noopener noreferrer me"
+        >
+          Seguir no Instagram
         </a>
       </div>
 
@@ -157,6 +174,14 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
         {modelo}
       </pre>
       <AcoesDeEmail para={SITE.contato} assunto={assunto} corpo={modelo} />
+
+      <p className="texto-2">
+        Prefere mandar por mensagem? O projeto também está no Instagram, em{' '}
+        <a href={SITE.instagram} target="_blank" rel="noopener noreferrer me">
+          @{SITE.instagramUsuario}
+        </a>
+        .
+      </p>
 
 
     </article>

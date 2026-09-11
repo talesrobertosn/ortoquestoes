@@ -21,6 +21,9 @@ export const SITE = {
   url: 'https://ortoquestoes.com.br/',
   autor: 'Tales',
   contato: 'talesroberto23@gmail.com',
+  /** Perfil público do projeto. O @ sem arroba serve de rótulo visível. */
+  instagram: 'https://www.instagram.com/ortoquestoes',
+  instagramUsuario: 'ortoquestoes',
 } as const
 
 /** Prefixo de todas as chaves gravadas no localStorage. */
