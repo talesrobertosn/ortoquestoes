@@ -239,6 +239,7 @@ export function DadosLocais() {
           última sessão ou deste dispositivo.
         </p>
         {nome && <p className="heroi__nota">{totalContadas === 0 ? 'Vamos começar e construir seu histórico.' : totalCertas / totalContadas >= 0.75 ? 'Você está indo muito bem. Mantenha a constância.' : 'Cada erro mostra exatamente onde vale revisar.'}</p>}
+        {!conta && <p className="aviso-ia">Crie uma conta gratuita para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
         {conta && <div className="linha" style={{ marginTop: '0.75rem' }}><button className="botao" type="button" onClick={sincronizar} disabled={statusSync.estado === 'sincronizando'}>{statusSync.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar progresso'}</button><span className="meta" role="status">{statusSync.estado === 'salvo' ? 'Tudo atualizado entre seus dispositivos.' : statusSync.pendentes ? `${statusSync.pendentes} alteração(ões) aguardando envio.` : ''}</span></div>}
       </header>
 
