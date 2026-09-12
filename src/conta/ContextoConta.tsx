@@ -39,7 +39,11 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
       definirSessao(proxima); definirCarregando(false)
       if (evento === 'PASSWORD_RECOVERY') definirRecuperacao(true)
       const url = new URL(window.location.href)
-      if (url.searchParams.has('conta') && (evento === 'INITIAL_SESSION' || evento === 'SIGNED_IN' || evento === 'PASSWORD_RECOVERY')) {
+      if (evento === 'SIGNED_IN' && proxima && !recuperacao) {
+        url.searchParams.delete('conta'); url.searchParams.delete('code'); url.hash = '/'
+        window.history.replaceState(null, '', url.href)
+        window.dispatchEvent(new HashChangeEvent('hashchange'))
+      } else if (url.searchParams.has('conta') && (evento === 'INITIAL_SESSION' || evento === 'PASSWORD_RECOVERY')) {
         if (proxima && url.searchParams.get('conta') === 'recuperar') definirRecuperacao(true)
         url.searchParams.delete('conta'); url.searchParams.delete('code'); url.hash = '/conta'
         window.history.replaceState(null, '', url.href)

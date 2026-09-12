@@ -227,15 +227,18 @@ export function DadosLocais() {
 
   const totalCertas = porTema.reduce((n, t) => n + t.certas, 0)
   const totalContadas = porTema.reduce((n, t) => n + t.total, 0)
+  const errosTotais = Object.values(marcadas).reduce((n, registro) => n + (registro.erros ?? (registro.c === false ? 1 : 0)), 0)
+  const nome = String(conta?.user.user_metadata?.nome ?? '').trim()
 
   return (
     <article className="empilha-2">
       <header className="limite-leitura">
-        <h1>Seu desempenho</h1>
+        <h1>{nome ? `Olha seu desempenho, ${nome}` : 'Seu desempenho'}</h1>
         <p style={{ marginTop: '0.5rem' }} className="texto-2">
           Contado a partir de todas as questões que você já respondeu nesta conta, não só da
           última sessão ou deste dispositivo.
         </p>
+        {nome && <p className="heroi__nota">{totalContadas === 0 ? 'Vamos começar e construir seu histórico.' : totalCertas / totalContadas >= 0.75 ? 'Você está indo muito bem. Mantenha a constância.' : 'Cada erro mostra exatamente onde vale revisar.'}</p>}
         {conta && <div className="linha" style={{ marginTop: '0.75rem' }}><button className="botao" type="button" onClick={sincronizar} disabled={statusSync.estado === 'sincronizando'}>{statusSync.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar progresso'}</button><span className="meta" role="status">{statusSync.estado === 'salvo' ? 'Tudo atualizado entre seus dispositivos.' : statusSync.pendentes ? `${statusSync.pendentes} alteração(ões) aguardando envio.` : ''}</span></div>}
       </header>
 
@@ -259,6 +262,10 @@ export function DadosLocais() {
         <div className="numeros__celula">
           <span className="numeros__valor">{respondidas}</span>
           <span className="numeros__rotulo">questões respondidas</span>
+        </div>
+        <div className="numeros__celula">
+          <span className="numeros__valor">{errosTotais}</span>
+          <span className="numeros__rotulo">erros acumulados</span>
         </div>
         <div className="numeros__celula">
           <span className="numeros__valor">{historico.length}</span>

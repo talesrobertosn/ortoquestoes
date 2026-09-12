@@ -64,10 +64,6 @@ export function Inicio() {
                 seu desempenho.</>
             )}
           </p>
-          <p className="heroi__nota">
-            Questões de TEOT, TARO e outras seleções. A identificação individual de prova e ano ainda está em conferência.{' '}
-            <a href={href('/sobre')}>Conheça o projeto</a>.
-          </p>
         </div>
       </section>
 
