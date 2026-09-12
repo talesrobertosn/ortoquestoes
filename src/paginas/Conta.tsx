@@ -21,7 +21,14 @@ export function Conta() {
   const { sessao, recuperacao, encerrarRecuperacao, status, sincronizar, resolver } = usarConta()
   const [modo, definirModo] = useState<'entrar' | 'criar' | 'recuperar'>('entrar')
   const [email, definirEmail] = useState(''), [senha, definirSenha] = useState('')
-  const [ocupado, definirOcupado] = useState(false), [mensagem, definirMensagem] = useState('')
+  const parametros = new URLSearchParams(window.location.search)
+  const erroRetorno = parametros.get('error_code') ?? parametros.get('error')
+  const mensagemRetorno = erroRetorno === 'otp_expired'
+    ? 'Este link de confirmação expirou ou já foi usado. Solicite uma nova confirmação e abra o link mais recente neste mesmo navegador.'
+    : erroRetorno === 'access_denied'
+      ? 'O link de confirmação não pôde ser aceito. Solicite um novo link e tente novamente.'
+      : ''
+  const [ocupado, definirOcupado] = useState(false), [mensagem, definirMensagem] = useState(mensagemRetorno)
   const [importado, definirImportado] = useState(false)
   if (!contasDisponiveis || !supabase) return <article className="limite-leitura empilha"><h1>Sua conta</h1><p>As contas estão em preparação. Você já pode estudar gratuitamente e salvar seu progresso neste navegador.</p><a className="botao botao--principal" href={href('/treinar')}>Continuar estudando</a></article>
   async function enviar(e: FormEvent) {
