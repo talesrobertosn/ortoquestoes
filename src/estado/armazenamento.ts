@@ -42,8 +42,8 @@ export function remover(chave: string): void {
   memoria.delete(completa)
 }
 /** Limpa apenas o perfil atual; a autenticação e os outros perfis ficam separados. */
-export function limparTudo(): void {
-  gravar('respondidas', {}); gravar('favoritos', []); gravar('notas', {}); gravar('historico', [])
+export function limparTudo(origem: 'local' | 'nuvem' = 'local'): void {
+  gravar('respondidas', {}, origem); gravar('favoritos', [], origem); gravar('notas', {}, origem); gravar('historico', [], origem)
   gravar('sessao:atual', null); remover('backup:anterior')
 }
 export function tamanhoArmazenado(): number {

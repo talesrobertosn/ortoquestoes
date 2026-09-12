@@ -79,6 +79,25 @@ $$;
 revoke all on function public.sincronizar_progresso(jsonb) from public, anon;
 grant execute on function public.sincronizar_progresso(jsonb) to authenticated;
 
+-- Limpa a conta inteira sem apagar as linhas: os tombstones permitem que todos
+-- os dispositivos recebam a exclusão na próxima sincronização.
+create function public.apagar_progresso()
+returns void
+language plpgsql security definer set search_path = '' as $$
+declare dono uuid := auth.uid();
+begin
+  if dono is null then raise exception 'Autenticação necessária' using errcode = '42501'; end if;
+  update public.progresso_usuario
+    set valor = 'null'::jsonb,
+        operacao = gen_random_uuid(),
+        versao = nextval(pg_get_serial_sequence('public.progresso_usuario', 'versao')),
+        atualizado_em = now()
+    where usuario_id = dono;
+end;
+$$;
+revoke all on function public.apagar_progresso() from public, anon;
+grant execute on function public.apagar_progresso() to authenticated;
+
 -- Reserva exclusiva do servidor para uma etapa futura. Nenhum cliente acessa ou altera planos.
 create schema if not exists privado;
 revoke all on schema privado from public, anon, authenticated;

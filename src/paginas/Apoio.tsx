@@ -6,9 +6,11 @@ import { useMemo, useState } from 'react'
 import { SITE, recurso } from '../config'
 import { href } from '../util/rotas'
 import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
-import { armazenamentoDisponivel, limparTudo, tamanhoArmazenado } from '../estado/armazenamento'
+import { armazenamentoDisponivel, gravar, limparTudo, tamanhoArmazenado } from '../estado/armazenamento'
 import { type ResumoHistorico, usarFavoritos } from '../estado/sessao'
 import { usarIndice } from '../dados/usarIndice'
+import { supabase } from '../conta/supabase'
+import { estadoVazio } from '../conta/modeloSync'
 
 export function Sobre() {
   return (
@@ -323,9 +325,14 @@ export function DadosLocais() {
         <button
           type="button"
           className="botao"
-          onClick={() => {
+          onClick={async () => {
             if (window.confirm(conta ? 'Apagar o progresso desta conta? A exclusão de respostas, notas, favoritas e histórico também será sincronizada com os outros dispositivos.' : 'Apagar todos os dados de visitante do OrtoQuestões neste navegador?')) {
-              limparTudo()
+              if (conta && supabase) {
+                const { error } = await supabase.rpc('apagar_progresso')
+                if (error) { window.alert('Não foi possível apagar o progresso da conta. Tente novamente com conexão.'); return }
+                limparTudo('nuvem')
+                gravar('sincronia:v1', estadoVazio(), 'nuvem')
+              } else limparTudo()
               definirApagado(true)
             }
           }}
