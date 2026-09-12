@@ -36,6 +36,9 @@ jobs:
         # Sem BASE_ORTOQUESTOES: o vite.config.ts usa caminho relativo, e o
         # mesmo build serve tanto usuario.github.io/ortoquestoes/ quanto
         # ortoquestoes.com.br/ — não é preciso reconstruir ao trocar o endereço.
+        env:
+          VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}
         run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

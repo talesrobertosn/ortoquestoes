@@ -1,10 +1,13 @@
+import { usarConta } from '../conta/ContextoConta'
+import { usarArmazenado } from '../estado/usarArmazenado'
+import type { RegistroQuestao } from '../estado/revisao'
 import { BackupProgresso } from '../componentes/BackupProgresso'
 import { useMemo, useState } from 'react'
 import { SITE, recurso } from '../config'
 import { href } from '../util/rotas'
 import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
 import { armazenamentoDisponivel, limparTudo, tamanhoArmazenado } from '../estado/armazenamento'
-import { lerHistorico, lerRespondidas, usarFavoritos } from '../estado/sessao'
+import { type ResumoHistorico, usarFavoritos } from '../estado/sessao'
 import { usarIndice } from '../dados/usarIndice'
 
 export function Sobre() {
@@ -85,8 +88,7 @@ export function Sobre() {
 
       <h2>Seus dados</h2>
       <p>
-        O progresso — questões respondidas, favoritas, histórico de sessões — fica guardado apenas
-        no seu navegador, e você pode apagá-lo quando quiser na página de{' '}
+        Sem conta, o progresso fica apenas neste navegador. Ao entrar, respostas, revisões, favoritas, anotações e histórico podem ser sincronizados pelo Supabase, com acesso restrito ao titular da conta. Você pode exportar ou apagar seu progresso na página de{' '}
         <a href={href('/dados')}>dados locais</a>.
       </p>
 
@@ -190,8 +192,9 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
 export function DadosLocais() {
   const { favoritos } = usarFavoritos()
   const { indice } = usarIndice()
-  const historico = useMemo(() => lerHistorico(), [])
-  const marcadas = useMemo(() => lerRespondidas(), [])
+  const { sessao: conta } = usarConta()
+  const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
+  const [marcadas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
   const respondidas = Object.keys(marcadas).length
   const [apagado, definirApagado] = useState(false)
   const bytes = tamanhoArmazenado()
@@ -305,9 +308,7 @@ export function DadosLocais() {
       <section className="limite-leitura">
         <h2>Onde isso fica guardado</h2>
         <p>
-          Tudo que o site sabe sobre você fica neste navegador, em localStorage. Nada é enviado para
-          servidor nenhum, porque não existe servidor: o site é um conjunto de arquivos estáticos.
-          São {(bytes / 1024).toFixed(1)} kB no total.
+          {conta ? 'Seu progresso é salvo neste navegador e sincronizado com sua conta no Supabase.' : 'Sem conta, o progresso fica apenas neste navegador. Com uma conta, você pode sincronizá-lo entre dispositivos.'} São {(bytes / 1024).toFixed(1)} kB guardados neste perfil local. <a href={href('/conta')}>Minha conta</a>
         </p>
       </section>
 
@@ -315,21 +316,20 @@ export function DadosLocais() {
 
       <h2>Apagar tudo</h2>
       <p>
-        Apaga favoritas, histórico de sessões, questões respondidas, revisões, anotações e a sessão em andamento. Não tem
-        volta e não afeta o acervo.
+        Apaga favoritas, histórico de sessões, questões respondidas, revisões, anotações e a sessão em andamento deste perfil. {conta && 'A exclusão também será sincronizada com sua conta.'} Exporte um backup antes se quiser guardar uma cópia. Não afeta o acervo.
       </p>
       <div className="linha">
         <button
           type="button"
           className="botao"
           onClick={() => {
-            if (window.confirm('Apagar todos os dados locais do OrtoQuestões neste navegador?')) {
+            if (window.confirm(conta ? 'Apagar o progresso desta conta? A exclusão de respostas, notas, favoritas e histórico também será sincronizada com os outros dispositivos.' : 'Apagar todos os dados de visitante do OrtoQuestões neste navegador?')) {
               limparTudo()
               definirApagado(true)
             }
           }}
         >
-          Apagar todos os dados locais
+          {conta ? 'Apagar meu progresso da conta' : 'Apagar progresso deste navegador'}
         </button>
         {apagado && <span className="meta">Apagado. Recarregue a página para ver o site zerado.</span>}
       </div>

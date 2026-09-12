@@ -1,98 +1,60 @@
 import { PREFIXO_ARMAZENAMENTO } from '../config'
 
-/**
- * Camada fina sobre o localStorage. Se o armazenamento estiver indisponível
- * (navegação privada, cookies bloqueados, cota estourada), o site continua
- * funcionando: os dados ficam apenas em memória durante a visita.
- */
-
 let cacheDisponivel: boolean | null = null
 const memoria = new Map<string, string>()
-
+let usuario: string | null = null
+const GLOBAIS = new Set(['tema', 'etiquetas'])
+export const EVENTO_DADOS = 'ortoquestoes:dados'
+export interface MudancaDados { chave: string; antes: unknown; valor: unknown; usuario: string | null; origem: 'local' | 'nuvem' }
+export function definirUsuarioLocal(id: string | null) { usuario = id }
+export function usuarioLocal() { return usuario }
+export function chaveCompleta(chave: string, id = usuario): string {
+  return PREFIXO_ARMAZENAMENTO + (id && !GLOBAIS.has(chave) ? `conta:${id}:` : '') + chave
+}
 export function armazenamentoDisponivel(): boolean {
   if (cacheDisponivel !== null) return cacheDisponivel
   try {
     const teste = PREFIXO_ARMAZENAMENTO + 'teste'
-    window.localStorage.setItem(teste, '1')
-    window.localStorage.removeItem(teste)
+    window.localStorage.setItem(teste, '1'); window.localStorage.removeItem(teste)
     cacheDisponivel = true
-  } catch {
-    cacheDisponivel = false
-  }
+  } catch { cacheDisponivel = false }
   return cacheDisponivel
 }
-
-export function ler<T>(chave: string, padrao: T): T {
-  const completa = PREFIXO_ARMAZENAMENTO + chave
+function lerCompleta<T>(completa: string, padrao: T): T {
   try {
-    if (memoria.has(completa)) return JSON.parse(memoria.get(completa)!) as T
-    const bruto = armazenamentoDisponivel()
-      ? window.localStorage.getItem(completa)
-      : (memoria.get(completa) ?? null)
-    if (bruto === null) return padrao
-    return JSON.parse(bruto) as T
-  } catch {
-    return padrao
-  }
+    const bruto = memoria.get(completa) ?? (armazenamentoDisponivel() ? window.localStorage.getItem(completa) : null)
+    return bruto === null || bruto === undefined ? padrao : JSON.parse(bruto) as T
+  } catch { return padrao }
 }
-
-export function gravar(chave: string, valor: unknown): void {
-  const completa = PREFIXO_ARMAZENAMENTO + chave
-  const bruto = JSON.stringify(valor)
+export function ler<T>(chave: string, padrao: T): T { return lerCompleta(chaveCompleta(chave), padrao) }
+export function lerVisitante<T>(chave: string, padrao: T): T { return lerCompleta(chaveCompleta(chave, null), padrao) }
+export function gravar(chave: string, valor: unknown, origem: 'local' | 'nuvem' = 'local'): void {
+  const completa = chaveCompleta(chave), antes = ler(chave, null), bruto = JSON.stringify(valor)
   try {
-    if (armazenamentoDisponivel()) {
-      window.localStorage.setItem(completa, bruto)
-      memoria.delete(completa)
-    }
+    if (armazenamentoDisponivel()) { window.localStorage.setItem(completa, bruto); memoria.delete(completa) }
     else memoria.set(completa, bruto)
-  } catch {
-    memoria.set(completa, bruto)
-  }
+  } catch { memoria.set(completa, bruto) }
+  window.dispatchEvent(new CustomEvent<MudancaDados>(EVENTO_DADOS, { detail: { chave, antes, valor, usuario, origem } }))
 }
-
 export function remover(chave: string): void {
-  const completa = PREFIXO_ARMAZENAMENTO + chave
-  try {
-    if (armazenamentoDisponivel()) window.localStorage.removeItem(completa)
-  } catch {
-    /* segue em memória */
-  }
+  const completa = chaveCompleta(chave)
+  try { if (armazenamentoDisponivel()) window.localStorage.removeItem(completa) } catch { /* memória */ }
   memoria.delete(completa)
 }
-
-/** Apaga todos os dados locais do OrtoQuestões, e nada mais. */
+/** Limpa apenas o perfil atual; a autenticação e os outros perfis ficam separados. */
 export function limparTudo(): void {
-  try {
-    if (armazenamentoDisponivel()) {
-      const chaves: string[] = []
-      for (let i = 0; i < window.localStorage.length; i++) {
-        const c = window.localStorage.key(i)
-        if (c && c.startsWith(PREFIXO_ARMAZENAMENTO)) chaves.push(c)
-      }
-      for (const c of chaves) window.localStorage.removeItem(c)
-    }
-  } catch {
-    /* nada a apagar */
-  }
-  memoria.clear()
+  gravar('respondidas', {}); gravar('favoritos', []); gravar('notas', {}); gravar('historico', [])
+  gravar('sessao:atual', null); remover('backup:anterior')
 }
-
-/** Quantidade aproximada de dados guardados, para a página de dados locais. */
 export function tamanhoArmazenado(): number {
-  let total = 0
+  const prefixo = PREFIXO_ARMAZENAMENTO + (usuario ? `conta:${usuario}:` : '')
+  const corresponde = (c: string) => c.startsWith(prefixo) && (usuario || !c.startsWith(PREFIXO_ARMAZENAMENTO + 'conta:'))
+  const dados = new Map(memoria)
   try {
-    if (armazenamentoDisponivel()) {
-      for (let i = 0; i < window.localStorage.length; i++) {
-        const c = window.localStorage.key(i)
-        if (c && c.startsWith(PREFIXO_ARMAZENAMENTO)) {
-          total += (window.localStorage.getItem(c)?.length ?? 0) + c.length
-        }
-      }
-    } else {
-      for (const [c, v] of memoria) total += c.length + v.length
+    if (armazenamentoDisponivel()) for (let i = 0; i < window.localStorage.length; i++) {
+      const c = window.localStorage.key(i)
+      if (c && !dados.has(c)) dados.set(c, window.localStorage.getItem(c) ?? '')
     }
-  } catch {
-    /* ignora */
-  }
-  return total
+  } catch { /* memória */ }
+  return [...dados].reduce((s, [c, v]) => s + (corresponde(c) ? c.length + v.length : 0), 0)
 }

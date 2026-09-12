@@ -5,7 +5,7 @@ import { contar, montarSessao } from '../dados/acervo'
 import { FILTROS_VAZIOS } from '../dados/tipos'
 import { href, navegar } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
-import { lerHistorico, usarSessao } from '../estado/sessao'
+import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
@@ -20,7 +20,7 @@ export function Inicio() {
     () => (indice ? contar(indice, FILTROS_VAZIOS, contexto) : null),
     [indice, contexto],
   )
-  const historico = useMemo(() => lerHistorico(), [])
+  const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
 
   const anos = indice?.anos ?? []
   const anosRecentes = [...anos].sort((a, b) => b - a).slice(0, 6)

@@ -1,3 +1,4 @@
+import { Conta } from './paginas/Conta'
 import { useEffect } from 'react'
 import { href, usarRota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
@@ -20,6 +21,7 @@ const TITULOS: Record<string, string> = {
   '/sobre': 'O projeto — OrtoQuestões: questões de ortopedia comentadas',
   '/projeto': 'O projeto — OrtoQuestões: questões de ortopedia comentadas',
   '/contato': 'Relatar erro — OrtoQuestões',
+  '/conta': 'Minha conta — OrtoQuestões',
   '/dados': 'Seu desempenho — OrtoQuestões',
   '/favoritas': 'Suas favoritas — OrtoQuestões',
   '/progresso': 'Progresso dos comentários — OrtoQuestões',
@@ -66,6 +68,9 @@ export function App() {
       break
     case 'contato':
       pagina = <Contato consulta={rota.consulta} />
+      break
+    case 'conta':
+      pagina = <Conta />
       break
     case 'dados':
       pagina = <DadosLocais />

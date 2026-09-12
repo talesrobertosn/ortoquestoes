@@ -20,3 +20,7 @@ tsconfig.tsbuildinfo
 /favicon.svg
 /previa.png
 /.nojekyll
+
+.env
+.env.*
+!.env.example

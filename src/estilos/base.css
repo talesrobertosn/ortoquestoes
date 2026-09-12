@@ -1810,3 +1810,9 @@ kbd {
   .bloco-comentario .aviso-ia { padding: .75rem; }
 }
 @media print { .nav-mobile, .notas-questao { display: none; } .pagina { padding-bottom: 0; } }
+
+.conta-pagina header p { margin: .75rem 0; }
+.conta-pagina h2 { overflow-wrap: anywhere; }
+.conta-pagina pre { overflow-wrap: anywhere; white-space: pre-wrap; max-height: 18rem; overflow-y: auto; font: inherit; padding: 1rem; background: var(--superficie-2); }
+.conta-pagina .campo { display: grid; gap: .5rem; }
+@media (max-width: 30rem) { .cabecalho__nav { gap: .2rem; } .cabecalho__nav .nav-link { padding-inline: .4rem; } }

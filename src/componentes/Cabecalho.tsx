@@ -1,3 +1,4 @@
+import { contasDisponiveis } from '../conta/supabase'
 import { MarcaHorizontal } from '../marca/Simbolo'
 import { usarTema } from '../estado/tema'
 import { href } from '../util/rotas'
@@ -30,6 +31,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
               {link.rotulo}
             </a>
           ))}
+          {contasDisponiveis && <a className="nav-link" href={href('/conta')} aria-current={caminho === '/conta' ? 'page' : undefined}>Conta</a>}
           <button
             type="button"
             className="botao-icone"

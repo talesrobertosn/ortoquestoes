@@ -344,6 +344,12 @@ código do site é de uso livre.
 
 ### Rotina diária e progresso local
 
+### Contas e sincronização
+
+O site continua gratuito e funciona sem conta. Quando as variáveis públicas do Supabase estiverem configuradas no build, `/conta` oferece cadastro, entrada, recuperação de senha, saída e sincronização do progresso entre dispositivos. A chave usada no navegador é a chave publicável; chaves secretas nunca entram no repositório.
+
+O projeto Supabase atual é `OrtoQuestoes`, com banco na região `us-west-2` (Oregon), conforme a região disponível escolhida ao criá-lo. O SQL em `supabase/migrations/202609120001_contas_e_progresso.sql` cria a tabela `progresso_usuario`, políticas RLS e a função de sincronização com controle de versão e operações idempotentes. Há também o schema privado `privado.assinaturas`, reservado à futura integração de cobrança; nesta versão ele não é consultado pelo site e não impõe limite diário.
+
 A página inicial reúne revisões pendentes, questões dominadas e questões novas. O treino pode começar por quatro intenções prontas; os filtros completos ficam em uma seção expansível. Filtros de prova, ano e dificuldade só aparecem quando há dados no índice. A atribuição individual de prova e ano continua em conferência.
 
 - Um erro entra imediatamente em **Revisar hoje**. Um acerto agenda a revisão para três dias depois. Dois acertos consecutivos marcam a questão como **Dominada** no treino; isso não representa certificação de competência clínica. Um novo erro reinicia a sequência.
