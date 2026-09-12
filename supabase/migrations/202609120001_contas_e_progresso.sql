@@ -89,7 +89,7 @@ begin
   if dono is null then raise exception 'Autenticação necessária' using errcode = '42501'; end if;
   update public.progresso_usuario
     set valor = 'null'::jsonb,
-        operacao = gen_random_uuid(),
+        operacao = extensions.gen_random_uuid(),
         versao = nextval(pg_get_serial_sequence('public.progresso_usuario', 'versao')),
         atualizado_em = now()
     where usuario_id = dono;

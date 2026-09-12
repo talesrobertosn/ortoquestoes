@@ -6,7 +6,21 @@ let usuario: string | null = null
 const GLOBAIS = new Set(['tema', 'etiquetas'])
 export const EVENTO_DADOS = 'ortoquestoes:dados'
 export interface MudancaDados { chave: string; antes: unknown; valor: unknown; usuario: string | null; origem: 'local' | 'nuvem' }
-export function definirUsuarioLocal(id: string | null) { usuario = id }
+export function definirUsuarioLocal(id: string | null) {
+  usuario = id
+  if (id === null) {
+    try {
+      if (armazenamentoDisponivel()) {
+        const apagar: string[] = []
+        for (let i = 0; i < window.localStorage.length; i++) {
+          const chave = window.localStorage.key(i)
+          if (chave?.startsWith(PREFIXO_ARMAZENAMENTO) && !chave.startsWith(`${PREFIXO_ARMAZENAMENTO}conta:`) && ![`${PREFIXO_ARMAZENAMENTO}tema`, `${PREFIXO_ARMAZENAMENTO}etiquetas`].includes(chave)) apagar.push(chave)
+        }
+        apagar.forEach(chave => window.localStorage.removeItem(chave))
+      }
+    } catch { /* armazenamento indisponível */ }
+  }
+}
 export function usuarioLocal() { return usuario }
 export function chaveCompleta(chave: string, id = usuario): string {
   return PREFIXO_ARMAZENAMENTO + (id && !GLOBAIS.has(chave) ? `conta:${id}:` : '') + chave
@@ -31,7 +45,9 @@ export function lerVisitante<T>(chave: string, padrao: T): T { return lerComplet
 export function gravar(chave: string, valor: unknown, origem: 'local' | 'nuvem' = 'local'): void {
   const completa = chaveCompleta(chave), antes = ler(chave, null), bruto = JSON.stringify(valor)
   try {
-    if (armazenamentoDisponivel()) { window.localStorage.setItem(completa, bruto); memoria.delete(completa) }
+    // Visitantes usam apenas a memória da aba; somente contas autenticadas
+    // persistem o progresso entre sessões e dispositivos.
+    if (usuario !== null && armazenamentoDisponivel()) { window.localStorage.setItem(completa, bruto); memoria.delete(completa) }
     else memoria.set(completa, bruto)
   } catch { memoria.set(completa, bruto) }
   window.dispatchEvent(new CustomEvent<MudancaDados>(EVENTO_DADOS, { detail: { chave, antes, valor, usuario, origem } }))
@@ -47,6 +63,7 @@ export function limparTudo(origem: 'local' | 'nuvem' = 'local'): void {
   gravar('sessao:atual', null); remover('backup:anterior')
 }
 export function tamanhoArmazenado(): number {
+  if (!usuario) return 0
   const prefixo = PREFIXO_ARMAZENAMENTO + (usuario ? `conta:${usuario}:` : '')
   const corresponde = (c: string) => c.startsWith(prefixo) && (usuario || !c.startsWith(PREFIXO_ARMAZENAMENTO + 'conta:'))
   const dados = new Map(memoria)

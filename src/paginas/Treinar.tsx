@@ -18,6 +18,7 @@ import { usarMedia } from '../util/usarMedia'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { usarEtiquetas } from '../estado/preferencias'
 import { href } from '../util/rotas'
+import { usarConta } from '../conta/ContextoConta'
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
 const LIMITES = [10, 20, 30, 50, 100]
@@ -32,6 +33,7 @@ const DURACOES: Array<[number, string]> = [
 export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const { indice, carregando } = usarIndice()
   const { iniciar, sessao } = usarSessao()
+  const { sessao: conta } = usarConta()
   // Em tela grande a árvore fica aberta na página: escolher assunto é o que se
   // faz aqui, não faz sentido esconder atrás de um menu.
   const telaLarga = usarMedia('(min-width: 64rem)')
@@ -116,6 +118,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           Escolha o recorte e comece. O número dentro do botão é quantas questões atendem aos
           filtros agora.
         </p>
+        {!conta && <p className="aviso-ia" style={{ marginTop: '0.75rem' }}>Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. <a href={href('/conta')}>Criar minha conta</a></p>}
       </header>
 
       <section className="intencoes" aria-label="Escolha seu treino">
