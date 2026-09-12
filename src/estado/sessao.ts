@@ -63,7 +63,9 @@ export function usarSessao() {
       // reexecutados ou descartados em celulares, o que fazia respostas
       // ficarem apenas no estado visual da sessão.
       const salvo = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
-      if (salvo && !salvo.simulado && !salvo.respostas[id]) registrarRespondida(id, correta)
+      // O modo simulado também registra cada resposta imediatamente. A prova
+      // pode esconder o gabarito, mas nunca deve esconder o salvamento.
+      if (salvo && !salvo.respostas[id]) registrarRespondida(id, correta)
       definirSessao((atual) => {
         if (!atual) return atual
         const resposta: Resposta = { escolhida, correta, segundos }
@@ -113,9 +115,6 @@ export function usarSessao() {
 
   const finalizar = useCallback(() => {
     const salvo = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
-    if (salvo?.simulado) {
-      for (const [id, resposta] of Object.entries(salvo.respostas)) registrarRespondida(id, resposta.correta)
-    }
     if (salvo && !salvo.concluidaEm) registrarHistorico(salvo)
     definirSessao((atual) => {
       if (!atual || atual.concluidaEm) return atual
