@@ -31,7 +31,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
               {link.rotulo}
             </a>
           ))}
-          {contasDisponiveis && <a className="nav-link" href={href('/conta')} aria-current={caminho === '/conta' ? 'page' : undefined}>Conta</a>}
+          {contasDisponiveis && <a className="nav-link" href={href('/conta')} aria-current={caminho === '/conta' ? 'page' : undefined}>Minha conta</a>}
           <button
             type="button"
             className="botao-icone"

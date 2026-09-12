@@ -192,7 +192,7 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
 export function DadosLocais() {
   const { favoritos } = usarFavoritos()
   const { indice } = usarIndice()
-  const { sessao: conta } = usarConta()
+  const { sessao: conta, status: statusSync, sincronizar } = usarConta()
   const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
   const [marcadas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
   const respondidas = Object.keys(marcadas).length
@@ -234,6 +234,7 @@ export function DadosLocais() {
           Contado a partir de todas as questões que você já respondeu nesta conta, não só da
           última sessão ou deste dispositivo.
         </p>
+        {conta && <div className="linha" style={{ marginTop: '0.75rem' }}><button className="botao" type="button" onClick={sincronizar} disabled={statusSync.estado === 'sincronizando'}>{statusSync.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar progresso'}</button><span className="meta" role="status">{statusSync.estado === 'salvo' ? 'Tudo atualizado entre seus dispositivos.' : statusSync.pendentes ? `${statusSync.pendentes} alteração(ões) aguardando envio.` : ''}</span></div>}
       </header>
 
       {!armazenamentoDisponivel() && (

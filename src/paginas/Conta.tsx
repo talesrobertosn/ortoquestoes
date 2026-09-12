@@ -30,6 +30,23 @@ export function Conta() {
       : ''
   const [ocupado, definirOcupado] = useState(false), [mensagem, definirMensagem] = useState(mensagemRetorno)
   const [importado, definirImportado] = useState(false)
+  const perfil = sessao?.user.user_metadata ?? {}
+  const [nome, definirNome] = useState(String(perfil.nome ?? ''))
+  const [sobrenome, definirSobrenome] = useState(String(perfil.sobrenome ?? ''))
+  const [nascimento, definirNascimento] = useState(String(perfil.nascimento ?? ''))
+  const [residencia, definirResidencia] = useState(String(perfil.residencia ?? ''))
+  const [situacao, definirSituacao] = useState(String(perfil.situacao ?? ''))
+  const [salvandoPerfil, definirSalvandoPerfil] = useState(false)
+  async function salvarPerfil() {
+    if (!supabase || !sessao) return
+    definirSalvandoPerfil(true)
+    try {
+      const { error } = await supabase.auth.updateUser({ data: { nome: nome.trim(), sobrenome: sobrenome.trim(), nascimento, residencia: residencia.trim(), situacao } })
+      if (error) throw error
+      definirMensagem('Perfil atualizado.')
+    } catch { definirMensagem('Não foi possível salvar o perfil agora.') }
+    finally { definirSalvandoPerfil(false) }
+  }
   if (!contasDisponiveis || !supabase) return <article className="limite-leitura empilha"><h1>Sua conta</h1><p>As contas estão em preparação. Você já pode estudar gratuitamente e salvar seu progresso neste navegador.</p><a className="botao botao--principal" href={href('/treinar')}>Continuar estudando</a></article>
   async function enviar(e: FormEvent) {
     e.preventDefault()
@@ -91,6 +108,14 @@ export function Conta() {
           definirOcupado(true)
           try { const { error } = await supabase.auth.signOut({ scope: 'local' }); if (error) throw error } catch { definirMensagem('Não foi possível sair. Confira sua conexão e tente novamente.') } finally { definirOcupado(false) }
         }}>Sair da conta</button>
+      </section>
+      <section className="cartao cartao__corpo empilha">
+        <h2>Meu perfil</h2>
+        <p className="texto-2">Esses dados ficam associados à sua conta e ajudam a personalizar sua experiência. Foto não é necessária.</p>
+        <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" value={nome} onChange={e => definirNome(e.target.value)} /></label><label className="campo">Sobrenome<input className="entrada" value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
+        <div className="linha-campos linha-campos--2"><label className="campo">Data de nascimento<input className="entrada" type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label><label className="campo">Onde faz residência (opcional)<input className="entrada" value={residencia} onChange={e => definirResidencia(e.target.value)} /></label></div>
+        <label className="campo">Você é <select className="entrada" value={situacao} onChange={e => definirSituacao(e.target.value)}><option value="">Escolha uma opção</option><option value="residente">Residente de ortopedia</option><option value="ortopedista">Ortopedista</option><option value="outro">Outro profissional ou estudante</option></select></label>
+        <button className="botao botao--principal" type="button" onClick={salvarPerfil} disabled={salvandoPerfil}>{salvandoPerfil ? 'Salvando…' : 'Salvar perfil'}</button>
       </section>
       {possuiVisitante && !importado && <section className="cartao cartao__corpo empilha"><h2>Você já estudou neste navegador</h2><p>Importe o progresso de visitante para esta conta. Só serão acrescentados itens que ainda não existem nela. Em um dispositivo compartilhado, importe apenas se esse progresso for seu.</p><button className="botao botao--principal" onClick={importar} disabled={!status.pronto}>Importar meu progresso de visitante</button></section>}
       {status.conflitos.length > 0 && <section className="empilha"><h2>Confira as alterações simultâneas</h2><p>Este item mudou em outro dispositivo antes de sua alteração chegar. Escolha qual versão manter.</p>

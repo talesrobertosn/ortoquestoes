@@ -133,8 +133,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
       <p className="meta">Acervo de TEOT, TARO e outras seleções. Prova e ano de cada questão ainda estão em conferência; filtros só aparecem quando há dados disponíveis.</p>
       <div className="cartao">
         <div className="cartao__corpo empilha">
-          <details className="filtros-detalhes" open={filtros.busca ? true : undefined}>
-            <summary>Buscar por palavras</summary>
+          <section className="filtros-destaque">
+            <h2>Buscar por palavras</h2>
+            <p className="texto-2">Encontre uma questão pelo enunciado, alternativa ou assunto.</p>
           <div className="campo" style={{ marginBottom: 0 }}>
             <label className="campo__rotulo" htmlFor="busca-acervo">
               Buscar no texto das questões
@@ -154,9 +155,10 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             )}
           </div>
 
-          </details>
-          <details className="filtros-detalhes">
-            <summary>Personalizar assuntos e filtros</summary>
+          </section>
+          <section className="filtros-destaque">
+            <h2>Personalizar assuntos e filtros</h2>
+            <p className="texto-2">Escolha temas, situação, prova, ano e dificuldade para montar o treino ideal.</p>
           <div className="campo" style={{ marginBottom: 0 }}>
             <span className="campo__rotulo">Situação</span>
             <div className="grupo-opcoes" id="filtro-situacao">
@@ -177,8 +179,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
               ))}
             </div>
             <span className="campo__auxilio">
-              Vem do que você já respondeu neste navegador. Refazer o que errou rende mais do que
-              questão nova.
+              Vem do que você já respondeu na sua conta. Refazer o que errou rende mais do que
+              começar sempre por uma questão nova.
             </span>
           </div>
 
@@ -311,8 +313,12 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           </div>
 
           <div className="campo" style={{ marginBottom: 0 }}>
-            <span className="campo__rotulo">Modo</span>
+            <span className="campo__rotulo">Como você quer estudar?</span>
             <div className="empilha" style={{ marginTop: '0.25rem' }}>
+              <div className="modo-explicacao" role="note">
+                <strong>{simulado ? 'Simulado — como uma prova' : 'Treino livre — aprenda enquanto pratica'}</strong>
+                <span>{simulado ? 'Com tempo e sem gabarito até entregar. O desempenho aparece no final.' : 'Veja o gabarito e a explicação logo após cada resposta.'}</span>
+              </div>
               <label className="interruptor">
                 <input
                   type="checkbox"
@@ -345,7 +351,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             </div>
           </div>
 
-          </details>
+          </section>
           <div className="campo" style={{ marginBottom: 0 }}>
             <span className="campo__rotulo">Quantas questões</span>
             <div className="grupo-opcoes" id="filtro-limite">

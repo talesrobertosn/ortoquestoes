@@ -9,10 +9,12 @@ import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
+import { usarConta } from '../conta/ContextoConta'
 
 export function Inicio() {
   const { indice, carregando } = usarIndice()
   const { iniciar } = usarSessao()
+  const { sessao: conta } = usarConta()
   const [sessao] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
 
   const { contexto } = usarContextoLocal('')
@@ -40,10 +42,15 @@ export function Inicio() {
   const sessaoEmAndamento =
     sessao && !sessao.concluidaEm && Object.keys(sessao.respostas).length < sessao.ids.length
 
+  const nome = String(conta?.user.user_metadata?.nome ?? '').trim()
+  const saudacoes = ['Um passo de cada vez também leva longe.', 'A constância de hoje vira segurança na prova.', 'Você está construindo repertório questão por questão.']
+  const saudacao = saudacoes[new Date().getDate() % saudacoes.length]
+
   return (
     <div className="empilha-2">
       <section className="heroi">
-        <h1>Seu próximo passo começa aqui.</h1>
+        <h1>{nome ? `Bem-vindo${conta?.user.user_metadata?.situacao === 'ortopedista' ? '' : ''}, ${conta?.user.user_metadata?.situacao === 'ortopedista' ? 'Dr. ' : ''}${nome}.` : 'Seu próximo passo começa aqui.'}</h1>
+        {nome && <p className="heroi__nota">{saudacao}</p>}
         <div className="heroi__texto">
           <p className="heroi__linha">
             {indice && indice.total > 0 ? (
@@ -93,12 +100,12 @@ export function Inicio() {
             <div className="painel-diario__intro">
               <p className="meta">SUA ROTINA DE ESTUDO</p>
               <h2>{sessaoEmAndamento ? 'Continue de onde parou' : 'Um pouco de prática, todos os dias'}</h2>
-              <p>Errou? Revise agora. Acertou uma vez? Volte em três dias. Dois acertos seguidos marcam a questão como dominada neste treino.</p>
+              <p>Errou? Revise agora. Acertou? Volte em 3, 7, 14 e 30 dias. Quatro acertos espaçados marcam a questão como dominada.</p>
               {sessaoEmAndamento && <a className="botao botao--principal" href={href('/sessao')}>Continuar sessão · {Object.keys(sessao!.respostas).length}/{sessao!.ids.length}</a>}
             </div>
             <div className="atalhos-estudo">
               <a href={href('/treinar?situacao=revisarHoje&limite=20')}><strong>{contagens.porSituacao.revisarHoje ?? 0}</strong><span>Revisar hoje</span><small>Retome o que precisa fixar</small></a>
-              <a href={href('/treinar?situacao=dominadas')}><strong>{contagens.porSituacao.dominadas ?? 0}</strong><span>Dominadas</span><small>Dois acertos consecutivos</small></a>
+              <a href={href('/treinar?situacao=dominadas')}><strong>{contagens.porSituacao.dominadas ?? 0}</strong><span>Dominadas</span><small>Quatro acertos espaçados</small></a>
               <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>Avance no acervo</small></a>
             </div>
           </section>

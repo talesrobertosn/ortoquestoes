@@ -356,7 +356,7 @@ export function CartaoQuestao({
 
         {mostrarGabarito && (
           <div className="comentario">
-            {resposta?.correta !== null && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(lerRespondidas()[questao.id]) ? 'Questão dominada neste treino: dois acertos consecutivos. Você pode revisitá-la pelo filtro Dominadas.' : 'Primeiro acerto da sequência. Esta questão volta para revisão em três dias.'}</p>}
+            {resposta?.correta !== null && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(lerRespondidas()[questao.id]) ? 'Questão dominada: quatro acertos espaçados. Você pode revisitá-la pelo filtro Dominadas.' : 'Acerto registrado. A próxima revisão segue o ciclo de 3, 7, 14 e 30 dias.'}</p>}
             {questao.comentario && (
               <div className="bloco-comentario">
                 <p className="comentario__titulo">Comentário do autor</p>
