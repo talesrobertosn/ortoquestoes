@@ -344,13 +344,9 @@ export function DadosLocais() {
           onClick={async () => {
             if (window.confirm(conta ? 'Apagar o progresso desta conta? A exclusão de respostas, notas, favoritas e histórico também será sincronizada com os outros dispositivos.' : 'Apagar todos os dados de visitante do OrtoQuestões neste navegador?')) {
               if (conta && supabase) {
-                let { error } = await supabase.rpc('apagar_progresso')
-                // Fallback para projetos em que o cache do PostgREST ainda não
-                // expôs a função. As políticas RLS continuam limitando a conta.
-                if (error) {
-                  const direto = await supabase.from('progresso_usuario').update({ valor: null, operacao: crypto.randomUUID() }).eq('usuario_id', conta.user.id)
-                  error = direto.error
-                }
+                let { error } = await supabase.rpc('apagar_progresso_conta')
+                // Compatibilidade com projetos que ainda têm apenas a função antiga.
+                if (error) { const legado = await supabase.rpc('apagar_progresso'); error = legado.error }
                 if (error) { window.alert('Não foi possível apagar o progresso da conta. Tente novamente com conexão.'); return }
                 limparTudo('nuvem')
                 gravar('sincronia:v1', estadoVazio(), 'nuvem')

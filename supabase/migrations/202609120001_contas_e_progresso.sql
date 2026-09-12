@@ -97,6 +97,26 @@ end;
 $$;
 revoke all on function public.apagar_progresso() from public, anon;
 grant execute on function public.apagar_progresso() to authenticated;
+-- Versão com retorno explícito: algumas versões do PostgREST não expõem
+-- funções que retornam void no endpoint RPC.
+create function public.apagar_progresso_conta()
+returns integer
+language plpgsql security definer set search_path = '' as $$
+declare dono uuid := auth.uid(); total integer;
+begin
+  if dono is null then raise exception 'Autenticação necessária' using errcode = '42501'; end if;
+  update public.progresso_usuario
+    set valor = 'null'::jsonb,
+        operacao = extensions.gen_random_uuid(),
+        versao = nextval(pg_get_serial_sequence('public.progresso_usuario', 'versao')),
+        atualizado_em = now()
+    where usuario_id = dono;
+  get diagnostics total = row_count;
+  return total;
+end;
+$$;
+revoke all on function public.apagar_progresso_conta() from public, anon;
+grant execute on function public.apagar_progresso_conta() to authenticated;
 -- Garante que o PostgREST reconheça a função imediatamente após a migração.
 notify pgrst, 'reload schema';
 
