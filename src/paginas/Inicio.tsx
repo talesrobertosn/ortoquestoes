@@ -98,6 +98,7 @@ export function Inicio() {
               <h2>{sessaoEmAndamento ? 'Continue de onde parou' : 'Um pouco de prática, todos os dias'}</h2>
               <p>Errou? Revise agora. Acertou? Volte em 3, 7, 14 e 30 dias. Quatro acertos espaçados marcam a questão como dominada.</p>
               {sessaoEmAndamento && <a className="botao botao--principal" href={href('/sessao')}>Continuar sessão · {Object.keys(sessao!.respostas).length}/{sessao!.ids.length}</a>}
+              {!sessaoEmAndamento && <button type="button" className="botao botao--principal botao--grande" onClick={() => treinoRapido(10)} disabled={contagens.total < 10}>Começar um treino de 10 questões</button>}
             </div>
             <div className="atalhos-estudo">
               <a href={href('/treinar?situacao=revisarHoje&limite=20')}><strong>{contagens.porSituacao.revisarHoje ?? 0}</strong><span>Revisar hoje</span><small>Retome o que precisa fixar</small></a>
