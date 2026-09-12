@@ -97,6 +97,8 @@ end;
 $$;
 revoke all on function public.apagar_progresso() from public, anon;
 grant execute on function public.apagar_progresso() to authenticated;
+-- Garante que o PostgREST reconheça a função imediatamente após a migração.
+notify pgrst, 'reload schema';
 
 -- Reserva exclusiva do servidor para uma etapa futura. Nenhum cliente acessa ou altera planos.
 create schema if not exists privado;
