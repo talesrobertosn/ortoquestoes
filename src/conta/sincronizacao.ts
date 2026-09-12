@@ -95,7 +95,10 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
   function aoGravar(evento: Event) {
     const m = (evento as CustomEvent<MudancaDados>).detail
     if (!valido() || m.usuario !== idUsuario || m.origem !== 'local' || !ehTipoSync(m.chave)) return
-    registrarAlteracoes(estado, m.chave, m.antes, m.valor); salvar(); anunciar(navigator.onLine ? 'sincronizando' : 'offline'); agendar()
+    registrarAlteracoes(estado, m.chave, m.antes, m.valor); salvar(); anunciar(navigator.onLine ? 'sincronizando' : 'offline')
+    // Envia enquanto a aba ainda está em primeiro plano. O Chrome móvel pode
+    // congelar timers quando o usuário troca de aplicativo ou de aba.
+    void sincronizar(); agendar()
   }
   // Outra aba pode ter enfileirado operações: recarrega o estado persistido antes de sincronizar.
   function outraAba(evento: StorageEvent) {
