@@ -15,8 +15,17 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
     if (valido()) notificar({ estado: s, pendentes: Object.keys(estado.pendentes).length, conflitos: Object.values(estado.conflitos), pronto })
   }
   function aplicar(documentos: Documento[], enviadas: Alteracao[] = []) {
+    // O marcador é a fonte de verdade para o comando de zerar a conta.
+    // Ele permite que dispositivos que estavam offline também descartem o cache antigo.
+    const marcador = documentos.find(d => d.tipo === 'historico' && d.item === '__reinicio__')
+    if (marcador && marcador.versao > estado.reinicio) {
+      gravar('respondidas', {}, 'nuvem'); gravar('favoritos', [], 'nuvem'); gravar('notas', {}, 'nuvem'); gravar('historico', [], 'nuvem')
+      estado = { ...estadoVazio(), cursor: estado.cursor, reinicio: marcador.versao }
+      salvar()
+    }
     const mapas = new Map<TipoSync, Record<string, unknown>>()
     for (const doc of documentos) {
+      if (doc.tipo === 'historico' && doc.item === '__reinicio__') continue
       conhecidos.add(identificador(doc.tipo, doc.item))
       const enviada = enviadas.find(e => e.tipo === doc.tipo && e.item === doc.item)
       if (!receberDocumento(estado, doc, enviada)) continue

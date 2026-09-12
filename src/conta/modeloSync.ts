@@ -17,11 +17,12 @@ export interface Alteracao {
 }
 export interface EstadoSync {
   cursor: number
+  reinicio: number
   versoes: Record<string, number>
   pendentes: Record<string, Alteracao>
   conflitos: Record<string, Documento>
 }
-export const estadoVazio = (): EstadoSync => ({ cursor: 0, versoes: {}, pendentes: {}, conflitos: {} })
+export const estadoVazio = (): EstadoSync => ({ cursor: 0, reinicio: 0, versoes: {}, pendentes: {}, conflitos: {} })
 export const identificador = (tipo: TipoSync, item: string) => `${tipo}/${item}`
 export const ehTipoSync = (chave: string): chave is TipoSync => TIPOS_SYNC.includes(chave as TipoSync)
 export function itens(tipo: TipoSync, valor: unknown): Record<string, unknown> {

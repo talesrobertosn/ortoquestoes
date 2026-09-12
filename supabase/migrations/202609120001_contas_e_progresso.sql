@@ -35,6 +35,8 @@ create policy "Cada pessoa altera apenas seu progresso" on public.progresso_usua
   for update to authenticated using ((select auth.uid()) = usuario_id)
   with check ((select auth.uid()) = usuario_id);
 
+-- Escritas só por esta função. usuario_id vem da sessão verificada, nunca de parâmetros.
+-- A versão esperada evita perda silenciosa quando dois dispositivos alteram o mesmo item.
 create function public.sincronizar_progresso(alteracoes jsonb)
 returns setof public.progresso_usuario
 language plpgsql security definer set search_path = '' as $$
@@ -46,23 +48,30 @@ declare
   id_operacao uuid;
 begin
   if dono is null then raise exception 'Autenticação necessária' using errcode = '42501'; end if;
-  if jsonb_typeof(alteracoes) <> 'array' or jsonb_array_length(alteracoes) > 100 then raise exception 'Lote inválido'; end if;
+  if jsonb_typeof(alteracoes) <> 'array' or jsonb_array_length(alteracoes) > 100 then
+    raise exception 'Lote inválido';
+  end if;
+  -- Serializa os lotes da mesma conta; outras contas continuam independentes.
   perform pg_catalog.pg_advisory_xact_lock(pg_catalog.hashtextextended(dono::text, 0));
   for entrada in select value from jsonb_array_elements(alteracoes) loop
     if not (entrada ?& array['tipo','item','valor','base','operacao']) then raise exception 'Alteração incompleta'; end if;
     base := (entrada->>'base')::bigint;
     id_operacao := (entrada->>'operacao')::uuid;
     if base is null or base < 0 then raise exception 'Versão inválida'; end if;
-    select * into atual from public.progresso_usuario where usuario_id = dono and tipo = entrada->>'tipo' and item = entrada->>'item' for update;
+    select * into atual from public.progresso_usuario
+      where usuario_id = dono and tipo = entrada->>'tipo' and item = entrada->>'item' for update;
     if not found then
       if base <> 0 then raise exception 'Versão inicial inválida'; end if;
-      insert into public.progresso_usuario (usuario_id, tipo, item, valor, operacao) values (dono, entrada->>'tipo', entrada->>'item', entrada->'valor', id_operacao) returning * into atual;
+      insert into public.progresso_usuario (usuario_id, tipo, item, valor, operacao)
+        values (dono, entrada->>'tipo', entrada->>'item', entrada->'valor', id_operacao) returning * into atual;
     elsif atual.operacao = id_operacao then
-      null;
+      null; -- Resposta de rede perdida: repetir a mesma operação não grava outra vez.
     elsif atual.versao = base then
-      update public.progresso_usuario set valor = entrada->'valor', operacao = id_operacao, versao = default, atualizado_em = now()
+      update public.progresso_usuario set valor = entrada->'valor', operacao = id_operacao,
+        versao = default, atualizado_em = now()
         where usuario_id = dono and tipo = entrada->>'tipo' and item = entrada->>'item' returning * into atual;
     end if;
+    -- No conflito, devolve a versão corrente sem sobrescrever nenhuma informação.
     return next atual;
   end loop;
 end;
@@ -70,30 +79,54 @@ $$;
 revoke all on function public.sincronizar_progresso(jsonb) from public, anon;
 grant execute on function public.sincronizar_progresso(jsonb) to authenticated;
 
+-- Limpa a conta inteira sem apagar as linhas: os tombstones permitem que todos
+-- os dispositivos recebam a exclusão na próxima sincronização.
 create function public.apagar_progresso()
-returns void language plpgsql security definer set search_path = '' as $$
+returns void
+language plpgsql security definer set search_path = '' as $$
 declare dono uuid := auth.uid();
 begin
   if dono is null then raise exception 'Autenticação necessária' using errcode = '42501'; end if;
-  update public.progresso_usuario set valor = 'null'::jsonb, operacao = extensions.gen_random_uuid(), versao = default, atualizado_em = now() where usuario_id = dono;
+  update public.progresso_usuario
+    set valor = 'null'::jsonb,
+        operacao = extensions.gen_random_uuid(),
+        versao = default,
+        atualizado_em = now()
+    where usuario_id = dono;
+  insert into public.progresso_usuario (usuario_id, tipo, item, valor, operacao)
+    values (dono, 'historico', '__reinicio__', jsonb_build_object('id','__reinicio__','descricao','reinicio','concluidaEm',extract(epoch from now())), extensions.gen_random_uuid())
+    on conflict (usuario_id, tipo, item) do update set valor = excluded.valor, operacao = excluded.operacao, versao = default, atualizado_em = now();
 end;
 $$;
 revoke all on function public.apagar_progresso() from public, anon;
 grant execute on function public.apagar_progresso() to authenticated;
-
+-- Versão com retorno explícito: algumas versões do PostgREST não expõem
+-- funções que retornam void no endpoint RPC.
 create function public.apagar_progresso_conta()
-returns integer language plpgsql security definer set search_path = '' as $$
+returns integer
+language plpgsql security definer set search_path = '' as $$
 declare dono uuid := auth.uid(); total integer;
 begin
   if dono is null then raise exception 'Autenticação necessária' using errcode = '42501'; end if;
-  update public.progresso_usuario set valor = 'null'::jsonb, operacao = extensions.gen_random_uuid(), versao = default, atualizado_em = now() where usuario_id = dono;
+  update public.progresso_usuario
+    set valor = 'null'::jsonb,
+        operacao = extensions.gen_random_uuid(),
+        versao = default,
+        atualizado_em = now()
+    where usuario_id = dono;
+  insert into public.progresso_usuario (usuario_id, tipo, item, valor, operacao)
+    values (dono, 'historico', '__reinicio__', jsonb_build_object('id','__reinicio__','descricao','reinicio','concluidaEm',extract(epoch from now())), extensions.gen_random_uuid())
+    on conflict (usuario_id, tipo, item) do update set valor = excluded.valor, operacao = excluded.operacao, versao = default, atualizado_em = now();
   get diagnostics total = row_count;
   return total;
 end;
 $$;
 revoke all on function public.apagar_progresso_conta() from public, anon;
 grant execute on function public.apagar_progresso_conta() to authenticated;
+-- Garante que o PostgREST reconheça a função imediatamente após a migração.
 notify pgrst, 'reload schema';
+
+-- Reserva exclusiva do servidor para uma etapa futura. Nenhum cliente acessa ou altera planos.
 create schema if not exists privado;
 revoke all on schema privado from public, anon, authenticated;
 create table privado.assinaturas (
