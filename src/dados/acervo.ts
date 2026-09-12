@@ -1,3 +1,4 @@
+import { dominada, revisarHoje, type RegistroQuestao } from '../estado/revisao'
 import { recurso } from '../config'
 import type { Filtros, Indice, ItemIndice, Progresso, Questao } from './tipos'
 
@@ -102,7 +103,7 @@ type ChaveFaceta =
  * acervo de propósito: são dados locais da pessoa, não do conteúdo.
  */
 export interface ContextoLocal {
-  respondidas: Record<string, { c: boolean | null }>
+  respondidas: Record<string, Partial<RegistroQuestao> & { c: boolean | null }>
   favoritos: string[]
   /** id → enunciado e alternativas, normalizados. Só existe depois de buscar. */
   textos: Map<string, string> | null
@@ -164,6 +165,8 @@ function aplicaUm(
 
   if (ignorar !== 'situacao' && filtros.situacao !== 'todas') {
     const registro = contexto.respondidas[item.id]
+    if (filtros.situacao === 'revisarHoje' && !revisarHoje(registro)) return false
+    if (filtros.situacao === 'dominadas' && !dominada(registro)) return false
     if (filtros.situacao === 'naoRespondidas' && registro) return false
     if (filtros.situacao === 'erradas' && registro?.c !== false) return false
     if (filtros.situacao === 'acertadas' && registro?.c !== true) return false
@@ -236,6 +239,8 @@ export function contar(
       } else if (registro.c === true) {
         contagens.porSituacao.acertadas = (contagens.porSituacao.acertadas ?? 0) + 1
       }
+      if (revisarHoje(registro)) contagens.porSituacao.revisarHoje = (contagens.porSituacao.revisarHoje ?? 0) + 1
+      if (dominada(registro)) contagens.porSituacao.dominadas = (contagens.porSituacao.dominadas ?? 0) + 1
       if (contexto.favoritos.includes(item.id)) {
         contagens.porSituacao.favoritas = (contagens.porSituacao.favoritas ?? 0) + 1
       }

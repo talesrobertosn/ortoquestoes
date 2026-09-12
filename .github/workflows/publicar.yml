@@ -26,6 +26,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Testar revisão e backup
+        run: node fixtures/testar_revisao.mjs
       - name: Testar o detector de figura ausente
         run: python3 fixtures/testar_deteccao.py
       - name: Validar o acervo

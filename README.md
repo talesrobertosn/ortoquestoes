@@ -341,3 +341,13 @@ traço único. Para trocar a marca do site inteiro, mude `DIRECAO_MARCA` em `src
 
 Os enunciados pertencem às bancas das provas originais e estão reproduzidos para fins de estudo. O
 código do site é de uso livre.
+
+### Rotina diária e progresso local
+
+A página inicial reúne revisões pendentes, questões dominadas e questões novas. O treino pode começar por quatro intenções prontas; os filtros completos ficam em uma seção expansível. Filtros de prova, ano e dificuldade só aparecem quando há dados no índice. A atribuição individual de prova e ano continua em conferência.
+
+- Um erro entra imediatamente em **Revisar hoje**. Um acerto agenda a revisão para três dias depois. Dois acertos consecutivos marcam a questão como **Dominada** no treino; isso não representa certificação de competência clínica. Um novo erro reinicia a sequência.
+- Registros antigos continuam válidos. Respostas de simulados entram no histórico apenas na entrega, uma vez por questão, mesmo que a alternativa tenha sido trocada.
+- Comentários aceitam parágrafos e `**negrito**`, sem interpretar HTML. A origem e a revisão médica são indicadas separadamente; o conteúdo médico e o gabarito não são alterados pela apresentação.
+- Anotações privadas são salvas por questão. Em **Desempenho**, o backup JSON inclui respostas, revisões, favoritas, notas e histórico de sessões. A sessão em andamento não é transportada. A restauração valida o arquivo inteiro antes de substituir esses dados.
+- `node fixtures/testar_revisao.mjs` verifica transições de revisão, registros antigos, filtros, URLs e arquivos de backup inválidos.

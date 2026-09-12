@@ -25,6 +25,7 @@ export function armazenamentoDisponivel(): boolean {
 export function ler<T>(chave: string, padrao: T): T {
   const completa = PREFIXO_ARMAZENAMENTO + chave
   try {
+    if (memoria.has(completa)) return JSON.parse(memoria.get(completa)!) as T
     const bruto = armazenamentoDisponivel()
       ? window.localStorage.getItem(completa)
       : (memoria.get(completa) ?? null)
@@ -39,7 +40,10 @@ export function gravar(chave: string, valor: unknown): void {
   const completa = PREFIXO_ARMAZENAMENTO + chave
   const bruto = JSON.stringify(valor)
   try {
-    if (armazenamentoDisponivel()) window.localStorage.setItem(completa, bruto)
+    if (armazenamentoDisponivel()) {
+      window.localStorage.setItem(completa, bruto)
+      memoria.delete(completa)
+    }
     else memoria.set(completa, bruto)
   } catch {
     memoria.set(completa, bruto)

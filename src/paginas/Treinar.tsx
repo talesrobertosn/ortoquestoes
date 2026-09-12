@@ -21,7 +21,7 @@ import { href } from '../util/rotas'
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
 const LIMITES = [10, 20, 30, 50, 100]
-const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'erradas', 'acertadas', 'favoritas']
+const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'erradas', 'acertadas', 'favoritas', 'revisarHoje', 'dominadas']
 const DURACOES: Array<[number, string]> = [
   [60, '1 hora'],
   [120, '2 horas'],
@@ -31,18 +31,31 @@ const DURACOES: Array<[number, string]> = [
 
 export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const { indice, carregando } = usarIndice()
-  const { iniciar } = usarSessao()
+  const { iniciar, sessao } = usarSessao()
   // Em tela grande a árvore fica aberta na página: escolher assunto é o que se
   // faz aqui, não faz sentido esconder atrás de um menu.
   const telaLarga = usarMedia('(min-width: 64rem)')
-  const [filtros, definirFiltros] = useState<Filtros>(() => consultaParaFiltros(consulta))
+  const [filtros, definirFiltros] = useState<Filtros>(() => consulta.size ? consultaParaFiltros(consulta) : { ...FILTROS_VAZIOS, limite: 10 })
+  useEffect(() => {
+    const mudou = () => {
+      const [caminho, query = ''] = window.location.hash.slice(1).split('?')
+      if (caminho === '/treinar') {
+        const proximos = consultaParaFiltros(new URLSearchParams(query))
+        definirFiltros(atuais => filtrosParaConsulta(atuais) === filtrosParaConsulta(proximos) ? atuais : proximos)
+      }
+    }
+    window.addEventListener('hashchange', mudou)
+    return () => window.removeEventListener('hashchange', mudou)
+  }, [])
   const [simulado, definirSimulado] = useState(false)
   const [minutos, definirMinutos] = useState(180)
 
   // A URL acompanha os filtros: o endereço da barra é o filtro compartilhável.
   useEffect(() => {
     const destino = '/treinar' + filtrosParaConsulta(filtros)
-    navegar(destino, true)
+    if (window.location.hash !== '#' + destino) {
+      navegar(destino, true)
+    }
   }, [filtros])
 
   const { contexto, carregandoBusca } = usarContextoLocal(filtros.busca)
@@ -71,7 +84,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   }
 
   function comecar() {
-    if (!indice || total === 0) return
+    if (!indice || total === 0 || carregandoBusca) return
+    if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
     const ids = montarSessao(indice, filtros, Date.now(), contexto)
     iniciar(filtros, ids, simulado ? { simulado: true, limiteSegundos: minutos * 60 } : {})
     navegar('/sessao')
@@ -104,8 +118,23 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         </p>
       </header>
 
+      <section className="intencoes" aria-label="Escolha seu treino">
+        {([
+          ['Treino rápido', '10 questões para começar', { limite: 10 }],
+          ['Revisar hoje', 'Retome as revisões pendentes', { situacao: 'revisarHoje', limite: 20 }],
+          ['Questões novas', 'Amplie seu repertório', { situacao: 'naoRespondidas', limite: 10 }],
+          ['Somente comentadas', 'Aprenda com as explicações', { comComentario: true, limite: 10 }],
+        ] as [string, string, Partial<Filtros>][]).map(([titulo, texto, preset]) => (
+          <button className="intencao" key={titulo} onClick={() => { definirFiltros({ ...FILTROS_VAZIOS, ...preset }); definirSimulado(false) }}>
+            <strong>{titulo}</strong><span>{texto}</span>
+          </button>
+        ))}
+      </section>
+      <p className="meta">Acervo de TEOT, TARO e outras seleções. Prova e ano de cada questão ainda estão em conferência; filtros só aparecem quando há dados disponíveis.</p>
       <div className="cartao">
         <div className="cartao__corpo empilha">
+          <details className="filtros-detalhes" open={filtros.busca ? true : undefined}>
+            <summary>Buscar por palavras</summary>
           <div className="campo" style={{ marginBottom: 0 }}>
             <label className="campo__rotulo" htmlFor="busca-acervo">
               Buscar no texto das questões
@@ -125,6 +154,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             )}
           </div>
 
+          </details>
+          <details className="filtros-detalhes">
+            <summary>Personalizar assuntos e filtros</summary>
           <div className="campo" style={{ marginBottom: 0 }}>
             <span className="campo__rotulo">Situação</span>
             <div className="grupo-opcoes" id="filtro-situacao">
@@ -313,6 +345,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             </div>
           </div>
 
+          </details>
           <div className="campo" style={{ marginBottom: 0 }}>
             <span className="campo__rotulo">Quantas questões</span>
             <div className="grupo-opcoes" id="filtro-limite">
@@ -339,6 +372,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             </div>
           </div>
 
+          <label className="campo">Quantidade personalizada
+            <input className="entrada" type="number" min="1" step="1" max={Math.max(total, 1)} value={filtros.limite ?? ''} placeholder="Todas" onChange={(e) => atualizar({ limite: e.target.value ? Math.max(1, Math.min(total || 1, Math.floor(Number(e.target.value)) || 1)) : null })} />
+          </label>
           <div className="acoes" style={{ marginTop: '0.5rem' }}>
             <button
               type="button"
@@ -350,7 +386,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             <button
               type="button"
               className="botao botao--principal botao--grande"
-              disabled={total === 0}
+              disabled={total === 0 || carregandoBusca}
               onClick={comecar}
             >
               {total === 0 ? (
