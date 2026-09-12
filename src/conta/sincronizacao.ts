@@ -107,7 +107,9 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
   window.addEventListener('storage', outraAba)
   window.addEventListener('online', aoVoltar)
   document.addEventListener('visibilitychange', aoVoltar)
-  const intervalo = setInterval(aoVoltar, 30000)
+  // Mantém os dispositivos próximos em poucos segundos mesmo quando a aba fica aberta
+  // sem trocar de visibilidade. A sincronização continua leve: só lê as linhas da própria conta.
+  const intervalo = setInterval(aoVoltar, 5000)
   void sincronizar()
   return {
     sincronizar,
