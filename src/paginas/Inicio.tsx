@@ -106,6 +106,12 @@ export function Inicio() {
               <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>Avance no acervo</small></a>
             </div>
           </section>
+          {!conta && <section className="cartao cartao__corpo convite-conta">
+            <p className="meta">ESTUDE EM QUALQUER DISPOSITIVO</p>
+            <h2>Crie sua conta gratuita e guarde sua evolução</h2>
+            <p>Suas respostas, revisões, favoritas e desempenho ficam salvos com segurança e acompanham você no computador e no celular.</p>
+            <a className="botao botao--principal" href={href('/conta')}>Criar minha conta</a>
+          </section>}
           <div className="linha linha--empilha-celular">
             <a className="botao botao--grande" href={href('/treinar')}>
               Montar uma sessão com filtros

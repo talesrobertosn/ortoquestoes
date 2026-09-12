@@ -90,7 +90,7 @@ export function Sobre() {
 
       <h2>Seus dados</h2>
       <p>
-        Sem conta, o progresso fica apenas neste navegador. Ao entrar, respostas, revisões, favoritas, anotações e histórico podem ser sincronizados pelo Supabase, com acesso restrito ao titular da conta. Você pode exportar ou apagar seu progresso na página de{' '}
+        Sem conta, nada do seu progresso é guardado depois que você fecha a página. Ao entrar, respostas, revisões, favoritas, anotações e histórico podem ser sincronizados pelo Supabase, com acesso restrito ao titular da conta. Você pode exportar ou apagar seu progresso na página de{' '}
         <a href={href('/dados')}>dados locais</a>.
       </p>
 
@@ -229,6 +229,16 @@ export function DadosLocais() {
   const totalContadas = porTema.reduce((n, t) => n + t.total, 0)
   const errosTotais = Object.values(marcadas).reduce((n, registro) => n + (registro.erros ?? (registro.c === false ? 1 : 0)), 0)
   const nome = String(conta?.user.user_metadata?.nome ?? '').trim()
+  const percentualGeral = totalContadas > 0 ? totalCertas / totalContadas : null
+  const mensagemDesempenho = percentualGeral === null
+    ? 'Vamos começar e construir seu histórico.'
+    : percentualGeral >= 0.8
+      ? 'Mandou muito bem! Seu desempenho está excelente — continue nesse ritmo.'
+      : percentualGeral >= 0.6
+        ? 'Você está no caminho certo. Mais algumas revisões vão fazer essa porcentagem subir.'
+        : percentualGeral >= 0.4
+          ? 'Há espaço para melhorar. Revise as questões que errou e tente novamente.'
+          : 'Atenção redobrada agora: revise com calma os temas mais difíceis e reforce a base.'
 
   return (
     <article className="empilha-2">
@@ -238,12 +248,12 @@ export function DadosLocais() {
           Contado a partir de todas as questões que você já respondeu nesta conta, não só da
           última sessão ou deste dispositivo.
         </p>
-        {nome && <p className="heroi__nota">{totalContadas === 0 ? 'Vamos começar e construir seu histórico.' : totalCertas / totalContadas >= 0.75 ? 'Você está indo muito bem. Mantenha a constância.' : 'Cada erro mostra exatamente onde vale revisar.'}</p>}
+        {nome && <p className="heroi__nota">{mensagemDesempenho}</p>}
         {!conta && <p className="aviso-ia">Crie uma conta gratuita para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
         {conta && <div className="linha" style={{ marginTop: '0.75rem' }}><button className="botao" type="button" onClick={sincronizar} disabled={statusSync.estado === 'sincronizando'}>{statusSync.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar progresso'}</button><span className="meta" role="status">{statusSync.estado === 'salvo' ? 'Tudo atualizado entre seus dispositivos.' : statusSync.pendentes ? `${statusSync.pendentes} alteração(ões) aguardando envio.` : ''}</span></div>}
       </header>
 
-      {!armazenamentoDisponivel() && (
+      {conta && !armazenamentoDisponivel() && (
         <div className="estado">
           <p className="estado__titulo">Este navegador está com o armazenamento bloqueado.</p>
           <p>
@@ -316,19 +326,17 @@ export function DadosLocais() {
         )}
       </section>
 
-      <section className="limite-leitura">
+      {conta && <section className="limite-leitura">
         <h2>Onde isso fica guardado</h2>
         <p>
-          {conta ? 'Seu progresso é salvo neste navegador e sincronizado com sua conta no Supabase.' : 'Sem conta, o progresso fica apenas neste navegador. Com uma conta, você pode sincronizá-lo entre dispositivos.'} São {(bytes / 1024).toFixed(1)} kB guardados neste perfil local. <a href={href('/conta')}>Minha conta</a>
+          Seu progresso é salvo com segurança e sincronizado com sua conta no Supabase. São {(bytes / 1024).toFixed(1)} kB guardados neste perfil. <a href={href('/conta')}>Minha conta</a>
         </p>
-      </section>
+      </section>}
 
       <BackupProgresso />
 
-      <h2>Apagar tudo</h2>
-      <p>
-        Apaga favoritas, histórico de sessões, questões respondidas, revisões, anotações e a sessão em andamento deste perfil. {conta && 'A exclusão também será sincronizada com sua conta.'} Exporte um backup antes se quiser guardar uma cópia. Não afeta o acervo.
-      </p>
+      {conta && <><h2>Apagar tudo</h2>
+      <p>Apaga favoritas, histórico de sessões, questões respondidas, revisões, anotações e a sessão em andamento desta conta. A exclusão também será sincronizada com seus outros dispositivos. Exporte um backup antes se quiser guardar uma cópia. Não afeta o acervo.</p>
       <div className="linha">
         <button
           type="button"
@@ -340,15 +348,15 @@ export function DadosLocais() {
                 if (error) { window.alert('Não foi possível apagar o progresso da conta. Tente novamente com conexão.'); return }
                 limparTudo('nuvem')
                 gravar('sincronia:v1', estadoVazio(), 'nuvem')
-              } else limparTudo()
+              } else limparTudo('nuvem')
               definirApagado(true)
             }
           }}
         >
-          {conta ? 'Apagar meu progresso da conta' : 'Apagar progresso deste navegador'}
+          Apagar meu progresso da conta
         </button>
         {apagado && <span className="meta">Apagado. Recarregue a página para ver o site zerado.</span>}
-      </div>
+      </div></>}
     </article>
   )
 }

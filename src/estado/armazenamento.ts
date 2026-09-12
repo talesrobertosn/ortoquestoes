@@ -34,14 +34,15 @@ export function armazenamentoDisponivel(): boolean {
   } catch { cacheDisponivel = false }
   return cacheDisponivel
 }
-function lerCompleta<T>(completa: string, padrao: T): T {
+function lerCompleta<T>(completa: string, padrao: T, permitirLocal: boolean): T {
   try {
-    const bruto = memoria.get(completa) ?? (armazenamentoDisponivel() ? window.localStorage.getItem(completa) : null)
+    const bruto = memoria.get(completa) ?? (permitirLocal && armazenamentoDisponivel() ? window.localStorage.getItem(completa) : null)
     return bruto === null || bruto === undefined ? padrao : JSON.parse(bruto) as T
   } catch { return padrao }
 }
-export function ler<T>(chave: string, padrao: T): T { return lerCompleta(chaveCompleta(chave), padrao) }
-export function lerVisitante<T>(chave: string, padrao: T): T { return lerCompleta(chaveCompleta(chave, null), padrao) }
+export function ler<T>(chave: string, padrao: T): T { return lerCompleta(chaveCompleta(chave), padrao, usuario !== null) }
+/** Visitantes nunca recuperam dados persistidos; a memória dura apenas enquanto a aba está aberta. */
+export function lerVisitante<T>(_chave: string, padrao: T): T { return padrao }
 export function gravar(chave: string, valor: unknown, origem: 'local' | 'nuvem' = 'local'): void {
   const completa = chaveCompleta(chave), antes = ler(chave, null), bruto = JSON.stringify(valor)
   try {

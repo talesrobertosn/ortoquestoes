@@ -47,7 +47,7 @@ export function Conta() {
     } catch { definirMensagem('Não foi possível salvar o perfil agora.') }
     finally { definirSalvandoPerfil(false) }
   }
-  if (!contasDisponiveis || !supabase) return <article className="limite-leitura empilha"><h1>Sua conta</h1><p>As contas estão em preparação. Você já pode estudar gratuitamente e salvar seu progresso neste navegador.</p><a className="botao botao--principal" href={href('/treinar')}>Continuar estudando</a></article>
+  if (!contasDisponiveis || !supabase) return <article className="limite-leitura empilha"><h1>Sua conta</h1><p>As contas estão em preparação. Você já pode estudar gratuitamente. O progresso só é salvo depois que uma conta estiver disponível.</p><a className="botao botao--principal" href={href('/treinar')}>Continuar estudando</a></article>
   async function enviar(e: FormEvent) {
     e.preventDefault()
     if (!supabase || ocupado) return
@@ -94,7 +94,7 @@ export function Conta() {
     }
     definirImportado(true); definirMensagem('Progresso de visitante importado. Os dados que já existiam na conta foram preservados.')
   }
-  const possuiVisitante = TIPOS_SYNC.some(tipo => Object.keys(itens(tipo, lerVisitante(tipo, null))).length > 0)
+  const possuiVisitante = false
   return <article className="limite-leitura empilha-2 conta-pagina">
     <header><p className="meta">SEU ESTUDO, EM QUALQUER DISPOSITIVO</p><h1>{sessao ? 'Minha conta' : 'Entre para guardar seu progresso'}</h1><p>O OrtoQuestões continua 100% gratuito, sem limite diário. Criar uma conta é opcional.</p></header>
     {sessao && !recuperacao ? <>
