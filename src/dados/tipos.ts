@@ -159,7 +159,7 @@ export interface Indice {
  * e sim do histórico de quem está estudando — por isso mora aqui e não no
  * índice do acervo.
  */
-export type Situacao = 'todas' | 'naoRespondidas' | 'erradas' | 'acertadas' | 'favoritas'
+export type Situacao = 'todas' | 'naoRespondidas' | 'erradas' | 'acertadas' | 'favoritas' | 'revisarHoje' | 'dominadas'
 
 export const ROTULO_SITUACAO: Record<Situacao, string> = {
   todas: 'Todas',
@@ -167,6 +167,8 @@ export const ROTULO_SITUACAO: Record<Situacao, string> = {
   erradas: 'Que eu errei',
   acertadas: 'Que eu acertei',
   favoritas: 'Favoritas',
+  revisarHoje: 'Revisar hoje',
+  dominadas: 'Dominadas',
 }
 
 /** Filtros de montagem de sessão. */

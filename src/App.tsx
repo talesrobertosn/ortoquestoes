@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { usarRota } from './util/rotas'
+import { href, usarRota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
 import { Inicio } from './paginas/Inicio'
@@ -28,6 +28,8 @@ const TITULOS: Record<string, string> = {
 export function App() {
   const rota = usarRota()
   const [primeiro, segundo] = rota.segmentos
+
+  useEffect(() => { window.scrollTo({ top: 0, behavior: 'auto' }) }, [rota.caminho])
 
   useEffect(() => {
     document.title =
@@ -90,6 +92,11 @@ export function App() {
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>{pagina}</div>
       </main>
       <Rodape />
+      <nav className="nav-mobile nao-imprime" aria-label="Navegação principal no celular">
+        {([['/', 'Início'], ['/treinar', 'Treinar'], ['/treinar?situacao=revisarHoje&limite=20', 'Revisar'], ['/dados', 'Desempenho']]).map(([url, titulo]) => (
+          <a key={titulo} href={href(url)} aria-current={(titulo === 'Revisar' ? rota.caminho === '/treinar' && rota.consulta.get('situacao') === 'revisarHoje' : rota.caminho === url && !(titulo === 'Treinar' && rota.consulta.get('situacao') === 'revisarHoje')) ? 'page' : undefined}>{titulo}</a>
+        ))}
+      </nav>
     </div>
   )
 }

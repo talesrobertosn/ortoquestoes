@@ -1,3 +1,4 @@
+import { proximoRegistro, type RegistroQuestao } from './revisao'
 import { useCallback } from 'react'
 import type { EstadoSessao, Filtros, Letra, Resposta } from '../dados/tipos'
 import { usarArmazenado } from './usarArmazenado'
@@ -61,7 +62,7 @@ export function usarSessao() {
       definirSessao((atual) => {
         if (!atual) return atual
         const resposta: Resposta = { escolhida, correta, segundos }
-        registrarRespondida(id, correta)
+        if (!atual.simulado && !atual.respostas[id]) registrarRespondida(id, correta)
         return { ...atual, respostas: { ...atual.respostas, [id]: resposta } }
       })
     },
@@ -110,6 +111,9 @@ export function usarSessao() {
     definirSessao((atual) => {
       if (!atual || atual.concluidaEm) return atual
       const concluida = { ...atual, concluidaEm: Date.now() }
+      if (atual.simulado) {
+        for (const [id, resposta] of Object.entries(atual.respostas)) registrarRespondida(id, resposta.correta)
+      }
       registrarHistorico(concluida)
       return concluida
     })
@@ -130,12 +134,12 @@ export function registrarResposta(id: string, correta: boolean | null) {
 }
 
 function registrarRespondida(id: string, correta: boolean | null) {
-  const mapa = ler<Record<string, { c: boolean | null; q: number }>>(CHAVE_RESPONDIDAS, {})
-  mapa[id] = { c: correta, q: Date.now() }
+  const mapa = ler<Record<string, RegistroQuestao>>(CHAVE_RESPONDIDAS, {})
+  mapa[id] = proximoRegistro(mapa[id], correta)
   gravar(CHAVE_RESPONDIDAS, mapa)
 }
 
-export function lerRespondidas(): Record<string, { c: boolean | null; q: number }> {
+export function lerRespondidas(): Record<string, RegistroQuestao> {
   return ler(CHAVE_RESPONDIDAS, {})
 }
 

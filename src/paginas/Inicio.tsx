@@ -1,3 +1,4 @@
+import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { useMemo } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { contar, montarSessao } from '../dados/acervo'
@@ -14,9 +15,10 @@ export function Inicio() {
   const { iniciar } = usarSessao()
   const [sessao] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
 
+  const { contexto } = usarContextoLocal('')
   const contagens = useMemo(
-    () => (indice ? contar(indice, FILTROS_VAZIOS) : null),
-    [indice],
+    () => (indice ? contar(indice, FILTROS_VAZIOS, contexto) : null),
+    [indice, contexto],
   )
   const historico = useMemo(() => lerHistorico(), [])
 
@@ -29,6 +31,7 @@ export function Inicio() {
   /** Treino rápido: uma sessão embaralhada de todo o acervo, num clique. */
   function treinoRapido(quantidade: number) {
     if (!indice) return
+    if (sessaoEmAndamento && !window.confirm('Iniciar outro treino substitui a sessão em andamento. Seu histórico será mantido. Continuar?')) return
     const filtros = { ...FILTROS_VAZIOS, embaralhar: true, limite: quantidade }
     iniciar(filtros, montarSessao(indice, filtros, Date.now()))
     navegar('/sessao')
@@ -40,7 +43,7 @@ export function Inicio() {
   return (
     <div className="empilha-2">
       <section className="heroi">
-        <h1>Treine para o TEOT, o TARO e as demais provas.</h1>
+        <h1>Seu próximo passo começa aqui.</h1>
         <div className="heroi__texto">
           <p className="heroi__linha">
             {indice && indice.total > 0 ? (
@@ -55,7 +58,7 @@ export function Inicio() {
             )}
           </p>
           <p className="heroi__nota">
-            Questões comentadas por IA e pela comunidade.{' '}
+            Questões de TEOT, TARO e outras seleções. A identificação individual de prova e ano ainda está em conferência.{' '}
             <a href={href('/sobre')}>Conheça o projeto</a>.
           </p>
         </div>
@@ -86,6 +89,19 @@ export function Inicio() {
 
       {indice && contagens && indice.total > 0 && (
         <>
+          <section className="painel-diario" aria-label="Seu estudo de hoje">
+            <div className="painel-diario__intro">
+              <p className="meta">SUA ROTINA DE ESTUDO</p>
+              <h2>{sessaoEmAndamento ? 'Continue de onde parou' : 'Um pouco de prática, todos os dias'}</h2>
+              <p>Errou? Revise agora. Acertou uma vez? Volte em três dias. Dois acertos seguidos marcam a questão como dominada neste treino.</p>
+              {sessaoEmAndamento && <a className="botao botao--principal" href={href('/sessao')}>Continuar sessão · {Object.keys(sessao!.respostas).length}/{sessao!.ids.length}</a>}
+            </div>
+            <div className="atalhos-estudo">
+              <a href={href('/treinar?situacao=revisarHoje&limite=20')}><strong>{contagens.porSituacao.revisarHoje ?? 0}</strong><span>Revisar hoje</span><small>Retome o que precisa fixar</small></a>
+              <a href={href('/treinar?situacao=dominadas')}><strong>{contagens.porSituacao.dominadas ?? 0}</strong><span>Dominadas</span><small>Dois acertos consecutivos</small></a>
+              <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>Avance no acervo</small></a>
+            </div>
+          </section>
           <div className="linha linha--empilha-celular">
             <a className="botao botao--grande" href={href('/treinar')}>
               Montar uma sessão com filtros

@@ -1,3 +1,4 @@
+import { BackupProgresso } from '../componentes/BackupProgresso'
 import { useMemo, useState } from 'react'
 import { SITE, recurso } from '../config'
 import { href } from '../util/rotas'
@@ -37,8 +38,7 @@ export function Sobre() {
       </p>
       <ul className="lista">
         <li>
-          <strong>Comentário de IA.</strong> Escrito com apoio de inteligência artificial e
-          conferido antes de entrar no ar. Explica o conceito por trás da questão, por que a
+          <strong>Comentário de IA.</strong> Os comentários são produzidos com apoio de IA e publicados com referências. Quando houver revisão médica, ela será indicada explicitamente. Explica o conceito por trás da questão, por que a
           alternativa correta é correta e por que cada uma das erradas está errada. Quando há
           dúvida sobre o gabarito ou sobre uma afirmação da banca, o comentário diz isso em vez de
           inventar uma explicação segura de aparência.
@@ -61,8 +61,7 @@ export function Sobre() {
         Os assuntos cobrem o programa inteiro da especialidade: mão e punho, ombro e cotovelo,
         quadril, joelho, pé e tornozelo, coluna, trauma e fraturas, tumores ósseos, ortopedia
         pediátrica, doenças osteometabólicas e conceitos básicos (biomateriais, infecção,
-        consolidação óssea, metodologia científica). Dá para filtrar por assunto, por prova, por
-        ano, por dificuldade e por questões que você errou.
+        consolidação óssea, metodologia científica). A identificação individual de prova e ano ainda está em conferência. Os filtros por prova, ano e dificuldade só aparecem quando há dados disponíveis. Você já pode escolher assuntos e revisar as questões que errou.
       </p>
 
       <p>
@@ -312,9 +311,11 @@ export function DadosLocais() {
         </p>
       </section>
 
+      <BackupProgresso />
+
       <h2>Apagar tudo</h2>
       <p>
-        Apaga favoritas, histórico de sessões, questões respondidas e a sessão em andamento. Não tem
+        Apaga favoritas, histórico de sessões, questões respondidas, revisões, anotações e a sessão em andamento. Não tem
         volta e não afeta o acervo.
       </p>
       <div className="linha">
