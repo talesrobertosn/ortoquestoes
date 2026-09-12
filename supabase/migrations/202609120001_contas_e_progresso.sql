@@ -28,6 +28,12 @@ revoke all on public.progresso_usuario from anon, authenticated;
 grant select on public.progresso_usuario to authenticated;
 create policy "Cada pessoa consulta apenas seu progresso" on public.progresso_usuario
   for select to authenticated using ((select auth.uid()) = usuario_id);
+grant insert, update on public.progresso_usuario to authenticated;
+create policy "Cada pessoa insere apenas seu progresso" on public.progresso_usuario
+  for insert to authenticated with check ((select auth.uid()) = usuario_id);
+create policy "Cada pessoa altera apenas seu progresso" on public.progresso_usuario
+  for update to authenticated using ((select auth.uid()) = usuario_id)
+  with check ((select auth.uid()) = usuario_id);
 
 -- Escritas só por esta função. usuario_id vem da sessão verificada, nunca de parâmetros.
 -- A versão esperada evita perda silenciosa quando dois dispositivos alteram o mesmo item.

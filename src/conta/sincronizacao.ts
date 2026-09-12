@@ -1,12 +1,13 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { EVENTO_DADOS, gravar, ler, usuarioLocal, type MudancaDados } from '../estado/armazenamento'
-import { deItens, ehTipoSync, estadoVazio, identificador, itens, receberDocumento, registrarAlteracoes, type Alteracao, type Documento, type EstadoSync, type TipoSync } from './modeloSync'
+import { deItens, ehTipoSync, estadoVazio, identificador, itens, receberDocumento, registrarAlteracoes, TIPOS_SYNC, type Alteracao, type Documento, type EstadoSync, type TipoSync } from './modeloSync'
 
 export interface StatusSync { estado: 'sincronizando' | 'salvo' | 'offline' | 'erro' | 'conflito'; pendentes: number; conflitos: Documento[]; pronto: boolean }
 /** Somente uma fila por conta/aba. Operações são idempotentes e conflitos nunca sobrescrevem dados silenciosamente. */
 export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string, notificar: (s: StatusSync) => void) {
   let estado = ler<EstadoSync>('sincronia:v1', estadoVazio())
   let ativo = true, executando = false, pronto = false
+  const conhecidos = new Set<string>()
   let timer: ReturnType<typeof setTimeout> | undefined
   const valido = () => ativo && usuarioLocal() === idUsuario
   const salvar = () => { if (valido()) gravar('sincronia:v1', estado, 'nuvem') }
@@ -16,6 +17,7 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
   function aplicar(documentos: Documento[], enviadas: Alteracao[] = []) {
     const mapas = new Map<TipoSync, Record<string, unknown>>()
     for (const doc of documentos) {
+      conhecidos.add(identificador(doc.tipo, doc.item))
       const enviada = enviadas.find(e => e.tipo === doc.tipo && e.item === doc.item)
       if (!receberDocumento(estado, doc, enviada)) continue
       const mapa = mapas.get(doc.tipo) ?? itens(doc.tipo, ler(doc.tipo, null))
@@ -23,6 +25,19 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
       mapas.set(doc.tipo, mapa)
     }
     for (const [tipo, mapa] of mapas) gravar(tipo, deItens(tipo, mapa), 'nuvem')
+  }
+  function semearLocais() {
+    // Uma pessoa pode ter estudado antes de criar a conta. Esses itens não
+    // aparecem como eventos retroativos, então entram na fila no primeiro sync.
+    for (const tipo of TIPOS_SYNC) {
+      const locais = itens(tipo, ler(tipo, null))
+      for (const [item, valor] of Object.entries(locais)) {
+        const id = identificador(tipo, item)
+        if (!conhecidos.has(id) && !estado.versoes[id] && !estado.pendentes[id]) {
+          estado.pendentes[id] = { tipo, item, valor, base: 0, operacao: crypto.randomUUID() }
+        }
+      }
+    }
   }
   function agendar() {
     if (!valido()) return
@@ -45,14 +60,25 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
         salvar()
         if (documentos.length < 500) break
       }
+      semearLocais()
+      salvar()
       pronto = true
       const fila = Object.values(estado.pendentes).filter(p => !estado.conflitos[identificador(p.tipo, p.item)]).slice(0, 100)
       if (fila.length) {
         const { data, error } = await cliente.rpc('sincronizar_progresso', { alteracoes: fila })
         if (!valido()) return
-        if (error) throw error
-        aplicar((data ?? []) as Documento[], fila)
-        salvar()
+        if (error) {
+          // Compatibilidade com projetos que ainda não aplicaram a função RPC:
+          // as políticas RLS continuam limitando cada linha ao titular.
+          const linhas = fila.map(p => ({ usuario_id: idUsuario, tipo: p.tipo, item: p.item, valor: p.valor, operacao: p.operacao }))
+          const direto = await cliente.from('progresso_usuario').upsert(linhas, { onConflict: 'usuario_id,tipo,item' }).select('tipo,item,valor,versao,operacao')
+          if (direto.error) throw error
+          aplicar((direto.data ?? []) as Documento[], fila)
+          salvar()
+        } else {
+          aplicar((data ?? []) as Documento[], fila)
+          salvar()
+        }
       }
       const conflitos = Object.keys(estado.conflitos).length
       const pendentes = Object.keys(estado.pendentes).length
