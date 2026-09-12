@@ -62,7 +62,8 @@ export function Conta() {
         if (error) throw error
         definirSenha('')
       } else if (modo === 'criar') {
-        const { error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta() } })
+        if (nome.trim().length < 2) { definirMensagem('Digite seu nome para personalizarmos sua experiência.'); return }
+        const { error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: { nome: nome.trim(), sobrenome: sobrenome.trim() } } })
         if (error) throw error
         definirSenha(''); definirMensagem('Confira seu e-mail para concluir o cadastro. Se já tiver uma conta, use Entrar ou recuperar senha.')
       } else {
@@ -127,6 +128,7 @@ export function Conta() {
       {!recuperacao && <div className="grupo-opcoes">{(['entrar', 'criar', 'recuperar'] as const).map(m => <button className="opcao-segmento" aria-pressed={modo === m} onClick={() => { definirModo(m); definirMensagem(''); definirSenha('') }} key={m}>{m === 'entrar' ? 'Entrar' : m === 'criar' ? 'Criar conta' : 'Recuperar senha'}</button>)}</div>}
       <form className="empilha" onSubmit={enviar}>
         {!recuperacao && <label className="campo">E-mail<input className="entrada" type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} /></label>}
+        {!recuperacao && modo === 'criar' && <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" autoComplete="given-name" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo">Sobrenome <span className="meta">(opcional)</span><input className="entrada" autoComplete="family-name" value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>}
         {(recuperacao || modo !== 'recuperar') && <label className="campo">{recuperacao ? 'Nova senha' : 'Senha'}<input className="entrada" type="password" autoComplete={modo === 'entrar' && !recuperacao ? 'current-password' : 'new-password'} minLength={modo === 'entrar' && !recuperacao ? undefined : 8} required value={senha} onChange={e => definirSenha(e.target.value)} /></label>}
         <button className="botao botao--principal" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}</button>
       </form>
