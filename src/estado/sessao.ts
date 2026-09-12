@@ -59,10 +59,14 @@ export function usarSessao() {
 
   const responder = useCallback(
     (id: string, escolhida: Letra, correta: boolean | null, segundos: number) => {
+      // Persistência acontece fora do updater do React. Updaters podem ser
+      // reexecutados ou descartados em celulares, o que fazia respostas
+      // ficarem apenas no estado visual da sessão.
+      const salvo = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
+      if (salvo && !salvo.simulado && !salvo.respostas[id]) registrarRespondida(id, correta)
       definirSessao((atual) => {
         if (!atual) return atual
         const resposta: Resposta = { escolhida, correta, segundos }
-        if (!atual.simulado && !atual.respostas[id]) registrarRespondida(id, correta)
         return { ...atual, respostas: { ...atual.respostas, [id]: resposta } }
       })
     },
@@ -108,13 +112,14 @@ export function usarSessao() {
   )
 
   const finalizar = useCallback(() => {
+    const salvo = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
+    if (salvo?.simulado) {
+      for (const [id, resposta] of Object.entries(salvo.respostas)) registrarRespondida(id, resposta.correta)
+    }
+    if (salvo && !salvo.concluidaEm) registrarHistorico(salvo)
     definirSessao((atual) => {
       if (!atual || atual.concluidaEm) return atual
       const concluida = { ...atual, concluidaEm: Date.now() }
-      if (atual.simulado) {
-        for (const [id, resposta] of Object.entries(atual.respostas)) registrarRespondida(id, resposta.correta)
-      }
-      registrarHistorico(concluida)
       return concluida
     })
   }, [definirSessao])
