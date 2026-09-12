@@ -49,9 +49,13 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
     if (!navigator.onLine) { anunciar('offline'); return }
     executando = true; anunciar('sincronizando')
     try {
-      // Primeiro recebe: detecta conflitos antes de enviar alterações feitas offline.
+      // Primeiro recebe: reconcilia todas as linhas antes de enviar alterações
+      // locais. O número da versão é global entre tipos; usar apenas `gt(cursor)`
+      // pode deixar respostas para trás quando favoritos e respostas chegam em
+      // ordens diferentes nos dispositivos.
+      let pagina = 0
       while (valido()) {
-        const { data, error } = await cliente.from('progresso_usuario').select('tipo,item,valor,versao,operacao').eq('usuario_id', idUsuario).gt('versao', estado.cursor).order('versao').limit(500)
+        const { data, error } = await cliente.from('progresso_usuario').select('tipo,item,valor,versao,operacao').eq('usuario_id', idUsuario).order('versao').range(pagina, pagina + 499)
         if (!valido()) return
         if (error) throw error
         const documentos = (data ?? []) as Documento[]
@@ -59,6 +63,7 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
         if (documentos.length) estado.cursor = Math.max(estado.cursor, ...documentos.map(d => d.versao))
         salvar()
         if (documentos.length < 500) break
+        pagina += 500
       }
       semearLocais()
       salvar()

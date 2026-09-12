@@ -231,8 +231,8 @@ export function DadosLocais() {
       <header className="limite-leitura">
         <h1>Seu desempenho</h1>
         <p style={{ marginTop: '0.5rem' }} className="texto-2">
-          Contado a partir de todas as questões que você já respondeu neste navegador, não só da
-          última sessão.
+          Contado a partir de todas as questões que você já respondeu nesta conta, não só da
+          última sessão ou deste dispositivo.
         </p>
       </header>
 
@@ -273,7 +273,7 @@ export function DadosLocais() {
         <h2>Por tema</h2>
         {porTema.length === 0 ? (
           <p className="texto-2" style={{ marginTop: '0.5rem' }}>
-            Ainda não há questões respondidas neste navegador. Responda uma sessão e o desempenho
+            Ainda não há questões respondidas nesta conta. Responda uma sessão e o desempenho
             por tema aparece aqui.
           </p>
         ) : (
