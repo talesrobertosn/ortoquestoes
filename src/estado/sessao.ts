@@ -58,17 +58,17 @@ export function usarSessao() {
   )
 
   const responder = useCallback(
-    (id: string, escolhida: Letra, correta: boolean | null, segundos: number) => {
+    (id: string, escolhida: Letra, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute' = 'seguro') => {
       // Persistência acontece fora do updater do React. Updaters podem ser
       // reexecutados ou descartados em celulares, o que fazia respostas
       // ficarem apenas no estado visual da sessão.
       const salvo = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
       // O modo simulado também registra cada resposta imediatamente. A prova
       // pode esconder o gabarito, mas nunca deve esconder o salvamento.
-      if (salvo && !salvo.respostas[id]) registrarRespondida(id, correta)
+      if (salvo && !salvo.respostas[id]) registrarRespondida(id, correta, confianca)
       definirSessao((atual) => {
         if (!atual) return atual
-        const resposta: Resposta = { escolhida, correta, segundos }
+        const resposta: Resposta = { escolhida, correta, segundos, confianca }
         return { ...atual, respostas: { ...atual.respostas, [id]: resposta } }
       })
     },
@@ -133,13 +133,13 @@ export function usarSessao() {
  * questão seja respondida — dentro de uma sessão ou por link direto —, senão o
  * desempenho conta menos do que a pessoa realmente fez.
  */
-export function registrarResposta(id: string, correta: boolean | null) {
-  registrarRespondida(id, correta)
+export function registrarResposta(id: string, correta: boolean | null, confianca: 'seguro' | 'duvida' | 'chute' = 'seguro') {
+  registrarRespondida(id, correta, confianca)
 }
 
-function registrarRespondida(id: string, correta: boolean | null) {
+function registrarRespondida(id: string, correta: boolean | null, confianca: 'seguro' | 'duvida' | 'chute' = 'seguro') {
   const mapa = ler<Record<string, RegistroQuestao>>(CHAVE_RESPONDIDAS, {})
-  mapa[id] = proximoRegistro(mapa[id], correta)
+  mapa[id] = proximoRegistro(mapa[id], correta, Date.now(), confianca)
   gravar(CHAVE_RESPONDIDAS, mapa)
 }
 
@@ -186,3 +186,4 @@ export function usarFavoritos() {
   )
   return { favoritos, alternar }
 }
+
