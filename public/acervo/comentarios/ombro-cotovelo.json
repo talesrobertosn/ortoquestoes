@@ -851,6 +851,23 @@
   "geradoEm": "2026-09-08",
   "conferido": false
  },
+ "ombro-cotovelo-0086": {
+  "conceito": "A avaliação do manguito rotador deve relacionar posição do braço, direção da força e músculo predominante. O **teste do infraespinal** é iniciado com o braço junto ao tronco, cotovelo flexionado a 90 graus e antebraço em posição neutra; o paciente realiza rotação lateral contra resistência. Fraqueza ou dor sugerem comprometimento do manguito posterior, sobretudo infraespinal. O teste de Patte desloca o ombro para cerca de 90 graus de abdução no plano da escápula e testa rotação lateral nessa posição, aumentando a participação do redondo menor. O sinal de queda do braço avalia principalmente lesão extensa do componente superior do manguito durante a descida controlada da elevação. Já o abdominal press é um teste de rotação medial para o subescapular. O chamado **teste da cancela** parte da mesma configuração básica do teste do infraespinal, com cotovelo a 90 graus e braço próximo ao corpo, antes da manobra específica. A diferença de posição é uma forma prática de não confundir os testes do manguito posterior.",
+  "correta": "A alternativa B está correta. O teste da cancela inicia com o membro superior na mesma posição usada para testar o infraespinal: braço junto ao tronco, cotovelo flexionado aproximadamente a 90 graus e preparação para avaliar a rotação lateral. O detalhe cobrado é a posição inicial, e não a interpretação completa do teste. Essa configuração coloca o úmero em baixa abdução e permite observar a função dos rotadores externos sem usar a posição elevada do teste de Patte.",
+  "incorretas": {
+   "A": "O abdominal press começa com a palma da mão apoiada no abdome e o cotovelo dirigido anteriormente. É um teste de rotação medial voltado ao subescapular. Embora o cotovelo também esteja flexionado, a mão no abdome e a ação muscular são diferentes da posição inicial da cancela.",
+   "C": "No teste da queda do braço, o membro começa elevado, geralmente próximo de 90 graus de abdução, e o paciente tenta baixá-lo lentamente. Perda do controle sugere lesão extensa do manguito superior. Essa posição não corresponde ao braço junto ao corpo usado no início da cancela.",
+   "D": "O teste de Patte também avalia rotação lateral, porém começa com o ombro elevado e abduzido no plano escapular, com o cotovelo flexionado. Essa posição enfatiza infraespinal e redondo menor, mas não é a posição inicial descrita para o teste da cancela."
+  },
+  "referencias": [
+   "Comprehensive Examination of the Athlete's Shoulder. https://pmc.ncbi.nlm.nih.gov/articles/PMC6044121/",
+   "Clinical Examination of the Rotator Cuff. https://pmc.ncbi.nlm.nih.gov/articles/PMC3826176/",
+   "Tests for diagnosing rotator cuff disease. https://pmc.ncbi.nlm.nih.gov/articles/PMC4935057/"
+  ],
+  "alerta": "A denominação 'teste da cancela' não é uniforme na literatura internacional e pode variar entre escolas de exame físico. O comentário preserva a nomenclatura e o gabarito do acervo; a correlação deve ser conferida na referência didática original da prova.",
+  "conferido": false,
+  "geradoEm": "2026-09-13"
+ },
  "ombro-cotovelo-0087": {
   "conceito": "A SOLTURA DO COMPONENTE GLENOIDAL é a complicação mais frequente da artroplastia TOTAL anatômica do ombro e a principal causa de revisão a longo prazo — as séries mostram linhas de radiolucência ao redor do componente em porcentagem alta dos casos, ainda que nem toda radiolucência signifique soltura clínica. A explicação é biomecânica: o componente glenoidal é fixado num osso pequeno, de estoque limitado, e sofre o chamado EFEITO CAVALO-DE-BALANÇO (rocking horse) — cargas excêntricas repetidas que comprimem um lado da glenoide e tracionam o outro, afrouxando progressivamente a interface. Dois fatores agravam: a rotura do manguito (que descentra a cabeça e transforma toda a carga em excêntrica) e a retroversão glenoidal não corrigida, com o desgaste posterior da artrose primária (glenoide bicôncava de Walch B2). Daí decorrem as condutas modernas: corrigir a versão com fresagem excêntrica, enxerto ou componentes aumentados; preservar o manguito; e, quando ele é irreparável, escolher a prótese REVERSA — cujo componente glenoidal (a metaglena) é fixado com parafusos e trabalha em compressão, com o centro de rotação medializado justamente para reduzir esse torque.",
   "correta": "Soltura do componente glenoidal.",
@@ -1555,6 +1572,23 @@
   },
   "geradoEm": "2026-09-08",
   "conferido": false
+ },
+ "ombro-cotovelo-0174": {
+  "conceito": "A capsulite adesiva combina uma fase inflamatória inicial com fibrose e contratura progressiva da cápsula, principalmente no intervalo rotador, ligamento coracoumeral e recesso axilar. Histologicamente há proliferação de fibroblastos e diferenciação em miofibroblastos, com deposição de colágeno tipos I e III. As **metaloproteinases da matriz (MMPs)** degradam componentes da matriz extracelular; seus inibidores teciduais, os TIMPs, reduzem essa degradação. Na capsulite, a relação MMP/TIMP tende a diminuir, favorecendo acúmulo de matriz e fibrose. A MMP-2 e a MMP-9 são gelatinases: degradam colágeno desnaturado e colágeno tipo IV e participam de remodelação, angiogênese e inflamação. Outros trabalhos destacam redução de MMP-1 e MMP-2 e aumento de TIMP-1 e TIMP-2. Portanto, a literatura molecular é heterogênea; a ideia mais estável para a prova é o desequilíbrio entre síntese e degradação da matriz, e não a memorização isolada de dois números.",
+  "correta": "A alternativa C está correta segundo o gabarito: MMP-2 e MMP-9 são as duas gelatinases relacionadas à remodelação da matriz extracelular e aparecem na discussão molecular da capsulite adesiva. Elas participam da degradação de componentes da membrana basal e do colágeno desnaturado. Quando a atividade degradativa é insuficiente em relação à deposição de colágeno e à ação dos TIMPs, a cápsula torna-se espessada e retraída, produzindo perda global de movimento passivo, com rotação lateral particularmente limitada.",
+  "incorretas": {
+   "A": "A MMP-1 é uma colagenase que participa da degradação de colágenos fibrilares e foi encontrada reduzida em estudos de capsulite. Entretanto, a combinação MMP-1 e MMP-2 não corresponde ao par de gelatinases cobrado pelo gabarito. A alternativa é plausível porque ambas participam do remodelamento, mas reúne famílias enzimáticas diferentes.",
+   "B": "A MMP-7 é a matrilisina, com espectro amplo de substratos, mas não forma com a MMP-1 o par clássico de gelatinases. A fisiopatologia da capsulite envolve várias MMPs, citocinas e TIMPs; ainda assim, essa dupla não é a resposta específica solicitada.",
+   "D": "A MMP-9 é uma gelatinase e faz parte do par correto, porém a MMP-7 não é a outra gelatinase principal. A dupla bioquímica mais associada a essa função é MMP-2, também chamada gelatinase A, e MMP-9, gelatinase B."
+  },
+  "referencias": [
+   "Adhesive capsulitis of the shoulder: review of pathophysiology and current clinical treatments. https://pmc.ncbi.nlm.nih.gov/articles/PMC5384535/",
+   "Biomarkers associated with idiopathic frozen shoulder: a systematic review. https://pubmed.ncbi.nlm.nih.gov/31340682/",
+   "Adhesive Capsulitis. StatPearls. https://www.ncbi.nlm.nih.gov/books/NBK532955/"
+  ],
+  "alerta": "Revisões de capsulite adesiva descrevem com maior consistência redução de MMP-1 e MMP-2 e aumento de TIMPs; a dupla MMP-2/MMP-9 aparece pela função de gelatinases, mas não é apresentada de forma uniforme como o par específico da doença. O gabarito deve ser conferido na fonte original da questão.",
+  "conferido": false,
+  "geradoEm": "2026-09-13"
  },
  "ombro-cotovelo-0175": {
   "alerta": "O gabarito oficial é a letra B, mas a descrição clássica da via de Kaplan é o intervalo entre o extensor radial CURTO do carpo e o EXTENSOR COMUM DOS DEDOS — e nenhuma alternativa oferece o extensor comum dos dedos. A alternativa B nomeia o extensor ulnar do carpo, que é o parceiro do ancôneo na via de KOCHER, não na de Kaplan. Leia a explicação abaixo sabendo que o conjunto de alternativas não contempla a resposta anatomicamente correta.",
