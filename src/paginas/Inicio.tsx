@@ -173,6 +173,30 @@ export function Inicio() {
               <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>{textoDoDia.novas}</small></a>
             </div> : <p className="texto-2">Escolha uma sessão curta. Depois da primeira resposta, esta área passa a mostrar suas revisões, evolução e próximos passos.</p>}
           </section>
+          <section>
+            <h2>Por tema</h2>
+            <p className="meta" style={{ marginTop: '0.25rem' }}>
+              Um clique aqui já monta a sessão do tema inteiro.
+            </p>
+            <ul className="distribuicao" style={{ marginTop: '0.75rem' }}>
+              {indice.temas
+                .filter((tema) => (contagens.porTema[tema.slug] ?? 0) > 0)
+                .map((tema) => {
+                  const quantidade = contagens.porTema[tema.slug] ?? 0
+                  return (
+                    <li className="distribuicao__item" key={tema.slug}>
+                      <a className="distribuicao__link" href={href(`/treinar?temas=${tema.slug}`)}>
+                        <span>{tema.nome}</span>
+                        <span className="distribuicao__quantidade">{quantidade}</span>
+                        <span className="distribuicao__trilho">
+                          <span className="distribuicao__parte" style={{ width: `${(quantidade / maiorTema) * 100}%` }} />
+                        </span>
+                      </a>
+                    </li>
+                  )
+                })}
+            </ul>
+          </section>
           {temaFragil && <section className="cartao cartao__corpo convite-conta">
             <p className="meta">ONDE VOCÊ MAIS GANHA AO REVISAR</p>
             <h2>{temaFragil[0]} · {Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)}% de acerto</h2>
@@ -207,37 +231,6 @@ export function Inicio() {
             <h2>{resumoSemana.respondidas} questões em {resumoSemana.dias} {resumoSemana.dias === 1 ? 'dia ativo' : 'dias ativos'}</h2>
             <p>{Math.round((resumoSemana.acertos / resumoSemana.respondidas) * 100)}% de acerto nas sessões concluídas nos últimos sete dias. Continue com uma sessão curta para sustentar o ritmo.</p>
           </section>}
-
-          <section>
-            <h2>Por tema</h2>
-            <p className="meta" style={{ marginTop: '0.25rem' }}>
-              Um clique aqui já monta a sessão do tema inteiro.
-            </p>
-            <ul className="distribuicao" style={{ marginTop: '0.75rem' }}>
-              {indice.temas
-                .filter((tema) => (contagens.porTema[tema.slug] ?? 0) > 0)
-                .map((tema) => {
-                  const quantidade = contagens.porTema[tema.slug] ?? 0
-                  return (
-                    <li className="distribuicao__item" key={tema.slug}>
-                      <a
-                        className="distribuicao__link"
-                        href={href(`/treinar?temas=${tema.slug}`)}
-                      >
-                        <span>{tema.nome}</span>
-                        <span className="distribuicao__quantidade">{quantidade}</span>
-                        <span className="distribuicao__trilho">
-                          <span
-                            className="distribuicao__parte"
-                            style={{ width: `${(quantidade / maiorTema) * 100}%` }}
-                          />
-                        </span>
-                      </a>
-                    </li>
-                  )
-                })}
-            </ul>
-          </section>
 
           <section className="treino-rapido">
             <h2 className="treino-rapido__titulo">Treino rápido</h2>
