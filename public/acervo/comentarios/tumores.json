@@ -274,6 +274,31 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "tumores-0026": {
+  "conceito": "O sarcoma de Ewing é um tumor de **pequenas células redondas e azuis**, enquanto o osteossarcoma convencional apresenta células malignas produtoras de osteoide, frequentemente pleomórficas ou fusiformes. Ambos predominam nas duas primeiras décadas, com grande sobreposição etária.",
+  "correta": "**C.** A característica histológica inequívoca é o padrão de células **arredondadas**; o gabarito associa-o a crianças de maior idade.",
+  "incorretas": {
+   "A": "O padrão fusiforme não descreve o aspecto clássico do Ewing; células pequenas e redondas são o achado característico.",
+   "B": "Também erra a morfologia ao indicar células fusiformes.",
+   "D": "Acerta o padrão arredondado, mas diverge da faixa etária adotada pelo gabarito."
+  },
+  "alerta": "A parte etária é pouco discriminativa e pode ser contestada: Ewing e osteossarcoma têm pico na adolescência, e diferentes séries mostram medianas próximas. O item deveria cobrar principalmente a histologia de pequenas células redondas.",
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "WHO Classification of Tumours: Ewing sarcoma. https://tumourclassification.iarc.who.int/"
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "tumores-0027": {
   "conceito": "A biópsia é o passo em que mais se estraga o tratamento de um tumor ósseo — os trabalhos de Mankin mostraram erro de diagnóstico, de conduta ou complicação em algo entre 15 e 20% das biópsias feitas fora do centro que trataria o paciente, e prejuízo ao resultado final em cerca de 8%. Um dos princípios é o CONTROLE DA HEMOSTASIA, porque o HEMATOMA CONTAMINA: ele se difunde pelos planos, alcança compartimentos que o tumor não havia atingido e transforma o que seria uma ressecção ampla num campo alargado — às vezes inviabilizando a preservação do membro. Daí a técnica: janela cortical pequena, OVAL ou REDONDA (nunca retangular, cujos cantos concentram estresse e favorecem fratura patológica), e o orifício PREENCHIDO COM METILMETACRILATO ao final, que veda a saída de sangue do canal medular e ainda devolve alguma resistência mecânica. Os demais princípios do mesmo conjunto: incisão LONGITUDINAL, alinhada ao trajeto da futura ressecção; trajeto pelo menor número de compartimentos, jamais entre compartimentos ou por intervalo neurovascular; dreno, se usado, saindo EM LINHA com a incisão e próximo a ela, porque o trajeto do dreno também será ressecado; e a biópsia feita, de preferência, pela mesma equipe que fará o tratamento definitivo.",
   "correta": "Preenchido com metilmetacrilato.",
@@ -361,6 +386,30 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0035": {
+  "conceito": "O fibroma não ossificante é uma lesão fibrosa benigna típica de crianças e adolescentes. Na radiografia aparece como lesão **lítica, excêntrica, metafisária e corticamente baseada**, com margem esclerótica e aspecto lobulado, sem reação periosteal agressiva.",
+  "correta": "**D — fibroma não ossificante.** A imagem mostra lesão excêntrica na metáfise distal da tíbia, alongada e bem delimitada por halo esclerótico.",
+  "incorretas": {
+   "A": "O osteoblastoma costuma ser expansivo e predomina nos elementos posteriores da coluna ou em ossos longos, sem esse padrão corticamente baseado típico.",
+   "B": "O condroblastoma é epifisário e ocorre junto à articulação em pacientes jovens.",
+   "C": "O osteoma osteoide apresenta um pequeno nidus, geralmente menor que 1,5–2 cm, com esclerose reativa desproporcional."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Murphey MD et al. From the archives of AFIP: nonossifying fibroma. Radiographics. Revisões de lesões fibrosas benignas."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "tumores-0036": {
   "conceito": "A regra geral é biopsiar antes de tratar. As exceções são poucas e se justificam por um critério único: quando a IMAGEM É PATOGNOMÔNICA, a biópsia não acrescenta informação e só acrescenta risco. OSTEOMA OSTEOIDE: nicho central menor que 1,5 cm, radiolucente, com esclerose reativa exuberante ao redor, dor NOTURNA que cede dramaticamente a anti-inflamatório — a tomografia mostra o nicho e fecha o diagnóstico; o tratamento (ablação por radiofrequência ou ressecção do nicho) é feito sem biópsia prévia, e mesmo o material obtido na ablação costuma ser insuficiente para o patologista. OSTEOCONDROMA: a imagem é definidora porque a lesão tem CONTINUIDADE DA CORTICAL E DA MEDULAR com o osso hospedeiro — nenhuma outra lesão faz isso; a ressecção, quando indicada por sintoma, dispensa biópsia prévia. A mesma lógica vale para outras lesões clássicas de \"não toque\" (fibroma não ossificante, ilhota óssea, defeito fibroso cortical, infarto ósseo). Já o TUMOR DE CÉLULAS GIGANTES e o CONDROBLASTOMA exigem biópsia: o primeiro porque partilha imagem com o cisto ósseo aneurismático, o tumor marrom e o osteossarcoma telangiectásico; o segundo porque a lesão epifisária da criança tem diferencial com abscesso de Brodie e com osteomielite — e tratar tumor como infecção, ou o contrário, é erro caro.",
@@ -615,6 +664,30 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "tumores-0059": {
+  "conceito": "Na classificação de Garg, Mehta e Dormans para vertebra plana por histiocitose de células de Langerhans, o algarismo expressa a magnitude do colapso e a letra, sua simetria. O grau I inclui perda de até 50% da altura; **A** indica colapso simétrico.",
+  "correta": "**A — grau IA.** Colapso simétrico de exatamente 50% permanece no grau I e recebe o sufixo A.",
+  "incorretas": {
+   "B": "IB corresponderia ao grupo de menor colapso com padrão assimétrico.",
+   "C": "IIA exige colapso superior a 50%, embora mantenha a simetria.",
+   "D": "IIB combina colapso superior a 50% e assimetria, portanto erra os dois componentes."
+  },
+  "referencias": [
+   "Garg S, Mehta S, Dormans JP. Langerhans cell histiocytosis of the spine in children. J Bone Joint Surg Am. 2004;86:1740-1750.",
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "tumores-0060": {
   "conceito": "O rabdomiossarcoma é o sarcoma de partes moles mais comum da infância, e sua distribuição por sítio segue uma ordem que vale decorar porque determina prognóstico: CABEÇA E PESCOÇO em primeiro lugar, com cerca de 35 a 40% dos casos (incluindo órbita, região parameníngea e sítios não parameníngeos), seguido do TRATO GENITURINÁRIO (25%, incluindo bexiga, próstata, vagina e paratesticular) e depois das EXTREMIDADES (cerca de 20%). O sítio importa porque define grupos de risco: órbita e trato geniturinário não vesical e não prostático são sítios FAVORÁVEIS, com sobrevida elevada; sítios parameníngeos (nasofaringe, seios paranasais, ouvido médio, fossa infratemporal) são desfavoráveis pelo risco de extensão intracraniana; e as extremidades também são desfavoráveis, porque concentram o subtipo ALVEOLAR, mais agressivo, com as translocações PAX3-FOXO1 ou PAX7-FOXO1 e com maior frequência de metástase linfonodal — motivo pelo qual a avaliação do linfonodo regional é rotina nessa localização.",
   "correta": "Cabeça e pescoço.",
@@ -670,6 +743,30 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "tumores-0065": {
+  "conceito": "O tumor de células gigantes ocorre tipicamente após o fechamento da fise, entre 20 e 40 anos, e ocupa a região **epifisometafisária**, chegando ao osso subcondral. A histologia mostra células gigantes multinucleadas distribuídas de modo relativamente uniforme entre células mononucleares.",
+  "correta": "**D — tumor de células gigantes.** A idade, a localização ao redor do joelho, a lesão epifisária e o padrão histológico sustentam o diagnóstico.",
+  "incorretas": {
+   "A": "O osteossarcoma costuma ser metafisário, agressivo e produtor de osteoide, com reação periosteal e matriz mineralizada.",
+   "B": "O condroblastoma também é epifisário, mas predomina em adolescentes com fise aberta e apresenta calcificação condroide e células em pavimentação.",
+   "C": "Condrossarcoma é mais comum em pacientes mais velhos e mostra matriz condroide em arcos e anéis."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Campanacci M. Bone and Soft Tissue Tumors. 2nd ed. Springer; 1999."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "tumores-0066": {
   "conceito": "O grande imitador do tumor de células gigantes é o TUMOR MARROM DO HIPERPARATIREOIDISMO, e a distinção é impossível pela histologia — as duas lesões mostram células gigantes multinucleadas em estroma de células mononucleares, e o patologista, olhando só a lâmina, não consegue separá-las. O que separa é o LABORATÓRIO, e a dosagem decisiva é o PTH (paratormônio), acompanhado de cálcio, fósforo e fosfatase alcalina: no hiperparatireoidismo há PTH e cálcio elevados com fósforo baixo. O erro que essa questão previne é grave e real — operar um tumor marrom como se fosse tumor de células gigantes significa deixar a doença de base intocada, e as lesões voltam ou aparecem em outros ossos, enquanto o tratamento correto é a paratireoidectomia, após a qual os tumores marrons regridem sozinhos. Regra prática: TODA lesão de células gigantes, sobretudo se múltipla, se em paciente com doença renal crônica, ou se acompanhada de reabsorção subperiosteal nas falanges e de crânio em sal e pimenta, exige dosagem de cálcio e PTH ANTES da biópsia.",
   "correta": "O PTH.",
@@ -680,6 +777,54 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0067": {
+  "conceito": "No estadiamento de Enneking para tumores ósseos benignos, **B1** é latente, B2 é ativo e **B3 é agressivo**. O estágio B3 apresenta crescimento rápido, adelgaçamento ou ruptura cortical e possível extensão para partes moles.",
+  "correta": "**C — B3.** A lesão extensa, epifisometafisária, com grande expansão e comprometimento cortical é compatível com tumor benigno localmente agressivo.",
+  "incorretas": {
+   "A": "B1 descreve lesão latente, pequena e contida, geralmente incidental.",
+   "B": "B2 é ativa e cresce, mas permanece mais bem contida do que a lesão agressiva mostrada.",
+   "D": "A classificação de Enneking dos tumores benignos termina no estágio 3; B4 não é uma categoria válida."
+  },
+  "referencias": [
+   "Enneking WF. A system of staging musculoskeletal neoplasms. Clin Orthop Relat Res. 1986;(204):9-24.",
+   "Campanacci M. Bone and Soft Tissue Tumors. 2nd ed. Springer; 1999."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "tumores-0068": {
+  "conceito": "No tumor de células gigantes ressecável ao redor do joelho, busca-se preservar a articulação com **curetagem ampliada**, adjuvante local e preenchimento da cavidade. O cimento permite suporte imediato e facilita a detecção radiográfica de recidiva junto à interface.",
+  "correta": "**D — curetagem e cimentação.** É a estratégia indicada para a lesão mostrada, localmente agressiva, mas ainda passível de tratamento intralesional com preservação articular.",
+  "incorretas": {
+   "A": "Amputação é excepcional e reservada a doença incontrolável, infecção grave ou impossibilidade de reconstrução.",
+   "B": "Ressecção ampla aumenta morbidade e costuma ser reservada a destruição articular, recidiva extensa ou impossibilidade de curetagem segura.",
+   "C": "Enxertia é possível em lesões selecionadas, mas a cimentação é preferida no cenário agressivo exibido por fornecer adjuvância térmica, suporte e vigilância da recidiva."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Campanacci M et al. Giant-cell tumor of bone. J Bone Joint Surg Am. 1987;69:106-114."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "tumores-0069": {
   "conceito": "VÉRTEBRA PLANA é o colapso quase completo e SIMÉTRICO do corpo vertebral, com PRESERVAÇÃO DOS DISCOS adjacentes e sem massa de partes moles significativa. Na CRIANÇA, a etiologia mais frequente é a HISTIOCITOSE DE CÉLULAS DE LANGERHANS — a vértebra plana de Calvé —, e o achado tem duas particularidades que orientam a conduta. Primeira: apesar do aspecto dramático, o déficit neurológico é raro. Segunda, e mais notável: a altura do corpo vertebral se RECONSTITUI espontaneamente ao longo do crescimento, em graus variáveis, o que faz da observação com órtese a conduta na maioria dos casos, reservando cirurgia para instabilidade ou compressão neurológica. O diferencial inclui infecção (mas a osteomielite e a espondilodiscite ATACAM O DISCO, e disco preservado é forte argumento contra), linfoma e leucemia, cisto ósseo aneurismático, tumor de Ewing e, no adulto, mieloma e metástase. Como o diferencial inclui doenças malignas, a biópsia é indicada quando o quadro não é típico.",
@@ -702,6 +847,30 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0071": {
+  "conceito": "O condroblastoma é tumor benigno raro da **epífise** de adolescentes e adultos jovens. A imagem costuma mostrar lesão lítica geográfica com halo esclerótico; a histologia revela condroblastos e células gigantes, podendo haver calcificação fina em “chicken wire”.",
+  "correta": "**A — condroblastoma.** A localização epifisária no úmero proximal, a margem bem definida e o padrão histológico são característicos.",
+  "incorretas": {
+   "B": "O cisto ósseo aneurismático é expansivo e multiloculado, com espaços sanguíneos; pode ser secundário, mas não explica sozinho o padrão celular mostrado.",
+   "C": "O tumor de células gigantes também é epifisário, porém predomina após maturidade esquelética e geralmente não apresenta halo esclerótico marcado.",
+   "D": "O osteossarcoma telangiectásico é agressivo, destrutivo e metafisário, com atipia maligna e produção de osteoide."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Turcotte RE et al. Chondroblastoma. Hum Pathol. 1993;24:944-949."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "tumores-0072": {
   "conceito": "Metástase distal ao cotovelo ou ao joelho — a chamada metástase ACRAL — é rara (menos de 0,1% do total) e tem associação tão forte que funciona como regra: em mais da metade dos casos o primário é o CARCINOMA DE PULMÃO. A explicação é hemodinâmica. A maioria das metástases ósseas viaja pelo PLEXO VENOSO VERTEBRAL DE BATSON, um sistema sem válvulas que comunica pelve, abdome e tórax com a coluna, e por isso se depositam no esqueleto AXIAL e na porção proximal dos membros, onde há medula vermelha ricamente vascularizada. Para alcançar o rádio, a mão ou o pé é preciso disseminação ARTERIAL — e o pulmão é o único órgão que lança êmbolos tumorais diretamente na circulação sistêmica, sem passar por filtro capilar. A consequência clínica é prática: lesão lítica no antebraço, na mão ou no pé de um adulto, muitas vezes confundida com infecção ou artrite, obriga a tomografia de tórax, porque não raro a metástase acral é a PRIMEIRA manifestação de um câncer de pulmão ainda não diagnosticado.",
@@ -1022,6 +1191,31 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "tumores-0101": {
+  "conceito": "Metástases ósseas concentram-se no esqueleto axial, rico em medula vermelha. O câncer de mama tem predileção pela coluna, e a região **lombar** é uma localização frequente pela disseminação hematogênica e pelo plexo venoso vertebral.",
+  "correta": "**D.** Metástases de **mama** acometem frequentemente a coluna lombar.",
+  "incorretas": {
+   "A": "O pulmão pode metastatizar para qualquer osso, mas o sacro não é sua localização preferencial característica.",
+   "B": "Tumores de tireoide podem produzir metástases líticas e hipervasculares no crânio, porém a afirmação de predileção exclusiva é menos consistente que a associação mama-coluna.",
+   "C": "Próstata tem forte predileção pelo esqueleto axial e produz lesões osteoblásticas; “tronco”, contudo, é uma localização vaga e não a associação específica buscada."
+  },
+  "alerta": "As alternativas B e C descrevem tendências verdadeiras em termos amplos. A questão usa associações excessivamente absolutas; D é a melhor resposta, mas não torna as demais localizações impossíveis.",
+  "referencias": [
+   "Coleman RE. Clinical features of metastatic bone disease and risk of skeletal morbidity. Clin Cancer Res. 2006;12:6243s-6249s.",
+   "NCCN Clinical Practice Guidelines in Oncology: Breast Cancer. https://www.nccn.org/guidelines/"
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "tumores-0102": {
   "conceito": "A doença de Paget tem uma distribuição esquelética muito característica, que segue os ossos de maior atividade de remodelamento e maior carga: PELVE (o osso mais acometido, presente em cerca de 70% dos casos), COLUNA lombar, FÊMUR, CRÂNIO e tíbia. Ela é POLIOSTÓTICA na maioria dos pacientes, mas — detalhe importante — não migra: os ossos acometidos são definidos no início da doença e novos ossos não passam a ser acometidos com o tempo. O perfil epidemiológico completa o quadro: descendentes CAUCASIANOS do norte da Europa (rara em latinos, orientais e africanos), predomínio discretamente MASCULINO, e idade ACIMA DE 55 anos, com prevalência crescente a cada década. As implicações ortopédicas de cada sítio: no fêmur e na tíbia, arqueamento (tíbia em sabre, coxa vara) e fraturas por insuficiência transversais na convexidade, as fraturas em giz; no crânio, aumento do perímetro cefálico, surdez por compressão do VIII par e a osteoporose circunscrita da fase lítica; na coluna, estenose de canal e vértebra em moldura; e na pelve, artrose secundária do quadril, que costuma ser o motivo da consulta ortopédica.",
   "correta": "A pelve, o fêmur e o crânio.",
@@ -1209,6 +1403,30 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "tumores-0119": {
+  "conceito": "A imagem do calcâneo mostra o padrão de cisto ósseo simples em sua localização clássica, na região anteroinferior. Embora essas lesões predominem na metáfise do úmero e fêmur em crianças, no adulto a distribuição muda e **calcâneo e ílio** tornam-se locais característicos.",
+  "correta": "**A — ílio.** Em adultos, além do calcâneo, o ílio é uma localização típica dessa lesão cística.",
+  "incorretas": {
+   "B": "O fêmur é frequente na população pediátrica, sobretudo proximal, mas não é o par de localização adulta cobrado.",
+   "C": "O úmero proximal é o sítio clássico na criança e no adolescente.",
+   "D": "A tíbia pode ser acometida, porém é menos característica do padrão adulto descrito."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Campanacci M. Bone and Soft Tissue Tumors. 2nd ed. Springer; 1999. Simple bone cyst."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "tumores-0120": {
   "conceito": "O padrão em MOSAICO é a assinatura histológica da doença de Paget: as LINHAS DE CIMENTO irregulares e desordenadas, resultado de ciclos sucessivos e descoordenados de reabsorção e formação, desenham um mosaico de ladrilhos. Ao lado dele veem-se osteoclastos gigantes e hipermultinucleados (com dezenas de núcleos, muito além do normal) e medula substituída por tecido fibrovascular hipervascular — que explica o calor local, o aumento do débito cardíaco nas formas extensas e o sangramento intenso durante a artroplastia de um quadril pagético. Para não trocar com os vizinhos, vale guardar a lista: PALIÇADA nuclear com corpos de Verocay é do SCHWANNOMA; RODA DE CARROÇA é o núcleo do PLASMÓCITO, do mieloma; TELA DE GALINHEIRO é a calcificação pericelular do CONDROBLASTOMA; LETRAS CHINESAS são as trabéculas da DISPLASIA FIBROSA; e osteoide produzido diretamente por células malignas é o critério que define qualquer OSTEOSSARCOMA.",
   "correta": "Mosaico.",
@@ -1263,6 +1481,30 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0125": {
+  "conceito": "O cisto ósseo aneurismático costuma ser uma lesão **excêntrica, expansiva e insuflativa**, com adelgaçamento cortical. No sistema de Enneking para tumores benignos, B2 indica lesão ativa, em crescimento, mas ainda contida por barreiras naturais.",
+  "correta": "**D — B2 e cisto ósseo aneurismático.** A expansão excêntrica da metáfise proximal da fíbula e o remodelamento cortical favorecem cisto aneurismático ativo.",
+  "incorretas": {
+   "A": "Cisto ósseo simples é tipicamente central e metafisário, não excêntrico e insuflativo como na imagem.",
+   "B": "Acerta o estágio ativo, mas erra o diagnóstico ao indicar cisto simples.",
+   "C": "Acerta o diagnóstico, porém B1 descreve lesão latente, sem o crescimento expansivo observado."
+  },
+  "referencias": [
+   "Enneking WF. A system of staging musculoskeletal neoplasms. Clin Orthop Relat Res. 1986;(204):9-24.",
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "tumores-0126": {
   "conceito": "A estenose de canal lombar na DOENÇA DE PAGET tem uma peculiaridade que a distingue de todas as outras: ela pode responder ao TRATAMENTO CLÍNICO. O mecanismo é duplo. Primeiro, o osso pagético é hipervascular, e parte da compressão neurológica decorre não da estenose mecânica em si, mas de um FENÔMENO DE ROUBO ARTERIAL — o osso hiperemiado desvia sangue da medula e das raízes, produzindo isquemia neural; reduzir a atividade da doença reverte esse roubo. Segundo, controlar o remodelamento interrompe a expansão progressiva do osso. A CALCITONINA foi historicamente a droga usada, com relatos de melhora neurológica e de dor; hoje os BISFOSFONATOS (sobretudo o ácido zoledrônico) são o tratamento de escolha, mais potentes e com efeito mais duradouro. A consequência prática é importante: diante de estenose lombar em paciente com Paget e sem déficit progressivo, vale tentar o tratamento clínico antes da descompressão — que, além de tudo, é uma cirurgia de sangramento difícil no osso pagético. Déficit progressivo ou síndrome da cauda equina, esses sim, seguem sendo cirúrgicos.",
@@ -1340,6 +1582,31 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0133": {
+  "conceito": "O **sinal do alvo** em T2 representa centro de baixo sinal e periferia hiperintensa, relacionado a tecido fibroso central e componente mixoide periférico. É classicamente associado aos tumores de bainha nervosa, sobretudo ao **neurofibroma**.",
+  "correta": "O gabarito indica **C — schwannoma**, tumor de bainha nervosa que também pode apresentar aparência em alvo, embora essa não seja sua associação mais clássica.",
+  "incorretas": {
+   "A": "Osteossarcoma é tumor ósseo produtor de osteoide e não tem o sinal do alvo como característica típica na ressonância.",
+   "B": "Condrossarcoma costuma mostrar lobulações e septos com realce, não o alvo neurogênico típico.",
+   "D": "Neurofibroma é, na verdade, a associação mais clássica do sinal do alvo em grande parte da literatura radiológica."
+  },
+  "alerta": "**Possível divergência do gabarito.** O sinal do alvo é descrito com maior especificidade para neurofibroma, embora possa ocorrer em schwannoma e outros tumores neurogênicos. A alternativa D merece revisão médica e conferência no material original.",
+  "referencias": [
+   "Murphey MD et al. From the archives of the AFIP: imaging of musculoskeletal neurogenic tumors. Radiographics. 1999;19:1253-1280.",
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "tumores-0134": {
   "conceito": "O osteossarcoma EXTRAÓSSEO (extraesquelético) é uma variante rara — menos de 5% dos osteossarcomas e cerca de 1% dos sarcomas de partes moles — em que o tumor produz osteoide SEM QUALQUER CONEXÃO com o osso ou o periósteo. Ele inverte o perfil do osteossarcoma clássico em quase tudo. IDADE: acomete adultos ACIMA DOS 40 anos, com pico entre a quinta e a sétima décadas, e não adolescentes. SÍTIO: partes moles profundas da coxa, seguidas de membro superior e retroperitônio. ANTECEDENTE: em cerca de 10% dos casos há radioterapia prévia. E PROGNÓSTICO: é PIOR que o do osteossarcoma intraósseo — sobrevida em cinco anos em torno de 25 a 50%, com recidiva local e metástase pulmonar frequentes. As razões desse prognóstico ruim são conhecidas: a resposta à quimioterapia é bem menor que a do osteossarcoma ósseo (ele se comporta mais como um sarcoma de partes moles de alto grau do que como um osteossarcoma), o diagnóstico costuma ser tardio porque a massa é indolor, e a margem cirúrgica é mais difícil em partes moles. O grande diferencial é a MIOSITE OSSIFICANTE, e ele se faz pelo padrão de maturação: a miosite ossificante ossifica de FORA PARA DENTRO (zoneamento centrípeto, com periferia madura), enquanto o osteossarcoma extraósseo é mais denso no CENTRO.",
@@ -1451,6 +1718,30 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "tumores-0144": {
+  "conceito": "Dor óssea em adulto mais velho, anemia, hipercalcemia e lesões osteolíticas compõem o quadro clássico do **mieloma múltiplo**. Essas manifestações integram os critérios CRAB: hipercalcemia, insuficiência renal, anemia e lesão óssea.",
+  "correta": "**D — mieloma múltiplo.** A combinação sistêmica e a alteração lítica do fêmur proximal tornam esse diagnóstico o mais provável.",
+  "incorretas": {
+   "A": "Carcinoma renal pode causar metástase lítica e hipercalcemia, mas não explica tão diretamente o conjunto anemia mais doença óssea multifocal sem massa renal conhecida.",
+   "B": "Doença de Gorham causa osteólise progressiva rara, sem a síndrome hematológica típica.",
+   "C": "Osteoporose transitória do quadril produz edema medular e dor autolimitada, não anemia, hipercalcemia nem lesões líticas."
+  },
+  "referencias": [
+   "Rajkumar SV. Multiple myeloma: 2022 update on diagnosis, risk-stratification, and management. Am J Hematol. 2022;97:1086-1107.",
+   "International Myeloma Working Group diagnostic criteria. https://www.myeloma.org/international-myeloma-working-group-imwg-criteria-diagnosis-multiple-myeloma"
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "tumores-0145": {
   "conceito": "O PLASMOCITOMA SOLITÁRIO é uma lesão única de plasmócitos monoclonais, sem os critérios sistêmicos do mieloma — sem lesões ósseas adicionais, sem anemia, sem hipercalcemia, sem insuficiência renal e com infiltração plasmocitária na medula abaixo de 10%. Ele é mais comum em homens, cerca de uma década mais jovens que os pacientes com mieloma, e sua sede preferencial é a COLUNA VERTEBRAL. O tratamento é a RADIOTERAPIA, à qual responde muito bem (é um tumor altamente radiossensível), com cirurgia reservada à instabilidade, ao déficit neurológico ou à fratura. O ponto crítico é o prognóstico: a maioria dos pacientes PROGRIDE PARA MIELOMA MÚLTIPLO — a série que a questão segue aponta cerca de 55%, e outras fontes citam de 50 a 75% em dez anos, com mediana de progressão em torno de 2 a 5 anos. Por isso o seguimento é obrigatório e prolongado, com eletroforese de proteínas, imunofixação e cadeias leves livres seriadas: a persistência da proteína monoclonal após a radioterapia é o principal preditor de progressão.",
   "correta": "Cerca de 55%.",
@@ -1461,6 +1752,54 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0146": {
+  "conceito": "O osteocondroma mostra continuidade da **cortical e da medular** com o osso de origem e cresce afastando-se da articulação. Em adolescente assintomático, sem sinais de transformação ou comprometimento neurovascular, a conduta habitual é observação.",
+  "correta": "**B — osteocondroma e acompanhamento ortopédico.** A imagem e a ausência de dor ou limitação sustentam manejo expectante com orientação sobre sinais de mudança.",
+  "incorretas": {
+   "A": "Condrossarcoma exigiria sinais como dor nova, crescimento após maturidade, destruição cortical ou capa cartilaginosa espessa; eles não são descritos.",
+   "C": "Endoprótese do fêmur proximal seria tratamento desproporcional para uma exostose benigna assintomática.",
+   "D": "Ressecção é indicada se houver dor, compressão, deformidade, limitação ou suspeita de transformação, não apenas pela presença da lesão."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "AAOS OrthoInfo. Osteochondroma. https://orthoinfo.aaos.org/en/diseases--conditions/osteochondroma/"
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "tumores-0147": {
+  "conceito": "O **sinal do fragmento caído** ocorre quando um fragmento cortical se desprende após fratura e, dentro de uma cavidade preenchida por líquido, cai para a porção dependente. É considerado sinal altamente característico do cisto ósseo simples fraturado.",
+  "correta": "**D.** A imagem mostra o sinal do fragmento caído, considerado **patognomônico do cisto ósseo simples fraturado**.",
+  "incorretas": {
+   "A": "Identifica corretamente a lesão, mas reduz indevidamente a especificidade do sinal clássico.",
+   "B": "Cisto ósseo aneurismático pode fraturar, porém não é a associação patognomônica do fragmento livre que cai na cavidade.",
+   "C": "Também atribui o sinal ao cisto aneurismático, diagnóstico incorreto."
+  },
+  "referencias": [
+   "Reynolds J. The fallen fragment sign in unicameral bone cysts. Radiology. 1969;92:949-953.",
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "tumores-0148": {
   "conceito": "Os subtipos de osteossarcoma se organizam por GRAU, e essa é a informação que decide tratamento e prognóstico. BAIXO GRAU: o PAROSTEAL (de superfície, na face posterior da metáfise distal do fêmur, sobrevida acima de 90%, tratado só com ressecção ampla) e o intramedular de baixo grau. GRAU INTERMEDIÁRIO: o PERIOSTEAL — de superfície, DIAFISÁRIO, com predileção pela tíbia, predominantemente condroblástico, com espículas perpendiculares em raios de sol; ocupa uma posição biológica entre o parosteal e os de alto grau, e por isso costuma receber quimioterapia, embora o benefício seja debatido. ALTO GRAU: o convencional intramedular (o mais comum de todos), o telangiectásico, o de pequenas células, o de alto grau de superfície e os secundários (Paget, radiação), estes com o pior prognóstico. Guardar essa hierarquia resolve várias questões, porque ela determina se o paciente receberá quimioterapia neoadjuvante e adjuvante ou apenas cirurgia.",
@@ -1517,6 +1856,31 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "tumores-0153": {
+  "conceito": "Diferenciar encondroma de tumor cartilaginoso atípico/condrossarcoma grau 1 exige integrar dor, tamanho, localização e sinais de agressividade. Lesão longa, com **realce**, extensão medular ampla e possível scalloping endosteal favorece baixo grau; alto grau mostraria destruição cortical e massa de partes moles mais agressiva.",
+  "correta": "**C — condrossarcoma de baixo grau.** O tamanho de 7,7 cm e o padrão de realce tornam essa hipótese mais provável do que encondroma, sem características de alto grau.",
+  "incorretas": {
+   "A": "Encondroma costuma ser menor e incidental; o tamanho e o comportamento na ressonância aumentam a suspeita de lesão cartilaginosa de baixo grau.",
+   "B": "Condroblastoma é epifisário e predomina em adolescentes, não corresponde à lesão medular extensa mostrada.",
+   "D": "Condrossarcoma de alto grau costuma causar dor e alterações agressivas, como ruptura cortical e massa extraóssea, ausentes no enunciado."
+  },
+  "alerta": "Imagem isolada não estabelece o grau histológico. A terminologia atual usa “tumor cartilaginoso atípico” para lesões grau 1 apendiculares; decisão clínica exige correlação radiológica, sintomas e avaliação em centro especializado.",
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Douis H, Saifuddin A. The imaging of cartilaginous bone tumours. Skeletal Radiol. 2013;42:611-626."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "tumores-0154": {
   "conceito": "O padrão histológico da doença de Paget é o MOSAICO: as LINHAS DE CIMENTO irregulares e desordenadas, resultado de ciclos sucessivos e descoordenados de reabsorção e formação, desenham um mosaico de ladrilhos. Ao lado dele, osteoclastos gigantes e hipermultinucleados (com dezenas de núcleos) e medula substituída por tecido fibrovascular hipervascular — o que explica o calor local, o aumento do débito cardíaco nas formas extensas e o sangramento intenso de uma artroplastia em quadril pagético. Para fixar a família inteira de padrões com nome próprio: TELA DE GALINHEIRO é a calcificação pericelular do CONDROBLASTOMA; GRÂNULOS DE BIRBECK, em raquete de tênis, são a estrutura ultraestrutural da CÉLULA DE LANGERHANS; RODA DE CARROÇA é o núcleo do PLASMÓCITO, do mieloma; PALIÇADA com corpos de Verocay é do SCHWANNOMA; LETRAS CHINESAS são as trabéculas da DISPLASIA FIBROSA; e FAVO DE MEL é descrição RADIOGRÁFICA (hemangioma, cisto aneurismático), não histológica.",
   "correta": "Mosaico.",
@@ -1527,6 +1891,30 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0155": {
+  "conceito": "Os **grânulos de Birbeck**, organelas citoplasmáticas em forma de raquete vistas à microscopia eletrônica, são característicos das células de Langerhans. Na coluna pediátrica, a doença pode causar colapso do corpo vertebral e vertebra plana.",
+  "correta": "**D — histiocitose de células de Langerhans.** Birbeck confirma a linhagem de Langerhans e a radiografia mostra o padrão vertebral compatível.",
+  "incorretas": {
+   "A": "Granulomatose com poliangiite é vasculite necrosante e não apresenta grânulos de Birbeck.",
+   "B": "Tuberculose vertebral tende a comprometer platôs e disco, com abscesso paravertebral; Birbeck não faz parte de sua histologia.",
+   "C": "Osteomielite pode causar febre e destruição vertebral, mas não produz células de Langerhans com grânulos de Birbeck."
+  },
+  "referencias": [
+   "Allen CE, Merad M, McClain KL. Langerhans-cell histiocytosis. N Engl J Med. 2018;379:856-868.",
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "tumores-0156": {
   "conceito": "Lesão na FALANGE DISTAL — território acral, distal ao cotovelo — que se revela metastática aponta para o CARCINOMA DE PULMÃO em mais da metade dos casos. A razão é a rota: a maioria das metástases ósseas viaja pelo plexo venoso vertebral de Batson e se deposita no esqueleto axial e proximal, onde há medula vermelha; alcançar a falange exige disseminação ARTERIAL, e o pulmão é o único órgão que lança êmbolos tumorais direto na circulação sistêmica, sem filtro capilar. O quadro clínico é caracteristicamente enganoso: dedo edemaciado, quente, doloroso, com eritema — tratado por semanas como panarício, osteomielite ou artrite séptica, às vezes até drenado, antes que a radiografia mostre a destruição óssea. Duas condutas se impõem: TOMOGRAFIA DE TÓRAX, porque a metástase acral costuma ser a primeira manifestação de um câncer de pulmão desconhecido; e biópsia, se o primário não aparecer. O prognóstico é reservado — a sobrevida mediana costuma ser de poucos meses —, e por isso o tratamento local visa função e controle da dor, frequentemente com amputação do dedo, e não ressecções extensas.",
@@ -1583,6 +1971,30 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "tumores-0161": {
+  "conceito": "O diagnóstico histológico do osteossarcoma exige **osteoide produzido diretamente por células malignas**. Na lâmina, células pleomórficas e hipercromáticas estão entremeadas por matriz eosinofílica irregular, o osteoide tumoral.",
+  "correta": "**B — osteossarcoma.** A produção de osteoide por células neoplásicas malignas é o achado definidor.",
+  "incorretas": {
+   "A": "Condrossarcoma produz matriz cartilaginosa lobulada, com condrócitos atípicos em lacunas, e não osteoide maligno.",
+   "C": "Ewing é tumor de pequenas células redondas, sem produção de osteoide.",
+   "D": "Adamantinoma apresenta padrão epitelial em ninhos dentro de estroma fibroso e predomina na tíbia."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Fletcher CDM et al. Diagnostic Histopathology of Tumors. 5th ed. Elsevier; 2021."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "tumores-0162": {
   "conceito": "É preciso ler com cuidado as duas palavras que a questão embute. PRIMÁRIO significa nascido no próprio osso — o que exclui as metástases, que são de longe as lesões malignas mais comuns de qualquer sítio ósseo, sacro incluído. E o SACRO tem um tumor primário maligno próprio: o CORDOMA, derivado de restos da NOTOCORDA, que ocupa a LINHA MÉDIA e concentra cerca de metade dos casos na região sacrococcígea (os demais na base do crânio e na coluna móvel). Perfil: adulto de meia-idade e idoso, quinta à sétima décadas, com predomínio masculino, crescimento lento e dor lombar baixa inespecífica por meses ou anos antes do diagnóstico. Histologia com células FISALÍFERAS em matriz mixoide, positivas para braquiúria, citoqueratina e S100. Tratamento: ressecção EM BLOCO com margem ampla, cujo custo neurológico depende do nível (a preservação bilateral de S3 costuma garantir continência), com radioterapia por partículas quando a margem é comprometida ou o tumor é irressecável; a quimioterapia convencional não funciona. Para completar o mapa do sacro: o tumor BENIGNO mais comum ali é o TUMOR DE CÉLULAS GIGANTES.",
   "correta": "É o tumor maligno primário mais comum do sacro.",
@@ -1593,6 +2005,31 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0163": {
+  "conceito": "O **sinal do alvo** na ressonância é formado por centro de baixo sinal e periferia hiperintensa em T2, refletindo componente fibroso central e tecido mixoide periférico. Ele sugere tumor benigno da bainha do nervo.",
+  "correta": "**A — sinal do alvo, associado pelo gabarito ao schwannoma.** A lesão oval mostra o padrão concêntrico típico.",
+  "incorretas": {
+   "B": "O split-fat sign é uma borda de gordura envolvendo uma massa intermuscular em cortes longitudinais, e não a arquitetura concêntrica observada.",
+   "C": "Lipoma acompanha o sinal da gordura em todas as sequências e não apresenta alvo neurogênico.",
+   "D": "Além de identificar incorretamente o sinal, associa-o a lipoma."
+  },
+  "alerta": "O sinal do alvo é classicamente mais associado ao **neurofibroma**, embora possa ocorrer em schwannoma. A imagem favorece tumor de bainha nervosa, mas o subtipo não deve ser definido isoladamente por esse sinal.",
+  "referencias": [
+   "Murphey MD et al. Imaging of musculoskeletal neurogenic tumors. Radiographics. 1999;19:1253-1280.",
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "tumores-0164": {
   "conceito": "A condromatose sinovial é a formação de nódulos cartilaginosos dentro da membrana sinovial, que se destacam e viram corpos livres, podendo calcificar e ossificar. A articulação mais acometida é o JOELHO, com mais da metade dos casos, seguida de quadril, cotovelo e ombro — e o paciente típico é ADULTO entre a terceira e a quinta décadas, com dor, derrame, crepitação e episódios de BLOQUEIO articular pelos corpos livres. MILGRAM descreveu três fases, e elas orientam a cirurgia: FASE 1, doença sinovial ativa SEM corpos livres; FASE 2, de transição, com nódulos na sinovial E corpos livres; FASE 3, apenas corpos livres, com sinovial já quiescente. Nas fases 1 e 2 faz-se sinovectomia associada à remoção dos corpos livres, porque a sinovial ainda produz novos nódulos; na fase 3 basta remover os corpos livres. Nota que vale conhecer: descrita classicamente como METAPLASIA, ela hoje é classificada pela Organização Mundial da Saúde entre os tumores condrogênicos, após a descoberta de rearranjos recorrentes do gene FN1 — mas a resposta esperada em prova continua sendo a descrição clássica.",
@@ -1931,6 +2368,30 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "tumores-0194": {
+  "conceito": "O osteoma osteoide afeta adolescentes e adultos jovens e causa dor intensa, frequentemente noturna e responsiva a anti-inflamatório. Na radiografia há pequeno **nidus radiolúcido** com esclerose cortical reativa ao redor.",
+  "correta": "**C — osteoma osteoide.** Idade, dor na coxa e foco cortical esclerótico no fêmur são compatíveis.",
+  "incorretas": {
+   "A": "Osteossarcoma teria lesão metafisária agressiva, destruição cortical, matriz osteoide e reação periosteal.",
+   "B": "Condroblastoma é epifisário e costuma apresentar halo esclerótico ao redor de lesão lítica articular.",
+   "D": "Tumor de células gigantes ocorre após fechamento da fise, é epifisário e não causa essa esclerose cortical focal."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Greenspan A. Benign bone-forming lesions: osteoma, osteoid osteoma, and osteoblastoma. Skeletal Radiol. 1993;22:485-500."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "tumores-0195": {
   "conceito": "A síndrome de MAFFUCCI é a associação de ENCONDROMATOSE MÚLTIPLA (a mesma base da doença de Ollier) com HEMANGIOMAS de partes moles — nódulos azulados e compressíveis na pele e no subcutâneo, que podem mostrar FLEBÓLITOS na radiografia, calcificações arredondadas que são a assinatura da lesão vascular. Como Ollier, decorre de mutação PÓS-ZIGÓTICA em mosaico dos genes IDH1/IDH2: não é hereditária, e o acometimento é assimétrico. O que a distingue é a gravidade oncológica: a degeneração sarcomatosa é ALTA — 30 a 50%, com algumas séries falando em risco que se aproxima de 100% ao longo de uma vida inteira, contra 25 a 30% em Ollier —, e o risco não se limita ao condrossarcoma: inclui ANGIOSSARCOMA (a partir das lesões vasculares), glioma, tumores ovarianos e neoplasias pancreáticas e hepatobiliares. A consequência prática é o seguimento vitalício e não restrito ao esqueleto, com investigação por ressonância diante de dor nova ou crescimento de lesão previamente estável. Não confundir com MAZABRAUD, que associa displasia fibrosa a MIXOMAS intramusculares.",
   "correta": "Encondromatose múltipla.",
@@ -2018,6 +2479,30 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0203": {
+  "conceito": "O condroblastoma ocorre quase exclusivamente na **epífise ou apófise** de pacientes esqueleticamente imaturos. Na radiografia aparece como lesão lítica geográfica, bem delimitada e frequentemente cercada por esclerose.",
+  "correta": "**B — condroblastoma.** A lesão epifisária da cabeça umeral em adolescente é a combinação clássica.",
+  "incorretas": {
+   "A": "Osteossarcoma convencional é metafisário e agressivo, com matriz osteoide e reação periosteal.",
+   "C": "Osteoma osteoide é pequeno e cortical, com nidus e esclerose reativa, não uma lesão epifisária desse padrão.",
+   "D": "Tumor de células gigantes também chega à epífise, mas ocorre tipicamente após o fechamento da fise."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Turcotte RE et al. Chondroblastoma. Hum Pathol. 1993;24:944-949."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "tumores-0204": {
   "conceito": "A escoliose idiopática do adolescente NÃO DÓI — e essa é uma das afirmações mais úteis da ortopedia pediátrica, porque transforma a dor em bandeira vermelha obrigatória. Diante de uma escoliose DOLOROSA no adolescente, a causa mais comum é o OSTEOMA OSTEOIDE (e, com menos frequência, seu irmão maior, o osteoblastoma), tipicamente localizado nos ELEMENTOS POSTERIORES da vértebra. O mecanismo é o espasmo muscular antálgico assimétrico: o paciente inclina-se para o lado oposto ao da lesão, de modo que a LESÃO FICA NA CONCAVIDADE da curva. As pistas que reforçam a suspeita: dor NOTURNA que alivia dramaticamente com anti-inflamatório, curva de instalação rápida, rígida e sem a rotação vertebral proporcional da escoliose idiopática. O diagnóstico se faz por TOMOGRAFIA com cortes finos, que mostra o nicho radiolucente de menos de 1,5 cm — a radiografia costuma não vê-lo, e a ressonância mostra edema tão exuberante que já foi confundido com tumor maligno e osteomielite. Tratada precocemente, por ablação por radiofrequência guiada por tomografia, a deformidade REGRIDE; tratada tarde, ela se estrutura e passa a exigir tratamento próprio. Os demais diferenciais da escoliose dolorosa: infecção, cisto ósseo aneurismático, tumor medular, siringomielia e hérnia de disco.",
@@ -2206,6 +2691,31 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "tumores-0221": {
+  "conceito": "Metástase no rádio distal é incomum. Quando uma lesão acral é **lítica e expansiva**, deve-se lembrar do carcinoma de células renais, cujas metástases ósseas são tipicamente osteolíticas e muito vascularizadas.",
+  "correta": "**B — rim.** Entre as opções, carcinoma renal é a origem mais característica de uma metástase lítica no rádio distal.",
+  "incorretas": {
+   "A": "Pulmão é uma origem frequente de acrometástases no conjunto dos casos, mas a aparência lítica expansiva e a localização proposta favorecem rim na associação cobrada.",
+   "C": "Tireoide também pode produzir metástases líticas e hipervasculares, porém é menos provável nessa comparação.",
+   "D": "Mama metastatiza frequentemente para osso, sobretudo esqueleto axial, mas uma lesão isolada no rádio distal é menos típica."
+  },
+  "alerta": "A origem não pode ser determinada somente pela localização e pelo padrão lítico. Em um paciente real, biópsia e investigação do tumor primário são indispensáveis; pulmão também é causa importante de metástase distal ao cotovelo.",
+  "referencias": [
+   "Coleman RE. Clinical features of metastatic bone disease. Clin Cancer Res. 2006;12:6243s-6249s.",
+   "Kerley RN et al. Acrometastasis: a systematic review. Orthop Rev. 2021;13:9300."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "tumores-0222": {
   "conceito": "O mieloma múltiplo se resume no acrônimo CRAB, e cada letra é um achado esperado: hiperCALCEMIA (pela reabsorção osteoclástica intensa), insuficiência RENAL (pelas cadeias leves que precipitam nos túbulos — o rim do mieloma —, somada a hipercalcemia, desidratação e amiloidose), ANEMIA (por ocupação medular) e lesões ósseas (BONE), líticas em saca-bocado, sem esclerose, com predileção por coluna, crânio, costelas e pelve. Some-se a PROTEINÚRIA de cadeias leves — a proteína de Bence-Jones — e a hiperviscosidade. O erro da alternativa está em uma palavra: a imunoglobulina monoclonal do mieloma migra na região GAMA da eletroforese, produzindo o PICO MONOCLONAL característico — é uma GAMAglobulinemia monoclonal, e não uma ALFAglobulinemia. As alfa-globulinas são proteínas de fase aguda (alfa-1-antitripsina, haptoglobina, ceruloplasmina) e não têm relação com o clone plasmocitário. Detalhe técnico que decide condutas: em cerca de 15 a 20% dos casos — o mieloma de cadeias leves — a eletroforese SÉRICA pode ser normal, porque as cadeias leves são filtradas e eliminadas na urina; por isso a investigação exige eletroforese da URINA de 24 horas com imunofixação e dosagem de cadeias leves livres séricas.",
   "correta": "A que NÃO se espera é a combinação de lesões cranianas com alfaglobulinemia — o pico do mieloma é de GAMAglobulina monoclonal.",
@@ -2228,6 +2738,30 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "tumores-0224": {
+  "conceito": "Cordoma é neoplasia maligna derivada de remanescentes da notocorda, com predileção pelo **sacro** e clivo. A massa sacral mediana provoca dor progressiva e, quando cresce, sintomas radiculares, intestinais ou urinários.",
+  "correta": "**B — cordoma e ressecção.** A localização sacral, idade e retenção urinária são típicas; o tratamento principal é ressecção em bloco com margens adequadas quando factível.",
+  "incorretas": {
+   "A": "Cordoma responde pouco à quimioterapia citotóxica convencional; ela não é a linha principal.",
+   "C": "Condrossarcoma pode ocorrer no sacro, mas a localização mediana e o quadro apresentado favorecem cordoma; quimioterapia também não é a estratégia principal.",
+   "D": "A modalidade cirúrgica é plausível para condrossarcoma, mas o diagnóstico mais provável é cordoma."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Stacchiotti S et al. Chordoma global consensus group position paper. Ann Oncol. 2017;28:1230-1242."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "tumores-0225": {
   "conceito": "Osteocondroma e osteossarcoma PAROSTEAL competem na imagem porque ambos são massas ósseas de SUPERFÍCIE, e a distinção decide entre observar e ressecar amplamente. O critério é anatômico e absoluto: o OSTEOCONDROMA tem CONTINUIDADE DA CORTICAL E DA MEDULAR com o osso hospedeiro — o canal medular do osso se prolonga para dentro do pedículo da lesão, porque ele é literalmente osso deslocado da placa de crescimento, formado por ossificação endocondral normal. Nenhuma outra lesão faz isso. O OSTEOSSARCOMA PAROSTEAL, ao contrário, é uma massa densa e lobulada APLICADA SOBRE a cortical, sem continuidade medular — e frequentemente com uma fina linha radiolucente separando-a do osso (o sinal do string), pelo menos nas fases iniciais. Duas ressalvas práticas: a tomografia é o exame que melhor demonstra essa continuidade ou sua ausência; e no osteocondroma o que se avalia depois é a CAPA CARTILAGINOSA — acima de 1,5 a 2 cm no adulto, dor nova ou crescimento após o fechamento fisário levantam a suspeita de condrossarcoma secundário.",
   "correta": "Continuidade do canal medular com o pedículo da lesão.",
@@ -2238,6 +2772,54 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0226": {
+  "conceito": "A imagem demonstra **criocirurgia extracorpórea**: o segmento ósseo com tumor é ressecado, tratado por congelamento para destruir células tumorais e reimplantado como enxerto estrutural, preservando forma e inserções.",
+  "correta": "**B — crioterapia para eliminar o tumor e reconstruir a falha óssea.** O osso congelado é reutilizado biologicamente na reconstrução segmentar.",
+  "incorretas": {
+   "A": "A técnica pode ser usada em diferentes tumores, não é definida como tratamento exclusivo de metástases; seu objetivo imediato é esterilizar o segmento tumoral.",
+   "C": "A peça mostrada é do próprio paciente e foi tratada, não um enxerto proveniente de banco.",
+   "D": "Também confunde o autoenxerto tumoral congelado com aloenxerto de banco."
+  },
+  "referencias": [
+   "Tsuchiya H et al. Reconstruction using an autograft containing tumour treated by liquid nitrogen. J Bone Joint Surg Br. 2005;87:218-225.",
+   "Campanacci M. Bone and Soft Tissue Tumors. 2nd ed. Springer; 1999."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "tumores-0227": {
+  "conceito": "O lipoma é composto por **adipócitos maduros**, uniformes, organizados em lóbulos e sem atipia significativa. A lâmina mostra células grandes, com citoplasma claro ocupado por gordura e núcleos pequenos periféricos.",
+  "correta": "**D — lipoma.** O tecido adiposo maduro e uniforme, sem lipoblastos nem pleomorfismo, sustenta lesão benigna.",
+  "incorretas": {
+   "A": "Lipossarcoma apresenta atipia, variação do tamanho celular, septos atípicos e/ou lipoblastos conforme o subtipo.",
+   "B": "Rabdomiossarcoma é neoplasia de pequenas células ou células rabdomioblásticas, sem arquitetura de gordura madura.",
+   "C": "Neurilemoma forma áreas Antoni A e B e corpos de Verocay, não lóbulos adiposos."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Fletcher CDM et al. Diagnostic Histopathology of Tumors. 5th ed. Elsevier; 2021."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "tumores-0228": {
   "conceito": "No sistema de ENNEKING para lesões BENIGNAS (algarismos arábicos, às vezes escritos com o B de benigno), o comportamento define o estágio. B1 (LATENTE): lesão inativa, que não cresce, com margem nítida e esclerótica, e que costuma regredir sozinha — o exemplo clássico é o FIBROMA NÃO OSSIFICANTE, que ossifica e desaparece até o fim da adolescência; entram também a ilhota óssea e o cisto ósseo simples latente. B2 (ATIVA): cresce progressivamente, deforma e afina a cortical, mas RESPEITA as barreiras naturais — cisto ósseo aneurismático, cisto ósseo simples ativo, condroblastoma, osteoblastoma em boa parte dos casos. B3 (AGRESSIVA): ROMPE as barreiras, invade partes moles, tem alta taxa de RECIDIVA e se comporta como se fosse maligna, embora não metastatize (ou metastatize de forma benigna) — e o exemplo por excelência é o TUMOR DE CÉLULAS GIGANTES, que rompe a cortical, forma massa de partes moles contida por pseudocápsula, recidiva em 10 a 25% após curetagem simples e ainda produz metástase pulmonar benigna em 1 a 4%. Entram também o cisto aneurismático de comportamento agressivo e o osteoblastoma agressivo. A utilidade prática do sistema é definir a margem: B1 pode ser só observada, B2 pede curetagem, B3 exige curetagem AMPLA com adjuvante ou ressecção em bloco.",
@@ -2315,6 +2897,30 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0235": {
+  "conceito": "O condroblastoma é tumor benigno da **epífise ou apófise** em adolescentes. No fêmur proximal pode surgir na apófise do trocanter maior, aparecendo como lesão lítica arredondada, bem delimitada e com halo esclerótico.",
+  "correta": "**C — condroblastoma.** A idade de 12 anos e a lesão centrada no trocanter maior são características.",
+  "incorretas": {
+   "A": "Tumor de células gigantes costuma ocorrer após fechamento da fise e alcançar o osso subcondral.",
+   "B": "Osteocondroma seria uma exostose com continuidade cortical e medular, ausente na imagem.",
+   "D": "Cisto ósseo simples é central e metafisário, mais frequente no colo femoral, não uma lesão apofisária focal."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Turcotte RE et al. Chondroblastoma. Hum Pathol. 1993;24:944-949."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "tumores-0236": {
   "conceito": "A RESSONÂNCIA MAGNÉTICA é o exame que define a EXTENSÃO INTRAÓSSEA do osteossarcoma, e é ela que o cirurgião usa para planejar o nível da ressecção. Ela é insubstituível por quatro motivos. Primeiro, mostra com precisão a extensão MEDULAR do tumor no eixo do osso — informação que a radiografia subestima e a tomografia não delimita bem —, e é a partir dela que se define a margem óssea, habitualmente 2 a 3 cm além do limite visto em T1. Segundo, detecta as LESÕES SALTITANTES (skip metastases), focos descontínuos no mesmo osso que mudam o estadiamento (T3 no AJCC) e podem inviabilizar a preservação do membro — e por isso o exame deve cobrir o OSSO INTEIRO, de articulação a articulação, e não apenas a área da lesão. Terceiro, avalia a extensão para PARTES MOLES e a relação com o feixe neurovascular, decidindo entre preservar e amputar. Quarto, avalia o comprometimento ARTICULAR. Os outros métodos têm papéis próprios: a radiografia dá o diagnóstico e o padrão de agressividade; a tomografia mostra melhor a cortical, a matriz e a metástase pulmonar; a cintilografia rastreia o esqueleto inteiro em busca de outras lesões.",
@@ -2943,6 +3549,54 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "tumores-0293": {
+  "conceito": "O escore de Mirels soma quatro itens de 1 a 3: localização, dor, padrão radiográfico e tamanho. Nesta lesão: região peritrocantérica (3), dor moderada (2), padrão lítico (3) e comprometimento superior a dois terços do diâmetro (3), totalizando **11**.",
+  "correta": "**D — Mirels 11 e fixação cirúrgica.** Escore igual ou superior a 9 indica alto risco de fratura patológica e favorece estabilização profilática antes ou associada ao tratamento oncológico.",
+  "incorretas": {
+   "A": "O cálculo 8 subestima localização, caráter lítico ou tamanho; além disso, radioterapia isolada não corrige o risco mecânico elevado.",
+   "B": "A conduta cirúrgica é adequada, mas o escore correto é 11.",
+   "C": "Acerta o escore, porém radioterapia sem estabilização deixa o fêmur vulnerável à fratura."
+  },
+  "referencias": [
+   "Mirels H. Metastatic disease in long bones: a proposed scoring system for diagnosing impending pathologic fractures. Clin Orthop Relat Res. 1989;(249):256-264.",
+   "NCCN Clinical Practice Guidelines in Oncology: Bone Cancer. https://www.nccn.org/guidelines/"
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "tumores-0294": {
+  "conceito": "O mieloma múltiplo é uma neoplasia de plasmócitos. Na histologia, as células apresentam núcleo excêntrico, cromatina grosseira em **roda de carro** e halo perinuclear correspondente ao aparelho de Golgi.",
+  "correta": "**C — lâmina C.** Ela mostra proliferação monótona de plasmócitos, compatível com mieloma.",
+  "incorretas": {
+   "A": "A lâmina A mostra matriz cartilaginosa com condrócitos em lacunas.",
+   "B": "A lâmina B apresenta estroma frouxo/mixoide e não uma população plasmocitária típica.",
+   "D": "A lâmina D mostra células gigantes multinucleadas distribuídas entre células mononucleares, padrão de tumor de células gigantes."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Haematolymphoid Tumours. 5th ed. IARC; 2022.",
+   "Rajkumar SV. Multiple myeloma: update on diagnosis and management. Am J Hematol. 2022;97:1086-1107."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "tumores-0295": {
   "conceito": "O ESCORE DE TOKUHASHI revisado soma SEIS itens para estimar a sobrevida na metástase vertebral e orientar a cirurgia: estado geral (Karnofsky), número de metástases extraespinhais, número de vértebras acometidas, presença de metástase visceral (ressecável ou não), SÍTIO DO TUMOR PRIMÁRIO — o item de maior peso, que vale de 0 a 5 conforme o prognóstico do primário (mama, tireoide, próstata e rim pontuam alto; pulmão, estômago, esôfago e pâncreas pontuam zero) — e estado neurológico pela escala de Frankel. O total vai de 0 a 15 e se lê em três faixas: 0 A 8, sobrevida esperada MENOR que 6 meses, com conduta conservadora ou paliação mínima; 9 A 11, sobrevida de 6 MESES OU MAIS, indicando CIRURGIA PALIATIVA — descompressão e estabilização, sem pretensão oncológica; 12 A 15, sobrevida esperada de um ano ou mais, permitindo cirurgia EXCISIONAL, com intenção de controle local. Dez pontos caem na faixa do meio. Vale distinguir Tokuhashi, que estima SOBREVIDA, do SINS, que mede INSTABILIDADE, e do WBB e do Tomita, que mapeiam a EXTENSÃO anatômica para planejar a ressecção — os quatro são complementares, e não concorrentes.",
   "correta": "Sobrevida superior a 6 meses e cirurgia paliativa.",
@@ -2964,6 +3618,54 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0297": {
+  "conceito": "Condrossarcoma convencional ocorre em adultos mais velhos, frequentemente na pelve e fêmur proximal. A imagem mostra grande massa lobulada com matriz condroide; a histologia apresenta condrócitos atípicos em lacunas dentro de matriz hialina.",
+  "correta": "**C — condrossarcoma.** Idade, crescimento lento, topografia pélvica/inguinal e matriz cartilaginosa convergem para o diagnóstico.",
+  "incorretas": {
+   "A": "Lipossarcoma nasce em partes moles e contém tecido adiposo ou lipoblastos, não matriz cartilaginosa mineralizada.",
+   "B": "Osteossarcoma é menos comum nessa idade e exige osteoide maligno.",
+   "D": "Ossificação heterotópica apresenta maturação zonal, com osso maduro periférico, e história relacionada a trauma ou agressão neurológica."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Douis H, Saifuddin A. Imaging of cartilaginous bone tumours. Skeletal Radiol. 2013;42:611-626."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "tumores-0298": {
+  "conceito": "O mieloma produz lesões **puramente líticas**, ativando osteoclastos sem resposta osteoblástica proporcional. Por isso a cintilografia óssea pode ser normal mesmo diante de lesões visíveis na radiografia e na tomografia. Anemia e VHS elevado reforçam a discrasia plasmocitária.",
+  "correta": "**D — mieloma múltiplo.** A dissociação entre múltiplas lesões líticas e cintilografia negativa é uma pista clássica.",
+  "incorretas": {
+   "A": "Metástases de mama frequentemente provocam resposta osteoblástica e tendem a aparecer na cintilografia.",
+   "B": "Sarcoma de Ewing ocorre sobretudo em crianças e adolescentes, não explica doença óssea multifocal nessa idade.",
+   "C": "Condrossarcoma costuma ser uma lesão focal com matriz condroide, não múltiplas lesões líticas com anemia."
+  },
+  "referencias": [
+   "Rajkumar SV. Multiple myeloma: update on diagnosis and management. Am J Hematol. 2022;97:1086-1107.",
+   "International Myeloma Working Group recommendations for imaging. Lancet Oncol. 2019;20:e302-e312."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "tumores-0299": {
   "conceito": "O denosumabe é um anticorpo monoclonal humano contra o RANKL, e sua indicação em tumor ósseo benigno se explica pela biologia do TUMOR DE CÉLULAS GIGANTES. Nele, as células neoplásicas são as ESTROMAIS MONONUCLEARES, que expressam RANKL em excesso; as células gigantes multinucleadas — as que dão nome ao tumor — são OSTEOCLASTOS RECRUTADOS por esse RANKL, e são elas que reabsorvem o osso. Bloquear o RANKL retira o estímulo: as células gigantes desaparecem e a lesão OSSIFICA, ganhando uma casca periférica. As indicações práticas são três: tumor IRRESSECÁVEL (sacro, coluna, pelve), tumor RECIDIVADO, e uso NEOADJUVANTE para converter uma lesão grande em ressecável ou permitir curetagem em vez de ressecção. Dois cuidados: o efeito é SUPRESSIVO, não curativo — suspender costuma ser seguido de recidiva —, e a casca ossificada pode dificultar a curetagem, escondendo tumor viável atrás de osso novo. Efeitos adversos a vigiar: hipocalcemia (corrigir cálcio e vitamina D antes de iniciar), osteonecrose de mandíbula (avaliação odontológica prévia) e fratura atípica. O denosumabe é usado também na doença óssea metastática e na osteoporose, em doses e intervalos diferentes.",
@@ -3075,6 +3777,30 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "tumores-0309": {
+  "conceito": "O tumor de células gigantes ocorre em adultos jovens, é **epifisário**, estende-se até o osso subcondral e pode causar fratura patológica. O rádio distal é uma localização clássica e pode apresentar comportamento local agressivo.",
+  "correta": "**D — tumor de células gigantes.** A idade, a lesão expansiva epifisária do rádio distal e as células gigantes uniformemente distribuídas na lâmina são típicas.",
+  "incorretas": {
+   "A": "Osteossarcoma teria osteoide maligno, atipia marcada e padrão metafisário agressivo.",
+   "B": "Condroblastoma predomina em adolescentes e apresenta condroblastos, células gigantes esparsas e calcificação em chicken wire.",
+   "C": "Condrossarcoma mostra matriz cartilaginosa e ocorre mais frequentemente no esqueleto axial ou proximal."
+  },
+  "referencias": [
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+   "Campanacci M et al. Giant-cell tumor of bone. J Bone Joint Surg Am. 1987;69:106-114."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "tumores-0310": {
   "conceito": "A SÍNDROME DE McCUNE-ALBRIGHT é a tríade de DISPLASIA FIBROSA POLIOSTÓTICA, PIGMENTAÇÃO CUTÂNEA e ENDOCRINOPATIA. Cada componente tem um detalhe que cai em prova. As manchas café-com-leite têm bordas IRREGULARES — comparadas à costa do Maine, em oposição às bordas lisas, em costa da Califórnia, da neurofibromatose — e caracteristicamente respeitam a linha média, refletindo o mosaicismo. A ENDOCRINOPATIA mais frequente é a PUBERDADE PRECOCE independente de gonadotrofina, sobretudo em meninas, mas o espectro inclui hipertireoidismo, acromegalia, síndrome de Cushing e raquitismo hipofosfatêmico por excesso de FGF23 produzido pelo tecido displásico. A base é a mutação PÓS-ZIGÓTICA EM MOSAICO do gene GNAS, que ativa constitutivamente a proteína Gs alfa — a mesma mutação da displasia fibrosa isolada, e o que muda é o momento embrionário em que ela ocorre: quanto mais cedo, mais linhagens celulares afetadas e mais órgãos envolvidos. Separando das vizinhas: MAZABRAUD é displasia fibrosa com MIXOMAS intramusculares; JAFFE-CAMPANACCI é fibromas NÃO OSSIFICANTES múltiplos com manchas.",
   "correta": "Distúrbio endócrino.",
@@ -3107,6 +3833,30 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0313": {
+  "conceito": "A hemipelvectomia interna é dividida pelo segmento pélvico ressecado: tipo I, asa ilíaca; tipo II, região periacetabular; tipo III, **púbis e ísquio**; e extensões combinadas conforme o comprometimento. A imagem pós-operatória mostra preservação do acetábulo com ressecção anterior do anel pélvico.",
+  "correta": "**C — tipo III.** A ressecção compromete o arco anterior, envolvendo púbis/ísquio, sem retirada periacetabular completa.",
+  "incorretas": {
+   "A": "Tipo I corresponde à ressecção ilíaca posterior/superior, não ao arco anterior mostrado.",
+   "B": "Tipo II remove a região periacetabular e comprometeria o acetábulo.",
+   "D": "Tipo IV não é a designação básica para a ressecção isolada de púbis e ísquio representada."
+  },
+  "referencias": [
+   "Enneking WF, Dunham WK. Resection and reconstruction for primary neoplasms involving the innominate bone. J Bone Joint Surg Am. 1978;60:731-746.",
+   "Campanacci M. Bone and Soft Tissue Tumors. 2nd ed. Springer; 1999."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "tumores-0314": {
   "conceito": "A HIPERFOSFATASIA IDIOPÁTICA — também chamada de PAGET JUVENIL, hiperostose cortical deformante juvenil ou doença de Bakwin-Eiger — é uma displasia óssea AUTOSSÔMICA RECESSIVA causada por mutação de perda de função no gene TNFRSF11B, que codifica a OSTEOPROTEGERINA. A osteoprotegerina é o receptor-isca que normalmente sequestra o RANKL e freia os osteoclastos; sem ela, o RANKL age sem oposição e instala-se um remodelamento ósseo ACELERADO E DESORGANIZADO — exatamente o mecanismo que produz o quadro da DOENÇA DE PAGET, e daí a semelhança. As manifestações reproduzem um Paget precoce e generalizado: fosfatase alcalina muito elevada, ossos longos alargados, encurvados e frágeis, com fraturas de repetição; alargamento do crânio com surdez; dor óssea; e baixa estatura. A diferença essencial em relação ao Paget do adulto é a idade — manifesta-se na primeira infância — e a distribuição GENERALIZADA, em vez de acometer alguns ossos definidos. O tratamento é com BISFOSFONATOS, com boa resposta, e o raciocínio fecha o círculo: repõe-se farmacologicamente o freio osteoclástico que a genética retirou.",

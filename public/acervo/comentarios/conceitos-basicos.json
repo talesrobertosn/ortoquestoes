@@ -87,6 +87,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "conceitos-basicos-0009": {
+  "conceito": "O **CORA** é a interseção dos eixos anatômicos dos segmentos proximal e distal. Em uma deformidade verdadeiramente uniplanar, sua posição é coerente nas projeções ortogonais. Quando a pseudoartrose combina angulação e translação em mais de um plano, as projeções AP e perfil mostram componentes diferentes da deformidade e os CORA aparentes não coincidem no mesmo nível.",
+  "correta": "**B.** Com desvio angular e translacional, os CORA medidos no AP e no perfil encontram-se em **níveis diferentes**, refletindo a natureza multiplanar da deformidade.",
+  "incorretas": {
+   "A": "O mesmo nível seria esperado em uma deformidade uniapical e uniplanar adequadamente projetada; não é o padrão descrito pela questão.",
+   "C": "Não existe regra que obrigue o CORA do fragmento distal a estar mais distal; a localização depende dos eixos traçados em cada plano.",
+   "D": "Pelo mesmo motivo, não se pode afirmar que ele será necessariamente mais proximal no fragmento distal."
+  },
+  "referencias": [
+   "Paley D. Principles of Deformity Correction. Springer; 2002. Capítulos 1–3.",
+   "Rozbruch SR, Ilizarov S. Limb Lengthening and Reconstruction Surgery. Informa Healthcare; 2007."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "conceitos-basicos-0010": {
   "conceito": "O consenso internacional organiza o diagnóstico em critérios maiores e menores. Os maiores, suficientes sozinhos, são dois: fístula comunicando com a prótese e duas culturas positivas para o MESMO germe. Os menores — PCR e VHS elevados, leucócitos elevados no líquido sinovial, percentual elevado de polimorfonucleares, esterase leucocitária ++, histologia com neutrófilos e uma única cultura positiva — fecham o diagnóstico quando três deles estão presentes. Reparar na exigência de germe idêntico é o que resolve duas das alternativas erradas.",
   "correta": "Esterase leucocitária ++, histologia positiva e percentual elevado de polimorfonucleares: três critérios menores.",
@@ -418,6 +442,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "conceitos-basicos-0040": {
+  "conceito": "A **histogênese por distração** não afeta todos os tecidos da mesma forma. O osso tem a resposta regenerativa mais previsível; músculo acompanha por adaptação e neoformação sob distração gradual; ligamentos e, sobretudo, tendões apresentam capacidade progressivamente menor de metaplasia e diferenciação.",
+  "correta": "**A.** A ordem cobrada é: tecido **ósseo**, muscular, ligamentar e tendíneo.",
+  "incorretas": {
+   "B": "Inverte ligamento e tendão; entre esses dois, o tendão é o de menor capacidade adaptativa na sequência clássica.",
+   "C": "Coloca o músculo antes do osso, embora a osteogênese por distração seja a resposta mais organizada e previsível.",
+   "D": "Além de colocar o músculo antes do osso, também troca a posição relativa entre ligamento e tendão."
+  },
+  "referencias": [
+   "Ilizarov GA. The tension-stress effect on the genesis and growth of tissues. Clin Orthop Relat Res. 1989;(238):249-281.",
+   "Paley D. Principles of Deformity Correction. Springer; 2002."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "conceitos-basicos-0041": {
   "conceito": "A dor do membro fantasma é a complicação mais frequente da amputação — está presente na grande maioria dos amputados em algum grau — e precisa ser separada de dois vizinhos: a sensação fantasma, que é a percepção não dolorosa do membro ausente e é praticamente universal, e a dor do coto, que é local e tem causa identificável, como neuroma, isquemia ou prótese mal ajustada. A prevenção começa antes da cirurgia, com analgesia adequada no pré e no intraoperatório, e o tratamento é multimodal, com gabapentinoides, antidepressivos e terapia do espelho.",
   "correta": "Dor do membro fantasma.",
@@ -628,6 +676,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "conceitos-basicos-0060": {
+  "conceito": "Nechaev divide o membro atingido por mina, do distal para o proximal, em quatro zonas: **dispersão**, avulsão, contusão e comoção. A terceira zona corresponde à contusão por fragmentos e tecidos projetados, já afastada do efeito destrutivo direto da explosão.",
+  "correta": "**C — zona 3.** Lacerações da coxa produzidas por estilhaços, e não pelo efeito direto local da explosão, pertencem à zona de **contusão**.",
+  "incorretas": {
+   "A": "A zona 1 é a mais distal e concentra dispersão/destruição máxima junto ao ponto de detonação.",
+   "B": "A zona 2 corresponde à avulsão traumática e ao dano grave imediatamente proximal à zona de dispersão.",
+   "D": "A zona 4 é a zona de comoção, mais proximal, em que predomina o efeito sistêmico e concussivo, não a laceração por estilhaços descrita."
+  },
+  "referencias": [
+   "Nechaev EA et al. Mine Blast Trauma: Experience from the War in Afghanistan. International Committee of the Red Cross; 1991.",
+   "Characteristics and mechanism of lower limb injury induced by landmine blast. Front Bioeng Biotechnol. 2023;11:1297664. https://pmc.ncbi.nlm.nih.gov/articles/PMC10767292/"
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "conceitos-basicos-0061": {
   "conceito": "A contusão do quadríceps é lesão fechada por trauma direto, com hematoma intramuscular e dor à flexão do joelho. As complicações que se esperam dela decorrem do hematoma que organiza: fibrose muscular, perda de flexão do joelho por retração e miosite ossificante — esta última favorecida por massagem precoce, alongamento agressivo e retorno prematuro. A síndrome compartimental da coxa é possível, mas rara: o compartimento anterior é volumoso e complacente, e absorve muito sangue antes de a pressão subir a ponto de comprometer a perfusão.",
   "correta": "Síndrome compartimental: possível, porém a menos frequente das quatro, pela complacência do compartimento anterior da coxa.",
@@ -759,6 +831,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "conceitos-basicos-0073": {
+  "conceito": "A técnica de **Masquelet** trata defeitos ósseos segmentares em dois tempos. Primeiro realiza-se desbridamento, estabilização e colocação de espaçador de cimento; forma-se ao redor uma membrana vascularizada. Depois o cimento é retirado e a cavidade é preenchida com enxerto.",
+  "correta": "**C — Masquelet.** A sequência radiográfica mostra defeito segmentar reconstruído pela técnica da membrana induzida.",
+  "incorretas": {
+   "A": "Judet relaciona-se à decorticação osteoperiosteal para estimular consolidação, sem espaçador e membrana induzida em dois tempos.",
+   "B": "Papineau utiliza enxertia esponjosa aberta após desbridamento, com cicatrização por segunda intenção.",
+   "D": "RIA é um sistema de fresagem, irrigação e aspiração que pode fornecer enxerto, mas não denomina a técnica da membrana vascularizada."
+  },
+  "referencias": [
+   "Masquelet AC, Begue T. The concept of induced membrane for reconstruction of long bone defects. Orthop Clin North Am. 2010;41:27-37.",
+   "Giannoudis PV et al. Masquelet technique for the treatment of bone defects. Injury. 2011;42:591-598."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "conceitos-basicos-0074": {
   "conceito": "Os critérios de Kocher foram construídos para serem objetivos e reprodutíveis à beira do leito, com dados que qualquer serviço tem: febre acima de 38,5 graus, incapacidade de apoiar o membro, VHS acima de 40 mm/h e leucócitos acima de 12.000. Exames de imagem não entram — o derrame na ultrassonografia aparece tanto na sinovite transitória quanto na artrite séptica e não distingue as duas. A modificação de Caird acrescentou a PCR acima de 20 mg/l como quinto critério.",
@@ -1035,6 +1131,31 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "conceitos-basicos-0099": {
+  "conceito": "A repercussão de uma não consolidação não depende apenas do tamanho do osso ou da carga. No antebraço, a perda de alinhamento entre rádio e ulna compromete simultaneamente **pronação, supinação e função da mão no espaço**, o que pode produzir impacto desproporcional na qualidade de vida.",
+  "correta": "**B.** Na comparação cobrada, a não consolidação do **antebraço** apresentou o menor escore de qualidade de vida.",
+  "incorretas": {
+   "A": "A pseudoartrose do úmero causa dor e limitação relevantes, mas não foi a localização associada ao pior escore na série usada pela questão.",
+   "C": "A do fêmur compromete marcha e carga, porém não corresponde ao menor escore do estudo citado pelo item.",
+   "D": "A tíbia é uma localização frequente e de tratamento difícil, mas também não foi a resposta da comparação específica."
+  },
+  "alerta": "A resposta expressa o resultado de uma comparação observacional específica; não significa que toda pseudoartrose do antebraço produza pior qualidade de vida do que qualquer pseudoartrose do membro inferior.",
+  "referencias": [
+   "Brinker MR, Trivedi A, O'Connor DP. Debilitating effects of femoral nonunion on health-related quality of life. J Orthop Trauma. 2017;31(2):e37-e42.",
+   "Schottel PC et al. Time trade-off as a measure of health-related quality of life: long bone nonunions have a devastating impact. J Bone Joint Surg Am. 2015;97(17):1406-1410."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "conceitos-basicos-0100": {
   "conceito": "As zonas de segurança do úmero existem porque o nervo radial cruza o osso. Ele desce pelo sulco espiral na face posterior, atravessa o septo intermuscular lateral de posterior para anterior a cerca de 10 a 15 cm proximal ao epicôndilo lateral e passa a correr no compartimento anterior. Daí decorrem as regras: no terço proximal, o corredor seguro é anterior e lateral; no terço médio, o nervo está encostado no osso posteriormente e não há corredor lateral seguro; e no terço distal, o cuidado é anterior e lateral, onde ele já cruzou.",
   "correta": "O nervo radial atravessa o úmero de posterior para anterior a 10 a 15 cm do cotovelo.",
@@ -1167,6 +1288,31 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "conceitos-basicos-0112": {
+  "conceito": "O abscesso de **Brodie** é uma forma localizada de osteomielite subaguda, geralmente metafisária, vista como cavidade lítica bem delimitada com halo esclerótico. Na classificação radiográfica citada pela questão, a lesão intracortical/metafisária localizada corresponde ao tipo IB.",
+  "correta": "**D — abscesso de Brodie, tipo IB.** A imagem mostra foco lítico metafisário delimitado por esclerose, sem destruição difusa.",
+  "incorretas": {
+   "A": "Gledhill é uma classificação radiográfica de osteomielite hematogênica infantil, não o nome do abscesso localizado mostrado.",
+   "B": "Também troca o diagnóstico por Gledhill, apesar de usar o subtipo IB.",
+   "C": "Identifica corretamente o abscesso de Brodie, mas o padrão da imagem é classificado como IB, não II."
+  },
+  "alerta": "O enunciado mistura a classificação de Roberts com epônimos usados em classificações pediátricas menos padronizadas. A imagem sustenta abscesso de Brodie; o subtipo IB deve ser conferido na fonte original.",
+  "referencias": [
+   "Roberts JM et al. Subacute osteomyelitis in children. Classification and treatment principles. J Pediatr Orthop.",
+   "Peltola H, Pääkkönen M. Acute osteomyelitis in children. N Engl J Med. 2014;370:352-360."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "conceitos-basicos-0113": {
   "conceito": "Existem dois modos de consolidar, e cada fixação escolhe um. Na estabilidade absoluta, com redução anatômica e compressão, não há movimento algum no foco: cones cortantes formados por osteoclastos atravessam a linha de fratura perfurando o osso, seguidos por osteoblastos que depositam osso lamelar atrás deles — é a consolidação primária, direta, por remodelação haversiana, e ela não produz calo visível na radiografia. Na estabilidade relativa há micromovimento controlado, que estimula formação de calo e consolidação secundária, com as fases cartilaginosa e óssea clássicas.",
   "correta": "Consolidação por formação de osteonas (haversiana), sem formação de calo.",
@@ -1277,6 +1423,31 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "conceitos-basicos-0123": {
+  "conceito": "No bloqueio **infraclavicular pela abordagem coracoide**, o ponto de punção é definido por referências superficiais do processo coracoide, aproximadamente 2 cm medial e 2 cm caudal. O alvo são os fascículos do plexo ao redor da artéria axilar.",
+  "correta": "**D — bloqueio infraclavicular.** A marcação abaixo e medial ao coracoide corresponde à abordagem infraclavicular coracoide.",
+  "incorretas": {
+   "A": "O bloqueio axilar é realizado na axila, ao redor da artéria axilar distal.",
+   "B": "“Subcoracóide” descreve uma variante topográfica, mas o nome consagrado da técnica mostrada é infraclavicular.",
+   "C": "Interescalênico é realizado no pescoço, entre os músculos escalenos.",
+   "E": "Supraclavicular é realizado acima da clavícula, próximo à primeira costela e artéria subclávia."
+  },
+  "referencias": [
+   "Neal JM et al. ASRA practice advisory on neurologic complications in regional anesthesia. Reg Anesth Pain Med. 2015;40:401-430.",
+   "Hadzic A. Hadzic's Peripheral Nerve Blocks and Anatomy for Ultrasound-Guided Regional Anesthesia. 3rd ed. McGraw-Hill; 2021."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "conceitos-basicos-0124": {
   "conceito": "A cartilagem hialina articular é praticamente toda matriz: água, colágeno tipo II e proteoglicanos. A parcela celular é minúscula — os condrócitos ocupam algo em torno de 1 a 5% do volume, conforme a referência e a camada considerada, e os textos de revisão em ortopedia trabalham com o valor de 5%. Essa escassez de células explica tudo o que importa clinicamente: a cartilagem é avascular, aneural e alinfática, e depende de difusão pelo líquido sinovial, o que a torna praticamente incapaz de se regenerar depois de lesada.",
   "correta": "Cerca de 5% — o valor adotado pelos textos de revisão ortopédica.",
@@ -1356,6 +1527,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "conceitos-basicos-0131": {
+  "conceito": "Líquido semelhante a sinovial no foco indica **pseudoartrose sinovial**, uma forma estabelecida com cavidade e tecido de revestimento. O tratamento exige retirar o tecido da pseudoartrose até osso viável e obter estabilidade mecânica adequada.",
+  "correta": "**B — ressecção do foco de pseudoartrose e osteossíntese.** O calo existente não deve ser removido indiscriminadamente; o essencial é ressecar o tecido sinovializado e estabilizar.",
+  "incorretas": {
+   "A": "Acrescenta ressecção do calo, eliminando osso biologicamente útil sem necessidade demonstrada.",
+   "C": "Remove o calo, mas preserva o foco sinovializado que impede a consolidação.",
+   "D": "Realiza ressecções e decorticação, porém não inclui osteossíntese, indispensável para corrigir a instabilidade."
+  },
+  "referencias": [
+   "Weber BG, Cech O. Pseudarthrosis: Pathophysiology, Biomechanics, Therapy. Huber; 1976.",
+   "Müller ME et al. Manual of Internal Fixation. 3rd ed. Springer; 1991."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "conceitos-basicos-0132": {
   "conceito": "PCR e VHS têm cinéticas diferentes, e é isso que a questão cobra. A PCR sobe rápido, atinge o pico em cerca de 48 horas e cai rápido com o tratamento eficaz, normalizando em cerca de uma semana — por isso ela é o marcador de acompanhamento. O VHS sobe devagar, atinge o pico em 3 a 5 dias e demora semanas para normalizar, mesmo com o tratamento funcionando. Portanto, quem melhora PRIMEIRO é a PCR, e quem fica positivo por mais tempo é o VHS — exatamente o inverso do que a alternativa marcada afirma.",
@@ -1467,6 +1662,31 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "conceitos-basicos-0142": {
+  "conceito": "Na haste não fresada, o implante costuma ter menor diâmetro e menor preenchimento do canal. Isso reduz a estabilidade mecânica e pode aumentar atraso de consolidação, não união e necessidade de novo procedimento em comparação com a haste fresada.",
+  "correta": "**D — 4,5 vezes.** Esse é o multiplicador epidemiológico específico adotado pelo gabarito para o aumento do risco de não união com haste não fresada.",
+  "incorretas": {
+   "A": "1,5 vez subestima a diferença cobrada pela fonte da questão.",
+   "B": "2,5 vezes também é inferior ao valor adotado no item.",
+   "C": "3,5 vezes aproxima-se, mas não corresponde ao multiplicador de 4,5 usado pelo gabarito."
+  },
+  "alerta": "O valor exato varia entre estudos, técnicas e populações. Revisões mais recentes confirmam maior risco de não união com hastes não fresadas, mas não sustentam um único multiplicador universal para todo paciente.",
+  "referencias": [
+   "Reamed versus unreamed intramedullary nailing for femoral fractures: meta-analysis of randomized trials. Medicine (Baltimore). 2017;96(12):e6307. https://pmc.ncbi.nlm.nih.gov/articles/PMC5265768/",
+   "el Moumni M et al. The incidence of non-union following unreamed intramedullary nailing of femoral shaft fractures. Injury. 2009;40(2):205-208. doi:10.1016/j.injury.2008.06.022"
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "conceitos-basicos-0143": {
   "conceito": "Vale separar as propriedades mecânicas de uma vez. Ductilidade: quanto o material se deforma PLASTICAMENTE — de forma permanente — antes de romper; material dúctil avisa antes de quebrar, entortando. Fragilidade é o oposto: rompe sem deformação plástica prévia (a cerâmica é o exemplo). Resistência (strength) é a tensão máxima que ele suporta. Resistência à fadiga é quantos ciclos de tensão submáxima ele aguenta. Rigidez (módulo de elasticidade) é quanto ele resiste à deformação elástica. Tenacidade é a energia total absorvida até a falha.",
   "correta": "Capacidade de se deformar plasticamente antes da falha.",
@@ -1477,6 +1697,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "conceitos-basicos-0144": {
+  "conceito": "A técnica **pass-through** é uma estratégia de redução/fixação em que um fio ou instrumento atravessa temporariamente um fragmento para permitir manipulação e posicionamento preciso. Sua utilidade é maior na reconstrução de fragmentos da **superfície articular**, onde pequenos degraus alteram a congruência.",
+  "correta": "**A.** A técnica é empregada em fraturas da **superfície articular**.",
+  "incorretas": {
+   "B": "Fraturas diafisárias são reduzidas por controle de comprimento, eixo e rotação; não constituem a indicação característica dessa técnica.",
+   "C": "A metáfise pode participar da fratura, mas o objetivo específico do pass-through é controlar o fragmento articular.",
+   "D": "Côndilo é uma localização anatômica possível, mas a característica determinante é o envolvimento da superfície articular, tornando A a resposta mais abrangente."
+  },
+  "referencias": [
+   "AO Foundation. AO Surgery Reference: Principles of articular fracture reduction and fixation. https://surgeryreference.aofoundation.org/",
+   "Browner BD et al. Skeletal Trauma. 6th ed. Elsevier; 2020. Principles of intra-articular fracture fixation."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "conceitos-basicos-0145": {
   "conceito": "A pseudartrose atrófica com encurtamento apresenta dois problemas que exigem soluções opostas — e o método de Ilizarov resolve os dois ao mesmo tempo, em lugares diferentes. No foco da pseudartrose faz-se COMPRESSÃO: comprimir estimula biologicamente as pontas atróficas e fecha a falha, ainda que às custas de encurtar mais. Para devolver comprimento, faz-se uma corticotomia em outro nível, na METÁFISE — onde o osso é esponjoso, bem vascularizado e forma regenerado com facilidade —, e ali se distrai gradualmente, a 1 mm por dia em quatro incrementos, depois da latência.",
@@ -1532,6 +1776,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "conceitos-basicos-0150": {
+  "conceito": "Na amputação de **Boyd**, o tálus é removido e o calcâneo é levado anteriormente para ser fusionado à extremidade distal da tíbia, preservando o coxim plantar e proporcionando apoio terminal. Na Syme, há desarticulação do tornozelo sem artrodese tibiocalcânea.",
+  "correta": "**A — Boyd.** A ilustração mostra talectomia, avanço do calcâneo e fusão com a tíbia.",
+  "incorretas": {
+   "B": "Syme preserva o coxim do calcâneo, mas remove o pé por desarticulação e não fixa o calcâneo à tíbia.",
+   "C": "Wagner não corresponde à técnica de avanço e artrodese tibiocalcânea mostrada.",
+   "D": "Sarmiento é associado a princípios de prótese e tratamento funcional, não a essa amputação anatômica."
+  },
+  "referencias": [
+   "Boyd HB. Amputation of the foot, with calcaneotibial arthrodesis. J Bone Joint Surg Am. 1939;21:997-1000.",
+   "Smith DG et al. Atlas of Amputations and Limb Deficiencies. 4th ed. AAOS; 2016."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "conceitos-basicos-0151": {
   "conceito": "A vitamina C é antioxidante e reduz a formação de radicais livres na fase inflamatória da consolidação — e é aí que se acredita estar o efeito preventivo sobre a síndrome dolorosa regional complexa. Os ensaios em fratura do rádio distal usaram 500 mg ao dia por cerca de 50 dias a partir do trauma e mostraram redução da incidência. Vale reter o limite: a evidência é de PREVENÇÃO. Depois de instalada, a síndrome se trata com reabilitação precoce, analgesia multimodal, gabapentinoides e bloqueios — e nenhuma vitamina resolve.",
@@ -1655,6 +1923,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "conceitos-basicos-0162": {
+  "conceito": "Pseudoartrose **atrófica** apresenta pouca ou nenhuma formação de calo, extremidades afiladas ou escleróticas e baixa atividade biológica. Na imagem, apesar das placas, não há ponte óssea exuberante entre os fragmentos da ulna.",
+  "correta": "**A — atrófica.** A ausência de calo reacional relevante é o achado dominante.",
+  "incorretas": {
+   "B": "Oligotrófica apresenta pouco calo, mas geralmente mantém extremidades viáveis e alguma reação; a imagem e o gabarito favorecem atrofia estabelecida.",
+   "C": "Hipertrófica mostraria calo exuberante em pata de elefante ou casco de cavalo, sinal de biologia preservada e instabilidade.",
+   "D": "Pseudoartrose sinovial exige cavidade/pseudocápsula com líquido sinovial, não identificável apenas por este padrão radiográfico."
+  },
+  "referencias": [
+   "Weber BG, Cech O. Pseudarthrosis: Pathophysiology, Biomechanics, Therapy. Huber; 1976.",
+   "Brinker MR. Nonunions: evaluation and treatment. In: Browner BD et al. Skeletal Trauma. 6th ed. Elsevier; 2020."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "conceitos-basicos-0163": {
   "conceito": "As ondas de choque extracorpóreas tratam a pseudartrose por um efeito biológico, e não mecânico: elas produzem microlesão controlada e cavitação no foco, o que desencadeia neovascularização e aumento da expressão de fatores de crescimento — TGF-beta, VEGF, BMP-2 e óxido nítrico —, com recrutamento e diferenciação de células mesenquimais em osteoblastos. Em outras palavras, elas reacendem a fase inicial da consolidação num foco que estacionou. A indicação melhor estabelecida é a pseudartrose hipertrófica, em que a estabilidade já é razoável e o que falta é o estímulo.",
   "correta": "Fatores de crescimento.",
@@ -1676,6 +1968,55 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "conceitos-basicos-0165": {
+  "conceito": "A **alma** do parafuso é seu núcleo central, isto é, o diâmetro menor medido no fundo das roscas. Ela determina grande parte da resistência do parafuso à flexão e à torção e não deve ser confundida com o diâmetro externo da rosca.",
+  "correta": "**A — indicação A.** A marca aponta o cilindro central correspondente ao diâmetro da alma.",
+  "incorretas": {
+   "B": "B indica a dimensão externa/altura relacionada à rosca, não o núcleo central.",
+   "C": "C representa o passo da rosca, a distância entre cristas consecutivas.",
+   "D": "D destaca uma região da rosca/chanfro, não o diâmetro da alma."
+  },
+  "referencias": [
+   "AO Foundation. AO Principles of Fracture Management. 3rd ed. Thieme; 2017. Screw design.",
+   "Müller ME et al. Manual of Internal Fixation. 3rd ed. Springer; 1991."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "conceitos-basicos-0166": {
+  "conceito": "Em idosos, artrite séptica pode ter apresentação pouco exuberante e mortalidade relevante. Infecções do **ombro e cotovelo** podem sofrer atraso diagnóstico por serem menos lembradas do que joelho e quadril e por ocorrerem em pacientes com maior carga de comorbidades ou bacteremia.",
+  "correta": "**A.** Na comparação epidemiológica cobrada, a mortalidade foi mais elevada quando a artrite séptica acometeu **ombro e cotovelo**.",
+  "incorretas": {
+   "B": "Punho e mão podem evoluir com destruição local e perda funcional, mas não foram o grupo de maior mortalidade na comparação.",
+   "C": "O quadril exige drenagem urgente e tem grande morbidade, porém não correspondeu ao maior índice de mortalidade do estudo usado pela questão.",
+   "D": "O joelho é o local mais frequentemente acometido no adulto, mas frequência não equivale à maior mortalidade."
+  },
+  "alerta": "Trata-se de uma associação epidemiológica, não de uma regra causal. Em qualquer articulação, prognóstico depende sobretudo de idade, bacteremia, agente, comorbidades e tempo até o tratamento.",
+  "referencias": [
+   "Mathews CJ et al. Bacterial septic arthritis in adults. Lancet. 2010;375(9717):846-855.",
+   "Shirtliff ME, Mader JT. Acute septic arthritis. Clin Microbiol Rev. 2002;15(4):527-544. https://pmc.ncbi.nlm.nih.gov/articles/PMC126863/"
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "conceitos-basicos-0167": {
   "conceito": "A amputação de Syme é a desarticulação do tornozelo com preservação do coxim plantar do calcâneo, que é o que permite descarga direta na extremidade do coto — a grande vantagem do método. A modificação de Sarmiento acrescenta um detalhe que melhora a prótese: além de retirar os maléolos, ela secciona a tíbia e a fíbula pouco acima da articulação, cerca de 1,3 cm, afinando o coto e eliminando o alargamento bulboso da extremidade. O resultado é um coto mais estreito, que aceita encaixe protético de melhor aparência e melhor ajuste.",
@@ -1743,6 +2084,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "conceitos-basicos-0173": {
+  "conceito": "O **NURD** estima o risco de não união após haste intramedular da tíbia com variáveis clínicas e radiográficas. Entre as opções apresentadas, a necessidade de **retalho** recebe 5 pontos, mais do que síndrome compartimental (4), fratura exposta (2) e sexo masculino (1).",
+  "correta": "**C — retalho cirúrgico.** É o atributo de maior pontuação entre as alternativas, com **5 pontos**.",
+  "incorretas": {
+   "A": "Fratura exposta acrescenta 2 pontos no escore, portanto pesa menos que a necessidade de retalho.",
+   "B": "Sexo masculino acrescenta 1 ponto.",
+   "D": "Síndrome compartimental acrescenta 4 pontos: é um fator importante, mas ainda inferior aos 5 pontos do retalho."
+  },
+  "referencias": [
+   "O'Halloran K et al. Will my tibial fracture heal? Predicting nonunion at the time of definitive fixation based on commonly available variables. Clin Orthop Relat Res. 2016;474:1385-1395.",
+   "Three predictive scores compared in tibial shaft fracture nonunion. World J Orthop. 2024;15(6):568-579. https://pmc.ncbi.nlm.nih.gov/articles/PMC11212531/"
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "conceitos-basicos-0174": {
   "conceito": "A pergunta cruza dois calendários. O motor: a criança senta sem apoio por volta dos 6 meses, engatinha aos 9, fica em pé com apoio aos 9 a 10 meses, anda segurando por uma das mãos perto dos 11 a 12 meses e anda sozinha por volta dos 12 a 15 meses. O de ossificação no membro inferior: fêmur distal e tíbia proximal já estão presentes ao nascimento, a epífise distal da tíbia aparece nos primeiros meses até cerca de 1 ano, a distal da fíbula por volta de 1 a 2 anos, a proximal da fíbula entre 3 e 4 anos, o navicular perto dos 3 anos e a tuberosidade anterior da tíbia bem mais tarde, entre 8 e 12 anos.",
   "correta": "Epífise distal da tíbia, que já está ossificada no primeiro ano de vida.",
@@ -1764,6 +2129,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "conceitos-basicos-0176": {
+  "conceito": "A amputação de **Boyd** remove o tálus, preserva o calcâneo e o desloca anteriormente para realizar artrodese tibiocalcânea. Isso mantém o coxim plantar e cria um coto capaz de apoio terminal.",
+  "correta": "**A — Boyd.** A figura mostra talectomia e aproximação do calcâneo à tíbia distal.",
+  "incorretas": {
+   "B": "Na Syme ocorre desarticulação do tornozelo com preservação do coxim do calcanhar, mas sem fusão do calcâneo à tíbia.",
+   "C": "Chopart é desarticulação mediotársica, preservando tálus e calcâneo.",
+   "D": "Pirogoff preserva e roda uma porção do calcâneo para fusão à tíbia; o desenho mostrado corresponde à técnica de Boyd com o calcâneo inteiro avançado."
+  },
+  "referencias": [
+   "Boyd HB. Amputation of the foot, with calcaneotibial arthrodesis. J Bone Joint Surg Am. 1939;21:997-1000.",
+   "Smith DG et al. Atlas of Amputations and Limb Deficiencies. 4th ed. AAOS; 2016."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "conceitos-basicos-0177": {
   "conceito": "O tipo IV de Roberts (modificação da classificação de Gledhill) é a osteomielite subaguda diafisária com reação periosteal em camadas de cebola — a mesma imagem, no mesmo osso e na mesma faixa etária do sarcoma de Ewing. É o diagnóstico diferencial mais perigoso da série, porque tratar como infecção o que é tumor, ou biopsiar mal um Ewing, muda o prognóstico. A ressonância ajuda mostrando abscesso com realce periférico e menos massa de partes moles na infecção, mas em muitos casos só a biópsia decide, e ela deve ser planejada como se fosse tumor.",
@@ -1995,6 +2384,54 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "conceitos-basicos-0198": {
+  "conceito": "Em lactente de dois meses, febre, irritabilidade, pseudoparalisia, posição de flexão/rotação externa e derrame do quadril devem ser considerados **artrite séptica até prova em contrário**. Internação neonatal recente aumenta o risco de infecção hematogênica e por agentes hospitalares.",
+  "correta": "**C — artrite séptica do quadril, drenagem cirúrgica e antibioticoterapia.** No quadril neonatal, atraso pode causar necrose da cabeça femoral, destruição da cartilagem e luxação.",
+  "incorretas": {
+   "A": "Sinovite transitória é incomum nessa idade e não combina com febre, pseudoparalisia e exposição neonatal recente.",
+   "B": "Além do diagnóstico improvável, observação isolada seria insegura diante de sinais infecciosos.",
+   "D": "Acerta o diagnóstico e o antibiótico, mas omite a drenagem urgente da articulação do quadril."
+  },
+  "referencias": [
+   "Pääkkönen M. Septic arthritis in children: diagnosis and treatment. Pediatr Health Med Ther. 2017;8:65-68.",
+   "Tachdjian's Pediatric Orthopaedics. 6th ed. Elsevier; 2021. Septic arthritis of the hip."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "conceitos-basicos-0199": {
+  "conceito": "A organização muscular segue a sequência: músculo → fascículo → fibra muscular → **miofibrila** → miofilamentos. A seta amarela aponta o fino cilindro estriado retirado do interior de uma fibra, formado por sarcômeros repetidos.",
+  "correta": "**A — miofibrila.** É a estrutura intracelular longitudinal responsável pelo padrão estriado e pela contração.",
+  "incorretas": {
+   "B": "A fibra muscular é a célula inteira, multinucleada, que contém numerosas miofibrilas.",
+   "C": "Miofilamentos são as proteínas ainda menores, principalmente actina e miosina, organizadas dentro da miofibrila.",
+   "D": "Fascículo é um conjunto de fibras musculares envolvido por perimísio e tem escala muito maior."
+  },
+  "referencias": [
+   "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020. Skeletal muscle structure.",
+   "Hall JE. Guyton and Hall Textbook of Medical Physiology. 14th ed. Elsevier; 2021. Skeletal muscle contraction."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "conceitos-basicos-0200": {
   "conceito": "O desbridamento com retenção do implante (DAIR) só funciona quando três condições se somam: infecção precoce ou hematogênica aguda com poucas semanas de sintomas, implante bem fixo e partes moles em condições de fechar. Fora disso o biofilme já está maduro e o implante precisa sair. Dentro dessas condições, o germe ainda pesa: Staphylococcus aureus, sobretudo o resistente à meticilina, tem taxas de falha do DAIR bem mais altas do que estreptococos e germes de baixa virulência — é contraindicação RELATIVA, que entra na balança ao lado do estado do paciente e das partes moles.",
@@ -2514,6 +2951,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "conceitos-basicos-0247": {
+  "conceito": "A **alma** é o núcleo do parafuso e corresponde ao seu diâmetro menor, medido entre os fundos opostos da rosca. Quanto menor a alma, menor a resistência mecânica à torção e à flexão.",
+  "correta": "**A — indicação A.** A linha identifica o cilindro central do parafuso.",
+  "incorretas": {
+   "B": "B está relacionado ao diâmetro externo ou à profundidade da rosca.",
+   "C": "C mostra o passo, isto é, o intervalo axial entre roscas sucessivas.",
+   "D": "D destaca outro elemento geométrico da rosca, não a alma."
+  },
+  "referencias": [
+   "AO Foundation. AO Principles of Fracture Management. 3rd ed. Thieme; 2017. Screw design.",
+   "Müller ME et al. Manual of Internal Fixation. 3rd ed. Springer; 1991."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "conceitos-basicos-0248": {
   "conceito": "O biofilme se forma em etapas. Primeiro o implante é revestido por proteínas do hospedeiro — fibronectina, fibrinogênio, colágeno —, e é a elas que a bactéria adere pelas suas adesinas. Depois a fixação se torna irreversível e a bactéria passa a produzir a matriz que a protege: uma malha EXOPOLISSACARÍDEA (glicocálix), dentro da qual as células vivem em baixa atividade metabólica. É essa matriz que define a maturação do biofilme e que impede antibiótico e células de defesa de alcançarem as bactérias — daí a necessidade de remover o implante na infecção crônica.",

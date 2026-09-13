@@ -363,6 +363,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "quadril-0034": {
+  "conceito": "Na classificação de Della Valle e Paprosky, as fraturas acetabulares periprotéticas são organizadas pelo momento e mecanismo, pela estabilidade do componente e pela perda óssea. A fratura traumática ocorrida após a artroplastia enquadra-se no grupo III.",
+  "correta": "C — Fratura periprotética acetabular traumática no pós-operatório é classificada como tipo III.",
+  "incorretas": {
+   "A": "O tipo I corresponde a padrões intraoperatórios reconhecidos durante a cirurgia.",
+   "B": "O tipo II reúne fraturas intraoperatórias descobertas no pós-operatório imediato.",
+   "D": "O tipo IV está relacionado a fratura pélvica espontânea ou por insuficiência, não ao trauma descrito."
+  },
+  "referencias": [
+   "Della Valle CJ, Momberger NG, Paprosky WG. Periprosthetic fractures of the acetabulum associated with a total hip arthroplasty. Instr Course Lect. 2003.",
+   "Paprosky WG, Della Valle CJ. Classification and treatment of periprosthetic acetabular fractures."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "quadril-0035": {
   "alerta": "A descrição clássica é o inverso desta. Na lágrima radiográfica, o ramo LATERAL corresponde à parede da fossa acetabular (fossa cotiloide) e o ramo MEDIAL corresponde à superfície quadrilátera — a placa quadrilateral, que é a alternativa D, marcada como errada. Se você respondeu placa quadrilateral, o erro não foi seu.",
   "conceito": "A lágrima radiográfica é uma imagem em U que aparece no AP da pelve porque duas superfícies ósseas quase paralelas são atravessadas pelo feixe no mesmo ponto: a parede lateral da fossa acetabular, do lado de fora, e a superfície quadrilátera, do lado de dentro da pelve. Ela importa por ser um dos poucos pontos de referência confiáveis da pelve: serve para medir protrusão acetabular (quando a linha ilioisquiática ultrapassa a lágrima), para conferir a posição do centro de rotação na artroplastia e para comparar os dois lados. Nas fraturas, a lágrima distorcida indica acometimento da parede medial.",
@@ -793,6 +817,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "quadril-0074": {
+  "conceito": "O quadrante póstero-superior do acetábulo é o mais seguro para parafusos porque oferece bom estoque ósseo e menor risco às estruturas neurovasculares anteriores. Parafusos anteriores podem lesar vasos ilíacos externos, enquanto os inferiores aproximam-se dos vasos e nervos obturatórios.",
+  "correta": "A — Segundo Wasielewski, o quadrante póstero-superior é o mais seguro.",
+  "incorretas": {
+   "B": "O póstero-inferior fica mais próximo do nervo ciático e de estruturas da incisura isquiática.",
+   "C": "O anterossuperior aproxima-se dos vasos ilíacos externos e é zona de risco.",
+   "D": "O anteroinferior aproxima-se do feixe obturatório."
+  },
+  "referencias": [
+   "Wasielewski RC et al. Acetabular anatomy and the transacetabular fixation of screws in total hip arthroplasty. J Bone Joint Surg Am. 1990.",
+   "Campbell's Operative Orthopaedics. Total hip arthroplasty."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "quadril-0075": {
   "conceito": "O ângulo alfa mede a perda da concavidade da transição cabeça-colo. Traça-se um círculo sobre a cabeça femoral, marca-se o ponto onde o contorno ósseo escapa desse círculo e mede-se o ângulo entre a linha do centro da cabeça ao eixo do colo e a linha do centro até esse ponto. Quanto mais cedo o osso sai do círculo, maior o ângulo e maior a giba. O limiar trabalhado na literatura fica na faixa dos 50 aos 55 graus — Nötzli descreveu 50,5 graus como limite, e muitos serviços adotam 55 —, e não por acaso outra questão deste mesmo acervo usa 50 como valor de normalidade.",
   "correta": "55 graus: acima disso o ângulo alfa é considerado indicativo de deformidade tipo came.",
@@ -847,6 +895,198 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "quadril-0080": {
+  "conceito": "O nervo obturatório emerge da borda medial do psoas, percorre a pelve e atravessa o canal obturatório para chegar ao compartimento medial da coxa. Inerva principalmente os adutores e fornece sensibilidade a pequena área medial da coxa.",
+  "correta": "C — A estrutura apontada é o nervo obturatório.",
+  "incorretas": {
+   "A": "O safeno é ramo do femoral e acompanha o canal dos adutores até a face medial da perna.",
+   "B": "O pudendo deixa a pelve pela incisura isquiática maior e retorna pela menor, dirigindo-se ao períneo.",
+   "D": "Os cluneais inferiores são ramos cutâneos próximos à prega glútea, não seguem o compartimento medial da coxa."
+  },
+  "referencias": [
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy. Lumbar plexus.",
+   "Gray's Anatomy. Obturator nerve."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "quadril-0081": {
+  "conceito": "A estrutura apontada é o músculo bíceps femoral, cujo tendão distal se insere principalmente na cabeça da fíbula. Essa inserção ajuda a diferenciá-lo da banda iliotibial, que termina no tubérculo de Gerdy.",
+  "correta": "A — O bíceps femoral insere-se na cabeça da fíbula.",
+  "incorretas": {
+   "B": "O tubérculo de Gerdy recebe a banda iliotibial.",
+   "C": "A tuberosidade da tíbia recebe o ligamento patelar.",
+   "D": "O côndilo lateral da tíbia não é a inserção principal do bíceps femoral."
+  },
+  "referencias": [
+   "Gray's Anatomy. Posterior compartment of the thigh.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "quadril-0082": {
+  "conceito": "A cabeça direta do reto femoral origina-se na espinha ilíaca anteroinferior; a cabeça refletida nasce no sulco supra-acetabular. O sartório origina-se na espinha ilíaca anterossuperior, o que ajuda a separar as alternativas.",
+  "correta": "B — A origem demarcada corresponde ao reto femoral.",
+  "incorretas": {
+   "A": "O sartório nasce na espinha ilíaca anterossuperior.",
+   "C": "O vasto lateral origina-se no fêmur proximal, incluindo trocânter maior e linha áspera.",
+   "D": "O vasto medial origina-se principalmente na linha intertrocantérica e linha áspera medial."
+  },
+  "referencias": [
+   "Gray's Anatomy. Anterior compartment of the thigh.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "quadril-0083": {
+  "conceito": "Os rotadores curtos posteriores organizam-se ao redor do tendão do obturador interno: o gêmeo superior fica acima dele e o gêmeo inferior abaixo. Na imagem, a seta indica a pequena faixa muscular superior ao obturador interno.",
+  "correta": "C — A estrutura assinalada é o músculo gêmeo superior.",
+  "incorretas": {
+   "A": "O piriforme é mais cranial e passa pelo forame isquiático maior.",
+   "B": "O gêmeo inferior está abaixo do tendão do obturador interno.",
+   "D": "O obturador interno forma o tendão central entre os dois gêmeos, não a faixa superior indicada."
+  },
+  "referencias": [
+   "Gray's Anatomy. Gluteal region and short external rotators.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "quadril-0084": {
+  "conceito": "O ligamento sacroespinal estende-se do sacro e cóccix à espinha isquiática. Junto com o ligamento sacrotuberal, converte as incisuras isquiáticas em forames e é referência para o trajeto do nervo pudendo.",
+  "correta": "D — A seta aponta para o ligamento sacroespinal.",
+  "incorretas": {
+   "A": "Os ligamentos sacroilíacos unem sacro e ílio na articulação sacroilíaca, mais superiormente.",
+   "B": "O sacrotuberal segue até a tuberosidade isquiática e é mais superficial e amplo.",
+   "C": "Sacroisquial é termo inespecífico e não nomeia o ligamento fino inserido na espinha isquiática."
+  },
+  "referencias": [
+   "Gray's Anatomy. Ligaments of the pelvis.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "quadril-0085": {
+  "conceito": "O músculo apontado é o reto femoral, componente biarticular do quadríceps. Sua cabeça direta origina-se na espinha ilíaca anteroinferior e sua cabeça refletida no sulco supra-acetabular.",
+  "correta": "C — A origem proximal principal é a espinha ilíaca anteroinferior.",
+  "incorretas": {
+   "A": "Apófise do ilíaco é descrição inespecífica e não a origem anatômica do reto femoral.",
+   "B": "O ramo inferior do púbis dá origem a músculos adutores, não ao reto femoral.",
+   "D": "A espinha ilíaca anterossuperior é origem do sartório."
+  },
+  "referencias": [
+   "Gray's Anatomy. Quadriceps femoris.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "quadril-0086": {
+  "conceito": "O gêmeo superior é uma pequena faixa muscular originada na espinha isquiática, situada superiormente ao tendão do obturador interno. O gêmeo inferior nasce da tuberosidade isquiática e ocupa a posição inferior.",
+  "correta": "C — A seta indica o gêmeo superior.",
+  "incorretas": {
+   "A": "O piriforme está acima do conjunto obturador interno–gêmeos.",
+   "B": "O gêmeo inferior fica abaixo do tendão do obturador interno.",
+   "D": "O obturador interno corresponde ao tendão central ladeado pelos músculos gêmeos."
+  },
+  "referencias": [
+   "Gray's Anatomy. Short external rotators of the hip.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "quadril-0087": {
+  "conceito": "O ligamento pubofemoral reforça a cápsula anteroinferior do quadril, originando-se no púbis e fundindo-se à cápsula e ao ligamento iliofemoral. Limita principalmente abdução e extensão excessivas.",
+  "correta": "D — A estrutura anteroinferior apontada é o ligamento pubofemoral.",
+  "incorretas": {
+   "A": "O iliofemoral é o forte ligamento em Y da face anterior, mais superior.",
+   "B": "Iliopectíneo não é o nome do reforço capsular indicado.",
+   "C": "Colopúbico não é ligamento reconhecido da cápsula do quadril."
+  },
+  "referencias": [
+   "Gray's Anatomy. Hip joint ligaments.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "quadril-0088": {
   "conceito": "O acesso de Smith-Petersen é o anterior clássico do quadril, e é definido por dois intervalos internervosos — motivo pelo qual ele preserva bem a musculatura. Superficialmente, entre o sartório (nervo femoral) e o tensor da fáscia lata (nervo glúteo superior). Profundamente, entre o reto femoral (femoral) e o glúteo médio (glúteo superior). A incisão vai da crista ilíaca, contorna a espinha ilíaca anterossuperior e desce pela coxa. É a via da artroplastia anterior, da redução aberta da displasia e das osteotomias pélvicas, e o nervo em risco é o cutâneo femoral lateral.",
@@ -925,6 +1165,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "quadril-0095": {
+  "conceito": "A técnica light bulb aborda a área necrótica por uma janela na junção cabeça-colo, removendo o osso desvitalizado e preenchendo o defeito com enxerto. É indicada antes do colapso, nos estágios iniciais de Ficat, quando ainda se busca preservar a cabeça femoral.",
+  "correta": "A — A figura mostra a técnica light bulb, indicada em osteonecrose Ficat I e II sem colapso.",
+  "incorretas": {
+   "B": "Estágios IIb avançado e III, com fratura subcondral ou colapso, têm prognóstico pior para técnica preservadora.",
+   "C": "Na trapdoor, o acesso é feito por uma janela na cartilagem da cabeça femoral, diferente da via cervical mostrada.",
+   "D": "Além de não ser trapdoor, os estágios com colapso não são a indicação clássica desta imagem."
+  },
+  "referencias": [
+   "Mont MA et al. The treatment of osteonecrosis of the femoral head with a lightbulb procedure. J Bone Joint Surg Am.",
+   "Campbell's Operative Orthopaedics. Osteonecrosis of the femoral head."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "quadril-0096": {
   "conceito": "A tendinopatia e a ruptura do glúteo médio são a causa mais frequente de dor lateral no quadril, e por anos foram tratadas como bursite trocantérica. O exame que melhor as identifica é o teste de função: abdução contra resistência, que dói e revela fraqueza quando o tendão está roto. A palpação do trocanter é sensível mas pouco específica — ela dói na bursite, na tendinopatia, na dor referida lombar e até no quadril artrósico. Vale ainda notar que um teste com 50% de sensibilidade e especificidade não distingue nada: seria o mesmo que jogar uma moeda, e não poderia ser chamado de reprodutível.",
   "correta": "Dor à abdução contra resistência, com desempenho acima de 70% — teste de função, e não apenas de sensibilidade local.",
@@ -936,6 +1200,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "quadril-0097": {
+  "conceito": "O triângulo de Ward é uma área triangular de menor densidade trabecular no colo femoral, entre os sistemas de compressão e tensão. O arco de Adam corresponde ao reforço cortical inferior do colo, contínuo com o calcar femoral.",
+  "correta": "A — A indica o triângulo de Ward e B indica o arco de Adam.",
+  "incorretas": {
+   "B": "Triângulo de Kaplan não é a denominação clássica da área trabecular mostrada.",
+   "C": "O arco inferior é conhecido como arco de Adam, não de Kaplan.",
+   "D": "As duas denominações Kaplan não correspondem às referências radiográficas apresentadas."
+  },
+  "referencias": [
+   "Garden RS. The structure and function of the proximal end of the femur. J Bone Joint Surg Br.",
+   "Gray's Anatomy. Trabecular architecture of the proximal femur."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "quadril-0098": {
   "conceito": "A corona mortis é a anastomose entre o sistema ilíaco externo e o sistema ilíaco interno na face posterior do ramo superior do púbis: a artéria (ou veia) epigástrica inferior, ramo da ilíaca externa, comunica-se com a artéria obturatória, ramo da ilíaca interna. Está presente em boa parte das pessoas e corre a poucos centímetros da sínfise, sobre a superfície quadrilátera. O nome vem do que acontece quando ela é seccionada sem ser vista: retrai para dentro da pelve e sangra onde ninguém alcança. Por isso a primeira janela do acesso ilioinguinal e o acesso de Stoppa começam por identificá-la e ligá-la.",
   "correta": "Artéria epigástrica inferior com artéria obturatória — a ponte entre os sistemas ilíaco externo e interno.",
@@ -946,6 +1234,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "quadril-0099": {
+  "conceito": "Na radiografia AP do acetábulo, as paredes anterior e posterior formam linhas curvas que contornam a cavidade. A parede anterior é a linha mais medial no segmento superior e cruza em direção inferior; a identificação correta é essencial na avaliação de fraturas acetabulares.",
+  "correta": "B — A estrutura numerada como 5 corresponde à parede anterior do acetábulo.",
+  "incorretas": {
+   "A": "A linha fisária da cabeça femoral fica no fêmur proximal, não no contorno acetabular.",
+   "C": "A parede posterior é representada por outra linha do contorno acetabular.",
+   "D": "A coluna anterior é uma estrutura tridimensional mais ampla e não a linha cortical específica número 5."
+  },
+  "referencias": [
+   "Judet R, Judet J, Letournel E. Fractures of the acetabulum: classification and surgical approaches.",
+   "AO Surgery Reference. Radiographic anatomy of the acetabulum."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "quadril-0100": {
   "conceito": "A via de Kocher-Langenbeck é a posterior do acetábulo, e nela três estruturas exigem cuidado: o nervo isquiático, o feixe glúteo superior na incisura isquiática maior e o ramo profundo da artéria circunflexa femoral medial, que corre junto aos rotadores curtos. A circunflexa medial é a que a questão pede porque é dela que depende a viabilidade da cabeça femoral, e é ela que dita as duas regras técnicas da via: seccionar os rotadores a pelo menos 1,5 cm da inserção femoral e não desinserir o quadrado femoral. Ressalva: o feixe glúteo superior também corre risco real nessa via, sobretudo com afastamento na incisura — a resposta escolhe a estrutura cuja lesão custa a cabeça femoral.",
@@ -980,6 +1292,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "quadril-0103": {
+  "conceito": "Na classificação de Dorr, o tipo C apresenta canal femoral largo em formato de chaminé, corticais finas e pouca definição do istmo. Esse padrão sugere menor qualidade óssea e exige atenção à fixação e ao risco de fratura durante a artroplastia.",
+  "correta": "C — Fêmur em chaminé com corticais finas é Dorr C.",
+  "incorretas": {
+   "A": "Dorr A tem corticais espessas e canal estreito em formato de taça de champanhe.",
+   "B": "Dorr B é intermediário, com corticais e canal menos extremos.",
+   "D": "A classificação original de Dorr utiliza os tipos A, B e C."
+  },
+  "referencias": [
+   "Dorr LD et al. Structural and cellular assessment of bone quality of proximal femur. Bone. 1993.",
+   "Campbell's Operative Orthopaedics. Total hip arthroplasty."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "quadril-0104": {
   "conceito": "Os quadrantes de Wasielewski se obtêm traçando uma linha da espinha ilíaca anterossuperior ao centro do acetábulo, prolongada para trás, e outra perpendicular a ela pelo centro. O posterossuperior é o quadrante de escolha: tem o osso mais espesso de todo o acetábulo e não há estrutura nobre imediatamente além da cortical interna. O posteroinferior é a segunda opção. Os anteriores são proibidos — no anterossuperior correm os vasos ilíacos externos do outro lado da parede, e no anteroinferior o feixe obturatório.",
@@ -1048,6 +1384,54 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "quadril-0110": {
+  "conceito": "O teste de Thomas avalia contratura em flexão do quadril. Ao flexionar o quadril contralateral para retificar a lordose lombar, a elevação da coxa testada indica encurtamento do iliopsoas; extensão do joelho pode acrescentar informação sobre o reto femoral.",
+  "correta": "D — É o teste de Thomas, usado para avaliar contratura do iliopsoas/flexores do quadril.",
+  "incorretas": {
+   "A": "O teste de Ely é feito em pronação com flexão do joelho e avalia principalmente reto femoral.",
+   "B": "Embora nomeie Ely, atribui a ele a avaliação principal errada.",
+   "C": "Thomas pode sugerir participação do reto femoral em variações, mas o teste mostrado e o objetivo principal são contratura em flexão pelo iliopsoas."
+  },
+  "referencias": [
+   "Magee DJ. Orthopedic Physical Assessment. Hip examination.",
+   "Hoppenfeld S. Physical Examination of the Spine and Extremities."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "quadril-0111": {
+  "conceito": "A manobra mostrada coloca o quadril em flexão, adução e rotação interna, tensionando o piriforme e podendo reproduzir dor glútea ou sintomas ciáticos. É uma manobra usada na investigação da síndrome do piriforme, sempre em conjunto com o restante do exame.",
+  "correta": "C — O teste avalia contratura ou irritação relacionada ao músculo piriforme.",
+  "incorretas": {
+   "A": "Impacto posterior é provocado principalmente em extensão e rotação externa.",
+   "B": "Impacto anterior é mais associado ao teste FADIR, mas a posição e o objetivo específicos da figura são dirigidos ao piriforme.",
+   "D": "Contratura do trato iliotibial é avaliada classicamente pelo teste de Ober."
+  },
+  "referencias": [
+   "Magee DJ. Orthopedic Physical Assessment. Hip special tests.",
+   "Hopayian K et al. The clinical features of the piriformis syndrome: a systematic review. Eur Spine J. 2010."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "quadril-0112": {
   "conceito": "A elevação do membro estendido tem duas leituras. A primária é neurológica: o teste de Lasègue estira as raízes lombossacras e reproduz a dor irradiada da hérnia de disco. A secundária é articular: ao levantar o membro estendido, o iliopsoas se contrai e comprime a articulação do quadril, de modo que dor na virilha durante a manobra — sobretudo contra resistência, que é o teste de Stinchfield — sugere doença intra-articular do quadril. É por isso que a mesma manobra serve para separar dor lombar irradiada de dor de origem no próprio quadril.",
   "correta": "Avaliar patologias intra-articulares do quadril: com o membro estendido elevado, o iliopsoas comprime a articulação e a dor na virilha aponta para dentro dela.",
@@ -1059,6 +1443,31 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "quadril-0113": {
+  "conceito": "O ângulo beta é uma medida relacionada à cobertura acetabular e ao impacto femoroacetabular; valores reduzidos indicam menor espaço angular disponível e podem sugerir conflito. Pelo critério adotado no item, valor abaixo de 30 graus define alteração.",
+  "correta": "A — O gabarito identifica o ângulo beta e considera impacto quando menor que 30°.",
+  "incorretas": {
+   "B": "O sentido do ponto de corte está invertido em relação ao critério cobrado.",
+   "C": "O ângulo alfa avalia a asfericidade cabeça-colo e valores elevados, não reduzidos, sugerem deformidade cam.",
+   "D": "Embora o alfa elevado se relacione ao impacto tipo cam, a figura referida pelo item foi classificada como medida do beta."
+  },
+  "alerta": "A figura mencionada não está disponível no acervo. Além disso, os pontos de corte variam com a técnica e a incidência radiográfica; a identificação precisa deve ser conferida na fonte original.",
+  "referencias": [
+   "Nötzli HP et al. The contour of the femoral head-neck junction as a predictor for the risk of anterior impingement. J Bone Joint Surg Br. 2002.",
+   "Tannast M et al. Hip damage occurs at the zone of femoroacetabular impingement. Clin Orthop Relat Res."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "quadril-0114": {
   "conceito": "O osso só se mantém onde é solicitado. Uma haste de módulo de elasticidade alto é muito mais rígida que o fêmur, assume a carga e deixa o osso proximal descarregado — é o desvio de carga, que leva à reabsorção do calcar. Uma haste de módulo baixo deforma junto com o osso, devolve a solicitação a ele e favorece a manutenção e a formação óssea. É por isso que o titânio (módulo em torno de 110 GPa) é preferido ao cromo-cobalto (cerca de 210 GPa) em hastes não cimentadas, e é por isso que se pesquisam ligas de módulo ainda menor.",
   "correta": "Módulo de elasticidade baixo, com formação óssea como efeito desejado.",
@@ -1069,6 +1478,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "quadril-0115": {
+  "conceito": "O sinal do crescente é uma linha radiolucente subcondral causada por fratura do osso necrótico, indicando progressão da osteonecrose antes do colapso franco. Na classificação de Ficat e Arlet, corresponde ao estágio IIB.",
+  "correta": "B — A radiografia mostra sinal do crescente, compatível com Ficat e Arlet IIB.",
+  "incorretas": {
+   "A": "Sinal do fantasma não é a denominação da linha subcondral mostrada.",
+   "C": "Mantém o estágio, mas nomeia incorretamente o sinal.",
+   "D": "No estágio III já existe colapso e perda de esfericidade da cabeça femoral."
+  },
+  "referencias": [
+   "Ficat RP. Idiopathic bone necrosis of the femoral head. J Bone Joint Surg Br. 1985.",
+   "ARCO Committee. Revised classification of osteonecrosis of the femoral head."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "quadril-0116": {
   "alerta": "Esta questão tem duas alternativas idênticas: a C e a D dizem exatamente a mesma coisa (radioluscência entre o terço inferomedial da haste e o manto de cimento). Vale registrar também que essa radioluscência inferomedial é, ela própria, um sinal descrito de descolamento — o padrão clássico do afrouxamento cimentado é justamente o par superolateral mais inferomedial, produzido pela haste que pivota dentro do cimento. A alternativa marcada como certa é apenas metade desse par.",
@@ -1082,6 +1515,31 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "quadril-0117": {
+  "conceito": "A técnica de Coventry utiliza fios metálicos configurados ao redor do trocânter maior para estabilizar a osteotomia e resistir às forças de tração dos abdutores. A disposição mostrada diferencia essa montagem de outras técnicas de cerclagem trocantérica.",
+  "correta": "C — A figura corresponde à técnica de Coventry.",
+  "incorretas": {
+   "A": "A técnica de Amstutz utiliza outra configuração de fixação trocantérica.",
+   "B": "Smith não corresponde ao padrão de fios mostrado.",
+   "D": "Markolf está associado a análises biomecânicas e montagens distintas da configuração ilustrada."
+  },
+  "alerta": "A nomenclatura dessas montagens pode variar entre fontes históricas; a identificação segue o desenho e o gabarito do banco.",
+  "referencias": [
+   "Coventry MB. Technique of fixation of the greater trochanter in total hip arthroplasty.",
+   "Campbell's Operative Orthopaedics. Trochanteric osteotomy and fixation."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "quadril-0118": {
   "conceito": "Todo procedimento que preserva a cabeça femoral — descompressão do núcleo, enxerto vascularizado, osteotomia — depende de sobrar osso viável suficiente para sustentar a superfície de carga. A extensão da necrose é, por isso, o melhor preditor de resultado, medida pelo percentual da cabeça acometida ou pelo ângulo necrótico combinado nos dois planos da ressonância. Acima de cerca de 30% da cabeça (ou de 200 graus de ângulo necrótico combinado), o índice de sucesso cai de forma marcada, e a discussão passa a ser sobre artroplastia.",
   "correta": "A partir de cerca de 30% de acometimento da cabeça o sucesso dos procedimentos de preservação cai.",
@@ -1092,6 +1550,31 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "quadril-0119": {
+  "conceito": "Após artrodese do quadril, a transferência crônica de movimento e carga para a coluna lombar, joelho ipsilateral e quadril contralateral pode produzir degeneração sintomática tardia. A janela clássica descrita é de aproximadamente 15 a 25 anos.",
+  "correta": "B — As alterações degenerativas adjacentes costumam tornar-se sintomáticas após 15–25 anos.",
+  "incorretas": {
+   "A": "Cinco a dez anos é geralmente curto para a evolução tardia clássica descrita.",
+   "C": "Dez a vinte anos se sobrepõe parcialmente, mas não corresponde ao intervalo cobrado no gabarito.",
+   "D": "Vinte e cinco a trinta anos é mais tardio que a faixa usual indicada."
+  },
+  "alerta": "O tempo é uma média histórica e varia com idade na artrodese, posição da fusão, atividade e estado das articulações adjacentes.",
+  "referencias": [
+   "Callaghan JJ et al. Hip arthrodesis: a long-term follow-up. J Bone Joint Surg Am.",
+   "Campbell's Operative Orthopaedics. Hip arthrodesis."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "quadril-0120": {
   "conceito": "A pelve de Otto (artrocatadise) é a protrusão acetabular primária, idiopática, e o perfil dela é bem definido: mulheres, com acometimento bilateral, dor presente e evolução para artrose precoce — costuma se manifestar na adolescência ou no adulto jovem, e não no idoso. A cabeça afunda para dentro da pelve, o contato se concentra no fundo do acetábulo e a rotação e a abdução se perdem cedo. Protrusão de um lado só, ou em paciente com doença conhecida, aponta para a forma secundária: artrite reumatoide, Paget, osteomalácia, sequela de trauma ou infecção.",
@@ -1137,6 +1620,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "quadril-0124": {
+  "conceito": "A figura mostra o paciente sentado tentando elevar a coxa contra resistência: é o **teste de Ludloff**. Dor ou dificuldade nessa flexão ativa pode indicar comprometimento do iliopsoas ou de sua inserção no trocanter menor. O teste contribui para a hipótese, mas não confirma sozinho uma fratura-avulsão.",
+  "correta": "**A — Ludloff; iliopsoas e trocanter menor.** A contração do flexor transmite força à sua inserção, podendo reproduzir dor quando há lesão tendínea ou avulsão.",
+  "incorretas": {
+   "B": "O reto femoral tem origem direta na espinha ilíaca anteroinferior, mas essa não é a associação anatômica cobrada pelo sinal de Ludloff.",
+   "C": "Bragard é uma manobra de tensão neural associada à elevação da perna estendida e dorsiflexão do tornozelo; não corresponde à flexão ativa sentada da figura.",
+   "D": "Além de trocar Ludloff por Bragard, atribui ao teste uma investigação de avulsão da origem do reto femoral que não corresponde ao item."
+  },
+  "referencias": [
+   "Isolated Avulsion Fracture of the Lesser Trochanter in an Adolescent: A Case Report and Review of the Literature. https://pmc.ncbi.nlm.nih.gov/articles/PMC10127991/",
+   "Lesser Trochanter Apophyseal Avulsion Fracture: A Case Report and Review of the Literature. https://pmc.ncbi.nlm.nih.gov/articles/PMC11281936/"
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "quadril-0125": {
   "conceito": "A artroscopia do quadril começa às cegas, com o quadril tracionado e a articulação distendida, e por isso a ordem dos portais tem lógica de segurança. O anterolateral é feito primeiro, logo à frente e acima da ponta do trocanter maior, sob fluoroscopia: é o ponto que fica dentro da zona segura, longe do cutâneo femoral lateral e com o glúteo superior acima. Estabelecida a visão por ele, os demais portais — o anterior à frente e os acessórios — são feitos sob visão direta, de dentro para fora, o que é justamente o que a técnica inside-out significa.",
   "correta": "Anterolateral: é o portal feito primeiro, sob fluoroscopia, para que os demais sejam criados sob visão direta.",
@@ -1147,6 +1654,31 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "quadril-0126": {
+  "conceito": "Vancouver combina **localização da fratura, estabilidade da haste e estoque ósseo**. A radiografia mostra uma fratura ao redor da haste femoral, portanto do grupo B. Para classificá-la como B2, como estabelece o gabarito, é necessário que a haste esteja solta e o estoque ósseo seja adequado.",
+  "correta": "**B — Vancouver B2.** Corresponde à fratura em torno de uma haste solta, com estoque ósseo preservado.",
+  "incorretas": {
+   "A": "B1 tem haste bem fixada. O traço por si só não distingue B1 de B2: a estabilidade do implante é decisiva.",
+   "C": "B3 também tem haste solta, porém com estoque ósseo proximal inadequado; esse déficit não é o pressuposto do gabarito.",
+   "D": "C é uma fratura claramente distal à haste. Aqui o traço envolve a região ocupada pelo componente femoral."
+  },
+  "alerta": "A imagem isolada permite reconhecer o grupo B, mas não comprova com segurança a soltura da haste. Radiografias anteriores, sinais de migração e, quando necessário, avaliação intraoperatória ajudam a diferenciar B1 de B2.",
+  "referencias": [
+   "Tapered Fluted Titanium Stems in the Management of Vancouver B2 and B3 Periprosthetic Femoral Fractures. https://pmc.ncbi.nlm.nih.gov/articles/PMC3890200/",
+   "In Brief: Classifications in Brief: Vancouver Classification of Postoperative Periprosthetic Femur Fractures. https://pmc.ncbi.nlm.nih.gov/articles/PMC3069264/"
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "quadril-0127": {
   "conceito": "O acesso lateral direto de Hardinge divide o glúteo médio no seu terço anterior e continua pelo vasto lateral, formando um manguito contínuo de partes moles sobre o trocanter. O limite proximal dessa divisão é anatômico: o nervo glúteo superior entra no glúteo médio pela face profunda, correndo transversalmente a cerca de 3 a 5 cm acima da ponta do trocanter maior. Passar desse ponto secciona o nervo, e o resultado é insuficiência abdutora permanente com marcha de Trendelenburg — uma complicação que não tem tratamento reconstrutivo satisfatório.",

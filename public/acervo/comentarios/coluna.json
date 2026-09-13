@@ -98,6 +98,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "coluna-0010": {
+  "conceito": "Os arcos neurais unem-se ao corpo vertebral pelas sincondroses neurocentrais. O fechamento ocorre progressivamente na infância e se completa mais tardiamente na região **torácica**.",
+  "correta": "**B — torácica.** É a região em que a sincondrose corpo-arco fecha por último.",
+  "incorretas": {
+   "A": "Na cervical a fusão costuma ocorrer antes.",
+   "C": "A lombar não é o último sítio de fechamento.",
+   "D": "A sacral segue um processo adicional de fusão entre segmentos, distinto da sincondrose neurocentral perguntada."
+  },
+  "referencias": [
+   "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020. Development of the vertebral column.",
+   "Tachdjian's Pediatric Orthopaedics. 6th ed. Elsevier; 2021."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0011": {
   "conceito": "O teste de Schober mede quanto a coluna lombar realmente flete, separando a flexão do tronco que vem da coluna daquela que vem dos quadris. Com o paciente em pé, marca-se um ponto na junção lombossacra e outro 10 cm acima (na versão modificada, também 5 cm abaixo, medindo 15 cm no total); pede-se flexão anterior máxima e mede-se de novo. O normal é a distância aumentar pelo menos 5 cm. Aumento menor indica rigidez lombar — e o uso clássico é no acompanhamento da espondilite anquilosante, em que a perda progressiva de mobilidade é um dos parâmetros de atividade da doença.",
   "correta": "Limitação dos movimentos da coluna lombar.",
@@ -218,6 +242,31 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "coluna-0022": {
+  "conceito": "Na classificação de Lenke, o tipo 1 corresponde à curva torácica principal; o modificador lombar depende da relação da vértebra apical lombar com a linha central sacral, e o modificador sagital descreve a cifose torácica. Na figura, a curva torácica é a principal, sem evidência de curva proximal estrutural ou de curva lombar estrutural, compatível com 1A N.",
+  "correta": "A — 1A N: curva torácica principal, modificador lombar A e modificador sagital neutro.",
+  "incorretas": {
+   "B": "O modificador B pressuporia maior desvio da vértebra apical lombar em relação à linha central sacral.",
+   "C": "O tipo 2 exige uma curva proximal torácica estrutural associada; ela não é o padrão dominante mostrado.",
+   "D": "O tipo 3 descreve padrão de dupla curva estrutural, e o modificador sagital indicado não corresponde à imagem."
+  },
+  "alerta": "A classificação exige radiografias de coluna inteira e avaliação dos critérios de estruturalidade; a leitura de uma reprodução pequena pode limitar a certeza.",
+  "referencias": [
+   "Lenke LG et al. Adolescent idiopathic scoliosis: a new classification to determine extent of spinal arthrodesis. J Bone Joint Surg Am. 2001.",
+   "Scoliosis Research Society. The Lenke classification of adolescent idiopathic scoliosis."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0023": {
   "conceito": "A artéria vertebral sobe pelos forames transversos e, ao sair de C1, faz uma curva característica: ela corre horizontalmente sobre a face superior do arco posterior do atlas, dentro do sulco da artéria vertebral, antes de perfurar a membrana atlantoccipital e entrar no crânio. Esse trajeto a coloca a cerca de 1,5 cm da linha média de cada lado — daí a regra de ouro do acesso posterior à coluna cervical alta: dissecar o arco posterior de C1 no máximo até essa distância. Passar disso significa alcançar a artéria, e o sangramento é grave e de controle difícil.",
@@ -516,6 +565,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "coluna-0050": {
+  "conceito": "A seta aponta para a porção medial posterior da medula, no funículo posterior. No fascículo grácil, as fibras sacrais e lombares ocupam a região medial; as fibras torácicas e cervicais ficam progressivamente mais laterais.",
+  "correta": "D — A região mais medial do funículo posterior corresponde às fibras sacrais, portanto ao território sacral.",
+  "incorretas": {
+   "A": "As fibras cervicais do funículo posterior ficam mais lateralmente, no fascículo cuneiforme.",
+   "B": "As fibras torácicas não ocupam a posição mais medial do funículo posterior.",
+   "C": "As fibras lombares ficam no fascículo grácil, mas lateralmente às fibras sacrais mais mediais."
+  },
+  "referencias": [
+   "Gray's Anatomy for Students. Spinal cord tracts and somatotopy.",
+   "Snell RS. Clinical Neuroanatomy. Posterior column–medial lemniscus pathway."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0051": {
   "conceito": "A coluna cervical divide o trabalho entre seus segmentos. A articulação atlantoaxial (C1-C2) responde por cerca de METADE de toda a rotação axial — perto de 45 graus para cada lado —, graças ao pivô do processo odontoide e às facetas quase horizontais. A occipitoatlantal responde por cerca de metade da flexoextensão. E a cervical baixa, de C3 a C7, distribui entre seus níveis o restante. Uma consequência prática: artrodese C1-C2 custa ao paciente metade da rotação do pescoço, e é isso que se explica antes de indicá-la.",
   "correta": "50%.",
@@ -549,6 +622,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "coluna-0054": {
+  "conceito": "O acesso paraespinhal lombar utiliza o intervalo intermuscular entre o multífido, mais medial, e o longuíssimo, mais lateral. Esse plano permite chegar às estruturas posteriores profundas sem atravessar diretamente a massa muscular como em uma abordagem transmuscular.",
+  "correta": "D — O plano anatômico clássico é entre multífido e longuíssimo.",
+  "incorretas": {
+   "A": "Rotadores são músculos profundos junto às lâminas, não o limite lateral principal desse plano.",
+   "B": "Iliolombar não é o músculo que forma o intervalo paraespinhal profundo descrito.",
+   "C": "O iliolombar não compõe o plano intermuscular clássico entre os músculos paravertebrais posteriores."
+  },
+  "referencias": [
+   "Aebi M, Arlet V, Webb JK. AO Spine Manual. Surgical anatomy of the lumbar posterior approaches.",
+   "Benzel EC. Spine Surgery: Techniques, Complication Avoidance, and Management. Posterior lumbar approaches."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0055": {
   "conceito": "O acesso lateral transpsoas (XLIF) atravessa o músculo psoas, e dentro dele corre o plexo lombar. As raízes descem de posterior para anterior à medida que se aproximam da pelve, de modo que quanto mais BAIXO o nível, mais anterior — e portanto mais exposto — está o plexo dentro do psoas. Em L4-L5 o plexo já ocupa boa parte do quadrante posterior e médio do disco, e ali está também o nervo genitofemoral, superficial na face anterior do músculo. É por isso que L4-L5 concentra as lesões neurológicas da técnica, e por isso L5-S1 é considerado inacessível por essa via, também pela crista ilíaca.",
   "correta": "L4/L5, nível em que o plexo lombar está mais anteriorizado dentro do psoas.",
@@ -559,6 +656,31 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "coluna-0056": {
+  "conceito": "A figura mostra uma hemivértebra, isto é, falha de formação de um lado do corpo vertebral, com deformidade angular progressiva. O padrão apresentado é classificado como hemivértebra semissegmentada, em que a anomalia tem apenas um disco intervertebral livre associado.",
+  "correta": "C — O defeito principal é de formação e a hemivértebra é semissegmentada.",
+  "incorretas": {
+   "A": "Barra unilateral é defeito de segmentação, não uma hemivértebra formada de modo incompleto.",
+   "B": "Vértebra em bloco resulta de falha de segmentação entre vértebras, sem o padrão de hemivértebra mostrado.",
+   "D": "Hemivértebra completamente segmentada teria discos livres acima e abaixo, distinção que não corresponde ao padrão indicado no gabarito."
+  },
+  "alerta": "A distinção entre hemivértebra semissegmentada e completamente segmentada depende da identificação dos discos livres na imagem; a ilustração é esquemática.",
+  "referencias": [
+   "McMaster MJ, Ohtsuka K. The natural history of congenital scoliosis. J Bone Joint Surg Br. 1982.",
+   "Batra S, Ahuja S. Congenital scoliosis: a comprehensive review. Acta Orthop Belg. 2008."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0057": {
   "conceito": "Na coluna cervical a raiz comprimida leva o número da vértebra INFERIOR do disco — mas C7/T1 é a fronteira: esse disco comprime a raiz de C8, que é a última raiz cervical e não tem vértebra correspondente. O quadro de C8 é bem definido: hipoestesia no dedo MÍNIMO, no anular e na borda ulnar do antebraço, e fraqueza dos flexores profundos dos dedos e da musculatura INTRÍNSECA da mão, com dificuldade de abrir e fechar os dedos e de fazer pinça. Não há reflexo próprio para C8. O diferencial é com compressão ulnar no cotovelo e com síndrome do desfiladeiro torácico.",
@@ -626,6 +748,31 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "coluna-0063": {
+  "conceito": "O reflexo superficial ilustrado é evocado por estímulo cutâneo na região abdominal inferior. Sua integração depende principalmente dos segmentos toracolombares baixos, especialmente T12–L1.",
+  "correta": "D — O reflexo cutâneo abdominal inferior testa predominantemente T12 e L1.",
+  "incorretas": {
+   "A": "L1–L2 se relaciona mais diretamente a reflexos como o cremastérico, não ao reflexo abdominal inferior mostrado.",
+   "B": "S1–S2 corresponde a reflexos sacrais, como o aquileu e o bulbocavernoso, não ao reflexo abdominal inferior.",
+   "C": "L1 e S1 não formam o arco segmentar principal desse reflexo superficial abdominal."
+  },
+  "alerta": "A imagem é pouco específica e a legenda do reflexo não aparece; a resposta segue a associação clássica do reflexo cutâneo abdominal inferior.",
+  "referencias": [
+   "DeMyer W. Technique of the Neurologic Examination. Superficial abdominal reflexes.",
+   "Bates' Guide to Physical Examination and History Taking. Neurologic examination."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0064": {
   "conceito": "O acesso anterior da coluna cervical passa entre a bainha carotídea, lateralmente, e o conjunto traqueoesofágico, medialmente — e é o afastamento contínuo dessas estruturas que produz suas complicações. A DISFAGIA é de longe a mais comum: aparece em boa parte dos pacientes no pós-operatório imediato, por edema da parede posterior da faringe e do esôfago, e costuma ser transitória, embora possa persistir em uma minoria. As demais decorrem de lesão nervosa — rouquidão e disfonia pelo laríngeo recorrente, síndrome de Horner pela cadeia simpática no músculo longo do pescoço — e são bem menos frequentes.",
@@ -737,6 +884,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "coluna-0074": {
+  "conceito": "O ângulo pélvico de T1 (T1 pelvic angle, TPA) é formado pela linha que une o centro da cabeça femoral à vértebra T1 e pela vertical que passa pelo centro da cabeça femoral. Ele combina, em uma única medida, o balanço do tronco e a retroversão pélvica.",
+  "correta": "C — A seta identifica o ângulo pélvico de T1.",
+  "incorretas": {
+   "A": "Balanço sagital é uma descrição global do desalinhamento, não o nome específico do ângulo desenhado.",
+   "B": "Ângulo de cifose mede a curvatura entre níveis vertebrais, e não a relação T1–cabeça femoral com a vertical.",
+   "D": "Alinhamento espinopélvico é um conceito abrangente; a medida representada é especificamente o TPA."
+  },
+  "referencias": [
+   "Protopsaltis T et al. The lumbar lordosis, pelvic incidence, and spinopelvic parameters in adult spinal deformity. Spine.",
+   "Schwab F et al. SRS-Schwab classification of adult spinal deformity. Spine. 2012."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0075": {
   "conceito": "A força de arrancamento do parafuso pedicular depende de quanto osso a rosca consegue segurar — e isso é determinado, antes de tudo, pela DENSIDADE MINERAL do osso em que ela se ancora. Num corpo osteoporótico, nenhuma escolha de rosca, comprimento ou trajetória compensa a falta de osso, e é por isso que ali se recorre a artifícios: parafusos de maior diâmetro, trajetória cortical, aumento com cimento, ganchos ou aumento do número de níveis instrumentados. Desenho da rosca, diâmetro e comprimento importam, mas atuam sobre a matéria-prima que a densidade oferece.",
   "correta": "Densidade mineral óssea do corpo vertebral.",
@@ -758,6 +929,56 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "coluna-0077": {
+  "conceito": "Na hérnia discal, flexão de quadris e joelhos em decúbito dorsal reduz tensão radicular e pode aliviar dor. A radiculopatia L5 classicamente irradia pela face posterolateral da perna ao dorso do pé e hálux.",
+  "correta": "O gabarito registra **C — T10 como dermátomo mais envolvido na hérnia torácica**.",
+  "incorretas": {
+   "A": "Na fase aguda há retificação antálgica, não acentuação da lordose lombar.",
+   "B": "A posição semi-Fowler costuma aliviar sintomas e, portanto, esta afirmação também é clinicamente verdadeira.",
+   "D": "A distribuição descrita é compatível com L5 e também constitui afirmação verdadeira."
+  },
+  "alerta": "**Questão com múltiplas alternativas defensáveis.** B e D são descrições clínicas aceitas. C depende de uma distribuição epidemiológica específica e não deveria ser a única correta sem fonte ou qualificação adicional.",
+  "referencias": [
+   "North American Spine Society. Lumbar Disc Herniation With Radiculopathy Clinical Guideline.",
+   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0078": {
+  "conceito": "A imagem representa a síndrome da artéria espinal anterior, com comprometimento dos dois terços anteriores da medula. No trauma raquimedular, o padrão associado a espondilose ou osteoartrose cervical prévia é especialmente lembrado na síndrome medular central, que pode coexistir como diagnóstico diferencial; o achado clínico clássico da síndrome central é maior déficit nos membros superiores.",
+  "correta": "C — A osteoartrose pré-existente é uma associação comum nos pacientes, sobretudo idosos, com estenose cervical e síndrome medular central após trauma.",
+  "incorretas": {
+   "A": "Não é a lesão mais rara nem se restringe a pacientes jovens.",
+   "B": "Brown-Séquard é hemissecção medular, com déficit motor/proprioceptivo ipsilateral e dor/temperatura contralateral.",
+   "D": "Na síndrome medular central, a paresia costuma ser pior nos membros superiores; na síndrome anterior, o padrão é outro e não autoriza essa regra."
+  },
+  "alerta": "A ilustração enfatiza a artéria espinal anterior, mas a alternativa C remete à associação clássica da síndrome central com canal cervical degenerativo. A questão mistura síndromes e merece conferência da fonte original.",
+  "referencias": [
+   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022.",
+   "Vaccaro AR et al. The Subaxial Cervical Spine Injury Classification System. Spine. 2007."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0079": {
   "conceito": "A órtese na cifose de Scheuermann só funciona sob duas condições, e é isso que a resposta reúne. A deformidade precisa ter alguma FLEXIBILIDADE, demonstrada pela radiografia em hiperextensão sobre coxim — uma cifose rígida não responde a colete. E precisa haver crescimento remanescente suficiente para que a órtese aja, o que na prática significa pelo menos um ano, e não seis meses. A faixa de indicação vai de cerca de 50 a 55 graus até 70 a 80 graus; abaixo disso observa-se e trabalha-se postura e alongamento, e acima disso, ou com rigidez, a discussão passa a ser cirúrgica.",
@@ -935,6 +1156,151 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "coluna-0096": {
+  "conceito": "O dermátomo indicado na face lateral do pé e no quinto pododáctilo corresponde predominantemente à raiz S1. Esse território deve ser separado do dorso do pé e hálux, mais relacionados a L5.",
+  "correta": "C — A borda lateral do pé e o quinto dedo são referências clássicas de S1.",
+  "incorretas": {
+   "A": "L4 é mais associado à face medial da perna e ao maléolo medial.",
+   "B": "L5 predomina no dorso do pé e no hálux.",
+   "D": "S2 ocupa principalmente a face posterior da coxa e da perna, não a borda lateral do pé."
+  },
+  "referencias": [
+   "Bates' Guide to Physical Examination and History Taking. Neurologic examination.",
+   "DeMyer W. Technique of the Neurologic Examination. Dermatomes and myotomes."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0097": {
+  "conceito": "O nervo sinuvertebral, ou nervo recorrente meníngeo, retorna ao canal vertebral após receber fibras somáticas e autonômicas. Ele inerva estruturas como o ligamento longitudinal posterior, dura, corpo vertebral e parte externa do ânulo, participando da dor discogênica e vertebral.",
+  "correta": "A — A estrutura apontada é o nervo sinuvertebral, ramo recorrente que entra novamente no canal vertebral.",
+  "incorretas": {
+   "B": "O ramo ventral segue anteriormente e lateralmente para formar o plexo ou os nervos espinhais, não é o ramo recorrente mostrado.",
+   "C": "O ramo dorsal lateral distribui-se para músculos e pele posteriores, sem o trajeto de retorno ao canal.",
+   "D": "O ramo dorsal medial é um ramo posterior do ramo dorsal, voltado às articulações e musculatura profundas."
+  },
+  "referencias": [
+   "Bogduk N. Clinical Anatomy of the Lumbar Spine and Sacrum. 5th ed. Elsevier; 2012.",
+   "Gray's Anatomy. Innervation of the vertebral column and sinuvertebral nerve."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0098": {
+  "conceito": "A fluoroscopia mostra uma abordagem transforaminal lombar no forame correspondente a L5. A raiz que atravessa o forame neural é a raiz que recebe o mesmo nome do pedículo/nível, enquanto a raiz descendente L5 pode ser afetada por hérnia discal no nível acima.",
+  "correta": "C — O forame indicado é o de L5, portanto a raiz correspondente é L5.",
+  "incorretas": {
+   "A": "L3 corresponde a níveis mais cranianos e não ao forame mostrado.",
+   "B": "L4 é a raiz do forame imediatamente acima.",
+   "D": "S1 emerge pelo forame sacral, abaixo da região lombar mostrada."
+  },
+  "alerta": "A identificação radiográfica depende da contagem dos níveis e da incidência; a resposta segue o gabarito e a anatomia foraminal ilustrada.",
+  "referencias": [
+   "Bogduk N. Clinical Anatomy of the Lumbar Spine and Sacrum. 5th ed. Elsevier; 2012.",
+   "North American Spine Society. Diagnosis and Treatment of Lumbar Disc Herniation With Radiculopathy Clinical Guideline."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0099": {
+  "conceito": "No corte axial, a seta aponta para a lâmina, a porção posterior do arco vertebral que conecta o processo espinhoso aos elementos articulares. O pedículo fica mais anterior e lateral, unindo o corpo vertebral ao arco posterior.",
+  "correta": "C — A estrutura indicada é a lâmina do arco vertebral.",
+  "incorretas": {
+   "A": "O tubérculo do corpo não é a estrutura posterior apontada no arco neural.",
+   "B": "O tubérculo posterior não corresponde ao elemento ósseo amplo entre faceta e processo espinhoso.",
+   "D": "O pedículo está anteriormente, entre o corpo vertebral e a massa articular, e não na posição indicada."
+  },
+  "referencias": [
+   "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy. Vertebral column."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0100": {
+  "conceito": "O dermátomo indicado no polegar e na borda radial da mão corresponde predominantemente à raiz C6. A distribuição dermatomérica tem sobreposição, mas polegar e indicador são referências úteis para C6, enquanto o dedo médio aponta mais para C7 e o dedo mínimo para C8.",
+  "correta": "B — Polegar e borda radial da mão são territórios clássicos de C6.",
+  "incorretas": {
+   "A": "C5 relaciona-se mais ao ombro e à face lateral proximal do braço.",
+   "C": "C7 predomina no dedo médio e na região central da mão.",
+   "D": "C8 predomina no dedo mínimo e na borda ulnar da mão."
+  },
+  "referencias": [
+   "Bates' Guide to Physical Examination and History Taking. Cervical dermatomes.",
+   "DeMyer W. Technique of the Neurologic Examination. Dermatomes and myotomes."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0101": {
+  "conceito": "A artéria espinal anterior desce longitudinalmente na fissura mediana anterior e irriga os dois terços anteriores da medula. As artérias radiculares entram pelos forames e podem reforçar a circulação, mas não são o vaso longitudinal central indicado.",
+  "correta": "A — A seta aponta para a artéria espinal anterior na linha mediana anterior da medula.",
+  "incorretas": {
+   "B": "A artéria radicular anterior é uma contribuição segmentar, com trajeto lateral pelo forame.",
+   "C": "A artéria de Adamkiewicz é uma artéria radiculomedular dominante, geralmente toracolombar, não o vaso longitudinal mostrado.",
+   "D": "As artérias intercostais posteriores são vasos segmentares da parede torácica."
+  },
+  "referencias": [
+   "Gray's Anatomy. Blood supply of the spinal cord.",
+   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0102": {
   "conceito": "O reflexo bulbocavernoso — contração do esfíncter anal ao apertar a glande ou o clitóris, ou ao tracionar a sonda vesical — é o arco reflexo MAIS DISTAL da medula, com centro sacral baixo. Por isso ele é o último a desaparecer e o primeiro a voltar, e é o marcador do fim do CHOQUE MEDULAR, tipicamente entre 24 e 48 horas do trauma. A importância prática é enorme: enquanto o choque medular dura, toda a medula está arreflexa e não se pode dizer se a lesão é completa ou incompleta. Só depois do retorno desse reflexo a classificação neurológica ganha valor prognóstico.",
   "correta": "Reflexo bulbocavernoso, o mais distal, com retorno usual entre 24 e 48 horas.",
@@ -1033,6 +1399,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "coluna-0111": {
+  "conceito": "A incidência pélvica é o ângulo entre a perpendicular ao platô superior de S1 e a linha que une o centro desse platô ao centro das cabeças femorais. É um parâmetro morfológico, independente da posição, ao contrário da inclinação sacral e da versão pélvica.",
+  "correta": "C — O esquema mede a incidência pélvica.",
+  "incorretas": {
+   "A": "Balanço pélvico descreve a posição da pelve, não a medida geométrica mostrada.",
+   "B": "Inclinação sacral é o ângulo entre o platô de S1 e a horizontal.",
+   "D": "Retroversão pélvica corresponde ao aumento da versão pélvica, um parâmetro posicional."
+  },
+  "referencias": [
+   "Vialle R et al. Radiographic analysis of the sagittal alignment and balance of the spine in asymptomatic subjects. J Bone Joint Surg Am. 2005.",
+   "Schwab F et al. SRS-Schwab classification of adult spinal deformity. Spine. 2012."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0112": {
   "conceito": "Tomita classificou o tumor vertebral pela extensão anatômica, e a divisão maior é entre INTRA e EXTRAcompartimental. Intracompartimental: tipo 1 restrito ao corpo, tipo 2 estendendo-se ao pedículo, tipo 3 alcançando lâmina e processo espinhoso. EXTRAcompartimental: tipo 4 com extensão EPIDURAL, tipo 5 com extensão paravertebral, tipo 6 acometendo a vértebra adjacente. E o tipo 7, lesões múltiplas ou salteadas. A classificação orienta a espondilectomia em bloco: os tipos 1 a 5 são candidatos, o 6 é limítrofe e o 7 costuma ser contraindicação.",
@@ -1176,6 +1566,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "coluna-0125": {
+  "conceito": "A pars interarticularis é o segmento ósseo entre as facetas superior e inferior. Na radiografia oblíqua, uma linha de fratura nessa região caracteriza espondilólise, tradicionalmente lembrada como o “collar” no Scottie dog.",
+  "correta": "D — A estrutura fraturada é a pars interarticularis.",
+  "incorretas": {
+   "A": "O pedículo fica anterior à massa articular e não é a linha de fratura indicada.",
+   "B": "O processo transverso projeta-se lateralmente e tem localização diferente da pars.",
+   "C": "A lâmina é posterior e medial, mas a fratura ilustrada atravessa o istmo entre as facetas."
+  },
+  "referencias": [
+   "Wiltse LL, Newman PH, Macnab I. Classification of spondylolysis and spondylolisthesis. Clin Orthop Relat Res. 1976;117:23-29.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0126": {
   "conceito": "A medula cresce mais devagar que a coluna, e por isso ela termina bem acima do fim do canal: no recém-nascido o cone medular fica em torno de L3, e no adulto ele termina em L1, podendo chegar à borda superior de L2. Abaixo disso há apenas cauda equina e filamento terminal. Duas consequências práticas saem daí: a punção lombar se faz em L3-L4 ou L4-L5, seguramente abaixo do cone; e uma fratura da transição toracolombar pode lesar cone e raízes ao mesmo tempo, produzindo quadro misto de primeiro e segundo neurônio motor.",
@@ -1433,6 +1847,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "coluna-0149": {
+  "conceito": "A protrusão discal ocorre quando o tecido discal desloca-se além do contorno normal, mas a base do material herniado é mais larga que o seu maior diâmetro. Na extrusão, o fragmento tem colo estreito; no sequestro, perde continuidade com o disco.",
+  "correta": "D — A figura mostra uma protrusão, com abaulamento contido e base ampla.",
+  "incorretas": {
+   "A": "Disco normal não apresenta deslocamento focal do contorno discal.",
+   "B": "Extrusão tem relação altura/base invertida, com colo mais estreito que o fragmento.",
+   "C": "Sequestro implica fragmento livre, sem continuidade com o disco de origem."
+  },
+  "referencias": [
+   "Fardon DF et al. Lumbar disc nomenclature: version 2.0. Spine J. 2014;14:2525-2545.",
+   "North American Spine Society. Lumbar Disc Herniation With Radiculopathy Clinical Guideline."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0150": {
   "conceito": "O parafuso pedicular fixa as três colunas da vértebra, e é isso que explica todas as suas vantagens sobre ganchos e fios sublaminares: ele permite manobras de derrotação e translação diretas sobre o corpo, alcançando CORREÇÃO maior no plano coronal e melhor correção da rotação, com menos níveis instrumentados e menor perda de correção ao longo do tempo. O preço vem em três frentes: custo mais alto, mais radiação intraoperatória para conferir a trajetória e o risco de o parafuso violar o pedículo em direção à medula, à aorta ou à pleura.",
   "correta": "Melhor correção no plano coronal.",
@@ -1476,6 +1914,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "coluna-0154": {
+  "conceito": "A linha de Swischuk é traçada ao longo das margens anteriores dos processos espinhosos de C1 a C3, ajudando a avaliar alinhamento cervical pediátrico. Uma linha que não acompanha adequadamente C2 pode sugerir instabilidade ou lesão, conforme o contexto.",
+  "correta": "A — A linha ilustrada é a linha de Swischuk.",
+  "incorretas": {
+   "B": "A linha de Macgregor avalia a posição da tonsila ou palato em relação ao occipital, não o alinhamento espinhoso mostrado.",
+   "C": "A linha de McRae é o plano do forame magno.",
+   "D": "A linha de Wackenheim relaciona o clivo ao processo odontoide."
+  },
+  "referencias": [
+   "Swischuk LE. Anterior displacement of C2 in children: radiographic recognition and significance.",
+   "Tachdjian's Pediatric Orthopaedics. 6th ed. Elsevier; 2021."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0155": {
   "conceito": "O choque neurogênico depende da interrupção do fluxo simpático, e a cadeia simpática torácica sai da medula entre T1 e L2. Lesões acima de T6 — ou seja, na coluna cervical e na TORÁCICA ALTA — desconectam a maior parte dessa saída, incluindo os nervos cardíacos aceleradores (T1-T4), e produzem o quadro completo: hipotensão por vasoplegia, bradicardia por vago sem oposição e hipotermia por poiquilotermia. Lesões abaixo de T6 poupam a inervação simpática cardíaca e a maior parte do leito esplâncnico, e não produzem choque neurogênico verdadeiro.",
@@ -1575,6 +2037,151 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "coluna-0164": {
+  "conceito": "O ligamento transverso do atlas estende-se entre as massas laterais de C1, posteriormente ao dente do áxis, mantendo o odontoide contra o arco anterior do atlas. É o principal estabilizador da articulação atlantoaxial.",
+  "correta": "C — A seta indica o ligamento transverso do atlas, posterior ao processo odontoide.",
+  "incorretas": {
+   "A": "Os ligamentos alares seguem do odontoide aos côndilos occipitais, lateralmente.",
+   "B": "Odontoide é uma estrutura óssea de C2, não um ligamento.",
+   "D": "A membrana tectorial fica mais posterior e superior, continuando o ligamento longitudinal posterior."
+  },
+  "referencias": [
+   "Panjabi MM et al. Three-dimensional biomechanical analysis of the upper cervical spine. Spine.",
+   "Gray's Anatomy. Craniocervical ligaments."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0165": {
+  "conceito": "O nervo laríngeo recorrente ascende no sulco traqueoesofágico, próximo à face medial da bainha carotídea e à traqueia. No acesso anterior cervical, a abordagem pelo lado esquerdo é tradicionalmente associada a menor risco de lesão do recorrente, por diferenças de trajeto entre os lados.",
+  "correta": "D — A estrutura indicada é o nervo laríngeo recorrente.",
+  "incorretas": {
+   "A": "O vago permanece na bainha carotídea, entre carótida e jugular, e não segue o trajeto medial mostrado.",
+   "B": "O frênico desce sobre o músculo escaleno anterior, mais lateralmente.",
+   "C": "O hipoglosso cruza a região carotídea alta e não desce no sulco traqueoesofágico."
+  },
+  "referencias": [
+   "Kline DG, Fox IK. Surgical anatomy of the recurrent laryngeal nerve.",
+   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0166": {
+  "conceito": "Na via paraespinhal de Wiltse, o intervalo intermuscular é entre o longuíssimo, mais lateral, e o multífido, mais medial. A separação nesse plano permite alcançar a junção facetária e a pars com menor descolamento muscular.",
+  "correta": "D — A seta 1 indica o longuíssimo e a seta 2 indica o multífido.",
+  "incorretas": {
+   "A": "Inverte os músculos e ainda nomeia iliocostal, que não é o limite medial mostrado.",
+   "B": "Inverte a posição: o longuíssimo é lateral e o multífido é medial.",
+   "C": "Iliocostal é mais lateral e não corresponde ao músculo da seta 1 neste plano."
+  },
+  "referencias": [
+   "Wiltse LL, et al. The paraspinal sacrospinalis-splitting approach to the lumbar spine. Spine.",
+   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0167": {
+  "conceito": "A via transesternal para a transição cervicotorácica permite exposição anterior baixa até aproximadamente T4. A extensão depende da anatomia do paciente e da posição do arco aórtico, mas T4 é o limite indicado no esquema.",
+  "correta": "C — A vértebra indicada é T4.",
+  "incorretas": {
+   "A": "T2 fica mais cranial e costuma ser acessível por abordagens cervicais baixas sem necessidade de transesternalização.",
+   "B": "T3 está acima do limite inferior representado no desenho.",
+   "D": "T5 é mais caudal que o alcance usual descrito para a via transesternal."
+  },
+  "alerta": "O limite inferior varia com biotipo, esterno e arco aórtico; a resposta segue o nível indicado na figura e o gabarito.",
+  "referencias": [
+   "Bohlman HH et al. Anterior approaches to the cervicothoracic junction.",
+   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0168": {
+  "conceito": "No corte axial em L4–L5, o músculo psoas fica anterolateral ao corpo vertebral. A raiz L4 atravessa o forame L4–L5, enquanto a raiz L5 desce no canal lateral para sair pelo forame L5–S1.",
+  "correta": "A — A seta 1 aponta para o psoas e a seta 2 corresponde à raiz L4 no forame.",
+  "incorretas": {
+   "B": "A seta 1 mostra psoas, mas a raiz L5 é a raiz transeunte no nível discal L4–L5, não a foraminal indicada.",
+   "C": "A seta 1 não está no quadrado lombar, que fica mais lateral e posterior ao psoas.",
+   "D": "Confunde o músculo e a relação foraminal da raiz; o quadrado lombar não é a estrutura apontada."
+  },
+  "referencias": [
+   "Bogduk N. Clinical Anatomy of the Lumbar Spine and Sacrum. 5th ed. Elsevier; 2012.",
+   "Gray's Anatomy. Lumbar plexus and psoas anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0169": {
+  "conceito": "A pars interarticularis é o istmo ósseo situado entre os processos articulares superior e inferior. Na vista posterior, ela fica lateral à lâmina e medial ao processo transverso, como na região apontada.",
+  "correta": "B — A seta indica a pars interarticularis.",
+  "incorretas": {
+   "A": "A faceta articular é a superfície revestida por cartilagem, visível superiormente na figura.",
+   "C": "O processo transverso projeta-se lateralmente e não é a região indicada pelo marcador.",
+   "D": "O tubérculo de Chassaignac é o tubérculo anterior do processo transverso de C6, distante da área mostrada."
+  },
+  "referencias": [
+   "Wiltse LL, Newman PH, Macnab I. Classification of spondylolysis and spondylolisthesis. Clin Orthop Relat Res. 1976;117:23-29.",
+   "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0170": {
   "conceito": "Na hemissecção medular (Brown-Séquard) o quadro se deduz de onde cada trato cruza. O corticoespinhal cruzou lá em cima, no bulbo, e o funículo posterior sobe do mesmo lado até o bulbo — portanto déficit motor e perda de PROPRIOCEPÇÃO, vibração e tato discriminativo IPSILATERAIS à lesão. O espinotalâmico, ao contrário, cruza na própria medula, um ou dois níveis acima da entrada, de modo que a perda de dor e temperatura é CONTRALATERAL, começando alguns segmentos abaixo. É a síndrome incompleta de melhor prognóstico.",
@@ -1753,6 +2360,30 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "coluna-0186": {
+  "conceito": "O nervo acessório (XI par craniano) percorre a região posterior do músculo esternocleidomastoideo e depois cruza o triângulo posterior para inervar o trapézio. Lesão nessa região causa dificuldade para elevar o ombro.",
+  "correta": "C — A estrutura amarela indicada é o nervo acessório.",
+  "incorretas": {
+   "A": "O troclear inerva o oblíquo superior do olho e não percorre o pescoço.",
+   "B": "O trigêmeo distribui-se principalmente pela face e músculos da mastigação.",
+   "D": "O hipoglosso segue para a língua, cruzando a região carotídea, mas não acompanha o esternocleidomastoideo como mostrado."
+  },
+  "referencias": [
+   "Gray's Anatomy. Cranial nerve XI and posterior triangle of the neck.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0187": {
   "conceito": "O balanço sagital global se mede pela linha de prumo traçada a partir do centro do corpo de C7. No indivíduo equilibrado ela cai dentro de uma faixa de cerca de 2 cm à frente ou atrás do canto posterossuperior de S1 — posição em que o tronco se sustenta com gasto energético mínimo. Quando a linha cai À FRENTE do sacro, o balanço é POSITIVO: o tronco está deslocado para diante e o paciente precisa de esforço muscular contínuo para se manter em pé, o que se associa fortemente a dor e incapacidade. Corrigir esse desequilíbrio é o objetivo central da cirurgia de deformidade do adulto.",
   "correta": "Quando a linha de prumo cruza na frente do sacro.",
@@ -1808,6 +2439,30 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "coluna-0192": {
+  "conceito": "Na vista posterior, o ligamento amarelo une lâminas adjacentes e fica junto ao canal vertebral. O ligamento iliolombar segue dos processos transversos lombares, sobretudo L5, ao ílio, mais inferior e lateral.",
+  "correta": "C — A estrutura 1 é o ligamento amarelo e a estrutura 2 é o ligamento iliolombar.",
+  "incorretas": {
+   "A": "A estrutura 2 não é ílio-transverso; o ligamento descrito classicamente é iliolombar.",
+   "B": "A estrutura 1 está posterior ao canal, compatível com amarelo, não com longitudinal posterior.",
+   "D": "O longitudinal anterior fica na face anterior dos corpos vertebrais, fora da posição da estrutura 1."
+  },
+  "referencias": [
+   "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020.",
+   "Bogduk N. Clinical Anatomy of the Lumbar Spine and Sacrum. 5th ed. Elsevier; 2012."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0193": {
   "conceito": "O teste de Spurling é a manobra da radiculopatia cervical: com o pescoço em EXTENSÃO, inclinação lateral e rotação PARA O LADO sintomático, aplica-se compressão axial sobre a cabeça, fechando o forame — dor irradiada para o membro, seguindo o dermátomo, reproduz o teste. Vale a ressalva: a especificidade dele é alta, em torno de 90%, mas a SENSIBILIDADE é limitada, algo entre 30 e 50%. Ou seja, teste positivo praticamente confirma; teste negativo não afasta nada. Os outros nomes pertencem a outro território: Hoffmann e L'Hermitte são sinais de MIELOPATIA, e não de compressão radicular.",
   "correta": "Teste de Spurling.",
@@ -1840,6 +2495,103 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "coluna-0196": {
+  "conceito": "O dermátomo apontado no dedo médio e na região central da mão corresponde predominantemente à raiz C7. Há sobreposição entre dermátomos, mas o dedo médio é a referência clínica mais útil para C7.",
+  "correta": "C — O dedo médio é o território clássico de C7.",
+  "incorretas": {
+   "A": "C5 predomina no ombro e braço proximal.",
+   "B": "C6 predomina no polegar e na borda radial da mão.",
+   "D": "C8 predomina no dedo mínimo e na borda ulnar da mão."
+  },
+  "referencias": [
+   "Bates' Guide to Physical Examination and History Taking. Cervical dermatomes.",
+   "DeMyer W. Technique of the Neurologic Examination."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0197": {
+  "conceito": "A imagem mostra acesso transforaminal lombar. No forame intervertebral, a raiz que sai recebe o nome do nível superior, portanto o forame L5 corresponde à raiz L5.",
+  "correta": "B — A raiz demarcada é L5.",
+  "incorretas": {
+   "A": "L4 sai pelo forame acima, em nível diferente do mostrado.",
+   "C": "S1 emerge pelo forame sacral, abaixo da coluna lombar.",
+   "D": "S2 corresponde a níveis sacrais ainda mais inferiores."
+  },
+  "alerta": "A contagem radiográfica pode variar com vértebra transicional; a interpretação segue o nível explicitado pelo exame e o gabarito.",
+  "referencias": [
+   "Bogduk N. Clinical Anatomy of the Lumbar Spine and Sacrum. 5th ed. Elsevier; 2012.",
+   "North American Spine Society. Lumbar Disc Herniation With Radiculopathy Clinical Guideline."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0198": {
+  "conceito": "O nervo hipoglosso cruza a região carotídea e segue anteriormente para a língua, relacionando-se com o tendão do digástrico e o músculo estilo-hióideo. O nervo acessório acompanha inicialmente o esternocleidomastoideo e depois cruza o triângulo posterior.",
+  "correta": "B — A estrutura demarcada é o nervo hipoglosso.",
+  "incorretas": {
+   "A": "O acessório teria trajeto associado ao esternocleidomastoideo e ao trapézio, mais posterior.",
+   "C": "O cervical ascendente é ramo vascular do tronco tireocervical, não o nervo amarelo mostrado.",
+   "D": "O laríngeo recorrente desce no sulco traqueoesofágico, inferiormente ao campo desta figura."
+  },
+  "referencias": [
+   "Gray's Anatomy. Hypoglossal nerve in the carotid triangle.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0199": {
+  "conceito": "O esternocleidomastoideo é um músculo superficial do pescoço, com cabeças esternal e clavicular, que se fixa no processo mastoide. Atua na rotação contralateral e flexão cervical; é também referência importante no triângulo posterior.",
+  "correta": "C — O músculo demarcado é o esternocleidomastoideo.",
+  "incorretas": {
+   "A": "O omo-hióideo é um músculo infrahióideo fino e mais inferior, não a grande faixa superficial indicada.",
+   "B": "O esterno-hióideo fica anterior e inferior, junto aos músculos infra-hióideos.",
+   "D": "O platisma é uma lâmina superficial subcutânea, sem o formato fusiforme do músculo mostrado."
+  },
+  "referencias": [
+   "Gray's Anatomy. Muscles of the neck.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0200": {
   "conceito": "Os critérios NEXUS permitem liberar a coluna cervical sem imagem, e são cinco, todos negativos — o paciente precisa NÃO ter nenhum deles: dor à palpação na linha média posterior do pescoço, déficit neurológico focal, alteração do nível de consciência, evidência de INTOXICAÇÃO e lesão dolorosa distratora. Preenchidos os cinco, a probabilidade de lesão cervical significativa é próxima de zero. A regra canadense é a alternativa, e acrescenta a avaliação da rotação ativa de 45 graus para cada lado — teste que o NEXUS não exige.",
@@ -1874,6 +2626,31 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "coluna-0203": {
+  "conceito": "O teste de Nachlas é realizado em decúbito ventral, com flexão passiva do joelho. Dor lombar ou irradiada pode ocorrer por estiramento do nervo femoral e das raízes superiores lombares, sobretudo L2–L3, além de tensão sobre estruturas anteriores do quadril.",
+  "correta": "C — Um teste de Nachlas positivo pode indicar irritação ou compressão das raízes L2–L3.",
+  "incorretas": {
+   "A": "A artrose facetária pode causar dor à extensão, mas não é a associação principal deste teste de estiramento neural.",
+   "B": "A articulação sacro-ilíaca é mais diretamente provocada por testes específicos de estresse pélvico.",
+   "D": "Psoíte costuma ser investigada por dor à extensão do quadril, não pelo padrão clássico do Nachlas."
+  },
+  "alerta": "O teste tem baixa especificidade isoladamente; deve ser interpretado com força, sensibilidade e reflexos, e não confirma sozinho compressão radicular.",
+  "referencias": [
+   "Hoppenfeld S. Physical Examination of the Spine and Extremities.",
+   "Magee DJ. Orthopedic Physical Assessment. Lumbar spine and femoral nerve tests."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0204": {
   "conceito": "A escoliose congênita nasce de falha de formação ou de segmentação vertebral entre a quinta e a oitava semanas de gestação — exatamente o período em que se formam também o tubo neural, o coração e o trato geniturinário. Por isso as malformações associadas seguem esses três sistemas: alterações do NEUROEIXO em cerca de um terço (medula presa, diastematomielia, siringomielia, Chiari), CARDÍACAS em torno de 10 a 25%, e GENITURINÁRIAS em 20 a 30% (agenesia renal, rim em ferradura, duplicação ureteral). A consequência prática é obrigatória: toda criança com escoliose congênita precisa de ressonância de todo o neuroeixo, ecocardiograma e ultrassonografia renal antes de qualquer cirurgia.",
   "correta": "Do neuroeixo, cardíacas e do sistema geniturinário.",
@@ -1895,6 +2672,30 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "coluna-0206": {
+  "conceito": "O processo unciforme é uma projeção superior da margem lateral do corpo vertebral cervical, formando parte da articulação uncovertebral. Na imagem axial, ele fica anterolateral ao canal e medial ao forame transversário.",
+  "correta": "A — A estrutura apontada é o processo unciforme.",
+  "incorretas": {
+   "B": "A faceta superior fica mais posterior e lateral, junto ao arco neural.",
+   "C": "Tubérculo superior não é a denominação anatômica da projeção indicada.",
+   "D": "O processo transverso é mais lateral e contém o forame transversário."
+  },
+  "referencias": [
+   "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0207": {
   "conceito": "Na coluna cervical a raiz comprimida leva o número da vértebra INFERIOR, de modo que o disco C6-C7 comprime a raiz de C7. O pacote de C7 tem três marcadores: sensibilidade no dedo MÉDIO, fraqueza da extensão do cotovelo pelo TRÍCEPS (e da flexão do punho e da extensão dos dedos) e diminuição do reflexo TRICIPITAL. Vale ter os vizinhos prontos para comparar: C5 dá face lateral do braço, deltoide e reflexo bicipital; C6 dá polegar e indicador, bíceps e reflexo braquiorradial; C8 dá dedo mínimo e intrínsecos, sem reflexo próprio.",
@@ -1928,6 +2729,31 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "coluna-0210": {
+  "conceito": "A síndrome de Grisel é subluxação rotatória atlantoaxial não traumática, geralmente após infecção de vias aéreas superiores ou cirurgia. Produz torcicolo doloroso em posição de “cock-robin”, com inclinação lateral e rotação fixa do queixo.",
+  "correta": "**D**, conforme o gabarito: quadro **doloroso**, com flexão lateral e queixo rodado para o lado definido como o da lesão.",
+  "incorretas": {
+   "A": "A ausência de dor não é típica e a direção do queixo diverge do gabarito.",
+   "B": "Mantém incorretamente a ausência de dor.",
+   "C": "Acerta a presença de dor, mas usa a direção contralateral segundo a convenção adotada pelo item."
+  },
+  "alerta": "A direção do queixo varia conforme se denomina o lado da subluxação, da inclinação ou do espasmo muscular. O achado robusto é o torcicolo doloroso fixo; a lateralidade precisa ser conferida na figura ou fonte original.",
+  "referencias": [
+   "Fielding JW, Hawkins RJ. Atlanto-axial rotatory fixation. J Bone Joint Surg Am. 1977;59:37-44.",
+   "Tachdjian's Pediatric Orthopaedics. 6th ed. Elsevier; 2021."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0211": {
   "conceito": "SCIWORA existe por uma desproporção: a coluna da criança é elástica e pode se alongar vários centímetros sob distração, enquanto a medula tolera pouquíssimo estiramento antes de lesar. O mecanismo dominante é, portanto, o de FLEXÃO e DISTRAÇÃO — a coluna estica, a medula não acompanha, e depois tudo volta ao lugar, deixando radiografia e tomografia normais. Some-se a isso o componente isquêmico, por estiramento das artérias radiculares. Quem faz o diagnóstico é a ressonância, e o tratamento é imobilização, porque não há nada comprimindo para descomprimir.",
@@ -1984,6 +2810,30 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "coluna-0216": {
+  "conceito": "O ligamento alar se origina nas faces laterais do processo odontoide e se insere nos côndilos occipitais. Ele limita principalmente a rotação e a translação excessivas entre crânio, atlas e áxis.",
+  "correta": "A — A seta aponta para o ligamento alar.",
+  "incorretas": {
+   "B": "O ligamento transverso passa horizontalmente atrás do odontoide, entre as massas laterais de C1.",
+   "C": "O interespinhoso fica entre processos espinhosos, posteriormente, fora da região mostrada.",
+   "D": "O atlanto-occipital anterior fica na face anterior da articulação, não lateral ao odontoide."
+  },
+  "referencias": [
+   "Gray's Anatomy. Craniocervical ligaments.",
+   "Panjabi MM et al. Three-dimensional biomechanical analysis of the upper cervical spine. Spine."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0217": {
   "conceito": "A durotomia acidental é complicação conhecida da cirurgia lombar, e quando a sutura não é estanque o líquor continua vazando, formando pseudomeningocele ou fístula. Um dos recursos para diminuir a pressão sobre o reparo enquanto ele cicatriza é reduzir a PRODUÇÃO de líquor, e é aí que entra a acetazolamida: ela inibe a anidrase carbônica no plexo coroide, enzima necessária à secreção liquórica, funcionando como um dreno químico. Acompanha as medidas mecânicas — repouso, decúbito e, quando necessário, dreno lombar externo.",
   "correta": "Acetazolamida, inibidora da anidrase carbônica.",
@@ -1994,6 +2844,30 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "coluna-0218": {
+  "conceito": "A espondilolistese ístmica resulta de defeito da pars interarticularis, geralmente espondilólise, permitindo o deslizamento do corpo vertebral. Na figura, a descontinuidade está no istmo posterior, caracterizando o tipo II de Wiltse.",
+  "correta": "A — O padrão é ístmico.",
+  "incorretas": {
+   "B": "O tipo displásico decorre de alterações congênitas da junção lombossacra, sem o defeito ístmico típico.",
+   "C": "O tipo traumático é uma fratura aguda de elemento posterior diferente da pars por estresse.",
+   "D": "O tipo degenerativo ocorre por degeneração discal e facetária, sem espondilólise primária."
+  },
+  "referencias": [
+   "Wiltse LL, Newman PH, Macnab I. Classification of spondylolysis and spondylolisthesis. Clin Orthop Relat Res. 1976;117:23-29.",
+   "Möller H, Hedlund R. Surgery versus conservative management in adult isthmic spondylolisthesis. Spine."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0219": {
   "conceito": "O sinal de Hoffmann é PATOLÓGICO: pesquisa-se dando um piparote na falange distal do dedo médio, e a resposta anormal é a flexão do polegar e do indicador. Ele indica liberação de primeiro neurônio motor, ou seja, mielopatia — mas com uma condição que vale entender, e não decorar: o arco reflexo dele passa por C8 e T1, e o segmento medular C8 fica na altura das vértebras C6-C7. Para que o reflexo se exalte, a lesão precisa estar ACIMA desse arco — na prática, no nível de C5-C6 ou acima. Lesão mais baixa compromete o próprio arco e o reflexo não aparece.",
@@ -2006,6 +2880,31 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "coluna-0220": {
+  "conceito": "Entre as anomalias congênitas, a combinação de defeito de formação com defeito de segmentação cria um segmento unilateral sem crescimento compensatório e apresenta maior potencial de progressão. O esquema 4 representa o padrão mais assimétrico e progressivo.",
+  "correta": "D — A figura 4 é a que apresenta maior risco de progressão da escoliose.",
+  "incorretas": {
+   "A": "Uma falha isolada de formação pode produzir deformidade, mas tende a ser menos progressiva que uma combinação assimétrica.",
+   "B": "O padrão mostrado não reúne a combinação mais desfavorável de formação e segmentação.",
+   "C": "A deformidade é mais simétrica ou equilibrada que a figura 4."
+  },
+  "alerta": "O risco depende do tipo exato de hemivértebra, segmentação e localização; a figura é esquemática e a alternativa segue o gabarito.",
+  "referencias": [
+   "McMaster MJ, Ohtsuka K. The natural history of congenital scoliosis. J Bone Joint Surg Br. 1982;54:230-243.",
+   "Tachdjian's Pediatric Orthopaedics. 6th ed. Elsevier; 2021."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0221": {
   "conceito": "O espaço epidural não é uniforme: ele é praticamente virtual na região cervical, onde a dura quase encosta no canal, e vai ficando mais amplo e mais rico em gordura à medida que desce, sendo maior na região LOMBAR posterior. É nesse espaço amplo que o abscesso se acomoda com mais frequência, e por isso a lombar baixa é o sítio mais comum. A relação se inverte quando se pergunta pela gravidade: no cervical, onde não há espaço de reserva, o mesmo abscesso comprime a medula rapidamente e produz tetraplegia — daí a cirurgia ali ser preferencial.",
   "correta": "Lombar baixa, onde o espaço epidural é mais amplo.",
@@ -2016,6 +2915,30 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "coluna-0222": {
+  "conceito": "O ligamento amarelo conecta as lâminas de vértebras adjacentes e forma parte da parede posterior do canal vertebral. Ele é elástico e pode hipertrofiar, contribuindo para estenose do canal lombar.",
+  "correta": "A — A seta indica o ligamento amarelo.",
+  "incorretas": {
+   "B": "O supraespinal liga as pontas dos processos espinhosos, mais posterior.",
+   "C": "O interespinhoso fica entre processos espinhosos, posterior ao ligamento amarelo.",
+   "D": "O longitudinal posterior acompanha a face posterior dos corpos vertebrais, anterior ao saco dural."
+  },
+  "referencias": [
+   "Gray's Anatomy. Ligaments of the vertebral column.",
+   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0223": {
   "conceito": "A forma TÍPICA da doença de Scheuermann é a torácica, com ápice entre T7 e T9: cifose rígida que não corrige em hiperextensão, hiperlordose lombar e cervical compensatórias, e pouca dor — muitas vezes é a família que traz o adolescente, incomodada com a postura. A forma ATÍPICA é toracolombar ou lombar, com ápice entre T10 e L2, mais rara, mais dolorosa, associada a carga axial e atividade intensa, e de pior evolução na vida adulta. Em ambas o diagnóstico exige os critérios de Sörensen.",
@@ -2105,6 +3028,31 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "coluna-0231": {
+  "conceito": "Na radiografia AP lombar, o pedículo aparece como uma estrutura oval radiopaca projetada lateralmente ao corpo vertebral. A seta está no nível de L4 e aponta para esse elemento posterior do arco vertebral.",
+  "correta": "A — A estrutura é o pedículo de L4.",
+  "incorretas": {
+   "B": "O processo espinhoso é mediano e posterior, não a imagem oval lateral indicada.",
+   "C": "O processo articular inferior fica mais caudal e posterior, não projetado sobre o corpo como o pedículo.",
+   "D": "O processo articular superior fica lateral e posterior ao pedículo e tem outra projeção radiográfica."
+  },
+  "alerta": "A identificação do nível depende da contagem vertebral; a resposta acompanha o nível explicitado no item.",
+  "referencias": [
+   "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020.",
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0232": {
   "conceito": "Na escoliose neuromuscular a decisão de estender a artrodese até a pelve se apoia em duas perguntas. O paciente DEAMBULA? Se sim, evita-se incluir a pelve, porque a mobilidade lombossacra é necessária para andar e fundi-la piora a marcha. E existe OBLIQUIDADE PÉLVICA significativa? Acima de cerca de 15 graus, a pelve inclinada descompensa o assento, concentra pressão numa tuberosidade isquiática — com risco de úlcera — e impede que a correção acima se sustente. A soma das duas, paciente não deambulador com obliquidade acima de 15 graus, é a indicação clássica de incluir a pelve.",
   "correta": "Não deambuladores com obliquidade pélvica maior que 15 graus.",
@@ -2115,6 +3063,30 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "coluna-0233": {
+  "conceito": "O trato corticoespinhal anterior ocupa o funículo anterior e conduz fibras motoras descendentes, sobretudo para musculatura axial. O fascículo cuneiforme é posterior e sensitivo; os tratos vestibuloespinal e espinotalâmico têm outras posições e funções.",
+  "correta": "D — A estrutura apontada é o trato corticoespinhal anterior.",
+  "incorretas": {
+   "A": "O fascículo cuneiforme fica no funículo posterior e conduz propriocepção e tato discriminativo do membro superior.",
+   "B": "O vestibuloespinal é um trato motor anterolateral, mas não corresponde à faixa indicada.",
+   "C": "O espinotalâmico anterior é sensitivo e ocupa região anterolateral diferente da estrutura indicada."
+  },
+  "referencias": [
+   "Snell RS. Clinical Neuroanatomy. Descending motor pathways.",
+   "Gray's Anatomy. Spinal cord tracts."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0234": {
   "conceito": "Wiltse, Newman e Macnab separam a espondilolistese por etiologia, e o tipo IV, traumático, tem uma definição precisa: é a fratura AGUDA de um elemento do arco posterior que NÃO seja a pars interarticular — pedículo, lâmina ou faceta. A distinção importa porque a fratura da própria pars, quando aguda, é classificada dentro do tipo II (ístmico, subtipo de fratura aguda da pars), e não como traumática. Na prática, o tipo IV decorre de trauma de alta energia e o escorregamento aparece porque o arco perdeu a continuidade que segurava o corpo.",
@@ -2391,6 +3363,31 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "coluna-0259": {
+  "conceito": "Escoliose idiopática infantil surge antes dos 3 anos, predomina em meninos e costuma formar curva torácica esquerda. Muitas curvas resolvem espontaneamente, mas aquelas com sinais prognósticos desfavoráveis podem progredir intensamente durante o crescimento.",
+  "correta": "O gabarito indica **C — progressão da deformidade**.",
+  "incorretas": {
+   "A": "Predomínio feminino é típico da escoliose idiopática adolescente, não da infantil clássica.",
+   "B": "A curva infantil típica é torácica esquerda, não direita.",
+   "D": "Malformações cardíacas sugerem condição sindrômica ou congênita, não escoliose idiopática."
+  },
+  "alerta": "A progressão não é frequente em toda a escoliose infantil: muitas curvas resolvem. C deve ser entendida como referência ao subgrupo progressivo; ângulo costovertebral e evolução seriada definem prognóstico.",
+  "referencias": [
+   "Mehta MH. The rib-vertebra angle in early diagnosis between resolving and progressive infantile scoliosis. J Bone Joint Surg Br. 1972;54:230-243.",
+   "Tachdjian's Pediatric Orthopaedics. 6th ed. Elsevier; 2021."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0260": {
   "conceito": "A síndrome medular anterior é a lesão dos dois terços anteriores da medula, território da artéria espinhal anterior. Compromete o corticoespinhal (motor) e o espinotalâmico (dor e temperatura), e POUPA o cordão posterior, que é irrigado pelas espinhais posteriores. Daí o quadro característico: déficit motor de gravidade variável, perda de dor e temperatura, e propriocepção e tato discriminativo preservados. É a síndrome medular incompleta de pior prognóstico — cerca de 10 a 15% de recuperação funcional.",
   "correta": "Comprometimento motor variável com preservação da propriocepção.",
@@ -2435,6 +3432,54 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "coluna-0264": {
+  "conceito": "O nervo femoral é formado pelas divisões posteriores das raízes L2–L4 do plexo lombar. Ele emerge na borda lateral do psoas e passa entre psoas e ilíaco, profundo ao ligamento inguinal, antes de se dividir na coxa.",
+  "correta": "C — A estrutura indicada é o nervo femoral.",
+  "incorretas": {
+   "A": "L2 é uma raiz contribuinte, mas a estrutura apontada é o nervo já formado.",
+   "B": "L3 também contribui para o nervo femoral, não é o nome da estrutura demarcada.",
+   "D": "O ilioinguinal origina-se de L1 e segue acima do ligamento inguinal, com trajeto diferente."
+  },
+  "referencias": [
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy. Lumbar plexus.",
+   "Gray's Anatomy. Femoral nerve and lumbar plexus."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0265": {
+  "conceito": "O multífido é um músculo profundo, medial ao longuíssimo, que preenche o sulco entre processos transversos e espinhosos. A via paraespinhal de Wiltse utiliza o plano entre multífido e longuíssimo como referência anatômica.",
+  "correta": "A — O músculo apontado é o multífido.",
+  "incorretas": {
+   "B": "O iliocostal é mais lateral e superficial na massa eretora da espinha.",
+   "C": "O longuíssimo fica lateral ao multífido e forma o outro limite do plano de Wiltse.",
+   "D": "O quadrado lombar é mais anterior e lateral, ligado à 12ª costela e à crista ilíaca."
+  },
+  "referencias": [
+   "Wiltse LL et al. The paraspinal sacrospinalis-splitting approach to the lumbar spine. Spine.",
+   "Gray's Anatomy. Deep back muscles."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0266": {
   "conceito": "Déficit motor predominante nos membros superiores, pior nas mãos, com alterações sensitivas e esfincterianas variáveis, é o retrato da síndrome medular central. É a mais comum das lesões medulares incompletas e clássica do trauma em hiperextensão sobre canal cervical já estreito. A distribuição se explica pela lesão da substância cinzenta central e da porção mais medial do trato corticoespinhal, onde trafegam as fibras destinadas aos membros superiores. O prognóstico é relativamente bom, com recuperação em ordem previsível: primeiro os membros inferiores, depois bexiga e intestino, e por último — e de forma incompleta — a função fina das mãos.",
   "correta": "Síndrome medular central.",
@@ -2445,6 +3490,55 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "coluna-0267": {
+  "conceito": "A osteotomia de subtração pedicular remove uma cunha óssea posterior através dos pedículos e permite correção angular importante, geralmente cerca de 25–35 graus em um único nível. Diferentemente da Smith-Petersen, não depende de disco móvel anterior.",
+  "correta": "D — A técnica demonstrada é a osteotomia de subtração pedicular.",
+  "incorretas": {
+   "A": "Eggshell é uma técnica de ressecção/curetagem usada em reconstruções, não a osteotomia angular mostrada.",
+   "B": "Ponte não é o nome da osteotomia corretiva indicada.",
+   "C": "Smith-Petersen é uma osteotomia posterior de três colunas que exige disco anterior móvel e costuma corrigir menos por nível."
+  },
+  "referencias": [
+   "Suk SI et al. Posterior vertebral column resection for severe spinal deformities. Spine.",
+   "Bridwell KH et al. Pedicle subtraction osteotomy. Spine."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0268": {
+  "conceito": "A SCOR é a razão entre a área da medula e a área do canal no corte axial de ressonância. Razões elevadas indicam pouco espaço liquórico de reserva e canal congenitamente estreito.",
+  "correta": "**D — 80%.** Esse é o ponto de corte adotado pelo gabarito para confirmar estenose cervical congênita pela SCOR.",
+  "incorretas": {
+   "A": "50% representa ocupação bem menor e não confirma estenose pelo critério do item.",
+   "B": "58,3% também fica abaixo do limite proposto.",
+   "C": "75% aproxima-se de limiares usados em alguns estudos, mas não corresponde aos 80% cobrados."
+  },
+  "alerta": "Os pontos de corte variam entre técnicas e estudos; SCOR não deve ser interpretada sem medidas do canal, nível avaliado e correlação clínica.",
+  "referencias": [
+   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022.",
+   "Morishita Y et al. The relationship between the cervical spinal canal diameter and pathological changes in the cervical spine. Eur Spine J. 2009;18:877-883."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0269": {
   "conceito": "A lise da pars é uma fratura por estresse, e ela acontece onde a carga em extensão e rotação se concentra. L5 é o nível de maior estresse da junção lombossacra: recebe a transição para o sacro inclinado, e a pars de L5 fica comprimida entre a faceta inferior de L4 e a faceta superior de S1, como uma noz num quebra-nozes, a cada extensão. Por isso cerca de 85 a 90% das lises são em L5, com L4 em segundo lugar. É também o que explica a prevalência em ginastas, jogadores de vôlei e atletas de esportes com hiperextensão repetida.",
@@ -2489,6 +3583,31 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "coluna-0273": {
+  "conceito": "SCIWORA é déficit medular traumático sem fratura ou desalinhamento em radiografia/TC. Em crianças, a elasticidade ligamentar permite deslocamento transitório da coluna sem lesão óssea visível; a região mais acometida é a **cervical**.",
+  "correta": "O gabarito registra **B — torácica**, mas a literatura sistemática aponta predominância cervical.",
+  "incorretas": {
+   "A": "**Cervical é provavelmente a alternativa correta**: revisões relatam cerca de 87% dos casos nessa região.",
+   "C": "A transição toracolombar é menos frequente.",
+   "D": "SCIWORA lombar é rara."
+  },
+  "alerta": "**Provável erro de gabarito.** Revisões pediátricas identificam a coluna cervical como o local mais comum de SCIWORA; a alternativa A deve ser conferida e provavelmente substituir B.",
+  "referencias": [
+   "Pediatric Cervical Spine Injuries and SCIWORA: WFNS Spine Committee Recommendations. Neurospine. 2020;17:797-808. https://pmc.ncbi.nlm.nih.gov/articles/PMC7788416/",
+   "Carroll T et al. Spinal cord injuries without radiologic abnormality in children: systematic review. Spinal Cord. 2015;53:842-848."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0274": {
   "conceito": "O glúteo médio é o abdutor principal do quadril e é inervado pelo nervo glúteo superior, formado por L4, L5 e S1 — com predomínio funcional de L5. É por isso que a radiculopatia L5 pode produzir Trendelenburg, e não só o pé caído que todo mundo lembra. A lista prática de L5: abdução do quadril (glúteo médio), dorsiflexão do tornozelo (tibial anterior), extensão do hálux (extensor longo do hálux), sensibilidade no dorso do pé e face lateral da perna, e nenhum reflexo próprio.",
@@ -2567,6 +3686,30 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "coluna-0281": {
+  "conceito": "No acesso anterior cervical, o músculo longus colli é identificado sobre a face anterolateral dos corpos vertebrais e afastado lateralmente para expor a articulação uncovertebral. A dissecção deve permanecer subperiosteal para reduzir risco ao simpático cervical.",
+  "correta": "B — O músculo apontado é o longus colli.",
+  "incorretas": {
+   "A": "O omo-hióideo fica mais superficial e inferior, não diretamente sobre a coluna cervical.",
+   "C": "O esplênio do pescoço pertence à musculatura posterior, fora do acesso anterior.",
+   "D": "O escaleno anterior é lateral ao campo e não é o músculo afastado para mostrar a articulação unciforme."
+  },
+  "referencias": [
+   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022.",
+   "Gray's Anatomy. Anterior cervical surgical anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "coluna-0282": {
   "conceito": "A lista clássica de indicações de radiografia na lombalgia aguda (herdada das diretrizes da AHCPR) não é só clínica: além de idade acima de 50 anos, trauma, febre, perda de peso, câncer prévio, déficit neurológico, uso de corticoide e suspeita de espondilite anquilosante, ela inclui dois itens psicossociais — abuso de álcool ou drogas e BUSCA DE COMPENSAÇÃO pela dor lombar. Esse último não entra por suspeita de doença grave, e sim porque o contexto de litígio ou de perícia muda a documentação exigida do caso.",
   "correta": "Busca de compensação por dor lombar.",
@@ -2577,6 +3720,103 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "coluna-0283": {
+  "conceito": "Na avaliação sagital, a incidência pélvica é um parâmetro morfológico e a inclinação sacral é um parâmetro posicional. Juntos, ajudam a interpretar a relação entre pelve e lordose lombar; a inclinação pélvica também é posicional e reflete retroversão compensatória.",
+  "correta": "B — Os parâmetros essenciais destacados são incidência pélvica e inclinação sacral.",
+  "incorretas": {
+   "A": "Inclinação pélvica é importante, mas a combinação do item não corresponde ao par tradicional destacado na avaliação básica.",
+   "C": "Ambos são parâmetros posicionais e não incluem a incidência pélvica, medida morfológica fundamental.",
+   "D": "Ângulo de deslizamento não é parâmetro central do equilíbrio sagital global."
+  },
+  "referencias": [
+   "Schwab F et al. SRS-Schwab classification of adult spinal deformity. Spine. 2012.",
+   "Vialle R et al. Radiographic analysis of sagittal alignment and balance of the spine. J Bone Joint Surg Am."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0284": {
+  "conceito": "A classificação Schroth organiza a deformidade em blocos tridimensionais — pélvico, lombar, torácico e ombros — e em padrões como 3C, 3CP, 4C e 4CP. Considera localização e relação entre curvas e pelve, não apenas magnitude angular.",
+  "correta": "O gabarito registra **A — ângulo de Cobb**, mas essa não é a base da classificação Schroth.",
+  "incorretas": {
+   "B": "Direção da curva e relação com a pelve fazem parte do raciocínio Schroth, embora a alternativa seja incompleta.",
+   "C": "Maturidade esquelética influencia tratamento, mas não define o tipo Schroth.",
+   "D": "**É a descrição mais compatível**: localização e combinação dos blocos deformados estruturam a classificação."
+  },
+  "alerta": "**Provável erro de gabarito.** A literatura descreve a classificação Schroth pelos padrões tridimensionais e blocos corporais; a alternativa D é superior a A.",
+  "referencias": [
+   "Algorithm for Schroth-Curve-Type Classification. Healthcare (Basel). 2023;11:869. https://pmc.ncbi.nlm.nih.gov/articles/PMC10047876/",
+   "Weiss HR. The method of Katharina Schroth. Scoliosis. 2011;6:17."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0285": {
+  "conceito": "A pars interarticularis é a porção do arco neural situada entre as facetas articulares superior e inferior, contínua com a lâmina. A espondilolistese ístmica de Wiltse tipo II envolve defeito nessa região.",
+  "correta": "**A.** É a alternativa que melhor descreve o istmo conectando os elementos articulares à lâmina e ao processo espinhoso.",
+  "incorretas": {
+   "B": "Inclui pedículo e processo transverso como se delimitassem o istmo, o que não corresponde à pars interarticularis.",
+   "C": "Mistura pedículo e facetas de modo anatômico impreciso.",
+   "D": "Corpo vertebral e processo transverso não definem a pars."
+  },
+  "referencias": [
+   "Wiltse LL, Newman PH, Macnab I. Classification of spondylolysis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29.",
+   "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "coluna-0286": {
+  "conceito": "A dura-máter é a camada meníngea externa que forma o saco dural e envolve a medula e as raízes da cauda equina. Em imagens axiais, aparece como o contorno meníngeo ao redor do líquor e das estruturas neurais, distinto dos ligamentos epidurais.",
+  "correta": "A — A seta indica a dura-máter.",
+  "incorretas": {
+   "B": "O ligamento amarelo é posterior ao saco dural e conecta as lâminas.",
+   "C": "O interespinhoso fica entre processos espinhosos, mais superficial e posterior.",
+   "D": "O longitudinal posterior fica anterior ao saco dural, na face posterior dos corpos vertebrais."
+  },
+  "referencias": [
+   "Gray's Anatomy. Meninges and spinal canal.",
+   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "coluna-0287": {
   "conceito": "A classificação de Weinstein-Boriani-Biagini (WBB) é o mapa cirúrgico dos tumores primários da coluna: olha-se a vértebra em corte axial como um relógio, dividido em 12 setores numerados no sentido horário, e em 5 camadas concêntricas de fora para dentro (A extraóssea, B intraóssea superficial, C intraóssea profunda, D extraóssea extradural, E extraóssea intradural). Registrando quais setores e quais camadas o tumor ocupa, decide-se se a ressecção em bloco é possível e por qual via — vertebrectomia, sagital ou do arco posterior.",

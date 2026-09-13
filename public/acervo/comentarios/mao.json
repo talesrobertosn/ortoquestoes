@@ -208,6 +208,31 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "mao-0020": {
+  "conceito": "As malformações congênitas decorrem de agressões durante a **organogênese**, período em que os brotos dos membros se formam e se diferenciam. Para os membros superiores, os eventos críticos concentram-se aproximadamente entre a 4ª e a 8ª semanas; ao final do terceiro mês, a arquitetura básica já está estabelecida.",
+  "correta": "**C — terceiro mês**, conforme o gabarito oficial, que usa a divisão obstétrica mensal e considera o período de organogênese até o fim do primeiro trimestre.",
+  "incorretas": {
+   "A": "No primeiro mês o broto do membro apenas começa a surgir; ele não abrange sozinho todo o período crítico de diferenciação.",
+   "B": "O segundo mês concentra grande parte da organogênese dos membros, mas o gabarito adota o terceiro mês como limite do período.",
+   "D": "No quarto mês predomina crescimento e maturação; defeitos produzidos então tendem a ser menos estruturais do que os da organogênese."
+  },
+  "alerta": "A formulação é imprecisa: embriologia moderna situa a organogênese principal dos membros entre a 4ª e a 8ª semanas, isto é, sobretudo no segundo mês. O gabarito C provavelmente usa uma divisão ampla do primeiro trimestre e merece conferência no original.",
+  "referencias": [
+   "Moore KL, Persaud TVN, Torchia MG. The Developing Human. 11th ed. Elsevier; 2020. Development of limbs.",
+   "Kozin SH. Upper-extremity congenital anomalies. J Bone Joint Surg Am. 2003;85:1564-1576."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "mao-0021": {
   "conceito": "Na paralisia obstétrica de Erb, o tronco superior (C5-C6) é o mais atingido. O padrão clássico da mão \"em gorjeta de garçom\" vem da soma de perdas: abdução, rotação lateral e supinação.",
   "correta": "A rotação lateral do ombro é feita sobretudo pelo infraespinal, inervado pelo nervo supraescapular, ramo direto do tronco superior. Sem ele, o ombro fica preso em rotação medial pela ação sem oposição do subescapular, do peitoral maior e do redondo maior — e é essa contratura em rotação interna que, mantida, deforma a glenoide e leva à subluxação posterior da cabeça umeral. Por isso a transferência do acessório para o supraescapular ocupa lugar central na reconstrução.",
@@ -252,6 +277,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "mao-0025": {
+  "conceito": "Na deficiência longitudinal radial, a classificação de **Bayne e Klug** vai do tipo I, com rádio distal curto, ao tipo IV, com ausência completa do rádio. A deficiência longitudinal ulnar costuma ser menos grave e seu padrão mais frequente é o tipo I, com hipoplasia distal.",
+  "correta": "**C — IV e I.** O tipo mais comum da deficiência radial é o **IV**; na deficiência ulnar, é o **I**.",
+  "incorretas": {
+   "A": "Subestima a gravidade habitual da deficiência radial e atribui à ulnar um tipo menos frequente.",
+   "B": "Acerta apenas o tipo I como possibilidade radial leve, mas ele não é o mais comum; o tipo III também não é o padrão ulnar predominante.",
+   "D": "Acerta o tipo IV para o rádio, mas erra a ulna: o tipo ulnar mais comum é I, não III."
+  },
+  "referencias": [
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Radial and ulnar longitudinal deficiency.",
+   "Bayne LG, Klug MS. Long-term review of the surgical treatment of radial deficiencies. J Hand Surg Am. 1987;12:169-179."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "mao-0026": {
   "conceito": "A contratura de Dupuytren é uma fibromatose da fáscia palmar, com forte componente hereditário — a chamada diátese: história familiar, início precoce, acometimento bilateral e envolvimento fora da palma, como as almofadas de Garrod nas interfalângicas proximais e o acometimento plantar de Ledderhose.",
@@ -549,6 +598,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "mao-0053": {
+  "conceito": "O polegar trifalângico varia de um polegar quase normal com uma falange delta pequena até um raio semelhante a um dedo. A combinação de **primeira comissura estreita** e **ausência/hipoplasia da musculatura tenar** caracteriza uma forma mais complexa e hipoplásica.",
+  "correta": "**C — tipo III.** Nesse tipo, a deficiência da musculatura tenar e a redução da primeira comissura indicam comprometimento global do primeiro raio, não apenas uma falange acessória.",
+  "incorretas": {
+   "A": "O tipo I corresponde à forma mais simples, com falange delta e musculatura/primeira comissura relativamente preservadas.",
+   "B": "O tipo II apresenta alterações intermediárias, mas não reúne a ausência tenar e a contratura da primeira comissura descritas.",
+   "D": "Não corresponde ao tipo definido por esse par de achados na classificação usada pela questão."
+  },
+  "referencias": [
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Triphalangeal thumb.",
+   "Buck-Gramcko D. Congenital Malformations of the Hand and Forearm. Churchill Livingstone; 1998."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "mao-0054": {
   "conceito": "O ramo profundo do radial vira nervo interósseo posterior ao atravessar o supinador. Ele entra pela arcada de Frohse, no colo do rádio, sai na face dorsal do antebraço e daí segue distalmente entre as camadas superficial e profunda dos extensores.",
@@ -1893,6 +1966,31 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "mao-0178": {
+  "conceito": "A infiltração de corticoide no túnel do carpo pode produzir alívio rápido em casos leves ou moderados sem atrofia tenar, embora a recorrência em médio prazo seja comum. Sexo, idade, duração dos sintomas e gravidade eletrofisiológica influenciam a resposta.",
+  "correta": "**C — homens acima de 40 anos**, grupo associado à melhora mais rápida na análise específica cobrada pela questão.",
+  "incorretas": {
+   "A": "Mulheres acima de 40 anos formam o grupo epidemiologicamente mais numeroso, mas frequência da doença não equivale à resposta mais rápida à infiltração.",
+   "B": "Sexo feminino e idade abaixo de 40 anos não formaram o grupo de resposta mais rápida no estudo usado pelo item.",
+   "D": "O sexo masculino está correto, mas a faixa etária indicada pelo gabarito é acima, não abaixo, de 40 anos."
+  },
+  "alerta": "Esse preditor demográfico deriva de uma análise específica e não deve decidir isoladamente a indicação. Atrofia tenar, déficit motor ou neuropatia grave exigem avaliação para descompressão cirúrgica.",
+  "referencias": [
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Carpal tunnel syndrome.",
+   "Atroshi I et al. Extended follow-up of local steroid injection for carpal tunnel syndrome. JAMA Netw Open. 2021;4:e213075."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "mao-0179": {
   "conceito": "Michon classificou a tenossinovite infecciosa dos flexores pelo que se encontra ao abrir a bainha, e a conduta segue diretamente do achado. Estágio I: líquido seroso aumentado, sinóvia apenas inflamada. Estágio II: líquido turvo ou francamente purulento, sinóvia granulomatosa. Estágio III: necrose séptica do tendão, da bainha e das polias.",
   "correta": "Necrose séptica encontrada no intraoperatório é estágio III, e o tratamento é o desbridamento extenso, com amputação como possibilidade real. A razão é dura mas objetiva: tendão necrosado não volta a deslizar, a bainha destruída não contém mais nada, e insistir em preservar um dedo sem função põe em risco a mão inteira e a vida do paciente numa infecção que se espalha. A decisão se toma na mesa, com a bainha aberta — não antes, pela radiografia ou pelo exame externo.",
@@ -2344,6 +2442,31 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "mao-0220": {
+  "conceito": "A classificação de **McGowan modificada por Dellon** estratifica a neuropatia ulnar no cotovelo. O grau I reúne sintomas subjetivos; o grau II acrescenta alterações objetivas e é subdividido em IIa, sem fraqueza intrínseca importante, e IIb, com fraqueza; o grau III apresenta déficit motor acentuado e atrofia.",
+  "correta": "**A.** No grau **IIa** já existem achados objetivos no território sensitivo do nervo ulnar, mas sem a fraqueza intrínseca que define a progressão para IIb.",
+  "incorretas": {
+   "B": "O grau IIb não é definido apenas por achados sensitivos; sua característica discriminadora é a fraqueza dos músculos intrínsecos.",
+   "C": "Fraqueza intrínseca já aparece no IIb; no grau III ela é acentuada e acompanha atrofia.",
+   "D": "A frase descreve parte do IIb, mas está incompleta como definição classificatória; o item busca a descrição específica do IIa."
+  },
+  "alerta": "A alternativa D também expressa uma característica verdadeira do grau IIb em descrições usuais. A questão fica ambígua sem qualificar intensidade da fraqueza e merece conferência editorial.",
+  "referencias": [
+   "Dellon AL. Review of treatment results for ulnar nerve entrapment at the elbow. J Hand Surg Am. 1989;14:688-700.",
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Ulnar neuropathy at the elbow."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "mao-0221": {
   "conceito": "A luxação do semilunar é o estágio IV de Mayfield: rompido o ligamento radiocarpal dorsal, o semilunar perde a última amarra, roda em torno das inserções volares que restam e cai para dentro do túnel do carpo.",
   "correta": "O sinal da chaleira virada é visto na incidência em perfil e corresponde à rotação palmar do semilunar com luxação da articulação semilunocapitato. O nome descreve o que se vê: o semilunar, normalmente em forma de meia-lua com a concavidade para cima recebendo o capitato, aparece tombado, com a concavidade voltada para volar — como uma chaleira derramando. Duas consequências práticas: o perfil é obrigatório em todo trauma de punho, porque na incidência posteroanterior essa luxação pode passar despercebida, e o semilunar deslocado para volar comprime o nervo mediano, o que faz da redução uma urgência.",
@@ -2411,6 +2534,31 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "mao-0227": {
+  "conceito": "Na doença de Dupuytren, o teste de flexão ativa de **Smith** ajuda a diferenciar limitação articular fixa de deformidade influenciada pelos cordões fasciais, observando a correção obtida quando o paciente flexiona ativamente os dedos.",
+  "correta": "**A.** O teste de **Smith** é relacionado à avaliação clínica da deformidade na doença de Dupuytren.",
+  "incorretas": {
+   "B": "O teste de Elson avalia a integridade da bandeleta central na articulação interfalângica proximal e é empregado na suspeita de boutonnière, não de Dupuytren.",
+   "C": "A associação do teste de Smith é com Dupuytren, não com a deformidade típica da mão reumatoide.",
+   "D": "Elson continua sendo um teste da bandeleta central, ainda que a artrite reumatoide possa produzir deformidades em boutonnière.",
+   "E": "O teste de Zancolli é usado na avaliação da garra e da função dos intrínsecos, não é o teste pedido para Dupuytren."
+  },
+  "referencias": [
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Dupuytren disease and extensor tendon examination.",
+   "Hueston JT. Dupuytren's Contracture. Churchill Livingstone; 1985."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "mao-0228": {
   "conceito": "Na botoeira a banda central se rompe e é preciso refazer a extensão da interfalângica proximal. As técnicas se dividem por qual tecido usam: as próprias bandas laterais, um retalho do tendão extensor ou a soltura do tendão terminal.",
@@ -2520,6 +2668,57 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "mao-0237": {
+  "conceito": "Após artrodese total do punho, sintomas do túnel do carpo podem resultar de edema, alteração da geometria do carpo, doença prévia e cicatrização. Séries históricas relatam necessidade frequente de descompressão, simultânea ou posterior.",
+  "correta": "**E — aproximadamente 67%.** Esse é o percentual adotado pela série de referência da questão para pacientes que necessitaram liberação do túnel do carpo.",
+  "incorretas": {
+   "A": "27% é inferior ao valor da série cobrada.",
+   "B": "37% também subestima a frequência descrita.",
+   "C": "47% não corresponde ao percentual adotado pelo gabarito.",
+   "D": "57% é a alternativa numericamente mais próxima, mas o valor cobrado é 67%."
+  },
+  "alerta": "O percentual é dependente da técnica, da população e da definição de indicação; não representa uma taxa universal das artrodeses modernas.",
+  "referencias": [
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Total wrist arthrodesis.",
+   "Berber O et al. Total wrist arthrodesis: a systematic review. J Wrist Surg. 2018;7:424-440."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
+ "mao-0238": {
+  "conceito": "Na vista palmar do carpo, a estrutura 6 forma uma faixa transversal sobre a concavidade dos ossos do carpo, fechando o túnel do carpo. Trata-se do **retináculo dos flexores**, também chamado ligamento transverso do carpo.",
+  "correta": "**E — ligamento transverso retinacular.** O número 6 cruza transversalmente a face volar do carpo e corresponde ao teto fibroso do túnel do carpo.",
+  "incorretas": {
+   "A": "O ligamento arqueado ocupa relação e orientação diferentes e não forma a faixa transversal superficial indicada.",
+   "B": "O pisohamato é curto e ulnar, entre o pisiforme e o hâmulo do hamato; não atravessa todo o carpo.",
+   "C": "O intercarpal dorsal situa-se na face dorsal, incompatível com a vista e a posição da estrutura 6.",
+   "D": "Os ligamentos intercárpicos palmares unem ossos específicos em feixes oblíquos; não correspondem ao retináculo transversal amplo."
+  },
+  "referencias": [
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Wrist ligament anatomy.",
+   "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020. Flexor retinaculum and carpal tunnel."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "mao-0239": {
   "conceito": "A luxação perissemilunar é a lesão do carpo que mais escapa no primeiro atendimento, e o motivo é conhecido: o punho aparece apenas inchado e dolorido, sem deformidade evidente, e a incidência posteroanterior pode enganar quem não conhece os arcos de Gilula.",
   "correta": "Cerca de um quarto dos casos não é diagnosticado na primeira avaliação. É número suficiente para mudar a rotina: em todo trauma de punho de alta energia, pedir perfil verdadeiro além da posteroanterior, e ler a posteroanterior procurando as três linhas de Gilula — os arcos formados pelas bordas proximal e distal da fileira proximal e pela borda proximal da fileira distal. Qualquer degrau nesses arcos, ou um semilunar que apareça triangular em vez de trapezoidal, é luxação até prova em contrário. O atraso custa caro: passado o momento agudo, a redução fechada deixa de ser possível.",
@@ -2555,6 +2754,31 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "mao-0242": {
+  "conceito": "A **gota de lágrima** do rádio distal é a projeção volar-ulnar da faceta do semilunar. Ela funciona como referência da redução da margem volar e da congruência da articulação radiocárpica; por ser pequena, exige implantes e posicionamento precisos.",
+  "correta": "**A — cerca de 5 mm.** Essa é a maior largura aproximada da gota de lágrima na anatomia marginal volar do rádio.",
+  "incorretas": {
+   "B": "7 mm já supera a dimensão média usada como referência anatômica.",
+   "C": "9 mm é grande demais para essa estrutura marginal.",
+   "D": "10 mm corresponde ao dobro da medida aproximada cobrada.",
+   "E": "12 mm também superestima de forma importante a largura da gota de lágrima."
+  },
+  "referencias": [
+   "Medoff RJ. Essential radiographic evaluation for distal radius fractures. Hand Clin. 2005;21:279-288.",
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Distal radius fractures."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "mao-0243": {
   "conceito": "Duas classificações descrevem a forma do semilunar, e as duas se relacionam com o risco de necrose. Zapico separou os tipos pela orientação e pela relação com a variância ulnar; Viegas separou pela presença ou ausência de uma faceta medial para o hamato.",
@@ -3166,6 +3390,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "mao-0295": {
+  "conceito": "Na doença de Dupuytren do **quinto dedo**, a pele volar e lateral frequentemente está encurtada e aderida aos cordões. O retalho de Jacobsen é uma técnica de rearranjo cutâneo destinada a fornecer cobertura após a liberação dessa contratura, especialmente na borda ulnar da mão.",
+  "correta": "**D — quinto dedo.** O Jacobsen flap é utilizado para tratar a contratura de Dupuytren que acomete o dedo mínimo.",
+  "incorretas": {
+   "A": "O indicador é raramente o alvo dessa técnica e tem anatomia cutânea distinta da borda ulnar.",
+   "B": "O dedo médio pode ser afetado por Dupuytren, mas não é a indicação clássica do retalho de Jacobsen.",
+   "C": "O anular é frequentemente acometido, porém a técnica citada é descrita especificamente para o quinto dedo."
+  },
+  "referencias": [
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Dupuytren disease.",
+   "Hueston JT. Dupuytren's Contracture. Churchill Livingstone; 1985."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "mao-0296": {
   "conceito": "Os três testes clássicos do túnel do carpo agem por mecanismos diferentes, e a descrição de cada um denuncia qual é.",
   "correta": "Compressão direta sobre o nervo mediano no punho, mantida por 30 segundos, é o teste de Durkan — o teste de compressão carpal. Ele reproduz o próprio mecanismo da doença, elevar a pressão dentro do túnel, em vez de agir indiretamente, e por isso reúne o melhor desempenho dos três clássicos. A técnica: polegares sobre o túnel, pressão firme e sustentada, resposta positiva quando surge parestesia no território do mediano.",
@@ -3331,6 +3579,31 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "mao-0311": {
+  "conceito": "A instabilidade **lunopiramidal** é pesquisada por manobras que aplicam forças opostas ao semilunar e ao piramidal, provocando cisalhamento ou ressalto doloroso. Entre os epônimos oferecidos, a manobra associada a essa avaliação é atribuída a Masquelet.",
+  "correta": "**C — teste de Masquelet.** É a alternativa indicada pelo gabarito para avaliação da instabilidade ligamentar semilunopiramidal.",
+  "incorretas": {
+   "A": "O teste de Watson, ou scaphoid shift, avalia principalmente instabilidade escafolunar.",
+   "B": "Linscheid está ligado à descrição e classificação das instabilidades do carpo, mas não é o epônimo cobrado para essa manobra semilunopiramidal.",
+   "D": "Kleinert-Latarjet não corresponde ao teste indicado pelo gabarito para o ligamento semilunopiramidal."
+  },
+  "alerta": "A literatura internacional usa com maior frequência os nomes lunotriquetral ballottement, Reagan shuck e Kleinman shear. O epônimo “Masquelet” é pouco padronizado e deve ser conferido na fonte didática original.",
+  "referencias": [
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Lunotriquetral instability.",
+   "Reagan DS, Linscheid RL, Dobyns JH. Lunotriquetral sprains. J Hand Surg Am. 1984;9:502-514."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "mao-0312": {
   "conceito": "No corte transversal do terço proximal do antebraço, o nervo radial já se dividiu em dois: o ramo superficial, que segue por baixo do braquiorradial junto à borda radial, e o ramo profundo — o interósseo posterior —, que mergulha no supinador em torno do colo do rádio.",
@@ -4489,6 +4762,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "mao-0418": {
+  "conceito": "Na doença de Kienböck, necrose e colapso alteram a distribuição de cargas no semilunar. A região **volar/anterior** é submetida a forças de cisalhamento importantes e constitui o polo mais frequentemente envolvido no padrão de fratura descrito.",
+  "correta": "**B — polo anterior.** É o local mais comum da fratura do semilunar associada à doença de Kienböck.",
+  "incorretas": {
+   "A": "“Distal” não identifica o padrão de polo mais frequentemente descrito nessa doença.",
+   "C": "O polo proximal participa do colapso e da articulação radiolunar, mas não é a resposta epidemiológica do item.",
+   "D": "O polo posterior pode fraturar, porém é menos comum que o anterior."
+  },
+  "referencias": [
+   "Lichtman DM et al. Kienböck disease: update on silicone replacement arthroplasty. J Hand Surg Am. 1982;7:343-347.",
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Kienböck disease."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "mao-0419": {
   "conceito": "O ligamento retinacular oblíquo, de Landsmeer, corre da bainha dos flexores, na falange proximal, até o tendão terminal, na falange distal. Ele cruza volar ao eixo da interfalângica proximal e dorsal ao da distal — e é essa dupla relação que faz as duas articulações se moverem juntas.",
   "correta": "O teste demonstrado é o de Haines-Zancolli, que avalia o tônus, ou a retração, do ligamento retinacular oblíquo. A manobra é a da foto: mantém-se a interfalângica proximal em extensão e tenta-se fletir passivamente a distal. Se a distal não flete nessa posição e passa a fletir quando se flete a proximal, o ligamento está retraído. É a mesma lógica do teste de Bunnell-Littler, uma articulação abaixo — se a limitação depende da posição da articulação vizinha, o freio é uma estrutura que cruza as duas; se não depende, é capsular ou articular.",
@@ -4576,6 +4873,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "mao-0427": {
+  "conceito": "Wassel classifica a duplicação do polegar pelo nível esquelético; o tipo IV é a duplicação na **falange proximal**, com duas falanges distais. Ezaki agrupa a morfologia e a estabilidade para orientar reconstrução, fazendo a correspondência dessa apresentação com seu tipo I.",
+  "correta": "**A — tipo I de Ezaki.** A duplicação do polegar Wassel IV corresponde ao primeiro grupo da classificação de Ezaki adotada pela questão.",
+  "incorretas": {
+   "B": "O tipo II de Ezaki representa outro padrão morfológico e não é a correspondência cobrada para Wassel IV.",
+   "C": "O tipo III não corresponde à duplicação na falange proximal descrita por Wassel IV.",
+   "D": "A repetição do número IV entre classificações diferentes é uma distração; os sistemas não têm equivalência numérica direta."
+  },
+  "referencias": [
+   "Wassel HD. The results of surgery for polydactyly of the thumb. Clin Orthop. 1969;64:175-193.",
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Thumb duplication."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "mao-0428": {
   "conceito": "O nervo cutâneo lateral do antebraço é a continuação sensitiva do musculocutâneo. Ele emerge lateralmente ao tendão distal do bíceps, entre esse tendão e a fáscia do braquial, e é ali que ele é comprimido.",
@@ -5272,6 +5593,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "mao-0491": {
+  "conceito": "Nas classificações topográficas das deficiências congênitas, **T** indica deficiência terminal: não há segmentos normais além do nível afetado. O código longitudinal paraxial completo descreve ausência ao longo de um dos lados do membro, padrão também chamado de hemimelia longitudinal completa.",
+  "correta": "**B.** O tipo **T/1** representa hemimelia **terminal, longitudinal paraxial completa**.",
+  "incorretas": {
+   "A": "Mistura os conceitos terminal e intercalar; uma deficiência não pode ser simultaneamente classificada pelos dois padrões topográficos.",
+   "C": "Intercalar significa preservação de segmentos distais e não corresponde ao prefixo T.",
+   "D": "A descrição longitudinal paraxial completa está correta, mas o termo intercalar contradiz o código terminal."
+  },
+  "referencias": [
+   "Swanson AB. A classification for congenital limb malformations. J Hand Surg Am. 1976;1:8-22.",
+   "Goldfarb CA et al. Congenital hand differences: terminology and classification. J Hand Surg Am. 2015;40:2064-2069."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "mao-0492": {
   "conceito": "Navarro propôs ler o carpo como três colunas verticais, e a leitura persiste porque explica bem a mecânica: a coluna lateral, ou móvel, é a de flexão e extensão; a central é a de carga; a medial é a de rotação.",
   "correta": "A coluna central é formada pelo semilunar, o capitato e o hamato. É por ela que passa a maior parte da carga do punho, e é ela que define o eixo em torno do qual o carpo se move — o capitato é o centro de rotação. A coluna lateral reúne escafoide, trapézio e trapezoide; a medial, piramidal e pisiforme. Guardar a divisão ajuda a entender por que as artrodeses parciais são desenhadas como são: fundir a coluna central preserva a lateral e boa parte do movimento.",
@@ -5403,6 +5748,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "mao-0504": {
+  "conceito": "Na luxação dorsal metacarpofalângica simples, a falange proximal está deslocada dorsalmente. A redução deve evitar **tração longitudinal**, que pode converter a lesão em complexa ao puxar a placa volar para dentro da articulação. Flexiona-se o punho e aplica-se pressão direcionada para volar sobre a base da falange/cabeça metacarpal conforme o ponto de apoio.",
+  "correta": "**B.** Entre as opções, realiza-se força em direção **volar**, sem tração longitudinal.",
+  "incorretas": {
+   "A": "Uma força dorsal mantém ou agrava o deslocamento dorsal.",
+   "C": "Além de dirigir a força para o lado errado, acrescenta tração, que favorece interposição da placa volar.",
+   "D": "A direção volar está correta, mas a tração é indesejável e pode transformar uma luxação simples em irredutível."
+  },
+  "referencias": [
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Metacarpophalangeal joint dislocations.",
+   "AO Foundation. AO Surgery Reference: Reduction of metacarpophalangeal dislocation. https://surgeryreference.aofoundation.org/"
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "mao-0505": {
   "conceito": "Sinal de Terry Thomas é o intervalo aberto entre escafoide e semilunar na incidência posteroanterior, e DISI é o semilunar em extensão no perfil, com ângulo escafossemilunar acima de 60 a 70 graus. Juntos, os dois definem a dissociação escafossemilunar.",
@@ -5813,6 +6182,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "mao-0542": {
+  "conceito": "Na macrodactilia do polegar, o crescimento excessivo não é apenas longitudinal: há desequilíbrio de partes moles, alargamento da primeira comissura e desvio progressivo. O padrão descrito é de **abdução e hiperextensão**.",
+  "correta": "**D — abdução e hiperextensão.** Essa combinação caracteriza a deformidade típica do polegar macrodáctilo na classificação usada pela questão.",
+  "incorretas": {
+   "A": "Adução e semiflexão descrevem o sentido oposto nos dois planos.",
+   "B": "Acerta a abdução, mas a deformidade é em hiperextensão, não semiflexão.",
+   "C": "Acerta a hiperextensão, porém o polegar tende à abdução, não à adução."
+  },
+  "referencias": [
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Macrodactyly.",
+   "Barsky AJ. Macrodactyly. J Bone Joint Surg Am. 1967;49:1255-1266."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "mao-0543": {
   "conceito": "Na pseudoartrose do escafoide, a escolha do enxerto depende de duas perguntas: houve perda de osso a ponto de o escafoide encurtar e colapsar em corcova, e o carpo se desalinhou por causa disso?",
   "correta": "A técnica de Matti-Russe é o enxerto embutido, feito por via volar: escava-se uma cavidade nos dois fragmentos e nela se encaixa um bloco de osso esponjoso da crista ilíaca. Ela é indicada quando não há reabsorção óssea significativa nem instabilidade carpal — ou seja, quando o escafoide manteve o comprimento e o alinhamento e o problema é apenas a falta de consolidação. Quando há colapso em corcova, com deformidade e DISI, o enxerto precisa ser estruturado e em cunha, colocado pela face volar para restaurar o comprimento — a técnica de Fisk e Fernandez.",
@@ -5823,6 +6216,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "mao-0544": {
+  "conceito": "A classificação de Albertoni separa o dedo em martelo em lesões tendíneas e fraturas-avulsão e considera a magnitude da queda da falange distal. O grupo **B** corresponde ao arrancamento ósseo; o subtipo 1, à queda menor que 30°.",
+  "correta": "**C — B1.** Há componente ósseo e queda da falange distal **menor que 30°**.",
+  "incorretas": {
+   "A": "A1 pertence ao grupo sem arrancamento ósseo.",
+   "B": "A2 também descreve lesão predominantemente tendínea, além de corresponder a maior deformidade.",
+   "D": "B2 mantém o arrancamento ósseo, mas é reservado ao grupo com queda igual ou superior a 30°."
+  },
+  "referencias": [
+   "Albertoni WM. Mallet finger: classification. Rev Bras Ortop. Referência clássica da classificação de Albertoni.",
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Extensor tendon injuries."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "mao-0545": {
   "conceito": "O ligamento colateral ulnar da metacarpofalângica do polegar vai da cabeça do metacarpo à base da falange proximal, e a ruptura tem sempre a mesma extremidade preferencial.",
@@ -6044,6 +6461,30 @@
   "geradoEm": "2026-09-06",
   "conferido": false
  },
+ "mao-0565": {
+  "conceito": "A palpação seriada ao redor do cotovelo ajuda a localizar síndromes compressivas. A dor sobre o **túnel radial**, distal ao epicôndilo lateral ao longo do supinador, corresponde às áreas 1–2; a provocação sobre o trajeto proximal do nervo mediano/pronador situa-se mais central e distal, nas áreas 5–6.",
+  "correta": "**B — áreas 1–2 e 5–6.** O primeiro par localiza o túnel radial; o segundo, os pontos de compressão proximal do nervo mediano.",
+  "incorretas": {
+   "A": "As áreas 4–5 não abrangem o par distal indicado para a pesquisa do nervo mediano nessa grade.",
+   "C": "Desloca a pesquisa radial para 2–3, mais distal do que o intervalo 1–2 marcado na figura.",
+   "D": "Combina os dois intervalos incorretos em relação ao mapa apresentado."
+  },
+  "referencias": [
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Radial tunnel and pronator syndromes.",
+   "Spinner M. Injuries to the Major Branches of Peripheral Nerves of the Forearm. 2nd ed. Saunders; 1978."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "moderado",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
+ },
  "mao-0566": {
   "conceito": "A ultrassonografia entrou na reumatologia por conseguir enxergar tecido mole em tempo real e com Doppler: sinovite proliferativa, com sinal de fluxo indicando atividade inflamatória, aparece com sensibilidade próxima à da ressonância e com uma vantagem prática — dá para examinar várias articulações na mesma consulta, à beira do leito, sem contraste. Serve para diagnóstico precoce, para medir atividade e para guiar punção e infiltração.",
   "correta": "Revelar sinovite proliferativa com sensibilidade comparável à da ressonância — que é justamente o achado inflamatório que muda a conduta cedo.",
@@ -6076,6 +6517,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "mao-0569": {
+  "conceito": "No corte transversal do antebraço proximal, o **flexor superficial dos dedos** ocupa grande parte do compartimento volar intermediário, superficial ao flexor profundo e relacionado ao septo que separa os planos flexores.",
+  "correta": "**A — flexor superficial dos dedos.** A seta aponta o grande ventre muscular do plano flexor intermediário, anterior ao plano profundo.",
+  "incorretas": {
+   "B": "O flexor profundo dos dedos encontra-se mais profundamente, junto à ulna e à membrana interóssea.",
+   "C": "O flexor longo do polegar ocupa posição profunda e mais radial, junto ao rádio.",
+   "D": "O flexor radial do carpo é mais superficial e radial, com ventre menor e trajeto tendíneo próprio."
+  },
+  "referencias": [
+   "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020. Anterior compartment of the forearm.",
+   "Netter FH. Atlas of Human Anatomy. 8th ed. Elsevier; 2022. Forearm cross-sectional anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  },
  "mao-0570": {
   "conceito": "A figura mostra as origens musculares no dorso do antebraço, e a seta aponta a área larga que atravessa a membrana interóssea alcançando os dois ossos. Essa é a assinatura do abdutor longo do polegar: entre os músculos profundos do dorso, é o único que se origina ao mesmo tempo da face posterior da ulna, da membrana interóssea e da face posterior do rádio, e é também o mais proximal deles. Daí ele cruza obliquamente por cima dos extensores radiais do carpo para chegar à base do primeiro metacarpo.",
@@ -6154,5 +6619,30 @@
   },
   "geradoEm": "2026-09-06",
   "conferido": false
+ },
+ "mao-0577": {
+  "conceito": "Na face volar do punho, o **radiolunato longo** parte do rádio e dirige-se ao semilunar; o **triquetocapitato** integra o arco ligamentar ulnar e segue do piramidal ao capitato. A identificação depende da origem e da direção de cada feixe.",
+  "correta": "**A — radiolunato longo e triquetocapitato.** Essa é a correspondência registrada para as setas 1 e 2.",
+  "incorretas": {
+   "B": "A primeira estrutura coincide, mas o segundo feixe não é denominado semilunocapitato na configuração indicada pelo gabarito.",
+   "C": "O radioescafocapitato passa do rádio em direção ao capitato, apoiando o escafoide; ele não corresponde à seta 1.",
+   "D": "Troca os dois componentes: a seta 1 não é radioescafocapitato e a seta 2 não é semilunocapitato."
+  },
+  "alerta": "A figura original está ausente do acervo. O comentário explica a relação anatômica do gabarito, mas a correspondência visual das setas não pôde ser conferida e deve permanecer sinalizada até a imagem ser recuperada.",
+  "referencias": [
+   "Berger RA. The anatomy of the ligaments of the wrist and distal radioulnar joints. Clin Orthop Relat Res. 2001;(383):32-40.",
+   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Wrist ligament anatomy."
+  ],
+  "geradoEm": "2026-09-13",
+  "conferido": false,
+  "nivelConfianca": "baixo",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-13",
+   "observacao": "Checagem automática estrutural; não substitui revisão médica."
+  }
  }
 }

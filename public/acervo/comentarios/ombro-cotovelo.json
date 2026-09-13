@@ -3661,5 +3661,29 @@
   },
   "geradoEm": "2026-09-10",
   "conferido": false
+ },
+ "ombro-cotovelo-0018": {
+  "respostaDireta": "**Resposta: B — ancôneo, inervado pelo nervo radial.** A seta aponta para o ancôneo, pequeno músculo posterolateral do cotovelo.",
+  "raciocinioClinico": "A imagem mostra um músculo triangular situado posteriormente ao cotovelo, entre o epicôndilo lateral e a ulna proximal, compatível com o ancôneo. Embora esteja próximo do nervo ulnar na região do cotovelo, sua inervação motora clássica vem de um ramo do nervo radial, geralmente antes da divisão em seus ramos profundos.",
+  "conceito": "O ancôneo auxilia a extensão do cotovelo e contribui para a estabilidade posterolateral. O supinador é outro músculo do compartimento posterior, mas ocupa o antebraço proximal e envolve o rádio, não a pequena área triangular imediatamente posterior ao cotovelo.",
+  "correta": "A alternativa B reúne os dois dados: o músculo indicado é o ancôneo e sua inervação é feita pelo nervo radial.",
+  "incorretas": {
+   "A": "O músculo está identificado corretamente, mas o nervo está errado: o ancôneo não é inervado pelo nervo ulnar.",
+   "C": "O supinador não corresponde ao músculo indicado e sua inervação também não é pelo nervo ulnar.",
+   "D": "O nervo radial inerva o supinador, mas a estrutura indicada na imagem é o ancôneo, não o supinador."
+  },
+  "analiseAlternativas": {
+   "A": {"justificativa": "O ancôneo está correto, mas a inervação pelo nervo ulnar está incorreta.", "quandoUsar": "A relação com o nervo ulnar é relevante ao estudar o sulco retroepicondiliano e os acessos mediais do cotovelo.", "erroComum": "Escolher o nervo ulnar por ele ser lembrado como o nervo mais próximo do cotovelo medial."},
+   "B": {"justificativa": "Correta: o músculo é o ancôneo e recebe inervação de ramo do nervo radial.", "quandoUsar": "A identificação é útil em anatomia regional e nos acessos posteriores do cotovelo."},
+   "C": {"justificativa": "O músculo e o nervo estão incorretos para a imagem.", "quandoUsar": "O supinador deve ser considerado em questões sobre supinação e compressão do ramo profundo do nervo radial na arcada de Frohse.", "erroComum": "Confundir qualquer músculo posterior do antebraço com o ancôneo."},
+   "D": {"justificativa": "A inervação radial do supinador é compatível, mas o músculo indicado não é o supinador.", "quandoUsar": "A alternativa descreve a inervação do supinador, não a estrutura mostrada.", "erroComum": "Reconhecer o nervo correto e deixar de conferir a anatomia e a localização do músculo."}
+  },
+  "pontoMemorizar": "**Ancôneo = extensão do cotovelo + nervo radial.** Supinador = supinação do antebraço + ramo profundo do nervo radial.",
+  "armadilhas": "A proximidade anatômica do nervo ulnar pode induzir erro. A pergunta exige identificar simultaneamente o músculo e sua inervação; acertar apenas um dos dois não basta. Variações anatômicas de ramos nervosos existem, mas não mudam a resposta clássica cobrada nesta questão.",
+  "referencias": ["StatPearls. Anatomy, Shoulder and Upper Limb: Forearm Compartments. NCBI Bookshelf. Atualizado em 2023. https://www.ncbi.nlm.nih.gov/books/NBK539784/", "StatPearls. Anatomy, Shoulder and Upper Limb: Radial Nerve. NCBI Bookshelf. Atualizado em 2023. https://www.ncbi.nlm.nih.gov/books/NBK534840/"],
+  "geradoEm": "2026-09-12",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {"status": "aprovado", "alternativasCompletas": true, "gabaritoConferido": true, "fontesPresentes": true, "verificadoEm": "2026-09-12", "observacao": "Checagem estrutural automática; não substitui revisão médica."}
  }
 }
