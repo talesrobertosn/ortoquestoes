@@ -1833,5 +1833,12 @@ kbd {
 .conta-pagina h2 { overflow-wrap: anywhere; }
 .conta-pagina pre { overflow-wrap: anywhere; white-space: pre-wrap; max-height: 18rem; overflow-y: auto; font: inherit; padding: 1rem; background: var(--superficie-2); }
 .conta-pagina .campo { display: grid; gap: .5rem; }
+.pagina--compacta .cartao__corpo { padding: .9rem; }
+.pagina--compacta .empilha { gap: .7rem; }
+.pagina--compacta .texto-editorial { line-height: 1.55; }
+.pagina--foco .conteudo--estreito { max-width: 76rem; }
+.pagina--foco .questao-impressa .questao__topo { margin-bottom: 1.25rem; }
+.pagina--foco .questao-impressa .questao__enunciado { font-size: 1.15em; line-height: 1.8; max-width: 68ch; }
+.pagina--foco .alternativas { max-width: 72ch; }
 @media (max-width: 30rem) { .cabecalho__nav { gap: .2rem; } .cabecalho__nav .nav-link { padding-inline: .4rem; } }
 
