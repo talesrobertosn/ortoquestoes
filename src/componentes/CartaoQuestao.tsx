@@ -53,6 +53,7 @@ export function CartaoQuestao({
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
   const [copiado, definirCopiado] = useState(false)
   const [menuGrifo, definirMenuGrifo] = useState<{ x: number; y: number } | null>(null)
+  const [grifos, definirGrifos] = useState<Array<{ left: number; top: number; width: number; height: number }>>([])
   const inicio = useRef<number>(Date.now())
   const areaDaQuestao = useRef<HTMLElement>(null)
   const grifoRecente = useRef(false)
@@ -177,39 +178,15 @@ export function CartaoQuestao({
   }
 
   function aplicarGrifo(faixa: Range) {
-    // Não usamos extractContents/surroundContents: quando a seleção atravessa
-    // títulos, parágrafos e colunas do comentário, esses métodos movem nós e
-    // podem quebrar a grade. Custom Highlight pinta o Range sem tocar no DOM.
-    const cssComGrifos = CSS as unknown as {
-      highlights?: Map<string, { add: (range: Range) => void }>
-    }
-    const ConjuntoGrifo = (window as unknown as {
-      Highlight?: new () => { add: (range: Range) => void }
-    }).Highlight
-    if (cssComGrifos.highlights && ConjuntoGrifo) {
-      const grifos = cssComGrifos.highlights.get('ortoquestoes-grifo') ?? new ConjuntoGrifo()
-      grifos.add(faixa)
-      cssComGrifos.highlights.set('ortoquestoes-grifo', grifos)
-    } else if (
-      faixa.startContainer === faixa.endContainer &&
-      faixa.startContainer.nodeType === Node.TEXT_NODE
-    ) {
-      // Fallback seguro: só marca um único nó de texto, nunca atravessa a
-      // estrutura do comentário. Navegadores atuais seguem pelo caminho acima.
-      const texto = faixa.startContainer as Text
-      const antes = texto.data.slice(0, faixa.startOffset)
-      const meio = texto.data.slice(faixa.startOffset, faixa.endOffset)
-      const depois = texto.data.slice(faixa.endOffset)
-      const marca = document.createElement('mark')
-      marca.className = 'grifo-temporario'
-      marca.textContent = meio
-      texto.parentNode?.replaceChild(document.createTextNode(antes), texto)
-      const ancora = texto.parentNode?.lastChild
-      if (ancora) {
-        ancora.parentNode?.insertBefore(marca, ancora.nextSibling)
-        marca.parentNode?.insertBefore(document.createTextNode(depois), marca.nextSibling)
-      }
-    }
+    const caixa = areaDaQuestao.current?.getBoundingClientRect()
+    if (!caixa) return
+    const linhas = [...faixa.getClientRects()].map((r) => ({
+      left: r.left - caixa.left,
+      top: r.top - caixa.top,
+      width: r.width,
+      height: r.height,
+    })).filter((r) => r.width > 0 && r.height > 0)
+    if (linhas.length) definirGrifos((atuais) => [...atuais, ...linhas])
     window.getSelection()?.removeAllRanges()
     grifoRecente.current = true
     window.setTimeout(() => { grifoRecente.current = false }, 0)
@@ -222,6 +199,7 @@ export function CartaoQuestao({
 
   return (
     <article className="cartao questao-impressa" aria-label={`Questão ${numero ?? ''}`} ref={areaDaQuestao} onMouseUp={atualizarSelecao}>
+      {grifos.map((r, i) => <span key={i} className="grifo-overlay" style={{ left: r.left, top: r.top, width: r.width, height: r.height }} aria-hidden="true" />)}
       <div className="cartao__corpo">
         <div className="questao__topo">
           {questao.ano && <span className="etiqueta etiqueta--dado">{questao.ano}</span>}
