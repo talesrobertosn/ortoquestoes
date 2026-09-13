@@ -10,6 +10,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
+import { planoRevisao, rotuloDia } from '../estado/planoRevisao'
 
 const VARIACOES_INICIO = [
   { saudacao: 'A constância de hoje vira segurança na prova.', rotina: 'Um pouco de prática, todos os dias', explicacao: 'Errou? Revise agora. Acertou? Volte em 3, 7, 14 e 30 dias. Quatro acertos espaçados marcam a questão como dominada.', acao: 'Começar um treino de 10 questões', revisar: 'Retome o que precisa fixar', novas: 'Avance no acervo' },
@@ -49,6 +50,39 @@ export function Inicio() {
   const maiorTema = contagens
     ? Math.max(1, ...Object.values(contagens.porTema))
     : 1
+  const revisoesPlanejadas = useMemo(
+    () => (indice ? planoRevisao(indice, contexto.respondidas, 7) : new Map()),
+    [indice, contexto.respondidas],
+  )
+  const temaFragil = useMemo(() => {
+    if (!indice) return null
+    const porTema = new Map<string, { acertos: number; tentativas: number; pendentes: number; slug: string }>()
+    for (const item of indice.questoes) {
+      const registro = contexto.respondidas[item.id]
+      if (!registro) continue
+      const tema = indice.temas[item.t]
+      if (!tema) continue
+      const atual = porTema.get(tema.nome) ?? { acertos: 0, tentativas: 0, pendentes: 0, slug: tema.slug }
+      atual.acertos += registro.acertos ?? Number(registro.c === true)
+      atual.tentativas += registro.tentativas ?? 1
+      porTema.set(tema.nome, atual)
+    }
+    for (const dia of revisoesPlanejadas.values()) for (const [tema, quantidade] of dia.temas) {
+      const atual = porTema.get(tema)
+      if (atual) atual.pendentes += quantidade
+    }
+    return [...porTema.entries()]
+      .filter(([, valor]) => valor.tentativas >= 2)
+      .sort((a, b) => a[1].acertos / a[1].tentativas - b[1].acertos / b[1].tentativas)[0] ?? null
+  }, [indice, contexto.respondidas, revisoesPlanejadas])
+  const resumoSemana = useMemo(() => {
+    const limite = Date.now() - 7 * 86400000
+    const recentes = historico.filter(h => h.concluidaEm >= limite)
+    const respondidas = recentes.reduce((total, h) => total + h.respondidas, 0)
+    const acertos = recentes.reduce((total, h) => total + h.acertos, 0)
+    const dias = new Set(recentes.map(h => new Date(h.concluidaEm).toDateString())).size
+    return { respondidas, acertos, dias }
+  }, [historico])
 
   /** Treino rápido: uma sessão embaralhada de todo o acervo, num clique. */
   function treinoRapido(quantidade: number) {
@@ -111,10 +145,12 @@ export function Inicio() {
           <section className="painel-diario" aria-label="Seu estudo de hoje">
             <div className="painel-diario__intro">
               <p className="meta">SUA ROTINA DE ESTUDO</p>
-              <h2>{sessaoEmAndamento ? 'Continue de onde parou' : textoDoDia.rotina}</h2>
+              <h2>{sessaoEmAndamento ? 'Continue de onde parou' : 'O que fazer agora'}</h2>
               <p>{textoDoDia.explicacao}</p>
               {sessaoEmAndamento && <a className="botao botao--principal" href={href('/sessao')}>Continuar sessão · {Object.keys(sessao!.respostas).length}/{sessao!.ids.length}</a>}
-              {!sessaoEmAndamento && <button type="button" className="botao botao--principal botao--grande" onClick={() => treinoRapido(10)} disabled={contagens.total < 10}>{textoDoDia.acao}</button>}
+              {!sessaoEmAndamento && <div className="linha linha--empilha-celular">
+                {[5, 10, 20].map(quantidade => <button key={quantidade} type="button" className={quantidade === 10 ? 'botao botao--principal' : 'botao'} onClick={() => treinoRapido(quantidade)} disabled={contagens.total < quantidade}>{quantidade === 10 ? textoDoDia.acao : `${quantidade} questões · ~${Math.max(4, Math.round(quantidade * 0.8))} min`}</button>)}
+              </div>}
               <span className="acao-calendario"><a className="botao" href={href('/revisao')}>Abrir calendário de revisão</a></span>
             </div>
             <div className="atalhos-estudo">
@@ -123,10 +159,20 @@ export function Inicio() {
               <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>{textoDoDia.novas}</small></a>
             </div>
           </section>
+          {temaFragil && <section className="cartao cartao__corpo convite-conta">
+            <p className="meta">ONDE VOCÊ MAIS GANHA AO REVISAR</p>
+            <h2>{temaFragil[0]} · {Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)}% de acerto</h2>
+            <p>{temaFragil[1].pendentes > 0 ? `${temaFragil[1].pendentes} revisões desse tema estão programadas.` : 'Faça uma sessão curta para transformar este ponto em segurança.'}</p>
+            <a className="botao botao--principal" href={href(`/treinar?temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema</a>
+          </section>}
+          {revisoesPlanejadas.size > 0 && <section className="cartao cartao__corpo">
+            <p className="meta">PRÓXIMOS SETE DIAS</p><h2>Prévia da sua carga de revisão</h2>
+            <div className="linha linha--empilha-celular" style={{ marginTop: '0.75rem' }}>{[...revisoesPlanejadas.values()].slice(0, 7).map(dia => <a className="botao" key={dia.chave} href={href('/revisao')}><strong>{rotuloDia(dia.inicio)}</strong> · {dia.ids.length} {dia.ids.length === 1 ? 'questão' : 'questões'}{dia.atrasadas > 0 ? ' · atrasadas' : ''}</a>)}</div>
+          </section>}
           {!conta && <section className="cartao cartao__corpo convite-conta">
-            <p className="meta">ESTUDE EM QUALQUER DISPOSITIVO</p>
-            <h2>Crie sua conta gratuita e guarde sua evolução</h2>
-            <p>Suas respostas, revisões, favoritas e desempenho ficam salvos com segurança e acompanham você no computador e no celular.</p>
+            <p className="meta">COMECE SEM CADASTRO</p>
+            <h2>Seu progresso já fica salvo neste navegador</h2>
+            <p>Crie uma conta quando quiser levar respostas, revisões, favoritas e desempenho para outros dispositivos.</p>
             <a className="botao botao--principal" href={href('/conta')}>Criar minha conta</a>
           </section>}
           <div className="linha linha--empilha-celular">
@@ -138,7 +184,14 @@ export function Inicio() {
                 Retomar a última sessão
               </a>
             )}
+            <a className="botao botao--grande" href={href('/favoritas')}>Ver questões favoritas</a>
           </div>
+
+          {resumoSemana.respondidas > 0 && <section className="cartao cartao__corpo">
+            <p className="meta">SUA SEMANA</p>
+            <h2>{resumoSemana.respondidas} questões em {resumoSemana.dias} {resumoSemana.dias === 1 ? 'dia ativo' : 'dias ativos'}</h2>
+            <p>{Math.round((resumoSemana.acertos / resumoSemana.respondidas) * 100)}% de acerto nas sessões concluídas nos últimos sete dias. Continue com uma sessão curta para sustentar o ritmo.</p>
+          </section>}
 
           <section>
             <h2>Por tema</h2>
