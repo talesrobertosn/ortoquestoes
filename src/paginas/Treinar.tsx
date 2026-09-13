@@ -111,7 +111,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   }
 
   return (
-    <div className="empilha-2">
+    <div className="empilha-2 treinar-pagina">
       <header className="limite-leitura">
         <h1>Montar sessão</h1>
         <p className="texto-2" style={{ marginTop: '0.5rem' }}>
@@ -121,7 +121,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         {!conta && <p className="aviso-ia" style={{ marginTop: '0.75rem' }}>Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. <a href={href('/conta')}>Criar minha conta</a></p>}
       </header>
 
-      <section className="intencoes" aria-label="Escolha seu treino">
+      <section className="intencoes treinar-intencoes" aria-label="Escolha seu treino">
         {([
           ['Treino rápido', '10 questões para começar', { limite: 10 }],
           ['Revisar hoje', 'Retome as revisões pendentes', { situacao: 'revisarHoje', limite: 20 }],
@@ -133,8 +133,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           </button>
         ))}
       </section>
-      <p className="meta">Acervo de TEOT, TARO e outras seleções. Prova e ano de cada questão ainda estão em conferência; filtros só aparecem quando há dados disponíveis.</p>
-      <div className="cartao">
+      <p className="meta treinar-contexto">Acervo de TEOT, TARO e outras seleções. Prova e ano de cada questão ainda estão em conferência; filtros só aparecem quando há dados disponíveis.</p>
+      <div className="cartao treinar-filtros">
         <div className="cartao__corpo empilha">
           <section className="filtros-destaque">
             <h2>Buscar por palavras</h2>
@@ -429,3 +429,4 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     </div>
   )
 }
+
