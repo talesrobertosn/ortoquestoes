@@ -1,5 +1,5 @@
 /* ==========================================================================
-   OrtoQuestões — base e componentes
+   OrtoQuestÃµes â€” base e componentes
    ========================================================================== */
 
 *,
@@ -117,7 +117,7 @@ textarea {
   top: 0.5rem;
 }
 
-/* ---------- Estrutura de página ---------------------------------------- */
+/* ---------- Estrutura de pÃ¡gina ---------------------------------------- */
 
 .pagina {
   min-height: 100dvh;
@@ -144,9 +144,9 @@ textarea {
   }
 }
 
-/* Coluna de leitura da questão. O enunciado tem limite próprio de caracteres
-   por linha; o cartão pode ser mais largo do que ele, e as alternativas
-   agradecem — enunciado de duas linhas cabe em uma. */
+/* Coluna de leitura da questÃ£o. O enunciado tem limite prÃ³prio de caracteres
+   por linha; o cartÃ£o pode ser mais largo do que ele, e as alternativas
+   agradecem â€” enunciado de duas linhas cabe em uma. */
 .conteudo--estreito {
   max-width: 64rem;
 }
@@ -162,7 +162,7 @@ textarea {
   }
 }
 
-/* ---------- Cabeçalho ---------------------------------------------------- */
+/* ---------- CabeÃ§alho ---------------------------------------------------- */
 
 .cabecalho {
   border-bottom: var(--borda);
@@ -208,8 +208,8 @@ textarea {
   color: var(--texto);
   background: var(--superficie-2);
 }
-/* Em telas estreitas o cabeçalho guarda só a marca, o treino e o tema.
-   Os links de apoio continuam no rodapé, sem menu escondido atrás de ícone. */
+/* Em telas estreitas o cabeÃ§alho guarda sÃ³ a marca, o treino e o tema.
+   Os links de apoio continuam no rodapÃ©, sem menu escondido atrÃ¡s de Ã­cone. */
 @media (max-width: 30rem) {
   .nav-link--secundario {
     display: none;
@@ -225,7 +225,7 @@ textarea {
   border-radius: 0;
 }
 
-/* ---------- Rodapé ------------------------------------------------------ */
+/* ---------- RodapÃ© ------------------------------------------------------ */
 
 .rodape {
   border-top: var(--borda);
@@ -249,7 +249,7 @@ textarea {
   margin-left: auto;
 }
 
-/* ---------- Botões ------------------------------------------------------ */
+/* ---------- BotÃµes ------------------------------------------------------ */
 
 .botao {
   display: inline-flex;
@@ -289,7 +289,7 @@ textarea {
 }
 
 .botao--principal:disabled {
-  /* Desabilitado não pode virar texto ilegível: vira botão neutro, não apagado. */
+  /* Desabilitado nÃ£o pode virar texto ilegÃ­vel: vira botÃ£o neutro, nÃ£o apagado. */
   background: var(--superficie-2);
   border-color: var(--traco);
   color: var(--texto-2);
@@ -341,7 +341,7 @@ textarea {
   color: var(--verdete);
 }
 
-/* ---------- Cartões e superfícies --------------------------------------- */
+/* ---------- CartÃµes e superfÃ­cies --------------------------------------- */
 
 .cartao {
   background: var(--superficie);
@@ -366,12 +366,12 @@ textarea {
   }
 }
 
-/* ---------- Herói da página inicial ------------------------------------ */
+/* ---------- HerÃ³i da pÃ¡gina inicial ------------------------------------ */
 
 .heroi h1 {
-  /* Sem limite de coluna no título: quem controla a quebra é o `balance`,
+  /* Sem limite de coluna no tÃ­tulo: quem controla a quebra Ã© o `balance`,
      que distribui as linhas em blocos de largura parecida em vez de deixar
-     uma palavra órfã na última. Em telas largas ele cabe em duas linhas. */
+     uma palavra Ã³rfÃ£ na Ãºltima. Em telas largas ele cabe em duas linhas. */
   max-width: 30ch;
   font-size: clamp(1.875rem, 1.2rem + 3vw, 2.625rem);
   letter-spacing: -0.025em;
@@ -395,9 +395,9 @@ textarea {
   color: var(--texto-2);
 }
 
-/* No computador o herói vira duas colunas: título à esquerda, texto de
-   apoio à direita. Em uma só coluna, a largura de leitura confortável
-   deixaria dois terços da tela vazios e o título quebrado em quatro linhas. */
+/* No computador o herÃ³i vira duas colunas: tÃ­tulo Ã  esquerda, texto de
+   apoio Ã  direita. Em uma sÃ³ coluna, a largura de leitura confortÃ¡vel
+   deixaria dois terÃ§os da tela vazios e o tÃ­tulo quebrado em quatro linhas. */
 @media (min-width: 75rem) {
   .heroi {
     display: grid;
@@ -441,7 +441,7 @@ textarea {
   }
 }
 
-/* ---------- Formulário -------------------------------------------------- */
+/* ---------- FormulÃ¡rio -------------------------------------------------- */
 
 .campo {
   display: block;
@@ -573,7 +573,7 @@ textarea {
   height: 0;
 }
 
-/* ---------- Seletor em árvore ------------------------------------------- */
+/* ---------- Seletor em Ã¡rvore ------------------------------------------- */
 
 .seletor {
   position: relative;
@@ -734,7 +734,7 @@ textarea {
   background: var(--erro-veu);
 }
 
-/* ---------- Questão ------------------------------------------------------ */
+/* ---------- QuestÃ£o ------------------------------------------------------ */
 
 .questao__topo {
   display: flex;
@@ -789,7 +789,7 @@ textarea {
   border-top: var(--borda);
 }
 
-/* Alternativas: linha inteira clicável, chip de letra à esquerda,
+/* Alternativas: linha inteira clicÃ¡vel, chip de letra Ã  esquerda,
    como uma folha de respostas. */
 .alternativas {
   display: flex;
@@ -932,7 +932,7 @@ textarea {
   }
 }
 
-/* ---------- Resultado e comentário -------------------------------------- */
+/* ---------- Resultado e comentÃ¡rio -------------------------------------- */
 
 .resultado {
   display: flex;
@@ -978,7 +978,7 @@ textarea {
   color: var(--texto-2);
 }
 
-/* Os três comentários — do autor, da IA e da comunidade — moram em blocos
+/* Os trÃªs comentÃ¡rios â€” do autor, da IA e da comunidade â€” moram em blocos
    separados e nomeados. De onde vem o texto muda o peso que ele tem. */
 .bloco-comentario + .bloco-comentario {
   margin-top: 1.5rem;
@@ -1016,7 +1016,7 @@ textarea {
 }
 
 /* Aviso de gabarito duvidoso: precisa se distinguir do aviso de rotina sobre
-   o texto ser de IA, porque diz respeito ao conteúdo da própria questão. */
+   o texto ser de IA, porque diz respeito ao conteÃºdo da prÃ³pria questÃ£o. */
 .aviso-ia--gabarito {
   border-left-color: var(--erro);
   background: var(--erro-veu);
@@ -1164,7 +1164,7 @@ textarea {
   gap: 0.375rem;
 }
 
-/* ---------- Cronômetro do simulado -------------------------------------- */
+/* ---------- CronÃ´metro do simulado -------------------------------------- */
 
 .cronometro {
   display: inline-flex;
@@ -1331,8 +1331,8 @@ textarea {
   border-top: 0;
 }
 
-/* Onze temas empilhados em uma coluna só desperdiçam a largura do
-   computador e alongam a página. Em duas colunas a lista cabe na dobra. */
+/* Onze temas empilhados em uma coluna sÃ³ desperdiÃ§am a largura do
+   computador e alongam a pÃ¡gina. Em duas colunas a lista cabe na dobra. */
 @media (min-width: 60rem) {
   .distribuicao {
     display: grid;
@@ -1340,8 +1340,8 @@ textarea {
     column-gap: 3rem;
   }
 
-  /* Numa grade de duas colunas, quem abre cada coluna são os dois
-     primeiros itens — e são eles que dispensam a linha de cima. */
+  /* Numa grade de duas colunas, quem abre cada coluna sÃ£o os dois
+     primeiros itens â€” e sÃ£o eles que dispensam a linha de cima. */
   .distribuicao__item:nth-child(-n + 2) {
     border-top: 0;
   }
@@ -1501,7 +1501,7 @@ kbd {
   align-items: center;
   justify-content: space-between;
 }
-/* Linha de ações: no celular o botão principal ocupa a largura toda e vai
+/* Linha de aÃ§Ãµes: no celular o botÃ£o principal ocupa a largura toda e vai
    para cima, em vez de espremer o contador contra a borda. */
 .acoes {
   display: flex;
@@ -1540,15 +1540,15 @@ kbd {
   margin-top: 0.6em;
 }
 
-/* Dica de teclado não serve a quem está no toque. */
+/* Dica de teclado nÃ£o serve a quem estÃ¡ no toque. */
 @media (max-width: 47.99rem), (pointer: coarse) {
   .so-teclado {
     display: none;
   }
 }
 
-/* No celular o botão de ação ocupa a linha inteira: alvo grande e ao alcance
-   do polegar vale mais do que economia de espaço. */
+/* No celular o botÃ£o de aÃ§Ã£o ocupa a linha inteira: alvo grande e ao alcance
+   do polegar vale mais do que economia de espaÃ§o. */
 @media (max-width: 30rem) {
   .acao-responder .botao,
   .heroi + .linha .botao,
@@ -1564,7 +1564,7 @@ kbd {
   .alternativa__texto {
     padding: 0.75rem 0.625rem;
   }
-  /* No celular o rótulo do resultado desce para a própria linha: ao lado do
+  /* No celular o rÃ³tulo do resultado desce para a prÃ³pria linha: ao lado do
      texto ele espremia a alternativa a ponto de quebrar palavra no meio. */
   .alternativa {
     flex-wrap: wrap;
@@ -1579,7 +1579,7 @@ kbd {
     justify-content: flex-start;
     padding: 0 0.625rem 0.625rem 2.75rem;
   }
-  /* No celular a margem lateral é espaço de leitura desperdiçado: o cartão
+  /* No celular a margem lateral Ã© espaÃ§o de leitura desperdiÃ§ado: o cartÃ£o
      encosta na borda e o enunciado ganha a largura de volta. */
   .principal > .conteudo--estreito {
     padding: 0;
@@ -1597,7 +1597,7 @@ kbd {
   }
 }
 
-/* ---------- Contribuições da comunidade -------------------------------- */
+/* ---------- ContribuiÃ§Ãµes da comunidade -------------------------------- */
 
 .contribuicao {
   border-left: 3px solid var(--verdete);
@@ -1610,7 +1610,7 @@ kbd {
   color: var(--texto-2);
 }
 
-/* ---------- Página de progresso ---------------------------------------- */
+/* ---------- PÃ¡gina de progresso ---------------------------------------- */
 
 .painel-progresso {
   display: grid;
@@ -1639,7 +1639,7 @@ kbd {
 }
 
 /* Figura de destaque na mesma fonte do resto e com algarismos
-   proporcionais: `tabular-nums` só serve onde números se alinham em coluna. */
+   proporcionais: `tabular-nums` sÃ³ serve onde nÃºmeros se alinham em coluna. */
 .cartao-progresso__valor {
   margin-top: 0.35rem;
   font-size: clamp(2.25rem, 1.5rem + 3vw, 3rem);
@@ -1659,7 +1659,7 @@ kbd {
 }
 
 /* Barra de cobertura: trilho recuado, parte preenchida na cor da marca.
-   Ponta arredondada só na extremidade do dado — a base fica reta. */
+   Ponta arredondada sÃ³ na extremidade do dado â€” a base fica reta. */
 .barra-cobertura {
   display: block;
   height: 6px;
@@ -1686,7 +1686,7 @@ kbd {
   color: var(--texto-2);
 }
 
-/* ---------- Gráfico ----------------------------------------------------- */
+/* ---------- GrÃ¡fico ----------------------------------------------------- */
 
 .grafico {
   margin: 0;
@@ -1702,7 +1702,7 @@ kbd {
   height: auto;
 }
 
-/* Grade e eixos: traço de 1px, sólido, um passo fora da superfície. */
+/* Grade e eixos: traÃ§o de 1px, sÃ³lido, um passo fora da superfÃ­cie. */
 .grafico__grade {
   stroke: var(--traco);
   stroke-width: 1;
@@ -1732,7 +1732,7 @@ kbd {
   stroke-width: 1;
 }
 
-/* Anel na cor da superfície para o ponto continuar legível sobre a linha. */
+/* Anel na cor da superfÃ­cie para o ponto continuar legÃ­vel sobre a linha. */
 .grafico__ponto {
   fill: var(--verdete);
   stroke: var(--superficie);
@@ -1755,12 +1755,15 @@ kbd {
   color: var(--texto-2);
 }
 
-/* Rotina diária e leitura editorial, nos dois temas. */
+/* Rotina diÃ¡ria e leitura editorial, nos dois temas. */
 .painel-diario { padding: clamp(1.25rem, 3vw, 2rem); border: var(--borda); border-radius: 16px; background: var(--superficie); }
 .painel-diario__intro { max-width: 65ch; margin-bottom: 1.5rem; }
 .painel-diario__intro h2 { margin: .4rem 0 .75rem; }
 .painel-diario__intro p { margin-bottom: 1rem; }
 .atalhos-estudo { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.revisao-heroi { padding: clamp(1.5rem,4vw,3rem); border-radius: 16px; color: var(--texto); background: linear-gradient(135deg, var(--verdete-veu), var(--superficie)); border: 1px solid var(--verdete); }
+.revisao-heroi h1 { max-width: 18ch; margin:.35rem 0 .75rem; }.revisao-heroi p:not(.meta) { max-width:60ch; margin-bottom:1rem; }
+.calendario { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:.5rem; margin-top:1rem; }.calendario__dia { min-height:5.75rem; padding:.5rem; display:flex; flex-direction:column; align-items:flex-start; justify-content:space-between; border:var(--borda); border-radius:10px; background:var(--superficie); color:var(--texto); font:inherit; cursor:pointer; }.calendario__dia span,.calendario__dia small { color:var(--texto-2); font-size:var(--meta); }.calendario__dia strong { font-variant-numeric:tabular-nums; font-size:1.2rem; }.calendario__dia--leve { background:var(--verdete-veu); border-color:var(--verdete); }.calendario__dia--alto { background:var(--aviso-veu); border-color:var(--aviso); }.calendario__dia--atrasado { background:var(--erro-veu); border-color:var(--erro); }.calendario__dia--selecionado { outline:2px solid var(--texto); outline-offset:2px; }.revisao-detalhe h2 { margin:.25rem 0 .5rem; }.chips { display:flex; flex-wrap:wrap; gap:.5rem; margin:1rem 0; }.chips span { padding:.35rem .6rem; border-radius:999px; background:var(--superficie-2); border:var(--borda); font-size:var(--corpo-menor); }
 .atalhos-estudo a { display: flex; flex-direction: column; gap: .25rem; padding: 1.25rem; border-radius: 10px; background: var(--superficie-2); border: var(--borda); text-decoration: none; color: var(--texto); }
 .atalhos-estudo a:first-child { background: var(--verdete-veu); border-color: var(--verdete); }
 .atalhos-estudo strong { font-size: 2rem; font-variant-numeric: tabular-nums; color: var(--verdete); }
@@ -1803,6 +1806,7 @@ kbd {
 .origem-questao { margin-bottom: 1rem; }
 .nav-mobile { display: none; }
 @media (max-width: 48rem) {
+  .calendario { display:flex; overflow-x:auto; padding:.25rem; scroll-snap-type:x mandatory; }.calendario__dia { min-width:4.5rem; scroll-snap-align:start; }
   .intencoes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .atalhos-estudo { grid-template-columns: 1fr; gap: .65rem; }
   .atalhos-estudo a { padding: 1rem; }
@@ -1822,3 +1826,4 @@ kbd {
 .conta-pagina pre { overflow-wrap: anywhere; white-space: pre-wrap; max-height: 18rem; overflow-y: auto; font: inherit; padding: 1rem; background: var(--superficie-2); }
 .conta-pagina .campo { display: grid; gap: .5rem; }
 @media (max-width: 30rem) { .cabecalho__nav { gap: .2rem; } .cabecalho__nav .nav-link { padding-inline: .4rem; } }
+
