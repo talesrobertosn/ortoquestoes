@@ -4,6 +4,10 @@ import { contasDisponiveis, retornoConta, supabase } from '../conta/supabase'
 import { TIPOS_SYNC, deItens, itens } from '../conta/modeloSync'
 import { gravar, ler, lerVisitante } from '../estado/armazenamento'
 import { href } from '../util/rotas'
+import { usarContextoLocal } from '../estado/usarContextoLocal'
+import { usarIndice } from '../dados/usarIndice'
+import { planoRevisao } from '../estado/planoRevisao'
+import { usarArmazenado } from '../estado/usarArmazenado'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -30,6 +34,9 @@ export function Conta() {
       : ''
   const [ocupado, definirOcupado] = useState(false), [mensagem, definirMensagem] = useState(mensagemRetorno)
   const [importado, definirImportado] = useState(false)
+  const { contexto } = usarContextoLocal('')
+  const { indice } = usarIndice()
+  const [metaDiaria, definirMetaDiaria] = usarArmazenado<number>('meta-diaria-revisao', 10)
   const perfil = sessao?.user.user_metadata ?? {}
   const [nome, definirNome] = useState(String(perfil.nome ?? ''))
   const [sobrenome, definirSobrenome] = useState(String(perfil.sobrenome ?? ''))
@@ -115,6 +122,13 @@ export function Conta() {
     definirImportado(true); definirMensagem('Progresso de visitante importado. Os dados que já existiam na conta foram preservados.')
   }
   const possuiVisitante = false
+  const metricas = indice ? (() => {
+    const registros = Object.values(contexto.respondidas)
+    const tentativas = registros.reduce((total, registro) => total + (registro.tentativas ?? 1), 0)
+    const acertos = registros.reduce((total, registro) => total + (registro.acertos ?? Number(registro.c === true)), 0)
+    const pendentes = [...planoRevisao(indice, contexto.respondidas, 1).values()].reduce((total, dia) => total + dia.ids.length, 0)
+    return { respondidas: registros.length, acerto: tentativas ? Math.round((acertos / tentativas) * 100) : null, pendentes }
+  })() : null
   return <article className="limite-leitura empilha-2 conta-pagina">
     <header><p className="meta">SEU ESTUDO, EM QUALQUER DISPOSITIVO</p><h1>{sessao ? 'Minha conta' : 'Entre para guardar seu progresso'}</h1><p>O OrtoQuestões continua 100% gratuito, sem limite diário. Criar uma conta é opcional.</p></header>
     {sessao && !recuperacao ? <>
@@ -128,6 +142,16 @@ export function Conta() {
           definirOcupado(true)
           try { const { error } = await supabase.auth.signOut({ scope: 'local' }); if (error) throw error } catch { definirMensagem('Não foi possível sair. Confira sua conexão e tente novamente.') } finally { definirOcupado(false) }
         }}>Sair da conta</button>
+      </section>
+      {metricas && <section className="cartao cartao__corpo empilha">
+        <p className="meta">SEU PAINEL</p><h2>Estudo neste perfil</h2>
+        <div className="atalhos-estudo"><a href={href('/dados')}><strong>{metricas.respondidas}</strong><span>Questões respondidas</span></a><a href={href('/revisao')}><strong>{metricas.pendentes}</strong><span>Revisões programadas</span></a><a href={href('/dados')}><strong>{metricas.acerto === null ? '—' : `${metricas.acerto}%`}</strong><span>Acerto acumulado</span></a></div>
+      </section>}
+      <section className="cartao cartao__corpo empilha">
+        <h2>Preferências de estudo</h2>
+        <p className="texto-2">Sua meta orienta os atalhos de revisão. Você pode mudar quando a semana estiver mais cheia.</p>
+        <div className="grupo-opcoes" aria-label="Meta diária de revisão">{[10, 20, 30].map(meta => <button type="button" key={meta} className="opcao-segmento" aria-pressed={metaDiaria === meta} onClick={() => definirMetaDiaria(meta)}>{meta} revisões/dia</button>)}</div>
+        <div className="linha"><a className="botao" href={href('/dados')}>Backup e privacidade</a><a className="botao" href={href('/revisao')}>Configurar minha revisão</a></div>
       </section>
       <section className="cartao cartao__corpo empilha">
         <h2>Meu perfil</h2>
