@@ -11,20 +11,22 @@ import { QuestaoDireta } from './paginas/QuestaoDireta'
 import { Contato, DadosLocais, NaoEncontrada, Sobre } from './paginas/Apoio'
 import { Favoritas } from './paginas/Favoritas'
 import { Progresso } from './paginas/Progresso'
+import { Revisao } from './paginas/Revisao'
 import { SITE } from './config'
 
 const TITULOS: Record<string, string> = {
-  '/': 'OrtoQuestões — banco de questões de ortopedia e traumatologia',
-  '/treinar': 'Montar sessão — OrtoQuestões',
-  '/sessao': 'Respondendo — OrtoQuestões',
-  '/resumo': 'Resumo da sessão — OrtoQuestões',
-  '/sobre': 'O projeto — OrtoQuestões: questões de ortopedia comentadas',
-  '/projeto': 'O projeto — OrtoQuestões: questões de ortopedia comentadas',
-  '/contato': 'Relatar erro — OrtoQuestões',
-  '/conta': 'Minha conta — OrtoQuestões',
-  '/dados': 'Seu desempenho — OrtoQuestões',
-  '/favoritas': 'Suas favoritas — OrtoQuestões',
-  '/progresso': 'Progresso dos comentários — OrtoQuestões',
+  '/': 'OrtoQuestÃµes â€” banco de questÃµes de ortopedia e traumatologia',
+  '/treinar': 'Montar sessÃ£o â€” OrtoQuestÃµes',
+  '/sessao': 'Respondendo â€” OrtoQuestÃµes',
+  '/resumo': 'Resumo da sessÃ£o â€” OrtoQuestÃµes',
+  '/sobre': 'O projeto â€” OrtoQuestÃµes: questÃµes de ortopedia comentadas',
+  '/projeto': 'O projeto â€” OrtoQuestÃµes: questÃµes de ortopedia comentadas',
+  '/contato': 'Relatar erro â€” OrtoQuestÃµes',
+  '/conta': 'Minha conta â€” OrtoQuestÃµes',
+  '/dados': 'Seu desempenho â€” OrtoQuestÃµes',
+  '/favoritas': 'Suas favoritas â€” OrtoQuestÃµes',
+  '/progresso': 'Progresso dos comentÃ¡rios â€” OrtoQuestÃµes',
+  '/revisao': 'Sua revisÃ£o â€” OrtoQuestÃµes',
 }
 
 export function App() {
@@ -37,7 +39,7 @@ export function App() {
     document.title =
       TITULOS[rota.caminho] ??
       (primeiro === 'questao' && segundo
-        ? `Questão ${segundo} — OrtoQuestões`
+        ? `QuestÃ£o ${segundo} â€” OrtoQuestÃµes`
         : `${SITE.nome}`)
   }, [rota.caminho, primeiro, segundo])
 
@@ -47,8 +49,8 @@ export function App() {
       pagina = <Inicio />
       break
     case 'treinar':
-      // Sem `key` aqui: trocar a chave a cada filtro remonta a página inteira,
-      // e a remontagem fecha o seletor de assuntos no meio da seleção.
+      // Sem `key` aqui: trocar a chave a cada filtro remonta a pÃ¡gina inteira,
+      // e a remontagem fecha o seletor de assuntos no meio da seleÃ§Ã£o.
       pagina = <Treinar consulta={rota.consulta} />
       break
     case 'sessao':
@@ -60,8 +62,8 @@ export function App() {
     case 'questao':
       pagina = segundo ? <QuestaoDireta id={segundo} /> : <NaoEncontrada />
       break
-    // Duas rotas para a mesma página: "sobre" é o endereço antigo, que
-    // continua valendo, e "projeto" é como o site passou a chamá-la.
+    // Duas rotas para a mesma pÃ¡gina: "sobre" Ã© o endereÃ§o antigo, que
+    // continua valendo, e "projeto" Ã© como o site passou a chamÃ¡-la.
     case 'sobre':
     case 'projeto':
       pagina = <Sobre />
@@ -81,6 +83,9 @@ export function App() {
     case 'progresso':
       pagina = <Progresso />
       break
+    case 'revisao':
+      pagina = <Revisao />
+      break
     default:
       pagina = <NaoEncontrada />
   }
@@ -90,18 +95,19 @@ export function App() {
   return (
     <div className="pagina">
       <a className="pular-para-conteudo" href="#conteudo-principal">
-        Pular para o conteúdo
+        Pular para o conteÃºdo
       </a>
       <Cabecalho caminho={rota.caminho} />
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>{pagina}</div>
       </main>
       <Rodape />
-      <nav className="nav-mobile nao-imprime" aria-label="Navegação principal no celular">
-        {([['/', 'Início'], ['/treinar', 'Treinar'], ['/treinar?situacao=revisarHoje&limite=20', 'Revisar'], ['/dados', 'Desempenho']]).map(([url, titulo]) => (
-          <a key={titulo} href={href(url)} aria-current={(titulo === 'Revisar' ? rota.caminho === '/treinar' && rota.consulta.get('situacao') === 'revisarHoje' : rota.caminho === url && !(titulo === 'Treinar' && rota.consulta.get('situacao') === 'revisarHoje')) ? 'page' : undefined}>{titulo}</a>
+      <nav className="nav-mobile nao-imprime" aria-label="NavegaÃ§Ã£o principal no celular">
+        {([['/', 'InÃ­cio'], ['/treinar', 'Treinar'], ['/revisao', 'Revisar'], ['/dados', 'Desempenho']]).map(([url, titulo]) => (
+          <a key={titulo} href={href(url)} aria-current={rota.caminho === url ? 'page' : undefined}>{titulo}</a>
         ))}
       </nav>
     </div>
   )
 }
+
