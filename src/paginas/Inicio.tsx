@@ -28,6 +28,20 @@ const VARIACOES_CABECALHO = [
   { comNome: (nome: string) => `Seu estudo continua daqui, ${nome}.`, semNome: 'Seu estudo pode começar agora.', incentivo: 'Uma sessão curta ainda é uma sessão que conta.', acervo: 'questões organizadas por assunto para você encontrar o que precisa, responder e acompanhar seus acertos.' },
   { comNome: (nome: string) => `Hoje também é dia de avançar, ${nome}.`, semNome: 'Hoje também é um bom dia para avançar.', incentivo: 'A segurança na prova nasce da repetição com propósito.', acervo: 'questões de ortopedia de provas anteriores, reunidas para transformar revisão em domínio progressivo.' },
   { comNome: (nome: string) => `Uma boa decisão por vez, ${nome}.`, semNome: 'Uma boa decisão por vez.', incentivo: 'Seu futuro repertório está sendo treinado agora.', acervo: 'questões para praticar, errar sem medo, revisar com calma e chegar mais preparado à próxima prova.' },
+  { comNome: (nome: string) => `Vamos retomar o ritmo, ${nome}.`, semNome: 'Retome o ritmo no seu tempo.', incentivo: 'Uma questão bem revisada muda a próxima decisão.', acervo: 'questões organizadas para transformar estudo diário em repertório clínico.' },
+  { comNome: (nome: string) => `Seu repertório cresce aqui, ${nome}.`, semNome: 'Seu repertório pode crescer hoje.', incentivo: 'O próximo passo pequeno continua sendo um passo.', acervo: 'questões de ortopedia para treinar conduta, classificação e diagnóstico.' },
+  { comNome: (nome: string) => `Vamos deixar a prova mais familiar, ${nome}.`, semNome: 'Deixe a prova mais familiar.', incentivo: 'Repetir com entendimento é como a segurança aparece.', acervo: 'questões de provas anteriores, separadas por assunto para você estudar com direção.' },
+  { comNome: (nome: string) => `Seu tempo de estudo tem valor, ${nome}.`, semNome: 'Faça seu tempo de estudo valer.', incentivo: 'A clareza vem depois de muitas boas revisões.', acervo: 'questões com filtros e comentários para estudar o que tem maior impacto agora.' },
+  { comNome: (nome: string) => `Hoje você pode consolidar mais um ponto, ${nome}.`, semNome: 'Hoje você pode consolidar mais um ponto.', incentivo: 'Todo conceito recuperado deixa a memória mais forte.', acervo: 'questões para revisar os temas que voltam a aparecer nas provas de ortopedia.' },
+  { comNome: (nome: string) => `Vamos transformar dúvida em critério, ${nome}.`, semNome: 'Transforme dúvida em critério.', incentivo: 'Entender o motivo evita errar pelo mesmo caminho.', acervo: 'questões para comparar alternativas e fortalecer seu raciocínio clínico.' },
+  { comNome: (nome: string) => `Bom te ver por aqui, ${nome}.`, semNome: 'Bom ter você por aqui.', incentivo: 'Sua rotina não precisa ser longa para ser consistente.', acervo: 'questões para encaixar uma revisão de qualidade no seu dia.' },
+  { comNome: (nome: string) => `A próxima revisão já conta, ${nome}.`, semNome: 'A próxima revisão já conta.', incentivo: 'Memória se constrói quando você volta ao assunto certo.', acervo: 'questões que ajudam a priorizar o que precisa ser lembrado.' },
+  { comNome: (nome: string) => `Vamos praticar raciocínio, ${nome}.`, semNome: 'Pratique raciocínio, questão por questão.', incentivo: 'Cada alternativa analisada melhora sua leitura de prova.', acervo: 'questões de TEOT, TARO e outras seleções para praticar com contexto.' },
+  { comNome: (nome: string) => `Você já sabe por onde seguir, ${nome}.`, semNome: 'Escolha uma questão para começar.', incentivo: 'Começar pequeno reduz a distância até a próxima sessão.', acervo: 'questões para avançar por temas, provas e pontos que ainda pedem atenção.' },
+  { comNome: (nome: string) => `Seu estudo está em movimento, ${nome}.`, semNome: 'Coloque seu estudo em movimento.', incentivo: 'A segurança nasce de encontros repetidos com bons problemas.', acervo: 'questões para revisar decisões ortopédicas e acompanhar sua evolução.' },
+  { comNome: (nome: string) => `Vamos construir confiança com calma, ${nome}.`, semNome: 'Construa confiança com calma.', incentivo: 'Constância vence o impulso de deixar para depois.', acervo: 'questões para você estudar com regularidade e enxergar seu progresso.' },
+  { comNome: (nome: string) => `Mais uma sessão bem feita, ${nome}.`, semNome: 'Uma sessão bem feita começa aqui.', incentivo: 'O acerto de amanhã começa na revisão de hoje.', acervo: 'questões de ortopedia organizadas para uma preparação mais objetiva.' },
+  { comNome: (nome: string) => `Seu próximo acerto merece preparo, ${nome}.`, semNome: 'Seu próximo acerto merece preparo.', incentivo: 'Você não precisa lembrar tudo de uma vez.', acervo: 'questões para aprender por repetição, correção e explicação detalhada.' },
 ]
 
 export function Inicio() {
@@ -153,11 +167,11 @@ export function Inicio() {
               </div>}
               <span className="acao-calendario"><a className="botao" href={href('/revisao')}>Abrir calendário de revisão</a></span>
             </div>
-            <div className="atalhos-estudo">
+            {Object.keys(contexto.respondidas).length > 0 || conta ? <div className="atalhos-estudo">
               <a href={href('/treinar?situacao=revisarHoje&limite=20')}><strong>{contagens.porSituacao.revisarHoje ?? 0}</strong><span>Revisar hoje</span><small>{textoDoDia.revisar}</small></a>
               <a href={href('/treinar?situacao=dominadas')}><strong>{contagens.porSituacao.dominadas ?? 0}</strong><span>Dominadas</span><small>Quatro acertos espaçados</small></a>
               <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>{textoDoDia.novas}</small></a>
-            </div>
+            </div> : <p className="texto-2">Escolha uma sessão curta. Depois da primeira resposta, esta área passa a mostrar suas revisões, evolução e próximos passos.</p>}
           </section>
           {temaFragil && <section className="cartao cartao__corpo convite-conta">
             <p className="meta">ONDE VOCÊ MAIS GANHA AO REVISAR</p>
@@ -174,6 +188,7 @@ export function Inicio() {
             <h2>Seu progresso já fica salvo neste navegador</h2>
             <p>Crie uma conta quando quiser levar respostas, revisões, favoritas e desempenho para outros dispositivos.</p>
             <a className="botao botao--principal" href={href('/conta')}>Criar minha conta</a>
+            {indice.questoes.find(questao => questao.c === 1) && <a className="botao" href={href(`/questao/${indice.questoes.find(questao => questao.c === 1)!.id}`)}>Ver um comentário de exemplo</a>}
           </section>}
           <div className="linha linha--empilha-celular">
             <a className="botao botao--grande" href={href('/treinar')}>
