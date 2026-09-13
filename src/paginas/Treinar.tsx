@@ -21,7 +21,7 @@ import { href } from '../util/rotas'
 import { usarConta } from '../conta/ContextoConta'
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
-const LIMITES = [10, 20, 30, 50, 100]
+const LIMITES = [5, 10, 20, 30, 50, 100]
 const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'erradas', 'acertadas', 'favoritas', 'revisarHoje', 'dominadas']
 const DURACOES: Array<[number, string]> = [
   [60, '1 hora'],
@@ -80,6 +80,13 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
   const total = contagens?.total ?? 0
   const quantidadeSessao = filtros.limite ? Math.min(filtros.limite, total) : total
+  const estimativaMinutos = Math.max(1, Math.round(quantidadeSessao * (simulado ? 1.5 : 0.8)))
+  const desempenhoAnterior = useMemo(() => {
+    const registros = Object.values(contexto.respondidas)
+    const tentativas = registros.reduce((total, registro) => total + (registro.tentativas ?? 1), 0)
+    const acertos = registros.reduce((total, registro) => total + (registro.acertos ?? Number(registro.c === true)), 0)
+    return tentativas ? Math.round((acertos / tentativas) * 100) : null
+  }, [contexto.respondidas])
 
   function atualizar(parcial: Partial<Filtros>) {
     definirFiltros((atuais) => ({ ...atuais, ...parcial }))
@@ -384,6 +391,10 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           <label className="campo">Quantidade personalizada
             <input className="entrada" type="number" min="1" step="1" max={Math.max(total, 1)} value={filtros.limite ?? ''} placeholder="Todas" onChange={(e) => atualizar({ limite: e.target.value ? Math.max(1, Math.min(total || 1, Math.floor(Number(e.target.value)) || 1)) : null })} />
           </label>
+          {total > 0 && <section className="modo-explicacao" role="status">
+            <strong>Prévia da sessão</strong>
+            <span>{quantidadeSessao} {quantidadeSessao === 1 ? 'questão' : 'questões'} · cerca de {estimativaMinutos} min{filtros.temas.length ? ` · ${filtros.temas.length === 1 ? 'tema selecionado' : `${filtros.temas.length} temas selecionados`}` : ' · acervo misto'}{desempenhoAnterior !== null ? ` · seu acerto geral: ${desempenhoAnterior}%` : ''}</span>
+          </section>}
           <div className="acoes" style={{ marginTop: '0.5rem' }}>
             <button
               type="button"
