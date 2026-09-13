@@ -52,9 +52,11 @@ export function CartaoQuestao({
 }: Props) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
   const [copiado, definirCopiado] = useState(false)
+  const [menuGrifo, definirMenuGrifo] = useState<{ x: number; y: number } | null>(null)
   const inicio = useRef<number>(Date.now())
   const areaDaQuestao = useRef<HTMLElement>(null)
   const grifoRecente = useRef(false)
+  const selecaoParaGrifo = useRef<Range | null>(null)
   const respondida = !!resposta
   const mostrarGabarito = respondida && revelarResposta
   const marcada = escolhida ?? resposta?.escolhida ?? null
@@ -154,14 +156,27 @@ export function CartaoQuestao({
   function atualizarSelecao() {
     const selecao = window.getSelection()
     if (selecao && !selecao.isCollapsed && areaDaQuestao.current?.contains(selecao.anchorNode)) {
-      grifarSelecao()
+      const faixa = selecao.getRangeAt(0).cloneRange()
+      const retangulo = faixa.getBoundingClientRect()
+      selecaoParaGrifo.current = faixa
+      definirMenuGrifo({ x: retangulo.left + retangulo.width / 2, y: Math.max(8, retangulo.top - 10) })
+    } else {
+      selecaoParaGrifo.current = null
+      definirMenuGrifo(null)
     }
   }
 
   function grifarSelecao() {
-    const selecao = window.getSelection()
-    if (!selecao || selecao.isCollapsed || !areaDaQuestao.current?.contains(selecao.anchorNode)) return
-    const faixa = selecao.getRangeAt(0)
+    const faixa = selecaoParaGrifo.current
+    if (!faixa) return
+    // Fecha primeiro; no próximo quadro o React já terminou de atualizar o
+    // menu e o mark não será removido por uma reconciliação da interface.
+    definirMenuGrifo(null)
+    selecaoParaGrifo.current = null
+    window.requestAnimationFrame(() => aplicarGrifo(faixa))
+  }
+
+  function aplicarGrifo(faixa: Range) {
     // Marca DOM simples: é compatível com qualquer navegador e não vai para
     // armazenamento. O conteúdo segue idêntico; só ganha cor de marcador.
     const trecho = faixa.extractContents()
@@ -169,7 +184,7 @@ export function CartaoQuestao({
     marca.className = 'grifo-temporario'
     marca.appendChild(trecho)
     faixa.insertNode(marca)
-    selecao.removeAllRanges()
+    window.getSelection()?.removeAllRanges()
     grifoRecente.current = true
     window.setTimeout(() => { grifoRecente.current = false }, 0)
   }
@@ -201,15 +216,6 @@ export function CartaoQuestao({
           {questao.anulada && <span className="etiqueta etiqueta--alerta">Anulada</span>}
 
           <div className="questao__acoes nao-imprime">
-            <button
-              type="button"
-              className="botao botao--grifar"
-              onClick={grifarSelecao}
-              aria-label="Ativar grifo amarelo temporário"
-              title="Selecione um trecho com o mouse para grifar automaticamente. O grifo some ao recarregar."
-            >
-              <Icone nome="riscar" tamanho={16} /> Grifo amarelo
-            </button>
             <button
               type="button"
               className="botao-icone"
@@ -477,6 +483,18 @@ export function CartaoQuestao({
           <span className="meta numerico questao__id">{questao.id}</span>
         </div>
       </div>
+      {menuGrifo && (
+        <button
+          type="button"
+          className="menu-grifo nao-imprime"
+          style={{ left: menuGrifo.x, top: menuGrifo.y }}
+          onMouseDown={(evento) => evento.preventDefault()}
+          onClick={grifarSelecao}
+          aria-label="Grifar a seleção em amarelo"
+        >
+          <Icone nome="riscar" tamanho={15} /> Grifar
+        </button>
+      )}
     </article>
   )
 }
