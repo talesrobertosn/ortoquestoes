@@ -34,18 +34,37 @@ export function Conta() {
   const [nome, definirNome] = useState(String(perfil.nome ?? ''))
   const [sobrenome, definirSobrenome] = useState(String(perfil.sobrenome ?? ''))
   const [nascimento, definirNascimento] = useState(String(perfil.nascimento ?? ''))
-  const [residencia, definirResidencia] = useState(String(perfil.residencia ?? ''))
+  const [servico, definirServico] = useState(String(perfil.servico ?? perfil.residencia ?? ''))
   const [situacao, definirSituacao] = useState(String(perfil.situacao ?? ''))
+  const [whatsapp, definirWhatsapp] = useState(String(perfil.whatsapp ?? ''))
+  const [cidade, definirCidade] = useState(String(perfil.cidade ?? ''))
+  const [uf, definirUf] = useState(String(perfil.uf ?? ''))
+  const [receberNovidades, definirReceberNovidades] = useState(Boolean(perfil.receber_novidades ?? false))
   const [salvandoPerfil, definirSalvandoPerfil] = useState(false)
   async function salvarPerfil() {
     if (!supabase || !sessao) return
     definirSalvandoPerfil(true)
     try {
-      const { error } = await supabase.auth.updateUser({ data: { nome: nome.trim(), sobrenome: sobrenome.trim(), nascimento, residencia: residencia.trim(), situacao } })
+      if (!perfilCompleto()) return
+      const { error } = await supabase.auth.updateUser({ data: dadosPerfil() })
       if (error) throw error
       definirMensagem('Perfil atualizado.')
     } catch { definirMensagem('Não foi possível salvar o perfil agora.') }
     finally { definirSalvandoPerfil(false) }
+  }
+  function perfilCompleto() {
+    if (nome.trim().length < 2) { definirMensagem('Informe seu nome.'); return false }
+    if (!nascimento || new Date(`${nascimento}T12:00:00`).getTime() > Date.now()) { definirMensagem('Informe uma data de nascimento válida.'); return false }
+    if (!situacao) { definirMensagem('Informe sua etapa profissional.'); return false }
+    if (servico.trim().length < 2) { definirMensagem('Informe o serviço onde você atua ou faz residência.'); return false }
+    return true
+  }
+  function dadosPerfil() {
+    return {
+      nome: nome.trim(), sobrenome: sobrenome.trim(), nascimento, situacao,
+      servico: servico.trim(), whatsapp: whatsapp.trim(), cidade: cidade.trim(), uf,
+      receber_novidades: receberNovidades,
+    }
   }
   if (!contasDisponiveis || !supabase) return <article className="limite-leitura empilha"><h1>Sua conta</h1><p>As contas estão em preparação. Você já pode estudar gratuitamente. O progresso só é salvo depois que uma conta estiver disponível.</p><a className="botao botao--principal" href={href('/treinar')}>Continuar estudando</a></article>
   async function enviar(e: FormEvent) {
@@ -62,8 +81,8 @@ export function Conta() {
         if (error) throw error
         definirSenha('')
       } else if (modo === 'criar') {
-        if (nome.trim().length < 2) { definirMensagem('Digite seu nome para personalizarmos sua experiência.'); return }
-        const { error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: { nome: nome.trim(), sobrenome: sobrenome.trim() } } })
+        if (!perfilCompleto()) return
+        const { error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: dadosPerfil() } })
         if (error) throw error
         definirSenha(''); definirMensagem('Confira seu e-mail para concluir o cadastro. Se já tiver uma conta, use Entrar ou recuperar senha.')
       } else {
@@ -114,8 +133,11 @@ export function Conta() {
         <h2>Meu perfil</h2>
         <p className="texto-2">Esses dados ficam associados à sua conta e ajudam a personalizar sua experiência. Foto não é necessária.</p>
         <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" value={nome} onChange={e => definirNome(e.target.value)} /></label><label className="campo">Sobrenome<input className="entrada" value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
-        <div className="linha-campos linha-campos--2"><label className="campo">Data de nascimento<input className="entrada" type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label><label className="campo">Onde faz residência (opcional)<input className="entrada" value={residencia} onChange={e => definirResidencia(e.target.value)} /></label></div>
-        <label className="campo">Você é <select className="entrada" value={situacao} onChange={e => definirSituacao(e.target.value)}><option value="">Escolha uma opção</option><option value="residente">Residente de ortopedia</option><option value="ortopedista">Ortopedista</option><option value="outro">Outro profissional ou estudante</option></select></label>
+        <div className="linha-campos linha-campos--2"><label className="campo">Data de nascimento<input className="entrada" type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label><label className="campo">Você é <select className="entrada" value={situacao} onChange={e => definirSituacao(e.target.value)}><option value="">Escolha uma opção</option><option value="residente">Residente de ortopedia</option><option value="ortopedista">Ortopedista</option><option value="outro">Outro profissional ou estudante</option></select></label></div>
+        <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
+        <div className="linha-campos linha-campos--2"><label className="campo">WhatsApp <span className="meta">(opcional)</span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo">Cidade <span className="meta">(opcional)</span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
+        <div className="linha-campos linha-campos--2"><label className="campo">UF <span className="meta">(opcional)</span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'].map(sigla => <option key={sigla}>{sigla}</option>)}</select></label><label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o OrtoQuestões</label></div>
+        <p className="texto-2">WhatsApp, cidade e UF são opcionais. Usamos seus dados de perfil para personalizar sua experiência e nunca exibimos seu contato publicamente.</p>
         <button className="botao botao--principal" type="button" onClick={salvarPerfil} disabled={salvandoPerfil}>{salvandoPerfil ? 'Salvando…' : 'Salvar perfil'}</button>
       </section>
       {possuiVisitante && !importado && <section className="cartao cartao__corpo empilha"><h2>Você já estudou neste navegador</h2><p>Importe o progresso de visitante para esta conta. Só serão acrescentados itens que ainda não existem nela. Em um dispositivo compartilhado, importe apenas se esse progresso for seu.</p><button className="botao botao--principal" onClick={importar} disabled={!status.pronto}>Importar meu progresso de visitante</button></section>}
@@ -128,7 +150,14 @@ export function Conta() {
       {!recuperacao && <div className="grupo-opcoes">{(['entrar', 'criar', 'recuperar'] as const).map(m => <button className="opcao-segmento" aria-pressed={modo === m} onClick={() => { definirModo(m); definirMensagem(''); definirSenha('') }} key={m}>{m === 'entrar' ? 'Entrar' : m === 'criar' ? 'Criar conta' : 'Recuperar senha'}</button>)}</div>}
       <form className="empilha" onSubmit={enviar}>
         {!recuperacao && <label className="campo">E-mail<input className="entrada" type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} /></label>}
-        {!recuperacao && modo === 'criar' && <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" autoComplete="given-name" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo">Sobrenome <span className="meta">(opcional)</span><input className="entrada" autoComplete="family-name" value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>}
+        {!recuperacao && modo === 'criar' && <>
+          <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" autoComplete="given-name" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo">Sobrenome <span className="meta">(opcional)</span><input className="entrada" autoComplete="family-name" value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
+          <div className="linha-campos linha-campos--2"><label className="campo">Data de nascimento<input className="entrada" type="date" required value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label><label className="campo">Você é <select className="entrada" required value={situacao} onChange={e => definirSituacao(e.target.value)}><option value="">Selecione</option><option value="residente">Residente de ortopedia</option><option value="ortopedista">Ortopedista</option><option value="outro">Outro profissional ou estudante</option></select></label></div>
+          <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" required value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
+          <div className="linha-campos linha-campos--2"><label className="campo">WhatsApp <span className="meta">(opcional)</span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo">Cidade <span className="meta">(opcional)</span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
+          <label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o OrtoQuestões</label>
+          <p className="texto-2">Seu WhatsApp é opcional. Os dados de perfil servem para personalizar sua experiência e não ficam visíveis a outros usuários.</p>
+        </>}
         {(recuperacao || modo !== 'recuperar') && <label className="campo">{recuperacao ? 'Nova senha' : 'Senha'}<input className="entrada" type="password" autoComplete={modo === 'entrar' && !recuperacao ? 'current-password' : 'new-password'} minLength={modo === 'entrar' && !recuperacao ? undefined : 8} required value={senha} onChange={e => definirSenha(e.target.value)} /></label>}
         <button className="botao botao--principal" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}</button>
       </form>
@@ -139,3 +168,4 @@ export function Conta() {
     <p role="status">{mensagem}</p>
   </article>
 }
+
