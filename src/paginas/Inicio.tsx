@@ -20,6 +20,15 @@ const VARIACOES_INICIO = [
   { saudacao: 'Você está construindo decisão clínica questão por questão.', rotina: 'Revisar é avançar', explicacao: 'Não é preciso recomeçar do zero. Retome uma questão, entenda o raciocínio e deixe o ciclo trabalhar por você.', acao: 'Começar uma sessão curta', revisar: 'Relembre antes de esquecer', novas: 'Abra um novo caminho' },
 ]
 
+const VARIACOES_CABECALHO = [
+  { comNome: (nome: string) => `Bem-vindo, ${nome}.`, semNome: 'Seu próximo passo começa aqui.', incentivo: 'Consistência silenciosa também é progresso.', acervo: 'questões de provas anteriores de TEOT, TARO e outras, organizadas por assunto. Você filtra, responde e vê seu desempenho na hora.' },
+  { comNome: (nome: string) => `Que bom ter você de volta, ${nome}.`, semNome: 'Voltar para estudar já é um avanço.', incentivo: 'Cada questão entendida hoje reduz a dúvida de amanhã.', acervo: 'questões para treinar raciocínio em ortopedia, com filtros simples e desempenho acompanhado no seu ritmo.' },
+  { comNome: (nome: string) => `Vamos construir repertório, ${nome}.`, semNome: 'Construa repertório questão por questão.', incentivo: 'Não precisa ser perfeito; precisa ser contínuo.', acervo: 'questões de TEOT, TARO e outras provas anteriores para revisar, comparar decisões e evoluir com clareza.' },
+  { comNome: (nome: string) => `Seu estudo continua daqui, ${nome}.`, semNome: 'Seu estudo pode começar agora.', incentivo: 'Uma sessão curta ainda é uma sessão que conta.', acervo: 'questões organizadas por assunto para você encontrar o que precisa, responder e acompanhar seus acertos.' },
+  { comNome: (nome: string) => `Hoje também é dia de avançar, ${nome}.`, semNome: 'Hoje também é um bom dia para avançar.', incentivo: 'A segurança na prova nasce da repetição com propósito.', acervo: 'questões de ortopedia de provas anteriores, reunidas para transformar revisão em domínio progressivo.' },
+  { comNome: (nome: string) => `Uma boa decisão por vez, ${nome}.`, semNome: 'Uma boa decisão por vez.', incentivo: 'Seu futuro repertório está sendo treinado agora.', acervo: 'questões para praticar, errar sem medo, revisar com calma e chegar mais preparado à próxima prova.' },
+]
+
 export function Inicio() {
   const { indice, carregando } = usarIndice()
   const { iniciar } = usarSessao()
@@ -33,6 +42,7 @@ export function Inicio() {
   )
   const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
   const [textoDoDia] = useState(() => VARIACOES_INICIO[Math.floor(Math.random() * VARIACOES_INICIO.length)])
+  const [cabecalhoDoDia] = useState(() => VARIACOES_CABECALHO[Math.floor(Math.random() * VARIACOES_CABECALHO.length)])
 
   const anos = indice?.anos ?? []
   const anosRecentes = [...anos].sort((a, b) => b - a).slice(0, 6)
@@ -58,19 +68,16 @@ export function Inicio() {
   return (
     <div className="empilha-2">
       <section className="heroi">
-        <h1>{nome ? `Bem-vindo${conta?.user.user_metadata?.situacao === 'ortopedista' ? '' : ''}, ${conta?.user.user_metadata?.situacao === 'ortopedista' ? 'Dr. ' : ''}${nome}.` : 'Seu próximo passo começa aqui.'}</h1>
-        {nome && <p className="heroi__nota">{saudacao}</p>}
+        <h1>{nome ? cabecalhoDoDia.comNome(`${conta?.user.user_metadata?.situacao === 'ortopedista' ? 'Dr. ' : ''}${nome}`) : cabecalhoDoDia.semNome}</h1>
+        <p className="heroi__nota">{nome ? saudacao : cabecalhoDoDia.incentivo}</p>
         <div className="heroi__texto">
           <p className="heroi__linha">
             {indice && indice.total > 0 ? (
               <>
-                <strong className="numerico">{indice.total}</strong> questões de provas anteriores
-                de TEOT, TARO e outras, organizadas por assunto. Você filtra, responde e vê seu
-                desempenho na hora.
+                <strong className="numerico">{indice.total}</strong> {cabecalhoDoDia.acervo}
               </>
             ) : (
-              <>Questões de provas anteriores, organizadas por assunto, para responder e medir o
-                seu desempenho.</>
+              <>{cabecalhoDoDia.acervo}</>
             )}
           </p>
         </div>
