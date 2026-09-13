@@ -177,13 +177,39 @@ export function CartaoQuestao({
   }
 
   function aplicarGrifo(faixa: Range) {
-    // Marca DOM simples: é compatível com qualquer navegador e não vai para
-    // armazenamento. O conteúdo segue idêntico; só ganha cor de marcador.
-    const trecho = faixa.extractContents()
-    const marca = document.createElement('mark')
-    marca.className = 'grifo-temporario'
-    marca.appendChild(trecho)
-    faixa.insertNode(marca)
+    // Não usamos extractContents/surroundContents: quando a seleção atravessa
+    // títulos, parágrafos e colunas do comentário, esses métodos movem nós e
+    // podem quebrar a grade. Custom Highlight pinta o Range sem tocar no DOM.
+    const cssComGrifos = CSS as unknown as {
+      highlights?: Map<string, { add: (range: Range) => void }>
+    }
+    const ConjuntoGrifo = (window as unknown as {
+      Highlight?: new () => { add: (range: Range) => void }
+    }).Highlight
+    if (cssComGrifos.highlights && ConjuntoGrifo) {
+      const grifos = cssComGrifos.highlights.get('ortoquestoes-grifo') ?? new ConjuntoGrifo()
+      grifos.add(faixa)
+      cssComGrifos.highlights.set('ortoquestoes-grifo', grifos)
+    } else if (
+      faixa.startContainer === faixa.endContainer &&
+      faixa.startContainer.nodeType === Node.TEXT_NODE
+    ) {
+      // Fallback seguro: só marca um único nó de texto, nunca atravessa a
+      // estrutura do comentário. Navegadores atuais seguem pelo caminho acima.
+      const texto = faixa.startContainer as Text
+      const antes = texto.data.slice(0, faixa.startOffset)
+      const meio = texto.data.slice(faixa.startOffset, faixa.endOffset)
+      const depois = texto.data.slice(faixa.endOffset)
+      const marca = document.createElement('mark')
+      marca.className = 'grifo-temporario'
+      marca.textContent = meio
+      texto.parentNode?.replaceChild(document.createTextNode(antes), texto)
+      const ancora = texto.parentNode?.lastChild
+      if (ancora) {
+        ancora.parentNode?.insertBefore(marca, ancora.nextSibling)
+        marca.parentNode?.insertBefore(document.createTextNode(depois), marca.nextSibling)
+      }
+    }
     window.getSelection()?.removeAllRanges()
     grifoRecente.current = true
     window.setTimeout(() => { grifoRecente.current = false }, 0)
