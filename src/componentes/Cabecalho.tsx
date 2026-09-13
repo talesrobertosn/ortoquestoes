@@ -6,9 +6,8 @@ import { Icone } from './Icone'
 
 const LINKS = [
   { destino: '/treinar', rotulo: 'Treinar', secundario: false },
+  { destino: '/revisao', rotulo: 'Revisão', secundario: false },
   { destino: '/dados', rotulo: 'Desempenho', secundario: true },
-  { destino: '/favoritas', rotulo: 'Favoritas', secundario: true },
-  { destino: '/sobre', rotulo: 'O projeto', secundario: true },
 ]
 
 export function Cabecalho({ caminho }: { caminho: string }) {
@@ -56,3 +55,4 @@ function TemaIcone() {
         window.matchMedia('(prefers-color-scheme: dark)').matches))
   return <Icone nome={escuro ? 'sol' : 'lua'} />
 }
+
