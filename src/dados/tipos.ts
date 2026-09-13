@@ -213,6 +213,7 @@ export interface Resposta {
   escolhida: Letra
   correta: boolean | null
   segundos: number
+  confianca?: 'seguro' | 'duvida' | 'chute'
 }
 
 export interface EstadoSessao {
@@ -248,3 +249,4 @@ export function formatarDuracao(segundos: number): string {
   const dois = (n: number) => String(n).padStart(2, "0")
   return h > 0 ? `${h}:${dois(m)}:${dois(s)}` : `${dois(m)}:${dois(s)}`
 }
+
