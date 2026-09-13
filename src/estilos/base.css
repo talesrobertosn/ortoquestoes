@@ -1765,6 +1765,7 @@ kbd {
 .acao-calendario { margin-left:.5rem; }
 .questao-impressa ::selection { background: color-mix(in srgb, var(--verdete) 35%, transparent); }
 ::highlight(ortoquestoes-grifo), .grifo-temporario { background: #f5df72; color: #241f00; border-radius: 2px; }
+.questao-impressa { position:relative; }.grifo-overlay { position:absolute; z-index:1; pointer-events:none; background:#f5df72; opacity:.52; border-radius:2px; mix-blend-mode:multiply; }
 .menu-grifo { position:fixed; z-index:50; transform:translate(-50%,-100%); display:inline-flex; align-items:center; gap:.35rem; min-height:2.25rem; padding:.4rem .7rem; color:#241f00; background:#f5df72; border:1px solid #c9a900; border-radius:8px; box-shadow:0 6px 20px rgba(0,0,0,.18); font:600 .875rem var(--fonte); cursor:pointer; }
 .menu-grifo:hover { background:#ffe878; }
 .treinar-pagina { display:flex; flex-direction:column; }.treinar-pagina > .treinar-filtros { order:2; }.treinar-pagina > .treinar-intencoes { order:3; }.treinar-pagina > .treinar-contexto { order:4; }.treinar-pagina > header { order:1; }.treinar-filtros .filtros-destaque:first-child { background:var(--verdete-veu); border-color:var(--verdete); }
