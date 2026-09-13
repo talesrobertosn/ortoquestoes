@@ -52,9 +52,9 @@ export function CartaoQuestao({
 }: Props) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
   const [copiado, definirCopiado] = useState(false)
-  const [haSelecao, definirHaSelecao] = useState(false)
   const inicio = useRef<number>(Date.now())
   const areaDaQuestao = useRef<HTMLElement>(null)
+  const grifoRecente = useRef(false)
   const respondida = !!resposta
   const mostrarGabarito = respondida && revelarResposta
   const marcada = escolhida ?? resposta?.escolhida ?? null
@@ -81,6 +81,7 @@ export function CartaoQuestao({
   /** Em simulado marcar já registra; no treino comum ainda passa pelo botão. */
   function escolher(letra: Letra) {
     if (travada) return
+    if (grifoRecente.current) return
     // Arrastar sobre uma alternativa é leitura/grifo, não uma resposta.
     if (!window.getSelection()?.isCollapsed) {
       atualizarSelecao()
@@ -152,36 +153,25 @@ export function CartaoQuestao({
   /** O grifo é deliberadamente só visual: não escreve em localStorage e some no F5. */
   function atualizarSelecao() {
     const selecao = window.getSelection()
-    definirHaSelecao(!!selecao && !selecao.isCollapsed && !!areaDaQuestao.current?.contains(selecao.anchorNode))
+    if (selecao && !selecao.isCollapsed && areaDaQuestao.current?.contains(selecao.anchorNode)) {
+      grifarSelecao()
+    }
   }
 
   function grifarSelecao() {
     const selecao = window.getSelection()
     if (!selecao || selecao.isCollapsed || !areaDaQuestao.current?.contains(selecao.anchorNode)) return
-    const faixa = selecao.getRangeAt(0).cloneRange()
-    // CSS Custom Highlight API colore qualquer Range sem editar a árvore que o
-    // React controla. Assim funciona em enunciado, alternativas e comentários
-    // que tenham spans, negrito ou vários parágrafos.
-    const cssComGrifos = CSS as unknown as {
-      highlights?: Map<string, { add: (range: Range) => void }>
-    }
-    const ConjuntoGrifo = (window as unknown as {
-      Highlight?: new () => { add: (range: Range) => void }
-    }).Highlight
-    if (cssComGrifos.highlights && ConjuntoGrifo) {
-      const grifos = cssComGrifos.highlights.get('ortoquestoes-grifo') ?? new ConjuntoGrifo()
-      grifos.add(faixa)
-      cssComGrifos.highlights.set('ortoquestoes-grifo', grifos)
-    } else {
-      // Fallback para navegadores antigos: o elemento é intencionalmente
-      // temporário e some ao atualizar a página.
-      const trecho = faixa.extractContents()
-      const marca = document.createElement('mark')
-      marca.className = 'grifo-temporario'
-      marca.appendChild(trecho)
-      faixa.insertNode(marca)
-    }
+    const faixa = selecao.getRangeAt(0)
+    // Marca DOM simples: é compatível com qualquer navegador e não vai para
+    // armazenamento. O conteúdo segue idêntico; só ganha cor de marcador.
+    const trecho = faixa.extractContents()
+    const marca = document.createElement('mark')
+    marca.className = 'grifo-temporario'
+    marca.appendChild(trecho)
+    faixa.insertNode(marca)
     selecao.removeAllRanges()
+    grifoRecente.current = true
+    window.setTimeout(() => { grifoRecente.current = false }, 0)
   }
 
   const semGabarito = !questao.gabarito && !questao.anulada
@@ -214,13 +204,11 @@ export function CartaoQuestao({
             <button
               type="button"
               className="botao botao--grifar"
-              onMouseDown={(evento) => evento.preventDefault()}
               onClick={grifarSelecao}
-              disabled={!haSelecao}
-              aria-label="Grifar texto selecionado temporariamente"
-              title="Selecione um trecho e clique para grifar. O grifo some ao recarregar."
+              aria-label="Ativar grifo amarelo temporário"
+              title="Selecione um trecho com o mouse para grifar automaticamente. O grifo some ao recarregar."
             >
-              <Icone nome="riscar" tamanho={16} /> Grifar
+              <Icone nome="riscar" tamanho={16} /> Grifo amarelo
             </button>
             <button
               type="button"
