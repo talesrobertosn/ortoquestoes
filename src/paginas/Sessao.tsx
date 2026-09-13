@@ -232,6 +232,15 @@ export function Sessao() {
         </button>
 
         <div className="linha">
+          {posicao + 1 < total && !sessao.respostas[questaoAtual?.id ?? ''] && (
+            <button
+              type="button"
+              className="botao botao--fantasma"
+              onClick={() => irPara(posicao + 1)}
+            >
+              Pular por agora
+            </button>
+          )}
           {proximaNaoRespondida > -1 && (
             <button
               type="button"
@@ -287,3 +296,4 @@ export function Sessao() {
     </>
   )
 }
+
