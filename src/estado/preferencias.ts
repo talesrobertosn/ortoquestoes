@@ -2,6 +2,9 @@ import { useCallback } from 'react'
 import { usarArmazenado } from './usarArmazenado'
 
 export const CHAVE_ETIQUETAS = 'etiquetas'
+export type DensidadeLeitura = 'confortavel' | 'compacta' | 'foco'
+export const CHAVE_DENSIDADE = 'densidade-leitura'
+export const CHAVE_FONTE = 'tamanho-fonte'
 
 /**
  * Etiquetas de assunto entregam a questão: ler "Fratura de Salter-Harris"
@@ -14,3 +17,10 @@ export function usarEtiquetas() {
   const alternar = useCallback(() => definir((anterior) => !anterior), [definir])
   return { mostrarEtiquetas: mostrar, definirEtiquetas: definir, alternarEtiquetas: alternar }
 }
+
+export function usarLeitura() {
+  const [densidade, definirDensidade] = usarArmazenado<DensidadeLeitura>(CHAVE_DENSIDADE, 'confortavel')
+  const [fonte, definirFonte] = usarArmazenado<number>(CHAVE_FONTE, 100)
+  return { densidade, definirDensidade, fonte, definirFonte }
+}
+
