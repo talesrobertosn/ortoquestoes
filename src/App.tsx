@@ -13,6 +13,7 @@ import { Favoritas } from './paginas/Favoritas'
 import { Progresso } from './paginas/Progresso'
 import { Revisao } from './paginas/Revisao'
 import { SITE } from './config'
+import { usarLeitura } from './estado/preferencias'
 
 const TITULOS: Record<string, string> = {
   '/': 'OrtoQuestões — banco de questões de ortopedia e traumatologia',
@@ -32,6 +33,7 @@ const TITULOS: Record<string, string> = {
 export function App() {
   const rota = usarRota()
   const [primeiro, segundo] = rota.segmentos
+  const { densidade, fonte } = usarLeitura()
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'auto' }) }, [rota.caminho])
 
@@ -93,7 +95,7 @@ export function App() {
   const estreita = ['sessao', 'questao'].includes(primeiro ?? '')
 
   return (
-    <div className="pagina">
+    <div className={`pagina pagina--${densidade}`} style={{ fontSize: `${fonte}%` }}>
       <a className="pular-para-conteudo" href="#conteudo-principal">
         Pular para o conteúdo
       </a>
