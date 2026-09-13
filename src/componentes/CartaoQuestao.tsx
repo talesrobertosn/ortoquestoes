@@ -52,7 +52,9 @@ export function CartaoQuestao({
 }: Props) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
   const [copiado, definirCopiado] = useState(false)
+  const [haSelecao, definirHaSelecao] = useState(false)
   const inicio = useRef<number>(Date.now())
+  const areaDaQuestao = useRef<HTMLElement>(null)
   const respondida = !!resposta
   const mostrarGabarito = respondida && revelarResposta
   const marcada = escolhida ?? resposta?.escolhida ?? null
@@ -79,6 +81,11 @@ export function CartaoQuestao({
   /** Em simulado marcar já registra; no treino comum ainda passa pelo botão. */
   function escolher(letra: Letra) {
     if (travada) return
+    // Arrastar sobre uma alternativa é leitura/grifo, não uma resposta.
+    if (!window.getSelection()?.isCollapsed) {
+      atualizarSelecao()
+      return
+    }
     definirEscolhida(letra)
     if (!revelarResposta) confirmar(letra)
   }
@@ -142,13 +149,29 @@ export function CartaoQuestao({
     }
   }
 
+  /** O grifo é deliberadamente só visual: não escreve em localStorage e some no F5. */
+  function atualizarSelecao() {
+    const selecao = window.getSelection()
+    definirHaSelecao(!!selecao && !selecao.isCollapsed && !!areaDaQuestao.current?.contains(selecao.anchorNode))
+  }
+
+  function grifarSelecao() {
+    const selecao = window.getSelection()
+    if (!selecao || selecao.isCollapsed || !areaDaQuestao.current?.contains(selecao.anchorNode)) return
+    // `hiliteColor` preserva o texto e funciona mesmo quando a seleção cruza
+    // parágrafos ou spans dos comentários, onde surroundContents não serviria.
+    document.execCommand('hiliteColor', false, '#f5df72')
+    selecao.removeAllRanges()
+    definirHaSelecao(false)
+  }
+
   const semGabarito = !questao.gabarito && !questao.anulada
   // Etiquetas de assunto adiantam a resposta; quando escondidas, voltam junto
   // com o gabarito, que é quando elas servem para estudar em vez de entregar.
   const etiquetasVisiveis = mostrarEtiquetas || mostrarGabarito
 
   return (
-    <article className="cartao questao-impressa" aria-label={`Questão ${numero ?? ''}`}>
+    <article className="cartao questao-impressa" aria-label={`Questão ${numero ?? ''}`} ref={areaDaQuestao} onMouseUp={atualizarSelecao}>
       <div className="cartao__corpo">
         <div className="questao__topo">
           {questao.ano && <span className="etiqueta etiqueta--dado">{questao.ano}</span>}
@@ -169,6 +192,17 @@ export function CartaoQuestao({
           {questao.anulada && <span className="etiqueta etiqueta--alerta">Anulada</span>}
 
           <div className="questao__acoes nao-imprime">
+            <button
+              type="button"
+              className="botao botao--grifar"
+              onMouseDown={(evento) => evento.preventDefault()}
+              onClick={grifarSelecao}
+              disabled={!haSelecao}
+              aria-label="Grifar texto selecionado temporariamente"
+              title="Selecione um trecho e clique para grifar. O grifo some ao recarregar."
+            >
+              <Icone nome="riscar" tamanho={16} /> Grifar
+            </button>
             <button
               type="button"
               className="botao-icone"
@@ -559,3 +593,4 @@ function ComentarioDaIA({
     </div>
   )
 }
+
