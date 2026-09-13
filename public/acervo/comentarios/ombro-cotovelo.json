@@ -186,6 +186,55 @@
   "geradoEm": "2026-09-07",
   "conferido": false
  },
+ "ombro-cotovelo-0018": {
+  "respostaDireta": "**Resposta: B — ancôneo, inervado pelo nervo radial.** A seta aponta para o ancôneo, pequeno músculo posterolateral do cotovelo.",
+  "raciocinioClinico": "A imagem mostra um músculo triangular situado posteriormente ao cotovelo, entre o epicôndilo lateral e a ulna proximal, compatível com o ancôneo. Embora esteja próximo do nervo ulnar na região do cotovelo, sua inervação motora clássica vem de um ramo do nervo radial, geralmente antes da divisão em seus ramos profundos.",
+  "conceito": "O ancôneo auxilia a extensão do cotovelo e contribui para a estabilidade posterolateral. O supinador é outro músculo do compartimento posterior, mas ocupa o antebraço proximal e envolve o rádio, não a pequena área triangular imediatamente posterior ao cotovelo.",
+  "correta": "A alternativa B reúne os dois dados: o músculo indicado é o ancôneo e sua inervação é feita pelo nervo radial.",
+  "incorretas": {
+   "A": "O músculo está identificado corretamente, mas o nervo está errado: o ancôneo não é inervado pelo nervo ulnar.",
+   "C": "O supinador não corresponde ao músculo indicado e sua inervação também não é pelo nervo ulnar.",
+   "D": "O nervo radial inerva o supinador, mas a estrutura indicada na imagem é o ancôneo, não o supinador."
+  },
+  "analiseAlternativas": {
+   "A": {
+    "justificativa": "O ancôneo está correto, mas a inervação pelo nervo ulnar está incorreta.",
+    "quandoUsar": "A relação com o nervo ulnar é relevante ao estudar o sulco retroepicondiliano e os acessos mediais do cotovelo.",
+    "erroComum": "Escolher o nervo ulnar por ele ser lembrado como o nervo mais próximo do cotovelo medial."
+   },
+   "B": {
+    "justificativa": "Correta: o músculo é o ancôneo e recebe inervação de ramo do nervo radial.",
+    "quandoUsar": "A identificação é útil em anatomia regional e nos acessos posteriores do cotovelo."
+   },
+   "C": {
+    "justificativa": "O músculo e o nervo estão incorretos para a imagem.",
+    "quandoUsar": "O supinador deve ser considerado em questões sobre supinação e compressão do ramo profundo do nervo radial na arcada de Frohse.",
+    "erroComum": "Confundir qualquer músculo posterior do antebraço com o ancôneo."
+   },
+   "D": {
+    "justificativa": "A inervação radial do supinador é compatível, mas o músculo indicado não é o supinador.",
+    "quandoUsar": "A alternativa descreve a inervação do supinador, não a estrutura mostrada.",
+    "erroComum": "Reconhecer o nervo correto e deixar de conferir a anatomia e a localização do músculo."
+   }
+  },
+  "pontoMemorizar": "**Ancôneo = extensão do cotovelo + nervo radial.** Supinador = supinação do antebraço + ramo profundo do nervo radial.",
+  "armadilhas": "A proximidade anatômica do nervo ulnar pode induzir erro. A pergunta exige identificar simultaneamente o músculo e sua inervação; acertar apenas um dos dois não basta. Variações anatômicas de ramos nervosos existem, mas não mudam a resposta clássica cobrada nesta questão.",
+  "referencias": [
+   "StatPearls. Anatomy, Shoulder and Upper Limb: Forearm Compartments. NCBI Bookshelf. Atualizado em 2023. https://www.ncbi.nlm.nih.gov/books/NBK539784/",
+   "StatPearls. Anatomy, Shoulder and Upper Limb: Radial Nerve. NCBI Bookshelf. Atualizado em 2023. https://www.ncbi.nlm.nih.gov/books/NBK534840/"
+  ],
+  "geradoEm": "2026-09-12",
+  "conferido": false,
+  "nivelConfianca": "alto",
+  "verificacao": {
+   "status": "aprovado",
+   "alternativasCompletas": true,
+   "gabaritoConferido": true,
+   "fontesPresentes": true,
+   "verificadoEm": "2026-09-12",
+   "observacao": "Checagem estrutural automática; não substitui revisão médica."
+  }
+ },
  "ombro-cotovelo-0020": {
   "conceito": "O REMPLISSAGE (do francês, \"preenchimento\") é a TENODESE DO TENDÃO INFRAESPINAL — junto com a cápsula posterior — DENTRO do defeito de HILL-SACHS. A lógica é converter um defeito INTRA-articular em EXTRA-articular: preenchida a cratera, ela deixa de engatar na borda anterior da glenoide durante a abdução com rotação externa, e o engatilhamento cessa. É procedimento COMPLEMENTAR, feito junto com o reparo de Bankart, e sua indicação clássica é a lesão de Hill-Sachs ENGATILHANTE (off-track) com perda óssea glenoidal PEQUENA — abaixo de 20 a 25%. Quando a perda glenoidal é maior, a solução passa a ser óssea: LATARJET, que além de repor osso acrescenta o efeito de cinta do tendão conjunto e a reconstrução do ligamento coracoacromial. O conceito que organiza essa decisão é o de GLENOID TRACK: mede-se a via de contato da glenoide sobre a cabeça umeral e verifica-se se a lesão de Hill-Sachs cai dentro dela (on-track, não engata) ou a ultrapassa (off-track, engata). O preço do remplissage é conhecido: perda de alguns graus de rotação externa, geralmente bem tolerada.",
   "correta": "A tenodese do tendão infraespinhoso (com a cápsula posterior) dentro do defeito de Hill-Sachs.",
@@ -1629,6 +1678,23 @@
   "geradoEm": "2026-09-08",
   "conferido": false
  },
+ "ombro-cotovelo-0186": {
+  "conceito": "A cicatrização após reparo de uma lesão extensa do manguito rotador depende de quatro grupos de fatores. **Do paciente:** idade, tabagismo, diabetes, obesidade, densidade mineral óssea e adesão à reabilitação. **Da lesão:** tamanho, número de tendões, retração, cronicidade, atrofia e infiltração gordurosa, especialmente de supraespinal e infraespinal. **Do ombro:** distância acromioumeral, rigidez e qualidade muscular. **Do tratamento:** qualidade do tecido, tensão do reparo, fixação e proteção pós-operatória. É importante separar três desfechos que nem sempre caminham juntos: integridade anatômica do tendão, melhora funcional e retorno ao esporte. Estudos antigos apontaram sexo masculino e maior atividade esportiva como associados a melhor recuperação; evidência mais recente mostra que sexo isoladamente tem pouca força para prever nova ruptura e que idade, tamanho, retração e infiltração gordurosa são determinantes mais consistentes. Assim, a combinação cobrada deve ser entendida como associação prognóstica descrita na literatura utilizada pela prova, não como regra causal absoluta.",
+  "correta": "A alternativa C está correta de acordo com o conjunto prognóstico clássico cobrado: sexo feminino e baixo nível de atividade esportiva foram associados a menor probabilidade de recuperação satisfatória após o reparo. O baixo nível de atividade pode refletir menor reserva funcional, pior condicionamento e menor demanda prévia, enquanto estudos históricos observaram resultados médios menos favoráveis em mulheres. Contudo, esses dados exigem interpretação: metanálises recentes não demonstram diferença consistente de taxa de rerrotura entre os sexos. Na prática, a decisão e o prognóstico devem pesar muito mais idade, retração, infiltração gordurosa, tamanho da lesão, qualidade óssea, diabetes e tabagismo.",
+  "incorretas": {
+   "A": "Combina sexo feminino, apontado em estudos antigos como fator desfavorável, com **alto** nível de atividade esportiva, que foi associado a melhor recuperação. Como a questão pede dois fatores de mau prognóstico, a segunda metade invalida a alternativa. Além disso, alto nível de atividade não garante cicatrização: o excesso de carga precoce pode ser nocivo, mas isso é diferente do nível funcional pré-operatório.",
+   "B": "Traz dois fatores que, na revisão clássica, aparecem no sentido favorável: sexo masculino e maior atividade esportiva. Portanto, é o oposto da associação solicitada. Isso não significa que todo homem atleta cicatrize bem; uma lesão grande, retraída e com infiltração gordurosa continua tendo risco elevado independentemente do sexo.",
+   "D": "O baixo nível de atividade está no sentido desfavorável cobrado, mas o sexo masculino foi associado a melhor recuperação nos estudos que fundamentaram a questão. A alternativa mistura um fator favorável com outro desfavorável e não apresenta o par solicitado."
+  },
+  "referencias": [
+   "Prognostic factors for successful recovery after arthroscopic rotator cuff repair: systematic review. https://pubmed.ncbi.nlm.nih.gov/24450368/",
+   "A systematic summary of systematic reviews on the rotator cuff. https://pmc.ncbi.nlm.nih.gov/articles/PMC6154263/",
+   "Comparing sex-specific outcomes after rotator cuff repair: meta-analysis. https://pmc.ncbi.nlm.nih.gov/articles/PMC9128058/"
+  ],
+  "alerta": "A associação entre sexo feminino e falha de cicatrização não é consistente na literatura mais recente. O comentário preserva o gabarito da prova, mas esclarece que sexo isoladamente não deve ser usado como preditor clínico forte.",
+  "conferido": false,
+  "geradoEm": "2026-09-13"
+ },
  "ombro-cotovelo-0187": {
   "conceito": "A classificação de KIM organiza as lesões do lábio POSTEROINFERIOR na instabilidade posterior, e a sua utilidade está em nomear lesões que passam despercebidas na artroscopia se o cirurgião não as procurar — a instabilidade posterior é subdiagnosticada justamente porque as lesões labrais posteriores são sutis, e não a avulsão franca do Bankart anterior. Os quatro tipos: TIPO I, descolamento INCOMPLETO do lábio, sem deslocamento; TIPO II, a lesão de Kim propriamente dita, uma avulsão incompleta e OCULTA (concealed) — a porção superficial do lábio permanece aderida, mas a profunda está descolada, de modo que a lesão só é revelada quando se palpa e se eleva o lábio com o probe, e é a que mais se perde no exame apressado; TIPO III, EROSÃO CONDROLABRAL, em que o lábio posterior está erodido e achatado e o contorno da junção condrolabral se PERDE, sem que haja descolamento; TIPO IV, rasgo em retalho (flap) do lábio posteroinferior, com a inserção capsulolabral íntegra. A perda do contorno do lábio posterior descreve, portanto, o tipo III. Na prática, o achado importa porque o tratamento não é apenas reinserir o lábio: no tipo III é preciso reconstruir a altura do lábio erodido e associar a plicatura capsular posterior, já que a redundância capsular costuma ser o problema dominante.",
   "correta": "C. As lesões com perda do contorno do lábio posterior correspondem ao TIPO 3 de Kim — a erosão condrolabral, em que o lábio está erodido e achatado e a junção condrolabral perde o seu contorno, sem descolamento franco.",
@@ -1749,6 +1815,22 @@
   },
   "geradoEm": "2026-09-08",
   "conferido": false
+ },
+ "ombro-cotovelo-0201": {
+  "conceito": "Discinesia escapular é alteração da posição ou do movimento da escápula durante a elevação do braço. No atleta arremessador, ela pode reduzir a rotação superior e a inclinação posterior, alterar a orientação da glenoide e aumentar a carga sobre manguito e lábio. O acrônimo **SICK** resume Scapular malposition, Inferior medial border prominence, Coracoid pain and malposition e dysKinesis. Na classificação visual de Kibler, o **tipo I** apresenta proeminência do ângulo inferior e rotação anormal no eixo transversal; o **tipo II** apresenta proeminência de toda a borda medial, por rotação anormal em torno de um eixo vertical; o **tipo III** mostra elevação excessiva da borda superior e translação superior; e o tipo IV é movimento simétrico normal. O tipo II se associa a déficit dos estabilizadores que controlam retração e rotação escapular, particularmente romboides e porções média, superior e inferior do trapézio. A avaliação deve observar repouso e elevação/descida repetida dos braços; testes de assistência e retração escapular verificam se corrigir manualmente a posição reduz os sintomas.",
+  "correta": "A alternativa D está correta. O tipo II é reconhecido pela proeminência de toda a borda medial da escápula, e não apenas do ângulo inferomedial. Esse padrão reflete perda de controle da rotação no eixo vertical e pode relacionar-se à fraqueza dos romboides e das porções superior e inferior do trapézio. No arremessador, o achado importa porque a escápula funciona como base para a glenoide; se não estabiliza e gira adequadamente, o úmero e o manguito trabalham em posição menos favorável.",
+  "incorretas": {
+   "A": "Fraqueza do serrátil anterior e trapézio inferior pode contribuir para alteração da rotação superior, mas a **proeminência inferomedial** descreve o padrão tipo I, não o tipo II. A armadilha é trocar o ângulo inferior por toda a borda medial.",
+   "B": "A descrição morfológica da borda medial é compatível com o tipo II, porém o conjunto muscular apresentado não é o previsto pelo gabarito da classificação usada. O serrátil anterior é crucial para manter a escápula aplicada ao tórax e sua paralisia causa alamento medial clássico; no tipo II funcional do arremessador, a questão enfatiza romboides e trapézio.",
+   "C": "Os músculos citados correspondem ao grupo esperado, mas a proeminência restrita ao ângulo inferomedial caracteriza o tipo I. No tipo II, a alteração visível percorre a borda medial inteira, refletindo rotação em torno do eixo vertical."
+  },
+  "referencias": [
+   "Scapulothoracic Dyskinesis: A Concept Review. https://pmc.ncbi.nlm.nih.gov/articles/PMC8137745/",
+   "A comprehensive review of scapulothoracic abnormal motion: evaluation and classification. https://pmc.ncbi.nlm.nih.gov/articles/PMC11448755/",
+   "Common Conditions in the Overhead Athlete. American Family Physician. https://www.aafp.org/pubs/afp/issues/2014/0401/p537.html"
+  ],
+  "conferido": false,
+  "geradoEm": "2026-09-13"
  },
  "ombro-cotovelo-0202": {
   "conceito": "Os três D — Denervação, Destruição e Debris (detritos) — resumem a artropatia neuropática de CHARCOT. Cada palavra corresponde a um elemento do diagnóstico. DENERVAÇÃO é a causa: a perda da sensibilidade protetora e da propriocepção retira da articulação o sistema de alarme que normalmente limita o movimento e a carga, e o paciente segue usando um ombro que está sendo destruído. DESTRUIÇÃO é o achado radiográfico dominante e desproporcional: reabsorção maciça da cabeça umeral, erosão da glenoide, perda de todo o contorno articular, num grau que não se vê em nenhuma outra artropatia. DEBRIS são os fragmentos ósseos e cartilaginosos livres, dispersos pelos recessos e pelos tecidos moles, verdadeiros detritos de uma articulação em desintegração. O que fecha o quadro clínico é o DESCOMPASSO: o paciente refere pouca dor para o tamanho da destruição, o ombro é frouxo e instável, e o derrame costuma ser volumoso. Diante desse padrão no ombro, a causa a procurar é a SIRINGOMIELIA — a ressonância da coluna cervical é obrigatória, e o ombro pode ser a primeira manifestação da doença. Outras causas de Charcot no membro superior incluem a hanseníase e a lesão medular. O tratamento é conservador na maioria dos casos, porque tanto a artroplastia quanto a artrodese têm taxas altíssimas de falha em articulação denervada.",
@@ -3661,29 +3743,6 @@
   },
   "geradoEm": "2026-09-10",
   "conferido": false
- },
- "ombro-cotovelo-0018": {
-  "respostaDireta": "**Resposta: B — ancôneo, inervado pelo nervo radial.** A seta aponta para o ancôneo, pequeno músculo posterolateral do cotovelo.",
-  "raciocinioClinico": "A imagem mostra um músculo triangular situado posteriormente ao cotovelo, entre o epicôndilo lateral e a ulna proximal, compatível com o ancôneo. Embora esteja próximo do nervo ulnar na região do cotovelo, sua inervação motora clássica vem de um ramo do nervo radial, geralmente antes da divisão em seus ramos profundos.",
-  "conceito": "O ancôneo auxilia a extensão do cotovelo e contribui para a estabilidade posterolateral. O supinador é outro músculo do compartimento posterior, mas ocupa o antebraço proximal e envolve o rádio, não a pequena área triangular imediatamente posterior ao cotovelo.",
-  "correta": "A alternativa B reúne os dois dados: o músculo indicado é o ancôneo e sua inervação é feita pelo nervo radial.",
-  "incorretas": {
-   "A": "O músculo está identificado corretamente, mas o nervo está errado: o ancôneo não é inervado pelo nervo ulnar.",
-   "C": "O supinador não corresponde ao músculo indicado e sua inervação também não é pelo nervo ulnar.",
-   "D": "O nervo radial inerva o supinador, mas a estrutura indicada na imagem é o ancôneo, não o supinador."
-  },
-  "analiseAlternativas": {
-   "A": {"justificativa": "O ancôneo está correto, mas a inervação pelo nervo ulnar está incorreta.", "quandoUsar": "A relação com o nervo ulnar é relevante ao estudar o sulco retroepicondiliano e os acessos mediais do cotovelo.", "erroComum": "Escolher o nervo ulnar por ele ser lembrado como o nervo mais próximo do cotovelo medial."},
-   "B": {"justificativa": "Correta: o músculo é o ancôneo e recebe inervação de ramo do nervo radial.", "quandoUsar": "A identificação é útil em anatomia regional e nos acessos posteriores do cotovelo."},
-   "C": {"justificativa": "O músculo e o nervo estão incorretos para a imagem.", "quandoUsar": "O supinador deve ser considerado em questões sobre supinação e compressão do ramo profundo do nervo radial na arcada de Frohse.", "erroComum": "Confundir qualquer músculo posterior do antebraço com o ancôneo."},
-   "D": {"justificativa": "A inervação radial do supinador é compatível, mas o músculo indicado não é o supinador.", "quandoUsar": "A alternativa descreve a inervação do supinador, não a estrutura mostrada.", "erroComum": "Reconhecer o nervo correto e deixar de conferir a anatomia e a localização do músculo."}
-  },
-  "pontoMemorizar": "**Ancôneo = extensão do cotovelo + nervo radial.** Supinador = supinação do antebraço + ramo profundo do nervo radial.",
-  "armadilhas": "A proximidade anatômica do nervo ulnar pode induzir erro. A pergunta exige identificar simultaneamente o músculo e sua inervação; acertar apenas um dos dois não basta. Variações anatômicas de ramos nervosos existem, mas não mudam a resposta clássica cobrada nesta questão.",
-  "referencias": ["StatPearls. Anatomy, Shoulder and Upper Limb: Forearm Compartments. NCBI Bookshelf. Atualizado em 2023. https://www.ncbi.nlm.nih.gov/books/NBK539784/", "StatPearls. Anatomy, Shoulder and Upper Limb: Radial Nerve. NCBI Bookshelf. Atualizado em 2023. https://www.ncbi.nlm.nih.gov/books/NBK534840/"],
-  "geradoEm": "2026-09-12",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {"status": "aprovado", "alternativasCompletas": true, "gabaritoConferido": true, "fontesPresentes": true, "verificadoEm": "2026-09-12", "observacao": "Checagem estrutural automática; não substitui revisão médica."}
  }
 }
+
