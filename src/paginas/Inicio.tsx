@@ -108,7 +108,7 @@ export function Inicio() {
               <p>{textoDoDia.explicacao}</p>
               {sessaoEmAndamento && <a className="botao botao--principal" href={href('/sessao')}>Continuar sessão · {Object.keys(sessao!.respostas).length}/{sessao!.ids.length}</a>}
               {!sessaoEmAndamento && <button type="button" className="botao botao--principal botao--grande" onClick={() => treinoRapido(10)} disabled={contagens.total < 10}>{textoDoDia.acao}</button>}
-              <a className="botao" href={href('/revisao')}>Abrir calendário de revisão</a>
+              <span className="acao-calendario"><a className="botao" href={href('/revisao')}>Abrir calendário de revisão</a></span>
             </div>
             <div className="atalhos-estudo">
               <a href={href('/treinar?situacao=revisarHoje&limite=20')}><strong>{contagens.porSituacao.revisarHoje ?? 0}</strong><span>Revisar hoje</span><small>{textoDoDia.revisar}</small></a>
