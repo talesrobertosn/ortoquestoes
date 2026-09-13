@@ -8,6 +8,7 @@ import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { usarIndice } from '../dados/usarIndice'
 import { planoRevisao } from '../estado/planoRevisao'
 import { usarArmazenado } from '../estado/usarArmazenado'
+import { usarLeitura } from '../estado/preferencias'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -37,6 +38,7 @@ export function Conta() {
   const { contexto } = usarContextoLocal('')
   const { indice } = usarIndice()
   const [metaDiaria, definirMetaDiaria] = usarArmazenado<number>('meta-diaria-revisao', 10)
+  const { densidade, definirDensidade, fonte, definirFonte } = usarLeitura()
   const perfil = sessao?.user.user_metadata ?? {}
   const [nome, definirNome] = useState(String(perfil.nome ?? ''))
   const [sobrenome, definirSobrenome] = useState(String(perfil.sobrenome ?? ''))
@@ -151,6 +153,8 @@ export function Conta() {
         <h2>Preferências de estudo</h2>
         <p className="texto-2">Sua meta orienta os atalhos de revisão. Você pode mudar quando a semana estiver mais cheia.</p>
         <div className="grupo-opcoes" aria-label="Meta diária de revisão">{[10, 20, 30].map(meta => <button type="button" key={meta} className="opcao-segmento" aria-pressed={metaDiaria === meta} onClick={() => definirMetaDiaria(meta)}>{meta} revisões/dia</button>)}</div>
+        <div className="campo"><span className="campo__rotulo">Densidade da leitura</span><div className="grupo-opcoes">{([['confortavel', 'Confortável'], ['compacta', 'Compacta'], ['foco', 'Foco']] as const).map(([valor, rotulo]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={densidade === valor} onClick={() => definirDensidade(valor)}>{rotulo}</button>)}</div></div>
+        <label className="campo">Tamanho da fonte <output className="numerico">{fonte}%</output><input className="entrada" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>
         <div className="linha"><a className="botao" href={href('/dados')}>Backup e privacidade</a><a className="botao" href={href('/revisao')}>Configurar minha revisão</a></div>
       </section>
       <section className="cartao cartao__corpo empilha">
