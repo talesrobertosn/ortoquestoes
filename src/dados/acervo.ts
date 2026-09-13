@@ -291,8 +291,29 @@ export function montarSessao(
   semente: number,
   contexto: ContextoLocal = CONTEXTO_VAZIO,
 ): string[] {
-  let ids = filtrar(indice, filtros, contexto).map((i) => i.id)
+  const itens = filtrar(indice, filtros, contexto)
+  let ids = itens.map((i) => i.id)
   if (filtros.embaralhar) ids = embaralhar(ids, semente)
+  // No treino amplo, alterna uma revisão/erro, uma questão nova e uma já
+  // acertada. A sessão fica mais sustentável sem esconder a prioridade de
+  // revisão e os filtros explícitos continuam sendo respeitados integralmente.
+  if (filtros.situacao === 'todas' && !filtros.busca.trim()) {
+    const grupos = [[], [], []] as string[][]
+    for (const id of ids) {
+      const registro = contexto.respondidas[id]
+      if (revisarHoje(registro)) grupos[0].push(id)
+      else if (!registro) grupos[1].push(id)
+      else grupos[2].push(id)
+    }
+    const alternados: string[] = []
+    while (grupos.some(grupo => grupo.length)) {
+      for (const grupo of grupos) {
+        const id = grupo.shift()
+        if (id) alternados.push(id)
+      }
+    }
+    ids = alternados
+  }
   if (filtros.limite && filtros.limite > 0) ids = ids.slice(0, filtros.limite)
   return ids
 }
@@ -346,3 +367,4 @@ export function carregarBusca(): Promise<Map<string, string>> {
   }
   return promessaBusca
 }
+
