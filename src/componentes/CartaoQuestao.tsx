@@ -21,7 +21,7 @@ interface Props {
   riscadas: Letra[]
   favorita: boolean
   marcadaRevisao: boolean
-  aoResponder: (letra: Letra, correta: boolean | null, segundos: number) => void
+  aoResponder: (letra: Letra, correta: boolean | null, segundos: number, confianca?: 'seguro' | 'duvida' | 'chute') => void
   aoRiscar: (letra: Letra) => void
   aoFavoritar: () => void
   aoRevisar: () => void
@@ -51,6 +51,7 @@ export function CartaoQuestao({
   revelarResposta = true,
 }: Props) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
+  const [confianca, definirConfianca] = useState<'seguro' | 'duvida' | 'chute'>('seguro')
   const [copiado, definirCopiado] = useState(false)
   const [menuGrifo, definirMenuGrifo] = useState<{ x: number; y: number } | null>(null)
   const [grifos, definirGrifos] = useState<Array<{ left: number; top: number; width: number; height: number }>>([])
@@ -65,6 +66,7 @@ export function CartaoQuestao({
 
   useEffect(() => {
     definirEscolhida(null)
+    definirConfianca('seguro')
     definirCopiado(false)
     inicio.current = Date.now()
   }, [questao.id])
@@ -78,7 +80,7 @@ export function CartaoQuestao({
     if (travada) return
     const correta = questao.anulada || !questao.gabarito ? null : letra === questao.gabarito
     const segundos = Math.max(1, Math.round((Date.now() - inicio.current) / 1000))
-    aoResponder(letra, correta, segundos)
+    aoResponder(letra, correta, segundos, confianca)
   }
 
   /** Em simulado marcar já registra; no treino comum ainda passa pelo botão. */
@@ -394,6 +396,9 @@ export function CartaoQuestao({
           </div>
         ) : !respondida ? (
           <div className="linha nao-imprime acao-responder">
+            {escolhida && <div className="grupo-opcoes" aria-label="Sua confiança nesta resposta">
+              {([['seguro', 'Tenho certeza'], ['duvida', 'Tenho dúvida'], ['chute', 'Foi um chute']] as const).map(([valor, rotulo]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={confianca === valor} onClick={() => definirConfianca(valor)}>{rotulo}</button>)}
+            </div>}
             <button
               type="button"
               className="botao botao--principal botao--grande"
@@ -402,6 +407,7 @@ export function CartaoQuestao({
             >
               {escolhida ? `Responder ${escolhida}` : 'Escolha uma alternativa'}
             </button>
+            {escolhida && <span className="campo__auxilio">Acerto com dúvida ou chute volta antes para revisão.</span>}
             <span className="meta so-teclado">
               Teclas <kbd>1</kbd>–<kbd>{letrasDisponiveis.length}</kbd> selecionam,{' '}
               <kbd>Enter</kbd> confirma
@@ -413,7 +419,7 @@ export function CartaoQuestao({
 
         {mostrarGabarito && (
           <div className="comentario">
-            {resposta?.correta !== null && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(lerRespondidas()[questao.id]) ? 'Questão dominada: quatro acertos espaçados. Você pode revisitá-la pelo filtro Dominadas.' : 'Acerto registrado. A próxima revisão segue o ciclo de 3, 7, 14 e 30 dias.'}</p>}
+            {resposta?.correta !== null && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(lerRespondidas()[questao.id]) ? 'Questão dominada: quatro acertos espaçados. Você pode revisitá-la pelo filtro Dominadas.' : resposta.confianca === 'chute' ? 'Acerto por chute: ela volta amanhã para você confirmar o raciocínio.' : resposta.confianca === 'duvida' ? 'Acerto com dúvida: ela volta antes para reforçar o conceito.' : 'Acerto seguro registrado. A próxima revisão segue o ciclo de 3, 7, 14 e 30 dias.'}</p>}
             {questao.comentario && (
               <div className="bloco-comentario">
                 <p className="comentario__titulo">Comentário do autor</p>
