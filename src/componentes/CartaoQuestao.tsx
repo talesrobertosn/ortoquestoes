@@ -158,11 +158,30 @@ export function CartaoQuestao({
   function grifarSelecao() {
     const selecao = window.getSelection()
     if (!selecao || selecao.isCollapsed || !areaDaQuestao.current?.contains(selecao.anchorNode)) return
-    // `hiliteColor` preserva o texto e funciona mesmo quando a seleção cruza
-    // parágrafos ou spans dos comentários, onde surroundContents não serviria.
-    document.execCommand('hiliteColor', false, '#f5df72')
+    const faixa = selecao.getRangeAt(0).cloneRange()
+    // CSS Custom Highlight API colore qualquer Range sem editar a árvore que o
+    // React controla. Assim funciona em enunciado, alternativas e comentários
+    // que tenham spans, negrito ou vários parágrafos.
+    const cssComGrifos = CSS as unknown as {
+      highlights?: Map<string, { add: (range: Range) => void }>
+    }
+    const ConjuntoGrifo = (window as unknown as {
+      Highlight?: new () => { add: (range: Range) => void }
+    }).Highlight
+    if (cssComGrifos.highlights && ConjuntoGrifo) {
+      const grifos = cssComGrifos.highlights.get('ortoquestoes-grifo') ?? new ConjuntoGrifo()
+      grifos.add(faixa)
+      cssComGrifos.highlights.set('ortoquestoes-grifo', grifos)
+    } else {
+      // Fallback para navegadores antigos: o elemento é intencionalmente
+      // temporário e some ao atualizar a página.
+      const trecho = faixa.extractContents()
+      const marca = document.createElement('mark')
+      marca.className = 'grifo-temporario'
+      marca.appendChild(trecho)
+      faixa.insertNode(marca)
+    }
     selecao.removeAllRanges()
-    definirHaSelecao(false)
   }
 
   const semGabarito = !questao.gabarito && !questao.anulada
