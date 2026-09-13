@@ -6,6 +6,7 @@ export function Rodape() {
   return (
     <footer className="rodape nao-imprime">
       <div className="conteudo rodape__interno">
+        <a href={href('/revisao')}>Revisão</a>
         <a href={href('/favoritas')}>Favoritas</a>
         <a href={recurso('questoes/')}>Questões comentadas</a>
         <a href={href('/sobre')}>O projeto</a>
@@ -27,3 +28,4 @@ export function Rodape() {
     </footer>
   )
 }
+
