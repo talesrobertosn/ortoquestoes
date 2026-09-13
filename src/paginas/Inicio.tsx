@@ -1,5 +1,5 @@
 import { usarContextoLocal } from '../estado/usarContextoLocal'
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { contar, montarSessao } from '../dados/acervo'
 import { FILTROS_VAZIOS } from '../dados/tipos'
@@ -10,6 +10,15 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
+
+const VARIACOES_INICIO = [
+  { saudacao: 'A constância de hoje vira segurança na prova.', rotina: 'Um pouco de prática, todos os dias', explicacao: 'Errou? Revise agora. Acertou? Volte em 3, 7, 14 e 30 dias. Quatro acertos espaçados marcam a questão como dominada.', acao: 'Começar um treino de 10 questões', revisar: 'Retome o que precisa fixar', novas: 'Avance no acervo' },
+  { saudacao: 'Cada revisão bem feita deixa a próxima resposta mais leve.', rotina: 'Hoje é um bom dia para consolidar', explicacao: 'Comece pelas questões que exigem revisão. Pequenas sessões repetidas criam memória de longo prazo.', acao: 'Fazer 10 questões agora', revisar: 'Transforme erro em domínio', novas: 'Descubra um assunto novo' },
+  { saudacao: 'Você não precisa fazer tudo hoje. Precisa continuar.', rotina: 'Seu próximo acerto começa aqui', explicacao: 'Uma questão respondida com atenção vale mais do que uma sequência apressada. Revise, entenda e siga.', acao: 'Reservar 10 questões', revisar: 'Volte ao que ainda desafia', novas: 'Amplie seu repertório' },
+  { saudacao: 'A prova reconhece quem construiu repertório todos os dias.', rotina: 'Treine com intenção', explicacao: 'A fila prioriza o que está vencido e o que você já errou. O intervalo entre revisões faz parte do estudo.', acao: 'Iniciar sessão de 10', revisar: 'Sua fila de consolidação', novas: 'Comece algo diferente' },
+  { saudacao: 'Consistência silenciosa também é progresso.', rotina: 'Faça a próxima questão contar', explicacao: 'Erros retornam cedo; acertos seguros ganham mais intervalo. Assim, seu tempo vai para onde ele tem mais efeito.', acao: 'Praticar 10 questões', revisar: 'Fortaleça os pontos frágeis', novas: 'Explore questões inéditas' },
+  { saudacao: 'Você está construindo decisão clínica questão por questão.', rotina: 'Revisar é avançar', explicacao: 'Não é preciso recomeçar do zero. Retome uma questão, entenda o raciocínio e deixe o ciclo trabalhar por você.', acao: 'Começar uma sessão curta', revisar: 'Relembre antes de esquecer', novas: 'Abra um novo caminho' },
+]
 
 export function Inicio() {
   const { indice, carregando } = usarIndice()
@@ -23,6 +32,7 @@ export function Inicio() {
     [indice, contexto],
   )
   const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
+  const [textoDoDia] = useState(() => VARIACOES_INICIO[Math.floor(Math.random() * VARIACOES_INICIO.length)])
 
   const anos = indice?.anos ?? []
   const anosRecentes = [...anos].sort((a, b) => b - a).slice(0, 6)
@@ -43,8 +53,7 @@ export function Inicio() {
     sessao && !sessao.concluidaEm && Object.keys(sessao.respostas).length < sessao.ids.length
 
   const nome = String(conta?.user.user_metadata?.nome ?? '').trim()
-  const saudacoes = ['Um passo de cada vez também leva longe.', 'A constância de hoje vira segurança na prova.', 'Você está construindo repertório questão por questão.']
-  const saudacao = saudacoes[new Date().getDate() % saudacoes.length]
+  const saudacao = textoDoDia.saudacao
 
   return (
     <div className="empilha-2">
@@ -95,16 +104,16 @@ export function Inicio() {
           <section className="painel-diario" aria-label="Seu estudo de hoje">
             <div className="painel-diario__intro">
               <p className="meta">SUA ROTINA DE ESTUDO</p>
-              <h2>{sessaoEmAndamento ? 'Continue de onde parou' : 'Um pouco de prática, todos os dias'}</h2>
-              <p>Errou? Revise agora. Acertou? Volte em 3, 7, 14 e 30 dias. Quatro acertos espaçados marcam a questão como dominada.</p>
+              <h2>{sessaoEmAndamento ? 'Continue de onde parou' : textoDoDia.rotina}</h2>
+              <p>{textoDoDia.explicacao}</p>
               {sessaoEmAndamento && <a className="botao botao--principal" href={href('/sessao')}>Continuar sessão · {Object.keys(sessao!.respostas).length}/{sessao!.ids.length}</a>}
-              {!sessaoEmAndamento && <button type="button" className="botao botao--principal botao--grande" onClick={() => treinoRapido(10)} disabled={contagens.total < 10}>Começar um treino de 10 questões</button>}
+              {!sessaoEmAndamento && <button type="button" className="botao botao--principal botao--grande" onClick={() => treinoRapido(10)} disabled={contagens.total < 10}>{textoDoDia.acao}</button>}
               <a className="botao" href={href('/revisao')}>Abrir calendário de revisão</a>
             </div>
             <div className="atalhos-estudo">
-              <a href={href('/treinar?situacao=revisarHoje&limite=20')}><strong>{contagens.porSituacao.revisarHoje ?? 0}</strong><span>Revisar hoje</span><small>Retome o que precisa fixar</small></a>
+              <a href={href('/treinar?situacao=revisarHoje&limite=20')}><strong>{contagens.porSituacao.revisarHoje ?? 0}</strong><span>Revisar hoje</span><small>{textoDoDia.revisar}</small></a>
               <a href={href('/treinar?situacao=dominadas')}><strong>{contagens.porSituacao.dominadas ?? 0}</strong><span>Dominadas</span><small>Quatro acertos espaçados</small></a>
-              <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>Avance no acervo</small></a>
+              <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>{textoDoDia.novas}</small></a>
             </div>
           </section>
           {!conta && <section className="cartao cartao__corpo convite-conta">
