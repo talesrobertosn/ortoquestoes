@@ -101,6 +101,12 @@ export function CartaoQuestao({
     indice,
     mostrarGabarito,
   )
+  const relacionadas = useMemo(
+    () => indice?.questoes
+      .filter(item => item.t === indice.questoes.find(atual => atual.id === questao.id)?.t && item.id !== questao.id)
+      .slice(0, 3) ?? [],
+    [indice, questao.id],
+  )
 
   useEffect(() => {
     if (!atalhosAtivos) return
@@ -468,6 +474,11 @@ export function CartaoQuestao({
             </div>
 
             <Referencias itens={questao.referencias} />
+            {relacionadas.length > 0 && <section className="bloco-comentario nao-imprime">
+              <p className="comentario__titulo">Continue no mesmo tema</p>
+              <p className="texto-2">Mais questões de {questao.tema} para aplicar o conceito em outros contextos.</p>
+              <div className="linha" style={{ marginTop: '0.75rem' }}>{relacionadas.map((item, indiceRelacionado) => <a className="botao botao--fantasma" key={item.id} href={href(`/questao/${item.id}`)}>Questão {indiceRelacionado + 1}</a>)}</div>
+            </section>}
           </div>
         )}
 
