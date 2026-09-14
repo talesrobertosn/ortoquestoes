@@ -22,7 +22,7 @@ import { usarConta } from '../conta/ContextoConta'
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
 const LIMITES = [5, 10, 20, 30, 50, 100]
-const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'erradas', 'acertadas', 'favoritas', 'revisarHoje', 'dominadas']
+const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'erradas', 'acertadas', 'favoritas', 'revisarHoje', 'incertas', 'dominadas']
 const DURACOES: Array<[number, string]> = [
   [60, '1 hora'],
   [120, '2 horas'],
