@@ -8,6 +8,7 @@ export interface RegistroQuestao {
   sequencia?: number
   proximaRevisao?: number | null
   confianca?: 'seguro' | 'duvida' | 'chute'
+  historico?: Array<{ em: number; correta: boolean | null; confianca: 'seguro' | 'duvida' | 'chute' }>
 }
 export function dominada(registro?: Partial<RegistroQuestao>): boolean {
   return registro?.c === true && (registro.sequencia ?? 0) >= 4
@@ -27,6 +28,7 @@ export function proximoRegistro(anterior: RegistroQuestao | undefined, correta: 
     erros: (anterior?.erros ?? (anterior?.c === false ? 1 : 0)) + Number(correta === false),
     sequencia,
     confianca,
+    historico: [...(anterior?.historico ?? []), { em: agora, correta, confianca }].slice(-8),
     proximaRevisao: correta === null || sequencia >= 4 ? null : correta === false ? agora : agora + (intervalos[Math.max(0, sequencia - 1)] ?? 30) * 86400000,
   }
 }
