@@ -106,9 +106,14 @@ export function CartaoQuestao({
     mostrarGabarito,
   )
   const relacionadas = useMemo(
-    () => indice?.questoes
-      .filter(item => item.t === indice.questoes.find(atual => atual.id === questao.id)?.t && item.id !== questao.id)
-      .slice(0, 3) ?? [],
+    () => {
+      if (!indice) return { faceis: [], dificeis: [] }
+      const atual = indice.questoes.find(item => item.id === questao.id)
+      const ordem = { facil: 1, medio: 2, dificil: 3 }
+      const nivel = atual?.d ? ordem[atual.d] : 2
+      const doTema = indice.questoes.filter(item => item.t === atual?.t && item.id !== questao.id)
+      return { faceis: doTema.filter(item => (item.d ? ordem[item.d] : 2) <= nivel).slice(0, 2), dificeis: doTema.filter(item => (item.d ? ordem[item.d] : 2) > nivel).slice(0, 2) }
+    },
     [indice, questao.id],
   )
 
@@ -203,6 +208,7 @@ export function CartaoQuestao({
   }
 
   const semGabarito = !questao.gabarito && !questao.anulada
+  const historicoDaQuestao = lerRespondidas()[questao.id]?.historico ?? []
   // Etiquetas de assunto adiantam a resposta; quando escondidas, voltam junto
   // com o gabarito, que é quando elas servem para estudar em vez de entregar.
   const etiquetasVisiveis = mostrarEtiquetas || mostrarGabarito
@@ -483,15 +489,21 @@ export function CartaoQuestao({
             </div>
 
             <Referencias itens={questao.referencias} />
-            {relacionadas.length > 0 && <section className="bloco-comentario nao-imprime">
+            {(relacionadas.faceis.length > 0 || relacionadas.dificeis.length > 0) && <section className="bloco-comentario nao-imprime">
               <p className="comentario__titulo">Continue no mesmo tema</p>
               <p className="texto-2">Mais questões de {questao.tema} para aplicar o conceito em outros contextos.</p>
-              <div className="linha" style={{ marginTop: '0.75rem' }}>{relacionadas.map((item, indiceRelacionado) => <a className="botao botao--fantasma" key={item.id} href={href(`/questao/${item.id}`)}>Questão {indiceRelacionado + 1}</a>)}</div>
+              {relacionadas.faceis.length > 0 && <div className="linha" style={{ marginTop: '0.75rem' }}><span className="meta">Para consolidar</span>{relacionadas.faceis.map((item, indiceRelacionado) => <a className="botao botao--fantasma" key={item.id} href={href(`/questao/${item.id}`)}>Questão {indiceRelacionado + 1}</a>)}</div>}
+              {relacionadas.dificeis.length > 0 && <div className="linha" style={{ marginTop: '0.75rem' }}><span className="meta">Para desafiar</span>{relacionadas.dificeis.map((item, indiceRelacionado) => <a className="botao botao--fantasma" key={item.id} href={href(`/questao/${item.id}`)}>Questão {indiceRelacionado + 1}</a>)}</div>}
             </section>}
           </div>
         )}
 
         <NotasQuestao key={questao.id} id={questao.id} />
+
+        {historicoDaQuestao.length > 0 && <details className="notas-questao nao-imprime">
+          <summary>Histórico desta questão</summary>
+          <p className="texto-2">{historicoDaQuestao.map(item => `${item.correta === true ? 'acertou' : item.correta === false ? 'errou' : 'anulada'} em ${new Date(item.em).toLocaleDateString('pt-BR')}${item.confianca === 'seguro' ? '' : ` · ${item.confianca === 'duvida' ? 'com dúvida' : 'chute'}`}`).join(' → ')}</p>
+        </details>}
 
         {semGabarito && (
           <p className="meta" style={{ marginTop: '0.75rem' }}>
