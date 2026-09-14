@@ -34,6 +34,7 @@ export function Conta() {
       ? 'O link de confirmação não pôde ser aceito. Solicite um novo link e tente novamente.'
       : ''
   const [ocupado, definirOcupado] = useState(false), [mensagem, definirMensagem] = useState(mensagemRetorno)
+  const [novoEmail, definirNovoEmail] = useState('')
   const [importado, definirImportado] = useState(false)
   const { contexto } = usarContextoLocal('')
   const { indice } = usarIndice()
@@ -112,6 +113,17 @@ export function Conta() {
     } catch (e) { definirMensagem(textoErro((e as { code?: string }).code)) }
     finally { definirOcupado(false) }
   }
+  async function trocarEmail() {
+    if (!supabase || !novoEmail.trim()) return
+    definirOcupado(true)
+    try {
+      const { error } = await supabase.auth.updateUser({ email: novoEmail.trim() })
+      if (error) throw error
+      definirMensagem('Enviamos a confirmação do novo e-mail. A alteração só vale depois de confirmar o link.')
+      definirNovoEmail('')
+    } catch (e) { definirMensagem(textoErro((e as { code?: string }).code)) }
+    finally { definirOcupado(false) }
+  }
   function importar() {
     if (!status.pronto) return
     for (const tipo of TIPOS_SYNC) {
@@ -137,6 +149,7 @@ export function Conta() {
       <section className="cartao cartao__corpo empilha">
         <h2>{sessao.user.email}</h2><p>Respostas, revisões, favoritas, anotações e histórico ficam associados à sua conta. A sessão em andamento fica neste dispositivo.</p>
         <p role="status">{ROTULOS_STATUS[status.estado]} {status.pendentes > 0 && `${status.pendentes} alteração(ões) pendente(s).`}</p>
+        <p className="texto-2">Conta criada em {new Date(sessao.user.created_at).toLocaleDateString('pt-BR')} · dispositivo atual: este navegador.</p>
         <div className="linha"><button className="botao" onClick={sincronizar} disabled={status.estado === 'sincronizando'}>Sincronizar agora</button><a className="botao" href={href('/dados')}>Ver desempenho e backup</a></div>
         <button className="botao botao--fantasma" disabled={ocupado} onClick={async () => {
           if (!supabase) return
@@ -156,6 +169,11 @@ export function Conta() {
         <div className="campo"><span className="campo__rotulo">Densidade da leitura</span><div className="grupo-opcoes">{([['confortavel', 'Confortável'], ['compacta', 'Compacta'], ['foco', 'Foco']] as const).map(([valor, rotulo]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={densidade === valor} onClick={() => definirDensidade(valor)}>{rotulo}</button>)}</div></div>
         <label className="campo">Tamanho da fonte <output className="numerico">{fonte}%</output><input className="entrada" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>
         <div className="linha"><a className="botao" href={href('/dados')}>Backup e privacidade</a><a className="botao" href={href('/revisao')}>Configurar minha revisão</a></div>
+      </section>
+      <section className="cartao cartao__corpo empilha">
+        <h2>Segurança da conta</h2>
+        <p className="texto-2">Trocar o e-mail exige confirmação pelo novo endereço. Sair só desconecta este navegador; o seu progresso permanece salvo.</p>
+        <div className="linha-campos linha-campos--2"><label className="campo">Novo e-mail<input className="entrada" type="email" value={novoEmail} onChange={e => definirNovoEmail(e.target.value)} placeholder="novo@email.com" /></label><div className="campo"><span className="campo__rotulo">Ações</span><div className="linha"><button className="botao" type="button" onClick={() => void trocarEmail()} disabled={ocupado || !novoEmail.trim()}>Trocar e-mail</button><a className="botao botao--fantasma" href={href('/contato?assunto=exclusao-conta')}>Solicitar exclusão</a></div></div></div>
       </section>
       <section className="cartao cartao__corpo empilha">
         <h2>Meu perfil</h2>
