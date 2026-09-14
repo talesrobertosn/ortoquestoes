@@ -1762,7 +1762,9 @@ kbd {
 .painel-diario__intro p { margin-bottom: 1rem; }
 .atalhos-estudo { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .revisao-heroi { padding: clamp(1.5rem,4vw,3rem); border-radius: 16px; color: var(--texto); background: linear-gradient(135deg, var(--verdete-veu), var(--superficie)); border: 1px solid var(--verdete); }
-.acao-calendario { margin-left:.5rem; }
+/* É um <span> logo após a linha de botões — sem margem própria ele fica
+   colado nela, com espaço só do lado errado (esquerda, não em cima). */
+.acao-calendario { display: flex; width: fit-content; margin: 1rem 0 0; }
 .questao-impressa ::selection { background: color-mix(in srgb, var(--verdete) 35%, transparent); }
 ::highlight(ortoquestoes-grifo), .grifo-temporario { background: #f5df72; color: #241f00; border-radius: 2px; }
 .questao-impressa { position:relative; }.grifo-overlay { position:absolute; z-index:1; pointer-events:none; background:#f5df72; opacity:.52; border-radius:2px; mix-blend-mode:multiply; }
@@ -1813,7 +1815,6 @@ kbd {
 .origem-questao { margin-bottom: 1rem; }
 .nav-mobile { display: none; }
 @media (max-width: 48rem) {
-  .acao-calendario { display:flex; width:fit-content; margin:1rem 0 0; }
   .calendario { display:flex; overflow-x:auto; padding:.25rem; scroll-snap-type:x mandatory; }.calendario__dia { min-width:4.5rem; scroll-snap-align:start; }
   .intencoes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .atalhos-estudo { grid-template-columns: 1fr; gap: .65rem; }
