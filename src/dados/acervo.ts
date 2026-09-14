@@ -171,6 +171,7 @@ function aplicaUm(
     if (filtros.situacao === 'erradas' && registro?.c !== false) return false
     if (filtros.situacao === 'acertadas' && registro?.c !== true) return false
     if (filtros.situacao === 'favoritas' && !contexto.favoritos.includes(item.id)) return false
+    if (filtros.situacao === 'incertas' && (!registro || (registro.confianca !== 'duvida' && registro.confianca !== 'chute'))) return false
   }
 
   if (ignorar !== 'busca' && filtros.busca.trim()) {
@@ -243,6 +244,9 @@ export function contar(
       if (dominada(registro)) contagens.porSituacao.dominadas = (contagens.porSituacao.dominadas ?? 0) + 1
       if (contexto.favoritos.includes(item.id)) {
         contagens.porSituacao.favoritas = (contagens.porSituacao.favoritas ?? 0) + 1
+      }
+      if (registro && (registro.confianca === 'duvida' || registro.confianca === 'chute')) {
+        contagens.porSituacao.incertas = (contagens.porSituacao.incertas ?? 0) + 1
       }
     }
 
