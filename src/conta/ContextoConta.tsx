@@ -1,9 +1,9 @@
 import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
 import type { Session } from '@supabase/supabase-js'
-import { definirUsuarioLocal } from '../estado/armazenamento'
+import { definirUsuarioLocal, gravar, limparTudo } from '../estado/armazenamento'
 import { supabase, contasDisponiveis } from './supabase'
 import { iniciarSincronizacao, type StatusSync } from './sincronizacao'
-import type { Documento } from './modeloSync'
+import { estadoVazio, type Documento } from './modeloSync'
 import { navegar } from '../util/rotas'
 
 const STATUS_INICIAL: StatusSync = { estado: 'sincronizando', pendentes: 0, conflitos: [], pronto: false }
@@ -14,6 +14,7 @@ interface ContaContexto {
   encerrarRecuperacao: () => void
   status: StatusSync
   sincronizar: () => void
+  reiniciarProgresso: () => void
   resolver: (doc: Documento, manterLocal: boolean) => void
 }
 const Contexto = createContext<ContaContexto | null>(null)
@@ -58,6 +59,14 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
     return () => { sync.current?.parar(); sync.current = null }
   }, [sessao?.user.id])
   return <Contexto.Provider value={{ sessao, carregando, recuperacao, encerrarRecuperacao: () => definirRecuperacao(false), status,
+    reiniciarProgresso: () => {
+      if (!supabase || !sessao) return
+      sync.current?.parar()
+      gravar('reinicio:pendente', crypto.randomUUID(), 'nuvem')
+      gravar('sincronia:v1', estadoVazio(), 'nuvem')
+      limparTudo('nuvem')
+      sync.current = iniciarSincronizacao(supabase, sessao.user.id, definirStatus)
+    },
     sincronizar: () => { void sync.current?.sincronizar() }, resolver: (doc, manterLocal) => sync.current?.resolver(doc, manterLocal) }}>
     {carregando ? <div className="conteudo empilha" role="status"><p>Preparando sua conta…</p><button className="botao" onClick={() => { definirUsuarioLocal(null); definirCarregando(false); navegar('/') }}>Continuar sem conta</button></div> : <div key={sessao?.user.id ?? 'visitante'}>{children}</div>}
   </Contexto.Provider>
@@ -67,3 +76,4 @@ export function usarConta() {
   if (!conta) throw new Error('Provedor de conta indisponível')
   return conta
 }
+
