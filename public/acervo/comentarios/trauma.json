@@ -568,6 +568,18 @@
   "conferido": false,
   "geradoEm": "2026-09-13"
  },
+ "trauma-0075": {
+  "alerta": "Este item merece uma ressalva: um ensaio clínico randomizado de referência (McKee e colaboradores, 2009) comparou artroplastia total do cotovelo com RAFI especificamente em fraturas C3 do idoso com osso muito frágil, e mostrou resultado funcional superior com a artroplastia nesse subgrupo mais grave. A leitura mais aceita reconcilia os dois achados pelo critério técnico: RAFI seguue sendo a primeira escolha sempre que uma fixação estável for alcançável (o que as placas bloqueadas tornaram possível numa parcela maior de casos), e a artroplastia fica reservada aos casos em que a cominuição e a fragilidade óssea realmente impedem essa fixação — um julgamento intraoperatório que o enunciado, ao generalizar 'toda fratura C3 no idoso osteoporótico', não deixa claro se está pressupondo.",
+  "conceito": "A fratura AO-C3 do úmero distal — a mais cominuída e menos passível de fixação estável entre as fraturas articulares completas — no idoso com osso osteoporótico reúne dois desafios que se somam: a cominuição dificulta a reconstrução anatômica da superfície articular, e a osteoporose compromete a fixação de qualquer parafuso no osso já fragmentado. Ainda assim, a placa BLOQUEADA muda esse cenário em relação à era das placas convencionais: como o parafuso trava rigidamente na placa (e não depende só do atrito rosca-osso para segurar), a construção mantém estabilidade mesmo em osso poroso, permitindo, na maioria dos casos, obter uma fixação estável o suficiente para justificar a RAFI (redução aberta com fixação interna) como conduta inicial — preservando a articulação própria do paciente e evitando os riscos específicos de um implante protético (desgaste, afrouxamento, revisão futura) numa faixa etária em que a expectativa de uso da prótese é longa. A artroplastia total do cotovelo fica reservada para os casos em que a cominuição é tão extensa que nem mesmo a placa bloqueada consegue ancorar fragmentos suficientes para uma fixação funcional — um julgamento intraoperatório, não um critério fixo de idade ou de grau AO isoladamente.",
+  "correta": "D. A RAFI com placas bloqueadas permanece a conduta preferencial mesmo na fratura C3 do idoso osteoporótico, porque o travamento do parafuso na placa mantém estabilidade mecânica mesmo em osso poroso — reservando a artroplastia para os casos em que essa fixação estável simplesmente não é alcançável.",
+  "incorretas": {
+   "A": "A artroplastia total do cotovelo é reservada para os casos em que a fixação estável não é tecnicamente alcançável pela cominuição, não como conduta de rotina para toda fratura C3 do idoso osteoporótico.",
+   "B": "A configuração paralela é uma opção biomecanicamente válida e amplamente usada — a distinção entre RAFI e artroplastia é o que decide o desfecho nessa população, mais do que a escolha entre configurações de placa paralela ou ortogonal.",
+   "C": "O tratamento conservador ('saco de ossos') é reservado a pacientes de baixa demanda funcional não candidatos a cirurgia, e não representa o melhor resultado funcional esperado quando a cirurgia é viável."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0080": {
   "conceito": "O SINAL DE HAWKINS é um dos poucos sinais radiográficos que informam sobre a VITALIDADE de um osso, e a sua lógica é elegante. Depois de uma fratura, todo osso VIVO e VASCULARIZADO passa por um período de HIPEREMIA reacional, com aumento do fluxo sanguíneo e reabsorção osteoclástica ativa. Num osso que suporta carga, essa reabsorção se manifesta primeiro no osso SUBCONDRAL, que é o mais metabolicamente ativo. No tálus, isso aparece como uma FAIXA LINEAR RADIOTRANSPARENTE logo abaixo da cartilagem do DOMUS, visível sobretudo na incidência em frente do tornozelo, e ela surge entre a SEXTA e a OITAVA SEMANA após a fratura. A presença desse sinal indica que o tálus está VIVO e praticamente exclui a osteonecrose — é um sinal de alto valor preditivo NEGATIVO. A sua AUSÊNCIA, por outro lado, é apenas sugestiva: um tálus sem sinal de Hawkins pode estar necrótico, mas o sinal também falha em aparecer se o paciente permaneceu sem carga (o que reduz a hiperemia funcional) ou se a imagem foi feita cedo ou tarde demais. O que se observa então, mais tarde, é o oposto: aumento da DENSIDADE relativa do domus, porque o osso vivo ao redor se desmineraliza pelo desuso enquanto o osso morto permanece com a mesma densidade — é a esclerose 'relativa' que caracteriza a necrose, visível a partir de cerca de seis a oito semanas e melhor definida pela RESSONÂNCIA, que é o exame de escolha para confirmar a osteonecrose e medir a sua extensão. Vale a advertência clínica: mesmo com necrose estabelecida, o colapso do domus não é obrigatório, e boa parte dos pacientes revasculariza ao longo de meses — motivo pelo qual a conduta é o acompanhamento e não a cirurgia imediata.",
   "correta": "C. A reabsorção linear subcondral do domus — o SINAL DE HAWKINS — aparece entre a SEXTA e a OITAVA SEMANA e indica que o tálus está vascularizado, praticamente excluindo a osteonecrose.",
@@ -744,6 +756,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0103": {
+  "conceito": "A complicação mais frequente após a fratura do capítulo umeral — tratada cirúrgica ou conservadoramente — não é a que mais preocupa à primeira vista (a necrose avascular do fragmento, temida por sua relação com a vascularização retrógrada do capítulo), mas sim a perda de amplitude de movimento do cotovelo, sobretudo da extensão terminal. Isso acontece porque o próprio mecanismo da lesão — um impacto por cisalhamento sobre a superfície articular anterior do cotovelo — inflama e cicatriza a cápsula articular anterior, formando aderências que restringem a extensão mesmo quando a fratura consolida com boa congruência articular e sem necrose. Essa perda de mobilidade costuma ser parcial e bem tolerada funcionalmente na maioria dos pacientes, mas é, disparadamente, o achado mais relatado no seguimento a longo prazo dessas fraturas — mais comum do que a pseudartrose (o capítulo tem boa vascularização quando a fixação é estável), a necrose avascular (que ocorre, mas em proporção bem menor de casos, sobretudo nos padrões mais cominuídos) ou a consolidação viciosa.",
+  "correta": "D. A diminuição da mobilidade articular, sobretudo da extensão terminal, é a complicação mais frequentemente relatada após a fratura do capítulo umeral, decorrente da cicatrização da cápsula anterior lesada pelo próprio mecanismo de cisalhamento.",
+  "incorretas": {
+   "A": "A pseudartrose não é a complicação mais comum: o capítulo tem boa vascularização e, com fixação estável, consolida bem na maioria dos casos.",
+   "B": "A necrose avascular ocorre, sobretudo nos padrões mais cominuídos, mas em proporção bem menor do que a perda de mobilidade articular, que é a complicação mais frequentemente relatada.",
+   "C": "A consolidação viciosa não é a complicação mais comumente descrita nessa fratura, que costuma consolidar em posição aceitável quando adequadamente fixada."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0104": {
   "conceito": "A região SUBTROCANTÉRICA recebe as maiores cargas do esqueleto: a cortical MEDIAL (o calcar) trabalha em COMPRESSÃO com forças que podem ultrapassar várias vezes o peso corporal, e a cortical LATERAL trabalha em TENSÃO. Qualquer implante colocado ali precisa suportar essa solicitação até a consolidação, e é isso que separa as opções. A HASTE INTRAMEDULAR cefalomedular é um dispositivo de CARGA COMPARTILHADA, posicionado no EIXO MECÂNICO do osso: o braço de alavanca entre a carga e o implante é curto, as tensões de flexão sobre o material são menores, e a haste resiste melhor à falha por fadiga. Já as placas — o parafuso dinâmico condilar (DCS), a placa angulada de 95 graus e a placa trocantérica bloqueada — são dispositivos de CARGA TOTAL (load bearing), fixados na cortical lateral, portanto EXCÊNTRICOS em relação ao eixo mecânico: elas suportam sozinhas o momento fletor até a consolidação, e quando há cominuição medial, com perda do apoio do calcar, tendem a falhar por fadiga, com quebra do implante ou colapso em VARO. Por isso a haste intramedular é o implante de escolha nas fraturas subtrocantéricas e a que apresenta MENOR índice de colapso em varo com redução adequada — vantagem que se acentua no paciente obeso, em quem as cargas são ainda maiores e as vias de acesso para placa, mais difíceis. Duas ressalvas técnicas são indispensáveis. A primeira: a haste só protege se a REDUÇÃO for boa — reduzir antes de introduzir o implante, vencendo a flexão, abdução e rotação lateral do fragmento proximal (iliopsoas e glúteos), sob pena de consolidar em varo. A segunda: as placas mantêm indicação em situações específicas, como deformidades prévias, canais muito estreitos e algumas fraturas com extensão intertrocantérica complexa.",
   "correta": "C. A HASTE INTRAMEDULAR é o implante com menor índice de colapso em varo: por ser um dispositivo de carga compartilhada, posicionado no eixo mecânico do osso, sofre menor momento fletor e resiste melhor à falha por fadiga.",
@@ -775,6 +798,28 @@
    "D": "O processo espinhoso de C2 é volumoso e local de inserção muscular; a sua fratura isolada é rara e sem repercussão. Ela não caracteriza a espondilolistese traumática do áxis."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0108": {
+  "conceito": "As fraturas da extremidade distal do úmero têm uma relação anatômica particularmente íntima com o NERVO ULNAR, que é o motivo pelo qual esse nervo é o mais comumente acometido nesse tipo de fratura no adulto. O trajeto do nervo ulnar passa diretamente pelo sulco retroepicondilar medial (o 'túnel cubital'), colado ao epicôndilo medial e à face posteromedial da metáfise distal do úmero — exatamente a região que se desloca, se cominui ou é diretamente manipulada em fraturas da extremidade distal, sobretudo quando há envolvimento da coluna medial ou do epicôndilo medial. Além do risco pela própria fratura (contusão, estiramento ou aprisionamento do nervo entre fragmentos), o nervo ulnar permanece em risco durante o próprio tratamento cirúrgico, já que os acessos mediais e a colocação de placas ou parafusos nessa região exigem identificação e proteção cuidadosas dele. Essa combinação de proximidade anatômica na lesão original e exposição durante a cirurgia explica por que o nervo ulnar aparece, de forma consistente na literatura, como o mais frequentemente acometido nas fraturas do terço distal do úmero.",
+  "correta": "A. O nervo ulnar é o mais comumente acometido na fratura do terço distal do úmero no adulto, pela proximidade anatômica do seu trajeto no túnel cubital com a face posteromedial da metáfise distal — região frequentemente envolvida tanto pela fratura quanto pela manipulação cirúrgica.",
+  "incorretas": {
+   "B": "O nervo radial está mais associado a fraturas da diáfise umeral, no seu trajeto pelo sulco espiral, não à extremidade distal.",
+   "C": "O nervo interósseo anterior é mais associado a lesões do antebraço proximal e, especialmente, à fratura supracondiliana pediátrica por mecanismo de extensão — não à fratura distal do úmero no adulto.",
+   "D": "O nervo interósseo posterior é mais associado a lesões próximas ao cotovelo lateral e ao antebraço proximal (por exemplo, na via de Henry), não à fratura distal do úmero propriamente dita."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0109": {
+  "conceito": "A classificação AO/OTA para a extremidade distal do úmero organiza as fraturas em três grupos: A (extra-articular), B (articular parcial, em que parte da superfície articular permanece contínua com a diáfise) e C (articular completa, com toda a superfície articular separada da diáfise). Dentro do grupo B, o segundo dígito descreve o plano e a extensão do envolvimento articular: B1 é a fratura sagital do côndilo lateral, B2 é a fratura sagital do côndilo medial, e B3 é a fratura FRONTAL (coronal) da superfície articular — categoria que engloba justamente as fraturas do CAPÍTULO, isoladas ou associadas a uma porção da tróclea, porque o traço dessas fraturas corre no plano coronal, separando um fragmento anterior (articular) de um posterior (metafisário), sem atravessar o eixo sagital que caracteriza B1 e B2. É por isso que as fraturas do capítulo, independentemente de qual classificação eponímica (Bryan-Morrey, com a modificação de McKee) se use para detalhar seus subtipos, recebem o código AO B3 — uma fratura articular parcial, no plano frontal.",
+  "correta": "D. As fraturas do capítulo umeral, por terem traço no plano frontal (coronal), correspondem ao subtipo B3 da classificação AO/OTA — articular parcial, plano frontal.",
+  "incorretas": {
+   "A": "A1 corresponde a fraturas extra-articulares (grupo A), não ao capítulo, que é uma fratura articular parcial.",
+   "B": "B1 corresponde à fratura sagital do côndilo lateral, um plano de traço diferente do plano frontal característico da fratura do capítulo.",
+   "C": "B2 corresponde à fratura sagital do côndilo medial, também num plano diferente do frontal, que caracteriza a fratura do capítulo (B3)."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0110": {
@@ -1087,6 +1132,17 @@
    "D": "O encurtamento do tríceps sural produz equino, sobrecarga do antepé, fasciíte plantar e alterações da marcha, e é fator relevante em várias doenças do pé — mas não é o achado associado à síndrome compartimental crônica de esforço."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0154": {
+  "conceito": "A classificação de BRYAN e MORREY para as fraturas do capítulo umeral, com a modificação de MCKEE, descreve quatro tipos por extensão e padrão do traço. O tipo I (Hahn-Steinthal) é um grande fragmento osteoarticular do capítulo, com quantidade substancial de osso subcondral. O tipo II (Kocher-Lorenz) é um fragmento fino, quase só cartilaginoso, com pouquíssimo osso subcondral associado — mais difícil de fixar pela escassez de osso. O tipo III (Broberg-Morrey) é a fratura COMINUÍDA do capítulo, fragmentada em múltiplos pedaços pequenos. O TIPO IV, acrescentado por McKee para preencher uma lacuna da classificação original, descreve especificamente a fratura por cisalhamento do capítulo que se ESTENDE para envolver uma PORÇÃO SUBSTANCIAL DA TRÓCLEA — um padrão que os três tipos anteriores não contemplavam, porque foram descritos pensando no capítulo isoladamente, sem considerar a possibilidade de o traço avançar significativamente sobre a superfície articular medial adjacente.",
+  "correta": "D. A fratura por cisalhamento do capítulo com envolvimento da maior parte da tróclea corresponde ao tipo IV, a modificação específica que McKee acrescentou à classificação original de Bryan e Morrey.",
+  "incorretas": {
+   "A": "O tipo I (Hahn-Steinthal) descreve um grande fragmento osteoarticular do capítulo com osso subcondral substancial, sem a extensão trocleaR que caracteriza o tipo IV.",
+   "B": "O tipo II (Kocher-Lorenz) descreve um fragmento fino, quase só cartilaginoso, restrito ao capítulo, sem a extensão troclear do tipo IV.",
+   "C": "O tipo III (Broberg-Morrey) descreve a cominuição do capítulo, não a extensão para a tróclea, que é o critério definidor específico do tipo IV."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0155": {
@@ -1404,6 +1460,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0211": {
+  "conceito": "A via de acesso de BRYAN-MORREY para a extremidade distal do úmero se caracteriza por REFLETIR o tríceps braquial — junto com o periósteo do olécrano — de um lado para o outro, preservando a continuidade do tendão tricipital com o olécrano, em vez de seccioná-lo por osteotomia. Essa preservação tem uma vantagem específica que a torna a via preferida quando se planeja uma SUBSTITUIÇÃO ARTROPLÁSTICA TOTAL DO COTOVELO: como não há uma osteotomia do olécrano para consolidar, não existe o risco de pseudartrose da osteotomia nem a necessidade de fixar um fragmento ósseo perto de um implante metálico que ocupará justamente a região articular — problemas que tornariam a reabilitação e a fixação mais complicadas caso se optasse pela via com osteotomia do olécrano (a preferida, em contrapartida, quando se busca a melhor visualização articular possível para reconstrução anatômica numa RAFI de fratura intra-articular complexa). A escolha entre essas duas vias — Bryan-Morrey (tríceps refletido) versus osteotomia do olécrano — reflete diretamente o objetivo do procedimento: preservar o osso e evitar hardware adicional (artroplastia) versus maximizar a visualização articular (RAFI complexa).",
+  "correta": "B. A via de Bryan-Morrey, ao refletir o tríceps sem osteotomia do olécrano, evita o risco de pseudartrose da osteotomia e a necessidade de fixação óssea próxima ao implante — por isso é a via preferida na substituição artroplástica total do cotovelo.",
+  "incorretas": {
+   "A": "A fixação de uma fratura coronal anterior do capítulo geralmente se beneficia de um acesso anterior ou lateral direcionado à região anterior da articulação, não da via posterior de Bryan-Morrey.",
+   "C": "A presença de osteotomia prévia do olécrano não é, por si só, a indicação clássica da via de Bryan-Morrey — a indicação central é o planejamento de artroplastia, que dispensa a osteotomia.",
+   "D": "A presença de lesão prévia do tríceps braquial tornaria a via de Bryan-Morrey, que depende justamente da integridade e mobilização desse tendão, tecnicamente mais complicada, não uma indicação preferencial."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0213": {
   "conceito": "A FRATURA FEMORAL ATÍPICA é uma complicação do uso PROLONGADO de BIFOSFONATOS (alendronato, risedronato, zoledronato), e o mecanismo proposto explica o paradoxo. Os bifosfonatos agem inibindo os OSTEOCLASTOS e, portanto, suprimindo o turnover ósseo — o que aumenta a densidade mineral e reduz o risco global de fratura por fragilidade, benefício amplamente demonstrado. Mas o remodelamento não serve apenas para repor massa óssea: é ele que REPARA AS MICROFRATURAS por fadiga que se acumulam no dia a dia. Com o turnover suprimido por anos, essas microlesões se acumulam justamente onde a solicitação mecânica é maior — a CORTICAL LATERAL do fêmur proximal, que trabalha em TENSÃO —, e o osso, embora denso, torna-se friável e quebra sob carga trivial. Os critérios diagnósticos (Sociedade Americana de Pesquisa Óssea e Mineral) incluem: localização entre o trocanter menor e a metáfise supracondiliana, traço originado na CORTICAL LATERAL e substancialmente TRANSVERSO, cominuição mínima ou ausente, ESPÍCULA MEDIAL quando a fratura é completa, e trauma mínimo ou ausente. Os critérios menores incluem o ESPESSAMENTO da cortical lateral (o 'beaking'), a DOR PRODRÔMICA na coxa por semanas a meses e o acometimento BILATERAL. A TERIPARATIDA tem efeito oposto ao dos bifosfonatos — é um agente ANABÓLICO, análogo do paratormônio, que estimula a formação óssea, e é inclusive usada para favorecer a consolidação dessas fraturas. Os CORTICOSTEROIDES aumentam o risco de osteoporose e de fratura por fragilidade em geral, e figuram como fator agravante nas atípicas, mas não são a sua causa. E o carbonato de CÁLCIO é apenas suplemento nutricional.",
   "correta": "B. A fratura atípica está associada ao uso prolongado de BIFOSFONATOS: a supressão do turnover ósseo impede o reparo das microfraturas por fadiga na cortical lateral, que trabalha em tensão, e o osso quebra sob carga trivial.",
@@ -1512,6 +1579,17 @@
    "D": "Acerta a abdução e a rotação interna, mas erra a extensão: é a FLEXÃO do ombro, na queda para a frente sobre a mão espalmada, que alinha o eixo do úmero com o vetor da carga e produz a impactação em valgo."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0233": {
+  "conceito": "A transposição anterior do nervo ulnar após a redução e fixação interna da fratura distal do úmero é um tema com alguma variação na prática entre cirurgiões, mas há um critério amplamente aceito para indicá-la de forma ROTINEIRA, e não apenas seletiva: a PRESENÇA DE NEUROPATIA ULNAR PRÉVIA à cirurgia. Quando o paciente já chega com sintomas de disfunção do nervo ulnar — parestesia no quarto e quinto dedos, fraqueza da musculatura intrínseca da mão —, o nervo já está mecanicamente comprometido antes mesmo da manipulação cirúrgica, e mantê-lo na sua posição anatômica original (no túnel cubital, junto à fratura e ao material de síntese que ali será colocado) o expõe a um risco adicional de piora. Transpor esse nervo para uma posição anterior, longe do foco de fratura e da instrumentação cirúrgica, reduz esse risco e cria condições mais favoráveis para a recuperação da função nervosa já comprometida. Em contraste, num nervo sem sintomas prévios, a decisão de transpor rotineiramente (versus apenas neurólise e proteção in situ) varia mais entre serviços e não é um consenso tão claro quanto o critério de neuropatia prévia.",
+  "correta": "A. A presença de neuropatia ulnar prévia à cirurgia é o critério mais amplamente aceito para indicar a transposição anterior de rotina, protegendo um nervo já comprometido do foco de fratura e da instrumentação cirúrgica.",
+  "incorretas": {
+   "B": "O uso de placa medial é um fator que pode influenciar a decisão de alguns cirurgiões, mas não é o critério mais amplamente estabelecido para a indicação rotineira de transposição — esse é a neuropatia ulnar prévia.",
+   "C": "A localização específica da fratura (tróclea e capítulo) não é, por si só, o critério mais estabelecido para a indicação rotineira de transposição do nervo ulnar.",
+   "D": "A fixação com placas paralelas, embora frequentemente envolva uma placa medial, não é isoladamente o critério mais aceito para indicar transposição de rotina — o critério central é a presença de neuropatia prévia."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0234": {
@@ -1755,6 +1833,17 @@
    "C": "Inverte o critério de Hertel: o preditor de isquemia é a extensão metafisária MENOR que 8 mm. Um esporão de calcar MAIOR que 8 mm significa que a cabeça manteve boa ancoragem medial, o que é sinal de bom prognóstico vascular."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0267": {
+  "conceito": "Entre as complicações neurológicas do tratamento cirúrgico da fratura do úmero distal, a NEUROPATIA DO NERVO ULNAR é, disparadamente, a mais frequente — resultado direto da proximidade anatômica desse nervo com a região operada. O nervo ulnar corre pelo túnel cubital, colado ao epicôndilo medial e à face posteromedial da metáfise distal do úmero, exatamente a área manipulada durante a redução, a colocação de placas na coluna medial e, quando indicada, a própria transposição do nervo. Mesmo com técnica cuidadosa, a manipulação, a retração prolongada ou o contato direto com material de síntese nessa região explicam por que a neuropatia ulnar pós-operatória aparece com frequência muito maior nas séries do que lesões de outros nervos do membro superior — o mediano corre mais anteriormente e centralmente, longe do campo cirúrgico habitual dessa via; o musculocutâneo, mais proximal, também fica distante da região trabalhada; e o interósseo posterior está mais associado a lesões do antebraço proximal e do cotovelo lateral, não à via medial típica dessa cirurgia.",
+  "correta": "B. A neuropatia do nervo ulnar é a complicação neurológica mais comum do tratamento cirúrgico da fratura do úmero distal, pela proximidade anatômica desse nervo com a via de acesso e com a fixação da coluna medial.",
+  "incorretas": {
+   "A": "O nervo mediano corre mais anteriormente e centralmente no braço, longe da via cirúrgica habitual para essa fratura, tornando sua lesão bem menos frequente do que a do nervo ulnar.",
+   "C": "O nervo musculocutâneo é mais proximal e não está na região tipicamente manipulada durante a fixação da fratura distal do úmero.",
+   "D": "O nervo interósseo posterior está mais associado a lesões do cotovelo lateral e do antebraço proximal, não à via medial típica dessa fixação."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0268": {
@@ -2440,6 +2529,28 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0383": {
+  "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, o nervo mais frequentemente acometido nas fraturas da extremidade distal do úmero no adulto é o ULNAR. O trajeto desse nervo passa diretamente pelo túnel cubital, colado ao epicôndilo medial e à face posteromedial da metáfise distal — justamente a região mais sujeita a deslocamento, cominuição e manipulação cirúrgica nas fraturas dessa localização, sobretudo quando há envolvimento da coluna medial ou do epicôndilo medial. Além do risco decorrente da própria fratura, o nervo permanece exposto durante o tratamento cirúrgico, já que o acesso medial e a fixação com placas nessa coluna exigem sua identificação e proteção cuidadosa — muitas vezes com transposição anterior, sobretudo se já havia sintomas de neuropatia antes da cirurgia. Essa combinação de proximidade anatômica e exposição operatória explica por que o nervo ulnar aparece de forma consistente na literatura como o mais comumente lesado nesse tipo de fratura, à frente do mediano, do interósseo anterior e do interósseo posterior.",
+  "correta": "B. O nervo ulnar é o mais comumente acometido nas fraturas da extremidade distal do úmero, pela proximidade do seu trajeto no túnel cubital com a face posteromedial da metáfise distal.",
+  "incorretas": {
+   "A": "O nervo mediano corre mais anteriormente e centralmente no braço, sem a mesma proximidade com a face posteromedial da metáfise distal do úmero que caracteriza o trajeto do nervo ulnar.",
+   "C": "O nervo interósseo anterior é mais associado à fratura supracondiliana pediátrica por mecanismo de extensão, não à fratura distal do úmero no adulto em geral.",
+   "D": "O nervo interósseo posterior está mais associado a lesões do cotovelo lateral e do antebraço proximal, não à fratura distal do úmero."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0384": {
+  "conceito": "A técnica do 'saco de ossos' ('bag of bones') é uma opção de tratamento NÃO CIRÚRGICO reservada, sobretudo, a fraturas muito cominuídas do úmero distal em pacientes de baixa demanda funcional, não candidatos a uma cirurgia extensa. O princípio é aceitar uma redução imperfeita da superfície articular em troca de preservar alguma mobilidade funcional do cotovelo — e a técnica depende de dois elementos específicos para funcionar. Primeiro, a TIPOIA usada é a do tipo PUNHO-COLARINHO (não uma tipoia simples de antebraço), que sustenta o peso do braço a partir do punho, deixando o cotovelo livre para pender sob a ação da gravidade. Segundo, o cotovelo é mantido em flexão MAIOR QUE 90 GRAUS — quanto o edema inicial permitir —, porque essa posição usa o peso do próprio antebraço, agora pendente sob gravidade a partir do punho suspenso, para tracionar e ajudar a alinhar os fragmentos distais, ao mesmo tempo em que permite início precoce de movimento suave, essencial para não perder ainda mais a função num cotovelo já fragilizado pela cominuição.",
+  "correta": "D. A técnica do saco de ossos é realizada com tipoia punho-colarinho (sustentando o braço a partir do punho) e flexão do cotovelo maior que 90 graus, usando o peso do antebraço pendente para auxiliar o alinhamento dos fragmentos.",
+  "incorretas": {
+   "A": "Uma tipoia simples não sustenta o braço a partir do punho da forma necessária para essa técnica, e 90 graus exatos (sem ultrapassar) não é a posição-alvo — busca-se flexão maior que 90 graus, conforme o edema permitir.",
+   "B": "A tipoia simples não é o dispositivo usado nessa técnica — é a tipoia punho-colarinho, que sustenta o peso a partir do punho, permitindo que o antebraço penda sob gravidade.",
+   "C": "A tipoia punho-colarinho está correta, mas a flexão-alvo não é de exatamente 90 graus — busca-se uma flexão maior que 90 graus, conforme tolerado pelo edema inicial."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0385": {
   "conceito": "A classificação AO/OTA do antebraço usa o SEGMENTO 22, que corresponde à DIÁFISE do rádio e da ulna (o 21 é a extremidade proximal, o 23 a distal). Dentro do 22, o TIPO é dado pela morfologia do traço: A, fratura SIMPLES; B, em CUNHA; C, COMPLEXA. O GRUPO diz qual osso está acometido: A1, fratura simples da ULNA com o rádio íntegro; A2, fratura simples do RÁDIO com a ulna íntegra; A3, fratura simples dos DOIS ossos. E o SUBGRUPO, o número após o ponto, detalha o traço — e é justamente ali que a AO codificou as duas fraturas-luxações clássicas do antebraço. No grupo A1 (ulna simples), o subgrupo .3 corresponde à fratura da ulna COM LUXAÇÃO DA CABEÇA DO RÁDIO, isto é, a lesão de MONTEGGIA: 22A1.3. No grupo A2 (rádio simples), o subgrupo .3 corresponde à fratura do rádio COM LUXAÇÃO DA RADIOULNAR DISTAL, isto é, a fratura de GALEAZZI: 22A2.3. Os subgrupos .1 e .2 de cada grupo descrevem apenas a inclinação do traço — oblíquo e transverso — sem lesão articular associada. A lógica é elegante e vale guardar: o dígito final '3' num traço simples do antebraço é o que sinaliza a LUXAÇÃO associada, e qual articulação luxou depende de qual osso quebrou. Isso reforça o princípio clínico que atravessa o tema: toda fratura diafisária isolada de um osso do antebraço obriga a radiografar as DUAS articulações radioulnares, porque um osso só não quebra e desvia sem que o outro, ou uma das articulações que os unem, ceda. A regra prática de triagem é a LINHA RADIOCAPITELAR no cotovelo — deve cruzar o centro do capítulo em todas as incidências — e, no punho, a comparação da variância ulnar e do espaço da radioulnar distal com o lado contralateral.",
   "correta": "A. A fratura de Galeazzi é o código 22A2.3: segmento 22 (diáfise do antebraço), tipo A (traço simples), grupo 2 (rádio, com a ulna íntegra) e subgrupo 3, que designa a luxação associada da articulação radioulnar distal.",
@@ -2758,6 +2869,17 @@
    "C": "A consolidação viciosa, sobretudo em varo, é frequente e é o passo que PRECEDE a penetração do parafuso; preveni-la restaurando o suporte medial é a principal medida contra o cut-out. Ainda assim, o desfecho que caracteriza a falha da placa bloqueada é o parafuso na articulação."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0430": {
+  "conceito": "A fratura exposta da extremidade distal do úmero tende a ter seu ponto de exposição concentrado na face POSTERIOR do braço, e essa distribuição não é coincidência — reflete a diferença de cobertura de partes moles entre as faces anterior e posterior dessa região. Anteriormente, o úmero distal é protegido por uma camada espessa de músculo (o braquial anterior, além do bíceps mais proximalmente), que absorve parte do impacto e dificulta a perfuração da pele por um fragmento ósseo desviado. Posteriormente, em contraste, a cobertura de partes moles é muito mais delgada — sobretudo próximo ao olécrano e à face posterior da metáfise distal, onde a pele fica quase diretamente sobre o osso, com pouco músculo interposto. Quando a fratura tem energia suficiente para desviar um fragmento a ponto de romper a pele, é essa região posterior, menos protegida, que cede com maior frequência — o mesmo princípio de cobertura de partes moles que explica, por exemplo, por que a região anterior da tíbia (subcutânea ao longo de toda a sua extensão) é o sítio mais comum de exposição nas fraturas dessa outra localização.",
+  "correta": "D. A face posterior do úmero distal, com cobertura de partes moles mais delgada do que a face anterior (protegida pelo músculo braquial), é o local mais frequente de exposição óssea nas fraturas dessa região.",
+  "incorretas": {
+   "A": "A face lateral tem cobertura muscular intermediária, sem ser tão delgada quanto a posterior, que é a mais frequentemente associada à exposição.",
+   "B": "A face medial também tem cobertura de partes moles mais espessa do que a posterior, tornando a exposição por essa face menos frequente.",
+   "C": "A face anterior é a mais protegida, pela cobertura espessa do músculo braquial, tornando a exposição por essa face a menos provável entre as citadas."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0431": {
@@ -3230,6 +3352,28 @@
    "D": "As lesões associadas afetam a sobrevida imediata, o tempo de internação e a reabilitação, e não devem ser subestimadas no politraumatizado — mas nenhuma delas se aproxima do impacto que o estado neurológico tem sobre o desfecho funcional a longo prazo."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0503": {
+  "conceito": "A fixação com placas da fratura distal do úmero pode ser feita em diferentes configurações — ORTOGONAL (uma placa na face posterolateral, outra na face medial, formando um ângulo entre si) ou PARALELA (ambas as placas nas faces medial e lateral, posicionadas de forma a convergir e se apoiarem mutuamente, segundo os princípios descritos por O'Driscoll). Estudos biomecânicos em cadáver mostraram, de forma consistente, maior rigidez e maior resistência à falha por fadiga na configuração PARALELA em comparação com a ortogonal — um achado que levou parte da comunidade ortopédica a migrar para essa técnica ao longo das últimas décadas. No entanto, quando esses achados biomecânicos foram testados clinicamente — comparando desfechos funcionais reais, taxas de consolidação e taxas de reoperação entre pacientes tratados com uma ou outra configuração —, os estudos clínicos e as revisões sistemáticas de forma consistente NÃO encontraram diferença estatisticamente significativa nos resultados. Esse é um exemplo didático de uma lacuna entre o laboratório e a clínica: a superioridade mecânica de bancada não necessariamente se traduz num desfecho funcional diferente para o paciente, provavelmente porque outros fatores (qualidade da redução, técnica cirúrgica, reabilitação) pesam mais no resultado final do que a escolha específica entre as duas configurações de placa.",
+  "correta": "A. Apesar de estudos biomecânicos mostrarem maior rigidez na configuração paralela de placas, estudos clínicos não demonstram diferença significativa nos desfechos funcionais entre as configurações paralela e ortogonal na fixação da fratura distal do úmero.",
+  "incorretas": {
+   "B": "As placas ortogonais pré-moldadas são uma opção tecnicamente válida, mas apontar essa configuração como clinicamente superior não reflete o achado consistente dos estudos clínicos, que não mostram diferença significativa entre as duas técnicas.",
+   "C": "Da mesma forma, apontar a configuração paralela como clinicamente superior contraria o achado consistente da literatura clínica, apesar da vantagem biomecânica de bancada que estudos em cadáver demonstram para essa técnica.",
+   "D": "Essa combinação específica de placas (posterolateral e terço de cano medial) não está estabelecida como superior às demais alternativas — a evidência clínica não mostra diferença significativa entre as configurações estudadas."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0504": {
+  "conceito": "O'Driscoll descreveu um conjunto de princípios biomecânicos para orientar a fixação com placas da fratura distal do úmero, buscando maximizar a estabilidade da construção mesmo em fragmentos distais pequenos e osso por vezes osteoporótico. Entre os princípios mais citados estão: TODO PARAFUSO DEVE PASSAR POR UMA PLACA (evitando parafusos 'soltos', sem o suporte de uma placa, que teriam pouca resistência isoladamente); AS PLACAS DEVEM SER RESISTENTES O SUFICIENTE PARA NÃO FALHAREM ANTES DA CONSOLIDAÇÃO (a construção precisa sobreviver mecanicamente ao tempo de cicatrização óssea); e CADA PARAFUSO DEVE ALCANÇAR UM FRAGMENTO DO LADO OPOSTO TAMBÉM FIXADO A UMA PLACA — ou seja, os parafusos de uma placa devem, sempre que possível, atravessar e capturar um fragmento que já está fixado pela placa do outro lado, criando uma malha interligada de fixação que reforça mutuamente as duas colunas. Nenhum desses princípios trata do COMPRIMENTO dos parafusos como algo a ser limitado — pelo contrário, a lógica de interdigitação que O'Driscoll preconiza geralmente favorece parafusos tão longos quanto possível, capazes de alcançar e capturar a cortical e o fragmento opostos, e não parafusos deliberadamente curtos.",
+  "correta": "C. 'Os parafusos não devem ser muito longos' não é um dos objetivos propostos por O'Driscoll — pelo contrário, a lógica de interdigitação entre as duas placas geralmente favorece parafusos longos, capazes de alcançar e capturar o fragmento fixado pela placa do lado oposto.",
+  "incorretas": {
+   "A": "Que todo parafuso deva passar por uma placa é, de fato, um dos princípios explicitamente propostos por O'Driscoll.",
+   "B": "Que as placas devam ser resistentes o suficiente para não falharem antes da consolidação também é um princípio explicitamente descrito por O'Driscoll.",
+   "D": "Que cada parafuso deva alcançar um fragmento do lado oposto também fixado a uma placa é justamente o princípio central da interdigitação que O'Driscoll propôs, criando uma malha de fixação mutuamente reforçada entre as duas colunas."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0507": {
@@ -3816,6 +3960,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0617": {
+  "conceito": "A OSTEOTOMIA DO OLÉCRANO é a via clássica para obter a melhor visualização possível da superfície articular na RAFI de fraturas complexas e intra-articulares da extremidade distal do úmero — mas ela tem uma contraindicação bem estabelecida: quando o plano é a SUBSTITUIÇÃO ARTROPLÁSTICA TOTAL DO COTOVELO, e não a reconstrução da própria articulação. A razão é dupla: primeiro, o espaço que a osteotomia ocuparia para consolidar fica justamente na região onde a haste umeral da prótese será implantada, criando conflito mecânico entre o material de síntese da osteotomia e o componente protético; segundo, mesmo que se resolvesse esse conflito espacial, uma osteotomia do olécrano tem sua própria taxa de complicações (pseudartrose, migração de material), um risco desnecessário quando o objetivo final não é preservar a superfície articular nativa, mas substituí-la. Por isso, quando a artroplastia é a conduta planejada, prefere-se uma via que preserve a continuidade óssea do olécrano — como a via de Bryan-Morrey, que reflete o tríceps sem osteotomizar.",
+  "correta": "C. A indicação de artroplastia total do cotovelo contraindica a osteotomia do olécrano: o espaço da osteotomia conflita com a haste protética, e a via preferida nesse cenário preserva o olécrano íntegro, refletindo o tríceps.",
+  "incorretas": {
+   "A": "Fraturas muito posteriores da tróclea tendem a se beneficiar da ampla visualização articular que a osteotomia do olécrano proporciona — isso é mais uma indicação do que uma contraindicação para essa via.",
+   "B": "Infecção prévia não é a contraindicação classicamente associada à osteotomia do olécrano nesse contexto — a contraindicação mais específica e mais citada é o planejamento de artroplastia total do cotovelo.",
+   "D": "A osteossíntese com placas paralelas costuma se beneficiar, e não se contrapor, da ampla visualização articular que a osteotomia do olécrano proporciona para fraturas intra-articulares complexas."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0618": {
   "conceito": "O compartimento ANTERIOR da perna é o mais vulnerável ao aumento de pressão, e há dois grupos de razões — anatômicas e metabólicas — que se somam. As anatômicas são as mais lembradas: ele é o menor e o mais rígido dos quatro compartimentos, delimitado pela tíbia medialmente, pela fíbula lateralmente, pela membrana interóssea posteriormente e por uma fáscia densa e pouco distensível anteriormente, formando uma caixa praticamente inextensível; e é ele que recebe diretamente o hematoma da fratura diafisária da tíbia. A razão METABÓLICA é a que a questão cobra e costuma ser esquecida: a musculatura do compartimento anterior — o tibial anterior à frente — é rica em FIBRAS DO TIPO I, as fibras lentas e OXIDATIVAS. São fibras de contração lenta, resistentes à fadiga, ricas em mitocôndrias, em mioglobina e em capilares, e responsáveis pela dorsiflexão sustentada durante toda a fase de balanço da marcha, milhares de vezes por dia. Justamente por dependerem quase inteiramente do metabolismo AERÓBIO, elas são muito mais sensíveis à queda da oferta de oxigênio do que as fibras do tipo II, glicolíticas e capazes de trabalhar em anaerobiose por períodos curtos. O resultado é que, para um mesmo grau de hipertensão compartimental e de redução do fluxo, o músculo do compartimento anterior sofre mais cedo e mais intensamente. Isso ajuda a explicar dois fatos clínicos: a precocidade dos sinais nesse compartimento (a dor ao estiramento passivo dos artelhos aparece antes) e a gravidade da sequela quando a descompressão é tardia — o pé caído por necrose do tibial anterior e a lesão do nervo fibular profundo, que atravessa o mesmo compartimento.",
   "correta": "A. O compartimento anterior é mais vulnerável, entre outros motivos, por apresentar mais FIBRAS DO TIPO I — lentas e oxidativas, dependentes do metabolismo aeróbio e, por isso, muito mais sensíveis à queda da oferta de oxigênio.",
@@ -3957,6 +4112,28 @@
    "D": "O axilar está correto, mas o radial pertence às fraturas diafisárias do úmero, pelo seu trajeto no sulco espiral. Nas fraturas proximais, o segundo nervo mais acometido é o supraescapular."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0649": {
+  "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, as fraturas parciais articulares do úmero distal — fraturas do capítulo e da tróclea por cisalhamento — apresentam distribuição etária BIMODAL, tanto em homens quanto em mulheres. O primeiro pico de incidência ocorre em pacientes JOVENS, por trauma de ALTA ENERGIA, capaz de produzir esse padrão de fratura mesmo num osso saudável e resistente. O segundo pico ocorre em pacientes IDOSOS, por trauma de BAIXA ENERGIA — uma simples queda da própria altura —, viabilizado pela fragilidade do osso osteoporótico típico dessa faixa etária. O fato de esse padrão bimodal aparecer tanto em homens quanto em mulheres reflete que os dois mecanismos de lesão (trauma de alta energia no jovem, fragilidade óssea no idoso) operam de forma semelhante nos dois sexos, ainda que a proporção relativa de cada pico possa variar entre eles conforme a exposição a atividades de risco e a prevalência de osteoporose.",
+  "correta": "C. As fraturas parciais articulares do úmero distal apresentam distribuição bimodal tanto em homens quanto em mulheres — um pico em jovens por trauma de alta energia, outro em idosos por fragilidade óssea.",
+  "incorretas": {
+   "A": "A distribuição não é unimodal em nenhum dos dois sexos — o padrão de dois picos etários (bimodal) está presente tanto em homens quanto em mulheres.",
+   "B": "O padrão bimodal não é exclusivo dos homens — o mesmo padrão de dois picos também é descrito nas mulheres.",
+   "D": "O padrão bimodal também está presente nos homens, e não apenas nas mulheres, como esta alternativa propõe."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0650": {
+  "conceito": "A modificação de McKee à classificação de Bryan e Morrey para as fraturas do capítulo umeral não reescreve os três tipos originais — ela ACRESCENTA um quarto tipo para descrever um padrão que a classificação original não contemplava. Os tipos I a III continuam com suas descrições clássicas: tipo I (Hahn-Steinthal), grande fragmento osteoarticular com osso subcondral substancial; tipo II (Kocher-Lorenz), fragmento fino, quase só cartilaginoso, com pouquíssimo osso subcondral; tipo III (Broberg-Morrey), fratura cominuída, fragmentada em múltiplas peças. A contribuição específica de McKee foi o TIPO IV: a fratura do capítulo que se estende para incluir uma extensão significativa da metade LATERAL da tróclea — um padrão que, sem esse acréscimo, seria classificado de forma incompleta ou forçado a se encaixar num dos três tipos originais, sem capturar corretamente a extensão troclear que muda o planejamento cirúrgico (mais fixação necessária, potencial instabilidade adicional do compartimento medial da articulação).",
+  "correta": "D. O tipo IV, a modificação específica de McKee, descreve a fratura do capítulo com extensão para a metade lateral da tróclea — o padrão que a classificação original de Bryan e Morrey (tipos I a III) não contemplava.",
+  "incorretas": {
+   "A": "A descrição de fratura da superfície articular com osso subcondral corresponde ao tipo I (Hahn-Steinthal), da classificação original, não à modificação específica de McKee.",
+   "B": "A descrição de fratura com fina camada de osso subcondral corresponde ao tipo II (Kocher-Lorenz), também da classificação original.",
+   "C": "A descrição de fraturas cominutas corresponde ao tipo III (Broberg-Morrey), da classificação original — não à modificação específica que McKee acrescentou."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0651": {
@@ -4983,6 +5160,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0812": {
+  "conceito": "Há uma distinção importante entre a complicação mais comum da FRATURA do capítulo em geral (a diminuição de mobilidade articular, discutida em outra questão deste acervo, decorrente da cicatrização da cápsula anterior lesada pelo próprio mecanismo de cisalhamento) e a complicação mais associada especificamente ao TRATAMENTO CIRÚRGICO dessa fratura — que é o que esta questão pergunta. O capítulo umeral tem uma vascularização intrinsecamente PRECÁRIA e predominantemente RETRÓGRADA, entrando pela sua face posterior através de ramos que correm dentro do complexo do ligamento colateral lateral e da origem dos extensores — um suprimento já limitado mesmo antes de qualquer intervenção. A manipulação cirúrgica necessária para reduzir e fixar (ou, em fragmentos pequenos e inviáveis, excisar) o fragmento do capítulo pode comprometer ainda mais essa vascularização já escassa, sobretudo em fraturas mais cominuídas (tipo III de Broberg-Morrey) ou nos fragmentos finos com pouco osso subcondral (tipo II de Kocher-Lorenz), que dependem quase inteiramente da perfusão pelos tecidos moles remanescentes. Por isso, a NECROSE AVASCULAR do fragmento fixado é reconhecida como a complicação mais associada especificamente ao tratamento dessa fratura — diferente da limitação de mobilidade, que reflete mais a lesão capsular inicial do que a intervenção cirúrgica em si.",
+  "correta": "B. A necrose avascular do fragmento fixado é a complicação mais associada ao tratamento cirúrgico da fratura do capítulo, pela vascularização já precária e retrógrada dessa região, que a manipulação operatória pode comprometer ainda mais.",
+  "incorretas": {
+   "A": "A pseudartrose não é a complicação mais associada ao tratamento dessa fratura — quando a fixação é estável, a consolidação costuma ocorrer, sendo a viabilidade vascular do fragmento, e não a união óssea em si, o maior risco.",
+   "C": "A limitação de mobilidade articular é a complicação mais associada à fratura do capítulo em geral (pela cicatrização capsular do próprio trauma), mas não é a mais especificamente ligada ao tratamento cirúrgico, que é o que esta questão pergunta.",
+   "D": "A instabilidade articular não é a complicação mais reconhecida do tratamento dessa fratura isolada, sem lesão ligamentar associada relevante."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0813": {
   "conceito": "A classificação de SEINSHEIMER organiza as fraturas SUBTROCANTÉRICAS pelo NÚMERO DE FRAGMENTOS e pela localização e configuração do traço, e é a mais detalhada delas. TIPO I: fratura sem desvio ou com desvio menor que 2 mm, qualquer que seja a configuração. TIPO II: fratura em DUAS partes — IIA, traço transverso; IIB, traço espiral com o TROCANTER MENOR no fragmento PROXIMAL; IIC, traço espiral com o trocanter menor no fragmento DISTAL. TIPO III: fratura em TRÊS partes — IIIA, com o trocanter menor como terceiro fragmento (o padrão mais instável dos três partes, por perda do apoio medial); IIIB, com um fragmento em ASA DE BORBOLETA na cortical lateral. TIPO IV: fratura COMINUÍDA, com QUATRO OU MAIS FRAGMENTOS — o padrão de maior instabilidade e de maior dificuldade técnica, em que a perda do apoio medial é a regra e a montagem precisa funcionar em ponte. TIPO V: fratura subtrocantérica com EXTENSÃO INTERTROCANTÉRICA, que exige um implante capaz de controlar também o fragmento cefálico. A utilidade prática da classificação é prever a estabilidade: quanto maior a cominuição e quanto mais comprometido o apoio da cortical MEDIAL (o calcar), maior a solicitação sobre o implante e maior o risco de colapso em VARO e de falha por fadiga. Nos tipos IV e V, portanto, a HASTE CEFALOMEDULAR longa é francamente preferida às placas, por ser dispositivo de carga compartilhada no eixo mecânico — e a redução, obtida antes da introdução da haste, vencendo a flexão, abdução e rotação lateral do fragmento proximal, continua sendo o passo que mais determina o resultado.",
   "correta": "D. A fratura subtrocantérica com MAIS DE QUATRO FRAGMENTOS é o TIPO IV de Seinsheimer — a cominuída, de maior instabilidade, com perda do apoio medial e alto risco de colapso em varo se a montagem não for adequada.",
@@ -5438,6 +5626,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0878": {
+  "conceito": "A fratura supracondiliana do úmero no adulto pode ocorrer por dois mecanismos opostos, cada um com um padrão de lesão nervosa característico. No mecanismo mais comum, em EXTENSÃO (queda sobre a mão espalmada com o cotovelo em extensão), o fragmento distal se desloca posteriormente, e os nervos mais expostos ao estiramento são o mediano (e seu ramo interósseo anterior) e, dependendo do sentido do desvio, o radial. Já no mecanismo em FLEXÃO — bem menos comum, tipicamente uma queda direta sobre o cotovelo já fletido —, o fragmento distal se desloca ANTERIORMENTE em relação ao proximal, e é o NERVO ULNAR que fica mais exposto ao estiramento: seu trajeto posteromedial, colado ao epicôndilo medial, é diretamente tracionado pelo deslocamento anterior do fragmento distal nesse padrão específico. Reconhecer essa diferença — extensão associa-se mais a mediano/radial, flexão associa-se mais a ulnar — é o que permite direcionar o exame neurológico e antecipar a lesão mais provável a partir apenas da radiografia inicial, antes mesmo de examinar o paciente.",
+  "correta": "A. No mecanismo em flexão, o deslocamento anterior do fragmento distal traciona diretamente o nervo ulnar, cujo trajeto posteromedial, colado ao epicôndilo medial, fica mais exposto a esse padrão específico de deslocamento.",
+  "incorretas": {
+   "B": "O nervo radial está mais associado ao mecanismo em extensão, dependendo do sentido do desvio do fragmento distal, não ao mecanismo em flexão.",
+   "C": "O nervo mediano (e seu ramo interósseo anterior) está mais associado ao mecanismo em extensão, o mais comum, não ao mecanismo em flexão descrito na questão.",
+   "D": "O nervo cutâneo lateral do antebraço não é o nervo classicamente associado a nenhum dos dois mecanismos de fratura supracondiliana no adulto."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0879": {
   "conceito": "A leitura do código da classificação de MAYO resolve a questão antes de qualquer discussão técnica. O ALGARISMO indica desvio e estabilidade: tipo I, sem desvio; tipo II, DESVIADA com articulação umeroulnar ESTÁVEL; tipo III, desviada e INSTÁVEL (fratura-luxação). A LETRA indica cominuição: A, sem; B, COM. Portanto, o tipo 2B é uma fratura DESVIADA, ESTÁVEL e COMINUTIVA — e é a cominuição que decide o implante. A BANDA DE TENSÃO funciona por um princípio elegante mas frágil: ela converte a força de TRAÇÃO do tríceps em COMPRESSÃO no foco, o que só é possível se houver um traço TRANSVERSO com a cortical ANTERIOR ÍNTEGRA servindo de apoio. Aplicada a um foco cominutivo, o efeito se inverte: sem apoio anterior, a compressão gerada pelo tríceps ENCURTA o olécrano, colapsa a incisura troclear e produz incongruência articular definitiva, com perda de arco e artrose precoce. É um erro de indicação, não de técnica, e é irrecuperável. Por isso, o tipo 2B exige PLACA E PARAFUSOS — de preferência uma placa anatômica pré-moldada para a ulna proximal, aplicada na face DORSAL contornando a ponta do olécrano, que sustenta a redução em ponte sobre a zona cominutiva e permite parafusos longos dirigidos ao coronoide quando necessário. Complete o quadro de decisão: tipo IA e IB, conservador com imobilização breve e mobilização precoce; tipo IIA (transverso, sem cominuição), banda de tensão; tipo IIB, placa; tipos IIIA e IIIB, placa, bloqueada e anatômica no IIIB, com reconstrução do coronoide quando presente. E lembre-se da complicação mais comum de toda a região, que independe do método: a PROEMINÊNCIA SINTOMÁTICA DO MATERIAL sob a pele fina do olécrano, que leva à retirada de material em uma parcela expressiva dos pacientes.",
   "correta": "D. O tipo 2B é desviado, estável e COMINUTIVO — e a cominuição contraindica a banda de tensão, exigindo PLACA E PARAFUSOS, que sustenta a redução em ponte sobre a zona cominutiva sem depender de apoio cortical.",
@@ -5615,6 +5814,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0903": {
+  "conceito": "A reconstrução anatômica das colunas medial e lateral é o pilar da fixação cirúrgica bem-sucedida da fratura distal do úmero, e para isso o cirurgião precisa reproduzir a divergência natural que essas colunas fazem em relação ao eixo longitudinal da diáfise, no plano coronal — um detalhe que orienta, inclusive, a pré-moldagem das placas anatômicas usadas na fixação. A COLUNA LATERAL diverge do eixo diafisário em cerca de 20 GRAUS, enquanto a COLUNA MEDIAL diverge em um ângulo maior, de aproximadamente 45 GRAUS — refletindo a própria geometria trapezoidal do úmero distal, que se alarga de forma assimétrica entre as duas colunas ao se aproximar da superfície articular. Uma placa contornada com o ângulo errado, ou uma redução que não respeite essa divergência assimétrica, produz desvio residual em varo ou valgo mesmo com uma fixação tecnicamente estável — por isso esses dois valores (20° lateral, 45° medial) são um dos detalhes técnicos mais lembrados na preparação para a cirurgia dessa fratura.",
+  "correta": "A. A coluna lateral diverge do eixo diafisário em cerca de 20 graus, e a coluna medial diverge em cerca de 45 graus — a assimetria que orienta a pré-moldagem das placas usadas na reconstrução anatômica dessa fratura.",
+  "incorretas": {
+   "B": "Os valores estão invertidos: é a coluna lateral que diverge menos (cerca de 20°), e a medial que diverge mais (cerca de 45°), não o contrário.",
+   "C": "Os valores 15° e 35° não correspondem aos ângulos de divergência classicamente descritos para as colunas lateral e medial do úmero distal.",
+   "D": "Além de os valores não corresponderem aos classicamente descritos, a ordem também estaria invertida em relação ao padrão real (lateral menor, medial maior)."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0904": {
   "conceito": "Fraturas do quarto distal da diáfise tibial — em geral de traço espiral, por mecanismo de torção — têm uma associação bem documentada e frequentemente subestimada na radiografia simples: a fratura ASSOCIADA DO MALÉOLO POSTERIOR, com um padrão específico de traço CORONAL (ou seja, no plano frontal, dividindo o maléolo posterior numa porção anterior e outra posterior, em vez do padrão sagital mais comumente lembrado das fraturas trimaleolares clássicas). Esse fragmento posterior, de padrão coronal, tende a ser SUBDIAGNOSTICADO nas radiografias convencionais porque sua orientação no plano coronal o torna de difícil visualização nas incidências padrão de tornozelo, e é a TOMOGRAFIA COMPUTADORIZADA que revela sua presença e sua real extensão com muito mais frequência e precisão. Esse achado tem implicação prática direta: quando presente, o fragmento coronal do maléolo posterior compromete a superfície articular da tíbia distal e pode exigir fixação específica, além da própria fratura diafisária — deixar de reconhecê-lo por depender só da radiografia simples é um erro que compromete o planejamento cirúrgico.",
   "correta": "D. Fraturas espirais do quarto distal da tíbia associam-se, com frequência subestimada na radiografia simples, a um fragmento do maléolo posterior de padrão coronal — achado revelado com muito mais precisão pela tomografia computadorizada.",
@@ -5757,6 +5967,17 @@
    "D": "A região 4 corresponde à diáfise MÉDIA E DISTAL, além da ponta do implante. É a topografia de maior risco de instabilidade da haste e de lesão do nervo radial no acesso."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0927": {
+  "conceito": "As fraturas parciais articulares do úmero distal — que incluem as fraturas do capítulo e da tróclea por cisalhamento — têm uma distribuição etária característica: BIMODAL, tanto em homens quanto em mulheres. Isso significa que existem dois picos de incidência claramente distintos, e não um único grupo etário concentrando a maioria dos casos. O primeiro pico ocorre em pacientes mais JOVENS, tipicamente por trauma de ALTA ENERGIA (acidentes esportivos, quedas de altura, colisões), em que a força do impacto é suficiente para produzir esse padrão de fratura mesmo em osso saudável e denso. O segundo pico ocorre em pacientes mais IDOSOS, por trauma de BAIXA ENERGIA (queda da própria altura), viabilizado pela fragilidade do osso osteoporótico, que se fratura sob cargas muito menores do que as necessárias no jovem. Esse padrão bimodal — presente nos dois sexos, e não restrito a um deles — reflete a coexistência de dois mecanismos de lesão completamente diferentes (alta energia no jovem, fragilidade óssea no idoso) convergindo para o mesmo tipo de fratura articular.",
+  "correta": "C. As fraturas parciais articulares do úmero distal apresentam distribuição etária bimodal tanto em homens quanto em mulheres — um pico em jovens por trauma de alta energia, outro em idosos por fragilidade óssea.",
+  "incorretas": {
+   "A": "A distribuição não é unimodal em nenhum dos dois sexos — o padrão bimodal, com dois picos etários distintos, está presente tanto em homens quanto em mulheres.",
+   "B": "A distribuição bimodal não é exclusiva dos homens — o mesmo padrão de dois picos etários também é descrito nas mulheres.",
+   "D": "A distribuição bimodal também está presente nos homens, não sendo exclusiva das mulheres, como esta alternativa propõe."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0928": {
@@ -5990,6 +6211,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0968": {
+  "conceito": "A pseudartrose (não consolidação) da extremidade distal do úmero no adulto tem uma localização típica bem reconhecida: a região SUPRACONDILAR — a zona metafisária logo acima dos côndilos, onde as duas colunas (medial e lateral) convergem para formar a porção mais estreita do úmero distal antes de se alargarem novamente na superfície articular. Essa região concentra um desafio biomecânico particular: é onde a fixação precisa unir com segurança duas colunas relativamente finas de osso metafisário, muitas vezes numa fratura cominuída, e onde as forças de flexão e torção do cotovelo se concentram durante a reabilitação precoce que se busca nessa articulação (ao contrário de outras fraturas, em que a imobilização prolongada é mais tolerada, o cotovelo tende a enrijecer rapidamente, o que empurra o tratamento para a mobilização precoce mesmo à custa de alguma sobrecarga mecânica no foco ainda em consolidação). Fraturas puramente condilares, articulares ou infracondilares específicas existem, mas é a localização supracondilar que concentra a maior parte dos casos de não consolidação relatados nas séries de fratura distal do úmero no adulto.",
+  "correta": "D. A localização típica da pseudartrose da extremidade distal do úmero no adulto é a região supracondilar, onde a fixação precisa unir colunas relativamente finas de osso metafisário sob a exigência de mobilização precoce do cotovelo.",
+  "incorretas": {
+   "A": "A localização condilar não é a mais tipicamente associada à não consolidação nessa fratura — essa posição pertence à região supracondilar.",
+   "B": "A localização puramente articular também não é a mais associada a essa complicação, que se concentra tipicamente na região metafisária supracondilar.",
+   "C": "A localização infracondilar não é a mais reconhecida para a pseudartrose dessa fratura, que se concentra na região supracondilar, mais proximal."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0971": {
   "conceito": "A decisão de fixar ou não um coronoide REGAN-MORREY TIPO II — fragmento que compreende até 50% da altura do processo — não se resolve pela medida isolada, e essa é justamente a limitação reconhecida dessa classificação: a altura do fragmento no perfil não prediz instabilidade. O que decide é a FUNÇÃO que aquele coronoide ainda exerce, e isso se testa na mesa. Para entender qual teste faz sentido, é preciso lembrar a biomecânica quantificada por Morrey e An: em VARO, a estabilidade depende esmagadoramente da ARTICULAÇÃO ULNOUMERAL — cerca de 55% em extensão e até 75% aos 90 graus de flexão —, contra apenas 14% e 9% do complexo colateral lateral nas mesmas posições. E a articulação ulnoumeral é, na prática, o CORONOIDE encaixado à frente e o olécrano atrás dentro da incisura troclear. Portanto, é o ESTRESSE EM VARO, aplicado sob visão fluoroscópica, que interroga diretamente a competência do anteparo coronoideo: se a articulação se abre medialmente ou se a ulna desliza sob a tróclea, o coronoide não está mais cumprindo o seu papel e precisa ser fixado. Compare com o que os outros testes avaliam, e a lógica fica clara: o estresse em VALGO interroga o feixe anterior do ligamento colateral MEDIAL (54% da estabilidade em valgo aos 90 graus); o PIVOT-SHIFT lateral interroga o ligamento colateral ULNAR LATERAL e a instabilidade rotatória posterolateral; e a gaveta posterior não é um teste padronizado do cotovelo. Vale acrescentar que o teste é feito ao final de cada etapa da reconstrução, e não uma única vez — é o princípio que transformou o prognóstico das fraturas-luxações do cotovelo: reparar, testar, e só então decidir o passo seguinte.",
   "correta": "C. O ESTRESSE EM VARO é a manobra que auxilia na indicação: em varo, a estabilidade depende sobretudo da articulação ulnoumeral — isto é, do coronoide encaixado na incisura troclear —, de modo que a abertura articular sob esse estresse denuncia um anteparo incompetente e indica a fixação.",
@@ -6065,6 +6297,17 @@
    "D": "Erra as duas informações: nem o lateral é o compartimento mais acometido, nem o posterior é o local de escolha para o cateter. A monitorização vai no compartimento de maior risco, o anterior."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0987": {
+  "conceito": "Assim como em outra questão deste acervo sobre a mesma classificação, a fratura COMINUTIVA GRAVE e MULTIFRAGMENTAR do capítulo umeral corresponde ao tipo III da classificação de Bryan e Morrey, com a modificação de McKee — eponimamente chamado de BROBERG-MORREY. Na sequência completa da classificação: o tipo I (Hahn-Steinthal) é um grande fragmento osteoarticular único, com osso subcondral substancial; o tipo II (Kocher-Lorenz) é um fragmento fino, quase só cartilaginoso, com muito pouco osso subcondral; o tipo III (Broberg-Morrey) é justamente a fratura cominuída, fragmentada em múltiplos pedaços pequenos — o padrão mais complexo entre os três tipos originais, tanto pela dificuldade técnica de reconstrução quanto pelo pior prognóstico articular; e o tipo IV (modificação de McKee) descreve a extensão do traço para envolver parte substancial da tróclea, independentemente do grau de cominuição do capítulo em si.",
+  "correta": "C. A fratura cominutiva grave e multifragmentar do capítulo corresponde ao tipo III, eponimamente chamado de Broberg-Morrey — o padrão mais fragmentado entre os tipos originais da classificação.",
+  "incorretas": {
+   "A": "O tipo I (Hahn-Steinthal) descreve um grande fragmento único, não uma fratura cominuída e multifragmentar.",
+   "B": "O tipo II (Kocher-Lorenz) descreve um fragmento fino e cartilaginoso, também não caracterizado pela cominuição extensa do tipo III.",
+   "D": "A modificação de McKee (tipo IV) define-se pela extensão do traço para a tróclea, não pelo grau de cominuição do capítulo, que é o critério do tipo III."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0989": {
