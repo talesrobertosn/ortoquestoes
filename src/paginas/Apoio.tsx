@@ -6,11 +6,9 @@ import { useMemo, useState } from 'react'
 import { SITE, recurso } from '../config'
 import { href } from '../util/rotas'
 import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
-import { armazenamentoDisponivel, gravar, limparTudo, tamanhoArmazenado } from '../estado/armazenamento'
+import { armazenamentoDisponivel, tamanhoArmazenado } from '../estado/armazenamento'
 import { type ResumoHistorico, usarFavoritos } from '../estado/sessao'
 import { usarIndice } from '../dados/usarIndice'
-import { supabase } from '../conta/supabase'
-import { estadoVazio } from '../conta/modeloSync'
 
 export function Sobre() {
   return (
@@ -194,11 +192,12 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
 export function DadosLocais() {
   const { favoritos } = usarFavoritos()
   const { indice } = usarIndice()
-  const { sessao: conta, status: statusSync, sincronizar } = usarConta()
+  const { sessao: conta, status: statusSync, sincronizar, reiniciarProgresso } = usarConta()
   const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
   const [marcadas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
   const respondidas = Object.keys(marcadas).length
   const [apagado, definirApagado] = useState(false)
+  const [reinicioPendente] = usarArmazenado<string | null>('reinicio:pendente', null)
   const bytes = tamanhoArmazenado()
 
   // Desempenho acumulado por tema: cruza as questões já respondidas neste
@@ -361,29 +360,24 @@ export function DadosLocais() {
 
       <BackupProgresso />
 
-      {conta && <><h2>Apagar tudo</h2>
-      <p>Apaga favoritas, histórico de sessões, questões respondidas, revisões, anotações e a sessão em andamento desta conta. A exclusão também será sincronizada com seus outros dispositivos. Exporte um backup antes se quiser guardar uma cópia. Não afeta o acervo.</p>
+      {conta && <><h2>Começar do zero</h2>
+      <p>Zera respostas, revisões, favoritas, anotações, histórico e sessão em andamento. Sua conta e preferências são mantidas. Os registros anteriores ficam fora do progresso ativo, sem exclusão definitiva do banco. Exporte um backup antes se quiser guardar uma cópia.</p>
       <div className="linha">
         <button
           type="button"
           className="botao"
-          onClick={async () => {
-            if (window.confirm(conta ? 'Apagar o progresso desta conta? A exclusão de respostas, notas, favoritas e histórico também será sincronizada com os outros dispositivos.' : 'Apagar todos os dados de visitante do OrtoQuestões neste navegador?')) {
-              if (conta && supabase) {
-                let { error } = await supabase.rpc('apagar_progresso_conta')
-                // Compatibilidade com projetos que ainda têm apenas a função antiga.
-                if (error) { const legado = await supabase.rpc('apagar_progresso'); error = legado.error }
-                if (error) { window.alert('Não foi possível apagar o progresso da conta. Tente novamente com conexão.'); return }
-                limparTudo('nuvem')
-                gravar('sincronia:v1', estadoVazio(), 'nuvem')
-              } else limparTudo('nuvem')
+          disabled={!!reinicioPendente}
+          onClick={() => {
+            if (window.confirm('Começar do zero nesta conta? Respostas, revisões, favoritas, anotações e histórico deixarão de contar. O reinício será sincronizado com seus outros dispositivos.')) {
+              reiniciarProgresso()
               definirApagado(true)
             }
           }}
         >
-          Apagar meu progresso da conta
+          {reinicioPendente ? 'Sincronizando reinício…' : 'Zerar meu progresso'}
         </button>
-        {apagado && <span className="meta">Apagado. Recarregue a página para ver o site zerado.</span>}
+        {(apagado || reinicioPendente) && <span className="meta" role="status">{reinicioPendente ? 'Progresso zerado neste navegador. O reinício na conta está pendente de sincronização; você já pode estudar.' : 'Reinício sincronizado. Seu novo progresso já está valendo.'}</span>}
+        {reinicioPendente && <button type="button" className="botao" onClick={sincronizar}>Tentar sincronizar agora</button>}
       </div></>}
     </article>
   )
