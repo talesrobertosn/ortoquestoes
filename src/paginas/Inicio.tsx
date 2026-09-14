@@ -10,7 +10,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
-import { planoRevisao, rotuloDia } from '../estado/planoRevisao'
+import { planoRevisao } from '../estado/planoRevisao'
 
 const VARIACOES_INICIO = [
   { saudacao: 'A constância de hoje vira segurança na prova.', rotina: 'Um pouco de prática, todos os dias', explicacao: 'Errou? Revise agora. Acertou? Volte em 3, 7, 14 e 30 dias. Quatro acertos espaçados marcam a questão como dominada.', acao: 'Começar um treino de 10 questões', revisar: 'Retome o que precisa fixar', novas: 'Avance no acervo' },
@@ -203,10 +203,6 @@ export function Inicio() {
             <p>{temaFragil[1].pendentes > 0 ? `${temaFragil[1].pendentes} revisões desse tema estão programadas.` : 'Faça uma sessão curta para transformar este ponto em segurança.'}</p>
             <a className="botao botao--principal" href={href(`/treinar?temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema</a>
           </section>}
-          {revisoesPlanejadas.size > 0 && <section className="cartao cartao__corpo">
-            <p className="meta">PRÓXIMOS SETE DIAS</p><h2>Prévia da sua carga de revisão</h2>
-            <div className="linha linha--empilha-celular" style={{ marginTop: '0.75rem' }}>{[...revisoesPlanejadas.values()].slice(0, 7).map(dia => <a className="botao" key={dia.chave} href={href('/revisao')}><strong>{rotuloDia(dia.inicio)}</strong> · {dia.ids.length} {dia.ids.length === 1 ? 'questão' : 'questões'}{dia.atrasadas > 0 ? ' · atrasadas' : ''}</a>)}</div>
-          </section>}
           {!conta && <section className="cartao cartao__corpo convite-conta">
             <p className="meta">COMECE SEM CADASTRO</p>
             <h2>Seu progresso já fica salvo neste navegador</h2>
@@ -214,18 +210,6 @@ export function Inicio() {
             <a className="botao botao--principal" href={href('/conta')}>Criar minha conta</a>
             {indice.questoes.find(questao => questao.c === 1) && <a className="botao" href={href(`/questao/${indice.questoes.find(questao => questao.c === 1)!.id}`)}>Ver um comentário de exemplo</a>}
           </section>}
-          <div className="linha linha--empilha-celular">
-            <a className="botao botao--grande" href={href('/treinar')}>
-              Montar uma sessão com filtros
-            </a>
-            {sessaoEmAndamento && (
-              <a className="botao botao--grande" href={href('/sessao')}>
-                Retomar a última sessão
-              </a>
-            )}
-            <a className="botao botao--grande" href={href('/favoritas')}>Ver questões favoritas</a>
-          </div>
-
           {resumoSemana.respondidas > 0 && <section className="cartao cartao__corpo">
             <p className="meta">SUA SEMANA</p>
             <h2>{resumoSemana.respondidas} questões em {resumoSemana.dias} {resumoSemana.dias === 1 ? 'dia ativo' : 'dias ativos'}</h2>
