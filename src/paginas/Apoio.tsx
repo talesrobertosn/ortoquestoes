@@ -305,7 +305,7 @@ export function DadosLocais() {
 
       {(porConfianca.seguro.total > 0 || porConfianca.duvida.total > 0 || porConfianca.chute.total > 0) && <section>
         <h2>Acerto por confiança</h2>
-        <p className="texto-2" style={{ marginTop: '0.25rem' }}>Mostra se sua sensação ao responder acompanha o resultado. Use isso para identificar quando vale revisar mesmo depois de acertar.</p>
+        <p className="texto-2" style={{ marginTop: '0.25rem' }}>Mostra se sua sensação ao responder acompanha o resultado. Use isso para identificar quando vale revisar mesmo depois de acertar. Cada faixa também tem um ciclo próprio: chute volta em 1 dia, dúvida em 2, certeza em 3 — <a href={href('/revisao')}>veja a escada completa</a>.</p>
         <div className="numeros" style={{ marginTop: '0.75rem' }}>
           {([['seguro', 'Quando tinha certeza'], ['duvida', 'Quando tinha dúvida'], ['chute', 'Quando foi chute']] as const).map(([tipo, rotulo]) => {
             const grupo = porConfianca[tipo]

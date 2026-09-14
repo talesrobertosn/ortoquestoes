@@ -213,8 +213,8 @@ export function Sessao() {
           riscadas={sessao.riscadas[questaoAtual.id] ?? []}
           favorita={favoritos.includes(questaoAtual.id)}
           marcadaRevisao={sessao.revisar.includes(questaoAtual.id)}
-          aoResponder={(letra, correta, segundos) =>
-            responder(questaoAtual.id, letra, correta, segundos)
+          aoResponder={(letra, correta, segundos, confianca) =>
+            responder(questaoAtual.id, letra, correta, segundos, confianca)
           }
           aoRiscar={(letra) => alternarRiscada(questaoAtual.id, letra)}
           aoFavoritar={() => alternarFavorito(questaoAtual.id)}

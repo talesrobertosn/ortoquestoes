@@ -1842,3 +1842,54 @@ kbd {
 .pagina--foco .alternativas { max-width: 72ch; }
 @media (max-width: 30rem) { .cabecalho__nav { gap: .2rem; } .cabecalho__nav .nav-link { padding-inline: .4rem; } }
 
+
+/* ---------- Escada de revisão (página de revisão) ----------------------- */
+
+/* Os degraus mostram, em dias, quando a questão volta. Três linhas lado a
+   lado deixam a comparação imediata: chute volta amanhã, certeza volta em
+   três dias. */
+.escada {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.escada__linha {
+  border: var(--borda);
+  border-radius: var(--raio);
+  padding: 0.75rem 0.9rem;
+  background: var(--superficie-2);
+}
+.escada__topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+}
+.escada__topo strong {
+  min-width: 11ch;
+}
+.escada__degraus {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.escada__degraus em {
+  font-style: normal;
+  font-family: var(--fonte-dados);
+  font-size: var(--meta);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--raio-pequeno);
+  background: var(--verdete-veu);
+  color: var(--verdete);
+  font-weight: 600;
+}
+.escada__linha small {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--texto-2);
+  font-size: var(--corpo-menor);
+}
+.escada__regra {
+  font-size: var(--corpo-menor);
+  color: var(--texto-2);
+}

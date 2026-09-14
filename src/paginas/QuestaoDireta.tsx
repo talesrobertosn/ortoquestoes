@@ -60,9 +60,9 @@ export function QuestaoDireta({ id }: { id: string }) {
         riscadas={riscadas}
         favorita={favoritos.includes(questao.id)}
         marcadaRevisao={false}
-        aoResponder={(escolhida, correta, segundos) => {
-          definirResposta({ escolhida, correta, segundos })
-          registrarResposta(questao.id, correta)
+        aoResponder={(escolhida, correta, segundos, confianca) => {
+          definirResposta({ escolhida, correta, segundos, confianca })
+          registrarResposta(questao.id, correta, confianca)
         }}
         aoRiscar={(letra) =>
           definirRiscadas((atuais) =>

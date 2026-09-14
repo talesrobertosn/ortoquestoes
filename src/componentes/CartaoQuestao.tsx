@@ -21,7 +21,10 @@ interface Props {
   riscadas: Letra[]
   favorita: boolean
   marcadaRevisao: boolean
-  aoResponder: (letra: Letra, correta: boolean | null, segundos: number, confianca?: 'seguro' | 'duvida' | 'chute') => void
+  // A confiança é obrigatória de propósito: quando era opcional, os dois
+  // pontos de chamada esqueceram de repassá-la e toda resposta virava
+  // "seguro" no silêncio do valor padrão. O compilador agora cobra.
+  aoResponder: (letra: Letra, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute') => void
   aoRiscar: (letra: Letra) => void
   aoFavoritar: () => void
   aoRevisar: () => void
