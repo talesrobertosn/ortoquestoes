@@ -844,6 +844,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0100": {
+  "conceito": "O SINAL DE GREY TURNER — a equimose que aparece na região dos FLANCOS, geralmente de 24 a 48 horas após o evento causador — foi descrito originalmente no contexto da pancreatite hemorrágica, mas seu significado fisiopatológico é mais amplo: ele indica a presença de sangue dissecando o espaço RETROPERITONEAL e migrando por planos fasciais até atingir o tecido subcutâneo do flanco, tornando-se visível como equimose. Nas lesões do anel pélvico, esse mesmo mecanismo se aplica: uma HEMORRAGIA RETROPERITONEAL originada do plexo venoso pré-sacral, de uma artéria pélvica lesada, ou de uma fratura óssea sangrante, pode se acumular no espaço retroperitoneal e, com tempo suficiente, dissecar até o flanco, produzindo o mesmo sinal clínico independentemente da causa retroperitoneal de base. Reconhecer o Grey Turner num paciente com fratura pélvica é, portanto, um sinal de alerta para hemorragia retroperitoneal significativa, e não um achado específico de uma estrutura anatômica isolada — diferente de sinais como o de Destot ou o de Earle, mais associados a uma topografia específica de sangramento.",
+  "correta": "B. O sinal de Grey Turner — equimose nos flancos — indica hemorragia retroperitoneal, refletindo a dissecção de sangue por planos fasciais até o tecido subcutâneo, independentemente da causa retroperitoneal específica.",
+  "incorretas": {
+   "A": "A fratura dos ramos púbicos é um achado estrutural da própria fratura pélvica, não o que o sinal de Grey Turner indica, que é hemorragia retroperitoneal.",
+   "C": "A síndrome de Morel-Lavallée é uma lesão de descolamento de partes moles por cisalhamento, com apresentação clínica e mecanismo distintos do sinal de Grey Turner.",
+   "D": "A lesão do trato geniturinário tem sinais próprios (hematúria, sangue no meato uretral), distintos do sinal de Grey Turner, que indica hemorragia retroperitoneal."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0101": {
   "conceito": "A fratura do COLO DO FÊMUR é, no adulto, sobretudo uma FRATURA POR FRAGILIDADE, e o seu perfil epidemiológico é o da OSTEOPOROSE. Predomina de forma marcante no SEXO FEMININO, com razão de cerca de 2 a 3 mulheres para cada homem, e a incidência dobra a cada década a partir dos 50 anos. Entre os grupos raciais, a incidência é mais alta em mulheres BRANCAS (e também em asiáticas), e significativamente mais baixa em mulheres NEGRAS — diferença atribuída a maior densidade mineral óssea de pico, maior massa muscular e geometria femoral distinta (colo mais curto, o que reduz o braço de alavanca). E o BAIXO ÍNDICE DE MASSA CORPÓREA é fator de risco independente e consistente: um IMC ABAIXO DE 18,5 (abaixo do peso) se associa a maior risco por três caminhos somados — menor massa óssea (menor carga mecânica sobre o esqueleto e menor conversão periférica de andrógenos em estrogênio no tecido adiposo), menor massa muscular com pior equilíbrio e maior propensão a quedas, e menor 'almofada' de partes moles sobre o trocanter para absorver o impacto da queda lateral. Os demais fatores de risco a conhecer são a idade avançada, o antecedente de fratura por fragilidade, o tabagismo, o etilismo, o uso de corticoide, a deficiência de vitamina D, a demência e o uso de medicamentos sedativos ou que causem hipotensão postural. A consequência prática é a mais importante do tema: a fratura do quadril no idoso é um EVENTO SENTINELA de altíssima mortalidade — em torno de 20% a 30% no primeiro ano —, e o tratamento não termina na cirurgia: exige investigação e tratamento da osteoporose e avaliação do risco de quedas, sob pena de o paciente voltar com a fratura contralateral.",
   "correta": "D. A fratura do colo do fêmur é mais frequente em mulheres BRANCAS com ÍNDICE DE MASSA CORPÓREA MENOR QUE 18,5 — perfil que combina menor densidade mineral óssea, menor massa muscular e menos tecido mole para amortecer a queda lateral.",
@@ -941,6 +952,17 @@
    "D": "Existem vasos entrando pela tuberosidade palmar, mas eles suprem apenas de 20% a 30% do osso, e só o polo distal. Não é por eles que chega o sangue do polo proximal — se fosse, a fratura proximal não teria o prognóstico que tem."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0111": {
+  "conceito": "No manejo emergencial da lesão INSTÁVEL do anel pélvico, a escolha do dispositivo de estabilização depende de qual componente do anel — anterior ou posterior — está mais comprometido. Para a instabilidade POSTERIOR especificamente (disrupção da articulação sacroilíaca ou fratura do sacro com desvio), o CLAMPE PÉLVICO ('C-clamp') é o dispositivo mais indicado: ele é posicionado com as hastes fixadas diretamente sobre o ilíaco, próximo à região posterior, e aplica uma força de COMPRESSÃO direta sobre os elementos posteriores do anel — exatamente onde a instabilidade e o sangramento venoso pré-sacral se concentram. Já os fixadores externos ANTERIORES (supra-acetabular ou na crista ilíaca) são mais eficazes para controlar a ABERTURA anterior do anel (diástase da sínfise, rotação externa da hemipelve) e para reduzir o volume pélvico como um todo, mas têm ação mais limitada sobre a instabilidade posterior isolada, que exige a compressão direta que apenas o C-clamp proporciona.",
+  "correta": "C. O clampe pélvico (C-clamp), por comprimir diretamente os elementos posteriores do anel, é o dispositivo mais indicado para tratar a instabilidade posterior na abordagem emergencial da lesão pélvica.",
+  "incorretas": {
+   "A": "O fixador externo supra-acetabular é mais eficaz para controlar a abertura anterior do anel e reduzir o volume pélvico, com ação mais limitada sobre a instabilidade posterior isolada.",
+   "B": "O fixador externo na crista ilíaca, da mesma forma, atua mais sobre o componente anterior do anel do que sobre a instabilidade posterior especificamente.",
+   "D": "A placa na sínfise púbica é um tratamento definitivo do componente anterior, não uma opção de estabilização emergencial da instabilidade posterior."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0112": {
@@ -1106,6 +1128,17 @@
    "D": "O tipo 4 é a luxação ANTERIOR da cabeça do rádio associada a fratura dos DOIS ossos do antebraço no mesmo nível — o mais raro dos quatro. O que a questão descreve envolve apenas a ulna, o que já o exclui."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0129": {
+  "conceito": "A hemorragia arterial nas lesões do anel pélvico, embora responda pela minoria dos casos de sangramento pélvico (a maioria é venosa, do plexo pré-sacral), pode ser catastrófica quando ocorre — e duas artérias do sistema ILÍACO INTERNO concentram a maior parte do risco: a artéria GLÚTEA SUPERIOR e a artéria PUDENDA (interna). A glútea superior corre próxima à articulação sacroilíaca posterior, saindo da pelve pela incisura isquiática maior — uma região frequentemente comprometida em fraturas com desvio posterior, o que a torna vulnerável a laceração direta pelos fragmentos ósseos ou pelo cisalhamento articular. A artéria pudenda interna, por sua vez, corre próxima aos ramos púbicos e à sínfise, ficando exposta em fraturas anteriores com diástase ou fratura dos ramos. Reconhecer essas duas artérias como as mais associadas à hemorragia arterial pélvica é o que orienta, na prática, os territórios prioritários de embolização quando a angiografia identifica um sangramento ativo.",
+  "correta": "B. As artérias glútea superior e pudenda interna são as mais relacionadas à hemorragia arterial nas lesões do anel pélvico, pela sua proximidade com as regiões mais frequentemente comprometidas pela fratura.",
+  "incorretas": {
+   "A": "A glútea inferior é menos associada à hemorragia pélvica grave do que a glútea superior, cuja proximidade com a articulação sacroilíaca a torna mais vulnerável.",
+   "C": "A sacral lateral não é a artéria classicamente pareada com a glútea inferior nessa associação — a combinação mais reconhecida é glútea superior e pudenda.",
+   "D": "A sacral lateral, combinada à glútea superior, também não corresponde ao par classicamente mais associado à hemorragia pélvica grave, que é glútea superior e pudenda."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0132": {
@@ -1603,6 +1636,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0198": {
+  "conceito": "A passagem segura de um parafuso sacroilíaco (iliosacral) exige respeitar um corredor ósseo estreito, delimitado por estruturas vitais em praticamente todas as direções: o canal medular posteriormente, o forame neural e as raízes nervosas anteriormente na asa sacral, e os vasos ilíacos ainda mais anteriormente. O parâmetro de segurança mais citado, verificado na radioscopia em perfil durante o procedimento, é manter a trajetória do parafuso ANTERIOR À CORTICAL POSTERIOR DE S1 — ou seja, garantir que a ponta e todo o trajeto do implante permaneçam à frente dessa linha cortical, evitando a penetração no canal vertebral sacral, que fica imediatamente posterior a ela. Esse único parâmetro, checado de forma sistemática antes de avançar definitivamente o parafuso, é o que protege contra a complicação neurológica mais temida desse procedimento — a lesão das raízes sacrais ou da cauda equina por penetração inadvertida no canal.",
+  "correta": "C. O parâmetro de segurança para a passagem do parafuso sacral é manter a trajetória anterior à cortical posterior de S1, evitando a penetração no canal vertebral sacral.",
+  "incorretas": {
+   "A": "A densidade cortical do ilíaco é relevante para a fixação do parafuso, mas não é o parâmetro de segurança neurológica que define o limite posterior seguro da trajetória.",
+   "B": "A região posterior ao promontório sacral não é o parâmetro de referência — o limite de segurança é a cortical posterior de S1, e a trajetória deve ficar anterior a ela.",
+   "D": "A área do disco residual de S1 e S2 não é o parâmetro de segurança neurológica referido nesta questão, que é a posição em relação à cortical posterior de S1."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0199": {
   "conceito": "No joelho flutuante submetido à fixação com haste intramedular, a TRAÇÃO EXCESSIVA aplicada durante o posicionamento cirúrgico (geralmente numa mesa ortopédica, para auxiliar a redução e o acesso ao canal medular) é um fator de risco bem reconhecido para uma complicação neurológica específica: a PARALISIA DO NERVO FIBULAR (peroneal) COMUM. Esse nervo é particularmente vulnerável à tração porque, ao contornar o colo da fíbula, fica relativamente fixo e superficial nesse ponto — uma tração prolongada ou excessiva sobre o membro, aplicada por um poste perineal ou por um dispositivo de tração distal, estira o nervo além do que ele tolera sem lesão, produzindo uma neuropraxia que se manifesta clinicamente como pé caído e déficit sensitivo na região correspondente. Diferente da lesão vascular (mais associada ao trauma inicial em si do que à manobra cirúrgica de tração) ou da síndrome compartimental (mais associada à reperfusão ou ao próprio trauma de partes moles), a paralisia do fibular por tração excessiva é uma complicação iatrogênica específica do posicionamento cirúrgico, e por isso reconhecida especificamente como associada a esse fator técnico.",
   "correta": "C. A tração excessiva durante o posicionamento cirúrgico para haste intramedular é fator de risco reconhecido para paralisia do nervo fibular comum, que é particularmente vulnerável ao estiramento por seu trajeto superficial ao redor do colo da fíbula.",
@@ -1931,6 +1975,17 @@
    "C": "120 a 160 graus inclui uma faixa francamente em VARO (abaixo de 160 graus), que é exatamente a configuração associada a colapso, cut-out e falha da osteossíntese."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0243": {
+  "conceito": "O CISALHAMENTO VERTICAL — o padrão de lesão do anel pélvico em que a hemipelve se desloca cefalicamente em relação ao sacro, rompendo completamente a estabilidade vertical do anel — deixa uma marca radiográfica indireta e bastante específica: a FRATURA DO PROCESSO TRANSVERSO DE L5. Isso ocorre porque o ligamento ILIOLOMBAR conecta o processo transverso de L5 à crista ilíaca, e quando a hemipelve se desloca cefalicamente com força suficiente para romper toda a estabilidade vertical do anel, esse mesmo deslocamento traciona o ligamento iliolombar, que por sua vez avulsiona um pequeno fragmento ósseo do processo transverso de L5 antes de se romper (ou permanecer tracionado). Encontrar esse achado na radiografia simples é um sinal indireto valioso de instabilidade vertical grave, mesmo quando o próprio traço de fratura da pelve não deixa isso evidente à primeira vista — e reforça a necessidade de investigação tomográfica completa e de estabilização cirúrgica rigorosa nesse padrão de lesão.",
+  "correta": "D. A fratura do processo transverso de L5, por avulsão do ligamento iliolombar tracionado pelo deslocamento cefálico da hemipelve, é o achado radiográfico sugestivo de cisalhamento vertical.",
+  "incorretas": {
+   "A": "A fratura isolada dos ramos púbicos é um achado mais inespecífico, presente em diversos padrões de lesão pélvica, não especificamente sugestivo de cisalhamento vertical.",
+   "B": "A fratura do córtex sacral anterior é mais associada ao padrão de compressão lateral (impacção da asa sacral), não ao cisalhamento vertical.",
+   "C": "A diástase da sínfise púbica de 2,5 cm é o critério clássico de instabilidade na compressão ântero-posterior, não o achado específico do cisalhamento vertical."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0245": {
@@ -2283,6 +2338,17 @@
    "A": "A parede anterior é um padrão bem menos frequente do que a parede posterior entre as fraturas do acetábulo.",
    "C": "A coluna anterior também é menos frequente do que a parede posterior na distribuição geral desses padrões de fratura.",
    "D": "A coluna posterior é igualmente menos frequente do que a parede posterior, que é o padrão mais comum entre todos os tipos da classificação."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0284": {
+  "conceito": "As fraturas do anel pélvico resultam, na grande maioria dos casos, de mecanismos de trauma de ALTA ENERGIA — colisões automobilísticas, atropelamentos, quedas de altura significativa —, e essa mesma energia responsável por fraturar um anel ósseo tão robusto quanto a pelve frequentemente também acomete outras regiões do corpo. Entre as lesões associadas, o TRAUMA TORÁCICO é o mais comumente relatado nas séries de politrauma com fratura pélvica — refletindo o padrão geral de politraumatismo por alta energia, em que o tórax é uma das regiões mais vulneráveis a lesão concomitante (contusão pulmonar, fraturas de arcos costais, pneumotórax), à frente de lesões de fêmur, bexiga ou coluna lombar, que também ocorrem com frequência relevante, mas em proporção menor. Reconhecer essa associação reforça a importância de uma avaliação sistemática completa (o ABCDE do trauma) em qualquer paciente com fratura pélvica, e não apenas o foco na própria pelve.",
+  "correta": "A. O trauma torácico é a lesão associada mais comum nas fraturas do anel pélvico, refletindo o padrão geral de politraumatismo por alta energia que também produz esse tipo de fratura.",
+  "incorretas": {
+   "B": "A fratura de fêmur é uma associação relevante, mas ocorre com frequência menor do que o trauma torácico nas séries de politrauma com fratura pélvica.",
+   "C": "A lesão de bexiga, apesar de clinicamente importante e específica da região pélvica, é menos frequente como associação geral do que o trauma torácico.",
+   "D": "A lesão de coluna lombar também ocorre com frequência menor do que o trauma torácico como associação mais comum da fratura pélvica."
   },
   "geradoEm": "2026-09-14",
   "conferido": false
@@ -2791,6 +2857,17 @@
    "D": "A idade é variável do escore e o choque também, mas o tempo de enchimento capilar isolado não é uma variável — ele compõe a graduação da isquemia. E a disponibilidade de cirurgião vascular, evidentemente, não integra um escore de gravidade da lesão."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0348": {
+  "conceito": "A indicação do fixador externo na urgência para as fraturas do anel pélvico depende da combinação de dois eixos de avaliação independentes: a ESTABILIDADE MECÂNICA da própria pelve e a ESTABILIDADE HEMODINÂMICA do paciente. O fixador externo cumpre duas funções simultâneas quando indicado na urgência: estabiliza mecanicamente um anel pélvico instável (evitando que o movimento entre os fragmentos perpetue o sangramento) e, ao reduzir o volume da pelve, favorece o efeito de tamponamento sobre o sangramento venoso — sobretudo relevante no paciente que já está perdendo sangue de forma significativa. É exatamente por isso que a indicação mais forte e mais consensual do fixador externo na urgência combina PELVE MECANICAMENTE INSTÁVEL com PACIENTE HEMODINAMICAMENTE INSTÁVEL: nesse cenário, a intervenção rápida e temporária do fixador externo tem potencial de impacto direto na sobrevida do paciente, diferente de um paciente estável (em que a fixação definitiva pode ser planejada com mais tempo) ou de uma pelve mecanicamente estável (em que a instabilidade hemodinâmica, se presente, provavelmente tem outra origem que não a fratura pélvica).",
+  "correta": "D. O fixador externo na urgência está mais bem indicado quando a pelve é mecanicamente instável e o paciente está hemodinamicamente instável — combinação em que a estabilização rápida tem potencial de impacto direto na sobrevida.",
+  "incorretas": {
+   "A": "Com a pelve mecanicamente estável e o paciente hemodinamicamente estável, não há urgência que justifique o fixador externo emergencial.",
+   "B": "Com a pelve mecanicamente estável, a instabilidade hemodinâmica provavelmente tem outra origem, e o fixador externo pélvico não seria a intervenção prioritária.",
+   "C": "Com o paciente hemodinamicamente estável, mesmo com pelve mecanicamente instável, a fixação pode ser planejada com mais tempo, sem a mesma urgência de uma fixação externa imediata."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0350": {
@@ -3937,6 +4014,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0514": {
+  "conceito": "O quadro descrito — trauma de moto, dor lombossacral, hipotensão e abertura radiográfica da articulação sacroilíaca posterior — é o cenário clássico de uma lesão instável do anel pélvico com sangramento ativo, e a origem mais provável desse sangramento é bem estabelecida na literatura: o PLEXO VENOSO PÉLVICO (pré-sacral). Cerca de 80 a 90% de toda a hemorragia associada à fratura pélvica tem origem VENOSA, não arterial — e esse plexo venoso, uma rede extensa e de paredes finas que corre justamente ao longo da face anterior do sacro e da articulação sacroilíaca, fica diretamente exposto e lesado quando essa articulação se abre com o desvio da fratura. Essa predominância venosa é o motivo pelo qual medidas de TAMPONAMENTO mecânico — fixação externa, clampe pélvico, tamponamento pélvico direto (packing) — costumam ser mais eficazes e mais imediatas no controle da hemorragia pélvica do que a angioembolização, que trata apenas a minoria arterial do sangramento.",
+  "correta": "A. O plexo venoso pélvico (pré-sacral) é a origem mais provável do sangramento nesse quadro, refletindo o fato de que a grande maioria da hemorragia pélvica tem origem venosa, não arterial.",
+  "incorretas": {
+   "B": "A artéria pudenda é uma fonte arterial de sangramento pélvico, mas a hemorragia pélvica é predominantemente venosa, não arterial — o plexo venoso pré-sacral é a origem mais provável.",
+   "C": "A artéria glútea superior também é uma fonte arterial relevante em casos selecionados, mas a origem mais provável do sangramento pélvico, em geral, é venosa.",
+   "D": "A veia ilíaca interna, embora possa ser lesada em traumas mais extensos, não é a origem mais tipicamente citada nesse cenário específico — o plexo venoso pré-sacral, mais extenso e mais exposto pela abertura da sacroilíaca, é a resposta classicamente esperada."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0517": {
   "conceito": "A FRATURA ATÍPICA por uso crônico de BIFOSFONATOS tem dois achados radiográficos que precisam ser lidos em conjunto, e ambos decorrem do mesmo mecanismo: a supressão prolongada do turnover ósseo impede o reparo das microfraturas por fadiga, que se acumulam onde a solicitação mecânica é máxima. E onde é isso? Na CORTICAL LATERAL do fêmur — a que trabalha em TENSÃO, porque a carga corporal passa medialmente ao eixo do osso e o fêmur se comporta como uma viga em balanço, comprimida medialmente e tracionada lateralmente. Daí o primeiro achado: o ESPESSAMENTO DA CORTICAL LATERAL, o 'beaking' ou bicudo, uma reação de estresse localizada, focal, que PRECEDE a fratura em semanas a meses e que é o sinal precoce mais importante — reconhecê-lo permite fixar profilaticamente antes que o osso se rompa. O segundo achado aparece quando a fratura se completa: o traço, originado na cortical lateral e substancialmente TRANSVERSO, torna-se oblíquo ao alcançar o lado oposto e destaca um pequeno bico ósseo na CORTICAL MEDIAL — a ESPÍCULA (ou sinal da ponta) MEDIAL. Completam o quadro a localização entre o trocanter menor e a metáfise supracondiliana, a cominuição mínima ou ausente, o trauma trivial, a DOR PRODRÔMICA na coxa e o acometimento BILATERAL, que torna obrigatória a investigação do outro fêmur. A conduta: suspender o bifosfonato, corrigir cálcio e vitamina D, considerar TERIPARATIDA (anabólico), fixar as fraturas completas com HASTE CEFALOMEDULAR LONGA — que protege todo o fêmur — e considerar a fixação profilática das lesões incompletas sintomáticas. A consolidação é lenta, e o retardo é regra.",
   "correta": "D. Espera-se o ESPESSAMENTO DA CORTICAL LATERAL — o 'beaking', reação de estresse que precede a fratura — associado à ESPÍCULA MEDIAL, o bico ósseo destacado quando o traço transverso alcança o lado medial.",
@@ -4399,6 +4487,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0590": {
+  "conceito": "O posicionamento do parafuso de compressão sacroilíaca, nas lesões sacroilíacas posteriores, precisa considerar tanto a segurança neurovascular quanto a eficácia mecânica da fixação. A trajetória descrita como ideal é DE INFERIOR PARA SUPERIOR e DE POSTERIOR PARA ANTERIOR, direcionada ao CORPO DE S1 — o primeiro segmento sacral, que oferece o corredor ósseo mais consistente e mais amplo entre os disponíveis para esse tipo de fixação (o corpo de S2, menor e mais variável anatomicamente entre os indivíduos, é uma opção menos confiável e reservada a situações específicas). Essa orientação da trajetória, além de mirar o segmento ósseo mais seguro e mais robusto, também favorece a distribuição de forças de compressão através da fixação, ajudando a neutralizar o padrão de deslocamento típico dessas lesões (rotação e translação da hemipelve em relação ao sacro).",
+  "correta": "A. O posicionamento ideal do parafuso de compressão sacroilíaca é de inferior para superior, de posterior para anterior, direcionado ao corpo de S1 — o segmento sacral com o corredor ósseo mais consistente para essa fixação.",
+  "incorretas": {
+   "B": "O corpo de S2 é uma opção menos confiável do que o de S1 para essa fixação, por oferecer um corredor ósseo menor e mais variável entre os indivíduos.",
+   "C": "A direção inversa (de superior para inferior, de anterior para posterior) não corresponde à trajetória classicamente descrita para essa fixação.",
+   "D": "Nem a direção inversa nem o direcionamento ao corpo de S2 correspondem ao posicionamento ideal descrito, que é para o corpo de S1, na trajetória inferior-superior e posterior-anterior."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0591": {
   "conceito": "O SINAL DO ESPORÃO ('spur sign') é um achado radiográfico específico e praticamente patognomônico da fratura de DUPLA COLUNA na classificação de Judet e Letournel. Ele representa um pequeno fragmento triangular de osso ILÍACO que permanece ligado ao SACRO — íntegro, sem envolvimento articular — mesmo depois de todo o restante do acetábulo (as porções anterior e posterior, incluindo toda a superfície articular) ter se separado como uma unidade única do ilíaco. Esse fragmento residual do ilíaco, visível na incidência obturatriz como uma projeção pontiaguda de osso (daí o nome 'esporão'), é o que confirma o diagnóstico de dupla coluna: por definição, na dupla coluna NENHUMA porção da superfície articular permanece presa ao esqueleto axial, e o esporão é exatamente essa pequena porção não articular de ilíaco que restou ligada ao sacro, atestando que todo o resto se soltou como bloco único.",
   "correta": "A. O sinal do esporão, um pequeno fragmento não articular de ilíaco que permanece ligado ao sacro, é praticamente patognomônico da fratura de dupla coluna, na qual toda a superfície articular se separa do esqueleto axial.",
@@ -4616,6 +4715,17 @@
    "B": "A incidência obturatriz avalia a coluna anterior, não a parede anterior — a parede anterior é melhor vista na incidência alar.",
    "C": "A incidência alar avalia a coluna posterior, não a coluna anterior — a coluna anterior é melhor vista na incidência obturatriz.",
    "D": "A incidência alar avalia a parede anterior, não a parede posterior — a parede posterior é melhor vista na incidência obturatriz."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0630": {
+  "conceito": "Na classificação de YOUNG E BURGESS, a compressão ântero-posterior tipo III representa o grau mais grave e mais instável dentro desse mecanismo de lesão, e a extensão do comprometimento ligamentar reflete diretamente essa gravidade. No tipo I, apenas a SÍNFISE PÚBICA está acometida, com uma diástase discreta e os ligamentos sacroilíacos preservados — uma lesão relativamente estável. No tipo II, além da sínfise, os ligamentos SACROILÍACOS ANTERIORES já estão rompidos, permitindo uma rotação externa da hemipelve (padrão 'livro aberto'), mas os ligamentos sacroilíacos POSTERIORES ainda seguram a hemipelve como uma dobradiça, mantendo alguma estabilidade residual. No tipo III, o mais grave, os ligamentos sacroilíacos POSTERIORES também se rompem, somando-se à sínfise e aos ligamentos sacroilíacos anteriores já comprometidos — a hemipelve perde toda a estabilidade, tanto rotacional quanto vertical, tornando-se completamente instável em todos os planos, o que explica a maior morbidade e mortalidade associadas a esse subtipo específico.",
+  "correta": "C. No tipo III de compressão ântero-posterior, estão comprometidos a sínfise púbica, os ligamentos sacroilíacos anteriores e também os posteriores — a ruptura completa que torna a hemipelve instável em todos os planos.",
+  "incorretas": {
+   "A": "O comprometimento isolado da sínfise púbica corresponde ao tipo I, uma lesão mais estável, não ao tipo III, o mais grave da classificação.",
+   "B": "O comprometimento da sínfise e dos ligamentos sacroilíacos anteriores, com os posteriores preservados, corresponde ao tipo II, não ao tipo III, em que os posteriores também se rompem.",
+   "D": "O comprometimento apenas dos ligamentos sacroilíacos (anteriores e posteriores), sem mencionar a sínfise, não descreve corretamente o tipo III, que inclui as três estruturas."
   },
   "geradoEm": "2026-09-14",
   "conferido": false
@@ -5182,6 +5292,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0699": {
+  "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, a fratura de pelve — resultado, na grande maioria dos casos, de trauma de ALTA ENERGIA — tem como lesão associada mais comum o TRAUMA TORÁCICO. Essa associação reflete o padrão geral de politraumatismo grave: a mesma energia capaz de fraturar um anel ósseo tão resistente quanto a pelve frequentemente também acomete o tórax, seja por mecanismo direto (impacto contra volante, cinto de segurança), seja por desaceleração. Fraturas de ossos longos, perfuração de alça intestinal e lesão vesical também ocorrem com relevância clínica nesse contexto, mas em frequência menor do que o trauma torácico, o que reforça a importância de uma avaliação sistemática e completa do politraumatizado com fratura pélvica, sem se limitar ao foco na própria pelve.",
+  "correta": "A. O trauma torácico é a lesão associada mais comum na fratura de pelve, refletindo o padrão geral de politraumatismo por alta energia que também produz esse tipo de fratura.",
+  "incorretas": {
+   "B": "A fratura de ossos longos é uma associação relevante, mas ocorre com frequência menor do que o trauma torácico.",
+   "C": "A perfuração de alça intestinal, apesar de grave quando presente, é bem menos frequente do que o trauma torácico como associação geral.",
+   "D": "A lesão vesical também ocorre com frequência menor do que o trauma torácico como associação mais comum da fratura pélvica."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0700": {
   "conceito": "A fratura da extremidade distal do fêmur produz, de forma consistente, um padrão de deformidade que reflete diretamente as forças musculares deformantes discutidas em outras questões deste acervo. O fragmento DISTAL, tracionado pelo GASTROCNÊMIO (originado na face posterior dos côndilos femorais), angula-se com o ápice voltado para TRÁS — a ANGULAÇÃO POSTERIOR característica, que coloca a artéria poplítea em risco por sua proximidade direta com essa região. Já o eixo geral do membro tende ao VARO, resultado da ação combinada dos adutores (que tracionam o fragmento proximal ou desviam o eixo, conforme o nível da fratura) somada ao próprio peso do membro distal, não sustentado. Esse padrão combinado — VARO no eixo geral, ANGULAÇÃO POSTERIOR do fragmento distal — é o que se espera encontrar ao avaliar clinicamente e radiograficamente essa fratura antes de qualquer manipulação, e reforça por que a avaliação vascular cuidadosa é indispensável mesmo em traumas aparentemente 'fechados e simples'.",
   "correta": "A. O padrão de deformidade mais comum na fratura do fêmur distal combina varo do eixo geral do membro com angulação posterior do fragmento distal, pela ação do gastrocnêmio e dos adutores.",
@@ -5321,6 +5442,17 @@
    "A": "A fratura incompleta sintomática tem indicação de fixação profilática, mas isso não a direciona para ORIF — a haste continua sendo a primeira escolha também nesse cenário, quando tecnicamente viável.",
    "B": "'Proteger o colo femoral' não é o racional da placa longa na fratura atípica: a placa é usada quando a haste é inviável, e a extensão da fixação segue o objetivo de cobrir a diáfise fragilizada, não uma lógica de proteção do colo.",
    "D": "A localização medial ou lateral da espícula óssea, achado radiográfico da fratura completa, não é o critério que decide entre haste e placa — essa decisão depende da viabilidade técnica da via intramedular."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0718": {
+  "conceito": "A compressão ântero-posterior TIPO II de Young e Burgess representa um estágio intermediário de gravidade entre o tipo I (lesão estável, só a sínfise) e o tipo III (lesão completamente instável, com ruptura de todos os elementos anteriores e posteriores). No tipo II, além da diástase da sínfise púbica — tipicamente MAIOR que 2,5 CM, diferente do tipo I —, os ligamentos SACROILÍACOS ANTERIORES já estão rompidos, permitindo que a hemipelve gire externamente ('padrão de livro aberto'). O que caracteriza especificamente o tipo II, e o distingue do tipo III, é que os ligamentos SACROILÍACOS POSTERIORES PERMANECEM ÍNTEGROS — funcionando como uma dobradiça que ainda confere alguma estabilidade residual, sobretudo no plano vertical, mesmo com a rotação externa evidente. É essa integridade posterior que costuma permitir, na maioria dos casos de tipo II, um tratamento com redução e fixação anterior isolada, sem necessidade de fixação posterior adicional — diferente do tipo III, que exige abordagem dos dois componentes.",
+  "correta": "C. A integridade dos ligamentos sacroilíacos posteriores é o que caracteriza especificamente o tipo II de compressão ântero-posterior, distinguindo-o do tipo III, em que esses ligamentos também se rompem.",
+  "incorretas": {
+   "A": "A fratura sacral no lado do impacto é um achado mais associado ao mecanismo de compressão lateral, não à compressão ântero-posterior tipo II.",
+   "B": "O desvio vertical da hemipelve é característico do cisalhamento vertical, não da compressão ântero-posterior tipo II, que produz rotação externa, não desvio vertical.",
+   "D": "Uma diástase de até 2,5 cm é mais característica do tipo I, mais estável — o tipo II tipicamente envolve uma diástase maior, acima desse valor."
   },
   "geradoEm": "2026-09-14",
   "conferido": false
@@ -5501,6 +5633,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0742": {
+  "conceito": "Entre os sinais clínicos sugestivos de lesão do anel pélvico, cada um tem uma topografia e um método de exame específicos, e confundir esses detalhes é um erro comum. O SINAL DE DESTOT (equimose em bolsa escrotal, região suprapúbica ou perineal) e o SINAL DE FOX (equimose na base do pênis ou na região inguinal) são achados de INSPEÇÃO da região genital e perineal, associados a hemorragia retroperitoneal ou pélvica dissecando até essas regiões. O SINAL DE GREY-TURNER (equimose em flancos) também é um achado de inspeção, já discutido em outras questões deste acervo, igualmente indicativo de hemorragia retroperitoneal. Já o SINAL DE EARLE é diferente dos demais por depender de um EXAME DIGITAL — mas especificamente o TOQUE RETAL, não o vaginal —, no qual se pode palpar uma proeminência óssea anormal, um grande hematoma perirretal ou instabilidade da parede retal, sugerindo fratura pélvica com deslocamento posterior significativo. Atribuir esse achado ao toque vaginal, como faz a alternativa C, inverte a via de exame classicamente descrita para esse sinal específico.",
+  "correta": "C. O sinal de Earle é classicamente descrito como um achado do TOQUE RETAL — proeminência óssea ou hematoma perirretal —, não do toque vaginal, tornando essa associação a incorreta entre as apresentadas.",
+  "incorretas": {
+   "A": "O sinal de Destot (equimose em bolsa escrotal) está corretamente descrito, sendo, portanto, uma associação correta, não a resposta a esta questão.",
+   "B": "O sinal de Grey-Turner (equimose em flancos) também está corretamente descrito, sendo uma associação correta.",
+   "D": "O sinal de Fox (equimose na base do pênis) está corretamente descrito, sendo uma associação correta, não a resposta a esta questão."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0743": {
   "conceito": "As fraturas do CAPÍTULO são fraturas no plano CORONAL do úmero distal: o traço corre paralelo à superfície articular anterior e destaca um fragmento que se desloca para cima e para a frente. Elas são sistematicamente subestimadas na radiografia de frente, e o achado que as denuncia é o do PERFIL — o sinal do 'duplo arco', duas linhas semicirculares sobrepostas, formadas pelo fragmento deslocado e pela tróclea. Por isso a TOMOGRAFIA é obrigatória no planejamento. A classificação de BRYAN e MORREY tem quatro tipos, cada um com um epônimo consagrado: TIPO I, ou HAHN-STEINTHAL, é o fragmento GRANDE, com bloco ósseo subcondral substancial — o mais frequente e o que melhor aceita fixação com parafusos de compressão sem cabeça, tipo Herbert ou Acutrak, colocados de anterior para posterior e enterrados abaixo da cartilagem; TIPO II, ou KOCHER-LORENZ, é o fragmento PEQUENO, único, em lasca (shear), praticamente só cartilagem com um véu de osso subcondral — pouca massa para ancorar parafuso, o que frequentemente leva à excisão do fragmento quando ele é muito fino; TIPO III, ou BROBERG-MORREY, é a fratura COMINUÍDA e impactada, com múltiplos fragmentos articulares, de tratamento mais difícil e prognóstico pior; TIPO IV, acrescentado por McKEE, é a fratura coronal que se estende MEDIALMENTE e leva junto a TRÓCLEA. O acesso habitual é o lateral estendido (Kocher ou Kaplan ampliados), e o princípio final é o de sempre no cotovelo: fixação estável o bastante para permitir mobilização precoce, sob pena de rigidez. As complicações a vigiar são a osteonecrose do fragmento, a consolidação viciosa e a rigidez em flexão.",
   "correta": "B. O fragmento pequeno, único, no plano coronal é a fratura tipo II de Bryan e Morrey, conhecida pelo epônimo KOCHER-LORENZ: uma lasca quase exclusivamente cartilaginosa, com pouco osso subcondral para ancorar fixação.",
@@ -5576,6 +5719,17 @@
    "D": "Acerta a frequência do extravasamento, mas superestima grosseiramente a complicação neurológica. A maior parte das fugas é discal ou paravertebral e assintomática; apenas a minoria epidural e foraminal produz déficit."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0756": {
+  "conceito": "A lesão GENITURINÁRIA associada à fratura do anel pélvico tem um perfil demográfico e um padrão de lesão característicos, ambos relevantes para a triagem inicial do paciente. Ela é mais comum em HOMENS — uma diferença atribuída, entre outros fatores, ao comprimento e ao trajeto mais fixo da uretra masculina, que a tornam mais vulnerável ao cisalhamento produzido pelo deslocamento dos fragmentos pélvicos, sobretudo na junção entre a porção membranosa da uretra e a próstata. Quanto ao tipo de lesão vesical especificamente, a mais comum associada à fratura pélvica é a ruptura EXTRAPERITONEAL — produzida pela perfuração direta da parede vesical por um fragmento ósseo agudo ou pelo estiramento da base da bexiga durante o deslocamento do anel —, diferente da ruptura intraperitoneal, mais associada a um mecanismo de bexiga cheia sujeita a impacto direto, sem necessariamente uma fratura pélvica associada.",
+  "correta": "B. A lesão geniturinária associada à fratura pélvica é mais comum em homens, e o tipo de lesão vesical mais frequente é a ruptura extraperitoneal, produzida pela perfuração direta ou pelo estiramento da base vesical durante o deslocamento do anel.",
+  "incorretas": {
+   "A": "A lesão geniturinária é mais comum em homens, mas o tipo mais comum de ruptura vesical associada à fratura pélvica é a extraperitoneal, não a intraperitoneal.",
+   "C": "A lesão é mais comum em homens, não em mulheres, dada a maior vulnerabilidade anatômica da uretra masculina ao cisalhamento nessa fratura.",
+   "D": "A lesão é mais comum em homens, não em mulheres; a identificação do tipo extraperitoneal como mais comum está correta, mas atribuída ao sexo errado."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0759": {
@@ -5952,6 +6106,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0814": {
+  "conceito": "A classificação de DENIS para as fraturas do sacro organiza o osso em três zonas, de lateral para medial, e cada uma carrega um risco diferente de lesão neurológica associada — um dos pontos mais importantes e mais cobrados sobre o tema. A ZONA I é a mais lateral, correspondendo à asa sacral, lateral aos forames neurais — o risco neurológico aqui é o menor entre as três, limitado principalmente à raiz de L5 quando a fratura se estende até a incisura ciática. A ZONA II atravessa os FORAMES neurais — o risco de lesão de uma raiz sacral específica (geralmente unilateral) já é maior aqui. A ZONA III é a mais medial, envolvendo o CANAL SACRAL CENTRAL — e é essa zona que concentra o MAIOR risco de lesão neurológica entre as três, justamente por comprometer diretamente o canal onde correm as raízes sacrais bilaterais e a cauda equina distal, associando-se com frequência a disfunção vesical, intestinal e sexual (uma síndrome de cauda equina sacral), muito mais grave e mais bilateral do que o déficit radicular unilateral típico da zona II.",
+  "correta": "C. A zona III de Denis, por envolver o canal sacral central, concentra o maior risco de lesão neurológica entre as três zonas — frequentemente associada a disfunção vesical, intestinal e sexual bilateral.",
+  "incorretas": {
+   "A": "A zona I, a mais lateral (asa sacral), tem o menor risco neurológico entre as três, limitado principalmente à raiz de L5 em casos selecionados.",
+   "B": "A zona II, que atravessa os forames neurais, tem risco intermediário — geralmente lesão radicular unilateral —, menor do que o risco da zona III.",
+   "D": "A classificação de Denis para o sacro descreve apenas três zonas (I, II e III) — não existe uma zona IV nesse sistema."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0815": {
   "conceito": "A SÍNDROME DE GRISEL é a subluxação rotatória atlantoaxial (C1-C2) de origem INFLAMATÓRIA / INFECCIOSA — e não traumática. Ela ocorre tipicamente em CRIANÇAS, na sequência de uma infecção de cabeça e pescoço (faringite, amigdalite, otite, abscesso retrofaríngeo, adenite cervical) ou de uma cirurgia otorrinolaringológica (amigdalectomia, adenoidectomia). O mecanismo aceito é vascular e inflamatório: o plexo venoso FARINGOVERTEBRAL faz a drenagem da faringe posterior diretamente para o plexo venoso periodontoideo, criando uma via de disseminação de mediadores inflamatórios até as estruturas capsuloligamentares atlantoaxiais. A hiperemia e o edema resultantes distendem e afrouxam a cápsula e os ligamentos, e a articulação — que é a mais móvel da coluna, responsável por cerca de metade da rotação cervical — subluxa em rotação. Clinicamente, a criança apresenta TORCICOLO doloroso, com a cabeça em posição de 'cock-robin' (inclinação para um lado e rotação para o outro), incapacidade de rodar ativamente para além da linha média, e frequentemente o SINAL DE SUDECK — o processo espinhoso de C2 desviado para o mesmo lado da rotação da cabeça. O diagnóstico é confirmado pela TOMOGRAFIA DINÂMICA, com cortes em rotação máxima para cada lado, e a classificação usada é a de FIELDING e HAWKINS (tipos I a IV, conforme haja ou não deslocamento anterior de C1 e ruptura do ligamento transverso). O tratamento depende do tempo de evolução: nos casos agudos, antibiótico para a infecção de base, anti-inflamatório, relaxante muscular e colar ou tração cervical leve; nos subagudos, tração por período mais longo; e nos crônicos ou recidivantes, com mais de três meses, pode ser necessária a ARTRODESE C1-C2.",
   "correta": "D. A síndrome de Grisel é a subluxação rotatória C1-C2 de origem INFLAMATÓRIA — associada a infecções de cabeça e pescoço ou a cirurgias otorrinolaringológicas, com disseminação pelo plexo venoso faringovertebral.",
@@ -6263,6 +6428,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0853": {
+  "conceito": "A fratura da porção ANTERIOR da asa do sacro tem um mecanismo de trauma característico que a distingue de outros padrões de lesão sacral. Na COMPRESSÃO LATERAL — um dos três padrões principais da classificação de Young e Burgess —, a força é aplicada diretamente sobre a face lateral da pelve, e essa força tende a comprimir e IMPACTAR a asa sacral do lado do impacto, produzindo uma fratura tipicamente incompleta, com esmagamento (buckling) da cortical anterior — diferente do padrão de cisalhamento vertical, em que o traço sacral tende a ser mais completo e verticalizado, sem esse componente de impacção. Reconhecer esse padrão de fratura sacral anterior por impacção como típico da compressão lateral ajuda o examinador a inferir o mecanismo do trauma já pela morfologia da fratura na tomografia, mesmo antes de conhecer os detalhes do acidente relatado pelo paciente ou pela equipe de resgate.",
+  "correta": "A. A fratura anterior da asa do sacro, por impacção da cortical anterior, é característica do mecanismo de compressão lateral, um dos três padrões principais de Young e Burgess.",
+  "incorretas": {
+   "B": "A compressão ântero-posterior tipicamente produz abertura (diástase) dos elementos anteriores e posteriores do anel, não a impacção da asa sacral característica da compressão lateral.",
+   "C": "O cisalhamento vertical produz um traço sacral tipicamente mais completo e verticalizado, sem o componente de impacção característico da compressão lateral.",
+   "D": "A compressão axial não é um dos três mecanismos clássicos da classificação de Young e Burgess para as lesões do anel pélvico."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0854": {
   "alerta": "Este item diverge de quatro outras questões deste mesmo acervo (trauma-0112, trauma-0342, trauma-0945 e trauma-0726), que respondem de forma consistente que o sinal da gaivota (gull sign) representa a IMPACÇÃO DO TETO ACETABULAR — um achado de dano articular que pode se associar a diferentes padrões de fratura (mais classicamente ao traço transverso), não um sinal definidor de um tipo específico de coluna. Como a leitura majoritária e mais bem estabelecida na literatura (Letournel) é a da impacção do teto, e não a de uma coluna específica, o gabarito desta questão específica merece conferência.",
   "conceito": "Nas fraturas por impacção do TETO acetabular, o achado radiográfico conhecido como sinal da GAIVOTA (gull sign) — uma linha de densidade dupla que lembra as asas de uma gaivota em voo — representa o afundamento da porção superomedial da cúpula de sustentação de carga, um dano direto à cartilagem articular que compromete o prognóstico independentemente do padrão de coluna ou parede envolvido na fratura de base. É importante entender esse sinal como um achado ASSOCIADO — que pode acompanhar diferentes tipos de fratura do acetábulo, mais classicamente descrito em associação com traços transversos e em T — e não como um sinal exclusivo ou definidor de um único tipo de coluna específico. Tratá-lo como sinônimo de um tipo de coluna particular simplifica demais um achado que, na verdade, descreve uma complicação articular (a impacção) que pode se sobrepor a diferentes padrões estruturais de fratura.",
@@ -6538,6 +6714,17 @@
    "C": "O interósseo ANTERIOR é ramo motor do mediano, corre sobre a membrana interóssea na face anterior profunda e produz, quando lesado, o sinal do 'OK' incompleto — paralisia do flexor longo do polegar e do flexor profundo do indicador. Associa-se sobretudo às fraturas supracondilianas da criança."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0892": {
+  "conceito": "Assim como discutido em outra questão deste acervo sobre as vias de acesso do acetábulo, a incidência ALAR (ou ilíaca oblíqua) é a que melhor demonstra a COLUNA POSTERIOR do acetábulo — obtida rodando o lado afetado para baixo (ou o lado são para cima), essa incidência projeta o perfil característico da coluna posterior ao longo de toda a sua extensão, desde a região posterior do ílio até o ísquio. Essa mesma incidência também demonstra bem a parede anterior, mas é a coluna posterior — estrutura que se estende obliquamente da região posterior do ílio até o ísquio, formando o pilar posterior de sustentação do acetábulo — a estrutura mais bem avaliada nessa projeção específica, o que a torna indispensável na investigação de qualquer fratura com suspeita de comprometimento desse pilar posterior.",
+  "correta": "A. A incidência alar é a que melhor demonstra a fratura da coluna posterior do acetábulo, projetando seu perfil ao longo de toda a extensão, da região posterior do ílio até o ísquio.",
+  "incorretas": {
+   "B": "A incidência outlet é voltada para a avaliação do anel pélvico no plano cefalocaudal (deslocamento vertical, deformidades do sacro), não especificamente para a coluna posterior do acetábulo.",
+   "C": "A incidência obturatriz é a que melhor demonstra a coluna anterior (e a parede posterior), não a coluna posterior, mais bem vista na incidência alar.",
+   "D": "A incidência inlet avalia o anel pélvico no plano axial (deslocamentos anteroposteriores e rotacionais), não especificamente a coluna posterior do acetábulo."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0893": {
@@ -6859,6 +7046,28 @@
    "D": "Acerta o nível proximal, que é de fato o de maior risco, mas a incisão DUPLA é a técnica recomendada para evitar a sinostose — duas vias separadas, com músculo interposto e sem abertura da membrana interóssea. A incisão única é que multiplica o risco."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0934": {
+  "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, o SINAL DE GREY TURNER — equimose que aparece na região dos flancos, tipicamente de 24 a 48 horas após o trauma — indica a presença de HEMORRAGIA RETROPERITONEAL. O mecanismo é a dissecção de sangue, acumulado no espaço retroperitoneal, através dos planos fasciais até atingir o tecido subcutâneo do flanco, tornando-se visível clinicamente. Nas lesões do anel pélvico, essa hemorragia retroperitoneal costuma ter origem no plexo venoso pré-sacral (a fonte mais comum de sangramento pélvico) ou em uma artéria pélvica lesada, e o aparecimento tardio desse sinal reforça a importância de reavaliações seriadas do paciente com fratura pélvica, já que o sangramento retroperitoneal pode não ser evidente nas primeiras horas de atendimento.",
+  "correta": "B. O sinal de Grey Turner indica hemorragia retroperitoneal, geralmente originada do plexo venoso pré-sacral ou de uma artéria pélvica lesada nas fraturas do anel pélvico.",
+  "incorretas": {
+   "A": "A fratura dos ramos púbicos é um achado estrutural, não o que esse sinal clínico indica, que é hemorragia retroperitoneal.",
+   "C": "A síndrome de Morel-Lavallée é uma lesão de descolamento de partes moles, com apresentação e mecanismo distintos do sinal de Grey Turner.",
+   "D": "A lesão do trato geniturinário tem sinais próprios, distintos do sinal de Grey Turner, que indica hemorragia retroperitoneal."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0935": {
+  "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, o parâmetro ósseo de segurança para a passagem do parafuso sacroilíaco, verificado na radioscopia em perfil, é manter a trajetória do implante ANTERIOR À CORTICAL POSTERIOR DE S1. Esse limite protege contra a penetração inadvertida no canal vertebral sacral, que fica imediatamente posterior a essa linha cortical — a complicação neurológica mais temida desse procedimento, capaz de lesar as raízes sacrais ou a cauda equina distal. A checagem sistemática desse único parâmetro radioscópico, junto com a confirmação de que o parafuso permanece dentro do corredor ósseo seguro nas demais direções (evitando os forames neurais anteriormente e os vasos ilíacos ainda mais anteriormente), é o que torna a fixação percutânea sacroilíaca um procedimento seguro apesar da proximidade com estruturas neurovasculares críticas.",
+  "correta": "C. O parâmetro de segurança para a passagem do parafuso sacral é manter a trajetória anterior à cortical posterior de S1, evitando a penetração inadvertida no canal vertebral sacral.",
+  "incorretas": {
+   "A": "A densidade cortical do ilíaco é relevante para a fixação do implante, mas não é o parâmetro de segurança neurológica que define o limite posterior seguro.",
+   "B": "A região posterior ao promontório sacral não é o parâmetro de referência para essa checagem — o limite é a cortical posterior de S1.",
+   "D": "A área do disco residual de S1 e S2 não é o parâmetro de segurança neurológica referido nesta questão."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0939": {
@@ -7231,6 +7440,17 @@
    "A": "O tipo I (Hahn-Steinthal) descreve um grande fragmento único, não uma fratura cominuída e multifragmentar.",
    "B": "O tipo II (Kocher-Lorenz) descreve um fragmento fino e cartilaginoso, também não caracterizado pela cominuição extensa do tipo III.",
    "D": "A modificação de McKee (tipo IV) define-se pela extensão do traço para a tróclea, não pelo grau de cominuição do capítulo, que é o critério do tipo III."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0988": {
+  "conceito": "A lesão de MOREL-LAVALLÉE — um descolamento traumático da pele e do tecido subcutâneo em relação à fáscia muscular subjacente, por um mecanismo de cisalhamento tangencial, criando uma cavidade preenchida por sangue, linfa e gordura liquefeita — ocorre classicamente sobre proeminências ósseas da pelve e do quadril, e sua presença tem implicação direta no planejamento cirúrgico: operar através de uma área com essa lesão (sem reconhecê-la e tratá-la antes) aumenta muito o risco de infecção profunda e de deiscência da ferida operatória. Entre as fraturas da COLUNA associadas a esse tipo de lesão de partes moles, é a fratura do segmento SACRAL a mais frequentemente relacionada — o que faz sentido anatomicamente, já que a região lombossacral e a área glútea/posterior da pelve, onde o sacro se localiza, é justamente uma das topografias mais clássicas de ocorrência da lesão de Morel-Lavallée, pela proximidade direta entre o mecanismo de cisalhamento sobre essa região e a fratura óssea subjacente.",
+  "correta": "C. A lesão de Morel-Lavallée é mais frequentemente associada a fraturas do segmento sacral, refletindo a proximidade anatômica entre a topografia clássica dessa lesão de partes moles e essa região da coluna.",
+  "incorretas": {
+   "A": "O segmento torácico não é a região da coluna mais associada a essa lesão de partes moles, que ocorre classicamente sobre a região lombossacral e a pelve.",
+   "B": "O segmento lombar, embora anatomicamente próximo, não é o mais especificamente associado — a associação mais direta é com o segmento sacral.",
+   "D": "O segmento coccígeo, mais distal e menos frequentemente fraturado isoladamente, não é o mais associado a essa lesão de partes moles."
   },
   "geradoEm": "2026-09-14",
   "conferido": false
