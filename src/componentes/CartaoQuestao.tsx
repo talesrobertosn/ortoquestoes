@@ -56,6 +56,7 @@ export function CartaoQuestao({
   const [menuGrifo, definirMenuGrifo] = useState<{ x: number; y: number } | null>(null)
   const [grifos, definirGrifos] = useState<Array<{ left: number; top: number; width: number; height: number }>>([])
   const [modoLeitura, definirModoLeitura] = useState(false)
+  const [ultimaAcao, definirUltimaAcao] = useState<{ tipo: 'favorito' | 'revisao' | 'risco'; letra?: Letra } | null>(null)
   const inicio = useRef<number>(Date.now())
   const areaDaQuestao = useRef<HTMLElement>(null)
   const grifoRecente = useRef(false)
@@ -70,6 +71,7 @@ export function CartaoQuestao({
     definirConfianca('seguro')
     definirCopiado(false)
     definirModoLeitura(false)
+    definirUltimaAcao(null)
     inicio.current = Date.now()
   }, [questao.id])
 
@@ -206,6 +208,20 @@ export function CartaoQuestao({
     grifoRecente.current = true
     window.setTimeout(() => { grifoRecente.current = false }, 0)
   }
+  function executarAcao(tipo: 'favorito' | 'revisao' | 'risco', letra?: Letra) {
+    if (tipo === 'favorito') aoFavoritar()
+    if (tipo === 'revisao') aoRevisar()
+    if (tipo === 'risco' && letra) aoRiscar(letra)
+    definirUltimaAcao({ tipo, letra })
+  }
+  function desfazerUltimaAcao() {
+    const acao = ultimaAcao
+    if (!acao) return
+    if (acao.tipo === 'favorito') aoFavoritar()
+    if (acao.tipo === 'revisao') aoRevisar()
+    if (acao.tipo === 'risco' && acao.letra) aoRiscar(acao.letra)
+    definirUltimaAcao(null)
+  }
 
   const semGabarito = !questao.gabarito && !questao.anulada
   const historicoDaQuestao = lerRespondidas()[questao.id]?.historico ?? []
@@ -257,7 +273,7 @@ export function CartaoQuestao({
             <button
               type="button"
               className="botao-icone"
-              onClick={aoFavoritar}
+              onClick={() => executarAcao('favorito')}
               aria-pressed={favorita}
               aria-label={favorita ? 'Remover dos favoritos' : 'Favoritar questão'}
               title="Favoritar (F)"
@@ -267,7 +283,7 @@ export function CartaoQuestao({
             <button
               type="button"
               className="botao-icone"
-              onClick={aoRevisar}
+              onClick={() => executarAcao('revisao')}
               aria-pressed={marcadaRevisao}
               aria-label={
                 marcadaRevisao ? 'Desmarcar para revisão' : 'Marcar questão para revisão'
@@ -384,7 +400,7 @@ export function CartaoQuestao({
                   <button
                     type="button"
                     className="riscar nao-imprime"
-                    onClick={() => aoRiscar(letra)}
+                    onClick={() => executarAcao('risco', letra)}
                     aria-pressed={riscada}
                     aria-label={`${riscada ? 'Desfazer risco na' : 'Riscar'} alternativa ${letra}`}
                     title={`Riscar (Shift + ${i + 1})`}
@@ -516,6 +532,7 @@ export function CartaoQuestao({
             Relatar erro nesta questão
           </a>
           {copiado && <span className="meta">Link copiado.</span>}
+          {ultimaAcao && <button type="button" className="botao botao--fantasma" onClick={desfazerUltimaAcao}>Desfazer ação</button>}
           <span className="meta numerico questao__id">{questao.id}</span>
         </div>
       </div>
