@@ -641,6 +641,17 @@
   "geradoEm": "2026-09-14",
   "conferido": false
  },
+ "trauma-0070": {
+  "conceito": "A resposta inflamatória sistêmica ao trauma envolve a liberação de múltiplas citocinas, mas nem todas são igualmente úteis como marcador clínico de gravidade — algumas têm meia-vida muito curta ou picos muito precoces, dificultando sua dosagem prática no momento em que a decisão clínica precisa ser tomada. A INTERLEUCINA-6 (IL-6) se destaca justamente por ser o marcador que MAIS SE CORRELACIONA com a gravidade da síndrome da resposta inflamatória sistêmica (SIRS): seus níveis séricos sobem de forma proporcional à magnitude do trauma e permanecem elevados por tempo suficiente para serem dosados e monitorados de forma útil na prática clínica, funcionando como um preditor precoce de complicações como a síndrome do desconforto respiratório agudo e a disfunção de múltiplos órgãos. O TNF e a IL-1, embora sejam mediadores importantes e iniciadores da cascata inflamatória, têm picos mais precoces e efêmeros, tornando sua dosagem clínica menos prática e menos correlacionada de forma consistente com a gravidade global observada.",
+  "correta": "C. A IL-6 é o marcador inflamatório que melhor se correlaciona com a gravidade da SIRS no paciente politraumatizado, por seus níveis se elevarem de forma proporcional à magnitude do trauma e permanecerem detectáveis por tempo clinicamente útil.",
+  "incorretas": {
+   "A": "O TNF é um mediador importante e iniciador da cascata inflamatória, mas seu pico é mais precoce e efêmero, tornando-o menos útil como marcador prático de gravidade do que a IL-6.",
+   "B": "A IL-1 também tem cinética mais precoce e menos prática para dosagem clínica seriada do que a IL-6.",
+   "D": "O interferon beta não é o marcador classicamente citado como o de melhor correlação com a gravidade da SIRS no trauma — essa posição pertence à IL-6."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0071": {
   "conceito": "A PLACA BLOQUEADA transformou o tratamento das fraturas do úmero proximal porque resolve o problema central desse osso: no idoso, a metáfise é porótica e os parafusos convencionais não seguram. Os parafusos bloqueados, ao travarem na placa, formam um construto de ângulo fixo que não depende do atrito osso-placa. Mas essa mesma virtude cria a complicação característica da técnica: a PERFURAÇÃO CONDRAL — o 'cut-out' dos parafusos para dentro da articulação glenoumeral. O mecanismo é bem compreendido. Os parafusos são posicionados o mais próximo possível do osso subcondral, porque é ali que a ancoragem é melhor. Como o construto é rígido e não colapsa, quando a fratura perde altura — por reabsorção do foco, por colapso em VARO, por falha da coluna medial ou por necrose parcial da cabeça —, o osso migra em direção à placa enquanto os parafusos permanecem imóveis. O resultado é que as pontas dos parafusos, antes intraósseas, emergem através da cartilagem, produzindo dor, crepitação e destruição rápida da glenoide. É a complicação MAIS FREQUENTE da osteossíntese com placa bloqueada nesse sítio, e nem sempre é aparente na radiografia simples — exige incidências em várias rotações ou tomografia. A prevenção passa por três medidas, e todas se ligam entre si: restaurar o SUPORTE MEDIAL (reduzir a dobradiça medial e usar um parafuso de calcar, oblíquo e inferior, que impeça o colapso em varo); não avançar os parafusos até a cortical subcondral, deixando alguns milímetros de margem; e checar a posição sob radioscopia em rotação interna e externa completas, procurando a ponta de cada parafuso em todos os planos. O colapso em VARO, a osteonecrose e o retardo de consolidação são complicações reais e frequentemente encadeadas com essa — mas é a perfuração condral que mais leva à reoperação.",
   "correta": "D. A perfuração condral dos parafusos é a complicação mais frequente: o construto bloqueado não colapsa, de modo que, quando a fratura perde altura, os parafusos permanecem parados e emergem através da cartilagem da cabeça umeral.",
@@ -1801,6 +1812,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0214": {
+  "conceito": "A TRÍADE LETAL do politraumatizado descreve três condições fisiológicas que se retroalimentam num ciclo vicioso, cada uma piorando as outras duas, e que juntas explicam por que um paciente pode deteriorar rapidamente apesar de intervenções aparentemente adequadas. A HIPOTERMIA reduz a atividade enzimática das cascatas de coagulação e compromete a função plaquetária, favorecendo a COAGULOPATIA; a coagulopatia, por sua vez, perpetua o sangramento, que reduz a perfusão tecidual e leva ao metabolismo anaeróbico, produzindo ACIDOSE; e a acidose, por seu turno, compromete ainda mais a função das próprias enzimas de coagulação e a contratilidade miocárdica, agravando tanto a coagulopatia quanto a própria hipotermia (pela redução da perfusão periférica e da produção de calor metabólico). É esse ciclo fechado e autoperpetuante — hipotermia, acidose e coagulopatia — que justifica a estratégia de CONTROLE DE DANOS na cirurgia de trauma: interromper o ciclo o mais cedo possível, priorizando o controle rápido de hemorragia e a correção fisiológica sobre a reconstrução anatômica definitiva imediata.",
+  "correta": "C. A tríade letal do politraumatizado é composta por hipotermia, acidose e coagulopatia — três condições que se retroalimentam num ciclo vicioso autoperpetuante.",
+  "incorretas": {
+   "A": "A anúria não é um dos componentes clássicos da tríade letal, que é hipotermia, acidose e coagulopatia.",
+   "B": "Nem a alcalose nem a anúria correspondem aos componentes clássicos dessa tríade — o distúrbio ácido-base característico é a acidose, não a alcalose.",
+   "D": "A alcalose não é o distúrbio ácido-base da tríade letal — é a acidose, decorrente do metabolismo anaeróbico por hipoperfusão tecidual."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0217": {
   "conceito": "O tratamento CONSERVADOR da fratura do acetábulo é uma opção válida quando o traço não compromete a integridade do TETO acetabular — a porção da cúpula que sustenta a carga do peso corporal. As fraturas TRANSVERSAS BAIXAS (infratectais) são o exemplo clássico dessa situação: o traço passa ABAIXO do teto, deixando a porção de sustentação de carga intacta e ligada ao ilíaco, de modo que, desde que a cabeça femoral permaneça bem centrada e congruente (confirmado pelas medidas do arco de Matta, discutidas em outra questão deste acervo), o paciente pode ser tratado sem cirurgia, com restrição de carga e acompanhamento radiográfico. Em contraste, a fratura de DUPLA COLUNA compromete toda a relação entre o acetábulo e o ilíaco; a fratura DESVIADA DA COLUNA ANTERIOR já implica incongruência articular; e a fratura de PAREDE POSTERIOR COM GRANDE FRAGMENTO costuma trazer risco de instabilidade da articulação, com possibilidade de luxação recorrente — todas situações que, ao contrário da transversa baixa, tipicamente demandam correção cirúrgica.",
   "correta": "B. As fraturas transversas baixas (infratectais), por não comprometerem o teto de sustentação de carga do acetábulo, são o exemplo clássico de indicação de tratamento conservador.",
@@ -2039,6 +2061,17 @@
    "A": "A fratura isolada dos ramos púbicos é um achado mais inespecífico, presente em diversos padrões de lesão pélvica, não especificamente sugestivo de cisalhamento vertical.",
    "B": "A fratura do córtex sacral anterior é mais associada ao padrão de compressão lateral (impacção da asa sacral), não ao cisalhamento vertical.",
    "C": "A diástase da sínfise púbica de 2,5 cm é o critério clássico de instabilidade na compressão ântero-posterior, não o achado específico do cisalhamento vertical."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0244": {
+  "conceito": "O ÍNDICE MESS (Mangled Extremity Severity Score) foi desenvolvido para objetivar a decisão mais difícil da traumatologia de extremidades — tentar salvar o membro ou indicar amputação primária — somando pontos em quatro categorias: a ENERGIA DO TRAUMA (do baixo impacto ao esmagamento de alta energia), a ISQUEMIA do membro (ausente, leve a moderada, ou grave, com esta última tendo sua pontuação DOBRADA se a isquemia já dura mais de seis horas), o CHOQUE sistêmico (pressão arterial normal, hipotensão transitória, ou hipotensão persistente) e a IDADE do paciente (categorizada em faixas etárias). Entre essas quatro categorias, a ISQUEMIA e a ENERGIA DO TRAUMA se destacam por refletir diretamente a viabilidade biológica do membro — quanto mais tempo de isquemia e quanto maior a energia do trauma, menor a chance de recuperação funcional satisfatória mesmo com um esforço de salvamento bem-sucedido.",
+  "correta": "C. A isquemia e a energia do trauma são duas das quatro categorias que compõem a pontuação do índice MESS, refletindo diretamente a viabilidade biológica do membro lesado.",
+  "incorretas": {
+   "A": "O tempo de sangramento isolado não é uma das quatro categorias do MESS — a categoria relacionada é o choque sistêmico (pressão arterial), não o tempo de sangramento em si.",
+   "B": "O acometimento múltiplo de membros não é uma das categorias do MESS, que avalia um único membro por vez; a idade, sim, é uma categoria real do escore.",
+   "D": "Doenças sistêmicas prévias não compõem o índice MESS, que se baseia em energia do trauma, isquemia, choque e idade."
   },
   "geradoEm": "2026-09-14",
   "conferido": false
@@ -2683,6 +2716,17 @@
   "geradoEm": "2026-09-14",
   "conferido": false
  },
+ "trauma-0317": {
+  "conceito": "Assim como em outras questões deste acervo sobre o mesmo tema, o mediador inflamatório que mais se correlaciona com a gravidade do politraumatismo é a INTERLEUCINA-6 (IL-6). Diferente de outras citocinas da cascata inflamatória inicial — como o TNF e a IL-1, de pico mais precoce e efêmero —, a IL-6 se eleva de forma proporcional à magnitude da lesão tecidual e permanece detectável por tempo suficiente para funcionar como um marcador prático e confiável de gravidade, sendo inclusive usada em protocolos de pesquisa e, em alguns serviços, na prática clínica para estratificar o risco de complicações como a síndrome do desconforto respiratório agudo e a disfunção de múltiplos órgãos no paciente politraumatizado.",
+  "correta": "B. A IL-6 é o mediador inflamatório que mais se correlaciona com a gravidade do politraumatismo, por sua elevação proporcional à magnitude da lesão e sua cinética mais prática para dosagem clínica.",
+  "incorretas": {
+   "A": "A IL-1 tem cinética mais precoce e efêmera, sendo menos útil como marcador prático de gravidade do que a IL-6.",
+   "C": "A IL-10 é uma citocina predominantemente ANTI-inflamatória, envolvida na resposta compensatória que contrabalança a inflamação, não o marcador mais correlacionado com a gravidade do trauma.",
+   "D": "A IL-11 não é o mediador classicamente citado como o de melhor correlação com a gravidade do politraumatismo — essa posição pertence à IL-6."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0318": {
   "conceito": "O complexo ligamentar colateral LATERAL do cotovelo tem quatro componentes: o ligamento colateral radial (do epicôndilo lateral ao ligamento anular), o LIGAMENTO COLATERAL ULNAR LATERAL — o LCUL, que é o principal deles, indo do epicôndilo lateral à crista do supinador na ulna e contornando por trás a cabeça do rádio —, o ligamento anular e o ligamento colateral acessório. Todos convergem para uma ORIGEM COMUM no epicôndilo lateral, e esse ponto de origem não é qualquer ponto: ele coincide com o CENTRO DA ESFERA DO CAPÍTULO, isto é, com o eixo de rotação do cotovelo. É por isso que ali a distância até a inserção ulnar permanece praticamente constante ao longo de todo o arco de flexo-extensão — o PONTO ISOMÉTRICO. Na luxação posterolateral, o mecanismo de O'Driscoll (carga axial, valgo e supinação sobre o cotovelo semifletido) traciona esse complexo, e a falência ocorre de forma característica por AVULSÃO NA ORIGEM UMERAL, arrancando o feixe do epicôndilo lateral — frequentemente com um fragmento ósseo minúsculo, e não raro em continuidade com a origem dos extensores, que é elevada junto. A ruptura intrassubstancial, no meio do ligamento, é bem menos comum. Isso tem duas implicações cirúrgicas diretas. Primeira, o reparo é uma REINSERÇÃO, e não uma sutura término-terminal: usam-se âncoras ou pontos transósseos no epicôndilo lateral, e o ponto de fixação precisa ser o isométrico — fixar POSTERIOR a ele deixa o ligamento frouxo em extensão, que é justamente a posição em que a instabilidade se manifesta, e fixar DISTAL encurta o trajeto e afrouxa a montagem. Segunda, o tensionamento se faz com o antebraço PRONADO (posição que reduz a subluxação rotatória posterolateral) e o cotovelo a 90 graus, e a reabilitação segue em pronação — a regra espelhada é: reparo lateral, pronação; reparo medial, supinação; ambos reparados, neutra.",
   "correta": "A. A lesão mais frequente do complexo colateral lateral na tríade terrível é a AVULSÃO NA SUA ORIGEM, no epicôndilo lateral — motivo pelo qual o reparo é uma reinserção com âncora ou ponto transósseo no ponto isométrico, e não uma sutura no meio do ligamento.",
@@ -3068,6 +3112,28 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0364": {
+  "conceito": "O ISS (Injury Severity Score) soma o quadrado das três piores pontuações da escala AIS (Abbreviated Injury Scale) em regiões corporais diferentes, produzindo um valor único que resume a gravidade global do trauma num paciente com lesões em múltiplas regiões. O limiar mais amplamente citado na literatura internacional para definir 'trauma grave' ou 'politraumatismo' é um ISS MAIOR QUE 15 (ou seja, a partir de 16) — valor consagrado desde os trabalhos originais de Baker e colaboradores e ainda hoje usado como referência em registros de trauma. Esta questão específica adota o valor de 17 como o ponto de corte, um número próximo ao classicamente citado, mas que o examinador escolheu como resposta — reforçando a importância de saber a ORDEM DE GRANDEZA desse limiar (em torno de 15 a 17, e não 8, 24 ou 38) mais do que memorizar um único valor absoluto e definitivo, já que fontes diferentes podem arredondar ou adotar convenções ligeiramente distintas.",
+  "correta": "B. O valor de 17 é o adotado nesta questão como pontuação mínima do ISS para definir politraumatismo — próximo ao limiar classicamente mais citado na literatura internacional, de ISS maior que 15.",
+  "incorretas": {
+   "A": "8 é um valor bem abaixo da ordem de grandeza classicamente citada (em torno de 15 a 17) para definir politraumatismo pelo ISS.",
+   "C": "24 já excede a ordem de grandeza classicamente citada como limiar mínimo, que gira em torno de 15 a 17.",
+   "D": "38 é um valor bem acima do limiar mínimo classicamente citado, correspondendo antes a uma lesão de gravidade extrema do que ao limiar de definição de politraumatismo."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0365": {
+  "conceito": "Assim como em outras questões deste acervo sobre o mesmo tema, entre os exames laboratoriais disponíveis para avaliar a RESPOSTA SISTÊMICA ao politraumatismo, a dosagem da IL-6 é a que melhor reflete a magnitude dessa resposta inflamatória. Diferente de exames mais genéricos como o hematócrito (que reflete perda sanguínea, não necessariamente a resposta inflamatória em si), o DHL (um marcador inespecífico de lesão celular em geral) ou o plaquetograma (mais relacionado à coagulação do que à resposta inflamatória sistêmica propriamente dita), a IL-6 é a citocina cuja elevação sérica se correlaciona de forma mais consistente e proporcional com a magnitude da lesão tecidual e com o risco de complicações inflamatórias sistêmicas subsequentes, tornando-a a escolha mais específica entre as opções apresentadas para essa finalidade.",
+  "correta": "C. A IL-6 é o exame mais específico entre as opções para avaliar a resposta sistêmica ao politraumatismo, por sua correlação direta com a magnitude da resposta inflamatória.",
+  "incorretas": {
+   "A": "O hematócrito reflete perda sanguínea, não especificamente a resposta inflamatória sistêmica ao trauma.",
+   "B": "O DHL é um marcador inespecífico de lesão celular em geral, sem a especificidade da IL-6 para a resposta inflamatória sistêmica.",
+   "D": "O plaquetograma está mais relacionado à avaliação da coagulação do que à resposta inflamatória sistêmica propriamente dita."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0366": {
   "conceito": "As séries epidemiológicas clássicas da síndrome compartimental aguda — em especial a de McQueen e Court-Brown, com centenas de casos — desenharam um perfil bem definido de causas, e vale guardar a ordem. A FRATURA DIAFISÁRIA DA TÍBIA é de longe a primeira, respondendo por cerca de um terço a 40% de todos os casos: a perna tem quatro compartimentos apertados, o compartimento anterior é o menor e mais rígido de todos, e o foco de fratura despeja hematoma diretamente nele. Em segundo lugar vêm as LESÕES DE PARTES MOLES SEM FRATURA, com cerca de um quarto dos casos — o que é o dado mais contraintuitivo e mais importante da lista: esmagamentos, contusões graves, lesões por reperfusão após isquemia arterial, extravasamento de infusão, uso de anticoagulantes, drogas injetáveis e posicionamento prolongado. A ausência de fratura é, aliás, um fator de RETARDO diagnóstico, porque baixa a suspeição. Em terceiro vem a fratura do RÁDIO DISTAL, a mais comum do membro superior. O perfil demográfico completa o quadro: HOMEM JOVEM, abaixo dos 35 anos, é o paciente típico — atribui-se isso à maior massa muscular dentro de compartimentos de complacência fixa e à maior exposição a traumas de alta energia. Dois corolários práticos. Primeiro, a suspeição não pode depender da presença de fratura nem da gravidade aparente da lesão: quase um quarto dos casos ocorre sem osso quebrado. Segundo, fraturas EXPOSTAS não protegem — a abertura da pele não descomprime as fáscias, e a incidência nesse grupo é igual ou maior, pela energia envolvida. O diagnóstico permanece clínico (dor desproporcional, dor ao estiramento passivo, parestesia), e a fasciotomia ampla é o único tratamento.",
   "correta": "C. As principais causas são a FRATURA DIAFISÁRIA DA TÍBIA — de longe a primeira, com cerca de um terço dos casos — e as LESÕES DE PARTES MOLES sem fratura, que respondem por cerca de um quarto e são a causa mais frequentemente subestimada.",
@@ -3397,6 +3463,17 @@
    "C": "A região posteromedial é a sede característica da ossificação heterotópica do QUEIMADO, entre o epicôndilo medial e o olécrano, com neuropatia ulnar frequentemente associada. É o lado oposto ao da lesão descrita no enunciado."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0410": {
+  "conceito": "A decisão entre FIXAÇÃO INTERNA DEFINITIVA PRECOCE (early total care) e CONTROLE DE DANOS ORTOPÉDICO (fixação externa temporária, com fixação definitiva adiada) no paciente politraumatizado depende, antes de tudo, da condição FISIOLÓGICA do paciente no momento da decisão — não apenas do padrão de fratura em si. A fixação definitiva precoce, com suas vias de acesso maiores e seu tempo cirúrgico mais prolongado, representa uma carga fisiológica adicional ('segundo golpe') que um paciente já comprometido não tolera bem, podendo precipitar ou agravar a síndrome da resposta inflamatória sistêmica e a disfunção de múltiplos órgãos. Por isso, ela é melhor indicada nos pacientes ESTÁVEIS — aqueles que já demonstram parâmetros hemodinâmicos, respiratórios, de coagulação e de temperatura adequados, com reserva fisiológica suficiente para tolerar bem essa carga cirúrgica adicional sem risco de descompensação. Pacientes instáveis ou 'borderline' (limítrofes), por outro lado, são o público-alvo do controle de danos, justamente para evitar que a cirurgia se torne o fator que precipita a deterioração.",
+  "correta": "C. A fixação interna definitiva precoce é melhor indicada nos pacientes estáveis, que têm reserva fisiológica suficiente para tolerar bem a carga cirúrgica adicional sem risco de descompensação.",
+  "incorretas": {
+   "A": "Pacientes instáveis são justamente o público-alvo do controle de danos ortopédico, não da fixação definitiva precoce, que exigiria reserva fisiológica que eles não têm no momento.",
+   "B": "Pacientes desfavoráveis ('borderline'), de forma semelhante aos instáveis, também não são o público-alvo ideal da fixação definitiva precoce.",
+   "D": "'Favoráveis' não é a categoria fisiológica classicamente usada nessa estratificação — o termo correto para o paciente candidato à fixação precoce é 'estável'."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0412": {
@@ -3999,6 +4076,18 @@
   "geradoEm": "2026-09-14",
   "conferido": false
  },
+ "trauma-0481": {
+  "conceito": "Os critérios diagnósticos clássicos da SÍNDROME DA RESPOSTA INFLAMATÓRIA SISTÊMICA (SIRS) — dos quais dois ou mais precisam estar presentes para o diagnóstico — têm limiares numéricos precisos que costumam ser alvo de pegadinha quando alterados sutilmente nas alternativas de uma questão. Os quatro critérios reais são: TEMPERATURA corporal acima de 38°C ou abaixo de 36°C; FREQUÊNCIA CARDÍACA acima de 90 bpm; FREQUÊNCIA RESPIRATÓRIA acima de 20 incursões por minuto OU PaCO2 ABAIXO DE 32 mmHg (esse último funcionando como um critério alternativo ao da frequência respiratória, para os pacientes sob ventilação mecânica, por exemplo); e CONTAGEM DE LEUCÓCITOS acima de 12.000 ou abaixo de 4.000 por mm³. Entre as alternativas desta questão, apenas o critério de PaCO2 abaixo de 32 mmHg reproduz fielmente um dos quatro critérios reais — todos os demais alteram sutilmente os valores numéricos verdadeiros (temperatura, frequência cardíaca, frequência respiratória e contagem de leucócitos), tornando-os, tecnicamente, critérios incorretos para o diagnóstico de SIRS.",
+  "correta": "D. A PaCO2 abaixo de 32 mmHg é um dos critérios reais e válidos para o diagnóstico de SIRS, funcionando como alternativa ao critério de frequência respiratória elevada.",
+  "incorretas": {
+   "A": "O critério real de temperatura é acima de 38°C ou abaixo de 36°C — os valores de 39°C e 34°C citados nesta alternativa não correspondem aos limiares corretos.",
+   "B": "O critério real de frequência cardíaca é acima de 90 bpm, não acima de 120 bpm como esta alternativa afirma.",
+   "C": "O critério real de frequência respiratória é acima de 20 incursões por minuto, não acima de 40 como esta alternativa afirma.",
+   "E": "O critério real de contagem de leucócitos é acima de 12.000 (ou abaixo de 4.000), não acima de 8.000 como esta alternativa afirma."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0482": {
   "conceito": "A MÃO tem DEZ compartimentos, e conhecê-los é o que permite uma fasciotomia completa — que é a única eficaz. São eles: o TENAR, o HIPOTENAR, o do ADUTOR DO POLEGAR, os QUATRO INTERÓSSEOS DORSAIS e os TRÊS INTERÓSSEOS PALMARES (alguns autores agrupam os interósseos em quatro compartimentos dorsais e três palmares, chegando ao mesmo total). O compartimento TENAR contém os três músculos tenares propriamente ditos: o ABDUTOR CURTO DO POLEGAR, o FLEXOR CURTO DO POLEGAR e o OPONENTE DO POLEGAR — todos inervados pelo ramo recorrente do nervo mediano. É importante notar quem NÃO pertence a ele: o ADUTOR DO POLEGAR ocupa um compartimento PRÓPRIO, separado, e é inervado pelo ramo profundo do nervo ULNAR — distinção que tem consequência cirúrgica direta, porque descomprimir o tenar sem abrir o compartimento do adutor deixa músculo isquêmico para trás. Os LUMBRICAIS não estão em compartimento tenar: eles ocupam os canais lumbricais, que se comunicam com o espaço palmar médio; e os FLEXORES PROFUNDOS DOS DEDOS são músculos do ANTEBRAÇO, cujos tendões apenas atravessam a mão — a sua isquemia é a que produz a contratura de Volkmann. A síndrome compartimental da mão ocorre por esmagamento, queimadura, infiltração de infusão, injeção sob pressão e fraturas múltiplas dos metacarpos, e o sinal característico, além da dor desproporcional e da dor ao estiramento passivo, é a postura em EXTENSÃO das metacarpofalângicas com FLEXÃO das interfalângicas — a posição intrínseca-minus, ou de garra. A fasciotomia se faz por duas incisões dorsais longitudinais sobre o segundo e o quarto metacarpos (que abrem os interósseos e, através do primeiro espaço, o adutor), acrescidas de incisões radial para o tenar e ulnar para o hipotenar, e da liberação do túnel do carpo.",
   "correta": "B. O ABDUTOR CURTO DO POLEGAR pertence ao compartimento tenar, ao lado do flexor curto e do oponente do polegar — os três inervados pelo ramo recorrente do nervo mediano.",
@@ -4046,6 +4135,28 @@
   },
   "alerta": "O quadro clínico descrito no enunciado não corresponde a uma fratura do escafoide: deformidade dorsal e INCAPACIDADE DE ESTENDER OS DEDOS após esmagamento no dorso da mão apontam para lesão dos tendões extensores ou fratura dos metacarpos. A fratura do escafoide preserva a extensão ativa dos dedos e se manifesta por dor na tabaqueira anatômica e no tubérculo. A resposta do gabarito se sustenta apenas pela frequência do escafoide entre as fraturas do carpo; o enunciado merece conferência.",
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0487": {
+  "conceito": "A estratégia de 'DEFINITIVE EARLY CARE' — fixação definitiva precoce das fraturas, incluindo o fêmur, mesmo num paciente politraumatizado, desde que fisiologicamente estável — exige cautela especial numa combinação específica: FRATURA DO FÊMUR em paciente com TRAUMA TORÁCICO associado. O motivo é o fenômeno do 'SEGUNDO GOLPE': a fresagem e a fixação intramedular do fêmur liberam êmbolos de gordura e mediadores inflamatórios na circulação, uma carga que um pulmão já lesado pelo trauma torácico (contusão pulmonar, por exemplo) tolera muito pior do que um pulmão saudável — podendo precipitar ou agravar a síndrome do desconforto respiratório agudo. Esse é um dos achados mais bem documentados na literatura de controle de danos ortopédico (os trabalhos de Pape e colaboradores sobre o 'segundo golpe' são a referência clássica), e é o que justifica considerar uma abordagem mais cautelosa — fixação externa temporária, com a definitiva adiada — especificamente nesse cenário combinado.",
+  "correta": "D. A combinação de fratura do fêmur com trauma torácico associado exige cautela especial na estratégia de fixação precoce, pelo risco de o 'segundo golpe' da fresagem/fixação agravar a lesão pulmonar já existente.",
+  "incorretas": {
+   "A": "Fraturas da tíbia, mesmo com trauma abdominal associado, não representam a combinação de maior risco descrita para o 'segundo golpe' pulmonar, que envolve especificamente a fresagem do fêmur em paciente com lesão torácica.",
+   "B": "Fraturas da tíbia com TCE associado não são a combinação de maior risco descrita para essa cautela específica, que envolve o fêmur e o trauma torácico.",
+   "C": "Fraturas do fêmur com TCE associado exigem atenção (evitar hipotensão que comprometa a perfusão cerebral), mas a cautela mais especificamente associada ao fenômeno do segundo golpe pulmonar envolve o trauma torácico, não o TCE."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0488": {
+  "conceito": "A conversão de fixação externa temporária para osteossíntese definitiva — parte central da estratégia de controle de danos ortopédico — precisa respeitar uma janela de tempo específica para não coincidir com o pico da resposta inflamatória sistêmica do paciente ao trauma inicial. Esse pico inflamatório costuma ocorrer entre o SEGUNDO E O TERCEIRO DIA após o trauma, e realizar uma cirurgia de grande porte — com vias de acesso extensas, como exige a conversão para fixação definitiva — justamente nesse período expõe o paciente a um verdadeiro 'segundo golpe' cirúrgico somado ao pico inflamatório já em curso, aumentando o risco de complicações como a síndrome do desconforto respiratório agudo e a disfunção de múltiplos órgãos. Por isso, a recomendação é evitar a conversão definitiva exatamente nessa janela crítica, preferindo realizá-la mais precocemente (nas primeiras 24 a 48 horas, antes que a resposta inflamatória atinja seu pico) ou mais tardiamente (após o quinto dia, quando essa resposta já regrediu).",
+  "correta": "A. A conversão para osteossíntese definitiva entre o segundo e o terceiro dia após o trauma coincide com o pico da resposta inflamatória sistêmica, tendo pior prognóstico do que se realizada mais precoce ou mais tardiamente.",
+  "incorretas": {
+   "B": "O período entre o quinto e o sexto dia já está além do pico inflamatório mais crítico, sendo geralmente considerado uma janela mais segura para a conversão do que o período de 2º a 3º dia.",
+   "C": "O período de 5º a 10º dia também está além do pico inflamatório mais crítico, sendo geralmente uma janela mais favorável para a conversão definitiva.",
+   "D": "O período de 14º a 16º dia está ainda mais distante do pico inflamatório agudo, não correspondendo à janela de maior risco descrita para essa conversão."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0489": {
@@ -4947,6 +5058,17 @@
    "A": "1 cm é uma margem menor do que a classicamente recomendada, que gira em torno de 4 cm, para garantir fixação segura sem violar a incisura intercondilar.",
    "B": "2 cm também é uma margem menor do que a classicamente recomendada para essa fixação específica.",
    "D": "8 cm excede a margem classicamente recomendada, que é bem menor, em torno de 4 cm."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0625": {
+  "conceito": "A janela ideal para o TRATAMENTO DEFINITIVO PRECOCE no paciente politraumatizado fisiologicamente estável situa-se entre 24 E 48 HORAS após o trauma. Esse intervalo específico busca um equilíbrio: é tempo suficiente para completar a reanimação inicial, estabilizar os parâmetros fisiológicos do paciente e realizar toda a investigação diagnóstica necessária, mas ainda ANTES de o pico da resposta inflamatória sistêmica se instalar — pico esse que, discutido em outra questão deste acervo, costuma ocorrer entre o segundo e o terceiro dia após o trauma, quando um procedimento cirúrgico extenso representaria um 'segundo golpe' fisiológico particularmente arriscado. Realizar a fixação definitiva dentro dessa janela de 24 a 48 horas é, portanto, uma estratégia que aproveita o período de relativa estabilidade que precede o pico inflamatório, otimizando o desfecho sem submeter o paciente ao risco adicional de operar durante a fase mais crítica da resposta ao trauma.",
+  "correta": "C. O tratamento definitivo precoce no politraumatizado estável é idealmente realizado entre 24 e 48 horas após o trauma, período que antecede o pico da resposta inflamatória sistêmica.",
+  "incorretas": {
+   "A": "O intervalo de 6 a 12 horas é mais precoce do que o classicamente recomendado, que é entre 24 e 48 horas, para permitir tempo suficiente de reanimação e investigação diagnóstica completa.",
+   "B": "O intervalo de 12 a 24 horas também é mais precoce do que o classicamente recomendado, de 24 a 48 horas.",
+   "D": "O intervalo de 48 a 72 horas já se aproxima do pico da resposta inflamatória sistêmica (2º a 3º dia), tornando essa janela mais arriscada do que a recomendada, de 24 a 48 horas."
   },
   "geradoEm": "2026-09-14",
   "conferido": false
@@ -6031,6 +6153,17 @@
   "geradoEm": "2026-09-14",
   "conferido": false
  },
+ "trauma-0758": {
+  "conceito": "A resposta inflamatória ao trauma não é unilateral: ao mesmo tempo em que mediadores pró-inflamatórios (como IL-6, IL-8 e IL-12) amplificam a resposta de defesa do organismo, um sistema contrarregulador entra em ação para evitar que essa resposta se torne excessivamente destrutiva — um desequilíbrio que, se não controlado, contribui para a disfunção de múltiplos órgãos. Essa função contrarreguladora é exercida, entre outras células, pelos MONÓCITOS, que liberam um conjunto de citocinas ANTI-INFLAMATÓRIAS — IL-4, IL-10 e IL-13 — capazes de suprimir a produção de mediadores pró-inflamatórios e modular a atividade de outras células imunes. Esse equilíbrio entre a resposta pró-inflamatória inicial (SIRS) e essa resposta compensatória anti-inflamatória (às vezes chamada de CARS, na sigla em inglês) é o que determina, em grande parte, se o paciente politraumatizado evolui bem ou desenvolve complicações inflamatórias sistêmicas graves.",
+  "correta": "D. Os monócitos liberam IL-4, IL-10 e IL-13 como parte da resposta contrarreguladora anti-inflamatória, que busca equilibrar a resposta pró-inflamatória inicial ao trauma e evitar que ela se torne excessivamente destrutiva.",
+  "incorretas": {
+   "A": "IL-6, IL-8 e IL-12 são citocinas predominantemente PRÓ-inflamatórias, que amplificam a resposta ao trauma — o oposto do papel contrarregulador descrito na questão.",
+   "B": "As citocinas IL-4, IL-10 e IL-13 estão corretamente identificadas como anti-inflamatórias, mas são os monócitos, não os linfócitos, a célula classicamente associada a essa liberação contrarreguladora neste contexto.",
+   "C": "IL-6, IL-8 e IL-12 são citocinas pró-inflamatórias, não as que exercem a função contrarreguladora descrita na questão."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0759": {
   "conceito": "A classificação de MAYO das fraturas do olécrano combina TRÊS variáveis, e é essa combinação que dita o implante. A primeira é o DESVIO: tipo I, sem desvio (menos de 2 mm); tipos II e III, desviadas. A segunda é a ESTABILIDADE da articulação ulnoumeral: os tipos I e II são estáveis; o tipo III é instável, isto é, há subluxação ou luxação associada. A terceira é a COMINUIÇÃO, e entra como subtipo em cada categoria: subtipo A, sem cominuição; subtipo B, COMINUÍDA. O tipo I é tratado sem cirurgia, com imobilização breve e mobilização precoce. O tipo II é o mais comum, e aqui a distinção entre A e B é o ponto: o TIPO 2A — desviado, estável e SEM cominuição, o traço transverso simples — é a indicação clássica da BANDA DE TENSÃO, que converte a tração do tríceps em compressão no foco. Já o TIPO 2B — desviado, estável, mas COMINUÍDO — não pode ser tratado com banda de tensão, e a razão é mecânica: a banda de tensão precisa de um batente ósseo cortical íntegro para transformar tração em compressão; havendo cominuição, ela simplesmente ENCURTA o olécrano, colapsando os fragmentos, estreitando a incisura troclear e produzindo incongruência articular, perda de arco de movimento e artrose. O tratamento do 2B é a PLACA E PARAFUSOS, hoje em regra uma placa anatômica pré-moldada de olécrano, aplicada em posição dorsal, que funciona como dispositivo de PONTE, mantém o comprimento e a largura da incisura troclear e permite parafusos multidirecionais nos fragmentos articulares. O tipo III, instável, exige placa em qualquer subtipo, e obriga a procurar as lesões associadas — coronoide e cabeça do rádio — que caracterizam a fratura-luxação transolecraniana.",
   "correta": "C. A fratura tipo 2B de Mayo é desviada, estável e COMINUÍDA — e cominuição contraindica a banda de tensão. O tratamento é placa e parafusos, em regra placa anatômica dorsal, funcionando como ponte para preservar o comprimento e a congruência da incisura troclear.",
@@ -6505,6 +6638,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0824": {
+  "conceito": "A indicação de AMPUTAÇÃO na fratura exposta da tíbia depende de uma avaliação objetiva da viabilidade do membro, e o ÍNDICE MESS (Mangled Extremity Severity Score) é a ferramenta validada mais amplamente usada para essa decisão. Somando pontos por energia do trauma, isquemia do membro, choque sistêmico e idade do paciente, o MESS foi validado em estudos originais (Johansen e colaboradores) que demonstraram que uma pontuação IGUAL OU MAIOR QUE SETE está associada a uma probabilidade extremamente alta — próxima de 100% em algumas séries — de que a amputação, mesmo que adiada por uma tentativa inicial de salvamento, acabe sendo necessária. Esse limiar de sete pontos é o que orienta, na prática, a decisão entre insistir num esforço de reconstrução prolongado e de resultado provavelmente insatisfatório, ou proceder à amputação primária, poupando o paciente de múltiplas cirurgias, complicações e um tempo de reabilitação prolongado para um resultado que, estatisticamente, tende ao mesmo desfecho final.",
+  "correta": "A. O índice MESS igual ou maior que sete pontos é a indicação validada de amputação na fratura exposta da tíbia, associada a uma probabilidade muito alta de que o membro não seja salvável funcionalmente.",
+  "incorretas": {
+   "B": "A lesão vascular associada com seis ou mais horas de evolução é um componente que aumenta a pontuação do MESS (a isquemia grave prolongada dobra sua pontuação), mas não é isoladamente o critério de indicação — é o escore total que orienta a decisão.",
+   "C": "A lesão do nervo fibular isolada não é, por si só, um critério de amputação — o índice MESS, que soma múltiplos fatores, é o que orienta essa decisão.",
+   "D": "A neuropatia periférica associada também não é isoladamente o critério de amputação — é a pontuação total do índice MESS que orienta essa decisão."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0826": {
   "conceito": "A HEMIARTROPLASTIA (artroplastia parcial) para a fratura do úmero proximal substitui apenas a cabeça umeral, mantendo a glenoide nativa, e o seu resultado funcional depende de uma condição que não está no implante: a CONSOLIDAÇÃO ANATÔMICA DOS TUBÉRCULOS, e em especial do TUBÉRCULO MAIOR. A razão é simples — a prótese devolve a superfície articular, mas quem move o ombro é o MANGUITO ROTADOR, e o manguito só funciona se os seus tendões estiverem ancorados em osso, na posição certa e em continuidade. O tubérculo maior recebe três tendões (supraespinal, infraespinal e redondo menor), responsáveis pela elevação e pela rotação lateral ativas; se ele não consolidar, migrar superiormente ou se reabsorver, o resultado é um ombro com prótese bem posicionada e sem função — pseudoparalisia, sinal do corneteiro e retardo em rotação externa. As séries mostram justamente isso: a falha da consolidação das tuberosidades é o fator que mais se correlaciona com mau resultado, acima da técnica de cimentação, da altura ou do tamanho da cabeça protética e da retroversão do componente. Daí as regras técnicas consagradas: reancorar os tubérculos com SUTURAS TRANSÓSSEAS FORTES passadas pela JUNÇÃO TENDÃO-OSSO (e não pelo osso porótico isolado), suturá-los entre si e ao redor da haste e à diáfise, acrescentar ENXERTO ÓSSEO na região metafisária, restaurar a ALTURA e a RETROVERSÃO corretas do componente (porque uma prótese alta ou mal rodada impede a reinserção anatômica dos tubérculos) e proteger a reabilitação nas primeiras semanas. É justamente porque essa consolidação falha com frequência no idoso, em osso porótico, que a ARTROPLASTIA REVERSA se tornou a preferência acima dos 70 anos: ela transfere a função ao deltoide e não depende do manguito superior — embora também se beneficie da reconstrução dos tubérculos, sobretudo para a rotação lateral.",
   "correta": "B. O fator mais determinante é a RECONSTRUÇÃO ANATÔMICA DO TUBÉRCULO MAIOR e a sua consolidação: sem os tendões do manguito ancorados em osso e na posição certa, a prótese não produz elevação nem rotação ativas.",
@@ -6614,6 +6758,17 @@
    "D": "A deformidade visível do punho é achado tardio ou de lesão grosseira, e a maioria dos casos agudos não a apresenta: o punho costuma parecer normal à inspeção. O que se procura é a DOR à palpação da radioulnar distal, que precede qualquer deformidade."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0838": {
+  "conceito": "Assim como em outras questões deste acervo sobre o mesmo tema, o melhor marcador inflamatório para avaliar a gravidade da SIRS no paciente vítima de politrauma é a INTERLEUCINA-6 (IL-6). Sua elevação sérica ocorre de forma proporcional à magnitude da lesão tecidual e permanece detectável por tempo clinicamente útil — diferente do TNF e da IL-1, mediadores igualmente importantes na cascata inflamatória inicial, mas com picos mais precoces e efêmeros que dificultam seu uso prático como marcador de gravidade. Essa característica cinética específica da IL-6 é o que a torna a citocina de escolha, tanto em protocolos de pesquisa quanto, em alguns serviços, na prática clínica, para estratificar o risco de complicações inflamatórias sistêmicas no politraumatizado.",
+  "correta": "A. A IL-6 é o melhor marcador inflamatório para avaliar a gravidade da SIRS no paciente politraumatizado, por sua elevação proporcional à lesão e sua cinética mais adequada à dosagem clínica prática.",
+  "incorretas": {
+   "B": "A IL-1 tem cinética mais precoce e efêmera, sendo menos útil como marcador prático de gravidade do que a IL-6.",
+   "C": "O interferon beta não é o marcador classicamente citado como o de melhor correlação com a gravidade da SIRS.",
+   "D": "O TNF, apesar de ser um mediador importante e iniciador da cascata inflamatória, tem pico mais precoce e efêmero, tornando-o menos prático como marcador de gravidade do que a IL-6."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0839": {
@@ -7270,6 +7425,17 @@
   "geradoEm": "2026-09-14",
   "conferido": false
  },
+ "trauma-0915": {
+  "conceito": "Assim como discutido em outra questão deste acervo sobre a mesma escala, o índice MESS (Mangled Extremity Severity Score), usado no controle de danos do paciente politraumatizado para orientar a decisão entre salvamento e amputação do membro, soma pontos em quatro categorias: energia do trauma, isquemia do membro, choque sistêmico e IDADE do paciente. Entre essas categorias, a ISQUEMIA e a IDADE são dois componentes reais da pontuação — a isquemia refletindo diretamente o tempo de comprometimento da viabilidade tecidual do membro (com pontuação dobrada se ultrapassar seis horas), e a idade refletindo a menor capacidade de cicatrização e reabilitação funcional em pacientes mais velhos, fator que pesa na decisão final mesmo quando o membro é tecnicamente salvável.",
+  "correta": "A. A isquemia e a idade são duas das quatro categorias que compõem a pontuação do índice MESS, ao lado da energia do trauma e do choque sistêmico.",
+  "incorretas": {
+   "B": "O tempo de sangramento isolado não é uma categoria do MESS — a categoria relacionada ao estado hemodinâmico é o choque sistêmico (pressão arterial), avaliado de forma mais ampla.",
+   "C": "O MESS não avalia somente lesões ósseas — ele combina energia do trauma, isquemia, choque e idade, incluindo fatores sistêmicos e vasculares, não apenas o osso.",
+   "D": "Doenças sistêmicas prévias não compõem as quatro categorias do índice MESS."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0916": {
   "conceito": "A COXA tem TRÊS compartimentos delimitados pela fáscia lata e por três septos intermusculares que se dirigem à linha áspera do fêmur: o ANTERIOR (quadríceps, sartório e iliopsoas distal, com o NERVO FEMORAL e os vasos femorais), o POSTERIOR (isquiotibiais, com o NERVO CIÁTICO) e o MEDIAL (adutores, grácil e pectíneo, com o NERVO OBTURATÓRIO). A síndrome compartimental da coxa é RARA em comparação com a da perna, porque esses compartimentos são amplos, com fáscia relativamente complacente — e é justamente essa complacência que a torna perigosa: quando a pressão finalmente sobe, já houve perda sanguínea maciça, e o diagnóstico costuma chegar tarde. O compartimento ANTERIOR é de longe o mais acometido, por três motivos somados: é o que contém a maior massa muscular do corpo, o quadríceps; é o que recebe diretamente o hematoma da fratura do fêmur e da contusão anterior, que é o mecanismo dominante (trauma fechado de alta energia); e é o mais superficial, portanto o mais exposto ao impacto direto. O teste de estiramento passivo correspondente é a FLEXÃO passiva do joelho, que estira o quadríceps e reproduz a dor. Os fatores agravantes a procurar ativamente são a COAGULOPATIA (do politraumatizado ou por anticoagulação), a TRAÇÃO longitudinal prolongada, a compressão externa por posicionamento ou por calças pneumáticas antichoque e a lesão vascular com reperfusão. A fasciotomia se faz por uma incisão LATERAL longa, que abre o compartimento anterior e, incisando o septo intermuscular lateral, alcança também o posterior; o compartimento medial, raramente acometido, exige incisão medial própria. O prognóstico é reservado, com taxas altas de mionecrose, infecção e mortalidade — reflexo da gravidade do trauma que a produz.",
   "correta": "A. O compartimento ANTERIOR é o mais acometido na coxa: contém a maior massa muscular do corpo, é o mais superficial e exposto ao impacto direto, e recebe diretamente o hematoma da fratura do fêmur e da contusão do quadríceps.",
@@ -7457,6 +7623,17 @@
   "geradoEm": "2026-09-14",
   "conferido": false
  },
+ "trauma-0937": {
+  "conceito": "As fraturas da diáfise do fêmur resultam, na grande maioria dos casos, de mecanismos de trauma de ALTA ENERGIA (colisões automobilísticas, atropelamentos, quedas de altura) — e essa mesma magnitude de energia frequentemente acomete outras regiões do corpo simultaneamente. Entre as lesões mais comumente associadas, destacam-se a fratura ipsilateral de TÍBIA E FÍBULA (configurando o quadro de 'joelho flutuante', discutido em outras questões deste acervo) e o TRAUMA DE ARCOS COSTAIS E ESTERNO — refletindo o padrão geral de politraumatismo por alta energia, em que o tórax é uma das regiões mais vulneráveis a lesão concomitante. Reconhecer essa dupla associação — tíbia/fíbula (mesmo membro) e tórax (região distante, mas igualmente exposta à mesma energia do trauma) — reforça a importância de uma avaliação sistemática completa em qualquer paciente com fratura diafisária do fêmur, e não apenas o foco na própria fratura do fêmur.",
+  "correta": "A. As fraturas mais associadas à fratura diafisária do fêmur são as de tíbia/fíbula (joelho flutuante) e as de arcos costais/esterno, refletindo o padrão geral de politraumatismo por alta energia.",
+  "incorretas": {
+   "B": "O acetábulo pode estar envolvido em traumas de alta energia, mas a associação mais comumente citada com a fratura diafisária do fêmur combina tíbia/fíbula com o tórax, não com o acetábulo.",
+   "C": "A patela pode ser lesada em alguns mecanismos específicos (como o trauma direto no joelho flexionado), mas a associação mais comumente citada envolve tíbia/fíbula, não a patela isoladamente.",
+   "D": "Nem a patela nem o acetábulo correspondem à associação mais comumente citada com a fratura diafisária do fêmur, que é tíbia/fíbula e tórax."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0939": {
   "conceito": "A CLAVÍCULA tem uma embriologia singular, e conhecê-la explica várias das suas peculiaridades clínicas. Ela é o PRIMEIRO OSSO DO CORPO A OSSIFICAR, começando por volta da QUINTA SEMANA de gestação — e é também o ÚLTIMO a completar a ossificação, com a fusão da epífise medial ocorrendo apenas entre os 23 e os 25 anos. Além disso, ela é o único osso longo que ossifica predominantemente por via INTRAMEMBRANOSA (a partir de dois centros primários que se fundem por volta da quinta semana), com contribuição endocondral apenas nas extremidades — o que a aproxima mais dos ossos do crânio do que dos demais ossos longos. Três consequências práticas derivam disso. Primeira: a clavícula tem enorme capacidade de CONSOLIDAÇÃO e de REMODELAÇÃO, sobretudo na criança, o que sustenta o tratamento conservador de quase todas as fraturas pediátricas, mesmo com desvio importante. Segunda: a EPÍFISE MEDIAL, por fundir tão tarde, faz com que o que parece uma LUXAÇÃO esternoclavicular no adolescente e no adulto jovem seja, na maioria das vezes, um DESCOLAMENTO FISÁRIO — com bom potencial de remodelação e tratamento em regra incruento (o tipo IV do grupo III de Craig). Terceira: alterações do desenvolvimento clavicular aparecem em doenças que afetam a ossificação intramembranosa, como a DISOSTOSE CLEIDOCRANIANA, em que a clavícula é hipoplásica ou ausente e o paciente consegue aproximar os ombros à frente do tórax. Vale ainda lembrar que a clavícula é o osso mais fraturado do adulto jovem e a fratura mais comum do recém-nascido no parto, sobretudo na distocia de ombro.",
   "correta": "A. A ossificação da clavícula começa na QUINTA SEMANA de gestação — ela é o primeiro osso do corpo a ossificar e, por outro lado, o último a completar a ossificação, com a epífise medial fundindo entre os 23 e os 25 anos.",
@@ -7554,6 +7731,17 @@
    "D": "A direção está certa, mas a fratura do coronoide isolada é menos frequente que a da cabeça do rádio nesse contexto — e, quando as duas coexistem com a luxação, o quadro passa a ser a tríade terrível."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0948": {
+  "conceito": "Assim como discutido em outra questão deste acervo sobre a mesma escala, o índice MESS (Mangled Extremity Severity Score) tem um limiar validado a partir do qual a amputação passa a ser a conduta indicada: uma pontuação IGUAL OU MAIOR QUE SETE. Esse valor foi estabelecido nos estudos de validação original da escala (Johansen e colaboradores), que demonstraram uma probabilidade extremamente alta de que o membro, mesmo submetido a um esforço de salvamento, acabe evoluindo para amputação de qualquer forma — tornando a amputação primária, nesse patamar de pontuação, a conduta que poupa o paciente de múltiplas cirurgias e complicações para, estatisticamente, um desfecho final semelhante.",
+  "correta": "C. A partir de um escore MESS igual ou maior que sete, está indicada a amputação do membro, valor validado nos estudos originais da escala.",
+  "incorretas": {
+   "A": "5 é um valor abaixo do limiar validado para indicação de amputação, que é sete.",
+   "B": "6 também é um valor abaixo do limiar validado, que é sete.",
+   "D": "8 é um valor acima do limiar mínimo validado — a indicação já se estabelece a partir de sete pontos, não apenas a partir de oito."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0949": {
