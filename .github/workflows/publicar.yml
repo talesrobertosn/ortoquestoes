@@ -28,6 +28,8 @@ jobs:
       - run: npm ci
       - name: Testar revisão e backup
         run: node fixtures/testar_revisao.mjs
+      - name: Testar reinício do progresso
+        run: node fixtures/testar_reinicio.mjs
       - name: Testar o detector de figura ausente
         run: python3 fixtures/testar_deteccao.py
       - name: Validar o acervo
@@ -54,3 +56,4 @@ jobs:
     steps:
       - id: publicacao
         uses: actions/deploy-pages@v4
+
