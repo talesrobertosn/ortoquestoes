@@ -107,17 +107,6 @@ export function CartaoQuestao({
     indice,
     mostrarGabarito,
   )
-  const relacionadas = useMemo(
-    () => {
-      if (!indice) return { faceis: [], dificeis: [] }
-      const atual = indice.questoes.find(item => item.id === questao.id)
-      const ordem = { facil: 1, medio: 2, dificil: 3 }
-      const nivel = atual?.d ? ordem[atual.d] : 2
-      const doTema = indice.questoes.filter(item => item.t === atual?.t && item.id !== questao.id)
-      return { faceis: doTema.filter(item => (item.d ? ordem[item.d] : 2) <= nivel).slice(0, 2), dificeis: doTema.filter(item => (item.d ? ordem[item.d] : 2) > nivel).slice(0, 2) }
-    },
-    [indice, questao.id],
-  )
 
   useEffect(() => {
     if (!atalhosAtivos) return
@@ -505,12 +494,6 @@ export function CartaoQuestao({
             </div>
 
             <Referencias itens={questao.referencias} />
-            {(relacionadas.faceis.length > 0 || relacionadas.dificeis.length > 0) && <section className="bloco-comentario nao-imprime">
-              <p className="comentario__titulo">Continue no mesmo tema</p>
-              <p className="texto-2">Mais questões de {questao.tema} para aplicar o conceito em outros contextos.</p>
-              {relacionadas.faceis.length > 0 && <div className="linha" style={{ marginTop: '0.75rem' }}><span className="meta">Para consolidar</span>{relacionadas.faceis.map((item, indiceRelacionado) => <a className="botao botao--fantasma" key={item.id} href={href(`/questao/${item.id}`)}>Questão {indiceRelacionado + 1}</a>)}</div>}
-              {relacionadas.dificeis.length > 0 && <div className="linha" style={{ marginTop: '0.75rem' }}><span className="meta">Para desafiar</span>{relacionadas.dificeis.map((item, indiceRelacionado) => <a className="botao botao--fantasma" key={item.id} href={href(`/questao/${item.id}`)}>Questão {indiceRelacionado + 1}</a>)}</div>}
-            </section>}
           </div>
         )}
 
