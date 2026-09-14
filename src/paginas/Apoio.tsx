@@ -230,6 +230,7 @@ export function DadosLocais() {
   const errosTotais = Object.values(marcadas).reduce((n, registro) => n + (registro.erros ?? (registro.c === false ? 1 : 0)), 0)
   const nome = String(conta?.user.user_metadata?.nome ?? '').trim()
   const percentualGeral = totalContadas > 0 ? totalCertas / totalContadas : null
+  const incertas = Object.values(marcadas).filter(registro => registro.confianca === 'duvida' || registro.confianca === 'chute').length
   const porConfianca = useMemo(() => {
     const grupos = { seguro: { certas: 0, total: 0 }, duvida: { certas: 0, total: 0 }, chute: { certas: 0, total: 0 } }
     for (const registro of Object.values(marcadas)) {
@@ -312,6 +313,7 @@ export function DadosLocais() {
             return <div className="numeros__celula" key={tipo}><span className="numeros__valor">{grupo.total ? `${Math.round((grupo.certas / grupo.total) * 100)}%` : '—'}</span><span className="numeros__rotulo">{rotulo} · {grupo.total} {grupo.total === 1 ? 'resposta' : 'respostas'}</span></div>
           })}
         </div>
+        {incertas > 0 && <div className="linha" style={{ marginTop: '0.75rem' }}><a className="botao botao--principal" href={href('/treinar?situacao=incertas&limite=20')}>Refazer {incertas} {incertas === 1 ? 'questão com dúvida ou chute' : 'questões com dúvida ou chute'}</a></div>}
       </section>}
 
       <section>
