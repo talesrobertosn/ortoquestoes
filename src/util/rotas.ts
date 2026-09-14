@@ -65,6 +65,7 @@ const SITUACOES: Situacao[] = [
   'favoritas',
   'revisarHoje',
   'dominadas',
+  'incertas',
 ]
 
 export function filtrosParaConsulta(filtros: Filtros): string {
@@ -117,3 +118,4 @@ export function consultaParaFiltros(consulta: URLSearchParams): Filtros {
     busca: consulta.get('busca') ?? '',
   }
 }
+
