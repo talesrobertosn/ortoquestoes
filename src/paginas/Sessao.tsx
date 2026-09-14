@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, type TouchEvent } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
 import type { Questao } from '../dados/tipos'
@@ -20,6 +20,7 @@ export function Sessao() {
   const [mapaAberto, definirMapaAberto] = useState(false)
   const [atalhosAbertos, definirAtalhosAbertos] = useState(false)
   const [erro, definirErro] = useState<string | null>(null)
+  const inicioToque = useRef<number | null>(null)
 
   const ids = sessao?.ids
   useEffect(() => {
@@ -144,9 +145,17 @@ export function Sessao() {
     finalizar()
     navegar('/resumo')
   }
+  function iniciarGesto(evento: TouchEvent) { inicioToque.current = evento.changedTouches[0]?.clientX ?? null }
+  function concluirGesto(evento: TouchEvent) {
+    const inicio = inicioToque.current; const fim = evento.changedTouches[0]?.clientX
+    inicioToque.current = null
+    if (inicio === null || fim === undefined || Math.abs(fim - inicio) < 70 || painelAberto) return
+    if (fim < inicio) avancar()
+    else irPara(posicao - 1)
+  }
 
   return (
-    <>
+    <div className="sessao-gestos" onTouchStart={iniciarGesto} onTouchEnd={concluirGesto}>
       <div className="barra-sessao nao-imprime">
         <div className="conteudo barra-sessao__interno">
           <span className="barra-sessao__texto">
@@ -293,7 +302,7 @@ export function Sessao() {
       >
         <Atalhos />
       </Painel>
-    </>
+    </div>
   )
 }
 
