@@ -333,6 +333,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0035": {
+  "conceito": "O COMPRIMENTO RADIAL (ou altura radial) é um dos três parâmetros radiográficos clássicos usados para avaliar a redução da fratura da extremidade distal do rádio — ao lado do tilt (inclinação) volar e da inclinação radial no plano coronal. Sua medida compara dois pontos de referência específicos: a PONTA DO PROCESSO ESTILOIDE DO RÁDIO e a SUPERFÍCIE ARTICULAR DA ULNA (a borda da cabeça ulnar, no nível da articulação radioulnar distal) — traçando-se uma linha perpendicular ao eixo do rádio em cada um desses pontos e medindo a distância entre elas. O valor normal dessa medida gira em torno de 11 a 12 milímetros, e um encurtamento significativo em relação a esse valor — mesmo sem outros parâmetros alterados — já é suficiente para comprometer a distribuição de carga na articulação radioulnar distal, favorecendo dor e limitação de rotação do antebraço. É importante não confundir esse parâmetro com outras combinações de pontos possíveis entre rádio e ulna, que descreveriam relações anatômicas diferentes, sem correspondência com o comprimento radial propriamente dito.",
+  "correta": "B. O comprimento radial é medido entre a ponta do processo estiloide do rádio e a superfície articular da ulna, refletindo a relação de altura entre os dois ossos no antebraço distal.",
+  "incorretas": {
+   "A": "Os processos estiloides do rádio e da ulna, tomados juntos, não são os dois pontos de referência usados para essa medida específica — é o estiloide do rádio comparado à superfície articular da ulna.",
+   "C": "As superfícies articulares do rádio e da ulna, comparadas entre si, não correspondem à medida do comprimento radial, que usa o estiloide do rádio, não sua superfície articular.",
+   "D": "A superfície articular do rádio combinada à ponta do estiloide da ulna inverte os pontos de referência corretos — é o estiloide do rádio que se compara à superfície articular da ulna."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0036": {
   "conceito": "A FRATURA DO PROCESSO LATERAL DO TÁLUS ficou conhecida como FRATURA DO SNOWBOARDER porque a sua incidência disparou com a popularização desse esporte — a bota rígida, o pé fixo à prancha e as quedas com o tornozelo em dorsiflexão e carga axial reproduzem exatamente o mecanismo. O processo lateral é uma projeção triangular da face lateral do corpo do tálus que participa de DUAS articulações: a sua face superior integra a superfície articular do tornozelo (articulando-se com o maléolo lateral) e a sua face inferior integra a FACETA POSTERIOR DA SUBTALAR. É por isso que a fratura, embora envolva um fragmento pequeno, é INTRA-ARTICULAR em duas articulações ao mesmo tempo — e por isso a consolidação viciosa ou a pseudartrose levam a dor lateral persistente e a artrose subtalar precoce. O grande problema é diagnóstico: essa fratura é confundida com 'entorse de tornozelo' na maioria das vezes, porque o quadro é o mesmo — dor e edema laterais, dificuldade de apoio — e porque o fragmento é pequeno e se esconde na radiografia. As séries mostram que a metade ou mais dos casos passa despercebida na primeira avaliação. A regra prática que se impõe é: dor lateral persistente após 'entorse', ANTERIOR e INFERIOR à ponta do maléolo lateral (e não sobre o ligamento talofibular anterior), pede TOMOGRAFIA. A classificação de HAWKINS para esse processo tem três tipos: I, fratura simples que se estende da articulação do tornozelo à subtalar; II, cominuída; III, avulsão do bico anteroinferior. O tratamento segue o tamanho e o desvio: fragmentos pequenos e não desviados vão para gesso sem carga por seis semanas; fragmentos maiores que 1 cm ou desviados mais de 2 mm exigem redução e fixação com parafusos; e os cominuídos muito pequenos são excisados.",
   "correta": "B. A fratura do 'snowboarder' é a do PROCESSO LATERAL do tálus — fragmento pequeno, intra-articular tanto no tornozelo quanto na subtalar, e sistematicamente confundido com entorse de tornozelo.",
@@ -1713,6 +1724,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0209": {
+  "conceito": "A fratura da extremidade distal do rádio, sobretudo quando o traço se estende até a articulação radioulnar distal, tem uma associação de partes moles frequentemente subestimada na avaliação inicial: a LESÃO DO COMPLEXO DA FIBROCARTILAGEM TRIANGULAR (CFCT). Esse complexo — que estabiliza a articulação radioulnar distal e absorve parte da carga transmitida pelo lado ulnar do punho — fica sujeito a lesão pelo mesmo mecanismo de carga axial e desvio que fratura o rádio, seja por avulsão direta de sua inserção no processo estiloide ulnar, seja por ruptura da própria substância fibrocartilaginosa. Estudos que investigam sistematicamente essa associação, por ressonância magnética ou artroscopia associada ao tratamento cirúrgico, relatam lesão do CFCT numa proporção alta dos casos — bem maior do que a de lesão condral isolada, fratura de ossos do carpo ou lesão neurovascular —, reforçando a importância de avaliar a estabilidade da articulação radioulnar distal mesmo depois de uma fixação anatômica satisfatória do próprio rádio.",
+  "correta": "D. A lesão do complexo da fibrocartilagem triangular é a associação mais frequente na fratura da extremidade distal do rádio, relatada numa proporção alta dos casos em séries com avaliação sistemática dessa estrutura.",
+  "incorretas": {
+   "A": "A lesão condral isolada ocorre com frequência menor do que a lesão do complexo da fibrocartilagem triangular nessa associação.",
+   "B": "A lesão neurovascular, apesar de clinicamente relevante quando presente, é bem menos frequente do que a lesão do complexo da fibrocartilagem triangular.",
+   "C": "A fratura dos ossos do carpo também ocorre com frequência menor do que a lesão do complexo da fibrocartilagem triangular como associação mais comum."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0210": {
   "conceito": "O PIRAMIDAL é o segundo osso mais fraturado do carpo, atrás apenas do escafoide, e a esmagadora maioria dessas fraturas é a chamada FRATURA DORSAL EM LASCA (dorsal chip fracture) — uma pequena avulsão da cortical dorsal, visível sobretudo na incidência em PERFIL e na oblíqua em pronação, e quase invisível na posteroanterior. O mecanismo dominante é a AVULSÃO. O piramidal recebe, na sua face dorsal, a inserção de vários ligamentos extrínsecos e intrínsecos — o radiopiramidal dorsal, o piramidoescafoide dorsal, o ligamento intercárpico dorsal e a cápsula dorsal —, e uma queda sobre a mão espalmada com o punho em flexão ou em desvio radial forçado traciona esse conjunto, arrancando um fragmento da cortical. Descreve-se também um mecanismo de IMPACÇÃO, em que a estiloide ulnar bate contra a face dorsal do piramidal na hiperextensão com desvio ulnar, produzindo lasca por choque; os dois mecanismos coexistem na literatura, mas a avulsão ligamentar é a explicação mais consistentemente apontada para o padrão dorsal em lasca. O tratamento é simples e o prognóstico bom: imobilização por três a seis semanas com o punho em posição neutra, seguida de mobilização; a maioria consolida ou evolui para uma pseudartrose fibrosa assintomática. Vale distinguir dois padrões menos comuns e mais problemáticos: a fratura do CORPO do piramidal, que costuma integrar lesões perilunares de alta energia (o piramidal é o osso da terceira etapa do arco de Mayfield) e obriga a procurar a lesão ligamentar associada; e a fratura VOLAR, que arranca o ligamento semilunopiramidal e pode gerar instabilidade em VISI. Uma dor persistente na borda ulnar do punho depois de uma 'entorse' merece perfil dedicado ou tomografia, porque essa fratura é frequentemente rotulada como distensão.",
   "correta": "A. O mecanismo mais frequente é a AVULSÃO: os ligamentos dorsais e a cápsula, inseridos na face dorsal do piramidal, arrancam um fragmento cortical na queda com o punho em flexão ou desvio radial forçado — a clássica fratura dorsal em lasca.",
@@ -2253,6 +2275,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0272": {
+  "conceito": "A fratura 'die-punch' do rádio distal é um padrão intra-articular específico: uma depressão pura da faceta LUNAR (semilunar) da superfície articular do rádio, produzida quando o carpo — sobretudo o semilunar — é impactado axialmente contra o rádio com força suficiente para 'perfurar' e afundar essa porção da superfície articular, sem produzir necessariamente um fragmento de cisalhamento associado. Na classificação AO/OTA, as fraturas articulares PARCIAIS do rádio distal (grupo B) se subdividem conforme o padrão do traço: B1 corresponde ao cisalhamento SAGITAL (o padrão da fratura do estiloide radial, ou 'chauffeur'), B2 ao cisalhamento DORSAL (padrão de Barton dorsal), e B3 à DEPRESSÃO PURA — exatamente o padrão descrito pela fratura die-punch, sem componente de cisalhamento associado, apenas o afundamento da faceta articular impactada.",
+  "correta": "B. A fratura die-punch, por ser uma depressão pura da faceta lunar sem componente de cisalhamento associado, corresponde ao subtipo B3 da classificação AO.",
+  "incorretas": {
+   "A": "B2 corresponde ao cisalhamento dorsal (padrão de Barton dorsal), um traço diferente do padrão de depressão pura da die-punch.",
+   "C": "B4 não existe como subtipo na classificação AO/OTA para o grupo B do rádio distal, que vai de B1 a B3.",
+   "D": "O grupo C corresponde às fraturas articulares COMPLETAS (toda a superfície articular separada da diáfise), diferente da die-punch, que é uma fratura articular PARCIAL (grupo B)."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0273": {
   "conceito": "A PSEUDOGARRA é a deformidade que aparece quando uma fratura do metacarpo consolida com angulação de ÁPICE DORSAL — o padrão típico da fratura do colo do quinto metacarpo, a fratura do boxeador, em que a cabeça báscula em sentido VOLAR. O nome contrapõe-se à garra verdadeira, que é neurológica (paralisia do nervo ulnar, com perda dos intrínsecos), e o ponto conceitual é justamente esse: na pseudogarra os intrínsecos estão íntegros, e a deformidade é puramente MECÂNICA, por alteração do comprimento e do braço de alavanca dos tendões. O encadeamento é o seguinte. A angulação de ápice dorsal ENCURTA o metacarpo e desloca a cabeça volarmente. O aparelho extensor, que cruza o dorso do metacarpo, fica então RELATIVAMENTE FROUXO, perdendo a capacidade de estender ativamente a interfalângica proximal com a metacarpofalângica em posição neutra. Para compensar e conseguir estender o dedo, o paciente HIPERESTENDE a metacarpofalângica, o que 'gasta' o extensor nesse nível e deixa a interfalângica proximal em FLEXÃO — o desenho da garra. O quadro se torna evidente sobretudo quando o encurtamento passa de alguns milímetros ou a angulação ultrapassa os limites tolerados. E os limites tolerados variam muito conforme o raio, porque a mobilidade das articulações carpometacarpianas compensa a angulação: no segundo e terceiro metacarpos, praticamente fixos, tolera-se pouco (da ordem de 10 a 15 graus); no quarto, cerca de 30 a 40; e no quinto, cuja carpometacarpiana é a mais móvel, aceitam-se com frequência 40 a 50 graus ou mais sem prejuízo funcional. O que NUNCA se aceita é o desvio ROTACIONAL, avaliado com os dedos fletidos e a convergência das polpas para o tubérculo do escafoide: poucos graus de rotação produzem cruzamento de dedos e são indicação cirúrgica.",
   "correta": "A. A pseudogarra combina desvio VOLAR do fragmento distal do metacarpo (angulação de ápice dorsal), EXTENSÃO compensatória da metacarpofalângica e FLEXÃO da interfalângica proximal — deformidade mecânica, com intrínsecos íntegros.",
@@ -2285,6 +2318,17 @@
   },
   "alerta": "O gabarito aponta a fratura do RÁDIO PROXIMAL como a lesão mais comumente associada à fratura do escafoide por alta energia. A associação que a literatura descreve com mais frequência — e que consta entre as alternativas, dada como errada — é a com o RÁDIO DISTAL, pelo mecanismo comum de carga axial sobre o punho em hiperextensão. O item merece conferência.",
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0276": {
+  "conceito": "A VARIÂNCIA ULNAR — a relação de comprimento entre o rádio e a ulna no plano da articulação radioulnar distal — pode se tornar POSITIVA (ulna relativamente mais longa que o rádio) por diferentes mecanismos, e distinguir entre eles é importante clinicamente. Na presença de OSTEOPOROSE, uma variância ulnar positiva pode simplesmente refletir um encurtamento gradual do rádio por microfraturas de fadiga ou por colapso trabecular ao longo do tempo, sem necessariamente indicar uma lesão ligamentar aguda. Mas na AUSÊNCIA de osteoporose, associada a uma fratura aguda do rádio distal, uma variância ulnar positiva inesperada levanta a suspeita de um mecanismo diferente: uma DISSOCIAÇÃO ESCAFOSSEMILUNAR concomitante, com colapso precoce do carpo sobre o rádio (um padrão inicial de colapso do tipo SLAC). Esse colapso carpal, ao 'afundar' o alinhamento entre o carpo e o rádio, produz o mesmo efeito radiográfico de um encurtamento relativo do rádio — mesmo sem que o próprio osso tenha, de fato, encurtado por colapso da fratura em si.",
+  "correta": "B. A variância ulnar positiva, num paciente sem osteoporose com fratura de rádio distal, sugere uma dissociação escafossemilunar associada, com colapso precoce do carpo produzindo o mesmo efeito radiográfico de um encurtamento relativo do rádio.",
+  "incorretas": {
+   "A": "A dissociação escafocapitato não é a associação classicamente descrita para esse achado radiográfico específico — a associação mais reconhecida é com a escafossemilunar.",
+   "C": "A dissociação semilunocaptato também não é a associação classicamente descrita para a variância ulnar positiva nesse contexto.",
+   "D": "A dissociação semilunopiramidal, da mesma forma, não corresponde à associação mais reconhecida para esse achado, que é a escafossemilunar."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0277": {
@@ -2694,6 +2738,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0330": {
+  "conceito": "A incidência radiográfica TANGENCIAL DORSAL (conhecida como 'sky line view') é uma ferramenta específica para detectar uma complicação técnica da fixação da fratura do rádio distal com PLACA VOLAR: a PENETRAÇÃO DE PARAFUSOS através da cortical DORSAL. Como a placa volar é colocada na face anterior do rádio e os parafusos são direcionados de anterior para posterior, um parafuso excessivamente longo pode ultrapassar a cortical dorsal e projetar-se para dentro do compartimento onde correm os tendões extensores — e essa projeção, muitas vezes discreta e de difícil visualização nas incidências radiográficas convencionais (AP e perfil, que podem ocultar a protrusão pela sobreposição óssea), é revelada de forma muito mais clara nessa incidência tangencial específica, que projeta a cortical dorsal do rádio 'de perfil', tornando visível qualquer ponta de parafuso que a ultrapasse. Identificar essa penetração precocemente é importante porque a fricção repetida do tendão contra a ponta do parafuso protruso é uma causa reconhecida de tenossinovite e, em casos mais graves, de ruptura tendínea tardia.",
+  "correta": "C. A incidência tangencial dorsal (sky line view) é realizada para detectar a penetração de parafusos na fixação com placa volar, que podem ultrapassar a cortical dorsal e agredir os tendões extensores.",
+  "incorretas": {
+   "A": "A saliência da placa volar é avaliada por outras incidências (perfil), não especificamente pela incidência tangencial dorsal, voltada para a cortical dorsal.",
+   "B": "A saliência da placa dorsal não é o achado que essa incidência específica busca detectar, que é a penetração de parafusos, não a posição da própria placa.",
+   "D": "A fixação com placa dorsal, menos comumente usada hoje do que a volar, não é o contexto clínico mais associado a essa incidência específica, criada sobretudo para a checagem pós-fixação volar."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0332": {
   "conceito": "A lesão de MONTEGGIA negligenciada — a fratura da ulna tratada sem que ninguém percebesse a luxação da cabeça do rádio — dá origem à MONTEGGIA CRÔNICA, cuja fisiopatologia precisa ser bem entendida para não se tratar a estrutura errada. O que mantém a cabeça do rádio luxada NÃO é o ligamento anular roto: é a DEFORMIDADE DA ULNA, que consolidou curta e angulada. Por isso a base do tratamento é a OSTEOTOMIA DE ABERTURA (cunha de adição) da ulna, no ápice da deformidade, restaurando comprimento e alinhamento com hipercorreção deliberada — a técnica de Hirayama. Restaurada a ulna, a cabeça do rádio em regra reduz. A questão é se ela se mantém reduzida, e é aí que entra a reconstrução ligamentar. A técnica de BELL-TAWSE reconstrói o LIGAMENTO ANULAR usando uma tira central do TENDÃO DO TRÍCEPS BRAQUIAL, deixada presa distalmente ao olécrano — o que preserva a sua vascularização e dispensa fixação proximal — e passada ao redor do colo do rádio, através de um túnel na ulna proximal, para refazer o anel que contém a cabeça. Na modificação de Lloyd-Roberts, a tira é ancorada por um túnel na ulna; há ainda variações que usam a fáscia lata ou o próprio ligamento anular residual. A escolha do tríceps não é arbitrária: ele está no campo cirúrgico do acesso posterolateral, oferece uma tira longa e resistente e fica em continuidade anatômica com o local a reconstruir. O bíceps braquial, ao contrário, é ANTERIOR e é justamente uma das forças que reluxam a cabeça do rádio — usá-lo como enxerto não faria sentido nem anatômico nem mecânico. Vale a ressalva: a indicação da Bell-Tawse é sobretudo PEDIÁTRICA, e a discussão atual é se ela acrescenta algo à osteotomia bem feita, já que muitos autores obtêm estabilidade só com a correção da ulna.",
   "correta": "B. A técnica de Bell-Tawse reconstrói o LIGAMENTO ANULAR com uma tira do tendão do TRÍCEPS braquial, mantida presa distalmente ao olécrano e passada ao redor do colo do rádio por um túnel na ulna proximal.",
@@ -3068,6 +3123,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0387": {
+  "conceito": "Os parâmetros radiográficos normais da extremidade distal do rádio são referências essenciais para avaliar a qualidade de uma redução, e é importante não confundir os diferentes ângulos entre si. O TILT (inclinação) VOLAR normal — a angulação da superfície articular do rádio em relação a uma linha perpendicular ao eixo do osso, no plano sagital — gira em torno de 11 GRAUS, com a superfície articular inclinada discretamente para a região palmar. Já a ALTURA (ou comprimento) RADIAL normal, medida entre a ponta do estiloide radial e a superfície articular da ulna, gira em torno de 12 MILÍMETROS. É comum confundir o tilt volar com a INCLINAÇÃO RADIAL no plano coronal (essa sim, em torno de 22 a 23 graus) — os dois ângulos medem planos diferentes da mesma superfície articular, e memorizar os valores corretos para cada um evita erros na avaliação pós-redução.",
+  "correta": "C. O tilt volar normal do rádio distal é de aproximadamente 11 graus, e a altura radial normal é de aproximadamente 12 milímetros.",
+  "incorretas": {
+   "A": "22 graus corresponde ao valor aproximado da inclinação radial no plano coronal, não ao tilt volar, que é de cerca de 11 graus; e 12 mm de altura radial está correto.",
+   "B": "11 graus de tilt volar está correto, mas 15 mm excede o valor normal de altura radial, que é de aproximadamente 12 mm.",
+   "D": "22 graus corresponde à inclinação radial, não ao tilt volar; e 15 mm também excede o valor normal de altura radial, que é de aproximadamente 12 mm."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0389": {
   "conceito": "O ÂNGULO INTRA-ESCAFOIDE (intrascaphoid angle) mede a angulação do próprio escafoide, e existe porque esse osso não é reto: ele é curvo, e uma fratura do colo tende a acentuar essa curvatura, produzindo a deformidade em CORCOVA (humpback). O mecanismo é constante: a cominuição se concentra na face VOLAR do colo — que é justamente onde o osso falha por tensão, dobrado sobre a estiloide radial na queda com o punho em hiperextensão e desvio radial —, de modo que, ao colapsar, o fragmento DISTAL flete e o PROXIMAL estende, com encurtamento do conjunto. A medida se faz no perfil radiográfico e, com mais precisão, na TOMOGRAFIA com cortes no eixo longo do escafoide: traçam-se perpendiculares às superfícies articulares proximal e distal de cada fragmento e mede-se o ângulo entre elas. O valor normal fica em torno de 30 graus, com variação de cerca de 5 graus para mais ou para menos, e valores acima de 35 a 45 graus caracterizam a corcova. A relevância é prática: a deformidade em corcova encurta o escafoide, desestabiliza a fileira proximal e leva à instabilidade em DISI, com o semilunar rodado dorsalmente (ângulo escafossemilunar acima de 60 a 70 graus). Uma fratura ou pseudartrose com corcova NÃO se resolve com gesso nem com um parafuso percutâneo: exige redução aberta com ENXERTO ESTRUTURAL EM CUNHA VOLAR (crista ilíaca tricortical, técnica de Fisk-Fernandez) para reabrir o ângulo, restaurar o comprimento e devolver o semilunar à posição neutra. Além do ângulo intra-escafoide, dois outros parâmetros medem a mesma deformidade: a RELAÇÃO ALTURA-COMPRIMENTO do escafoide (height-to-length ratio, anormal acima de 0,65) e o ângulo radiossemilunar.",
   "correta": "B. O valor normal do ângulo intra-escafoide é de cerca de 30 graus, com variação de aproximadamente 5 graus — e valores acima de 35 a 45 graus caracterizam a deformidade em corcova.",
@@ -3276,6 +3342,17 @@
    "D": "A translação maior que 2,5 mm entre vértebras adjacentes é um dos critérios originais de White e Panjabi, e sinaliza lesão por cisalhamento — o padrão mais instável, correspondente ao tipo C da AOSpine."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0413": {
+  "conceito": "A fratura de SMITH do rádio distal — também chamada de 'fratura de Colles invertida' — é definida por dois critérios essenciais: ser EXTRA-ARTICULAR (o traço não atinge a superfície articular do rádio) e ter o fragmento distal desviado e angulado com o ÁPICE voltado para DORSAL, o que na prática corresponde a um deslocamento do fragmento distal em direção VOLAR (palmar) — o clássico aspecto em 'pá de jardineiro' ('garden spade'), com uma proeminência visível na face volar do punho. O mecanismo típico é uma queda sobre o dorso da mão com o punho fletido (o oposto do mecanismo da fratura de Colles, tipicamente por queda sobre a mão espalmada com o punho em extensão). Reconhecer essa combinação — extra-articular, metafisária, ápice dorsal com deslocamento volar do fragmento distal — é o que diferencia a fratura de Smith tanto da Colles (ápice volar, deslocamento dorsal) quanto das fraturas articulares (Barton, Chauffeur), que envolvem a superfície articular.",
+  "correta": "D. A fratura de Smith é definida como uma fratura extra-articular metafisária com ápice dorsal, correspondendo ao deslocamento volar do fragmento distal — o oposto da fratura de Colles.",
+  "incorretas": {
+   "A": "A extensão intra-articular para a cortical dorsal não corresponde à definição de Smith, que é extra-articular por definição.",
+   "B": "O ápice volar corresponde à fratura de Colles, o padrão oposto da fratura de Smith, que tem ápice dorsal.",
+   "C": "A fratura intra-articular isolada do estiloide do rádio corresponde a um padrão diferente (como o Chauffeur), não à fratura de Smith, que é extra-articular."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0414": {
@@ -3741,6 +3818,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0466": {
+  "conceito": "A fratura de CHAUFFEUR ('do motorista') é uma fratura por cisalhamento do processo ESTILOIDE RADIAL, classicamente descrita como resultado de um impacto direto contra a manivela de partida dos automóveis antigos (daí o nome) — hoje mais comumente vista em quedas com carga axial e desvio radial do punho. Na classificação AO/OTA para o rádio distal (segmento 2R3), essa fratura corresponde ao subtipo B1: uma fratura articular PARCIAL (grupo B, já que uma porção da superfície articular permanece contígua à diáfise), com traço no plano SAGITAL (B1, diferente do B2 dorsal e do B3, de depressão pura). Reconhecer essa fratura como um cisalhamento sagital simples é importante porque, apesar de parecer um fragmento pequeno e isolado, ela costuma exigir fixação cirúrgica específica (parafusos ou placa) para restaurar a congruência articular e evitar instabilidade residual do carpo.",
+  "correta": "C. A fratura de Chauffeur, um cisalhamento sagital do processo estiloide radial, corresponde ao subtipo 2R3B1 na classificação AO/OTA.",
+  "incorretas": {
+   "A": "O grupo C corresponde às fraturas articulares completas, diferente da fratura de Chauffeur, que é uma fratura articular parcial (grupo B).",
+   "B": "B3 corresponde à depressão pura (die-punch), um traço diferente do cisalhamento sagital que caracteriza a fratura de Chauffeur (B1).",
+   "D": "O grupo A corresponde às fraturas extra-articulares, diferente da fratura de Chauffeur, que é articular (parcial, grupo B)."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0467": {
   "conceito": "Ruptura tendínea depois de fratura do rádio distal quase sempre é ruptura por atrito, e ela acontece onde um tendão muda de direção contra uma quina óssea.",
   "correta": "O extensor longo do polegar é de longe o mais acometido. Ele contorna o tubérculo de Lister num ângulo fechado, dentro de um túnel apertado e com vascularização pobre justamente nesse trecho. A ruptura aparece semanas ou meses depois do trauma, com perda súbita e indolor da retropulsão do polegar, e — o que é contraintuitivo — é mais frequente nas fraturas sem desvio tratadas de forma conservadora, em que o hematoma e o edema comprimem o tendão dentro de um compartimento que continuou fechado. Como o coto está degenerado, o reparo direto raramente funciona: a solução habitual é a transferência do extensor próprio do indicador.",
@@ -3750,6 +3838,28 @@
    "C": "O extensor radial curto do carpo corre no segundo compartimento, sem a mudança brusca de direção que caracteriza o trajeto do longo do polegar."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0469": {
+  "conceito": "As LUXAÇÕES IRREDUTÍVEIS da articulação radioulnar distal (ARUD) são um cenário relativamente raro, mas importante de reconhecer, porque a tentativa persistente de redução fechada, sem identificar a causa da irredutibilidade, só prolonga o atraso no tratamento definitivo. Nesses casos, o bloqueio à redução costuma ser causado pela INTERPOSIÇÃO de estruturas de partes moles entre a cabeça da ulna e a incisura sigmoide do rádio — mais especificamente, os tendões do EXTENSOR ULNAR DO CARPO e do EXTENSOR PRÓPRIO DO DEDO MÍNIMO, que podem escorregar para dentro da articulação durante o mecanismo do trauma (sobretudo em luxações dorsais da ARUD) e ficar presos ali, mecanicamente impedindo a redução. Reconhecer essa possibilidade orienta a conduta: diante de uma luxação da ARUD que resiste à redução fechada bem-sucedida, a exploração cirúrgica aberta, com liberação dos tendões interpostos, torna-se necessária.",
+  "correta": "C. As luxações irredutíveis da articulação radioulnar distal geralmente apresentam interposição dos tendões extensor ulnar do carpo e extensor próprio do dedo mínimo, presos entre a cabeça ulnar e a incisura sigmoide do rádio.",
+  "incorretas": {
+   "A": "O flexor ulnar do carpo não é uma das estruturas classicamente descritas como interpostas nessa lesão — o extensor ulnar do carpo, sim, é uma delas.",
+   "B": "A cápsula articular pode contribuir para a dificuldade de redução, mas a interposição classicamente descrita envolve especificamente os tendões extensor ulnar do carpo e extensor próprio do dedo mínimo.",
+   "D": "O ligamento ulnocarpal não é a estrutura classicamente descrita como interposta nessa luxação — são os tendões extensor ulnar do carpo e extensor próprio do dedo mínimo."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0470": {
+  "conceito": "O acesso de HENRY MODIFICADO ao rádio distal utiliza um intervalo internervoso e interarterial bem definido, entre a ARTÉRIA RADIAL (afastada lateralmente, junto ao tendão do braquiorradial) e o tendão do FLEXOR RADIAL DO CARPO (afastado medialmente) — um corredor que permite alcançar diretamente a face volar do rádio distal sem atravessar musculatura relevante. Durante a redução, sobretudo de um fragmento do ESTILOIDE RADIAL, o músculo BRAQUIORRADIAL costuma ser o principal obstáculo: por se inserir justamente no estiloide radial, ele exerce uma tração deformante persistente sobre esse fragmento, puxando-o proximalmente e radialmente, e dificultando a manutenção da redução até que a fixação definitiva seja completada — muitas vezes exigindo liberação parcial ou afastamento cuidadoso desse músculo durante a cirurgia para neutralizar essa tração.",
+  "correta": "B. O intervalo do acesso de Henry modificado é entre a artéria radial e o flexor radial do carpo, e o músculo braquiorradial, por se inserir no estiloide radial, é o que mais dificulta a redução desse fragmento.",
+  "incorretas": {
+   "A": "O braquiorradial e a artéria radial não delimitam, juntos, o intervalo clássico dessa via — o intervalo é entre a artéria radial e o flexor radial do carpo.",
+   "C": "O intervalo entre artéria radial e flexor radial do carpo está correto, mas é o braquiorradial, não o próprio flexor radial do carpo, que dificulta a redução do estiloide radial.",
+   "D": "Nem o intervalo (braquiorradial e artéria radial) nem a musculatura que dificulta a redução (flexor radial do carpo) correspondem à descrição correta dessa via e desse mecanismo."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0471": {
@@ -3786,6 +3896,18 @@
    "E": "O hamato é usado como área doadora em outro contexto da cirurgia da mão: o enxerto osteoarticular de HEMI-HAMATO, para reconstruir a base volar da falange média nas fraturas-luxações da interfalângica proximal. Não é fonte de enxerto vascularizado para o escafoide."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0479": {
+  "conceito": "Assim como em outras questões deste acervo sobre o mesmo tema, o TIPO 4 da classificação de Fernandez para as fraturas do rádio distal corresponde à fratura por AVULSÃO LIGAMENTAR ASSOCIADA — o mecanismo em que o processo estiloide da ulna ou do rádio se fratura por tração de um ligamento nele inserido, sinalizando uma lesão ligamentar (frequentemente do complexo da fibrocartilagem triangular ou dos ligamentos intercarpais) que precisa ser especificamente investigada, além da própria fratura óssea. Essa classificação organiza os cinco tipos por mecanismo: tipo 1 (dobra/bending), tipo 2 (cisalhamento), tipo 3 (compressão), tipo 4 (avulsão ligamentar) e tipo 5 (complexas ou combinadas, reunindo mais de um desses mecanismos simultaneamente) — uma lógica que ajuda a antecipar, a partir do próprio mecanismo, quais lesões associadas investigar em cada padrão.",
+  "correta": "A. O tipo 4 da classificação de Fernandez representa a fratura por avulsão ligamentar associada, sinalizando lesão ligamentar que precisa de investigação específica.",
+  "incorretas": {
+   "B": "A extensão-compressão não corresponde à descrição do tipo 4 — os mecanismos de compressão e cisalhamento correspondem, respectivamente, aos tipos 3 e 2.",
+   "C": "A compressão isolada corresponde ao tipo 3 da classificação de Fernandez, não ao tipo 4, que é avulsão ligamentar.",
+   "D": "O cisalhamento corresponde ao tipo 2 da classificação de Fernandez, não ao tipo 4.",
+   "E": "As fraturas complexas ou combinadas correspondem ao tipo 5, o último da classificação, não ao tipo 4, que é avulsão ligamentar."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0480": {
@@ -3990,6 +4112,17 @@
    "D": "De 10 a 20 milímetros é faixa larga demais: 20 milímetros de altura radial não existe em punho nenhum."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0509": {
+  "conceito": "As indicações clássicas de tratamento cirúrgico para a fratura do rádio distal em pacientes mais jovens (menores de 55 anos, com maior demanda funcional e menor tolerância a um resultado subótimo) apoiam-se em critérios RADIOGRÁFICOS QUANTIFICÁVEIS e bem definidos: desvio dorsal maior que aproximadamente 10 graus, encurtamento radial maior que 3 milímetros, e degrau (incongruência) articular maior que 2 milímetros — cada um desses parâmetros, isoladamente, já é reconhecido como preditor de instabilidade ou de risco de artrose pós-traumática precoce o suficiente para justificar a indicação cirúrgica. A COMINUIÇÃO DORSAL, por outro lado, é um achado relevante e reconhecidamente associado a maior instabilidade — mas, diferente dos três critérios anteriores, não constitui isoladamente um limiar quantificável e autônomo de indicação cirúrgica; ela costuma ser incorporada como um FATOR ADICIONAL dentro de escores compostos de instabilidade (como os critérios de Lafontaine), e não como um critério numérico isolado e suficiente por si só, da forma como os outros três são tipicamente apresentados.",
+  "correta": "B. A cominuição dorsal, apesar de reconhecidamente associada a maior instabilidade, não constitui isoladamente um critério numérico e autônomo de indicação cirúrgica, diferente do desvio dorsal, do encurtamento radial e do degrau articular.",
+  "incorretas": {
+   "A": "O desvio dorsal maior que 10 graus é um critério quantificável reconhecido de indicação cirúrgica, sendo, portanto, uma indicação real — não a resposta a esta questão.",
+   "C": "O encurtamento radial maior que 3 mm também é um critério quantificável e reconhecido de indicação cirúrgica, sendo uma indicação real.",
+   "D": "O degrau articular maior que 2 mm é igualmente um critério quantificável e bem estabelecido de indicação cirúrgica, sendo uma indicação real."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0510": {
@@ -4243,6 +4376,17 @@
    "D": "O estiloide radial é avaliado pela altura e pela inclinação radial na incidência posteroanterior, e não por esse ângulo no perfil."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0551": {
+  "conceito": "A fixação da fratura do rádio distal com PLACA VOLAR é a técnica mais empregada atualmente, mas carrega um risco tendíneo específico e bem documentado: a ruptura do FLEXOR LONGO DO POLEGAR (FLP). Esse tendão corre em estreita proximidade com a face volar do rádio distal, exatamente onde a placa é posicionada — e quando o implante fica colocado distalmente à chamada 'linha de vigilância' (watershed line, o rebordo volar distal do rádio) ou quando a cabeça de algum parafuso fica proeminente, o atrito repetido do FLP contra essa superfície metálica ao longo dos movimentos do polegar provoca desgaste progressivo do tendão, culminando em ruptura — muitas vezes sem sinal de alerta prévio significativo (uma ruptura 'silenciosa', que se manifesta subitamente como incapacidade de flexionar a articulação interfalangeana do polegar). Esse risco específico é o que motivou a recomendação de manter a placa proximal à linha de vigilância sempre que possível, e de realizar incidências radiográficas específicas (como a tangencial dorsal, discutida em outra questão deste acervo, ainda que voltada à cortical oposta) para checar o posicionamento adequado do implante.",
+  "correta": "D. O flexor longo do polegar é o tendão que mais comumente sofre ruptura quando a fratura do rádio distal é tratada com placa volar, pelo atrito contra o implante posicionado distalmente à linha de vigilância.",
+  "incorretas": {
+   "A": "O flexor radial do carpo corre mais medialmente, com menor proximidade direta à posição típica da placa volar, sendo menos associado a essa complicação específica.",
+   "B": "O flexor ulnar do carpo corre ainda mais medialmente, na face ulnar do punho, distante da posição típica da placa volar sobre o rádio.",
+   "C": "O flexor curto do polegar é um músculo intrínseco da mão, distal à região onde a placa volar é posicionada, não estando exposto ao mesmo risco de atrito."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0552": {
@@ -4926,6 +5070,17 @@
    "D": "Acerta a distância — menos de 7,5 cm é preditor de instabilidade —, mas erra o nível do estiloide: é a fratura da BASE, e não a da ponta, que arranca a fóvea com o feixe profundo dos ligamentos radioulnares. A fratura da ponta não indica instabilidade."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0654": {
+  "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, a classificação de FERNANDEZ organiza as fraturas do rádio distal por mecanismo de lesão. O TIPO 4 especificamente corresponde à fratura por AVULSÃO LIGAMENTAR, envolvendo o processo estiloide da ulna ou do rádio — pontos de inserção de ligamentos importantes para a estabilidade do carpo e da articulação radioulnar distal. Reconhecer esse tipo é clinicamente relevante porque a avulsão do estiloide, embora possa parecer um achado ósseo menor à primeira vista, sinaliza uma lesão ligamentar que precisa ser especificamente investigada (com exame físico direcionado e, se necessário, ressonância magnética), já que o tratamento isolado do fragmento ósseo, sem atenção à estabilidade ligamentar resultante, pode deixar uma instabilidade residual não corrigida.",
+  "correta": "D. A fratura por avulsão ligamentar do processo estiloide da ulna e do rádio corresponde ao tipo 4 da classificação de Fernandez.",
+  "incorretas": {
+   "A": "O tipo 1 corresponde à fratura por dobra (bending), o padrão metafisário clássico de Colles/Smith, não à avulsão ligamentar.",
+   "B": "O tipo 2 corresponde à fratura por cisalhamento (padrões articulares), não à avulsão ligamentar do estiloide.",
+   "C": "O tipo 3 corresponde à fratura por compressão (depressão articular pura), não à avulsão ligamentar."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0655": {
@@ -6062,6 +6217,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0809": {
+  "conceito": "A redução da fratura da extremidade distal do rádio na sala de emergência exige reconhecer, já no momento inicial, quais características radiográficas predizem instabilidade e risco de perda da redução — e essas características orientam diretamente a decisão entre tratamento conservador e cirúrgico. Nas fraturas com DESVIO VOLAR (padrão Smith), a presença de COMINUIÇÃO METAFISÁRIA na porção ANTERIOR (volar) do osso é um sinal de instabilidade importante: essa cominuição compromete justamente a cortical que precisaria servir de apoio estrutural para manter a redução, tornando o tratamento conservador (redução fechada e imobilização) pouco confiável e indicando, na maioria dos casos, tratamento CIRÚRGICO — tipicamente com placa volar. É o oposto do que a alternativa A sugere: existe, sim, relação direta entre o desvio inicial (e a cominuição associada) e a estabilidade pós-redução, e é justamente essa relação que orienta a decisão terapêutica na emergência.",
+  "correta": "D. Nas fraturas com desvio volar, a cominuição metafisária na porção anterior compromete a cortical de apoio necessária para manter a redução, tornando o tratamento cirúrgico indicado na maioria dos casos.",
+  "incorretas": {
+   "A": "Existe, sim, relação direta entre o desvio inicial da fratura (e a cominuição associada) e a estabilidade pós-redução — é justamente essa relação que orienta a decisão entre tratamento conservador e cirúrgico.",
+   "B": "As fraturas com angulação dorsal desviadas são reconhecidamente desafiadoras de reduzir e, sobretudo, de manter reduzidas — o oposto do que esta alternativa afirma.",
+   "C": "A ausência de alinhamento adequado da cortical volar é, na verdade, um sinal de instabilidade que geralmente contraindica a simples imobilização com três pontos de apoio, favorecendo tratamento mais definitivo."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0810": {
   "conceito": "Este caso reúne os elementos que decidem a conduta na fratura do escafoide, e vale ler cada um. Primeiro, o TEMPO: dois dias — trata-se de uma fratura AGUDA, e não de pseudartrose, o que já exclui de saída qualquer técnica de enxertia. Segundo, a TOPOGRAFIA: POLO PROXIMAL, que é o pior lugar possível. A vascularização do escafoide é RETRÓGRADA — os ramos dorsais da artéria radial entram pela CRISTA DORSAL, no terço distal, e caminham de distal para proximal —, de modo que uma fratura proximal desvasculariza o fragmento que fica além do traço. As consequências são conhecidas: osteonecrose em até 30% (chegando a quase 100% nas fraturas muito proximais) e taxas altíssimas de pseudartrose com tratamento conservador. Terceiro, o ALINHAMENTO: ângulo escafossemilunar preservado, isto é, sem instabilidade em DISI e sem deformidade em corcova — não há, portanto, o que reconstruir com enxerto estrutural. A soma disso indica FIXAÇÃO CIRÚRGICA PRECOCE, e a via de escolha para o polo proximal é a DORSAL: ela dá acesso direto ao fragmento pequeno e, sobretudo, permite introduzir o parafuso no EIXO CENTRAL do osso, o que é o determinante mecânico da consolidação. Faz-se por mini-open (ou percutânea) com PARAFUSO SEM CABEÇA autocompressivo, escolhido cerca de 4 mm menor que a medida do fio-guia para ficar enterrado sob a cartilagem. A imobilização gessada prolongada, que ainda tem lugar nas fraturas do colo sem desvio (com 90% a 95% de consolidação), é má escolha aqui: no polo proximal ela combina alto risco de pseudartrose com meses de rigidez. E os enxertos vascularizados — o de Zaidemberg, pediculado no rádio distal pela artéria 1,2 intercompartimental supra-retinacular, e o do côndilo femoral medial — são procedimentos de RESGATE para pseudartrose com necrose do polo proximal, não para fratura aguda.",
   "correta": "B. Fratura AGUDA do polo proximal, sem deformidade — a conduta é a fixação precoce por MINI-OPEN DORSAL com parafuso autocompressivo sem cabeça, via que permite centralizar o implante no eixo do osso e evita meses de gesso num sítio de altíssimo risco de pseudartrose.",
@@ -6749,6 +6915,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0895": {
+  "conceito": "A TENOSSINOVITE, como complicação tardia da fratura da extremidade distal do rádio, tem uma localização preferencial bem reconhecida: o TERCEIRO TÚNEL EXTENSOR (compartimento III), por onde passa o tendão do EXTENSOR LONGO DO POLEGAR. Esse tendão faz um trajeto especialmente vulnerável ao contornar o TUBÉRCULO DE LISTER, uma proeminência óssea na face dorsal do rádio distal que serve de polia anatômica para sua mudança de direção — e é justamente essa relação íntima com uma superfície óssea relativamente rígida e pouco complacente que o torna mais suscetível a irritação mecânica após a fratura, seja pela deformação da própria anatomia óssea local (calo ósseo, deslocamento do tubérculo), seja pela isquemia relativa que o trauma pode causar nesse segmento tendíneo. Quando não tratada, essa tenossinovite pode evoluir para RUPTURA COMPLETA do tendão — uma complicação reconhecida mesmo em fraturas tratadas de forma inteiramente conservadora, sem qualquer cirurgia.",
+  "correta": "C. A tenossinovite pós-fratura do rádio distal ocorre com maior incidência no terceiro túnel extensor, por onde passa o extensor longo do polegar, num trajeto vulnerável ao contornar o tubérculo de Lister.",
+  "incorretas": {
+   "A": "O primeiro túnel extensor (abdutor longo e extensor curto do polegar) não é o compartimento mais associado a essa complicação específica, que é o terceiro.",
+   "B": "O segundo túnel extensor (extensores radiais do carpo) também não é o mais associado a essa complicação, mais característica do terceiro compartimento.",
+   "D": "O quarto túnel extensor (extensor comum dos dedos e extensor próprio do indicador) não é o compartimento classicamente mais associado a essa tenossinovite específica."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0896": {
   "conceito": "A imobilização tipo PTB (patellar tendon bearing), descrita por Sarmiento para o tratamento funcional da fratura diafisária da tíbia, tem um desenho específico na sua porção proximal que não é acidental: o gesso é moldado para se estender até o polo INFERIOR da patela, deixando a patela livre para permitir a flexão do joelho, mas ainda assim envolvendo firmemente os côndilos femorais na sua porção mais alta. Esse envolvimento dos côndilos — moldado com um contorno quadrilateral que 'trava' contra o alargamento condilar — é o que confere ESTABILIDADE ROTACIONAL ao conjunto: sem esse encaixe, o gesso giraria livremente sobre a perna a cada passo, perdendo o controle rotacional da fratura por baixo. A transmissão de carga axial ('patellar tendon bearing', que dá nome ao método) ocorre por uma almofada especialmente moldada sobre o tendão patelar, contribuindo para reduzir a carga direta sobre o foco de fratura tibial durante o apoio — mas essa função de suporte de carga é diferente da função rotacional que o desenho proximal, estendido até o polo inferior da patela, especificamente proporciona.",
   "correta": "A. O gesso PTB se estende até o polo inferior da patela, envolvendo os côndilos femorais para travar contra o giro e oferecer estabilidade rotacional ao conjunto, enquanto a patela permanece livre para a flexão do joelho.",
@@ -7046,6 +7223,28 @@
    "D": "Acerta o nível proximal, que é de fato o de maior risco, mas a incisão DUPLA é a técnica recomendada para evitar a sinostose — duas vias separadas, com músculo interposto e sem abertura da membrana interóssea. A incisão única é que multiplica o risco."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0930": {
+  "conceito": "A classificação de FERNANDEZ para as fraturas do rádio distal organiza os padrões por MECANISMO de lesão, e não apenas pela morfologia do traço — uma abordagem que ajuda a entender a lógica de tratamento por trás de cada tipo. O TIPO 1 é a fratura por DOBRA (bending), o padrão metafisário clássico de Colles/Smith. O TIPO 2 é por CISALHAMENTO, produzindo fraturas articulares como a de Barton ou a do Chauffeur. O TIPO 3 é por COMPRESSÃO, produzindo a depressão articular pura (die-punch). O TIPO 4 é a fratura por AVULSÃO LIGAMENTAR — envolvendo o processo estiloide da ulna ou do rádio, onde ligamentos importantes (como os que estabilizam o carpo ou a articulação radioulnar distal) se inserem, e cuja avulsão sinaliza lesão ligamentar associada que precisa ser especificamente investigada e tratada, além da própria fratura óssea. O TIPO 5, por fim, reúne as fraturas COMPLEXAS ou COMBINADAS, com mais de um desses mecanismos atuando simultaneamente.",
+  "correta": "D. A fratura por avulsão ligamentar do processo estiloide da ulna e do rádio corresponde ao tipo 4 da classificação de Fernandez, sinalizando lesão ligamentar associada que precisa de investigação específica.",
+  "incorretas": {
+   "A": "O tipo 1 corresponde à fratura por dobra (bending), o padrão metafisário clássico, não à avulsão ligamentar do estiloide.",
+   "B": "O tipo 2 corresponde à fratura por cisalhamento (padrões articulares como Barton ou Chauffeur), não à avulsão ligamentar.",
+   "C": "O tipo 3 corresponde à fratura por compressão (depressão articular pura, die-punch), não à avulsão ligamentar do estiloide."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0931": {
+  "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, o COMPRIMENTO RADIAL (altura radial) é medido comparando dois pontos de referência específicos: a PONTA DO PROCESSO ESTILOIDE DO RÁDIO e a SUPERFÍCIE ARTICULAR DA ULNA, no nível da articulação radioulnar distal. Traça-se uma linha perpendicular ao eixo longitudinal do rádio em cada um desses pontos, e a distância entre elas — normalmente cerca de 11 a 12 milímetros — é o valor do comprimento radial. Esse parâmetro, junto com o tilt volar e a inclinação radial, compõe o trio de medidas radiográficas clássicas usadas para avaliar a qualidade da redução de uma fratura do rádio distal: um encurtamento significativo em relação ao valor normal, mesmo isolado, já compromete a distribuição de carga na articulação radioulnar distal e favorece dor residual e limitação de rotação do antebraço.",
+  "correta": "B. O comprimento radial é medido entre a ponta do processo estiloide do rádio e a superfície articular da ulna.",
+  "incorretas": {
+   "A": "Os processos estiloides do rádio e da ulna, tomados juntos, não são os pontos de referência corretos para essa medida — é o estiloide do rádio comparado à superfície articular da ulna.",
+   "C": "As superfícies articulares do rádio e da ulna, comparadas entre si, não correspondem à medida do comprimento radial, que usa o estiloide do rádio, não sua superfície articular.",
+   "D": "A superfície articular do rádio combinada à ponta do estiloide da ulna inverte os pontos de referência corretos para essa medida."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0934": {
