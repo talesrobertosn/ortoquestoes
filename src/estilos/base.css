@@ -1765,6 +1765,16 @@ kbd {
 /* É um <span> logo após a linha de botões — sem margem própria ele fica
    colado nela, com espaço só do lado errado (esquerda, não em cima). */
 .acao-calendario { display: flex; width: fit-content; margin: 1rem 0 0; }
+/* No mesmo ponto em que os botões da linha de cima passam a ocupar a largura
+   inteira, este também passa — senão ele sobra pequeno ao lado deles, como se
+   fosse de outro grupo. Repetida aqui, depois da regra de largura acima, para
+   vencer o empate de especificidade: a última regra no arquivo é que vale. */
+@media (max-width: 30rem) {
+  .acao-calendario,
+  .acao-calendario .botao {
+    width: 100%;
+  }
+}
 .questao-impressa ::selection { background: color-mix(in srgb, var(--verdete) 35%, transparent); }
 ::highlight(ortoquestoes-grifo), .grifo-temporario { background: #f5df72; color: #241f00; border-radius: 2px; }
 .questao-impressa { position:relative; }.grifo-overlay { position:absolute; z-index:1; pointer-events:none; background:#f5df72; opacity:.52; border-radius:2px; mix-blend-mode:multiply; }
