@@ -230,6 +230,19 @@ export function DadosLocais() {
   const errosTotais = Object.values(marcadas).reduce((n, registro) => n + (registro.erros ?? (registro.c === false ? 1 : 0)), 0)
   const nome = String(conta?.user.user_metadata?.nome ?? '').trim()
   const percentualGeral = totalContadas > 0 ? totalCertas / totalContadas : null
+  const porConfianca = useMemo(() => {
+    const grupos = { seguro: { certas: 0, total: 0 }, duvida: { certas: 0, total: 0 }, chute: { certas: 0, total: 0 } }
+    for (const registro of Object.values(marcadas)) {
+      const eventos = registro.historico?.length ? registro.historico : [{ correta: registro.c, confianca: registro.confianca ?? 'seguro' as const }]
+      for (const evento of eventos) {
+        if (evento.correta === null) continue
+        const grupo = grupos[evento.confianca]
+        grupo.total++
+        if (evento.correta) grupo.certas++
+      }
+    }
+    return grupos
+  }, [marcadas])
   const mensagemDesempenho = percentualGeral === null
     ? 'Vamos começar e construir seu histórico.'
     : percentualGeral >= 0.8
@@ -289,6 +302,17 @@ export function DadosLocais() {
           </span>
         </div>
       </div>
+
+      {(porConfianca.seguro.total > 0 || porConfianca.duvida.total > 0 || porConfianca.chute.total > 0) && <section>
+        <h2>Acerto por confiança</h2>
+        <p className="texto-2" style={{ marginTop: '0.25rem' }}>Mostra se sua sensação ao responder acompanha o resultado. Use isso para identificar quando vale revisar mesmo depois de acertar.</p>
+        <div className="numeros" style={{ marginTop: '0.75rem' }}>
+          {([['seguro', 'Quando tinha certeza'], ['duvida', 'Quando tinha dúvida'], ['chute', 'Quando foi chute']] as const).map(([tipo, rotulo]) => {
+            const grupo = porConfianca[tipo]
+            return <div className="numeros__celula" key={tipo}><span className="numeros__valor">{grupo.total ? `${Math.round((grupo.certas / grupo.total) * 100)}%` : '—'}</span><span className="numeros__rotulo">{rotulo} · {grupo.total} {grupo.total === 1 ? 'resposta' : 'respostas'}</span></div>
+          })}
+        </div>
+      </section>}
 
       <section>
         <h2>Por tema</h2>
@@ -379,3 +403,4 @@ export function NaoEncontrada() {
     </article>
   )
 }
+
