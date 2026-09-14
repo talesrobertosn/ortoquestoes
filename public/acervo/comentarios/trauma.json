@@ -311,6 +311,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0031": {
+  "conceito": "A fratura do planalto tibial por cisalhamento POSTEROMEDIAL é um padrão que a classificação clássica de Schatzker historicamente subestimava — ela costuma aparecer associada a outros traços (bicondilares, por exemplo) e, por isso, passou a receber atenção específica nas classificações mais modernas baseadas em tomografia (Luo, Kfuri). O mecanismo que a produz é distinto do mecanismo em varo puro de uma fratura medial simples: envolve o joelho em FLEXÃO no momento do impacto, combinado com uma força de ROTAÇÃO INTERNA do côndilo femoral medial sobre o platô — o côndilo, girando internamente enquanto pressiona a tíbia flexionada, concentra a força de cisalhamento especificamente na porção posterior e medial do platô, e não na porção puramente medial que um mecanismo em varo simples, sem componente rotacional e sem flexão, produziria. Reconhecer esse mecanismo composto (flexão + rotação interna) é o que ajuda a entender por que o fragmento posteromedial costuma ter um traço orientado obliquamente, tipicamente coronal, exigindo uma via de acesso posterior específica para sua fixação com placa em posição antiglide (anticisalhante) — diferente do acesso anteromedial simples usado numa fratura puramente medial.",
+  "correta": "A. O mecanismo da fratura por cisalhamento posteromedial combina flexão do joelho com rotação interna do côndilo medial do fêmur, que concentra a força de cisalhamento especificamente na porção posterior e medial do platô tibial.",
+  "incorretas": {
+   "B": "A rotação externa do côndilo medial não é o componente rotacional descrito para esse mecanismo específico — é a rotação interna que se combina à flexão do joelho.",
+   "C": "A extensão do joelho não é o componente postural descrito para esse mecanismo — é a flexão que, combinada à rotação interna, direciona a força para a região posteromedial.",
+   "D": "Nem a extensão nem a rotação externa correspondem ao mecanismo composto (flexão + rotação interna) que caracteriza essa fratura específica."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0033": {
   "conceito": "A fratura diafisária dos dois ossos do antebraço no adulto é, por definição, uma lesão ARTICULAR funcional: o antebraço é uma articulação de rotação, e restaurar a pronossupinação exige devolver o COMPRIMENTO, a rotação e, sobretudo, a CURVATURA RADIAL (o radial bow, com ápice lateral em torno de 1,5 cm no ponto médio) — sem ela o rádio bate na ulna e a rotação se perde. Por isso o tratamento é a redução aberta e fixação com PLACA de compressão, e o tratamento conservador tem indicação restrita à fratura isolada e não desviada da ulna (a 'fratura do cassetete'). O acesso ao rádio se faz por uma de duas vias, e as duas colocam o mesmo nervo em risco. A via ANTERIOR de HENRY corre entre o braquiorradial e o pronador redondo, e depois entre o braquiorradial e o flexor radial do carpo; a via DORSAL de THOMPSON corre entre o extensor radial curto do carpo e o extensor comum dos dedos — o mesmo intervalo da via de Kaplan, prolongado distalmente. O nervo em risco em ambas, e o mais frequentemente lesado no tratamento cirúrgico das fraturas do antebraço, é o INTERÓSSEO POSTERIOR, ramo motor profundo do radial, que cruza o TERÇO PROXIMAL do rádio DENTRO do músculo supinador, passando sob a arcada de Frohse. A proteção depende da via, e a diferença é a que mais confunde: em THOMPSON, o antebraço deve ser SUPINADO, porque a supinação traz o supinador — com o nervo dentro dele — para a face anterior, afastando-o da linha de descolamento dorsal; em HENRY, o antebraço deve ser SUPINADO também, para expor a inserção do supinador na face anterior e permitir o descolamento subperiosteal exatamente sobre ela. Já na abordagem lateral à cabeça e ao colo do rádio (Kaplan), o antebraço é PRONADO, para levar o nervo medial e distalmente. Clinicamente, a lesão do interósseo posterior dá queda dos dedos com extensão do punho preservada, em desvio radial, e SEM déficit sensitivo.",
   "correta": "D. O nervo interósseo posterior é o mais frequentemente lesado no tratamento cirúrgico das fraturas diafisárias do antebraço: ele cruza o terço proximal do rádio dentro do músculo supinador, sob a arcada de Frohse, exatamente no território das vias de Henry e de Thompson.",
@@ -430,6 +441,17 @@
    "D": "Erra as duas posições: dorsiflexão em vez de flexão plantar e supinação em vez de pronação. Nenhuma delas alinha o feixe com o eixo oblíquo do colo do tálus."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0052": {
+  "conceito": "A fratura do planalto tibial, sobretudo nos padrões mais comuns que acometem o compartimento lateral, costuma vir acompanhada de lesão de partes moles intra-articulares — e a mais frequente entre elas é a lesão MENISCAL. O mecanismo faz sentido biomecanicamente: o mesmo impacto que fratura o platô (tipicamente um valgo com carga axial, empurrando o côndilo femoral lateral contra o planalto tibial lateral) comprime e desloca o menisco correspondente entre as duas superfícies ósseas no momento da fratura, produzindo desde uma simples contusão até um rompimento periférico ou uma luxação meniscal completa. Séries que investigam sistematicamente essas fraturas com artroscopia associada ou ressonância pré-operatória relatam lesão meniscal numa proporção bem maior de casos do que lesão ligamentar isolada de qualquer um dos quatro ligamentos principais do joelho — o que faz do menisco a estrutura de partes moles mais comumente comprometida nessa fratura, à frente do colateral medial, do cruzado anterior e do cruzado posterior.",
+  "correta": "A. A lesão meniscal é a mais comumente associada à fratura do planalto tibial, decorrente da compressão direta do menisco entre o côndilo femoral e a superfície fraturada durante o mecanismo do trauma.",
+  "incorretas": {
+   "B": "O ligamento colateral medial pode ser lesado, sobretudo em fraturas laterais por mecanismo em valgo, mas com frequência menor do que a lesão meniscal.",
+   "C": "O ligamento cruzado anterior também pode estar lesado, mas com frequência menor do que a lesão meniscal na associação mais comumente descrita.",
+   "D": "O ligamento cruzado posterior é lesado com frequência ainda menor nessa associação do que o cruzado anterior ou o colateral medial."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0053": {
@@ -576,6 +598,17 @@
    "A": "A artroplastia total do cotovelo é reservada para os casos em que a fixação estável não é tecnicamente alcançável pela cominuição, não como conduta de rotina para toda fratura C3 do idoso osteoporótico.",
    "B": "A configuração paralela é uma opção biomecanicamente válida e amplamente usada — a distinção entre RAFI e artroplastia é o que decide o desfecho nessa população, mais do que a escolha entre configurações de placa paralela ou ortogonal.",
    "C": "O tratamento conservador ('saco de ossos') é reservado a pacientes de baixa demanda funcional não candidatos a cirurgia, e não representa o melhor resultado funcional esperado quando a cirurgia é viável."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0076": {
+  "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, a lesão de partes moles mais frequentemente associada à fratura do planalto tibial é a MENISCAL — e, especificamente, é o MENISCO LATERAL o mais comumente acometido, o que reflete diretamente a distribuição das próprias fraturas: a grande maioria acomete o COMPARTIMENTO LATERAL do planalto (os tipos Schatzker I a III, por mecanismo de valgo com carga axial), e é justamente nesse compartimento que o menisco lateral fica comprimido e sujeito a lesão entre o côndilo femoral e a superfície tibial fraturada. Séries com avaliação sistemática (artroscopia associada, ressonância pré-operatória) relatam lesão do menisco lateral numa proporção maior de casos do que qualquer lesão ligamentar isolada — colateral medial, cruzado anterior ou cruzado posterior —, consolidando o menisco lateral como a estrutura de partes moles mais comumente comprometida nessa fratura.",
+  "correta": "A. O menisco lateral é a estrutura de partes moles mais frequentemente lesada na fratura do planalto tibial, refletindo o predomínio das fraturas do compartimento lateral (Schatzker I a III), onde ele fica comprimido durante o mecanismo do trauma.",
+  "incorretas": {
+   "B": "O menisco medial é lesado com menor frequência do que o lateral, já que a maioria das fraturas do planalto acomete o compartimento lateral, não o medial.",
+   "C": "O ligamento colateral medial pode ser lesado, sobretudo por mecanismo em valgo, mas com frequência menor do que a lesão do menisco lateral.",
+   "D": "O ligamento cruzado posterior é lesado com frequência ainda menor nessa associação."
   },
   "geradoEm": "2026-09-14",
   "conferido": false
@@ -1112,6 +1145,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0148": {
+  "conceito": "A via de acesso PÓSTERO-LATERAL para o planalto tibial é usada para abordar fragmentos posterolaterais que o acesso anterolateral padrão não alcança adequadamente. O intervalo utilizado nessa via passa entre o músculo GASTROCNÊMIO LATERAL (medialmente no campo cirúrgico) e o músculo BÍCEPS FEMORAL (lateralmente, junto ao seu tendão e à cabeça da fíbula) — um corredor que permite alcançar a região posterolateral da tíbia proximal protegendo, ao longo do trajeto, o nervo fibular comum, que corre junto à borda medial do tendão do bíceps femoral nessa altura e precisa ser identificado e afastado com cuidado antes de aprofundar a dissecção. Esse intervalo específico (gastrocnêmio lateral–bíceps femoral) é diferente do usado na via anterolateral clássica (que trabalha entre o trato iliotibial/tubérculo de Gerdy e a musculatura extensora), reforçando que a escolha da via depende diretamente de qual quadrante do platô precisa ser exposto.",
+  "correta": "D. A via póstero-lateral utiliza o intervalo entre o gastrocnêmio lateral e o bíceps femoral, protegendo o nervo fibular comum que corre junto à borda medial do tendão do bíceps nessa região.",
+  "incorretas": {
+   "A": "O tensor da fáscia lata e o fibular longo não delimitam o intervalo clássico da via póstero-lateral, que é entre o gastrocnêmio lateral e o bíceps femoral.",
+   "B": "O fibular longo não é um dos dois músculos que delimitam esse intervalo — é o bíceps femoral, junto ao gastrocnêmio lateral.",
+   "C": "O tensor da fáscia lata está mais associado à via anterolateral, não à póstero-lateral, cujo intervalo é entre o gastrocnêmio lateral e o bíceps femoral."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0150": {
   "conceito": "A medida da pressão intracompartimental existe para os casos em que o exame clínico seriado não é confiável — paciente inconsciente, sedado, intubado, sob bloqueio regional, com lesão medular, criança pequena — ou para o caso genuinamente duvidoso. Historicamente usaram-se valores ABSOLUTOS como limiar (30 mmHg, 45 mmHg), e o problema desses números é que ignoram a pressão de perfusão do paciente. Um politraumatizado hipotenso pode sofrer isquemia compartimental com pressão de 25 mmHg, enquanto um hipertenso tolera 40 mmHg sem dano — porque o que determina se o sangue entra no compartimento não é a pressão dentro dele, e sim a DIFERENÇA entre a pressão que empurra o sangue e a que resiste a ele. Daí o conceito de PRESSÃO DIFERENCIAL ou DELTA-P, popularizado por McQueen e Court-Brown: DELTA-P = PRESSÃO ARTERIAL DIASTÓLICA MENOS PRESSÃO INTRACOMPARTIMENTAL. Usa-se a DIASTÓLICA, e não a sistólica ou a média, porque é ela que representa a menor pressão de propulsão disponível ao leito capilar ao longo do ciclo cardíaco — o pior cenário de perfusão. O limiar consagrado é 30 mmHg: delta-P MENOR que 30 mmHg indica fasciotomia. Alguns serviços exigem que o valor se mantenha abaixo de 30 por mais de duas horas em monitorização contínua, para reduzir fasciotomias desnecessárias. Detalhes técnicos importam e são cobrados: a medida deve ser feita ATÉ 5 CM do foco de fratura, onde a pressão é máxima, e em TODOS os compartimentos do segmento (quatro na perna, três na coxa, três no antebraço), porque a hipertensão pode ser seletiva. E vale a advertência final: a pressão é um auxiliar, não um veredito. Um paciente acordado com quadro clínico evidente vai para a fasciotomia independentemente do número, e um número tranquilizador nunca deve sobrepor-se a um exame que piora.",
   "correta": "D. O delta-P é obtido subtraindo-se a PRESSÃO INTRACOMPARTIMENTAL da PRESSÃO ARTERIAL DIASTÓLICA — usa-se a diastólica por representar a menor pressão de propulsão disponível ao leito capilar —, e um valor abaixo de 30 mmHg indica fasciotomia.",
@@ -1438,6 +1482,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0204": {
+  "conceito": "A fratura do planalto tibial no osso OSTEOPORÓTICO tem um padrão morfológico característico, diferente do observado em ossos jovens e densos. Em pacientes mais jovens, com osso cortical resistente, o impacto do côndilo femoral sobre o planalto tende a produzir primeiro uma fratura de CISALHAMENTO (split) ao longo de uma linha cortical relativamente bem definida, muitas vezes associada a algum grau de depressão adicional (split-depression). Já no osso osteoporótico, mais poroso e com trabéculas mais frágeis, a cortical não resiste da mesma forma, e o que ocorre é o AFUNDAMENTO (depressão) da superfície subcondral sob a carga, sem a formação de um fragmento de cisalhamento bem definido — um padrão de DEPRESSÃO CENTRAL PURA, que corresponde ao Schatzker III. Esse padrão reflete a mesma lógica observada em outras fraturas por fragilidade: o osso poroso 'amassa' sob carga, em vez de se romper ao longo de um plano cortical nítido como faria um osso jovem e denso.",
+  "correta": "A. O padrão de depressão central é o característico do osso osteoporótico na fratura do planalto tibial — o osso poroso 'amassa' sob a carga, sem formar um fragmento de cisalhamento bem definido como ocorreria no osso jovem e denso.",
+  "incorretas": {
+   "B": "O comprometimento bicondilar é um padrão de alta energia, mais associado a trauma de maior magnitude do que especificamente ao osso osteoporótico.",
+   "C": "A dissociação metáfise-diafisária também é um padrão de alta energia, não o padrão característico associado especificamente à fragilidade óssea.",
+   "D": "O afundamento do côndilo medial (Schatzker IV) é um padrão de alta energia por varo, mais associado a trauma significativo em osso jovem do que ao osso osteoporótico."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0205": {
   "conceito": "A tríade terrível do cotovelo — luxação posterior somada a fratura da cabeça do rádio e do coronoide — teve o seu prognóstico transformado nas últimas décadas não por uma técnica nova, mas pela adoção de uma SEQUÊNCIA padronizada, com teste de estabilidade ao fim de cada etapa. A ordem tem fundamento no mecanismo. O'Driscoll mostrou que a luxação segue o CÍRCULO DE HORII, com as estruturas cedendo de LATERAL para MEDIAL: primeiro o ligamento colateral ulnar lateral, depois as cápsulas anterior e posterior, e só por último o complexo medial. Reconstruir é desfazer esse caminho na mesma direção. A sequência consagrada, portanto: (1) CORONOIDE, abordado primeiro porque é o mais profundo e o mais difícil de alcançar depois que a cabeça do rádio estiver reconstruída ou substituída — e um Regan-Morrey 2, com até 50% da altura, é fragmento grande o bastante para merecer fixação com parafuso, sutura transóssea ou placa; (2) CABEÇA DO RÁDIO, aqui um Mason 3, cominutivo e não reconstrutível, que impõe ARTROPLASTIA e nunca ressecção, já que com os ligamentos rotos ela é o único freio ao valgo; (3) COMPLEXO COLATERAL LATERAL, reinserido no ponto isométrico, no centro da esfera do capítulo, e tensionado com o antebraço PRONADO e o cotovelo a 90 graus; (4) TESTE de estabilidade sob fluoroscopia, em todo o arco; (5) se persistir instabilidade, COMPLEXO COLATERAL MEDIAL; e (6) se ainda assim não se mantiver reduzido, FIXADOR EXTERNO ARTICULADO — nunca antes de esgotar os reparos. Note por que o coronoide vem antes do rádio, que é a única inversão que a ordem impõe em relação ao círculo de Horii: é uma razão de ACESSO, e não de mecanismo. A janela para o coronoide passa pelo defeito deixado pela cabeça do rádio ressecada; uma vez implantada a prótese, aquele corredor se fecha.",
   "correta": "A. A ordem é CORONOIDE, RÁDIO, LIGAMENTO COLATERAL LATERAL e, se necessário, LIGAMENTO COLATERAL MEDIAL — o coronoide primeiro por razão de acesso (a janela se fecha depois da prótese), e o lateral antes do medial porque foi ele o primeiro a romper no círculo de Horii.",
@@ -1513,6 +1568,17 @@
    "D": "Os ligamentos interespinhosos integram o complexo ligamentar posterior e resistem à flexão, sendo relevantes nas lesões por distração — mas não é a sua ruptura que a regra de Spence detecta."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0223": {
+  "conceito": "Quando a fratura do planalto tibial é complexa e envolve o quadrante posterolateral, uma via anterolateral padrão pode não oferecer visualização suficiente — e uma das soluções descritas é a via ANTEROLATERAL ESTENDIDA, que amplia o campo de exposição sem exigir uma segunda incisão posterior isolada. A técnica envolve uma OSTEOTOMIA DO EPICÔNDILO LATERAL DO FÊMUR, removendo esse fragmento ósseo JUNTO COM as estruturas nele inseridas — o LIGAMENTO COLATERAL LATERAL e o TENDÃO DO MÚSCULO POPLÍTEO —, como uma unidade única que pode ser rebatida (geralmente posteriormente) para expor a região posterolateral do planalto a partir do mesmo campo cirúrgico anterolateral. Ao final da fixação da fratura, o fragmento do epicôndilo é reposicionado e fixado de volta ao fêmur, restaurando a origem anatômica do colateral lateral e do poplíteo. Essa técnica evita a morbidade de uma segunda incisão posterior isolada, mas exige cuidado técnico na osteotomia e na sua posterior fixação para não comprometer a estabilidade lateral do joelho no pós-operatório.",
+  "correta": "D. A via anterolateral estendida inclui a osteotomia do epicôndilo lateral do fêmur, retirando como unidade única o ligamento colateral lateral e o tendão do músculo poplíteo, para ampliar a exposição posterolateral sem uma segunda incisão.",
+  "incorretas": {
+   "A": "A osteotomia do tubérculo de Gerdy com o trato iliotibial não é a técnica descrita para essa via estendida — a osteotomia relevante é a do epicôndilo lateral do fêmur.",
+   "B": "A desinserção subperiosteal do colateral lateral no fêmur, sem a osteotomia óssea que o acompanha, não corresponde à técnica descrita, que retira o ligamento junto com um fragmento ósseo do epicôndilo.",
+   "C": "A osteotomia da cabeça da fíbula com o colateral lateral corresponde a uma via diferente (Lobenhoffer, para o quadrante posterolateral, descrita em outra questão deste acervo), não à via anterolateral estendida com osteotomia do epicôndilo femoral."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0224": {
@@ -1734,6 +1800,17 @@
    "D": "Erra o sintoma prodrômico (é dor, não claudicação) e a lateralidade (o envolvimento é bilateral). Acerta apenas a distribuição das corticais."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0253": {
+  "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, o padrão de fratura do planalto tibial que tipicamente acomete o osso OSTEOPORÓTICO é a DEPRESSÃO CENTRAL — o osso poroso 'amassa' sob a carga axial, sem formar um fragmento de cisalhamento bem definido como ocorreria no osso jovem e denso. Esse padrão corresponde exatamente ao SCHATZKER TIPO III na classificação clássica, definida justamente como a depressão pura da superfície articular lateral, sem componente de cisalhamento associado — diferente dos tipos I e II (que têm um componente de split, mais típico do osso jovem) e do tipo IV (afundamento do côndilo medial, um padrão de alta energia por varo). A associação entre osteoporose e Schatzker III é clinicamente relevante porque orienta a suspeita diagnóstica: um idoso com fratura de baixa energia do planalto lateral, sem história de trauma significativo, deve levantar a suspeita desse padrão específico mesmo antes da tomografia confirmar a extensão da depressão.",
+  "correta": "C. O padrão de depressão central, correspondente ao Schatzker tipo III, é o característico do osso osteoporótico na fratura do planalto tibial.",
+  "incorretas": {
+   "A": "O afundamento do côndilo medial corresponde ao Schatzker IV, um padrão de alta energia por varo, não o padrão característico do osso osteoporótico.",
+   "B": "O comprometimento bicondilar corresponde ao Schatzker V, um padrão de alta energia, não o característico da fragilidade óssea.",
+   "D": "O afundamento do côndilo lateral com componente de split corresponde ao Schatzker II, mais típico do osso jovem com um componente de cisalhamento bem definido, não do osso osteoporótico puro."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0255": {
@@ -2056,6 +2133,17 @@
   "geradoEm": "2026-09-14",
   "conferido": false
  },
+ "trauma-0296": {
+  "conceito": "A classificação de SCHATZKER organiza as fraturas do planalto tibial em seis tipos, do mais simples ao mais complexo. O tipo I é a fratura de CISALHAMENTO (split) pura do côndilo lateral, sem depressão, típica de osso jovem e denso. O tipo II é a fratura de SPLIT-DEPRESSÃO do côndilo lateral — combina o cisalhamento com algum grau de afundamento associado. O tipo III é a DEPRESSÃO CENTRAL PURA do côndilo lateral, sem componente de cisalhamento — o padrão típico do osso osteoporótico, que 'amassa' sob carga em vez de se romper ao longo de um plano cortical definido. O tipo IV é a fratura do côndilo MEDIAL, um padrão de alta energia por mecanismo em varo. O tipo V é o comprometimento BICONDILAR, e o tipo VI acrescenta a dissociação metáfise-diafisária. A fratura por depressão central pura, exclusivamente do lado lateral, corresponde então exatamente ao tipo III dessa classificação.",
+  "correta": "B. A fratura por depressão central pura do platô lateral, sem componente de cisalhamento, corresponde ao tipo III da classificação de Schatzker.",
+  "incorretas": {
+   "A": "O tipo II é a fratura de split-depressão — combina cisalhamento com afundamento —, diferente da depressão pura descrita, que corresponde ao tipo III.",
+   "C": "O tipo IV corresponde à fratura do côndilo medial por mecanismo em varo, não à depressão central pura do lado lateral.",
+   "D": "O tipo V corresponde ao comprometimento bicondilar, um padrão bem mais complexo do que a depressão central pura isolada do lado lateral."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0299": {
   "conceito": "Nas fraturas do pilão, a escolha do acesso é ditada pela localização da cominuição e pela condição da pele — e a regra de ouro é esperar as partes moles, tratando primeiro com fixador externo em ponte, para reduzir e fixar em definitivo entre 7 e 21 dias. Entre as vias, a ANTEROMEDIAL é a que expõe a MAIOR ÁREA da tíbia distal: a face medial da tíbia é subcutânea e permite uma exposição extensa da superfície articular. O preço é justamente esse — cobertura cutânea fina, mal vascularizada e com alto risco de deiscência e exposição do implante, motivo pelo qual a via anterolateral, com melhor envelope de partes moles, ganhou espaço nas últimas décadas.",
   "correta": "Anteromedial.",
@@ -2153,6 +2241,17 @@
    "D": "A lesão neurológica não é complicação característica dessa fratura. Ela é uma preocupação da VIA de acesso: o acesso anterior aproxima-se do nervo mediano e da artéria braquial, e a extensão lateral distal aproxima-se do interósseo posterior no colo do rádio — riscos técnicos evitáveis, e não a complicação típica da lesão."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0313": {
+  "conceito": "Assim como em outras questões deste acervo sobre o mesmo tema, a lesão associada mais comum na fratura do planalto tibial é a do MENISCO LATERAL — consequência direta do predomínio das fraturas do compartimento lateral do planalto (os tipos Schatzker I a III, por mecanismo em valgo com carga axial), justamente onde esse menisco fica comprimido entre o côndilo femoral lateral e a superfície tibial fraturada no momento do trauma. Séries com avaliação sistemática por artroscopia ou ressonância relatam essa lesão numa proporção consistentemente maior do que qualquer lesão ligamentar isolada (colateral medial, cruzado anterior ou cruzado posterior), tornando o menisco lateral, e não um ligamento, a estrutura mais comumente comprometida em associação com essa fratura.",
+  "correta": "B. O menisco lateral é a lesão associada mais comum na fratura do planalto tibial, refletindo o predomínio das fraturas do compartimento lateral, onde ele fica comprimido durante o mecanismo do trauma.",
+  "incorretas": {
+   "A": "O menisco medial é lesado com menor frequência do que o lateral, já que a maioria das fraturas do planalto acomete o compartimento lateral.",
+   "C": "O ligamento cruzado anterior pode ser lesado, mas com frequência menor do que a lesão do menisco lateral.",
+   "D": "O ligamento colateral medial também é lesado com frequência menor do que o menisco lateral na associação mais comumente descrita."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0314": {
@@ -2428,6 +2527,28 @@
    "D": "Erra os três elementos: o traço não é espiral, o espessamento é da cortical lateral e a espícula é medial."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0357": {
+  "conceito": "A classificação de KFURI para as fraturas do planalto tibial, baseada em cortes tomográficos, propõe uma divisão do platô em regiões ANTERIOR e POSTERIOR (além da divisão clássica em colunas medial, lateral e posterior) para capturar padrões de fratura que a classificação bidimensional de Schatzker, apoiada apenas em radiografia, frequentemente não evidenciava — sobretudo os fragmentos posteromediais e posterolaterais, hoje reconhecidos como clinicamente relevantes e de tratamento tecnicamente exigente. A linha imaginária que separa essas duas regiões, no corte axial de tomografia, é delimitada por dois reparos anatômicos: a PORÇÃO POSTERIOR DO LIGAMENTO COLATERAL MEDIAL, medialmente, e a PORÇÃO ANTERIOR DA FÍBULA (sua cabeça), lateralmente. Uma linha traçada conectando esses dois pontos de referência define, no plano axial, o que fica anterior (a maioria dos padrões clássicos de Schatzker) e o que fica posterior (os fragmentos que exigem reconhecimento e abordagem específicos, muitas vezes por vias posteriores dedicadas).",
+  "correta": "D. A linha que separa as fraturas anteriores das posteriores, na classificação de Kfuri, é delimitada pela porção posterior do ligamento colateral medial e pela porção anterior da fíbula.",
+  "incorretas": {
+   "A": "A porção anterior da fíbula está correta, mas a referência medial não é a porção anterior do LCM — é a porção posterior dele que delimita essa linha.",
+   "B": "Nem a porção anterior do LCM nem a porção anterior da fíbula (isoladamente combinadas dessa forma) correspondem à descrição correta — a referência medial é a porção posterior do LCM.",
+   "C": "A porção posterior do LCM está correta, mas a referência lateral não é a porção posterior da fíbula — é a porção anterior dela que delimita essa linha."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
+ "trauma-0358": {
+  "conceito": "A via de acesso ANTERO-LATERAL do joelho, empregada na correção das fraturas do planalto lateral (o compartimento mais comumente acometido), usa como referência anatômica de orientação o TUBÉRCULO DE GERDY — a proeminência óssea na face anterolateral da tíbia proximal onde se insere o trato iliotibial. A incisão e a dissecção partem dessa referência: o trato iliotibial é identificado e, conforme a técnica, incisado ou desinserido parcialmente do tubérculo, permitindo o acesso subperiosteal à superfície lateral da tíbia proximal e, com o auxílio de afastadores, à própria superfície articular através de uma janela abaixo do menisco lateral (submeniscal). Reconhecer o tubérculo de Gerdy como o ponto de partida da dissecção é o primeiro passo prático de qualquer descrição dessa via, e o distingue de outras referências anatômicas do joelho, como a tuberosidade da tíbia (mais medial e distal, referência de outras vias) ou a cabeça da fíbula (mais associada às vias posterolaterais).",
+  "correta": "B. O tubérculo de Gerdy, ponto de inserção do trato iliotibial na face anterolateral da tíbia proximal, é o reparo anatômico que guia a via anterolateral para a correção de fraturas do planalto lateral.",
+  "incorretas": {
+   "A": "A tuberosidade da tíbia é uma referência mais medial e distal, associada a outras vias de acesso ao joelho, não à via anterolateral clássica para o planalto lateral.",
+   "C": "A cabeça da fíbula é uma referência mais associada às vias posterolaterais, não à via anterolateral clássica.",
+   "D": "A porção lateral do tendão patelar não é o reparo clássico que orienta a via anterolateral para o planalto lateral — essa referência é o tubérculo de Gerdy."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0361": {
@@ -2706,6 +2827,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0405": {
+  "conceito": "Duas perguntas técnicas se combinam nesta questão, e ambas apontam para a mesma orientação anatômica: o plano AXIAL. Primeiro, a classificação moderna de SCHATZKER-KFURI (que incorpora a divisão em colunas e a distinção anteroposterior discutida em outra questão deste acervo) depende de cortes tomográficos AXIAIS da tíbia proximal, que revelam a disposição espacial dos fragmentos de um jeito que a radiografia simples — e mesmo cortes coronais ou sagitais isolados — não conseguem capturar com a mesma clareza, sobretudo para os fragmentos posteromediais e posterolaterais. Segundo, o INTERVALO MUSCULAR usado para corrigir cirurgicamente um traço póstero-medial é entre o músculo SEMIMEMBRANÁCEO (superior e medialmente) e o músculo GASTROCNÊMIO MEDIAL (inferior e lateralmente, em relação ao campo de dissecção) — o mesmo intervalo descrito na via posteromedial clássica para essa fratura, que protege as estruturas neurovasculares poplíteas, mantidas mais lateralmente durante essa dissecção.",
+  "correta": "A. O corte tomográfico axial é o ideal para a classificação de Schatzker-Kfuri, e o intervalo entre o semimembranáceo e o gastrocnêmio medial é o empregado na via posteromedial para a fratura com esse traço.",
+  "incorretas": {
+   "B": "O intervalo entre bíceps femoral e gastrocnêmio lateral corresponde à via póstero-lateral, não à via para correção de um traço póstero-medial.",
+   "C": "O corte coronal não é o mais indicado para essa classificação, que se apoia no plano axial; além disso, o intervalo bíceps femoral–gastrocnêmio lateral corresponde à via póstero-lateral, não à póstero-medial.",
+   "D": "O corte axial está correto quanto ao plano de classificação, mas coronal não é a resposta correta — a classificação depende do corte axial, não do coronal."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0406": {
   "conceito": "A FRATURA DO SNOWBOARDER é a fratura do PROCESSO LATERAL DO TÁLUS, e não do calcâneo — distinção que as alternativas exploram de propósito. O processo lateral é uma projeção triangular da face lateral do CORPO DO TÁLUS, com dupla participação articular: a sua face superior integra a superfície do tornozelo, articulando-se com o maléolo lateral, e a inferior integra a FACETA POSTERIOR DA SUBTALAR. O mecanismo é a CARGA AXIAL com DORSIFLEXÃO e EVERSÃO (com rotação lateral do pé): a dorsiflexão traz o processo para debaixo do maléolo lateral, a carga axial comprime o tálus contra a pinça e a eversão gira o processo contra o maléolo, cisalhando-o. A bota rígida do snowboard, com o pé fixo à prancha, reproduz exatamente essa combinação, e foi por isso que a incidência da lesão disparou com a popularização do esporte — antes disso ela era considerada rara. O grande problema segue sendo diagnóstico: mais da metade dos casos é rotulada como 'entorse de tornozelo' na primeira avaliação, porque o quadro clínico é o mesmo (dor e edema laterais, dificuldade de apoio) e o fragmento é pequeno e se sobrepõe às estruturas vizinhas na radiografia. A pista clínica está no PONTO da dor: anterior e INFERIOR à ponta do maléolo lateral, e não sobre o trajeto do ligamento talofibular anterior. Diante de dor lateral persistente após entorse, a conduta é a TOMOGRAFIA. O tratamento segue o tamanho e o desvio: fragmentos pequenos e não desviados vão para gesso sem carga por seis semanas; fragmentos maiores que 1 cm ou com desvio superior a 2 mm exigem redução e fixação com parafusos, porque a incongruência da subtalar leva a artrose precoce; e os cominuídos muito pequenos são excisados.",
   "correta": "A. A fratura do snowboarder localiza-se no PROCESSO LATERAL DO TÁLUS e resulta de CARGA AXIAL com EVERSÃO (e dorsiflexão), que comprime e cisalha o processo contra o maléolo lateral.",
@@ -2759,6 +2891,17 @@
    "D": "A cabeça longa do tríceps se origina do tubérculo infraglenoidal, distante do plano de descolamento do infraespinal, e a lesão em questão é NEUROLÓGICA por estiramento — não uma ruptura tendínea por tração muscular."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0416": {
+  "conceito": "Assim como em outras questões deste acervo sobre o mesmo tema, a lesão de partes moles associada mais comum à fratura do planalto tibial é a MENISCAL — e, especificamente, a do MENISCO LATERAL, pelo predomínio das fraturas do compartimento lateral (Schatzker I a III, por mecanismo em valgo com carga axial). É nesse compartimento que o menisco lateral fica comprimido entre o côndilo femoral e a superfície tibial fraturada, sendo lesado numa proporção maior de casos do que qualquer lesão ligamentar isolada — seja do canto posterolateral, seja do cruzado anterior. A lesão meniscal, aliás, costuma ser subestimada quando a avaliação se limita à radiografia simples: é a ressonância magnética ou a artroscopia associada à cirurgia que revela a real magnitude dessa associação, o que reforça a importância de uma avaliação cuidadosa das partes moles mesmo quando o foco inicial do tratamento está na reconstrução óssea.",
+  "correta": "A. O menisco lateral é a lesão de partes moles mais frequentemente associada à fratura do planalto tibial, refletindo o predomínio das fraturas do compartimento lateral, onde fica comprimido durante o mecanismo do trauma.",
+  "incorretas": {
+   "B": "O menisco medial é lesado com menor frequência do que o lateral, já que a maioria das fraturas do planalto acomete o compartimento lateral.",
+   "C": "O canto posterolateral está associado a padrões específicos de fratura com instabilidade rotacional, mas com frequência menor do que a lesão meniscal lateral no conjunto geral dessas fraturas.",
+   "D": "O ligamento cruzado anterior é a lesão ligamentar mais comum entre os ligamentos, mas a lesão de partes moles mais frequente no conjunto geral (incluindo o menisco) é a do menisco lateral."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0417": {
@@ -3431,6 +3574,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0519": {
+  "conceito": "A classificação de LUO, também conhecida como classificação das TRÊS COLUNAS, foi proposta justamente para superar uma limitação da classificação bidimensional de Schatzker (apoiada em radiografias simples): ela divide o planalto tibial, num CORTE TRANSVERSAL (AXIAL) de tomografia computadorizada, em três colunas — MEDIAL, LATERAL e POSTERIOR —, delimitadas por linhas que conectam reparos anatômicos específicos (como o tubérculo intercondilar). Ao observar a extensão do envolvimento de cada coluna nesse corte axial, o cirurgião consegue planejar com muito mais precisão quais vias de acesso e quais placas serão necessárias para dar suporte a cada fragmento — informação que uma radiografia simples, ou mesmo cortes coronais e sagitais isolados de tomografia, frequentemente não capta com a mesma clareza espacial. Essa dependência do corte AXIAL é uma das características mais citadas da classificação de Luo, e é o que a diferencia estruturalmente do sistema de Schatzker, historicamente baseado apenas em radiografia.",
+  "correta": "D. A classificação de Luo (três colunas) utiliza a tomografia computadorizada com corte axial, que permite visualizar a extensão do envolvimento das colunas medial, lateral e posterior do planalto tibial.",
+  "incorretas": {
+   "A": "A radiografia em incidência AP não tem a resolução espacial necessária para a divisão em colunas proposta por Luo, que depende de cortes tomográficos.",
+   "B": "A radiografia em perfil também não é suficiente para essa classificação, que depende especificamente do corte axial de tomografia.",
+   "C": "O corte coronal de tomografia não é o plano em que a divisão em três colunas de Luo é definida — é o corte axial que revela essa disposição espacial."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0521": {
   "conceito": "As fraturas da TUBEROSIDADE DO CALCÂNEO são fraturas por AVULSÃO, produzidas pela tração do TRÍCEPS SURAL através do tendão de Aquiles, que nela se insere. Ocorrem em dois cenários: no idoso com osso OSTEOPÊNICO — em que são verdadeiras fraturas por insuficiência, desencadeadas por um esforço banal, e em que o diabete melito é fator de risco reconhecido — e após queda com o pé em DORSIFLEXÃO forçada, que estira bruscamente o tríceps sural e arranca o fragmento. Beavis classificou-as em três tipos: I, avulsão em 'casca' (sleeve) da cortical posterior; II, avulsão em bico (beak), com traço oblíquo; III, avulsão infrabursal da porção média da tuberosidade. E aqui está o ponto que a alternativa incorreta ignora: apesar de serem avulsões de fragmento pequeno, essas fraturas têm ALTO RISCO DE COMPLICAÇÃO CUTÂNEA — e esse risco é a sua característica clínica mais importante. A razão é que o fragmento, tracionado proximal e posteriormente pelo tríceps, é empurrado CONTRA A PELE DA FACE POSTERIOR DO CALCANHAR, que é fina, aderida, de irrigação terminal e sem qualquer almofada subcutânea para absorver a pressão. A necrose pode se instalar em HORAS, converte a fratura fechada em exposta e leva a osteomielite do calcâneo — cenário agravado justamente na população em que a lesão é mais comum, o idoso diabético com neuropatia e vasculopatia. Por isso a fratura da tuberosidade com desvio é EMERGÊNCIA: exige avaliação imediata da pele, procurando a área pálida e tensa sobre a proeminência, e redução URGENTE, sem esperar o edema regredir. O tratamento é a fixação com parafusos canulados de compressão, muitas vezes reforçada por sutura tipo banda de tensão no tendão de Aquiles, dada a má qualidade óssea.",
   "correta": "C. A alternativa INCORRETA é essa: o risco de complicações cutâneas NÃO é baixo — ao contrário, é alto e é a característica mais importante dessas fraturas, porque o fragmento tracionado pelo tríceps sural comprime uma pele fina e sem almofada subcutânea, podendo necrosar em horas.",
@@ -3728,6 +3882,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0572": {
+  "conceito": "A fratura do planalto tibial tipo IV de SCHATZKER — o afundamento ou cisalhamento do CÔNDILO MEDIAL — é, entre todos os tipos dessa classificação, o que carrega o maior risco de lesão associada grave, e isso decorre diretamente do seu mecanismo de trauma. Diferente dos tipos I a III (fraturas laterais, por mecanismo em VALGO com carga axial, geralmente de energia moderada), o tipo IV resulta de um mecanismo em VARO de ALTA ENERGIA — o fêmur é empurrado para dentro em relação à tíbia, fraturando o platô medial (mais denso e mais resistente do que o lateral, o que já indica a magnitude da força necessária). Esse mesmo movimento em varo estica e sobrecarrega as estruturas do lado OPOSTO, isto é, o COMPLEXO LIGAMENTAR LATERAL do joelho (ligamento colateral lateral, canto posterolateral, tendão do bíceps femoral) — e, em casos mais graves, pode inclusive comprometer o nervo fibular comum e a artéria poplítea, que correm nessa mesma região. Reconhecer o tipo IV como uma fratura de alta energia com risco de lesão lateral e neurovascular associada é o que justifica uma avaliação neurovascular mais cuidadosa nesses pacientes, diferente da abordagem mais rotineira nas fraturas laterais mais comuns.",
+  "correta": "A. A fratura tipo IV de Schatzker resulta de um mecanismo em varo de alta energia, que fratura o platô medial mais resistente e, ao mesmo tempo, sobrecarrega o complexo ligamentar lateral do joelho — frequentemente lesado em associação.",
+  "incorretas": {
+   "B": "O complexo ligamentar medial não é o mais associado a essa fratura — é o complexo lateral que sofre a sobrecarga pelo mesmo movimento em varo que fratura o platô medial.",
+   "C": "O mecanismo é em varo, não em valgo — o valgo é o mecanismo típico das fraturas laterais mais comuns (tipos I a III), não do tipo IV.",
+   "D": "Nem o mecanismo em valgo nem a associação com o complexo medial correspondem ao padrão do tipo IV, que é em varo e associado ao complexo lateral."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0573": {
   "conceito": "A epidemiologia das fraturas diafisárias do antebraço no adulto segue o padrão das lesões de ALTA ENERGIA, e é isso que a questão cobra. O mecanismo típico não é a queda da própria altura: é o acidente de trânsito, o acidente de motocicleta, a queda de altura, o trauma esportivo e a agressão — situações em que predomina o HOMEM JOVEM, ABAIXO DOS 40 ANOS. Esse perfil contrasta de forma útil com o das fraturas por FRAGILIDADE, que desenham a curva oposta: fratura do rádio distal, do úmero proximal, das vértebras e do quadril, todas com predomínio FEMININO e incidência que sobe com a idade, sobre osso osteoporótico e a partir de traumas de baixa energia. Dois corolários clínicos derivam da epidemiologia de alta energia da diáfise do antebraço. O primeiro é que se deve ativamente procurar LESÕES ASSOCIADAS: exposição da fratura (frequente, porque a ulna é subcutânea), lesão neurovascular, e sobretudo SÍNDROME COMPARTIMENTAL, cujo diagnóstico é clínico — dor desproporcional, dor ao estiramento passivo dos dedos, tensão dos compartimentos — e em que o pulso presente NÃO afasta o quadro. O segundo é que a exigência funcional desse paciente é alta, o que reforça a indicação cirúrgica: no adulto, a fratura dos dois ossos do antebraço é tratada com redução aberta e PLACA DE COMPRESSÃO, restaurando comprimento, rotação e curvatura radial, sob pena de perder pronossupinação. A única exceção consolidada ao tratamento cirúrgico é a fratura isolada e pouco desviada da ulna, a fratura do cassetete, cujo mecanismo — o antebraço erguido para proteger a cabeça de um golpe — também combina com o mesmo perfil demográfico.",
   "correta": "D. As fraturas diafisárias do antebraço no adulto predominam no sexo MASCULINO e ABAIXO dos 40 anos, acompanhando o perfil dos traumas de alta energia — acidentes de trânsito e de motocicleta, quedas de altura, esporte e agressão.",
@@ -3848,6 +4013,17 @@
   },
   "alerta": "O gabarito indica ARTROPLASTIA TOTAL para uma fratura desviada BASICERVICAL aos 65 anos. A fratura basicervical é extracapsular (ou apenas parcialmente intracapsular), com os vasos retinaculares em boa parte preservados e risco baixo de osteonecrose, e o tratamento classicamente descrito é o PARAFUSO-PLACA DESLIZANTE com parafuso antirrotatório (ou haste cefalomedular), que consta entre as alternativas e foi dado como errado. O item merece conferência.",
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0597": {
+  "conceito": "A distinção entre uma fratura por cisalhamento MEDIAL SIMPLES e uma POSTEROMEDIAL do planalto tibial está no grau de FLEXÃO DO JOELHO no momento do impacto — o mesmo mecanismo discutido em outra questão deste acervo sobre a fratura posteromedial isoladamente. Numa fratura medial simples, o mecanismo predominante é um VARO relativamente puro, com o joelho próximo da extensão: o côndilo femoral medial impacta a porção mais central/medial do platô, produzindo um traço de cisalhamento orientado mais verticalmente. Já quando o joelho está em FLEXÃO no momento do trauma, a superfície de contato entre o côndilo femoral e o platô se desloca posteriormente (é a mesma razão pela qual, na flexão normal do joelho, o ponto de contato femorotibial migra para trás) — e é justamente essa mudança postural que direciona a força de impacto para a porção POSTERIOR do platô medial, produzindo o traço posteromedial característico, tipicamente mais oblíquo e coronal do que o traço da fratura medial simples. Reconhecer esse papel específico da flexão é o que ajuda a diferenciar, já pelo mecanismo relatado, qual padrão de fratura esperar antes mesmo de ver a tomografia.",
+  "correta": "A. A flexão do fêmur sobre a tíbia no momento do impacto é o que diferencia o mecanismo da fratura posteromedial do da fratura medial simples: a flexão desloca posteriormente o ponto de contato femorotibial, direcionando a força para a porção posterior do platô.",
+  "incorretas": {
+   "B": "A rotação externa do fêmur sobre a tíbia não é o fator diferenciador descrito entre esses dois padrões — é o grau de flexão do joelho que os distingue.",
+   "C": "O varo do fêmur sobre a tíbia está presente em ambos os padrões (medial simples e posteromedial), não sendo o fator que os diferencia — a diferença está na flexão associada.",
+   "D": "A força axial pura, sem o componente de flexão, não é o fator diferenciador entre os dois padrões — é a flexão do joelho que desloca a força para a região posterior."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0599": {
@@ -4037,6 +4213,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0635": {
+  "conceito": "O acesso PÓSTERO-LATERAL para o tratamento das fraturas do planalto tibial coloca em risco uma estrutura neurológica de especial importância clínica: o NERVO FIBULAR (PERONEAL) COMUM. Esse nervo, ao emergir da fossa poplítea, contorna o colo da fíbula correndo junto à borda medial do tendão do bíceps femoral — exatamente o território pelo qual essa via de acesso trafega, no intervalo entre o gastrocnêmio lateral e o próprio bíceps femoral, discutido em outra questão deste acervo. Uma lesão desse nervo durante a dissecção ou o afastamento tem consequência funcional relevante: ele inerva a musculatura responsável pela dorsiflexão do tornozelo e pela eversão do pé, e sua lesão produz o quadro clássico de pé caído. Por isso, a identificação cuidadosa e a proteção contínua do nervo fibular comum ao longo de toda a dissecção — antes mesmo de aprofundar o acesso até o plano ósseo — é considerada um passo obrigatório e não negociável dessa via cirúrgica específica.",
+  "correta": "A. O nervo fibular comum, que corre junto à borda medial do tendão do bíceps femoral ao contornar o colo da fíbula, é a estrutura de maior risco no acesso póstero-lateral para o planalto tibial.",
+  "incorretas": {
+   "B": "O nervo fibular superficial é um ramo mais distal do fibular comum, correndo no compartimento lateral da perna, fora do campo típico dessa via de acesso ao joelho.",
+   "C": "O nervo fibular profundo também é um ramo mais distal, associado ao compartimento anterior da perna, não ao campo cirúrgico dessa via posterolateral do joelho.",
+   "D": "O nervo tibial corre mais medial e profundamente na fossa poplítea, longe do trajeto típico dessa via posterolateral, que expõe principalmente o nervo fibular comum."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0636": {
   "conceito": "A HEMIARTROPLASTIA (artroplastia parcial) para a fratura em quatro partes do úmero proximal substitui a cabeça umeral e mantém a glenoide nativa. O detalhe que define o seu sucesso não está na prótese: está nas TUBEROSIDADES. A prótese devolve a superfície articular, mas quem move o ombro é o MANGUITO ROTADOR, e o manguito só funciona se os seus tendões estiverem ancorados em osso, na posição anatômica e em continuidade — o tubérculo MAIOR carregando supraespinal, infraespinal e redondo menor (elevação e rotação lateral) e o MENOR carregando o subescapular (rotação medial). A complicação principal e mais determinante do resultado é, portanto, a PSEUDARTROSE (ou a migração e a reabsorção) DAS TUBEROSIDADES. Quando ela ocorre, o resultado é um ombro com prótese radiograficamente perfeita e sem função ativa: pseudoparalisia, sinal do corneteiro e retardo em rotação externa. As séries mostram que essa é a variável que mais se correlaciona com mau resultado, acima da cimentação, da altura e do tamanho da cabeça e da retroversão do componente. Daí as regras técnicas consagradas: reancorar os tubérculos com SUTURAS TRANSÓSSEAS FORTES passadas pela JUNÇÃO TENDÃO-OSSO, e não pelo osso porótico isolado; suturá-los entre si, à haste e à diáfise, em configuração de cerclagem; acrescentar ENXERTO ÓSSEO na metáfise; e restaurar com precisão a ALTURA e a RETROVERSÃO (em torno de 20 a 30 graus) do componente, porque uma prótese alta ou mal rodada impede a reinserção anatômica dos tubérculos. É justamente porque essa consolidação falha com frequência no osso porótico do idoso que a ARTROPLASTIA REVERSA se tornou a preferência acima dos 70 anos: ela transfere a função ao deltoide e não depende do manguito superior.",
   "correta": "B. A pseudartrose das tuberosidades é a principal complicação da hemiartroplastia na fratura em quatro partes: sem os tendões do manguito ancorados em osso e na posição certa, a prótese não produz elevação nem rotação ativas.",
@@ -4189,6 +4376,17 @@
    "D": "Os ligamentos colaterais rompem-se na luxação, mas as suas fibras não formam um laço capaz de aprisionar a articulação. O obstáculo mecânico característico é a placa volar, que se destaca proximalmente e desliza para dentro do espaço articular."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0657": {
+  "conceito": "No tratamento das fraturas BICONDILARES do planalto tibial com dupla placa (medial e lateral), a sequência de redução e fixação segue uma lógica prática bem estabelecida: iniciar pelo lado MEDIAL. O condilo medial da tíbia é constituído por osso mais denso e cortical do que o lateral, e costuma apresentar um padrão de fratura mais simples — menos cominuído, mais fácil de reduzir anatomicamente com confiança. Ao reduzir e fixar primeiro esse lado mais previsível, o cirurgião estabelece uma referência estável de comprimento, eixo e rotação de todo o platô, contra a qual o lado lateral — em geral mais comminuído e tecnicamente mais desafiador — pode então ser reduzido e ajustado. Inverter essa ordem (começar pelo lado lateral, geralmente mais fragmentado) tende a dificultar a obtenção de uma referência confiável, arriscando fixar o lado lateral numa posição que só depois se revela incompatível com o alinhamento anatômico correto do lado medial.",
+  "correta": "D. Iniciar a redução e a fixação pelo lado medial é a sequência recomendada nas fraturas bicondilares com dupla placa, porque o condilo medial, mais denso e menos cominuído, oferece uma referência estável para reduzir o lado lateral em seguida.",
+  "incorretas": {
+   "A": "Realizar apenas o acesso anterolateral não contempla a fixação bicondilar com dupla placa, que exige acesso e fixação de ambos os lados, medial e lateral.",
+   "B": "Iniciar pelo lado lateral inverte a sequência recomendada — o lado lateral costuma ser mais cominuído, o que dificulta seu uso como referência inicial confiável.",
+   "C": "Realizar apenas o acesso póstero-medial também não contempla a fixação bicondilar completa, que exige o acesso a ambos os lados da fratura."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0659": {
@@ -4520,6 +4718,17 @@
    "C": "Uma radiografia de tórax em frente NORMAL exclui a dissociação com desvio significativo: é justamente nela que se mede o índice de lateralização, comparando a distância da margem medial da escápula à linha média nos dois lados."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0703": {
+  "conceito": "A placa colocada no fragmento POSTEROMEDIAL de uma fratura do planalto tibial tem uma função biomecânica específica, diferente da função de uma placa de compressão convencional: ela funciona como uma placa ANTICISALHANTE (também chamada de placa antiglide ou de sustentação). O fragmento posteromedial, pela orientação do seu traço — tipicamente oblíquo, no plano coronal — está sujeito a uma força de deslizamento (cisalhamento) posterior e inferior sob a carga axial normal do joelho, à medida que o côndilo femoral pressiona essa região durante o apoio de peso. Uma placa de compressão convencional, colocada perpendicularmente ao traço para comprimir os fragmentos entre si, não neutraliza bem essa força de deslizamento; já uma placa posicionada na face posterior do fragmento, contra a direção do deslizamento esperado, funciona como uma barreira mecânica — segura o fragmento no lugar, resistindo especificamente à força que tenderia a deslocá-lo, em vez de simplesmente comprimi-lo contra o fragmento vizinho.",
+  "correta": "A. A placa no platô posteromedial tem função anticisalhante: posicionada contra a direção do deslizamento esperado do fragmento sob a carga axial do joelho, ela resiste especificamente a essa força, em vez de apenas comprimir os fragmentos entre si.",
+  "incorretas": {
+   "B": "A compressão articular não é a função biomecânica principal dessa placa — a preocupação central com o fragmento posteromedial é resistir ao deslizamento (cisalhamento), não comprimir a superfície articular.",
+   "C": "A compressão metafisária também não descreve a função principal dessa placa, que é neutralizar a força de deslizamento do fragmento, não comprimir a região metafisária.",
+   "D": "A compressão mista não é a descrição mais precisa da função dessa placa — sua função biomecânica central e mais especificamente descrita na literatura é a anticisalhante."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0705": {
@@ -5870,6 +6079,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0910": {
+  "conceito": "A via de LOBENHOFFER é uma das técnicas descritas para acessar o quadrante POSTEROLATERAL do planalto tibial — uma região tecnicamente difícil de expor e fixar adequadamente pelas vias anteriores convencionais. Uma de suas variantes envolve a OSTEOTOMIA DA CABEÇA DA FÍBULA: o cirurgião secciona a cabeça da fíbula, preservando sua inserção ligamentar (o ligamento colateral lateral e o tendão bicipital), e a rebate temporariamente para ampliar o acesso à face posterolateral da tíbia proximal, permitindo colocar uma placa de sustentação (buttress) diretamente sobre esse fragmento — que, de outra forma, ficaria de difícil alcance mesmo pela via póstero-lateral padrão (entre o gastrocnêmio lateral e o bíceps femoral). Ao final da fixação da tíbia, a cabeça da fíbula osteotomizada é reposicionada e fixada de volta, preservando a articulação tibiofibular proximal e a estabilidade lateral do joelho.",
+  "correta": "B. A via de Lobenhoffer para o quadrante posterolateral envolve a osteotomia da cabeça da fíbula, ampliando o acesso a essa região de difícil exposição pelas vias convencionais.",
+  "incorretas": {
+   "A": "A osteotomia do epicôndilo lateral corresponde a uma técnica diferente, descrita para a via anterolateral estendida em outra questão deste acervo, não à via de Lobenhoffer.",
+   "C": "A soltura do ligamento arqueado não é a técnica que caracteriza a via de Lobenhoffer, que se baseia na osteotomia da cabeça da fíbula.",
+   "D": "A tenotomia do poplíteo também não é a técnica característica dessa via, que se baseia na osteotomia da cabeça da fíbula, preservando as inserções ligamentares."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0914": {
   "conceito": "A fresagem do canal medular para colocação de haste intramedular na tíbia produz, de forma bem documentada, êmbolos de gordura e conteúdo medular que atingem a circulação pulmonar — um fenômeno demonstrável por ecocardiografia transesofágica na grande maioria dos procedimentos, mesmo em pacientes sem qualquer trauma associado. A questão prática, sobretudo no paciente POLITRAUMATIZADO, é o que esse fenômeno significa clinicamente. Na maior parte dos casos — mesmo no politraumatizado —, esse acometimento pulmonar é FREQUENTE, mas SEM REPERCUSSÃO CLÍNICA relevante: o paciente não desenvolve insuficiência respiratória, hipoxemia significativa ou piora hemodinâmica atribuível a esse evento isolado. O cuidado clínico existe porque, num subgrupo específico de pacientes já fisiologicamente instáveis ou com lesão pulmonar de base (o chamado fenômeno do 'segundo golpe', em que uma segunda agressão inflamatória se soma à primeira), a fresagem pode sim precipitar deterioração respiratória clinicamente relevante — e é esse subgrupo que orienta a estratégia de controle de danos (fixação externa provisória, com nailing definitivo adiado). Mas, tomado como um todo, o padrão predominante descrito na literatura é o de um fenômeno comum e clinicamente silencioso na grande maioria dos pacientes.",
   "correta": "A. O acometimento pulmonar por êmbolos de gordura durante a fresagem intramedular é frequente — demonstrável na maioria dos procedimentos — mas, na maior parte dos casos, mesmo no politraumatizado, ocorre sem repercussão clínica relevante.",
@@ -6165,6 +6385,17 @@
    "D": "Acerta o decúbito ventral, mas erra a posição do cotovelo. A flexão é parte do mecanismo da manobra — é ela que relaxa os flexores e permite que a tração suave da gravidade desengate o olécrano da tróclea."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0960": {
+  "conceito": "Entre as lesões LIGAMENTARES (à parte a lesão meniscal, que é a mais comum de todas as lesões de partes moles associadas à fratura do planalto tibial, mas não é um ligamento), o LIGAMENTO CRUZADO ANTERIOR é o mais frequentemente comprometido, segundo séries que investigam sistematicamente essas fraturas com ressonância magnética ou artroscopia associada. O mecanismo de lesão do LCA nesse contexto envolve tanto o impacto direto do platô fraturado sobre sua inserção tibial (que pode inclusive resultar numa avulsão óssea da espinha tibial, achado radiograficamente associado) quanto o estresse rotacional e de carga axial que acompanha o próprio trauma que fratura o osso. Vale notar que o LIGAMENTO COLATERAL MEDIAL tem uma associação particularmente forte com um mecanismo específico — o valgo que caracteriza as fraturas laterais mais comuns (Schatzker I a III) —, mas, quando se soma o conjunto de todos os padrões de fratura do planalto, é o LCA que aparece com maior frequência global entre as lesões ligamentares associadas.",
+  "correta": "C. O ligamento cruzado anterior é o mais comumente lesado entre os ligamentos do joelho em associação com a fratura do planalto tibial, tanto pelo impacto direto sobre sua inserção tibial quanto pelo estresse rotacional do trauma.",
+  "incorretas": {
+   "A": "O canto posterolateral está mais associado a fraturas específicas do platô lateral com componente de instabilidade rotacional, mas não é a lesão ligamentar mais frequente no conjunto geral dessas fraturas.",
+   "B": "O ligamento cruzado posterior é lesado com frequência menor do que o cruzado anterior nessa associação.",
+   "D": "O ligamento colateral medial tem forte associação com o mecanismo em valgo das fraturas laterais mais comuns, mas, no conjunto de todos os padrões de fratura do planalto, é o cruzado anterior que aparece com maior frequência global."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0964": {
