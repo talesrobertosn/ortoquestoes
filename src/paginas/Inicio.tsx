@@ -163,7 +163,7 @@ export function Inicio() {
               <p>{textoDoDia.explicacao}</p>
               {sessaoEmAndamento && <a className="botao botao--principal" href={href('/sessao')}>Continuar sessão · {Object.keys(sessao!.respostas).length}/{sessao!.ids.length}</a>}
               {!sessaoEmAndamento && <div className="linha linha--empilha-celular">
-                {[5, 10, 20].map(quantidade => <button key={quantidade} type="button" className={quantidade === 10 ? 'botao botao--principal' : 'botao'} onClick={() => treinoRapido(quantidade)} disabled={contagens.total < quantidade}>{quantidade === 10 ? textoDoDia.acao : `${quantidade} questões · ~${Math.max(4, Math.round(quantidade * 0.8))} min`}</button>)}
+                {[5, 10, 20].map(quantidade => <button key={quantidade} type="button" className={(conta ? quantidade === 10 : quantidade === 5) ? 'botao botao--principal' : 'botao'} onClick={() => treinoRapido(quantidade)} disabled={contagens.total < quantidade}>{!conta && quantidade === 5 ? 'Começar agora sem cadastro · 5 questões' : quantidade === 10 ? textoDoDia.acao : `${quantidade} questões · ~${Math.max(4, Math.round(quantidade * 0.8))} min`}</button>)}
               </div>}
               <span className="acao-calendario"><a className="botao" href={href('/revisao')}>Abrir calendário de revisão</a></span>
             </div>
