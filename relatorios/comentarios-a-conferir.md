@@ -157,6 +157,7 @@ conceitos básicos, 11 questões.
 | `conceitos-basicos-0173` | Qual atributo tem maior pontuação no escore NURD de risco de não união | Conheço os componentes do escore, mas não os pesos de cada um — e a questão se decide exatamente pelo peso |
 | `mao-0544` | Subtipos A1/A2/B1/B2 da classificação de **Albertoni** para dedo em martelo | Conheço a divisão de Albertoni entre lesão tendínea pura e lesão com arrancamento ósseo, mas não a numeração dos subtipos nem o ponto de corte de 30º que o enunciado usa para separá-los |
 | `trauma-0605` | Qual tipo da classificação de **Ring** para a fratura do úmero distal compreende a fratura do epicôndilo medial | Não reconheço uma classificação de Ring com essa numeração (1 a 5) para essa fratura, nem consigo situar o epicôndilo medial no tipo 5 do gabarito com segurança |
+| `trauma-0783` | Qual tipo da classificação de **Emura** para a articulação acromioclavicular corresponde à ausência de disco com superfícies articulares planas | Não domino a numeração dessa classificação (2b, 3a, 3b, 3c) com a granularidade que a questão exige para distinguir os quatro subtipos oferecidos |
 
 ## Enunciado que não consigo reconstruir
 
