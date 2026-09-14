@@ -55,6 +55,7 @@ export function CartaoQuestao({
   const [copiado, definirCopiado] = useState(false)
   const [menuGrifo, definirMenuGrifo] = useState<{ x: number; y: number } | null>(null)
   const [grifos, definirGrifos] = useState<Array<{ left: number; top: number; width: number; height: number }>>([])
+  const [modoLeitura, definirModoLeitura] = useState(false)
   const inicio = useRef<number>(Date.now())
   const areaDaQuestao = useRef<HTMLElement>(null)
   const grifoRecente = useRef(false)
@@ -68,6 +69,7 @@ export function CartaoQuestao({
     definirEscolhida(null)
     definirConfianca('seguro')
     definirCopiado(false)
+    definirModoLeitura(false)
     inicio.current = Date.now()
   }, [questao.id])
 
@@ -277,6 +279,7 @@ export function CartaoQuestao({
             >
               <Icone nome="link" />
             </button>
+            {mostrarGabarito && <button type="button" className="botao-icone" onClick={() => definirModoLeitura(atual => !atual)} aria-pressed={modoLeitura} aria-label={modoLeitura ? 'Mostrar alternativas' : 'Ler comentário sem alternativas'} title={modoLeitura ? 'Mostrar alternativas' : 'Modo leitura'}><Icone nome={modoLeitura ? 'olho' : 'olho-riscado'} /></button>}
           </div>
         </div>
 
@@ -324,7 +327,7 @@ export function CartaoQuestao({
           </div>
         )}
 
-        <ul className="alternativas">
+        {!modoLeitura && <ul className="alternativas">
           {questao.alternativas.map((alternativa, i) => {
             const letra = alternativa.letra
             const riscada = riscadas.includes(letra)
@@ -386,7 +389,7 @@ export function CartaoQuestao({
               </li>
             )
           })}
-        </ul>
+        </ul>}
 
         {!revelarResposta ? (
           <div className="resultado resultado--neutro" role="status">
@@ -413,7 +416,7 @@ export function CartaoQuestao({
               <kbd>Enter</kbd> confirma
             </span>
           </div>
-        ) : (
+        ) : !modoLeitura && (
           <Resultado questao={questao} resposta={resposta!} />
         )}
 
@@ -516,6 +519,7 @@ export function CartaoQuestao({
           <Icone nome="riscar" tamanho={15} /> Grifar
         </button>
       )}
+      {grifos.length > 0 && !menuGrifo && <button type="button" className="botao botao--fantasma nao-imprime" style={{ position: 'absolute', right: '1rem', bottom: '1rem', zIndex: 3 }} onClick={() => definirGrifos(atual => atual.slice(0, -1))}>Desfazer último grifo</button>}
     </article>
   )
 }
