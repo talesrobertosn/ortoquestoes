@@ -1,5 +1,5 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
-import { EVENTO_DADOS, gravar, ler, usuarioLocal, type MudancaDados } from '../estado/armazenamento'
+import { EVENTO_DADOS, gravar, ler, limparTudo, usuarioLocal, type MudancaDados } from '../estado/armazenamento'
 import { deItens, ehTipoSync, estadoVazio, identificador, itens, receberDocumento, registrarAlteracoes, TIPOS_SYNC, type Alteracao, type Documento, type EstadoSync, type TipoSync } from './modeloSync'
 
 export interface StatusSync { estado: 'sincronizando' | 'salvo' | 'offline' | 'erro' | 'conflito'; pendentes: number; conflitos: Documento[]; pronto: boolean }
@@ -17,15 +17,20 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
   function aplicar(documentos: Documento[], enviadas: Alteracao[] = []) {
     // O marcador é a fonte de verdade para o comando de zerar a conta.
     // Ele permite que dispositivos que estavam offline também descartem o cache antigo.
-    const marcador = documentos.find(d => d.tipo === 'historico' && d.item === '__reinicio__')
+    const marcador = documentos.filter(d => d.tipo === 'historico' && (d.item === '__reinicio__' || d.item.startsWith('reinicio.v2.'))).sort((a, b) => b.versao - a.versao)[0]
     if (marcador && marcador.versao > estado.reinicio) {
-      gravar('respondidas', {}, 'nuvem'); gravar('favoritos', [], 'nuvem'); gravar('notas', {}, 'nuvem'); gravar('historico', [], 'nuvem')
+      limparTudo('nuvem')
       estado = { ...estadoVazio(), cursor: estado.cursor, reinicio: marcador.versao }
       salvar()
     }
     const mapas = new Map<TipoSync, Record<string, unknown>>()
-    for (const doc of documentos) {
-      if (doc.tipo === 'historico' && doc.item === '__reinicio__') continue
+    for (const remoto of documentos) {
+      if (remoto.tipo === 'historico' && (remoto.item === '__reinicio__' || remoto.item.startsWith('reinicio.v2.'))) continue
+      const prefixo = `r${estado.reinicio}:`
+      // Cada reinício tem seu próprio conjunto de linhas. Dispositivos com
+      // cache antigo não conseguem reativar documentos de outra geração.
+      if (estado.reinicio && !remoto.item.startsWith(prefixo)) continue
+      const doc = estado.reinicio ? { ...remoto, item: remoto.item.slice(prefixo.length) } : remoto
       conhecidos.add(identificador(doc.tipo, doc.item))
       const enviada = enviadas.find(e => e.tipo === doc.tipo && e.item === doc.item)
       if (!receberDocumento(estado, doc, enviada)) continue
@@ -58,34 +63,64 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
     if (!navigator.onLine) { anunciar('offline'); return }
     executando = true; anunciar('sincronizando')
     try {
+      // Um reinício local pendente impede a importação do histórico anterior.
+      // O token persistido torna a repetição segura depois de falha ou F5.
+      const reinicio = ler<string | null>('reinicio:pendente', null)
+      if (reinicio) {
+        const itemReinicio = `reinicio.v2.${reinicio}`
+        const consulta = await cliente.from('progresso_usuario').select('tipo,item,valor,versao,operacao').eq('usuario_id', idUsuario).eq('tipo', 'historico').eq('item', itemReinicio)
+        if (!valido()) return
+        if (consulta.error) throw consulta.error
+        let marcador = (consulta.data ?? [])[0] as Documento | undefined
+        if (marcador?.operacao !== reinicio) {
+          const alteracao = { tipo: 'historico', item: itemReinicio, valor: { id: itemReinicio, descricao: 'Reinício do progresso', concluidaEm: Date.now() }, base: marcador?.versao ?? 0, operacao: reinicio }
+          const resposta = await cliente.rpc('sincronizar_progresso', { alteracoes: [alteracao] })
+          if (!valido()) return
+          if (resposta.error) {
+            const direto = await cliente.from('progresso_usuario').upsert({ usuario_id: idUsuario, tipo: alteracao.tipo, item: alteracao.item, valor: alteracao.valor, operacao: reinicio }, { onConflict: 'usuario_id,tipo,item' }).select('tipo,item,valor,versao,operacao')
+            if (!valido()) return
+            if (direto.error) throw direto.error
+            marcador = (direto.data ?? [])[0] as Documento | undefined
+          } else marcador = (resposta.data ?? [])[0] as Documento | undefined
+        }
+        if (!marcador || marcador.operacao !== reinicio) throw new Error('Reinício ainda não confirmado')
+        // As respostas dadas depois do clique em zerar devem ser preservadas.
+        estado.reinicio = marcador.versao
+        salvar()
+        gravar('reinicio:pendente', null, 'nuvem')
+      }
       // Primeiro recebe: reconcilia todas as linhas antes de enviar alterações
       // locais. O número da versão é global entre tipos; usar apenas `gt(cursor)`
       // pode deixar respostas para trás quando favoritos e respostas chegam em
       // ordens diferentes nos dispositivos.
       let pagina = 0
+      const recebidos: Documento[] = []
       while (valido()) {
         const { data, error } = await cliente.from('progresso_usuario').select('tipo,item,valor,versao,operacao').eq('usuario_id', idUsuario).order('versao').range(pagina, pagina + 499)
         if (!valido()) return
         if (error) throw error
         const documentos = (data ?? []) as Documento[]
-        aplicar(documentos)
+        recebidos.push(...documentos)
         if (documentos.length) estado.cursor = Math.max(estado.cursor, ...documentos.map(d => d.versao))
         salvar()
         if (documentos.length < 500) break
         pagina += 500
       }
+      aplicar(recebidos)
       semearLocais()
       salvar()
       pronto = true
       const fila = Object.values(estado.pendentes).filter(p => !estado.conflitos[identificador(p.tipo, p.item)]).slice(0, 100)
       if (fila.length) {
-        const { data, error } = await cliente.rpc('sincronizar_progresso', { alteracoes: fila })
+        const remotas = fila.map(p => ({ ...p, item: estado.reinicio ? `r${estado.reinicio}:${p.item}` : p.item }))
+        const { data, error } = await cliente.rpc('sincronizar_progresso', { alteracoes: remotas })
         if (!valido()) return
         if (error) {
           // Compatibilidade com projetos que ainda não aplicaram a função RPC:
           // as políticas RLS continuam limitando cada linha ao titular.
-          const linhas = fila.map(p => ({ usuario_id: idUsuario, tipo: p.tipo, item: p.item, valor: p.valor, operacao: p.operacao }))
+          const linhas = remotas.map(p => ({ usuario_id: idUsuario, tipo: p.tipo, item: p.item, valor: p.valor, operacao: p.operacao }))
           const direto = await cliente.from('progresso_usuario').upsert(linhas, { onConflict: 'usuario_id,tipo,item' }).select('tipo,item,valor,versao,operacao')
+          if (!valido()) return
           if (direto.error) throw error
           aplicar((direto.data ?? []) as Documento[], fila)
           salvar()
@@ -144,3 +179,4 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
     },
   }
 }
+
