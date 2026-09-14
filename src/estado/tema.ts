@@ -10,7 +10,13 @@ function aplicar(tema: Tema) {
 }
 
 export function usarTema() {
-  const [tema, definir] = useState<Tema>(() => ler<Tema>('tema', 'sistema'))
+  // Tema claro abre a aplicação para todas as pessoas. Preferências antigas
+  // de "sistema" passam a claro; quem escolheu escuro explicitamente mantém
+  // essa escolha.
+  const [tema, definir] = useState<Tema>(() => {
+    const salvo = ler<Tema>('tema', 'claro')
+    return salvo === 'escuro' ? 'escuro' : 'claro'
+  })
 
   useEffect(() => {
     aplicar(tema)
