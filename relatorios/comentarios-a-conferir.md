@@ -207,6 +207,7 @@ conceitos básicos, 11 questões.
 | `trauma-0523` | Nenhuma alternativa enuncia a definição do tipo II de Anderson e D'Alonzo, que é TOPOGRÁFICA (traço na junção do odontoide com o corpo do áxis). O gabarito escolhe o "comprometimento do ligamento transverso", que só se sustenta como consequência: o fragmento fica preso a C1 por esse ligamento e desliza sobre C2. O comentário explicita essa leitura |
 | `trauma-0736` | A questão pede a alternativa INCORRETA e o gabarito aponta a tração (que é de fato proibida na dissociação occipitocervical) — mas a alternativa D, dada como verdadeira, afirma que o tipo mais comum é a luxação POSTERIOR, quando na classificação de Traynelis o mais comum é o ANTERIOR (tipo I). O comentário registra isso na explicação de D |
 | `trauma-0737` | O enunciado fala em "tipo C" de Fielding e Hawkins, classificação que usa algarismos romanos (I a IV). O comentário assume que corresponde ao tipo III, única leitura compatível com o gabarito (rotação anterior maior que 5 mm por lesão do transverso e dos alares) |
+| `trauma-0713` | As alternativas B (gabarito) e D têm exatamente o mesmo texto no banco de dados original ("luxação posterior, cabeça menor, sobreposição com o teto acetabular") | O comentário segue o gabarito oficial (B) e registra, na explicação da própria alternativa D, que ela repete o texto de B sem nenhum conteúdo que a distinga como incorreta |
 ## Resolvidas depois
 
 | Questão | O que resolveu |
