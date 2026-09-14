@@ -2672,6 +2672,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0428": {
+  "conceito": "A fratura por estresse do navicular tarsal é um dos sítios de ALTO RISCO na classificação de Boden-Osbahr, e a razão anatômica para esse risco explica também sua localização típica. O navicular recebe suprimento sanguíneo por vasos que entram pelas suas margens medial e lateral, convergindo (e se sobrepondo pouco) para o TERÇO CENTRAL do osso — uma verdadeira zona de watershed, a região menos vascularizada de toda a estrutura. É exatamente ali, no terço central, que a fratura por estresse costuma se instalar, e o plano em que o traço se orienta é o SAGITAL: a linha de fratura corre no sentido dorsoplantar, dividindo o osso em um fragmento medial e um lateral, e não no plano coronal (que dividiria o osso em uma porção dorsal e outra plantar). Essa combinação — terço central, plano sagital — é a assinatura reconhecida da lesão, descrita já na classificação clássica de Torg para o navicular (tipo I: fratura incompleta da cortical dorsal; tipo II: fratura parcial estendendo-se ao corpo; tipo III: fratura completa com esclerose das bordas). A baixa vascularização dessa região central é também o motivo prático mais importante: mesmo pequena, essa fratura tem risco real de não consolidar e costuma exigir imobilização rígida sem carga, ao contrário da maioria das fraturas por estresse do pé.",
+  "correta": "A. A fratura por estresse do navicular localiza-se tipicamente no plano sagital, no terço central do osso — exatamente a zona de menor vascularização, onde convergem (com pouca sobreposição) os vasos que entram pelas margens medial e lateral.",
+  "incorretas": {
+   "B": "O plano da fratura é o sagital (traço no sentido dorsoplantar), não o coronal — o plano coronal dividiria o osso em uma porção dorsal e outra plantar, o que não corresponde ao padrão descrito.",
+   "C": "O terço PROXIMAL não é a localização característica; é o terço CENTRAL, correspondente à zona de menor vascularização entre os dois territórios de suprimento sanguíneo do osso.",
+   "D": "Nem o plano coronal nem o terço proximal correspondem à localização clássica dessa fratura, que ocorre no plano sagital e no terço central."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0429": {
   "conceito": "A osteossíntese com PLACA BLOQUEADA é hoje o implante padrão para as fraturas desviadas do úmero proximal, e a sua vantagem é justamente o que gera a sua complicação típica. Os parafusos travam na placa e formam um construto de ÂNGULO FIXO, que não depende do atrito osso-placa e por isso funciona em osso porótico — mas que também NÃO COLAPSA junto com o osso. Os parafusos cefálicos são posicionados o mais perto possível do osso subcondral, onde a ancoragem é melhor. Quando a fratura perde altura — por reabsorção do foco, por colapso em VARO, por falha do suporte medial ou por necrose parcial da cabeça —, o osso migra em direção à placa enquanto os parafusos permanecem exatamente onde foram colocados. O resultado é que as pontas, antes intraósseas, atravessam a cartilagem e emergem na articulação glenoumeral: é a PENETRAÇÃO INTRA-ARTICULAR (cut-out ou perfuração condral), a complicação mais frequente da técnica, causa de dor, crepitação, destruição rápida da glenoide e reoperação. Ela nem sempre aparece na radiografia em frente simples, e a sua pesquisa exige incidências em rotação interna e externa completas ou tomografia. A prevenção tem três frentes encadeadas: restaurar o SUPORTE MEDIAL, reduzindo a dobradiça medial e usando um parafuso de calcar, oblíquo e inferior, que impeça o colapso em varo — porque sem colapso não há penetração; não avançar os parafusos até a cortical subcondral, deixando alguns milímetros de margem; e checar cada parafuso sob radioscopia em todo o arco de rotação. As demais alternativas descrevem complicações reais desse osso — a artrofibrose (rigidez), que é a complicação mais comum das fraturas do úmero proximal em geral, a osteonecrose, ligada aos critérios de Hertel, e a consolidação viciosa em varo —, mas nenhuma supera a penetração do parafuso entre os operados com placa.",
   "correta": "D. A penetração intra-articular do parafuso é a complicação mais frequente da placa bloqueada no úmero proximal: como o construto de ângulo fixo não colapsa, a perda de altura da fratura empurra o osso contra a placa e as pontas dos parafusos emergem pela cartilagem.",
@@ -3004,6 +3015,18 @@
    "E": "O hamato é usado como área doadora em outro contexto da cirurgia da mão: o enxerto osteoarticular de HEMI-HAMATO, para reconstruir a base volar da falange média nas fraturas-luxações da interfalângica proximal. Não é fonte de enxerto vascularizado para o escafoide."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0480": {
+  "conceito": "A fratura por estresse das costelas é uma lesão bem documentada em esportes de remo (remo olímpico, canoagem), e sua localização característica decorre diretamente da biomecânica do movimento repetitivo do remo/pá. O músculo SERRÁTIL ANTERIOR se origina justamente nas costelas médias, na linha axilar, e durante o gesto de remar/pagaiar ele se contrai repetidamente para estabilizar e rodar a escápula enquanto o atleta traciona o remo ou a pá contra a resistência da água. Essa tração muscular repetitiva, somada ao próprio movimento de flexão e rotação do tronco, concentra a maior sobrecarga mecânica sobre um segmento intermediário do arco costal — tipicamente da QUINTA à OITAVA costela, na região posterolateral, próxima à linha axilar (que é exatamente onde o enunciado localiza a dor do atleta). Costelas mais superiores (primeira à terceira) são protegidas pela cintura escapular e menos solicitadas por esse gesto específico; costelas mais inferiores (nona a décima primeira) e as costelas flutuantes (décima segunda, sem inserção anterior) não estão no trajeto principal de tração do serrátil anterior durante o gesto de remada. Reconhecer esse padrão é importante porque a dor costal insidiosa em atleta de remo, mesmo sem trauma direto, deve levantar a suspeita de fratura por estresse antes de se pensar em outras causas de dor torácica.",
+  "correta": "C. A fratura por estresse de costela em remadores e canoístas ocorre tipicamente da quinta à oitava costela, na região posterolateral, pela tração repetitiva do serrátil anterior durante o gesto de remar.",
+  "incorretas": {
+   "A": "As costelas mais superiores (primeira à terceira) são protegidas pela cintura escapular e não correspondem ao segmento classicamente acometido por essa lesão.",
+   "B": "O segmento da terceira à quinta costela é mais superior do que o classicamente descrito para essa lesão, que se concentra da quinta à oitava.",
+   "D": "As costelas mais inferiores (nona a décima primeira) não estão no trajeto principal de tração do serrátil anterior durante o gesto de remada, que se concentra nas costelas médias.",
+   "E": "As costelas flutuantes, sem inserção anterior no gradil costal, não são o sítio classicamente descrito para a fratura por estresse do remador/canoísta."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0482": {
@@ -3352,6 +3375,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0559": {
+  "conceito": "As propriedades mecânicas do osso cortical variam conforme o tipo de força aplicada, e essa variação é um dos fundamentos da biomecânica óssea cobrados em prova. O osso cortical é um material ANISOTRÓPICO — suas propriedades mudam conforme a direção e o tipo de carga —, e resiste de forma desigual a cada modo de solicitação: é mais resistente à COMPRESSÃO, resiste um pouco menos à TENSÃO (tração), e é mais frágil ao CISALHAMENTO. Os valores clássicos de referência (dados de Reilly e Burstein, amplamente citados em compêndios de ciências básicas ortopédicas) situam a resistência à compressão em torno de 190 MPa e à tração em torno de 130 MPa — uma diferença proporcional próxima de 50%, ou seja, o osso cortical resiste a aproximadamente uma vez e meia mais força quando comprimido do que quando tracionado. Essa diferença de comportamento é o que explica, na prática clínica, por que fraturas de padrões diferentes se comportam de modo distinto: um traço em flexão, por exemplo, falha primeiro no lado de tensão (que cede antes), e é também a razão pela qual as fraturas por estresse se distribuem de forma previsível entre a cortical de tensão (mais vulnerável, fraturas de alto risco) e a de compressão (mais tolerante, fraturas de baixo risco) em ossos como a tíbia e o colo do fêmur.",
+  "correta": "A. O osso cortical resiste a forças de compressão cerca de 50% mais do que a forças de tensão, segundo os valores de referência mais citados na literatura de biomecânica óssea — uma diferença que explica, entre outras coisas, por que as fraturas por estresse se comportam de modo diferente conforme ocorrem do lado de tensão ou de compressão do osso.",
+  "incorretas": {
+   "B": "Uma diferença de 100% significaria que o osso resiste ao dobro da carga em compressão comparado à tensão, o que excede a proporção descrita pelos valores de referência mais citados (compressão em torno de 190 MPa, tensão em torno de 130 MPa).",
+   "C": "150% de diferença superestima ainda mais a vantagem da compressão sobre a tensão, distanciando-se da proporção descrita pelos valores clássicos de referência.",
+   "D": "200% representaria o osso resistindo ao triplo em compressão comparado à tensão — muito acima da diferença real descrita para o osso cortical."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0560": {
   "conceito": "O gesso de Burkhalter trata fraturas de metacarpo pelo princípio da posição intrínseca-plus, que mantém as estruturas no comprimento em que não retraem: punho em cerca de 40 graus de extensão, metacarpofalângicas em 70 a 90 graus de flexão e interfalângicas LIVRES, para que o paciente mova os dedos desde o início. A extensão do punho é o que mantém a tensão dos flexores e ajuda a reduzir a angulação apical dorsal; a flexão das metacarpofalângicas mantém os colaterais alongados, evitando a rigidez em extensão que é a complicação clássica.",
   "correta": "40 graus de extensão do punho.",
@@ -3372,6 +3406,17 @@
    "D": "48 meses excede o período em que os desfechos se definem: passados três anos, o tálus que revascularizou já se estabilizou e o que ia colapsar já colapsou."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0564": {
+  "conceito": "A fratura por estresse do colo do fêmur no adulto jovem tem perfis de risco diferentes entre mulheres e homens, e essa diferença ilustra bem como um mesmo desfecho (fratura por fadiga óssea) pode ter mecanismos de base distintos. Nas MULHERES jovens, o fator de risco dominante é hormonal-nutricional: a tríade da atleta feminina — que combina ANOREXIA NERVOSA (ou desordem alimentar/baixa disponibilidade energética), AMENORREIA (disfunção menstrual decorrente da supressão do eixo hipotálamo-hipófise-ovariano) e OSTEOPOROSE (perda de densidade mineral óssea pela queda do estrogênio) — fragiliza o osso a ponto de ele falhar sob cargas de treino que antes eram bem toleradas. Já nos HOMENS jovens, esse componente hormonal específico não está presente da mesma forma, e o fator de risco predominante é puramente mecânico: o ESFORÇO FÍSICO INTENSO E REPETITIVO, típico de recrutas militares em treinamento básico ou de atletas de endurance que aumentam o volume de treino de forma abrupta, sem tempo suficiente para o osso se adaptar ao novo padrão de carga. Essa distinção — mulher jovem: eixo hormonal-nutricional; homem jovem: sobrecarga mecânica pura — é o que a questão está testando, e é coerente com o restante do capítulo de fraturas por estresse, em que a tríade da atleta feminina aparece repetidamente como fator de risco específico do sexo feminino.",
+  "correta": "D. Nas mulheres jovens, o fator de risco predominante é a tríade da atleta feminina (anorexia nervosa, osteoporose e amenorreia); nos homens jovens, é o esforço físico intenso e repetitivo, sem o componente hormonal específico presente nas mulheres.",
+  "incorretas": {
+   "A": "Sedentarismo e obesidade não são os fatores de risco reconhecidos para essa fratura em mulheres jovens fisicamente ativas, nem etilismo e tabagismo são o fator predominante nos homens jovens — o quadro típico envolve sobrecarga por atividade física, não seu oposto.",
+   "B": "Sedentarismo e obesidade não correspondem ao perfil de risco reconhecido nas mulheres jovens com essa fratura, tipicamente atletas ou militares em treinamento intenso, não sedentárias.",
+   "C": "A tríade da atleta feminina está corretamente atribuída às mulheres, mas etilismo e tabagismo não são os fatores predominantes descritos nos homens jovens — o fator reconhecido é o esforço físico intenso e repetitivo."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0565": {
@@ -4079,6 +4124,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0694": {
+  "conceito": "A classificação de risco de Boden e Osbahr separa as fraturas por estresse do pé em ALTO e BAIXO RISCO conforme a probabilidade de não consolidação ou pseudartrose, e essa separação orienta diretamente a agressividade do tratamento. O NAVICULAR TARSAL é um dos sítios clássicos de ALTO RISCO: seu suprimento sanguíneo entra pelas margens medial e lateral do osso, convergindo pouco no terço central, que se torna uma verdadeira zona de watershed com vascularização precária — é justamente ali que a fratura por estresse se instala, e a pobre perfusão local compromete a consolidação, exigindo com frequência imobilização rígida sem carga por período prolongado, e não raro fixação cirúrgica mesmo em fraturas aparentemente estáveis. Em contraste, o CALCÂNEO, o SEGUNDO METATARSO e o SESAMOIDE MEDIAL são exemplos de sítios classicamente considerados de BAIXO RISCO nessa classificação: em geral consolidam bem com tratamento conservador (repouso relativo, ajuste de carga), sem a mesma limitação vascular que compromete o navicular. Reconhecer o navicular como sítio de alto risco é particularmente relevante na prática, porque a dor no médio pé, mal localizada e que piora com atividade, é facilmente confundida com uma entorse banal — e o atraso no diagnóstico dessa fratura específica tem consequência real sobre o desfecho.",
+  "correta": "C. O navicular tarsal é um sítio clássico de alto risco para não consolidação ou pseudartrose, pela vascularização precária do seu terço central — a zona de watershed entre os dois territórios de suprimento sanguíneo do osso.",
+  "incorretas": {
+   "A": "O calcâneo é classicamente considerado sítio de baixo risco, geralmente respondendo bem a tratamento conservador, ao contrário do navicular.",
+   "B": "O segundo metatarso também é classicamente considerado sítio de baixo risco entre as fraturas por estresse do pé.",
+   "D": "O sesamoide medial, nesta classificação clássica, também não está entre os sítios de alto risco atribuídos ao navicular."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0696": {
   "conceito": "A distribuição etária dos tipos de BADO é um dos pontos mais cobrados do tema, e vale organizá-la de uma vez. O TIPO I — luxação ANTERIOR da cabeça do rádio, com a ulna angulada em ápice anterior — é o mais frequente no conjunto de todas as Monteggias (cerca de 60%) e é o padrão típico da CRIANÇA: a fratura da ulna costuma ser em galho verde ou uma deformidade plástica, o mecanismo é a hiperpronação forçada ou o golpe direto sobre a face posterior da ulna, e o tratamento é incruento na maioria, com redução da angulação da ulna e imobilização em SUPINAÇÃO com o cotovelo fletido em torno de 110 graus, posição que relaxa o bíceps. O TIPO II — luxação POSTERIOR ou posterolateral, com a ulna angulada em ápice posterior — é o padrão do ADULTO, e ocorre quase exclusivamente nele, sendo raro na criança: é a variante osteoporótica, produzida por carga axial sobre o cotovelo em relativa extensão, com falha na região metafisodiafisária proximal. Jupiter o subclassificou em IIA (incisura troclear distal, envolvendo o coronoide), IIB (junção metafisodiafisária, o mais comum), IIC (diafisário) e IID (cominuído do olécrano à diáfise). É também o tipo de PIORES resultados, porque raramente é uma Monteggia pura: compromete a incisura troclear, leva junto o coronoide e vem com fratura da cabeça do rádio, funcionando como fratura-luxação complexa do cotovelo. O TIPO III — luxação LATERAL, com fratura em galho verde da ulna proximal por mecanismo em VARO — é praticamente exclusivo da criança e o mais associado à lesão do nervo interósseo posterior. O TIPO IV — luxação anterior com fratura dos dois ossos no mesmo nível — é o mais raro em qualquer idade e o de maior risco de sinostose radioulnar.",
   "correta": "A. Tipo I na criança e tipo II no adulto: o I é o mais frequente no conjunto e o padrão pediátrico, de tratamento em regra incruento; o II é a variante osteoporótica do adulto, rara na criança e de piores resultados.",
@@ -4465,6 +4521,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0771": {
+  "conceito": "As fraturas por estresse são bem menos comuns na criança do que no adulto, mas quando ocorrem seguem um padrão de localização relativamente previsível, ainda que por razões distintas das do adulto. Na criança, o esqueleto em crescimento tem cartilagens de crescimento ainda abertas e um osso com propriedades biomecânicas diferentes das do adulto — mais flexível, com uma relação distinta entre módulo de elasticidade e capacidade de absorção de energia —, mas ainda assim sujeito à mesma lógica de fadiga por sobrecarga repetitiva quando o volume de atividade física ultrapassa a capacidade de reparo ósseo. Assim como no adulto, a TÍBIA é o sítio mais comumente acometido, refletindo o papel central desse osso na sustentação de peso e na absorção do impacto durante a corrida, o salto e outras atividades esportivas típicas da infância e da adolescência (aparecendo com frequência em crianças que praticam corrida, ginástica ou esportes com salto repetitivo). Esse predomínio tibial na criança reforça um ponto prático importante: dor progressiva na perna de uma criança ativa, sem história de trauma agudo, deve incluir a fratura por estresse tibial no diagnóstico diferencial, ao lado de causas mais comumente lembradas nessa faixa etária.",
+  "correta": "A. A tíbia é o principal sítio de fratura por estresse na criança, assim como no adulto, refletindo seu papel central na sustentação de peso e absorção de impacto durante atividades esportivas.",
+  "incorretas": {
+   "B": "A patela não é o sítio mais comum de fratura por estresse na criança; embora existam relatos, é uma localização bem menos frequente do que a tibial.",
+   "C": "O navicular é um sítio importante de fratura por estresse por seu alto risco de não consolidação, mas não é o mais comum na população pediátrica — essa posição pertence à tíbia.",
+   "D": "O colo do fêmur, embora seja um sítio relevante e de alto risco quando ocorre, não é o mais comum de fratura por estresse na criança."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0772": {
   "conceito": "A lesão de MONTEGGIA é a fratura da ulna com luxação da cabeça do rádio, e a classificação de BADO a organiza pelo sentido do desvio da cabeça: TIPO I, anterior — o mais comum no conjunto, cerca de 60%, e o padrão típico da criança; TIPO II, posterior ou posterolateral — o padrão do adulto osteoporótico, frequentemente com fratura do coronoide e instabilidade posterior; TIPO III, LATERAL — quase exclusivo da criança, com fratura metafisária ou em galho verde da ulna proximal e a cabeça do rádio desviada para fora; TIPO IV, anterior com fratura associada dos dois ossos do antebraço no mesmo nível. O diagnóstico se apoia na LINHA RADIOCAPITELAR: uma linha traçada pelo eixo longo do rádio deve passar pelo centro do capítulo em TODAS as incidências — se não passa, há luxação. A complicação neurológica característica da Monteggia é a lesão do NERVO INTERÓSSEO POSTERIOR, o ramo motor profundo do radial, que cruza o colo do rádio dentro do músculo supinador, sob a arcada de Frohse. É justamente essa relação anatômica que explica por que o TIPO III é o mais associado à paralisia: o desvio LATERAL da cabeça do rádio empurra e estira o nervo contra a arcada de Frohse e a borda do supinador, no ponto em que ele está menos móvel. Clinicamente há queda dos dedos com PRESERVAÇÃO da extensão do punho (que se desvia para radial, pelo extensor radial longo, inervado acima da bifurcação) e SEM déficit sensitivo — é o que a distingue da paralisia do nervo radial propriamente dito. O prognóstico é bom: trata-se, na quase totalidade, de neuropraxia, que se recupera espontaneamente em semanas a poucos meses uma vez reduzida a luxação; a exploração cirúrgica precoce só se justifica quando a paralisia aparece DEPOIS de uma redução ou de uma osteossíntese, sugerindo aprisionamento iatrogênico.",
   "correta": "C. O tipo III de Bado, com desvio LATERAL da cabeça do rádio, é o mais associado à lesão do nervo interósseo posterior: o desvio para fora estira o nervo contra a arcada de Frohse e a borda do supinador, exatamente onde ele é menos móvel.",
@@ -4595,6 +4662,17 @@
    "D": "O padrão em osso patológico é transverso e único, não segmentar."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0795": {
+  "conceito": "A classificação de KAEDING-MILLER organiza as fraturas por estresse por gravidade radiográfica crescente, e é útil relembrar o espectro completo para situar corretamente cada estágio. No grau I, a radiografia é normal e o diagnóstico depende de um exame mais sensível (cintilografia ou ressonância), evidenciando apenas edema de medula óssea — a reação de estresse mais precoce, ainda sem fratura estabelecida. No grau II, já existe uma linha de fratura identificável em exame de imagem, mas envolvendo tipicamente uma única cortical, também SEM desvio. No grau III, a fratura está mais avançada — envolvendo o osso de forma mais completa — mas o critério que a distingue do grau seguinte continua sendo a AUSÊNCIA DE DESVIO: é uma fratura já estabelecida, radiograficamente visível, porém ainda estável. Só no grau IV, o mais avançado da escala, a fratura se apresenta DESLOCADA, com perda de estabilidade — geralmente definida por um desvio maior que 2 mm, o marco que separa uma lesão ainda tratável de forma conservadora de uma que, com frequência, exige fixação cirúrgica. Fixar esse raciocínio de severidade crescente (edema → linha sem desvio → linha mais extensa sem desvio → deslocada) é o que permite responder a qualquer recorte dessa classificação sem precisar memorizar cada estágio isoladamente.",
+  "correta": "C. O estágio III da classificação de Kaeding-Miller corresponde a uma fratura por estresse já estabelecida e radiograficamente visível, porém ainda SEM desvio — o critério que a distingue do estágio IV, o das fraturas deslocadas.",
+  "incorretas": {
+   "A": "A reação de estresse sem fratura, achado apenas em exame mais sensível (cintilografia ou ressonância) com radiografia normal, corresponde ao estágio I, o mais precoce da escala — não ao estágio III.",
+   "B": "Pseudoartrose é uma complicação evolutiva de uma fratura que não consolidou, não um dos quatro estágios diagnósticos da classificação de Kaeding-Miller, que descreve a gravidade radiográfica inicial da lesão.",
+   "D": "Fraturas desviadas correspondem ao estágio IV, o mais avançado da escala — o critério que separa o estágio III (sem desvio) do estágio seguinte é justamente o aparecimento de desvio significativo."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0797": {
@@ -4807,6 +4885,18 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0827": {
+  "alerta": "O gabarito indica o tratamento cirúrgico precoce para o traço INFERIOR da fratura de estresse do colo femoral. A literatura clássica (Devas) descreve o contrário: o traço SUPERIOR é o do tipo por TENSÃO — de alto risco de propagação e deslocamento, com indicação de fixação cirúrgica precoce mesmo sem desvio —, enquanto o traço INFERIOR é o do tipo por COMPRESSÃO, geralmente mais estável, tratado de forma conservadora (descarga de peso protegida) quando ocupa menos da metade da largura do colo, reservando-se a cirurgia para os casos que alargam ou falham no tratamento não operatório. O item merece conferência.",
+  "conceito": "A fratura de estresse do colo do fêmur, descrita por Devas, se divide em dois tipos conforme a localização do traço — e essa divisão tem consequência prática direta na conduta, sendo um dos pontos mais cobrados do tema. O traço SUPERIOR ocorre na cortical que trabalha em TENSÃO durante a marcha: ali, o osso tende a se afastar sob carga, e por isso esse tipo tem alto risco de propagação para fratura completa e desviada, mesmo quando o achado inicial é discreto. Por esse risco, a conduta classicamente recomendada para o traço superior é a fixação cirúrgica PRECOCE, com parafusos percutâneos, independentemente do grau de desvio no momento do diagnóstico — esperar para ver se desloca é o erro que se quer evitar. Já o traço INFERIOR ocorre na cortical que trabalha em COMPRESSÃO: ali as superfícies ósseas tendem a se aproximar sob carga, o que confere estabilidade relativa à lesão. Por isso, o traço inferior costuma ser tratado inicialmente de forma CONSERVADORA — descarga de peso protegida e acompanhamento radiográfico seriado —, reservando a cirurgia para os casos em que o traço ocupa mais da metade da largura do colo, progride ou não melhora clinicamente. Entender essa lógica (tensão = instável = cirurgia logo; compressão = estável = tenta conservador primeiro) é o que permite prever a conduta a partir da localização do traço, sem precisar decorar cada situação separadamente.",
+  "correta": "Pelo gabarito, o tratamento cirúrgico precoce é indicado quando o traço é INFERIOR. A leitura mais difundida na literatura atribui essa indicação ao traço SUPERIOR (tipo por tensão, de alto risco de propagação), tratando o traço inferior (tipo por compressão) de forma inicialmente conservadora — por isso o alerta acima.",
+  "incorretas": {
+   "A": "Pela leitura mais difundida na literatura, é justamente o traço SUPERIOR que concentra o risco de propagação e a indicação de cirurgia precoce — o oposto do que o gabarito desta questão aponta.",
+   "C": "A classificação de Devas para a fratura de estresse do colo femoral organiza-se pelo eixo superior/tensão versus inferior/compressão, não por uma localização anterior — não é essa a distinção clinicamente relevante para a indicação cirúrgica.",
+   "D": "Da mesma forma, a distinção relevante nessa fratura não é anteroposterior, e sim entre a cortical superior (tensão) e a inferior (compressão)."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0829": {
   "conceito": "A via de HENRY é o acesso VOLAR (anterior) ao rádio, e a sua grande virtude é ser extensível: uma única incisão, traçada da face lateral do tendão do bíceps até o estiloide radial, dá acesso a todo o osso, da tuberosidade bicipital ao punho. O intervalo internervoso, porém, MUDA conforme o nível, e é isso que a questão cobra. No terço PROXIMAL, o plano se desenvolve entre o BRAQUIORRADIAL lateralmente — inervado pelo nervo RADIAL — e, medialmente, o músculo BRAQUIAL e o PRONADOR REDONDO, inervados pelo musculocutâneo e pelo mediano, respectivamente. É um intervalo internervoso verdadeiro, o que preserva a inervação dos dois lados. No terço MÉDIO e DISTAL, o plano passa a ser entre o BRAQUIORRADIAL e o FLEXOR RADIAL DO CARPO. Duas estruturas exigem atenção na porção proximal. A primeira é a ARTÉRIA RADIAL RECORRENTE e o seu leque de ramos — a 'leash of Henry' —, que cruza o campo horizontalmente e precisa ser ligada para permitir o afastamento lateral do braquiorradial; deixá-la intacta é sangrar sem conseguir expor. A segunda é o NERVO INTERÓSSEO POSTERIOR, que corre dentro do músculo supinador, sob a arcada de Frohse. A manobra de proteção é SUPINAR o antebraço: a supinação traz a inserção do supinador para a face anterior, permitindo que o descolamento subperiosteal seja feito exatamente sobre essa inserção, com o nervo mantido dentro do ventre muscular afastado em bloco. Distalmente, o cuidado se transfere para o ramo SUPERFICIAL do radial, que corre sob o braquiorradial e é sensitivo — a sua lesão produz uma neuralgia dorsorradial (síndrome de Wartenberg) tão incômoda quanto desnecessária.",
   "correta": "C. Na porção proximal, a via de Henry usa o intervalo entre o BRAQUIORRADIAL de um lado e o BRAQUIAL e o PRONADOR REDONDO do outro — um intervalo internervoso verdadeiro, entre território do radial e territórios do musculocutâneo e do mediano.",
@@ -4871,6 +4961,17 @@
    "D": "A deformidade visível do punho é achado tardio ou de lesão grosseira, e a maioria dos casos agudos não a apresenta: o punho costuma parecer normal à inspeção. O que se procura é a DOR à palpação da radioulnar distal, que precede qualquer deformidade."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0839": {
+  "conceito": "A fratura por estresse da diáfise tibial concentra-se na cortical POSTEROMEDIAL, e a explicação é puramente mecânica. Durante a corrida e o salto, a tíbia se comporta como uma viga submetida a flexão repetitiva: uma face do osso trabalha em TENSÃO — a anterior/anterolateral — e a face oposta trabalha em COMPRESSÃO — a posteromedial. O tecido ósseo tolera bem melhor a solicitação em compressão do que em tração, mas isso não significa ausência de dano: sob volume de treino suficiente, a fadiga se acumula também no lado de compressão, e é ali, na posteromedial, que se concentra a IMENSA MAIORIA das fraturas por estresse tibiais — o quadro típico do corredor, geralmente de bom prognóstico, respondendo a repouso relativo e ajuste de carga. A fratura na face anterior/anterolateral, por contraste, é bem menos frequente, mas corresponde à temida 'linha negra' radiográfica: por ocorrer no lado de tensão, tem alto risco de propagação completa e de retardo de consolidação, exigindo por vezes fixação cirúrgica. Reter essa dicotomia — posteromedial (compressão, frequente, benigna) versus anterior (tensão, rara, de alto risco) — é o que permite prever tanto a localização quanto o prognóstico de qualquer fratura de estresse da tíbia.",
+  "correta": "C. A face posteromedial da tíbia, por trabalhar em compressão durante a flexão do osso na corrida e no salto, é a localização mais comum da fratura por estresse tibial, geralmente com bom prognóstico.",
+  "incorretas": {
+   "A": "A face anterolateral é a de tensão — menos frequentemente acometida, mas de maior risco quando ocorre (a 'linha negra' radiográfica) — o oposto do padrão mais comum.",
+   "B": "A face anteromedial não é a mais mecanicamente solicitada nesse mecanismo de flexão; a dicotomia relevante é entre a face anterior/anterolateral (tensão) e a posteromedial (compressão).",
+   "D": "A face posterolateral não corresponde à localização mais comum descrita para essa lesão, que é a posteromedial."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0840": {
@@ -5460,6 +5561,17 @@
   "geradoEm": "2026-09-10",
   "conferido": false
  },
+ "trauma-0941": {
+  "conceito": "Assim como em outras questões deste acervo sobre o mesmo tema, a fratura por estresse da diáfise tibial concentra-se na cortical POSTEROMEDIAL. O mecanismo é a flexão repetitiva a que a tíbia é submetida durante a corrida e o salto: uma face do osso trabalha em TENSÃO (a anterior/anterolateral) e a face oposta trabalha em COMPRESSÃO (a posteromedial). Como o tecido ósseo resiste bem melhor à compressão do que à tração, seria de se esperar que o lado de compressão fosse o mais poupado — mas, na prática, é justamente ali que se concentra a maioria dos casos, porque o volume acumulado de ciclos de carga durante o treinamento supera, com frequência, a margem de segurança mecânica mesmo do lado mais resistente. O resultado clínico costuma ser benigno: a fratura por estresse posteromedial responde bem a repouso relativo e ajuste da carga de treino. Já a fratura no lado de tensão (anterior/anterolateral) é rara, mas reconhecida como de alto risco — a chamada 'linha negra' na radiografia —, com tendência a propagação completa e pior consolidação, podendo exigir tratamento cirúrgico. É essa combinação entre frequência e gravidade invertidas (posteromedial: comum e benigna; anterior: rara e grave) que costuma ser cobrada nesse tema.",
+  "correta": "D. A região posteromedial, face de compressão da tíbia durante a flexão repetitiva da corrida e do salto, é onde ocorre a maioria das fraturas por estresse da diáfise tibial.",
+  "incorretas": {
+   "A": "A região anterolateral é a face de tensão, onde a fratura por estresse é mais rara, embora de maior risco quando ocorre.",
+   "B": "A região anteromedial não corresponde à face mecanicamente mais solicitada nesse mecanismo — a dicotomia relevante é entre a face anterior/anterolateral (tensão) e a posteromedial (compressão).",
+   "C": "A região posterolateral não é a mais associada a essa fratura; a face mais acometida é a posteromedial."
+  },
+  "geradoEm": "2026-09-14",
+  "conferido": false
+ },
  "trauma-0942": {
   "conceito": "O nervo RADIAL se divide na altura da articulação radiocapitelar em dois ramos com destinos distintos. O ramo SUPERFICIAL é sensitivo puro: desce sob o ventre do braquiorradial, na face anterolateral do antebraço, e emerge entre ele e o extensor radial longo do carpo no terço distal, para inervar o dorso radial da mão. O ramo PROFUNDO, que a partir da saída do supinador passa a se chamar NERVO INTERÓSSEO POSTERIOR, é motor puro, e o seu trajeto tem três etapas que convém separar. No terço PROXIMAL, ele mergulha no músculo SUPINADOR, passando sob a sua borda proximal fibrosa — a ARCADA DE FROHSE — e contorna o colo do rádio por dentro do músculo, a cerca de 3 a 4 cm da articulação radiocapitelar; é aqui que ele é lesado nas luxações de Monteggia e nas vias de acesso ao terço proximal do rádio. No terço MÉDIO, ele já emergiu da borda distal do supinador e desce no compartimento extensor PROFUNDO, entre a camada superficial e a profunda dos extensores, ACOMPANHADO PELA ARTÉRIA INTERÓSSEA POSTERIOR — os dois formam um feixe neurovascular que se distribui aos extensores, ao abdutor longo e aos extensores do polegar. No terço DISTAL, o que resta do nervo, já muito fino, alcança a MEMBRANA INTERÓSSEA e caminha sobre ela até terminar na cápsula dorsal do punho, onde funciona como ramo articular — é esse segmento terminal que se resseca na denervação do punho. Essa topografia tem consequência prática direta: na via dorsal de THOMPSON, para o terço médio e distal do rádio, o feixe do interósseo posterior está no plano de dissecção, e o descolamento deve ser feito com o antebraço SUPINADO, que traz o supinador e o nervo para a face anterior, afastando-os da linha de trabalho.",
   "correta": "B. No terço médio do antebraço o ramo profundo do radial já saiu do supinador e desce entre as camadas superficial e profunda dos extensores, acompanhado pela ARTÉRIA INTERÓSSEA POSTERIOR, com a qual forma um feixe neurovascular.",
@@ -5524,6 +5636,17 @@
    "C": "O trauma direto sobre a clavícula ocorre, mas é menos frequente do que a compressão lateral do ombro, e costuma estar associado a fraturas expostas ou a lesões do tegumento."
   },
   "geradoEm": "2026-09-10",
+  "conferido": false
+ },
+ "trauma-0951": {
+  "conceito": "A TRÍADE DA ATLETA FEMININA, descrita pelo Colégio Americano de Medicina do Esporte, reúne três componentes interligados por um único eixo hormonal, e reconhecer os três é essencial porque cada um reforça o risco dos outros dois. O primeiro componente é a DESORDEM ALIMENTAR — que pode variar desde um transtorno alimentar clinicamente diagnosticado até uma simples disponibilidade energética insuficiente para a demanda do treino, sem que a atleta perceba estar comendo pouco para o volume que treina. Esse déficit energético crônico suprime o eixo hipotálamo-hipófise-ovariano, levando ao segundo componente: a IRREGULARIDADE MENSTRUAL OU AMENORREIA, sinal clínico de que o corpo está reduzindo funções não essenciais (como a reprodução) para poupar energia. A queda do estrogênio que acompanha essa disfunção menstrual retira o principal freio hormonal sobre a reabsorção óssea mediada por osteoclastos, e o resultado é o terceiro componente: a OSTEOPOROSE, ou perda de densidade mineral óssea, muitas vezes numa idade em que o esperado seria o pico de massa óssea. O elo prático mais importante da tríade é que ela aumenta diretamente o risco de FRATURA POR ESTRESSE: um osso menos denso e menos capaz de reparar o dano por fadiga acumulado no treino intenso quebra com cargas que antes eram bem toleradas. Por isso, uma fratura de estresse recorrente ou em local atípico numa atleta jovem deve sempre levantar a suspeita ativa dessa tríade.",
+  "correta": "A. A tríade da atleta feminina é a associação entre desordem alimentar, irregularidade menstrual ou amenorreia e osteoporose — três componentes ligados pela supressão hormonal do eixo hipotálamo-hipófise-ovariano.",
+  "incorretas": {
+   "B": "Descreve o quadro oposto — balanço alimentar adequado, ciclo menstrual normal e atividade óssea normal —, ou seja, a ausência da tríade, e não a tríade em si.",
+   "C": "Combina um balanço alimentar inadequado (componente real da tríade) com ciclo menstrual e atividade óssea normais, que não fazem parte da síndrome — a tríade exige os três componentes alterados, não apenas um.",
+   "D": "Combina um balanço alimentar adequado (o que contraria o primeiro componente da tríade) com amenorreia e osteoporose — a tríade exige a desordem alimentar como parte do quadro, não sua ausência."
+  },
+  "geradoEm": "2026-09-14",
   "conferido": false
  },
  "trauma-0953": {
