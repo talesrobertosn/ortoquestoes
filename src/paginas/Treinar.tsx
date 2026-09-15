@@ -11,7 +11,6 @@ import {
 } from '../dados/tipos'
 import { consultaParaFiltros, filtrosParaConsulta, navegar } from '../util/rotas'
 import { SeletorArvore } from '../componentes/SeletorArvore'
-import { SeletorMultiplo } from '../componentes/SeletorMultiplo'
 import { Carregando, Estado } from '../componentes/Estados'
 import { usarSessao } from '../estado/sessao'
 import { usarMedia } from '../util/usarMedia'
@@ -128,37 +127,6 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         {!conta && <p className="aviso-ia" style={{ marginTop: '0.75rem' }}>Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. <a href={href('/conta')}>Criar minha conta</a></p>}
       </header>
 
-      {temProva && (
-        <section className="cartao cartao__corpo" aria-label="Escolha a prova">
-          <p className="meta">ESCOLHA A PROVA</p>
-          <h2>De qual prova você quer estudar as questões?</h2>
-          <p className="texto-2">
-            O acervo reúne questões de mais de uma prova de residência e título de especialista.
-            Escolha uma ou mais para restringir a sessão, ou deixe todas marcadas para estudar o
-            acervo inteiro.
-          </p>
-          <div className="grupo-opcoes" id="filtro-prova-destaque" style={{ marginTop: '0.75rem' }}>
-            {(indice?.provas ?? []).map((prova) => (
-              <button
-                key={prova}
-                type="button"
-                className="opcao-segmento"
-                aria-pressed={filtros.provas.includes(prova)}
-                onClick={() =>
-                  atualizar({
-                    provas: filtros.provas.includes(prova)
-                      ? filtros.provas.filter((x) => x !== prova)
-                      : [...filtros.provas, prova],
-                  })
-                }
-              >
-                {prova} <span className="texto-2 numerico">{contagens?.porProva[prova] ?? 0}</span>
-              </button>
-            ))}
-          </div>
-        </section>
-      )}
-
       <section className="intencoes treinar-intencoes" aria-label="Escolha seu treino">
         {([
           ['Treino rápido', '10 questões para começar', { limite: 10 }],
@@ -238,17 +206,76 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             />
           </div>
 
-          {temAno && (
-            <div className="campo" style={{ marginBottom: 0 }}>
-              <span className="campo__rotulo">Ano</span>
-              <SeletorMultiplo
-                opcoes={[...(indice?.anos ?? [])].sort((a, b) => b - a)}
-                selecionados={filtros.anos}
-                contagens={contagens?.porAno}
-                rotuloVazio="Todos os anos"
-                rotulo={(v) => String(v)}
-                aoMudar={(anos) => atualizar({ anos })}
-              />
+          {(temProva || temAno) && (
+            <div className={'linha-campos' + (temProva && temAno ? ' linha-campos--2' : '')}>
+              {temProva && (
+                <div className="campo" style={{ marginBottom: 0 }}>
+                  <span className="campo__rotulo">Prova</span>
+                  <div className="seletor seletor--lista">
+                    <div className="seletor__painel">
+                      <div className="seletor__lista">
+                        {(indice?.provas ?? []).map((prova) => (
+                          <div className="arvore__linha" key={prova}>
+                            <label className="caixa" style={{ flex: 1, minWidth: 0 }}>
+                              <input
+                                type="checkbox"
+                                checked={filtros.provas.includes(prova)}
+                                onChange={() =>
+                                  atualizar({
+                                    provas: filtros.provas.includes(prova)
+                                      ? filtros.provas.filter((x) => x !== prova)
+                                      : [...filtros.provas, prova],
+                                  })
+                                }
+                              />
+                              <span>{prova}</span>
+                            </label>
+                            <span className="arvore__contagem">{contagens?.porProva[prova] ?? 0}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <span className="campo__auxilio">
+                    Marque uma ou mais para restringir a sessão a essa prova; sem marcar nenhuma,
+                    a sessão considera o acervo inteiro.
+                  </span>
+                </div>
+              )}
+              {temAno && (
+                <div className="campo" style={{ marginBottom: 0 }}>
+                  <span className="campo__rotulo">Ano</span>
+                  <div className="seletor seletor--lista">
+                    <div className="seletor__painel">
+                      <div className="seletor__lista">
+                        {[...(indice?.anos ?? [])].sort((a, b) => b - a).map((ano) => (
+                          <div className="arvore__linha" key={ano}>
+                            <label className="caixa" style={{ flex: 1, minWidth: 0 }}>
+                              <input
+                                type="checkbox"
+                                checked={filtros.anos.includes(ano)}
+                                onChange={() =>
+                                  atualizar({
+                                    anos: filtros.anos.includes(ano)
+                                      ? filtros.anos.filter((x) => x !== ano)
+                                      : [...filtros.anos, ano],
+                                  })
+                                }
+                              />
+                              <span className="numerico">{ano}</span>
+                            </label>
+                            <span className="arvore__contagem">{contagens?.porAno[ano] ?? 0}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <span className="campo__auxilio">
+                    A maior parte do acervo ainda não tem ano conferido; o filtro só cobre as
+                    provas em que o ano já é conhecido, como o ENARE.
+                  </span>
+                </div>
+              )}
             </div>
           )}
 

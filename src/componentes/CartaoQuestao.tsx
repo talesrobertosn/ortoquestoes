@@ -304,6 +304,13 @@ export function CartaoQuestao({
         )}
 
         {(!questao.prova || !questao.ano) && <p className="meta origem-questao">Acervo de TEOT, TARO e outras seleções · {!questao.prova && !questao.ano ? 'prova e ano em conferência' : !questao.prova ? 'prova em conferência' : 'ano em conferência'}.</p>}
+        {questao.prova?.startsWith('SBQ') && (
+          <p className="meta origem-questao">
+            Questão elaborada pelo OrtoQuestões no padrão das provas da SBQ e do Fellowship de
+            Quadril, a partir do livro <em>The Adult Hip</em> (Callaghan et al.) — não é uma
+            reprodução de nenhuma prova oficial, que não é de acesso público.
+          </p>
+        )}
         <div className="questao__enunciado">{questao.enunciado}</div>
 
         {questao.figuraPendente && (
