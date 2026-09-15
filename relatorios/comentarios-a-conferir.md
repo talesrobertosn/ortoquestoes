@@ -163,6 +163,9 @@ conceitos básicos, 11 questões.
 | `trauma-0783` | Qual tipo da classificação de **Emura** para a articulação acromioclavicular corresponde à ausência de disco com superfícies articulares planas | Não domino a numeração dessa classificação (2b, 3a, 3b, 3c) com a granularidade que a questão exige para distinguir os quatro subtipos oferecidos |
 | `trauma-0203` | Em quantos tipos a classificação **IDEAL** divide as fraturas do rádio distal | Não reconheço essa classificação com esse nome, nem tenho como confirmar o número de tipos (2, 3, 4 ou 5) |
 | `trauma-0388` | Quais tipos da classificação **IDEAL** são potencialmente instáveis e qual a conduta recomendada para cada um | Mesma dificuldade da `trauma-0203`: não domino essa classificação específica com a granularidade que a questão exige |
+| `trauma-0648` | Classificar uma fratura diafisária do úmero pela classificação de **Garnavos** entre os tipos MC, PC, MI e PI | Não domino essa classificação com granularidade suficiente para diferenciar os quatro subtipos, e a pergunta depende ainda de uma imagem da fratura que não está disponível no texto da questão |
+| `trauma-0674` | Em que consiste, como técnica auxiliar, a técnica de **Eglseder** no tratamento cirúrgico com placa da fratura diafisária do úmero | Não consigo confirmar com segurança o recurso auxiliar específico atribuído a esse autor entre as opções oferecidas (pinos de Shanz, placa de minifragmentos, suturas não absorvíveis ou placa de reconstrução 3,5 mm) |
+| `trauma-0603` | Quantas corticais usar de cada lado da fratura diafisária do úmero na fixação com placa, conforme se usem ou não parafusos de compressão | Sei que a fixação sem compressão interfragmentar geralmente exige mais corticais que a fixação com compressão direta, mas não consigo confirmar com segurança se o par de números é 8/10, 6/8 ou outra combinação, nem qual delas a banca associa a cada situação |
 
 ## Enunciado que não consigo reconstruir
 
