@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { contar, montarSessao } from '../dados/acervo'
 import { FILTROS_VAZIOS } from '../dados/tipos'
-import { href, navegar } from '../util/rotas'
+import { filtrosParaConsulta, href, navegar } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
@@ -63,6 +63,9 @@ export function Inicio() {
   const anosRecentes = [...anos].sort((a, b) => b - a).slice(0, 6)
   const maiorTema = contagens
     ? Math.max(1, ...Object.values(contagens.porTema))
+    : 1
+  const maiorProva = contagens
+    ? Math.max(1, ...Object.values(contagens.porProva))
     : 1
   const revisoesPlanejadas = useMemo(
     () => (indice ? planoRevisao(indice, contexto.respondidas, 7) : new Map()),
@@ -173,6 +176,35 @@ export function Inicio() {
               <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>{textoDoDia.novas}</small></a>
             </div> : <p className="texto-2">Escolha uma sessão curta. Depois da primeira resposta, esta área passa a mostrar suas revisões, evolução e próximos passos.</p>}
           </section>
+          {(indice.provas?.length ?? 0) > 1 && (
+            <section>
+              <h2>Por prova</h2>
+              <p className="meta" style={{ marginTop: '0.25rem' }}>
+                Escolha a prova para a qual você está estudando.
+              </p>
+              <ul className="distribuicao" style={{ marginTop: '0.75rem' }}>
+                {indice.provas
+                  .filter((prova) => (contagens.porProva[prova] ?? 0) > 0)
+                  .map((prova) => {
+                    const quantidade = contagens.porProva[prova] ?? 0
+                    return (
+                      <li className="distribuicao__item" key={prova}>
+                        <a
+                          className="distribuicao__link"
+                          href={href(`/treinar${filtrosParaConsulta({ ...FILTROS_VAZIOS, provas: [prova] })}`)}
+                        >
+                          <span>{prova}</span>
+                          <span className="distribuicao__quantidade">{quantidade}</span>
+                          <span className="distribuicao__trilho">
+                            <span className="distribuicao__parte" style={{ width: `${(quantidade / maiorProva) * 100}%` }} />
+                          </span>
+                        </a>
+                      </li>
+                    )
+                  })}
+              </ul>
+            </section>
+          )}
           <section>
             <h2>Por tema</h2>
             <p className="meta" style={{ marginTop: '0.25rem' }}>

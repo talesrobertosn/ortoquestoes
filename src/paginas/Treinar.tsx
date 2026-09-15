@@ -128,6 +128,37 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         {!conta && <p className="aviso-ia" style={{ marginTop: '0.75rem' }}>Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. <a href={href('/conta')}>Criar minha conta</a></p>}
       </header>
 
+      {temProva && (
+        <section className="cartao cartao__corpo" aria-label="Escolha a prova">
+          <p className="meta">ESCOLHA A PROVA</p>
+          <h2>De qual prova você quer estudar as questões?</h2>
+          <p className="texto-2">
+            O acervo reúne questões de mais de uma prova de residência e título de especialista.
+            Escolha uma ou mais para restringir a sessão, ou deixe todas marcadas para estudar o
+            acervo inteiro.
+          </p>
+          <div className="grupo-opcoes" id="filtro-prova-destaque" style={{ marginTop: '0.75rem' }}>
+            {(indice?.provas ?? []).map((prova) => (
+              <button
+                key={prova}
+                type="button"
+                className="opcao-segmento"
+                aria-pressed={filtros.provas.includes(prova)}
+                onClick={() =>
+                  atualizar({
+                    provas: filtros.provas.includes(prova)
+                      ? filtros.provas.filter((x) => x !== prova)
+                      : [...filtros.provas, prova],
+                  })
+                }
+              >
+                {prova} <span className="texto-2 numerico">{contagens?.porProva[prova] ?? 0}</span>
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className="intencoes treinar-intencoes" aria-label="Escolha seu treino">
         {([
           ['Treino rápido', '10 questões para começar', { limite: 10 }],
@@ -135,12 +166,12 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           ['Questões novas', 'Amplie seu repertório', { situacao: 'naoRespondidas', limite: 10 }],
           ['Somente comentadas', 'Aprenda com as explicações', { comComentario: true, limite: 10 }],
         ] as [string, string, Partial<Filtros>][]).map(([titulo, texto, preset]) => (
-          <button className="intencao" key={titulo} onClick={() => { definirFiltros({ ...FILTROS_VAZIOS, ...preset }); definirSimulado(false) }}>
+          <button className="intencao" key={titulo} onClick={() => { definirFiltros({ ...FILTROS_VAZIOS, provas: filtros.provas, ...preset }); definirSimulado(false) }}>
             <strong>{titulo}</strong><span>{texto}</span>
           </button>
         ))}
       </section>
-      <p className="meta treinar-contexto">Acervo de TEOT, TARO e outras seleções. Prova e ano de cada questão ainda estão em conferência; filtros só aparecem quando há dados disponíveis.</p>
+      <p className="meta treinar-contexto">Acervo de TEOT, TARO, ENARE e outras seleções. O ano de cada questão ainda está em conferência na maior parte do acervo; filtros só aparecem quando há dados disponíveis.</p>
       <div className="cartao treinar-filtros">
         <div className="cartao__corpo empilha">
           <section className="filtros-destaque">
@@ -207,34 +238,17 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             />
           </div>
 
-          {(temProva || temAno) && (
-            <div className={'linha-campos' + (temProva && temAno ? ' linha-campos--2' : '')}>
-              {temProva && (
-                <div className="campo" style={{ marginBottom: 0 }}>
-                  <span className="campo__rotulo">Tipo de prova</span>
-                  <SeletorMultiplo
-                    opcoes={indice?.provas ?? []}
-                    selecionados={filtros.provas}
-                    contagens={contagens?.porProva}
-                    rotuloVazio="Todas as provas"
-                    rotulo={(v) => String(v)}
-                    aoMudar={(provas) => atualizar({ provas })}
-                  />
-                </div>
-              )}
-              {temAno && (
-                <div className="campo" style={{ marginBottom: 0 }}>
-                  <span className="campo__rotulo">Ano</span>
-                  <SeletorMultiplo
-                    opcoes={[...(indice?.anos ?? [])].sort((a, b) => b - a)}
-                    selecionados={filtros.anos}
-                    contagens={contagens?.porAno}
-                    rotuloVazio="Todos os anos"
-                    rotulo={(v) => String(v)}
-                    aoMudar={(anos) => atualizar({ anos })}
-                  />
-                </div>
-              )}
+          {temAno && (
+            <div className="campo" style={{ marginBottom: 0 }}>
+              <span className="campo__rotulo">Ano</span>
+              <SeletorMultiplo
+                opcoes={[...(indice?.anos ?? [])].sort((a, b) => b - a)}
+                selecionados={filtros.anos}
+                contagens={contagens?.porAno}
+                rotuloVazio="Todos os anos"
+                rotulo={(v) => String(v)}
+                aoMudar={(anos) => atualizar({ anos })}
+              />
             </div>
           )}
 
