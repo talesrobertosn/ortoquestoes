@@ -16,8 +16,8 @@ export function Sobre() {
       <h1>O projeto OrtoQuestões</h1>
       <p>
         O OrtoQuestões é um banco de questões de ortopedia e traumatologia. Reúne questões de
-        provas anteriores — TEOT, TARO e outras — organizadas por assunto, para quem se prepara
-        para o título de especialista ou para as provas da residência. Foi feito por um ortopedista
+        provas anteriores — TEOT, TARO, R4 do ENARE e outras — organizadas por assunto, para quem
+        se prepara para o título de especialista ou para as provas da residência. Foi feito por um ortopedista
         para residentes que estudam entre plantões e cirurgias, com uma regra simples: da página
         inicial até a primeira questão respondida, no máximo dois cliques.
       </p>

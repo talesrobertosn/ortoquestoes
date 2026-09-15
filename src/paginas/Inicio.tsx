@@ -22,9 +22,9 @@ const VARIACOES_INICIO = [
 ]
 
 const VARIACOES_CABECALHO = [
-  { comNome: (nome: string) => `Bem-vindo, ${nome}.`, semNome: 'Seu próximo passo começa aqui.', incentivo: 'Consistência silenciosa também é progresso.', acervo: 'questões de provas anteriores de TEOT, TARO e outras, organizadas por assunto. Você filtra, responde e vê seu desempenho na hora.' },
+  { comNome: (nome: string) => `Bem-vindo, ${nome}.`, semNome: 'Seu próximo passo começa aqui.', incentivo: 'Consistência silenciosa também é progresso.', acervo: 'questões de provas anteriores de TEOT, TARO, ENARE R4 e outras, organizadas por assunto. Você filtra, responde e vê seu desempenho na hora.' },
   { comNome: (nome: string) => `Que bom ter você de volta, ${nome}.`, semNome: 'Voltar para estudar já é um avanço.', incentivo: 'Cada questão entendida hoje reduz a dúvida de amanhã.', acervo: 'questões para treinar raciocínio em ortopedia, com filtros simples e desempenho acompanhado no seu ritmo.' },
-  { comNome: (nome: string) => `Vamos construir repertório, ${nome}.`, semNome: 'Construa repertório questão por questão.', incentivo: 'Não precisa ser perfeito; precisa ser contínuo.', acervo: 'questões de TEOT, TARO e outras provas anteriores para revisar, comparar decisões e evoluir com clareza.' },
+  { comNome: (nome: string) => `Vamos construir repertório, ${nome}.`, semNome: 'Construa repertório questão por questão.', incentivo: 'Não precisa ser perfeito; precisa ser contínuo.', acervo: 'questões de TEOT, TARO, ENARE R4 e outras provas anteriores para revisar, comparar decisões e evoluir com clareza.' },
   { comNome: (nome: string) => `Seu estudo continua daqui, ${nome}.`, semNome: 'Seu estudo pode começar agora.', incentivo: 'Uma sessão curta ainda é uma sessão que conta.', acervo: 'questões organizadas por assunto para você encontrar o que precisa, responder e acompanhar seus acertos.' },
   { comNome: (nome: string) => `Hoje também é dia de avançar, ${nome}.`, semNome: 'Hoje também é um bom dia para avançar.', incentivo: 'A segurança na prova nasce da repetição com propósito.', acervo: 'questões de ortopedia de provas anteriores, reunidas para transformar revisão em domínio progressivo.' },
   { comNome: (nome: string) => `Uma boa decisão por vez, ${nome}.`, semNome: 'Uma boa decisão por vez.', incentivo: 'Seu futuro repertório está sendo treinado agora.', acervo: 'questões para praticar, errar sem medo, revisar com calma e chegar mais preparado à próxima prova.' },
@@ -36,7 +36,7 @@ const VARIACOES_CABECALHO = [
   { comNome: (nome: string) => `Vamos transformar dúvida em critério, ${nome}.`, semNome: 'Transforme dúvida em critério.', incentivo: 'Entender o motivo evita errar pelo mesmo caminho.', acervo: 'questões para comparar alternativas e fortalecer seu raciocínio clínico.' },
   { comNome: (nome: string) => `Bom te ver por aqui, ${nome}.`, semNome: 'Bom ter você por aqui.', incentivo: 'Sua rotina não precisa ser longa para ser consistente.', acervo: 'questões para encaixar uma revisão de qualidade no seu dia.' },
   { comNome: (nome: string) => `A próxima revisão já conta, ${nome}.`, semNome: 'A próxima revisão já conta.', incentivo: 'Memória se constrói quando você volta ao assunto certo.', acervo: 'questões que ajudam a priorizar o que precisa ser lembrado.' },
-  { comNome: (nome: string) => `Vamos praticar raciocínio, ${nome}.`, semNome: 'Pratique raciocínio, questão por questão.', incentivo: 'Cada alternativa analisada melhora sua leitura de prova.', acervo: 'questões de TEOT, TARO e outras seleções para praticar com contexto.' },
+  { comNome: (nome: string) => `Vamos praticar raciocínio, ${nome}.`, semNome: 'Pratique raciocínio, questão por questão.', incentivo: 'Cada alternativa analisada melhora sua leitura de prova.', acervo: 'questões de TEOT, TARO, ENARE R4 e outras seleções para praticar com contexto.' },
   { comNome: (nome: string) => `Você já sabe por onde seguir, ${nome}.`, semNome: 'Escolha uma questão para começar.', incentivo: 'Começar pequeno reduz a distância até a próxima sessão.', acervo: 'questões para avançar por temas, provas e pontos que ainda pedem atenção.' },
   { comNome: (nome: string) => `Seu estudo está em movimento, ${nome}.`, semNome: 'Coloque seu estudo em movimento.', incentivo: 'A segurança nasce de encontros repetidos com bons problemas.', acervo: 'questões para revisar decisões ortopédicas e acompanhar sua evolução.' },
   { comNome: (nome: string) => `Vamos construir confiança com calma, ${nome}.`, semNome: 'Construa confiança com calma.', incentivo: 'Constância vence o impulso de deixar para depois.', acervo: 'questões para você estudar com regularidade e enxergar seu progresso.' },
@@ -286,10 +286,11 @@ export function Inicio() {
             <h2>O que é o OrtoQuestões</h2>
             <p style={{ marginTop: '0.5rem' }}>
               Um banco de questões de ortopedia e traumatologia montado a partir de provas
-              anteriores do TEOT, do TARO e de outros concursos da especialidade. As questões são
-              transcritas das provas originais, com o gabarito da própria banca, e vão sendo
-              comentadas uma a uma — por inteligência artificial e pela comunidade de ortopedistas
-              e residentes — com a explicação de por que cada alternativa está certa ou errada.
+              anteriores do TEOT, do TARO, do R4 do ENARE e de outros concursos da especialidade.
+              As questões são transcritas das provas originais, com o gabarito da própria banca, e
+              vão sendo comentadas uma a uma — por inteligência artificial e pela comunidade de
+              ortopedistas e residentes — com a explicação de por que cada alternativa está certa
+              ou errada.
             </p>
             <p style={{ marginTop: '0.5rem' }}>
               Os assuntos cobrem o programa inteiro: mão e punho, ombro e cotovelo, quadril,
