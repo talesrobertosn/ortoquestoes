@@ -166,6 +166,7 @@ conceitos básicos, 11 questões.
 | `trauma-0648` | Classificar uma fratura diafisária do úmero pela classificação de **Garnavos** entre os tipos MC, PC, MI e PI | Não domino essa classificação com granularidade suficiente para diferenciar os quatro subtipos, e a pergunta depende ainda de uma imagem da fratura que não está disponível no texto da questão |
 | `trauma-0674` | Em que consiste, como técnica auxiliar, a técnica de **Eglseder** no tratamento cirúrgico com placa da fratura diafisária do úmero | Não consigo confirmar com segurança o recurso auxiliar específico atribuído a esse autor entre as opções oferecidas (pinos de Shanz, placa de minifragmentos, suturas não absorvíveis ou placa de reconstrução 3,5 mm) |
 | `trauma-0603` | Quantas corticais usar de cada lado da fratura diafisária do úmero na fixação com placa, conforme se usem ou não parafusos de compressão | Sei que a fixação sem compressão interfragmentar geralmente exige mais corticais que a fixação com compressão direta, mas não consigo confirmar com segurança se o par de números é 8/10, 6/8 ou outra combinação, nem qual delas a banca associa a cada situação |
+| `trauma-0637` | Qual condição não é avaliada no **Score GHOIS** para fratura exposta | Não reconheço esse escore com esse nome, nem os critérios que ele de fato avalia entre comorbidades, cobertura cutânea, lesão óssea e energia do trauma |
 
 ## Enunciado que não consigo reconstruir
 
