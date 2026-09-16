@@ -23,9 +23,12 @@ function textoErro(codigo?: string) {
   if (codigo?.includes('rate_limit') || codigo?.includes('over_')) return 'Muitas tentativas. Aguarde alguns minutos antes de tentar novamente.'
   return 'Não foi possível concluir. Confira os dados e sua conexão e tente novamente.'
 }
-export function Conta() {
+export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const { sessao, recuperacao, encerrarRecuperacao, status, sincronizar, resolver } = usarConta()
-  const [modo, definirModo] = useState<'entrar' | 'criar' | 'recuperar'>('entrar')
+  const modoInicial = consulta?.get('modo')
+  const [modo, definirModo] = useState<'entrar' | 'criar' | 'recuperar'>(
+    modoInicial === 'criar' || modoInicial === 'recuperar' ? modoInicial : 'entrar',
+  )
   const [email, definirEmail] = useState(''), [senha, definirSenha] = useState('')
   const parametros = new URLSearchParams(window.location.search)
   const erroRetorno = parametros.get('error_code') ?? parametros.get('error')

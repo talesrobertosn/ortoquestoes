@@ -1845,6 +1845,18 @@ kbd {
 .conta-pagina h2 { overflow-wrap: anywhere; }
 .conta-pagina pre { overflow-wrap: anywhere; white-space: pre-wrap; max-height: 18rem; overflow-y: auto; font: inherit; padding: 1rem; background: var(--superficie-2); }
 .conta-pagina .campo { display: grid; gap: .5rem; }
+.campo.campo--checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+.campo.campo--checkbox input {
+  margin: 0.3rem 0 0;
+  accent-color: var(--verdete);
+  width: 1.125rem;
+  height: 1.125rem;
+  flex: 0 0 auto;
+}
 .pagina--compacta .cartao__corpo { padding: .9rem; }
 .pagina--compacta .empilha { gap: .7rem; }
 .pagina--compacta .texto-editorial { line-height: 1.55; }

@@ -76,7 +76,7 @@ export function App() {
       pagina = <Contato consulta={rota.consulta} />
       break
     case 'conta':
-      pagina = <Conta />
+      pagina = <Conta consulta={rota.consulta} />
       break
     case 'dados':
       pagina = <DadosLocais />

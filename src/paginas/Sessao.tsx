@@ -6,19 +6,23 @@ import { formatarDuracao, segundosRestantes } from '../dados/tipos'
 import { CartaoQuestao } from '../componentes/CartaoQuestao'
 import { MapaQuestoes } from '../componentes/MapaQuestoes'
 import { Painel } from '../componentes/Painel'
+import { PortaoConta } from '../componentes/PortaoConta'
 import { Atalhos } from '../componentes/Atalhos'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
+import { usarConta } from '../conta/ContextoConta'
 import { usarFavoritos, usarSessao } from '../estado/sessao'
 import { href, navegar } from '../util/rotas'
 
 export function Sessao() {
   const { indice } = usarIndice()
   const { sessao, responder, irPara, alternarRevisar, alternarRiscada, finalizar } = usarSessao()
+  const { sessao: conta } = usarConta()
   const { favoritos, alternar: alternarFavorito } = usarFavoritos()
   const [questoes, definirQuestoes] = useState<Questao[] | null>(null)
   const [mapaAberto, definirMapaAberto] = useState(false)
   const [atalhosAbertos, definirAtalhosAbertos] = useState(false)
+  const [portaoContaAberto, definirPortaoContaAberto] = useState(false)
   const [erro, definirErro] = useState<string | null>(null)
   const inicioToque = useRef<number | null>(null)
 
@@ -213,9 +217,10 @@ export function Sessao() {
           riscadas={sessao.riscadas[questaoAtual.id] ?? []}
           favorita={favoritos.includes(questaoAtual.id)}
           marcadaRevisao={sessao.revisar.includes(questaoAtual.id)}
-          aoResponder={(letra, correta, segundos, confianca) =>
+          aoResponder={(letra, correta, segundos, confianca) => {
+            if (!conta) { definirPortaoContaAberto(true); return }
             responder(questaoAtual.id, letra, correta, segundos, confianca)
-          }
+          }}
           aoRiscar={(letra) => alternarRiscada(questaoAtual.id, letra)}
           aoFavoritar={() => alternarFavorito(questaoAtual.id)}
           aoRevisar={() => alternarRevisar(questaoAtual.id)}
@@ -302,6 +307,8 @@ export function Sessao() {
       >
         <Atalhos />
       </Painel>
+
+      <PortaoConta aberto={portaoContaAberto} aoFechar={() => definirPortaoContaAberto(false)} />
     </div>
   )
 }

@@ -3,16 +3,20 @@ import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestao } from '../dados/acervo'
 import type { Letra, Questao, Resposta } from '../dados/tipos'
 import { CartaoQuestao } from '../componentes/CartaoQuestao'
+import { PortaoConta } from '../componentes/PortaoConta'
 import { Carregando, Estado } from '../componentes/Estados'
+import { usarConta } from '../conta/ContextoConta'
 import { registrarResposta, usarFavoritos } from '../estado/sessao'
 import { href } from '../util/rotas'
 
 /** Link direto para uma questão: responde ali mesmo, sem abrir sessão. */
 export function QuestaoDireta({ id }: { id: string }) {
   const { indice } = usarIndice()
+  const { sessao: conta } = usarConta()
   const [questao, definirQuestao] = useState<Questao | null | undefined>(undefined)
   const [resposta, definirResposta] = useState<Resposta | undefined>()
   const [riscadas, definirRiscadas] = useState<Letra[]>([])
+  const [portaoContaAberto, definirPortaoContaAberto] = useState(false)
   const { favoritos, alternar } = usarFavoritos()
 
   useEffect(() => {
@@ -61,6 +65,7 @@ export function QuestaoDireta({ id }: { id: string }) {
         favorita={favoritos.includes(questao.id)}
         marcadaRevisao={false}
         aoResponder={(escolhida, correta, segundos, confianca) => {
+          if (!conta) { definirPortaoContaAberto(true); return }
           definirResposta({ escolhida, correta, segundos, confianca })
           registrarResposta(questao.id, correta, confianca)
         }}
@@ -80,6 +85,8 @@ export function QuestaoDireta({ id }: { id: string }) {
           Montar outra sessão
         </a>
       </div>
+
+      <PortaoConta aberto={portaoContaAberto} aoFechar={() => definirPortaoContaAberto(false)} />
     </>
   )
 }
