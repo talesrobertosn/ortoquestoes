@@ -13,7 +13,6 @@ import { Favoritas } from './paginas/Favoritas'
 import { Progresso } from './paginas/Progresso'
 import { Revisao } from './paginas/Revisao'
 import { Termos } from './paginas/Termos'
-import { PortaoTermos } from './componentes/PortaoTermos'
 import { SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
 
@@ -105,7 +104,6 @@ export function App() {
       <a className="pular-para-conteudo" href="#conteudo-principal">
         Pular para o conteúdo
       </a>
-      <PortaoTermos />
       <Cabecalho caminho={rota.caminho} />
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>{pagina}</div>

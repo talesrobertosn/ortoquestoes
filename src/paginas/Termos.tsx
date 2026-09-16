@@ -6,470 +6,213 @@ export function Termos() {
   return (
     <article className="limite-leitura empilha termos-pagina">
       <header>
-        <p className="meta">DOCUMENTO DE ACEITE OBRIGATÓRIO</p>
-        <h1>Termos de Uso e Consentimento — {SITE.nome}</h1>
+        <p className="meta">TERMO DE USO, LICENÇA E CONSENTIMENTO</p>
+        <h1>Termos de Uso, Licença e Consentimento — {SITE.nome}</h1>
         <p className="texto-2">
           Última atualização: {new Date(VERSAO_TERMOS + 'T12:00:00').toLocaleDateString('pt-BR', {
             day: '2-digit', month: 'long', year: 'numeric',
           })}
-          . Versão do documento: <span className="numerico">{VERSAO_TERMOS}</span>.
+          . Versão do documento: <span className="numerico">{VERSAO_TERMOS}</span>. Este documento
+          rege o cadastro e o uso do site {SITE.nome} ({SITE.url}).
         </p>
       </header>
 
+      <h2>Preâmbulo</h2>
       <p>
-        Este documento é um contrato entre você e o {SITE.nome} (a seguir, também chamado de
-        &quot;site&quot;, &quot;plataforma&quot; ou &quot;nós&quot;), um projeto pessoal e independente mantido por{' '}
-        {SITE.autor}, médico ortopedista. Ele se aplica a qualquer pessoa que acesse o site, crie uma
-        conta, responda questões, leia comentários, escreva comentários da comunidade ou use qualquer
-        outra funcionalidade disponível, esteja ela logada ou não. Leia com atenção antes de continuar.
-        Se você não concorda com qualquer parte deste termo, não crie uma conta e não continue usando o
-        site.
+        O presente Termo de Uso, Licença e Consentimento (&quot;Termo&quot;) constitui um contrato de
+        adesão, de natureza civil, celebrado entre, de um lado, {SITE.autor}, médico ortopedista,
+        pessoa física responsável pela concepção, manutenção e operação do site {SITE.nome}, doravante
+        denominado simplesmente &quot;{SITE.nome}&quot;, &quot;Plataforma&quot;, &quot;site&quot; ou
+        &quot;nós&quot;; e, de outro lado, toda e qualquer pessoa física que crie uma conta de usuário
+        na Plataforma, doravante denominada &quot;Usuário&quot;, &quot;você&quot; ou
+        &quot;Titular&quot; (quando se tratar especificamente de titular de dados pessoais, nos termos
+        da legislação de proteção de dados).
+      </p>
+      <p>
+        Este Termo é exigido e apresentado para aceite expresso, ativo e inequívoco no momento da
+        criação de uma conta de usuário na Plataforma, na forma da Cláusula 4 abaixo. O texto integral
+        deste Termo permanece, a qualquer tempo, publicamente acessível no rodapé de todas as páginas do
+        site, sob o link &quot;Termos de uso&quot;, independentemente de o visitante possuir ou não uma
+        conta cadastrada, de modo a assegurar transparência e publicidade permanente de seu conteúdo.
+      </p>
+      <p>
+        Recomenda-se a leitura integral e atenta deste documento antes da criação de uma conta. Caso
+        você não concorde com qualquer disposição aqui prevista, a consequência prática é simples: não
+        marque a caixa de aceite e não conclua o cadastro. Você ainda assim poderá utilizar as
+        funcionalidades do site que não dependem de conta, na forma da Cláusula 5.4.
       </p>
 
-      <h2>1. Aceite único e vinculante</h2>
-      <p>
-        Ao marcar a caixa de aceite exibida na tela de consentimento ou no cadastro de conta, você
-        declara que leu, entendeu e concorda integralmente com todo o conteúdo deste Termo de Uso e
-        Consentimento, sem ressalvas. Esse aceite é registrado uma única vez: se você tiver uma conta,
-        ele fica associado a ela e vale em qualquer dispositivo em que você entrar; se você usa o site
-        sem conta, ele fica registrado neste navegador. Você não precisará aceitar novamente, a não ser
-        que o conteúdo deste documento seja alterado de forma relevante, hipótese em que uma nova tela
-        de aceite poderá ser exibida antes de você continuar usando o site, referente apenas à nova
-        versão. O uso continuado do site após eventual notificação de alteração relevante, quando essa
-        notificação ocorrer por outros meios que não uma nova tela de aceite, também é considerado
-        aceite tácito das mudanças.
-      </p>
-      <p>
-        Se você é responsável por outra pessoa que usa este site (por exemplo, um preceptor que
-        recomenda o uso a residentes), é sua responsabilidade avisá-la sobre a existência e o conteúdo
-        deste termo. O aceite, porém, é sempre individual: cada pessoa que cria uma conta ou usa o site
-        deve ler e aceitar este documento por si mesma.
-      </p>
+      <h2>Cláusula 1 — Definições</h2>
+      <p>Para os fins deste Termo, os seguintes termos, iniciados em maiúscula, têm o significado abaixo atribuído, aplicando-se tanto ao singular quanto ao plural:</p>
+      <p><strong>1.1.</strong> &quot;Plataforma&quot; ou &quot;Site&quot;: o site {SITE.nome}, acessível em {SITE.url}, incluindo todas as suas páginas, subdomínios, funcionalidades, bancos de dados e integrações associadas.</p>
+      <p><strong>1.2.</strong> &quot;Conta&quot;: o cadastro individual criado por um Usuário, vinculado a um endereço de e-mail e protegido por senha, que permite a sincronização de progresso de estudo entre dispositivos.</p>
+      <p><strong>1.3.</strong> &quot;Acervo&quot;: o conjunto de questões de múltipla escolha, gabaritos, enunciados, alternativas, imagens e demais materiais didáticos disponibilizados na Plataforma, de origens diversas descritas na Cláusula 8.</p>
+      <p><strong>1.4.</strong> &quot;Comentário de IA&quot;: o texto explicativo associado a uma questão do Acervo, produzido com o apoio de sistemas de inteligência artificial generativa, nos termos da Cláusula 6.</p>
+      <p><strong>1.5.</strong> &quot;Comentário da Comunidade&quot;: qualquer conteúdo textual inserido por um Usuário em campo destinado a comentários, anotações ou observações sobre uma questão do Acervo.</p>
+      <p><strong>1.6.</strong> &quot;Conteúdo Gerado pelo Usuário&quot; ou &quot;CGU&quot;: qualquer dado, texto, comentário, anotação ou outro material inserido voluntariamente pelo Usuário na Plataforma.</p>
+      <p><strong>1.7.</strong> &quot;Dados Pessoais&quot;: toda informação relacionada a pessoa natural identificada ou identificável, na acepção do artigo 5º, inciso I, da Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais — &quot;LGPD&quot;).</p>
+      <p><strong>1.8.</strong> &quot;Provedores de Infraestrutura&quot;: terceiros contratados pelo {SITE.nome} para hospedagem, autenticação, banco de dados e demais serviços técnicos necessários ao funcionamento da Plataforma, incluindo, exemplificativamente, a Supabase Inc. e o serviço de hospedagem estática utilizado pelo site.</p>
+      <p><strong>1.9.</strong> &quot;Provas&quot;: exames de título de especialista, provas de acesso a programas de residência médica, provas de sociedades de especialidade e de fellowships referenciados no Acervo, incluindo, sem se limitar a, TEOT, TARO, o exame nacional de residência médica denominado R4 do ENARE, e a prova da Sociedade Brasileira de Quadril (SBQ) para fellowship de cirurgia do quadril.</p>
+      <p><strong>1.10.</strong> &quot;Visitante&quot;: pessoa que acessa e utiliza funcionalidades do site sem ter criado ou estar autenticada em uma Conta.</p>
 
-      <h2>2. Natureza do site: ferramenta de apoio ao estudo, não um curso, não uma fonte primária</h2>
-      <p>
-        O {SITE.nome} é um banco de questões de ortopedia e traumatologia voltado a médicos residentes,
-        ortopedistas e demais profissionais e estudantes da área da saúde que estudam para provas de
-        título de especialista (como TEOT e TARO), provas de acesso à residência médica (como o R4 do
-        ENARE), provas de sociedades e de fellowships (como a prova da Sociedade Brasileira de Quadril),
-        ou que simplesmente desejam revisar conteúdo de ortopedia por meio de questões objetivas.
-      </p>
-      <p>
-        O site é uma ferramenta de apoio e treino, no formato de perguntas e respostas de múltipla
-        escolha, com comentários explicativos. Ele <strong>não é um curso estruturado</strong>, não
-        substitui a leitura de livros-texto, artigos científicos, diretrizes de sociedades médicas,
-        aulas, preceptoria, estágios práticos ou qualquer outra forma de estudo e formação médica
-        continuada. Ele também não é, e não pretende ser, um serviço de ensino formal, credenciado ou
-        certificado por qualquer instituição de ensino, conselho profissional ou sociedade médica. Usar
-        o {SITE.nome} não gera certificado de conclusão, carga horária, pontuação para títulos ou
-        qualquer outro tipo de validação curricular ou profissional.
-      </p>
+      <h2>Cláusula 2 — Objeto</h2>
+      <p><strong>2.1.</strong> Este Termo tem por objeto disciplinar as condições de acesso, cadastro, uso e licenciamento de conteúdo do site {SITE.nome}, banco de questões de ortopedia e traumatologia destinado a médicos residentes, médicos ortopedistas, demais profissionais de saúde e estudantes da área, para fins de estudo, treino e revisão de conteúdo mediante questões objetivas.</p>
+      <p><strong>2.2.</strong> A adesão a este Termo é condição indispensável e prévia à criação de qualquer Conta na Plataforma. Sem o aceite expresso previsto na Cláusula 4, nenhuma Conta é criada nem ativada.</p>
 
-      <h2>3. Cadastro de conta e elegibilidade</h2>
-      <p>
-        O uso das funcionalidades básicas do site (responder questões e ler comentários) não exige
-        conta. Criar uma conta gratuita é opcional e serve para guardar seu progresso, suas revisões,
-        suas questões favoritas, suas anotações pessoais e seu histórico de sessões, sincronizando esses
-        dados entre diferentes dispositivos.
-      </p>
-      <p>
-        Ao criar uma conta, você declara que: (a) tem capacidade civil plena para celebrar este
-        contrato, ou, caso seja menor de idade, obteve autorização de seu responsável legal para usar o
-        site e criar a conta; (b) as informações fornecidas no cadastro (nome, e-mail, data de
-        nascimento, situação profissional, serviço onde atua ou faz residência, e demais campos
-        preenchidos) são verdadeiras, completas e atualizadas; (c) é o único responsável por manter a
-        confidencialidade da senha de sua conta e por toda atividade realizada nela; (d) manterá apenas
-        uma conta pessoal, não compartilhada com terceiros, salvo autorização expressa e escrita
-        do {SITE.nome}. O {SITE.nome} não valida ativamente a veracidade das informações de cadastro e
-        não se responsabiliza por consequências decorrentes de dados falsos ou incorretos fornecidos
-        pelo usuário.
-      </p>
+      <h2>Cláusula 3 — Natureza da Plataforma e finalidade exclusivamente educacional</h2>
+      <p><strong>3.1.</strong> O {SITE.nome} é uma ferramenta de apoio ao estudo teórico, estruturada no formato de perguntas e respostas de múltipla escolha acompanhadas de comentários explicativos. Não se trata de curso estruturado, programa de ensino, treinamento profissionalizante, serviço de mentoria ou preceptoria, tampouco de instituição de ensino, credenciada ou não perante o Ministério da Educação, conselhos profissionais ou sociedades médicas.</p>
+      <p><strong>3.2.</strong> O uso da Plataforma não gera, para o Usuário, certificado de conclusão, carga horária, pontuação para fins de título de especialista, prova de experiência profissional, ou qualquer outra forma de validação curricular, acadêmica ou profissional perante terceiros, incluindo a Sociedade Brasileira de Ortopedia e Traumatologia (SBOT), instituições de residência médica, ou quaisquer bancas examinadoras.</p>
+      <p><strong>3.3.</strong> A Plataforma não mantém qualquer vínculo institucional, comercial ou de afiliação com a SBOT, com o ENARE, com a Sociedade Brasileira de Quadril, com as bancas examinadoras das Provas referenciadas no Acervo, ou com qualquer instituição de ensino ou de residência médica, salvo quando expressamente indicado em contrário.</p>
 
-      <h2>4. Conteúdo produzido com apoio de Inteligência Artificial: leia com atenção</h2>
-      <p>
-        Parte relevante do conteúdo do {SITE.nome} — em especial os comentários explicativos que
-        acompanham as questões (identificados como &quot;comentário de IA&quot;) — é produzida com o
-        apoio de sistemas de inteligência artificial (modelos de linguagem), a partir de livros-texto de
-        referência da ortopedia e traumatologia, indicados nas próprias referências de cada comentário
-        quando disponíveis. Isso significa que você precisa entender e aceitar, de forma expressa, as
-        limitações inerentes a esse tipo de conteúdo:
-      </p>
-      <ul className="lista">
-        <li>
-          Sistemas de inteligência artificial podem cometer erros, gerar afirmações incorretas,
-          desatualizadas, incompletas, fora de contexto ou simplesmente inventadas (fenômeno
-          conhecido como &quot;alucinação&quot;), mesmo quando o texto produzido parece coerente,
-          seguro e bem fundamentado. A fluência e a segurança aparente de um texto gerado por IA
-          <strong> não são garantia de que o conteúdo esteja correto</strong>.
-        </li>
-        <li>
-          Mesmo quando um comentário de IA está correto, ele é <strong>orientado por livros-texto e
-          por conhecimento geral da especialidade</strong>, não é uma fonte primária de conhecimento
-          médico, não substitui a leitura direta da bibliografia de referência, de diretrizes
-          atualizadas de sociedades médicas (como SBOT e suas subespecialidades) e de artigos
-          científicos originais. Um comentário correto hoje pode também ficar desatualizado com o
-          tempo, à medida que a literatura médica evolui, sem que o site tenha obrigação ou prazo
-          para atualizá-lo.
-        </li>
-        <li>
-          Os comentários podem citar classificações, valores numéricos, ângulos, percentuais,
-          eponímias, condutas e algoritmos que exigem verificação cruzada com a literatura
-          especializada antes de qualquer uso além do estudo para prova. Diferenças entre autores,
-          edições de livros, sociedades e serviços são normais na literatura ortopédica, e um único
-          comentário não esgota essas divergências.
-        </li>
-        <li>
-          Quando há dúvida sobre o gabarito de uma questão ou sobre uma afirmação da banca
-          examinadora, essa dúvida costuma ser sinalizada explicitamente no próprio comentário — mas a
-          ausência dessa sinalização não é garantia de que não exista erro. O usuário deve manter
-          sempre um espírito crítico diante de qualquer conteúdo do site, incluindo os comentários sem
-          sinalização de dúvida.
-        </li>
-        <li>
-          Comentários eventualmente revisados por profissional médico humano podem ser indicados como
-          tal, quando essa revisão existir. A ausência dessa indicação significa que o comentário não
-          passou por revisão médica humana específica, tendo sido gerado exclusivamente por sistema de
-          inteligência artificial com supervisão editorial geral do projeto, não especializada em cada
-          afirmação técnica individual.
-        </li>
-      </ul>
-      <p>
-        Ao usar o {SITE.nome}, você concorda que <strong>é sua responsabilidade exclusiva conferir,
-        de forma independente, qualquer informação clinicamente relevante</strong> em fontes primárias e
-        atualizadas antes de considerá-la válida para qualquer finalidade que não seja o treino para
-        provas de múltipla escolha, incluindo, sem se limitar a isso, qualquer decisão relacionada à
-        prática clínica, à conduta terapêutica ou ao cuidado de pacientes reais.
-      </p>
+      <h2>Cláusula 4 — Aceite e formação do vínculo contratual</h2>
+      <p><strong>4.1.</strong> O aceite deste Termo é solicitado, de forma expressa, ativa e inequívoca — mediante marcação de caixa de seleção (checkbox) própria, não pré-marcada —, exclusivamente no momento da criação de uma nova Conta na Plataforma, imediatamente antes da conclusão do cadastro. A criação da Conta não se completa e não é ativada sem esse aceite prévio.</p>
+      <p><strong>4.2.</strong> Ao marcar a caixa de aceite e concluir o cadastro, o Usuário declara, para todos os fins de direito, que leu a integralidade deste Termo, compreendeu seu conteúdo e concorda com ele sem ressalvas, passando este documento a viger como contrato entre o Usuário e o {SITE.nome} desde então.</p>
+      <p><strong>4.3.</strong> O aceite é registrado, junto aos dados da Conta, com data, hora e a versão específica deste Termo então vigente, permitindo a comprovação, a qualquer tempo, de qual versão o Usuário efetivamente aceitou.</p>
+      <p><strong>4.4.</strong> Diferentemente de mecanismos de bloqueio recorrente, o {SITE.nome} não exige novo aceite explícito a cada acesso ou login em Conta já existente: o aceite prestado no cadastro é válido, em regra, por toda a vigência da Conta, ressalvado o disposto na Cláusula 22 quanto a alterações relevantes deste Termo.</p>
+      <p><strong>4.5.</strong> Nos termos da Cláusula 22, caso este Termo venha a ser alterado de forma relevante, o {SITE.nome} poderá, a seu critério, solicitar novo aceite específico à nova versão no momento do próximo login, sem prejuízo de a publicação da nova versão no rodapé do site já produzir efeitos de publicidade e ciência a partir de sua data de vigência.</p>
+      <p><strong>4.6.</strong> O texto integral deste Termo permanece permanentemente disponível, a qualquer pessoa, com ou sem Conta, no rodapé de todas as páginas do site, sob o link &quot;Termos de uso&quot;, dispensando qualquer necessidade de aceite para a mera consulta de seu conteúdo.</p>
 
-      <h2>5. Este site não presta assistência médica nem substitui avaliação clínica</h2>
-      <p>
-        O {SITE.nome} é uma ferramenta de estudo teórico voltada à preparação para provas, e{' '}
-        <strong>
-          em nenhuma hipótese o conteúdo do site constitui aconselhamento médico, diagnóstico,
-          prescrição, indicação de tratamento, opinião técnica sobre caso clínico real ou qualquer outra
-          forma de assistência à saúde
-        </strong>
-        . Nada no site deve ser usado, direta ou indiretamente, como base para decisões sobre o
-        diagnóstico, a investigação, o tratamento ou o acompanhamento de qualquer paciente real, seja
-        esse paciente do próprio usuário, de terceiros, ou o próprio usuário quando na condição de
-        paciente.
-      </p>
-      <p>
-        A avaliação de qualquer paciente real deve sempre ser feita presencialmente (ou por telemedicina
-        regulamentada, quando aplicável), por profissional médico habilitado, com exame físico,
-        anamnese completa, exames complementares pertinentes e acesso ao histórico clínico do paciente
-        — elementos que o {SITE.nome} nunca terá acesso e nunca substitui. Se você é paciente e chegou a
-        este site por qualquer motivo, procure atendimento médico presencial para qualquer dúvida de
-        saúde; não use o conteúdo deste site para se autodiagnosticar, se automedicar ou adiar a busca
-        por atendimento médico adequado.
-      </p>
-      <p>
-        Se você é profissional de saúde ou está em formação, o conteúdo deste site não substitui sua
-        formação médica formal, sua residência, sua preceptoria, os protocolos e diretrizes do serviço
-        onde você atua, nem o julgamento clínico exigido em cada caso real. Decisões clínicas envolvem
-        variáveis que uma questão de múltipla escolha, por definição, simplifica ou não contempla.
-      </p>
+      <h2>Cláusula 5 — Cadastro, Conta de usuário e elegibilidade</h2>
+      <p><strong>5.1.</strong> A criação de Conta é gratuita e opcional, nos termos da Cláusula 10, e destina-se a possibilitar o armazenamento e a sincronização, entre diferentes dispositivos, de respostas, revisões programadas, questões favoritadas, anotações pessoais e histórico de sessões de estudo do Usuário.</p>
+      <p><strong>5.2.</strong> Ao se cadastrar, o Usuário declara e garante que: (a) possui capacidade civil plena para contratar, nos termos da legislação civil brasileira, ou, sendo relativa ou absolutamente incapaz, obteve prévia autorização e assistência ou representação de seu responsável legal para a criação da Conta e aceite deste Termo; (b) as informações fornecidas no cadastro — incluindo nome, sobrenome, e-mail, data de nascimento, situação profissional, serviço em que atua ou realiza residência, e demais campos preenchidos — são verdadeiras, exatas, completas e mantidas atualizadas; (c) é o único responsável por preservar a confidencialidade de sua senha e por todos os atos praticados em sua Conta, devendo comunicar imediatamente o {SITE.nome} em caso de uso não autorizado; e (d) manterá uma única Conta de natureza estritamente pessoal e intransferível, vedado o compartilhamento de credenciais de acesso com terceiros.</p>
+      <p><strong>5.3.</strong> O {SITE.nome} não realiza verificação ativa, prévia ou continuada, da veracidade dos dados cadastrais informados pelo Usuário, e não responde por consequências decorrentes de informações falsas, incompletas ou desatualizadas fornecidas no cadastro.</p>
+      <p><strong>5.4.</strong> As funcionalidades essenciais de consulta ao Acervo — responder questões e ler os Comentários de IA e da Comunidade já publicados — não exigem Conta e podem ser utilizadas por qualquer Visitante, o qual, embora não subscreva formalmente este Termo mediante aceite ativo, está igualmente sujeito, no que aplicável, às disposições sobre natureza do conteúdo, ausência de aconselhamento médico, propriedade intelectual e limitação de responsabilidade aqui previstas, em razão da mera utilização voluntária do site.</p>
+      <p><strong>5.5.</strong> O {SITE.nome} reserva-se o direito de recusar, suspender ou cancelar o cadastro de qualquer pessoa, a seu exclusivo critério, inclusive sem indicação de motivo, especialmente diante de indícios de fraude, de dados falsos ou de descumprimento deste Termo.</p>
 
-      <h2>6. Origem e natureza das questões do acervo</h2>
-      <p>
-        O acervo de questões do {SITE.nome} é heterogêneo quanto à origem, e cada questão indica, quando
-        essa informação já estiver disponível, a prova e o ano de origem. De forma geral, o acervo é
-        composto por:
-      </p>
-      <ul className="lista">
-        <li>
-          <strong>Questões de provas anteriores de TEOT e TARO</strong> (Título de Especialista em
-          Ortopedia e Traumatologia e prova de Título de Área de Atuação, respectivamente, da SBOT),
-          extraídas de edições anteriores dessas provas. Enquanto a identificação individual de qual
-          prova e qual ano cada questão pertence ainda estiver em conferência, essas questões aparecem
-          agrupadas de forma genérica como acervo de TEOT/TARO, sem prejuízo de, no futuro, essa
-          identificação ser refinada à medida que provas de anos específicos forem incorporadas ao
-          processo de conferência do site.
-        </li>
-        <li>
-          <strong>Questões de outras provas de acesso à residência ou de título</strong>, como o R4 do
-          ENARE de Ortopedia e Traumatologia, extraídas de edições oficiais dessas provas, com o
-          respectivo gabarito oficial e ano de aplicação indicados.
-        </li>
-        <li>
-          <strong>Questões originais elaboradas pelo próprio {SITE.nome}</strong>, inspiradas no padrão,
-          no estilo e no grau de dificuldade de provas de sociedades e de fellowships que não têm suas
-          questões oficiais disponíveis ao público em geral — por exemplo, a prova da Sociedade
-          Brasileira de Quadril (SBQ) para o fellowship de cirurgia do quadril. Nesses casos, o
-          enunciado e as alternativas são redigidos de forma própria e original pelo site, a partir de
-          conteúdo de livros-texto de referência da subespecialidade (creditados nas referências do
-          comentário, quando aplicável) e do conhecimento geral da área — <strong>não são transcrições,
-          traduções nem reproduções de nenhuma prova oficial não pública</strong>. Questões com essa
-          origem trazem um aviso específico, visível junto ao enunciado, esclarecendo que se trata de
-          questão elaborada pelo site e não de uma questão oficial daquela prova.
-        </li>
-        <li>
-          <strong>Simulados</strong>, montados a partir de combinações de questões do acervo (de
-          qualquer uma das origens acima), conforme os filtros de assunto, prova, ano e dificuldade
-          escolhidos pelo próprio usuário, sem que isso implique que tais combinações correspondam a
-          qualquer prova real já aplicada.
-        </li>
-      </ul>
-      <p>
-        O site se empenha para que a extração de texto de provas originais (a partir de arquivos em PDF)
-        seja fiel ao documento de origem, mas erros de digitalização, truncamento de enunciado, ausência
-        de figuras citadas no enunciado, ou divergência de gabarito em relação ao gabarito oficial
-        publicado pela banca podem ocorrer. Questões identificadas como anuladas pela própria banca são
-        marcadas como tal e não entram no cálculo de desempenho do usuário, mas o site não garante que
-        todas as anulações oficiais já tenham sido identificadas e sinalizadas a qualquer momento. Caso
-        você identifique qualquer inconsistência, poderá relatá-la pelo canal de{' '}
-        <a href={href('/contato')}>relato de erro</a>, mas a existência desse canal não gera qualquer
-        obrigação de correção em prazo determinado, nem responsabilidade do site por eventual uso do
-        conteúdo antes da correção.
-      </p>
+      <h2>Cláusula 6 — Inteligência artificial: natureza, limitações e riscos do conteúdo</h2>
+      <p><strong>6.1.</strong> Parcela relevante do conteúdo explicativo do Acervo — os Comentários de IA — é produzida com o apoio de sistemas de inteligência artificial generativa (modelos de linguagem de grande porte), a partir de livros-texto de referência da ortopedia e traumatologia, indicados, quando disponível, nas referências de cada comentário, e do conhecimento geral do sistema utilizado sobre a especialidade.</p>
+      <p><strong>6.2.</strong> O Usuário declara ter ciência expressa e concorda que sistemas de inteligência artificial generativa apresentam limitações técnicas inerentes e amplamente documentadas na literatura, entre as quais:</p>
+      <p><strong>6.2.1.</strong> a possibilidade de produzir afirmações factualmente incorretas, desatualizadas, incompletas, descontextualizadas ou inteiramente inventadas (fenômeno tecnicamente conhecido como &quot;alucinação&quot;), ainda que o texto produzido apresente redação fluente, tom assertivo e aparência de rigor técnico;</p>
+      <p><strong>6.2.2.</strong> a impossibilidade de garantia de completude, atualidade ou consenso científico no conteúdo gerado, mesmo quando tecnicamente correto no momento de sua geração, tendo em vista a evolução constante da literatura médica e a ausência de compromisso do {SITE.nome} com atualização periódica ou tempestiva de comentários já publicados;</p>
+      <p><strong>6.2.3.</strong> a existência de divergências legítimas entre autores, edições de obras de referência, sociedades de especialidade e serviços de residência médica sobre classificações, condutas, valores numéricos, ângulos, percentuais e algoritmos de tratamento, de modo que um único Comentário de IA jamais esgota tais divergências;</p>
+      <p><strong>6.2.4.</strong> a eventual sinalização, quando identificada, de dúvida sobre o gabarito oficial de uma questão ou sobre afirmação da banca examinadora, não constituindo tal sinalização — nem sua ausência — garantia de correção ou de incorreção do conteúdo.</p>
+      <p><strong>6.3.</strong> Mesmo nas hipóteses em que o Comentário de IA esteja materialmente correto, o Usuário reconhece que tal conteúdo é orientado por obras de referência bibliográfica e pelo conhecimento geral da especialidade incorporado ao sistema de inteligência artificial utilizado, não constituindo fonte primária de conhecimento médico-científico, e não substituindo, em nenhuma hipótese, a leitura direta e atualizada de livros-texto, diretrizes de sociedades médicas, artigos científicos revisados por pares e demais fontes primárias da literatura ortopédica.</p>
+      <p><strong>6.4.</strong> Comentários eventualmente submetidos a revisão por profissional médico habilitado poderão trazer indicação expressa nesse sentido, quando essa revisão específica existir. A ausência de tal indicação significa que o respectivo comentário foi gerado exclusivamente por sistema de inteligência artificial, com supervisão editorial geral do projeto não especializada na verificação técnica individualizada de cada afirmação.</p>
+      <p><strong>6.5.</strong> É responsabilidade exclusiva e intransferível do Usuário verificar, de forma independente e junto a fontes primárias e atualizadas, qualquer informação clinicamente relevante contida no Acervo, antes de utilizá-la para finalidade diversa do treino teórico para Provas de múltipla escolha — incluindo, sem limitação, qualquer decisão relacionada à prática clínica, à conduta diagnóstica ou terapêutica, ou ao cuidado de pacientes reais.</p>
 
-      <h2>7. Comentários da comunidade</h2>
-      <p>
-        Além dos comentários de IA, o site permite que outros usuários (ortopedistas e residentes)
-        publiquem comentários próprios em cada questão (&quot;comentário da comunidade&quot;). Esses
-        comentários são de inteira responsabilidade de quem os escreve, não passam necessariamente por
-        qualquer revisão editorial ou médica do {SITE.nome} antes de ficarem visíveis, e podem conter
-        opiniões pessoais, informações desatualizadas, imprecisas ou equivocadas. O {SITE.nome} não
-        garante a veracidade, a precisão, a atualidade nem a adequação de nenhum comentário da
-        comunidade, e não se responsabiliza por prejuízos decorrentes do uso dessas informações.
-      </p>
-      <p>
-        O {SITE.nome} se reserva o direito de, a seu exclusivo critério e sem necessidade de aviso
-        prévio, remover, ocultar, editar ou recusar a publicação de qualquer comentário da comunidade
-        que julgue ofensivo, discriminatório, difamatório, ilegal, spam, publicitário indevido, em
-        violação de direitos autorais de terceiros, ou de qualquer forma inadequado ao propósito
-        educacional do site — sem que isso gere qualquer obrigação de justificativa ou direito a
-        indenização para quem o publicou.
-      </p>
+      <h2>Cláusula 7 — Ausência de relação médico-paciente e de aconselhamento clínico</h2>
+      <p><strong>7.1.</strong> O {SITE.nome} não presta, e não se propõe a prestar, assistência médica, teleconsulta, telediagnóstico, aconselhamento clínico individualizado ou qualquer outra modalidade de serviço de saúde regulamentado. O uso da Plataforma não estabelece, em nenhuma hipótese, relação médico-paciente entre o Usuário e o {SITE.nome}, seu autor ou eventuais colaboradores.</p>
+      <p><strong>7.2.</strong> Em nenhuma circunstância o conteúdo do Acervo, os Comentários de IA ou os Comentários da Comunidade constituem diagnóstico, prognóstico, prescrição, indicação terapêutica, opinião técnica sobre caso clínico concreto ou qualquer outra forma de orientação de saúde individualizada. Nenhum conteúdo do site deve ser utilizado, direta ou indiretamente, isoladamente ou em conjunto com outras fontes, como fundamento para decisões sobre diagnóstico, investigação complementar, tratamento ou acompanhamento de qualquer paciente real, seja este paciente de terceiros, do próprio Usuário quando no exercício da medicina, ou o próprio Usuário na condição de paciente.</p>
+      <p><strong>7.3.</strong> A avaliação de qualquer paciente real pressupõe, necessariamente, atendimento presencial ou por telemedicina regulamentada, realizado por profissional médico habilitado, com anamnese completa, exame físico, solicitação e interpretação de exames complementares pertinentes e acesso ao histórico clínico do paciente — elementos aos quais o {SITE.nome} jamais tem acesso e que, por sua própria natureza, o conteúdo da Plataforma nunca substitui.</p>
+      <p><strong>7.4.</strong> Caso o Usuário, ou qualquer pessoa que acesse este site, encontre-se na condição de paciente, recomenda-se a imediata busca de atendimento médico presencial para qualquer dúvida relativa à própria saúde, sendo expressamente desaconselhado o uso do conteúdo deste site para autodiagnóstico, automedicação ou adiamento de busca por atendimento médico adequado.</p>
+      <p><strong>7.5.</strong> Para o Usuário profissional de saúde ou em formação, o conteúdo do Acervo não substitui sua formação médica formal, sua residência médica, sua preceptoria, os protocolos institucionais e diretrizes do serviço em que atua, nem o julgamento clínico exigido em cada caso concreto, o qual envolve variáveis que uma questão de múltipla escolha, por sua natureza e finalidade didática, necessariamente simplifica ou não contempla.</p>
 
-      <h2>8. Gratuidade atual e possibilidade de cobrança futura</h2>
-      <p>
-        Nesta data, o {SITE.nome} é <strong>gratuito</strong> e não possui limite diário de uso do
-        acervo. Isso é uma opção do momento atual do projeto, e não uma promessa de gratuidade
-        permanente. O {SITE.nome} se reserva o direito de, no futuro, adotar modelos de cobrança total
-        ou parcial pelo uso do site ou de funcionalidades específicas — por exemplo, uma assinatura paga
-        para acesso a todo o acervo, mantendo, se assim decidir, algum nível de uso gratuito diário. Caso
-        isso ocorra, o {SITE.nome} pretende comunicar a mudança com antecedência razoável através do
-        próprio site, mas a ausência dessa comunicação prévia, por qualquer motivo, não gera direito a
-        indenização, manutenção de gratuidade ou qualquer outra compensação ao usuário. Funcionalidades
-        gratuitas hoje podem se tornar pagas, ser modificadas ou ser descontinuadas a qualquer momento, a
-        critério exclusivo do {SITE.nome}, sem necessidade de justificativa.
-      </p>
-      <p>
-        Você concorda que o uso gratuito atual do site não gera nenhuma expectativa legítima de
-        gratuidade futura, nenhum direito adquirido sobre qualquer funcionalidade específica, e nenhuma
-        obrigação, para o {SITE.nome}, de manter no plano gratuito qualquer questão, comentário,
-        funcionalidade de sincronização, revisão espaçada ou qualquer outro recurso hoje disponível sem
-        custo.
-      </p>
+      <h2>Cláusula 8 — Origem e natureza do Acervo de questões</h2>
+      <p><strong>8.1.</strong> O Acervo é heterogêneo quanto à origem de suas questões, sendo composto, exemplificativamente e sem caráter exaustivo, pelas seguintes categorias, cada questão indicando, sempre que essa informação já estiver disponível, a prova e o ano de origem:</p>
+      <p><strong>8.1.1. Questões de provas anteriores de TEOT e TARO.</strong> Extraídas de edições pretéritas do Título de Especialista em Ortopedia e Traumatologia (TEOT) e da prova de Título de Área de Atuação (TARO), ambas da Sociedade Brasileira de Ortopedia e Traumatologia (SBOT). Enquanto a identificação individualizada de prova e ano de cada questão estiver em processo de conferência, tais questões permanecem agrupadas de forma genérica sob a identificação &quot;TEOT/TARO&quot;, podendo essa identificação ser refinada no futuro à medida que o processo de conferência avance.</p>
+      <p><strong>8.1.2. Questões de outras Provas de acesso à residência médica ou de título.</strong> Incluindo, exemplificativamente, o exame R4 do ENARE de Ortopedia e Traumatologia, extraídas de edições oficiais já divulgadas dessas Provas, com indicação do respectivo gabarito oficial e ano de aplicação.</p>
+      <p><strong>8.1.3. Questões originais elaboradas pelo {SITE.nome}.</strong> Questões inspiradas no padrão, no estilo redacional e no grau de dificuldade de Provas de sociedades de especialidade e de fellowships cujo conteúdo oficial não é disponibilizado ao público em geral — exemplificativamente, a prova da Sociedade Brasileira de Quadril (SBQ) para fellowship de cirurgia do quadril. Nessas hipóteses, o enunciado e as alternativas são redigidos de forma própria e original pelo {SITE.nome}, a partir de conteúdo de obras de referência bibliográfica da subespecialidade (creditadas nas referências do respectivo comentário, quando aplicável) e do conhecimento geral da área, <strong>não configurando, em nenhuma hipótese, transcrição, tradução, reprodução, cópia ou paráfrase de qualquer prova oficial não divulgada publicamente</strong>. Questões com essa origem trazem aviso específico e visível, junto ao enunciado, esclarecendo tratar-se de questão de elaboração própria do site, e não de questão oficial da respectiva prova ou instituição.</p>
+      <p><strong>8.1.4. Simulados.</strong> Combinações de questões do Acervo, de qualquer das origens acima, montadas conforme filtros de assunto, prova, ano e dificuldade escolhidos pelo próprio Usuário, sem que tais combinações correspondam, ou pretendam corresponder, a qualquer prova real já aplicada por qualquer instituição.</p>
+      <p><strong>8.2.</strong> O {SITE.nome} envida esforços para que a extração de texto de Provas originais, realizada a partir de arquivos digitais fornecidos pelas respectivas bancas ou de terceiros, seja fiel ao documento de origem. Não obstante, o Usuário reconhece a possibilidade de ocorrência de erros de digitalização, truncamento de enunciado, ausência de figuras referenciadas no texto, ou divergência pontual entre o gabarito exibido na Plataforma e o gabarito oficial definitivo publicado pela respectiva banca examinadora, inclusive em razão de anulações posteriores à data de extração.</p>
+      <p><strong>8.3.</strong> Questões identificadas, a qualquer tempo, como anuladas pela respectiva banca examinadora são marcadas como tal na Plataforma e excluídas do cálculo de desempenho do Usuário, sem que o {SITE.nome} garanta que todas as anulações oficiais já tenham sido identificadas e sinalizadas em determinado momento.</p>
+      <p><strong>8.4.</strong> O Usuário que identificar qualquer inconsistência no Acervo poderá comunicá-la pelo canal de <a href={href('/contato')}>relato de erro</a> disponível no site, sem que a existência desse canal implique qualquer obrigação de correção em prazo determinado, nem responsabilidade do {SITE.nome} por eventual uso do conteúdo anteriormente à correção.</p>
 
-      <h2>9. Propriedade intelectual</h2>
-      <p>
-        O código-fonte, o layout, a identidade visual, os textos originais (incluindo os comentários de
-        IA e as questões originais descritas no item 6) e a organização do acervo do {SITE.nome} são de
-        titularidade do projeto e/ou de seu autor, protegidos pela legislação brasileira de direitos
-        autorais e de propriedade intelectual aplicável. Questões extraídas de provas de terceiros
-        (TEOT, TARO, ENARE e outras) pertencem a seus respectivos titulares (bancas examinadoras,
-        sociedades médicas, instituições organizadoras), e sua disponibilização neste site tem finalidade
-        exclusivamente educacional e não comercial de referência a provas já divulgadas ou aplicadas.
-      </p>
-      <p>
-        É concedida ao usuário uma licença pessoal, limitada, não exclusiva, não transferível e
-        revogável para acessar e usar o conteúdo do site exclusivamente para fins de estudo pessoal. É
-        vedado, sem autorização prévia e por escrito do {SITE.nome}: copiar, reproduzir, redistribuir,
-        publicar, vender, sublicenciar ou de qualquer forma disponibilizar publicamente o acervo de
-        questões e comentários (integral ou parcialmente, inclusive por meio de raspagem automatizada de
-        dados, ou &quot;scraping&quot;), com finalidade comercial ou não; usar o conteúdo para treinar,
-        ajustar (fine-tuning) ou alimentar outros sistemas de inteligência artificial; e remover ou
-        alterar avisos de autoria, de origem ou de licença presentes no conteúdo.
-      </p>
+      <h2>Cláusula 9 — Conteúdo Gerado pelo Usuário e Comentários da Comunidade</h2>
+      <p><strong>9.1.</strong> A Plataforma permite que Usuários publiquem Comentários da Comunidade em questões do Acervo, compartilhando experiência de prova, referências pessoais ou observações sobre o conteúdo.</p>
+      <p><strong>9.2.</strong> Todo Conteúdo Gerado pelo Usuário é de responsabilidade exclusiva de quem o produz e publica. Tal conteúdo não passa, necessariamente, por revisão editorial ou médica prévia do {SITE.nome} antes de sua publicação, podendo conter opiniões pessoais, imprecisões, informações desatualizadas ou equivocadas. O {SITE.nome} não garante a veracidade, a precisão, a atualidade ou a adequação de qualquer Comentário da Comunidade, e não responde por prejuízos decorrentes de sua utilização pelo Usuário.</p>
+      <p><strong>9.3.</strong> Ao publicar Conteúdo Gerado pelo Usuário, este concede ao {SITE.nome} licença gratuita, não exclusiva, mundial e por prazo indeterminado para armazenar, reproduzir, exibir publicamente e distribuir tal conteúdo no âmbito da Plataforma, para os fins a que a Plataforma se destina, sem que isso implique cessão de titularidade sobre o conteúdo original produzido pelo Usuário.</p>
+      <p><strong>9.4.</strong> O {SITE.nome} reserva-se o direito de, a seu exclusivo critério e independentemente de aviso prévio ou justificativa, remover, ocultar, editar ou recusar a publicação de qualquer Conteúdo Gerado pelo Usuário que considere ofensivo, discriminatório, difamatório, ilícito, configurador de spam ou publicidade não solicitada, violador de direitos autorais de terceiros, ou de qualquer forma incompatível com a finalidade educacional da Plataforma, sem que tal medida gere direito a indenização em favor de quem publicou o conteúdo.</p>
 
-      <h2>10. Conduta do usuário e uso aceitável</h2>
-      <p>Ao usar o {SITE.nome}, você se compromete a:</p>
-      <ul className="lista">
-        <li>Usar o site de boa-fé, com consciência e responsabilidade, para fins de estudo pessoal;</li>
-        <li>
-          Não tentar acessar, de forma não autorizada, dados de outros usuários, áreas restritas do
-          sistema, ou a infraestrutura do site e de seus provedores (incluindo o banco de dados
-          utilizado para autenticação e sincronização);
-        </li>
-        <li>
-          Não utilizar bots, scripts automatizados, engenharia reversa ou qualquer outro meio técnico
-          para extrair em massa o conteúdo do acervo, sobrecarregar a infraestrutura do site ou burlar
-          eventuais limites de uso;
-        </li>
-        <li>
-          Não publicar, no espaço de comentários da comunidade ou em qualquer canal de contato do site,
-          conteúdo ilegal, ofensivo, discriminatório, difamatório, ou que viole direitos de terceiros;
-        </li>
-        <li>
-          Não se passar por outra pessoa, instituição ou banca examinadora, nem atribuir falsamente a
-          si mesmo qualificações profissionais que não possui;
-        </li>
-        <li>
-          Não repassar as credenciais de acesso da sua conta a terceiros, nem usar a conta de outra
-          pessoa sem autorização.
-        </li>
-      </ul>
-      <p>
-        O descumprimento de qualquer item deste tópico autoriza o {SITE.nome} a suspender ou encerrar o
-        acesso do usuário à sua conta, nos termos do item 15 abaixo, sem prejuízo de outras medidas
-        cabíveis previstas em lei.
-      </p>
+      <h2>Cláusula 10 — Modelo econômico: gratuidade atual e possibilidade de cobrança futura</h2>
+      <p><strong>10.1.</strong> Na data de vigência deste Termo, o acesso ao {SITE.nome} é integralmente gratuito, sem limite diário de uso do Acervo. Tal gratuidade decorre de decisão unilateral do {SITE.nome} referente ao estágio atual do projeto, não configurando promessa, garantia contratual ou expectativa juridicamente exigível de gratuidade permanente ou futura.</p>
+      <p><strong>10.2.</strong> O {SITE.nome} reserva-se o direito de, a qualquer tempo e a seu exclusivo critério, instituir modelo de cobrança total ou parcial pelo acesso à Plataforma ou a funcionalidades específicas — incluindo, exemplificativamente, assinatura paga para acesso integral ao Acervo, eventualmente mantendo, se assim decidir, patamar de uso gratuito limitado. Havendo tal alteração, o {SITE.nome} buscará comunicá-la com antecedência razoável por meio do próprio site, sem que a eventual ausência dessa comunicação prévia, por qualquer motivo, gere direito a indenização, manutenção de gratuidade ou qualquer outra forma de compensação em favor do Usuário.</p>
+      <p><strong>10.3.</strong> O Usuário reconhece e concorda, de forma expressa, que a fruição gratuita atual da Plataforma não gera nenhuma expectativa legítima de gratuidade futura, nenhum direito adquirido sobre qualquer funcionalidade específica, e nenhuma obrigação, para o {SITE.nome}, de manutenção, no eventual plano gratuito futuro, de qualquer questão, comentário, funcionalidade de sincronização, sistema de revisão espaçada ou qualquer outro recurso hoje disponibilizado sem custo.</p>
 
-      <h2>11. Privacidade e proteção de dados pessoais</h2>
-      <p>
-        O tratamento de dados pessoais realizado pelo {SITE.nome} segue a Lei Geral de Proteção de
-        Dados Pessoais (Lei nº 13.709/2018 — LGPD). Coletamos apenas os dados necessários para o
-        funcionamento da conta e da sincronização de progresso: e-mail, senha (armazenada de forma
-        criptografada pelo provedor de autenticação, nunca em texto simples e nunca acessível ao
-        {SITE.nome}), nome, sobrenome, data de nascimento, situação profissional, serviço onde atua ou
-        faz residência, e, quando informados voluntariamente, WhatsApp, cidade e UF. Também são
-        armazenados, associados à conta, os dados de uso do próprio site necessários ao seu
-        funcionamento: respostas dadas às questões, revisões programadas, questões favoritadas,
-        anotações pessoais e histórico de sessões de estudo.
-      </p>
-      <p>
-        Esses dados são usados exclusivamente para viabilizar o funcionamento do site (autenticação,
-        sincronização entre dispositivos, cálculo de desempenho e de revisão espaçada) e, quando o
-        usuário optar expressamente por receber novidades, para contato sobre atualizações do projeto.
-        Não vendemos dados pessoais a terceiros. O armazenamento é realizado por meio do provedor de
-        infraestrutura Supabase, com controle de acesso restrito ao titular de cada conta por meio de
-        políticas de segurança em nível de linha (row level security).
-      </p>
-      <p>
-        Você pode, a qualquer momento: exportar um backup dos seus dados de progresso, na página de{' '}
-        <a href={href('/dados')}>dados locais</a>; solicitar a correção de dados de perfil incorretos,
-        editando-os diretamente na página de <a href={href('/conta')}>conta</a>; solicitar a exclusão
-        da sua conta e dos dados pessoais associados a ela, pelo canal de{' '}
-        <a href={href('/contato?assunto=exclusao-conta')}>solicitação de exclusão</a>, observado o prazo
-        técnico necessário para processar o pedido e eventuais obrigações legais de retenção de dados,
-        quando aplicáveis.
-      </p>
+      <h2>Cláusula 11 — Propriedade intelectual</h2>
+      <p><strong>11.1.</strong> O código-fonte, o layout, a identidade visual, a marca &quot;{SITE.nome}&quot;, os textos originais — incluindo os Comentários de IA e as questões originais descritas na Cláusula 8.1.3 — e a organização e curadoria do Acervo constituem propriedade intelectual do {SITE.nome} e/ou de seu autor, protegida pela legislação brasileira aplicável, notadamente a Lei nº 9.610/1998 (Lei de Direitos Autorais) e a Lei nº 9.279/1996 (Propriedade Industrial), no que couber.</p>
+      <p><strong>11.2.</strong> Questões extraídas de Provas de terceiros (TEOT, TARO, ENARE e outras) permanecem de titularidade de seus respectivos detentores de direitos (bancas examinadoras, sociedades médicas, instituições organizadoras), sendo sua disponibilização na Plataforma realizada com finalidade exclusivamente educacional e não comercial, referente a Provas já divulgadas ou aplicadas publicamente.</p>
+      <p><strong>11.3.</strong> Nada neste Termo transfere ao Usuário qualquer direito de propriedade intelectual sobre o Acervo ou sobre a Plataforma, além da licença de uso pessoal descrita na Cláusula 12.</p>
 
-      <h2>12. Disponibilidade, alterações e interrupções do serviço</h2>
-      <p>
-        O {SITE.nome} é mantido como projeto pessoal e independente, sem qualquer garantia contratual de
-        disponibilidade contínua, ininterrupta ou livre de erros. O site pode ficar temporariamente
-        indisponível para manutenção, por falhas de infraestrutura própria ou de terceiros (incluindo o
-        provedor de hospedagem e o provedor de autenticação e banco de dados), ou por qualquer outro
-        motivo técnico, sem aviso prévio. O {SITE.nome} também se reserva o direito de modificar,
-        suspender ou descontinuar, total ou parcialmente, o site ou qualquer de suas funcionalidades a
-        qualquer momento, com ou sem aviso prévio, sem que isso gere direito a indenização.
-      </p>
+      <h2>Cláusula 12 — Licença de uso</h2>
+      <p><strong>12.1.</strong> Observadas as condições deste Termo, o {SITE.nome} concede ao Usuário licença pessoal, limitada, não exclusiva, intransferível e revogável a qualquer tempo, para acessar e utilizar o conteúdo da Plataforma exclusivamente para fins de estudo pessoal, sem finalidade comercial.</p>
+      <p><strong>12.2.</strong> É vedado ao Usuário, sem autorização prévia e expressa, por escrito, do {SITE.nome}: (a) copiar, reproduzir, redistribuir, publicar, vender, alugar, sublicenciar ou de qualquer forma disponibilizar publicamente, total ou parcialmente, o Acervo de questões e comentários, inclusive mediante coleta automatizada de dados (&quot;scraping&quot;), engenharia reversa ou técnica assemelhada; (b) utilizar o conteúdo da Plataforma para treinar, ajustar (fine-tuning), avaliar ou de qualquer forma alimentar sistemas de inteligência artificial de terceiros; (c) remover, ocultar ou alterar avisos de autoria, de origem, de licença ou de titularidade presentes no conteúdo da Plataforma; e (d) utilizar o Acervo para constituir, ainda que parcialmente, base de dados concorrente ou similar destinada a terceiros.</p>
+      <p><strong>12.3.</strong> A violação desta Cláusula sujeita o Usuário às medidas cíveis e criminais cabíveis, nos termos da legislação de proteção à propriedade intelectual e de direitos autorais aplicável, sem prejuízo da imediata suspensão ou cancelamento de sua Conta, nos termos da Cláusula 20.</p>
 
-      <h2>13. Isenção e limitação de responsabilidade</h2>
-      <p>
-        Na máxima extensão permitida pela legislação aplicável, o {SITE.nome}, seu autor e eventuais
-        colaboradores <strong>não se responsabilizam</strong> por:
-      </p>
-      <ul className="lista">
-        <li>
-          Qualquer decisão, ação ou omissão tomada pelo usuário com base no conteúdo do site, incluindo
-          decisões relacionadas a provas, concursos, avaliações profissionais ou à prática clínica;
-        </li>
-        <li>
-          Reprovação em provas, concursos ou avaliações de qualquer natureza, ainda que o usuário tenha
-          utilizado o site como ferramenta de estudo, uma vez que o desempenho em qualquer avaliação
-          depende de inúmeros fatores fora do controle e da influência do site;
-        </li>
-        <li>
-          Danos diretos, indiretos, incidentais, consequenciais, punitivos ou de qualquer outra
-          natureza, incluindo lucros cessantes, perda de oportunidade, dano moral ou dano à imagem,
-          decorrentes do uso ou da impossibilidade de uso do site, do conteúdo nele disponibilizado, ou
-          de comentários de outros usuários;
-        </li>
-        <li>
-          Erros, imprecisões, omissões ou desatualizações em qualquer conteúdo do site, incluindo
-          questões, gabaritos, comentários de IA e comentários da comunidade;
-        </li>
-        <li>
-          Indisponibilidade, interrupção, perda de dados ou mau funcionamento do site, ainda que
-          decorrentes de falha do próprio {SITE.nome} ou de seus provedores de infraestrutura;
-        </li>
-        <li>
-          Consequências do uso do conteúdo do site fora de seu propósito declarado de apoio ao estudo
-          teórico para provas, incluindo, sem se limitar a isso, qualquer uso relacionado à assistência
-          a pacientes reais.
-        </li>
-      </ul>
-      <p>
-        O site é fornecido &quot;no estado em que se encontra&quot; (&quot;as is&quot;) e &quot;conforme
-        disponibilidade&quot; (&quot;as available&quot;), sem garantias de qualquer tipo, expressas ou
-        implícitas, incluindo garantias de adequação a uma finalidade específica, de precisão, de
-        completude ou de atualidade do conteúdo. Nada neste termo pretende excluir ou limitar
-        responsabilidades que não possam ser validamente excluídas ou limitadas pela legislação
-        brasileira aplicável, como os casos de dolo ou culpa grave comprovados; nesses limites em que a
-        exclusão não for possível, a responsabilidade do {SITE.nome}, quando reconhecida, ficará
-        limitada, no que a lei permitir, ao valor eventualmente pago pelo usuário ao site nos doze meses
-        anteriores ao fato gerador — o que, no modelo gratuito atual, corresponde a zero.
-      </p>
+      <h2>Cláusula 13 — Obrigações, conduta e uso aceitável</h2>
+      <p><strong>13.1.</strong> Ao utilizar a Plataforma, o Usuário obriga-se a: (a) utilizá-la de boa-fé, com consciência e responsabilidade, exclusivamente para fins de estudo pessoal compatíveis com a finalidade descrita neste Termo; (b) abster-se de tentar acessar, de forma não autorizada, dados de outros usuários, áreas restritas do sistema ou a infraestrutura técnica do site e de seus Provedores de Infraestrutura; (c) abster-se de utilizar robôs, scripts automatizados, engenharia reversa ou qualquer outro meio técnico destinado a extrair em massa o conteúdo do Acervo, sobrecarregar a infraestrutura da Plataforma ou contornar eventuais limites técnicos de uso; (d) abster-se de publicar, no espaço de Comentários da Comunidade ou em qualquer canal de contato do site, conteúdo ilícito, ofensivo, discriminatório, difamatório ou violador de direitos de terceiros; (e) abster-se de se passar por outra pessoa, instituição ou banca examinadora, ou de atribuir a si falsas qualificações profissionais; e (f) abster-se de compartilhar as credenciais de acesso de sua Conta com terceiros ou de utilizar Conta de titularidade alheia sem autorização.</p>
+      <p><strong>13.2.</strong> O descumprimento de qualquer obrigação prevista nesta Cláusula autoriza o {SITE.nome} a suspender ou encerrar o acesso do Usuário à Plataforma, nos termos da Cláusula 20, sem prejuízo de outras medidas cabíveis em direito.</p>
 
-      <h2>14. Indenização</h2>
-      <p>
-        Você concorda em defender, indenizar e isentar de responsabilidade o {SITE.nome}, seu autor e
-        eventuais colaboradores, de e contra qualquer reclamação, dano, obrigação, perda, prejuízo,
-        custo ou despesa (incluindo honorários advocatícios razoáveis) decorrente de: (a) seu uso do
-        site em desacordo com este termo; (b) sua violação de qualquer lei ou direito de terceiros; (c)
-        conteúdo que você tenha publicado no espaço de comentários da comunidade; ou (d) qualquer decisão
-        clínica ou profissional tomada com base no conteúdo do site, em desacordo com as ressalvas
-        expressas neste documento.
-      </p>
+      <h2>Cláusula 14 — Proteção de dados pessoais</h2>
+      <p><strong>14.1.</strong> O tratamento de Dados Pessoais realizado pelo {SITE.nome} observa a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018). Para os fins da LGPD, {SITE.autor} atua como controlador dos Dados Pessoais tratados no âmbito da Plataforma.</p>
+      <p><strong>14.2.</strong> São coletados, no cadastro e no uso da Conta, os seguintes Dados Pessoais: e-mail; senha, armazenada de forma criptografada pelo Provedor de Infraestrutura responsável pela autenticação, nunca em texto simples e nunca diretamente acessível ao {SITE.nome}; nome e sobrenome; data de nascimento; situação profissional; serviço em que o Usuário atua ou realiza residência; e, quando informados voluntariamente pelo Usuário, WhatsApp, cidade e Unidade da Federação. São também armazenados, vinculados à Conta, os dados de uso da própria Plataforma necessários ao seu funcionamento: respostas às questões, revisões programadas, questões favoritadas, anotações pessoais e histórico de sessões de estudo.</p>
+      <p><strong>14.3.</strong> O tratamento desses Dados Pessoais tem como base legal a execução deste Termo e o legítimo interesse do {SITE.nome} no funcionamento e na melhoria da Plataforma (art. 7º, incisos V e IX, da LGPD), sendo utilizado exclusivamente para: (a) autenticação e segurança da Conta; (b) sincronização de progresso de estudo entre dispositivos; (c) cálculo de desempenho e de algoritmo de revisão espaçada; e (d) quando o Usuário optar expressamente por essa finalidade, envio de comunicações sobre novidades do projeto.</p>
+      <p><strong>14.4.</strong> O {SITE.nome} não comercializa Dados Pessoais de Usuários com terceiros. O armazenamento de Dados Pessoais é realizado por meio do Provedor de Infraestrutura Supabase, com controle de acesso restrito ao respectivo titular da Conta, mediante políticas técnicas de segurança em nível de linha (row level security).</p>
+      <p><strong>14.5.</strong> Nos termos do artigo 18 da LGPD, o Titular de Dados Pessoais pode, a qualquer momento: (a) exportar backup de seus dados de progresso, na página de <a href={href('/dados')}>dados locais</a>; (b) confirmar a existência de tratamento e acessar seus dados, bem como corrigir dados incompletos, inexatos ou desatualizados, diretamente na página de <a href={href('/conta')}>conta</a>; (c) solicitar a anonimização, o bloqueio ou a eliminação de dados desnecessários ou tratados em desconformidade com a LGPD; e (d) solicitar a eliminação de seus Dados Pessoais tratados com base em consentimento e o encerramento de sua Conta, pelo canal de <a href={href('/contato?assunto=exclusao-conta')}>solicitação de exclusão</a>, observado o prazo técnico razoável para processamento do pedido e eventuais obrigações legais ou regulatórias de retenção de dados que subsistam à solicitação.</p>
+      <p><strong>14.6.</strong> Dúvidas, solicitações ou reclamações relacionadas ao tratamento de Dados Pessoais podem ser dirigidas ao canal de contato indicado na Cláusula 31, o qual funciona, para os fins práticos deste projeto de natureza pessoal e de pequeno porte, como canal equivalente ao de Encarregado de Proteção de Dados (DPO).</p>
 
-      <h2>15. Suspensão e encerramento de conta</h2>
-      <p>
-        O {SITE.nome} pode suspender ou encerrar, a qualquer momento e a seu critério, o acesso de
-        qualquer usuário que descumpra este termo, sem necessidade de aviso prévio, sem prejuízo de
-        outras medidas cabíveis. O usuário também pode solicitar o encerramento da própria conta a
-        qualquer momento, pelo canal de <a href={href('/contato?assunto=exclusao-conta')}>solicitação de
-        exclusão</a>. O encerramento da conta não desobriga o usuário de responsabilidades já
-        constituídas antes do encerramento.
-      </p>
+      <h2>Cláusula 15 — Disponibilidade, alteração e descontinuidade do serviço</h2>
+      <p><strong>15.1.</strong> O {SITE.nome} é mantido como projeto pessoal e independente de seu autor, sem qualquer garantia contratual de disponibilidade contínua, ininterrupta ou livre de erros técnicos.</p>
+      <p><strong>15.2.</strong> A Plataforma poderá ficar temporária ou permanentemente indisponível em razão de manutenção programada ou emergencial, de falhas de infraestrutura própria ou de Provedores de Infraestrutura, ou de qualquer outro motivo técnico ou operacional, com ou sem aviso prévio ao Usuário.</p>
+      <p><strong>15.3.</strong> O {SITE.nome} reserva-se o direito de modificar, suspender ou descontinuar, total ou parcialmente, a Plataforma ou qualquer de suas funcionalidades, a qualquer tempo, com ou sem aviso prévio, sem que tal medida gere, para o Usuário, direito a indenização, reembolso ou qualquer outra forma de compensação.</p>
 
-      <h2>16. Alterações deste termo</h2>
-      <p>
-        Este Termo de Uso e Consentimento pode ser alterado a qualquer momento, para refletir mudanças
-        no site, na legislação aplicável ou nas práticas do projeto. Alterações relevantes serão
-        identificadas por uma nova versão (indicada no topo deste documento) e, quando isso ocorrer, uma
-        nova tela de aceite poderá ser exibida antes de você continuar usando o site normalmente. O
-        histórico de qual versão você aceitou e quando fica registrado, quando você possui conta, junto
-        aos dados da sua conta.
-      </p>
+      <h2>Cláusula 16 — Declarações e garantias do Usuário</h2>
+      <p><strong>16.1.</strong> O Usuário declara, para todos os fins de direito, que: (a) é profissional de saúde, estudante da área ou pessoa com interesse legítimo no conteúdo de ortopedia e traumatologia disponibilizado na Plataforma; (b) compreende integralmente a natureza teórica, educacional e não assistencial do conteúdo do site, na forma das Cláusulas 6 e 7; (c) não utilizará, em nenhuma hipótese, o conteúdo da Plataforma como substituto de avaliação médica presencial de paciente real, de formação médica formal, ou de julgamento clínico próprio; e (d) assume integral e exclusiva responsabilidade por qualquer decisão profissional, acadêmica ou pessoal tomada com base, total ou parcial, no conteúdo da Plataforma.</p>
 
-      <h2>17. Legislação aplicável e foro</h2>
-      <p>
-        Este termo é regido pelas leis da República Federativa do Brasil. Fica eleito o foro do
-        domicílio do usuário, quando este for consumidor nos termos da legislação consumerista
-        brasileira, para dirimir quaisquer controvérsias decorrentes deste termo, sem prejuízo de a
-        parte interessada optar por outro foro em que a lei lhe garanta esse direito.
-      </p>
+      <h2>Cláusula 17 — Isenção de garantias</h2>
+      <p><strong>17.1.</strong> A Plataforma e todo o seu conteúdo são fornecidos &quot;no estado em que se encontram&quot; (&quot;as is&quot;) e &quot;conforme a disponibilidade&quot; (&quot;as available&quot;), sem garantias de qualquer natureza, expressas ou implícitas, incluindo, sem limitação, garantias implícitas de adequação a uma finalidade específica, de precisão, de completude, de atualidade ou de ausência de erros no conteúdo do Acervo, dos Comentários de IA ou dos Comentários da Comunidade.</p>
+      <p><strong>17.2.</strong> O {SITE.nome} não garante que o uso da Plataforma resultará em aprovação em qualquer Prova, concurso ou processo seletivo, tampouco que o conteúdo do Acervo é suficiente, isoladamente, para a adequada preparação a qualquer avaliação, reconhecendo o Usuário que o desempenho em tais avaliações depende de multiplicidade de fatores alheios ao controle e à influência do {SITE.nome}.</p>
 
-      <h2>18. Disposições gerais</h2>
-      <p>
-        Se qualquer disposição deste termo for considerada inválida ou inexequível por autoridade
-        competente, as demais disposições permanecerão em pleno vigor e efeito. A tolerância do{' '}
-        {SITE.nome} quanto ao eventual descumprimento de qualquer cláusula deste termo não implica
-        renúncia ao direito de exigi-la no futuro. Este termo constitui o entendimento integral entre
-        você e o {SITE.nome} quanto ao seu objeto, substituindo entendimentos anteriores, orais ou
-        escritos, sobre a mesma matéria.
-      </p>
+      <h2>Cláusula 18 — Limitação de responsabilidade</h2>
+      <p><strong>18.1.</strong> Na máxima extensão permitida pela legislação brasileira aplicável, o {SITE.nome}, seu autor e eventuais colaboradores não se responsabilizam por: (a) qualquer decisão, ação ou omissão do Usuário fundamentada no conteúdo da Plataforma, incluindo decisões relacionadas a Provas, concursos, avaliações profissionais ou à prática clínica; (b) reprovação em Provas, concursos ou avaliações de qualquer natureza; (c) danos diretos, indiretos, incidentais, consequenciais, punitivos, emergentes ou lucros cessantes, dano moral, dano à imagem ou perda de oportunidade, decorrentes do uso ou da impossibilidade de uso da Plataforma, do conteúdo nela disponibilizado, ou de Conteúdo Gerado por outros Usuários; (d) erros, imprecisões, omissões ou desatualizações em qualquer conteúdo da Plataforma; (e) indisponibilidade, interrupção, perda de dados ou mau funcionamento da Plataforma, ainda que decorrentes de falha do próprio {SITE.nome} ou de seus Provedores de Infraestrutura; e (f) consequências do uso do conteúdo da Plataforma fora de sua finalidade declarada de apoio ao estudo teórico para Provas, incluindo qualquer uso relacionado à assistência a pacientes reais.</p>
+      <p><strong>18.2.</strong> Nada neste Termo pretende excluir ou limitar responsabilidade que não possa ser validamente excluída ou limitada pela legislação brasileira aplicável, notadamente nas hipóteses de dolo ou culpa grave devidamente comprovados em decisão judicial transitada em julgado.</p>
+      <p><strong>18.3.</strong> Nas hipóteses em que a exclusão de responsabilidade não seja juridicamente admitida, a responsabilidade do {SITE.nome}, quando eventualmente reconhecida, fica limitada, no que a lei permitir, ao valor total pago pelo Usuário ao {SITE.nome} nos doze meses imediatamente anteriores ao fato gerador do dano — valor que, no modelo gratuito vigente na data deste Termo, corresponde a zero.</p>
 
-      <h2>19. Resumo em linguagem direta</h2>
+      <h2>Cláusula 19 — Indenização</h2>
+      <p><strong>19.1.</strong> O Usuário concorda em defender, indenizar e manter o {SITE.nome}, seu autor e eventuais colaboradores isentos de responsabilidade quanto a qualquer reclamação, dano, obrigação, perda, prejuízo, custo ou despesa, incluindo honorários advocatícios razoavelmente incorridos, decorrentes de: (a) uso da Plataforma em desacordo com este Termo; (b) violação, pelo Usuário, de qualquer lei ou direito de terceiro; (c) Conteúdo Gerado pelo Usuário publicado na Plataforma; ou (d) decisão clínica, acadêmica ou profissional tomada pelo Usuário com base no conteúdo da Plataforma, em desacordo com as ressalvas expressas neste Termo.</p>
+
+      <h2>Cláusula 20 — Suspensão, rescisão e encerramento de conta</h2>
+      <p><strong>20.1.</strong> O {SITE.nome} pode suspender ou encerrar, a qualquer tempo e a seu critério, o acesso de Usuário que descumpra este Termo, independentemente de aviso prévio, sem prejuízo de outras medidas cabíveis em direito.</p>
+      <p><strong>20.2.</strong> O Usuário pode solicitar o encerramento de sua própria Conta a qualquer momento, pelo canal de <a href={href('/contato?assunto=exclusao-conta')}>solicitação de exclusão</a>.</p>
+      <p><strong>20.3.</strong> O encerramento da Conta, por qualquer motivo, não exonera o Usuário de responsabilidades e obrigações já constituídas anteriormente ao encerramento, as quais permanecem plenamente exigíveis.</p>
+
+      <h2>Cláusula 21 — Vigência</h2>
+      <p><strong>21.1.</strong> Este Termo vigora, em relação a cada Usuário, a partir da data de seu aceite expresso no cadastro, por prazo indeterminado, permanecendo em vigor enquanto subsistir a respectiva Conta, ou enquanto o Usuário utilizar a Plataforma na qualidade de Visitante, o que for aplicável.</p>
+
+      <h2>Cláusula 22 — Alterações deste Termo</h2>
+      <p><strong>22.1.</strong> Este Termo pode ser alterado a qualquer tempo, para refletir mudanças na Plataforma, na legislação aplicável ou nas práticas do projeto, mediante publicação de nova versão, identificada por nova data e número de versão no cabeçalho deste documento.</p>
+      <p><strong>22.2.</strong> Alterações relevantes poderão ensejar, a critério do {SITE.nome}, a exigência de novo aceite expresso do Usuário já cadastrado, exibido no momento de seu próximo acesso à Conta, sem o qual a Conta poderá ter seu uso condicionado à manifestação do Usuário quanto à nova versão.</p>
+      <p><strong>22.3.</strong> Independentemente da exigência de novo aceite, a publicação de nova versão deste Termo no rodapé do site, com indicação de sua data de vigência, é suficiente para produzir efeitos de ciência e publicidade a partir de então, para todos os fins de direito.</p>
+
+      <h2>Cláusula 23 — Comunicações</h2>
+      <p><strong>23.1.</strong> As comunicações do {SITE.nome} dirigidas ao Usuário serão feitas, preferencialmente, por meio do e-mail cadastrado na Conta ou por avisos publicados no próprio site. É responsabilidade do Usuário manter seu e-mail de cadastro atualizado e verificar periodicamente sua caixa de mensagens.</p>
+
+      <h2>Cláusula 24 — Cessão</h2>
+      <p><strong>24.1.</strong> O Usuário não pode ceder ou transferir, total ou parcialmente, os direitos e obrigações decorrentes deste Termo, sem prévia anuência, por escrito, do {SITE.nome}. O {SITE.nome} pode ceder ou transferir este Termo, no todo ou em parte, inclusive em razão de reorganização societária, sucessão ou transferência de titularidade do projeto, mediante comunicação ao Usuário.</p>
+
+      <h2>Cláusula 25 — Caso fortuito e força maior</h2>
+      <p><strong>25.1.</strong> Nenhuma das partes responde por descumprimento de obrigação decorrente de caso fortuito ou força maior, nos termos do artigo 393 do Código Civil brasileiro, incluindo, exemplificativamente, falhas generalizadas de infraestrutura de internet, indisponibilidade de Provedores de Infraestrutura, ataques cibernéticos de terceiros, ou determinações de autoridade pública.</p>
+
+      <h2>Cláusula 26 — Renúncia e tolerância</h2>
+      <p><strong>26.1.</strong> A eventual tolerância do {SITE.nome} quanto ao descumprimento de qualquer disposição deste Termo por parte do Usuário não implica renúncia ao direito de exigi-la a qualquer tempo, nem configura novação ou alteração tácita deste Termo.</p>
+
+      <h2>Cláusula 27 — Independência das cláusulas</h2>
+      <p><strong>27.1.</strong> Caso qualquer disposição deste Termo seja considerada nula, inválida ou inexequível por autoridade judicial ou administrativa competente, tal declaração não afetará a validade e a eficácia das demais disposições, que permanecerão em pleno vigor, devendo a disposição afetada ser interpretada, na maior medida possível, de modo a preservar a intenção original das partes.</p>
+
+      <h2>Cláusula 28 — Acordo integral</h2>
+      <p><strong>28.1.</strong> Este Termo, em conjunto com a política de privacidade nele incorporada (Cláusula 14) e com quaisquer avisos específicos publicados na Plataforma, constitui o acordo integral entre o Usuário e o {SITE.nome} quanto ao seu objeto, substituindo quaisquer entendimentos, negociações ou acordos anteriores, orais ou escritos, sobre a mesma matéria.</p>
+
+      <h2>Cláusula 29 — Idioma</h2>
+      <p><strong>29.1.</strong> Este Termo é redigido e deve ser interpretado exclusivamente em língua portuguesa, prevalecendo a versão em português sobre qualquer tradução eventualmente disponibilizada para fins meramente informativos.</p>
+
+      <h2>Cláusula 30 — Lei aplicável e foro</h2>
+      <p><strong>30.1.</strong> Este Termo é regido e deve ser interpretado de acordo com as leis da República Federativa do Brasil.</p>
+      <p><strong>30.2.</strong> Fica eleito o foro do domicílio do Usuário, quando este se qualificar como consumidor nos termos do Código de Defesa do Consumidor (Lei nº 8.078/1990), para dirimir quaisquer controvérsias oriundas deste Termo, sem prejuízo de a parte interessada optar por outro foro a que a lei lhe garanta esse direito. Nas demais hipóteses, fica eleito o foro da comarca de domicílio do autor do projeto, com renúncia expressa a qualquer outro, por mais privilegiado que seja.</p>
+
+      <h2>Cláusula 31 — Canal de contato</h2>
+      <p><strong>31.1.</strong> Dúvidas sobre este Termo, solicitações relacionadas a Dados Pessoais ou qualquer outra manifestação podem ser encaminhadas pelo canal de <a href={href('/contato')}>relato e contato</a> do site, ou diretamente para <a href={`mailto:${SITE.contato}`}>{SITE.contato}</a>.</p>
+
+      <h2>Resumo em linguagem direta</h2>
       <p className="texto-2">
-        Este resumo não substitui a leitura do termo completo acima, mas ajuda a fixar os pontos mais
-        importantes: o site é gratuito hoje, mas pode ficar pago no futuro; os comentários de IA podem
-        errar e são baseados em livros, não são a própria fonte; nada aqui substitui estudar pelos livros
-        de verdade nem serve de orientação médica para pacientes reais; o acervo mistura questões
-        antigas de prova (TEOT/TARO/ENARE), simulados e questões próprias inspiradas em provas
-        fechadas ao público (como a da SBQ), sempre identificadas quando é o caso; use o site com
-        consciência, senso crítico e responsabilidade.
-      </p>
-
-      <h2>20. Contato</h2>
-      <p>
-        Dúvidas sobre este termo, solicitações relacionadas a dados pessoais ou qualquer outra questão
-        podem ser encaminhadas pelo canal de <a href={href('/contato')}>relato e contato</a> do site, ou
-        diretamente para <a href={`mailto:${SITE.contato}`}>{SITE.contato}</a>.
+        Este resumo não substitui a leitura do Termo completo acima — em caso de qualquer conflito,
+        prevalece o texto das cláusulas — mas ajuda a fixar os pontos mais importantes: o aceite deste
+        Termo é feito uma única vez, no momento em que você cria sua conta, e o texto completo fica
+        sempre disponível no rodapé do site; o site é gratuito hoje, mas isso pode mudar no futuro; os
+        Comentários de IA podem errar e são baseados em livros, não são a própria fonte; nada aqui
+        substitui estudar pelos livros de verdade nem serve de orientação médica para pacientes reais; o
+        Acervo mistura questões antigas de prova (TEOT/TARO/ENARE), simulados e questões próprias
+        inspiradas em provas fechadas ao público (como a da SBQ), sempre identificadas quando é o caso;
+        use o site com consciência, senso crítico e responsabilidade, sabendo que a responsabilidade
+        por decisões tomadas com base no conteúdo é sempre do próprio usuário.
       </p>
 
       <div className="linha linha--empilha-celular">
