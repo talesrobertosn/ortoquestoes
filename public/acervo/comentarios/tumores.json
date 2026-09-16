@@ -3868,5 +3868,42 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "tumores-0315": {
+  "conceito": "As lesões ósseas têm localizações preferenciais dentro do osso (epífise, metáfise, diáfise) que orientam o diagnóstico diferencial. Entre as opções listadas, o TUMOR DE CÉLULAS GIGANTES é classicamente a lesão mais associada à localização EPIFISÁRIA — tipicamente excêntrico, estendendo-se até a superfície articular subcondral, em pacientes com esqueleto já maduro (fise fechada). As demais lesões citadas (histiocitose, sarcoma de Ewing, linfoma ósseo do adulto, adamantinoma da tíbia) são classicamente METAFISÁRIAS/DIAFISÁRIAS, não epifisárias.",
+  "correta": "E. O tumor de células gigantes é a lesão mais importante no diagnóstico diferencial das lesões epifisárias.",
+  "incorretas": {
+   "A": "A histiocitose de células de Langerhans tem localização preferencialmente diafisária/metafisária no esqueleto apendicular (e no crânio, nas lesões cranianas), não epifisária.",
+   "B": "O sarcoma de Ewing é classicamente diafisário/metafisário, não epifisário.",
+   "C": "O linfoma ósseo primário do adulto acomete preferencialmente a diáfise de ossos longos, não a epífise.",
+   "D": "O adamantinoma da tíbia é classicamente diafisário (na tíbia, tipicamente no terço médio da diáfise anterior), não epifisário."
+  },
+  "geradoEm": "2026-09-16",
+  "conferido": false
+ },
+ "tumores-0316": {
+  "alerta": "Vale uma ressalva sobre este item: pela descrição do enunciado — lesão intracompartimental, menor que 6 cm (portanto abaixo do corte de 8 cm) e sem metástases —, a combinação clássica de critérios do estadiamento AJCC para sarcomas ósseos (grau alto + T1 intracompartimental) aponta para o estágio II A, e não II B (que classicamente corresponde a tumores extracompartimentais ou maiores que 8 cm). Mantemos aqui o gabarito oficial da banca (II B), mas registramos essa aparente divergência para quem for revisar o tema com atenção ao critério de tamanho/compartimento.",
+  "conceito": "O sistema de estadiamento da AJCC para sarcomas ósseos combina o GRAU histológico (baixo grau = G1; alto grau = G2/G3), o TAMANHO/extensão local do tumor (T1 = intracompartimental e ≤ 8 cm; T2 = extracompartimental ou > 8 cm; T3 = metástases \"skip\", isto é, lesões descontínuas no mesmo osso) e a presença de METÁSTASES (M0/M1). O sarcoma de Ewing é convencionalmente tratado como um tumor de ALTO GRAU nesse sistema, independentemente da aparência histológica, dada sua agressividade biológica. No caso descrito — lesão intracompartimental, menor que 8 cm (o enunciado cita menor que 6 cm), sem metástases e sem lesões-satélite — o enquadramento T1, alto grau, M0 corresponde ao estágio II A pela combinação clássica de critérios (alto grau + intracompartimental + pequeno porte). O gabarito oficial da prova aponta II B.",
+  "correta": "B. Segundo o sistema de estadiamento da AJCC para sarcomas ósseos, esse paciente (Ewing, alto grau, intracompartimental, menor que 8 cm, sem metástases) encontra-se no estágio II B.",
+  "incorretas": {
+   "A": "O estágio II A também exige tumor de alto grau intracompartimental e pequeno porte, critérios que o caso preenche — mas não é a opção assinalada como gabarito oficial.",
+   "C": "O estágio III é reservado a tumores com metástases \"skip\" (lesões descontínuas no mesmo osso), achado não descrito no caso.",
+   "D": "Não existe subdivisão \"III A\" nesse sistema de estadiamento nos termos clássicos (a subdivisão A/B se aplica aos estágios I e II, não ao III).",
+   "E": "Não existe subdivisão \"III B\" nesse sistema de estadiamento nos termos clássicos; metástases a distância correspondem ao estágio IV (A para pulmão, B para outros sítios/linfonodos), não ao III."
+  },
+  "geradoEm": "2026-09-16",
+  "conferido": false
+ },
+ "tumores-0317": {
+  "conceito": "O OSTEOSSARCOMA SECUNDÁRIO — aquele que surge sobre uma lesão óssea pré-existente, tipicamente em pacientes mais velhos — tem na DOENÇA DE PAGET óssea sua associação mais clássica e mais comum, especialmente em pacientes idosos com doença poliostótica de longa data (a chamada degeneração sarcomatosa da doença de Paget, embora rara em termos absolutos, é a causa mais frequente de osteossarcoma secundário). Outras causas descritas de osteossarcoma secundário incluem irradiação prévia e, mais raramente, infarto ósseo e osteomielite crônica — mas nenhuma delas se aproxima da frequência da doença de Paget nessa associação.",
+  "correta": "C. A afecção mais comumente relacionada ao osteossarcoma secundário é a doença de Paget óssea.",
+  "incorretas": {
+   "A": "O infarto ósseo pode raramente originar sarcoma secundário (geralmente um fibro-histiocitoma maligno/sarcoma pleomórfico indiferenciado, mais do que osteossarcoma), mas é uma associação bem menos frequente que a doença de Paget.",
+   "B": "O osteocondroma solitário tem baixo risco de malignização (mais para condrossarcoma secundário, na forma múltipla/hereditária), não sendo a principal causa de osteossarcoma secundário.",
+   "D": "O osteoma osteoide é uma lesão benigna sem potencial de malignização reconhecido; não é causa de osteossarcoma secundário.",
+   "E": "A osteomielite crônica pode raramente originar carcinoma espinocelular no trajeto fistuloso, e mais raramente sarcoma ósseo, mas é uma associação bem menos frequente que a doença de Paget."
+  },
+  "geradoEm": "2026-09-16",
+  "conferido": false
  }
 }

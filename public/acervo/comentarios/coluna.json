@@ -3850,5 +3850,72 @@
   },
   "geradoEm": "2026-09-07",
   "conferido": false
+ },
+ "coluna-0290": {
+  "alerta": "A definição exata de cada subtipo (I A, I B, II A, II B, III) dessa classificação de cifose baseada nas colunas pode variar um pouco conforme a referência consultada — mantivemos aqui a lógica mais consistente com o gabarito oficial (deficiência posterior isolada = II B), mas vale conferir a tabela específica do material que você está usando para a prova.",
+  "conceito": "Existem classificações de cifose voltadas ao planejamento cirúrgico que estratificam a deformidade conforme o estado das colunas anterior e posterior da coluna vertebral, a flexibilidade dos espaços discais e a magnitude da curva — informações que orientam a escolha entre osteotomias mais simples (como a de Smith-Petersen, para deformidades flexíveis) e osteotomias mais extensas (como a subtração pedicular ou a ressecção vertebral em coluna total, para deformidades rígidas com maior deficiência estrutural). Nessas classificações baseadas no estado das colunas, o comprometimento isolado da COLUNA POSTERIOR (com a coluna anterior relativamente preservada) corresponde ao tipo II B, distinto do comprometimento isolado da coluna anterior (II A) e do comprometimento de ambas as colunas (tipo III, que exige a osteotomia mais extensa).",
+  "correta": "D. A cifose com deficiência da coluna posterior é classificada, nessa classificação baseada nas colunas, como do tipo II B.",
+  "incorretas": {
+   "A": "O tipo I dessa classificação corresponde a deformidades sem deficiência estrutural relevante das colunas (curvas flexíveis), não à deficiência isolada da coluna posterior.",
+   "B": "O tipo I B, como subtipo do grupo sem deficiência estrutural predominante, não corresponde à deficiência isolada da coluna posterior.",
+   "C": "O tipo II A corresponde classicamente à deficiência da coluna ANTERIOR, e não da posterior.",
+   "E": "O tipo III corresponde ao comprometimento de AMBAS as colunas (anterior e posterior), um grau mais avançado do que a deficiência isolada da coluna posterior."
+  },
+  "geradoEm": "2026-09-16",
+  "conferido": false
+ },
+ "coluna-0291": {
+  "conceito": "A tuberculose osteoarticular tem características que a distinguem das infecções piogênicas, com implicações diagnósticas importantes: (1) a COLUNA VERTEBRAL é o sítio esquelético mais acometido (doença de Pott), seguida por outras articulações grandes; (2) diferente de bactérias piogênicas, o M. tuberculosis NÃO produz enzimas proteolíticas relevantes, de modo que o espaço articular tende a ser RELATIVAMENTE PRESERVADO por bastante tempo (ao contrário da destruição precoce da artrite séptica piogênica); (3) o pannus tuberculoso tende a destruir a cartilagem articular de forma mais lenta e mais acentuada nas BORDAS/periferia da articulação (poupando relativamente o centro, ao contrário do padrão central da artrite piogênica); (4) a artrite tuberculosa costuma ser MONOARTICULAR (não poliarticular), acometendo mais frequentemente quadril e joelho; e (5) na osteomielite tuberculosa, ao contrário de outras infecções ósseas, a placa fisária oferece pouca resistência à propagação da infecção da metáfise para a epífise, o que explica o acometimento frequente de epífise/metáfise nessa infecção.",
+  "correta": "E. A osteomielite tuberculosa afeta mais comumente a epífise ou a metáfise, e a placa fisária tem pouca ação para impedir a propagação da infecção — ao contrário do que ocorre em outras infecções ósseas.",
+  "incorretas": {
+   "A": "A tuberculose articular é classicamente MONOARTICULAR, não poliarticular, ainda que quadril e joelho estejam de fato entre as articulações mais acometidas.",
+   "B": "O M. tuberculosis não produz enzimas proteolíticas relevantes; por isso o espaço articular tende a ficar preservado por bastante tempo, e não reduzido desde o início da infecção.",
+   "C": "A coluna vertebral é, de fato, o sítio mais acometido, mas a ordem de frequência das demais articulações citadas na alternativa não corresponde à sequência classicamente descrita na literatura.",
+   "D": "O pannus tuberculoso destrói a cartilagem de forma mais acentuada na PERIFERIA da articulação, poupando relativamente o centro — o inverso do que a alternativa descreve."
+  },
+  "geradoEm": "2026-09-16",
+  "conferido": false,
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics"
+  ]
+ },
+ "coluna-0292": {
+  "conceito": "A escala ASIA (American Spinal Injury Association) classifica a gravidade da lesão medular em graus A a E: A = lesão completa (sem função motora ou sensitiva preservada nos segmentos sacrais S4-S5); B = lesão incompleta, com função SENSITIVA preservada abaixo do nível neurológico, incluindo os segmentos sacrais S4-S5, mas SEM função motora preservada; C = lesão incompleta, com função motora preservada abaixo do nível, mas a maioria dos músculos-chave com força menor que grau 3; D = função motora preservada, com a maioria dos músculos-chave com força maior ou igual a grau 3; E = função motora e sensitiva normais. A paciente descrita tem sensibilidade preservada (inclusive em S4-S5) mas ausência de função motora abaixo do nível — quadro que corresponde exatamente ao grau B.",
+  "correta": "B. Segundo a escala ASIA, essa paciente teve uma lesão de grau B (incompleta, sensitiva preservada incluindo S4-S5, sem função motora preservada abaixo do nível neurológico).",
+  "incorretas": {
+   "A": "O grau A (lesão completa) exigiria ausência de qualquer função sensitiva ou motora nos segmentos sacrais S4-S5, o que não é o caso, já que a paciente preserva sensibilidade nesses segmentos.",
+   "C": "O grau C exige função MOTORA preservada abaixo do nível neurológico (ainda que fraca), o que não está descrito no caso — a paciente não tem função motora preservada abaixo do nível.",
+   "D": "O grau D exige função motora preservada com força predominantemente maior ou igual a grau 3 abaixo do nível, quadro mais leve do que o descrito.",
+   "E": "O grau E corresponde à função motora e sensitiva normais, incompatível com o quadro de paraplegia descrito."
+  },
+  "geradoEm": "2026-09-16",
+  "conferido": false
+ },
+ "coluna-0293": {
+  "conceito": "A Scoliosis Research Society (SRS) padronizou definições para os diferentes padrões de curva escoliótica, usadas na classificação e no planejamento cirúrgico (como nos sistemas de King e de Lenke). O padrão \"CURVA TORÁCICA DUPLA\" é definido como a presença de uma curva torácica SUPERIOR estrutural, associada a uma curva torácica INFERIOR maior e mais deformante, com uma curva LOMBAR relativamente NÃO estrutural — um padrão distinto da \"curvatura dupla significativa\" (double major), que envolve duas curvas estruturais de magnitude e rotação SEMELHANTES (tipicamente uma torácica e uma toracolombar/lombar).",
+  "correta": "E. A curva torácica dupla é definida como uma curva torácica superior estrutural, uma curva torácica inferior maior e mais deformante, e uma curva lombar relativamente não estrutural.",
+  "incorretas": {
+   "A": "O ápice da curva torácica, pela definição da SRS, situa-se num intervalo mais amplo (entre aproximadamente T2 e o disco T11-T12), não restrito a T5-T7.",
+   "B": "O ápice da curva lombar, pela definição da SRS, situa-se entre aproximadamente L1-L2 e L4, não restrito a L2-L3.",
+   "C": "A definição de \"curvatura dupla\" da SRS exige que as duas curvas sejam ESTRUTURAIS, não apenas presentes em segmentos diferentes — a alternativa omite esse critério essencial.",
+   "D": "A \"curvatura dupla significativa\" (double major) é definida por duas curvas estruturais de tamanho e rotação SEMELHANTES, e não geralmente diferentes, como afirma a alternativa."
+  },
+  "geradoEm": "2026-09-16",
+  "conferido": false,
+  "referencias": [
+   "Scoliosis Research Society — terminologia de classificação de curvas"
+  ]
+ },
+ "coluna-0294": {
+  "conceito": "Na cirurgia de coluna cervical anterior (discectomia/corpectomia com fusão), a aplicação local de corticoide sobre o local antes do fechamento é uma medida descrita especificamente para reduzir o edema de partes moles pré-vertebrais no pós-operatório imediato — e, com isso, reduzir a incidência e a gravidade da DISFAGIA pós-operatória, uma das complicações mais comuns e mais incômodas desse acesso. Essa medida não é isenta de controvérsia (há relatos pontuais de complicações associadas ao uso local de corticoide nesse contexto), mas o efeito estudado e classicamente perguntado em prova é a redução da disfagia.",
+  "correta": "D. O efeito esperado da aplicação local de corticoide antes do fechamento, nesse contexto, é a redução da disfagia no pós-operatório.",
+  "incorretas": {
+   "A": "O uso local de corticoide nesse contexto não é classicamente associado a aumento do risco de infecção como seu efeito mais relevante/estudado.",
+   "B": "O efeito estudado e buscado com essa medida é a redução do edema/disfagia, não especificamente a redução da dor.",
+   "C": "O corticoide aplicado localmente, de forma pontual antes do fechamento, não é classicamente associado a aumento do risco de pseudartrose como seu efeito principal descrito.",
+   "E": "Da mesma forma, o efeito mais estudado dessa medida não é o aumento do risco de retardo de consolidação, e sim a redução da disfagia pós-operatória."
+  },
+  "geradoEm": "2026-09-16",
+  "conferido": false
  }
 }
