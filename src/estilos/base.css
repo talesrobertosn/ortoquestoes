@@ -1231,6 +1231,28 @@ textarea {
     opacity: 0;
   }
 }
+
+/* ---------- Portão de aceite dos Termos de Uso -------------------------- */
+
+.portao-termos {
+  position: fixed;
+  inset: 0;
+  z-index: 91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.portao-termos__caixa {
+  max-width: 34rem;
+  width: 100%;
+  max-height: 90dvh;
+  overflow-y: auto;
+  animation: subir 0.18s ease-out;
+}
+
 @keyframes entrar {
   from {
     transform: translateX(16px);

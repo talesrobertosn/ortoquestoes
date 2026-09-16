@@ -12,6 +12,8 @@ import { Contato, DadosLocais, NaoEncontrada, Sobre } from './paginas/Apoio'
 import { Favoritas } from './paginas/Favoritas'
 import { Progresso } from './paginas/Progresso'
 import { Revisao } from './paginas/Revisao'
+import { Termos } from './paginas/Termos'
+import { PortaoTermos } from './componentes/PortaoTermos'
 import { SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
 
@@ -28,6 +30,7 @@ const TITULOS: Record<string, string> = {
   '/favoritas': 'Suas favoritas — OrtoQuestões',
   '/progresso': 'Progresso dos comentários — OrtoQuestões',
   '/revisao': 'Sua revisão — OrtoQuestões',
+  '/termos': 'Termos de Uso e Consentimento — OrtoQuestões',
 }
 
 export function App() {
@@ -88,6 +91,9 @@ export function App() {
     case 'revisao':
       pagina = <Revisao />
       break
+    case 'termos':
+      pagina = <Termos />
+      break
     default:
       pagina = <NaoEncontrada />
   }
@@ -99,6 +105,7 @@ export function App() {
       <a className="pular-para-conteudo" href="#conteudo-principal">
         Pular para o conteúdo
       </a>
+      <PortaoTermos />
       <Cabecalho caminho={rota.caminho} />
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>{pagina}</div>

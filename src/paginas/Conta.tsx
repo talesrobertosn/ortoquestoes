@@ -9,6 +9,7 @@ import { usarIndice } from '../dados/usarIndice'
 import { planoRevisao } from '../estado/planoRevisao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { usarLeitura } from '../estado/preferencias'
+import { dadosAceiteTermos } from '../conta/termos'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -50,6 +51,7 @@ export function Conta() {
   const [cidade, definirCidade] = useState(String(perfil.cidade ?? ''))
   const [uf, definirUf] = useState(String(perfil.uf ?? ''))
   const [receberNovidades, definirReceberNovidades] = useState(Boolean(perfil.receber_novidades ?? false))
+  const [aceitouTermos, definirAceitouTermos] = useState(false)
   const [salvandoPerfil, definirSalvandoPerfil] = useState(false)
   async function salvarPerfil() {
     if (!supabase || !sessao) return
@@ -91,8 +93,9 @@ export function Conta() {
         if (error) throw error
         definirSenha('')
       } else if (modo === 'criar') {
+        if (!aceitouTermos) { definirMensagem('É necessário aceitar os Termos de Uso e Consentimento para criar sua conta.'); return }
         if (!perfilCompleto()) return
-        const { error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: dadosPerfil() } })
+        const { error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: { ...dadosPerfil(), ...dadosAceiteTermos() } } })
         if (error) throw error
         definirSenha(''); definirMensagem('Confira seu e-mail para concluir o cadastro. Se já tiver uma conta, use Entrar ou recuperar senha.')
       } else {
@@ -205,6 +208,7 @@ export function Conta() {
           <p className="texto-2">Seu WhatsApp é opcional. Os dados de perfil servem para personalizar sua experiência e não ficam visíveis a outros usuários.</p>
         </>}
         {(recuperacao || modo !== 'recuperar') && <label className="campo">{recuperacao ? 'Nova senha' : 'Senha'}<input className="entrada" type="password" autoComplete={modo === 'entrar' && !recuperacao ? 'current-password' : 'new-password'} minLength={modo === 'entrar' && !recuperacao ? undefined : 8} required value={senha} onChange={e => definirSenha(e.target.value)} /></label>}
+        {!recuperacao && modo === 'criar' && <label className="campo campo--checkbox"><input type="checkbox" required checked={aceitouTermos} onChange={e => definirAceitouTermos(e.target.checked)} /> Li e concordo com os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso e Consentimento</a> do OrtoQuestões.</label>}
         <button className="botao botao--principal" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}</button>
       </form>
       {modo === 'entrar' && !recuperacao && <button className="botao botao--fantasma" onClick={() => { void reenviar() }} disabled={ocupado || !email.trim()}>Reenviar confirmação de e-mail</button>}
