@@ -1471,7 +1471,10 @@
       "D": "O calcâneo está certo, mas o fêmur é sede infantil."
     },
     "geradoEm": "2026-09-07",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 25"
+    ]
   },
   "tumores-0122": {
     "conceito": "Os fatores de pior prognóstico no sarcoma de Ewing se organizam em quatro grupos. DO PACIENTE: IDADE MAIOR QUE 15 ANOS — adolescentes e adultos têm resultados nitidamente piores que crianças menores, e esse é um dos preditores mais consistentes. DO TUMOR: localização AXIAL, sobretudo PÉLVICA (contra localização em membro, mais favorável); tamanho grande (volume acima de 100 a 200 ml); e LDH ELEVADA — repare que a alternativa distratora inverte isso, pois LDH BAIXA é favorável. DA DISSEMINAÇÃO: presença de METÁSTASE ao diagnóstico é o fator isolado mais forte, e metástase ÓSSEA ou de medula óssea é pior que metástase pulmonar isolada. DA RESPOSTA AO TRATAMENTO: má resposta histológica à quimioterapia neoadjuvante (necrose tumoral abaixo de 90%). Note ainda que o GRAU HISTOLÓGICO não é usado no Ewing — ele é, por definição, um tumor de alto grau, e não se gradua. E a translocação t(11;22) com fusão EWSR1-FLI1 é o achado que DEFINE o diagnóstico, presente em cerca de 85% dos casos; longe de ser fator adverso, o tipo de fusão tem valor prognóstico discutido, e a fusão clássica costuma associar-se a prognóstico melhor.",
@@ -1482,7 +1485,10 @@
       "D": "A translocação t(11;22) é o achado diagnóstico da doença, presente na maioria dos casos, e não um marcador de gravidade."
     },
     "geradoEm": "2026-09-07",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 27"
+    ]
   },
   "tumores-0123": {
     "conceito": "A regra geral dos tumores de partes moles é que eles são INDOLORES — a massa cresce em silêncio, e é justamente por isso que o diagnóstico atrasa e que a ausência de dor NUNCA deve ser usada como argumento a favor de benignidade. A exceção mais consistente são os tumores de LINHAGEM NEUROGÊNICA: schwannoma, neurofibroma e o tumor maligno da bainha do nervo periférico. A explicação é anatômica e não depende de malignidade — a lesão cresce dentro ou junto ao nervo, e a compressão ou tração das fibras produz DOR, PARESTESIA e o SINAL DE TINEL sobre a massa, com irradiação no território do nervo. Isso tem duas aplicações práticas. Primeira, diagnóstica: massa de partes moles que dói, formiga e tem Tinel positivo é neurogênica até prova em contrário, e a ressonância costuma mostrar o nervo entrando e saindo da lesão (o sinal da cauda), o sinal do alvo e a atrofia do músculo inervado. Segunda, cirúrgica: o SCHWANNOMA é encapsulado e excêntrico ao nervo, podendo ser enucleado com preservação dos fascículos, enquanto o NEUROFIBROMA é intrafascicular, e retirá-lo custa a função do nervo — distinção que precisa ser feita ANTES de operar.",
@@ -1493,7 +1499,10 @@
       "C": "Os adipocíticos (lipoma, lipossarcoma) são o exemplo clássico do tumor de partes moles que não dói."
     },
     "geradoEm": "2026-09-07",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 24"
+    ]
   },
   "tumores-0124": {
     "conceito": "O hamartoma lipofibromatoso (lipofibroma intraneural, ou fibrolipoma neural) é uma lesão benigna rara em que tecido fibroadiposo maduro infiltra o EPINEURO e o perineuro, envolvendo e separando os fascículos nervosos. Sua localização preferencial é o NERVO MEDIANO NO PUNHO, e o quadro típico é o de uma criança ou adulto jovem com massa fusiforme, mole e lentamente progressiva na face volar do punho, associada a SÍNDROME DO TÚNEL DO CARPO — e, em cerca de um terço dos casos, a MACRODACTILIA do território mediano (polegar, indicador e médio), condição chamada de macrodactilia lipofibromatosa. A ressonância é praticamente diagnóstica: o nervo aumentado, com o aspecto de CABO COAXIAL ou de espaguete em corte transversal, com fascículos hipointensos separados por gordura hiperintensa. O ponto que define a conduta é este: a lesão é INFILTRATIVA e inseparável dos fascículos, de modo que a tentativa de ressecção causa déficit neurológico permanente — o tratamento é a DESCOMPRESSÃO (liberação do túnel do carpo e epineurotomia), e não a excisão; a biópsia, quando feita, deve ser mínima.",
@@ -1504,7 +1513,10 @@
       "C": "Os nervos digitais são acometidos apenas por extensão a partir do mediano, no contexto da macrodactilia associada."
     },
     "geradoEm": "2026-09-07",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 78"
+    ]
   },
   "tumores-0125": {
     "conceito": "O cisto ósseo aneurismático costuma ser uma lesão **excêntrica, expansiva e insuflativa**, com adelgaçamento cortical. No sistema de Enneking para tumores benignos, B2 indica lesão ativa, em crescimento, mas ainda contida por barreiras naturais.",
@@ -1516,7 +1528,8 @@
     },
     "referencias": [
       "Enneking WF. A system of staging musculoskeletal neoplasms. Clin Orthop Relat Res. 1986;(204):9-24.",
-      "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020."
+      "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 24"
     ],
     "geradoEm": "2026-09-13",
     "conferido": false,
@@ -1539,7 +1552,10 @@
       "D": "A hiperostose esquelética idiopática difusa (DISH) causa ossificação exuberante dos ligamentos, sobretudo do longitudinal anterior, e não responde a tratamento clínico."
     },
     "geradoEm": "2026-09-07",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 39"
+    ]
   },
   "tumores-0127": {
     "conceito": "A via de biópsia do úmero proximal é uma das mais cobradas, porque a escolha errada custa o membro. O acesso correto é pelo TERÇO ANTERIOR DO DELTOIDE — uma incisão longitudinal que divide as fibras anteriores do músculo e chega ao osso por um único compartimento, o do deltoide, que será removido em bloco na ressecção definitiva. O que NÃO se deve usar é o INTERVALO DELTOPEITORAL, e a razão é decisiva: ele é um intervalo INTERNERVOSO, entre dois compartimentos, e nele correm a veia cefálica e, mais medialmente, o FEIXE NEUROVASCULAR AXILAR. Contaminar esse intervalo com hematoma tumoral significa contaminar o compartimento peitoral e o feixe — e isso transforma uma ressecção com preservação do membro numa amputação interescapulotorácica (cirurgia de Tikhoff-Linberg ou pior). É o exemplo mais didático do princípio geral: a biópsia nunca deve passar por intervalos internervosos nem por planos neurovasculares, ainda que sejam justamente os caminhos mais fáceis e mais familiares ao cirurgião. Cuidado adicional: manter-se distal ao nervo axilar, que cruza o deltoide cerca de 5 a 7 cm abaixo do acrômio.",
@@ -1550,7 +1566,10 @@
       "D": "O terço posterior é mais distante da lesão e também expõe o nervo axilar em seu trajeto circunflexo."
     },
     "geradoEm": "2026-09-07",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 24"
+    ]
   },
   "tumores-0128": {
     "conceito": "O tumor de células gigantes se apresenta como lesão LÍTICA (puramente osteolítica, sem matriz e sem esclerose marginal — a chamada borda \"geográfica\" sem halo esclerótico) e EXCÊNTRICA, ou seja, deslocada do eixo central do osso. Isso não é detalhe descritivo: o padrão radiográfico decorre da biologia. As células estromais neoplásicas expressam RANKL em excesso, recrutando osteoclastos que reabsorvem osso sem que haja qualquer formação compensatória — daí a lise pura, sem osso reativo. E o crescimento excêntrico, a partir da epífise em direção ao osso subcondral e à metáfise, é o que explica a insuflação da cortical de um lado só e a ameaça direta à articulação. A descrição completa da lesão típica: epifisária e subarticular, excêntrica, lítica, com bordas mal definidas sem esclerose, cortical afinada ou rompida com massa de partes moles contida por pseudocápsula, em paciente entre 20 e 40 anos com a fise já fechada, na região do joelho. Antes de qualquer conduta: dosar cálcio e PTH (para excluir tumor marrom, de histologia idêntica) e fazer tomografia de tórax (pela metástase pulmonar benigna em 1 a 4%).",
@@ -1561,7 +1580,10 @@
       "D": "Erra o padrão de densidade, ainda que acerte a excentricidade."
     },
     "geradoEm": "2026-09-07",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 26"
+    ]
   },
   "tumores-0129": {
     "conceito": "Na imensa maioria das metástases ósseas o tratamento é PALIATIVO, porque a doença já é sistêmica: estabiliza-se para aliviar dor e preservar função, e a expectativa de vida orienta a escolha do implante. Existem, porém, exceções em que a RESSECÇÃO COM MARGEM AMPLA de uma lesão ÚNICA tem intenção curativa e melhora a sobrevida, e a principal é o CARCINOMA DE CÉLULAS RENAIS. Três razões: ele frequentemente produz metástase SOLITÁRIA e METACRÔNICA, às vezes anos depois da nefrectomia; é RESISTENTE a quimioterapia e a radioterapia convencionais, de modo que o controle local depende inteiramente da cirurgia; e as séries mostram sobrevida em cinco anos de 30 a 50% após ressecção completa, contra números muito menores no tratamento paliativo. A segunda exceção, pela mesma lógica de doença indolente com lesão única, é o CARCINOMA DE TIREOIDE — que, aliás, ainda responde ao iodo radioativo. Detalhe operatório incontornável nos dois: são metástases HIPERVASCULARES, e a EMBOLIZAÇÃO PRÉ-OPERATÓRIA, 24 a 48 horas antes, é mandatória.",
@@ -1572,7 +1594,10 @@
       "D": "A próstata responde bem a bloqueio hormonal e a radioterapia, com lesões geralmente múltiplas e blásticas — não há indicação de ressecção com intenção curativa."
     },
     "geradoEm": "2026-09-07",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 27"
+    ]
   },
   "tumores-0130": {
     "conceito": "A metástase ACRAL — distal ao cotovelo ou ao joelho — é rara (menos de 0,1% do total) e, em mais da metade dos casos, o primário é o CARCINOMA DE PULMÃO. A explicação é a rota de disseminação. A maioria das metástases ósseas viaja pelo PLEXO VENOSO VERTEBRAL DE BATSON, um sistema sem válvulas que comunica pelve, abdome e tórax com a coluna, e por isso se depositam no esqueleto AXIAL e na porção proximal dos membros, onde há medula vermelha ricamente vascularizada. Para alcançar a mão ou o pé é preciso disseminação ARTERIAL, e o pulmão é o único órgão que lança êmbolos tumorais DIRETAMENTE na circulação sistêmica, sem filtro capilar intermediário. Consequência clínica: lesão lítica em falange, metacarpo, metatarso ou rádio distal num adulto — quadro tratado por semanas como panarício, infecção ou artrite — exige tomografia de tórax, porque a metástase acral costuma ser a PRIMEIRA manifestação de um câncer de pulmão ainda desconhecido. O prognóstico, nesses casos, é reservado, e o tratamento local se orienta pela função e pela dor.",

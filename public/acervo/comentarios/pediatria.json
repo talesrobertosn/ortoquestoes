@@ -2188,7 +2188,8 @@
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/congenital-knee-dislocation",
-   "https://www.jposna.org/~jposna/index.php/jposna/article/view/272"
+   "https://www.jposna.org/~jposna/index.php/jposna/article/view/272",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 18"
   ],
   "conferido": false,
   "geradoEm": "2026-09-13"
@@ -2202,7 +2203,8 @@
    "D": "Acomodação intermediária pertence à fase de apoio na terminologia clássica, não ao balanço."
   },
   "referencias": [
-   "https://posna.org/physician-education/study-guide/gait"
+   "https://posna.org/physician-education/study-guide/gait",
+   "Barros Filho, Lech — Exame físico em ortopedia, 3ª edição — Cap. 5"
   ],
   "alerta": "A questão utiliza a terminologia antiga aceleração/desaceleração. Na nomenclatura atual de Rancho Los Amigos, o correspondente é balanço inicial, médio e terminal.",
   "conferido": false,
@@ -2217,7 +2219,8 @@
    "D": "Combina abdução insuficiente com período de manutenção excessivamente curto."
   },
   "referencias": [
-   "https://posna.org/physician-education/study-guide/clubfoot"
+   "https://posna.org/physician-education/study-guide/clubfoot",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 19"
   ],
   "conferido": false,
   "geradoEm": "2026-09-13"
@@ -2232,7 +2235,8 @@
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7083976/",
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC9983115/"
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC9983115/",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 6"
   ],
   "alerta": "Os pontos de corte para displasia limítrofe variam entre estudos. LCEA menor que 20 graus é amplamente aceito como displasia franca; valores de 20 a 25 graus exigem avaliação multidimensional e não devem ser interpretados isoladamente.",
   "conferido": false,
@@ -4176,6 +4180,132 @@
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 8"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0575": {
+  "conceito": "A técnica de Métaizeau para fraturas desviadas do colo do rádio na criança utiliza um implante intramedular elástico introduzido distalmente no rádio e avançado até o fragmento proximal. A ponta curva do implante é posicionada sob a cabeça radial e sua rotação permite manipular o fragmento, obter a redução e manter a estabilização sem exposição aberta da cabeça radial. A sequência ilustrada mostra exatamente a progressão intramedular, o engajamento do fragmento e a rotação do implante.",
+  "correta": "D. A imagem demonstra a técnica de METAIZEAU, com haste intramedular elástica introduzida distalmente, avançada até a cabeça radial e rodada para auxiliar a redução.",
+  "incorretas": {
+   "A": "A sequência ilustrada não corresponde à técnica de ISRAELI; a característica visual dominante é a passagem e rotação de um implante intramedular flexível pelo rádio.",
+   "B": "A técnica de JEFFREY não corresponde ao método intramedular elástico com ponta curva e rotação do implante representado na imagem.",
+   "C": "A técnica de WALLACE não corresponde à sequência mostrada; a figura evidencia um implante que percorre o canal medular do rádio até o fragmento proximal."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 10"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0576": {
+  "conceito": "Na coluna cervical subaxial, a carga axial transmite força compressiva através dos corpos vertebrais e discos. Quando a energia é suficiente, ocorre falha do corpo vertebral com fragmentação e possível retropulsão para o canal, configurando fratura por explosão. Lesões facetárias e do complexo ligamentar posterior estão mais relacionadas a mecanismos de flexão, distração ou translação.",
+  "correta": "C. A carga axial na coluna cervical baixa da criança está classicamente associada à fratura por explosão.",
+  "incorretas": {
+   "A": "Fratura-luxação pressupõe componente importante de translação e/ou distração, não sendo a consequência típica de carga axial pura.",
+   "B": "A lesão bifacetária está mais associada à flexão-distração e translação, com falha posterior.",
+   "D": "A lesão predominante do complexo ligamentar posterior é característica de mecanismos de distração/flexão, e não de compressão axial isolada."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 20"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0577": {
+  "conceito": "Na criança maior e no adolescente, a haste intramedular rígida pode ser utilizada em determinadas fraturas diafisárias do fêmur, mas o ponto de entrada é crítico. A entrada pela fossa piriforme pode comprometer vasos retinaculares derivados da artéria circunflexa femoral medial e, consequentemente, a vascularização da cabeça femoral. A complicação mais temida é a osteonecrose, motivo pelo qual a entrada trocantérica é preferida em muitos pacientes esqueleticamente imaturos.",
+  "correta": "D. A necrose avascular da cabeça femoral é a complicação mais grave associada à entrada pela fossa piriforme no adolescente.",
+  "incorretas": {
+   "A": "Coxa valga não é a complicação vascular grave classicamente relacionada ao ponto de entrada piriforme.",
+   "B": "Subluxação do quadril não é a complicação típica decorrente da introdução da haste pela fossa piriforme.",
+   "C": "Fechamento fisário precoce pode ocorrer em procedimentos que atravessam ou lesam a fise, mas é menos grave e não é a complicação característica mais temida desse ponto de entrada."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 30"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0578": {
+  "conceito": "A fratura do côndilo lateral do úmero na criança pode evoluir para pseudartrose quando há deslocamento residual, instabilidade ou perda de redução. A pseudartrose pode produzir deformidade progressiva em valgo do cotovelo, aumentando a tração crônica sobre o nervo ulnar. Esse mecanismo está classicamente relacionado à neuropatia ulnar tardia.",
+  "correta": "A. A pseudartrose pode levar a cúbito valgo progressivo e, secundariamente, à neuropatia tardia do nervo ulnar.",
+  "incorretas": {
+   "B": "A osteonecrose da tróclea pode causar deformidade e alteração articular, mas não é a associação clássica com neuropatia ulnar tardia após fratura do côndilo lateral.",
+   "C": "O esporão lateral é relativamente comum e pode ser proeminente, porém não é o mecanismo típico de neuropatia tardia do ulnar.",
+   "D": "A deformidade em rabo de peixe relaciona-se a distúrbio de crescimento/vascularização da tróclea e não é a causa clássica da neuropatia ulnar tardia cobrada."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 16"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0579": {
+  "conceito": "A fratura metafisária proximal da tíbia em crianças pequenas pode evoluir tardiamente com valgo progressivo, fenômeno conhecido como fenômeno de Cozen. A deformidade pode aparecer meses após a consolidação, mesmo quando o alinhamento inicial parece satisfatório. O mecanismo é multifatorial e envolve crescimento assimétrico da metáfise/fise proximal após o trauma.",
+  "correta": "B. O valgo é a deformidade tardia clássica após fratura metafisária proximal da tíbia na criança.",
+  "incorretas": {
+   "A": "Varo não é a deformidade tardia típica dessa fratura; o padrão clássico é progressão em valgo.",
+   "C": "Recurvato não representa a complicação angular tardia mais comum nesse cenário.",
+   "D": "Antecurvato pode ocorrer em outras situações de mau alinhamento, mas não corresponde ao fenômeno de Cozen."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 30"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0580": {
+  "conceito": "As fraturas da tuberosidade anterior da tíbia são classificadas por Watson-Jones e pela modificação de Ogden conforme a extensão do traço através da apófise, fise e epífise proximal. O tipo III estende-se proximalmente até a superfície articular, tornando a lesão intra-articular. Por isso, esse padrão apresenta maior associação com lesões intra-articulares concomitantes, incluindo lesões meniscais.",
+  "correta": "C. O tipo 3 é o padrão mais associado à lesão meniscal por apresentar extensão intra-articular.",
+  "incorretas": {
+   "A": "O tipo 1 é mais distal e restrito à região apofisária, sem a mesma extensão intra-articular do tipo 3.",
+   "B": "O tipo 2 progride proximalmente, mas não apresenta o mesmo envolvimento articular característico do tipo 3.",
+   "D": "O tipo 4 envolve a fise proximal da tíbia em um padrão distinto; não é o tipo classicamente apontado pela questão como o mais associado à lesão meniscal."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 30"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0581": {
+  "conceito": "A classificação de Ratliff é utilizada para descrever padrões de osteonecrose após fratura do quadril/colo femoral na criança. Para esta questão, o padrão adotado pelo gabarito oficial da SBOT associa o tipo III ao acometimento epifisário parcial. A resposta deve ser interpretada conforme a nomenclatura empregada pela referência oficial indicada no caderno.",
+  "correta": "C. Conforme o gabarito oficial da prova, no tipo III de RATLIFF ocorre acometimento epifisário parcial.",
+  "incorretas": {
+   "A": "Acometimento exclusivamente metafisário não corresponde ao padrão tipo III cobrado nesta prova.",
+   "B": "Acometimento epifisário total representa um padrão mais extenso e não é a alternativa atribuída ao tipo III pelo gabarito oficial.",
+   "D": "Comprometimento conjunto epifisário e metafisário também não corresponde ao tipo III segundo a convenção utilizada nesta questão."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 30"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0582": {
+  "conceito": "A apófise da base do quinto metatarso surge como centro de ossificação secundário e pode simular fratura em radiografias pediátricas. Sua linha de ossificação é orientada predominantemente no sentido longitudinal, aproximadamente paralela ao eixo do metatarso. Já as fraturas por avulsão da base tendem a apresentar traço mais transversal ou oblíquo em relação ao eixo do osso.",
+  "correta": "D. A orientação longitudinal do centro apofisário proximal ajuda a diferenciá-lo de um traço de fratura.",
+  "incorretas": {
+   "A": "Uma linha oblíqua é mais compatível com determinados traços fraturários do que com a orientação típica da apófise.",
+   "B": "Coronal descreve um plano anatômico e não corresponde à orientação radiográfica característica da apófise proximal do quinto metatarso.",
+   "C": "Um traço transversal favorece o diagnóstico de fratura por avulsão e não de centro apofisário normal."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 30"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0583": {
+  "conceito": "Na criança, os ligamentos podem ser relativamente mais resistentes que a fise, de modo que um mecanismo de avulsão pode produzir fratura fisária em vez de ruptura ligamentar. Quando o ligamento colateral metacarpofalangiano avulsiona sua inserção epifisária na base da falange proximal, o traço atravessa a fise e alcança a superfície articular. Esse padrão corresponde a uma lesão Salter-Harris III.",
+  "correta": "C. A avulsão epifisária intra-articular do ligamento colateral na base da falange proximal corresponde, quase exclusivamente, ao tipo III de SALTER-HARRIS.",
+  "incorretas": {
+   "A": "No tipo I, o traço permanece exclusivamente na fise e não atravessa a epífise até a articulação.",
+   "B": "No tipo II, há extensão da fise para a metáfise, sem o padrão epifisário intra-articular descrito.",
+   "D": "No tipo IV, o traço atravessa metáfise, fise e epífise; esse não é o padrão típico da avulsão ligamentar mencionada."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 7"
   ],
   "geradoEm": "2026-09-17",
   "conferido": false
