@@ -8240,8 +8240,8 @@
       "subtemas": [
         "Tumores de Partes Moles"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "A sinovite vilonodular pigmentada acomete mais frequentemente o",
       "imagens": [],
@@ -8283,8 +8283,8 @@
       "subtemas": [
         "Generalidades dos Tumores"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "De acordo com a escala de MIRELS para tratamento de fratura iminente em ossos longos, a presença de lesão tumoral na extremidade distal do fêmur recebe",
       "imagens": [],
@@ -8326,8 +8326,8 @@
       "subtemas": [
         "Tumor de Células Gigantes"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "O tumor ósseo que mais frequentemente acomete os elementos anteriores da coluna é o",
       "imagens": [],
@@ -8369,8 +8369,8 @@
       "subtemas": [
         "Metástase"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Na avaliação das metástases em ossos corticais, as bordas das lesões evidenciadas nas radiografias são",
       "imagens": [],
@@ -8412,8 +8412,8 @@
       "subtemas": [
         "Tumores Fibrosos"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "No fibroma não ossificante, pela classificação de RITSCHL, as fraturas ocorrem somente no estágio",
       "imagens": [],
@@ -8455,7 +8455,7 @@
       "subtemas": [
         "Osteoma osteoide"
       ],
-      "prova": "TARO",
+      "prova": "TEOT",
       "ano": 2024,
       "dificuldade": null,
       "enunciado": "Paciente masculino, 15 anos, com dor na coxa. Com a imagem radiográfica a seguir, a principal hipótese diagnóstica é",
@@ -8505,8 +8505,8 @@
       "subtemas": [
         "Tumores Cartilaginosos"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Na síndrome de MAFFUCCI, os múltiplos hemangiomas envolvendo partes moles estão relacionados à",
       "imagens": [],
@@ -8548,8 +8548,8 @@
       "subtemas": [
         "Osteossarcoma"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "No tratamento do osteossarcoma, a avaliação do grau de necrose tumoral segundo HUVOS está relacionada à quimioterapia",
       "imagens": [],
@@ -13910,6 +13910,56 @@
         "arquivo": "enare-r4-ortopedia-2024.pdf",
         "pagina": null,
         "numeroOriginal": 78
+      }
+    },
+    {
+      "id": "tumores-0318",
+      "tema": "Tumores ósseos e de partes moles",
+      "subtemas": [
+        "Tumores Cartilaginosos"
+      ],
+      "prova": "TARO",
+      "ano": 2024,
+      "dificuldade": null,
+      "enunciado": "Paciente masculino, 15 anos, com dor no ombro. Imagem de radiografia a seguir. A principal hipótese diagnóstica é",
+      "imagens": [
+        {
+          "arquivo": "tumores/tumores-0318-1.jpeg",
+          "legenda": null,
+          "largura": 791,
+          "altura": 669
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "osteossarcoma."
+        },
+        {
+          "letra": "B",
+          "texto": "condroblastoma."
+        },
+        {
+          "letra": "C",
+          "texto": "osteoma osteoide."
+        },
+        {
+          "letra": "D",
+          "texto": "tumor de células gigantes."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2024-publicar.pdf",
+        "pagina": 13,
+        "numeroOriginal": 13
       }
     }
   ]

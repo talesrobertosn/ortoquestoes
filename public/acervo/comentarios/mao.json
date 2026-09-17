@@ -3509,7 +3509,10 @@
       "D": "O lado ulnar está certo, mas doença unilateral não é o padrão de pior prognóstico — a bilateralidade é critério de diátese."
     },
     "geradoEm": "2026-09-06",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 75"
+    ]
   },
   "mao-0303": {
     "conceito": "O nervo tem três envoltórios: o endoneuro em volta de cada axônio, o perineuro em volta de cada fascículo e o epineuro em volta do nervo inteiro. As técnicas de reparo se nomeiam por qual deles recebe o ponto.",
@@ -3520,7 +3523,10 @@
       "D": "A epiperineurorrafia é uma técnica intermediária, com pontos que pegam o epineuro e a superfície do perineuro dos fascículos periféricos. Também não corresponde ao desenho, em que o fio não alcança os fascículos."
     },
     "geradoEm": "2026-09-06",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 62"
+    ]
   },
   "mao-0304": {
     "conceito": "Na luxação lateral rotatória da interfalângica proximal, a falange média gira em torno de um colateral que permaneceu íntegro, e o côndilo da falange proximal fura o aparelho extensor pela lateral, entre a banda central e a banda lateral.",
@@ -3531,7 +3537,10 @@
       "D": "O côndilo da falange proximal é o obstáculo em torno do qual a banda lateral se prende, mas ele não é a estrutura interposta: é o osso que passa pela fenda."
     },
     "geradoEm": "2026-09-06",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 2.15"
+    ]
   },
   "mao-0305": {
     "conceito": "O ligamento de Vickers é uma banda anômala que ancora o carpo ao canto da fise do rádio que deveria crescer, e é o achado característico da deformidade de Madelung.",
@@ -3542,7 +3551,10 @@
       "C": "Acerta o osso e erra o ponto de fixação: é a metáfise, e não a epífise. A distinção não é detalhe — é justamente a fixação à metáfise, atravessando a fise, que trava o crescimento daquele canto."
     },
     "geradoEm": "2026-09-06",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 12"
+    ]
   },
   "mao-0306": {
     "conceito": "Os dois nomes são frequentemente trocados, e a regra para não errar é curta: a ordem alfabética dos nomes acompanha a ordem de proximal para distal. Bouchard vem antes de Heberden, e a proximal vem antes da distal.",
@@ -3553,7 +3565,10 @@
       "D": "Heberden é só das distais."
     },
     "geradoEm": "2026-09-06",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 73"
+    ]
   },
   "mao-0307": {
     "conceito": "Na sinostose radioulnar congênita a criança não perde força nem estabilidade — perde a rotação, e fica travada na posição em que a fusão ocorreu. O que decide a conduta, portanto, não é a sinostose em si: é a posição em que o antebraço ficou e o quanto isso atrapalha.",
@@ -3575,7 +3590,10 @@
       "D": "Proximal está certo, mas medial é a origem umeral do músculo, no epicôndilo medial — a compressão útil é do lado por onde o nervo caminha, que é o lateral."
     },
     "geradoEm": "2026-09-06",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 77"
+    ]
   },
   "mao-0309": {
     "conceito": "A síndrome de Wartenberg é a compressão do ramo sensitivo do nervo radial no ponto em que ele deixa de correr sob o braquiorradial e se torna subcutâneo, cerca de 8 a 9 centímetros acima do estiloide radial, passando entre os tendões do braquiorradial e do extensor radial longo do carpo.",
@@ -3586,7 +3604,10 @@
       "D": "Erra os dois componentes da manobra."
     },
     "geradoEm": "2026-09-06",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 7.4.5"
+    ]
   },
   "mao-0310": {
     "conceito": "A síndrome do impacto ulnocarpal é a sobrecarga entre a cabeça da ulna, o complexo da fibrocartilagem triangular e o lado ulnar do carpo — semilunar e piramidal. Ela se associa à variância ulnar positiva, seja constitucional, seja adquirida depois de uma fratura do rádio distal consolidada em encurtamento.",
@@ -3597,7 +3618,10 @@
       "D": "O desvio radial afasta o carpo da ulna — é o movimento que alivia o sintoma, não o que o provoca."
     },
     "geradoEm": "2026-09-06",
-    "conferido": false
+    "conferido": false,
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 69"
+    ]
   },
   "mao-0311": {
     "conceito": "A instabilidade **lunopiramidal** é pesquisada por manobras que aplicam forças opostas ao semilunar e ao piramidal, provocando cisalhamento ou ressalto doloroso. Entre os epônimos oferecidos, a manobra associada a essa avaliação é atribuída a Masquelet.",
@@ -3610,7 +3634,8 @@
     "alerta": "A literatura internacional usa com maior frequência os nomes lunotriquetral ballottement, Reagan shuck e Kleinman shear. O epônimo “Masquelet” é pouco padronizado e deve ser conferido na fonte didática original.",
     "referencias": [
       "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Lunotriquetral instability.",
-      "Reagan DS, Linscheid RL, Dobyns JH. Lunotriquetral sprains. J Hand Surg Am. 1984;9:502-514."
+      "Reagan DS, Linscheid RL, Dobyns JH. Lunotriquetral sprains. J Hand Surg Am. 1984;9:502-514.",
+      "Leite, Faloppa — Propedêutica Ortopédica e Traumatológica, 1ª edição — Cap. 9"
     ],
     "geradoEm": "2026-09-13",
     "conferido": false,

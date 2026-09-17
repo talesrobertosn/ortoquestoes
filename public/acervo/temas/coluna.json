@@ -6831,8 +6831,8 @@
         "Estenose de Canal",
         "Escoliose"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Na escoliose degenerativa do adulto, os sintomas de claudicação neurogênica",
       "imagens": [],
@@ -6919,8 +6919,8 @@
       "subtemas": [
         "Escoliose"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Na escoliose idiopática infantil, o método desenvolvido por MEHTA para avaliar o potencial de progressão é por meio da diferença na mensuração do ângulo entre",
       "imagens": [],
@@ -6962,8 +6962,8 @@
       "subtemas": [
         "Trauma Raquimedular e Síndromes Medulares"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "No trauma raquimedular, a síndrome em que o paciente apresenta função motora e sensibilidade à dor e ao tato preservadas, enquanto a propriocepção está alterada, é a",
       "imagens": [],
@@ -7005,8 +7005,8 @@
       "subtemas": [
         "Estenose de Canal"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "A estenose de canal cervical associada à cervicobraquialgia tem como um dos diagnósticos diferenciais o tumor de",
       "imagens": [],
@@ -7048,8 +7048,8 @@
       "subtemas": [
         "Hérnia de disco"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Em uma hérnia de disco cervical foraminal com parestesia na face lateral do antebraço e no polegar, e diminuição de força do extensor radial longo do carpo, a raiz e o segmento vertebral envolvidos são respectivamente",
       "imagens": [],
@@ -7135,8 +7135,8 @@
       "subtemas": [
         "Biomecânica"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Os discos intervertebrais L4-L5 e L5-S1 contribuem para a lordose lombar em cerca de",
       "imagens": [],
@@ -13266,6 +13266,50 @@
         "arquivo": "TARO-2023-publicar.pdf",
         "pagina": 74,
         "numeroOriginal": 74
+      }
+    },
+    {
+      "id": "coluna-0300",
+      "tema": "Coluna",
+      "subtemas": [
+        "Trauma da Coluna",
+        "Ortopedia pediátrica"
+      ],
+      "prova": "TEOT",
+      "ano": 2024,
+      "dificuldade": null,
+      "enunciado": "O quadro de SCIWORA corresponde a uma condição em que o paciente apresenta",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "radiografia simples sem alterações e Frankel C."
+        },
+        {
+          "letra": "B",
+          "texto": "radiografia simples sem alterações e Frankel E."
+        },
+        {
+          "letra": "C",
+          "texto": "ressonância magnética sempre com alterações e Frankel C."
+        },
+        {
+          "letra": "D",
+          "texto": "ressonância magnética sempre com alterações e Frankel E."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT-2024-publicar.pdf",
+        "pagina": 2,
+        "numeroOriginal": 2
       }
     }
   ]

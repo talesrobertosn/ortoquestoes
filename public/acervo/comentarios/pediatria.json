@@ -2334,7 +2334,10 @@
    "C": "O os vesalianum, na base do quinto metatarso, é raro e quase sempre assintomático."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 19"
+  ]
  },
  "pediatria-0252": {
   "conceito": "O broto do membro superior surge por volta do 26º dia de gestação, na parede lateral do embrião, e é formado por um núcleo de MESODERMA DA LÂMINA LATERAL (mesoderma lateral) revestido por ectoderma. A divisão de trabalho entre as camadas germinativas é o que a questão cobra e vale decorar: o MESODERMA LATERAL dá origem ao esqueleto do membro — ossos, cartilagens, tendões e ligamentos —, além do tecido conjuntivo e da vasculatura; os MÚSCULOS não vêm dali, e sim das células precursoras miogênicas que MIGRAM dos SOMITOS (mesoderma paraxial) para dentro do broto; e os NERVOS têm origem ECTODÉRMICA, no tubo neural e na crista neural, crescendo para dentro do membro depois que a musculatura já se organizou. Três centros sinalizadores comandam os eixos e são cobrados junto: a CRISTA ECTODÉRMICA APICAL (AER), na borda distal, controla o crescimento PROXIMODISTAL por meio dos fatores de crescimento fibroblástico (FGF); a ZONA DE ATIVIDADE POLARIZANTE (ZPA), na margem posterior, controla o eixo ANTEROPOSTERIOR (radioulnar) pelo Sonic hedgehog; e a via Wnt controla o eixo DORSOVENTRAL. O membro superior desenvolve-se ligeiramente à frente do inferior, e todo o processo de formação está essencialmente completo por volta da oitava semana — o que explica por que os agentes teratogênicos atuam nessa janela estreita, e por que malformações do membro se associam com frequência a malformações cardíacas, renais e hematológicas, formadas no mesmo período.",
@@ -2345,7 +2348,10 @@
    "D": "Erra em dois dos três elementos: os músculos vêm dos somitos e os nervos, do ectoderma. Apenas os vasos sanguíneos derivam do mesoderma lateral."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 1"
+  ]
  },
  "pediatria-0253": {
   "conceito": "Na sinostose radioulnar congênita a criança não perde força nem estabilidade — perde a rotação, e fica travada na posição em que a fusão ocorreu. O que decide a conduta, portanto, não é a sinostose em si: é a posição em que o antebraço ficou e o quanto isso atrapalha.",
@@ -2356,7 +2362,10 @@
    "D": "Osteotomia derrotatória se faz para tirar o antebraço de uma pronação acentuada, e não para levá-lo até ela. Fixar em pronação um antebraço que estava em neutro seria criar o problema que a cirurgia deveria resolver — sem contar o risco de síndrome compartimental nas correções amplas."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 12"
+  ]
  },
  "pediatria-0258": {
   "conceito": "O menisco discoide lateral é uma variante congênita em que o menisco é mais largo e espesso que o habitual, podendo cobrir grande parte do platô tibial lateral e apresentar inserções periféricas anormais. Pela classificação de Watanabe, pode ser completo, incompleto ou tipo Wrisberg, este último caracterizado principalmente por instabilidade posterior. Muitas crianças são assintomáticas. Quando há instabilidade ou rotura surgem ressalto, estalidos, dor, derrame, bloqueio ou perda da extensão. A ressonância magnética é o exame de escolha, mas a radiografia pode apresentar sinais indiretos: alargamento do espaço articular lateral, achatamento ou quadratura do côndilo femoral lateral, concavidade do platô lateral e hipoplasia da espinha tibial lateral. Nenhum desses achados isoladamente exclui ou confirma a doença. O tratamento do menisco assintomático é observação; quando sintomático, prioriza-se preservação meniscal por saucerização e reparo das áreas instáveis, evitando meniscectomia total devido ao risco de degeneração precoce.",
@@ -3876,6 +3885,146 @@
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 8"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0555": {
+  "conceito": "Após a fratura da espinha tibial (eminência intercondilar) na criança, mesmo com tratamento adequado, a complicação funcional mais comum a longo prazo é a perda da extensão completa do joelho, frequentemente por cicatriz fibrosa ou impacto do fragmento consolidado contra o teto intercondilar — mais frequente e mais limitante do ponto de vista funcional do que a instabilidade residual do LCA, que costuma ser discreta mesmo quando presente.",
+  "correta": "D. O maior prejuízo funcional na fratura da espinha tibial da criança está mais frequentemente associado à perda da extensão total do joelho.",
+  "incorretas": {
+   "A": "O estalido no joelho é um achado possível, mas não é a principal causa de prejuízo funcional relatada após essa fratura.",
+   "B": "A instabilidade residual, quando presente, costuma ser discreta e menos frequentemente limitante do que a perda de extensão nessas fraturas.",
+   "C": "O derrame de repetição pode ocorrer, mas não é a complicação mais comumente associada ao maior prejuízo funcional dessa fratura."
+  },
+  "referencias": [
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn) — Cap. 33"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0556": {
+  "conceito": "Fraturas da diáfise do fêmur na criança localizadas na região proximal são mais difíceis de controlar durante a redução e imobilização, pois o fragmento proximal fica sob a ação de músculos potentes (iliopsoas, glúteos, adutores) que tendem a desviá-lo em flexão, abdução e rotação externa, dificultando o alinhamento. Por outro lado, deformidades residuais nessa região são mais bem toleradas funcionalmente, já que o grande potencial de remodelação e a proximidade ao quadril (uma articulação com grande arco de compensação) atenuam o impacto clínico de um alinhamento imperfeito.",
+  "correta": "C. O acometimento na região proximal do fêmur faz com que a redução seja mais difícil de controlar, mas a deformidade residual seja mais tolerável.",
+  "incorretas": {
+   "A": "A região proximal não é mais fácil de controlar; a ação de múltiplos grupos musculares potentes torna a redução mais difícil, não mais fácil.",
+   "B": "Além do erro sobre a facilidade de redução, a deformidade residual proximal é mais tolerável, não menos, dada a maior capacidade de remodelação e compensação articular nessa região.",
+   "D": "A deformidade residual proximal é mais tolerável, não menos, contrariando o que essa alternativa afirma."
+  },
+  "referencias": [
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn) — Cap. 31"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0557": {
+  "conceito": "A classificação de DIAS-TACHDJIAN para fraturas fisárias do tornozelo na criança descreve mecanismos de trauma nomeados pela posição do pé no momento da lesão e pela direção da força deformante. No mecanismo de supinação-flexão plantar, a força é transmitida predominantemente através da tíbia distal, sem gerar o componente de estresse lateral necessário para fraturar a fíbula, que costuma permanecer intacta nesse padrão específico.",
+  "correta": "B. No mecanismo de supinação-flexão plantar, a fíbula usualmente permanece intacta.",
+  "incorretas": {
+   "A": "O mecanismo de supinação-inversão costuma envolver a fíbula, com avulsão do maléolo lateral ou fratura fisária lateral associada.",
+   "C": "O mecanismo de supinação-rotação interna também está mais associado a acometimento da fíbula, diferente do padrão poupado descrito para a supinação-flexão plantar.",
+   "D": "O mecanismo de pronação-eversão-rotação externa classicamente envolve fratura da fíbula, decorrente do estresse em valgo e rotação externa."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 30"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0558": {
+  "conceito": "Na lesão fisária esternoclavicular com desvio anterior da metáfise clavicular, o músculo esternocleidomastóideo, que se insere na clavícula medial, traciona o fragmento correspondente para anterior. Esse desvio anterior, associado à tração muscular assimétrica, faz com que a cabeça se incline para o lado afetado.",
+  "correta": "A. A inclinação da cabeça e a tração do esternocleidomastóideo ocorrem, respectivamente, para o lado afetado e para anterior.",
+  "incorretas": {
+   "B": "A tração do esternocleidomastóideo nessa lesão específica ocorre para anterior (acompanhando o desvio da metáfise), não para posterior.",
+   "C": "A inclinação da cabeça ocorre para o lado afetado (pela ação do músculo tracionado), não para o lado não afetado.",
+   "D": "Tanto a direção da inclinação da cabeça quanto a direção da tração muscular estão invertidas nessa alternativa em relação ao padrão descrito para essa lesão."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 29"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0559": {
+  "conceito": "RANG propôs a adição do tipo VI à classificação clássica de SALTER-HARRIS (que originalmente descreve os tipos I a V), para descrever uma lesão da periferia da fise: uma avulsão traumática na inserção de um ligamento ou tendão que leva consigo uma porção do anel pericondral (a estrutura de sustentação periférica da fise), com risco de formação de barra óssea localizada e distúrbio de crescimento angular focal.",
+  "correta": "C. O tipo VI de Salter-Harris, acrescentado por Rang, consiste na avulsão na inserção de um ligamento, levando uma porção do anel pericondral.",
+  "incorretas": {
+   "A": "A separação parcial da epífise com componente intra-articular corresponde ao padrão do tipo III da classificação original de Salter-Harris, não ao tipo VI de Rang.",
+   "B": "O acometimento parcial da placa de crescimento e da metáfise corresponde ao padrão do tipo IV original, não ao tipo VI de Rang.",
+   "D": "A fratura que atravessa todas as camadas da fise a partir da superfície articular através da metáfise corresponde ao tipo IV clássico, não ao tipo VI de Rang, que é uma lesão periférica do anel pericondral."
+  },
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 12.1"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0560": {
+  "conceito": "A fratura da tuberosidade da tíbia no adolescente pode lesar a artéria recorrente tibial anterior, um ramo que cruza a região anterior da metáfise tibial proximal nessa topografia. A lesão dessa artéria pode gerar hemorragia no compartimento anterior da perna, sendo a causa relacionada ao risco de síndrome compartimental aguda nesse tipo de fratura.",
+  "correta": "B. O risco de síndrome compartimental aguda na fratura da tuberosidade da tíbia está relacionado à lesão da artéria recorrente tibial anterior.",
+  "incorretas": {
+   "A": "A artéria infrapatelar transversa não é a classicamente implicada no risco de síndrome compartimental associada a essa fratura específica.",
+   "C": "A artéria genicular medial inferior não tem a mesma relação topográfica com o local da fratura e o compartimento anterior da perna.",
+   "D": "A artéria recorrente tibial posterior não é a implicada nesse mecanismo; a artéria relevante cruza a face anterior da metáfise, correspondendo à recorrente tibial anterior."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 26"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0561": {
+  "conceito": "A manobra de ALLIS para redução da luxação traumática do quadril consiste em aplicar tração longitudinal ao longo do eixo da deformidade, com um assistente estabilizando a pelve por contratração, seguida de ajuste da direção da tração e leve manipulação rotacional para guiar a cabeça femoral de volta ao acetábulo — técnica adaptável tanto a luxações posteriores quanto anteriores, a depender da direção inicial da tração aplicada.",
+  "correta": "A. A manobra ilustrada, de tração longitudinal com contratração pélvica seguida de ajuste rotacional para reduzir a luxação anterior, é a de Allis.",
+  "incorretas": {
+   "B": "A manobra de Stimson é realizada com o paciente em decúbito ventral e o quadril pendente na borda da mesa, utilizando o peso do próprio membro e pressão manual — posicionamento diferente do ilustrado na figura.",
+   "C": "A manobra de Bigelow envolve um movimento de circundução mais amplo (flexão, seguida de rotação em arco), classicamente descrita para luxações posteriores, com sequência de movimento diferente da ilustrada.",
+   "D": "A manobra de Stewart-Milford é uma variante menos utilizada, sem a correspondência direta com a sequência de tração e ajuste rotacional mostrada na figura."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 30"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0562": {
+  "conceito": "A fratura do capitato em crianças ocorre mais frequentemente em associação a trauma com o punho em extensão, mecanismo semelhante ao de outras fraturas do carpo por queda sobre a mão em extensão, no qual a carga axial transmitida através do punho estendido concentra estresse sobre o capitato, o maior osso do carpo, situado centralmente na fileira distal.",
+  "correta": "B. A fratura do capitato em crianças ocorre mais frequentemente com o punho em extensão.",
+  "incorretas": {
+   "A": "A flexão do punho não é o mecanismo classicamente associado a essa fratura, que decorre de carga axial transmitida com o punho estendido.",
+   "C": "O desvio ulnar isolado não é o componente mecânico mais associado a essa fratura específica.",
+   "D": "O desvio radial isolado também não é o componente mais associado; o mecanismo central envolve a extensão do punho sob carga axial."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 7"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0563": {
+  "conceito": "A classificação de LETTS para as fraturas-luxação da região proximal do antebraço na criança (associação de lesão da ulna proximal com desvio da cabeça do rádio, análoga à lesão de Monteggia) descreve subtipos conforme o grau de lesão óssea da ulna. O tipo B corresponde a uma fratura em galho verde da ulna, associada a desvio anterior da cabeça do rádio.",
+  "correta": "D. O tipo B da classificação de Letts corresponde à fratura em galho verde da ulna com desvio anterior da cabeça do rádio.",
+  "incorretas": {
+   "A": "A fratura completa da ulna com desvio anterior da cabeça do rádio corresponde a outro subtipo da classificação de Letts, mais grave do que o tipo B (fratura em galho verde).",
+   "B": "A fratura completa da ulna com desvio posterior da cabeça do rádio também corresponde a um subtipo diferente, associado a um padrão de desvio posterior, não ao tipo B.",
+   "C": "A deformidade plástica da ulna (sem fratura evidente) corresponde a um subtipo mais leve do que o tipo B, que já envolve uma fratura em galho verde verdadeira."
+  },
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 12.5"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0564": {
+  "conceito": "Como sequela da fratura da cabeça e do colo do rádio em crianças, o movimento mais frequentemente comprometido é a pronação do antebraço. Isso decorre de alterações na congruência articular radiocapitelar e possíveis desvios angulares residuais do colo radial, que interferem mais no arco de rotação necessário para a pronação do que para a supinação.",
+  "correta": "C. O movimento mais frequentemente comprometido como sequela dessa fratura é a pronação.",
+  "incorretas": {
+   "A": "A flexão do cotovelo não é o movimento classicamente mais comprometido como sequela dessa fratura específica, que afeta predominantemente a rotação do antebraço.",
+   "B": "A extensão do cotovelo também não é o movimento mais associado a essa sequela, que acomete principalmente a rotação (pronossupinação).",
+   "D": "A supinação é menos frequentemente comprometida do que a pronação como sequela dessa fratura, ao contrário do que essa alternativa sugere."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 29"
   ],
   "geradoEm": "2026-09-17",
   "conferido": false
