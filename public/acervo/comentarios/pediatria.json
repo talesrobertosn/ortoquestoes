@@ -2278,7 +2278,10 @@
    "C": "O úmero está certo, mas a fíbula precede a tíbia na ordem de frequência."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 14"
+  ]
  },
  "pediatria-0191": {
   "conceito": "A articulação do tornozelo suporta, na fase de apoio da marcha, cerca de CINCO VEZES o peso corporal — e o número sobe muito mais na corrida e no salto. A razão é o braço de alavanca: o tríceps sural precisa gerar uma força muito maior que o peso do corpo para equilibrar o momento do antepé em relação ao eixo do tornozelo, e essa força se soma à carga axial na articulação. Dois dados completam o quadro e explicam por que o tornozelo é tão menos artrósico que joelho e quadril: sua área de contato é pequena (algo em torno de 350 mm²), o que significa pressões altas, mas a cartilagem do tálus é mais fina, mais uniforme e mais resistente à carga cíclica. Por isso a artrose primária do tornozelo é rara — a esmagadora maioria é PÓS-TRAUMÁTICA.",
@@ -2289,7 +2292,10 @@
    "C": "Duas vezes o peso corporal é a ordem de grandeza citada para o QUADRIL na marcha, não para o tornozelo."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 10"
+  ]
  },
  "pediatria-0208": {
   "conceito": "A discrepância de comprimento dos membros inferiores pode ser anatômica ou funcional e deve ser avaliada considerando magnitude, idade, causa e repercussão biomecânica. Discrepâncias pequenas podem ser compensadas por inclinação pélvica, flexão do joelho do membro longo, equino funcional do membro curto ou alterações do comprimento do passo. Na prática ortopédica, cerca de 2 cm é um limiar clássico a partir do qual a diferença passa a ter maior relevância funcional e terapêutica, embora estudos tridimensionais de marcha demonstrem que compensações cinemáticas podem começar com discrepâncias menores. O exame inclui medida real entre espinha ilíaca anterossuperior e maléolo medial, teste dos blocos, avaliação de contraturas e análise do alinhamento. Escanometria, radiografia panorâmica ou métodos equivalentes são utilizados quando é necessária mensuração precisa. Em crianças, o valor atual não basta: é fundamental estimar a discrepância prevista na maturidade para decidir entre observação, compensação no calçado, epifisiodese, encurtamento ou alongamento.",
@@ -3729,6 +3735,147 @@
   },
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 30"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0545": {
+  "conceito": "A fratura metafisária proximal da tíbia na criança pequena (fratura de COZEN) costuma evoluir, meses após a consolidação, com deformidade tardia em valgo — mesmo quando a redução inicial foi considerada adequada. Uma das explicações propostas para esse fenômeno é a interposição parcial dos tendões da pata de ganso (sartório, grácil e semitendíneo) na linha de fratura medial, que impede o assentamento completo da cortical medial e favorece o crescimento assimétrico responsável pelo valgo progressivo.",
+  "correta": "D. A direção do desvio tardio é o valgo, e a estrutura anatômica interposta mais frequentemente observada é a pata de ganso.",
+  "incorretas": {
+   "A": "O desvio tardio característico dessa fratura é o valgo, não o varo, e a estrutura interposta descrita não é o trato iliotibial (estrutura lateral).",
+   "B": "O trato iliotibial é uma estrutura lateral, sem relação com a interposição medial classicamente descrita nessa fratura.",
+   "C": "O desvio tardio característico dessa fratura é o valgo, não o varo."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 36"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0546": {
+  "conceito": "A fratura juvenil de TILLAUX ocorre em adolescentes próximos do fechamento fisário, quando a porção medial da fise distal da tíbia já está fechada e apenas a porção lateral permanece aberta. O ligamento tibiofibular anterior avulsiona um fragmento da epífise anterolateral, configurando uma fratura Salter-Harris tipo III, intra-articular e restrita à epífise.",
+  "correta": "A. A fratura de Tillaux é classificada como Salter-Harris tipo III e envolve a região anterolateral da tíbia distal.",
+  "incorretas": {
+   "B": "A localização posterolateral não corresponde ao padrão da fratura de Tillaux, que ocorre no quadrante anterolateral, tracionado pelo ligamento tibiofibular anterior.",
+   "C": "O tipo IV atravessaria tanto a epífise quanto a metáfise, padrão diferente da fratura de Tillaux, restrita à epífise (tipo III).",
+   "D": "Além do erro na classificação (tipo IV em vez de III), a localização posterolateral não corresponde ao padrão característico dessa fratura."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 29"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0547": {
+  "conceito": "Na luxação traumática do cotovelo em crianças, as lesões nervosas mais comuns envolvem o nervo ulnar. A lesão do nervo radial nesse contexto é rara, e quando ocorre, geralmente se trata de uma neuropraxia transitória por estiramento durante o episódio de luxação, com bom prognóstico e resolução espontânea dos sintomas após a redução da articulação.",
+  "correta": "A. A lesão do nervo radial na luxação do cotovelo da criança é rara, e os sintomas usualmente resolvem após a redução.",
+  "incorretas": {
+   "B": "Embora rara, quando ocorre a lesão do nervo radial nesse contexto, o prognóstico costuma ser favorável, com resolução dos sintomas após a redução, não a persistência deles.",
+   "C": "A lesão do nervo radial na luxação do cotovelo da criança não é frequente; a lesão mais comumente descrita nesse contexto envolve o nervo ulnar.",
+   "D": "Além de não ser frequente, quando a lesão do nervo radial ocorre, os sintomas usualmente resolvem após a redução, e não persistem."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 15"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0548": {
+  "conceito": "A classificação de TORODE e ZIEG para as fraturas pélvicas em crianças divide as lesões em quatro tipos: tipo I (fraturas por avulsão), tipo II (fraturas da asa do ilíaco), tipo III (fraturas simples do anel pélvico) e tipo IV (fraturas com disrupção do anel pélvico). Os tipos I, II e III são considerados estáveis; apenas o tipo IV é considerado instável.",
+  "correta": "B. As fraturas da asa do ilíaco em crianças são classificadas, conforme Torode e Zieg, como estáveis, tipo II.",
+  "incorretas": {
+   "A": "O tipo I corresponde às fraturas por avulsão, não às fraturas da asa do ilíaco.",
+   "C": "As fraturas da asa do ilíaco (tipo II) são consideradas estáveis, não instáveis, na classificação de Torode e Zieg.",
+   "D": "Apenas o tipo IV (disrupção do anel pélvico) é considerado instável nessa classificação; as fraturas da asa do ilíaco correspondem ao tipo II, estável."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 22"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0549": {
+  "conceito": "A fratura em galho verde da metáfise proximal da tíbia em crianças (fratura de COZEN) decorre tipicamente de uma força aplicada em valgo sobre o joelho. Como se trata de uma fratura incompleta, o lado sob tensão (convexo, lateral) rompe a cortical, enquanto o lado sob compressão (côncavo, medial) permanece intacto, angulado plasticamente — configurando o padrão característico dessa lesão.",
+  "correta": "C. A fratura usualmente é secundária à força aplicada em valgo, com fratura em tensão da cortical lateral.",
+  "incorretas": {
+   "A": "O mecanismo dessa fratura é o valgo, não o varo, e a cortical sob tensão corresponde ao lado convexo da angulação, não necessariamente a lateral no contexto do varo.",
+   "B": "O mecanismo dessa fratura é o valgo, não o varo.",
+   "D": "No mecanismo em valgo, a cortical sob tensão (que rompe) é a lateral (convexa), e não a medial, que fica sob compressão e permanece intacta."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 28"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0550": {
+  "conceito": "As fraturas do terço lateral da clavícula em crianças costumam ser, na verdade, lesões do tipo pseudo-luxação: o periósteo espesso permanece parcialmente intacto mesmo com deslocamento significativo do fragmento ósseo. A indicação cirúrgica mais frequente nessas fraturas surge quando há grande deslocamento com risco de exposição da fratura (tenting da pele), situação em que a fixação evita a conversão para uma fratura exposta.",
+  "correta": "A. A indicação cirúrgica mais frequente na fratura do terço lateral da clavícula na criança é a exposição da fratura (risco de perfuração da pele).",
+  "incorretas": {
+   "B": "O comprometimento vascular é uma indicação cirúrgica rara nas fraturas de clavícula em crianças, mais associada a fraturas do terço medial com deslocamento posterior grave.",
+   "C": "O desvio posterior significativo é mais característico e mais perigoso nas fraturas do terço medial (posteriores ao esterno), não do terço lateral.",
+   "D": "O comprometimento neurológico é uma complicação rara nas fraturas de clavícula em crianças, sobretudo nas do terço lateral."
+  },
+  "alerta": "A indicação cirúrgica mais frequente especificamente para fraturas do terço lateral da clavícula em crianças não é um ponto que eu tenha visto descrito de forma extremamente uniforme entre diferentes fontes — a maior parte da literatura pediátrica enfatiza o tratamento conservador dessas fraturas na infância, reservando a cirurgia para casos excepcionais. Mantive a alternativa A como a mais plausível com base no raciocínio de risco de exposição por tenting cutâneo, mas vale confirmar esse detalhe específico em fonte primária antes de memorizá-lo com confiança total.",
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 19"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0551": {
+  "conceito": "O cúbito varo pós-fratura supracondiliana do úmero na criança não decorre de um distúrbio de crescimento fisário (a fise distal do úmero raramente é lesada nesse tipo de fratura extra-articular), mas sim de uma consolidação viciosa: o fragmento distal permanece desviado em varo (e frequentemente com rotação interna associada) no momento da consolidação, resultando na deformidade característica — um problema mecânico de redução, não de crescimento.",
+  "correta": "A. A deformidade em cúbito varo é mais comumente relacionada à consolidação viciosa da fratura.",
+  "incorretas": {
+   "B": "A fise distal do úmero raramente é acometida diretamente nas fraturas supracondilianas, que são extra-articulares e proximais à fise, tornando o fechamento fisário medial um mecanismo pouco provável.",
+   "C": "O hipercrescimento da fise lateral não é o mecanismo classicamente descrito para essa deformidade, que é essencialmente de origem mecânica (consolidação viciosa), não de crescimento.",
+   "D": "O fechamento simultâneo das fises lateral e medial não é o mecanismo relacionado a essa deformidade nas fraturas supracondilianas, que poupam a fise na maioria dos casos."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 13"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0552": {
+  "conceito": "Na fratura do côndilo femoral medial tipo III de Salter-Harris, a força em valgo aplicada sobre o joelho tensiona o ligamento colateral tibial (medial), cuja origem femoral se insere próxima à fise do côndilo medial. Essa tração exercida pelo ligamento sobre sua inserção óssea, ainda cartilaginosa na criança, é a estrutura responsável por transmitir a força que produz a fratura epifisária.",
+  "correta": "B. O ligamento colateral tibial transmite a força em valgo que produz essa fratura, por tracionar sua inserção femoral próxima à fise do côndilo medial.",
+  "incorretas": {
+   "A": "O menisco medial não transmite forças de tração capazes de fraturar a epífise femoral; seu papel é de absorção e distribuição de carga articular, não de tração ligamentar.",
+   "C": "O ligamento cruzado posterior tem trajeto e função voltados à estabilidade anteroposterior do joelho, sem relação direta com a transmissão de forças em valgo sobre o côndilo medial.",
+   "D": "O músculo semimembranáceo contribui para a estabilidade posteromedial dinâmica do joelho, mas não é a estrutura classicamente descrita como responsável por essa fratura fisária específica."
+  },
+  "referencias": [
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn) — Cap. 33"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0553": {
+  "conceito": "Na avaliação por ressonância magnética da osteocondrite dissecante juvenil do joelho, o critério mais específico de instabilidade do fragmento é a presença de uma linha de hipersinal em T2 na interface entre o fragmento osteocondral e o osso subcondral adjacente — sinal que indica a presença de líquido ou tecido de granulação nessa interface, sugerindo que o fragmento não está firmemente aderido ao leito ósseo.",
+  "correta": "D. O hipersinal em T2 entre a lesão e o osso subcondral adjacente é o sinal que implica instabilidade do fragmento.",
+  "incorretas": {
+   "A": "O edema ósseo no próprio fragmento osteocondral é um achado inespecífico, presente também em lesões estáveis, sem o mesmo valor preditivo de instabilidade.",
+   "B": "A perda de continuidade da superfície articular pode ocorrer mesmo em lesões estáveis do esqueleto imaturo, sendo um achado menos específico do que o hipersinal na interface.",
+   "C": "O edema no osso subcondral adjacente, isoladamente, é um achado inespecífico de resposta óssea, sem a mesma especificidade do hipersinal na interface fragmento-osso."
+  },
+  "referencias": [
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn) — Cap. 30"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0554": {
+  "conceito": "As fraturas da região distal do rádio são as mais comuns na infância. Estudos epidemiológicos mostram maior incidência no sexo masculino, atribuída a maior exposição a atividades físicas de risco, e no lado dominante, provavelmente por ser o membro mais utilizado para amortecer quedas e por maior exposição a atividades esportivas e recreativas nesse lado.",
+  "correta": "B. A fratura da região distal do rádio na infância é mais comum no sexo masculino e no lado dominante.",
+  "incorretas": {
+   "A": "O sexo feminino não é o predominante nessa fratura, que é mais comum em meninos.",
+   "C": "Embora o sexo feminino seja incorreto, o lado não dominante também não é o mais afetado; o lado dominante é o mais frequentemente acometido.",
+   "D": "O sexo masculino está correto, mas o lado mais frequentemente acometido é o dominante, não o não dominante."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 8"
   ],
   "geradoEm": "2026-09-17",
   "conferido": false

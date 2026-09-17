@@ -4680,8 +4680,8 @@
       "subtemas": [
         "Infecções da coluna"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "No abscesso epidural vertebral, o tratamento cirúrgico é preferencial quando localizado na região",
       "imagens": [],
@@ -4723,8 +4723,8 @@
       "subtemas": [
         "Lombalgia"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "Na lombalgia por síndrome facetária, a anestesia para avaliar o nível L4-L5 deve ser realizada com bloqueio",
       "imagens": [],
@@ -4767,8 +4767,8 @@
         "Escoliose",
         "Radiologia da coluna"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "No estudo radiográfico da escoliose idiopática, o método de NASH-MOE avalia",
       "imagens": [],
@@ -4810,8 +4810,8 @@
       "subtemas": [
         "Exame Físico"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "Na semiologia da coluna, as referências anatômicas do mamilo, processo xifoide e cicatriz umbilical correspondem respectivamente aos dermátomos",
       "imagens": [],
@@ -4854,8 +4854,8 @@
         "Radiologia da coluna",
         "Espondilolistese"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "Na avaliação radiográfica da espondilolistese, a imagem a seguir demonstra o método de mensuração",
       "imagens": [
@@ -4949,8 +4949,8 @@
       "subtemas": [
         "Trauma Raquimedular e Síndromes Medulares"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "Na lesão medular incompleta caracterizada por tetraparesia que acomete mais os membros superiores que os inferiores, o tipo, mecanismo e a faixa etária mais comuns são",
       "imagens": [],
@@ -4994,8 +4994,8 @@
         "Fratura da Coluna Toracolombosacra",
         "Neoplasias"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "No diagnóstico diferencial da fratura por insuficiência benigna da coluna com a fratura metastática, uma alteração na ressonância magnética que evidencia a favor da benigna é a presença de",
       "imagens": [],
@@ -13136,6 +13136,136 @@
         "arquivo": "TARO-2025-publicar.pdf",
         "pagina": 50,
         "numeroOriginal": 50
+      }
+    },
+    {
+      "id": "coluna-0297",
+      "tema": "Coluna",
+      "subtemas": [
+        "Trauma da Coluna"
+      ],
+      "prova": "TARO",
+      "ano": 2023,
+      "dificuldade": null,
+      "enunciado": "Na coluna cervical baixa, a fratura tipo teardrop tem como mecanismo",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "flexão-distração."
+        },
+        {
+          "letra": "B",
+          "texto": "flexão-compressão."
+        },
+        {
+          "letra": "C",
+          "texto": "extensão-distração."
+        },
+        {
+          "letra": "D",
+          "texto": "extensão-compressão."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2023-publicar.pdf",
+        "pagina": 22,
+        "numeroOriginal": 22
+      }
+    },
+    {
+      "id": "coluna-0298",
+      "tema": "Coluna",
+      "subtemas": [
+        "Trauma da Coluna"
+      ],
+      "prova": "TARO",
+      "ano": 2023,
+      "dificuldade": null,
+      "enunciado": "No trauma toracolombar, o tipo de fratura mais associado a lesões abdominais é a",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "de CHANCE."
+        },
+        {
+          "letra": "B",
+          "texto": "por explosão."
+        },
+        {
+          "letra": "C",
+          "texto": "fratura-luxação."
+        },
+        {
+          "letra": "D",
+          "texto": "por hiperextensão."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2023-publicar.pdf",
+        "pagina": 73,
+        "numeroOriginal": 73
+      }
+    },
+    {
+      "id": "coluna-0299",
+      "tema": "Coluna",
+      "subtemas": [
+        "Trauma da Coluna",
+        "Ortopedia pediátrica"
+      ],
+      "prova": "TARO",
+      "ano": 2023,
+      "dificuldade": null,
+      "enunciado": "No diagnóstico diferencial das fraturas do atlas na criança, pode se confundir como traço de fratura a não fusão das conexões entre os arcos anterior e posterior, fusão esta que ocorre geralmente na idade de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "7 anos."
+        },
+        {
+          "letra": "B",
+          "texto": "9 anos."
+        },
+        {
+          "letra": "C",
+          "texto": "11 anos."
+        },
+        {
+          "letra": "D",
+          "texto": "13 anos."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2023-publicar.pdf",
+        "pagina": 74,
+        "numeroOriginal": 74
       }
     }
   ]
