@@ -23,6 +23,10 @@
   --acerto-veu: #e8f3ec;
   --erro: #b3423a;
   --erro-veu: #f8ebea;
+  /* Aviso: severidade intermediária fora do contexto de resposta (carga alta
+     no calendário, ações destrutivas como zerar progresso). */
+  --aviso: #9a6b12;
+  --aviso-veu: #f6ecd9;
 
   /* Papéis */
   --fundo: var(--porcelana);
@@ -67,6 +71,8 @@
   --acerto-veu: #14291f;
   --erro: #e8776c;
   --erro-veu: #2c1a18;
+  --aviso: #e0b15c;
+  --aviso-veu: #362c17;
 
   --sobre-destaque: #0f1413;
   --sombra: none;

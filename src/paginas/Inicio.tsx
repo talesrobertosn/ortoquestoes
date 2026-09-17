@@ -6,12 +6,14 @@ import { FILTROS_VAZIOS } from '../dados/tipos'
 import { filtrosParaConsulta, href, navegar } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
+import { ModalEntrar } from '../componentes/ModalEntrar'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
 import { planoRevisao } from '../estado/planoRevisao'
+import { SITE } from '../config'
 
 // A maior parte do acervo ainda não distingue TEOT de TARO (prova genérica
 // "TEOT/TARO"); enquanto isso não é resolvido, as três provas são somadas
@@ -64,6 +66,7 @@ export function Inicio() {
   const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
   const [textoDoDia] = useState(() => VARIACOES_INICIO[Math.floor(Math.random() * VARIACOES_INICIO.length)])
   const [cabecalhoDoDia] = useState(() => VARIACOES_CABECALHO[Math.floor(Math.random() * VARIACOES_CABECALHO.length)])
+  const [modalEntrarAberto, definirModalEntrarAberto] = useState(false)
 
   const maiorTema = contagens
     ? Math.max(1, ...Object.values(contagens.porTema))
@@ -190,14 +193,25 @@ export function Inicio() {
               <span className="acao-rapida__titulo">Desempenho</span>
               <span className="acao-rapida__nota">Acompanhe sua evolução ao longo do tempo</span>
             </a>
-            <a className="acao-rapida acao-rapida--destaque" href={href('/conta')}>
-              <Icone nome="usuario" tamanho={26} />
-              <span className="acao-rapida__titulo">{conta ? 'Minha conta' : 'Criar minha conta'}</span>
-              <span className="acao-rapida__nota">
-                {conta ? 'Perfil, sincronização e preferências' : 'Salve seu progresso e acesse de qualquer dispositivo'}
-              </span>
-            </a>
+            {conta ? (
+              <a className="acao-rapida acao-rapida--destaque" href={href('/conta')}>
+                <Icone nome="usuario" tamanho={26} />
+                <span className="acao-rapida__titulo">Minha conta</span>
+                <span className="acao-rapida__nota">Perfil, sincronização e preferências</span>
+              </a>
+            ) : (
+              <div className="acao-rapida acao-rapida--destaque acao-rapida--conta">
+                <Icone nome="usuario" tamanho={26} />
+                <span className="acao-rapida__titulo">Comece agora</span>
+                <span className="acao-rapida__nota">Salve seu progresso e acesse de qualquer dispositivo</span>
+                <div className="acao-rapida__botoes">
+                  <a className="botao botao--principal" href={href('/conta?modo=criar')}>Criar conta</a>
+                  <button type="button" className="botao botao--fantasma" onClick={() => definirModalEntrarAberto(true)}>Já tenho conta · Entrar</button>
+                </div>
+              </div>
+            )}
           </nav>
+          <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
 
           <section className="painel-diario" aria-label="Seu estudo de hoje">
             <div className="painel-diario__intro">
@@ -272,6 +286,17 @@ export function Inicio() {
                   )
                 })}
             </ul>
+          </section>
+
+          <section className="cartao cartao__corpo cartao-instagram">
+            <span className="cartao-instagram__icone"><Icone nome="instagram" tamanho={26} /></span>
+            <div className="cartao-instagram__texto">
+              <h2>Acompanhe no Instagram</h2>
+              <p className="texto-2">Questão comentada, avisos de acervo novo e os bastidores do projeto.</p>
+            </div>
+            <a className="botao botao--principal" href={SITE.instagram} target="_blank" rel="noopener noreferrer me">
+              Seguir @{SITE.instagramUsuario}
+            </a>
           </section>
 
           {temaFragil && <section className="cartao cartao__corpo">

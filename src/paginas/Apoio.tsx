@@ -2,6 +2,7 @@ import { usarConta } from '../conta/ContextoConta'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { BackupProgresso } from '../componentes/BackupProgresso'
+import { Icone } from '../componentes/Icone'
 import { useMemo, useState } from 'react'
 import { SITE, recurso } from '../config'
 import { href } from '../util/rotas'
@@ -57,14 +58,20 @@ export function Sobre() {
       <h2>O acervo</h2>
       <p>
         As questões são originais das provas, transcritas dos PDFs sem reescrita, sem resumo e sem
-        correção do enunciado. O gabarito vem da própria prova. Questões anuladas ficam marcadas
-        como anuladas e não entram no cálculo de desempenho.
+        correção do enunciado. O gabarito vem da própria prova, ou — quando a banca não publica um
+        gabarito oficial, como costuma ocorrer no TARO — de uma resposta justificada e sinalizada
+        como tal. Questões anuladas ficam marcadas como anuladas e não entram no cálculo de
+        desempenho.
       </p>
       <p>
         Os assuntos cobrem o programa inteiro da especialidade: mão e punho, ombro e cotovelo,
         quadril, joelho, pé e tornozelo, coluna, trauma e fraturas, tumores ósseos, ortopedia
         pediátrica, doenças osteometabólicas e conceitos básicos (biomateriais, infecção,
-        consolidação óssea, metodologia científica). A identificação individual de prova e ano ainda está em conferência. Os filtros por prova, ano e dificuldade só aparecem quando há dados disponíveis. Você já pode escolher assuntos e revisar as questões que errou.
+        consolidação óssea, metodologia científica). Provas recentes de TEOT, TARO e ENARE R4 já
+        têm prova e ano identificados questão a questão; o restante do acervo, formado a partir de
+        cadernos mais antigos, está sendo conferido e identificado aos poucos. Os filtros por
+        prova, ano e dificuldade aparecem conforme esses dados vão ficando disponíveis — mas você
+        já pode escolher por assunto e revisar o que errou desde já.
       </p>
 
       <p>
@@ -72,24 +79,21 @@ export function Sobre() {
         em páginas abertas que podem ser lidas e compartilhadas sem entrar no site.
       </p>
 
+      <h2>Como funciona hoje</h2>
       <p>
-        O acervo é comentado aos poucos, e o andamento é público: a{' '}
-        <a href={href('/progresso')}>página de progresso</a> mostra quanto já tem comentário de IA
-        e quanto já tem comentário da comunidade, tema por tema.
-      </p>
-
-      <h2>Como funciona hoje, e o que vem depois</h2>
-      <p>
-        Hoje o site é aberto e o acervo inteiro está disponível para responder. No futuro pretendo
-        cobrar uma taxa pequena para manter o projeto de pé, preservando um uso diário livre — a
-        ideia é que ninguém fique sem estudar por causa disso. Quando isso mudar, será avisado
-        aqui, com antecedência.
+        O acervo inteiro está disponível para responder, e continua gratuito. Criar uma conta é
+        necessário para começar: é o que garante que suas respostas, revisões e desempenho fiquem
+        guardados com segurança e acompanhem você em qualquer aparelho, e não apenas neste
+        navegador. No futuro pretendo cobrar uma taxa pequena para manter o projeto de pé,
+        preservando um uso diário livre — a ideia é que ninguém fique sem estudar por causa disso.
+        Quando isso mudar, será avisado aqui, com antecedência.
       </p>
 
       <h2>Seus dados</h2>
       <p>
-        Sem conta, nada do seu progresso é guardado depois que você fecha a página. Ao entrar, respostas, revisões, favoritas, anotações e histórico podem ser sincronizados pelo Supabase, com acesso restrito ao titular da conta. Você pode exportar ou apagar seu progresso na página de{' '}
-        <a href={href('/dados')}>dados locais</a>.
+        Respostas, revisões, favoritas, anotações e histórico ficam associados à sua conta e são
+        sincronizados pelo Supabase, com acesso restrito ao titular. Você pode exportar ou apagar
+        seu progresso a qualquer momento na página de <a href={href('/dados')}>desempenho</a>.
       </p>
 
       <h2>Erros</h2>
@@ -110,19 +114,14 @@ export function Sobre() {
       </p>
 
       <div className="linha linha--empilha-celular">
-        <a className="botao botao--principal" href={href('/treinar')}>
+        <a className="botao botao--principal" href={href('/conta?modo=criar')}>
+          Criar minha conta
+        </a>
+        <a className="botao" href={href('/treinar')}>
           Montar uma sessão
         </a>
         <a className="botao" href={href('/contato')}>
           Falar com o autor
-        </a>
-        <a
-          className="botao"
-          href={SITE.instagram}
-          target="_blank"
-          rel="noopener noreferrer me"
-        >
-          Seguir no Instagram
         </a>
       </div>
 
@@ -263,7 +262,15 @@ export function DadosLocais() {
         </p>
         {nome && <p className="heroi__nota">{mensagemDesempenho}</p>}
         {!conta && <p className="aviso-ia">Crie uma conta gratuita para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
-        {conta && <div className="linha" style={{ marginTop: '0.75rem' }}><button className="botao" type="button" onClick={sincronizar} disabled={statusSync.estado === 'sincronizando'}>{statusSync.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar progresso'}</button><span className="meta" role="status">{statusSync.estado === 'salvo' ? 'Tudo atualizado entre seus dispositivos.' : statusSync.pendentes ? `${statusSync.pendentes} alteração(ões) aguardando envio.` : ''}</span></div>}
+        {conta && (
+          <p className="meta status-sincronia" role="status" style={{ marginTop: '0.75rem' }}>
+            <span className={`ponto-sincronia ponto-sincronia--${statusSync.estado}`} aria-hidden="true" />
+            {statusSync.estado === 'sincronizando' ? 'Sincronizando…' : statusSync.estado === 'salvo' ? 'Progresso sincronizado' : statusSync.pendentes ? `${statusSync.pendentes} alteração(ões) aguardando envio` : 'Progresso salvo neste dispositivo'}
+            {statusSync.estado !== 'sincronizando' && (
+              <button type="button" className="botao--vinculo" onClick={sincronizar}>sincronizar agora</button>
+            )}
+          </p>
+        )}
       </header>
 
       {conta && !armazenamentoDisponivel() && (
@@ -276,36 +283,34 @@ export function DadosLocais() {
         </div>
       )}
 
-      <div className="numeros">
-        <div className="numeros__celula">
-          <span className="numeros__valor">
-            {totalContadas > 0 ? `${Math.round((totalCertas / totalContadas) * 100)}%` : '—'}
-          </span>
-          <span className="numeros__rotulo">de acerto no total</span>
+      <section className="cartao cartao__corpo">
+        <p className="meta">RESUMO GERAL</p>
+        <div className="numeros numeros--destaque">
+          <div className="numeros__celula">
+            <span className="numeros__valor">
+              {totalContadas > 0 ? `${Math.round((totalCertas / totalContadas) * 100)}%` : '—'}
+            </span>
+            <span className="numeros__rotulo">de acerto no total</span>
+          </div>
+          <div className="numeros__celula">
+            <span className="numeros__valor">{respondidas}</span>
+            <span className="numeros__rotulo">questões respondidas</span>
+          </div>
+          <div className="numeros__celula">
+            <span className="numeros__valor">{historico.length}</span>
+            <span className="numeros__rotulo">sessões concluídas</span>
+          </div>
         </div>
-        <div className="numeros__celula">
-          <span className="numeros__valor">{respondidas}</span>
-          <span className="numeros__rotulo">questões respondidas</span>
+        <div className="numeros-apoio">
+          <span>{errosTotais} {errosTotais === 1 ? 'erro acumulado' : 'erros acumulados'}</span>
+          <a href={href('/favoritas')}>{favoritos.length} {favoritos.length === 1 ? 'favorita' : 'favoritas'}</a>
         </div>
-        <div className="numeros__celula">
-          <span className="numeros__valor">{errosTotais}</span>
-          <span className="numeros__rotulo">erros acumulados</span>
-        </div>
-        <div className="numeros__celula">
-          <span className="numeros__valor">{historico.length}</span>
-          <span className="numeros__rotulo">sessões concluídas</span>
-        </div>
-        <div className="numeros__celula">
-          <span className="numeros__valor">{favoritos.length}</span>
-          <span className="numeros__rotulo">
-            <a href={href('/favoritas')}>favoritas</a>
-          </span>
-        </div>
-      </div>
+      </section>
 
-      {(porConfianca.seguro.total > 0 || porConfianca.duvida.total > 0 || porConfianca.chute.total > 0) && <section>
-        <h2>Acerto por confiança</h2>
-        <p className="texto-2" style={{ marginTop: '0.25rem' }}>Mostra se sua sensação ao responder acompanha o resultado. Use isso para identificar quando vale revisar mesmo depois de acertar. Cada faixa também tem um ciclo próprio: chute volta em 1 dia, dúvida em 2, certeza em 3 — <a href={href('/revisao')}>veja a escada completa</a>.</p>
+      {(porConfianca.seguro.total > 0 || porConfianca.duvida.total > 0 || porConfianca.chute.total > 0) && <section className="cartao cartao__corpo">
+        <p className="meta">ACERTO POR CONFIANÇA</p>
+        <h2>Sua sensação combina com o resultado?</h2>
+        <p className="texto-2" style={{ marginTop: '0.25rem' }}>Use isso para identificar quando vale revisar mesmo depois de acertar. Cada faixa também tem um ciclo próprio: chute volta em 1 dia, dúvida em 2, certeza em 3 — <a href={href('/revisao')}>veja a escada completa</a>.</p>
         <div className="numeros" style={{ marginTop: '0.75rem' }}>
           {([['seguro', 'Quando tinha certeza'], ['duvida', 'Quando tinha dúvida'], ['chute', 'Quando foi chute']] as const).map(([tipo, rotulo]) => {
             const grupo = porConfianca[tipo]
@@ -360,25 +365,28 @@ export function DadosLocais() {
 
       <BackupProgresso />
 
-      {conta && <><h2>Começar do zero</h2>
-      <p>Zera respostas, revisões, favoritas, anotações, histórico e sessão em andamento. Sua conta e preferências são mantidas. Os registros anteriores ficam fora do progresso ativo, sem exclusão definitiva do banco. Exporte um backup antes se quiser guardar uma cópia.</p>
-      <div className="linha">
-        <button
-          type="button"
-          className="botao"
-          disabled={!!reinicioPendente}
-          onClick={() => {
-            if (window.confirm('Começar do zero nesta conta? Respostas, revisões, favoritas, anotações e histórico deixarão de contar. O reinício será sincronizado com seus outros dispositivos.')) {
-              reiniciarProgresso()
-              definirApagado(true)
-            }
-          }}
-        >
-          {reinicioPendente ? 'Sincronizando reinício…' : 'Zerar meu progresso'}
-        </button>
+      {conta && <section className="zona-risco cartao__corpo empilha">
+        <p className="meta"><Icone nome="alerta" tamanho={15} /> ZONA DE RISCO</p>
+        <h2>Começar do zero</h2>
+        <p className="texto-2">Zera respostas, revisões, favoritas, anotações, histórico e sessão em andamento. Sua conta e preferências são mantidas. Os registros anteriores ficam fora do progresso ativo, sem exclusão definitiva do banco. Exporte um backup antes se quiser guardar uma cópia.</p>
+        <div className="linha">
+          <button
+            type="button"
+            className="botao botao--perigo"
+            disabled={!!reinicioPendente}
+            onClick={() => {
+              if (window.confirm('Começar do zero nesta conta? Respostas, revisões, favoritas, anotações e histórico deixarão de contar. O reinício será sincronizado com seus outros dispositivos.')) {
+                reiniciarProgresso()
+                definirApagado(true)
+              }
+            }}
+          >
+            {reinicioPendente ? 'Sincronizando reinício…' : 'Zerar meu progresso'}
+          </button>
+          {reinicioPendente && <button type="button" className="botao botao--fantasma" onClick={sincronizar}>Tentar sincronizar agora</button>}
+        </div>
         {(apagado || reinicioPendente) && <span className="meta" role="status">{reinicioPendente ? 'Progresso zerado neste navegador. O reinício na conta está pendente de sincronização; você já pode estudar.' : 'Reinício sincronizado. Seu novo progresso já está valendo.'}</span>}
-        {reinicioPendente && <button type="button" className="botao" onClick={sincronizar}>Tentar sincronizar agora</button>}
-      </div></>}
+      </section>}
     </article>
   )
 }

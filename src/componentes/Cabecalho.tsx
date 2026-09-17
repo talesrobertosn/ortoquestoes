@@ -1,36 +1,50 @@
 import { contasDisponiveis } from '../conta/supabase'
+import { usarConta } from '../conta/ContextoConta'
 import { MarcaHorizontal } from '../marca/Simbolo'
 import { usarTema } from '../estado/tema'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
 
 const LINKS = [
-  { destino: '/treinar', rotulo: 'Treinar', secundario: false },
-  { destino: '/revisao', rotulo: 'Revisão', secundario: false },
-  { destino: '/dados', rotulo: 'Desempenho', secundario: true },
+  { destino: '/treinar', rotulo: 'Treinar' },
+  { destino: '/revisao', rotulo: 'Revisão' },
+  { destino: '/dados', rotulo: 'Desempenho' },
 ]
 
 export function Cabecalho({ caminho }: { caminho: string }) {
   const { alternar } = usarTema()
+  const { sessao } = usarConta()
+  const inicial = String(sessao?.user.user_metadata?.nome ?? '').trim().charAt(0).toUpperCase()
 
   return (
     <header className="cabecalho nao-imprime">
       <div className="conteudo cabecalho__interno">
         <a className="cabecalho__marca" href={href('/')} aria-label="OrtoQuestões, página inicial">
-          <MarcaHorizontal altura={24} />
+          <span className="cabecalho__selo"><MarcaHorizontal altura={22} /></span>
         </a>
-        <nav className="cabecalho__nav" aria-label="Principal">
+        <nav className="cabecalho__nav cabecalho__nav-principal" aria-label="Principal">
           {LINKS.map((link) => (
             <a
               key={link.destino}
-              className={'nav-link' + (link.secundario ? ' nav-link--secundario' : '')}
+              className="nav-link"
               href={href(link.destino)}
               aria-current={caminho.startsWith(link.destino) ? 'page' : undefined}
             >
               {link.rotulo}
             </a>
           ))}
-          {contasDisponiveis && <a className="nav-link" href={href('/conta')} aria-current={caminho === '/conta' ? 'page' : undefined}>Minha conta</a>}
+        </nav>
+        <div className="cabecalho__acoes">
+          {contasDisponiveis && (
+            <a
+              className={'nav-link nav-link--conta' + (sessao ? ' nav-link--logado' : '')}
+              href={href('/conta')}
+              aria-current={caminho === '/conta' ? 'page' : undefined}
+            >
+              {sessao ? <span className="avatar-mini" aria-hidden="true">{inicial || <Icone nome="usuario" tamanho={15} />}</span> : <Icone nome="usuario" tamanho={17} />}
+              <span className="cabecalho__rotulo-conta">{sessao ? 'Minha conta' : 'Entrar'}</span>
+            </a>
+          )}
           <button
             type="button"
             className="botao-icone"
@@ -41,7 +55,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
             <span className="so-impressao" />
             <TemaIcone />
           </button>
-        </nav>
+        </div>
       </div>
     </header>
   )

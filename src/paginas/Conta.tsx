@@ -8,21 +8,16 @@ import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { usarIndice } from '../dados/usarIndice'
 import { planoRevisao } from '../estado/planoRevisao'
 import { usarArmazenado } from '../estado/usarArmazenado'
-import { usarLeitura } from '../estado/preferencias'
+import { usarLeitura, usarEtiquetas } from '../estado/preferencias'
+import { usarTema } from '../estado/tema'
 import { dadosAceiteTermos } from '../conta/termos'
+import { textoErro } from '../conta/erros'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
   erro: 'Não foi possível sincronizar agora. Seu progresso continua neste navegador; tente novamente.', conflito: 'Há alterações simultâneas para conferir abaixo.',
 }
 const ROTULOS_TIPO = { respondidas: 'Resposta', notas: 'Anotação', favoritos: 'Favorita', historico: 'Sessão' }
-function textoErro(codigo?: string) {
-  if (codigo === 'invalid_credentials') return 'E-mail ou senha incorretos.'
-  if (codigo === 'email_not_confirmed') return 'Confirme seu e-mail antes de entrar. Você pode reenviar a confirmação abaixo.'
-  if (codigo === 'weak_password') return 'Use uma senha mais forte, com pelo menos 8 caracteres.'
-  if (codigo?.includes('rate_limit') || codigo?.includes('over_')) return 'Muitas tentativas. Aguarde alguns minutos antes de tentar novamente.'
-  return 'Não foi possível concluir. Confira os dados e sua conexão e tente novamente.'
-}
 export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const { sessao, recuperacao, encerrarRecuperacao, status, sincronizar, resolver } = usarConta()
   const modoInicial = consulta?.get('modo')
@@ -44,6 +39,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const { indice } = usarIndice()
   const [metaDiaria, definirMetaDiaria] = usarArmazenado<number>('meta-diaria-revisao', 10)
   const { densidade, definirDensidade, fonte, definirFonte } = usarLeitura()
+  const { mostrarEtiquetas, definirEtiquetas } = usarEtiquetas()
+  const { tema, trocar: trocarTema } = usarTema()
   const perfil = sessao?.user.user_metadata ?? {}
   const [nome, definirNome] = useState(String(perfil.nome ?? ''))
   const [sobrenome, definirSobrenome] = useState(String(perfil.sobrenome ?? ''))
@@ -69,6 +66,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   }
   function perfilCompleto() {
     if (nome.trim().length < 2) { definirMensagem('Informe seu nome.'); return false }
+    if (sobrenome.trim().length < 2) { definirMensagem('Informe seu sobrenome.'); return false }
     if (!nascimento || new Date(`${nascimento}T12:00:00`).getTime() > Date.now()) { definirMensagem('Informe uma data de nascimento válida.'); return false }
     if (!situacao) { definirMensagem('Informe sua etapa profissional.'); return false }
     if (servico.trim().length < 2) { definirMensagem('Informe o serviço onde você atua ou faz residência.'); return false }
@@ -150,13 +148,14 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     return { respondidas: registros.length, acerto: tentativas ? Math.round((acertos / tentativas) * 100) : null, pendentes }
   })() : null
   return <article className="limite-leitura empilha-2 conta-pagina">
-    <header><p className="meta">SEU ESTUDO, EM QUALQUER DISPOSITIVO</p><h1>{sessao ? 'Minha conta' : 'Entre para guardar seu progresso'}</h1><p>O OrtoQuestões continua 100% gratuito, sem limite diário. Criar uma conta é opcional.</p></header>
+    <header><p className="meta">SEU ESTUDO, EM QUALQUER DISPOSITIVO</p><h1>{sessao ? 'Minha conta' : 'Entre para guardar seu progresso'}</h1><p>O OrtoQuestões continua 100% gratuito, sem limite diário.</p></header>
+    {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
     {sessao && !recuperacao ? <>
       <section className="cartao cartao__corpo empilha">
         <h2>{sessao.user.email}</h2><p>Respostas, revisões, favoritas, anotações e histórico ficam associados à sua conta. A sessão em andamento fica neste dispositivo.</p>
         <p role="status">{ROTULOS_STATUS[status.estado]} {status.pendentes > 0 && `${status.pendentes} alteração(ões) pendente(s).`}</p>
         <p className="texto-2">Conta criada em {new Date(sessao.user.created_at).toLocaleDateString('pt-BR')} · dispositivo atual: este navegador.</p>
-        <div className="linha"><button className="botao" onClick={sincronizar} disabled={status.estado === 'sincronizando'}>Sincronizar agora</button><a className="botao" href={href('/dados')}>Ver desempenho e backup</a></div>
+        <div className="linha"><a className="botao" href={href('/dados')}>Ver desempenho e backup</a><button className="botao botao--fantasma" onClick={sincronizar} disabled={status.estado === 'sincronizando'}>Sincronizar agora</button></div>
         <button className="botao botao--fantasma" disabled={ocupado} onClick={async () => {
           if (!supabase) return
           if (status.pendentes && !window.confirm('Ainda há alterações não sincronizadas. Elas ficarão neste navegador, disponíveis quando você entrar novamente nesta conta. Sair agora?')) return
@@ -171,9 +170,11 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       <section className="cartao cartao__corpo empilha">
         <h2>Preferências de estudo</h2>
         <p className="texto-2">Sua meta orienta os atalhos de revisão. Você pode mudar quando a semana estiver mais cheia.</p>
-        <div className="grupo-opcoes" aria-label="Meta diária de revisão">{[10, 20, 30].map(meta => <button type="button" key={meta} className="opcao-segmento" aria-pressed={metaDiaria === meta} onClick={() => definirMetaDiaria(meta)}>{meta} revisões/dia</button>)}</div>
+        <div className="campo"><span className="campo__rotulo">Meta diária de revisão</span><div className="grupo-opcoes" aria-label="Meta diária de revisão">{[10, 20, 30].map(meta => <button type="button" key={meta} className="opcao-segmento" aria-pressed={metaDiaria === meta} onClick={() => definirMetaDiaria(meta)}>{meta} revisões/dia</button>)}</div></div>
         <div className="campo"><span className="campo__rotulo">Densidade da leitura</span><div className="grupo-opcoes">{([['confortavel', 'Confortável'], ['compacta', 'Compacta'], ['foco', 'Foco']] as const).map(([valor, rotulo]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={densidade === valor} onClick={() => definirDensidade(valor)}>{rotulo}</button>)}</div></div>
         <label className="campo">Tamanho da fonte <output className="numerico">{fonte}%</output><input className="entrada" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>
+        <div className="campo"><span className="campo__rotulo">Tema</span><div className="grupo-opcoes">{([['claro', 'Claro'], ['escuro', 'Escuro']] as const).map(([valor, rotulo]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={tema === valor} onClick={() => trocarTema(valor)}>{rotulo}</button>)}</div></div>
+        <label className="campo campo--checkbox"><input type="checkbox" checked={mostrarEtiquetas} onChange={e => definirEtiquetas(e.target.checked)} /> Mostrar a etiqueta do assunto antes de responder</label>
         <div className="linha"><a className="botao" href={href('/dados')}>Backup e privacidade</a><a className="botao" href={href('/revisao')}>Configurar minha revisão</a></div>
       </section>
       <section className="cartao cartao__corpo empilha">
@@ -184,7 +185,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       <section className="cartao cartao__corpo empilha">
         <h2>Meu perfil</h2>
         <p className="texto-2">Esses dados ficam associados à sua conta e ajudam a personalizar sua experiência. Foto não é necessária.</p>
-        <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" value={nome} onChange={e => definirNome(e.target.value)} /></label><label className="campo">Sobrenome<input className="entrada" value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
+        <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} /></label><label className="campo">Sobrenome<input className="entrada" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
         <div className="linha-campos linha-campos--2"><label className="campo">Data de nascimento<input className="entrada" type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label><label className="campo">Você é <select className="entrada" value={situacao} onChange={e => definirSituacao(e.target.value)}><option value="">Escolha uma opção</option><option value="residente">Residente de ortopedia</option><option value="ortopedista">Ortopedista</option><option value="outro">Outro profissional ou estudante</option></select></label></div>
         <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
         <div className="linha-campos linha-campos--2"><label className="campo">WhatsApp <span className="meta">(opcional)</span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo">Cidade <span className="meta">(opcional)</span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
@@ -203,7 +204,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       <form className="empilha" onSubmit={enviar}>
         {!recuperacao && <label className="campo">E-mail<input className="entrada" type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} /></label>}
         {!recuperacao && modo === 'criar' && <>
-          <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" autoComplete="given-name" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo">Sobrenome <span className="meta">(opcional)</span><input className="entrada" autoComplete="family-name" value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
+          <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" autoComplete="given-name" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo">Sobrenome<input className="entrada" autoComplete="family-name" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
           <div className="linha-campos linha-campos--2"><label className="campo">Data de nascimento<input className="entrada" type="date" required value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label><label className="campo">Você é <select className="entrada" required value={situacao} onChange={e => definirSituacao(e.target.value)}><option value="">Selecione</option><option value="residente">Residente de ortopedia</option><option value="ortopedista">Ortopedista</option><option value="outro">Outro profissional ou estudante</option></select></label></div>
           <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" required value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
           <div className="linha-campos linha-campos--2"><label className="campo">WhatsApp <span className="meta">(opcional)</span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo">Cidade <span className="meta">(opcional)</span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
@@ -216,9 +217,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       </form>
       {modo === 'entrar' && !recuperacao && <button className="botao botao--fantasma" onClick={() => { void reenviar() }} disabled={ocupado || !email.trim()}>Reenviar confirmação de e-mail</button>}
       <p className="meta">Usamos o Supabase para autenticação e armazenamento do progresso. A senha não é salva pelo OrtoQuestões. Nos links de confirmação e recuperação, use este mesmo navegador.</p>
-      <a href={href('/treinar')}>Continuar sem conta</a>
     </section>}
-    <p role="status">{mensagem}</p>
   </article>
 }
 

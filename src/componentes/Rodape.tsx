@@ -12,7 +12,6 @@ export function Rodape() {
         <a href={href('/sobre')}>O projeto</a>
         <a href={href('/contato')}>Relatar erro</a>
         <a href={href('/dados')}>Seu desempenho</a>
-        <a href={href('/progresso')}>Progresso do acervo</a>
         <a href={href('/termos')}>Termos de uso</a>
         <a
           className="rodape__social"
