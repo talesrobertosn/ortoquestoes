@@ -12,6 +12,11 @@ import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
 import { planoRevisao } from '../estado/planoRevisao'
 
+// A maior parte do acervo ainda não distingue TEOT de TARO (prova genérica
+// "TEOT/TARO"); enquanto isso não é resolvido, as três provas são somadas
+// numa única contagem em vez de aparecerem como linhas separadas.
+const PROVAS_TEOT_TARO = ['TEOT/TARO', 'TEOT', 'TARO']
+
 const VARIACOES_INICIO = [
   { saudacao: 'A constância de hoje vira segurança na prova.', rotina: 'Um pouco de prática, todos os dias', explicacao: 'Errou? Revise agora. Acertou? Volte em 3, 7, 14 e 30 dias. Quatro acertos espaçados marcam a questão como dominada.', acao: 'Começar um treino de 10 questões', revisar: 'Retome o que precisa fixar', novas: 'Avance no acervo' },
   { saudacao: 'Cada revisão bem feita deixa a próxima resposta mais leve.', rotina: 'Hoje é um bom dia para consolidar', explicacao: 'Comece pelas questões que exigem revisão. Pequenas sessões repetidas criam memória de longo prazo.', acao: 'Fazer 10 questões agora', revisar: 'Transforme erro em domínio', novas: 'Descubra um assunto novo' },
@@ -64,9 +69,19 @@ export function Inicio() {
   const maiorTema = contagens
     ? Math.max(1, ...Object.values(contagens.porTema))
     : 1
-  const maiorProva = contagens
-    ? Math.max(1, ...Object.values(contagens.porProva))
-    : 1
+  const provasAgrupadas = useMemo(() => {
+    if (!indice || !contagens) return []
+    const teotTaroTotal = PROVAS_TEOT_TARO.reduce((soma, p) => soma + (contagens.porProva[p] ?? 0), 0)
+    const grupos: { rotulo: string; provas: string[]; quantidade: number }[] = []
+    if (teotTaroTotal > 0) grupos.push({ rotulo: 'TEOT/TARO', provas: PROVAS_TEOT_TARO, quantidade: teotTaroTotal })
+    for (const prova of indice.provas ?? []) {
+      if (PROVAS_TEOT_TARO.includes(prova)) continue
+      const quantidade = contagens.porProva[prova] ?? 0
+      if (quantidade > 0) grupos.push({ rotulo: prova, provas: [prova], quantidade })
+    }
+    return grupos
+  }, [indice, contagens])
+  const maiorProva = Math.max(1, ...provasAgrupadas.map((grupo) => grupo.quantidade))
   const revisoesPlanejadas = useMemo(
     () => (indice ? planoRevisao(indice, contexto.respondidas, 7) : new Map()),
     [indice, contexto.respondidas],
@@ -176,32 +191,27 @@ export function Inicio() {
               <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>{textoDoDia.novas}</small></a>
             </div> : <p className="texto-2">Escolha uma sessão curta. Depois da primeira resposta, esta área passa a mostrar suas revisões, evolução e próximos passos.</p>}
           </section>
-          {(indice.provas?.length ?? 0) > 1 && (
+          {provasAgrupadas.length > 1 && (
             <section>
               <h2>Por prova</h2>
               <p className="meta" style={{ marginTop: '0.25rem' }}>
                 Escolha a prova para a qual você está estudando.
               </p>
               <ul className="distribuicao" style={{ marginTop: '0.75rem' }}>
-                {indice.provas
-                  .filter((prova) => (contagens.porProva[prova] ?? 0) > 0)
-                  .map((prova) => {
-                    const quantidade = contagens.porProva[prova] ?? 0
-                    return (
-                      <li className="distribuicao__item" key={prova}>
-                        <a
-                          className="distribuicao__link"
-                          href={href(`/treinar${filtrosParaConsulta({ ...FILTROS_VAZIOS, provas: [prova] })}`)}
-                        >
-                          <span>{prova}</span>
-                          <span className="distribuicao__quantidade">{quantidade}</span>
-                          <span className="distribuicao__trilho">
-                            <span className="distribuicao__parte" style={{ width: `${(quantidade / maiorProva) * 100}%` }} />
-                          </span>
-                        </a>
-                      </li>
-                    )
-                  })}
+                {provasAgrupadas.map((grupo) => (
+                  <li className="distribuicao__item" key={grupo.rotulo}>
+                    <a
+                      className="distribuicao__link"
+                      href={href(`/treinar${filtrosParaConsulta({ ...FILTROS_VAZIOS, provas: grupo.provas })}`)}
+                    >
+                      <span>{grupo.rotulo}</span>
+                      <span className="distribuicao__quantidade">{grupo.quantidade}</span>
+                      <span className="distribuicao__trilho">
+                        <span className="distribuicao__parte" style={{ width: `${(grupo.quantidade / maiorProva) * 100}%` }} />
+                      </span>
+                    </a>
+                  </li>
+                ))}
               </ul>
             </section>
           )}
