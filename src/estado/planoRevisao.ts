@@ -4,9 +4,11 @@ import { dominada } from './revisao'
 
 export interface DiaRevisao { chave: string; inicio: number; ids: string[]; temas: Map<string, number>; acertos: number; tentativas: number; atrasadas: number }
 const DIA = 86400000
+/** Cobre a cauda mais longa do ciclo de certeza (até 365 dias), com folga. */
+export const JANELA_REVISAO_DIAS = 400
 export function inicioDia(data = Date.now()) { const d = new Date(data); d.setHours(0, 0, 0, 0); return d.getTime() }
 export function chaveDia(data: number) { return new Date(data).toISOString().slice(0, 10) }
-export function planoRevisao(indice: Indice, registros: Record<string, Partial<RegistroQuestao> & { c: boolean | null }>, dias = 42) {
+export function planoRevisao(indice: Indice, registros: Record<string, Partial<RegistroQuestao> & { c: boolean | null }>, dias = JANELA_REVISAO_DIAS) {
   const hoje = inicioDia(); const porDia = new Map<string, DiaRevisao>()
   const temaPorId = new Map(indice.questoes.map((q) => [q.id, indice.temas[q.t]?.nome ?? 'Outro']))
   for (const [id, r] of Object.entries(registros)) {

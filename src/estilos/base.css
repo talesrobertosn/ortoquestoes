@@ -397,9 +397,13 @@ textarea {
   color: var(--texto-2);
   cursor: pointer;
 }
-.botao-icone:hover {
+.botao-icone:hover:not(:disabled) {
   background: var(--superficie-2);
   color: var(--texto);
+}
+.botao-icone:disabled {
+  opacity: .35;
+  cursor: default;
 }
 .botao-icone[aria-pressed="true"] {
   color: var(--verdete);
@@ -1947,7 +1951,10 @@ kbd {
 .menu-grifo:hover { background:#ffe878; }
 .treinar-pagina { display:flex; flex-direction:column; }.treinar-pagina > .treinar-filtros { order:2; }.treinar-pagina > .treinar-intencoes { order:3; }.treinar-pagina > .treinar-contexto { order:4; }.treinar-pagina > header { order:1; }.treinar-filtros .filtros-destaque:first-child { background:var(--verdete-veu); border-color:var(--verdete); }
 .revisao-heroi h1 { max-width: 18ch; margin:.35rem 0 .75rem; }.revisao-heroi p:not(.meta) { max-width:60ch; margin-bottom:1rem; }
-.calendario { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:.5rem; margin-top:1rem; }.calendario__dia { min-height:5.75rem; padding:.5rem; display:flex; flex-direction:column; align-items:flex-start; justify-content:space-between; border:var(--borda); border-radius:10px; background:var(--superficie); color:var(--texto); font:inherit; cursor:pointer; }.calendario__dia span,.calendario__dia small { color:var(--texto-2); font-size:var(--meta); }.calendario__dia strong { font-variant-numeric:tabular-nums; font-size:1.2rem; }.calendario__dia--leve { background:var(--verdete-veu); border-color:var(--verdete); }.calendario__dia--alto { background:var(--aviso-veu); border-color:var(--aviso); }.calendario__dia--atrasado { background:var(--erro-veu); border-color:var(--erro); }.calendario__dia--selecionado { outline:2px solid var(--texto); outline-offset:2px; }.revisao-detalhe h2 { margin:.25rem 0 .5rem; }.chips { display:flex; flex-wrap:wrap; gap:.5rem; margin:1rem 0; }.chips span { padding:.35rem .6rem; border-radius:999px; background:var(--superficie-2); border:var(--borda); font-size:var(--corpo-menor); }
+.calendario__nav { display:flex; gap:.375rem; flex:0 0 auto; }
+.calendario__cabecalho { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:.5rem; margin-top:1rem; text-align:center; }
+.calendario__cabecalho span { color:var(--texto-2); font-size:var(--meta); text-transform:uppercase; }
+.calendario { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:.5rem; margin-top:.5rem; }.calendario__dia { min-height:4.5rem; padding:.5rem; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.15rem; border:var(--borda); border-radius:10px; background:var(--superficie); color:var(--texto); font:inherit; cursor:pointer; }.calendario__dia small { color:var(--texto-2); font-size:var(--meta); }.calendario__dia strong { font-variant-numeric:tabular-nums; font-size:1.2rem; }.calendario__dia--leve { background:var(--verdete-veu); border-color:var(--verdete); }.calendario__dia--alto { background:var(--aviso-veu); border-color:var(--aviso); }.calendario__dia--atrasado { background:var(--erro-veu); border-color:var(--erro); }.calendario__dia--selecionado { outline:2px solid var(--texto); outline-offset:2px; }.calendario__dia--passado { opacity:.4; cursor:default; }.calendario__dia:disabled { cursor:default; }.calendario__vazio { min-height:4.5rem; }.revisao-detalhe h2 { margin:.25rem 0 .5rem; }.chips { display:flex; flex-wrap:wrap; gap:.5rem; margin:1rem 0; }.chips span { padding:.35rem .6rem; border-radius:999px; background:var(--superficie-2); border:var(--borda); font-size:var(--corpo-menor); }
 .atalhos-estudo a { display: flex; flex-direction: column; gap: .25rem; padding: 1.25rem; border-radius: 10px; background: var(--superficie-2); border: var(--borda); text-decoration: none; color: var(--texto); }
 .atalhos-estudo a:first-child { background: var(--verdete-veu); border-color: var(--verdete); }
 .atalhos-estudo strong { font-size: 2rem; font-variant-numeric: tabular-nums; color: var(--verdete); }
@@ -1990,7 +1997,8 @@ kbd {
 .origem-questao { margin-bottom: 1rem; }
 .nav-mobile { display: none; }
 @media (max-width: 48rem) {
-  .calendario { display:flex; overflow-x:auto; padding:.25rem; scroll-snap-type:x mandatory; }.calendario__dia { min-width:4.5rem; scroll-snap-align:start; }
+  .calendario__dia, .calendario__vazio { min-height:3.25rem; padding:.35rem; }
+  .calendario__dia strong { font-size:1rem; }
   .intencoes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .atalhos-estudo { grid-template-columns: 1fr; gap: .65rem; }
   .atalhos-estudo a { padding: 1rem; }

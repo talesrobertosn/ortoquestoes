@@ -22,7 +22,7 @@ import { SITE } from '../config'
 const PROVAS_TEOT_TARO = ['TEOT/TARO', 'TEOT', 'TARO']
 
 const VARIACOES_INICIO = [
-  { saudacao: 'A constância de hoje vira segurança na prova.', rotina: 'Um pouco de prática, todos os dias', explicacao: 'Errou? Revise agora. Acertou? Volte em 3, 7, 14 e 30 dias. Quatro acertos espaçados marcam a questão como dominada.', acao: 'Começar um treino de 10 questões', revisar: 'Retome o que precisa fixar', novas: 'Avance no acervo' },
+  { saudacao: 'A constância de hoje vira segurança na prova.', rotina: 'Um pouco de prática, todos os dias', explicacao: 'Errou? Revise agora. Acertou com certeza? O intervalo cresce a cada acerto, até chegar em meses — a questão nunca se dá por resolvida de vez.', acao: 'Começar um treino de 10 questões', revisar: 'Retome o que precisa fixar', novas: 'Avance no acervo' },
   { saudacao: 'Cada revisão bem feita deixa a próxima resposta mais leve.', rotina: 'Hoje é um bom dia para consolidar', explicacao: 'Comece pelas questões que exigem revisão. Pequenas sessões repetidas criam memória de longo prazo.', acao: 'Fazer 10 questões agora', revisar: 'Transforme erro em domínio', novas: 'Descubra um assunto novo' },
   { saudacao: 'Você não precisa fazer tudo hoje. Precisa continuar.', rotina: 'Seu próximo acerto começa aqui', explicacao: 'Uma questão respondida com atenção vale mais do que uma sequência apressada. Revise, entenda e siga.', acao: 'Reservar 10 questões', revisar: 'Volte ao que ainda desafia', novas: 'Amplie seu repertório' },
   { saudacao: 'A prova reconhece quem construiu repertório todos os dias.', rotina: 'Treine com intenção', explicacao: 'A fila prioriza o que está vencido e o que você já errou. O intervalo entre revisões faz parte do estudo.', acao: 'Iniciar sessão de 10', revisar: 'Sua fila de consolidação', novas: 'Comece algo diferente' },
@@ -239,7 +239,7 @@ export function Inicio() {
             {Object.keys(contexto.respondidas).length > 0 || conta ? (
               <div className="atalhos-estudo">
                 <a href={href('/treinar?situacao=revisarHoje&limite=20')}><strong>{contagens.porSituacao.revisarHoje ?? 0}</strong><span>Revisar hoje</span><small>{textoDoDia.revisar}</small></a>
-                <a href={href('/treinar?situacao=dominadas')}><strong>{contagens.porSituacao.dominadas ?? 0}</strong><span>Dominadas</span><small>Quatro acertos espaçados</small></a>
+                <a href={href('/treinar?situacao=dominadas')}><strong>{contagens.porSituacao.dominadas ?? 0}</strong><span>Dominadas</span><small>Ciclo de revisão completo</small></a>
                 <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>{textoDoDia.novas}</small></a>
               </div>
             ) : (

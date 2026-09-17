@@ -443,7 +443,7 @@ export function CartaoQuestao({
 
         {mostrarGabarito && (
           <div className="comentario">
-            {resposta?.correta !== null && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(lerRespondidas()[questao.id]) ? 'Questão dominada: quatro acertos espaçados. Você pode revisitá-la pelo filtro Dominadas.' : resposta.confianca === 'chute' ? 'Acerto por chute: ela volta amanhã para você confirmar o raciocínio.' : resposta.confianca === 'duvida' ? 'Acerto com dúvida: ela volta antes para reforçar o conceito.' : 'Acerto seguro registrado. A próxima revisão segue o ciclo de 3, 7, 14 e 30 dias.'}</p>}
+            {resposta?.correta !== null && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(lerRespondidas()[questao.id]) ? 'Ciclo de revisão completo. Você pode revisitá-la pelo filtro Dominadas.' : resposta.confianca === 'chute' ? 'Acerto por chute: ela volta amanhã para você confirmar o raciocínio.' : resposta.confianca === 'duvida' ? 'Acerto com dúvida: ela volta antes para reforçar o conceito.' : 'Acerto seguro registrado. O intervalo cresce a cada acerto — 3, 7, 14, 30 dias e depois 3, 6, 9 e 12 meses.'}</p>}
             {questao.comentario && (
               <div className="bloco-comentario">
                 <p className="comentario__titulo">Comentário do autor</p>
