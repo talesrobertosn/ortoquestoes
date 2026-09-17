@@ -1685,20 +1685,6 @@
       "observacao": "Checagem automática estrutural; não substitui revisão médica."
     }
   },
-  "quadril-0125": {
-    "conceito": "A artroscopia do quadril começa às cegas, com o quadril tracionado e a articulação distendida, e por isso a ordem dos portais tem lógica de segurança. O anterolateral é feito primeiro, logo à frente e acima da ponta do trocanter maior, sob fluoroscopia: é o ponto que fica dentro da zona segura, longe do cutâneo femoral lateral e com o glúteo superior acima. Estabelecida a visão por ele, os demais portais — o anterior à frente e os acessórios — são feitos sob visão direta, de dentro para fora, o que é justamente o que a técnica inside-out significa.",
-    "correta": "Anterolateral: é o portal feito primeiro, sob fluoroscopia, para que os demais sejam criados sob visão direta.",
-    "incorretas": {
-      "A": "O anterior é feito depois, já sob visão artroscópica, porque é o que corre risco com o cutâneo femoral lateral.",
-      "C": "O posterolateral é feito depois e é o mais próximo do nervo isquiático.",
-      "D": "Os portais acessórios são criados por último, conforme a necessidade do procedimento."
-    },
-    "geradoEm": "2026-09-06",
-    "conferido": false,
-    "referencias": [
-      "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 8.9"
-    ]
-  },
   "quadril-0126": {
     "conceito": "Vancouver combina **localização da fratura, estabilidade da haste e estoque ósseo**. A radiografia mostra uma fratura ao redor da haste femoral, portanto do grupo B. Para classificá-la como B2, como estabelece o gabarito, é necessário que a haste esteja solta e o estoque ósseo seja adequado.",
     "correta": "**B — Vancouver B2.** Corresponde à fratura em torno de uma haste solta, com estoque ósseo preservado.",
@@ -1885,17 +1871,6 @@
     "geradoEm": "2026-09-16",
     "conferido": false
   },
-  "quadril-0142": {
-    "conceito": "A corona mortis é a comunicação entre o sistema ilíaco externo e o ilíaco interno na face posterior do ramo superior do púbis: a epigástrica inferior, ramo da ilíaca externa, anastomosa-se com a obturatória, ramo da ilíaca interna. Existe em boa parte das pessoas e passa a poucos centímetros da sínfise. Vale notar que a variante venosa também existe e é até mais frequente, mas a anastomose que leva o nome é a arterial. O nome vem do desfecho de seccioná-la sem vê-la: o coto retrai para dentro da pelve e sangra onde não se alcança.",
-    "correta": "Artéria epigástrica inferior com artéria obturatória.",
-    "incorretas": {
-      "A": "A variante venosa existe e é frequente, mas a anastomose que a questão pede, e que dá nome à estrutura, é a arterial.",
-      "C": "A epigástrica superior é ramo da torácica interna, irriga a parede abdominal alta e não alcança a pelve.",
-      "D": "Erra os dois vasos pelo mesmo motivo."
-    },
-    "geradoEm": "2026-09-06",
-    "conferido": false
-  },
   "quadril-0143": {
     "conceito": "O arco de movimento antes do impacto depende da relação entre o diâmetro da cabeça e o do colo. Cabeça grande com colo fino é a melhor combinação possível: a cabeça precisa girar mais até que o colo encoste na borda do inserto, e a jump distance — que é o raio da cabeça — também aumenta, de modo que o mesmo desenho melhora movimento e estabilidade ao mesmo tempo. É por isso que os colos modernos são afilados e polidos, e é por isso que o polietileno de alta reticulação, ao permitir cabeças maiores sem penalidade de desgaste, mudou o desenho das próteses.",
     "correta": "Cabeça femoral grande com colo pequeno: a melhor relação cabeça-colo.",
@@ -1925,18 +1900,6 @@
       "A": "O grau 0 não tem alteração radiográfica nenhuma.",
       "B": "No grau I há esclerose e estreitamento discreto, mas ainda sem cistos.",
       "D": "O grau III traz cistos grandes e estreitamento grave ou obliteração do espaço articular."
-    },
-    "geradoEm": "2026-09-06",
-    "conferido": false
-  },
-  "quadril-0146": {
-    "alerta": "Esta questão tem duas alternativas defensáveis. A D também descreve corretamente os dois padrões: no came a lesão condral É extensa e por cisalhamento (delaminação anterossuperior, o fenômeno do tapete), e no pinçamento ela É restrita a uma banda estreita junto à borda acetabular — estreita e, ao mesmo tempo, circunferencial. Se você marcou D, o erro não foi seu.",
-    "conceito": "Os dois tipos de impacto danificam a cartilagem por mecanismos diferentes. No came, a giba da transição cabeça-colo é empurrada para dentro do acetábulo na flexão e cisalha a cartilagem anterossuperior, descolando-a do osso subcondral em lâmina — a delaminação, ou fenômeno do tapete, que é lesão extensa e profunda. No pinçamento, a cobertura excessiva esmaga o labrum entre as duas bordas ósseas e o dano condral fica confinado a uma faixa estreita ao longo da borda, circunferencialmente, acompanhada da lesão em contragolpe na região posteroinferior.",
-    "correta": "No came as lesões são por cisalhamento e no pinçamento são circunferenciais.",
-    "incorretas": {
-      "A": "Inverte os dois mecanismos.",
-      "C": "Inverte de novo: a lesão restrita a uma banda estreita é a do pinçamento, e a extensa por cisalhamento é a do came.",
-      "D": "Descreve os dois padrões corretamente e mesmo assim foi dada como errada — veja o aviso acima."
     },
     "geradoEm": "2026-09-06",
     "conferido": false
@@ -2027,34 +1990,6 @@
       "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 51"
     ]
   },
-  "quadril-0154": {
-    "conceito": "Duas informações que se apoiam na mesma mecânica. Como o braço de alavanca dos abdutores é cerca de 2,5 vezes menor que o do peso corporal, a força que eles precisam gerar para equilibrar a pelve é da ordem de 2,5 vezes o peso do corpo. E a elevação da perna estendida, que parece um exercício inofensivo, exige contração vigorosa do iliopsoas com o membro em alavanca longa: a carga resultante na cabeça femoral chega a valores comparáveis aos da fase de apoio da marcha. É exatamente por isso que esse movimento não é recomendado no pós-operatório precoce.",
-    "correta": "Cerca de 2,5 vezes o peso corporal, e a elevação da perna estendida gera carga semelhante à da fase de apoio da marcha.",
-    "incorretas": {
-      "A": "A força abdutora de 1,5 vez subestima o efeito da diferença entre os braços de alavanca.",
-      "C": "Erra as duas: a força é maior, e a elevação da perna estendida não gera apenas metade da carga da marcha.",
-      "D": "A força está certa, mas a carga da elevação da perna estendida é comparável à da marcha, e não metade dela."
-    },
-    "geradoEm": "2026-09-06",
-    "conferido": false,
-    "referencias": [
-      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 3"
-    ]
-  },
-  "quadril-0155": {
-    "conceito": "Vancouver combina três informações. A letra dá o nível: A no maciço trocantérico, B ao redor ou logo abaixo da haste, C bem distal à ponta. O número, dentro do tipo B, dá o estado do implante e do osso: B1 haste estável, B2 haste solta com osso proximal aceitável, B3 haste solta com osso proximal deficiente. Como a conduta segue a fixação, B1 se fixa (placa ou cabos), B2 se revisa com haste longa não cimentada e B3 acrescenta enxerto ou implante de reconstrução.",
-    "correta": "Fratura ao nível da haste, com prótese instável e bom estoque ósseo.",
-    "incorretas": {
-      "A": "Haste estável ao nível dela é o tipo B1.",
-      "C": "Fratura abaixo do nível da haste é o tipo C.",
-      "D": "Estoque ósseo comprometido, com haste solta, é o tipo B3 — e no B3 a prótese é instável, não estável."
-    },
-    "geradoEm": "2026-09-06",
-    "conferido": false,
-    "referencias": [
-      "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.) — Cap. 58"
-    ]
-  },
   "quadril-0156": {
     "conceito": "O quadro clínico descrito — dor lateral no quadril de início insidioso, dor à palpação do grande trocanter, e dor exacerbada nos testes resistidos de abdução e de rotação externa — é característico da SÍNDROME DOLOROSA DO GRANDE TROCANTER (antigamente chamada de bursite trocantérica), hoje reconhecida como decorrente principalmente de tendinopatia/lesão dos tendões dos músculos glúteo médio e mínimo em sua inserção no grande trocanter, achado também sugerido pelas imagens de ressonância mostradas.",
     "correta": "D. O diagnóstico mais provável é a síndrome dolorosa do grande trocanter.",
@@ -2067,34 +2002,6 @@
     "conferido": false,
     "referencias": [
       "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 6"
-    ]
-  },
-  "quadril-0157": {
-    "conceito": "A imagem mostra a região glútea profunda com um tendão indicado próximo ao grande trocanter, em nível inferior aos demais rotadores curtos — posição compatível com a inserção do músculo QUADRADO FEMORAL na crista intertrocantérica, o mais inferior entre os rotadores externos curtos do quadril.",
-    "correta": "D. A seta indica o tendão do músculo quadrado femoral.",
-    "incorretas": {
-      "A": "O piriforme se insere mais superiormente, próximo ao topo do grande trocanter, não na posição inferior mostrada.",
-      "B": "O glúteo médio se insere na face lateral do grande trocanter, numa posição mais superior/lateral que a mostrada.",
-      "C": "O gêmeo superior se insere mais superiormente, junto ao tendão do obturador interno, não na posição mais inferior indicada."
-    },
-    "geradoEm": "2026-09-16",
-    "conferido": false,
-    "referencias": [
-      "Netter — Atlas de Anatomia Humana, 7ª edição — Cap. 8"
-    ]
-  },
-  "quadril-0158": {
-    "conceito": "A imagem mostra um nervo emergindo do forame isquiático maior ACIMA do nível do piriforme (diferente do nervo isquiático e do nervo glúteo inferior, que emergem abaixo desse músculo). Essa é a via de saída clássica do NERVO GLÚTEO SUPERIOR, que acompanha os vasos glúteos superiores para inervar os músculos glúteo médio, glúteo mínimo e tensor da fáscia lata.",
-    "correta": "C. O nervo assinalado é o glúteo superior.",
-    "incorretas": {
-      "A": "O nervo ilioinguinal tem trajeto na parede abdominal/região inguinal, sem relação com a saída pélvica mostrada na figura.",
-      "B": "O nervo obturatório sai da pelve pelo forame obturado, e não pelo forame isquiático maior como o mostrado na figura.",
-      "D": "O nervo cutâneo femoral posterior emerge do forame isquiático maior ABAIXO do piriforme (junto ao nervo isquiático), não acima como o mostrado."
-    },
-    "geradoEm": "2026-09-16",
-    "conferido": false,
-    "referencias": [
-      "Netter — Atlas de Anatomia Humana, 7ª edição — Cap. 8"
     ]
   },
   "quadril-0159": {
@@ -2319,58 +2226,6 @@
     "geradoEm": "2026-09-06",
     "conferido": false
   },
-  "quadril-0179": {
-    "conceito": "A classificação de Bombelli procura compreender a osteoartrose do quadril além da simples perda de espaço articular. Ela integra três eixos: **etiologia**, **mobilidade** e **resposta biológica do osso à carga**. No eixo etiológico, diferencia padrões associados a alterações mecânicas ou anatômicas, formas atróficas e situações nas quais predomina insuficiência da resposta reparadora. No eixo biológico, a reação óssea é descrita como hipertrófica, normotrófica ou atrófica. A forma hipertrófica apresenta osteófitos e esclerose exuberantes, indicando resposta osteoblástica forte; a normotrófica mostra reação intermediária; e a atrófica apresenta pouca formação osteofitária e pouca esclerose apesar da destruição articular. A amplitude de movimento também entra na avaliação clínica e biomecânica. Essa lógica difere de classificações radiográficas de gravidade, como Tönnis ou Kellgren-Lawrence, que valorizam estreitamento do espaço, osteófitos, esclerose e deformidade. Essa diferença é a armadilha central da questão.",
-    "correta": "A alternativa C está correta porque pergunta qual item **não** constitui um dos eixos avaliados pela classificação de Bombelli. O estreitamento do espaço articular é um sinal radiográfico importante de osteoartrose e aparece em sistemas de graduação de gravidade, mas não é um dos três critérios organizadores da classificação de Bombelli. Bombelli busca relacionar a causa, o comportamento mecânico expresso pela mobilidade e a capacidade de reação biológica do osso. O espaço articular pode ser observado na radiografia do paciente, mas sua redução isolada não define o grupo de Bombelli.",
-    "incorretas": {
-      "A": "Arco de movimento é contemplado. A mobilidade ajuda a interpretar o comportamento biomecânico do quadril e a distinguir articulações ainda móveis de quadris rígidos. A alternativa tenta induzir o aluno a pensar que Bombelli seria exclusivamente radiográfica, quando a proposta original relaciona achados clínicos, mecânicos e biológicos.",
-      "B": "Etiologia é um dos pilares da classificação. A origem mecânica ou estrutural da artrose influencia a distribuição de forças, a capacidade de remodelação e, historicamente, a indicação de osteotomias. Por isso, excluir etiologia confundiria Bombelli com um sistema puramente descritivo de gravidade radiográfica.",
-      "D": "Biologia também é avaliada, principalmente pela resposta osteoblástica visível na radiografia. Os padrões hipertrófico, normotrófico e atrófico representam intensidades diferentes de formação de osteófitos e esclerose subcondral. Essa resposta pode ter implicações prognósticas e foi usada por Bombelli para interpretar o potencial de remodelação."
-    },
-    "referencias": [
-      "Bombelli R, Santore RF, Poss R. Mechanics of the normal and osteoarthritic hip. Clin Orthop Relat Res. 1984. https://pubmed.ncbi.nlm.nih.gov/6692629/",
-      "Osteoarthritis of the hip joint in elderly patients is most commonly atrophic. https://pmc.ncbi.nlm.nih.gov/articles/PMC5362671/",
-      "Radiographic endophenotyping in hip osteoarthritis. https://pmc.ncbi.nlm.nih.gov/articles/PMC5530347/"
-    ],
-    "conferido": false,
-    "geradoEm": "2026-09-13"
-  },
-  "quadril-0180": {
-    "conceito": "A corona mortis corre na face posterior do ramo superior do púbis, sobre a superfície quadrilátera — território das vias que abordam o acetábulo por dentro da pelve. O acesso de Stoppa modificado (intrapélvico) entra pela linha média infraumbilical e trabalha por trás da parede abdominal, exatamente sobre essa região: identificar e ligar a corona mortis é um dos primeiros passos dele, porque um vaso seccionado ali retrai para dentro da pelve e sangra fora de alcance. O ilioinguinal enfrenta o mesmo problema na sua primeira janela.",
-    "correta": "Stoppa modificada, via intrapélvica que trabalha justamente sobre a face posterior do ramo púbico.",
-    "incorretas": {
-      "A": "Hardinge é o acesso lateral direto do quadril, para artroplastia — não alcança a pelve interna.",
-      "C": "A via de Gibson modificada é posterior, variante da Kocher-Langenbeck.",
-      "D": "Kocher-Langenbeck é posterior e aborda a coluna posterior por fora — nela os riscos são o isquiático, o feixe glúteo superior e a circunflexa femoral medial."
-    },
-    "geradoEm": "2026-09-06",
-    "conferido": false
-  },
-  "quadril-0181": {
-    "conceito": "As imagens de ressonância magnética axial do quadril mostram duas estruturas adjacentes ao grande trocanter: mais medial/anterior, a CÁPSULA ARTICULAR do quadril, e mais lateral, o TENDÃO DO GLÚTEO MÍNIMO, que se insere na faceta anterior do grande trocanter (mais anterior que a inserção do glúteo médio, que ocorre nas facetas lateral e póstero-superior).",
-    "correta": "B. As estruturas indicadas pelas setas são a cápsula articular e o tendão do músculo glúteo mínimo.",
-    "incorretas": {
-      "A": "O tendão indicado nesse nível e posição corresponde ao glúteo MÍNIMO (inserção mais anterior), não ao glúteo médio.",
-      "C": "As estruturas indicadas correspondem à cápsula articular e ao tendão do glúteo mínimo, não a tendões dos músculos reto femoral e glúteo médio.",
-      "D": "O reto femoral não corresponde a nenhuma das estruturas indicadas nesta imagem específica; a estrutura mais medial é a cápsula articular."
-    },
-    "geradoEm": "2026-09-16",
-    "conferido": false
-  },
-  "quadril-0182": {
-    "conceito": "As imagens mostram o método do ÂNGULO COMBINADO DE KERBOUL para avaliação da osteonecrose da cabeça femoral: soma-se o ângulo do segmento necrótico medido no corte coronal médio (A) ao ângulo medido no corte sagital médio (B). Diferente da classificação de FICAT (que estadia a doença de forma qualitativa, sem uma soma angular), o ângulo combinado de Kerboul TEM valor preditivo estabelecido quanto ao risco de colapso subcondral: ângulos combinados maiores que 200° são classicamente associados a alto risco de colapso.",
-    "correta": "C. As imagens demonstram o método de Kerboul, cuja soma dos ângulos tem valor preditivo quanto ao colapso subcondral.",
-    "incorretas": {
-      "A": "A classificação de Ficat não se baseia numa soma de ângulos medidos em dois planos como a mostrada na figura; esse método angular corresponde ao de Kerboul.",
-      "B": "Da mesma forma, o método mostrado (soma de ângulos em dois cortes) corresponde ao de Kerboul, não ao de Ficat.",
-      "D": "O ângulo combinado de Kerboul TEM valor preditivo estabelecido para o colapso subcondral (não avaliado sem valor preditivo), sendo essa justamente sua utilidade clínica principal."
-    },
-    "geradoEm": "2026-09-16",
-    "conferido": false,
-    "referencias": [
-      "Azar, Beaty — Campbell's Operative Orthopaedics, 14ª edição"
-    ]
-  },
   "quadril-0183": {
     "conceito": "A imagem mostra a face lateral e medial da coxa proximal, com o feixe vascular femoral visível. A seta mais lateral (próxima à origem, junto à espinha ilíaca ântero-superior) indica o músculo TENSOR DA FÁSCIA LATA; a seta mais medial, indicando a faixa muscular fina e mais medial de todas na coxa, corresponde ao músculo GRÁCIL.",
     "correta": "C. Os músculos assinalados são, respectivamente, o tensor da fáscia lata e o grácil.",
@@ -2380,17 +2235,6 @@
       "D": "O músculo mais medial mostrado corresponde ao grácil (fino e longo), não ao adutor longo, que tem posição e volume diferentes."
     },
     "geradoEm": "2026-09-16",
-    "conferido": false
-  },
-  "quadril-0184": {
-    "conceito": "O teste de McCarthy avalia o impacto e a lesão labral varrendo o quadril por um arco: partindo da flexão máxima, o examinador estende o quadril primeiro em rotação externa e depois em rotação interna, procurando o ponto do arco em que a dor ou o estalido aparecem. A vantagem sobre o teste estático de impacto anterior é justamente varrer todo o contorno acetabular em vez de testar uma posição só. Os outros três nomes pertencem a outras finalidades: Craig mede anteversão femoral, Phelps avalia o grácil e Freiberg é do piriforme.",
-    "correta": "Teste de McCarthy.",
-    "incorretas": {
-      "A": "O teste de Craig mede a anteversão femoral, com o paciente em decúbito ventral e o joelho fletido, palpando o trocanter.",
-      "B": "Phelps avalia a retração do músculo grácil.",
-      "C": "Freiberg é manobra passiva da síndrome do piriforme, com rotação interna forçada."
-    },
-    "geradoEm": "2026-09-06",
     "conferido": false
   },
   "quadril-0185": {
@@ -2403,34 +2247,6 @@
     },
     "geradoEm": "2026-09-16",
     "conferido": false
-  },
-  "quadril-0186": {
-    "conceito": "A imagem de ressonância magnética mostra uma área bem demarcada (geográfica) de alteração de sinal na cabeça femoral, com aspecto de sinal predominantemente claro no osso normal adjacente — compatível com sequência ponderada em T1. O clássico \"sinal da dupla linha\" (uma linha interna hiperintensa de tecido de granulação e uma linha externa hipointensa de osso esclerótico) é um achado mais associado a sequências ponderadas em T2, não sendo o padrão mostrado nesta imagem específica em T1.",
-    "correta": "A. A imagem mostra uma sequência ponderada em T1, com uma área de alteração de sinal de aspecto geográfico.",
-    "incorretas": {
-      "B": "O padrão de sinal e contraste da imagem (gordura medular normal hiperintensa) é mais compatível com uma sequência em T1, não em T2.",
-      "C": "O sinal da \"dupla linha\", quando presente, é um achado classicamente associado a sequências em T2 (não em T1), pela diferença de sinal entre tecido de granulação e osso esclerótico.",
-      "D": "Além de o sinal da dupla linha ser um achado mais típico de T2, o padrão de sinal desta imagem específica é mais compatível com uma sequência em T1."
-    },
-    "geradoEm": "2026-09-16",
-    "conferido": false,
-    "referencias": [
-      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 2.26"
-    ]
-  },
-  "quadril-0187": {
-    "conceito": "O teste de Phelps distingue a retração do grácil da dos demais adutores, e o truque está no joelho. Com o paciente em decúbito ventral e os joelhos estendidos, o examinador abduz as coxas até o limite; depois flete os joelhos a 90 graus e tenta abduzir de novo. Como o grácil é o único adutor que cruza o joelho, fleti-lo o relaxa: se a abdução aumenta com o joelho fletido, a limitação vinha do grácil. Se não muda, a retração é dos outros adutores, que são monoarticulares.",
-    "correta": "Teste de Phelps, em decúbito ventral, comparando a abdução com o joelho estendido e fletido.",
-    "incorretas": {
-      "A": "Pace é o teste ativo do piriforme, com abdução e rotação externa resistidas na posição sentada.",
-      "B": "O teste da bicicleta avalia claudicação e diferencia origem vascular de neurogênica, e não retração muscular.",
-      "D": "McCarthy é manobra de impacto femoroacetabular e lesão labral."
-    },
-    "geradoEm": "2026-09-06",
-    "conferido": false,
-    "referencias": [
-      "Barros Filho, Lech — Exame físico em ortopedia, 3ª edição — Cap. 10"
-    ]
   },
   "quadril-0188": {
     "conceito": "O acesso de Watson-Jones é o anterolateral do quadril e trabalha no intervalo entre o tensor da fáscia lata e o glúteo médio. Ele tem uma peculiaridade importante: os dois músculos são inervados pelo nervo glúteo superior, de modo que este NÃO é um intervalo internervoso verdadeiro — e é por isso que a dissecção proximal precisa ser contida, sob pena de desnervar o tensor. A vantagem da via é abordar o quadril sem violar os abdutores posteriores nem os rotadores curtos, o que reduz o risco de luxação posterior.",
@@ -2715,39 +2531,6 @@
       "C": "A esclerose aparece na osteonecrose, mas é inespecífica: ocorre em infarto ósseo, artrose, tumor e infecção."
     },
     "geradoEm": "2026-09-06",
-    "conferido": false
-  },
-  "quadril-0212": {
-    "conceito": "A imagem cirúrgica identifica diretamente os músculos VASTUS LATERALIS (vasto lateral) e GLUTEUS MEDIUS (glúteo médio) sendo divididos em linha com suas fibras — a descrição clássica da via de acesso de HARDINGE (direta lateral) ao quadril. Nessa via, a estrutura em risco mais importante é o feixe NEUROVASCULAR GLÚTEO SUPERIOR, que pode ser lesado se a divisão do glúteo médio se estender mais que cerca de 3 a 5 cm proximal à ponta do grande trocanter.",
-    "correta": "A. A via de acesso mostrada é a de Hardinge, e a estrutura em risco é o feixe neurovascular glúteo superior.",
-    "incorretas": {
-      "B": "O feixe neurovascular em risco na via de Hardinge é o glúteo SUPERIOR (que inerva o glúteo médio dividido na via), não o glúteo inferior.",
-      "C": "A via mostrada, com divisão direta do glúteo médio e do vasto lateral em linha com suas fibras, corresponde à de Hardinge, não à de Watson-Jones (que utiliza o intervalo entre tensor da fáscia lata e glúteo médio, sem dividir este último).",
-      "D": "Além de a via ser a de Hardinge (não Watson-Jones), a estrutura em risco correspondente é o feixe glúteo superior, não o inferior."
-    },
-    "geradoEm": "2026-09-16",
-    "conferido": false
-  },
-  "quadril-0213": {
-    "conceito": "O sinal da dupla linha é a assinatura da osteonecrose na ressonância, e ele desenha a fronteira entre o que morreu e o que está tentando reparar. A linha EXTERNA é hipointensa em T2 e corresponde ao osso esclerótico reativo, a barreira que o organismo constrói ao redor do infarto. A linha INTERNA é hiperintensa em T2 e corresponde ao tecido de granulação hipervascularizado que avança sobre a área necrótica. É essa dupla faixa, uma escura e outra clara lado a lado, que distingue a osteonecrose do edema difuso da osteoporose transitória.",
-    "correta": "Hiperintensa em T2, correspondendo ao tecido de granulação hipervascularizado.",
-    "incorretas": {
-      "A": "Hipointensa e esclerótica descreve a linha EXTERNA, não a interna.",
-      "B": "Osso esclerótico é hipointenso em T2 — hiperintensidade e esclerose não combinam.",
-      "C": "Tecido de granulação vascularizado é hiperintenso em T2, por ser rico em água e em vasos."
-    },
-    "geradoEm": "2026-09-06",
-    "conferido": false
-  },
-  "quadril-0214": {
-    "conceito": "As radiografias comparativas do pós-operatório recente (A) e tardio (B) de uma hemiartroplastia mostram reabsorção óssea progressiva ao redor da porção proximal da haste femoral — o padrão radiográfico clássico do STRESS SHIELDING (blindagem de estresse), decorrente da transferência de carga preferencial para a haste (mais rígida que o osso), que reduz o estímulo mecânico e leva à reabsorção óssea adaptativa na região proximal, mais próxima do colo/calcar.",
-    "correta": "B. As imagens demonstram o surgimento de stress shielding.",
-    "incorretas": {
-      "A": "A metalose (reação a debris metálicos) não tem uma apresentação radiográfica típica de reabsorção óssea proximal progressiva como a mostrada; associa-se mais a osteólise por partículas e, por vezes, coleções de partes moles.",
-      "C": "Não há, nas imagens descritas, uma linha de fratura visível que caracterizasse uma fratura periprotética.",
-      "D": "A osteoporose transitória do quadril é uma condição autolimitada, geralmente sem prótese envolvida, incompatível com o contexto pós-artroplastia mostrado nas imagens."
-    },
-    "geradoEm": "2026-09-16",
     "conferido": false
   },
   "quadril-0215": {
