@@ -5,6 +5,7 @@ import { contar, montarSessao } from '../dados/acervo'
 import { FILTROS_VAZIOS } from '../dados/tipos'
 import { filtrosParaConsulta, href, navegar } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
+import { Icone } from '../componentes/Icone'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
@@ -64,8 +65,6 @@ export function Inicio() {
   const [textoDoDia] = useState(() => VARIACOES_INICIO[Math.floor(Math.random() * VARIACOES_INICIO.length)])
   const [cabecalhoDoDia] = useState(() => VARIACOES_CABECALHO[Math.floor(Math.random() * VARIACOES_CABECALHO.length)])
 
-  const anos = indice?.anos ?? []
-  const anosRecentes = [...anos].sort((a, b) => b - a).slice(0, 6)
   const maiorTema = contagens
     ? Math.max(1, ...Object.values(contagens.porTema))
     : 1
@@ -81,7 +80,6 @@ export function Inicio() {
     }
     return grupos
   }, [indice, contagens])
-  const maiorProva = Math.max(1, ...provasAgrupadas.map((grupo) => grupo.quantidade))
   const revisoesPlanejadas = useMemo(
     () => (indice ? planoRevisao(indice, contexto.respondidas, 7) : new Map()),
     [indice, contexto.respondidas],
@@ -130,6 +128,7 @@ export function Inicio() {
 
   const nome = String(conta?.user.user_metadata?.nome ?? '').trim()
   const saudacao = textoDoDia.saudacao
+  const revisarHoje = contagens?.porSituacao.revisarHoje ?? 0
 
   return (
     <div className="empilha-2">
@@ -137,15 +136,13 @@ export function Inicio() {
         <h1>{nome ? cabecalhoDoDia.comNome(`${conta?.user.user_metadata?.situacao === 'ortopedista' ? 'Dr. ' : ''}${nome}`) : cabecalhoDoDia.semNome}</h1>
         <p className="heroi__nota">{nome ? saudacao : cabecalhoDoDia.incentivo}</p>
         <div className="heroi__texto">
-          <p className="heroi__linha">
-            {indice && indice.total > 0 ? (
-              <>
-                <strong className="numerico">{indice.total}</strong> {cabecalhoDoDia.acervo}
-              </>
-            ) : (
-              <>{cabecalhoDoDia.acervo}</>
-            )}
-          </p>
+          {indice && indice.total > 0 && (
+            <p className="heroi__contador">
+              <span className="ponto-vivo" aria-hidden="true" />
+              <strong className="numerico">{indice.total}</strong> questões disponíveis agora
+            </p>
+          )}
+          <p className="heroi__linha texto-2">{cabecalhoDoDia.acervo}</p>
         </div>
       </section>
 
@@ -174,47 +171,84 @@ export function Inicio() {
 
       {indice && contagens && indice.total > 0 && (
         <>
+          <nav className="acoes-rapidas" aria-label="Ações rápidas">
+            <a className="acao-rapida acao-rapida--principal" href={href('/treinar')}>
+              <Icone nome="livro" tamanho={26} />
+              <span className="acao-rapida__titulo">Treinar</span>
+              <span className="acao-rapida__nota">Monte sua sessão por tema, prova ou dificuldade</span>
+            </a>
+            <a className="acao-rapida" href={href('/revisao')}>
+              <Icone nome="calendario" tamanho={26} />
+              <span className="acao-rapida__titulo">
+                Calendário de revisão
+                {revisarHoje > 0 && <span className="acao-rapida__contador">{revisarHoje}</span>}
+              </span>
+              <span className="acao-rapida__nota">Veja o que está programado para hoje</span>
+            </a>
+            <a className="acao-rapida" href={href('/dados')}>
+              <Icone nome="grafico" tamanho={26} />
+              <span className="acao-rapida__titulo">Desempenho</span>
+              <span className="acao-rapida__nota">Acompanhe sua evolução ao longo do tempo</span>
+            </a>
+            <a className="acao-rapida acao-rapida--destaque" href={href('/conta')}>
+              <Icone nome="usuario" tamanho={26} />
+              <span className="acao-rapida__titulo">{conta ? 'Minha conta' : 'Criar minha conta'}</span>
+              <span className="acao-rapida__nota">
+                {conta ? 'Perfil, sincronização e preferências' : 'Salve seu progresso e acesse de qualquer dispositivo'}
+              </span>
+            </a>
+          </nav>
+
           <section className="painel-diario" aria-label="Seu estudo de hoje">
             <div className="painel-diario__intro">
               <p className="meta">SUA ROTINA DE ESTUDO</p>
               <h2>{sessaoEmAndamento ? 'Continue de onde parou' : 'O que fazer agora'}</h2>
               <p>{textoDoDia.explicacao}</p>
-              {sessaoEmAndamento && <a className="botao botao--principal" href={href('/sessao')}>Continuar sessão · {Object.keys(sessao!.respostas).length}/{sessao!.ids.length}</a>}
-              {!sessaoEmAndamento && <div className="linha linha--empilha-celular">
-                {[5, 10, 20].map(quantidade => <button key={quantidade} type="button" className={(conta ? quantidade === 10 : quantidade === 5) ? 'botao botao--principal' : 'botao'} onClick={() => treinoRapido(quantidade)} disabled={contagens.total < quantidade}>{!conta && quantidade === 5 ? 'Começar agora sem cadastro · 5 questões' : quantidade === 10 ? textoDoDia.acao : `${quantidade} questões · ~${Math.max(4, Math.round(quantidade * 0.8))} min`}</button>)}
-              </div>}
-              <span className="acao-calendario"><a className="botao" href={href('/revisao')}>Abrir calendário de revisão</a></span>
+              {sessaoEmAndamento ? (
+                <a className="botao botao--principal botao--grande" href={href('/sessao')}>
+                  Continuar sessão · {Object.keys(sessao!.respostas).length}/{sessao!.ids.length}
+                </a>
+              ) : (
+                <button
+                  type="button"
+                  className="botao botao--principal botao--grande"
+                  onClick={() => treinoRapido(10)}
+                  disabled={contagens.total < 10}
+                >
+                  <Icone nome="raio" tamanho={18} /> {textoDoDia.acao}
+                </button>
+              )}
             </div>
-            {Object.keys(contexto.respondidas).length > 0 || conta ? <div className="atalhos-estudo">
-              <a href={href('/treinar?situacao=revisarHoje&limite=20')}><strong>{contagens.porSituacao.revisarHoje ?? 0}</strong><span>Revisar hoje</span><small>{textoDoDia.revisar}</small></a>
-              <a href={href('/treinar?situacao=dominadas')}><strong>{contagens.porSituacao.dominadas ?? 0}</strong><span>Dominadas</span><small>Quatro acertos espaçados</small></a>
-              <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>{textoDoDia.novas}</small></a>
-            </div> : <p className="texto-2">Escolha uma sessão curta. Depois da primeira resposta, esta área passa a mostrar suas revisões, evolução e próximos passos.</p>}
+            {Object.keys(contexto.respondidas).length > 0 || conta ? (
+              <div className="atalhos-estudo">
+                <a href={href('/treinar?situacao=revisarHoje&limite=20')}><strong>{contagens.porSituacao.revisarHoje ?? 0}</strong><span>Revisar hoje</span><small>{textoDoDia.revisar}</small></a>
+                <a href={href('/treinar?situacao=dominadas')}><strong>{contagens.porSituacao.dominadas ?? 0}</strong><span>Dominadas</span><small>Quatro acertos espaçados</small></a>
+                <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>{textoDoDia.novas}</small></a>
+              </div>
+            ) : (
+              <p className="texto-2">Escolha uma sessão curta. Depois da primeira resposta, esta área passa a mostrar suas revisões, evolução e próximos passos.</p>
+            )}
           </section>
+
           {provasAgrupadas.length > 1 && (
             <section>
               <h2>Por prova</h2>
               <p className="meta" style={{ marginTop: '0.25rem' }}>
                 Escolha a prova para a qual você está estudando.
               </p>
-              <ul className="distribuicao" style={{ marginTop: '0.75rem' }}>
+              <div className="provas-selecao" style={{ marginTop: '0.75rem' }}>
                 {provasAgrupadas.map((grupo) => (
-                  <li className="distribuicao__item" key={grupo.rotulo}>
-                    <a
-                      className="distribuicao__link"
-                      href={href(`/treinar${filtrosParaConsulta({ ...FILTROS_VAZIOS, provas: grupo.provas })}`)}
-                    >
-                      <span>{grupo.rotulo}</span>
-                      <span className="distribuicao__quantidade">{grupo.quantidade}</span>
-                      <span className="distribuicao__trilho">
-                        <span className="distribuicao__parte" style={{ width: `${(grupo.quantidade / maiorProva) * 100}%` }} />
-                      </span>
-                    </a>
-                  </li>
+                  <a
+                    key={grupo.rotulo}
+                    href={href(`/treinar${filtrosParaConsulta({ ...FILTROS_VAZIOS, provas: grupo.provas })}`)}
+                  >
+                    {grupo.rotulo}
+                  </a>
                 ))}
-              </ul>
+              </div>
             </section>
           )}
+
           <section>
             <h2>Por tema</h2>
             <p className="meta" style={{ marginTop: '0.25rem' }}>
@@ -239,76 +273,19 @@ export function Inicio() {
                 })}
             </ul>
           </section>
-          {temaFragil && <section className="cartao cartao__corpo convite-conta">
+
+          {temaFragil && <section className="cartao cartao__corpo">
             <p className="meta">ONDE VOCÊ MAIS GANHA AO REVISAR</p>
             <h2>{temaFragil[0]} · {Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)}% de acerto</h2>
             <p>{temaFragil[1].pendentes > 0 ? `${temaFragil[1].pendentes} revisões desse tema estão programadas.` : 'Faça uma sessão curta para transformar este ponto em segurança.'}</p>
             <a className="botao botao--principal" href={href(`/treinar?temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema</a>
           </section>}
-          {!conta && <section className="cartao cartao__corpo convite-conta">
-            <p className="meta">COMECE SEM CADASTRO</p>
-            <h2>Seu progresso já fica salvo neste navegador</h2>
-            <p>Crie uma conta quando quiser levar respostas, revisões, favoritas e desempenho para outros dispositivos.</p>
-            <a className="botao botao--principal" href={href('/conta')}>Criar minha conta</a>
-            {indice.questoes.find(questao => questao.c === 1) && <a className="botao" href={href(`/questao/${indice.questoes.find(questao => questao.c === 1)!.id}`)}>Ver um comentário de exemplo</a>}
-          </section>}
+
           {resumoSemana.respondidas > 0 && <section className="cartao cartao__corpo">
             <p className="meta">SUA SEMANA</p>
             <h2>{resumoSemana.respondidas} questões em {resumoSemana.dias} {resumoSemana.dias === 1 ? 'dia ativo' : 'dias ativos'}</h2>
             <p>{Math.round((resumoSemana.acertos / resumoSemana.respondidas) * 100)}% de acerto nas sessões concluídas nos últimos sete dias. Continue com uma sessão curta para sustentar o ritmo.</p>
           </section>}
-
-          <section className="treino-rapido">
-            <h2 className="treino-rapido__titulo">Treino rápido</h2>
-            <p className="meta">
-              Questões sorteadas de todo o acervo. Começa na hora, sem escolher nada.
-            </p>
-            <div className="linha linha--empilha-celular" style={{ marginTop: '0.75rem' }}>
-              {[10, 15, 20].map((quantidade) => (
-                <button
-                  key={quantidade}
-                  type="button"
-                  className="botao botao--principal botao--grande"
-                  onClick={() => treinoRapido(quantidade)}
-                  disabled={contagens.total < quantidade}
-                >
-                  <span className="numerico">{quantidade}</span> questões
-                </button>
-              ))}
-            </div>
-          </section>
-
-          {anosRecentes.length > 0 && (
-            <section>
-              <h2>Provas recentes</h2>
-              <div className="linha" style={{ marginTop: '0.75rem' }}>
-                {anosRecentes.map((ano) => (
-                  <a className="botao" key={ano} href={href(`/treinar?anos=${ano}`)}>
-                    <span className="numerico">{ano}</span>
-                    <span className="texto-2 numerico">{contagens.porAno[ano] ?? 0}</span>
-                  </a>
-                ))}
-              </div>
-            </section>
-          )}
-
-          <section className="limite-leitura">
-            <h2>O que é o OrtoQuestões</h2>
-            <p style={{ marginTop: '0.5rem' }}>
-              Um banco de questões de ortopedia e traumatologia montado a partir de provas
-              anteriores do TEOT, do TARO, do R4 do ENARE e de outros concursos da especialidade.
-              As questões são transcritas das provas originais, com o gabarito da própria banca, e
-              vão sendo comentadas uma a uma — por inteligência artificial e pela comunidade de
-              ortopedistas e residentes — com a explicação de por que cada alternativa está certa
-              ou errada.
-            </p>
-            <p style={{ marginTop: '0.5rem' }}>
-              Os assuntos cobrem o programa inteiro: mão e punho, ombro e cotovelo, quadril,
-              joelho, pé e tornozelo, coluna, trauma, tumores ósseos, ortopedia pediátrica, doenças
-              osteometabólicas e conceitos básicos.{' '}
-              <a href={href('/sobre')}>Leia mais sobre o projeto</a>.
-            </p>
-          </section>
 
           {historico.length > 0 && (
             <section>
@@ -354,4 +331,3 @@ export function Inicio() {
     </div>
   )
 }
-
