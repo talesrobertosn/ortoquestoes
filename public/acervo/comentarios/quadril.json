@@ -2767,7 +2767,10 @@
    "D": "Nem CDE corresponde a Langenbeck nem BDE simplesmente a Gibson isoladamente sem a comparação correta com Moed, invertendo a correspondência esperada pelo gabarito."
   },
   "geradoEm": "2026-09-16",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton) — Cap. 1"
+  ]
  },
  "quadril-0225": {
   "conceito": "A osteonecrose atraumática nasce de uma causa sistêmica — corticoide, álcool, doença falciforme, lúpus, Gaucher, doença descompressiva —, e causa sistêmica atinge os dois quadris. Por isso a bilateralidade é a regra, alcançando cerca de três quartos dos casos, ainda que muitas vezes um lado esteja assintomático e só apareça na ressonância. A consequência prática é direta: diagnosticada osteonecrose atraumática de um lado, o outro quadril precisa ser examinado por imagem, porque tratar precocemente um lado ainda pré-colapso muda o desfecho dele.",
@@ -2778,7 +2781,10 @@
    "D": "Erra as duas coisas: nem é predominantemente unilateral, nem nessa proporção."
   },
   "geradoEm": "2026-09-06",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton) — Cap. 4"
+  ]
  },
  "quadril-0226": {
   "alerta": "Vale uma ressalva importante sobre esta questão: a posição clássica mais citada na literatura ortopédica geral (Campbell's, revisões de prova) para a artrodese do quadril é de aproximadamente 25 a 30° de FLEXÃO, 0 a 5° de adução (ou neutro) e rotação externa NEUTRA a cerca de 10° — ou seja, com a flexão sendo o parâmetro de maior magnitude, e a rotação externa o de menor. O gabarito oficial desta questão (alternativa A) inverte essa relação, com pouca flexão (0-15°) e maior rotação externa (20-30°). Mantemos aqui o gabarito oficial, mas registramos essa divergência em relação à posição mais classicamente descrita, para que você confira com atenção a referência específica usada pela banca.",
@@ -4192,6 +4198,21 @@
    "Rockwood and Green's Fractures in Adults, 7ª edição"
   ],
   "geradoEm": "2026-09-16",
+  "conferido": false
+ },
+ "quadril-0328": {
+  "conceito": "Na avaliação intraoperatória da redução de fraturas do colo femoral, dois índices radiográficos complementares são utilizados: o índice de alinhamento de GARDEN, medido na incidência anteroposterior (valor normal próximo de 160°), e o índice de LOWELL, medido na incidência em perfil (valor normal próximo de 180°). Juntos, permitem avaliar a qualidade da redução nos dois planos.",
+  "correta": "A. As imagens A e B ilustram, respectivamente, os índices de LOWELL (perfil) e GARDEN (anteroposterior).",
+  "incorretas": {
+   "B": "A ordem apresentada nessa alternativa inverte a correspondência entre as imagens A e B e os respectivos índices.",
+   "C": "O índice de WINTER não corresponde a nenhum dos parâmetros de qualidade de redução da fratura do colo femoral avaliados nessas imagens.",
+   "D": "O índice de WINTER não é um dos parâmetros classicamente utilizados para essa avaliação, o que torna essa alternativa incorreta independentemente da ordem."
+  },
+  "alerta": "A ordem exata entre as imagens A e B (qual mostra o índice de Lowell e qual mostra o de Garden) depende do rótulo de cada imagem no caderno da prova, que não tenho como reconferir com certeza absoluta nesta reanálise. Mantive a alternativa A (Lowell na imagem A, Garden na imagem B) como a mais provável pela ordem observada na figura, mas vale conferir visualmente antes de tratar como definitivo.",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.) — Cap. 49"
+  ],
+  "geradoEm": "2026-09-17",
   "conferido": false
  }
 }

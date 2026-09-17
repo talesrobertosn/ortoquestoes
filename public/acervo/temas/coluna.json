@@ -12406,8 +12406,8 @@
       "subtemas": [
         "Anatomia"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "No acesso anterior ao nível C6-C7, o músculo apontado pela seta que deve ser afastado lateralmente até exposição da articulação unciforme é o",
       "imagens": [
@@ -12457,8 +12457,8 @@
         "Lombalgia",
         "Radiologia da coluna"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "Em quadro de dor lombar axial aguda, há indicação para avaliação radiográfica quando o paciente",
       "imagens": [],
@@ -12500,8 +12500,8 @@
       "subtemas": [
         "Espondilolistese"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "Com relação à biomecânica da coluna vertebral, alguns parâmetros são essenciais na avaliação do equilíbrio sagital. Na avaliação em perfil com o paciente em ortostase, os ângulos alfa e beta na imagem a seguir correspondem, respectivamente, a",
       "imagens": [
@@ -12550,8 +12550,8 @@
       "subtemas": [
         "Escoliose"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "No planejamento terapêutico da escoliose, a classificação de SCHROTH considera",
       "imagens": [],
@@ -12593,8 +12593,8 @@
       "subtemas": [
         "Espondilolistese"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "Na espondilolistese tipo II de WILTSE há o envolvimento do istmo, porção do arco neural que conecta",
       "imagens": [],
@@ -12636,8 +12636,8 @@
       "subtemas": [
         "Anatomia"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "Na imagem a seguir, a estrutura indicada pela seta corresponde",
       "imagens": [
@@ -12686,8 +12686,8 @@
       "subtemas": [
         "Neoplasias"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "A classificação cirúrgica utilizada para avaliar a extensão axial e radial dos tumores primários da coluna, dividindo cada vértebra em 12 setores no plano axial e em cinco camadas concêntricas, é a",
       "imagens": [],
@@ -12729,8 +12729,8 @@
       "subtemas": [
         "Trauma Raquimedular e Síndromes Medulares"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "Na síndrome medular central, considerando a idade do paciente e o tipo de tratamento, o melhor prognóstico é observado em pacientes",
       "imagens": [],
@@ -12772,8 +12772,8 @@
       "subtemas": [
         "Espondilolistese"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "Segundo a classificação de MARCHETTI e BARTOLOZZI, a espondilolistese considerada uma lesão adquirida é",
       "imagens": [],
@@ -13042,6 +13042,56 @@
         "arquivo": "enare-r4-ortopedia-2024.pdf",
         "pagina": null,
         "numeroOriginal": 74
+      }
+    },
+    {
+      "id": "coluna-0295",
+      "tema": "Coluna",
+      "subtemas": [
+        "Radiologia da coluna"
+      ],
+      "prova": "TARO",
+      "ano": 2026,
+      "dificuldade": null,
+      "enunciado": "A linha que é traçada da base do palato duro até a borda posterior do forame magno, mostrada na figura a seguir, foi descrita por",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0295-1.jpeg",
+          "legenda": null,
+          "largura": 650,
+          "altura": 396
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "McRAE."
+        },
+        {
+          "letra": "B",
+          "texto": "RANAWAT."
+        },
+        {
+          "letra": "C",
+          "texto": "McGREGOR."
+        },
+        {
+          "letra": "D",
+          "texto": "CHAMBERLAIN."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2026-publicar.pdf",
+        "pagina": 99,
+        "numeroOriginal": 99
       }
     }
   ]

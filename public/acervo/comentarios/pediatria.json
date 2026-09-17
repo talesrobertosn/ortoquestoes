@@ -3332,7 +3332,8 @@
   },
   "referencias": [
    "Heath CH, Staheli LT. Normal limits of knee angle in white children--genu varum and genu valgum. J Pediatr Orthop. 1993;13:259-262. PMID: 8459023.",
-   "Normal development of the tibiofemoral angle in children. PMID: 11242264."
+   "Normal development of the tibiofemoral angle in children. PMID: 11242264.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn) — Cap. 26"
   ],
   "alerta": "O número exato varia entre populações e métodos de mensuração. Estudos relatam médias aproximadas entre 7 e 10 graus no pico de valgo. Assim, os 10 graus do gabarito devem ser interpretados como valor didático aproximado, não como normalidade universal rígida.",
   "conferido": false,
@@ -3348,10 +3349,82 @@
   },
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
-   "POSNA Study Guide. https://posna.org/physician-education/study-guide"
+   "POSNA Study Guide. https://posna.org/physician-education/study-guide",
+   "Hebert, Lech — Ortopedia e Traumatologia: Princípios e Práticas, 6ª edição — Cap. 27"
   ],
   "conferido": false,
   "geradoEm": "2026-09-13"
+ },
+ "pediatria-0520": {
+  "conceito": "Em crianças, o ponto de entrada da haste intramedular femoral bloqueada deve evitar a fossa do piriforme, que apresenta maior risco de lesão do suprimento vascular da cabeça femoral (ramos da artéria circunflexa femoral medial) e de necrose avascular. O ponto de entrada recomendado nessa faixa etária é o ápice do trocânter maior, mais distante desse suprimento vascular crítico.",
+  "correta": "B. O ápice do trocânter maior é o ponto de entrada recomendado em crianças, por reduzir o risco de lesão vascular da cabeça femoral.",
+  "incorretas": {
+   "A": "A fossa do piriforme está associada a maior risco de necrose avascular da cabeça femoral em crianças, justamente por sua proximidade com o suprimento vascular crítico.",
+   "C": "A porção lateral do trocânter maior não é o ponto de entrada padrão recomendado para hastes bloqueadas nessa faixa etária.",
+   "D": "A porção medial do trocânter maior também não corresponde ao ponto de entrada classicamente recomendado, além de apresentar maior risco de lesão de estruturas vasculares próximas."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn) — Cap. 25"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0521": {
+  "conceito": "O ângulo de carregamento do cotovelo (carrying angle) influencia a distribuição de forças na queda sobre a mão em extensão. Crianças com ângulo de carregamento mais valgo tendem a concentrar maior estresse em valgo sobre o compartimento lateral do cotovelo durante a queda, favorecendo a ocorrência de fratura do côndilo lateral do úmero em detrimento da fratura supracondiliana, mais associada a mecanismos de hiperextensão pura.",
+  "correta": "D. Um ângulo de carregamento mais valgo é fator de risco para fratura do côndilo lateral em detrimento da fratura supracondiliana.",
+  "incorretas": {
+   "A": "A obesidade infantil é discutida como fator de risco para fraturas do cotovelo em geral, mas não é o fator especificamente associado à maior ocorrência de fratura do côndilo lateral em relação à supracondiliana.",
+   "B": "O hipotireoidismo não é fator de risco classicamente descrito para esse padrão específico de fratura no cotovelo pediátrico.",
+   "C": "A idade mais precoce está mais associada, na literatura, a fraturas supracondilianas do que à fratura do côndilo lateral."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn) — Cap. 17"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0522": {
+  "conceito": "A fratura da base do primeiro metacarpo na criança que se assemelha, no padrão de traço, à fratura de Bennett do adulto (fratura-luxação intra-articular com fragmento volar-ulnar mantendo relação com o trapézio) é classificada, na proposta de Kozin para fraturas pediátricas do polegar, dentro de um dos subtipos descritos para essa região.",
+  "correta": "A. O subtipo classificado por Kozin como equivalente pediátrico da fratura de Bennett do adulto corresponde ao tipo A.",
+  "incorretas": {
+   "B": "O tipo B da classificação de Kozin corresponde a um padrão de fratura diferente do equivalente pediátrico da fratura de Bennett.",
+   "C": "O tipo C não é o subtipo associado ao padrão de fratura intra-articular semelhante à de Bennett.",
+   "D": "O tipo D também não corresponde ao padrão equivalente pediátrico da fratura de Bennett descrito por Kozin."
+  },
+  "alerta": "A classificação de Kozin para fraturas da base do primeiro metacarpo na criança tem subtipos, incluindo o equivalente pediátrico da fratura de Bennett do adulto, mas não tenho certeza absoluta de qual letra foi atribuída a esse subtipo na fonte usada pela banca. Mantive a alternativa A como a mais provável por ser comumente citada como o primeiro subtipo listado, mas é um ponto de nomenclatura que vale conferir em fonte primária antes de memorizar com confiança total.",
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 12.6"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0523": {
+  "conceito": "Nas fraturas em galho verde do antebraço, o padrão de angulação residual reflete o mecanismo de força que gerou a fratura. A deformidade com ápice volar (concavidade dorsal) está associada a uma força de supinação atuando sobre o antebraço no momento do trauma com carga axial, e a redução dessa fratura costuma ser obtida com a manobra de pronação, força oposta à que gerou a deformidade.",
+  "correta": "D. A deformidade com ápice volar decorre, mais frequentemente, de força de supinação associada à carga axial no momento do trauma.",
+  "incorretas": {
+   "A": "A força de flexão isolada não é o mecanismo classicamente associado a esse padrão específico de deformidade rotacional do antebraço.",
+   "B": "A força de extensão isolada também não corresponde ao mecanismo rotacional descrito para a deformidade em ápice volar.",
+   "C": "A força de pronação está mais associada à deformidade com ápice dorsal, e não à deformidade com ápice volar."
+  },
+  "referencias": [
+   "Hebert, Lech — Ortopedia e Traumatologia: Princípios e Práticas, 6ª edição — Cap. 93"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0524": {
+  "conceito": "Nas fraturas da região proximal do úmero na criança, o padrão de desvio do fragmento proximal depende da localização do traço em relação à inserção do músculo peitoral maior. Quando o traço está na metáfise proximal a essa inserção, o fragmento proximal fica sob ação isolada do manguito rotador (supraespinal, infraespinal e redondo menor), sem a oposição do peitoral maior, que passa a atuar apenas sobre o fragmento distal.",
+  "correta": "B. Nessa localização, o fragmento proximal tende a ficar desviado em flexão e rotação externa, por ação predominante do manguito rotador sem oposição do peitoral maior.",
+  "incorretas": {
+   "A": "A rotação interna não é o padrão descrito para o fragmento proximal nessa localização — a ação do manguito rotador (infraespinal, redondo menor) tende a gerar rotação externa.",
+   "C": "A extensão não corresponde ao padrão de desvio esperado para o fragmento proximal quando o traço está acima da inserção do peitoral maior.",
+   "D": "A combinação de extensão com rotação externa mistura elementos de mecanismos diferentes; o padrão descrito para essa localização específica é de flexão associada à rotação externa."
+  },
+  "alerta": "A terminologia exata do desvio do fragmento proximal nessa fratura específica (descrito em termos de flexão associada a rotação, em vez de abdução) não é a forma mais comum como esse conceito costuma ser descrito na literatura que conheço bem, e não tenho certeza absoluta de que 'flexão e rotação externa' seja a formulação textual usada pela fonte da banca. A lógica biomecânica (manguito rotador atuando sem oposição do peitoral maior sobre o fragmento proximal) aponta na prática para um desvio em abdução e rotação externa; adotei a opção de rotação externa mais próxima disponível entre as alternativas, mas recomendo confirmar esse ponto específico antes de memorizá-lo com confiança total.",
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn) — Cap. 19"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
  }
 }
-

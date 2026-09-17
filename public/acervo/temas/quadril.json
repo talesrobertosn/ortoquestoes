@@ -10051,8 +10051,8 @@
       "subtemas": [
         "Vias de acesso"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "Na imagem do quadril a seguir, o acesso de KOCHER modificado nas linhas CDE e BDE são, respectivamente,",
       "imagens": [
@@ -10101,8 +10101,8 @@
       "subtemas": [
         "Osteonecrose"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "Na osteonecrose atraumática da cabeça femoral, ocorre envolvimento",
       "imagens": [],
@@ -14578,6 +14578,57 @@
         "arquivo": "notas-estudo-sbq-adult-hip.pdf",
         "pagina": 571,
         "numeroOriginal": null
+      }
+    },
+    {
+      "id": "quadril-0328",
+      "tema": "Quadril",
+      "subtemas": [
+        "Fratura do Colo do Fêmur",
+        "Radiologia do quadril"
+      ],
+      "prova": "TARO",
+      "ano": 2026,
+      "dificuldade": null,
+      "enunciado": "Na fratura do colo femoral, as imagens A e B ilustram, respectivamente, os parâmetros intraoperatórios de qualidade da redução correspondentes aos índices de alinhamento de",
+      "imagens": [
+        {
+          "arquivo": "quadril/quadril-0328-1.jpeg",
+          "legenda": null,
+          "largura": 490,
+          "altura": 532
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "LOWELL e GARDEN."
+        },
+        {
+          "letra": "B",
+          "texto": "GARDEN e LOWELL."
+        },
+        {
+          "letra": "C",
+          "texto": "LOWELL e WINTER."
+        },
+        {
+          "letra": "D",
+          "texto": "GARDEN e WINTER."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2026-publicar.pdf",
+        "pagina": 32,
+        "numeroOriginal": 32
       }
     }
   ]

@@ -11335,8 +11335,8 @@
       "subtemas": [
         "Metodologia científica"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "A força do ensaio clínico randomizado está relacionada às características de",
       "imagens": [],
@@ -11378,8 +11378,8 @@
       "subtemas": [
         "Pseudoartrose"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "Nos defeitos ósseos, o tratamento que utiliza espaçador de polimetilmetracrilato para formação de uma membrana com potencial osteogênico é a técnica de",
       "imagens": [],
@@ -11421,8 +11421,8 @@
       "subtemas": [
         "Artrite Séptica"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "A cepa de Staphylococcus aureus mais associada à rápida destruição articular e à infecção sistêmica grave em crianças é",
       "imagens": [],
@@ -11464,8 +11464,8 @@
       "subtemas": [
         "Dor"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "Paciente do sexo feminino, 30 anos de idade, foi submetida a tratamento cirúrgico para síndrome do túnel do carpo há 90 dias e evoluiu com suspeita de síndrome dolorosa complexa regional tipo 1. Foi tratada com medicações analgésicas por via oral, sem melhora. A termografia infravermelha, realizada com teste de cold stress, evidenciou instabilidade vasomotora. A conduta mais adequada é",
       "imagens": [],
@@ -11507,8 +11507,8 @@
       "subtemas": [
         "Tratamento conservador"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "No tratamento clínico de fraturas instáveis com gesso circular, o princípio da pressão hidrostática estabelece que os tecidos moles e a diáfise",
       "imagens": [],
@@ -11550,8 +11550,8 @@
       "subtemas": [
         "Dor"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2026,
       "dificuldade": null,
       "enunciado": "Sobre a fisiopatologia da dor, o processamento ocorre sequencialmente nas fases de",
       "imagens": [],
@@ -12055,6 +12055,49 @@
         "arquivo": "enare-r4-ortopedia-2024.pdf",
         "pagina": null,
         "numeroOriginal": 66
+      }
+    },
+    {
+      "id": "conceitos-basicos-0277",
+      "tema": "Conceitos básicos",
+      "subtemas": [
+        "Infecções"
+      ],
+      "prova": "TARO",
+      "ano": 2026,
+      "dificuldade": null,
+      "enunciado": "Paciente do sexo masculino, de 56 anos, submetido à osteossíntese de fratura diafisária da tíbia com placa e parafusos. Há 3 meses, iniciou quadro de hiperemia e dor no local, com febre (38,1 ºC). Radiografias revelaram ausência de consolidação, osteólise ao redor dos parafusos e soltura parcial da placa. Exames laboratoriais revelaram leucocitose, elevação de VHS e PCR. A cultura de material obtido por uma punção revelou crescimento de S. aureus. O diagnóstico mais provável é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "falha asséptica do material de síntese."
+        },
+        {
+          "letra": "B",
+          "texto": "infecção confirmada do sítio cirúrgico."
+        },
+        {
+          "letra": "C",
+          "texto": "infecção suspeita do sítio cirúrgico."
+        },
+        {
+          "letra": "D",
+          "texto": "pseudoartrose."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2026-publicar.pdf",
+        "pagina": 33,
+        "numeroOriginal": 33
       }
     }
   ]
