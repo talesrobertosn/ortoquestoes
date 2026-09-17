@@ -3075,7 +3075,8 @@
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America. Klippel-Feil Syndrome Study Guide.",
-   "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
+   "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 8"
   ],
   "conferido": false,
   "geradoEm": "2026-09-13"
@@ -3089,7 +3090,10 @@
    "D": "Obliquidade pequena não justifica a morbidade de estender a fixação até a pelve."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 4.9"
+  ]
  },
  "pediatria-0385": {
   "conceito": "A marcha anserina é uma marcha miopática: fraqueza dos abdutores e extensores do quadril impede estabilização pélvica e o paciente inclina o tronco para reduzir o braço de alavanca. Na distrofia de Duchenne, a fraqueza proximal progressiva, o sinal de Gowers e a pseudohipertrofia de panturrilhas acompanham esse padrão. A hiperlordose é compensação para a fraqueza extensora do quadril e deslocamento anterior do centro de massa.",
@@ -3101,7 +3105,8 @@
   },
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
-   "POSNA Study Guide. https://posna.org/physician-education/study-guide"
+   "POSNA Study Guide. https://posna.org/physician-education/study-guide",
+   "Leite, Faloppa — Propedêutica Ortopédica e Traumatológica, 1ª edição — Cap. 20"
   ],
   "conferido": false,
   "geradoEm": "2026-09-13"
@@ -3115,7 +3120,10 @@
    "C": "Acerta a contração excêntrica, mas a eversão da subtalar é o que acontece ANTES, na resposta à carga; no médio apoio o movimento já se inverteu."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 1.1"
+  ]
  },
  "pediatria-0397": {
   "conceito": "Paralisia cerebral é lesão não progressiva do cérebro imaturo, mas deformidades musculoesqueléticas podem progredir. Espasticidade é mais frequente que distonia. Epilepsia é comorbidade comum, particularmente nas formas hemiplégicas; incapacidade cognitiva é também frequente, porém a marcha depende de fenótipo motor, seletividade, força, equilíbrio e deformidades, não de relação direta simples com cognição. Cirurgia segue princípios de preservação de função, com alongamentos e osteotomias conforme cada deformidade.",
@@ -3423,6 +3431,133 @@
   "alerta": "A terminologia exata do desvio do fragmento proximal nessa fratura específica (descrito em termos de flexão associada a rotação, em vez de abdução) não é a forma mais comum como esse conceito costuma ser descrito na literatura que conheço bem, e não tenho certeza absoluta de que 'flexão e rotação externa' seja a formulação textual usada pela fonte da banca. A lógica biomecânica (manguito rotador atuando sem oposição do peitoral maior sobre o fragmento proximal) aponta na prática para um desvio em abdução e rotação externa; adotei a opção de rotação externa mais próxima disponível entre as alternativas, mas recomendo confirmar esse ponto específico antes de memorizá-lo com confiança total.",
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn) — Cap. 19"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0525": {
+  "conceito": "Em lactentes e crianças muito pequenas, a placa fisária distal do úmero ainda é predominantemente cartilaginosa e frágil, tornando o descolamento epifisário (fratura fisária, geralmente Salter-Harris tipo I) mais provável que uma luxação verdadeira do cotovelo, que é raríssima nessa faixa etária por causa da mesma cartilagem imatura que absorve o trauma antes de permitir a luxação articular. Radiograficamente, o núcleo de ossificação distal do úmero aparece desviado em bloco com o rádio e a ulna (que mantêm sua relação normal entre si), diferentemente da luxação, em que rádio e ulna se deslocam em relação ao úmero mantendo a fise íntegra. A ausência de história de trauma relatada e a possibilidade de maus-tratos também devem ser consideradas nesse quadro.",
+  "correta": "D. Em lactentes, o descolamento (fratura) da fise distal do úmero é o diagnóstico mais provável diante desse quadro, já que a luxação verdadeira de cotovelo é excepcional nessa idade.",
+  "incorretas": {
+   "A": "A pronação dolorosa (subluxação da cabeça do rádio) não causa alterações radiográficas nem edema importante do cotovelo, e o quadro clínico descrito é mais exuberante do que o tipicamente observado nessa condição.",
+   "B": "A luxação verdadeira de cotovelo é extremamente rara em lactentes, justamente porque a fise e a cartilagem ainda imaturas se rompem antes que a articulação se luxe.",
+   "C": "A artrite séptica cursaria tipicamente com febre, o que a paciente não apresenta, embora seja um diagnóstico diferencial importante a ser excluído clinicamente."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn) — Cap. 18"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0526": {
+  "conceito": "A osteogênese imperfeita tipo V, causada por uma mutação específica no gene IFITM5, tem como característica distintiva a formação de calo ósseo hiperplásico (excessivo) após fraturas ou osteotomias, além de membrana interóssea calcificada no antebraço e luxação da cabeça do rádio — achados que a diferenciam dos demais subtipos, geralmente ligados a mutações nos genes do colágeno tipo I (COL1A1, COL1A2).",
+  "correta": "B. O defeito no gene IFITM5 caracteriza a osteogênese imperfeita tipo V, associada à formação de calo ósseo hiperplásico após fratura ou osteotomia.",
+  "incorretas": {
+   "A": "Mutações no gene WNT1 estão associadas a outro subtipo de osteogênese imperfeita, geralmente com herança recessiva e fenótipo grave, sem a característica de calo hiperplásico.",
+   "C": "O gene LEPRE1 (P3H1) está associado a formas graves e recessivas da osteogênese imperfeita, sem essa associação específica com calo hiperplásico.",
+   "D": "O COL1A1 é o gene mais comumente mutado na osteogênese imperfeita (tipos I a IV, herança dominante), mas não é o associado ao calo ósseo hiperplásico."
+  },
+  "referencias": [
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn) — Cap. 6"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0527": {
+  "conceito": "Na avaliação radiográfica da rotação de fraturas diafisárias do antebraço em crianças, um dos parâmetros utilizados é a relação entre a tuberosidade bicipital do rádio (referência proximal) e a tabaqueira anatômica/estiloide radial (referência distal): em uma incidência verdadeiramente neutra, essas referências se posicionam de forma previsível uma em relação à outra, permitindo inferir se há desalinhamento rotacional entre os fragmentos proximal e distal.",
+  "correta": "D. A avaliação rotacional é feita observando a relação entre a tuberosidade do bíceps (referência proximal) e a tabaqueira anatômica (referência distal, próxima ao estiloide radial).",
+  "incorretas": {
+   "A": "A fise proximal do rádio não é a referência classicamente utilizada para essa avaliação rotacional; a referência proximal é a tuberosidade bicipital.",
+   "B": "A eminência tenar é uma referência de tecidos moles da mão, sem relação direta e confiável com a rotação do fragmento distal do rádio nessa avaliação.",
+   "C": "Essa combinação mistura uma referência proximal (fise) que não é a utilizada classicamente com uma referência distal que, isoladamente, também não teria correlato proximal adequado."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn) — Cap. 10"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0528": {
+  "conceito": "A fratura-luxação de GALEAZZI clássica do adulto envolve a fratura da diáfise do rádio com luxação da articulação radioulnar distal. Em crianças, como os ligamentos costumam ser mais resistentes que o osso, o equivalente pediátrico dessa lesão frequentemente se manifesta como fratura da extremidade distal metafisária do rádio associada a uma fratura (avulsão) do estiloide da ulna, em vez de uma luxação ligamentar pura da radioulnar distal — por isso, essa combinação radiográfica deve levantar a suspeita da lesão de Galeazzi mesmo sem evidência de luxação franca.",
+  "correta": "B. Deve-se suspeitar de Galeazzi quando há fratura metafisária distal do rádio associada à fratura do estiloide da ulna, equivalente pediátrico da luxação radioulnar distal do adulto.",
+  "incorretas": {
+   "A": "A combinação inversa (ulna e estiloide do rádio) não corresponde ao padrão anatômico da lesão de Galeazzi, que acomete o rádio como osso principal fraturado.",
+   "C": "A fratura simultânea das extremidades distais metafisárias de ambos os ossos descreve um padrão diferente, não o equivalente pediátrico específico de Galeazzi.",
+   "D": "Essa combinação inverte os papéis anatômicos esperados na lesão de Galeazzi, na qual o rádio é o osso fraturado e a ulna sofre a lesão associada (estiloide)."
+  },
+  "referencias": [
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn) — Cap. 32"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0529": {
+  "conceito": "A classificação de WATSON-JONES para as fraturas por avulsão da tuberosidade anterior da tíbia divide a lesão em três tipos, de gravidade crescente. O tipo III, o mais grave, corresponde a uma fratura que se estende através da epífise tibial proximal até a superfície articular do joelho — configurando, na terminologia de SALTER-HARRIS, uma fratura tipo III (fratura puramente epifisária, intra-articular, sem envolvimento metafisário).",
+  "correta": "C. O tipo III de WATSON-JONES, por estender-se até a superfície articular através da epífise, corresponde a uma fratura SALTER-HARRIS tipo III.",
+  "incorretas": {
+   "A": "SALTER-HARRIS tipo I descreve um descolamento fisário puro, sem fragmento ósseo metafisário ou epifisário — padrão mais simples do que o observado no tipo III de WATSON-JONES.",
+   "B": "SALTER-HARRIS tipo II envolve um fragmento metafisário associado ao descolamento fisário, sem extensão articular — diferente do traço intra-articular do tipo III de WATSON-JONES.",
+   "D": "SALTER-HARRIS tipo IV envolve tanto a epífise quanto a metáfise, atravessando a fise verticalmente — padrão mais complexo do que o tipo III de WATSON-JONES, que é puramente epifisário-articular."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 36"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0530": {
+  "conceito": "A classificação de DELBET para as fraturas do fêmur proximal em crianças divide as lesões conforme a localização: tipo I (transepifisária, mais rara), tipo II (transcervical, pelo colo femoral), tipo III (cervicotrocantérica/basicervical) e tipo IV (intertrocantérica). O tipo II é o mais frequente na maioria das séries pediátricas.",
+  "correta": "B. O tipo II (transcervical) é o mais comum entre as fraturas do fêmur proximal na criança, segundo DELBET.",
+  "incorretas": {
+   "A": "O tipo I (transepifisária) é o mais raro dos quatro tipos, frequentemente associado a alto risco de necrose avascular, mas não o mais comum.",
+   "C": "O tipo III (cervicotrocantérica) é menos frequente que o tipo II na maioria das séries pediátricas.",
+   "D": "O tipo IV (intertrocantérica) tem, em geral, o melhor prognóstico vascular, mas não é o tipo mais comum."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 30"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0531": {
+  "conceito": "As fraturas fisárias do tornozelo (envolvendo a fise distal da tíbia, isoladas ou nos padrões de Tillaux e triplano) podem evoluir com fechamento prematuro, parcial ou total, da fise acometida. Quando o fechamento é parcial e assimétrico — o padrão mais comumente descrito —, o crescimento residual desigual gera uma deformidade angular progressiva do tornozelo, mais frequentemente em valgo.",
+  "correta": "C. A complicação mais comum é a deformidade em valgo do tornozelo, decorrente do fechamento fisário parcial e assimétrico mais frequentemente descrito nessas fraturas.",
+  "incorretas": {
+   "A": "A consolidação viciosa isolada, sem componente de crescimento, não é a complicação mais tipicamente destacada nesse contexto, que é essencialmente uma complicação de crescimento fisário.",
+   "B": "A sinostose tibiofibular distal é uma complicação possível, mas bem menos frequente do que a deformidade angular por fechamento fisário parcial.",
+   "D": "A parada completa e simétrica da fise geraria apenas discrepância de comprimento, sem deformidade angular — um cenário menos comum do que o fechamento parcial assimétrico."
+  },
+  "alerta": "A literatura descreve o fechamento fisário parcial, levando a deformidade angular, como a complicação mais temida das fraturas fisárias do tornozelo, e a direção mais frequentemente citada é o valgo. Ainda assim, alguns textos dão destaque também à parada completa/simétrica da fise (com discrepância de comprimento) dependendo da série e da faixa etária estudada, então não tenho certeza absoluta de que 'valgo' seja exatamente o achado que a fonte usada pela banca privilegia. Mantenho a alternativa C como a mais provável, mas vale reconferir esse ponto na fonte primária antes de memorizá-lo com confiança total.",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 30"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0532": {
+  "conceito": "O cúbito varo pós-fratura supracondiliana do úmero na criança não decorre de um distúrbio de crescimento fisário (a fise distal do úmero raramente é lesada nesse tipo de fratura extra-articular), mas sim de uma consolidação viciosa da fratura original: o fragmento distal permanece desviado em varo e rotacionado internamente (medialmente) no momento da consolidação, resultando na deformidade tridimensional característica — daí a importância de corrigir tanto a angulação quanto a rotação na redução inicial.",
+  "correta": "D. A causa principal é a consolidação viciosa por desvio medial (varo) e rotação da epífise umeral distal, um problema mecânico de redução, não de crescimento.",
+  "incorretas": {
+   "A": "A fise distal do úmero raramente é acometida diretamente nas fraturas supracondilianas, que são extra-articulares e proximais à fise, tornando o crescimento assimétrico por lesão fisária um mecanismo pouco provável.",
+   "B": "A osteonecrose da tróclea é uma complicação rara e distinta, não a causa principal do cúbito varo pós-fratura supracondiliana.",
+   "C": "Essa alternativa captura apenas o componente de varo da deformidade, mas omite o componente rotacional, hoje reconhecido como parte essencial do mecanismo da deformidade em cúbito varo."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 36"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0533": {
+  "conceito": "Na luxação esternoclavicular posterior em crianças, a manobra de redução clássica é feita com o paciente em posição supina e um coxim colocado entre as escápulas, o que promove extensão da coluna torácica e retração das escápulas, aproximando a extremidade medial da clavícula da linha média. Associa-se a essa manobra a tração do membro superior do lado acometido, que ajuda a desengatar a clavícula de detrás do esterno.",
+  "correta": "D. A manobra combina o coxim entre as escápulas com a tração do membro superior do lado acometido.",
+  "incorretas": {
+   "A": "O coxim abaixo do ombro não promove a extensão torácica necessária para aproximar a clavícula da linha média; o posicionamento correto é entre as escápulas.",
+   "B": "A flexão do ombro não é o movimento associado à manobra de redução clássica, que utiliza tração do membro, não flexão.",
+   "C": "O coxim abaixo do ombro, mesmo associado à tração, não reproduz o posicionamento entre as escápulas necessário para a extensão torácica que facilita a redução."
+  },
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 12.3"
   ],
   "geradoEm": "2026-09-17",
   "conferido": false

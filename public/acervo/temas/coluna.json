@@ -10207,8 +10207,8 @@
         "Radiologia da coluna",
         "Anatomia"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2025,
       "dificuldade": null,
       "enunciado": "Na imagem a seguir, a estrutura apontada pela seta corresponde ao:",
       "imagens": [
@@ -10304,8 +10304,8 @@
       "subtemas": [
         "Anatomia"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2025,
       "dificuldade": null,
       "enunciado": "Na imagem a seguir, a estrutura anatômica apontada pela seta é o",
       "imagens": [
@@ -10356,8 +10356,8 @@
       "subtemas": [
         "Espondilolistese"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2025,
       "dificuldade": null,
       "enunciado": "Na espondilolistese, conforme a classificação de WILTSE, NEWMAN e MACNAB, o tipo IV (traumático) corresponde à fratura:",
       "imagens": [],
@@ -10399,8 +10399,8 @@
       "subtemas": [
         "Hérnia de disco"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2025,
       "dificuldade": null,
       "enunciado": "A história natural da degeneração do disco intervertebral é dividida em:",
       "imagens": [],
@@ -10442,8 +10442,8 @@
       "subtemas": [
         "Infecções da coluna"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2025,
       "dificuldade": null,
       "enunciado": "Paciente masculino, 59 anos, admitido no pronto-socorro com história de dor lombar há sete dias. Ao exame, encontra-se afebril e sem déficits neurológicos. Exames de laboratório: 10.800 leucócitos/mm³, velocidade de hemossedimentação de 40 mm/h (valor normal: 0-20 mm/h) e proteína C reativa de 15 mg/L (valor normal: 0-5 mg/L). Exames de imagem (radiografia e ressonância magnética) sugestivos de espondilodiscite L4L5, sem sinais de instabilidade. Hemocultura positiva para Staphylococcus aureus sensível à meticilina. A conduta mais adequada para este caso é",
       "imagens": [],
@@ -10485,8 +10485,8 @@
       "subtemas": [
         "Exame Físico"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2025,
       "dificuldade": null,
       "enunciado": "Na semiologia da coluna, a manobra na qual a unha do dedo médio é resvalada, desencadeando a flexão da falange distal do indicador e do polegar, é conhecida como:",
       "imagens": [],
@@ -13092,6 +13092,50 @@
         "arquivo": "TARO-2026-publicar.pdf",
         "pagina": 99,
         "numeroOriginal": 99
+      }
+    },
+    {
+      "id": "coluna-0296",
+      "tema": "Coluna",
+      "subtemas": [
+        "Trauma da Coluna",
+        "Ortopedia pediátrica"
+      ],
+      "prova": "TARO",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "A fratura da apófise posterior do corpo vertebral no esqueleto imaturo ocorre tipicamente em",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "recém-nascidos."
+        },
+        {
+          "letra": "B",
+          "texto": "crianças entre 2 e 4 anos de idade."
+        },
+        {
+          "letra": "C",
+          "texto": "crianças entre 5 e 9 anos de idade."
+        },
+        {
+          "letra": "D",
+          "texto": "adolescentes."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2025-publicar.pdf",
+        "pagina": 50,
+        "numeroOriginal": 50
       }
     }
   ]

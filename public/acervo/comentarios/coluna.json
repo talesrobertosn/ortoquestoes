@@ -3039,7 +3039,8 @@
   "alerta": "A identificação do nível depende da contagem vertebral; a resposta acompanha o nível explicitado no item.",
   "referencias": [
    "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020.",
-   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+   "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy.",
+   "Netter — Atlas de Anatomia Humana, 7ª edição — Cap. 3"
   ],
   "geradoEm": "2026-09-13",
   "conferido": false,
@@ -3074,7 +3075,8 @@
   },
   "referencias": [
    "Snell RS. Clinical Neuroanatomy. Descending motor pathways.",
-   "Gray's Anatomy. Spinal cord tracts."
+   "Gray's Anatomy. Spinal cord tracts.",
+   "Netter — Atlas de Anatomia Humana, 7ª edição — Cap. 3"
   ],
   "geradoEm": "2026-09-13",
   "conferido": false,
@@ -3097,7 +3099,10 @@
    "D": "Idem: a presença da pars na descrição desloca o caso para o tipo II."
   },
   "geradoEm": "2026-09-07",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 44"
+  ]
  },
  "coluna-0235": {
   "conceito": "A cascata degenerativa de Kirkaldy-Willis descreve a história natural do segmento em TRÊS estágios, e entendê-la explica por que o mesmo paciente muda de queixa ao longo dos anos. DISFUNÇÃO: fissuras circunferenciais no ânulo e sinovite facetária, com dor localizada e episódica, sem instabilidade. INSTABILIDADE: o disco perde altura, a cápsula facetária se distende, aparecem o deslizamento anormal e a espondilolistese degenerativa — é a fase mais sintomática e a de maior movimento anômalo. ESTABILIZAÇÃO: osteófitos, hipertrofia facetária e do ligamento amarelo travam o segmento; a instabilidade cede, mas o preço é a ESTENOSE.",
@@ -3108,7 +3113,10 @@
    "D": "Mesma objeção quanto ao número de estágios."
   },
   "geradoEm": "2026-09-07",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 39"
+  ]
  },
  "coluna-0236": {
   "conceito": "Espondilodiscite piogênica sem déficit neurológico, sem abscesso compressivo e sem instabilidade é doença clínica, não cirúrgica. O tratamento é antibiótico dirigido, em geral 6 semanas endovenosas seguidas de via oral, guiado pela resposta clínica e pela queda de VHS e PCR. A cirurgia entra em quatro situações: déficit neurológico, instabilidade ou deformidade progressiva, abscesso epidural significativo e falha do tratamento clínico bem conduzido. Nenhuma delas está presente aqui.",
@@ -3119,7 +3127,10 @@
    "D": "Instrumentar quem não tem instabilidade é implantar material em foco infeccioso sem motivo. A estabilização se reserva a destruição vertebral com colapso, cifose progressiva ou déficit por compressão."
   },
   "geradoEm": "2026-09-07",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 42"
+  ]
  },
  "coluna-0237": {
   "conceito": "A descrição do enunciado — resvalar (dar um piparote em) a unha do dedo médio e observar a flexão do polegar e do indicador — é o sinal de Hoffmann. Ele é um sinal de liberação de primeiro neurônio motor e, na coluna cervical, funciona como rastreamento de mielopatia. Vale lembrar o detalhe de nível: o arco reflexo é C8-T1, então o Hoffmann exaltado aponta lesão de C5-C6 para cima.",
@@ -3130,7 +3141,10 @@
    "D": "Oppenheim é o equivalente do Babinski feito no membro inferior: desliza-se o polegar pela crista da tíbia e observa-se a extensão do hálux. Mesma lógica de liberação piramidal do Hoffmann, mas na perna."
   },
   "geradoEm": "2026-09-07",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 4.1"
+  ]
  },
  "coluna-0238": {
   "conceito": "A flexoextensão cervical não se distribui por igual. A maior parcela vem do occipito-C1, e no segmento subaxial ela se concentra no meio da coluna cervical, com pico em C5-C6 e valores próximos em C4-C5. As extremidades contribuem menos: C2-C3 é rígido pela transição com o áxis e C6-C7 já sofre a limitação da transição cervicotorácica. Esse é o motivo de C5-C6 ser também o nível mais precocemente degenerado da cervical — quem mais se move é quem mais se desgasta.",
@@ -3945,6 +3959,20 @@
   },
   "referencias": [
    "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton) — Cap. 39"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "coluna-0296": {
+  "conceito": "A fratura da apófise anular posterior do corpo vertebral (slipped vertebral apophysis) ocorre pela separação traumática de um fragmento ósseo-cartilaginoso da margem posterior do corpo vertebral, que se projeta para o canal vertebral. É uma lesão típica de adolescentes, especialmente do sexo masculino, associada a esportes com carga axial (como levantamento de peso), mais comum nos níveis lombares baixos, e pode mimetizar clinicamente uma hérnia discal aguda.",
+  "correta": "D. A fratura da apófise posterior do corpo vertebral no esqueleto imaturo ocorre tipicamente em adolescentes.",
+  "incorretas": {
+   "A": "Recém-nascidos não apresentam o padrão de trauma axial repetitivo associado a essa lesão, que depende de atividade física e carga significativas.",
+   "B": "Crianças entre 2 e 4 anos raramente estão expostas ao tipo de carga axial (esportiva) associada a essa lesão.",
+   "C": "Crianças entre 5 e 9 anos também estão fora da faixa etária típica, que se concentra na adolescência, próxima ao estirão de crescimento."
+  },
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 12.2"
   ],
   "geradoEm": "2026-09-17",
   "conferido": false
