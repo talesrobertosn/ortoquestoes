@@ -20,8 +20,8 @@ export function Termos() {
       <h2>Preâmbulo</h2>
       <p>
         O presente Termo de Uso, Licença e Consentimento (&quot;Termo&quot;) constitui um contrato de
-        adesão, de natureza civil, celebrado entre, de um lado, {SITE.autor}, médico ortopedista,
-        pessoa física responsável pela concepção, manutenção e operação do site {SITE.nome}, doravante
+        adesão, de natureza civil, celebrado entre, de um lado, o médico residente em Ortopedia e
+        Traumatologia responsável pela concepção, manutenção e operação do site {SITE.nome}, doravante
         denominado simplesmente &quot;{SITE.nome}&quot;, &quot;Plataforma&quot;, &quot;site&quot; ou
         &quot;nós&quot;; e, de outro lado, toda e qualquer pessoa física que crie uma conta de usuário
         na Plataforma, doravante denominada &quot;Usuário&quot;, &quot;você&quot; ou
