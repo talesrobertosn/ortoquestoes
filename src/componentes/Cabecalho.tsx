@@ -5,10 +5,14 @@ import { usarTema } from '../estado/tema'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
 
+// No celular a barra de baixo já leva a Início, Treinar, Revisão e
+// Desempenho — repetir os quatro aqui em cima seria a mesma coisa duas
+// vezes. Por isso só Revisão soma "oculta-celular": os outros dois cabem
+// e valem a pena continuar visíveis mesmo na tela estreita.
 const LINKS = [
-  { destino: '/treinar', rotulo: 'Treinar' },
-  { destino: '/revisao', rotulo: 'Revisão' },
-  { destino: '/dados', rotulo: 'Desempenho' },
+  { destino: '/treinar', rotulo: 'Treinar', ocultaCelular: false },
+  { destino: '/dados', rotulo: 'Desempenho', ocultaCelular: false },
+  { destino: '/revisao', rotulo: 'Revisão', ocultaCelular: true },
 ]
 
 export function Cabecalho({ caminho }: { caminho: string }) {
@@ -26,7 +30,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
           {LINKS.map((link) => (
             <a
               key={link.destino}
-              className="nav-link"
+              className={'nav-link' + (link.ocultaCelular ? ' nav-link--oculta-celular' : '')}
               href={href(link.destino)}
               aria-current={caminho.startsWith(link.destino) ? 'page' : undefined}
             >

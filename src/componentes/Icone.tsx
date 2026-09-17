@@ -1,6 +1,6 @@
 /** Ícones desenhados em traço, 24×24, herdando currentColor. */
 
-const CAMINHOS: Record<string, string> = {
+export const CAMINHOS: Record<string, string> = {
   certo: 'M4 12.5 9.5 18 20 6.5',
   errado: 'M6 6l12 12M18 6L6 18',
   estrela:
@@ -31,6 +31,7 @@ const CAMINHOS: Record<string, string> = {
   grafico: 'M4 20V13M9.5 20V8M15 20v-5M20 20V4M3.5 20h17',
   usuario: 'M12 12.3a4.15 4.15 0 1 0 0-8.3 4.15 4.15 0 0 0 0 8.3zM4.5 20a7.5 7.5 0 0 1 15 0',
   raio: 'M13 3 5 14h5.3l-.9 7 7.6-11h-5.3z',
+  fogo: 'M12 2.5c.6 2.4-.6 3.8-2 5.3-1.6 1.7-3 3.4-3 6a5 5 0 0 0 10 0c0-1.4-.5-2.4-1.2-3.4.1 1.6-.5 2.6-1.4 3-.5-2-2-2.8-2-4.6 0-1.1.6-1.9 1.2-2.6-.7.2-1.2.6-1.6 1.1-.3-1.7.2-3.3 2-4.8Z',
   olho: 'M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z',
   instagram:
     'M7.8 3.5h8.4a4.3 4.3 0 0 1 4.3 4.3v8.4a4.3 4.3 0 0 1-4.3 4.3H7.8a4.3 4.3 0 0 1-4.3-4.3V7.8a4.3 4.3 0 0 1 4.3-4.3zM12 8.1a3.9 3.9 0 1 0 0 7.8 3.9 3.9 0 0 0 0-7.8zM17.1 6.8h.1',

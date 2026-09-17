@@ -237,13 +237,17 @@ textarea {
   font-size: .75rem; font-weight: 700; flex: 0 0 auto;
 }
 
-/* Em telas estreitas o cabeçalho guarda só a marca, a conta e o tema — os
-   destinos de estudo (Treinar, Revisão, Desempenho) já vivem na barra fixa
-   de baixo, então repeti-los aqui em cima seria a mesma coisa duas vezes. */
+/* Em telas estreitas o cabeçalho fica mais apertado: Revisão já vive na
+   barra fixa de baixo (junto com Início), então some daqui em cima, e
+   sobra espaço para Treinar, Desempenho e a conta lado a lado. */
 @media (max-width: 34rem) {
-  .cabecalho__nav-principal { display: none; }
+  .nav-link--oculta-celular { display: none; }
+  .nav-link { padding: 0 0.5rem; }
   .cabecalho__rotulo-conta { display: none; }
   .nav-link--conta { padding: 0; width: 38px; justify-content: center; }
+  /* Com Treinar e Desempenho por extenso na barra, o nome por extenso da
+     marca não cabe mais ao lado deles — some o texto e fica só o símbolo. */
+  .cabecalho__marca .marca-horizontal__texto { display: none; }
 }
 
 /* ---------- Rodapé ------------------------------------------------------ */
@@ -1919,6 +1923,13 @@ kbd {
 .acao-rapida__botoes { display: flex; flex-direction: column; gap: .5rem; width: 100%; margin-top: .25rem; }
 .acao-rapida__botoes .botao { width: 100%; }
 .acao-rapida__contador { display: inline-flex; align-items: center; justify-content: center; min-width: 1.4rem; height: 1.4rem; padding: 0 .4rem; border-radius: 999px; background: var(--verdete); color: var(--sobre-destaque); font-size: .75rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.cartao-streak__topo { display: flex; align-items: center; gap: .75rem; }
+.cartao-streak__topo h2 { margin: .1rem 0 0; }
+.cartao-streak__chama { display: inline-flex; align-items: center; justify-content: center; width: 3rem; height: 3rem; border-radius: 50%; background: #fff1de; color: #d9720a; flex: 0 0 auto; }
+:root[data-tema="escuro"] .cartao-streak__chama { background: #3a2a12; color: #f5a623; }
+.cartao-streak--marco { background: linear-gradient(135deg, #fff1de, var(--superficie)); border-color: #f5a623; }
+:root[data-tema="escuro"] .cartao-streak--marco { background: linear-gradient(135deg, #3a2a12, var(--superficie)); }
 
 .cartao-instagram { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; background: linear-gradient(135deg, var(--verdete-veu), var(--superficie)); }
 .cartao-instagram__icone { display: inline-flex; align-items: center; justify-content: center; width: 3rem; height: 3rem; border-radius: 50%; background: var(--superficie); color: var(--verdete); flex: 0 0 auto; box-shadow: var(--sombra); }
