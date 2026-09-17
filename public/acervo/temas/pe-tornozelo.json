@@ -8892,8 +8892,8 @@
       "subtemas": [
         "Entorse de Tornozelo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "No tratamento cirúrgico da instabilidade lateral crônica do tornozelo, a técnica de CHRISMAN-SNOOK utiliza como reforço o",
       "imagens": [],
@@ -8935,8 +8935,8 @@
       "subtemas": [
         "Artroscopia de tornozelo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Na artroscopia do tornozelo, o portal anteromedial deve ser confeccionado antes do portal anterolateral",
       "imagens": [],
@@ -8979,8 +8979,8 @@
         "Exame Físico",
         "Entorse de Tornozelo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "O teste de PILLINGS, ou teste de compressão lateral da perna, avalia",
       "imagens": [],
@@ -9066,8 +9066,8 @@
       "subtemas": [
         "Tendinopatias"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "A ruptura do tendão tibial anterior ao nível do retináculo extensor inferior é mais comum em indivíduos",
       "imagens": [],
@@ -9109,8 +9109,8 @@
       "subtemas": [
         "Hálux Valgo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "A complicação mais comum do tratamento cirúrgico do hálux valgo é",
       "imagens": [],
@@ -9152,8 +9152,8 @@
       "subtemas": [
         "Tendinopatias"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Paciente com 54 anos, corredor de maratona, apresentando dor intensa na região posterior do calcâneo esquerdo, hiperemia e aumento de volume local há 15 dias (vide foto). Nega dor no calcâneo direito. Apresenta também no exame físico uma contratura dos músculos gastrocnêmio-sóleo. O paciente refere não haver melhora com a medicação analgésica e anti-inflamatória. Conforme o quadro clínico e os exames de imagem abaixo, a principal hipótese diagnóstica e a conduta correta são, respectivamente, Elsevier, 2021.",
       "imagens": [
@@ -14106,6 +14106,106 @@
         "arquivo": "enare-r4-ortopedia-2024.pdf",
         "pagina": null,
         "numeroOriginal": 76
+      }
+    },
+    {
+      "id": "pe-tornozelo-0317",
+      "tema": "Pé e tornozelo",
+      "subtemas": [
+        "Anatomia"
+      ],
+      "prova": "TARO",
+      "ano": 2024,
+      "dificuldade": null,
+      "enunciado": "A estrutura assinalada corresponde ao ramo sensitivo do nervo",
+      "imagens": [
+        {
+          "arquivo": "pe-tornozelo/pe-tornozelo-0317-1.jpeg",
+          "legenda": null,
+          "largura": 299,
+          "altura": 278
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "adutor do hálux."
+        },
+        {
+          "letra": "B",
+          "texto": "fibular profundo."
+        },
+        {
+          "letra": "C",
+          "texto": "abdutor do hálux."
+        },
+        {
+          "letra": "D",
+          "texto": "fibular superficial."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2024-publicar.pdf",
+        "pagina": 117,
+        "numeroOriginal": 117
+      }
+    },
+    {
+      "id": "pe-tornozelo-0318",
+      "tema": "Pé e tornozelo",
+      "subtemas": [
+        "Anatomia"
+      ],
+      "prova": "TARO",
+      "ano": 2024,
+      "dificuldade": null,
+      "enunciado": "A estrutura assinalada é o músculo",
+      "imagens": [
+        {
+          "arquivo": "pe-tornozelo/pe-tornozelo-0318-1.jpeg",
+          "legenda": null,
+          "largura": 600,
+          "altura": 636
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "lumbrical."
+        },
+        {
+          "letra": "B",
+          "texto": "quadrado dorsal."
+        },
+        {
+          "letra": "C",
+          "texto": "interósseo dorsal."
+        },
+        {
+          "letra": "D",
+          "texto": "extensor curto dos dedos."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2024-publicar.pdf",
+        "pagina": 118,
+        "numeroOriginal": 118
       }
     }
   ]

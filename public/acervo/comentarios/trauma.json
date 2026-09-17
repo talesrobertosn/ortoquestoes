@@ -6405,7 +6405,10 @@
    "D": "A tomografia não é o exame mais citado para esse diagnóstico diferencial, e a patela bipartida é tipicamente bilateral, não unilateral."
   },
   "geradoEm": "2026-09-15",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 54"
+  ]
  },
  "trauma-0662": {
   "conceito": "A DISSOCIAÇÃO OCCIPITOCERVICAL é uma lesão de altíssima mortalidade, frequentemente fatal no local do acidente, e o seu diagnóstico depende de medidas radiográficas objetivas — porque o quadro clínico pode ser enganoso e a radiografia parecer quase normal. As medidas de HARRIS são as mais usadas, e ambas partem do BÁSIO (borda anterior do forame magno). O INTERVALO BÁSIO-ODONTOIDE (BDI, basion-dens interval) é a distância entre o básio e o ápice do odontoide; e o INTERVALO BÁSIO-AXIAL (BAI, basion-axial interval) é a distância entre o básio e uma linha traçada ao longo da face posterior do corpo do áxis prolongada para cima. A chamada REGRA DOS 12 estabelece que cada um deles — e, na formulação da questão, a sua leitura conjunta — deve permanecer ABAIXO DE 12 mm no adulto; valores acima disso indicam DISSOCIAÇÃO OCCIPITOCERVICAL. Na criança os valores diferem, e a medida mais confiável passa a ser o intervalo côndilo-C1. Complementam a avaliação a linha de WACKENHEIM (traçada ao longo do clivus, deve tangenciar a face posterior do odontoide), o intervalo CÔNDILO-C1 (o mais sensível na tomografia, anormal acima de 2 mm) e o índice de Powers. A RESSONÂNCIA é indispensável, porque mostra a ruptura dos ligamentos alares, do ligamento apical, da membrana tectória e o hematoma pré-vertebral — sinal indireto que deve sempre levantar a suspeita. E há uma regra terapêutica absoluta que acompanha o diagnóstico: a TRAÇÃO ESTÁ FORMALMENTE CONTRAINDICADA, porque a lesão é por DISTRAÇÃO e a tração pode ser fatal. O tratamento é a ARTRODESE OCCIPITOCERVICAL, e a imobilização provisória se faz com halo ou colar rígido, sem tração.",
@@ -6416,7 +6419,10 @@
    "D": "18 mm é ainda mais permissivo e não corresponde a nenhum critério descrito. A regra consagrada é a dos 12 mm."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 41"
+  ]
  },
  "trauma-0663": {
   "conceito": "Fragmentos de projétil de arma de fogo retidos no corpo geralmente são bem tolerados e se tornam encapsulados por tecido fibroso, sem absorção sistêmica significativa de chumbo. A exceção importante é a localização INTRA-ARTICULAR: o líquido sinovial, com seu ambiente relativamente ácido e rico em enzimas, dissolve o chumbo de forma mais eficiente do que o tecido conjuntivo circundante, permitindo absorção sistêmica contínua e progressiva — condição conhecida como SINOVITE POR CHUMBO ou saturnismo articular —, o que torna a remoção cirúrgica do fragmento indicada especificamente quando ele está localizado dentro de uma articulação.",
@@ -6427,7 +6433,10 @@
    "D": "Fragmentos intraósseos na metáfise também costumam ser bem tolerados e incorporados, sem o risco específico de absorção sistêmica descrito para a localização intra-articular."
   },
   "geradoEm": "2026-09-15",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 2.6"
+  ]
  },
  "trauma-0664": {
   "conceito": "A luxação DORSAL da metacarpofalângica do polegar resulta de hiperextensão forçada e se divide em duas categorias com condutas opostas. Na luxação SIMPLES, a falange proximal fica hiperestendida, quase perpendicular ao metacarpo, e reduz com manobra adequada. Na luxação COMPLEXA, a cabeça do metacarpo 'abotoa' através da fenda capsular e a PLACA VOLAR se INTERPÕE entre a cabeça do metacarpo e a base da falange, tornando a redução fechada impossível. A anatomia explica por que é sempre a placa volar: ela se insere de forma FIRME na base da falange proximal e FROUXA no colo do metacarpo, de modo que, na hiperextensão, destaca-se do lado proximal e permanece presa à falange. Quando se aplica TRAÇÃO LONGITUDINAL COM HIPEREXTENSÃO — o gesto instintivo —, a placa é literalmente puxada para dentro do espaço articular, e uma luxação simples se converte em complexa. Os sinais que denunciam a forma já complexa, e que devem ser procurados ANTES de qualquer tentativa, são três: o dedo fica apenas discretamente estendido, e não em hiperextensão dramática; há PREGUEAMENTO da pele palmar sobre a cabeça do metacarpo proeminente; e a radiografia mostra o SESAMOIDE dentro do espaço articular ou o alargamento da articulação. Nesses casos indica-se de saída a redução ABERTA, por via dorsal ou volar, para retirar a placa volar interposta e reparar as estruturas. Já a manobra correta para a luxação simples é uma redução por deslizamento: flete-se o punho para relaxar os flexores, apoia-se o polegar do examinador na cabeça metacarpal e empurra-se a base da falange proximal em sentido volar e distal, sem tração. Reduzida a articulação, radiografa-se de novo (a avulsão óssea da base da falange é a lesão associada mais comum), testa-se o colateral ulnar e imobiliza-se em flexão por poucos dias.",
@@ -6438,7 +6447,10 @@
    "D": "Os tendões extensores correm pelo DORSO da articulação, do mesmo lado para onde a falange se deslocou, e por isso não se interpõem entre as superfícies. O bloqueio vem do lado volar."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 2.15"
+  ]
  },
  "trauma-0665": {
   "conceito": "A classificação de HERBERT organiza as fraturas do escafoide por estabilidade e por tempo de evolução: TIPO A, agudas ESTÁVEIS (A1, tubérculo; A2, incompleta do colo); TIPO B, agudas INSTÁVEIS (B1, oblíqua distal; B2, completa do colo — a mais frequente; B3, polo proximal; B4, trans-escafo-perilunar; B5, cominutiva); TIPO C, RETARDO DE CONSOLIDAÇÃO; e TIPO D, PSEUDARTROSE ESTABELECIDA. É o grupo D que a questão detalha, e a sua subdivisão acompanha a gravidade progressiva da não consolidação: D1, união FIBROSA — o traço preenchido por tecido fibroso, com pouca esclerose; D2, PSEUDARTROSE propriamente dita; D3, pseudartrose ESCLERÓTICA, com bordas duras, cistos e reabsorção; e D4, pseudartrose com NECROSE AVASCULAR do polo proximal. Essa graduação não é acadêmica: ela corresponde, degrau por degrau, à técnica cirúrgica indicada. Nas pseudartroses SEM reabsorção significativa e SEM instabilidade cárpica, basta o enxerto de preenchimento não vascularizado por via volar — a técnica de MATTI-RUSSE. Quando há colapso, encurtamento e deformidade em CORCOVA com DISI, é preciso um enxerto ESTRUTURAL em cunha volar de crista ilíaca tricortical (Fisk-Fernandez), que reabre o ângulo e restaura o comprimento. E quando o polo proximal está NECRÓTICO — o D4 —, nenhum enxerto convencional resolve, porque se estaria encostando osso morto em osso morto: a indicação passa para o enxerto VASCULARIZADO, seja o pediculado do dorso do rádio distal pela artéria 1,2 intercompartimental supra-retinacular (técnica de ZAIDEMBERG), seja o livre do CÔNDILO FEMORAL MEDIAL com anastomose microcirúrgica. Se a artrose já estiver instalada — o colapso SNAC —, sai-se da reconstrução e entra-se no resgate: estiloidectomia, carpectomia proximal ou artrodese dos quatro cantos.",
@@ -6449,7 +6461,10 @@
    "D": "Também não existe tipo D6. Quando a evolução ultrapassa o D4 e a artrose se instala, o quadro deixa de ser descrito pela classificação de Herbert e passa a ser estadiado como colapso SNAC (scaphoid nonunion advanced collapse)."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 2.20"
+  ]
  },
  "trauma-0666": {
   "conceito": "A pseudartrose da clavícula — ausência de consolidação após 6 meses — alcança 15% ou mais nas fraturas do terço médio com desvio, muito acima do 1% que as séries clássicas de Neer e Rowe sugeriam. Os FATORES DE RISCO identificados nos estudos populacionais (notadamente a coorte de Robinson, em Edimburgo) são: DESVIO com perda COMPLETA do contato entre os fragmentos (e não apenas contato menor que 50%); COMINUIÇÃO, sobretudo a segmentar (2B2 de Robinson); ENCURTAMENTO acima de 2 cm; IDADE AVANÇADA; SEXO FEMININO (e não masculino — o dado é consistente e costuma surpreender); TABAGISMO; e TRAUMA DE ALTA ENERGIA, que combina maior lesão de partes moles, maior desperiostização e maior desvio. Vale precisar cada limiar, porque as alternativas exploram justamente os valores próximos. Um encurtamento de 1,5 cm está abaixo do limiar de 2 cm consagrado como fator de risco e como critério de indicação cirúrgica primária. Um contato entre fragmentos menor que 50% ainda significa que HÁ contato cortical: o que caracteriza risco é a perda COMPLETA do contato, com os fragmentos totalmente afastados. E o sexo masculino, longe de ser fator de risco, é o oposto do que os dados mostram. O tratamento da pseudartrose estabelecida é a redução aberta com PLACA e ENXERTO ÓSSEO, restaurando o comprimento — o enxerto estrutural é indispensável nas formas ATRÓFICAS, enquanto nas HIPERTRÓFICAS, em que já há biologia abundante e o que falta é estabilidade, a placa isolada costuma bastar. E, como sempre, o cuidado com o plexo braquial e os vasos subclávios, imediatamente abaixo do terço médio.",
@@ -6460,7 +6475,10 @@
    "D": "O que caracteriza risco é a perda COMPLETA do contato entre os fragmentos, com desvio de 100% do diâmetro do osso. Um contato residual, ainda que menor que metade, mantém alguma continuidade e não é o critério descrito."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.) — Cap. 33"
+  ]
  },
  "trauma-0667": {
   "conceito": "No OMBRO FLUTUANTE, a dupla ruptura do COMPLEXO SUSPENSÓRIO SUPERIOR — em regra a fratura da clavícula somada à fratura do colo da escápula — desconecta o fragmento GLENOIDAL do esqueleto axial. A partir daí, ele deixa de ser sustentado e passa a obedecer apenas ao peso do membro e à tração muscular. O peso puxa o conjunto para BAIXO, de modo que o deslocamento é DISTAL (inferior); e a tração da musculatura escapulotorácica e do peitoral menor, inserido no coracoide, o leva para dentro, medializando-o. Ao mesmo tempo, o fragmento BASCULA: a glenoide roda de modo que a sua superfície articular deixa de olhar para a frente e para fora e passa a se voltar para BAIXO — é essa báscula que a questão designa como valgo, e é ela que se mede, na radiografia, pela QUEDA DO ÂNGULO GLENOPOLAR (normal entre 30 e 45 graus; abaixo de 20 indica cirurgia). As consequências funcionais decorrem diretamente dessa geometria: a glenoide voltada para baixo altera a direção da força do deltoide e do manguito, produzindo fraqueza da abdução, fadiga precoce e dor, além de encurtar o braço de alavanca quando há medialização associada (relevante acima de 20 mm). A avaliação exige incidência em frente verdadeira da escápula, perfil em Y e TOMOGRAFIA com reconstrução tridimensional. O tratamento das lesões com desvio significativo é cirúrgico, e com frequência a FIXAÇÃO ISOLADA DA CLAVÍCULA — tecnicamente mais simples e de menor morbidade — restaura indiretamente a posição da glenoide, tornando desnecessária a osteossíntese da escápula. E, por ser lesão de alta energia, obriga a procurar fraturas de costela, pneumotórax e lesões do plexo braquial.",
@@ -6471,7 +6489,10 @@
    "D": "Também erra o sentido vertical. Acerta a báscula em valgo, mas o fragmento cai distalmente, e é justamente essa queda que caracteriza o ombro 'flutuante'."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.) — Cap. 32"
+  ]
  },
  "trauma-0668": {
   "conceito": "A SÍNDROME COMPARTIMENTAL do antebraço é a complicação que transforma uma fratura banal em uma mão inútil, porque o desfecho da isquemia muscular não tratada é a CONTRATURA ISQUÊMICA DE VOLKMANN. A sua incidência nas fraturas diafisárias do antebraço é BAIXA — da ordem de 1% a 3% —, com predomínio do HOMEM JOVEM, acompanhando o perfil de alta energia dessas fraturas; ela é mais frequente nas fraturas expostas, nas por projétil de arma de fogo (onde a COMINUIÇÃO é o marcador da energia transferida), nas associadas a lesão vascular e depois de imobilizações circulares apertadas. O diagnóstico é CLÍNICO e não espera exame: dor DESPROPORCIONAL ao esperado, dor ao ESTIRAMENTO PASSIVO dos dedos (o sinal mais precoce e mais sensível), tensão dos compartimentos à palpação, parestesia e, tardiamente, paralisia. O pulso PRESENTE não afasta o diagnóstico — a pressão compartimental que mata o músculo é muito inferior à pressão sistólica —, e no paciente sedado, intubado ou com bloqueio regional a medida da pressão compartimental se impõe (pressão diferencial, ou delta-P, menor que 30 mmHg em relação à diastólica indica fasciotomia). O tratamento é a FASCIOTOMIA ampla e imediata, e o princípio que a questão cobra é a extensão dela: o antebraço tem quatro compartimentos — o VOLAR SUPERFICIAL, o VOLAR PROFUNDO (onde estão o flexor profundo dos dedos e o flexor longo do polegar, os primeiros a sofrer e a origem da contratura de Volkmann), o DORSAL e o MÓVEL WAD (braquiorradial e extensores radiais do carpo) —, e TODOS precisam ser descomprimidos, sob pena de deixar músculo isquêmico para trás. A incisão volar curvilínea, do tipo Henry estendido, é a principal: começa proximal à prega do cotovelo, libera o LACERTO FIBROSO, abre os dois compartimentos volares e se prolonga até o TÚNEL DO CARPO. Uma segunda incisão dorsal, longitudinal, abre o compartimento dorsal e o móvel wad quando eles permanecem tensos.",
@@ -6482,7 +6503,10 @@
    "D": "Atenção: como descrição TÉCNICA, esta alternativa não é falsa — a incisão volar padrão realmente libera o lacerto fibroso proximalmente e se estende até o túnel do carpo distalmente. Ela é dada como incorreta por ser INCOMPLETA diante da alternativa C: descreve dois pontos de uma via, e não o princípio de descomprimir todos os quatro compartimentos, que é o que define a operação."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.) — Cap. 41"
+  ]
  },
  "trauma-0669": {
   "conceito": "O complexo ligamentar colateral LATERAL do cotovelo tem quatro componentes: o ligamento colateral radial, o LIGAMENTO COLATERAL ULNAR LATERAL (LCUL), o ligamento anular e o ligamento acessório. O LCUL é o estabilizador que impede a INSTABILIDADE ROTATÓRIA POSTEROLATERAL, e a sua anatomia explica o padrão de lesão: ele se origina no EPICÔNDILO LATERAL, exatamente no CENTRO DE ROTAÇÃO do capítulo — por isso é isométrico ao longo de todo o arco de flexão e extensão — e se insere distalmente na crista supinadora da ulna, uma inserção larga e difusa. Nas luxações do cotovelo e na tríade terrível, o mecanismo de O'Driscoll rompe as estruturas de lateral para medial, e o ponto de falha do complexo lateral é a origem UMERAL: o ligamento AVULSIONA da inserção PROXIMAL, no epicôndilo lateral, arrancando junto a origem comum dos extensores em graus variados — o achado intraoperatório clássico de que 'o epicôndilo está nu'. A insersão distal, ampla e ancorada na crista supinadora, resiste melhor; rupturas intrassubstanciais são incomuns na lesão aguda. Isso tem consequência prática direta: o reparo agudo se faz REINSERINDO o ligamento no epicôndilo lateral, no centro de rotação do capítulo, com âncora ou túnel transósseo, e a fixação fora desse ponto — sobretudo se anterior ou proximal a ele — deixa o ligamento não isométrico e o reparo falha. No exame físico, a instabilidade posterolateral se pesquisa pelo teste do PIVÔ LATERAL (lateral pivot-shift de O'Driscoll), em geral só reprodutível sob anestesia, e pelos testes de apreensão em apoio, como o chair test e o push-up test. No pós-operatório, o antebraço é mantido em PRONAÇÃO, que tensiona o complexo lateral e protege o reparo.",
@@ -6493,7 +6517,10 @@
    "D": "A lesão em ambas as inserções simultaneamente não é o padrão descrito. Se fosse, o reparo por reinserção no epicôndilo — que é o tratamento padrão e resolve a maioria dos casos — não funcionaria como funciona."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.) — Cap. 39"
+  ]
  },
  "trauma-0670": {
   "conceito": "A fratura do quadril no idoso é um EVENTO SENTINELA, e o número que melhor traduz isso é o risco de uma SEGUNDA fratura. Nos dois anos seguintes à primeira, esse risco fica em torno de 5% nos HOMENS (e em torno de 8% a 10% nas mulheres, segundo as séries), e — o dado mais eloquente — em MAIS DE 70% dos casos a segunda fratura é DO MESMO TIPO da primeira, com frequência no quadril contralateral. A explicação é que os fatores que produziram a primeira fratura permanecem todos ali: a osteoporose não tratada, a sarcopenia, o distúrbio do equilíbrio, a hipotensão postural, a polifarmácia com sedativos, o déficit visual e o ambiente doméstico perigoso. E a fratura em si piora o quadro, porque a imobilização e a internação aceleram a perda de massa óssea e muscular. A consequência prática é a mais importante do tema, e é sistematicamente negligenciada: o tratamento da fratura do quadril NÃO TERMINA NA CIRURGIA. Ele exige a investigação e o tratamento da OSTEOPOROSE — dosagem de cálcio, fósforo, vitamina D, função renal e paratormônio, densitometria quando possível, reposição de cálcio e vitamina D e início de agente antirreabsortivo ou anabólico, que pode ser feito já na internação — e a avaliação do RISCO DE QUEDAS, com revisão de medicamentos, correção visual, fisioterapia de equilíbrio e adaptação do domicílio. Some-se a isso o contexto de gravidade: a mortalidade em um ano após a fratura do quadril é de 20% a 30%, e apenas metade dos pacientes recupera o nível funcional prévio. É por essa razão que os modelos de cuidado ortogeriátrico compartilhado, com cirurgia precoce nas primeiras 24 a 48 horas, reduziram mortalidade e complicações de forma consistente.",
@@ -6504,7 +6531,10 @@
    "D": "Acerta o risco de 5% nos homens, mas subestima a repetição do padrão: mais de 70% das segundas fraturas são do mesmo tipo, com frequência no quadril contralateral."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.) — Cap. 52"
+  ]
  },
  "trauma-0671": {
   "conceito": "A associação de fratura da DIÁFISE com fratura do COLO do fêmur ipsilateral ocorre em cerca de 5% a 9% das fraturas diafisárias de alta energia, e tem um padrão característico que decorre do mecanismo. A força é uma CARGA AXIAL transmitida pelo joelho fletido contra o painel do automóvel: ela sobe pela diáfise, quebra-a, e o restante da energia alcança o fêmur proximal por um vetor vertical. O resultado é uma fratura do colo tipicamente BASICERVICAL (ou transcervical), com traço VERTICALIZADO e, na maioria das vezes, SEM DESVIO ou com desvio mínimo — muito diferente da subcapital desviada do idoso, produzida pela queda lateral com rotação externa. Essa combinação de características cria a principal armadilha do tema: por ser pouco desviada e ficar ofuscada pela fratura diafisária evidente, a fratura do colo é PERDIDA na avaliação inicial em até 30% dos casos. Daí a regra que salva: toda fratura diafisária do fêmur exige radiografia DEDICADA do quadril em rotação interna e, idealmente, TOMOGRAFIA de rastreamento — além de reavaliação das imagens no pós-operatório e de radioscopia do quadril na mesa cirúrgica antes de introduzir qualquer haste. Duas consequências favoráveis derivam do padrão basicervical: o traço é mais distal e poupa os vasos retinaculares, de modo que a taxa de OSTEONECROSE é BAIXA (em torno de 5% ou menos, menor que nas fraturas isoladas do colo do idoso); e o paciente é jovem, com boa capacidade de consolidação. O problema real é a PSEUDARTROSE do colo quando a redução é imperfeita — motivo pelo qual a fratura do COLO TEM PRIORIDADE no tratamento, e a estratégia com implantes separados oferece os melhores resultados.",
@@ -6515,7 +6545,10 @@
    "D": "A basocervical COM DESVIO é menos frequente: a energia se dissipa em boa parte na fratura diafisária, de modo que o traço do colo costuma chegar pouco desviado — o que é precisamente o que o torna tão fácil de perder."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.) — Cap. 2.40"
+  ]
  },
  "trauma-0672": {
   "conceito": "A fratura TRANSVERSA é um dos cinco padrões ELEMENTARES (simples) da classificação de Judet e Letournel — ao lado da parede posterior, coluna posterior, parede anterior e coluna anterior —, distinta dos cinco padrões ASSOCIADOS (mais complexos: T, coluna posterior + parede posterior, transversa + parede posterior, coluna anterior + hemitransversa posterior, e dupla coluna). Em termos de frequência, a fratura transversa isolada corresponde a uma proporção MODERADA do total de fraturas acetabulares — situada entre aproximadamente 5% E 19% nas séries publicadas —, bem menos comum do que a parede posterior isolada (o padrão mais frequente de todos, respondendo por uma fração bem maior do total). Reconhecer a transversa como um padrão ELEMENTAR é importante porque, sendo simples (um único traço através de ambas as colunas, dividindo o acetábulo numa porção superior e outra inferior), costuma ter uma via de acesso e uma estratégia de fixação mais diretas do que os padrões associados, mais complexos.",
@@ -6526,7 +6559,10 @@
    "D": "Nem o intervalo de frequência nem a classificação como padrão associado correspondem à fratura transversa, que é elementar e corresponde a cerca de 5 a 19% dos casos."
   },
   "geradoEm": "2026-09-14",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.) — Cap. 50"
+  ]
  },
  "trauma-0673": {
   "conceito": "A radiografia convencional do tórax e da clavícula não resolve a articulação ESTERNOCLAVICULAR: o esterno, as costelas e a coluna se sobrepõem exatamente sobre a área de interesse, e uma luxação franca pode passar despercebida. Rockwood descreveu então a incidência SERENDIPITY, cujo nome traduz a origem — ele chegou à angulação por tentativa e erro. A técnica é a seguinte: paciente em DECÚBITO DORSAL, chassi atrás dos ombros e do pescoço, tubo angulado 40 graus em sentido CAUDOCRANIAL (o feixe entra por baixo, do lado dos pés, e sobe em direção à cabeça) e CENTRADO NO MANÚBRIO, sobre a linha média do esterno. A angulação afasta a projeção das clavículas mediais da sobreposição do esterno e da coluna, e o centro na linha média garante o essencial dessa incidência: as DUAS clavículas aparecem na mesma imagem, com a mesma geometria, o que torna a leitura COMPARATIVA. Traça-se uma linha pela clavícula normal e observa-se a acometida: se ela sobe acima dessa linha, o desvio é ANTERIOR; se desce abaixo, é POSTERIOR — e a posterior é a emergência, pela vizinhança com a traqueia, o esôfago, os grandes vasos e o plexo braquial. Angular no sentido inverso, craniocaudal, ou centrar lateralmente ao esterno destruiria as duas propriedades que fazem o exame funcionar: o afastamento da sobreposição e a simetria entre os lados. Hoje a TOMOGRAFIA com contraste é o exame definitivo, porque define o sentido do desvio, avalia as estruturas mediastinais e distingue a luxação verdadeira do DESCOLAMENTO FISÁRIO — a fise medial da clavícula é a última do corpo a fechar, entre os 23 e os 25 anos, e no jovem o que parece luxação costuma ser lesão fisária com bom potencial de remodelação. A serendipity permanece útil como primeira imagem, sobretudo onde a tomografia não está disponível de imediato.",
@@ -6537,7 +6573,10 @@
    "C": "Acerta o centro no esterno, mas inverte a angulação: a inclinação craniocaudal mantém a superposição do esterno e das costelas sobre as articulações esternoclaviculares, que é exatamente o problema que a incidência foi criada para resolver."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 19"
+  ]
  },
  "trauma-0675": {
   "conceito": "Assim como em outras questões deste acervo sobre a fratura proximal da tíbia tratada com haste intramedular, o padrão de mau alinhamento mais comumente descrito nessa localização é a combinação de VALGO com desvio ANTERIOR (procurvato, ápice anterior). Duas forças convergem para produzir esse padrão específico: primeiro, o tendão patelar, tracionando o fragmento proximal para a frente, flexiona esse fragmento em relação ao eixo diafisário, produzindo o componente ANTERIOR; segundo, o alargamento metafisário característico da região proximal da tíbia, combinado com o ponto de entrada padrão (próximo à espinha tibial lateral), tende a direcionar a trajetória da haste de um jeito que abre o foco de fratura medialmente, produzindo o componente em VALGO. Reconhecer essa combinação específica é o que orienta o cirurgião a antecipar a correção — por exemplo, com o uso de parafusos de bloqueio na técnica de Krettek, posicionados nas faces côncavas correspondentes — em vez de simplesmente bloquear a haste e aceitar um desvio residual previsível.",
@@ -6548,7 +6587,10 @@
    "D": "O desvio posterior não corresponde ao componente sagital mais comumente descrito — é o anterior (procurvato), pela tração do tendão patelar sobre o fragmento proximal."
   },
   "geradoEm": "2026-09-14",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 54"
+  ]
  },
  "trauma-0676": {
   "conceito": "As fraturas da TUBEROSIDADE DO CALCÂNEO são avulsões produzidas pela tração do TRÍCEPS SURAL através do tendão de Aquiles, e ocorrem em dois cenários: no idoso com osso OSTEOPÊNICO (frequentemente diabético, como fratura por insuficiência desencadeada por esforço banal) e após queda com o pé em DORSIFLEXÃO forçada. BEAVIS as classificou em três tipos: TIPO I, avulsão em 'casca' (sleeve) da cortical posterior, um fragmento fino e superficial; TIPO II, avulsão em BICO (beak), com traço oblíquo que destaca um fragmento triangular maior a partir da porção superior da tuberosidade; TIPO III, avulsão infrabursal, da porção média da tuberosidade. O tipo II é o que exige REDUÇÃO E FIXAÇÃO URGENTES, e a razão é mecânica: o fragmento em bico, tracionado proximal e posteriormente pelo tríceps sural, tem a sua borda superior empurrada CONTRA A PELE DA FACE POSTERIOR DO CALCANHAR — uma pele fina, aderida, de irrigação terminal e sem qualquer almofada subcutânea para absorver a pressão. O resultado é o 'tenting' cutâneo, com área pálida, tensa e sem enchimento capilar sobre a proeminência, que pode NECROSAR EM HORAS. A necrose converte a fratura fechada em exposta e leva a osteomielite do calcâneo, cenário particularmente grave na população em que a lesão é mais comum, o idoso diabético com neuropatia e vasculopatia. Por isso essa é uma das poucas emergências verdadeiras do pé: exige avaliação imediata da pele e redução sem esperar o edema regredir — ao contrário do que se faz nas fraturas intra-articulares do calcâneo, em que se aguarda o sinal da prega. A fixação é feita com parafusos canulados de compressão, com frequência reforçada por sutura em banda de tensão no tendão de Aquiles, dada a má qualidade óssea.",
@@ -6559,7 +6601,10 @@
    "D": "A classificação de Beavis para as fraturas da tuberosidade do calcâneo tem apenas três tipos — não existe tipo IV."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 89"
+  ]
  },
  "trauma-0677": {
   "conceito": "A TRÍADE DA MULHER ATLETA associa três componentes encadeados: BAIXA DISPONIBILIDADE ENERGÉTICA (com ou sem transtorno alimentar, do qual a ANOREXIA é a expressão extrema), DISFUNÇÃO MENSTRUAL — que se manifesta como OLIGOMENORREIA ou AMENORREIA — e BAIXA DENSIDADE MINERAL ÓSSEA (osteopenia e osteoporose). A cadeia causal é bem estabelecida: o déficit energético, por restrição alimentar ou por gasto excessivo no treino, reduz a secreção pulsátil de GnRH; a queda do LH e do FSH leva ao HIPOESTROGENISMO; e o estrogênio é o principal freio da reabsorção óssea, de modo que a sua falta produz perda de massa óssea justamente na fase da vida em que a atleta deveria estar construindo o seu PICO. Note que os dois erros possíveis nas alternativas são espelhos do mecanismo: a HIPERmenorreia é o oposto da disfunção descrita, e a ALTA densidade óssea é o oposto do desfecho. O desfecho ortopédico é a FRATURA POR ESTRESSE, e a do COLO DO FÊMUR é a mais perigosa: dor inguinal insidiosa relacionada ao esforço, com radiografia inicial normal e diagnóstico pela RESSONÂNCIA. A distinção que muda tudo é entre a fratura de COMPRESSÃO, na cortical inferomedial (calcar), estável e tratável com restrição de carga, e a de TENSÃO, na cortical SUPEROLATERAL, instável, com alto risco de progredir para fratura completa e desviada, com osteonecrose e sequela definitiva — e por isso com indicação de FIXAÇÃO PROFILÁTICA. O conceito foi ampliado pelo Comitê Olímpico Internacional para a RED-S (deficiência energética relativa no esporte), que reconhece repercussões metabólicas, imunológicas, cardiovasculares e de desempenho, e que se aplica também a homens. O tratamento é multidisciplinar e a base é restaurar a disponibilidade energética.",
@@ -6570,7 +6615,10 @@
    "C": "Acerta a alteração menstrual, mas erra o desfecho ósseo: o hipoestrogenismo remove o freio da reabsorção e produz BAIXA densidade mineral óssea — é justamente essa perda que leva à fratura por estresse."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.) — Cap. 52"
+  ]
  },
  "trauma-0679": {
   "conceito": "O paciente descrito — fratura do pilão tibial 43-C3 (a mais grave e cominuída na classificação AO), com fratura cominutiva associada da fíbula, deformidade importante e edema acentuado — reúne exatamente o perfil de alto risco para complicação de partes moles que orienta a conduta padrão-ouro na urgência: o TRATAMENTO ESTAGIADO. Na fase aguda, antes que o edema (já acentuado no momento da chegada) atinja seu pico — o que costuma ocorrer nos primeiros dias após o trauma —, a prioridade é restaurar o comprimento, o alinhamento e a rotação grosseiros através de LIGAMENTOTAXIA (a tração exercida pelas partes moles e ligamentos intactos ao redor da articulação, quando o membro é distraído) associada a um FIXADOR EXTERNO TRANSARTICULAR (que atravessa o tornozelo, ancorado no calcâneo e/ou no antepé, estabilizando o conjunto sem qualquer manipulação direta do foco de fratura). Esse fixador provisório 'compra tempo' para o edema resolver — geralmente verificado pelo sinal do enrugamento da pele — antes que a fixação definitiva com placas, mais invasiva, possa ser realizada com segurança, minimizando drasticamente o risco de deiscência de ferida e infecção que a fixação definitiva imediata acarretaria nesse cenário de alta energia e partes moles comprometidas.",
@@ -6581,7 +6629,10 @@
    "D": "O fixador circular tipo Ilizarov definitivo não é a conduta padrão na urgência para esse quadro — a fase aguda pede um fixador transarticular temporário, com a definição do tratamento definitivo adiada."
   },
   "geradoEm": "2026-09-14",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.) — Cap. 63"
+  ]
  },
  "trauma-0680": {
   "conceito": "A face inferior da CLAVÍCULA dá inserção à FÁSCIA CLAVIPEITORAL (ou aponeurose costocoracoide), uma lâmina fibrosa que desce do osso envolvendo o subclávio e o peitoral menor. Essa fáscia tem uma relação anatômica decisiva: ela se prende à parede da VEIA SUBCLÁVIA e a mantém ANCORADA à face inferior da clavícula. É por isso que a veia subclávia é o vaso mais vulnerável nas fraturas diafisárias — presa por essa aponeurose, ela não desliza nem se afasta quando o fragmento se desloca ou quando a broca ultrapassa a cortical inferior durante a osteossíntese; ela é arrastada junto. Some-se a isso que a veia é a estrutura mais ANTERIOR e mais INFERIOR do feixe do desfiladeiro torácico, encostada na clavícula e na primeira costela, e que as suas paredes são finas e a pressão baixa. O mesmo ancoramento explica outro fenômeno clínico conhecido: a veia subclávia fixada não colaba quando seccionada, o que aumenta o risco de EMBOLIA GASOSA na sua lesão — motivo pelo qual, diante de sangramento venoso nessa topografia, o paciente deve ser colocado em Trendelenburg. As consequências práticas para o cirurgião são três: no trauma agudo, avaliar sempre o estado neurovascular do membro; na osteossíntese, controlar rigorosamente a profundidade da broca na cortical inferior do terço médio, usando protetor de partes moles e apoio com afastador; e, no seguimento tardio, lembrar que o CALO HIPERTRÓFICO e a consolidação viciosa com encurtamento estreitam o espaço costoclavicular e produzem síndrome do desfiladeiro — cuja manifestação mais frequente é a compressão crônica do tronco inferior do PLEXO BRAQUIAL (C8-T1), seguida da compressão venosa com edema e cianose.",
@@ -9875,6 +9926,163 @@
   },
   "referencias": [
    "Leite, Faloppa — Propedêutica Ortopédica e Traumatológica, 1ª edição — Cap. 40"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "trauma-1036": {
+  "conceito": "KFURI e SCHATZKER propuseram uma releitura da classificação clássica de Schatzker para as fraturas do planalto tibial, descrevendo o plano coronal como divisor entre uma zona anterior e uma zona posterior do planalto. Os dois pontos de referência anatômicos usados para traçar esse plano são a borda anterior da cabeça da fíbula e a borda posterior da inserção do ligamento colateral medial superficial na tíbia.",
+  "correta": "B. Os pontos de referência são o limite anterior da cabeça da fíbula e o limite posterior da inserção do ligamento colateral medial.",
+  "incorretas": {
+   "A": "O limite anterior da inserção do ligamento colateral medial não é o ponto de referência posterior descrito por Kfuri e Schatzker; o correto é o limite posterior dessa inserção.",
+   "C": "O limite posterior da cabeça da fíbula não é a referência anterior utilizada; a referência correta nesse osso é o seu limite anterior.",
+   "D": "Essa alternativa erra os dois pontos de referência simultaneamente, invertendo tanto a borda da fíbula quanto a da inserção do ligamento colateral medial."
+  },
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 2.43"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "trauma-1037": {
+  "conceito": "Em atletas de alto rendimento, as lesões traumáticas do tendão patelar podem se associar a lesões concomitantes do ligamento cruzado anterior, situação que exige atenção especial na avaliação pré-operatória, já que a decisão sobre a fonte do enxerto e a sequência de reparo pode ser impactada quando as duas lesões coexistem.",
+  "correta": "C. A lesão associada do ligamento cruzado anterior acontece em até 25% dos casos de rotura traumática do tendão patelar em atletas de alto rendimento.",
+  "incorretas": {
+   "A": "O valor de 2,5% subestima a frequência dessa associação relatada na literatura para atletas de alto rendimento.",
+   "B": "O valor de 12,5% também fica abaixo da frequência de associação classicamente descrita nesse contexto.",
+   "D": "O valor de 40% superestima a frequência dessa associação em relação ao que a literatura descreve."
+  },
+  "alerta": "O percentual exato de associação entre a lesão do tendão patelar e a lesão do LCA em atletas de alto rendimento varia entre as séries publicadas, e não tenho certeza absoluta de que 25% seja o número textualmente usado pela fonte da banca. Mantive a alternativa C como a mais plausível dentre as opções, mas é um dado epidemiológico pontual que vale confirmar na fonte primária antes de memorizar com confiança total.",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.) — Cap. 59"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "trauma-1038": {
+  "conceito": "Duas variáveis anatômicas aumentam o risco de lesão do ligamento cruzado anterior: um espaço intercondilar (chanfradura) estreito, que predispõe ao impacto (impingement) do LCA contra as paredes ósseas durante os movimentos do joelho, e uma inclinação sagital posterior da tíbia (posterior tibial slope) aumentada, que favorece a translação anterior excessiva da tíbia em relação ao fêmur, sobrecarregando o ligamento.",
+  "correta": "D. O risco de lesão do LCA é maior em joelhos com espaço intercondilar estreito e inclinação sagital tibial posterior aumentada.",
+  "incorretas": {
+   "A": "Um espaço intercondilar largo tende a reduzir, e não aumentar, o risco de impacto do LCA contra as paredes ósseas.",
+   "B": "Embora a inclinação aumentada seja um fator de risco real, um espaço intercondilar largo não é o fator associado — o fator de risco é o espaço estreito.",
+   "C": "A inclinação sagital tibial posterior diminuída não é o fator de risco descrito; o aumento dessa inclinação é o que sobrecarrega o LCA."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 45"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "trauma-1039": {
+  "conceito": "O sinal de BASSET descreve um achado radiográfico de calcificação ou de um pequeno fragmento ósseo na origem femoral do ligamento patelofemoral medial (epicôndilo medial do fêmur), encontrado em pacientes com histórico de luxação ou instabilidade da patela — reflexo de uma lesão desse ligamento decorrente do episódio de luxação.",
+  "correta": "D. O sinal de Basset indica lesão do ligamento patelofemoral medial, evidenciada por uma calcificação ou fragmento ósseo na sua origem femoral.",
+  "incorretas": {
+   "A": "A presença de cisto meniscal não é o achado descrito pelo sinal de Basset, que se refere a uma alteração óssea na origem femoral do ligamento patelofemoral medial.",
+   "B": "A síndrome dolorosa patelofemoral é um diagnóstico clínico funcional, não o achado radiográfico específico associado ao sinal de Basset.",
+   "C": "O ligamento colateral tibial (medial) não é a estrutura associada a esse sinal, que se refere especificamente ao ligamento patelofemoral medial."
+  },
+  "alerta": "O sinal de Basset é mais frequentemente descrito na literatura como um achado relacionado a episódios repetidos ou remotos de luxação patelar (calcificação crônica na origem femoral do ligamento patelofemoral medial), e não necessariamente como sinal de lesão aguda, como a alternativa D descreve. Mantive a alternativa D por ser a única entre as opções que cita corretamente a estrutura anatômica (ligamento patelofemoral medial), mas o caráter agudo versus crônico do achado vale confirmar na fonte primária.",
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 9.1"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "trauma-1040": {
+  "conceito": "O tendão do músculo poplíteo, junto ao complexo arqueado posterolateral, é um dos principais estabilizadores dinâmicos e estáticos contra a rotação externa excessiva da tíbia e a translação posterolateral, sendo fundamental na prevenção da instabilidade rotatória posterolateral do joelho.",
+  "correta": "D. O tendão do poplíteo tem maior importância na restrição da rotação tibial externa.",
+  "incorretas": {
+   "A": "A restrição ao varo depende principalmente do ligamento colateral lateral e de estruturas laterais estáticas, não do tendão do poplíteo isoladamente.",
+   "B": "A restrição ao valgo depende do ligamento colateral medial, estrutura sem relação direta com a função do poplíteo.",
+   "C": "A rotação tibial interna não é a restringida principalmente pelo poplíteo; a sua função central é limitar a rotação externa."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 45"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "trauma-1041": {
+  "conceito": "As plicas sinoviais do joelho são remanescentes embrionários de septos que dividiam a cavidade articular. Entre elas, a plica medial (patelar medial ou mediopatelar) é a mais frequentemente associada a sintomas clínicos, podendo causar dor, estalidos e sensação de ressalto quando espessada ou fibrótica, sobretudo por seu trajeto sobre o côndilo femoral medial.",
+  "correta": "D. A plica patelar medial é a que mais frequentemente apresenta sintomatologia clínica no joelho.",
+  "incorretas": {
+   "A": "A plica infrapatelar (ligamento mucoso) raramente causa sintomas clínicos relevantes, sendo um achado frequentemente incidental.",
+   "B": "A plica suprapatelar também costuma ser assintomática na maioria dos indivíduos, ao contrário da plica medial.",
+   "C": "Não há uma plica patelar lateral classicamente descrita como a mais sintomática; a plica medial é a de maior relevância clínica."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 51"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "trauma-1042": {
+  "conceito": "O vasto medial oblíquo e o ligamento patelofemoral medial atuam como os principais estabilizadores dinâmico e estático da patela nos primeiros graus de flexão do joelho (aproximadamente 0 a 20 graus), período em que a patela ainda não está engatada no sulco troclear e depende predominantemente de estruturas de tecido mole para sua estabilização; a partir de cerca de 30 graus de flexão, a congruência óssea da tróclea assume o papel principal de estabilização.",
+  "correta": "A. O vasto medial oblíquo e o ligamento patelofemoral medial atuam predominantemente entre 0 e 20 graus de flexão do joelho.",
+  "incorretas": {
+   "B": "Entre 30 e 50 graus de flexão, a patela já está engatada no sulco troclear, e a estabilidade óssea passa a predominar sobre a de tecidos moles.",
+   "C": "Entre 70 e 90 graus de flexão, a congruência troclear é a principal responsável pela estabilidade patelar, não o VMO ou o LPFM.",
+   "D": "Acima de 90 graus de flexão, a patela está profundamente encaixada na tróclea, tornando a contribuição do VMO e do LPFM para a estabilidade menos relevante."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 47"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "trauma-1043": {
+  "conceito": "Na osteotomia da tíbia em cunha de fechamento, a ostectomia da fíbula é necessária para permitir a correção angular sem bloqueio da fíbula intacta. Existe uma área de segurança na diáfise fibular, distante o suficiente da cabeça da fíbula, que reduz o risco de lesão do nervo fibular comum, que cruza próximo ao colo fibular antes de se dividir em seus ramos superficial e profundo.",
+  "correta": "C. A área de segurança para a ostectomia da fíbula, com menor risco de lesão do nervo fibular, fica entre 69 e 109 mm a partir da margem proximal do osso.",
+  "incorretas": {
+   "A": "O intervalo de 0 a 39 mm fica muito próximo da cabeça e do colo da fíbula, região de maior risco para o nervo fibular, e não corresponde à área de segurança.",
+   "B": "O intervalo de 40 a 68 mm ainda está relativamente próximo do colo fibular, onde o risco de lesão nervosa permanece elevado.",
+   "D": "O intervalo de 110 a 153 mm é mais distal do que a área de segurança classicamente descrita para esse procedimento."
+  },
+  "alerta": "Os valores exatos (em milímetros) da área de segurança para ostectomia da fíbula variam entre os estudos anatômicos publicados, e não tenho certeza absoluta de que o intervalo de 69 a 109 mm seja o número textualmente usado pela fonte da banca. Mantive a alternativa C como a mais plausível, mas é um dado pontual de estudo anatômico que vale confirmar em fonte primária antes de memorizar com confiança total.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 9"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "trauma-1044": {
+  "conceito": "A classificação de DENIS para fraturas do sacro divide o osso em três zonas: zona I (alar, lateral aos forames), zona II (through os forames sacrais) e zona III (central, envolvendo o canal sacral). A zona I é a mais frequentemente fraturada, mas apresenta a menor taxa de lesão neurológica; a zona III, embora a menos frequentemente fraturada, apresenta a maior taxa de lesão neurológica, por envolver diretamente o canal sacral e as raízes da cauda equina.",
+  "correta": "B. As fraturas ocorrem mais frequentemente na zona I, e as lesões neurológicas, mais frequentemente na zona III.",
+  "incorretas": {
+   "A": "A zona II não é a mais associada a lesão neurológica; essa posição pertence à zona III, que envolve diretamente o canal sacral.",
+   "C": "A zona II não é a mais frequentemente fraturada; esse papel pertence à zona I, mais periférica e mais exposta a forças de fratura.",
+   "D": "As fraturas e as lesões neurológicas não predominam ambas na mesma zona; elas se distribuem de forma inversamente proporcional entre as zonas I e III."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.) — Cap. 49"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "trauma-1045": {
+  "conceito": "A osteotomia tibial valgizante é indicada para osteoartrite isolada do compartimento medial do joelho, com deformidade em varo leve a moderada (geralmente até 10-12 graus), compartimentos lateral e patelofemoral preservados, e evidência de ligamento cruzado anterior funcional — este último sugerido, entre outros achados, pela presença de osteófito no côndilo femoral posterior na radiografia em perfil. Quando esses critérios são atendidos, a osteotomia tibial é preferida à osteotomia femoral, reservada a deformidades de origem predominantemente femoral ou a varos mais acentuados.",
+  "correta": "C. A osteotomia tibial valgizante de cunha de abertura medial é a conduta de escolha, dado o varo leve, a doença isolada do compartimento medial e os sinais sugestivos de LCA íntegro.",
+  "incorretas": {
+   "A": "A artroplastia total é reservada para pacientes com doença degenerativa mais avançada ou multicompartimental, ou para pacientes fora da faixa etária/perfil de atividade que se beneficiam de osteotomia.",
+   "B": "A artroplastia unicompartimental exige, entre outros critérios, ligamentos colaterais e cruzados íntegros e ausência de varo relevante; embora seja uma opção discutível neste perfil, a osteotomia é a conduta clássica de escolha para o quadro descrito, sobretudo em paciente de 55 anos com atividade preservada.",
+   "D": "A osteotomia femoral é reservada a deformidades de origem predominantemente femoral ou a varos mais acentuados do que os 10 graus descritos, quando a origem é tibial."
+  },
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 9.8"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "trauma-1046": {
+  "conceito": "O ligamento cruzado anterior tem trajeto oblíquo característico no plano sagital, partindo da face posterior do côndilo femoral lateral em direção à área intercondilar anterior da tíbia — trajeto que, nas imagens de ressonância magnética, aparece como uma banda inclinada seguindo aproximadamente o mesmo ângulo da linha de Blumensaat.",
+  "correta": "B. A estrutura assinalada corresponde ao ligamento cruzado anterior, identificado pelo seu trajeto oblíquo característico entre o fêmur posterior e a tíbia anterior.",
+  "incorretas": {
+   "A": "O ligamento de Wrisberg é uma variação anatômica relacionada ao corno posterior do menisco lateral, sem correspondência com o trajeto e a localização da estrutura assinalada.",
+   "C": "Não existe uma estrutura chamada \"menisco femoral\"; essa alternativa não corresponde a uma estrutura anatômica real no contexto da imagem.",
+   "D": "O ligamento cruzado posterior tem trajeto inverso (da face anterior do fêmur para a face posterior da tíbia) e localização mais posterior no joelho, diferente do assinalado na imagem."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 45"
   ],
   "geradoEm": "2026-09-17",
   "conferido": false

@@ -2376,7 +2376,10 @@
    "D": "O terceiro cuneiforme (lateral) é o primeiro dos cuneiformes a ossificar, perto de 1 ano."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 19"
+  ]
  },
  "pediatria-0279": {
   "conceito": "A pseudoartrose congênita da clavícula é rara e, ao contrário da pseudoartrose congênita da tíbia, não tem relação com neurofibromatose. A hipótese mais aceita para explicá-la é mecânica e vascular: a pulsação da artéria subclávia contra a clavícula em formação.",
@@ -2387,7 +2390,10 @@
    "D": "Erra as duas características."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 12"
+  ]
  },
  "pediatria-0280": {
   "conceito": "A luxação congênita da cabeça do rádio é a anomalia congênita mais comum do cotovelo, e o que a diferencia da luxação traumática crônica é justamente a forma do osso: sendo congênita, a cabeça do rádio nunca se articulou corretamente e por isso não se modelou.",
@@ -2398,7 +2404,10 @@
    "C": "O desvio está certo e a morfologia não — e é a morfologia que faz o diagnóstico diferencial."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn) — Cap. 21"
+  ]
  },
  "pediatria-0282": {
   "conceito": "No pé equinovaro espástico da paralisia cerebral, o problema é o desequilíbrio: o tibial posterior e o tibial anterior espásticos invertem o pé, e o tríceps o mantém em equino. O PROCEDIMENTO DE RANCHO (de Rancho Los Amigos) combina duas coisas: o ALONGAMENTO INTRAMUSCULAR DO TIBIAL POSTERIOR, que reduz a força invertora sem aboli-la, e a TRANSFERÊNCIA DO HEMITENDÃO do tibial anterior (SPLATT, split anterior tibial tendon transfer) para o cuboide ou para o fibular curto, convertendo parte da força invertora em eversora. Some-se o alongamento do tríceps quando necessário. A lógica de dividir o tendão em vez de transferi-lo inteiro é evitar a hipercorreção para valgo, erro difícil de resgatar numa criança espástica.",
@@ -2409,7 +2418,10 @@
    "D": "Green é lembrado pela transferência do flexor ulnar do carpo (Green) no membro superior espástico, e não por esse procedimento no pé."
   },
   "geradoEm": "2026-09-10",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 31"
+  ]
  },
  "pediatria-0283": {
   "conceito": "A doença de Freiberg é uma osteocondrose/osteonecrose da cabeça de um metatarsal, observada mais frequentemente em adolescentes e adultos jovens, com predomínio no sexo feminino. O segundo metatarsal é disparadamente o mais afetado, provavelmente pela combinação de comprimento relativo, menor mobilidade da base e sobrecarga repetitiva. O paciente apresenta metatarsalgia localizada, edema e dor à mobilização da articulação metatarsofalângica. Radiografias iniciais podem mostrar discreta irregularidade; com evolução surgem esclerose, achatamento, fragmentação e degeneração articular. A classificação de Smillie descreve progressão do dano osteocondral em cinco estágios, do colapso subcondral inicial à artrose avançada com deformidade da cabeça. Tratamento inicial inclui redução de impacto, calçados adequados, palmilhas e, em fases dolorosas, imobilização. Casos persistentes podem exigir procedimentos preservadores da articulação ou reconstrução conforme estágio.",
@@ -2421,7 +2433,8 @@
   },
   "referencias": [
    "Schade VL. Surgical Management of Freiberg's Infraction: A Systematic Review. Foot Ankle Spec. 2015. PMID: 25990579.",
-   "Treatment of Freiberg Disease. PMID: 29362030."
+   "Treatment of Freiberg Disease. PMID: 29362030.",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 32"
   ],
   "conferido": false,
   "geradoEm": "2026-09-13"
@@ -2447,7 +2460,8 @@
   },
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier.",
-   "Keats TE, Anderson MW. Atlas of Normal Roentgen Variants That May Simulate Disease. Elsevier."
+   "Keats TE, Anderson MW. Atlas of Normal Roentgen Variants That May Simulate Disease. Elsevier.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 1"
   ],
   "conferido": false,
   "geradoEm": "2026-09-13"
@@ -3558,6 +3572,163 @@
   },
   "referencias": [
    "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 12.3"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0534": {
+  "conceito": "A classificação de LANGENSKIÖLD descreve a progressão radiográfica da doença de BLOUNT (tíbia vara infantil) em seis estágios, de I a VI, com piora progressiva da irregularidade metafisária medial, fragmentação e, nos estágios mais avançados (V e VI), formação de uma barra óssea física medial com separação da epífise em dois fragmentos distintos.",
+  "correta": "C. A imagem representa o estágio V de Langenskiöld, com fragmentação e separação evidente da epífise medial, compatível com formação de barra física.",
+  "incorretas": {
+   "A": "O estágio III mostra uma irregularidade metafisária menos avançada, sem a fragmentação e separação evidentes na imagem.",
+   "B": "O estágio IV mostra a epífise se aprofundando no defeito metafisário, mas ainda sem a separação em fragmentos distintos observada na imagem.",
+   "D": "O estágio VI representa uma barra óssea física medial já completamente estabelecida, com fechamento fisário medial mais definido do que o mostrado."
+  },
+  "alerta": "A distinção radiográfica entre os estágios IV, V e VI de Langenskiöld depende de detalhes finos de fragmentação e continuidade da fise que são difíceis de avaliar com certeza absoluta numa reprodução esquemática pequena como a desta imagem. Mantive a alternativa C como a mais provável, mas recomendo comparar a figura original com uma referência de Langenskiöld lado a lado antes de tratar esse estágio como definitivo.",
+  "referencias": [
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn) — Cap. 26"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0535": {
+  "conceito": "A classificação de MEYERS e MCKEEVER para as fraturas por avulsão da espinha tibial (eminência intercondilar) em crianças divide a lesão em tipos de gravidade crescente: tipo I (deslocamento mínimo), tipo II (elevação anterior do fragmento, com a porção posterior ainda em contato/hinged com o leito ósseo, como uma \"tampa de caixa\" parcialmente aberta) e tipo III (deslocamento completo do fragmento, sem contato com o leito ósseo, por vezes rotado).",
+  "correta": "B. A figura representa o tipo II, com elevação anterior do fragmento e a porção posterior ainda articulada com o leito ósseo tibial.",
+  "incorretas": {
+   "A": "O tipo I mostra apenas um deslocamento mínimo, sem a elevação evidente do fragmento mostrada na figura.",
+   "C": "O tipo III mostra o fragmento completamente deslocado do seu leito, sem o contato posterior parcial visível na figura.",
+   "D": "O tipo IV corresponde a uma adição posterior à classificação original, referente a fraturas cominutivas, padrão diferente do mostrado na figura."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 27"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0536": {
+  "conceito": "A classificação de SONG para as fraturas do côndilo lateral do úmero na criança estratifica o risco de desvio com base no grau de deslocamento medido por ultrassonografia ou artrografia, dividindo a lesão em estágios: o estágio 1 tem baixo risco de desvio (fratura estável), o estágio 2 tem risco indeterminado (a linha de fratura atinge parcialmente a superfície articular, sem critério definitivo de estabilidade), e os estágios mais avançados (3 e 4) têm alto risco de desvio e maior indicação cirúrgica.",
+  "correta": "B. O estágio 2 da classificação de Song é o que apresenta risco indeterminado de desvio.",
+  "incorretas": {
+   "A": "O estágio 1 corresponde a fraturas estáveis, com baixo risco de desvio, e não ao risco indeterminado.",
+   "C": "O estágio 3 já corresponde a um padrão de maior risco de desvio, não indeterminado.",
+   "D": "O estágio 4 representa o maior grau de instabilidade e risco de desvio na classificação, não o risco indeterminado."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 16"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0537": {
+  "conceito": "A luxação traumática do quadril em crianças tende a ocorrer com desvio posterior, semelhante ao padrão observado em adultos. Em crianças menores de 5 anos, a maior elasticidade ligamentar e capsular permite que essa luxação ocorra mesmo com traumas de baixa energia (como quedas simples), diferentemente de crianças maiores e adultos, que geralmente necessitam de traumas de alta energia para luxar o quadril.",
+  "correta": "D. O desvio mais comum é posterior, e em crianças menores de 5 anos está associado a traumas de baixa energia.",
+  "incorretas": {
+   "A": "O desvio anterior não é o padrão mais comum na luxação traumática pediátrica do quadril, que costuma ser posterior.",
+   "B": "Além do erro quanto à direção do desvio, a luxação em crianças pequenas está associada a traumas de baixa energia, não de alta energia.",
+   "C": "A direção posterior está correta, mas em crianças menores de 5 anos a luxação costuma decorrer de traumas de baixa energia, não de alta energia."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 36"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0538": {
+  "conceito": "As linhas de PARK e HARRIS (também chamadas linhas de crescimento ou de recuperação do crescimento) são linhas radiodensas transversais na metáfise, paralelas à fise, que se formam quando o ritmo normal de crescimento da fise é temporariamente desacelerado (por doença sistêmica, desnutrição ou trauma) e depois retoma seu curso habitual. Quando essas linhas permanecem paralelas à fise ao longo de todo o seu trajeto, indicam que o crescimento foi retomado de forma uniforme; quando convergem ou se afunilam em direção à fise, sinalizam a presença de uma barra óssea localizada.",
+  "correta": "D. As linhas de Park e Harris são sinais de distúrbio de crescimento da fise, resultantes de um retardo temporário do ritmo de crescimento normal.",
+  "incorretas": {
+   "A": "A presença de barra óssea precoce é sugerida apenas quando essas linhas convergem em direção à fise, não pela sua simples presença.",
+   "B": "As linhas por si só não indicam bom prognóstico; seu significado depende de se manterem paralelas (bom sinal) ou convergirem (sinal de barra) em relação à fise.",
+   "C": "As linhas de Park e Harris não indicam hipercrescimento por hiperemia; elas refletem uma desaceleração temporária do crescimento, não uma aceleração."
+  },
+  "referencias": [
+   "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 12.1"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0539": {
+  "conceito": "Na fratura-luxação de MONTEGGIA tipo II de BADO (luxação posterior da cabeça radial associada a fratura da ulna com ápice posterior), a redução deve ser seguida de imobilização em extensão do cotovelo (ou próxima da extensão), posição que reduz a tendência de redeslocamento posterior da cabeça radial — em contraste com o tipo I (anterior), imobilizado em flexão para evitar o redeslocamento anterior.",
+  "correta": "A. Após a redução incruenta do tipo II de Bado, o cotovelo deve ser mantido imobilizado em extensão.",
+  "incorretas": {
+   "B": "A flexão de 45 graus não é a posição indicada para o tipo II; essa posição favoreceria o redeslocamento posterior da cabeça radial.",
+   "C": "A flexão de 90 graus é a posição utilizada no tipo I (anterior) de Bado, não no tipo II (posterior).",
+   "D": "A flexão de 110 graus também favoreceria o redeslocamento posterior, sendo inadequada para a estabilização do tipo II."
+  },
+  "alerta": "A posição exata de imobilização do tipo II de Bado (extensão versus algum grau de flexão) tem menos consenso na literatura do que a do tipo I, e alguns textos descrevem apenas a orientação geral de evitar a posição que favorece o redeslocamento, sem especificar um ângulo fixo. Mantive a alternativa A (extensão) como a mais consistente com o raciocínio biomecânico do tipo posterior, mas vale confirmar esse detalhe específico em fonte primária antes de memorizá-lo com confiança total.",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 29"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0540": {
+  "conceito": "Quando uma luxação traumática do cotovelo se reduz espontaneamente e deixa como sequela uma fratura do colo radial, o mecanismo do trauma (compressão da cabeça radial contra o capítulo durante a luxação e sua redução) tende a deslocar a epífise proximal do rádio para anterior, à medida que a cabeça radial escapa e retorna à sua posição durante o evento de luxação/redução.",
+  "correta": "C. A epífise proximal do rádio desloca-se mais frequentemente em direção anterior nesse contexto.",
+  "incorretas": {
+   "A": "O desvio lateral não é o padrão mais frequentemente descrito para essa lesão específica associada à luxação espontaneamente reduzida.",
+   "B": "O desvio medial também não corresponde ao padrão mais comumente relatado nesse mecanismo de lesão combinada.",
+   "D": "O desvio posterior é menos característico desse padrão específico do que o desvio anterior."
+  },
+  "alerta": "A direção mais frequente do desvio da epífise radial proximal nesse mecanismo específico (fratura do colo radial associada à redução espontânea de luxação de cotovelo) não é um ponto que eu tenha visto descrito de forma extremamente consistente entre diferentes fontes, e não tenho certeza absoluta de que 'anterior' seja a direção exata privilegiada pela fonte da banca. Mantive essa alternativa como a mais plausível com base no mecanismo biomecânico geral, mas vale confirmar esse detalhe em fonte primária antes de memorizá-lo com confiança total.",
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 10"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0541": {
+  "conceito": "Durante a confecção do gesso pélvico-podálico (spica) para o tratamento da fratura diafisária do fêmur na criança, a tração excessiva do membro (especialmente quando aplicada de forma prolongada durante a moldagem do gesso) pode comprometer a perfusão da perna, levando à síndrome compartimental — complicação temida por seu potencial de gerar sequelas permanentes (contratura de Volkmann) caso não seja reconhecida e tratada precocemente.",
+  "correta": "B. A síndrome compartimental é a complicação mais temida relacionada à tração excessiva durante a confecção do gesso.",
+  "incorretas": {
+   "A": "O desvio angular em valgo é uma complicação relacionada à consolidação e ao remodelamento da fratura, não diretamente à tração excessiva durante a confecção do gesso.",
+   "C": "O alongamento maior que 3 cm é uma complicação de crescimento assimétrico por hiperemia da fratura, não uma complicação aguda relacionada à tração durante a confecção do gesso.",
+   "D": "O ferimento por compressão no maléolo lateral é uma complicação local relacionada ao ajuste inadequado do gesso, de gravidade bem menor do que a síndrome compartimental."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 24"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0542": {
+  "conceito": "A fratura por avulsão da tuberosidade da tíbia é uma lesão típica de adolescentes próximos da maturidade esquelética, decorrente de contração violenta do quadríceps durante atividades de salto ou arranque explosivo. É mais frequente em meninos, na faixa dos 13 aos 16 anos, período em que a fise da tuberosidade ainda não fechou completamente, mas o indivíduo já tem massa muscular e força suficientes para gerar a força de avulsão.",
+  "correta": "C. A fratura da tuberosidade da tíbia é mais frequentemente descrita em meninos, de 13 a 16 anos.",
+  "incorretas": {
+   "A": "A faixa de 9 a 12 anos é mais precoce do que a idade típica dessa fratura, que ocorre perto da maturidade esquelética.",
+   "B": "O sexo feminino não é o predominante nessa fratura, que é bem mais comum em meninos.",
+   "D": "Embora a faixa etária de 13 a 16 anos esteja correta, o sexo predominante é o masculino, não o feminino."
+  },
+  "referencias": [
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn) — Cap. 33"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0543": {
+  "conceito": "A fratura do tornozelo tipo TILLAUX ocorre em adolescentes próximos do fechamento fisário, quando a porção medial da fise distal da tíbia já fechou e apenas a porção lateral permanece aberta. O ligamento tibiofibular anterior, ainda mais forte que o osso fisário remanescente, avulsiona um fragmento da epífise anterolateral, configurando uma fratura Salter-Harris tipo III, intra-articular e restrita à epífise.",
+  "correta": "B. A fratura de Tillaux é classificada como Salter-Harris tipo III, com localização anterolateral.",
+  "incorretas": {
+   "A": "O tipo II envolveria um componente metafisário, o que não é característico da fratura de Tillaux, puramente epifisária.",
+   "C": "A localização medial não corresponde ao padrão da fratura de Tillaux, que ocorre no quadrante anterolateral, onde a fise permanece aberta por mais tempo.",
+   "D": "O tipo IV atravessaria tanto a epífise quanto a metáfise, padrão diferente da fratura de Tillaux, restrita à epífise (tipo III)."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 29"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "pediatria-0544": {
+  "conceito": "A fratura por avulsão da tuberosidade da tíbia ocorre classicamente durante uma contração excêntrica violenta do mecanismo extensor com o joelho sendo forçado à flexão enquanto o quadríceps se contrai vigorosamente — situação típica de atividades de salto e arrancada rápida, como um golpe potente no tênis ou uma decolada de salto, em que a tração do tendão patelar sobre a tuberosidade excede sua resistência.",
+  "correta": "A. O mecanismo de trauma mais provável é a flexão forçada do joelho durante contração vigorosa do quadríceps.",
+  "incorretas": {
+   "B": "A extensão forçada isolada do joelho não é o mecanismo clássico dessa avulsão, que depende da tração do mecanismo extensor sobre a tuberosidade durante a flexão.",
+   "C": "Um movimento rotacional isolado do joelho não é o mecanismo descrito para essa fratura por avulsão específica.",
+   "D": "O trauma direto na região anterior do joelho descreveria um mecanismo de fratura por impacto direto, diferente do mecanismo indireto por tração do mecanismo extensor."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 30"
   ],
   "geradoEm": "2026-09-17",
   "conferido": false
