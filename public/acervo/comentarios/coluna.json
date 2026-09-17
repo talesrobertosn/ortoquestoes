@@ -655,7 +655,10 @@
    "D": "L5/S1 não é abordável pela via lateral transpsoas, sobretudo pela interposição da crista ilíaca."
   },
   "geradoEm": "2026-09-06",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty) — Cap. 37"
+  ]
  },
  "coluna-0056": {
   "conceito": "A figura mostra uma hemivértebra, isto é, falha de formação de um lado do corpo vertebral, com deformidade angular progressiva. O padrão apresentado é classificado como hemivértebra semissegmentada, em que a anomalia tem apenas um disco intervertebral livre associado.",
@@ -668,7 +671,8 @@
   "alerta": "A distinção entre hemivértebra semissegmentada e completamente segmentada depende da identificação dos discos livres na imagem; a ilustração é esquemática.",
   "referencias": [
    "McMaster MJ, Ohtsuka K. The natural history of congenital scoliosis. J Bone Joint Surg Br. 1982.",
-   "Batra S, Ahuja S. Congenital scoliosis: a comprehensive review. Acta Orthop Belg. 2008."
+   "Batra S, Ahuja S. Congenital scoliosis: a comprehensive review. Acta Orthop Belg. 2008.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 9"
   ],
   "geradoEm": "2026-09-13",
   "conferido": false,
@@ -691,7 +695,10 @@
    "D": "Erra o dermátomo e o grupo muscular ao mesmo tempo."
   },
   "geradoEm": "2026-09-06",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Leite, Faloppa — Propedêutica Ortopédica e Traumatológica, 1ª edição — Cap. 12"
+  ]
  },
  "coluna-0058": {
   "conceito": "A escoliose antálgica da hérnia lombar não é aleatória: o paciente inclina o tronco na direção que afasta a raiz do fragmento, e por isso a direção da inclinação informa onde está o fragmento. Fragmento LATERAL à raiz (tipo ombro, o mais comum): o paciente se inclina para o lado OPOSTO ao da dor, o que desliza a raiz medialmente, para longe do disco. Fragmento MEDIAL à raiz (tipo axila): o paciente se inclina PARA o lado da dor, o que leva a raiz lateralmente e a afasta do fragmento. Observar esse detalhe antes de operar ajuda a planejar por onde alcançar o fragmento.",
@@ -702,7 +709,10 @@
    "D": "Inclinar para o lado oposto é o comportamento da hérnia com fragmento LATERAL à raiz."
   },
   "geradoEm": "2026-09-06",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Leite, Faloppa — Propedêutica Ortopédica e Traumatológica, 1ª edição — Cap. 12"
+  ]
  },
  "coluna-0059": {
   "alerta": "O procedimento de Gill foi descrito exatamente PARA a espondilolistese ístmica — Gill, Manning e White o publicaram em 1955 para a listese com espondilólise, e a `coluna-0020` deste mesmo acervo o define como a laminectomia do arco solto de L5, que é o que existe no tipo ístmico. Chamá-lo de contraindicado nesse tipo inverte a indicação original. Onde ele faz mal é nas formas com arco posterior ÍNTEGRO — displásica e degenerativa —, porque ali retirar os elementos posteriores destrói a única contenção que resta. Se você marcou outra alternativa, vale conferir a fonte da banca.",
@@ -4090,6 +4100,48 @@
   },
   "referencias": [
    "Motta Filho, Barros Filho — Ortopedia e Traumatologia, 1ª edição — Cap. 12.2"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "coluna-0301": {
+  "conceito": "A SCIWORA (lesão medular sem alteração radiográfica) ocorre porque a coluna vertebral infantil é mais elástica que a medula espinal, permitindo deformação transitória dos elementos ósseos e ligamentares sem fratura visível, enquanto a medula sofre lesão por estiramento ou contusão.",
+  "correta": "A. É mais frequente em crianças pequenas, na coluna cervical, pela maior mobilidade e frouxidão ligamentar dessa região nessa faixa etária.",
+  "incorretas": {
+   "B": "A coluna lombar é bem menos acometida por SCIWORA que a cervical, que concentra a maior mobilidade e frouxidão ligamentar na infância.",
+   "C": "Em adolescentes a coluna já apresenta rigidez mais próxima da do adulto, tornando o SCIWORA proporcionalmente menos frequente que em crianças pequenas.",
+   "D": "Além de a coluna lombar ser menos envolvida, adolescentes têm menor incidência de SCIWORA do que crianças pequenas."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn) — Cap. 20"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "coluna-0302": {
+  "conceito": "Na classificação de Denis para fraturas toracolombares, as fraturas em compressão isolada (sem lesão do complexo ligamentar posterior) costumam ser tratadas de forma conservadora; a indicação cirúrgica é reservada aos casos com maior potencial de progressão da deformidade.",
+  "correta": "D. A estabilização cirúrgica é recomendada a partir de 30º de angulação cifótica e 50% de acunhamento (perda de altura) do corpo vertebral, valores associados a maior risco de progressão da deformidade e dor.",
+  "incorretas": {
+   "A": "15º de angulação, mesmo com 30% de acunhamento, geralmente ainda é tratado conservadoramente por ter baixo risco de progressão.",
+   "B": "A combinação de 15º com 50% de acunhamento não atinge o limiar usualmente aceito para indicação cirúrgica.",
+   "C": "30º de angulação já se aproxima do limiar cirúrgico, mas o grau de acunhamento (30%) considerado isoladamente ainda é compatível com tratamento conservador."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 28"
+  ],
+  "geradoEm": "2026-09-17",
+  "conferido": false
+ },
+ "coluna-0303": {
+  "conceito": "A técnica de Gill (laminectomia do arco posterior solto, sem artrodese) alivia a compressão radicular causada pela massa fibrocartilaginosa na espondilólise, sendo indicada nos casos ístmicos de baixo grau, exatamente porque a instabilidade nesse tipo é menor. Nos tipos displásico, traumático e degenerativo, o risco de progressão da listese após a descompressão isolada, sem fusão, é maior.",
+  "correta": "A. A técnica de Gill é indicada no tipo ístmico, no qual a descompressão do fragmento interarticular solto alivia a dor radicular sem necessariamente comprometer a estabilidade.",
+  "incorretas": {
+   "B": "No tipo displásico, o risco de progressão da listese após descompressão isolada sem artrodese é maior, o que contraindica a técnica de Gill isolada.",
+   "C": "No tipo traumático, a instabilidade inerente à fratura torna a descompressão isolada sem fixação inadequada.",
+   "D": "No tipo degenerativo, a instabilidade segmentar e a artrose facetária associada tornam a descompressão isolada insuficiente na maioria dos casos."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring) — Cap. 11"
   ],
   "geradoEm": "2026-09-17",
   "conferido": false

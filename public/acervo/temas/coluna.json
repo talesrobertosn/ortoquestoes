@@ -2360,8 +2360,8 @@
       "subtemas": [
         "Vias de acesso"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Na via de acesso lateral à coluna lombar para técnica XLIF, o nível onde há maior risco de lesão do plexo lombar é",
       "imagens": [],
@@ -2403,8 +2403,8 @@
       "subtemas": [
         "Escoliose"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "A escoliose congênita representada na imagem a seguir demonstra defeito de:",
       "imagens": [
@@ -2454,8 +2454,8 @@
         "Hérnia de disco",
         "Exame Físico"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Na hérnia de disco foraminal C7/T1, a compressão radicular provoca hipoestesia e déficit motor, respectivamente, no",
       "imagens": [],
@@ -2497,8 +2497,8 @@
       "subtemas": [
         "Hérnia de disco"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Na hérnia de disco lombar posterolateral com fragmento localizado medialmente à raiz, a dor radicular é aliviada com a posição em",
       "imagens": [],
@@ -13310,6 +13310,137 @@
         "arquivo": "TEOT-2024-publicar.pdf",
         "pagina": 2,
         "numeroOriginal": 2
+      }
+    },
+    {
+      "id": "coluna-0301",
+      "tema": "Coluna",
+      "subtemas": [
+        "Trauma da Coluna",
+        "Ortopedia pediátrica"
+      ],
+      "prova": "TARO",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "A SCIWORA é mais frequente em",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "crianças, na coluna cervical."
+        },
+        {
+          "letra": "B",
+          "texto": "crianças, na coluna lombar."
+        },
+        {
+          "letra": "C",
+          "texto": "adolescentes, na coluna cervical."
+        },
+        {
+          "letra": "D",
+          "texto": "adolescentes, na coluna lombar."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2022-publicar.pdf",
+        "pagina": 10,
+        "numeroOriginal": 10
+      }
+    },
+    {
+      "id": "coluna-0302",
+      "tema": "Coluna",
+      "subtemas": [
+        "Trauma da Coluna",
+        "Ortopedia pediátrica"
+      ],
+      "prova": "TARO",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "Na fratura tipo compressão da coluna toracolombar na criança, de acordo com a classificação de DENIS, a recomendação de estabilização cirúrgica ocorre a partir de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "15º de angulação e 30% de acunhamento vertebral."
+        },
+        {
+          "letra": "B",
+          "texto": "15º de angulação e 50% de acunhamento vertebral."
+        },
+        {
+          "letra": "C",
+          "texto": "30º de angulação e 30% de acunhamento vertebral."
+        },
+        {
+          "letra": "D",
+          "texto": "30º de angulação e 50% de acunhamento vertebral."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2022-publicar.pdf",
+        "pagina": 25,
+        "numeroOriginal": 25
+      }
+    },
+    {
+      "id": "coluna-0303",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilolistese"
+      ],
+      "prova": "TARO",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "O tratamento da espondilolistese L5/S1 por meio da técnica de GILL é indicado no tipo",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ístmico."
+        },
+        {
+          "letra": "B",
+          "texto": "displásico."
+        },
+        {
+          "letra": "C",
+          "texto": "traumático."
+        },
+        {
+          "letra": "D",
+          "texto": "degenerativo."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2022-publicar.pdf",
+        "pagina": 73,
+        "numeroOriginal": 73
       }
     }
   ]
