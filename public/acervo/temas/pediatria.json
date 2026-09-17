@@ -1516,8 +1516,8 @@
       "subtemas": [
         "Artrogripose"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "Na artrogripose múltipla congênita, tipicamente o cotovelo está em extensão e o ombro está em",
       "imagens": [],
@@ -1559,8 +1559,8 @@
       "subtemas": [
         "Displasia do Desenvolvimento do Quadril"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "Na displasia do desenvolvimento do quadril (DDQ), a limitação da abdução do quadril é um sinal clínico",
       "imagens": [],
@@ -1602,8 +1602,8 @@
       "subtemas": [
         "Doença de Legg-Calvè-Perthes"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "Na doença de LEGG-CALVÉ-PERTHES, de acordo com classificação de CATTERALL, a imagem a seguir corresponde ao tipo",
       "imagens": [
@@ -1652,8 +1652,8 @@
       "subtemas": [
         "Osteocondroses"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "Em uma paciente de 15 anos de idade, com dor no pé, claudicação e a imagem radiográfica a seguir, o diagnóstico mais provável é a doença de",
       "imagens": [
@@ -1702,8 +1702,8 @@
       "subtemas": [
         "Pé Torto Congênito"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "Na recidiva precoce do pé torto congênito, o tratamento preconizado é",
       "imagens": [],
@@ -1745,8 +1745,8 @@
       "subtemas": [
         "Marcha"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "Na marcha normal, a rotação pélvica no plano transverso proporciona, em conjunto com a flexão do quadril, um deslocamento",
       "imagens": [],
@@ -1788,8 +1788,8 @@
       "subtemas": [
         "Paralisia Cerebral"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "Na paralisia cerebral, o distúrbio de movimento resultante da lesão nos gânglios da base, frequentemente relacionado a kernicterus neonatal, é a",
       "imagens": [],
@@ -1831,8 +1831,8 @@
       "subtemas": [
         "Epifisiólise"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "Na fixação in situ para tratamento da epifisiolise femoral superior, a fim de minimizar o risco de necrose avascular, a posição do parafuso canulado deve evitar o quadrante epifisário",
       "imagens": [],
@@ -1874,8 +1874,8 @@
       "subtemas": [
         "Tíbia Vara de Blount"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "Na tíbia vara de BLOUNT, de acordo com a classificação de LANGENSKIÖLD, as imagens a seguir correspondem ao tipo",
       "imagens": [
@@ -25694,6 +25694,537 @@
         "arquivo": "TEOT-2023-prova.pdf",
         "pagina": 97,
         "numeroOriginal": 97
+      }
+    },
+    {
+      "id": "pediatria-0584",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Trauma Pediátrico"
+      ],
+      "prova": "TARO",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Na fratura isolada da diáfise da ulna na criança, a manobra de redução, descrita por BLOUNT, consiste em aplicar uma força no sítio da fratura em",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "varo e pressão com o polegar sobre o fragmento distal."
+        },
+        {
+          "letra": "B",
+          "texto": "valgo e pressão com o polegar sobre o fragmento distal."
+        },
+        {
+          "letra": "C",
+          "texto": "varo e pressão com o polegar sobre o fragmento proximal."
+        },
+        {
+          "letra": "D",
+          "texto": "valgo e pressão com o polegar sobre o fragmento proximal."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2021-prova.pdf",
+        "pagina": 13,
+        "numeroOriginal": 13
+      }
+    },
+    {
+      "id": "pediatria-0585",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Lesões Fisárias"
+      ],
+      "prova": "TARO",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "A lesão fisária por estresse ocorre mais frequentemente",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "no fêmur dos corredores."
+        },
+        {
+          "letra": "B",
+          "texto": "no fêmur dos jogadores de futebol."
+        },
+        {
+          "letra": "C",
+          "texto": "nos ossos do antebraço dos ginastas."
+        },
+        {
+          "letra": "D",
+          "texto": "nos ossos do antebraço dos jogadores de baseball."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2021-prova.pdf",
+        "pagina": 17,
+        "numeroOriginal": 17
+      }
+    },
+    {
+      "id": "pediatria-0586",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Trauma Pediátrico",
+        "Ombro e cotovelo"
+      ],
+      "prova": "TARO",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Na luxação do cotovelo da criança, o nervo mais frequentemente lesado é o",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ulnar."
+        },
+        {
+          "letra": "B",
+          "texto": "mediano."
+        },
+        {
+          "letra": "C",
+          "texto": "interósseo anterior."
+        },
+        {
+          "letra": "D",
+          "texto": "interósseo posterior."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2021-prova.pdf",
+        "pagina": 24,
+        "numeroOriginal": 24
+      }
+    },
+    {
+      "id": "pediatria-0587",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Trauma Pediátrico",
+        "Síndromes da Coluna"
+      ],
+      "prova": "TARO",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "A lesão cervical em menor de 8 anos de idade é mais comum no segmento atlantoaxial devido a",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "cabeça menor comparada ao corpo."
+        },
+        {
+          "letra": "B",
+          "texto": "facetas articulares mais verticalizadas."
+        },
+        {
+          "letra": "C",
+          "texto": "maior tendência à translação posterior."
+        },
+        {
+          "letra": "D",
+          "texto": "maior mobilidade por causa da frouxidão ligamentar."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2021-prova.pdf",
+        "pagina": 42,
+        "numeroOriginal": 42
+      }
+    },
+    {
+      "id": "pediatria-0588",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Trauma Pediátrico",
+        "Pé e tornozelo"
+      ],
+      "prova": "TARO",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Na fratura triplanar do tornozelo da criança, a radiografia em perfil do tornozelo demonstra uma fratura SALTER-HARRIS tipo",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "I."
+        },
+        {
+          "letra": "B",
+          "texto": "II."
+        },
+        {
+          "letra": "C",
+          "texto": "III."
+        },
+        {
+          "letra": "D",
+          "texto": "IV."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2021-prova.pdf",
+        "pagina": 48,
+        "numeroOriginal": 48
+      }
+    },
+    {
+      "id": "pediatria-0589",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Trauma Pediátrico",
+        "Joelho"
+      ],
+      "prova": "TARO",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Nas complicações tardias da fratura por avulsão do tubérculo tibial do adolescente, a deformidade mais frequente é o",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "recurvato."
+        },
+        {
+          "letra": "B",
+          "texto": "antecurvato."
+        },
+        {
+          "letra": "C",
+          "texto": "alongamento."
+        },
+        {
+          "letra": "D",
+          "texto": "encurtamento."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2021-prova.pdf",
+        "pagina": 52,
+        "numeroOriginal": 52
+      }
+    },
+    {
+      "id": "pediatria-0590",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Lesões Fisárias",
+        "Joelho"
+      ],
+      "prova": "TARO",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "A fratura do côndilo femoral medial SALTER-HARRIS tipo III é mais frequentemente associada à lesão do",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "menisco medial."
+        },
+        {
+          "letra": "B",
+          "texto": "ligamento colateral medial."
+        },
+        {
+          "letra": "C",
+          "texto": "ligamento cruzado anterior."
+        },
+        {
+          "letra": "D",
+          "texto": "ligamento cruzado posterior."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2021-prova.pdf",
+        "pagina": 53,
+        "numeroOriginal": 53
+      }
+    },
+    {
+      "id": "pediatria-0591",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Trauma Pediátrico"
+      ],
+      "prova": "TARO",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Na fratura diafisária do fêmur da criança, o maior percentual de remodelação óssea ocorre devido",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "à translação fragmentar."
+        },
+        {
+          "letra": "B",
+          "texto": "à reorientação rotacional."
+        },
+        {
+          "letra": "C",
+          "texto": "ao crescimento no local da fratura."
+        },
+        {
+          "letra": "D",
+          "texto": "à reorientação fisária e crescimento longitudinal."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2021-prova.pdf",
+        "pagina": 54,
+        "numeroOriginal": 54
+      }
+    },
+    {
+      "id": "pediatria-0592",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Trauma Pediátrico",
+        "Ombro e cotovelo"
+      ],
+      "prova": "TARO",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Na fratura supracondiliana do úmero da criança com desvio posteromedial, o periósteo geralmente está roto na região",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "lateral e a pronação auxilia na redução."
+        },
+        {
+          "letra": "B",
+          "texto": "lateral e a supinação auxilia na redução."
+        },
+        {
+          "letra": "C",
+          "texto": "medial e a pronação auxilia na redução."
+        },
+        {
+          "letra": "D",
+          "texto": "medial e a supinação auxilia na redução."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2021-prova.pdf",
+        "pagina": 56,
+        "numeroOriginal": 56
+      }
+    },
+    {
+      "id": "pediatria-0593",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Trauma Pediátrico"
+      ],
+      "prova": "TARO",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Na fratura bilateral dos ramos púbicos superior e inferior da criança, o desvio do fragmento “flutuante” ocorre geralmente pela ação do músculo",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "sartório."
+        },
+        {
+          "letra": "B",
+          "texto": "iliopsoas."
+        },
+        {
+          "letra": "C",
+          "texto": "reto femoral."
+        },
+        {
+          "letra": "D",
+          "texto": "reto do abdome."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2021-prova.pdf",
+        "pagina": 57,
+        "numeroOriginal": 57
+      }
+    },
+    {
+      "id": "pediatria-0594",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Trauma Pediátrico",
+        "Fraturas do Punho e Mão"
+      ],
+      "prova": "TARO",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Na fratura irredutível com deslocamento volar da extremidade distal do antebraço em crianças, geralmente ocorre interposição pelo periósteo",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "volar e/ou tendões flexores."
+        },
+        {
+          "letra": "B",
+          "texto": "volar e/ou pronador quadrado."
+        },
+        {
+          "letra": "C",
+          "texto": "dorsal e/ou tendões extensores."
+        },
+        {
+          "letra": "D",
+          "texto": "dorsal e/ou tendão do braquiorradial."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2021-prova.pdf",
+        "pagina": 71,
+        "numeroOriginal": 71
+      }
+    },
+    {
+      "id": "pediatria-0595",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Trauma Pediátrico",
+        "Ombro e cotovelo"
+      ],
+      "prova": "TARO",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Na fratura da extremidade proximal do úmero da criança de 14 anos, demonstrada nas imagens a seguir, o tratamento indicado é",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0595-1.jpeg",
+          "legenda": null,
+          "largura": 2361,
+          "altura": 1217
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "imobilização com tipoia."
+        },
+        {
+          "letra": "B",
+          "texto": "redução incruenta e imobilização tipo velpeau."
+        },
+        {
+          "letra": "C",
+          "texto": "redução cruenta e fixação com parafusos canulados."
+        },
+        {
+          "letra": "D",
+          "texto": "redução incruenta e fixação percutânea com fios de KIRSCHNER."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2021-prova.pdf",
+        "pagina": 77,
+        "numeroOriginal": 77
       }
     }
   ]
