@@ -264,7 +264,6 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                               />
                               <span className="numerico">{ano}</span>
                             </label>
-                            <span className="arvore__contagem">{contagens?.porAno[ano] ?? 0}</span>
                           </div>
                         ))}
                       </div>
