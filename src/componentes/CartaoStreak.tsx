@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
-import { calcularStreak, proximoMarco, META_STREAK_DIARIA, MARCOS_STREAK } from '../estado/streak'
+import { calcularStreak, proximoMarco, fraseSequencia, META_STREAK_DIARIA, MARCOS_STREAK } from '../estado/streak'
 import { Icone } from './Icone'
 import { gerarImagemStreak } from '../util/imagemStreak'
 import { SITE } from '../config'
@@ -34,7 +34,7 @@ export function CartaoStreak() {
         await navigator.share({
           files: [arquivo],
           title: `${streak.atual} dias seguidos no ${SITE.nome}`,
-          text: `${streak.atual} dias seguidos estudando ortopedia no ${SITE.nome}!`,
+          text: `${streak.atual} dias ${fraseSequencia(streak.atual)} no ${SITE.nome}!`,
         })
       } else {
         const url = URL.createObjectURL(blob)
@@ -71,7 +71,7 @@ export function CartaoStreak() {
         {streak.atual === 0
           ? `Você já chegou a ${streak.recorde} dias seguidos. Responda ${META_STREAK_DIARIA} questões hoje para começar uma nova sequência.`
           : marco
-            ? `Marco alcançado! Você está estudando ortopedia todos os dias há ${streak.atual} dias — poucas pessoas chegam até aqui.`
+            ? `Marco alcançado! Você está ${fraseSequencia(streak.atual)} há ${streak.atual} dias — poucas pessoas chegam até aqui.`
             : streak.emRisco
               ? `Sua sequência de ${streak.atual} dias está em risco. Responda ${META_STREAK_DIARIA} questões hoje para não perdê-la.`
               : streak.metaHojeAtingida

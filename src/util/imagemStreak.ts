@@ -1,5 +1,6 @@
 import { CAMINHOS } from '../componentes/Icone'
 import { SITE } from '../config'
+import { fraseSequencia } from '../estado/streak'
 
 const LADO = 1080
 
@@ -77,7 +78,7 @@ export async function gerarImagemStreak(dias: number): Promise<Blob> {
 
   ctx.font = '400 32px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif'
   ctx.fillStyle = 'rgba(241,243,242,0.85)'
-  ctx.fillText('estudando ortopedia todo dia', LADO / 2, 800)
+  ctx.fillText(fraseSequencia(dias), LADO / 2, 800)
 
   // Rodapé: selo + nome do site, e o Instagram como assinatura de quem compartilha.
   ctx.fillStyle = porcelana

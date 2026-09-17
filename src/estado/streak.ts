@@ -77,3 +77,21 @@ export function calcularStreak(
 export function proximoMarco(atual: number): number | null {
   return MARCOS_STREAK.find((marco) => marco > atual) ?? null
 }
+
+/**
+ * Variações da frase que descreve a sequência, para não repetir sempre
+ * "estudando ortopedia" — todas encaixam em "Você está {frase} há N dias".
+ * A escolha depende do tamanho da sequência (determinística, não muda a
+ * cada nova renderização da mesma sequência).
+ */
+const FRASES_SEQUENCIA = [
+  'respondendo questões',
+  'resolvendo questões de ortopedia',
+  'treinando com questões do banco',
+  'mantendo as questões em dia',
+  'encarando questões de prova',
+]
+
+export function fraseSequencia(dias: number): string {
+  return FRASES_SEQUENCIA[dias % FRASES_SEQUENCIA.length]
+}
