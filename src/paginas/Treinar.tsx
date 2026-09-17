@@ -19,6 +19,11 @@ import { usarEtiquetas } from '../estado/preferencias'
 import { href } from '../util/rotas'
 import { usarConta } from '../conta/ContextoConta'
 
+// A maior parte do acervo ainda traz a prova genérica "TEOT/TARO" (sem
+// diferenciar as duas), então por enquanto as três formas aparecem como uma
+// única opção de filtro em vez de linhas separadas.
+const PROVAS_TEOT_TARO = ['TEOT/TARO', 'TEOT', 'TARO']
+
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
 const LIMITES = [5, 10, 20, 30, 50, 100]
 const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'erradas', 'acertadas', 'favoritas', 'revisarHoje', 'incertas', 'dominadas']
@@ -66,6 +71,17 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     [indice, filtros, contexto],
   )
   const arvore = useMemo(() => (indice ? arvoreAssuntos(indice) : []), [indice])
+  const gruposProva = useMemo(() => {
+    const provasNoAcervo = indice?.provas ?? []
+    const grupos: Array<{ rotulo: string; provas: string[] }> = []
+    const teotTaro = PROVAS_TEOT_TARO.filter((p) => provasNoAcervo.includes(p))
+    if (teotTaro.length > 0) grupos.push({ rotulo: 'TEOT/TARO', provas: teotTaro })
+    for (const prova of provasNoAcervo) {
+      if (PROVAS_TEOT_TARO.includes(prova)) continue
+      grupos.push({ rotulo: prova, provas: [prova] })
+    }
+    return grupos
+  }, [indice])
 
   // Filtro que não tem nenhuma opção não vira campo vazio na tela.
   const temProva = (indice?.provas.length ?? 0) > 0
@@ -214,25 +230,29 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                   <div className="seletor seletor--lista">
                     <div className="seletor__painel">
                       <div className="seletor__lista">
-                        {(indice?.provas ?? []).map((prova) => (
-                          <div className="arvore__linha" key={prova}>
-                            <label className="caixa" style={{ flex: 1, minWidth: 0 }}>
-                              <input
-                                type="checkbox"
-                                checked={filtros.provas.includes(prova)}
-                                onChange={() =>
-                                  atualizar({
-                                    provas: filtros.provas.includes(prova)
-                                      ? filtros.provas.filter((x) => x !== prova)
-                                      : [...filtros.provas, prova],
-                                  })
-                                }
-                              />
-                              <span>{prova}</span>
-                            </label>
-                            <span className="arvore__contagem">{contagens?.porProva[prova] ?? 0}</span>
-                          </div>
-                        ))}
+                        {gruposProva.map((grupo) => {
+                          const marcado = grupo.provas.some((p) => filtros.provas.includes(p))
+                          const quantidade = grupo.provas.reduce((soma, p) => soma + (contagens?.porProva[p] ?? 0), 0)
+                          return (
+                            <div className="arvore__linha" key={grupo.rotulo}>
+                              <label className="caixa" style={{ flex: 1, minWidth: 0 }}>
+                                <input
+                                  type="checkbox"
+                                  checked={marcado}
+                                  onChange={() =>
+                                    atualizar({
+                                      provas: marcado
+                                        ? filtros.provas.filter((x) => !grupo.provas.includes(x))
+                                        : [...filtros.provas, ...grupo.provas.filter((p) => !filtros.provas.includes(p))],
+                                    })
+                                  }
+                                />
+                                <span>{grupo.rotulo}</span>
+                              </label>
+                              <span className="arvore__contagem">{quantidade}</span>
+                            </div>
+                          )
+                        })}
                       </div>
                     </div>
                   </div>
