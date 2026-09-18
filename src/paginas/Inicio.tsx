@@ -136,6 +136,16 @@ export function Inicio() {
 
   return (
     <div className="empilha-2">
+      {sessaoEmAndamento && (
+        <a className="aviso-sessao nao-imprime" href={href('/sessao')}>
+          <Icone nome="raio" tamanho={22} />
+          <span>
+            <strong>Você tem uma sessão em andamento</strong>
+            <small>{Object.keys(sessao!.respostas).length} de {sessao!.ids.length} respondidas — toque para continuar</small>
+          </span>
+          <Icone nome="direita" tamanho={20} />
+        </a>
+      )}
       <section className="heroi">
         <h1>{nome ? cabecalhoDoDia.comNome(`${conta?.user.user_metadata?.situacao === 'ortopedista' ? 'Dr. ' : ''}${nome}`) : cabecalhoDoDia.semNome}</h1>
         <p className="heroi__nota">{nome ? saudacao : cabecalhoDoDia.incentivo}</p>

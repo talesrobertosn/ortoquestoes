@@ -434,6 +434,25 @@ textarea {
   }
 }
 
+/* Sessão em andamento: precisa ser a primeira coisa vista ao abrir a home,
+   porque é exatamente aí que quem trocou de aba e perdeu o fio vai olhar
+   primeiro para tentar voltar. */
+.aviso-sessao {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--raio);
+  background: var(--verdete);
+  color: var(--sobre-destaque);
+  text-decoration: none;
+}
+.aviso-sessao:hover { background: var(--verdete-tinta); }
+.aviso-sessao strong { display: block; font-size: 1.05rem; }
+.aviso-sessao small { display: block; opacity: 0.85; margin-top: 0.15rem; }
+.aviso-sessao > svg:last-child { margin-left: auto; flex: 0 0 auto; }
+
 /* ---------- Herói da página inicial ------------------------------------ */
 
 .heroi h1 {
