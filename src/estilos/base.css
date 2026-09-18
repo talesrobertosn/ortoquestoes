@@ -1127,6 +1127,40 @@ textarea {
 
 /* ---------- Progresso e mapa -------------------------------------------- */
 
+/* Setas fixas ao lado da questão, para avançar sem descer até o rodapé do
+   cartão. Só cabem quando sobra margem de verdade fora da coluna de
+   conteúdo (64rem, ou 76rem no modo Foco) — por isso a posição é calculada
+   a partir do centro da tela, não de uma distância fixa da borda, e elas
+   somem quando a tela é estreita demais para não sobrepor o cartão. */
+.seta-lateral {
+  display: none;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 15;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: var(--borda);
+  background: var(--superficie);
+  color: var(--texto);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+}
+.seta-lateral:hover:not(:disabled) { background: var(--superficie-2); color: var(--verdete); }
+.seta-lateral:disabled { opacity: 0.3; cursor: default; }
+@media (min-width: 75rem) {
+  .seta-lateral--esquerda { display: inline-flex; left: calc(50% - 32rem - 4rem); }
+  .seta-lateral--direita { display: inline-flex; right: calc(50% - 32rem - 4rem); }
+}
+.pagina--foco .seta-lateral--esquerda { left: calc(50% - 38rem - 4rem); }
+.pagina--foco .seta-lateral--direita { right: calc(50% - 38rem - 4rem); }
+@media (min-width: 75rem) and (max-width: 87rem) {
+  .pagina--foco .seta-lateral { display: none; }
+}
+
 .barra-sessao {
   position: sticky;
   top: 56px;

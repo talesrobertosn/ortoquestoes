@@ -160,6 +160,26 @@ export function Sessao() {
 
   return (
     <div className="sessao-gestos" onTouchStart={iniciarGesto} onTouchEnd={concluirGesto}>
+      <button
+        type="button"
+        className="seta-lateral seta-lateral--esquerda nao-imprime"
+        onClick={() => irPara(posicao - 1)}
+        disabled={posicao === 0}
+        aria-label="Questão anterior"
+        title="Questão anterior (←)"
+      >
+        <Icone nome="esquerda" tamanho={22} />
+      </button>
+      <button
+        type="button"
+        className="seta-lateral seta-lateral--direita nao-imprime"
+        onClick={() => irPara(posicao + 1)}
+        disabled={posicao + 1 >= total}
+        aria-label="Próxima questão"
+        title="Próxima questão (→)"
+      >
+        <Icone nome="direita" tamanho={22} />
+      </button>
       <div className="barra-sessao nao-imprime">
         <div className="conteudo barra-sessao__interno">
           <span className="barra-sessao__texto">
