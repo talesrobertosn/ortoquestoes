@@ -155,7 +155,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           </button>
         ))}
       </section>
-      <p className="meta treinar-contexto">Acervo de TEOT, TARO, ENARE e outras seleções. O ano de cada questão ainda está em conferência na maior parte do acervo; filtros só aparecem quando há dados disponíveis.</p>
+      <p className="meta treinar-contexto">Acervo de TEOT, TARO, ENARE e outras seleções. Filtros só aparecem quando há dados disponíveis.</p>
       <div className="cartao treinar-filtros">
         <div className="cartao__corpo empilha">
           <section className="filtros-destaque">
@@ -289,10 +289,6 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                       </div>
                     </div>
                   </div>
-                  <span className="campo__auxilio">
-                    A maior parte do acervo ainda não tem ano conferido; o filtro só cobre as
-                    provas em que o ano já é conhecido, como o ENARE.
-                  </span>
                 </div>
               )}
             </div>

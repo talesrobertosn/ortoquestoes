@@ -4,6 +4,16 @@ let cacheDisponivel: boolean | null = null
 const memoria = new Map<string, string>()
 let usuario: string | null = null
 const GLOBAIS = new Set(['tema', 'etiquetas'])
+/**
+ * Visitantes não persistem progresso entre dispositivos, mas uma sessão de
+ * questões em andamento é frágil demais para viver só na memória do processo
+ * JS: o celular recarrega a aba ao voltar de outro app, e isso apagava a
+ * sessão sem o usuário ter feito nada. sessionStorage resolve exatamente
+ * esse caso — sobrevive a um recarregamento da mesma aba, mas ainda some ao
+ * fechar a aba de verdade, mantendo o espírito de "só dura enquanto a aba
+ * está aberta".
+ */
+const PERSISTE_ABA = new Set(['sessao:atual'])
 export const EVENTO_DADOS = 'ortoquestoes:dados'
 export interface MudancaDados { chave: string; antes: unknown; valor: unknown; usuario: string | null; origem: 'local' | 'nuvem' }
 export function definirUsuarioLocal(id: string | null) {
@@ -34,28 +44,39 @@ export function armazenamentoDisponivel(): boolean {
   } catch { cacheDisponivel = false }
   return cacheDisponivel
 }
-function lerCompleta<T>(completa: string, padrao: T, permitirLocal: boolean): T {
+function lerCompleta<T>(completa: string, padrao: T, fonte: 'local' | 'aba' | null): T {
   try {
-    const bruto = memoria.get(completa) ?? (permitirLocal && armazenamentoDisponivel() ? window.localStorage.getItem(completa) : null)
+    if (memoria.has(completa)) return JSON.parse(memoria.get(completa)!) as T
+    const bruto =
+      fonte === 'local' && armazenamentoDisponivel() ? window.localStorage.getItem(completa)
+      : fonte === 'aba' ? window.sessionStorage.getItem(completa)
+      : null
     return bruto === null || bruto === undefined ? padrao : JSON.parse(bruto) as T
   } catch { return padrao }
 }
-export function ler<T>(chave: string, padrao: T): T { return lerCompleta(chaveCompleta(chave), padrao, usuario !== null) }
+export function ler<T>(chave: string, padrao: T): T {
+  return lerCompleta(chaveCompleta(chave), padrao, usuario !== null ? 'local' : PERSISTE_ABA.has(chave) ? 'aba' : null)
+}
 /** Visitantes nunca recuperam dados persistidos; a memória dura apenas enquanto a aba está aberta. */
 export function lerVisitante<T>(_chave: string, padrao: T): T { return padrao }
 export function gravar(chave: string, valor: unknown, origem: 'local' | 'nuvem' = 'local'): void {
   const completa = chaveCompleta(chave), antes = ler(chave, null), bruto = JSON.stringify(valor)
   try {
-    // Visitantes usam apenas a memória da aba; somente contas autenticadas
-    // persistem o progresso entre sessões e dispositivos.
+    // Visitantes usam apenas a memória da aba (com a exceção de PERSISTE_ABA,
+    // abaixo); somente contas autenticadas persistem entre sessões e
+    // dispositivos.
     if (usuario !== null && armazenamentoDisponivel()) { window.localStorage.setItem(completa, bruto); memoria.delete(completa) }
+    else if (usuario === null && PERSISTE_ABA.has(chave)) { window.sessionStorage.setItem(completa, bruto); memoria.delete(completa) }
     else memoria.set(completa, bruto)
   } catch { memoria.set(completa, bruto) }
   window.dispatchEvent(new CustomEvent<MudancaDados>(EVENTO_DADOS, { detail: { chave, antes, valor, usuario, origem } }))
 }
 export function remover(chave: string): void {
   const completa = chaveCompleta(chave)
-  try { if (armazenamentoDisponivel()) window.localStorage.removeItem(completa) } catch { /* memória */ }
+  try {
+    if (armazenamentoDisponivel()) window.localStorage.removeItem(completa)
+    if (usuario === null && PERSISTE_ABA.has(chave)) window.sessionStorage.removeItem(completa)
+  } catch { /* memória */ }
   memoria.delete(completa)
 }
 /** Limpa apenas o perfil atual; a autenticação e os outros perfis ficam separados. */

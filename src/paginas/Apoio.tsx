@@ -67,11 +67,8 @@ export function Sobre() {
         Os assuntos cobrem o programa inteiro da especialidade: mão e punho, ombro e cotovelo,
         quadril, joelho, pé e tornozelo, coluna, trauma e fraturas, tumores ósseos, ortopedia
         pediátrica, doenças osteometabólicas e conceitos básicos (biomateriais, infecção,
-        consolidação óssea, metodologia científica). Provas recentes de TEOT, TARO e ENARE R4 já
-        têm prova e ano identificados questão a questão; o restante do acervo, formado a partir de
-        cadernos mais antigos, está sendo conferido e identificado aos poucos. Os filtros por
-        prova, ano e dificuldade aparecem conforme esses dados vão ficando disponíveis — mas você
-        já pode escolher por assunto e revisar o que errou desde já.
+        consolidação óssea, metodologia científica). Você pode montar sua sessão por assunto,
+        prova, ano ou dificuldade, e revisar o que errou a qualquer momento.
       </p>
 
       <p>

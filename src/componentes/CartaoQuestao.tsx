@@ -75,6 +75,8 @@ export function CartaoQuestao({
     definirCopiado(false)
     definirModoLeitura(false)
     definirUltimaAcao(null)
+    definirGrifos([])
+    definirMenuGrifo(null)
     inicio.current = Date.now()
   }, [questao.id])
 
@@ -303,7 +305,6 @@ export function CartaoQuestao({
           </p>
         )}
 
-        {(!questao.prova || !questao.ano) && <p className="meta origem-questao">Acervo de TEOT, TARO e outras seleções · {!questao.prova && !questao.ano ? 'prova e ano em conferência' : !questao.prova ? 'prova em conferência' : 'ano em conferência'}.</p>}
         {questao.prova?.startsWith('SBQ') && (
           <p className="meta origem-questao">
             Questão elaborada pelo OrtoQuestões no padrão das provas da SBQ e do Fellowship de
