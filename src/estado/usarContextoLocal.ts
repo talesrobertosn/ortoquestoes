@@ -1,6 +1,8 @@
+import { usarArmazenado } from './usarArmazenado'
+import type { RegistroQuestao } from './revisao'
 import { useEffect, useMemo, useState } from 'react'
 import { carregarBusca, type ContextoLocal } from '../dados/acervo'
-import { lerRespondidas, usarFavoritos } from './sessao'
+import { usarFavoritos } from './sessao'
 
 /**
  * Reúne o que este navegador sabe sobre quem estuda — o que já foi respondido
@@ -10,7 +12,7 @@ import { lerRespondidas, usarFavoritos } from './sessao'
  */
 export function usarContextoLocal(busca: string) {
   const { favoritos } = usarFavoritos()
-  const respondidas = useMemo(() => lerRespondidas(), [])
+  const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
   const [textos, definirTextos] = useState<Map<string, string> | null>(null)
   const precisa = busca.trim().length > 0
 

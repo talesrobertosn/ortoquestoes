@@ -11,6 +11,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 DIR_PUBLICO = RAIZ / "public"
 DIR_ACERVO = DIR_PUBLICO / "acervo"
 DIR_TEMAS = DIR_ACERVO / "temas"
+DIR_COMENTARIOS = DIR_ACERVO / "comentarios"
 DIR_IMAGENS = RAIZ / "public" / "imagens"
 DIR_RELATORIOS = RAIZ / "relatorios"
 CAMINHO_TAXONOMIA = RAIZ / "src" / "dados" / "taxonomia.json"

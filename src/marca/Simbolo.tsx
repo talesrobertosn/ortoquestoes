@@ -102,6 +102,7 @@ export function MarcaHorizontal({
     >
       <Simbolo tamanho={altura} direcao={direcao} />
       <span
+        className="marca-horizontal__texto"
         style={{
           fontSize: altura * 0.72,
           letterSpacing: '-0.015em',

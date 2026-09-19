@@ -1,3 +1,4 @@
+import { dominada, revisarHoje, type RegistroQuestao } from '../estado/revisao'
 import { recurso } from '../config'
 import type { Filtros, Indice, ItemIndice, Progresso, Questao } from './tipos'
 
@@ -102,15 +103,7 @@ type ChaveFaceta =
  * acervo de propósito: são dados locais da pessoa, não do conteúdo.
  */
 export interface ContextoLocal {
-  respondidas: Record<string, {
-    c: boolean | null
-    q?: number
-    tentativas?: number
-    acertos?: number
-    erros?: number
-    sequencia?: number
-    revisarEm?: number | null
-  }>
+  respondidas: Record<string, Partial<RegistroQuestao> & { c: boolean | null }>
   favoritos: string[]
   /** id → enunciado e alternativas, normalizados. Só existe depois de buscar. */
   textos: Map<string, string> | null
@@ -172,15 +165,13 @@ function aplicaUm(
 
   if (ignorar !== 'situacao' && filtros.situacao !== 'todas') {
     const registro = contexto.respondidas[item.id]
+    if (filtros.situacao === 'revisarHoje' && !revisarHoje(registro)) return false
+    if (filtros.situacao === 'dominadas' && !dominada(registro)) return false
     if (filtros.situacao === 'naoRespondidas' && registro) return false
-    if (
-      filtros.situacao === 'revisar' &&
-      (!registro || registro.revisarEm === null || (registro.revisarEm ?? Infinity) > Date.now())
-    ) return false
     if (filtros.situacao === 'erradas' && registro?.c !== false) return false
     if (filtros.situacao === 'acertadas' && registro?.c !== true) return false
-    if (filtros.situacao === 'dominadas' && (registro?.sequencia ?? 0) < 2) return false
     if (filtros.situacao === 'favoritas' && !contexto.favoritos.includes(item.id)) return false
+    if (filtros.situacao === 'incertas' && (!registro || (registro.confianca !== 'duvida' && registro.confianca !== 'chute'))) return false
   }
 
   if (ignorar !== 'busca' && filtros.busca.trim()) {
@@ -249,14 +240,13 @@ export function contar(
       } else if (registro.c === true) {
         contagens.porSituacao.acertadas = (contagens.porSituacao.acertadas ?? 0) + 1
       }
-      if (registro && registro.revisarEm !== null && (registro.revisarEm ?? Infinity) <= Date.now()) {
-        contagens.porSituacao.revisar = (contagens.porSituacao.revisar ?? 0) + 1
-      }
-      if ((registro?.sequencia ?? 0) >= 2) {
-        contagens.porSituacao.dominadas = (contagens.porSituacao.dominadas ?? 0) + 1
-      }
+      if (revisarHoje(registro)) contagens.porSituacao.revisarHoje = (contagens.porSituacao.revisarHoje ?? 0) + 1
+      if (dominada(registro)) contagens.porSituacao.dominadas = (contagens.porSituacao.dominadas ?? 0) + 1
       if (contexto.favoritos.includes(item.id)) {
         contagens.porSituacao.favoritas = (contagens.porSituacao.favoritas ?? 0) + 1
+      }
+      if (registro && (registro.confianca === 'duvida' || registro.confianca === 'chute')) {
+        contagens.porSituacao.incertas = (contagens.porSituacao.incertas ?? 0) + 1
       }
     }
 
@@ -305,8 +295,29 @@ export function montarSessao(
   semente: number,
   contexto: ContextoLocal = CONTEXTO_VAZIO,
 ): string[] {
-  let ids = filtrar(indice, filtros, contexto).map((i) => i.id)
+  const itens = filtrar(indice, filtros, contexto)
+  let ids = itens.map((i) => i.id)
   if (filtros.embaralhar) ids = embaralhar(ids, semente)
+  // No treino amplo, alterna uma revisão/erro, uma questão nova e uma já
+  // acertada. A sessão fica mais sustentável sem esconder a prioridade de
+  // revisão e os filtros explícitos continuam sendo respeitados integralmente.
+  if (filtros.situacao === 'todas' && !filtros.busca.trim()) {
+    const grupos = [[], [], []] as string[][]
+    for (const id of ids) {
+      const registro = contexto.respondidas[id]
+      if (revisarHoje(registro)) grupos[0].push(id)
+      else if (!registro) grupos[1].push(id)
+      else grupos[2].push(id)
+    }
+    const alternados: string[] = []
+    while (grupos.some(grupo => grupo.length)) {
+      for (const grupo of grupos) {
+        const id = grupo.shift()
+        if (id) alternados.push(id)
+      }
+    }
+    ids = alternados
+  }
   if (filtros.limite && filtros.limite > 0) ids = ids.slice(0, filtros.limite)
   return ids
 }

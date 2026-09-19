@@ -1,5 +1,6 @@
+import { Conta } from './paginas/Conta'
 import { useEffect } from 'react'
-import { usarRota } from './util/rotas'
+import { href, usarRota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
 import { Inicio } from './paginas/Inicio'
@@ -10,11 +11,12 @@ import { QuestaoDireta } from './paginas/QuestaoDireta'
 import { Contato, DadosLocais, NaoEncontrada, Sobre } from './paginas/Apoio'
 import { Favoritas } from './paginas/Favoritas'
 import { Progresso } from './paginas/Progresso'
-import { SITE } from './config'
+import { Revisao } from './paginas/Revisao'
 import { Termos } from './paginas/Termos'
-import { usarAceiteTermos } from './estado/termos'
 import { Assinatura } from './paginas/Assinatura'
 import { Entrar } from './paginas/Entrar'
+import { SITE } from './config'
+import { usarLeitura } from './estado/preferencias'
 import { consumirRetornoAuth } from './servicos/supabase'
 
 const TITULOS: Record<string, string> = {
@@ -25,10 +27,12 @@ const TITULOS: Record<string, string> = {
   '/sobre': 'O projeto — OrtoQuestões: questões de ortopedia comentadas',
   '/projeto': 'O projeto — OrtoQuestões: questões de ortopedia comentadas',
   '/contato': 'Relatar erro — OrtoQuestões',
+  '/conta': 'Minha conta — OrtoQuestões',
   '/dados': 'Seu desempenho — OrtoQuestões',
   '/favoritas': 'Suas favoritas — OrtoQuestões',
   '/progresso': 'Progresso dos comentários — OrtoQuestões',
-  '/termos': 'Termos de uso e consentimento — OrtoQuestões',
+  '/revisao': 'Sua revisão — OrtoQuestões',
+  '/termos': 'Termos de Uso e Consentimento — OrtoQuestões',
   '/assinatura': 'Planos — OrtoQuestões',
   '/entrar': 'Entrar ou criar conta — OrtoQuestões',
 }
@@ -36,8 +40,9 @@ const TITULOS: Record<string, string> = {
 export function App() {
   const rota = usarRota()
   const [primeiro, segundo] = rota.segmentos
-  const { aceito: termosAceitos, aceitar: aceitarTermos } = usarAceiteTermos()
+  const { densidade, fonte } = usarLeitura()
 
+  useEffect(() => { window.scrollTo({ top: 0, behavior: 'auto' }) }, [rota.caminho])
   useEffect(() => { consumirRetornoAuth() }, [])
 
   useEffect(() => {
@@ -59,17 +64,13 @@ export function App() {
       pagina = <Treinar consulta={rota.consulta} />
       break
     case 'sessao':
-      pagina = termosAceitos ? <Sessao /> : <Termos obrigatorio aoAceitar={aceitarTermos} />
+      pagina = <Sessao />
       break
     case 'resumo':
       pagina = <Resumo />
       break
     case 'questao':
-      pagina = segundo
-        ? termosAceitos
-          ? <QuestaoDireta id={segundo} />
-          : <Termos obrigatorio aoAceitar={aceitarTermos} />
-        : <NaoEncontrada />
+      pagina = segundo ? <QuestaoDireta id={segundo} /> : <NaoEncontrada />
       break
     // Duas rotas para a mesma página: "sobre" é o endereço antigo, que
     // continua valendo, e "projeto" é como o site passou a chamá-la.
@@ -80,6 +81,9 @@ export function App() {
     case 'contato':
       pagina = <Contato consulta={rota.consulta} />
       break
+    case 'conta':
+      pagina = <Conta consulta={rota.consulta} />
+      break
     case 'dados':
       pagina = <DadosLocais />
       break
@@ -88,6 +92,9 @@ export function App() {
       break
     case 'progresso':
       pagina = <Progresso />
+      break
+    case 'revisao':
+      pagina = <Revisao />
       break
     case 'termos':
       pagina = <Termos />
@@ -105,7 +112,7 @@ export function App() {
   const estreita = ['sessao', 'questao'].includes(primeiro ?? '')
 
   return (
-    <div className="pagina">
+    <div className={`pagina pagina--${densidade}`} style={{ fontSize: `${fonte}%` }}>
       <a className="pular-para-conteudo" href="#conteudo-principal">
         Pular para o conteúdo
       </a>
@@ -114,6 +121,11 @@ export function App() {
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>{pagina}</div>
       </main>
       <Rodape />
+      <nav className="nav-mobile nao-imprime" aria-label="Navegação principal no celular">
+        {([['/', 'Início'], ['/treinar', 'Treinar'], ['/revisao', 'Revisar'], ['/dados', 'Desempenho']]).map(([url, titulo]) => (
+          <a key={titulo} href={href(url)} aria-current={rota.caminho === url ? 'page' : undefined}>{titulo}</a>
+        ))}
+      </nav>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, type TouchEvent } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
 import type { Questao } from '../dados/tipos'
@@ -6,26 +6,25 @@ import { formatarDuracao, segundosRestantes } from '../dados/tipos'
 import { CartaoQuestao } from '../componentes/CartaoQuestao'
 import { MapaQuestoes } from '../componentes/MapaQuestoes'
 import { Painel } from '../componentes/Painel'
+import { PortaoConta } from '../componentes/PortaoConta'
 import { Atalhos } from '../componentes/Atalhos'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
+import { usarConta } from '../conta/ContextoConta'
 import { usarFavoritos, usarSessao } from '../estado/sessao'
 import { href, navegar } from '../util/rotas'
-import { usarLimiteDiario } from '../estado/limiteDiario'
-import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 
 export function Sessao() {
   const { indice } = usarIndice()
   const { sessao, responder, irPara, alternarRevisar, alternarRiscada, finalizar } = usarSessao()
+  const { sessao: conta } = usarConta()
   const { favoritos, alternar: alternarFavorito } = usarFavoritos()
   const [questoes, definirQuestoes] = useState<Questao[] | null>(null)
   const [mapaAberto, definirMapaAberto] = useState(false)
   const [atalhosAbertos, definirAtalhosAbertos] = useState(false)
+  const [portaoContaAberto, definirPortaoContaAberto] = useState(false)
   const [erro, definirErro] = useState<string | null>(null)
-  const { estado: estadoLimite, autorizar } = usarLimiteDiario()
-  const [limiteAberto, definirLimiteAberto] = useState(false)
-  const chavesResposta = useRef(new Map<string, string>())
-  const autorizando = useRef(false)
+  const inicioToque = useRef<number | null>(null)
 
   const ids = sessao?.ids
   useEffect(() => {
@@ -48,7 +47,7 @@ export function Sessao() {
   }, [questoes, sessao, posicao])
 
   const respondidas = sessao ? Object.keys(sessao.respostas).length : 0
-  const painelAberto = mapaAberto || atalhosAbertos || limiteAberto
+  const painelAberto = mapaAberto || atalhosAbertos
   const simulado = !!sessao?.simulado
 
   // Cronômetro do simulado. O relógio corre no mundo: fechar a aba não pausa
@@ -150,9 +149,37 @@ export function Sessao() {
     finalizar()
     navegar('/resumo')
   }
+  function iniciarGesto(evento: TouchEvent) { inicioToque.current = evento.changedTouches[0]?.clientX ?? null }
+  function concluirGesto(evento: TouchEvent) {
+    const inicio = inicioToque.current; const fim = evento.changedTouches[0]?.clientX
+    inicioToque.current = null
+    if (inicio === null || fim === undefined || Math.abs(fim - inicio) < 70 || painelAberto) return
+    if (fim < inicio) avancar()
+    else irPara(posicao - 1)
+  }
 
   return (
-    <>
+    <div className="sessao-gestos" onTouchStart={iniciarGesto} onTouchEnd={concluirGesto}>
+      <button
+        type="button"
+        className="seta-lateral seta-lateral--esquerda nao-imprime"
+        onClick={() => irPara(posicao - 1)}
+        disabled={posicao === 0}
+        aria-label="Questão anterior"
+        title="Questão anterior (←)"
+      >
+        <Icone nome="esquerda" tamanho={22} />
+      </button>
+      <button
+        type="button"
+        className="seta-lateral seta-lateral--direita nao-imprime"
+        onClick={() => irPara(posicao + 1)}
+        disabled={posicao + 1 >= total}
+        aria-label="Próxima questão"
+        title="Próxima questão (→)"
+      >
+        <Icone nome="direita" tamanho={22} />
+      </button>
       <div className="barra-sessao nao-imprime">
         <div className="conteudo barra-sessao__interno">
           <span className="barra-sessao__texto">
@@ -202,7 +229,7 @@ export function Sessao() {
       </div>
 
       {questaoAtual ? (
-        <><AvisoLimite estado={estadoLimite} /><CartaoQuestao
+        <CartaoQuestao
           questao={questaoAtual}
           numero={posicao + 1}
           total={total}
@@ -210,16 +237,9 @@ export function Sessao() {
           riscadas={sessao.riscadas[questaoAtual.id] ?? []}
           favorita={favoritos.includes(questaoAtual.id)}
           marcadaRevisao={sessao.revisar.includes(questaoAtual.id)}
-          aoResponder={async (letra, correta, segundos) => {
-            if (autorizando.current) return
-            autorizando.current = true
-            const chaveMapa = `${sessao.id}:${questaoAtual.id}`
-            const chave = chavesResposta.current.get(chaveMapa) ?? crypto.randomUUID()
-            chavesResposta.current.set(chaveMapa, chave)
-            const permissao = await autorizar(questaoAtual.id, chave)
-            autorizando.current = false
-            if (!permissao.permitido) { definirLimiteAberto(true); return }
-            responder(questaoAtual.id, letra, correta, segundos)
+          aoResponder={(letra, correta, segundos, confianca) => {
+            if (!conta) { definirPortaoContaAberto(true); return }
+            responder(questaoAtual.id, letra, correta, segundos, confianca)
           }}
           aoRiscar={(letra) => alternarRiscada(questaoAtual.id, letra)}
           aoFavoritar={() => alternarFavorito(questaoAtual.id)}
@@ -227,7 +247,7 @@ export function Sessao() {
           aoAvancar={avancar}
           atalhosAtivos={!painelAberto}
           revelarResposta={!simulado}
-        /></>
+        />
       ) : (
         <Estado titulo="Esta questão saiu do acervo.">
           <p>Ela foi removida ou renomeada em uma atualização. Siga para a próxima.</p>
@@ -246,6 +266,15 @@ export function Sessao() {
         </button>
 
         <div className="linha">
+          {posicao + 1 < total && !sessao.respostas[questaoAtual?.id ?? ''] && (
+            <button
+              type="button"
+              className="botao botao--fantasma"
+              onClick={() => irPara(posicao + 1)}
+            >
+              Pular por agora
+            </button>
+          )}
           {proximaNaoRespondida > -1 && (
             <button
               type="button"
@@ -291,8 +320,6 @@ export function Sessao() {
         />
       </Painel>
 
-      <PainelLimite estado={estadoLimite} aberto={limiteAberto} aoFechar={() => definirLimiteAberto(false)} />
-
       <Painel
         titulo="Atalhos de teclado"
         aberto={atalhosAbertos}
@@ -300,6 +327,8 @@ export function Sessao() {
       >
         <Atalhos />
       </Painel>
-    </>
+
+      <PortaoConta aberto={portaoContaAberto} aoFechar={() => definirPortaoContaAberto(false)} />
+    </div>
   )
 }

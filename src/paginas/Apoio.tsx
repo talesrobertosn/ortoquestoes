@@ -1,9 +1,14 @@
+import { usarConta } from '../conta/ContextoConta'
+import { usarArmazenado } from '../estado/usarArmazenado'
+import type { RegistroQuestao } from '../estado/revisao'
+import { BackupProgresso } from '../componentes/BackupProgresso'
+import { Icone } from '../componentes/Icone'
 import { useMemo, useState } from 'react'
 import { SITE, recurso } from '../config'
 import { href } from '../util/rotas'
 import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
-import { armazenamentoDisponivel, exportarDados, importarDados, limparTudo, tamanhoArmazenado } from '../estado/armazenamento'
-import { lerHistorico, lerRespondidas, usarFavoritos } from '../estado/sessao'
+import { armazenamentoDisponivel, tamanhoArmazenado } from '../estado/armazenamento'
+import { type ResumoHistorico, usarFavoritos } from '../estado/sessao'
 import { usarIndice } from '../dados/usarIndice'
 
 export function Sobre() {
@@ -12,9 +17,9 @@ export function Sobre() {
       <h1>O projeto OrtoQuestões</h1>
       <p>
         O OrtoQuestões é um banco de questões de ortopedia e traumatologia. Reúne questões de
-        provas anteriores — TEOT, TARO e outras — organizadas por assunto, para quem se prepara
-        para o título de especialista ou para as provas da residência. É um projeto independente
-        mantido para a comunidade de ortopedia, com uma regra simples: da página
+        provas anteriores — TEOT, TARO, R4 do ENARE e outras — organizadas por assunto, para quem
+        se prepara para o título de especialista ou para as provas da residência. Foi feito por um ortopedista
+        para residentes que estudam entre plantões e cirurgias, com uma regra simples: da página
         inicial até a primeira questão respondida, no máximo dois cliques.
       </p>
 
@@ -37,9 +42,7 @@ export function Sobre() {
       </p>
       <ul className="lista">
         <li>
-          <strong>Comentário de IA.</strong> Os comentários são produzidos com apoio de IA e
-          publicados com referências. Quando houver revisão médica, ela será indicada
-          explicitamente. Explica o conceito por trás da questão, por que a
+          <strong>Comentário de IA.</strong> Os comentários são produzidos com apoio de IA e publicados com referências. Quando houver revisão médica, ela será indicada explicitamente. Explica o conceito por trás da questão, por que a
           alternativa correta é correta e por que cada uma das erradas está errada. Quando há
           dúvida sobre o gabarito ou sobre uma afirmação da banca, o comentário diz isso em vez de
           inventar uma explicação segura de aparência.
@@ -55,20 +58,17 @@ export function Sobre() {
       <h2>O acervo</h2>
       <p>
         As questões são originais das provas, transcritas dos PDFs sem reescrita, sem resumo e sem
-        correção do enunciado. O gabarito vem da própria prova. Questões anuladas ficam marcadas
-        como anuladas e não entram no cálculo de desempenho.
-      </p>
-      <p className="aviso-ia">
-        <strong>Origem em conferência.</strong> O conjunto reúne questões do TEOT, do TARO e de
-        outras provas da especialidade, mas a prova e o ano de cada item ainda não puderam ser
-        separados com segurança. Esses filtros só aparecerão quando os metadados forem conferidos.
+        correção do enunciado. O gabarito vem da própria prova, ou — quando a banca não publica um
+        gabarito oficial, como costuma ocorrer no TARO — de uma resposta justificada e sinalizada
+        como tal. Questões anuladas ficam marcadas como anuladas e não entram no cálculo de
+        desempenho.
       </p>
       <p>
         Os assuntos cobrem o programa inteiro da especialidade: mão e punho, ombro e cotovelo,
         quadril, joelho, pé e tornozelo, coluna, trauma e fraturas, tumores ósseos, ortopedia
         pediátrica, doenças osteometabólicas e conceitos básicos (biomateriais, infecção,
-        consolidação óssea, metodologia científica). Dá para filtrar por assunto, por prova, por
-        ano, por dificuldade e por questões que você errou.
+        consolidação óssea, metodologia científica). Você pode montar sua sessão por assunto,
+        prova, ano ou dificuldade, e revisar o que errou a qualquer momento.
       </p>
 
       <p>
@@ -76,25 +76,21 @@ export function Sobre() {
         em páginas abertas que podem ser lidas e compartilhadas sem entrar no site.
       </p>
 
+      <h2>Como funciona hoje</h2>
       <p>
-        O acervo é comentado aos poucos, e o andamento é público: a{' '}
-        <a href={href('/progresso')}>página de progresso</a> mostra quanto já tem comentário de IA
-        e quanto já tem comentário da comunidade, tema por tema.
-      </p>
-
-      <h2>Como funciona hoje, e o que vem depois</h2>
-      <p>
-        Hoje o site é aberto e o acervo inteiro está disponível para responder. No futuro pretendo
-        cobrar uma taxa pequena para manter o projeto de pé, preservando um uso diário livre — a
-        ideia é que ninguém fique sem estudar por causa disso. Quando isso mudar, será avisado
-        aqui, com antecedência.
+        O acervo inteiro está disponível para responder, e continua gratuito. Criar uma conta é
+        necessário para começar: é o que garante que suas respostas, revisões e desempenho fiquem
+        guardados com segurança e acompanhem você em qualquer aparelho, e não apenas neste
+        navegador. No futuro pretendo cobrar uma taxa pequena para manter o projeto de pé,
+        preservando um uso diário livre — a ideia é que ninguém fique sem estudar por causa disso.
+        Quando isso mudar, será avisado aqui, com antecedência.
       </p>
 
       <h2>Seus dados</h2>
       <p>
-        O progresso — questões respondidas, favoritas, histórico de sessões — fica guardado apenas
-        no seu navegador, e você pode apagá-lo quando quiser na página de{' '}
-        <a href={href('/dados')}>dados locais</a>.
+        Respostas, revisões, favoritas, anotações e histórico ficam associados à sua conta e são
+        sincronizados pelo Supabase, com acesso restrito ao titular. Você pode exportar ou apagar
+        seu progresso a qualquer momento na página de <a href={href('/dados')}>desempenho</a>.
       </p>
 
       <h2>Erros</h2>
@@ -115,23 +111,18 @@ export function Sobre() {
       </p>
 
       <div className="linha linha--empilha-celular">
-        <a className="botao botao--principal" href={href('/treinar')}>
+        <a className="botao botao--principal" href={href('/conta?modo=criar')}>
+          Criar minha conta
+        </a>
+        <a className="botao" href={href('/treinar')}>
           Montar uma sessão
         </a>
         <a className="botao" href={href('/contato')}>
           Falar com o autor
         </a>
-        <a
-          className="botao"
-          href={SITE.instagram}
-          target="_blank"
-          rel="noopener noreferrer me"
-        >
-          Seguir no Instagram
-        </a>
       </div>
 
-      <p className="texto-2">Projeto independente mantido por {SITE.autor} para a comunidade de ortopedia.</p>
+      <p className="texto-2">Feito por {SITE.autor}.</p>
     </article>
   )
 }
@@ -152,7 +143,7 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
 
   const assunto = questao
     ? `OrtoQuestões — erro na questão ${questao}`
-    : 'OrtoQuestões — relato de erro' 
+    : 'OrtoQuestões — relato de erro'
 
   return (
     <article className="limite-leitura empilha">
@@ -197,11 +188,12 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
 export function DadosLocais() {
   const { favoritos } = usarFavoritos()
   const { indice } = usarIndice()
-  const historico = useMemo(() => lerHistorico(), [])
-  const marcadas = useMemo(() => lerRespondidas(), [])
+  const { sessao: conta, status: statusSync, sincronizar, reiniciarProgresso } = usarConta()
+  const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
+  const [marcadas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
   const respondidas = Object.keys(marcadas).length
   const [apagado, definirApagado] = useState(false)
-  const [mensagemBackup, definirMensagemBackup] = useState<string | null>(null)
+  const [reinicioPendente] = usarArmazenado<string | null>('reinicio:pendente', null)
   const bytes = tamanhoArmazenado()
 
   // Desempenho acumulado por tema: cruza as questões já respondidas neste
@@ -230,18 +222,55 @@ export function DadosLocais() {
 
   const totalCertas = porTema.reduce((n, t) => n + t.certas, 0)
   const totalContadas = porTema.reduce((n, t) => n + t.total, 0)
+  const errosTotais = Object.values(marcadas).reduce((n, registro) => n + (registro.erros ?? (registro.c === false ? 1 : 0)), 0)
+  const nome = String(conta?.user.user_metadata?.nome ?? '').trim()
+  const percentualGeral = totalContadas > 0 ? totalCertas / totalContadas : null
+  const incertas = Object.values(marcadas).filter(registro => registro.confianca === 'duvida' || registro.confianca === 'chute').length
+  const porConfianca = useMemo(() => {
+    const grupos = { seguro: { certas: 0, total: 0 }, duvida: { certas: 0, total: 0 }, chute: { certas: 0, total: 0 } }
+    for (const registro of Object.values(marcadas)) {
+      const eventos = registro.historico?.length ? registro.historico : [{ correta: registro.c, confianca: registro.confianca ?? 'seguro' as const }]
+      for (const evento of eventos) {
+        if (evento.correta === null) continue
+        const grupo = grupos[evento.confianca]
+        grupo.total++
+        if (evento.correta) grupo.certas++
+      }
+    }
+    return grupos
+  }, [marcadas])
+  const mensagemDesempenho = percentualGeral === null
+    ? 'Vamos começar e construir seu histórico.'
+    : percentualGeral >= 0.8
+      ? 'Mandou muito bem! Seu desempenho está excelente — continue nesse ritmo.'
+      : percentualGeral >= 0.6
+        ? 'Você está no caminho certo. Mais algumas revisões vão fazer essa porcentagem subir.'
+        : percentualGeral >= 0.4
+          ? 'Há espaço para melhorar. Revise as questões que errou e tente novamente.'
+          : 'Atenção redobrada agora: revise com calma os temas mais difíceis e reforce a base.'
 
   return (
     <article className="empilha-2">
       <header className="limite-leitura">
-        <h1>Seu desempenho</h1>
+        <h1>{nome ? `Olha seu desempenho, ${nome}` : 'Seu desempenho'}</h1>
         <p style={{ marginTop: '0.5rem' }} className="texto-2">
-          Contado a partir de todas as questões que você já respondeu neste navegador, não só da
-          última sessão.
+          Contado a partir de todas as questões que você já respondeu nesta conta, não só da
+          última sessão ou deste dispositivo.
         </p>
+        {nome && <p className="heroi__nota">{mensagemDesempenho}</p>}
+        {!conta && <p className="aviso-ia">Crie uma conta gratuita para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
+        {conta && (
+          <p className="meta status-sincronia" role="status" style={{ marginTop: '0.75rem' }}>
+            <span className={`ponto-sincronia ponto-sincronia--${statusSync.estado}`} aria-hidden="true" />
+            {statusSync.estado === 'sincronizando' ? 'Sincronizando…' : statusSync.estado === 'salvo' ? 'Progresso sincronizado' : statusSync.pendentes ? `${statusSync.pendentes} alteração(ões) aguardando envio` : 'Progresso salvo neste dispositivo'}
+            {statusSync.estado !== 'sincronizando' && (
+              <button type="button" className="botao--vinculo" onClick={sincronizar}>sincronizar agora</button>
+            )}
+          </p>
+        )}
       </header>
 
-      {!armazenamentoDisponivel() && (
+      {conta && !armazenamentoDisponivel() && (
         <div className="estado">
           <p className="estado__titulo">Este navegador está com o armazenamento bloqueado.</p>
           <p>
@@ -251,34 +280,48 @@ export function DadosLocais() {
         </div>
       )}
 
-      <div className="numeros">
-        <div className="numeros__celula">
-          <span className="numeros__valor">
-            {totalContadas > 0 ? `${Math.round((totalCertas / totalContadas) * 100)}%` : '—'}
-          </span>
-          <span className="numeros__rotulo">de acerto no total</span>
+      <section className="cartao cartao__corpo">
+        <p className="meta">RESUMO GERAL</p>
+        <div className="numeros numeros--destaque">
+          <div className="numeros__celula">
+            <span className="numeros__valor">
+              {totalContadas > 0 ? `${Math.round((totalCertas / totalContadas) * 100)}%` : '—'}
+            </span>
+            <span className="numeros__rotulo">de acerto no total</span>
+          </div>
+          <div className="numeros__celula">
+            <span className="numeros__valor">{respondidas}</span>
+            <span className="numeros__rotulo">questões respondidas</span>
+          </div>
+          <div className="numeros__celula">
+            <span className="numeros__valor">{historico.length}</span>
+            <span className="numeros__rotulo">sessões concluídas</span>
+          </div>
         </div>
-        <div className="numeros__celula">
-          <span className="numeros__valor">{respondidas}</span>
-          <span className="numeros__rotulo">questões respondidas</span>
+        <div className="numeros-apoio">
+          <span>{errosTotais} {errosTotais === 1 ? 'erro acumulado' : 'erros acumulados'}</span>
+          <a href={href('/favoritas')}>{favoritos.length} {favoritos.length === 1 ? 'favorita' : 'favoritas'}</a>
         </div>
-        <div className="numeros__celula">
-          <span className="numeros__valor">{historico.length}</span>
-          <span className="numeros__rotulo">sessões concluídas</span>
+      </section>
+
+      {(porConfianca.seguro.total > 0 || porConfianca.duvida.total > 0 || porConfianca.chute.total > 0) && <section className="cartao cartao__corpo">
+        <p className="meta">ACERTO POR CONFIANÇA</p>
+        <h2>Sua sensação combina com o resultado?</h2>
+        <p className="texto-2" style={{ marginTop: '0.25rem' }}>Use isso para identificar quando vale revisar mesmo depois de acertar. Cada faixa também tem um ciclo próprio: chute volta em 1 dia, dúvida em 2, certeza em 3 — <a href={href('/revisao')}>veja a escada completa</a>.</p>
+        <div className="numeros" style={{ marginTop: '0.75rem' }}>
+          {([['seguro', 'Quando tinha certeza'], ['duvida', 'Quando tinha dúvida'], ['chute', 'Quando foi chute']] as const).map(([tipo, rotulo]) => {
+            const grupo = porConfianca[tipo]
+            return <div className="numeros__celula" key={tipo}><span className="numeros__valor">{grupo.total ? `${Math.round((grupo.certas / grupo.total) * 100)}%` : '—'}</span><span className="numeros__rotulo">{rotulo} · {grupo.total} {grupo.total === 1 ? 'resposta' : 'respostas'}</span></div>
+          })}
         </div>
-        <div className="numeros__celula">
-          <span className="numeros__valor">{favoritos.length}</span>
-          <span className="numeros__rotulo">
-            <a href={href('/favoritas')}>favoritas</a>
-          </span>
-        </div>
-      </div>
+        {incertas > 0 && <div className="linha" style={{ marginTop: '0.75rem' }}><a className="botao botao--principal" href={href('/treinar?situacao=incertas&limite=20')}>Refazer {incertas} {incertas === 1 ? 'questão com dúvida ou chute' : 'questões com dúvida ou chute'}</a></div>}
+      </section>}
 
       <section>
         <h2>Por tema</h2>
         {porTema.length === 0 ? (
           <p className="texto-2" style={{ marginTop: '0.5rem' }}>
-            Ainda não há questões respondidas neste navegador. Responda uma sessão e o desempenho
+            Ainda não há questões respondidas nesta conta. Responda uma sessão e o desempenho
             por tema aparece aqui.
           </p>
         ) : (
@@ -310,70 +353,37 @@ export function DadosLocais() {
         )}
       </section>
 
-      <section className="limite-leitura">
+      {conta && <section className="limite-leitura">
         <h2>Onde isso fica guardado</h2>
         <p>
-          Tudo que o site sabe sobre você fica neste navegador, em localStorage. Nada é enviado para
-          servidor nenhum, porque não existe servidor: o site é um conjunto de arquivos estáticos.
-          São {(bytes / 1024).toFixed(1)} kB no total.
+          Seu progresso é salvo com segurança e sincronizado com sua conta no Supabase. São {(bytes / 1024).toFixed(1)} kB guardados neste perfil. <a href={href('/conta')}>Minha conta</a>
         </p>
-      </section>
+      </section>}
 
-      <section className="cartao backup-local">
-        <h2>Levar seu progresso para outro aparelho</h2>
-        <p className="texto-2">
-          Baixe uma cópia das respostas, revisões e favoritas. O arquivo fica com você e não é
-          enviado ao OrtoQuestões.
-        </p>
-        <div className="linha linha--empilha-celular">
-          <button className="botao botao--principal" type="button" onClick={() => {
-            const blob = new Blob([exportarDados()], { type: 'application/json' })
-            const url = URL.createObjectURL(blob)
-            const a = document.createElement('a')
-            a.href = url
-            a.download = `ortoquestoes-backup-${new Date().toISOString().slice(0, 10)}.json`
-            a.click()
-            URL.revokeObjectURL(url)
-            definirMensagemBackup('Backup baixado.')
-          }}>Baixar backup</button>
-          <label className="botao">
-            Restaurar backup
-            <input className="so-leitor" type="file" accept="application/json,.json" onChange={async (e) => {
-              const arquivo = e.target.files?.[0]
-              if (!arquivo) return
-              try {
-                importarDados(await arquivo.text())
-                definirMensagemBackup('Backup restaurado. Recarregando…')
-                window.setTimeout(() => window.location.reload(), 700)
-              } catch (erro) {
-                definirMensagemBackup(erro instanceof Error ? erro.message : 'Não foi possível restaurar o backup.')
+      <BackupProgresso />
+
+      {conta && <section className="zona-risco cartao__corpo empilha">
+        <p className="meta"><Icone nome="alerta" tamanho={15} /> ZONA DE RISCO</p>
+        <h2>Começar do zero</h2>
+        <p className="texto-2">Zera respostas, revisões, favoritas, anotações, histórico e sessão em andamento. Sua conta e preferências são mantidas. Os registros anteriores ficam fora do progresso ativo, sem exclusão definitiva do banco. Exporte um backup antes se quiser guardar uma cópia.</p>
+        <div className="linha">
+          <button
+            type="button"
+            className="botao botao--perigo"
+            disabled={!!reinicioPendente}
+            onClick={() => {
+              if (window.confirm('Começar do zero nesta conta? Respostas, revisões, favoritas, anotações e histórico deixarão de contar. O reinício será sincronizado com seus outros dispositivos.')) {
+                reiniciarProgresso()
+                definirApagado(true)
               }
-            }} />
-          </label>
-          {mensagemBackup && <span className="meta" role="status">{mensagemBackup}</span>}
+            }}
+          >
+            {reinicioPendente ? 'Sincronizando reinício…' : 'Zerar meu progresso'}
+          </button>
+          {reinicioPendente && <button type="button" className="botao botao--fantasma" onClick={sincronizar}>Tentar sincronizar agora</button>}
         </div>
-      </section>
-
-      <h2>Apagar tudo</h2>
-      <p>
-        Apaga favoritas, histórico de sessões, questões respondidas e a sessão em andamento. Não tem
-        volta e não afeta o acervo.
-      </p>
-      <div className="linha">
-        <button
-          type="button"
-          className="botao"
-          onClick={() => {
-            if (window.confirm('Apagar todos os dados locais do OrtoQuestões neste navegador?')) {
-              limparTudo()
-              definirApagado(true)
-            }
-          }}
-        >
-          Apagar todos os dados locais
-        </button>
-        {apagado && <span className="meta">Apagado. Recarregue a página para ver o site zerado.</span>}
-      </div>
+        {(apagado || reinicioPendente) && <span className="meta" role="status">{reinicioPendente ? 'Progresso zerado neste navegador. O reinício na conta está pendente de sincronização; você já pode estudar.' : 'Reinício sincronizado. Seu novo progresso já está valendo.'}</span>}
+      </section>}
     </article>
   )
 }

@@ -1,3 +1,4 @@
+import { proximoRegistro, type RegistroQuestao } from './revisao'
 import { useCallback } from 'react'
 import type { EstadoSessao, Filtros, Letra, Resposta } from '../dados/tipos'
 import { usarArmazenado } from './usarArmazenado'
@@ -7,19 +8,6 @@ export const CHAVE_SESSAO = 'sessao:atual'
 export const CHAVE_HISTORICO = 'historico'
 export const CHAVE_FAVORITOS = 'favoritos'
 export const CHAVE_RESPONDIDAS = 'respondidas'
-
-export interface RegistroQuestao {
-  /** Resultado e instante da tentativa mais recente (campos antigos preservados). */
-  c: boolean | null
-  q: number
-  tentativas: number
-  acertos: number
-  erros: number
-  /** Acertos consecutivos; dois acertos representam domínio inicial. */
-  sequencia: number
-  /** Próximo instante de revisão; null quando a questão está dominada. */
-  revisarEm: number | null
-}
 
 export interface ResumoHistorico {
   id: string
@@ -70,11 +58,17 @@ export function usarSessao() {
   )
 
   const responder = useCallback(
-    (id: string, escolhida: Letra, correta: boolean | null, segundos: number) => {
+    (id: string, escolhida: Letra, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute') => {
+      // Persistência acontece fora do updater do React. Updaters podem ser
+      // reexecutados ou descartados em celulares, o que fazia respostas
+      // ficarem apenas no estado visual da sessão.
+      const salvo = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
+      // O modo simulado também registra cada resposta imediatamente. A prova
+      // pode esconder o gabarito, mas nunca deve esconder o salvamento.
+      if (salvo && !salvo.respostas[id]) registrarRespondida(id, correta, confianca)
       definirSessao((atual) => {
         if (!atual) return atual
-        const resposta: Resposta = { escolhida, correta, segundos }
-        registrarRespondida(id, correta)
+        const resposta: Resposta = { escolhida, correta, segundos, confianca }
         return { ...atual, respostas: { ...atual.respostas, [id]: resposta } }
       })
     },
@@ -120,10 +114,11 @@ export function usarSessao() {
   )
 
   const finalizar = useCallback(() => {
+    const salvo = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
+    if (salvo && !salvo.concluidaEm) registrarHistorico(salvo)
     definirSessao((atual) => {
       if (!atual || atual.concluidaEm) return atual
       const concluida = { ...atual, concluidaEm: Date.now() }
-      registrarHistorico(concluida)
       return concluida
     })
   }, [definirSessao])
@@ -137,49 +132,22 @@ export function usarSessao() {
  * Registra uma resposta no histórico local. Vale para qualquer lugar em que a
  * questão seja respondida — dentro de uma sessão ou por link direto —, senão o
  * desempenho conta menos do que a pessoa realmente fez.
+ *
+ * A confiança não tem valor padrão: ela decide quando a questão volta, e um
+ * padrão silencioso já fez toda resposta ser contada como "tinha certeza".
  */
-export function registrarResposta(id: string, correta: boolean | null) {
-  registrarRespondida(id, correta)
+export function registrarResposta(id: string, correta: boolean | null, confianca: 'seguro' | 'duvida' | 'chute') {
+  registrarRespondida(id, correta, confianca)
 }
 
-function registrarRespondida(id: string, correta: boolean | null) {
-  const mapa = ler<Record<string, Partial<RegistroQuestao> & { c: boolean | null; q: number }>>(
-    CHAVE_RESPONDIDAS,
-    {},
-  )
-  const agora = Date.now()
-  const anterior = mapa[id]
-  const sequencia = correta === true ? (anterior?.sequencia ?? 0) + 1 : 0
-  // Erros voltam imediatamente; o primeiro acerto reaparece em três dias. No
-  // segundo acerto seguido, a questão sai da fila diária como dominada.
-  const revisarEm =
-    correta === null ? (anterior?.revisarEm ?? null) : correta === false ? agora : sequencia < 2 ? agora + 3 * 864e5 : null
-  mapa[id] = {
-    c: correta,
-    q: agora,
-    tentativas: (anterior?.tentativas ?? (anterior ? 1 : 0)) + 1,
-    acertos: (anterior?.acertos ?? 0) + (correta === true ? 1 : 0),
-    erros: (anterior?.erros ?? 0) + (correta === false ? 1 : 0),
-    sequencia,
-    revisarEm,
-  }
+function registrarRespondida(id: string, correta: boolean | null, confianca: 'seguro' | 'duvida' | 'chute') {
+  const mapa = ler<Record<string, RegistroQuestao>>(CHAVE_RESPONDIDAS, {})
+  mapa[id] = proximoRegistro(mapa[id], correta, Date.now(), confianca)
   gravar(CHAVE_RESPONDIDAS, mapa)
 }
 
 export function lerRespondidas(): Record<string, RegistroQuestao> {
-  const antigos = ler<Record<string, Partial<RegistroQuestao> & { c: boolean | null; q: number }>>(
-    CHAVE_RESPONDIDAS,
-    {},
-  )
-  return Object.fromEntries(Object.entries(antigos).map(([id, r]) => [id, {
-    c: r.c,
-    q: r.q,
-    tentativas: r.tentativas ?? 1,
-    acertos: r.acertos ?? (r.c === true ? 1 : 0),
-    erros: r.erros ?? (r.c === false ? 1 : 0),
-    sequencia: r.sequencia ?? (r.c === true ? 1 : 0),
-    revisarEm: r.revisarEm ?? (r.c === false ? r.q : null),
-  }]))
+  return ler(CHAVE_RESPONDIDAS, {})
 }
 
 export function descreverFiltros(filtros: Filtros): string {

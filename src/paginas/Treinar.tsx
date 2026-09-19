@@ -11,17 +11,22 @@ import {
 } from '../dados/tipos'
 import { consultaParaFiltros, filtrosParaConsulta, navegar } from '../util/rotas'
 import { SeletorArvore } from '../componentes/SeletorArvore'
-import { SeletorMultiplo } from '../componentes/SeletorMultiplo'
 import { Carregando, Estado } from '../componentes/Estados'
 import { usarSessao } from '../estado/sessao'
 import { usarMedia } from '../util/usarMedia'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { usarEtiquetas } from '../estado/preferencias'
 import { href } from '../util/rotas'
+import { usarConta } from '../conta/ContextoConta'
+
+// A maior parte do acervo ainda traz a prova genérica "TEOT/TARO" (sem
+// diferenciar as duas), então por enquanto as três formas aparecem como uma
+// única opção de filtro em vez de linhas separadas.
+const PROVAS_TEOT_TARO = ['TEOT/TARO', 'TEOT', 'TARO']
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
-const LIMITES = [10, 20, 30, 50, 100]
-const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'revisar', 'erradas', 'dominadas', 'favoritas']
+const LIMITES = [5, 10, 20, 30, 50, 100]
+const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'erradas', 'acertadas', 'favoritas', 'revisarHoje', 'incertas', 'dominadas']
 const DURACOES: Array<[number, string]> = [
   [60, '1 hora'],
   [120, '2 horas'],
@@ -31,18 +36,32 @@ const DURACOES: Array<[number, string]> = [
 
 export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const { indice, carregando } = usarIndice()
-  const { iniciar } = usarSessao()
+  const { iniciar, sessao } = usarSessao()
+  const { sessao: conta } = usarConta()
   // Em tela grande a árvore fica aberta na página: escolher assunto é o que se
   // faz aqui, não faz sentido esconder atrás de um menu.
   const telaLarga = usarMedia('(min-width: 64rem)')
-  const [filtros, definirFiltros] = useState<Filtros>(() => consultaParaFiltros(consulta))
+  const [filtros, definirFiltros] = useState<Filtros>(() => consulta.size ? consultaParaFiltros(consulta) : { ...FILTROS_VAZIOS, limite: 10 })
+  useEffect(() => {
+    const mudou = () => {
+      const [caminho, query = ''] = window.location.hash.slice(1).split('?')
+      if (caminho === '/treinar') {
+        const proximos = consultaParaFiltros(new URLSearchParams(query))
+        definirFiltros(atuais => filtrosParaConsulta(atuais) === filtrosParaConsulta(proximos) ? atuais : proximos)
+      }
+    }
+    window.addEventListener('hashchange', mudou)
+    return () => window.removeEventListener('hashchange', mudou)
+  }, [])
   const [simulado, definirSimulado] = useState(false)
   const [minutos, definirMinutos] = useState(180)
 
   // A URL acompanha os filtros: o endereço da barra é o filtro compartilhável.
   useEffect(() => {
     const destino = '/treinar' + filtrosParaConsulta(filtros)
-    navegar(destino, true)
+    if (window.location.hash !== '#' + destino) {
+      navegar(destino, true)
+    }
   }, [filtros])
 
   const { contexto, carregandoBusca } = usarContextoLocal(filtros.busca)
@@ -52,6 +71,17 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     [indice, filtros, contexto],
   )
   const arvore = useMemo(() => (indice ? arvoreAssuntos(indice) : []), [indice])
+  const gruposProva = useMemo(() => {
+    const provasNoAcervo = indice?.provas ?? []
+    const grupos: Array<{ rotulo: string; provas: string[] }> = []
+    const teotTaro = PROVAS_TEOT_TARO.filter((p) => provasNoAcervo.includes(p))
+    if (teotTaro.length > 0) grupos.push({ rotulo: 'TEOT/TARO', provas: teotTaro })
+    for (const prova of provasNoAcervo) {
+      if (PROVAS_TEOT_TARO.includes(prova)) continue
+      grupos.push({ rotulo: prova, provas: [prova] })
+    }
+    return grupos
+  }, [indice])
 
   // Filtro que não tem nenhuma opção não vira campo vazio na tela.
   const temProva = (indice?.provas.length ?? 0) > 0
@@ -65,13 +95,21 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
   const total = contagens?.total ?? 0
   const quantidadeSessao = filtros.limite ? Math.min(filtros.limite, total) : total
+  const estimativaMinutos = Math.max(1, Math.round(quantidadeSessao * (simulado ? 1.5 : 0.8)))
+  const desempenhoAnterior = useMemo(() => {
+    const registros = Object.values(contexto.respondidas)
+    const tentativas = registros.reduce((total, registro) => total + (registro.tentativas ?? 1), 0)
+    const acertos = registros.reduce((total, registro) => total + (registro.acertos ?? Number(registro.c === true)), 0)
+    return tentativas ? Math.round((acertos / tentativas) * 100) : null
+  }, [contexto.respondidas])
 
   function atualizar(parcial: Partial<Filtros>) {
     definirFiltros((atuais) => ({ ...atuais, ...parcial }))
   }
 
   function comecar() {
-    if (!indice || total === 0) return
+    if (!indice || total === 0 || carregandoBusca) return
+    if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
     const ids = montarSessao(indice, filtros, Date.now(), contexto)
     iniciar(filtros, ids, simulado ? { simulado: true, limiteSegundos: minutos * 60 } : {})
     navegar('/sessao')
@@ -95,41 +133,35 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   }
 
   return (
-    <div className="empilha-2">
+    <div className="empilha-2 treinar-pagina">
       <header className="limite-leitura">
         <h1>Montar sessão</h1>
         <p className="texto-2" style={{ marginTop: '0.5rem' }}>
           Escolha o recorte e comece. O número dentro do botão é quantas questões atendem aos
           filtros agora.
         </p>
+        {!conta && <p className="aviso-ia" style={{ marginTop: '0.75rem' }}>Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. <a href={href('/conta')}>Criar minha conta</a></p>}
       </header>
 
-      <section className="atalhos-sessao" aria-labelledby="titulo-atalhos-sessao">
-        <div>
-          <p className="sobretitulo">COMECE SEM CONFIGURAR TUDO</p>
-          <h2 id="titulo-atalhos-sessao">Escolha uma intenção</h2>
-        </div>
-        <div className="atalhos-sessao__grade">
-          <button type="button" onClick={() => definirFiltros({ ...FILTROS_VAZIOS, limite: 10 })}>
-            <strong>Treino rápido</strong><span>10 questões aleatórias</span>
+      <section className="intencoes treinar-intencoes" aria-label="Escolha seu treino">
+        {([
+          ['Treino rápido', '10 questões para começar', { limite: 10 }],
+          ['Revisar hoje', 'Retome as revisões pendentes', { situacao: 'revisarHoje', limite: 20 }],
+          ['Questões novas', 'Amplie seu repertório', { situacao: 'naoRespondidas', limite: 10 }],
+          ['Somente comentadas', 'Aprenda com as explicações', { comComentario: true, limite: 10 }],
+        ] as [string, string, Partial<Filtros>][]).map(([titulo, texto, preset]) => (
+          <button className="intencao" key={titulo} onClick={() => { definirFiltros({ ...FILTROS_VAZIOS, provas: filtros.provas, ...preset }); definirSimulado(false) }}>
+            <strong>{titulo}</strong><span>{texto}</span>
           </button>
-          <button type="button" onClick={() => definirFiltros({ ...FILTROS_VAZIOS, situacao: 'revisar', limite: 20 })}>
-            <strong>Revisar hoje</strong><span>O que errou ou precisa reforçar</span>
-          </button>
-          <button type="button" onClick={() => definirFiltros({ ...FILTROS_VAZIOS, situacao: 'naoRespondidas', limite: 10 })}>
-            <strong>Questões novas</strong><span>10 que você ainda não viu</span>
-          </button>
-          <button type="button" onClick={() => definirFiltros({ ...FILTROS_VAZIOS, comComentario: true, limite: 20 })}>
-            <strong>Só comentadas</strong><span>Estude com explicação completa</span>
-          </button>
-        </div>
+        ))}
       </section>
-
-      <div className="cartao">
+      <p className="meta treinar-contexto">Acervo de TEOT, TARO, ENARE e outras seleções. Filtros só aparecem quando há dados disponíveis.</p>
+      <div className="cartao treinar-filtros">
         <div className="cartao__corpo empilha">
-          <details className="opcoes-avancadas">
-            <summary>Busca por texto</summary>
-            <div className="campo opcoes-avancadas__corpo">
+          <section className="filtros-destaque">
+            <h2>Buscar por palavras</h2>
+            <p className="texto-2">Encontre uma questão pelo enunciado, alternativa ou assunto.</p>
+          <div className="campo" style={{ marginBottom: 0 }}>
             <label className="campo__rotulo" htmlFor="busca-acervo">
               Buscar no texto das questões
             </label>
@@ -146,9 +178,12 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             {carregandoBusca && (
               <span className="campo__auxilio">Carregando o texto das questões…</span>
             )}
-            </div>
-          </details>
+          </div>
 
+          </section>
+          <section className="filtros-destaque">
+            <h2>Personalizar assuntos e filtros</h2>
+            <p className="texto-2">Escolha temas, situação, prova, ano e dificuldade para montar o treino ideal.</p>
           <div className="campo" style={{ marginBottom: 0 }}>
             <span className="campo__rotulo">Situação</span>
             <div className="grupo-opcoes" id="filtro-situacao">
@@ -169,8 +204,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
               ))}
             </div>
             <span className="campo__auxilio">
-              Vem do que você já respondeu neste navegador. Refazer o que errou rende mais do que
-              questão nova.
+              Vem do que você já respondeu na sua conta. Refazer o que errou rende mais do que
+              começar sempre por uma questão nova.
             </span>
           </div>
 
@@ -191,28 +226,69 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             <div className={'linha-campos' + (temProva && temAno ? ' linha-campos--2' : '')}>
               {temProva && (
                 <div className="campo" style={{ marginBottom: 0 }}>
-                  <span className="campo__rotulo">Tipo de prova</span>
-                  <SeletorMultiplo
-                    opcoes={indice?.provas ?? []}
-                    selecionados={filtros.provas}
-                    contagens={contagens?.porProva}
-                    rotuloVazio="Todas as provas"
-                    rotulo={(v) => String(v)}
-                    aoMudar={(provas) => atualizar({ provas })}
-                  />
+                  <span className="campo__rotulo">Prova</span>
+                  <div className="seletor seletor--lista">
+                    <div className="seletor__painel">
+                      <div className="seletor__lista">
+                        {gruposProva.map((grupo) => {
+                          const marcado = grupo.provas.some((p) => filtros.provas.includes(p))
+                          const quantidade = grupo.provas.reduce((soma, p) => soma + (contagens?.porProva[p] ?? 0), 0)
+                          return (
+                            <div className="arvore__linha" key={grupo.rotulo}>
+                              <label className="caixa" style={{ flex: 1, minWidth: 0 }}>
+                                <input
+                                  type="checkbox"
+                                  checked={marcado}
+                                  onChange={() =>
+                                    atualizar({
+                                      provas: marcado
+                                        ? filtros.provas.filter((x) => !grupo.provas.includes(x))
+                                        : [...filtros.provas, ...grupo.provas.filter((p) => !filtros.provas.includes(p))],
+                                    })
+                                  }
+                                />
+                                <span>{grupo.rotulo}</span>
+                              </label>
+                              <span className="arvore__contagem">{quantidade}</span>
+                            </div>
+                          )
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                  <span className="campo__auxilio">
+                    Marque uma ou mais para restringir a sessão a essa prova; sem marcar nenhuma,
+                    a sessão considera o acervo inteiro.
+                  </span>
                 </div>
               )}
               {temAno && (
                 <div className="campo" style={{ marginBottom: 0 }}>
                   <span className="campo__rotulo">Ano</span>
-                  <SeletorMultiplo
-                    opcoes={[...(indice?.anos ?? [])].sort((a, b) => b - a)}
-                    selecionados={filtros.anos}
-                    contagens={contagens?.porAno}
-                    rotuloVazio="Todos os anos"
-                    rotulo={(v) => String(v)}
-                    aoMudar={(anos) => atualizar({ anos })}
-                  />
+                  <div className="seletor seletor--lista">
+                    <div className="seletor__painel">
+                      <div className="seletor__lista">
+                        {[...(indice?.anos ?? [])].sort((a, b) => b - a).map((ano) => (
+                          <div className="arvore__linha" key={ano}>
+                            <label className="caixa" style={{ flex: 1, minWidth: 0 }}>
+                              <input
+                                type="checkbox"
+                                checked={filtros.anos.includes(ano)}
+                                onChange={() =>
+                                  atualizar({
+                                    anos: filtros.anos.includes(ano)
+                                      ? filtros.anos.filter((x) => x !== ano)
+                                      : [...filtros.anos, ano],
+                                  })
+                                }
+                              />
+                              <span className="numerico">{ano}</span>
+                            </label>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
@@ -303,8 +379,12 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           </div>
 
           <div className="campo" style={{ marginBottom: 0 }}>
-            <span className="campo__rotulo">Modo</span>
+            <span className="campo__rotulo">Como você quer estudar?</span>
             <div className="empilha" style={{ marginTop: '0.25rem' }}>
+              <div className="modo-explicacao" role="note">
+                <strong>{simulado ? 'Simulado — como uma prova' : 'Treino livre — aprenda enquanto pratica'}</strong>
+                <span>{simulado ? 'Com tempo e sem gabarito até entregar. O desempenho aparece no final.' : 'Veja o gabarito e a explicação logo após cada resposta.'}</span>
+              </div>
               <label className="interruptor">
                 <input
                   type="checkbox"
@@ -337,6 +417,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             </div>
           </div>
 
+          </section>
           <div className="campo" style={{ marginBottom: 0 }}>
             <span className="campo__rotulo">Quantas questões</span>
             <div className="grupo-opcoes" id="filtro-limite">
@@ -360,20 +441,16 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                   <span className="numerico">{n}</span>
                 </button>
               ))}
-              <label className="limite-personalizado">
-                <span className="so-leitor">Quantidade personalizada</span>
-                <input
-                  type="number"
-                  min="1"
-                  max={total || undefined}
-                  placeholder="Outra"
-                  value={filtros.limite && !LIMITES.includes(filtros.limite) ? filtros.limite : ''}
-                  onChange={(e) => atualizar({ limite: Math.max(1, Number(e.target.value)) || null })}
-                />
-              </label>
             </div>
           </div>
 
+          <label className="campo">Quantidade personalizada
+            <input className="entrada" type="number" min="1" step="1" max={Math.max(total, 1)} value={filtros.limite ?? ''} placeholder="Todas" onChange={(e) => atualizar({ limite: e.target.value ? Math.max(1, Math.min(total || 1, Math.floor(Number(e.target.value)) || 1)) : null })} />
+          </label>
+          {total > 0 && <section className="modo-explicacao" role="status">
+            <strong>Prévia da sessão</strong>
+            <span>{quantidadeSessao} {quantidadeSessao === 1 ? 'questão' : 'questões'} · cerca de {estimativaMinutos} min{filtros.temas.length ? ` · ${filtros.temas.length === 1 ? 'tema selecionado' : `${filtros.temas.length} temas selecionados`}` : ' · acervo misto'}{desempenhoAnterior !== null ? ` · seu acerto geral: ${desempenhoAnterior}%` : ''}</span>
+          </section>}
           <div className="acoes" style={{ marginTop: '0.5rem' }}>
             <button
               type="button"
@@ -385,7 +462,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             <button
               type="button"
               className="botao botao--principal botao--grande"
-              disabled={total === 0}
+              disabled={total === 0 || carregandoBusca}
               onClick={comecar}
             >
               {total === 0 ? (

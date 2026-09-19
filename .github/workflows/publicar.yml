@@ -28,12 +28,21 @@ jobs:
       - run: npm ci
       - name: Executar testes de domínio
         run: npm test
+      - name: Testar revisão e backup
+        run: node fixtures/testar_revisao.mjs
+      - name: Testar reinício do progresso
+        run: node fixtures/testar_reinicio.mjs
+      - name: Testar o detector de figura ausente
+        run: python3 fixtures/testar_deteccao.py
       - name: Validar o acervo
         run: python3 scripts/validar_acervo.py
       - name: Construir
         # Sem BASE_ORTOQUESTOES: o vite.config.ts usa caminho relativo, e o
         # mesmo build serve tanto usuario.github.io/ortoquestoes/ quanto
         # ortoquestoes.com.br/ — não é preciso reconstruir ao trocar o endereço.
+        env:
+          VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}
         run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

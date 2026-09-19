@@ -278,7 +278,7 @@ def principal() -> int:
     corpo.append("<h1>Questões de ortopedia comentadas, por assunto</h1>")
     corpo.append(
         "<p>O OrtoQuestões reúne questões de provas anteriores de ortopedia e traumatologia — "
-        "TEOT, TARO e outras — organizadas por assunto. Cada questão traz o enunciado original, "
+        "TEOT, TARO, R4 do ENARE e outras — organizadas por assunto. Cada questão traz o enunciado original, "
         "o gabarito da banca e um comentário que explica o conceito e percorre todas as "
         "alternativas, a certa e as erradas.</p>"
     )

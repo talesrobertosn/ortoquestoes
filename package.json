@@ -7,11 +7,12 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc -b --noEmit",
+    "typecheck": "tsc --noEmit",
     "test": "python3 fixtures/testar_deteccao.py && python3 fixtures/testar_paywall.py",
     "validar": "python3 scripts/validar_acervo.py"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.116.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

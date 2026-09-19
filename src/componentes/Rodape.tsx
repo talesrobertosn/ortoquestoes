@@ -6,6 +6,7 @@ export function Rodape() {
   return (
     <footer className="rodape nao-imprime">
       <div className="conteudo rodape__interno">
+        <a href={href('/revisao')}>Revisão</a>
         <a href={href('/favoritas')}>Favoritas</a>
         <a href={recurso('questoes/')}>Questões comentadas</a>
         <a href={href('/sobre')}>O projeto</a>
@@ -23,7 +24,7 @@ export function Rodape() {
           <Icone nome="instagram" tamanho={18} />@{SITE.instagramUsuario}
         </a>
         <span className="rodape__creditos">
-          Projeto independente mantido para a comunidade de ortopedia.
+          Feito por {SITE.autor}, para a comunidade de ortopedia.
         </span>
       </div>
     </footer>

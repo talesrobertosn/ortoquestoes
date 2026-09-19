@@ -65,6 +65,9 @@ const SITUACOES: Situacao[] = [
   'acertadas',
   'dominadas',
   'favoritas',
+  'revisarHoje',
+  'dominadas',
+  'incertas',
 ]
 
 export function filtrosParaConsulta(filtros: Filtros): string {
@@ -110,7 +113,7 @@ export function consultaParaFiltros(consulta: URLSearchParams): Filtros {
     comComentario: consulta.get('comentario') === '1',
     incluirAnuladas: consulta.get('anuladas') === '1',
     embaralhar: consulta.get('ordem') !== 'prova',
-    limite: Number.isFinite(limite) && limite > 0 ? limite : null,
+    limite: Number.isFinite(limite) && limite > 0 ? Math.floor(limite) || 1 : null,
     situacao: SITUACOES.includes(consulta.get('situacao') as Situacao)
       ? (consulta.get('situacao') as Situacao)
       : 'todas',

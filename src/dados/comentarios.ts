@@ -18,7 +18,21 @@ export function carregarComentarios(slug: string): Promise<Arquivo> {
   if (!existente) {
     existente = fetch(recurso(`acervo/comentarios/${slug}.json`), { cache: 'no-cache' })
       // Tema ainda sem nenhum comentário: o arquivo não existe e isso não é erro.
-      .then((r) => (r.ok ? (r.json() as Promise<Arquivo>) : {}))
+      .then((r) => {
+        if (!r.ok) return {} as Arquivo
+        // Um arquivo que não abre é defeito, não ausência: o índice promete
+        // comentário, o leitor abre o gabarito e não encontra nada. Já
+        // aconteceu — um arquivo de tema inteiro foi publicado truncado e o
+        // silêncio daqui escondeu a perda. A tela continua servível, mas o
+        // console passa a dizer o que houve.
+        return (r.json() as Promise<Arquivo>).catch((erro) => {
+          console.error(
+            `Comentários de "${slug}" não puderam ser lidos: o arquivo está corrompido.`,
+            erro,
+          )
+          return {} as Arquivo
+        })
+      })
       .catch(() => ({}))
     carregados.set(slug, existente)
   }

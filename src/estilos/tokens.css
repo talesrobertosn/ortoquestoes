@@ -23,6 +23,10 @@
   --acerto-veu: #e8f3ec;
   --erro: #b3423a;
   --erro-veu: #f8ebea;
+  /* Aviso: severidade intermediária fora do contexto de resposta (carga alta
+     no calendário, ações destrutivas como zerar progresso). */
+  --aviso: #9a6b12;
+  --aviso-veu: #f6ecd9;
 
   /* Papéis */
   --fundo: var(--porcelana);
@@ -67,34 +71,11 @@
   --acerto-veu: #14291f;
   --erro: #e8776c;
   --erro-veu: #2c1a18;
+  --aviso: #e0b15c;
+  --aviso-veu: #362c17;
 
   --sobre-destaque: #0f1413;
   --sombra: none;
 
   color-scheme: dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-tema="claro"]) {
-    --porcelana: #0f1413;
-    --superficie: #171e1d;
-    --superficie-2: #1e2726;
-    --traco: #2a3432;
-    --traco-forte: #3b4745;
-    --grafite: #e7ecea;
-    --ardosia: #9aa8a5;
-    --verdete: #4fb3a5;
-    --verdete-tinta: #6cc7ba;
-    --verdete-veu: #17302e;
-
-    --acerto: #4fbe85;
-    --acerto-veu: #14291f;
-    --erro: #e8776c;
-    --erro-veu: #2c1a18;
-
-    --sobre-destaque: #0f1413;
-    --sombra: none;
-
-    color-scheme: dark;
-  }
 }

@@ -159,23 +159,17 @@ export interface Indice {
  * e sim do histórico de quem está estudando — por isso mora aqui e não no
  * índice do acervo.
  */
-export type Situacao =
-  | 'todas'
-  | 'naoRespondidas'
-  | 'revisar'
-  | 'erradas'
-  | 'acertadas'
-  | 'dominadas'
-  | 'favoritas'
+export type Situacao = 'todas' | 'naoRespondidas' | 'erradas' | 'acertadas' | 'favoritas' | 'revisarHoje' | 'dominadas' | 'incertas'
 
 export const ROTULO_SITUACAO: Record<Situacao, string> = {
   todas: 'Todas',
   naoRespondidas: 'Não respondidas',
-  revisar: 'Revisar hoje',
   erradas: 'Que eu errei',
   acertadas: 'Que eu acertei',
-  dominadas: 'Dominadas',
   favoritas: 'Favoritas',
+  revisarHoje: 'Revisar hoje',
+  dominadas: 'Dominadas',
+  incertas: 'Chute ou dúvida',
 }
 
 /** Filtros de montagem de sessão. */
@@ -220,6 +214,7 @@ export interface Resposta {
   escolhida: Letra
   correta: boolean | null
   segundos: number
+  confianca?: 'seguro' | 'duvida' | 'chute'
 }
 
 export interface EstadoSessao {

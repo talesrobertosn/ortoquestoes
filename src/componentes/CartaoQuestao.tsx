@@ -1,3 +1,7 @@
+import { lerRespondidas } from '../estado/sessao'
+import { dominada } from '../estado/revisao'
+import { TextoEditorial, Referencias } from './TextoEditorial'
+import { NotasQuestao } from './NotasQuestao'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { ComentarioIA, Letra, Questao, Resposta } from '../dados/tipos'
 import { ROTULO_DIFICULDADE } from '../dados/tipos'
@@ -8,7 +12,6 @@ import { ContribuirComentario } from './ContribuirComentario'
 import { usarEtiquetas } from '../estado/preferencias'
 import { usarComentarioIA } from '../dados/comentarios'
 import { usarIndice } from '../dados/usarIndice'
-import { gravar, ler } from '../estado/armazenamento'
 
 interface Props {
   questao: Questao
@@ -18,7 +21,10 @@ interface Props {
   riscadas: Letra[]
   favorita: boolean
   marcadaRevisao: boolean
-  aoResponder: (letra: Letra, correta: boolean | null, segundos: number) => void
+  // A confiança é obrigatória de propósito: quando era opcional, os dois
+  // pontos de chamada esqueceram de repassá-la e toda resposta virava
+  // "seguro" no silêncio do valor padrão. O compilador agora cobra.
+  aoResponder: (letra: Letra, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute') => void
   aoRiscar: (letra: Letra) => void
   aoFavoritar: () => void
   aoRevisar: () => void
@@ -48,9 +54,16 @@ export function CartaoQuestao({
   revelarResposta = true,
 }: Props) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
+  const [confianca, definirConfianca] = useState<'seguro' | 'duvida' | 'chute'>('seguro')
   const [copiado, definirCopiado] = useState(false)
-  const [nota, definirNota] = useState(() => ler<string>(`nota:${questao.id}`, ''))
+  const [menuGrifo, definirMenuGrifo] = useState<{ x: number; y: number } | null>(null)
+  const [grifos, definirGrifos] = useState<Array<{ left: number; top: number; width: number; height: number }>>([])
+  const [modoLeitura, definirModoLeitura] = useState(false)
+  const [ultimaAcao, definirUltimaAcao] = useState<{ tipo: 'favorito' | 'revisao' | 'risco'; letra?: Letra } | null>(null)
   const inicio = useRef<number>(Date.now())
+  const areaDaQuestao = useRef<HTMLElement>(null)
+  const grifoRecente = useRef(false)
+  const selecaoParaGrifo = useRef<Range | null>(null)
   const respondida = !!resposta
   const mostrarGabarito = respondida && revelarResposta
   const marcada = escolhida ?? resposta?.escolhida ?? null
@@ -58,8 +71,12 @@ export function CartaoQuestao({
 
   useEffect(() => {
     definirEscolhida(null)
+    definirConfianca('seguro')
     definirCopiado(false)
-    definirNota(ler<string>(`nota:${questao.id}`, ''))
+    definirModoLeitura(false)
+    definirUltimaAcao(null)
+    definirGrifos([])
+    definirMenuGrifo(null)
     inicio.current = Date.now()
   }, [questao.id])
 
@@ -72,12 +89,18 @@ export function CartaoQuestao({
     if (travada) return
     const correta = questao.anulada || !questao.gabarito ? null : letra === questao.gabarito
     const segundos = Math.max(1, Math.round((Date.now() - inicio.current) / 1000))
-    aoResponder(letra, correta, segundos)
+    aoResponder(letra, correta, segundos, confianca)
   }
 
   /** Em simulado marcar já registra; no treino comum ainda passa pelo botão. */
   function escolher(letra: Letra) {
     if (travada) return
+    if (grifoRecente.current) return
+    // Arrastar sobre uma alternativa é leitura/grifo, não uma resposta.
+    if (!window.getSelection()?.isCollapsed) {
+      atualizarSelecao()
+      return
+    }
     definirEscolhida(letra)
     if (!revelarResposta) confirmar(letra)
   }
@@ -141,13 +164,68 @@ export function CartaoQuestao({
     }
   }
 
+  /** O grifo é deliberadamente só visual: não escreve em localStorage e some no F5. */
+  function atualizarSelecao() {
+    const selecao = window.getSelection()
+    if (selecao && !selecao.isCollapsed && areaDaQuestao.current?.contains(selecao.anchorNode)) {
+      const faixa = selecao.getRangeAt(0).cloneRange()
+      const retangulo = faixa.getBoundingClientRect()
+      selecaoParaGrifo.current = faixa
+      definirMenuGrifo({ x: retangulo.left + retangulo.width / 2, y: Math.max(8, retangulo.top - 10) })
+    } else {
+      selecaoParaGrifo.current = null
+      definirMenuGrifo(null)
+    }
+  }
+
+  function grifarSelecao() {
+    const faixa = selecaoParaGrifo.current
+    if (!faixa) return
+    // Fecha primeiro; no próximo quadro o React já terminou de atualizar o
+    // menu e o mark não será removido por uma reconciliação da interface.
+    definirMenuGrifo(null)
+    selecaoParaGrifo.current = null
+    window.requestAnimationFrame(() => aplicarGrifo(faixa))
+  }
+
+  function aplicarGrifo(faixa: Range) {
+    const caixa = areaDaQuestao.current?.getBoundingClientRect()
+    if (!caixa) return
+    const linhas = [...faixa.getClientRects()].map((r) => ({
+      left: r.left - caixa.left,
+      top: r.top - caixa.top,
+      width: r.width,
+      height: r.height,
+    })).filter((r) => r.width > 0 && r.height > 0)
+    if (linhas.length) definirGrifos((atuais) => [...atuais, ...linhas])
+    window.getSelection()?.removeAllRanges()
+    grifoRecente.current = true
+    window.setTimeout(() => { grifoRecente.current = false }, 0)
+  }
+  function executarAcao(tipo: 'favorito' | 'revisao' | 'risco', letra?: Letra) {
+    if (tipo === 'favorito') aoFavoritar()
+    if (tipo === 'revisao') aoRevisar()
+    if (tipo === 'risco' && letra) aoRiscar(letra)
+    definirUltimaAcao({ tipo, letra })
+  }
+  function desfazerUltimaAcao() {
+    const acao = ultimaAcao
+    if (!acao) return
+    if (acao.tipo === 'favorito') aoFavoritar()
+    if (acao.tipo === 'revisao') aoRevisar()
+    if (acao.tipo === 'risco' && acao.letra) aoRiscar(acao.letra)
+    definirUltimaAcao(null)
+  }
+
   const semGabarito = !questao.gabarito && !questao.anulada
+  const historicoDaQuestao = lerRespondidas()[questao.id]?.historico ?? []
   // Etiquetas de assunto adiantam a resposta; quando escondidas, voltam junto
   // com o gabarito, que é quando elas servem para estudar em vez de entregar.
   const etiquetasVisiveis = mostrarEtiquetas || mostrarGabarito
 
   return (
-    <article className="cartao questao-impressa" aria-label={`Questão ${numero ?? ''}`}>
+    <article className="cartao questao-impressa" aria-label={`Questão ${numero ?? ''}`} ref={areaDaQuestao} onMouseUp={atualizarSelecao}>
+      {grifos.map((r, i) => <span key={i} className="grifo-overlay" style={{ left: r.left, top: r.top, width: r.width, height: r.height }} aria-hidden="true" />)}
       <div className="cartao__corpo">
         <div className="questao__topo">
           {questao.ano && <span className="etiqueta etiqueta--dado">{questao.ano}</span>}
@@ -189,7 +267,7 @@ export function CartaoQuestao({
             <button
               type="button"
               className="botao-icone"
-              onClick={aoFavoritar}
+              onClick={() => executarAcao('favorito')}
               aria-pressed={favorita}
               aria-label={favorita ? 'Remover dos favoritos' : 'Favoritar questão'}
               title="Favoritar (F)"
@@ -199,7 +277,7 @@ export function CartaoQuestao({
             <button
               type="button"
               className="botao-icone"
-              onClick={aoRevisar}
+              onClick={() => executarAcao('revisao')}
               aria-pressed={marcadaRevisao}
               aria-label={
                 marcadaRevisao ? 'Desmarcar para revisão' : 'Marcar questão para revisão'
@@ -217,6 +295,7 @@ export function CartaoQuestao({
             >
               <Icone nome="link" />
             </button>
+            {mostrarGabarito && <button type="button" className="botao-icone" onClick={() => definirModoLeitura(atual => !atual)} aria-pressed={modoLeitura} aria-label={modoLeitura ? 'Mostrar alternativas' : 'Ler comentário sem alternativas'} title={modoLeitura ? 'Mostrar alternativas' : 'Modo leitura'}><Icone nome={modoLeitura ? 'olho' : 'olho-riscado'} /></button>}
           </div>
         </div>
 
@@ -226,6 +305,13 @@ export function CartaoQuestao({
           </p>
         )}
 
+        {questao.prova?.startsWith('SBQ') && (
+          <p className="meta origem-questao">
+            Questão elaborada pelo OrtoQuestões no padrão das provas da SBQ e do Fellowship de
+            Quadril, a partir do livro <em>The Adult Hip</em> (Callaghan et al.) — não é uma
+            reprodução de nenhuma prova oficial, que não é de acesso público.
+          </p>
+        )}
         <div className="questao__enunciado">{questao.enunciado}</div>
 
         {questao.figuraPendente && (
@@ -263,7 +349,7 @@ export function CartaoQuestao({
           </div>
         )}
 
-        <ul className="alternativas">
+        {!modoLeitura && <ul className="alternativas">
           {questao.alternativas.map((alternativa, i) => {
             const letra = alternativa.letra
             const riscada = riscadas.includes(letra)
@@ -314,7 +400,7 @@ export function CartaoQuestao({
                   <button
                     type="button"
                     className="riscar nao-imprime"
-                    onClick={() => aoRiscar(letra)}
+                    onClick={() => executarAcao('risco', letra)}
                     aria-pressed={riscada}
                     aria-label={`${riscada ? 'Desfazer risco na' : 'Riscar'} alternativa ${letra}`}
                     title={`Riscar (Shift + ${i + 1})`}
@@ -325,7 +411,7 @@ export function CartaoQuestao({
               </li>
             )
           })}
-        </ul>
+        </ul>}
 
         {!revelarResposta ? (
           <div className="resultado resultado--neutro" role="status">
@@ -335,6 +421,9 @@ export function CartaoQuestao({
           </div>
         ) : !respondida ? (
           <div className="linha nao-imprime acao-responder">
+            {escolhida && <div className="grupo-opcoes" aria-label="Sua confiança nesta resposta">
+              {([['seguro', 'Tenho certeza'], ['duvida', 'Tenho dúvida'], ['chute', 'Foi um chute']] as const).map(([valor, rotulo]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={confianca === valor} onClick={() => definirConfianca(valor)}>{rotulo}</button>)}
+            </div>}
             <button
               type="button"
               className="botao botao--principal botao--grande"
@@ -343,28 +432,30 @@ export function CartaoQuestao({
             >
               {escolhida ? `Responder ${escolhida}` : 'Escolha uma alternativa'}
             </button>
+            {escolhida && <span className="campo__auxilio">Acerto com dúvida ou chute volta antes para revisão.</span>}
             <span className="meta so-teclado">
               Teclas <kbd>1</kbd>–<kbd>{letrasDisponiveis.length}</kbd> selecionam,{' '}
               <kbd>Enter</kbd> confirma
             </span>
           </div>
-        ) : (
+        ) : !modoLeitura && (
           <Resultado questao={questao} resposta={resposta!} />
         )}
 
         {mostrarGabarito && (
           <div className="comentario">
+            {resposta?.correta !== null && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(lerRespondidas()[questao.id]) ? 'Ciclo de revisão completo. Você pode revisitá-la pelo filtro Dominadas.' : resposta.confianca === 'chute' ? 'Acerto por chute: ela volta amanhã para você confirmar o raciocínio.' : resposta.confianca === 'duvida' ? 'Acerto com dúvida: ela volta antes para reforçar o conceito.' : 'Acerto seguro registrado. O intervalo cresce a cada acerto — 3, 7, 14, 30 dias e depois 3, 6, 9 e 12 meses.'}</p>}
             {questao.comentario && (
-              <section className="bloco-comentario bloco-comentario--autor">
-                <CabecalhoComentario origem="Comentário do autor" apoio="Explicação editorial" />
+              <div className="bloco-comentario">
+                <p className="comentario__titulo">Comentário do autor</p>
                 <TextoEditorial texto={questao.comentario} />
-              </section>
+              </div>
             )}
 
             <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} />
 
-            <section className="bloco-comentario bloco-comentario--comunidade">
-              <CabecalhoComentario origem="Comunidade" apoio="Experiência de ortopedistas e residentes" />
+            <div className="bloco-comentario">
+              <p className="comentario__titulo">Comentários da comunidade</p>
               {(questao.comentariosComunidade?.length ?? 0) === 0 ? (
                 <p className="comentario__pendente">
                   Ninguém comentou esta ainda. Se você sabe por que a resposta é essa, escreva —
@@ -391,9 +482,7 @@ export function CartaoQuestao({
                           ))}
                         </div>
                       )}
-                      {item.referencias && item.referencias.length > 0 && (
-                        <ListaReferencias referencias={item.referencias} />
-                      )}
+                      <Referencias itens={item.referencias} />
                       <p className="contribuicao__credito">
                         <strong>{item.autor}</strong>
                         {[
@@ -413,37 +502,18 @@ export function CartaoQuestao({
                   <ContribuirComentario questao={questao} />
                 </div>
               )}
-            </section>
+            </div>
 
-            {questao.referencias.length > 0 && (
-              <>
-                <p className="comentario__titulo" style={{ marginTop: '1rem' }}>
-                  REFERÊNCIAS
-                </p>
-                <ul className="menor texto-2">
-                  {questao.referencias.map((r) => (
-                    <li key={r}>{r}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-
-            <details className="nota-pessoal nao-imprime" open={!!nota}>
-              <summary>Minha anotação</summary>
-              <p className="meta">Privada e guardada somente neste navegador.</p>
-              <textarea
-                className="entrada"
-                rows={4}
-                placeholder="O que você quer lembrar na próxima revisão?"
-                value={nota}
-                onChange={(e) => {
-                  definirNota(e.target.value)
-                  gravar(`nota:${questao.id}`, e.target.value)
-                }}
-              />
-            </details>
+            <Referencias itens={questao.referencias} />
           </div>
         )}
+
+        <NotasQuestao key={questao.id} id={questao.id} />
+
+        {historicoDaQuestao.length > 0 && <details className="notas-questao nao-imprime">
+          <summary>Histórico desta questão</summary>
+          <p className="texto-2">{historicoDaQuestao.map(item => `${item.correta === true ? 'acertou' : item.correta === false ? 'errou' : 'anulada'} em ${new Date(item.em).toLocaleDateString('pt-BR')}${item.confianca === 'seguro' ? '' : ` · ${item.confianca === 'duvida' ? 'com dúvida' : 'chute'}`}`).join(' → ')}</p>
+        </details>}
 
         {semGabarito && (
           <p className="meta" style={{ marginTop: '0.75rem' }}>
@@ -456,9 +526,23 @@ export function CartaoQuestao({
             Relatar erro nesta questão
           </a>
           {copiado && <span className="meta">Link copiado.</span>}
+          {ultimaAcao && <button type="button" className="botao botao--fantasma" onClick={desfazerUltimaAcao}>Desfazer ação</button>}
           <span className="meta numerico questao__id">{questao.id}</span>
         </div>
       </div>
+      {menuGrifo && (
+        <button
+          type="button"
+          className="menu-grifo nao-imprime"
+          style={{ left: menuGrifo.x, top: menuGrifo.y }}
+          onMouseDown={(evento) => evento.preventDefault()}
+          onClick={grifarSelecao}
+          aria-label="Grifar a seleção em amarelo"
+        >
+          <Icone nome="riscar" tamanho={15} /> Grifar
+        </button>
+      )}
+      {grifos.length > 0 && !menuGrifo && <button type="button" className="botao botao--fantasma nao-imprime" style={{ position: 'absolute', right: '1rem', bottom: '1rem', zIndex: 3 }} onClick={() => definirGrifos(atual => atual.slice(0, -1))}>Desfazer último grifo</button>}
     </article>
   )
 }
@@ -527,13 +611,16 @@ function ComentarioDaIA({
     .filter((letra) => letra !== questao.gabarito && comentario?.incorretas[letra])
 
   return (
-    <section className="bloco-comentario bloco-comentario--ia">
-      <CabecalhoComentario
-        origem="Comentário com apoio de IA"
-        apoio="Conceito e análise alternativa por alternativa"
-        selo={comentario ? (comentario.conferido ? 'Revisado por médico' : 'Não revisado por médico') : undefined}
-        conferido={comentario?.conferido}
-      />
+    <div className="bloco-comentario">
+      <p className="comentario__titulo">
+        Comentário com apoio de IA
+        {comentario &&
+          (comentario.conferido ? (
+            <span className="selo selo--conferido">Revisado por médico</span>
+          ) : (
+            <span className="selo">Não revisado por médico</span>
+          ))}
+      </p>
 
       {carregando && <p className="comentario__pendente">Carregando o comentário…</p>}
 
@@ -551,86 +638,31 @@ function ComentarioDaIA({
             </p>
           )}
 
-          {!comentario.conferido && (
-            <p className="aviso-ia">
-              Este comentário foi produzido com apoio de IA e publicado com referências. Ainda
-              não houve revisão médica; use-o para orientar o raciocínio, não para substituir o livro. Achou erro?{' '}
-              <a href={href(`/contato?questao=${questao.id}`)}>avise</a>.
-            </p>
-          )}
+          <p className="aviso-ia">Os comentários são produzidos com apoio de IA e publicados com referências. Quando houver revisão médica, ela será indicada explicitamente.</p>
 
-          {comentario.conceito && (
-            <div className="ia__conceito">
-              <p className="comentario__subtitulo">Conceito-chave</p>
-              <TextoEditorial texto={comentario.conceito} />
+          {comentario.conceito && <div className="ia__conceito"><h3>Conceito-chave</h3><TextoEditorial texto={comentario.conceito} /></div>}
+
+          {questao.gabarito && (
+            <div className="ia__item ia__item--certa">
+              <span className="ia__letra">{questao.gabarito}</span>
+              <div>
+                <strong>Por que a alternativa está correta</strong><TextoEditorial texto={comentario.correta} />
+              </div>
             </div>
           )}
 
-          <div className="analise-alternativas">
-            <p className="comentario__subtitulo">Alternativa por alternativa</p>
-            {questao.gabarito && (
-              <div className="ia__item ia__item--certa">
-                <span className="ia__letra">{questao.gabarito}</span>
-                <div>
-                  <strong>Correta.</strong> <TextoEditorial texto={comentario.correta} compacto />
-                </div>
+          {erradas.map((letra) => (
+            <div className="ia__item" key={letra}>
+              <span className="ia__letra">{letra}</span>
+              <div>
+                <strong>Por que esta alternativa não se aplica</strong><TextoEditorial texto={comentario.incorretas[letra]!} />
               </div>
-            )}
+            </div>
+          ))}
 
-            {erradas.map((letra) => (
-              <div className="ia__item" key={letra}>
-                <span className="ia__letra">{letra}</span>
-                <div>
-                  <strong>Incorreta.</strong>{' '}
-                  <TextoEditorial texto={comentario.incorretas[letra]!} compacto />
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {comentario.referencias && comentario.referencias.length > 0 && (
-            <ListaReferencias referencias={comentario.referencias} />
-          )}
+          <Referencias itens={comentario.referencias} />
         </>
       )}
-    </section>
-  )
-}
-
-function CabecalhoComentario({ origem, apoio, selo, conferido }: {
-  origem: string
-  apoio: string
-  selo?: string
-  conferido?: boolean
-}) {
-  return (
-    <header className="comentario__cabecalho">
-      <div>
-        <p className="comentario__titulo">{origem}</p>
-        <p className="comentario__apoio">{apoio}</p>
-      </div>
-      {selo && <span className={'selo' + (conferido ? ' selo--conferido' : '')}>{selo}</span>}
-    </header>
-  )
-}
-
-/** Formatação editorial leve: preserva parágrafos e aceita **destaques** no acervo. */
-function TextoEditorial({ texto, compacto = false }: { texto: string; compacto?: boolean }) {
-  const blocos = texto.trim().split(/\n\s*\n/).filter(Boolean)
-  const formatar = (trecho: string) => trecho.split(/(\*\*.+?\*\*)/g).map((parte, i) =>
-    parte.startsWith('**') && parte.endsWith('**')
-      ? <strong key={i}>{parte.slice(2, -2)}</strong>
-      : parte,
-  )
-  if (compacto && blocos.length === 1) return <span>{formatar(blocos[0])}</span>
-  return <div className="texto-editorial">{blocos.map((bloco, i) => <p key={i}>{formatar(bloco)}</p>)}</div>
-}
-
-function ListaReferencias({ referencias }: { referencias: string[] }) {
-  return (
-    <details className="referencias-comentario">
-      <summary>Referências ({referencias.length})</summary>
-      <ol>{referencias.map((referencia) => <li key={referencia}>{referencia}</li>)}</ol>
-    </details>
+    </div>
   )
 }
