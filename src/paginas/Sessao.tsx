@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
 import type { Questao } from '../dados/tipos'
@@ -11,6 +11,8 @@ import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { usarFavoritos, usarSessao } from '../estado/sessao'
 import { href, navegar } from '../util/rotas'
+import { usarLimiteDiario } from '../estado/limiteDiario'
+import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 
 export function Sessao() {
   const { indice } = usarIndice()
@@ -20,6 +22,10 @@ export function Sessao() {
   const [mapaAberto, definirMapaAberto] = useState(false)
   const [atalhosAbertos, definirAtalhosAbertos] = useState(false)
   const [erro, definirErro] = useState<string | null>(null)
+  const { estado: estadoLimite, autorizar } = usarLimiteDiario()
+  const [limiteAberto, definirLimiteAberto] = useState(false)
+  const chavesResposta = useRef(new Map<string, string>())
+  const autorizando = useRef(false)
 
   const ids = sessao?.ids
   useEffect(() => {
@@ -42,7 +48,7 @@ export function Sessao() {
   }, [questoes, sessao, posicao])
 
   const respondidas = sessao ? Object.keys(sessao.respostas).length : 0
-  const painelAberto = mapaAberto || atalhosAbertos
+  const painelAberto = mapaAberto || atalhosAbertos || limiteAberto
   const simulado = !!sessao?.simulado
 
   // Cronômetro do simulado. O relógio corre no mundo: fechar a aba não pausa
@@ -196,7 +202,7 @@ export function Sessao() {
       </div>
 
       {questaoAtual ? (
-        <CartaoQuestao
+        <><AvisoLimite estado={estadoLimite} /><CartaoQuestao
           questao={questaoAtual}
           numero={posicao + 1}
           total={total}
@@ -204,16 +210,24 @@ export function Sessao() {
           riscadas={sessao.riscadas[questaoAtual.id] ?? []}
           favorita={favoritos.includes(questaoAtual.id)}
           marcadaRevisao={sessao.revisar.includes(questaoAtual.id)}
-          aoResponder={(letra, correta, segundos) =>
+          aoResponder={async (letra, correta, segundos) => {
+            if (autorizando.current) return
+            autorizando.current = true
+            const chaveMapa = `${sessao.id}:${questaoAtual.id}`
+            const chave = chavesResposta.current.get(chaveMapa) ?? crypto.randomUUID()
+            chavesResposta.current.set(chaveMapa, chave)
+            const permissao = await autorizar(questaoAtual.id, chave)
+            autorizando.current = false
+            if (!permissao.permitido) { definirLimiteAberto(true); return }
             responder(questaoAtual.id, letra, correta, segundos)
-          }
+          }}
           aoRiscar={(letra) => alternarRiscada(questaoAtual.id, letra)}
           aoFavoritar={() => alternarFavorito(questaoAtual.id)}
           aoRevisar={() => alternarRevisar(questaoAtual.id)}
           aoAvancar={avancar}
           atalhosAtivos={!painelAberto}
           revelarResposta={!simulado}
-        />
+        /></>
       ) : (
         <Estado titulo="Esta questão saiu do acervo.">
           <p>Ela foi removida ou renomeada em uma atualização. Siga para a próxima.</p>
@@ -276,6 +290,8 @@ export function Sessao() {
           }}
         />
       </Painel>
+
+      <PainelLimite estado={estadoLimite} aberto={limiteAberto} aoFechar={() => definirLimiteAberto(false)} />
 
       <Painel
         titulo="Atalhos de teclado"

@@ -102,7 +102,15 @@ type ChaveFaceta =
  * acervo de propósito: são dados locais da pessoa, não do conteúdo.
  */
 export interface ContextoLocal {
-  respondidas: Record<string, { c: boolean | null }>
+  respondidas: Record<string, {
+    c: boolean | null
+    q?: number
+    tentativas?: number
+    acertos?: number
+    erros?: number
+    sequencia?: number
+    revisarEm?: number | null
+  }>
   favoritos: string[]
   /** id → enunciado e alternativas, normalizados. Só existe depois de buscar. */
   textos: Map<string, string> | null
@@ -165,8 +173,13 @@ function aplicaUm(
   if (ignorar !== 'situacao' && filtros.situacao !== 'todas') {
     const registro = contexto.respondidas[item.id]
     if (filtros.situacao === 'naoRespondidas' && registro) return false
+    if (
+      filtros.situacao === 'revisar' &&
+      (!registro || registro.revisarEm === null || (registro.revisarEm ?? Infinity) > Date.now())
+    ) return false
     if (filtros.situacao === 'erradas' && registro?.c !== false) return false
     if (filtros.situacao === 'acertadas' && registro?.c !== true) return false
+    if (filtros.situacao === 'dominadas' && (registro?.sequencia ?? 0) < 2) return false
     if (filtros.situacao === 'favoritas' && !contexto.favoritos.includes(item.id)) return false
   }
 
@@ -235,6 +248,12 @@ export function contar(
         contagens.porSituacao.erradas = (contagens.porSituacao.erradas ?? 0) + 1
       } else if (registro.c === true) {
         contagens.porSituacao.acertadas = (contagens.porSituacao.acertadas ?? 0) + 1
+      }
+      if (registro && registro.revisarEm !== null && (registro.revisarEm ?? Infinity) <= Date.now()) {
+        contagens.porSituacao.revisar = (contagens.porSituacao.revisar ?? 0) + 1
+      }
+      if ((registro?.sequencia ?? 0) >= 2) {
+        contagens.porSituacao.dominadas = (contagens.porSituacao.dominadas ?? 0) + 1
       }
       if (contexto.favoritos.includes(item.id)) {
         contagens.porSituacao.favoritas = (contagens.porSituacao.favoritas ?? 0) + 1

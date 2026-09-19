@@ -21,7 +21,7 @@ import { href } from '../util/rotas'
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
 const LIMITES = [10, 20, 30, 50, 100]
-const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'erradas', 'acertadas', 'favoritas']
+const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'revisar', 'erradas', 'dominadas', 'favoritas']
 const DURACOES: Array<[number, string]> = [
   [60, '1 hora'],
   [120, '2 horas'],
@@ -104,9 +104,32 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         </p>
       </header>
 
+      <section className="atalhos-sessao" aria-labelledby="titulo-atalhos-sessao">
+        <div>
+          <p className="sobretitulo">COMECE SEM CONFIGURAR TUDO</p>
+          <h2 id="titulo-atalhos-sessao">Escolha uma intenção</h2>
+        </div>
+        <div className="atalhos-sessao__grade">
+          <button type="button" onClick={() => definirFiltros({ ...FILTROS_VAZIOS, limite: 10 })}>
+            <strong>Treino rápido</strong><span>10 questões aleatórias</span>
+          </button>
+          <button type="button" onClick={() => definirFiltros({ ...FILTROS_VAZIOS, situacao: 'revisar', limite: 20 })}>
+            <strong>Revisar hoje</strong><span>O que errou ou precisa reforçar</span>
+          </button>
+          <button type="button" onClick={() => definirFiltros({ ...FILTROS_VAZIOS, situacao: 'naoRespondidas', limite: 10 })}>
+            <strong>Questões novas</strong><span>10 que você ainda não viu</span>
+          </button>
+          <button type="button" onClick={() => definirFiltros({ ...FILTROS_VAZIOS, comComentario: true, limite: 20 })}>
+            <strong>Só comentadas</strong><span>Estude com explicação completa</span>
+          </button>
+        </div>
+      </section>
+
       <div className="cartao">
         <div className="cartao__corpo empilha">
-          <div className="campo" style={{ marginBottom: 0 }}>
+          <details className="opcoes-avancadas">
+            <summary>Busca por texto</summary>
+            <div className="campo opcoes-avancadas__corpo">
             <label className="campo__rotulo" htmlFor="busca-acervo">
               Buscar no texto das questões
             </label>
@@ -123,7 +146,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             {carregandoBusca && (
               <span className="campo__auxilio">Carregando o texto das questões…</span>
             )}
-          </div>
+            </div>
+          </details>
 
           <div className="campo" style={{ marginBottom: 0 }}>
             <span className="campo__rotulo">Situação</span>
@@ -336,6 +360,17 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                   <span className="numerico">{n}</span>
                 </button>
               ))}
+              <label className="limite-personalizado">
+                <span className="so-leitor">Quantidade personalizada</span>
+                <input
+                  type="number"
+                  min="1"
+                  max={total || undefined}
+                  placeholder="Outra"
+                  value={filtros.limite && !LIMITES.includes(filtros.limite) ? filtros.limite : ''}
+                  onChange={(e) => atualizar({ limite: Math.max(1, Number(e.target.value)) || null })}
+                />
+              </label>
             </div>
           </div>
 

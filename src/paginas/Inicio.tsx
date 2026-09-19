@@ -4,7 +4,7 @@ import { contar, montarSessao } from '../dados/acervo'
 import { FILTROS_VAZIOS } from '../dados/tipos'
 import { href, navegar } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
-import { lerHistorico, usarSessao } from '../estado/sessao'
+import { lerHistorico, lerRespondidas, usarFavoritos, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
@@ -12,6 +12,7 @@ import type { EstadoSessao } from '../dados/tipos'
 export function Inicio() {
   const { indice, carregando } = usarIndice()
   const { iniciar } = usarSessao()
+  const { favoritos } = usarFavoritos()
   const [sessao] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
 
   const contagens = useMemo(
@@ -19,6 +20,14 @@ export function Inicio() {
     [indice],
   )
   const historico = useMemo(() => lerHistorico(), [])
+  const respondidas = useMemo(() => lerRespondidas(), [])
+  const contexto = useMemo(() => ({ respondidas, favoritos, textos: null }), [respondidas, favoritos])
+  const paraRevisar = useMemo(
+    () => indice ? contar(indice, { ...FILTROS_VAZIOS, situacao: 'revisar' }, contexto).total : 0,
+    [indice, contexto],
+  )
+  const dominadas = Object.values(respondidas).filter((r) => r.sequencia >= 2).length
+  const estudadas = Object.keys(respondidas).length
 
   const anos = indice?.anos ?? []
   const anosRecentes = [...anos].sort((a, b) => b - a).slice(0, 6)
@@ -34,6 +43,13 @@ export function Inicio() {
     navegar('/sessao')
   }
 
+  function revisarHoje() {
+    if (!indice || paraRevisar === 0) return
+    const filtros = { ...FILTROS_VAZIOS, situacao: 'revisar' as const, limite: 20 }
+    iniciar(filtros, montarSessao(indice, filtros, Date.now(), contexto))
+    navegar('/sessao')
+  }
+
   const sessaoEmAndamento =
     sessao && !sessao.concluidaEm && Object.keys(sessao.respostas).length < sessao.ids.length
 
@@ -45,9 +61,9 @@ export function Inicio() {
           <p className="heroi__linha">
             {indice && indice.total > 0 ? (
               <>
-                <strong className="numerico">{indice.total}</strong> questões de provas anteriores
-                de TEOT, TARO e outras, organizadas por assunto. Você filtra, responde e vê seu
-                desempenho na hora.
+                <strong className="numerico">{indice.total}</strong> questões vindas de provas do
+                TEOT, do TARO e de outras seleções, organizadas por assunto. A identificação de
+                qual prova e ano pertence a cada questão ainda está sendo conferida.
               </>
             ) : (
               <>Questões de provas anteriores, organizadas por assunto, para responder e medir o
@@ -86,15 +102,43 @@ export function Inicio() {
 
       {indice && contagens && indice.total > 0 && (
         <>
+          {(sessaoEmAndamento || estudadas > 0) && (
+            <section className="painel-diario" aria-labelledby="titulo-hoje">
+              <div className="painel-diario__cabecalho">
+                <div>
+                  <p className="sobretitulo">SEU ESTUDO HOJE</p>
+                  <h2 id="titulo-hoje">Continue de onde parou</h2>
+                </div>
+                <div className="painel-diario__numeros" aria-label="Progresso acumulado">
+                  <span><strong>{paraRevisar}</strong> para revisar</span>
+                  <span><strong>{dominadas}</strong> dominadas</span>
+                </div>
+              </div>
+              <div className="linha linha--empilha-celular">
+                {sessaoEmAndamento && (
+                  <a className="botao botao--principal botao--grande" href={href('/sessao')}>
+                    Retomar sessão · {Object.keys(sessao.respostas).length}/{sessao.ids.length}
+                  </a>
+                )}
+                {paraRevisar > 0 && (
+                  <button className="botao botao--grande" type="button" onClick={revisarHoje}>
+                    Revisar {Math.min(paraRevisar, 20)} agora
+                  </button>
+                )}
+                <a className="botao botao--grande" href={href('/treinar?situacao=naoRespondidas&limite=10')}>
+                  Fazer 10 novas
+                </a>
+              </div>
+              <p className="meta painel-diario__apoio">
+                Errou, volta para revisão. Dois acertos seguidos marcam a questão como dominada.
+              </p>
+            </section>
+          )}
+
           <div className="linha linha--empilha-celular">
-            <a className="botao botao--grande" href={href('/treinar')}>
+            <a className="botao botao--principal botao--grande" href={href('/treinar')}>
               Montar uma sessão com filtros
             </a>
-            {sessaoEmAndamento && (
-              <a className="botao botao--grande" href={href('/sessao')}>
-                Retomar a última sessão
-              </a>
-            )}
           </div>
 
           <section>

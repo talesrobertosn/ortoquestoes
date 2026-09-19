@@ -8,6 +8,7 @@ import { ContribuirComentario } from './ContribuirComentario'
 import { usarEtiquetas } from '../estado/preferencias'
 import { usarComentarioIA } from '../dados/comentarios'
 import { usarIndice } from '../dados/usarIndice'
+import { gravar, ler } from '../estado/armazenamento'
 
 interface Props {
   questao: Questao
@@ -48,6 +49,7 @@ export function CartaoQuestao({
 }: Props) {
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
   const [copiado, definirCopiado] = useState(false)
+  const [nota, definirNota] = useState(() => ler<string>(`nota:${questao.id}`, ''))
   const inicio = useRef<number>(Date.now())
   const respondida = !!resposta
   const mostrarGabarito = respondida && revelarResposta
@@ -57,6 +59,7 @@ export function CartaoQuestao({
   useEffect(() => {
     definirEscolhida(null)
     definirCopiado(false)
+    definirNota(ler<string>(`nota:${questao.id}`, ''))
     inicio.current = Date.now()
   }, [questao.id])
 
@@ -352,16 +355,16 @@ export function CartaoQuestao({
         {mostrarGabarito && (
           <div className="comentario">
             {questao.comentario && (
-              <div className="bloco-comentario">
-                <p className="comentario__titulo">COMENTÁRIO DO AUTOR</p>
-                <div style={{ whiteSpace: 'pre-wrap' }}>{questao.comentario}</div>
-              </div>
+              <section className="bloco-comentario bloco-comentario--autor">
+                <CabecalhoComentario origem="Comentário do autor" apoio="Explicação editorial" />
+                <TextoEditorial texto={questao.comentario} />
+              </section>
             )}
 
             <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} />
 
-            <div className="bloco-comentario">
-              <p className="comentario__titulo">COMENTÁRIOS DA COMUNIDADE</p>
+            <section className="bloco-comentario bloco-comentario--comunidade">
+              <CabecalhoComentario origem="Comunidade" apoio="Experiência de ortopedistas e residentes" />
               {(questao.comentariosComunidade?.length ?? 0) === 0 ? (
                 <p className="comentario__pendente">
                   Ninguém comentou esta ainda. Se você sabe por que a resposta é essa, escreva —
@@ -372,7 +375,7 @@ export function CartaoQuestao({
                 <ul className="empilha" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   {questao.comentariosComunidade!.map((item, i) => (
                     <li key={i} className="contribuicao">
-                      <div style={{ whiteSpace: 'pre-wrap' }}>{item.texto}</div>
+                      <TextoEditorial texto={item.texto} />
                       {item.imagens && item.imagens.length > 0 && (
                         <div className="questao__figuras" style={{ marginTop: '0.75rem' }}>
                           {item.imagens.map((imagem) => (
@@ -389,9 +392,7 @@ export function CartaoQuestao({
                         </div>
                       )}
                       {item.referencias && item.referencias.length > 0 && (
-                        <p className="meta" style={{ marginTop: '0.5rem' }}>
-                          {item.referencias.join(' · ')}
-                        </p>
+                        <ListaReferencias referencias={item.referencias} />
                       )}
                       <p className="contribuicao__credito">
                         <strong>{item.autor}</strong>
@@ -412,7 +413,7 @@ export function CartaoQuestao({
                   <ContribuirComentario questao={questao} />
                 </div>
               )}
-            </div>
+            </section>
 
             {questao.referencias.length > 0 && (
               <>
@@ -426,6 +427,21 @@ export function CartaoQuestao({
                 </ul>
               </>
             )}
+
+            <details className="nota-pessoal nao-imprime" open={!!nota}>
+              <summary>Minha anotação</summary>
+              <p className="meta">Privada e guardada somente neste navegador.</p>
+              <textarea
+                className="entrada"
+                rows={4}
+                placeholder="O que você quer lembrar na próxima revisão?"
+                value={nota}
+                onChange={(e) => {
+                  definirNota(e.target.value)
+                  gravar(`nota:${questao.id}`, e.target.value)
+                }}
+              />
+            </details>
           </div>
         )}
 
@@ -511,16 +527,13 @@ function ComentarioDaIA({
     .filter((letra) => letra !== questao.gabarito && comentario?.incorretas[letra])
 
   return (
-    <div className="bloco-comentario">
-      <p className="comentario__titulo">
-        COMENTÁRIO DA INTELIGÊNCIA ARTIFICIAL
-        {comentario &&
-          (comentario.conferido ? (
-            <span className="selo selo--conferido">conferido por médico</span>
-          ) : (
-            <span className="selo">não conferido</span>
-          ))}
-      </p>
+    <section className="bloco-comentario bloco-comentario--ia">
+      <CabecalhoComentario
+        origem="Comentário com apoio de IA"
+        apoio="Conceito e análise alternativa por alternativa"
+        selo={comentario ? (comentario.conferido ? 'Revisado por médico' : 'Não revisado por médico') : undefined}
+        conferido={comentario?.conferido}
+      />
 
       {carregando && <p className="comentario__pendente">Carregando o comentário…</p>}
 
@@ -540,39 +553,84 @@ function ComentarioDaIA({
 
           {!comentario.conferido && (
             <p className="aviso-ia">
-              Texto gerado por inteligência artificial e ainda não revisado por um médico. Serve
-              para orientar o raciocínio, não para substituir o livro. Achou erro?{' '}
+              Este comentário foi produzido com apoio de IA e publicado com referências. Ainda
+              não houve revisão médica; use-o para orientar o raciocínio, não para substituir o livro. Achou erro?{' '}
               <a href={href(`/contato?questao=${questao.id}`)}>avise</a>.
             </p>
           )}
 
-          {comentario.conceito && <p className="ia__conceito">{comentario.conceito}</p>}
-
-          {questao.gabarito && (
-            <div className="ia__item ia__item--certa">
-              <span className="ia__letra">{questao.gabarito}</span>
-              <div>
-                <strong>Correta.</strong> {comentario.correta}
-              </div>
+          {comentario.conceito && (
+            <div className="ia__conceito">
+              <p className="comentario__subtitulo">Conceito-chave</p>
+              <TextoEditorial texto={comentario.conceito} />
             </div>
           )}
 
-          {erradas.map((letra) => (
-            <div className="ia__item" key={letra}>
-              <span className="ia__letra">{letra}</span>
-              <div>
-                <strong>Incorreta.</strong> {comentario.incorretas[letra]}
+          <div className="analise-alternativas">
+            <p className="comentario__subtitulo">Alternativa por alternativa</p>
+            {questao.gabarito && (
+              <div className="ia__item ia__item--certa">
+                <span className="ia__letra">{questao.gabarito}</span>
+                <div>
+                  <strong>Correta.</strong> <TextoEditorial texto={comentario.correta} compacto />
+                </div>
               </div>
-            </div>
-          ))}
+            )}
+
+            {erradas.map((letra) => (
+              <div className="ia__item" key={letra}>
+                <span className="ia__letra">{letra}</span>
+                <div>
+                  <strong>Incorreta.</strong>{' '}
+                  <TextoEditorial texto={comentario.incorretas[letra]!} compacto />
+                </div>
+              </div>
+            ))}
+          </div>
 
           {comentario.referencias && comentario.referencias.length > 0 && (
-            <p className="meta" style={{ marginTop: '0.75rem' }}>
-              {comentario.referencias.join(' · ')}
-            </p>
+            <ListaReferencias referencias={comentario.referencias} />
           )}
         </>
       )}
-    </div>
+    </section>
+  )
+}
+
+function CabecalhoComentario({ origem, apoio, selo, conferido }: {
+  origem: string
+  apoio: string
+  selo?: string
+  conferido?: boolean
+}) {
+  return (
+    <header className="comentario__cabecalho">
+      <div>
+        <p className="comentario__titulo">{origem}</p>
+        <p className="comentario__apoio">{apoio}</p>
+      </div>
+      {selo && <span className={'selo' + (conferido ? ' selo--conferido' : '')}>{selo}</span>}
+    </header>
+  )
+}
+
+/** Formatação editorial leve: preserva parágrafos e aceita **destaques** no acervo. */
+function TextoEditorial({ texto, compacto = false }: { texto: string; compacto?: boolean }) {
+  const blocos = texto.trim().split(/\n\s*\n/).filter(Boolean)
+  const formatar = (trecho: string) => trecho.split(/(\*\*.+?\*\*)/g).map((parte, i) =>
+    parte.startsWith('**') && parte.endsWith('**')
+      ? <strong key={i}>{parte.slice(2, -2)}</strong>
+      : parte,
+  )
+  if (compacto && blocos.length === 1) return <span>{formatar(blocos[0])}</span>
+  return <div className="texto-editorial">{blocos.map((bloco, i) => <p key={i}>{formatar(bloco)}</p>)}</div>
+}
+
+function ListaReferencias({ referencias }: { referencias: string[] }) {
+  return (
+    <details className="referencias-comentario">
+      <summary>Referências ({referencias.length})</summary>
+      <ol>{referencias.map((referencia) => <li key={referencia}>{referencia}</li>)}</ol>
+    </details>
   )
 }

@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { SITE, recurso } from '../config'
 import { href } from '../util/rotas'
 import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
-import { armazenamentoDisponivel, limparTudo, tamanhoArmazenado } from '../estado/armazenamento'
+import { armazenamentoDisponivel, exportarDados, importarDados, limparTudo, tamanhoArmazenado } from '../estado/armazenamento'
 import { lerHistorico, lerRespondidas, usarFavoritos } from '../estado/sessao'
 import { usarIndice } from '../dados/usarIndice'
 
@@ -13,8 +13,8 @@ export function Sobre() {
       <p>
         O OrtoQuestões é um banco de questões de ortopedia e traumatologia. Reúne questões de
         provas anteriores — TEOT, TARO e outras — organizadas por assunto, para quem se prepara
-        para o título de especialista ou para as provas da residência. Foi feito por um ortopedista
-        para residentes que estudam entre plantões e cirurgias, com uma regra simples: da página
+        para o título de especialista ou para as provas da residência. É um projeto independente
+        mantido para a comunidade de ortopedia, com uma regra simples: da página
         inicial até a primeira questão respondida, no máximo dois cliques.
       </p>
 
@@ -37,8 +37,9 @@ export function Sobre() {
       </p>
       <ul className="lista">
         <li>
-          <strong>Comentário de IA.</strong> Escrito com apoio de inteligência artificial e
-          conferido antes de entrar no ar. Explica o conceito por trás da questão, por que a
+          <strong>Comentário de IA.</strong> Os comentários são produzidos com apoio de IA e
+          publicados com referências. Quando houver revisão médica, ela será indicada
+          explicitamente. Explica o conceito por trás da questão, por que a
           alternativa correta é correta e por que cada uma das erradas está errada. Quando há
           dúvida sobre o gabarito ou sobre uma afirmação da banca, o comentário diz isso em vez de
           inventar uma explicação segura de aparência.
@@ -56,6 +57,11 @@ export function Sobre() {
         As questões são originais das provas, transcritas dos PDFs sem reescrita, sem resumo e sem
         correção do enunciado. O gabarito vem da própria prova. Questões anuladas ficam marcadas
         como anuladas e não entram no cálculo de desempenho.
+      </p>
+      <p className="aviso-ia">
+        <strong>Origem em conferência.</strong> O conjunto reúne questões do TEOT, do TARO e de
+        outras provas da especialidade, mas a prova e o ano de cada item ainda não puderam ser
+        separados com segurança. Esses filtros só aparecerão quando os metadados forem conferidos.
       </p>
       <p>
         Os assuntos cobrem o programa inteiro da especialidade: mão e punho, ombro e cotovelo,
@@ -125,7 +131,7 @@ export function Sobre() {
         </a>
       </div>
 
-      <p className="texto-2">Feito por {SITE.autor}.</p>
+      <p className="texto-2">Projeto independente mantido por {SITE.autor} para a comunidade de ortopedia.</p>
     </article>
   )
 }
@@ -195,6 +201,7 @@ export function DadosLocais() {
   const marcadas = useMemo(() => lerRespondidas(), [])
   const respondidas = Object.keys(marcadas).length
   const [apagado, definirApagado] = useState(false)
+  const [mensagemBackup, definirMensagemBackup] = useState<string | null>(null)
   const bytes = tamanhoArmazenado()
 
   // Desempenho acumulado por tema: cruza as questões já respondidas neste
@@ -310,6 +317,41 @@ export function DadosLocais() {
           servidor nenhum, porque não existe servidor: o site é um conjunto de arquivos estáticos.
           São {(bytes / 1024).toFixed(1)} kB no total.
         </p>
+      </section>
+
+      <section className="cartao backup-local">
+        <h2>Levar seu progresso para outro aparelho</h2>
+        <p className="texto-2">
+          Baixe uma cópia das respostas, revisões e favoritas. O arquivo fica com você e não é
+          enviado ao OrtoQuestões.
+        </p>
+        <div className="linha linha--empilha-celular">
+          <button className="botao botao--principal" type="button" onClick={() => {
+            const blob = new Blob([exportarDados()], { type: 'application/json' })
+            const url = URL.createObjectURL(blob)
+            const a = document.createElement('a')
+            a.href = url
+            a.download = `ortoquestoes-backup-${new Date().toISOString().slice(0, 10)}.json`
+            a.click()
+            URL.revokeObjectURL(url)
+            definirMensagemBackup('Backup baixado.')
+          }}>Baixar backup</button>
+          <label className="botao">
+            Restaurar backup
+            <input className="so-leitor" type="file" accept="application/json,.json" onChange={async (e) => {
+              const arquivo = e.target.files?.[0]
+              if (!arquivo) return
+              try {
+                importarDados(await arquivo.text())
+                definirMensagemBackup('Backup restaurado. Recarregando…')
+                window.setTimeout(() => window.location.reload(), 700)
+              } catch (erro) {
+                definirMensagemBackup(erro instanceof Error ? erro.message : 'Não foi possível restaurar o backup.')
+              }
+            }} />
+          </label>
+          {mensagemBackup && <span className="meta" role="status">{mensagemBackup}</span>}
+        </div>
       </section>
 
       <h2>Apagar tudo</h2>

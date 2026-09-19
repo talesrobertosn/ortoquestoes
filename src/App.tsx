@@ -11,6 +11,11 @@ import { Contato, DadosLocais, NaoEncontrada, Sobre } from './paginas/Apoio'
 import { Favoritas } from './paginas/Favoritas'
 import { Progresso } from './paginas/Progresso'
 import { SITE } from './config'
+import { Termos } from './paginas/Termos'
+import { usarAceiteTermos } from './estado/termos'
+import { Assinatura } from './paginas/Assinatura'
+import { Entrar } from './paginas/Entrar'
+import { consumirRetornoAuth } from './servicos/supabase'
 
 const TITULOS: Record<string, string> = {
   '/': 'OrtoQuestões — banco de questões de ortopedia e traumatologia',
@@ -23,11 +28,17 @@ const TITULOS: Record<string, string> = {
   '/dados': 'Seu desempenho — OrtoQuestões',
   '/favoritas': 'Suas favoritas — OrtoQuestões',
   '/progresso': 'Progresso dos comentários — OrtoQuestões',
+  '/termos': 'Termos de uso e consentimento — OrtoQuestões',
+  '/assinatura': 'Planos — OrtoQuestões',
+  '/entrar': 'Entrar ou criar conta — OrtoQuestões',
 }
 
 export function App() {
   const rota = usarRota()
   const [primeiro, segundo] = rota.segmentos
+  const { aceito: termosAceitos, aceitar: aceitarTermos } = usarAceiteTermos()
+
+  useEffect(() => { consumirRetornoAuth() }, [])
 
   useEffect(() => {
     document.title =
@@ -48,13 +59,17 @@ export function App() {
       pagina = <Treinar consulta={rota.consulta} />
       break
     case 'sessao':
-      pagina = <Sessao />
+      pagina = termosAceitos ? <Sessao /> : <Termos obrigatorio aoAceitar={aceitarTermos} />
       break
     case 'resumo':
       pagina = <Resumo />
       break
     case 'questao':
-      pagina = segundo ? <QuestaoDireta id={segundo} /> : <NaoEncontrada />
+      pagina = segundo
+        ? termosAceitos
+          ? <QuestaoDireta id={segundo} />
+          : <Termos obrigatorio aoAceitar={aceitarTermos} />
+        : <NaoEncontrada />
       break
     // Duas rotas para a mesma página: "sobre" é o endereço antigo, que
     // continua valendo, e "projeto" é como o site passou a chamá-la.
@@ -73,6 +88,15 @@ export function App() {
       break
     case 'progresso':
       pagina = <Progresso />
+      break
+    case 'termos':
+      pagina = <Termos />
+      break
+    case 'assinatura':
+      pagina = <Assinatura />
+      break
+    case 'entrar':
+      pagina = <Entrar />
       break
     default:
       pagina = <NaoEncontrada />

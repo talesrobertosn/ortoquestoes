@@ -12,6 +12,8 @@ export function Rodape() {
         <a href={href('/contato')}>Relatar erro</a>
         <a href={href('/dados')}>Seu desempenho</a>
         <a href={href('/progresso')}>Progresso do acervo</a>
+        <a href={href('/termos')}>Termos de uso</a>
+        <a href={href('/assinatura')}>Planos</a>
         <a
           className="rodape__social"
           href={SITE.instagram}
@@ -21,7 +23,7 @@ export function Rodape() {
           <Icone nome="instagram" tamanho={18} />@{SITE.instagramUsuario}
         </a>
         <span className="rodape__creditos">
-          Feito por {SITE.autor}, para a comunidade de ortopedia.
+          Projeto independente mantido para a comunidade de ortopedia.
         </span>
       </div>
     </footer>
