@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Estado } from '../componentes/Estados'
 import { usarConta } from '../estado/conta'
 import { lerRespondidas } from '../estado/sessao'
+import { revisarHoje } from '../estado/revisao'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
 
@@ -28,7 +29,7 @@ export function Assinatura() {
 
   const validas = locais.filter((r) => r.c !== null)
   const acerto = validas.length ? Math.round(validas.filter((r) => r.c).length / validas.length * 100) : null
-  const revisoes = locais.filter((r) => r.revisarEm !== null && r.revisarEm <= Date.now()).length
+  const revisoes = locais.filter((r) => revisarHoje(r)).length
 
   async function escolher(plano: string) {
     if (!pagamentosHabilitados) return

@@ -60,10 +60,8 @@ const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
 const SITUACOES: Situacao[] = [
   'todas',
   'naoRespondidas',
-  'revisar',
   'erradas',
   'acertadas',
-  'dominadas',
   'favoritas',
   'revisarHoje',
   'dominadas',
