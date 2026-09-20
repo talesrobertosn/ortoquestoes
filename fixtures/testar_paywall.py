@@ -6,6 +6,7 @@ from zoneinfo import ZoneInfo
 RAIZ = Path(__file__).resolve().parents[1]
 SQL = (RAIZ / "supabase/migrations/202609190001_paywall_planos.sql").read_text()
 SUPABASE_CLIENTE = (RAIZ / "src/servicos/supabase.ts").read_text()
+PAGINA_ENTRAR = (RAIZ / "src/paginas/Entrar.tsx").read_text()
 WORKFLOW_PUBLICACAO = (RAIZ / ".github/workflows/publicar.yml").read_text()
 
 obrigatorios = [
@@ -28,6 +29,19 @@ for trecho in (
     "base64.padEnd",
 ):
     assert trecho in SUPABASE_CLIENTE, f"Contrato de autenticação ausente: {trecho}"
+
+for trecho in (
+    "/auth/v1/token?grant_type=password",
+    "body: JSON.stringify({ email, password: senha })",
+    "clienteConta.auth.setSession",
+):
+    assert trecho in SUPABASE_CLIENTE, f"Contrato de senha ausente: {trecho}"
+
+for trecho in ("type=\"password\"", "Entrar com senha", "Enviar link mágico"):
+    assert trecho in PAGINA_ENTRAR, f"Interface de senha ausente: {trecho}"
+
+assert "localStorage" not in PAGINA_ENTRAR
+assert "console." not in PAGINA_ENTRAR
 
 for trecho in (
     "VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}",
