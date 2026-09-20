@@ -42,7 +42,11 @@ jobs:
         # ortoquestoes.com.br/ — não é preciso reconstruir ao trocar o endereço.
         env:
           VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
-          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}
+          VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
+          VITE_LIMITES_HABILITADOS: ${{ vars.VITE_LIMITES_HABILITADOS }}
+          VITE_PAGAMENTOS_HABILITADOS: ${{ vars.VITE_PAGAMENTOS_HABILITADOS }}
+          # Compatibilidade com o cliente de conta já presente na base.
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
         run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
