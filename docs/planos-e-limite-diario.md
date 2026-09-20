@@ -26,7 +26,7 @@ O dia e a próxima liberação são calculados no Postgres em `America/Sao_Paulo
 
 ## Variáveis
 
-No build público, copiar `.env.example` para `.env.local` e preencher somente URL e chave anon. Nunca prefixar segredos com `VITE_`.
+No build público, copiar `.env.example` para `.env.local` e preencher URL e `VITE_SUPABASE_PUBLISHABLE_KEY`. `VITE_SUPABASE_ANON_KEY` é apenas fallback temporário para a chave anon pública legada. Nunca prefixar segredos com `VITE_`.
 
 Nas Edge Functions:
 

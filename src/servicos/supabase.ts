@@ -1,7 +1,10 @@
 import { PREFIXO_ARMAZENAMENTO } from '../config'
 
 const url = (import.meta.env.VITE_SUPABASE_URL as string | undefined)?.replace(/\/+$/, '')
-const chaveAnonima = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined
+// A chave publishable é o formato atual. A anon permanece como fallback
+// público durante a transição, sem jamais aceitar uma chave privilegiada.
+const chaveSupabase = (import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string | undefined)?.trim()
+  || (import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined)?.trim()
 const chaveSessao = PREFIXO_ARMAZENAMENTO + 'auth:sessao'
 
 export interface UsuarioConta {
@@ -30,15 +33,15 @@ function salvarSessao(sessao: SessaoSupabase | null) {
   window.dispatchEvent(new Event('ortoquestoes:auth'))
 }
 
-export function supabaseConfigurado() { return !!url && !!chaveAnonima }
+export function supabaseConfigurado() { return !!url && !!chaveSupabase }
 export function obterSessao() { return lerSessao() }
 export function obterToken() { return lerSessao()?.access_token ?? null }
 async function garantirToken() {
   const sessao = lerSessao()
   if (!sessao) return null
   if (!sessao.expires_at || sessao.expires_at * 1000 > Date.now() + 60_000) return sessao.access_token
-  if (!url || !chaveAnonima || !sessao.refresh_token) { salvarSessao(null); return null }
-  const resposta = await fetch(`${url}/auth/v1/token?grant_type=refresh_token`, { method:'POST', headers:{apikey:chaveAnonima,'Content-Type':'application/json'}, body:JSON.stringify({refresh_token:sessao.refresh_token}) })
+  if (!url || !chaveSupabase || !sessao.refresh_token) { salvarSessao(null); return null }
+  const resposta = await fetch(`${url}/auth/v1/token?grant_type=refresh_token`, { method:'POST', headers:{apikey:chaveSupabase,'Content-Type':'application/json'}, body:JSON.stringify({refresh_token:sessao.refresh_token}) })
   if (!resposta.ok) { salvarSessao(null); return null }
   const nova = await resposta.json() as SessaoSupabase & { expires_in?: number }
   nova.expires_at ??= Math.floor(Date.now()/1000)+(nova.expires_in ?? 3600)
@@ -54,23 +57,29 @@ export function obterUsuario(): UsuarioConta | null {
 }
 
 export function consumirRetornoAuth(): boolean {
-  const parametros = new URLSearchParams(location.hash.includes('access_token=') ? location.hash.slice(1) : '')
+  const fragmento = location.hash.slice(1)
+  const inicioParametros = fragmento.indexOf('access_token=')
+  const parametros = new URLSearchParams(inicioParametros >= 0 ? fragmento.slice(inicioParametros) : '')
   const token = parametros.get('access_token')
   if (!token) return false
-  const partes = token.split('.')
-  if (partes.length !== 3) return false
-  const payload = JSON.parse(atob(partes[1].replace(/-/g, '+').replace(/_/g, '/'))) as { sub: string; email?: string; user_metadata?: Record<string, unknown>; exp?: number }
-  salvarSessao({ access_token: token, refresh_token: parametros.get('refresh_token') ?? undefined, expires_at: payload.exp, user: { id: payload.sub, email: payload.email, user_metadata: payload.user_metadata } })
-  history.replaceState(null, '', location.pathname + location.search + '#/assinatura')
-  window.dispatchEvent(new HashChangeEvent('hashchange'))
-  return true
+  try {
+    const partes = token.split('.')
+    if (partes.length !== 3) return false
+    const base64 = partes[1].replace(/-/g, '+').replace(/_/g, '/')
+    const payload = JSON.parse(atob(base64.padEnd(Math.ceil(base64.length / 4) * 4, '='))) as { sub?: string; email?: string; user_metadata?: Record<string, unknown>; exp?: number }
+    if (!payload.sub) return false
+    salvarSessao({ access_token: token, refresh_token: parametros.get('refresh_token') ?? undefined, expires_at: payload.exp, user: { id: payload.sub, email: payload.email, user_metadata: payload.user_metadata } })
+    history.replaceState(null, '', location.pathname + location.search + '#/assinatura')
+    window.dispatchEvent(new HashChangeEvent('hashchange'))
+    return true
+  } catch { return false }
 }
 
 export async function enviarLinkAcesso(email: string) {
-  if (!url || !chaveAnonima) throw new Error('A entrada ainda não está configurada.')
+  if (!url || !chaveSupabase) throw new Error('A entrada ainda não está configurada.')
   const resposta = await fetch(`${url}/auth/v1/otp`, {
     method: 'POST',
-    headers: { apikey: chaveAnonima, 'Content-Type': 'application/json' },
+    headers: { apikey: chaveSupabase, 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, create_user: true, options: { email_redirect_to: location.origin + location.pathname } }),
   })
   if (!resposta.ok) throw new Error('Não foi possível enviar o link de acesso.')
@@ -79,12 +88,12 @@ export async function enviarLinkAcesso(email: string) {
 export function sair() { salvarSessao(null) }
 
 export async function chamarRpc<T>(nome: string, corpo: Record<string, unknown>): Promise<T> {
-  if (!url || !chaveAnonima) throw new Error('Servidor não configurado.')
+  if (!url || !chaveSupabase) throw new Error('Servidor não configurado.')
   const token = await garantirToken()
   if (!token) throw new Error('Entre na sua conta para continuar.')
   const resposta = await fetch(`${url}/rest/v1/rpc/${nome}`, {
     method: 'POST',
-    headers: { apikey: chaveAnonima, Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    headers: { apikey: chaveSupabase, Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
     body: JSON.stringify(corpo),
   })
   if (!resposta.ok) throw new Error(`O servidor não pôde validar a resposta (${resposta.status}).`)
@@ -92,11 +101,11 @@ export async function chamarRpc<T>(nome: string, corpo: Record<string, unknown>)
 }
 
 export async function chamarFuncao<T>(nome: string, corpo: Record<string, unknown>): Promise<T> {
-  if (!url || !chaveAnonima) throw new Error('Servidor não configurado.')
+  if (!url || !chaveSupabase) throw new Error('Servidor não configurado.')
   const token = await garantirToken()
   if (!token) throw new Error('Entre na sua conta para continuar.')
   const resposta = await fetch(`${url}/functions/v1/${nome}`, {
-    method: 'POST', headers: { apikey: chaveAnonima, Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' }, body: JSON.stringify(corpo),
+    method: 'POST', headers: { apikey: chaveSupabase, Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' }, body: JSON.stringify(corpo),
   })
   const dados = await resposta.json().catch(() => ({})) as T & { erro?: string }
   if (!resposta.ok) throw new Error(dados.erro ?? 'Não foi possível concluir a operação.')
