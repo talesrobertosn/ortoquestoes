@@ -12,6 +12,8 @@ import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { usarConta } from '../conta/ContextoConta'
 import { usarFavoritos, usarSessao } from '../estado/sessao'
+import { usarLimiteDiario } from '../estado/limiteDiario'
+import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 import { href, navegar } from '../util/rotas'
 
 export function Sessao() {
@@ -25,6 +27,10 @@ export function Sessao() {
   const [portaoContaAberto, definirPortaoContaAberto] = useState(false)
   const [erro, definirErro] = useState<string | null>(null)
   const inicioToque = useRef<number | null>(null)
+  const { estado: estadoLimite, autorizar } = usarLimiteDiario()
+  const [limiteAberto, definirLimiteAberto] = useState(false)
+  const chavesResposta = useRef(new Map<string, string>())
+  const autorizando = useRef(false)
 
   const ids = sessao?.ids
   useEffect(() => {
@@ -47,7 +53,7 @@ export function Sessao() {
   }, [questoes, sessao, posicao])
 
   const respondidas = sessao ? Object.keys(sessao.respostas).length : 0
-  const painelAberto = mapaAberto || atalhosAbertos
+  const painelAberto = mapaAberto || atalhosAbertos || limiteAberto
   const simulado = !!sessao?.simulado
 
   // Cronômetro do simulado. O relógio corre no mundo: fechar a aba não pausa
@@ -229,7 +235,7 @@ export function Sessao() {
       </div>
 
       {questaoAtual ? (
-        <CartaoQuestao
+        <><AvisoLimite estado={estadoLimite} /><CartaoQuestao
           questao={questaoAtual}
           numero={posicao + 1}
           total={total}
@@ -237,8 +243,16 @@ export function Sessao() {
           riscadas={sessao.riscadas[questaoAtual.id] ?? []}
           favorita={favoritos.includes(questaoAtual.id)}
           marcadaRevisao={sessao.revisar.includes(questaoAtual.id)}
-          aoResponder={(letra, correta, segundos, confianca) => {
+          aoResponder={async (letra, correta, segundos, confianca) => {
             if (!conta) { definirPortaoContaAberto(true); return }
+            if (autorizando.current) return
+            autorizando.current = true
+            const chaveMapa = `${sessao.id}:${questaoAtual.id}`
+            const chave = chavesResposta.current.get(chaveMapa) ?? crypto.randomUUID()
+            chavesResposta.current.set(chaveMapa, chave)
+            const permissao = await autorizar(questaoAtual.id, chave)
+            autorizando.current = false
+            if (!permissao.permitido) { definirLimiteAberto(true); return }
             responder(questaoAtual.id, letra, correta, segundos, confianca)
           }}
           aoRiscar={(letra) => alternarRiscada(questaoAtual.id, letra)}
@@ -247,7 +261,7 @@ export function Sessao() {
           aoAvancar={avancar}
           atalhosAtivos={!painelAberto}
           revelarResposta={!simulado}
-        />
+        /></>
       ) : (
         <Estado titulo="Esta questão saiu do acervo.">
           <p>Ela foi removida ou renomeada em uma atualização. Siga para a próxima.</p>
@@ -329,6 +343,7 @@ export function Sessao() {
       </Painel>
 
       <PortaoConta aberto={portaoContaAberto} aoFechar={() => definirPortaoContaAberto(false)} />
+      <PainelLimite estado={estadoLimite} aberto={limiteAberto} aoFechar={() => definirLimiteAberto(false)} />
     </div>
   )
 }
