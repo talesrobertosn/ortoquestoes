@@ -34,6 +34,22 @@ function salvarSessao(sessao: SessaoSupabase | null) {
   window.dispatchEvent(new Event('ortoquestoes:auth'))
 }
 
+// A área de treino usa o cliente Supabase com renovação automática. Mantemos
+// a sessão usada pelas RPCs de planos em sincronia e a removemos ao sair.
+if (clienteConta) {
+  clienteConta.auth.onAuthStateChange((evento, proxima) => {
+    if (evento === 'SIGNED_OUT') salvarSessao(null)
+    if (evento === 'TOKEN_REFRESHED' && proxima) {
+      salvarSessao({
+        access_token: proxima.access_token,
+        refresh_token: proxima.refresh_token,
+        expires_at: proxima.expires_at ?? undefined,
+        user: proxima.user,
+      })
+    }
+  })
+}
+
 export function supabaseConfigurado() { return !!url && !!chaveSupabase }
 export function obterSessao() { return lerSessao() }
 export function obterToken() { return lerSessao()?.access_token ?? null }

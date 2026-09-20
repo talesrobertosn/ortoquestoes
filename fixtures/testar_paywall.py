@@ -34,6 +34,8 @@ for trecho in (
     "/auth/v1/token?grant_type=password",
     "body: JSON.stringify({ email, password: senha })",
     "clienteConta.auth.setSession",
+    "evento === 'SIGNED_OUT'",
+    "evento === 'TOKEN_REFRESHED'",
 ):
     assert trecho in SUPABASE_CLIENTE, f"Contrato de senha ausente: {trecho}"
 
@@ -42,6 +44,7 @@ for trecho in ("type=\"password\"", "Entrar com senha", "Enviar link mágico"):
 
 assert "localStorage" not in PAGINA_ENTRAR
 assert "console." not in PAGINA_ENTRAR
+assert PAGINA_ENTRAR.count('type="submit"') == 1
 
 for trecho in (
     "VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}",
