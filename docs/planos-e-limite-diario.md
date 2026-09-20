@@ -35,26 +35,37 @@ supabase secrets set \
   APP_ORIGIN=https://ortoquestoes.com.br \
   MERCADO_PAGO_ACCESS_TOKEN=... \
   MERCADO_PAGO_WEBHOOK_SECRET=... \
+  MERCADO_PAGO_PLANO_MENSAL_ID=... \
+  MERCADO_PAGO_PLANO_SEMESTRAL_ID=... \
+  MERCADO_PAGO_PLANO_ANUAL_ID=... \
   PAGAMENTOS_HABILITADOS=false \
   MERCADO_PAGO_INTEGRACAO_VALIDADA=false
 ```
 
 `SUPABASE_URL`, `SUPABASE_ANON_KEY` e `SUPABASE_SERVICE_ROLE_KEY` são fornecidas pelo ambiente das Edge Functions. A service role jamais vai para o navegador.
 
+## Mercado Pago: configuração privada
+
+`criar-checkout` escolhe o `preapproval_plan_id` exclusivamente pelas variáveis privadas `MERCADO_PAGO_PLANO_MENSAL_ID`, `MERCADO_PAGO_PLANO_SEMESTRAL_ID` e `MERCADO_PAGO_PLANO_ANUAL_ID`. IDs de plano, Access Token e segredo de webhook nunca pertencem ao frontend, GitHub Variables, `.env.example` com valor real ou repositório.
+
+Com Access Token de teste (prefixo `TEST-`), a função só abre checkout para um usuário autenticado que tenha uma linha ativa em `contas_teste`. A preapproval leva o UUID do Supabase em `external_reference`, o e-mail autenticado em `payer_email`, `back_url` de `APP_ORIGIN` e uma chave de idempotência. Ela não infere o plano pela frequência.
+
+O webhook associa uma assinatura pelo `preapproval_plan_id` devolvido pelo Mercado Pago. `approved` e `authorized` ativam acesso; `pending` e `in_process` ficam pendentes, sem redução de acesso; `rejected`, `cancelled`, `charged_back`, `refunded` e vencimento devolvem a conta ao gratuito. Eventos `subscription_preapproval_plan` e outros que não mudam acesso são registrados e ignorados com segurança.
+
 ## Mercado Pago: pendências obrigatórias
 
 O titular ainda precisa criar/configurar a conta de vendedor como pessoa física. Antes de mudar `MERCADO_PAGO_INTEGRACAO_VALIDADA`, conferir novamente na documentação oficial e em sandbox:
 
 - disponibilidade de assinaturas recorrentes para a conta e meios de pagamento aceitos;
-- aceitação de `frequency=1`, `6` e `12` com `frequency_type=months` em preapproval;
+- aceitação de `frequency=1`, `6` e `12` com `frequency_type=months` em `preapproval_plan` de sandbox (confirmada em 2026-09-20);
 - evento atual para preapproval (`subscription_preapproval`) e evento de cobrança (`payment`);
 - composição atual do manifesto `x-signature` (`data.id`, `x-request-id` e `ts`);
 - presença de `external_reference`, `next_payment_date`, `metadata.preapproval_id` ou `subscription_id` nas respostas reais;
 - regras da conta para reembolso via `/v1/payments/{id}/refunds`.
 
-Esses pontos **não puderam ser validados neste ambiente**, pois tanto a ferramenta de navegação quanto o acesso direto à documentação oficial retornaram bloqueio do proxy. Por segurança, as funções recusam checkout e webhook enquanto `MERCADO_PAGO_INTEGRACAO_VALIDADA` não for explicitamente `true`.
+As periodicidades de 1, 6 e 12 meses foram aceitas na criação de `preapproval_plan` com credencial de teste em 2026-09-20. O primeiro checkout sandbox ainda precisa validar o retorno, a associação da preapproval, os eventos reais, a assinatura HMAC e a atualização idempotente antes de qualquer ativação. Por segurança, as funções recusam checkout e webhook enquanto `MERCADO_PAGO_INTEGRACAO_VALIDADA` não for explicitamente `true`.
 
-Configurar o webhook somente por HTTPS para a função `webhook-mercado-pago`. A função valida a assinatura antes de ler/processar o evento, grava o evento com chave única e responde rapidamente; o processamento ocorre em background. Não se armazenam dados de cartão.
+Configurar o webhook somente por HTTPS para a função `webhook-mercado-pago`. A função valida a assinatura antes de ler/processar o evento, grava o evento com chave única e responde rapidamente; o processamento ocorre em background. Não se armazenam dados de cartão. Não salvar URL nem segredo até a validação completa do primeiro checkout sandbox.
 
 ## Política operacional
 

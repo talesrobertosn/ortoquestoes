@@ -1,10 +1,16 @@
-import { cors, json, usuarioDoPedido } from '../_shared/http.ts'
+import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 
 const planos = {
-  mensal: { valor: 39.90, frequencia: 1, rotulo: 'Plano mensal OrtoQuestões' },
-  semestral: { valor: 179.90, frequencia: 6, rotulo: 'Plano semestral OrtoQuestões' },
-  anual: { valor: 239.90, frequencia: 12, rotulo: 'Plano anual OrtoQuestões' },
+  mensal: 'MERCADO_PAGO_PLANO_MENSAL_ID',
+  semestral: 'MERCADO_PAGO_PLANO_SEMESTRAL_ID',
+  anual: 'MERCADO_PAGO_PLANO_ANUAL_ID',
 } as const
+
+async function contaTesteAtiva(idUsuario: string) {
+  const resposta = await banco(`contas_teste?id_usuario=eq.${encodeURIComponent(idUsuario)}&ativa=eq.true&select=id_usuario`)
+  if (!resposta.ok) throw new Error('consulta_conta_teste_falhou')
+  return (await resposta.json() as unknown[]).length > 0
+}
 
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: cors })
@@ -16,15 +22,32 @@ Deno.serve(async (req) => {
     if (Deno.env.get('PAGAMENTOS_HABILITADOS') !== 'true' || Deno.env.get('MERCADO_PAGO_INTEGRACAO_VALIDADA') !== 'true') {
       return json({ erro: 'Os pagamentos ainda não estão disponíveis.' }, 503)
     }
+
     const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')
-    if (!token || !usuario.email) return json({ erro: 'checkout_nao_configurado' }, 503)
-    const escolhido = planos[plano]
+    const origem = Deno.env.get('APP_ORIGIN')
+    const preapprovalPlanId = Deno.env.get(planos[plano])
+    if (!token || !origem || !preapprovalPlanId || !usuario.email) return json({ erro: 'checkout_nao_configurado' }, 503)
+    if (token.startsWith('TEST-') && !await contaTesteAtiva(usuario.id)) return json({ erro: 'checkout_sandbox_requer_conta_teste' }, 403)
+
     const resposta = await fetch('https://api.mercadopago.com/preapproval', {
-      method: 'POST', headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json', 'X-Idempotency-Key': crypto.randomUUID() },
-      body: JSON.stringify({ reason: escolhido.rotulo, external_reference: usuario.id, payer_email: usuario.email, back_url: `${Deno.env.get('APP_ORIGIN')}/#/assinatura`, auto_recurring: { frequency: escolhido.frequencia, frequency_type: 'months', transaction_amount: escolhido.valor, currency_id: 'BRL' }, status: 'pending' }),
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+        'X-Idempotency-Key': crypto.randomUUID(),
+      },
+      body: JSON.stringify({
+        preapproval_plan_id: preapprovalPlanId,
+        external_reference: usuario.id,
+        payer_email: usuario.email,
+        back_url: `${origem.replace(/\/$/, '')}/#/assinatura`,
+        status: 'pending',
+      }),
     })
     const dados = await resposta.json()
     if (!resposta.ok || !dados.init_point) return json({ erro: 'mercado_pago_recusou_checkout' }, 502)
     return json({ url: dados.init_point })
-  } catch (erro) { return json({ erro: erro instanceof Error ? erro.message : 'erro_interno' }, 401) }
+  } catch (erro) {
+    return json({ erro: erro instanceof Error ? erro.message : 'erro_interno' }, 401)
+  }
 })

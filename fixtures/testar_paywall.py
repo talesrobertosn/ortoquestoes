@@ -8,6 +8,9 @@ SQL = (RAIZ / "supabase/migrations/202609190001_paywall_planos.sql").read_text()
 SUPABASE_CLIENTE = (RAIZ / "src/servicos/supabase.ts").read_text()
 PAGINA_ENTRAR = (RAIZ / "src/paginas/Entrar.tsx").read_text()
 WORKFLOW_PUBLICACAO = (RAIZ / ".github/workflows/publicar.yml").read_text()
+CRIAR_CHECKOUT = (RAIZ / "supabase/functions/criar-checkout/index.ts").read_text()
+WEBHOOK_MERCADO_PAGO = (RAIZ / "supabase/functions/webhook-mercado-pago/index.ts").read_text()
+ENV_EXEMPLO = (RAIZ / ".env.example").read_text()
 
 obrigatorios = [
     "paywall_ativo boolean not null default false",
@@ -45,6 +48,40 @@ for trecho in ("type=\"password\"", "Entrar com senha", "Enviar link mágico"):
 assert "localStorage" not in PAGINA_ENTRAR
 assert "console." not in PAGINA_ENTRAR
 assert PAGINA_ENTRAR.count('type="submit"') == 1
+
+for trecho in (
+    "MERCADO_PAGO_PLANO_MENSAL_ID",
+    "MERCADO_PAGO_PLANO_SEMESTRAL_ID",
+    "MERCADO_PAGO_PLANO_ANUAL_ID",
+    "preapproval_plan_id: preapprovalPlanId",
+    "external_reference: usuario.id",
+    "payer_email: usuario.email",
+    "X-Idempotency-Key",
+    "checkout_sandbox_requer_conta_teste",
+    "token.startsWith('TEST-')",
+):
+    assert trecho in CRIAR_CHECKOUT, f"Contrato de checkout ausente: {trecho}"
+
+for trecho in (
+    "preapproval_plan_desconhecido",
+    "preapproval.preapproval_plan_id",
+    "subscription_authorized_payment",
+    "subscription_preapproval",
+    "status === 'approved'",
+    "statusMercadoPago === 'authorized'",
+    "status === 'refunded' || status === 'charged_back'",
+    "status === 'rejected'",
+    "statusMercadoPago === 'pending' || statusMercadoPago === 'in_process'",
+    "request-id:${requestId}",
+):
+    assert trecho in WEBHOOK_MERCADO_PAGO, f"Contrato de webhook ausente: {trecho}"
+
+for trecho in ("MERCADO_PAGO_PLANO_MENSAL_ID", "MERCADO_PAGO_PLANO_SEMESTRAL_ID", "MERCADO_PAGO_PLANO_ANUAL_ID"):
+    assert trecho in ENV_EXEMPLO, f"Variável privada de plano ausente: {trecho}"
+
+for fonte in (CRIAR_CHECKOUT, WEBHOOK_MERCADO_PAGO, ENV_EXEMPLO):
+    assert "preapproval_plan_id: '" not in fonte
+    assert 'preapproval_plan_id: "' not in fonte
 
 for trecho in (
     "VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}",
