@@ -1,4 +1,5 @@
 import { PREFIXO_ARMAZENAMENTO } from '../config'
+import { supabase as clienteConta } from '../conta/supabase'
 
 const url = (import.meta.env.VITE_SUPABASE_URL as string | undefined)?.replace(/\/+$/, '')
 // A chave publishable é o formato atual. A anon permanece como fallback
@@ -83,6 +84,34 @@ export async function enviarLinkAcesso(email: string) {
     body: JSON.stringify({ email, create_user: true, options: { email_redirect_to: location.origin + location.pathname } }),
   })
   if (!resposta.ok) throw new Error('Não foi possível enviar o link de acesso.')
+}
+
+/**
+ * A senha existe apenas durante o envio deste formulário. A sessão recebida é
+ * salva pelos dois clientes públicos do app; a senha não é persistida.
+ */
+export async function entrarComSenha(email: string, senha: string) {
+  if (!url || !chaveSupabase) throw new Error('A entrada ainda não está configurada.')
+  const resposta = await fetch(`${url}/auth/v1/token?grant_type=password`, {
+    method: 'POST',
+    headers: { apikey: chaveSupabase, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, password: senha }),
+  })
+  const dados = await resposta.json().catch(() => null) as (SessaoSupabase & { expires_in?: number; error_description?: string; msg?: string }) | null
+  if (!resposta.ok || !dados?.access_token || !dados.refresh_token || !dados.user?.id) {
+    throw new Error(dados?.error_description ?? dados?.msg ?? 'Não foi possível entrar com a senha.')
+  }
+  dados.expires_at ??= Math.floor(Date.now() / 1000) + (dados.expires_in ?? 3600)
+  salvarSessao(dados)
+  if (!clienteConta) throw new Error('A sessão da conta ainda não está configurada.')
+  const { error } = await clienteConta.auth.setSession({
+    access_token: dados.access_token,
+    refresh_token: dados.refresh_token,
+  })
+  if (error) {
+    salvarSessao(null)
+    throw new Error('Não foi possível iniciar a sessão da conta.')
+  }
 }
 
 export function sair() { salvarSessao(null) }
