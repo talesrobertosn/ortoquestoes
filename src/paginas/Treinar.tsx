@@ -496,4 +496,3 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     </div>
   )
 }
-

@@ -143,7 +143,7 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
 
   const assunto = questao
     ? `OrtoQuestões — erro na questão ${questao}`
-    : 'OrtoQuestões — relato de erro' 
+    : 'OrtoQuestões — relato de erro'
 
   return (
     <article className="limite-leitura empilha">
@@ -404,4 +404,3 @@ export function NaoEncontrada() {
     </article>
   )
 }
-

@@ -109,4 +109,3 @@ try {
   assert.deepEqual(m.ler('respondidas', {}), {})
   console.log('Reinício: RPC ausente, offline, F5, paginação, sessão antiga e isolamento de conta passaram.')
 } finally { sync?.parar(); await rm(pasta, { recursive: true, force: true }) }
-

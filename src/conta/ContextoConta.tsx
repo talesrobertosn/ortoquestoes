@@ -76,4 +76,3 @@ export function usarConta() {
   if (!conta) throw new Error('Provedor de conta indisponível')
   return conta
 }
-

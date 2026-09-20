@@ -23,4 +23,3 @@ export function usarLeitura() {
   const [fonte, definirFonte] = usarArmazenado<number>(CHAVE_FONTE, 100)
   return { densidade, definirDensidade, fonte, definirFonte }
 }
-

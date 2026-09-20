@@ -21,6 +21,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
   const inicial = String(sessao?.user.user_metadata?.nome ?? '').trim().charAt(0).toUpperCase()
 
   return (
+    <>
     <header className="cabecalho nao-imprime">
       <div className="conteudo cabecalho__interno">
         <a className="cabecalho__marca" href={href('/')} aria-label="OrtoQuestões, página inicial">
@@ -62,6 +63,13 @@ export function Cabecalho({ caminho }: { caminho: string }) {
         </div>
       </div>
     </header>
+    <nav className="navegacao-mobile nao-imprime" aria-label="Navegação móvel">
+      <a href={href('/')} aria-current={caminho === '/' ? 'page' : undefined}><Icone nome="mapa" /><span>Início</span></a>
+      <a href={href('/treinar')} aria-current={caminho.startsWith('/treinar') ? 'page' : undefined}><Icone nome="filtro" /><span>Treinar</span></a>
+      <a href={href('/treinar?situacao=revisar')}><Icone nome="reiniciar" /><span>Revisar</span></a>
+      <a href={href('/dados')} aria-current={caminho.startsWith('/dados') ? 'page' : undefined}><Icone nome="certo" /><span>Desempenho</span></a>
+    </nav>
+    </>
   )
 }
 
@@ -73,4 +81,3 @@ function TemaIcone() {
         window.matchMedia('(prefers-color-scheme: dark)').matches))
   return <Icone nome={escuro ? 'sol' : 'lua'} />
 }
-

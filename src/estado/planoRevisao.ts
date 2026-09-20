@@ -25,4 +25,3 @@ export function planoRevisao(indice: Indice, registros: Record<string, Partial<R
   return porDia
 }
 export function rotuloDia(data: number) { return new Intl.DateTimeFormat('pt-BR', { weekday: 'short', day: 'numeric', month: 'short' }).format(data) }
-

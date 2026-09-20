@@ -220,4 +220,3 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     </section>}
   </article>
 }
-

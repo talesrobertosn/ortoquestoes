@@ -371,4 +371,3 @@ export function carregarBusca(): Promise<Map<string, string>> {
   }
   return promessaBusca
 }
-

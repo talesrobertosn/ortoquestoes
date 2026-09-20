@@ -13,8 +13,11 @@ import { Favoritas } from './paginas/Favoritas'
 import { Progresso } from './paginas/Progresso'
 import { Revisao } from './paginas/Revisao'
 import { Termos } from './paginas/Termos'
+import { Assinatura } from './paginas/Assinatura'
+import { Entrar } from './paginas/Entrar'
 import { SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
+import { consumirRetornoAuth } from './servicos/supabase'
 
 const TITULOS: Record<string, string> = {
   '/': 'OrtoQuestões — banco de questões de ortopedia e traumatologia',
@@ -30,6 +33,8 @@ const TITULOS: Record<string, string> = {
   '/progresso': 'Progresso dos comentários — OrtoQuestões',
   '/revisao': 'Sua revisão — OrtoQuestões',
   '/termos': 'Termos de Uso e Consentimento — OrtoQuestões',
+  '/assinatura': 'Planos — OrtoQuestões',
+  '/entrar': 'Entrar ou criar conta — OrtoQuestões',
 }
 
 export function App() {
@@ -38,6 +43,7 @@ export function App() {
   const { densidade, fonte } = usarLeitura()
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'auto' }) }, [rota.caminho])
+  useEffect(() => { consumirRetornoAuth() }, [])
 
   useEffect(() => {
     document.title =
@@ -93,6 +99,12 @@ export function App() {
     case 'termos':
       pagina = <Termos />
       break
+    case 'assinatura':
+      pagina = <Assinatura />
+      break
+    case 'entrar':
+      pagina = <Entrar />
+      break
     default:
       pagina = <NaoEncontrada />
   }
@@ -117,4 +129,3 @@ export function App() {
     </div>
   )
 }
-

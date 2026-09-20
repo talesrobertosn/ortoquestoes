@@ -666,4 +666,3 @@ function ComentarioDaIA({
     </div>
   )
 }
-

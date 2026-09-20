@@ -189,4 +189,3 @@ export function usarFavoritos() {
   )
   return { favoritos, alternar }
 }
-
