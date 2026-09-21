@@ -11668,5 +11668,29 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "trauma-1013": {
+    "conceito": "A codificação AO/OTA \"2U1\" localiza a lesão na ulna proximal (segmento 2, osso U, região 1), região que corresponde ao olécrano. Fraturas simples e desviadas dessa região, produzidas por avulsão do olécrano pela tração do tríceps (como sugerido pelo mecanismo de queda direta sobre o cotovelo fletido), são classicamente tratadas com **banda de tensão**: dois fios de Kirschner paralelos, ancorando o fragmento proximal, associados a uma cerclagem em oito que converte a força de tração do tríceps em compressão dinâmica sobre o foco de fratura durante a flexão do cotovelo, sendo o método padrão-ouro para esse padrão de fratura simples e não cominutiva do olécrano.",
+    "correta": "A. O tratamento mais correto é a banda de tensão com dois fios de Kirschner e cerclagem.",
+    "incorretas": {
+      "B": "Uma placa bloqueada para o **terço médio da ulna** trataria uma fratura diafisária, uma localização diferente da fratura proximal (olecraniana) descrita pela codificação.",
+      "C": "Uma placa para a **extremidade distal da ulna** não corresponde à localização proximal da fratura descrita.",
+      "D": "Embora uma placa pré-moldada para a extremidade proximal da ulna seja uma opção válida em fraturas mais complexas ou cominutivas do olécrano, o padrão simples de fratura por avulsão descrito é classicamente tratado com banda de tensão, uma técnica mais simples e igualmente eficaz nesse contexto.",
+      "E": "Assim como na alternativa D, a fixação com placa é reservada para padrões mais complexos ou cominutivos; a fratura simples por avulsão descrita tem na banda de tensão o tratamento consagrado."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-1015": {
+    "conceito": "A codificação AO/OTA \"44C\" indica uma fratura da fíbula **suprassindesmal** (acima do nível da sindesmose), um padrão que, por definição, rompe a sindesmose tibiofibular distal e exige sua estabilização cirúrgica. Quando a lesão medial associada é predominantemente **ligamentar** (do ligamento deltoide, sem uma fratura óssea do maléolo medial a ser fixada), o tratamento combina a osteossíntese da fíbula, a sutura do ligamento deltoide roto e a estabilização da sindesmose com parafuso transindesmoidal, exatamente a combinação terapêutica que aborda os três componentes dessa lesão suprassindesmal com envolvimento ligamentar medial.",
+    "correta": "A. O tratamento mais adequado é osteossíntese da fíbula com placa 1/3 de cana pequenos fragmentos (3,5 mm), sutura do ligamento deltoide e estabilização da sindesmose anterior com parafuso transindesmoidal.",
+    "incorretas": {
+      "B": "A osteossíntese do \"canto posterior da tíbia\" pressupõe uma fratura do maléolo posterior, um componente ósseo adicional não indicado pela codificação como a lesão principal a ser tratada com parafusos, ao lado de uma lesão ligamentar medial (sem fratura óssea) tratada por sutura.",
+      "C": "A osteossíntese do maléolo medial com parafusos canulados pressupõe uma fratura óssea nessa região, mas a lesão medial correspondente a essa codificação é predominantemente ligamentar (do ligamento deltoide), tratada por sutura, não por fixação óssea.",
+      "D": "Fixar o maléolo medial com fios de Kirschner e cerclagem também pressupõe, incorretamente, uma fratura óssea medial, quando a lesão associada é ligamentar (deltoide).",
+      "E": "Tanto a fixação óssea do maléolo medial quanto a do \"canto posterior\" pressupõem componentes ósseos que não correspondem ao padrão de lesão ligamentar medial (deltoide) indicado pela codificação."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
