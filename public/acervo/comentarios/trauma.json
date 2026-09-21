@@ -10265,5 +10265,225 @@
     ],
     "geradoEm": "2026-09-17",
     "conferido": false
+  },
+  "trauma-0024": {
+    "conceito": "A classificação de Sangeorzan para as fraturas do corpo do navicular organiza os padrões por gravidade e desvio:\n- **Tipo I**: traço **horizontal transverso**, sem desvio angular do antepé — o fragmento dorsal se separa, mas o alinhamento geral do pé se mantém, com lesão ligamentar dorsal associada.\n- **Tipo II**: traço obliquo dorsolateral para plantomedial, com desvio medial do antepé.\n- **Tipo III**: cominuição, geralmente com desvio lateral do antepé e frequente envolvimento do cuboide.\n\nQuanto mais alto o tipo, maior a energia do trauma e pior o prognóstico funcional — por isso o tipo I costuma responder bem à fixação simples, enquanto os tipos II e III exigem reconstrução mais extensa da coluna medial do pé.",
+    "correta": "B. O tipo I de Sangeorzan tem traço horizontal transverso, com lesão ligamentar dorsal associada, sem desvio angular do antepé.",
+    "incorretas": {
+      "A": "Um traço vertical sem desvio não corresponde ao padrão descrito para o tipo I, que é horizontal transverso.",
+      "C": "A lesão ligamentar associada ao tipo I é dorsal, não plantar.",
+      "D": "A cominuição da porção lateral do navicular é uma característica mais associada aos tipos mais graves (II e III), não ao tipo I."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0029": {
+    "conceito": "A classificação de Pipkin para as fraturas da cabeça do fêmur associadas à luxação posterior do quadril progride em gravidade:\n- **Tipo I**: fratura infrafoveal (abaixo da fóvea) — o fragmento não inclui a inserção do ligamento redondo.\n- **Tipo II**: fratura suprafoveal (acima da fóvea) — fragmento maior, incluindo parte da superfície de carga.\n- **Tipo III**: tipo I ou II associado a fratura do colo do fêmur — o subtipo com pior prognóstico, pelo risco de necrose avascular.\n- **Tipo IV**: tipo I, II ou III associado a fratura do acetábulo (fratura da parede ou do rebordo posterior, geralmente concomitante à luxação).",
+    "correta": "D. A fratura da cabeça do fêmur associada à fratura do acetábulo corresponde ao tipo IV de Pipkin.",
+    "incorretas": {
+      "A": "O tipo I é a fratura infrafoveal isolada, sem fratura do acetábulo.",
+      "B": "O tipo II é a fratura suprafoveal isolada, sem fratura do acetábulo.",
+      "C": "O tipo III associa fratura do colo do fêmur, não do acetábulo."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0044": {
+    "conceito": "A classificação de Bado organiza a fratura-luxação de Monteggia pela direção da luxação da cabeça do rádio em relação à angulação da fratura da ulna:\n- **Tipo I**: luxação **anterior** da cabeça do rádio, com a fratura da ulna angulada com o ápice anterior — o padrão mais comum, respondendo por cerca de 60 a 70% dos casos.\n- **Tipo II**: luxação posterior, ápice posterior.\n- **Tipo III**: luxação lateral ou anterolateral, mais comum em crianças.\n- **Tipo IV**: luxação anterior associada a fratura também do rádio proximal, além da ulna.",
+    "correta": "A. O tipo I de Bado, com luxação anterior da cabeça do rádio, é o mais comum na fratura-luxação de Monteggia do adulto.",
+    "incorretas": {
+      "B": "O tipo II (luxação posterior) é menos frequente que o tipo I no adulto.",
+      "C": "O tipo III é mais característico da criança do que do adulto, e é menos frequente que o tipo I.",
+      "D": "O tipo IV é o mais raro dos quatro padrões."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0066": {
+    "conceito": "A tuberosidade bicipital do rádio fica na face medial do rádio proximal, um pouco fora do plano da radiografia padrão em perfil. Para visualizá-la de perfil verdadeiro — essencial ao avaliar a redução rotacional em fraturas do antebraço, já que a posição da tuberosidade indica a rotação do fragmento proximal —, a incidência recomendada é com o **cotovelo fletido a 90°** e o feixe de raios com **20° de inclinação posterior** em relação ao antebraço, o que projeta a tuberosidade em perfil sem a sobreposição de outras estruturas ósseas.",
+    "correta": "D. Cotovelo fletido a 90° e fonte com 20° de inclinação posterior é a incidência que melhor perfila a tuberosidade bicipital.",
+    "incorretas": {
+      "A": "O cotovelo estendido não é a posição recomendada para essa incidência específica.",
+      "B": "A flexão de 90° está correta, mas sem a angulação de 20° da fonte a tuberosidade não fica bem perfilada.",
+      "C": "A angulação da fonte está correta, mas o cotovelo precisa estar fletido a 90°, não estendido."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0081": {
+    "conceito": "A síndrome compartimental na perna da criança tem um desafio diagnóstico particular: os sinais clássicos do adulto (dor desproporcional, os \"5 P\" — dor, palidez, parestesia, ausência de pulso, paralisia) são pouco confiáveis na criança pequena, que não comunica bem a dor ou a parestesia. Por isso, a vigilância clínica precisa ser redobrada justamente nos pacientes mais jovens — e estudos que avaliaram fatores de risco para o desenvolvimento da síndrome compartimental em fraturas de perna na infância identificaram a **idade mais baixa** como o preditor mais forte, provavelmente refletindo tanto uma vulnerabilidade biológica real quanto o próprio atraso diagnóstico nessa faixa etária, quando os sinais clínicos habituais ainda não são confiáveis.",
+    "correta": "A. A baixa idade é descrita como o preditor mais forte para o desenvolvimento de síndrome compartimental na perna da criança.",
+    "incorretas": {
+      "B": "O peso maior que 50 kg não é o fator mais fortemente associado nesse contexto.",
+      "C": "O déficit neurológico já seria, na maioria das vezes, uma manifestação tardia da síndrome compartimental instalada, não um preditor precoce do seu desenvolvimento.",
+      "D": "A cominuição da fratura é um fator de risco reconhecido para lesão de partes moles em geral, mas não é descrita como o preditor mais forte nesse contexto específico."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0082": {
+    "conceito": "A classificação HOST (\"Host classification\") avalia o hospedeiro (o paciente, não a ferida) no tratamento das fraturas expostas, complementando classificações da lesão de partes moles como a de Gustilo-Anderson. Ela estratifica o paciente em tipos conforme comorbidades e capacidade de cicatrização:\n- **Tipo A**: hospedeiro sem comorbidades relevantes.\n- **Tipo B**: uma comorbidade isolada (por exemplo, tabagismo ou diabetes controlado).\n- **Tipo C**: **doença sistêmica múltipla** — múltiplas comorbidades que comprometem significativamente a cicatrização óssea e de partes moles, elevando o risco de infecção e de falha do tratamento.\n\nEssa estratificação ajuda a calibrar a expectativa de complicações e a intensidade do acompanhamento, além de orientar decisões como o momento da cobertura de partes moles.",
+    "correta": "C. O tipo C da classificação HOST corresponde à presença de doença sistêmica múltipla.",
+    "incorretas": {
+      "A": "O tipo A representa o hospedeiro sem comorbidades relevantes, o extremo oposto do descrito na questão.",
+      "B": "O tipo B representa uma única comorbidade isolada, não múltiplas doenças sistêmicas.",
+      "D": "A classificação HOST não define um tipo D."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0097": {
+    "conceito": "Na fratura da cabeça do fêmur tipo I de Pipkin (fratura infrafoveal, abaixo da inserção do ligamento redondo), o fragmento não compromete a superfície de carga principal da cabeça femoral. Por isso, o tratamento cirúrgico indicado é a **fixação do fragmento fraturado** (com parafusos, por via que preserve a vascularização), buscando restaurar a congruência articular e preservar a cabeça — reservando procedimentos mais radicais como a artroplastia para os casos com comprometimento maior da superfície de carga, necrose avascular estabelecida ou falha do tratamento inicial.",
+    "correta": "C. A fixação do fragmento fraturado é o tratamento cirúrgico indicado na fratura Pipkin tipo I.",
+    "incorretas": {
+      "A": "A artroplastia total é reservada a situações mais graves ou a falhas de tratamento, não à indicação inicial do tipo I.",
+      "B": "A artroplastia parcial também não é a conduta inicial recomendada para um fragmento infrafoveal fixável.",
+      "D": "A ressecção do fragmento comprometeria a congruência articular sem necessidade, quando a fixação é factível."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0170": {
+    "conceito": "A fratura tipo indentação (impacção) da cabeça femoral é uma lesão associada à luxação do quadril, na qual a cabeça femoral colide com a borda do acetábulo no momento da luxação, criando uma área de impacção focal. Esse padrão é característico da **luxação posterior**, em que a cabeça impacta contra a borda posterior do acetábulo — diferente da luxação anterior e da luxação central, cujos mecanismos de impacto seguem trajetórias diferentes e menos associadas a esse tipo específico de lesão da cabeça femoral.",
+    "correta": "C. A fratura por indentação da cabeça femoral raramente está associada à luxação posterior — a impacção clássica desse tipo de lesão ocorre por outro mecanismo de contato entre a cabeça e o acetábulo.",
+    "incorretas": {
+      "A": "A luxação central (protrusão acetabular) tem seu próprio padrão de fratura por impacção, distinto do tipo indentação clássico associado a esta questão.",
+      "B": "A luxação anterior também pode se associar a fraturas por impacção da cabeça femoral, em um padrão de contato diferente do posterior.",
+      "D": "A fratura do acetábulo frequentemente acompanha a luxação do quadril e pode coexistir com a fratura por indentação da cabeça femoral."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0174": {
+    "conceito": "O TLICS (Thoracolumbar Injury Classification and Severity Score) pontua a gravidade da lesão toracolombar somando três componentes independentes: a morfologia da fratura (compressão, translação/rotação ou distração), a integridade do complexo ligamentar posterior, e o status neurológico do paciente. A soma final orienta a decisão entre tratamento conservador e cirúrgico — de forma geral, pontuações mais baixas favorecem o tratamento não cirúrgico, e pontuações a partir de determinado limiar (classicamente 4 pontos ou mais) favorecem a cirurgia, com a faixa intermediária exigindo julgamento clínico caso a caso.",
+    "correta": "B. A situação descrita corresponde a uma pontuação de 2 pontos no TLICS.",
+    "incorretas": {
+      "A": "1 ponto corresponde a uma lesão com morfologia e demais componentes de menor gravidade do que a pontuação correta desta questão.",
+      "C": "3 pontos representaria uma combinação de componentes mais grave do que a descrita.",
+      "D": "4 pontos já se aproxima do limiar classicamente associado à indicação cirúrgica, mais grave do que a situação descrita."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0191": {
+    "conceito": "A osteonecrose da tróclea é uma sequela rara, mas bem descrita, de fraturas do úmero distal que comprometem a vascularização dessa região — vascularização que já é naturalmente mais precária na tróclea do que no restante do úmero distal. As fraturas mais associadas a esse risco são justamente aquelas que desestabilizam ou desvascularizam amplamente a região central do úmero distal: a fratura **supracondiliana** (que pode comprometer os vasos que suprem a tróclea a partir da metáfise) e o **descolamento fisário do úmero distal** (que rompe a relação entre a epífise em crescimento e seu suprimento vascular). As deformidades resultantes da osteonecrose trocleana são descritas em tipos conforme o padrão de colapso — o tipo B corresponde a uma dessas sequelas típicas dessas duas lesões.",
+    "correta": "D. A deformidade tipo B da osteonecrose da tróclea é sequela das fraturas supracondiliana ou do descolamento fisário do úmero distal.",
+    "incorretas": {
+      "A": "As fraturas dos côndilos lateral ou medial isoladamente não são a associação classicamente descrita para essa deformidade específica.",
+      "B": "A combinação de côndilo lateral com fratura supracondiliana não corresponde à associação descrita para o tipo B.",
+      "C": "A fratura supracondiliana está corretamente associada, mas a combinação com côndilo medial (em vez do descolamento fisário) não é a associação clássica para esse tipo."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0208": {
+    "conceito": "O quinto metatarso proximal é dividido em zonas para orientar o diagnóstico e o tratamento das fraturas:\n- **Zona I**: a base propriamente dita, onde ocorre a fratura por avulsão (tração do tendão fibular curto e da fáscia plantar lateral) — geralmente benigna e de bom prognóstico.\n- **Zona II**: a junção metáfise-diáfise, onde ocorre a verdadeira **fratura de Jones** — zona de transição vascular relativamente pouco vascularizada, com maior risco de retardo de consolidação e pseudoartrose.\n- **Zona III**: a diáfise proximal, onde ocorrem as fraturas de estresse por sobrecarga repetitiva, também numa região de vascularização limitada.",
+    "correta": "B. A fratura de Jones ocorre na zona II, e a fratura por estresse ocorre na zona III.",
+    "incorretas": {
+      "A": "A zona I corresponde à fratura por avulsão da base, não à fratura de Jones.",
+      "C": "A zona I é a fratura por avulsão, não a fratura de Jones — que ocorre na zona II.",
+      "D": "A fratura de Jones ocorre na zona II, não na zona IV (que nem é descrita nesta classificação)."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0285": {
+    "conceito": "Nas fraturas da cabeça do fêmur associadas à luxação do quadril, a escolha da via de acesso cirúrgico depende do tipo de Pipkin e da posição do fragmento:\n- Na fratura **Pipkin tipo I** (infrafoveal), o fragmento costuma estar anteroinferior na cabeça femoral após a redução da luxação (tipicamente posterior) — por isso o acesso **anterior** (como o de Smith-Petersen) oferece melhor visualização e acesso ao fragmento para fixação, sem precisar deslocar ainda mais a cabeça.\n- Na luxação posterior, o fragmento da cabeça costuma ficar **anteromedial**, não posteromedial, refletindo o mecanismo de impacto contra a borda posterior do acetábulo no momento da luxação.\n- A redução incongruente do quadril (com interposição de fragmentos) exige redução cirúrgica, mas o termo \"urgência\" absoluta cabe melhor à própria luxação não reduzida do que necessariamente a toda redução incongruente.\n- Na luxação anterior, as fraturas por impacção (indentação) tendem a ser mais frequentes que as por cisalhamento, não o contrário.",
+    "correta": "A. O acesso anterior está indicado na abordagem da fratura Pipkin tipo I, pela posição anteroinferior do fragmento após a redução.",
+    "incorretas": {
+      "B": "A urgência cirúrgica absoluta se aplica mais estritamente à luxação do quadril não reduzida do que à redução apenas incongruente.",
+      "C": "Na luxação posterior, o fragmento da cabeça costuma ficar anteromedial, não posteromedial.",
+      "D": "Na luxação anterior, as fraturas por impacção tendem a ser mais frequentes que as por cisalhamento — o inverso do que a alternativa descreve."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0303": {
+    "conceito": "A verdadeira fratura de Jones ocorre na **zona II** do quinto metatarso proximal — a junção entre a metáfise e a diáfise, uma área de vascularização relativamente pobre que predispõe ao retardo de consolidação. O mecanismo clássico é a **adução do antepé com o pé em apoio** (carga axial combinada com adução/inversão), que concentra estresse justamente nessa transição metáfise-diáfise — diferente da fratura por avulsão da zona I, provocada por tração do fibular curto durante a inversão do tornozelo.",
+    "correta": "B. A fratura de Jones verdadeira ocorre na zona II, por mecanismo de adução do antepé.",
+    "incorretas": {
+      "A": "A zona 1 corresponde à fratura por avulsão da base, não à fratura de Jones — cujo mecanismo também não é a inversão isolada do pé.",
+      "C": "A zona 1 não é a localização correta para a fratura de Jones.",
+      "D": "A zona 2 está correta, mas o mecanismo classicamente descrito é a adução do antepé, e não a abdução."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0311": {
+    "conceito": "A fratura-luxação de Galeazzi combina uma fratura da diáfise do rádio (geralmente no terço distal) com a luxação da articulação radioulnar distal. O mecanismo clássico de trauma envolve o antebraço em **supinação** no momento do impacto, com o **punho em extensão** e carga axial — a combinação de forças que fratura o rádio e desestabiliza a radioulnar distal, rompendo o ligamento triangular ou fraturando a estiloide ulnar. É uma lesão frequentemente chamada de \"fratura essencial do antebraço\", pela alta taxa de instabilidade quando tratada de forma inadequada.",
+    "correta": "D. O mecanismo de trauma da fratura-luxação de Galeazzi envolve o antebraço supinado e o punho estendido.",
+    "incorretas": {
+      "A": "A pronação do antebraço não corresponde ao mecanismo classicamente descrito para a lesão de Galeazzi.",
+      "B": "O punho fletido (em vez de estendido) não corresponde ao mecanismo classicamente descrito.",
+      "C": "A pronação do antebraço com o punho estendido também não corresponde ao mecanismo clássico — é a combinação supinação + extensão que caracteriza a lesão."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0327": {
+    "conceito": "Na classificação de Pipkin para as fraturas da cabeça do fêmur, o risco de necrose avascular acompanha os subtipos que envolvem maior desvascularização da cabeça — o que inclui tanto o comprometimento vascular já causado pela própria luxação do quadril (presente em todos os tipos) quanto a fratura adicional do colo femoral, que rompe outra fonte de irrigação. Os tipos **I e III** concentram esse risco: o tipo I pela combinação de fratura infrafoveal com a desvascularização já imposta pela luxação, e o tipo III de forma mais acentuada, justamente pela fratura associada do colo femoral, que compromete ainda mais o suprimento sanguíneo remanescente.",
+    "correta": "B. A necrose avascular é mais frequente nos tipos I e III de Pipkin.",
+    "incorretas": {
+      "A": "O tipo II, isoladamente, não concentra o mesmo risco elevado de necrose avascular descrito para os tipos I e III.",
+      "C": "O tipo II não é o subtipo classicamente mais associado a esse risco elevado.",
+      "D": "O tipo IV concentra maior risco de artrose pós-traumática pela fratura acetabular associada, mas a associação mais forte com necrose avascular recai sobre os tipos I e III."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0370": {
+    "conceito": "Revisando a classificação de Pipkin: o tipo I é a fratura **infrafoveal** (abaixo da fóvea/inserção do ligamento redondo), o tipo II é a **suprafoveal** (acima da fóvea, fragmento maior), o tipo III associa fratura do **colo do fêmur**, e o tipo IV associa fratura do **acetábulo**. Em termos de frequência, o tipo I costuma ser descrito como o mais comum entre os quatro, enquanto o tipo IV, por exigir a combinação de luxação, fratura da cabeça e fratura do acetábulo, é o mais incomum.",
+    "correta": "D. O tipo III apresenta associação com fratura do colo do fêmur e é considerado o subtipo mais incomum entre os quatro.",
+    "incorretas": {
+      "A": "O tipo II é a fratura suprafoveal (acima da fóvea), não abaixo — e não é descrito como o mais comum.",
+      "B": "O tipo I é a fratura infrafoveal e costuma ser descrito como o tipo mais comum, não o mais incomum.",
+      "C": "O tipo IV se associa à fratura do acetábulo, não o tipo em si sendo o menos comum de forma isolada — a alternativa D descreve com mais precisão a associação clássica de incomum ao tipo III."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0378": {
+    "conceito": "Entre os três tipos de Sangeorzan para a fratura do corpo do navicular — tipo I (traço horizontal transverso, sem desvio do antepé), tipo II (traço oblíquo, com desvio medial do antepé) e tipo III (cominuído, com desvio lateral e frequente envolvimento do cuboide) —, o **tipo II** é descrito como o padrão mais frequente na prática clínica, refletindo o mecanismo de trauma mais comum (força axial combinada com abdução do antepé).",
+    "correta": "B. O tipo II é o padrão mais comum na classificação de Sangeorzan para as fraturas do corpo do navicular.",
+    "incorretas": {
+      "A": "O tipo I, embora seja o padrão mais simples e de melhor prognóstico, não é descrito como o mais frequente.",
+      "C": "O tipo III é o padrão mais grave e cominuído, mas não o mais frequente.",
+      "D": "A classificação de Sangeorzan para o corpo do navicular não descreve um tipo IV."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0388": {
+    "conceito": "A classificação IDEAL para a fratura do rádio distal estratifica os padrões radiográficos por estabilidade, orientando a decisão entre tratamento cirúrgico e conservador. No tipo 2 dessa classificação, a fratura é considerada **potencialmente instável** — ou seja, o risco de perda de redução é real, mas não tão elevado quanto nos padrões mais graves. Diante dessa instabilidade potencial, a conduta que melhor protege o resultado funcional a médio e longo prazo é o **tratamento cirúrgico**, evitando o risco de colapso secundário que o tratamento conservador isolado correria nesse padrão de fratura.",
+    "correta": "A. O tipo 2 da classificação IDEAL é potencialmente instável, e a melhor indicação é o tratamento cirúrgico.",
+    "incorretas": {
+      "B": "Diante da instabilidade potencial do tipo 2, o tratamento não cirúrgico expõe o paciente a maior risco de perda de redução — a conduta preferida é a cirúrgica.",
+      "C": "O tipo 3 (não o tipo 2) é o descrito nesta alternativa, e mesmo assim a indicação de tratamento não cirúrgico não corresponde à conduta preferida para um padrão potencialmente instável.",
+      "D": "O tipo 3 não é o subtipo referido como potencialmente instável nesta questão — essa característica é atribuída ao tipo 2."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0425": {
+    "conceito": "Diferenciar a fratura por insuficiência (osteoporótica) da fratura patológica por metástase na coluna é uma decisão clínica importante, e a ressonância magnética oferece pistas específicas:\n- O **sinal do líquido** (fluid sign) — uma área linear ou focal de sinal hiperintenso em T2, permeando o foco de fratura — é um achado que favorece fortemente a natureza **benigna** (osteoporótica) da fratura, refletindo edema e microfraturas trabeculares sem substituição neoplásica da medula.\n- Já a substituição completa do sinal normal da medula óssea nos **pedículos** ou nos **elementos do arco posterior** (sinal mais baixo que o do músculo em T1, indicando infiltração tumoral) favorece a fratura **metastática**, assim como a morfologia convexa da margem posterior do corpo vertebral (indicando abaulamento por massa tumoral, e não apenas colapso osteoporótico).",
+    "correta": "B. O sinal do líquido na ressonância — material hiperintenso permeando o foco de fratura — favorece o diagnóstico de fratura por insuficiência benigna.",
+    "incorretas": {
+      "A": "A morfologia convexa da margem posterior do corpo vertebral é um achado que favorece a natureza metastática, não a benigna.",
+      "C": "O sinal mais baixo que o do músculo em T1 nos pedículos indica infiltração tumoral, favorecendo a fratura metastática, não a benigna.",
+      "D": "O mesmo raciocínio se aplica aos elementos do arco posterior: esse padrão de sinal favorece a origem metastática."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0426": {
+    "conceito": "A luxação intra-articular da patela é uma lesão rara e distinta da luxação femoropatelar comum (lateral). Nessa variante intra-articular, a patela sofre uma rotação de 90° sobre seu próprio eixo (longitudinal ou transverso) e se encrava entre os côndilos femorais, dentro da própria articulação — daí o nome. Entre os padrões descritos, o tipo **horizontal** (rotação em torno do eixo transverso, com a patela ficando \"de cabeça para baixo\" ou \"de ponta\" entre os côndilos) é o mais comumente relatado na literatura de casos dessa lesão rara.",
+    "correta": "D. O tipo horizontal é o mais comum na luxação intra-articular da patela.",
+    "incorretas": {
+      "A": "A luxação lateral é a forma comum e extra-articular, não a variante intra-articular descrita na questão.",
+      "B": "A luxação medial também é extra-articular e mais rara que a lateral, mas não corresponde à variante intra-articular em questão.",
+      "C": "O tipo vertical existe como uma das variantes descritas da luxação intra-articular, mas é menos frequente que o tipo horizontal."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
