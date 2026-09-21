@@ -11247,5 +11247,85 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "trauma-0450": {
+    "conceito": "A queda sobre o cotovelo **fletido a 90°**, com contração súbita do tríceps no momento do impacto, é o mecanismo clássico da fratura do olécrano por avulsão/tração, tipicamente gerando um traço transverso ou cominutivo no ápice da incisura troclear. Na classificação de **Mayo**, o tipo **II** corresponde a fraturas deslocadas, porém estáveis (sem comprometimento associado da estabilidade ulnoumeral); dentro desse grupo, o subtipo **IIB** corresponde ao padrão **cominutivo**, compatível com a fragmentação visível na radiografia, diferentemente do subtipo IIA, que é um traço simples, não cominutivo.",
+    "correta": "B. O grau de flexão do cotovelo e o tipo de fratura são, respectivamente, 90º e IIB.",
+    "incorretas": {
+      "A": "O grau de flexão (90°) está correto, mas o padrão de fratura mostrado é cominutivo (tipo IIB), não um traço simples e não cominutivo como o tipo IIA descreve.",
+      "C": "O mecanismo clássico associado a esse padrão de fratura deslocada por tração do tríceps ocorre com o cotovelo fletido a 90° (não a 120°), e o padrão cominutivo corresponde ao tipo IIB, não ao IIA.",
+      "D": "O tipo de fratura (IIB, cominutiva) está correto, mas o grau de flexão associado a esse mecanismo de avulsão pelo tríceps é classicamente descrito em 90°, não em 120°."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0461": {
+    "conceito": "Fraturas-luxações instáveis da articulação interfalangeana proximal, especialmente aquelas com fragmento articular significativo ou que permanecem subluxadas mesmo após tentativa de redução incruenta, não são adequadamente tratadas apenas com imobilização, pelo risco de perda de redução, incongruência articular residual e artrose precoce. Nesses casos, a **redução e fixação cirúrgica** (por diferentes técnicas, como fixação com parafusos, placas, fios ou fixadores externos dinâmicos, conforme o padrão da lesão) é necessária para restaurar a congruência articular e permitir mobilização precoce protegida.",
+    "correta": "D. O tratamento mais adequado é a redução e fixação cirúrgica da fratura.",
+    "incorretas": {
+      "A": "A imobilização em **hiperextensão** é contraindicada em fraturas-luxações instáveis da interfalangeana proximal, podendo favorecer a reluxação ou o agravamento do desalinhamento articular.",
+      "B": "A imobilização prolongada em flexão fixa de 90°, sem correção cirúrgica da instabilidade articular, expõe o dedo a rigidez e não corrige a incongruência de uma fratura-luxação instável.",
+      "C": "A **artrodese da interfalangeana distal** não tem relação com uma lesão da articulação interfalangeana **proximal**; além de ser um procedimento de salvamento (não indicado como tratamento inicial de uma fratura aguda), trata-se da articulação errada."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0464": {
+    "conceito": "A pseudoartrose não tratada do colo do escafoide leva, ao longo do tempo, a um padrão previsível de degeneração articular conhecido como **SNAC** (\"scaphoid nonunion advanced collapse\"), que progride do processo estiloide radial para toda a articulação radioescafoide e, por fim, para a articulação mediocarpal. Quando o comprometimento articular já é extenso e generalizado (padrão avançado, panartrósico), a opção cirúrgica de salvamento mais adequada é a **artrodese total do punho**, que elimina a dor ao custo do movimento articular, sendo preferida sobre procedimentos que preservam parcialmente a mobilidade (como a carpectomia proximal) quando o comprometimento já é extenso demais para esses procedimentos mais conservadores.",
+    "correta": "A. A lesão é SNAC, e o tratamento adequado é a artrodese total de punho.",
+    "incorretas": {
+      "B": "O padrão **SLAC** (\"scapholunate advanced collapse\") decorre de uma lesão crônica do ligamento escafolunato, não de uma pseudoartrose do colo do escafoide como descrito no caso; o diagnóstico correto aqui é SNAC.",
+      "C": "Embora o diagnóstico de SNAC esteja correto, a carpectomia proximal é reservada para estágios menos avançados, antes do comprometimento extenso da articulação mediocarpal; em um quadro mais avançado e panartrósico, a artrodese total do punho é a opção mais adequada.",
+      "D": "O diagnóstico correto para esse caso é SNAC (decorrente de pseudoartrose do escafoide), não SLAC (decorrente de lesão ligamentar escafolunato)."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0468": {
+    "conceito": "A dormência progressiva em dedos radiais associada à piora da dor após uma fratura do antebraço/punho é um sinal de alerta para **compressão aguda do nervo mediano no túnel do carpo**, seja pelo próprio desvio dos fragmentos, seja pelo edema/hematoma progressivo dentro do compartimento. Diante de sintomas neurológicos progressivos, a conduta é a **liberação cirúrgica imediata do túnel do carpo**, para evitar lesão neurológica permanente por compressão prolongada, mesmo que a fixação definitiva da fratura óssea seja realizada na sequência.",
+    "correta": "D. A conduta mais indicada é a liberação cirúrgica imediata do túnel do carpo.",
+    "incorretas": {
+      "A": "Embora a fratura provavelmente também necessite de fixação, a prioridade diante da piora neurológica progressiva é a descompressão direta do nervo mediano, não apenas a fixação óssea isoladamente.",
+      "B": "A observação com analgesia é inadequada diante de sintomas neurológicos **progressivos**, um sinal de alarme que exige descompressão cirúrgica, não conduta expectante.",
+      "C": "A fasciotomia dos compartimentos da **mão** não é a conduta indicada para uma compressão nervosa localizada no **punho** (túnel do carpo); os sintomas descritos (dormência radial) são compatíveis com compressão do mediano no túnel do carpo, não com síndrome compartimental da mão."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0473": {
+    "conceito": "Na fratura-luxação complexa da articulação interfalangeana proximal, o mecanismo combinado de **compressão axial associada a um desvio lateral** (em vez de uma força puramente angular ou puramente axial) produz um padrão de fratura cominutiva e impactada da base da falange média, com frequente comprometimento de mais de uma coluna da superfície articular, diferente dos padrões mais simples de luxação dorsal (por hiperextensão) ou de lesão ligamentar colateral isolada (por desvio lateral puro).",
+    "correta": "E. O mecanismo de lesão é compressão axial e desvio lateral.",
+    "incorretas": {
+      "A": "A **hiperflexão** isolada tende a produzir lesões por avulsão da inserção distal do aparelho extensor central, um padrão de lesão diferente da fratura cominutiva articular mostrada.",
+      "B": "O **desvio lateral isolado**, sem componente de carga axial, tende a produzir lesão dos ligamentos colaterais, sem necessariamente o padrão de fratura articular cominutiva mostrado.",
+      "C": "A **hiperextensão** é o mecanismo clássico da luxação dorsal simples, com avulsão da placa volar, um padrão distinto da fratura cominutiva por compressão axial combinada com desvio lateral mostrada.",
+      "D": "A compressão axial com leve flexão (sem componente de desvio lateral) tende a produzir um padrão de impactação mais centralizado, sem o componente assimétrico de desvio lateral que caracteriza a lesão mostrada."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0474": {
+    "conceito": "A técnica de **Kapandji** para fixação da fratura da extremidade distal do rádio utiliza fios de Kirschner introduzidos diretamente pelo foco de fratura (\"pinagem intrafocal\"), que funcionam como alavancas para reduzir o fragmento distal, e são então avançados até ancorar na cortical oposta, atuando como um escoramento (\"buttress\") interno que mantém a redução sem a necessidade de uma placa, uma técnica particularmente útil em fraturas extra-articulares ou minimamente cominutivas.",
+    "correta": "E. A técnica cirúrgica demonstrada foi descrita por Kapandji.",
+    "incorretas": {
+      "A": "\"Stein\" não é o epônimo associado à técnica de pinagem intrafocal do rádio distal mostrada na imagem.",
+      "B": "\"Lister\" corresponde a uma referência anatômica (o tubérculo de Lister, no rádio distal), não a uma técnica cirúrgica de fixação.",
+      "C": "\"De Palma\" não corresponde à técnica de pinagem intrafocal mostrada na imagem.",
+      "D": "A técnica de **Rayhack** está associada a um sistema específico de placa para osteotomia de encurtamento ulnar, não à pinagem intrafocal do rádio distal mostrada."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0475": {
+    "conceito": "A técnica de enxerto ósseo vascularizado descrita por **Mathoulin** utiliza um pedículo baseado no **ramo volar (palmar) da artéria radial**, ao nível do punho, para tratar a necrose do polo proximal associada à pseudoartrose do escafoide, fornecendo suprimento sanguíneo direto ao fragmento avascular através de um retalho ósseo pediculado com origem volar, uma alternativa à técnica de Zaidemberg, que utiliza o ramo dorsal (1,2-ICSRA) da artéria radial.",
+    "correta": "C. A técnica foi descrita por Mathoulin.",
+    "incorretas": {
+      "A": "**Berger** está associado a uma técnica específica de artrotomia dorsal do punho com preservação ligamentar, não a essa técnica de enxerto vascularizado com pedículo volar.",
+      "B": "**Fernandez** está mais associado a classificações e técnicas de osteotomia para fraturas do rádio distal, não a essa técnica específica de enxerto vascularizado do escafoide.",
+      "D": "**Soteranos** está associado a outras técnicas de enxerto ósseo vascularizado, mas não à especificamente baseada no ramo volar da artéria radial descrita por Mathoulin.",
+      "E": "A técnica de **Zaidemberg**, a mais conhecida entre os enxertos vascularizados do escafoide, utiliza o ramo **dorsal** (1,2-ICSRA) da artéria radial, não o ramo volar mostrado na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
