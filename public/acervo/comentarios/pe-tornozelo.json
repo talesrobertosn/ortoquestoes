@@ -3004,5 +3004,93 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "pe-tornozelo-0023": {
+    "conceito": "Na visão posterior profunda da perna, o compartimento posterior profundo é composto por três músculos, dispostos lado a lado: o **tibial posterior** (mais central/profundo), o **flexor longo dos dedos** (mais medial) e o **flexor longo do hálux** (mais lateral, próximo à fíbula). A seta na imagem aponta para o músculo mais lateral desse grupo, junto à borda fibular — posição característica do **flexor longo do hálux**, que se origina na face posterior da fíbula e nos dois terços distais da membrana interóssea, descendo lateralmente ao tendão de Aquiles antes de cruzar por baixo do sustentáculo do tálus a caminho do hálux.",
+    "correta": "D. O músculo assinalado pela seta, na posição mais lateral do compartimento posterior profundo, é o flexor longo do hálux.",
+    "incorretas": {
+      "A": "O tibial posterior ocupa uma posição mais central/profunda no compartimento, não a posição lateral indicada pela seta.",
+      "B": "O nervo fibular profundo não é um músculo, e não corresponde à estrutura muscular indicada na imagem.",
+      "C": "O nervo fibular superficial não é um músculo, e não corresponde à estrutura muscular indicada na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pe-tornozelo-0055": {
+    "conceito": "A radiografia dorsoplantar (incidência ântero-posterior) do pé com carga é a incidência padrão para avaliar a maioria dos ângulos usados na classificação do hálux valgo, já que ela expõe claramente o alinhamento dos metatarsais e das falanges no plano transversal: o **ângulo articular metatarsal distal (DMAA)**, o **ângulo metatarso-falangeano** (ângulo do hálux valgo) e o **ângulo intermetatarsal** são todos mensurados nessa incidência. Já o **ângulo de Meary** (ângulo talo-primeiro metatarsal) avalia o alinhamento do arco longitudinal do pé no plano sagital, sendo mensurado exclusivamente na incidência em **perfil** com carga — não podendo, portanto, ser avaliado na incidência dorsoplantar mostrada.",
+    "correta": "C. O ângulo de Meary não pode ser mensurado na incidência dorsoplantar (ântero-posterior) mostrada, pois é avaliado no perfil.",
+    "incorretas": {
+      "A": "O ângulo articular metatarsal distal é, de fato, mensurável na incidência dorsoplantar mostrada.",
+      "B": "O ângulo metatarso-falangeano (ângulo do hálux valgo) é, de fato, mensurável na incidência dorsoplantar mostrada.",
+      "D": "O ângulo intermetatarsal é, de fato, mensurável na incidência dorsoplantar mostrada."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pe-tornozelo-0056": {
+    "conceito": "A gravidade do hálux valgo é classificada radiograficamente combinando dois ângulos principais: o **ângulo de valgismo do hálux (HVA)**, entre o primeiro metatarso e a falange proximal do hálux, e o **ângulo intermetatarsal I-II (IMA)**, entre o primeiro e o segundo metatarsos. Os valores de referência mais usados são:\n- **Normal**: HVA < 15° e IMA < 9°.\n- **Leve**: HVA 15-20° e IMA 9-11°.\n- **Moderado**: HVA 20-40° e IMA 11-16°.\n- **Grave**: HVA > 40° e IMA > 16°.\n\nNo caso apresentado, com HVA de 42° (acima de 40°) e IMA de 18° (acima de 16°), ambos os parâmetros ultrapassam os limites da faixa moderada, caracterizando um hálux valgo **grave**.",
+    "correta": "D. Com ângulo de valgismo do hálux de 42° e ângulo intermetatarsal de 18°, o hálux valgo é classificado como grave.",
+    "incorretas": {
+      "A": "Os valores apresentados estão muito acima da faixa considerada normal (HVA < 15° e IMA < 9°).",
+      "B": "Os valores apresentados estão muito acima da faixa considerada leve (HVA 15-20° e IMA 9-11°).",
+      "C": "Os valores apresentados ultrapassam a faixa moderada (HVA 20-40° e IMA 11-16°), caracterizando a forma grave."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pe-tornozelo-0057": {
+    "conceito": "Na fixação de uma artrodese tarsometatársica, é comum combinar dois implantes com funções biomecânicas complementares, seguindo os princípios AO de fixação: um **parafuso interfragmentário**, posicionado obliquamente cruzando a articulação, promove **compressão** direta entre as superfícies ósseas a serem fundidas — fechando o espaço articular e favorecendo o contato ósseo necessário para a consolidação. Já a **placa**, posicionada ao longo do eixo do segmento, atua predominantemente como **neutralização**: ela protege o parafuso de compressão contra as forças de flexão, torção e cisalhamento que atuariam sobre a construção durante a carga, sem ela mesma gerar compressão adicional relevante.",
+    "correta": "B. Na artrodese tarsometatársica apresentada, o parafuso promove compressão e a placa atua em neutralização.",
+    "incorretas": {
+      "A": "A placa, nessa configuração combinada com um parafuso interfragmentário oblíquo, atua predominantemente em neutralização, não em compressão.",
+      "C": "É o parafuso oblíquo, cruzando a articulação, que promove compressão — não a placa, que atua em neutralização.",
+      "D": "O parafuso interfragmentário oblíquo promove compressão ativa entre as superfícies articulares, não apenas neutralização."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pe-tornozelo-0058": {
+    "conceito": "Na avaliação pós-operatória de uma artrodese por tomografia computadorizada, o critério radiográfico central para definir a **união** (consolidação/fusão) é a presença de **trabeculado ósseo contínuo atravessando a linha da antiga articulação**, sem linha radiotransparente residual entre os segmentos — indicando que o processo de remodelação óssea já uniu definitivamente os ossos fundidos. Nas imagens apresentadas (cortes sagitais dos pés direito e esquerdo), observa-se esse padrão de continuidade trabecular em ambos os lados, sem evidência de linha de rarefação residual ou reabsorção óssea ao redor dos implantes, compatível com **união bilateral**.",
+    "correta": "C. Nas imagens apresentadas, observa-se união tanto à direita quanto à esquerda.",
+    "incorretas": {
+      "A": "Não há evidência de falha de consolidação (não-união) do lado direito nas imagens apresentadas — o padrão trabecular observado é de união.",
+      "B": "Não há evidência de falha de consolidação (não-união) do lado esquerdo nas imagens apresentadas — o padrão trabecular observado também é de união.",
+      "D": "Não há evidência de não-união em nenhum dos dois lados nas imagens apresentadas."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pe-tornozelo-0062": {
+    "conceito": "No compartimento posterior profundo da perna, três músculos correm lado a lado: o **tibial posterior** (mais profundo/central), o **flexor longo dos dedos** (posição intermediária-medial) e o **flexor longo do hálux** (mais lateral, junto à fíbula). A seta na imagem aponta para a posição intermediária-medial desse grupo muscular, correspondente ao **flexor longo dos dedos** — músculo que desce medialmente ao tendão do flexor longo do hálux, passando posteriormente ao maléolo medial (no túnel do tarso) antes de se dividir em tendões destinados aos quatro dedos laterais do pé.",
+    "correta": "D. O músculo indicado pela seta, na posição intermediária do compartimento posterior profundo, é o flexor longo dos dedos.",
+    "incorretas": {
+      "A": "O fibular longo está localizado no compartimento lateral da perna, não no compartimento posterior profundo mostrado na imagem.",
+      "B": "O tibial posterior ocupa uma posição mais profunda/central no compartimento, distinta da posição indicada pela seta.",
+      "C": "O flexor longo do hálux ocupa a posição mais lateral do compartimento posterior profundo, junto à fíbula, distinta da posição indicada pela seta."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pe-tornozelo-0073": {
+    "conceito": "No seio do tarso (sinus tarsi), espaço cônico entre o tálus e o calcâneo, encontra-se um conjunto de ligamentos que estabilizam a articulação subtalar. A seta na imagem aponta para uma estrutura localizada na porção profunda e central desse espaço, entre o tálus e o calcâneo — posição característica do **ligamento talocalcâneo interósseo**, o mais forte e mais central dos estabilizadores da articulação subtalar, diferente do ligamento bifurcado (mais anterior, unindo o calcâneo ao navicular e ao cuboide), do ligamento em mola/spring (mais plantar e medial, sustentando a cabeça do tálus) e do ligamento talocalcâneo lateral (mais superficial e lateral).",
+    "correta": "D. A estrutura apontada pela seta, na porção profunda e central do seio do tarso, é o ligamento talocalcâneo interósseo.",
+    "incorretas": {
+      "A": "O ligamento bifurcado está localizado mais anteriormente, unindo o calcâneo ao navicular e ao cuboide, não na posição profunda e central indicada.",
+      "B": "O ligamento em mola (spring) está localizado mais medial e plantarmente, sustentando a cabeça do tálus, não na posição indicada.",
+      "C": "O ligamento talocalcâneo lateral é mais superficial e lateral, não profundo e central como a estrutura indicada pela seta."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pe-tornozelo-0076": {
+    "conceito": "As radiografias em perfil com estresse em flexão dorsal e plantar máximas são o exame dinâmico clássico para diferenciar o **pé talo vertical congênito** de outras deformidades semelhantes (como o pé plano oblíquo/talo oblíquo). No talo vertical verdadeiro, a luxação dorsal fixa do navicular sobre o colo do tálus é **rígida**: mesmo com a manobra de flexão plantar máxima forçada, o alinhamento entre o tálus (que permanece verticalizado) e o antepé **não se corrige** — o padrão de deformidade persiste em ambas as posições de estresse, confirmando o caráter fixo/irredutível da luxação talonavicular, ao contrário do talo oblíquo, cujo alinhamento melhora parcialmente com a flexão plantar forçada.",
+    "correta": "A. As radiografias em estresse de flexão dorsal e plantar máximas, mostrando a deformidade persistindo em ambas as posições, caracterizam o pé talo vertical.",
+    "incorretas": {
+      "B": "O pé em serpentina é uma deformidade distinta, caracterizada por adução do mediopé com abdução do antepé, não pelo padrão de luxação talonavicular fixa mostrado.",
+      "C": "O pé calcaneovalgo é uma deformidade postural flexível do recém-nascido, que se corrige com a manipulação — diferente do padrão rígido mostrado nas radiografias em estresse.",
+      "D": "O pé torto congênito cursa com equino, varo e adução, um padrão radiográfico distinto do talonavicular verticalizado mostrado nas imagens."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
