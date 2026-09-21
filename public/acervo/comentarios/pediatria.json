@@ -5220,5 +5220,104 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "pediatria-0284": {
+    "conceito": "Um fenômeno bem descrito em amputações diafisárias realizadas em crianças em crescimento é o **sobrecrescimento ósseo apositivo** do coto residual — diferente do crescimento longitudinal normal por uma fise, esse sobrecrescimento ocorre por proliferação óssea ativa na extremidade seccionada da diáfise, podendo formar espículas ósseas dolorosas que perfuram a pele e exigem revisão cirúrgica. Esse fenômeno tem intensidade variável conforme o osso amputado, sendo classicamente mais frequente e mais intenso em ossos como a fíbula e o **úmero** — entre as opções listadas, o úmero é o osso com maior tendência a esse sobrecrescimento apositivo em crianças menores de 12 anos, exigindo acompanhamento mais próximo e, eventualmente, revisões cirúrgicas periódicas do coto.",
+    "correta": "D. O sobrecrescimento ósseo após amputação diafisária em crianças menores de 12 anos é mais comum no úmero, entre as opções apresentadas.",
+    "incorretas": {
+      "A": "A tíbia apresenta sobrecrescimento apositivo com menor frequência do que o úmero entre as opções apresentadas.",
+      "B": "O rádio não é classicamente descrito como um dos ossos mais propensos a esse fenômeno de sobrecrescimento apositivo.",
+      "C": "O fêmur apresenta esse fenômeno com menor intensidade relativa do que o úmero, entre as opções apresentadas."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0299": {
+    "conceito": "O **GMFCS (Gross Motor Function Classification System)** classifica a função motora grossa na paralisia cerebral por faixa etária, com descritores específicos para a idade de 6 a 12 anos. O **nível II** descreve crianças que caminham na maioria dos ambientes, incluindo ao ar livre e na comunidade, mas apresentam **limitações para caminhar em superfícies irregulares, aclives, em meio a multidões ou espaços confinados** — e, de forma relevante para a vinheta, têm capacidade funcional reduzida em comparação aos colegas para atividades físicas e recreativas mais exigentes, como correr e brincar ao ar livre, embora consigam deambular de forma independente (às vezes com uso de órteses) em terrenos planos.\n\nEsse perfil — boa marcha em superfície plana, mas dificuldade perceptível em atividades e ambientes mais desafiadores em comparação aos pares — é justamente a marca distintiva do nível II, diferenciando-o do nível I (sem limitações perceptíveis) e do nível III (que já exige dispositivo auxiliar de marcha, como andador ou muletas, para deambulação comunitária).",
+    "correta": "B. O perfil descrito — boa marcha em superfícies planas com dificuldade em atividades ao ar livre com os colegas — corresponde ao nível II do GMFCS.",
+    "incorretas": {
+      "A": "O nível I corresponde a crianças sem limitações perceptíveis na marcha e nas atividades físicas em comparação aos colegas.",
+      "C": "O nível III corresponde a crianças que já necessitam de dispositivos auxiliares de marcha (andador, muletas) para deambulação comunitária, diferente do perfil descrito.",
+      "D": "O nível IV corresponde a crianças com mobilidade própria já bastante limitada, geralmente dependentes de cadeira de rodas para grande parte dos deslocamentos."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0300": {
+    "conceito": "A epifisiólise proximal do fêmur é uma condição frequentemente bilateral, embora nem sempre ambos os lados se manifestem simultaneamente. A literatura descreve acometimento bilateral em uma faixa ampla de aproximadamente **25 a 60%** dos casos (variando conforme o tempo de seguimento dos estudos — séries com acompanhamento mais longo captam mais casos bilaterais). Quando o segundo quadril é acometido, isso costuma ocorrer relativamente cedo: a grande maioria dos casos bilaterais se manifesta **dentro dos primeiros 18 meses** após o diagnóstico do primeiro lado, o que reforça a importância do acompanhamento clínico e radiográfico regular do quadril contralateral (inicialmente assintomático) durante esse período de maior risco.",
+    "correta": "A. A bilateralidade na epifisiólise ocorre em 25 a 60% dos casos, sendo o segundo lado geralmente acometido nos primeiros 18 meses.",
+    "incorretas": {
+      "B": "É dentro dos primeiros 18 meses, e não após esse período, que a maioria dos casos bilaterais se manifesta.",
+      "C": "A faixa de 5 a 10% subestima consideravelmente a frequência de bilateralidade descrita na literatura para a epifisiólise.",
+      "D": "Tanto a faixa percentual (5-10%) quanto o momento (após 18 meses) subestimam os valores classicamente descritos para a bilateralidade dessa condição."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0301": {
+    "conceito": "A classificação de **Salter e Thompson** para a doença de Legg-Calvé-Perthes é uma simplificação da classificação de Catterall, baseada em um único critério radiográfico principal, avaliado na fase inicial da doença (fase do sinal do crescimento/sinal da meia-lua): a **extensão da linha de fratura subcondral** (sinal do crescente) e a consequente **integridade da coluna (pilar) lateral** da epífise femoral:\n- **Grupo A**: a linha de fratura subcondral envolve **menos da metade** da epífise, com a coluna lateral **preservada** — melhor prognóstico.\n- **Grupo B**: a linha de fratura subcondral envolve **mais da metade** da epífise, com a coluna lateral **comprometida/colapsada** — pior prognóstico.\n\nEssa classificação tem a vantagem prática de poder ser aplicada precocemente (na fase de fratura subcondral, antes mesmo da fragmentação completa), permitindo estratificar o risco e orientar a decisão terapêutica já nas fases iniciais da doença.",
+    "correta": "C. O principal critério que diferencia os grupos A e B de Salter e Thompson é a extensão da linha de fratura subcondral e a integridade da coluna lateral.",
+    "incorretas": {
+      "A": "A presença ou ausência de colapso da epífise é um conceito relacionado, mas o critério específico e objetivo usado para diferenciar os grupos A e B é a extensão da linha de fratura subcondral e a integridade da coluna lateral.",
+      "B": "A simples visibilidade da linha de fratura subcondral (sinal do crescente) não diferencia os grupos — o que diferencia é a extensão dessa linha e o estado da coluna lateral.",
+      "D": "A fragmentação da epífise é uma fase posterior da doença, não o critério usado na classificação de Salter e Thompson, que se baseia na fase de fratura subcondral."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0303": {
+    "conceito": "Na avaliação de crianças vítimas de lesões não acidentais (maus-tratos), embora fraturas, hemorragias de conjuntiva e queimaduras sejam achados relevantes e devam sempre ser investigados quando presentes, o achado **mais comum** encontrado no exame físico dessas crianças são as **lesões de partes moles superficiais** — especificamente **equimoses e abrasões** —, muitas vezes em localizações atípicas para trauma acidental (tronco, orelhas, pescoço, região glútea) ou em diferentes estágios de evolução (sugerindo eventos repetidos em momentos distintos), o que é, inclusive, um dos elementos mais valorizados no exame físico para levantar a suspeita inicial de maus-tratos.",
+    "correta": "D. Equimoses e abrasões são as alterações mais comumente encontradas em crianças vítimas de lesões não acidentais.",
+    "incorretas": {
+      "A": "Fraturas são achados importantes e de alta especificidade quando em locais típicos, mas são menos frequentes no exame físico geral do que equimoses e abrasões.",
+      "B": "A hemorragia de conjuntiva é um achado relevante em alguns contextos específicos (como a síndrome do bebê sacudido), mas não é o achado mais comum de forma geral.",
+      "C": "Queimaduras são um achado importante quando presentes, mas menos frequente no conjunto geral de achados do que equimoses e abrasões."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0307": {
+    "conceito": "A doença de Blount (tíbia vara patológica) tem várias características clássicas bem estabelecidas:\n- Há **subluxação lateral da tíbia** em relação ao fêmur, à medida que a deformidade progride, por conta do comprometimento assimétrico da fise medial proximal da tíbia.\n- Há formação de um **bico ósseo medial** na metáfise proximal da tíbia, achado radiográfico característico.\n- Existe associação bem documentada com **sobrepeso/obesidade** e, mais recentemente, com **deficiência de vitamina D**, ambos fatores de risco reconhecidos para a forma infantil da doença.\n- Quanto ao prognóstico por sexo e raça, a literatura aponta pior prognóstico associado ao sexo **feminino** e à raça **negra** — não ao sexo masculino, como a alternativa afirma.\n\nOu seja, a única afirmativa incorreta entre as listadas é a que atribui o pior prognóstico a \"meninos negros\", quando o padrão classicamente descrito é de pior prognóstico em **meninas negras**.",
+    "correta": "D. O pior prognóstico na doença de Blount está classicamente associado a meninas negras, não a meninos negros — por isso essa é a afirmativa incorreta.",
+    "incorretas": {
+      "A": "A subluxação lateral da tíbia é, de fato, uma característica descrita na progressão da doença de Blount — essa afirmativa está correta.",
+      "B": "A formação do bico ósseo medial na metáfise tibial é, de fato, um achado radiográfico característico da doença de Blount — essa afirmativa está correta.",
+      "C": "A associação com sobrepeso e deficiência de vitamina D é, de fato, reconhecida na literatura sobre a doença de Blount — essa afirmativa está correta."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0308": {
+    "conceito": "A marcha da criança pequena (em torno de 18 meses, pouco depois de iniciar a deambulação independente) tem características biomecânicas bem distintas da marcha madura do adulto, refletindo o desenvolvimento ainda incompleto do controle de equilíbrio e coordenação:\n- **Base alargada**, para compensar o equilíbrio ainda imaturo.\n- **Joelhos fletidos** durante toda a fase de apoio (ausência do padrão de extensão do joelho no contato inicial característico da marcha madura).\n- **Cadência alta** (passos rápidos e curtos), também como estratégia compensatória de equilíbrio.\n- Os braços ainda ficam tipicamente em posição de **\"guarda alta\"** (elevados, sem o balanço recíproco coordenado com as pernas) — a **reciprocação do balanço dos membros superiores** com os membros inferiores é uma característica que só se desenvolve mais tardiamente, por volta dos 3-4 anos, à medida que a marcha amadurece.\n\nOu seja, a reciprocação do balanço dos braços é justamente a característica que **ainda não está presente** aos 18 meses.",
+    "correta": "C. A reciprocação do balanço dos membros superiores ainda não está presente na marcha da criança aos 18 meses de idade.",
+    "incorretas": {
+      "A": "A base alargada é, de fato, uma característica presente na marcha da criança aos 18 meses.",
+      "B": "Os joelhos fletidos durante o apoio são, de fato, uma característica presente nessa fase da marcha infantil.",
+      "D": "A cadência alta é, de fato, uma característica presente na marcha da criança pequena nessa idade."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0309": {
+    "conceito": "A deficiência femoral focal proximal (PFFD) tem associações teratogênicas e anatômicas bem documentadas na literatura:\n- **Talidomida**: droga teratogênica historicamente associada a defeitos de redução de membros, incluindo a PFFD.\n- **Hemimelia fibular**: associação anatômica frequente, já que ambas as condições compartilham uma origem embriológica relacionada a distúrbios do desenvolvimento do broto do membro inferior.\n- **Agenesia dos ligamentos cruzados**: associação bem descrita, já que a PFFD frequentemente cursa com anomalias associadas do joelho, incluindo ausência ou hipoplasia dos ligamentos cruzados.\n\nJá o **tabagismo materno**, apesar de ser um fator de risco obstétrico reconhecido para diversas complicações gestacionais (baixo peso ao nascer, prematuridade), não tem uma associação teratogênica específica e bem estabelecida com a deficiência femoral focal proximal na literatura ortopédica.",
+    "correta": "D. O tabagismo materno não é uma associação classicamente estabelecida com a deficiência femoral focal proximal.",
+    "incorretas": {
+      "A": "O uso de talidomida é uma associação teratogênica classicamente reconhecida com a deficiência femoral focal proximal.",
+      "B": "A hemimelia fibular é uma associação anatômica frequente e bem documentada com a deficiência femoral focal proximal.",
+      "C": "A agenesia dos ligamentos cruzados é uma associação anatômica bem descrita, frequentemente encontrada em pacientes com deficiência femoral focal proximal."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0311": {
+    "conceito": "O **ângulo coxa-pé (thigh-foot angle)** é um dos parâmetros usados no perfil rotacional dos membros inferiores para avaliar a torção tibial, medido com a criança em decúbito ventral, joelho fletido a 90°, comparando o eixo da coxa com o eixo do pé. Esse ângulo segue uma progressão fisiológica previsível ao longo do desenvolvimento:\n- Nos primeiros anos de vida, o valor médio é discretamente **negativo** (torção tibial interna leve), refletindo o padrão intrauterino de rotação interna da tíbia — em torno de **-5 graus** aos 2 anos.\n- Com o crescimento, a tíbia progressivamente gira externamente, e o ângulo se torna **positivo** (torção tibial externa), atingindo em média cerca de **+10 graus** por volta dos 8 anos, valor próximo ao encontrado no adulto.\n\nEssa progressão de leve rotação interna para rotação externa discreta é parte do desenvolvimento rotacional normal do membro inferior, e reconhecer essa curva evita investigações desnecessárias para torções consideradas fisiológicas.",
+    "correta": "B. O ângulo coxa-pé médio é de aproximadamente -5 graus aos 2 anos e +10 graus aos 8 anos.",
+    "incorretas": {
+      "A": "Os valores e sinais apresentados (+5 e -10) não correspondem à progressão fisiológica esperada, que vai de discretamente negativo para positivo com o crescimento, não o contrário.",
+      "C": "O valor aos 8 anos não permanece negativo — a torção tibial se torna progressivamente externa (positiva) com o crescimento.",
+      "D": "O valor aos 2 anos não é positivo — a torção tibial nessa idade ainda reflete um discreto padrão interno (negativo), tornando-se positiva apenas com o crescimento."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
