@@ -4616,14 +4616,15 @@
     "conferido": false
   },
   "pediatria-0211": {
-    "conceito": "A vinheta descreve um recém-nascido com crânio alongado por fusão precoce (craniossinostose) da sutura coronal, proeminência frontal, exoftalmia e hipoplasia maxilar — um conjunto de achados de **disostose craniofacial**. A ausência de menção a sindactilia das mãos e pés (achado marcante e obrigatório na síndrome de Apert) direciona o diagnóstico para a síndrome de **Crouzon**, que compartilha a craniossinostose (geralmente bicoronal), a exoftalmia proeminente e a hipoplasia do terço médio da face, mas **sem** as alterações características de sindactilia dos membros que definem a síndrome de Apert.\n\nDiferenciar Crouzon de Apert é um ponto clássico de prova: ambas cursam com craniossinostose e face similar, mas a presença (Apert) ou ausência (Crouzon) de sindactilia das mãos e pés é o critério distintivo mais direto entre elas.",
-    "correta": "A. O quadro de craniossinostose coronal, exoftalmia e hipoplasia maxilar, sem alterações das mãos e pés, é mais compatível com a síndrome de Crouzon.",
+    "conceito": "A vinheta descreve um recém-nascido com crânio alongado por fusão precoce (craniossinostose) da sutura coronal, proeminência frontal, exoftalmia e hipoplasia maxilar — um conjunto de achados de **disostose craniofacial**. Entre as síndromes craniossinostóticas sindrômicas, a **síndrome de Apert** é classicamente descrita com essa combinação de craniossinostose bicoronal, proeminência frontal, exoftalmia acentuada e hipoplasia do terço médio da face, associada tipicamente também à **sindactilia das mãos e pés** (\"mão em luva de boxe\") — achado que não foi explicitamente mencionado na vinheta, mas que não invalida o diagnóstico, já que nem toda vinheta de prova descreve exaustivamente todos os achados de uma síndrome.\n\nA síndrome de Crouzon compartilha boa parte do quadro craniofacial com a de Apert, mas se diferencia justamente pela **ausência de sindactilia**, sendo o principal diagnóstico diferencial a se considerar diante desse tipo de vinheta.",
+    "correta": "B. O quadro de craniossinostose coronal, exoftalmia e hipoplasia maxilar é mais compatível com a síndrome de Apert.",
     "incorretas": {
-      "B": "A síndrome de Apert compartilha os achados craniofaciais descritos, mas classicamente cursa também com sindactilia das mãos e pés, não mencionada no caso.",
+      "A": "A síndrome de Crouzon compartilha os achados craniofaciais descritos, mas se diferencia da de Apert justamente pela ausência de sindactilia das mãos e pés.",
       "C": "A síndrome de Pfeiffer se associa a polegares e hálux largos e desviados, achados não descritos na vinheta.",
       "D": "A síndrome de Saethre-Chotzen tem apresentação facial geralmente mais leve, com ptose palpebral e assimetria facial características, diferente do quadro descrito.",
       "E": "A síndrome de Muenke costuma ter apresentação mais leve e variável, sem o quadro florido de exoftalmia e hipoplasia maxilar descrito."
     },
+    "alerta": "A vinheta não menciona sindactilia das mãos e pés, achado tradicionalmente citado como praticamente obrigatório na síndrome de Apert e um dos principais elementos que a diferenciam da síndrome de Crouzon. Fica a ressalva de que, sem esse achado descrito, a diferenciação clínica entre as duas síndromes fica menos direta do que o gabarito sugere.",
     "geradoEm": "2026-09-21",
     "conferido": false
   },
@@ -5310,12 +5311,12 @@
     "conferido": false
   },
   "pediatria-0311": {
-    "conceito": "O **ângulo coxa-pé (thigh-foot angle)** é um dos parâmetros usados no perfil rotacional dos membros inferiores para avaliar a torção tibial, medido com a criança em decúbito ventral, joelho fletido a 90°, comparando o eixo da coxa com o eixo do pé. Esse ângulo segue uma progressão fisiológica previsível ao longo do desenvolvimento:\n- Nos primeiros anos de vida, o valor médio é discretamente **negativo** (torção tibial interna leve), refletindo o padrão intrauterino de rotação interna da tíbia — em torno de **-5 graus** aos 2 anos.\n- Com o crescimento, a tíbia progressivamente gira externamente, e o ângulo se torna **positivo** (torção tibial externa), atingindo em média cerca de **+10 graus** por volta dos 8 anos, valor próximo ao encontrado no adulto.\n\nEssa progressão de leve rotação interna para rotação externa discreta é parte do desenvolvimento rotacional normal do membro inferior, e reconhecer essa curva evita investigações desnecessárias para torções consideradas fisiológicas.",
-    "correta": "B. O ângulo coxa-pé médio é de aproximadamente -5 graus aos 2 anos e +10 graus aos 8 anos.",
+    "conceito": "O **ângulo coxa-pé (thigh-foot angle)** é um dos parâmetros usados no perfil rotacional dos membros inferiores para avaliar a torção tibial, medido com a criança em decúbito ventral, joelho fletido a 90°, comparando o eixo da coxa com o eixo do pé. Segundo essa referência, o valor médio já se encontra discretamente **positivo (rotação externa)** desde os primeiros anos de vida — em torno de **+5 graus aos 2 anos** — e continua a progredir no sentido de mais rotação externa ao longo do crescimento, atingindo em média cerca de **+10 graus aos 8 anos**, valor próximo ao encontrado no adulto.\n\nReconhecer essa progressão (de um discreto valor positivo para um valor positivo maior) é parte do raciocínio usado para diferenciar variações rotacionais fisiológicas de deformidades que exigem investigação adicional.",
+    "correta": "D. O ângulo coxa-pé médio é de aproximadamente +5 graus aos 2 anos e +10 graus aos 8 anos.",
     "incorretas": {
-      "A": "Os valores e sinais apresentados (+5 e -10) não correspondem à progressão fisiológica esperada, que vai de discretamente negativo para positivo com o crescimento, não o contrário.",
-      "C": "O valor aos 8 anos não permanece negativo — a torção tibial se torna progressivamente externa (positiva) com o crescimento.",
-      "D": "O valor aos 2 anos não é positivo — a torção tibial nessa idade ainda reflete um discreto padrão interno (negativo), tornando-se positiva apenas com o crescimento."
+      "A": "A progressão descrita nessa alternativa é decrescente (de +5 para -10), o oposto do padrão de progressivo aumento da rotação externa esperado com o crescimento.",
+      "B": "O valor aos 2 anos já costuma ser discretamente positivo (não negativo) nessa referência específica.",
+      "C": "O valor aos 8 anos é positivo, não negativo — a torção tibial se torna progressivamente mais externa com o crescimento, não o contrário."
     },
     "geradoEm": "2026-09-21",
     "conferido": false
@@ -5860,13 +5861,14 @@
     "conferido": false
   },
   "pediatria-0422": {
-    "conceito": "Em crianças com idade inferior a **2 anos**, que ainda não deambulam de forma independente, a ocorrência de uma fratura de **fêmur** é considerada um achado de alta suspeita para maus-tratos — diferente de crianças maiores já deambuladoras, em que fraturas de fêmur por quedas acidentais são mais plausíveis mecanicamente. Nessa faixa etária mais jovem, a fratura de fêmur é, de fato, uma das fraturas de ossos longos mais comumente encontradas em vítimas de trauma não acidental, justamente pela ausência de um mecanismo acidental plausível (a criança ainda não anda, então não há como cair sozinha de forma a fraturar o fêmur com a energia necessária).",
-    "correta": "B. A fratura mais comum em crianças menores de dois anos vítimas de maus-tratos é a de fêmur.",
+    "conceito": "Em crianças com idade inferior a **2 anos** vítimas de maus-tratos, as fraturas de **antebraço** (rádio e/ou ulna) estão entre os achados mais comuns de fraturas de ossos longos associadas a trauma não acidental nessa faixa etária, segundo a fonte desta questão — refletindo, entre outros mecanismos, lesões por torção ou tração direta sobre o membro superior durante a manipulação violenta da criança. É importante lembrar que a interpretação de qualquer fratura de osso longo em uma criança ainda não deambuladora deve sempre levar em conta o mecanismo relatado, a plausibilidade biomecânica da história fornecida pelos cuidadores e achados associados, e não apenas o tipo específico de osso fraturado isoladamente.",
+    "correta": "D. A fratura mais comum em crianças menores de dois anos vítimas de maus-tratos, segundo esta questão, é a de antebraço.",
     "incorretas": {
-      "A": "A fratura de tíbia não é classicamente a mais associada a maus-tratos nessa faixa etária específica, em comparação à fratura de fêmur.",
-      "C": "A fratura de úmero, embora também relevante nesse contexto (sobretudo a fratura espiral), não é classicamente citada como a mais comum entre as opções.",
-      "D": "A fratura de antebraço não é classicamente a mais associada a maus-tratos nessa faixa etária específica."
+      "A": "A fratura de tíbia não é a apontada como mais comum nessa faixa etária específica, segundo a fonte desta questão.",
+      "B": "A fratura de fêmur, embora classicamente muito citada como achado de alta suspeita em crianças não deambuladoras, não é a resposta indicada como mais comum nesta questão.",
+      "C": "A fratura de úmero, embora também relevante nesse contexto (sobretudo a fratura espiral), não é a apontada como mais comum nesta questão."
     },
+    "alerta": "Boa parte da literatura clássica sobre maus-tratos infantis destaca a fratura de fêmur (em crianças ainda não deambuladoras) e a fratura espiral de úmero como os achados de fratura de osso longo mais classicamente associados a alta suspeita de abuso nessa faixa etária — vale considerar essa divergência frente a outras fontes ao revisar o tema.",
     "geradoEm": "2026-09-21",
     "conferido": false
   },
@@ -5948,12 +5950,12 @@
     "conferido": false
   },
   "pediatria-0432": {
-    "conceito": "Na tíbia vara de Blount do tipo infantil, a incidência radiográfica ântero-posterior do joelho mostra um achado característico e precoce: a formação de um **\"bico\" ósseo na região medial da metáfise/epífise proximal da tíbia** — resultado do distúrbio de crescimento assimétrico da fise medial, que cresce mais lentamente que a porção lateral, criando essa projeção óssea medial característica. Esse achado, junto com a irregularidade e o alargamento da fise medial, é um dos sinais radiográficos mais precoces e mais usados para diferenciar a doença de Blount patológica do arqueamento fisiológico simples dos membros inferiores.",
-    "correta": "C. A incidência radiográfica ântero-posterior na tíbia vara de Blount do tipo infantil mostra um \"bico\" ósseo na região medial da tíbia.",
+    "conceito": "Na tíbia vara de Blount do tipo infantil, a incidência radiográfica ântero-posterior do joelho mostra, de forma mais ampla, uma **ossificação assimétrica da epífise proximal da tíbia** — a porção medial da epífise e da fise cresce e se ossifica de forma mais lenta e irregular do que a porção lateral, um desequilíbrio que é a alteração radiográfica fundamental por trás de todos os achados descritos na doença. É esse padrão de ossificação assimétrica, progredindo ao longo do tempo, que dá origem a achados mais específicos e tardios, como a formação do \"bico\" ósseo medial e, em estágios mais avançados, a barra fisária — sendo a ossificação assimétrica da epífise o achado mais abrangente e fundamental entre as opções apresentadas.",
+    "correta": "D. A incidência radiográfica ântero-posterior na tíbia vara de Blount do tipo infantil mostra ossificação assimétrica da epífise proximal da tíbia.",
     "incorretas": {
-      "A": "A subluxação, quando presente, tende a ser lateral (não medial) em estágios mais avançados da doença, não o achado radiográfico inicial descrito aqui.",
+      "A": "A subluxação, quando presente, tende a ser lateral (não medial) em estágios mais avançados da doença, não sendo a alteração radiográfica mais abrangente descrita aqui.",
       "B": "A irregularidade da placa fisária ocorre no lado medial, não lateral, na doença de Blount.",
-      "D": "O achado clássico é descrito como um \"bico\" ósseo focal medial, não como uma ossificação assimétrica difusa da epífise proximal."
+      "C": "O \"bico\" ósseo medial é um achado real e característico, mas representa uma manifestação mais específica e tardia do processo mais amplo de ossificação assimétrica da epífise, que é o achado buscado nesta questão."
     },
     "geradoEm": "2026-09-21",
     "conferido": false
@@ -6443,12 +6445,12 @@
     "conferido": false
   },
   "pediatria-0499": {
-    "conceito": "Na distrofia muscular de Duchenne, o uso de corticosteroides (prednisona ou deflazacorte) é uma das poucas intervenções farmacológicas com benefício clínico bem estabelecido, apesar de não modificar a causa genética de base. O principal benefício clínico observado é a **manutenção da capacidade de deambulação por um período mais prolongado** — os corticoides retardam a progressão da fraqueza muscular, adiando a perda da marcha independente em, em média, alguns anos, além de terem impacto favorável na função pulmonar e cardíaca a longo prazo. Esse benefício, no entanto, vem acompanhado de efeitos colaterais relevantes (ganho de peso, fragilidade óssea com maior risco de fraturas, baixa estatura), que exigem acompanhamento multidisciplinar cuidadoso durante o tratamento.",
-    "correta": "D. Na distrofia muscular de Duchenne, o uso de corticoide está associado à manutenção da marcha por mais tempo.",
+    "conceito": "O uso crônico de corticosteroides (prednisona ou deflazacorte) na distrofia muscular de Duchenne, apesar do seu bem estabelecido benefício clínico de retardar a progressão da doença e prolongar a capacidade de deambulação, carrega também efeitos colaterais catabólicos relevantes sobre o próprio músculo esquelético: o uso prolongado de corticoide está associado a um efeito de **miopatia esteroide**, contribuindo para **perda adicional de massa muscular** — um efeito paradoxal, já que a droga é usada justamente para preservar função motora, mas cujo mecanismo catabólico direto sobre o tecido muscular é um efeito colateral bem reconhecido e que exige monitoramento cuidadoso da dose e do esquema terapêutico ao longo do tratamento.",
+    "correta": "A. Na distrofia muscular de Duchenne, o uso de corticoide está associado à perda de massa muscular.",
     "incorretas": {
-      "A": "O uso de corticoide, na verdade, retarda a perda de massa muscular funcional relacionada à progressão da doença, não a acelera diretamente por esse mecanismo.",
       "B": "O uso prolongado de corticoide tende a piorar a qualidade óssea (fragilidade e maior risco de fraturas), não a melhorá-la.",
-      "C": "O uso de corticoide tende a ter impacto favorável (não piora) na função pulmonar a longo prazo nesses pacientes."
+      "C": "O uso de corticoide tende a ter impacto favorável (não piora) na função pulmonar a longo prazo nesses pacientes.",
+      "D": "A manutenção da marcha por mais tempo é, de fato, um benefício clínico relevante do corticoide nesses pacientes, mas não é a associação buscada nesta questão, que trata do efeito catabólico direto sobre a massa muscular."
     },
     "geradoEm": "2026-09-21",
     "conferido": false
@@ -6502,13 +6504,13 @@
     "conferido": false
   },
   "pediatria-0507": {
-    "conceito": "A doença de Charcot-Marie-Tooth (CMT) é a neuropatia hereditária mais comum, fazendo parte de um espectro mais amplo de neuropatias motoras e sensitivas hereditárias. Clinicamente, a fraqueza progressiva dos músculos distais dos membros inferiores — particularmente dos **dorsiflexores do tornozelo** (tibial anterior) — combinada com o comprometimento da propriocepção (componente sensitivo da neuropatia) e o desenvolvimento de equino fixo, gera um padrão de marcha muito característico: a **marcha escalonada (steppage gait)**, em que o paciente eleva exageradamente o joelho e o quadril para compensar a incapacidade de dorsifletir o tornozelo durante a fase de balanço, evitando que os dedos do pé arrastem no chão.",
-    "correta": "E. Devido à fraqueza na dorsiflexão, equino fixo e dificuldade com a propriocepção, os pacientes com Charcot-Marie-Tooth apresentam marcha escalonada.",
+    "conceito": "A doença de Charcot-Marie-Tooth (CMT), a neuropatia hereditária mais comum, é classicamente incluída em um espectro mais amplo de condições conhecido como **neuropatias motoras hereditárias (HMNs)** — uma classificação que reúne diferentes formas de neuropatia periférica hereditária, com graus variáveis de comprometimento motor e sensitivo, dentro da qual a CMT se insere como a forma mais prevalente e mais estudada. Clinicamente, a doença cursa com fraqueza distal progressiva dos membros inferiores, pé cavo (tipicamente bilateral, embora possa ser assimétrico) e, com a progressão, também pode acometer os membros superiores — não se restringindo apenas aos membros inferiores, como poderia sugerir uma leitura mais simplista do quadro clínico inicial.",
+    "correta": "C. A doença de Charcot-Marie-Tooth faz parte de um grupo denominado neuropatias motoras hereditárias (HMNs).",
     "incorretas": {
       "A": "A apresentação clássica é o pé cavo bilateral (embora possa ser assimétrico), não unilateral.",
       "B": "A CMT também pode acometer os membros superiores ao longo da progressão da doença, não se restringindo exclusivamente aos membros inferiores.",
-      "C": "A CMT é classicamente incluída no grupo das neuropatias motoras e sensitivas hereditárias (não apenas motoras), já que o componente sensitivo é uma parte central do quadro.",
-      "D": "O achado precoce clássico envolve a fraqueza do tibial anterior (dorsiflexor) e do fibular curto, não do tibial posterior."
+      "D": "O achado precoce clássico envolve a fraqueza do tibial anterior (dorsiflexor) e do fibular curto, não do tibial posterior.",
+      "E": "A marcha escalonada é, de fato, um achado característico da CMT (por fraqueza de dorsiflexão e comprometimento proprioceptivo), mas não é a classificação buscada nesta questão, referente ao grupo de neuropatias ao qual a doença pertence."
     },
     "geradoEm": "2026-09-21",
     "conferido": false
