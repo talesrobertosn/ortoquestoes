@@ -6810,5 +6810,93 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "pediatria-0230": {
+    "conceito": "Na classificação de **Sillence** para a osteogênese imperfeita, os subtipos com sufixo **B** (IB e IVB) denotam, por definição, a presença de **dentinogênese imperfeita** (a alteração dentária translúcida, acinzentada/opalescente mostrada na imagem), em contraste com os subtipos A (IA e IVA), que denotam sua ausência. O **tipo III**, a forma progressivamente deformante, também apresenta classicamente essa alteração dentária associada, completando o grupo de tipos mais comumente associados a esse achado.",
+    "correta": "D. A alteração é mais encontrada nos tipos IB, III e IVB.",
+    "incorretas": {
+      "A": "Os subtipos **A** (IA e IVA), por definição na classificação de Sillence, denotam a **ausência** de dentinogênese imperfeita, o oposto do que a questão pede.",
+      "B": "Embora IB e IVB estejam corretos, o **tipo II** (a forma perinatal letal) não é classicamente caracterizado por essa subdivisão dentária, dada a gravidade e a letalidade precoce dessa forma.",
+      "C": "Os subtipos IA e IVA denotam ausência de dentinogênese imperfeita, tornando essa combinação inconsistente com a presença do achado mostrado na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0231": {
+    "conceito": "A osteogênese imperfeita **tipo V**, um subtipo distinto (não relacionado a mutações no colágeno tipo I, mas ao gene IFITM5), é classicamente associada à formação de **calo ósseo hiperplásico** após fraturas, um calo exuberante que pode ter aspecto radiográfico agressivo, mimetizando um **osteossarcoma** e representando uma armadilha diagnóstica reconhecida, levando por vezes a biópsias desnecessárias se essa associação não for lembrada.",
+    "correta": "D. A alteração é vista no tipo V, e seu principal diagnóstico diferencial é o osteossarcoma.",
+    "incorretas": {
+      "A": "O **tipo IV** não é classicamente associado à formação de calo hiperplásico exuberante, uma característica específica do tipo V; além disso, a osteomielite não é o diagnóstico diferencial clássico ensinado para esse achado radiográfico.",
+      "B": "O diagnóstico diferencial (osteossarcoma) está correto, mas a associação clássica com calo hiperplásico é específica do tipo V, não do tipo IV.",
+      "C": "O tipo V está correto, mas o diagnóstico diferencial classicamente ensinado para o calo hiperplásico exuberante é o osteossarcoma (pelo aspecto radiográfico agressivo), não a osteomielite."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0238": {
+    "conceito": "A osteotomia descrita por **Greene** para o tratamento da tíbia vara de Blount consiste em uma osteotomia metafisária proximal com remoção de uma cunha óssea (como representado na imagem), corrigindo o varismo e o procurvato da deformidade ao realinhar o eixo mecânico do membro, uma técnica voltada especificamente para essa correção angular na região proximal da tíbia.",
+    "correta": "D. A figura corresponde à osteotomia de Greene.",
+    "incorretas": {
+      "A": "A osteotomia **hemicondilar** atua de forma mais localizada em um único côndilo tibial, uma abordagem diferente da correção metafisária ampla mostrada na imagem.",
+      "B": "A osteotomia de **Rab** utiliza um traço oblíquo específico na metáfise proximal da tíbia, uma configuração técnica diferente da mostrada.",
+      "C": "A osteotomia de **Laurencin** também representa uma técnica específica de correção da tíbia vara, com configuração distinta da cunha metafisária mostrada na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0248": {
+    "conceito": "Na avaliação tomográfica pós-redução incruenta do quadril na displasia do desenvolvimento do quadril, busca-se confirmar o posicionamento **concêntrico** da cabeça femoral dentro do acetábulo em ambos os lados. A imagem mostra as cabeças femorais bem centralizadas dentro das cavidades acetabulares, de forma simétrica em ambos os quadris (regiões D e E), confirmando a redução bilateral bem-sucedida.",
+    "correta": "B. A imagem demonstra ambos os quadris reduzidos.",
+    "incorretas": {
+      "A": "\"Ambos luxados\" implicaria um posicionamento assimétrico e excêntrico das cabeças femorais fora das cavidades acetabulares, diferente do posicionamento concêntrico e simétrico mostrado na imagem.",
+      "C": "A imagem não mostra uma assimetria entre os lados (com um quadril luxado e o outro reduzido); ambos aparecem concentricamente reduzidos.",
+      "D": "Da mesma forma, não há evidência de assimetria entre os lados na imagem, que mostra redução concêntrica bilateral."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0256": {
+    "conceito": "O **menisco discoide**, uma variação anatômica congênita em que o menisco (mais comumente o lateral) não assume seu formato semilunar normal, permanecendo mais largo, espesso e discoide, aparece na ressonância magnética como uma estrutura meniscal anormalmente volumosa, estendendo-se mais amplamente pelo compartimento articular e aparecendo de forma mais contínua em múltiplos cortes sagitais consecutivos (\"bow-tie sign\" ampliado), compatível com o corpo meniscal espessado indicado pela seta na imagem.",
+    "correta": "A. A imagem é mais sugestiva de menisco discoide.",
+    "incorretas": {
+      "B": "A **lesão meniscal em alça de balde** mostraria um fragmento meniscal deslocado, frequentemente visível como um fragmento adicional junto ao ligamento cruzado posterior (\"double PCL sign\"), um achado diferente do corpo meniscal simplesmente alargado mostrado.",
+      "C": "A **lesão do LCA** mostraria alteração de sinal e descontinuidade do próprio ligamento cruzado anterior, uma estrutura distinta do menisco assinalado pela seta.",
+      "D": "A **lesão da raiz meniscal** mostraria uma interrupção radial focal na inserção do menisco, com um sinal característico de \"menisco fantasma\" nos cortes sagitais, um padrão diferente do corpo meniscal difusamente alargado mostrado."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0267": {
+    "conceito": "Na avaliação radiográfica clássica do quadril pediátrico, cinco referências se combinam: a **linha de Hilgenreiner** (horizontal, unindo as cartilagens trirradiadas), a **linha de Perkins** (vertical, perpendicular a Hilgenreiner, tangente à borda lateral do acetábulo), o **arco de Shenton** (curva contínua entre a borda medial do colo femoral e a borda superior do forame obturador), o **índice acetabular** (ângulo entre Hilgenreiner e a linha do teto acetabular) e o **quadrante ínfero-medial de Ombredanne** (o quadrante formado pelo cruzamento de Hilgenreiner e Perkins onde a cabeça femoral deve estar centrada normalmente).",
+    "correta": "C. As linhas correspondem, na sequência, a linha de Hilgenreiner, linha de Perkins, arco de Shenton, índice acetabular e quadrante ínfero-medial de Ombredanne.",
+    "incorretas": {
+      "A": "Termos como \"linha de Kleine\", \"arco de Xington\" e \"índice de Wiberg\" não correspondem às referências radiográficas clássicas de triagem do quadril pediátrico representadas na imagem.",
+      "B": "Da mesma forma, \"linha de Kleine\" e \"índice femoral\" não correspondem à nomenclatura padronizada das linhas de Hilgenreiner e do índice acetabular mostradas.",
+      "D": "Essa alternativa inverte a ordem correta: a linha A (horizontal) é a linha de Hilgenreiner, e a linha B (vertical) é a linha de Perkins, não o contrário."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0268": {
+    "conceito": "Entre as osteocondroses do pé, cada uma tem um perfil epidemiológico característico: a doença de **Sever** (apofisite do calcâneo) acomete predominantemente meninos de 10 a 12 anos, com bilateralidade frequente (até 60%), sem sequelas e sem necessidade de cirurgia; a doença de **Köhler** (navicular) acomete meninos mais jovens (abaixo de 6 anos), podendo ser bilateral, também sem sequelas ou cirurgia; já a doença de **Freiberg** (cabeça do metatarso) acomete predominantemente meninas de 12 a 15 anos, raramente bilateral (menos de 10%), podendo deixar sequelas articulares e eventualmente exigir tratamento cirúrgico.",
+    "correta": "A. As osteocondrites correspondem, respectivamente, a 1: Sever, 2: Köhler e 3: Freiberg.",
+    "incorretas": {
+      "B": "Essa combinação não corresponde aos perfis descritos: a idade mais jovem (\"OC2\", menos de 6 anos) é característica de Köhler, não de Freiberg, que acomete adolescentes mais velhas.",
+      "C": "Freiberg não corresponde ao perfil masculino de 10-12 anos (\"OC1\"), sendo uma doença predominantemente feminina e de idade mais avançada.",
+      "D": "Essa alternativa inverte Köhler e Sever: a faixa etária de 10-12 anos (\"OC1\") corresponde mais precisamente a Sever, e a faixa mais jovem, abaixo de 6 anos (\"OC2\"), a Köhler."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0273": {
+    "conceito": "A osteotomia de **Dunn** para a epifisiólise femoral proximal é realizada diretamente no nível **subcapital**, na junção entre a epífise deslizada e o colo femoral, removendo uma cunha óssea metafisária (mantendo a integridade do anel pericondral e do suprimento vascular retinacular) para realinhar a epífise sobre o colo, geralmente realizada por meio de uma via de luxação cirúrgica controlada, o que a distingue de técnicas realizadas em níveis mais distais do colo femoral.",
+    "correta": "A. A osteotomia subcapital demonstrada é a de Dunn.",
+    "incorretas": {
+      "B": "\"Kramer\" não corresponde a uma técnica de osteotomia subcapital padronizada e amplamente reconhecida para a epifisiólise femoral proximal.",
+      "C": "A osteotomia de **Imhauser** é realizada na base do colo femoral (basicervical), um nível mais distal do que a localização subcapital mostrada na imagem.",
+      "D": "A osteotomia de **Southwick** é realizada ao nível intertrocantérico, uma localização ainda mais distal do que o nível subcapital demonstrado."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
