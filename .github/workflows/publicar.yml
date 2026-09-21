@@ -26,6 +26,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Executar testes de domínio
+        run: npm test
       - name: Testar revisão e backup
         run: node fixtures/testar_revisao.mjs
       - name: Testar reinício do progresso
@@ -41,6 +43,9 @@ jobs:
         env:
           VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}
+          VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
+          VITE_LIMITES_HABILITADOS: ${{ vars.VITE_LIMITES_HABILITADOS }}
+          VITE_PAGAMENTOS_HABILITADOS: ${{ vars.VITE_PAGAMENTOS_HABILITADOS }}
         run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -56,4 +61,3 @@ jobs:
     steps:
       - id: publicacao
         uses: actions/deploy-pages@v4
-

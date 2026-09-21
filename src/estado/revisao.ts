@@ -46,4 +46,3 @@ export function proximoRegistro(anterior: RegistroQuestao | undefined, correta: 
     proximaRevisao: correta === null || sequencia >= intervalos.length ? null : correta === false ? agora : agora + intervalos[sequencia - 1] * 86400000,
   }
 }
-

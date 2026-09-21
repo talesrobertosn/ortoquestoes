@@ -97,3 +97,26 @@ export function tamanhoArmazenado(): number {
   } catch { /* memória */ }
   return [...dados].reduce((s, [c, v]) => s + (corresponde(c) ? c.length + v.length : 0), 0)
 }
+
+/** Backup portátil de todos os dados pessoais, sem incluir nada de outros sites. */
+export function exportarDados(): string {
+  const dados: Record<string, unknown> = {}
+  if (armazenamentoDisponivel()) {
+    for (let i = 0; i < window.localStorage.length; i++) {
+      const chave = window.localStorage.key(i)
+      if (chave?.startsWith(PREFIXO_ARMAZENAMENTO)) {
+        const valor = window.localStorage.getItem(chave)
+        if (valor !== null) dados[chave.slice(PREFIXO_ARMAZENAMENTO.length)] = JSON.parse(valor)
+      }
+    }
+  }
+  return JSON.stringify({ produto: 'OrtoQuestões', versao: 1, exportadoEm: new Date().toISOString(), dados }, null, 2)
+}
+
+export function importarDados(conteudo: string): void {
+  const backup = JSON.parse(conteudo) as { produto?: string; versao?: number; dados?: Record<string, unknown> }
+  if (backup.produto !== 'OrtoQuestões' || backup.versao !== 1 || !backup.dados) {
+    throw new Error('Este arquivo não é um backup válido do OrtoQuestões.')
+  }
+  for (const [chave, valor] of Object.entries(backup.dados)) gravar(chave, valor)
+}

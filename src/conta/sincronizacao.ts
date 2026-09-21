@@ -179,4 +179,3 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
     },
   }
 }
-

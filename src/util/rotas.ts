@@ -118,4 +118,3 @@ export function consultaParaFiltros(consulta: URLSearchParams): Filtros {
     busca: consulta.get('busca') ?? '',
   }
 }
-
