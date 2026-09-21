@@ -11327,5 +11327,71 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "trauma-0505": {
+    "conceito": "A classificação de **Robinson** para fraturas da clavícula divide-a em três regiões (medial, diafisária e lateral). Dentro do grupo **3 (lateral)**, o subtipo **3B** corresponde às fraturas deslocadas extra-articulares, em que o complexo ligamentar coracoclavicular permanece intacto e fixo ao fragmento distal, enquanto o fragmento medial perde esse suporte e se desloca superiormente (como mostrado na imagem, com o laço ligamentar preso ao fragmento distal). O subtipo **3B1** corresponde ao traço simples ou minimamente cominutivo, sem extensão intra-articular, compatível com o padrão de fratura mostrado.",
+    "correta": "B. A fratura é classificada como Robinson 3B1.",
+    "incorretas": {
+      "A": "A combinação \"Craig Grupo II, tipo IV\" mistura classificações de forma inconsistente com os grupos padronizados de Craig para fraturas da clavícula distal, não correspondendo ao sistema de subtipos numerados IV.",
+      "C": "A classificação de **Rockwood** (tipos I a VI) destina-se às lesões da articulação acromioclavicular, e não às fraturas da clavícula distal propriamente ditas, sendo uma categoria diferente da fratura mostrada.",
+      "D": "\"Alman grupo I\" não corresponde a um sistema de classificação padronizado e amplamente reconhecido para fraturas da clavícula distal."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0515": {
+    "conceito": "O **ângulo de Matta** (ou ângulo do arco do teto, \"roof arc angle\") é medido a partir de uma linha vertical traçada pelo centro da cabeça femoral até uma linha que alcança o traço de fratura, avaliado nas incidências AP, obturatriz e em alar (oblíquas de Judet). Quando esse ângulo é maior que **45°** nas três incidências, considera-se que resta osso suficiente na cúpula acetabular (a área de sustentação de carga) para permitir tratamento conservador, com carga protegida, em vez de redução cirúrgica.",
+    "correta": "C. O ângulo demonstrado é o ângulo de Matta, e o tratamento conservador se torna mais provável a partir de 45º.",
+    "incorretas": {
+      "A": "\"Ângulo centro-fratura medial\" não é a nomenclatura padronizada para essa medida; o nome correto é ângulo de Matta (ou arco do teto).",
+      "B": "Além do nome incorreto, o valor de referência estabelecido para maior chance de tratamento conservador é de 45°, não 60°.",
+      "D": "O nome (ângulo de Matta) está correto, mas o valor de referência amplamente aceito é de 45°, não 60°."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0544": {
+    "conceito": "Na classificação AO/OTA para fraturas do fêmur proximal, o grupo **31A3** corresponde às fraturas intertrocantéricas com obliquidade reversa ou transtrocantéricas, em que o traço de fratura atravessa a região entre os trocânteres. Dentro desse grupo, o subtipo **31A3.2** corresponde a um traço **transverso simples** (sem grande obliquidade nem cominução significativa), diferente do subtipo .1 (traço oblíquo simples) e do subtipo .3 (padrão multifragmentado/cominutivo).",
+    "correta": "B. A fratura é classificada, segundo a AO, como 31A3.2.",
+    "incorretas": {
+      "A": "O subtipo **31A3.1** corresponde a um traço **oblíquo** simples, uma orientação diferente do traço mais transverso mostrado na imagem.",
+      "C": "O subtipo **31A3.3** corresponde a um padrão multifragmentado/cominutivo, um grau de complexidade maior do que o traço relativamente simples mostrado.",
+      "D": "O grupo **32** corresponde à região diafisária do fêmur (não à região trocantérica/proximal), um segmento anatômico diferente do mostrado na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0546": {
+    "conceito": "Na classificação de **Magerl (AO)** para a coluna toracolombar, o tipo **B** corresponde às lesões por distração, com ruptura do complexo ligamentar posterior (ou de suas estruturas ósseas equivalentes) associada a um componente de flexão ou extensão. O subtipo **B2** corresponde à lesão de distração predominantemente **óssea** (posterior, transóssea, como na clássica fratura de Chance), diferente do subtipo B1 (lesão predominantemente ligamentar posterior) e do B3 (lesão de distração anterior, através do disco, por mecanismo de hiperextensão-cisalhamento).",
+    "correta": "A. A fratura corresponde ao tipo B2.",
+    "incorretas": {
+      "B": "O subtipo **B3** corresponde a uma lesão de distração anterior, através do disco intervertebral, por hiperextensão-cisalhamento, um padrão anatômico diferente da lesão óssea posterior mostrada.",
+      "C": "O tipo **C** exige um componente rotacional/translacional associado a um padrão A ou B, uma lesão mais grave e complexa do que a distração pura mostrada.",
+      "D": "Assim como o tipo C1, o subtipo C2 também exige componente rotacional, não correspondendo ao padrão de distração pura demonstrado na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0558": {
+    "conceito": "A classificação de **Hohl e Moore**, voltada às fraturas-luxações do planalto tibial (lesões de maior energia, com instabilidade articular associada, diferentes das fraturas por compressão pura descritas por Schatzker), descreve o tipo **III** como uma fratura de **avulsão marginal** (\"rim avulsion\"): um pequeno fragmento ósseo periférico é arrancado junto à inserção capsuloligamentar, associado à ruptura da cápsula articular, exatamente o padrão de pequeno fragmento avulsionado na borda articular, associado à lesão capsular, mostrado na imagem.",
+    "correta": "C. A fratura é classificada, segundo Hohl e Moore, como tipo III.",
+    "incorretas": {
+      "A": "O tipo **I** corresponde a uma fratura em cunha (\"split\"), com um fragmento condilar destacado por clivagem, sem o padrão de avulsão marginal associado à ruptura capsular mostrado.",
+      "B": "O tipo **II** corresponde a uma fratura de todo o côndilo (fragmento condilar único e extenso), um padrão mais amplo do que o pequeno fragmento marginal avulsionado mostrado.",
+      "D": "O tipo **IV** corresponde a uma fratura por compressão marginal (fragmento comprimido/deprimido na borda articular), um mecanismo diferente (compressão, não avulsão) do mostrado na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0570": {
+    "conceito": "A **patela bipartida** é uma variação anatômica benigna, decorrente da falha de fusão de um centro de ossificação acessório, classicamente localizado no **polo superolateral** da patela, formando um fragmento ósseo separado, com bordas lisas e bem corticadas, sem solução de continuidade aguda. É facilmente confundida com uma fratura após um trauma direto no joelho, mas a integridade do aparelho extensor, a dor discreta e as margens bem definidas e arredondadas do fragmento (compatíveis com um achado crônico, não agudo) favorecem esse diagnóstico em vez de uma fratura verdadeira.",
+    "correta": "A. O diagnóstico diferencial mais provável é patela bipartida.",
+    "incorretas": {
+      "B": "A **osteonecrose da patela** produziria alterações de densidade óssea (esclerose, achatamento) na patela principal, não um fragmento acessório bem corticado no polo superolateral como mostrado.",
+      "C": "A **pseudoartrose da patela** pressupõe uma fratura prévia conhecida que não consolidou, um histórico diferente do trauma agudo único descrito no caso.",
+      "D": "A **osteocondrite dissecante da patela** tipicamente acomete a superfície articular (posterior) da patela, não a localização característica do polo superolateral extra-articular mostrada na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
