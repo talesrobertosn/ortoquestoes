@@ -6986,5 +6986,71 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "pediatria-0327": {
+    "conceito": "A **fratura metafisária clássica** (\"corner fracture\"), um pequeno fragmento angular destacado na margem da metáfise, decorrente de forças de cisalhamento e torção aplicadas ao membro (como ao puxar ou sacudir a criança), é um achado radiográfico de alta especificidade para **maus tratos** infantis, sendo considerada praticamente patognomônica de trauma não acidental, especialmente em lactentes e crianças pequenas.",
+    "correta": "B. A imagem é altamente sugestiva de maus tratos.",
+    "incorretas": {
+      "A": "Uma **infecção** (osteomielite) costuma mostrar reação periosteal, edema de partes moles e, por vezes, coleção líquida associada, um padrão radiográfico diferente do fragmento angular isolado mostrado.",
+      "C": "Um **tumor ósseo** costuma apresentar uma lesão mais expansiva, com margens permeativas ou uma reação periosteal característica (como \"casca de cebola\" ou triângulo de Codman), um padrão diferente do fragmento metafisário focal mostrado.",
+      "D": "A **osteogênese imperfeita** tipicamente se manifesta com fraturas diafisárias associadas a fragilidade óssea difusa e osteopenia generalizada, não o fragmento metafisário focal e específico mostrado."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0330": {
+    "conceito": "O arqueamento anterolateral congênito das pernas está classicamente associado à **neurofibromatose tipo 1**, sendo o principal fator de risco para a evolução à **pseudoartrose congênita de tíbia**, uma condição rara em que o osso na região do arqueamento não consolida espontaneamente e pode fraturar com mínimo trauma, formando uma falsa articulação persistente, uma associação clássica e frequentemente cobrada entre a deformidade angular congênita e essa condição de base.",
+    "correta": "B. As deformidades podem estar associadas à neurofibromatose tipo 1 e à pseudoartrose congênita de tíbia.",
+    "incorretas": {
+      "A": "A doença de **Streeter** (síndrome da banda de constrição congênita) produz sulcos e constrições circunferenciais nos membros, um padrão de deformidade diferente do arqueamento angular mostrado, sem a associação clássica com a neurofibromatose.",
+      "C": "A **neurofibromatose tipo 2** está associada principalmente a schwannomas vestibulares bilaterais e outros tumores do sistema nervoso, não sendo a forma classicamente associada a essa deformidade óssea; a associação clássica é com o tipo 1.",
+      "D": "Além do tipo 2 não ser a associação clássica, a doença de Streeter não corresponde ao padrão de arqueamento angular mostrado na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0360": {
+    "conceito": "O padrão de marcha em **crouch** (agachado) caracteriza-se por flexão excessiva e sustentada do joelho ao longo de toda a fase de apoio, sem retorno adequado à extensão, refletindo fraqueza do quadríceps, contratura dos flexores do joelho e/ou fraqueza do tríceps sural, um padrão bilateral e simétrico típico de pacientes com **diplegia espástica**, exatamente o padrão de flexão elevada e mantida durante o apoio mostrado no gráfico.",
+    "correta": "A. O gráfico representa o padrão crouch em paciente diplégico.",
+    "incorretas": {
+      "B": "O padrão **stiff knee** (joelho rígido) caracteriza-se por uma **redução** do pico de flexão do joelho durante a fase de balanço (não um excesso de flexão sustentada durante o apoio), um padrão diferente do mostrado no gráfico.",
+      "C": "O padrão crouch está corretamente identificado, mas costuma ser descrito de forma bilateral e simétrica, mais característico da diplegia do que de um padrão tipicamente assimétrico da hemiplegia.",
+      "D": "O padrão stiff knee não corresponde ao excesso de flexão mostrado no gráfico, e a hemiplegia tipicamente produziria um padrão assimétrico, diferente do representado."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0381": {
+    "conceito": "Em um lactente com febre, irritabilidade, pseudoparalisia do membro e postura em flexão/rotação externa do quadril (posição de conforto que minimiza a pressão intra-articular), especialmente com fator de risco de internação neonatal prévia (possível bacteremia associada a acesso vascular), a hipótese mais provável é **artrite séptica do quadril**, confirmada pelo aumento do líquido articular à ultrassonografia. Trata-se de uma emergência ortopédica, exigindo **drenagem cirúrgica** (para descomprimir a articulação e reduzir o dano condral/vascular à cabeça femoral) associada a **antibioticoterapia** sistêmica.",
+    "correta": "C. O diagnóstico é artrite séptica do quadril, e a conduta é drenagem cirúrgica e antibioticoterapia.",
+    "incorretas": {
+      "A": "A **sinovite transitória** é um quadro mais brando e autolimitado, geralmente sem febre alta e toxemia como as descritas, e mesmo que fosse esse o diagnóstico, a drenagem cirúrgica não seria a conduta indicada para essa condição benigna.",
+      "B": "Além do diagnóstico de sinovite transitória não ser compatível com a gravidade do quadro clínico descrito, ela não corresponde ao efusão importante e ao contexto de risco infeccioso do caso.",
+      "D": "O diagnóstico de artrite séptica está correto, mas repouso e observação isolados são insuficientes; a conduta correta exige drenagem cirúrgica urgente associada à antibioticoterapia, dado o risco de destruição da cabeça femoral."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0384": {
+    "conceito": "Na osteogênese imperfeita, a formação de calo ósseo hiperplásico e exuberante após fraturas ou osteotomias é uma característica associada especificamente ao subtipo causado por defeitos no gene **IFITM5** (correspondente à osteogênese imperfeita tipo V), diferente dos genes do colágeno tipo I (COL1A1/COL1A2, responsáveis pela maioria dos demais tipos) ou de outros genes associados a formas recessivas mais raras da doença.",
+    "correta": "B. O excesso de calo ósseo está associado ao defeito no gene IFITM5.",
+    "incorretas": {
+      "A": "O gene **WNT1** está associado a uma forma recessiva rara de osteogênese imperfeita, sem a associação clássica com a formação de calo hiperplásico exuberante.",
+      "C": "O gene **LEPRE1** (P3H1) está associado à osteogênese imperfeita tipo VIII, uma forma grave recessiva, sem a associação clássica com calo hiperplásico.",
+      "D": "O gene **COL1A1**, responsável pela maioria dos casos de osteogênese imperfeita (tipos I a IV), não é a mutação classicamente associada ao fenômeno específico do calo hiperplásico exuberante, uma característica do tipo V (IFITM5)."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0387": {
+    "conceito": "O **pé calcâneo valgo** é uma deformidade postural congênita, frequentemente relacionada ao posicionamento intrauterino, em que o pé se apresenta acentuadamente dorsifletido e evertido em relação à perna (o oposto do pé torto), geralmente flexível e de resolução espontânea ou com manipulação/alongamento simples, exatamente a posição em dorsiflexão exagerada mostrada na radiografia.",
+    "correta": "C. A deformidade identificada está associada ao pé calcâneo valgo.",
+    "incorretas": {
+      "A": "A **hemimelia fibular** cursa com deficiência ou ausência da fíbula, associada a encurtamento do membro e outras deformidades ósseas, um padrão diferente da simples dorsiflexão exagerada do pé mostrada.",
+      "B": "O **pé torto congênito** apresenta o padrão oposto: equino, adução e varo do pé (voltado para baixo e para dentro), não a dorsiflexão e eversão exageradas mostradas na imagem.",
+      "D": "Um defeito de consolidação após fratura pressupõe um evento traumático prévio, não uma deformidade posicional presente desde o nascimento, como sugerido pela apresentação clínica."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
