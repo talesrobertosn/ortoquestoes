@@ -10906,5 +10906,38 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "trauma-0206": {
+    "conceito": "A cobertura precoce de partes moles com retalho livre microvascular em fraturas expostas com grande perda de cobertura é um dos pilares do tratamento moderno dessas lesões. O trabalho clássico de **Godina**, ainda hoje referência sobre o tema, demonstrou que a realização desse procedimento dentro de uma janela precoce — classicamente descrita como até **72 horas** do trauma — está associada a taxas significativamente menores de infecção e de pseudoartrose, em comparação com a cobertura tardia (que enfrenta um leito cada vez mais fibrótico, colonizado e com pior potencial de integração vascular do retalho).",
+    "correta": "B. As taxas de infecção e pseudoartrose são menores quando a cobertura com retalho livre é realizada em até 72 horas.",
+    "incorretas": {
+      "A": "24 horas é uma janela mais curta do que a classicamente descrita como o limite associado a melhores desfechos nesse contexto.",
+      "C": "7 dias já representa uma cobertura tardia, associada a piores desfechos em comparação com a janela precoce de até 72 horas.",
+      "D": "14 dias representa uma cobertura ainda mais tardia, com desfechos significativamente piores do que os observados dentro da janela precoce de 72 horas."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0322": {
+    "conceito": "A técnica de osteossíntese minimamente invasiva de **Livani-Belangero** para a fratura diafisária do úmero utiliza uma via de acesso **anterior**, com passagem submuscular da placa através do intervalo entre o músculo bíceps braquial e o músculo braquial — exatamente o plano anatômico por onde trafega o **nervo musculocutâneo**, que perfura o coracobraquial e desce nesse intervalo intermuscular. Por isso, diferente das abordagens posteriores ou póstero-laterais clássicas (nas quais o nervo radial, no sulco espiral do úmero, é a estrutura mais temida), na técnica de Livani-Belangero é o nervo musculocutâneo que corre maior risco de lesão durante a passagem submuscular da placa.",
+    "correta": "D. Na técnica de Livani-Belangero para osteossíntese minimamente invasiva do úmero, o nervo com maior risco de lesão é o musculocutâneo.",
+    "incorretas": {
+      "A": "O nervo axilar é mais relevante nas abordagens proximais do úmero (ombro), não no trajeto anterior utilizado na técnica de Livani-Belangero.",
+      "B": "O nervo radial é o de maior risco nas abordagens posteriores/póstero-laterais clássicas, mas não no trajeto anterior submuscular específico dessa técnica.",
+      "C": "O nervo mediano não trafega no intervalo entre bíceps e braquial utilizado nessa técnica, não sendo a estrutura de maior risco."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0762": {
+    "conceito": "Nas fraturas expostas classificadas como **Gustilo-Anderson tipo I** (ferida limpa, menor que 1 cm, com mínima contaminação e lesão de partes moles), a antibioticoterapia deve ser iniciada o mais precocemente possível, já na sala de emergência, com uma **cefalosporina de primeira geração** (como a cefazolina) — cobrindo principalmente cocos Gram-positivos, os patógenos mais relevantes nesse contexto de baixa contaminação. É importante destacar que, por se tratar de uma ferida já contaminada por definição (exposta ao ambiente externo), o uso do antibiótico é feito de forma **terapêutica**, e não meramente profilática como em uma cirurgia eletiva limpa — a diferença de intenção clínica (tratar uma contaminação já estabelecida, não apenas prevenir uma futura) é um ponto conceitual importante.",
+    "correta": "A. Na fratura exposta Gustilo tipo I, deve-se iniciar cefalosporina de primeira geração, de forma terapêutica, já na sala de emergência.",
+    "incorretas": {
+      "B": "O uso de cefalosporina de primeira geração está correto, mas a intenção do tratamento é terapêutica, não profilática, já que a ferida já está contaminada.",
+      "C": "A cefalosporina de primeira geração, não de terceira, é a escolha padrão para a cobertura de Gram-positivos nesse contexto de baixa contaminação.",
+      "D": "A cefalosporina de primeira geração é a escolha padrão, e o uso deve ser terapêutico, não meramente profilático."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
