@@ -42,6 +42,14 @@ export function TextoEditorial({ texto }: { texto: string }) {
   )
 }
 export function Referencias({ itens }: { itens?: string[] }) {
-  if (!itens?.length) return null
-  return <details className="referencias"><summary>Referências · {itens.length}</summary><ul>{itens.map((r, i) => <li key={i}>{r}</li>)}</ul></details>
+  return (
+    <details className="referencias">
+      <summary>{itens?.length ? `Referências · ${itens.length}` : 'Sobre este comentário'}</summary>
+      <p className="referencias__nota">
+        Este comentário foi produzido com apoio de inteligência artificial. Quando houver revisão
+        médica, ela será indicada explicitamente.
+      </p>
+      {itens?.length ? <ul>{itens.map((r, i) => <li key={i}>{r}</li>)}</ul> : null}
+    </details>
+  )
 }

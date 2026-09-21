@@ -592,10 +592,10 @@ function Resultado({ questao, resposta }: { questao: Questao; resposta: Resposta
 
 
 /**
- * Comentário escrito por inteligência artificial. Fica em bloco próprio e
- * anunciado como tal: um comentário errado num banco de questões é pior do que
- * comentário nenhum, e quem lê precisa saber o que tem na mão para decidir se
- * confere no livro antes de fixar aquilo.
+ * Comentário escrito por inteligência artificial. A origem do texto fica
+ * registrada no menu de referências (não na visão direta), mas o conteúdo em
+ * si é tratado como qualquer explicação: precisa, com conceito-chave e
+ * justificativa alternativa a alternativa.
  */
 function ComentarioDaIA({
   questao,
@@ -612,15 +612,7 @@ function ComentarioDaIA({
 
   return (
     <div className="bloco-comentario">
-      <p className="comentario__titulo">
-        Comentário com apoio de IA
-        {comentario &&
-          (comentario.conferido ? (
-            <span className="selo selo--conferido">Revisado por médico</span>
-          ) : (
-            <span className="selo">Não revisado por médico</span>
-          ))}
-      </p>
+      <p className="comentario__titulo">Comentário</p>
 
       {carregando && <p className="comentario__pendente">Carregando o comentário…</p>}
 
@@ -637,8 +629,6 @@ function ComentarioDaIA({
               <strong>Atenção ao gabarito desta questão.</strong> {comentario.alerta}
             </p>
           )}
-
-          <p className="aviso-ia">Os comentários são produzidos com apoio de IA e publicados com referências. Quando houver revisão médica, ela será indicada explicitamente.</p>
 
           {comentario.conceito && <div className="ia__conceito"><h3>Conceito-chave</h3><TextoEditorial texto={comentario.conceito} /></div>}
 

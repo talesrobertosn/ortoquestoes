@@ -2206,6 +2206,8 @@ kbd {
 .ia__letra { width: 2rem; height: 2rem; border-radius: 50%; }
 .contribuicao { padding: 1.25rem; background: var(--superficie); border: var(--borda); border-radius: 8px; }
 .referencias { margin-top: 1rem; padding-top: .5rem; border-top: var(--borda); color: var(--texto-2); font-size: var(--corpo-menor); overflow-wrap: anywhere; }
+.referencias__nota { margin: .65rem 0 0; font-style: italic; }
+.referencias ul { margin: .65rem 0 0; padding-left: 1.2rem; }
 .referencias li + li { margin-top: .65rem; }
 .notas-questao { margin-top: 1.5rem; padding: .5rem 1rem; border: var(--borda); border-radius: 8px; }
 .notas-questao textarea { width: 100%; margin: .75rem 0; resize: vertical; }
