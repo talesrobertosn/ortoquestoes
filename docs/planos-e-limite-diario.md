@@ -34,6 +34,7 @@ Nas Edge Functions:
 supabase secrets set \
   APP_ORIGIN=https://ortoquestoes.com.br \
   MERCADO_PAGO_ACCESS_TOKEN=... \
+  MERCADO_PAGO_AMBIENTE=teste \
   MERCADO_PAGO_WEBHOOK_SECRET=... \
   MERCADO_PAGO_PLANO_MENSAL_ID=... \
   MERCADO_PAGO_PLANO_SEMESTRAL_ID=... \
@@ -46,7 +47,7 @@ supabase secrets set \
 
 ## Mercado Pago: configuração privada
 
-`criar-checkout` escolhe o `preapproval_plan_id` exclusivamente pelas variáveis privadas `MERCADO_PAGO_PLANO_MENSAL_ID`, `MERCADO_PAGO_PLANO_SEMESTRAL_ID` e `MERCADO_PAGO_PLANO_ANUAL_ID`. IDs de plano, Access Token e segredo de webhook nunca pertencem ao frontend, GitHub Variables, `.env.example` com valor real ou repositório.
+`criar-checkout` escolhe o `preapproval_plan_id` exclusivamente pelas variáveis privadas `MERCADO_PAGO_PLANO_MENSAL_ID`, `MERCADO_PAGO_PLANO_SEMESTRAL_ID` e `MERCADO_PAGO_PLANO_ANUAL_ID`. Com `MERCADO_PAGO_AMBIENTE=teste`, a Function libera checkout somente para uma `contas_teste` ativa. IDs de plano, Access Token e segredo de webhook nunca pertencem ao frontend, GitHub Variables, `.env.example` com valor real ou repositório.
 
 Com Access Token de teste (prefixo `TEST-`), a função só abre checkout para um usuário autenticado que tenha uma linha ativa em `contas_teste`. A preapproval leva o UUID do Supabase em `external_reference`, o e-mail autenticado em `payer_email`, `back_url` de `APP_ORIGIN` e uma chave de idempotência. Ela não infere o plano pela frequência.
 

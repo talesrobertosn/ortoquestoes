@@ -25,9 +25,10 @@ Deno.serve(async (req) => {
 
     const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')
     const origem = Deno.env.get('APP_ORIGIN')
+    const ambiente = Deno.env.get('MERCADO_PAGO_AMBIENTE')
     const preapprovalPlanId = Deno.env.get(planos[plano])
     if (!token || !origem || !preapprovalPlanId || !usuario.email) return json({ erro: 'checkout_nao_configurado' }, 503)
-    if (token.startsWith('TEST-') && !await contaTesteAtiva(usuario.id)) return json({ erro: 'checkout_sandbox_requer_conta_teste' }, 403)
+    if (ambiente === 'teste' && !await contaTesteAtiva(usuario.id)) return json({ erro: 'checkout_sandbox_requer_conta_teste' }, 403)
 
     const resposta = await fetch('https://api.mercadopago.com/preapproval', {
       method: 'POST',
