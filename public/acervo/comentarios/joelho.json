@@ -2663,5 +2663,61 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "joelho-0151": {
+    "conceito": "A imagem demonstra a construção clássica do ângulo **Q**, formado pela intersecção de duas linhas: uma traçada da espinha ilíaca anterossuperior ao centro da patela (representando a linha de tração do quadríceps) e outra do centro da patela à tuberosidade tibial (representando a linha de tração do tendão patelar). Esse ângulo é um parâmetro clínico clássico na avaliação do alinhamento do aparelho extensor e do risco de instabilidade patelofemoral.",
+    "correta": "A. O ângulo representado é o Q.",
+    "incorretas": {
+      "B": "O ângulo poplíteo é aferido em outra região anatômica (relacionado à flexibilidade isquiotibial), sem relação com as linhas do quadríceps e do tendão patelar representadas.",
+      "C": "O ângulo mecânico do membro inferior é definido pelo eixo entre o centro da cabeça femoral e o centro do tornozelo, uma construção diferente da representada na imagem.",
+      "D": "O ângulo anatômico do fêmur é definido pelo eixo diafisário do próprio fêmur, uma construção diferente da representada, que envolve especificamente o aparelho extensor."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "joelho-0152": {
+    "conceito": "Na técnica de coleta dos tendões flexores para enxerto (semitendíneo e grácil) na reconstrução ligamentar do joelho, o tendão do músculo **sartório** (e sua expansão fascial, que compõe a porção mais superficial da pata de ganso) é afastado para permitir o acesso e a identificação dos tendões mais profundos do semitendíneo e do grácil, que serão então dissecados e retirados com o auxílio do extrator de tendões (stripper).",
+    "correta": "B. O tendão afastado é o do músculo sartório.",
+    "incorretas": {
+      "A": "O tendão do grácil é uma das estruturas a serem coletadas (não afastadas) nessa técnica, situando-se mais profundamente ao sartório.",
+      "C": "O tendão do semitendíneo também é uma das estruturas a serem coletadas nessa técnica, e não a que está sendo afastada para permitir o acesso.",
+      "D": "O tendão do semimembranáceo não é utilizado como enxerto nessa técnica clássica de coleta dos flexores (que envolve o semitendíneo e o grácil), nem corresponde à estrutura afastada na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "joelho-0153": {
+    "conceito": "A musculatura da perna recebe sua inervação motora de diferentes ramos do nervo isquiático: o compartimento posterior é inervado pelo nervo tibial, o compartimento anterior pelo nervo fibular profundo, e o compartimento lateral pelo nervo fibular superficial.",
+    "correta": "C. É inervado pelo nervo fibular profundo.",
+    "incorretas": {
+      "A": "O nervo sural é um ramo sensitivo (formado por contribuições do tibial e do fibular comum), sem função motora sobre a musculatura da perna.",
+      "B": "O nervo tibial inerva a musculatura do compartimento posterior da perna, uma inervação distinta da indicada pelo gabarito para o músculo representado na imagem.",
+      "D": "O nervo fibular superficial inerva a musculatura do compartimento lateral da perna, uma inervação distinta da indicada pelo gabarito para essa questão."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false,
+    "alerta": "A imagem enquadra a face posterior da perna, região classicamente ocupada pelo tríceps sural (gastrocnêmio e sóleo), de inervação tibial — o que, à primeira vista, tende a apontar para a alternativa B, não para a C indicada pelo gabarito (fibular profundo, associado ao compartimento anterior). É possível que a seta assinale, dentro desse enquadramento, uma porção mais lateral/profunda não identificável com segurança nesta reprodução da imagem; vale a conferência direta da fonte original antes de usar este comentário para estudo."
+  },
+  "joelho-0154": {
+    "conceito": "O músculo indicado, no compartimento anterior da coxa (grupo do quadríceps femoral), é inervado pelo nervo **femoral**, responsável por toda a musculatura extensora do joelho nesse compartimento (reto femoral e os três vastos), além de outros músculos anteriores da coxa, como o sartório e o pectíneo.",
+    "correta": "B. É inervado pelo nervo femoral.",
+    "incorretas": {
+      "A": "O nervo isquiático inerva a musculatura posterior da coxa (isquiotibiais), não o compartimento anterior onde se localiza o músculo indicado.",
+      "C": "O nervo obturador inerva predominantemente o compartimento medial (adutor) da coxa, não o compartimento anterior do quadríceps.",
+      "D": "O nervo glúteo inferior inerva o músculo glúteo máximo, na região posterior do quadril, sem relação com a musculatura anterior da coxa indicada."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "joelho-0166": {
+    "conceito": "A estrutura assinalada na ressonância magnética corresponde ao **ligamento cruzado anterior**, identificado por seu trajeto oblíquo característico na região intercondilar, partindo da face medial do côndilo femoral lateral em direção à área intercondilar anterior da tíbia.",
+    "correta": "B. A estrutura assinalada é o ligamento cruzado anterior.",
+    "incorretas": {
+      "A": "O ligamento de Wrisberg é uma estrutura meniscofemoral menor, de trajeto e espessura diferentes do feixe ligamentar central mais espesso assinalado.",
+      "C": "\"Menisco femoral\" não corresponde a uma denominação anatômica padrão para uma estrutura específica do joelho.",
+      "D": "O ligamento cruzado posterior tem um trajeto mais vertical e posterior, partindo da face lateral do côndilo femoral medial, diferente do trajeto oblíquo anterior representado."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
