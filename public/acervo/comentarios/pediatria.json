@@ -5759,5 +5759,247 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "pediatria-0410": {
+    "conceito": "O método de **Ilizarov** (fixação externa circular com compressão-distração) é uma das opções de tratamento para a pseudartrose congênita da tíbia, especialmente nos casos refratários a outras técnicas. Sua indicação, no entanto, costuma ser reservada para crianças um pouco maiores, a partir de aproximadamente **4 anos de idade** — em crianças muito pequenas, os segmentos ósseos são finos e frágeis demais para uma fixação estável com fios/pinos do aparelho circular, além de a cooperação da criança e da família com os cuidados do fixador externo (limpeza dos trajetos, ajustes periódicos) ser mais difícil de obter em idades muito precoces.",
+    "correta": "D. O método de Ilizarov na pseudartrose congênita da tíbia é indicado a partir dos quatro anos de idade.",
+    "incorretas": {
+      "A": "Um ano é uma idade precoce demais, com osso ainda muito fino e frágil para a fixação estável necessária.",
+      "B": "Dois anos ainda é considerado precoce para a fixação circular externa nesse contexto.",
+      "C": "Três anos ainda antecipa um pouco a idade geralmente recomendada para essa técnica."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0414": {
+    "conceito": "Na doença de Legg-Calvé-Perthes, a fase de **necrose** é a fase inicial do processo patológico, em que o suprimento sanguíneo da epífise femoral é interrompido. Histologicamente, essa fase se caracteriza pela **ausência de osteócitos viáveis** nas lacunas ósseas ou pela presença de osteócitos com **núcleo picnótico** (sinal de morte celular) — achados que refletem diretamente a morte do tecido ósseo por falta de suprimento vascular, antes que os processos de reabsorção (fragmentação) e reconstrução óssea (reossificação e remodelação) se iniciem nas fases seguintes da doença.",
+    "correta": "B. A ausência de osteócitos viáveis ou a presença de osteócitos com núcleo picnótico caracteriza a fase de necrose na doença de Perthes.",
+    "incorretas": {
+      "A": "A fase de fragmentação é caracterizada pela reabsorção ativa do osso necrótico já estabelecido, não pelo achado histológico inicial de morte celular.",
+      "C": "A fase de sequela é a fase residual final da doença, após a remodelação, não a fase de morte celular inicial.",
+      "D": "A fase de remodelação é a fase mais tardia, de reconstituição da forma da cabeça femoral, não a fase histológica de necrose celular."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0415": {
+    "conceito": "A classificação de **Loder e colaboradores** para a epifisiólise proximal do fêmur, baseada na capacidade de apoio do membro (estável versus instável), tem uma correlação direta e clinicamente muito relevante com o risco de **osteonecrose** da cabeça femoral: os escorregamentos classificados como **instáveis** (quando a criança não consegue deambular, mesmo com auxílio de muletas) apresentam um risco de necrose avascular dramaticamente maior do que os escorregamentos estáveis — justamente por envolver maior grau de lesão dos vasos retinaculares responsáveis pela irrigação da epífise no momento do trauma agudo. Essa correlação entre instabilidade e risco de necrose é a principal contribuição prática da classificação de Loder para o manejo clínico da epifisiólise aguda.",
+    "correta": "B. Segundo Loder e colaboradores, a instabilidade é o fator preditivo mais relacionado ao risco de osteonecrose na epifisiólise aguda.",
+    "incorretas": {
+      "A": "A idade do paciente não é o fator preditivo de osteonecrose destacado na classificação de Loder, que se baseia na capacidade de apoio do membro.",
+      "C": "O grau de desvio influencia o quadro clínico geral, mas não é o fator central destacado por Loder para o risco de osteonecrose.",
+      "D": "A força do trauma não é o parâmetro avaliado pela classificação de Loder, que se baseia na capacidade de apoio (estável ou instável)."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0416": {
+    "conceito": "No diagnóstico diferencial da doença de Blount, é importante considerar outras condições que também podem causar arqueamento em varo da tíbia proximal, mimetizando o quadro radiográfico. Duas condições classicamente citadas nesse diferencial são:\n- A **displasia fibrocartilaginosa focal proximal da tíbia**, uma lesão benigna localizada na região metafisária medial que causa varização progressiva semelhante à doença de Blount, mas com etiologia e aspecto histológico distintos.\n- A **acondroplasia**, displasia esquelética que também pode cursar com deformidade em varo dos membros inferiores, por comprometimento do crescimento fisário associado à mutação do FGFR3.\n\nReconhecer esses diagnósticos diferenciais é importante para não tratar como Blount verdadeiro uma condição que exige abordagem terapêutica distinta.",
+    "correta": "A. A displasia fibrocartilaginosa proximal e a acondroplasia são diagnósticos diferenciais reconhecidos da doença de Blount.",
+    "incorretas": {
+      "B": "A doença de Gaucher e as condrodistrofias não são classicamente citadas como diagnóstico diferencial direto da doença de Blount.",
+      "C": "A displasia fibrosa distal e a picnodisostose não são os diagnósticos diferenciais classicamente associados à doença de Blount.",
+      "D": "A displasia diafisária não é classicamente associada ao diagnóstico diferencial da doença de Blount, que acomete a região metafisária proximal."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0417": {
+    "conceito": "O quadro clínico da displasia do desenvolvimento do quadril muda conforme a idade da criança. Em uma criança já com **cerca de 2 anos de idade** — momento em que o quadril já está cronicamente luxado ou subluxado, e os testes provocativos de instabilidade (Ortolani/Barlow) perdem utilidade —, o achado clínico mais consistente e confiável passa a ser a **limitação da abdução** do quadril acometido, refletindo a contratura progressiva dos adutores e a alteração estrutural já estabelecida da articulação. A assimetria de pregas cutâneas e a discrepância de membros, embora possam estar presentes, são achados menos específicos e menos consistentes nessa faixa etária.",
+    "correta": "A. Aos dois anos de idade, o principal sinal da displasia do desenvolvimento do quadril é a limitação da abdução.",
+    "incorretas": {
+      "B": "O teste de Galeazzi é mais útil em casos unilaterais e reflete principalmente a discrepância de comprimento, sendo menos consistente como sinal isolado nessa idade.",
+      "C": "A assimetria de pregas cutâneas é um achado pouco específico, podendo estar presente mesmo em crianças com quadris normais.",
+      "D": "A discrepância de membros inferiores é um achado tardio e depende de a luxação ser unilateral, sendo menos consistente como sinal principal do que a limitação de abdução."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0418": {
+    "conceito": "O método de Ponseti para tratamento do pé torto congênito segue a sequência conhecida pelo mnemônico **CAVE**: **C**avo, **A**duto e **V**aro (corrigidos juntos) e **E**quino (por último). O primeiro gesso é justamente dedicado à correção do **cavo do antepé**, obtida pela supinação e elevação do primeiro raio, alinhando o antepé ao retropé antes de qualquer manobra de abdução ser iniciada. Iniciar pela correção do varo ou do aduto sem antes corrigir o cavo apenas acentuaria a deformidade, em vez de corrigi-la — por isso a sequência específica é essencial ao método.",
+    "correta": "B. O primeiro gesso na técnica de Ponseti corrige o cavo do antepé.",
+    "incorretas": {
+      "A": "O varo do retropé é corrigido junto com o aduto, na etapa seguinte à correção do cavo, não no primeiro gesso isoladamente.",
+      "C": "O equino do retropé é corrigido por último, ao final da sequência do método, não no primeiro gesso.",
+      "D": "A adução do antepé é corrigida junto com o varo do retropé, na etapa seguinte à correção do cavo."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0419": {
+    "conceito": "Dentro do tipo I da classificação de Sillence para osteogênese imperfeita (a forma mais leve, de herança **autossômica dominante** e defeito **quantitativo** do colágeno tipo I), existe uma subdivisão relevante:\n- **Tipo IA**: dentinogênese **normal** (dentes sem alterações estruturais).\n- **Tipo IB**: dentinogênese **anormal** (dentinogênese imperfeita associada, com dentes opalescentes e frágeis).\n\nEm ambos os subtipos, a esclera é classicamente **azulada** e o defeito de colágeno é do **tipo I** (o próprio colágeno tipo I, com padrão de herança autossômica dominante) — a diferença entre IA e IB está exclusivamente no comprometimento (ou não) da dentinogênese.",
+    "correta": "D. A osteogênese imperfeita tipo IB de Sillence se caracteriza por defeito do colágeno tipo I, com dentinogênese anormal e herança autossômica dominante.",
+    "incorretas": {
+      "A": "A dentinogênese normal caracteriza o subtipo IA, não o IB, que é definido justamente pela dentinogênese anormal.",
+      "B": "O defeito de colágeno é do tipo I (o próprio colágeno tipo I), e a herança é autossômica dominante, não recessiva.",
+      "C": "O defeito de colágeno no tipo I de Sillence é do colágeno tipo I, não tipo II, e a herança é autossômica dominante, não recessiva."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0420": {
+    "conceito": "Na paralisia cerebral, os diferentes padrões de distúrbio de movimento correspondem a diferentes topografias de lesão neurológica. A **atetose** (movimentos lentos, sinuosos e involuntários, parte do espectro discinético da paralisia cerebral) está classicamente associada ao dano dos **gânglios da base** (núcleos da base) — estruturas extrapiramidais frequentemente lesadas em quadros como o kernicterus (encefalopatia bilirrubínica) ou a asfixia perinatal grave, mecanismos clássicos associados a esse subtipo de paralisia cerebral.",
+    "correta": "C. A atetose, na paralisia cerebral, é consequente ao dano nos gânglios da base.",
+    "incorretas": {
+      "A": "O dano cerebelar está associado ao padrão atáxico da paralisia cerebral, não à atetose.",
+      "B": "O hipocampo não é a estrutura classicamente associada aos distúrbios de movimento da paralisia cerebral.",
+      "D": "O dano ao neurônio motor superior (vias piramidais/córtex motor) está associado ao padrão espástico, não à atetose."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0421": {
+    "conceito": "A artrogripose múltipla congênita, além das contraturas articulares características, pode se associar a anomalias viscerais em uma parcela dos pacientes, sobretudo nas formas sindrômicas. Entre os sistemas orgânicos mais frequentemente relatados com anomalias associadas está o **trato gastrointestinal (intestino)** — incluindo defeitos da parede abdominal, malrotação intestinal e outras anomalias digestivas — refletindo, em parte, a origem comum de comprometimento da mobilidade fetal (acinesia fetal) que também pode afetar o desenvolvimento de estruturas viscerais durante a vida intrauterina.",
+    "correta": "C. A lesão visceral mais frequentemente associada à artrogripose múltipla congênita ocorre no intestino.",
+    "incorretas": {
+      "A": "Anomalias cardíacas podem ocorrer em algumas síndromes artrogripóticas específicas, mas não são a associação visceral mais frequentemente citada de forma geral.",
+      "B": "Anomalias pulmonares não são a associação visceral mais frequentemente citada na artrogripose múltipla congênita.",
+      "D": "Anomalias pancreáticas não são a associação visceral mais frequentemente citada na artrogripose múltipla congênita."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0422": {
+    "conceito": "Em crianças com idade inferior a **2 anos**, que ainda não deambulam de forma independente, a ocorrência de uma fratura de **fêmur** é considerada um achado de alta suspeita para maus-tratos — diferente de crianças maiores já deambuladoras, em que fraturas de fêmur por quedas acidentais são mais plausíveis mecanicamente. Nessa faixa etária mais jovem, a fratura de fêmur é, de fato, uma das fraturas de ossos longos mais comumente encontradas em vítimas de trauma não acidental, justamente pela ausência de um mecanismo acidental plausível (a criança ainda não anda, então não há como cair sozinha de forma a fraturar o fêmur com a energia necessária).",
+    "correta": "B. A fratura mais comum em crianças menores de dois anos vítimas de maus-tratos é a de fêmur.",
+    "incorretas": {
+      "A": "A fratura de tíbia não é classicamente a mais associada a maus-tratos nessa faixa etária específica, em comparação à fratura de fêmur.",
+      "C": "A fratura de úmero, embora também relevante nesse contexto (sobretudo a fratura espiral), não é classicamente citada como a mais comum entre as opções.",
+      "D": "A fratura de antebraço não é classicamente a mais associada a maus-tratos nessa faixa etária específica."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0424": {
+    "conceito": "A classificação de **Loder** para a epifisiólise proximal do fêmur se baseia em um critério clínico funcional simples e de grande valor prognóstico: a **capacidade de apoio do membro** acometido. Um escorregamento é classificado como **estável** quando a criança consegue deambular, mesmo que com o auxílio de muletas, e como **instável** quando a criança não consegue apoiar o membro de forma alguma, mesmo com auxílio — essa distinção tem forte correlação com o risco de osteonecrose da cabeça femoral, sendo o critério central (e não o percentual de desvio, o ângulo de escorregamento ou o tempo de sintomas) que orienta a urgência e a conduta cirúrgica.",
+    "correta": "D. A classificação de Loder para a epifisiólise proximal do fêmur é relacionada à capacidade de apoio do membro.",
+    "incorretas": {
+      "A": "A porcentagem do desvio é avaliada por outras classificações (como a de Wilson), não pela classificação de Loder.",
+      "B": "O tempo do início dos sintomas diferencia apresentações agudas, crônicas e agudas sobre crônicas, mas não é o critério central da classificação de Loder.",
+      "C": "O ângulo do escorregamento é avaliado por métodos como o de Southwick, não pela classificação de Loder."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0425": {
+    "conceito": "No método ultrassonográfico de **Graf** para avaliação da displasia do desenvolvimento do quadril, dois ângulos principais são medidos:\n- **Ângulo α (alfa)**: reflete a inclinação do **teto ósseo** do acetábulo, refletindo o grau de ossificação e cobertura óssea da cabeça femoral.\n- **Ângulo β (beta)**: reflete a **porção cartilaginosa** do teto acetabular (o lábio cartilaginoso), avaliando o quanto essa porção cartilaginosa cobre e sustenta a cabeça femoral, sendo particularmente relevante na diferenciação entre quadris com cobertura cartilaginosa ainda adequada (tipo IIa/IIb) e aqueles com cobertura cartilaginosa já comprometida (tipos mais avançados de displasia, como o tipo D e os tipos III/IV).",
+    "correta": "A. O ângulo β de Graf, na ultrassonografia do quadril, refere-se à porção cartilaginosa do acetábulo.",
+    "incorretas": {
+      "B": "A inclinação do teto ósseo do acetábulo é avaliada pelo ângulo α, não pelo ângulo β.",
+      "C": "A cartilagem trirradiada é uma estrutura da região medial do acetábulo, relacionada ao crescimento acetabular, não ao que o ângulo β avalia.",
+      "D": "A esfericidade da cabeça femoral não é o que o ângulo β avalia — ele se refere à porção cartilaginosa do teto acetabular."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0426": {
+    "conceito": "Na doença de Legg-Calvé-Perthes, o surgimento de **cistos metafisários** na radiografia é um achado que reflete comprometimento da fise proximal do fêmur, além da epífise propriamente dita. Esses cistos representam áreas de irregularidade na ossificação endocondral da placa de crescimento, e sua presença sugere um **distúrbio potencial do crescimento fisário** — um achado clinicamente relevante, já que aponta para o risco de alterações permanentes no crescimento do colo femoral (como encurtamento do colo ou deformidades residuais), não apenas para o processo de necrose e remodelação da própria epífise.",
+    "correta": "D. Cistos metafisários na doença de Perthes sugerem distúrbio potencial do crescimento fisário.",
+    "incorretas": {
+      "A": "A subluxação lateral da cabeça femoral é um achado relacionado à cobertura acetabular, não diretamente aos cistos metafisários.",
+      "B": "A deformidade da epífise femoral é um achado da própria epífise, distinto do significado específico dos cistos metafisários, que apontam para o comprometimento fisário.",
+      "C": "A ossificação lateral alargada da epífise é um achado epifisário distinto, não o significado associado aos cistos metafisários."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0427": {
+    "conceito": "Na artrogripose múltipla congênita de etiologia **neuropática** — um dos principais mecanismos fisiopatológicos da doença, ao lado das formas miopáticas e de tecido conjuntivo —, a alteração histológica se localiza classicamente no **corno anterior da medula espinal**, com uma **diminuição do número de células** (motoneurônios) nessa região. Essa redução do número de motoneurônios leva à denervação da musculatura correspondente, causando fraqueza muscular fetal (acinesia fetal) que, por sua vez, resulta nas contraturas articulares múltiplas características da doença — um mecanismo fisiopatológico similar, em conceito, ao observado na poliomielite, mas de origem congênita/pré-natal.",
+    "correta": "A. Na artrogripose de etiologia neuropática, a alteração se localiza no corno anterior da medula espinal, com diminuição do número de células.",
+    "incorretas": {
+      "B": "O corno posterior da medula espinal está relacionado a vias sensitivas, não ao mecanismo motor envolvido na artrogripose neuropática.",
+      "C": "É uma diminuição, não um aumento, do número de células do corno anterior que caracteriza a artrogripose neuropática.",
+      "D": "O corno posterior não é a região envolvida, e o achado é de diminuição, não aumento, do número de células."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0428": {
+    "conceito": "Entre as mucopolissacaridoses, o comprometimento cognitivo (retardo mental) não é uniforme — depende do tipo específico de acúmulo de glicosaminoglicanos e de seu efeito sobre o sistema nervoso central. As síndromes classicamente associadas a **retardo mental** são: **Hurler** (MPS I, forma grave), **Hunter** (MPS II, especialmente as formas graves) e **Sanfilippo** (MPS III, na qual o comprometimento neurológico é, inclusive, a manifestação predominante, com relativamente pouco acometimento somático). Já a síndrome de **Scheie** (forma atenuada da MPS I) preserva classicamente a inteligência normal, sendo esse um dos pontos que a diferencia da forma grave (Hurler) dentro do mesmo tipo de MPS.",
+    "correta": "A. O retardo mental ocorre classicamente nas síndromes de Hurler, Hunter e Sanfilippo.",
+    "incorretas": {
+      "B": "A síndrome de Scheie preserva classicamente a inteligência normal, não devendo ser incluída no grupo das MPS com retardo mental.",
+      "C": "A síndrome de Scheie preserva classicamente a inteligência normal, sendo incorretamente incluída nessa alternativa.",
+      "D": "A síndrome de Hurler é uma das principais associadas a retardo mental e não deveria ser excluída dessa alternativa, que erroneamente inclui a síndrome de Scheie em seu lugar."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0430": {
+    "conceito": "A malformação de Arnold-Chiari tipo II, frequentemente associada à mielomeningocele, envolve o deslocamento caudal do tronco encefálico e do cerebelo através do forame magno, podendo comprimir estruturas do tronco cerebral e dos nervos cranianos baixos. Quando **sintomática**, essa compressão pode gerar diversos sinais de disfunção do tronco encefálico e de nervos cranianos, entre eles o **nistagmo** — um achado que reflete o comprometimento das vias oculomotoras e vestibulares no tronco encefálico comprimido, e que, junto a outros sinais de alerta (estridor, apneia, dificuldade de deglutição), sinaliza a necessidade de avaliação neurocirúrgica urgente para eventual descompressão.",
+    "correta": "A. A malformação de Arnold-Chiari tipo II sintomática, na mielomeningocele, pode se caracterizar por nistagmo.",
+    "incorretas": {
+      "B": "A hipertonia não é o achado mais classicamente associado à disfunção de tronco encefálico da malformação de Chiari II sintomática.",
+      "C": "A taquipneia isolada não é o achado clássico mais citado — alterações respiratórias mais associadas à disfunção de tronco incluem apneia e estridor, não taquipneia isolada.",
+      "D": "A hipoacusia não é um achado classicamente associado à disfunção de tronco encefálico da malformação de Chiari II sintomática."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0431": {
+    "conceito": "O anel pericondral de **LaCroix** é uma estrutura fibrosa que envolve circunferencialmente a periferia da placa de crescimento (fise), na transição entre a epífise, a fise e a metáfise. Sua função principal é conferir **estabilização mecânica** à placa fisária, ajudando a resistir a forças de cisalhamento e tração que, de outra forma, poderiam desestabilizar essa região estruturalmente mais frágil do osso em crescimento — uma função distinta da zona de Ranvier (relacionada ao crescimento periférico em espessura da fise) e da nutrição vascular da cartilagem, que é feita por vasos epifisários e metafisários próprios.",
+    "correta": "C. O anel pericondral de LaCroix é responsável pela estabilização mecânica da placa fisária.",
+    "incorretas": {
+      "A": "A nutrição metafisária é feita pelos vasos metafisários, não pelo anel pericondral de LaCroix.",
+      "B": "O crescimento periférico da placa fisária (em espessura) é atribuído à zona de Ranvier, não ao anel pericondral de LaCroix.",
+      "D": "A nutrição da cartilagem hialina articular depende do líquido sinovial e de vasos subcondrais, não do anel pericondral de LaCroix."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0432": {
+    "conceito": "Na tíbia vara de Blount do tipo infantil, a incidência radiográfica ântero-posterior do joelho mostra um achado característico e precoce: a formação de um **\"bico\" ósseo na região medial da metáfise/epífise proximal da tíbia** — resultado do distúrbio de crescimento assimétrico da fise medial, que cresce mais lentamente que a porção lateral, criando essa projeção óssea medial característica. Esse achado, junto com a irregularidade e o alargamento da fise medial, é um dos sinais radiográficos mais precoces e mais usados para diferenciar a doença de Blount patológica do arqueamento fisiológico simples dos membros inferiores.",
+    "correta": "C. A incidência radiográfica ântero-posterior na tíbia vara de Blount do tipo infantil mostra um \"bico\" ósseo na região medial da tíbia.",
+    "incorretas": {
+      "A": "A subluxação, quando presente, tende a ser lateral (não medial) em estágios mais avançados da doença, não o achado radiográfico inicial descrito aqui.",
+      "B": "A irregularidade da placa fisária ocorre no lado medial, não lateral, na doença de Blount.",
+      "D": "O achado clássico é descrito como um \"bico\" ósseo focal medial, não como uma ossificação assimétrica difusa da epífise proximal."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0433": {
+    "conceito": "A classificação de **Cavendish** para a deformidade de Sprengel avalia a gravidade cosmética da elevação escapular, com base na **altura** em que a escápula se encontra em relação à posição normal, observada clinicamente com o paciente vestido (avaliando o quanto a deformidade é visível esteticamente) — variando de grau 0 (sem deformidade visível) até graus mais avançados, com elevação escapular progressivamente mais evidente mesmo com roupas. Essa classificação é usada principalmente para orientar a decisão de tratamento cirúrgico, já que casos com pouca repercussão estética (graus mais baixos) podem não justificar a cirurgia, enquanto casos com deformidade muito visível (graus mais altos) tendem a ter maior indicação de correção.",
+    "correta": "C. A classificação de Cavendish para a deformidade de Sprengel baseia-se na altura da escápula.",
+    "incorretas": {
+      "A": "A rotação da escápula não é o parâmetro central avaliado pela classificação de Cavendish.",
+      "B": "A forma da escápula não é o parâmetro central avaliado pela classificação de Cavendish, que se baseia na altura/elevação.",
+      "D": "A mobilidade da escápula não é o parâmetro avaliado pela classificação de Cavendish, que se baseia na altura da elevação escapular."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0435": {
+    "conceito": "Na classificação de Sillence para osteogênese imperfeita, o **tipo IV** representa uma forma de gravidade **moderada**, intermediária entre o tipo I (mais leve) e os tipos II/III (mais graves). Diferente do tipo I (defeito puramente quantitativo do colágeno, com esclera azulada), o tipo IV se caracteriza por um defeito **tanto quantitativo quanto qualitativo** do colágeno tipo I, associado a uma **esclera normal** (não azulada) — uma combinação que o distingue tanto do tipo I (defeito só quantitativo) quanto dos tipos mais graves com esclera azulada, sendo um dos pontos frequentemente cobrados para diferenciar os subtipos dentro da classificação.",
+    "correta": "B. A osteogênese imperfeita tipo IV de Sillence se caracteriza por defeito tanto quantitativo quanto qualitativo do colágeno tipo I, com esclera normal.",
+    "incorretas": {
+      "A": "O defeito no tipo IV não é apenas quantitativo — envolve também um componente qualitativo do colágeno.",
+      "C": "A esclera no tipo IV é normal, não azulada, e o defeito envolve também um componente qualitativo, não apenas quantitativo.",
+      "D": "A esclera no tipo IV é normal, não azulada, ao contrário do que essa alternativa afirma."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0436": {
+    "conceito": "No tratamento cirúrgico da doença de Blount com osteotomia e correção **aguda** (imediata) da deformidade em varo, existe um risco reconhecido de lesão do **nervo fibular comum**, que pode ser tracionado ou comprimido durante a correção abrupta do alinhamento, especialmente quando a correção é significativa. Como o nervo fibular profundo inerva o músculo **extensor longo do hálux**, a avaliação clínica da função desse músculo (capacidade de extensão ativa do hálux) antes e depois da cirurgia é o teste mais direto e prático à beira do leito para monitorar a integridade funcional do nervo fibular no perioperatório, permitindo identificar precocemente uma eventual lesão neurológica relacionada à correção aguda da deformidade.",
+    "correta": "A. Na correção aguda da deformidade na doença de Blount, deve-se avaliar a função do extensor longo do hálux, pelo risco de lesão do nervo fibular.",
+    "incorretas": {
+      "B": "O flexor longo dos dedos é inervado pelo nervo tibial, não estando diretamente relacionado ao risco de lesão do nervo fibular nessa correção.",
+      "C": "O tibial posterior é inervado pelo nervo tibial, não sendo o músculo de escolha para monitorar o risco de lesão do nervo fibular.",
+      "D": "O gastrocnêmio é inervado pelo nervo tibial, não sendo o músculo de escolha para monitorar a função do nervo fibular nesse contexto."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0439": {
+    "conceito": "O pé talo vertical congênito, também chamado de \"pé em mata-borrão\" ou \"Persian slipper foot\", apresenta um padrão de deformidade rígida bem característico: o **retropé** encontra-se em **equinovalgo** (calcâneo em equino e valgo fixo), enquanto o **mediopé e o antepé** encontram-se em **dorsiflexão** fixa em relação ao retropé, com luxação dorsal do navicular sobre o colo do tálus — o tálus assume uma posição verticalizada característica (que dá nome à condição), criando a aparência de \"mata-borrão\" da sola do pé, com convexidade plantar em vez da concavidade normal do arco longitudinal.",
+    "correta": "B. No pé talo vertical congênito, o retropé está em equinovalgo e o mediopé/antepé em dorsiflexão.",
+    "incorretas": {
+      "A": "O retropé está em equinovalgo, não equinovaro, no pé talo vertical congênito.",
+      "C": "O mediopé/antepé está em dorsiflexão, não em flexão plantar, e o retropé está em equinovalgo, não equinovaro.",
+      "D": "O mediopé/antepé está em dorsiflexão, não em flexão plantar, no pé talo vertical congênito."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
