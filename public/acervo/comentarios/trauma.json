@@ -11192,5 +11192,60 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "trauma-0979": {
+    "conceito": "A classificação de **Boileau** para sequelas de fraturas do úmero proximal descreve quatro tipos: **tipo 1**, deformidade intracapsular sem malunião extracapsular (colapso cefálico ou necrose, com as tuberosidades em posição próxima da normal); **tipo 2**, deformidade intracapsular com necrose e malunião das tuberosidades (luxação crônica bloqueada); **tipo 3**, deformidade extracapsular por **malunião do colo cirúrgico**, com as tuberosidades em posição relativamente normal em relação à cabeça, mas o eixo diafisário desalinhado em relação ao conjunto cabeça-tuberosidades; e **tipo 4**, deformidade extracapsular com malunião grave das tuberosidades. A radiografia mostra justamente esse padrão de consolidação viciosa ao nível do colo cirúrgico, compatível com o tipo 3.",
+    "correta": "C. A sequela é classificada por Boileau como do tipo III.",
+    "incorretas": {
+      "A": "O **tipo I** corresponde a uma deformidade intracapsular isolada (colapso ou necrose da cabeça, sem malunião do colo cirúrgico), um padrão diferente da consolidação viciosa extracapsular mostrada na imagem.",
+      "B": "O **tipo II** também é intracapsular, associado à necrose e à malunião das tuberosidades em um quadro de luxação crônica bloqueada, um padrão diferente da malunião do colo cirúrgico mostrada.",
+      "D": "O **tipo IV** envolve malunião grave das tuberosidades (deformidade extracapsular mais complexa), um padrão mais avançado do que a malunião isolada do colo cirúrgico mostrada na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0980": {
+    "conceito": "Na técnica de banda de tensão para fraturas do olécrano, o ponto de cruzamento (torção) do fio deve ficar posicionado **próximo ao osso**, a uma distância máxima de cerca de **10 mm** da cortical óssea, para que a força de tensão seja transmitida eficientemente ao foco de fratura (evitando um braço de alavanca desfavorável que reduziria o efeito de compressão dinâmica). Já os fios de Kirschner devem atravessar o fragmento distal e ultrapassar o foco de fratura em pelo menos cerca de **20 mm**, garantindo ancoragem óssea suficiente para resistir ao arrancamento sob a tração exercida pelo tríceps.",
+    "correta": "A. As distâncias A e B devem medir, no máximo e no mínimo, respectivamente, 10 mm e 20 mm.",
+    "incorretas": {
+      "B": "Essa alternativa inverte os valores: é a distância entre o ponto de cruzamento do fio e o osso (A) que deve ser pequena (no máximo cerca de 10 mm), e a profundidade de ancoragem dos fios (B) que deve ser maior (pelo menos cerca de 20 mm), não o contrário.",
+      "C": "O valor mínimo de ancoragem dos fios (B) deve ser de pelo menos cerca de 20 mm, não apenas 15 mm, para garantir resistência adequada ao arrancamento.",
+      "D": "Além de inverter a ordem das distâncias, o valor de 10 mm como mínimo de ancoragem dos fios é insuficiente; o valor de referência é de pelo menos cerca de 20 mm."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0991": {
+    "conceito": "O **flexor superficial dos dedos** ocupa a segunda camada muscular do antebraço volar, mais superficial do que o flexor profundo dos dedos, mas mais profundo do que o grupo superficial de origem no epicôndilo medial (pronador redondo, flexor radial do carpo, palmar longo e flexor ulnar do carpo). Seu ventre muscular central, visível na secção transversa do terço médio do antebraço, dá origem a quatro tendões que se dirigem às falanges médias do segundo ao quinto dedos.",
+    "correta": "A. A seta indica o músculo flexor superficial dos dedos.",
+    "incorretas": {
+      "B": "O **flexor profundo dos dedos** ocupa a camada mais profunda do compartimento anterior, junto à ulna e à membrana interóssea, uma posição mais posterior do que a indicada pela seta.",
+      "C": "O **flexor longo do polegar** ocupa uma posição mais radial (lateral) no antebraço, junto ao rádio, distinta da posição mais central indicada.",
+      "D": "O **flexor radial do carpo** pertence à camada mais superficial, junto ao epicôndilo medial, formando um tendão longo e distinto que segue até a base do segundo metacarpo, uma posição mais superficial do que a indicada."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0992": {
+    "conceito": "O músculo **abdutor longo do polegar** origina-se em uma área ampla nas faces posteriores do rádio, da ulna e da membrana interóssea, no terço médio do antebraço, sendo o mais proximal dos músculos do primeiro compartimento dorsal do punho, antes de seu tendão cruzar obliquamente em direção à base do primeiro metacarpo.",
+    "correta": "C. A seta representa a origem do músculo abdutor longo do polegar.",
+    "incorretas": {
+      "A": "O **extensor longo do polegar** origina-se mais distalmente, na face posterior do terço médio da ulna, uma origem mais restrita à ulna, e não à ampla área do rádio, ulna e membrana interóssea indicada.",
+      "B": "O **extensor curto do polegar** origina-se mais distalmente do que o abdutor longo, no rádio e na membrana interóssea, sendo o segundo músculo (não o primeiro) do primeiro compartimento dorsal em relação à origem proximal indicada.",
+      "D": "O **extensor ulnar do carpo** origina-se no epicôndilo lateral do úmero (tendão extensor comum) e na borda posterior da ulna, uma origem mais proximal e humeral, diferente da origem mais distal no rádio/ulna/membrana interóssea indicada."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0994": {
+    "conceito": "A incidência descrita por **Ziter** para o diagnóstico da fratura do escafoide é obtida posicionando a mão em desvio ulnar máximo, com o punho cerrado e pressionado contra o chassi radiográfico, uma manobra que estira o ligamento escafolunato e realinha o escafoide paralelamente ao plano do filme, alongando seu perfil e reduzindo a sobreposição com os ossos carpais adjacentes, o que melhora a visualização de traços de fratura sutis que passariam despercebidos nas incidências padrão do punho.",
+    "correta": "A. A incidência demonstrada é descrita por Ziter.",
+    "incorretas": {
+      "B": "A incidência de **Stecher** também alonga o perfil do escafoide, por meio de desvio ulnar combinado à angulação do tubo de raios X (cerca de 20°), uma técnica relacionada, porém distinta da manobra específica de punho cerrado pressionado contra o chassi mostrada.",
+      "C": "A incidência de **Schneck I** faz parte de uma série de projeções oblíquas específicas do punho, com finalidade e posicionamento diferentes da manobra de desvio ulnar com punho cerrado mostrada.",
+      "D": "A incidência de **Schneck II**, assim como a Schneck I, corresponde a outra projeção oblíqua específica, não à manobra de desvio ulnar com o punho cerrado mostrada na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
