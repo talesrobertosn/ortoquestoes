@@ -6733,5 +6733,82 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "pediatria-0168": {
+    "conceito": "A classificação de **Aitken** para o defeito femoral focal proximal (DFFP) estratifica a deformidade em quatro tipos (A a D) conforme a integridade do fêmur proximal e do acetábulo. No **tipo B**, a cabeça femoral está presente e o acetábulo é discretamente displásico, mas **não há continuidade óssea** entre a cabeça/colo femoral e a diáfise (uma pseudartrose que não se une espontaneamente ao longo do crescimento, ao contrário do tipo A), compatível com a descontinuidade entre a cabeça femoral e o segmento distal mostrada na imagem, com a cabeça ainda bem formada.",
+    "correta": "B. A imagem corresponde ao tipo B.",
+    "incorretas": {
+      "A": "No **tipo A**, todo o fêmur está presente como uma unidade óssea contínua (a pseudartrose inicial tende a se unir espontaneamente com o crescimento), e o acetábulo é normal ou quase normal, um padrão mais contínuo do que a descontinuidade mostrada.",
+      "C": "No **tipo C**, a cabeça femoral é ausente ou gravemente hipoplásica, e o acetábulo é acentuadamente displásico, um padrão mais grave do que a cabeça femoral ainda bem formada mostrada na imagem.",
+      "D": "No **tipo D**, o mais grave, tanto a cabeça femoral quanto o acetábulo estão ausentes, restando apenas um remanescente femoral proximal rudimentar, um padrão muito mais grave do que o mostrado na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0188": {
+    "conceito": "A **fratura metafisária em alça de balde** (\"bucket-handle fracture\"), uma variante da clássica lesão metafisária (CML) em que o fragmento periférico assume um contorno curvo, semelhante a uma alça, decorre de forças de cisalhamento e torção aplicadas ao membro (como ao puxar ou sacudir a criança). É um achado radiográfico de alta especificidade para **maus tratos** infantis, praticamente patognomônico de trauma não acidental, especialmente em lactentes.",
+    "correta": "B. A imagem corresponde à fratura metafisária em alça de balde, associada a maus tratos.",
+    "incorretas": {
+      "A": "A fratura metafisária \"do canto\" descreve um fragmento mais angular e reto, diferente do contorno curvo em alça de balde mostrado especificamente nesta imagem (ainda que ambas as variantes compartilhem o mesmo mecanismo e a mesma associação com maus tratos).",
+      "C": "As linhas escleróticas, associadas à osteogênese imperfeita, representam um padrão radiográfico diferente (bandas de densidade alterada ao longo da metáfise, refletindo o uso de bifosfonatos, por exemplo), não o fragmento curvo agudo mostrado na imagem.",
+      "D": "A reação periosteal, associada à osteomielite, mostra formação de osso novo ao longo da diáfise/metáfise, um achado radiográfico distinto do fragmento ósseo destacado mostrado na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0193": {
+    "conceito": "A osteotomia de **Dwyer**, uma osteotomia de fechamento em cunha lateral do calcâneo, é utilizada no tratamento do pé cavo varo para corrigir o varismo do retropé, removendo uma cunha óssea lateral e fechando-a para realinhar o eixo do calcâneo, exatamente o procedimento representado na imagem, com a linha de osteotomia calcânea e a correção do varismo indicada pelas setas.",
+    "correta": "C. A osteotomia representada é a de Dwyer.",
+    "incorretas": {
+      "A": "A osteotomia de **Cole** é uma osteotomia do médio-pé (dorsal, de fechamento em cunha), destinada a corrigir o cavo, uma localização e um objetivo diferentes da osteotomia calcânea mostrada.",
+      "B": "A osteotomia de **Japas** é uma osteotomia em V do médio-tarso, também voltada à correção do cavo no médio-pé, não do varismo do retropé mostrado.",
+      "D": "O procedimento de **Steindler** é uma liberação de partes moles (fasciotomia plantar), não uma osteotomia óssea como a mostrada na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0194": {
+    "conceito": "A doença de **Sinding-Larsen-Johansson** é uma apofisite de tração no polo inferior da patela, no ponto de origem do tendão patelar, análoga à doença de Osgood-Schlatter (que ocorre na tuberosidade tibial, na inserção distal do mesmo tendão). Ocorre por **tração repetitiva** na junção osteotendínea durante atividades esportivas de impacto em crianças em crescimento, e não por um mecanismo isquêmico (como nas osteocondroses articulares clássicas), refletindo-se radiograficamente por fragmentação e irregularidade do polo inferior da patela, como mostrado na imagem.",
+    "correta": "D. A imagem refere-se à doença de Sinding-Larsen-Johansson, que ocorre devido à tração repetitiva na junção do tendão com o osso.",
+    "incorretas": {
+      "A": "A doença de **Van Neck** acomete a sincondrose isquiopúbica, uma localização anatômica completamente diferente do polo inferior da patela mostrado, e também não é causada por mecanismo isquêmico.",
+      "B": "Embora o mecanismo de tração esteja correto, a doença de Van Neck não corresponde à localização patelar mostrada na imagem.",
+      "C": "A localização (patela) está correta, mas o mecanismo da doença de Sinding-Larsen-Johansson é de tração repetitiva, não isquêmico."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0199": {
+    "conceito": "A haste telescopada de **Fassier-Duvall** é um sistema moderno de fixação intramedular para o tratamento cirúrgico das fraturas e deformidades ósseas na osteogênese imperfeita, projetado como peça única, inserido de forma minimamente invasiva (por via percutânea, sem necessidade de artrotomia), com um mecanismo de expansão telescópica que acompanha o crescimento longitudinal do osso, ancorado proximalmente por uma peça em T, reduzindo a necessidade de revisões cirúrgicas frequentes.",
+    "correta": "D. A osteotomia com fixação demonstrada utiliza a haste telescopada de Fassier-Duvall.",
+    "incorretas": {
+      "A": "A técnica de **Sofield** (ou Sofield-Millar) refere-se à técnica de múltiplas osteotomias com realinhamento dos fragmentos (\"shish kebab\"), tradicionalmente associada a hastes não telescopadas ou a sistemas mais antigos, distinta do sistema moderno de peça única mostrado.",
+      "B": "Um pino de **Steinmann** é um dispositivo de fixação simples e não expansível, sem o mecanismo telescópico mostrado na imagem.",
+      "C": "O sistema **Russell-Taylor** é destinado a fraturas do fêmur em adultos (fêmur proximal/diafisário), não um sistema telescópico pediátrico para osteogênese imperfeita."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0200": {
+    "conceito": "O ângulo coxa-pé (\"thigh-foot angle\"), formado entre o eixo longitudinal da coxa e o eixo do pé, é o parâmetro clínico utilizado para avaliar a **torção tibial**: um ângulo com o pé rodado internamente em relação ao eixo da coxa sugere torção tibial interna, enquanto um ângulo com rotação externa excessiva sugere torção tibial externa, exatamente a medida angular representada na imagem, entre o eixo dos membros inferiores e o eixo dos pés.",
+    "correta": "B. O teste avalia torção tibial interna ou externa.",
+    "incorretas": {
+      "A": "O varo ou valgo do joelho é avaliado pelo alinhamento angular do próprio joelho (medindo a distância intermaleolar ou intercondilar), não pela relação angular entre o eixo da coxa e o pé mostrada na imagem.",
+      "C": "A adução ou abdução dos metatarsos é avaliada especificamente pelo alinhamento do antepé em relação ao retropé (linha bissetriz do calcanhar), um teste diferente e mais focal do que a avaliação rotacional de todo o membro mostrada.",
+      "D": "A anteversão ou retroversão do colo femoral é avaliada pela rotação do quadril (por exemplo, no teste de Craig, com a criança em decúbito ventral e o joelho fletido), um teste diferente do alinhamento coxa-pé mostrado na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0229": {
+    "conceito": "No método de **Graf** para avaliação ultrassonográfica do quadril pediátrico, o **ângulo alfa** mede a inclinação do teto ósseo do acetábulo (deve ser maior que 60° em um quadril maduro e normal), enquanto o **ângulo beta** mede a inclinação do teto cartilaginoso/labral (deve ser menor que 55° em um quadril normal, refletindo um labrum bem posicionado, cobrindo adequadamente a cabeça femoral, sem estar horizontalizado ou revertido por deslocamento).",
+    "correta": "A. X representa o ângulo beta e é normal se menor que 55°.",
+    "incorretas": {
+      "B": "O ângulo alfa é considerado normal quando **maior** que 60° (refletindo boa cobertura óssea do acetábulo), não menor que 60° como afirma esta alternativa; um ângulo alfa menor indica um acetábulo raso e displásico.",
+      "C": "A seta amarela, posicionada junto à borda lateral do ílio, corresponde mais à linha de base (referência do ílio), não especificamente ao teto ósseo do acetábulo em si.",
+      "D": "A seta vermelha, direcionada à região do lábio/teto cartilaginoso, não corresponde à parede lateral da bacia, uma estrutura anatômica diferente."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
