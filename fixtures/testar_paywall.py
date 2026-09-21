@@ -58,7 +58,7 @@ for trecho in (
     "payer_email: usuario.email",
     "X-Idempotency-Key",
     "checkout_sandbox_requer_conta_teste",
-    "token.startsWith('TEST-')",
+    "MERCADO_PAGO_AMBIENTE",
 ):
     assert trecho in CRIAR_CHECKOUT, f"Contrato de checkout ausente: {trecho}"
 
