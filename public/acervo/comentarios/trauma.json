@@ -11393,5 +11393,49 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "trauma-0579": {
+    "conceito": "A **osteonecrose da tróclea** umeral, embora rara, é uma complicação possível após traumas do cotovelo que comprometam o suprimento vascular dessa região (fraturas do úmero distal, luxações ou lesões associadas). Radiograficamente, manifesta-se por aumento de densidade (esclerose) e alteração do contorno da tróclea, como visível na imagem, refletindo a morte do tecido ósseo por interrupção do fluxo sanguíneo local, distinta de alterações de consolidação ou de variações anatômicas congênitas.",
+    "correta": "A. A imagem representa osteonecrose da tróclea.",
+    "incorretas": {
+      "B": "Uma **consolidação viciosa** mostraria um traço de fratura consolidado em posição alterada, um padrão de deformidade angular ou rotacional, diferente do aumento de densidade (esclerose) característico da necrose mostrado na imagem.",
+      "C": "Uma **deficiência congênita** da tróclea estaria presente desde a infância, sem o padrão de alteração de densidade óssea relacionado a um evento vascular agudo, como sugerido pela imagem.",
+      "D": "\"Desgaste central da região distal do úmero\" é uma descrição vaga que não corresponde à alteração radiográfica específica (esclerose por necrose avascular) mostrada na imagem."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0610": {
+    "conceito": "A **regra de Spence** avalia indiretamente a integridade do ligamento transverso do atlas: na radiografia transoral (incidência de odontoide), mede-se o somatório do afastamento lateral (overhang) das massas laterais de C1 em relação às bordas do corpo de C2, de ambos os lados. Um somatório maior que aproximadamente 6,9 mm (7 mm) sugere que o ligamento transverso já não é capaz de conter as massas laterais, indicando sua provável ruptura. Neste caso, a soma dos espaços A (6,5 mm) e B (2,0 mm) totaliza 8,5 mm, ultrapassando esse limiar.",
+    "correta": "C. O significado desse desvio é que ocorreu lesão do ligamento transverso.",
+    "incorretas": {
+      "A": "O **ligamento atlanto-axial posterior** não é o ligamento avaliado por essa medida específica de afastamento das massas laterais; a regra de Spence avalia a integridade do ligamento transverso.",
+      "B": "Essa medida radiográfica é um indicador de instabilidade **ligamentar** (do ligamento transverso), não um marcador direto de lesão neurológica associada, que dependeria de achados clínicos e de imagem específicos da medula.",
+      "D": "A **luxação facetária** é identificada por outros sinais radiográficos (malalinhamento vertebral em incidências laterais), não pela medida de afastamento das massas laterais de C1 avaliada nesta incidência transoral."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0613": {
+    "conceito": "Nas fraturas extra-articulares da base ou da diáfise do primeiro metacarpo, a articulação trapeziometacarpiana (primeira carpometacarpiana), altamente móvel, é capaz de compensar parcialmente alguma angulação residual sem grande prejuízo funcional. Ainda assim, quando a angulação ultrapassa cerca de **30°**, essa compensação deixa de ser suficiente para manter a função da pinça e a amplitude de movimento do polegar, sendo indicada a redução fechada para corrigir o desvio.",
+    "correta": "A. A redução fechada é indicada a partir de 30° de desvio.",
+    "incorretas": {
+      "B": "O valor de 40° já é superior ao limiar de angulação aceito antes de se tornar necessária a correção, geralmente citado como 30°.",
+      "C": "O valor de 50° é ainda mais distante do limiar de referência para indicação de redução fechada dessas fraturas.",
+      "D": "O valor de 60° representa uma angulação excessiva, bem acima do limiar de 30° geralmente aceito como indicação de correção."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0626": {
+    "conceito": "A **equimose plantar** (\"plantar ecchymosis sign\"), um hematoma que se manifesta na face plantar do médio-pé (e não apenas dorsalmente), é um sinal clínico clássico e altamente sugestivo de **fratura-luxação da articulação de Lisfranc** (tarsometatársica). Ocorre pela ruptura do complexo ligamentar de Lisfranc e de estruturas vasculares associadas na base do médio-pé, sendo um achado que deve levantar forte suspeita dessa lesão mesmo quando as radiografias iniciais parecem sutis ou pouco alteradas.",
+    "correta": "D. O sinal deve levantar suspeita de fratura-luxação da articulação de Lisfranc.",
+    "incorretas": {
+      "A": "Uma fratura isolada de **metatarsos**, sem lesão da articulação tarsometatársica, não é classicamente associada a esse padrão específico de equimose plantar como sinal de alarme.",
+      "B": "A fratura-luxação da articulação de **Chopart** (mediotársica) tem sua própria apresentação clínica, mas o sinal clássico de equimose plantar do médio-pé é especificamente associado à lesão de Lisfranc, não à de Chopart.",
+      "C": "A fratura de **calcâneo** costuma produzir equimose mais caracteristicamente na região do retropé/tornozelo, e não esse padrão específico de equimose plantar no médio-pé associado à lesão de Lisfranc."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
