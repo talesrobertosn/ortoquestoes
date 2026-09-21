@@ -4648,5 +4648,170 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "pediatria-0173": {
+    "conceito": "Na avaliação de suspeita de maus-tratos infantis, é importante distinguir fraturas de **alta especificidade** (fortemente sugestivas de trauma não acidental) das fraturas comuns e inespecíficas (frequentes em acidentes domésticos rotineiros da infância). Entre as fraturas classicamente associadas a alta especificidade para abuso estão: as lesões metafisárias clássicas (\"corner/bucket-handle fractures\"), fraturas de costelas posteriores, fraturas de escápula, esterno e, especificamente, fraturas do **processo espinhoso** vertebral — todas incomuns em quedas ou acidentes triviais e que exigem mecanismo de força significativa e direcionada, raramente presente em traumas acidentais típicos da infância.\n\nJá as fraturas de clavícula, de falanges da mão e de diáfise de ossos longos (fêmur em não deambuladores à parte) são extremamente comuns em quedas acidentais e brincadeiras normais, tendo, isoladamente, especificidade muito mais baixa para abuso.",
+    "correta": "C. A fratura do processo espinhoso vertebral tem alta especificidade para maus-tratos infantis.",
+    "incorretas": {
+      "A": "A fratura de clavícula é extremamente comum em quedas acidentais e no próprio parto, tendo baixa especificidade isolada para abuso.",
+      "B": "Fraturas de falange da mão são comuns em acidentes domésticos triviais, com baixa especificidade isolada para abuso.",
+      "D": "Fraturas de diáfise de ossos longos, isoladamente, são comuns em quedas acidentais em crianças maiores, tendo especificidade mais baixa que as lesões listadas como clássicas de abuso."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0174": {
+    "conceito": "O método de **Menelaus** é uma forma simplificada e amplamente usada na prática clínica para estimar o crescimento residual dos membros inferiores e prever a discrepância final de comprimento, sem depender de tabelas de idade óssea. Após os **9 anos de idade**, o método assume taxas de crescimento anual aproximadamente constantes para cada fise:\n- **Fêmur distal**: cerca de **9 mm/ano**.\n- **Tíbia proximal**: cerca de **6 mm/ano**.\n\nEssa relação (fêmur distal contribuindo com mais crescimento anual que a tíbia proximal) reflete a maior contribuição relativa da fise femoral distal para o comprimento total do membro, e é a base para os cálculos simplificados de discrepância projetada usados à beira do leito.",
+    "correta": "A. Pelo método de Menelaus, após os 9 anos, o fêmur distal cresce cerca de 9 mm/ano e a tíbia proximal cerca de 6 mm/ano.",
+    "incorretas": {
+      "B": "Os valores estão invertidos — é o fêmur distal que cresce mais (9 mm/ano) e a tíbia proximal menos (6 mm/ano), não o contrário.",
+      "C": "Os valores de 15 e 8 mm superestimam as taxas de crescimento anual consideradas pelo método de Menelaus após os 9 anos.",
+      "D": "Os valores de 8 e 15 mm não correspondem às taxas de crescimento anual do método de Menelaus, além de estarem na ordem invertida."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0175": {
+    "conceito": "A pseudartrose congênita da tíbia é classicamente associada a uma deformidade angular no plano em que o ápice da curvatura se projeta para **anterolateral** — diferente do arqueamento **posteromedial** da tíbia, que é uma condição distinta, geralmente benigna e autolimitada (associada a discrepância de comprimento, mas que tende a corrigir espontaneamente sem evoluir para verdadeira pseudartrose).\n\nEssa distinção é clinicamente crucial: o arqueamento anterolateral (frequentemente associado à neurofibromatose tipo 1) é a condição de alto risco para fratura patológica e pseudartrose verdadeira — exigindo acompanhamento rigoroso e, muitas vezes, órteses profiláticas mesmo antes de qualquer fratura ocorrer, já que a pseudartrose estabelecida é notoriamente difícil de tratar.",
+    "correta": "A. A pseudartrose congênita da tíbia está associada à deformidade angular do tipo anterolateral.",
+    "incorretas": {
+      "B": "O arqueamento anteromedial não é o padrão clássico associado à pseudartrose congênita da tíbia.",
+      "C": "O arqueamento posterolateral não é uma apresentação clássica associada a essa condição.",
+      "D": "É o arqueamento posteromedial que corresponde a uma condição distinta e de bom prognóstico, geralmente autolimitada — não à pseudartrose congênita, que se associa ao arqueamento anterolateral."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0176": {
+    "conceito": "O **índice acetabular** é uma medida radiográfica clássica usada na avaliação da displasia do desenvolvimento do quadril, formado pelo ângulo entre a linha de Hilgenreiner e uma linha traçada do centro do acetábulo até sua borda látero-superior — quanto maior o índice, mais raso (displásico) é o teto acetabular. Embora o valor de referência varie um pouco conforme a idade da criança (sendo mais alto ao nascimento e diminuindo progressivamente com o crescimento), o valor mais comumente adotado como **limite superior da normalidade** na criança pequena é de aproximadamente **30 graus** — valores acima disso sugerem displasia acetabular e justificam investigação e acompanhamento mais próximo.",
+    "correta": "C. O limite superior da normalidade do índice acetabular na criança é de aproximadamente 30 graus.",
+    "incorretas": {
+      "A": "15 graus é um valor baixo demais, mais próximo do índice acetabular esperado em crianças maiores e adolescentes já com o teto acetabular bem formado.",
+      "B": "20 graus subestima o limite superior da normalidade classicamente adotado para a criança pequena.",
+      "D": "40 graus já é francamente um valor patológico, indicando displasia significativa, não o limite superior da faixa normal."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0177": {
+    "conceito": "O **GMFCS (Gross Motor Function Classification System)** classifica a função motora grossa na paralisia cerebral em cinco níveis, de I (função quase normal) a V (dependência total, sem controle de tronco e cabeça). A distinção entre os níveis IV e V é particularmente relevante na prática:\n- **Nível IV**: a criança **não deambula de forma independente**, mas consegue se locomover de forma autônoma usando **cadeira de rodas** (manual ou motorizada), mantendo algum controle de tronco suficiente para essa mobilização.\n- **Nível V**: dependência **total**, sem controle antigravitacional de tronco e cabeça suficiente, exigindo transporte manual ou tecnologia assistiva avançada mesmo para mobilização — a criança **não consegue mobilizar a própria cadeira de rodas** de forma autônoma.\n\nOu seja, a capacidade de se autopropelir na cadeira de rodas, mesmo sem deambular, é justamente o que caracteriza o nível IV, diferenciando-o do nível V.",
+    "correta": "C. A criança não deambuladora que consegue mobilizar sua própria cadeira de rodas é classificada como GMFCS nível IV.",
+    "incorretas": {
+      "A": "O nível II do GMFCS corresponde a crianças que deambulam de forma independente, com limitações apenas em superfícies irregulares ou distâncias longas.",
+      "B": "O nível III corresponde a crianças que deambulam com apoio de dispositivos auxiliares de marcha, não a não deambuladoras.",
+      "D": "O nível V corresponde à dependência total, sem capacidade de autopropulsão da cadeira de rodas — diferente do quadro descrito na questão."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0178": {
+    "conceito": "A osteocondrite do navicular tarsal, ou **doença de Köhler**, é uma osteocondrose autolimitada que acomete classicamente **meninos** (proporção de aproximadamente 4-5:1 em relação às meninas) e crianças **jovens**, tipicamente **antes dos 10 anos de idade** (pico entre 4 e 7 anos) — um perfil epidemiológico oposto ao de outra osteocondrose do pé, a doença de Freiberg (que acomete a cabeça do metatarso, predominando em meninas adolescentes, mais velhas).\n\nEssa diferença de perfil (Köhler: meninos jovens / Freiberg: meninas mais velhas) é um ponto clássico de diferenciação cobrado em prova entre as duas condições.",
+    "correta": "A. A osteocondrite de Köhler é mais comum em meninos e em crianças menores de 10 anos.",
+    "incorretas": {
+      "B": "O perfil de meninas mais velhas é característico da doença de Freiberg, não da doença de Köhler.",
+      "C": "A doença de Köhler predomina em meninos, não em meninas, embora a faixa etária jovem esteja correta.",
+      "D": "A doença de Köhler predomina em crianças mais jovens (antes dos 10 anos), não em crianças mais velhas."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0181": {
+    "conceito": "Durante a marcha normal, o centro de gravidade do corpo não se desloca em linha reta — ele oscila tanto no plano vertical quanto no plano horizontal (lateral), em um padrão sinusoidal suave que minimiza o gasto energético total do deslocamento. No plano **vertical**, essa oscilação tem uma amplitude de aproximadamente **4,5 cm** (o centro de gravidade está mais baixo durante o duplo apoio e mais alto durante o apoio médio/unipodal).\n\nEssa oscilação, junto com a oscilação lateral (de amplitude um pouco menor, em torno de 4 a 5 cm também), faz parte dos chamados \"determinantes da marcha\" — mecanismos biomecânicos (rotação pélvica, inclinação pélvica, flexão de joelho no apoio, entre outros) que, em conjunto, suavizam a trajetória do centro de gravidade e reduzem o custo energético do caminhar.",
+    "correta": "B. O centro de gravidade oscila aproximadamente 4,5 cm no plano vertical durante a marcha normal.",
+    "incorretas": {
+      "A": "3 cm subestima a amplitude de oscilação vertical classicamente descrita para a marcha normal.",
+      "C": "6 cm superestima a amplitude de oscilação vertical classicamente descrita.",
+      "D": "7,5 cm superestima consideravelmente a amplitude de oscilação vertical esperada na marcha normal."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0183": {
+    "conceito": "A terminologia da análise de marcha tem definições precisas que costumam ser cobradas de forma invertida ou trocada em prova. As definições corretas são:\n- **Passo (step)**: distância entre o contato do calcanhar de um pé e o contato do calcanhar do pé **oposto**.\n- **Passada (stride)**: distância entre o contato do calcanhar de um pé e o próximo contato do calcanhar do **mesmo** pé — corresponde a um ciclo completo da marcha.\n- **Cadência**: número de **passos por unidade de tempo** (geralmente expressa em passos por minuto).\n- **Ciclo da marcha**: sequência de eventos entre o contato inicial de um pé e o próximo contato inicial do mesmo pé — conceitualmente equivalente, em termos de distância percorrida, à passada.\n\nA definição de cadência como \"passos por tempo\" é direta e está correta como apresentada na alternativa B, enquanto as demais alternativas trocam as definições de passo, passada e ciclo da marcha entre si.",
+    "correta": "B. Cadência é definida como o número de passos por unidade de tempo.",
+    "incorretas": {
+      "A": "A definição apresentada (distância entre impactos sucessivos do mesmo pé) corresponde à passada, e não estritamente ao \"ciclo da marcha\" descrito dessa forma.",
+      "C": "A definição apresentada corresponde à passada (mesmo pé a mesmo pé), não ao comprimento do passo, que é medido entre pés opostos.",
+      "D": "A definição apresentada (impacto de um pé até o impacto do pé oposto) corresponde ao comprimento do passo, não à passada, que é definida entre impactos do mesmo pé."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0184": {
+    "conceito": "A classificação radiográfica de **Langenskiöld** para a doença de Blount descreve seis estágios progressivos de acometimento da fise medial proximal da tíbia. O **estágio II** é caracterizado por:\n- Formação inicial de um **bico ósseo medial** na metáfise (menos proeminente que nos estágios mais avançados).\n- **Radiotransparência e irregularidade da epífise** medial.\n- Nesse estágio, a fise ainda não desenvolveu uma barra óssea verdadeira nem um degrau metafisário estabelecido (achados dos estágios mais avançados, III em diante), por isso o tratamento ainda pode ser tentado de forma conservadora, com **órteses**, antes de se considerar cirurgia.\n\nÀ medida que a doença progride para os estágios III, IV e V, os achados radiográficos se tornam mais graves (barra óssea, degrau metafisário, fragmentação epifisária), e o tratamento cirúrgico (osteotomia, eventualmente associada a procedimentos sobre a fise) se torna necessário.",
+    "correta": "B. O estágio II de Langenskiöld caracteriza-se por bico medial, radiotransparência da epífise e tratamento com órteses.",
+    "incorretas": {
+      "A": "O bico lateral não é um achado da doença de Blount, que acomete a fise medial — além disso, o tratamento cirúrgico é reservado a estágios mais avançados.",
+      "C": "A barra óssea e o degrau metafisário são achados de estágios mais avançados (a partir do estágio III), que já exigem tratamento cirúrgico.",
+      "D": "A dupla placa epifisária não é um achado característico do estágio II de Langenskiöld."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0215": {
+    "conceito": "O centro de gravidade do corpo humano, na posição ortostática, está localizado aproximadamente **5 cm anteriormente à segunda vértebra sacral (S2)** — essa é a referência anatômica clássica usada nos textos de análise de marcha (Perry e colaboradores). Durante o ciclo normal da marcha, esse ponto não se desloca em linha reta: ele oscila tanto verticalmente quanto lateralmente, com uma amplitude de oscilação de aproximadamente **4,5 cm**.\n\nEssa combinação de localização (5 cm anterior a S2) e amplitude de oscilação (4,5 cm) resume os dois parâmetros clássicos cobrados sobre o centro de gravidade na biomecânica da marcha.",
+    "correta": "B. O centro de gravidade está localizado cerca de 5 cm anteriormente a S2, com oscilação de aproximadamente 4,5 cm durante a marcha.",
+    "incorretas": {
+      "A": "A referência anatômica clássica é S2, não S1, e a amplitude de oscilação classicamente descrita é de 4,5 cm, não 3,5 cm.",
+      "C": "A referência anatômica clássica para a localização do centro de gravidade é S2, não S1.",
+      "D": "A amplitude de oscilação classicamente descrita é de 4,5 cm, não 3,5 cm."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0216": {
+    "conceito": "Os três \"rockers\" (mecanismos de rolamento) do tornozelo durante a fase de apoio da marcha, descritos por Perry, controlam o avanço suave do corpo sobre o pé fixo no solo:\n- **1º rocker (rolamento do calcanhar)**: do contato inicial até o apoio plantar total — controlado pelo tibial anterior em **contração excêntrica**, desacelerando a queda do antepé.\n- **2º rocker (rolamento do tornozelo)**: durante o apoio médio, quando a tíbia avança sobre o pé fixo — controlado pelo **tríceps sural, principalmente o sóleo, em contração excêntrica**, freando a velocidade de avanço da tíbia e evitando o colapso em dorsiflexão excessiva.\n- **3º rocker (rolamento do antepé)**: do apoio terminal até o desprendimento dos dedos — controlado pelo tríceps sural em **contração concêntrica**, gerando o impulso final de propulsão.\n\nA distinção entre contração concêntrica e excêntrica nesses três momentos é um ponto clássico de prova: apenas no terceiro rolamento há geração ativa de força propulsiva (concêntrica); nos outros dois, a musculatura trabalha excentricamente, controlando (freando) o movimento, não impulsionando-o.",
+    "correta": "D. O sóleo, em contração excêntrica, é o principal responsável pelo controle do avanço da tíbia durante o segundo rolamento do tornozelo.",
+    "incorretas": {
+      "A": "O gastrocnêmio em contração concêntrica não corresponde ao mecanismo do segundo rolamento — a contração concêntrica do tríceps sural ocorre no terceiro rolamento, durante a propulsão.",
+      "B": "Embora o gastrocnêmio também contribua, o controle do avanço tibial no segundo rolamento é classicamente atribuído sobretudo ao sóleo, em contração excêntrica.",
+      "C": "É a contração excêntrica, não concêntrica, do sóleo que controla o avanço da tíbia no segundo rolamento — a contração concêntrica ocorre apenas no terceiro rolamento."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0217": {
+    "conceito": "A artrogripose múltipla congênita (na sua forma clássica, a amioplasia) apresenta um conjunto característico de achados clínicos: **deformidades articulares simétricas** nos membros superiores e inferiores; os membros inferiores tipicamente assumem uma atitude em **rotação externa**; e, no tratamento das deformidades do membro superior, a prioridade cirúrgica costuma ser obter **flexão ativa ou passiva do cotovelo**, já que essa função é essencial para a independência em atividades básicas (higiene, alimentação).\n\nUm ponto fundamental — e frequentemente mal compreendido — sobre a artrogripose clássica (amioplasia) é que o **desenvolvimento cognitivo costuma ser normal**, apesar das limitações físicas importantes. Isso contrasta com algumas síndromes artrogripóticas específicas (associadas a comprometimento do sistema nervoso central), mas não é a regra geral da condição.",
+    "correta": "D. Diferente do que a alternativa afirma, o desenvolvimento cognitivo costuma ser preservado nas crianças com artrogripose clássica — por isso essa é a afirmativa incorreta.",
+    "incorretas": {
+      "A": "As deformidades articulares na artrogripose costumam ser, de fato, simétricas — essa afirmativa está correta.",
+      "B": "Os membros inferiores costumam assumir uma atitude em rotação externa na artrogripose — essa afirmativa está correta.",
+      "C": "O ganho de flexão do cotovelo é, de fato, a prioridade inicial no tratamento das deformidades do membro superior — essa afirmativa está correta."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0218": {
+    "conceito": "A diferenciação entre arqueamento fisiológico dos membros inferiores e a doença de Blount patológica é feita, entre outros critérios, pelo **ângulo metáfise-diafisário de Levine-Drennan**, medido na radiografia AP da tíbia proximal. Quanto maior esse ângulo, maior a probabilidade de se tratar de uma tíbia vara patológica (Blount) em vez de um arqueamento fisiológico, que tende a se corrigir espontaneamente com o crescimento.\n\nEm uma criança de 6 anos com varo persistente — idade em que o arqueamento fisiológico já deveria ter se corrigido espontaneamente —, valores nitidamente elevados desse ângulo (como **20 graus**, o maior entre as opções apresentadas) são os mais sugestivos de doença de Blount estabelecida, reforçando a indicação de investigação e tratamento direcionado, em vez de apenas observação.",
+    "correta": "D. Um ângulo metáfise-diafisário de 20 graus é o mais sugestivo de doença de Blount entre as opções apresentadas.",
+    "incorretas": {
+      "A": "Um ângulo de 8 graus é mais compatível com arqueamento fisiológico do que com doença de Blount.",
+      "B": "Um ângulo de 11 graus está numa faixa limítrofe, menos sugestiva de Blount do que o valor mais elevado apresentado nas opções.",
+      "C": "Um ângulo de 16 graus já é preocupante, mas o valor de 20 graus, sendo ainda maior, é o mais sugestivo entre as opções apresentadas."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0220": {
+    "conceito": "A classificação de **Achterman e Kalamchi** para a hemimelia fibular (deficiência longitudinal da fíbula) baseia-se principalmente na presença e no grau de desenvolvimento da fíbula:\n- **Tipo I**: fíbula **presente**, porém hipoplásica — subdividida em **IA** (hipoplasia leve, fise distal ainda proximal à cúpula talar, mas com alguma continuidade) e **IB** (hipoplasia mais acentuada, com ausência funcional de suporte distal da fíbula).\n- **Tipo II**: fíbula **completamente ausente**.\n\nA descrição do caso — deformidade anteromedial da perna com **presença apenas da tíbia** (ou seja, ausência completa da fíbula) — corresponde exatamente à definição do **tipo II** dessa classificação.",
+    "correta": "C. A ausência completa da fíbula, com presença apenas da tíbia, corresponde ao tipo II da classificação de Achterman-Kalamchi.",
+    "incorretas": {
+      "A": "O tipo I-A corresponde a uma fíbula presente, porém hipoplásica — não à ausência completa descrita no caso.",
+      "B": "O tipo I-B também corresponde a uma fíbula presente, ainda que gravemente hipoplásica, e não à sua ausência completa.",
+      "D": "A classificação de Achterman-Kalamchi, na sua forma clássica, define os tipos I (A e B) e II — o tipo III não faz parte dessa classificação original."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0221": {
+    "conceito": "Na coxa vara do desenvolvimento, o **ângulo de Hilgenreiner-epifisário (HEA)** é a principal ferramenta radiográfica para orientar a decisão terapêutica, medido entre a linha de Hilgenreiner e a linha da fise proximal do fêmur. Ele reflete diretamente o risco de progressão da deformidade:\n- **HEA < 45°**: baixo risco de progressão — acompanhamento clínico costuma ser suficiente.\n- **HEA entre 45° e 60°**: risco intermediário — indicação relativa, individualizada conforme evolução clínica.\n- **HEA > 60°**: alto risco de progressão da deformidade em varo — indicação de tratamento cirúrgico (**osteotomia valgizante**), já que a evolução espontânea tende a ser desfavorável, com agravamento progressivo do varismo e do encurtamento do membro.\n\nCom um HEA de 65°, associado a encurtamento do membro e limitação da abdução do quadril (sinais clínicos de deformidade já estabelecida), a conduta indicada é a correção cirúrgica por osteotomia, e não apenas observação ou órtese, que não são capazes de deter a progressão nesse grau de deformidade.",
+    "correta": "C. Com um ângulo de Hilgenreiner-epifisário de 65 graus, a melhor conduta é a osteotomia, pelo alto risco de progressão da deformidade.",
+    "incorretas": {
+      "A": "A conduta expectante é reservada para ângulos de baixo risco de progressão (geralmente abaixo de 45 graus), não para um valor de 65 graus.",
+      "B": "Órteses não têm papel comprovado em deter a progressão da coxa vara do desenvolvimento nesse grau de deformidade.",
+      "D": "A epifisiodese não é a conduta indicada para a coxa vara do desenvolvimento com alto ângulo de Hilgenreiner — a osteotomia valgizante é o tratamento consagrado nesse cenário."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
