@@ -7184,5 +7184,49 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "pediatria-0281": {
+    "conceito": "A osteotomia valgizante de **Borden** para o tratamento da coxa vara do desenvolvimento é realizada na região **intertrocantérica**, corrigindo o ângulo cervicodiafisário a partir de um nível distal ao colo femoral propriamente dito. Essa localização evita manipular diretamente a fise proximal já comprometida, além de oferecer uma área óssea mais ampla e estável para a fixação do implante após a correção angular.",
+    "correta": "D. A osteotomia de Borden é realizada na região intertrocantérica.",
+    "incorretas": {
+      "A": "A região **subcapital**, logo abaixo da cabeça femoral, é um nível mais proximal do que o utilizado na osteotomia de Borden, mais associado a outras técnicas (como a osteotomia de Dunn, usada na epifisiólise).",
+      "B": "A região **basocervical**, na base do colo femoral, também é um nível mais proximal do que o intertrocantérico utilizado por Borden.",
+      "C": "A região **mediocervical**, no meio do colo femoral, é uma área de osso mais frágil e menos utilizada para osteotomias de correção angular como a de Borden."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0306": {
+    "conceito": "Em crianças com mielomeningocele, contraturas em flexão do joelho já estabelecidas e **rígidas** (não corrigíveis por alongamento passivo ou fisioterapia) exigem correção cirúrgica óssea. Uma **osteotomia extensora** do fêmur distal realinha o eixo do membro, corrigindo o flexo fixo e melhorando a capacidade de apoio em extensão durante a marcha, sendo indicada quando o grau de contratura (como os 30° descritos) já ultrapassa o que medidas conservadoras conseguem corrigir.",
+    "correta": "C. O tratamento indicado é a osteotomia extensora.",
+    "incorretas": {
+      "A": "A fisioterapia isolada não é capaz de corrigir uma contratura **rígida** já estabelecida, sendo mais eficaz na prevenção ou no manejo de contraturas ainda flexíveis.",
+      "B": "O uso de órteses associado à fisioterapia também não corrige uma deformidade angular fixa e rígida do joelho, sendo mais útil para contraturas passíveis de correção ou para manutenção pós-operatória.",
+      "D": "A liberação posterior de partes moles é mais indicada para contraturas ainda flexíveis ou de menor magnitude; quando a deformidade já é rígida e de grau considerável, a correção óssea isolada (osteotomia extensora) costuma ser suficiente e mais direta."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0328": {
+    "conceito": "Na deficiência (defeito) focal femoral proximal, a anatomia alterada do quadril e do fêmur proximal frequentemente resulta em uma postura característica de flexão, abdução e rotação externa do membro. Esse desequilíbrio funcional altera principalmente a ação dos **abdutores** (que perdem eficiência mecânica pela alteração do braço de alavanca do fêmur proximal deformado, gerando um padrão de marcha semelhante ao Trendelenburg) e dos **extensores** do quadril, comprometendo a extensão ativa e a estabilidade do quadril durante a marcha.",
+    "correta": "D. Ocorre alteração na função dos abdutores e extensores do quadril.",
+    "incorretas": {
+      "A": "Os adutores e flexores não são o par muscular classicamente descrito como mais afetado nesse contexto; a postura típica do defeito focal femoral proximal está mais associada à disfunção dos abdutores e extensores.",
+      "B": "Embora os abdutores estejam corretamente incluídos, os flexores não correspondem ao segundo grupo classicamente afetado, que são os extensores do quadril.",
+      "C": "Os adutores não correspondem ao grupo classicamente descrito; o padrão típico envolve os abdutores, não os adutores."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0351": {
+    "conceito": "A epifisiodese do trocânter maior, utilizada para limitar seu crescimento relativo quando há necrose avascular da cabeça/colo femoral com comprometimento do crescimento nessa região (levando a uma relação de sobrecrescimento trocantérico progressivo, com risco de coxa vara secundária e insuficiência do glúteo médio), é mais eficaz quando realizada **precocemente**, antes que uma discrepância significativa entre o crescimento trocantérico e o do colo femoral se estabeleça, sendo classicamente indicada por volta dos **5 anos** de idade.",
+    "correta": "A. É mais bem indicada aos 5 anos.",
+    "incorretas": {
+      "B": "Aos 7 anos, uma discrepância de crescimento relativo entre o trocânter maior e o colo femoral já pode estar mais estabelecida, reduzindo a eficácia preventiva da intervenção precoce.",
+      "C": "Aos 9 anos, essa janela de intervenção precoce e mais eficaz já estaria mais avançada.",
+      "D": "Aos 11 anos, próximo à adolescência, a intervenção já ocorreria tardiamente em relação ao objetivo de prevenir o sobrecrescimento trocantérico progressivo."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
