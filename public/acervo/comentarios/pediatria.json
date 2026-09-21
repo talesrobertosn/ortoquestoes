@@ -4342,5 +4342,311 @@
     ],
     "geradoEm": "2026-09-17",
     "conferido": false
+  },
+  "pediatria-0076": {
+    "conceito": "Na deficiência femoral focal (proximal femoral focal deficiency), a classificação funcional de **Gillespie e Torode** divide os pacientes em dois grandes grupos conforme a possibilidade de reconstrução do quadril:\n- **Grupo A**: quadril **reconstruível** — cabeça femoral presente, relação razoável com o acetábulo, potencial para um fêmur funcional após reconstrução. Esses pacientes são os melhores candidatos ao **alongamento** do membro (associado ou não a osteotomias corretivas), já que a articulação do quadril tem potencial de estabilidade.\n- **Grupo B**: quadril **não reconstruível** — deformidade grave demais para reconstrução articular funcional, sendo mais bem tratados com cirurgias ablativas (como a rotacionplastia) ou adaptação protética, e não com alongamento.\n\nOu seja, é a presença de um quadril reconstruível (grupo A) que torna o alongamento uma opção viável e indicada.",
+    "correta": "A. O alongamento do membro está mais bem indicado no grupo A de Gillespie, no qual o quadril é reconstruível.",
+    "incorretas": {
+      "B": "O grupo B corresponde a quadris não reconstruíveis, nos quais o alongamento não é a melhor opção — prefere-se cirurgia ablativa ou adaptação protética.",
+      "C": "A classificação de Gillespie e Torode define apenas os grupos funcionais A e B para essa finalidade.",
+      "D": "A classificação de Gillespie e Torode define apenas os grupos funcionais A e B para essa finalidade."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0152": {
+    "conceito": "Na paralisia cerebral, alguns marcos do desenvolvimento motor têm valor prognóstico bem estabelecido para a futura capacidade de marcha. O marco mais citado nesse contexto é a capacidade de **sentar-se sem apoio**: uma criança que **não consegue sentar até os 2 anos de idade** tem prognóstico reservado para deambulação independente — esse é um dos preditores clínicos mais robustos e utilizados na prática, mais até do que o grau de retardo mental isolado ou o tipo topográfico de comprometimento (hemiplegia, por exemplo, que por si só já tem bom prognóstico de marcha).\n\nO controle de cabeça aos 8 meses é um marco mais precoce e, isoladamente, tem menor valor preditivo negativo do que a incapacidade de sentar aos 2 anos.",
+    "correta": "C. A incapacidade de sentar-se sem apoio aos 2 anos de idade é um dos critérios mais valorizados de mau prognóstico para a marcha na paralisia cerebral.",
+    "incorretas": {
+      "A": "O retardo mental influencia o prognóstico global, mas não é o critério motor mais diretamente associado ao prognóstico de marcha.",
+      "B": "A hemiplegia espástica, isoladamente, costuma ter bom prognóstico de marcha — a maioria dessas crianças chega a deambular.",
+      "D": "A incapacidade de controle de cabeça aos 8 meses é um marco mais precoce e tem menor valor preditivo isolado do que a incapacidade de sentar aos 2 anos."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0153": {
+    "conceito": "No defeito femoral focal proximal, a classificação clássica em quatro tipos (A a D) — descrita por **Aitken** e frequentemente referida na literatura junto com a classificação funcional de Gillespie — caracteriza o **tipo A** pela presença dos seguintes achados:\n- **Cabeça femoral presente** e localizada dentro do acetábulo.\n- **Acetábulo normal ou apenas levemente displásico**.\n- Uma zona radiotransparente subtrocantérica que, tipicamente, acaba por se ossificar ao longo do crescimento, unindo a cabeça/colo ao restante da diáfise femoral.\n\nÉ o tipo mais favorável dentro do espectro da deficiência femoral focal, já que a continuidade entre cabeça e diáfise tende a se estabelecer espontaneamente com a maturidade esquelética.",
+    "correta": "B. No tipo A do defeito femoral focal proximal, a cabeça femoral está presente e o acetábulo é normal.",
+    "incorretas": {
+      "A": "A cabeça femoral ausente com acetábulo normal não corresponde ao padrão descrito no tipo A.",
+      "C": "A cabeça femoral ausente com acetábulo displásico é característica dos tipos mais graves (C ou D), não do tipo A.",
+      "D": "O acetábulo displásico associado à cabeça femoral presente caracteriza o tipo B, não o tipo A."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0156": {
+    "conceito": "O menisco discoide é uma variante anatômica em que o menisco (geralmente o **lateral**, muito mais frequentemente que o medial) tem formato discoide em vez do formato semilunar normal, sendo classicamente dividido em três tipos pela classificação de **Watanabe**: completo, incompleto e o tipo **Wrisberg** — este último definido pela **ausência das inserções meniscotibiais posteriores normais**, ficando o menisco estabilizado apenas pelo ligamento meniscofemoral de Wrisberg, o que o torna intrinsecamente **instável**.\n\nPor essa instabilidade inerente do tipo Wrisberg (sem fixação posterior normal ao platô tibial), o tratamento clássico historicamente descrito para os casos sintomáticos é a **meniscectomia total** — diferente dos tipos completo e incompleto, nos quais a saucerização parcial (preservando a periferia estável) costuma ser suficiente. Vale registrar que a tendência atual da literatura, quando tecnicamente viável, é tentar preservar tecido meniscal com saucerização associada à estabilização periférica mesmo no tipo Wrisberg — mas a meniscectomia total continua sendo a conduta classicamente associada a esse tipo instável nas classificações de prova.",
+    "correta": "B. A meniscectomia total é classicamente indicada no tipo Wrisberg do menisco discoide, por sua instabilidade intrínseca.",
+    "incorretas": {
+      "A": "As lesões do menisco discoide costumam ser atraumáticas justamente pela forma anômala predispor à ruptura espontânea — mas essa não é a alternativa correta na questão, já que a lesão atraumática não é o achado mais característico cobrado aqui.",
+      "C": "É o menisco lateral, e não o medial, que é acometido com grande predomínio pelo formato discoide — a incidência global também é bem maior que 0 a 0,3%.",
+      "D": "É justamente a ausência das inserções meniscotibiais posteriores normais (não do próprio ligamento de Wrisberg) que caracteriza o tipo Wrisberg — o ligamento de Wrisberg está presente e é o único estabilizador posterior remanescente."
+    },
+    "alerta": "A literatura mais recente tende a preferir a saucerização parcial com estabilização periférica, mesmo no tipo Wrisberg, sempre que tecnicamente possível, reservando a meniscectomia total para os casos em que a preservação não é viável — mas a associação clássica \"tipo Wrisberg = meniscectomia total\" continua sendo a mais cobrada nas classificações de prova.",
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0157": {
+    "conceito": "Durante o ciclo da marcha, o pé e a tíbia realizam uma sequência coordenada de rotações no plano transverso. De forma resumida:\n- A rotação externa do pé/tíbia **aumenta progressivamente** ao longo da fase de apoio, atingindo seu valor máximo próximo ao apoio terminal.\n- No **pré-balanço** (preparação para o desprendimento do pé), essa rotação externa começa a **reverter**, com o membro iniciando o movimento de rotação interna que continuará durante o balanço — ou seja, há uma **diminuição da rotação externa** nessa fase.\n- O retropé (calcâneo), por sua vez, everte durante a resposta à carga e o início do apoio médio (não durante o balanço médio) e inverte progressivamente em direção ao desprendimento do pé (não everte nesse momento).\n\nEsses detalhes de rotação e inversão/eversão do retropé são frequentemente cobrados de forma invertida em prova, exatamente como nas alternativas incorretas desta questão.",
+    "correta": "C. Há diminuição progressiva da rotação externa do pé durante a fase de pré-balanço, quando se inicia a rotação interna que continuará no balanço.",
+    "incorretas": {
+      "A": "A rotação externa média do pé durante a marcha normal é de cerca de 7 graus, não 25 graus.",
+      "B": "É durante a resposta à carga e o início do apoio médio que o calcâneo everte — não durante o balanço médio.",
+      "D": "É durante o desprendimento do pé que o calcâneo já está em processo de inversão, não de eversão."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0163": {
+    "conceito": "A sinovite transitória do quadril é a causa mais comum de claudicação aguda dolorosa em crianças pequenas, sendo um diagnóstico de exclusão frente à possibilidade de artrite séptica. Embora seja uma condição autolimitada na grande maioria dos casos (resolução em dias a poucas semanas com repouso e anti-inflamatórios), há uma taxa de **recorrência** documentada na literatura de aproximadamente **4% ao ano** — informação relevante para orientar a família sobre a possibilidade de novos episódios, sem que isso indique, por si só, uma doença mais grave subjacente.",
+    "correta": "B. A taxa anual de recorrência da sinovite transitória do quadril é de aproximadamente 4%.",
+    "incorretas": {
+      "A": "0,4% subestima a taxa de recorrência real, que é reconhecidamente maior que isso.",
+      "C": "14% superestima a taxa de recorrência anual classicamente descrita na literatura.",
+      "D": "24% superestima consideravelmente a taxa de recorrência anual classicamente descrita."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0165": {
+    "conceito": "Na classificação de **Aitken** para o defeito femoral focal proximal, o critério que diferencia os tipos A e B é justamente o comportamento da zona radiotransparente subtrocantérica ao longo do crescimento:\n- **Tipo A**: a zona radiotransparente se **ossifica** espontaneamente com a maturidade esquelética, unindo cabeça/colo à diáfise.\n- **Tipo B**: a zona radiotransparente **não se ossifica**, persistindo como uma verdadeira **pseudoartrose do colo femoral** — a cabeça permanece presente, mas sem continuidade óssea estabelecida com a diáfise.\n- **Tipo C** e **Tipo D**: representam graus progressivamente mais graves, com ausência (ou representação apenas por um resquício ósseo) da cabeça femoral e displasia acetabular importante.\n\nA persistência de uma pseudoartrose verdadeira do colo femoral é, portanto, a marca registrada do tipo B.",
+    "correta": "B. A pseudoartrose do colo femoral, no defeito femoral focal proximal, corresponde ao tipo B de Aitken.",
+    "incorretas": {
+      "A": "No tipo A, a zona subtrocantérica tende a se ossificar espontaneamente, sem persistir como pseudoartrose.",
+      "C": "O tipo C é caracterizado por displasia acetabular mais grave e cabeça femoral ausente ou rudimentar, não pela pseudoartrose isolada do colo.",
+      "D": "O tipo D representa o grau mais grave do espectro, com ausência completa da cabeça femoral e do acetábulo, não a pseudoartrose isolada do colo."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0167": {
+    "conceito": "Na epifisiólise proximal do fêmur (escorregamento epifisário femoral), um dos sinais radiográficos precoces descritos na incidência anteroposterior de bacia é uma área de **aumento de densidade óssea** na região onde a epífise, ao escorregar posteriormente sobre a metáfise, se sobrepõe a ela — criando uma imagem de superposição óssea. Essa sobreposição ocorre classicamente na região **inferomedial do colo femoral**, já que o escorregamento típico da epífise é posteroinferior em relação à metáfise, fazendo com que a margem metafisária inferomedial fique \"encoberta\" pela epífise deslocada, aumentando a densidade radiográfica local.\n\nEsse sinal de aumento de densidade na região inferomedial do colo é um dos achados radiográficos precoces mais úteis para o diagnóstico de epifisiólise em fase inicial, antes de o escorregamento se tornar francamente visível.",
+    "correta": "A. O sinal radiográfico de aumento de densidade óssea na epifisiólise proximal do fêmur localiza-se na região inferomedial do colo.",
+    "incorretas": {
+      "B": "A região superolateral do colo não é onde ocorre a sobreposição óssea, já que o escorregamento típico da epífise é posteroinferior, não superolateral.",
+      "C": "O sinal descrito se localiza no colo femoral, na transição com a metáfise, não na cabeça femoral.",
+      "D": "A região superolateral da cabeça não corresponde à localização clássica desse sinal de sobreposição óssea."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0185": {
+    "conceito": "O método de Ponseti para o tratamento do pé torto congênito segue uma sequência específica e bem definida de correção dos componentes da deformidade (cavo, aduto, varo e equino), e um dos princípios fundamentais do método é **nunca corrigir o componente de supinação do antepé por meio de pronação forçada**. Essa manobra é expressamente **proscrita** porque a pronação do antepé, nesse contexto, tende a **acentuar o cavo** (por rodar o antepé pronado sobre um retropé ainda em varo, aumentando a deformidade em vez de corrigi-la) — o cavo, na verdade, já é corrigido indiretamente no primeiro tempo do método, supinando levemente o antepé para alinhá-lo ao retropé antes de iniciar a abdução sob a cabeça do tálus.\n\nA correção segue a sequência CAVE: **C**avo (corrigido junto ao primeiro passo), **A**duto e **V**aro (corrigidos simultaneamente pela abdução do pé sob a cabeça do tálus, usada como fulcro), e **E**quino (corrigido por último, frequentemente com tenotomia percutânea do tendão calcâneo).",
+    "correta": "B. É proscrita a realização de pronação do antepé como tentativa de corrigir a supinação, pois essa manobra tende a acentuar o cavo em vez de corrigi-lo.",
+    "incorretas": {
+      "A": "A correção do cavo é feita logo no início do tratamento, supinando levemente o antepé — não é proscrita, é parte da sequência padrão.",
+      "C": "A correção do equino é, de fato, feita por último no método de Ponseti — essa é a sequência correta, não uma prática proscrita.",
+      "D": "A abdução do pé sob a cabeça do tálus é justamente a manobra usada para corrigir o aduto e o varo — é o princípio central do método, não algo proscrito."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0190": {
+    "conceito": "A cirurgia de **Woodward** é uma das técnicas clássicas para correção da deformidade de Sprengel (elevação congênita da escápula). Seu princípio é destacar a **origem** da musculatura paraescapular (trapézio e romboides) dos processos espinhosos vertebrais e **reinserir essa origem em uma posição mais distal (caudal)** na coluna — isso permite que a escápula, tracionada pela musculatura reposicionada, desça para uma posição mais próxima da normal, ao mesmo tempo em que preserva a continuidade e a função muscular (diferente de técnicas mais antigas que ressecavam parte do músculo).\n\nA vantagem da técnica de Woodward sobre abordagens anteriores (como a de Green, que também remove a porção supraescapular da escápula) é justamente preservar melhor a função muscular, já que a musculatura permanece íntegra, apenas reinserida em outro nível.",
+    "correta": "A. A técnica de Woodward transfere a origem da musculatura paraescapular para uma posição mais distal na coluna vertebral.",
+    "incorretas": {
+      "B": "É a origem da musculatura (não a inserção) que é transferida na técnica de Woodward.",
+      "C": "A transferência é feita para uma posição mais distal (caudal), não proximal — esse é o princípio que permite a descida da escápula.",
+      "D": "É a origem, não a inserção, que é manipulada nessa técnica, e a direção da transferência é distal, não proximal."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0192": {
+    "conceito": "Quando a doença de Legg-Calvé-Perthes se apresenta de forma **bilateral em crianças muito jovens**, é fundamental considerar diagnósticos diferenciais que mimetizam radiograficamente uma necrose avascular bilateral simétrica da cabeça femoral — e o principal deles é a **displasia epifisária de Meyer**, uma condição benigna e autolimitada, caracterizada por atraso e irregularidade na ossificação das epífises femorais proximais, tipicamente bilateral e simétrica, que costuma se resolver espontaneamente com o crescimento, sem a evolução deformante característica do Perthes verdadeiro.\n\nDiferenciar Perthes bilateral verdadeiro da displasia de Meyer é importante porque o prognóstico e a necessidade de intervenção são bem distintos — a displasia de Meyer, em geral, não exige tratamento cirúrgico.",
+    "correta": "B. A displasia epifisária de Meyer é o principal diagnóstico diferencial da doença de Perthes bilateral em crianças de baixa idade.",
+    "incorretas": {
+      "A": "A artrogripose se manifesta com contraturas articulares múltiplas desde o nascimento, não com um quadro radiográfico de necrose bilateral da cabeça femoral.",
+      "C": "A síndrome unha-patela cursa com alterações características de unhas, patela e cotovelos, não com um quadro mimetizando Perthes bilateral.",
+      "D": "O raquitismo hipofosfatêmico causa deformidades em varo dos membros inferiores e alterações metafisárias difusas, não um quadro focal de necrose epifisária bilateral do quadril."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0195": {
+    "conceito": "O teste de **Klisic** é uma manobra clínica auxiliar no diagnóstico da displasia do desenvolvimento do quadril em crianças um pouco maiores (quando os testes de Ortolani e Barlow já perderam sensibilidade). O examinador posiciona o dedo indicador sobre a espinha ilíaca ântero-superior e o dedo médio sobre o **trocanter maior**, formando uma linha imaginária entre os dois pontos:\n- Em um quadril **normal**, essa linha, prolongada, aponta para o **umbigo**.\n- Em um quadril **luxado**, o trocanter maior está deslocado **proximalmente** (por causa da migração cefálica do fêmur), o que faz a linha apontar para um ponto **abaixo do umbigo**, entre este e a sínfise púbica.\n\nEsse deslocamento da linha imaginária para baixo do umbigo é o sinal positivo do teste, sugerindo luxação da articulação coxofemoral.",
+    "correta": "D. No teste de Klisic, quando há luxação, a linha entre os dedos do examinador se direciona para um ponto entre o púbis e o umbigo.",
+    "incorretas": {
+      "A": "É no quadril normal, sem luxação, que a linha imaginária aponta diretamente para o umbigo.",
+      "B": "A linha não aponta diretamente para o púbis, mas para um ponto intermediário entre o púbis e o umbigo.",
+      "C": "Um ponto acima do umbigo não corresponde ao sinal de luxação — a migração proximal do trocanter desloca a linha para baixo do umbigo, não para cima."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0196": {
+    "conceito": "A doença de Blount (tíbia vara patológica) é classificada radiograficamente pelos estágios de **Langenskiöld** (I a VI), que descrevem a progressão do dano à fise medial proximal da tíbia. Nos estágios mais avançados (**IV e V**), já existe uma **barra óssea (ponte fisária)** estabelecida na porção medial da fise, comprometendo permanentemente o potencial de crescimento dessa região.\n\nNesses estágios avançados, uma osteotomia tibial **isolada** (sem abordar cirurgicamente a barra fisária) corrige o alinhamento no momento da cirurgia, mas não resolve a causa de base — a fise medial continua a crescer de forma assimétrica (ou parar de crescer), fazendo com que a deformidade em varo **recidive** com o crescimento residual. A taxa de recidiva nesse cenário se aproxima dos **100%**, o que reforça a importância de associar (ou substituir a osteotomia por) procedimentos que abordem diretamente a fise comprometida, como a ressecção da barra fisária, nos estágios avançados da doença.",
+    "correta": "D. Nos estágios IV e V de Langenskiöld, a osteotomia tibial isolada leva à recorrência da deformidade em praticamente 100% dos casos.",
+    "incorretas": {
+      "A": "25% subestima consideravelmente a taxa de recidiva descrita para osteotomia isolada nos estágios avançados da doença de Blount.",
+      "B": "50% ainda subestima a taxa de recidiva, que se aproxima da totalidade dos casos nesses estágios avançados.",
+      "C": "75% também subestima a taxa de recidiva relatada, que se aproxima dos 100% nesses estágios."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0197": {
+    "conceito": "O corno posterior do menisco medial é fixado à borda superior do platô tibial por meio do **ligamento coronário** (também chamado de ligamento meniscotibial) — uma condensação da cápsula articular que ancora firmemente a periferia do menisco medial à tíbia ao longo de toda sua extensão, incluindo o corno posterior.\n\nEssa fixação firme e circunferencial é justamente uma das razões pelas quais o menisco medial é **menos móvel** que o lateral (que tem inserções mais frouxas e pode, inclusive, ter o hiato poplíteo interrompendo sua fixação periférica lateralmente) — e, por ser menos móvel, o menisco medial é proporcionalmente mais suscetível a lesões traumáticas.",
+    "correta": "A. O corno posterior do menisco medial está aderido à borda superior da tíbia por meio do ligamento coronário.",
+    "incorretas": {
+      "B": "O ligamento oblíquo posterior é uma estrutura do complexo capsular medial do joelho, relacionada à estabilidade em valgo, não à fixação do menisco à tíbia.",
+      "C": "O tendão do músculo poplíteo se relaciona à fixação periférica do menisco lateral (no hiato poplíteo), não à fixação do menisco medial.",
+      "D": "Os ligamentos de Humphry e Wrisberg são ligamentos meniscofemorais, conectando o corno posterior do menisco lateral ao côndilo femoral medial — não se relacionam à fixação do menisco medial à tíbia."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0198": {
+    "conceito": "No desenvolvimento embriológico dos membros inferiores, antes de ocorrer a **rotação axial medial** (rotação interna) característica desses membros durante a vida fetal, o compartimento que dará origem ao mecanismo extensor do joelho — incluindo a patela — está posicionado **lateralmente** em relação ao eixo do membro em desenvolvimento.\n\nÉ justamente a rotação medial (interna) do membro inferior, que ocorre ao longo do desenvolvimento fetal, que traz essa região — originalmente lateral — para a posição **anterior** definitiva, característica da anatomia do joelho no indivíduo já formado. Esse processo é o oposto do que ocorre no membro superior, cuja rotação (lateral/externa) traz a região originalmente também lateral para a posição posterior do cotovelo.",
+    "correta": "A. Antes da rotação axial dos membros inferiores, a patela encontra-se posicionada lateralmente.",
+    "incorretas": {
+      "B": "É a posição lateral, e não a medial, que precede a rotação axial que leva a patela à posição anterior definitiva.",
+      "C": "A posição anterior é o resultado final, após a rotação — não a posição original antes dela.",
+      "D": "A posição posterior corresponde ao destino do compartimento equivalente no membro superior (por rotação em direção oposta), não à posição original da patela no membro inferior."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0201": {
+    "conceito": "A coxa vara do desenvolvimento (diferente da coxa vara congênita associada a outras síndromes, e diferente da epifisiólise) é uma condição relativamente rara cuja epidemiologia, ao contrário de outras doenças pediátricas do quadril como a doença de Perthes (mais comum em meninos caucasianos) ou a displasia do desenvolvimento do quadril (mais comum em meninas), **não apresenta predileção conhecida por sexo ou raça** — acomete meninos e meninas de forma equivalente, em diferentes grupos étnicos, sem o padrão demográfico característico observado em outras patologias do quadril infantil.",
+    "correta": "D. A coxa vara do desenvolvimento acomete igualmente meninos e meninas, sem predileção por raça.",
+    "incorretas": {
+      "A": "Não há predileção por sexo masculino nem por etnia caucasiana na coxa vara do desenvolvimento — esse padrão é mais característico da doença de Perthes.",
+      "B": "Não há predileção por sexo masculino na coxa vara do desenvolvimento — a condição acomete meninos e meninas igualmente.",
+      "C": "Não há predileção por etnia caucasiana especificamente — a condição não tem padrão racial característico."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0202": {
+    "conceito": "Entre as síndromes artrogripóticas, a síndrome de **Freeman-Sheldon** (também chamada de displasia craniocarpotarsal) tem uma apresentação facial e de extremidades bastante característica, que a diferencia das demais síndromes desse grupo:\n- **Face**: aparência \"assobiante\" (whistling face), com boca pequena e projetada para frente, sulco nasolabial profundo e bochechas proeminentes — como se a criança estivesse permanentemente assobiando.\n- **Mãos**: desvio ulnar e contraturas em flexão dos dedos (\"mão em soco de boxeador\" — windmill vane hand).\n- **Pés**: pés tortos congênitos rígidos, frequentemente bilaterais.\n\nEssa combinação de face assobiante + desvio ulnar das mãos + pés tortos rígidos é o quadro clássico e patognomônico da síndrome de Freeman-Sheldon entre as várias síndromes artrogripóticas.",
+    "correta": "C. A associação de aparência facial assobiante, desvio ulnar das mãos e pés tortos rígidos caracteriza a síndrome de Freeman-Sheldon.",
+    "incorretas": {
+      "A": "A síndrome de Larsen se caracteriza por luxações articulares múltiplas e face achatada característica, não pela aparência assobiante.",
+      "B": "A síndrome de Möbius se caracteriza por paralisia facial bilateral e comprometimento de nervos cranianos, não pelo quadro descrito de mãos e pés.",
+      "D": "A síndrome de Cornelia de Lange se caracteriza por retardo de crescimento, sinofris e outras dismorfias faciais distintas da aparência assobiante descrita."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0203": {
+    "conceito": "Na embriologia do desenvolvimento dos membros, a **crista ectodérmica apical (CEA)** é a estrutura que controla o crescimento longitudinal do brotamento do membro no eixo próximo-distal. A manutenção e o desenvolvimento dessa crista dependem principalmente de sinalização por **fatores de crescimento fibroblástico (FGF)**, secretados tanto pela própria crista (FGF-4, FGF-8) quanto pelo mesênquima subjacente, em um circuito de sinalização recíproca que sustenta a proliferação celular na zona de progresso.\n\nÉ importante não confundir essa via com a **proteína sonic hedgehog (SHH)**, que é a molécula responsável pela sinalização da **zona de atividade polarizante (ZPA)** — a estrutura que controla o eixo ântero-posterior do membro (por exemplo, a diferenciação entre o lado radial/tibial e o lado ulnar/fibular), e não o desenvolvimento da crista ectodérmica apical em si.",
+    "correta": "E. O fator de crescimento fibroblástico é a substância responsável pelo desenvolvimento e manutenção da crista ectodérmica apical.",
+    "incorretas": {
+      "A": "O Lmx-1 está relacionado à diferenciação dorsoventral do membro, não ao desenvolvimento da crista ectodérmica apical.",
+      "B": "\"Fator de transcrição\" é um termo genérico demais e não corresponde especificamente à molécula responsável pela crista ectodérmica apical.",
+      "C": "A proteína sonic hedgehog está relacionada à zona de atividade polarizante, que controla o eixo ântero-posterior do membro, não ao desenvolvimento da crista ectodérmica apical.",
+      "D": "Não existe uma \"proteína de transcrição sonic\" como estrutura reconhecida associada a essa função embriológica."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0204": {
+    "conceito": "A sinovite transitória do quadril é uma condição inflamatória autolimitada, tipicamente de instalação **aguda** (não crônica), que acomete crianças pequenas após um quadro viral recente. O achado de exame físico mais característico é a **limitação da amplitude de movimento do quadril acometido**, com a criança adotando (ou apresentando resistência ao exame fora) uma posição de conforto em **flexão, abdução e rotação externa** — postura que maximiza o volume articular e reduz a pressão intracapsular, aliviando a dor.\n\nOutros achados que ajudam a diferenciar a sinovite transitória de quadros mais graves como a artrite séptica incluem: febre ausente ou baixa (geralmente abaixo de 38°C), bom estado geral preservado, e a possibilidade de a dor ser referida para a região do joelho (via inervação compartilhada pelo nervo obturatório) — todos elementos que, nesta questão, aparecem invertidos nas demais alternativas.",
+    "correta": "B. Há limitação funcional do membro afetado, com o quadril adotando uma posição de flexão e rotação externa.",
+    "incorretas": {
+      "A": "A dor da sinovite transitória é de instalação aguda, não crônica.",
+      "C": "A febre, quando presente, costuma ser baixa (geralmente abaixo de 38°C) — a alternativa inverte esse conceito ao afirmar um limite que soa como exceção, quando na verdade é a regra.",
+      "D": "O estado geral da criança costuma estar preservado na sinovite transitória, ao contrário do que se espera em quadros mais graves como a artrite séptica.",
+      "E": "A dor pode, sim, ser referida para a região do joelho — um achado clássico que não invalida o diagnóstico."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0205": {
+    "conceito": "Ao contrário de várias condições que causam **sobrecrescimento** de um membro (como a síndrome de Klippel-Trénaunay, a síndrome de Beckwith-Wiedemann e os hemangiomas extensos, todos associados a hipertrofia por aumento do fluxo sanguíneo local ou desregulação do crescimento), a doença de **Legg-Calvé-Perthes** é uma causa clássica de **encurtamento** do membro inferior — a necrose avascular da cabeça femoral e o distúrbio de crescimento da fise proximal do fêmur que ela provoca levam a um encurtamento relativo do fêmur acometido, frequentemente associado a coxa vara residual.\n\nO abscesso de Brodie, por sua vez, é uma infecção óssea localizada (osteomielite subaguda) que pode, dependendo da localização, tanto estimular quanto lesar a fise, mas não é classicamente listado entre as causas típicas de discrepância de comprimento nos quadros de prova.",
+    "correta": "D. A doença de Legg-Calvé-Perthes é uma causa clássica de encurtamento do membro inferior.",
+    "incorretas": {
+      "A": "A síndrome de Klippel-Trénaunay classicamente causa sobrecrescimento (alongamento), não encurtamento do membro.",
+      "B": "A síndrome de Beckwith-Wiedemann está associada a hemi-hipertrofia e sobrecrescimento, não a encurtamento.",
+      "C": "O abscesso de Brodie não é classicamente listado entre as causas típicas de encurtamento de membro nesse contexto.",
+      "E": "Hemangiomas extensos classicamente se associam a sobrecrescimento do membro acometido, não a encurtamento."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0206": {
+    "conceito": "A classificação de **Sillence** para a osteogênese imperfeita (OI) divide a doença em tipos conforme o padrão de herança e a gravidade clínica. O **tipo I** é a forma mais leve e mais comum, de herança **autossômica dominante**, caracterizada por estatura normal ou próxima do normal, escleróticas azuladas, fraturas de frequência variável (geralmente reduzindo após a puberdade) e, tipicamente, ausência de deformidades ósseas graves.\n\nOs tipos mais graves (como o tipo II, letal no período perinatal, e o tipo III, progressivamente deformante) têm, em geral, herança autossômica recessiva ou mutações de novo, associadas a fenótipos muito mais graves — informação importante para o aconselhamento genético da família, já que o padrão de herança influencia diretamente o risco de recorrência em futuras gestações.",
+    "correta": "A. O tipo I da classificação de Sillence, a forma mais leve de osteogênese imperfeita, tem herança autossômica dominante.",
+    "incorretas": {
+      "B": "O tipo II é a forma mais grave, geralmente letal no período perinatal, e não corresponde ao padrão autossômico dominante típico do tipo I.",
+      "C": "O tipo III é uma forma progressivamente deformante e grave, com padrão de herança frequentemente distinto do tipo I.",
+      "D": "O tipo IIIB não é uma nomenclatura padrão dentro da classificação clássica de Sillence.",
+      "E": "O tipo V, embora também autossômico dominante em algumas classificações estendidas, não é a forma clássica mais leve e mais associada ao aconselhamento familiar descrito na questão — essa é a do tipo I."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0207": {
+    "conceito": "Na classificação topográfica da paralisia cerebral, a **hemiparesia (ou hemiplegia)** é definida pelo comprometimento motor restrito a **um hemicorpo** (braço e perna do mesmo lado), tipicamente com o membro superior mais afetado que o inferior. Uma característica marcante e clinicamente relevante desse padrão é justamente a **assimetria** entre os dois lados do corpo — o que a diferencia claramente de outros padrões topográficos, como a diplegia (comprometimento predominante dos membros inferiores, geralmente de forma relativamente simétrica) ou a quadriplegia (comprometimento dos quatro membros, também com tendência à simetria maior entre os lados).\n\nEssa assimetria interhemicorporal é, inclusive, um dos elementos-chave no exame clínico para classificar corretamente o padrão topográfico da paralisia cerebral.",
+    "correta": "D. A hemiparesia é caracterizada pelo comprometimento de um hemicorpo, sendo a assimetria uma importante característica.",
+    "incorretas": {
+      "A": "A hemiparesia não se restringe aos membros superiores — compromete um hemicorpo inteiro (braço e perna do mesmo lado).",
+      "B": "A hemiparesia não se restringe aos membros inferiores — compromete um hemicorpo inteiro, e a simetria não é sua característica marcante.",
+      "C": "A hemiparesia não se restringe aos membros superiores — compromete todo um hemicorpo, incluindo o membro inferior correspondente.",
+      "E": "É a assimetria, não a simetria, a característica marcante da hemiparesia — os dois lados do corpo são afetados de forma bem diferente."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0209": {
+    "conceito": "O ciclo da marcha é dividido em duas grandes fases: **apoio** (cerca de 60% do ciclo, quando o pé está em contato com o solo) e **balanço** (cerca de 40% do ciclo, quando o membro está no ar). A fase de balanço é caracterizada por três eventos sequenciais fundamentais: o **levantamento do pé** do solo, o **avanço do membro** para frente (encurtando-o funcionalmente para não tocar o chão, por meio da flexão de quadril, joelho e tornozelo) e a **preparação para o próximo contato inicial** com o solo, que encerra o ciclo.\n\nAs demais alternativas descrevem eventos e fases pertencentes à fase de **apoio** (desprendimento do calcanhar, desprendimento dos dedos, contato do mediopé, aplanamento do pé com o solo), não à fase de balanço.",
+    "correta": "D. A fase de balanço tem como característica o levantamento do pé, o avanço do membro e a preparação para o próximo apoio.",
+    "incorretas": {
+      "A": "O desprendimento do calcanhar ocorre ainda durante a fase de apoio, não de balanço.",
+      "B": "O desprendimento dos dedos marca a transição do apoio para o balanço, mas o evento em si ainda faz parte da fase de apoio (pré-balanço).",
+      "C": "O contato do mediopé com o solo é um evento da fase de apoio, não de balanço.",
+      "E": "O aplanamento do pé com o solo ocorre durante a fase de apoio, não durante o balanço."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0210": {
+    "conceito": "Na coxa vara do desenvolvimento, o defeito ocorre ao nível da fise proximal do fêmur, onde há um distúrbio de ossificação encondral que leva a um deslizamento progressivo da epífise em relação à metáfise. Esse deslocamento segue um padrão direcional bem definido: a epífise se desloca em sentido **posteroinferior** em relação à metáfise — de forma conceitualmente semelhante (embora por mecanismo diferente) ao que se observa na epifisiólise proximal do fêmur —, o que contribui progressivamente para o aumento da deformidade em varo do colo femoral ao longo do crescimento, caso não tratada.",
+    "correta": "B. Na coxa vara do desenvolvimento, o deslocamento da epífise proximal femoral em relação à metáfise é posteroinferior.",
+    "incorretas": {
+      "A": "O deslocamento não ocorre em sentido anteroinferior — o padrão característico é posteroinferior.",
+      "C": "O deslocamento não ocorre em sentido anterossuperior — isso seria o oposto do padrão progressivo característico da coxa vara do desenvolvimento.",
+      "D": "O deslocamento não ocorre em sentido posterossuperior — o componente inferior, não superior, é o que caracteriza esse deslizamento.",
+      "E": "O padrão descrito não é inferolateral — o deslocamento clássico é posteroinferior, envolvendo o plano sagital, não um componente lateral isolado."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0211": {
+    "conceito": "A vinheta descreve um recém-nascido com crânio alongado por fusão precoce (craniossinostose) da sutura coronal, proeminência frontal, exoftalmia e hipoplasia maxilar — um conjunto de achados de **disostose craniofacial**. A ausência de menção a sindactilia das mãos e pés (achado marcante e obrigatório na síndrome de Apert) direciona o diagnóstico para a síndrome de **Crouzon**, que compartilha a craniossinostose (geralmente bicoronal), a exoftalmia proeminente e a hipoplasia do terço médio da face, mas **sem** as alterações características de sindactilia dos membros que definem a síndrome de Apert.\n\nDiferenciar Crouzon de Apert é um ponto clássico de prova: ambas cursam com craniossinostose e face similar, mas a presença (Apert) ou ausência (Crouzon) de sindactilia das mãos e pés é o critério distintivo mais direto entre elas.",
+    "correta": "A. O quadro de craniossinostose coronal, exoftalmia e hipoplasia maxilar, sem alterações das mãos e pés, é mais compatível com a síndrome de Crouzon.",
+    "incorretas": {
+      "B": "A síndrome de Apert compartilha os achados craniofaciais descritos, mas classicamente cursa também com sindactilia das mãos e pés, não mencionada no caso.",
+      "C": "A síndrome de Pfeiffer se associa a polegares e hálux largos e desviados, achados não descritos na vinheta.",
+      "D": "A síndrome de Saethre-Chotzen tem apresentação facial geralmente mais leve, com ptose palpebral e assimetria facial características, diferente do quadro descrito.",
+      "E": "A síndrome de Muenke costuma ter apresentação mais leve e variável, sem o quadro florido de exoftalmia e hipoplasia maxilar descrito."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0213": {
+    "conceito": "A triagem pré-natal para defeitos abertos do tubo neural, como a mielomeningocele, é feita classicamente pela dosagem da **alfafetoproteína (AFP) no soro materno**, tipicamente entre a **16ª e a 18ª semana** de gestação (período em que o teste tem melhor acurácia). Quando há um defeito aberto do tubo neural, o líquido cefalorraquidiano fetal extravasa diretamente para o líquido amniótico através do defeito, elevando a concentração de AFP tanto no líquido amniótico quanto, secundariamente, no soro materno.\n\nOu seja, o achado esperado é de **níveis elevados** de AFP materna nessa janela gestacional — um resultado alterado que, na prática, costuma ser seguido de ultrassonografia morfológica detalhada para confirmação diagnóstica.",
+    "correta": "A. Na mielomeningocele, espera-se encontrar níveis elevados de alfafetoproteína materna entre 16 e 18 semanas de gestação.",
+    "incorretas": {
+      "B": "Os níveis de AFP estão elevados, não reduzidos, na presença de um defeito aberto do tubo neural.",
+      "C": "A janela de maior acurácia para essa triagem é entre 16 e 18 semanas, não entre 8 e 12 semanas.",
+      "D": "Os níveis de AFP estão elevados, não reduzidos, e a janela de triagem correta é entre 16 e 18 semanas, não entre 8 e 12 semanas."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0214": {
+    "conceito": "Nos pacientes com mielomeningocele de nível **torácico** (paralisia flácida completa dos membros inferiores, sem função motora residual), a ausência de qualquer contração muscular ativa faz com que os membros adotem uma postura determinada exclusivamente pela **gravidade** — a clássica posição em \"flog leg\" (posição de abandono): quadris em **abdução, flexão e rotação externa** (posição mais estável sob ação da gravidade, com a face lateral da coxa apoiada no leito) e tornozelos em **equino** (também por efeito gravitacional, sem tônus ativo para mantê-los neutros).\n\nEssa postura de abandono, característica dos níveis mais altos e completos de mielomeningocele, contrasta com os padrões observados em níveis mais baixos, onde grupos musculares específicos ainda funcionantes geram contraturas ativas e mais previsíveis (por exemplo, flexores de quadril e adutores em níveis lombares altos).",
+    "correta": "B. Na posição de abandono do mielomeningocele torácico, o quadril está em abdução, flexão e rotação externa, com o tornozelo em equino.",
+    "incorretas": {
+      "A": "A rotação interna do quadril não é característica da posição de abandono — é a rotação externa, por efeito gravitacional, que predomina.",
+      "C": "A posição de abandono envolve os quadris também, não apenas o joelho em extensão e o tornozelo em equino de forma isolada.",
+      "D": "A rotação interna do quadril e o tornozelo dorsifletido não correspondem à posição de abandono — o padrão gravitacional característico é rotação externa do quadril e equino do tornozelo."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
