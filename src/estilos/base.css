@@ -2193,6 +2193,11 @@ kbd {
 .texto-editorial p { margin: 0 0 1rem; white-space: pre-line; }
 .texto-editorial p:last-child { margin-bottom: 0; }
 .texto-editorial strong { font-weight: 750; color: var(--texto); }
+.texto-editorial ul { margin: 0 0 1rem; padding-left: 1.4rem; }
+.texto-editorial ul:last-child { margin-bottom: 0; }
+.texto-editorial li { margin-bottom: .5rem; }
+.texto-editorial li:last-child { margin-bottom: 0; }
+.texto-editorial li::marker { color: var(--verdete); }
 .ia__conceito { padding: 1.25rem; background: var(--verdete-veu); border-left: 3px solid var(--verdete); border-radius: 8px; margin-bottom: 1.5rem; }
 .ia__conceito h3 { color: var(--verdete); font-size: 1rem; margin: 0 0 .75rem; }
 .ia__item { padding: 1.25rem 0; gap: 1rem; font-size: var(--corpo); }
