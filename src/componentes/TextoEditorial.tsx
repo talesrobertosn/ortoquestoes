@@ -41,14 +41,17 @@ export function TextoEditorial({ texto }: { texto: string }) {
     </div>
   )
 }
-export function Referencias({ itens }: { itens?: string[] }) {
+export function Referencias({ itens, notaIA }: { itens?: string[]; notaIA?: boolean }) {
+  if (!notaIA && !itens?.length) return null
   return (
     <details className="referencias">
       <summary>{itens?.length ? `Referências · ${itens.length}` : 'Sobre este comentário'}</summary>
-      <p className="referencias__nota">
-        Este comentário foi produzido com apoio de inteligência artificial. Quando houver revisão
-        médica, ela será indicada explicitamente.
-      </p>
+      {notaIA && (
+        <p className="referencias__nota">
+          Este comentário pode ter sido produzido com apoio de inteligência artificial. Quando
+          houver revisão médica, ela será indicada explicitamente.
+        </p>
+      )}
       {itens?.length ? <ul>{itens.map((r, i) => <li key={i}>{r}</li>)}</ul> : null}
     </details>
   )

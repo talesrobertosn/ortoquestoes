@@ -650,7 +650,7 @@ function ComentarioDaIA({
             </div>
           ))}
 
-          <Referencias itens={comentario.referencias} />
+          <Referencias itens={comentario.referencias} notaIA />
         </>
       )}
     </div>
