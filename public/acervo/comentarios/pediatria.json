@@ -5099,5 +5099,126 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "pediatria-0263": {
+    "conceito": "A classificação de **Wilson** para a epifisiólise proximal do fêmur avalia a gravidade do escorregamento de forma **proporcional**, medindo o quanto a epífise está deslocada em relação à largura do colo femoral (expresso como uma porcentagem do deslocamento em relação ao diâmetro do colo) — diferente de métodos que usam ângulos absolutos (como o ângulo cefalodiafisário de Southwick) ou classificações baseadas em critérios clínicos, como a duração dos sintomas (aguda/crônica) ou a capacidade de deambulação (estável/instável, segundo Loder).\n\nEssa abordagem proporcional permite comparar o grau de escorregamento de forma relativamente padronizada entre pacientes com colos femorais de tamanhos diferentes, complementando outros sistemas de classificação usados na prática.",
+    "correta": "B. A classificação de Wilson quantifica proporcionalmente o escorregamento da epífise em relação ao colo femoral.",
+    "incorretas": {
+      "A": "A quantificação por ângulo epifisodiafisário corresponde ao método de Southwick, não à classificação de Wilson.",
+      "C": "A classificação baseada no tempo de apresentação da doença (aguda, crônica, aguda sobre crônica) é um critério clínico distinto, não o princípio da classificação de Wilson.",
+      "D": "A divisão pela capacidade de carga no membro afetado (estável/instável) corresponde à classificação de Loder, não à de Wilson."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0264": {
+    "conceito": "O alinhamento dos membros inferiores na infância segue uma trajetória fisiológica previsível: **varo** ao nascimento e nos primeiros 18-24 meses (associado ao início da marcha), progredindo para um alinhamento neutro por volta dos 2 anos e, em seguida, para um **valgo fisiológico**, que atinge seu **pico entre os 2 e os 4 anos de idade** (chegando a até 10-15° de valgo em alguns casos, dentro da normalidade) — para então diminuir gradualmente ao longo da infância, estabilizando no alinhamento valgo discreto característico do adulto (cerca de 5-7°) por volta dos 6-8 anos.\n\nReconhecer essa curva fisiológica é fundamental para diferenciar o valgo (ou varo) que é apenas uma fase normal do desenvolvimento daquele que representa uma verdadeira deformidade patológica, evitando investigações e tratamentos desnecessários.",
+    "correta": "B. O valgo fisiológico máximo do joelho na criança ocorre entre os 2 e os 4 anos de idade.",
+    "incorretas": {
+      "A": "Entre zero e dois anos, o padrão predominante costuma ser de varo fisiológico (ou transição para o neutro), não o pico de valgo.",
+      "C": "Entre seis e oito anos, o alinhamento já está se estabilizando em direção ao padrão valgo discreto do adulto, após o pico de valgo já ter ocorrido.",
+      "D": "Entre oito e dez anos, o alinhamento já costuma estar próximo do padrão definitivo do adulto, bem depois do pico fisiológico de valgo."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0265": {
+    "conceito": "A órtese de **Pavlik** é o tratamento de primeira linha para a displasia do desenvolvimento do quadril em lactentes, mantendo o quadril em flexão e abdução para favorecer a redução e a estabilização espontânea. Quando posicionada em **hiperflexão excessiva** (além do recomendado, geralmente acima de 100-110°), a complicação clássica é a **lesão do nervo femoral** — o nervo, que passa próximo à região inguinal, pode sofrer compressão mecânica direta pela posição extrema de flexão do quadril, manifestando-se clinicamente como fraqueza do quadríceps (dificuldade de extensão ativa do joelho).\n\nÉ importante diferenciar essa complicação da **necrose avascular da cabeça femoral**, que está classicamente associada não à hiperflexão, mas sim à **hiperabdução forçada** (que pode comprimir os vasos retinaculares responsáveis pela irrigação da cabeça femoral) — os dois erros de posicionamento (hiperflexão e hiperabdução) causam complicações distintas.",
+    "correta": "B. A hiperflexão excessiva na órtese de Pavlik tem como principal complicação a lesão do nervo femoral.",
+    "incorretas": {
+      "A": "\"Doença de Pavlik\" não é uma complicação reconhecida — não corresponde a uma entidade clínica real associada ao uso da órtese.",
+      "C": "A luxação póstero-lateral não é a complicação classicamente associada à hiperflexão da órtese de Pavlik.",
+      "D": "A necrose avascular da cabeça femoral está classicamente associada à hiperabdução forçada, não à hiperflexão."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0266": {
+    "conceito": "O quadro clínico da displasia do desenvolvimento do quadril muda conforme a idade da criança. No recém-nascido, os testes de Ortolani e Barlow (que avaliam a redutibilidade/luxabilidade do quadril) são os achados mais úteis. Porém, em uma criança já com **cerca de 2 anos de idade** — momento em que o quadril já está cronicamente luxado ou subluxado, e os testes provocativos de instabilidade perdem sua utilidade (o quadril já não é mais facilmente redutível ao exame) —, o achado clínico mais consistente e confiável passa a ser a **limitação da abdução** do quadril acometido, refletindo a contratura progressiva dos adutores e a alteração estrutural já estabelecida da articulação.\n\nA assimetria de pregas cutâneas e a discrepância de membros, embora possam estar presentes, são achados menos específicos e menos consistentes — a assimetria de pregas, inclusive, pode ocorrer em crianças com quadris normais, sendo um sinal de baixa especificidade isoladamente.",
+    "correta": "A. Aos dois anos de idade, o principal sinal da displasia do desenvolvimento do quadril é a limitação da abdução.",
+    "incorretas": {
+      "B": "O teste de Galeazzi é mais útil em casos unilaterais e reflete principalmente a discrepância de comprimento, sendo menos consistente como sinal isolado do que a limitação de abdução nessa idade.",
+      "C": "A assimetria de pregas cutâneas é um achado pouco específico, podendo estar presente mesmo em crianças com quadris normais.",
+      "D": "A discrepância de membros inferiores é um achado tardio e depende de a luxação ser unilateral, sendo menos consistente como sinal principal do que a limitação de abdução."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0269": {
+    "conceito": "A doença de Legg-Calvé-Perthes evolui radiograficamente por quatro fases clássicas: necrose (inicial), **fragmentação**, reossificação e remodelação (fase residual). A fase de **fragmentação** — caracterizada radiograficamente por áreas de radiotransparência irregular intercaladas com áreas de maior densidade na epífise femoral — representa o processo biológico de **reabsorção do osso necrótico** pelos osteoclastos, à medida que a revascularização avança e o tecido ósseo morto vai sendo progressivamente removido antes da formação de osso novo (que caracterizará a fase seguinte, de reossificação).\n\nÉ justamente durante essa fase de fragmentação, com o osso subcondral mais fragilizado pela reabsorção ativa, que a cabeça femoral fica mais vulnerável à deformação mecânica sob carga — por isso é um período crítico para as decisões de contenção/proteção da cabeça femoral no tratamento.",
+    "correta": "A. O aspecto radiográfico de fragmentação na doença de Perthes representa a reabsorção do osso necrótico.",
+    "incorretas": {
+      "B": "A remodelação da cabeça femoral corresponde à fase final do processo, não à fase de fragmentação.",
+      "C": "Microfraturas subcondrais são um achado mais associado à fase inicial de necrose, não ao aspecto de fragmentação em si.",
+      "D": "Cistos metafisários podem ocorrer em alguns casos, mas não é isso que caracteriza o aspecto radiográfico de fragmentação da epífise."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0270": {
+    "conceito": "Entre os diversos fatores associados ao prognóstico da doença de Legg-Calvé-Perthes (grau de necrose, congruência articular, deformidade residual da cabeça femoral, bilateralidade), a **idade do paciente no início da doença** é classicamente considerada o fator prognóstico isolado mais importante e consistente: quanto mais velha a criança ao diagnóstico (sobretudo acima de 6-8 anos), menor o potencial de remodelação óssea durante o crescimento residual, e maior o risco de deformidade residual da cabeça femoral e artrose precoce na vida adulta — ao contrário de crianças mais novas, que têm mais tempo de crescimento pela frente para remodelar uma cabeça femoral inicialmente deformada.",
+    "correta": "A. A idade do paciente é considerada o melhor fator prognóstico isolado na doença de Legg-Calvé-Perthes.",
+    "incorretas": {
+      "B": "A estatura não é um fator prognóstico classicamente reconhecido para a doença de Perthes.",
+      "C": "A obesidade não é o principal fator prognóstico da doença de Perthes, embora possa influenciar outros aspectos ortopédicos na infância.",
+      "D": "O gênero, isoladamente, não é considerado o principal fator prognóstico, apesar de a doença ser mais comum em meninos."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0271": {
+    "conceito": "No pé torto congênito, os estudos histológicos e de imagem mostram alterações estruturais tanto na musculatura quanto nos tecidos periarticulares (cápsula, ligamentos e tendões) da perna e do pé. A musculatura, particularmente a da panturrilha (tríceps sural) e dos músculos posteromediais, tende a ser **hipotrófica** (menor volume muscular que o normal, por menor número e tamanho de fibras musculares) — daí a panturrilha classicamente mais fina observada mesmo após correção bem-sucedida. Já os tecidos periarticulares (cápsula posterior e medial, ligamentos, tendões) estão **espessados e fibróticos**, contribuindo para a rigidez característica da deformidade.\n\nEssa combinação — músculos hipotróficos, porém tecidos capsuloligamentares espessados — explica tanto a fraqueza muscular residual quanto a rigidez característica observada mesmo em pés bem tratados.",
+    "correta": "B. No pé torto congênito, os músculos estão hipotrofiados e os tecidos periarticulares (ligamentos e cápsula) estão espessados.",
+    "incorretas": {
+      "A": "Os músculos não estão hipertrofiados no pé torto congênito — a musculatura tende a ser hipotrófica, com volume reduzido.",
+      "C": "Os tecidos periarticulares não estão delgados no pé torto congênito — eles tendem a estar espessados e fibróticos, contribuindo para a rigidez.",
+      "D": "Os tecidos periarticulares não estão delgados — estão espessados, embora a musculatura de fato esteja hipotrofiada."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0272": {
+    "conceito": "Após a redução incruenta do quadril na displasia do desenvolvimento do quadril, a estabilidade da redução é testada dentro de uma \"zona de segurança\" de movimento. Quando o quadril **só permanece reduzido em uma posição extrema** — especificamente em **abdução ampla e/ou rotação interna maior que 15 graus** —, essa redução é considerada **instável**, pois qualquer posição mais funcional (fora desses extremos) resulta em nova luxação. Essa instabilidade indica que fatores obstrutivos (como contratura de adutores, labrum invertido ou tecido capsular interposto) ainda estão impedindo uma redução concêntrica e estável, sinalizando a necessidade de reavaliar a conduta — seja ajustando a imobilização, seja considerando redução aberta.",
+    "correta": "C. A redução é considerada instável quando o quadril permanece reduzido apenas em abdução ampla e/ou rotação interna maior que 15 graus.",
+    "incorretas": {
+      "A": "É a abdução ampla, não a adução, que caracteriza essa instabilidade — a adução ampla tenderia, na verdade, a favorecer a luxação, não a manter a redução.",
+      "B": "É a rotação interna, não a externa, que está associada a essa instabilidade — além de o componente de adução (em vez de abdução) também estar incorreto.",
+      "D": "É a rotação interna, não a externa, que caracteriza essa instabilidade, apesar do componente de abdução estar correto."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0274": {
+    "conceito": "Pacientes com mielomeningocele têm risco muito elevado de sensibilização e alergia ao látex, devido à exposição repetida e precoce a materiais látex (cateterismos vesicais intermitentes, múltiplas cirurgias desde o período neonatal). Por esse motivo, o protocolo de precaução/profilaxia ao látex deve ser aplicado de forma **universal**, em **qualquer procedimento cirúrgico** realizado nesses pacientes — independentemente da especialidade envolvida, da duração do procedimento ou de história prévia conhecida de reação alérgica, já que a sensibilização pode estar presente mesmo sem um episódio clínico anterior identificado, e uma reação anafilática intraoperatória pode ser grave e até fatal.",
+    "correta": "A. O protocolo de profilaxia ao látex deve ser realizado em qualquer procedimento cirúrgico no paciente com mielomeningocele.",
+    "incorretas": {
+      "B": "Restringir a profilaxia a procedimentos urológicos e ortopédicos deixaria o paciente exposto ao risco em qualquer outro tipo de cirurgia, quando o risco de sensibilização é sistêmico e não depende da especialidade.",
+      "C": "A duração do procedimento não é o critério que define a necessidade de profilaxia — ela deve ser aplicada independentemente do tempo cirúrgico previsto.",
+      "D": "Aguardar história de hipersensibilidade prévia é arriscado, já que a sensibilização pode estar presente sem uma reação clínica anterior identificada — por isso a profilaxia deve ser universal, não condicional ao histórico."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0277": {
+    "conceito": "O menisco discoide, por sua forma anômala e distribuição de carga alterada, é predisposto a um padrão de lesão diferente do menisco normal. Enquanto o menisco normal se lesiona mais comumente com rupturas longitudinais ou radiais associadas a trauma, o menisco discoide tende a desenvolver, com o tempo, uma **degeneração intrassubstancial progressiva**, culminando classicamente em uma ruptura do tipo **clivagem horizontal** (delaminação horizontal do tecido meniscal) — um padrão de lesão mais degenerativo do que traumático agudo, refletindo o estresse mecânico crônico e anômalo a que esse menisco de forma alterada está submetido ao longo do tempo.",
+    "correta": "D. No menisco discoide, a lesão mais frequente é a ruptura por clivagem horizontal.",
+    "incorretas": {
+      "A": "A ruptura radial não é o padrão de lesão mais característico do menisco discoide.",
+      "B": "A ruptura oblíqua é mais característica de lesões traumáticas agudas do menisco normal, não do padrão degenerativo típico do menisco discoide.",
+      "C": "A ruptura longitudinal, embora possa ocorrer, não é o padrão mais frequentemente descrito no menisco discoide, ao contrário da clivagem horizontal."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0278": {
+    "conceito": "A classificação de **Dimeglio** para o pé torto congênito é um sistema de pontuação que avalia a gravidade e a rigidez da deformidade, combinando parâmetros angulares (equino, varo do retropé, rotação do bloco calcâneo-pedal e adução do antepé, cada um pontuado de 0 a 4 conforme a redutibilidade) com **sinais clínicos adicionais**, cada um valendo **1 ponto** quando presente: a **prega medial** (plantar/medial profunda), a prega posterior, o cavo e a condição muscular pobre (hipotrofia da panturrilha). Esses pontos adicionais, embora individualmente valham apenas 1 ponto cada, contribuem para a pontuação final que classifica a deformidade em graus de gravidade crescente (de benigna a muito grave) e ajudam a prever a resposta ao tratamento conservador.",
+    "correta": "A. Na classificação de Dimeglio, a presença de prega medial recebe 1 ponto.",
+    "incorretas": {
+      "B": "2 pontos não corresponde à pontuação atribuída aos sinais clínicos adicionais (como a prega medial) nessa classificação — cada um desses sinais vale 1 ponto.",
+      "C": "3 pontos não corresponde à pontuação atribuída a esse sinal clínico adicional na classificação de Dimeglio.",
+      "D": "4 pontos corresponde à pontuação máxima dos parâmetros angulares principais (como o equino), não à pontuação dos sinais clínicos adicionais como a prega medial."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
