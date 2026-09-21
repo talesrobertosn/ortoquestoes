@@ -11027,5 +11027,93 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "trauma-0186": {
+    "conceito": "O mecanismo de **supinação com rotação externa (SER)**, o mais comum na classificação de Lauge-Hansen, progride em quatro estágios: lesão do ligamento tibiofibular anterior (I), fratura oblíqua da fíbula distal no nível da sindesmose (II), lesão do ligamento tibiofibular posterior ou fratura do maléolo posterior (III) e, no **4º estágio**, lesão do ligamento deltoide ou fratura do maléolo medial, completando o padrão bimaleolar mostrado. Como a linha de fratura da fíbula ocorre exatamente no nível da sindesmose, essa mesma lesão corresponde, na classificação de Danis-Weber, ao **tipo B (trans-sindesmal)**.",
+    "correta": "A. A fratura é classificada, respectivamente, como supinação rotação externa (4º estágio) e tipo B trans-sindesmal.",
+    "incorretas": {
+      "B": "O tipo **C** de Danis-Weber corresponde a uma fratura da fíbula **acima** (supra-sindesmal), não no nível da sindesmose; a combinação \"tipo C trans-sindesmal\" é internamente contraditória, já que o tipo trans-sindesmal é, por definição, o tipo B.",
+      "C": "\"Supinação com rotação interna\" não é um dos quatro mecanismos reconhecidos por Lauge-Hansen (que são supinação-adução, supinação-rotação externa, pronação-abdução e pronação-rotação externa).",
+      "D": "Além do mecanismo \"supinação rotação interna\" não existir na classificação de Lauge-Hansen, o tipo B (não o C) é o que corresponde a uma fratura no nível da sindesmose."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0187": {
+    "conceito": "Na avaliação radiográfica do tornozelo, a **sobreposição tibiofibular** (medida entre as corticais da fíbula e da incisura fibular da tíbia, na incidência AP) avalia a integridade da sindesmose distal, enquanto o **ângulo talocrural** (formado entre uma linha paralela à superfície articular distal da tíbia e uma linha que une as pontas dos maléolos medial e lateral) avalia o comprimento relativo da fíbula, devendo ser simétrico ao do lado contralateral (normalmente entre 8° e 15°, variando conforme a técnica).",
+    "correta": "B. Os parâmetros representados são, respectivamente, sobreposição tibiofibular e ângulo talocrural.",
+    "incorretas": {
+      "A": "O **espaço livre lateral** (medial clear space) é medido entre o maléolo lateral e o tálus, na incidência de mortalha, uma medida horizontal diferente da sobreposição vertical entre tíbia e fíbula mostrada na primeira imagem.",
+      "C": "Além do espaço livre lateral não corresponder à primeira imagem, o \"ângulo de inclinação maleolar\" não é o termo padronizado para a medida angular mostrada na segunda imagem, mais bem descrita como ângulo talocrural.",
+      "D": "A \"margem lateral do maléolo posterior\" não corresponde à medida vertical sobre a fíbula mostrada na primeira imagem, que avalia a sobreposição tibiofibular."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0220": {
+    "conceito": "Entre os critérios de White e Panjabi para instabilidade da coluna cervical subaxial, a **angulação relativa entre dois corpos vertebrais adjacentes maior que 11°**, quando comparada à angulação dos níveis vizinhos, é um dos parâmetros que, isoladamente ou somado a outros critérios (como translação horizontal maior que 3,5 mm, medida em milímetros e não em graus), indica instabilidade segmentar e a necessidade de considerar estabilização cirúrgica.",
+    "correta": "C. O valor do ângulo a partir do qual se indica instabilidade é de 11 graus.",
+    "incorretas": {
+      "A": "O valor de 3,5 corresponde ao critério de **translação horizontal**, medido em milímetros (não em graus), um parâmetro diferente e não intercambiável com a angulação relativa entre vértebras.",
+      "B": "O valor de 7 graus não corresponde ao critério angular estabelecido por White e Panjabi para a instabilidade subaxial cervical.",
+      "D": "O valor de 20 graus é superior ao critério angular reconhecido (11°) para a coluna cervical subaxial, sendo mais associado a critérios de cifose em outros contextos (como a coluna toracolombar), não ao critério estabelecido aqui."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0312": {
+    "conceito": "A classificação de **Ideberg** para fraturas da glenoide descreve, no **tipo Ia**, um fragmento anteroinferior da borda glenoidal (fratura marginal, tipicamente associada à luxação anterior do ombro, um equivalente ósseo da lesão de Bankart), sem extensão para o corpo ou o colo da escápula, exatamente o pequeno fragmento da borda anteroinferior visível na reconstrução tridimensional.",
+    "correta": "A. A fratura é classificada como tipo Ia.",
+    "incorretas": {
+      "B": "O tipo **Ib** corresponde a um fragmento marginal mais extenso ou posteroinferior, um padrão diferente do pequeno fragmento anteroinferior isolado mostrado.",
+      "C": "O tipo **II** corresponde a uma fratura transversa que atravessa a cavidade glenoidal, saindo inferiormente pelo corpo da escápula, um padrão de fratura muito mais extenso do que o fragmento marginal mostrado.",
+      "D": "O tipo **III** corresponde a uma fratura oblíqua que sai superiormente, frequentemente associada a lesão da articulação acromioclavicular, um padrão anatômico diferente do fragmento anteroinferior isolado mostrado."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0316": {
+    "conceito": "A classificação de **Denis** para fraturas do sacro divide-o em três zonas conforme a relação com os forames sacrais: **zona I**, lateral aos forames (na asa do sacro, menor risco neurológico); **zona II**, atravessando os forames sacrais (risco de lesão das raízes que passam por eles); e **zona III**, envolvendo o canal sacral central (maior risco, podendo comprometer a cauda equina e o controle esfincteriano). A linha de fratura mostrada na tomografia, cruzando a região dos forames, corresponde à zona II.",
+    "correta": "B. A fratura é classificada, segundo Denis, como zona 2.",
+    "incorretas": {
+      "A": "A **zona I** corresponde a uma fratura mais lateral, na asa do sacro, sem envolvimento dos forames, uma posição mais lateral do que a linha de fratura mostrada.",
+      "C": "A **zona III** corresponde a uma fratura envolvendo o canal sacral central, uma posição mais medial do que a fratura foraminal mostrada.",
+      "D": "A classificação original de Denis descreve apenas três zonas (I, II e III); não existe uma \"zona 4\" nessa classificação."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0344": {
+    "conceito": "A classificação de **Watson e Ballet** para o colapso avançado por pseudoartrose do escafoide (SNAC, \"scaphoid nonunion advanced collapse\") descreve uma progressão artrósica: **estágio I**, limitado ao processo estiloide radial; **estágio II**, envolvendo toda a articulação radioescafoide; e **estágio III**, estendendo-se também à articulação mediocarpal (entre o capitato e o semilunar), o padrão mais avançado, compatível com a extensão do desgaste mostrada na imagem, alcançando a articulação mediocarpal.",
+    "correta": "C. A imagem representa o estágio III.",
+    "incorretas": {
+      "A": "O **estágio I** está restrito ao processo estiloide radial, uma área muito menor do que a extensão mostrada na imagem, que já alcança a articulação mediocarpal.",
+      "B": "O **estágio II** envolve toda a articulação radioescafoide, mas ainda não a articulação mediocarpal, um estágio menos avançado do que o mostrado.",
+      "D": "A classificação original de Watson e Ballet descreve apenas os estágios I a III; o estágio III, mostrado na imagem, já representa o grau mais avançado dessa classificação."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0349": {
+    "conceito": "As seis linhas radiográficas clássicas de Judet e Letournel, usadas na incidência AP de bacia para avaliar fraturas do acetábulo, correspondem a: linha iliopectínea (**coluna anterior**), linha ilioisquiática (coluna posterior), a **gota de lágrima** (\"teardrop\", representando a parede medial do acetábulo), o teto acetabular, a parede anterior e a **parede posterior**. As estruturas numeradas 1, 3 e 6 na imagem correspondem, respectivamente, à coluna anterior (linha iliopectínea), à gota de lágrima e à parede posterior.",
+    "correta": "B. As estruturas 1, 3 e 6 correspondem, respectivamente, a coluna anterior, gota de lágrima e parede posterior.",
+    "incorretas": {
+      "A": "A estrutura 1 corresponde à linha iliopectínea (coluna anterior), não à coluna posterior, e a estrutura 3 corresponde à gota de lágrima, não ao teto acetabular.",
+      "C": "A estrutura 1 corresponde à coluna anterior (linha iliopectínea), não à parede anterior, e a estrutura 6 corresponde à parede posterior, não à coluna posterior (linha ilioisquiática).",
+      "D": "A estrutura 3 corresponde à gota de lágrima, não ao \"fundo acetabular\", e a estrutura 6 corresponde à parede posterior, não à parede anterior."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "trauma-0439": {
+    "conceito": "No colo femoral, o sistema trabecular se organiza em feixes de compressão e de tração que convergem para a cabeça do fêmur. Entre esses feixes, forma-se uma área de relativa rarefação óssea, conhecida como **triângulo de Ward**, útil como referência anatômica e no índice de Singh para avaliação da osteoporose. Já o **arco de Adams**, formado pelo feixe trabecular compressivo primário, curva-se a partir da cortical medial (calcar) em direção à cabeça femoral, sendo um importante indicador da qualidade óssea estrutural dessa região.",
+    "correta": "A. As letras A e B correspondem, respectivamente, ao triângulo de Ward e ao arco de Adams.",
+    "incorretas": {
+      "B": "Não existe uma estrutura trabecular padronizada denominada \"triângulo de Kaplan\" no colo femoral; o nome de Kaplan está associado a outras estruturas anatômicas (como a linha cardinal de Kaplan no punho), sem relação com essa região.",
+      "C": "Da mesma forma, \"arco de Kaplan\" não corresponde a uma estrutura trabecular reconhecida do colo femoral; o feixe compressivo primário curvo é denominado arco de Adams.",
+      "D": "Nenhuma das duas estruturas assinaladas corresponde a nomenclaturas de Kaplan; a área central mais radiolucente é o triângulo de Ward, e o feixe trabecular curvo junto à cortical medial é o arco de Adams."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
