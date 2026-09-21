@@ -6452,5 +6452,125 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "pediatria-0503": {
+    "conceito": "Entre as condições esqueléticas hereditárias, o padrão de herança varia bastante conforme a doença. A **doença de Morquio (mucopolissacaridose tipo IV)** tem herança **autossômica recessiva** — assim como praticamente todas as mucopolissacaridoses, com a única exceção clássica sendo a síndrome de Hunter (MPS tipo II), que é ligada ao X. Já as demais condições listadas têm herança predominantemente **autossômica dominante**: a acondroplasia, a osteogênese imperfeita (nas suas formas mais comuns, tipo I por exemplo), a neurofibromatose tipo 1 e a displasia espondiloepifisária congênita.",
+    "correta": "B. Entre as condições listadas, a doença de Morquio tem origem por distúrbio autossômico recessivo.",
+    "incorretas": {
+      "A": "A acondroplasia tem herança autossômica dominante, não recessiva.",
+      "C": "A osteogênese imperfeita, em suas formas mais comuns, tem herança autossômica dominante, não recessiva.",
+      "D": "A neurofibromatose tipo 1 tem herança autossômica dominante, não recessiva.",
+      "E": "A displasia espondiloepifisária congênita tem herança autossômica dominante, não recessiva."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0504": {
+    "conceito": "A vinheta descreve um quadro bastante característico: paciente de ascendência **finlandesa**, baixa estatura, **cabelos finos e claros** (hipoplasia capilar), frouxidão ligamentar, geno varo discreto e, principalmente, uma história de **infecção grave por varicela-zóster** — achado que reflete a imunodeficiência combinada (sobretudo de linfócitos T) característica dessa condição. Esse conjunto de achados é o quadro clássico da **condrodisplasia metafisária tipo McKusick**, também conhecida como hipoplasia de cartilagem-cabelo (\"cartilage-hair hypoplasia\"), uma condição autossômica recessiva com prevalência particularmente alta na população finlandesa (efeito fundador), e que se destaca justamente pela associação entre displasia esquelética e imunodeficiência com risco de infecções virais graves.",
+    "correta": "D. O quadro descrito, com ascendência finlandesa, cabelos finos, frouxidão ligamentar e varicela grave, corresponde à condrodisplasia metafisária do tipo McKusick.",
+    "incorretas": {
+      "A": "A condrodisplasia punctata não tem a associação clássica com ascendência finlandesa e imunodeficiência descrita no caso.",
+      "B": "A discondrosteose (síndrome de Léri-Weill) se caracteriza pela deformidade de Madelung do punho, não pelo quadro de imunodeficiência e ascendência finlandesa descrito.",
+      "C": "A condrodisplasia metafisária tipo Schmid é uma forma mais branda, sem a associação clássica com imunodeficiência e infecções virais graves.",
+      "E": "A displasia espondilometafisária tipo Kozlowski não tem a associação clássica com ascendência finlandesa e imunodeficiência descrita no caso."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0505": {
+    "conceito": "A síndrome de Proteus é uma condição rara de supercrescimento tecidual segmentar e assimétrico, causada por mutação somática em mosaico. Entre suas manifestações mais características está a **hemi-hipertrofia** — o crescimento assimétrico e desproporcional de partes do corpo (membros, dedos), frequentemente progressivo e distorcido, sendo um dos achados centrais para o reconhecimento clínico da síndrome. Outros achados típicos incluem o nevo de tecido conjuntivo cerebriforme (com **aumento**, não diminuição, da profundidade dos sulcos da pele, sobretudo palmar e plantar), macrodactilia (não microdactilia) e alterações vasculares associadas.",
+    "correta": "B. Entre as anormalidades da síndrome de Proteus, é correto citar a hemi-hipertrofia.",
+    "incorretas": {
+      "A": "A síndrome de Proteus se associa a macrodactilia (crescimento excessivo), não a microdactilia.",
+      "C": "Os nódulos de Lisch são achados característicos da neurofibromatose tipo 1, não da síndrome de Proteus.",
+      "D": "O achado característico é o aumento, não a diminuição, da espessura/profundidade dos sulcos da pele palmar (padrão cerebriforme).",
+      "E": "O achado característico é o aumento, não a diminuição, da profundidade dos sulcos da pele palmar."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0506": {
+    "conceito": "O recém-nascido normal apresenta um padrão neuromotor característico, diferente do observado em crianças mais velhas. Ao nascer, os membros são mantidos predominantemente em postura de **flexão** (não de extensão), refletindo o tônus flexor fisiológico do período neonatal — e um achado importante de normalidade neurológica é que, quando estimulados, os **membros do recém-nascido se movem de forma alternada (recíproca)**, um padrão de movimento espontâneo e simétrico entre os lados que reflete a integridade do sistema nervoso nessa fase, sendo sua ausência (movimentos não alternados ou muito assimétricos) um sinal de alerta para investigação neurológica.\n\nAlém disso, o desenvolvimento motor normal da criança progride no sentido **céfalo-caudal** — da cabeça para os membros (controle cervical antes do controle de tronco, que vem antes do controle dos membros inferiores) —, e não o contrário.",
+    "correta": "E. Os membros do recém-nascido normalmente se movem de forma alternada quando estimulados.",
+    "incorretas": {
+      "A": "Contraturas em flexão, não em extensão, são típicas da postura do recém-nascido normal.",
+      "B": "O movimento passivo do pescoço não é descrito como provocador de um forte tônus extensor generalizado como achado normal esperado.",
+      "C": "Os membros do recém-nascido são mantidos predominantemente em postura de flexão, não de extensão.",
+      "D": "O desenvolvimento normal progride no sentido céfalo-caudal (da cabeça para os membros), não o contrário."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0507": {
+    "conceito": "A doença de Charcot-Marie-Tooth (CMT) é a neuropatia hereditária mais comum, fazendo parte de um espectro mais amplo de neuropatias motoras e sensitivas hereditárias. Clinicamente, a fraqueza progressiva dos músculos distais dos membros inferiores — particularmente dos **dorsiflexores do tornozelo** (tibial anterior) — combinada com o comprometimento da propriocepção (componente sensitivo da neuropatia) e o desenvolvimento de equino fixo, gera um padrão de marcha muito característico: a **marcha escalonada (steppage gait)**, em que o paciente eleva exageradamente o joelho e o quadril para compensar a incapacidade de dorsifletir o tornozelo durante a fase de balanço, evitando que os dedos do pé arrastem no chão.",
+    "correta": "E. Devido à fraqueza na dorsiflexão, equino fixo e dificuldade com a propriocepção, os pacientes com Charcot-Marie-Tooth apresentam marcha escalonada.",
+    "incorretas": {
+      "A": "A apresentação clássica é o pé cavo bilateral (embora possa ser assimétrico), não unilateral.",
+      "B": "A CMT também pode acometer os membros superiores ao longo da progressão da doença, não se restringindo exclusivamente aos membros inferiores.",
+      "C": "A CMT é classicamente incluída no grupo das neuropatias motoras e sensitivas hereditárias (não apenas motoras), já que o componente sensitivo é uma parte central do quadro.",
+      "D": "O achado precoce clássico envolve a fraqueza do tibial anterior (dorsiflexor) e do fibular curto, não do tibial posterior."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0508": {
+    "conceito": "A acheiropodia é uma deficiência congênita rara e grave dos membros, de herança autossômica recessiva, descrita com relativa frequência em determinadas regiões do Brasil devido a efeito fundador genético. Como o próprio nome sugere (\"a\" = ausência, \"cheiro\" = mão, \"pod\" = pé), a condição se caracteriza pela **ausência completa e bilateral de ambas as mãos e de ambos os pés** (deficiência terminal transversa nos quatro membros, ao nível do antebraço distal e da perna distal), sendo uma das formas mais graves e simétricas de deficiência congênita de membros descritas.",
+    "correta": "D. Na acheiropodia, a deficiência corresponde às ausências de ambas as mãos e de ambos os pés.",
+    "incorretas": {
+      "A": "A acheiropodia envolve a ausência de ambos os pés (e mãos), não de apenas um pé isoladamente.",
+      "B": "A acheiropodia envolve a ausência completa das mãos, não apenas de um dedo isolado.",
+      "C": "A acheiropodia é bilateral e simétrica, envolvendo ambas as mãos e ambos os pés, não apenas um lado do corpo.",
+      "E": "A acheiropodia envolve a ausência completa das mãos e dos pés, não apenas de alguns dedos isolados."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0509": {
+    "conceito": "A classificação de **Stulberg**, modificada por Herring, avalia o resultado final da doença de Legg-Calvé-Perthes na maturidade esquelética, com base na esfericidade e na congruência da cabeça femoral:\n- **Classe I**: cabeça femoral esférica (normal).\n- **Classe II**: cabeça esférica, mas com alguma alteração secundária (coxa magna, colo curto), ainda se ajustando a um molde circular.\n- **Classe III**: cabeça **não esférica, elíptica (ovoide)**, desviando-se de um molde circular em **mais de 2 mm** — ainda não achatada, mas já não perfeitamente redonda.\n- **Classe IV**: cabeça achatada (não esférica), mas congruente com um acetábulo também achatado.\n- **Classe V**: cabeça achatada e incongruente com um acetábulo de formato normal (pior prognóstico).\n\nA descrição de uma cabeça femoral **elíptica**, desviada do círculo em mais de 2 mm, corresponde exatamente à definição da **classe III**.",
+    "correta": "C. A cabeça femoral elíptica, desviada do círculo em mais de 2 mm, corresponde à classe III da classificação de Stulberg modificada por Herring.",
+    "incorretas": {
+      "A": "A classe I corresponde a uma cabeça femoral esférica, normal, sem desvio do molde circular.",
+      "B": "A classe II corresponde a uma cabeça ainda esférica, apenas com alterações secundárias associadas, não a uma cabeça elíptica.",
+      "D": "A classe IV corresponde a uma cabeça já achatada (não apenas elíptica), congruente com um acetábulo também achatado.",
+      "E": "A classe V corresponde a uma cabeça achatada e incongruente com o acetábulo, um grau mais avançado do que a cabeça elíptica descrita."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0511": {
+    "conceito": "A avaliação da epifisiólise proximal do fêmur combina dois eixos complementares: a **classificação de Loder** (estável versus instável, baseada na capacidade de apoio do membro) e a **classificação de Southwick** (leve, moderado ou grave, baseada na diferença do ângulo cabeça-diáfise em relação ao lado contralateral). No caso descrito, o paciente ainda consegue deambular apoiando o membro, mesmo que com o auxílio de muletas — o que caracteriza uma epifisiólise **estável**, segundo Loder. Quanto à gravidade do desvio, uma diferença de **40 graus** entre os lados se enquadra na faixa **moderada** de Southwick (geralmente entre 30 e 50 graus), intermediária entre os desvios leves (menores que 30°) e os graves (maiores que 50°).",
+    "correta": "D. O caso descreve uma epifisiólise estável (segundo Loder) com deslizamento moderado (segundo Southwick).",
+    "incorretas": {
+      "A": "O desvio de 40 graus corresponde a um deslizamento moderado, não leve, segundo a classificação de Southwick.",
+      "B": "O paciente ainda consegue deambular com apoio (mesmo com muletas), caracterizando uma epifisiólise estável, não instável, segundo Loder.",
+      "C": "O desvio de 40 graus corresponde a um deslizamento moderado, não grave, e o paciente ainda deambula com apoio, caracterizando estabilidade, não instabilidade.",
+      "E": "O paciente ainda consegue deambular com apoio, caracterizando uma epifisiólise estável, não instável, segundo a classificação de Loder."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0512": {
+    "conceito": "A epifisite (apofisite) de tração da base do quinto metatarso, em crianças e adolescentes ativos, é conhecida como **doença de Iselin** — decorrente da tração repetitiva exercida pelo tendão do músculo fibular curto sobre o núcleo de crescimento apofisário da base do quinto metatarso, causando dor, sensibilidade local e proeminência óssea nessa região. É importante diferenciá-la de outras condições do pé com nomes semelhantes: a doença de Köhler acomete o navicular tarsal, e a doença de Freiberg acomete a cabeça do segundo (ou, menos comumente, terceiro) metatarso — sítios anatômicos completamente distintos da base do quinto metatarso.",
+    "correta": "A. A epifisite da base do quinto metatarso é conhecida como doença de Iselin.",
+    "incorretas": {
+      "B": "A doença de Köhler acomete o osso navicular tarsal, não a base do quinto metatarso.",
+      "C": "Não há uma condição clássica denominada \"doença de Wojtys\" associada à base do quinto metatarso nessa nomenclatura clássica.",
+      "D": "A doença de Freiberg acomete a cabeça do segundo metatarso, não a base do quinto.",
+      "E": "Não há uma condição clássica denominada \"doença de Takahara\" associada à base do quinto metatarso nessa nomenclatura clássica."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "pediatria-0513": {
+    "conceito": "No GMFCS, a distinção entre os níveis IV e V é particularmente relevante para uma criança de 3 anos: o **nível IV** descreve crianças com mobilidade autônoma já bastante limitada — dependem de cadeira de rodas para a maior parte dos deslocamentos, com capacidade mínima de marcha, mas ainda conseguem participar ativamente de transferências (por exemplo, ficando em pé com apoio) e podem ter algum uso de dispositivos de mobilidade elétrica. Isso as diferencia do **nível V**, no qual há dependência quase total, com controle antigravitacional de tronco e cabeça insuficiente até mesmo para participar ativamente de transferências.\n\nA capacidade de ficar em pé para participar de transferências, mesmo com capacidade mínima de marcha e dependência de cadeira de rodas, é justamente o que caracteriza o nível IV.",
+    "correta": "D. Uma criança que fica em pé para transferências, mas com capacidade mínima de marcha e dependente de cadeira de rodas, é classificada como GMFCS nível IV.",
+    "incorretas": {
+      "A": "O nível I corresponde a crianças que deambulam sem limitações significativas, muito diferente do quadro descrito.",
+      "B": "O nível II corresponde a crianças que deambulam de forma independente, com limitações apenas em ambientes mais desafiadores.",
+      "C": "O nível III corresponde a crianças que deambulam com dispositivos auxiliares de marcha, com mobilidade funcional maior do que a descrita.",
+      "E": "O nível V corresponde a uma dependência ainda mais completa, sem a capacidade de participar ativamente de transferências em pé, diferente do quadro descrito."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
