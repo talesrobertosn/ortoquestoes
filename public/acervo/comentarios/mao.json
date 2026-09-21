@@ -6975,5 +6975,39 @@
     ],
     "geradoEm": "2026-09-17",
     "conferido": false
+  },
+  "mao-0167": {
+    "conceito": "O pronador quadrado é o único músculo verdadeiramente quadrangular do antebraço: uma lâmina fina e plana que corre transversalmente entre a face anterior distal da ulna e a face anterior distal do rádio, imediatamente proximal ao punho. Fica profundo aos tendões flexores dos dedos e ao nervo mediano, e junto com o pronador redondo (que age no terço proximal) forma o par de pronadores do antebraço — mas é o quadrado o principal pronador em qualquer posição do cotovelo, e o único ativo na pronação rápida. É inervado pelo nervo interósseo anterior, ramo do mediano.",
+    "correta": "D. A estrutura assinalada, na porção distal do antebraço e profunda aos tendões flexores, correndo transversalmente entre rádio e ulna, é o pronador quadrado.",
+    "incorretas": {
+      "A": "O ancôneo fica no cotovelo, na face posterior, entre o epicôndilo lateral do úmero e o olécrano — bem distante da região distal assinalada.",
+      "B": "O supinador envolve o terço proximal do rádio, logo abaixo do cotovelo — a estrutura assinalada está no extremo distal do antebraço, junto ao punho.",
+      "C": "O pronador redondo cruza obliquamente o terço proximal do antebraço — a estrutura indicada é transversal e fica na porção distal."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "mao-0173": {
+    "conceito": "O nervo interósseo anterior nasce do nervo mediano na altura do músculo pronador redondo, mergulha entre as duas cabeças desse músculo e desce profundamente sobre a face anterior da membrana interóssea, entre o flexor superficial e o flexor profundo dos dedos. É puramente motor e inerva três músculos do compartimento profundo do antebraço: o flexor longo do polegar, o feixe radial do flexor profundo dos dedos (2º e 3º dedos) e, na extremidade distal, o pronador quadrado.",
+    "correta": "C. A estrutura assinalada corresponde ao nervo interósseo anterior, ramo do mediano, que inerva o flexor longo do polegar (além do feixe radial do flexor profundo dos dedos e do pronador quadrado).",
+    "incorretas": {
+      "A": "O supinador é inervado pelo ramo motor do nervo radial (interósseo posterior), que corre no compartimento posterior — não pela estrutura assinalada, no compartimento anterior.",
+      "B": "O pronador redondo recebe um ramo direto do nervo mediano, antes da origem do interósseo anterior — proximal ao ponto assinalado na imagem.",
+      "D": "O flexor superficial dos dedos recebe ramos diretos do nervo mediano, não do interósseo anterior, que inerva especificamente o compartimento profundo."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
+  },
+  "mao-0414": {
+    "alerta": "Questão anulada pela banca. O texto abaixo segue o gabarito oficial (B), mas fica registrada a ressalva: a ação classicamente descrita para a protração escapular é do serrátil anterior, não do romboide (cuja ação é a retração da escápula) — é possível que a anulação tenha decorrido justamente dessa inconsistência entre o nome do teste clínico e a ação muscular testada.",
+    "conceito": "Na lesão traumática das raízes altas do plexo braquial (C5-C6, padrão Erb-Duchenne), o nível da lesão pode ser sugerido pelo padrão de músculos comprometidos. O romboide é inervado pelo nervo escapular dorsal, formado só pela raiz C5 — um músculo \"puro\" de raiz alta, o que o torna clinicamente útil para localizar a lesão. Já o serrátil anterior (nervo torácico longo) recebe contribuição de C5 a C7, e por isso seu comprometimento é menos específico para lesões restritas às raízes altas.",
+    "correta": "B (gabarito oficial). O romboide, inervado pelo nervo escapular dorsal (C5 puro), é o músculo de escolha para testar especificamente a integridade da raiz C5 nas lesões altas do plexo braquial — mas veja a ressalva no alerta sobre a nomenclatura do teste.",
+    "incorretas": {
+      "A": "O deltoide (nervo axilar, C5-C6) também é afetado nas lesões altas do plexo, mas não é o músculo classicamente associado ao teste de protração escapular.",
+      "C": "O grande dorsal é inervado pelo nervo toracodorsal, de raízes médias/baixas (C6-C8) — não é alvo de um teste voltado a raízes altas.",
+      "D": "O serrátil anterior é o músculo classicamente responsável pela ação de protração da escápula, mas recebe contribuição também de C7, o que o torna menos específico para lesões restritas às raízes altas — veja o alerta acima."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }

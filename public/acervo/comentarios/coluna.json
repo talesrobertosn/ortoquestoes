@@ -3911,5 +3911,17 @@
     ],
     "geradoEm": "2026-09-17",
     "conferido": false
+  },
+  "coluna-0088": {
+    "alerta": "Questão anulada pela banca. A literatura padrão de trauma raquimedular (incluindo o ATLS) costuma descrever o arco reflexo bulbocavernoso como S2 a S4, não apenas S2-S3 — é provável que a anulação tenha decorrido dessa divergência entre o gabarito e a descrição usual na literatura.",
+    "conceito": "O reflexo bulbocavernoso é o reflexo sacral mais usado na avaliação inicial do trauma raquimedular: a compressão da glande ou do clitóris (ou a tração de uma sonda vesical já instalada) provoca contração reflexa palpável do esfíncter anal externo ao toque retal. Ele testa a integridade do arco reflexo sacral, com via aferente e eferente pelo nervo pudendo. Sua ausência na fase aguda é compatível com choque medular; seu retorno marca o fim do choque medular e permite reclassificar como lesão completa (sem função sensitivomotora voluntária abaixo do nível, apesar do reflexo presente) ou incompleta.",
+    "correta": "C (gabarito oficial: S2 e S3). Veja a ressalva no alerta: a literatura padrão de trauma costuma descrever esse arco reflexo como S2 a S4.",
+    "incorretas": {
+      "A": "L5 e S1 correspondem ao arco do reflexo aquileu, não ao bulbocavernoso.",
+      "B": "Esse par não corresponde ao arco classicamente descrito para o reflexo bulbocavernoso na literatura de trauma raquimedular.",
+      "D": "S4 e S5 fazem parte da inervação sacral baixa, mas isoladamente não compõem o arco reflexo descrito para o bulbocavernoso, que a literatura padrão estende também a S2 e S3."
+    },
+    "geradoEm": "2026-09-21",
+    "conferido": false
   }
 }
