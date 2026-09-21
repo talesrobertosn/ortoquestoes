@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react'
+import { useEffect, useState, type FormEvent } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, retornoConta, supabase } from '../conta/supabase'
 import { TIPOS_SYNC, deItens, itens } from '../conta/modeloSync'
@@ -53,6 +53,37 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [receberNovidades, definirReceberNovidades] = useState(Boolean(perfil.receber_novidades ?? false))
   const [aceitouTermos, definirAceitouTermos] = useState(false)
   const [salvandoPerfil, definirSalvandoPerfil] = useState(false)
+  const [apelidoRanking, definirApelidoRanking] = useState('')
+  const [participaRanking, definirParticipaRanking] = useState(false)
+  const [rankingCarregado, definirRankingCarregado] = useState(false)
+  const [salvandoRanking, definirSalvandoRanking] = useState(false)
+  const apelidoSugerido = `${nome.trim()} ${sobrenome.trim().charAt(0).toUpperCase()}${sobrenome.trim() ? '.' : ''}`.trim()
+  useEffect(() => {
+    if (!supabase || !sessao) return
+    let vivo = true
+    supabase.from('perfis_publicos').select('apelido, participa_ranking').eq('usuario_id', sessao.user.id).maybeSingle()
+      .then(({ data }) => {
+        if (!vivo) return
+        definirApelidoRanking(String(data?.apelido ?? apelidoSugerido))
+        definirParticipaRanking(Boolean(data?.participa_ranking ?? false))
+        definirRankingCarregado(true)
+      })
+    return () => { vivo = false }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sessao?.user.id])
+  async function salvarRanking(participar: boolean) {
+    if (!supabase || !sessao) return
+    if (participar && apelidoRanking.trim().length < 2) { definirMensagem('Escolha um nome com pelo menos 2 letras para aparecer no ranking.'); return }
+    definirSalvandoRanking(true)
+    try {
+      const { error } = await supabase.from('perfis_publicos')
+        .upsert({ apelido: apelidoRanking.trim() || apelidoSugerido, participa_ranking: participar }, { onConflict: 'usuario_id' })
+      if (error) throw error
+      definirParticipaRanking(participar)
+      definirMensagem(participar ? 'Você está participando do ranking.' : 'Você saiu do ranking.')
+    } catch { definirMensagem('Não foi possível salvar agora. Tente de novo.') }
+    finally { definirSalvandoRanking(false) }
+  }
   async function salvarPerfil() {
     if (!supabase || !sessao) return
     definirSalvandoPerfil(true)
@@ -168,6 +199,20 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         <div className="atalhos-estudo"><a href={href('/dados')}><strong>{metricas.respondidas}</strong><span>Questões respondidas</span></a><a href={href('/revisao')}><strong>{metricas.pendentes}</strong><span>Revisões programadas</span></a><a href={href('/dados')}><strong>{metricas.acerto === null ? '—' : `${metricas.acerto}%`}</strong><span>Acerto acumulado</span></a></div>
       </section>}
       <section className="cartao cartao__corpo empilha">
+        <p className="meta">OPCIONAL</p><h2>Ranking público</h2>
+        <p className="texto-2">Compare com outras contas pelo número de questões respondidas — sem contar percentual de acerto. Só entra no ranking quem ativa aqui, e você escolhe como seu nome aparece; nada do seu perfil (e-mail, WhatsApp, cidade etc.) é exibido.</p>
+        {rankingCarregado && <>
+          <label className="campo">Como você aparece no ranking<input className="entrada" maxLength={40} value={apelidoRanking} onChange={e => definirApelidoRanking(e.target.value)} placeholder={apelidoSugerido || 'Seu nome'} /></label>
+          <div className="linha">
+            {participaRanking
+              ? <button className="botao" type="button" onClick={() => salvarRanking(false)} disabled={salvandoRanking}>Sair do ranking</button>
+              : <button className="botao botao--principal" type="button" onClick={() => salvarRanking(true)} disabled={salvandoRanking}>Participar do ranking</button>}
+            {participaRanking && <button className="botao botao--fantasma" type="button" onClick={() => salvarRanking(true)} disabled={salvandoRanking}>Salvar nome</button>}
+            <a className="botao botao--fantasma" href={href('/ranking')}>Ver ranking</a>
+          </div>
+        </>}
+      </section>
+      <section className="cartao cartao__corpo empilha">
         <h2>Preferências de estudo</h2>
         <p className="texto-2">Sua meta orienta os atalhos de revisão. Você pode mudar quando a semana estiver mais cheia.</p>
         <div className="campo"><span className="campo__rotulo">Meta diária de revisão</span><div className="grupo-opcoes" aria-label="Meta diária de revisão">{[10, 20, 30].map(meta => <button type="button" key={meta} className="opcao-segmento" aria-pressed={metaDiaria === meta} onClick={() => definirMetaDiaria(meta)}>{meta} revisões/dia</button>)}</div></div>
@@ -209,7 +254,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" required value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
           <div className="linha-campos linha-campos--2"><label className="campo">WhatsApp <span className="meta">(opcional)</span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo">Cidade <span className="meta">(opcional)</span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
           <label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o OrtoQuestões</label>
-          <p className="texto-2">Seu WhatsApp é opcional. Os dados de perfil servem para personalizar sua experiência e não ficam visíveis a outros usuários.</p>
+          <p className="texto-2">Seu WhatsApp é opcional. Os dados de perfil servem para personalizar sua experiência e não ficam visíveis a outros usuários — a única exceção é o ranking público, que fica desligado até você ativá-lo depois, escolhendo como seu nome aparece.</p>
         </>}
         {(recuperacao || modo !== 'recuperar') && <label className="campo">{recuperacao ? 'Nova senha' : 'Senha'}<input className="entrada" type="password" autoComplete={modo === 'entrar' && !recuperacao ? 'current-password' : 'new-password'} minLength={modo === 'entrar' && !recuperacao ? undefined : 8} required value={senha} onChange={e => definirSenha(e.target.value)} /></label>}
         {!recuperacao && modo === 'criar' && <label className="campo campo--checkbox"><input type="checkbox" required checked={aceitouTermos} onChange={e => definirAceitouTermos(e.target.checked)} /> Li e concordo com os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso e Consentimento</a> do OrtoQuestões.</label>}

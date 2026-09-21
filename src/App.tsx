@@ -12,6 +12,7 @@ import { Contato, DadosLocais, NaoEncontrada, Sobre } from './paginas/Apoio'
 import { Favoritas } from './paginas/Favoritas'
 import { Progresso } from './paginas/Progresso'
 import { Revisao } from './paginas/Revisao'
+import { Ranking } from './paginas/Ranking'
 import { Termos } from './paginas/Termos'
 import { Assinatura } from './paginas/Assinatura'
 import { Entrar } from './paginas/Entrar'
@@ -32,6 +33,7 @@ const TITULOS: Record<string, string> = {
   '/favoritas': 'Suas favoritas — OrtoQuestões',
   '/progresso': 'Progresso dos comentários — OrtoQuestões',
   '/revisao': 'Sua revisão — OrtoQuestões',
+  '/ranking': 'Ranking — OrtoQuestões',
   '/termos': 'Termos de Uso e Consentimento — OrtoQuestões',
   '/assinatura': 'Planos — OrtoQuestões',
   '/entrar': 'Entrar ou criar conta — OrtoQuestões',
@@ -95,6 +97,9 @@ export function App() {
       break
     case 'revisao':
       pagina = <Revisao />
+      break
+    case 'ranking':
+      pagina = <Ranking />
       break
     case 'termos':
       pagina = <Termos />

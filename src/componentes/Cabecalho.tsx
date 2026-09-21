@@ -13,6 +13,7 @@ const LINKS = [
   { destino: '/treinar', rotulo: 'Treinar', ocultaCelular: false },
   { destino: '/dados', rotulo: 'Desempenho', ocultaCelular: false },
   { destino: '/revisao', rotulo: 'Revisão', ocultaCelular: true },
+  { destino: '/ranking', rotulo: 'Ranking', ocultaCelular: true },
 ]
 
 export function Cabecalho({ caminho }: { caminho: string }) {

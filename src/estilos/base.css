@@ -1632,6 +1632,11 @@ textarea {
 .tabela th.numerico {
   text-align: right;
 }
+.tabela tr.linha-destaque td,
+.tabela tr.linha-destaque th {
+  background: var(--verdete-veu);
+  font-weight: 600;
+}
 .rolagem-x {
   overflow-x: auto;
 }

@@ -301,6 +301,7 @@ export function DadosLocais() {
         <div className="numeros-apoio">
           <span>{errosTotais} {errosTotais === 1 ? 'erro acumulado' : 'erros acumulados'}</span>
           <a href={href('/favoritas')}>{favoritos.length} {favoritos.length === 1 ? 'favorita' : 'favoritas'}</a>
+          {conta && <a href={href('/ranking')}>ver ranking</a>}
         </div>
       </section>
 
