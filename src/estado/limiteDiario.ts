@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { chamarRpc, obterToken } from '../servicos/supabase'
+import { chamarRpc } from '../servicos/supabase'
 
 export const FUSO_DIA = 'America/Sao_Paulo'
 export const LIMITES_HABILITADOS = import.meta.env.VITE_LIMITES_HABILITADOS === 'true'
@@ -29,6 +29,7 @@ export interface EstadoLimite {
   liberaEm: string
   sequencia: number
   motivo?: string
+  falhaValidacao?: boolean
 }
 
 export function usarLimiteDiario() {
@@ -39,7 +40,6 @@ export function usarLimiteDiario() {
     if (!LIMITES_HABILITADOS) return { permitido: true } as EstadoLimite
     definirValidando(true)
     try {
-      if (!obterToken()) throw new Error('Entre na sua conta para registrar novas respostas.')
       const resposta = await chamarRpc<Array<Record<string, unknown>>>('autorizar_resposta', {
         p_chave_idempotencia: chaveIdempotencia,
         p_id_questao: idQuestao,
@@ -53,7 +53,7 @@ export function usarLimiteDiario() {
       definirEstado(normalizado)
       return normalizado
     } catch (erro) {
-      const bloqueado: EstadoLimite = { permitido: false, paywallAtivo: true, ilimitado: false, consumidas: 0, limite: 0, restantes: 0, liberaEm: '', sequencia: 0, motivo: erro instanceof Error ? erro.message : 'Não foi possível validar o limite.' }
+      const bloqueado: EstadoLimite = { permitido: false, paywallAtivo: true, ilimitado: false, consumidas: 0, limite: 0, restantes: 0, liberaEm: '', sequencia: 0, motivo: erro instanceof Error ? erro.message : 'Não foi possível validar o limite.', falhaValidacao: true }
       definirEstado(bloqueado)
       return bloqueado
     } finally { definirValidando(false) }

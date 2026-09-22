@@ -53,7 +53,18 @@ if (clienteConta) {
 export function supabaseConfigurado() { return !!url && !!chaveSupabase }
 export function obterSessao() { return lerSessao() }
 export function obterToken() { return lerSessao()?.access_token ?? null }
+async function tokenDoClienteConta(): Promise<string | null> {
+  if (!clienteConta) return null
+  const limite = new Promise<null>((resolver) => setTimeout(() => resolver(null), 10_000))
+  const leitura = clienteConta.auth.getSession().then(({ data }) => data.session?.access_token ?? null).catch(() => null)
+  return Promise.race([leitura, limite])
+}
+
+// A sessão do cliente de conta é a que o app considera "logada" e a única que
+// se renova de forma confiável; a cópia local só serve ao retorno por link.
 async function garantirToken() {
+  const doCliente = await tokenDoClienteConta()
+  if (doCliente) return doCliente
   const sessao = lerSessao()
   if (!sessao) return null
   if (!sessao.expires_at || sessao.expires_at * 1000 > Date.now() + 60_000) return sessao.access_token

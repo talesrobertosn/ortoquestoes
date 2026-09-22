@@ -18,6 +18,19 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
   }, [aberto])
   const libera = estado?.liberaEm ? new Date(estado.liberaEm) : null
   const faltam = libera ? Math.max(0, Math.ceil((libera.getTime() - agora) / 1000)) : null
+  if (estado?.falhaValidacao) {
+    return (
+      <Painel titulo="Não foi possível registrar a resposta" aberto={aberto} aoFechar={aoFechar}>
+        <div className="empilha">
+          <p>{estado.motivo}</p>
+          <p className="texto-2">Verifique a conexão e tente de novo. Se continuar, saia da conta e entre novamente.</p>
+          <div className="linha linha--empilha-celular">
+            <button className="botao botao--principal" type="button" onClick={aoFechar}>Tentar de novo</button>
+          </div>
+        </div>
+      </Painel>
+    )
+  }
   return (
     <Painel titulo="Limite diário alcançado" aberto={aberto} aoFechar={aoFechar}>
       <div className="empilha">
