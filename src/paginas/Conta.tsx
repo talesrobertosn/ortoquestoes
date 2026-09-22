@@ -13,6 +13,8 @@ import { usarTema } from '../estado/tema'
 import { dadosAceiteTermos } from '../conta/termos'
 import { textoErro } from '../conta/erros'
 import { Icone } from '../componentes/Icone'
+import { Medalha } from '../componentes/Medalha'
+import { conquistaAtual } from '../estado/conquistas'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -242,72 +244,98 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       </section>
     </div>
   }
-  return <article className="limite-leitura empilha-2 conta-pagina">
-    <header><p className="meta">SEU ESTUDO, EM QUALQUER DISPOSITIVO</p><h1>Minha conta</h1><p>O OrtoQuestões continua 100% gratuito, sem limite diário.</p></header>
+  const inicialNome = (nome.trim().charAt(0) || sessao.user.email?.charAt(0) || '?').toUpperCase()
+  const emblema = metricas ? conquistaAtual(metricas.respondidas) : null
+  const sair = async () => {
+    if (!supabase) return
+    if (status.pendentes && !window.confirm('Ainda há alterações não sincronizadas. Elas ficarão neste navegador, disponíveis quando você entrar novamente nesta conta. Sair agora?')) return
+    definirOcupado(true)
+    try { const { error } = await supabase.auth.signOut({ scope: 'local' }); if (error) throw error } catch { definirMensagem('Não foi possível sair. Confira sua conexão e tente novamente.') } finally { definirOcupado(false) }
+  }
+  return <article className="empilha-2 conta-pagina ct">
+    <section className="ct-heroi">
+      <div className="ct-heroi__perfil">
+        <span className="ct-avatar" aria-hidden="true">{inicialNome}</span>
+        <div className="ct-heroi__nome">
+          <p className="ct-heroi__selo">Minha conta</p>
+          <h1>{nome.trim() ? `${nome.trim()} ${sobrenome.trim()}`.trim() : 'Sua conta'}</h1>
+          <p className="ct-heroi__email">{sessao.user.email}</p>
+          <p className="ct-heroi__sync" role="status">
+            <span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" />
+            {ROTULOS_STATUS[status.estado]}{status.pendentes > 0 && ` ${status.pendentes} alteração(ões) pendente(s).`}
+          </p>
+        </div>
+      </div>
+      <div className="ct-heroi__acoes">
+        <button className="botao botao--vidro" onClick={sincronizar} disabled={status.estado === 'sincronizando'}><Icone nome="reiniciar" tamanho={16} /> Sincronizar</button>
+        <button className="botao botao--vidro" disabled={ocupado} onClick={() => void sair()}>Sair da conta</button>
+      </div>
+      {metricas && <dl className="ct-heroi__numeros">
+        <a href={href('/dados')}><dt>Questões respondidas</dt><dd>{metricas.respondidas.toLocaleString('pt-BR')}{emblema && <span className="medalha-inline"><Medalha conquista={emblema} tamanho={22} titulo={`Emblema ${emblema.rotulo}`} /></span>}</dd></a>
+        <a href={href('/revisao')}><dt>Revisões programadas</dt><dd>{metricas.pendentes.toLocaleString('pt-BR')}</dd></a>
+        <a href={href('/dados')}><dt>Acerto acumulado</dt><dd>{metricas.acerto === null ? '0%' : `${metricas.acerto}%`}</dd></a>
+      </dl>}
+    </section>
     {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
-    <>
-      <section className="cartao cartao__corpo empilha">
-        <h2>{sessao.user.email}</h2><p>Respostas, revisões, favoritas, anotações e histórico ficam associados à sua conta. A sessão em andamento fica neste dispositivo.</p>
-        <p role="status">{ROTULOS_STATUS[status.estado]} {status.pendentes > 0 && `${status.pendentes} alteração(ões) pendente(s).`}</p>
-        <p className="texto-2">Conta criada em {new Date(sessao.user.created_at).toLocaleDateString('pt-BR')} · dispositivo atual: este navegador.</p>
-        <div className="linha"><a className="botao" href={href('/dados')}>Ver desempenho e backup</a><button className="botao botao--fantasma" onClick={sincronizar} disabled={status.estado === 'sincronizando'}>Sincronizar agora</button></div>
-        <button className="botao botao--fantasma" disabled={ocupado} onClick={async () => {
-          if (!supabase) return
-          if (status.pendentes && !window.confirm('Ainda há alterações não sincronizadas. Elas ficarão neste navegador, disponíveis quando você entrar novamente nesta conta. Sair agora?')) return
-          definirOcupado(true)
-          try { const { error } = await supabase.auth.signOut({ scope: 'local' }); if (error) throw error } catch { definirMensagem('Não foi possível sair. Confira sua conexão e tente novamente.') } finally { definirOcupado(false) }
-        }}>Sair da conta</button>
-      </section>
-      {metricas && <section className="cartao cartao__corpo empilha">
-        <p className="meta">SEU PAINEL</p><h2>Estudo neste perfil</h2>
-        <div className="atalhos-estudo"><a href={href('/dados')}><strong>{metricas.respondidas}</strong><span>Questões respondidas</span></a><a href={href('/revisao')}><strong>{metricas.pendentes}</strong><span>Revisões programadas</span></a><a href={href('/dados')}><strong>{metricas.acerto === null ? '—' : `${metricas.acerto}%`}</strong><span>Acerto acumulado</span></a></div>
-      </section>}
-      <section className="cartao cartao__corpo empilha">
-        <p className="meta">OPCIONAL</p><h2>Ranking público</h2>
-        <p className="texto-2">Compare com outras contas pelo número de questões respondidas — sem contar percentual de acerto. Só entra no ranking quem ativa aqui, e você escolhe como seu nome aparece; nada do seu perfil (e-mail, WhatsApp, cidade etc.) é exibido.</p>
-        {rankingCarregado && <>
-          <label className="campo">Como você aparece no ranking<input className="entrada" maxLength={40} value={apelidoRanking} onChange={e => definirApelidoRanking(e.target.value)} placeholder={apelidoSugerido || 'Seu nome'} /></label>
+
+    <div className="ct-grade">
+      <section className="ct-cartao">
+        <header className="ct-cartao__cabeca"><span className="ct-icone ct-icone--ouro"><Icone nome="trofeu" tamanho={18} /></span><div><h2>Ranking público</h2><p>Opcional. Conta questões respondidas, não acerto.</p></div></header>
+        {rankingCarregado ? <>
+          <div className={'ct-status' + (participaRanking ? ' ct-status--ativo' : '')}>
+            <span className="ct-status__ponto" aria-hidden="true" />
+            {participaRanking ? 'Você está participando' : 'Você não aparece no ranking'}
+          </div>
+          <label className="campo">Como seu nome aparece<input className="entrada" maxLength={40} value={apelidoRanking} onChange={e => definirApelidoRanking(e.target.value)} placeholder={apelidoSugerido || 'Seu nome'} /></label>
           <div className="linha">
             {participaRanking
-              ? <button className="botao" type="button" onClick={() => salvarRanking(false)} disabled={salvandoRanking}>Sair do ranking</button>
+              ? <><button className="botao botao--principal" type="button" onClick={() => salvarRanking(true)} disabled={salvandoRanking}>Salvar nome</button><button className="botao botao--fantasma" type="button" onClick={() => salvarRanking(false)} disabled={salvandoRanking}>Sair do ranking</button></>
               : <button className="botao botao--principal" type="button" onClick={() => salvarRanking(true)} disabled={salvandoRanking}>Participar do ranking</button>}
-            {participaRanking && <button className="botao botao--fantasma" type="button" onClick={() => salvarRanking(true)} disabled={salvandoRanking}>Salvar nome</button>}
             <a className="botao botao--fantasma" href={href('/ranking')}>Ver ranking</a>
           </div>
-        </>}
+          <p className="ct-nota">E-mail, WhatsApp e cidade nunca aparecem no ranking.</p>
+        </> : <p className="texto-2">Carregando…</p>}
       </section>
-      <section className="cartao cartao__corpo empilha">
-        <h2>Preferências de estudo</h2>
-        <p className="texto-2">Sua meta orienta os atalhos de revisão. Você pode mudar quando a semana estiver mais cheia.</p>
-        <div className="campo"><span className="campo__rotulo">Meta diária de revisão</span><div className="grupo-opcoes" aria-label="Meta diária de revisão">{[10, 20, 30].map(meta => <button type="button" key={meta} className="opcao-segmento" aria-pressed={metaDiaria === meta} onClick={() => definirMetaDiaria(meta)}>{meta} revisões/dia</button>)}</div></div>
-        <div className="campo"><span className="campo__rotulo">Densidade da leitura</span><div className="grupo-opcoes">{([['confortavel', 'Confortável'], ['compacta', 'Compacta'], ['foco', 'Foco']] as const).map(([valor, rotulo]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={densidade === valor} onClick={() => definirDensidade(valor)}>{rotulo}</button>)}</div></div>
-        <label className="campo">Tamanho da fonte <output className="numerico">{fonte}%</output><input className="entrada" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>
-        <div className="campo"><span className="campo__rotulo">Tema</span><div className="grupo-opcoes">{([['claro', 'Claro'], ['escuro', 'Escuro']] as const).map(([valor, rotulo]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={tema === valor} onClick={() => trocarTema(valor)}>{rotulo}</button>)}</div></div>
-        <label className="campo campo--checkbox"><input type="checkbox" checked={mostrarEtiquetas} onChange={e => definirEtiquetas(e.target.checked)} /> Mostrar a etiqueta do assunto antes de responder</label>
-        <div className="linha"><a className="botao" href={href('/dados')}>Backup e privacidade</a><a className="botao" href={href('/revisao')}>Configurar minha revisão</a></div>
+
+      <section className="ct-cartao">
+        <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="livro" tamanho={18} /></span><div><h2>Preferências de estudo</h2><p>Leitura, tema e meta de revisão.</p></div></header>
+        <div className="ct-opcao"><span className="ct-opcao__rotulo">Meta diária de revisão</span><div className="ct-seg" aria-label="Meta diária de revisão">{[10, 20, 30].map(meta => <button type="button" key={meta} aria-pressed={metaDiaria === meta} onClick={() => definirMetaDiaria(meta)}>{meta}/dia</button>)}</div></div>
+        <div className="ct-opcao"><span className="ct-opcao__rotulo">Densidade da leitura</span><div className="ct-seg">{([['confortavel', 'Confortável'], ['compacta', 'Compacta'], ['foco', 'Foco']] as const).map(([valor, rotulo]) => <button key={valor} type="button" aria-pressed={densidade === valor} onClick={() => definirDensidade(valor)}>{rotulo}</button>)}</div></div>
+        <div className="ct-opcao"><span className="ct-opcao__rotulo">Tema</span><div className="ct-seg">{([['claro', 'Claro'], ['escuro', 'Escuro']] as const).map(([valor, rotulo]) => <button key={valor} type="button" aria-pressed={tema === valor} onClick={() => trocarTema(valor)}>{rotulo}</button>)}</div></div>
+        <label className="ct-opcao ct-opcao--faixa"><span className="ct-opcao__rotulo">Tamanho da fonte <output>{fonte}%</output></span><input className="ct-faixa" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>
+        <label className="ct-interruptor"><input type="checkbox" checked={mostrarEtiquetas} onChange={e => definirEtiquetas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Mostrar a etiqueta do assunto antes de responder</span></label>
       </section>
-      <section className="cartao cartao__corpo empilha">
-        <h2>Segurança da conta</h2>
-        <p className="texto-2">Trocar o e-mail exige confirmação pelo novo endereço. Sair só desconecta este navegador; o seu progresso permanece salvo.</p>
-        <div className="linha-campos linha-campos--2"><label className="campo">Novo e-mail<input className="entrada" type="email" value={novoEmail} onChange={e => definirNovoEmail(e.target.value)} placeholder="novo@email.com" /></label><div className="campo"><span className="campo__rotulo">Ações</span><div className="linha"><button className="botao" type="button" onClick={() => void trocarEmail()} disabled={ocupado || !novoEmail.trim()}>Trocar e-mail</button><a className="botao botao--fantasma" href={href('/contato?assunto=exclusao-conta')}>Solicitar exclusão</a></div></div></div>
-      </section>
-      <section className="cartao cartao__corpo empilha">
-        <h2>Meu perfil</h2>
-        <p className="texto-2">Esses dados ficam associados à sua conta e ajudam a personalizar sua experiência. Foto não é necessária.</p>
+
+      <section className="ct-cartao ct-cartao--largo">
+        <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="usuario" tamanho={18} /></span><div><h2>Meu perfil</h2><p>Personaliza sua experiência. Seu contato nunca é exibido publicamente.</p></div></header>
         <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} /></label><label className="campo">Sobrenome<input className="entrada" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
         <div className="linha-campos linha-campos--2"><label className="campo">Data de nascimento<input className="entrada" type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label><label className="campo">Você é <select className="entrada" value={situacao} onChange={e => definirSituacao(e.target.value)}><option value="">Escolha uma opção</option><option value="residente">Residente de ortopedia</option><option value="ortopedista">Ortopedista</option><option value="outro">Outro profissional ou estudante</option></select></label></div>
         <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
-        <div className="linha-campos linha-campos--2"><label className="campo">WhatsApp <span className="meta">(opcional)</span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo">Cidade <span className="meta">(opcional)</span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
-        <div className="linha-campos linha-campos--2"><label className="campo">UF <span className="meta">(opcional)</span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'].map(sigla => <option key={sigla}>{sigla}</option>)}</select></label><label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o OrtoQuestões</label></div>
+        <div className="linha-campos linha-campos--2"><label className="campo"><span>WhatsApp <span className="meta">(opcional)</span></span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo"><span>Cidade <span className="meta">(opcional)</span></span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
+        <div className="linha-campos linha-campos--2"><label className="campo"><span>UF <span className="meta">(opcional)</span></span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'].map(sigla => <option key={sigla}>{sigla}</option>)}</select></label><label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o OrtoQuestões</label></div>
         <p className="texto-2">WhatsApp, cidade e UF são opcionais. Usamos seus dados de perfil para personalizar sua experiência e nunca exibimos seu contato publicamente.</p>
         <button className="botao botao--principal" type="button" onClick={salvarPerfil} disabled={salvandoPerfil}>{salvandoPerfil ? 'Salvando…' : 'Salvar perfil'}</button>
       </section>
+
+      <section className="ct-cartao">
+        <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="alerta" tamanho={18} /></span><div><h2>Segurança</h2><p>Trocar o e-mail exige confirmação pelo novo endereço.</p></div></header>
+        <label className="campo">Novo e-mail<input className="entrada" type="email" value={novoEmail} onChange={e => definirNovoEmail(e.target.value)} placeholder="novo@email.com" /></label>
+        <div className="linha"><button className="botao botao--principal" type="button" onClick={() => void trocarEmail()} disabled={ocupado || !novoEmail.trim()}>Trocar e-mail</button></div>
+        <p className="ct-nota">Conta criada em {new Date(sessao.user.created_at).toLocaleDateString('pt-BR')}. Quer apagar tudo? <a href={href('/contato?assunto=exclusao-conta')}>Solicitar exclusão da conta</a>.</p>
+      </section>
+
+      <section className="ct-cartao">
+        <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="baixar" tamanho={18} /></span><div><h2>Dados e backup</h2><p>Exporte seu progresso ou comece do zero.</p></div></header>
+        <p className="texto-2">Respostas, revisões, favoritas, anotações e histórico ficam na sua conta e acompanham você em qualquer aparelho. A sessão em andamento fica neste dispositivo.</p>
+        <div className="linha"><a className="botao" href={href('/dados')}>Desempenho e backup</a><a className="botao botao--fantasma" href={href('/revisao')}>Minha revisão</a></div>
+      </section>
+    </div>
+
       {possuiVisitante && !importado && <section className="cartao cartao__corpo empilha"><h2>Você já estudou neste navegador</h2><p>Importe o progresso de visitante para esta conta. Só serão acrescentados itens que ainda não existem nela. Em um dispositivo compartilhado, importe apenas se esse progresso for seu.</p><button className="botao botao--principal" onClick={importar} disabled={!status.pronto}>Importar meu progresso de visitante</button></section>}
       {status.conflitos.length > 0 && <section className="empilha"><h2>Confira as alterações simultâneas</h2><p>Este item mudou em outro dispositivo antes de sua alteração chegar. Escolha qual versão manter.</p>
         {status.conflitos.map(doc => <div className="cartao cartao__corpo empilha" key={`${doc.tipo}/${doc.item}`}><h3>{ROTULOS_TIPO[doc.tipo]} · {doc.item}</h3>
           <details><summary>Comparar versões</summary><p>Versão deste navegador</p><pre>{JSON.stringify(itens(doc.tipo, ler(doc.tipo, null))[doc.item] ?? null, null, 2)}</pre><p>Versão da conta</p><pre>{JSON.stringify(doc.valor, null, 2)}</pre></details>
           <div className="linha"><button className="botao" onClick={() => resolver(doc, true)}>Manter deste navegador</button><button className="botao" onClick={() => resolver(doc, false)}>Usar versão da conta</button></div></div>)}
       </section>}
-    </>
   </article>
 }

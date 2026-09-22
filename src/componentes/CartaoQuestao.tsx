@@ -243,28 +243,17 @@ export function CartaoQuestao({
     <article className="cartao questao-impressa" aria-label={`Questão ${numero ?? ''}`} ref={areaDaQuestao} onMouseUp={atualizarSelecao}>
       {grifos.map((r, i) => <span key={i} className="grifo-overlay" style={{ left: r.left, top: r.top, width: r.width, height: r.height }} aria-hidden="true" />)}
       <div className="cartao__corpo">
-        <div className="questao__topo">
-          {questao.ano && <span className="etiqueta etiqueta--dado">{questao.ano}</span>}
-          {questao.prova && <span className="etiqueta">{questao.prova}</span>}
-          {etiquetasVisiveis && (
-            <>
-              <span className="etiqueta">{questao.tema}</span>
-              {questao.subtemas.slice(0, 2).map((s) => (
-                <span className="etiqueta" key={s}>
-                  {s}
-                </span>
-              ))}
-              {questao.dificuldade && (
-                <span className="etiqueta">{ROTULO_DIFICULDADE[questao.dificuldade]}</span>
-              )}
-            </>
-          )}
-          {questao.anulada && <span className="etiqueta etiqueta--alerta">Anulada</span>}
+        <div className="qz-topo">
+          <div className="qz-topo__info">
+            {numero && total ? <span className="qz-numero">Questão {numero}<small> de {total}</small></span> : <span className="qz-numero">Questão</span>}
+            {(questao.prova || questao.ano) && <span className="qz-origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {questao.anulada && <span className="qz-chip qz-chip--alerta">Anulada</span>}
+          </div>
 
-          <div className="questao__acoes nao-imprime">
+          <div className="qz-ferramentas nao-imprime" role="toolbar" aria-label="Ações da questão">
             <button
               type="button"
-              className="botao-icone"
+              className="qz-ferramenta"
               onClick={alternarEtiquetas}
               aria-pressed={!mostrarEtiquetas}
               aria-label={
@@ -274,25 +263,25 @@ export function CartaoQuestao({
               }
               title={
                 mostrarEtiquetas
-                  ? 'Esconder as etiquetas de assunto (E) — elas adiantam a resposta'
+                  ? 'Esconder as etiquetas de assunto (E): elas adiantam a resposta'
                   : 'Mostrar sempre as etiquetas de assunto (E)'
               }
             >
-              <Icone nome={mostrarEtiquetas ? 'olho' : 'olho-riscado'} />
+              <Icone nome={mostrarEtiquetas ? 'olho' : 'olho-riscado'} tamanho={18} />
             </button>
             <button
               type="button"
-              className="botao-icone"
+              className={'qz-ferramenta' + (favorita ? ' qz-ferramenta--ouro' : '')}
               onClick={() => executarAcao('favorito')}
               aria-pressed={favorita}
               aria-label={favorita ? 'Remover dos favoritos' : 'Favoritar questão'}
               title="Favoritar (F)"
             >
-              {favorita ? <EstrelaCheia /> : <Icone nome="estrela" />}
+              {favorita ? <EstrelaCheia tamanho={18} /> : <Icone nome="estrela" tamanho={18} />}
             </button>
             <button
               type="button"
-              className="botao-icone"
+              className={'qz-ferramenta' + (marcadaRevisao ? ' qz-ferramenta--ativa' : '')}
               onClick={() => executarAcao('revisao')}
               aria-pressed={marcadaRevisao}
               aria-label={
@@ -300,25 +289,30 @@ export function CartaoQuestao({
               }
               title="Marcar para revisão (R)"
             >
-              <Icone nome="alerta" />
+              <Icone nome="bandeira" tamanho={18} />
             </button>
             <button
               type="button"
-              className="botao-icone"
+              className={'qz-ferramenta' + (copiado ? ' qz-ferramenta--ativa' : '')}
               onClick={copiarLink}
               aria-label="Copiar link direto desta questão"
-              title="Copiar link"
+              title={copiado ? 'Link copiado' : 'Copiar link'}
             >
-              <Icone nome="link" />
+              <Icone nome={copiado ? 'certo' : 'link'} tamanho={18} />
             </button>
-            {mostrarGabarito && <button type="button" className="botao-icone" onClick={() => definirModoLeitura(atual => !atual)} aria-pressed={modoLeitura} aria-label={modoLeitura ? 'Mostrar alternativas' : 'Ler comentário sem alternativas'} title={modoLeitura ? 'Mostrar alternativas' : 'Modo leitura'}><Icone nome={modoLeitura ? 'olho' : 'olho-riscado'} /></button>}
+            {mostrarGabarito && <button type="button" className={'qz-ferramenta' + (modoLeitura ? ' qz-ferramenta--ativa' : '')} onClick={() => definirModoLeitura(atual => !atual)} aria-pressed={modoLeitura} aria-label={modoLeitura ? 'Mostrar alternativas' : 'Ler comentário sem alternativas'} title={modoLeitura ? 'Mostrar alternativas' : 'Modo leitura'}><Icone nome="livro" tamanho={18} /></button>}
           </div>
         </div>
 
-        {numero && total && (
-          <p className="meta numerico" style={{ marginBottom: '0.5rem' }}>
-            Questão {numero} de {total}
-          </p>
+        {(etiquetasVisiveis || questao.prova || questao.ano) && (
+          <div className={'qz-etiquetas' + (etiquetasVisiveis ? '' : ' qz-etiquetas--so-origem')}>
+            {(questao.prova || questao.ano) && <span className="qz-chip qz-chip--origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {etiquetasVisiveis && <>
+              <span className="qz-chip qz-chip--tema">{questao.tema}</span>
+              {questao.subtemas.slice(0, 2).map((s) => <span className="qz-chip" key={s}>{s}</span>)}
+              {questao.dificuldade && <span className="qz-chip qz-chip--dificuldade">{ROTULO_DIFICULDADE[questao.dificuldade]}</span>}
+            </>}
+          </div>
         )}
 
         {questao.prova?.startsWith('SBQ') && (
@@ -528,26 +522,34 @@ export function CartaoQuestao({
           </div>
         )}
 
-        <NotasQuestao key={questao.id} id={questao.id} />
-
-        {historicoDaQuestao.length > 0 && <details className="notas-questao nao-imprime">
-          <summary>Histórico desta questão</summary>
-          <p className="texto-2">{historicoDaQuestao.map(item => `${item.correta === true ? 'acertou' : item.correta === false ? 'errou' : 'anulada'} em ${new Date(item.em).toLocaleDateString('pt-BR')}${item.confianca === 'seguro' ? '' : ` · ${item.confianca === 'duvida' ? 'com dúvida' : 'chute'}`}`).join(' → ')}</p>
-        </details>}
-
         {semGabarito && (
           <p className="meta" style={{ marginTop: '0.75rem' }}>
             Esta questão está sem gabarito confirmado no acervo e não conta no seu desempenho.
           </p>
         )}
 
-        <div className="linha nao-imprime" style={{ marginTop: '1rem' }}>
-          <a className="botao botao--fantasma" href={href(`/contato?questao=${questao.id}`)}>
-            Relatar erro nesta questão
+        <div className="qz-extras nao-imprime">
+          <NotasQuestao key={questao.id} id={questao.id} />
+          {historicoDaQuestao.length > 0 && <details className="notas-questao qz-historico">
+            <summary><Icone nome="relogio" tamanho={18} /> Histórico desta questão <span className="qz-contador">{historicoDaQuestao.length}</span></summary>
+            <ol className="qz-linha-tempo">
+              {historicoDaQuestao.map((item, i) => (
+                <li key={i} className={item.correta === true ? 'qz-linha-tempo--acerto' : item.correta === false ? 'qz-linha-tempo--erro' : ''}>
+                  <Icone nome={item.correta === true ? 'certo' : item.correta === false ? 'errado' : 'alerta'} tamanho={14} />
+                  <span>{new Date(item.em).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' })}</span>
+                  {item.confianca !== 'seguro' && <small>{item.confianca === 'duvida' ? 'dúvida' : 'chute'}</small>}
+                </li>
+              ))}
+            </ol>
+          </details>}
+        </div>
+
+        <div className="qz-rodape nao-imprime">
+          <a className="qz-rodape__link" href={href(`/contato?questao=${questao.id}`)}>
+            <Icone nome="alerta" tamanho={16} /> Relatar erro nesta questão
           </a>
-          {copiado && <span className="meta">Link copiado.</span>}
-          {ultimaAcao && <button type="button" className="botao botao--fantasma" onClick={desfazerUltimaAcao}>Desfazer ação</button>}
-          <span className="meta numerico questao__id">{questao.id}</span>
+          {ultimaAcao && <button type="button" className="qz-rodape__link" onClick={desfazerUltimaAcao}><Icone nome="reiniciar" tamanho={16} /> Desfazer</button>}
+          <span className="qz-rodape__id numerico">{questao.id}</span>
         </div>
       </div>
       {menuGrifo && (
