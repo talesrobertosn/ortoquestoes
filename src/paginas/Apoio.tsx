@@ -4,7 +4,7 @@ import type { RegistroQuestao } from '../estado/revisao'
 import { BackupProgresso } from '../componentes/BackupProgresso'
 import { Icone } from '../componentes/Icone'
 import { useMemo, useState } from 'react'
-import { SITE, recurso } from '../config'
+import { SITE } from '../config'
 import { href } from '../util/rotas'
 import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
 import { armazenamentoDisponivel, tamanhoArmazenado } from '../estado/armazenamento'
@@ -70,11 +70,6 @@ export function Sobre() {
         pediátrica, doenças osteometabólicas e conceitos básicos (biomateriais, infecção,
         consolidação óssea, metodologia científica). Você pode montar sua sessão por assunto,
         prova, ano ou dificuldade, e revisar o que errou a qualquer momento.
-      </p>
-
-      <p>
-        Há também uma <a href={recurso('questoes/')}>coleção de questões comentadas por assunto</a>,
-        em páginas abertas que podem ser lidas e compartilhadas sem entrar no site.
       </p>
 
       <h2>Como funciona hoje</h2>
