@@ -24,3 +24,8 @@ tsconfig.tsbuildinfo
 .env
 .env.*
 !.env.example
+
+# Páginas públicas e sitemap: gerados do acervo a cada deploy
+# (scripts/gerar_paginas_seo.py e scripts/gerar_sitemap.py).
+/public/questoes/
+/public/sitemap.xml

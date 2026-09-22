@@ -36,6 +36,10 @@ jobs:
         run: python3 fixtures/testar_deteccao.py
       - name: Validar o acervo
         run: python3 scripts/validar_acervo.py
+      - name: Gerar páginas públicas e sitemap
+        # Uma página estática por questão e por assunto, para o Google indexar.
+        # São geradas do acervo a cada deploy e não ficam no repositório.
+        run: python3 scripts/gerar_paginas_seo.py && python3 scripts/gerar_sitemap.py
       - name: Construir
         # Sem BASE_ORTOQUESTOES: o vite.config.ts usa caminho relativo, e o
         # mesmo build serve tanto usuario.github.io/ortoquestoes/ quanto
