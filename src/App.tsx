@@ -17,7 +17,6 @@ import { Termos } from './paginas/Termos'
 import { Assinatura } from './paginas/Assinatura'
 import { SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
-import { consumirRetornoAuth } from './servicos/supabase'
 
 const TITULOS: Record<string, string> = {
   '/': 'OrtoQuestões — banco de questões de ortopedia e traumatologia',
@@ -44,7 +43,6 @@ export function App() {
   const { densidade, fonte } = usarLeitura()
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'auto' }) }, [rota.caminho])
-  useEffect(() => { consumirRetornoAuth() }, [])
 
   useEffect(() => {
     document.title =

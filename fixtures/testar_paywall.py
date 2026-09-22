@@ -25,22 +25,12 @@ obrigatorios = [
 for trecho in obrigatorios:
     assert trecho in SQL, f"Contrato ausente na migration: {trecho}"
 
-for trecho in (
-    "VITE_SUPABASE_PUBLISHABLE_KEY",
-    "VITE_SUPABASE_ANON_KEY",
-    "fragmento.indexOf('access_token=')",
-    "base64.padEnd",
-):
+# Planos e limite diário usam a sessão do cliente de conta; o login antigo,
+# com cópia própria da sessão, senha enviada à mão e token no fragmento, saiu.
+for trecho in ("from '../conta/supabase'", "onAuthStateChange", "resposta.status === 401", "buscarComPrazo"):
     assert trecho in SUPABASE_CLIENTE, f"Contrato de autenticação ausente: {trecho}"
-
-for trecho in (
-    "/auth/v1/token?grant_type=password",
-    "body: JSON.stringify({ email, password: senha })",
-    "clienteConta.auth.setSession",
-    "evento === 'SIGNED_OUT'",
-    "evento === 'TOKEN_REFRESHED'",
-):
-    assert trecho in SUPABASE_CLIENTE, f"Contrato de senha ausente: {trecho}"
+for proibido in ("grant_type=password", "access_token=", "auth/v1/otp", "setSession"):
+    assert proibido not in SUPABASE_CLIENTE, f"Resto do login antigo: {proibido}"
 
 # A tela de entrada (/entrar e /conta) usa o cliente de conta do Supabase.
 for trecho in ("'password'", "signInWithPassword", "Confirmar senha", "senha !== confirmacao", "resetPasswordForEmail"):
