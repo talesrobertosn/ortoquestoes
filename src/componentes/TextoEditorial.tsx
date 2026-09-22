@@ -1,3 +1,5 @@
+import { href } from '../util/rotas'
+
 function formatarLinha(linha: string) {
   return linha.split(/(\*\*[^*]+\*\*)/g).map((parte, j) =>
     parte.startsWith('**') && parte.endsWith('**') ? <strong key={j}>{parte.slice(2, -2)}</strong> : parte,
@@ -48,8 +50,9 @@ export function Referencias({ itens, notaIA }: { itens?: string[]; notaIA?: bool
       <summary>{itens?.length ? `Referências · ${itens.length}` : 'Sobre este comentário'}</summary>
       {notaIA && (
         <p className="referencias__nota">
-          Este comentário pode ter sido produzido com apoio de inteligência artificial. Quando
-          houver revisão médica, ela será indicada explicitamente.
+          Comentário baseado na bibliografia de referência da ortopedia. A redação pode contar com
+          apoio de inteligência artificial; quando houver revisão médica individual, ela será
+          indicada. <a href={href('/sobre')}>Como os comentários são feitos</a>
         </p>
       )}
       {itens?.length ? <ul>{itens.map((r, i) => <li key={i}>{r}</li>)}</ul> : null}

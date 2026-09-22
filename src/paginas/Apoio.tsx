@@ -14,113 +14,144 @@ import { conquistaAtual, proximaConquista } from '../estado/conquistas'
 import { Medalha } from '../componentes/Medalha'
 import { chaveDia, inicioDia } from '../estado/planoRevisao'
 
+const BIBLIOGRAFIA = [
+  "Campbell's Operative Orthopaedics",
+  'Rockwood and Green: Fractures in Adults',
+  "Tachdjian's Pediatric Orthopaedics",
+  'Lovell and Winter: Pediatric Orthopaedics',
+  "Green's Operative Hand Surgery",
+  'The Adult Hip',
+  'Hebert: Ortopedia e Traumatologia',
+  'Classificação de tumores da OMS',
+  'AO Surgery Reference',
+  'POSNA Study Guide',
+]
+
+const TEMAS_ACERVO = ['Mão e punho', 'Ombro e cotovelo', 'Quadril', 'Joelho', 'Pé e tornozelo', 'Coluna', 'Trauma adulto', 'Tumores ósseos', 'Ortopedia pediátrica', 'Osteometabólicas', 'Conceitos básicos']
+
 export function Sobre() {
+  const { indice } = usarIndice()
+  const comentadas = useMemo(() => (indice?.questoes ?? []).filter((q) => q.c === 1).length, [indice])
   return (
-    <article className="limite-leitura empilha">
-      <h1>O projeto OrtoQuestões</h1>
-      <p>
-        O OrtoQuestões é um banco de questões de ortopedia e traumatologia. Reúne questões de
-        provas anteriores — TEOT, TARO, R4 do ENARE e outras — organizadas por assunto, para quem
-        se prepara para o título de especialista ou para as provas da residência. Foi feito por um ortopedista
-        para residentes que estudam entre plantões e cirurgias, com uma regra simples: da página
-        inicial até a primeira questão respondida, no máximo dois cliques.
-      </p>
+    <article className="empilha-2 pj">
+      <section className="pj-heroi">
+        <p className="pj-heroi__selo">O projeto</p>
+        <h1>Questões de ortopedia comentadas, feitas por quem vive a especialidade.</h1>
+        <p className="pj-heroi__lide">
+          O OrtoQuestões reúne questões de provas anteriores (TEOT, TARO, R4 do ENARE e outras),
+          organizadas por assunto, para quem se prepara para o título de especialista ou para a
+          residência. Foi criado por um ortopedista para residentes que estudam entre plantões e
+          cirurgias: da página inicial até a primeira questão, no máximo dois cliques.
+        </p>
+        {indice && (
+          <dl className="pj-heroi__numeros">
+            <div><dt>Questões</dt><dd>{indice.total.toLocaleString('pt-BR')}</dd></div>
+            <div><dt>Comentadas</dt><dd>{comentadas.toLocaleString('pt-BR')}</dd></div>
+            <div><dt>Temas</dt><dd>{indice.temas.length}</dd></div>
+            <div><dt>Provas</dt><dd>{(indice.provas ?? []).filter((p) => !['TEOT', 'TARO'].includes(p)).length}</dd></div>
+          </dl>
+        )}
+      </section>
 
-      <h2>O foco é a comunidade</h2>
-      <p>
-        A ideia que sustenta o projeto é a de que conhecimento de prova circula melhor quando é
-        compartilhado. Quem passou pelo TEOT sabe explicar a questão que caiu; quem está estudando
-        agora tem a dúvida fresca. O OrtoQuestões existe para juntar as duas pontas: um lugar em
-        que ortopedistas e residentes deixam registrado o que aprenderam, e onde a explicação de
-        uma questão fica disponível para quem vier depois.
-      </p>
-      <p>
-        Não é um curso e não substitui livro nem serviço. É um ponto de encontro em torno das
-        questões — e cresce na medida em que as pessoas contribuem.
-      </p>
+      <section className="pj-secao">
+        <header className="pj-secao__cabeca">
+          <p className="meta">OS COMENTÁRIOS</p>
+          <h2>Como cada comentário é construído</h2>
+          <p>Todo comentário segue o mesmo roteiro: o conceito por trás da questão, por que a alternativa correta está certa e por que cada uma das outras está errada.</p>
+        </header>
+        <ol className="pj-passos">
+          <li className="pj-passo">
+            <span className="pj-passo__icone"><Icone nome="livro" tamanho={22} /></span>
+            <h3>Bibliografia de referência</h3>
+            <p>A base é a literatura que as bancas cobram: os tratados clássicos da ortopedia, as classificações oficiais e os guias das sociedades.</p>
+          </li>
+          <li className="pj-passo">
+            <span className="pj-passo__icone"><Icone nome="raio" tamanho={22} /></span>
+            <h3>Redação com apoio de IA</h3>
+            <p>A inteligência artificial pode ser usada para organizar e redigir a explicação a partir dessas fontes. Ela é ferramenta de escrita, não a fonte do conteúdo.</p>
+          </li>
+          <li className="pj-passo">
+            <span className="pj-passo__icone"><Icone nome="alvo" tamanho={22} /></span>
+            <h3>Fontes à vista e correção contínua</h3>
+            <p>Quando o comentário cita fontes específicas, elas aparecem no fim, com livro e capítulo. Se o gabarito da banca parece errado, o comentário avisa. Erro relatado é corrigido.</p>
+          </li>
+        </ol>
+        <div className="pj-biblio">
+          <p className="pj-biblio__titulo">Algumas das obras citadas nos comentários</p>
+          <ul>{BIBLIOGRAFIA.map((livro) => <li key={livro}>{livro}</li>)}</ul>
+        </div>
+        <p className="pj-nota">
+          <Icone nome="alerta" tamanho={16} />
+          <span>Comentário de questão é material de estudo e não substitui o livro nem a conduta do seu serviço. Quando uma questão passar por revisão médica individual, isso aparece indicado nela.</span>
+        </p>
+      </section>
 
-      <h2>Duas fontes de comentário</h2>
-      <p>
-        Cada questão pode ter dois tipos de comentário, e eles não competem:
-      </p>
-      <ul className="lista">
-        <li>
-          <strong>Comentário de IA.</strong> Os comentários são produzidos com apoio de IA e publicados com referências. Quando houver revisão médica, ela será indicada explicitamente. Explica o conceito por trás da questão, por que a
-          alternativa correta é correta e por que cada uma das erradas está errada. Quando há
-          dúvida sobre o gabarito ou sobre uma afirmação da banca, o comentário diz isso em vez de
-          inventar uma explicação segura de aparência.
-        </li>
-        <li>
-          <strong>Comentário da comunidade.</strong> Escrito por ortopedistas e residentes que
-          usam o site. É o espaço da experiência de prova: o macete que ficou, a divergência entre
-          serviços, a referência que a banca costuma seguir, a correção de um gabarito que não
-          fecha. Toda questão tem um botão para enviar o seu.
-        </li>
-      </ul>
-
-      <h2>O acervo</h2>
-      <p>
-        As questões são originais das provas, transcritas dos PDFs sem reescrita, sem resumo e sem
-        correção do enunciado. O gabarito vem da própria prova, ou — quando a banca não publica um
-        gabarito oficial, como costuma ocorrer no TARO — de uma resposta justificada e sinalizada
-        como tal. Questões anuladas ficam marcadas como anuladas e não entram no cálculo de
-        desempenho.
-      </p>
-      <p>
-        Os assuntos cobrem o programa inteiro da especialidade: mão e punho, ombro e cotovelo,
-        quadril, joelho, pé e tornozelo, coluna, trauma e fraturas, tumores ósseos, ortopedia
-        pediátrica, doenças osteometabólicas e conceitos básicos (biomateriais, infecção,
-        consolidação óssea, metodologia científica). Você pode montar sua sessão por assunto,
-        prova, ano ou dificuldade, e revisar o que errou a qualquer momento.
-      </p>
-
-      <h2>Como funciona hoje</h2>
-      <p>
-        O acervo inteiro está disponível para responder, e continua gratuito. Criar uma conta é
-        necessário para começar: é o que garante que suas respostas, revisões e desempenho fiquem
-        guardados com segurança e acompanhem você em qualquer aparelho, e não apenas neste
-        navegador. No futuro pretendo cobrar uma taxa pequena para manter o projeto de pé,
-        preservando um uso diário livre — a ideia é que ninguém fique sem estudar por causa disso.
-        Quando isso mudar, será avisado aqui, com antecedência.
-      </p>
-
-      <h2>Seus dados</h2>
-      <p>
-        Respostas, revisões, favoritas, anotações e histórico ficam associados à sua conta e são
-        sincronizados pelo Supabase, com acesso restrito ao titular. Você pode exportar ou apagar
-        seu progresso a qualquer momento na página de <a href={href('/dados')}>desempenho</a>.
-      </p>
-
-      <h2>Erros</h2>
-      <p>
-        Extração de PDF erra. Se um enunciado estiver truncado, uma figura faltando ou um gabarito
-        parecer errado, use o <a href={href('/contato')}>relato de erro</a> — é o caminho mais
-        rápido para corrigir. Vale o mesmo princípio do acervo: uma questão com gabarito errado é
-        pior do que uma questão ausente.
-      </p>
-
-      <h2>Onde acompanhar</h2>
-      <p>
-        O projeto tem um perfil no Instagram —{' '}
-        <a href={SITE.instagram} target="_blank" rel="noopener noreferrer me">
-          @{SITE.instagramUsuario}
-        </a>{' '}
-        — com questão comentada, avisos de acervo novo e o andamento do que está sendo comentado.
-      </p>
-
-      <div className="linha linha--empilha-celular">
-        <a className="botao botao--principal" href={href('/conta?modo=criar')}>
-          Criar minha conta
-        </a>
-        <a className="botao" href={href('/treinar')}>
-          Montar uma sessão
-        </a>
-        <a className="botao" href={href('/contato')}>
-          Falar com o autor
-        </a>
+      <div className="pj-duas">
+        <section className="pj-cartao">
+          <span className="pj-cartao__icone"><Icone nome="usuario" tamanho={20} /></span>
+          <h2>Comentários da comunidade</h2>
+          <p>
+            Conhecimento de prova circula melhor quando é compartilhado. Quem passou pelo TEOT sabe
+            explicar a questão que caiu; quem está estudando agora tem a dúvida fresca. Toda questão
+            tem um botão para você enviar o seu comentário: o macete que ficou, a divergência entre
+            serviços, a referência que a banca costuma seguir. Ele é conferido e publicado com o
+            seu crédito.
+          </p>
+        </section>
+        <section className="pj-cartao">
+          <span className="pj-cartao__icone"><Icone nome="mapa" tamanho={20} /></span>
+          <h2>O acervo</h2>
+          <p>
+            As questões são transcritas das provas sem reescrita nem correção do enunciado. O
+            gabarito vem da própria prova ou, quando a banca não publica um oficial, de uma resposta
+            justificada e sinalizada como tal. Anuladas ficam marcadas e não contam no desempenho.
+          </p>
+          <ul className="pj-temas">{TEMAS_ACERVO.map((t) => <li key={t}>{t}</li>)}</ul>
+        </section>
       </div>
 
-      <p className="texto-2">Feito por {SITE.autor}.</p>
+      <div className="pj-tres">
+        <section className="pj-cartao">
+          <h2>Como funciona hoje</h2>
+          <p>
+            O acervo inteiro está disponível para responder. A conta guarda suas respostas, revisões
+            e desempenho em qualquer aparelho. No futuro pretendo cobrar uma taxa pequena para manter
+            o projeto de pé, preservando um uso diário livre. Qualquer mudança será avisada aqui, com
+            antecedência.
+          </p>
+        </section>
+        <section className="pj-cartao">
+          <h2>Seus dados</h2>
+          <p>
+            Respostas, revisões, favoritas, anotações e histórico ficam na sua conta, sincronizados
+            pelo Supabase com acesso restrito a você. Exporte ou zere seu progresso quando quiser em{' '}
+            <a href={href('/dados')}>Desempenho</a>.
+          </p>
+        </section>
+        <section className="pj-cartao">
+          <h2>Achou um erro?</h2>
+          <p>
+            Extração de PDF erra. Enunciado truncado, figura faltando ou gabarito estranho: use o{' '}
+            <a href={href('/contato')}>relato de erro</a>. Uma questão com gabarito errado é pior do
+            que uma questão ausente.
+          </p>
+        </section>
+      </div>
+
+      <section className="pj-final">
+        <div>
+          <h2>Bora estudar?</h2>
+          <p>
+            Acompanhe também no Instagram,{' '}
+            <a href={SITE.instagram} target="_blank" rel="noopener noreferrer me">@{SITE.instagramUsuario}</a>,
+            com questão comentada e avisos de acervo novo. Feito por {SITE.autor}.
+          </p>
+        </div>
+        <div className="linha linha--empilha-celular">
+          <a className="botao botao--claro" href={href('/treinar')}>Montar uma sessão</a>
+          <a className="botao botao--vidro" href={href('/contato')}>Falar com o autor</a>
+        </div>
+      </section>
     </article>
   )
 }
