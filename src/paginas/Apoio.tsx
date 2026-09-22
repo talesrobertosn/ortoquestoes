@@ -11,6 +11,7 @@ import { armazenamentoDisponivel, tamanhoArmazenado } from '../estado/armazename
 import { type ResumoHistorico, usarFavoritos } from '../estado/sessao'
 import { usarIndice } from '../dados/usarIndice'
 import { conquistaAtual, proximaConquista } from '../estado/conquistas'
+import { Medalha } from '../componentes/Medalha'
 
 export function Sobre() {
   return (
@@ -288,7 +289,7 @@ export function DadosLocais() {
             <span className="numeros__rotulo">de acerto no total</span>
           </div>
           <div className="numeros__celula">
-            <span className="numeros__valor">{respondidas}{minhaConquista && <span title={minhaConquista.rotulo}> {minhaConquista.emoji}</span>}</span>
+            <span className="numeros__valor">{respondidas}{minhaConquista && <span className="medalha-inline"><Medalha conquista={minhaConquista} tamanho={20} titulo={`Emblema ${minhaConquista.rotulo}`} /></span>}</span>
             <span className="numeros__rotulo">questões respondidas</span>
           </div>
           <div className="numeros__celula">
@@ -301,7 +302,7 @@ export function DadosLocais() {
           <a href={href('/favoritas')}>{favoritos.length} {favoritos.length === 1 ? 'favorita' : 'favoritas'}</a>
           {conta && <a href={href('/ranking')}>ver ranking</a>}
         </div>
-        {proximaConquistaAlvo && <p className="meta" style={{ marginTop: '0.5rem' }}>Faltam {proximaConquistaAlvo.minimo - respondidas} questões para o emblema {proximaConquistaAlvo.emoji} {proximaConquistaAlvo.rotulo}. <a href={href('/ranking')}>Ver todos os emblemas</a></p>}
+        {proximaConquistaAlvo && <p className="meta" style={{ marginTop: '0.5rem' }}>Faltam {proximaConquistaAlvo.minimo - respondidas} questões para o emblema {proximaConquistaAlvo.rotulo}. <a href={href('/ranking')}>Ver todos os emblemas</a></p>}
       </section>
 
       {(porConfianca.seguro.total > 0 || porConfianca.duvida.total > 0 || porConfianca.chute.total > 0) && <section className="cartao cartao__corpo">
