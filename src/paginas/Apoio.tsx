@@ -3,7 +3,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { BackupProgresso } from '../componentes/BackupProgresso'
 import { Icone } from '../componentes/Icone'
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import { SITE } from '../config'
 import { href } from '../util/rotas'
 import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
@@ -214,48 +214,80 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
   )
 }
 
+type PeriodoDesempenho = { tipo: 'tudo' | '7' | '30' | '90' | 'desde'; desde?: string }
+const PERIODOS: { tipo: PeriodoDesempenho['tipo']; rotulo: string }[] = [
+  { tipo: 'tudo', rotulo: 'Tudo' }, { tipo: '7', rotulo: '7 dias' }, { tipo: '30', rotulo: '30 dias' }, { tipo: '90', rotulo: '90 dias' }, { tipo: 'desde', rotulo: 'Desde…' },
+]
+function inicioDoPeriodo(p: PeriodoDesempenho): number {
+  if (p.tipo === 'tudo') return 0
+  if (p.tipo === 'desde') {
+    const data = p.desde ? new Date(`${p.desde}T00:00:00`).getTime() : NaN
+    return Number.isFinite(data) ? data : 0
+  }
+  return inicioDia() - (Number(p.tipo) - 1) * 86400000
+}
+function descreverPeriodo(p: PeriodoDesempenho): string {
+  if (p.tipo === 'tudo') return 'desde o começo'
+  if (p.tipo === 'desde') return p.desde ? `desde ${new Date(`${p.desde}T00:00:00`).toLocaleDateString('pt-BR')}` : 'escolha a data'
+  return `nos últimos ${p.tipo} dias`
+}
+
 export function DadosLocais() {
   const { favoritos } = usarFavoritos()
   const { indice } = usarIndice()
-  const { sessao: conta, status: statusSync, sincronizar, reiniciarProgresso } = usarConta()
+  const { sessao: conta, status: statusSync, sincronizar } = usarConta()
   const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
   const [marcadas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
   // Depois de "Começar do zero", nada anterior ao reinício entra nos gráficos,
   // mesmo que algum aparelho ainda guarde eventos antigos no histórico da questão.
   const [reinicioEm] = usarArmazenado<number>('reinicio:em', 0)
   const respondidas = Object.keys(marcadas).length
-  const [apagado, definirApagado] = useState(false)
   const [reinicioPendente] = usarArmazenado<string | null>('reinicio:pendente', null)
   const bytes = tamanhoArmazenado()
 
-  // Desempenho acumulado por tema: cruza as questões já respondidas neste
-  // navegador com o tema de cada uma, que vem do índice do acervo.
-  const porTema = useMemo(() => {
-    if (!indice) return []
+  // Período escolhido: fica salvo e vale sempre que a pessoa volta. Em vez de
+  // apagar o histórico, ela acompanha só a fase atual do estudo.
+  const [periodo, definirPeriodo] = usarArmazenado<PeriodoDesempenho>('desempenho:periodo', { tipo: 'tudo' })
+  const inicioPeriodo = inicioDoPeriodo(periodo)
+  const limite = Math.max(inicioPeriodo, reinicioEm || 0)
+
+  // Cada tentativa registrada (até as últimas 8 por questão), com o tema.
+  const eventos = useMemo(() => {
     const temaPorId = new Map<string, { nome: string; slug: string }>()
-    for (const item of indice.questoes) {
+    if (indice) for (const item of indice.questoes) {
       const tema = indice.temas[item.t]
       if (tema) temaPorId.set(item.id, { nome: tema.nome, slug: tema.slug })
     }
-    const soma = new Map<string, { certas: number; total: number; slug: string }>()
+    const lista: { id: string; em: number; correta: boolean | null; confianca: 'seguro' | 'duvida' | 'chute'; tema?: { nome: string; slug: string } }[] = []
     for (const [id, registro] of Object.entries(marcadas)) {
-      if (registro.c === null) continue
-      const tema = temaPorId.get(id)
-      if (!tema) continue
-      const nome = tema.nome
-      const atual = soma.get(nome) ?? { certas: 0, total: 0, slug: tema.slug }
+      const historicoQuestao = registro.historico?.length ? registro.historico : registro.q ? [{ em: registro.q, correta: registro.c, confianca: registro.confianca ?? 'seguro' as const }] : []
+      for (const evento of historicoQuestao) {
+        if ((evento.em ?? 0) < limite) continue
+        lista.push({ id, em: evento.em, correta: evento.correta, confianca: evento.confianca ?? 'seguro', tema: temaPorId.get(id) })
+      }
+    }
+    return lista
+  }, [indice, marcadas, limite])
+
+  const porTema = useMemo(() => {
+    const soma = new Map<string, { certas: number; total: number; slug: string }>()
+    for (const evento of eventos) {
+      if (evento.correta === null || !evento.tema) continue
+      const atual = soma.get(evento.tema.nome) ?? { certas: 0, total: 0, slug: evento.tema.slug }
       atual.total++
-      if (registro.c) atual.certas++
-      soma.set(nome, atual)
+      if (evento.correta) atual.certas++
+      soma.set(evento.tema.nome, atual)
     }
     return [...soma.entries()]
       .map(([nome, valores]) => ({ nome, ...valores }))
       .sort((a, b) => b.total - a.total)
-  }, [indice, marcadas])
+  }, [eventos])
 
   const totalCertas = porTema.reduce((n, t) => n + t.certas, 0)
   const totalContadas = porTema.reduce((n, t) => n + t.total, 0)
-  const errosTotais = Object.values(marcadas).reduce((n, registro) => n + (registro.erros ?? (registro.c === false ? 1 : 0)), 0)
+  const errosTotais = eventos.filter((e) => e.correta === false).length
+  const questoesNoPeriodo = new Set(eventos.map((e) => e.id)).size
+  const sessoesNoPeriodo = historico.filter((h) => h.concluidaEm >= limite).length
   const nome = String(conta?.user.user_metadata?.nome ?? '').trim()
   const percentualGeral = totalContadas > 0 ? totalCertas / totalContadas : null
   const incertas = Object.values(marcadas).filter(registro => registro.confianca === 'duvida' || registro.confianca === 'chute').length
@@ -263,23 +295,19 @@ export function DadosLocais() {
   const proximaConquistaAlvo = proximaConquista(respondidas)
   const porConfianca = useMemo(() => {
     const grupos = { seguro: { certas: 0, total: 0 }, duvida: { certas: 0, total: 0 }, chute: { certas: 0, total: 0 } }
-    for (const registro of Object.values(marcadas)) {
-      const eventos = registro.historico?.length ? registro.historico : [{ em: registro.q, correta: registro.c, confianca: registro.confianca ?? 'seguro' as const }]
-      for (const evento of eventos) {
-        if (reinicioEm && (evento.em ?? 0) < reinicioEm) continue
-        if (evento.correta === null) continue
-        const grupo = grupos[evento.confianca]
-        grupo.total++
-        if (evento.correta) grupo.certas++
-      }
+    for (const evento of eventos) {
+      if (evento.correta === null) continue
+      const grupo = grupos[evento.confianca]
+      grupo.total++
+      if (evento.correta) grupo.certas++
     }
     return grupos
-  }, [marcadas, reinicioEm])
+  }, [eventos])
   const atividade = useMemo(() => {
     const porDia = new Map<string, { total: number; certas: number }>()
     for (const registro of Object.values(marcadas)) {
-      const eventos = registro.historico?.length ? registro.historico : registro.q ? [{ em: registro.q, correta: registro.c }] : []
-      for (const evento of eventos) {
+      const historicoQuestao = registro.historico?.length ? registro.historico : registro.q ? [{ em: registro.q, correta: registro.c }] : []
+      for (const evento of historicoQuestao) {
         if (reinicioEm && evento.em < reinicioEm) continue
         const chave = chaveDia(evento.em)
         const atual = porDia.get(chave) ?? { total: 0, certas: 0 }
@@ -291,12 +319,12 @@ export function DadosLocais() {
     const hoje = inicioDia()
     return Array.from({ length: 28 }, (_, i) => {
       const dia = hoje - (27 - i) * 86400000
-      return { dia, ...(porDia.get(chaveDia(dia)) ?? { total: 0, certas: 0 }) }
+      return { dia, fora: dia + 86400000 <= limite, ...(porDia.get(chaveDia(dia)) ?? { total: 0, certas: 0 }) }
     })
-  }, [marcadas, reinicioEm])
+  }, [marcadas, reinicioEm, limite])
   const maiorDia = Math.max(1, ...atividade.map((d) => d.total))
-  const diasAtivos = atividade.filter((d) => d.total > 0).length
-  const questoesMes = atividade.reduce((n, d) => n + d.total, 0)
+  const diasAtivos = atividade.filter((d) => d.total > 0 && !d.fora).length
+  const questoesMes = atividade.reduce((n, d) => n + (d.fora ? 0 : d.total), 0)
   const avaliados = porTema.filter((t) => t.total >= 5)
   const temaForte = [...avaliados].sort((a, b) => b.certas / b.total - a.certas / a.total)[0]
   const temaFragil = [...avaliados].sort((a, b) => a.certas / a.total - b.certas / b.total)[0]
@@ -334,14 +362,37 @@ export function DadosLocais() {
             <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,0.14)" strokeWidth="10" />
             <circle cx="60" cy="60" r="52" fill="none" stroke="#ffe3a3" strokeWidth="10" strokeLinecap="round" strokeDasharray={`${((pct ?? 0) / 100) * perimetro} ${perimetro}`} transform="rotate(-90 60 60)" />
           </svg>
-          <span className="dp-anel__valor"><strong>{pct === null ? '0%' : `${pct}%`}</strong><small>de acerto</small></span>
+          <span className="dp-anel__valor"><strong>{pct === null ? '0%' : `${pct}%`}</strong><small>{periodo.tipo === 'tudo' ? 'de acerto' : 'no período'}</small></span>
         </div>
         <dl className="dp-heroi__numeros">
-          <div><dt>Respondidas</dt><dd>{respondidas.toLocaleString('pt-BR')}{minhaConquista && <span className="medalha-inline"><Medalha conquista={minhaConquista} tamanho={20} titulo={`Emblema ${minhaConquista.rotulo}`} /></span>}</dd></div>
-          <div><dt>Sessões</dt><dd>{historico.length}</dd></div>
-          <div><dt>Erros acumulados</dt><dd>{errosTotais}</dd></div>
+          <div><dt>{periodo.tipo === 'tudo' ? 'Respondidas' : 'Questões no período'}</dt><dd>{(periodo.tipo === 'tudo' ? respondidas : questoesNoPeriodo).toLocaleString('pt-BR')}{minhaConquista && <span className="medalha-inline"><Medalha conquista={minhaConquista} tamanho={20} titulo={`Emblema ${minhaConquista.rotulo}`} /></span>}</dd></div>
+          <div><dt>Sessões</dt><dd>{periodo.tipo === 'tudo' ? historico.length : sessoesNoPeriodo}</dd></div>
+          <div><dt>{periodo.tipo === 'tudo' ? 'Erros acumulados' : 'Erros no período'}</dt><dd>{errosTotais}</dd></div>
           <div><dt>Favoritas</dt><dd><a href={href('/favoritas')}>{favoritos.length}</a></dd></div>
         </dl>
+      </section>
+
+      <section className="dp-periodo" aria-label="Período do desempenho">
+        <div className="dp-periodo__texto">
+          <strong><Icone nome="calendario" tamanho={16} /> Período</strong>
+          <span>Mostrando {descreverPeriodo(periodo)}. Ranking e emblemas continuam contando o total.</span>
+        </div>
+        <div className="dp-periodo__controles">
+          <div className="ct-seg dp-periodo__seg" role="group" aria-label="Escolher período">
+            {PERIODOS.map((opcao) => (
+              <button key={opcao.tipo} type="button" aria-pressed={periodo.tipo === opcao.tipo}
+                onClick={() => definirPeriodo(opcao.tipo === 'desde' ? { tipo: 'desde', desde: periodo.desde ?? new Date(inicioDia() - 29 * 86400000).toISOString().slice(0, 10) } : { tipo: opcao.tipo, desde: periodo.desde })}>
+                {opcao.rotulo}
+              </button>
+            ))}
+          </div>
+          {periodo.tipo === 'desde' && (
+            <label className="dp-periodo__data">
+              <span className="so-leitor">Data inicial</span>
+              <input className="entrada" type="date" value={periodo.desde ?? ''} max={new Date().toISOString().slice(0, 10)} onChange={(e) => definirPeriodo({ tipo: 'desde', desde: e.target.value })} />
+            </label>
+          )}
+        </div>
       </section>
 
       {!conta && <p className="aviso-ia">Crie uma conta gratuita para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
@@ -359,7 +410,7 @@ export function DadosLocais() {
           </div>
           <div className="dp-barras" role="img" aria-label={`Atividade diária: ${questoesMes} respostas em 28 dias`}>
             {atividade.map((d) => (
-              <span key={d.dia} className="dp-barras__dia" title={`${new Date(d.dia).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' })}: ${d.total} ${d.total === 1 ? 'resposta' : 'respostas'}${d.total ? `, ${Math.round((d.certas / d.total) * 100)}% de acerto` : ''}`}>
+              <span key={d.dia} className={'dp-barras__dia' + (d.fora ? ' dp-barras__dia--fora' : '')} title={`${new Date(d.dia).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' })}: ${d.total} ${d.total === 1 ? 'resposta' : 'respostas'}${d.total ? `, ${Math.round((d.certas / d.total) * 100)}% de acerto` : ''}`}>
                 <span className="dp-barras__barra" style={{ height: `${d.total ? Math.max(6, (d.total / maiorDia) * 100) : 0}%` }} />
               </span>
             ))}
@@ -439,25 +490,13 @@ export function DadosLocais() {
 
       {conta && <section className="zona-risco cartao__corpo empilha">
         <p className="meta"><Icone nome="alerta" tamanho={15} /> ZONA DE RISCO</p>
-        <h2>Começar do zero</h2>
-        <p className="texto-2">Zera respostas, revisões, favoritas, anotações, histórico e sessão em andamento. Sua conta e preferências são mantidas. Os registros anteriores ficam fora do progresso ativo, sem exclusão definitiva do banco. Exporte um backup antes se quiser guardar uma cópia.</p>
+        <h2>Começar do zero <span className="dp-embreve">Em breve</span></h2>
+        <p className="texto-2">Esta opção está sendo refeita e volta em breve. Enquanto isso, use o <strong>Período</strong> lá em cima para acompanhar só a fase atual do seu estudo: o acerto, os temas e a confiança passam a contar a partir da data que você escolher, sem apagar nada.</p>
         <div className="linha">
-          <button
-            type="button"
-            className="botao botao--perigo"
-            disabled={!!reinicioPendente}
-            onClick={() => {
-              if (window.confirm('Começar do zero nesta conta? Respostas, revisões, favoritas, anotações e histórico deixarão de contar. O reinício será sincronizado com seus outros dispositivos.')) {
-                reiniciarProgresso()
-                definirApagado(true)
-              }
-            }}
-          >
-            {reinicioPendente ? 'Sincronizando reinício…' : 'Zerar meu progresso'}
-          </button>
+          {/* A função reiniciarProgresso continua pronta; o botão só volta a funcionar quando o reinício for refeito. */}
+          <button type="button" className="botao botao--perigo" disabled aria-disabled="true" title="Em breve">Zerar meu progresso · em breve</button>
           {reinicioPendente && <button type="button" className="botao botao--fantasma" onClick={sincronizar}>Tentar sincronizar agora</button>}
         </div>
-        {(apagado || reinicioPendente) && <span className="meta" role="status">{reinicioPendente ? 'Progresso zerado neste navegador. O reinício na conta está pendente de sincronização; você já pode estudar.' : 'Reinício sincronizado. Seu novo progresso já está valendo.'}</span>}
       </section>}
     </article>
   )
