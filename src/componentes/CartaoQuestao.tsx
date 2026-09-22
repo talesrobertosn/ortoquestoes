@@ -466,7 +466,7 @@ export function CartaoQuestao({
               </div>
             )}
 
-            <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} />
+            <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} />
 
             <div className="bloco-comentario">
               <p className="comentario__titulo">Comentários da comunidade</p>
@@ -623,10 +623,12 @@ function ComentarioDaIA({
   questao,
   comentario,
   carregando,
+  escolhida,
 }: {
   questao: Questao
   comentario: ComentarioIA | null
   carregando: boolean
+  escolhida: Letra | null
 }) {
   const erradas = questao.alternativas
     .map((a) => a.letra)
@@ -636,8 +638,14 @@ function ComentarioDaIA({
     questao.alternativas.find((a) => a.letra === letra)?.texto
 
   return (
-    <div className="bloco-comentario">
-      <p className="comentario__titulo">Comentário</p>
+    <div className="bloco-comentario cm">
+      <header className="cm-cabeca">
+        <span className="cm-cabeca__icone"><Icone nome="livro" tamanho={20} /></span>
+        <div>
+          <p className="cm-cabeca__titulo">Comentário</p>
+          <p className="cm-cabeca__sub">O conceito, por que a correta está certa e por que as outras não servem.</p>
+        </div>
+      </header>
 
       {carregando && <p className="comentario__pendente">Carregando o comentário…</p>}
 
@@ -655,25 +663,39 @@ function ComentarioDaIA({
             </p>
           )}
 
-          {comentario.conceito && <div className="ia__conceito"><h3>Conceito-chave</h3><TextoEditorial texto={comentario.conceito} /></div>}
-
-          {questao.gabarito && (
-            <div className="ia__item ia__item--certa">
-              <span className="ia__letra">{questao.gabarito}</span>
-              <div>
-                <strong>{textoAlternativa(questao.gabarito) ?? 'Por que a alternativa está correta'}</strong><TextoEditorial texto={comentario.correta} />
-              </div>
-            </div>
+          {comentario.conceito && (
+            <section className="cm-conceito">
+              <p className="cm-rotulo"><Icone nome="alvo" tamanho={16} /> Conceito-chave</p>
+              <TextoEditorial texto={comentario.conceito} />
+            </section>
           )}
 
-          {erradas.map((letra) => (
-            <div className="ia__item" key={letra}>
-              <span className="ia__letra">{letra}</span>
-              <div>
-                <strong>{textoAlternativa(letra) ?? 'Por que esta alternativa não se aplica'}</strong><TextoEditorial texto={comentario.incorretas[letra]!} />
-              </div>
-            </div>
-          ))}
+          <div className="cm-alternativas">
+            {questao.gabarito && (
+              <article className="cm-alt cm-alt--certa">
+                <header className="cm-alt__cabeca">
+                  <span className="cm-alt__letra">{questao.gabarito}</span>
+                  <strong className="cm-alt__texto">{textoAlternativa(questao.gabarito) ?? 'Alternativa correta'}</strong>
+                  <span className="cm-selo cm-selo--certa"><Icone nome="certo" tamanho={13} /> Correta</span>
+                  {escolhida === questao.gabarito && <span className="cm-selo">Sua resposta</span>}
+                </header>
+                <TextoEditorial texto={comentario.correta} />
+              </article>
+            )}
+
+            {erradas.map((letra) => (
+              <article className={'cm-alt' + (escolhida === letra ? ' cm-alt--marcada' : '')} key={letra}>
+                <header className="cm-alt__cabeca">
+                  <span className="cm-alt__letra">{letra}</span>
+                  <strong className="cm-alt__texto">{textoAlternativa(letra) ?? 'Alternativa'}</strong>
+                  {escolhida === letra
+                    ? <span className="cm-selo cm-selo--erro"><Icone nome="errado" tamanho={13} /> Sua resposta</span>
+                    : <span className="cm-selo cm-selo--neutro">Incorreta</span>}
+                </header>
+                <TextoEditorial texto={comentario.incorretas[letra]!} />
+              </article>
+            ))}
+          </div>
 
           <Referencias itens={comentario.referencias} notaIA />
         </>
