@@ -1890,3 +1890,34 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
   .ce-item__enunciado--curto { -webkit-line-clamp: unset; display: block; }
   .ce-heroi .rv-heroi__numeros, .ce-filtros { display: none; }
 }
+
+/* ── Este comentário te ajudou? ───────────────────────────────────── */
+.av {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem 1rem;
+  margin-top: 1.1rem; padding: .9rem 1.1rem; border-radius: 14px;
+  background: var(--superficie-2); border: var(--borda);
+}
+.av__pergunta { margin: 0; font-weight: 700; }
+.av__botoes { display: flex; gap: .5rem; }
+.av__botao {
+  display: inline-flex; align-items: center; gap: .4rem; min-height: 42px; padding: .45rem 1rem; border-radius: 999px;
+  border: 1px solid var(--traco-forte, var(--borda)); background: var(--superficie); color: var(--texto);
+  font: 600 var(--corpo-menor) var(--fonte); cursor: pointer; white-space: nowrap; transition: background-color .12s, border-color .12s, color .12s;
+}
+.av__botao--sim:hover { border-color: var(--acerto); color: var(--acerto); background: var(--acerto-veu); }
+.av__botao--nao:hover { border-color: var(--erro); color: var(--erro); background: var(--erro-veu); }
+.av--feito { justify-content: flex-start; color: var(--texto-2); font-size: var(--corpo-menor); }
+.av--feito > svg { color: var(--acerto); flex: 0 0 auto; }
+.av--feito span { flex: 1 1 14rem; }
+.av__mudar { border: 0; background: none; color: var(--verdete); font: 600 var(--corpo-menor) var(--fonte); cursor: pointer; text-decoration: underline; padding: .25rem; }
+.av--motivo { display: grid; gap: .7rem; justify-content: stretch; }
+.av__motivos { display: flex; flex-wrap: wrap; gap: .45rem; }
+.av__motivos button {
+  border: 1px solid var(--traco-forte, var(--borda)); background: var(--superficie); color: var(--texto); border-radius: 999px;
+  padding: .45rem .9rem; font: 600 var(--corpo-menor) var(--fonte); cursor: pointer; min-height: 40px;
+}
+.av__motivos button.ativo { background: var(--verdete); border-color: var(--verdete); color: #fff; }
+.av__obs { width: 100%; resize: vertical; }
+.av__acoes { display: flex; justify-content: flex-end; gap: .5rem; }
+@media (max-width: 560px) { .av__botoes { width: 100%; } .av__botao { flex: 1; justify-content: center; } }
+@media print { .av { display: none; } }

@@ -2,6 +2,7 @@ import { lerRespondidas } from '../estado/sessao'
 import { dominada, INTERVALOS } from '../estado/revisao'
 import { TextoEditorial, Referencias } from './TextoEditorial'
 import { NotasQuestao } from './NotasQuestao'
+import { AvaliarComentario } from './AvaliarComentario'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { ComentarioIA, Letra, Questao, Resposta } from '../dados/tipos'
 import { ROTULO_DIFICULDADE } from '../dados/tipos'
@@ -698,6 +699,7 @@ function ComentarioDaIA({
           </div>
 
           <Referencias itens={comentario.referencias} notaIA />
+          <AvaliarComentario idQuestao={questao.id} />
         </>
       )}
     </div>
