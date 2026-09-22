@@ -1,9 +1,9 @@
 import { banco, json } from '../_shared/http.ts'
 
 const planos = {
-  mensal: 'MERCADO_PAGO_PLANO_MENSAL_ID',
-  semestral: 'MERCADO_PAGO_PLANO_SEMESTRAL_ID',
-  anual: 'MERCADO_PAGO_PLANO_ANUAL_ID',
+  mensal: { frequency: 1, transaction_amount: 39.90 },
+  semestral: { frequency: 6, transaction_amount: 179.90 },
+  anual: { frequency: 12, transaction_amount: 239.90 },
 } as const
 
 async function hmacHex(segredo: string, texto: string) {
@@ -11,9 +11,16 @@ async function hmacHex(segredo: string, texto: string) {
   return [...new Uint8Array(await crypto.subtle.sign('HMAC', chave, new TextEncoder().encode(texto)))].map((b) => b.toString(16).padStart(2, '0')).join('')
 }
 function igualSeguro(a: string, b: string) { if (a.length !== b.length) return false; let x = 0; for (let i = 0; i < a.length; i++) x |= a.charCodeAt(i) ^ b.charCodeAt(i); return x === 0 }
-function planoDoPreapprovalPlan(id: unknown) {
-  for (const [plano, variavel] of Object.entries(planos)) if (Deno.env.get(variavel) === id) return plano
-  throw new Error('preapproval_plan_desconhecido')
+function planoDaRecorrencia(autoRecurring: unknown) {
+  if (!autoRecurring || typeof autoRecurring !== 'object') throw new Error('recorrencia_ausente')
+  const recorrencia = autoRecurring as Record<string, unknown>
+  if (recorrencia.frequency_type !== 'months' || recorrencia.currency_id !== 'BRL') throw new Error('recorrencia_invalida')
+  const frequency = Number(recorrencia.frequency)
+  const transactionAmount = Number(recorrencia.transaction_amount)
+  for (const [plano, configuracao] of Object.entries(planos)) {
+    if (configuracao.frequency === frequency && configuracao.transaction_amount === transactionAmount) return plano
+  }
+  throw new Error('recorrencia_desconhecida')
 }
 async function marcarEvento(idEvento: string, status: 'processado' | 'ignorado' | 'erro', erro?: unknown) {
   await banco(`eventos_pagamento?provedor=eq.mercado_pago&id_evento=eq.${encodeURIComponent(idEvento)}`, {
@@ -54,7 +61,7 @@ async function processarPreapproval(idRecurso: string, idEvento: string) {
       : statusMercadoPago === 'expired' ? 'vencida'
         : statusMercadoPago === 'rejected' ? 'falha_pagamento'
           : statusMercadoPago === 'paused' ? 'pausada' : 'pendente'
-  const plano = planoDoPreapprovalPlan(preapproval.preapproval_plan_id)
+  const plano = planoDaRecorrencia(preapproval.auto_recurring)
   await banco('assinaturas?on_conflict=id_externo', {
     method: 'POST', headers: { Prefer: 'resolution=merge-duplicates,return=minimal' }, body: JSON.stringify({
       id_usuario: preapproval.external_reference,
