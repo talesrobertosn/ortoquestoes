@@ -24,7 +24,7 @@ interface Props {
   // A confiança é obrigatória de propósito: quando era opcional, os dois
   // pontos de chamada esqueceram de repassá-la e toda resposta virava
   // "seguro" no silêncio do valor padrão. O compilador agora cobra.
-  aoResponder: (letra: Letra, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute') => void
+  aoResponder: (letra: Letra, correta: boolean | null, segundos: number, confianca: 'seguro' | 'duvida' | 'chute') => void | Promise<void>
   aoRiscar: (letra: Letra) => void
   aoFavoritar: () => void
   aoRevisar: () => void
@@ -85,11 +85,14 @@ export function CartaoQuestao({
     [questao.alternativas],
   )
 
-  function confirmar(letra: Letra) {
-    if (travada) return
+  const [enviando, definirEnviando] = useState(false)
+  async function confirmar(letra: Letra) {
+    if (travada || enviando) return
     const correta = questao.anulada || !questao.gabarito ? null : letra === questao.gabarito
     const segundos = Math.max(1, Math.round((Date.now() - inicio.current) / 1000))
-    aoResponder(letra, correta, segundos, confianca)
+    definirEnviando(true)
+    try { await aoResponder(letra, correta, segundos, confianca) }
+    finally { definirEnviando(false) }
   }
 
   /** Em simulado marcar já registra; no treino comum ainda passa pelo botão. */
@@ -421,18 +424,19 @@ export function CartaoQuestao({
           </div>
         ) : !respondida ? (
           <div className="linha nao-imprime acao-responder">
-            {escolhida && <div className="grupo-opcoes" aria-label="Sua confiança nesta resposta">
-              {([['seguro', 'Tenho certeza'], ['duvida', 'Tenho dúvida'], ['chute', 'Foi um chute']] as const).map(([valor, rotulo]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={confianca === valor} onClick={() => definirConfianca(valor)}>{rotulo}</button>)}
+            {escolhida && <div className="grupo-opcoes confianca" role="group" aria-label="Sua confiança nesta resposta">
+              {([['seguro', 'Tenho ', 'certeza'], ['duvida', 'Tenho ', 'dúvida'], ['chute', 'Foi um ', 'chute']] as const).map(([valor, prefixo, rotulo]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={confianca === valor} onClick={() => definirConfianca(valor)}><span className="confianca__prefixo">{prefixo}</span><span className="confianca__rotulo">{rotulo}</span></button>)}
             </div>}
             <button
               type="button"
               className="botao botao--principal botao--grande"
-              disabled={!escolhida}
-              onClick={() => escolhida && confirmar(escolhida)}
+              disabled={!escolhida || enviando}
+              aria-busy={enviando}
+              onClick={() => escolhida && void confirmar(escolhida)}
             >
-              {escolhida ? `Responder ${escolhida}` : 'Escolha uma alternativa'}
+              {enviando ? 'Registrando…' : escolhida ? `Responder ${escolhida}` : 'Escolha uma alternativa'}
             </button>
-            {escolhida && <span className="campo__auxilio">Acerto com dúvida ou chute volta antes para revisão.</span>}
+            {escolhida && <span className="campo__auxilio acao-responder__dica">Acerto com dúvida ou chute volta antes para revisão.</span>}
             <span className="meta so-teclado">
               Teclas <kbd>1</kbd>–<kbd>{letrasDisponiveis.length}</kbd> selecionam,{' '}
               <kbd>Enter</kbd> confirma

@@ -53,9 +53,11 @@ export function usarLimiteDiario() {
       definirEstado(normalizado)
       return normalizado
     } catch (erro) {
-      const bloqueado: EstadoLimite = { permitido: false, paywallAtivo: true, ilimitado: false, consumidas: 0, limite: 0, restantes: 0, liberaEm: '', sequencia: 0, motivo: erro instanceof Error ? erro.message : 'Não foi possível validar o limite.', falhaValidacao: true }
-      definirEstado(bloqueado)
-      return bloqueado
+      // Falha técnica (rede, prazo, sessão) não é limite atingido: a resposta
+      // segue e é registrada. Só bloqueia quando o servidor responde que não.
+      const falha: EstadoLimite = { permitido: true, paywallAtivo: false, ilimitado: false, consumidas: 0, limite: 0, restantes: null, liberaEm: '', sequencia: 0, motivo: erro instanceof Error ? erro.message : 'Não foi possível validar o limite.', falhaValidacao: true }
+      definirEstado(falha)
+      return falha
     } finally { definirValidando(false) }
   }, [])
   return { estado, definirEstado, autorizar, validando }

@@ -77,11 +77,12 @@ export function QuestaoDireta({ id }: { id: string }) {
           if (autorizando.current) return
           autorizando.current = true
           chaveResposta.current ??= crypto.randomUUID()
-          const permissao = await autorizar(questao.id, chaveResposta.current)
-          autorizando.current = false
-          if (!permissao.permitido) { definirLimiteAberto(true); return }
-          definirResposta({ escolhida, correta, segundos, confianca })
-          registrarResposta(questao.id, correta, confianca)
+          try {
+            const permissao = await autorizar(questao.id, chaveResposta.current)
+            if (!permissao.permitido) { definirLimiteAberto(true); return }
+            definirResposta({ escolhida, correta, segundos, confianca })
+            registrarResposta(questao.id, correta, confianca)
+          } finally { autorizando.current = false }
         }}
         aoRiscar={(letra) =>
           definirRiscadas((atuais) =>

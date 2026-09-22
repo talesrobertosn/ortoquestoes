@@ -1132,3 +1132,55 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
 .pj-final h2 { margin: 0 0 0.3rem; color: var(--sobre-heroi); }
 .pj-final p { margin: 0; color: var(--sobre-heroi-2); max-width: 54ch; }
 .pj-final a:not(.botao) { color: var(--sobre-heroi); }
+
+/* ---------- Sessão de questões: celular mais enxuto -------------------- */
+
+@media (min-width: 56rem) { .barra-sessao { top: 68px; } }
+.confianca { gap: 0.4rem; }
+@media (max-width: 40rem) {
+  .barra-sessao { padding: 0.4rem 0; margin-bottom: 0.9rem; }
+  .barra-sessao__teclado { display: none; }
+  .barra-sessao .barra-sessao__mapa { min-height: 34px !important; padding: 0 0.7rem; font-size: var(--corpo-menor); }
+  .questao__enunciado { font-size: 1.02rem; line-height: 1.6; }
+
+  .alternativas { gap: 0.45rem; margin-bottom: 0.9rem; }
+  .alternativa-envelope { gap: 0.3rem; }
+  .alternativa { border-radius: 10px; }
+  .alternativa__letra { width: 2.1rem; font-size: 0.85rem; }
+  .alternativa__texto { padding: 0.65rem 0.75rem; font-size: 0.98rem; line-height: 1.45; }
+  .alternativa__marca { padding: 0 0.6rem; }
+  .riscar { width: 2rem; border-radius: 10px; border-color: transparent; background: var(--superficie-2); }
+
+  /* Confiança numa linha só, em três partes iguais; o rótulo encurta. */
+  .acao-responder { gap: 0.5rem; }
+  .acao-responder .confianca {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; width: 100%;
+    padding: 4px; border-radius: 12px; background: var(--superficie-2); border: var(--borda);
+  }
+  .acao-responder .confianca .opcao-segmento {
+    min-height: 38px; padding: 0 0.3rem; border: 0; border-radius: 9px; background: transparent;
+    font-size: 0.9rem; justify-content: center;
+  }
+  .acao-responder .confianca .opcao-segmento[aria-pressed="true"] { background: var(--superficie); color: var(--verdete); box-shadow: 0 1px 3px rgba(18, 24, 26, 0.12); font-weight: 700; }
+  :root[data-tema="escuro"] .acao-responder .confianca .opcao-segmento[aria-pressed="true"] { background: var(--verdete-veu); box-shadow: none; }
+  .confianca__prefixo { display: none; }
+  .confianca__rotulo { display: inline-block; }
+  .confianca__rotulo::first-letter { text-transform: uppercase; }
+  .acao-responder .botao--grande { width: 100%; min-height: 48px; border-radius: 12px; }
+  .acao-responder__dica { display: none; }
+}
+
+.nav-sessao {
+  display: grid; grid-template-columns: auto 1fr auto; grid-template-areas: "anterior extras proxima";
+  align-items: center; gap: 0.5rem 0.75rem; margin-top: 1.25rem;
+}
+.nav-sessao__anterior { grid-area: anterior; }
+.nav-sessao__proxima { grid-area: proxima; }
+.nav-sessao__extras { grid-area: extras; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.25rem; }
+@media (max-width: 40rem) {
+  .nav-sessao { grid-template-columns: auto 1fr; grid-template-areas: "anterior proxima" "extras extras"; margin-top: 0.75rem; }
+  .nav-sessao .botao { min-height: 46px; border-radius: 12px; }
+  .nav-sessao__proxima { justify-content: center; }
+  .nav-sessao__extras { justify-content: center; gap: 0; }
+  .nav-sessao__extras .botao { min-height: 38px; padding: 0 0.6rem; font-size: var(--meta); color: var(--texto-2); }
+}

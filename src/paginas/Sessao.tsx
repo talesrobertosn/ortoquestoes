@@ -215,7 +215,7 @@ export function Sessao() {
           </div>
           <button
             type="button"
-            className="botao"
+            className="botao barra-sessao__mapa"
             onClick={() => definirMapaAberto(true)}
             style={{ minHeight: 36 }}
           >
@@ -224,7 +224,7 @@ export function Sessao() {
           </button>
           <button
             type="button"
-            className="botao-icone"
+            className="botao-icone barra-sessao__teclado"
             onClick={() => definirAtalhosAbertos(true)}
             aria-label="Ver atalhos de teclado"
             title="Atalhos (?)"
@@ -250,10 +250,11 @@ export function Sessao() {
             const chaveMapa = `${sessao.id}:${questaoAtual.id}`
             const chave = chavesResposta.current.get(chaveMapa) ?? crypto.randomUUID()
             chavesResposta.current.set(chaveMapa, chave)
-            const permissao = await autorizar(questaoAtual.id, chave)
-            autorizando.current = false
-            if (!permissao.permitido) { definirLimiteAberto(true); return }
-            responder(questaoAtual.id, letra, correta, segundos, confianca)
+            try {
+              const permissao = await autorizar(questaoAtual.id, chave)
+              if (!permissao.permitido) { definirLimiteAberto(true); return }
+              responder(questaoAtual.id, letra, correta, segundos, confianca)
+            } finally { autorizando.current = false }
           }}
           aoRiscar={(letra) => alternarRiscada(questaoAtual.id, letra)}
           aoFavoritar={() => alternarFavorito(questaoAtual.id)}
@@ -268,49 +269,40 @@ export function Sessao() {
         </Estado>
       )}
 
-      <nav className="entre nao-imprime" style={{ marginTop: '1.25rem' }} aria-label="Navegação da sessão">
+      <nav className="nav-sessao nao-imprime" aria-label="Navegação da sessão">
         <button
           type="button"
-          className="botao"
+          className="botao nav-sessao__anterior"
           onClick={() => irPara(posicao - 1)}
           disabled={posicao === 0}
         >
           <Icone nome="esquerda" tamanho={16} />
           Anterior
         </button>
-
-        <div className="linha">
+        <div className="nav-sessao__extras">
           {posicao + 1 < total && !sessao.respostas[questaoAtual?.id ?? ''] && (
-            <button
-              type="button"
-              className="botao botao--fantasma"
-              onClick={() => irPara(posicao + 1)}
-            >
+            <button type="button" className="botao botao--fantasma" onClick={() => irPara(posicao + 1)}>
               Pular por agora
             </button>
           )}
           {proximaNaoRespondida > -1 && (
-            <button
-              type="button"
-              className="botao botao--fantasma"
-              onClick={() => irPara(proximaNaoRespondida)}
-            >
+            <button type="button" className="botao botao--fantasma" onClick={() => irPara(proximaNaoRespondida)}>
               Próxima não respondida
             </button>
           )}
-          <button type="button" className="botao" onClick={concluir}>
+          <button type="button" className="botao botao--fantasma" onClick={concluir}>
             {simulado ? 'Entregar o simulado' : 'Encerrar e ver resumo'}
           </button>
-          <button
-            type="button"
-            className="botao botao--principal"
-            onClick={avancar}
-            disabled={posicao + 1 >= total && respondidas === 0}
-          >
-            {posicao + 1 < total ? 'Próxima' : 'Concluir'}
-            <Icone nome="direita" tamanho={16} />
-          </button>
         </div>
+        <button
+          type="button"
+          className="botao botao--principal nav-sessao__proxima"
+          onClick={avancar}
+          disabled={posicao + 1 >= total && respondidas === 0}
+        >
+          {posicao + 1 < total ? 'Próxima' : 'Concluir'}
+          <Icone nome="direita" tamanho={16} />
+        </button>
       </nav>
 
       <Painel

@@ -34,10 +34,17 @@ function salvarSessao(sessao: SessaoSupabase | null) {
   window.dispatchEvent(new Event('ortoquestoes:auth'))
 }
 
+// Token da sessão do cliente de conta, mantido pelos próprios eventos de
+// autenticação. Ler daqui é imediato: `auth.getSession()` passa por uma trava
+// interna do supabase-js que, no Chrome, pode ficar presa (renovação pendente,
+// outra aba), e com ela o botão de responder parecia não fazer nada.
+let tokenConta: { token: string; expiraEm: number } | null = null
+
 // A área de treino usa o cliente Supabase com renovação automática. Mantemos
 // a sessão usada pelas RPCs de planos em sincronia e a removemos ao sair.
 if (clienteConta) {
   clienteConta.auth.onAuthStateChange((evento, proxima) => {
+    tokenConta = proxima ? { token: proxima.access_token, expiraEm: (proxima.expires_at ?? 0) * 1000 } : null
     if (evento === 'SIGNED_OUT') salvarSessao(null)
     if (evento === 'TOKEN_REFRESHED' && proxima) {
       salvarSessao({
@@ -55,26 +62,38 @@ export function obterSessao() { return lerSessao() }
 export function obterToken() { return lerSessao()?.access_token ?? null }
 async function tokenDoClienteConta(): Promise<string | null> {
   if (!clienteConta) return null
-  const limite = new Promise<null>((resolver) => setTimeout(() => resolver(null), 10_000))
+  const limite = new Promise<null>((resolver) => setTimeout(() => resolver(null), 4_000))
   const leitura = clienteConta.auth.getSession().then(({ data }) => data.session?.access_token ?? null).catch(() => null)
   return Promise.race([leitura, limite])
 }
 
 // A sessão do cliente de conta é a que o app considera "logada" e a única que
 // se renova de forma confiável; a cópia local só serve ao retorno por link.
-async function garantirToken() {
+async function garantirToken(forcarLeitura = false) {
+  if (!forcarLeitura && tokenConta && tokenConta.expiraEm > Date.now() + 30_000) return tokenConta.token
   const doCliente = await tokenDoClienteConta()
   if (doCliente) return doCliente
   const sessao = lerSessao()
   if (!sessao) return null
   if (!sessao.expires_at || sessao.expires_at * 1000 > Date.now() + 60_000) return sessao.access_token
   if (!url || !chaveSupabase || !sessao.refresh_token) { salvarSessao(null); return null }
-  const resposta = await fetch(`${url}/auth/v1/token?grant_type=refresh_token`, { method:'POST', headers:{apikey:chaveSupabase,'Content-Type':'application/json'}, body:JSON.stringify({refresh_token:sessao.refresh_token}) })
+  const resposta = await buscarComPrazo(`${url}/auth/v1/token?grant_type=refresh_token`, { method:'POST', headers:{apikey:chaveSupabase,'Content-Type':'application/json'}, body:JSON.stringify({refresh_token:sessao.refresh_token}) })
   if (!resposta.ok) { salvarSessao(null); return null }
   const nova = await resposta.json() as SessaoSupabase & { expires_in?: number }
   nova.expires_at ??= Math.floor(Date.now()/1000)+(nova.expires_in ?? 3600)
   salvarSessao(nova)
   return nova.access_token
+}
+
+/** fetch com prazo: rede lenta não pode deixar um botão travado para sempre. */
+async function buscarComPrazo(endereco: string, opcoes: RequestInit, prazoMs = 8_000): Promise<Response> {
+  const controle = new AbortController()
+  const temporizador = setTimeout(() => controle.abort(), prazoMs)
+  try {
+    return await fetch(endereco, { ...opcoes, signal: controle.signal })
+  } finally {
+    clearTimeout(temporizador)
+  }
 }
 
 export function obterUsuario(): UsuarioConta | null {
@@ -145,13 +164,18 @@ export function sair() { salvarSessao(null) }
 
 export async function chamarRpc<T>(nome: string, corpo: Record<string, unknown>): Promise<T> {
   if (!url || !chaveSupabase) throw new Error('Servidor não configurado.')
-  const token = await garantirToken()
-  if (!token) throw new Error('Entre na sua conta para continuar.')
-  const resposta = await fetch(`${url}/rest/v1/rpc/${nome}`, {
-    method: 'POST',
-    headers: { apikey: chaveSupabase, Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify(corpo),
-  })
+  const enviar = async (forcarLeitura: boolean) => {
+    const token = await garantirToken(forcarLeitura)
+    if (!token) throw new Error('Entre na sua conta para continuar.')
+    return buscarComPrazo(`${url}/rest/v1/rpc/${nome}`, {
+      method: 'POST',
+      headers: { apikey: chaveSupabase, Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify(corpo),
+    })
+  }
+  let resposta = await enviar(false)
+  // Token recusado (expirou entre a leitura e o envio): tenta uma vez com a sessão relida.
+  if (resposta.status === 401) resposta = await enviar(true)
   if (!resposta.ok) throw new Error(`O servidor não pôde validar a resposta (${resposta.status}).`)
   return await resposta.json() as T
 }
