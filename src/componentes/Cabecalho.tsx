@@ -3,17 +3,17 @@ import { usarConta } from '../conta/ContextoConta'
 import { MarcaHorizontal } from '../marca/Simbolo'
 import { usarTema } from '../estado/tema'
 import { href } from '../util/rotas'
-import { Icone } from './Icone'
+import { Icone, type NomeIcone } from './Icone'
 
 // No celular a barra de baixo já leva a Início, Treinar, Revisão e
 // Desempenho — repetir os quatro aqui em cima seria a mesma coisa duas
 // vezes. Por isso só Revisão soma "oculta-celular": os outros dois cabem
 // e valem a pena continuar visíveis mesmo na tela estreita.
-const LINKS = [
-  { destino: '/treinar', rotulo: 'Treinar', ocultaCelular: false },
-  { destino: '/dados', rotulo: 'Desempenho', ocultaCelular: false },
-  { destino: '/revisao', rotulo: 'Revisão', ocultaCelular: true },
-  { destino: '/ranking', rotulo: 'Ranking', ocultaCelular: true },
+const LINKS: { destino: string; rotulo: string; icone: NomeIcone; ocultaCelular: boolean }[] = [
+  { destino: '/treinar', rotulo: 'Treinar', icone: 'livro', ocultaCelular: false },
+  { destino: '/revisao', rotulo: 'Revisão', icone: 'calendario', ocultaCelular: true },
+  { destino: '/dados', rotulo: 'Desempenho', icone: 'grafico', ocultaCelular: false },
+  { destino: '/ranking', rotulo: 'Ranking', icone: 'trofeu', ocultaCelular: true },
 ]
 
 export function Cabecalho({ caminho }: { caminho: string }) {
@@ -36,6 +36,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
               href={href(link.destino)}
               aria-current={caminho.startsWith(link.destino) ? 'page' : undefined}
             >
+              <span className="nav-link__icone"><Icone nome={link.icone} tamanho={17} /></span>
               {link.rotulo}
             </a>
           ))}
