@@ -5,7 +5,7 @@ const LADO = 1080
 
 /** Símbolo do OrtoQuestões (direção B, ver src/marca/Simbolo.tsx) desenhado
  * direto no canvas: um círculo com um fio de Kirschner atravessando. */
-function desenharSelo(ctx: CanvasRenderingContext2D, x: number, y: number, tamanho: number, cor: string) {
+export function desenharSelo(ctx: CanvasRenderingContext2D, x: number, y: number, tamanho: number, cor: string) {
   const escala = tamanho / 32
   ctx.save()
   ctx.translate(x, y)
@@ -22,10 +22,10 @@ function desenharSelo(ctx: CanvasRenderingContext2D, x: number, y: number, taman
 
 const LEGENDAS = ['Estudando ortopedia todos os dias', 'Questão por questão, dia após dia', 'Constância que vira resultado', 'Um pouco todo dia, sem pular nenhum']
 
-const FONTE = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif'
+export const FONTE = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif'
 
 /** Retângulo arredondado como caminho, para cápsulas e quadradinhos da semana. */
-function caminhoArredondado(ctx: CanvasRenderingContext2D, x: number, y: number, l: number, a: number, r: number) {
+export function caminhoArredondado(ctx: CanvasRenderingContext2D, x: number, y: number, l: number, a: number, r: number) {
   ctx.beginPath()
   ctx.moveTo(x + r, y)
   ctx.arcTo(x + l, y, x + l, y + a, r)

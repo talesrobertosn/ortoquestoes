@@ -9,6 +9,7 @@ import { Icone } from '../componentes/Icone'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { CartaoStreak } from '../componentes/CartaoStreak'
 import { InstalarApp } from '../componentes/InstalarApp'
+import { CartaoQuestaoDoDia } from '../componentes/CartaoQuestaoDoDia'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
@@ -264,6 +265,8 @@ export function Inicio() {
           </nav>
 
           <CartaoStreak />
+
+          <CartaoQuestaoDoDia indice={indice} />
 
           <section className="painel-diario" aria-label="Seu estudo de hoje">
             <div className="painel-diario__intro">
