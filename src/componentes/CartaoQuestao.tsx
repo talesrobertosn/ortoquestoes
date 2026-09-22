@@ -610,6 +610,9 @@ function ComentarioDaIA({
     .map((a) => a.letra)
     .filter((letra) => letra !== questao.gabarito && comentario?.incorretas[letra])
 
+  const textoAlternativa = (letra: string) =>
+    questao.alternativas.find((a) => a.letra === letra)?.texto
+
   return (
     <div className="bloco-comentario">
       <p className="comentario__titulo">Comentário</p>
@@ -636,7 +639,7 @@ function ComentarioDaIA({
             <div className="ia__item ia__item--certa">
               <span className="ia__letra">{questao.gabarito}</span>
               <div>
-                <strong>Por que a alternativa está correta</strong><TextoEditorial texto={comentario.correta} />
+                <strong>{textoAlternativa(questao.gabarito) ?? 'Por que a alternativa está correta'}</strong><TextoEditorial texto={comentario.correta} />
               </div>
             </div>
           )}
@@ -645,7 +648,7 @@ function ComentarioDaIA({
             <div className="ia__item" key={letra}>
               <span className="ia__letra">{letra}</span>
               <div>
-                <strong>Por que esta alternativa não se aplica</strong><TextoEditorial texto={comentario.incorretas[letra]!} />
+                <strong>{textoAlternativa(letra) ?? 'Por que esta alternativa não se aplica'}</strong><TextoEditorial texto={comentario.incorretas[letra]!} />
               </div>
             </div>
           ))}
