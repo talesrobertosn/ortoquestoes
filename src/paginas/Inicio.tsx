@@ -226,6 +226,13 @@ export function Inicio() {
 
           <CartaoStreak />
 
+          <section className="cartao cartao__corpo">
+            <p className="meta">RANKING</p>
+            <h2>🏆 {conta ? 'Veja sua posição no ranking' : 'Veja quem mais responde questões'}</h2>
+            <p className="texto-2">Top 50 por questões respondidas, geral ou só nos últimos 7 dias — e os emblemas que você desbloqueia pelo caminho.</p>
+            <a className="botao botao--principal" href={href('/ranking')}>Ver ranking</a>
+          </section>
+
           <section className="painel-diario" aria-label="Seu estudo de hoje">
             <div className="painel-diario__intro">
               <p className="meta">SUA ROTINA DE ESTUDO</p>

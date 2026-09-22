@@ -3,12 +3,24 @@ import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, supabase } from '../conta/supabase'
 import { href } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
+import { conquistaAtual, proximaConquista } from '../estado/conquistas'
 
-type LinhaRanking = { posicao: number; apelido: string; total: number; eh_voce: boolean }
-type MinhaPosicao = { posicao: number; total: number } | null
+type Periodo = 'geral' | 'semana'
+type LinhaRanking = { posicao: number; apelido: string; total: number; total_geral: number; eh_voce: boolean }
+type MinhaPosicao = { posicao: number; total: number; total_geral: number } | null
+
+const ROTULOS_PERIODO: Record<Periodo, string> = { geral: 'Geral', semana: 'Últimos 7 dias' }
+
+/** Emblema (se houver) do total histórico, para mostrar ao lado do nome. */
+function Emblema({ total }: { total: number }) {
+  const conquista = conquistaAtual(total)
+  if (!conquista) return null
+  return <span title={`${conquista.rotulo} · ${total.toLocaleString('pt-BR')} questões no total`}> {conquista.emoji}</span>
+}
 
 export function Ranking() {
   const { sessao } = usarConta()
+  const [periodo, definirPeriodo] = useState<Periodo>('geral')
   const [linhas, definirLinhas] = useState<LinhaRanking[] | null>(null)
   const [minhaPosicao, definirMinhaPosicao] = useState<MinhaPosicao>(null)
   const [erro, definirErro] = useState(false)
@@ -17,9 +29,10 @@ export function Ranking() {
     if (!supabase || !sessao) return
     let vivo = true
     definirErro(false)
+    definirLinhas(null)
     Promise.all([
-      supabase.rpc('obter_ranking_publico'),
-      supabase.rpc('minha_posicao_ranking'),
+      supabase.rpc('obter_ranking_publico', { periodo }),
+      supabase.rpc('minha_posicao_ranking', { periodo }),
     ]).then(([ranking, minha]) => {
       if (!vivo) return
       if (ranking.error || minha.error) { definirErro(true); return }
@@ -27,7 +40,7 @@ export function Ranking() {
       definirMinhaPosicao(minha.data?.[0] ?? null)
     })
     return () => { vivo = false }
-  }, [sessao])
+  }, [sessao, periodo])
 
   if (!contasDisponiveis || !supabase) {
     return <article className="limite-leitura empilha">
@@ -47,6 +60,8 @@ export function Ranking() {
     </article>
   }
 
+  const meuProximo = minhaPosicao ? proximaConquista(minhaPosicao.total_geral) : null
+
   return <article className="limite-leitura empilha-2">
     <header>
       <p className="meta">TOP 50</p>
@@ -54,13 +69,19 @@ export function Ranking() {
       <p>Contagem simples de questões respondidas, sem levar em conta o percentual de acerto. Só aparece aqui quem decidiu participar.</p>
     </header>
 
+    <div className="grupo-opcoes" aria-label="Período do ranking">
+      {(['geral', 'semana'] as const).map((p) => (
+        <button key={p} type="button" className="opcao-segmento" aria-pressed={periodo === p} onClick={() => definirPeriodo(p)}>{ROTULOS_PERIODO[p]}</button>
+      ))}
+    </div>
+
     {linhas === null && !erro && <Carregando linhas={6} rotulo="Carregando ranking" />}
 
     {erro && <Estado titulo="Não foi possível carregar o ranking agora">
       <p>Confira sua conexão e tente novamente em instantes.</p>
     </Estado>}
 
-    {linhas && linhas.length === 0 && <Estado titulo="Ainda não há ninguém no ranking">
+    {linhas && linhas.length === 0 && <Estado titulo={periodo === 'semana' ? 'Ninguém respondeu questões nos últimos 7 dias' : 'Ainda não há ninguém no ranking'}>
       <p>Seja a primeira pessoa: ative sua participação em <a href={href('/conta')}>Minha conta</a>.</p>
     </Estado>}
 
@@ -68,13 +89,13 @@ export function Ranking() {
       <div className="rolagem-x">
         <table className="tabela">
           <thead>
-            <tr><th scope="col">#</th><th scope="col">Nome</th><th scope="col" className="numerico">Questões respondidas</th></tr>
+            <tr><th scope="col">#</th><th scope="col">Nome</th><th scope="col" className="numerico">Questões {periodo === 'semana' ? 'na semana' : 'respondidas'}</th></tr>
           </thead>
           <tbody>
             {linhas.map((linha) => (
               <tr key={linha.posicao} className={linha.eh_voce ? 'linha-destaque' : undefined}>
                 <th scope="row">{linha.posicao}</th>
-                <td>{linha.apelido}{linha.eh_voce && <span className="meta"> · você</span>}</td>
+                <td>{linha.apelido}<Emblema total={linha.total_geral} />{linha.eh_voce && <span className="meta"> · você</span>}</td>
                 <td className="numerico">{linha.total.toLocaleString('pt-BR')}</td>
               </tr>
             ))}
@@ -84,14 +105,18 @@ export function Ranking() {
     </section>}
 
     {linhas && minhaPosicao && minhaPosicao.posicao > linhas.length && (
-      <p className="texto-2">Sua posição: <strong>#{minhaPosicao.posicao}</strong>, com {minhaPosicao.total.toLocaleString('pt-BR')} questões respondidas.</p>
+      <p className="texto-2">Sua posição: <strong>#{minhaPosicao.posicao}</strong>, com {minhaPosicao.total.toLocaleString('pt-BR')} questões {periodo === 'semana' ? 'na semana' : 'respondidas'}.</p>
     )}
 
     {linhas && !minhaPosicao && (
       <section className="cartao cartao__corpo empilha">
         <h2>Você ainda não participa</h2>
-        <p className="texto-2">Ative sua participação e escolha como seu nome aparece em <a href={href('/conta')}>Minha conta</a>.</p>
+        <p className="texto-2">Ative sua participação e escolha como seu nome aparece em <a href={href('/conta')}>Minha conta</a>. Quem passa de marcos como 100, 500 ou 1.000 questões ganha um emblema ao lado do nome.</p>
       </section>
+    )}
+
+    {linhas && minhaPosicao && meuProximo && (
+      <p className="texto-2">Faltam <strong>{(meuProximo.minimo - minhaPosicao.total_geral).toLocaleString('pt-BR')}</strong> questões para o próximo emblema: {meuProximo.emoji} {meuProximo.rotulo}.</p>
     )}
   </article>
 }

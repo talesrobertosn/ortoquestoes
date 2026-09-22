@@ -10,6 +10,7 @@ import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
 import { armazenamentoDisponivel, tamanhoArmazenado } from '../estado/armazenamento'
 import { type ResumoHistorico, usarFavoritos } from '../estado/sessao'
 import { usarIndice } from '../dados/usarIndice'
+import { conquistaAtual, proximaConquista } from '../estado/conquistas'
 
 export function Sobre() {
   return (
@@ -226,6 +227,8 @@ export function DadosLocais() {
   const nome = String(conta?.user.user_metadata?.nome ?? '').trim()
   const percentualGeral = totalContadas > 0 ? totalCertas / totalContadas : null
   const incertas = Object.values(marcadas).filter(registro => registro.confianca === 'duvida' || registro.confianca === 'chute').length
+  const minhaConquista = conquistaAtual(respondidas)
+  const proximaConquistaAlvo = proximaConquista(respondidas)
   const porConfianca = useMemo(() => {
     const grupos = { seguro: { certas: 0, total: 0 }, duvida: { certas: 0, total: 0 }, chute: { certas: 0, total: 0 } }
     for (const registro of Object.values(marcadas)) {
@@ -290,7 +293,7 @@ export function DadosLocais() {
             <span className="numeros__rotulo">de acerto no total</span>
           </div>
           <div className="numeros__celula">
-            <span className="numeros__valor">{respondidas}</span>
+            <span className="numeros__valor">{respondidas}{minhaConquista && <span title={minhaConquista.rotulo}> {minhaConquista.emoji}</span>}</span>
             <span className="numeros__rotulo">questões respondidas</span>
           </div>
           <div className="numeros__celula">
@@ -303,6 +306,7 @@ export function DadosLocais() {
           <a href={href('/favoritas')}>{favoritos.length} {favoritos.length === 1 ? 'favorita' : 'favoritas'}</a>
           {conta && <a href={href('/ranking')}>ver ranking</a>}
         </div>
+        {proximaConquistaAlvo && <p className="meta" style={{ marginTop: '0.5rem' }}>Faltam {proximaConquistaAlvo.minimo - respondidas} questões para o emblema {proximaConquistaAlvo.emoji} {proximaConquistaAlvo.rotulo}.</p>}
       </section>
 
       {(porConfianca.seguro.total > 0 || porConfianca.duvida.total > 0 || porConfianca.chute.total > 0) && <section className="cartao cartao__corpo">
