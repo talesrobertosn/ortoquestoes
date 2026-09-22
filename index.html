@@ -48,8 +48,9 @@
       // Aplica o tema antes da primeira pintura, para não haver piscada de tema claro.
       (function () {
         try {
-          var t = localStorage.getItem('ortoquestoes:tema')
-          if (t === 'escuro' || t === 'claro') document.documentElement.dataset.tema = t
+          // O app grava o tema em JSON ("escuro", com aspas); aceita os dois formatos.
+          var t = (localStorage.getItem('ortoquestoes:tema') || '').replace(/"/g, '')
+          document.documentElement.dataset.tema = t === 'escuro' ? 'escuro' : 'claro'
         } catch (e) {}
       })()
     </script>
@@ -94,7 +95,7 @@
       .pre-carga h1 { font-size: 1.35rem; color: #1d2826; margin: 0 0 .5rem; }
       .pre-carga nav { display: flex; flex-wrap: wrap; gap: .4rem .9rem; justify-content: center; margin-top: 1.2rem; font-size: .85rem; }
       .pre-carga a { color: inherit; }
-      @media (prefers-color-scheme: dark) { .pre-carga { color: #9aa6a3; } .pre-carga h1 { color: #e6ecea; } }
+      [data-tema="escuro"] .pre-carga { color: #9aa6a3; } [data-tema="escuro"] .pre-carga h1 { color: #e6ecea; }
     </style>
   </head>
   <body>

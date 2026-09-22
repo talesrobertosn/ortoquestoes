@@ -55,7 +55,8 @@ function lerCompleta<T>(completa: string, padrao: T, fonte: 'local' | 'aba' | nu
   } catch { return padrao }
 }
 export function ler<T>(chave: string, padrao: T): T {
-  return lerCompleta(chaveCompleta(chave), padrao, usuario !== null ? 'local' : PERSISTE_ABA.has(chave) ? 'aba' : null)
+  // Preferências do aparelho (tema, etiquetas) persistem também para visitantes.
+  return lerCompleta(chaveCompleta(chave), padrao, usuario !== null || GLOBAIS.has(chave) ? 'local' : PERSISTE_ABA.has(chave) ? 'aba' : null)
 }
 /** Visitantes nunca recuperam dados persistidos; a memória dura apenas enquanto a aba está aberta. */
 export function lerVisitante<T>(_chave: string, padrao: T): T { return padrao }
@@ -65,7 +66,7 @@ export function gravar(chave: string, valor: unknown, origem: 'local' | 'nuvem' 
     // Visitantes usam apenas a memória da aba (com a exceção de PERSISTE_ABA,
     // abaixo); somente contas autenticadas persistem entre sessões e
     // dispositivos.
-    if (usuario !== null && armazenamentoDisponivel()) { window.localStorage.setItem(completa, bruto); memoria.delete(completa) }
+    if ((usuario !== null || GLOBAIS.has(chave)) && armazenamentoDisponivel()) { window.localStorage.setItem(completa, bruto); memoria.delete(completa) }
     else if (usuario === null && PERSISTE_ABA.has(chave)) { window.sessionStorage.setItem(completa, bruto); memoria.delete(completa) }
     else memoria.set(completa, bruto)
   } catch { memoria.set(completa, bruto) }
