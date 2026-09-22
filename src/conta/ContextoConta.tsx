@@ -66,6 +66,7 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
       gravar('reinicio:pendente', gerarId(), 'nuvem')
       gravar('sincronia:v1', estadoVazio(), 'nuvem')
       limparTudo('nuvem')
+      gravar('reinicio:em', Date.now(), 'nuvem')
       sync.current = iniciarSincronizacao(supabase, sessao.user.id, definirStatus)
     },
     sincronizar: () => { void sync.current?.sincronizar() }, resolver: (doc, manterLocal) => sync.current?.resolver(doc, manterLocal) }}>

@@ -264,6 +264,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
             <span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" />
             {ROTULOS_STATUS[status.estado]}{status.pendentes > 0 && ` ${status.pendentes} alteração(ões) pendente(s).`}
           </p>
+          {status.estado === 'erro' && status.detalhe && <p className="ct-heroi__erro">Motivo: {status.detalhe}</p>}
         </div>
       </div>
       <div className="ct-heroi__acoes">

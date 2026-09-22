@@ -35,6 +35,8 @@ try {
           return Promise.resolve().then(() => {
             if (falhar) return { data: null, error: { message: 'Falha temporária' } }
             if (escrita) {
+              // Simula uma linha que o banco recusa (violação de restrição): o lote inteiro falha.
+              if (escrita.some(l => l.item.includes('veneno'))) return { data: null, error: { code: '23514', message: 'violates check constraint' } }
               for (const linha of escrita) {
                 assert.match(linha.item, /^[A-Za-z0-9][A-Za-z0-9_.:-]{0,199}$/)
                 assert.equal(linha.usuario_id, usuario)
@@ -107,5 +109,23 @@ try {
   sync.parar(); iniciar(); await esperar()
   assert.deepEqual(m.ler('notas', {}), { nova: 'após segundo reinício' })
   assert.deepEqual(m.ler('respondidas', {}), {})
+  // Um item recusado não pode prender a fila: os demais sobem e ele sai da fila.
+  m.gravar('notas', { nova: 'após segundo reinício', 'veneno-1': 'recusada', boa: 'deve subir' })
+  await esperar()
+  const estadoSync = m.ler('sincronia:v1', null)
+  assert.equal(Object.keys(estadoSync.pendentes).length, 0)
+  assert.ok(estadoSync.rejeitados['notas/veneno-1'].erro.includes('23514'))
+  assert.ok(linhas.some(l => l.usuario_id === usuario && l.tipo === 'notas' && l.item.endsWith(':boa') && l.valor === 'deve subir'))
+  // Conflito entre aparelhos se resolve sozinho: na resposta vale a mais recente.
+  sync.parar()
+  const atual = m.ler('sincronia:v1', null)
+  const remota = linhas.find(l => l.usuario_id === usuario && l.tipo === 'notas' && l.item.endsWith(':boa'))
+  Object.assign(remota, { valor: 'de outro aparelho', operacao: crypto.randomUUID(), versao: ++versao })
+  atual.pendentes['notas/boa'] = { tipo: 'notas', item: 'boa', valor: 'deste aparelho', base: 1, operacao: crypto.randomUUID() }
+  m.gravar('sincronia:v1', atual, 'nuvem')
+  iniciar(); await esperar()
+  assert.equal(Object.keys(m.ler('sincronia:v1', null).conflitos).length, 0)
+  assert.equal(remota.valor, 'deste aparelho')
   console.log('Reinício: RPC ausente, offline, F5, paginação, sessão antiga e isolamento de conta passaram.')
+  console.log('Sincronização: item recusado não trava a fila e conflito se resolve sozinho.')
 } finally { sync?.parar(); await rm(pasta, { recursive: true, force: true }) }

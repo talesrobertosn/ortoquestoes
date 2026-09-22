@@ -1468,3 +1468,6 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
 .ct-cartao .campo--checkbox { display: flex; align-items: center; gap: 0.6rem; align-self: end; min-height: 44px; }
 .ct-cartao .campo--checkbox input { width: 1.1rem; height: 1.1rem; accent-color: var(--verdete); margin: 0; }
 @media (max-width: 34rem) { .ct-seg button { font-size: 0.82rem; padding: 0 0.2rem; } }
+.dp-heroi__sync { flex-wrap: wrap; }
+.status-sincronia__detalhe { flex-basis: 100%; opacity: 0.85; overflow-wrap: anywhere; }
+.ct-heroi__erro { margin: 0.5rem 0 0; font-size: var(--meta); color: #ffd7d2; overflow-wrap: anywhere; }

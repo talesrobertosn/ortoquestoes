@@ -1,9 +1,9 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { EVENTO_DADOS, gravar, ler, limparTudo, usuarioLocal, type MudancaDados } from '../estado/armazenamento'
-import { deItens, ehTipoSync, estadoVazio, identificador, itens, receberDocumento, registrarAlteracoes, TIPOS_SYNC, type Alteracao, type Documento, type EstadoSync, type TipoSync } from './modeloSync'
+import { deItens, ehTipoSync, estadoVazio, identificador, itens, receberDocumento, registrarAlteracoes, resolverConflito, TIPOS_SYNC, type Alteracao, type Documento, type EstadoSync, type TipoSync } from './modeloSync'
 import { gerarId } from '../util/id'
 
-export interface StatusSync { estado: 'sincronizando' | 'salvo' | 'offline' | 'erro' | 'conflito'; pendentes: number; conflitos: Documento[]; pronto: boolean }
+export interface StatusSync { estado: 'sincronizando' | 'salvo' | 'offline' | 'erro' | 'conflito'; pendentes: number; conflitos: Documento[]; pronto: boolean; detalhe?: string }
 /** Somente uma fila por conta/aba. Operações são idempotentes e conflitos nunca sobrescrevem dados silenciosamente. */
 export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string, notificar: (s: StatusSync) => void) {
   let estado = ler<EstadoSync>('sincronia:v1', estadoVazio())
@@ -12,8 +12,24 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
   let timer: ReturnType<typeof setTimeout> | undefined
   const valido = () => ativo && usuarioLocal() === idUsuario
   const salvar = () => { if (valido()) gravar('sincronia:v1', estado, 'nuvem') }
+  let detalhe: string | undefined
   const anunciar = (s: StatusSync['estado']) => {
-    if (valido()) notificar({ estado: s, pendentes: Object.keys(estado.pendentes).length, conflitos: Object.values(estado.conflitos), pronto })
+    if (valido()) notificar({ estado: s, pendentes: Object.keys(estado.pendentes).length, conflitos: Object.values(estado.conflitos), pronto, detalhe: s === 'erro' ? detalhe : undefined })
+  }
+  const descrever = (erro: unknown) => {
+    const e = erro as { message?: string; code?: string; details?: string; hint?: string; name?: string } | null
+    return [e?.code, e?.message ?? (erro instanceof Error ? erro.message : String(erro)), e?.details, e?.hint].filter(Boolean).join(' · ').slice(0, 300)
+  }
+  const prefixar = (p: Alteracao) => ({ ...p, item: estado.reinicio ? `r${estado.reinicio}:${p.item}` : p.item })
+  /** Envia um lote; se o servidor recusar, tenta pelo caminho direto (RLS). */
+  async function enviar(lote: Alteracao[]): Promise<{ docs: Documento[] } | { erro: unknown }> {
+    const remotas = lote.map(prefixar)
+    const { data, error } = await cliente.rpc('sincronizar_progresso', { alteracoes: remotas })
+    if (!error) return { docs: (data ?? []) as Documento[] }
+    const linhas = remotas.map(p => ({ usuario_id: idUsuario, tipo: p.tipo, item: p.item, valor: p.valor, operacao: p.operacao }))
+    const direto = await cliente.from('progresso_usuario').upsert(linhas, { onConflict: 'usuario_id,tipo,item' }).select('tipo,item,valor,versao,operacao')
+    if (!direto.error) return { docs: (direto.data ?? []) as Documento[] }
+    return { erro: direto.error ?? error }
   }
   function aplicar(documentos: Documento[], enviadas: Alteracao[] = []) {
     // O marcador é a fonte de verdade para o comando de zerar a conta.
@@ -23,6 +39,13 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
       limparTudo('nuvem')
       estado = { ...estadoVazio(), cursor: estado.cursor, reinicio: marcador.versao }
       salvar()
+    }
+    if (marcador && marcador.versao === estado.reinicio) {
+      // Guarda quando foi o reinício: gráficos que leem o histórico de cada
+      // questão ignoram o que veio antes dele.
+      const bruto = Number((marcador.valor as { concluidaEm?: number } | null)?.concluidaEm ?? 0)
+      const em = bruto > 0 && bruto < 1e12 ? bruto * 1000 : bruto
+      if (em && ler<number>('reinicio:em', 0) !== em) gravar('reinicio:em', em, 'nuvem')
     }
     const mapas = new Map<TipoSync, Record<string, unknown>>()
     for (const remoto of documentos) {
@@ -94,6 +117,8 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
       // locais. O número da versão é global entre tipos; usar apenas `gt(cursor)`
       // pode deixar respostas para trás quando favoritos e respostas chegam em
       // ordens diferentes nos dispositivos.
+      // Conflitos guardados de versões anteriores: resolve e deixa o recebimento abaixo aplicar.
+      for (const [id, doc] of Object.entries(estado.conflitos)) resolverConflito(estado, id, doc)
       let pagina = 0
       const recebidos: Documento[] = []
       while (valido()) {
@@ -113,28 +138,31 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
       pronto = true
       const fila = Object.values(estado.pendentes).filter(p => !estado.conflitos[identificador(p.tipo, p.item)]).slice(0, 100)
       if (fila.length) {
-        const remotas = fila.map(p => ({ ...p, item: estado.reinicio ? `r${estado.reinicio}:${p.item}` : p.item }))
-        const { data, error } = await cliente.rpc('sincronizar_progresso', { alteracoes: remotas })
+        const resultado = await enviar(fila)
         if (!valido()) return
-        if (error) {
-          // Compatibilidade com projetos que ainda não aplicaram a função RPC:
-          // as políticas RLS continuam limitando cada linha ao titular.
-          const linhas = remotas.map(p => ({ usuario_id: idUsuario, tipo: p.tipo, item: p.item, valor: p.valor, operacao: p.operacao }))
-          const direto = await cliente.from('progresso_usuario').upsert(linhas, { onConflict: 'usuario_id,tipo,item' }).select('tipo,item,valor,versao,operacao')
-          if (!valido()) return
-          if (direto.error) throw error
-          aplicar((direto.data ?? []) as Documento[], fila)
-          salvar()
+        if ('docs' in resultado) {
+          aplicar(resultado.docs, fila)
         } else {
-          aplicar((data ?? []) as Documento[], fila)
-          salvar()
+          // Um único item recusado (formato antigo, dado corrompido) não pode
+          // prender a fila inteira: reenvia um por um e separa só o que falhar.
+          detalhe = descrever(resultado.erro)
+          for (const alteracao of fila) {
+            const individual = await enviar([alteracao])
+            if (!valido()) return
+            if ('docs' in individual) { aplicar(individual.docs, [alteracao]); continue }
+            const id = identificador(alteracao.tipo, alteracao.item)
+            estado.rejeitados = { ...(estado.rejeitados ?? {}), [id]: { tipo: alteracao.tipo, item: alteracao.item, valor: alteracao.valor, erro: descrever(individual.erro), em: Date.now() } }
+            delete estado.pendentes[id]
+          }
         }
+        salvar()
       }
       const conflitos = Object.keys(estado.conflitos).length
       const pendentes = Object.keys(estado.pendentes).length
       anunciar(conflitos ? 'conflito' : pendentes ? 'sincronizando' : 'salvo')
       if (Object.values(estado.pendentes).some(p => !estado.conflitos[identificador(p.tipo, p.item)])) agendar()
-    } catch { anunciar(navigator.onLine ? 'erro' : 'offline') }
+      detalhe = undefined
+    } catch (erro) { detalhe = descrever(erro); anunciar(navigator.onLine ? 'erro' : 'offline') }
     finally { executando = false }
   }
   function aoGravar(evento: Event) {

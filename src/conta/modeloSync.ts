@@ -22,6 +22,8 @@ export interface EstadoSync {
   versoes: Record<string, number>
   pendentes: Record<string, Alteracao>
   conflitos: Record<string, Documento>
+  /** Itens que o servidor recusou mesmo enviados sozinhos: saem da fila para não travar o resto. */
+  rejeitados?: Record<string, { tipo: TipoSync; item: string; valor: unknown; erro: string; em: number }>
 }
 export const estadoVazio = (): EstadoSync => ({ cursor: 0, reinicio: 0, versoes: {}, pendentes: {}, conflitos: {} })
 export const identificador = (tipo: TipoSync, item: string) => `${tipo}/${item}`
@@ -61,9 +63,33 @@ export function receberDocumento(estado: EstadoSync, doc: Documento, enviada?: A
       delete estado.conflitos[id]
       return false
     }
-    if (pendente.base !== doc.versao) estado.conflitos[id] = doc
+    if (pendente.base !== doc.versao) return resolverConflito(estado, id, doc)
     return false
   }
   delete estado.conflitos[id]
   return true
+}
+
+/**
+ * Mesmo item alterado em dois aparelhos. Em vez de travar a fila esperando uma
+ * decisão manual (que quase ninguém vê), resolve sozinho: na resposta de
+ * questão vale a mais recente; nos demais tipos vale a deste aparelho, que é
+ * reenviada sobre a versão atual do servidor. Retorna true quando o documento
+ * remoto deve ser aplicado localmente.
+ */
+export function resolverConflito(estado: EstadoSync, id: string, doc: Documento): boolean {
+  const pendente = estado.pendentes[id]
+  delete estado.conflitos[id]
+  if (!pendente) return true
+  if (doc.tipo === 'respondidas') {
+    const quandoRemoto = Number((doc.valor as { q?: number } | null)?.q ?? 0)
+    const quandoLocal = Number((pendente.valor as { q?: number } | null)?.q ?? 0)
+    if (doc.valor !== null && quandoRemoto > quandoLocal) {
+      delete estado.pendentes[id]
+      return true
+    }
+  }
+  pendente.base = doc.versao
+  pendente.operacao = gerarId()
+  return false
 }

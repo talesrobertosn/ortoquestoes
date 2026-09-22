@@ -220,6 +220,9 @@ export function DadosLocais() {
   const { sessao: conta, status: statusSync, sincronizar, reiniciarProgresso } = usarConta()
   const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
   const [marcadas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
+  // Depois de "Começar do zero", nada anterior ao reinício entra nos gráficos,
+  // mesmo que algum aparelho ainda guarde eventos antigos no histórico da questão.
+  const [reinicioEm] = usarArmazenado<number>('reinicio:em', 0)
   const respondidas = Object.keys(marcadas).length
   const [apagado, definirApagado] = useState(false)
   const [reinicioPendente] = usarArmazenado<string | null>('reinicio:pendente', null)
@@ -261,8 +264,9 @@ export function DadosLocais() {
   const porConfianca = useMemo(() => {
     const grupos = { seguro: { certas: 0, total: 0 }, duvida: { certas: 0, total: 0 }, chute: { certas: 0, total: 0 } }
     for (const registro of Object.values(marcadas)) {
-      const eventos = registro.historico?.length ? registro.historico : [{ correta: registro.c, confianca: registro.confianca ?? 'seguro' as const }]
+      const eventos = registro.historico?.length ? registro.historico : [{ em: registro.q, correta: registro.c, confianca: registro.confianca ?? 'seguro' as const }]
       for (const evento of eventos) {
+        if (reinicioEm && (evento.em ?? 0) < reinicioEm) continue
         if (evento.correta === null) continue
         const grupo = grupos[evento.confianca]
         grupo.total++
@@ -270,12 +274,13 @@ export function DadosLocais() {
       }
     }
     return grupos
-  }, [marcadas])
+  }, [marcadas, reinicioEm])
   const atividade = useMemo(() => {
     const porDia = new Map<string, { total: number; certas: number }>()
     for (const registro of Object.values(marcadas)) {
       const eventos = registro.historico?.length ? registro.historico : registro.q ? [{ em: registro.q, correta: registro.c }] : []
       for (const evento of eventos) {
+        if (reinicioEm && evento.em < reinicioEm) continue
         const chave = chaveDia(evento.em)
         const atual = porDia.get(chave) ?? { total: 0, certas: 0 }
         atual.total++
@@ -288,7 +293,7 @@ export function DadosLocais() {
       const dia = hoje - (27 - i) * 86400000
       return { dia, ...(porDia.get(chaveDia(dia)) ?? { total: 0, certas: 0 }) }
     })
-  }, [marcadas])
+  }, [marcadas, reinicioEm])
   const maiorDia = Math.max(1, ...atividade.map((d) => d.total))
   const diasAtivos = atividade.filter((d) => d.total > 0).length
   const questoesMes = atividade.reduce((n, d) => n + d.total, 0)
@@ -320,6 +325,7 @@ export function DadosLocais() {
               <span className={`ponto-sincronia ponto-sincronia--${statusSync.estado}`} aria-hidden="true" />
               {statusSync.estado === 'sincronizando' ? 'Sincronizando…' : statusSync.estado === 'salvo' ? 'Progresso sincronizado' : statusSync.pendentes ? `${statusSync.pendentes} alteração(ões) aguardando envio` : 'Progresso salvo neste dispositivo'}
               {statusSync.estado !== 'sincronizando' && <button type="button" className="botao--vinculo" onClick={sincronizar}>sincronizar agora</button>}
+              {statusSync.estado === 'erro' && statusSync.detalhe && <small className="status-sincronia__detalhe">Motivo: {statusSync.detalhe}</small>}
             </p>
           )}
         </div>
