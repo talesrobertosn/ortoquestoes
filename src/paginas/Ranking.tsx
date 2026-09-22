@@ -3,7 +3,7 @@ import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, supabase } from '../conta/supabase'
 import { href } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
-import { conquistaAtual, proximaConquista } from '../estado/conquistas'
+import { CONQUISTAS, conquistaAtual, proximaConquista } from '../estado/conquistas'
 
 type Periodo = 'geral' | 'semana'
 type LinhaRanking = { posicao: number; apelido: string; total: number; total_geral: number; eh_voce: boolean }
@@ -118,5 +118,20 @@ export function Ranking() {
     {linhas && minhaPosicao && meuProximo && (
       <p className="texto-2">Faltam <strong>{(meuProximo.minimo - minhaPosicao.total_geral).toLocaleString('pt-BR')}</strong> questões para o próximo emblema: {meuProximo.emoji} {meuProximo.rotulo}.</p>
     )}
+
+    <section className="cartao cartao__corpo">
+      <details>
+        <summary>O que são os emblemas?</summary>
+        <p className="texto-2" style={{ marginTop: '0.5rem' }}>Marcam o total de questões que você já respondeu na conta, contando desde a primeira — não dependem de posição no ranking nem de acerto, só de constância. Cada um é desbloqueado uma vez e fica valendo para sempre.</p>
+        <table className="tabela" style={{ marginTop: '0.75rem' }}>
+          <thead><tr><th scope="col">Emblema</th><th scope="col">Nome</th><th scope="col" className="numerico">A partir de</th></tr></thead>
+          <tbody>
+            {CONQUISTAS.map((c) => (
+              <tr key={c.minimo}><td>{c.emoji}</td><td>{c.rotulo}</td><td className="numerico">{c.minimo.toLocaleString('pt-BR')} questões</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </details>
+    </section>
   </article>
 }

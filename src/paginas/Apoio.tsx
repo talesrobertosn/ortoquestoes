@@ -306,7 +306,7 @@ export function DadosLocais() {
           <a href={href('/favoritas')}>{favoritos.length} {favoritos.length === 1 ? 'favorita' : 'favoritas'}</a>
           {conta && <a href={href('/ranking')}>ver ranking</a>}
         </div>
-        {proximaConquistaAlvo && <p className="meta" style={{ marginTop: '0.5rem' }}>Faltam {proximaConquistaAlvo.minimo - respondidas} questões para o emblema {proximaConquistaAlvo.emoji} {proximaConquistaAlvo.rotulo}.</p>}
+        {proximaConquistaAlvo && <p className="meta" style={{ marginTop: '0.5rem' }}>Faltam {proximaConquistaAlvo.minimo - respondidas} questões para o emblema {proximaConquistaAlvo.emoji} {proximaConquistaAlvo.rotulo}. <a href={href('/ranking')}>Ver todos os emblemas</a></p>}
       </section>
 
       {(porConfianca.seguro.total > 0 || porConfianca.duvida.total > 0 || porConfianca.chute.total > 0) && <section className="cartao cartao__corpo">
