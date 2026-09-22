@@ -1,0 +1,23 @@
+{
+  "name": "OrtoQuestões",
+  "short_name": "OrtoQuestões",
+  "description": "Banco de questões de ortopedia e traumatologia para TEOT, TARO e ENARE R4, com comentário em cada alternativa e revisão espaçada.",
+  "lang": "pt-BR",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F1F3F2",
+  "theme_color": "#14655E",
+  "categories": ["education", "medical"],
+  "icons": [
+    { "src": "icone-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icone-mascaravel-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Revisar hoje", "url": "./#/revisao", "icons": [{ "src": "icone-192.png", "sizes": "192x192" }] },
+    { "name": "Treinar", "url": "./#/treinar", "icons": [{ "src": "icone-192.png", "sizes": "192x192" }] }
+  ]
+}

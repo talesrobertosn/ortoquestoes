@@ -33,10 +33,21 @@ FUNDO = (0x14, 0x65, 0x5E)
 # de trabalho no Windows.
 TAMANHOS_ICO = (16, 32, 48)
 
+# Ícone "maskable" do aplicativo instalado: o Android recorta em círculo,
+# gota ou quadrado, então o fundo ocupa tudo e o desenho fica dentro da zona
+# segura central (80%). Mesmo desenho do favicon, reduzido.
+MASCARAVEL = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" fill="#14655E"/>
+  <g fill="none" transform="translate(16 16) scale(0.66) translate(-15 -15)">
+    <circle cx="13.6" cy="13.6" r="7.9" stroke="#FFFFFF" stroke-width="3.4"/>
+    <path d="M13.9 16.4 16.2 14.1 22.9 20.8 24.4 24.4 20.8 22.9Z" fill="#FFFFFF"/>
+  </g>
+</svg>""".encode()
 
-def renderizar(lado: int, opaco: bool = False) -> bytes:
+
+def renderizar(lado: int, opaco: bool = False, svg: bytes | None = None) -> bytes:
     """Rasteriza o SVG em PNG, com ou sem transparência."""
-    documento = pymupdf.open(ORIGEM)
+    documento = pymupdf.open(stream=svg, filetype="svg") if svg else pymupdf.open(ORIGEM)
     pagina = documento[0]
     escala = lado / pagina.rect.width
     pixmap = pagina.get_pixmap(matrix=pymupdf.Matrix(escala, escala), alpha=True)
@@ -114,6 +125,15 @@ def main() -> int:
     apple = renderizar(180, opaco=True)
     (PUBLICO / "apple-touch-icon.png").write_bytes(apple)
     gerados.append((PUBLICO / "apple-touch-icon.png", len(apple)))
+
+    # Ícones do aplicativo instalado (manifest.webmanifest).
+    for nome, dados in (
+        ("icone-192.png", renderizar(192)),
+        ("icone-512.png", renderizar(512)),
+        ("icone-mascaravel-512.png", renderizar(512, opaco=True, svg=MASCARAVEL)),
+    ):
+        (PUBLICO / nome).write_bytes(dados)
+        gerados.append((PUBLICO / nome, len(dados)))
 
     for caminho, tamanho in gerados:
         print(f"{caminho.relative_to(RAIZ)}  {tamanho / 1024:.1f} kB")

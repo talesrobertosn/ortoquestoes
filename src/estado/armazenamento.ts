@@ -3,7 +3,7 @@ import { PREFIXO_ARMAZENAMENTO } from '../config'
 let cacheDisponivel: boolean | null = null
 const memoria = new Map<string, string>()
 let usuario: string | null = null
-const GLOBAIS = new Set(['tema', 'etiquetas'])
+const GLOBAIS = new Set(['tema', 'etiquetas', 'instalar:dispensado'])
 /**
  * Visitantes não persistem progresso entre dispositivos, mas uma sessão de
  * questões em andamento é frágil demais para viver só na memória do processo
@@ -24,7 +24,7 @@ export function definirUsuarioLocal(id: string | null) {
         const apagar: string[] = []
         for (let i = 0; i < window.localStorage.length; i++) {
           const chave = window.localStorage.key(i)
-          if (chave?.startsWith(PREFIXO_ARMAZENAMENTO) && !chave.startsWith(`${PREFIXO_ARMAZENAMENTO}conta:`) && ![`${PREFIXO_ARMAZENAMENTO}tema`, `${PREFIXO_ARMAZENAMENTO}etiquetas`].includes(chave)) apagar.push(chave)
+          if (chave?.startsWith(PREFIXO_ARMAZENAMENTO) && !chave.startsWith(`${PREFIXO_ARMAZENAMENTO}conta:`) && !GLOBAIS.has(chave.slice(PREFIXO_ARMAZENAMENTO.length))) apagar.push(chave)
         }
         apagar.forEach(chave => window.localStorage.removeItem(chave))
       }

@@ -6,6 +6,7 @@ import './estilos/tokens.css'
 import './estilos/base.css'
 import './estilos/premium.css'
 import './estilos/impressao.css'
+import { registrarServiceWorker } from './util/instalacao'
 
 const raiz = document.getElementById('raiz')
 if (raiz) {
@@ -15,3 +16,5 @@ if (raiz) {
     </StrictMode>,
   )
 }
+
+registrarServiceWorker()

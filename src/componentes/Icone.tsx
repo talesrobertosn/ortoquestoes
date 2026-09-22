@@ -24,6 +24,8 @@ export const CAMINHOS: Record<string, string> = {
   teclado:
     'M3 6.5h18v11H3zM6.5 10h.1M10 10h.1M13.5 10h.1M17 10h.1M6.5 14h11',
   reiniciar: 'M20 12a8 8 0 1 1-2.6-5.9M20 4v4.5h-4.5',
+  celular: 'M7 2.5h10v19H7zM10.5 18.5h3',
+  compartilhar: 'M12 3.5v11M8 7.5l4-4 4 4M7 10.5H5.5v10h13v-10H17',
   baixar: 'M12 3.5v11M7.5 10.5 12 15l4.5-4.5M4.5 19.5h15',
   interrogacao: 'M9 9a3 3 0 1 1 4 2.8c-.8.3-1 .9-1 1.7v.8M12 17.6v.2',
   livro: 'M12 6.3C10 4.7 6.6 4.2 3.5 4.5V18c3.1-.3 6.5.2 8.5 1.7 2-1.5 5.4-2 8.5-1.7V4.5c-3.1-.3-6.5.2-8.5 1.8zM12 6.3v13.4',

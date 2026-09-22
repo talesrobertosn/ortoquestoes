@@ -8,6 +8,7 @@ import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { CartaoStreak } from '../componentes/CartaoStreak'
+import { InstalarApp } from '../componentes/InstalarApp'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
@@ -325,6 +326,8 @@ export function Inicio() {
                 })}
             </ul>
           </section>
+
+          <InstalarApp />
 
           <section className="cartao cartao__corpo cartao-instagram">
             <span className="cartao-instagram__icone"><Icone nome="instagram" tamanho={26} /></span>
