@@ -6,7 +6,7 @@ from zoneinfo import ZoneInfo
 RAIZ = Path(__file__).resolve().parents[1]
 SQL = (RAIZ / "supabase/migrations/202609190001_paywall_planos.sql").read_text()
 SUPABASE_CLIENTE = (RAIZ / "src/servicos/supabase.ts").read_text()
-PAGINA_ENTRAR = (RAIZ / "src/paginas/Entrar.tsx").read_text()
+PAGINA_ENTRAR = (RAIZ / "src/paginas/Conta.tsx").read_text()
 WORKFLOW_PUBLICACAO = (RAIZ / ".github/workflows/publicar.yml").read_text()
 CRIAR_CHECKOUT = (RAIZ / "supabase/functions/criar-checkout/index.ts").read_text()
 WEBHOOK_MERCADO_PAGO = (RAIZ / "supabase/functions/webhook-mercado-pago/index.ts").read_text()
@@ -42,12 +42,13 @@ for trecho in (
 ):
     assert trecho in SUPABASE_CLIENTE, f"Contrato de senha ausente: {trecho}"
 
-for trecho in ("type=\"password\"", "Entrar com senha", "Enviar link mágico"):
+# A tela de entrada (/entrar e /conta) usa o cliente de conta do Supabase.
+for trecho in ("'password'", "signInWithPassword", "Confirmar senha", "senha !== confirmacao", "resetPasswordForEmail"):
     assert trecho in PAGINA_ENTRAR, f"Interface de senha ausente: {trecho}"
 
 assert "localStorage" not in PAGINA_ENTRAR
 assert "console." not in PAGINA_ENTRAR
-assert PAGINA_ENTRAR.count('type="submit"') == 1
+assert PAGINA_ENTRAR.count("acesso__enviar") == 1
 
 for trecho in (
     "MERCADO_PAGO_PLANO_MENSAL_ID",

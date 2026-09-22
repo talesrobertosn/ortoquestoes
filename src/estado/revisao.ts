@@ -11,8 +11,8 @@ export interface RegistroQuestao {
   historico?: Array<{ em: number; correta: boolean | null; confianca: 'seguro' | 'duvida' | 'chute' }>
 }
 /**
- * Toda escada tem quatro degraus: quatro acertos seguidos e a questão sai da
- * fila. O que muda é o espaçamento. Chute volta cedo, porque acertar sem saber
+ * Toda escada tem quatro degraus: a questão volta em cada um deles e sai da
+ * fila quando é acertada também na revisão do último. O que muda é o espaçamento. Chute volta cedo, porque acertar sem saber
  * por quê não fixa nada; dúvida espaça mais; certeza espaça bastante, para a
  * fila não crescer além do que dá para manter ao longo de meses de estudo.
  */
@@ -23,7 +23,7 @@ export const INTERVALOS: Record<'chute' | 'duvida' | 'seguro', number[]> = {
 }
 export function dominada(registro?: Partial<RegistroQuestao>): boolean {
   if (!registro || registro.c !== true) return false
-  return (registro.sequencia ?? 0) >= INTERVALOS[registro.confianca ?? 'seguro'].length
+  return (registro.sequencia ?? 0) > INTERVALOS[registro.confianca ?? 'seguro'].length
 }
 export function revisarHoje(registro?: Partial<RegistroQuestao>, agora = Date.now()): boolean {
   if (!registro || registro.c === null || dominada(registro)) return false
@@ -41,6 +41,6 @@ export function proximoRegistro(anterior: RegistroQuestao | undefined, correta: 
     sequencia,
     confianca,
     historico: [...(anterior?.historico ?? []), { em: agora, correta, confianca }].slice(-8),
-    proximaRevisao: correta === null || sequencia >= intervalos.length ? null : correta === false ? agora : agora + intervalos[sequencia - 1] * 86400000,
+    proximaRevisao: correta === null || sequencia > intervalos.length ? null : correta === false ? agora : agora + intervalos[sequencia - 1] * 86400000,
   }
 }

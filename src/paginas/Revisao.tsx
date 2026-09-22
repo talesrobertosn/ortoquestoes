@@ -79,7 +79,7 @@ export function Revisao() {
     <section className="cartao cartao__corpo rv-regra">
       <div className="rv-regra__cabeca">
         <h2>Quando cada questão volta</h2>
-        <p>Depende de como você respondeu. Quatro acertos seguidos e ela sai da fila.</p>
+        <p>Depende de como você respondeu. Acertou também na última revisão? Ela sai da fila.</p>
       </div>
       <div className="rv-escadas">{ESCADAS.map(e => <div key={e.rotulo} className={`rv-escada rv-escada--${e.nivel}`}>
         <div className="rv-escada__topo">
