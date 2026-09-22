@@ -10,6 +10,7 @@ import { registrarResposta, usarFavoritos } from '../estado/sessao'
 import { usarLimiteDiario } from '../estado/limiteDiario'
 import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 import { href } from '../util/rotas'
+import { gerarId } from '../util/id'
 
 /** Link direto para uma questão: responde ali mesmo, sem abrir sessão. */
 export function QuestaoDireta({ id }: { id: string }) {
@@ -76,8 +77,8 @@ export function QuestaoDireta({ id }: { id: string }) {
           if (!conta) { definirPortaoContaAberto(true); return }
           if (autorizando.current) return
           autorizando.current = true
-          chaveResposta.current ??= crypto.randomUUID()
           try {
+            chaveResposta.current ??= gerarId()
             const permissao = await autorizar(questao.id, chaveResposta.current)
             if (!permissao.permitido) { definirLimiteAberto(true); return }
             definirResposta({ escolhida, correta, segundos, confianca })

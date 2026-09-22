@@ -40,10 +40,13 @@ export function usarLimiteDiario() {
     if (!LIMITES_HABILITADOS) return { permitido: true } as EstadoLimite
     definirValidando(true)
     try {
-      const resposta = await chamarRpc<Array<Record<string, unknown>>>('autorizar_resposta', {
+      // Prazo total: nenhuma combinação de sessão lenta e rede lenta pode
+      // deixar o botão de responder esperando para sempre.
+      const prazo = new Promise<never>((_, rejeitar) => setTimeout(() => rejeitar(new Error('A validação demorou demais.')), 12_000))
+      const resposta = await Promise.race([chamarRpc<Array<Record<string, unknown>>>('autorizar_resposta', {
         p_chave_idempotencia: chaveIdempotencia,
         p_id_questao: idQuestao,
-      })
+      }), prazo])
       const r = resposta[0]
       const normalizado: EstadoLimite = {
         permitido: Boolean(r.permitido), paywallAtivo: Boolean(r.paywall_ativo), ilimitado: Boolean(r.ilimitado),

@@ -87,12 +87,18 @@ export function CartaoQuestao({
   )
 
   const [enviando, definirEnviando] = useState(false)
+  const [erroEnvio, definirErroEnvio] = useState('')
   async function confirmar(letra: Letra) {
     if (travada || enviando) return
+    definirErroEnvio('')
     const correta = questao.anulada || !questao.gabarito ? null : letra === questao.gabarito
     const segundos = Math.max(1, Math.round((Date.now() - inicio.current) / 1000))
     definirEnviando(true)
     try { await aoResponder(letra, correta, segundos, confianca) }
+    catch (erro) {
+      // Nunca falhar em silêncio: o que der errado aparece embaixo do botão.
+      definirErroEnvio(erro instanceof Error ? `${erro.name}: ${erro.message}` : String(erro))
+    }
     finally { definirEnviando(false) }
   }
 
@@ -445,6 +451,7 @@ export function CartaoQuestao({
             >
               {enviando ? 'Registrando…' : escolhida ? `Responder ${escolhida}` : 'Escolha uma alternativa'}
             </button>
+            {erroEnvio && <p className="aviso-formulario aviso-formulario--erro" role="alert">Não foi possível registrar a resposta. Tente de novo; se continuar, mande um print desta mensagem. <small>({erroEnvio})</small></p>}
             {escolhida && <span className="campo__auxilio acao-responder__dica">Acerto com dúvida ou chute volta antes para revisão.</span>}
             <span className="meta so-teclado">
               Teclas <kbd>1</kbd>–<kbd>{letrasDisponiveis.length}</kbd> selecionam,{' '}

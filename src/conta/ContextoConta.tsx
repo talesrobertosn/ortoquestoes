@@ -5,6 +5,7 @@ import { supabase, contasDisponiveis } from './supabase'
 import { iniciarSincronizacao, type StatusSync } from './sincronizacao'
 import { estadoVazio, type Documento } from './modeloSync'
 import { navegar } from '../util/rotas'
+import { gerarId } from '../util/id'
 
 const STATUS_INICIAL: StatusSync = { estado: 'sincronizando', pendentes: 0, conflitos: [], pronto: false }
 interface ContaContexto {
@@ -62,7 +63,7 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
     reiniciarProgresso: () => {
       if (!supabase || !sessao) return
       sync.current?.parar()
-      gravar('reinicio:pendente', crypto.randomUUID(), 'nuvem')
+      gravar('reinicio:pendente', gerarId(), 'nuvem')
       gravar('sincronia:v1', estadoVazio(), 'nuvem')
       limparTudo('nuvem')
       sync.current = iniciarSincronizacao(supabase, sessao.user.id, definirStatus)

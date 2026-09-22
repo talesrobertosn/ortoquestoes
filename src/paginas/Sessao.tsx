@@ -15,6 +15,7 @@ import { usarFavoritos, usarSessao } from '../estado/sessao'
 import { usarLimiteDiario } from '../estado/limiteDiario'
 import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 import { href, navegar } from '../util/rotas'
+import { gerarId } from '../util/id'
 
 export function Sessao() {
   const { indice } = usarIndice()
@@ -247,10 +248,10 @@ export function Sessao() {
             if (!conta) { definirPortaoContaAberto(true); return }
             if (autorizando.current) return
             autorizando.current = true
-            const chaveMapa = `${sessao.id}:${questaoAtual.id}`
-            const chave = chavesResposta.current.get(chaveMapa) ?? crypto.randomUUID()
-            chavesResposta.current.set(chaveMapa, chave)
             try {
+              const chaveMapa = `${sessao.id}:${questaoAtual.id}`
+              const chave = chavesResposta.current.get(chaveMapa) ?? gerarId()
+              chavesResposta.current.set(chaveMapa, chave)
               const permissao = await autorizar(questaoAtual.id, chave)
               if (!permissao.permitido) { definirLimiteAberto(true); return }
               responder(questaoAtual.id, letra, correta, segundos, confianca)

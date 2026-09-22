@@ -1,3 +1,4 @@
+import { gerarId } from '../util/id'
 /** Documentos por questão: alterações independentes nunca substituem o progresso inteiro. */
 export const TIPOS_SYNC = ['respondidas', 'favoritos', 'notas', 'historico'] as const
 export type TipoSync = typeof TIPOS_SYNC[number]
@@ -41,7 +42,7 @@ export function registrarAlteracoes(estado: EstadoSync, tipo: TipoSync, antes: u
     const valor = b[item] ?? null
     if (JSON.stringify(a[item] ?? null) === JSON.stringify(valor)) continue
     const id = identificador(tipo, item)
-    estado.pendentes[id] = { tipo, item, valor, base: estado.pendentes[id]?.base ?? estado.versoes[id] ?? 0, operacao: crypto.randomUUID() }
+    estado.pendentes[id] = { tipo, item, valor, base: estado.pendentes[id]?.base ?? estado.versoes[id] ?? 0, operacao: gerarId() }
   }
 }
 /** Uma resposta à rede só confirma a operação enviada; edições posteriores continuam pendentes. */

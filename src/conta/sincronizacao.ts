@@ -1,6 +1,7 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { EVENTO_DADOS, gravar, ler, limparTudo, usuarioLocal, type MudancaDados } from '../estado/armazenamento'
 import { deItens, ehTipoSync, estadoVazio, identificador, itens, receberDocumento, registrarAlteracoes, TIPOS_SYNC, type Alteracao, type Documento, type EstadoSync, type TipoSync } from './modeloSync'
+import { gerarId } from '../util/id'
 
 export interface StatusSync { estado: 'sincronizando' | 'salvo' | 'offline' | 'erro' | 'conflito'; pendentes: number; conflitos: Documento[]; pronto: boolean }
 /** Somente uma fila por conta/aba. Operações são idempotentes e conflitos nunca sobrescrevem dados silenciosamente. */
@@ -48,7 +49,7 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
       for (const [item, valor] of Object.entries(locais)) {
         const id = identificador(tipo, item)
         if (!conhecidos.has(id) && !estado.versoes[id] && !estado.pendentes[id]) {
-          estado.pendentes[id] = { tipo, item, valor, base: 0, operacao: crypto.randomUUID() }
+          estado.pendentes[id] = { tipo, item, valor, base: 0, operacao: gerarId() }
         }
       }
     }
@@ -165,7 +166,7 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
       if (!valido() || !estado.conflitos[key]) return
       if (manterLocal && estado.pendentes[key]) {
         estado.pendentes[key].base = doc.versao
-        estado.pendentes[key].operacao = crypto.randomUUID()
+        estado.pendentes[key].operacao = gerarId()
       } else {
         delete estado.pendentes[key]
         aplicar([doc])
