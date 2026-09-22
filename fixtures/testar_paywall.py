@@ -50,21 +50,27 @@ assert "console." not in PAGINA_ENTRAR
 assert PAGINA_ENTRAR.count('type="submit"') == 1
 
 for trecho in (
-    "MERCADO_PAGO_PLANO_MENSAL_ID",
-    "MERCADO_PAGO_PLANO_SEMESTRAL_ID",
-    "MERCADO_PAGO_PLANO_ANUAL_ID",
-    "preapproval_plan_id: preapprovalPlanId",
+    "reason: planos[plano].reason",
+    "frequency: planos[plano].frequency",
+    "frequency_type: 'months'",
+    "transaction_amount: planos[plano].transaction_amount",
+    "currency_id: 'BRL'",
     "external_reference: usuario.id",
-    "payer_email: usuario.email",
+    "ambiente === 'teste' ? Deno.env.get('MERCADO_PAGO_PAYER_EMAIL_TESTE') : usuario.email",
     "X-Idempotency-Key",
     "checkout_sandbox_requer_conta_teste",
     "MERCADO_PAGO_AMBIENTE",
 ):
     assert trecho in CRIAR_CHECKOUT, f"Contrato de checkout ausente: {trecho}"
 
+assert "MERCADO_PAGO_SANDBOX_PAYER_EMAIL" not in CRIAR_CHECKOUT
+assert "console." not in CRIAR_CHECKOUT
+assert "external_reference: usuario.id" in CRIAR_CHECKOUT
+assert "!payerEmail" in CRIAR_CHECKOUT
+
 for trecho in (
-    "preapproval_plan_desconhecido",
-    "preapproval.preapproval_plan_id",
+    "planoDaRecorrencia(preapproval.auto_recurring)",
+    "recorrencia_desconhecida",
     "subscription_authorized_payment",
     "subscription_preapproval",
     "status === 'approved'",
@@ -76,12 +82,10 @@ for trecho in (
 ):
     assert trecho in WEBHOOK_MERCADO_PAGO, f"Contrato de webhook ausente: {trecho}"
 
-for trecho in ("MERCADO_PAGO_PLANO_MENSAL_ID", "MERCADO_PAGO_PLANO_SEMESTRAL_ID", "MERCADO_PAGO_PLANO_ANUAL_ID"):
-    assert trecho in ENV_EXEMPLO, f"Variável privada de plano ausente: {trecho}"
+assert "IDs de plano no cliente" in ENV_EXEMPLO
 
 for fonte in (CRIAR_CHECKOUT, WEBHOOK_MERCADO_PAGO, ENV_EXEMPLO):
-    assert "preapproval_plan_id: '" not in fonte
-    assert 'preapproval_plan_id: "' not in fonte
+    assert "preapproval_plan_id" not in fonte
 
 for trecho in (
     "VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}",
