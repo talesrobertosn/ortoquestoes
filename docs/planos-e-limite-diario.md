@@ -35,10 +35,8 @@ supabase secrets set \
   APP_ORIGIN=https://ortoquestoes.com.br \
   MERCADO_PAGO_ACCESS_TOKEN=... \
   MERCADO_PAGO_AMBIENTE=teste \
+  MERCADO_PAGO_PAYER_EMAIL_TESTE=... \
   MERCADO_PAGO_WEBHOOK_SECRET=... \
-  MERCADO_PAGO_PLANO_MENSAL_ID=... \
-  MERCADO_PAGO_PLANO_SEMESTRAL_ID=... \
-  MERCADO_PAGO_PLANO_ANUAL_ID=... \
   PAGAMENTOS_HABILITADOS=false \
   MERCADO_PAGO_INTEGRACAO_VALIDADA=false
 ```
@@ -47,11 +45,11 @@ supabase secrets set \
 
 ## Mercado Pago: configuração privada
 
-`criar-checkout` escolhe o `preapproval_plan_id` exclusivamente pelas variáveis privadas `MERCADO_PAGO_PLANO_MENSAL_ID`, `MERCADO_PAGO_PLANO_SEMESTRAL_ID` e `MERCADO_PAGO_PLANO_ANUAL_ID`. Com `MERCADO_PAGO_AMBIENTE=teste`, a Function libera checkout somente para uma `contas_teste` ativa. IDs de plano, Access Token e segredo de webhook nunca pertencem ao frontend, GitHub Variables, `.env.example` com valor real ou repositório.
+`criar-checkout` cria uma preapproval sem plano associado. O plano é definido no servidor pelo par validado de valor e periodicidade: mensal (R$ 39,90/1 mês), semestral (R$ 179,90/6 meses) ou anual (R$ 239,90/12 meses), sempre em BRL. Com `MERCADO_PAGO_AMBIENTE=teste`, a Function libera checkout somente para uma `contas_teste` ativa. Access Token e segredo de webhook nunca pertencem ao frontend, GitHub Variables, `.env.example` com valor real ou repositório.
 
-Com Access Token de teste (prefixo `TEST-`), a função só abre checkout para um usuário autenticado que tenha uma linha ativa em `contas_teste`. A preapproval leva o UUID do Supabase em `external_reference`, o e-mail autenticado em `payer_email`, `back_url` de `APP_ORIGIN` e uma chave de idempotência. Ela não infere o plano pela frequência.
+Com Access Token de teste, a função só abre checkout para um usuário autenticado que tenha uma linha ativa em `contas_teste` e exige o secret privado `MERCADO_PAGO_PAYER_EMAIL_TESTE` como `payer_email`. Em produção, usa o e-mail autenticado. A preapproval leva o UUID do Supabase em `external_reference`, `back_url` de `APP_ORIGIN`, uma chave de idempotência e `auto_recurring` com `frequency_type=months`, valor e moeda BRL. A função não devolve nem registra o e-mail sandbox e não recebe ou armazena dados de cartão.
 
-O webhook associa uma assinatura pelo `preapproval_plan_id` devolvido pelo Mercado Pago. `approved` e `authorized` ativam acesso; `pending` e `in_process` ficam pendentes, sem redução de acesso; `rejected`, `cancelled`, `charged_back`, `refunded` e vencimento devolvem a conta ao gratuito. Eventos `subscription_preapproval_plan` e outros que não mudam acesso são registrados e ignorados com segurança.
+O webhook identifica a assinatura pelo par validado de frequência mensal e valor retornado em `auto_recurring`; não aceita periodicidade, moeda ou preço inesperados. `approved` e `authorized` ativam acesso; `pending` e `in_process` ficam pendentes, sem redução de acesso; `rejected`, `cancelled`, `charged_back`, `refunded` e vencimento devolvem a conta ao gratuito. Eventos `subscription_preapproval_plan` e outros que não mudam acesso são registrados e ignorados com segurança.
 
 ## Mercado Pago: pendências obrigatórias
 

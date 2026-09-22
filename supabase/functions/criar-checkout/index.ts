@@ -1,9 +1,9 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 
 const planos = {
-  mensal: 'MERCADO_PAGO_PLANO_MENSAL_ID',
-  semestral: 'MERCADO_PAGO_PLANO_SEMESTRAL_ID',
-  anual: 'MERCADO_PAGO_PLANO_ANUAL_ID',
+  mensal: { reason: 'OrtoQuestoes Mensal', frequency: 1, transaction_amount: 39.90 },
+  semestral: { reason: 'OrtoQuestoes Semestral', frequency: 6, transaction_amount: 179.90 },
+  anual: { reason: 'OrtoQuestoes Anual', frequency: 12, transaction_amount: 239.90 },
 } as const
 
 async function contaTesteAtiva(idUsuario: string) {
@@ -13,22 +13,23 @@ async function contaTesteAtiva(idUsuario: string) {
 }
 
 Deno.serve(async (req) => {
-  if (req.method === 'OPTIONS') return new Response(null, { headers: cors })
-  if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405)
+  if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })
+  if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
     const usuario = await usuarioDoPedido(req)
     const { plano } = await req.json() as { plano?: keyof typeof planos }
-    if (!plano || !planos[plano]) return json({ erro: 'plano_invalido' }, 400)
+    if (!plano || !planos[plano]) return json({ erro: 'plano_invalido' }, 400, req)
     if (Deno.env.get('PAGAMENTOS_HABILITADOS') !== 'true' || Deno.env.get('MERCADO_PAGO_INTEGRACAO_VALIDADA') !== 'true') {
-      return json({ erro: 'Os pagamentos ainda não estão disponíveis.' }, 503)
+      return json({ erro: 'Os pagamentos ainda não estão disponíveis.' }, 503, req)
     }
 
     const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')
     const origem = Deno.env.get('APP_ORIGIN')
     const ambiente = Deno.env.get('MERCADO_PAGO_AMBIENTE')
-    const preapprovalPlanId = Deno.env.get(planos[plano])
-    if (!token || !origem || !preapprovalPlanId || !usuario.email) return json({ erro: 'checkout_nao_configurado' }, 503)
-    if (ambiente === 'teste' && !await contaTesteAtiva(usuario.id)) return json({ erro: 'checkout_sandbox_requer_conta_teste' }, 403)
+    if (ambiente !== 'teste' && ambiente !== 'producao') return json({ erro: 'checkout_nao_configurado' }, 503, req)
+    const payerEmail = ambiente === 'teste' ? Deno.env.get('MERCADO_PAGO_PAYER_EMAIL_TESTE') : usuario.email
+    if (!token || !origem || !payerEmail) return json({ erro: 'checkout_nao_configurado' }, 503, req)
+    if (ambiente === 'teste' && !await contaTesteAtiva(usuario.id)) return json({ erro: 'checkout_sandbox_requer_conta_teste' }, 403, req)
 
     const resposta = await fetch('https://api.mercadopago.com/preapproval', {
       method: 'POST',
@@ -38,17 +39,23 @@ Deno.serve(async (req) => {
         'X-Idempotency-Key': crypto.randomUUID(),
       },
       body: JSON.stringify({
-        preapproval_plan_id: preapprovalPlanId,
+        reason: planos[plano].reason,
         external_reference: usuario.id,
-        payer_email: usuario.email,
+        payer_email: payerEmail,
         back_url: `${origem.replace(/\/$/, '')}/#/assinatura`,
         status: 'pending',
+        auto_recurring: {
+          frequency: planos[plano].frequency,
+          frequency_type: 'months',
+          transaction_amount: planos[plano].transaction_amount,
+          currency_id: 'BRL',
+        },
       }),
     })
     const dados = await resposta.json()
-    if (!resposta.ok || !dados.init_point) return json({ erro: 'mercado_pago_recusou_checkout' }, 502)
-    return json({ url: dados.init_point })
+    if (!resposta.ok || !dados.init_point) return json({ erro: 'mercado_pago_recusou_checkout' }, 502, req)
+    return json({ url: dados.init_point }, 200, req)
   } catch (erro) {
-    return json({ erro: erro instanceof Error ? erro.message : 'erro_interno' }, 401)
+    return json({ erro: erro instanceof Error ? erro.message : 'erro_interno' }, 401, req)
   }
 })
