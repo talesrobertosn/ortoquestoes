@@ -10,6 +10,7 @@ import { Resumo } from './paginas/Resumo'
 import { QuestaoDireta } from './paginas/QuestaoDireta'
 import { Contato, DadosLocais, NaoEncontrada, Sobre } from './paginas/Apoio'
 import { Favoritas } from './paginas/Favoritas'
+import { CadernoErros } from './paginas/CadernoErros'
 import { Progresso } from './paginas/Progresso'
 import { Revisao } from './paginas/Revisao'
 import { Ranking } from './paginas/Ranking'
@@ -29,6 +30,7 @@ const TITULOS: Record<string, string> = {
   '/conta': 'Minha conta — OrtoQuestões',
   '/dados': 'Seu desempenho — OrtoQuestões',
   '/favoritas': 'Suas favoritas — OrtoQuestões',
+  '/erros': 'Caderno de erros — OrtoQuestões',
   '/progresso': 'Progresso dos comentários — OrtoQuestões',
   '/revisao': 'Sua revisão — OrtoQuestões',
   '/ranking': 'Ranking — OrtoQuestões',
@@ -88,6 +90,9 @@ export function App() {
       break
     case 'favoritas':
       pagina = <Favoritas />
+      break
+    case 'erros':
+      pagina = <CadernoErros />
       break
     case 'progresso':
       pagina = <Progresso />

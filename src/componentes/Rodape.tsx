@@ -6,6 +6,7 @@ import { Icone } from './Icone'
 const ESTUDAR = [
   ['/treinar', 'Treinar'],
   ['/revisao', 'Revisão'],
+  ['/erros', 'Caderno de erros'],
   ['/favoritas', 'Favoritas'],
   ['/dados', 'Seu desempenho'],
   ['/ranking', 'Ranking'],

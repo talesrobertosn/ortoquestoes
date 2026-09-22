@@ -65,7 +65,7 @@ export function usarSessao() {
       const salvo = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
       // O modo simulado também registra cada resposta imediatamente. A prova
       // pode esconder o gabarito, mas nunca deve esconder o salvamento.
-      if (salvo && !salvo.respostas[id]) registrarRespondida(id, correta, confianca)
+      if (salvo && !salvo.respostas[id]) registrarRespondida(id, correta, confianca, escolhida)
       definirSessao((atual) => {
         if (!atual) return atual
         const resposta: Resposta = { escolhida, correta, segundos, confianca }
@@ -136,13 +136,13 @@ export function usarSessao() {
  * A confiança não tem valor padrão: ela decide quando a questão volta, e um
  * padrão silencioso já fez toda resposta ser contada como "tinha certeza".
  */
-export function registrarResposta(id: string, correta: boolean | null, confianca: 'seguro' | 'duvida' | 'chute') {
-  registrarRespondida(id, correta, confianca)
+export function registrarResposta(id: string, correta: boolean | null, confianca: 'seguro' | 'duvida' | 'chute', escolhida?: Letra) {
+  registrarRespondida(id, correta, confianca, escolhida)
 }
 
-function registrarRespondida(id: string, correta: boolean | null, confianca: 'seguro' | 'duvida' | 'chute') {
+function registrarRespondida(id: string, correta: boolean | null, confianca: 'seguro' | 'duvida' | 'chute', escolhida?: Letra) {
   const mapa = ler<Record<string, RegistroQuestao>>(CHAVE_RESPONDIDAS, {})
-  mapa[id] = proximoRegistro(mapa[id], correta, Date.now(), confianca)
+  mapa[id] = proximoRegistro(mapa[id], correta, Date.now(), confianca, escolhida)
   gravar(CHAVE_RESPONDIDAS, mapa)
 }
 

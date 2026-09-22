@@ -8,6 +8,8 @@ export interface RegistroQuestao {
   sequencia?: number
   proximaRevisao?: number | null
   confianca?: 'seguro' | 'duvida' | 'chute'
+  /** Letra marcada na última resposta (registros antigos não têm). Usada pelo caderno de erros. */
+  m?: string
   historico?: Array<{ em: number; correta: boolean | null; confianca: 'seguro' | 'duvida' | 'chute' }>
 }
 /**
@@ -30,7 +32,7 @@ export function revisarHoje(registro?: Partial<RegistroQuestao>, agora = Date.no
   const proxima = registro.proximaRevisao === undefined && registro.q !== undefined ? registro.q + 3 * 86400000 : registro.proximaRevisao
   return registro.c === false || (proxima != null && proxima <= agora)
 }
-export function proximoRegistro(anterior: RegistroQuestao | undefined, correta: boolean | null, agora = Date.now(), confianca: 'seguro' | 'duvida' | 'chute' = 'seguro'): RegistroQuestao {
+export function proximoRegistro(anterior: RegistroQuestao | undefined, correta: boolean | null, agora = Date.now(), confianca: 'seguro' | 'duvida' | 'chute' = 'seguro', marcada?: string): RegistroQuestao {
   const sequencia = correta === true ? (anterior?.sequencia ?? (anterior?.c === true ? 1 : 0)) + 1 : 0
   const intervalos = INTERVALOS[confianca]
   return {
@@ -40,6 +42,7 @@ export function proximoRegistro(anterior: RegistroQuestao | undefined, correta: 
     erros: (anterior?.erros ?? (anterior?.c === false ? 1 : 0)) + Number(correta === false),
     sequencia,
     confianca,
+    ...(marcada ? { m: marcada } : {}),
     historico: [...(anterior?.historico ?? []), { em: agora, correta, confianca }].slice(-8),
     proximaRevisao: correta === null || sequencia > intervalos.length ? null : correta === false ? agora : agora + intervalos[sequencia - 1] * 86400000,
   }

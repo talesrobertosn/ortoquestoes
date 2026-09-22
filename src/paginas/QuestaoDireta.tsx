@@ -82,7 +82,7 @@ export function QuestaoDireta({ id }: { id: string }) {
             const permissao = await autorizar(questao.id, chaveResposta.current)
             if (!permissao.permitido) { definirLimiteAberto(true); return }
             definirResposta({ escolhida, correta, segundos, confianca })
-            registrarResposta(questao.id, correta, confianca)
+            registrarResposta(questao.id, correta, confianca, escolhida)
           } finally { autorizando.current = false }
         }}
         aoRiscar={(letra) =>

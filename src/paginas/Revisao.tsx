@@ -91,6 +91,7 @@ export function Revisao() {
       </div>)}</div>
       <p className="rv-regra__erro"><Icone nome="reiniciar" tamanho={16} /> <span><strong>Errou?</strong> Ela volta hoje e o ciclo recomeça.</span></p>
       {incertas > 0 && <a className="rv-regra__link" href="#/treinar?situacao=incertas">Refazer as {incertas} que respondi com dúvida ou chute <Icone nome="direita" tamanho={16} /></a>}
+      <a className="rv-regra__link" href="#/erros">Abrir meu caderno de erros <Icone nome="direita" tamanho={16} /></a>
     </section>
     <section className="cartao cartao__corpo">
       <div className="entre">

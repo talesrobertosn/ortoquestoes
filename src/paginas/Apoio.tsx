@@ -368,7 +368,7 @@ export function DadosLocais() {
         <dl className="dp-heroi__numeros">
           <div><dt>{periodo.tipo === 'tudo' ? 'Respondidas' : 'Questões no período'}</dt><dd>{(periodo.tipo === 'tudo' ? respondidas : questoesNoPeriodo).toLocaleString('pt-BR')}{minhaConquista && <span className="medalha-inline"><Medalha conquista={minhaConquista} tamanho={20} titulo={`Emblema ${minhaConquista.rotulo}`} /></span>}</dd></div>
           <div><dt>Sessões</dt><dd>{periodo.tipo === 'tudo' ? historico.length : sessoesNoPeriodo}</dd></div>
-          <div><dt>{periodo.tipo === 'tudo' ? 'Erros acumulados' : 'Erros no período'}</dt><dd>{errosTotais}</dd></div>
+          <div><dt>{periodo.tipo === 'tudo' ? 'Erros acumulados' : 'Erros no período'}</dt><dd><a href={href('/erros')} title="Abrir o caderno de erros">{errosTotais}</a></dd></div>
           <div><dt>Favoritas</dt><dd><a href={href('/favoritas')}>{favoritos.length}</a></dd></div>
         </dl>
       </section>
