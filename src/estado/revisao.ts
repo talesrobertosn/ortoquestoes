@@ -11,17 +11,15 @@ export interface RegistroQuestao {
   historico?: Array<{ em: number; correta: boolean | null; confianca: 'seguro' | 'duvida' | 'chute' }>
 }
 /**
- * Chute e dúvida saem da fila com quatro acertos espaçados — acertar sem
- * saber por quê não sustenta um intervalo muito maior que isso. Certeza
- * ganha uma cauda bem mais longa (até um ano): quem já domina o conceito
- * ainda se beneficia de revisões raras e bem espaçadas, e como o estudo
- * aqui dura meses, faz sentido reencontrar a questão daqui a um tempo em
- * vez de considerá-la resolvida para sempre depois de só quatro acertos.
+ * Toda escada tem quatro degraus: quatro acertos seguidos e a questão sai da
+ * fila. O que muda é o espaçamento. Chute volta cedo, porque acertar sem saber
+ * por quê não fixa nada; dúvida espaça mais; certeza espaça bastante, para a
+ * fila não crescer além do que dá para manter ao longo de meses de estudo.
  */
 export const INTERVALOS: Record<'chute' | 'duvida' | 'seguro', number[]> = {
   chute: [1, 3, 7, 14],
-  duvida: [2, 5, 10, 21],
-  seguro: [3, 7, 14, 30, 90, 180, 270, 365],
+  duvida: [3, 7, 21, 45],
+  seguro: [10, 30, 90, 180],
 }
 export function dominada(registro?: Partial<RegistroQuestao>): boolean {
   if (!registro || registro.c !== true) return false

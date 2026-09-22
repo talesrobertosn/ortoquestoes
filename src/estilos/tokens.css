@@ -51,6 +51,23 @@
   --sombra: 0 1px 2px rgba(18, 24, 26, 0.06);
   --borda: 1px solid var(--traco);
   --toque: 44px; /* alvo mínimo de toque */
+  --raio-grande: 18px;
+  --sombra-media: 0 1px 2px rgba(18, 24, 26, 0.04), 0 10px 28px rgba(18, 24, 26, 0.07);
+
+  /* Faixas de destaque (heróis): verdete profundo com texto claro */
+  --heroi: linear-gradient(135deg, #0b3a35 0%, #14655e 58%, #1d8074 100%);
+  --sobre-heroi: #ffffff;
+  --sobre-heroi-2: rgba(255, 255, 255, 0.8);
+  --heroi-vidro: rgba(255, 255, 255, 0.1);
+  --heroi-traco: rgba(255, 255, 255, 0.2);
+
+  /* Metais dos emblemas */
+  --ouro: #a87a1f;
+  --ouro-veu: #f8efd9;
+  --prata: #6f7d82;
+  --prata-veu: #eef1f2;
+  --bronze: #9a5b2e;
+  --bronze-veu: #f5e9df;
 
   color-scheme: light;
 }
@@ -76,6 +93,20 @@
 
   --sobre-destaque: #0f1413;
   --sombra: none;
+  --sombra-media: 0 0 0 1px var(--traco);
+
+  --heroi: linear-gradient(135deg, #0d2623 0%, #143b37 58%, #1a4a44 100%);
+  --sobre-heroi: #eef3f1;
+  --sobre-heroi-2: rgba(238, 243, 241, 0.75);
+  --heroi-vidro: rgba(255, 255, 255, 0.06);
+  --heroi-traco: rgba(255, 255, 255, 0.14);
+
+  --ouro: #e0b862;
+  --ouro-veu: #33291a;
+  --prata: #b4c0c3;
+  --prata-veu: #232b2c;
+  --bronze: #d99a6c;
+  --bronze-veu: #2f231b;
 
   color-scheme: dark;
 }

@@ -14,8 +14,8 @@ const FORMATO_MES = new Intl.DateTimeFormat('pt-BR', { month: 'long', year: 'num
 
 /** "90d" fica ilegível — a partir de 2 meses o rótulo passa a ser em meses/anos. */
 function rotuloIntervalo(dias: number): string {
-  if (dias >= 330) return `${Math.round(dias / 365)}a`
-  if (dias >= 60) return `${Math.round(dias / 30)}m`
+  if (dias >= 330) return `${Math.round(dias / 365)} ano`
+  if (dias >= 60) return `${Math.round(dias / 30)} meses`
   return `${dias}d`
 }
 
@@ -23,17 +23,11 @@ function capitalizar(texto: string): string {
   return texto.charAt(0).toUpperCase() + texto.slice(1)
 }
 
-/**
- * O ciclo muda conforme o que a pessoa declarou ao responder. Quem acerta por
- * chute não aprendeu, e por isso a questão volta no dia seguinte; quem acerta
- * com certeza ganha o intervalo cheio, que segue crescendo por meses — ela
- * não se dá por "resolvida" tão cedo. Os degraus vêm de INTERVALOS, para a
- * escada nunca ficar desatualizada em relação à regra de verdade.
- */
+/** Os degraus vêm de INTERVALOS, para a explicação nunca divergir da regra real. */
 const ESCADAS: { rotulo: string; icone: NomeIcone; dias: number[]; nota: string; nivel: 1 | 2 | 3 }[] = [
-  { rotulo: 'Foi um chute', icone: 'interrogacao', dias: INTERVALOS.chute, nota: 'Volta já amanhã: acertar sem saber por quê não fixa nada.', nivel: 1 },
-  { rotulo: 'Tinha dúvida', icone: 'olho', dias: INTERVALOS.duvida, nota: 'Volta antes do ciclo normal, para firmar o raciocínio.', nivel: 2 },
-  { rotulo: 'Tinha certeza', icone: 'certo', dias: INTERVALOS.seguro, nota: 'O intervalo cresce por meses: revisões raras e espaçadas mantêm o que já está firme.', nivel: 3 },
+  { rotulo: 'Chute', icone: 'interrogacao', dias: INTERVALOS.chute, nota: 'Volta cedo', nivel: 1 },
+  { rotulo: 'Dúvida', icone: 'olho', dias: INTERVALOS.duvida, nota: 'Espaça mais', nivel: 2 },
+  { rotulo: 'Certeza', icone: 'certo', dias: INTERVALOS.seguro, nota: 'Espaça bastante', nivel: 3 },
 ]
 
 function inicioMes(data: number): number { const d = new Date(data); d.setDate(1); d.setHours(0, 0, 0, 0); return d.getTime() }
@@ -60,31 +54,43 @@ export function Revisao() {
   if (carregando || !indice) return <div className="estado"><p>Preparando sua revisão…</p></div>
   const temaFragil = [...plano.values()].flatMap(d => [...d.temas.entries()]).sort((a,b)=>b[1]-a[1])[0]
   const idsHoje = plano.get(chaveDia(hoje))?.ids ?? []
+  const hojeTotal = idsHoje.length
   return <div className="empilha-2 revisao-premium">
-    <section className="revisao-heroi">
-      <p className="meta">CENTRAL DE REVISÃO</p>
-      <h1>{atrasadas ? `${atrasadas} revisões precisam de você hoje` : 'Seu caminho de revisão está em dia'}</h1>
-      <p>{pendentes ? `${pendentes} questões estão planejadas para as próximas semanas. Comece pequeno e mantenha a sequência.` : 'Responda questões para construir seu calendário personalizado.'}</p>
-      <div className="linha linha--empilha-celular">
-        <button className="botao botao--principal botao--grande" onClick={() => iniciarIds(idsHoje.slice(0, 10))} disabled={!idsHoje.length}>Revisar agora{idsHoje.length ? ` · ${Math.min(10, idsHoje.length)}` : ''}</button>
-        {idsHoje.length > 10 && <button className="botao botao--fantasma" onClick={() => iniciarIds(idsHoje)}>Revisar tudo de hoje · {idsHoje.length}</button>}
-      </div>
-    </section>
-    <section className="numeros"><div className="numeros__celula"><b className="numeros__valor">{pendentes}</b><span className="numeros__rotulo">revisões planejadas</span></div><div className="numeros__celula"><b className="numeros__valor">{atrasadas}</b><span className="numeros__rotulo">atrasadas</span></div><div className="numeros__celula"><b className="numeros__valor">{temaFragil?.[0] ?? '—'}</b><span className="numeros__rotulo">foco com mais revisões</span></div></section>
-    <section className="cartao cartao__corpo">
-      <p className="meta">COMO A FILA É MONTADA</p>
-      <h2>Chute e dúvida voltam mais cedo</h2>
-      <p>Ao responder, você diz se tinha certeza, se tinha dúvida ou se foi um chute. Essa escolha decide quando a questão reaparece — não basta acertar.</p>
-      <div className="escada">{ESCADAS.map(e => <div key={e.rotulo} className={`escada__linha escada__linha--nivel${e.nivel}`}>
-        <div className="escada__topo">
-          <span className="escada__icone"><Icone nome={e.icone} tamanho={18} /></span>
-          <strong>{e.rotulo}</strong>
-          <span className="escada__degraus">{e.dias.map(d => <em key={d}>{rotuloIntervalo(d)}</em>)}</span>
+    <section className="rv-heroi">
+      <div className="rv-heroi__principal">
+        <p className="rv-heroi__sobrelinha"><Icone nome="calendario" tamanho={16} /> Revisão de hoje</p>
+        {hojeTotal
+          ? <h1><span className="rv-heroi__numero numerico">{hojeTotal}</span> {hojeTotal === 1 ? 'questão espera' : 'questões esperam'} por você</h1>
+          : <h1>Tudo em dia por aqui</h1>}
+        <p className="rv-heroi__texto">{hojeTotal ? (atrasadas ? `${atrasadas} vieram de dias anteriores. Comece com 10 e mantenha o ritmo.` : 'Uma sessão curta hoje já mantém a memória em dia.') : pendentes ? 'Nada vence hoje. Aproveite para avançar em questões novas.' : 'Responda questões e o seu calendário de revisão se monta sozinho.'}</p>
+        <div className="linha linha--empilha-celular">
+          {hojeTotal
+            ? <button className="botao rv-heroi__acao" onClick={() => iniciarIds(idsHoje.slice(0, 10))}>Revisar agora · {Math.min(10, hojeTotal)}</button>
+            : <a className="botao rv-heroi__acao" href="#/treinar">Treinar questões novas</a>}
+          {hojeTotal > 10 && <button className="botao rv-heroi__secundaria" onClick={() => iniciarIds(idsHoje)}>Tudo de hoje · {hojeTotal}</button>}
         </div>
-        <small>{e.nota}</small>
+      </div>
+      <dl className="rv-heroi__numeros">
+        <div><dt>Planejadas</dt><dd className="numerico">{pendentes}</dd></div>
+        <div><dt>Atrasadas</dt><dd className="numerico">{atrasadas}</dd></div>
+        <div><dt>Mais revisões em</dt><dd className="rv-heroi__tema">{temaFragil?.[0] ?? 'nenhum tema'}</dd></div>
+      </dl>
+    </section>
+    <section className="cartao cartao__corpo rv-regra">
+      <div className="rv-regra__cabeca">
+        <h2>Quando cada questão volta</h2>
+        <p>Depende de como você respondeu. Quatro acertos seguidos e ela sai da fila.</p>
+      </div>
+      <div className="rv-escadas">{ESCADAS.map(e => <div key={e.rotulo} className={`rv-escada rv-escada--${e.nivel}`}>
+        <div className="rv-escada__topo">
+          <span className="rv-escada__icone"><Icone nome={e.icone} tamanho={16} /></span>
+          <strong>{e.rotulo}</strong>
+          <small>{e.nota}</small>
+        </div>
+        <ol className="rv-escada__trilha" aria-label={`Volta em ${e.dias.join(', ')} dias`}>{e.dias.map(d => <li key={d}><span aria-hidden="true" /><em>{rotuloIntervalo(d)}</em></li>)}</ol>
       </div>)}</div>
-      <p className="escada__regra"><strong>Errou?</strong> A questão entra em <em>Revisar hoje</em> e a escada recomeça do primeiro degrau. Chute e dúvida saem da fila com <strong>quatro acertos espaçados</strong>; certeza continua voltando, cada vez mais espaçada, até completar o ciclo de um ano.</p>
-      {incertas > 0 && <div className="linha"><a className="botao botao--fantasma" href="#/treinar?situacao=incertas">Refazer as {incertas} que respondi com dúvida ou chute</a></div>}
+      <p className="rv-regra__erro"><Icone nome="reiniciar" tamanho={16} /> <span><strong>Errou?</strong> Ela volta hoje e o ciclo recomeça.</span></p>
+      {incertas > 0 && <a className="rv-regra__link" href="#/treinar?situacao=incertas">Refazer as {incertas} que respondi com dúvida ou chute <Icone nome="direita" tamanho={16} /></a>}
     </section>
     <section className="cartao cartao__corpo">
       <div className="entre">
