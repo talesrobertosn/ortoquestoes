@@ -1184,3 +1184,23 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
   .nav-sessao__extras { justify-content: center; gap: 0; }
   .nav-sessao__extras .botao { min-height: 38px; padding: 0 0.6rem; font-size: var(--meta); color: var(--texto-2); }
 }
+
+/* Em tela de toque, o texto das alternativas não é selecionável: evita que o
+   "Tocar para pesquisar" do Chrome ou um toque longo deixem seleção presa. */
+@media (hover: none) {
+  .alternativa, .alternativa * { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+}
+/* O :hover fica "grudado" depois do toque em telas de toque e, com
+   especificidade maior, apagava o verde da alternativa escolhida. */
+.alternativa.alternativa--escolhida,
+.alternativa.alternativa--escolhida:hover:not(:disabled) { border-color: var(--verdete); background: var(--verdete-veu); }
+.alternativa.alternativa--certa,
+.alternativa.alternativa--certa:hover:not(:disabled) { border-color: var(--acerto); background: var(--acerto-veu); }
+.alternativa.alternativa--errada,
+.alternativa.alternativa--errada:hover:not(:disabled) { border-color: var(--erro); background: var(--erro-veu); }
+@media (hover: none) {
+  .alternativa:hover:not(:disabled):not(.alternativa--escolhida) { border-color: var(--traco); background: var(--superficie); }
+}
+/* Sem espera de toque duplo (zoom) nos controles da questão. */
+.alternativa, .riscar, .opcao-segmento, .botao, .nav-sessao button { touch-action: manipulation; }
+@media (max-width: 40rem) { .nav-sessao { padding-inline: 0.75rem; } }

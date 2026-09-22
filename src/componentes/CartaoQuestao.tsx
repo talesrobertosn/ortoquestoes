@@ -63,6 +63,7 @@ export function CartaoQuestao({
   const inicio = useRef<number>(Date.now())
   const areaDaQuestao = useRef<HTMLElement>(null)
   const grifoRecente = useRef(false)
+  const ponteiro = useRef<{ tipo: string; x: number; y: number; moveu: boolean }>({ tipo: '', x: 0, y: 0, moveu: false })
   const selecaoParaGrifo = useRef<Range | null>(null)
   const respondida = !!resposta
   const mostrarGabarito = respondida && revelarResposta
@@ -96,13 +97,19 @@ export function CartaoQuestao({
   }
 
   /** Em simulado marcar já registra; no treino comum ainda passa pelo botão. */
-  function escolher(letra: Letra) {
+  function escolher(letra: Letra, origem: 'ponteiro' | 'teclado' = 'teclado') {
     if (travada) return
     if (grifoRecente.current) return
-    // Arrastar sobre uma alternativa é leitura/grifo, não uma resposta.
-    if (!window.getSelection()?.isCollapsed) {
-      atualizarSelecao()
-      return
+    const selecao = window.getSelection()
+    if (selecao && !selecao.isCollapsed) {
+      // Arrastar o mouse sobre uma alternativa é leitura/grifo, não uma
+      // resposta. Toque é sempre resposta: no Chrome do Android sobra texto
+      // selecionado com facilidade (toque um pouco mais longo, "Tocar para
+      // pesquisar", seleção de outra questão) e isso travava a escolha.
+      const arrasto = origem === 'ponteiro' && ponteiro.current.tipo === 'mouse' && ponteiro.current.moveu
+      if (arrasto) { atualizarSelecao(); return }
+      selecao.removeAllRanges()
+      definirMenuGrifo(null)
     }
     definirEscolhida(letra)
     if (!revelarResposta) confirmar(letra)
@@ -381,7 +388,9 @@ export function CartaoQuestao({
                 <button
                   type="button"
                   className={classes.join(' ')}
-                  onClick={() => escolher(letra)}
+                  onPointerDown={(e) => { ponteiro.current = { tipo: e.pointerType, x: e.clientX, y: e.clientY, moveu: false } }}
+                  onPointerUp={(e) => { ponteiro.current.moveu = Math.hypot(e.clientX - ponteiro.current.x, e.clientY - ponteiro.current.y) > 6 }}
+                  onClick={() => escolher(letra, 'ponteiro')}
                   disabled={travada}
                   aria-pressed={!travada ? marcada === letra : undefined}
                 >
