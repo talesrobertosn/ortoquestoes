@@ -15,7 +15,6 @@ import { Revisao } from './paginas/Revisao'
 import { Ranking } from './paginas/Ranking'
 import { Termos } from './paginas/Termos'
 import { Assinatura } from './paginas/Assinatura'
-import { Entrar } from './paginas/Entrar'
 import { SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
 import { consumirRetornoAuth } from './servicos/supabase'
@@ -108,7 +107,7 @@ export function App() {
       pagina = <Assinatura />
       break
     case 'entrar':
-      pagina = <Entrar />
+      pagina = <Conta consulta={rota.consulta} />
       break
     default:
       pagina = <NaoEncontrada />

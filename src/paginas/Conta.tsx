@@ -12,6 +12,7 @@ import { usarLeitura, usarEtiquetas } from '../estado/preferencias'
 import { usarTema } from '../estado/tema'
 import { dadosAceiteTermos } from '../conta/termos'
 import { textoErro } from '../conta/erros'
+import { Icone } from '../componentes/Icone'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -25,6 +26,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     modoInicial === 'criar' || modoInicial === 'recuperar' ? modoInicial : 'entrar',
   )
   const [email, definirEmail] = useState(''), [senha, definirSenha] = useState('')
+  const [confirmacao, definirConfirmacao] = useState(''), [verSenha, definirVerSenha] = useState(false)
   const parametros = new URLSearchParams(window.location.search)
   const erroRetorno = parametros.get('error_code') ?? parametros.get('error')
   const mensagemRetorno = erroRetorno === 'otp_expired'
@@ -114,12 +116,14 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   async function enviar(e: FormEvent) {
     e.preventDefault()
     if (!supabase || ocupado) return
+    const pedeConfirmacao = recuperacao || modo === 'criar'
+    if (pedeConfirmacao && senha !== confirmacao) { definirMensagem('As senhas não coincidem. Digite a mesma senha nos dois campos.'); return }
     definirOcupado(true); definirMensagem('')
     try {
       if (recuperacao && sessao) {
         const { error } = await supabase.auth.updateUser({ password: senha })
         if (error) throw error
-        definirSenha(''); encerrarRecuperacao(); definirMensagem('Senha atualizada.')
+        definirSenha(''); definirConfirmacao(''); encerrarRecuperacao(); definirMensagem('Senha atualizada.')
       } else if (modo === 'entrar') {
         const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password: senha })
         if (error) throw error
@@ -129,7 +133,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         if (!perfilCompleto()) return
         const { error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: { ...dadosPerfil(), ...dadosAceiteTermos() } } })
         if (error) throw error
-        definirSenha(''); definirMensagem('Confira seu e-mail para concluir o cadastro. Se já tiver uma conta, use Entrar ou recuperar senha.')
+        definirSenha(''); definirConfirmacao(''); definirMensagem('Confira seu e-mail para concluir o cadastro. Se já tiver uma conta, use Entrar ou recuperar senha.')
       } else {
         const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), { redirectTo: retornoConta(true) })
         if (error) throw error
@@ -178,10 +182,70 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const pendentes = [...planoRevisao(indice, contexto.respondidas, 1).values()].reduce((total, dia) => total + dia.ids.length, 0)
     return { respondidas: registros.length, acerto: tentativas ? Math.round((acertos / tentativas) * 100) : null, pendentes }
   })() : null
+  const trocarModo = (m: typeof modo) => { definirModo(m); definirMensagem(''); definirSenha(''); definirConfirmacao('') }
+  const pedeConfirmacao = recuperacao || modo === 'criar'
+  const senhasConferem = confirmacao.length > 0 && confirmacao === senha
+  if (!sessao || recuperacao) {
+    const titulo = recuperacao ? 'Crie uma nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Recuperar senha' : 'Entrar na sua conta'
+    const subtitulo = recuperacao ? 'Escolha a nova senha e confirme logo abaixo.' : modo === 'criar' ? 'Leva menos de um minuto. Depois é só confirmar o e-mail.' : modo === 'recuperar' ? 'Enviamos um link para você criar uma nova senha.' : 'Continue de onde parou, em qualquer dispositivo.'
+    return <div className="acesso">
+      <aside className="acesso__vitrine">
+        <p className="acesso__marca"><span>Orto</span>Questões</p>
+        <h1>{modo === 'criar' ? 'Sua preparação, organizada do primeiro ao último dia.' : 'Que bom ter você de volta.'}</h1>
+        <p className="acesso__lide">{indice ? `${indice.total.toLocaleString('pt-BR')} questões` : 'Questões'} de TEOT, TARO, ENARE R4 e outras provas, com comentário e referência.</p>
+        <ul className="acesso__beneficios">
+          <li><span><Icone nome="grafico" tamanho={18} /></span>Desempenho por tema e por prova</li>
+          <li><span><Icone nome="calendario" tamanho={18} /></span>Revisão espaçada montada para você</li>
+          <li><span><Icone nome="estrela" tamanho={18} /></span>Favoritas e anotações nas questões</li>
+          <li><span><Icone nome="raio" tamanho={18} /></span>Sequência de dias, ranking e emblemas</li>
+        </ul>
+        <p className="acesso__rodape">Comece grátis, sem cartão de crédito.</p>
+      </aside>
+      <section className="acesso__cartao">
+        {!recuperacao && modo !== 'recuperar' && <div className="acesso__abas" role="tablist">{(['entrar', 'criar'] as const).map(m => <button type="button" role="tab" aria-selected={modo === m} className="acesso__aba" onClick={() => trocarModo(m)} key={m}>{m === 'entrar' ? 'Entrar' : 'Criar conta'}</button>)}</div>}
+        <header className="acesso__cabeca">
+          {modo === 'recuperar' && !recuperacao && <button type="button" className="acesso__voltar" onClick={() => trocarModo('entrar')}><Icone nome="esquerda" tamanho={16} /> Voltar para entrar</button>}
+          <h2>{titulo}</h2>
+          <p>{subtitulo}</p>
+        </header>
+        {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
+        <form className="empilha acesso__form" onSubmit={enviar}>
+          {!recuperacao && <label className="campo">E-mail<input className="entrada" type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} placeholder="voce@email.com" /></label>}
+          {!recuperacao && modo === 'criar' && <>
+            <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" autoComplete="given-name" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo">Sobrenome<input className="entrada" autoComplete="family-name" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
+            <div className="linha-campos linha-campos--2"><label className="campo">Data de nascimento<input className="entrada" type="date" required value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label><label className="campo">Você é <select className="entrada" required value={situacao} onChange={e => definirSituacao(e.target.value)}><option value="">Selecione</option><option value="residente">Residente de ortopedia</option><option value="ortopedista">Ortopedista</option><option value="outro">Outro profissional ou estudante</option></select></label></div>
+            <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" required value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
+            <div className="linha-campos linha-campos--2"><label className="campo"><span>WhatsApp <span className="meta">(opcional)</span></span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo"><span>Cidade <span className="meta">(opcional)</span></span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
+          </>}
+          {(recuperacao || modo !== 'recuperar') && <div className="campo">
+            <span className="acesso__rotulo-senha"><label htmlFor="acesso-senha">{recuperacao ? 'Nova senha' : 'Senha'}</label>{modo === 'entrar' && !recuperacao && <button type="button" className="acesso__link" onClick={() => trocarModo('recuperar')}>Esqueceu a senha?</button>}</span>
+            <span className="acesso__senha">
+              <input id="acesso-senha" className="entrada" type={verSenha ? 'text' : 'password'} autoComplete={modo === 'entrar' && !recuperacao ? 'current-password' : 'new-password'} minLength={modo === 'entrar' && !recuperacao ? undefined : 8} required value={senha} onChange={e => definirSenha(e.target.value)} />
+              <button type="button" className="acesso__olho" onClick={() => definirVerSenha(v => !v)} aria-label={verSenha ? 'Ocultar senha' : 'Mostrar senha'} aria-pressed={verSenha}><Icone nome={verSenha ? 'riscar' : 'olho'} tamanho={18} /></button>
+            </span>
+            {pedeConfirmacao && <span className="meta">Mínimo de 8 caracteres.</span>}
+          </div>}
+          {pedeConfirmacao && <div className="campo">
+            <label htmlFor="acesso-confirmacao">Confirmar senha</label>
+            <input id="acesso-confirmacao" className={`entrada${confirmacao && !senhasConferem ? ' entrada--invalida' : ''}`} type={verSenha ? 'text' : 'password'} autoComplete="new-password" required value={confirmacao} onChange={e => definirConfirmacao(e.target.value)} aria-describedby="acesso-confere" />
+            {confirmacao && <span id="acesso-confere" className={`acesso__confere ${senhasConferem ? 'acesso__confere--ok' : 'acesso__confere--nao'}`} role="status"><Icone nome={senhasConferem ? 'certo' : 'errado'} tamanho={14} />{senhasConferem ? 'As senhas coincidem' : 'As senhas ainda não coincidem'}</span>}
+          </div>}
+          {!recuperacao && modo === 'criar' && <>
+            <label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o OrtoQuestões</label>
+            <label className="campo campo--checkbox"><input type="checkbox" required checked={aceitouTermos} onChange={e => definirAceitouTermos(e.target.checked)} /> <span>Li e concordo com os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso e Consentimento</a> do OrtoQuestões.</span></label>
+          </>}
+          <button className="botao botao--principal acesso__enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}</button>
+        </form>
+        {modo === 'entrar' && !recuperacao && <p className="acesso__alternativa">Não recebeu a confirmação? <button type="button" className="acesso__link" onClick={() => { void reenviar() }} disabled={ocupado || !email.trim()}>Reenviar e-mail</button></p>}
+        {!recuperacao && modo === 'criar' && <p className="meta">Seus dados de perfil não ficam visíveis a outros usuários. O ranking público fica desligado até você ativá-lo, escolhendo como seu nome aparece.</p>}
+        <p className="acesso__seguranca"><Icone nome="certo" tamanho={14} /> Autenticação segura pelo Supabase. O OrtoQuestões não guarda sua senha. Abra os links de confirmação neste mesmo navegador.</p>
+      </section>
+    </div>
+  }
   return <article className="limite-leitura empilha-2 conta-pagina">
-    <header><p className="meta">SEU ESTUDO, EM QUALQUER DISPOSITIVO</p><h1>{sessao ? 'Minha conta' : 'Entre para guardar seu progresso'}</h1><p>O OrtoQuestões continua 100% gratuito, sem limite diário.</p></header>
+    <header><p className="meta">SEU ESTUDO, EM QUALQUER DISPOSITIVO</p><h1>Minha conta</h1><p>O OrtoQuestões continua 100% gratuito, sem limite diário.</p></header>
     {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
-    {sessao && !recuperacao ? <>
+    <>
       <section className="cartao cartao__corpo empilha">
         <h2>{sessao.user.email}</h2><p>Respostas, revisões, favoritas, anotações e histórico ficam associados à sua conta. A sessão em andamento fica neste dispositivo.</p>
         <p role="status">{ROTULOS_STATUS[status.estado]} {status.pendentes > 0 && `${status.pendentes} alteração(ões) pendente(s).`}</p>
@@ -244,24 +308,6 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <details><summary>Comparar versões</summary><p>Versão deste navegador</p><pre>{JSON.stringify(itens(doc.tipo, ler(doc.tipo, null))[doc.item] ?? null, null, 2)}</pre><p>Versão da conta</p><pre>{JSON.stringify(doc.valor, null, 2)}</pre></details>
           <div className="linha"><button className="botao" onClick={() => resolver(doc, true)}>Manter deste navegador</button><button className="botao" onClick={() => resolver(doc, false)}>Usar versão da conta</button></div></div>)}
       </section>}
-    </> : <section className="cartao cartao__corpo empilha">
-      {!recuperacao && <div className="grupo-opcoes">{(['entrar', 'criar', 'recuperar'] as const).map(m => <button className="opcao-segmento" aria-pressed={modo === m} onClick={() => { definirModo(m); definirMensagem(''); definirSenha('') }} key={m}>{m === 'entrar' ? 'Entrar' : m === 'criar' ? 'Criar conta' : 'Recuperar senha'}</button>)}</div>}
-      <form className="empilha" onSubmit={enviar}>
-        {!recuperacao && <label className="campo">E-mail<input className="entrada" type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} /></label>}
-        {!recuperacao && modo === 'criar' && <>
-          <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" autoComplete="given-name" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo">Sobrenome<input className="entrada" autoComplete="family-name" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
-          <div className="linha-campos linha-campos--2"><label className="campo">Data de nascimento<input className="entrada" type="date" required value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label><label className="campo">Você é <select className="entrada" required value={situacao} onChange={e => definirSituacao(e.target.value)}><option value="">Selecione</option><option value="residente">Residente de ortopedia</option><option value="ortopedista">Ortopedista</option><option value="outro">Outro profissional ou estudante</option></select></label></div>
-          <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" required value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
-          <div className="linha-campos linha-campos--2"><label className="campo">WhatsApp <span className="meta">(opcional)</span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo">Cidade <span className="meta">(opcional)</span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
-          <label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o OrtoQuestões</label>
-          <p className="texto-2">Seu WhatsApp é opcional. Os dados de perfil servem para personalizar sua experiência e não ficam visíveis a outros usuários — a única exceção é o ranking público, que fica desligado até você ativá-lo depois, escolhendo como seu nome aparece.</p>
-        </>}
-        {(recuperacao || modo !== 'recuperar') && <label className="campo">{recuperacao ? 'Nova senha' : 'Senha'}<input className="entrada" type="password" autoComplete={modo === 'entrar' && !recuperacao ? 'current-password' : 'new-password'} minLength={modo === 'entrar' && !recuperacao ? undefined : 8} required value={senha} onChange={e => definirSenha(e.target.value)} /></label>}
-        {!recuperacao && modo === 'criar' && <label className="campo campo--checkbox"><input type="checkbox" required checked={aceitouTermos} onChange={e => definirAceitouTermos(e.target.checked)} /> Li e concordo com os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso e Consentimento</a> do OrtoQuestões.</label>}
-        <button className="botao botao--principal" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}</button>
-      </form>
-      {modo === 'entrar' && !recuperacao && <button className="botao botao--fantasma" onClick={() => { void reenviar() }} disabled={ocupado || !email.trim()}>Reenviar confirmação de e-mail</button>}
-      <p className="meta">Usamos o Supabase para autenticação e armazenamento do progresso. A senha não é salva pelo OrtoQuestões. Nos links de confirmação e recuperação, use este mesmo navegador.</p>
-    </section>}
+    </>
   </article>
 }
