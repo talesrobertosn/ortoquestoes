@@ -760,209 +760,173 @@
   "conferido": false
  },
  "tumores-0065": {
-  "conceito": "O tumor de células gigantes ocorre tipicamente após o fechamento da fise, entre 20 e 40 anos, e ocupa a região **epifisometafisária**, chegando ao osso subcondral. A histologia mostra células gigantes multinucleadas distribuídas de modo relativamente uniforme entre células mononucleares.",
-  "correta": "**D, tumor de células gigantes.** A idade, a localização ao redor do joelho, a lesão epifisária e o padrão histológico sustentam o diagnóstico.",
+  "conceito": "### O que as imagens mostram\n- **Radiografia:** lesão **lítica** na extremidade distal do fêmur, ocupando a região epifisometafisária e chegando ao **osso subcondral**, sem matriz mineralizada.\n- **Ressonância:** lesão expansiva com múltiplas áreas de **alto sinal** no seu interior, compatíveis com componentes císticos ou hemorrágicos.\n- **Histologia:** **células gigantes multinucleadas** distribuídas entre células mononucleares.\n\n### O perfil do tumor de células gigantes\n- **Idade:** 20 a 40 anos, **depois do fechamento da fise**.\n- **Sexo:** discreto predomínio **feminino**.\n- **Local:** mais da metade ao redor do **joelho** (fêmur distal, tíbia proximal), depois rádio distal e sacro.\n- **Imagem:** lítica, **excêntrica**, epifisária, chega ao subcondral, em geral **sem halo esclerótico**.\n- **Clínica:** dor progressiva e aumento de volume, às vezes fratura patológica.\n\n### Antes de fechar o diagnóstico\n- **Cálcio e PTH**, para afastar o tumor marrom do hiperparatireoidismo, de histologia idêntica.\n- **Tomografia de tórax**, pela possibilidade de metástase pulmonar benigna.\n\n> **Na prova:** mulher de 30 anos, joelho, lesão lítica epifisária até o subcondral e células gigantes na lâmina é ==tumor de células gigantes==.",
+  "correta": "**Tumor de células gigantes.**\n- **Idade** (30 anos, fise fechada), **local** (joelho), **lesão lítica epifisária** até o subcondral e **histologia** com células gigantes convergem para o diagnóstico.",
   "incorretas": {
-   "A": "O osteossarcoma costuma ser metafisário, agressivo e produtor de osteoide, com reação periosteal e matriz mineralizada.",
-   "B": "O condroblastoma também é epifisário, mas predomina em adolescentes com fise aberta e apresenta calcificação condroide e células em pavimentação.",
-   "C": "Condrossarcoma é mais comum em pacientes mais velhos e mostra matriz condroide em arcos e anéis."
+   "A": "**Osteossarcoma tem outro retrato.**\n- Pico na **segunda década**, **metafisário**.\n- Lesão agressiva, com **matriz osteoide** mineralizada e reação periosteal (triângulo de Codman, raios de sol).",
+   "B": "**Epifisário, mas da idade errada.**\n- O condroblastoma também vive na epífise, mas é de **adolescentes com fise aberta**.\n- Costuma ter **halo esclerótico** e calcificação condroide fina.",
+   "C": "**Idade e matriz não batem.**\n- Condrossarcoma é mais comum **após os 40 anos**, na pelve e na raiz dos membros.\n- Mostra **matriz condroide** em anéis e arcos, ausente aqui."
   },
   "referencias": [
    "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
    "Campanacci M. Bone and Soft Tissue Tumors. 2nd ed. Springer; 1999."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-22",
+  "conferido": false
  },
  "tumores-0066": {
-  "conceito": "O grande imitador do tumor de células gigantes é o TUMOR MARROM DO HIPERPARATIREOIDISMO, e a distinção é impossível pela histologia, as duas lesões mostram células gigantes multinucleadas em estroma de células mononucleares, e o patologista, olhando só a lâmina, não consegue separá-las. O que separa é o LABORATÓRIO, e a dosagem decisiva é o PTH (paratormônio), acompanhado de cálcio, fósforo e fosfatase alcalina: no hiperparatireoidismo há PTH e cálcio elevados com fósforo baixo. O erro que essa questão previne é grave e real, operar um tumor marrom como se fosse tumor de células gigantes significa deixar a doença de base intocada, e as lesões voltam ou aparecem em outros ossos, enquanto o tratamento correto é a paratireoidectomia, após a qual os tumores marrons regridem sozinhos. Regra prática: TODA lesão de células gigantes, sobretudo se múltipla, se em paciente com doença renal crônica, ou se acompanhada de reabsorção subperiosteal nas falanges e de crânio em sal e pimenta, exige dosagem de cálcio e PTH ANTES da biópsia.",
-  "correta": "O PTH.",
+  "conceito": "### O grande imitador\nO tumor de células gigantes tem um imitador perfeito: o ==tumor marrom do hiperparatireoidismo==. As duas lesões mostram **células gigantes multinucleadas** em estroma de células mononucleares, e a lâmina sozinha não as separa.\n\n### O que separa é o laboratório\n- **PTH** (paratormônio): a dosagem decisiva.\n- Junto: **cálcio**, **fósforo** e **fosfatase alcalina**.\n- No hiperparatireoidismo primário: **PTH e cálcio altos**, fósforo baixo.\n\n### Por que isso importa\n- Operar um tumor marrom como se fosse tumor de células gigantes deixa a **doença de base intocada**: as lesões voltam ou surgem em outros ossos.\n- O tratamento correto é a **paratireoidectomia**, e os tumores marrons regridem sozinhos depois dela.\n\n### Quando desconfiar mais\n- Lesões de células gigantes **múltiplas**.\n- Paciente com **doença renal crônica** (hiperparatireoidismo secundário).\n- Reabsorção **subperiosteal** nas falanges, crânio em **sal e pimenta**.\n\n> **Na prova:** toda lesão de células gigantes pede ==cálcio e PTH antes da biópsia==.",
+  "correta": "**O PTH.**\n- É o exame que separa o tumor de células gigantes do **tumor marrom do hiperparatireoidismo**, de histologia idêntica.\n- Vem junto com cálcio, fósforo e fosfatase alcalina.",
   "incorretas": {
-   "A": "A proteína C reativa é marcador inflamatório inespecífico e não separa essas lesões.",
-   "B": "A velocidade de hemossedimentação tem a mesma limitação.",
-   "D": "A eletroforese de proteínas é o exame do MIELOMA MÚLTIPLO, importante em lesão lítica de adulto acima de 50 anos, mas não é o diferencial clássico do tumor de células gigantes."
+   "A": "**Marcador inespecífico.**\n- A proteína C reativa sobe em inflamação e infecção.\n- Não separa tumor de células gigantes de tumor marrom.",
+   "B": "**Mesma limitação.**\n- A VHS é inespecífica.\n- Não tem papel no diferencial das lesões de células gigantes.",
+   "D": "**É o exame do mieloma.**\n- A eletroforese de proteínas investiga **mieloma múltiplo**, importante em lesão lítica de adulto acima dos 50 anos.\n- Não é o diferencial clássico do tumor de células gigantes."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-22",
   "conferido": false
  },
  "tumores-0067": {
-  "conceito": "No estadiamento de Enneking para tumores ósseos benignos, **B1** é latente, B2 é ativo e **B3 é agressivo**. O estágio B3 apresenta crescimento rápido, adelgaçamento ou ruptura cortical e possível extensão para partes moles.",
-  "correta": "**C, B3.** A lesão extensa, epifisometafisária, com grande expansão e comprometimento cortical é compatível com tumor benigno localmente agressivo.",
+  "conceito": "### O estadiamento de Enneking para tumores benignos\nClassifica pelo comportamento biológico, visto na clínica e na imagem:\n- **B1, latente:** lesão pequena, contida, com margem bem definida e esclerótica. Muitas vezes achado incidental, sem crescimento.\n- **B2, ativa:** cresce, mas continua **contida** pelo osso, que se remodela ao redor.\n- **B3, agressiva:** crescimento rápido, **cortical adelgaçada ou rompida**, possível extensão para partes moles.\n\nNão existe B4: a escala dos benignos ==termina no estágio 3==.\n\n### O que as imagens mostram\n- Radiografias com lesão **lítica extensa** na extremidade distal do fêmur, chegando ao osso subcondral.\n- Ressonância com lesão **expansiva**, com múltiplas áreas de alto sinal no interior e **cortical afilada**.\n- É o padrão de um tumor benigno **localmente agressivo**, como o tumor de células gigantes costuma ser.\n\n### Por que isso importa\nO estágio orienta a margem: B1 pode ser observado, B2 pede tratamento intralesional, e B3 pede curetagem **ampliada com adjuvante** ou, se o osso estiver muito destruído, ressecção.\n\n> **Na prova:** Enneking benigno vai de ==1 (latente) a 3 (agressivo)==. Lesão grande, expansiva, com cortical comprometida é B3.",
+  "correta": "**B3.**\n- As imagens mostram lesão **extensa e expansiva**, com cortical afilada, até o subcondral.\n- É o comportamento de tumor benigno **localmente agressivo**.",
   "incorretas": {
-   "A": "B1 descreve lesão latente, pequena e contida, geralmente incidental.",
-   "B": "B2 é ativa e cresce, mas permanece mais bem contida do que a lesão agressiva mostrada.",
-   "D": "A classificação de Enneking dos tumores benignos termina no estágio 3; B4 não é uma categoria válida."
+   "A": "**Latente é outra coisa.**\n- B1 é lesão pequena, contida, de margem esclerótica, muitas vezes incidental.\n- Não descreve a lesão grande e expansiva mostrada.",
+   "B": "**Ativa, mas contida.**\n- B2 cresce, mas o osso ainda a contém e se remodela ao redor.\n- A lesão mostrada vai além disso.",
+   "D": "**Não existe.**\n- O estadiamento de Enneking para tumores benignos **termina no 3**.\n- B4 não é categoria válida."
   },
   "referencias": [
    "Enneking WF. A system of staging musculoskeletal neoplasms. Clin Orthop Relat Res. 1986;(204):9-24.",
    "Campanacci M. Bone and Soft Tissue Tumors. 2nd ed. Springer; 1999."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-22",
+  "conferido": false
  },
  "tumores-0068": {
-  "conceito": "No tumor de células gigantes ressecável ao redor do joelho, busca-se preservar a articulação com **curetagem ampliada**, adjuvante local e preenchimento da cavidade. O cimento permite suporte imediato e facilita a detecção radiográfica de recidiva junto à interface.",
-  "correta": "**D, curetagem e cimentação.** É a estratégia indicada para a lesão mostrada, localmente agressiva, mas ainda passível de tratamento intralesional com preservação articular.",
+  "conceito": "### O objetivo: preservar o joelho\nNo tumor de células gigantes ressecável ao redor do joelho, o tratamento padrão é **intralesional**, preservando a articulação da paciente jovem:\n- **Curetagem ampliada**: janela cortical grande, curetas e fresa de alta rotação até osso sadio.\n- **Adjuvante local** (fenol, nitrogênio líquido, eletrocautério ou o próprio cimento).\n- **Preenchimento** da cavidade.\n\n### Por que o cimento\nO ==polimetilmetacrilato== tem três vantagens:\n- **Efeito térmico** na polimerização, que age como adjuvante nas paredes da cavidade.\n- **Suporte mecânico imediato**, permitindo reabilitação precoce.\n- **Facilita ver recidiva**: uma área lítica nova na interface cimento-osso aparece cedo na radiografia.\n\n### O que as imagens mostram\nLesão lítica expansiva na extremidade distal do fêmur, chegando ao subcondral, com cortical afilada mas **articulação preservada**. Ainda cabe tratamento intralesional.\n\n### Quando não curetar\nRessecção quando há **destruição articular**, fratura com grande perda óssea ou recidiva extensa. O **denosumabe** entra em lesões irressecáveis ou para reduzir o tumor antes da cirurgia.\n\n> **Na prova:** tumor de células gigantes do joelho, ressecável, é ==curetagem ampliada com cimento==.",
+  "correta": "**Curetagem e cimentação.**\n- Trata a lesão com **preservação articular**.\n- O cimento dá **adjuvância térmica**, **suporte imediato** e facilita a vigilância de recidiva.",
   "incorretas": {
-   "A": "Amputação é excepcional e reservada a doença incontrolável, infecção grave ou impossibilidade de reconstrução.",
-   "B": "Ressecção ampla aumenta morbidade e costuma ser reservada a destruição articular, recidiva extensa ou impossibilidade de curetagem segura.",
-   "C": "Enxertia é possível em lesões selecionadas, mas a cimentação é preferida no cenário agressivo exibido por fornecer adjuvância térmica, suporte e vigilância da recidiva."
+   "A": "**Excepcional.**\n- Amputação fica para doença **incontrolável**, infecção grave ou impossibilidade de reconstrução.\n- Não se aplica a tumor benigno ressecável.",
+   "B": "**Morbidade desnecessária aqui.**\n- A ressecção ampla sacrifica a articulação e exige reconstrução (endoprótese, aloenxerto).\n- É reservada a destruição articular, recidiva extensa ou impossibilidade de curetagem segura.",
+   "C": "**Possível, mas não a preferida.**\n- O enxerto ósseo pode preencher a cavidade em lesões selecionadas.\n- Perde para o cimento em **adjuvância térmica**, **suporte imediato** e **detecção de recidiva**."
   },
   "referencias": [
    "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
    "Campanacci M et al. Giant-cell tumor of bone. J Bone Joint Surg Am. 1987;69:106-114."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-22",
+  "conferido": false
  },
  "tumores-0069": {
-  "conceito": "VÉRTEBRA PLANA é o colapso quase completo e SIMÉTRICO do corpo vertebral, com PRESERVAÇÃO DOS DISCOS adjacentes e sem massa de partes moles significativa. Na CRIANÇA, a etiologia mais frequente é a HISTIOCITOSE DE CÉLULAS DE LANGERHANS (a vértebra plana de Calvé), e o achado tem duas particularidades que orientam a conduta. Primeira: apesar do aspecto dramático, o déficit neurológico é raro. Segunda, e mais notável: a altura do corpo vertebral se RECONSTITUI espontaneamente ao longo do crescimento, em graus variáveis, o que faz da observação com órtese a conduta na maioria dos casos, reservando cirurgia para instabilidade ou compressão neurológica. O diferencial inclui infecção (mas a osteomielite e a espondilodiscite ATACAM O DISCO, e disco preservado é forte argumento contra), linfoma e leucemia, cisto ósseo aneurismático, tumor de Ewing e, no adulto, mieloma e metástase. Como o diferencial inclui doenças malignas, a biópsia é indicada quando o quadro não é típico.",
-  "correta": "Histiocitose de células de Langerhans.",
+  "conceito": "### O que é vértebra plana\nColapso quase completo e **simétrico** do corpo vertebral, com ==discos adjacentes preservados== e sem massa de partes moles significativa.\n\n### A causa mais frequente\nNa criança, a **histiocitose de células de Langerhans** (a vértebra plana de **Calvé**).\n\n### Duas particularidades\n- **Déficit neurológico é raro**, apesar do aspecto dramático.\n- A altura do corpo vertebral se **reconstitui** em graus variáveis ao longo do crescimento.\n\nPor isso a conduta, na maioria, é **observação** (às vezes com órtese). Cirurgia para instabilidade ou compressão neurológica.\n\n### Diferencial\n- **Infecção:** osteomielite e espondilodiscite **destroem o disco**. Disco preservado é forte argumento contra.\n- **Linfoma e leucemia.**\n- **Sarcoma de Ewing.**\n- **Cisto ósseo aneurismático.**\n- No adulto: **mieloma** e **metástase**.\n\nComo há doenças malignas na lista, a **biópsia** entra quando o quadro não é típico.\n\n> **Na prova:** vértebra plana em criança, com discos preservados, é ==histiocitose de células de Langerhans==.",
+  "correta": "**Histiocitose de células de Langerhans.**\n- É a causa mais frequente de vértebra plana, sobretudo na criança.\n- Colapso simétrico, discos preservados e boa reconstituição com o crescimento.",
   "incorretas": {
-   "A": "O linfoma pode colapsar vértebra, mas costuma vir com massa de partes moles e acomete faixa etária mais alta.",
-   "B": "A osteomielite e a espondilodiscite destroem o DISCO e os platôs adjacentes, a preservação do disco é justamente o que afasta a infecção.",
-   "C": "O cisto ósseo aneurismático da coluna prefere os ELEMENTOS POSTERIORES e é expansivo, não colapsante."
+   "A": "**Pode colapsar, mas não é o mais comum.**\n- O linfoma costuma vir com **massa de partes moles** e em faixa etária mais alta.\n- É diferencial importante, não a causa principal.",
+   "B": "**Infecção pega o disco.**\n- Osteomielite e espondilodiscite **destroem o disco** e os platôs adjacentes.\n- A preservação do disco é justamente o que afasta infecção.",
+   "C": "**Prefere o arco posterior e expande.**\n- O cisto ósseo aneurismático da coluna acomete sobretudo os **elementos posteriores**.\n- É lesão **expansiva**, não de colapso simétrico do corpo."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-22",
   "conferido": false
  },
  "tumores-0070": {
-  "conceito": "Três informações do enunciado convergem para o TUMOR DE CÉLULAS GIGANTES, e vale ver como cada uma trabalha. LOCALIZAÇÃO EPIFISÁRIA, subarticular: poucas lesões vivem na epífise, e no adulto com fise FECHADA o tumor de células gigantes é a primeira hipótese. IDADE DE 30 ANOS: a doença tem pico entre 20 e 40 anos, DEPOIS do fechamento fisário, é essa a razão pela qual a mesma topografia na criança aponta para condroblastoma. SEDE NO FÊMUR DISTAL: a região ao redor do joelho (fêmur distal e tíbia proximal) concentra mais da metade dos casos, seguida do rádio distal e do sacro. Some-se o aspecto de lesão LÍTICA EXCÊNTRICA, sem esclerose marginal, que se estende até o osso subcondral e pode insuflar a cortical. A confirmação é histológica, mas antes dela é obrigatório dosar CÁLCIO E PTH, para excluir o tumor marrom do hiperparatireoidismo, que tem histologia idêntica. E é obrigatório também tomografia de tórax, pela possibilidade de metástase pulmonar benigna.",
-  "correta": "Tumor de células gigantes.",
+  "conceito": "### Três pistas que convergem\n- **Epífise, lesão subarticular:** poucas lesões vivem na epífise. Com a **fise fechada**, a primeira hipótese é o tumor de células gigantes.\n- **30 anos:** pico entre **20 e 40 anos**, depois do fechamento fisário. A mesma topografia na criança apontaria para condroblastoma.\n- **Fêmur distal:** o joelho (fêmur distal e tíbia proximal) concentra **mais da metade** dos casos, seguido do rádio distal e do sacro.\n\nSomando a lesão **lítica excêntrica**, em geral **sem esclerose marginal**, que chega ao osso subcondral e pode insuflar a cortical: ==tumor de células gigantes==.\n\n### Antes da biópsia\n- **Cálcio e PTH**, para afastar o tumor marrom do hiperparatireoidismo (histologia idêntica).\n- **Tomografia de tórax**, pela possibilidade de metástase pulmonar benigna.\n\n### Lesões epifisárias por idade\n- **Fise aberta:** condroblastoma (e, bem menos, infecção).\n- **Adulto jovem:** tumor de células gigantes.\n- **Adulto mais velho:** geodo, condrossarcoma de células claras (raro).\n\n> **Na prova:** lesão lítica excêntrica epifisária no fêmur distal aos 30 anos é ==tumor de células gigantes==.",
+  "correta": "**Tumor de células gigantes.**\n- **Epifisário**, **excêntrico**, em adulto jovem com **fise fechada**, no **fêmur distal**.\n- É a combinação clássica do tumor.",
   "incorretas": {
-   "A": "O condroblastoma é epifisário, mas de criança e adolescente com fise ABERTA, aos 30 anos a fise está fechada.",
-   "C": "O cisto ósseo aneurismático é metafisário e expansivo, típico das duas primeiras décadas; pode ocorrer como lesão SECUNDÁRIA sobre um tumor de células gigantes, o que é outra história.",
-   "D": "O condrossarcoma de células claras é de fato epifisário e do adulto, e é o principal diferencial maligno, mas é raro, prefere o fêmur PROXIMAL e o úmero proximal, e mostra matriz condroide, o que o torna hipótese bem menos provável que o tumor de células gigantes."
+   "A": "**Epifisário, mas da criança.**\n- O condroblastoma é de adolescentes com **fise aberta**.\n- Aos 30 anos a fise já está fechada.",
+   "C": "**Metafisário e mais jovem.**\n- O cisto ósseo aneurismático primário é **metafisário**, expansivo, típico das duas primeiras décadas.\n- Pode aparecer como componente **secundário** dentro de um tumor de células gigantes, o que é outra situação.",
+   "D": "**Epifisário e do adulto, mas raro.**\n- O condrossarcoma de células claras é o principal diferencial maligno, porém **raro**.\n- Prefere o **fêmur proximal** e o úmero proximal, e pode mostrar matriz condroide."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-22",
   "conferido": false
  },
  "tumores-0071": {
-  "conceito": "O condroblastoma é tumor benigno raro da **epífise** de adolescentes e adultos jovens. A imagem costuma mostrar lesão lítica geográfica com halo esclerótico; a histologia revela condroblastos e células gigantes, podendo haver calcificação fina em “chicken wire”.",
-  "correta": "**A, condroblastoma.** A localização epifisária no úmero proximal, a margem bem definida e o padrão histológico são característicos.",
+  "conceito": "### O que as imagens mostram\n- **Radiografia:** lesão **lítica** na **epífise do úmero proximal**, bem delimitada.\n- **Tomografia:** lesão bem definida na cabeça umeral, com **halo esclerótico** e focos de maior densidade no interior, compatíveis com calcificação.\n- **Histologia:** células mononucleares arredondadas (**condroblastos**) com **células gigantes** multinucleadas de permeio.\n\n### O perfil do condroblastoma\n- Tumor benigno raro da ==epífise== (ou apófise) de **adolescentes e adultos jovens**, com a fise ainda aberta ou recém-fechada.\n- Sedes típicas: **úmero proximal**, fêmur distal, tíbia proximal, fêmur proximal (inclusive trocanter maior).\n- Imagem: lítica, **geográfica**, com **halo esclerótico**, às vezes com calcificação condroide.\n- Dor articular e derrame são frequentes.\n\n### A histologia com nome\n- Condroblastos com núcleo em grão de café.\n- Calcificação pericelular fina em ==tela de galinheiro== (chicken wire).\n\n### Tratamento\nCuretagem com enxerto ou cimento, com cuidado para não lesar a fise ou a cartilagem articular. Pode haver **cisto aneurismático secundário** associado.\n\n> **Na prova:** lesão epifisária com halo esclerótico em adolescente, no úmero proximal, é ==condroblastoma==.",
+  "correta": "**Condroblastoma.**\n- Lesão **epifisária** do úmero proximal, **bem delimitada**, com **halo esclerótico** e calcificação interna.\n- Histologia com condroblastos e células gigantes completa o quadro.",
   "incorretas": {
-   "B": "O cisto ósseo aneurismático é expansivo e multiloculado, com espaços sanguíneos; pode ser secundário, mas não explica sozinho o padrão celular mostrado.",
-   "C": "O tumor de células gigantes também é epifisário, porém predomina após maturidade esquelética e geralmente não apresenta halo esclerótico marcado.",
-   "D": "O osteossarcoma telangiectásico é agressivo, destrutivo e metafisário, com atipia maligna e produção de osteoide."
+   "B": "**Metafisário e septado.**\n- O cisto ósseo aneurismático é **expansivo**, multiloculado, com **níveis líquido-líquido** e espaços sanguíneos.\n- Pode ser secundário a um condroblastoma, mas não explica o padrão celular nem a calcificação.",
+   "C": "**Epifisário, mas sem halo e do adulto.**\n- O tumor de células gigantes aparece **depois da maturidade esquelética**.\n- Em geral **não tem halo esclerótico** marcado nem calcificação interna.",
+   "D": "**Maligno e destrutivo.**\n- O osteossarcoma telangiectásico é **metafisário**, agressivo, com cavidades hemorrágicas.\n- Tem atipia maligna e produção de osteoide, ausentes aqui."
   },
   "referencias": [
    "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
    "Turcotte RE et al. Chondroblastoma. Hum Pathol. 1993;24:944-949."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-22",
+  "conferido": false
  },
  "tumores-0072": {
-  "conceito": "Metástase distal ao cotovelo ou ao joelho (a chamada metástase ACRAL) é rara (menos de 0,1% do total) e tem associação tão forte que funciona como regra: em mais da metade dos casos o primário é o CARCINOMA DE PULMÃO. A explicação é hemodinâmica. A maioria das metástases ósseas viaja pelo PLEXO VENOSO VERTEBRAL DE BATSON, um sistema sem válvulas que comunica pelve, abdome e tórax com a coluna, e por isso se depositam no esqueleto AXIAL e na porção proximal dos membros, onde há medula vermelha ricamente vascularizada. Para alcançar o rádio, a mão ou o pé é preciso disseminação ARTERIAL, e o pulmão é o único órgão que lança êmbolos tumorais diretamente na circulação sistêmica, sem passar por filtro capilar. A consequência clínica é prática: lesão lítica no antebraço, na mão ou no pé de um adulto, muitas vezes confundida com infecção ou artrite, obriga a tomografia de tórax, porque não raro a metástase acral é a PRIMEIRA manifestação de um câncer de pulmão ainda não diagnosticado.",
-  "correta": "No pulmão.",
+  "conceito": "### Metástase no rádio é metástase acral\nMetástase **distal ao cotovelo ou ao joelho** (rádio, ulna, mão, tíbia distal, pé) é rara, uma fração mínima das metástases ósseas. A associação funciona como regra: em mais da metade dos casos o primário é o ==carcinoma de pulmão==.\n\n### Por que o pulmão\n- A maioria das metástases ósseas viaja pelo **plexo venoso vertebral de Batson**, sem válvulas, que comunica pelve, abdome e tórax com a coluna.\n- Por isso elas se depositam no **esqueleto axial** e na raiz dos membros, onde há medula vermelha bem vascularizada.\n- Para chegar ao antebraço, à mão ou ao pé é preciso **disseminação arterial**.\n- O pulmão lança êmbolos tumorais **direto na circulação sistêmica**, sem outro filtro capilar no caminho.\n\n### O que isso muda na prática\n- Lesão lítica no rádio distal, no carpo ou nas falanges de um adulto costuma ser tratada por semanas como **infecção**, panarício ou artrite.\n- Ela obriga a **tomografia de tórax**.\n- Não raro, a metástase acral é a **primeira manifestação** do câncer de pulmão. O prognóstico é reservado, e o tratamento local visa função e controle da dor.\n\n> **Na prova:** metástase distal ao cotovelo ou ao joelho ==pensa pulmão==. Mama, próstata, rim e tireoide seguem a distribuição axial.",
+  "correta": "**No pulmão.**\n- O rádio fica **distal ao cotovelo**, território da metástase acral.\n- Mais da metade das metástases acrais vem do **carcinoma de pulmão**, pela disseminação arterial direta.",
   "incorretas": {
-   "A": "O rim dá metástase lítica e hipervascular, mas de distribuição axial e proximal.",
-   "B": "A mama é o primário mais frequente de metástase óssea em geral, com padrão misto e distribuição axial.",
-   "D": "A próstata dá metástase blástica, com predileção pela bacia e pela coluna lombar."
+   "A": "**Rim segue o caminho axial.**\n- Metástases **líticas e muito vascularizadas**, que pedem embolização antes de operar.\n- A distribuição é **axial e proximal**.",
+   "B": "**Mama é a mais comum em geral, não no rádio.**\n- É o primário mais frequente de metástase óssea na mulher, com padrão lítico ou misto.\n- Segue a via venosa e a distribuição **axial**.",
+   "D": "**Próstata é blástica e axial.**\n- Metástases **osteoblásticas**, com predileção por **pelve** e **coluna lombar**, pelo plexo de Batson."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-22",
   "conferido": false
  },
  "tumores-0073": {
-  "conceito": "A metástase ACRAL (distal ao cotovelo ou ao joelho, incluindo o rádio, a mão e o pé) responde por menos de 0,1% das metástases ósseas, e em mais da metade dos casos o primário é o CARCINOMA DE PULMÃO. O motivo está na rota de disseminação: a maioria das metástases ósseas se espalha pelo PLEXO VENOSO DE BATSON, sem válvulas, que despeja no esqueleto axial e nas raízes dos membros; alcançar o esqueleto acral exige via ARTERIAL, e só o pulmão lança êmbolos tumorais direto na circulação sistêmica, sem filtro capilar intermediário. Duas consequências práticas. Primeira: diante de lesão lítica no rádio distal, no carpo ou nas falanges de um adulto (quadro frequentemente tratado como infecção, panarício ou artrite por semanas), a tomografia de tórax é obrigatória. Segunda: nesses casos a metástase costuma ser a primeira manifestação da doença, e o prognóstico é reservado, de modo que o tratamento local se orienta pela função e pelo controle da dor, não por intenção curativa.",
-  "correta": "No pulmão.",
+  "conceito": "### Metástase no rádio é metástase acral\nMetástase **distal ao cotovelo ou ao joelho** (rádio, ulna, mão, tíbia distal, pé) é rara, uma fração mínima das metástases ósseas. A associação funciona como regra: em mais da metade dos casos o primário é o ==carcinoma de pulmão==.\n\n### Por que o pulmão\n- A maioria das metástases ósseas viaja pelo **plexo venoso vertebral de Batson**, sem válvulas, que comunica pelve, abdome e tórax com a coluna.\n- Por isso elas se depositam no **esqueleto axial** e na raiz dos membros, onde há medula vermelha bem vascularizada.\n- Para chegar ao antebraço, à mão ou ao pé é preciso **disseminação arterial**.\n- O pulmão lança êmbolos tumorais **direto na circulação sistêmica**, sem outro filtro capilar no caminho.\n\n### O que isso muda na prática\n- Lesão lítica no rádio distal, no carpo ou nas falanges de um adulto costuma ser tratada por semanas como **infecção**, panarício ou artrite.\n- Ela obriga a **tomografia de tórax**.\n- Não raro, a metástase acral é a **primeira manifestação** do câncer de pulmão. O prognóstico é reservado, e o tratamento local visa função e controle da dor.\n\n> **Na prova:** metástase distal ao cotovelo ou ao joelho ==pensa pulmão==. Mama, próstata, rim e tireoide seguem a distribuição axial.",
+  "correta": "**No pulmão.**\n- O rádio fica **distal ao cotovelo**, território da metástase acral.\n- Mais da metade das metástases acrais vem do **carcinoma de pulmão**, pela disseminação arterial direta.",
   "incorretas": {
-   "A": "O rim produz metástases líticas hipervasculares, mas axiais e proximais, e exigem embolização pré-operatória quando operadas.",
-   "B": "A mama lidera as metástases ósseas em geral, com distribuição axial e padrão misto.",
-   "D": "A próstata produz lesões blásticas na bacia e na coluna lombar."
+   "A": "**Rim segue o caminho axial.**\n- Metástases **líticas e muito vascularizadas**, que pedem embolização antes de operar.\n- A distribuição é **axial e proximal**.",
+   "B": "**Mama é a mais comum em geral, não no rádio.**\n- É o primário mais frequente de metástase óssea na mulher, com padrão lítico ou misto.\n- Segue a via venosa e a distribuição **axial**.",
+   "D": "**Próstata é blástica e axial.**\n- Metástases **osteoblásticas**, com predileção por **pelve** e **coluna lombar**, pelo plexo de Batson."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-22",
   "conferido": false
  },
  "tumores-0074": {
-  "conceito": "O desmoide cortical (também chamado defeito cortical distal do fêmur, ou avulsão fibrosa cortical) é uma PSEUDOLESÃO, não é tumor. Ele se localiza na face POSTEROMEDIAL DA METÁFISE DISTAL DO FÊMUR, exatamente na inserção do ADUTOR MAGNO e da cabeça medial do gastrocnêmio, e resulta de tração repetida dessas inserções sobre o periósteo em adolescentes ativos, entre 10 e 15 anos. Na radiografia aparece como irregularidade ou escavação cortical com esclerose ao redor; na ressonância, como uma área que pode ter edema e captar contraste, e é aí que mora o perigo: por localizar-se na metáfise do fêmur distal, a mesma região onde nasce o osteossarcoma, ele JÁ FOI BIOPSIADO E TRATADO COMO SARCOMA. O reconhecimento é feito pela localização característica e pela ausência de massa de partes moles e de destruição cortical franca. A conduta é NÃO FAZER NADA: nem biópsia, nem cirurgia, nem seguimento agressivo, é lesão autolimitada, que regride com a maturidade esquelética.",
-  "correta": "Posteromedialmente na metáfise distal do fêmur.",
+  "conceito": "### Uma pseudolesão, não um tumor\nO desmoide cortical (defeito cortical distal do fêmur, avulsão fibrosa cortical) é uma ==pseudolesão==. Fica na **face posteromedial da metáfise distal do fêmur**, exatamente onde se inserem:\n- o **adutor magno**;\n- a **cabeça medial do gastrocnêmio**.\n\nResulta da **tração repetida** dessas inserções sobre o periósteo, em adolescentes ativos, em geral entre 10 e 15 anos.\n\n### Como aparece\n- **Radiografia:** irregularidade ou escavação da cortical, com esclerose ao redor.\n- **Ressonância:** pode ter edema e captar contraste.\n\n### O perigo\nEstá na metáfise do fêmur distal, **a mesma região do osteossarcoma**. Já foi biopsiado e tratado como sarcoma. O reconhecimento vem da **localização típica** e da ausência de massa de partes moles e de destruição cortical franca.\n\n### Conduta\n==Não mexer==: sem biópsia, sem cirurgia. É autolimitado e regride com a maturidade esquelética.\n\n> **Na prova:** irregularidade cortical **posteromedial** no fêmur distal de adolescente é desmoide cortical, lesão ==\"não toque\"== (don't touch).",
+  "correta": "**Posteromedialmente na metáfise distal do fêmur.**\n- É o ponto de inserção do **adutor magno** e da cabeça medial do gastrocnêmio.\n- A tração repetida dessas inserções explica a lesão.",
   "incorretas": {
-   "A": "A face posterolateral não corresponde à inserção do adutor magno, que é medial.",
-   "C": "A tíbia proximal não é a sede da lesão.",
-   "D": "Mesma objeção quanto ao osso."
+   "A": "**Lado errado.**\n- A face **posterolateral** não corresponde à inserção do adutor magno, que é **medial**.",
+   "C": "**Osso errado.**\n- A tíbia proximal não é sede do desmoide cortical.\n- A lesão é do **fêmur distal**.",
+   "D": "**Osso errado.**\n- Mesmo sendo posteromedial, a tíbia proximal não é a sede.\n- O desmoide cortical está no **fêmur distal**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-22",
   "conferido": false
  },
  "tumores-0075": {
-  "conceito": "A radiossensibilidade dos tumores ósseos malignos se organiza por linhagem, e o corte é claro. MUITO RADIOSSENSÍVEIS: os tumores de CÉLULAS REDONDAS, SARCOMA DE EWING, LINFOMA ÓSSEO, mieloma e plasmocitoma. Neles a radioterapia é parte do tratamento e chega a substituir a cirurgia quando a ressecção implicaria perda funcional inaceitável, como em lesões da pelve e da coluna. POUCO RADIOSSENSÍVEIS: os sarcomas de linhagem mesenquimal produtora de matriz, OSTEOSSARCOMA e, sobretudo, CONDROSSARCOMA, este praticamente radiorresistente, cujo tratamento é exclusivamente cirúrgico com margem ampla. O osteossarcoma recebe QUIMIOTERAPIA neoadjuvante e adjuvante, e a radioterapia fica reservada a situações de margem impossível. Vale a nota histórica que também é regra prática: no tumor de células gigantes a radioterapia foi abandonada quando existe alternativa cirúrgica, porque é justamente ela que induz a transformação maligna.",
-  "correta": "Sarcoma de Ewing e linfoma.",
+  "conceito": "### A radiossensibilidade segue a linhagem\n**Muito radiossensíveis:** os tumores de ==células redondas==.\n- **Sarcoma de Ewing.**\n- **Linfoma ósseo.**\n- **Mieloma** e **plasmocitoma**.\n\nNeles a radioterapia faz parte do tratamento e pode até substituir a cirurgia quando a ressecção custaria função demais, como em lesões da pelve e da coluna.\n\n**Pouco radiossensíveis:** os sarcomas que produzem matriz.\n- **Osteossarcoma:** tratado com **quimioterapia** neoadjuvante e adjuvante, mais cirurgia. A radioterapia fica para margem impossível.\n- **Condrossarcoma:** praticamente **radiorresistente** (e quimiorresistente). Tratamento **cirúrgico** com margem ampla.\n\n### Uma nota que também é regra\nNo **tumor de células gigantes**, a radioterapia foi deixada de lado quando há alternativa cirúrgica, porque ela está associada à **transformação maligna**.\n\n> **Na prova:** radiossensível é ==célula redonda== (Ewing, linfoma, mieloma). Condrossarcoma é o exemplo de radiorresistência.",
+  "correta": "**Sarcoma de Ewing e linfoma.**\n- São tumores de **células redondas**, os mais radiossensíveis entre as neoplasias ósseas malignas.\n- A radioterapia é parte do tratamento de ambos.",
   "incorretas": {
-   "A": "O linfoma está certo, mas o osteossarcoma é relativamente radiorresistente, seu tratamento sistêmico é a quimioterapia.",
-   "C": "Osteossarcoma e condrossarcoma são justamente os dois menos radiossensíveis do grupo.",
-   "D": "O Ewing está certo, mas o condrossarcoma é o exemplo clássico de tumor ósseo radiorresistente."
+   "A": "**Metade certa.**\n- O **linfoma** é radiossensível.\n- O **osteossarcoma** é relativamente radiorresistente, e seu tratamento sistêmico é a quimioterapia.",
+   "C": "**Os dois menos sensíveis.**\n- Osteossarcoma e condrossarcoma são justamente os **menos radiossensíveis** do grupo.",
+   "D": "**Metade certa.**\n- O **Ewing** é radiossensível.\n- O **condrossarcoma** é o exemplo clássico de tumor ósseo radiorresistente."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-22",
   "conferido": false
  },
  "tumores-0076": {
-  "conceito": "Dois princípios da biópsia aparecem nesta questão, e ambos têm consequência real sobre o desfecho. INCISÃO LONGITUDINAL: ela é obrigatória no esqueleto apendicular porque o trajeto da biópsia será RESSECADO EM BLOCO junto com o tumor na cirurgia definitiva; uma incisão transversal atravessa vários compartimentos e obriga a ampliar enormemente a ressecção, muitas vezes inviabilizando a preservação do membro. EXSANGUINAÇÃO POR ELEVAÇÃO: quando se usa torniquete, o membro deve ser esvaziado apenas ELEVANDO-O por alguns minutos, e NUNCA pela faixa de Esmarch ou por compressão, espremer um membro que contém tumor pode empurrar células tumorais para a circulação e para compartimentos vizinhos. Completam o conjunto de regras: janela óssea oval ou redonda (nunca retangular, cujos cantos concentram estresse e provocam fratura), orifício selado com metilmetacrilato para conter o hematoma, trajeto que não cruze intervalos neurovasculares nem compartimentos, dreno saindo em linha com a incisão e próximo a ela, e (a mais importante de todas) a biópsia feita pela própria equipe que fará o tratamento definitivo.",
-  "correta": "Incisão longitudinal e exsanguinação por elevação.",
+  "conceito": "### Dois princípios da biópsia\n**Incisão longitudinal**\n- O trajeto da biópsia será ==ressecado em bloco== junto com o tumor na cirurgia definitiva.\n- A incisão transversal atravessa compartimentos e obriga a ampliar muito a ressecção, às vezes inviabilizando a preservação do membro.\n\n**Exsanguinação por elevação**\n- Se usar torniquete, esvaziar o membro **apenas elevando-o** por alguns minutos.\n- ==Nunca faixa de Esmarch== ou compressão: espremer um membro com tumor pode empurrar células tumorais para a circulação e para compartimentos vizinhos.\n\n### As outras regras do mesmo conjunto\n- Trajeto **sem cruzar** feixe neurovascular nem compartimentos, de preferência por dentro de um músculo, não entre músculos.\n- Janela óssea **oval ou redonda**, nunca retangular (os cantos concentram estresse e favorecem fratura).\n- Hemostasia cuidadosa; o orifício ósseo pode ser selado com cimento para conter o hematoma.\n- **Dreno** saindo em linha com a incisão e perto dela.\n- A mais importante: a biópsia deve ser feita pela **equipe que fará o tratamento definitivo**.\n\n> **Na prova:** biópsia de membro é ==incisão longitudinal e exsanguinação por elevação==.",
+  "correta": "**Incisão longitudinal e exsanguinação por elevação.**\n- A incisão longitudinal permite **ressecar o trajeto** junto com o tumor.\n- A elevação esvazia o membro **sem espremer** o tumor.",
   "incorretas": {
-   "A": "A exsanguinação por elevação está certa, mas a incisão transversal cruza compartimentos e compromete a ressecção definitiva.",
-   "C": "Erra nos dois pontos.",
-   "D": "A incisão longitudinal está certa, mas a exsanguinação por compressão (faixa de Esmarch) é proscrita pelo risco de disseminação tumoral."
+   "A": "**Metade certa.**\n- A exsanguinação por **elevação** está correta.\n- A incisão **transversal** cruza compartimentos e compromete a ressecção definitiva.",
+   "C": "**Erra os dois pontos.**\n- Incisão **transversal** contamina compartimentos.\n- Exsanguinação por **compressão** pode disseminar células tumorais.",
+   "D": "**Metade certa.**\n- A incisão **longitudinal** está correta.\n- A exsanguinação por **compressão** (faixa de Esmarch) é proscrita pelo risco de disseminação."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-22",
   "conferido": false
  },
  "tumores-0077": {
-  "conceito": "O OSTEOSSARCOMA DE PEQUENAS CÉLULAS é uma variante rara (cerca de 1 a 4% dos osteossarcomas) cuja histologia é enganosa: em vez das células fusiformes pleomórficas do osteossarcoma convencional, ele exibe CÉLULAS REDONDAS PEQUENAS E AZUIS, exatamente o padrão do SARCOMA DE EWING, do linfoma e do neuroblastoma metastático. A separação é feita por dois recursos. Histologicamente, procura-se OSTEOIDE PRODUZIDO PELAS CÉLULAS TUMORAIS, achado que define qualquer osteossarcoma, mas que pode ser escasso e passar despercebido numa amostra pequena. E, decisivamente, por IMUNO-HISTOQUÍMICA e biologia molecular: o Ewing expressa CD99 de forma difusa e em membrana e carrega a translocação t(11;22)(q24;q12), com fusão EWSR1-FLI1; o osteossarcoma de pequenas células é CD99 negativo (ou fracamente positivo) e não tem essa translocação. A distinção não é acadêmica, os protocolos de quimioterapia são diferentes, e o Ewing é radiossensível enquanto o osteossarcoma não é.",
-  "correta": "De pequenas células.",
+  "conceito": "### Um osteossarcoma que parece Ewing\nO ==osteossarcoma de pequenas células== é uma variante rara. Em vez das células fusiformes e pleomórficas do convencional, mostra **células redondas pequenas e azuis**, o mesmo padrão do:\n- **sarcoma de Ewing**;\n- **linfoma**;\n- **neuroblastoma** metastático.\n\n### Como separar\n- **Osteoide produzido pelas células tumorais:** define qualquer osteossarcoma, mas pode ser escasso numa amostra pequena.\n- **Imuno-histoquímica:** o **CD99** é forte e difuso na membrana no Ewing, mas **pode ser positivo também** no osteossarcoma de pequenas células. Sozinho, não resolve.\n- **Biologia molecular:** o decisivo. O Ewing tem fusão do **EWSR1** (a clássica t(11;22), EWSR1-FLI1). O osteossarcoma de pequenas células **não tem**.\n\n### Por que importa\nOs protocolos de quimioterapia são diferentes, e o Ewing é **radiossensível**, enquanto o osteossarcoma não é.\n\n> **Na prova:** o subtipo de osteossarcoma que exige diferencial com Ewing é o ==de pequenas células==.",
+  "correta": "**De pequenas células.**\n- Tem **células redondas pequenas e azuis**, o padrão do Ewing.\n- A separação depende de achar osteoide tumoral e da pesquisa molecular (ausência de fusão EWSR1).",
   "incorretas": {
-   "A": "O parosteal é de superfície e de baixo grau, com histologia de trabéculas ósseas maduras em estroma fibroso, não se confunde com tumor de células redondas.",
-   "B": "O periosteal é predominantemente condroblástico, de superfície, e também não gera essa dúvida.",
-   "C": "O convencional tem células fusiformes pleomórficas produzindo osteoide, padrão inconfundível com o de células redondas."
+   "A": "**Parosteal não confunde.**\n- Tumor de superfície, **baixo grau**, com trabéculas ósseas maduras em estroma fibroso.\n- Nada de células redondas.",
+   "B": "**Periosteal também não.**\n- Tumor de superfície, predominantemente **condroblástico**, de grau intermediário.\n- Não gera dúvida com tumor de células redondas.",
+   "C": "**O convencional é fusiforme.**\n- Células **fusiformes e pleomórficas** produzindo osteoide.\n- Padrão diferente do de células redondas."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-22",
   "conferido": false
  },
  "tumores-0078": {
-  "conceito": "Cada método de imagem tem uma pergunta que só ele responde bem, e a tomografia responde a duas. OSTEOMA OSTEOIDE: o diagnóstico depende de enxergar o NICHO, uma zona radiolucente de menos de 1,5 cm, com centro por vezes calcificado, cercada de esclerose reativa densa. Essa esclerose é justamente o que esconde o nicho na radiografia e na ressonância (que, aliás, costuma mostrar edema ósseo e de partes moles tão exuberante que já levou a diagnóstico equivocado de tumor maligno ou de osteomielite). A tomografia com cortes finos mostra o nicho com nitidez, e é também por ela que se guia a ablação por radiofrequência. METÁSTASE PULMONAR: o pulmão é o primeiro sítio de metástase dos sarcomas ósseos, e a tomografia de tórax é o exame de estadiamento e de seguimento, detecta nódulos milimétricos que a radiografia simples não vê, e é ela que define se o paciente é estágio IVA no AJCC. Para contraste: metástase ÓSSEA se rastreia por CINTILOGRAFIA (visão de corpo inteiro), e cisto ósseo se diagnostica por RADIOGRAFIA simples, com o sinal do fragmento caído.",
-  "correta": "Osteoma osteoide e metástase pulmonar.",
+  "conceito": "### Cada exame responde a uma pergunta\nA tomografia é o melhor exame para duas situações:\n\n**Osteoma osteoide**\n- O diagnóstico depende de ver o ==nicho==: área radiolucente de **menos de 1,5 cm**, às vezes com centro calcificado, cercada de **esclerose** densa.\n- A esclerose **esconde** o nicho na radiografia.\n- A ressonância mostra **edema** tão exuberante que já levou a pensar em tumor maligno ou osteomielite.\n- A tomografia com cortes finos mostra o nicho com nitidez e guia a **ablação por radiofrequência**.\n\n**Metástase pulmonar**\n- O pulmão é o **primeiro sítio** de metástase dos sarcomas ósseos.\n- A ==tomografia de tórax== detecta nódulos milimétricos que a radiografia não vê.\n- É o exame de estadiamento e de seguimento.\n\n### Para comparar\n- **Metástase óssea:** rastreio por **cintilografia** (visão de corpo inteiro) ou PET-CT.\n- **Cisto ósseo simples:** a **radiografia** basta, com o sinal do fragmento caído.\n- **Extensão local de tumor:** **ressonância**.\n\n> **Na prova:** tomografia é o exame do ==nicho do osteoma osteoide== e da ==metástase pulmonar==.",
+  "correta": "**Osteoma osteoide e metástase pulmonar.**\n- A tomografia mostra o **nicho** escondido pela esclerose.\n- A tomografia de tórax é o exame de escolha para **nódulos pulmonares** metastáticos.",
   "incorretas": {
-   "A": "O cisto ósseo é diagnóstico radiográfico, e a metástase óssea é rastreada por cintilografia, não por tomografia.",
-   "B": "Acerta a metástase pulmonar, mas o cisto ósseo não precisa de tomografia.",
-   "C": "Acerta o osteoma osteoide, mas o rastreio de metástase óssea é cintilográfico, a tomografia entra depois, para caracterizar uma lesão já localizada."
+   "A": "**Erra os dois.**\n- Cisto ósseo é diagnóstico de **radiografia**.\n- Metástase óssea se rastreia por **cintilografia** (ou PET-CT).",
+   "B": "**Metade certa.**\n- Acerta a **metástase pulmonar**.\n- O cisto ósseo não precisa de tomografia para o diagnóstico.",
+   "C": "**Metade certa.**\n- Acerta o **osteoma osteoide**.\n- O rastreio de metástase óssea é **cintilográfico**. A tomografia entra depois, para caracterizar uma lesão já localizada."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-22",
   "conferido": false
  },
  "tumores-0079": {
