@@ -3,7 +3,7 @@ import { EVENTO_DADOS, gravar, ler, limparTudo, usuarioLocal, type MudancaDados 
 import { deItens, ehTipoSync, estadoVazio, identificador, itens, receberDocumento, registrarAlteracoes, resolverConflito, TIPOS_SYNC, type Alteracao, type Documento, type EstadoSync, type TipoSync } from './modeloSync'
 import { gerarId } from '../util/id'
 
-export interface StatusSync { estado: 'sincronizando' | 'salvo' | 'offline' | 'erro' | 'conflito'; pendentes: number; conflitos: Documento[]; pronto: boolean; detalhe?: string }
+export interface StatusSync { estado: 'sincronizando' | 'salvo' | 'offline' | 'erro' | 'conflito'; pendentes: number; conflitos: Documento[]; pronto: boolean; detalhe?: string; rejeitados: { id: string; tipo: TipoSync; item: string; erro: string; em: number }[] }
 /** Somente uma fila por conta/aba. Operações são idempotentes e conflitos nunca sobrescrevem dados silenciosamente. */
 export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string, notificar: (s: StatusSync) => void) {
   let estado = ler<EstadoSync>('sincronia:v1', estadoVazio())
@@ -14,7 +14,7 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
   const salvar = () => { if (valido()) gravar('sincronia:v1', estado, 'nuvem') }
   let detalhe: string | undefined
   const anunciar = (s: StatusSync['estado']) => {
-    if (valido()) notificar({ estado: s, pendentes: Object.keys(estado.pendentes).length, conflitos: Object.values(estado.conflitos), pronto, detalhe: s === 'erro' ? detalhe : undefined })
+    if (valido()) notificar({ estado: s, pendentes: Object.keys(estado.pendentes).length, conflitos: Object.values(estado.conflitos), pronto, detalhe: s === 'erro' ? detalhe : undefined, rejeitados: Object.entries(estado.rejeitados ?? {}).map(([id, r]) => ({ id, tipo: r.tipo, item: r.item, erro: r.erro, em: r.em })) })
   }
   const descrever = (erro: unknown) => {
     const e = erro as { message?: string; code?: string; details?: string; hint?: string; name?: string } | null
@@ -189,6 +189,20 @@ export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string,
   void sincronizar()
   return {
     sincronizar,
+    /** Devolve à fila os itens recusados (por exemplo, depois de uma correção no servidor). */
+    reenviarRejeitados() {
+      if (!valido() || !estado.rejeitados) return
+      for (const [id, r] of Object.entries(estado.rejeitados)) {
+        estado.pendentes[id] = { tipo: r.tipo, item: r.item, valor: r.valor, base: estado.versoes[id] ?? 0, operacao: gerarId() }
+      }
+      estado.rejeitados = {}
+      salvar(); void sincronizar()
+    },
+    descartarRejeitados() {
+      if (!valido()) return
+      estado.rejeitados = {}
+      salvar(); anunciar('salvo')
+    },
     resolver(doc: Documento, manterLocal: boolean) {
       const key = identificador(doc.tipo, doc.item)
       if (!valido() || !estado.conflitos[key]) return

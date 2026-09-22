@@ -1779,3 +1779,9 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
 @media (max-width: 40rem) {
   .vp-economia__linha { grid-template-columns: 4.8rem minmax(0, 1fr) 3rem; font-size: 0.82rem; }
 }
+.ct-rejeitados { display: grid; gap: 1rem; padding: clamp(1.1rem, 3vw, 1.6rem); border-radius: var(--raio-grande); background: var(--aviso-veu); border: 1px solid color-mix(in srgb, var(--aviso) 40%, transparent); }
+.ct-icone--alerta { background: var(--aviso); color: #fff; }
+.ct-rejeitados__lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.4rem; }
+.ct-rejeitados__lista li { display: grid; gap: 0.1rem; padding: 0.6rem 0.8rem; border-radius: 10px; background: var(--superficie); border: var(--borda); }
+.ct-rejeitados__lista small { color: var(--texto-2); overflow-wrap: anywhere; }
+.dp-heroi__rejeitados { color: #ffe3a3; font-weight: 700; }

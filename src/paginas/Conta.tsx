@@ -22,7 +22,7 @@ const ROTULOS_STATUS = {
 }
 const ROTULOS_TIPO = { respondidas: 'Resposta', notas: 'Anotação', favoritos: 'Favorita', historico: 'Sessão' }
 export function Conta({ consulta }: { consulta?: URLSearchParams }) {
-  const { sessao, recuperacao, encerrarRecuperacao, status, sincronizar, resolver } = usarConta()
+  const { sessao, recuperacao, encerrarRecuperacao, status, sincronizar, resolver, reenviarRejeitados, descartarRejeitados } = usarConta()
   const modoInicial = consulta?.get('modo')
   const [modo, definirModo] = useState<'entrar' | 'criar' | 'recuperar'>(
     modoInicial === 'criar' || modoInicial === 'recuperar' ? modoInicial : 'entrar',
@@ -278,6 +278,19 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       </dl>}
     </section>
     {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
+
+    {status.rejeitados.length > 0 && <section className="ct-rejeitados" id="itens-nao-enviados">
+      <header className="ct-cartao__cabeca"><span className="ct-icone ct-icone--alerta"><Icone nome="alerta" tamanho={18} /></span><div><h2>{status.rejeitados.length} {status.rejeitados.length === 1 ? 'item não pôde ser enviado' : 'itens não puderam ser enviados'}</h2><p>{status.rejeitados.length === 1 ? 'Ele continua salvo' : 'Eles continuam salvos'} neste aparelho, mas o servidor recusou o envio. O resto do seu progresso sincronizou normalmente.</p></div></header>
+      <ul className="ct-rejeitados__lista">
+        {status.rejeitados.slice(0, 8).map((r) => <li key={r.id}><strong>{ROTULOS_TIPO[r.tipo]} · {r.item}</strong><small>{r.erro}</small></li>)}
+      </ul>
+      {status.rejeitados.length > 8 && <p className="ct-nota">E mais {status.rejeitados.length - 8}.</p>}
+      <div className="linha">
+        <button className="botao botao--principal" type="button" onClick={reenviarRejeitados}>Tentar enviar de novo</button>
+        <button className="botao botao--fantasma" type="button" onClick={() => { if (window.confirm('Descartar o aviso? Os itens continuam neste aparelho, mas não serão reenviados.')) descartarRejeitados() }}>Descartar aviso</button>
+        <a className="botao botao--fantasma" href={href(`/contato?assunto=sincronizacao`)}>Relatar o problema</a>
+      </div>
+    </section>}
 
     <div className="ct-grade">
       <section className="ct-cartao">

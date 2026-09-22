@@ -115,6 +115,12 @@ try {
   const estadoSync = m.ler('sincronia:v1', null)
   assert.equal(Object.keys(estadoSync.pendentes).length, 0)
   assert.ok(estadoSync.rejeitados['notas/veneno-1'].erro.includes('23514'))
+  assert.equal(status.rejeitados.length, 1)
+  // Reenviar devolve o item à fila (continua recusado aqui) sem travar o resto.
+  sync.reenviarRejeitados(); await esperar()
+  assert.equal(m.ler('sincronia:v1', null).rejeitados['notas/veneno-1'] !== undefined, true)
+  sync.descartarRejeitados()
+  assert.equal(status.rejeitados.length, 0)
   assert.ok(linhas.some(l => l.usuario_id === usuario && l.tipo === 'notas' && l.item.endsWith(':boa') && l.valor === 'deve subir'))
   // Conflito entre aparelhos se resolve sozinho: na resposta vale a mais recente.
   sync.parar()

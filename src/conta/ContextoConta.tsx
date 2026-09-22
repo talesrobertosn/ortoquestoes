@@ -7,7 +7,7 @@ import { estadoVazio, type Documento } from './modeloSync'
 import { navegar } from '../util/rotas'
 import { gerarId } from '../util/id'
 
-const STATUS_INICIAL: StatusSync = { estado: 'sincronizando', pendentes: 0, conflitos: [], pronto: false }
+const STATUS_INICIAL: StatusSync = { estado: 'sincronizando', pendentes: 0, conflitos: [], pronto: false, rejeitados: [] }
 interface ContaContexto {
   sessao: Session | null
   carregando: boolean
@@ -17,6 +17,8 @@ interface ContaContexto {
   sincronizar: () => void
   reiniciarProgresso: () => void
   resolver: (doc: Documento, manterLocal: boolean) => void
+  reenviarRejeitados: () => void
+  descartarRejeitados: () => void
 }
 const Contexto = createContext<ContaContexto | null>(null)
 export function ProvedorConta({ children }: { children: ReactNode }) {
@@ -69,7 +71,8 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
       gravar('reinicio:em', Date.now(), 'nuvem')
       sync.current = iniciarSincronizacao(supabase, sessao.user.id, definirStatus)
     },
-    sincronizar: () => { void sync.current?.sincronizar() }, resolver: (doc, manterLocal) => sync.current?.resolver(doc, manterLocal) }}>
+    sincronizar: () => { void sync.current?.sincronizar() }, resolver: (doc, manterLocal) => sync.current?.resolver(doc, manterLocal),
+    reenviarRejeitados: () => sync.current?.reenviarRejeitados(), descartarRejeitados: () => sync.current?.descartarRejeitados() }}>
     {carregando ? <div className="conteudo empilha" role="status"><p>Preparando sua conta…</p><button className="botao" onClick={() => { definirUsuarioLocal(null); definirCarregando(false); navegar('/') }}>Continuar sem conta</button></div> : <div key={sessao?.user.id ?? 'visitante'}>{children}</div>}
   </Contexto.Provider>
 }
