@@ -57,9 +57,7 @@ export function CartaoStreak() {
   return (
     <section className={'cartao cartao__corpo cartao-streak' + (marco ? ' cartao-streak--marco' : '')}>
       <div className="cartao-streak__topo">
-        <span className="cartao-streak__chama" aria-hidden="true">
-          <Icone nome="fogo" tamanho={26} />
-        </span>
+        <AnelSequencia dias={streak.atual} />
         <div>
           <p className="meta">SUA SEQUÊNCIA</p>
           <h2>
@@ -85,9 +83,32 @@ export function CartaoStreak() {
           <button type="button" className="botao botao--principal" onClick={() => void compartilhar()} disabled={gerando}>
             <Icone nome="link" tamanho={16} /> {gerando ? 'Gerando imagem…' : 'Compartilhar minha sequência'}
           </button>
-          {compartilhado && <span className="meta" role="status">Imagem baixada — já pode postar no Instagram.</span>}
+          {compartilhado && <span className="meta" role="status">Imagem baixada. Já pode postar no Instagram.</span>}
         </div>
       )}
     </section>
+  )
+}
+
+/** Anel dourado que enche rumo ao próximo marco, com os dias no centro. */
+function AnelSequencia({ dias }: { dias: number }) {
+  const proximo = proximoMarco(dias)
+  const fracao = (MARCOS_STREAK as readonly number[]).includes(dias) || !proximo ? 1 : Math.max(0.06, dias / proximo)
+  const raio = 24, perimetro = 2 * Math.PI * raio
+  return (
+    <span className="anel-sequencia" aria-hidden="true">
+      <svg viewBox="0 0 60 60" width="60" height="60">
+        <defs>
+          <linearGradient id="anel-ouro" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor="#ffe3a3" />
+            <stop offset="1" stopColor="#d99b2b" />
+          </linearGradient>
+        </defs>
+        <circle cx="30" cy="30" r={raio} fill="none" className="anel-sequencia__trilho" strokeWidth="6" />
+        <circle cx="30" cy="30" r={raio} fill="none" stroke="url(#anel-ouro)" strokeWidth="6" strokeLinecap="round"
+          strokeDasharray={`${fracao * perimetro} ${perimetro}`} transform="rotate(-90 30 30)" />
+      </svg>
+      <strong className="anel-sequencia__numero">{dias}</strong>
+    </span>
   )
 }
