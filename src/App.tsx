@@ -1,6 +1,6 @@
 import { Conta } from './paginas/Conta'
 import { useEffect } from 'react'
-import { href, usarRota } from './util/rotas'
+import { usarRota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
 import { Inicio } from './paginas/Inicio'
@@ -125,11 +125,6 @@ export function App() {
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>{pagina}</div>
       </main>
       <Rodape />
-      <nav className="nav-mobile nao-imprime" aria-label="Navegação principal no celular">
-        {([['/', 'Início'], ['/treinar', 'Treinar'], ['/revisao', 'Revisar'], ['/dados', 'Desempenho']]).map(([url, titulo]) => (
-          <a key={titulo} href={href(url)} aria-current={rota.caminho === url ? 'page' : undefined}>{titulo}</a>
-        ))}
-      </nav>
     </div>
   )
 }

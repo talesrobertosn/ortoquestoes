@@ -68,7 +68,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
     <nav className="navegacao-mobile nao-imprime" aria-label="Navegação móvel">
       <a href={href('/')} aria-current={caminho === '/' ? 'page' : undefined}><Icone nome="mapa" /><span>Início</span></a>
       <a href={href('/treinar')} aria-current={caminho.startsWith('/treinar') ? 'page' : undefined}><Icone nome="filtro" /><span>Treinar</span></a>
-      <a href={href('/treinar?situacao=revisar')}><Icone nome="reiniciar" /><span>Revisar</span></a>
+      <a href={href('/revisao')} aria-current={caminho.startsWith('/revisao') ? 'page' : undefined}><Icone nome="reiniciar" /><span>Revisar</span></a>
       <a href={href('/dados')} aria-current={caminho.startsWith('/dados') ? 'page' : undefined}><Icone nome="certo" /><span>Desempenho</span></a>
     </nav>
     </>
