@@ -1,4 +1,4 @@
-import { useEffect, useId, useMemo, useRef, useState } from 'react'
+import { Fragment, useEffect, useId, useMemo, useRef, useState } from 'react'
 import type { NoAssunto } from '../dados/acervo'
 import { normalizar } from '../dados/acervo'
 import { Icone } from './Icone'
@@ -31,12 +31,9 @@ export function SeletorArvore({
   const lista = variante === 'lista'
   const [aberto, definirAberto] = useState(lista)
   const [busca, definirBusca] = useState('')
-  // Abre tudo só quando a lista inteira cabe na tela. Com dezenas de
-  // subtemas, abrir tudo empurra o segundo tema para fora do campo de visão.
-  const [abertos, definirAbertos] = useState<string[]>(() => {
-    const linhas = arvore.reduce((n, tema) => n + 1 + tema.subtemas.length, 0)
-    return linhas <= 16 ? arvore.map((n) => n.slug) : []
-  })
+  // Temas começam fechados: a grade mostra todos de uma vez, e os subtemas
+  // abrem sob demanda logo abaixo do cartão.
+  const [abertos, definirAbertos] = useState<string[]>([])
   const caixa = useRef<HTMLDivElement>(null)
   const idBusca = useId()
 
@@ -134,7 +131,7 @@ export function SeletorArvore({
             autoFocus={!lista}
           />
 
-          <div className="seletor__lista">
+          <div className="seletor__lista seletor__grade">
             {filtrada.length === 0 && (
               <p className="meta" style={{ padding: '0.5rem' }}>
                 Nenhum assunto com esse nome. Apague a busca para ver a lista inteira.
@@ -143,56 +140,67 @@ export function SeletorArvore({
 
             {filtrada.map((no) => {
               const expandido = buscando || abertos.includes(no.slug)
+              const marcado = temas.includes(no.slug)
               const marcadosAqui = no.subtemas.filter((s) => subtemas.includes(s)).length
+              const parcial = !marcado && marcadosAqui > 0
               return (
-                <div className="arvore__tema" key={no.slug}>
-                  <div className="arvore__linha">
-                    <button
-                      type="button"
-                      className="arvore__abrir"
-                      aria-expanded={expandido}
-                      aria-label={`${expandido ? 'Recolher' : 'Expandir'} ${no.nome}`}
-                      disabled={no.subtemas.length === 0}
-                      onClick={() =>
-                        definirAbertos((a) =>
-                          a.includes(no.slug) ? a.filter((s) => s !== no.slug) : [...a, no.slug],
-                        )
-                      }
-                    >
-                      {no.subtemas.length > 0 && (
-                        <Icone nome={expandido ? 'baixo' : 'direita'} tamanho={16} />
-                      )}
-                    </button>
-                    <label className="caixa" style={{ flex: 1, minWidth: 0 }}>
+                <Fragment key={no.slug}>
+                  <div className={'tema-cartao' + (marcado ? ' tema-cartao--marcado' : '') + (parcial ? ' tema-cartao--parcial' : '') + (expandido ? ' tema-cartao--aberto' : '')}>
+                    <label className="tema-cartao__principal">
                       <input
                         type="checkbox"
-                        checked={temas.includes(no.slug)}
+                        checked={marcado}
                         ref={(el) => {
-                          if (el) el.indeterminate = !temas.includes(no.slug) && marcadosAqui > 0
+                          if (el) el.indeterminate = parcial
                         }}
                         onChange={() => alternarTema(no.slug, no)}
                       />
-                      <span style={{ fontWeight: 600 }}>{no.nome}</span>
+                      <span className="tema-cartao__nome">{no.nome}</span>
+                      <span className="tema-cartao__qtd">{porTema[no.slug] ?? 0}</span>
                     </label>
-                    <span className="arvore__contagem">{porTema[no.slug] ?? 0}</span>
+                    {no.subtemas.length > 0 && (
+                      <button
+                        type="button"
+                        className="tema-cartao__sub"
+                        aria-expanded={expandido}
+                        onClick={() =>
+                          definirAbertos((a) =>
+                            a.includes(no.slug) ? a.filter((s) => s !== no.slug) : [...a, no.slug],
+                          )
+                        }
+                      >
+                        {parcial ? `${marcadosAqui} de ${no.subtemas.length} subtemas` : `${no.subtemas.length} subtemas`}
+                        <Icone nome={expandido ? 'cima' : 'baixo'} tamanho={14} />
+                      </button>
+                    )}
                   </div>
-
-                  {expandido &&
-                    no.subtemas.map((sub) => (
-                      <div className="arvore__linha arvore__linha--filho" key={sub}>
-                        <label className="caixa" style={{ flex: 1, minWidth: 0 }}>
-                          <input
-                            type="checkbox"
-                            checked={temas.includes(no.slug) || subtemas.includes(sub)}
-                            disabled={temas.includes(no.slug)}
-                            onChange={() => alternarSubtema(sub)}
-                          />
-                          <span>{sub}</span>
-                        </label>
-                        <span className="arvore__contagem">{porSubtema[sub] ?? 0}</span>
+                  {expandido && no.subtemas.length > 0 && (
+                    <div className="subtemas-painel">
+                      <p className="subtemas-painel__titulo">
+                        {marcado ? `${no.nome} inteiro está marcado. Desmarque o tema para escolher só alguns subtemas.` : `Subtemas de ${no.nome}`}
+                      </p>
+                      <div className="subtemas-painel__chips">
+                        {no.subtemas.map((sub) => {
+                          const ativo = marcado || subtemas.includes(sub)
+                          return (
+                            <button
+                              key={sub}
+                              type="button"
+                              className="chip-subtema"
+                              aria-pressed={ativo}
+                              disabled={marcado}
+                              onClick={() => alternarSubtema(sub)}
+                            >
+                              {ativo && <Icone nome="certo" tamanho={13} />}
+                              {sub}
+                              <span className="chip-subtema__qtd">{porSubtema[sub] ?? 0}</span>
+                            </button>
+                          )
+                        })}
                       </div>
-                    ))}
-                </div>
+                    </div>
+                  )}
+                </Fragment>
               )
             })}
           </div>
@@ -200,7 +208,7 @@ export function SeletorArvore({
           <div className="seletor__rodape">
             <span className="meta">
               {total === 0
-                ? 'Marque quantos quiser — a lista continua aberta.'
+                ? 'Sem marcar nenhum, a sessão usa todos os assuntos.'
                 : `${total} selecionado${total > 1 ? 's' : ''}`}
             </span>
             <button

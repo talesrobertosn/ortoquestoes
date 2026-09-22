@@ -13,11 +13,11 @@ import { consultaParaFiltros, filtrosParaConsulta, navegar } from '../util/rotas
 import { SeletorArvore } from '../componentes/SeletorArvore'
 import { Carregando, Estado } from '../componentes/Estados'
 import { usarSessao } from '../estado/sessao'
-import { usarMedia } from '../util/usarMedia'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { usarEtiquetas } from '../estado/preferencias'
 import { href } from '../util/rotas'
 import { usarConta } from '../conta/ContextoConta'
+import { Icone, type NomeIcone } from '../componentes/Icone'
 
 // A maior parte do acervo ainda traz a prova genérica "TEOT/TARO" (sem
 // diferenciar as duas), então por enquanto as três formas aparecem como uma
@@ -38,9 +38,6 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const { indice, carregando } = usarIndice()
   const { iniciar, sessao } = usarSessao()
   const { sessao: conta } = usarConta()
-  // Em tela grande a árvore fica aberta na página: escolher assunto é o que se
-  // faz aqui, não faz sentido esconder atrás de um menu.
-  const telaLarga = usarMedia('(min-width: 64rem)')
   const [filtros, definirFiltros] = useState<Filtros>(() => consulta.size ? consultaParaFiltros(consulta) : { ...FILTROS_VAZIOS, limite: 10 })
   useEffect(() => {
     const mudou = () => {
@@ -103,6 +100,24 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     return tentativas ? Math.round((acertos / tentativas) * 100) : null
   }, [contexto.respondidas])
 
+  const gerais = useMemo(() => (indice ? contar(indice, FILTROS_VAZIOS, contexto) : null), [indice, contexto])
+  const comentadas = useMemo(() => (indice?.questoes ?? []).filter((q) => q.c === 1).length, [indice])
+  const rapidas: { titulo: string; icone: NomeIcone; quantidade: number; preset: Partial<Filtros> }[] = [
+    { titulo: 'Revisar hoje', icone: 'calendario', quantidade: gerais?.porSituacao.revisarHoje ?? 0, preset: { situacao: 'revisarHoje' } },
+    { titulo: 'Questões novas', icone: 'estrela', quantidade: gerais?.porSituacao.naoRespondidas ?? 0, preset: { situacao: 'naoRespondidas' } },
+    { titulo: 'Que eu errei', icone: 'reiniciar', quantidade: gerais?.porSituacao.erradas ?? 0, preset: { situacao: 'erradas' } },
+    { titulo: 'Só comentadas', icone: 'livro', quantidade: comentadas, preset: { comComentario: true } },
+  ]
+
+  /** Sessão de 10 num clique, sem passar pelos filtros. */
+  function sessaoRapida(preset: Partial<Filtros> = {}) {
+    if (!indice) return
+    if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
+    const rapido: Filtros = { ...FILTROS_VAZIOS, embaralhar: true, limite: 10, ...preset }
+    iniciar(rapido, montarSessao(indice, rapido, Date.now(), contexto))
+    navegar('/sessao')
+  }
+
   function atualizar(parcial: Partial<Filtros>) {
     definirFiltros((atuais) => ({ ...atuais, ...parcial }))
   }
@@ -132,177 +147,160 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     )
   }
 
+  const selecionados = filtros.temas.length + filtros.subtemas.length
   return (
     <div className="empilha-2 treinar-pagina">
-      <header className="limite-leitura">
-        <h1>Montar sessão</h1>
-        <p className="texto-2" style={{ marginTop: '0.5rem' }}>
-          Escolha o recorte e comece. O número dentro do botão é quantas questões atendem aos
-          filtros agora.
-        </p>
-        {!conta && <p className="aviso-ia" style={{ marginTop: '0.75rem' }}>Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. <a href={href('/conta')}>Criar minha conta</a></p>}
-      </header>
-
-      <section className="intencoes treinar-intencoes" aria-label="Escolha seu treino">
-        {([
-          ['Treino rápido', '10 questões para começar', { limite: 10 }],
-          ['Revisar hoje', 'Retome as revisões pendentes', { situacao: 'revisarHoje', limite: 20 }],
-          ['Questões novas', 'Amplie seu repertório', { situacao: 'naoRespondidas', limite: 10 }],
-          ['Somente comentadas', 'Aprenda com as explicações', { comComentario: true, limite: 10 }],
-        ] as [string, string, Partial<Filtros>][]).map(([titulo, texto, preset]) => (
-          <button className="intencao" key={titulo} onClick={() => { definirFiltros({ ...FILTROS_VAZIOS, provas: filtros.provas, ...preset }); definirSimulado(false) }}>
-            <strong>{titulo}</strong><span>{texto}</span>
-          </button>
-        ))}
+      <section className="tr-heroi">
+        <div className="tr-heroi__texto">
+          <h1>Treinar</h1>
+          <p>Sem tempo para montar? Comece 10 questões agora. Quer um recorte? Escolha os filtros abaixo.</p>
+        </div>
+        <button type="button" className="botao botao--claro tr-heroi__rapida" onClick={() => sessaoRapida()} disabled={!indice}>
+          <Icone nome="raio" tamanho={20} />
+          <span><strong>Sessão rápida</strong><small>10 questões de todo o acervo</small></span>
+        </button>
+        <div className="tr-rapidas" aria-label="Sessões rápidas de 10 questões">
+          {rapidas.map((r) => (
+            <button key={r.titulo} type="button" className="tr-rapida" disabled={r.quantidade === 0} onClick={() => sessaoRapida(r.preset)}>
+              <Icone nome={r.icone} tamanho={16} />
+              <span>{r.titulo}</span>
+              <b className="numerico">{r.quantidade}</b>
+            </button>
+          ))}
+        </div>
       </section>
-      <p className="meta treinar-contexto">Acervo de TEOT, TARO, ENARE e outras seleções. Filtros só aparecem quando há dados disponíveis.</p>
-      <div className="cartao treinar-filtros">
-        <div className="cartao__corpo empilha">
-          <section className="filtros-destaque">
-            <h2>Buscar por palavras</h2>
-            <p className="texto-2">Encontre uma questão pelo enunciado, alternativa ou assunto.</p>
-          <div className="campo" style={{ marginBottom: 0 }}>
-            <label className="campo__rotulo" htmlFor="busca-acervo">
-              Buscar no texto das questões
-            </label>
-            <input
-              id="busca-acervo"
-              className="entrada"
-              type="search"
-              name="busca"
-              autoComplete="off"
-              placeholder="Salter-Harris, Weber, manguito…"
-              value={filtros.busca}
-              onChange={(e) => atualizar({ busca: e.target.value })}
-            />
-            {carregandoBusca && (
-              <span className="campo__auxilio">Carregando o texto das questões…</span>
-            )}
-          </div>
+      {!conta && <p className="aviso-ia">Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. <a href={href('/conta')}>Criar minha conta</a></p>}
 
-          </section>
-          <section className="filtros-destaque">
-            <h2>Personalizar assuntos e filtros</h2>
-            <p className="texto-2">Escolha temas, situação, prova, ano e dificuldade para montar o treino ideal.</p>
-          <div className="campo" style={{ marginBottom: 0 }}>
-            <span className="campo__rotulo">Situação</span>
-            <div className="grupo-opcoes" id="filtro-situacao">
-              {SITUACOES.map((situacao) => (
-                <button
-                  key={situacao}
-                  type="button"
-                  className="opcao-segmento"
-                  aria-pressed={filtros.situacao === situacao}
-                  disabled={situacao !== 'todas' && !(contagens?.porSituacao[situacao] ?? 0)}
-                  onClick={() => atualizar({ situacao })}
-                >
-                  {ROTULO_SITUACAO[situacao]}{' '}
-                  <span className="texto-2 numerico">
-                    {contagens?.porSituacao[situacao] ?? 0}
-                  </span>
-                </button>
-              ))}
+      <section className="tr-etapa">
+        <header className="tr-etapa__cabeca">
+          <span className="tr-etapa__numero">1</span>
+          <div>
+            <h2>Assuntos</h2>
+            <p>{selecionados ? `${selecionados} ${selecionados === 1 ? 'selecionado' : 'selecionados'}. Toque de novo para desmarcar.` : 'Marque um ou mais temas. Abra os subtemas para um recorte mais fino.'}</p>
+          </div>
+        </header>
+        <SeletorArvore
+          variante="lista"
+          arvore={arvore}
+          temas={filtros.temas}
+          subtemas={filtros.subtemas}
+          porTema={contagens?.porTema ?? {}}
+          porSubtema={contagens?.porSubtema ?? {}}
+          aoMudar={(temas, subtemas) => atualizar({ temas, subtemas })}
+        />
+        <div className="tr-busca">
+          <Icone nome="busca" tamanho={18} />
+          <label className="so-leitor" htmlFor="busca-acervo">Buscar no texto das questões</label>
+          <input
+            id="busca-acervo"
+            className="entrada"
+            type="search"
+            name="busca"
+            autoComplete="off"
+            placeholder="Ou busque por palavras: Salter-Harris, Weber, manguito…"
+            value={filtros.busca}
+            onChange={(e) => atualizar({ busca: e.target.value })}
+          />
+        </div>
+        {carregandoBusca && <span className="campo__auxilio">Carregando o texto das questões…</span>}
+      </section>
+
+      <section className="tr-etapa">
+        <header className="tr-etapa__cabeca">
+          <span className="tr-etapa__numero">2</span>
+          <div>
+            <h2>Situação</h2>
+            <p>Vem do que você já respondeu. Refazer o que errou rende mais do que começar sempre por uma nova.</p>
+          </div>
+        </header>
+        <div className="tr-pilulas" id="filtro-situacao">
+          {SITUACOES.map((situacao) => (
+            <button
+              key={situacao}
+              type="button"
+              className="tr-pilula"
+              aria-pressed={filtros.situacao === situacao}
+              disabled={situacao !== 'todas' && !(contagens?.porSituacao[situacao] ?? 0)}
+              onClick={() => atualizar({ situacao })}
+            >
+              {ROTULO_SITUACAO[situacao]}
+              <span className="numerico">{contagens?.porSituacao[situacao] ?? 0}</span>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      {(temProva || temAno || Object.keys(contagens?.porDificuldade ?? {}).length > 0) && (
+        <section className="tr-etapa">
+          <header className="tr-etapa__cabeca">
+            <span className="tr-etapa__numero">3</span>
+            <div>
+              <h2>Prova, ano e dificuldade</h2>
+              <p>Sem marcar nada, a sessão considera o acervo inteiro.</p>
             </div>
-            <span className="campo__auxilio">
-              Vem do que você já respondeu na sua conta. Refazer o que errou rende mais do que
-              começar sempre por uma questão nova.
-            </span>
-          </div>
-
-          <div className="campo" style={{ marginBottom: 0 }}>
-            <span className="campo__rotulo">Assuntos</span>
-            <SeletorArvore
-              variante={telaLarga ? 'lista' : 'menu'}
-              arvore={arvore}
-              temas={filtros.temas}
-              subtemas={filtros.subtemas}
-              porTema={contagens?.porTema ?? {}}
-              porSubtema={contagens?.porSubtema ?? {}}
-              aoMudar={(temas, subtemas) => atualizar({ temas, subtemas })}
-            />
-          </div>
-
-          {(temProva || temAno) && (
-            <div className={'linha-campos' + (temProva && temAno ? ' linha-campos--2' : '')}>
-              {temProva && (
-                <div className="campo" style={{ marginBottom: 0 }}>
-                  <span className="campo__rotulo">Prova</span>
-                  <div className="seletor seletor--lista">
-                    <div className="seletor__painel">
-                      <div className="seletor__lista">
-                        {gruposProva.map((grupo) => {
-                          const marcado = grupo.provas.some((p) => filtros.provas.includes(p))
-                          const quantidade = grupo.provas.reduce((soma, p) => soma + (contagens?.porProva[p] ?? 0), 0)
-                          return (
-                            <div className="arvore__linha" key={grupo.rotulo}>
-                              <label className="caixa" style={{ flex: 1, minWidth: 0 }}>
-                                <input
-                                  type="checkbox"
-                                  checked={marcado}
-                                  onChange={() =>
-                                    atualizar({
-                                      provas: marcado
-                                        ? filtros.provas.filter((x) => !grupo.provas.includes(x))
-                                        : [...filtros.provas, ...grupo.provas.filter((p) => !filtros.provas.includes(p))],
-                                    })
-                                  }
-                                />
-                                <span>{grupo.rotulo}</span>
-                              </label>
-                              <span className="arvore__contagem">{quantidade}</span>
-                            </div>
-                          )
-                        })}
-                      </div>
-                    </div>
-                  </div>
-                  <span className="campo__auxilio">
-                    Marque uma ou mais para restringir a sessão a essa prova; sem marcar nenhuma,
-                    a sessão considera o acervo inteiro.
-                  </span>
-                </div>
-              )}
-              {temAno && (
-                <div className="campo" style={{ marginBottom: 0 }}>
-                  <span className="campo__rotulo">Ano</span>
-                  <div className="seletor seletor--lista">
-                    <div className="seletor__painel">
-                      <div className="seletor__lista">
-                        {[...(indice?.anos ?? [])].sort((a, b) => b - a).map((ano) => (
-                          <div className="arvore__linha" key={ano}>
-                            <label className="caixa" style={{ flex: 1, minWidth: 0 }}>
-                              <input
-                                type="checkbox"
-                                checked={filtros.anos.includes(ano)}
-                                onChange={() =>
-                                  atualizar({
-                                    anos: filtros.anos.includes(ano)
-                                      ? filtros.anos.filter((x) => x !== ano)
-                                      : [...filtros.anos, ano],
-                                  })
-                                }
-                              />
-                              <span className="numerico">{ano}</span>
-                            </label>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
+          </header>
+          {temProva && (
+            <div className="tr-grupo">
+              <span className="tr-grupo__rotulo">Prova</span>
+              <div className="tr-pilulas">
+                {gruposProva.map((grupo) => {
+                  const marcado = grupo.provas.some((p) => filtros.provas.includes(p))
+                  const quantidade = grupo.provas.reduce((soma, p) => soma + (contagens?.porProva[p] ?? 0), 0)
+                  return (
+                    <button
+                      key={grupo.rotulo}
+                      type="button"
+                      className="tr-pilula"
+                      aria-pressed={marcado}
+                      onClick={() =>
+                        atualizar({
+                          provas: marcado
+                            ? filtros.provas.filter((x) => !grupo.provas.includes(x))
+                            : [...filtros.provas, ...grupo.provas.filter((p) => !filtros.provas.includes(p))],
+                        })
+                      }
+                    >
+                      {grupo.rotulo}
+                      <span className="numerico">{quantidade}</span>
+                    </button>
+                  )
+                })}
+              </div>
             </div>
           )}
-
+          {temAno && (
+            <div className="tr-grupo">
+              <span className="tr-grupo__rotulo">Ano</span>
+              <div className="tr-pilulas">
+                {[...(indice?.anos ?? [])].sort((a, b) => b - a).map((ano) => (
+                  <button
+                    key={ano}
+                    type="button"
+                    className="tr-pilula"
+                    aria-pressed={filtros.anos.includes(ano)}
+                    onClick={() =>
+                      atualizar({
+                        anos: filtros.anos.includes(ano)
+                          ? filtros.anos.filter((x) => x !== ano)
+                          : [...filtros.anos, ano],
+                      })
+                    }
+                  >
+                    {ano}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
           {Object.keys(contagens?.porDificuldade ?? {}).length > 0 && (
-            <div className="campo" style={{ marginBottom: 0 }}>
-              <span className="campo__rotulo">Dificuldade</span>
-              <div className="grupo-opcoes">
+            <div className="tr-grupo">
+              <span className="tr-grupo__rotulo">Dificuldade</span>
+              <div className="tr-pilulas">
                 {DIFICULDADES.map((d) => (
                   <button
                     key={d}
                     type="button"
-                    className="opcao-segmento"
+                    className="tr-pilula"
                     aria-pressed={filtros.dificuldades.includes(d)}
                     onClick={() =>
                       atualizar({
@@ -312,177 +310,99 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                       })
                     }
                   >
-                    {ROTULO_DIFICULDADE[d]}{' '}
-                    <span className="texto-2 numerico">{contagens?.porDificuldade[d] ?? 0}</span>
+                    {ROTULO_DIFICULDADE[d]}
+                    <span className="numerico">{contagens?.porDificuldade[d] ?? 0}</span>
                   </button>
                 ))}
               </div>
             </div>
           )}
+        </section>
+      )}
 
-          <div className="campo" style={{ marginBottom: 0 }}>
-            <span className="campo__rotulo">Recorte</span>
-            <div className="empilha" style={{ marginTop: '0.25rem' }}>
-              {temImagem && (
-                <label className="caixa">
-                  <input
-                    type="checkbox"
-                    checked={filtros.comImagem}
-                    onChange={(e) => atualizar({ comImagem: e.target.checked })}
-                  />
-                  <span>Só questões com imagem no enunciado</span>
-                </label>
-              )}
-              {temComentario && (
-                <label className="caixa">
-                  <input
-                    type="checkbox"
-                    checked={filtros.comComentario}
-                    onChange={(e) => atualizar({ comComentario: e.target.checked })}
-                  />
-                  <span>Só questões com comentário</span>
-                </label>
-              )}
-              {temAnulada && (
-                <label className="caixa">
-                  <input
-                    type="checkbox"
-                    checked={filtros.incluirAnuladas}
-                    onChange={(e) => atualizar({ incluirAnuladas: e.target.checked })}
-                  />
-                  <span>Incluir questões anuladas (não contam no desempenho)</span>
-                </label>
-              )}
-              <label className="caixa">
-                <input
-                  type="checkbox"
-                  checked={filtros.embaralhar}
-                  onChange={(e) => atualizar({ embaralhar: e.target.checked })}
-                />
-                <span>Embaralhar a ordem</span>
-              </label>
-              <label className="caixa">
-                <input
-                  type="checkbox"
-                  checked={!mostrarEtiquetas}
-                  onChange={(e) => definirEtiquetas(!e.target.checked)}
-                />
-                <span>
-                  Esconder as etiquetas de assunto até responder
-                  <span className="campo__auxilio" style={{ marginTop: 0 }}>
-                    Ler "Salter-Harris" antes do enunciado já elimina metade das alternativas. Vale
-                    para todas as sessões e dá para trocar no meio, pela tecla E.
-                  </span>
-                </span>
-              </label>
-            </div>
+      <section className="tr-etapa">
+        <header className="tr-etapa__cabeca">
+          <span className="tr-etapa__numero">{temProva || temAno ? 4 : 3}</span>
+          <div>
+            <h2>Formato</h2>
+            <p>Quantidade, modo de estudo e detalhes da sessão.</p>
           </div>
-
-          <div className="campo" style={{ marginBottom: 0 }}>
-            <span className="campo__rotulo">Como você quer estudar?</span>
-            <div className="empilha" style={{ marginTop: '0.25rem' }}>
-              <div className="modo-explicacao" role="note">
-                <strong>{simulado ? 'Simulado — como uma prova' : 'Treino livre — aprenda enquanto pratica'}</strong>
-                <span>{simulado ? 'Com tempo e sem gabarito até entregar. O desempenho aparece no final.' : 'Veja o gabarito e a explicação logo após cada resposta.'}</span>
-              </div>
-              <label className="interruptor">
-                <input
-                  type="checkbox"
-                  checked={simulado}
-                  onChange={(e) => definirSimulado(e.target.checked)}
-                />
-                <span className="interruptor__trilho" />
-                <span>
-                  Simulado com tempo
-                  <span className="campo__auxilio" style={{ marginTop: 0 }}>
-                    O gabarito fica guardado até você entregar, como em prova.
-                  </span>
-                </span>
-              </label>
-              {simulado && (
-                <div className="grupo-opcoes" id="filtro-duracao">
-                  {DURACOES.map(([valor, rotulo]) => (
-                    <button
-                      key={valor}
-                      type="button"
-                      className="opcao-segmento"
-                      aria-pressed={minutos === valor}
-                      onClick={() => definirMinutos(valor)}
-                    >
-                      {rotulo}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-          </div>
-
-          </section>
-          <div className="campo" style={{ marginBottom: 0 }}>
-            <span className="campo__rotulo">Quantas questões</span>
-            <div className="grupo-opcoes" id="filtro-limite">
-              <button
-                type="button"
-                className="opcao-segmento"
-                aria-pressed={filtros.limite === null}
-                onClick={() => atualizar({ limite: null })}
-              >
-                Todas
+        </header>
+        <div className="tr-grupo">
+          <span className="tr-grupo__rotulo">Quantas questões</span>
+          <div className="tr-pilulas" id="filtro-limite">
+            {LIMITES.map((n) => (
+              <button key={n} type="button" className="tr-pilula" aria-pressed={filtros.limite === n} disabled={total < n} onClick={() => atualizar({ limite: n })}>
+                {n}
               </button>
-              {LIMITES.map((n) => (
-                <button
-                  key={n}
-                  type="button"
-                  className="opcao-segmento"
-                  aria-pressed={filtros.limite === n}
-                  disabled={total < n}
-                  onClick={() => atualizar({ limite: n })}
-                >
-                  <span className="numerico">{n}</span>
-                </button>
+            ))}
+            <button type="button" className="tr-pilula" aria-pressed={filtros.limite === null} onClick={() => atualizar({ limite: null })}>Todas</button>
+            <label className="tr-quantidade">
+              <span className="so-leitor">Quantidade personalizada</span>
+              <input className="entrada" type="number" min="1" step="1" max={Math.max(total, 1)} value={filtros.limite ?? ''} placeholder="Outra" onChange={(e) => atualizar({ limite: e.target.value ? Math.max(1, Math.min(total || 1, Math.floor(Number(e.target.value)) || 1)) : null })} />
+            </label>
+          </div>
+        </div>
+        <div className="tr-modos" role="radiogroup" aria-label="Como você quer estudar">
+          <button type="button" role="radio" aria-checked={!simulado} className="tr-modo" onClick={() => definirSimulado(false)}>
+            <Icone nome="livro" tamanho={20} />
+            <strong>Treino livre</strong>
+            <span>Gabarito e comentário logo após cada resposta.</span>
+          </button>
+          <button type="button" role="radio" aria-checked={simulado} className="tr-modo" onClick={() => definirSimulado(true)}>
+            <Icone nome="calendario" tamanho={20} />
+            <strong>Simulado com tempo</strong>
+            <span>Gabarito guardado até entregar, como na prova.</span>
+          </button>
+        </div>
+        {simulado && (
+          <div className="tr-grupo">
+            <span className="tr-grupo__rotulo">Duração</span>
+            <div className="tr-pilulas" id="filtro-duracao">
+              {DURACOES.map(([valor, rotulo]) => (
+                <button key={valor} type="button" className="tr-pilula" aria-pressed={minutos === valor} onClick={() => definirMinutos(valor)}>{rotulo}</button>
               ))}
             </div>
           </div>
-
-          <label className="campo">Quantidade personalizada
-            <input className="entrada" type="number" min="1" step="1" max={Math.max(total, 1)} value={filtros.limite ?? ''} placeholder="Todas" onChange={(e) => atualizar({ limite: e.target.value ? Math.max(1, Math.min(total || 1, Math.floor(Number(e.target.value)) || 1)) : null })} />
-          </label>
-          {total > 0 && <section className="modo-explicacao" role="status">
-            <strong>Prévia da sessão</strong>
-            <span>{quantidadeSessao} {quantidadeSessao === 1 ? 'questão' : 'questões'} · cerca de {estimativaMinutos} min{filtros.temas.length ? ` · ${filtros.temas.length === 1 ? 'tema selecionado' : `${filtros.temas.length} temas selecionados`}` : ' · acervo misto'}{desempenhoAnterior !== null ? ` · seu acerto geral: ${desempenhoAnterior}%` : ''}</span>
-          </section>}
-          <div className="acoes" style={{ marginTop: '0.5rem' }}>
-            <button
-              type="button"
-              className="botao botao--fantasma"
-              onClick={() => definirFiltros({ ...FILTROS_VAZIOS })}
-            >
-              Limpar filtros
-            </button>
-            <button
-              type="button"
-              className="botao botao--principal botao--grande"
-              disabled={total === 0 || carregandoBusca}
-              onClick={comecar}
-            >
-              {total === 0 ? (
-                'Nenhuma questão com esses filtros'
-              ) : simulado ? (
-                <>
-                  Iniciar simulado de{' '}
-                  <span className="botao__contador">{quantidadeSessao}</span> questões ·{' '}
-                  {DURACOES.find(([v]) => v === minutos)?.[1]}
-                </>
-              ) : (
-                <>
-                  Responder <span className="botao__contador">{quantidadeSessao}</span>{' '}
-                  {quantidadeSessao === 1 ? 'questão' : 'questões'}
-                </>
-              )}
-            </button>
+        )}
+        <details className="tr-mais">
+          <summary>Mais opções</summary>
+          <div className="tr-mais__lista">
+            {temImagem && (
+              <label className="caixa">
+                <input type="checkbox" checked={filtros.comImagem} onChange={(e) => atualizar({ comImagem: e.target.checked })} />
+                <span>Só questões com imagem no enunciado</span>
+              </label>
+            )}
+            {temComentario && (
+              <label className="caixa">
+                <input type="checkbox" checked={filtros.comComentario} onChange={(e) => atualizar({ comComentario: e.target.checked })} />
+                <span>Só questões com comentário</span>
+              </label>
+            )}
+            {temAnulada && (
+              <label className="caixa">
+                <input type="checkbox" checked={filtros.incluirAnuladas} onChange={(e) => atualizar({ incluirAnuladas: e.target.checked })} />
+                <span>Incluir questões anuladas (não contam no desempenho)</span>
+              </label>
+            )}
+            <label className="caixa">
+              <input type="checkbox" checked={filtros.embaralhar} onChange={(e) => atualizar({ embaralhar: e.target.checked })} />
+              <span>Embaralhar a ordem</span>
+            </label>
+            <label className="caixa">
+              <input type="checkbox" checked={!mostrarEtiquetas} onChange={(e) => definirEtiquetas(!e.target.checked)} />
+              <span>
+                Esconder as etiquetas de assunto até responder
+                <span className="campo__auxilio" style={{ marginTop: 0 }}>
+                  Ler "Salter-Harris" antes do enunciado já elimina metade das alternativas. Vale
+                  para todas as sessões e dá para trocar no meio, pela tecla E.
+                </span>
+              </span>
+            </label>
           </div>
-        </div>
-      </div>
+        </details>
+      </section>
 
       {total === 0 && (
         <Estado titulo="Nenhuma questão atende a esse recorte.">
@@ -493,6 +413,25 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           </p>
         </Estado>
       )}
+
+      <div className="tr-barra" role="region" aria-label="Resumo da sessão">
+        <div className="tr-barra__resumo">
+          <strong>{total === 0 ? 'Nenhuma questão' : `${quantidadeSessao} ${quantidadeSessao === 1 ? 'questão' : 'questões'}`}</strong>
+          <span>
+            {total > 0 && `cerca de ${estimativaMinutos} min · `}
+            {selecionados ? `${selecionados} ${selecionados === 1 ? 'assunto' : 'assuntos'}` : 'acervo misto'}
+            {desempenhoAnterior !== null ? ` · seu acerto: ${desempenhoAnterior}%` : ''}
+          </span>
+        </div>
+        <button type="button" className="botao botao--fantasma tr-barra__limpar" onClick={() => definirFiltros({ ...FILTROS_VAZIOS, limite: 10 })}>Limpar</button>
+        <button type="button" className="botao botao--principal botao--grande" disabled={total === 0 || carregandoBusca} onClick={comecar}>
+          {total === 0 ? 'Ajuste os filtros' : simulado ? (
+            <>Iniciar simulado · <span className="botao__contador">{quantidadeSessao}</span></>
+          ) : (
+            <>Responder <span className="botao__contador">{quantidadeSessao}</span> {quantidadeSessao === 1 ? 'questão' : 'questões'}</>
+          )}
+        </button>
+      </div>
     </div>
   )
 }
