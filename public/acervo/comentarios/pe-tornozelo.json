@@ -1026,811 +1026,812 @@
   "conferido": false
  },
  "pe-tornozelo-0091": {
-  "conceito": "O pé é acometido em cerca de 90% dos pacientes com artrite reumatoide, e frequentemente é o primeiro sítio da doença. No antepé (que é onde tudo começa, pelas metatarsofalângicas) a manifestação predominante é o HÁLUX VALGO, muitas vezes grave, com o hálux cavalgando os dedos vizinhos. Ele vem acompanhado do restante do antepé reumatoide: dedos menores com HIPEREXTENSÃO da metatarsofalângica e flexão das interfalângicas (dedos em garra), luxação dorsal das falanges, migração distal do coxim gorduroso e cabeças metatarsais proeminentes na planta, com calosidades dolorosas.",
-  "correta": "O hálux valgo é a manifestação clínica predominante.",
+  "conceito": "### Pé reumatoide: pontos que caem\n- **Frequência:** o pé é acometido na **grande maioria** dos pacientes (cerca de 90% ao longo da doença) e pode ser o **primeiro sítio**.\n- **Começo:** nas **MTF**; o antepé antes do retropé.\n- **Manifestação predominante do antepé:** ==hálux valgo==, muitas vezes **grave**, cavalgando os dedos vizinhos.\n- **Dedos menores:**\n  - **hiperextensão** (subluxação / luxação dorsal) das **MTF**;\n  - **flexão das IFP**: **dedos em garra**.\n- **Coxim gorduroso** migrado distalmente; cabeças metatarsais **plantares**, calos e metatarsalgia.\n- **Retropé:** **valgo** (tibial posterior).\n\n### Sobre o hálux rígido\n- Não é a manifestação típica do pé reumatoide.\n- Na população geral é **mais comum em mulheres**.\n\n> **Na prova:** manifestação predominante no pé reumatoide = ==hálux valgo==.",
+  "correta": "**O hálux valgo é a manifestação clínica predominante.**",
   "incorretas": {
-   "B": "A proporção de pacientes com acometimento sintomático dos pés é muito maior que um terço, chega a cerca de 90% ao longo da doença.",
-   "C": "A deformidade das metatarsofalângicas dos dedos menores é de HIPEREXTENSÃO com subluxação dorsal, não de flexão; a flexão fica nas interfalângicas.",
-   "D": "Hálux rígido não é a manifestação característica do pé reumatoide, e não tem esse predomínio masculino, o hálux rígido é, aliás, mais frequente em mulheres."
+   "B": "**1/3 com acometimento sintomático.**\n- A proporção é muito maior (cerca de 90%).",
+   "C": "**Flexão da MTF nos dedos menores.**\n- A MTF fica em **hiperextensão**; a flexão é nas **interfalângicas**.",
+   "D": "**Hálux rígido masculino.**\n- Não é típico da AR e é mais frequente em **mulheres**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0092": {
-  "conceito": "Wagner gradua a úlcera do pé diabético pela profundidade e pela presença de infecção profunda ou necrose. Grau 0: pé de risco sem úlcera. Grau 1: úlcera superficial, só pele. Grau 2: úlcera profunda até tendão, cápsula ou osso, SEM infecção profunda. GRAU 3: úlcera profunda COM abscesso, OSTEOMIELITE ou artrite séptica. Grau 4: gangrena localizada. Grau 5: gangrena de todo o pé. Na prática, o que separa o grau 2 do 3 é a resposta a uma pergunta clínica: há coleção, osso infectado ou artrite séptica? O teste do probe-to-bone e a ressonância são os instrumentos usuais para respondê-la.",
-  "correta": "Tipo 3.",
+  "conceito": "### Wagner\n| Grau | Descrição |\n|---|---|\n| 0 | pé de risco, sem úlcera |\n| 1 | úlcera superficial |\n| 2 | úlcera **profunda** (tendão, cápsula, osso), **sem** infecção profunda |\n| ==3== | profunda **com abscesso, ==osteomielite== ou artrite séptica** |\n| 4 | **gangrena localizada** |\n| 5 | **gangrena de todo o pé** |\n\n### Diagnóstico de osteomielite no pé diabético\n- **Probe-to-bone:** tocar osso com estilete. Alto valor preditivo em úlcera infectada.\n- **Radiografia:** lise e reação periosteal (tardias; repetir em 2 a 4 semanas).\n- **RM:** exame de imagem mais útil.\n- **Biópsia óssea**, com cultura e histologia: padrão-ouro. Orienta o antibiótico.\n- **VHS** elevada (acima de ~70 mm/h) reforça a suspeita.\n\n### Tratamento\n- **Antibiótico** guiado por cultura óssea.\n- **Ressecção** do osso infectado quando indicada (por exemplo, amputação de raio).\n- **Descarga** e **revascularização** se houver isquemia.\n\n> **Na prova:** osteomielite = ==Wagner 3==.",
+  "correta": "**Tipo 3.**",
   "incorretas": {
-   "A": "O grau 2 é a úlcera profunda SEM osteomielite nem abscesso.",
-   "C": "O grau 4 corresponde a gangrena localizada, com tecido já necrosado.",
-   "D": "O grau 5 é a gangrena extensa de todo o pé, que leva à amputação maior."
+   "A": "**Tipo 2.**\n- Profunda **sem** osteomielite nem abscesso.",
+   "C": "**Tipo 4.**\n- **Gangrena localizada**.",
+   "D": "**Tipo 5.**\n- **Gangrena** de todo o pé."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0093": {
-  "conceito": "Na doença de Charcot-Marie-Tooth, o fibular longo permanece forte enquanto o tibial anterior enfraquece, e o resultado é o primeiro raio plantifletido. Com a cabeça do primeiro metatarso mais baixa que a do quinto, a borda MEDIAL do antepé desce: isso é, por definição, PRONAÇÃO do antepé, que na nomenclatura do pé recebe também o nome de antepé VALGO (o valgo do antepé é o desvio em que a face plantar olha para lateral). É esse antepé pronado que, para permitir o apoio plantígrado, obriga o retropé a compensar em VARO, e é por isso que o teste de Coleman, apoiando o antepé lateral sobre um bloco e deixando o primeiro raio pender, corrige o varo do retropé quando ele ainda é flexível.",
-  "correta": "Pronação e valgo do antepé, dois nomes para o mesmo desvio, com o primeiro raio baixo.",
+  "conceito": "### CMT: o 1º raio plantifletido\n- **Causa:** fibular longo **forte** e tibial anterior **fraco**; a cabeça do 1º metatarso **desce**.\n- **Efeito no antepé:** borda **medial** mais baixa que a lateral, o que se chama ==pronação== do antepé. Na nomenclatura do pé, o mesmo desvio é chamado ==antepé valgo== (a face plantar olha para lateral).\n- **Consequência no retropé:** para apoiar o pé plantígrado, o retropé compensa em **varo**. É o **cavovaro**.\n\n### Teste de Coleman\n- **Como:** bloco sob a borda **lateral**, com o 1º raio **livre**.\n- **Varo corrige:** retropé **flexível**. A cirurgia é no antepé:\n  - osteotomia de dorsiflexão do 1º metatarso;\n  - fibular longo para o curto.\n- **Varo não corrige:** somar osteotomia do **calcâneo**.\n\n### Termos que confundem\n- **Varo do antepé = supinação** do antepé: borda medial elevada. É o **pé plano** (supinatus).\n- **Valgo do antepé = pronação**: borda medial baixa. É o **pé cavo**.\n\n> **Na prova:** 1º raio plantifletido = antepé ==pronado e valgo==.",
+  "correta": "**Pronação e valgo do antepé.**\n- São dois nomes para o mesmo desvio, com o 1º raio baixo.",
   "incorretas": {
-   "A": "Varo do antepé é o desvio oposto, com a borda medial elevada; ele não decorre da flexão plantar do primeiro raio. O varo, aqui, é do RETROPÉ.",
-   "C": "Supinação do antepé também descreve a borda medial elevada, o contrário do que a plantiflexão do primeiro raio produz.",
-   "D": "Supinação e valgo são termos contraditórios entre si aplicados ao mesmo segmento."
+   "A": "**Pronação e varo.**\n- O varo, no cavovaro, é do **retropé**.",
+   "C": "**Supinação e varo.**\n- É a borda medial **elevada**, o contrário.",
+   "D": "**Supinação e valgo.**\n- Termos contraditórios para o mesmo segmento."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0094": {
-  "conceito": "O apoio monopodal na ponta do pé (single heel rise) é o teste funcional do tibial posterior, e a razão é mecânica: para elevar o calcanhar é preciso que o tendão inverta o retropé primeiro, travando as articulações do médio-pé e transformando o pé num braço de alavanca rígido. Sem tibial posterior, o pé permanece flexível e o tríceps não consegue erguer o corpo. Por isso a perda dessa capacidade marca a passagem do estágio I para o ESTÁGIO II de Johnson e Strom: no estágio I há tenossinovite e dor, mas o teste ainda é possível; no II ele falha, e a deformidade em plano-valgo já apareceu, ainda flexível.",
-  "correta": "Estágio II.",
+  "conceito": "### Elevação unipodal do calcanhar (single heel rise)\n**Como funciona:**\n1. Para subir na ponta do pé, o **tibial posterior** primeiro **inverte** o retropé.\n2. A inversão **trava a Chopart** (transversa do tarso) e o pé vira uma **alavanca rígida**.\n3. O **tríceps** então eleva o corpo.\n\n**Sem tibial posterior**, o pé fica flexível e o tríceps não consegue.\n\n### Johnson e Strom\n| Estágio | Heel rise | Deformidade |\n|---|---|---|\n| I | **consegue** (com dor) | nenhuma |\n| ==II== | ==não consegue== (surge aqui) | plano-valgo **flexível** |\n| III | não consegue | **rígida** |\n| IV | não consegue | + valgo do **tornozelo** |\n\n### Variações do teste\n- **Bipodal:** observar se o calcâneo **inverte** (normal) ou fica em valgo.\n- **Repetido:** fadiga precoce indica disfunção inicial.\n\n> **Na prova:** a incapacidade de elevação unipodal ==surge no estágio II==.",
+  "correta": "**Estágio II.**",
   "incorretas": {
-   "A": "No estágio I o paciente tem dor e edema no trajeto do tendão, mas consegue o apoio monopodal, eventualmente com dor.",
-   "C": "No estágio III a incapacidade persiste, mas ela não SURGE ali: já vinha do estágio II. O que o III acrescenta é a rigidez da deformidade e a artrose subtalar.",
-   "D": "O estágio IV, acrescentado por Myerson, soma a inclinação do tálus em valgo dentro da pinça do tornozelo, com comprometimento do ligamento deltoide."
+   "A": "**Estágio I.**\n- Consegue, eventualmente com dor.",
+   "C": "**Estágio III.**\n- A incapacidade persiste, mas **surgiu** no II.\n- O III acrescenta a **rigidez**.",
+   "D": "**Estágio IV.**\n- Acrescenta o **valgo do tálus** no tornozelo."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0095": {
-  "conceito": "A fáscia plantar tem sua origem no tubérculo MEDIAL da tuberosidade do calcâneo, e é exatamente ali (na face INFEROMEDIAL do calcanhar) que a palpação dói na fasceíte plantar. O exame se completa com duas manobras: a dorsiflexão passiva dos dedos, que tensiona a fáscia pelo mecanismo de cabrestante e acentua a dor, e a medida da dorsiflexão do tornozelo com joelho estendido e fletido (teste de Silfverskiöld), que quase sempre revela encurtamento do gastrocnêmio. Dor em outro ponto do calcanhar deve fazer pensar em outra coisa: fratura de estresse dói à compressão látero-lateral do calcâneo, e dor mais lateral e profunda levanta a suspeita de compressão do nervo de Baxter.",
-  "correta": "Região inferomedial da tuberosidade calcânea.",
+  "conceito": "### Exame da fasceíte plantar\n- **Dor à palpação:** ==inferomedial== da tuberosidade do calcâneo, no **tubérculo medial**, a origem da fáscia.\n- **Cabrestante (windlass):** a dorsiflexão passiva dos dedos tensiona a fáscia e **acentua** a dor.\n- **Silfverskiöld:** quase sempre revela **encurtamento do gastrocnêmio**.\n\n### Mapa da dor no calcanhar\n| Local | Pensar em |\n|---|---|\n| ==Inferomedial== | **fasceíte plantar** |\n| Medial, mais proximal; irradia lateralmente | **Baxter** |\n| Compressão **laterolateral** do calcâneo | **fratura de estresse** |\n| Central plantar, difusa | **atrofia do coxim** |\n| Retromaleolar medial, Tinel | **túnel do tarso** |\n| Posterossuperior (retrocalcâneo) | **bursite retrocalcânea**, **Haglund**, tendinopatia **insercional** |\n| Posterior, criança de 8 a 12 anos | **Sever** (apofisite) |\n\n> **Na prova:** fasceíte plantar = dor ==inferomedial== no calcâneo.",
+  "correta": "**Inferomedial.**",
   "incorretas": {
-   "B": "Dor inferolateral não corresponde à origem da fáscia; sugere compressão do primeiro ramo do nervo plantar lateral ou patologia do próprio osso.",
-   "C": "A região superomedial do calcâneo é a topografia do túnel do tarso, e não da fáscia plantar.",
-   "D": "A região superolateral corresponde à área retrocalcânea e à inserção do tendão calcâneo, território da tendinopatia insercional e da deformidade de Haglund."
+   "B": "**Inferolateral.**\n- Não é a origem da fáscia.",
+   "C": "**Superomedial.**\n- Região do **túnel do tarso**.",
+   "D": "**Superolateral.**\n- Região **retrocalcânea** (Haglund, tendinopatia insercional)."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0096": {
-  "conceito": "O tálus tem dois terços da superfície cobertos por cartilagem, nenhuma inserção muscular e um fluxo predominantemente RETRÓGRADO, do colo para o corpo. Isso explica a taxa de necrose depois de fraturas do colo. As fontes são três. A ARTÉRIA DO CANAL DO TARSO, ramo da TIBIAL POSTERIOR, é a principal: entra pelo canal entre tálus e calcâneo e irriga a maior parte do corpo. A ARTÉRIA DO SEIO DO TARSO, formada pela perfurante da fibular e pela tarsal lateral (da dorsal do pé), irriga a porção LATERAL do colo e da cabeça. E os ramos deltoideos, também da tibial posterior, irrigam a porção medial do corpo, são eles que costumam sobreviver na Hawkins II e explicam por que nem toda fratura desloca para a necrose.",
-  "correta": "A artéria do canal do tarso é ramo da tibial posterior.",
+  "conceito": "### Irrigação do tálus\n- **Características:**\n  - cerca de **60%** da superfície é **cartilagem**;\n  - **sem inserções musculares**;\n  - fluxo **retrógrado** (do colo para o corpo).\n  - Por isso a fratura do colo leva à **necrose**.\n\n| Artéria | Origem | Irriga |\n|---|---|---|\n| ==Do canal do tarso== | ==tibial posterior== | **maior parte do corpo** (a principal) |\n| Ramos **deltoideos** | tibial posterior (via canal do tarso) | **porção medial do corpo** |\n| Do seio do tarso | **perfurante fibular** + **tarsal lateral** (dorsal do pé) | porção **lateral** do colo e da cabeça |\n| Ramos da dorsal do pé | tibial anterior | colo **dorsal** e cabeça |\n| Tubérculo posterior | ramos da tibial posterior e da fibular | processo posterior |\n\n- **Anel anastomótico:** a artéria do **canal** e a do **seio** se unem sob o colo.\n\n### Clínica\n- **Hawkins:** o risco de necrose cresce com o grau.\n- **Os ramos deltoideos** podem ser a única fonte remanescente. **Não lesar o deltoide** na abordagem medial.\n- **Sinal de Hawkins** (~6 a 8 semanas): **rarefação subcondral**. Indica **revascularização**, bom sinal.\n\n> **Na prova:** artéria do canal do tarso = ramo da ==tibial posterior==.",
+  "correta": "**A artéria do canal do tarso é ramo da tibial posterior.**",
   "incorretas": {
-   "A": "A artéria do seio do tarso não vem da tibial posterior: é formada pela perfurante da artéria fibular e pela tarsal lateral, ramo da dorsal do pé.",
-   "C": "A artéria do seio do tarso irriga a porção LATERAL do colo; a porção medial fica a cargo dos ramos deltoideos, da tibial posterior.",
-   "D": "O tubérculo posterior recebe ramos tanto da tibial posterior quanto da fibular, e não há base para eleger a fibular como a principal responsável."
+   "A": "**Seio do tarso da tibial posterior.**\n- Vem da **fibular** (perfurante) + tarsal lateral.",
+   "C": "**Seio do tarso irriga o colo medial.**\n- Irriga a porção **lateral**; a medial fica com os ramos deltoideos.",
+   "D": "**Fibular como principal do tubérculo posterior.**\n- O tubérculo recebe ramos das duas; não há base para eleger a fibular."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0097": {
-  "conceito": "A coalizão talocalcaneana ocorre em geral na faceta média da subtalar, junto ao sustentaculum tali, e trava a articulação que faz inversão e eversão. Com a subtalar bloqueada em posição everta, o CALCÂNEO fica em VALGO, e o pé assume o aspecto plano-valgo rígido, o antigo pé plano espástico peroneal, com os fibulares contraídos mantendo a posição menos dolorosa. Duas datas ajudam: a coalizão calcaneonavicular ossifica e dá sintomas entre 8 e 12 anos, a TALOCALCANEANA entre 12 e 16. E a queixa principal não é estética nem o arco: é DOR no retropé, que piora em terreno irregular e melhora com repouso, muitas vezes precipitada por uma entorse banal.",
-  "correta": "O calcâneo se encontra em valgo.",
+  "conceito": "### Coalizão talocalcânea\n- **Local:** geralmente a **faceta média** da subtalar (sustentáculo).\n- **Idade dos sintomas:** **12 a 16 anos**, quando a barra ossifica.\n- **Efeito:** **trava a subtalar**; o calcâneo fica em ==valgo==. O pé fica **plano-valgo rígido**, com fibulares contraídos (\"pé plano espástico peroneal\").\n- **Queixa principal:** **dor** no retropé ou no seio do tarso.\n  - Piora em **terreno irregular** e com atividade.\n  - Muitas vezes é desencadeada por **entorses de repetição**.\n- **Exame:**\n  - **subtalar rígida**;\n  - na ponta do pé, o calcâneo **não inverte**.\n\n### Comparação\n| | Calcaneonavicular | Talocalcânea |\n|---|---|---|\n| Idade | **8 a 12 anos** | **12 a 16 anos** |\n| Imagem | oblíqua (tamanduá) | perfil (sinal do C); **TC** |\n\n> **Na prova:** coalizão talocalcânea = ==calcâneo em valgo==.",
+  "correta": "**O calcâneo se encontra em valgo.**",
   "incorretas": {
-   "B": "Entre 8 e 12 anos ossifica a coalizão CALCANEONAVICULAR; a talocalcaneana se manifesta entre 12 e 16.",
-   "C": "É o contrário: a perda de mobilidade subtalar é acentuada, e é ela que define o quadro rígido.",
-   "D": "A queixa principal é a dor. O pé plano existe, mas raramente é o que leva o paciente ao consultório."
+   "B": "**8 a 12 anos.**\n- Idade da **calcaneonavicular**.",
+   "C": "**Pouca perda de mobilidade.**\n- É o contrário: a perda é **acentuada**.",
+   "D": "**Perda do arco como queixa.**\n- A queixa é **dor**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0098": {
-  "conceito": "O metatarso aduto é uma deformidade EXCLUSIVA DO ANTEPÉ: os metatarsos desviam medialmente a partir das articulações tarsometatársicas, desenhando a borda lateral do pé convexa e a medial côncava, com o sulco entre hálux e segundo dedo alargado. O RETROPÉ É NORMAL, sem equino, sem varo e com MOBILIDADE PRESERVADA na subtalar. É precisamente isso que o separa do pé torto congênito, em que o retropé está em equinovaro e rígido, e o que permite classificá-lo pela flexibilidade (Bleck): corrige passivamente além da linha média, até a linha média, ou não corrige. A grande maioria resolve espontaneamente, e mesmo os casos rígidos respondem bem ao gesso seriado.",
-  "correta": "Mobilidade preservada no retropé.",
+  "conceito": "### Metatarso aduto: só o antepé\n- **Deformidade:** metatarsos desviados **medialmente** a partir das **tarsometatársicas**.\n  - Borda **lateral convexa**, medial côncava.\n  - Espaço entre o hálux e o 2º dedo **alargado**.\n- **Retropé normal:** sem equino, sem varo, com ==mobilidade subtalar preservada==. É isso que o separa do **pé torto**.\n- **Classificação de Bleck:**\n  - pela **bissetriz do calcanhar** (normal: entre o 2º e o 3º dedo; leve: 3º dedo; moderado: 3º a 4º; grave: 4º a 5º);\n  - pela **flexibilidade**.\n\n### Evolução\n- A **grande maioria** resolve espontaneamente.\n- **Rígidos:** gesso seriado (fulcro no **cuboide**).\n- **Cirurgia:** rara, após os 4 a 6 anos (osteotomias do cuboide e do cuneiforme).\n\n### Associações\n- **Displasia do quadril** (examinar).\n- **Torção tibial interna.**\n\n> **Na prova:** metatarso aduto = ==retropé com mobilidade preservada==.",
+  "correta": "**Mobilidade preservada no retropé.**",
   "incorretas": {
-   "A": "Varo do retropé é achado do pé torto congênito; no metatarso aduto o retropé é neutro.",
-   "C": "O arco plantar medial não está diminuído, se algo, ele parece acentuado pela concavidade da borda medial.",
-   "D": "Pronação do antepé é achado do pé cavovaro. No metatarso aduto o desvio é de ADUÇÃO, no plano transverso."
+   "A": "**Varo do retropé.**\n- Achado do **pé torto**.",
+   "C": "**Arco medial diminuído.**\n- Não; a concavidade medial pode até parecer acentuar o arco.",
+   "D": "**Pronação do antepé.**\n- Achado do **cavovaro**; o desvio aqui é de **adução**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0099": {
-  "conceito": "Eichenholtz descreve a evolução do pé de Charcot em estágios que se reconhecem por dois eixos: o que se vê no pé e o que se vê na radiografia. ESTÁGIO 0: pé quente, edemaciado e eritematoso, com radiografia NORMAL, só a ressonância mostra edema ósseo. ESTÁGIO 1, de FRAGMENTAÇÃO: mantém o pé quente, edemaciado e eritematoso, e agora a radiografia mostra DESTRUIÇÃO ÓSSEA, debris, fraturas periarticulares, subluxação. Estágio 2, de coalescência: o calor e o edema regridem e os fragmentos começam a se unir. Estágio 3, de consolidação: pé frio, osso remodelado, deformidade fixa. A combinação do enunciado (destruição radiográfica COM sinais inflamatórios) é o estágio 1.",
-  "correta": "Tipo 1 (fragmentação).",
+  "conceito": "### Eichenholtz: dois eixos (clínico e radiográfico)\n| Estágio | Clínica | Radiografia |\n|---|---|---|\n| 0 | quente, edema, eritema | **normal** (RM com edema ósseo) |\n| ==1 (fragmentação)== | ==quente, edema, eritema== | ==destruição==: debris, fraturas, subluxação |\n| 2 (coalescência) | calor e edema **regredindo** | absorção de debris, **esclerose**, união |\n| 3 (consolidação) | pé **frio** | consolidado; deformidade **fixa** |\n\n### Diferencial com infecção no estágio 1\n- **Teste da elevação:** o eritema do Charcot **cede** com a perna elevada por alguns minutos; o da celulite **persiste**.\n- **Sem úlcera**, osteomielite é menos provável.\n- **RM:** osteomielite costuma ser **adjacente à úlcera**, e Charcot é **periarticular** e **multifocal** (médio-pé).\n\n### Conduta no estágio 1\n- **Gesso de contato total**, trocado com frequência.\n- **Carga protegida.**\n- **Monitorar a temperatura.**\n\n> **Na prova:** destruição radiográfica + inflamação = ==Eichenholtz 1==.",
+  "correta": "**Tipo 1 (fragmentação).**",
   "incorretas": {
-   "A": "No estágio 0 há inflamação, mas a radiografia ainda é normal, e é justamente aí que imobilizar evita a deformidade.",
-   "C": "No estágio 2 os sinais inflamatórios já cederam; a destruição dá lugar à coalescência dos fragmentos.",
-   "D": "No estágio 3 o pé está frio e o osso consolidado; é o momento em que a reconstrução cirúrgica, se necessária, pode ser feita."
+   "A": "**Tipo 0.**\n- Inflamação com radiografia **normal**.",
+   "C": "**Tipo 2.**\n- Os sinais inflamatórios **cederam**; coalescência.",
+   "D": "**Tipo 3.**\n- Pé **frio**, osso consolidado."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0100": {
-  "conceito": "A tendinopatia insercional do calcâneo é doença dos 2 cm finais do tendão, no ponto de inserção, e se distingue da não insercional (2 a 6 cm acima) pela idade mais avançada, pela associação com sobrepeso e por responder pior ao exercício excêntrico clássico. Junto dela convivem duas bursas: a RETROCALCÂNEA (ou pré-aquileana), profunda, entre o tendão e o ângulo posterossuperior do calcâneo, e a subcutânea calcânea, superficial, entre o tendão e a pele. A resposta se sustenta principalmente por eliminação, e o percentual citado pelo enunciado é o número da banca, o que se pode afirmar com segurança é que essas bursas são inconstantes em tamanho e desenvolvimento, e que a superficial é claramente adventícia, formada pelo atrito do calçado.",
-  "correta": "A bursa pré-aquileana está presente em cerca de metade das pessoas.",
+  "conceito": "### Tendinopatia insercional do Aquiles\n- **Local:** últimos **~2 cm** do tendão, na inserção. A **não insercional** fica a 2 a 6 cm.\n- **Perfil:**\n  - pacientes **mais velhos** (40 a 60 anos);\n  - **sobrepeso**, doença metabólica;\n  - também em atletas.\n- **Associações:**\n  - **deformidade de Haglund** (proeminência posterossuperior do calcâneo);\n  - **bursite retrocalcânea**;\n  - **calcificação / esporão** intratendíneo.\n\n### Bursas\n- **Retrocalcânea (pré-aquileana):** **profunda**, entre o tendão e o calcâneo. A questão afirma que está presente em ==~50%== das pessoas; é o **número da banca**.\n- **Subcutânea calcânea:** superficial, **adventícia** (atrito do calçado; \"**pump bump**\").\n\n### Tratamento\n- **Conservador** na maioria:\n  - **elevação do calcanhar** (salto alivia);\n  - excêntrico **sem dorsiflexão abaixo do neutro** (Jonsson);\n  - **ondas de choque**.\n- **Cirurgia** após ~6 meses de falha:\n  - **ressecção do Haglund**;\n  - debridamento;\n  - reinserção com âncoras, com ou sem **FLH**.\n\n> **Na prova:** opção correta (por eliminação) = ==bursa pré-aquileana em ~50%==.",
+  "correta": "**A bursa pré-aquileana está presente em cerca de metade das pessoas** (dado da banca).",
   "incorretas": {
-   "A": "O salto alto ALIVIA a tendinopatia insercional: ele mantém o tornozelo em discreta flexão plantar, reduz a dorsiflexão e afasta o tendão do ângulo posterossuperior do calcâneo. É por isso que a elevação do calcanhar faz parte do tratamento conservador.",
-   "B": "A maioria responde a tratamento conservador, elevação do calcanhar, alongamento, exercícios excêntricos adaptados e ondas de choque. A cirurgia fica para os casos que falham depois de seis meses.",
-   "D": "A faixa etária típica é mais alta, entre 40 e 60 anos, e frequentemente com sobrepeso ou doença metabólica associada. A tendinopatia do atleta jovem é mais a não insercional."
+   "A": "**Piora com salto alto.**\n- O salto **alivia**: afasta o tendão do ângulo posterossuperior do calcâneo.",
+   "B": "**Maioria cirúrgica.**\n- A maioria responde ao tratamento **conservador**.",
+   "D": "**Homens de 30 a 40 anos.**\n- A faixa típica é **mais alta** (40 a 60 anos).\n- O atleta jovem tem mais a forma **não insercional**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0101": {
-  "conceito": "Os parâmetros radiográficos do pé plano, sempre com CARGA. No AP: ângulo talocalcâneo (Kite) AUMENTADO, acima de 30 a 40 graus, porque o retropé em valgo faz os dois eixos divergirem; e ângulo de cobertura talonavicular aumentado (acima de 7 graus), medindo a abdução do antepé. No PERFIL: ângulo talocalcâneo também aumentado; ângulo de Méary (talo-primeiro metatarso) aberto com ápice plantar; e ângulo de inclinação do calcâneo (pitch) DIMINUÍDO, abaixo de 18 a 20 graus, o calcâneo se horizontaliza quando o arco desaba. Guardar as direções é o suficiente: no pé plano tudo o que mede divergência aumenta, e o que mede altura do arco diminui.",
-  "correta": "Ângulo talocalcâneo acima de 40 graus na incidência AP.",
+  "conceito": "### Radiografia do pé plano (sempre com carga)\n**Regra geral:** no pé plano, o que mede **divergência** ou **abdução** aumenta, e o que mede **altura do arco** diminui.\n\n| Incidência | Medida | Pé plano |\n|---|---|---|\n| AP | ==talocalcâneo (Kite)== | ==aumentado== (acima de ~35° a 40°; normal ~20° a 40°) |\n| AP | cobertura talonavicular | **aumentada** (abdução do antepé; normal de poucos graus, até ~7°) |\n| AP | tálus / 1º metatarso | aumentado (abdução) |\n| Perfil | talocalcâneo | **aumentado** |\n| Perfil | **Méary** | ápice **plantar** |\n| Perfil | **pitch do calcâneo** | ==diminuído== (menos de ~18° a 20°) |\n| Perfil | altura do cuneiforme medial | diminuída |\n\nOs valores normais variam entre referências; o que importa é a **direção** da alteração.\n\n### Pé cavo, o espelho\n- **Kite diminuído.**\n- **Méary** com ápice **dorsal**.\n- **Pitch** acima de ~25° a 30°.\n\n> **Na prova:** pé plano = ==Kite aumentado no AP== (acima de 40°).",
+  "correta": "**Ângulo talocalcâneo acima de 40° no AP.**",
   "incorretas": {
-   "B": "No perfil o talocalcâneo do pé plano está AUMENTADO; valores baixos apontam para pé cavovaro.",
-   "C": "O ângulo de cobertura talonavicular normal é de poucos graus, e valores acima de 7 já indicam abdução do antepé. Oitenta graus não é uma referência dessa medida.",
-   "D": "A inclinação do calcâneo acima de 25 graus é achado de pé CAVO. No pé plano ela cai abaixo de 18 a 20 graus."
+   "B": "**Talocalcâneo abaixo de 35° no perfil.**\n- No pé plano o talocalcâneo do perfil está **aumentado**.",
+   "C": "**Cobertura talonavicular acima de 80°.**\n- Não é referência dessa medida (normal de poucos graus).",
+   "D": "**Pitch acima de 25°.**\n- Achado do pé **cavo**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0102": {
-  "conceito": "Coughlin e Shurnas separaram os graus 3 e 4 do hálux rígido por um único achado, e ele é clínico, não radiográfico: a DOR NO ARCO MÉDIO de movimento passivo. No grau 3 há menos de 10 graus de dorsiflexão, espaço articular gravemente reduzido, osteófitos exuberantes e dor NOS EXTREMOS do movimento, mas o meio do arco é indolor. No grau 4, tudo isso se mantém e a dor aparece também no meio do arco. A razão de essa distinção existir é terapêutica: enquanto o arco médio é indolor, ainda há cartilagem funcionante e a queilectomia pode resolver; com dor no meio do arco, a articulação está destruída de ponta a ponta e a solução é a artrodese.",
-  "correta": "Dor no meio do arco na movimentação passiva.",
+  "conceito": "### Coughlin-Shurnas: 3 versus 4\n| | Grau 3 | Grau 4 |\n|---|---|---|\n| Dorsiflexão | menos de 10° | menos de 10° |\n| Radiografia | redução **grave** do espaço, osteófitos, cistos | igual |\n| Dor | nos **extremos** do movimento; ==arco médio indolor== | extremos + ==dor no meio do arco== |\n\n- O que separa os dois é **clínico**: a ==dor no arco médio== na movimentação **passiva**.\n\n### Por que importa\n- **Arco médio indolor:** ainda há **cartilagem funcionante** no centro. A **queilectomia** pode funcionar.\n- **Dor no arco médio:** articulação destruída de ponta a ponta. **Artrodese** da 1ª MTF.\n\n> **Na prova:** grau 4 = ==dor no meio do arco passivo==.",
+  "correta": "**Dor no meio do arco na movimentação passiva.**",
   "incorretas": {
-   "A": "Intensidade de dor não é o critério, o grau 3 já cursa com dor importante nos extremos.",
-   "B": "O arco de movimento não distingue os dois: ambos ficam abaixo de 10 graus de dorsiflexão.",
-   "C": "As alterações radiográficas são igualmente graves nos dois graus; a diferença é o exame físico."
+   "A": "**Dor mais intensa.**\n- A intensidade não é o critério.",
+   "B": "**Maior restrição de movimento.**\n- Ambos ficam abaixo de 10°.",
+   "C": "**Radiografia mais exuberante.**\n- Igualmente graves; a diferença é o exame."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0103": {
-  "conceito": "As palmilhas de Valenti são um recurso simples e amplamente usado no manejo conservador da metatarsalgia: combinam **retângulos de espuma e de borracha, de densidades variáveis**, posicionados para redistribuir a carga que incide sobre as cabeças metatarsais dolorosas, aliviando a região sem imobilizar o pé. Justamente por serem confeccionadas com materiais macios e de baixo custo, não têm papel de propulsão nem função rígida, o objetivo é acomodação e alívio da pressão plantar, não correção biomecânica ativa.",
-  "correta": "C. As palmilhas de Valenti usam retângulos de espuma e borracha de densidades variáveis, para redistribuir a carga sobre as cabeças metatarsais.",
+  "conceito": "### Palmilhas de Valenti\n- **Material:** ==retângulos de espuma e borracha de densidades variáveis==, montados sob o antepé.\n- **Objetivo:** **redistribuir a carga** sob as cabeças metatarsais dolorosas, aliviando os pontos de hiperpressão (**acomodação**). Não é correção biomecânica ativa.\n- **Vantagens:**\n  - **baratas**;\n  - fáceis de ajustar;\n  - permitem **\"esvaziar\"** a área sob a cabeça dolorosa e apoiar as vizinhas.\n\n### Metatarsalgia: princípios do conservador\n- **Barra ou coxim retrocapital** (metatarsal pad): fica **proximal** às cabeças, **nunca embaixo** delas.\n- **Calçado:** câmara anterior ampla, salto baixo, **solado em mata-borrão** (rocker).\n- **Alongamento** do gastrocnêmio: o encurtamento sobrecarrega o antepé.\n- **Tratar a causa:**\n  - hálux valgo (transferência);\n  - **2º metatarso longo**;\n  - instabilidade da placa plantar;\n  - Morton.\n\n> **Na prova:** Valenti = ==espuma e borracha de densidades variáveis==.",
+  "correta": "**Usam retângulos de espuma e borracha de densidades variáveis.**",
   "incorretas": {
-   "A": "Não há uma recomendação padronizada de revisão a cada 12 meses, a troca depende do desgaste do material e da resposta clínica do paciente.",
-   "B": "É o contrário: o material é macio (espuma e borracha), não rígido, e a função não é propulsão, mas acomodação e alívio de carga.",
-   "D": "A descrição de uma proteção que cobre da cabeça do metatarso até a base da falange proximal não corresponde ao desenho clássico da palmilha de Valenti."
+   "A": "**Revisão a cada 12 meses.**\n- Não há esse padrão; a troca depende do desgaste e da resposta.",
+   "B": "**Material rígido para propulsão.**\n- É **macio**; a função é acomodação.",
+   "D": "**Proteção da cabeça do metatarso à base da falange.**\n- Não é o desenho clássico da Valenti."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0104": {
-  "conceito": "No compartimento posterior profundo da perna, três músculos correm lado a lado: o tibial posterior (mais profundo e central), o flexor longo dos dedos (posição intermediária, mais medial) e o flexor longo do hálux (mais lateral, junto à fíbula). A seta na imagem aponta para a posição intermediária do grupo, correspondente ao **flexor longo dos dedos**, músculo que desce medialmente ao flexor longo do hálux, passando posteriormente ao maléolo medial antes de se dividir em quatro tendões destinados aos dedos laterais do pé.",
-  "correta": "D. O músculo indicado pela seta, na posição intermediária do compartimento posterior profundo, é o flexor longo dos dedos.",
+  "conceito": "### A imagem\nVista **posterior** da perna, sem os músculos superficiais (gastrocnêmio e sóleo). Aparecem o compartimento **posterior profundo** e o feixe **tibial posterior** no centro. A seta aponta o ventre muscular do lado **medial** (tibial), ao lado do feixe: o ==flexor longo dos dedos==.\n\n### Compartimento posterior profundo\n| Músculo | Posição | Origem |\n|---|---|---|\n| ==Flexor longo dos dedos== | **medial** | face posterior da **tíbia** |\n| Tibial posterior | **central / profundo**, entre os dois | membrana interóssea, tíbia e fíbula |\n| Flexor longo do hálux | **lateral** | face posterior da **fíbula** |\n\n### Cruzamentos\n- **Na perna distal:** o tendão do **tibial posterior** cruza por baixo do FLD e fica **mais medial / anterior** no maléolo (\"**Tom, Dick and very nervous Harry**\"):\n  1. **T**ibial posterior;\n  2. **D**igitorum (FLD);\n  3. artéria (**A**), veia (**V**) e nervo (**N**) tibiais;\n  4. **H**allucis (FLH).\n- **Na planta:** o FLD cruza o FLH no **nó de Henry**.\n\n### Relevância\n- **Transferência do FLD** na disfunção do tibial posterior (estágio II).\n- **Túnel do tarso:** o FLD passa sob o retináculo dos flexores.\n\n> **Na prova:** músculo profundo **medial**, na face da tíbia = ==flexor longo dos dedos==.",
+  "correta": "**Flexor longo dos dedos.**",
   "incorretas": {
-   "A": "O fibular longo está localizado no compartimento lateral da perna, não no compartimento posterior profundo mostrado na imagem.",
-   "B": "O tibial posterior ocupa uma posição mais profunda e central no compartimento, distinta da posição indicada pela seta.",
-   "C": "O flexor longo do hálux ocupa a posição mais lateral do compartimento posterior profundo, junto à fíbula, distinta da posição indicada pela seta."
+   "A": "**Fibular longo.**\n- Compartimento **lateral**.",
+   "B": "**Tibial posterior.**\n- Central e mais profundo, coberto pelos flexores.",
+   "C": "**Flexor longo do hálux.**\n- Posição **lateral**, junto à fíbula."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0105": {
-  "conceito": "O estágio II de Johnson e Strom é o da deformidade FLEXÍVEL com tendão já insuficiente, e o achado que o caracteriza no exame é a falência funcional do tibial posterior: perde-se o apoio monopodal na ponta do pé, o calcâneo não inverte ao tentá-lo, e quando se pede inversão contra resistência o paciente recruta o TIBIAL ANTERIOR para substituir o tendão doente. Para flagrar isso é preciso testar corretamente (pé em flexão plantar, invertendo a partir da eversão), porque só assim o tibial posterior fica isolado. Ressalva: o valgo do retropé também está presente no estágio II, embora flexível; o que separa o estágio II do I não é a existência do valgo, e sim a falência do tendão que a compensação denuncia.",
-  "correta": "Compensação para a inversão do pé usando o tibial anterior.",
+  "conceito": "### Disfunção do tibial posterior, estágio II (Johnson e Strom)\n- **Tendão:** insuficiente.\n- **Deformidade:** plano-valgo **flexível** (redutível).\n- **Exame:**\n  - **não faz** a elevação unipodal do calcanhar, ou faz sem inverter o calcâneo;\n  - **muitos dedos** positivo;\n  - na inversão contra resistência, ==recruta o tibial anterior== para compensar.\n\n### Como isolar o tibial posterior\n- **Posição de partida:** pé em **flexão plantar** + **eversão**.\n- **Pedido:** inversão contra resistência.\n- **Por quê:** em dorsiflexão, o **tibial anterior** também inverte e mascara a fraqueza.\n\n### Diferenças entre os estágios\n| Estágio | Achado-chave |\n|---|---|\n| I | dor e edema; **heel rise preservado** |\n| ==II== | ==heel rise perdido; deformidade flexível; compensação com o tibial anterior== |\n| III | deformidade **rígida** |\n| IV | + **valgo do tornozelo** |\n\n> **Na prova:** estágio II = ==compensação da inversão com o tibial anterior==.",
+  "correta": "**Compensação da inversão do pé com o tibial anterior.**",
   "incorretas": {
-   "A": "O valgo existe no estágio II, mas é flexível e redutível; o valgo evidente e RÍGIDO, com artrose subtalar, caracteriza o estágio III.",
-   "B": "Manter o apoio monopodal na ponta do pé é achado do estágio I, perdê-lo é o que marca a entrada no estágio II.",
-   "D": "Enfraquecimento apenas leve aos testes manuais corresponde ao estágio I, com tenossinovite e dor sem deformidade."
+   "A": "**Valgo evidente do retropé.**\n- No II existe, mas **flexível**.\n- O valgo **rígido** é do III.",
+   "B": "**Apoio monopodal mantido.**\n- Achado do estágio **I**.",
+   "D": "**Enfraquecimento leve.**\n- Estágio **I**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0106": {
-  "conceito": "O pé é acometido em cerca de 90% dos pacientes com artrite reumatoide, e a doença começa pelo antepé, nas metatarsofalângicas. A deformidade mais comum e mais característica é o HÁLUX VALGO, que costuma ser grave, com o hálux cavalgando ou sendo cavalgado pelos dedos vizinhos. Ele integra o conjunto do antepé reumatoide: hiperextensão e luxação dorsal das metatarsofalângicas dos dedos menores, dedos em garra, migração distal do coxim gorduroso e cabeças metatarsais proeminentes na planta. No retropé, quando a doença avança, o padrão é o plano-valgo por falência do tibial posterior.",
-  "correta": "Hálux valgo.",
+  "conceito": "### Deformidade mais comum no pé reumatoide\n- **Resposta:** ==hálux valgo==, frequentemente **grave**.\n- **Frequência:** o pé é acometido em **cerca de 90%** ao longo da doença.\n- **Início:** pelas **MTF** do antepé.\n\n### Antepé reumatoide completo\n- **Hálux valgo.**\n- **MTF menores** em **hiperextensão / luxação dorsal**.\n- **Dedos em garra.**\n- **Coxim gorduroso** migrado distalmente.\n- **Cabeças metatarsais** proeminentes, com calosidades.\n\n### Retropé\nPlano-**valgo**, por falência do **tibial posterior** e sinovite da subtalar e da talonavicular.\n\n### Não confundir\n- **Pé cavo** e **varo do retropé:** causa **neurológica** (CMT, por exemplo).\n- **Equino:** contratura secundária, inespecífica.\n\n> **Na prova:** deformidade mais comum no pé reumatoide = ==hálux valgo==.",
+  "correta": "**Hálux valgo.**",
   "incorretas": {
-   "B": "O retropé reumatoide vai para VALGO, não para varo, o varo é do pé cavovaro neurológico.",
-   "C": "Pé cavo é deformidade de causa neurológica, não inflamatória.",
-   "D": "Pé equino pode surgir como contratura secundária tardia em qualquer doença com imobilidade, mas não é a deformidade característica do pé reumatoide."
+   "B": "**Varo do retropé.**\n- O retropé reumatoide vai para **valgo**.",
+   "C": "**Pé cavo.**\n- Deformidade de causa **neurológica**.",
+   "D": "**Pé equino.**\n- Contratura secundária, não característica."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0107": {
-  "conceito": "A técnica de Girdlestone-Taylor (também chamada de Girdlestone-Taylor-Parrish) é a TRANSFERÊNCIA DO FLEXOR LONGO DOS DEDOS para o dorso do dedo: o tendão é seccionado distalmente, dividido longitudinalmente em duas bandas, que passam uma de cada lado da falange proximal e são suturadas ao capuz extensor no dorso, sobre a interfalângica proximal. A lógica é converter um flexor em flexor da metatarsofalângica e extensor das interfalângicas, substituindo os intrínsecos falidos, que são a origem da deformidade. Por isso a indicação é a deformidade FLEXÍVEL: se a articulação já está rígida, nenhuma transferência a corrige, e o caminho passa a ser a ressecção-artrodese da interfalângica proximal.",
-  "correta": "Transferência do tendão flexor longo dos dedos para o capuz extensor.",
+  "conceito": "### Girdlestone-Taylor (Parrish)\n- **Técnica:** ==transferência do flexor longo dos dedos (FLD) para o capuz extensor==.\n  1. O FLD é desinserido **distalmente**.\n  2. É **dividido** em duas bandas.\n  3. Cada banda passa por um **lado da falange proximal**.\n  4. As bandas são **suturadas no dorso**, sobre o capuz extensor.\n- **Lógica:** o FLD passa a **fletir a MTF** e **estender as IF**, substituindo os **intrínsecos** falidos, que são a causa da deformidade.\n- **Indicação:** dedo em **martelo / garra flexível**.\n\n### Deformidades dos dedos menores\n| Deformidade | MTF | IFP | IFD |\n|---|---|---|---|\n| **Martelo** (hammer) | neutra / leve extensão | **flexão** | neutra / extensão |\n| **Garra** (claw) | **hiperextensão** | flexão | flexão |\n| **Malho** (mallet) | neutra | neutra | **flexão** |\n\n### Rígida\n**Ressecção da cabeça da falange proximal** (artroplastia) ou **artrodese da IFP**, com fio.\n\n> **Na prova:** Girdlestone-Taylor = ==FLD transferido para o capuz extensor==.",
+  "correta": "**Transferência do flexor longo dos dedos para o capuz extensor da IFP.**",
   "incorretas": {
-   "A": "A ressecção dos côndilos da falange média (ou proximal) com artrodese é o procedimento da deformidade RÍGIDA, a artroplastia ressecção de Post ou a artrodese interfalângica.",
-   "B": "Tenotomia com secção dos colaterais é gesto de liberação, não a transferência descrita.",
-   "D": "Tenotomia com fixação temporária por fio é um procedimento simplificado, usado sobretudo em crianças e em dedos em garra flexíveis do pé neurológico, mas não é a técnica que leva esses nomes."
+   "A": "**Ressecção de côndilos com interposição.**\n- Procedimento da deformidade **rígida** (artroplastia de ressecção / artrodese).",
+   "B": "**Tenotomia do FLD + secção dos colaterais.**\n- Liberação, não a transferência.",
+   "D": "**Tenotomia do FLD + fio.**\n- Procedimento simplificado (dedos em garra flexíveis, crianças).\n- Não é Girdlestone-Taylor."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 10"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "pe-tornozelo-0108": {
-  "conceito": "No pé plano adquirido do adulto por insuficiência do tendão tibial posterior, a deformidade progride segundo um padrão característico e previsível, refletindo a perda da função de suporte do arco medial: o retropé assume um alinhamento em **valgo**, o mediopé sofre **abdução** progressiva (peritalar), visível clinicamente pelo sinal dos \"too many toes\" (dedos demais visíveis lateralmente quando observado por trás), e o antepé, acompanhando o colapso do arco, assume uma posição de **pronação** em relação ao retropé, completando o padrão de deformidade planovalga característico dessa condição, cuja progressão é classicamente descrita nos estágios de Johnson e Strom.",
-  "correta": "C. No pé plano adquirido por insuficiência do tibial posterior, a deformidade cursa com valgo do retropé, abdução do mediopé e pronação do antepé.",
+  "conceito": "### Questão anulada\nO gabarito preliminar era **C** (abdução do médio-pé e **pronação** do antepé). A anulação provavelmente se deve ao **antepé**: na descrição clássica do pé plano adquirido, ele fica em **supinação** (antepé varo, supinatus) em relação ao retropé, o que corresponderia à alternativa **D**.\n\n### Deformidade do pé plano adquirido (disfunção do tibial posterior)\n| Segmento | Deformidade |\n|---|---|\n| Retropé | **valgo** |\n| Médio-pé | ==abdução== (subluxação **peritalar**: descobertura talonavicular); colapso do arco |\n| Antepé | ==supinação== (varo) **compensatória**, para a borda medial tocar o chão; com o tempo, fixa |\n\n### Por que o supinatus importa\n- Se o antepé supinado for **fixo**, corrigir só o retropé deixa a borda **medial elevada**.\n- **Solução:** **Cotton** (cunha de adição no cuneiforme medial) ou artrodese da coluna medial (1ª TMT ou naviculocuneiforme).\n- **Teste clínico:** com o retropé mantido em neutro, observar se o antepé fica supinado.\n\n> **Na prova:** pé plano adquirido = retropé valgo + ==abdução do médio-pé + supinação do antepé== (questão anulada).",
+  "correta": "**Abdução do médio-pé e pronação do antepé** era o gabarito preliminar.\n- A questão foi **anulada**. A descrição clássica é de antepé **supinado** (alternativa D).",
   "incorretas": {
-   "A": "O padrão característico envolve abdução, não adução, do mediopé.",
-   "B": "O padrão característico envolve abdução do mediopé (não adução) e pronação do antepé (não supinação).",
-   "D": "O antepé assume pronação, não supinação, dentro do padrão característico dessa deformidade planovalga."
+   "A": "**Adução do médio-pé e pronação.**\n- O médio-pé vai para **abdução**.",
+   "B": "**Adução do médio-pé e supinação.**\n- Acerta o antepé, erra o médio-pé.",
+   "D": "**Abdução do médio-pé e supinação do antepé.**\n- É a descrição **clássica** da deformidade, provável motivo da anulação."
   },
   "geradoEm": "2026-09-21",
   "conferido": false
  },
  "pe-tornozelo-0109": {
-  "conceito": "O sinal do arco doloroso é a manobra que separa PARATENDINITE de TENDINOSE no tendão calcâneo. Palpa-se o ponto doloroso com o tendão relaxado e depois se move o tornozelo em dorsiflexão e flexão plantar, mantendo o dedo no mesmo lugar da pele. Se a área dolorosa SE DESLOCA junto com o tendão, a lesão está no próprio tendão (tendinose ou nódulo intratendíneo). Se a dor permanece FIXA no mesmo ponto enquanto o tendão desliza por baixo, o problema está no paratendão, que é imóvel, é a paratendinite. A distinção tem consequência: paratendinite responde bem à liberação do paratendão, tendinose exige tratar a degeneração intratendínea.",
-  "correta": "Tendão calcâneo.",
+  "conceito": "### Sinal do arco doloroso (tendão calcâneo)\n- **Como:**\n  1. Palpar o **ponto doloroso** / espessamento com o tornozelo em repouso.\n  2. Mover o tornozelo em **dorsiflexão e flexão plantar**, mantendo o dedo parado na pele.\n- **Interpretação:**\n  - a área dolorosa **acompanha** o tendão (se desloca): lesão **intratendínea**, **tendinose** ou nódulo;\n  - a dor fica **fixa** enquanto o tendão desliza: **paratendinite** (o paratendão não se move).\n\n### Por que distinguir\n- **Paratendinite:**\n  - tratamento conservador;\n  - injeção de **alto volume** / liberação;\n  - **ressecção do paratendão**.\n- **Tendinose:**\n  - **excêntrico** (Alfredson);\n  - ondas de choque;\n  - **debridamento** com ou sem FLH.\n\n### Avaliação dos outros tendões\n- **Tibial posterior:** heel rise, muitos dedos, inversão resistida.\n- **Fibular longo:** eversão ativa contra a dorsiflexão do 1º metatarso.\n- **Tibial anterior:** dorsiflexão / inversão resistidas.\n\n> **Na prova:** sinal do arco doloroso = ==tendão calcâneo==.",
+  "correta": "**Tendão calcâneo.**",
   "incorretas": {
-   "B": "A tendinopatia do fibular longo se avalia por palpação do trajeto retromaleolar e plantar-lateral e pela eversão resistida com pressão dorsal sobre a cabeça do primeiro metatarso.",
-   "C": "O tibial anterior tem trajeto anterior e superficial, e sua avaliação é por dorsiflexão e inversão resistidas.",
-   "D": "O tibial posterior se avalia pelo apoio monopodal na ponta do pé, pelo sinal dos muitos dedos e pela inversão resistida a partir da eversão."
+   "B": "**Fibular longo.**\n- Eversão ativa contra a dorsiflexão do 1º metatarso; palpação retromaleolar.",
+   "C": "**Tibial anterior.**\n- Dorsiflexão / inversão resistidas.",
+   "D": "**Tibial posterior.**\n- Heel rise, muitos dedos, inversão a partir da eversão."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 19"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "pe-tornozelo-0110": {
-  "conceito": "As duas coalizões que respondem por quase todos os casos têm topografia precisa. A TALOCALCANEANA acomete tipicamente a FACETA MEDIAL da subtalar, isto é, a faceta que se apoia sobre o SUSTENTACULUM TALI, por isso o sinal do C no perfil desenha a continuidade entre o domo do tálus e o sustentáculo, e por isso a tomografia coronal é o exame que confirma. A CALCANEONAVICULAR se forma entre o PROCESSO ANTERIOR do calcâneo e o navicular, e é o alongamento desse processo que produz o sinal do tamanduá na oblíqua a 45 graus.",
-  "correta": "Faceta medial da talocalcaneana e entre o processo anterior do calcâneo e o navicular.",
+  "conceito": "### Topografia das coalizões\n| Coalizão | Local exato |\n|---|---|\n| **Talocalcânea** | ==faceta média (medial)== da subtalar, sobre o **sustentáculo do tálus** |\n| **Calcaneonavicular** | entre o ==processo anterior do calcâneo== e o **navicular** |\n\n### Imagem\n- **Talocalcânea:**\n  - **sinal do C** no perfil (tálus e sustentáculo contínuos);\n  - **TC coronal**: mede a porcentagem da faceta **posterior** comprometida, que decide entre ressecção e artrodese.\n- **Calcaneonavicular:**\n  - **oblíqua a 45°**, onde se vê a barra;\n  - **tamanduá** no perfil (processo anterior alongado).\n\n### Facetas da subtalar\n- **Posterior:** a maior.\n- **Média:** sobre o sustentáculo; sede da **coalizão**.\n- **Anterior:** pequena; às vezes fundida com a média.\n\n> **Na prova:** coalizões = ==faceta medial talocalcânea + processo anterior do calcâneo ao navicular==.",
+  "correta": "**Faceta medial da talocalcaneana e entre o processo anterior do calcâneo e o navicular.**",
   "incorretas": {
-   "B": "A faceta anterior da subtalar é sede rara de coalizão; a clássica é a média (medial), do sustentáculo.",
-   "C": "Acerta a faceta medial, mas o processo do calcâneo que se liga ao navicular é o ANTERIOR, o processo lateral do calcâneo fica na face lateral, longe do navicular.",
-   "D": "Erra as duas topografias."
+   "B": "**Faceta anterior.**\n- A clássica é a **média** (sustentáculo).",
+   "C": "**Processo lateral do calcâneo.**\n- É o processo **anterior** que se liga ao navicular.",
+   "D": "**Faceta anterior e processo lateral.**\n- As duas topografias estão erradas."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 29"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "pe-tornozelo-0111": {
-  "conceito": "No metatarso aduto o retropé é NORMAL, e a correção deve ser feita só no antepé: estabiliza-se o médio-pé com o polegar apoiado no cuboide e na base dos metatarsos laterais e abduz-se o antepé. Se, em vez disso, o gesso empurra o retropé para VALGO (o que acontece quando se usa o calcanhar como alavanca), cria-se um pé com retropé valgo e antepé ainda aduzido: é o PÉ EM SERPENTINA (skewfoot, ou pé em Z), deformidade iatrogênica difícil de tratar e bem pior que o problema original. O tálo vertical, por sua vez, não é criado por gesso: é malformação congênita, com luxação dorsal do navicular sobre o colo do tálus.",
-  "correta": "Não se deve fazer valgo excessivo do retropé, sob pena de criar um pé em serpentina iatrogênico.",
+  "conceito": "### Gesso no metatarso aduto: o erro a evitar\n- **Onde está a deformidade:** só no **antepé**; o retropé é **normal**.\n- **Técnica correta:**\n  - estabilizar o retropé em **neutro**;\n  - fulcro com o polegar no **cuboide / base dos metatarsos laterais**;\n  - **abduzir o antepé**.\n- **Erro:** usar o calcanhar como alavanca e empurrar o retropé para ==valgo==. Resultado:\n  - retropé **valgo** + antepé ainda **aduzido**;\n  - ==pé em serpentina== (skewfoot, pé em Z), iatrogênico e **difícil de tratar**.\n\n### Pé em serpentina\n- **Componentes:**\n  - antepé **aduto**;\n  - médio-pé com **abdução** (translação lateral do navicular);\n  - retropé **valgo**.\n- **Origem:** congênito ou **iatrogênico**.\n- **Tratamento:** sintomático; nos refratários, osteotomias de **alongamento do calcâneo** (retropé) + cuneiforme medial / cuboide (antepé).\n\n### Tálus vertical\n**Malformação congênita**; não é criado por gesso.\n\n> **Na prova:** no gesso do metatarso aduto, evitar ==valgo do retropé (pé em serpentina)==.",
+  "correta": "**Valgo excessivo do retropé, para evitar o pé em serpentina iatrogênico.**",
   "incorretas": {
-   "A": "Acerta o erro técnico a evitar, mas erra a consequência: o tálus vertical é congênito e não decorre de manipulação.",
-   "C": "A abdução do antepé é justamente o movimento CORRETIVO desejado, e a consequência citada não corresponde.",
-   "D": "Abduzir o antepé é o objetivo do tratamento, não o excesso a evitar, o pé em serpentina nasce do valgo do retropé, não da abdução do antepé sobre um fulcro correto."
+   "A": "**Valgo para evitar tálus vertical.**\n- O erro técnico está certo, mas o tálus vertical é **congênito**.",
+   "C": "**Abdução do antepé / tálus vertical.**\n- Abduzir o antepé é o **objetivo**.",
+   "D": "**Abdução do antepé / serpentina.**\n- A serpentina vem do **valgo do retropé**, não da abdução correta do antepé."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 19"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "pe-tornozelo-0112": {
-  "conceito": "A posição da artrodese da primeira metatarsofalângica é decisiva, porque um hálux mal posicionado dói mais que a artrose que se quis tratar. A receita tem três componentes: DORSIFLEXÃO de 20 a 30 graus EM RELAÇÃO AO EIXO DO PRIMEIRO METATARSO (o que corresponde a 10 a 15 graus em relação ao SOLO, atenção à referência, porque é aí que as questões pegam), VALGO de 10 a 15 graus, e rotação neutra, sem pronação nem supinação. Dorsiflexão de menos causa dor na ponta do dedo e dificulta o desprendimento; de mais gera atrito no dorso do calçado e transferência de carga. Um teste simples na mesa: apoiar uma placa plana na planta simulando o solo e conferir se a polpa do hálux fica a poucos milímetros dela.",
-  "correta": "30 graus (faixa de 20 a 30 graus em relação ao primeiro metatarso).",
+  "conceito": "### Posição da artrodese da 1ª MTF\n| Plano | Posição |\n|---|---|\n| Sagital | ==20° a 30° de dorsiflexão em relação ao eixo do 1º metatarso==, o que equivale a **~10° a 15° em relação ao solo** |\n| Transverso | **valgo** de ~**10° a 15°** |\n| Rotação | **neutra**: sem pronação nem supinação |\n\n### Atenção à referência\n- **Eixo do metatarso:** 20° a 30°.\n- **Solo:** 10° a 15°.\n- Muitas questões pegam aqui.\n\n### Teste intraoperatório\nUma **placa plana** simula o solo. A polpa do hálux deve ficar a **poucos milímetros** dela, e a IF deve ter mobilidade.\n\n### Erros\n| Erro | Consequência |\n|---|---|\n| Pouca dorsiflexão | dor na **polpa / IF**; dificuldade de desprendimento; **artrose da IF** |\n| Excesso de dorsiflexão | **atrito** no calçado; **metatarsalgia** de transferência |\n| Varo | atrito medial; sobrecarga |\n\n### Indicações da artrodese\n- **Hálux rígido** graus 3 e 4.\n- **Hálux valgo grave**, AR, neuromuscular.\n- **Recidiva.**\n- Hálux **varo** iatrogênico.\n\n> **Na prova:** dorsiflexão em relação ao 1º metatarso = ==~30°== (20° a 30°).",
+  "correta": "**30 graus** (faixa de 20° a 30° em relação ao 1º metatarso).",
   "incorretas": {
-   "A": "5 graus deixaria o hálux praticamente reto em relação ao metatarso, isto é, com a ponta pressionando o solo.",
-   "B": "15 graus é o valor correto quando a referência é o SOLO, não o eixo do metatarso, a alternativa estaria certa em outra pergunta.",
-   "D": "45 graus é dorsiflexão excessiva: o hálux fica elevado, atrita no calçado e a carga se transfere para os metatarsos menores."
+   "A": "**5 graus.**\n- Hálux quase reto: a ponta pressiona o solo.",
+   "B": "**15 graus.**\n- É o valor em relação ao **solo**, não ao metatarso.",
+   "D": "**45 graus.**\n- Excessiva: atrito e metatarsalgia de transferência."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 82"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "pe-tornozelo-0113": {
-  "conceito": "O acesso anterolateral do pilão tibial ganhou espaço porque o envelope de partes moles lateral é mais generoso que o medial, com menor risco de deiscência. A incisão começa cerca de 1 cm lateral à crista tibial, corre longitudinalmente e, na sua porção DISTAL, deve estar ALINHADA COM O QUARTO RAIO. Essa referência tem duas razões: mantém a incisão sobre o intervalo entre o extensor longo dos dedos e os fibulares, e a afasta do feixe neurovascular anterior e do nervo fibular superficial, que cruzam mais medialmente. Vale lembrar a regra que atravessa todo o tratamento do pilão: entre acessos, respeitar pontes de pele de pelo menos 7 cm e operar em definitivo só depois que o edema ceder.",
-  "correta": "Quarto raio.",
+  "conceito": "### Acesso anterolateral do pilão tibial\n- **Vantagem:** envelope de partes moles **mais espesso** que o medial, com menos deiscência.\n- **Incisão:**\n  - começa **~1 cm lateral** à crista da tíbia;\n  - distalmente, alinhada ao ==4º raio==.\n- **Plano:** entre os **extensores** (ELD / fibular terceiro), afastados para **medial** com o feixe, e a **fíbula / fibulares**.\n- **Exposição:**\n  - fragmento **anterolateral (Chaput)**;\n  - superfície articular central e lateral;\n  - pode incluir a **fíbula** distal.\n- **Riscos:**\n  - nervo **fibular superficial**, que cruza o campo; **identificar e proteger**;\n  - feixe tibial anterior (medial).\n\n### Por que o 4º raio\n- Mantém a incisão sobre o **intervalo** desejado.\n- Longe do **feixe** (2º raio) e dos **fibulares** (5º).\n\n### Regras do pilão\n- **Fixador externo** em ponte primeiro.\n- **Fixação definitiva** quando surgir o **sinal da ruga** (7 a 21 dias).\n- **Ponte de pele** ampla entre incisões (classicamente 7 cm).\n\n> **Na prova:** anterolateral do pilão, parte distal alinhada ao ==4º raio==.",
+  "correta": "**Quarto raio.**",
   "incorretas": {
-   "A": "Alinhar ao segundo raio traria a incisão para cima do feixe tibial anterior e do nervo fibular profundo.",
-   "B": "O terceiro raio ainda é medial demais em relação ao intervalo desejado.",
-   "D": "O quinto raio levaria o acesso lateral demais, para cima dos fibulares e longe da superfície articular da tíbia."
+   "A": "**Segundo raio.**\n- Sobre o feixe tibial anterior e o fibular profundo.",
+   "B": "**Terceiro raio.**\n- Ainda medial demais para o intervalo desejado.",
+   "D": "**Quinto raio.**\n- Lateral demais, sobre os fibulares."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0114": {
-  "conceito": "A artropatia de Charcot do pé diabético acomete mais frequentemente o MÉDIO-PÉ, nas articulações TARSOMETATÁRSICAS (Lisfranc) e naviculocuneiformes, é o tipo 1 de Brodsky, responsável por algo em torno de 60 a 70% dos casos. A explicação é mecânica: o médio-pé é o ponto de maior concentração de estresse na transição entre retropé e antepé, e o colapso dessa região produz a deformidade em mata-borrão (rocker-bottom), com proeminência óssea plantar que ulcera. Depois vêm o retropé (Brodsky 2) e o tornozelo (Brodsky 3A), este último o de pior prognóstico pela instabilidade que gera.",
-  "correta": "Tarsometatársica.",
+  "conceito": "### Onde o Charcot acomete (Brodsky)\n| Tipo | Região | Frequência |\n|---|---|---|\n| ==1== | ==médio-pé: tarsometatársicas (Lisfranc) e naviculocuneiformes== | **a mais comum**, em torno de 60% a 70% (varia entre séries) |\n| 2 | retropé: subtalar, talonavicular, calcaneocuboídea | menos comum |\n| 3A | tornozelo | menos comum; **pior prognóstico** (instabilidade) |\n| 3B | tuberosidade do calcâneo | raro |\n\n### Médio-pé\n- **Mecânica:** ponto de **concentração de estresse** entre o retropé e o antepé.\n- **Colapso:** pé em **mata-borrão** (rocker-bottom), com proeminência **plantar**, que **ulcera**.\n- **Relativamente estável**: responde bem ao gesso e à órtese.\n- **Exostectomia** plantar quando a úlcera persiste em pé estável.\n\n### Tornozelo e retropé\n- **Mais instáveis.**\n- Mais indicação de **artrodese** (haste retrógrada).\n\n> **Na prova:** Charcot mais frequente = ==tarsometatársica (médio-pé)==.",
+  "correta": "**Tarsometatarsal.**",
   "incorretas": {
-   "A": "A subtalar integra o acometimento do retropé, que é o tipo 2 de Brodsky, menos frequente.",
-   "B": "A talonavicular também pertence ao retropé, e vem depois do médio-pé em frequência.",
-   "D": "A calcaneocuboídea é a menos acometida das articulações do retropé."
+   "A": "**Subtalar.**\n- Retropé (Brodsky 2), menos frequente.",
+   "B": "**Talonavicular.**\n- Também retropé; menos frequente que o médio-pé.",
+   "D": "**Calcaneocuboídea.**\n- A menos acometida das articulações do retropé."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0115": {
-  "conceito": "O tendão calcâneo não tem bainha sinovial verdadeira: é envolvido pelo PARATENDÃO, e é dele que vem a maior parte do suprimento sanguíneo, através do MESOTENDÃO, que se insere na face ANTERIOR (ventral, profunda) do tendão. Isso tem duas consequências práticas. A primeira é cirúrgica: o reparo deve ser feito por acesso posteromedial, preservando a face anterior do tendão e o mesotendão, dissecar essa face devasculariza o reparo. A segunda é fisiopatológica: a zona de 2 a 6 cm acima da inserção é a de menor densidade vascular, e é justamente onde o tendão degenera e rompe.",
-  "correta": "Superfície anterior do tendão.",
+  "conceito": "### Vascularização do tendão calcâneo\n- **Sem bainha sinovial verdadeira:** é envolvido pelo **paratendão**.\n- **Fontes de irrigação:**\n  - **junção miotendínea** proximal;\n  - **junção osteotendínea** distal;\n  - principalmente o **paratendão**, via **mesotendão** (vínculas), que entra pela face ==anterior== (profunda) do tendão.\n- **Zona hipovascular:** **2 a 6 cm** acima da inserção. É onde o tendão degenera e **rompe**.\n\n### Consequências cirúrgicas\n- **Acesso posteromedial** (ou medial), longe do **sural**, que é lateral.\n- **Preservar a face anterior** do tendão e o mesotendão. Não dissecar o plano anterior (gordura de Kager).\n- **Fechar o paratendão** separadamente, se possível, para reduzir aderências e melhorar a vascularização.\n- **Pele posterior fina:** manipular com cuidado; risco de **deiscência**.\n- **Técnicas mini-invasivas / percutâneas:** reduzem o problema de ferida; risco de **lesão do sural**.\n\n> **Na prova:** vasos do mesotendão do Aquiles = face ==anterior==.",
+  "correta": "**Anterior.**",
   "incorretas": {
-   "A": "A face medial é onde se faz habitualmente a incisão, justamente por ser a mais segura em relação ao nervo sural, mas não é onde entram os vasos do mesotendão.",
-   "B": "A face lateral é evitada pela proximidade do nervo sural, e também não é o local de entrada dos vasos.",
-   "D": "A face posterior é a superficial, sob a pele; é a que menos contribui para a vascularização."
+   "A": "**Medial.**\n- Onde se faz a incisão (longe do sural), mas não é a entrada dos vasos.",
+   "B": "**Lateral.**\n- Evitada pela proximidade do **sural**.",
+   "D": "**Posterior.**\n- Superficial, sob a pele; contribui pouco."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0116": {
-  "conceito": "Atrás do maléolo medial, os tendões do compartimento posterior profundo se dispõem em uma ordem previsível, de anterior para posterior: tibial posterior, flexor longo dos dedos, artéria e nervo tibial, e por último o flexor longo do hálux, o mais posterior de todos, correndo bem próximo ao tendão calcâneo. A seta na imagem aponta justamente para essa posição mais posterior, junto ao tendão de Aquiles, correspondente ao tendão do **flexor longo do hálux**.",
-  "correta": "B. A estrutura assinalada, na posição mais posterior junto ao tendão calcâneo, é o tendão do flexor longo do hálux.",
+  "conceito": "### A imagem\nVista **medial** do tornozelo, com o tendão calcâneo à direita e os tendões do compartimento posterior profundo contornando o maléolo medial. Segundo o gabarito, a seta indica o tendão mais **posterior** do grupo, junto ao Aquiles: o ==flexor longo do hálux==.\n\n### Ordem retromaleolar medial (de anterior para posterior)\n**\"Tom, Dick And Very Nervous Harry\"**:\n1. **T**ibial posterior (junto ao maléolo);\n2. flexor longo dos **D**edos;\n3. **A**rtéria tibial posterior;\n4. **V**eias;\n5. **N**ervo tibial;\n6. flexor longo do **H**álux (o mais posterior e **profundo**; passa no **sulco do tálus**, entre os tubérculos posteriores, e sob o **sustentáculo**).\n\n### Pontos do FLH\n- É o **único** desses tendões que passa **atrás do tálus**, no sulco entre os tubérculos posteromedial e posterolateral.\n- Por isso é a referência na **artroscopia posterior**: tudo **medial** a ele é perigoso (feixe).\n- **Tendinite / estenose do FLH:** bailarinas (posição em **pointe**); **hálux em gatilho**.\n\n> **Na prova:** tendão mais posterior atrás do maléolo medial, junto ao Aquiles = ==FLH==.",
+  "correta": "**Flexor longo do hálux.**",
   "incorretas": {
-   "A": "O tibial posterior ocupa a posição mais anterior desse grupo de tendões, não a posição posterior indicada pela seta.",
-   "C": "O flexor longo dos dedos ocupa uma posição intermediária, entre o tibial posterior e o flexor longo do hálux, não a posição mais posterior indicada.",
-   "D": "O flexor superficial dos dedos é um músculo do antebraço, não uma estrutura presente na região do tornozelo mostrada."
+   "A": "**Tibial posterior.**\n- O **mais anterior**, colado ao maléolo.",
+   "C": "**Flexor longo dos dedos.**\n- Intermediário, logo atrás do tibial posterior.",
+   "D": "**Flexor superficial dos dedos.**\n- Músculo do **antebraço**; não existe no tornozelo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0117": {
-  "conceito": "Na face medial do calcâneo, logo abaixo do tálus, existe uma projeção óssea em forma de prateleira conhecida como **sustentáculo do tálus**, que serve de apoio para a face inferior do colo do tálus e de origem para parte do ligamento deltoide e do ligamento em mola (spring). O tendão do flexor longo do hálux passa em um sulco na sua face inferior, a caminho do hálux. É justamente essa estrutura, bem visível na face medial do calcâneo, que a seta indica na imagem.",
-  "correta": "B. A estrutura assinalada na imagem é o sustentáculo do tálus.",
+  "conceito": "### A imagem\nVista **medial** do pé. A seta aponta a **prateleira óssea** que se projeta da face medial do calcâneo, logo abaixo do tálus: o ==sustentáculo do tálus==.\n\n### Sustentáculo do tálus\n- **Suporta** o **colo do tálus** e contém a **faceta média** da subtalar, sede da **coalizão talocalcânea**.\n- **Inserções:**\n  - parte do **deltoide** (tibiocalcâneo);\n  - ligamento **mola** (calcaneonavicular plantar).\n- **Face inferior:** **sulco do FLH**, que passa por baixo dele.\n- **Em cima:** o tendão do **FLD** passa por cima (superficial).\n\n### Relevância nas fraturas do calcâneo\n- **Fragmento constante:** o sustentáculo costuma ficar **preso ao tálus** pelos ligamentos. É a **âncora** da redução, a referência para onde se fixa a faceta posterior (**parafusos \"para o sustentáculo\"**).\n- **Fratura isolada do sustentáculo:** rara; pode lesar o **FLH**.\n\n### Os outros\n- **Sulco do calcâneo:** forma o **seio / canal do tarso**, na face **superior**.\n- **Faceta articular posterior:** face **superior**.\n- **Tuberosidade:** **posterior**.\n\n> **Na prova:** prateleira medial do calcâneo = ==sustentáculo do tálus==.",
+  "correta": "**Sustentáculo do tálus.**",
   "incorretas": {
-   "A": "O sulco do calcâneo fica mais posterior, na face superior do osso, fazendo parte do seio do tarso, não na posição medial indicada.",
-   "C": "A face articular talar posterior fica na face superior do calcâneo, não na projeção medial indicada pela seta.",
-   "D": "A tuberosidade lateral do calcâneo fica na face lateral e posterior do osso, não na posição medial indicada pela seta."
+   "A": "**Sulco do calcâneo.**\n- Face **superior**; forma o seio do tarso.",
+   "C": "**Faceta talar posterior.**\n- Face **superior** do calcâneo.",
+   "D": "**Tuberosidade lateral.**\n- Face lateral e posterior."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0118": {
-  "conceito": "O músculo flexor curto do hálux, localizado na camada profunda da região plantar medial, tem origem proximal na face plantar do **cuboide** e do **cuneiforme lateral**, além de fibras acessórias do tendão do tibial posterior. A partir dessa origem, ele segue distalmente e se divide em dois ventres, cada um inserindo-se em um dos ossos sesamoides sob a cabeça do primeiro metatarso, atuando na flexão da articulação metatarsofalângica do hálux.",
-  "correta": "C. O músculo assinalado tem origem proximal na face plantar do cuboide e do cuneiforme lateral.",
+  "conceito": "### A imagem\nVista **plantar** do pé, na camada profunda, com a seta na região do **1º raio** (sob o hálux): o ==flexor curto do hálux== (FCH), com o tendão do **flexor longo do hálux** correndo entre as suas duas cabeças.\n\n### Flexor curto do hálux\n- **Origem:** face plantar do ==cuboide e do cuneiforme lateral==, com expansões do **tendão do tibial posterior**.\n- **Inserção:** **duas cabeças** na base da falange proximal do hálux, cada uma contendo um **sesamoide**:\n  - **medial**, junto do **abdutor**;\n  - **lateral**, junto do **adutor**.\n- **Função:** flexão da **MTF** do hálux.\n- **Inervação:** **plantar medial**.\n\n### Camadas da planta\n| Camada | Músculos |\n|---|---|\n| 1ª (superficial) | abdutor do hálux, **flexor curto dos dedos**, abdutor do 5º |\n| 2ª | **quadrado plantar**, **lumbricais**; tendões FLD e FLH |\n| 3ª | ==flexor curto do hálux==, **adutor do hálux**, flexor curto do 5º |\n| 4ª | **interósseos**; tendões do fibular longo e do tibial posterior |\n\n> **Na prova:** FCH nasce no ==cuboide e no cuneiforme lateral==.",
+  "correta": "**Cuboide e cuneiforme lateral.**",
   "incorretas": {
-   "A": "A origem descrita não corresponde ao navicular e cuneiforme lateral, mas sim ao cuboide e cuneiforme lateral.",
-   "B": "A origem não é no navicular e cuneiforme intermédio, mas sim no cuboide e cuneiforme lateral.",
-   "D": "A origem não é no cuneiforme intermédio, mas sim no cuneiforme lateral, junto ao cuboide."
+   "A": "**Navicular e cuneiforme lateral.**\n- O navicular não é origem do FCH.",
+   "B": "**Navicular e cuneiforme intermédio.**\n- Os dois ossos estão errados.",
+   "D": "**Cuboide e cuneiforme intermédio.**\n- O cuneiforme é o **lateral**."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0120": {
-  "conceito": "No corte transversal da perna, o compartimento **lateral** (fibular) contém os músculos fibular longo e fibular curto, inervados pelo **nervo fibular superficial**, que desce dentro ou junto a esse compartimento antes de se tornar subcutâneo no terço distal da perna, destinado à sensibilidade do dorso do pé. Esse compartimento se diferencia do compartimento anterior, que contém o tibial anterior e é inervado pelo nervo fibular profundo, estrutura frequentemente confundida com a do compartimento lateral em questões de anatomia.",
-  "correta": "C. O compartimento assinalado contém o fibular longo e o nervo fibular superficial.",
+  "conceito": "### A imagem\nCorte **transversal** da perna. A seta aponta o compartimento que envolve a **fíbula** na face **lateral**: o ==compartimento lateral (fibular)==.\n\n### Compartimentos da perna\n| Compartimento | Músculos | Nervo | Vaso |\n|---|---|---|---|\n| Anterior | tibial anterior, ELH, ELD, fibular terceiro | **fibular profundo** | tibial anterior |\n| ==Lateral== | ==fibular longo== e curto | ==fibular superficial== | (ramos da fibular) |\n| Posterior superficial | gastrocnêmio, sóleo, plantar | sural (ramos) | nenhum |\n| Posterior profundo | tibial posterior, FLD, FLH | **tibial** | tibial posterior, **fibular** |\n\n### Clínica\n- **Síndrome compartimental:** o **anterior** é o mais acometido. Na fasciotomia com **duas incisões**, a **anterolateral** abre o anterior e o lateral; a **medial**, os posteriores.\n- **Fasciotomia lateral:** cuidado com o **fibular superficial**, que perfura a fáscia no terço distal.\n- **Lesão do fibular superficial:** perda da **eversão** e da sensibilidade do **dorso** do pé (exceto o 1º espaço, que é do **profundo**).\n\n> **Na prova:** compartimento lateral = ==fibular longo + nervo fibular superficial==.",
+  "correta": "**Fibular longo e nervo fibular superficial.**",
   "incorretas": {
-   "A": "O nervo tibial anterior não é a nomenclatura correta de nenhum nervo da perna, e o fibular longo não está associado a ele.",
-   "B": "O tibial anterior e o nervo fibular profundo pertencem ao compartimento anterior, não ao compartimento lateral assinalado.",
-   "D": "O tibial anterior pertence ao compartimento anterior, não ao compartimento lateral assinalado, ainda que o nervo fibular superficial esteja corretamente associado ao compartimento lateral."
+   "A": "**Fibular longo e \"nervo tibial anterior\".**\n- Não existe nervo com esse nome.",
+   "B": "**Tibial anterior e fibular profundo.**\n- Compartimento **anterior**.",
+   "D": "**Tibial anterior e fibular superficial.**\n- O tibial anterior é do compartimento **anterior**."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0121": {
-  "conceito": "Atrás do maléolo medial, os tendões do compartimento posterior profundo se dispõem em uma ordem previsível, de anterior para posterior: tibial posterior, flexor longo dos dedos, artéria e nervo tibial, e por último o flexor longo do hálux, mais posterior, junto ao tendão calcâneo. A seta na imagem aponta para uma posição intermediária desse trajeto, correspondente ao tendão do **flexor longo dos dedos**, que corre entre o tibial posterior (mais anterior) e o flexor longo do hálux (mais posterior).",
-  "correta": "C. A estrutura assinalada é o tendão do flexor longo dos dedos.",
+  "conceito": "### A imagem\nVista **medial** do tornozelo. Segundo o gabarito, a seta indica o tendão **intermediário** do grupo retromaleolar medial: o ==flexor longo dos dedos==, entre o tibial posterior (anterior, colado ao maléolo) e o feixe / FLH (posteriores).\n\n### Ordem retromaleolar medial\n**\"Tom, Dick And Very Nervous Harry\"**, de anterior para posterior:\n1. **Tibial posterior.**\n2. ==Flexor longo dos dedos==.\n3. Artéria tibial posterior.\n4. Veias.\n5. **Nervo tibial.**\n6. **Flexor longo do hálux.**\n\n### FLD\n- **Origem:** face posterior da **tíbia**.\n- **Trajeto:**\n  - no pé, cruza **superficialmente** o FLH no **nó de Henry**;\n  - recebe o **quadrado plantar**;\n  - origina os **lumbricais**.\n- **Inserção:** falanges **distais** do 2º ao 5º dedos.\n- **Transferência do FLD** para o navicular: padrão no estágio II da disfunção do tibial posterior. O déficit é pouco relevante, porque o FLH tem conexões com o FLD.\n\n> **Na prova:** tendão intermediário atrás do maléolo medial = ==FLD==.",
+  "correta": "**Flexor longo dos dedos.**",
   "incorretas": {
-   "A": "O tibial posterior ocupa a posição mais anterior desse grupo de tendões, distinta da posição intermediária indicada pela seta.",
-   "B": "O flexor longo do hálux ocupa a posição mais posterior desse grupo, próxima ao tendão calcâneo, distinta da posição indicada.",
-   "D": "O flexor superficial dos dedos é um músculo do antebraço, não uma estrutura presente na região do tornozelo mostrada."
+   "A": "**Tibial posterior.**\n- O **mais anterior** do grupo.",
+   "B": "**Flexor longo do hálux.**\n- O **mais posterior**, junto ao Aquiles.",
+   "D": "**Flexor superficial dos dedos.**\n- Músculo do antebraço."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0122": {
-  "conceito": "O tendão do músculo **fibular curto** se insere na tuberosidade (processo estiloide) da base do quinto metatarso, na face lateral do pé, um dos pontos de reparo anatômico mais usados na avaliação de fraturas por avulsão nessa região (fratura de Jones e variantes). Esse ponto de inserção é bem diferente do trajeto do fibular longo, que cruza a planta do pé e se insere na base do primeiro metatarso e no cuneiforme medial, do lado oposto do pé.",
-  "correta": "A. A estrutura que se insere no local assinalado é o tendão do fibular curto.",
+  "conceito": "### A imagem\nVista **lateral** do esqueleto do pé. A seta aponta a **tuberosidade (processo estiloide) da base do 5º metatarso**, onde se insere o ==fibular curto==.\n\n### Inserções na base do 5º metatarso\n- **Fibular curto:** **tuberosidade** (dorsolateral).\n- **Fáscia plantar**, banda **lateral**.\n- **Fibular terceiro:** **dorso** da base / diáfise proximal.\n\n### Fraturas da base do 5º metatarso (zonas de Lawrence e Botte)\n| Zona | Local | Característica |\n|---|---|---|\n| 1 | **tuberosidade** (avulsão) | a mais comum; banda lateral da fáscia plantar e/ou fibular curto; **conservador** |\n| 2 | **junção metáfise-diáfise** (**Jones**) | zona **divisória** de irrigação; **pseudartrose**; atleta: considerar **parafuso intramedular** |\n| 3 | diáfise proximal (**estresse**) | pródromos; cavovaro; alto risco de não união |\n\n### Os outros tendões\n- **Fibular longo:** cruza a planta até a **base do 1º metatarso** e o **cuneiforme medial**.\n- **Tibial anterior:** **cuneiforme medial** e base do 1º metatarso (medial / plantar).\n- **Tibial posterior:** **tuberosidade do navicular** e múltiplas expansões plantares.\n\n> **Na prova:** base do 5º metatarso (tuberosidade) = ==fibular curto==.",
+  "correta": "**Fibular curto.**",
   "incorretas": {
-   "B": "O fibular longo se insere na base do primeiro metatarso e no cuneiforme medial, do lado oposto do pé, não na base do quinto metatarso.",
-   "C": "O tibial anterior se insere no primeiro cuneiforme e na base do primeiro metatarso, não na base do quinto metatarso.",
-   "D": "O tibial posterior se insere principalmente na tuberosidade do navicular e nos cuneiformes, não na base do quinto metatarso."
+   "B": "**Fibular longo.**\n- Base do **1º metatarso** e cuneiforme medial.",
+   "C": "**Tibial anterior.**\n- Cuneiforme medial e base do 1º metatarso.",
+   "D": "**Tibial posterior.**\n- **Navicular** e expansões plantares."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0123": {
-  "conceito": "O flexor curto dos dedos (flexor digitorum brevis) é o músculo mais superficial da planta do pé, situado logo abaixo da fáscia plantar, originando-se na tuberosidade medial do calcâneo. Ele se divide em quatro tendões, cada um destinado a um dos quatro dedos laterais, inserindo-se nas falanges médias após perfurar os tendões do flexor longo dos dedos (de forma análoga ao flexor superficial dos dedos da mão). Sua ação principal é justamente a **flexão** das articulações interfalângicas proximais dos dedos laterais.",
-  "correta": "B. A ação principal do músculo assinalado é a flexão dos dedos.",
+  "conceito": "### A imagem\nVista **plantar** do pé com a camada superficial rebatida. As setas apontam o músculo **proximal e central**, junto aos tendões do flexor longo dos dedos: um músculo da musculatura **flexora** dos dedos.\n- **Quadrado plantar**, que se insere no FLD;\n- ou o **flexor curto dos dedos**, conforme a leitura da figura.\n\nNos dois casos, a ação é a ==flexão dos dedos==.\n\n### Músculos flexores dos dedos menores na planta\n| Músculo | Camada | Origem / inserção | Ação |\n|---|---|---|---|\n| **Flexor curto dos dedos** | 1ª | tuberosidade **medial** do calcâneo até as **falanges médias** (perfurado pelo FLD) | flexão das **IFP** |\n| **Quadrado plantar** | 2ª | calcâneo até o **tendão do FLD** | **corrige a tração oblíqua** do FLD; auxilia a **flexão** dos dedos |\n| Lumbricais | 2ª | tendões do FLD até o capuz extensor | fletem a MTF e **estendem as IF** |\n\n### Os distratores\n- **Adução do hálux:** **adutor do hálux** (3ª camada).\n- **Abdução do 5º:** **abdutor do 5º dedo** (1ª camada, lateral).\n- **Extensão das IF:** **lumbricais / interósseos** e extensores.\n\n> **Na prova:** músculo assinalado = ação de ==flexão dos dedos==.",
+  "correta": "**Flexão dos dedos.**",
   "incorretas": {
-   "A": "A adução do hálux é ação do músculo adutor do hálux, não do músculo assinalado.",
-   "C": "A abdução do quinto dedo é ação do músculo abdutor do quinto dedo, não do músculo assinalado.",
-   "D": "A extensão das articulações interfalângicas é ação dos músculos lumbricais e do extensor longo dos dedos, não do músculo assinalado, que é flexor."
+   "A": "**Adução do hálux.**\n- Ação do **adutor do hálux**.",
+   "C": "**Abdução do 5º dedo.**\n- Ação do **abdutor do 5º dedo**.",
+   "D": "**Extensão das IF.**\n- Lumbricais e extensores."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0124": {
-  "conceito": "Na região posterior distal da perna, o **nervo tibial** acompanha a artéria tibial posterior, descendo junto aos tendões do compartimento posterior profundo até passar atrás do maléolo medial, dentro do túnel do tarso, onde se divide em seus ramos terminais (nervos plantares medial e lateral). É essa trajetória, associada aos vasos tibiais posteriores na porção distal da perna, que a seta indica na imagem.",
-  "correta": "A. A estrutura assinalada é o nervo tibial.",
+  "conceito": "### A imagem\nVista **posterior** da perna, com os músculos superficiais removidos. A seta aponta, no **terço distal medial**, o nervo que acompanha a **artéria tibial posterior** a caminho do maléolo medial: o ==nervo tibial==.\n\n### Nervo tibial\n- **Trajeto:**\n  - continuação do ciático (L4 a S3) pela **fossa poplítea**;\n  - passa **sob o arco do sóleo**;\n  - desce no compartimento posterior **profundo** com os vasos tibiais posteriores.\n- **No tornozelo:**\n  - passa **atrás do maléolo medial**, no **túnel do tarso** (sob o retináculo dos flexores);\n  - divide-se em **plantar medial**, **plantar lateral** e ramos **calcâneos mediais**.\n- **Inerva:**\n  - compartimento **posterior** (flexão plantar, inversão pelo tibial posterior, flexão dos dedos);\n  - **planta** do pé.\n\n### Outros nervos da perna\n| Nervo | Posição |\n|---|---|\n| **Sural** | superficial, **posterolateral**, com a safena parva |\n| Fibular comum / superficial / profundo | **lateral** (colo da fíbula) e compartimentos lateral / anterior |\n| **Safeno** | **medial** superficial, com a safena magna |\n\n### Clínica\n- **Síndrome do túnel do tarso:** parestesia plantar, **Tinel** retromaleolar.\n- **Lesão:** anestesia **plantar**, com alto risco de úlcera.\n\n> **Na prova:** nervo profundo junto à tibial posterior = ==tibial==.",
+  "correta": "**Tibial.**",
   "incorretas": {
-   "B": "O nervo sural corre mais superficialmente, na face posterolateral da perna, acompanhando a veia safena parva, não na posição profunda indicada.",
-   "C": "O nervo fibular segue um trajeto lateral, ao redor da fíbula, não na posição posterior profunda indicada.",
-   "D": "O nervo safeno acompanha a veia safena magna na face medial da perna, não na posição posterior profunda indicada."
+   "B": "**Sural.**\n- Superficial e **posterolateral**.",
+   "C": "**Fibular.**\n- Trajeto **lateral** (colo da fíbula).",
+   "D": "**Safeno.**\n- **Medial**, superficial, com a safena magna."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0125": {
-  "conceito": "A escala de Wagner tem SEIS graus, numerados de 0 a 5, não existe grau VI. Grau 0: pele íntegra, pé de risco (deformidade, calosidade, neuropatia). Grau 1: úlcera superficial, restrita à pele. Grau 2: úlcera profunda até tendão, cápsula ou osso, sem infecção profunda. Grau 3: úlcera profunda com abscesso, osteomielite ou artrite séptica. GRAU 4: GANGRENA LOCALIZADA, tipicamente do antepé ou do calcanhar. Grau 5: gangrena de todo o pé, que impõe amputação maior. Guardar a lógica evita decorar: os graus 0 a 3 medem PROFUNDIDADE e infecção, os graus 4 e 5 medem EXTENSÃO da necrose.",
-  "correta": "Grau IV: gangrena do antepé.",
+  "conceito": "### Wagner: 0 a 5 (não existe grau 6)\n| Grau | Descrição | Mede |\n|---|---|---|\n| 0 | pele íntegra, **pé de risco** | profundidade / infecção |\n| 1 | úlcera **superficial** | |\n| 2 | úlcera **profunda** (tendão, cápsula, osso), **sem** infecção profunda | |\n| 3 | profunda **com** abscesso, osteomielite, artrite séptica | |\n| ==4== | ==gangrena localizada== (**antepé** ou calcanhar) | **extensão da necrose** |\n| 5 | gangrena de **todo o pé** | |\n\n### Lógica\n- **0 a 3:** **profundidade** e **infecção**.\n- **4 e 5:** **extensão da necrose**, geralmente com **isquemia** por trás.\n\n### Conduta geral por grau\n- **0:** educação, calçado, rastreio.\n- **1 e 2:** **descarga** (gesso de contato total), curativos, debridamento.\n- **3:** debridamento cirúrgico, antibiótico, ressecção óssea.\n- **4:** avaliação **vascular**, revascularização, **amputação parcial**.\n- **5:** **amputação maior**.\n\n> **Na prova:** Wagner 4 = ==gangrena localizada (antepé)==.",
+  "correta": "**Grau IV: gangrena do antepé.**",
   "incorretas": {
-   "A": "Pele íntegra com pé em risco é o grau 0, não o I. O grau I é a úlcera superficial.",
-   "B": "Não existe grau VI. A gangrena de todo o pé é o grau 5.",
-   "C": "A úlcera profunda sem infecção é o grau 2; o grau 3 é a úlcera profunda COM abscesso, osteomielite ou artrite séptica."
+   "A": "**Grau I: pele íntegra.**\n- É o grau **0**; o I é a úlcera superficial.",
+   "B": "**Grau VI.**\n- **Não existe**; gangrena total é o grau 5.",
+   "C": "**Grau III: úlcera profunda.**\n- Profunda **sem** infecção é o 2; o 3 exige **abscesso / osteomielite**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0126": {
-  "conceito": "As contraindicações ao reparo cirúrgico da ruptura do tendão calcâneo são as que ameaçam a CICATRIZAÇÃO da ferida ou a adesão ao pós-operatório: insuficiência arterial do membro, diabetes descompensado, tabagismo pesado, uso crônico de corticoide, doenças de pele no local e paciente que não colabora com o protocolo de reabilitação. A IDADE, sozinha, não é contraindicação, o que importa é a demanda funcional, o estado geral e a qualidade das partes moles. Um paciente de 75 anos ativo e saudável pode ser operado; um de 45 anos com doença arterial e tabagismo pesado, não. Vale acrescentar que, no idoso de baixa demanda, o tratamento funcional costuma dar bom resultado, mas isso é escolha ponderada, não proibição.",
-  "correta": "Idade avançada, é fator a ponderar, não contraindicação.",
+  "conceito": "### Contraindicações ao reparo cirúrgico do Aquiles\nSão as que ameaçam a **ferida** ou a **adesão** ao pós-operatório:\n- **insuficiência arterial** do membro;\n- **diabetes descompensado**, neuropatia;\n- **tabagismo** pesado;\n- **corticoide** crônico, imunossupressão;\n- **doença de pele** no local, edema importante;\n- **paciente não colaborativo** com o protocolo;\n- condição clínica que impede anestesia / cirurgia.\n\n### Idade\n- ==Idade avançada isolada não contraindica==.\n- Pesam **demanda funcional**, estado geral e qualidade das partes moles.\n- No **idoso de baixa demanda**, o tratamento **funcional** costuma ir bem. É escolha, não proibição.\n\n### Pele posterior\n- É **fina** e mal vascularizada.\n- **Deiscência** e **infecção** são as complicações mais temidas; podem exigir **retalho**.\n- **Técnicas mini-invasivas** reduzem o risco.\n\n> **Na prova:** o que **não** contraindica a cirurgia = ==idade avançada==.",
+  "correta": "**Idade avançada.**\n- É fator a ponderar, não contraindicação.",
   "incorretas": {
-   "B": "A insuficiência arterial compromete a cicatrização de uma ferida sobre um tendão já mal vascularizado, com risco alto de deiscência e exposição.",
-   "C": "Diabetes sem controle clínico multiplica o risco de infecção e de falha da ferida.",
-   "D": "O paciente não colaborativo é contraindicação porque o resultado depende inteiramente do cumprimento do protocolo de imobilização e reabilitação; sem isso, a cirurgia expõe ao risco sem entregar o benefício."
+   "B": "**Insuficiência arterial.**\n- Compromete a cicatrização: **contraindica**.",
+   "C": "**Diabetes descompensado.**\n- Multiplica o risco de infecção e de falha da ferida.",
+   "D": "**Não colaborativo.**\n- O resultado depende do protocolo; **contraindica**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0127": {
-  "conceito": "O ligamento calcâneo-navicular plantar, também chamado de ligamento em mola (spring ligament), conecta o sustentáculo do tálus (calcâneo) à face plantar do navicular, formando parte do assoalho da articulação talonavicular. Ele sustenta diretamente a cabeça do tálus por baixo, funcionando como um dos principais estabilizadores estáticos do arco longitudinal medial do pé. Sua falência progressiva é um dos componentes centrais na fisiopatologia do pé plano adquirido do adulto por insuficiência do tibial posterior.",
-  "correta": "C. A estrutura apontada pela seta é o ligamento calcâneo-navicular plantar.",
+  "conceito": "### A imagem\nVista **medial** do pé. A seta aponta a banda ligamentar **plantar** que vai do **sustentáculo do tálus** ao **navicular**, embaixo da cabeça do tálus: o ==ligamento calcaneonavicular plantar (mola, spring)==.\n\n### Ligamento mola\n- **Componentes:**\n  - **superomedial** (o mais importante; ligado à camada superficial do **deltoide**);\n  - **medioplantar oblíquo**;\n  - **inferoplantar longitudinal**.\n- **Função:**\n  - forma o \"**assoalho**\" da articulação talonavicular (acetábulo do pé, **coxa pedis**);\n  - **sustenta a cabeça do tálus**.\n- **Relação com o tibial posterior:** o tendão passa **logo abaixo / medial** a ele e compartilha a função de sustentar o arco.\n\n### Clínica\n- **Pé plano adquirido do adulto:** a falência do tibial posterior sobrecarrega o mola, que **se rompe / atenua**. A cabeça do tálus desce e o antepé abduz (**subluxação peritalar**).\n- **Reconstrução do mola** é associada em casos com instabilidade medial importante.\n\n### Os distratores\n- **Talonavicular (dorsal):** fica no **dorso**.\n- **Talocuboide:** não corresponde à relação mostrada.\n- **\"Calcâneo medial\":** não é um nome padronizado.\n\n> **Na prova:** ligamento plantar entre o sustentáculo e o navicular = ==calcaneonavicular plantar (mola)==.",
+  "correta": "**Ligamento calcâneo-navicular plantar (mola).**",
   "incorretas": {
-   "A": "O ligamento talonavicular fica na porção dorsal da articulação, não na posição plantar indicada pela seta.",
-   "B": "O ligamento talo-cuboideo conecta o tálus ao cuboide, uma relação anatômica distinta da mostrada na imagem.",
-   "D": "Não há uma estrutura classicamente denominada \"ligamento calcaneano medial\" na nomenclatura padrão dessa região."
+   "A": "**Talonavicular.**\n- Ligamento **dorsal**.",
+   "B": "**Talocuboide.**\n- Relação anatômica diferente.",
+   "D": "**Calcaneano medial.**\n- Não é nomenclatura padrão."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0128": {
-  "conceito": "O hálux valgo no homem tem um perfil próprio, descrito por Coughlin: começa MAIS CEDO (com frequência ainda na adolescência, o chamado hálux valgo juvenil), tem história familiar POSITIVA em proporção maior, a articulação costuma ser CONGRUENTE, e o ângulo articular metatarsal distal (AAMD) é frequentemente AUMENTADO. Essas características mudam a cirurgia: articulação congruente com AAMD alto pede osteotomia que desloque a superfície articular em bloco (chevron biplanar, dupla osteotomia), e não realinhamento com liberação lateral, que criaria incongruência. O calçado, tão citado na mulher, tem papel bem menor aqui, o que reforça o peso do fator hereditário e estrutural.",
-  "correta": "Idade de início mais precoce.",
+  "conceito": "### Hálux valgo no homem (Coughlin)\n| Característica | Homem |\n|---|---|\n| Início | ==mais precoce== (muitas vezes **juvenil / adolescência**) |\n| História familiar | **mais frequente** |\n| Articulação | geralmente **congruente** |\n| AAMD | frequentemente **aumentado** |\n| Calçado | papel **menor** |\n\n### Implicação cirúrgica\n- **Articulação congruente com AAMD alto:** osteotomia que **desloque a articulação em bloco** (Chevron biplanar, dupla osteotomia).\n- **Evitar liberação lateral** agressiva, que cria **incongruência**.\n\n### Hálux valgo juvenil (em geral)\n- **Recidiva maior** após cirurgia.\n- **Preferir operar após a maturidade**, pela fise do 1º metatarso na base.\n- Frequente **metatarso primo varo** e **AAMD** alto.\n\n> **Na prova:** hálux valgo no homem = ==início mais precoce==.",
+  "correta": "**Idade de início mais precoce.**",
   "incorretas": {
-   "B": "A gravidade não é menor; e por começar mais cedo, a deformidade tem mais tempo para progredir.",
-   "C": "A prevalência de história familiar é MAIOR no homem, não menor.",
-   "D": "O AAMD é caracteristicamente AUMENTADO, e é justamente ele que impõe a escolha técnica."
+   "B": "**Menor gravidade.**\n- Não é menor; começa cedo e tem mais tempo para progredir.",
+   "C": "**Menos história familiar.**\n- É **maior** no homem.",
+   "D": "**AAMD diminuído.**\n- É caracteristicamente **aumentado**."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 82"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "pe-tornozelo-0129": {
-  "conceito": "Dobbs descreveu, em 2006, o tratamento minimamente invasivo do tálus vertical congênito, o chamado PONSETI REVERSO. A lógica é a mesma do pé torto, com o sentido das forças invertido: no pé torto manipula-se em abdução e supinação a partir da cabeça do tálus; no tálus vertical, manipula-se o antepé em FLEXÃO PLANTAR, INVERSÃO e adução, com contra-apoio na cabeça do tálus, reduzindo progressivamente o navicular luxado dorsalmente. Depois de quatro a seis gessos, faz-se a fixação percutânea da talonavicular com fio de Kirschner e a tenotomia percutânea do tendão calcâneo. O método substituiu, na maioria dos casos, a liberação cirúrgica extensa, que deixava pés rígidos e dolorosos.",
-  "correta": "Dobbs.",
+  "conceito": "### Método de Dobbs (\"Ponseti reverso\", 2006) para tálus vertical\n1. **Manipulações e gessos seriados** (cerca de 4 a 6, semanais):\n   - antepé em **flexão plantar, inversão** e adução;\n   - contra-apoio na **cabeça do tálus**;\n   - redução progressiva do **navicular** luxado dorsalmente.\n2. **Fixação percutânea** da **talonavicular** com fio de Kirschner.\n3. **Tenotomia percutânea** do tendão calcâneo, para corrigir o equino.\n4. Gesso final e depois **órtese** (Denis Browne ou similar).\n\n**Resultado:** substituiu, na maioria dos casos, a **liberação extensa**, que deixava pés **rígidos** e dolorosos.\n\n### Os outros nomes\n- **Mann:** cirurgia do pé do **adulto** (hálux valgo, transferências, artrodeses).\n- **Mosca:** **alongamento da coluna lateral** (calcâneo) no pé plano valgo / skewfoot infantil.\n- **Staheli:** perfil rotacional e **índice do arco plantar**.\n- **Ponseti:** o método original, para o **pé torto** congênito.\n\n> **Na prova:** Ponseti reverso para tálus vertical = ==Dobbs==.",
+  "correta": "**Dobbs.**",
   "incorretas": {
-   "A": "O nome de Mann está ligado à cirurgia do pé do adulto (transferências tendíneas, hálux valgo, artrodeses), não ao tálus vertical.",
-   "C": "Mosca é conhecido pelo alongamento da coluna lateral por osteotomia do calcâneo, usado no pé plano valgo da criança.",
-   "D": "Staheli é lembrado pelos estudos de desenvolvimento e alinhamento dos membros inferiores e pelo índice de Staheli, que mede o arco plantar na podoscopia."
+   "A": "**Mann.**\n- Cirurgia do pé do **adulto**.",
+   "C": "**Mosca.**\n- Alongamento da **coluna lateral**.",
+   "D": "**Staheli.**\n- Perfil rotacional e índice do arco plantar."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 28"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "pe-tornozelo-0130": {
-  "conceito": "A artrite reumatoide acomete os pés em cerca de 90% dos pacientes e começa pelas metatarsofalângicas, e é do antepé que vem a manifestação mais comum: o HÁLUX VALGO. Ele costuma ser grave e vem acompanhado da luxação dorsal das metatarsofalângicas dos dedos menores, dos dedos em garra, da migração distal do coxim gorduroso e das cabeças metatarsais proeminentes na planta, com calosidades dolorosas, a sensação, relatada pelos pacientes, de andar sobre pedras. O pé plano-valgo por falência do tibial posterior aparece depois, quando a doença alcança o retropé.",
-  "correta": "Hálux valgo.",
+  "conceito": "### Manifestação mais comum do pé reumatoide\n- **Resposta:** ==hálux valgo==, muitas vezes **grave**.\n- **Contexto:**\n  - o pé é acometido em **cerca de 90%**;\n  - a doença começa nas **MTF** (antepé);\n  - o retropé vem **depois**.\n\n### Conjunto do antepé\n- **Hálux valgo.**\n- **Luxação dorsal** das MTF menores.\n- **Dedos em garra.**\n- **Coxim gorduroso** migrado.\n- **Cabeças metatarsais** plantares: \"**andar sobre pedras**\".\n\n### Retropé (mais tardio)\n**Plano-valgo** por falência do **tibial posterior** e sinovite.\n\n### Hierarquia para a prova\n**Hálux valgo** (o mais comum) > dedos em garra (frequentes, do mesmo conjunto) > retropé valgo / pé plano (mais tardios).\n\n> **Na prova:** mais comum no pé reumatoide = ==hálux valgo==.",
+  "correta": "**Hálux valgo.**",
   "incorretas": {
-   "A": "O pé plano existe no reumatoide, mas é manifestação mais tardia, do retropé.",
-   "C": "Os dedos em garra fazem parte do mesmo conjunto do antepé, e são muito frequentes, mas o achado predominante e mais precoce é o hálux valgo.",
-   "D": "O valgismo do retropé é o componente do pé plano reumatoide, e vale a mesma observação quanto ao tempo de aparecimento."
+   "A": "**Pé plano.**\n- Manifestação mais **tardia** (retropé).",
+   "C": "**Dedos em garra.**\n- Muito frequentes, mas o predominante é o hálux valgo.",
+   "D": "**Valgismo do retropé.**\n- Mais tardio."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 85"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "pe-tornozelo-0131": {
-  "conceito": "A articulação do tornozelo suporta, na fase de apoio da marcha, cerca de CINCO VEZES o peso corporal, e o número sobe muito mais na corrida e no salto. A razão é o braço de alavanca: o tríceps sural precisa gerar uma força muito maior que o peso do corpo para equilibrar o momento do antepé em relação ao eixo do tornozelo, e essa força se soma à carga axial na articulação. Dois dados completam o quadro e explicam por que o tornozelo é tão menos artrósico que joelho e quadril: sua área de contato é pequena (algo em torno de 350 mm²), o que significa pressões altas, mas a cartilagem do tálus é mais fina, mais uniforme e mais resistente à carga cíclica. Por isso a artrose primária do tornozelo é rara, a esmagadora maioria é PÓS-TRAUMÁTICA.",
-  "correta": "Cinco vezes o peso corporal.",
+  "conceito": "### Carga no tornozelo durante a marcha\n- **Valor:** ==cerca de 5 vezes o peso corporal== na fase de apoio. Estimativa **aproximada**, variável entre os estudos. **Muito mais** na corrida e no salto.\n- **Por quê:** o **tríceps sural** precisa gerar força muito maior que o peso para equilibrar o **momento do antepé** em torno do eixo do tornozelo. Essa força comprime a articulação.\n\n### Por que o tornozelo tem pouca artrose primária\n- **Área de contato** pequena (algumas centenas de mm²), com **pressões altas**.\n- **Cartilagem do tálus:**\n  - **mais fina**, porém **uniforme** e congruente;\n  - **mais resistente** à carga cíclica (maior rigidez, menor resposta catabólica).\n- **Estabilidade** da pinça (encaixe congruente).\n- **Consequência:** a artrose do tornozelo é predominantemente ==pós-traumática== (cerca de 70% a 80%), seguida de inflamatória e primária.\n\n### Comparação\nO **quadril** também recebe várias vezes o peso na marcha, em estimativas de ~3 a 5 vezes, maiores na corrida.\n\n> **Na prova:** tornozelo na marcha = ==~5 vezes o peso corporal==.",
+  "correta": "**Cinco vezes o peso corporal.**",
   "incorretas": {
-   "A": "O peso corporal simples é bem menos do que a articulação recebe durante o apoio.",
-   "B": "Metade do peso corporal não corresponde nem ao apoio bipodal estático.",
-   "C": "Duas vezes o peso corporal é a ordem de grandeza citada para o QUADRIL na marcha, não para o tornozelo."
+   "A": "**O peso corporal.**\n- Bem menos do que a articulação recebe.",
+   "B": "**Metade do peso.**\n- Não corresponde nem ao apoio bipodal estático.",
+   "C": "**Duas vezes o peso.**\n- Subestima a carga; o tríceps multiplica a força de compressão."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0132": {
-  "conceito": "No tratamento cirúrgico do pé cavo varo na criança, quando o componente de varo do retropé é significativo, a **osteotomia de Dwyer** é a técnica clássica indicada: consiste em uma osteotomia em cunha de base lateral no calcâneo, com ressecção de um fragmento ósseo triangular na face lateral e fechamento da cunha, corrigindo diretamente o alinhamento em varo do retropé. Essa técnica se diferencia de outras osteotomias usadas no pé cavo, como a de Cole (osteotomia do mediopé, para correção do componente de cavo) ou a de Japas (osteotomia em V do tarso), que atuam sobre componentes diferentes da deformidade.",
-  "correta": "C. A osteotomia representada na imagem, com ressecção em cunha lateral do calcâneo, é a de Dwyer.",
+  "conceito": "### A imagem\nVista **posterior** do retropé:\n- **à esquerda:** a **cunha de base lateral** marcada no calcâneo;\n- **à direita:** a cunha **fechada**, com o túber deslocado para **valgo**.\n\nÉ a ==osteotomia de Dwyer==.\n\n### Dwyer\n- **Técnica:** cunha de **fechamento lateral** no corpo do calcâneo.\n- **Efeito:** corrige o **varo do retropé** e desloca o eixo de carga para lateral.\n- **Indicação:** pé **cavovaro** com **varo rígido** do retropé (Coleman **não** corrige).\n- **Alternativa atual:** **deslizamento lateral** do túber (translacional), às vezes em Z. Mais correção, sem encurtar tanto a altura.\n\n### Outras cirurgias do pé cavo\n| Nome | O que é |\n|---|---|\n| **Steindler** | **liberação plantar** (fáscia e músculos intrínsecos do calcâneo); partes moles |\n| **Cole** | cunha de base **dorsal** no **médio-pé** (naviculocuneiforme / cuboide): corrige o **cavo** |\n| **Japas** | osteotomia em **V** do tarso (ápice proximal): corrige o cavo **sem encurtar** |\n| Osteotomia dorsiflexora do 1º metatarso | 1º raio **plantifletido** |\n| Jones | ELH para o colo do 1º metatarso + artrodese da IF |\n\n> **Na prova:** cunha lateral no calcâneo para varo = ==Dwyer==.",
+  "correta": "**Dwyer.**",
   "incorretas": {
-   "A": "A osteotomia de Cole atua no mediopé, corrigindo o componente de cavo, não no calcâneo como mostrado na imagem.",
-   "B": "A osteotomia de Japas é uma osteotomia em V no tarso, com padrão diferente do fechamento em cunha lateral do calcâneo mostrado.",
-   "D": "A liberação de Steindler é um procedimento de partes moles (liberação plantar), não uma osteotomia óssea do calcâneo."
+   "A": "**Cole.**\n- Cunha **dorsal** no **médio-pé**, para o cavo.",
+   "B": "**Japas.**\n- Osteotomia em **V** do tarso.",
+   "D": "**Steindler.**\n- **Liberação plantar** (partes moles)."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0134": {
-  "conceito": "Os fatores de risco da ruptura do tendão calcâneo se dividem em três blocos. INTRÍNSECOS mecânicos: hiperPRONAÇÃO subtalar (que cisalha as fibras pelo efeito de chicote), encurtamento do tríceps, dorsiflexão limitada, pé cavo. SISTÊMICOS e medicamentosos: FLUOROQUINOLONAS (ciprofloxacino, levofloxacino), corticoide sistêmico ou infiltrado no tendão, diabetes, gota, insuficiência renal, artrite reumatoide. E o mais forte de todos, HISTÓRICO: a ruptura prévia, do mesmo lado ou do CONTRALATERAL, porque denuncia uma tendinopatia degenerativa bilateral e já estabelecida, o tendão do outro lado tem a mesma doença de base, só ainda não rompeu.",
-  "correta": "Ter lesão prévia do tendão calcâneo contralateral.",
+  "conceito": "### Fatores de risco da ruptura do Aquiles\n| Bloco | Fatores |\n|---|---|\n| ==Histórico== | ==ruptura prévia contralateral== (tendinopatia degenerativa **bilateral** já estabelecida); tendinopatia prévia |\n| Mecânicos | **hiperpronação** subtalar (efeito chicote); tríceps encurtado; pé cavo |\n| Medicamentos | ==fluoroquinolonas==; **corticoide** sistêmico ou infiltrado |\n| Sistêmicos | diabetes, **gota**, IRC, AR, hipercolesterolemia familiar (xantomas) |\n| Demográficos | **homem**, 30 a 50 anos, esporte de fim de semana |\n\n### Contralateral\n- Após uma ruptura, o risco de ruptura do **outro lado** é **muito maior** que o da população geral. As estimativas de razão de risco variam entre estudos.\n- **Implicação:** vale orientar o paciente sobre esse risco.\n\n### Fluoroquinolonas\n- **Risco maior:**\n  - em **idosos**;\n  - com **corticoide** associado;\n  - na **insuficiência renal**.\n- **Quando ocorre:** pode surgir nas **primeiras semanas** de uso, ou até meses depois.\n\n> **Na prova:** fator de risco = ==lesão prévia do Aquiles contralateral==.",
+  "correta": "**Lesão prévia do tendão calcâneo contralateral.**",
   "incorretas": {
-   "A": "A anteversão femoral não tem relação estabelecida com a ruptura do tendão calcâneo.",
-   "B": "A classe de antibiótico associada à tendinopatia e à ruptura é a das FLUOROQUINOLONAS, não a das cefalosporinas.",
-   "C": "O fator descrito é o inverso: hiperPRONAÇÃO subtalar, e não hipersupinação."
+   "A": "**Anteversão femoral diminuída.**\n- Sem relação estabelecida.",
+   "B": "**Cefalosporina.**\n- A classe associada é a das **fluoroquinolonas**.",
+   "C": "**Hipersupinação subtalar.**\n- O fator é a **hiperpronação**."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 48"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "pe-tornozelo-0135": {
-  "conceito": "A classificação anatômica de Brodsky para a artropatia de Charcot separa as regiões e, no tornozelo, ainda separa dois padrões distintos. TIPO 1: médio-pé (tarsometatársicas e naviculocuneiformes), o mais comum, com colapso em mata-borrão. TIPO 2: retropé (subtalar, talonavicular, calcaneocuboídea). TIPO 3A: tornozelo, tibiotalar, com instabilidade grave. TIPO 3B: FRATURA POR AVULSÃO DA TUBEROSIDADE POSTERIOR DO CALCÂNEO, arrancada pelo tríceps sobre um osso enfraquecido, deformidade em pé calcâneo, com perda da propulsão e risco alto de ulceração posterior. Alguns autores acrescentam ainda o tipo 4 (multirregional) e o 5 (antepé).",
-  "correta": "Tipo 3B.",
+  "conceito": "### Brodsky (Charcot), com os acréscimos de Trepman\n| Tipo | Região |\n|---|---|\n| 1 | **médio-pé** (TMT, naviculocuneiformes); o mais comum |\n| 2 | **retropé** (subtalar, talonavicular, calcaneocuboídea) |\n| 3A | **tornozelo** (tibiotalar) |\n| ==3B== | ==fratura por avulsão da tuberosidade posterior do calcâneo== |\n| 4 | **combinado** (mais de uma região) |\n| 5 | **antepé** |\n\n### Tipo 3B\n- **Mecanismo:** o **tríceps** arranca a tuberosidade de um osso neuropático enfraquecido.\n- **Consequências:**\n  - perda da **flexão plantar** efetiva (propulsão);\n  - pé em **calcâneo**, com carga no calcanhar;\n  - **úlcera** plantar posterior.\n- **Tratamento:** redução e **fixação** (parafusos / banda de tensão), com ou sem artrodese, conforme o caso. Alto risco de falha.\n\n> **Na prova:** avulsão da tuberosidade do calcâneo no Charcot = ==Brodsky 3B==.",
+  "correta": "**3B.**",
   "incorretas": {
-   "A": "O tipo 2 é o acometimento do retropé articular, tratado por tríplice artrodese.",
-   "B": "O tipo 3A é o do tornozelo propriamente dito, a articulação tibiotalar.",
-   "D": "O tipo 4, quando usado, designa o acometimento de mais de uma região, e não a avulsão do calcâneo."
+   "A": "**Tipo 2.**\n- **Retropé articular**; tríplice artrodese.",
+   "B": "**Tipo 3A.**\n- Tornozelo (**tibiotalar**).",
+   "D": "**Tipo 4.**\n- **Multirregional** (Trepman)."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 86"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "pe-tornozelo-0136": {
-  "conceito": "O teste de Coleman existe para responder a uma pergunta única: o varo do retropé é primário ou é consequência do antepé? Coloca-se um bloco sob a borda LATERAL do pé e sob o calcanhar, deixando o PRIMEIRO RAIO livre para pender. Se o varo do retropé CORRIGE nessa posição, ele é flexível e secundário, o que estava puxando o retropé para varo era o primeiro raio plantifletido (o primeiro raio em equino), obra do fibular longo preservado contra um tibial anterior fraco. A consequência cirúrgica é direta: trata-se o ANTEPÉ (osteotomia dorsiflexora da base do primeiro metatarso, transferência do fibular longo para o curto), e não se faz osteotomia do calcâneo. Se o varo NÃO corrigisse, ele seria rígido e exigiria também a osteotomia valgizante do calcâneo. Ressalva: a alternativa \"deformidade do antepé\" descreve a mesma ideia de forma mais ampla; o que o teste isola especificamente é o primeiro raio.",
-  "correta": "Primeiro raio em equino (plantifletido).",
+  "conceito": "### Teste de Coleman (bloco)\n- **Como:** **bloco** sob a borda **lateral** do pé e sob o calcanhar; o ==1º raio== fica **livre** para pender.\n- **O varo corrige:**\n  - o varo do retropé é **flexível** e **secundário**;\n  - quem o causava era o ==1º raio em equino (plantifletido)==, pelo **fibular longo** forte contra o **tibial anterior** fraco.\n- **O varo não corrige:** varo **rígido**. Somar **osteotomia do calcâneo** (Dwyer ou deslizamento lateral).\n\n### Conduta quando corrige\nTratar o **antepé**:\n- **osteotomia dorsiflexora** da base do 1º metatarso;\n- **fibular longo para o curto**;\n- **liberação da fáscia plantar**.\n\n### Por que \"1º raio\" e não \"antepé\"\n- O bloco **libera especificamente o 1º raio**.\n- \"Deformidade do antepé\" é verdadeiro em sentido amplo, mas **impreciso**.\n\n### Equino do tornozelo\nÉ outra medida: tríceps sural, avaliado pelo **Silfverskiöld**.\n\n> **Na prova:** Coleman corrige = varo causado pelo ==1º raio em equino==.",
+  "correta": "**1º raio em equino** (plantifletido).",
   "incorretas": {
-   "A": "Pé em equino é o encurtamento do tríceps sural, avaliado pelo teste de Silfverskiöld, outra medida, em outro plano.",
-   "C": "\"Deformidade do antepé\" é verdadeiro em sentido amplo, mas impreciso: o bloco não neutraliza adução nem supinação do antepé como um todo, ele apenas libera o primeiro raio.",
-   "D": "Somar as duas coisas não acrescenta informação e mantém a imprecisão da alternativa anterior."
+   "A": "**Pé em equino.**\n- Encurtamento do **tríceps** (Silfverskiöld).",
+   "C": "**Deformidade do antepé.**\n- Verdadeiro em sentido amplo, mas impreciso: o teste isola o **1º raio**.",
+   "D": "**1º raio + antepé.**\n- Soma que não acrescenta e mantém a imprecisão."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0137": {
-  "conceito": "O teste de Jerk (ou \"jerk test\") é um teste dinâmico do retropé usado para avaliar a **sincronização entre a musculatura intrínseca e extrínseca do pé** e a **mobilidade da articulação subtalar** durante a marcha ou em manobras específicas de carga, além de ajudar a avaliar a integridade funcional de estruturas como o flexor longo do hálux, que participa da propulsão. Ele não avalia estaticamente deformidades fixas dos dedos, como a contratura em garra ou em martelo, essas são achados de exame físico estático, examinados por inspeção e manipulação passiva dos dedos, não pelo teste de Jerk.",
-  "correta": "D. A contratura dos dedos não é avaliada pelo teste de Jerk, é um achado de exame estático, verificado por inspeção e manipulação direta dos dedos.",
+  "conceito": "### \"Teste de Jerk\" no pé\nÉ uma manobra **pouco padronizada** nas referências usuais de pé e tornozelo. A questão se resolve **por exclusão**.\n- As alternativas A, B e C descrevem aspectos **dinâmicos**, avaliados durante a manobra:\n  - **mobilidade da subtalar**;\n  - participação do **flexor longo do hálux**;\n  - **sincronização** entre intrínsecos e extrínsecos.\n- A ==contratura dos dedos== é um achado **estático**:\n  - avaliada por **inspeção** e **manipulação passiva**;\n  - por exemplo, dedo em garra ou martelo **flexível** (corrige passivamente) versus **rígido**.\n\n### Exame dos dedos menores\n- **Teste do empurrão** (push-up test): pressão plantar sob a cabeça do metatarso. Se o dedo alinha, a deformidade é **flexível**.\n- **Gaveta vertical da MTF:** placa plantar.\n- **Kelikian:** o mesmo princípio do push-up.\n\n> **Na prova:** o que **não** é avaliado = ==contratura dos dedos== (exame estático).",
+  "correta": "**Contratura dos dedos.**\n- É achado de exame **estático** (inspeção e manipulação passiva).",
   "incorretas": {
-   "A": "A mobilidade da subtalar é justamente um dos componentes avaliados pelo teste de Jerk.",
-   "B": "A integridade do flexor longo do hálux também é avaliada, por seu papel na propulsão durante o teste.",
-   "C": "A sincronização entre a musculatura intrínseca e extrínseca é exatamente o que o teste de Jerk busca identificar."
+   "A": "**Mobilidade da subtalar.**\n- Descrita como componente avaliado pela manobra.",
+   "B": "**Flexor longo do hálux.**\n- Descrito como avaliado, por seu papel na propulsão.",
+   "C": "**Sincronização intrínseca / extrínseca.**\n- É o objetivo descrito do teste."
   },
-  "geradoEm": "2026-09-21",
+  "alerta": "O \"teste de Jerk\" não aparece de forma padronizada nas principais referências de pé e tornozelo. A resposta foi construída por exclusão (a contratura dos dedos é achado de exame estático); vale conferir a descrição no material usado para a prova.",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0138": {
-  "conceito": "O pé reumatoide é uma deformidade de duas pontas, e as duas vêm do mesmo mecanismo, sinovite destruindo tecidos moles. No ANTEPÉ, a sinovite das metatarsofalângicas produz HÁLUX VALGO, muitas vezes grave, com luxação dorsal das falanges dos dedos menores, dedos em garra e cabeças metatarsais expostas na planta. No RETROPÉ, a sinovite da subtalar e da talonavicular com tenossinovite do tibial posterior leva ao PÉ PLANO VALGO. Como o acometimento do pé chega a 90% dos pacientes e frequentemente é a primeira manifestação da doença, esse conjunto é praticamente uma assinatura clínica.",
-  "correta": "Hálux valgo com pé plano valgo.",
+  "conceito": "### Pé reumatoide: as duas pontas\n| Segmento | Deformidade | Mecanismo |\n|---|---|---|\n| **Antepé** | ==hálux valgo== (o mais comum e precoce), MTF menores luxadas, dedos em garra | sinovite das MTF |\n| **Retropé** | ==pé plano valgo== | sinovite subtalar / talonavicular + falência do **tibial posterior** |\n\n- **Frequência:** o pé é acometido em **cerca de 90%**.\n- **Precocidade:** frequentemente é o **primeiro** sítio.\n\n### Contraste\n- **Pé cavovaro:** causa **neurológica** (CMT, lesão medular, sequela de poliomielite), com mecanismo **oposto**.\n\n### Tratamento cirúrgico clássico\n- **Antepé:**\n  - artrodese da **1ª MTF**;\n  - **ressecção das cabeças** dos metatarsos menores;\n  - ou preservação articular, com a doença controlada.\n- **Retropé:** **talonavicular** isolada (precoce) ou **tríplice**.\n\n> **Na prova:** pé reumatoide = ==hálux valgo + pé plano valgo==.",
+  "correta": "**Hálux valgo e pé plano valgo.**",
   "incorretas": {
-   "B": "Dedos em garra existem e são frequentes, mas a alteração predominante e mais precoce do antepé reumatoide é o hálux valgo.",
-   "C": "Pé cavovaro é deformidade neurológica, de mecanismo oposto ao da artrite reumatoide.",
-   "D": "Erra as duas metades."
+   "B": "**Dedos em garra + plano valgo.**\n- Os dedos em garra são frequentes, mas o predominante no antepé é o **hálux valgo**.",
+   "C": "**Hálux valgo + cavovaro.**\n- O cavovaro é **neurológico**.",
+   "D": "**Garra + cavovaro.**\n- Os dois itens estão errados."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0139": {
-  "conceito": "Brodsky classifica a artropatia de Charcot pela região acometida, e a frequência segue a ordem numérica. O TIPO 1, o mais comum (algo em torno de 60 a 70% dos casos), é o do MÉDIO-PÉ: articulações TARSOMETATÁRSICAS (Lisfranc) e naviculocuneiformes. O colapso dessa região produz o pé em mata-borrão (rocker-bottom), com proeminência óssea plantar que é o sítio clássico de ulceração. Vêm depois o tipo 2 (retropé: subtalar, talonavicular, calcaneocuboídea), o tipo 3A (tornozelo) e o 3B (avulsão da tuberosidade do calcâneo).",
-  "correta": "Tipo 1, nas articulações tarsometatársicas.",
+  "conceito": "### Brodsky: frequência segue a ordem\n| Tipo | Região | Frequência |\n|---|---|---|\n| ==1== | ==médio-pé: tarsometatársicas== e naviculocuneiformes | **a mais comum** (em torno de 60% a 70%) |\n| 2 | retropé | segunda |\n| 3A | tornozelo | menos comum; mais instável |\n| 3B | avulsão da tuberosidade do calcâneo | rara |\n\n### Tipo 1 na prática\n- **Pé em mata-borrão** (rocker-bottom).\n- **Proeminência plantar:** cuboide (lateral, pior) ou cuneiforme medial (medial). É o sítio clássico de **úlcera**.\n- **Relativamente estável.**\n- **Tratamento:**\n  - **gesso de contato total**, depois órtese / calçado;\n  - **exostectomia** para úlcera recorrente em pé estável;\n  - **artrodese** (superconstrução) se **instável** ou não plantígrado.\n\n### Observação\nA exostectomia da proeminência **medial** tem melhores resultados que a da **lateral**.\n\n> **Na prova:** mais comum = ==Brodsky 1, tarsometatársicas==.",
+  "correta": "**Tipo 1: tarsometatársicas.**",
   "incorretas": {
-   "A": "O tipo 1 não é o retropé, e sim o médio-pé.",
-   "C": "O tipo 2 é de fato o retropé, mas ele não é o mais comum.",
-   "D": "Erra as duas informações: as tarsometatársicas são do tipo 1."
+   "A": "**Tipo 1: retropé.**\n- O tipo 1 é o **médio-pé**.",
+   "C": "**Tipo 2: retropé.**\n- É o retropé, mas não o mais comum.",
+   "D": "**Tipo 2: tarsometatársicas.**\n- As TMT são do tipo **1**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0140": {
-  "conceito": "A coalizão tarsal sintomática produz um conjunto reconhecível: RIGIDEZ da subtalar (a alteração que define o quadro), VALGO do retropé com perda do arco longitudinal (o pé plano rígido) e ESPASMO REFLEXO DOS FIBULARES, que mantêm o pé na posição menos dolorosa e dão nome ao antigo pé plano espástico peroneal. O que NÃO faz parte é contratura dos músculos INTRÍNSECOS: eles não participam do mecanismo, e sua contratura é achado de outras condições, como o pé cavo neurológico e a síndrome compartimental crônica do pé. Vale a distinção fina: espasmo dos fibulares (extrínsecos, reativo à dor) é esperado; contratura dos intrínsecos não é.",
-  "correta": "A exceção é a contratura dos intrínsecos.",
+  "conceito": "### Coalizão tarsal sintomática: o que se espera\n- **Rigidez da subtalar:** o achado que **define** o quadro.\n- **Valgo do retropé** e **perda do arco**: pé plano **rígido**.\n- **Espasmo reflexo dos fibulares** (extrínsecos, reativo à dor): \"**pé plano espástico peroneal**\".\n- **Dor** no seio do tarso ou medial, pior com atividade e terreno irregular.\n- **Entorses de repetição.**\n\n### O que não se espera\n==Contratura dos intrínsecos==. Os intrínsecos não participam do mecanismo. Sua contratura aparece em:\n- **pé cavo neurológico**;\n- **síndrome compartimental** (sequela), com dedos em garra;\n- **doenças neuromusculares**.\n\n### Diferença fina\n- **Espasmo dos fibulares** (extrínsecos): **esperado**.\n- **Contratura dos intrínsecos:** **não** faz parte.\n\n### Outras causas de pé plano rígido\n- Tálus vertical.\n- **Artrite** (AR, juvenil).\n- **Tumor** / osteoma osteoide.\n- Infecção.\n- **Pé plano espástico** sem coalizão.\n\n> **Na prova:** exceção na coalizão = ==contratura dos intrínsecos==.",
+  "correta": "**Contratura dos intrínsecos** (é a exceção).",
   "incorretas": {
-   "A": "O valgo do retropé é achado esperado, decorrente do bloqueio da subtalar em eversão.",
-   "B": "A perda do arco plantar acompanha o valgo do retropé e compõe o pé plano rígido.",
-   "C": "A rigidez da subtalar é o achado que define a coalizão."
+   "A": "**Valgo do retropé.**\n- Esperado: subtalar bloqueada em eversão.",
+   "B": "**Perda do arco.**\n- Esperada: pé plano rígido.",
+   "C": "**Rigidez subtalar.**\n- É o achado que **define** a coalizão."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0141": {
-  "conceito": "A artroplastia total do tornozelo tem uma lista longa de contraindicações porque depende de três coisas: osso de boa qualidade, alinhamento corrigível e partes moles íntegras. São contraindicações ABSOLUTAS a infecção ativa, a artropatia de Charcot, a necrose extensa do tálus, o déficit neurológico do membro e a insuficiência vascular. E RELATIVAS a idade jovem com alta demanda (menos de 50 anos), obesidade, deformidade em varo ou valgo maior que 10 a 15 graus não corrigível, instabilidade ligamentar e osteoporose grave. A FRATURA PRÉVIA não é contraindicação, ao contrário: a artrose PÓS-TRAUMÁTICA é a principal INDICAÇÃO da artroplastia do tornozelo, já que responde por cerca de 70 a 80% dos casos de artrose tibiotalar.",
-  "correta": "A exceção é a fratura prévia, que é justamente a origem da maioria das artroses operadas.",
+  "conceito": "### Artroplastia total do tornozelo: contraindicações\n**Absolutas**\n- **Infecção** ativa.\n- **Charcot** / neuropatia grave.\n- **Necrose extensa do tálus.**\n- **Déficit neurológico** do membro (paralisia).\n- **Insuficiência vascular**.\n- Partes moles ruins.\n\n**Relativas**\n- **Jovem** de alta demanda (menos de ~50 anos).\n- **Obesidade.**\n- **Deformidade coronal** acima de ~10° a 15° não corrigível (os limites vêm sendo ampliados com técnicas associadas).\n- **Instabilidade ligamentar.**\n- **Osteoporose grave.**\n- Tabagismo.\n- Diabetes.\n\n### A exceção\n- A ==fratura prévia== **não** contraindica.\n- A **artrose pós-traumática** é a **principal causa** de artrose do tornozelo (cerca de 70% a 80%) e a **principal indicação** da artroplastia.\n\n### Artroplastia versus artrodese\n- **Artroplastia:** preserva movimento e protege as articulações vizinhas (subtalar, Chopart).\n- **Artrodese:** mais previsível em jovens de alta demanda e com deformidade grave.\n\n> **Na prova:** exceção = ==fratura prévia== (artrose pós-traumática é indicação).",
+  "correta": "**Fratura prévia** (é a exceção).\n- É a origem da maioria das artroses operadas.",
   "incorretas": {
-   "A": "Idade abaixo de 50 anos é contraindicação relativa: a sobrevida do implante é limitada e o paciente jovem provavelmente precisará de revisão.",
-   "B": "Deformidade acima de 10 a 15 graus impede o alinhamento adequado dos componentes e leva a desgaste assimétrico e falha precoce.",
-   "C": "A obesidade aumenta a carga sobre uma superfície de contato pequena e é contraindicação relativa reconhecida."
+   "A": "**Idade abaixo de 50 anos.**\n- Contraindicação **relativa**: sobrevida limitada do implante.",
+   "B": "**Deformidade acima de 10° a 15°.**\n- Contraindicação relativa: desgaste assimétrico e falha.",
+   "C": "**Obesidade.**\n- Contraindicação relativa: carga alta sobre uma área pequena."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0142": {
-  "conceito": "A sindesmose tibiofibular distal é o conjunto que mantém a fíbula encaixada na incisura da tíbia e, com isso, preserva a pinça do tornozelo. É formada por QUATRO estruturas: ligamento tibiofibular ANTEROINFERIOR (o primeiro a romper, e o que abriga o fascículo distal de Bassett), ligamento tibiofibular POSTEROINFERIOR (o mais forte, com sua porção profunda, o ligamento transverso), ligamento INTERÓSSEO (espessamento distal da membrana) e a própria MEMBRANA INTERÓSSEA. Cuidado com a confusão de nomes: tibioTALAR é componente do deltoide (medial), e fibuloTALAR pertence ao complexo lateral do tornozelo, nenhum dos dois faz parte da sindesmose, que por definição une TÍBIA e FÍBULA.",
-  "correta": "Ligamentos tibiofibulares anterior e posterior e membrana interóssea.",
+  "conceito": "### Sindesmose tibiofibular distal\n**Componentes:** ==ligamento tibiofibular anteroinferior, ligamento tibiofibular posteroinferior e membrana / ligamento interósseo==.\n\n| Componente | Detalhes |\n|---|---|\n| **LTFAI** (anteroinferior) | o **primeiro a romper**; seu fascículo distal é o **ligamento de Bassett** |\n| **LTFPI** (posteroinferior) | o **mais forte**; a porção **profunda** é o **ligamento transverso**; pode avulsionar o maléolo posterior (**Volkmann**) |\n| **Ligamento interósseo** | espessamento **distal** da membrana |\n| **Membrana interóssea** | continuação proximal |\n\n### Confusões de nome\n- **Tibiotalar:** componente do **deltoide** (medial).\n- **Fibulotalar (talofibular):** complexo **lateral**, a entorse comum.\n- A sindesmose une **tíbia e fíbula**, por definição.\n\n### Clínica\n- **Entorse alta** (rotação externa).\n- **Lesão sindesmótica** nas fraturas Weber C, Maisonneuve e parte das B.\n- **Fixação:** parafuso(s) ou **botão de sutura**, com redução **anatômica** da fíbula na **incisura**. A malredução é causa frequente de mau resultado.\n\n> **Na prova:** sindesmose = ==tibiofibulares anterior e posterior + membrana interóssea==.",
+  "correta": "**Ligamentos tibiofibulares anterior e posterior e membrana interóssea.**",
   "incorretas": {
-   "A": "Os ligamentos tibiotalares são componentes profundos do DELTOIDE, no lado medial.",
-   "C": "Mistura componentes do deltoide com componentes do complexo lateral; nenhum une tíbia a fíbula.",
-   "D": "Acerta os tibiofibulares, mas os fibulotalares pertencem ao complexo ligamentar LATERAL do tornozelo, cuja lesão é a entorse comum, não a sindesmótica."
+   "A": "**Tibiotalares.**\n- Componentes do **deltoide**.",
+   "C": "**Tibiotalares + fibulotalares.**\n- Nenhum une tíbia e fíbula.",
+   "D": "**Tibiofibulares + fibulotalares.**\n- Os fibulotalares são do complexo **lateral**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0143": {
-  "conceito": "O túnel do tarso fica atrás e abaixo do maléolo medial, coberto pelo retináculo dos flexores (ligamento lacinado). O conteúdo se memoriza pelo mnemônico \"Tom, Dick and a Very Nervous Harry\", de anterior para posterior: Tibial posterior (Tom), flexor longo dos Dedos (Dick), artéria tibial posterior (Very), Nervo tibial (Nervous) e flexor longo do Hálux (Harry). Note que todas as estruturas do túnel são POSTERIORES: nervo TIBIAL e artéria TIBIAL POSTERIOR, e não seus homônimos anteriores. A síndrome do túnel do tarso é a compressão do nervo tibial nesse espaço, com dor em queimação e parestesia plantar, teste de Tinel positivo e piora com o dorsiflexão-eversão sustentada.",
-  "correta": "Nervo tibial, artéria tibial posterior e tendão do músculo tibial posterior.",
+  "conceito": "### Túnel do tarso\n- **Local:** atrás e abaixo do **maléolo medial**.\n- **Teto:** **retináculo dos flexores** (ligamento lacinado).\n- **Conteúdo**, de anterior para posterior (\"**Tom, Dick And Very Nervous Harry**\"):\n  1. ==tibial posterior== (tendão);\n  2. flexor longo dos **dedos**;\n  3. ==artéria tibial posterior== e veias;\n  4. ==nervo tibial==;\n  5. flexor longo do **hálux**.\n\nTodas as estruturas são **posteriores**: nervo **tibial** e artéria tibial **posterior**.\n\n### Síndrome do túnel do tarso\n- **Clínica:**\n  - dor em **queimação** e parestesia **plantar**, pior à noite e com a atividade;\n  - **Tinel** retromaleolar;\n  - **teste de dorsiflexão-eversão** sustentada (Kinoshita) reproduz os sintomas.\n- **Causas:**\n  - **lesões ocupando espaço** (gânglio, lipoma, varizes, coalizão, tenossinovite): procurar com **RM**;\n  - pé plano valgo;\n  - trauma.\n- **ENMG:** confirma, mas tem sensibilidade limitada.\n- **Cirurgia:** melhor resultado quando há **lesão compressiva** identificada.\n\n### Túnel do tarso anterior\nNervo **fibular profundo** sob o retináculo extensor inferior (dorso).\n\n> **Na prova:** túnel do tarso = ==nervo tibial, artéria tibial posterior, tendão do tibial posterior== (+ FLD e FLH).",
+  "correta": "**Nervo tibial, artéria tibial posterior e tendão do tibial posterior.**",
   "incorretas": {
-   "A": "\"Nervo tibial anterior\" não é o nome de nenhum nervo do túnel (o nervo anterior da perna é o fibular profundo), e o tendão do tibial ANTERIOR corre à frente do tornozelo.",
-   "B": "Mesma objeção quanto ao nervo e ao tibial anterior; só o flexor longo do hálux está no lugar certo.",
-   "D": "A artéria tibial ANTERIOR corre no compartimento anterior e se torna a dorsal do pé; não passa pelo túnel do tarso."
+   "A": "**\"Nervo tibial anterior\" e tibial anterior.**\n- Não existe esse nervo.\n- O tibial anterior é **anterior**.",
+   "B": "**\"Nervo tibial anterior\", FLH e tibial anterior.**\n- Só o FLH está no lugar certo.",
+   "D": "**Artéria tibial anterior e tibial anterior.**\n- Estruturas do compartimento **anterior** (dorso)."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0144": {
-  "conceito": "A deformidade de Haglund é a proeminência óssea do ângulo POSTEROSUPERIOR da tuberosidade do calcâneo, avaliada na radiografia em PERFIL com carga. Ela comprime a bursa retrocalcânea e a face anterior do tendão contra o calçado, produzindo a chamada síndrome de Haglund, a tríade de exostose posterosuperior, bursite retrocalcânea e tendinopatia insercional. O quadro típico é o de mulher jovem com sapato de contraforte rígido, dor e tumefação laterais ao tendão. Distingue-se do esporão de calcâneo, que é ínfero-anterior, na origem da fáscia plantar, e da tendinopatia insercional pura, em que a dor é no centro da inserção.",
-  "correta": "Exostose do aspecto posterossuperior da tuberosidade do calcâneo, vista no perfil.",
+  "conceito": "### Deformidade de Haglund\n- **O que é:** proeminência do ângulo ==posterossuperior== da tuberosidade do calcâneo.\n- **Incidência:** radiografia em ==perfil== (com carga).\n\n### Síndrome de Haglund (tríade)\n1. **Exostose** posterossuperior.\n2. **Bursite retrocalcânea.**\n3. **Tendinopatia insercional** do Aquiles.\n- Soma-se a **bursite subcutânea** (\"**pump bump**\") pelo contraforte do calçado.\n\n### Medidas radiográficas\n- **Ângulo de Fowler-Philip:** acima de ~75° sugere proeminência.\n- **Linhas paralelas de pitch** (Pavlov): o ângulo posterossuperior acima da linha superior indica Haglund.\n- **Ângulo de Chauveaux-Liet.**\n- Nenhuma medida isolada prediz bem os sintomas.\n\n### Diferenciais\n- **Esporão de calcâneo:** **inferior**, na origem da fáscia plantar e do flexor curto.\n- **Calcificação insercional** do Aquiles (esporão posterior, intratendíneo).\n\n### Tratamento\n- **Calçado** sem contraforte rígido, **elevação do calcanhar**, gelo, excêntrico adaptado.\n- **Cirurgia:** ressecção do Haglund (aberta ou **endoscópica**) + bursectomia, com ou sem debridamento / reinserção. Alternativa: **osteotomia de Zadek** (cunha dorsal no calcâneo).\n\n> **Na prova:** Haglund = ==exostose posterossuperior, vista no perfil==.",
+  "correta": "**Exostose posterossuperior da tuberosidade do calcâneo, vista na radiografia em perfil.**",
   "incorretas": {
-   "A": "Erra a localização e a incidência: o AP do pé não avalia o perfil posterior do calcâneo.",
-   "B": "Acerta a localização, erra a incidência.",
-   "C": "Acerta a incidência, mas o aspecto posteroINFERIOR corresponde ao esporão do calcâneo, ligado à fáscia plantar."
+   "A": "**Posteroinferior no AP.**\n- A localização e a incidência estão erradas.",
+   "B": "**Posterossuperior no AP.**\n- A localização está certa; o AP não mostra o perfil do calcâneo.",
+   "C": "**Posteroinferior no perfil.**\n- Posteroinferior / inferior corresponde ao **esporão** da fáscia plantar."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0145": {
-  "conceito": "A radiografia em incidência ântero-posterior do pé com carga permite mensurar o alinhamento da articulação talonavicular no plano transversal, avaliando o grau de cobertura e o paralelismo entre as superfícies articulares do tálus e do navicular. O ângulo mostrado na imagem, formado pelas linhas convergindo na região talonavicular, corresponde ao chamado **ângulo de incongruência** dessa articulação, usado na avaliação de deformidades como o pé plano e a artrose talonavicular, sendo diferente do ângulo de Meary (avaliado no perfil), do ângulo de Kite (talocalcâneo) e do pitch do calcâneo (também avaliado no perfil).",
-  "correta": "A. A mensuração feita na imagem corresponde ao ângulo de incongruência.",
+  "conceito": "### A imagem\nRadiografia **AP (dorsoplantar) com carga** do pé. As linhas e os pontos (A, B, C) estão desenhados sobre a articulação **talonavicular**: a medida da ==incongruência talonavicular== (ângulo de incongruência).\n\n### Ângulo de incongruência talonavicular\n- **O que mede:** a **congruência** entre a superfície articular da **cabeça do tálus** e a do **navicular** no AP. Complementa a **cobertura talonavicular**.\n- **Leitura:** valores altos indicam o navicular **subluxado lateralmente** sobre a cabeça do tálus, ou seja, **abdução** do médio-pé (subluxação peritalar).\n- **Uso:** pé plano valgo (adulto e criança) e planejamento de correção.\n\n### Por que não as outras\n| Medida | Incidência | Ossos |\n|---|---|---|\n| **Méary** | **perfil** | tálus e 1º metatarso |\n| **Kite** | AP ou perfil | **tálus e calcâneo** (eixos longos) |\n| **Pitch do calcâneo** | **perfil** | calcâneo e solo |\n\n> **Na prova:** medida na talonavicular no AP = ==ângulo de incongruência==.",
+  "correta": "**Ângulo de incongruência.**",
   "incorretas": {
-   "B": "O ângulo de Meary avalia o alinhamento entre tálus e primeiro metatarso no plano sagital, sendo mensurado na incidência em perfil, não na ântero-posterior mostrada.",
-   "C": "O ângulo de Kite avalia a relação entre tálus e calcâneo, com um traçado diferente do mostrado na imagem.",
-   "D": "O pitch do calcâneo é mensurado na incidência em perfil, avaliando a inclinação do calcâneo em relação ao solo, não na incidência ântero-posterior mostrada."
+   "B": "**Méary.**\n- Medido no **perfil** (tálus e 1º metatarso).",
+   "C": "**Kite.**\n- Eixos do **tálus e do calcâneo**; traçado diferente.",
+   "D": "**Pitch do calcâneo.**\n- Medido no **perfil**."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0146": {
-  "conceito": "O hálux valgo tem um componente rotacional que costuma ser esquecido porque não aparece bem na radiografia frontal: o hálux PRONA, girando sobre o próprio eixo, o que se reconhece pela unha voltada para medial. Essa pronação aparece quando a deformidade se acentua, a referência clássica é que a partir de cerca de 30 a 35 graus de valgismo o hálux costuma vir pronado. O mecanismo é o desequilíbrio entre o adutor, que puxa a falange lateralmente e a roda, e o abdutor do hálux, que migra para plantar e passa a atuar como flexor-pronador em vez de abdutor. Corrigir a rotação importa: uma correção que ignora a pronação deixa o apoio da polpa alterado e favorece a recidiva.",
-  "correta": "Acima de cerca de 35 graus de valgismo costuma haver pronação do primeiro raio.",
+  "conceito": "### Componente rotacional do hálux valgo\n- **O que acontece:** o hálux (e o 1º metatarso) ==prona==: a **unha** fica voltada para **medial**.\n- **Quando:** a referência clássica é que, a partir de cerca de ==30° a 35°== de valgismo, a pronação costuma estar presente.\n- **Mecanismo:**\n  - o **adutor** traciona e roda a falange;\n  - o **abdutor do hálux** migra para **plantar**, deixa de abduzir e passa a atuar como flexor / pronador.\n\n### Por que importa\n- **Pronação não corrigida:**\n  - altera o apoio da polpa;\n  - deixa os **sesamoides** descobertos;\n  - associa-se à **recidiva**.\n- **TC com carga** revela pronação do 1º metatarso em grande parte dos pacientes.\n- **Técnicas triplanares:** Lapidus com rotação, osteotomias rotacionais.\n\n> **Na prova:** valgismo acima de ~35° = ==pronação== do 1º raio.",
+  "correta": "**Acima de ~35° costuma haver pronação do primeiro raio.**",
   "incorretas": {
-   "B": "50 graus é deformidade já muito grave; a pronação aparece bem antes disso.",
-   "C": "A rotação que acompanha o hálux valgo é PRONAÇÃO, não supinação.",
-   "D": "Erra as duas informações."
+   "B": "**Acima de 50°, pronação.**\n- A pronação aparece bem antes.",
+   "C": "**Acima de 35°, supinação.**\n- A rotação é **pronação**.",
+   "D": "**Acima de 50°, supinação.**\n- Os dois itens estão errados."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0147": {
-  "conceito": "No hálux valgo o aparelho sesamoideo permanece no lugar, ele fica ancorado ao adutor do hálux e ao ligamento intermetatársico transverso profundo. Quem se move é a CABEÇA DO PRIMEIRO METATARSO, que escorrega MEDIALMENTE por cima dos sesamoides. Do ponto de vista radiográfico, portanto, os sesamoides aparecem LATERALIZADOS em relação à cabeça, e é essa posição relativa que a classificação de Hardy e Clapham gradua. Dizer que há subluxação MEDIAL dos sesamoides inverte a descrição. As demais alterações são todas verdadeiras: o hálux prona, o abdutor do hálux migra para plantar (inferioriza) e deixa de ser abdutor, e o adutor encurta, mantendo a deformidade.",
-  "correta": "A exceção é a subluxação MEDIAL dos sesamoides, na verdade eles ficam laterais em relação à cabeça do metatarso.",
+  "conceito": "### Sesamoides no hálux valgo\n- **Ficam no lugar:** ancorados ao **adutor do hálux** e ao **ligamento intermetatarsal transverso profundo**.\n- **Quem se move:** a **cabeça do 1º metatarso**, que desliza **medialmente** sobre eles.\n- **Na radiografia:** os sesamoides aparecem ==lateralizados== em relação à cabeça (graduação de **Hardy e Clapham**).\n- \"**Subluxação medial**\" inverte a descrição.\n\n### Alterações presentes no hálux valgo\n- **Pronação** do 1º raio.\n- **Abdutor do hálux inferiorizado** (plantar): perde a função abdutora.\n- **Adutor encurtado** e **cápsula lateral** retraída. Alvo da **liberação lateral**.\n- **Cápsula medial** alongada, **bunion** (bursa + exostose medial).\n- **Extensor longo do hálux** deslocado lateralmente, atuando como força deformante (\"corda de arco\").\n\n> **Na prova:** o que **não** ocorre = ==subluxação medial dos sesamoides== (eles ficam laterais à cabeça).",
+  "correta": "**Subluxação medial dos sesamoides** (é a exceção).\n- Na verdade, eles ficam **laterais** em relação à cabeça.",
   "incorretas": {
-   "B": "A pronação do primeiro raio está presente, sobretudo nas deformidades maiores.",
-   "C": "A inferiorização (migração plantar) do abdutor do hálux é achado real e explica por que ele deixa de se opor à deformidade.",
-   "D": "O encurtamento do adutor do hálux está presente e é justamente o que a liberação lateral trata."
+   "B": "**Pronação do 1º raio.**\n- Presente, sobretudo nas deformidades maiores.",
+   "C": "**Inferiorização do abdutor.**\n- Real: explica por que ele não se opõe mais à deformidade.",
+   "D": "**Encurtamento do adutor.**\n- Presente; tratado pela liberação lateral."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0148": {
-  "conceito": "A graduação de Coughlin e Mann para o hálux valgo é radiográfica e combina três medidas, todas na incidência com carga: o ÂNGULO METATARSOFALÂNGICO (entre primeiro metatarso e falange proximal), o ÂNGULO INTERMETATÁRSICO (entre primeiro e segundo metatarsos) e a POSIÇÃO DO SESAMOIDE FIBULAR (lateral) em relação à cabeça do metatarso. Grosso modo: leve com HVA até 20, IMA até 11 e sesamoide grau 1; moderado com HVA até 40, IMA até 16 e sesamoide grau 2; grave acima disso, com sesamoide grau 3. A escolha da técnica segue essa graduação, osteotomia distal para os leves, distal ou diafisária para os moderados, proximal ou artrodese da primeira tarsometatársica para os graves.",
-  "correta": "Ângulo intermetatársico, ângulo metatarsofalângico e desvio do sesamoide fibular.",
+  "conceito": "### Coughlin e Mann: gravidade do hálux valgo\n**Três medidas radiográficas** (com carga):\n1. ==ângulo metatarsofalângico== (HVA);\n2. ==ângulo intermetatarsal== (IM I-II);\n3. ==posição do sesamoide fibular== (lateral).\n\n| Gravidade | HVA | IM | Sesamoide lateral (subluxação) |\n|---|---|---|---|\n| Leve | até ~20° | até ~11° | até ~50% |\n| Moderado | 20° a 40° | 11° a 16° | 50% a 75% |\n| Grave | acima de 40° | acima de 16° | acima de 75% |\n\nValores aproximados; variam entre as fontes.\n\n### Escolha da técnica (orientação)\n- **Leve:** osteotomia **distal** (Chevron).\n- **Moderado:** distal / **diafisária** (Scarf, Ludloff).\n- **Grave:** **proximal** ou **Lapidus**.\n\n### O que não entra na classificação\n- **Dor:** orienta a **indicação**.\n- **Ângulo interfalângico:** orienta a necessidade de **Akin**.\n\n> **Na prova:** Coughlin-Mann = ==IM + MTF + sesamoide fibular==.",
+  "correta": "**Ângulo intermetatarsal, ângulo metatarsofalângico e desvio do sesamoide fibular.**",
   "incorretas": {
-   "A": "A dor não entra na graduação, que é radiográfica; ela orienta a indicação cirúrgica, não a classificação.",
-   "C": "O ângulo interfalângico do hálux é medido e importa para decidir se cabe um Akin, mas não compõe essa graduação.",
-   "D": "Erra os dois itens que substituem o ângulo metatarsofalângico e o desvio sesamoideo."
+   "A": "**Com dor.**\n- A dor não entra na classificação, que é radiográfica.",
+   "C": "**Com o interfalângico.**\n- É medido (decide o Akin), mas não compõe essa classificação.",
+   "D": "**Interfalângico e dor.**\n- Substitui os dois itens corretos."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0149": {
-  "conceito": "O ângulo de Kite é o ângulo talocalcâneo, medido entre os eixos longitudinais do tálus e do calcâneo. Ele mede DIVERGÊNCIA: quanto mais os dois ossos se abrem um em relação ao outro, maior o ângulo. Quando o retropé vai para VARO, o calcâneo roda para baixo do tálus e os dois eixos se ALINHAM, o ângulo cai e tende a ZERO, com tálus e calcâneo paralelos. É o achado radiográfico do pé cavovaro. O oposto (ângulo aumentado, acima de 30 a 40 graus no AP) indica valgo do retropé e aparece no pé plano e no tálus vertical. Guardar assim resolve qualquer variação da pergunta: paralelismo é varo, divergência é valgo.",
-  "correta": "Kite tendendo a zero indica varismo do retropé e paralelismo entre calcâneo e tálus.",
+  "conceito": "### Ângulo de Kite: paralelismo ou divergência\n- **O que mede:** a ==divergência== entre os eixos do **tálus** e do **calcâneo**.\n\n| Kite | Eixos | Retropé | Exemplos |\n|---|---|---|---|\n| ==Tendendo a zero== | ==paralelos== | ==varo== | pé torto, **cavovaro** |\n| Normal | divergência moderada | neutro | ~20° a 40° no AP (varia entre referências) |\n| **Aumentado** | divergentes | **valgo** | pé plano, tálus vertical |\n\n### Por que o varo aproxima os eixos\nNo varo, o calcâneo **roda para baixo** do tálus, em inversão, e os eixos **se sobrepõem** no AP.\n\n### Regra\n==Paralelismo é varo; divergência é valgo.==\n\n> **Na prova:** Kite tendendo a zero = ==varo + paralelismo talocalcâneo==.",
+  "correta": "**Kite tendendo a zero indica varismo do retropé e paralelismo entre calcâneo e tálus.**",
   "incorretas": {
-   "B": "Acerta o paralelismo, mas paralelismo não é valgo, no valgo os eixos divergem e o ângulo aumenta.",
-   "C": "Acerta o varismo, mas divergência é justamente o oposto de um ângulo tendendo a zero.",
-   "D": "Erra as duas informações."
+   "B": "**Valgismo com paralelismo.**\n- No valgo os eixos **divergem**.",
+   "C": "**Varismo com divergência.**\n- Divergência é o oposto de um ângulo tendendo a zero.",
+   "D": "**Valgismo com divergência.**\n- Descreve o Kite **aumentado**, não tendendo a zero."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0150": {
-  "conceito": "A classificação de Johnson e Strom gradua a disfunção do tibial posterior pela presença e pela flexibilidade da deformidade. ESTÁGIO I: tendão doente (tenossinovite, dor e edema no trajeto retromaleolar medial), sem deformidade, o pé ainda é normal e o apoio monopodal na ponta do pé é possível. ESTÁGIO II: aparece a DEFORMIDADE EM PLANO-VALGO, ainda FLEXÍVEL, e perde-se o apoio monopodal na ponta do pé. Estágio III: a mesma deformidade, agora RÍGIDA, com artrose subtalar. Estágio IV (Myerson): soma a inclinação do tálus em valgo dentro da pinça do tornozelo, por insuficiência do deltoide.",
-  "correta": "Estágio II.",
+  "conceito": "### Johnson e Strom: quando surge o pé plano\n| Estágio | Tendão | Deformidade | Heel rise unipodal |\n|---|---|---|---|\n| I | tenossinovite, dor, edema | **nenhuma** | consegue |\n| ==II== | insuficiente | ==plano-valgo flexível (surge aqui)== | não consegue |\n| III | insuficiente | plano-valgo **rígido**; artrose subtalar | não consegue |\n| IV (Myerson) | insuficiente | + **valgo do tálus** no tornozelo (deltoide) | não consegue |\n\n### Tratamento resumido\n- **I:** conservador (imobilização, AINE, órtese); sinovectomia.\n- **II:** transferência do **FLD** + osteotomia **medializante** do calcâneo, com ou sem Evans ou Cotton, e com ou sem alongamento do gastrocnêmio.\n- **III:** **artrodese** (tríplice / dupla).\n- **IV:** tríplice + **deltoide**, ou **pantalar / TTC**.\n\n> **Na prova:** o pé plano ==surge no estágio II== (flexível).",
+  "correta": "**Estágio II.**",
   "incorretas": {
-   "A": "No estágio I não há deformidade: é a fase de tenossinovite pura, em que o tratamento conservador tem melhor chance.",
-   "C": "No estágio III o pé plano já está lá, apenas se tornou rígido. A deformidade não SURGE nele.",
-   "D": "No estágio IV a deformidade se estende ao tornozelo, mas de novo já vinha dos estágios anteriores."
+   "A": "**Estágio I.**\n- **Sem** deformidade: só tenossinovite.",
+   "C": "**Estágio III.**\n- O pé plano já existia; aqui fica **rígido**.",
+   "D": "**Estágio IV.**\n- A deformidade chega ao **tornozelo**, mas vinha dos estágios anteriores."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0151": {
-  "conceito": "As contraindicações ao reparo cirúrgico do tendão calcâneo se organizam em torno de duas perguntas: a ferida vai cicatrizar? E o paciente vai cumprir o protocolo? Comprometem a cicatrização a insuficiência ARTERIAL, o diabetes descompensado, o tabagismo pesado, o uso crônico de corticoide e doenças de pele no local. E compromete o resultado o PACIENTE NÃO COLABORATIVO, porque o sucesso depende inteiramente da imobilização correta e da reabilitação progressiva; sem adesão, a cirurgia entrega o risco e não entrega o benefício. Idade e obesidade são fatores a ponderar, não proibições.",
-  "correta": "Paciente não colaborativo.",
+  "conceito": "### Contraindicações ao reparo cirúrgico do Aquiles\n**Duas perguntas:**\n1. **A ferida vai cicatrizar?** Contraindicam:\n   - insuficiência **arterial**;\n   - **diabetes** descompensado;\n   - **tabagismo** pesado;\n   - **corticoide** crônico;\n   - dermatopatia local.\n2. **O paciente vai cumprir o protocolo?** Contraindica o ==paciente não colaborativo==. Sem adesão, a cirurgia traz o risco e não entrega o benefício.\n\n### Fatores a ponderar (não proibições)\n- **Idade avançada:** pesa a demanda e o estado geral.\n- **Obesidade:** aumenta o risco; influencia a técnica.\n- **Insuficiência venosa:** exige cuidado com a ferida.\n- A que **contraindica** é a insuficiência **arterial**.\n\n### Alternativa\nO **tratamento funcional** conservador tem bons resultados e é opção natural quando há contraindicação cirúrgica.\n\n> **Na prova:** contraindicação = ==paciente não colaborativo==.",
+  "correta": "**Paciente não colaborativo.**",
   "incorretas": {
-   "A": "Idade avançada não contraindica: o que pesa é a demanda funcional e o estado geral. Um idoso ativo pode ser operado.",
-   "B": "A obesidade aumenta o risco de complicações e influencia a escolha da técnica, mas não é contraindicação absoluta.",
-   "C": "A insuficiência VENOSA crônica exige cuidado com a ferida, mas quem contraindica é a insuficiência ARTERIAL, que compromete o aporte de sangue para a cicatrização."
+   "A": "**Idade avançada.**\n- Não contraindica isoladamente.",
+   "B": "**Obesidade.**\n- Aumenta o risco, mas não é contraindicação absoluta.",
+   "C": "**Insuficiência venosa.**\n- Exige cuidado; quem contraindica é a insuficiência **arterial**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0152": {
-  "conceito": "As técnicas do tendão calcâneo se separam por época e por finalidade. MA E GRIFFITH (1977) é a técnica PERCUTÂNEA clássica para ruptura aguda: seis pequenas incisões laterais e mediais por onde se passa o fio, sem abrir o foco, o que reduz muito a complicação de ferida em troca de risco de lesão do nervo sural (motivo pelo qual surgiram os sistemas de guia, como o Achillon, que reduzem esse risco). As demais são técnicas ABERTAS para reparo aumentado ou lesão crônica: BOSWORTH e LINDHOLM usam retalhos rebatidos do próprio tendão (uma tira e duas tiras, respectivamente); LYNN reforça o reparo com a fáscia do plantar delgado.",
-  "correta": "Ma e Griffith.",
+  "conceito": "### Técnicas para o tendão calcâneo\n| Técnica | Tipo | Descrição |\n|---|---|---|\n| ==Ma e Griffith== (1977) | ==percutânea== | **seis pequenas incisões** (medial e lateral); o fio é passado sem abrir o foco |\n| Bosworth | **aberta** | **tira central** da aponeurose do gastrocnêmio rebatida |\n| Lindholm | **aberta** | **duas tiras** da aponeurose rebatidas sobre o reparo |\n| Lynn | **aberta** | **plantar delgado** aberto em leque como reforço |\n| Abraham-Pankovich | aberta | **V-Y** do gastrocnêmio (falhas crônicas) |\n\n### Percutânea / mini-invasiva\n- **Vantagem:** menos complicações de **ferida** que a aberta.\n- **Risco:** lesão do **nervo sural**, sobretudo nos pontos laterais.\n- **Dispositivos com guia** (por exemplo, Achillon e sistemas semelhantes) e incisão mini-aberta reduzem o risco ao sural.\n\n> **Na prova:** técnica percutânea = ==Ma e Griffith==.",
+  "correta": "**Ma e Griffith.**",
   "incorretas": {
-   "B": "Bosworth é o retalho rebatido central do próprio tendão, feito a céu aberto.",
-   "C": "Lynn usa o tendão plantar delgado aberto em leque sobre o reparo, também por via aberta.",
-   "D": "Lindholm usa dois retalhos rebatidos da aponeurose do gastrocnêmio, igualmente por via aberta."
+   "B": "**Bosworth.**\n- Retalho rebatido, **aberto**.",
+   "C": "**Lynn.**\n- Reforço com o plantar delgado, **aberto**.",
+   "D": "**Lindholm.**\n- Duas tiras rebatidas, **aberto**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0153": {
-  "conceito": "O ângulo articular metatarsal distal (AAMD, ou DMAA) mede a inclinação da SUPERFÍCIE ARTICULAR da cabeça do primeiro metatarso em relação ao eixo longitudinal do osso. O normal é ATÉ 10 GRAUS. Quando ele está aumentado, a superfície articular já aponta para lateral, e isso significa que o hálux está desviado porque a própria cabeça está inclinada, não por subluxação. Daí a consequência prática: com AAMD alto e articulação congruente, é preciso uma osteotomia que reoriente a superfície articular (chevron biplanar, cunha de subtração medial distal, dupla osteotomia), e não uma liberação lateral com realinhamento, que criaria incongruência. Guardar junto com os outros dois valores: ângulo metatarsofalângico normal até 15 graus e intermetatársico até 9.",
-  "correta": "Até 10 graus.",
+  "conceito": "### AAMD / DMAA (ângulo articular metatarsal distal)\n- **O que mede:** a inclinação da **superfície articular** da cabeça do 1º metatarso em relação ao **eixo** do osso.\n- **Normal:** ==até ~10°==. Algumas fontes aceitam até ~15°. A medida tem **baixa reprodutibilidade** na radiografia.\n\n### Por que importa\n- **AAMD alto:** a própria cabeça aponta para **lateral**. O dedo desvia com a articulação **congruente**.\n- **Conduta:** osteotomia que **reoriente** a superfície:\n  - Chevron **biplanar** (cunha de subtração medial);\n  - **dupla** osteotomia;\n  - com ou sem **Akin**.\n- **Evitar:** liberação lateral com realinhamento, que cria **incongruência**.\n\n### Valores normais para lembrar juntos\n| Ângulo | Normal |\n|---|---|\n| HVA (metatarsofalângico) | até 15° |\n| IM I-II | até 9° |\n| ==AAMD== | ==até ~10°== |\n| HVI (interfalângico) | até ~10° |\n\n> **Na prova:** AAMD normal = até ==10°==.",
+  "correta": "**10 graus.**",
   "incorretas": {
-   "B": "20 graus já é um AAMD claramente aumentado, que muda a estratégia cirúrgica.",
-   "C": "30 graus corresponde a deformidade grave da orientação articular.",
-   "D": "40 graus está muito além de qualquer limite de normalidade.",
-   "E": "50 graus é valor incompatível com articulação funcionante."
+   "B": "**20 graus.**\n- Já claramente aumentado; muda a estratégia cirúrgica.",
+   "C": "**30 graus.**\n- Deformidade grave da orientação articular.",
+   "D": "**40 graus.**\n- Muito além do normal.",
+   "E": "**50 graus.**\n- Valor fora de qualquer faixa aceitável."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0154": {
-  "conceito": "As causas do pé cavo se organizam em três grupos. NEUROLÓGICAS, que respondem pela maioria: Charcot-Marie-Tooth (a mais comum), poliomielite, paralisia cerebral, disrafismos espinhais, medula presa, siringomielia, tumores medulares, ataxia de Friedreich. TRAUMÁTICAS e adquiridas: sequela de síndrome compartimental do pé ou da perna, lesão do nervo fibular, queimadura, sequela de fratura de talus ou de calcâneo. E CONGÊNITAS ou estruturais, grupo em que se enquadram o pé torto residual, as artrogriposes e a COALIZÃO TARSAL. É por isso que toda criança com pé cavo merece exame neurológico completo e, na dúvida, ressonância do neuroeixo: a maioria dos cavos esconde uma doença neurológica.",
-  "correta": "Coalizão tarsal, a única etiologia congênita da lista.",
+  "conceito": "### Causas do pé cavo\n| Grupo | Exemplos |\n|---|---|\n| **Neurológicas** (a maioria) | **CMT** (a mais comum), poliomielite, paralisia cerebral, **disrafismos**, **medula ancorada**, siringomielia, **tumores medulares**, Friedreich |\n| **Traumáticas / adquiridas** | sequela de **síndrome compartimental**, lesão do fibular, queimadura, fratura de tálus / calcâneo |\n| ==Congênitas / estruturais== | **pé torto residual**, **artrogripose**, ==coalizão tarsal== |\n| Idiopático | diagnóstico de exclusão |\n\n### Regra prática\n- **Todo pé cavo na criança** merece exame **neurológico** completo.\n- Se **unilateral**, **progressivo** ou com sinais neurológicos: **RM do neuroeixo** (e ENMG).\n- Na maioria dos casos há doença neurológica subjacente.\n\n### Coalizão e cavo\nAs coalizões costumam dar pé **plano** rígido, mas algumas (sobretudo **talocalcâneas** e raras formas) podem cursar com **cavovaro**. A questão a lista como a etiologia **congênita** entre as opções.\n\n> **Na prova:** etiologia congênita de pé cavo na lista = ==coalizão tarsal==.",
+  "correta": "**Coalizão tarsal.**\n- É a única etiologia congênita da lista.",
   "incorretas": {
-   "A": "A síndrome compartimental é causa ADQUIRIDA: a fibrose dos intrínsecos após isquemia produz o cavo em garra.",
-   "B": "Tumores da medula espinal são causa neurológica adquirida.",
-   "D": "Hidrocefalia não é etiologia congênita de pé cavo nessa lista, e a associação não se sustenta.",
-   "E": "A poliomielite é infecção adquirida, ainda que possa acometer a criança muito pequena."
+   "A": "**Síndrome compartimental.**\n- Adquirida: fibrose dos intrínsecos com cavo em garra.",
+   "B": "**Tumores medulares.**\n- Causa neurológica **adquirida**.",
+   "D": "**Hidrocefalia oculta.**\n- Não é etiologia congênita de cavo nessa lista.",
+   "E": "**Poliomielite.**\n- Infecção **adquirida**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0155": {
-  "conceito": "A infecção no pé diabético tem regras próprias, e quase todas são contraintuitivas. Ela é por CONTIGUIDADE, a partir da úlcera, não hematogênica. A resposta sistêmica é pobre: a maioria dos pacientes NÃO tem febre nem leucocitose, e o primeiro sinal de infecção costuma ser o DESCONTROLE INESPERADO DA GLICEMIA, que deve ser lido como bandeira vermelha. Antibiótico não é rotina: úlcera sem sinais de infecção não deve ser tratada com antibiótico, sob pena de selecionar resistência. E a osteomielite, presente em cerca de 20% das infecções moderadas e mais da metade das graves, costuma cursar com secreção e é sugerida pelo teste do probe-to-bone (tocar o osso com estilete pela úlcera), pela úlcera maior que 2 cm² ou mais profunda que 3 mm e pelo dedo em salsicha.",
-  "correta": "A osteomielite costuma cursar com secreção purulenta.",
+  "conceito": "### Infecção no pé diabético: regras contraintuitivas\n- **Via:** **contiguidade** a partir da úlcera, não hematogênica.\n- **Resposta sistêmica pobre:** a **maioria não tem febre** nem leucocitose.\n- **Sinal precoce:** **descontrole glicêmico inexplicado**. É bandeira vermelha.\n- **Antibiótico não é rotina:** úlcera **sem sinais clínicos** de infecção não recebe antibiótico, pelo risco de resistência.\n\n### Osteomielite\n- Costuma cursar com ==secreção purulenta== e úlcera que **não cicatriza**.\n- **Sugerem:**\n  - **probe-to-bone** positivo;\n  - úlcera acima de **2 cm²** ou profunda;\n  - **dedo em salsicha**;\n  - VHS elevada.\n- **Confirmação:** RM; **biópsia óssea** (padrão-ouro, com cultura).\n\n### Classificação da infecção (IWGDF / IDSA)\n- **Leve:** pele / subcutâneo, eritema de até 2 cm.\n- **Moderada:** mais extensa ou profunda (**osteomielite**, abscesso).\n- **Grave:** com **SIRS**.\n\n> **Na prova:** afirmativa correta = ==osteomielite costuma cursar com secreção purulenta==.",
+  "correta": "**A osteomielite costuma cursar com secreção purulenta.**",
   "incorretas": {
-   "A": "Antibiótico não é de rotina: úlcera não infectada não recebe antibiótico. A indicação depende de sinais clínicos de infecção.",
-   "B": "A via é por contiguidade, a partir da úlcera; a disseminação hematogênica é exceção.",
-   "D": "A maioria NÃO tem febre, a neuropatia e o comprometimento imunológico abafam a resposta sistêmica.",
-   "E": "É o contrário: o descontrole glicêmico sem outra explicação é um dos sinais mais úteis de infecção nesses pacientes."
+   "A": "**Antibiótico de rotina.**\n- Só com sinais **clínicos** de infecção.",
+   "B": "**Maioria hematogênica.**\n- É por **contiguidade**.",
+   "D": "**Maioria com febre.**\n- A maioria **não** tem febre.",
+   "E": "**Descontrole glicêmico não sugere infecção.**\n- É o contrário: é um dos sinais mais úteis."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0156": {
-  "conceito": "A ferida crônica do diabético não cicatriza por um conjunto de falhas simultâneas: hipóxia por doença micro e macrovascular, glicação de proteínas, redução e má qualidade da síntese de colágeno, desequilíbrio entre metaloproteinases e seus inibidores, resposta deficiente a fatores de crescimento e (o item que a questão elege) DISFUNÇÃO IMUNOLÓGICA. A hiperglicemia prejudica quimiotaxia, fagocitose e explosão respiratória dos neutrófilos, além da função linfocitária: a ferida fica presa numa fase inflamatória que não resolve nem progride para proliferação. Ressalva honesta: o excesso de enzimas proteolíticas (metaloproteinases) que a alternativa E cita é mecanismo real e bem descrito na ferida crônica; a questão o trata como distrator, elegendo a supressão imunológica como fator principal.",
-  "correta": "Supressão imunológica.",
+  "conceito": "### Por que a ferida diabética não cicatriza\n**Falhas simultâneas:**\n- **hipóxia** por doença micro e macrovascular;\n- **glicação** de proteínas (AGEs);\n- **colágeno** reduzido e de má qualidade;\n- **excesso de metaloproteinases** (MMPs) e desequilíbrio com seus inibidores;\n- **resposta deficiente** a fatores de crescimento;\n- ==disfunção imunológica==: a hiperglicemia prejudica **quimiotaxia**, **fagocitose** e explosão respiratória dos **neutrófilos**, além da função linfocitária.\n\n**Resultado:** a ferida fica presa numa **fase inflamatória** crônica, que não progride para a proliferação.\n\n### Ressalva\n- O **excesso de enzimas proteolíticas** (alternativa E) também é mecanismo **real** e bem descrito.\n- A questão elege a **supressão imunológica** como fator principal.\n\n### Na prática\n- **Controle glicêmico.**\n- **Descarga** (gesso de contato total).\n- **Revascularização.**\n- **Debridamento** seriado (converte a ferida crônica em aguda).\n- **Tratar infecção.**\n\n> **Na prova:** fator principal eleito = ==supressão imunológica==.",
+  "correta": "**Supressão imunológica.**",
   "incorretas": {
-   "A": "Há de fato deficiência de colágeno, mas ela é consequência do ambiente hiperglicêmico e isquêmico, e não o fator apontado como principal.",
-   "B": "O problema é o oposto: HIPOvascularização, por doença micro e macroangiopática.",
-   "C": "A ativação de fatores de crescimento é INADEQUADA na ferida diabética, se fosse adequada, não haveria falha de cicatrização.",
-   "E": "A superprodução de metaloproteinases existe e degrada a matriz recém-formada; a alternativa não é falsa em fisiopatologia, mas a questão a coloca como distrator diante do fator eleito como principal."
+   "A": "**Deficiência de colágeno.**\n- Existe, mas é **consequência** do ambiente hiperglicêmico e isquêmico.",
+   "B": "**Hipervascularização.**\n- É o oposto: **hipovascularização**.",
+   "C": "**Ativação adequada de fatores de crescimento.**\n- A ativação é **inadequada**.",
+   "E": "**Excesso de enzimas proteolíticas.**\n- Mecanismo real.\n- A questão o trata como distrator diante do fator eleito."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0157": {
-  "conceito": "O tibial anterior origina-se na face lateral da tíbia e membrana interóssea, passa sob os retináculos extensores e insere-se no cuneiforme medial/base do primeiro metatarsal. Faz dorsiflexão e inversão; sua disfunção gera pé caído e marcha escarvante. Fibulares localizam-se no compartimento lateral, passando atrás do maléolo lateral.",
-  "correta": "A alternativa A está correta: a estrutura indicada é o tibial anterior.",
+  "conceito": "### A imagem\nVista **lateral** do joelho e da perna proximal. A seta aponta o ventre muscular **anterior**, colado à **crista da tíbia**: o ==tibial anterior==.\n\n### Tibial anterior\n- **Origem:** face **lateral da tíbia** (2/3 proximais) e membrana interóssea.\n- **Inserção:** **cuneiforme medial** e base do **1º metatarso** (face medial / plantar).\n- **Ações:** **dorsiflexão** (o principal) e **inversão**.\n- **Inervação:** **fibular profundo** (L4, L5).\n- **Compartimento:** **anterior**, junto com ELH, ELD e fibular terceiro.\n\n### Clínica\n- **Fraqueza:** **pé caído** e **marcha escarvante** (L4-L5, fibular profundo / comum).\n- **Ruptura do tendão:** idosos; pé caído indolor com perda do relevo do tendão.\n- **Síndrome compartimental anterior:** a mais comum; dor ao alongamento passivo em flexão plantar.\n\n### Fibulares (os distratores)\n- **Compartimento lateral:** fibular **longo** e **curto**.\n- **Fibular terceiro:** compartimento **anterior**, lateral ao ELD. Insere-se na base do 5º metatarso.\n\n> **Na prova:** músculo anterior junto à crista tibial = ==tibial anterior==.",
+  "correta": "**Tibial anterior.**",
   "incorretas": {
-   "B": "A alternativa B (Fibular longo) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "C": "A alternativa C (Fibular curto) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "D": "A alternativa D (Fibular terceiro) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa."
+   "B": "**Fibular longo.**\n- Compartimento **lateral**, a partir da cabeça da fíbula.",
+   "C": "**Fibular curto.**\n- Lateral, mais distal.",
+   "D": "**Fibular terceiro.**\n- Compartimento anterior, porém **distal** e lateral ao ELD."
   },
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "pe-tornozelo-0159": {
-  "conceito": "O músculo fibular longo se origina na cabeça da fíbula e nos dois terços proximais de sua face lateral, logo abaixo do joelho, região onde a imagem aponta a seta. A partir dessa origem alta, o músculo desce ao longo da face lateral da perna, contorna o maléolo lateral por trás e cruza a planta do pé obliquamente até se inserir na base do primeiro metatarso e no cuneiforme medial. Reconhecer essa origem proximal, próxima à cabeça da fíbula, é o ponto-chave para identificar o músculo nessa imagem.",
-  "correta": "B. O músculo apontado é o fibular longo.",
+  "conceito": "### A imagem\nVista **lateral** do joelho. A seta aponta o ventre muscular que nasce logo abaixo da **cabeça da fíbula** (onde se insere o bíceps femoral, com o **nervo fibular comum** passando por trás): o ==fibular longo==.\n\n### Fibular longo\n- **Origem:** **cabeça** e **2/3 proximais** da face lateral da fíbula.\n- **Trajeto:**\n  - atrás do **maléolo lateral** (posterior ao fibular curto);\n  - no **sulco do cuboide** (os peroneum);\n  - cruza a **planta**.\n- **Inserção:** **base do 1º metatarso** e **cuneiforme medial**.\n- **Ações:**\n  - **eversão**;\n  - **plantiflexão do 1º raio**;\n  - contribui para a **flexão plantar**.\n- **Inervação:** **fibular superficial**.\n\n### Relação com o nervo fibular comum\nO nervo contorna o **colo da fíbula**, **entre** o fibular longo e o osso. Ali é vulnerável:\n- **fratura** da fíbula proximal;\n- **gesso** apertado;\n- **cruzar as pernas**;\n- **luxação do joelho**.\n\n> **Na prova:** músculo lateral que nasce na cabeça da fíbula = ==fibular longo==.",
+  "correta": "**Fibular longo.**",
   "incorretas": {
-   "A": "O tibial anterior tem origem na face lateral da tíbia, não na fíbula proximal indicada na imagem.",
-   "C": "O fibular curto tem origem mais distal na fíbula, na metade inferior de sua face lateral, não na posição proximal indicada.",
-   "D": "O extensor longo do hálux tem origem no terço médio da face anterior da fíbula, não na posição posterolateral proximal indicada."
+   "A": "**Tibial anterior.**\n- Nasce na face lateral da **tíbia**.",
+   "C": "**Fibular curto.**\n- Nasce mais **distal** (metade inferior da fíbula).",
+   "D": "**Extensor longo do hálux.**\n- Terço **médio** da face anterior da fíbula; compartimento anterior."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0160": {
-  "conceito": "O músculo fibular longo, junto com o fibular curto, compõe o compartimento lateral da perna, inervado pelo **nervo fibular superficial** (ramo do nervo fibular comum). Esse nervo desce dentro do compartimento lateral, entre os dois músculos fibulares, e se torna subcutâneo no terço distal da perna, destinado principalmente à sensibilidade do dorso do pé. É diferente do nervo fibular profundo, que inerva o compartimento anterior (tibial anterior, extensores longos dos dedos e do hálux).",
-  "correta": "A. A inervação do músculo apontado (fibular longo) é feita pelo nervo fibular superficial.",
+  "conceito": "### Inervação do fibular longo\n- **Nervo:** ==fibular superficial==, ramo do **fibular comum**.\n- **Trajeto:** desce no compartimento **lateral**, entre os fibulares, e perfura a fáscia no terço **distal** da perna.\n- **Distribuição:**\n  - **motor:** fibular longo e curto;\n  - **sensitivo:** **dorso do pé**, exceto o **1º espaço**, que é do fibular profundo.\n\n### Nervos da perna\n| Nervo | Compartimento | Músculos | Sensibilidade |\n|---|---|---|---|\n| ==Fibular superficial== | **lateral** | fibulares longo e curto | dorso do pé |\n| Fibular profundo | **anterior** | tibial anterior, ELH, ELD, fibular terceiro, EDC (pediosos) | **1º espaço** dorsal |\n| Tibial | **posteriores** | tríceps, tibial posterior, FLD, FLH | **planta** (plantares), calcanhar |\n| Fibular comum | nenhum (é o **tronco**) | só a cabeça curta do bíceps (acima do joelho) | nenhuma |\n\n> **Na prova:** fibular longo = ==nervo fibular superficial==.",
+  "correta": "**Nervo fibular superficial.**",
   "incorretas": {
-   "B": "O nervo fibular comum é o tronco de origem, que se divide em fibular superficial e profundo. É o ramo superficial especificamente que inerva o fibular longo.",
-   "C": "O nervo fibular profundo inerva o compartimento anterior da perna, não o compartimento lateral onde está o fibular longo.",
-   "D": "O nervo tibial inerva o compartimento posterior da perna, não o compartimento lateral onde está o fibular longo."
+   "B": "**Fibular comum.**\n- É o **tronco**; o ramo que inerva o fibular longo é o **superficial**.",
+   "C": "**Fibular profundo.**\n- Compartimento **anterior**.",
+   "D": "**Tibial.**\n- Compartimento **posterior**."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0161": {
-  "conceito": "O músculo fibular longo tem como ação primária a eversão do pé, mas, por cruzar posteriormente ao eixo de rotação do tornozelo antes de contornar o maléolo lateral, ele também contribui, de forma secundária, para a **flexão plantar do pé** durante a fase de apoio da marcha, junto com o tríceps sural. Entre as opções apresentadas nesta questão, essa é a ação que melhor descreve sua contribuição funcional na articulação do tornozelo.",
-  "correta": "C. A função do músculo apontado (fibular longo) inclui a flexão plantar do pé.",
+  "conceito": "### Funções do fibular longo\n- **Principal:** **eversão** do pé.\n- **Plantiflexão do 1º raio** (cabeça do 1º metatarso contra o solo), que estabiliza o arco transverso e medial.\n- **Flexão plantar** do tornozelo, **secundária**: passa **atrás** do eixo do tornozelo.\n  - Entre as opções, é a ação que melhor descreve sua contribuição: ==flexão plantar do pé==.\n\n### Flexores plantares do tornozelo\n- **Principal:** tríceps sural.\n- **Acessórios:**\n  - **tibial posterior**;\n  - **FLD**;\n  - **FLH**;\n  - **fibular longo e curto** (todos passam atrás dos maléolos).\n- **Por isso** o paciente com **Aquiles roto** ainda faz flexão plantar ativa (fraca), o que pode enganar o exame.\n\n### Os distratores\n- **Flexão do hálux:** **FLH** e FCH.\n- **\"Flexão do 5º metatarso\":** não é ação descrita.\n- **Inversão:** tibial **posterior** e **anterior**. O fibular longo **everte**.\n\n> **Na prova:** entre as opções, função do fibular longo = ==flexão plantar do pé==.",
+  "correta": "**Flexão plantar do pé.**\n- Ação secundária; a principal é a eversão, que não está entre as opções.",
   "incorretas": {
-   "A": "A flexão do hálux é ação do flexor longo do hálux, não do fibular longo.",
-   "B": "Não há um movimento isolado de \"flexão do quinto metatarso\" atribuído ao fibular longo como ação principal.",
-   "D": "A inversão do pé é ação de músculos como o tibial posterior e o tibial anterior. O fibular longo, ao contrário, é um dos principais eversores do pé."
+   "A": "**Flexão do hálux.**\n- Ação do **FLH**.",
+   "B": "**Flexão do 5º metatarso.**\n- Não é ação atribuída ao fibular longo.",
+   "D": "**Inversão.**\n- O fibular longo é **eversor**."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0162": {
-  "conceito": "A artrodese da primeira metatarsofalângica é a operação de escolha quando não há articulação a preservar ou quando a força deformante é grande demais para uma osteotomia sustentar. Indicações clássicas: hálux valgo grave (acima de 40 graus de HVA ou 20 de IMA), hálux valgo com artrose, ARTRITE REUMATOIDE, DOENÇA NEUROMUSCULAR (paralisia cerebral, CMT, espasticidade), sequela PÓS-TRAUMÁTICA com lesão irreparável das estruturas mediais, hálux varo iatrogênico e recidivas. A HIPERMOBILIDADE não pertence a essa lista por dois motivos: quando existe, o alvo é a primeira TARSOMETATÁRSICA, tratada pela artrodese de Lapidus; e o escore de Beighton mede frouxidão ligamentar GENERALIZADA, não a mobilidade do primeiro raio, que se avalia clinicamente com a manobra de Klaue.",
-  "correta": "A exceção é a hipermobilidade aferida pelo escore de Beighton.",
+  "conceito": "### Artrodese da 1ª MTF no hálux valgo: indicações\n- **Hálux valgo grave** (HVA acima de ~40°, IM muito alto) em pacientes selecionados.\n- **Hálux valgo com artrose** (ou hálux rígido).\n- ==Artrite reumatoide== (base da reconstrução do antepé reumatoide).\n- ==Doença neuromuscular== (PC, AVC, espasticidade): força deformante contínua.\n- ==Pós-traumático== com lesão irreparável das estruturas mediais.\n- **Recidiva** após osteotomias.\n- **Hálux varo** iatrogênico.\n\n### Por que a hipermobilidade não entra\n- **Onde ela está:** na **1ª tarsometatársica**. Trata-se com **Lapidus** (artrodese da 1ª TMT), não com artrodese da MTF.\n- **Beighton:** mede frouxidão ligamentar **generalizada**, não a mobilidade do 1º raio.\n- **Mobilidade do 1º raio:** avaliada clinicamente (manobra de translação dorsoplantar, dispositivo de **Klaue**).\n\n> **Na prova:** **não** é indicação de artrodese MTF = ==hipermobilidade (Beighton)==.",
+  "correta": "**Hipermobilidade (escore de Beighton)** (é a exceção).",
   "incorretas": {
-   "A": "Sequela pós-traumática com lesão irreparável das estruturas mediais é indicação: não há tecido para reconstruir o equilíbrio.",
-   "B": "Doença neuromuscular é indicação clássica, pela força deformante contínua que faz qualquer osteotomia recidivar.",
-   "C": "Artrite reumatoide, mesmo em paciente jovem, é indicação consagrada, a artrodese da primeira metatarsofalângica é a base da reconstrução do antepé reumatoide."
+   "A": "**Pós-traumático com lesão medial irreparável.**\n- É indicação: não há tecido para reequilibrar.",
+   "B": "**Doença neuromuscular.**\n- Indicação clássica: a osteotomia recidivaria.",
+   "C": "**AR em jovem.**\n- Indicação consagrada no antepé reumatoide."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0163": {
-  "conceito": "No pé plano adquirido do adulto, o tálus é o osso que se move, os demais o acompanham. Sem o tibial posterior e com o ligamento mola insuficiente, a cabeça do tálus perde o apoio e escorrega para PLANTAR, MEDIAL e DISTAL, saindo da cobertura do navicular. As três direções explicam três achados: o deslocamento plantar produz a queda do arco e a proeminência da cabeça do tálus na face medial do pé (o ponto que dói e caloseja); o medial e o distal produzem a abdução do antepé, medida pelo ângulo de cobertura talonavicular e visível como o sinal dos muitos dedos. É também o que o ângulo de Méary registra: o eixo do tálus deixa de se alinhar com o do primeiro metatarso, abrindo ápice plantar.",
-  "correta": "Plantar, medial e distal.",
+  "conceito": "### Desvio do tálus no pé plano adquirido\n- **Mecanismo:** sem o **tibial posterior** e com o **ligamento mola** insuficiente, a cabeça do tálus perde o apoio.\n- **Direção:** ==plantar, medial e distal==. A cabeça sai da cobertura do navicular: **subluxação peritalar**.\n\n| Direção | Achado |\n|---|---|\n| **Plantar** | **queda do arco**; Méary com ápice plantar; cabeça do tálus **palpável** na face medial e plantar (calosidade, dor) |\n| **Medial** | proeminência medial; **descobertura talonavicular** no AP |\n| **Distal** (flexão plantar do tálus) | com o medial, gera a **abdução** relativa do antepé: **muitos dedos** |\n\n- O **calcâneo** vai para **valgo**, rodando sob o tálus.\n\n### No pé cavovaro\nO movimento se inverte: tálus mais **dorsal** e lateral em relação ao calcâneo, com eixos paralelos.\n\n> **Na prova:** tálus no pé plano adquirido = ==plantar, medial e distal==.",
+  "correta": "**Plantar, medial e distal.**",
   "incorretas": {
-   "A": "As duas primeiras direções estão certas, mas o tálus se desloca distalmente, e não proximalmente, é isso que descobre a cabeça do tálus.",
-   "C": "Dorsal e lateral é o oposto do que acontece: essa seria a direção no pé cavovaro.",
-   "D": "Erra as três direções."
+   "A": "**Plantar, medial e proximal.**\n- O desvio é **distal**, que descobre a cabeça.",
+   "C": "**Dorsal, lateral e distal.**\n- Dorsal e lateral é o sentido **oposto** (cavovaro).",
+   "D": "**Dorsal, lateral e proximal.**\n- As três direções estão erradas."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "pe-tornozelo-0164": {
