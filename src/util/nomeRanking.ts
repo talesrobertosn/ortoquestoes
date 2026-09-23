@@ -1,3 +1,6 @@
+/** Questões respondidas para entrar no ranking (igual ao having count(*) >= 5 no banco). */
+export const MINIMO_RANKING = 5
+
 /**
  * Nome que aparece no ranking: o nome completo do cadastro + a inicial do
  * sobrenome. Espelha public.nome_publico_ranking() no banco, que é quem de
