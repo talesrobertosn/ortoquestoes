@@ -1799,619 +1799,520 @@
   "conferido": false
  },
  "coluna-0154": {
-  "conceito": "A linha de Swischuk é traçada ao longo das margens anteriores dos processos espinhosos de C1 a C3, ajudando a avaliar alinhamento cervical pediátrico. Uma linha que não acompanha adequadamente C2 pode sugerir instabilidade ou lesão, conforme o contexto.",
-  "correta": "A, A linha ilustrada é a linha de Swischuk.",
+  "conceito": "### Linha de Swischuk (linha cervical posterior)\n- **Traçado:** no **perfil**, liga a **junção espinolaminar** (cortical anterior do arco posterior) de **C1** à de **C3**. É a linha azul da figura.\n- **Leitura:** a cortical anterior do arco posterior de **C2** deve ficar **a até ~2 mm** dessa linha. Um desvio maior sugere **lesão verdadeira**, como a fratura do enforcado na criança.\n\n### Por que existe\nNa **criança** (sobretudo até ~8 anos), é comum a ==pseudossubluxação fisiológica== de C2 sobre C3 (e de C3 sobre C4): um deslizamento anterior de alguns milímetros, por frouxidão ligamentar e facetas horizontais. A linha de Swischuk ajuda a diferenciar a pseudossubluxação da lesão real.\n\n### Outras linhas da junção craniocervical\n| Linha | Uso |\n|---|---|\n| **McGregor** | palato duro → occipital; o dente não deve passar muito acima (invaginação basilar) |\n| **McRae** | plano do **forame magno**; o dente deve ficar abaixo |\n| **Chamberlain** | palato duro → opístio |\n| **Wackenheim** | ao longo do **clivo**; deve tangenciar o dente por trás |\n| **Powers** | razão para a luxação atlanto-occipital |\n\n> **Na prova:** linha espinolaminar de C1 a C3 = ==Swischuk== (pseudossubluxação pediátrica).",
+  "correta": "**Swischuk.**",
   "incorretas": {
-   "B": "A linha de Macgregor avalia a posição da tonsila ou palato em relação ao occipital, não o alinhamento espinhoso mostrado.",
-   "C": "A linha de McRae é o plano do forame magno.",
-   "D": "A linha de Wackenheim relaciona o clivo ao processo odontoide."
+   "B": "**McGregor.**\n- Do palato duro ao occipital; avalia invaginação basilar.",
+   "C": "**McRae.**\n- Plano do forame magno.",
+   "D": "**Wackenheim.**\n- Linha do clivo em relação ao dente."
   },
   "referencias": [
    "Swischuk LE. Anterior displacement of C2 in children: radiographic recognition and significance.",
    "Tachdjian's Pediatric Orthopaedics. 6th ed. Elsevier; 2021."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0155": {
-  "conceito": "O choque neurogênico depende da interrupção do fluxo simpático, e a cadeia simpática torácica sai da medula entre T1 e L2. Lesões acima de T6 (ou seja, na coluna cervical e na TORÁCICA ALTA) desconectam a maior parte dessa saída, incluindo os nervos cardíacos aceleradores (T1-T4), e produzem o quadro completo: hipotensão por vasoplegia, bradicardia por vago sem oposição e hipotermia por poiquilotermia. Lesões abaixo de T6 poupam a inervação simpática cardíaca e a maior parte do leito esplâncnico, e não produzem choque neurogênico verdadeiro.",
-  "correta": "Parte superior da coluna dorsal (torácica alta), acima de T6.",
+  "conceito": "### Por que acima de T6\n- A **saída simpática** da medula vai de **T1 a L2**:\n  - **T1 a T4:** nervos **cardioaceleradores**;\n  - **T5 a L2:** leito **esplâncnico**, com grande reservatório venoso.\n- Lesões ==acima de T6== (cervicais e ==torácicas altas==) desconectam boa parte dessa saída:\n  - **vasoplegia:** hipotensão;\n  - **bradicardia:** o vago age sem oposição;\n  - **poiquilotermia:** hipotermia.\n- Lesões **abaixo de T6** preservam a inervação simpática cardíaca e grande parte da esplâncnica. Choque neurogênico **verdadeiro** é incomum.\n\n### Disreflexia autonômica (na fase crônica)\n- Também ocorre nas lesões **acima de T6**.\n- **Gatilho:** estímulo nocivo abaixo da lesão (bexiga cheia, fecaloma, escara).\n- **Resposta:** **crise hipertensiva**, com bradicardia, cefaleia e sudorese acima da lesão.\n- **Conduta:** sentar o paciente, **remover o estímulo** (sondar, desimpactar) e anti-hipertensivo de ação rápida.\n\n> **Na prova:** choque neurogênico = lesão ==acima de T6== (cervical ou torácica alta).",
+  "correta": "**Parte superior da coluna dorsal (torácica alta).**",
   "incorretas": {
-   "A": "A coluna lombar superior está abaixo do território em que a lesão produz o quadro.",
-   "B": "A lombar baixa está ainda mais distante, já no nível da cauda equina.",
-   "D": "A torácica baixa poupa a inervação simpática cardíaca e a maior parte do leito esplâncnico."
+   "A": "**Lombar alta.**\n- Abaixo do território que causa o quadro.",
+   "B": "**Lombar baixa.**\n- Nível da cauda equina.",
+   "D": "**Torácica baixa.**\n- Poupa a inervação simpática cardíaca e boa parte do leito esplâncnico."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0156": {
-  "conceito": "Na estenose lombar clássica a compressão é CENTRAL, e a flexão do tronco alarga o canal e alivia, daí o sinal do carrinho de supermercado. Na escoliose degenerativa do adulto a mecânica é outra: a compressão é predominantemente FORAMINAL, do lado côncavo da curva, produzida pelo colapso do disco, pela subluxação rotatória e pela obliquidade das vértebras. Esse forame não se abre com a flexão do tronco, porque o problema é a angulação e a rotação no plano coronal, e não a redundância do ligamento amarelo. Some-se a isso o desequilíbrio sagital, que já obriga o paciente a andar inclinado para frente.",
-  "correta": "Não melhoram com a flexão do tronco, ao contrário do que acontece na estenose de canal lombar.",
+  "conceito": "### Escoliose degenerativa do adulto (de novo)\n- **Origem:** degeneração **assimétrica** dos discos e facetas, geralmente em pacientes com mais de 50 anos, com curva **lombar**.\n- **Achados:**\n  - **subluxação rotatória / listese lateral** no ápice ou na transição;\n  - **colapso discal** do lado côncavo;\n  - **perda de lordose** e **desequilíbrio sagital**.\n\n### Por que a flexão não alivia\n- Na **estenose central** clássica, a flexão alarga o canal: alivia.\n- Na escoliose degenerativa, a compressão é predominantemente ==foraminal / de recesso==, no **lado côncavo** (colapso e rotação), ou dinâmica na **subluxação lateral**. A flexão do tronco **não abre** esse forame.\n- O paciente já anda **inclinado para frente** pelo **desequilíbrio sagital**, e mesmo assim tem dor.\n\n### Tratamento\n**Cirurgia:**\n- descompressão **isolada** só em casos selecionados (curva pequena, estável);\n- **descompressão + artrodese** com correção da deformidade (sobretudo **sagital**) quando há instabilidade ou desequilíbrio.\n\n> **Na prova:** escoliose degenerativa = ==não melhora com a flexão==, ao contrário da estenose central.",
+  "correta": "**Não melhoram com a flexão, ao contrário da estenose de canal.**",
   "incorretas": {
-   "A": "A afirmação sobre a estenose lombar está certa, mas na escoliose degenerativa a flexão não produz o mesmo alívio.",
-   "B": "Inverte as duas situações.",
-   "C": "Na estenose de canal lombar a flexão MELHORA, e é isso que a caracteriza."
+   "A": "**Melhoram, como na estenose.**\n- Na escoliose degenerativa, a flexão não produz o mesmo alívio.",
+   "B": "**Melhoram, ao contrário da estenose.**\n- Inverte as duas situações.",
+   "C": "**Não melhoram, como na estenose.**\n- Na estenose de canal, a flexão **melhora**."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 39"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0157": {
-  "conceito": "Na osteomielite vertebral o germe aponta a porta de entrada, e isso muda a investigação. Staphylococcus aureus é o mais comum e vem de foco cutâneo ou de cateter. Bacilos gram-negativos, sobretudo Escherichia coli, apontam para o trato urinário. Enterococcus e Streptococcus dos grupos viridans e D apontam para ENDOCARDITE (são germes de valva), e identificá-los obriga a solicitar ecocardiograma, de preferência transesofágico, porque tratar a coluna sem tratar a valva leva a recidiva. Pseudomonas remete ao usuário de droga intravenosa, e anaeróbios a foco odontológico ou abdominal.",
-  "correta": "Endocardite.",
+  "conceito": "### O germe indica a porta de entrada\n| Germe | Foco provável |\n|---|---|\n| **S. aureus** (o mais comum) | pele, cateter, foco a distância |\n| ==Enterococcus, Streptococcus viridans / grupo D (bovis)== | ==endocardite== |\n| Gram-negativos (E. coli, Proteus) | **trato urinário** (idosos, manipulação urológica) |\n| **Pseudomonas** | usuário de **drogas injetáveis** |\n| **Salmonella** | **anemia falciforme** |\n| Anaeróbios | foco **odontológico** ou abdominal |\n| **M. tuberculosis** | Pott (toracolombar; poupa o disco no início) |\n| **Brucella** | contato com animais, leite não pasteurizado (lombar baixa) |\n\n### Na prática\n- **Enterococo ou estreptococo** na hemocultura ou na biópsia: pedir **ecocardiograma**, preferencialmente **transesofágico**. A endocardite exige tratamento próprio, com risco de recidiva se não for tratada.\n- **S. bovis / gallolyticus:** investigar também **câncer colorretal** (colonoscopia).\n\n> **Na prova:** enterococo ou estreptococo na coluna = pensar em ==endocardite==.",
+  "correta": "**Endocardite.**",
   "incorretas": {
-   "A": "A pneumonia aponta sobretudo para pneumococo e estafilococo.",
-   "C": "A cavidade oral remete a anaeróbios e a estreptococos do grupo viridans em contexto dentário, mas a associação clássica desses germes na coluna é a endocardite.",
-   "D": "O trato urinário aponta para bacilos gram-negativos, especialmente Escherichia coli."
+   "A": "**Pneumonia.**\n- Pneumococo, estafilococo.",
+   "C": "**Cavidade oral.**\n- Anaeróbios; mas a associação clássica desses germes na coluna é a endocardite.",
+   "D": "**Trato urinário.**\n- Gram-negativos (E. coli)."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0159": {
-  "conceito": "As síndromes medulares se deduzem do trajeto dos tratos. O funículo POSTERIOR carrega propriocepção, vibração e tato discriminativo, e sobe do mesmo lado até o bulbo. Uma lesão isolada dele (rara, descrita em compressão posterior, deficiência de vitamina B12, tabes dorsalis e mielopatia por óxido nitroso) preserva a força, a dor e a temperatura, e compromete apenas a propriocepção e a vibração. O resultado é uma ataxia sensitiva característica: o paciente anda olhando os pés, e piora muito no escuro ou de olhos fechados (Romberg positivo).",
-  "correta": "Medular posterior.",
+  "conceito": "### Síndrome medular posterior\n- **Tratos lesados:** colunas posteriores (fascículos grácil e cuneiforme).\n- **Perde:** ==propriocepção==, vibração e tato discriminativo.\n- **Preserva:** ==força==, **dor e temperatura** (espinotalâmico) e tato grosseiro.\n- **Clínica:** **ataxia sensitiva**. O paciente anda com base alargada, olhando os pés, e piora no escuro. **Romberg positivo.**\n- **Causas:**\n  - rara no trauma (hiperextensão, compressão posterior);\n  - **deficiência de vitamina B12** (degeneração combinada subaguda);\n  - **tabes dorsalis** (sífilis);\n  - **óxido nitroso**;\n  - mielopatia por cobre.\n- **Prognóstico:** bom para a força.\n\n### Contraste com as outras\n- **Anterior:** perde motor, dor e temperatura; **preserva** a propriocepção.\n- **Central:** MMSS mais afetados que os MMII.\n- **Cone medular:** esfíncteres, anestesia em sela, disfunção sexual.\n\n> **Na prova:** só a propriocepção alterada = ==medular posterior==.",
+  "correta": "**Medular posterior.**",
   "incorretas": {
-   "A": "A medular central afeta desproporcionalmente os membros superiores, com déficit motor evidente.",
-   "B": "A medular anterior é o oposto: perde motricidade, dor e temperatura, e POUPA a propriocepção.",
-   "C": "A síndrome do cone medular cursa com alterações esfincterianas, anestesia em sela e disfunção sexual."
+   "A": "**Central.**\n- Déficit **motor** maior nos MMSS.",
+   "B": "**Anterior.**\n- O oposto: **poupa** a propriocepção.",
+   "C": "**Cone medular.**\n- Esfíncteres, sela, disfunção sexual."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 41"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0161": {
-  "conceito": "O pacote de C6 é bem definido: sensibilidade na face LATERAL do antebraço, no POLEGAR e no indicador; força na flexão do cotovelo (bíceps) e na extensão do punho pelos EXTENSORES RADIAIS do carpo; e alteração do reflexo braquiorradial. Quanto ao nível, vale a regra cervical, a raiz leva o número da vértebra INFERIOR, de modo que o disco C5-C6 comprime a raiz de C6. Comparando: C5 dá face lateral do braço e abdução do ombro; C7 dá dedo médio, tríceps e extensão dos dedos.",
-  "correta": "Raiz de C6, comprimida no segmento C5-C6.",
+  "conceito": "### O quadro de C6\n- **Sensibilidade:** ==face lateral do antebraço e polegar== (e indicador).\n- **Motor:** bíceps e ==extensores radiais do carpo== (extensão do punho).\n- **Reflexo:** braquiorradial.\n\n### O nível\n- Na cervical, a raiz tem o número da vértebra **inferior**: o disco ==C5-C6== comprime **C6**.\n- Isso vale tanto para a hérnia **posterolateral** quanto para a **foraminal**, porque a raiz C6 sai pelo forame C5-C6.\n- Na **lombar**, é diferente: a foraminal comprime a raiz que sai **naquele** nível (a de cima), e a posterolateral comprime a de baixo.\n\n### Comparação\n| Disco | Raiz | Sinais |\n|---|---|---|\n| C4-C5 | C5 | deltoide, bicipital, face lateral do braço |\n| ==C5-C6== | ==C6== | bíceps, extensores do punho, braquiorradial, polegar |\n| C6-C7 | C7 | tríceps, flexores do punho, tricipital, dedo médio |\n| C7-T1 | C8 | flexores dos dedos, dedo mínimo |\n\n> **Na prova:** polegar + extensor radial do carpo = ==C6, disco C5-C6==.",
+  "correta": "**C6 e C5-C6.**",
   "incorretas": {
-   "A": "C5 dá sensibilidade na face lateral do BRAÇO e fraqueza de abdução do ombro.",
-   "B": "O segmento está certo, mas o disco C5-C6 comprime C6, e não C5.",
-   "D": "A raiz está certa, mas ela é comprimida pelo disco C5-C6; o disco C6-C7 comprime C7."
+   "A": "**C5 e C4-C5.**\n- C5 é a face lateral do **braço** e o deltoide.",
+   "B": "**C5 e C5-C6.**\n- O disco C5-C6 comprime **C6**.",
+   "D": "**C6 e C6-C7.**\n- O disco C6-C7 comprime **C7**."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 38"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0162": {
-  "conceito": "A regra de Spence avalia a integridade do ligamento TRANSVERSO do atlas na fratura de Jefferson, e é medida na radiografia transoral: soma-se o quanto cada massa lateral de C1 ultrapassa lateralmente a borda do corpo de C2. Se a soma passa de 6,9 mm (na prática, cerca de 7 mm), presume-se ruptura do ligamento transverso, e a fratura, que seria estável e tratada com colar, passa a ser instável, exigindo halo ou artrodese C1-C2. Vale lembrar que a tomografia e a ressonância hoje avaliam isso diretamente, mas a regra continua sendo cobrada e continua útil.",
-  "correta": "Ligamento transverso, na fratura de C1.",
+  "conceito": "### Regra de Spence (fratura de Jefferson)\n- **Fratura de Jefferson:** fratura em explosão do **anel de C1** por carga axial. As massas laterais se afastam.\n- **Regra:** na radiografia **transoral** (AP com a boca aberta), soma-se o **deslocamento lateral** das duas massas laterais de C1 em relação ao corpo de C2.\n- **Soma acima de ~6,9 mm (≈7 mm):** presume-se ruptura do ==ligamento transverso==, e a fratura é **instável**.\n\n### Hoje\n- A **TC** mostra a fratura e eventual **avulsão óssea** do transverso.\n- A **RM** mostra a lesão ligamentar direta, que é o que classifica.\n- **Dickman:**\n  - **tipo I:** ruptura **intrassubstancial**; não cicatriza, e indica **artrodese C1-C2**;\n  - **tipo II:** **avulsão óssea** do tubérculo da massa lateral; pode consolidar com imobilização (**halo**).\n\n### Tratamento de Jefferson\n- **Transverso íntegro:** colar ou halo.\n- **Rompido:** halo ou tração para reduzir; artrodese (C1-C2, ou occipitocervical) conforme o caso. **Osteossíntese direta de C1** também é opção.\n\n> **Na prova:** Spence = ==transverso na fratura de C1==.",
+  "correta": "**Transverso, na fratura de C1.**",
   "incorretas": {
-   "A": "Os ligamentos alares limitam a rotação e são avaliados de outra forma; não é o que a regra de Spence mede.",
-   "B": "Nem o ligamento nem o osso correspondem: a regra é sobre C1.",
-   "D": "O ligamento está certo, mas a fratura avaliada é a de C1, e não a de C2."
+   "A": "**Alar em C1.**\n- Os alares limitam a **rotação**; não são avaliados pela regra de Spence.",
+   "B": "**Alar em C2.**\n- Ligamento e osso errados.",
+   "D": "**Transverso em C2.**\n- O ligamento está certo, mas a fratura avaliada é a de **C1**."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0163": {
-  "conceito": "A lordose lombar não se distribui igualmente entre os cinco níveis: ela se concentra embaixo. Os dois segmentos mais distais, L4-L5 e L5-S1, respondem por cerca de dois terços de toda a lordose (algo em torno de 67%), e L5-S1 sozinho contribui com aproximadamente 40%. Isso tem consequência cirúrgica direta: uma artrodese desses dois níveis feita em posição retificada consome a maior parte da lordose disponível e produz desequilíbrio sagital positivo, com dor e incapacidade. Restaurar lordose segmentar embaixo é, portanto, prioridade em qualquer fusão lombossacra.",
-  "correta": "Cerca de 67%.",
+  "conceito": "### Distribuição da lordose lombar\n- A lordose se concentra **embaixo**.\n- ==L4-L5 e L5-S1== respondem por cerca de ==2/3 (~67%)== da lordose lombar total.\n- **L5-S1** sozinho contribui com ~40%.\n- Os níveis altos (L1 a L3) têm pouca lordose segmentar.\n\n### Consequência cirúrgica\n- Uma artrodese **L4-S1 retificada** (sem lordose) consome grande parte da lordose do paciente. O resultado é **perda de lordose**, com **desequilíbrio sagital positivo**, dor, fadiga e **doença do nível adjacente**, a chamada **síndrome do dorso plano iatrogênica** (flatback).\n- **Prevenção:**\n  - posicionar com os **quadris estendidos**;\n  - usar **cages lordóticos** (ALIF, TLIF com cage anterior);\n  - osteotomias (Smith-Petersen/Ponte);\n  - planejar a lordose de acordo com a **incidência pélvica** (LL ≈ IP ± 10°, com 2/3 dela em L4-S1).\n\n> **Na prova:** L4-L5 e L5-S1 = ~==67%== da lordose lombar.",
+  "correta": "**~67%.**",
   "incorretas": {
-   "A": "32% subestima muito a contribuição dos segmentos distais.",
-   "B": "43% ainda fica abaixo do descrito.",
-   "C": "55% se aproxima, mas o valor de referência é próximo de dois terços."
+   "A": "**32%.**\n- Subestima muito.",
+   "B": "**43%.**\n- Ainda abaixo (próximo da contribuição de L5-S1 isolado).",
+   "C": "**55%.**\n- Próximo, mas a referência é ~2/3."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 39"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0164": {
-  "conceito": "O ligamento transverso do atlas estende-se entre as massas laterais de C1, posteriormente ao dente do áxis, mantendo o odontoide contra o arco anterior do atlas. É o principal estabilizador da articulação atlantoaxial.",
-  "correta": "C, A seta indica o ligamento transverso do atlas, posterior ao processo odontoide.",
+  "conceito": "### Ligamentos da junção craniocervical (vista posterior)\nNa figura, com o arco posterior e a membrana tectória removidos, aparece o **ligamento cruciforme**. A seta aponta a banda **horizontal**: o ==ligamento transverso do atlas==.\n\n### As estruturas\n- ==Ligamento transverso==:\n  - vai de uma **massa lateral** de C1 à outra, **atrás do dente**;\n  - mantém o dente contra o arco anterior;\n  - é o **principal estabilizador** da translação anterior de C1 sobre C2;\n  - seu limite é o **IAD** de até 3 mm no adulto.\n- **Bandas longitudinais** do cruciforme: superior (ao forame magno) e inferior (ao corpo de C2).\n- **Ligamentos alares:** do dente aos **côndilos occipitais**, **oblíquos e laterais**. Limitam a **rotação** (e a inclinação lateral).\n- **Ligamento apical:** da ponta do dente ao forame magno.\n- **Membrana tectória:** continuação cranial do **LLP**, mais **posterior**, do corpo de C2 ao clivo.\n\n### Clínica\n**Insuficiência do transverso:**\n- trauma (Dickman);\n- **artrite reumatoide**;\n- **síndrome de Down**;\n- infecções (Grisel).\n\n> **Na prova:** banda horizontal atrás do dente = ==ligamento transverso do atlas==.",
+  "correta": "**Transverso do atlas.**",
   "incorretas": {
-   "A": "Os ligamentos alares seguem do odontoide aos côndilos occipitais, lateralmente.",
-   "B": "Odontoide é uma estrutura óssea de C2, não um ligamento.",
-   "D": "A membrana tectorial fica mais posterior e superior, continuando o ligamento longitudinal posterior."
+   "A": "**Alar.**\n- Oblíquo, do dente aos côndilos occipitais.",
+   "B": "**Odontoide.**\n- É o **dente** de C2, estrutura óssea.",
+   "D": "**Membrana tectória.**\n- Mais posterior; continuação do LLP."
   },
   "referencias": [
    "Panjabi MM et al. Three-dimensional biomechanical analysis of the upper cervical spine. Spine.",
    "Gray's Anatomy. Craniocervical ligaments."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0165": {
-  "conceito": "O nervo laríngeo recorrente ascende no sulco traqueoesofágico, próximo à face medial da bainha carotídea e à traqueia. No acesso anterior cervical, a abordagem pelo lado esquerdo é tradicionalmente associada a menor risco de lesão do recorrente, por diferenças de trajeto entre os lados.",
-  "correta": "D, A estrutura indicada é o nervo laríngeo recorrente.",
+  "conceito": "### Nervo laríngeo recorrente (NLR)\n- **Trajeto:** sobe no ==sulco traqueoesofágico==, junto à traqueia, como na figura, para inervar a laringe (todas as cordas vocais, exceto o cricotireóideo).\n- **À esquerda:** contorna o **arco aórtico**. Tem trajeto **mais longo** e **mais previsível**, protegido no sulco traqueoesofágico.\n- **À direita:** contorna a **artéria subclávia**, mais alto. Tem trajeto **mais curto e oblíquo**, cruzando o campo cirúrgico nos níveis cervicais baixos. Raramente é **não recorrente** (anomalia vascular).\n\n### Na prática\n- Por esse raciocínio anatômico, o **acesso pela esquerda** é classicamente considerado de **menor risco** ao NLR. Estudos comparativos mostram taxas semelhantes, e a escolha do lado muitas vezes segue a preferência do cirurgião.\n- A lesão (ou tração) do NLR causa **rouquidão / disfonia**, geralmente **transitória**. Reduzir a **pressão do cuff** do tubo após posicionar os afastadores diminui a neuropraxia.\n- **Reoperação pelo lado oposto:** avaliar antes as **cordas vocais** (laringoscopia). Uma paralisia bilateral compromete a via aérea.\n\n### Os outros nervos\n- **Vago:** dentro da **bainha carotídea**.\n- **Frênico:** sobre o **escaleno anterior**, lateral.\n- **Hipoglosso:** alto, cruzando a carótida perto de C2-C3.\n\n> **Na prova:** nervo no sulco traqueoesofágico, protegido pelo acesso à esquerda = ==laríngeo recorrente==.",
+  "correta": "**Laríngeo recorrente.**",
   "incorretas": {
-   "A": "O vago permanece na bainha carotídea, entre carótida e jugular, e não segue o trajeto medial mostrado.",
-   "B": "O frênico desce sobre o músculo escaleno anterior, mais lateralmente.",
-   "C": "O hipoglosso cruza a região carotídea alta e não desce no sulco traqueoesofágico."
+   "A": "**Vago.**\n- Dentro da bainha carotídea.",
+   "B": "**Frênico.**\n- Sobre o escaleno anterior, mais lateral.",
+   "C": "**Hipoglosso.**\n- Cruza a região carotídea alta; não desce no sulco traqueoesofágico."
   },
   "referencias": [
    "Kline DG, Fox IK. Surgical anatomy of the recurrent laryngeal nerve.",
    "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0166": {
-  "conceito": "Na via paraespinhal de Wiltse, o intervalo intermuscular é entre o longuíssimo, mais lateral, e o multífido, mais medial. A separação nesse plano permite alcançar a junção facetária e a pars com menor descolamento muscular.",
-  "correta": "D, A seta 1 indica o longuíssimo e a seta 2 indica o multífido.",
+  "conceito": "### Acesso de Wiltse (paraespinhal)\nCorte **axial** em L5. A linha tracejada marca o **plano de dissecção** entre dois músculos:\n- **Seta 1:** o músculo **lateral** ao plano, o ==longuíssimo==, do grupo eretor da espinha.\n- **Seta 2:** o músculo **medial**, junto à lâmina e ao espinhoso, o ==multífido==.\n\n### Técnica e usos\n- **Técnica:** incisão (ou fáscia) a ~4 a 5 cm da linha média. O plano é desenvolvido **com o dedo**, até as **facetas** e os **processos transversos**.\n- **Usos:**\n  - hérnia **foraminal / extraforaminal**;\n  - artrodese **intertransversária**;\n  - **parafusos pediculares** (inclusive percutâneos / minimamente invasivos);\n  - descompressão foraminal na espondilolistese ístmica.\n- **Vantagens:** menos descolamento muscular e sangramento; preserva a inserção do multífido e sua inervação (ramo medial).\n\n### Posições relativas\nDe medial para lateral: **multífido** (junto às lâminas) → **longuíssimo** → **iliocostal**.\n\n> **Na prova:** Wiltse: 1 = ==longuíssimo== (lateral); 2 = ==multífido== (medial).",
+  "correta": "**Longuíssimo e multífido.**",
   "incorretas": {
-   "A": "Inverte os músculos e ainda nomeia iliocostal, que não é o limite medial mostrado.",
-   "B": "Inverte a posição: o longuíssimo é lateral e o multífido é medial.",
-   "C": "Iliocostal é mais lateral e não corresponde ao músculo da seta 1 neste plano."
+   "A": "**Multífido e iliocostal.**\n- Inverte a seta 1 e nomeia o iliocostal, que é o mais lateral.",
+   "B": "**Multífido e longuíssimo.**\n- Ordem invertida: o longuíssimo é lateral (seta 1).",
+   "C": "**Longuíssimo e iliocostal.**\n- A seta 2 é **medial**: o multífido."
   },
   "referencias": [
    "Wiltse LL, et al. The paraspinal sacrospinalis-splitting approach to the lumbar spine. Spine.",
    "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0167": {
-  "conceito": "A via transesternal para a transição cervicotorácica permite exposição anterior baixa até aproximadamente T4. A extensão depende da anatomia do paciente e da posição do arco aórtico, mas T4 é o limite indicado no esquema.",
-  "correta": "C, A vértebra indicada é T4.",
+  "conceito": "### Acessos à transição cervicotorácica\n- **Cervical anterior baixo** (Smith-Robinson estendido): costuma alcançar **C7-T1** e, às vezes, **T1-T2**, conforme o biotipo (pescoço longo e magro) e a posição do esterno.\n- ==Transesternal / manubriotomia==: a divisão do **manúbrio** ou do esterno amplia a exposição até cerca de ==T3-T4==. O **tronco braquiocefálico**, a **veia braquiocefálica esquerda** e o **arco aórtico** limitam a descida (na figura, os grandes vasos aparecem abaixo da vértebra indicada).\n- **Toracotomia alta** (3ª costela) ou pela janela entre os grandes vasos: para T3-T5.\n- **Posteriores / posterolaterais** (costotransversectomia, lateral extracavitário): alternativas para acessar o corpo sem abrir o mediastino.\n\n### Riscos do acesso transesternal\n- **Grandes vasos**, **ducto torácico** (à esquerda), **laríngeo recorrente**.\n- **Pleura**, traqueia e esôfago.\n\n### Na prática\nA **TC ou RM sagital pré-operatória** mostra até onde a linha do esterno permite chegar em cada paciente.\n\n> **Na prova:** via transesternal = até ==T4== (na figura e no gabarito).",
+  "correta": "**T4.**",
   "incorretas": {
-   "A": "T2 fica mais cranial e costuma ser acessível por abordagens cervicais baixas sem necessidade de transesternalização.",
-   "B": "T3 está acima do limite inferior representado no desenho.",
-   "D": "T5 é mais caudal que o alcance usual descrito para a via transesternal."
+   "A": "**T2.**\n- Muitas vezes acessível sem abrir o esterno.",
+   "B": "**T3.**\n- Acima do limite indicado na figura.",
+   "D": "**T5.**\n- Abaixo do alcance usual; exige toracotomia."
   },
   "alerta": "O limite inferior varia com biotipo, esterno e arco aórtico; a resposta segue o nível indicado na figura e o gabarito.",
   "referencias": [
    "Bohlman HH et al. Anterior approaches to the cervicothoracic junction.",
    "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "moderado",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0168": {
-  "conceito": "No corte axial em L4–L5, o músculo psoas fica anterolateral ao corpo vertebral. A raiz L4 atravessa o forame L4–L5, enquanto a raiz L5 desce no canal lateral para sair pelo forame L5–S1.",
-  "correta": "A, A seta 1 aponta para o psoas e a seta 2 corresponde à raiz L4 no forame.",
+  "conceito": "### Anatomia do corte axial em L4-L5 (T2)\n- **Seta 1:** músculo grande e escuro, **anterolateral** ao corpo/disco: ==psoas==.\n  - O **plexo lombar** corre dentro dele.\n  - No acesso lateral (XLIF), é atravessado.\n- **Seta 2:** raiz no **forame** L4-L5, lateral ao disco: ==L4==, a raiz que **sai** nesse nível.\n  - A **L5** é a raiz que **atravessa** o nível L4-L5 dentro do canal (recesso lateral), para sair em L5-S1.\n\n### Relação com a hérnia\n| Hérnia L4-L5 | Raiz comprimida |\n|---|---|\n| central / posterolateral (subarticular) | **L5** (a que atravessa) |\n| **foraminal / extraforaminal** | ==L4== (a que sai) |\n\n### Outros músculos\n- **Quadrado lombar:** mais **lateral e posterior** ao psoas, junto aos processos transversos.\n- **Paraespinhais:** multífido, longuíssimo e iliocostal, atrás.\n\n> **Na prova:** 1 = ==psoas==; 2 = raiz ==L4== no forame L4-L5.",
+  "correta": "**Psoas e L4.**",
   "incorretas": {
-   "B": "A seta 1 mostra psoas, mas a raiz L5 é a raiz transeunte no nível discal L4–L5, não a foraminal indicada.",
-   "C": "A seta 1 não está no quadrado lombar, que fica mais lateral e posterior ao psoas.",
-   "D": "Confunde o músculo e a relação foraminal da raiz; o quadrado lombar não é a estrutura apontada."
+   "B": "**Psoas e L5.**\n- A L5 **atravessa** o nível dentro do canal; a raiz foraminal é a L4.",
+   "C": "**Quadrado lombar e L4.**\n- O quadrado lombar é mais lateral e posterior.",
+   "D": "**Quadrado lombar e L5.**\n- Músculo e raiz errados."
   },
   "referencias": [
    "Bogduk N. Clinical Anatomy of the Lumbar Spine and Sacrum. 5th ed. Elsevier; 2012.",
    "Gray's Anatomy. Lumbar plexus and psoas anatomy."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0169": {
-  "conceito": "A pars interarticularis é o istmo ósseo situado entre os processos articulares superior e inferior. Na vista posterior, ela fica lateral à lâmina e medial ao processo transverso, como na região apontada.",
-  "correta": "B, A seta indica a pars interarticularis.",
+  "conceito": "### Pars interarticularis\n- **O que é:** o **istmo ósseo** entre o **processo articular superior** e o **inferior**, na junção da lâmina com o pedículo.\n- **Na vista posterior:** fica **lateral à lâmina** e **medial ao processo transverso**, como aponta a seta.\n- **Na oblíqua:** é o \"**pescoço do cachorrinho escocês**\".\n- **Relevância:** local da ==espondilólise==, uma fratura por estresse em atletas de hiperextensão, que leva à espondilolistese **ístmica** (Wiltse II), sobretudo em L5.\n\n### As alternativas\n- **Faceta articular:** superfície cartilaginosa das articulações zigoapofisárias. Na figura, aparece em azul no alto.\n- **Processo transverso:** projeção **lateral**.\n- **Tubérculo de Chassaignac:** tubérculo anterior do transverso de **C6** (cervical).\n\n### Tratamento da espondilólise sintomática\n- **Conservador:** repouso esportivo, órtese, fisioterapia.\n- **Reparo da pars** (Buck, Scott, parafuso pedicular com gancho ou haste) em jovens sem degeneração discal.\n- **Artrodese** se houver listese ou disco degenerado.\n\n> **Na prova:** istmo entre as facetas = ==pars interarticularis==.",
+  "correta": "**Pars interarticularis.**",
   "incorretas": {
-   "A": "A faceta articular é a superfície revestida por cartilagem, visível superiormente na figura.",
-   "C": "O processo transverso projeta-se lateralmente e não é a região indicada pelo marcador.",
-   "D": "O tubérculo de Chassaignac é o tubérculo anterior do processo transverso de C6, distante da área mostrada."
+   "A": "**Faceta articular.**\n- Superfície cartilaginosa, visível no alto da figura.",
+   "C": "**Processo transverso.**\n- Projeção lateral.",
+   "D": "**Tubérculo de Chassaignac.**\n- Transverso de **C6**, na cervical."
   },
   "referencias": [
    "Wiltse LL, Newman PH, Macnab I. Classification of spondylolysis and spondylolisthesis. Clin Orthop Relat Res. 1976;117:23-29.",
    "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0170": {
-  "conceito": "Na hemissecção medular (Brown-Séquard) o quadro se deduz de onde cada trato cruza. O corticoespinhal cruzou lá em cima, no bulbo, e o funículo posterior sobe do mesmo lado até o bulbo, portanto déficit motor e perda de PROPRIOCEPÇÃO, vibração e tato discriminativo IPSILATERAIS à lesão. O espinotalâmico, ao contrário, cruza na própria medula, um ou dois níveis acima da entrada, de modo que a perda de dor e temperatura é CONTRALATERAL, começando alguns segmentos abaixo. É a síndrome incompleta de melhor prognóstico.",
-  "correta": "Perda da propriocepção do lado da lesão.",
+  "conceito": "### Brown-Séquard (hemissecção)\n**Do mesmo lado da lesão (ipsilateral):**\n- ==perda motora== (o corticoespinhal já cruzou no bulbo);\n- ==perda da propriocepção==, da vibração e do tato fino (colunas posteriores; cruzam no bulbo).\n\n**Do lado oposto (contralateral):**\n- perda de **dor e temperatura** (espinotalâmico; cruza na medula), começando 1 a 2 segmentos **abaixo** do nível.\n\n**No nível da lesão:** faixa de anestesia e paralisia de neurônio motor inferior segmentar, ipsilateral.\n\n### Prognóstico\nO **melhor** das síndromes incompletas: a maioria volta a andar e a ter controle esfincteriano.\n\n> **Na prova:** hemissecção = ==propriocepção perdida do lado da lesão==.",
+  "correta": "**Perda da propriocepção do lado da lesão.**",
   "incorretas": {
-   "A": "A perda de força é unilateral, do lado da lesão.",
-   "C": "A perda motora é ipsilateral, e não contralateral, porque o trato corticoespinhal já cruzou no bulbo.",
-   "D": "A propriocepção é justamente uma das funções perdidas, do lado da lesão."
+   "A": "**Força perdida bilateralmente.**\n- A perda é **unilateral** (ipsilateral).",
+   "C": "**Força perdida do lado oposto.**\n- É **ipsilateral**; o corticoespinhal já cruzou no bulbo.",
+   "D": "**Propriocepção preservada.**\n- É perdida, do lado da lesão."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0171": {
-  "conceito": "O cone medular é a extremidade afilada da medula, e no adulto ele ocupa a região entre T11 e L2, daí a síndrome do cone estar ligada às fraturas da transição toracolombar, que é justamente o segmento mais fraturado da coluna. O quadro é misto, com sinais de primeiro e de segundo neurônio motor, e tem três marcas: disfunção esfincteriana precoce e simétrica (retenção urinária e incontinência fecal), anestesia em sela e disfunção sexual, com déficit motor relativamente discreto nos membros. É diferente da síndrome da cauda equina, mais assimétrica, mais dolorosa e de instalação mais lenta.",
-  "correta": "Entre T11 e L2.",
+  "conceito": "### Cone medular\n- **Localização no adulto:** entre ==T11 e L2== (termina em L1-L2). As fraturas da **transição toracolombar**, a região mais fraturada da coluna, podem lesá-lo.\n- **Clínica da síndrome do cone:**\n  - disfunção **esfincteriana** (vesical e anal) **precoce e simétrica**;\n  - **anestesia em sela** (S3 a S5);\n  - **disfunção sexual**;\n  - déficit motor nos membros relativamente **discreto** e **simétrico**;\n  - pouca dor;\n  - quadro misto de neurônio motor superior e inferior. O **bulbocavernoso** pode estar abolido (arco lesado).\n\n### Cone × cauda equina\n| | Cone | Cauda equina |\n|---|---|---|\n| Nível | T11 a L2 | abaixo de L2 |\n| Esfíncteres | **precoces** | mais tardios |\n| Dor | pouca | **intensa**, radicular |\n| Simetria | **simétrica** | **assimétrica** |\n| Motor | discreto | pode ser importante (padrão NMI) |\n| Prognóstico | pior para os esfíncteres | melhor (nervos periféricos) |\n\n> **Na prova:** síndrome do cone = ==T11 a L2==.",
+  "correta": "**T11 a L2.**",
   "incorretas": {
-   "A": "T8-T11 fica acima do cone, no território da medula torácica.",
-   "C": "L2-L4 já corresponde à cauda equina no adulto.",
-   "D": "L4-S1 é território de raízes lombossacras, bem abaixo do cone."
+   "A": "**T8 a T11.**\n- Medula torácica, acima do cone.",
+   "C": "**L2 a L4.**\n- Já é **cauda equina** no adulto.",
+   "D": "**L4 a S1.**\n- Raízes lombossacras, bem abaixo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0172": {
-  "conceito": "Três elementos do enunciado apontam para o mesmo diagnóstico. A idade, a estenose degenerativa é doença da quinta década em diante. A irradiação MAL DEFINIDA e BILATERAL, a compressão do saco dural atinge várias raízes ao mesmo tempo, e o resultado é uma queixa difusa de peso, cansaço e queimação, sem seguir dermátomo. E a piora ao ANDAR, com alívio ao sentar ou inclinar-se para frente, que é a claudicação neurogênica. Uma hérnia produziria dor unilateral seguindo dermátomo; a dor discogênica pioraria sentado, e não andando.",
-  "correta": "Estenose lombar.",
+  "conceito": "### As pistas do enunciado\n- **50 anos:** faixa da **estenose degenerativa**.\n- **Irradiação mal definida e bilateral:** a compressão do **saco dural** atinge várias raízes, com sintomas **difusos** e **não dermatoméricos** (peso, cansaço, queimação).\n- **Piora ao andar:** **claudicação neurogênica**, que alivia ao **sentar** ou ao **inclinar-se para frente**.\n\nConclusão: ==estenose lombar==.\n\n### Diferenciais\n| Diagnóstico | Marca |\n|---|---|\n| **Hérnia de disco** | dor **unilateral**, **dermatomérica**, Lasègue positivo |\n| **Discogênica** | piora **sentado** e ao fletir; alivia em pé e andando |\n| **Facetária** | piora em pé e em extensão; não irradia abaixo do joelho |\n| **Miofascial** | pontos-gatilho |\n| **Claudicação vascular** | distância **fixa**, alivia ao parar mesmo de pé; pulsos diminuídos |\n\n> **Na prova:** mais de 50 anos + irradiação bilateral mal definida + piora ao andar = ==estenose lombar==.",
+  "correta": "**Estenose lombar.**",
   "incorretas": {
-   "A": "A dor miofascial tem pontos-gatilho palpáveis com dor referida, sem esse padrão de piora à marcha.",
-   "C": "A hérnia de disco dá dor unilateral seguindo o dermátomo, com sinais de tensão radicular.",
-   "D": "A dor discogênica piora sentado e ao fletir o tronco, e alivia em pé, o oposto do descrito."
+   "A": "**Miofascial.**\n- Pontos-gatilho, sem claudicação.",
+   "C": "**Hérnia de disco.**\n- Dor **unilateral** e dermatomérica.",
+   "D": "**Discogênica.**\n- Piora **sentado**, e não ao andar."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0173": {
-  "conceito": "A diferença do ângulo costovertebral de Mehta é medida na vértebra apical: traça-se, dos dois lados, o ângulo entre a perpendicular ao platô vertebral e o eixo da costela, e calcula-se a diferença entre o lado côncavo e o convexo. Diferença ACIMA DE 20 GRAUS indica curva evolutiva; abaixo disso, a maioria das escolioses idiopáticas infantis regride espontaneamente. O segundo parâmetro é a fase da costela: na fase II, em que a cabeça da costela convexa já se sobrepõe ao corpo vertebral, considera-se evolutiva independentemente do valor do ângulo.",
-  "correta": "20 graus.",
+  "conceito": "### Critérios de Mehta na escoliose idiopática infantil\n- **Diferença do ângulo costovertebral (DACV):**\n  - na vértebra **apical**, mede-se o ângulo entre a **perpendicular ao platô** e o **eixo da costela**, dos dois lados;\n  - **DACV = lado côncavo menos lado convexo**;\n  - ==acima de 20°==: curva **evolutiva**;\n  - abaixo de 20°: a maioria **regride** espontaneamente.\n- **Fase da costela:**\n  - **fase I:** a cabeça da costela convexa **não** se sobrepõe ao corpo;\n  - **fase II:** **sobrepõe-se**. A curva é evolutiva, **independentemente** do DACV.\n\n### Conduta nas evolutivas\n- **RM** do neuroeixo.\n- **Gessos seriados de Mehta**, depois colete.\n- Nas graves, **hastes de crescimento**.\n\n> **Na prova:** escoliose infantil evolutiva = DACV ==acima de 20°== (ou costela em fase II).",
+  "correta": "**20°.**",
   "incorretas": {
-   "A": "5 graus está dentro da variação normal e classificaria como evolutiva quase toda curva.",
-   "B": "10 graus ainda fica abaixo do limiar descrito.",
-   "D": "30 graus é exigente demais e deixaria escapar curvas que de fato progridem."
+   "A": "**5°.**\n- Classificaria quase toda curva como evolutiva.",
+   "B": "**10°.**\n- Abaixo do limiar.",
+   "D": "**30°.**\n- Exigente demais; deixaria escapar curvas que progridem."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0174": {
-  "conceito": "Os fatores de mau prognóstico da espondilolistese displásica são todos morfológicos ou ligados ao crescimento, e eles se somam. O sacro CUPULIFORME (domo redondo) significa que o platô sacral já foi remodelado e perdeu a contenção anterior. O corpo de L5 TRAPEZOIDAL significa que a própria vértebra se deformou, mais alta atrás do que na frente. O ESTIRÃO de crescimento é o período em que a progressão acontece, a listese progride enquanto a criança cresce. O sexo feminino é mais frequente nesse tipo, mas não figura entre os preditores morfológicos de progressão.",
-  "correta": "Sexo feminino é a exceção: ele caracteriza a epidemiologia do tipo displásico, e não é um preditor de pior evolução.",
+  "conceito": "### Fatores de pior prognóstico na espondilolistese displásica\n**Morfológicos:**\n- **sacro cupuliforme** (domo arredondado): perda da contenção anterior;\n- **L5 trapezoidal:** vértebra já deformada;\n- **ângulo de escorregamento** (cifose lombossacra) aumentado;\n- **grau alto** de Meyerding;\n- **incidência pélvica alta**, pelve desequilibrada (retrovertida).\n\n**Crescimento:**\n- **estirão** de crescimento: é quando a progressão acontece;\n- esqueleto imaturo (Risser baixo).\n\n### E o sexo feminino?\nO **sexo feminino** caracteriza a **epidemiologia** (a forma displásica é mais comum em meninas). Na questão, ele é tratado como **não sendo** preditor de pior evolução, ao contrário dos fatores morfológicos e do crescimento. Algumas referências também citam o sexo feminino como fator de progressão na espondilolistese pediátrica em geral.\n\n> **Na prova:** o que **não** agrega pior prognóstico (pelo gabarito) = ==sexo feminino==.",
+  "correta": "**Sexo feminino.**\n- Pelo gabarito, caracteriza a epidemiologia, sem ser preditor morfológico de pior evolução.",
   "incorretas": {
-   "B": "O corpo de L5 trapezoidal indica remodelação já ocorrida e aumento do ângulo de escorregamento.",
-   "C": "O sacro cupuliforme retira a barreira óssea anterior que continha L5.",
-   "D": "O estirão é o período de maior risco: a progressão acompanha o crescimento."
+   "B": "**L5 trapezoidal.**\n- Indica remodelação e aumenta o ângulo de escorregamento.",
+   "C": "**Sacro cupuliforme.**\n- Retira a contenção anterior de L5.",
+   "D": "**Estirão.**\n- Período de maior risco de progressão."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0175": {
-  "conceito": "A forma ATÍPICA da doença de Scheuermann (toracolombar ou lombar, com ápice entre T10 e L2) difere da clássica em vários pontos, e conhecê-los evita descartar o diagnóstico por não encontrar o critério torácico. Ela é MAIS dolorosa e deforma menos; associa-se a carga axial e atividade física intensa no adolescente; apresenta nódulos de Schmorl e irregularidade de placas terminais com fartura; e frequentemente NÃO preenche o critério de três vértebras adjacentes acunhadas em 5 graus, podendo mostrar acunhamento em uma ou duas apenas. Evolui pior na vida adulta, com degeneração discal precoce.",
-  "correta": "Não apresenta necessariamente três vértebras acunhadas consecutivamente.",
+  "conceito": "### Scheuermann atípico (toracolombar / lombar)\n- **Ápice:** T10 a L2.\n- **Clínica:** ==mais doloroso== e menos deformante que o típico.\n- **Associação:** **carga axial** e esporte intenso no adolescente.\n- **Imagem:**\n  - **nódulos de Schmorl** abundantes;\n  - **irregularidade** das placas terminais;\n  - estreitamento discal;\n  - às vezes, **limbus vertebra**.\n  - ==Frequentemente não preenche o critério de 3 vértebras adjacentes acunhadas== (5° ou mais): pode ter acunhamento em 1 ou 2.\n- **Evolução:** mais **degeneração discal** precoce.\n\n### Típico (para contrastar)\n- **Torácico** (ápice T7 a T9).\n- Mais comum.\n- Cifose visível, **menos dor**.\n- Preenche **Sörensen** (3 vértebras com 5° ou mais).\n\n> **Na prova:** atípico = ==não exige 3 vértebras acunhadas==, toracolombar, doloroso, com Schmorl.",
+  "correta": "**Não exige 3 vértebras acunhadas consecutivas.**",
   "incorretas": {
-   "A": "Os nódulos de Schmorl estão presentes, e com frequência são exuberantes na forma atípica.",
-   "B": "A forma caracteristicamente torácica é a TÍPICA; a atípica é toracolombar ou lombar.",
-   "D": "A forma atípica é justamente a mais dolorosa das duas."
+   "A": "**Sem nódulos de Schmorl.**\n- Tem, e muitas vezes exuberantes.",
+   "B": "**Torácica.**\n- A torácica é a forma **típica**.",
+   "D": "**Indolor.**\n- É a forma **mais dolorosa**."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0176": {
-  "conceito": "O ângulo de Cobb se mede assim: identificam-se as vértebras TERMINAIS (a mais inclinada em cada extremidade da curva), traça-se uma linha na superfície SUPERIOR da vértebra terminal superior e outra na superfície INFERIOR da vértebra terminal inferior, e mede-se o ângulo entre as perpendiculares a essas duas linhas. A medida tem erro entre observadores de cerca de 5 graus, motivo pelo qual só se considera progressão real quando o aumento entre radiografias supera 5 a 7 graus, e por isso mesmo o ideal é que o mesmo observador compare os exames sucessivos.",
-  "correta": "Superfície superior da vértebra terminal superior e superfície inferior da vértebra terminal inferior.",
+  "conceito": "### Como medir o ângulo de Cobb\n1. Identificar as **vértebras terminais**: as **mais inclinadas** em cada extremidade da curva.\n2. Traçar uma linha na ==superfície superior da vértebra terminal superior==.\n3. Traçar outra na ==superfície inferior da vértebra terminal inferior==.\n4. Medir o ângulo entre as duas linhas, ou entre as suas **perpendiculares** (o resultado é o mesmo).\n\nSe os platôs forem mal visíveis, use a borda superior ou inferior dos **pedículos**.\n\n### Erro de medida\n- Cerca de **±5°** entre observadores.\n- **Progressão real:** aumento de **5° a 7°** ou mais, idealmente usando as **mesmas vértebras terminais**.\n\n### Referências\n| Cobb | Significado |\n|---|---|\n| abaixo de 10° | assimetria espinhal, não é escoliose |\n| 10° ou mais | **escoliose** |\n| 25° a 45° com crescimento | colete |\n| acima de 45° a 50° | cirurgia |\n\n> **Na prova:** Cobb = ==superfície superior da terminal superior + superfície inferior da terminal inferior==.",
+  "correta": "**Superfície superior da terminal superior e superfície inferior da terminal inferior.**",
   "incorretas": {
-   "A": "Inverte as superfícies: usar a inferior da vértebra de cima e a superior da de baixo subestima o ângulo.",
-   "C": "A vértebra apical é a mais rodada e serve a outras medidas, não à do Cobb.",
-   "D": "Pedículos são referência do método de Nash-Moe, e a linha de prumo de C7 serve ao balanço sagital."
+   "A": "**Superfícies invertidas.**\n- Subestima o ângulo.",
+   "C": "**Superfícies da apical.**\n- A apical é a mais rodada; não serve ao Cobb.",
+   "D": "**Pedículos da apical e prumo de C7.**\n- Pedículos da apical = **Nash-Moe**; prumo de C7 = **equilíbrio**."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0177": {
-  "conceito": "Entre as síndromes medulares incompletas, a CENTROMEDULAR é de longe a mais frequente. O cenário típico é o idoso com espondilose cervical e canal já estreito que cai de altura própria e bate o queixo, sofrendo hiperextensão: a medula é espremida entre osteófitos à frente e ligamento amarelo pregueado atrás. O déficit predomina nos membros superiores e, dentro deles, nas mãos, pela organização somatotópica do trato corticoespinhal. O prognóstico é o segundo melhor entre as incompletas, atrás apenas de Brown-Séquard, e a recuperação segue a ordem inversa da perda.",
-  "correta": "Medular central.",
+  "conceito": "### Síndromes medulares incompletas: frequência e prognóstico\n| Síndrome | Frequência | Prognóstico |\n|---|---|---|\n| ==Centromedular== | ==a mais comum== | bom (atrás só do Brown-Séquard) |\n| Brown-Séquard | pouco comum | o **melhor** |\n| Anterior | menos comum | o **pior** |\n| Posterior | **rara** | bom para a força |\n| Cone / cauda equina | associadas à transição toracolombar e abaixo | variável |\n\n### Centromedular\n- **Idoso** com espondilose e **hiperextensão**.\n- **MMSS** mais afetados que os MMII, sobretudo as **mãos**.\n- Frequentemente **sem fratura**.\n\n> **Na prova:** síndrome incompleta mais comum = ==centromedular==.",
+  "correta": "**Medular central.**",
   "incorretas": {
-   "B": "A medular anterior é menos frequente e tem o PIOR prognóstico entre as incompletas.",
-   "C": "A síndrome do cone medular decorre de lesão da transição toracolombar e é menos comum.",
-   "D": "A medular posterior isolada é rara."
+   "B": "**Medular anterior.**\n- Menos frequente; o **pior** prognóstico.",
+   "C": "**Cone medular.**\n- Menos comum; transição toracolombar.",
+   "D": "**Medular posterior.**\n- **Rara.**"
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 41"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0178": {
-  "conceito": "A escoliose idiopática do adolescente tem um padrão tão constante que a fuga dele é sinal de alarme: curva TORÁCICA com convexidade à DIREITA, em menina, indolor. E ela vem acompanhada de uma alteração no plano sagital que muita gente esquece, a HIPOcifose torácica. A deformidade é tridimensional: a coluna roda e, ao rodar, a cifose torácica se achata, produzindo o dorso plano característico. Isso importa na cirurgia, porque uma instrumentação que só corrige o plano frontal e ignora o sagital deixa o paciente plano demais.",
-  "correta": "Convexidade à direita, com a cifose torácica diminuída.",
+  "conceito": "### O padrão tridimensional da escoliose idiopática do adolescente\n- **Coronal:** curva **torácica** com ==convexidade à direita== (o padrão mais comum).\n- **Axial:** **rotação** vertebral, com o corpo girando para a convexidade. Gera a **giba** costal à direita.\n- **Sagital:** ==hipocifose torácica==, o \"dorso plano\". A rotação e a lordose relativa do ápice achatam a cifose.\n\n### Por que isso importa\n- **Diagnóstico:** curva torácica à **esquerda** ou **cifose aumentada** fogem do padrão. Pedir **RM** do neuroeixo (siringomielia, Chiari, tumor).\n- **Cirurgia:** restaurar a **cifose torácica** durante a correção (derrotação, hastes pré-moldadas em cifose). Uma correção só no plano coronal deixa o paciente **plano**, com risco de desequilíbrio.\n\n> **Na prova:** escoliose idiopática torácica = convexidade à ==direita== + ==hipocifose==.",
+  "correta": "**Direita, com cifose diminuída.**",
   "incorretas": {
-   "B": "O lado está certo, mas a cifose torácica se ACHATA na escoliose idiopática, e não se acentua.",
-   "C": "A hipocifose está certa, mas curva torácica à esquerda é padrão atípico, que obriga a investigar causa secundária com ressonância de todo o neuroeixo.",
-   "D": "Erra o lado e o comportamento da cifose."
+   "B": "**Direita, com cifose acentuada.**\n- A cifose torácica **diminui**.",
+   "C": "**Esquerda, hipocifose.**\n- Curva à esquerda é atípica e merece investigação.",
+   "D": "**Esquerda, cifose acentuada.**\n- Lado e plano sagital errados."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 44"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0179": {
-  "conceito": "SCIWORA é a lesão medular sem alteração radiográfica, e ela existe por uma razão anatômica da criança: a coluna infantil é muito elástica (facetas horizontalizadas, ligamentos frouxos, cartilagem abundante) e pode se distender o suficiente para lesar a medula e voltar ao lugar, sem fratura nem luxação visíveis. Quem faz o diagnóstico é a ressonância. No trauma de baixa energia, a lesão costuma ser leve e transitória, e o tratamento é IMOBILIZAÇÃO por algumas semanas, para evitar a recorrência enquanto a estabilidade se restabelece. Não há o que descomprimir: não há compressão persistente.",
-  "correta": "Imobilização, que protege a coluna enquanto a lesão se recupera.",
+  "conceito": "### SCIWORA (lesão medular sem anormalidade radiográfica)\n- **Quem:** principalmente **crianças** abaixo de ~8 anos.\n- **Por quê:** a coluna infantil é **elástica**:\n  - facetas horizontais;\n  - ligamentos frouxos;\n  - muita cartilagem;\n  - cabeça grande em relação ao corpo.\n  \n  A coluna pode se **deslocar e voltar** ao lugar, lesando a medula (que tolera bem menos estiramento) sem fratura visível.\n- **Diagnóstico:** radiografia e TC **normais**. A **RM** mostra o **edema/hemorragia medular** e lesões ligamentares.\n- **Tratamento:**\n  - ==imobilização== (colar) por semanas, em geral ~12 semanas;\n  - restrição de atividades esportivas;\n  - prevenir a **recorrência**, que ocorre em alguns casos no período vulnerável.\n  - **Não há o que descomprimir:** a compressão foi transitória.\n- **Cirurgia:** só se a RM mostrar **instabilidade ligamentar** franca ou compressão.\n- **Prognóstico:** depende da lesão na RM (sem sinal, edema ou hemorragia) e do déficit inicial.\n\n> **Na prova:** SCIWORA de baixa energia = ==imobilização==.",
+  "correta": "**Imobilização.**",
   "incorretas": {
-   "B": "Não há estrutura comprimindo a medula, a lesão foi por distensão momentânea.",
-   "C": "Pelo mesmo motivo, não há indicação de descompressão; e artrodese numa coluna infantil sem instabilidade estabelecida seria excessiva.",
-   "D": "Dispensar a imobilização expõe a criança à recorrência, que é justamente o que se quer evitar."
+   "B": "**Descompressão.**\n- Não há compressão persistente.",
+   "C": "**Descompressão e artrodese.**\n- Excessivo, sem instabilidade estabelecida.",
+   "D": "**Sem imobilização.**\n- Expõe à **recorrência**."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 20"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0180": {
-  "conceito": "A osteomielite vertebral é a forma mais comum de osteomielite hematogênica do adulto, mas responde por uma fração pequena do total, algo em torno de 3 a 5%. A relevância dela não está na frequência e sim no atraso diagnóstico: a apresentação é dor axial arrastada, muitas vezes sem febre, com VHS e PCR elevados, e o intervalo entre o início e o diagnóstico se mede em meses. O germe mais comum é o Staphylococcus aureus, a via é hematogênica arterial, o foco se instala junto à placa terminal e o exame que faz o diagnóstico é a ressonância.",
-  "correta": "3 a 5% dos casos.",
+  "conceito": "### Osteomielite vertebral (espondilodiscite)\n- **Frequência:** cerca de ==3% a 5%== de todas as osteomielites. Ainda assim, é a osteomielite **hematogênica mais comum do adulto** (sobretudo acima de 50 anos).\n- **Via:** **hematogênica arterial**, com instalação na metáfise junto à placa terminal e depois no **disco**.\n- **Germe:** **S. aureus** o mais comum.\n- **Local:** **lombar** mais que torácica mais que cervical.\n- **Clínica:**\n  - dor axial arrastada, noturna;\n  - **febre em parte** dos casos;\n  - **VHS e PCR elevadas** (a PCR é boa para seguimento);\n  - **diagnóstico tardio** é a regra (semanas a meses).\n- **Diagnóstico:** **RM com contraste**; **hemoculturas** e **biópsia** guiada (antes do antibiótico, se estável).\n- **Tratamento:**\n  - antibiótico por **6 semanas** ou mais;\n  - órtese para a dor;\n  - **cirurgia** em caso de déficit neurológico, abscesso epidural compressivo, instabilidade ou deformidade, ou falha clínica.\n\n> **Na prova:** coluna = ==3% a 5%== das osteomielites.",
+  "correta": "**3% a 5%.**",
   "incorretas": {
-   "B": "6 a 8% superestima a proporção descrita.",
-   "C": "10 a 12% é bem acima do que as séries relatam.",
-   "D": "13 a 15% tornaria a coluna quase tão frequente quanto os ossos longos, o que não corresponde à realidade."
+   "B": "**6% a 8%.**\n- Superestima.",
+   "C": "**10% a 12%.**\n- Bem acima do relatado.",
+   "D": "**13% a 15%.**\n- Muito acima."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 42"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0181": {
-  "conceito": "Duas informações do enunciado orientam a resposta. A hérnia é FORAMINAL e sem compressão central: portanto radiculopatia, e não mielopatia, o que já elimina os sinais de primeiro neurônio motor. E o nível é C4-C5: na coluna cervical a raiz leva o número da vértebra INFERIOR, então a raiz comprimida é C5. O pacote de C5 é sensibilidade na face lateral do OMBRO e do braço, fraqueza da abdução do ombro pelo DELTOIDE e alteração do reflexo BICIPITAL.",
-  "correta": "Fraqueza do deltoide com alteração do reflexo bicipital, o quadro da raiz de C5.",
+  "conceito": "### Raciocínio\n- **Hérnia foraminal sem compressão central:** ==radiculopatia==, **sem mielopatia**. Não há Hoffmann nem distúrbio de marcha.\n- **Nível C4-C5:** a raiz comprimida é ==C5== (na cervical, a raiz tem o número da vértebra de **baixo**).\n\n### Pacote de C5\n- **Sensibilidade:** face **lateral do ombro e do braço** (região do deltoide).\n- **Motor:** ==deltoide== (abdução do ombro), bíceps (junto com C6), supra e infraespinal.\n- **Reflexo:** ==bicipital==.\n\n### Diferencial importante\nA dor no ombro com fraqueza de abdução pode ser confundida com **lesão do manguito rotador**. Na radiculopatia C5:\n- a **sensibilidade** está alterada;\n- o **reflexo bicipital** está alterado;\n- a dor irradia do pescoço.\n\n> **Na prova:** C4-C5 foraminal = C5 = ==deltoide + reflexo bicipital==.",
+  "correta": "**Fraqueza do deltoide e alteração do reflexo bicipital.**",
   "incorretas": {
-   "A": "Dificuldade de marcha e Hoffmann positivo são sinais de mielopatia, e o enunciado diz que não há compressão central.",
-   "B": "Dedo médio e tríceps correspondem a C7, comprimida pelo disco C6-C7.",
-   "C": "A parestesia no ombro corresponde a C5, mas o reflexo de C5 é o bicipital; o tricipital é de C7."
+   "A": "**Marcha e Hoffmann.**\n- Sinais de **mielopatia**; não há compressão central.",
+   "B": "**Dedo médio e tríceps.**\n- **C7** (disco C6-C7).",
+   "C": "**Ombro e reflexo tricipital.**\n- O ombro é C5, mas o tricipital é **C7**."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 38"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0182": {
-  "conceito": "Escoliose idiopática do adolescente não dói. Quando a curva vem acompanhada de dor (sobretudo dor NOTURNA, que melhora com anti-inflamatório), o diagnóstico a afastar é o OSTEOMA OSTEOIDE. Ele se instala nos elementos posteriores, e o espasmo muscular antálgico produz uma escoliose de curva curta, rígida, com o ápice no nível da lesão e sem a rotação típica da idiopática. A radiografia pode não mostrar nada; quem encontra o nidus é a tomografia, e a cintilografia mostra hipercaptação intensa e localizada. Ressecado o nidus, a curva costuma desaparecer, desde que a criança ainda tenha crescimento.",
-  "correta": "Osteoma osteoide.",
+  "conceito": "### Escoliose dolorosa no adolescente: pensar em tumor\nA escoliose **idiopática** não costuma doer muito. Com **dor noturna** que alivia com **AINE**, o principal suspeito é o ==osteoma osteoide== (e o **osteoblastoma**, se maior que ~1,5 a 2 cm).\n\n### Osteoma osteoide na coluna\n- **Local:** **elementos posteriores** (pedículo, lâmina, faceta), frequentemente no **lado côncavo** e perto do **ápice**.\n- **Mecanismo:** o espasmo muscular antálgico gera uma curva **curta, rígida**, sem a rotação típica. É uma escoliose **não estrutural** no início.\n- **Imagem:**\n  - radiografia muitas vezes normal;\n  - **cintilografia:** hipercaptação focal intensa;\n  - **TC:** mostra o **nidus** (a melhor);\n  - RM: edema extenso, que pode confundir.\n- **Tratamento:** **ressecção** do nidus ou **ablação por radiofrequência** guiada por TC (atenção à distância das estruturas neurais). A curva costuma **regredir** se feito cedo, antes de a curva estruturar (em geral, em até ~15 meses).\n\n### Outras causas de escoliose dolorosa\nEspondilólise, hérnia discal juvenil, infecção, **tumor intramedular**, siringomielia.\n\n> **Na prova:** escoliose dolorosa no adolescente = ==osteoma osteoide==.",
+  "correta": "**Osteoma osteoide.**",
   "incorretas": {
-   "A": "A espondilodiscite dói, mas vem com sintomas constitucionais e marcadores inflamatórios elevados, e não é a causa mais comum de escoliose dolorosa.",
-   "B": "A escoliose da neurofibromatose é distrófica e progressiva, mas não caracteristicamente dolorosa.",
-   "D": "A dismetria produz escoliose postural, compensatória e indolor, que desaparece ao sentar ou ao compensar o encurtamento."
+   "A": "**Espondilodiscite.**\n- Dói, mas com sintomas sistêmicos; não é a causa mais comum de escoliose dolorosa.",
+   "B": "**Neurofibromatose.**\n- Distrófica e progressiva, mas não caracteristicamente dolorosa.",
+   "D": "**Dismetria.**\n- Escoliose postural, **indolor**, que some ao compensar a discrepância."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0184": {
-  "alerta": "Os dois termos existem e nomeiam coisas diferentes. Escoliose IDIOPÁTICA DO ADULTO é a curva que começou na adolescência e envelheceu junto com o paciente. Escoliose DEGENERATIVA, ou DE NOVO, é a que surge depois da quarta ou quinta década numa coluna que era reta, nasce da degeneração assimétrica do disco e da faceta, tem curva curta, geralmente lombar, com subluxação rotatória e estenose associada. O enunciado descreve exatamente essa segunda, e a alternativa que a nomeia é a A, marcada como errada. Se você respondeu \"de novo\", o erro não foi seu.",
-  "conceito": "A escoliose do adulto se divide pela origem, e a divisão muda o tratamento. A idiopática do adulto tem curva longa, harmoniosa, herdada da adolescência, e o problema costuma ser deformidade e desequilíbrio. A degenerativa (de novo) tem curva curta, de poucos níveis, com colapso discal assimétrico, artrose facetária e subluxação rotatória, e o problema dominante é a ESTENOSE: o paciente chega por claudicação neurogênica e dor radicular, e não por deformidade. É por isso que a cirurgia de uma costuma ser descompressão com fusão curta, e a da outra, correção longa com atenção ao equilíbrio sagital.",
-  "correta": "A resposta oficial é escoliose idiopática do adulto.",
+  "conceito": "### Escoliose do adulto: duas entidades\n| | Idiopática do adulto | Degenerativa (**de novo**) |\n|---|---|---|\n| Origem | começou na **adolescência** e \"envelheceu\" | surge **após os 40 a 50 anos** em coluna **antes reta** |\n| Curva | longa, torácica ou toracolombar | **curta, lombar**, poucos níveis |\n| Achados | rotação estrutural, compensação | colapso discal assimétrico, **subluxação rotatória / lateral**, artrose facetária |\n| Queixa dominante | deformidade, dor axial, desequilíbrio | **estenose**: claudicação neurogênica, radiculopatia |\n| Cirurgia típica | correção longa, atenção ao equilíbrio sagital | descompressão ± fusão curta, ou longa se houver desequilíbrio |\n\n### Sobre o gabarito\nO enunciado descreve a escoliose **degenerativa / de novo**. O gabarito oficial, porém, marca ==idiopática do adulto== (ver o alerta).\n\n### Classificação SRS-Schwab (deformidade do adulto)\n**Tipo de curva** + **modificadores sagitais**: IP-LL, PT, SVA.\n\n> **Na prova:** gabarito oficial = ==D (idiopática do adulto)==; a literatura chama a curva descrita de ==de novo==.",
+  "correta": "**Idiopática do adulto** (gabarito oficial).\n- Ver o alerta: a curva descrita é a degenerativa (de novo).",
   "incorretas": {
-   "A": "É o termo que a literatura usa exatamente para a curva descrita no enunciado, e mesmo assim foi dado como errado. Veja o aviso acima.",
-   "B": "\"Escoliose metabólica\" não é uma categoria usada na classificação da escoliose do adulto.",
-   "C": "A neuromuscular decorre de doença neurológica ou muscular de base, aparece na infância e não em coluna previamente normal."
+   "A": "**De novo.**\n- Termo que a literatura usa exatamente para a curva descrita; ver o alerta.",
+   "B": "**Metabólica.**\n- Não é categoria da classificação da escoliose do adulto.",
+   "C": "**Neuromuscular.**\n- Doença neurológica ou muscular de base, geralmente desde a infância."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
+  "alerta": "Os dois termos existem e nomeiam coisas diferentes. Escoliose IDIOPÁTICA DO ADULTO é a curva que começou na adolescência e envelheceu junto com o paciente. Escoliose DEGENERATIVA, ou DE NOVO, é a que surge depois da quarta ou quinta década numa coluna que era reta, nasce da degeneração assimétrica do disco e da faceta, tem curva curta, geralmente lombar, com subluxação rotatória e estenose associada. O enunciado descreve exatamente essa segunda, e a alternativa que a nomeia é a A, marcada como errada. Se você respondeu \"de novo\", o erro não foi seu.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 39"
-  ]
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0186": {
-  "conceito": "O nervo acessório (XI par craniano) percorre a região posterior do músculo esternocleidomastoideo e depois cruza o triângulo posterior para inervar o trapézio. Lesão nessa região causa dificuldade para elevar o ombro.",
-  "correta": "C, A estrutura amarela indicada é o nervo acessório.",
+  "conceito": "### Nervo acessório (XI par)\n- **Trajeto:** sai do crânio pelo **forame jugular** e passa sob ou através do **esternocleidomastóideo**, perto do **processo mastoide**, como na figura. Emerge na **borda posterior** do ECM (ponto de Erb, no terço médio), cruza o **triângulo posterior** do pescoço, **superficial**, e chega ao **trapézio**.\n- **Inerva:** o **esternocleidomastóideo** e o **trapézio**.\n\n### Relevância\n- **Lesão iatrogênica** no triângulo posterior (biópsia de linfonodo, esvaziamento cervical): paralisia do trapézio, com **ombro caído**, dor, dificuldade de abdução acima de 90°, **escápula alada lateral** discreta.\n- **Torcicolo congênito** (fibrose do ECM): na **liberação cirúrgica** do ECM, sobretudo na porção **proximal** (mastoide), o XI e o nervo auricular magno estão em risco.\n\n### Os outros\n- **Troclear (IV):** oblíquo superior do olho.\n- **Trigêmeo (V):** face e mastigação.\n- **Hipoglosso (XII):** língua; cruza a carótida, alto.\n\n> **Na prova:** nervo junto ao ECM, perto do mastoide = ==acessório== (XI).",
+  "correta": "**Acessório.**",
   "incorretas": {
-   "A": "O troclear inerva o oblíquo superior do olho e não percorre o pescoço.",
-   "B": "O trigêmeo distribui-se principalmente pela face e músculos da mastigação.",
-   "D": "O hipoglosso segue para a língua, cruzando a região carotídea, mas não acompanha o esternocleidomastoideo como mostrado."
+   "A": "**Troclear.**\n- Músculo oblíquo superior do olho; não passa no pescoço.",
+   "B": "**Trigêmeo.**\n- Face e mastigação.",
+   "D": "**Hipoglosso.**\n- Língua; cruza a região carotídea alta."
   },
   "referencias": [
    "Gray's Anatomy. Cranial nerve XI and posterior triangle of the neck.",
    "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0187": {
-  "conceito": "O balanço sagital global se mede pela linha de prumo traçada a partir do centro do corpo de C7. No indivíduo equilibrado ela cai dentro de uma faixa de cerca de 2 cm à frente ou atrás do canto posterossuperior de S1, posição em que o tronco se sustenta com gasto energético mínimo. Quando a linha cai À FRENTE do sacro, o balanço é POSITIVO: o tronco está deslocado para diante e o paciente precisa de esforço muscular contínuo para se manter em pé, o que se associa fortemente a dor e incapacidade. Corrigir esse desequilíbrio é o objetivo central da cirurgia de deformidade do adulto.",
-  "correta": "Quando a linha de prumo cruza na frente do sacro.",
+  "conceito": "### Equilíbrio sagital (SVA)\n- **Medida:** linha de prumo do **centro de C7**, com a distância horizontal até o **canto posterossuperior de S1**.\n- **Neutro:** dentro de ~±2 a 5 cm do canto posterossuperior de S1 (o critério varia com a idade).\n- ==Positivo==: a linha cai ==na frente do sacro==. O tronco está deslocado para frente.\n- **Negativo:** a linha cai **atrás** do sacro. É incomum, e pode ocorrer por hiperlordose ou pós-operatório.\n\n### Por que o positivo importa\n- Exige **esforço muscular contínuo** e compensações:\n  - **retroversão pélvica** (PT alto);\n  - flexão dos joelhos;\n  - hiperextensão de segmentos adjacentes.\n- Correlaciona-se com **dor** e **incapacidade** na deformidade do adulto (Glassman, Schwab).\n- **Causas:** perda de lordose (flatback iatrogênico, degeneração), cifose (fraturas, espondilite anquilosante), escoliose degenerativa.\n\n> **Na prova:** balanço sagital positivo = prumo de C7 ==na frente do sacro==.",
+  "correta": "**Na frente do sacro.**",
   "incorretas": {
-   "A": "O canto posterossuperior de S1 é justamente a referência do equilíbrio neutro.",
-   "B": "L5 não é a referência usada nessa medida.",
-   "D": "Linha de prumo atrás do sacro caracteriza balanço sagital NEGATIVO."
+   "A": "**No canto posterossuperior de S1.**\n- É a referência do equilíbrio **neutro**.",
+   "B": "**No canto posterossuperior de L5.**\n- L5 não é a referência.",
+   "D": "**Atrás do sacro.**\n- Balanço **negativo**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0188": {
-  "conceito": "A cirurgia na doença de Scheuermann é indicação de exceção, e exige que dois requisitos apareçam juntos. A deformidade precisa ser grande e, sobretudo, PROGRESSIVA (o número que se cita é 70 a 75 graus ou mais, com progressão documentada em radiografias sucessivas), e precisa haver DOR que não cede ao tratamento conservador bem conduzido. Deformidade grande porém estável e indolor é acompanhada, não operada. Acrescentam-se, como indicações menos frequentes, o comprometimento neurológico e a repercussão respiratória, ambos raros.",
-  "correta": "Ângulo progressivo de 70 graus ou mais associado a dor refratária ao tratamento conservador.",
+  "conceito": "### Indicação cirúrgica no Scheuermann\nA cirurgia é **exceção**. As indicações clássicas:\n- cifose ==acima de ~70° a 75°==, ==progressiva== (documentada em radiografias seriadas);\n- ==dor refratária== ao tratamento conservador bem feito;\n- menos frequentes:\n  - **déficit neurológico** (hérnia torácica, cisto, cifose angular);\n  - comprometimento **respiratório** raro;\n  - queixa estética importante, em casos selecionados.\n\nDeformidade grande, mas **estável e indolor**, é acompanhada.\n\n### Técnica atual\n- **Artrodese posterior** com parafusos pediculares e **osteotomias de Ponte / Smith-Petersen** em vários níveis. A liberação anterior é raramente necessária hoje.\n- **Correção** para ~40° a 50°: correção **excessiva** aumenta o risco de **cifose juncional**.\n- **Níveis:**\n  - **proximal:** incluir a vértebra terminal proximal da cifose;\n  - **distal:** incluir a **vértebra sagital estável** (a primeira lordótica tocada pela vertical de S1), para evitar a **cifose juncional distal**.\n\n> **Na prova:** cirurgia no Scheuermann = ==acima de 70°, progressivo e com dor refratária==.",
+  "correta": "**Progressivo de 70° ou mais, com dor refratária.**",
   "incorretas": {
-   "A": "Deformidade estável, ainda que grande, não indica cirurgia por si só, o que pesa é a progressão.",
-   "B": "Sem dor e sem progressão, a conduta é acompanhar.",
-   "D": "A progressão está certa, mas a ausência de dor retira o segundo requisito da indicação."
+   "A": "**Estável com dor.**\n- A deformidade estável, por si só, não indica cirurgia; pesa a progressão.",
+   "B": "**Estável e indolor.**\n- Acompanhar.",
+   "D": "**Progressivo e indolor.**\n- Falta o segundo requisito (dor refratária)."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0189": {
-  "conceito": "A espondilolistese degenerativa é doença de evolução ARRASTADA, e isso a distingue das causas agudas de compressão. O escorregamento acontece ao longo de anos, à custa de artrose facetária e degeneração discal, e o quadro se instala devagar: dor lombar mecânica que vem primeiro, depois irradiação para as nádegas e coxas e, mais tarde, claudicação neurogênica pela estenose que o deslizamento produz. Progressão rápida, déficit motor instalado em dias ou alteração esfincteriana não pertencem a esse quadro, quando aparecem, obrigam a procurar outra causa.",
-  "correta": "Dor lombar com irradiação para os membros inferiores e progressão lenta.",
+  "conceito": "### Espondilolistese degenerativa: a clínica\n- **Evolução ==lenta==** (anos): artrose facetária e degeneração discal permitem o deslizamento, geralmente até o **grau I-II**.\n- **Sequência típica:**\n  1. **lombalgia mecânica**, frequentemente o primeiro sintoma;\n  2. irradiação para as nádegas, as coxas e ==os membros inferiores==;\n  3. **claudicação neurogênica** pela estenose (central e de recesso, com raiz **L5** em L4-L5).\n\n### Sinais de alarme (fogem do padrão)\n- Déficit motor **rápido**.\n- **Cauda equina.**\n- Dor noturna ou em repouso intensa.\n- Sintomas sistêmicos.\n\nInvestigar **outra causa**: tumor, infecção, fratura.\n\n### Tratamento\n- **Conservador:** fisioterapia, analgesia, infiltração.\n- **Cirúrgico** (claudicação que limita, déficit): **descompressão + artrodese** (com ou sem instrumentação). O estudo SPORT e outros mostram benefício. A descompressão **isolada** fica para casos selecionados e estáveis.\n\n> **Na prova:** espondilolistese degenerativa = ==dor lombar irradiada, progressão lenta==.",
+  "correta": "**Dor lombar com irradiação e progressão lenta.**",
   "incorretas": {
-   "A": "A estenose se instala, mas de forma gradual; progressão rápida não é o comportamento típico.",
-   "C": "A claudicação neurogênica é frequente, mas também se instala devagar.",
-   "D": "A dor lombar mecânica costuma abrir o quadro, e não faltar nele."
+   "A": "**Estenose com progressão rápida.**\n- A estenose se instala **gradualmente**.",
+   "C": "**Claudicação com progressão rápida.**\n- Frequente, mas de instalação **lenta**.",
+   "D": "**Radicular sem lombalgia.**\n- A lombalgia mecânica costuma **abrir** o quadro."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0190": {
-  "conceito": "A lição prática desta questão é maior do que o número: alteração degenerativa na ressonância lombar é achado quase UNIVERSAL a partir da quinta década, e por isso ela não pode ser tratada como explicação automática da dor. Nos estudos com voluntários assintomáticos, a degeneração discal aparece na esmagadora maioria dos indivíduos acima de 50 anos, e protrusões e abaulamentos são achados corriqueiros em quem nunca teve lombalgia. Daí a regra clínica: pedir ressonância na lombalgia sem bandeira vermelha costuma criar diagnóstico, e não resolvê-lo.",
-  "correta": "Praticamente 100% dos pacientes com 50 anos ou mais têm alguma alteração degenerativa na ressonância.",
+  "conceito": "### Achados degenerativos em assintomáticos\nEstudos com **voluntários sem dor** (Boden, Jensen; revisão sistemática de Brinjikji, 2015) mostram que as alterações degenerativas são **muito comuns** e aumentam com a idade:\n- **degeneração discal** (disco \"escuro\" em T2): proporção grande já aos 30 anos, chegando a quase todos acima de 50 a 60 anos;\n- **abaulamentos e protrusões:** comuns em assintomáticos;\n- **fissuras anulares**, **Modic**, **artrose facetária:** frequentes.\n\nA questão usa o número extremo: ==praticamente 100% aos 50 anos ou mais==.\n\n### Lição clínica\n- A RM **não** deve ser pedida rotineiramente na lombalgia **sem bandeiras vermelhas**.\n- O achado de imagem **não prova** que ele cause a dor.\n- **Correlacionar** sempre a imagem com a **clínica** (território radicular, exame).\n- Evitar \"tratar a imagem\": cirurgia por achado incidental leva a maus resultados.\n\n> **Na prova:** alteração degenerativa na RM = praticamente ==universal a partir dos 50 anos==.",
+  "correta": "**~100% dos pacientes com 50 anos ou mais.**",
   "incorretas": {
-   "A": "60% aos 60 anos subestima muito: nessa idade a alteração é quase universal.",
-   "B": "70% aos 40 anos fica abaixo do que os estudos com assintomáticos mostram.",
-   "C": "80% aos 70 anos também subestima, e ainda desloca a idade para cima."
+   "A": "**60% aos 60 anos.**\n- Subestima.",
+   "B": "**70% aos 40 anos.**\n- Abaixo do que os estudos mostram.",
+   "C": "**80% aos 70 anos.**\n- Subestima e desloca a idade."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0191": {
-  "conceito": "A hérnia de disco lombar tem um pico etário estreito, entre a terceira e a quarta décadas, e a razão é mecânica. Nessa faixa o núcleo pulposo ainda está hidratado e com pressão suficiente para herniar, enquanto o ânulo já acumulou microfissuras, a combinação exata que permite a extrusão. No jovem, o disco é hidratado mas o ânulo é íntegro; no idoso, o disco já perdeu água e altura, e o problema deixa de ser hérnia e passa a ser estenose por artrose facetária, hipertrofia do ligamento amarelo e colapso discal.",
-  "correta": "Terceira e quarta décadas de vida.",
+  "conceito": "### Idade da hérnia de disco lombar\n**Pico:** ==3ª e 4ª décadas== (~30 a 50 anos).\n\n**Por quê:**\n- o **núcleo pulposo** ainda está **hidratado**, com pressão suficiente para herniar;\n- o **ânulo** já acumulou **fissuras**.\n\n**Em outras idades:**\n- **Jovens:** ânulo íntegro. A hérnia juvenil é rara e às vezes associada a **apofisária** (avulsão do anel).\n- **Idosos:** disco desidratado e colapsado. O problema passa a ser **estenose** (facetas, ligamento amarelo). Hérnias **foraminais** são relativamente mais comuns nos idosos.\n\n**Níveis:** **L4-L5 e L5-S1**, em ~90% a 95% dos casos.\n\n**História natural:**\n- grande parte melhora em **6 a 12 semanas**;\n- as **extrusões** e os **sequestros** reabsorvem com frequência.\n\n**Cirurgia (microdiscectomia):**\n- **síndrome da cauda equina** (urgência);\n- déficit motor **progressivo** ou grave;\n- dor radicular **refratária** após ~6 a 12 semanas.\n\n> **Na prova:** hérnia lombar = ==3ª e 4ª décadas==.",
+  "correta": "**3ª e 4ª décadas.**",
   "incorretas": {
-   "A": "Na segunda década o ânulo ainda é íntegro e a hérnia é incomum.",
-   "C": "A quarta e a quinta décadas já vão além do pico descrito.",
-   "D": "Na quinta e sexta décadas o quadro dominante passa a ser a estenose degenerativa."
+   "A": "**2ª e 3ª.**\n- Na 2ª década o ânulo é íntegro; a hérnia é incomum.",
+   "C": "**4ª e 5ª.**\n- Vai além do pico.",
+   "D": "**5ª e 6ª.**\n- Predomina a **estenose** degenerativa."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0192": {
-  "conceito": "Na vista posterior, o ligamento amarelo une lâminas adjacentes e fica junto ao canal vertebral. O ligamento iliolombar segue dos processos transversos lombares, sobretudo L5, ao ílio, mais inferior e lateral.",
-  "correta": "C, A estrutura 1 é o ligamento amarelo e a estrutura 2 é o ligamento iliolombar.",
+  "conceito": "### Ligamentos posteriores da coluna lombar (vista posterior)\n- **1 = ligamento amarelo** (flavum): une as **lâminas** adjacentes, pela face interna. É rico em **elastina**, o que o deixa amarelo. Na **estenose**, hipertrofia e se pregueia, comprimindo o saco dural por trás.\n- **2 = ligamento iliolombar:** do **processo transverso de L5** (e às vezes de L4) à **crista ilíaca** posterior. **Ancora L5** ao ílio e limita flexão, inclinação e rotação de L5-S1.\n  - Ajuda a explicar por que L5-S1 é menos móvel e por que **L4-L5** sofre mais a espondilolistese degenerativa.\n  - Pode ser fonte de dor.\n- **Outros:**\n  - **supraespinhoso** e **interespinhoso**, entre os espinhosos;\n  - **LLA** (face anterior dos corpos);\n  - **LLP** (face posterior dos corpos, dentro do canal).\n\n### Fratura do processo transverso de L5\nNa **fratura de pelve**, a avulsão do transverso de L5 (pelo iliolombar) sugere **instabilidade vertical** da pelve.\n\n> **Na prova:** 1 = ==amarelo== (entre lâminas); 2 = ==iliolombar== (transverso de L5 ao ílio).",
+  "correta": "**Amarelo e iliolombar.**",
   "incorretas": {
-   "A": "A estrutura 2 não é ílio-transverso; o ligamento descrito classicamente é iliolombar.",
-   "B": "A estrutura 1 está posterior ao canal, compatível com amarelo, não com longitudinal posterior.",
-   "D": "O longitudinal anterior fica na face anterior dos corpos vertebrais, fora da posição da estrutura 1."
+   "A": "**Amarelo e \"ílio-transverso\".**\n- O nome consagrado é **iliolombar**.",
+   "B": "**LLP e ílio-transverso.**\n- O LLP fica **dentro** do canal, atrás dos corpos.",
+   "D": "**LLA e iliolombar.**\n- O LLA fica na face **anterior** dos corpos."
   },
   "referencias": [
    "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020.",
    "Bogduk N. Clinical Anatomy of the Lumbar Spine and Sacrum. 5th ed. Elsevier; 2012."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "moderado",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0193": {
-  "conceito": "O teste de Spurling é a manobra da radiculopatia cervical: com o pescoço em EXTENSÃO, inclinação lateral e rotação PARA O LADO sintomático, aplica-se compressão axial sobre a cabeça, fechando o forame, dor irradiada para o membro, seguindo o dermátomo, reproduz o teste. Vale a ressalva: a especificidade dele é alta, em torno de 90%, mas a SENSIBILIDADE é limitada, algo entre 30 e 50%. Ou seja, teste positivo praticamente confirma; teste negativo não afasta nada. Os outros nomes pertencem a outro território: Hoffmann e L'Hermitte são sinais de MIELOPATIA, e não de compressão radicular.",
-  "correta": "Teste de Spurling.",
+  "conceito": "### Teste de Spurling\n- **Manobra:** pescoço em **extensão**, **inclinação** e **rotação** para o lado sintomático, com **compressão axial** na cabeça.\n- **Positivo:** reproduz a **dor radicular** irradiada no dermátomo, não apenas dor cervical local.\n- **Acurácia:**\n  - **especificidade alta** (~90% ou mais): positivo, quase confirma;\n  - **sensibilidade** limitada (~30% a 60% nos estudos): negativo, não afasta.\n\nEntre as opções, é ==o único teste de radiculopatia== (cervicobraquialgia).\n\n### Outros testes de radiculopatia cervical\n- **Abdução do ombro** (Bakody): alívio.\n- **Distração cervical:** alívio.\n- **ULTT** (teste de tensão do membro superior): **sensível**.\n\n### Mielopatia (não radiculopatia)\n- **Hoffmann**, **L'Hermitte**, hiper-reflexia, clônus, Babinski.\n- **Sinal do escape do dedo mínimo.**\n- **Teste de preensão e soltura** (10 s).\n\n> **Na prova:** cervicobraquialgia = ==Spurling==.",
+  "correta": "**Spurling.**",
   "incorretas": {
-   "A": "O sinal de Hoffmann indica comprometimento de primeiro neurônio motor, mielopatia, e não radiculopatia.",
-   "B": "O sinal de L'Hermitte, o choque descendente à flexão do pescoço, também aponta para irritação medular.",
-   "D": "Não há um teste de Yamamoto consagrado na propedêutica da coluna cervical."
+   "A": "**Hoffmann.**\n- Sinal de **mielopatia**.",
+   "B": "**L'Hermitte.**\n- Irritação **medular**.",
+   "D": "**Yamamoto.**\n- Não é teste consagrado da cervical."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0194": {
-  "conceito": "A repercussão respiratória da escoliose depende da curva TORÁCICA, porque é ela que deforma a caixa e reduz o volume disponível. Curvas abaixo de 60 graus praticamente não alteram a função pulmonar de forma clinicamente perceptível. A partir de cerca de 70 graus começa a aparecer restrição mensurável e sintomática, com queda da capacidade vital. Curvas acima de 100 a 120 graus levam a hipoventilação alveolar, hipertensão pulmonar e cor pulmonale. Curvas lombares e toracolombares, por não deformarem a caixa torácica, não produzem esse efeito.",
-  "correta": "A partir de 70 graus.",
+  "conceito": "### Escoliose e pulmão\nA repercussão depende da curva **torácica**, que deforma a **caixa torácica**.\n| Cobb torácico | Efeito |\n|---|---|\n| abaixo de ~60° | pouco efeito clínico |\n| ==acima de ~70°== | **restrição** mensurável e **clinicamente significativa** (capacidade vital cai) |\n| acima de ~100° a 120° | **hipoventilação**, **hipertensão pulmonar**, **cor pulmonale** |\n\n**Fatores que agravam:**\n- **hipocifose** torácica: reduz o diâmetro AP do tórax;\n- **início precoce** (antes dos 5 anos): o pulmão ainda está se desenvolvendo, com hipoplasia alveolar. É a **síndrome da insuficiência torácica**.\n\n**Curvas lombares** não afetam a função pulmonar.\n\n### Relevância\n- Curvas grandes: **espirometria** pré-operatória.\n- A cirurgia **estabiliza** e pode **melhorar discretamente** a função pulmonar em algumas séries.\n- A **toracoplastia** (ressecção de costelas da giba) pode **piorar** temporariamente a função.\n\n> **Na prova:** comprometimento pulmonar significativo a partir de ==70°==.",
+  "correta": "**70°.**",
   "incorretas": {
-   "A": "50 graus é limiar cirúrgico por deformidade e progressão, mas ainda não produz restrição clinicamente significativa.",
-   "C": "90 graus já corresponde a comprometimento importante, o problema começa antes.",
-   "D": "110 graus é o terreno do cor pulmonale, e não do início da repercussão."
+   "A": "**50°.**\n- Limiar cirúrgico por progressão, ainda sem restrição significativa.",
+   "C": "**90°.**\n- O comprometimento já começou antes.",
+   "D": "**110°.**\n- Terreno do cor pulmonale."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0195": {
-  "conceito": "O colete de Milwaukee é uma órtese cervicotoracolombossacral e funciona por pressão em TRÊS PONTOS: almofadas posteriores no ápice da cifose empurram para frente, enquanto o cesto pélvico e o anel cervical seguram as extremidades no sentido contrário. O que o torna DINÂMICO é o paciente: o desconforto do apoio cervical faz com que ele se estenda ativamente para escapar da pressão, e essa correção ativa repetida é parte do mecanismo. Por isso ele exige colaboração e uso de muitas horas por dia, e por isso o ápice torácico alto, que uma órtese sem apoio cervical não alcança, é sua indicação.",
-  "correta": "Correção dinâmica em três pontos.",
+  "conceito": "### Colete de Milwaukee (CTLSO)\n**Componentes:**\n- **cesto pélvico**, a base;\n- **barras** metálicas (uma anterior e duas posteriores);\n- **anel cervical**, com apoio occipital e sob o queixo;\n- **almofadas** posteriores no ápice da cifose (ou torácicas laterais na escoliose).\n\n**Mecanismo:** ==correção dinâmica em três pontos==:\n- a almofada no **ápice** empurra para frente;\n- **pelve** e **anel cervical** seguram as extremidades;\n- o paciente se **estende ativamente** para aliviar o contato com o anel: é o componente **dinâmico**.\n\n**Indicação:** ápice **torácico alto** (acima de ~T7 a T8), que uma TLSO não alcança. Exige **colaboração**, uso prolongado (~23 h por dia) e crescimento restante.\n\n**Desvantagens:** estética (visível acima da roupa), aderência difícil. Hoje é pouco usado na escoliose, mas ainda é citado no **Scheuermann torácico**.\n\n> **Na prova:** Milwaukee = ==correção dinâmica em três pontos==.",
+  "correta": "**Correção dinâmica em três pontos.**",
   "incorretas": {
-   "B": "Nenhuma órtese derrota curva; a derrotação é objetivo da instrumentação cirúrgica.",
-   "C": "O alongamento da musculatura anterior é parte do programa de fisioterapia associado, e não o mecanismo do colete.",
-   "D": "Guiar o crescimento descreve de forma vaga o efeito remodelador, mas o mecanismo do Milwaukee é a pressão em três pontos com correção ativa."
+   "B": "**Derrotação.**\n- Órtese não derrota a curva de forma significativa; isso é objetivo da cirurgia.",
+   "C": "**Alongamento da musculatura anterior.**\n- Parte da fisioterapia associada.",
+   "D": "**Guiar o crescimento.**\n- Descreve de forma vaga o efeito, não o mecanismo."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "coluna-0196": {
-  "conceito": "O dermátomo apontado no dedo médio e na região central da mão corresponde predominantemente à raiz C7. Há sobreposição entre dermátomos, mas o dedo médio é a referência clínica mais útil para C7.",
-  "correta": "C, O dedo médio é o território clássico de C7.",
+  "conceito": "### O dermátomo indicado\nA figura mostra os dermátomos do membro superior em faixas coloridas. A seta aponta a faixa que ocupa a região **central** da mão, incluindo o ==dedo médio==: território de **C7**.\n\n### Dermátomos da mão\n| Raiz | Dedos |\n|---|---|\n| C6 | **polegar** e indicador (radial) |\n| ==C7== | ==dedo médio== (central; pode incluir parte do indicador e do anular) |\n| C8 | **anular e mínimo** (ulnar) |\n\n### C7 completo\n- **Motor:** **tríceps**, flexores do punho, extensores dos dedos.\n- **Reflexo:** **tricipital**.\n- **Disco:** **C6-C7**, a segunda radiculopatia cervical mais comum (ou a mais comum, segundo algumas séries).\n\n> **Na prova:** dedo médio = ==C7==.",
+  "correta": "**C7.**",
   "incorretas": {
-   "A": "C5 predomina no ombro e braço proximal.",
-   "B": "C6 predomina no polegar e na borda radial da mão.",
-   "D": "C8 predomina no dedo mínimo e na borda ulnar da mão."
+   "A": "**C5.**\n- Ombro e face lateral do braço.",
+   "B": "**C6.**\n- Polegar e borda radial.",
+   "D": "**C8.**\n- Anular, mínimo e borda ulnar."
   },
   "referencias": [
    "Bates' Guide to Physical Examination and History Taking. Cervical dermatomes.",
    "DeMyer W. Technique of the Neurologic Examination."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0198": {
-  "conceito": "O nervo hipoglosso cruza a região carotídea e segue anteriormente para a língua, relacionando-se com o tendão do digástrico e o músculo estilo-hióideo. O nervo acessório acompanha inicialmente o esternocleidomastoideo e depois cruza o triângulo posterior.",
-  "correta": "B, A estrutura demarcada é o nervo hipoglosso.",
+  "conceito": "### O nervo demarcado\nAcesso **anterior alto** à cervical (região submandibular / carotídea alta), com o ventre do **digástrico** afastado. O nervo que **cruza horizontalmente** a **carótida** (externa e interna) e a veia jugular, abaixo do digástrico, em direção à língua, é o ==hipoglosso== (XII).\n\n### Riscos do acesso cervical alto (C2 a C4)\n- **Hipoglosso:** paralisia da hemilíngua (desvio para o lado lesado), disfagia, disartria.\n- **Laríngeo superior:** voz fraca, perda da sensibilidade da laringe e aspiração.\n- **Ramo marginal da mandíbula** (VII): assimetria do lábio inferior.\n- **Glândula submandibular**, artéria facial e artéria lingual.\n\n### Os outros\n- **Acessório (XI):** junto ao **esternocleidomastóideo**, em direção ao trapézio, mais posterior.\n- **Laríngeo recorrente:** no **sulco traqueoesofágico**, baixo.\n- **\"Cervical ascendente\":** é uma **artéria** (ramo do tronco tireocervical), não um nervo.\n\n> **Na prova:** nervo que cruza a carótida alta, sob o digástrico = ==hipoglosso==.",
+  "correta": "**Hipoglosso.**",
   "incorretas": {
-   "A": "O acessório teria trajeto associado ao esternocleidomastoideo e ao trapézio, mais posterior.",
-   "C": "O cervical ascendente é ramo vascular do tronco tireocervical, não o nervo amarelo mostrado.",
-   "D": "O laríngeo recorrente desce no sulco traqueoesofágico, inferiormente ao campo desta figura."
+   "A": "**Acessório.**\n- Associado ao ECM e ao trapézio, mais posterior.",
+   "C": "**Cervical ascendente.**\n- É ramo **arterial**.",
+   "D": "**Laríngeo recorrente.**\n- Sulco traqueoesofágico, mais baixo."
   },
   "referencias": [
    "Gray's Anatomy. Hypoglossal nerve in the carotid triangle.",
    "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "coluna-0199": {
   "conceito": "O esternocleidomastoideo é um músculo superficial do pescoço, com cabeças esternal e clavicular, que se fixa no processo mastoide. Atua na rotação contralateral e flexão cervical; é também referência importante no triângulo posterior.",
