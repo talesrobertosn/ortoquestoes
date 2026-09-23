@@ -8,6 +8,7 @@ import { Medalha } from '../componentes/Medalha'
 import { CONQUISTAS, CONQUISTAS_SEQUENCIA, conquistaAtual, proximaConquista, type Conquista } from '../estado/conquistas'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
+import { MINIMO_RANKING, nomeNoRanking } from '../util/nomeRanking'
 
 type Periodo = 'geral' | 'semana'
 type LinhaRanking = { posicao: number; apelido: string; total: number; total_geral: number; eh_voce: boolean }
@@ -67,10 +68,7 @@ export function Ranking() {
   const [periodo, definirPeriodo] = useState<Periodo>('geral')
   const [linhas, definirLinhas] = useState<LinhaRanking[] | null>(null)
   const [minhaPosicao, definirMinhaPosicao] = useState<MinhaPosicao>(null)
-  const [participa, definirParticipa] = useState<boolean | null>(null)
   const [erro, definirErro] = useState(false)
-  const [recarregar, definirRecarregar] = useState(0)
-  const [entrando, definirEntrando] = useState(false)
 
   const meuTotal = Object.keys(contexto.respondidas).length
   const recordeSequencia = useMemo(() => calcularStreak(contexto.respondidas).recorde, [contexto.respondidas])
@@ -83,30 +81,14 @@ export function Ranking() {
     Promise.all([
       supabase.rpc('obter_ranking_publico', { periodo }),
       supabase.rpc('minha_posicao_ranking', { periodo }),
-      supabase.from('perfis_publicos').select('participa_ranking').eq('usuario_id', sessao.user.id).maybeSingle(),
-    ]).then(([ranking, minha, perfil]) => {
+    ]).then(([ranking, minha]) => {
       if (!vivo) return
       if (ranking.error || minha.error) { definirErro(true); return }
       definirLinhas(ranking.data ?? [])
       definirMinhaPosicao(minha.data?.[0] ?? null)
-      definirParticipa(Boolean(perfil.data?.participa_ranking) || Boolean(minha.data?.[0]))
     }).catch(() => { if (vivo) definirErro(true) })
     return () => { vivo = false }
-  }, [sessao, periodo, recarregar])
-
-  async function participarAgora() {
-    if (!supabase || !sessao) return
-    const meta = sessao.user.user_metadata ?? {}
-    const nome = String(meta.nome ?? '').trim(), sobrenome = String(meta.sobrenome ?? '').trim()
-    const apelido = `${nome} ${sobrenome ? `${sobrenome.charAt(0).toUpperCase()}.` : ''}`.trim() || 'Participante'
-    definirEntrando(true)
-    try {
-      const { error } = await supabase.from('perfis_publicos').upsert({ apelido, participa_ranking: true }, { onConflict: 'usuario_id' })
-      if (error) throw error
-      definirRecarregar((n) => n + 1)
-    } catch { definirErro(true) }
-    finally { definirEntrando(false) }
-  }
+  }, [sessao, periodo])
 
   if (!contasDisponiveis || !supabase) {
     return <article className="limite-leitura empilha">
@@ -136,14 +118,14 @@ export function Ranking() {
             <span className="rk-heroi__rotulo">Sua posição {periodo === 'semana' ? 'na semana' : 'geral'}</span>
             <strong className="rk-heroi__posicao">#{minhaPosicao.posicao}</strong>
             <span className="rk-heroi__rotulo">{minhaPosicao.total.toLocaleString('pt-BR')} questões {periodo === 'semana' ? 'nos últimos 7 dias' : 'respondidas'}</span>
-          </> : participa === false ? <>
-            <span className="rk-heroi__rotulo">Você ainda não aparece no ranking</span>
-            <button type="button" className="botao botao--claro" onClick={() => void participarAgora()} disabled={entrando}>{entrando ? 'Ativando…' : 'Participar agora'}</button>
-            <a className="rk-heroi__link" href={href('/conta')}>Escolher como meu nome aparece</a>
+          </> : meuTotal < MINIMO_RANKING ? <>
+            <span className="rk-heroi__rotulo">Você entra no ranking com {MINIMO_RANKING} questões</span>
+            <strong className="rk-heroi__posicao">Faltam {MINIMO_RANKING - meuTotal}</strong>
+            <span className="rk-heroi__rotulo">Você vai aparecer como {nomeNoRanking(String(sessao?.user.user_metadata?.nome ?? ''), String(sessao?.user.user_metadata?.sobrenome ?? ''))}</span>
           </> : <>
             <span className="rk-heroi__rotulo">Seu emblema</span>
             <strong className="rk-heroi__posicao">{meuEmblema?.rotulo ?? '...'}</strong>
-            <span className="rk-heroi__rotulo">Responda questões para entrar na lista</span>
+            <span className="rk-heroi__rotulo">Sua posição aparece assim que o progresso sincronizar</span>
           </>}
         </div>
       )}
@@ -151,7 +133,7 @@ export function Ranking() {
 
     {!sessao ? (
       <Estado titulo="Entre na sua conta para ver o ranking" acoes={<a className="botao botao--principal" href={href('/conta?modo=entrar')}>Entrar ou criar conta</a>}>
-        <p>O ranking reúne quem mais respondeu questões entre as contas que decidiram participar.</p>
+        <p>O ranking reúne quem mais respondeu questões entre todas as contas com pelo menos 5 questões respondidas.</p>
       </Estado>
     ) : <>
       <div className="rk-abas" role="tablist" aria-label="Período do ranking">
@@ -214,7 +196,7 @@ export function Ranking() {
       <ul>
         <li><span><Icone nome="grafico" tamanho={18} /></span><div><strong>Conta volume, não acerto.</strong> Cada questão diferente respondida soma um ponto. Refazer a mesma questão não soma de novo.</div></li>
         <li><span><Icone nome="calendario" tamanho={18} /></span><div><strong>Geral ou últimos 7 dias.</strong> O geral mostra o acumulado; a semana dá chance a quem começou agora.</div></li>
-        <li><span><Icone nome="usuario" tamanho={18} /></span><div><strong>Só aparece quem quer.</strong> A participação é opcional e você escolhe o nome exibido em <a href={href('/conta')}>Minha conta</a>. E-mail, telefone e cidade nunca aparecem.</div></li>
+        <li><span><Icone nome="usuario" tamanho={18} /></span><div><strong>Todo mundo com conta participa.</strong> Entra quem respondeu pelo menos {MINIMO_RANKING} questões, com o nome do cadastro e a inicial do sobrenome (ajuste em <a href={href('/conta')}>Minha conta</a>). E-mail, telefone e cidade nunca aparecem.</div></li>
         <li><span><Icone nome="medalha" tamanho={18} /></span><div><strong>Emblemas são para sempre.</strong> Os de questões aparecem ao lado do seu nome; os de sequência contam o seu recorde de dias seguidos com pelo menos {META_STREAK_DIARIA} questões.</div></li>
       </ul>
     </section>
