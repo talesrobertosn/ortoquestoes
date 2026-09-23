@@ -1,4 +1,5 @@
 import { banco, json } from '../_shared/http.ts'
+import { consultarFatura, consultarPagamento, consultarMercadoPago, type PagamentoMercadoPago } from '../_shared/cobranca-mercado-pago.ts'
 
 const planos = {
   mensal: { frequency: 1, transaction_amount: 39.90 },
@@ -23,38 +24,34 @@ function planoDaRecorrencia(autoRecurring: unknown) {
   throw new Error('recorrencia_desconhecida')
 }
 async function marcarEvento(idEvento: string, status: 'processado' | 'ignorado' | 'erro', erro?: unknown) {
-  await banco(`eventos_pagamento?provedor=eq.mercado_pago&id_evento=eq.${encodeURIComponent(idEvento)}`, {
-    method: 'PATCH', body: JSON.stringify({ status_processamento: status, ...(erro ? { erro: String(erro) } : {}), processado_em: new Date().toISOString() }),
+  const resposta = await banco(`eventos_pagamento?provedor=eq.mercado_pago&id_evento=eq.${encodeURIComponent(idEvento)}`, {
+    method: 'PATCH', body: JSON.stringify({ status_processamento: status, erro: erro ? String(erro) : null, processado_em: new Date().toISOString() }),
   })
+  if (!resposta.ok) throw new Error('atualizacao_evento_falhou')
 }
-function alteracaoDaCobranca(status: string, pagamento: Record<string, unknown>) {
+function alteracaoDaCobranca(status: string, pagamento: PagamentoMercadoPago, statusAtual: string) {
   const agora = new Date().toISOString()
-  if (status === 'approved') return { status: 'ativa', ultima_cobranca_id: String(pagamento.id), ultima_cobranca_em: pagamento.date_approved ?? agora, atualizada_em: agora }
-  if (status === 'refunded' || status === 'charged_back') return { status: 'reembolsada', fim_periodo: agora, atualizada_em: agora }
+  if (status === 'approved') {
+    if (!pagamento.date_approved) throw new Error('data_aprovacao_ausente')
+    return { status: statusAtual === 'cancelada' || statusAtual === 'reembolsada' ? statusAtual : 'ativa', ultima_cobranca_id: String(pagamento.id), ultima_cobranca_em: pagamento.date_approved, atualizada_em: agora }
+  }
+  if (status === 'refunded' || status === 'charged_back') return { status: 'reembolsada', cancelar_ao_fim: true, fim_periodo: agora, atualizada_em: agora }
   if (status === 'cancelled') return { status: 'cancelada', fim_periodo: agora, cancelar_ao_fim: true, atualizada_em: agora }
   if (status === 'expired') return { status: 'vencida', fim_periodo: agora, atualizada_em: agora }
   if (status === 'rejected') return { status: 'falha_pagamento', fim_periodo: agora, atualizada_em: agora }
   return null
 }
 
-async function processarCobranca(idRecurso: string, idEvento: string, endpoint: string) {
-  const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')!
-  const resposta = await fetch(`https://api.mercadopago.com/${endpoint}/${encodeURIComponent(idRecurso)}`, { headers: { Authorization: `Bearer ${token}` } })
-  if (!resposta.ok) throw new Error('consulta_cobranca_falhou')
-  const pagamento = await resposta.json() as Record<string, unknown>
-  const alteracao = alteracaoDaCobranca(String(pagamento.status ?? ''), pagamento)
-  if (!alteracao) return marcarEvento(idEvento, 'ignorado')
-  const idAssinatura = pagamento.preapproval_id ?? (pagamento.metadata as Record<string, unknown> | undefined)?.preapproval_id ?? pagamento.subscription_id
-  if (!idAssinatura) throw new Error('pagamento_sem_assinatura')
-  await banco(`assinaturas?id_externo=eq.${encodeURIComponent(String(idAssinatura))}`, { method: 'PATCH', body: JSON.stringify(alteracao) })
-  await marcarEvento(idEvento, 'processado')
+async function assinaturaPorExterno(idExterno: string) {
+  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idExterno)}&select=id,status`)
+  if (!resposta.ok) throw new Error('consulta_assinatura_falhou')
+  const assinaturas = await resposta.json() as Array<{ id: string; status: string }>
+  return assinaturas[0] ?? null
 }
 
-async function processarPreapproval(idRecurso: string, idEvento: string) {
+async function sincronizarPreapproval(idRecurso: string) {
   const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')!
-  const resposta = await fetch(`https://api.mercadopago.com/preapproval/${encodeURIComponent(idRecurso)}`, { headers: { Authorization: `Bearer ${token}` } })
-  if (!resposta.ok) throw new Error('consulta_preapproval_falhou')
-  const preapproval = await resposta.json() as Record<string, unknown>
+  const preapproval = await consultarMercadoPago<Record<string, unknown>>(token, `preapproval/${encodeURIComponent(idRecurso)}`)
   const statusMercadoPago = String(preapproval.status ?? '')
   const status = statusMercadoPago === 'authorized' ? 'ativa'
     : statusMercadoPago === 'cancelled' ? 'cancelada'
@@ -62,8 +59,8 @@ async function processarPreapproval(idRecurso: string, idEvento: string) {
         : statusMercadoPago === 'rejected' ? 'falha_pagamento'
           : statusMercadoPago === 'paused' ? 'pausada' : 'pendente'
   const plano = planoDaRecorrencia(preapproval.auto_recurring)
-  await banco('assinaturas?on_conflict=id_externo', {
-    method: 'POST', headers: { Prefer: 'resolution=merge-duplicates,return=minimal' }, body: JSON.stringify({
+  const criacao = await banco('assinaturas?on_conflict=id_externo', {
+    method: 'POST', headers: { Prefer: 'resolution=ignore-duplicates,return=minimal' }, body: JSON.stringify({
       id_usuario: preapproval.external_reference,
       id_externo: preapproval.id,
       plano,
@@ -74,13 +71,64 @@ async function processarPreapproval(idRecurso: string, idEvento: string) {
       atualizada_em: new Date().toISOString(),
     }),
   })
+  if (!criacao.ok) throw new Error('criacao_assinatura_falhou')
+  const atual = await assinaturaPorExterno(idRecurso)
+  if (!atual) throw new Error('assinatura_nao_encontrada')
+  if (atual.status !== 'reembolsada') {
+    const atualizacao = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idRecurso)}&status=neq.reembolsada`, {
+      method: 'PATCH', body: JSON.stringify({
+        status,
+        cancelar_ao_fim: status === 'cancelada',
+        inicio_periodo: preapproval.date_created,
+        fim_periodo: preapproval.next_payment_date,
+        atualizada_em: new Date().toISOString(),
+      }),
+    })
+    if (!atualizacao.ok) throw new Error('atualizacao_assinatura_falhou')
+  }
+  return statusMercadoPago
+}
+
+async function aplicarCobranca(idAssinatura: string, pagamento: PagamentoMercadoPago, idEvento: string) {
+  const atual = await assinaturaPorExterno(idAssinatura)
+  if (!atual) throw new Error('assinatura_nao_encontrada')
+  const alteracao = alteracaoDaCobranca(String(pagamento.status ?? ''), pagamento, atual.status)
+  if (!alteracao) return marcarEvento(idEvento, 'ignorado')
+  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idAssinatura)}`, {
+    method: 'PATCH', body: JSON.stringify(alteracao),
+  })
+  if (!resposta.ok) throw new Error('atualizacao_cobranca_falhou')
+  await marcarEvento(idEvento, 'processado')
+}
+
+async function processarPagamento(idRecurso: string, idEvento: string) {
+  const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')!
+  const pagamento = await consultarPagamento(token, idRecurso)
+  const idAssinatura = pagamento.preapproval_id ?? pagamento.metadata?.preapproval_id ?? pagamento.subscription_id
+  if (!idAssinatura) return marcarEvento(idEvento, 'ignorado')
+  await sincronizarPreapproval(String(idAssinatura))
+  await aplicarCobranca(String(idAssinatura), pagamento, idEvento)
+}
+
+async function processarPagamentoAutorizado(idRecurso: string, idEvento: string) {
+  const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')!
+  const fatura = await consultarFatura(token, idRecurso)
+  if (!fatura.preapproval_id || !fatura.payment?.id) return marcarEvento(idEvento, 'ignorado')
+  const pagamento = await consultarPagamento(token, String(fatura.payment.id))
+  if (String(pagamento.id) !== String(fatura.payment.id)) throw new Error('pagamento_divergente')
+  await sincronizarPreapproval(fatura.preapproval_id)
+  await aplicarCobranca(fatura.preapproval_id, pagamento, idEvento)
+}
+
+async function processarPreapproval(idRecurso: string, idEvento: string) {
+  const statusMercadoPago = await sincronizarPreapproval(idRecurso)
   await marcarEvento(idEvento, statusMercadoPago === 'pending' || statusMercadoPago === 'in_process' ? 'ignorado' : 'processado')
 }
 
 async function processar(idRecurso: string, idEvento: string, tipo: string) {
   try {
-    if (tipo === 'payment') return await processarCobranca(idRecurso, idEvento, 'v1/payments')
-    if (tipo === 'subscription_authorized_payment') return await processarCobranca(idRecurso, idEvento, 'authorized_payments')
+    if (tipo === 'payment') return await processarPagamento(idRecurso, idEvento)
+    if (tipo === 'subscription_authorized_payment') return await processarPagamentoAutorizado(idRecurso, idEvento)
     if (tipo === 'subscription_preapproval') return await processarPreapproval(idRecurso, idEvento)
     return await marcarEvento(idEvento, 'ignorado')
   } catch (erro) {
@@ -103,6 +151,14 @@ Deno.serve(async (req) => {
   const hash = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(JSON.stringify(payload))).then((b) => [...new Uint8Array(b)].map((x) => x.toString(16).padStart(2, '0')).join(''))
   const insercao = await banco('eventos_pagamento?on_conflict=provedor,id_evento', { method: 'POST', headers: { Prefer: 'resolution=ignore-duplicates,return=representation' }, body: JSON.stringify({ id_evento: idEvento, tipo, id_recurso: idRecurso, hash_payload: hash, payload }) })
   const novos = await insercao.json().catch(() => [])
+  if (!insercao.ok) return json({ erro: 'registro_evento_falhou' }, 502)
   if (Array.isArray(novos) && novos.length) EdgeRuntime.waitUntil(processar(idRecurso, idEvento, tipo))
+  else if (tipo === 'subscription_authorized_payment') {
+    const existente = await banco(`eventos_pagamento?provedor=eq.mercado_pago&id_evento=eq.${encodeURIComponent(idEvento)}&select=hash_payload,status_processamento`)
+    if (!existente.ok) return json({ erro: 'consulta_evento_falhou' }, 502)
+    const [evento] = await existente.json() as Array<{ hash_payload: string; status_processamento: string }>
+    if (evento?.hash_payload !== hash) return json({ erro: 'evento_divergente' }, 409)
+    if (evento.status_processamento === 'ignorado' || evento.status_processamento === 'erro') EdgeRuntime.waitUntil(processar(idRecurso, idEvento, tipo))
+  }
   return json({ recebido: true })
 })
