@@ -15,6 +15,7 @@ import { textoErro } from '../conta/erros'
 import { Icone } from '../componentes/Icone'
 import { Medalha } from '../componentes/Medalha'
 import { conquistaAtual } from '../estado/conquistas'
+import { nomeNoRanking } from '../util/nomeRanking'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -57,18 +58,16 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [receberNovidades, definirReceberNovidades] = useState(Boolean(perfil.receber_novidades ?? false))
   const [aceitouTermos, definirAceitouTermos] = useState(false)
   const [salvandoPerfil, definirSalvandoPerfil] = useState(false)
-  const [apelidoRanking, definirApelidoRanking] = useState('')
   const [participaRanking, definirParticipaRanking] = useState(false)
   const [rankingCarregado, definirRankingCarregado] = useState(false)
   const [salvandoRanking, definirSalvandoRanking] = useState(false)
-  const apelidoSugerido = `${nome.trim()} ${sobrenome.trim().charAt(0).toUpperCase()}${sobrenome.trim() ? '.' : ''}`.trim()
+  const nomeRanking = nomeNoRanking(String(perfil.nome ?? ''), String(perfil.sobrenome ?? ''))
   useEffect(() => {
     if (!supabase || !sessao) return
     let vivo = true
-    supabase.from('perfis_publicos').select('apelido, participa_ranking').eq('usuario_id', sessao.user.id).maybeSingle()
+    supabase.from('perfis_publicos').select('participa_ranking').eq('usuario_id', sessao.user.id).maybeSingle()
       .then(({ data }) => {
         if (!vivo) return
-        definirApelidoRanking(String(data?.apelido ?? apelidoSugerido))
         definirParticipaRanking(Boolean(data?.participa_ranking ?? false))
         definirRankingCarregado(true)
       })
@@ -77,11 +76,10 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   }, [sessao?.user.id])
   async function salvarRanking(participar: boolean) {
     if (!supabase || !sessao) return
-    if (participar && apelidoRanking.trim().length < 2) { definirMensagem('Escolha um nome com pelo menos 2 letras para aparecer no ranking.'); return }
     definirSalvandoRanking(true)
     try {
       const { error } = await supabase.from('perfis_publicos')
-        .upsert({ apelido: apelidoRanking.trim() || apelidoSugerido, participa_ranking: participar }, { onConflict: 'usuario_id' })
+        .upsert({ apelido: nomeRanking, participa_ranking: participar }, { onConflict: 'usuario_id' })
       if (error) throw error
       definirParticipaRanking(participar)
       definirMensagem(participar ? 'Você está participando do ranking.' : 'Você saiu do ranking.')
@@ -300,14 +298,14 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
             <span className="ct-status__ponto" aria-hidden="true" />
             {participaRanking ? 'Você está participando' : 'Você não aparece no ranking'}
           </div>
-          <label className="campo">Como seu nome aparece<input className="entrada" maxLength={40} value={apelidoRanking} onChange={e => definirApelidoRanking(e.target.value)} placeholder={apelidoSugerido || 'Seu nome'} /></label>
+          <p className="ct-nome-ranking">Seu nome no ranking: <strong>{nomeRanking}</strong></p>
           <div className="linha">
             {participaRanking
-              ? <><button className="botao botao--principal" type="button" onClick={() => salvarRanking(true)} disabled={salvandoRanking}>Salvar nome</button><button className="botao botao--fantasma" type="button" onClick={() => salvarRanking(false)} disabled={salvandoRanking}>Sair do ranking</button></>
+              ? <><button className="botao botao--fantasma" type="button" onClick={() => salvarRanking(false)} disabled={salvandoRanking}>Sair do ranking</button></>
               : <button className="botao botao--principal" type="button" onClick={() => salvarRanking(true)} disabled={salvandoRanking}>Participar do ranking</button>}
             <a className="botao botao--fantasma" href={href('/ranking')}>Ver ranking</a>
           </div>
-          <p className="ct-nota">E-mail, WhatsApp e cidade nunca aparecem no ranking.</p>
+          <p className="ct-nota">Aparecem só o primeiro nome e a inicial do sobrenome do seu perfil. E-mail, WhatsApp e cidade nunca aparecem.</p>
         </> : <p className="texto-2">Carregando…</p>}
       </section>
 

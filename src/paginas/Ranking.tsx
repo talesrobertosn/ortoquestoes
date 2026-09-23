@@ -8,6 +8,7 @@ import { Medalha } from '../componentes/Medalha'
 import { CONQUISTAS, CONQUISTAS_SEQUENCIA, conquistaAtual, proximaConquista, type Conquista } from '../estado/conquistas'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
+import { nomeNoRanking } from '../util/nomeRanking'
 
 type Periodo = 'geral' | 'semana'
 type LinhaRanking = { posicao: number; apelido: string; total: number; total_geral: number; eh_voce: boolean }
@@ -98,7 +99,7 @@ export function Ranking() {
     if (!supabase || !sessao) return
     const meta = sessao.user.user_metadata ?? {}
     const nome = String(meta.nome ?? '').trim(), sobrenome = String(meta.sobrenome ?? '').trim()
-    const apelido = `${nome} ${sobrenome ? `${sobrenome.charAt(0).toUpperCase()}.` : ''}`.trim() || 'Participante'
+    const apelido = nomeNoRanking(nome, sobrenome)
     definirEntrando(true)
     try {
       const { error } = await supabase.from('perfis_publicos').upsert({ apelido, participa_ranking: true }, { onConflict: 'usuario_id' })
