@@ -104,6 +104,8 @@ for trecho in (
     "assinatura.status !== 'ativa' && assinatura.status !== 'cancelada'",
     "!['approved', 'refunded'].includes(String(pagamento.status))",
     "assinatura.status !== 'cancelada'",
+    "preapproval.status !== 'cancelled'",
+    "Date.parse(pagamento.date_approved) !== Date.parse(assinatura.ultima_cobranca_em)",
     "status: 'reembolsada'",
     "'X-Idempotency-Key': `garantia-${assinatura.id}-${assinatura.ultima_cobranca_id}`",
 ):
@@ -111,6 +113,7 @@ for trecho in (
 
 assert "estado?.status_assinatura === 'cancelada'" in RESUMO_ASSINATURA
 assert "{ acao: 'sincronizar_cobranca' }" in RESUMO_ASSINATURA
+assert "!proximoEstado.ultima_cobranca_em" not in RESUMO_ASSINATURA
 
 for trecho in (
     "create table if not exists public.administradores",

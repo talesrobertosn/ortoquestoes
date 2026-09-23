@@ -25,7 +25,7 @@ export function ResumoAssinatura() {
     try {
       const linhas = await chamarRpc<EstadoAssinatura[]>('obter_estado_conta', {})
       let proximoEstado = linhas[0] ?? null
-      if (proximoEstado?.plano && !proximoEstado.ultima_cobranca_em) {
+      if (proximoEstado?.plano && ['ativa', 'cancelada', 'pendente', 'falha_pagamento', 'pausada'].includes(proximoEstado.status_assinatura ?? '')) {
         try {
           await chamarFuncao('gerenciar-plano', { acao: 'sincronizar_cobranca' })
           proximoEstado = (await chamarRpc<EstadoAssinatura[]>('obter_estado_conta', {}))[0] ?? proximoEstado

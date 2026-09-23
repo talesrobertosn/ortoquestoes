@@ -9,8 +9,10 @@ interface Assinatura {
   ultima_cobranca_em: string | null
 }
 
-async function assinaturaDoUsuario(idUsuario: string) {
-  const resposta = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(idUsuario)}&order=atualizada_em.desc&limit=1&select=id,id_externo,status,ultima_cobranca_id,ultima_cobranca_em`)
+async function assinaturaDoUsuario(idUsuario: string, acao: 'cancelar' | 'reembolsar' | 'sincronizar_cobranca') {
+  const filtro = acao === 'cancelar' ? 'status=eq.ativa' : 'status=in.(ativa,cancelada,pendente,falha_pagamento,pausada)'
+  const ordenacao = acao === 'reembolsar' ? 'ultima_cobranca_em.desc.nullslast' : 'atualizada_em.desc'
+  const resposta = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(idUsuario)}&${filtro}&order=${ordenacao}&limit=1&select=id,id_externo,status,ultima_cobranca_id,ultima_cobranca_em`)
   if (!resposta.ok) throw new Error('consulta_assinatura_falhou')
   const [assinatura] = await resposta.json() as Assinatura[]
   return assinatura ?? null
@@ -28,10 +30,15 @@ async function sincronizarCobranca(token: string, assinatura: Assinatura) {
   if (!fatura?.payment?.id) return false
   const pagamento = await consultarPagamento(token, String(fatura.payment.id))
   if (String(pagamento.id) !== String(fatura.payment.id) || pagamento.status !== 'approved' || !pagamento.date_approved) return false
-  if (assinatura.ultima_cobranca_id !== String(pagamento.id) || assinatura.ultima_cobranca_em !== pagamento.date_approved) {
+  const preapproval = await consultarMercadoPago<{ status?: string }>(token, `preapproval/${encodeURIComponent(assinatura.id_externo)}`)
+  const ativar = assinatura.status !== 'cancelada' && assinatura.status !== 'reembolsada' && preapproval.status === 'authorized'
+  if (assinatura.ultima_cobranca_id !== String(pagamento.id)
+    || Date.parse(assinatura.ultima_cobranca_em ?? '') !== Date.parse(pagamento.date_approved)
+    || (ativar && assinatura.status !== 'ativa')) {
     await atualizarAssinatura(assinatura.id, {
       ultima_cobranca_id: String(pagamento.id),
       ultima_cobranca_em: pagamento.date_approved,
+      ...(ativar ? { status: 'ativa' } : {}),
     })
   }
   return true
@@ -45,7 +52,7 @@ Deno.serve(async (req) => {
     const { acao } = await req.json() as { acao?: 'cancelar' | 'reembolsar' | 'sincronizar_cobranca' }
     if (!acao || !['cancelar', 'reembolsar', 'sincronizar_cobranca'].includes(acao)) return json({ erro: 'acao_invalida' }, 400, req)
     if (Deno.env.get('MERCADO_PAGO_INTEGRACAO_VALIDADA') !== 'true') return json({ erro: 'integracao_nao_validada' }, 503, req)
-    const assinatura = await assinaturaDoUsuario(usuario.id)
+    const assinatura = await assinaturaDoUsuario(usuario.id, acao)
     if (!assinatura) return json({ erro: 'assinatura_nao_encontrada' }, 404, req)
     const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')!
 
@@ -60,7 +67,8 @@ Deno.serve(async (req) => {
       const idade = Date.now() - new Date(assinatura.ultima_cobranca_em).getTime()
       if (!Number.isFinite(idade) || idade < 0 || idade > 7 * 864e5) return json({ erro: 'prazo_de_garantia_encerrado' }, 409, req)
       const pagamento = await consultarPagamento(token, assinatura.ultima_cobranca_id)
-      if (!['approved', 'refunded'].includes(String(pagamento.status)) || String(pagamento.id) !== assinatura.ultima_cobranca_id || pagamento.date_approved !== assinatura.ultima_cobranca_em) {
+      if (!['approved', 'refunded'].includes(String(pagamento.status)) || String(pagamento.id) !== assinatura.ultima_cobranca_id
+        || !pagamento.date_approved || Date.parse(pagamento.date_approved) !== Date.parse(assinatura.ultima_cobranca_em)) {
         return json({ erro: 'cobranca_aprovada_nao_confirmada' }, 409, req)
       }
       if (pagamento.status === 'approved') {
@@ -74,15 +82,13 @@ Deno.serve(async (req) => {
       return json({ erro: 'plano_ativo_nao_encontrado' }, 404, req)
     }
 
-    if (assinatura.status !== 'cancelada') {
-      const preapproval = await consultarMercadoPago<{ status?: string }>(token, `preapproval/${encodeURIComponent(assinatura.id_externo)}`)
-      if (preapproval.status !== 'cancelled') {
-        const cancelamento = await fetch(`https://api.mercadopago.com/preapproval/${encodeURIComponent(assinatura.id_externo)}`, {
-          method: 'PUT', headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-          body: JSON.stringify({ status: 'cancelled' }),
-        })
-        if (!cancelamento.ok) return json({ erro: 'cancelamento_nao_confirmado' }, 502, req)
-      }
+    const preapproval = await consultarMercadoPago<{ status?: string }>(token, `preapproval/${encodeURIComponent(assinatura.id_externo)}`)
+    if (preapproval.status !== 'cancelled') {
+      const cancelamento = await fetch(`https://api.mercadopago.com/preapproval/${encodeURIComponent(assinatura.id_externo)}`, {
+        method: 'PUT', headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ status: 'cancelled' }),
+      })
+      if (!cancelamento.ok) return json({ erro: 'cancelamento_nao_confirmado' }, 502, req)
     }
 
     const agora = new Date().toISOString()
