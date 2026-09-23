@@ -15,6 +15,7 @@ import { textoErro } from '../conta/erros'
 import { Icone } from '../componentes/Icone'
 import { Medalha } from '../componentes/Medalha'
 import { conquistaAtual } from '../estado/conquistas'
+import { ResumoAssinatura } from '../componentes/ResumoAssinatura'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -293,6 +294,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     </section>}
 
     <div className="ct-grade">
+      <ResumoAssinatura />
       <section className="ct-cartao">
         <header className="ct-cartao__cabeca"><span className="ct-icone ct-icone--ouro"><Icone nome="trofeu" tamanho={18} /></span><div><h2>Ranking público</h2><p>Opcional. Conta questões respondidas, não acerto.</p></div></header>
         {rankingCarregado ? <>
