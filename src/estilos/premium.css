@@ -1532,6 +1532,13 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
   width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--ouro); color: #fff; font-weight: 900; font-size: 0.85rem;
 }
 .te-nota p { margin: 0; }
+.te-tabela { margin: 0.3rem 0 1rem; overflow-x: auto; border: 1px solid color-mix(in srgb, var(--verdete) 30%, transparent); border-radius: 12px; }
+.te-tabela table { width: 100%; border-collapse: collapse; font-size: 0.92em; line-height: 1.45; }
+.te-tabela th, .te-tabela td { padding: 0.5rem 0.7rem; text-align: left; vertical-align: top; border-bottom: 1px solid color-mix(in srgb, var(--verdete) 18%, transparent); overflow-wrap: normal; word-break: normal; }
+.te-tabela th { font-weight: 800; color: var(--verdete); background: color-mix(in srgb, var(--verdete) 8%, transparent); }
+.te-tabela tr:last-child td { border-bottom: 0; }
+.te-tabela td:first-child { font-weight: 650; }
+@media (max-width: 40rem) { .te-tabela table { font-size: 0.86em; } .te-tabela th, .te-tabela td { padding: 0.45rem 0.5rem; } }
 .te-nota p + p { margin-top: 0.4rem; }
 @media (max-width: 40rem) {
   .cm .texto-editorial { font-size: 0.98rem; line-height: 1.65; }

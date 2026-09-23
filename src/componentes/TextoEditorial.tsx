@@ -9,19 +9,20 @@ function formatarLinha(linha: string) {
   })
 }
 
-type TipoLinha = 'lista' | 'numerada' | 'nota' | 'titulo' | 'texto'
+type TipoLinha = 'lista' | 'numerada' | 'nota' | 'titulo' | 'tabela' | 'texto'
 function tipoDaLinha(linha: string): TipoLinha {
   if (linha.startsWith('- ')) return 'lista'
   if (/^\d+\.\s/.test(linha)) return 'numerada'
   if (linha.startsWith('> ')) return 'nota'
   if (linha.startsWith('### ')) return 'titulo'
+  if (linha.startsWith('|') && linha.endsWith('|')) return 'tabela'
   return 'texto'
 }
 
 /**
  * Agrupa linhas consecutivas do mesmo tipo: itens com "- " viram lista,
  * "1. " lista numerada, "> " um quadro de destaque ("Na prova") e "### " um
- * subtítulo. Funciona mesmo quando a lista vem colada à frase de introdução
+ * subtítulo e linhas "| a | b |" uma tabela (a primeira é o cabeçalho). Funciona mesmo quando a lista vem colada à frase de introdução
  * no mesmo parágrafo, que é como normalmente se escreve.
  */
 function agruparLinhas(linhas: string[]) {
@@ -35,7 +36,24 @@ function agruparLinhas(linhas: string[]) {
   return grupos
 }
 
-/** Texto seguro: parágrafos, negrito, destaque, subtítulos, listas e notas, sem interpretar HTML. */
+/** Tabela simples em markdown; a linha separadora "|---|" é ignorada. */
+function Tabela({ linhas }: { linhas: string[] }) {
+  const celulas = linhas
+    .filter((l) => !/^\|[\s:|-]+\|$/.test(l))
+    .map((l) => l.slice(1, -1).split('|').map((c) => c.trim()))
+  const [cabecalho, ...corpo] = celulas
+  if (!cabecalho) return null
+  return (
+    <div className="te-tabela">
+      <table>
+        <thead><tr>{cabecalho.map((c, k) => <th key={k}>{formatarLinha(c)}</th>)}</tr></thead>
+        <tbody>{corpo.map((linha, k) => <tr key={k}>{linha.map((c, m) => <td key={m}>{formatarLinha(c)}</td>)}</tr>)}</tbody>
+      </table>
+    </div>
+  )
+}
+
+/** Texto seguro: parágrafos, negrito, destaque, subtítulos, listas, tabelas e notas, sem interpretar HTML. */
 export function TextoEditorial({ texto }: { texto: string }) {
   const blocos = texto.split(/\n\s*\n/).filter((b) => b.trim())
   return (
@@ -47,6 +65,7 @@ export function TextoEditorial({ texto }: { texto: string }) {
           if (grupo.tipo === 'lista') return <ul key={chave}>{grupo.linhas.map((l, k) => <li key={k}>{formatarLinha(l.slice(2))}</li>)}</ul>
           if (grupo.tipo === 'numerada') return <ol key={chave}>{grupo.linhas.map((l, k) => <li key={k}>{formatarLinha(l.replace(/^\d+\.\s/, ''))}</li>)}</ol>
           if (grupo.tipo === 'nota') return <aside key={chave} className="te-nota">{grupo.linhas.map((l, k) => <p key={k}>{formatarLinha(l.slice(2))}</p>)}</aside>
+          if (grupo.tipo === 'tabela') return <Tabela key={chave} linhas={grupo.linhas} />
           if (grupo.tipo === 'titulo') return <h4 key={chave} className="te-titulo">{formatarLinha(grupo.linhas[0].slice(4))}</h4>
           return <p key={chave}>{formatarLinha(grupo.linhas[0])}</p>
         })

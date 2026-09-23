@@ -94,6 +94,9 @@ figcaption { font-size: 0.85rem; color: var(--texto-2); }
 mark { background: #f5df72; color: inherit; padding: 0 0.2em; border-radius: 0.2em; }
 .nota { margin: 0.4rem 0 0.8rem; padding: 0.8rem 1rem; border-radius: 12px; background: var(--ouro-veu); border-left: 4px solid var(--ouro); }
 .nota p { margin: 0; }
+table { width: 100%; border-collapse: collapse; margin: 0.3rem 0 1rem; font-size: 0.92em; }
+th, td { padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; border-bottom: 1px solid color-mix(in srgb, currentColor 15%, transparent); }
+th { font-weight: 700; }
 details.resposta { margin-top: 0.5rem; border-top: 1px solid var(--traco); padding-top: 0.75rem; }
 details.resposta summary { cursor: pointer; font-weight: 700; color: var(--destaque); }
 .gabarito { font-size: 1.05rem; }
@@ -120,7 +123,7 @@ def _inline(texto: str) -> str:
 
 def editorial(texto: str) -> str:
     """Mesmo formato do site (TextoEditorial.tsx): parágrafos, ### subtítulo,
-    listas com "- " e "1. ", nota com "> ", negrito e destaque. Sem HTML cru."""
+    listas com "- " e "1. ", tabela com "| a | b |", nota com "> ", negrito e destaque. Sem HTML cru."""
     partes: list[str] = []
     for bloco in re.split(r"\n\s*\n", texto or ""):
         linhas = [l.strip() for l in bloco.split("\n") if l.strip()]
@@ -135,6 +138,12 @@ def editorial(texto: str) -> str:
                 partes.append("<ul>" + "".join(f"<li>{_inline(l[2:])}</li>" for l in grupo) + "</ul>")
             elif tipo_atual == "numerada":
                 partes.append("<ol>" + "".join(f"<li>{_inline(re.sub(r'^[0-9]+[.][ ]', '', l))}</li>" for l in grupo) + "</ol>")
+            elif tipo_atual == "tabela":
+                linhas_t = [[c.strip() for c in l[1:-1].split("|")] for l in grupo if not re.match(r"^[|][\s:|-]+[|]$", l)]
+                if linhas_t:
+                    cab = "".join(f"<th>{_inline(c)}</th>" for c in linhas_t[0])
+                    corpo = "".join("<tr>" + "".join(f"<td>{_inline(c)}</td>" for c in l) + "</tr>" for l in linhas_t[1:])
+                    partes.append(f"<table><thead><tr>{cab}</tr></thead><tbody>{corpo}</tbody></table>")
             elif tipo_atual == "nota":
                 partes.append('<aside class="nota">' + "".join(f"<p>{_inline(l[2:])}</p>" for l in grupo) + "</aside>")
             grupo, tipo_atual = [], ""
@@ -146,6 +155,8 @@ def editorial(texto: str) -> str:
                 tipo = "numerada"
             elif linha.startswith("> "):
                 tipo = "nota"
+            elif linha.startswith("|") and linha.endswith("|"):
+                tipo = "tabela"
             elif linha.startswith("### "):
                 fechar()
                 partes.append(f"<h4>{_inline(linha[4:])}</h4>")
@@ -165,7 +176,7 @@ def editorial(texto: str) -> str:
 def texto_puro(texto: str) -> str:
     """Versão sem marcação, para meta description e dados estruturados."""
     t = re.sub(r"^(### |- |> |[0-9]+[.] )", "", texto or "", flags=re.M)
-    t = t.replace("**", "").replace("==", "")
+    t = t.replace("**", "").replace("==", "").replace("|", " ")
     return " ".join(t.split())
 
 
