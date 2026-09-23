@@ -56,8 +56,9 @@ end;
 $$;
 revoke all on function public.apelido_ofensivo(text) from public, anon, authenticated;
 
+-- security definer: chama apelido_ofensivo(), que não tem grant para authenticated.
 create or replace function public.normalizar_apelido_ranking()
-returns trigger language plpgsql set search_path = '' as $$
+returns trigger language plpgsql security definer set search_path = '' as $$
 begin
   if new.apelido is null then return new; end if;
   new.apelido := btrim(regexp_replace(new.apelido, '\s+', ' ', 'g'));
