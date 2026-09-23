@@ -237,7 +237,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <button className="botao botao--principal acesso__enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}</button>
         </form>
         {modo === 'entrar' && !recuperacao && <p className="acesso__alternativa">Não recebeu a confirmação? <button type="button" className="acesso__link" onClick={() => { void reenviar() }} disabled={ocupado || !email.trim()}>Reenviar e-mail</button></p>}
-        {!recuperacao && modo === 'criar' && <p className="meta">Seus dados de perfil não ficam visíveis a outros usuários. O ranking público fica desligado até você ativá-lo, escolhendo como seu nome aparece.</p>}
+        {!recuperacao && modo === 'criar' && <p className="meta">Seus dados de perfil não ficam visíveis a outros usuários. O ranking público fica desligado até você ativá-lo; nele aparecem só o seu primeiro nome e a inicial do sobrenome.</p>}
         <p className="acesso__seguranca"><Icone nome="certo" tamanho={14} /> Autenticação segura pelo Supabase. O OrtoQuestões não guarda sua senha. Abra os links de confirmação neste mesmo navegador.</p>
       </section>
     </div>

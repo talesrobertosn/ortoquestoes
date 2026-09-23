@@ -140,7 +140,7 @@ export function Ranking() {
           </> : participa === false ? <>
             <span className="rk-heroi__rotulo">Você ainda não aparece no ranking</span>
             <button type="button" className="botao botao--claro" onClick={() => void participarAgora()} disabled={entrando}>{entrando ? 'Ativando…' : 'Participar agora'}</button>
-            <a className="rk-heroi__link" href={href('/conta')}>Escolher como meu nome aparece</a>
+            <span className="rk-heroi__rotulo">Você aparece como {nomeNoRanking(String(sessao?.user.user_metadata?.nome ?? ''), String(sessao?.user.user_metadata?.sobrenome ?? ''))}</span>
           </> : <>
             <span className="rk-heroi__rotulo">Seu emblema</span>
             <strong className="rk-heroi__posicao">{meuEmblema?.rotulo ?? '...'}</strong>
