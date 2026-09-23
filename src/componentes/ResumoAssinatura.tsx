@@ -49,6 +49,7 @@ export function ResumoAssinatura() {
 
   if (!sessao) return null
   const ativo = estado?.status_assinatura === 'ativa'
+  const statusExibido = ativo ? 'Em dia' : estado?.status_assinatura ?? 'Sem assinatura'
   const garantia = ativo && estado?.ultima_cobranca_em
     && Date.now() - new Date(estado.ultima_cobranca_em).getTime() <= 7 * 864e5
 
@@ -57,7 +58,7 @@ export function ResumoAssinatura() {
     {carregando ? <p>Carregando assinatura…</p> : <>
       <dl className="conta-assinatura__dados">
         <div><dt>Plano</dt><dd>{estado?.plano ?? 'Gratuito'}</dd></div>
-        <div><dt>Status</dt><dd>{estado?.status_assinatura ?? 'Sem assinatura'}</dd></div>
+        <div><dt>Status</dt><dd>{statusExibido}</dd></div>
         <div><dt>{estado?.cancelar_ao_fim ? 'Término do acesso' : 'Próxima cobrança ou término'}</dt><dd>{data(estado?.fim_periodo ?? null)}</dd></div>
         <div><dt>Última cobrança</dt><dd>{data(estado?.ultima_cobranca_em ?? null)}</dd></div>
       </dl>
