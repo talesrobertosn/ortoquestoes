@@ -2,9 +2,9 @@
 export const MINIMO_RANKING = 5
 
 /**
- * Nome que aparece no ranking: o nome completo do cadastro + a inicial do
- * sobrenome. Espelha public.nome_publico_ranking() no banco, que é quem de
- * fato decide (um valor enviado pelo cliente é ignorado).
+ * Nome padrão no ranking, para quem não escolheu apelido: o nome completo do
+ * cadastro + a inicial do sobrenome. Espelha public.nome_publico_ranking() no
+ * banco. O apelido escolhido fica em perfis_publicos (ver conta/perfilRanking).
  */
 export function nomeNoRanking(nome: string, sobrenome: string): string {
   const limpo = nome.replace(/[^\p{L}' -]/gu, '').replace(/\s+/g, ' ').trim().slice(0, 30).trim()

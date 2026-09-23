@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react'
+import { useEffect, useState, type FormEvent } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, retornoConta, supabase } from '../conta/supabase'
 import { avisoConta, definirAvisoConta } from '../conta/retornoAuth'
@@ -17,7 +17,8 @@ import { Icone } from '../componentes/Icone'
 import { Medalha } from '../componentes/Medalha'
 import { conquistaAtual } from '../estado/conquistas'
 import { ResumoAssinatura } from '../componentes/ResumoAssinatura'
-import { MINIMO_RANKING, nomeNoRanking } from '../util/nomeRanking'
+import { MINIMO_RANKING } from '../util/nomeRanking'
+import { APELIDO_MAXIMO, usarPerfilRanking } from '../conta/perfilRanking'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -55,7 +56,22 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [receberNovidades, definirReceberNovidades] = useState(Boolean(perfil.receber_novidades ?? false))
   const [aceitouTermos, definirAceitouTermos] = useState(false)
   const [salvandoPerfil, definirSalvandoPerfil] = useState(false)
-  const nomeRanking = nomeNoRanking(String(perfil.nome ?? ''), String(perfil.sobrenome ?? ''))
+  const { perfil: perfilRanking, carregado: rankingCarregado, salvar: salvarPerfilRanking, nomeExibido: nomeExibidoRanking, nomeCadastro: nomeCadastroRanking } = usarPerfilRanking(sessao)
+  const [apelidoRanking, definirApelidoRanking] = useState('')
+  const [salvandoRanking, definirSalvandoRanking] = useState(false)
+  useEffect(() => { if (rankingCarregado) definirApelidoRanking(perfilRanking.apelido ?? '') }, [rankingCarregado, perfilRanking.apelido])
+  async function salvarApelido(texto: string) {
+    definirSalvandoRanking(true)
+    const erro = await salvarPerfilRanking({ apelido: texto.trim() || null })
+    definirSalvandoRanking(false)
+    definirMensagem(erro ?? (texto.trim() ? 'Apelido salvo.' : 'Você volta a aparecer com o seu nome.'))
+  }
+  async function alterarParticipacao(participa: boolean) {
+    definirSalvandoRanking(true)
+    const erro = await salvarPerfilRanking({ participa })
+    definirSalvandoRanking(false)
+    definirMensagem(erro ?? (participa ? 'Você voltou ao ranking.' : 'Você saiu do ranking.'))
+  }
   const respondidasConta = Object.keys(contexto.respondidas).length
   async function salvarPerfil() {
     if (!supabase || !sessao) return
@@ -208,7 +224,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <button className="botao botao--principal acesso__enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}</button>
         </form>
         {modo === 'entrar' && !recuperacao && <p className="acesso__alternativa">Não recebeu a confirmação? <button type="button" className="acesso__link" onClick={() => { void reenviar() }} disabled={ocupado || !email.trim()}>Reenviar e-mail</button></p>}
-        {!recuperacao && modo === 'criar' && <p className="meta">Seus dados de perfil não ficam visíveis a outros usuários, com uma exceção: depois de 5 questões respondidas, você entra no ranking, visível a quem tem conta, com o seu nome e a inicial do sobrenome.</p>}
+        {!recuperacao && modo === 'criar' && <p className="meta">Seus dados de perfil não ficam visíveis a outros usuários, com uma exceção: depois de 5 questões respondidas, você entra no ranking, visível a quem tem conta, com o apelido que escolher (ou seu nome e a inicial do sobrenome). Você pode sair do ranking quando quiser.</p>}
         <p className="acesso__seguranca"><Icone nome="certo" tamanho={14} /> Autenticação segura pelo Supabase. O OrtoQuestões não guarda sua senha. Abra os links de confirmação neste mesmo navegador.</p>
       </section>
     </div>
@@ -265,15 +281,29 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       <ResumoAssinatura />
       <section className="ct-cartao">
         <header className="ct-cartao__cabeca"><span className="ct-icone ct-icone--ouro"><Icone nome="trofeu" tamanho={18} /></span><div><h2>Ranking</h2><p>Conta questões respondidas, não acerto.</p></div></header>
-        <div className={'ct-status' + (respondidasConta >= MINIMO_RANKING ? ' ct-status--ativo' : '')}>
-          <span className="ct-status__ponto" aria-hidden="true" />
-          {respondidasConta >= MINIMO_RANKING ? 'Você está no ranking' : `Você entra no ranking ao responder ${MINIMO_RANKING} questões (faltam ${MINIMO_RANKING - respondidasConta})`}
-        </div>
-        <p className="ct-nome-ranking">Seu nome no ranking: <strong>{nomeRanking}</strong></p>
-        <div className="linha">
-          <a className="botao botao--fantasma" href={href('/ranking')}>Ver ranking</a>
-        </div>
-        <p className="ct-nota">Aparecem o seu nome e a inicial do sobrenome, como estão no seu perfil. E-mail, WhatsApp e cidade nunca aparecem.</p>
+        {!rankingCarregado ? <p className="texto-2">Carregando…</p> : <>
+          <div className={'ct-status' + (perfilRanking.participa && respondidasConta >= MINIMO_RANKING ? ' ct-status--ativo' : '')}>
+            <span className="ct-status__ponto" aria-hidden="true" />
+            {!perfilRanking.participa ? 'Você saiu do ranking'
+              : respondidasConta >= MINIMO_RANKING ? 'Você está no ranking'
+              : `Você entra no ranking ao responder ${MINIMO_RANKING} questões (faltam ${MINIMO_RANKING - respondidasConta})`}
+          </div>
+          {perfilRanking.participa && <>
+            <label className="campo">Seu apelido no ranking
+              <input className="entrada" maxLength={APELIDO_MAXIMO} value={apelidoRanking} onChange={e => definirApelidoRanking(e.target.value)} placeholder={nomeCadastroRanking} />
+            </label>
+            <p className="ct-nome-ranking">Você aparece como: <strong>{nomeExibidoRanking}</strong></p>
+          </>}
+          <div className="linha">
+            {perfilRanking.participa ? <>
+              <button className="botao botao--principal" type="button" onClick={() => void salvarApelido(apelidoRanking)} disabled={salvandoRanking || apelidoRanking.trim() === (perfilRanking.apelido ?? '')}>Salvar apelido</button>
+              {perfilRanking.apelido && <button className="botao botao--fantasma" type="button" onClick={() => { definirApelidoRanking(''); void salvarApelido('') }} disabled={salvandoRanking}>Usar meu nome</button>}
+              <button className="botao botao--fantasma" type="button" onClick={() => { if (window.confirm('Sair do ranking? Seu nome deixa de aparecer para os outros. Você pode voltar quando quiser.')) void alterarParticipacao(false) }} disabled={salvandoRanking}>Sair do ranking</button>
+            </> : <button className="botao botao--principal" type="button" onClick={() => void alterarParticipacao(true)} disabled={salvandoRanking}>Voltar ao ranking</button>}
+            <a className="botao botao--fantasma" href={href('/ranking')}>Ver ranking</a>
+          </div>
+          <p className="ct-nota">Deixe o apelido em branco para aparecer com o seu nome e a inicial do sobrenome. E-mail, WhatsApp e cidade nunca aparecem.</p>
+        </>}
       </section>
 
       <section className="ct-cartao">

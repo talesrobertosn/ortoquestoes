@@ -8,7 +8,8 @@ import { Medalha } from '../componentes/Medalha'
 import { CONQUISTAS, CONQUISTAS_SEQUENCIA, conquistaAtual, proximaConquista, type Conquista } from '../estado/conquistas'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
-import { MINIMO_RANKING, nomeNoRanking } from '../util/nomeRanking'
+import { MINIMO_RANKING } from '../util/nomeRanking'
+import { usarPerfilRanking } from '../conta/perfilRanking'
 
 type Periodo = 'geral' | 'semana'
 type LinhaRanking = { posicao: number; apelido: string; total: number; total_geral: number; eh_voce: boolean }
@@ -71,6 +72,7 @@ export function Ranking() {
   const [erro, definirErro] = useState(false)
 
   const meuTotal = Object.keys(contexto.respondidas).length
+  const { perfil: perfilRanking, carregado: perfilCarregado, nomeExibido } = usarPerfilRanking(sessao)
   const recordeSequencia = useMemo(() => calcularStreak(contexto.respondidas).recorde, [contexto.respondidas])
 
   useEffect(() => {
@@ -114,14 +116,18 @@ export function Ranking() {
       </div>
       {sessao && (
         <div className="rk-heroi__cartao">
-          {minhaPosicao ? <>
+          {perfilCarregado && !perfilRanking.participa ? <>
+            <span className="rk-heroi__rotulo">Você saiu do ranking</span>
+            <strong className="rk-heroi__posicao">Fora</strong>
+            <span className="rk-heroi__rotulo"><a href={href('/conta')}>Voltar ao ranking em Minha conta</a></span>
+          </> : minhaPosicao ? <>
             <span className="rk-heroi__rotulo">Sua posição {periodo === 'semana' ? 'na semana' : 'geral'}</span>
             <strong className="rk-heroi__posicao">#{minhaPosicao.posicao}</strong>
             <span className="rk-heroi__rotulo">{minhaPosicao.total.toLocaleString('pt-BR')} questões {periodo === 'semana' ? 'nos últimos 7 dias' : 'respondidas'}</span>
           </> : meuTotal < MINIMO_RANKING ? <>
             <span className="rk-heroi__rotulo">Você entra no ranking com {MINIMO_RANKING} questões</span>
             <strong className="rk-heroi__posicao">Faltam {MINIMO_RANKING - meuTotal}</strong>
-            <span className="rk-heroi__rotulo">Você vai aparecer como {nomeNoRanking(String(sessao?.user.user_metadata?.nome ?? ''), String(sessao?.user.user_metadata?.sobrenome ?? ''))}</span>
+            <span className="rk-heroi__rotulo">Você vai aparecer como {nomeExibido}</span>
           </> : <>
             <span className="rk-heroi__rotulo">Seu emblema</span>
             <strong className="rk-heroi__posicao">{meuEmblema?.rotulo ?? '...'}</strong>
@@ -196,7 +202,7 @@ export function Ranking() {
       <ul>
         <li><span><Icone nome="grafico" tamanho={18} /></span><div><strong>Conta volume, não acerto.</strong> Cada questão diferente respondida soma um ponto. Refazer a mesma questão não soma de novo.</div></li>
         <li><span><Icone nome="calendario" tamanho={18} /></span><div><strong>Geral ou últimos 7 dias.</strong> O geral mostra o acumulado; a semana dá chance a quem começou agora.</div></li>
-        <li><span><Icone nome="usuario" tamanho={18} /></span><div><strong>Todo mundo com conta participa.</strong> Entra quem respondeu pelo menos {MINIMO_RANKING} questões, com o nome do cadastro e a inicial do sobrenome (ajuste em <a href={href('/conta')}>Minha conta</a>). E-mail, telefone e cidade nunca aparecem.</div></li>
+        <li><span><Icone nome="usuario" tamanho={18} /></span><div><strong>Todo mundo com conta participa.</strong> Entra quem respondeu pelo menos {MINIMO_RANKING} questões, com o apelido que escolher ou o nome do cadastro e a inicial do sobrenome. Em <a href={href('/conta')}>Minha conta</a> você troca o apelido ou sai do ranking. E-mail, telefone e cidade nunca aparecem.</div></li>
         <li><span><Icone nome="medalha" tamanho={18} /></span><div><strong>Emblemas são para sempre.</strong> Os de questões aparecem ao lado do seu nome; os de sequência contam o seu recorde de dias seguidos com pelo menos {META_STREAK_DIARIA} questões.</div></li>
       </ul>
     </section>
