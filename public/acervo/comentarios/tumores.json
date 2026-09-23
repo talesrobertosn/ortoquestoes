@@ -1894,212 +1894,194 @@
   "conferido": false
  },
  "tumores-0157": {
-  "conceito": "O caso reúne os elementos do MIELOMA MÚLTIPLO. IDADE E SEXO: homem de 55 anos, o mieloma tem mediana entre 65 e 70 anos, com predomínio masculino, e é a neoplasia maligna PRIMÁRIA mais comum do osso. ETNIA: a incidência é cerca de DUAS VEZES MAIOR em pessoas negras, uma das associações étnicas mais consistentes em oncologia. QUADRO: dor na coluna com bandeira vermelha, sem déficit neurológico. IMAGEM: lesão LÍTICA BEM DELIMITADA, em saca-bocado, SEM ESCLEROSE reativa e sem reação periosteal, no CORPO vertebral, porque o plasmócito ativa osteoclastos sem estimular osteoblastos, de modo que o osso é destruído sem qualquer tentativa de reparo. Daí decorre um dado prático fundamental: a CINTILOGRAFIA ÓSSEA É FRIA no mieloma, e por isso o rastreio se faz por inventário ósseo radiográfico, tomografia de baixa dose de corpo inteiro ou ressonância, nunca por cintilografia. A investigação segue com eletroforese de proteínas séricas e urinárias, imunofixação, cadeias leves livres, cálcio, creatinina, hemograma e mielograma.",
-  "correta": "Mieloma múltiplo.",
+  "conceito": "### Cada dado aponta para o mieloma\n- **Homem, 55 anos:** o mieloma é doença do adulto mais velho, com predomínio masculino. É a ==neoplasia maligna primária mais comum do osso==.\n- **Negro:** a incidência é cerca de **duas vezes maior** em pessoas negras, uma das associações étnicas mais consistentes em oncologia.\n- **Dor na coluna com bandeira vermelha**, sem déficit.\n- **Lesão lítica bem delimitada, sem esclerose**, no **corpo vertebral**: o padrão em saca-bocado.\n\n### Por que não há esclerose\nO plasmócito **ativa osteoclastos** e **inibe osteoblastos**. O osso é destruído sem tentativa de reparo.\n\n### A consequência prática\n- ==Cintilografia costuma ser fria==.\n- Rastreio por radiografias do esqueleto, **tomografia de corpo inteiro em baixa dose**, ressonância ou PET-CT.\n\n### Investigação\nEletroforese de proteínas (sangue e urina), **imunofixação**, **cadeias leves livres**, cálcio, creatinina, hemograma e **mielograma**.\n\n> **Na prova:** homem negro de meia-idade com lesão lítica em saca-bocado na vértebra: ==mieloma múltiplo==.",
+  "correta": "**Mieloma múltiplo.**\n- Idade, sexo, etnia e lesão lítica em saca-bocado sem esclerose no corpo vertebral convergem para ele.",
   "incorretas": {
-   "A": "A fratura por insuficiência produz colapso do corpo vertebral com linha de fratura e edema, não lesão lítica bem delimitada em saca-bocado.",
-   "B": "Metástases de tireoide e rim também são líticas, mas costumam ser mais destrutivas e mal delimitadas, e a apresentação vertebral isolada em paciente sem primário conhecido nessa faixa etária torna o mieloma mais provável.",
-   "D": "O cisto ósseo simples é lesão da criança e do adolescente, e não ocorre em corpo vertebral."
+   "A": "**Outro padrão.**\n- A fratura por insuficiência colapsa o corpo vertebral, com linha de fratura e edema.\n- Não produz lesão lítica em saca-bocado.",
+   "B": "**Possível, mas menos provável.**\n- Metástases de rim e tireoide são líticas, mas costumam ser mais destrutivas e expansivas.\n- Sem primário conhecido, o perfil do caso favorece mieloma.",
+   "D": "**Lesão da criança.**\n- O cisto ósseo simples é da infância e da adolescência.\n- Não ocorre em corpo vertebral."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0158": {
-  "conceito": "Três dados apontam para o CISTO ÓSSEO ANEURISMÁTICO. IDADE: 18 anos, cerca de 80% dos casos ocorrem abaixo dos 20. LOCALIZAÇÃO: ELEMENTOS POSTERIORES da coluna, que é onde ele se instala (o corpo vertebral é território de hemangioma, metástase, mieloma e granuloma eosinofílico). ASPECTO: lesão expansiva com aspecto multiloculado em FAVO DE MEL ou bolha de sabão, com septos e níveis líquido-líquido. O aspecto \"agressivo\" que preocupa é típico (a lesão insufla, adelgaça a cortical e pode simular malignidade), e é justamente por isso que a biópsia é obrigatória: um terço dos casos é SECUNDÁRIO, formando-se sobre outra lesão, e o grande impostor é o OSTEOSSARCOMA TELANGIECTÁSICO, de imagem praticamente idêntica. Sobre a conduta: além da curetagem com adjuvante (precedida de embolização, porque a lesão é hipervascular e sangra muito), existe tratamento não cirúrgico descrito por INJEÇÃO INTRALESIONAL DE CALCITONINA associada a metilprednisolona, útil sobretudo em lesões de acesso cirúrgico difícil, como as da coluna e da pelve. O DENOSUMABE, por sua vez, é a droga do TUMOR DE CÉLULAS GIGANTES, cuja biologia depende do RANKL, e o tumor de células gigantes, além disso, ocorreria na epífise de osso longo em adulto com fise fechada, não nos elementos posteriores de uma paciente de 18 anos.",
-  "correta": "Cisto ósseo aneurismático, com possibilidade de tratamento por calcitonina intralesional.",
+  "conceito": "### Três dados apontam para cisto ósseo aneurismático\n- **Idade:** 18 anos. A grande maioria dos casos ocorre antes dos 20.\n- **Local:** ==elementos posteriores== da coluna. O corpo vertebral é território de hemangioma, metástase, mieloma e granuloma eosinofílico.\n- **Aspecto:** lesão expansiva, multiloculada, em **favo de mel** ou bolha de sabão, com septos e **níveis líquido-líquido**.\n\n### O aspecto agressivo é típico\nA lesão insufla, afina a cortical e pode simular malignidade. Por isso a **biópsia é obrigatória**:\n- Parte dos casos é **secundária** a outra lesão.\n- O grande impostor é o **osteossarcoma telangiectásico**, de imagem quase idêntica.\n\n### Tratamento\n- **Curetagem** com adjuvante, precedida de **embolização** (a lesão sangra muito).\n- Em lesões de acesso difícil (coluna, pelve), há tratamento não cirúrgico descrito com ==calcitonina intralesional== associada a corticoide.\n- Também há relatos com embolização seriada e escleroterapia.\n\n### Por que não denosumabe\nO **denosumabe** é a droga do **tumor de células gigantes**, cuja biologia depende do RANKL. E o tumor de células gigantes seria epifisário, em adulto com fise fechada.\n\n> **Na prova:** jovem com lesão expansiva em favo de mel no arco posterior: ==cisto ósseo aneurismático==; entre as opções, calcitonina.",
+  "correta": "**Cisto ósseo aneurismático, calcitonina.**\n- Jovem, elementos posteriores, lesão em favo de mel.\n- A calcitonina intralesional é opção descrita em lesões de acesso difícil.",
   "incorretas": {
-   "A": "Erra o diagnóstico e a droga: o tumor de células gigantes é epifisário e de adulto com fise fechada.",
-   "B": "Acerta o diagnóstico, mas o denosumabe é a droga do tumor de células gigantes, por agir sobre a via RANK-RANKL.",
-   "C": "Erra o diagnóstico, ainda que acerte a droga."
+   "A": "**Erra o diagnóstico.**\n- O tumor de células gigantes é epifisário, em adulto com fise fechada.\n- Na coluna, prefere o sacro.",
+   "B": "**Diagnóstico certo, droga errada.**\n- O denosumabe age na via **RANK-RANKL**, do tumor de células gigantes.",
+   "C": "**Erra o diagnóstico.**\n- A droga até aparece no tratamento do cisto aneurismático, mas o diagnóstico está errado."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0159": {
-  "conceito": "O desmoide cortical (defeito cortical distal do fêmur, ou avulsão fibrosa cortical) é uma PSEUDOLESÃO, e não um tumor. Ele se localiza na face POSTEROMEDIAL da METÁFISE DISTAL DO FÊMUR, exatamente na inserção do ADUTOR MAGNO e da cabeça medial do gastrocnêmio, e resulta da tração repetida dessas inserções sobre o periósteo em adolescentes ativos, entre 10 e 15 anos. É ASSINTOMÁTICO, achado incidental em radiografia feita por trauma, ou em ressonância pedida por outro motivo. E é justamente essa combinação que o torna perigoso: por estar na metáfise do fêmur distal, a mesma região onde nasce o osteossarcoma, e por poder captar contraste e mostrar edema na ressonância, ele JÁ FOI BIOPSIADO E TRATADO COMO SARCOMA mais de uma vez. O reconhecimento se faz pela localização característica e pela ausência de massa de partes moles e de destruição cortical franca. A conduta é NÃO FAZER NADA, nem biópsia, nem cirurgia, nem seguimento agressivo: a lesão regride com a maturidade esquelética.",
-  "correta": "Geralmente achado de exame, na região posteromedial DISTAL do fêmur, por tração do adutor magno.",
+  "conceito": "### Uma pseudolesão\nO desmoide cortical (avulsão fibrosa cortical) **não é tumor**. Fica na ==face posteromedial da metáfise distal do fêmur==, onde se inserem:\n- o **adutor magno**;\n- a cabeça medial do **gastrocnêmio**.\n\nResulta da **tração repetida** dessas inserções em adolescentes ativos.\n\n### Como se apresenta\n- **Assintomático**.\n- **Achado de exame**: radiografia feita por trauma ou ressonância pedida por outro motivo.\n\n### O perigo\n- Está na mesma região do **osteossarcoma**.\n- Pode ter edema e captar contraste na ressonância.\n- Já foi biopsiado e tratado como sarcoma.\n\nReconhece-se pela **localização típica** e pela ausência de massa de partes moles e de destruição cortical.\n\n### Conduta\n**Não mexer**: sem biópsia, sem cirurgia. Regride com a maturidade esquelética.\n\n> **Na prova:** desmoide cortical é ==achado incidental, posteromedial, fêmur distal, adutor magno==.",
+  "correta": "**Achado de exame, posteromedial no fêmur distal, por tração do adutor magno.**\n- É a definição completa: incidental, localização típica e mecanismo.",
   "incorretas": {
-   "B": "A queixa não é dor (a lesão é assintomática), e a topografia é distal, não proximal.",
-   "C": "Acerta o caráter incidental, mas erra a localização e o músculo, o iliopsoas se insere no trocanter menor, na região proximal.",
-   "D": "Acerta a topografia e o músculo, mas a lesão é assintomática: dor nessa região merece outra investigação."
+   "B": "**Erra a clínica e o local.**\n- A lesão é **assintomática**.\n- Fica no fêmur **distal**, não proximal.",
+   "C": "**Erra o local e o músculo.**\n- O caráter incidental está certo.\n- O iliopsoas se insere no trocanter menor, no fêmur **proximal**.",
+   "D": "**Erra a clínica.**\n- Local e músculo estão certos.\n- A lesão é **assintomática**: dor ali merece outra investigação."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0160": {
-  "conceito": "Este é um daqueles achados em que o exame \"normal\" é a informação importante. Na doença de Paget NÃO COMPLICADA, a medula óssea do osso acometido mantém seu conteúdo de GORDURA, e por isso o sinal na ressonância permanece essencialmente PRESERVADO, hipersinal em T1 (característico da gordura) e comportamento habitual em T2, sem edema e sem massa. O que a ressonância mostra são as alterações ESTRUTURAIS: cortical espessada, trabeculado grosseiro, osso expandido. A utilidade prática disso é enorme: qualquer SUBSTITUIÇÃO DO SINAL DE GORDURA (hipossinal em T1 com hipersinal em T2, realce pelo contraste, massa de partes moles ou destruição cortical) em osso pagético significa que algo mais está acontecendo, e a hipótese principal é a TRANSFORMAÇÃO SARCOMATOSA. Como o osteossarcoma pagético é o subtipo de pior prognóstico (sobrevida em cinco anos de 5 a 10%) e como a lesão surge sobre osso já deformado e cronicamente doloroso, esse é o sinal de alarme que decide o desfecho. Complementam a suspeita a mudança do padrão da dor, a dor de repouso e uma nova elevação da fosfatase alcalina em paciente antes estável.",
-  "correta": "Sem alterações significativas de sinal em T1 e T2, a medula gordurosa é preservada.",
+  "conceito": "### O exame \"normal\" é a informação\nNo Paget **não complicado**, a medula do osso acometido mantém sua **gordura**. Por isso o sinal na ressonância fica ==essencialmente preservado==:\n- **T1:** sinal de gordura (alto), como na medula normal.\n- **T2:** comportamento habitual, **sem edema** e sem massa.\n\nO que aparece são alterações **estruturais**: cortical espessa, trabeculado grosseiro, osso expandido.\n\n### Por que isso importa\nQualquer **substituição do sinal de gordura** no osso pagético indica outra coisa acontecendo:\n- Sinal baixo em T1 com sinal alto em T2.\n- Realce pelo contraste.\n- Massa de partes moles ou destruição cortical.\n\nA hipótese principal é a **transformação sarcomatosa** (osteossarcoma pagético), de prognóstico muito ruim.\n\n### Outros sinais de alarme\n- Mudança no padrão da dor, **dor de repouso**.\n- Nova elevação da **fosfatase alcalina** em paciente antes estável.\n\n> **Na prova:** Paget não complicado na ressonância ==não altera o sinal== em T1 e T2; sinal alterado é alerta de sarcoma.",
+  "correta": "**Sem alterações em T1 e T2.**\n- A medula gordurosa é preservada no Paget não complicado.\n- Sinal alterado sugere complicação, sobretudo sarcoma.",
   "incorretas": {
-   "A": "O hipersinal em T1 corresponde à gordura medular preservada, e por isso a alternativa não está errada em si, mas descrever a doença apenas por ele deixa de fora o T2, e a resposta esperada é a preservação global do sinal.",
-   "B": "Hipersinal em T2 indicaria edema ou substituição medular, o que sugere complicação, e não Paget simples.",
-   "C": "Hipossinal em T1 e T2 é o padrão do osso esclerótico denso ou de fibrose, e não o do osso pagético não complicado."
+   "A": "**Incompleta.**\n- O sinal alto em T1 corresponde à gordura preservada, igual à medula normal.\n- A resposta esperada é a preservação global do sinal, em T1 e em T2.",
+   "B": "**Sugere complicação.**\n- Sinal alto em T2 indicaria edema ou substituição medular.\n- Não é o padrão do Paget simples.",
+   "C": "**Padrão de outra coisa.**\n- Sinal baixo em T1 e T2 é típico de osso muito esclerótico ou fibrose.\n- Não do osso pagético não complicado."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0161": {
-  "conceito": "O diagnóstico histológico do osteossarcoma exige **osteoide produzido diretamente por células malignas**. Na lâmina, células pleomórficas e hipercromáticas estão entremeadas por matriz eosinofílica irregular, o osteoide tumoral.",
-  "correta": "**B, osteossarcoma.** A produção de osteoide por células neoplásicas malignas é o achado definidor.",
+  "conceito": "### O que a lâmina mostra\n- Células **pleomórficas**, com núcleos grandes, hipercromáticos e irregulares.\n- Entre elas, faixas de **matriz eosinofílica** irregular, rendilhada.\n\n### O critério do osteossarcoma\nO diagnóstico exige ==osteoide produzido diretamente por células malignas==. Não importa a quantidade: basta haver osteoide tumoral.\n\n### Subtipos histológicos do convencional\n- **Osteoblástico**, o mais comum.\n- **Condroblástico.**\n- **Fibroblástico.**\n\nTodos têm, em algum ponto, osteoide produzido pelas células tumorais.\n\n### Para comparar\n- **Condrossarcoma:** matriz cartilaginosa em lóbulos, condrócitos atípicos em lacunas.\n- **Ewing:** células redondas pequenas e azuis, uniformes, sem matriz.\n- **Adamantinoma:** ninhos epiteliais em estroma fibroso, na tíbia.\n\n> **Na prova:** células malignas pleomórficas produzindo osteoide é ==osteossarcoma==.",
+  "correta": "**Osteossarcoma.**\n- Células malignas pleomórficas **produzindo osteoide**, o achado que define o tumor.",
   "incorretas": {
-   "A": "Condrossarcoma produz matriz cartilaginosa lobulada, com condrócitos atípicos em lacunas, e não osteoide maligno.",
-   "C": "Ewing é tumor de pequenas células redondas, sem produção de osteoide.",
-   "D": "Adamantinoma apresenta padrão epitelial em ninhos dentro de estroma fibroso e predomina na tíbia."
+   "A": "**Matriz cartilaginosa.**\n- O condrossarcoma tem lóbulos de cartilagem com condrócitos atípicos em lacunas.",
+   "C": "**Células redondas, sem matriz.**\n- O Ewing tem células pequenas, redondas e uniformes, sem osteoide.",
+   "D": "**Padrão epitelial.**\n- O adamantinoma mostra ninhos epiteliais em estroma fibroso."
   },
   "referencias": [
    "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
    "Fletcher CDM et al. Diagnostic Histopathology of Tumors. 5th ed. Elsevier; 2021."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "tumores-0162": {
-  "conceito": "É preciso ler com cuidado as duas palavras que a questão embute. PRIMÁRIO significa nascido no próprio osso, o que exclui as metástases, que são de longe as lesões malignas mais comuns de qualquer sítio ósseo, sacro incluído. E o SACRO tem um tumor primário maligno próprio: o CORDOMA, derivado de restos da NOTOCORDA, que ocupa a LINHA MÉDIA e concentra cerca de metade dos casos na região sacrococcígea (os demais na base do crânio e na coluna móvel). Perfil: adulto de meia-idade e idoso, quinta à sétima décadas, com predomínio masculino, crescimento lento e dor lombar baixa inespecífica por meses ou anos antes do diagnóstico. Histologia com células FISALÍFERAS em matriz mixoide, positivas para braquiúria, citoqueratina e S100. Tratamento: ressecção EM BLOCO com margem ampla, cujo custo neurológico depende do nível (a preservação bilateral de S3 costuma garantir continência), com radioterapia por partículas quando a margem é comprometida ou o tumor é irressecável; a quimioterapia convencional não funciona. Para completar o mapa do sacro: o tumor BENIGNO mais comum ali é o TUMOR DE CÉLULAS GIGANTES.",
-  "correta": "É o tumor maligno primário mais comum do sacro.",
+  "conceito": "### Leia as duas palavras\n- **Primário:** nascido no próprio osso. Exclui as **metástases**, que são de longe as lesões malignas mais comuns de qualquer osso, inclusive o sacro.\n- **Sacro:** tem um tumor maligno primário próprio.\n\n### O cordoma\n- ==Tumor maligno primário mais comum do sacro==.\n- Deriva de **restos da notocorda**, na **linha média**.\n- Cerca de metade dos casos na região **sacrococcígea**; o resto na base do crânio e na coluna móvel.\n\n### O perfil\n- Adulto de meia-idade e idoso, predomínio masculino.\n- Crescimento **lento**, com dor lombar baixa inespecífica por meses ou anos.\n- Células **fisalíferas** em matriz mixoide; **brachyury**, citoqueratina e S100 positivos.\n\n### Tratamento\n- **Ressecção em bloco** com margem ampla. O custo neurológico depende do nível sacral.\n- Radioterapia com **partículas** quando a margem é comprometida ou o tumor é irressecável.\n- Quimioterapia convencional não funciona.\n\n### Para completar\nO tumor **benigno** mais lembrado no sacro é o **tumor de células gigantes**.\n\n> **Na prova:** cordoma é o ==primário maligno mais comum do sacro==.",
+  "correta": "**É o tumor maligno primário mais comum do sacro.**\n- Nasce de restos da notocorda, na linha média.",
   "incorretas": {
-   "A": "Cordoma não é tumor secundário, e a coluna lombar não é sua sede principal.",
-   "B": "\"Secundário\" significa metastático, e o cordoma é primário.",
-   "D": "A sede é o sacro, não a coluna lombar; na coluna móvel ele é bem menos frequente, com preferência pela cervical."
+   "A": "**Não é secundário.**\n- Secundário significa metastático.\n- E a coluna lombar não é sede principal do cordoma.",
+   "B": "**Não é secundário.**\n- O cordoma é tumor **primário**.",
+   "D": "**Sede errada.**\n- O cordoma prefere o **sacro**.\n- Na coluna móvel é bem menos frequente, com preferência pela cervical."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0163": {
-  "conceito": "O **sinal do alvo** na ressonância é formado por centro de baixo sinal e periferia hiperintensa em T2, refletindo componente fibroso central e tecido mixoide periférico. Ele sugere tumor benigno da bainha do nervo.",
-  "correta": "**A, sinal do alvo, associado pelo gabarito ao schwannoma.** A lesão oval mostra o padrão concêntrico típico.",
+  "conceito": "### O que a imagem mostra\nRessonância axial em T2 da perna com lesão **oval**, bem delimitada, entre os músculos, com:\n- **Periferia de sinal alto**.\n- **Centro de sinal mais baixo**.\n\nÉ o ==sinal do alvo==.\n\n### O que ele representa\n- **Centro:** tecido fibroso e colágeno.\n- **Periferia:** componente mixoide.\n\nSugere **tumor benigno da bainha do nervo**. Aparece no schwannoma e no neurofibroma, e muitos autores o associam mais ao neurofibroma. O gabarito oficial desta questão indica o **schwannoma**.\n\n### O outro sinal das alternativas\n- **Split fat** (gordura dividida): uma borda de gordura envolvendo a massa, vista melhor em cortes longitudinais. Também é sinal de tumor neurogênico intermuscular.\n\n### Outros sinais neurogênicos\n- **Sinal da cauda:** nervo entrando e saindo da lesão.\n- **Sinal fascicular.**\n\n> **Na prova:** centro escuro com periferia clara em T2 é ==sinal do alvo==, de tumor de bainha neural.",
+  "correta": "**Sinal do alvo, schwannoma.**\n- A lesão mostra periferia clara e centro escuro em T2.\n- O gabarito associa o sinal ao schwannoma; ele também é descrito no neurofibroma.",
   "incorretas": {
-   "B": "O split-fat sign é uma borda de gordura envolvendo uma massa intermuscular em cortes longitudinais, e não a arquitetura concêntrica observada.",
-   "C": "Lipoma acompanha o sinal da gordura em todas as sequências e não apresenta alvo neurogênico.",
-   "D": "Além de identificar incorretamente o sinal, associa-o a lipoma."
+   "B": "**Outro sinal.**\n- O split fat é uma borda de gordura envolvendo a massa, melhor vista em cortes longitudinais.\n- Não é a arquitetura concêntrica da imagem.",
+   "C": "**Lipoma segue a gordura.**\n- O lipoma tem sinal de gordura em todas as sequências.\n- Não forma alvo.",
+   "D": "**Erra os dois.**\n- Identifica mal o sinal e o associa ao lipoma."
   },
   "alerta": "O sinal do alvo é classicamente mais associado ao **neurofibroma**, embora possa ocorrer em schwannoma. A imagem favorece tumor de bainha nervosa, mas o subtipo não deve ser definido isoladamente por esse sinal.",
   "referencias": [
    "Murphey MD et al. Imaging of musculoskeletal neurogenic tumors. Radiographics. 1999;19:1253-1280.",
    "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "baixo",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-23",
+  "conferido": false
  },
  "tumores-0164": {
-  "conceito": "A condromatose sinovial é a formação de nódulos cartilaginosos dentro da membrana sinovial, que se destacam e viram corpos livres, podendo calcificar e ossificar. A articulação mais acometida é o JOELHO, com mais da metade dos casos, seguida de quadril, cotovelo e ombro, e o paciente típico é ADULTO entre a terceira e a quinta décadas, com dor, derrame, crepitação e episódios de BLOQUEIO articular pelos corpos livres. MILGRAM descreveu três fases, e elas orientam a cirurgia: FASE 1, doença sinovial ativa SEM corpos livres; FASE 2, de transição, com nódulos na sinovial E corpos livres; FASE 3, apenas corpos livres, com sinovial já quiescente. Nas fases 1 e 2 faz-se sinovectomia associada à remoção dos corpos livres, porque a sinovial ainda produz novos nódulos; na fase 3 basta remover os corpos livres. Nota que vale conhecer: descrita classicamente como METAPLASIA, ela hoje é classificada pela Organização Mundial da Saúde entre os tumores condrogênicos, após a descoberta de rearranjos recorrentes do gene FN1, mas a resposta esperada em prova continua sendo a descrição clássica.",
-  "correta": "Joelho.",
+  "conceito": "### O que é\nA condromatose sinovial é a formação de **nódulos cartilaginosos** na membrana sinovial, que se soltam e viram **corpos livres**, podendo calcificar e ossificar.\n\n### Onde e em quem\n- Articulação mais acometida: ==joelho==, com mais da metade dos casos.\n- Depois: quadril, cotovelo e ombro.\n- **Adultos**, entre a terceira e a quinta décadas.\n- Dor, **derrame**, crepitação e episódios de **bloqueio** pelos corpos livres.\n\n### As fases de Milgram\n- **Fase 1:** doença sinovial ativa, **sem** corpos livres.\n- **Fase 2:** transição, com nódulos na sinovial **e** corpos livres.\n- **Fase 3:** só corpos livres, sinovial quiescente.\n\n### Tratamento pela fase\n- **Fases 1 e 2:** **sinovectomia** + retirada dos corpos livres (a sinovial ainda produz nódulos).\n- **Fase 3:** retirar os corpos livres basta.\n\n### Uma nota\nDescrita classicamente como metaplasia, hoje é classificada entre os **tumores condrogênicos benignos**, pela presença de alterações genéticas recorrentes.\n\n> **Na prova:** condromatose sinovial é mais comum no ==joelho==.",
+  "correta": "**Joelho.**\n- Responde por mais da metade dos casos de condromatose sinovial.",
   "incorretas": {
-   "A": "O ombro é acometido, mas fica bem atrás do joelho em frequência.",
-   "B": "O tornozelo é sede pouco comum.",
-   "D": "O punho é sede rara; nas mãos, a forma extra-articular (tenossinovial) é mais frequente que a articular."
+   "A": "**Bem atrás.**\n- O ombro é acometido, mas com frequência muito menor que o joelho.",
+   "B": "**Pouco comum.**\n- O tornozelo é sede incomum.",
+   "D": "**Rara.**\n- O punho é sede rara.\n- Na mão, a forma extra-articular (tenossinovial) é mais comum que a articular."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0165": {
-  "conceito": "Na sinovite vilonodular pigmentada (hoje TUMOR TENOSSINOVIAL DE CÉLULAS GIGANTES), a forma DIFUSA produz uma sinovial hipertrofiada que preenche todos os recessos articulares e passa a comprimir o osso a partir de dentro. O resultado radiográfico da doença avançada é a EROSÃO ÓSSEA, com duas características que valem como assinatura: as erosões são SUBCONDRAIS, de bordas escleróticas bem definidas, e ocorrem em AMBOS OS LADOS da articulação (erosões em espelho), e, crucialmente, com PRESERVAÇÃO DO ESPAÇO ARTICULAR e SEM osteopenia periarticular até fases tardias, o que a separa da artrite reumatoide. Nas articulações de cápsula apertada, como o QUADRIL, as erosões são mais precoces e mais graves, porque a pressão intra-articular sobe rapidamente; no joelho, de cápsula complacente, a doença tende a crescer para os recessos antes de erodir o osso. A ressonância dá o diagnóstico: focos de BAIXO SINAL em T1 E T2, com artefato de suscetibilidade que se acentua no eco gradiente, reflexo da hemossiderina depositada pelas hemartroses de repetição.",
-  "correta": "Erosão óssea.",
+  "conceito": "### O que acontece na doença avançada\nNa sinovite vilonodular pigmentada (hoje **tumor tenossinovial de células gigantes**, forma difusa), a sinovial hipertrofiada preenche os recessos e passa a **comprimir o osso** por dentro. O resultado radiográfico é a ==erosão óssea==.\n\n### A assinatura das erosões\n- **Subcondrais**, de bordas **escleróticas** bem definidas.\n- Dos **dois lados** da articulação (em espelho).\n- **Espaço articular preservado** e **sem osteopenia** periarticular até fases tardias. É isso que a separa da artrite reumatoide.\n\n### Cápsula apertada, erosão precoce\n- No **quadril**, a pressão intra-articular sobe rápido e as erosões aparecem cedo.\n- No **joelho**, de cápsula complacente, a doença cresce para os recessos antes de erodir.\n\n### A ressonância fecha\nFocos de **sinal baixo em T1 e T2**, com artefato que aumenta no **eco gradiente** (\"blooming\"), pela **hemossiderina** das hemartroses de repetição.\n\n> **Na prova:** sinovite vilonodular avançada dá ==erosões ósseas== subcondrais, com espaço articular preservado.",
+  "correta": "**Erosão óssea.**\n- A sinovial hipertrofiada comprime e erode o osso subcondral, dos dois lados da articulação.",
   "incorretas": {
-   "A": "Rarefação (osteopenia) periarticular é achado da artrite reumatoide, e sua AUSÊNCIA é justamente um dos dados que apontam para a sinovite vilonodular.",
-   "B": "Não há crescimento ósseo nem osteófitos característicos; o processo é erosivo, não proliferativo do osso.",
-   "C": "A radiografia pode ser normal nas fases iniciais, mas a pergunta é sobre a doença AVANÇADA, em que as erosões estão presentes."
+   "A": "**Achado da artrite reumatoide.**\n- A osteopenia periarticular é típica da artrite reumatoide.\n- Sua **ausência** ajuda a apontar sinovite vilonodular.",
+   "B": "**Não é proliferativo.**\n- O processo é **erosivo**, sem crescimento ósseo característico.",
+   "C": "**Só no início.**\n- A radiografia pode ser normal nas fases iniciais.\n- A pergunta é sobre a doença **avançada**."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0166": {
-  "conceito": "Enneking tem DOIS sistemas paralelos, e a confusão entre eles é a armadilha desta questão. Para tumores MALIGNOS usam-se algarismos ROMANOS com letra (IA, IB, IIA, IIB, III). Para tumores BENIGNOS usam-se algarismos ARÁBICOS, às vezes escritos com a letra B de benigno: B1 (ou 1) LATENTE (lesão inativa, que não cresce, com margem bem definida e esclerótica, e que costuma regredir sozinha; B2 (ou 2) ATIVA) cresce progressivamente, deforma a cortical, mas RESPEITA as barreiras naturais; B3 (ou 3) AGRESSIVA, rompe barreiras, invade partes moles, recidiva com frequência. Aplicando: o FIBROMA NÃO OSSIFICANTE é o exemplo clássico de lesão LATENTE (B1), que ossifica e desaparece com o crescimento; o TUMOR DE CÉLULAS GIGANTES é AGRESSIVO (B3), rompe a cortical e recidiva; e o ADAMANTINOMA nem entra nesse sistema, porque é MALIGNO de baixo grau, e seria classificado como IA ou IB. Sobra o CISTO ÓSSEO ANEURISMÁTICO, lesão que cresce, insufla e deforma a cortical, sendo habitualmente enquadrado como ATIVO (B2), embora vários autores o classifiquem como agressivo nas formas que rompem a cortical.",
-  "correta": "Cisto ósseo aneurismático como exemplo de lesão ativa (B2).",
+  "conceito": "### Dois sistemas de Enneking\n- **Malignos:** algarismos romanos com letra (IA, IB, IIA, IIB, III).\n- **Benignos:** algarismos arábicos (às vezes com B): **1, 2, 3**.\n\n### Os benignos\n- **B1, latente:** não cresce, margem bem definida e esclerótica, tende a regredir. Exemplo: **fibroma não ossificante**.\n- ==B2, ativa==: cresce e deforma a cortical, mas **respeita** as barreiras naturais. Exemplo habitual: **cisto ósseo aneurismático**.\n- **B3, agressiva:** rompe barreiras, invade partes moles, recidiva. Exemplo: **tumor de células gigantes**.\n\n### Onde está a armadilha\n- O **adamantinoma** é **maligno** de baixo grau. Entra no sistema dos malignos (IA ou IB), não na graduação dos benignos.\n- O cisto aneurismático pode ser classificado como agressivo nas formas que rompem a cortical, mas o exemplo clássico é B2.\n\n> **Na prova:** fibroma não ossificante é ==B1==, cisto aneurismático ==B2==, tumor de células gigantes ==B3==.",
+  "correta": "**Cisto aneurismático é um exemplo do grau B2.**\n- Cresce, insufla e deforma a cortical, mas costuma respeitar as barreiras naturais.",
   "incorretas": {
-   "A": "O fibroma não ossificante é latente (B1): não cresce indefinidamente, ossifica e desaparece com a maturidade esquelética.",
-   "C": "O tumor de células gigantes é agressivo (B3), e não latente, ele rompe barreiras e recidiva.",
-   "D": "O adamantinoma é MALIGNO de baixo grau e pertence ao sistema dos algarismos romanos, não à graduação dos benignos."
+   "A": "**É B1.**\n- O fibroma não ossificante é **latente**: ossifica e desaparece com a maturidade.",
+   "C": "**É B3.**\n- O tumor de células gigantes é **agressivo**: rompe barreiras e recidiva.",
+   "D": "**É maligno.**\n- O adamantinoma é maligno de baixo grau.\n- Pertence ao sistema dos malignos, não ao dos benignos."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0167": {
-  "conceito": "O HAMARTOMA LIPOFIBROMATOSO (lipofibroma intraneural) é uma lesão benigna em que tecido fibroadiposo maduro infiltra o epineuro e o perineuro, SEPARANDO os fascículos nervosos uns dos outros. É exatamente essa arquitetura que produz a imagem característica no corte AXIAL da ressonância: os fascículos aparecem como múltiplos pontos hipointensos imersos em gordura hiperintensa, desenhando um FAVO DE MEL, e, no corte longitudinal, o aspecto de CABO COAXIAL ou de espaguete. A lesão prefere o NERVO MEDIANO NO PUNHO, apresenta-se como massa fusiforme mole na face volar associada a síndrome do túnel do carpo, e em cerca de um terço dos casos vem com MACRODACTILIA do território mediano. O ponto que define a conduta: sendo infiltrativa e inseparável dos fascículos, a tentativa de ressecção causa déficit permanente, o tratamento é DESCOMPRESSÃO (liberação do túnel do carpo e epineurotomia), não excisão. E a imagem é tão característica que dispensa biópsia, o que evita a lesão nervosa que a própria biópsia causaria.",
-  "correta": "Hamartoma lipofibromatoso.",
+  "conceito": "### De onde vem o favo de mel\nNo ==hamartoma lipofibromatoso== (lipofibroma intraneural), tecido fibroadiposo infiltra o epineuro e o perineuro e **separa os fascículos**. Na ressonância:\n- **Corte axial:** fascículos como pontos escuros em meio à gordura clara, desenhando um **favo de mel**.\n- **Corte longitudinal:** aspecto de **cabo coaxial** ou espaguete.\n\n### O quadro\n- **Nervo mediano no punho** é a sede preferencial.\n- Massa fusiforme mole na face volar, com **síndrome do túnel do carpo**.\n- Em parte dos casos, **macrodactilia** no território do mediano.\n\n### Conduta\n- Lesão **infiltrativa**, inseparável dos fascículos: ressecar causa déficit permanente.\n- Tratamento: **descompressão** (liberação do túnel do carpo), não excisão.\n- A imagem é tão característica que **dispensa biópsia**.\n\n> **Na prova:** favo de mel (ou cabo coaxial) no nervo mediano é ==hamartoma lipofibromatoso==.",
+  "correta": "**Hamartoma lipofibromatoso.**\n- A gordura entre os fascículos cria o padrão em favo de mel no corte axial.",
   "incorretas": {
-   "A": "O neurofibroma tem o sinal do alvo (centro fibroso hipointenso com halo mixoide hiperintenso), e não o favo de mel.",
-   "B": "O schwannoma é uma massa excêntrica ao nervo, com sinal fascicular, e pode ser enucleado preservando os fascículos.",
-   "C": "O fibroma digital infantil é uma lesão cutânea nodular dos dedos do lactente, sem esse padrão de imagem.",
-   "E": "O tumor de células gigantes da bainha tendínea é a versão localizada da sinovite vilonodular: massa firme junto ao tendão, com hipossinal em T1 e T2 pela hemossiderina."
+   "A": "**Sinal do alvo.**\n- O neurofibroma mostra centro escuro e halo claro em T2, não favo de mel.",
+   "B": "**Massa excêntrica ao nervo.**\n- O schwannoma é encapsulado, com sinal fascicular, e pode ser enucleado.",
+   "C": "**Nódulo cutâneo do lactente.**\n- O fibroma digital infantil é lesão de pele dos dedos, sem esse padrão.",
+   "E": "**Sinal baixo pela hemossiderina.**\n- O tumor de células gigantes da bainha tendínea é massa firme junto ao tendão.\n- Mostra sinal baixo em T1 e T2."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0168": {
-  "conceito": "O sarcoma sinovial tem predileção pelas porções DISTAIS dos membros e pelas regiões PERIARTICULARES, e no membro superior isso significa a região do CARPO E DO METACARPO, ou seja, o punho e a palma da mão, mais que os dedos ou a raiz do membro. É o segundo sarcoma de partes moles mais comum em adolescentes e adultos jovens (15 a 40 anos), e é também o sarcoma que mais engana: cresce devagar, é frequentemente pequeno e bem delimitado, costuma DOER (ao contrário da maioria dos sarcomas) e apresenta CALCIFICAÇÕES na radiografia em cerca de 30% dos casos. O conjunto (nódulo pequeno, doloroso, calcificado, perto de uma articulação, em jovem) leva ao diagnóstico errado de cisto sinovial, tenossinovite, hematoma organizado ou miosite ossificante, com atraso diagnóstico que chega a dois anos. Daí a regra que essa questão serve para fixar: qualquer massa de partes moles da mão ou do punho que seja maior que 5 cm, profunda à fáscia, dolorosa ou que cresça exige RESSONÂNCIA E BIÓPSIA antes de qualquer excisão, porque uma excisão marginal feita às cegas contamina os planos e piora o prognóstico.",
-  "correta": "Região do metacarpo e do carpo.",
+  "conceito": "### Distal e perto de articulação\nO sarcoma sinovial prefere as porções **distais** dos membros e as regiões **periarticulares**. No membro superior, isso significa ==carpo e metacarpo==: punho e palma.\n\n### O sarcoma que mais engana\n- Adolescentes e **adultos jovens** (15 a 40 anos).\n- Cresce **devagar**, muitas vezes pequeno e bem delimitado.\n- Costuma **doer**.\n- **Calcificações** na radiografia em parte dos casos.\n\nNódulo pequeno, doloroso, calcificado, perto da articulação, em jovem: vira cisto sinovial, tenossinovite ou hematoma organizado, e o diagnóstico atrasa.\n\n### A regra que decorre\nMassa de partes moles da mão ou do punho **maior que 5 cm**, **profunda** à fáscia, **dolorosa** ou que **cresce**: ==ressonância e biópsia antes de excisar==. Uma excisão às cegas contamina planos e piora o prognóstico.\n\n> **Na prova:** sarcoma sinovial no membro superior é mais ==carpo e metacarpo==.",
+  "correta": "**Do metacarpo e carpo.**\n- É a região distal e periarticular preferida pelo sarcoma sinovial no membro superior.",
   "incorretas": {
-   "A": "A falange média é sede pouco frequente.",
-   "B": "A falange proximal também é menos acometida que a região do carpo e do metacarpo.",
-   "D": "A extremidade distal do rádio é osso, e o sarcoma sinovial é tumor de partes moles.",
-   "E": "A extremidade proximal do rádio é localização proximal, contrária à preferência distal do tumor."
+   "A": "**Pouco frequente.**\n- A falange média é sede incomum.",
+   "B": "**Menos acometida.**\n- A falange proximal fica atrás da região do carpo e do metacarpo.",
+   "D": "**É osso.**\n- O sarcoma sinovial é tumor de **partes moles**.",
+   "E": "**Proximal.**\n- A extremidade proximal do rádio contraria a preferência distal do tumor."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0169": {
-  "conceito": "A CERATOSE ACTÍNICA (ou queratose solar) é a lesão precursora do CARCINOMA ESPINOCELULAR (de células escamosas): mácula ou pápula áspera, eritematosa e descamativa, em pele cronicamente exposta ao sol, dorso das mãos, antebraços, face, couro cabeludo calvo, orelhas. Ela representa uma displasia da epiderme, e cerca de 1 a 10% das lesões progridem para carcinoma invasivo; o carcinoma in situ, estágio intermediário, é a doença de Bowen. Isso interessa ao ortopedista por dois motivos práticos: o dorso da mão é uma das sedes mais frequentes, e essas lesões aparecem no exame de rotina de pacientes idosos que consultam por outra queixa; e o carcinoma espinocelular é o tumor maligno de pele mais comum da MÃO, com risco aumentado em cicatrizes crônicas, queimaduras e feridas que não fecham, a chamada ÚLCERA DE MARJOLIN. Regra prática: ferida crônica da mão ou do pé que não cicatriza em semanas, com bordas elevadas e endurecidas, precisa de biópsia, e não de mais um curativo.",
-  "correta": "Ceratose actínica.",
+  "conceito": "### A precursora\nA ==ceratose actínica== (queratose solar) é a lesão precursora do **carcinoma espinocelular**:\n- Mácula ou pápula **áspera**, eritematosa e descamativa.\n- Em pele cronicamente exposta ao **sol**: dorso das mãos, antebraços, face, couro cabeludo, orelhas.\n- Representa **displasia** da epiderme; uma parcela progride para carcinoma invasivo.\n- O carcinoma **in situ** é a doença de **Bowen**.\n\n### Por que interessa ao ortopedista\n- O **dorso da mão** é sede frequente, e essas lesões aparecem em idosos que consultam por outra queixa.\n- O carcinoma espinocelular é o tumor maligno de pele **mais comum da mão**.\n- Risco maior em **cicatrizes crônicas**, queimaduras e feridas que não fecham: a **úlcera de Marjolin**.\n\n### Regra prática\nFerida crônica da mão ou do pé que não cicatriza em semanas, com bordas elevadas e endurecidas: **biópsia**, não mais um curativo.\n\n> **Na prova:** precursora do carcinoma espinocelular é a ==ceratose actínica==.",
+  "correta": "**A ceratose actínica.**\n- É displasia da epiderme por exposição solar crônica, precursora do carcinoma espinocelular.",
   "incorretas": {
-   "A": "A verruga vulgar é lesão viral (HPV), benigna, sem potencial de transformação nesse sentido.",
-   "B": "O dermatofibroma é uma proliferação fibro-histiocítica benigna da derme, sem transformação maligna.",
-   "D": "O nevo melanocítico é precursor do MELANOMA, não do carcinoma espinocelular.",
-   "E": "O granuloma piogênico é uma proliferação vascular reativa, benigna, frequentemente pós-traumática."
+   "A": "**Viral e benigna.**\n- A verruga vulgar (HPV) não é precursora do carcinoma espinocelular nesse contexto.",
+   "B": "**Benigno.**\n- O dermatofibroma é proliferação fibro-histiocítica da derme, sem transformação maligna.",
+   "D": "**Precursor de outro tumor.**\n- O nevo melanocítico se relaciona ao **melanoma**.",
+   "E": "**Reativo.**\n- O granuloma piogênico é proliferação vascular benigna, muitas vezes após trauma."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0170": {
-  "conceito": "O mieloma múltiplo é uma proliferação clonal de plasmócitos que produz uma imunoglobulina monoclonal (a proteína M), e o laboratório reflete isso ponto a ponto. NA ELETROFORESE DE PROTEÍNAS SÉRICAS aparece um PICO MONOCLONAL (não policlonal) na região gama, o chamado componente M. NA URINA aparecem as CADEIAS LEVES LIVRES monoclonais, kappa ou lambda, que são as PROTEÍNAS DE BENCE-JONES, assim chamadas por precipitarem entre 40 e 60 graus e se redissolverem à fervura, a reação descrita no século XIX. Elas importam clinicamente porque são nefrotóxicas: precipitam nos túbulos e causam o rim do mieloma. Detalhe técnico que decide condutas: a eletroforese SÉRICA pode ser NORMAL no mieloma de cadeias leves (cerca de 15 a 20% dos casos), porque as cadeias leves são filtradas e eliminadas pela urina, por isso a investigação obriga a eletroforese da URINA de 24 horas com imunofixação, e hoje a dosagem de cadeias leves livres séricas. O restante do quadro é o CRAB: hiperCalcemia, insuficiência Renal, Anemia e lesões ósseas (Bone).",
-  "correta": "Presença de proteínas anormais na urina (proteína de Bence-Jones).",
+  "conceito": "### O laboratório do mieloma\nProliferação **clonal** de plasmócitos, que produz uma imunoglobulina **monoclonal** (proteína M).\n\n- **Eletroforese de proteínas séricas:** **pico monoclonal** (componente M), em geral na região gama.\n- **Urina:** ==cadeias leves livres monoclonais== (kappa ou lambda), as **proteínas de Bence-Jones**.\n\n### Por que as Bence-Jones importam\n- São **nefrotóxicas**: precipitam nos túbulos e causam o **rim do mieloma**.\n- No mieloma **de cadeias leves**, a eletroforese sérica pode ser **normal**, porque as cadeias são filtradas para a urina.\n- Por isso a investigação inclui **eletroforese e imunofixação da urina de 24 horas** e **cadeias leves livres séricas**.\n\n### O resto do quadro: CRAB\n- **Hiper**calcemia.\n- Insuficiência **renal**.\n- **Anemia**.\n- Lesões **ósseas**.\n\n> **Na prova:** mieloma é ==pico monoclonal e Bence-Jones na urina==. Nunca policlonal, nunca hipocalcemia.",
+  "correta": "**Proteínas anormais na urina (Bence-Jones).**\n- São as cadeias leves livres monoclonais, marca laboratorial do mieloma.",
   "incorretas": {
-   "A": "Hiperglobulinemia pode ocorrer, mas é achado inespecífico, o que caracteriza a doença é a natureza MONOCLONAL da imunoglobulina, e não a quantidade total.",
-   "B": "O pico é MONOCLONAL; picos policlonais indicam processos inflamatórios, infecciosos ou autoimunes crônicos.",
-   "C": "O padrão é HIPERcalcemia, pela reabsorção óssea osteoclástica, e ela é uma das urgências do diagnóstico.",
-   "D": "As proteínas encontradas são anormais por definição: monoclonais, produzidas por um único clone de plasmócitos."
+   "A": "**Inespecífico.**\n- Pode haver hiperglobulinemia, mas o que caracteriza o mieloma é a proteína **monoclonal**.",
+   "B": "**É monoclonal.**\n- Pico policlonal indica inflamação, infecção ou doença autoimune crônica.",
+   "C": "**É hipercalcemia.**\n- A reabsorção osteoclástica eleva o cálcio.",
+   "D": "**São anormais.**\n- As proteínas do mieloma são monoclonais, produzidas por um único clone."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0171": {
-  "conceito": "O cordoma deriva de restos da NOTOCORDA e ocupa a LINHA MÉDIA do neuroeixo. A distribuição segue os dois extremos da notocorda: cerca de 50% na região SACROCOCCÍGEA, 30 a 35% na esfeno-occipital (clivus) e o restante na coluna móvel, com preferência pela cervical. É tumor MALIGNO de baixo grau, de crescimento lento, com predomínio MASCULINO (cerca de 2 para 1) e pico entre a quinta e a sétima décadas. A lentidão explica a apresentação: DOR sacrococcígea ou lombar baixa inespecífica por meses ou anos, atribuída a lombalgia mecânica, as parestesias e a disfunção esfincteriana são TARDIAS, quando o tumor já comprime raízes. E a massa cresce sobretudo para ANTERIOR, para o espaço pré-sacral, o que a torna invisível à inspeção e palpável apenas ao TOQUE RETAL, exame obrigatório e frequentemente esquecido. Histologia com células FISALÍFERAS em matriz mixoide, positivas para braquiúria, citoqueratina e S100. Tratamento: ressecção EM BLOCO com margem ampla (o prognóstico depende quase inteiramente disso), com radioterapia por partículas (prótons, íons de carbono) quando a margem é comprometida; a quimioterapia convencional não funciona.",
-  "correta": "A maior parte se localiza no sacro e no cóccix.",
+  "conceito": "### Onde o cordoma fica\nDeriva de **restos da notocorda**, na **linha média**:\n- ==Sacro e cóccix==: cerca de metade dos casos.\n- **Base do crânio** (clivus): cerca de um terço.\n- **Coluna móvel**, preferindo a cervical: o restante.\n\n### O perfil\n- Tumor **maligno de baixo grau**, de crescimento lento.\n- Predomínio **masculino**.\n- Quinta à sétima décadas.\n\n### Como se apresenta\n- **Dor** sacrococcígea ou lombar baixa inespecífica, por meses ou anos.\n- **Parestesias** e disfunção esfincteriana são **tardias**.\n- A massa cresce para **anterior**, no espaço **pré-sacral**: invisível à inspeção, palpável no **toque retal**.\n\n### Histologia e tratamento\n- Células **fisalíferas** em matriz mixoide; **brachyury** positivo.\n- **Ressecção em bloco** com margem ampla, da qual o prognóstico depende.\n- Radioterapia com partículas se a margem é comprometida. Quimioterapia convencional não funciona.\n\n> **Na prova:** cordoma é ==sacrococcígeo==, maligno de baixo grau, masculino, com massa pré-sacral.",
+  "correta": "**A maior parte se localiza no sacro e no cóccix.**\n- Cerca de metade dos cordomas fica na região sacrococcígea.",
   "incorretas": {
-   "A": "É MALIGNO, e de BAIXO grau, a alternativa erra as duas coisas ao chamá-lo de benigno de alto grau.",
-   "B": "O predomínio é masculino, cerca de 2 para 1.",
-   "D": "As parestesias são tardias; o sintoma precoce é a dor inespecífica.",
-   "E": "A massa cresce predominantemente para ANTERIOR, no espaço pré-sacral, daí a importância do toque retal."
+   "A": "**Erra duas vezes.**\n- O cordoma é **maligno** e de **baixo** grau.",
+   "B": "**Predomínio masculino.**",
+   "D": "**São tardias.**\n- O sintoma precoce é a **dor** inespecífica.",
+   "E": "**Cresce para anterior.**\n- A massa ocupa o espaço **pré-sacral**, daí a importância do toque retal."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0172": {
-  "conceito": "A síndrome de Morquio (mucopolissacaridose tipo IV) tem DOIS subtipos, separados pela enzima deficiente e pelo mucopolissacarídeo acumulado. TIPO A (IV-A): deficiência de N-ACETILGALACTOSAMINA-6-SULFATASE (GALNS), com acúmulo de queratan sulfato e condroitin-6-sulfato; é a forma clássica e mais grave. TIPO B (IV-B): deficiência de BETA-GALACTOSIDASE, com acúmulo apenas de queratan sulfato; é a forma mais branda, com estatura menos comprometida. As duas são autossômicas recessivas e compartilham o fenótipo ortopédico, que é o que interessa aqui: nanismo de tronco curto, PLATISPONDILIA (corpos vertebrais achatados com projeção anterior central em bico), HIPOPLASIA DO ODONTOIDE com INSTABILIDADE ATLANTOAXIAL (a complicação mais temida, causa de mielopatia e de morte súbita, que obriga a radiografias dinâmicas e frequentemente a artrodese occipitocervical profilática), genu valgo grave, displasia do quadril, tórax em quilha e frouxidão ligamentar difusa. Ponto que separa Morquio das demais mucopolissacaridoses: a INTELIGÊNCIA É PRESERVADA e não há opacificação de córnea grosseira como em Hurler.",
-  "correta": "Beta-galactosidase.",
+  "conceito": "### Os dois tipos de Morquio (MPS IV)\n- **Tipo A:** deficiência de **N-acetilgalactosamina-6-sulfatase** (GALNS). Acumula queratan sulfato e condroitin-6-sulfato. Forma clássica e mais grave.\n- **Tipo B:** deficiência de ==beta-galactosidase==. Acumula queratan sulfato. Forma mais branda.\n\nAs duas são **autossômicas recessivas**.\n\n### O fenótipo ortopédico\n- Nanismo de **tronco curto**.\n- **Platispondilia**: vértebras achatadas com bico anterior central.\n- **Hipoplasia do odontoide** com **instabilidade atlantoaxial**: a complicação mais temida (mielopatia, morte súbita). Pede radiografias dinâmicas e muitas vezes **artrodese occipitocervical**.\n- **Geno valgo** grave, displasia do quadril, tórax em quilha.\n- **Frouxidão ligamentar** difusa.\n\n### O que separa de outras mucopolissacaridoses\n**Inteligência preservada**, ao contrário de Hurler e Sanfilippo.\n\n### As enzimas das outras alternativas\nSão do **Sanfilippo** (MPS III): heparan N-sulfatase (III-A), alfa-glucosaminida acetiltransferase (III-C), N-acetilglucosamina-6-sulfatase (III-D).\n\n> **Na prova:** Morquio B é ==beta-galactosidase==; Morquio A é GALNS.",
+  "correta": "**Beta-galactosidase.**\n- É a enzima deficiente no Morquio tipo B.",
   "incorretas": {
-   "A": "A N-acetilgalactosamina-6-sulfatase é a enzima deficiente no Morquio tipo A.",
-   "B": "A alfa-glucosaminida acetiltransferase é deficiente na síndrome de Sanfilippo tipo C (MPS III-C).",
-   "C": "A heparam N-sulfatase é deficiente no Sanfilippo tipo A.",
-   "E": "A N-acetilglucosamina-6-sulfatase é deficiente no Sanfilippo tipo D."
+   "A": "**Morquio A.**\n- A N-acetilgalactosamina-6-sulfatase é a enzima do tipo A.",
+   "B": "**Sanfilippo C.**\n- Alfa-glucosaminida acetiltransferase é deficiente na MPS III-C.",
+   "C": "**Sanfilippo A.**\n- Heparan N-sulfatase é deficiente na MPS III-A.",
+   "E": "**Sanfilippo D.**\n- N-acetilglucosamina-6-sulfatase é deficiente na MPS III-D."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-23",
   "conferido": false
  },
  "tumores-0173": {
