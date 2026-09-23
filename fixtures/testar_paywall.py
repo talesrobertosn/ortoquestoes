@@ -11,6 +11,8 @@ WORKFLOW_PUBLICACAO = (RAIZ / ".github/workflows/publicar.yml").read_text()
 CRIAR_CHECKOUT = (RAIZ / "supabase/functions/criar-checkout/index.ts").read_text()
 WEBHOOK_MERCADO_PAGO = (RAIZ / "supabase/functions/webhook-mercado-pago/index.ts").read_text()
 ENV_EXEMPLO = (RAIZ / ".env.example").read_text()
+MIGRACAO_ADMIN = (RAIZ / "supabase/migrations/202609231450_admin_assinaturas.sql").read_text()
+PAGINA_ADMIN = (RAIZ / "src/paginas/AdminAssinaturas.tsx").read_text()
 
 obrigatorios = [
     "paywall_ativo boolean not null default false",
@@ -74,6 +76,21 @@ for trecho in (
     assert trecho in WEBHOOK_MERCADO_PAGO, f"Contrato de webhook ausente: {trecho}"
 
 assert "IDs de plano no cliente" in ENV_EXEMPLO
+
+for trecho in (
+    "create table if not exists public.administradores",
+    "alter table public.administradores enable row level security",
+    "revoke all on public.administradores from public, anon, authenticated",
+    "security definer",
+    "set search_path = ''",
+    "where adm.id_usuario = auth.uid()",
+    "raise exception 'acesso_negado'",
+    "grant execute on function public.listar_assinaturas_admin() to authenticated",
+):
+    assert trecho in MIGRACAO_ADMIN, f"Proteção administrativa ausente: {trecho}"
+assert "create policy" not in MIGRACAO_ADMIN
+assert "listar_assinaturas_admin" in PAGINA_ADMIN
+assert "Acesso negado" in PAGINA_ADMIN
 
 for fonte in (CRIAR_CHECKOUT, WEBHOOK_MERCADO_PAGO, ENV_EXEMPLO):
     assert "preapproval_plan_id" not in fonte

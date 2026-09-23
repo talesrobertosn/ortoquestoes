@@ -15,6 +15,7 @@ import { textoErro } from '../conta/erros'
 import { Icone } from '../componentes/Icone'
 import { Medalha } from '../componentes/Medalha'
 import { conquistaAtual } from '../estado/conquistas'
+import { ResumoAssinatura } from '../componentes/ResumoAssinatura'
 import { MINIMO_RANKING, nomeNoRanking } from '../util/nomeRanking'
 
 const ROTULOS_STATUS = {
@@ -265,6 +266,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     </section>}
 
     <div className="ct-grade">
+      <ResumoAssinatura />
       <section className="ct-cartao">
         <header className="ct-cartao__cabeca"><span className="ct-icone ct-icone--ouro"><Icone nome="trofeu" tamanho={18} /></span><div><h2>Ranking</h2><p>Conta questões respondidas, não acerto.</p></div></header>
         <div className={'ct-status' + (respondidasConta >= MINIMO_RANKING ? ' ct-status--ativo' : '')}>

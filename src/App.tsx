@@ -16,6 +16,7 @@ import { Revisao } from './paginas/Revisao'
 import { Ranking } from './paginas/Ranking'
 import { Termos } from './paginas/Termos'
 import { Assinatura } from './paginas/Assinatura'
+import { AdminAssinaturas } from './paginas/AdminAssinaturas'
 import { SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
 
@@ -36,6 +37,7 @@ const TITULOS: Record<string, string> = {
   '/ranking': 'Ranking — OrtoQuestões',
   '/termos': 'Termos de Uso e Consentimento — OrtoQuestões',
   '/assinatura': 'Planos — OrtoQuestões',
+  '/admin/assinaturas': 'Administração de assinaturas — OrtoQuestões',
   '/entrar': 'Entrar ou criar conta — OrtoQuestões',
 }
 
@@ -108,6 +110,9 @@ export function App() {
       break
     case 'assinatura':
       pagina = <Assinatura />
+      break
+    case 'admin':
+      pagina = segundo === 'assinaturas' ? <AdminAssinaturas /> : <NaoEncontrada />
       break
     case 'entrar':
       pagina = <Conta consulta={rota.consulta} />
