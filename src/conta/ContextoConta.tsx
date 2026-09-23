@@ -6,6 +6,7 @@ import { iniciarSincronizacao, type StatusSync } from './sincronizacao'
 import { estadoVazio, type Documento } from './modeloSync'
 import { navegar } from '../util/rotas'
 import { gerarId } from '../util/id'
+import { retornoAuth, definirAvisoConta, textoErroLink, validarRetornoUmaVez } from './retornoAuth'
 
 const STATUS_INICIAL: StatusSync = { estado: 'sincronizando', pendentes: 0, conflitos: [], pronto: false, rejeitados: [] }
 interface ContaContexto {
@@ -31,6 +32,35 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (!supabase) { definirUsuarioLocal(null); return }
     let ativo = true
+    const cliente = supabase
+    const retorno = retornoAuth()
+    const irPara = (hash: string) => {
+      const url = new URL(window.location.href)
+      url.searchParams.delete('conta'); url.searchParams.delete('code'); url.hash = hash
+      window.history.replaceState(null, '', url.href)
+      window.dispatchEvent(new HashChangeEvent('hashchange'))
+    }
+    if (retorno?.erro) {
+      definirAvisoConta(textoErroLink(retorno.erro, retorno.recuperacao))
+      irPara(retorno.recuperacao ? '/conta?modo=recuperar' : '/conta')
+    }
+    // Link com sessão no hash ou com token_hash: a conta só termina de
+    // carregar depois de validar o link, para não piscar a tela de entrar.
+    let aguardandoRetorno = Boolean(retorno && !retorno.erro && (retorno.tokens || retorno.tokenHash))
+    if (retorno && aguardandoRetorno) {
+      const concluir = (ok: boolean) => {
+        if (!ativo) return
+        aguardandoRetorno = false
+        if (ok && retorno.recuperacao) definirRecuperacao(true)
+        if (!ok) definirAvisoConta(textoErroLink('otp_expired', retorno.recuperacao))
+        irPara(ok ? (retorno.recuperacao ? '/conta' : '/') : retorno.recuperacao ? '/conta?modo=recuperar' : '/conta')
+        definirCarregando(false)
+      }
+      void validarRetornoUmaVez(async () => {
+        const { error } = retorno.tokenHash ? await cliente.auth.verifyOtp(retorno.tokenHash) : await cliente.auth.setSession(retorno.tokens!)
+        return !error
+      }).then(concluir)
+    }
     // Callback síncrono: não aguardar chamadas do Auth dentro deste evento.
     const { data } = supabase.auth.onAuthStateChange((evento, proxima) => {
       if (!ativo) return
@@ -40,7 +70,7 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
         definirStatus(STATUS_INICIAL)
         usuarioAtual.current = id; definirUsuarioLocal(id)
       }
-      definirSessao(proxima); definirCarregando(false)
+      definirSessao(proxima); if (!aguardandoRetorno) definirCarregando(false)
       if (evento === 'PASSWORD_RECOVERY') definirRecuperacao(true)
       const url = new URL(window.location.href)
       if (evento === 'SIGNED_IN' && proxima && !recuperacao) {
@@ -48,8 +78,14 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
         window.history.replaceState(null, '', url.href)
         window.dispatchEvent(new HashChangeEvent('hashchange'))
       } else if (url.searchParams.has('conta') && (evento === 'INITIAL_SESSION' || evento === 'PASSWORD_RECOVERY')) {
-        if (proxima && url.searchParams.get('conta') === 'recuperar') definirRecuperacao(true)
-        url.searchParams.delete('conta'); url.searchParams.delete('code'); url.hash = '/conta'
+        const deRecuperacao = url.searchParams.get('conta') === 'recuperar'
+        if (proxima && deRecuperacao) definirRecuperacao(true)
+        // ?code= sem sessão: o link PKCE foi aberto em outro navegador (ou
+        // expirou). Sem este aviso a pessoa caía na tela de entrar sem saber
+        // por quê.
+        const falhou = !proxima && url.searchParams.has('code') && !aguardandoRetorno
+        if (falhou) definirAvisoConta(textoErroLink('navegador', deRecuperacao))
+        url.searchParams.delete('conta'); url.searchParams.delete('code'); url.hash = falhou && deRecuperacao ? '/conta?modo=recuperar' : '/conta'
         window.history.replaceState(null, '', url.href)
         window.dispatchEvent(new HashChangeEvent('hashchange'))
       }

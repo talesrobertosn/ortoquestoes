@@ -1,4 +1,7 @@
 import { createClient, processLock } from '@supabase/supabase-js'
+// Precisa ser avaliado antes de createClient e do primeiro render: limpa do
+// endereço os parâmetros que o Supabase devolve no hash (ver retornoAuth.ts).
+import './retornoAuth'
 
 // O endereço e a chave publicável podem ser embutidos no site: eles não dão
 // acesso administrativo. Variáveis de ambiente continuam úteis para forks e

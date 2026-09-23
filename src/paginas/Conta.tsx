@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, retornoConta, supabase } from '../conta/supabase'
+import { avisoConta, definirAvisoConta } from '../conta/retornoAuth'
 import { TIPOS_SYNC, deItens, itens } from '../conta/modeloSync'
 import { gravar, ler, lerVisitante } from '../estado/armazenamento'
 import { href } from '../util/rotas'
@@ -31,14 +32,9 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   )
   const [email, definirEmail] = useState(''), [senha, definirSenha] = useState('')
   const [confirmacao, definirConfirmacao] = useState(''), [verSenha, definirVerSenha] = useState(false)
-  const parametros = new URLSearchParams(window.location.search)
-  const erroRetorno = parametros.get('error_code') ?? parametros.get('error')
-  const mensagemRetorno = erroRetorno === 'otp_expired'
-    ? 'Este link de confirmação expirou ou já foi usado. Solicite uma nova confirmação e abra o link mais recente neste mesmo navegador.'
-    : erroRetorno === 'access_denied'
-      ? 'O link de confirmação não pôde ser aceito. Solicite um novo link e tente novamente.'
-      : ''
-  const [ocupado, definirOcupado] = useState(false), [mensagem, definirMensagem] = useState(mensagemRetorno)
+  // Aviso deixado pelo retorno de um link de e-mail com problema (expirado,
+  // já usado, aberto em outro navegador). Ver conta/retornoAuth.ts.
+  const [ocupado, definirOcupado] = useState(false), [mensagem, definirMensagem] = useState(avisoConta)
   const [novoEmail, definirNovoEmail] = useState('')
   const [importado, definirImportado] = useState(false)
   const { contexto } = usarContextoLocal('')
@@ -93,7 +89,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     if (!supabase || ocupado) return
     const pedeConfirmacao = recuperacao || modo === 'criar'
     if (pedeConfirmacao && senha !== confirmacao) { definirMensagem('As senhas não coincidem. Digite a mesma senha nos dois campos.'); return }
-    definirOcupado(true); definirMensagem('')
+    definirOcupado(true); definirMensagem(''); definirAvisoConta('')
     try {
       if (recuperacao && sessao) {
         const { error } = await supabase.auth.updateUser({ password: senha })
@@ -162,7 +158,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const senhasConferem = confirmacao.length > 0 && confirmacao === senha
   if (!sessao || recuperacao) {
     const titulo = recuperacao ? 'Crie uma nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Recuperar senha' : 'Entrar na sua conta'
-    const subtitulo = recuperacao ? 'Escolha a nova senha e confirme logo abaixo.' : modo === 'criar' ? 'Leva menos de um minuto. Depois é só confirmar o e-mail.' : modo === 'recuperar' ? 'Enviamos um link para você criar uma nova senha.' : 'Continue de onde parou, em qualquer dispositivo.'
+    const subtitulo = recuperacao ? 'Escolha a nova senha e confirme logo abaixo.' : modo === 'criar' ? 'Leva menos de um minuto. Depois é só confirmar o e-mail.' : modo === 'recuperar' ? 'Informe seu e-mail e enviaremos um link para criar uma nova senha.' : 'Continue de onde parou, em qualquer dispositivo.'
     return <div className="acesso">
       <aside className="acesso__vitrine">
         <p className="acesso__marca"><span>Orto</span>Questões</p>
