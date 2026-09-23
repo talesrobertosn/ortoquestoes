@@ -3,7 +3,7 @@
  * registrar, no cadastro de cada conta, qual versão a pessoa efetivamente
  * aceitou.
  */
-export const VERSAO_TERMOS = '2026-09-16'
+export const VERSAO_TERMOS = '2026-09-23'
 
 /** Dados a incluir no cadastro da conta, junto ao restante do perfil. */
 export function dadosAceiteTermos() {

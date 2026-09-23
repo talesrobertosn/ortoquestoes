@@ -4,7 +4,21 @@
 -- public.nome_publico_ranking() — nome completo + inicial do sobrenome —,
 -- redefinido aqui para que esta migração funcione sozinha.
 -- perfis_publicos continua existindo, mas não é mais consultada pelo ranking.
+--
+-- Quem pedir para sair (Termos, item 14.7) ou usar nome ofensivo é ocultado
+-- pelo responsável, no SQL Editor:
+--   insert into public.ranking_ocultos (usuario_id, motivo)
+--   select id, 'pediu para sair' from auth.users where email = 'pessoa@exemplo.com';
 begin;
+
+-- Sem grants: só o responsável (SQL Editor) lê e escreve.
+create table if not exists public.ranking_ocultos (
+  usuario_id uuid primary key references auth.users(id) on delete cascade,
+  motivo text,
+  criado_em timestamptz not null default now()
+);
+alter table public.ranking_ocultos enable row level security;
+revoke all on public.ranking_ocultos from anon, authenticated;
 
 create or replace function public.nome_publico_ranking(meta jsonb)
 returns text language plpgsql immutable set search_path = '' as $$
@@ -55,6 +69,7 @@ language sql security definer set search_path = '' stable as $$
     from contagem_periodo cp
     join contagem_geral cg on cg.usuario_id = cp.usuario_id
     join auth.users u on u.id = cp.usuario_id
+    where not exists (select 1 from public.ranking_ocultos o where o.usuario_id = cp.usuario_id)
   )
   select posicao, apelido, total, total_geral, usuario_id = auth.uid() as eh_voce
   from ranking
@@ -97,6 +112,7 @@ language sql security definer set search_path = '' stable as $$
     from contagem_periodo cp
     join contagem_geral cg on cg.usuario_id = cp.usuario_id
     join auth.users u on u.id = cp.usuario_id
+    where not exists (select 1 from public.ranking_ocultos o where o.usuario_id = cp.usuario_id)
   )
   select posicao, total, total_geral from ranking where usuario_id = auth.uid();
 $$;
