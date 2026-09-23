@@ -110,8 +110,12 @@ function novaTela() {
   return { tela, ctx }
 }
 
-/** Primeiro slide: a pergunta. */
-async function slidePergunta(q: Questao, dataTexto: string): Promise<Blob> {
+/**
+ * A pergunta com as alternativas. Com `revelar`, a alternativa correta aparece
+ * marcada em verde: é a imagem única, que se explica sozinha para quem chega
+ * pelo Instagram sem ter visto o site.
+ */
+async function slidePergunta(q: Questao, dataTexto: string, revelar = false): Promise<Blob> {
   const { tela, ctx } = novaTela()
   fundo(ctx)
   topo(ctx, 'QUESTÃO DO DIA')
@@ -119,8 +123,13 @@ async function slidePergunta(q: Questao, dataTexto: string): Promise<Blob> {
   ctx.textAlign = 'left'
   ctx.textBaseline = 'alphabetic'
   ctx.fillStyle = ouroClaro
-  ctx.font = `700 30px ${FONTE}`
-  ctx.fillText(`${q.tema}${q.subtemas[0] ? ' · ' + q.subtemas[0] : ''}`.slice(0, 58), MARGEM, 200)
+  // O assunto cabe na largura: reduz a fonte e, no limite, corta com reticências.
+  let assunto = `${q.tema}${q.subtemas[0] ? ' · ' + q.subtemas[0] : ''}`
+  let fonteAssunto = 30
+  ctx.font = `700 ${fonteAssunto}px ${FONTE}`
+  while (ctx.measureText(assunto).width > LARGURA - 2 * MARGEM && fonteAssunto > 24) { fonteAssunto -= 2; ctx.font = `700 ${fonteAssunto}px ${FONTE}` }
+  while (ctx.measureText(assunto).width > LARGURA - 2 * MARGEM) assunto = assunto.slice(0, -2).trimEnd() + '…'
+  ctx.fillText(assunto, MARGEM, 200)
   ctx.fillStyle = suave
   ctx.font = `500 26px ${FONTE}`
   ctx.fillText(dataTexto, MARGEM, 240)
@@ -139,9 +148,11 @@ async function slidePergunta(q: Questao, dataTexto: string): Promise<Blob> {
     if (altura <= baseCartao - topoCartao) break
   }
   const alturaCartao = Math.min(baseCartao - topoCartao, altura)
-  cartao(ctx, topoCartao, alturaCartao)
+  // Cartão centrado no espaço livre, sem sobrar um vazio embaixo.
+  const inicioCartao = topoCartao + Math.max(0, (baseCartao - topoCartao - alturaCartao) / 2)
+  cartao(ctx, inicioCartao, alturaCartao)
 
-  let y = topoCartao + 56 + tamanho
+  let y = inicioCartao + 56 + tamanho
   const x = MARGEM + 56
   ctx.fillStyle = tinta
   ctx.font = `600 ${tamanho}px ${FONTE}`
@@ -151,19 +162,28 @@ async function slidePergunta(q: Questao, dataTexto: string): Promise<Blob> {
   q.alternativas.forEach((a, i) => {
     const linhas = alternativas[i]
     const alturaBloco = Math.max(linhas.length * tAlt * 1.36, 56)
+    const certa = revelar && a.letra === q.gabarito
+    if (certa) {
+      caminhoArredondado(ctx, x - 14, y - 10, LARGURA - 2 * MARGEM - 84, alturaBloco + 20, 18)
+      ctx.fillStyle = '#e3f3ea'
+      ctx.fill()
+      ctx.strokeStyle = acerto
+      ctx.lineWidth = 3
+      ctx.stroke()
+    }
     ctx.beginPath()
     ctx.arc(x + 26, y + 26, 26, 0, Math.PI * 2)
-    ctx.fillStyle = '#e6f0ee'
+    ctx.fillStyle = certa ? acerto : '#e6f0ee'
     ctx.fill()
-    ctx.fillStyle = verde
+    ctx.fillStyle = certa ? branco : verde
     ctx.font = `800 ${Math.min(28, tAlt)}px ${FONTE}`
     ctx.textAlign = 'center'
     ctx.textBaseline = 'middle'
     ctx.fillText(a.letra, x + 26, y + 27)
     ctx.textAlign = 'left'
     ctx.textBaseline = 'alphabetic'
-    ctx.fillStyle = tinta2
-    ctx.font = `400 ${tAlt}px ${FONTE}`
+    ctx.fillStyle = certa ? tinta : tinta2
+    ctx.font = `${certa ? 700 : 400} ${tAlt}px ${FONTE}`
     let yl = y + (linhas.length === 1 ? 26 + tAlt * 0.36 : tAlt)
     for (const linha of linhas) { ctx.fillText(linha, x + 76, yl); yl += tAlt * 1.36 }
     y += alturaBloco + 18
@@ -172,7 +192,7 @@ async function slidePergunta(q: Questao, dataTexto: string): Promise<Blob> {
   ctx.fillStyle = branco
   ctx.font = `700 34px ${FONTE}`
   ctx.textAlign = 'left'
-  ctx.fillText('Qual você marcaria? Gabarito no próximo slide →', MARGEM, ALTURA - 124)
+  ctx.fillText(revelar ? `Gabarito: ${q.gabarito} · comentário completo no site` : 'Qual você marcaria? Gabarito no próximo slide →', MARGEM, ALTURA - 124)
   rodape(ctx, 'ortoquestoes.com.br', '@ortoquestoes')
   return paraBlob(tela)
 }
@@ -252,6 +272,11 @@ async function slideGabarito(q: Questao, conceito: string | null): Promise<Blob>
   ctx.fillText('Comentário de cada alternativa no site', MARGEM, ALTURA - 124)
   rodape(ctx, 'ortoquestoes.com.br', '@ortoquestoes')
   return paraBlob(tela)
+}
+
+/** Imagem única (4:5): pergunta, alternativas e a correta marcada. */
+export function gerarImagemCompletaQuestao(q: Questao, dataTexto: string): Promise<Blob> {
+  return slidePergunta(q, dataTexto, true)
 }
 
 /** Carrossel para o Instagram (4:5): pergunta e gabarito comentado. */

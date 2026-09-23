@@ -5,7 +5,7 @@ import { usarQuestaoDoDia } from '../estado/questaoDoDia'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { inicioDia } from '../estado/limiteDiario'
-import { gerarImagensQuestaoDoDia } from '../util/imagemQuestao'
+import { gerarImagemCompletaQuestao, gerarImagensQuestaoDoDia } from '../util/imagemQuestao'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
 
@@ -23,16 +23,25 @@ export function CartaoQuestaoDoDia({ indice }: { indice: Indice }) {
   const hoje = registro && registro.q >= inicioDia().getTime() ? registro : null
   const dataTexto = FORMATO_DIA.format(new Date())
 
-  async function compartilhar() {
+  // No celular, a folha de compartilhamento do sistema lista o Instagram
+  // (feed, stories, direct) com a imagem já anexada. Um site não consegue abrir
+  // o Instagram direto na tela de postagem; no computador, a imagem é baixada.
+  const podeCompartilhar = typeof navigator !== 'undefined' && 'canShare' in navigator
+
+  async function compartilhar(modo: 'unica' | 'carrossel') {
     if (!questao) return
     definirGerando(true)
     definirBaixou(false)
     try {
-      const tema = indice.temas.find((t) => t.nome === questao.tema)
-      const conceito = tema ? (await carregarComentarios(tema.slug))[questao.id]?.conceito ?? null : null
-      const blobs = await gerarImagensQuestaoDoDia(questao, conceito, dataTexto)
-      const arquivos = blobs.map((b, i) => new File([b], `questao-do-dia-${questao.id}-${i + 1}.png`, { type: 'image/png' }))
-      if ('canShare' in navigator && navigator.canShare?.({ files: arquivos })) {
+      let blobs: Blob[]
+      if (modo === 'unica') blobs = [await gerarImagemCompletaQuestao(questao, dataTexto)]
+      else {
+        const tema = indice.temas.find((t) => t.nome === questao.tema)
+        const conceito = tema ? (await carregarComentarios(tema.slug))[questao.id]?.conceito ?? null : null
+        blobs = await gerarImagensQuestaoDoDia(questao, conceito, dataTexto)
+      }
+      const arquivos = blobs.map((b, i) => new File([b], `questao-do-dia-${questao.id}${blobs.length > 1 ? `-${i + 1}` : ''}.png`, { type: 'image/png' }))
+      if (podeCompartilhar && navigator.canShare?.({ files: arquivos })) {
         await navigator.share({ files: arquivos, title: 'Questão do dia · OrtoQuestões' })
       } else {
         for (const arquivo of arquivos) {
@@ -44,6 +53,8 @@ export function CartaoQuestaoDoDia({ indice }: { indice: Indice }) {
           a.click()
           a.remove()
           setTimeout(() => URL.revokeObjectURL(url), 4000)
+          // Navegadores bloqueiam downloads em sequência rápida.
+          await new Promise((r) => setTimeout(r, 600))
         }
         definirBaixou(true)
       }
@@ -58,9 +69,12 @@ export function CartaoQuestaoDoDia({ indice }: { indice: Indice }) {
     <section className="qd" aria-label="Questão do dia">
       <div className="qd__topo">
         <p className="qd__rotulo"><Icone nome="alvo" tamanho={16} /> Questão do dia <span>· {dataTexto}</span></p>
-        <button className="qd__partilhar" onClick={() => void compartilhar()} disabled={gerando} title="Gera o carrossel (pergunta e gabarito) para postar">
-          <Icone nome="instagram" tamanho={16} /> {gerando ? 'Gerando…' : baixou ? 'Imagens baixadas' : 'Imagem para o Instagram'}
-        </button>
+        <span className="qd__insta">
+          <button className="qd__partilhar" onClick={() => void compartilhar('unica')} disabled={gerando} title="Uma imagem com a pergunta, as alternativas e a resposta marcada">
+            <Icone nome="instagram" tamanho={16} /> {gerando ? 'Gerando…' : baixou ? 'Imagem baixada' : podeCompartilhar ? 'Postar no Instagram' : 'Imagem para o Instagram'}
+          </button>
+          <button className="qd__carrossel" onClick={() => void compartilhar('carrossel')} disabled={gerando} title="Duas imagens: a pergunta e, depois, o gabarito comentado">ou carrossel</button>
+        </span>
       </div>
       <p className="qd__assunto">{questao.tema}{questao.subtemas[0] ? ` · ${questao.subtemas[0]}` : ''}</p>
       <p className="qd__enunciado">{questao.enunciado}</p>
