@@ -3279,91 +3279,93 @@
   "conferido": false
  },
  "mao-0281": {
-  "conceito": "A fáscia palmar normal tem estruturas com nomes próprios, e a doença de Dupuytren transforma algumas delas em cordas patológicas, enquanto outras são poupadas. Saber quais é o que orienta a dissecção.",
-  "correta": "A estrutura B é o ligamento natatório, a banda transversa que cruza a base dos dedos ao nível das comissuras, logo distal à prega palmar distal. Doente, ele forma a corda natatória, que fecha a comissura e impede a abdução dos dedos, motivo pelo qual a liberação precisa incluí-lo, e não só as cordas longitudinais. Quem separa os dois é fácil de guardar: a corda pré-tendínea limita a extensão do dedo, a natatória limita a abertura entre os dedos.",
+  "conceito": "### Fáscia palmar normal → corda patológica\n| Estrutura normal | Orientação | Corda | Efeito |\n|---|---|---|---|\n| banda pré-tendínea | longitudinal | pré-tendínea (central na palma) | flexão da MF |\n| ==ligamento natatório== | ==transversa, nas comissuras== | ==natatória== | ==fecha a comissura, limita abdução== |\n| banda espiral + lâmina digital lateral + Grayson | espiral | ==corda espiral== | flexão da IFP, desloca o feixe |\n| lâmina digital lateral | longitudinal no dedo | lateral | flexão da IFP e IFD |\n| fibras transversas (lig. palmar transverso) | transversa proximal | ==poupada== | |\n| ligamento de Cleland | dorsal ao feixe | ==poupado== | |\n\n### Memória\n- Pré-tendínea limita ==extensão== do dedo.\n- Natatória limita ==abertura== entre os dedos.\n\n> **Na prova:** banda transversa nas comissuras = ==ligamento natatório== (corda natatória).",
+  "correta": "**Ligamento natatório.**\n- Banda transversa na base dos dedos, nas comissuras.\n- Vira a corda natatória, que fecha a comissura.\n- A liberação precisa incluí-la.",
   "incorretas": {
-   "A": "A letra A está mais distal, no dedo, na região da lâmina digital lateral, estrutura que também adoece e participa da formação da corda espiral, mas não é a banda transversa apontada.",
-   "C": "A banda pré-tendínea corre longitudinalmente na palma, da aponeurose para cada dedo, e é a que forma a corda central. Está desenhada mais proximal e no sentido do comprimento da mão, não atravessada.",
-   "D": "O ligamento comissural é designação genérica para a região; a estrutura transversa nomeada e acometida pela doença naquele ponto é o natatório."
+   "A": "**Mais distal, no dedo.**\n- Região da lâmina digital lateral, que forma a corda espiral.",
+   "C": "**Longitudinal.**\n- Forma a corda central na palma, não a transversa.",
+   "D": "**Termo genérico.**\n- A estrutura transversa nomeada ali é o natatório."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0282": {
-  "conceito": "A figura resume a hipótese mecânica da doença de Kienböck: com a ulna curta, a carga que atravessa o punho deixa de ser dividida entre rádio e ulna e passa a se concentrar num ponto.",
-  "correta": "A imagem representa a diferença de pressão sobre o semilunar no cenário de ulna minus. Com a ulna encurtada, o semilunar apoia quase inteiramente sobre o rádio e é comprimido contra a borda da fossa semilunar, com o pico de pressão concentrado numa área pequena, é isso que as setas mostram. Some-se a isso a circulação de reserva escassa do osso, sobretudo no padrão vascular em I e com artéria nutrícia única, e está montado o cenário da necrose. É esse raciocínio que fundamenta a osteotomia de nivelamento (encurtar o rádio ou alongar a ulna) como tratamento nas fases sem colapso.",
+  "conceito": "### Fatores de risco da doença de Kienböck\n| Fator | Associação |\n|---|---|\n| ==punho dominante== | sobrecarga repetida |\n| sexo **masculino**, 20 a 40 anos | perfil clássico |\n| trabalho manual | microtrauma |\n| ==variância ulnar negativa (ulna minus)== | semilunar apoiado quase só no rádio |\n| semilunar tipo I (sem faceta no hamato) | concentração de carga |\n| padrão vascular com artéria única | reserva vascular pequena |\n| inclinação radial reduzida | |\n\n### Não confundir\n| Variância | Problema associado |\n|---|---|\n| ulna **minus** | Kienböck |\n| ulna **plus** | ==impacto ulnocarpal== (lesão degenerativa do CFCT, condromalácia do semilunar) |\n\n### Idade acima de 50\n- Pensar em **Preiser** (escafoide), corticoide, lúpus, anemia falciforme, ou necrose do semilunar em idoso com evolução diferente.\n\n### Hipótese mecânica\n- Ulna minus: o semilunar apoia quase só no rádio, comprimido contra a borda da fossa semilunar.\n- ==Pico de pressão em área pequena== + reserva vascular escassa = necrose.\n- Base da ==osteotomia de nivelamento== (encurtar o rádio ou alongar a ulna) nas fases sem colapso.\n\n### Formato do semilunar\n- Zapico (inclinação da faceta proximal), Viegas (faceta para o hamato): outro caminho de risco.\n\n> **Na prova:** figura do Kienböck = ==diferença de pressão no semilunar com ulna minus==",
+  "correta": "**Pressão no semilunar com ulna minus.**\n- Sem apoio da ulna, a carga se concentra no semilunar sobre o rádio.\n- As setas mostram o pico de pressão.\n- Fundamenta a osteotomia de nivelamento.",
   "incorretas": {
-   "A": "A figura não trata de formato do semilunar. Formato é assunto das classificações de Zapico e de Viegas, que também se relacionam com o risco, mas por outro caminho.",
-   "B": "Erra nas duas partes: nem formato, nem ulna plus.",
-   "D": "A ulna plus produz o problema oposto, o impacto ulnocarpal, com sobrecarga do lado ulnar e lesão do complexo da fibrocartilagem triangular e do semilunar pela outra borda. É outra doença."
+   "A": "**Não é formato.**\n- Formato é tema de Zapico e Viegas.",
+   "B": "**Duplamente errada.**\n- Nem formato nem ulna plus.",
+   "D": "**Outra doença.**\n- Ulna plus causa impacto ulnocarpal."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0283": {
-  "conceito": "A figura desta questão não veio no PDF de origem, então a letra da resposta não pôde ser conferida. O que vale guardar é a classificação, que é curta. Rayan e Murray graduam a lesão da banda sagital pelo que o tendão extensor faz sobre a cabeça do metacarpo: tipo I, lesão da banda sem instabilidade do tendão; tipo II, tendão subluxado, escorregando mas ainda sobre a cabeça; tipo III, tendão francamente luxado, caído no vale entre as cabeças metacarpais.",
-  "correta": "O gabarito aponta o tipo II, tendão subluxado. Leia essa letra com reserva, já que a figura não veio, e leve daqui a classificação e o que ela decide: tipo I responde a órtese; tipo II agudo, com menos de três semanas, ainda responde a órtese mantendo a metacarpofalângica em extensão por seis semanas; tipo III e os crônicos exigem reconstrução da banda sagital. O achado clínico da instabilidade é o dedo que não estende ativamente a partir da flexão, mas mantém a extensão se estendido passivamente antes.",
+  "alerta": "A figura desta questão não veio no PDF de origem, então a letra da resposta não pôde ser conferida com a imagem. Estude a classificação.",
+  "conceito": "### Ruptura da banda sagital\n- Mais comum: ==lado radial do dedo médio== (boxer's knuckle).\n- O extensor subluxa para **ulnar**, no vale intermetacarpal.\n\n### Por que o médio\n- Dedo mais longo e proeminente no soco.\n- A banda radial sofre tração no desvio ulnar forçado durante a flexão.\n\n### Clínica\n- Dor e edema dorsais na MF, estalido.\n- ==Não estende ativamente a partir da flexão==, mas ==mantém a extensão== se o dedo for estendido passivamente.\n- Desvio ulnar do dedo ao fletir.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| aguda (até cerca de 3 semanas) | órtese com MF em extensão (ou yoke) por 4 a 6 semanas |\n| crônica ou falha | reparo direto ou reconstrução (faixa do extensor, junctura) |\n\n### Não traumática\n- Artrite reumatoide: frouxidão das bandas radiais contribui para o desvio ulnar.\n\n### Rayan e Murray\n| Tipo | Achado | Tratamento |\n|---|---|---|\n| I | lesão da banda, ==tendão estável== | órtese |\n| ==II== | ==tendão subluxado== (ainda sobre a cabeça) | órtese se aguda (< 3 semanas) |\n| III | ==tendão luxado== no vale intermetacarpal | reconstrução |\n\n- Só três tipos.\n\n> **Na prova:** Rayan e Murray tipo II = ==subluxação do extensor==.",
+  "correta": "**Tipo II, conforme o gabarito.**\n- Tendão subluxado, escorregando mas ainda sobre a cabeça do metacarpo.\n- Agudo: órtese com MF em extensão por cerca de 6 semanas.\n- A figura não veio (veja o alerta).",
   "incorretas": {
-   "A": "O tipo I é a lesão da banda sem instabilidade do tendão: dor e edema sobre a articulação, com o extensor centrado.",
-   "C": "O tipo III é a luxação franca, com o tendão caído entre as cabeças dos metacarpos, visível e palpável.",
-   "D": "A classificação de Rayan e Murray tem três tipos. Não existe tipo IV."
+   "A": "**Tendão estável.**\n- Dor e edema, extensor centrado.",
+   "C": "**Luxação franca.**\n- Tendão caído entre as cabeças, pede reconstrução.",
+   "D": "**Não existe.**\n- A classificação tem três tipos."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0284": {
-  "conceito": "Os seis compartimentos extensores, de radial para ulnar, com o que cada um carrega: 1º abdutor longo e extensor curto do polegar; 2º extensores radiais longo e curto do carpo; 3º extensor longo do polegar; 4º extensor comum dos dedos e extensor próprio do indicador; 5º extensor do dedo mínimo; 6º extensor ulnar do carpo.",
-  "correta": "A contagem é dois, dois, um, cinco, um e um, doze tendões ao todo. O número que costuma escapar é o do quarto compartimento: são os quatro tendões do extensor comum mais o extensor próprio do indicador, que corre ulnar e profundo ao comum. É essa posição que se procura na cirurgia quando o extensor próprio do indicador vai ser colhido para transferência, o doador de escolha para substituir o extensor longo do polegar rompido no tubérculo de Lister.",
+  "conceito": "### Compartimentos extensores\n| Nº | Conteúdo | Clínica |\n|---|---|---|\n| 1 | abdutor longo (mais radial/volar) e extensor curto do polegar | De Quervain |\n| ==2== | ==extensores radiais longo (mais radial) e curto do carpo== | interseção |\n| 3 | ELP (contorna o Lister) | ruptura após fratura do rádio |\n| 4 | extensor comum, extensor do indicador, NIP | sinovite reumatoide |\n| 5 | extensor do mínimo | Vaughan-Jackson (primeiro a romper) |\n| 6 | EUC | subluxação, tendinite |\n\n### 2º compartimento\n- **ERLC** insere-se na base do **2º MC** e fica mais radial.\n- **ERCC** insere-se na base do **3º MC** e fica mais ulnar; é o extensor mais \"puro\" do punho.\n- Separado do 3º pelo **tubérculo de Lister**.\n\n### Síndromes de interseção\n- Proximal: 1º sobre o 2º (4 a 6 cm do Lister).\n- Distal: ELP sobre o 2º (no Lister).\n\n### Contagem de tendões\n| Compartimento | 1 | 2 | 3 | 4 | 5 | 6 |\n|---|---|---|---|---|---|---|\n| nº de tendões | 2 | 2 | 1 | ==5== | 1 | 1 |\n\n- 4º = quatro do extensor comum + ==extensor próprio do indicador== (ulnar e profundo ao comum).\n- EIP é o doador clássico para o ELP rompido.\n\n> **Na prova:** 2, 2, 1, ==5==, 1, 1 (total 12).",
+  "correta": "**2, 2, 1, 5, 1, 1.**\n- Doze tendões ao todo.\n- O 4º tem cinco: quatro do comum mais o extensor próprio do indicador.",
   "incorretas": {
-   "A": "Erra o quarto compartimento: são cinco tendões, não quatro. Esquecer o extensor próprio do indicador é o deslize mais comum.",
-   "C": "Troca a ordem dos primeiros compartimentos e conta dois no quinto, que tem apenas o extensor do dedo mínimo.",
-   "D": "Começa errado: o primeiro compartimento tem dois tendões, não um."
+   "A": "**Quatro no 4º.**\n- Esquece o extensor próprio do indicador.",
+   "C": "**Ordem trocada.**\n- E o 5º tem só o extensor do mínimo.",
+   "D": "**1º errado.**\n- O primeiro tem dois tendões."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0285": {
-  "conceito": "Heikel gradua a deficiência longitudinal do rádio em quatro tipos, do mais leve ao mais grave: 1, rádio distal apenas encurtado; 2, rádio hipoplásico em toda a extensão; 3, ausência parcial; 4, ausência total.",
-  "correta": "O tipo 4, ausência total do rádio, é o mais comum. É a apresentação clássica da mão torta radial: antebraço curto e encurvado, mão desviada radialmente sobre a ponta da ulna, polegar em geral ausente ou hipoplásico. E é a que obriga a investigar o resto da criança, anemia de Fanconi, síndrome TAR, Holt-Oram e VACTERL.",
+  "conceito": "### Classificação de Heikel (displasia radial)\n| Heikel | Bayne | Descrição |\n|---|---|---|\n| A | I | rádio distal curto (fise distal atrasada) |\n| B | II | rádio hipoplásico em miniatura |\n| C | III | ausência parcial (remanescente proximal) |\n| ==D== | ==IV== | ==ausência total do rádio==: ==a mais comum== |\n\n### Mão torta radial (tipo D)\n- Mão desviada radialmente sobre a ponta da ulna.\n- Ulna curta e encurvada; polegar ausente ou hipoplásico.\n- Bilateral em cerca de metade.\n\n### Investigação obrigatória\n| Síndrome | Exame |\n|---|---|\n| Fanconi | teste de quebra cromossômica (diepoxibutano) |\n| Holt-Oram | ecocardiograma |\n| TAR | hemograma (plaquetas) |\n| VACTERL | coluna, rim, coração, ânus, traqueia/esôfago |\n\n### Remanescente no tipo C\n- Pode funcionar como **banda** que agrava a curvatura da ulna com o crescimento.\n\n- Algumas provas numeram de 1 a 4 (equivalente a A a D ou Bayne I a IV).\n\n> **Na prova:** Heikel mais comum = ==tipo 4 (ausência total do rádio)==",
+  "correta": "**Tipo 4.**\n- Ausência total do rádio, a forma clássica da mão torta radial.\n- Obriga a investigar Fanconi, TAR, Holt-Oram e VACTERL.",
   "incorretas": {
-   "A": "O tipo 1 é o mais leve e o menos frequente; costuma passar despercebido até que a discrepância de crescimento apareça.",
-   "B": "O tipo 2 é intermediário e menos comum que a ausência total.",
-   "C": "O tipo 3 guarda um remanescente do rádio que, preso à ulna, pode agravar o encurvamento com o crescimento, mas também é menos frequente."
+   "A": "**Mais leve e rara.**\n- Rádio só encurtado.",
+   "B": "**Intermediário.**\n- Rádio hipoplásico em miniatura.",
+   "C": "**Ausência parcial.**\n- O remanescente pode agravar a curvatura, mas é menos comum."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0286": {
-  "conceito": "Nas neuropatias compressivas, exame de imagem e exame funcional respondem perguntas diferentes: a imagem mostra a causa e o local, o exame funcional mostra o quanto o nervo está comprometido.",
-  "correta": "O padrão-ouro continua sendo a eletroneuromiografia. Ela mede o que a doença de fato faz (lentificação da condução, bloqueio, desnervação), gradua a gravidade, localiza o nível e afasta os diagnósticos que imitam a compressão, como radiculopatia cervical e polineuropatia. Vale a ressalva honesta: ela pode vir normal numa síndrome do túnel do carpo inicial e sintomática, e nesse caso o diagnóstico continua sendo clínico. Exame normal não desfaz uma clínica típica.",
+  "conceito": "### Exames nas neuropatias compressivas\n| Exame | O que mostra | Limite |\n|---|---|---|\n| ==eletroneuromiografia== | ==condução, bloqueio, desnervação==; gravidade e nível | pode ser normal no inicial |\n| ultrassonografia | área de secção do mediano (> 10 a 12 mm²), cisto, nervo bífido, artéria mediana | operador-dependente |\n| ressonância | ==hipersinal em T2== (edema), T1 isointenso; lesões expansivas | custo, não gradua função |\n\n### ENMG no túnel do carpo\n| Grau | Achado |\n|---|---|\n| leve | latência sensitiva aumentada |\n| moderado | + latência motora aumentada |\n| grave | amplitudes reduzidas, desnervação no abdutor curto |\n\n- Diferencia de radiculopatia C6-C7 e polineuropatia.\n- Exame normal não exclui clínica típica.\n\n> **Na prova:** padrão-ouro nas compressões = ==eletroneuromiografia==.",
+  "correta": "**Eletroneuromiografia.**\n- Mede o que a compressão faz: lentificação, bloqueio, desnervação.\n- Gradua, localiza e afasta diferenciais.\n- Pode vir normal no quadro inicial; a clínica prevalece.",
   "incorretas": {
-   "A": "O achado de nervo comprimido na ressonância é hipersinal em T2, por edema, isso está certo. O que a alternativa erra é o T1: o nervo permanece isointenso ao músculo em T1, e é justamente nessa sequência que se estuda melhor a anatomia fascicular e os planos de gordura ao redor.",
-   "B": "A ultrassonografia é excelente complemento e tem vantagens reais, mostra cisto, tenossinovite, nervo bífido, artéria mediana persistente, e mede a área de secção do nervo. Mas é operador-dependente e não substitui a eletroneuromiografia como padrão-ouro.",
-   "C": "Hipossinal nas duas sequências descreveria tecido fibroso ou calcificado, não nervo edemaciado."
+   "A": "**T1 errado.**\n- O nervo fica isointenso em T1; o hipersinal é em T2.",
+   "B": "**Complemento.**\n- Útil, mas operador-dependente.",
+   "C": "**Hipossinal nas duas.**\n- Descreve fibrose ou calcificação, não edema."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0287": {
-  "conceito": "Vale conhecer a ambiguidade deste nome antes de responder. A mão da bênção clássica é a da lesão alta do nervo mediano: ao tentar fechar a mão, indicador e médio permanecem estendidos, porque tanto o flexor superficial quanto o profundo desses dedos estão paralisados. Já a síndrome do interósseo anterior produz um quadro aparentado, porém distinto, porque nela o flexor superficial é poupado.",
-  "correta": "Entre as alternativas oferecidas, a única do território do mediano é o interósseo anterior, e é ela que o gabarito aponta. O que o interósseo anterior de fato produz: perda da flexão da interfalângica do polegar, pelo flexor longo, e da interfalângica distal do indicador e do médio, pelo flexor profundo. O sinal próprio dele é o do círculo, ou de Kiloh-Nevin: pedir o gesto de \"ok\" e ver polpa contra polpa achatada em vez de um círculo. Como o ramo é motor puro, não há alteração de sensibilidade, o que o separa da compressão do mediano no pronador e no túnel do carpo.",
+  "alerta": "Mão da bênção clássica é o sinal da lesão alta do nervo mediano (flexores superficial e profundo do indicador e médio paralisados). O interósseo anterior poupa o flexor superficial e tem como sinal próprio o de Kiloh-Nevin. O gabarito escolhe o interósseo anterior por ser a única alternativa do território do mediano.",
+  "conceito": "### Mão da bênção × garra\n| Sinal | Nervo | Quando aparece | Dedos |\n|---|---|---|---|\n| ==mão da bênção== | ==mediano alto== | ao tentar ==fechar== a mão | indicador e médio ficam estendidos |\n| garra ulnar | ulnar | em ==repouso== | anelar e mínimo |\n\n### Síndrome do interósseo anterior\n| Músculo paralisado | Déficit |\n|---|---|\n| flexor longo do polegar | flexão da IF do polegar |\n| flexor profundo do indicador e médio | flexão da IFD |\n| pronador quadrado | pronação com cotovelo fletido |\n\n- **Kiloh-Nevin (sinal do círculo):** \"ok\" vira pinça de polpas achatadas.\n- ==Motor puro==: sem alteração sensitiva.\n- Diferencial: Parsonage-Turner, ruptura do flexor longo do polegar.\n\n> **Na prova:** bênção sem garra, único ramo do mediano nas alternativas = ==interósseo anterior== (veja o alerta).",
+  "correta": "**Interósseo anterior, conforme o gabarito.**\n- Único ramo do mediano entre as opções.\n- Perde FLP e FPD do indicador e médio; sinal do círculo.\n- Motor puro, sem déficit sensitivo.",
   "incorretas": {
-   "A": "O radial produz punho e dedos caídos, com alteração de sensibilidade no dorso da mão. Não tem relação com a incapacidade de fletir dedos.",
-   "B": "O interósseo posterior é ramo do radial e dá queda dos dedos na metacarpofalângica, com o punho ainda estendendo em desvio radial e sem déficit sensitivo.",
-   "D": "O ulnar produz a mão em garra, em repouso, por perda dos intrínsecos, deformidade que se parece com a da bênção mas envolve o quarto e o quinto dedos, não o indicador e o médio, e aparece em repouso e não ao tentar fechar a mão."
+   "A": "**Punho caído.**\n- O radial não afeta a flexão dos dedos.",
+   "B": "**Queda dos dedos na MF.**\n- Punho estende com desvio radial, sem déficit sensitivo.",
+   "D": "**Garra.**\n- Em repouso, no anelar e mínimo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0288": {
-  "conceito": "Nalebuff classificou as deformidades do polegar reumatoide em cinco tipos, e o princípio organizador é qual articulação adoeceu primeiro. Tipo I, botoeira, começa na metacarpofalângica. Tipo III, pescoço de cisne, começa na trapeziometacarpiana. Tipo V é o pescoço de cisne que nasce da frouxidão da placa volar da metacarpofalângica, com a carpometacarpiana normal.",
-  "correta": "É exatamente o tipo V: com a carpometacarpiana estável, a hiperextensão da metacarpofalângica vem da lesão da placa volar dessa própria articulação, e a interfalângica compensa em flexão, o desenho do pescoço de cisne sem que a base do polegar tenha adoecido. A distinção muda o tratamento: aqui basta tratar a metacarpofalângica, com capsulodese volar, sesamoidodese ou artrodese, sem mexer na base do polegar.",
+  "conceito": "### Polegar reumatoide (Nalebuff)\n| Tipo | Deformidade | Origem | Frequência |\n|---|---|---|---|\n| ==I== | ==botoeira==: MF em flexão, IF em hiperextensão | ==MF== (sinovite distende cápsula dorsal, EPB frouxo, ELP desliza ulnar e volar) | ==a mais comum== |\n| II | botoeira + subluxação da CMC | MF e CMC | rara |\n| III | pescoço de cisne: MF em hiperextensão, metacarpo aduzido | **CMC** | segunda |\n| IV | goleiro: instabilidade do colateral ulnar da MF | MF | |\n| V | pescoço de cisne pela placa volar da MF | MF | |\n| VI | artrite mutilante | | |\n\n### Tratamento do tipo I\n| Estágio | Conduta |\n|---|---|\n| inicial, flexível | sinovectomia da MF e reconstrução do extensor |\n| MF rígida, IF passível | **artrodese da MF** (± artroplastia) |\n| MF e IF acometidas | artrodese da MF e IF (não as duas com a CMC rígida) |\n\n### Regra de origem\n| Começa em | Deformidade |\n|---|---|\n| MF | ==botoeira== (tipo I) |\n| CMC | ==pescoço de cisne== (tipo III) |\n| placa volar da MF, CMC estável | ==pescoço de cisne== (tipo V) |\n\n- Tipo V: tratar só a MF (capsulodese volar, sesamoidodese ou artrodese).\n\n> **Na prova:** pescoço de cisne com CMC estável = ==lesão da placa volar da MF (Nalebuff V)==.",
+  "correta": "**Nalebuff tipo V.**\n- Placa volar da MF frouxa, CMC normal.\n- MF hiperestende e a IF compensa em flexão.\n- Trata-se só a MF.",
   "incorretas": {
-   "B": "O polegar do guarda-caça é lesão do ligamento colateral ULNAR da metacarpofalângica, não do radial. O nome vem dos guardas escoceses que torciam o pescoço da caça entre o polegar e o indicador, forçando o polegar em valgo.",
-   "C": "Inverte a regra. Acometimento que começa na carpometacarpiana produz o pescoço de cisne, tipo III, com subluxação dorsal da base e adução do metacarpo.",
-   "D": "Também inverte. Acometimento que começa na metacarpofalângica produz a botoeira, tipo I, o mais frequente."
+   "B": "**Colateral ulnar.**\n- O polegar do guarda-caça é lesão do colateral ulnar, não radial.",
+   "C": "**Invertida.**\n- CMC primeiro dá pescoço de cisne (tipo III).",
+   "D": "**Invertida.**\n- MF primeiro dá botoeira (tipo I)."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0289": {
