@@ -2097,107 +2097,108 @@
   "conferido": false
  },
  "pediatria-0145": {
-  "conceito": "A classificação de Herring, ou pilar lateral, foi criada para estratificar a gravidade da doença de Perthes durante a fase de fragmentação. Grupo A mantém toda a altura do pilar lateral. Grupo B preserva mais de 50% da altura original. O grupo B/C limítrofe, acrescentado posteriormente, engloba pilares muito estreitos, pobremente ossificados ou com exatamente 50% da altura. Grupo C mantém menos de 50% da altura, portanto apresenta mais de 50% de colapso. A classificação deve ser aplicada quando a fragmentação está suficientemente estabelecida; uso muito precoce pode subestimar o comprometimento. O prognóstico piora de A para C e a idade modifica a resposta terapêutica.",
-  "correta": "A alternativa C está correta. Herring C significa perda superior a 50% da altura do pilar lateral, ou, de forma equivalente, preservação inferior a metade da altura original. É o grupo de maior comprometimento epifisário e de pior prognóstico dentro da classificação.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Herring em detalhe\n| Grupo | Pilar lateral | Prognóstico |\n|---|---|---|\n| A | ==sem perda== de altura | bom |\n| B | ==perda < 50%== | bom < 8 anos |\n| B/C | pilar estreito ou pouco ossificado, ~50% | intermediário |\n| C | ==perda > 50%== | ruim |\n\n> **Na prova:** Herring C = ==colapso > 50% do pilar lateral==",
+  "correta": "**C: mais de 50% de colapso.**\n- Pior prognóstico.\n- Cabeça tende a deformar.",
   "incorretas": {
-   "A": "Grupo A preserva a altura do pilar lateral; qualquer perda importante exclui essa categoria.",
-   "B": "Grupo B preserva mais de 50% da altura, não apresenta perda maior que 50%. A questão explora a diferença entre percentual perdido e preservado.",
-   "D": "Não existe grupo D na classificação original/modificada de Herring. As categorias são A, B, B/C e C."
+   "A": "**A não perde altura.**\n- < 50% é o B.",
+   "B": "**B perde < 50%.**\n- > 50% é C.",
+   "D": "**Não existe D.**\n- Só pilar lateral."
   },
   "referencias": [
    "https://pubmed.ncbi.nlm.nih.gov/1552014/",
    "https://pubmed.ncbi.nlm.nih.gov/23604650/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0146": {
-  "conceito": "A **fratura metafisária clássica** (\"corner fracture\" ou \"bucket-handle fracture\"), um pequeno fragmento angular na margem da metáfise, decorrente de forças de cisalhamento e torção aplicadas ao membro (como ao puxar ou sacudir a criança), é um achado radiográfico de alta especificidade para **maus tratos** em crianças pequenas, especialmente abaixo de 2 anos, sendo considerada praticamente patognomônica de trauma não acidental nessa faixa etária.",
-  "correta": "B. A fratura é sugestiva de maus tratos.",
+  "conceito": "### Tipos de maus-tratos\n| Tipo | Frequência |\n|---|---|\n| ==negligência== | ==a mais comum== |\n| abuso físico | o mais visto pelo ortopedista |\n| emocional | frequente, coexistente |\n| sexual | subnotificado |\n\n### Fraturas suspeitas de abuso físico\n| Alta especificidade | Moderada |\n|---|---|\n| ==lesão metafisária clássica== (canto, alça de balde) | fraturas múltiplas em estágios diferentes |\n| ==costelas posteriores== | fratura de crânio complexa |\n| escápula, processos espinhosos, esterno | vértebras, dedos em não deambulante |\n\n### Alertas\n- Fratura de fêmur em criança que não anda.\n- História incompatível, atraso na busca de atendimento.\n- Conduta: ==inventário esquelético== (< 2 anos), fundo de olho, notificação obrigatória.\n\n### Lesão metafisária clássica (fratura do canto)\n- Fratura ==planar na zona de ossificação provisória==, por forças de tração e torção (sacudir o bebê).\n- Aspecto de ==canto== ou ==alça de balde== conforme a incidência.\n- Fêmur distal, tíbia proximal e distal, úmero proximal.\n- Em lactentes, ==altamente específica== de abuso.\n\n### Menos específicas\n- Diafisárias (espiral ou transversa) são comuns e só sugerem abuso pelo contexto (criança que não anda).\n\n> **Na prova:** fratura de extremidade mais sugestiva de abuso = ==fratura do canto (metafisária clássica)==",
+  "correta": "**Maus-tratos.**\n- Lesão metafisária clássica em < 2 anos.\n- Inventário esquelético e notificação.",
   "incorretas": {
-   "A": "O **raquitismo** produz um padrão radiográfico diferente, com alargamento, deshiamento e franjeamento (\"fraying\") simétrico e bilateral das metáfises, não o fragmento angular focal mostrado na imagem.",
-   "C": "A síndrome de **Ehlers-Danlos** é um distúrbio do tecido conjuntivo que causa hipermobilidade articular e fragilidade cutânea, sem associação clássica com esse padrão específico de fratura metafisária.",
-   "D": "A **osteogênese imperfeita** tipicamente se manifesta com múltiplas fraturas, osteopenia difusa e, por vezes, ossos wormianos, um padrão generalizado de fragilidade óssea diferente da fratura metafisária focal e específica mostrada."
+   "A": "**Alargamento fisário.**\n- Metáfise em taça, não o canto.",
+   "C": "**Pele e articulações.**\n- Não esse padrão.",
+   "D": "**Osteopenia difusa.**\n- Escleras, ossos wormianos."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0147": {
-  "conceito": "Luxação congênita da cabeça do rádio é a anomalia congênita mais frequente do cotovelo. Geralmente é posterior, pode ser bilateral e pode coexistir com outras anomalias. Crianças frequentemente são assintomáticas por anos e apresentam mais tarde limitação de extensão e pronossupinação, deformidade ou dor. A radiografia mostra cabeça radial dismórfica, capitelo hipoplásico e alterações adaptativas que ajudam a diferenciá-la de luxação traumática não reconhecida. Como a articulação desenvolveu-se nessa posição, redução tardia raramente restaura movimento normal. Tratamento habitual é observação quando há pouca dor e boa função; procedimentos cirúrgicos são reservados a casos sintomáticos selecionados.",
-  "correta": "A alternativa A está correta. Na maior parte das crianças com luxação congênita da cabeça do rádio, o tratamento inicial é conservador. Intervenção cirúrgica não é indicada apenas pela radiografia, porque os resultados de redução tardia são imprevisíveis e a amplitude de movimento frequentemente não melhora de forma significativa.",
+  "conceito": "### Luxação congênita da cabeça do rádio\n- Anomalia congênita mais comum do cotovelo.\n- ==Bilateral== na maioria e ==associada== a outras manifestações (sinostose, síndromes como nail-patella, Ehlers-Danlos, Larsen).\n- Direção mais comum: ==posterior==.\n\n### Congênita × Monteggia crônico\n| Achado | Congênita | Traumática |\n|---|---|---|\n| lado | bilateral | unilateral |\n| cabeça | ==convexa (cúpula)==, pequena | côncava, normal |\n| capítulo | hipoplásico | normal |\n| ulna | reta | deformidade plástica |\n| direção | posterior | anterior |\n\n### Tratamento\n- Observação; ressecção da cabeça após a maturidade se dor.\n\n### Limitação de movimento\n| Direção | Bloqueio |\n|---|---|\n| ==posterior== | ==extensão== (cabeça bate atrás do capítulo) |\n| anterior | flexão |\n\n- Pronossupinação costuma ser pouco limitada; dor e estalido na adolescência.\n\n> **Na prova:** luxação congênita = ==posterior com limitação da extensão==",
+  "correta": "**Conservador.**\n- Função costuma ser boa.\n- Ressecção da cabeça após a maturidade se dor.",
   "incorretas": {
-   "B": "Redução aberta rotineira não é indicada em toda criança; pode ser considerada apenas em situações selecionadas, geralmente pacientes jovens com deformidade limitada e sintomas significativos.",
-   "C": "Redução fechada é apropriada para algumas luxações traumáticas agudas, mas não para uma cabeça radial congenitamente deformada e adaptada à posição luxada.",
-   "D": "Reconstrução do ligamento anular pode integrar operações selecionadas, porém não é tratamento padrão para todos os casos congênitos."
+   "B": "**Não se reduz.**\n- Cabeça deformada não congrui.",
+   "C": "**Irredutível.**\n- Anatomia alterada.",
+   "D": "**Técnica do Monteggia.**\n- Não da congênita."
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/congenital-radial-head-dislocation"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0148": {
-  "conceito": "Na deformidade de Sprengel, a escápula elevada e malrotada reduz sua capacidade de rotação superior durante elevação do braço. Como a elevação completa depende da coordenação glenoumeral e escapulotorácica, a abdução é frequentemente o primeiro e principal movimento global comprometido. A articulação glenoumeral isoladamente pode manter mobilidade relativamente boa. O exame deve observar altura escapular, rotação, Cavendish, deformidade cervical associada e amplitude ativa e passiva. Conexão omovertebral pode aumentar a rigidez. Cirurgia é reservada principalmente para casos Cavendish mais graves com limitação funcional ou estética relevante.",
-  "correta": "A alternativa A está correta. Abdução é o movimento global mais precocemente limitado porque depende intensamente da rotação superior e da mobilidade da escápula, justamente o componente mecânico mais comprometido em Sprengel.",
+  "conceito": "### Sprengel: movimento do ombro\n- Escápula ==pequena (hipoplásica)==, alta e rodada, presa pelo omovertebral ou fibrose.\n- A ==glenoumeral é normal==; perde-se o ==ritmo escapulotorácico==.\n- Resultado: ==abdução limitada== (a escápula não roda).\n\n### Achados associados\n- Klippel-Feil, escoliose, costelas anômalas, diastematomielia, rim.\n\n### Cirurgia\n| Técnica | Princípio |\n|---|---|\n| Woodward | desinserção da origem medial (trapézio, romboides) e reinserção mais baixa |\n| Green | desinserção na escápula e descida |\n| + | ressecção do omovertebral (extraperiosteal), osteotomia da clavícula |\n\n- Idade 3 a 8 anos; ganho funcional maior na abdução.\n\n> **Na prova:** Sprengel = ==glenoumeral normal com escápula hipoplásica==.",
+  "correta": "**Abdução.**\n- Escápula presa não roda.\n- Primeiro movimento perdido.",
   "incorretas": {
-   "B": "Rotação interna glenoumeral pode ser relativamente preservada e não costuma ser a primeira limitação funcional percebida.",
-   "C": "Rotação externa também pode apresentar alterações secundárias, porém não é o déficit predominante que caracteriza a deformidade.",
-   "D": "Elevação anterior pode ser reduzida nos casos graves, mas a restrição clássica mais marcante é de abdução."
+   "B": "**Preservada.**\n- Glenoumeral normal.",
+   "C": "**Preservada.**\n- Idem.",
+   "D": "**Menos afetada.**\n- Abdução sofre primeiro."
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/sprengel-s-deformity"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0149": {
-  "conceito": "A síndrome de **Streeter** (síndrome da banda de constrição congênita, ou displasia de Streeter) resulta de bandas fibrosas amnióticas que constringem um segmento do membro fetal em desenvolvimento. Na classificação por zonas descrita, o membro é dividido em quatro segmentos (zona 1, mais proximal, até a zona 4, mais distal/digital); a maior parte das lesões de constrição ocorre na **zona 2**, correspondente à porção intermediária do membro (por exemplo, o antebraço, no caso do membro superior), uma região mais frequentemente exposta ao contato com as bandas amnióticas durante o desenvolvimento intrauterino.",
-  "correta": "B. A maior parte das lesões ocorre na zona 2.",
+  "alerta": "A classificação de zonas atribuída a Hennigan e Kuo não pôde ser conferida em detalhe. Guarde o conceito de bandas de constrição e a resposta oficial.",
+  "conceito": "### Separação dos dedos\n- 6ª a 8ª semana: placa da mão com ==raios (cristas) digitais== unidos por tecido interdigital.\n- A separação ocorre por ==apoptose interdigital== (via BMP), não por crescimento.\n- Progride de distal para proximal e de radial para ulnar.\n\n### Sindactilia\n| Aspecto | Dado |\n|---|---|\n| frequência | 1 em 2.000 a 2.500 nascidos; malformação congênita mais comum da mão junto com polidactilia |\n| espaço mais acometido | ==3º (médio e anelar)== |\n| espaço menos acometido | 1º (polegar e indicador) |\n| bilateral | cerca de 50% |\n\n### Classificação\n| Termo | Definição |\n|---|---|\n| simples | só pele |\n| complexa | ponte óssea (sinostose) |\n| completa | até a ponta |\n| complicada | ossos anômalos (Apert) |\n\n### Cirurgia\n- Por volta de 12 a 18 meses; mais cedo em dedos de tamanhos diferentes (polegar, mínimo).\n- Um lado do dedo por vez; retalho dorsal para a comissura, enxerto de pele total.\n\n### Acrossindactilia\n| Aspecto | Sindactilia verdadeira | ==Acrossindactilia== |\n|---|---|---|\n| mecanismo | falha de diferenciação | ==disrupção por bandas de constrição== |\n| comissura | nunca se formou | existe: ==fenestra proximal== |\n| fusão | contínua da base | só nas pontas |\n| cirurgia | reconstrução comissural | liberação precoce das pontas |\n\n### Pré-operatório\n- RX em lactente não mostra fusões cartilaginosas; US ou RM quando a anatomia óssea importa.\n\n### Síndrome de Streeter (bandas de constrição)\n- Disrupção por bandas amnióticas: anéis de constrição, amputações, acrossindactilia, linfedema distal.\n- Membros distais e ==dedos centrais== mais afetados.\n- Classificações: Patterson (anel simples, com deformidade distal, acrossindactilia, amputação); Hennigan e Kuo (zonas do membro).\n- Urgência: anel profundo com comprometimento vascular; liberação por zetaplastias em tempos.\n\n> **Na prova:** Hennigan e Kuo = maioria na ==zona 2== (veja o alerta).",
+  "correta": "**Zona 2.**\n- Resposta oficial.\n- Conferir a definição das zonas (veja o alerta).",
   "incorretas": {
-   "A": "A zona 1, mais proximal (próxima ao ombro/quadril), é menos frequentemente acometida pelas bandas de constrição do que a zona intermediária.",
-   "C": "A zona 3, mais distal (próxima ao punho/tornozelo), também é menos frequentemente acometida do que a zona 2.",
-   "D": "A zona 4, a mais distal (mãos/pés), embora possa apresentar acrossindactilia associada, não é a zona de maior ocorrência das bandas de constrição em si."
+   "A": "**Não é a maioria.**\n- Zona 1.",
+   "C": "**Não é a maioria.**\n- Zona 3.",
+   "D": "**Não é a maioria.**\n- Zona 4."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0150": {
-  "conceito": "A correção de Ponseti respeita a sequência CAVE. O cavo é corrigido primeiro elevando o primeiro raio e supinando o antepé para alinhá-lo ao retropé. Em seguida, adução e varo são corrigidos simultaneamente por abdução do complexo calcaneopedal ao redor da cabeça do tálus. O equino é tratado por último, frequentemente por tenotomia percutânea do Aquiles. A manipulação correta evita pronação do antepé, manobra que bloqueia o calcâneo e pode criar pé em mata-borrão. Gessos devem ser bem moldados e geralmente são trocados semanalmente. Após correção, a órtese de abdução é essencial para prevenção de recidiva.",
-  "correta": "A alternativa B está correta. O primeiro componente abordado no método de Ponseti é o cavo. Corrigi-lo antes da abdução permite alinhar o antepé e retropé e evita que a supinação aparente seja equivocadamente tratada com pronação.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** primeira manipulação de Ponseti = ==cavo, supinando o antepé e elevando o 1º MT==",
+  "correta": "**Cavo.**\n- Supinar o antepé e elevar o 1º MT.\n- Alinhar antepé com retropé.",
   "incorretas": {
-   "A": "O varo melhora durante a etapa seguinte de abdução do complexo calcaneopedal, e não é corrigido isoladamente como primeiro passo.",
-   "C": "O equino é deliberadamente deixado para o final porque dorsiflexão precoce pode bloquear a correção e criar deformidade iatrogênica.",
-   "D": "Abdução é a manobra utilizada depois de corrigido o cavo para tratar adução e varo; não constitui o primeiro componente anatômico a ser corrigido."
+   "A": "**Terceiro.**\n- Corrige com a abdução.",
+   "C": "**Último.**\n- Tenotomia se preciso.",
+   "D": "**Segundo passo.**\n- Abduzir, não corrigir abdução."
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/clubfoot"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0151": {
-  "conceito": "Sinovite transitória é uma inflamação autolimitada do quadril infantil e uma das causas mais frequentes de claudicação aguda. Ocorre predominantemente em meninos entre 3 e 8 anos, com pico próximo de 5 a 6 anos. Pode haver infecção viral recente. A criança geralmente apresenta dor, limitação por desconforto e pouca repercussão sistêmica. O principal problema clínico é distinguir artrite séptica. Febre alta, incapacidade completa de apoio, PCR e VHS elevados e leucocitose aumentam a preocupação com infecção. A maioria dos casos de sinovite melhora em poucos dias com repouso e anti-inflamatórios, mas persistência ou recorrência exige reavaliação para Perthes e outras doenças.",
-  "correta": "A alternativa C está correta. A sinovite transitória apresenta claro predomínio masculino e a idade média encontra-se aproximadamente ao redor de 6 anos. Essa combinação epidemiológica é clássica e deve ser lembrada quando a criança apresenta quadril irritável sem sinais sistêmicos importantes.",
+  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** sinovite transitória = ==meninos, idade média de 6 anos==",
+  "correta": "**Meninos, 6 anos.**\n- Faixa de 3 a 8 anos.\n- Predomínio masculino.",
   "incorretas": {
-   "A": "O sexo masculino está correto, porém a idade média de 3 anos é inferior à mais frequentemente descrita.",
-   "B": "Erra tanto o predomínio por sexo quanto a faixa etária média.",
-   "D": "A idade de aproximadamente 6 anos está correta, mas a doença é mais frequente em meninos."
+   "A": "**Idade errada.**\n- Média de 6.",
+   "B": "**Sexo e idade errados.**\n- Meninos de 6.",
+   "D": "**Sexo errado.**\n- Meninos."
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3831260/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0152": {
-  "conceito": "Na paralisia cerebral, alguns marcos do desenvolvimento motor têm valor prognóstico bem estabelecido para a futura capacidade de marcha. O marco mais citado nesse contexto é a capacidade de **sentar-se sem apoio**: uma criança que **não consegue sentar até os 2 anos de idade** tem prognóstico reservado para deambulação independente, esse é um dos preditores clínicos mais robustos e utilizados na prática, mais até do que o grau de retardo mental isolado ou o tipo topográfico de comprometimento (hemiplegia, por exemplo, que por si só já tem bom prognóstico de marcha).\n\nO controle de cabeça aos 8 meses é um marco mais precoce e, isoladamente, tem menor valor preditivo negativo do que a incapacidade de sentar aos 2 anos.",
-  "correta": "C. A incapacidade de sentar-se sem apoio aos 2 anos de idade é um dos critérios mais valorizados de mau prognóstico para a marcha na paralisia cerebral.",
+  "conceito": "### GMFCS (6 a 12 anos)\n| Nível | Mobilidade |\n|---|---|\n| I | anda sem restrições; corre e salta com limitação |\n| II | anda na maioria dos ambientes; limitação em distâncias, terreno irregular |\n| III | anda com ==dispositivo manual== (andador, muletas); cadeira para distâncias |\n| ==IV== | ==controle de cabeça e tronco==; anda pouco (casa, com ajuda); ==cadeira de rodas na comunidade== (pode ser motorizada) |\n| V | sem controle de cabeça e tronco; transportado |\n\n### Uso ortopédico\n| Nível | Preocupação |\n|---|---|\n| I-III | marcha: análise, cirurgia multinível |\n| ==IV-V== | ==luxação do quadril== (vigilância radiográfica), escoliose |\n\n- Índice de migração de Reimers > 30 a 40%: cirurgia de partes moles ou osteotomias.\n\n### Prognóstico de marcha na PC\n| Bom | Ruim |\n|---|---|\n| senta sozinho até ==2 anos== | ==não senta aos 2 anos== (Molnar) |\n| hemiplegia | tetraplegia |\n| | ==reflexos primitivos== persistentes após 18 a 24 meses (Bleck) |\n| | não senta aos 4 anos: raramente anda |\n\n> **Na prova:** pior prognóstico de marcha = ==não sentar aos 2 anos==",
+  "correta": "**Não sentar aos 2 anos.**\n- Preditor clássico de não deambulação.\n- Sentar até 2 anos prevê marcha.",
   "incorretas": {
-   "A": "O retardo mental influencia o prognóstico global, mas não é o critério motor mais diretamente associado ao prognóstico de marcha.",
-   "B": "A hemiplegia espástica, isoladamente, costuma ter bom prognóstico de marcha, a maioria dessas crianças chega a deambular.",
-   "D": "A incapacidade de controle de cabeça aos 8 meses é um marco mais precoce e tem menor valor preditivo isolado do que a incapacidade de sentar aos 2 anos."
+   "A": "**Não é o critério.**\n- Retardo mental não define a marcha.",
+   "B": "**Bom prognóstico.**\n- Hemiplégicos quase todos andam.",
+   "D": "**Não é o critério clássico.**\n- A idade de sentar pesa mais."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0153": {
