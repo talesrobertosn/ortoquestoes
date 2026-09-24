@@ -3062,91 +3062,91 @@
   "conferido": false
  },
  "pediatria-0229": {
-  "conceito": "No método de **Graf** para avaliação ultrassonográfica do quadril pediátrico, o **ângulo alfa** mede a inclinação do teto ósseo do acetábulo (deve ser maior que 60° em um quadril maduro e normal), enquanto o **ângulo beta** mede a inclinação do teto cartilaginoso/labral (deve ser menor que 55° em um quadril normal, refletindo um labrum bem posicionado, cobrindo adequadamente a cabeça femoral, sem estar horizontalizado ou revertido por deslocamento).",
-  "correta": "A. X representa o ângulo beta e é normal se menor que 55°.",
+  "conceito": "### Ultrassom de Graf\n| Ângulo | Linhas | Mede | Normal |\n|---|---|---|---|\n| ==alfa== | ilíaco × teto ==ósseo== | cobertura óssea | ==≥ 60°== |\n| ==beta== | ilíaco × teto ==cartilaginoso== (lábio) | cobertura cartilaginosa | ==< 55°== |\n\n### Tipos\n| Tipo | Alfa | Conduta |\n|---|---|---|\n| I | ≥ 60° | normal |\n| IIa | 50 a 59°, < 3 meses | imaturo fisiológico, controle |\n| IIb | 50 a 59°, > 3 meses | tratar |\n| IIc | 43 a 49° (beta < 77°) | tratar |\n| D | 43 a 49°, beta > 77° | descentrando |\n| III | < 43°, luxado | tratar |\n| IV | < 43°, luxado com lábio invertido | tratar |\n\n> **Na prova:** ângulo do teto cartilaginoso = ==beta, normal < 55°==.",
+  "correta": "**X é beta, normal < 55°.**\n- Teto cartilaginoso (lábio).\n- Alfa é o teto ósseo, normal ≥ 60°.",
   "incorretas": {
-   "B": "O ângulo alfa é considerado normal quando **maior** que 60° (refletindo boa cobertura óssea do acetábulo), não menor que 60° como afirma esta alternativa; um ângulo alfa menor indica um acetábulo raso e displásico.",
-   "C": "A seta amarela, posicionada junto à borda lateral do ílio, corresponde mais à linha de base (referência do ílio), não especificamente ao teto ósseo do acetábulo em si.",
-   "D": "A seta vermelha, direcionada à região do lábio/teto cartilaginoso, não corresponde à parede lateral da bacia, uma estrutura anatômica diferente."
+   "B": "**Valor invertido.**\n- Alfa normal é ≥ 60°.",
+   "C": "**Estrutura trocada.**\n- A seta não indica o teto ósseo.",
+   "D": "**Estrutura trocada.**\n- Não é a parede lateral do ilíaco."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0230": {
-  "conceito": "Na classificação de **Sillence** para a osteogênese imperfeita, os subtipos com sufixo **B** (IB e IVB) denotam, por definição, a presença de **dentinogênese imperfeita** (a alteração dentária translúcida, acinzentada/opalescente mostrada na imagem), em contraste com os subtipos A (IA e IVA), que denotam sua ausência. O **tipo III**, a forma progressivamente deformante, também apresenta classicamente essa alteração dentária associada, completando o grupo de tipos mais comumente associados a esse achado.",
-  "correta": "D. A alteração é mais encontrada nos tipos IB, III e IVB.",
+  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Base molecular\n- Colágeno tipo I: tripla hélice com repetição ==Gly-X-Y== (glicina a cada terceiro aminoácido).\n- ==Substituição da glicina== (mutação de sentido trocado em COL1A1/COL1A2) impede o enrolamento: formas graves (II, III, IV).\n- Mutação que reduz a quantidade (haploinsuficiência): forma leve (I).\n\n### Dentinogênese imperfeita\n- Dentes ==acinzentados/translúcidos==, frágeis.\n- Sillence subdivide: ==A sem== e ==B com== dentinogênese.\n- Mais encontrada em ==IB, III e IVB==.\n\n> **Na prova:** dentinogênese imperfeita = Sillence ==IB, III e IVB==",
+  "correta": "**IB, III e IVB.**\n- Subtipos B carregam a dentinogênese.\n- Frequente também no III.",
   "incorretas": {
-   "A": "Os subtipos **A** (IA e IVA), por definição na classificação de Sillence, denotam a **ausência** de dentinogênese imperfeita, o oposto do que a questão pede.",
-   "B": "Embora IB e IVB estejam corretos, o **tipo II** (a forma perinatal letal) não é classicamente caracterizado por essa subdivisão dentária, dada a gravidade e a letalidade precoce dessa forma.",
-   "C": "Os subtipos IA e IVA denotam ausência de dentinogênese imperfeita, tornando essa combinação inconsistente com a presença do achado mostrado na imagem."
+   "A": "**Subtipos A.**\n- Sem dentinogênese.",
+   "B": "**II letal.**\n- Não é o par cobrado.",
+   "C": "**Subtipos A.**\n- IA e IVA sem."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0231": {
-  "conceito": "A osteogênese imperfeita **tipo V**, um subtipo distinto (não relacionado a mutações no colágeno tipo I, mas ao gene IFITM5), é classicamente associada à formação de **calo ósseo hiperplásico** após fraturas, um calo exuberante que pode ter aspecto radiográfico agressivo, mimetizando um **osteossarcoma** e representando uma armadilha diagnóstica reconhecida, levando por vezes a biópsias desnecessárias se essa associação não for lembrada.",
-  "correta": "D. A alteração é vista no tipo V, e seu principal diagnóstico diferencial é o osteossarcoma.",
+  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n> **Na prova:** OI que simula osteossarcoma = ==tipo V== (calo hiperplásico).",
+  "correta": "**Tipo V e osteossarcoma.**\n- Calo hiperplásico pseudotumoral.\n- Principal diferencial: osteossarcoma.",
   "incorretas": {
-   "A": "O **tipo IV** não é classicamente associado à formação de calo hiperplásico exuberante, uma característica específica do tipo V; além disso, a osteomielite não é o diagnóstico diferencial clássico ensinado para esse achado radiográfico.",
-   "B": "O diagnóstico diferencial (osteossarcoma) está correto, mas a associação clássica com calo hiperplásico é específica do tipo V, não do tipo IV.",
-   "C": "O tipo V está correto, mas o diagnóstico diferencial classicamente ensinado para o calo hiperplásico exuberante é o osteossarcoma (pelo aspecto radiográfico agressivo), não a osteomielite."
+   "A": "**Tipo errado.**\n- IV não faz calo pseudotumoral.",
+   "B": "**Tipo errado.**\n- Diferencial certo.",
+   "C": "**Diferencial errado.**\n- Tipo certo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0232": {
-  "conceito": "A displasia epifisária de Meyer é uma condição benigna e autolimitada que mimetiza radiograficamente a doença de Legg-Calvé-Perthes, sendo um diagnóstico diferencial importante em um perfil clínico específico: crianças **menores de 4 anos** de idade com acometimento **bilateral**, diferente do Perthes clássico, que tipicamente acomete crianças um pouco mais velhas (pico entre 4 e 8 anos) e, na maioria dos casos, de forma **unilateral**.\n\nEssa combinação de idade precoce (< 4 anos) e bilateralidade deve levantar a suspeita de displasia de Meyer antes de se firmar o diagnóstico de Perthes bilateral verdadeiro, já que o prognóstico e a conduta são bastante diferentes entre as duas condições, a displasia de Meyer, em geral, não exige tratamento cirúrgico e tem resolução espontânea.",
-  "correta": "C. A displasia de Meyer deve ser suspeitada em indivíduos menores de 4 anos com doença bilateral.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Epidemiologia do Perthes\n| Aspecto | Dado |\n|---|---|\n| sexo | ==masculino== (4 a 5:1) |\n| idade | 4 a 8 anos |\n| lado | ==unilateral== (bilateral 10 a 15%, ==assimétrico no tempo==) |\n| perfil | baixa estatura, idade óssea atrasada, hiperatividade, tabagismo passivo |\n\n- Bilateral simétrico e simultâneo: pensar em ==displasia epifisária múltipla== ou hipotireoidismo.\n\n### Displasia de Meyer (dysplasia epiphysealis capitis femoris)\n- ==< 4 anos==, frequentemente ==bilateral==, ==assintomática==.\n- Núcleo da cabeça ==atrasado, irregular e granular==, sem fases de Perthes.\n- ==Regride sem sequelas==: não tratar como Perthes.\n\n### Outros diferenciais do Perthes bilateral\n- Displasia epifisária múltipla, hipotireoidismo, anemia falciforme, Gaucher.\n\n> **Na prova:** Perthes bilateral em criança pequena = pensar em ==displasia de Meyer==",
+  "correta": "**Menor de 4 anos, bilateral.**\n- Assintomática, resolve sozinha.\n- Não tratar como Perthes.",
   "incorretas": {
-   "A": "A displasia de Meyer é mais suspeitada em crianças menores de 4 anos, não maiores.",
-   "B": "A apresentação bilateral, e não unilateral, é o padrão que levanta a suspeita de displasia de Meyer nessa faixa etária.",
-   "D": "É a apresentação bilateral, não unilateral, que caracteriza o cenário clássico de suspeita de displasia de Meyer."
+   "A": "**Idade errada.**\n- Menor de 4.",
+   "B": "**Duplamente errada.**\n- Idade e lado.",
+   "D": "**Lado errado.**\n- Bilateral."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0233": {
-  "conceito": "Entre os diversos fatores prognósticos estudados na doença de Legg-Calvé-Perthes (extensão da necrose pela classificação de Catterall, classificação do pilar lateral de Herring, congruência articular, bilateralidade), os dois fatores mais consistentemente associados ao desfecho funcional a longo prazo são:\n- **Idade do paciente no início da doença**: quanto mais velha a criança ao diagnóstico (especialmente acima de 6-8 anos), pior tende a ser o prognóstico, já que há menor potencial de remodelação da cabeça femoral ao longo do crescimento residual.\n- **Deformidade final da cabeça femoral (esfericidade/congruência)**: a forma que a cabeça femoral assume ao final da fase de remodelação é o preditor mais direto de desenvolvimento de artrose precoce do quadril na vida adulta.\n\nO grau de necrose (Catterall) e a bilateralidade influenciam o processo, mas são os dois fatores acima (idade e deformidade residual da cabeça) que a literatura mais consistentemente associa ao desfecho funcional final.",
-  "correta": "A. A idade do paciente e a deformidade final da cabeça femoral são os principais fatores associados ao desfecho na doença de Perthes.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Herring em detalhe\n| Grupo | Pilar lateral | Prognóstico |\n|---|---|---|\n| A | ==sem perda== de altura | bom |\n| B | ==perda < 50%== | bom < 8 anos |\n| B/C | pilar estreito ou pouco ossificado, ~50% | intermediário |\n| C | ==perda > 50%== | ruim |\n\n### Desfecho a longo prazo\n- Dois fatores dominam: ==idade de início== (> 8 anos pior) e ==deformidade final da cabeça== (Stulberg).\n\n### Stulberg (maturidade)\n| Classe | Cabeça | Prognóstico |\n|---|---|---|\n| I-II | esférica | sem artrose |\n| III-IV | ovoide/achatada, congruente assférica | artrose no adulto médio |\n| V | achatada incongruente | artrose precoce |\n\n> **Na prova:** desfecho do Perthes = ==idade e deformidade da cabeça==",
+  "correta": "**Idade e deformidade da cabeça.**\n- Idade de início e esfericidade final (Stulberg).\n- Predizem artrose.",
   "incorretas": {
-   "B": "O grau de necrose da cabeça femoral influencia o processo, mas é a deformidade residual final, e não a extensão da necrose isoladamente, o fator mais associado ao desfecho, junto com a idade.",
-   "C": "A bilateralidade não é classicamente um dos dois principais fatores prognósticos, ao contrário da idade e da deformidade residual da cabeça.",
-   "D": "A bilateralidade não substitui a idade do paciente como um dos dois principais fatores prognósticos consagrados na literatura."
+   "B": "**Necrose não.**\n- A deformidade resultante pesa.",
+   "C": "**Nenhum dos dois.**\n- Não são os principais.",
+   "D": "**Bilateralidade não.**\n- Deformidade sim."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0234": {
-  "conceito": "Após a fixação in situ de uma epifisiólise proximal do fêmur (com parafuso canulado único, geralmente), o objetivo biológico do procedimento é estabilizar a fise e permitir seu fechamento fisiológico precoce, prevenindo progressão do escorregamento. O fechamento completo da fise, documentado radiograficamente, costuma ocorrer em um intervalo de aproximadamente **6 a 12 meses** após a cirurgia, um período relativamente longo, durante o qual o paciente ainda precisa de acompanhamento radiográfico seriado para confirmar a consolidação fisária e descartar progressão residual do escorregamento antes do fechamento completo.",
-  "correta": "D. Após a fixação in situ da epifisiólise, o fechamento fisário completo é esperado entre 6 e 12 meses.",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n> **Na prova:** parafuso na epifisiólise deve evitar o quadrante ==anterossuperior==",
+  "correta": "**6 a 12 meses.**\n- O parafuso atravessa a fise e induz o fechamento.\n- Acompanhar até fechar.",
   "incorretas": {
-   "A": "1 a 2 meses é um prazo curto demais para o fechamento fisário completo esperado após a fixação in situ.",
-   "B": "2 a 4 meses ainda subestima o tempo médio necessário para o fechamento fisário completo nesses casos.",
-   "C": "4 a 6 meses ainda tende a subestimar o prazo, que costuma se estender até cerca de um ano em boa parte dos casos."
+   "A": "**Cedo demais.**\n- Fise ainda aberta.",
+   "B": "**Cedo.**\n- Raramente fecha tão rápido.",
+   "C": "**Cedo.**\n- Abaixo do esperado."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0235": {
-  "conceito": "Na avaliação radiográfica de pacientes com epifisiólise proximal do fêmur, especialmente nos casos bilaterais ou de apresentação atípica, o **ângulo cefalodiafisário de Southwick** é usado para quantificar objetivamente o grau de escorregamento, permitindo classificar a gravidade (leve, moderada, grave) com base na diferença angular em relação ao lado considerado normal ou a um valor de referência populacional. O valor de referência normal desse ângulo, segundo Southwick, é de aproximadamente **145 graus**, servindo como parâmetro de comparação mesmo nos casos bilaterais, em que não há um quadril contralateral saudável para servir de controle direto.",
-  "correta": "B. O ângulo cefalodiafisário normal de referência, segundo Southwick, é de aproximadamente 145 graus.",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Ângulo de Southwick\n- Em ==perfil (rã de Lauenstein)==: ângulo entre a perpendicular à linha epifisária e o eixo da diáfise.\n- Comparar com o lado normal (subtrair o contralateral, ou ~10-12° se bilateral).\n\n### Outros\n| Nome | O que é |\n|---|---|\n| Klein | linha na borda superior do colo no AP deve cortar a epífise |\n| Dunn (modificado) | redução aberta com luxação cirúrgica |\n| Kramer | osteotomia basocervical |\n\n### Southwick bilateral\n- Sem lado normal para comparar: usar valores de referência.\n| Incidência | Normal (cefalodiafisário) |\n|---|---|\n| ==AP== | ==cerca de 145°== |\n| perfil | cerca de 10° |\n\n> **Na prova:** Southwick bilateral = ângulo ==cefalodiafisário normal de 145°==",
+  "correta": "**Cefalodiafisário de 145°.**\n- Referência no AP para o bilateral.\n- Perfil: cerca de 10°.",
   "incorretas": {
-   "A": "130 graus não corresponde ao valor de referência normal descrito por Southwick para esse ângulo.",
-   "C": "A nomenclatura correta do método de Southwick é \"ângulo cefalodiafisário\", não \"cervicodiafisário\", e o valor de 130 graus também não corresponde ao valor de referência.",
-   "D": "A nomenclatura correta do método de Southwick é \"ângulo cefalodiafisário\", não \"cervicodiafisário\", embora o valor numérico de 145 esteja certo, o nome do ângulo está incorreto."
+   "A": "**Valor errado.**\n- 145°.",
+   "C": "**Ângulo errado.**\n- É o cefalodiafisário.",
+   "D": "**Ângulo errado.**\n- Cervicodiafisário é outro."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0236": {
-  "conceito": "Entre os fatores de risco perinatais classicamente associados à paralisia cerebral, a **incompatibilidade Rh** entre mãe e feto é um exemplo direto de mecanismo causal bem estabelecido: quando não tratada com imunoglobulina anti-Rh (profilaxia hoje amplamente disponível), pode levar à hemólise fetal grave, hiperbilirrubinemia intensa e **kernicterus** (encefalopatia bilirrubínica), uma causa clássica e historicamente importante de paralisia cerebral do tipo discinética/atetoide, por depósito de bilirrubina nos núcleos da base.\n\nEsse é um dos exemplos mais diretos de mecanismo fisiopatológico ligando uma condição perinatal específica a um subtipo definido de paralisia cerebral, o que o torna um dos fatores mais classicamente citados nessa associação causal direta.",
-  "correta": "B. A incompatibilidade Rh predispõe à paralisia cerebral, classicamente por meio do kernicterus (encefalopatia bilirrubínica).",
+  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n### Fatores de risco da PC\n| Período | Fatores |\n|---|---|\n| pré-natal | infecções (TORCH), ==incompatibilidade Rh== (kernicterus), malformações, gemelaridade |\n| perinatal | ==prematuridade== (principal), baixo peso, asfixia |\n| pós-natal | meningite, trauma craniano, afogamento |\n\n> **Na prova:** condição predisponente = ==incompatibilidade Rh== (kernicterus).",
+  "correta": "**Incompatibilidade Rh.**\n- Hemólise e hiperbilirrubinemia: kernicterus.\n- PC discinética.",
   "incorretas": {
-   "A": "A gravidez múltipla está associada a maior risco de paralisia cerebral, sobretudo por aumentar o risco de prematuridade, mas o mecanismo causal direto mais classicamente descrito nessa questão é o da incompatibilidade Rh.",
-   "C": "A gravidez por fertilização assistida tem alguma associação epidemiológica com risco aumentado, mas não é o mecanismo causal direto classicamente mais citado.",
-   "D": "O parto cesáreo, isoladamente, não é considerado um fator causal direto de paralisia cerebral, muitas vezes é uma consequência de uma gestação já complicada, e não a causa em si."
+   "A": "**Risco indireto.**\n- O gabarito é o Rh.",
+   "C": "**Não é o fator.**\n- Por si só.",
+   "D": "**Não predispõe.**\n- Via de parto não causa."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0237": {
