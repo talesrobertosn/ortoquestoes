@@ -4849,103 +4849,103 @@
   "conferido": false
  },
  "pediatria-0381": {
-  "conceito": "Em um lactente com febre, irritabilidade, pseudoparalisia do membro e postura em flexão/rotação externa do quadril (posição de conforto que minimiza a pressão intra-articular), especialmente com fator de risco de internação neonatal prévia (possível bacteremia associada a acesso vascular), a hipótese mais provável é **artrite séptica do quadril**, confirmada pelo aumento do líquido articular à ultrassonografia. Trata-se de uma emergência ortopédica, exigindo **drenagem cirúrgica** (para descomprimir a articulação e reduzir o dano condral/vascular à cabeça femoral) associada a **antibioticoterapia** sistêmica.",
-  "correta": "C. O diagnóstico é artrite séptica do quadril, e a conduta é drenagem cirúrgica e antibioticoterapia.",
+  "conceito": "### Artrite séptica no neonato\n- Fatores de risco: ==UTI neonatal==, cateteres (umbilical, venoso femoral), prematuridade, punções.\n- Pouca febre e leucocitose; ==pseudoparalisia== e irritabilidade dominam.\n- Quadril em ==flexão, abdução e rotação externa== (maior volume capsular).\n- Agentes: ==S. aureus==, estreptococo do grupo B, gram-negativos.\n- Osteomielite metafisária associada é frequente (vasos transfisários até cerca de 18 meses).\n\n### Imagem\n- US: derrame. RX: ==alargamento do espaço articular==, subluxação lateral (pressão intracapsular).\n\n### Conduta\n- ==Emergência==: ==drenagem cirúrgica (artrotomia)== + ==antibiótico== IV.\n- Atraso: necrose da cabeça, destruição da fise, luxação (sequela de Hunka/Choi).\n\n### Sinovite transitória\n- Rara antes de 1 a 2 anos; nunca explica febre + pseudoparalisia no lactente.\n\n> **Na prova:** lactente de UTI com febre, pseudoparalisia e derrame = ==artrite séptica: drenar + antibiótico==",
+  "correta": "**Séptica, drenagem e antibiótico.**\n- Quadro clássico do neonato de UTI.\n- Drenagem de urgência preserva a cabeça.",
   "incorretas": {
-   "A": "A **sinovite transitória** é um quadro mais brando e autolimitado, geralmente sem febre alta e toxemia como as descritas, e mesmo que fosse esse o diagnóstico, a drenagem cirúrgica não seria a conduta indicada para essa condição benigna.",
-   "B": "Além do diagnóstico de sinovite transitória não ser compatível com a gravidade do quadro clínico descrito, ela não corresponde ao efusão importante e ao contexto de risco infeccioso do caso.",
-   "D": "O diagnóstico de artrite séptica está correto, mas repouso e observação isolados são insuficientes; a conduta correta exige drenagem cirúrgica urgente associada à antibioticoterapia, dado o risco de destruição da cabeça femoral."
+   "A": "**Diagnóstico errado.**\n- Sinovite não se drena e é rara aos 2 meses.",
+   "B": "**Diagnóstico errado.**\n- Febre e pseudoparalisia apontam infecção.",
+   "D": "**Falta drenar.**\n- Antibiótico isolado não basta no quadril."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0382": {
-  "conceito": "Na escoliose neuromuscular a decisão de estender a artrodese até a pelve se apoia em duas perguntas. O paciente DEAMBULA? Se sim, evita-se incluir a pelve, porque a mobilidade lombossacra é necessária para andar e fundi-la piora a marcha. E existe OBLIQUIDADE PÉLVICA significativa? Acima de cerca de 15 graus, a pelve inclinada descompensa o assento, concentra pressão numa tuberosidade isquiática (com risco de úlcera) e impede que a correção acima se sustente. A soma das duas, paciente não deambulador com obliquidade acima de 15 graus, é a indicação clássica de incluir a pelve.",
-  "correta": "Não deambuladores com obliquidade pélvica maior que 15 graus.",
+  "conceito": "### Escoliose neuromuscular\n- Curvas longas em C, toracolombares, com ==obliquidade pélvica==; progridem após a maturidade.\n- Colete não impede progressão; ajuda sentar.\n\n### Quando incluir a pelve\n| Situação | Extensão da artrodese |\n|---|---|\n| ==não deambulador== com ==obliquidade > 15°== | ==T2 até a pelve== (ilíaco, S2AI) |\n| deambulador | ==preservar a pelve== (fixar a pelve prejudica a marcha); até L5 |\n| obliquidade pequena, L5 horizontal | pode parar em L5 |\n\n### Indicações gerais\n- Curva > 40 a 50°, dificuldade para sentar, capacidade pulmonar em queda.\n- Riscos: infecção, sangramento, complicações respiratórias.\n\n> **Na prova:** incluir a pelve = ==não deambulador com obliquidade > 15°==",
+  "correta": "**Não deambulador, obliquidade > 15°.**\n- Equilibra a pelve para sentar.\n- Fixação até o ilíaco.",
   "incorretas": {
-   "A": "No paciente que anda, incluir a pelve compromete a marcha e é evitado.",
-   "B": "Mesma objeção, agravada por dispensar qualquer limiar de obliquidade.",
-   "D": "Obliquidade pequena não justifica a morbidade de estender a fixação até a pelve."
+   "A": "**Deambulador.**\n- Fixar a pelve prejudica a marcha.",
+   "B": "**Deambulador.**\n- Pelve preservada.",
+   "D": "**Qualquer obliquidade.**\n- Limite de cerca de 15°."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 4.9"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0383": {
-  "conceito": "Na investigação de suspeita de lesões não acidentais em crianças, é importante distinguir os padrões de fratura de **alta especificidade** para abuso dos padrões mais inespecíficos e comuns em traumas acidentais. As duas fraturas classicamente citadas como de alta especificidade são:\n- As fraturas **metafisárias** em alça de balde (bucket-handle) ou do tipo \"canto\" (corner fracture) (não as epifisárias), decorrentes de mecanismos de tração-torção característicos de sacudidas violentas.\n- As fraturas de costelas **posteriores** (não as anteriores), decorrentes de compressão ântero-posterior do tórax durante a manipulação violenta da criança, comprimindo as costelas contra os processos transversos vertebrais.\n\nEssa distinção (metafisária, não epifisária; posterior, não anterior) é frequentemente cobrada de forma invertida em prova, exatamente como nas alternativas incorretas desta questão.",
-  "correta": "D. As fraturas metafisárias em alça de balde e as fraturas posteriores das costelas têm alta especificidade para lesões não acidentais.",
+  "conceito": "### Tipos de maus-tratos\n| Tipo | Frequência |\n|---|---|\n| ==negligência== | ==a mais comum== |\n| abuso físico | o mais visto pelo ortopedista |\n| emocional | frequente, coexistente |\n| sexual | subnotificado |\n\n### Fraturas suspeitas de abuso físico\n| Alta especificidade | Moderada |\n|---|---|\n| ==lesão metafisária clássica== (canto, alça de balde) | fraturas múltiplas em estágios diferentes |\n| ==costelas posteriores== | fratura de crânio complexa |\n| escápula, processos espinhosos, esterno | vértebras, dedos em não deambulante |\n\n### Alertas\n- Fratura de fêmur em criança que não anda.\n- História incompatível, atraso na busca de atendimento.\n- Conduta: ==inventário esquelético== (< 2 anos), fundo de olho, notificação obrigatória.\n\n### Lesão metafisária clássica (fratura do canto)\n- Fratura ==planar na zona de ossificação provisória==, por forças de tração e torção (sacudir o bebê).\n- Aspecto de ==canto== ou ==alça de balde== conforme a incidência.\n- Fêmur distal, tíbia proximal e distal, úmero proximal.\n- Em lactentes, ==altamente específica== de abuso.\n\n### Menos específicas\n- Diafisárias (espiral ou transversa) são comuns e só sugerem abuso pelo contexto (criança que não anda).\n\n### Por que costelas posteriores\n- Compressão anteroposterior do tórax ao ==apertar e sacudir== o bebê.\n- Alavanca sobre o processo transverso: fratura ==posterior, junto à articulação costovertebral==.\n- RCP raramente fratura costelas posteriores em lactentes.\n\n> **Na prova:** alta especificidade = ==metafisária em alça de balde + costelas posteriores==",
+  "correta": "**Metafisárias em alça de balde e costelas posteriores.**\n- Ambas de alta especificidade.\n- Mecanismos de tração e compressão.",
   "incorretas": {
-   "A": "São as fraturas metafisárias, não epifisárias, e as posteriores, não anteriores, que têm alta especificidade para abuso, ambos os componentes dessa alternativa estão incorretos.",
-   "B": "São as fraturas metafisárias, não epifisárias, que têm alta especificidade, o componente das costelas posteriores está correto, mas o das fraturas epifisárias está incorreto.",
-   "C": "São as fraturas de costelas posteriores, não anteriores, que têm alta especificidade, o componente das fraturas metafisárias está correto, mas o das costelas anteriores está incorreto."
+   "A": "**Epifisárias e anteriores.**\n- Lesão é metafisária; posteriores.",
+   "B": "**Epifisária.**\n- A lesão clássica é metafisária.",
+   "C": "**Costelas anteriores.**\n- Menos específicas."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0384": {
-  "conceito": "Na osteogênese imperfeita, a formação de calo ósseo hiperplásico e exuberante após fraturas ou osteotomias é uma característica associada especificamente ao subtipo causado por defeitos no gene **IFITM5** (correspondente à osteogênese imperfeita tipo V), diferente dos genes do colágeno tipo I (COL1A1/COL1A2, responsáveis pela maioria dos demais tipos) ou de outros genes associados a formas recessivas mais raras da doença.",
-  "correta": "B. O excesso de calo ósseo está associado ao defeito no gene IFITM5.",
+  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Genes além do colágeno\n| Gene | Tipo | Marca |\n|---|---|---|\n| ==IFITM5== | ==V== | ==calo hiperplásico==, calcificação da membrana interóssea, luxação da cabeça do rádio |\n| SERPINF1 | VI | defeito de mineralização |\n| CRTAP / ==LEPRE1== | VII / VIII | recessivos, graves |\n| WNT1 | XV | osteoporose grave, SNC |\n| COL1A1/COL1A2 | I a IV | 85 a 90% dos casos |\n\n> **Na prova:** calo hiperplásico na OI = ==IFITM5 (tipo V)==",
+  "correta": "**IFITM5.**\n- OI tipo V, dominante.\n- Calo exuberante que simula osteossarcoma.",
   "incorretas": {
-   "A": "O gene **WNT1** está associado a uma forma recessiva rara de osteogênese imperfeita, sem a associação clássica com a formação de calo hiperplásico exuberante.",
-   "C": "O gene **LEPRE1** (P3H1) está associado à osteogênese imperfeita tipo VIII, uma forma grave recessiva, sem a associação clássica com calo hiperplásico.",
-   "D": "O gene **COL1A1**, responsável pela maioria dos casos de osteogênese imperfeita (tipos I a IV), não é a mutação classicamente associada ao fenômeno específico do calo hiperplásico exuberante, uma característica do tipo V (IFITM5)."
+   "A": "**WNT1.**\n- Osteoporose grave, sem calo hiperplásico.",
+   "C": "**LEPRE1.**\n- Tipo VIII, recessivo.",
+   "D": "**COL1A1.**\n- Tipos clássicos, sem calo hiperplásico."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0385": {
-  "conceito": "A marcha anserina é uma marcha miopática: fraqueza dos abdutores e extensores do quadril impede estabilização pélvica e o paciente inclina o tronco para reduzir o braço de alavanca. Na distrofia de Duchenne, a fraqueza proximal progressiva, o sinal de Gowers e a pseudohipertrofia de panturrilhas acompanham esse padrão. A hiperlordose é compensação para a fraqueza extensora do quadril e deslocamento anterior do centro de massa.",
-  "correta": "A alternativa D está correta. Duchenne produz fraqueza proximal e marcha anserina, com hiperlordose lombar compensatória. Parkinson causa marcha festinante, passos curtos e redução do balanço dos braços, não este padrão miopático.",
+  "conceito": "### Distrofia muscular de Duchenne\n- ==Ligada ao X==, meninos; ausência de ==distrofina==.\n- Fraqueza ==proximal== (cintura pélvica primeiro), ==pseudo-hipertrofia das panturrilhas==, ==Gowers== positivo.\n- CPK muito elevada; biópsia/genética.\n\n### Perda da marcha (8 a 12 anos)\n| Fraqueza | Compensação |\n|---|---|\n| ==extensores do quadril== | hiperlordose, tronco atrás do quadril |\n| ==dorsiflexores== | marcha na ponta, equino |\n| quadríceps | joelho travado em extensão |\n\n### Ortopedia\n- Contraturas: equino, flexão do quadril, banda iliotibial.\n- ==Escoliose== após perder a marcha: artrodese precoce (antes da piora respiratória, CVF > 30 a 40%).\n- Corticoide prolonga a marcha e reduz escoliose.\n\n### Becker\n- Distrofina reduzida; mais tardia e branda.\n\n### Marcha anserina (de pato)\n- ==Fraqueza da cintura pélvica== (glúteo médio e máximo): pelve cai a cada passo, tronco oscila lateralmente.\n- ==Hiperlordose lombar== para manter a linha de gravidade atrás do quadril.\n- Base alargada, marcha na ponta dos pés.\n- Também na DDQ bilateral e na coxa vara bilateral.\n\n> **Na prova:** marcha anserina = ==Duchenne com hiperlordose lombar==",
+  "correta": "**Duchenne com hiperlordose.**\n- Fraqueza pélvica proximal.\n- Lordose compensa os extensores fracos.",
   "incorretas": {
-   "A": "A alternativa A (doença de PARKINSON, e o paciente apresenta uma hipercifose torácica.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "B": "A alternativa B (doença de PARKINSON, e o paciente apresenta uma hiperlordose lombar.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "C": "A alternativa C (distrofia muscular de DUCHENNE, e o paciente apresenta uma hipercifose torácica.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa."
+   "A": "**Parkinson.**\n- Marcha festinante.",
+   "B": "**Parkinson.**\n- Tronco fletido, não lordótico.",
+   "C": "**Cifose.**\n- A compensação é lordose."
   },
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide",
    "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 20"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0386": {
-  "conceito": "O núcleo de ossificação da cabeça femoral costuma se tornar radiograficamente visível por volta dos **4 a 6 meses** de idade em uma criança com desenvolvimento normal. Esse marco radiográfico coincide, no desenvolvimento neuropsicomotor típico, com a aquisição recente da capacidade de **sustentar a cabeça e o tronco em decúbito ventral** (controle cervical e de tronco em prono, geralmente conquistado entre 3 e 4 meses), um marco motor bem anterior a outras conquistas citadas nas demais alternativas, que ocorrem meses depois (sentar sem apoio por volta dos 6-8 meses, ficar em pé com apoio por volta dos 9-10 meses, subir escadas com apoio e andar sem apoio geralmente após os 12 meses).",
-  "correta": "C. O início da ossificação da cabeça femoral coincide, no desenvolvimento normal, com a aquisição recente da capacidade de sustentar a cabeça e o tronco em decúbito ventral.",
+  "conceito": "### Núcleo de ossificação da cabeça femoral\n- Aparece entre ==4 e 6 meses== (meninas antes).\n- Ao nascer, a cabeça é cartilaginosa: ==ultrassom (Graf)== é o exame.\n- Atraso do núcleo: sinal de DDQ (lado luxado ossifica depois), hipotireoidismo.\n\n### Imagem na DDQ\n| Idade | Exame | Parâmetros |\n|---|---|---|\n| < 4 a 6 meses | ultrassom | ângulo alfa (≥ 60° normal), beta |\n| > 4 a 6 meses | radiografia | Hilgenreiner, Perkins, Shenton, índice acetabular (< 30° ao nascer) |\n\n### Outros núcleos do quadril\n- Trocanter maior: 4 anos; trocanter menor: 12 anos; trirradiada fecha 14 a 16 anos.\n\n### Marcos por volta dos 4 meses\n| Idade | Marco |\n|---|---|\n| 3 a 4 meses | ==sustenta cabeça e tronco em prono== (apoio nos antebraços) |\n| 6 meses | senta com apoio, rola |\n| 9 a 10 meses | fica em pé com apoio |\n| 12 a 15 meses | anda sozinho |\n| 18 a 24 meses | sobe escadas com apoio |\n\n> **Na prova:** núcleo da cabeça surgindo = criança que ==sustenta cabeça e tronco em prono==",
+  "correta": "**Sustenta cabeça e tronco em prono.**\n- Marco de 3 a 4 meses.\n- Coincide com o núcleo da cabeça femoral.",
   "incorretas": {
-   "A": "Andar sem apoio é um marco motor bem mais tardio (geralmente após os 12 meses), muito depois do início da ossificação da cabeça femoral.",
-   "B": "Subir escadas com apoio é um marco motor tardio, adquirido bem depois do início da ossificação da cabeça femoral.",
-   "D": "Levantar-se em ortostatismo com apoio dos braços é um marco motor mais tardio (por volta dos 9-10 meses), posterior ao início da ossificação da cabeça femoral."
+   "A": "**Andar sem apoio.**\n- 12 a 15 meses.",
+   "B": "**Escadas com apoio.**\n- 18 a 24 meses.",
+   "D": "**Em pé com apoio.**\n- 9 a 10 meses."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0387": {
-  "conceito": "O **pé calcâneo valgo** é uma deformidade postural congênita, frequentemente relacionada ao posicionamento intrauterino, em que o pé se apresenta acentuadamente dorsifletido e evertido em relação à perna (o oposto do pé torto), geralmente flexível e de resolução espontânea ou com manipulação/alongamento simples, exatamente a posição em dorsiflexão exagerada mostrada na radiografia.",
-  "correta": "C. A deformidade identificada está associada ao pé calcâneo valgo.",
+  "conceito": "### Arqueamentos congênitos da tíbia\n| Direção | Associação | Evolução |\n|---|---|---|\n| ==posteromedial== | ==pé calcaneovalgo== | ==benigna==, corrige espontaneamente |\n| anterolateral | NF1, pseudartrose | maligna; órtese, nunca osteotomia profilática |\n| anteromedial | hemimelia fibular | discrepância, deformidade do pé |\n\n### Posteromedial: o que esperar\n- Angulação melhora nos primeiros 2 a 3 anos; o pé calcâneo também.\n- Deixa ==discrepância residual== (3 a 4 cm em média): acompanhar até a maturidade (epifisiodese ou alongamento).\n- Alongamento passivo do tornozelo em ==flexão plantar== (o pé está em dorsiflexão).\n- ==Osteotomia== só se persistir arqueamento importante ==após os 4 anos== (raro).\n\n> **Na prova:** arqueamento posteromedial da tíbia = associado ao ==pé calcaneovalgo==",
+  "correta": "**Pé calcaneovalgo.**\n- Acompanha o arqueamento posteromedial.\n- Ambos melhoram espontaneamente.",
   "incorretas": {
-   "A": "A **hemimelia fibular** cursa com deficiência ou ausência da fíbula, associada a encurtamento do membro e outras deformidades ósseas, um padrão diferente da simples dorsiflexão exagerada do pé mostrada.",
-   "B": "O **pé torto congênito** apresenta o padrão oposto: equino, adução e varo do pé (voltado para baixo e para dentro), não a dorsiflexão e eversão exageradas mostradas na imagem.",
-   "D": "Um defeito de consolidação após fratura pressupõe um evento traumático prévio, não uma deformidade posicional presente desde o nascimento, como sugerido pela apresentação clínica."
+   "A": "**Hemimelia fibular.**\n- Arqueamento anteromedial.",
+   "B": "**PTC.**\n- Sem arqueamento tibial.",
+   "D": "**Pós-fratura.**\n- Deformidade congênita."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0388": {
-  "conceito": "A fase de apoio tem três momentos e o pé faz coisas opostas em cada um. NA RESPOSTA À CARGA, logo após o contato do calcanhar, o pé PRONA: a subtalar everte, o pé fica flexível e absorve o impacto, adaptando-se ao terreno. NO MÉDIO APOIO, com o pé plano e a tíbia avançando sobre ele, a pronação atinge o pico e começa a se desfazer, a subtalar RESSUPINA, isto é, INVERTE, e o pé inicia a conversão de amortecedor flexível em alavanca rígida. NA PROPULSÃO, com a elevação do calcanhar, a inversão se completa, o médio-pé trava e a fáscia plantar é tensionada pelo mecanismo de cabrestante. O TIBIAL POSTERIOR é o músculo que comanda essa transição, e ele o faz por CONTRAÇÃO EXCÊNTRICA: contrai enquanto ainda está sendo alongado, freando o que resta da pronação e conduzindo o retropé para a inversão em vez de produzi-la de forma brusca. É essa dupla função que explica a clínica da disfunção do tendão, sem o freio excêntrico o arco desaba, e sem a inversão do médio apoio em diante o paciente não consegue subir na ponta do pé nem o calcâneo variza ao tentá-lo.",
-  "correta": "Contração excêntrica do tibial posterior com inversão da subtalar.",
+  "conceito": "### Pé e tornozelo no ciclo\n| Fase | Subtalar | Tibial posterior | Tornozelo |\n|---|---|---|---|\n| contato inicial | leve inversão | | neutro, dorsiflexores excêntricos |\n| resposta à carga | ==eversão== (pé flexível, amortece) | ==excêntrico== (freia a eversão) | flexão plantar |\n| ==apoio médio== | ==caminha para inversão== | ==excêntrico/ativo== | tíbia avança; sóleo excêntrico |\n| apoio terminal | ==inversão== (pé rígido, alavanca) | concêntrico | calcanhar sobe |\n\n### Por que importa\n- Eversão desbloqueia a mediotarsal (pé flexível); inversão bloqueia (alavanca rígida para impulsão).\n- Insuficiência do tibial posterior: pé plano adquirido, sem inversão no apoio terminal.\n\n> **Na prova:** apoio médio = ==tibial posterior excêntrico e inversão da subtalar==",
+  "correta": "**TP excêntrico e inversão.**\n- TP controla o pé e inicia o bloqueio.\n- Pé passa de flexível a rígido.",
   "incorretas": {
-   "A": "O tibial posterior não relaxa no médio apoio, é justamente aí que ele mais trabalha. E a eversão pertence à fase anterior, a de resposta à carga.",
-   "B": "Acerta a inversão da subtalar, mas errar o estado do músculo desfaz o raciocínio: é a atividade excêntrica do tibial posterior que produz essa inversão controlada.",
-   "C": "Acerta a contração excêntrica, mas a eversão da subtalar é o que acontece ANTES, na resposta à carga; no médio apoio o movimento já se inverteu."
+   "A": "**TP ativo.**\n- Não relaxa no apoio médio.",
+   "B": "**TP ativo.**\n- Contração excêntrica.",
+   "C": "**Eversão.**\n- Típica da resposta à carga."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 1.1"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0390": {
   "conceito": "A sinovite transitória do quadril é a causa mais comum de claudicação dolorosa aguda em crianças pequenas, com pico de incidência classicamente descrito entre **5 e 6 anos** de idade (dentro de uma faixa mais ampla de 3 a 8 anos em que a condição pode ocorrer), sendo mais rara antes dos 2-3 anos e após os 10 anos. Reconhecer essa faixa etária típica é parte do raciocínio diagnóstico inicial diante de uma criança com dor e claudicação do quadril de início agudo, ajudando a diferenciar esse quadro autolimitado de outras causas de dor no quadril mais comuns em faixas etárias distintas (como a displasia do desenvolvimento do quadril em lactentes ou a epifisiólise em pré-adolescentes/adolescentes).",
