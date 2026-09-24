@@ -5966,95 +5966,96 @@
   "conferido": false
  },
  "pediatria-0486": {
-  "conceito": "O joelho valgo patológico na infância, quando de causa metabólica, tem diferentes perfis conforme a doença de base. Enquanto o raquitismo nutricional clássico e o raquitismo hipofosfatêmico (vitamina D-resistente) tendem a se associar mais classicamente a deformidades em **varo** (especialmente em crianças pequenas, em fase de arqueamento fisiológico normal exagerado pela doença metabólica), a **osteodistrofia renal** (secundária à insuficiência renal crônica) está mais classicamente associada a um padrão de deformidade em **valgo** progressivo, sobretudo em crianças mais velhas, refletindo diferenças na biomecânica do distúrbio de mineralização óssea e na distribuição de carga na fise nessas condições.",
-  "correta": "D. O joelho valgo infantil patológico está mais frequentemente associado à osteodistrofia renal.",
+  "conceito": "### Raquitismo: laboratório\n| Tipo | Ca | P | FA | PTH | Detalhe |\n|---|---|---|---|---|---|\n| nutricional (vit. D) | ↓/N | ↓ | ↑ | ↑ | 25-OH-D baixa |\n| hipofosfatêmico (vit. D resistente, ligado ao X) | N | ==↓↓== | ↑ | N | PHEX, FGF23 alto; perda renal de P |\n| vit. D dependente I | ↓ | ↓ | ↑ | ↑ | 1α-hidroxilase |\n| vit. D dependente II | ↓ | ↓ | ↑ | ↑ | receptor, alopecia |\n| ==osteodistrofia renal== | ↓ | ==↑== | ↑ | ↑↑ | rim ==não excreta fosfato== |\n\n### Ortopedia da osteodistrofia renal\n- Geno valgo, ==epifisiólise== (inclusive em locais atípicos), fraturas.\n- Controle metabólico antes de operar.\n\n### Valgo patológico\n| Causa | Pista |\n|---|---|\n| ==osteodistrofia renal== | ==valgo== é a deformidade típica; epifisiólise |\n| raquitismo nutricional/hipofosfatêmico | mais ==varo== (pode ser valgo) |\n| pós-traumático (Cozen) | fratura metafisária proximal da tíbia |\n| displasias, NF1 | variável |\n\n> **Na prova:** valgo patológico infantil = mais associado à ==osteodistrofia renal==",
+  "correta": "**Osteodistrofia renal.**\n- Valgo é a deformidade típica.\n- Hiperparatireoidismo secundário.",
   "incorretas": {
-   "A": "O raquitismo nutricional está mais classicamente associado a deformidades em varo, não em valgo.",
-   "B": "A neurofibromatose está mais associada ao arqueamento anterolateral e à pseudartrose da tíbia, não ao joelho valgo patológico.",
-   "C": "A hipofosfatemia (raquitismo vitamina D-resistente) está mais classicamente associada a deformidades em varo, semelhante ao padrão do raquitismo nutricional."
+   "A": "**Raquitismo.**\n- Mais comum o varo.",
+   "B": "**NF1.**\n- Arqueamento tibial anterolateral.",
+   "C": "**Hipofosfatemia.**\n- Geralmente varo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0487": {
-  "conceito": "O menisco discoide tipo **Wrisberg**, na classificação de Watanabe, é definido justamente pela **ausência das inserções meniscotibiais posteriores normais** (o chamado ligamento coronário, que normalmente ancora a periferia do menisco à tíbia), o menisco fica estabilizado apenas pelo ligamento meniscofemoral de Wrisberg, tornando-o hipermóvel e biomecanicamente instável. Essa ausência do ligamento coronário posterior é o que diferencia o tipo Wrisberg dos tipos completo e incompleto (que mantêm inserções periféricas estáveis, mesmo variando no grau de cobertura do platô tibial).",
-  "correta": "D. O tipo Wrisberg do menisco discoide não possui o ligamento coronário (inserção meniscotibial posterior).",
+  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Clínica por idade\n| Idade | Apresentação |\n|---|---|\n| ==criança pequena== | ==ressalto (clunk)== audível e ==perda da extensão==, geralmente indolor (Wrisberg instável) |\n| criança maior/adolescente | dor, derrame, bloqueio (lesão do discoide) |\n\n> **Na prova:** Wrisberg = ==sem ligamento coronário== (instável)",
+  "correta": "**Wrisberg sem coronário.**\n- Preso só pelo ligamento de Wrisberg.\n- Hipermóvel: ressalto.",
   "incorretas": {
-   "A": "O menisco discoide é muito mais comum no menisco lateral do que no medial, ao contrário do que essa alternativa afirma.",
-   "B": "A taxa de bilateralidade relatada na literatura costuma ser mais alta do que 5% para o menisco discoide.",
-   "C": "É justamente o tipo Wrisberg, e não o tipo completo (que recobre todo o platô mantendo aderência periférica íntegra), que apresenta essa característica de recobrimento total, mas ele não possui aderência periférica íntegra, é definido justamente pela ausência dela."
+   "A": "**Lateral.**\n- Discoide é quase sempre lateral.",
+   "B": "**Bilateral até 20%.**\n- Mais que 5%.",
+   "C": "**Tipo 3 é Wrisberg.**\n- Não tem aderência posterior."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0488": {
-  "conceito": "A doença de Blount **infantil** (de início precoce) tem sua prevalência e sua gravidade associadas a fatores de risco bem estabelecidos: obesidade, marcha precoce e a **raça negra**. Entre esses pacientes, o sexo **feminino** está associado a um pior prognóstico e a uma maior tendência de progressão da deformidade, sendo, portanto, o grupo (sexo feminino, raça negra) mais associado a evolução desfavorável na forma infantil da doença.",
-  "correta": "D. O pior prognóstico ocorre no sexo feminino, na raça negra.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Achados\n- ==Bico metafisário medial==; ==subluxação lateral da tíbia== (lateral thrust na marcha).\n- Associação com obesidade e deficiência de vitamina D.\n- Pior prognóstico: ==meninas negras==, obesas, início precoce, estágios avançados.\n\n> **Na prova:** Blount pior prognóstico = ==meninas negras obesas==, não meninos",
+  "correta": "**Feminino, raça negra.**\n- Obesas, início precoce.\n- Maior recidiva após osteotomia.",
   "incorretas": {
-   "A": "O sexo masculino e a raça branca não correspondem ao perfil de pior prognóstico classicamente descrito para a forma infantil da doença de Blount.",
-   "B": "Embora a raça negra seja de fato um fator de pior prognóstico, o sexo associado a essa maior gravidade na forma infantil é o feminino, não o masculino.",
-   "C": "Embora o sexo feminino esteja corretamente associado ao pior prognóstico, a raça associada não é a branca, e sim a negra."
+   "A": "**Masculino branco.**\n- Melhor prognóstico.",
+   "B": "**Masculino.**\n- Pior em meninas.",
+   "C": "**Branca.**\n- Pior na raça negra."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0489": {
-  "conceito": "A osteotomia periacetabular de Ganz reorienta o acetábulo em displasia residual preservando a coluna posterior e permitindo mobilização do fragmento. É indicada após maturidade esquelética, quando há cartilagem viável e deformidade acetabular corrigível. Por não estreitar o canal do parto nem alterar globalmente a forma pélvica, mantém em geral compatibilidade com gestação futura.",
-  "correta": "A alternativa B está correta. A osteotomia não altera a forma global da pelve de modo a impedir gestação. Fise aberta é contraindicação relativa, osteotomia trocantérica pode ser associada em casos selecionados e diferentes vias podem ser usadas.",
+  "conceito": "### Osteotomias pélvicas na DDQ\n| Tipo | Técnica | Característica |\n|---|---|---|\n| ==Salter== | osteotomia ==inominada completa== acima do acetábulo, cunha de ilíaco anterior | redireciona; ==não muda volume==; 18 meses a 6 anos |\n| Pemberton | pericapsular incompleta, dobradiça na trirradiada | reduz volume, acetábulo grande |\n| Dega | incompleta, posterior preservada | PC, displasia posterolateral |\n| Steel | ==tripla== (ílio, ísquio, púbis) | criança maior |\n| Ganz | ==periacetabular== (Bernese) | trirradiada fechada |\n| Chiari | salvamento, medializa | sem congruência |\n\n### Salter na imagem\n- Linha reta do ciático maior à espinha ilíaca anteroinferior.\n- Enxerto triangular da crista ilíaca, fixado com fios.\n- Pivô na sínfise púbica.\n\n### Ganz (periacetabular, Bernese)\n- Cortes: ísquio parcial, púbis, ilíaco supra-acetabular e ==retroacetabular==, preservando a ==coluna posterior==.\n- ==Trirradiada fechada== (adolescente e adulto jovem).\n- Grande correção, pelve continua estável (marcha precoce), não altera o canal de parto.\n\n### Detalhes\n- ==Fise trirradiada fechada== (cortes a atravessariam).\n- Mantém o ==anel pélvico== e o canal de parto: parto normal possível.\n- Via de ==Smith-Petersen modificada== (ou abordagens minimamente invasivas); pode associar luxação cirúrgica/osteotomia trocantérica para o fêmur.\n\n> **Na prova:** Ganz ==não altera o formato da pelve== (gestação futura preservada)",
+  "correta": "**Não altera a pelve.**\n- Coluna posterior íntegra.\n- Canal de parto preservado.",
   "incorretas": {
-   "A": "A alternativa A (deve ser realizada com a fise aberta) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "C": "A alternativa C (não pode ser associada a osteotomia trocantérica) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "D": "A alternativa D (utiliza-se apenas a via de Smith-Petersen modificada) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa."
+   "A": "**Fise fechada.**\n- Trirradiada deve estar fechada.",
+   "C": "**Pode associar.**\n- Osteotomia trocantérica/luxação cirúrgica são combinações possíveis.",
+   "D": "**Não apenas.**\n- Outras vias existem."
   },
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0490": {
-  "conceito": "Na coxa vara do desenvolvimento, o defeito de ossificação encondral que dá origem à progressiva deformidade em varo ocorre especificamente na fise localizada no **colo femoral** (mais precisamente na sua porção inferomedial, próxima à base do colo) e não na fise da cabeça femoral (capital femoral), nem no trocanter maior (que tem sua própria fise apofisária, relacionada ao crescimento em largura, não ao alinhamento angular do colo) nem na diáfise (que não possui fise). Esse comprometimento localizado no colo é o que leva à angulação progressiva característica da doença ao longo do crescimento.",
-  "correta": "A. Na coxa vara do desenvolvimento, a fise acometida está localizada no colo femoral.",
+  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n> **Na prova:** coxa vara do desenvolvimento limita ==abdução e rotação medial==.",
+  "correta": "**Colo.**\n- Defeito de ossificação na fise do colo medial.\n- Triângulo de Fairbank.",
   "incorretas": {
-   "B": "A fise da cabeça femoral (capital femoral) não é a fise primariamente acometida na coxa vara do desenvolvimento.",
-   "C": "A fise do trocanter maior é uma fise apofisária distinta, relacionada ao crescimento em largura, não ao mecanismo da coxa vara do desenvolvimento.",
-   "D": "A diáfise não possui fise de crescimento, não podendo ser o local acometido nesse mecanismo."
+   "B": "**Cabeça.**\n- Epífise é normal.",
+   "C": "**Trocanter.**\n- Cresce normal e fica alto.",
+   "D": "**Diáfise.**\n- Não tem fise."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0491": {
-  "conceito": "O menisco discoide lateral, por sua forma anômala e maior volume ocupando o compartimento lateral do joelho, está associado a algumas alterações anatômicas adjacentes reconhecidas, entre elas, a presença de uma **cabeça da fíbula mais alta** (elevada) que o habitual, relacionada às alterações de desenvolvimento do compartimento lateral do joelho que acompanham a presença do menisco discoide desde a vida intrauterina. Esse achado anatômico associado pode, inclusive, ser um sinal radiográfico indireto que levanta a suspeita de menisco discoide lateral em exames de imagem.",
-  "correta": "A. O menisco discoide lateral pode estar associado à cabeça alta da fíbula.",
+  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Sinais radiográficos do discoide lateral\n| Sinal | Achado |\n|---|---|\n| espaço articular lateral | ==alargado== |\n| côndilo femoral lateral | ==achatado== (quadrado) |\n| planalto lateral | côncavo, em taça |\n| espinha tibial lateral | ==hipoplásica== |\n| ==cabeça da fíbula== | ==alta== |\n\n> **Na prova:** discoide lateral associa-se à ==cabeça alta da fíbula==",
+  "correta": "**Cabeça alta da fíbula.**\n- Sinal radiográfico clássico.\n- Com espaço lateral alargado.",
   "incorretas": {
-   "B": "A diminuição do espaço articular não é a alteração anatômica classicamente associada ao menisco discoide lateral.",
-   "C": "A hiperplasia da espinha tibial lateral não é a alteração anatômica classicamente associada ao menisco discoide lateral.",
-   "D": "A hiperplasia do côndilo femoral lateral não é a alteração anatômica classicamente associada ao menisco discoide lateral."
+   "B": "**Espaço aumentado.**\n- Não diminuído.",
+   "C": "**Espinha hipoplásica.**\n- Não hiperplásica.",
+   "D": "**Côndilo achatado.**\n- Hipoplásico, quadrado."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0492": {
-  "conceito": "Na epifisiólise proximal do fêmur **instável** (situação de maior risco de necrose avascular), a fixação preferencial costuma ser feita com parafusos **totalmente rosqueados**, evitando o efeito de compressão excessiva que um parafuso parcialmente rosqueado (tipo lag screw) poderia gerar, o que poderia agravar ainda mais o deslocamento e comprometer a já tênue vascularização retinacular da epífise nesse cenário agudo e instável.\n\nOutro ponto relevante do planejamento cirúrgico é a orientação anatômica do colo femoral nesses casos: como a epífise escorrega posteriormente em relação à metáfise, o colo femoral fica **relativamente retrovertido**, informação importante para guiar corretamente a trajetória do parafuso durante a fixação, evitando penetração intra-articular ou posicionamento inadequado.",
-  "correta": "A. Na epifisiólise instável, prefere-se a fixação com parafusos totalmente rosqueados, e o colo femoral está relativamente retrovertido.",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n### Escorregamento instável\n- Colo ==relativamente retrovertido== (epífise posterior): entrada anterior no colo.\n- Maior instabilidade: parafusos ==totalmente rosqueados== (ou dois parafusos) dão mais estabilidade e evitam recuo.\n- Redução suave e descompressão capsular são discutidas; nunca manipular vigorosamente.\n\n> **Na prova:** instável = ==totalmente rosqueados==, colo ==retrovertido== (veja o alerta)",
+  "correta": "**Totalmente rosqueados, colo retrovertido.**\n- Mais estabilidade na fise instável.\n- Entrada anterior no colo.",
   "incorretas": {
-   "B": "O colo femoral está relativamente retrovertido, não antevertido, na epifisiólise, devido ao escorregamento posterior da epífise.",
-   "C": "Parafusos parcialmente rosqueados não são a opção preferencial na epifisiólise instável, pelo risco de compressão excessiva.",
-   "D": "Parafusos parcialmente rosqueados não são a opção preferencial, e o colo femoral está relativamente retrovertido, não antevertido."
+   "B": "**Antevertido.**\n- Colo fica retrovertido.",
+   "C": "**Parcialmente rosqueado.**\n- Banca preferiu rosca total.",
+   "D": "**Os dois errados.**\n- Rosca e versão."
   },
-  "geradoEm": "2026-09-21",
+  "alerta": "Não há consenso sobre o tipo de rosca na epifisiólise instável. Muitos serviços usam parafuso canulado parcialmente rosqueado (único ou duplo) com bons resultados; a banca preferiu rosca total para maior estabilidade.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0493": {
-  "conceito": "Na anatomia patológica do pé torto congênito, um dos achados fundamentais é o deslocamento medial e plantar do **cuboide** em relação ao **calcâneo**, um componente do complexo de desalinhamento que também envolve o navicular (deslocado medialmente sobre a cabeça do tálus) e o calcâneo (aduzido e invertido sob o tálus), contribuindo para a deformidade em equino, adução e cavo característica da doença.",
-  "correta": "D. Os números 1 e 2 representam, respectivamente, cuboide e calcâneo.",
+  "conceito": "### Anatomia patológica do pé torto\n| Estrutura | Alteração |\n|---|---|\n| tálus | colo desviado ==medial e plantar==; corpo ==rodado externamente== no encaixe (não internamente) |\n| calcâneo | ==aduzido, invertido e em equino==; gira sob o tálus e se aproxima da fíbula |\n| navicular | ==medial==, junto ao maléolo medial (inversão extrema da talonavicular) |\n| cuboide | ==desviado medialmente== sobre o calcâneo |\n| partes moles | retração posteromedial (tibial posterior, FLH, FLD, tríceps, ligamentos) |\n\n### Deformidades (CAVE)\n- Cavo, Aduto, Varo, Equino.\n\n### Pirani e Dimeglio\n- Escores de gravidade para acompanhar o Ponseti.\n\n### Lendo a peça anatômica\n- Coluna lateral: ==cuboide== (distal) articulado ao ==calcâneo== (proximal), com o cuboide desviado medialmente.\n- Coluna medial: navicular luxado medialmente sobre a cabeça do tálus.\n\n> **Na prova:** 1 e 2 na coluna lateral = ==cuboide e calcâneo==",
+  "correta": "**Cuboide e calcâneo.**\n- Coluna lateral do pé.\n- Cuboide desviado medialmente.",
   "incorretas": {
-   "A": "O tálus e o navicular formam outro par de estruturas relevantes no pé torto (com o navicular deslocado medialmente sobre a cabeça do tálus), mas não correspondem às estruturas especificamente indicadas pelos números 1 e 2 nesta imagem.",
-   "B": "Da mesma forma, a ordem navicular/tálus não corresponde às estruturas indicadas nesta imagem específica.",
-   "C": "A ordem calcâneo/cuboide está invertida em relação à correta (cuboide/calcâneo) indicada pelos números 1 e 2."
+   "A": "**Tálus e navicular.**\n- Coluna medial.",
+   "B": "**Navicular e tálus.**\n- Coluna medial, invertido.",
+   "C": "**Ordem trocada.**\n- 1 é cuboide, 2 é calcâneo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0494": {
