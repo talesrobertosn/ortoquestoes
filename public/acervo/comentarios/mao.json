@@ -270,310 +270,301 @@
   "conferido": false
  },
  "mao-0025": {
-  "conceito": "Na deficiência longitudinal radial, a classificação de **Bayne e Klug** vai do tipo I, com rádio distal curto, ao tipo IV, com ausência completa do rádio. A deficiência longitudinal ulnar costuma ser menos grave e seu padrão mais frequente é o tipo I, com hipoplasia distal.",
-  "correta": "**C, IV e I.** O tipo mais comum da deficiência radial é o **IV**; na deficiência ulnar, é o **I**.",
+  "conceito": "### Deficiência longitudinal radial (Bayne e Klug)\n| Tipo | Rádio | Frequência |\n|---|---|---|\n| 0 | normal, com hipoplasia do carpo ou polegar | |\n| I | rádio distal curto | leve |\n| II | rádio hipoplásico em miniatura | |\n| III | ausência parcial (geralmente distal) | |\n| ==IV== | ==ausência completa== | ==a mais comum== |\n\n- Mão em **desvio radial** (mão torta radial), polegar hipoplásico ou ausente.\n- Associações: **VACTERL**, Holt-Oram (cardiopatia), TAR (trombocitopenia), anemia de **Fanconi** (fazer teste de quebra cromossômica).\n\n### Deficiência longitudinal ulnar (Bayne)\n| Tipo | Ulna |\n|---|---|\n| ==I== | ==hipoplasia (ulna curta, epífises presentes)== : a mais comum |\n| II | ausência parcial |\n| III | ausência total |\n| IV | sinostose radioumeral |\n\n- Menos frequente que a radial; mais associada a anomalias **musculoesqueléticas** (não sistêmicas).\n- Cotovelo e mão (dedos ulnares, comissura) definem a função.\n\n> **Na prova:** mais comuns = radial ==tipo IV==; ulnar ==tipo I==.",
+  "correta": "**IV e I.**\n- Na deficiência radial predomina a ausência completa do rádio.\n- Na ulnar predomina a hipoplasia (tipo I).",
   "incorretas": {
-   "A": "Subestima a gravidade habitual da deficiência radial e atribui à ulnar um tipo menos frequente.",
-   "B": "Acerta apenas o tipo I como possibilidade radial leve, mas ele não é o mais comum; o tipo III também não é o padrão ulnar predominante.",
-   "D": "Acerta o tipo IV para o rádio, mas erra a ulna: o tipo ulnar mais comum é I, não III."
+   "A": "**Radial leve demais.**\n- O tipo I radial não é o mais comum.",
+   "B": "**Os dois errados.**\n- Nem o I radial nem o III ulnar predominam.",
+   "D": "**Ulnar errado.**\n- O rádio está certo, mas o tipo ulnar mais comum é o I."
   },
   "referencias": [
    "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Radial and ulnar longitudinal deficiency.",
    "Bayne LG, Klug MS. Long-term review of the surgical treatment of radial deficiencies. J Hand Surg Am. 1987;12:169-179."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0026": {
-  "conceito": "A contratura de Dupuytren é uma fibromatose da fáscia palmar, com forte componente hereditário, a chamada diátese: história familiar, início precoce, acometimento bilateral e envolvimento fora da palma, como as almofadas de Garrod nas interfalângicas proximais e o acometimento plantar de Ledderhose.",
-  "correta": "O predomínio masculino é acentuado, com relações descritas de várias vezes mais homens que mulheres, e nelas a doença tende a começar mais tarde e a evoluir mais devagar. O acometimento é frequentemente bilateral, mas assimétrico: uma das mãos costuma estar bem mais avançada que a outra, em geral a dominante, e é essa a leitura que a questão cobra. Os dedos mais atingidos são o anelar e o mínimo.",
+  "conceito": "### Contratura de Dupuytren\n- Fibromatose da **fáscia palmar** (miofibroblastos, colágeno tipo III).\n- Perfil: ==homem== (várias vezes mais que mulher), acima de 40 anos, ascendência norte-europeia.\n- ==Bilateral com frequência, mas assimétrica==: uma mão bem mais avançada.\n- Dedos mais acometidos: **anelar** e **mínimo**.\n\n### Diátese de Dupuytren (doença agressiva)\n- História familiar, início antes de 50 anos, bilateral, **almofadas de Garrod**, **Ledderhose** (plantar), **Peyronie** (pênis).\n- Maior recidiva após tratamento.\n\n### Fatores associados\n- Diabetes, tabagismo, álcool, epilepsia (anticonvulsivantes), trabalho com vibração.\n\n### Estruturas normais → patológicas\n| Fáscia normal | Corda |\n|---|---|\n| banda pré-tendínea | corda pré-tendínea (MF) |\n| banda espiral, lâmina lateral, ligamento de Grayson | ==corda espiral== (desloca o feixe neurovascular para o centro) |\n| ligamento natatório | corda natatória |\n\n> **Na prova:** Dupuytren = ==masculino e assimétrico==.",
+  "correta": "**Homem, assimétrico.**\n- O predomínio masculino é marcado.\n- É frequentemente bilateral, mas uma mão costuma estar bem mais avançada.",
   "incorretas": {
-   "A": "Acerta o sexo e erra o padrão. Bilateral não é sinônimo de simétrico: o comum é encontrar uma mão com corda e contratura instaladas e a outra ainda em nódulo.",
-   "C": "Inverte o sexo. A doença existe em mulheres, sobretudo após os 60 anos, mas é claramente menos frequente, e o padrão continua não sendo simétrico.",
-   "D": "Acerta o padrão assimétrico e erra o sexo predominante."
+   "A": "**Bilateral não é simétrico.**\n- O comum é uma mão com corda e a outra ainda em nódulo.",
+   "C": "**Sexo invertido.**\n- A doença é bem menos frequente em mulheres.",
+   "D": "**Sexo invertido.**\n- O padrão assimétrico está certo, mas predomina no homem."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0027": {
-  "conceito": "O coxim móvel de Henry é a massa muscular que se move sob os dedos quando se aperta a borda radial do antebraço. Ele separa o compartimento volar do dorsal e é referência de acesso: a via de Henry ao rádio passa entre ele e o flexor radial do carpo.",
-  "correta": "São três músculos, todos de origem no epicôndilo lateral e na crista supracondilar lateral: braquiorradial, extensor radial longo do carpo e extensor radial curto do carpo. O nome vem de serem móveis em relação ao osso, o que permite afastá-los em bloco. Importa também porque o nervo radial se divide em superficial e interósseo posterior justamente sob esse coxim.",
+  "conceito": "### Coxim móvel de Henry (mobile wad)\n- ==Braquiorradial==, ==extensor radial longo do carpo== e ==extensor radial curto do carpo==.\n- Origem no **epicôndilo lateral** e na crista supracondilar lateral.\n- Move-se em bloco sobre o osso; separa os compartimentos volar e dorsal.\n\n### Compartimentos do antebraço\n| Compartimento | Músculos |\n|---|---|\n| volar superficial | pronador redondo, FRC, palmar longo, FUC |\n| volar intermediário | flexor superficial dos dedos |\n| volar profundo | FPD, FLP, pronador quadrado |\n| ==coxim móvel== | ==braquiorradial, ERLC, ERCC== |\n| dorsal superficial | extensor comum, extensor do mínimo, EUC |\n| dorsal profundo | supinador, abdutor longo e extensor curto do polegar, ELP, extensor do indicador |\n\n### Relevância\n- Via de **Henry** (volar ao rádio): entre o braquiorradial e o FRC (distal) ou o pronador redondo (proximal).\n- O **nervo radial** divide-se em superficial e interósseo posterior sob o coxim.\n- Na síndrome compartimental, o coxim é um compartimento a descomprimir.\n\n> **Na prova:** coxim móvel = ==braquiorradial, ERLC e ERCC==.",
+  "correta": "**Três músculos radiais.**\n- Braquiorradial, extensor radial longo e curto do carpo, todos do epicôndilo lateral.\n- Movem-se em bloco na borda radial do antebraço.",
   "incorretas": {
-   "A": "O supinador é profundo e envolve o colo do rádio; o abdutor longo do polegar e o extensor do indicador são músculos profundos do compartimento dorsal. Nenhum dos três compõe a massa móvel radial superficial.",
-   "B": "Pronador redondo, flexor radial do carpo e flexor ulnar do carpo formam a camada superficial do compartimento volar, com origem no epicôndilo medial. É o grupo oposto ao do coxim móvel.",
-   "C": "Extensor comum dos dedos, extensor ulnar do carpo e extensor do dedo mínimo são o grupo dorsal superficial. Ficam ulnar ao coxim, não fazem parte dele."
+   "A": "**Músculos profundos.**\n- Supinador, abdutor longo e extensor do indicador ficam no plano profundo.",
+   "B": "**Grupo volar superficial.**\n- São do epicôndilo medial, do lado oposto.",
+   "C": "**Grupo dorsal superficial.**\n- Ficam ulnares ao coxim."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0028": {
-  "conceito": "A fileira proximal do carpo não tem um único tendão inserido nela: ela é um segmento intercalado, movido pelo que acontece nas fileiras vizinhas. Por isso ela roda quando o punho desvia.",
-  "correta": "Indo de radial para ulnar, a fileira proximal roda em extensão, isto é, dorsalmente. O raciocínio: no desvio radial o escafoide é comprimido entre o estiloide radial e o trapézio e é obrigado a fletir, arrastando semilunar e piramidal pelos ligamentos interósseos; ao passar para o desvio ulnar, essa compressão cessa, o piramidal encontra o hâmulo e a fileira toda estende. É esse movimento que a radiografia mostra como escafoide alongado no desvio ulnar e encurtado, com sinal do anel, no desvio radial, e é essa mecânica que fundamenta o teste de Watson para instabilidade escafossemilunar.",
+  "conceito": "### Fileira proximal: segmento intercalado\n- Nenhum tendão se insere nela: move-se pela ação das fileiras vizinhas e dos ligamentos.\n\n| Movimento do punho | Fileira proximal |\n|---|---|\n| desvio radial | ==flexão (palmar)==; escafoide encurta (sinal do anel) |\n| ==desvio ulnar== | ==extensão (dorsal)==; escafoide alonga |\n\n### Mecânica\n- No desvio radial, o escafoide é comprimido entre estiloide e trapézio e **flete**, arrastando semilunar e piramidal.\n- No desvio ulnar, o piramidal desliza na faceta helicoidal do hamato e a fileira **estende**.\n\n### Aplicações\n- **Teste de Watson:** pressão no tubérculo do escafoide enquanto o punho vai de ulnar para radial; na lesão escafossemilunar o escafoide subluxa dorsalmente e \"estala\".\n- **DISI:** semilunar em extensão (lesão escafossemilunar). **VISI:** semilunar em flexão (lesão lunopiramidal).\n\n> **Na prova:** de radial para ulnar, a fileira proximal gira em ==extensão (dorsal)==.",
+  "correta": "**Extensão da fileira.**\n- Do desvio radial para o ulnar, cessa a compressão do escafoide.\n- A fileira proximal roda para dorsal (extensão).",
   "incorretas": {
-   "A": "Desvio ulnar é a direção do movimento do punho, não o sentido da rotação da fileira. A questão pede o eixo em que a fileira gira, que é o sagital: flexão e extensão.",
-   "B": "Mesma confusão da alternativa anterior, agora com a direção contrária.",
-   "D": "Rotação palmar, ou seja, flexão da fileira, é o que acontece no desvio radial. O enunciado descreve o caminho de radial para ulnar, e nesse sentido a fileira sai da flexão para a extensão."
+   "A": "**Direção do punho.**\n- Ulnar é o desvio do punho; a fileira gira no plano sagital.",
+   "B": "**Mesma confusão.**\n- Radial também é direção de desvio, não de rotação da fileira.",
+   "D": "**Movimento do desvio radial.**\n- A flexão palmar acontece no desvio radial."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0029": {
-  "conceito": "O compartimento volar do antebraço tem três camadas: superficial (pronador redondo, flexor radial do carpo, palmar longo, flexor ulnar do carpo), intermediária (flexor superficial dos dedos) e profunda (flexor profundo dos dedos, flexor longo do polegar e pronador quadrado).",
-  "correta": "O músculo indicado é o pronador redondo, que pertence à camada superficial volar. Ele nasce em duas cabeças (uma umeral, no epicôndilo medial, e uma ulnar, no processo coronoide) e vai obliquamente até a face lateral do rádio, no seu terço médio. É essa direção oblíqua, cruzando o antebraço de medial-proximal para lateral-distal, que o distingue à primeira vista do pronador quadrado, que é transverso e fica no punho. O nervo mediano passa entre as duas cabeças, e é aí que se instala a síndrome do pronador.",
+  "conceito": "### Camadas do compartimento volar\n| Camada | Músculos |\n|---|---|\n| ==superficial== | ==pronador redondo==, flexor radial do carpo, palmar longo, flexor ulnar do carpo |\n| intermediária | flexor superficial dos dedos |\n| profunda | flexor profundo dos dedos, flexor longo do polegar, **pronador quadrado** |\n\n### Pronador redondo\n- Duas cabeças: **umeral** (epicôndilo medial) e **ulnar** (processo coronoide).\n- Trajeto ==oblíquo== até o **terço médio da face lateral do rádio**.\n- O **nervo mediano** passa entre as cabeças (síndrome do pronador).\n- Via de Henry: o pronador é desinserido (com o antebraço em pronação) para expor o terço médio do rádio.\n\n### Pronador quadrado\n- Lâmina **transversa** entre rádio e ulna distais; camada profunda.\n- Desinserido na via volar para placas do rádio distal.\n\n> **Na prova:** músculo oblíquo do terço proximal = ==pronador redondo, compartimento volar superficial==.",
+  "correta": "**Pronador redondo, superficial.**\n- É o músculo oblíquo do terço proximal, de duas cabeças, que vai ao terço médio do rádio.\n- Pertence à camada volar superficial.",
   "incorretas": {
-   "A": "Acerta o compartimento e erra o músculo. O pronador quadrado é mesmo profundo, mas é uma lâmina transversa entre rádio e ulna logo acima do punho, com aspecto e posição bem diferentes do músculo oblíquo do terço proximal.",
-   "B": "Erra nas duas pontas: o músculo não é o quadrado e, se fosse, ele não estaria no plano superficial.",
-   "C": "Acerta o músculo e erra o plano. O pronador redondo é superficial e palpável; quem é profundo é o quadrado."
+   "A": "**Músculo errado.**\n- O pronador quadrado é profundo, mas é transverso e distal.",
+   "B": "**Erra os dois.**\n- Não é o quadrado, e o quadrado não é superficial.",
+   "C": "**Plano errado.**\n- O pronador redondo é superficial."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Netter, Atlas de Anatomia Humana, 7ª edição, Cap. 7"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0030": {
-  "conceito": "A doença de Kienböck é a osteonecrose do semilunar. A causa não é uma só: somam-se a variância ulnar negativa, o padrão vascular do semilunar quando ele tem uma única artéria nutrícia e a sobrecarga mecânica repetida.",
-  "correta": "O perfil clássico é homem entre 20 e 40 anos, trabalhador manual, com dor no punho dominante. É coerente com a hipótese mecânica: o punho que trabalha é o que recebe a carga repetida, e a variância ulnar negativa concentra essa carga sobre o semilunar, que tem circulação de reserva pequena.",
+  "conceito": "### Doença de Kienböck\n- Osteonecrose do **semilunar**.\n- Perfil clássico: ==homem de 20 a 40 anos, trabalhador manual, punho dominante==.\n\n### Fatores implicados\n| Fator | Mecanismo |\n|---|---|\n| **variância ulnar negativa** | concentra carga no semilunar |\n| vascularização | padrão de artéria única (tipo I) ou pouca anastomose intraóssea |\n| geometria | semilunar com ângulo de inclinação radial reduzido, semilunar tipo I (sem faceta no hamato) |\n| sobrecarga repetida | trabalho manual, trauma |\n\n### Clínica\n- Dor dorsal no centro do punho, edema, perda de força de preensão e de arco.\n- Diagnóstico precoce pela **RM** (estágio I).\n\n### Tratamento conforme Lichtman e variância\n- Descarga do semilunar (encurtamento do rádio se ulna minus), revascularização, artrodeses parciais, ressecção da fileira proximal, denervação.\n\n> **Na prova:** Kienböck = ==homem, punho dominante, trabalhador manual==.",
+  "correta": "**Perfil clássico.**\n- Homem jovem, trabalhador manual, com o punho dominante acometido.\n- Coerente com a hipótese de sobrecarga repetida.",
   "incorretas": {
-   "A": "Acerta o punho e a ocupação, erra o sexo: o predomínio descrito é masculino.",
-   "C": "Erra tudo o que é característico: sexo, lado e a relação com atividade manual, que é justamente o que sustenta a hipótese de sobrecarga.",
-   "D": "Acerta o sexo e erra o resto. É o punho dominante, o que trabalha, que adoece, e a associação com trabalho manual é parte do quadro, não um acaso."
+   "A": "**Sexo errado.**\n- O predomínio é masculino.",
+   "C": "**Erra tudo.**\n- Sexo, lado e relação com o trabalho estão trocados.",
+   "D": "**Lado errado.**\n- É o punho dominante, que trabalha, o mais acometido."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 69"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0031": {
-  "conceito": "Dentro do túnel do carpo os nove tendões não estão lado a lado: eles se arrumam em planos. Mais volar, os flexores superficiais; atrás deles, os profundos; e o flexor longo do polegar corre isolado, no canto radial.",
-  "correta": "Os flexores superficiais do terceiro e do quarto dedos (médio e anelar) ficam à frente dos do segundo e do quinto, formando o plano mais volar do túnel. Consequência prática: são eles que o nervo mediano encontra pela frente, e é essa disposição que explica por que a colheita do flexor superficial do quarto dedo é a doadora habitual para transferências tendíneas, ele é o mais acessível e o menos indispensável do grupo.",
+  "conceito": "### Disposição dos tendões no túnel do carpo\n| Plano | Tendões |\n|---|---|\n| ==mais volar== | ==flexores superficiais do 3º e 4º dedos== |\n| intermediário | flexores superficiais do 2º e 5º dedos |\n| mais dorsal | quatro flexores profundos (lado a lado) |\n| radial, isolado | flexor longo do polegar (bursa radial) |\n\n- O **nervo mediano** fica logo abaixo do retináculo, radial e volar, sobre os superficiais.\n- Mnemônico: **\"34 sobre 25\"**.\n\n### Consequências\n- O FSD do **anelar** é doador frequente em transferências (acessível e dispensável).\n- Sinovite dos flexores aumenta o volume e comprime o mediano.\n\n### Limites do túnel\n- Teto: **retináculo dos flexores** (ligamento transverso do carpo).\n- Inserções radiais: tubérculo do escafoide e trapézio; ulnares: pisiforme e hâmulo do hamato.\n\n> **Na prova:** mais volares no túnel = ==flexores superficiais do III e IV dedos==.",
+  "correta": "**Médio e anelar à frente.**\n- Os flexores superficiais do 3º e 4º dedos formam o plano mais volar.\n- Ficam em contato com o nervo mediano.",
   "incorretas": {
-   "A": "O primeiro dedo não tem flexor superficial: o polegar é servido pelo flexor longo do polegar, que entra sozinho no túnel, pelo lado radial, dentro da bursa radial.",
-   "B": "Segundo e quinto dedos têm seus flexores superficiais num plano mais dorsal que os do médio e do anelar. Estão no túnel, mas não na frente.",
-   "C": "Metade certa: o terceiro está no plano volar, mas quem o acompanha é o quarto, não o segundo."
+   "A": "**Polegar sem superficial.**\n- O polegar tem apenas o flexor longo, no canto radial.",
+   "B": "**Plano mais dorsal.**\n- Os superficiais do 2º e 5º ficam atrás.",
+   "C": "**Metade certa.**\n- O 3º está à frente, mas acompanhado do 4º."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Netter, Atlas de Anatomia Humana, 7ª edição, Cap. 7"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0032": {
-  "conceito": "O nervo supraescapular sai do tronco superior do plexo, atravessa a incisura supraescapular sob o ligamento transverso superior e inerva o supraespinal; depois contorna a espinha da escápula pela incisura espinoglenoidal e inerva o infraespinal.",
-  "correta": "A seta indica o nervo supraescapular, e o ponto de compressão mais frequente é a incisura supraescapular. Como ela fica proximal aos dois ramos motores, a compressão ali atinge supraespinal e infraespinal: atrofia das duas fossas, fraqueza de abdução e de rotação lateral, com dor posterior mal localizada. É por essa passagem estreita e fixa, com o nervo preso sob um ligamento, que a lesão se instala.",
+  "conceito": "### Nervo supraescapular\n- Origem: **tronco superior** (C5-C6).\n- Passa pela ==incisura supraescapular== sob o **ligamento transverso superior** (a artéria passa por cima).\n- Inerva o **supraespinal**, contorna a espinha pela **incisura espinoglenoidal** e inerva o **infraespinal**.\n\n### Pontos de compressão\n| Local | Músculos afetados | Causas típicas |\n|---|---|---|\n| ==incisura supraescapular== (mais comum) | ==supra e infraespinal== | ligamento transverso ossificado, tração |\n| incisura espinoglenoidal | **só infraespinal** | ==cisto paralabral== (lesão SLAP), voleibolistas |\n\n### Clínica\n- Dor posterior difusa no ombro, fraqueza de abdução e rotação externa, atrofia das fossas.\n- ENMG confirma; RM mostra cisto.\n\n### Tratamento\n- Conservador; liberação do ligamento transverso (artroscópica) ou descompressão do cisto e reparo labral.\n\n### Nervo dorsal da escápula\n- Direto de C5, passa pelo escaleno médio; inerva romboides e levantador da escápula.\n\n> **Na prova:** seta no nervo supraescapular; compressão mais comum na ==incisura supraescapular==.",
+  "correta": "**Supraescapular na incisura.**\n- O nervo indicado é o supraescapular.\n- A compressão mais comum ocorre sob o ligamento transverso, atingindo os dois músculos.",
   "incorretas": {
-   "B": "A incisura espinoglenoidal é ponto de compressão real, mas menos frequente e com quadro diferente: como fica além do ramo do supraespinal, a lesão poupa esse músculo e produz atrofia isolada do infraespinal. A causa típica ali é o cisto paralabral por lesão do lábio posterossuperior, clássico em jogador de vôlei.",
-   "C": "O nervo dorsal da escápula nasce direto de C5, corre com o levantador da escápula e inerva os romboides. Não passa pela incisura supraescapular nem é o que a seta mostra.",
-   "D": "Erra o nervo e o local: o dorsal da escápula tampouco tem relação com a incisura espinoglenoidal."
+   "B": "**Local menos comum.**\n- A espinoglenoidal afeta só o infraespinal, por cisto paralabral.",
+   "C": "**Nervo errado.**\n- O dorsal da escápula inerva os romboides.",
+   "D": "**Erra os dois.**\n- Nervo e local incorretos."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0033": {
-  "conceito": "Narakas organizou a paralisia obstétrica pela extensão da lesão, do topo do plexo para baixo. Grupo 1: C5-C6. Grupo 2: C5-C6-C7. Grupo 3: C5 a T1, sem Horner. Grupo 4: C5 a T1, com Horner.",
-  "correta": "O grupo 2 acrescenta C7 ao grupo 1, ou seja, soma a lesão do tronco médio à do superior. Clinicamente, ao quadro de Erb (ombro em rotação medial, cotovelo estendido, antebraço pronado) junta-se a perda da extensão do punho e dos dedos, deixando o punho caído. O prognóstico é intermediário: pior que o do grupo 1, melhor que o dos grupos com T1.",
+  "conceito": "### Classificação de Narakas (paralisia obstétrica)\n| Grupo | Raízes | Quadro | Prognóstico |\n|---|---|---|---|\n| 1 | C5-C6 | Erb clássico: ombro e cotovelo | ==o melhor== (recuperação espontânea em cerca de 90%) |\n| ==2== | ==C5-C6-C7== | Erb + ==punho e dedos caídos== | intermediário |\n| 3 | C5-T1 sem Horner | membro flácido | ruim |\n| 4 | C5-T1 ==com Horner== | flácido + ptose, miose, enoftalmia | o pior (avulsão de T1) |\n\n### Por que o grupo 2 tem punho caído\n- C7 (tronco médio) contribui para o **nervo radial**: extensores do punho e dedos.\n\n### Indicação de cirurgia do plexo\n- Sem recuperação do **bíceps** aos 3 a 6 meses (critério de Gilbert) ou falha no teste do biscoito.\n- Horner e lesões totais: explorar mais cedo.\n\n> **Na prova:** Narakas 2 = ==tronco superior + tronco médio (C5-C7)==.",
+  "correta": "**C5 a C7.**\n- O grupo 2 soma a lesão do tronco médio à do superior.\n- Ao Erb se junta a perda da extensão do punho e dos dedos.",
   "incorretas": {
-   "A": "Lesão isolada do tronco inferior é a paralisia de Klumpke, rara ao nascimento e que não corresponde a nenhum grupo de Narakas, cuja escala começa sempre pelo tronco superior e desce.",
-   "B": "Lesão isolada do tronco superior, C5-C6, é o grupo 1, o Erb clássico, o mais frequente e o de melhor prognóstico.",
-   "C": "O sinal de Claude Bernard-Horner marca o grupo 4: indica avulsão de T1 com comprometimento simpático e é o pior indicador prognóstico da escala, sinal de lesão pré-ganglionar."
+   "A": "**Klumpke.**\n- A lesão isolada inferior é rara e não integra a escala de Narakas.",
+   "B": "**Grupo 1.**\n- C5-C6 isolado é o Erb clássico.",
+   "C": "**Grupo 4.**\n- Horner indica avulsão de T1, o pior prognóstico."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 11.10"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0034": {
-  "conceito": "O plexo braquial e os vasos subclávios percorrem três estreitamentos em série entre o pescoço e a axila, e a síndrome do desfiladeiro torácico pode se instalar em qualquer um deles: o triângulo interescalênico, o espaço costoclavicular e o espaço retropeitoral menor.",
-  "correta": "O triângulo interescalênico é o mais proximal dos três e o mais frequentemente envolvido na forma neurogênica. Seus limites são o escaleno anterior à frente, o escaleno médio atrás e a primeira costela embaixo; por ele passam o plexo e a artéria subclávia, enquanto a veia passa à frente do escaleno anterior. Costela cervical, banda fibrosa e hipertrofia dos escalenos são as causas habituais de estreitamento aí.",
+  "conceito": "### Espaços do desfiladeiro torácico\n| Espaço | Limites | Conteúdo | Destaque |\n|---|---|---|---|\n| ==triângulo interescalênico== | ==escaleno anterior, escaleno médio, 1ª costela== | plexo e **artéria** subclávia (a veia passa à frente do escaleno anterior) | ==mais proximal==, mais envolvido na forma neurogênica |\n| costoclavicular | clavícula, 1ª costela, subclávio | plexo, artéria e **veia** | trombose de esforço (Paget-Schroetter) |\n| retropeitoral menor | peitoral menor, processo coracoide | feixe axilar | compressão em hiperabdução |\n\n### Causas de estreitamento\n- **Costela cervical** ou banda fibrosa, hipertrofia dos escalenos, fraturas de clavícula ou 1ª costela, postura com ombros caídos.\n\n### Testes provocativos\n- **Adson** (rotação da cabeça com inspiração), **Roos** (EAST, 3 minutos abrindo e fechando a mão), **Wright** (hiperabdução).\n\n> **Na prova:** foco de compressão do plexo = ==triângulo interescalênico==.",
+  "correta": "**Triângulo interescalênico.**\n- Entre os escalenos anterior e médio e a 1ª costela passam o plexo e a artéria.\n- É o foco mais comum da forma neurogênica.",
   "incorretas": {
-   "A": "O espaço que comprime é o costoclavicular, entre a clavícula e a primeira costela, e não um espaço coracoclavicular. É no costoclavicular que se instala a trombose de esforço da veia subclávia, a síndrome de Paget-Schroetter.",
-   "C": "A relação é o inverso: o feixe passa profundamente ao peitoral menor, no espaço retropeitoral, onde a hiperabdução do braço o comprime contra o processo coracoide. À frente do peitoral não passa nada do plexo.",
-   "D": "A alternativa dá uma referência de superfície, não um dos espaços descritos. O triângulo interescalênico de fato está profundo ao esternocleidomastóideo, mas quem tem limites anatômicos definidos e nome próprio é o triângulo, e é ele que a questão cobra."
+   "A": "**Nome errado.**\n- O espaço é costoclavicular, entre clavícula e 1ª costela.",
+   "C": "**Relação invertida.**\n- O feixe passa atrás do peitoral menor, não à frente.",
+   "D": "**Referência de superfície.**\n- A questão cobra o espaço anatômico com nome próprio."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 7.4.1"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0035": {
-  "conceito": "Todo coto de amputação forma neuroma; o que se quer evitar é o neuroma sintomático, aquele que dói ao toque e impede o uso do coto. Dois fatores pesam: onde ele fica e como o nervo foi lesado.",
-  "correta": "O indicador é o dedo em que o neuroma mais frequentemente incomoda, porque é o dedo da pinça e da exploração: o coto encosta em tudo, e um neuroma superficial ali é percutido o dia inteiro. E a avulsão é o mecanismo que mais produz neuroma sintomático, porque o nervo é arrancado com tração, lesado muito além do nível visível e deixa coto irregular em tecido mal vascularizado. Daí a conduta de tracionar o nervo e seccioná-lo proximalmente, para que o neuroma se aloje em tecido mole e longe da área de contato.",
+  "conceito": "### Neuroma sintomático após amputação de dedos\n- Todo coto forma neuroma; o problema é o neuroma **doloroso** em área de contato.\n\n| Fator | Maior risco |\n|---|---|\n| dedo | ==indicador== (pinça, exploração, contato constante) |\n| mecanismo | ==avulsão== (nervo lesado com tração, muito além do nível visível) |\n| localização | neuroma superficial sob cicatriz ou polpa |\n\n### Prevenção no momento da amputação\n- **Tracionar e seccionar** o nervo digital proximalmente, para que retraia em tecido bem acolchoado.\n- Evitar ligadura conjunta de nervo e artéria.\n\n### Tratamento do neuroma estabelecido\n- Dessensibilização, infiltração.\n- Ressecção com sepultamento em músculo ou osso, **TMR** (reinervação muscular direcionada), **RPNI**, capuz de nervo.\n\n### Amputação do indicador\n- Coto curto e doloroso atrapalha a pinça: muitos preferem **amputação do raio** (transferindo a pinça para o médio).\n\n> **Na prova:** neuroma sintomático mais frequente = ==segundo dedo e trauma por avulsão==.",
+  "correta": "**Indicador e avulsão.**\n- O indicador toca em tudo, e o neuroma superficial é percutido o tempo todo.\n- A avulsão lesa o nervo em extensão e gera coto irregular.",
   "incorretas": {
-   "A": "Acerta o mecanismo e erra o dedo: o médio fica protegido entre os vizinhos e o coto encosta menos, então o neuroma ali costuma incomodar menos.",
-   "C": "Erra os dois fatores. A laceração limpa lesa o nervo num nível só, previsível, e permite tratar o coto no próprio ato, é o mecanismo mais favorável, não o mais associado ao neuroma sintomático.",
-   "D": "Acerta o dedo e erra o mecanismo, pelo mesmo motivo: laceração é mais benigna que avulsão para o nervo."
+   "A": "**Dedo errado.**\n- O médio fica protegido entre os vizinhos.",
+   "C": "**Erra os dois.**\n- A laceração limpa é o mecanismo mais favorável.",
+   "D": "**Mecanismo errado.**\n- A laceração é mais benigna para o nervo que a avulsão."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 19"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0036": {
-  "conceito": "A osteoartrite primária da mão tem endereço certo: interfalângicas distais (nódulos de Heberden), interfalângicas proximais (nódulos de Bouchard) e trapeziometacarpiana. As metacarpofalângicas ficam de fora, e é essa exceção que a questão explora.",
-  "correta": "Artrose de uma única metacarpofalângica, isolada, foge do padrão da doença primária e por isso pede uma causa local: trauma. Fratura articular consolidada com degrau, lesão ligamentar crônica ou luxação prévia alteram a mecânica daquela articulação e a levam à degeneração sozinha. A regra prática é útil: metacarpofalângica artrósica isolada é traumática até prova em contrário; várias metacarpofalângicas juntas mandam procurar hemocromatose, depósito de pirofosfato de cálcio ou doença inflamatória.",
+  "conceito": "### Padrões de artrose na mão\n| Padrão | Articulações | Pensar em |\n|---|---|---|\n| artrose primária (nodal) | ==IFD (Heberden), IFP (Bouchard), trapeziometacarpiana== | genética, mulheres após 50 anos |\n| ==MF isolada (uma)== | ==uma metacarpofalângica== | ==trauma==: fratura articular, lesão ligamentar, luxação prévia |\n| várias MF (2ª e 3ª) | metacarpofalângicas | **hemocromatose**, pirofosfato de cálcio |\n| MF, IFP, punho simétricos | | **artrite reumatoide** |\n| IFD com lesões ungueais | | **artrite psoriásica** |\n| erosões centrais (asa de gaivota) | IF | artrose erosiva |\n\n### Regra prática\n- MF artrósica **isolada** = ==traumática até prova em contrário==.\n- MF **múltiplas** = investigar ferritina, saturação de transferrina, cristais.\n\n> **Na prova:** artrose monoarticular da MF = etiologia ==traumática==.",
+  "correta": "**Causa local.**\n- A MF não faz parte do padrão da artrose primária.\n- Uma MF isolada artrósica sugere trauma prévio.",
   "incorretas": {
-   "A": "A predisposição genética existe e é forte na artrose nodal da mão, mas ela se expressa em várias articulações ao mesmo tempo, e nas distais e proximais, não numa metacarpofalângica sozinha.",
-   "B": "Doença reumática acomete metacarpofalângicas com frequência, e a artrite reumatoide tem justamente essa preferência. Só que o padrão é poliarticular e simétrico, não monoarticular.",
-   "D": "Causa iatrogênica é possível depois de cirurgia ou infiltração, mas é excepcional e não define o padrão que a questão descreve como habitual."
+   "A": "**Padrão poliarticular.**\n- A genética se expressa em IFD, IFP e trapeziometacarpiana, não numa MF isolada.",
+   "B": "**Poliarticular e simétrica.**\n- A artrite reumatoide atinge as MF, mas não de forma monoarticular.",
+   "D": "**Excepcional.**\n- A causa iatrogênica é rara e não define o padrão habitual."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, Volume 2, 6ª edição, Cap. 7"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0037": {
-  "conceito": "As cordas de Dupuytren são fáscias normais que se transformaram. Saber qual delas está envolvida é o que define o risco cirúrgico: cada corda tem uma relação própria com o feixe vasculonervoso digital.",
-  "correta": "A corda espiral nasce da banda pré-tendínea, da banda espiral, da lâmina digital lateral e do ligamento de Grayson. À medida que ela se contrai, ela se retifica e puxa o feixe vasculonervoso para dentro e para a superfície, ou seja, para a linha média do dedo e para bem perto da pele, num ponto mais proximal que o esperado. Sinal de alerta na inspeção: nódulo volar na base do dedo com pele deprimida sugere corda espiral por baixo. A consequência prática é direta: nessa situação o feixe está onde o bisturi entraria, e a dissecção começa pelo proximal, identificando o nervo em tecido são antes de avançar.",
+  "conceito": "### Cordas de Dupuytren e o feixe neurovascular\n| Corda | Origem | Contratura | Relação com o feixe |\n|---|---|---|---|\n| central | banda pré-tendínea | MF (e IFP) | linha média, **sem risco** ao feixe |\n| ==espiral== | ==banda pré-tendínea + banda espiral + lâmina digital lateral + ligamento de Grayson== | IFP | ==desloca o feixe para a linha média e para superficial== |\n| lateral | lâmina digital lateral | IFP (e IFD) | lateral ao feixe |\n| retrovascular | fibras dorsais ao feixe | IFD residual | dorsal ao feixe |\n| natatória | ligamento natatório | comissura | |\n| abdutora do mínimo | | mínimo | |\n\n### Corda espiral na prática\n- Suspeitar com **nódulo interdigital** na base do dedo e contratura da IFP.\n- Dissecar de **proximal para distal**, identificando o nervo em tecido normal.\n- Risco de lesão nervosa maior em revisões e cordas espirais.\n\n### Tratamentos\n- Fasciotomia por agulha, colagenase, fasciectomia limitada, dermofasciectomia (recidiva, diátese).\n\n> **Na prova:** corda que desvia o feixe = ==espiral==.",
+  "correta": "**Corda espiral.**\n- Ao se contrair, ela se retifica e puxa o feixe para a linha média e para a superfície.\n- O feixe fica onde o bisturi entraria.",
   "incorretas": {
-   "A": "A corda lateral vem da lâmina digital lateral, corre lateralmente ao feixe e produz contratura da interfalângica proximal. Ela pode empurrar o feixe, mas não é a corda descrita como responsável pelo desvio central e superficial.",
-   "C": "A corda central é a continuação da banda pré-tendínea, corre na linha média, não tem inserção nervosa nem vascular e é a mais segura de todas, é a que causa contratura metacarpofalângica com menor risco de lesão de feixe.",
-   "D": "A corda retrovascular passa dorsal ao feixe e é ligada à contratura residual da interfalângica distal. Por estar atrás do feixe, ela não o desloca para a frente."
+   "A": "**Lateral ao feixe.**\n- A corda lateral pode empurrar, mas não desloca o feixe para o centro.",
+   "C": "**A mais segura.**\n- A corda central fica na linha média, sem relação com o feixe.",
+   "D": "**Dorsal ao feixe.**\n- A retrovascular não o desloca para a frente."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 7.13"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0038": {
-  "conceito": "Upton classificou a mão de Apert em três tipos, de acordo com a gravidade da sinostose entre os dedos, e cada um recebeu um apelido pela forma que a mão assume.",
-  "correta": "O tipo II é a mão em colher, também chamada mão em luva: a sinostose envolve do segundo ao quarto dedo com a concavidade palmar acentuada, o polegar em clinodactilia radial e uma sindactilia simples do quarto para o quinto. É o tipo intermediário e o mais comum.",
+  "conceito": "### Síndrome de Apert (acrocefalossindactilia)\n- Mutação do **FGFR2**; craniossinostose (coronal), hipoplasia da face média, sindactilia **complexa** das mãos e pés.\n\n### Classificação de Upton da mão\n| Tipo | Nome | Características |\n|---|---|---|\n| I | ==mão em pá== (spade) | polegar separado ou com sindactilia parcial; palma plana |\n| ==II== | ==mão em colher== (mitten, luva) | ==2º a 4º dedos em sinostose com palma côncava==; polegar em clinodactilia radial; sindactilia simples 4º-5º; a mais comum |\n| III | ==botão de rosa== (hoof, casco) | todos os dedos fundidos, incluindo o polegar; sinoníquia |\n\n### Outros achados\n- Falange proximal do polegar **delta** (clinodactilia radial), sinfalangismo, sinostose do 4º e 5º metacarpos, ombro e cotovelo com anquilose.\n\n### Cirurgia\n- Liberar primeiro a **1ª comissura** e o 4º espaço (bordas), depois os centrais; várias etapas até cerca de 3 a 4 anos.\n\n> **Na prova:** Upton II = ==mão em colher==.",
+  "correta": "**Mão em colher.**\n- O tipo II tem sinostose do 2º ao 4º dedo com palma côncava.\n- É o tipo intermediário e o mais frequente.",
   "incorretas": {
-   "A": "A mão em pá é o tipo I, o mais leve: o primeiro espaço está aberto ou apenas parcialmente unido e a palma é plana.",
-   "B": "Mão em foice não faz parte da classificação de Upton. É a alternativa que existe apenas para preencher.",
-   "D": "A mão em botão de rosa, também chamada mão em casco, é o tipo III, o mais grave, com todos os dedos fundidos, incluindo o polegar, e frequentemente sinoníquia."
+   "A": "**Tipo I.**\n- A mão em pá é a forma mais leve.",
+   "B": "**Não existe.**\n- A mão em foice não faz parte da classificação.",
+   "D": "**Tipo III.**\n- O botão de rosa é a forma mais grave."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 80"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0039": {
-  "conceito": "A banda sagital é o que mantém o tendão extensor centrado sobre a cabeça do metacarpo. Rompida de um lado, o tendão escorrega para o lado oposto e o dedo perde a extensão ativa a partir da flexão, embora consiga mantê-la se alguém estender o dedo passivamente antes.",
-  "correta": "A lesão traumática típica é da banda sagital radial do dedo médio, e o tendão então subluxa para ulnar, caindo no vale entre as cabeças dos metacarpos. É a lesão do soco, conhecida como boxer's knuckle, e o dedo médio é o mais atingido por ser o mais longo e o mais exposto no impacto. A banda radial cede primeiro porque é a que sofre tração quando o dedo é forçado em desvio ulnar durante a flexão.",
+  "conceito": "### Bandas sagitais\n- Mantêm o tendão extensor **centralizado** sobre a cabeça do metacarpo.\n- Unem o capuz extensor à placa volar e ao ligamento intermetacarpal transverso.\n\n### Lesão traumática (boxer's knuckle)\n- Mais comum: ==banda sagital radial do dedo médio==.\n- O tendão subluxa para ==ulnar==, no vale entre as cabeças.\n- Mecanismo: soco, ou flexão forçada com desvio ulnar.\n- Clínica: dor e edema dorsais na MF; **déficit de extensão ativa** a partir da flexão, mas o dedo **mantém** a extensão se colocado passivamente; estalido.\n\n### Classificação de Rayan e Murray\n| Tipo | Achado |\n|---|---|\n| I | contusão, sem instabilidade |\n| II | subluxação do tendão |\n| III | luxação do tendão para o vale |\n\n### Tratamento\n- Agudo: **órtese de extensão da MF** (ou sagittal band bracing/yoke) por 4 a 6 semanas.\n- Crônico ou falha: reparo direto ou reconstrução com faixa do tendão extensor.\n\n### Não traumática\n- Artrite reumatoide: ruptura das bandas radiais, subluxação ulnar dos extensores.\n\n> **Na prova:** lesão traumática mais comum = ==dedo médio, porção radial==.",
+  "correta": "**Médio, lado radial.**\n- A banda sagital radial do médio cede no soco.\n- O tendão cai para o lado ulnar.",
   "incorretas": {
-   "A": "Dedo certo, lado errado. A ruptura ulnar existe e desloca o tendão para radial, mas é bem menos frequente que a radial.",
-   "C": "O indicador é menos acometido, e a porção ulnar é o lado menos frequente também, a alternativa erra nas duas escolhas.",
-   "D": "O lado radial está certo como lado de risco, mas o dedo mais atingido é o médio, não o indicador."
+   "A": "**Lado errado.**\n- A ruptura ulnar existe, mas é menos comum.",
+   "C": "**Os dois errados.**\n- Indicador e lado ulnar são os menos frequentes.",
+   "D": "**Dedo errado.**\n- O lado radial está certo, mas o médio é o mais atingido."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 66"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0040": {
-  "conceito": "A regra dos intrínsecos da mão é curta: o nervo ulnar inerva praticamente todos eles. Sobram para o mediano apenas os dois primeiros lumbricais e o grupo tenar, abdutor curto, oponente e a cabeça superficial do flexor curto do polegar.",
-  "correta": "A seta aponta a musculatura interóssea, entre os metacarpos. Todos os interósseos, dorsais e palmares, são inervados pelo ramo profundo do nervo ulnar. É por isso que a lesão ulnar produz a garra e o sinal de Froment, sem os interósseos e sem o adutor do polegar, a pinça passa a depender do flexor longo do polegar, que é do mediano, e o polegar flete a interfalângica para compensar. A atrofia do primeiro interósseo dorsal, visível como um vale no dorso da comissura do polegar, é o sinal mais precoce de perda intrínseca ulnar.",
+  "conceito": "### Inervação dos intrínsecos da mão\n| Músculo | Nervo |\n|---|---|\n| ==interósseos dorsais e palmares== | ==ulnar (ramo profundo)== |\n| lumbricais 3º e 4º | ulnar |\n| adutor do polegar | ulnar |\n| hipotenares | ulnar |\n| cabeça profunda do flexor curto do polegar | ulnar (muitas vezes) |\n| lumbricais 1º e 2º | **mediano** |\n| abdutor curto, oponente, cabeça superficial do flexor curto | **mediano** (ramo recorrente) |\n\n### Função dos interósseos\n- **Dorsais abduzem** (DAB), **palmares aduzem** (PAD).\n- Flexão da MF e extensão das IF (com os lumbricais).\n\n### Lesão do ulnar\n- **Garra** do anelar e mínimo (paralisia intrínseca; lumbricais 3º e 4º também perdidos).\n- **Froment:** flexão da IF do polegar ao pinçar (compensação pelo FLP).\n- **Wartenberg:** mínimo abduzido (terceiro interósseo palmar fraco).\n- Atrofia do **1º interósseo dorsal**: sinal precoce.\n\n### Nomes enganosos\n- Interósseo **anterior** (mediano) e **posterior** (radial) são nervos do antebraço, sem relação com os músculos interósseos.\n\n> **Na prova:** interósseos = ==nervo ulnar==.",
+  "correta": "**Ulnar.**\n- Todos os interósseos são inervados pelo ramo profundo do ulnar.\n- Sua perda produz garra e sinal de Froment.",
   "incorretas": {
-   "B": "Ao mediano cabem, entre os intrínsecos, apenas o primeiro e o segundo lumbricais e a musculatura tenar. Nenhum interósseo.",
-   "C": "O interósseo anterior, apesar do nome, é ramo motor do mediano no antebraço e inerva o flexor longo do polegar, o pronador quadrado e a metade radial do flexor profundo. Não chega à mão e não tem relação com os músculos interósseos.",
-   "D": "O interósseo posterior é ramo do radial e também é um nome que engana: inerva os extensores no antebraço e termina em ramo sensitivo articular no punho. Não inerva músculo nenhum da mão."
+   "B": "**Poucos intrínsecos.**\n- O mediano inerva só os lumbricais 1º e 2º e a musculatura tenar.",
+   "C": "**Nome enganoso.**\n- O interósseo anterior é ramo do mediano no antebraço.",
+   "D": "**Também enganoso.**\n- O interósseo posterior é ramo do radial para os extensores."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0041": {
-  "conceito": "O interósseo anterior é um ramo puramente motor do mediano, que sai dele logo abaixo do pronador redondo. Ele inerva três músculos: o flexor longo do polegar, a metade radial do flexor profundo dos dedos (indicador e médio) e o pronador quadrado.",
-  "correta": "O flexor longo do polegar é um dos três músculos do território, e a perda dele é justamente metade do sinal clínico da síndrome: pedir o gesto de \"ok\" e ver o polegar e o indicador se tocarem pelas polpas achatadas, em vez de formarem um círculo, porque nem a interfalângica do polegar nem a distal do indicador conseguem fletir. Como o ramo é só motor, não há alteração de sensibilidade, é isso que separa esta síndrome da compressão do mediano no pronador e no túnel do carpo.",
+  "conceito": "### Nervo interósseo anterior (NIA)\n- Ramo **puramente motor** do mediano, sai 4 a 6 cm abaixo do epicôndilo, logo após o pronador redondo.\n- Inerva:\n  1. ==flexor longo do polegar==;\n  2. ==flexor profundo do indicador e do médio==;\n  3. ==pronador quadrado==.\n\n### Síndrome do NIA\n- Dor proximal no antebraço, **sem alteração sensitiva**.\n- **Sinal do O (\"ok\")**: polegar e indicador se tocam pelas polpas achatadas, sem fletir a IF do polegar nem a IFD do indicador.\n- Pronador quadrado: pronação fraca com cotovelo **fletido** (isola o quadrado).\n- Diagnóstico diferencial: **Parsonage-Turner** (neurite braquial), ruptura do FLP.\n\n### Causas\n- Cabeça profunda do pronador, arcada do FSD, **músculo de Gantzer** (cabeça acessória do FLP), vasos cruzados.\n\n### Tratamento\n- Observação por 3 a 6 meses (muitos casos são neurite); descompressão se não melhora.\n\n> **Na prova:** NIA = ==FLP, FPD do 2º e 3º dedos, pronador quadrado==.",
+  "correta": "**Flexor longo do polegar.**\n- É um dos três músculos do NIA.\n- Sua perda produz metade do sinal do O, sem alteração sensitiva.",
   "incorretas": {
-   "A": "O pronador redondo é inervado pelo mediano acima da origem do interósseo anterior e fica preservado. Aliás, é ele quem frequentemente comprime o nervo, não quem é paralisado por ele.",
-   "B": "O flexor radial do carpo também recebe ramos do mediano proximais à origem do interósseo anterior. Segue funcionando.",
-   "D": "Atenção à pegadinha: o interósseo anterior inerva o flexor profundo do indicador, não o superficial. O flexor superficial dos dedos é do mediano propriamente dito e está preservado, por isso a interfalângica proximal do indicador continua fletindo normalmente, e só a distal falha."
+   "A": "**Inervação proximal.**\n- O pronador redondo recebe ramos antes da saída do NIA e é, muitas vezes, o compressor.",
+   "B": "**Também proximal.**\n- O FRC é inervado pelo mediano acima do NIA.",
+   "D": "**Pegadinha.**\n- O NIA inerva o flexor profundo do indicador; o superficial é do mediano e fica preservado."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0042": {
-  "conceito": "A doença de Dupuytren pode se manifestar fora da palma, e esses focos ectópicos são o que se chama de diátese: quanto mais deles, mais agressiva a doença e maior a chance de recidiva depois da cirurgia.",
-  "correta": "Os nódulos de Garrod ficam na face dorsal das interfalângicas proximais, são as \"almofadas dos nós dos dedos\". São indolores, não causam contratura e não se operam; o que eles fazem é avisar. Junto com história familiar, início antes dos 50 anos, acometimento bilateral, doença de Ledderhose na planta do pé e de Peyronie no pênis, eles compõem a diátese de Hueston e mudam o prognóstico da conversa pré-operatória.",
+  "conceito": "### Manifestações da doença de Dupuytren\n| Local | Achado |\n|---|---|\n| palma, volar da MF | nódulos e cordas pré-tendíneas |\n| volar da IFP | cordas digitais (central, espiral, lateral) |\n| ==dorso da IFP== | ==nódulos (almofadas) de Garrod== |\n| planta | doença de **Ledderhose** |\n| pênis | doença de **Peyronie** |\n\n### Nódulos de Garrod\n- **Indolores**, sem contratura, não se operam.\n- Marcam a **diátese de Dupuytren** (Hueston): doença mais agressiva e com mais recidiva.\n\n### Diátese (Hueston, revisada por Hindocha)\n- História familiar, **sexo masculino**, início **antes de 50 anos**, bilateral, lesões ectópicas (Garrod, Ledderhose, Peyronie), ascendência norte-europeia.\n\n### Teste de Hueston\n- Mão espalmada na mesa: se não fica plana, considerar tratamento.\n\n> **Na prova:** Garrod = ==face dorsal da IFP==.",
+  "correta": "**Dorso da IFP.**\n- Os nódulos de Garrod ficam sobre os nós dos dedos, na IFP.\n- Sinalizam diátese e maior chance de recidiva.",
   "incorretas": {
-   "A": "A face volar da metacarpofalângica é onde ficam os nódulos e as cordas da própria doença palmar, o que produz a contratura. Não é a topografia dos nódulos de Garrod.",
-   "B": "A face volar da interfalângica proximal é território das cordas digitais, responsáveis pela contratura mais difícil de corrigir. De novo, não é Garrod.",
-   "C": "A face dorsal da metacarpofalângica troca o nível: o dorso certo é o da interfalângica proximal, no nó do dedo."
+   "A": "**Doença palmar.**\n- Na face volar da MF ficam os nódulos e cordas que causam contratura.",
+   "B": "**Cordas digitais.**\n- A face volar da IFP é território das cordas digitais.",
+   "C": "**Nível errado.**\n- O dorso correto é o da IFP, não da MF."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0043": {
-  "conceito": "A pressão dentro do túnel do carpo em repouso é baixa, em torno de 2 a 5 mmHg. Na síndrome ela sobe e passa dos 30 mmHg, e a lesão do nervo acontece por etapas conforme esse número aumenta.",
-  "correta": "A partir de cerca de 20 mmHg o fluxo venular do epineuro começa a ser prejudicado, é o primeiro degrau da cascata. Em torno de 30 mmHg o transporte axonal se compromete, e acima de 40 a 50 mmHg instala-se bloqueio completo da condução. Essa escala explica bem a clínica: o sintoma começa noturno e intermitente, quando a pressão sobe com o punho dobrado no sono, e só depois vira déficit permanente, quando o problema deixou de ser circulatório e passou a ser estrutural.",
+  "conceito": "### Pressão no túnel do carpo e lesão do nervo\n| Pressão (mmHg) | Efeito |\n|---|---|\n| 2 a 5 | repouso normal (punho neutro) |\n| ==20 a 30== | ==compromete o fluxo venular epineural== |\n| 30 | alteração do transporte axonal |\n| 40 a 50 | alteração da condução, parestesia |\n| 60 a 80 | bloqueio completo da condução |\n| acima de 30 (crônico) | edema endoneural, desmielinização, fibrose |\n\n- Na síndrome, a pressão de repouso fica acima de **30 mmHg** e sobe muito com flexão ou extensão do punho.\n\n### Correlação clínica\n| Fase | Clínica | Patologia |\n|---|---|---|\n| inicial | sintomas **noturnos**, intermitentes | isquemia reversível |\n| intermediária | sintomas diurnos | edema, desmielinização segmentar |\n| avançada | hipoestesia constante, **atrofia tenar** | degeneração axonal |\n\n### Tratamento\n- Órtese noturna em posição neutra, infiltração, liberação cirúrgica (aberta ou endoscópica).\n\n> **Na prova:** circulação epineural prejudicada a partir de ==20 mmHg==.",
+  "correta": "**Cerca de 20 mmHg.**\n- É o primeiro degrau da cascata: o fluxo venular do epineuro diminui.\n- Pressões maiores comprometem transporte axonal e condução.",
   "incorretas": {
-   "A": "5 mmHg está dentro da faixa de repouso do túnel normal. Se esse valor prejudicasse a circulação, todo mundo teria a síndrome.",
-   "B": "10 mmHg ainda é bem tolerado. A pressão sobe fisiologicamente com a flexão e a extensão do punho e não produz sintoma em quem tem o túnel de tamanho normal.",
-   "C": "15 mmHg já se aproxima, mas o limiar descrito para o comprometimento da circulação epineural é 20."
+   "A": "**Repouso normal.**\n- 5 mmHg é a pressão de um túnel saudável.",
+   "B": "**Bem tolerado.**\n- 10 mmHg ocorre fisiologicamente com movimentos do punho.",
+   "C": "**Próximo, mas abaixo.**\n- O limiar descrito é 20 mmHg."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0044": {
-  "conceito": "O teste de Froment procura fraqueza do adutor do polegar, que é inervado pelo nervo ulnar. Peça para a pessoa segurar uma folha de papel entre o polegar e a borda radial do indicador, e puxe.",
-  "correta": "Os dois músculos que a manobra põe em evidência são o adutor do polegar, que deveria fazer a pinça, e o flexor longo do polegar, que entra como substituto. Sem o adutor, a única forma de manter a folha é fletir a interfalângica com o flexor longo, que é do nervo mediano: o polegar dobra a ponta e o sinal é positivo. É o mesmo raciocínio do sinal de Jeanne, em que a metacarpofalângica hiperestende para compensar.",
+  "conceito": "### Sinais da paralisia do ulnar no polegar\n| Sinal | Achado | Músculo fraco | Compensação |\n|---|---|---|---|\n| ==Froment== | ==flexão da IF== ao segurar papel entre polegar e indicador | ==adutor do polegar== (ulnar) | ==flexor longo do polegar== (mediano) |\n| Jeanne | **hiperextensão da MF** na pinça | adutor, flexor curto (cabeça profunda) | extensor longo |\n\n### Outros sinais do ulnar\n- **Wartenberg:** mínimo abduzido.\n- **Duchenne:** garra do anelar e mínimo.\n- **Masse:** achatamento do arco metacarpal.\n- **Pitres-Testut:** incapacidade de desviar o médio lateralmente.\n- Atrofia do 1º interósseo dorsal.\n\n### Intrínsecos do polegar\n| Músculo | Nervo |\n|---|---|\n| adutor | ulnar |\n| abdutor curto, oponente | mediano |\n| flexor curto | duplo (superficial mediano, profunda ulnar) |\n\n> **Na prova:** Froment = ==adutor (fraco) e flexor longo do polegar (compensa)==.",
+  "correta": "**Adutor e flexor longo.**\n- Sem o adutor (ulnar), o polegar usa o flexor longo (mediano) para prender o papel.\n- A IF flete: é o sinal de Froment.",
   "incorretas": {
-   "B": "O abdutor curto do polegar é tenar e do mediano; ele não participa da pinça lateral nem da compensação vista no teste. Quem substitui o adutor ausente é o flexor longo.",
-   "C": "O oponente é do mediano e serve à oposição, não à adução. Já o flexor curto tem inervação dupla (cabeça superficial pelo mediano, profunda pelo ulnar), mas não é o músculo cuja compensação define o sinal.",
-   "D": "Oponente e abdutor curto são os dois principais músculos tenares do mediano. Um teste que avaliasse os dois seria o de oposição, não o de Froment, que é o teste do ulnar por excelência."
+   "B": "**Abdutor não participa.**\n- O abdutor curto é tenar e não compensa a adução.",
+   "C": "**Músculos da oposição.**\n- O oponente não faz a pinça lateral.",
+   "D": "**Teste de oposição.**\n- Oponente e abdutor curto são avaliados em outro teste."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0045": {
-  "conceito": "O túnel cubital tem um assoalho e um teto bem definidos. O assoalho é o feixe posterior do ligamento colateral ulnar e a cápsula da articulação; o teto é uma lâmina fibrosa entre o epicôndilo medial e o olécrano.",
-  "correta": "Essa lâmina que forma o teto é a fáscia de Osborne, também chamada ligamento epicôndilo-olecraniano ou ligamento arqueado, em continuidade com a aponeurose entre as duas cabeças do flexor ulnar do carpo. É sob ela que o nervo ulnar passa, e é ela que se tensiona e reduz o volume do túnel quando o cotovelo flete. Seccioná-la é o primeiro tempo de qualquer descompressão.",
+  "conceito": "### Anatomia do túnel cubital\n| Parte | Estrutura |\n|---|---|\n| ==teto== | ==fáscia (ligamento) de Osborne==: epicôndilo-olecraniano, arqueado; contínuo com a aponeurose do FUC |\n| assoalho | feixe posterior e transverso do ligamento colateral ulnar, cápsula |\n| paredes | epicôndilo medial e olécrano |\n\n### Pontos de compressão do ulnar (proximal → distal)\n1. Arcada de Struthers (8 cm acima do epicôndilo).\n2. Septo intermuscular medial.\n3. Epicôndilo medial (subluxação, cúbito valgo).\n4. ==Túnel cubital (Osborne)==.\n5. Entre as cabeças do FUC.\n6. Aponeurose flexora-pronadora profunda.\n\n### Na cirurgia\n- Liberação **in situ**: seccionar Osborne e a aponeurose do FUC.\n- Transposição anterior: liberar também Struthers e o septo intermuscular para não criar nova compressão.\n\n### Não confundir\n- **Ligamento transverso do carpo:** teto do túnel do carpo (mediano).\n- **Ligamento de Struthers:** do processo supracondiliano ao epicôndilo (mediano).\n\n> **Na prova:** o ulnar passa sob a ==fáscia de Osborne==.",
+  "correta": "**Fáscia de Osborne.**\n- É o teto do túnel cubital, entre epicôndilo medial e olécrano.\n- Tensiona-se na flexão do cotovelo e é o primeiro alvo da descompressão.",
   "incorretas": {
-   "A": "O ligamento transverso do carpo é o teto do túnel do carpo, no punho, e cobre o nervo mediano. Nome parecido, lugar completamente diferente.",
-   "C": "A arcada ou fáscia de Struthers fica cerca de 8 cm acima do epicôndilo medial e também pode comprimir o ulnar, mas ela é proximal ao túnel cubital, e a questão pergunta o que cobre o nervo dentro dele.",
-   "D": "O ligamento colateral ulnar é o assoalho do túnel, não o teto: o nervo passa por cima dele, não por baixo. Confundir os dois inverte a anatomia da descompressão."
+   "A": "**Túnel do carpo.**\n- O ligamento transverso do carpo cobre o mediano no punho.",
+   "C": "**Proximal ao túnel.**\n- A arcada de Struthers fica 8 cm acima do epicôndilo.",
+   "D": "**É o assoalho.**\n- O nervo passa por cima do colateral ulnar."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0046": {
-  "conceito": "A classificação de Palmer separa as lesões do complexo da fibrocartilagem triangular em duas classes, e essa divisão comanda o tratamento. Classe 1 são traumáticas e vão de A a D conforme onde o disco se rompeu; classe 2 são degenerativas e vão de A a E conforme a progressão do impacto ulnocarpal.",
-  "correta": "A lesão 1A é a perfuração ou rasgo central do disco, a 1 ou 2 mm da borda radial. Como a região central do disco é avascular, ela não cicatriza: o tratamento é o desbridamento artroscópico da borda instável, não a sutura. Guardar esse par (1A, centro, avascular, desbrida) resolve a questão e a conduta ao mesmo tempo.",
+  "conceito": "### Classificação de Palmer (complexo da fibrocartilagem triangular)\n#### Classe 1: traumáticas\n| Tipo | Local | Vascularização | Tratamento |\n|---|---|---|---|\n| ==1A== | ==perfuração central== do disco | ==avascular== | ==desbridamento== |\n| 1B | avulsão **ulnar** (fóvea ou estiloide) | vascularizada | **reparo** (instabilidade da RUD) |\n| 1C | avulsão **distal** (ulnossemilunar, ulnopiramidal) | | reparo |\n| 1D | avulsão **radial** (incisura sigmoide) | | reparo ou desbridamento |\n\n#### Classe 2: degenerativas (impacto ulnocarpal)\n| Tipo | Achado |\n|---|---|\n| 2A | desgaste do CFCT |\n| 2B | + condromalácia do semilunar ou ulna |\n| 2C | perfuração do CFCT |\n| 2D | + lesão do ligamento lunopiramidal |\n| 2E | + artrose ulnocarpal |\n\n### Vascularização do CFCT\n- **Periferia** (10 a 40%) vascularizada; **centro** avascular.\n\n> **Na prova:** perfuração central = ==Palmer 1A==.",
+  "correta": "**Palmer 1A.**\n- É o rasgo central do disco, na zona avascular.\n- Não cicatriza; trata-se com desbridamento artroscópico.",
   "incorretas": {
-   "B": "A 1B é a avulsão ulnar, na inserção do disco no estiloide ulnar, com ou sem fratura do estiloide. Como essa borda tem vascularização, ela é a lesão que se repara com sutura, e é também a que mais se associa a instabilidade da radioulnar distal.",
-   "C": "A 1C é a avulsão distal, dos ligamentos ulnossemilunar e ulnopiramidal, que se manifesta como instabilidade ulnocarpal.",
-   "D": "A 1D é a avulsão radial, do disco na incisura sigmoide do rádio, às vezes com fragmento ósseo. Também é periférica, mas do lado oposto ao da 1B."
+   "B": "**Avulsão ulnar.**\n- A 1B é periférica, vascularizada e reparável.",
+   "C": "**Avulsão distal.**\n- A 1C atinge os ligamentos ulnocarpais.",
+   "D": "**Avulsão radial.**\n- A 1D é a desinserção na incisura sigmoide."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0047": {
-  "conceito": "A deformidade de Madelung vem de uma falha de crescimento da porção volar e ulnar da fise distal do rádio, muitas vezes com uma banda anômala (o ligamento de Vickers) ancorando o semilunar ao rádio e freando aquele canto da placa de crescimento.",
-  "correta": "É mais frequente em meninas e costuma ser bilateral, ainda que assimétrica. Manifesta-se na segunda década, quando o estirão torna a deformidade evidente: rádio curto e curvado, ulna proeminente no dorso, subluxação volar da mão e restrição de supinação e extensão. A forma bilateral em menina baixa deve levantar a suspeita de discondrosteose de Léri-Weill, ligada ao gene SHOX, o que muda a investigação.",
+  "conceito": "### Deformidade de Madelung\n- Falha de crescimento da porção ==volar e ulnar da fise distal do rádio==.\n- Frequentemente com o **ligamento de Vickers** (banda do semilunar ao rádio) freando a fise.\n\n### Perfil\n- ==Meninas==, ==bilateral== (muitas vezes assimétrica).\n- Surge na **segunda década**, com o estirão.\n- Bilateral em menina de baixa estatura: pensar em **discondrosteose de Léri-Weill** (gene **SHOX**), Turner.\n\n### Achados\n| Clínica | Radiografia |\n|---|---|\n| ulna proeminente no dorso | rádio curto e curvo (dorsal e radial) |\n| mão subluxada para volar | inclinação ulnar e volar exagerada da superfície articular |\n| supinação e extensão limitadas | carpo em cunha, \"triangular\", semilunar afundado |\n\n### Madelung reverso\n- Curvatura volar do rádio (raro).\n\n### Tratamento\n- Assintomáticos: observação.\n- Dor ou deformidade progressiva: liberação do ligamento de Vickers com fisiólise (jovem), osteotomia do rádio em cúpula, encurtamento da ulna.\n\n> **Na prova:** Madelung = ==feminino e bilateral==.",
+  "correta": "**Meninas, bilateral.**\n- A forma clássica é bilateral e mais frequente no sexo feminino.\n- Aparece na adolescência, com o estirão.",
   "incorretas": {
-   "B": "O sexo está certo, a lateralidade não. Forma unilateral existe, sobretudo pós-traumática ou pós-infecciosa, mas não é a apresentação típica da deformidade idiopática ou displásica.",
-   "C": "A lateralidade bilateral está certa, mas o predomínio descrito é feminino, e com folga.",
-   "D": "Erra os dois traços que caracterizam a apresentação clássica."
+   "B": "**Lateralidade errada.**\n- A forma unilateral é mais pós-traumática ou pós-infecciosa.",
+   "C": "**Sexo errado.**\n- O predomínio é feminino.",
+   "D": "**Erra os dois.**\n- Sexo e lateralidade trocados."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0048": {
-  "conceito": "A trapeziometacarpiana é uma sela com dois graus de liberdade e nenhuma congruência óssea que a estabilize: quem a segura são os ligamentos. Na rizartrose, é a falência de um deles que inicia a cascata.",
-  "correta": "O ligamento palmar (o oblíquo anterior, também chamado ligamento em bico) vai da tuberosidade volar do trapézio à base volar-ulnar do primeiro metacarpo e é o principal freio da subluxação dorsal durante a pinça. Quando ele afrouxa, a base do metacarpo escorrega para dorsal, o contato articular se concentra numa área pequena na região volar e o desgaste começa exatamente ali, motivo pelo qual a artrose da trapeziometacarpiana aparece primeiro na faceta palmar, tanto na radiografia quanto na artroscopia.",
+  "conceito": "### Trapeziometacarpiana: estabilidade ligamentar\n- Articulação em **sela**, pouca congruência óssea: estabilidade depende dos ligamentos.\n\n| Ligamento | Papel |\n|---|---|\n| ==palmar (oblíquo anterior, em bico)== | ==principal freio da subluxação dorsal na pinça== (visão clássica) |\n| dorsorradial | restritor dorsal espesso (valorizado em estudos recentes) |\n| oblíquo posterior | coadjuvante |\n| colateral ulnar | contém desvio radial |\n| intermetacarpal | une bases do 1º e 2º MC |\n\n### Cascata da rizartrose\n1. Frouxidão do ligamento palmar.\n2. Base do 1º MC subluxa para **dorsal e radial**.\n3. Carga concentrada na **faceta palmar** do trapézio: desgaste começa ali.\n4. Metacarpo aduz; MF hiperestende (ziguezague).\n\n### Tratamento\n| Fase | Opções |\n|---|---|\n| inicial (Eaton I) | órtese, infiltração, reconstrução ligamentar (Eaton-Littler com FRC) |\n| II a IV | trapezectomia (com ou sem interposição e suspensão), artrodese, próteses |\n\n> **Na prova:** ligamento incompetente na rizartrose = ==palmar (oblíquo anterior)==.",
+  "correta": "**Ligamento palmar.**\n- O oblíquo anterior é o principal freio da subluxação dorsal na pinça.\n- Sua frouxidão inicia a cascata e o desgaste começa na faceta palmar.",
   "incorretas": {
-   "A": "O colateral ulnar contribui para conter o desvio radial do metacarpo, mas é restritor secundário: a falência dele não é o que abre a porta para a subluxação dorsal.",
-   "B": "Os ligamentos dorsais, sobretudo o dorsorradial, resistem ao deslocamento depois que ele começou e há literatura recente valorizando esse papel. Ainda assim, o que a questão pede é o ligamento cuja incompetência inicia o processo, e esse é o palmar.",
-   "D": "O intermetacarpal une as bases do primeiro e do segundo metacarpos e é coadjuvante. Sozinho, não sustenta a articulação nem explica a deformidade."
+   "A": "**Restritor secundário.**\n- O colateral ulnar contém o desvio radial.",
+   "B": "**Atua depois.**\n- Os dorsais resistem ao deslocamento já iniciado.",
+   "D": "**Coadjuvante.**\n- O intermetacarpal não sustenta sozinho a articulação."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0049": {
