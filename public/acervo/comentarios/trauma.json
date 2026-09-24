@@ -11692,5 +11692,61 @@
     },
     "geradoEm": "2026-09-21",
     "conferido": false
+  },
+  "trauma-1082": {
+    "conceito": "### Classificação de Ideberg (glenoide)\n- **Tipo I:** fratura da borda (Ia anterior, Ib posterior).\n- **Tipo II:** traço transverso/oblíquo que sai **inferiormente**, destacando fragmento inferior.\n- **Tipo III:** traço oblíquo que sai **superiormente**, levando o ==terço superior da glenoide com o coracoide==.\n- **Tipo IV:** traço transverso que atravessa o corpo e sai na borda medial.\n- **Tipo V:** combinações (Goss acrescentou o tipo VI, cominutiva).\n\n> **Na prova:** terço superior + coracoide = ==Ideberg III==.",
+    "correta": "**Tipo III.**\n- Traço sai pela borda superior da escápula e leva o fragmento glenoidal superior junto com o processo coracoide.",
+    "incorretas": {
+      "A": "**Tipo I** é fratura da borda glenoidal (anterior ou posterior).",
+      "B": "**Tipo II** destaca o fragmento **inferior** da glenoide.",
+      "D": "**Tipo IV** atravessa o corpo da escápula até a borda medial."
+    },
+    "referencias": [
+      "Rockwood and Green's fractures in Adults 7 th ed. 1155 pg  (referência indicada na prova TARO 2015, questão 1)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "trauma-1083": {
+    "conceito": "### Haste na tíbia proximal: o ponto de entrada manda\n- Fraturas do terço proximal tendem a duas deformidades:\n  - ==valgo==;\n  - **antecurvato (procurvato)**, pela tração do ligamento patelar.\n- Um ponto de entrada **medial demais** direciona a haste obliquamente e abre o foco em ==valgo==.\n- Prevenção:\n  - entrada levemente **lateral**, alinhada à espinha tibial lateral;\n  - parafusos bloqueadores (Poller);\n  - posição semiestendida (via suprapatelar).\n\n> **Na prova:** entrada medial = ==valgo==.",
+    "correta": "**Valgo.**",
+    "incorretas": {
+      "A": "**Varo** seria o efeito de uma entrada lateral excessiva.",
+      "C": "Ponto de entrada no plano coronal não produz rotação.",
+      "D": "Ponto de entrada no plano coronal não produz rotação."
+    },
+    "referencias": [
+      "Rockwood and Green’s Fractures in adults 8 Ed. 2434 Pg (referência indicada na prova TARO 2018, questão 8)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "trauma-1084": {
+    "conceito": "### Cintilografia na fratura de estresse da tíbia\n- **Fratura de estresse:** captação ==focal e intensa nas três fases== (fluxo, pool e tardia), fusiforme e cortical.\n- **Periostite (canelite, síndrome do estresse tibial medial):** captação **linear e difusa só na fase tardia**, ao longo da cortical posteromedial.\n- A RM hoje é o exame de escolha, mas a distinção cintilográfica é clássica de prova.\n\n> **Na prova:** focal nas 3 fases = ==fratura==; difusa só na tardia = canelite.",
+    "correta": "**Focal nas 3 fases do exame.**",
+    "incorretas": {
+      "B": "**Focal só na fase tardia** sugere lesão óssea sem hiperemia, não o padrão da fratura aguda.",
+      "C": "**Difuso nas 3 fases** não é o padrão típico da fratura de estresse.",
+      "D": "**Difuso só na fase tardia** é o padrão da **canelite** (periostite)."
+    },
+    "referencias": [
+      "Rockwood and Green’s Fractures in adults 8 Ed. 653 Pg (referência indicada na prova TARO 2018, questão 64)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "trauma-1085": {
+    "conceito": "### Haste tibial pela via suprapatelar\n- Joelho em **semiextensão** (cerca de 20°): o ligamento patelar não puxa o fragmento proximal.\n- Vantagens:\n  - facilita a redução das ==fraturas proximais==, evitando valgo e antecurvato;\n  - simplifica o posicionamento e a fluoroscopia;\n  - mantém a redução nas fraturas distais.\n- Desvantagens teóricas: lesão condral patelofemoral e necessidade de proteção com trocarte.\n\n> **Na prova:** principal indicação da suprapatelar = ==fratura proximal da tíbia==.",
+    "correta": "**Fratura proximal da tíbia.**",
+    "incorretas": {
+      "A": "**Canal estreito** não é indicação da via.",
+      "C": "**Fratura multifragmentária** não define a via.",
+      "D": "**Osteoporose** não define a via."
+    },
+    "referencias": [
+      "Bucholz RW, Heckman JD, Court-Brown CM, Torneta III P. Rockwood and Green’s Fractures in adults. 8aedição. Philadelphia: Lippincott, 2015. 8 Ed. 1550 Pg (referência indicada na prova TARO 2019, questão 73)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
   }
 }
