@@ -5433,91 +5433,92 @@
   "conferido": false
  },
  "mao-0466": {
-  "conceito": "As duas paroníquias têm agentes diferentes porque têm mecanismos diferentes. A aguda vem de uma inoculação (a cutícula rompida, a unha roída) e o agente é o da pele. A crônica vem da exposição repetida à umidade, que destrói a barreira da cutícula e permite colonização persistente.",
-  "correta": "Na paroníquia crônica os agentes frequentes são bactérias gram-negativas, sobretudo Pseudomonas, e a Candida. Ela aparece em quem trabalha com as mãos molhadas (cozinheiro, faxineiro, dentista) e em diabéticos, e o quadro é arrastado, com a prega ungueal espessada, a cutícula ausente e alterações da lâmina. O tratamento também muda de acordo: aqui o essencial é afastar a umidade e tratar o fungo, e a drenagem repetida não resolve. Na aguda, ao contrário, o agente é o Staphylococcus aureus, gram-positivo, e o tratamento é drenagem mais antibiótico.",
+  "conceito": "### Paroníquia aguda × crônica\n| Aspecto | Aguda | ==Crônica== |\n|---|---|---|\n| causa | inoculação (cutícula, unha roída, manicure) | ==umidade repetida== destrói a cutícula |\n| agente | ==Staphylococcus aureus== (gram-positivo) | ==gram-negativos (Pseudomonas) e Candida== |\n| perfil | qualquer | cozinheiro, faxineiro, dentista, diabético |\n| quadro | dor, abscesso na prega | prega espessada, sem cutícula, lâmina alterada |\n| tratamento | drenagem + antibiótico | afastar umidade, antifúngico tópico, corticoide tópico; ==eponiquectomia== se refratária |\n\n### Diferenciais\n| Condição | Pista |\n|---|---|\n| panarício herpético | vesículas; ==não drenar== |\n| felon | polpa tensa, septos |\n| verruga periungueal | HPV |\n| carcinoma espinocelular | lesão crônica que não cura |\n\n> **Na prova:** paroníquia crônica = ==gram-negativos e Candida==.",
+  "correta": "**Gram-negativas e Candida.**\n- Umidade repetida destrói a cutícula.\n- Tratar afastando a umidade e o fungo.\n- Drenagem repetida não resolve.",
   "incorretas": {
-   "A": "As gram-positivas são da forma aguda, e o Aspergillus não é agente habitual dessa infecção.",
-   "C": "As gram-negativas estão certas, mas o HPV causa verrugas periungueais, e não paroníquia.",
-   "D": "A Candida está certa, mas as gram-positivas pertencem à forma aguda."
+   "A": "**Forma aguda.**\n- Gram-positivas; Aspergillus não é agente.",
+   "C": "**HPV causa verruga.**\n- Não paroníquia.",
+   "D": "**Gram-positivas da aguda.**\n- Candida certa."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0467": {
-  "conceito": "Cortado o axônio, o segmento que fica sem o corpo celular não tem como se manter: ele depende do transporte axonal vindo do corpo, que agora está do outro lado do corte. O processo de desmonte desse segmento é a degeneração walleriana.",
-  "correta": "Ela ocorre distalmente ao ponto de lesão e envolve a desintegração do axolema, a fragmentação celular, a despolimerização dos microtúbulos e a quebra do citoesqueleto, tudo o que sustentava o axônio se desfaz, e os restos são removidos por macrófagos e pelas células de Schwann. O prazo importa na prática: o processo leva cerca de três semanas para se completar, e é por isso que a eletroneuromiografia pedida antes disso pode vir falsamente tranquilizadora, com o coto distal ainda conduzindo.",
+  "conceito": "### Momento da ENMG na lesão nervosa\n| Tempo | O que mostra |\n|---|---|\n| imediato | coto distal ainda conduz (falso normal) |\n| 7 a 10 dias | queda da amplitude motora e sensitiva (degeneração walleriana) |\n| ==3 semanas== | ==fibrilações e ondas positivas== no músculo desnervado |\n| 3 a 4 meses | potenciais de reinervação (nascentes) |\n\n### Pré × pós-ganglionar\n| Achado | Pré-ganglionar (avulsão) | Pós-ganglionar |\n|---|---|---|\n| potencial sensitivo (SNAP) em área anestésica | ==preservado== | ausente |\n| paravertebrais | ==desnervados== (ramo dorsal sai antes do gânglio) | normais |\n\n### Outros exames\n- Mielotomografia ou RM: pseudomeningocele.\n- Exame clínico seriado permanece essencial.\n\n### Degeneração walleriana\n| Local | Processo |\n|---|---|\n| ==distal à lesão== | ==desintegração do axolema, fragmentação, despolimerização de microtúbulos, quebra do citoesqueleto==; macrófagos e Schwann limpam |\n| proximal (1 a 2 internódulos) | degeneração retrógrada |\n| corpo celular | cromatólise (preparo para regenerar) |\n\n- Schwann formam as bandas de Büngner, que guiam a regeneração.\n- Fibrose tardia é obstáculo, não parte da degeneração.\n\n> **Na prova:** degeneração walleriana = ==distal, com desintegração do axônio e citoesqueleto==",
+  "correta": "**Distal, desintegração do axônio.**\n- Segmento sem corpo celular se desmonta.\n- Leva cerca de 3 semanas: ENMG antes pode enganar.",
   "incorretas": {
-   "A": "A topografia está errada. Proximalmente ao corte acontece outra coisa: a degeneração retrógrada, que atinge um ou dois internódulos, e a cromatólise no corpo celular, que é o preparo para regenerar.",
-   "B": "A topografia está certa e o conteúdo não: proliferação de fibroblastos e deposição de matriz extracelular descrevem a fibrose que se instala depois, e que é justamente o obstáculo à regeneração, não o processo de degeneração em si.",
-   "D": "Erra a topografia e o conteúdo."
+   "A": "**Topografia errada.**\n- Proximal ocorre degeneração retrógrada e cromatólise.",
+   "B": "**Conteúdo errado.**\n- Fibrose é posterior e atrapalha a regeneração.",
+   "D": "**Duplamente errada.**\n- Topografia e conteúdo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0468": {
-  "conceito": "Aneurisma de membro superior é raro, e a raridade é a pista: os fatores que produzem aneurisma em outros territórios não agem tanto aqui.",
-  "correta": "A causa habitual é o trauma, seja único e penetrante, seja repetido. O exemplo mais conhecido é a síndrome do martelo hipotenar: a artéria ulnar esmagada contra o hâmulo do hamato cada vez que a borda da mão é usada como ferramenta, com ruptura da lâmina elástica interna e dilatação da parede. Aparece em mecânico, marceneiro, pedreiro, e é subdiagnosticada. A investigação passa pelo teste de Allen e por angiotomografia, e o tratamento é ressecar o segmento doente com reconstrução por enxerto venoso.",
+  "conceito": "### Síndrome do martelo hipotenar\n- Trauma repetido da borda ulnar da mão (usar a mão como martelo).\n- A **artéria ulnar** é esmagada contra o **hâmulo do hamato**, logo após sair do canal de Guyon.\n- Lesão estrutural: ==lâmina elástica interna== → **aneurisma verdadeiro**; lesão endotelial → **trombose** e embolia.\n\n### Clínica\n- Dedos 4º e 5º (às vezes 3º) frios, pálidos, dolorosos, fenômeno de Raynaud unilateral, úlceras.\n- Massa pulsátil hipotenar, parestesia ulnar.\n- Homens, mecânicos, marceneiros, esportes (caratê, vôlei).\n\n### Investigação\n- **Teste de Allen**, Doppler, angiotomografia ou angiografia (aspecto em saca-rolha).\n\n### Tratamento\n- Parar o trauma, parar de fumar, antiagregação.\n- **Ressecção do segmento** com **enxerto venoso** (ou ligadura se boa circulação colateral).\n\n### Camadas da artéria\n- Íntima (endotélio + lâmina elástica interna), média, adventícia.\n\n### Causas de aneurisma no membro superior\n| Causa | Peso |\n|---|---|\n| ==trauma== (penetrante ou repetido) | ==a mais comum== |\n| micótico | raro (endocardite, drogas) |\n| aterosclerose | pequeno (domina na aorta e membros inferiores) |\n| colagenoses (Marfan, Ehlers-Danlos) | exceção |\n\n> **Na prova:** aneurisma do membro superior = geralmente ==traumático==",
+  "correta": "**Trauma.**\n- Penetrante ou repetido.\n- Exemplo: martelo hipotenar na artéria ulnar.\n- Ressecção com enxerto venoso.",
   "incorretas": {
-   "A": "Aneurisma micótico existe, mas é raro e ligado a endocardite ou a uso de droga injetável, não é a causa habitual.",
-   "B": "A aterosclerose é a causa dominante nos aneurismas de aorta e de membros inferiores, e tem papel pequeno no membro superior.",
-   "C": "Distúrbios do tecido conjuntivo, como Marfan e Ehlers-Danlos, podem produzir aneurismas, mas em outros territórios e como exceção."
+   "A": "**Micótico.**\n- Raro.",
+   "B": "**Aterosclerose.**\n- Domina em outros territórios.",
+   "C": "**Colagenoses.**\n- Exceção."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0469": {
-  "conceito": "Luck dividiu a doença de Dupuytren em três fases histológicas. Proliferativa: fibroblastos abundantes, tecido rico em células, vasos e colágeno tipo III, ainda desorganizado. Involutiva: miofibroblastos se alinham na direção da tração e o tecido começa a se organizar e a contrair. Residual: sobra tecido fibroso acelular, pobre em vasos, com colágeno maduro, a corda.",
-  "correta": "Na fase proliferativa as fibras de colágeno estão desorganizadas, sem orientação definida, porque o tecido está sendo depositado depressa e ainda não sofreu a remodelação que o alinha. Isso tem consequência cirúrgica direta: doença em atividade recidiva mais, e por isso se prefere operar a corda madura em vez do nódulo em plena proliferação.",
+  "conceito": "### Fases histológicas de Luck (Dupuytren)\n| Fase | Histologia | Colágeno III/I |\n|---|---|---|\n| I: proliferativa | fibroblastos e miofibroblastos abundantes, nódulos | ==alta== |\n| II: involutiva | miofibroblastos alinhados na linha de tração | intermediária |\n| ==III: residual== | ==tecido acelular, pouco vascularizado (corda madura)== | ==cerca de 20%== (próximo da fáscia normal) |\n\n### Implicações\n- Doença ativa (nódulos, colágeno III alto): **mais recidiva** após cirurgia.\n- Preferir operar cordas maduras.\n- Corticoide injetável atua nos nódulos ativos.\n\n### Biologia\n- **Miofibroblasto** com actina de músculo liso: gera a contração.\n- TGF-β, via Wnt, genética.\n\n### Tipos de colágeno\n| Tipo | Onde |\n|---|---|\n| I | fáscia normal, tendão, osso, cicatriz madura |\n| II | cartilagem hialina |\n| ==III== | ==cicatriz recente, Dupuytren (excesso)== |\n| IV | membrana basal |\n\n> **Na prova:** Luck proliferativa = ==colágeno desorganizado==, nódulo, mais recidiva.",
+  "correta": "**Colágeno desorganizado na fase proliferativa.**\n- Depositado depressa, sem remodelação.\n- Operar nessa fase recidiva mais.",
   "incorretas": {
-   "A": "As cordas são o produto final e caracterizam a fase residual. Na proliferativa o que existe é o nódulo.",
-   "B": "É o contrário: o colágeno tipo III é abundante na fase proliferativa e vai sendo substituído por tipo I até a residual, quando a proporção volta para perto do normal.",
-   "C": "A fase interfere, e muito. Operar em plena atividade proliferativa é reconhecidamente associado a maior taxa de recidiva."
+   "A": "**Fase residual.**\n- Na proliferativa há nódulo.",
+   "B": "**Invertida.**\n- Tipo III abunda na proliferativa.",
+   "C": "**Interfere.**\n- Fase ativa recidiva mais."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0470": {
-  "conceito": "Blauth, com a modificação de Manske, gradua a hipoplasia do polegar por três coisas que se somam conforme a gravidade: estreitamento da primeira comissura, hipoplasia da musculatura tenar e instabilidade da metacarpofalângica. A partir do IIIB, entra a instabilidade da própria base, e a decisão muda de reconstruir para policizar.",
-  "correta": "O tipo II reúne comissura estreita, tenar hipoplásica e instabilidade do colateral ulnar da metacarpofalângica, com carpometacarpiana estável, e o polegar é reconstruível. O procedimento que trata a hipoplasia tenar é a oponentoplastia, em geral com o flexor superficial do quarto dedo, associada ao aprofundamento da comissura por zetaplastia e à estabilização do colateral ulnar. Os três gestos costumam ser feitos no mesmo tempo cirúrgico.",
+  "conceito": "### Blauth modificado por Manske (hipoplasia do polegar)\n| Tipo | Achado | Tratamento |\n|---|---|---|\n| I | polegar pouco menor | nenhum |\n| ==II== | comissura estreita, ==tenar hipoplásica==, colateral ulnar da MF frouxo; CMC estável | ==oponentoplastia== + zetaplastia da comissura + estabilização da MF |\n| IIIA | + anomalias extrínsecas, CMC estável | reconstrução (como II + tendões) |\n| IIIB | CMC instável | ==policização== |\n| IV | polegar flutuante (pouce flottant) | policização |\n| V | ausência | policização |\n\n> **Na prova:** Blauth II = ==oponentoplastia== (com comissura e colateral ulnar).",
+  "correta": "**Oponentoplastia.**\n- Trata a hipoplasia tenar, em geral com FSD do 4º dedo.\n- Junto: zetaplastia da comissura e estabilização da MF.",
   "incorretas": {
-   "A": "A policização é a conduta dos tipos IIIB, IV e V, quando a base do polegar é instável, o dedo é flutuante ou está ausente. No tipo II existe uma base estável, e policizar seria descartar um polegar reconstruível.",
-   "B": "Alongar o primeiro metacarpo não resolve nenhum dos três problemas do tipo II, que são de partes moles e de estabilidade.",
-   "C": "A transferência do extensor próprio do indicador serve para restaurar extensão, e a extensão não é a função comprometida aqui, o que falta é oposição."
+   "A": "**IIIB, IV, V.**\n- Base instável ou ausente.",
+   "B": "**Não resolve.**\n- Problemas do tipo II são de partes moles.",
+   "C": "**Extensão.**\n- Falta oposição, não extensão."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0471": {
-  "conceito": "A deficiência longitudinal do rádio é classificada pelo que sobrou do rádio, de I, apenas encurtado na extremidade distal, a IV, ausente por completo. Mas o rádio não é a única coisa que falha do lado radial.",
-  "correta": "As alterações do polegar e do carpo ocorrem independentemente do tipo de displasia. Um tipo IV pode vir com polegar quase normal, e um tipo I pode vir com polegar gravemente hipoplásico. Por isso o polegar é graduado à parte, por Blauth com a modificação de Manske, e as ausências e coalizões do carpo (escafoide, trapézio e trapezoide são os mais afetados) precisam ser avaliadas por si. A consequência prática é direta: o planejamento se faz em três frentes separadas, e a gravidade de uma não prevê a das outras.",
+  "conceito": "### Classificação de Heikel (displasia radial)\n| Heikel | Bayne | Descrição |\n|---|---|---|\n| A | I | rádio distal curto (fise distal atrasada) |\n| B | II | rádio hipoplásico em miniatura |\n| C | III | ausência parcial (remanescente proximal) |\n| ==D== | ==IV== | ==ausência total do rádio==: ==a mais comum== |\n\n### Mão torta radial (tipo D)\n- Mão desviada radialmente sobre a ponta da ulna.\n- Ulna curta e encurvada; polegar ausente ou hipoplásico.\n- Bilateral em cerca de metade.\n\n### Investigação obrigatória\n| Síndrome | Exame |\n|---|---|\n| Fanconi | teste de quebra cromossômica (diepoxibutano) |\n| Holt-Oram | ecocardiograma |\n| TAR | hemograma (plaquetas) |\n| VACTERL | coluna, rim, coração, ânus, traqueia/esôfago |\n\n### Remanescente no tipo C\n- Pode funcionar como **banda** que agrava a curvatura da ulna com o crescimento.\n\n### Tratamento da mão torta radial\n| Fase | Medida |\n|---|---|\n| recém-nascido | alongamento e órteses seriadas |\n| 6 a 12 meses | distração de partes moles (fixador) se rígida |\n| ~1 ano | centralização ou radialização do carpo sobre a ulna |\n| depois | policização se polegar ausente |\n\n### Contraindicações à correção\n| Situação | Motivo |\n|---|---|\n| ==cotovelo rígido em extensão== | ==o desvio radial é o que leva a mão à boca== |\n| adulto adaptado com boa função | ganho funcional pequeno |\n| doença sistêmica grave (Fanconi, TAR) | risco clínico |\n\n### Três frentes independentes\n| Frente | Classificação |\n|---|---|\n| rádio | Bayne e Klug (I a IV) |\n| polegar | Blauth-Manske |\n| carpo | ausência, hipoplasia, coalizão (escafoide, trapézio) |\n\n- ==Polegar e carpo alteram independentemente do tipo radial==.\n- Ordem: estabilizar o punho, depois o polegar.\n\n> **Na prova:** alterações de polegar e carpo ==independem do tipo== de displasia.",
+  "correta": "**Independem do tipo.**\n- Tipo IV pode ter polegar quase normal e vice-versa.\n- Polegar e carpo são avaliados à parte.",
   "incorretas": {
-   "A": "A ordem é a inversa: estabiliza-se o punho primeiro, e só depois se reconstrói ou policiza o polegar. Com o carpo desviado sobre a ponta da ulna, o polegar reconstruído não teria posição estável de onde fazer pinça.",
-   "B": "O tipo 1 é o encurtamento da extremidade distal do rádio, e não uma hipoplasia proximal. A hipoplasia em toda a extensão é o tipo 2.",
-   "C": "Alterações do carpo (ausência, hipoplasia e coalizão de ossos, sobretudo do lado radial) ocorrem em todos os tipos, inclusive no 2."
+   "A": "**Ordem invertida.**\n- Punho primeiro, polegar depois.",
+   "B": "**Tipo 1 é distal.**\n- Encurtamento distal, não proximal.",
+   "C": "**Carpo alterado.**\n- Ocorre em todos os tipos."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0472": {
-  "conceito": "A oponentoplastia devolve a oposição do polegar quando a musculatura tenar está perdida sem chance de recuperação. Ela é o exemplo clássico de transferência tendínea, e a lista de técnicas se organiza pelo tendão doador: Bunnell usa uma fita do flexor superficial do quarto dedo, com o flexor ulnar do carpo servindo de polia; Camitz usa o palmar longo com a fáscia palmar; Huber usa o abdutor do dedo mínimo, opção elegante na criança porque acrescenta volume à tenar; Burkhalter usa o extensor próprio do indicador.",
-  "correta": "A técnica atribuída a Cook usa o extensor do quinto dedo como doador para a oponência, vale registrar que esse epônimo é menos citado que os anteriores. O princípio, porém, é o mesmo de todas: o doador precisa de excursão suficiente, força dispensável e, sobretudo, de uma polia que redirecione a tração na direção certa. Sem a polia no lugar certo, o tendão transferido flete o polegar em vez de opô-lo.",
+  "alerta": "O epônimo Cook para oponentoplastia com o extensor do quinto dedo é pouco citado na literatura corrente. As técnicas mais cobradas são Bunnell, Camitz, Huber e Burkhalter.",
+  "conceito": "### Oponentoplastias\n| Técnica | Doador | Polia / detalhe |\n|---|---|---|\n| Bunnell | ==FSD do 4º dedo== | alça no FUC (pisiforme) |\n| Camitz | ==palmar longo + fáscia palmar== | túnel do carpo avançado (idoso) |\n| Huber | ==abdutor do mínimo== | criança; dá volume à tenar |\n| Burkhalter | ==extensor próprio do indicador== | contorna a ulna |\n| ==Cook== (gabarito) | ==extensor do quinto dedo== | |\n| Phalen-Miller | ERCC com enxerto | |\n\n### Princípios de transferência\n- Articulações móveis, leito sem cicatriz, doador com força e excursão, dispensável, sinergia, ==polia== na direção do pisiforme.\n- Não se faz em lesão aguda: reparar o nervo e aguardar.\n\n### Outros epônimos\n| Nome | Técnica |\n|---|---|\n| Steindler | flexorplastia do cotovelo |\n\n> **Na prova:** oponentoplastia de Cook = ==extensor do quinto dedo== (veja o alerta).",
+  "correta": "**Cook, extensor do quinto dedo.**\n- Resposta oficial; epônimo menos citado.\n- Toda oponentoplastia precisa de polia na direção do pisiforme.",
   "incorretas": {
-   "A": "Transferência tendínea não se faz em lesão aguda de nervo. Primeiro se repara o nervo e se espera a reinervação, que pode levar mais de um ano; a transferência entra quando ela não vem, ou como procedimento interno, para dar função enquanto se espera.",
-   "B": "Steindler é lembrado pela flexorplastia, a transferência da origem flexora-pronadora do epicôndilo medial para mais proximal no úmero, para restaurar a flexão do cotovelo. Não é uma oponentoplastia.",
-   "D": "Camitz usa o palmar longo prolongado pela fáscia palmar, e não o adutor do polegar. Aliás, o adutor é antagonista da oposição, reinseri-lo não devolveria a função pedida."
+   "A": "**Não na lesão aguda.**\n- Repara-se o nervo e aguarda-se.",
+   "B": "**Cotovelo.**\n- Steindler é flexorplastia.",
+   "D": "**Doador errado.**\n- Camitz usa palmar longo; adutor é antagonista."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0473": {
-  "conceito": "A tenossinovite de De Quervain é a estenose do primeiro compartimento dorsal, que contém o abdutor longo e o extensor curto do polegar. As duas coisas que decidem o resultado do tratamento são anatômicas.",
-  "correta": "É preciso procurar o septo que separa o extensor curto do polegar num subcompartimento próprio e liberá-lo por completo quando existe. Ele está presente numa parcela grande dos punhos, e é a causa mais comum de falha: a infiltração que alcança só o compartimento principal não chega ao extensor curto, e a liberação cirúrgica que não abre o septo deixa o sintoma. O teste que sugere a presença dele antes da cirurgia é simples, a extensão resistida isolada da metacarpofalângica do polegar reproduz a dor.",
+  "conceito": "### Variações do primeiro compartimento extensor\n| Variação | Frequência aproximada | Importância |\n|---|---|---|\n| ==ausência do extensor curto do polegar== | ==cerca de 5%== | |\n| ==septo separando o extensor curto== (subcompartimento) | ==cerca de 20 a 70%== (bem mais em pacientes com De Quervain) | ==causa principal de falha== da infiltração e da liberação |\n| múltiplas bandeletas do abdutor longo | muito comum | confundidas com o extensor curto |\n\n### Tenossinovite de De Quervain\n- Mulheres 30 a 50 anos, pós-parto (\"mãe de bebê\"), uso repetitivo.\n- **Finkelstein** (Eichhoff): polegar na mão, desvio ulnar do punho.\n- **WHAT test:** extensão do punho com abdução resistida do polegar (sensível para o extensor curto).\n\n### Tratamento\n- Órtese em espica, infiltração (cerca de 70 a 80% de sucesso).\n- Liberação cirúrgica: abrir o compartimento **dorsalmente** (evita subluxação volar dos tendões), procurar o **septo**, proteger o **ramo superficial do radial**.\n\n### Escalonamento\n| Etapa | Medida |\n|---|---|\n| 1 | ==infiltração de corticoide== na bainha (± órtese em espica) |\n| 2 | segunda infiltração se houver melhora parcial |\n| 3 | liberação cirúrgica após falha |\n\n### Riscos da liberação\n| Estrutura | Cuidado |\n|---|---|\n| ==ramo sensitivo do radial== | incisão transversa, dissecção romba; ==neuroma== é a complicação mais temida |\n| septo do extensor curto | abrir o subcompartimento |\n| subluxação volar dos tendões | abrir o compartimento pelo lado dorsal |\n\n### Perfil\n- Mulheres de 30 a 50 anos, ==gravidez e puerpério== (\"punho da mãe\").\n- Septo do ECP: suspeitar se a extensão resistida da MF do polegar dói.\n\n> **Na prova:** De Quervain = ==procurar e liberar o subcompartimento do ECP==",
+  "correta": "**Liberar o subcompartimento.**\n- Septo do ECP é a principal causa de falha.\n- Extensão resistida isolada da MF sugere o septo.",
   "incorretas": {
-   "A": "O perfil é o oposto: mulheres entre 30 e 50 anos, e sobretudo puérperas. Crianças praticamente não têm a doença.",
-   "B": "É justamente na gravidez e no puerpério que ela é mais frequente, a ponto de ganhar o apelido de punho da mãe, pelo gesto repetido de levantar o bebê com o polegar em abdução.",
-   "D": "A liberação é dorsal, sobre o compartimento. E há uma razão a mais para não abrir pelo lado volar: seccionar a parede volar da bainha favorece a subluxação volar dos tendões com o desvio do punho. Quanto ao ramo sensitivo do radial, ele se protege com incisão cuidadosa e dissecção romba do subcutâneo, e não mudando de lado."
+   "A": "**Perfil oposto.**\n- Mulheres adultas, puérperas.",
+   "B": "**O contrário.**\n- Frequente na gravidez e puerpério.",
+   "D": "**Liberação dorsal.**\n- Via volar favorece subluxação dos tendões."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0474": {
