@@ -5877,91 +5877,92 @@
   "conferido": false
  },
  "pediatria-0477": {
-  "conceito": "O centro de gravidade do corpo humano, na posição anatômica ortostática, está localizado aproximadamente **5 cm anteriormente à segunda vértebra sacral (S2)**, essa é a referência anatômica clássica usada nos textos de análise de marcha (Perry e colaboradores). Durante o ciclo normal da marcha, esse ponto não permanece fixo: ele oscila tanto no plano vertical quanto no lateral, mas sua posição de referência estática é sempre descrita em relação a essa marca óssea específica (S2), e não em relação a outros níveis vertebrais mais altos, como L2, T12 ou T5.",
-  "correta": "A. O centro de gravidade do corpo humano em posição anatômica localiza-se cerca de 5 cm anterior a S2.",
+  "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n### Altura do centro de massa\n| Momento | Altura |\n|---|---|\n| ==contato do calcanhar== (duplo apoio) | ==mais baixa== |\n| ==apoio médio== (acomodação intermediária) | ==mais alta== |\n\n- No lateral: máximo deslocamento no apoio médio, sobre o membro de apoio.\n\n### Localização em repouso\n- Posição anatômica: ==cerca de 5 cm anterior a S2==, na pelve.\n- Linha de gravidade passa posterior ao quadril, anterior ao joelho e ao tornozelo.\n\n> **Na prova:** centro de gravidade = ==5 cm anterior a S2==",
+  "correta": "**5 cm anterior a S2.**\n- Dentro da pelve.\n- Ponto de partida para as oscilações da marcha.",
   "incorretas": {
-   "B": "L2 não é a referência anatômica clássica usada para localizar o centro de gravidade do corpo.",
-   "C": "T12 não é a referência anatômica clássica usada para essa localização, que corresponde a um nível bem mais alto do que S2.",
-   "D": "T5 não é a referência anatômica clássica usada para essa localização, correspondendo a um nível muito mais alto do que S2."
+   "B": "**L2.**\n- Alto demais.",
+   "C": "**T12.**\n- Alto demais.",
+   "D": "**T5.**\n- Tórax; não é o centro do corpo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0478": {
-  "conceito": "A **fratura metafisária clássica** (\"corner fracture\"), vista aqui bilateralmente na região distal da tíbia e da fíbula, é um pequeno fragmento angular na margem metafisária decorrente de forças de cisalhamento/torção sobre o membro, considerada um achado de alta especificidade para **maus tratos** infantis. Sua presença, especialmente quando bilateral, deve levantar forte suspeita de trauma não acidental, mesmo na ausência de história compatível de trauma relatada pelos cuidadores.",
-  "correta": "C. A principal hipótese diagnóstica é corner fracture associada a maus tratos.",
+  "conceito": "### Tipos de maus-tratos\n| Tipo | Frequência |\n|---|---|\n| ==negligência== | ==a mais comum== |\n| abuso físico | o mais visto pelo ortopedista |\n| emocional | frequente, coexistente |\n| sexual | subnotificado |\n\n### Fraturas suspeitas de abuso físico\n| Alta especificidade | Moderada |\n|---|---|\n| ==lesão metafisária clássica== (canto, alça de balde) | fraturas múltiplas em estágios diferentes |\n| ==costelas posteriores== | fratura de crânio complexa |\n| escápula, processos espinhosos, esterno | vértebras, dedos em não deambulante |\n\n### Alertas\n- Fratura de fêmur em criança que não anda.\n- História incompatível, atraso na busca de atendimento.\n- Conduta: ==inventário esquelético== (< 2 anos), fundo de olho, notificação obrigatória.\n\n### Lesão metafisária clássica (fratura do canto)\n- Fratura ==planar na zona de ossificação provisória==, por forças de tração e torção (sacudir o bebê).\n- Aspecto de ==canto== ou ==alça de balde== conforme a incidência.\n- Fêmur distal, tíbia proximal e distal, úmero proximal.\n- Em lactentes, ==altamente específica== de abuso.\n\n### Menos específicas\n- Diafisárias (espiral ou transversa) são comuns e só sugerem abuso pelo contexto (criança que não anda).\n\n### Diferencial na tíbia distal\n| Lesão | Aspecto |\n|---|---|\n| ==corner fracture== | fragmento ==metafisário periférico==, em canto, lactente |\n| Salter-Harris II | traço pela fise com fragmento de Thurston-Holland; criança maior, trauma claro |\n| avulsão ligamentar | fragmento na ponta do maléolo |\n| raquitismo | fise alargada, metáfise em taça, sem fragmento |\n\n> **Na prova:** fragmento no canto da metáfise em lactente = ==corner fracture (maus-tratos)==",
+  "correta": "**Corner fracture, maus-tratos.**\n- Lesão metafisária clássica.\n- Altamente específica em lactentes.",
   "incorretas": {
-   "A": "Uma fratura por avulsão associada a entorse tipicamente decorre de um mecanismo traumático agudo relatado, com um fragmento ósseo tracionado por um ligamento específico, um padrão diferente do fragmento metafisário angular bilateral mostrado.",
-   "B": "Uma fratura de **Salter-Harris tipo 2** apresenta um fragmento metafisário triangular associado a uma linha de fratura fisária de um único lado, decorrente de mecanismo rotacional específico, um padrão radiográfico diferente do achado bilateral e sutil mostrado.",
-   "D": "As **linhas de Looser**, associadas ao raquitismo/osteomalácia, são bandas radiolucentes transversais em locais característicos (colo femoral, ramos púbicos, costelas), um achado radiográfico diferente do fragmento metafisário angular mostrado no tornozelo."
+   "A": "**Avulsão.**\n- Entorse rara em lactente; fragmento maleolar.",
+   "B": "**Salter-Harris II.**\n- Traço atravessa a fise, com fragmento metafisário maior.",
+   "D": "**Looser.**\n- Pseudofraturas da osteomalácia, não do canto metafisário."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0479": {
-  "conceito": "O metatarso aduto é uma das deformidades congênitas mais frequentes do pé na infância, caracterizada pela adução isolada do antepé em relação ao retropé (diferente do pé torto congênito, que envolve também componentes de varo e equino do retropé). Sendo uma **anomalia comum**, a grande maioria dos casos responde bem a medidas conservadoras (observação nos casos leves e flexíveis, ou manipulação e gesso seriado nos casos mais rígidos), e não costuma ocorrer isoladamente sempre, pode estar associada a outras condições posicionais, como a displasia do desenvolvimento do quadril, justificando triagem clínica associada.",
-  "correta": "A. O metatarso aduto é uma anomalia comum do pé na infância.",
+  "conceito": "### Bissetriz do calcanhar (Bleck)\n- Linha que divide a ==planta do retropé== ao meio, projetada para o antepé.\n\n| Projeção | Interpretação |\n|---|---|\n| ==entre 2º e 3º dedos== | normal |\n| sobre o 3º dedo | adução leve |\n| ==lateral ao 3º== (3º-4º) | adução moderada |\n| entre 4º e 5º | adução grave |\n\n- No pé torto e no metatarso aduto a bissetriz fica ==lateral ao 3º raio== (antepé aduzido).\n\n### Metatarso aduto\n| Tipo | Flexibilidade | Conduta |\n|---|---|---|\n| flexível | corrige além do neutro | observação |\n| parcialmente flexível | até o neutro | alongamento, gesso |\n| rígido | não corrige | gessos seriados |\n\n### Metatarso aduto: pontos-chave\n- ==Deformidade do pé mais comum== do recém-nascido (1 a 2 por 1.000).\n- Posição intrauterina; associação com ==DDQ== e torcicolo (examinar quadris).\n- Evolução: ==85 a 90%== resolvem espontaneamente ou com alongamento; residual em cerca de 10%, raramente sintomático.\n- Cirurgia (osteotomias) raramente, após 4 a 6 anos.\n\n> **Na prova:** metatarso aduto = ==anomalia comum== do pé",
+  "correta": "**Anomalia comum.**\n- A mais frequente do pé no RN.\n- Maioria resolve.",
   "incorretas": {
-   "B": "O metatarso aduto, na maioria dos casos, responde bem ao tratamento conservador, não sendo correto afirmar o contrário.",
-   "C": "O metatarso aduto não ocorre sempre de forma isolada, pode estar associado a outras condições posicionais, como a displasia do desenvolvimento do quadril.",
-   "D": "A proporção de deformidade residual relatada na literatura não corresponde a apenas 1% dos casos."
+   "B": "**Responde bem.**\n- Alongamento e gessos resolvem quase todos.",
+   "C": "**Associações.**\n- DDQ e torcicolo.",
+   "D": "**Residual maior.**\n- Cerca de 10%, geralmente assintomático."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0480": {
-  "conceito": "A sinovite transitória do quadril é a causa mais comum de claudicação aguda dolorosa em crianças pequenas, sendo um diagnóstico de exclusão frente à possibilidade de artrite séptica. Embora seja uma condição autolimitada na grande maioria dos casos, há uma taxa de **recorrência** documentada na literatura de aproximadamente **4% ao ano**, informação relevante para orientar a família sobre a possibilidade de novos episódios, sem que isso indique, por si só, uma doença mais grave subjacente.",
-  "correta": "B. A taxa anual de recorrência da sinovite transitória do quadril é de aproximadamente 4%.",
+  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** recorrência anual da sinovite transitória = ==cerca de 4%== (veja o alerta).",
+  "correta": "**4%.**\n- Recorrência anual.\n- Recorrência frequente pede investigar Perthes.",
   "incorretas": {
-   "A": "0,4% subestima a taxa de recorrência real, que é reconhecidamente maior que isso.",
-   "C": "14% superestima a taxa de recorrência anual classicamente descrita na literatura.",
-   "D": "24% superestima consideravelmente a taxa de recorrência anual classicamente descrita."
+   "A": "**0,4%.**\n- Subestimado.",
+   "C": "**14%.**\n- Superestimado.",
+   "D": "**24%.**\n- Superestimado."
   },
-  "geradoEm": "2026-09-21",
+  "alerta": "As taxas de recorrência publicadas variam conforme o período de seguimento; o valor de 4% é o dado anual adotado pelo gabarito da prova.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0481": {
-  "conceito": "A classificação de **Kleinman** para fraturas pediátricas estratifica os padrões conforme sua especificidade para maus-tratos. O grupo de **alta especificidade** reúne classicamente: as lesões metafisárias clássicas (\"corner/bucket-handle\"), as fraturas de costelas posteriores, e as fraturas de **escápula** e de **esterno**, todas incomuns em mecanismos acidentais típicos da infância e que exigem forças direcionadas de alta energia. A combinação de escápula, esterno e fraturas metafisárias reúne corretamente três achados desse grupo de alta especificidade, diferente de combinações que misturam esses achados com fraturas de baixa/moderada especificidade, como as de clavícula ou diafisárias isoladas.",
-  "correta": "A. As fraturas de escápula, esterno ou metafisárias compõem o grupo de alta especificidade para maus-tratos segundo Kleinman.",
+  "conceito": "### Especificidade das fraturas no abuso (Kleinman)\n| Alta | Moderada | Baixa (comuns) |\n|---|---|---|\n| lesão metafisária clássica | múltiplas, bilaterais | clavícula |\n| costelas posteriores | em estágios diferentes de consolidação | diáfises de ossos longos |\n| ==escápula== | epifisárias (descolamentos) | crânio linear |\n| processos espinhosos | corpo vertebral | |\n| esterno | dedos | |\n| | crânio complexa | |\n\n### Conduta\n- Inventário esquelético em < 2 anos (repetir em 2 semanas).\n- Fundo de olho, TC/RM de crânio, exames de coagulação e metabolismo ósseo (OI, raquitismo).\n- ==Notificação obrigatória==.\n\n> **Na prova:** fratura de alta especificidade (Kleinman) = ==escápula== (e metafisária, costelas posteriores, processos espinhosos, esterno).",
+  "correta": "**Escápula, esterno ou metafisárias.**\n- Todas de alta especificidade.\n- Com costelas posteriores e espinhosos.",
   "incorretas": {
-   "B": "As fraturas diafisárias isoladas têm especificidade mais baixa para abuso, não fazendo parte do grupo de alta especificidade junto de escápula e esterno.",
-   "C": "A fratura de clavícula tem baixa especificidade para abuso (é comum em quedas acidentais e no parto), não fazendo parte do grupo de alta especificidade.",
-   "D": "Tanto a fratura de clavícula quanto as diafisárias têm especificidade mais baixa, não fazendo parte do grupo de alta especificidade de Kleinman."
+   "B": "**Diafisárias.**\n- Baixa especificidade.",
+   "C": "**Clavícula e corpo vertebral.**\n- Baixa e moderada.",
+   "D": "**Clavícula e diafisárias.**\n- Ambas pouco específicas."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0482": {
-  "conceito": "Entre os pontos relevantes sobre a mielomeningocele, um dos mais importantes para o aconselhamento familiar é o aumento do risco de recorrência quando há **história familiar positiva entre irmãos**, o risco de recorrência empírico após o nascimento de uma criança afetada é significativamente maior do que o risco basal da população geral, refletindo a natureza multifatorial (genética e ambiental, como a deficiência de ácido fólico periconcepcional) dessa malformação. Esse dado orienta, inclusive, a recomendação de suplementação de ácido fólico em doses mais altas para futuras gestações em famílias com um filho previamente afetado.",
-  "correta": "B. A incidência da mielomeningocele cresce quando existe história familiar entre irmãos.",
+  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Embriologia e prevenção\n- Falha do ==fechamento do tubo neural== (neuróporo caudal) entre o ==26º e 28º dias==.\n- Fatores: ==deficiência de ácido fólico==, ácido valproico, carbamazepina, diabetes, obesidade, hipertermia; componente genético (recorrência 2 a 5% em irmãos).\n- Prevenção: ácido fólico 0,4 mg/dia antes da concepção (4 mg se filho anterior afetado).\n- Diagnóstico: alfafetoproteína elevada, ultrassom (sinal do limão e da banana).\n\n### Pontos cobrados\n- Defeito do ==arco neural posterior== (não anterior).\n- Irmão afetado: risco sobe para ==2 a 5%== (população: 0,1%).\n- Lesão ==do SNC== (medula e raízes intradurais); nervos periféricos fora da dura são normais.\n- Diagnóstico pré-natal frequente: ==alfafetoproteína== no soro/líquido amniótico e ==ultrassom==.\n\n> **Na prova:** MMC = incidência maior com ==irmão afetado==",
+  "correta": "**História familiar aumenta o risco.**\n- Irmão afetado: 2 a 5%.\n- Ácido fólico 4 mg na próxima gestação.",
   "incorretas": {
-   "A": "A mielomeningocele ocorre por falha de fechamento do tubo neural posterior, não de um \"arco neural anterior\".",
-   "C": "Os nervos periféricos acometidos na mielomeningocele estão localizados dentro do saco herniário, relacionados ao defeito medular, não descritos dessa forma genérica.",
-   "D": "O ultrassom e a dosagem de alfafetoproteína (amniocentese ou soro materno) são, na verdade, métodos consagrados e frequentemente usados para o diagnóstico pré-natal da mielomeningocele."
+   "A": "**Arco posterior.**\n- Espinha bífida é posterior.",
+   "C": "**Nervos periféricos normais.**\n- Lesão é central.",
+   "D": "**Diagnóstico pré-natal frequente.**\n- Ultrassom e alfafetoproteína."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0484": {
-  "conceito": "A neurofibromatose tipo 1 (doença de Von Recklinghausen) é classificada como uma neurofibromatose do tipo **periférico**, diferente da neurofibromatose tipo 2, mais associada a tumores do sistema nervoso central (como os schwannomas vestibulares bilaterais). A NF1 apresenta, com bastante frequência, **manifestações ortopédicas** relevantes, como escoliose (frequentemente de padrão distrófico, de difícil manejo), arqueamento anterolateral e pseudartrose da tíbia, displasia do esfenoide, e alterações de partes moles relacionadas aos neurofibromas, tornando o acompanhamento ortopédico uma parte importante do cuidado multidisciplinar desses pacientes.",
-  "correta": "C. A neurofibromatose tipo 1 é periférica e apresenta frequentemente manifestações ortopédicas.",
+  "conceito": "### Neurofibromatoses\n| Tipo | Nome | Gene | Achados | Ortopedia |\n|---|---|---|---|---|\n| ==NF1== | ==periférica== (von Recklinghausen) | neurofibromina (17q) | café-com-leite, neurofibromas, Lisch, Crowe | ==frequente== |\n| NF2 | central | merlina (22q) | ==schwannoma vestibular bilateral==, meningiomas | rara |\n| schwannomatose | | SMARCB1, LZTR1 | schwannomas múltiplos dolorosos | |\n\n### NF1 na ortopedia\n| Manifestação | Detalhe |\n|---|---|\n| escoliose | a mais comum; distrófica (raio curto) |\n| pseudartrose congênita da tíbia | anterolateral |\n| hipertrofia de membro | elefantíase |\n| TMBNP | transformação do plexiforme |\n| deficiência de vitamina D, osteoporose | |\n\n- Herança dominante; metade mutação nova.\n\n> **Na prova:** NF1 = ==periférica, manifestações ortopédicas frequentes==.",
+  "correta": "**Periférica, ortopedia frequente.**\n- Escoliose, pseudartrose da tíbia.\n- Hipertrofia de membro.",
   "incorretas": {
-   "A": "A neurofibromatose tipo 1 é classificada como periférica, não central.",
-   "B": "A neurofibromatose tipo 1 é periférica, e apresenta manifestações ortopédicas com frequência, não raramente.",
-   "D": "A neurofibromatose tipo 1 é periférica, e as manifestações ortopédicas são frequentes, não raras."
+   "A": "**Central.**\n- É a NF2.",
+   "B": "**Central e rara.**\n- Descrição da NF2.",
+   "D": "**Raramente.**\n- NF1 tem muitas manifestações ortopédicas."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0485": {
-  "conceito": "Durante a marcha normal, o centro de gravidade do corpo não se desloca em linha reta, oscilando tanto no plano vertical quanto no plano horizontal (lateral), em um padrão sinusoidal suave que minimiza o gasto energético total do deslocamento. No plano **vertical**, essa oscilação tem uma amplitude de aproximadamente **4,5 cm** (o centro de gravidade está mais baixo durante o duplo apoio e mais alto durante o apoio médio/unipodal), fazendo parte dos chamados \"determinantes da marcha\" que suavizam a trajetória do centro de gravidade e reduzem o custo energético do caminhar.",
-  "correta": "B. O centro de gravidade oscila aproximadamente 4,5 cm no plano vertical durante a marcha normal.",
+  "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n### Altura do centro de massa\n| Momento | Altura |\n|---|---|\n| ==contato do calcanhar== (duplo apoio) | ==mais baixa== |\n| ==apoio médio== (acomodação intermediária) | ==mais alta== |\n\n- No lateral: máximo deslocamento no apoio médio, sobre o membro de apoio.\n\n### Oscilação do centro de gravidade\n| Plano | Amplitude |\n|---|---|\n| ==vertical== | ==cerca de 4,5 a 5 cm== (curva senoidal) |\n| lateral | cerca de 4 a 5 cm |\n\n> **Na prova:** oscilação vertical do centro de gravidade = ==cerca de 4,5 cm==",
+  "correta": "**4,5 cm.**\n- Curva senoidal vertical.\n- Determinantes de Saunders reduzem a amplitude.",
   "incorretas": {
-   "A": "3 cm subestima a amplitude de oscilação vertical classicamente descrita para a marcha normal.",
-   "C": "6 cm superestima a amplitude de oscilação vertical classicamente descrita.",
-   "D": "7,5 cm superestima consideravelmente a amplitude de oscilação vertical esperada na marcha normal."
+   "A": "**3 cm.**\n- Subestimado.",
+   "C": "**6 cm.**\n- Superestimado.",
+   "D": "**7,5 cm.**\n- Seria marcha sem determinantes."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0486": {
