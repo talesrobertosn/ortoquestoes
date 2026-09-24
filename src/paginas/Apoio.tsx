@@ -38,7 +38,7 @@ export function Sobre() {
         <p className="pj-heroi__selo">O projeto</p>
         <h1>Questões de ortopedia comentadas, feitas por quem vive a especialidade.</h1>
         <p className="pj-heroi__lide">
-          O OrtoQuestões reúne questões de provas anteriores (TEOT, TARO, R4 do ENARE e outras),
+          O OrtoQuestões reúne questões de provas anteriores (TEOT, TARO, R4 do ENARE, TECOC de ombro e cotovelo e outras),
           organizadas por assunto, para quem se prepara para o título de especialista ou para a
           residência. Foi criado por um ortopedista para residentes que estudam entre plantões e
           cirurgias: da página inicial até a primeira questão, no máximo dois cliques.

@@ -179,7 +179,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       <aside className="acesso__vitrine">
         <p className="acesso__marca"><span>Orto</span>Questões</p>
         <h1>{modo === 'criar' ? 'Sua preparação, organizada do primeiro ao último dia.' : 'Que bom ter você de volta.'}</h1>
-        <p className="acesso__lide">{indice ? `${indice.total.toLocaleString('pt-BR')} questões` : 'Questões'} de TEOT, TARO, ENARE R4 e outras provas, com comentário e referência.</p>
+        <p className="acesso__lide">{indice ? `${indice.total.toLocaleString('pt-BR')} questões` : 'Questões'} de TEOT, TARO, ENARE R4, TECOC (ombro e cotovelo) e outras provas, com comentário e referência.</p>
         <ul className="acesso__beneficios">
           <li><span><Icone nome="grafico" tamanho={18} /></span>Desempenho por tema e por prova</li>
           <li><span><Icone nome="calendario" tamanho={18} /></span>Revisão espaçada montada para você</li>

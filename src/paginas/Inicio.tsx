@@ -168,7 +168,7 @@ export function Inicio() {
           {indice && indice.total > 0 && (
             <p className="inicio-heroi__selo">
               <span className="ponto-vivo" aria-hidden="true" />
-              <strong className="numerico">{indice.total.toLocaleString('pt-BR')}</strong> questões<span className="inicio-heroi__provas"> · TEOT · TARO · ENARE R4</span>
+              <strong className="numerico">{indice.total.toLocaleString('pt-BR')}</strong> questões<span className="inicio-heroi__provas"> · TEOT · TARO · ENARE R4 · TECOC</span>
             </p>
           )}
           <h1>{titulo}</h1>
