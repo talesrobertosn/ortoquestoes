@@ -1,90 +1,90 @@
 {
  "tumores-0001": {
-  "conceito": "A doença de Ollier é a **encondromatose múltipla**: encondromas em vários ossos, com predileção pelos ossos tubulares das mãos e dos pés e pelas metáfises dos ossos longos.\n\nDois traços a definem e são exatamente os que a questão cobra.\n\n**Primeiro**, ela **não é hereditária**, resulta de mutação **pós-zigótica** (em mosaico) nos genes **IDH1** ou **IDH2**, o que significa que surge no embrião depois da fecundação e não se transmite aos filhos.\n\n**Segundo**, e como consequência direta disso, a distribuição é **assimétrica** e predominantemente **unilateral**: só as células descendentes daquela linhagem mutada carregam o defeito.\n\nO impacto clínico vem daí: deformidade angular, discrepância de comprimento dos membros e risco de transformação maligna em condrossarcoma na ordem de **25% a 30%** ao longo da vida, o que exige seguimento por décadas.\n\nQuando a encondromatose vem acompanhada de hemangiomas de partes moles, o quadro se chama **síndrome de Maffucci**, com risco de malignização ainda maior e também de neoplasias viscerais, entre elas tumores gliais do sistema nervoso central e adenocarcinomas, o que reforça a necessidade de vigilância além do sistema esquelético nesses pacientes.",
-  "correta": "Não hereditário e com predominância unilateral.",
+  "conceito": "### Doença de Ollier (encondromatose múltipla)\n- Encondromas em vários ossos: tubulares das mãos e pés, metáfises dos ossos longos.\n- ==Não hereditária==: mutação ==pós-zigótica em mosaico== (IDH1 ou IDH2).\n- Distribuição ==assimétrica, predominantemente unilateral==.\n\n### Consequências\n| Problema | Comentário |\n|---|---|\n| deformidade angular | fises acometidas |\n| discrepância de membros | encurtamento do lado afetado |\n| ==condrossarcoma== | risco de ==25 a 30%== ao longo da vida |\n\n### Ollier × Maffucci × exostoses\n| Doença | Achado | Herança | Malignização |\n|---|---|---|---|\n| Ollier | encondromas | esporádica (mosaico) | 25 a 30% |\n| ==Maffucci== | encondromas + ==hemangiomas== | esporádica | maior; também gliomas e adenocarcinomas |\n| exostoses múltiplas | osteocondromas | ==dominante== (EXT1, EXT2) | 1 a 5% |\n\n> **Na prova:** Ollier = ==não hereditária e unilateral==.",
+  "correta": "**Não hereditária e unilateral.**\n- Mosaicismo pós-zigótico (IDH1/IDH2).\n- Só a linhagem mutada tem encondromas: assimetria.",
   "incorretas": {
-   "A": "Não é hereditária: a mutação é somática, em mosaico, e não passa para a descendência. E a distribuição não é bilateral simétrica.",
-   "B": "Acerta a lateralidade e erra a herança.",
-   "C": "Acerta a herança e erra a lateralidade, o mosaicismo é justamente o que torna o acometimento assimétrico."
+   "A": "**Duplamente errada.**\n- Nem hereditária nem bilateral simétrica.",
+   "B": "**Herança errada.**\n- Lateralidade certa.",
+   "C": "**Lateralidade errada.**\n- O mosaicismo torna assimétrico."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0002": {
-  "conceito": "A condromatose sinovial é, na descrição clássica, uma **metaplasia condroide da sinovial**: focos de cartilagem se formam dentro da membrana sinovial, destacam-se e viram corpos livres, que podem calcificar e ossificar.\n\nA articulação mais acometida é o **joelho** (mais de metade dos casos), seguido de quadril, cotovelo e ombro, e o paciente típico é **adulto** entre a terceira e a quinta décadas, com dor, derrame, crepitação e episódios de bloqueio articular.\n\n**Milgram** descreveu três fases:\n\n- Doença sinovial **ativa** sem corpos livres.\n- Fase de **transição**, com nódulos na sinovial **e** corpos livres.\n- Fase de **corpos livres** com sinovial já quiescente.\n\nO tratamento é a remoção dos corpos livres com sinovectomia nas fases ativas.\n\nNota honesta: a genética moderna encontrou rearranjos recorrentes (**FN1-ACVR2A**) que sugerem natureza **neoplásica**, e por isso a Organização Mundial da Saúde a classifica hoje entre os tumores condrogênicos, mas a resposta esperada em prova continua sendo metaplasia, que é a descrição histórica e a que explica o comportamento clínico.",
-  "correta": "Metaplasia, mais frequente no joelho do adulto.",
+  "conceito": "### Condromatose sinovial\n- ==Metaplasia condroide da sinovial== (descrição clássica): nódulos cartilaginosos se soltam como corpos livres, calcificam e ossificam.\n- ==Joelho== (mais da metade), quadril, cotovelo, ombro.\n- ==Adulto== de 30 a 50 anos: dor, derrame, crepitação, bloqueio.\n\n### Fases de Milgram\n| Fase | Sinovial | Corpos livres |\n|---|---|---|\n| I | ativa | não |\n| II | transição (ativa) | sim |\n| III | quiescente | sim |\n\n### Tratamento\n- Retirada dos corpos livres + ==sinovectomia== nas fases ativas (aberta ou artroscópica).\n- Recidiva possível; malignização rara (condrossarcoma).\n\n### Nota\n- Rearranjo ==FN1-ACVR2A== sugere natureza neoplásica; a OMS a inclui entre os tumores condrogênicos. Em prova, a resposta clássica é metaplasia.\n\n> **Na prova:** condromatose sinovial = ==metaplasia, joelho do adulto==.",
+  "correta": "**Metaplasia no joelho do adulto.**\n- Descrição clássica cobrada em prova.\n- Adultos de 30 a 50 anos, joelho em mais da metade.",
   "incorretas": {
-   "A": "Chamá-la de neoplasia contraria a descrição clássica cobrada em prova, ainda que a genética recente aponte nessa direção.",
-   "B": "Erra também a faixa etária: é doença de adulto, não de criança.",
-   "D": "Acerta a metaplasia, mas a idade está errada, a condromatose sinovial da criança é rara."
+   "A": "**Neoplasia.**\n- Contraria a descrição clássica, ainda que a genética aponte nessa direção.",
+   "B": "**Idade errada.**\n- Doença de adulto.",
+   "D": "**Idade errada.**\n- Rara em crianças."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0003": {
-  "conceito": "O sacro tem uma lista curta e muito cobrada de tumores, e o truque é separar benignos de malignos.\n\nEntre os **benignos**, o mais prevalente é o **tumor de células gigantes**: ele é o segundo sítio mais comum do TGC depois da região ao redor do joelho, tipicamente acomete adultos entre 20 e 40 anos, é excêntrico e lítico, e no sacro costuma envolver a porção superior, cruzando a articulação sacroilíaca.\n\nEntre os **malignos**, o mais comum do sacro é o **cordoma**, tumor da notocorda, de linha média, que acomete pacientes mais velhos (quinta à sétima década), cresce lentamente e tem alta taxa de recidiva local.\n\nA distinção importa na prática: cordoma é de linha média e destrói o sacro distal e o cóccix; o TGC é excêntrico e alto.\n\nCompõem a lista os cistos ósseos aneurismáticos, o osteoblastoma, o granuloma eosinofílico, o plasmocitoma, o linfoma e as metástases.\n\nVale acrescentar que o cordoma expressa **brachyury**, um marcador imuno-histoquímico útil para diferenciá-lo do condrossarcoma, outro tumor de linha média que pode simular o mesmo quadro radiológico, mas que não expressa esse marcador.",
-  "correta": "Tumor de células gigantes.",
+  "conceito": "### Tumores do sacro\n| Tipo | Mais comum | Perfil |\n|---|---|---|\n| ==benigno== | ==tumor de células gigantes== | 20 a 40 anos, ==excêntrico==, sacro ==alto==, cruza a sacroilíaca |\n| maligno primário | ==cordoma== | 50 a 70 anos, ==linha média==, sacro distal e cóccix |\n| maligno geral | metástase, mieloma | idosos |\n\n### Outros\n- Cisto ósseo aneurismático, osteoblastoma, granuloma eosinofílico, plasmocitoma, linfoma.\n\n### Cordoma × condrossarcoma\n- Cordoma expressa ==brachyury== (notocorda).\n- Ambos podem ser de linha média com matriz semelhante.\n\n### TGC do sacro\n- Curetagem difícil (raízes); denosumabe, embolização, radioterapia em casos selecionados.\n\n> **Na prova:** tumor benigno mais comum do sacro = ==tumor de células gigantes==.",
+  "correta": "**Tumor de células gigantes.**\n- Segundo sítio mais comum do TGC depois do joelho.\n- Excêntrico e alto, adultos jovens.",
   "incorretas": {
-   "A": "O cordoma é de fato o tumor primário mais comum do sacro, mas é MALIGNO, a pergunta pede o benigno.",
-   "B": "O osteoblastoma ocorre no sacro e na coluna posterior, porém é bem menos frequente que o tumor de células gigantes.",
-   "C": "O granuloma eosinofílico é possível no sacro, mas é doença sobretudo de crianças e de outros sítios (crânio, fêmur, costelas, vértebras com vértebra plana)."
+   "A": "**Maligno.**\n- É o primário mais comum, mas a questão pede o benigno.",
+   "B": "**Menos frequente.**\n- Prefere elementos posteriores.",
+   "C": "**Criança, outros sítios.**\n- Crânio, fêmur, costelas, vértebra plana."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0004": {
-  "conceito": "O tumor glômico é uma lesão benigna do glomo neuromioarterial, órgão de regulação térmica, e mais da metade dos casos fica no **leito ungueal da mão**.\n\nEle produz uma tríade clínica muito característica: **dor** intensa, **dor ao frio** e **hipersensibilidade pontual**, e essa tríade é mais confiável que qualquer exame.\n\nTrês testes a exploram.\n\n- **Teste de Love**: pressiona-se um ponto específico com um objeto pequeno e firme (a cabeça de um alfinete, a ponta de um lápis); dor exuberante e reprodutível naquele ponto exato, e só naquele ponto, é o achado.\n- **Teste de Hildreth**: infla-se um manguito no braço acima da pressão sistólica; a dor **desaparece** com a isquemia e retorna ao desinflar, é o mais específico.\n- **Teste do frio**: imersão em água gelada reproduz a dor, ao contrário do que acontece em quase todas as outras causas de dor digital.\n\nConfirma-se com ressonância magnética, e o tratamento é a excisão completa, com alívio imediato e recidiva quando a ressecção é incompleta.\n\nVale lembrar que, embora a localização subungueal seja a mais clássica, o tumor glômico também pode ocorrer em outras regiões subcutâneas, e a variante múltipla, mais rara, tem associação familiar reconhecida.",
-  "correta": "Dor à pressão direta sobre o tumor com um objeto pequeno e firme.",
+  "conceito": "### Tumor glômico\n- Hamartoma do ==glomo neuromioarterial== (termorregulação).\n- Mais da metade no ==leito ungueal== da mão; mulheres de 30 a 50 anos.\n- Tríade: ==dor intensa, dor ao frio, hipersensibilidade pontual==.\n\n### Testes\n| Teste | Manobra | Achado |\n|---|---|---|\n| ==Love== | ==pressão pontual com objeto pequeno e firme== (alfinete, lápis) | dor exuberante naquele ponto |\n| Hildreth | manguito acima da sistólica | dor ==some== com a isquemia |\n| frio | imersão em água gelada | reproduz a dor |\n| transiluminação | luz sob a unha | mancha escura |\n\n### Imagem e tratamento\n- RM: nódulo com hipersinal em T2 e realce intenso.\n- RX: erosão da falange em parte.\n- ==Excisão completa== pela via transungueal ou lateral; recidiva se incompleta.\n- Forma múltipla: associação familiar.\n\n> **Na prova:** teste de Love = ==pressão pontual com objeto firme==.",
+  "correta": "**Pressão pontual com objeto pequeno e firme.**\n- Dor exuberante e localizada no ponto exato do tumor.\n- Localiza a lesão para a excisão.",
   "incorretas": {
-   "A": "A pressão no hiponíquio não é o teste descrito; a dor do glômico é PONTUAL, e localizá-la com precisão é justamente o objetivo do teste de Love.",
-   "B": "O mergulho em água gelada é o teste do frio, verdadeiro para o glômico, mas é outro teste, não o de Love.",
-   "C": "A transiluminação pode mostrar a lesão como um ponto escuro sob a unha, mas é achado de inspeção, não um teste de dor."
+   "A": "**Não é o teste.**\n- A dor é pontual, e o teste localiza o ponto.",
+   "B": "**Teste do frio.**\n- Verdadeiro para glômico, mas outro teste.",
+   "C": "**Inspeção.**\n- Transiluminação não é teste de dor."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0005": {
-  "conceito": "O estadiamento AJCC dos sarcomas **ósseos** combina grau histológico (G), tamanho e continuidade do tumor (T) e metástases (M), e a chave para acertar está no que significa T3.\n\n- **T1**: tumor de até 8 cm.\n- **T2**: tumor **maior** que 8 cm.\n- **T3**: **tumores descontínuos no mesmo osso**, isto é, as metástases saltitantes (skip metastases).\n\nMontando os estágios:\n\n- **IA**: T1 de baixo grau.\n- **IB**: T2 ou T3 de baixo grau.\n- **IIA**: T1 de alto grau.\n- **IIB**: T2 de alto grau.\n- **Estágio III**: **T3 de alto grau**, ou seja, lesão descontínua no mesmo osso, as saltitantes.\n- **IVA**: metástase **pulmonar** (M1a).\n- **IVB**: metástase para outros sítios ou linfonodo (M1b/N1).\n\nVale contrastar com o sistema de **Enneking**, que é o mais usado na prática ortopédica e funciona com outra lógica: grau (I baixo, II alto, III com metástase) somado ao compartimento (A intracompartimental, B extracompartimental), nele, qualquer metástase, saltitante inclusive, já leva ao estágio III.\n\nOs dois sistemas convivem, e é por isso que a mesma palavra pode significar coisas diferentes conforme o enunciado.",
-  "correta": "Metástases saltitantes (skip metastases), que compõem o T3 de alto grau.",
+  "conceito": "### AJCC para sarcomas ósseos (apendiculares)\n| T | Definição |\n|---|---|\n| T1 | até 8 cm |\n| T2 | > 8 cm |\n| ==T3== | ==descontínuo no mesmo osso (skip)== |\n\n| Estágio | Composição |\n|---|---|\n| IA | T1, baixo grau |\n| IB | T2 ou T3, baixo grau |\n| IIA | T1, alto grau |\n| IIB | T2, alto grau |\n| ==III== | ==T3, alto grau (skip)== |\n| IVA | metástase ==pulmonar== (M1a) |\n| IVB | outros sítios ou linfonodo (M1b, N1) |\n\n### Enneking (lógica diferente)\n| Estágio | Definição |\n|---|---|\n| I | baixo grau (A intra, B extracompartimental) |\n| II | alto grau (A, B) |\n| III | qualquer metástase (inclusive skip) |\n\n> **Na prova:** AJCC III = ==metástases saltitantes (T3 de alto grau)==.",
+  "correta": "**Metástases saltitantes.**\n- T3 de alto grau: tumor descontínuo no mesmo osso.",
   "incorretas": {
-   "B": "Ausência de metástases descreve os estágios I e II, que se separam por grau e tamanho.",
-   "C": "Metástase pulmonar corresponde ao estágio IVA (M1a), a distinção entre pulmão e outros sítios existe porque a metástase pulmonar ressecável ainda comporta tratamento com intenção curativa.",
-   "D": "Metástase extrapulmonar, ou linfonodal, corresponde ao estágio IVB, o de pior prognóstico."
+   "B": "**Estágios I e II.**\n- Separados por grau e tamanho.",
+   "C": "**IVA.**\n- Pulmão ressecável ainda permite cura.",
+   "D": "**IVB.**\n- Pior prognóstico."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0006": {
-  "conceito": "A fratura patológica no osteossarcoma já foi considerada indicação de amputação, sob a alegação de que o hematoma contamina os compartimentos vizinhos.\n\nIsso mudou: as séries modernas mostram que a preservação do membro é possível com sobrevida comparável, desde que a ressecção posterior seja ampla e inclua o trajeto do hematoma.\n\nA conduta diante de uma fratura durante a **quimioterapia neoadjuvante** tem, portanto, duas partes, e ambas contrariam o instinto do ortopedista.\n\n**Primeira**: o tratamento da fratura é **conservador** (imobilização, órtese ou tração), porque osteossíntese numa fratura por tumor dissemina células ao longo do canal medular, contamina novos compartimentos, compromete a ressecção definitiva e ainda expõe a infecção num paciente neutropênico.\n\n**Segunda**: a **quimioterapia é mantida**, porque suspendê-la para deixar a fratura consolidar entrega ao tumor exatamente o tempo de que ele precisa, e o efeito da quimioterapia sobre a doença sistêmica pesa mais no prognóstico do que qualquer gesto local.\n\nTerminada a neoadjuvância, faz-se a ressecção ampla com reconstrução, avaliando o percentual de necrose tumoral, acima de **90%** é bom respondedor (critério de **Huvos**), achado que é um dos preditores prognósticos mais fortes de sobrevida livre de doença no osteossarcoma.",
-  "correta": "Conservador, com manutenção da quimioterapia.",
+  "conceito": "### Fratura patológica no osteossarcoma\n- Antes: indicação de amputação (hematoma contamina).\n- Hoje: ==preservação do membro== possível com sobrevida comparável, se a ressecção incluir o hematoma.\n\n### Durante a quimioterapia neoadjuvante\n| Decisão | Conduta | Motivo |\n|---|---|---|\n| fratura | ==conservadora== (imobilização, órtese, tração) | osteossíntese dissemina tumor no canal e novos compartimentos; infecção no neutropênico |\n| quimioterapia | ==mantida== | controle sistêmico pesa mais no prognóstico |\n\n### Depois\n- Ressecção ampla com reconstrução.\n- Necrose tumoral ==≥ 90%== = bom respondedor (==Huvos==): forte preditor de sobrevida.\n\n> **Na prova:** fratura patológica durante a QT = ==conservador e manter a quimioterapia==.",
+  "correta": "**Conservador, mantendo a quimioterapia.**\n- Fixar dissemina o tumor e compromete a ressecção.\n- Suspender a QT libera a doença sistêmica.",
   "incorretas": {
-   "A": "Erra nos dois pontos: fixar dissemina o tumor, e suspender a quimioterapia liberta a doença sistêmica.",
-   "B": "Manter a quimioterapia está certo, mas a osteossíntese da fratura patológica antes da ressecção definitiva compromete o controle local.",
-   "C": "O tratamento conservador está certo, mas suspender a quimioterapia é o erro mais caro dos dois, o prognóstico do osteossarcoma depende sobretudo do controle sistêmico."
+   "A": "**Duplamente errada.**\n- Fixar e suspender.",
+   "B": "**Fixar é o erro.**\n- Compromete o controle local.",
+   "C": "**Suspender é o erro maior.**\n- Prognóstico depende do controle sistêmico."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0007": {
-  "conceito": "Adamantinoma e **displasia osteofibrosa** (de Campanacci) ocupam o mesmo endereço (a **cortical anterior da diáfise da tíbia**) e produzem a mesma imagem: lesão lítica multiloculada, em bolhas de sabão, com esclerose reativa ao redor e, com frequência, arqueamento anterior do osso.\n\nA separação é histológica e nem sempre é simples: o adamantinoma é um tumor **maligno** de baixo grau, com ninhos epiteliais em meio a estroma fibroso e positividade para citoqueratina; a displasia osteofibrosa é benigna, com trabéculas ósseas envoltas por osteoblastos (o chamado rimming osteoblástico) e sem ninhos epiteliais.\n\nEntre os dois existe uma forma intermediária (a displasia osteofibrosa tipo adamantinoma), o que reforça a necessidade de biópsia ampla e de revisão por patologista experiente.\n\nA idade ajuda: a displasia osteofibrosa aparece na primeira década, o adamantinoma entre a segunda e a quinta.\n\nE a conduta diverge: observação ou curetagem na displasia osteofibrosa, ressecção **ampla** no adamantinoma, que recidiva quando tratado como lesão benigna e pode dar metástase pulmonar tardia, às vezes décadas após o tratamento inicial, o que exige seguimento prolongado desses pacientes.",
-  "correta": "Displasia osteofibrosa da tíbia.",
+  "conceito": "### Adamantinoma × displasia osteofibrosa\n| Aspecto | ==Displasia osteofibrosa== (Campanacci) | Adamantinoma |\n|---|---|---|\n| natureza | benigna | ==maligno de baixo grau== |\n| idade | 1ª década | 2ª a 5ª décadas |\n| local | ==cortical anterior da tíbia== | ==cortical anterior da tíbia== |\n| RX | lítica multiloculada, bolhas de sabão, arqueamento anterior | idem, mais agressiva |\n| histologia | trabéculas com ==rimming osteoblástico== | ==ninhos epiteliais== (citoqueratina +) |\n| conduta | observação, curetagem | ==ressecção ampla== |\n\n- Forma intermediária: displasia osteofibrosa tipo adamantinoma.\n- Adamantinoma: metástase pulmonar tardia, seguimento prolongado.\n\n### Não confundir\n- Displasia ==fibrosa==: medular, vidro fosco, GNAS, qualquer osso.\n\n> **Na prova:** diferencial do adamantinoma = ==displasia osteofibrosa da tíbia==.",
+  "correta": "**Displasia osteofibrosa da tíbia.**\n- Mesmo endereço e mesma imagem: cortical anterior da tíbia.\n- Separação histológica: ninhos epiteliais no adamantinoma.",
   "incorretas": {
-   "A": "A displasia FIBROSA é outra doença: lesão medular com aspecto de vidro fosco, causada por mutação do GNAS, sem os ninhos epiteliais e sem essa predileção pela cortical anterior da tíbia.",
-   "B": "Erra a doença e o osso.",
-   "D": "A displasia osteofibrosa é caracteristicamente da TÍBIA (e, com menos frequência, da fíbula), o fêmur não é sede dela nem do adamantinoma."
+   "A": "**Outra doença.**\n- Displasia fibrosa é medular, vidro fosco.",
+   "B": "**Doença e osso errados.**\n- Idem.",
+   "D": "**Osso errado.**\n- Tíbia (e fíbula), não fêmur."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0008": {
-  "conceito": "Os subtipos de osteossarcoma têm prognósticos muito diferentes, e vale ordená-los.\n\n**Melhores**: o **parosteal** (superficial, de baixo grau, na face posterior do fêmur distal), com sobrevida acima de **90%**; depois o **periosteal**, de grau intermediário.\n\n**Intermediário**: o osteossarcoma clássico **intramedular de alto grau**, o mais comum, com sobrevida em torno de **60% a 70%** com quimioterapia moderna.\n\n**Piores**: os **secundários**. O secundário à radiação tem sobrevida baixa, e o **secundário à doença de Paget** é o pior de todos, sobrevida em cinco anos em torno de **5% a 10%**.\n\nTrês motivos se somam:\n\n- O paciente é idoso e tolera mal a quimioterapia.\n- O tumor costuma ser multicêntrico e já disseminado ao diagnóstico.\n- A lesão surge sobre um osso pagético já deformado e doloroso, o que atrasa o reconhecimento, dor que muda de padrão em osso pagético deve ser lida como sarcoma até prova em contrário.\n\nA transformação ocorre em menos de **1%** dos pacientes com Paget, mas é a principal causa de morte relacionada à doença.",
-  "correta": "Secundário à doença de Paget.",
+  "conceito": "### Prognóstico dos osteossarcomas\n| Subtipo | Grau | Sobrevida aproximada |\n|---|---|---|\n| parosteal (fêmur distal posterior) | baixo | ==> 90%== |\n| periosteal | intermediário | 75 a 85% |\n| clássico intramedular | alto | 60 a 70% (com QT) |\n| telangiectásico | alto | semelhante ao clássico |\n| secundário à radiação | alto | baixa |\n| ==secundário ao Paget== | alto | ==5 a 10% em 5 anos== (o pior) |\n\n### Por que o pagético é o pior\n- Paciente idoso, tolera mal a QT.\n- Frequentemente multicêntrico e disseminado ao diagnóstico.\n- Dor em osso já doloroso: diagnóstico tardio.\n- Mudança no padrão de dor em osso pagético = ==sarcoma até prova em contrário==.\n- Transformação em < 1% dos Paget, mas principal causa de morte ligada à doença.\n\n> **Na prova:** pior prognóstico = ==osteossarcoma secundário ao Paget==.",
+  "correta": "**Secundário ao Paget.**\n- Sobrevida de 5 a 10% em 5 anos.\n- Idoso, multicêntrico, diagnóstico tardio.",
   "incorretas": {
-   "A": "O osteossarcoma primário superficial (parosteal) é justamente o de MELHOR prognóstico, por ser de baixo grau.",
-   "B": "O primário de alto grau é o mais comum e tem prognóstico intermediário, bem melhor que o dos secundários.",
-   "C": "O secundário à radiação tem prognóstico ruim, mas ainda assim melhor que o pagético."
+   "A": "**O melhor.**\n- Parosteal de baixo grau.",
+   "B": "**Intermediário.**\n- 60 a 70% com QT.",
+   "C": "**Ruim, mas menos.**\n- Melhor que o pagético."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0009": {
