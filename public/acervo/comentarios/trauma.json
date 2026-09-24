@@ -842,116 +842,116 @@
   "conferido": false
  },
  "trauma-0073": {
-  "conceito": "A fratura do **hâmulo do hamato** (o gancho do hamato) é a fratura cárpica mais sistematicamente perdida, e o motivo é radiográfico: o hâmulo é uma projeção volar, fina e curva, que se sobrepõe ao corpo do hamato e ao restante do carpo nas incidências habituais.\n\nO quadro clínico é característico e deveria bastar para levantar a suspeita: dor na eminência hipotenar, agravada pela preensão forte, em atleta de esportes com **taco ou raquete** (golfe, beisebol, tênis, hóquei), tipicamente na mão que fica na extremidade do cabo, com o mecanismo de impacto direto do taco contra o gancho, ou por avulsão pelo ligamento transverso do carpo e pelo piso-hamato.\n\nDois sinais ajudam: a dor à **palpação direta** do gancho (localizado cerca de 1 a 2 cm distal e radial ao pisiforme) e o **teste de tração do gancho** (hook of hamate pull test), em que a flexão resistida dos dedos anular e mínimo com o punho em desvio ulnar reproduz a dor.\n\nAs incidências que revelam a lesão são duas, e é preciso pedi-las explicitamente: a do **túnel do carpo** (carpal tunnel view, com o punho em hiperextensão e o feixe tangencial), que projeta o gancho de perfil, e a **oblíqua com o punho em supinação** de cerca de 45 graus (semissupinada), que o desloca da sobreposição. Quando a dúvida persiste (e persiste com frequência), a tomografia é o exame definitivo.\n\nO diagnóstico importa porque as complicações da fratura negligenciada são específicas: **pseudartrose** (favorecida pela vascularização precária do gancho e pela tração dos flexores), **neuropatia do nervo ulnar** no canal de Guyon, cujo trajeto contorna o gancho, e **ruptura atritiva** dos tendões flexores profundos do anular e do mínimo, que deslizam sobre a borda irregular. O tratamento da pseudartrose sintomática é, em regra, a excisão do fragmento.",
-  "correta": "D. Além da incidência do túnel do carpo, o hâmulo do hamato é visualizado na OBLÍQUA DO PUNHO EM SUPINAÇÃO de cerca de 45 graus (semissupinada), que o retira da sobreposição com o corpo do hamato e o restante do carpo.",
+  "conceito": "### Fratura do hâmulo do hamato\n- Golfe, tênis, beisebol: cabo do taco/raquete bate na eminência hipotenar.\n- Dor hipotenar profunda, dor à preensão; ==teste de tração do hâmulo== (flexão do 4º e 5º dedos com desvio ulnar).\n- RX padrão sobrepõe o hâmulo: pedir ==túnel do carpo (tunnel view)== e ==oblíqua em supinação de 45°==.\n- ==TC== é o exame de escolha.\n\n### Complicações\n- Pseudartrose (irrigação pobre), ==ruptura dos flexores do 5º dedo== (atrito), neurite ulnar (canal de Guyon).\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| aguda sem desvio | gesso 6 semanas (alta taxa de pseudartrose) |\n| atleta, pseudartrose, sintomas | ==excisão do hâmulo== (retorno rápido) |\n\n> **Na prova:** hâmulo = ==túnel do carpo + oblíqua em supinação de 45°==",
+  "correta": "**Oblíqua em supinação de 45°.**\n- Projeta o hâmulo livre.\n- Complementa o túnel do carpo.",
   "incorretas": {
-   "A": "A incidência anteroposterior convencional do punho projeta o hâmulo sobreposto ao corpo do hamato e ao carpo, e é justamente nela que a fratura passa despercebida. Ela não acrescenta nada ao diagnóstico.",
-   "B": "A posteroanterior tem o mesmo problema: o gancho é uma projeção volar vista de topo, e o seu contorno se confunde com o do corpo do hamato, no máximo se percebe a ausência do 'anel' cortical, sinal indireto e pouco sensível.",
-   "C": "A oblíqua em PRONAÇÃO de 45 graus é a incidência que mostra bem a face dorsal do carpo e a base dos metacarpos, mas gira o hâmulo para dentro da sobreposição. A rotação que o libera é a supinação."
+   "A": "**AP.**\n- Hâmulo sobreposto.",
+   "B": "**PA.**\n- Só o sinal do anel ausente, pouco sensível.",
+   "C": "**Pronação.**\n- Oblíqua útil é em supinação."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, Volume 2, 6ª edição, Cap. 52"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0074": {
-  "conceito": "Em fratura multifragmentária do fêmur, os fragmentos intermediários não são guia confiável para restaurar comprimento. A osteossíntese deve restabelecer comprimento, eixo e rotação, comparando o membro lesado ao contralateral por métodos clínicos e fluoroscópicos. Encurtamento altera marcha e força muscular; distração excessiva também dificulta consolidação.",
-  "correta": "A alternativa C está correta. A comparação objetiva do comprimento femoral com o lado oposto é a medida que previne discrepância. Apenas alinhar corticais ou fixar uma extremidade não assegura comprimento quando há cominuição.",
+  "conceito": "### Fêmur multifragmentário: comprimento e rotação\n- Fragmentos intermediários ==não servem de guia== para o comprimento.\n- Medir o ==fêmur contralateral== (régua radiopaca, fio, escanometria) antes de travar.\n- Rotação: comparar ==perfil do trocanter menor== e antetorção com o lado sadio.\n\n### Erros mais comuns\n| Erro | Frequência |\n|---|---|\n| malrotação > 15° | até 20 a 30% das hastes |\n| discrepância > 1 cm | 10% |\n\n### Técnica\n- Haste bloqueada (anterógrada ou retrógrada) com ==fixação indireta em ponte==: preserva a biologia dos fragmentos.\n\n> **Na prova:** prevenir discrepância = ==medir comparando com o lado contralateral==",
+  "correta": "**Medir comparando com o contralateral.**\n- Referência confiável na cominução.\n- Antes do bloqueio final.",
   "incorretas": {
-   "A": "A alternativa A (primeiramente a fixação distal.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "B": "A alternativa B (o alinhamento anatômico do fêmur.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "D": "A alternativa D (a avaliação da congruência e do diâmetro das corticais do fêmur no local da fratura.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa."
+   "A": "**Fixar distal primeiro.**\n- Não garante o comprimento.",
+   "B": "**Alinhamento anatômico.**\n- Impossível nos multifragmentários; desvitaliza.",
+   "D": "**Diâmetro cortical.**\n- Sinal de rotação em traços simples."
   },
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide",
    "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, Volume 2, 6ª edição, Cap. 60"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0075": {
-  "alerta": "Este item merece uma ressalva: um ensaio clínico randomizado de referência (McKee e colaboradores, 2009) comparou artroplastia total do cotovelo com RAFI especificamente em fraturas C3 do idoso com osso muito frágil, e mostrou resultado funcional superior com a artroplastia nesse subgrupo mais grave. A leitura mais aceita reconcilia os dois achados pelo critério técnico: RAFI seguue sendo a primeira escolha sempre que uma fixação estável for alcançável (o que as placas bloqueadas tornaram possível numa parcela maior de casos), e a artroplastia fica reservada aos casos em que a cominuição e a fragilidade óssea realmente impedem essa fixação, um julgamento intraoperatório que o enunciado, ao generalizar 'toda fratura C3 no idoso osteoporótico', não deixa claro se está pressupondo.",
-  "conceito": "A fratura AO-C3 do úmero distal (a mais cominuída e menos passível de fixação estável entre as fraturas articulares completas) no idoso com osso osteoporótico reúne dois desafios que se somam: a cominuição dificulta a reconstrução anatômica da superfície articular, e a osteoporose compromete a fixação de qualquer parafuso no osso já fragmentado.\n\nAinda assim, a **placa bloqueada** muda esse cenário em relação à era das placas convencionais: como o parafuso trava rigidamente na placa (e não depende só do atrito rosca-osso para segurar), a construção mantém estabilidade mesmo em osso poroso, permitindo, na maioria dos casos, obter uma fixação estável o suficiente para justificar a RAFI (redução aberta com fixação interna) como conduta inicial, preservando a articulação própria do paciente e evitando os riscos específicos de um implante protético (desgaste, afrouxamento, revisão futura) numa faixa etária em que a expectativa de uso da prótese é longa.\n\nA artroplastia total do cotovelo fica reservada para os casos em que a cominuição é tão extensa que nem mesmo a placa bloqueada consegue ancorar fragmentos suficientes para uma fixação funcional, um julgamento intraoperatório, não um critério fixo de idade ou de grau AO isoladamente.",
-  "correta": "D. A RAFI com placas bloqueadas permanece a conduta preferencial mesmo na fratura C3 do idoso osteoporótico, porque o travamento do parafuso na placa mantém estabilidade mecânica mesmo em osso poroso, reservando a artroplastia para os casos em que essa fixação estável simplesmente não é alcançável.",
+  "conceito": "### Úmero distal C3 no idoso\n- Cominução articular + osso porótico: fixação estável difícil.\n\n### Opções\n| Opção | Quando |\n|---|---|\n| ==RAFI com placas bloqueadas== (paralelas ou ortogonais, 90-90) | fixação estável possível |\n| ==artroplastia total do cotovelo== (semiconstrita) | cominução irreconstruível, idoso de baixa demanda (McKee 2009: melhor função) |\n| hemiartroplastia distal | colunas íntegras |\n| conservador (saco de ossos) | sem condições clínicas |\n\n### Placas\n- Paralelas (medial + lateral): mais rigidez biomecânica em alguns estudos.\n- Ortogonais (medial + posterolateral): resultados clínicos semelhantes.\n- Princípios de O'Driscoll: parafusos longos, maior número no fragmento distal, interdigitados.\n\n> **Na prova:** a banca indicou ==RAFI com placas ortogonais== (veja o alerta)",
+  "correta": "**Placas bloqueadas ortogonais (gabarito).**\n- Resposta oficial.\n- Ver alerta sobre a artroplastia.",
   "incorretas": {
-   "A": "A artroplastia total do cotovelo é reservada para os casos em que a fixação estável não é tecnicamente alcançável pela cominuição, não como conduta de rotina para toda fratura C3 do idoso osteoporótico.",
-   "B": "A configuração paralela é uma opção biomecanicamente válida e amplamente usada, a distinção entre RAFI e artroplastia é o que decide o desfecho nessa população, mais do que a escolha entre configurações de placa paralela ou ortogonal.",
-   "C": "O tratamento conservador ('saco de ossos') é reservado a pacientes de baixa demanda funcional não candidatos a cirurgia, e não representa o melhor resultado funcional esperado quando a cirurgia é viável."
+   "A": "**Artroplastia.**\n- Melhor função em C3 irreconstruível (McKee); a banca não aceitou.",
+   "B": "**Placas paralelas.**\n- Resultados clínicos semelhantes às ortogonais.",
+   "C": "**Saco de ossos.**\n- Só sem condições cirúrgicas."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "alerta": "O ensaio de McKee e colaboradores (2009) mostrou melhor função com artroplastia total do cotovelo que com RAFI nas fraturas C3 do idoso com osso muito frágil. A RAFI segue como primeira escolha quando a fixação estável é possível, e placas paralelas e ortogonais têm resultados clínicos semelhantes. A banca indicou placas ortogonais.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 38"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0076": {
-  "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, a lesão de partes moles mais frequentemente associada à fratura do planalto tibial é a **meniscal**, e, especificamente, é o **menisco lateral** o mais comumente acometido.\n\nIsso reflete diretamente a distribuição das próprias fraturas: a grande maioria acomete o **compartimento lateral** do planalto (os tipos Schatzker I a III, por mecanismo de valgo com carga axial), e é justamente nesse compartimento que o menisco lateral fica comprimido e sujeito a lesão entre o côndilo femoral e a superfície tibial fraturada.\n\nSéries com avaliação sistemática (artroscopia associada, ressonância pré-operatória) relatam lesão meniscal em cerca de **50% a 70%** dos casos, uma proporção maior do que qualquer lesão ligamentar isolada.\n\nEntre as lesões ligamentares, o **ligamento colateral medial** é o mais frequentemente acometido nas fraturas por valgo do compartimento lateral, enquanto o **canto posterolateral** (complexo do colateral lateral, poplíteo e ligamento arqueado) ganha relevância nos padrões de varo de alta energia (Schatzker IV), que também concentram o maior risco de lesão vascular (artéria poplítea) e neurológica (nervo fibular comum) associada.",
-  "correta": "A. O menisco lateral é a estrutura de partes moles mais frequentemente lesada na fratura do planalto tibial, refletindo o predomínio das fraturas do compartimento lateral (Schatzker I a III), onde ele fica comprimido durante o mecanismo do trauma.",
+  "conceito": "### Lesões associadas ao planalto tibial\n| Lesão | Frequência |\n|---|---|\n| ==menisco== (lateral) | ==até 50 a 90%== em RM |\n| LCM | 20 a 30% |\n| LCA | 10 a 25% (mais em Schatzker IV e bicondilares) |\n| nervo fibular, artéria poplítea | Schatzker IV a VI |\n| síndrome compartimental | alta energia |\n\n### Por que o menisco\n- Côndilo femoral lateral impacta o platô em valgo: menisco lateral é ==esmagado ou interposto== no traço (depressão).\n- Reparar/reinserir durante a fixação (visão submeniscal).\n\n> **Na prova:** lesão mais associada = ==menisco lateral==",
+  "correta": "**Menisco lateral.**\n- Esmagado pelo côndilo lateral em valgo.\n- Pode interpor-se no traço.",
   "incorretas": {
-   "B": "O menisco medial é lesado com menor frequência do que o lateral, já que a maioria das fraturas do planalto acomete o compartimento lateral, não o medial.",
-   "C": "O ligamento colateral medial pode ser lesado, sobretudo por mecanismo em valgo, mas com frequência menor do que a lesão do menisco lateral.",
-   "D": "O ligamento cruzado posterior é lesado com frequência ainda menor nessa associação."
+   "B": "**Menisco medial.**\n- Menos frequente.",
+   "C": "**LCM.**\n- Segunda lesão mais comum.",
+   "D": "**LCP.**\n- Rara."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 54"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0077": {
-  "conceito": "Na luxação POSTERIOR do quadril, a posição exata do fêmur no momento do impacto determina se resulta em luxação simples ou em fratura associada: com o quadril mais ADUZIDO, a cabeça femoral tende a se luxar por entre partes moles sem contato ósseo relevante contra a borda, resultando em luxação SIMPLES. Já com o quadril MENOS ADUZIDO (mais próximo do neutro ou em leve abdução) e em ROTAÇÃO INTERNA, a face anterior da cabeça femoral fica exposta e em contato mais direto com a borda posterior do acetábulo no momento do impacto, o que favorece tanto a fratura da borda acetabular (por cisalhamento ósseo contra o rebordo) quanto o cisalhamento da própria cabeça femoral (fratura tipo Pipkin), pois a rotação interna apresenta justamente a face anterior, menos protegida, contra o ponto de impacto.",
-  "correta": "D. Com o quadril menos aduzido e em rotação interna, a face anterior da cabeça femoral fica exposta contra a borda posterior do acetábulo, favorecendo tanto a fratura da borda quanto o cisalhamento da cabeça femoral.",
+  "conceito": "### Luxação posterior do quadril: posição no impacto\n| Posição do fêmur | Resultado |\n|---|---|\n| flexão + ==adução== + rotação interna | ==luxação pura== (cabeça escapa sobre a borda) |\n| flexão + ==menos adução== (neutra/abdução) + ==rotação interna== | ==fratura da parede posterior== ou da cabeça (Pipkin) |\n| flexão menor (mais extensão) | parede posterior maior, superior |\n\n### Conduta\n- Redução urgente (< 6 h); TC pós-redução (fragmentos intra-articulares, congruência).\n- Instabilidade da parede posterior (> 40 a 50%): fixação (Kocher-Langenbeck).\n\n> **Na prova:** fratura associada = fêmur ==menos aduzido e em rotação interna==",
+  "correta": "**Menos aduzido, rotação interna.**\n- Cabeça bate na borda em vez de escapar.\n- Fratura parede posterior ou cabeça.",
   "incorretas": {
-   "A": "Mais aduzido com rotação interna favorece a luxação simples, sem o contato ósseo direto que produz fratura da borda ou da cabeça.",
-   "B": "Mais aduzido com rotação externa também tende à luxação simples por partes moles, sem o mecanismo de impacto ósseo direto descrito.",
-   "C": "Menos aduzido com rotação externa expõe a face posterior (não a anterior) da cabeça femoral, um padrão de contato diferente do que produz a fratura por cisalhamento descrita."
+   "A": "**Mais aduzido.**\n- Luxação pura.",
+   "B": "**Adução e RE.**\n- Não é o padrão.",
+   "C": "**Rotação externa.**\n- Luxação posterior ocorre em RI."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 51"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0078": {
-  "conceito": "A indicação de **artroplastia total do quadril imediata**, associada à fixação da fratura acetabular, é reconhecida em situações específicas nas quais a reconstrução isolada do acetábulo não seria suficiente para garantir um bom resultado funcional.\n\nUma dessas situações é a presença de **fratura associada do colo do fêmur no paciente idoso**: nesse cenário, mesmo que o acetábulo seja passível de fixação anatômica, o colo femoral fraturado (numa faixa etária em que a fixação isolada dessa fratura já carrega alto risco de necrose avascular e de falha de consolidação) dificilmente teria bom resultado com osteossíntese isolada. Tratar as duas lesões numa única cirurgia com artroplastia (fixando o acetábulo e substituindo a articulação do lado femoral) evita um segundo procedimento e endereça diretamente o componente que, isoladamente, teria pior prognóstico com fixação.\n\nDiferente disso, a fratura de dupla coluna com **congruência secundária** (discutida em outra questão deste acervo) é, na verdade, um achado relativamente favorável: a cabeça permanece centrada dentro do conjunto de fragmentos, o que pode sustentar até mesmo tratamento conservador ou fixação isolada em casos selecionados, sem necessariamente exigir artroplastia imediata.",
-  "correta": "C. A fratura do colo do fêmur associada, no idoso, é indicação de artroplastia total imediata combinada à fixação do acetábulo, porque a fixação isolada do colo femoral nessa faixa etária tem alto risco de necrose avascular e falha de consolidação.",
+  "conceito": "### Artroplastia aguda na fratura do acetábulo do idoso\n| Indicação | Motivo |\n|---|---|\n| ==fratura associada do colo do fêmur== | dois problemas articulares; fixar ambos falha |\n| impacção da cabeça femoral | lesão condral irreparável |\n| ==sinal da gaivota== (impacção superomedial do teto) | mau prognóstico com RAFI |\n| cominução/impacção marginal da parede posterior | |\n| artrose prévia | |\n\n- Técnica: fixar colunas (placas, cabos) + cúpula multifuros com parafusos; ou fix and replace.\n- Dupla coluna com ==congruência secundária== pode ser conservadora.\n\n> **Na prova:** ATQ imediata = idoso com ==colo do fêmur associado==",
+  "correta": "**Colo do fêmur associado.**\n- Cabeça inviável para fixação.\n- Artroplastia resolve ambos.",
   "incorretas": {
-   "A": "A fratura isolada da coluna anterior não é, por si só, indicação de artroplastia imediata, pode, conforme o grau de desvio, ser tratada com fixação isolada.",
-   "B": "Uma fratura diafisária associada do fêmur não altera diretamente a decisão sobre o tratamento do acetábulo, e não é a indicação clássica de artroplastia imediata descrita para essa situação.",
-   "D": "A dupla coluna com congruência secundária é, na verdade, um achado relativamente favorável, que pode sustentar tratamento conservador ou fixação isolada em casos selecionados, não uma indicação de artroplastia imediata."
+   "A": "**Coluna anterior.**\n- Fixação ou conservador.",
+   "B": "**Diafisária.**\n- Não indica artroplastia.",
+   "D": "**Congruência secundária.**\n- Permite conservador."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 50"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0079": {
-  "conceito": "A **regra de Spence** avalia indiretamente a integridade do ligamento transverso do atlas na fratura de Jefferson: na radiografia transoral (incidência de odontoide), mede-se o somatório do afastamento lateral (overhang) das massas laterais de C1 em relação às bordas do corpo de C2, de ambos os lados. Um somatório maior que **6,9 mm** (classicamente descrito como 7 mm) sugere que o ligamento transverso não é mais capaz de conter as massas laterais, indicando sua provável ruptura e instabilidade atlantoaxial associada.",
-  "correta": "D. A suspeita de lesão do ligamento transverso ocorre quando há um afastamento das massas laterais maior que 6,9 mm.",
+  "conceito": "### Fratura de Jefferson (C1)\n- Carga axial: fratura dos arcos anterior e posterior; massas laterais afastam-se.\n- ==Regra de Spence==: soma do afastamento (overhang) das massas laterais de C1 sobre C2 na transoral ==> 6,9 mm== (> 8,1 mm com magnificação) = ==ligamento transverso roto==.\n- Hoje: ==RM== avalia diretamente o transverso (Dickman I intrassubstancial, II avulsão óssea).\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| transverso íntegro | colar/halo |\n| Dickman II (avulsão) | halo, pode consolidar |\n| Dickman I | artrodese C1-C2 |\n\n### Intervalo atlantodental\n| Idade | Normal |\n|---|---|\n| adulto | ≤ 3 mm |\n| criança | ≤ 5 mm |\n\n> **Na prova:** Spence = massas laterais ==> 6,9 mm==",
+  "correta": "**6,9 mm.**\n- Regra de Spence.\n- Sugere transverso roto.",
   "incorretas": {
-   "A": "Um afastamento de apenas 2,0 mm está bem dentro da variação normal, sem valor preditivo para lesão ligamentar.",
-   "B": "Um afastamento de 3,1 mm também é compatível com a normalidade, estando abaixo do limiar diagnóstico estabelecido pela regra de Spence.",
-   "C": "Embora 5,5 mm já represente um afastamento maior, ainda está abaixo do valor de corte clássico de 6,9 mm associado à provável ruptura do ligamento transverso."
+   "A": "**2 mm.**\n- Muito pequeno.",
+   "B": "**3,1 mm.**\n- Próximo do intervalo atlantodental.",
+   "C": "**5,5 mm.**\n- Abaixo do limite."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0080": {
-  "conceito": "O **sinal de Hawkins** é um dos poucos sinais radiográficos que informam sobre a vitalidade de um osso, e sua lógica é elegante.\n\nDepois de uma fratura, todo osso vivo e vascularizado passa por um período de hiperemia reacional, com aumento do fluxo sanguíneo e reabsorção osteoclástica ativa. Num osso que suporta carga, essa reabsorção se manifesta primeiro no osso subcondral, que é o mais metabolicamente ativo. No tálus, isso aparece como uma faixa linear radiotransparente logo abaixo da cartilagem do domus, visível sobretudo na incidência em frente do tornozelo, e surge entre a sexta e a oitava semana após a fratura.\n\nA presença desse sinal indica que o tálus está vivo e praticamente exclui a osteonecrose — é um sinal de alto valor preditivo negativo. Sua ausência, por outro lado, é apenas sugestiva: um tálus sem sinal de Hawkins pode estar necrótico, mas o sinal também falha em aparecer se o paciente permaneceu sem carga (o que reduz a hiperemia funcional) ou se a imagem foi feita cedo ou tarde demais.\n\nO que se observa então, mais tarde, é o oposto: aumento da densidade relativa do domus, porque o osso vivo ao redor se desmineraliza pelo desuso enquanto o osso morto permanece com a mesma densidade — é a esclerose \"relativa\" que caracteriza a necrose, visível a partir de cerca de seis a oito semanas e melhor definida pela ressonância, que é o exame de escolha para confirmar a osteonecrose e medir sua extensão.\n\nVale a advertência clínica: mesmo com necrose estabelecida, o colapso do domus não é obrigatório, e boa parte dos pacientes revasculariza ao longo de meses, motivo pelo qual a conduta é o acompanhamento e não a cirurgia imediata.",
-  "correta": "C. A reabsorção linear subcondral do domus (o SINAL DE HAWKINS) aparece entre a SEXTA e a OITAVA SEMANA e indica que o tálus está vascularizado, praticamente excluindo a osteonecrose.",
+  "conceito": "### Sinal de Hawkins\n- ==Radiotransparência linear subcondral== no domo do tálus, visível em ==6 a 8 semanas==.\n- Reflete ==reabsorção por hiperemia==: há irrigação = osso vivo.\n- Ausência não confirma necrose (sensibilidade alta, especificidade menor); RM define.\n- Parcial (só medial ou lateral): revascularização incompleta.\n\n### Necrose no colo do tálus (Hawkins)\n| Tipo | Necrose |\n|---|---|\n| I | 0 a 13% |\n| II | 20 a 50% |\n| III | 70 a 100% |\n| IV | ~100% |\n\n- Irrigação: ==artéria do canal do tarso== (tibial posterior) principal para o corpo.\n\n> **Na prova:** sinal de Hawkins = ==6 a 8 semanas==",
+  "correta": "**6ª a 8ª semana.**\n- Reabsorção subcondral.\n- Indica corpo vascularizado.",
   "incorretas": {
-   "A": "Da primeira à terceira semana o processo de hiperemia e reabsorção osteoclástica ainda não produziu perda mineral suficiente para se tornar visível na radiografia, o sinal simplesmente não teve tempo de aparecer.",
-   "B": "A quarta e a quinta semana estão ainda abaixo da janela em que o sinal se torna consistentemente visível. Procurá-lo cedo demais leva a concluir, erroneamente, pela ausência de vascularização.",
-   "D": "A décima e a décima primeira semana já estão além da janela habitual: nessa altura o que costuma dominar a imagem é a esclerose relativa do osso necrótico, ou a normalização da densidade no osso que revascularizou."
+   "A": "**1 a 3 semanas.**\n- Cedo demais.",
+   "B": "**4 a 5 semanas.**\n- Ainda cedo.",
+   "D": "**10 a 11 semanas.**\n- Tarde."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 65"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0081": {
   "conceito": "A síndrome compartimental na perna da criança tem um desafio diagnóstico particular: os sinais clássicos do adulto (dor desproporcional, os \"5 P\", dor, palidez, parestesia, ausência de pulso, paralisia) são pouco confiáveis na criança pequena, que não comunica bem a dor ou a parestesia. Por isso, a vigilância clínica precisa ser redobrada justamente nos pacientes mais jovens, e estudos que avaliaram fatores de risco para o desenvolvimento da síndrome compartimental em fraturas de perna na infância identificaram a **idade mais baixa** como o preditor mais forte, provavelmente refletindo tanto uma vulnerabilidade biológica real quanto o próprio atraso diagnóstico nessa faixa etária, quando os sinais clínicos habituais ainda não são confiáveis.",
