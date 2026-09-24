@@ -5329,91 +5329,91 @@
   "conferido": false
  },
  "pediatria-0425": {
-  "conceito": "No método ultrassonográfico de **Graf** para avaliação da displasia do desenvolvimento do quadril, dois ângulos principais são medidos:\n- **Ângulo α (alfa)**: reflete a inclinação do **teto ósseo** do acetábulo, refletindo o grau de ossificação e cobertura óssea da cabeça femoral.\n- **Ângulo β (beta)**: reflete a **porção cartilaginosa** do teto acetabular (o lábio cartilaginoso), avaliando o quanto essa porção cartilaginosa cobre e sustenta a cabeça femoral, sendo particularmente relevante na diferenciação entre quadris com cobertura cartilaginosa ainda adequada (tipo IIa/IIb) e aqueles com cobertura cartilaginosa já comprometida (tipos mais avançados de displasia, como o tipo D e os tipos III/IV).",
-  "correta": "A. O ângulo β de Graf, na ultrassonografia do quadril, refere-se à porção cartilaginosa do acetábulo.",
+  "conceito": "### Ultrassom de Graf\n| Ângulo | Linhas | Mede | Normal |\n|---|---|---|---|\n| ==alfa== | ilíaco × teto ==ósseo== | cobertura óssea | ==≥ 60°== |\n| ==beta== | ilíaco × teto ==cartilaginoso== (lábio) | cobertura cartilaginosa | ==< 55°== |\n\n### Tipos\n| Tipo | Alfa | Conduta |\n|---|---|---|\n| I | ≥ 60° | normal |\n| IIa | 50 a 59°, < 3 meses | imaturo fisiológico, controle |\n| IIb | 50 a 59°, > 3 meses | tratar |\n| IIc | 43 a 49° (beta < 77°) | tratar |\n| D | 43 a 49°, beta > 77° | descentrando |\n| III | < 43°, luxado | tratar |\n| IV | < 43°, luxado com lábio invertido | tratar |\n\n> **Na prova:** ângulo beta = ==teto cartilaginoso== (lábio); alfa = teto ósseo",
+  "correta": "**Porção cartilaginosa.**\n- Linha do ilíaco ao lábio.\n- Beta alto indica cabeça empurrando o lábio.",
   "incorretas": {
-   "B": "A inclinação do teto ósseo do acetábulo é avaliada pelo ângulo α, não pelo ângulo β.",
-   "C": "A cartilagem trirradiada é uma estrutura da região medial do acetábulo, relacionada ao crescimento acetabular, não ao que o ângulo β avalia.",
-   "D": "A esfericidade da cabeça femoral não é o que o ângulo β avalia, ele se refere à porção cartilaginosa do teto acetabular."
+   "B": "**Teto ósseo.**\n- É o ângulo alfa.",
+   "C": "**Trirradiada.**\n- Não entra no Graf.",
+   "D": "**Esfericidade.**\n- Não é medida pelo Graf."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0426": {
-  "conceito": "Na doença de Legg-Calvé-Perthes, o surgimento de **cistos metafisários** na radiografia é um achado que reflete comprometimento da fise proximal do fêmur, além da epífise propriamente dita. Esses cistos representam áreas de irregularidade na ossificação endocondral da placa de crescimento, e sua presença sugere um **distúrbio potencial do crescimento fisário**, um achado clinicamente relevante, já que aponta para o risco de alterações permanentes no crescimento do colo femoral (como encurtamento do colo ou deformidades residuais), não apenas para o processo de necrose e remodelação da própria epífise.",
-  "correta": "D. Cistos metafisários na doença de Perthes sugerem distúrbio potencial do crescimento fisário.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Catterall\n| Grupo | Epífise acometida |\n|---|---|\n| I | só anterior, sem colapso |\n| II | anterior com sequestro, pilares preservados |\n| III | maior parte, só pequena porção posterior preservada |\n| ==IV== | ==epífise inteira== |\n\n### Sinais de cabeça em risco\n- Gage (V lateral), calcificação lateral, subluxação lateral, metáfise com cistos, fise horizontal.\n\n### Sinais de cabeça em risco (Catterall)\n| Sinal | Significado |\n|---|---|\n| Gage (V radiotransparente lateral) | colapso lateral |\n| calcificação lateral à epífise | extrusão |\n| subluxação lateral | perda da contenção |\n| fise horizontal | deformidade |\n| ==cistos metafisários== | ==lesão da fise==: distúrbio de crescimento (colo curto, trocanter alto) |\n\n> **Na prova:** cistos metafisários = ==distúrbio potencial do crescimento fisário==",
+  "correta": "**Distúrbio do crescimento fisário.**\n- Cistos refletem lesão da fise.\n- Colo curto e coxa magna.",
   "incorretas": {
-   "A": "A subluxação lateral da cabeça femoral é um achado relacionado à cobertura acetabular, não diretamente aos cistos metafisários.",
-   "B": "A deformidade da epífise femoral é um achado da própria epífise, distinto do significado específico dos cistos metafisários, que apontam para o comprometimento fisário.",
-   "C": "A ossificação lateral alargada da epífise é um achado epifisário distinto, não o significado associado aos cistos metafisários."
+   "A": "**Subluxação.**\n- Sinal próprio (migração lateral).",
+   "B": "**Deformidade epifisária.**\n- Gage e colapso.",
+   "C": "**Calcificação lateral.**\n- Sinal independente de extrusão."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0427": {
-  "conceito": "Na artrogripose múltipla congênita de etiologia **neuropática** (um dos principais mecanismos fisiopatológicos da doença, ao lado das formas miopáticas e de tecido conjuntivo), a alteração histológica se localiza classicamente no **corno anterior da medula espinal**, com uma **diminuição do número de células** (motoneurônios) nessa região. Essa redução do número de motoneurônios leva à denervação da musculatura correspondente, causando fraqueza muscular fetal (acinesia fetal) que, por sua vez, resulta nas contraturas articulares múltiplas características da doença, um mecanismo fisiopatológico similar, em conceito, ao observado na poliomielite, mas de origem congênita/pré-natal.",
-  "correta": "A. Na artrogripose de etiologia neuropática, a alteração se localiza no corno anterior da medula espinal, com diminuição do número de células.",
+  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n> **Na prova:** artrogripose neuropática = ==menos células do corno anterior==.",
+  "correta": "**Corno anterior, células diminuídas.**\n- Neurônios motores reduzidos.\n- Acinesia fetal e contraturas.",
   "incorretas": {
-   "B": "O corno posterior da medula espinal está relacionado a vias sensitivas, não ao mecanismo motor envolvido na artrogripose neuropática.",
-   "C": "É uma diminuição, não um aumento, do número de células do corno anterior que caracteriza a artrogripose neuropática.",
-   "D": "O corno posterior não é a região envolvida, e o achado é de diminuição, não aumento, do número de células."
+   "B": "**Corno posterior.**\n- Sensitivo.",
+   "C": "**Aumento.**\n- Há redução.",
+   "D": "**Posterior e aumento.**\n- Local e alteração errados."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0428": {
-  "conceito": "Entre as mucopolissacaridoses, o comprometimento cognitivo (retardo mental) não é uniforme, depende do tipo específico de acúmulo de glicosaminoglicanos e de seu efeito sobre o sistema nervoso central. As síndromes classicamente associadas a **retardo mental** são: **Hurler** (MPS I, forma grave), **Hunter** (MPS II, especialmente as formas graves) e **Sanfilippo** (MPS III, na qual o comprometimento neurológico é, inclusive, a manifestação predominante, com relativamente pouco acometimento somático). Já a síndrome de **Scheie** (forma atenuada da MPS I) preserva classicamente a inteligência normal, sendo esse um dos pontos que a diferencia da forma grave (Hurler) dentro do mesmo tipo de MPS.",
-  "correta": "A. O retardo mental ocorre classicamente nas síndromes de Hurler, Hunter e Sanfilippo.",
+  "conceito": "### Mucopolissacaridoses (MPS)\n| Tipo | Nome | Herança | Achados |\n|---|---|---|---|\n| I | ==Hurler== (grave) / Scheie | AR | ==retardo==, face grosseira, opacidade de córnea, giba toracolombar |\n| II | Hunter | ==ligada ao X== | sem opacidade de córnea |\n| III | Sanfilippo | AR | predomínio neurológico |\n| IV | ==Morquio== | AR | ==inteligência normal==, nanismo de tronco curto, ==instabilidade C1-C2 (odontoide hipoplásico)==, genu valgo |\n| VI | Maroteaux-Lamy | AR | inteligência normal |\n\n### Ortopedia\n- Morquio: ==avaliar a coluna cervical== antes de anestesia; artrodese occipitocervical se instável.\n- Hurler: cifose, displasia do quadril, túnel do carpo, dedo em gatilho múltiplo.\n- Tratamento: reposição enzimática, transplante de medula (Hurler).\n\n### Inteligência nas MPS\n| Com retardo | Inteligência normal |\n|---|---|\n| ==Hurler (I)== | Scheie (I-S) |\n| ==Hunter (II)== (forma grave) | Morquio (IV) |\n| ==Sanfilippo (III)== | Maroteaux-Lamy (VI) |\n\n- Heparan sulfato acumulado no SNC explica o retardo.\n\n> **Na prova:** retardo mental = ==Hurler, Hunter e Sanfilippo==",
+  "correta": "**Hurler, Hunter e Sanfilippo.**\n- Acumulam heparan sulfato.\n- Comprometimento do SNC.",
   "incorretas": {
-   "B": "A síndrome de Scheie preserva classicamente a inteligência normal, não devendo ser incluída no grupo das MPS com retardo mental.",
-   "C": "A síndrome de Scheie preserva classicamente a inteligência normal, sendo incorretamente incluída nessa alternativa.",
-   "D": "A síndrome de Hurler é uma das principais associadas a retardo mental e não deveria ser excluída dessa alternativa, que erroneamente inclui a síndrome de Scheie em seu lugar."
+   "B": "**Scheie.**\n- Inteligência normal.",
+   "C": "**Scheie.**\n- Forma atenuada da MPS I.",
+   "D": "**Scheie.**\n- Sem retardo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0430": {
-  "conceito": "A malformação de Arnold-Chiari tipo II, frequentemente associada à mielomeningocele, envolve o deslocamento caudal do tronco encefálico e do cerebelo através do forame magno, podendo comprimir estruturas do tronco cerebral e dos nervos cranianos baixos. Quando **sintomática**, essa compressão pode gerar diversos sinais de disfunção do tronco encefálico e de nervos cranianos, entre eles o **nistagmo**, um achado que reflete o comprometimento das vias oculomotoras e vestibulares no tronco encefálico comprimido, e que, junto a outros sinais de alerta (estridor, apneia, dificuldade de deglutição), sinaliza a necessidade de avaliação neurocirúrgica urgente para eventual descompressão.",
-  "correta": "A. A malformação de Arnold-Chiari tipo II sintomática, na mielomeningocele, pode se caracterizar por nistagmo.",
+  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Chiari II\n- Herniação do ==vermis cerebelar e tronco== pelo forame magno; presente em quase todos com MMC.\n- Sintomática em cerca de 1/3 (principal causa de morte na MMC).\n\n| Idade | Sinais |\n|---|---|\n| lactente | ==estridor==, ==apneia==, disfagia, ==nistagmo==, choro fraco |\n| criança maior | cefaleia, fraqueza de MMSS, espasticidade, escoliose |\n\n- Primeiro checar a derivação; descompressão da fossa posterior se persistir.\n\n> **Na prova:** Chiari II sintomática = ==nistagmo== (e estridor, apneia)",
+  "correta": "**Nistagmo.**\n- Compressão do tronco.\n- Junto de estridor, apneia e disfagia.",
   "incorretas": {
-   "B": "A hipertonia não é o achado mais classicamente associado à disfunção de tronco encefálico da malformação de Chiari II sintomática.",
-   "C": "A taquipneia isolada não é o achado clássico mais citado, alterações respiratórias mais associadas à disfunção de tronco incluem apneia e estridor, não taquipneia isolada.",
-   "D": "A hipoacusia não é um achado classicamente associado à disfunção de tronco encefálico da malformação de Chiari II sintomática."
+   "B": "**Hipertonia.**\n- Tardia, menos característica.",
+   "C": "**Taquipneia.**\n- Há apneia.",
+   "D": "**Hipoacusia.**\n- Não é típica."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0431": {
-  "conceito": "O anel pericondral de **LaCroix** é uma estrutura fibrosa que envolve circunferencialmente a periferia da placa de crescimento (fise), na transição entre a epífise, a fise e a metáfise. Sua função principal é conferir **estabilização mecânica** à placa fisária, ajudando a resistir a forças de cisalhamento e tração que, de outra forma, poderiam desestabilizar essa região estruturalmente mais frágil do osso em crescimento, uma função distinta da zona de Ranvier (relacionada ao crescimento periférico em espessura da fise) e da nutrição vascular da cartilagem, que é feita por vasos epifisários e metafisários próprios.",
-  "correta": "C. O anel pericondral de LaCroix é responsável pela estabilização mecânica da placa fisária.",
+  "conceito": "### A periferia da fise\n- **Zona de Ranvier:** células que fazem a fise crescer **em largura** (aposicional).\n- **Anel pericondral de LaCroix:** faixa fibrosa densa, contínua com o periósteo metafisário, que dá ==estabilidade mecânica à junção osso–cartilagem==.\n- **Processos mamilares:** interdigitações que ajudam a resistir ao cisalhamento, mas não são a estrutura de contenção periférica.\n- O **periósteo** espesso da criança também contribui, mas o anel de LaCroix é a resposta clássica.\n\n### Vascularização da fise\n| Região | Irrigação |\n|---|---|\n| epífise e zona germinativa | artérias epifisárias |\n| metáfise | nutrícia e metafisárias |\n| periferia | pericondrais |\n\n> **Na prova:** anel de LaCroix = ==estabilização mecânica da fise==",
+  "correta": "**Estabilização mecânica.**\n- Faixa fibrosa contínua com o periósteo.\n- Resiste ao cisalhamento.",
   "incorretas": {
-   "A": "A nutrição metafisária é feita pelos vasos metafisários, não pelo anel pericondral de LaCroix.",
-   "B": "O crescimento periférico da placa fisária (em espessura) é atribuído à zona de Ranvier, não ao anel pericondral de LaCroix.",
-   "D": "A nutrição da cartilagem hialina articular depende do líquido sinovial e de vasos subcondrais, não do anel pericondral de LaCroix."
+   "A": "**Nutrição metafisária.**\n- Vasos metafisários.",
+   "B": "**Crescimento periférico.**\n- Zona de Ranvier.",
+   "D": "**Cartilagem articular.**\n- Nutrida pelo líquido sinovial."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0432": {
-  "conceito": "Na tíbia vara de Blount do tipo infantil, a incidência radiográfica ântero-posterior do joelho mostra, de forma mais ampla, uma **ossificação assimétrica da epífise proximal da tíbia**, a porção medial da epífise e da fise cresce e se ossifica de forma mais lenta e irregular do que a porção lateral, um desequilíbrio que é a alteração radiográfica fundamental por trás de todos os achados descritos na doença. É esse padrão de ossificação assimétrica, progredindo ao longo do tempo, que dá origem a achados mais específicos e tardios, como a formação do \"bico\" ósseo medial e, em estágios mais avançados, a barra fisária, sendo a ossificação assimétrica da epífise o achado mais abrangente e fundamental entre as opções apresentadas.",
-  "correta": "D. A incidência radiográfica ântero-posterior na tíbia vara de Blount do tipo infantil mostra ossificação assimétrica da epífise proximal da tíbia.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Radiografia AP na forma infantil\n- ==Epífise medial== menor, em cunha, com ==ossificação assimétrica==.\n- ==Bico metafisário medial== (não epifisário), fise medial irregular e inclinada.\n- ==Subluxação lateral== da tíbia.\n\n> **Na prova:** Blount infantil no AP = ==ossificação assimétrica da epífise proximal==",
+  "correta": "**Ossificação epifisária assimétrica.**\n- Epífise medial em cunha.\n- Menor ossificação medial.",
   "incorretas": {
-   "A": "A subluxação, quando presente, tende a ser lateral (não medial) em estágios mais avançados da doença, não sendo a alteração radiográfica mais abrangente descrita aqui.",
-   "B": "A irregularidade da placa fisária ocorre no lado medial, não lateral, na doença de Blount.",
-   "C": "O \"bico\" ósseo medial é um achado real e característico, mas representa uma manifestação mais específica e tardia do processo mais amplo de ossificação assimétrica da epífise, que é o achado buscado nesta questão."
+   "A": "**Subluxação lateral.**\n- Não medial.",
+   "B": "**Irregularidade medial.**\n- Fise medial, não lateral.",
+   "C": "**Bico metafisário.**\n- Não epifisário."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0433": {
-  "conceito": "A classificação de **Cavendish** para a deformidade de Sprengel avalia a gravidade cosmética da elevação escapular, com base na **altura** em que a escápula se encontra em relação à posição normal, observada clinicamente com o paciente vestido (avaliando o quanto a deformidade é visível esteticamente), variando de grau 0 (sem deformidade visível) até graus mais avançados, com elevação escapular progressivamente mais evidente mesmo com roupas. Essa classificação é usada principalmente para orientar a decisão de tratamento cirúrgico, já que casos com pouca repercussão estética (graus mais baixos) podem não justificar a cirurgia, enquanto casos com deformidade muito visível (graus mais altos) tendem a ter maior indicação de correção.",
-  "correta": "C. A classificação de Cavendish para a deformidade de Sprengel baseia-se na altura da escápula.",
+  "conceito": "### Deformidade de Sprengel\n- Falha da descida da escápula; pequena, alta, ==rodada medialmente==.\n- ==Osso omovertebral== (ou banda fibrosa) em cerca de 1/3: liga o ângulo superior à coluna cervical.\n- Associações: Klippel-Feil, escoliose, costelas anômalas, rim.\n\n### Cirurgia\n| Aspecto | Detalhe |\n|---|---|\n| idade | ==após 3 anos== (ideal 3 a 8) |\n| técnicas | Woodward (desinserção medial), Green (desinserção na escápula), Wilkinson-Campbell |\n| ==omovertebral== | ressecção ==extraperiosteal== (subperiosteal regenera a ponte) |\n| risco | lesão do ==plexo braquial== ao descer: osteotomia da clavícula protege |\n\n### Cavendish\n| Grau | Aparência |\n|---|---|\n| ==1 (muito leve)== | ombros nivelados; ==invisível vestido== |\n| 2 (leve) | ombros nivelados; saliência ==visível vestido== |\n| 3 (moderado) | ombro elevado 2 a 5 cm |\n| 4 (grave) | ombro elevado > 5 cm, escápula perto do occipital |\n\n- Graus 3 e 4 costumam indicar cirurgia.\n\n> **Na prova:** omovertebral = ressecção ==extraperiosteal, depois dos 3 anos==.",
+  "correta": "**Altura da escápula.**\n- Graus pela elevação visível.\n- 2 a 5 cm = grau 3; > 5 cm = grau 4.",
   "incorretas": {
-   "A": "A rotação da escápula não é o parâmetro central avaliado pela classificação de Cavendish.",
-   "B": "A forma da escápula não é o parâmetro central avaliado pela classificação de Cavendish, que se baseia na altura/elevação.",
-   "D": "A mobilidade da escápula não é o parâmetro avaliado pela classificação de Cavendish, que se baseia na altura da elevação escapular."
+   "A": "**Rotação.**\n- Não entra na escala.",
+   "B": "**Forma.**\n- Não é o critério.",
+   "D": "**Mobilidade.**\n- Avaliada à parte."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0434": {
