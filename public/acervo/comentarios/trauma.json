@@ -2600,116 +2600,117 @@
   "conferido": false
  },
  "trauma-0235": {
-  "conceito": "O **ângulo de Matta** (arco do teto, ou \"roof arc angle\") é uma medida radiográfica usada para avaliar, nas três incidências padrão (AP, alar e obturatriz), quanto da cúpula acetabular de sustentação de carga permanece intacta e ligada ao ilíaco numa fratura com traço transverso.\n\nUm ângulo menor que 45 graus em qualquer uma das três incidências sugere que uma porção insuficiente do teto permanece íntegra, indicando tratamento cirúrgico (e não o contrário: ângulos maiores que 45 graus são os que sugerem teto suficientemente preservado para considerar tratamento conservador).\n\nUma limitação importante e específica desse sistema de medida é que ele não avalia adequadamente a **parede posterior**: quando há um componente de parede posterior associado ao traço transverso, essa porção precisa ser avaliada separadamente (geralmente por tomografia computadorizada ou pela avaliação direta do tamanho do fragmento), porque a metodologia do arco do teto não foi validada, nem se aplica bem, à avaliação da integridade da parede posterior isoladamente.\n\nDa mesma forma, o sistema não é aplicável às fraturas de **dupla coluna**, nas quais, por definição, nenhuma porção do teto permanece ligada ao ilíaco, não havendo, portanto, arco algum para medir.",
-  "correta": "B. A parede posterior deve ser avaliada separadamente do ângulo de Matta, já que esse sistema de medida do arco do teto não foi validado para avaliar a integridade dessa estrutura especificamente.",
+  "conceito": "### Tratamento conservador do acetábulo\n| Critério | Detalhe |\n|---|---|\n| teto preservado | ==arcos do teto (roof arc) > 45°== nas três incidências (AP, alar, obturatória); TC: traço fora dos 10 mm superiores |\n| congruência | cabeça congruente com o teto, sem tração |\n| desvio | < 2 mm na área de carga |\n| parede posterior | < 20 a 25% e estável ao exame sob anestesia |\n| ==transversa baixa (infratectal)== | ==teto intacto== |\n| ambas as colunas com congruência secundária | selecionados |\n| paciente | risco cirúrgico alto |\n\n### Arco do teto (Matta)\n- Ângulo entre a vertical pelo centro da cabeça e a linha até o ponto onde o traço atinge o acetábulo, em AP, alar e obturatória.\n- ==> 45°== nas três = teto de carga preservado: conservador possível.\n- Radiografias ==sem tração==; cabeça congruente.\n- ==Não se aplica== a fraturas de ==ambas as colunas== e da ==parede posterior== (avaliar esta separadamente: tamanho e estabilidade).\n\n> **Na prova:** arco do teto = a ==parede posterior deve ser avaliada em separado==",
+  "correta": "**Parede posterior em separado.**\n- Arco não mede a parede.\n- Avaliar por TC e estabilidade.",
   "incorretas": {
-   "A": "A avaliação em radiografias com tração não é um requisito descrito para a medida do arco do teto, que é feita nas três incidências padrão (AP, alar, obturatriz) sem necessidade de tração.",
-   "C": "É o contrário: medidas MENORES que 45 graus, não maiores, indicam tratamento cirúrgico, por sugerirem que uma porção insuficiente do teto permanece íntegra.",
-   "D": "O ângulo de Matta não é aplicável às fraturas de dupla coluna, nas quais nenhuma porção do teto permanece ligada ao ilíaco, não há arco a ser medido nesse padrão."
+   "A": "**Com tração.**\n- Sem tração.",
+   "C": "**> 45° cirúrgico.**\n- > 45° permite conservador.",
+   "D": "**Ambas as colunas.**\n- Não se aplica."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
   "referencias": [
    "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, Volume 2, 6ª edição, Cap. 56"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0236": {
-  "conceito": "A tração esquelética TRANSFEMORAL (fio ou pino inserido na região distal do fêmur, próximo aos côndilos) deve ser introduzida no sentido MEDIAL PARA LATERAL, justamente para proteger a ARTÉRIA FEMORAL, que, nesse nível, já percorreu o canal dos adutores (canal de Hunter) na face medial da coxa e está prestes a se tornar a artéria poplítea ao atravessar o hiato do adutor, ficando bastante próxima da cortical medial do fêmur distal. Inserir o fio partindo do lado medial (onde o risco vascular é maior) e progredindo para o lateral (região mais segura) reduz a chance de lesão inadvertida do vaso durante a passagem.",
-  "correta": "B. A tração transfemoral deve ser passada de medial para lateral para evitar lesão da artéria femoral, que corre próxima à cortical medial do fêmur distal nesse nível.",
+  "conceito": "### Pinos de tração: sentido de introdução\n| Local | Sentido | Estrutura protegida |\n|---|---|---|\n| ==fêmur distal (supracondiliano)== | ==medial → lateral== | ==artéria femoral== (canal dos adutores, medial) |\n| tíbia proximal | ==lateral → medial== | ==nervo fibular== (colo da fíbula) |\n| calcâneo | medial → lateral | feixe tibial posterior |\n\n- Regra: entrar pelo lado da estrutura nobre, controlando o ponto de entrada.\n- Fêmur distal: 2 a 3 cm acima do polo superior da patela, anterior à linha média no perfil (evitar articulação e fise na criança).\n\n> **Na prova:** transfemoral = ==medial para lateral== (artéria femoral)",
+  "correta": "**Medial para lateral, artéria femoral.**\n- Entrada controlada no lado do vaso.\n- Evita lesionar a femoral.",
   "incorretas": {
-   "A": "O nervo femoral já se ramificou em nervos motores e sensitivos mais proximalmente na coxa, não sendo a estrutura de maior risco na região distal do fêmur onde a tração transfemoral é inserida.",
-   "C": "O sentido lateral para medial aproximaria o instrumento perigosamente da artéria femoral ao final da trajetória, o oposto do sentido recomendado para proteção vascular.",
-   "D": "Combina o sentido oposto ao recomendado com a estrutura correta (artéria femoral) que, de fato, justifica a escolha do sentido medial para lateral, e não o inverso."
+   "A": "**Nervo femoral.**\n- Não está no fêmur distal.",
+   "C": "**Lateral para medial.**\n- Sentido da tíbia (fibular).",
+   "D": "**Lateral para medial.**\n- Saída às cegas perto da artéria."
   },
-  "geradoEm": "2026-09-15",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 56"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0237": {
-  "conceito": "A classificação **AOSpine** das fraturas toracolombares tem três tipos, definidos pelo mecanismo, e é a mais usada hoje porque combina precisão morfológica com um modificador neurológico e outro clínico:\n- **Tipo A**: falha por compressão do corpo vertebral, sem lesão da banda de tensão\n- **Tipo B**: lesão da banda de tensão, anterior ou posterior, com o corpo ainda alinhado\n- **Tipo C**: translação ou deslocamento em qualquer plano, a lesão mais instável\n\nDentro do tipo A, os subtipos se organizam por duas perguntas feitas na tomografia, e é isso que a questão cobra. A primeira pergunta é: a **parede posterior** (o muro posterior do corpo) está fraturada? Se não, a lesão é A1 ou A2; se sim, é A3 ou A4. A segunda pergunta só se aplica depois da primeira: quantos **platôs** estão acometidos?\n\n- **A0**: fratura sem repercussão estrutural (processo transverso ou espinhoso isolado)\n- **A1**: fratura em cunha por compressão de um platô, com muro posterior íntegro\n- **A2**: fratura em pinça (split), acometendo os dois platôs, com muro posterior íntegro\n- **A3**: explosão incompleta, um platô mais o muro posterior\n- **A4**: explosão completa, os dois platôs mais o muro posterior\n\nO critério do muro posterior é o divisor porque marca a passagem da falha puramente anterior para a falha que alcança a **coluna média** de Denis (o terço posterior do corpo, o muro e o ligamento longitudinal posterior), com risco de retropulsão para o canal.\n\nNote que a lesão do complexo ligamentar posterior não separa subtipos do A: ela é o que define o tipo B (B1, transóssea; B2, posterior ligamentar; B3, hiperextensão). A AOSpine acrescenta ainda os modificadores N0 a N4 e NX para o estado neurológico e M1 (lesão ligamentar indeterminada) e M2 (comorbidade relevante) para o contexto clínico.",
-  "correta": "A. A fratura da PAREDE POSTERIOR do corpo vertebral é o critério que separa A1 e A2 (muro íntegro) de A3 e A4 (muro fraturado): ela marca a passagem para a falha da coluna média, com risco de retropulsão para o canal.",
+  "conceito": "### AO Spine toracolombar\n| Tipo | Mecanismo | Subtipos |\n|---|---|---|\n| A | compressão | A0 menor; ==A1 cunha (um platô)==; ==A2 split/pincer (dois platôs)==; ==A3 explosão incompleta (um platô + muro posterior)==; ==A4 explosão completa (dois platôs + muro posterior)== |\n| B | banda de tensão | B1 Chance óssea, B2 posterior ligamentar, B3 hiperextensão |\n| C | translação | |\n\n- O que separa A1/A2 de A3/A4: ==fratura da parede (muro) posterior==.\n- Modificadores: neurológico (N0 a NX) e casos (M1 CLP indeterminado, M2 comorbidade).\n\n> **Na prova:** A1/A2 × A3/A4 = ==fratura da parede posterior==",
+  "correta": "**Parede posterior.**\n- A3 e A4 são explosões.\n- Muro posterior roto.",
   "incorretas": {
-   "B": "A fratura de UM platô distingue A1 de A2 e A3 de A4 DENTRO de cada par, mas não separa os pares entre si. Tanto a A1 quanto a A3 acometem um só platô; o que as diferencia é o muro posterior.",
-   "C": "A fratura dos DOIS platôs caracteriza a A2 (padrão em pinça, com muro íntegro) e a A4 (explosão completa, com muro fraturado). De novo, é um critério que opera dentro de cada par, e não entre eles.",
-   "D": "A lesão do complexo ligamentar posterior não subdivide o tipo A: ela define o TIPO B, a lesão da banda de tensão. Um tipo A, por definição, tem a banda de tensão preservada."
+   "B": "**Um platô.**\n- Separa A1 de A2, e A3 de A4.",
+   "C": "**Dois platôs.**\n- A2 e A4.",
+   "D": "**CLP.**\n- Define tipo B."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 48"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0238": {
-  "conceito": "A avaliação radiográfica da fratura do **calcâneo** usa um conjunto de incidências, e cada uma responde a uma pergunta.\n\nO **perfil** mostra o corpo e permite medir os dois ângulos clássicos: o de Böhler (formado entre a linha que une a borda superior da tuberosidade ao ápice da faceta posterior e a linha que vai desse ápice ao processo anterior; normal entre 20 e 40 graus, e a sua diminuição indica colapso da faceta posterior) e o ângulo crucial de Gissane (entre 100 e 130 graus, aumentando quando a faceta posterior afunda).\n\nA incidência **axial de Harris** mostra a tuberosidade e responde pela largura, pelo encurtamento e pelo desvio em varo do retropé.\n\nE a incidência de **Broden** foi descrita especificamente para uma coisa: avaliar a faceta posterior da subtalar, que é a articulação que determina o prognóstico dessas fraturas; ela é acometida em cerca de 75% dos casos, e o degrau residual nela é o principal preditor de artrose subtalar sintomática. A técnica: paciente em decúbito dorsal, perna em rotação interna de 15 a 20 graus, com o raio centrado no seio do tarso e angulado em sentido cefálico em quatro incidências sucessivas (40, 30, 20 e 10 graus), que \"varrem\" a faceta posterior de posterior para anterior.\n\nHistoricamente ela era o exame pré-operatório; hoje o seu papel principal é intraoperatório, para conferir a redução da faceta posterior sob radioscopia, já que a tomografia substituiu-a no planejamento. Os cortes coronais mostram a faceta posterior e o sustentáculo (o \"fragmento constante\", que permanece preso ao ligamento deltoide e serve de referência para a redução), e é sobre eles que se apoia a classificação de Sanders, que conta o número de fragmentos articulares e prediz o resultado.",
-  "correta": "D. A incidência de BRODEN é indicada para avaliar a INTEGRIDADE DA FACETA ARTICULAR POSTERIOR da subtalar (a articulação que determina o prognóstico da fratura do calcâneo), hoje usada sobretudo para conferir a redução no intraoperatório.",
+  "conceito": "### Fraturas do tarso\n| Osso | Frequência |\n|---|---|\n| ==calcâneo== | ==cerca de 60%== das fraturas do tarso; 1 a 2% de todas as fraturas |\n| tálus | segundo; colo é o local típico |\n| navicular | estresse em atletas, avulsões |\n| cuboide | quebra-nozes (nutcracker) |\n| cuneiformes | raros |\n\n### Calcâneo\n- Carga axial: queda de altura, acidente automobilístico.\n- Associações: ==coluna lombar== (10%), fratura contralateral, planalto tibial.\n- Classificação: ==Sanders== (TC coronal); Essex-Lopresti (língua × depressão articular).\n- Ângulo de Böhler (normal 20 a 40°) diminuído; Gissane aumentado.\n\n### Incidências do calcâneo\n| Incidência | Avalia |\n|---|---|\n| perfil | ângulos de Böhler e Gissane, altura |\n| axial (Harris) | largura, varo da tuberosidade, sustentáculo |\n| ==Broden== (rotação interna 40°, raio 10 a 40° cefálico) | ==faceta posterior da subtalar== (congruência intraoperatória) |\n| AP/oblíqua do pé | calcaneocuboide, anterior |\n| TC | Sanders (padrão-ouro) |\n\n> **Na prova:** Broden = ==faceta posterior da subtalar==",
+  "correta": "**Faceta posterior da subtalar.**\n- Série com angulações crescentes.\n- Controle intraoperatório.",
   "incorretas": {
-   "A": "O sustentáculo do tálus é mais bem avaliado nos cortes CORONAIS da tomografia, onde ele aparece como o 'fragmento constante', que permanece preso ao ligamento deltoide e serve de referência para a redução.",
-   "B": "A faceta articular ANTERIOR da subtalar não é o alvo da incidência de Broden, que foi descrita justamente para varrer a faceta POSTERIOR, a maior das três e a que determina o prognóstico.",
-   "C": "A perda de altura é medida no PERFIL, pelos ângulos de Böhler e de Gissane, e o aumento da largura, na incidência AXIAL de Harris. A de Broden não avalia nenhum dos dois."
+   "A": "**Sustentáculo.**\n- Axial de Harris.",
+   "B": "**Faceta anterior.**\n- Não é o foco do Broden.",
+   "C": "**Altura e largura.**\n- Perfil e axial."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 66"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0239": {
-  "conceito": "A **fratura do enforcado** é a espondilolistese traumática do áxis, definida pela fratura bilateral da pars interarticularis de C2, a ponte óssea entre as facetas articulares superior e inferior, particularmente delgada nesse nível porque o áxis faz a transição entre a coluna cervical alta, de arquitetura rotatória, e a baixa. Rompida a pars dos dois lados, o corpo de C2 com o odontoide se separa do arco posterior e desliza para a frente sobre C3.\n\nO mecanismo clínico atual não é o do enforcamento judicial (distração), e sim a hiperextensão com carga axial: o rosto contra o painel ou o para-brisa, o mergulho em água rasa, a queda com impacto frontal.\n\nA classificação de **Levine e Edwards** organiza os padrões e comanda a conduta:\n\n- **Tipo I**: desvio menor que 3 mm, estável, colar rígido.\n- **Tipo II**: desvio e angulação significativos, por extensão e compressão seguidas de flexão, tratado com redução e halo ou fixação.\n- **Tipo IIA**: angulação grande com pouco desvio, por flexão-distração — e aqui a armadilha capital: a tração é proibida, porque agrava a distração; a redução se faz por extensão e compressão axial.\n- **Tipo III**: com luxação facetária bilateral C2-C3, irredutível por tração e cirúrgico.\n\nE um fato que sempre surpreende: apesar do nome e do aspecto radiográfico, essa fratura raramente cursa com déficit neurológico — o canal medular é amplo em C2 (a regra dos terços de Steel: um terço para o odontoide, um terço para a medula, um terço de espaço livre) e o afastamento dos fragmentos tende a descomprimir o canal.\n\nA maioria é tratada sem cirurgia, com colar ou halo; opera-se o irredutível, o muito angulado e o com lesão discoligamentar de C2-C3.",
-  "correta": "C. A fratura do enforcado ocorre na PARS INTERARTICULARIS de C2, bilateralmente, separando o corpo e o odontoide do arco posterior, que permanece no lugar.",
+  "conceito": "### Fratura do enforcado (Levine e Edwards)\n| Tipo | Achado | Mecanismo | Tratamento |\n|---|---|---|---|\n| I | desvio < 3 mm, sem angulação | hiperextensão + carga axial | colar |\n| ==II== | ==translação > 3 mm e angulação== | ==extensão + compressão== seguida de flexão de rebote | tração em extensão + halo |\n| IIA | ==angulação sem translação== | flexão-distração | ==não tracionar==; halo em leve extensão/compressão |\n| III | II + luxação facetária C2-C3 | flexão-compressão | cirurgia |\n\n### Local\n- Fratura bilateral da ==pars interarticularis== de C2 (istmo entre facetas superior e inferior).\n- Canal se alarga com o desvio: déficit neurológico raro.\n\n> **Na prova:** enforcado = ==pars interarticularis== de C2",
+  "correta": "**Pars interarticularis.**\n- Bilateral.\n- Espondilolistese de C2.",
   "incorretas": {
-   "A": "O pedículo é uma estrutura vizinha, mas a fratura do enforcado é definida pelo traço na PARS, a ponte entre as facetas superior e inferior. Traços que se desviam para o pedículo ou para o corpo geram variantes atípicas, com maior risco de comprometer o forame da artéria vertebral.",
-   "B": "O corpo vertebral de C2 é acometido nas fraturas do odontoide tipo III de Anderson e D'Alonzo, que se estendem ao osso esponjoso do corpo, lesão de bom prognóstico e mecanismo distinto.",
-   "D": "O processo odontoide é a sede de outra família de fraturas, classificada por Anderson e D'Alonzo em três tipos. A fratura do enforcado poupa o odontoide, que permanece solidário ao corpo de C2."
+   "A": "**Pedículo.**\n- Termo impreciso; o local é a pars.",
+   "B": "**Corpo.**\n- Variante atípica.",
+   "D": "**Odontoide.**\n- Outra fratura."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 47"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0240": {
-  "conceito": "Uma ferida cutânea próxima a uma fratura articular levanta a pergunta que muda todo o tratamento: existe comunicação entre a articulação e o meio externo? Se existir, trata-se de uma **artrotomia traumática** (uma fratura exposta articular), e a conduta passa a ser desbridamento cirúrgico, lavagem articular e antibioticoterapia, sob pena de artrite séptica. Se não existir, uma ferida superficial é tratada localmente.\n\nO problema é que feridas pequenas, puntiformes ou já cobertas por coágulo não respondem à inspeção. A manobra clássica para responder é o **teste de carga salina** (saline load test): puncionar a articulação em um ponto distante da ferida, aspirar o hemartrose e injetar soro fisiológico sob pressão, observando se há extravasamento pelo ferimento. Extravasou, há comunicação.\n\nDois detalhes técnicos determinam a confiabilidade do teste e são frequentemente ignorados:\n- O **volume**: estudos mostraram que volumes pequenos produzem muitos falsos negativos, e que no joelho são necessários cerca de 155 mL para atingir 95% de sensibilidade, muito acima dos 50 a 60 mL habitualmente usados na prática\n- O local da punção deve ser **distante** da ferida, para que o líquido percorra a articulação antes de encontrar o defeito capsular\n\nVale a nota honesta de atualização: a **tomografia** vem se mostrando superior ao teste de carga salina para esse diagnóstico, porque detecta ar intra-articular (um sinal direto de comunicação com o meio externo) com sensibilidade alta e sem procedimento invasivo. Onde a tomografia está disponível e o quadro permite, ela tornou-se para muitos o exame de escolha.\n\nO que a alternativa D do enunciado propõe, porém, é diferente e não funciona: verificar se o **derrame** comunica-se com o exterior não é o que a tomografia mostra, o que ela mostra é o ar que entrou.",
-  "correta": "C. Aspirar o derrame e injetar soro fisiológico observando a saída pelo ferimento é o teste de carga salina, a manobra clássica para diagnosticar a artrotomia traumática, lembrando que a punção deve ser feita longe da ferida e com volume generoso, sob pena de falso negativo.",
+  "conceito": "### Artrotomia traumática (fratura exposta oculta)\n- Ferida perto da articulação: há comunicação?\n\n### Teste de carga salina\n- ==Injetar soro fisiológico== na articulação (por punção longe da ferida) e observar ==saída pela ferida==.\n- Joelho: ==cerca de 155 a 175 mL== para sensibilidade de 95%; azul de metileno pode ajudar.\n- ==TC com ar intra-articular== é alternativa sensível (ar na articulação = comunicação).\n\n### Conduta se positivo\n- Tratar como fratura exposta: antibiótico, ==lavagem e desbridamento no centro cirúrgico==.\n\n> **Na prova:** fratura exposta oculta da patela = ==aspirar e injetar soro== para ver se sai pela ferida",
+  "correta": "**Injetar soro e observar saída.**\n- Teste de carga salina.\n- Confirma comunicação.",
   "incorretas": {
-   "A": "Explorar e desbridar no pronto-socorro é inadequado por duas razões: a exploração cega de uma ferida pequena pode aprofundar a contaminação, empurrando detritos para dentro da articulação, e o desbridamento de uma fratura exposta articular deve ser feito em centro cirúrgico, com condições de lavagem articular ampla e sob visão adequada.",
-   "B": "A injeção de contraste pela própria lesão (fistulografia) segue o caminho contrário ao que se quer: empurra material de fora para dentro, com risco de introduzir contaminação na articulação, e tem baixa acurácia porque o contraste pode não percorrer um trajeto tortuoso e ocupado por coágulo.",
-   "D": "A tomografia é de fato útil e, na literatura recente, superior ao teste de carga salina, mas pelo achado de AR INTRA-ARTICULAR, sinal direto de comunicação com o exterior, e não por demonstrar que o derrame se comunica com o meio externo, que é o que a alternativa propõe e não é o que o exame mostra."
+   "A": "**Desbridar no PS.**\n- Deve ser no centro cirúrgico.",
+   "B": "**Contraste pela lesão.**\n- Contamina e não é o método.",
+   "D": "**TC do derrame.**\n- TC busca ar intra-articular; a banca preferiu o teste salino."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 59"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0241": {
-  "conceito": "A haste intramedular **retrógrada** é uma opção consagrada para a fixação da fratura da extremidade distal do fêmur, mas seu uso pressupõe uma condição importante: a haste, por si só, não consegue reduzir ou fixar diretamente uma superfície articular fragmentada. Ela estabiliza o eixo e o comprimento do osso, mas depende de a articulação já estar reconstruída (ou reconstruível separadamente, com parafusos, antes da passagem da haste) para funcionar bem.\n\nNa classificação AO, o tipo 33-C descreve as fraturas **articulares completas**, em que toda a superfície articular está separada da diáfise, ao contrário dos tipos A (extra-articulares) e B (articulares parciais, com uma porção da superfície ainda contígua à diáfise).\n\nQuando essa fratura articular completa (tipo C) é tratada apenas com a haste, sem uma reconstrução articular direta prévia, a incongruência da superfície de carga permanece sem correção. Por isso, o uso isolado da haste intramedular é contraindicado nesse padrão, sendo necessária primeiro a fixação da própria fratura articular (tipicamente com parafusos interfragmentários) antes ou em conjunto com a passagem da haste pelo canal medular.",
-  "correta": "D. O tipo 33-C1, por ser uma fratura articular completa, exige reconstrução direta da superfície articular antes (ou em conjunto com) qualquer fixação intramedular, o uso isolado da haste, sem esse passo, é contraindicado.",
+  "conceito": "### Fêmur distal e lesões ligamentares\n- Associação ==incomum== (cerca de 10 a 20% em séries com RM), diferente do planalto tibial.\n- Ligamento mais acometido: ==LCA== (especialmente em fraturas intercondilares/Hoffa e alta energia).\n- Exame sob anestesia após a fixação; tratar em segundo tempo.\n\n### Classificação AO 33\n| Tipo | Padrão |\n|---|---|\n| A | extra-articular |\n| B | unicondilar (B3 = ==Hoffa==, coronal) |\n| C | bicondilar |\n\n### Tratamento\n- Placa bloqueada lateral ou haste retrógrada; dupla placa em cominução medial/idosos.\n- Hoffa: parafusos anteroposteriores.\n\n### Haste retrógrada no fêmur distal\n| Padrão | Haste |\n|---|---|\n| 33A (extra-articular) | ==boa indicação== (A2, A3) |\n| 33B (unicondilar) | ==não== (haste não fixa o côndilo; parafusos/placa) |\n| 33C1 (articular simples) | possível após ==parafusos de tração== |\n| 33C3 (cominução articular) | placa |\n\n> **Na prova:** a banca considerou contraindicada no ==33C1== (veja o alerta)",
+  "correta": "**33C1 (gabarito).**\n- Resposta oficial.\n- Ver alerta sobre os unicondilares.",
   "incorretas": {
-   "A": "O tipo 33-A2 é extra-articular (uma fratura simples da diáfise distal, sem envolvimento articular), um padrão ideal para haste intramedular isolada, não contraindicado.",
-   "B": "O tipo 33-A3 também é extra-articular (padrão cominuído), igualmente favorável ao uso da haste intramedular isolada, sem a limitação articular do tipo C.",
-   "C": "O tipo 33-B2 é articular parcial (ainda mantém uma porção da superfície articular contígua à diáfise), um cenário tecnicamente diferente do C1, embora também exija atenção específica à porção articular fraturada."
+   "A": "**33A2.**\n- Extra-articular: boa indicação.",
+   "B": "**33A3.**\n- Extra-articular cominuta: haste possível.",
+   "C": "**33B2.**\n- Unicondilar medial; a haste não fixa, mas a banca não aceitou."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "alerta": "Na prática, as fraturas unicondilares (33B) são as que não se tratam com haste, enquanto a 33C1 pode receber haste retrógrada após fixar o bloco articular com parafusos de tração. A banca indicou C1; a alternativa C seria defensável.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 57"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0242": {
-  "conceito": "O **índice de Garden** (ângulo de alinhamento de Garden) é o instrumento clássico para aferir a qualidade da redução nas fraturas do colo do fêmur tratadas com osteossíntese, e a redução é o fator controlável mais importante do prognóstico.\n\nEle se apoia no alinhamento do trabeculado ósseo: mede-se o ângulo entre o eixo do trabeculado compressivo primário da cabeça femoral e o eixo do trabeculado medial da diáfise. Na incidência em frente, o valor normal é de cerca de 160 graus; no perfil, de cerca de 180 graus. A faixa aceitável, em ambas as incidências, é de **160 a 180 graus**, e a existência de um limite inferior e de um superior tem justificativa biológica precisa:\n\n- **Abaixo de 160 graus**: a redução está em varo. Perde-se o apoio cortical inferomedial (o calcar), a fratura fica sujeita a forças de cisalhamento, e o resultado é colapso, cut-out do implante e falha da síntese.\n- **Acima de 180 graus**: há valgo excessivo. A angulação forçada tensiona e pode ocluir os vasos retinaculares posterossuperiores (ramos da circunflexa femoral medial, principal fonte de irrigação da cabeça), aumentando o risco de osteonecrose.\n\nO outro instrumento de aferição são as **linhas de Lowell**: os contornos da cabeça e do colo formam curvas tangentes que se encontram num \"S\" liso; qualquer degrau ou cruzamento abrupto denuncia desvio residual, e o método tem a vantagem de dispensar medidas angulares e funcionar em qualquer incidência.\n\nVale lembrar o contexto: no idoso, a fratura desviada do colo (Garden III e IV) tem indicação preferencial de artroplastia, e a discussão sobre a qualidade da redução se aplica sobretudo às fraturas não desviadas e às do adulto jovem, em que se tenta preservar a cabeça.",
-  "correta": "D. No perfil, como em frente, o índice de Garden aceitável está entre 160 E 180 GRAUS, abaixo disso há varo, com risco de colapso e falha da síntese; acima, valgo excessivo, com risco de osteonecrose.",
+  "conceito": "### Avaliação da redução no colo do fêmur\n| Índice | Critério | Aceitável |\n|---|---|---|\n| ==Garden (alinhamento trabecular)== | AP: trabéculas compressivas × cortical medial da diáfise; perfil: trabéculas × eixo do colo | ==AP 160 a 180°==; perfil 180° (± 20) |\n| Lowell | curvas em S/C das corticais (cabeça-colo) | contorno contínuo |\n| ângulo cervicodiafisário | | 130 a 135° |\n\n- Redução em ==valgo leve== é aceitável; varo ou retroversão aumenta falha.\n- Fora da faixa: risco de pseudartrose e necrose.\n\n> **Na prova:** Garden no perfil = ==160 a 180°== (ideal 180°)",
+  "correta": "**160 a 180°.**\n- Perfil ideal 180°.\n- Retroversão reduz o valor.",
   "incorretas": {
-   "A": "A faixa de 30 a 60 graus não corresponde a nenhum parâmetro de redução do colo femoral. Valores dessa ordem descreveriam uma desorganização completa do alinhamento trabecular.",
-   "B": "60 a 90 graus também está muito distante dos valores normais do alinhamento trabecular, que giram em torno de 160 graus em frente e 180 no perfil.",
-   "C": "120 a 160 graus inclui uma faixa francamente em VARO (abaixo de 160 graus), que é exatamente a configuração associada a colapso, cut-out e falha da osteossíntese."
+   "A": "**30 a 60°.**\n- Sem relação.",
+   "B": "**60 a 90°.**\n- Sem relação.",
+   "C": "**120 a 160°.**\n- Retroversão excessiva."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 52"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0243": {
   "conceito": "O **cisalhamento vertical** (o padrão de lesão do anel pélvico em que a hemipelve se desloca cefalicamente em relação ao sacro, rompendo completamente a estabilidade vertical do anel) deixa uma marca radiográfica indireta e bastante específica: a **fratura do processo transverso de L5**.\n\nIsso ocorre porque o ligamento **iliolombar** conecta o processo transverso de L5 à crista ilíaca, e quando a hemipelve se desloca cefalicamente com força suficiente para romper toda a estabilidade vertical do anel, esse mesmo deslocamento traciona o ligamento iliolombar, que por sua vez avulsiona um pequeno fragmento ósseo do processo transverso de L5 antes de se romper (ou permanecer tracionado).\n\nEncontrar esse achado na radiografia simples é um sinal indireto valioso de instabilidade vertical grave, mesmo quando o próprio traço de fratura da pelve não deixa isso evidente à primeira vista, e reforça a necessidade de investigação tomográfica completa e de estabilização cirúrgica rigorosa nesse padrão de lesão.",
