@@ -2990,99 +2990,100 @@
   "conferido": false
  },
  "mao-0257": {
-  "conceito": "Sunderland detalhou a axonotmese de Seddon em três graus, seguindo a ordem em que as camadas se rompem, de dentro para fora: axônio, endoneuro, perineuro. Grau II é só o axônio; III acrescenta o endoneuro; IV acrescenta o perineuro. Grau I é a neuropraxia e grau V a neurotmese.",
-  "correta": "O grupo III é a axonotmese com lesão do endoneuro e preservação do perineuro. O fascículo continua íntegro como unidade, mas o tubo endoneural que guiava cada axônio se perdeu: os axônios em regeneração podem trocar de tubo dentro do mesmo fascículo e chegar a um alvo que não é o seu. Por isso a recuperação existe, mas é parcial e imprevisível, e por isso a reeducação sensitiva tem papel real nesse grau, ensinando o cérebro a reinterpretar o que chega.",
+  "conceito": "### Classificação de Sunderland (e Seddon)\n| Sunderland | Estrutura lesada | Seddon | Prognóstico |\n|---|---|---|---|\n| I | bloqueio de condução, mielina | neuropraxia | recuperação completa em dias a semanas |\n| II | axônio (endoneuro íntegro) | axonotmese | completa (cerca de 1 mm/dia) |\n| III | axônio + endoneuro | axonotmese | parcial, imprevisível |\n| ==IV== | ==axônio + endoneuro + perineuro== (só epineuro íntegro) | axonotmese | ==neuroma em continuidade; exige ressecção e enxerto== |\n| V | secção completa (epineuro) | neurotmese | só com reparo |\n| VI (Mackinnon) | lesão mista em fascículos diferentes | | variável |\n\n### Sinal de Tinel\n- Avança ao longo do nervo na regeneração (graus II e III); fica **estacionário** no grau IV (neuroma).\n\n### Regeneração\n- Cerca de **1 mm/dia** (1 polegada por mês).\n- Placa motora degenera após **12 a 18 meses** de denervação.\n\n> **Na prova:** Sunderland III = ==lesão do endoneuro com perineuro preservado==",
+  "correta": "**Endoneuro lesado, perineuro íntegro.**\n- O fascículo persiste, mas o tubo endoneural se perde.\n- A recuperação é parcial e imprevisível.",
   "incorretas": {
-   "A": "A neuropraxia é o grau I: bloqueio de condução por desmielinização focal, sem degeneração walleriana, com recuperação completa em dias a semanas.",
-   "B": "A neurotmese é o grau V: secção completa do nervo, com perda inclusive do epineuro.",
-   "C": "Essa é a descrição do grau IV, em que também o perineuro se rompe e se forma neuroma em continuidade, o nervo parece contínuo por fora e está desorganizado por dentro.",
-   "E": "Lesão apenas mielínica com endoneuro preservado descreve o grau I ou, no máximo, o II, e o II é definido por lesão axonal, não mielínica."
+   "A": "**Grau I.**\n- Bloqueio de condução sem degeneração axonal.",
+   "B": "**Grau V.**\n- Secção completa, inclusive do epineuro.",
+   "C": "**Grau IV.**\n- Perineuro também rompido, neuroma em continuidade.",
+   "E": "**Grau I ou II.**\n- Lesão só mielínica não é o grau III."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0258": {
-  "conceito": "O carpo tem duas fileiras de quatro ossos. A proximal articula-se com o rádio e com o disco articular; a distal, com os metacarpos.",
-  "correta": "A fileira proximal é escafoide, semilunar e piramidal, mais o pisiforme, que é um sesamoide dentro do tendão do flexor ulnar do carpo e por isso costuma ser contado à parte. A fileira distal é trapézio, trapezoide, capitato e hamato. Vale guardar o que essa divisão significa mecanicamente: a fileira proximal não tem tendão inserido nela e por isso é chamada de segmento intercalado, ela se move por consequência do que acontece nas fileiras vizinhas, e é essa condição que a torna vulnerável às instabilidades.",
+  "conceito": "### Ossos do carpo\n| Fileira | Ossos (radial → ulnar) |\n|---|---|\n| ==proximal== | ==escafoide, semilunar, piramidal== (+ pisiforme, sesamoide no FUC) |\n| distal | trapézio, trapezoide, capitato, hamato |\n\n- Mnemônico: \"**E**le **S**empre **P**ede **P**ão, **T**orrada, **T**rigo, **C**afé e **H**ortelã\".\n\n### Fileira proximal: segmento intercalado\n- Sem inserções tendíneas; move-se pelas fileiras vizinhas e ligamentos.\n- Escafoide faz a ponte entre as fileiras (elo mecânico).\n- Vulnerável às instabilidades (DISI, VISI).\n\n### Colunas de Navarro e Taleisnik\n| Coluna | Ossos |\n|---|---|\n| lateral (móvel) | escafoide, trapézio, trapezoide |\n| central (flexoextensão) | semilunar, capitato, hamato |\n| medial (rotação) | piramidal, pisiforme |\n\n> **Na prova:** fileira proximal = ==escafoide, semilunar e piramidal==.",
+  "correta": "**Escafoide, semilunar e piramidal.**\n- São os ossos que articulam com o rádio e o disco.\n- O pisiforme é sesamoide, contado à parte.",
   "incorretas": {
-   "A": "Trapézio, trapezoide, capitato e hamato são exatamente a fileira distal.",
-   "B": "Mistura dois ossos de cada fileira.",
-   "C": "O escafoide está certo, mas trapézio e trapezoide são da fileira distal, ainda que o escafoide se articule com eles na articulação escafotrapézio-trapezoide.",
-   "E": "Escafoide e semilunar estão certos, mas o hamato é da fileira distal; o que falta é o piramidal."
+   "A": "**Fileira distal.**\n- Trapézio, trapezoide, capitato e hamato.",
+   "B": "**Mistura fileiras.**\n- Dois de cada.",
+   "C": "**Trapézio e trapezoide são distais.**\n- Só o escafoide está certo.",
+   "E": "**Hamato é distal.**\n- Falta o piramidal."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0259": {
-  "conceito": "A luxação radiocárpica pura é rara e frequentemente vem acompanhada de fratura de uma das margens do rádio, o que muda o tratamento. Dumontier separou os casos exatamente por esse critério.",
-  "correta": "A classificação de Dumontier tem dois tipos. Tipo I é a luxação puramente ligamentar, sem fragmento ósseo ou com fragmento mínimo do estiloide radial, aqui o problema é ligamentar, e o tratamento é o reparo dos ligamentos radiocarpais volares. Tipo II tem fragmento grande do estiloide radial, envolvendo mais de um terço da fossa escafoide, e a estabilidade se recupera fixando o osso. A distinção importa porque tratar um tipo I como fratura, apenas fixando o fragmento, deixa o ligamento roto e a instabilidade permanece.",
+  "conceito": "### Luxação radiocárpica\n- Rara, alta energia; ruptura dos ligamentos radiocarpais, frequentemente com fratura marginal.\n\n### Classificação de Dumontier\n| Tipo | Achado | Tratamento |\n|---|---|---|\n| ==I== | ==puramente ligamentar== (sem fragmento ou fragmento mínimo do estiloide) | **reparo dos ligamentos radiocarpais volares** (± fixação temporária) |\n| ==II== | ==fragmento grande do estiloide radial== (> 1/3 da fossa escafoide) | **fixação do fragmento** restaura a estabilidade |\n\n### Complicações\n- Translocação ulnar do carpo (se o tipo I for tratado só como fratura), artrose, rigidez.\n\n### Outros nomes citados\n| Nome | Contexto |\n|---|---|\n| Universal | classificação das fraturas do rádio distal |\n| Kapandji | pinagem intrafocal do rádio distal |\n| Allis | redução da luxação do quadril |\n| Cotton | fratura trimaleolar, teste da sindesmose |\n\n> **Na prova:** classificação da luxação radiocárpica = ==Dumontier==.",
+  "correta": "**Dumontier.**\n- Separa a luxação puramente ligamentar (I) da com fragmento grande do estiloide (II).\n- A distinção define reparar ligamento ou fixar osso.",
   "incorretas": {
-   "A": "A classificação Universal é para fraturas do rádio distal, separando-as por serem articulares ou extra-articulares e desviadas ou não.",
-   "C": "Kapandji dá nome a uma técnica de fixação (a pinagem intrafocal do rádio distal), não a uma classificação.",
-   "D": "Allis é o nome de uma manobra de redução da luxação do quadril.",
-   "E": "Cotton aparece em outro contexto: a fratura de Cotton, trimaleolar do tornozelo, e o teste de Cotton para a sindesmose."
+   "A": "**Fraturas do rádio.**\n- A Universal classifica fraturas.",
+   "C": "**Técnica.**\n- Kapandji é pinagem intrafocal.",
+   "D": "**Quadril.**\n- Allis é manobra de redução.",
+   "E": "**Tornozelo.**\n- Cotton nomeia fratura e teste do tornozelo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0260": {
-  "conceito": "A escala de Sunderland acompanha a ruptura das camadas de dentro para fora. Esta questão é o espelho da anterior sobre o grau III: aqui se acrescenta o perineuro.",
-  "correta": "Lesão do axônio, do endoneuro e do perineuro, com o epineuro preservado, é o grupo IV. Perdido o perineuro, o fascículo deixa de existir como canal: os axônios em regeneração se misturam entre fascículos e crescem em desordem, formando neuroma em continuidade. É o grau em que o nervo parece íntegro por fora e não recupera, e por isso o achado intraoperatório descrito é indicação de ressecar o segmento e enxertar, não de esperar.",
+  "conceito": "### Classificação de Sunderland (e Seddon)\n| Sunderland | Estrutura lesada | Seddon | Prognóstico |\n|---|---|---|---|\n| I | bloqueio de condução, mielina | neuropraxia | recuperação completa em dias a semanas |\n| II | axônio (endoneuro íntegro) | axonotmese | completa (cerca de 1 mm/dia) |\n| III | axônio + endoneuro | axonotmese | parcial, imprevisível |\n| ==IV== | ==axônio + endoneuro + perineuro== (só epineuro íntegro) | axonotmese | ==neuroma em continuidade; exige ressecção e enxerto== |\n| V | secção completa (epineuro) | neurotmese | só com reparo |\n| VI (Mackinnon) | lesão mista em fascículos diferentes | | variável |\n\n### Sinal de Tinel\n- Avança ao longo do nervo na regeneração (graus II e III); fica **estacionário** no grau IV (neuroma).\n\n### Regeneração\n- Cerca de **1 mm/dia** (1 polegada por mês).\n- Placa motora degenera após **12 a 18 meses** de denervação.\n\n> **Na prova:** axônio, endoneuro e perineuro = ==Sunderland IV==.",
+  "correta": "**Grupo IV.**\n- Só o epineuro permanece íntegro.\n- Neuroma em continuidade: ressecar e enxertar.",
   "incorretas": {
-   "A": "O grupo I é a neuropraxia, bloqueio de condução sem lesão do axônio.",
-   "B": "O grupo II é a lesão só do axônio, com endoneuro íntegro guiando a regeneração de volta ao alvo original, recuperação completa.",
-   "C": "O grupo III acrescenta a lesão do endoneuro, mas mantém o perineuro. Recuperação incompleta e imprevisível, sem indicação automática de ressecção.",
-   "E": "O grupo V é a secção completa, com perda também do epineuro."
+   "A": "**Neuropraxia.**\n- Sem lesão axonal.",
+   "B": "**Só axônio.**\n- Endoneuro íntegro, recuperação completa.",
+   "C": "**Perineuro íntegro.**\n- O III não tem indicação automática de ressecção.",
+   "E": "**Secção completa.**\n- O V perde também o epineuro."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0261": {
-  "conceito": "Dormência no quarto e no quinto dedos com fraqueza dos intrínsecos é a assinatura do nervo ulnar. Acordar com o sintoma aponta o mecanismo: dormir com o cotovelo dobrado tensiona o teto do túnel cubital e eleva a pressão sobre o nervo por horas seguidas.",
-  "correta": "O nervo ulnar é o comprometido. A abdução e a adução do dedo mínimo dependem dos interósseos e do abdutor do dedo mínimo, todos inervados pelo ramo profundo do ulnar. Para localizar a lesão sem exame nenhum, teste a sensibilidade do dorso ulnar da mão: alterada, a compressão é alta, no cotovelo, porque o ramo cutâneo dorsal sai do tronco cerca de 8 centímetros acima do punho; preservada, a compressão é baixa, no canal de Guyon.",
+  "conceito": "### Pares nervo–músculo nas síndromes compressivas\n| Síndrome | Nervo | Estrutura compressiva |\n|---|---|---|\n| ==túnel cubital== | ==ulnar== | ==aponeurose entre as cabeças do flexor ulnar do carpo== (arcada de Osborne) |\n| pronador | mediano | cabeças do pronador redondo, lacerto fibroso, arcada do FSD |\n| interósseo anterior | ramo do mediano | pronador, FSD, músculo de Gantzer |\n| interósseo posterior / túnel radial | ramo do radial | ==supinador== (arcada de Frohse), vasos de Henry, ERCC |\n| canal de Guyon | ulnar | ganglio, hâmulo do hamato, músculo anômalo |\n\n### Túnel cubital\n- Segunda neuropatia compressiva mais comum do membro superior.\n- Flexão do cotovelo estira o nervo e aumenta a pressão.\n- Sinais: Froment, Wartenberg, atrofia do 1º interósseo, hipoestesia no dorso ulnar da mão (ramo dorsal, que sai antes do Guyon).\n\n### Tratamento cirúrgico\n- Descompressão **in situ** (com liberação da aponeurose do FUC), transposição anterior, epicondilectomia medial.\n\n### Caso clínico\n- Acordar com parestesia no 4º e 5º dedos: **flexão do cotovelo** durante o sono comprime o ulnar.\n- Fraqueza de abdução e adução do mínimo: interósseos e hipotenares (ulnar).\n- Dorso ulnar da mão alterado = lesão no cotovelo; preservado = Guyon.\n\n> **Na prova:** 4º e 5º dedos + intrínsecos fracos = ==nervo ulnar==",
+  "correta": "**Ulnar.**\n- Sensibilidade do 4º e 5º dedos e intrínsecos do mínimo são do ulnar.\n- Acordar com o sintoma sugere compressão no cotovelo fletido.",
   "incorretas": {
-   "B": "O radial dá déficit de extensão do punho e dos dedos, com alteração sensitiva no dorso radial da mão e na tabaqueira anatômica.",
-   "C": "O mediano cobre polegar, indicador, médio e a metade radial do anelar, e a fraqueza é da oposição do polegar. Território oposto ao descrito.",
-   "D": "O axilar inerva o deltoide e a pele da face lateral do ombro. Nada a ver com a mão.",
-   "E": "O musculocutâneo inerva os flexores do braço e a pele da face lateral do antebraço."
+   "B": "**Extensores.**\n- O radial dá punho caído e alteração dorsal radial.",
+   "C": "**Lado radial.**\n- O mediano cobre polegar a metade do anelar.",
+   "D": "**Ombro.**\n- O axilar inerva o deltoide.",
+   "E": "**Braço e antebraço.**\n- O musculocutâneo não atinge a mão."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0262": {
-  "conceito": "Corda fibrosa palpável na palma que se estende para os dedos, com perda progressiva da extensão e sem dor, em homem de meia-idade: é a apresentação típica da contratura de Dupuytren, e o diagnóstico é clínico.",
-  "correta": "O diagnóstico é doença de Dupuytren. Dois detalhes fecham o quadro e o distinguem do resto: a limitação é da extensão, nunca da flexão (o dedo fecha bem e não abre), e a pele da palma está aderida e retraída sobre a corda, com covinhas. A avaliação se completa com o teste da mesa de Hueston: se a mão não consegue ficar plana sobre a mesa, há indicação de tratamento. Vale procurar também os focos ectópicos que indicam doença agressiva, nódulos de Garrod no dorso das interfalângicas proximais, doença de Ledderhose na planta do pé.",
+  "conceito": "### Epidemiologia da doença de Dupuytren\n| Aspecto | Característica |\n|---|---|\n| sexo | ==masculino, cerca de 10:1== nas séries clássicas (menos em idosos) |\n| etnia | norte-europeus (\"doença dos vikings\"); rara em asiáticos e africanos |\n| idade | aumenta após 40 a 50 anos |\n| herança | autossômica dominante com penetrância variável |\n| lateralidade | bilateral, ==assimétrica== |\n\n### Associações\n- **Diabetes**, **álcool**, **tabagismo**, epilepsia (fenobarbital), HIV, trabalho com vibração, trauma.\n\n### Corticoide\n- Não é causa; a **infiltração de triancinolona** é usada em nódulos dolorosos iniciais.\n\n### Tratamentos\n| Opção | Indicação |\n|---|---|\n| observação | nódulo sem contratura |\n| aponeurotomia por agulha | cordas bem definidas, MF |\n| colagenase | cordas palpáveis (disponibilidade variável) |\n| fasciectomia limitada | padrão |\n| dermofasciectomia com enxerto | recidiva, diátese |\n\n### Diagnóstico clínico\n- Corda palpável da palma para os dedos, **pele aderida** com covinhas, perda progressiva da **extensão** (a flexão é normal), geralmente indolor.\n- **Teste da mesa de Hueston**.\n\n### Diferenciais\n| Condição | Diferença |\n|---|---|\n| dedo em gatilho | travamento e estalido, nódulo doloroso na A1 |\n| De Quervain | dor no estiloide radial |\n| artrose IFP | nódulos de Bouchard, dor articular |\n| túnel do carpo | parestesia noturna, sem corda |\n\n> **Na prova:** corda palmar com perda de extensão em homem = ==doença de Dupuytren==",
+  "correta": "**Dupuytren.**\n- Corda fibrosa da palma aos dedos com perda progressiva da extensão.\n- Homem de meia-idade, diagnóstico clínico.",
   "incorretas": {
-   "A": "A tenossinovite de De Quervain dói sobre o estiloide radial, ao movimentar o polegar, e não produz corda palmar nem limita a extensão dos dedos.",
-   "B": "O dedo em gatilho trava e estala, e o dedo travado se destrava com um salto, quadro dinâmico, com nódulo doloroso na base do dedo, e não uma corda fixa que impede a extensão progressivamente.",
-   "C": "A artrose da interfalângica proximal limita o movimento pela própria articulação, com nódulos de Bouchard e dor, e não por uma faixa fibrosa palmar.",
-   "D": "A síndrome do túnel do carpo é neurológica: parestesia noturna nos dedos radiais, sem espessamento palmar e sem contratura em flexão."
+   "A": "**Estiloide radial.**\n- De Quervain dói no punho, sem corda.",
+   "B": "**Quadro dinâmico.**\n- O gatilho trava e estala.",
+   "C": "**Limitação articular.**\n- A artrose não forma faixa palmar.",
+   "D": "**Neurológica.**\n- O túnel do carpo não causa contratura."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0263": {
-  "conceito": "Nódulo firme e aderido na palma, próximo ao anelar, crescendo devagar em pessoa de meia-idade, é nódulo de Dupuytren até prova em contrário. Ele nasce da fáscia palmar, não do tendão, e a pele por cima costuma estar aderida, com covinhas.",
-  "correta": "O tratamento mais realizado na doença é a fasciectomia, a ressecção cirúrgica do tecido fibroso doente. Vale, porém, uma ressalva sobre este enunciado: nódulo isolado, sem contratura, não é indicação cirúrgica. O que indica operar é a perda de extensão, avaliada pelo teste da mesa de Hueston (a mão não fica plana sobre a mesa) ou por contratura acima de 30 graus na metacarpofalângica, ou qualquer contratura na interfalângica proximal. Nódulo doloroso em fase inicial se trata com observação e, quando incomoda, com infiltração de corticoide.",
+  "alerta": "O enunciado descreve um nódulo palmar sem contratura, e nódulo isolado não costuma ser indicação cirúrgica: a conduta inicial é observação ou infiltração de corticoide se doloroso. O gabarito oficial responde pelo tratamento mais realizado da doença como um todo, a fasciectomia.",
+  "conceito": "### Epidemiologia da doença de Dupuytren\n| Aspecto | Característica |\n|---|---|\n| sexo | ==masculino, cerca de 10:1== nas séries clássicas (menos em idosos) |\n| etnia | norte-europeus (\"doença dos vikings\"); rara em asiáticos e africanos |\n| idade | aumenta após 40 a 50 anos |\n| herança | autossômica dominante com penetrância variável |\n| lateralidade | bilateral, ==assimétrica== |\n\n### Associações\n- **Diabetes**, **álcool**, **tabagismo**, epilepsia (fenobarbital), HIV, trabalho com vibração, trauma.\n\n### Corticoide\n- Não é causa; a **infiltração de triancinolona** é usada em nódulos dolorosos iniciais.\n\n### Tratamentos\n| Opção | Indicação |\n|---|---|\n| observação | nódulo sem contratura |\n| aponeurotomia por agulha | cordas bem definidas, MF |\n| colagenase | cordas palpáveis (disponibilidade variável) |\n| fasciectomia limitada | padrão |\n| dermofasciectomia com enxerto | recidiva, diátese |\n\n### Indicações de cirurgia\n- Contratura da **MF acima de 30°**, **qualquer** contratura da IFP, teste de Hueston positivo.\n- Nódulo isolado: observação; corticoide se doloroso.\n\n> **Na prova:** tratamento mais comum da doença = ==cirurgia de liberação (fasciectomia)== (veja o alerta).",
+  "correta": "**Resposta oficial.**\n- A fasciectomia é o tratamento mais realizado na doença de Dupuytren.\n- Nódulo isolado sem contratura, porém, costuma ser observado (veja o alerta).",
   "incorretas": {
-   "A": "Repouso e imobilização não alteram o curso da doença. Pior: imobilizar em flexão facilita a instalação da contratura que se quer evitar.",
-   "B": "Corticoide infiltrado no nódulo doloroso alivia a dor e pode amolecê-lo, e é opção legítima na fase inicial, mas não é o tratamento mais comum da doença nem resolve a corda instalada.",
-   "C": "Fortalecimento não tem papel: o problema não é fraqueza muscular, é uma fáscia que encurtou.",
-   "D": "A colagenase é alternativa real à cirurgia para cordas bem definidas, dissolvendo o colágeno da corda para ruptura em consultório. Ela existe e funciona em casos selecionados, mas não é o tratamento mais comum."
+   "A": "**Não altera o curso.**\n- Imobilizar em flexão favorece a contratura.",
+   "B": "**Opção inicial.**\n- O corticoide alivia o nódulo doloroso, mas não é o tratamento mais comum.",
+   "C": "**Sem papel.**\n- O problema é a fáscia encurtada, não fraqueza.",
+   "D": "**Alternativa real, menos comum.**\n- A colagenase serve a cordas definidas em casos selecionados."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0264": {
-  "conceito": "Dor no lado radial do punho em puérpera é quadro tão característico que ganhou apelido: punho da mãe, ou tenossinovite do bebê. Levantar a criança repetidamente com o polegar em abdução e o punho em desvio, somado às mudanças hormonais do puerpério, sobrecarrega o primeiro compartimento extensor.",
-  "correta": "O diagnóstico é tenossinovite de De Quervain, estenose do primeiro compartimento dorsal, que contém o abdutor longo e o extensor curto do polegar. A confirmação é clínica, pelo teste de Finkelstein: o polegar é fechado dentro da mão e o punho desviado para ulnar, o que estira os dois tendões e reproduz a dor sobre o estiloide radial. Um detalhe que evita falha de tratamento: em boa parte dos punhos existe um septo separando o extensor curto num subcompartimento próprio, e a infiltração que não alcança esse subcompartimento não resolve.",
+  "conceito": "### Variações do primeiro compartimento extensor\n| Variação | Frequência aproximada | Importância |\n|---|---|---|\n| ==ausência do extensor curto do polegar== | ==cerca de 5%== | |\n| ==septo separando o extensor curto== (subcompartimento) | ==cerca de 20 a 70%== (bem mais em pacientes com De Quervain) | ==causa principal de falha== da infiltração e da liberação |\n| múltiplas bandeletas do abdutor longo | muito comum | confundidas com o extensor curto |\n\n### Tenossinovite de De Quervain\n- Mulheres 30 a 50 anos, pós-parto (\"mãe de bebê\"), uso repetitivo.\n- **Finkelstein** (Eichhoff): polegar na mão, desvio ulnar do punho.\n- **WHAT test:** extensão do punho com abdução resistida do polegar (sensível para o extensor curto).\n\n### Tratamento\n- Órtese em espica, infiltração (cerca de 70 a 80% de sucesso).\n- Liberação cirúrgica: abrir o compartimento **dorsalmente** (evita subluxação volar dos tendões), procurar o **septo**, proteger o **ramo superficial do radial**.\n\n> **Na prova:** puérpera com dor radial do punho = ==tenossinovite de De Quervain==",
+  "correta": "**De Quervain.**\n- Puérpera com dor no primeiro compartimento ao movimentar o polegar.\n- Confirmada pelo Finkelstein.",
   "incorretas": {
-   "A": "A síndrome do túnel do carpo também é frequente na gestação e no puerpério, mas a queixa é de parestesia noturna nos dedos, e não de dor localizada sobre o estiloide radial ao movimentar o polegar.",
-   "B": "A tendinite do bíceps dói no sulco intertubercular, no ombro, e não tem relação com o punho.",
-   "C": "A epicondilite lateral dói no cotovelo, à extensão resistida do punho.",
-   "E": "A síndrome do impacto é do ombro, com dor ao elevar o braço."
+   "A": "**Parestesia noturna.**\n- O túnel do carpo não dói no estiloide radial.",
+   "B": "**Ombro.**\n- A tendinite do bíceps dói no sulco intertubercular.",
+   "C": "**Cotovelo.**\n- A epicondilite dói no epicôndilo lateral.",
+   "E": "**Ombro.**\n- O impacto dói ao elevar o braço."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0265": {
