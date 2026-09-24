@@ -1934,94 +1934,95 @@
   "conferido": false
  },
  "trauma-0169": {
-  "conceito": "A lesão osteocondral do tálus acomete o **domus talar** e tem duas topografias clássicas, com mecanismos diferentes: as lesões **posteromediais**, mais profundas, em taça, frequentemente atraumáticas ou por inversão com flexão plantar, e as **anterolaterais**, mais rasas e em lasca, tipicamente traumáticas, por inversão com dorsiflexão.\n\nA classificação de **Berndt e Harty**, descrita na radiografia simples, tem quatro estágios e organiza a progressão da lesão:\n- **Estágio I**: área de compressão do osso subcondral, com cartilagem íntegra e alteração mínima ou invisível na radiografia\n- **Estágio II**: fragmento parcialmente destacado, ainda preso por uma dobradiça de cartilagem ou de osso\n- **Estágio III**: fragmento completamente destacado, mas ainda posicionado sobre o seu leito, sem desvio\n- **Estágio IV**: fragmento destacado e deslocado, livre dentro da articulação (corpo livre)\n\nLoomer acrescentou o estágio V, o cisto subcondral, identificável apenas na tomografia.\n\nA leitura terapêutica que decorre disso é direta: os estágios I e II, e o III **medial** em paciente pouco sintomático, são candidatos ao tratamento conservador, descarga, imobilização e observação, com resultados razoáveis sobretudo na criança e no adolescente. Os estágios III **lateral** e IV, e qualquer lesão com corpo livre, dor persistente ou bloqueio mecânico, são cirúrgicos.\n\nA técnica depende do tamanho: lesões menores que cerca de 1,5 cm² respondem bem ao desbridamento com microfraturas artroscópicas; lesões maiores, císticas ou que falharam à microfratura pedem procedimentos de restauração, enxerto osteocondral autólogo (mosaicoplastia, OATS), transplante de aloenxerto ou implante de condrócitos.\n\nA ressonância é o exame que estadia com precisão e detecta o edema ósseo e a instabilidade do fragmento.",
-  "correta": "C. O fragmento COMPLETAMENTE DESTACADO, mas ainda posicionado sobre o seu leito e sem desvio, corresponde ao ESTÁGIO III de Berndt e Harty.",
+  "conceito": "### Lesão osteocondral do tálus\n| Local | Mecanismo | Forma |\n|---|---|---|\n| ==posteromedial== | inversão + flexão plantar + rotação externa; muitas atraumáticas | profunda, em taça |\n| ==anterolateral== | inversão + dorsiflexão (traumática) | rasa, em lasca (wafer) |\n\n### Berndt e Harty\n| Estágio | Achado |\n|---|---|\n| I | compressão subcondral |\n| II | fragmento parcialmente destacado |\n| ==III== | ==fragmento completamente destacado, no leito (sem desvio)== |\n| IV | fragmento destacado e ==desviado== (corpo livre) |\n\n### Tratamento\n- I-II e III medial: conservador inicial.\n- Falha, III lateral, IV: artroscopia (microfratura < 1 a 1,5 cm²; fixação; enxerto osteocondral em lesões grandes).\n\n> **Na prova:** destacado e no leito = ==Berndt-Harty III==",
+  "correta": "**Estágio III.**\n- Destacado mas no lugar.\n- Sem desvio.",
   "incorretas": {
-   "A": "O estágio I é apenas a compressão do osso subcondral, com a cartilagem íntegra e sem destacamento de fragmento algum, muitas vezes invisível na radiografia e detectável só na ressonância.",
-   "B": "O estágio II é o fragmento PARCIALMENTE destacado, ainda preso por uma dobradiça de cartilagem ou de osso. O que caracteriza o III é o destacamento COMPLETO, com o fragmento ainda no lugar.",
-   "D": "O estágio IV é o fragmento destacado e DESLOCADO, livre dentro da articulação, o corpo livre, que produz bloqueio mecânico e é indicação cirúrgica clara."
+   "A": "**I.**\n- Compressão subcondral.",
+   "B": "**II.**\n- Parcialmente destacado.",
+   "D": "**IV.**\n- Desviado, corpo livre."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0170": {
-  "conceito": "A fratura tipo indentação (impacção) da cabeça femoral é uma lesão associada à luxação do quadril, na qual a cabeça femoral colide com a borda do acetábulo no momento da luxação, criando uma área de impacção focal. Esse padrão é característico da **luxação posterior**, em que a cabeça impacta contra a borda posterior do acetábulo, diferente da luxação anterior e da luxação central, cujos mecanismos de impacto seguem trajetórias diferentes e menos associadas a esse tipo específico de lesão da cabeça femoral.",
-  "correta": "C. A fratura por indentação da cabeça femoral raramente está associada à luxação posterior, a impacção clássica desse tipo de lesão ocorre por outro mecanismo de contato entre a cabeça e o acetábulo.",
+  "conceito": "### Fraturas da cabeça femoral por luxação\n| Tipo | Luxação associada |\n|---|---|\n| ==indentação (impacção)== | ==luxação anterior== (cabeça bate na borda inferior/anterior do acetábulo): impacção superolateral |\n| cisalhamento (Pipkin) | ==luxação posterior== |\n| central | fratura acetabular/luxação central |\n\n### Prognóstico\n- Indentação > 4 mm de profundidade: maior risco de ==artrose pós-traumática==.\n- RM/TC pós-redução.\n\n> **Na prova:** indentação raramente associada à ==luxação posterior==",
+  "correta": "**Luxação posterior.**\n- Gera fraturas por cisalhamento (Pipkin).\n- Indentação é da anterior.",
   "incorretas": {
-   "A": "A luxação central (protrusão acetabular) tem seu próprio padrão de fratura por impacção, distinto do tipo indentação clássico associado a esta questão.",
-   "B": "A luxação anterior também pode se associar a fraturas por impacção da cabeça femoral, em um padrão de contato diferente do posterior.",
-   "D": "A fratura do acetábulo frequentemente acompanha a luxação do quadril e pode coexistir com a fratura por indentação da cabeça femoral."
+   "A": "**Central.**\n- Pode cursar com impacção.",
+   "B": "**Anterior.**\n- Associação típica da indentação.",
+   "D": "**Acetábulo.**\n- Associação possível."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0171": {
-  "conceito": "Lauge-Hansen classifica fraturas do tornozelo pela posição inicial do pé e pela força predominante. Na sequência **supinação-adução**, o estágio I lesiona o complexo ligamentar lateral ou causa fratura transversa infrassindesmótica da fíbula. No estágio II, a força em adução impacta a porção medial do plafond e pode gerar fratura vertical do maléolo medial com depressão/impactação anteromedial. Reconhecer essa lesão articular é importante porque uma fratura medial vertical pode exigir suporte com placa de apoio, não apenas parafuso compressivo.",
-  "correta": "A alternativa B está correta. A depressão medial do plafond ocorre no estágio II da supinação-adução, quando a continuação da adução impacta o tálus contra o plafond medial. É a progressão esperada depois da lesão lateral inicial do estágio I.",
+  "conceito": "### Fratura de Maisonneuve\n- Fratura da ==fíbula proximal== + lesão da ==sindesmose== e da membrana interóssea + lesão medial (deltoide ou maléolo medial).\n- Mecanismo: ==pronação-rotação externa== (Lauge-Hansen PRE estágio IV, Weber C alta).\n- Palpar toda a fíbula em toda entorse com dor medial.\n\n### Lauge-Hansen\n| Mecanismo | Fíbula | Frequência |\n|---|---|---|\n| supinação-rotação externa | espiral no nível da sindesmose (Weber B) | ==a mais comum== |\n| supinação-adução | transversa baixa (Weber A) + medial vertical | |\n| pronação-abdução | transversa/cominuta no nível ou acima | |\n| ==pronação-rotação externa== | ==espiral alta== (Weber C) | Maisonneuve |\n\n### Tratamento\n- Fixar a ==sindesmose== (parafusos ou botão de sutura) com a fíbula reduzida no comprimento e rotação; a fratura proximal da fíbula não se fixa.\n\n### Supinação-adução\n| Estágio | Lesão |\n|---|---|\n| I | ligamentos laterais ou fíbula transversa ==abaixo da sindesmose== |\n| ==II== | ==maléolo medial vertical== + ==impacção do plafond medial== |\n\n- Reduzir a ==impacção medial== e enxertar antes de fixar o maléolo (placa antideslizante).\n\n> **Na prova:** depressão do plafond medial = ==supinação-adução estágio II==",
+  "correta": "**SA II.**\n- Tálus empurra o maléolo medial.\n- Impacção do plafond medial.",
   "incorretas": {
-   "A": "No estágio I da supinação-adução a lesão é lateral: ruptura ligamentar ou fratura transversa distal da fíbula. Ainda não ocorreu impactação medial do plafond.",
-   "C": "Supinação-rotação lateral começa com lesão anteroinferior da sindesmose; não é a sequência cuja adução produz impacto medial do plafond.",
-   "D": "O estágio II de supinação-rotação lateral progride para fratura espiral da fíbula ao nível da sindesmose. A depressão medial por impactação é característica da sequência de adução."
+   "A": "**SA I.**\n- Só lateral.",
+   "C": "**SRE I.**\n- Ligamento tibiofibular anterior.",
+   "D": "**SRE II.**\n- Fíbula espiral."
   },
   "referencias": [
    "Lauge-Hansen classification of ankle fractures. https://assets.super.so/5a7c3653-3126-44d3-b6a1-eac6a37f6a1f/files/f20ff8ee-079d-4f63-ba8c-5640608dc411/Lauge_Hansen.pdf"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0172": {
-  "conceito": "A base do quinto metatarso, na classificação de **Lawrence e Botte**, tem três zonas com mecanismos e prognósticos distintos, e duas delas concentram a maior parte das dúvidas de prova: a fratura de Jones e a fratura por estresse.\n\nA fratura de **Jones** ocorre na zona II, a junção metáfise-diáfise (uma área de vascularização limitada, zona de watershed entre o suprimento nutrício diafisário e o metafisário) e é uma lesão aguda, de início súbito, tipicamente por uma carga em adução/inversão do antepé sobre o retropé fixo. Apesar de aguda, tem alto risco de pseudoartrose justamente pela pobreza vascular local, e por isso é tratada de forma mais agressiva do que uma fratura comum, muitas vezes com fixação cirúrgica já no primeiro episódio em atleta.\n\nJá a fratura **por estresse** verdadeira ocorre na zona III, um pouco mais distal, ao longo da diáfise proximal, não é uma lesão de início súbito, e sim o resultado de sobrecarga repetitiva ao longo do tempo, com o mesmo problema de má vascularização regional prejudicando a consolidação.\n\nA **zona I**, mais proximal que as outras duas, é a tuberosidade, sítio da fratura por avulsão, mecanismo e prognóstico completamente diferentes, de bom resultado com tratamento conservador na imensa maioria dos casos.",
-  "correta": "B. A fratura de Jones ocorre na zona II (junção metáfise-diáfise) e a fratura por estresse verdadeira ocorre na zona III (diáfise proximal, distal à zona de Jones), ambas em região de vascularização limitada.",
+  "conceito": "### Zonas da base do 5º metatarso (Lawrence e Botte)\n| Zona | Local | Mecanismo | Tratamento |\n|---|---|---|---|\n| I | tuberosidade (avulsão, fibular curto/banda lateral da fáscia) | inversão aguda | sintomático, bota |\n| II | ==Jones==: junção metáfise-diáfise (articulação 4º-5º) | adução do antepé | gesso sem carga 6 a 8 semanas ou parafuso (atleta) |\n| ==III== | ==diáfise proximal== (distal aos ligamentos 4º-5º) | ==estresse== | alto risco: ==parafuso intramedular== |\n\n- Zonas II e III: área de ==watershed==, consolidação lenta.\n\n> **Na prova:** Jones = ==zona II==; estresse = ==zona III==",
+  "correta": "**II e III.**\n- Jones na junção metáfise-diáfise.\n- Estresse na diáfise proximal.",
   "incorretas": {
-   "A": "A zona I é a tuberosidade, sítio da fratura por avulsão, um mecanismo agudo e de bom prognóstico, distinto tanto da fratura de Jones quanto da fratura por estresse.",
-   "C": "A fratura de Jones ocorre na zona II, não na zona I (tuberosidade, avulsão), trocar essas zonas inverte mecanismos com prognósticos bem diferentes.",
-   "D": "Não existe zona IV nesta classificação, que descreve apenas as zonas I, II e III da base do quinto metatarso."
+   "A": "**I e II.**\n- Zona I é avulsão.",
+   "C": "**I e III.**\n- Zona I é avulsão.",
+   "D": "**II e IV.**\n- Zona IV não existe."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0174": {
-  "conceito": "O TLICS (Thoracolumbar Injury Classification and Severity Score) pontua a gravidade da lesão toracolombar somando três componentes independentes: a morfologia da fratura (compressão, translação/rotação ou distração), a integridade do complexo ligamentar posterior, e o status neurológico do paciente. A soma final orienta a decisão entre tratamento conservador e cirúrgico, de forma geral, pontuações mais baixas favorecem o tratamento não cirúrgico, e pontuações a partir de determinado limiar (classicamente 4 pontos ou mais) favorecem a cirurgia, com a faixa intermediária exigindo julgamento clínico caso a caso.",
-  "correta": "B. A situação descrita corresponde a uma pontuação de 2 pontos no TLICS.",
+  "conceito": "### TLICS\n| Componente | Categoria | Pontos |\n|---|---|---|\n| morfologia | compressão | 1 |\n| | ==explosão== | ==2== |\n| | translação/rotação | 3 |\n| | distração | 4 |\n| complexo ligamentar posterior | íntegro | 0 |\n| | indeterminado | 2 |\n| | lesado | 3 |\n| neurológico | íntegro | 0 |\n| | raiz | 2 |\n| | medula/cone completa | 2 |\n| | medula/cone incompleta, cauda equina | 3 |\n\n| Soma | Conduta |\n|---|---|\n| ≤ 3 | conservador |\n| 4 | indeterminado |\n| ≥ 5 | cirúrgico |\n\n> **Na prova:** a banca indicou ==2 pontos== (morfologia de explosão) (veja o alerta)",
+  "correta": "**2 pontos.**\n- Valor da explosão (burst).\n- Gabarito oficial.",
   "incorretas": {
-   "A": "1 ponto corresponde a uma lesão com morfologia e demais componentes de menor gravidade do que a pontuação correta desta questão.",
-   "C": "3 pontos representaria uma combinação de componentes mais grave do que a descrita.",
-   "D": "4 pontos já se aproxima do limiar classicamente associado à indicação cirúrgica, mais grave do que a situação descrita."
+   "A": "**1 ponto.**\n- Compressão.",
+   "C": "**3 pontos.**\n- Translação/rotação.",
+   "D": "**4 pontos.**\n- Distração."
   },
-  "geradoEm": "2026-09-21",
+  "alerta": "O enunciado desta questão parece incompleto na prova (não descreve a fratura). O gabarito de 2 pontos corresponde à morfologia de explosão no TLICS.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0176": {
-  "conceito": "O conector transverso (\"crosslink\"), que une os dois trilhos (rods) paralelos de uma instrumentação pedicular, tem como principal função aumentar a **estabilidade rotacional** (torcional) da construção, impedindo que os dois trilhos girem de forma independente um em relação ao outro sob carga axial rotatória. A estabilidade nos planos sagital e coronal, por outro lado, depende principalmente da rigidez dos próprios trilhos e da fixação dos parafusos pediculares, não do conector transverso.",
-  "correta": "D. O dispositivo agrega à instrumentação estabilidade principalmente rotacional.",
+  "conceito": "### Conector transverso (crosslink)\n- Une as duas hastes de uma instrumentação pedicular.\n- Aumenta principalmente a ==rigidez rotacional (torsional)==; pouco efeito em flexoextensão e inclinação lateral.\n- Mais útil em construções ==longas==, instabilidade rotacional (fratura-luxação), após laminectomia ampla.\n\n### Instrumentação posterior\n| Elemento | Função |\n|---|---|\n| parafusos pediculares | fixação nas três colunas |\n| hastes | alinhamento sagital, distração/compressão |\n| ==crosslink== | ==estabilidade rotacional== |\n| parafuso no nível fraturado | aumenta rigidez em construções curtas |\n\n> **Na prova:** crosslink = estabilidade ==rotacional==",
+  "correta": "**Rotacional.**\n- Impede torção das hastes.\n- Útil em construções longas.",
   "incorretas": {
-   "A": "A estabilidade **axial** (contra cargas de compressão/distração ao longo do eixo da coluna) depende principalmente da fixação dos parafusos pediculares e da rigidez dos trilhos, não do conector transverso.",
-   "B": "A estabilidade no plano **sagital** (flexoextensão) é conferida principalmente pelos próprios trilhos longitudinais, não pelo conector transverso entre eles.",
-   "C": "A estabilidade no plano **coronal** (inclinação lateral) também depende primariamente dos trilhos e dos parafusos, sendo a contribuição isolada do conector transverso nesse plano secundária à sua função rotacional."
+   "A": "**Axial.**\n- Carga axial fica com hastes e parafusos.",
+   "B": "**Sagital.**\n- Pouco efeito.",
+   "C": "**Coronal.**\n- Pouco efeito."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0177": {
-  "conceito": "A classificação de **Green** para fraturas do colo dos metacarpos estratifica a lesão conforme o grau de desvio e a estabilidade: o **tipo I** corresponde a fraturas com angulação mínima e sem instabilidade relevante, geralmente passíveis de tratamento conservador (imobilização), o padrão compatível com a fratura de contornos relativamente alinhados observada na radiografia.",
-  "correta": "A. A fratura é classificada por Green como tipo I.",
+  "conceito": "### Fraturas dos metacarpos: avaliação\n| Parâmetro | Aceitável (colo) |\n|---|---|\n| 2º e 3º | angulação até 10 a 15° |\n| 4º | até 30 a 40° |\n| 5º | até 50 a 70° |\n| rotação | ==nenhuma== (tesoura dos dedos) |\n| encurtamento | até 5 mm |\n\n### Classificação de Green\n- Estratifica por ==desvio e estabilidade==: ==tipo I== = alinhada, estável, tratamento ==conservador== (tala/órtese de Galveston); tipos maiores com desvio e instabilidade progressivos, candidatos a fixação.\n\n### Tratamento\n- Instáveis ou rotação: fios intramedulares (bouquet), fios transversos, parafuso intramedular, placa.\n\n> **Na prova:** fratura alinhada da imagem = ==Green tipo I==",
+  "correta": "**Tipo I.**\n- Alinhada e estável.\n- Tratamento conservador.",
   "incorretas": {
-   "B": "O **tipo II** implica maior angulação, porém ainda redutível, um grau de desvio mais acentuado do que o observado na imagem.",
-   "C": "O **tipo III** corresponde a uma fratura instável e de difícil redução, com desvio mais significativo do que o mostrado na radiografia.",
-   "D": "O **tipo IV** envolve cominução e perda óssea, um padrão de lesão mais grave do que a fratura relativamente simples mostrada na imagem."
+   "B": "**II.**\n- Maior desvio.",
+   "C": "**III.**\n- Instável.",
+   "D": "**IV.**\n- Grave."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0178": {
-  "conceito": "A articulação **trapeziometacarpiana** é uma sela biconcava, e a sua estabilidade depende de um conjunto de ligamentos entre os quais um se destaca: o **ligamento oblíquo anterior**, também chamado de ligamento volar do bico (volar beak ligament).\n\nEle vai do tubérculo do trapézio à porção volar e ulnar da base do primeiro metacarpo (exatamente ao \"bico\", beak), e é considerado o estabilizador primário contra a subluxação dorsorradial, sendo também a estrutura cuja degeneração inicia a rizartrose.\n\nEssa anatomia é o que explica a fratura de **Bennett**. O traço oblíquo intra-articular separa justamente o pequeno fragmento volar e ulnar, e esse fragmento **não se desloca**, porque continua preso ao trapézio pelo ligamento oblíquo anterior; quem luxa é todo o resto do metacarpo, tracionado dorsal e radialmente pelo abdutor longo do polegar e rodado em supinação pelo adutor do polegar.\n\nDuas consequências práticas seguem daí:\n- **Técnica**: como o pequeno fragmento está no lugar, a fixação percutânea não precisa capturá-lo, basta reduzir o metacarpo sobre ele e transfixar o primeiro ao segundo metacarpo com fios de Kirschner, o que evita a dissecção de um fragmento minúsculo e o risco de fragmentá-lo\n- **Conceitual**: é a reconstituição da congruência articular, e não a fixação do fragmento em si, que determina o resultado; degraus residuais na sela levam a artrose sintomática precoce numa articulação de altíssima demanda\n\nVale distinguir dos ligamentos citados nas outras alternativas: o dorsorradial é o mais espesso do complexo e ganhou importância recente como estabilizador nas luxações dorsais puras; o intermetacarpal une as bases do primeiro e do segundo metacarpos; e o oblíquo posterior corre pela face dorsoulnar.",
-  "correta": "C. O fragmento menor da Bennett (o 'bico' volar e ulnar da base do primeiro metacarpo) permanece reduzido porque está ancorado ao trapézio pelo LIGAMENTO OBLÍQUO ANTERIOR (volar beak ligament).",
+  "conceito": "### Fratura de Bennett\n- Fratura-luxação intra-articular da base do 1º metacarpo.\n- Fragmento ==volar-ulnar== pequeno fica preso ao trapézio pelo ==ligamento oblíquo anterior== (beak ligament).\n\n### Forças deformantes\n| Músculo | Efeito na diáfise |\n|---|---|\n| ==abdutor longo do polegar== | desvio ==dorsal-radial== e encurtamento |\n| adutor do polegar | adução e ==supinação== da cabeça |\n| extensor longo do polegar | encurtamento |\n\n### Classificação das fraturas da base\n| Tipo | Nome |\n|---|---|\n| intra-articular 2 partes | Bennett |\n| intra-articular cominutiva (Y/T) | ==Rolando== |\n| extra-articular | transversa/oblíqua |\n\n### Tratamento\n- Redução: tração, pronação e abdução com pressão na base.\n- Fixação: fios percutâneos (1º MC ao trapézio ou ao 2º MC) ou parafuso se fragmento grande.\n\n### Ligamentos da trapeziometacarpiana\n| Ligamento | Papel |\n|---|---|\n| ==oblíquo anterior (volar, beak)== | ==segura o fragmento de Bennett== no trapézio |\n| dorsorradial | ==principal estabilizador contra luxação dorsal== (luxação pura) |\n| intermetacarpal | 1º-2º MC |\n| oblíquo posterior | |\n\n> **Na prova:** fragmento de Bennett preso pelo ==oblíquo anterior==",
+  "correta": "**Oblíquo anterior.**\n- Ligamento do bico volar.\n- Mantém o fragmento no trapézio.",
   "incorretas": {
-   "A": "O ligamento dorsorradial é o mais espesso do complexo trapeziometacarpiano e tem papel reconhecido como estabilizador nas luxações dorsais puras da articulação, mas ele se insere na face DORSAL da base, e não no fragmento volar e ulnar da Bennett.",
-   "B": "O ligamento intermetacarpal une as bases do primeiro e do segundo metacarpos. Ele contribui para a estabilidade do conjunto, mas não é o que retém o pequeno fragmento articular junto ao trapézio.",
-   "D": "O ligamento oblíquo posterior corre pela face dorsoulnar da articulação e participa da estabilidade em conjunto com os demais, mas a estrutura ancorada ao 'bico' volar e ulnar (o fragmento da Bennett) é o oblíquo ANTERIOR."
+   "A": "**Dorsorradial.**\n- Estabilizador contra luxação dorsal.",
+   "B": "**Intermetacarpal.**\n- Liga 1º e 2º MC.",
+   "D": "**Oblíquo posterior.**\n- Dorsal, não segura o fragmento."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0179": {
