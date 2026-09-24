@@ -1067,118 +1067,118 @@
   "conferido": false
  },
  "pediatria-0073": {
-  "conceito": "O pé torto congênito é deformidade tridimensional: cavo, aduto, varo e equino. A rotação interna da perna pode acompanhar o desalinhamento do pé e deve ser distinguida de anteversão femoral e de torção tibial idiopática. A avaliação sempre observa patela, eixo transmalleolar e progressão do pé durante a marcha.",
-  "correta": "A alternativa B está correta: a rotação interna dos ossos da perna é associação reconhecida do pé torto congênito. A correção do pé não autoriza automaticamente osteotomia tibial; decide-se pelo impacto funcional após o crescimento.",
+  "conceito": "### Torção tibial externa patológica\n- Normal no adulto: cerca de 20° (ângulo coxa-pé).\n- Aumentada (> 18 a 30°) no adolescente: marcha com pé para fora.\n\n### Associações\n| Condição | Relação |\n|---|---|\n| ==coalizão tarsal== | pé plano rígido, compensação rotacional |\n| anteversão femoral aumentada | síndrome do mau alinhamento (compensação) |\n| mielomeningocele | torção externa |\n| Blount | torção ==interna== |\n\n### Síndrome do mau alinhamento\n- Anteversão femoral + torção tibial externa: dor patelofemoral, instabilidade patelar.\n- Osteotomias derrotativas em casos graves.\n\n### Rotacionais na criança\n| Causa | Idade típica |\n|---|---|\n| metatarso aduto | lactente |\n| torção tibial interna | 1 a 3 anos |\n| anteversão femoral | 3 a 8 anos |\n\n### Torção tibial interna\n- Associada ao ==pé torto congênito== (componente rotacional da deformidade) e à posição intrauterina.\n- Blount também gira a tíbia para dentro.\n- Marcha com pés para dentro de 1 a 3 anos: a maioria corrige sozinha até 4 a 5 anos.\n\n> **Na prova:** rotação interna da perna associa-se ao ==pé torto congênito==",
+  "correta": "**Pé torto congênito.**\n- Torção tibial interna acompanha a deformidade.\n- Também no Blount.",
   "incorretas": {
-   "A": "A alternativa A (plano.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "C": "A alternativa C (tálus vertical.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "D": "A alternativa D (equino.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta."
+   "A": "**Plano.**\n- Não é a associação.",
+   "C": "**Tálus vertical.**\n- Pé em mata-borrão, não torção interna.",
+   "D": "**Equino.**\n- Componente do pé, não torção."
   },
   "referencias": [
    "Clubfoot: Ponseti management. https://pmc.ncbi.nlm.nih.gov/articles/PMC3764299/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0074": {
-  "conceito": "O ângulo metafisodiafisário de Levine-Drennan é utilizado na diferenciação entre genu varo fisiológico e tíbia vara infantil de Blount. A medida é obtida na radiografia anteroposterior e valores maiores aumentam a probabilidade de doença. O trabalho clássico mostrou forte associação de valores superiores a aproximadamente 11 graus com progressão, mas existe zona de sobreposição; por isso, o ângulo não deve ser interpretado isoladamente. Idade, obesidade, bilateralidade, progressão clínica, beaking metafisário, irregularidade da fise e radiografias seriadas são importantes. Além disso, posicionamento e rotação do membro podem alterar medidas. Para prova, deve-se evitar tratar um único valor angular como diagnóstico absoluto.",
-  "correta": "A alternativa A está correta. O ângulo de Levine-Drennan é útil, mas não deve ser considerado isoladamente como prova definitiva de Blount ou como marcador prognóstico infalível. Ele deve ser integrado à evolução clínica e aos demais achados radiográficos.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Ângulo metafisário-diafisário (Levine-Drennan)\n- Entre a linha pelos bicos metafisários e a perpendicular ao eixo da tíbia.\n| Valor | Interpretação |\n|---|---|\n| < 10° | provavelmente fisiológico |\n| 10 a 16° | zona cinzenta, seguir |\n| > 16° | Blount provável |\n\n- ==Pouco confiável isolado==: varia com a rotação do membro e a técnica; combinar com clínica e evolução.\n\n> **Na prova:** ângulo de Levine-Drennan = ==pouco confiável quando usado isoladamente==",
+  "correta": "**Pouco confiável isolado.**\n- Muda com a rotação e a técnica.\n- Interpretar com clínica e seriação.",
   "incorretas": {
-   "B": "A medida não é invariável. Posicionamento e rotação do membro podem influenciar a projeção radiográfica e, consequentemente, a mensuração.",
-   "C": "Embora útil, o ângulo não é um parâmetro prognóstico absoluto ou isoladamente mais preciso que todo o restante da avaliação.",
-   "D": "Valores maiores aumentam a preocupação com progressão para tíbia vara; portanto, um ângulo elevado não representa evolução favorável."
+   "B": "**Varia com a rotação.**\n- Não é invariável.",
+   "C": "**Não o mais preciso.**\n- Complementar.",
+   "D": "**Invertida.**\n- > 11 a 16° sugere doença."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Blount's Disease – Infantile. https://posna.org/physician-education/study-guide/blount-s-disease-infantile",
    "Levine AM, Drennan JC. Physiological bowing and tibia vara. J Bone Joint Surg Am. 1982;64:1158-1163."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0075": {
-  "conceito": "O suspensório de Pavlik mantém o quadril em flexão e permite abdução dinâmica dentro de uma zona segura. O princípio é obter redução concêntrica sem força excessiva. A complicação ortopédica mais temida é osteonecrose da cabeça femoral, e um fator mecânico clássico é abdução excessiva, que aumenta pressão e pode comprometer a vascularização. Hiperflexão excessiva, por outro lado, associa-se mais a neuropraxia do nervo femoral e luxação inferior. O ajuste correto da órtese e o acompanhamento clínico e ultrassonográfico são fundamentais. Em termos práticos, a órtese deve permitir movimento e não funcionar como dispositivo rígido que force o quadril para uma posição extrema.",
-  "correta": "A alternativa C está correta. Abdução forçada ou excessiva durante o tratamento com Pavlik está associada ao risco de osteonecrose/dano da epífise femoral proximal, razão pela qual se deve manter o quadril dentro da zona segura de abdução.",
+  "conceito": "### Suspensório de Pavlik\n| Tira | Função |\n|---|---|\n| anterior | ==flexão== do quadril (100 a 110°), bloqueia a extensão |\n| posterior | ==limita a adução== (não força a abdução) |\n\n- Permite ==flexão e abdução ativas==; ==limita extensão e adução==.\n- Indicação: < 6 meses; controle por ultrassom.\n\n### Complicações\n| Complicação | Causa |\n|---|---|\n| ==necrose avascular== (lesão fisária) | ==abdução forçada== (> 60°) |\n| paralisia do nervo femoral | ==flexão excessiva== |\n| doença do Pavlik (erosão posterior do acetábulo) | quadril luxado mantido sem reduzir |\n| luxação inferior (obturatória) | flexão excessiva |\n\n- Sem redução em 3 a 4 semanas: suspender.\n\n> **Na prova:** Pavlik lesa a fise pela ==abdução forçada==; limita ==extensão e adução==.",
+  "correta": "**Abdução forçada.**\n- Comprime os vasos circunflexos: necrose.\n- Abdução deve ser livre, não forçada.",
   "incorretas": {
-   "A": "Flexão excessiva produz outras complicações importantes, principalmente neuropraxia do nervo femoral e luxação inferior, mas a associação clássica com osteonecrose é a hiperabdução.",
-   "B": "Adução tende a desestabilizar a redução; não é o mecanismo clássico de comprometimento vascular associado à órtese.",
-   "D": "Rotação externa não é o principal parâmetro utilizado para explicar osteonecrose durante uso do suspensório; o fator clássico é abdução excessiva."
+   "A": "**Nervo femoral.**\n- Flexão excessiva.",
+   "B": "**Limitada.**\n- Adução é bloqueada.",
+   "D": "**Não é o mecanismo.**\n- Rotação lateral."
   },
   "referencias": [
    "Developmental dysplasia of the hip. https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/",
    "Developmental Dysplasia of the Hip – Part 1. https://pmc.ncbi.nlm.nih.gov/articles/PMC10708981/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0076": {
-  "conceito": "Na deficiência femoral focal (proximal femoral focal deficiency), a classificação funcional de **Gillespie e Torode** divide os pacientes em dois grandes grupos conforme a possibilidade de reconstrução do quadril:\n- **Grupo A**: quadril **reconstruível**, cabeça femoral presente, relação razoável com o acetábulo, potencial para um fêmur funcional após reconstrução. Esses pacientes são os melhores candidatos ao **alongamento** do membro (associado ou não a osteotomias corretivas), já que a articulação do quadril tem potencial de estabilidade.\n- **Grupo B**: quadril **não reconstruível**, deformidade grave demais para reconstrução articular funcional, sendo mais bem tratados com cirurgias ablativas (como a rotacionplastia) ou adaptação protética, e não com alongamento.\n\nOu seja, é a presença de um quadril reconstruível (grupo A) que torna o alongamento uma opção viável e indicada.",
-  "correta": "A. O alongamento do membro está mais bem indicado no grupo A de Gillespie, no qual o quadril é reconstruível.",
+  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Gillespie (deficiência femoral)\n| Grupo | Achado | Tratamento |\n|---|---|---|\n| ==A== | fêmur curto, ==quadril e joelho funcionais==, pé no nível da tíbia contralateral | ==alongamento== (± epifisiodese) |\n| B | DFFP verdadeira, pé no nível do joelho oposto | Van Nes, Syme, artrodese do joelho + prótese |\n| C | deficiência grave, quase ausência do fêmur | prótese |\n\n> **Na prova:** alongamento na deficiência femoral = ==Gillespie A==",
+  "correta": "**Grupo A.**\n- Quadril e joelho estáveis.\n- Discrepância que o alongamento consegue compensar.",
   "incorretas": {
-   "B": "O grupo B corresponde a quadris não reconstruíveis, nos quais o alongamento não é a melhor opção, prefere-se cirurgia ablativa ou adaptação protética.",
-   "C": "A classificação de Gillespie e Torode define apenas os grupos funcionais A e B para essa finalidade.",
-   "D": "A classificação de Gillespie e Torode define apenas os grupos funcionais A e B para essa finalidade."
+   "B": "**Grave.**\n- Rotacionplastia ou amputação.",
+   "C": "**Muito grave.**\n- Prótese.",
+   "D": "**Não existe.**\n- São três grupos."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0077": {
-  "conceito": "Na artrogripose, a prioridade do membro superior é construir função, e não corrigir cada deformidade radiográfica. Antes de transferências e osteotomias, é necessário **obter mobilidade passiva do cotovelo**, pois o alcance da mão depende de poder posicionar o antebraço em direção à boca, face e tronco. Contratura fixa em extensão impede atividades básicas de alimentação e higiene. A abordagem inicial combina manipulação, órteses, fisioterapia e terapia ocupacional; quando a extensão fixa não cede, liberação posterior de cápsula e alongamento do tríceps podem recuperar arco passivo. Depois, selecionam-se procedimentos para rotação do ombro, punho e polegar conforme a função residual.",
-  "correta": "A alternativa D está correta. O primeiro objetivo no membro superior é obter mobilidade passiva do cotovelo. Sem arco passivo, não há base para restaurar flexão ativa com transferências ou para posicionar a mão funcionalmente. A ordem terapêutica é importante: primeiro liberar o segmento que limita alcance, depois decidir se há indicação de ganho de força ativa, correção de punho ou polegar na palma.",
+  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n### Cotovelo em extensão na artrogripose\n| Procedimento | Objetivo |\n|---|---|\n| capsulotomia posterior + alongamento do tríceps | ganhar flexão passiva |\n| ==Steindler (flexorplastia)== | ==transferência proximal da origem flexora-pronadora== para dar ==flexão ativa== do cotovelo |\n| transferência do tríceps, peitoral, grande dorsal | flexão ativa |\n\n- Ao menos um cotovelo deve fletir para levar a mão à boca; o outro pode ficar estendido para apoio/higiene.\n\n> **Na prova:** Steindler na artrogripose = corrigir ==extensão do cotovelo==",
+  "correta": "**Mobilidade passiva do cotovelo.**\n- Base para levar a mão à boca.\n- Depois, flexão ativa (transferências).",
   "incorretas": {
-   "A": "A rotação medial do ombro pode limitar a mão no espaço e pode ser corrigida em casos selecionados, mas não precede a obtenção de flexão passiva do cotovelo, indispensável para alcance funcional.",
-   "B": "Retirar o polegar da palma melhora pinça e preensão, porém não resolve a incapacidade de levar a mão à boca se o cotovelo permanece rígido em extensão. É objetivo posterior e individualizado.",
-   "C": "Posicionar o punho funcionalmente é relevante para preensão, mas também pressupõe que o membro consiga alcançar o espaço de trabalho. A mobilidade passiva do cotovelo é a prioridade inicial."
+   "A": "**Posterior.**\n- Osteotomia derrotativa do úmero.",
+   "B": "**Posterior.**\n- Polegar na palma.",
+   "C": "**Posterior.**\n- Punho depois do cotovelo."
   },
   "referencias": [
    "Arthrogryposis: review and update. https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/",
    "Arthrogryposis: clinical aspects and treatment strategies. https://pmc.ncbi.nlm.nih.gov/articles/PMC4754365/",
    "Posterior elbow capsulotomy and triceps lengthening. https://pmc.ncbi.nlm.nih.gov/articles/PMC7161729/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0078": {
-  "conceito": "O tratamento da tíbia vara infantil de Blount depende fortemente da idade e do estágio radiográfico. Em crianças pequenas, especialmente abaixo de 3 anos e nos estágios I e II de Langenskiöld, a ortetização com órtese longa de joelho-tornozelo-pé pode ser tentada, sobretudo em doença unilateral. Os melhores resultados são observados quando o tratamento é precoce; obesidade, bilateralidade, instabilidade e atraso no início reduzem a chance de sucesso. Com progressão, idade mais avançada ou estágios maiores, aumenta a indicação de correção cirúrgica. O objetivo é evitar que a sobrecarga medial perpetue a lesão fisária e produza depressão do platô tibial e deformidade multiplanar.",
-  "correta": "A alternativa B está correta. Uma criança de 2 anos e meio, com doença unilateral e Langenskiöld II, encontra-se justamente no grupo em que tratamento ortótico precoce ainda é indicado e pode ser eficaz.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Órtese (KAFO)\n- Indicação: ==< 3 anos==, ==Langenskiöld I-II==, especialmente unilateral.\n- Órtese de apoio com força valgizante, uso diurno na marcha.\n- Sem melhora em cerca de 1 ano ou > 4 anos: ==osteotomia valgizante== da tíbia (hipercorrigir).\n\n> **Na prova:** Blount unilateral aos 2,5 anos, estágio II = ==órtese==",
+  "correta": "**Ortetização.**\n- Criança < 3 anos, estágio precoce.\n- Órtese valgizante na marcha.",
   "incorretas": {
-   "A": "Observação isolada é menos apropriada quando já existe Blount radiográfico estágio II; a oportunidade de ortetização precoce deve ser aproveitada.",
-   "C": "Osteotomia tibial é reservada para progressão, falha de tratamento conservador, apresentação mais tardia ou doença mais avançada; não é a primeira escolha nesse cenário favorável à órtese.",
-   "D": "A deformidade primária da forma infantil está na tíbia proximal. Osteotomia femoral não é a intervenção inicial para um estágio II típico aos 2 anos e meio."
+   "A": "**Blount progride.**\n- Não se observa.",
+   "C": "**Após falha ou > 4 anos.**\n- Não primeira escolha aqui.",
+   "D": "**Deformidade tibial.**\n- Fêmur não é o alvo."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Blount's Disease – Infantile. https://posna.org/physician-education/study-guide/blount-s-disease-infantile"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0079": {
-  "conceito": "A doença de Köhler é uma osteocondrose do navicular tarsal que ocorre tipicamente em crianças pequenas. A faixa etária usual é aproximadamente 4 a 7 anos, com predomínio masculino. O quadro é geralmente unilateral, embora casos bilaterais sejam descritos. A criança apresenta dor no mediopé medial, claudicação e sensibilidade sobre o navicular. Radiografias podem mostrar achatamento, esclerose e fragmentação, achados que devem ser correlacionados ao quadro clínico porque alterações de ossificação do navicular podem ser assimétricas em crianças. A doença é autolimitada; tratamento é sintomático, com redução de atividade, anti-inflamatórios e, em casos dolorosos, imobilização temporária.",
-  "correta": "A alternativa B está correta. Köhler ocorre predominantemente em meninos e, na maioria dos casos, compromete apenas um pé.",
+  "conceito": "### Osteocondroses e apofisites do pé\n| Epônimo | Local | Idade/perfil |\n|---|---|---|\n| ==Köhler== | ==navicular== | meninos de 4 a 7 anos; autolimitada |\n| ==Iselin== | ==base do 5º metatarso== (fibular curto) | adolescente ativo |\n| Freiberg | cabeça do 2º metatarso | adolescente feminina |\n| Sever | apófise do calcâneo (tendão calcâneo) | 8 a 12 anos, esportes |\n| Renander | sesamoide do hálux | |\n\n### Köhler\n- Navicular achatado, esclerótico, fragmentado.\n- Tratamento: bota gessada curta alivia a dor; reossifica sem sequela.\n\n### Iselin\n- Não confundir apófise (longitudinal) com fratura (transversa).\n\n### Köhler (osteocondrite do navicular)\n- ==Meninos== (4 a 6:1), 4 a 7 anos.\n- ==Unilateral== (bilateral em até 25%).\n- Navicular ossifica tarde e sofre compressão entre tálus e cuneiformes.\n\n> **Na prova:** Köhler = ==meninos, unilateral==",
+  "correta": "**Meninos, unilateral.**\n- Predomínio masculino.\n- Bilateral é minoria.",
   "incorretas": {
-   "A": "O predomínio masculino está correto, porém bilateralidade não é a apresentação mais comum.",
-   "C": "A doença não apresenta predomínio feminino, e bilateralidade também não é o padrão predominante.",
-   "D": "Unilateralidade está correta, mas o sexo mais frequentemente afetado é o masculino."
+   "A": "**Lado errado.**\n- Unilateral.",
+   "C": "**Duplamente errada.**\n- Sexo e lado.",
+   "D": "**Sexo errado.**\n- Meninos."
   },
   "referencias": [
    "Kohler Disease. StatPearls/NCBI Bookshelf. https://www.ncbi.nlm.nih.gov/books/NBK507831/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0080": {
-  "conceito": "O suspensório de Pavlik é uma órtese dinâmica, não uma imobilização rígida. Suas tiras anteriores mantêm o quadril em flexão e as posteriores restringem principalmente adução, permitindo abdução espontânea dentro de uma faixa segura. Assim, os movimentos que a órtese procura impedir são extensão excessiva, que favoreceria perda da redução, e adução, que pode deslocar a cabeça femoral. Ao mesmo tempo, não se deve forçar abdução extrema, pois isso aumenta o risco de osteonecrose. O princípio biomecânico é permitir que a própria posição e a atividade do lactente favoreçam uma redução concêntrica e estável.",
-  "correta": "A alternativa C está correta. O suspensório de Pavlik limita extensão e adução do quadril, ao mesmo tempo em que mantém flexão e permite abdução controlada.",
+  "conceito": "### Suspensório de Pavlik\n| Tira | Função |\n|---|---|\n| anterior | ==flexão== do quadril (100 a 110°), bloqueia a extensão |\n| posterior | ==limita a adução== (não força a abdução) |\n\n- Permite ==flexão e abdução ativas==; ==limita extensão e adução==.\n- Indicação: < 6 meses; controle por ultrassom.\n\n### Complicações\n| Complicação | Causa |\n|---|---|\n| ==necrose avascular== (lesão fisária) | ==abdução forçada== (> 60°) |\n| paralisia do nervo femoral | ==flexão excessiva== |\n| doença do Pavlik (erosão posterior do acetábulo) | quadril luxado mantido sem reduzir |\n| luxação inferior (obturatória) | flexão excessiva |\n\n- Sem redução em 3 a 4 semanas: suspender.\n\n> **Na prova:** Pavlik limita ==extensão e adução==",
+  "correta": "**Extensão e adução.**\n- Tira anterior mantém flexão.\n- Tira posterior impede adução.",
   "incorretas": {
-   "A": "A órtese não tem como objetivo limitar a flexão; pelo contrário, mantém o quadril em flexão terapêutica.",
-   "B": "Flexão é parte da posição desejada e abdução dentro da zona segura deve ser permitida, não bloqueada.",
-   "D": "A extensão é de fato limitada, mas a abdução controlada deve permanecer livre; o movimento restringido pela tira posterior é principalmente a adução."
+   "A": "**Flexão é mantida.**\n- Não limitada.",
+   "B": "**Ambas livres.**\n- Flexão e abdução.",
+   "D": "**Abdução livre.**\n- Extensão certa."
   },
   "referencias": [
    "Developmental Dysplasia of the Hip – Part 1. https://pmc.ncbi.nlm.nih.gov/articles/PMC10708981/",
    "Expert-Based Consensus on the Principles of Pavlik Harness Management of DDH. https://pmc.ncbi.nlm.nih.gov/articles/PMC6959914/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0081": {
   "conceito": "A sinovite transitória do quadril é causa comum de dor e claudicação em crianças, geralmente após infecção viral recente e com estado geral preservado. O diagnóstico é de exclusão e exige afastar artrite séptica, que tende a cursar com febre alta, incapacidade de apoiar, marcadores inflamatórios elevados e aspecto tóxico. A sinovite transitória costuma melhorar com analgesia, repouso relativo e observação. Pode haver recorrência, mais frequentemente nos primeiros meses após o episódio inicial. As séries mostram ampla variação, aproximadamente 4% a 17%; em perguntas de prova, a taxa anual clássica cobrada é 4%.",
