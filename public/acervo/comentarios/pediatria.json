@@ -5417,95 +5417,95 @@
   "conferido": false
  },
  "pediatria-0434": {
-  "conceito": "Na correção de metatarso aduto residual do adulto, osteotomias proximais dos metatarsais podem corrigir o alinhamento, mas lesam região próxima a fises em pacientes ainda imaturos. A lesão da fise do primeiro metatarsal altera crescimento e pode produzir deformidade permanente, sendo mais grave que proeminência ou subluxação tratáveis.",
-  "correta": "A alternativa C está correta. A parada do crescimento do primeiro metatarsal é a complicação mais grave pela repercussão definitiva sobre comprimento e alinhamento do primeiro raio.",
+  "conceito": "### Bissetriz do calcanhar (Bleck)\n- Linha que divide a ==planta do retropé== ao meio, projetada para o antepé.\n\n| Projeção | Interpretação |\n|---|---|\n| ==entre 2º e 3º dedos== | normal |\n| sobre o 3º dedo | adução leve |\n| ==lateral ao 3º== (3º-4º) | adução moderada |\n| entre 4º e 5º | adução grave |\n\n- No pé torto e no metatarso aduto a bissetriz fica ==lateral ao 3º raio== (antepé aduzido).\n\n### Metatarso aduto\n| Tipo | Flexibilidade | Conduta |\n|---|---|---|\n| flexível | corrige além do neutro | observação |\n| parcialmente flexível | até o neutro | alongamento, gesso |\n| rígido | não corrige | gessos seriados |\n\n### Osteotomia da base dos metatarsais\n- Indicada no aduto rígido residual em crianças maiores (> 4 a 6 anos).\n- O ==1º metatarso== tem a ==fise proximal== (os demais, distal): osteotomia basal pode lesá-la.\n- Resultado: ==parada do crescimento do 1º MT== (encurtamento, deformidade) = complicação mais grave.\n- Alternativas: osteotomia de abertura do cuneiforme medial + fechamento do cuboide.\n\n> **Na prova:** osteotomia basal dos metatarsais = risco de ==parada de crescimento do 1º MT==",
+  "correta": "**Parada do crescimento do 1º MT.**\n- Fise proximal do 1º metatarso.\n- Encurtamento permanente do raio.",
   "incorretas": {
-   "A": "A alternativa A (recidiva da deformidade.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "B": "A alternativa B (subluxação tarsometatarsal.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "D": "A alternativa D (proeminência da articulação tarsometatarsal.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa."
+   "A": "**Recidiva.**\n- Possível, mas menos grave.",
+   "B": "**Subluxação TMT.**\n- Complicação das capsulotomias (Heyman-Herndon).",
+   "D": "**Proeminência.**\n- Estética, menor."
   },
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0435": {
-  "conceito": "Na classificação de Sillence para osteogênese imperfeita, o **tipo IV** representa uma forma de gravidade **moderada**, intermediária entre o tipo I (mais leve) e os tipos II/III (mais graves). Diferente do tipo I (defeito puramente quantitativo do colágeno, com esclera azulada), o tipo IV se caracteriza por um defeito **tanto quantitativo quanto qualitativo** do colágeno tipo I, associado a uma **esclera normal** (não azulada), uma combinação que o distingue tanto do tipo I (defeito só quantitativo) quanto dos tipos mais graves com esclera azulada, sendo um dos pontos frequentemente cobrados para diferenciar os subtipos dentro da classificação.",
-  "correta": "B. A osteogênese imperfeita tipo IV de Sillence se caracteriza por defeito tanto quantitativo quanto qualitativo do colágeno tipo I, com esclera normal.",
+  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Subtipos A e B\n- Tipos I e IV subdividem-se pela dentina: ==A (dentinogênese normal)== e ==B (dentinogênese imperfeita)==.\n- Tipo IB: escleras azuis, colágeno ==tipo I==, ==dentinogênese anormal==, ==autossômica dominante==.\n\n> **Na prova:** Sillence IV = defeito ==quantitativo e qualitativo==, ==esclera normal==",
+  "correta": "**Quantitativo e qualitativo, esclera normal.**\n- Gravidade moderada.\n- Esclera clara no adulto.",
   "incorretas": {
-   "A": "O defeito no tipo IV não é apenas quantitativo, envolve também um componente qualitativo do colágeno.",
-   "C": "A esclera no tipo IV é normal, não azulada, e o defeito envolve também um componente qualitativo, não apenas quantitativo.",
-   "D": "A esclera no tipo IV é normal, não azulada, ao contrário do que essa alternativa afirma."
+   "A": "**Só quantitativo.**\n- Perfil do tipo I.",
+   "C": "**Tipo I.**\n- Quantitativo e esclera azul.",
+   "D": "**Esclera azul.**\n- No IV é normal."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0436": {
-  "conceito": "No tratamento cirúrgico da doença de Blount com osteotomia e correção **aguda** (imediata) da deformidade em varo, existe um risco reconhecido de lesão do **nervo fibular comum**, que pode ser tracionado ou comprimido durante a correção abrupta do alinhamento, especialmente quando a correção é significativa. Como o nervo fibular profundo inerva o músculo **extensor longo do hálux**, a avaliação clínica da função desse músculo (capacidade de extensão ativa do hálux) antes e depois da cirurgia é o teste mais direto e prático à beira do leito para monitorar a integridade funcional do nervo fibular no perioperatório, permitindo identificar precocemente uma eventual lesão neurológica relacionada à correção aguda da deformidade.",
-  "correta": "A. Na correção aguda da deformidade na doença de Blount, deve-se avaliar a função do extensor longo do hálux, pelo risco de lesão do nervo fibular.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Risco neurológico na correção aguda\n- Valgização e desrotação agudas ==estiram o nervo fibular==.\n- Ramo ==profundo== é o mais sensível: testar o ==extensor longo do hálux== antes e depois.\n- Prevenção: fasciotomia do compartimento anterior, osteotomia da fíbula, correção gradual (fixador) em deformidades grandes.\n- Síndrome compartimental também é risco.\n\n> **Na prova:** correção aguda do Blount = checar o ==extensor longo do hálux (fibular profundo)==",
+  "correta": "**Extensor longo do hálux.**\n- Inervado pelo fibular profundo.\n- Primeiro sinal de lesão por estiramento.",
   "incorretas": {
-   "B": "O flexor longo dos dedos é inervado pelo nervo tibial, não estando diretamente relacionado ao risco de lesão do nervo fibular nessa correção.",
-   "C": "O tibial posterior é inervado pelo nervo tibial, não sendo o músculo de escolha para monitorar o risco de lesão do nervo fibular.",
-   "D": "O gastrocnêmio é inervado pelo nervo tibial, não sendo o músculo de escolha para monitorar a função do nervo fibular nesse contexto."
+   "B": "**FLD.**\n- Tibial; não é o nervo em risco.",
+   "C": "**Tibial posterior.**\n- Nervo tibial, menos exposto.",
+   "D": "**Gastrocnêmio.**\n- Nervo tibial."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0437": {
-  "conceito": "O procedimento de **Strayer** consiste em um recesso proximal do músculo gastrocnêmio, realizado próximo à junção miotendínea proximal (zona I), preservando a contribuição do sóleo à força flexora plantar. Por ser uma liberação seletiva e mais proximal, restrita ao gastrocnêmio, proporciona **menor perda de força flexora plantar** em comparação a procedimentos realizados em níveis mais distais (como o alongamento do próprio tendão calcâneo), que comprometem tanto o gastrocnêmio quanto o sóleo.",
-  "correta": "B. O procedimento de Strayer é realizado na zona I e proporciona menor perda de força flexora plantar.",
+  "conceito": "### Zonas do tríceps sural (alongamento na PC)\n| Zona | Local | Técnicas | Alonga |\n|---|---|---|---|\n| 1 | ventres do gastrocnêmio | ==Strayer== (recessão da aponeurose proximal), Baumann (fáscia intramuscular) | só gastrocnêmio |\n| ==2== | ==aponeurose conjunta gastrocnêmio-sóleo, distal aos ventres== | ==Vulpius== (V invertido), Baker (língua em U) | gastro + sóleo moderado |\n| 3 | tendão calcâneo | ==Hoke== (três hemissecções percutâneas), White, Z | tudo; maior risco de ==hiperalongamento== (marcha agachada) |\n\n### Silfverskiöld\n- Equino que ==melhora com joelho fletido==: contratura do ==gastrocnêmio== isolado → zonas 1-2.\n- Equino fixo com joelho fletido: sóleo também → zona 2-3.\n\n### Força × zona\n- Quanto mais ==proximal== (zona 1), mais seletivo: só o gastrocnêmio, ==menor perda de força== e menor risco de hiperalongamento.\n- Zona 3 (tendão calcâneo) alonga tudo: maior fraqueza, risco de marcha agachada.\n\n> **Na prova:** Strayer = ==zona I, menor perda de força==",
+  "correta": "**Zona I, menor perda de força.**\n- Alonga só o gastrocnêmio.\n- Preserva o sóleo.",
   "incorretas": {
-   "A": "A zona I está correta, mas por preservar seletivamente o sóleo, o procedimento de Strayer proporciona **menor** (não maior) perda de força flexora plantar em comparação a técnicas mais distais.",
-   "C": "A zona **III**, mais distal, corresponde a um nível diferente do proximal utilizado por Strayer, mais associado a maior perda de força por envolver também o sóleo.",
-   "D": "Embora a menor perda de força esteja correta, a zona indicada (III) não corresponde ao nível proximal (zona I) da técnica de Strayer."
+   "A": "**Mais fraqueza.**\n- Zona I é a mais seletiva.",
+   "C": "**Zona III.**\n- Tendão calcâneo; não é Strayer.",
+   "D": "**Zona III.**\n- Zona errada."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0438": {
-  "conceito": "A Kingella kingae é hoje a principal causa de artrite séptica e osteomielite em crianças de 6 meses a 4 anos em vários países, posição que ganhou depois que a vacinação eliminou o Haemophilus. Ela tem duas particularidades que explicam a pergunta: é um cocobacilo gram-negativo fastidioso, que cresce mal nos meios convencionais (a inoculação do líquido em frascos de hemocultura melhora, mas não resolve), e produz um quadro insidioso, com pouca febre e marcadores discretos, muitas vezes precedido de estomatite ou infecção respiratória alta. É por isso que a PCR do líquido articular é o exame que a identifica.",
-  "correta": "Kingella kingae.",
+  "conceito": "### Kingella kingae\n- Gram-negativo da orofaringe; principal agente de infecção osteoarticular de ==6 meses a 4 anos== em muitas séries.\n- ==Cresce mal em meio comum==: culturas frequentemente negativas.\n- Diagnóstico: inocular o líquido em ==frasco de hemocultura== e sobretudo ==PCR== específica.\n- Quadro mais brando: febre baixa, PCR e leucócitos pouco elevados.\n- Sensível a betalactâmicos (resistente a vancomicina e clindamicina).\n\n### Agentes por idade\n| Idade | Agentes |\n|---|---|\n| neonato | S. aureus, estreptococo B, gram-negativos |\n| ==6 meses a 4 anos== | ==Kingella==, S. aureus |\n| > 4 anos | S. aureus |\n| adolescente sexualmente ativo | gonococo |\n\n> **Na prova:** séptica com cultura negativa = ==Kingella kingae (PCR)==",
+  "correta": "**Kingella kingae.**\n- Fastidiosa, não cresce em meio comum.\n- PCR identifica.",
   "incorretas": {
-   "A": "O Haemophilus influenzae tipo b cresce em cultura convencional e hoje é raro pela vacinação.",
-   "B": "O Streptococcus pyogenes cresce bem em meios habituais.",
-   "C": "O Staphylococcus aureus é o germe mais facilmente isolado em cultura."
+   "A": "**Haemophilus.**\n- Raro após a vacina; cresce em cultura.",
+   "B": "**S. pyogenes.**\n- Cresce facilmente.",
+   "C": "**S. aureus.**\n- Mais comum; cresce bem."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0439": {
-  "conceito": "O pé talo vertical congênito, também chamado de \"pé em mata-borrão\" ou \"Persian slipper foot\", apresenta um padrão de deformidade rígida bem característico: o **retropé** encontra-se em **equinovalgo** (calcâneo em equino e valgo fixo), enquanto o **mediopé e o antepé** encontram-se em **dorsiflexão** fixa em relação ao retropé, com luxação dorsal do navicular sobre o colo do tálus, o tálus assume uma posição verticalizada característica (que dá nome à condição), criando a aparência de \"mata-borrão\" da sola do pé, com convexidade plantar em vez da concavidade normal do arco longitudinal.",
-  "correta": "B. No pé talo vertical congênito, o retropé está em equinovalgo e o mediopé/antepé em dorsiflexão.",
+  "conceito": "### Pé talo vertical congênito\n- ==Luxação dorsal fixa da talonavicular==; tálus vertical, calcâneo em equino.\n- Aspecto de ==mata-borrão== (rocker-bottom): planta convexa, cabeça do tálus palpável na planta.\n- Presente ==ao nascer==; rígido.\n\n### Partes moles retraídas\n| Grupo | Estruturas |\n|---|---|\n| dorsais | ==tibial anterior==, extensores dos dedos e do hálux, fibulares |\n| posteriores | tendão calcâneo (equino) |\n\n### Associações (cerca de 50%)\n- Artrogripose, mielomeningocele, síndromes cromossômicas (trissomias 13, 18), Larsen.\n\n### Diagnóstico e tratamento\n- RX em ==flexão plantar máxima==: talonavicular não reduz (tálus oblíquo reduz).\n- ==Dobbs==: gessos reversos ao Ponseti + pino talonavicular + tenotomia do calcâneo.\n- Diferencial: ==tálus oblíquo==, pé ==calcaneovalgo== postural.\n\n### Deformidade\n| Segmento | Posição |\n|---|---|\n| ==retropé== | ==equinovalgo== (calcâneo em equino e valgo) |\n| ==mediopé/antepé== | ==dorsiflexão== e abdução (navicular luxado dorsalmente) |\n\n> **Na prova:** talo vertical = retropé ==equinovalgo==, antepé em ==dorsiflexão==",
+  "correta": "**Equinovalgo e dorsiflexão.**\n- Retropé em equino, antepé para cima.\n- Mata-borrão.",
   "incorretas": {
-   "A": "O retropé está em equinovalgo, não equinovaro, no pé talo vertical congênito.",
-   "C": "O mediopé/antepé está em dorsiflexão, não em flexão plantar, e o retropé está em equinovalgo, não equinovaro.",
-   "D": "O mediopé/antepé está em dorsiflexão, não em flexão plantar, no pé talo vertical congênito."
+   "A": "**Varo.**\n- Retropé fica valgo.",
+   "C": "**Pé torto.**\n- Equinovaro com flexão plantar.",
+   "D": "**Flexão plantar.**\n- Antepé em dorsiflexão."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0440": {
-  "conceito": "O alinhamento rotacional dos membros inferiores muda de forma previsível ao longo da infância. Em uma criança de **6 meses**, ainda no início da vida pós-natal, o padrão predominante reflete o posicionamento intrauterino: a **anteversão femoral** ainda está elevada, em torno de **40 graus** (bem acima do valor médio do adulto, de cerca de 10-15°, que só se estabelece ao longo dos primeiros anos de vida), e a **tíbia** ainda apresenta um discreto grau de **rotação interna** (torção tibial interna leve), padrão que também se inverte progressivamente ao longo do crescimento, tornando-se externo por volta dos primeiros anos de vida.\n\nReconhecer esses valores esperados para cada faixa etária é fundamental para não confundir uma variação rotacional fisiológica do desenvolvimento com uma deformidade patológica.",
-  "correta": "B. Aos seis meses de idade, espera-se encontrar anteversão femoral de aproximadamente 40 graus e rotação interna da tíbia.",
+  "conceito": "### Torção tibial externa patológica\n- Normal no adulto: cerca de 20° (ângulo coxa-pé).\n- Aumentada (> 18 a 30°) no adolescente: marcha com pé para fora.\n\n### Associações\n| Condição | Relação |\n|---|---|\n| ==coalizão tarsal== | pé plano rígido, compensação rotacional |\n| anteversão femoral aumentada | síndrome do mau alinhamento (compensação) |\n| mielomeningocele | torção externa |\n| Blount | torção ==interna== |\n\n### Síndrome do mau alinhamento\n- Anteversão femoral + torção tibial externa: dor patelofemoral, instabilidade patelar.\n- Osteotomias derrotativas em casos graves.\n\n### Rotacionais na criança\n| Causa | Idade típica |\n|---|---|\n| metatarso aduto | lactente |\n| torção tibial interna | 1 a 3 anos |\n| anteversão femoral | 3 a 8 anos |\n\n### Torção tibial interna\n- Associada ao ==pé torto congênito== (componente rotacional da deformidade) e à posição intrauterina.\n- Blount também gira a tíbia para dentro.\n- Marcha com pés para dentro de 1 a 3 anos: a maioria corrige sozinha até 4 a 5 anos.\n\n### Valores no lactente\n| Parâmetro | Nascimento/lactente | Adulto |\n|---|---|---|\n| ==anteversão femoral== | ==cerca de 40°== | cerca de 15° |\n| torção tibial | ==interna== (coxa-pé -5°) | externa, cerca de 20° |\n\n- Com o crescimento: fêmur ==desroda== e tíbia ==roda para fora==.\n\n> **Na prova:** aos 6 meses = ==anteversão de 40° e tíbia em rotação interna==",
+  "correta": "**40° e tíbia interna.**\n- Anteversão máxima ao nascer.\n- Tíbia roda externamente depois.",
   "incorretas": {
-   "A": "10 graus de anteversão é um valor baixo demais para essa idade, esse valor é mais próximo do encontrado no adulto, após anos de redução progressiva.",
-   "C": "A rotação da tíbia aos seis meses ainda costuma ser interna, não externa, que só se desenvolve progressivamente ao longo da infância.",
-   "D": "Tanto o valor de anteversão (10 graus, baixo demais para essa idade) quanto a rotação tibial (externa, ainda não estabelecida nessa fase) não correspondem ao padrão esperado aos seis meses."
+   "A": "**10°.**\n- Valor do adulto ou menor.",
+   "C": "**Os dois errados.**\n- Anteversão alta, tíbia interna.",
+   "D": "**Tíbia externa.**\n- Padrão adulto."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0441": {
-  "conceito": "No protocolo clássico de manutenção da correção pelo método de Ponseti para o pé torto congênito idiopático, após o período inicial de uso em tempo integral (23 horas por dia, durante os primeiros 3 meses), a órtese de abdução passa para um regime de manutenção de **14 horas diárias** (uso predominantemente noturno e nos períodos de sono), mantido até por volta dos **4 anos de idade**, um período de uso prolongado que é justamente um dos maiores desafios práticos do método, já que a adesão da família ao uso da órtese por tanto tempo é um dos fatores mais associados à recidiva quando não é seguida corretamente.",
-  "correta": "D. Após os três primeiros meses, a órtese de abdução deve ser usada por 14 horas diárias até os 4 anos de idade.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** órtese = ==23 h por 3 meses==, depois ==12 a 14 h (noite e sonecas) até 4 anos==",
+  "correta": "**14 horas até 4 anos.**\n- Noite e sonecas.\n- Não adesão é a principal causa de recidiva.",
   "incorretas": {
-   "A": "8 horas diárias subestima o tempo de uso recomendado no regime de manutenção, e 1 ano é um prazo muito mais curto do que o recomendado.",
-   "B": "1 ano de duração é um prazo muito mais curto do que o recomendado para o regime de manutenção da órtese.",
-   "C": "8 horas diárias subestima o tempo de uso recomendado no regime de manutenção da órtese."
+   "A": "**8 h até 1 ano.**\n- Pouco e curto demais.",
+   "B": "**Até 1 ano.**\n- Tempo insuficiente.",
+   "C": "**8 horas.**\n- Insuficiente."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0442": {
