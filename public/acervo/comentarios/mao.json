@@ -5522,92 +5522,93 @@
   "conferido": false
  },
  "mao-0474": {
-  "conceito": "Cada retalho microcirúrgico tem um pedículo com nome próprio, e trocar o ramo é trocar de retalho. Vale guardar os quatro deste enunciado juntos, porque eles caem em bloco.",
-  "correta": "O retalho anterolateral da coxa é nutrido pelo ramo descendente da artéria circunflexa femoral lateral. Ele é hoje o retalho de escolha para grandes coberturas de membro, e a razão é prática: pedículo longo e calibroso, área doadora que fecha diretamente quando estreita, possibilidade de afinar o retalho e de levar fáscia lata ou músculo vasto lateral junto, e a coleta feita sem mudar a posição do paciente. O ponto de atenção é a variabilidade das perfurantes, que exige mapeamento com Doppler antes.",
+  "conceito": "### Pedículos dos retalhos livres\n| Retalho | Pedículo |\n|---|---|\n| ==anterolateral da coxa (ALT)== | ==ramo descendente da circunflexa femoral lateral== |\n| escapular | ramo ==transverso== (horizontal) da circunflexa escapular |\n| paraescapular | ramo ==descendente== da circunflexa escapular |\n| dorsal do pé | artéria dorsal do pé (tibial ==anterior==) |\n| grande dorsal | toracodorsal |\n| antebraquial radial | artéria radial |\n| fíbula | artéria fibular |\n| grácil | circunflexa femoral medial |\n| lateral do braço | colateral radial posterior |\n\n### Por que o ALT domina\n- Pedículo longo e calibroso, pode ser afinado, leva fáscia lata ou vasto lateral.\n- Área doadora fecha direto se estreita; coleta sem virar o paciente.\n- Perfurantes variáveis: mapear com Doppler.\n\n> **Na prova:** ALT = ==ramo descendente da circunflexa femoral lateral==.",
+  "correta": "**ALT: ramo descendente da circunflexa femoral lateral.**\n- Retalho de escolha para grandes coberturas.\n- Pedículo longo; perfurantes variáveis.",
   "incorretas": {
-   "A": "O retalho dorsal do pé é nutrido pela artéria dorsal do pé, ramo terminal da tibial anterior, e não da tibial posterior. Ele caiu em desuso justamente pela morbidade da área doadora.",
-   "C": "O retalho escapular é nutrido pelo ramo transverso, ou horizontal, da artéria circunflexa escapular.",
-   "D": "O paraescapular é nutrido pelo ramo descendente da mesma artéria. Ou seja, as duas alternativas trocam os ramos entre si, os dois retalhos saem do mesmo pedículo e se distinguem pela orientação da ilha de pele."
+   "A": "**Artéria errada.**\n- Dorsal do pé vem da tibial anterior.",
+   "C": "**Ramo trocado.**\n- Escapular é o transverso.",
+   "D": "**Ramo trocado.**\n- Paraescapular é o descendente."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0475": {
-  "conceito": "A eletroneuromiografia não vê a lesão do nervo: vê as consequências elétricas dela no músculo, e essas consequências levam tempo para aparecer, porque dependem da degeneração walleriana se completar.",
-  "correta": "Os potenciais de fibrilação são o sinal mais precoce de desnervação, surgindo a partir de cerca de duas a três semanas. Eles são a descarga espontânea de fibras musculares isoladas que perderam a inervação e ficaram hipersensíveis à acetilcolina circulante, daí aparecerem no repouso, quando o músculo deveria estar em silêncio elétrico. É por causa desse intervalo que o exame pedido antes de três semanas pode vir falsamente tranquilizador. Nas lesões de plexo, a mesma busca nos músculos paravertebrais localiza a lesão: desnervação neles indica lesão pré-ganglionar.",
+  "conceito": "### Momento da ENMG na lesão nervosa\n| Tempo | O que mostra |\n|---|---|\n| imediato | coto distal ainda conduz (falso normal) |\n| 7 a 10 dias | queda da amplitude motora e sensitiva (degeneração walleriana) |\n| ==3 semanas== | ==fibrilações e ondas positivas== no músculo desnervado |\n| 3 a 4 meses | potenciais de reinervação (nascentes) |\n\n### Pré × pós-ganglionar\n| Achado | Pré-ganglionar (avulsão) | Pós-ganglionar |\n|---|---|---|\n| potencial sensitivo (SNAP) em área anestésica | ==preservado== | ausente |\n| paravertebrais | ==desnervados== (ramo dorsal sai antes do gânglio) | normais |\n\n### Outros exames\n- Mielotomografia ou RM: pseudomeningocele.\n- Exame clínico seriado permanece essencial.\n\n### Achados da EMG de agulha\n| Achado | Significado |\n|---|---|\n| ==fibrilações e ondas positivas== | ==desnervação== (espontâneas, em repouso) |\n| silêncio em repouso | normal |\n| MUPs polifásicos, grandes | reinervação |\n| recrutamento reduzido | perda de unidades motoras |\n| CMAP reduzido (estímulo) | perda axonal |\n\n> **Na prova:** sinal mais precoce de desnervação = ==potenciais de fibrilação==",
+  "correta": "**Fibrilações.**\n- Descarga espontânea de fibras desnervadas.\n- Aparecem a partir de 2 a 3 semanas.",
   "incorretas": {
-   "B": "Os potenciais de unidade motora são registrados durante a contração voluntária e informam sobre reinervação e sobre o recrutamento, não são o sinal precoce de desnervação.",
-   "C": "O silêncio elétrico em repouso é o achado normal. A perda dele, com o aparecimento de fibrilações, é justamente o que se procura.",
-   "D": "O potencial de ação muscular composto é medido na estimulação do nervo e reflete o número de axônios motores viáveis. Ele cai, mas não é o achado espontâneo mais precoce."
+   "B": "**Contração voluntária.**\n- Informam reinervação e recrutamento.",
+   "C": "**Normal.**\n- A perda do silêncio é o achado.",
+   "D": "**Estimulação.**\n- Cai, mas não é o achado espontâneo precoce."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0476": {
-  "conceito": "A técnica WALANT, descrita por Lalonde, dispensa o torniquete e a sedação: usa lidocaína com epinefrina, infiltrada em volume generoso no campo, o que anestesia e ao mesmo tempo produz hemostasia química. O paciente fica acordado e move a mão durante a cirurgia, o que permite testar tensão de transferências e reparo de tendões na própria mesa.",
-  "correta": "A medicação é a lidocaína, e a questão adota a faixa de 8 a 11 mg/kg como dose máxima de segurança. Vale registrar os números clássicos ao lado, para não decorar errado: as referências tradicionais citam cerca de 4,5 mg/kg sem epinefrina e cerca de 7 mg/kg com epinefrina, e os valores mais altos aparecem na literatura de anestesia tumescente, em que a diluição e a associação com epinefrina retardam a absorção. E vale desfazer o mito que atrapalhou a técnica por décadas: epinefrina em dedo não causa necrose, e a fentolamina existe como antídoto caso a isquemia se prolongue.",
+  "alerta": "As referências clássicas citam cerca de 4,5 mg/kg de lidocaína sem epinefrina e 7 mg/kg com epinefrina. A faixa de 8 a 11 mg/kg do gabarito aparece em textos de anestesia tumescente. Guarde a droga (lidocaína) e os números clássicos.",
+  "conceito": "### WALANT (Lalonde)\n- ==Lidocaína 1% com epinefrina 1:100.000==, infiltrada em volume generoso.\n- Sem torniquete e sem sedação: hemostasia química.\n- Paciente acordado move a mão: testa tensão de transferências e reparos.\n\n### Doses máximas de referência\n| Droga | Sem epinefrina | Com epinefrina |\n|---|---|---|\n| lidocaína | cerca de 4,5 mg/kg | cerca de 7 mg/kg |\n| bupivacaína | cerca de 2,5 mg/kg | cerca de 3 mg/kg (cardiotóxica) |\n| ropivacaína | cerca de 3 mg/kg | |\n\n### Mitos\n- Epinefrina em dedo ==não causa necrose==; ==fentolamina== reverte se necessário.\n\n### Vantagens\n- Sem jejum, sem pré-operatório extenso, menor custo, alta rápida.\n\n> **Na prova:** WALANT = ==lidocaína== com epinefrina (veja o alerta sobre a dose).",
+  "correta": "**Lidocaína, conforme o gabarito.**\n- É o anestésico da técnica, com epinefrina.\n- Números clássicos: 4,5 mg/kg sem e 7 mg/kg com epinefrina (veja o alerta).",
   "incorretas": {
-   "B": "A bupivacaína tem margem de segurança bem menor (a dose máxima citada fica em torno de 2 a 3 mg/kg) e cardiotoxicidade importante. Oito a onze miligramas por quilo seria dose perigosa.",
-   "C": "Marcaína é nome comercial da bupivacaína, e a faixa proposta é ainda mais alta que a da alternativa anterior.",
-   "D": "A ropivacaína é menos cardiotóxica que a bupivacaína, mas não é o anestésico da técnica, e o início de ação mais lento não serve ao propósito."
+   "B": "**Margem estreita.**\n- Bupivacaína: 2 a 3 mg/kg, cardiotóxica.",
+   "C": "**Mesma droga.**\n- Marcaína é bupivacaína; dose perigosa.",
+   "D": "**Não é a da técnica.**\n- Início mais lento."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0477": {
-  "alerta": "A alternativa apontada como certa afirma que a coloração rósea do dedo reimplantado sugere isquemia, e rósea é justamente a cor do dedo bem perfundido. Quem descreve corretamente o quadro é a alternativa D: a trombose venosa é a complicação vascular mais comum do reimplante e se manifesta por tonalidade azulada. Guarde as cores, não a letra.",
-  "conceito": "O reimplante falha por trombose arterial ou venosa, e os dois quadros são opostos, o que faz da observação clínica um exame confiável à beira do leito. Na arterial nada entra: o dedo fica pálido, frio, com turgor diminuído, enchimento capilar lento e sangramento ausente ou claro à punção. Na venosa entra e não sai: o dedo fica azulado, tenso, com enchimento capilar acelerado e sangramento rápido e escuro.",
-  "correta": "O gabarito aponta a coloração rósea como sugestiva de isquemia, e isso não se sustenta: rósea, quente, com turgor e enchimento capilar normais, é exatamente o dedo bem perfundido, o achado que se quer ver na visita. O que sugere isquemia é a palidez. Guarde a tabela de cores e o que ela decide: dedo pálido pede reexploração arterial imediata; dedo azulado e tenso pede aliviar a compressão, retirar pontos, elevar menos, e considerar sanguessugas e reexploração venosa. As primeiras 48 a 72 horas concentram o risco e justificam a monitorização horária.",
+  "conceito": "### Monitorização do retalho livre\n| Sinal | Normal | ==Trombose venosa== | Trombose arterial |\n|---|---|---|---|\n| cor | rosada | ==azulada, violácea== | pálida |\n| temperatura | normal | normal ou quente | fria |\n| turgor | normal | ==aumentado (tenso, edema)== | diminuído, murcho |\n| enchimento capilar | 2 a 3 s | ==rápido== (< 1 s) | lento ou ausente |\n| punção | sangue vermelho em 2 a 3 s | ==sangue escuro, rápido e abundante== | sem sangramento |\n| petéquias | não | ==sim== | não |\n\n### Condutas\n- Venosa é a mais comum; janela de resgate: ==reexploração imediata==.\n- Monitorização a cada hora nas primeiras 24 a 48 h (maioria das tromboses ocorre aí).\n- Resgate: sanguessugas, heparina local se não houver drenagem venosa possível.\n\n### No reimplante\n- ==Trombose venosa é a complicação vascular mais comum==: dedo azulado e tenso.\n- Arterial: pálido, frio, murcho: reexploração imediata.\n- Rosado, quente, turgor e enchimento normais = ==bem perfundido==.\n- Risco concentrado em 48 a 72 h.\n\n> **Na prova:** dedo rosado = perfundido; complicação mais comum = ==trombose venosa (azulado)== (veja o alerta).",
+  "correta": "**Resposta oficial, com reserva.**\n- Rósea é a cor do dedo bem perfundido.\n- Isquemia arterial dá palidez.\n- A afirmação correta é a D (veja o alerta).",
   "incorretas": {
-   "B": "Pálido com turgor diminuído descreve a trombose arterial, e não a venosa. E o adjetivo raro está errado no outro sentido: a trombose venosa é a complicação vascular mais comum do reimplante.",
-   "C": "Azulado com sangramento rápido e escuro é o quadro venoso, e não o arterial, a alternativa inverte os dois.",
-   "D": "Esta alternativa é, na verdade, verdadeira: a trombose venosa é mesmo a complicação mais comum e se identifica pela tonalidade azulada."
+   "B": "**Descreve a arterial.**\n- E a venosa é a mais comum, não rara.",
+   "C": "**Invertida.**\n- Azulado com sangramento escuro é venoso.",
+   "D": "**Na verdade correta.**\n- Venosa é a mais comum e deixa o dedo azulado."
   },
-  "geradoEm": "2026-09-06",
+  "alerta": "A alternativa apontada como certa afirma que a coloração rósea do dedo reimplantado sugere isquemia, e rósea é justamente a cor do dedo bem perfundido. Quem descreve corretamente o quadro é a alternativa D: a trombose venosa é a complicação vascular mais comum do reimplante e se manifesta por tonalidade azulada. Guarde as cores, não a letra.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0478": {
-  "conceito": "A polpa do polegar exige cobertura com pele de polpa: sensível, com coxim e resistente à pinça. As opções se distinguem por de onde a pele vem, do próprio polegar, de outro dedo, ou de um retalho a distância.",
-  "correta": "O retalho de Moberg é o avanço volar do próprio polegar, bipediculado (leva os dois feixes vasculonervosos) e homodigital, ou seja, colhido do próprio dedo. É por isso que ele oferece a melhor sensibilidade distal: a pele que cobre a ponta é a pele daquele polegar, com a inervação original e a orientação cortical já correta, sem período de reeducação. Ele é seguro só no polegar, porque ali existe circulação dorsal independente que sustenta o dedo depois de os dois feixes volares irem no retalho.",
+  "conceito": "### Retalho de Moberg\n- Avanço volar **bipediculado** do polegar, com os **dois feixes neurovasculares**.\n- Elevado sobre a bainha dos flexores, avançado distalmente com flexão da IF.\n- Cobre cerca de **1 a 1,5 cm** de perda de polpa, com pele sensível própria.\n- Seguro no polegar porque o dorso tem **irrigação independente** (nos dedos longos arrisca necrose dorsal).\n- Modificação em ilha com V-Y proximal: avanço maior, menos flexão residual.\n\n### Retalhos da ponta dos dedos\n| Retalho | Característica |\n|---|---|\n| ==Moberg== | ==avanço volar do polegar== |\n| Atasoy (V-Y volar) | defeitos transversos ou dorsais oblíquos |\n| Kutler | V-Y laterais bilaterais |\n| cruzado de dedo | pele dorsal do dedo vizinho para defeito volar |\n| tenar | defeitos volares, crianças e mulheres jovens |\n| Littler (ilha neurovascular) | pele sensível do anelar para o polegar |\n| Foucher (kite) | 1ª artéria metacarpal dorsal, do indicador para o polegar |\n\n### Outros nomes\n- **Zaidenberg:** enxerto ósseo vascularizado 1,2 ICSRA (escafoide).\n- **Zancolli:** lasso (garra), técnicas para paralisia.\n\n### Modificação de O'Brien\n- Incisão ==transversa proximal== transforma o avanço em ==ilha==.\n- Avanço maior, sem forçar flexão da IF.\n- Área doadora proximal: avanço ou enxerto.\n\n### Homodigital × heterodigital\n| Retalho | Origem | Sensibilidade |\n|---|---|---|\n| ==Moberg== | ==próprio polegar== (bipediculado) | ==original, orientação cortical correta== |\n| Littler | ilha do anelar | orientação trocada (reeducação) |\n| Kite | dorso do indicador | inervado pelo radial superficial |\n| cross-finger | dorso do vizinho | pior, não é pele de polpa |\n\n> **Na prova:** bipediculado, homodigital, melhor sensibilidade = ==Moberg==",
+  "correta": "**Moberg.**\n- Avanço volar do próprio polegar com os dois feixes.\n- Pele e inervação originais, sem reeducação.\n- Seguro só no polegar (irrigação dorsal independente).",
   "incorretas": {
-   "A": "O retalho de Littler é heterodigital: uma ilha neurovascular colhida da lateral de outro dedo, em geral o anelar, e transferida para o polegar. Ele devolve sensibilidade, mas com orientação cortical trocada, o paciente sente o toque no polegar como se fosse no dedo doador, até a reeducação corrigir.",
-   "C": "O retalho de Kite, ou da primeira artéria intermetacarpal dorsal, vem do dorso do indicador. Também é heterodigital.",
-   "D": "O cross-finger traz pele do dorso do dedo vizinho, é heterodigital, exige duas a três semanas com os dedos unidos e a pele que ele leva não é pele de polpa."
+   "A": "**Heterodigital.**\n- Ilha do anelar; orientação cortical trocada.",
+   "C": "**Heterodigital.**\n- Dorso do indicador.",
+   "D": "**Heterodigital.**\n- Pele dorsal, não de polpa."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0479": {
-  "conceito": "Na avulsão a artéria não é cortada: é arrancada. A camada íntima descola ao longo de vários centímetros além do ponto visível de ruptura, e uma anastomose feita sobre esse segmento tromba, porque a superfície interna já não é lisa.",
-  "correta": "A conduta é ressecar a artéria até tecido sadio nas duas pontas e interpor um enxerto de veia invertido. A ressecção cria uma falha que não permite aproximação sem tensão, e o enxerto a preenche; ele vai invertido porque a veia tem válvulas, que montadas no sentido original bloqueariam o fluxo arterial. Os sinais que orientam a extensão da ressecção são conhecidos: o sinal da fita vermelha, com a artéria trombosada aparecendo como um cordão avermelhado, e o sinal do saca-rolhas, com o vaso enovelado pela tração.",
+  "conceito": "### Anastomose entre vasos de calibres diferentes\n| Discrepância | Solução |\n|---|---|\n| pequena (< 1,5:1) | ==secção oblíqua do vaso menor (cerca de 30°)==, dilatação mecânica do menor |\n| moderada | incisão em **boca de peixe** (fishmouth) no menor, espatulação |\n| grande (> 2:1) | anastomose **término-lateral**, **enxerto de veia** interposto, luva |\n\n### Por que o corte oblíquo\n- Transforma a boca circular em **elipse** de perímetro maior.\n- Iguala as circunferências e distribui os pontos.\n- Bisel exagerado (45 a 60°) angula o vaso e gera turbulência.\n\n### Princípios da microanastomose\n- Ressecar até íntima normal, sem tensão, pontos de espessura total igualmente espaçados, sem incluir a parede oposta.\n- Teste de patência (empty and refill).\n\n### Avulsão\n- Íntima descolada muito além da ruptura visível.\n- Sinais: ==fita vermelha== (trombose no vaso), ==saca-rolhas== (vaso enovelado), equimose ao longo do trajeto digital.\n- Conduta: ressecar até íntima normal e interpor ==enxerto de veia invertido== (válvulas).\n- Doadoras: veias do dorso do pé, volar do antebraço distal.\n\n> **Na prova:** amputação por avulsão = ==enxerto de veia invertido==",
+  "correta": "**Enxerto de veia invertido.**\n- Ressecar a íntima lesada até tecido sadio.\n- Inverter por causa das válvulas.",
   "incorretas": {
-   "A": "Inverte a fisiopatologia: na avulsão a lesão da íntima é a regra, e é por isso que a arteriorrafia primária costuma trombar.",
-   "B": "A veia do antebraço é doadora habitual, mas a inversão é obrigatória, sem ela as válvulas impedem o fluxo.",
-   "D": "A desproporção de calibre precisa ser resolvida: corte oblíquo do vaso menor, dilatação cuidadosa, anastomose em luva ou interposição de enxerto. Anastomose entre bocas de tamanhos diferentes vaza ou tromba."
+   "A": "**Fisiopatologia invertida.**\n- Lesão da íntima é a regra.",
+   "B": "**Sem inversão falha.**\n- Válvulas bloqueiam.",
+   "D": "**Desproporção não se ignora.**\n- Trombosa ou vaza."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0480": {
-  "conceito": "Diante de uma lesão de plexo, a primeira pergunta é sempre a mesma: pré ou pós-ganglionar. Pré-ganglionar é avulsão da raiz junto à medula, sem coto proximal para enxertar e sem Tinel; pós-ganglionar é lesão fora do canal, com coto viável e possibilidade de reparo.",
-  "correta": "O sinal de Horner (ptose, miose, enoftalmia e anidrose facial) resulta da interrupção da via simpática cervical e indica lesão pré-ganglionar, porque as fibras simpáticas saem com a raiz T1 antes de qualquer tronco se formar. É o pior indicador prognóstico da avaliação, e muda a estratégia: sem coto proximal, a reconstrução depende de transferências a partir de doadores fora do plexo lesado. Junto com ele, procure escápula alada por lesão do torácico longo, perda dos romboides pelo dorsal da escápula e elevação da cúpula diafragmática na radiografia de tórax, todos marcadores do mesmo tipo de lesão.",
+  "conceito": "### Momento da ENMG na lesão nervosa\n| Tempo | O que mostra |\n|---|---|\n| imediato | coto distal ainda conduz (falso normal) |\n| 7 a 10 dias | queda da amplitude motora e sensitiva (degeneração walleriana) |\n| ==3 semanas== | ==fibrilações e ondas positivas== no músculo desnervado |\n| 3 a 4 meses | potenciais de reinervação (nascentes) |\n\n### Pré × pós-ganglionar\n| Achado | Pré-ganglionar (avulsão) | Pós-ganglionar |\n|---|---|---|\n| potencial sensitivo (SNAP) em área anestésica | ==preservado== | ausente |\n| paravertebrais | ==desnervados== (ramo dorsal sai antes do gânglio) | normais |\n\n### Outros exames\n- Mielotomografia ou RM: pseudomeningocele.\n- Exame clínico seriado permanece essencial.\n\n### Pré × pós-ganglionar: clínica\n| Achado | Indica |\n|---|---|\n| ==Horner== | ==pré-ganglionar (T1)== |\n| escápula alada, romboides fracos | pré-ganglionar (ramos proximais) |\n| hemidiafragma elevado | pré-ganglionar (C4-C5) |\n| dor em queimação na mão anestésica | avulsão |\n| Tinel supraclavicular positivo | ==pós-ganglionar== |\n\n### Ancoragem das raízes\n- ==C5-C6 bem ancoradas== nas transversas: tendem a romper fora (pós).\n- ==C8-T1 frágeis==: avulsionam (pré).\n\n> **Na prova:** Horner no plexo = ==lesão pré-ganglionar==",
+  "correta": "**Horner sugere pré-ganglionar.**\n- Fibras simpáticas saem com T1.\n- Pior prognóstico; exige doadores extraplexuais.",
   "incorretas": {
-   "A": "É o contrário. C5 e C6 têm ancoragem fascial mais robusta às apófises transversas, o que as torna mais resistentes à avulsão; C8 e T1 têm ancoragem mais frágil e avulsionam com mais facilidade. Daí a lesão alta tender a ser pós-ganglionar e a baixa, pré-ganglionar.",
-   "B": "Dor ou Tinel à percussão supraclavicular indica axônios em regeneração e, portanto, aponta lesão pós-ganglionar. Na avulsão não há coto proximal regenerando, e o Tinel é negativo.",
-   "C": "O conceito por trás está certo, o ramo dorsal sai da raiz antes do gânglio, de modo que o comprometimento dos paraespinais indica lesão pré-ganglionar. O que não se sustenta é a formulação: o achado é a desnervação vista na eletroneuromiografia desses músculos, e não uma atrofia avaliada clinicamente, que não se examina assim."
+   "A": "**Invertida.**\n- C5-C6 são mais ancoradas.",
+   "B": "**Pós-ganglionar.**\n- Tinel indica regeneração.",
+   "C": "**Formulação errada.**\n- É desnervação na ENMG, não atrofia clínica."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0481": {
-  "conceito": "A trapeziometacarpiana é uma sela sem congruência óssea que a estabilize: quem a segura são os ligamentos, e um deles carrega o papel principal.",
-  "correta": "A falha é do ligamento oblíquo anterior (o ligamento em bico), que vai da tuberosidade volar do trapézio à base volar-ulnar do primeiro metacarpo, e a consequência é a subluxação dorsal do primeiro metacarpo. O mecanismo é o da pinça: ela empurra a base do metacarpo para dorsal e radial, e é esse ligamento que resiste. Quando ele afrouxa, a base escorrega dorsalmente, o contato articular se concentra numa área pequena na região volar, e é ali que o desgaste começa, motivo pelo qual a artrose aparece primeiro na faceta palmar, tanto na radiografia quanto na artroscopia.",
+  "conceito": "### Eaton-Littler e conduta na rizartrose\n| Estágio | Radiografia | Opções |\n|---|---|---|\n| ==I== | normal ou espaço **alargado** (sinovite), subluxação < 1/3 | órtese, infiltração, ==reconstrução ligamentar (Eaton-Littler)==, osteotomia de extensão do 1º MC |\n| II | estreitamento, osteófitos < 2 mm | osteotomia, artroscopia, trapezectomia parcial |\n| III | osteófitos > 2 mm, esclerose, cistos | trapezectomia (± LRTI), artrodese, prótese |\n| IV | + escafotrapeziotrapezoide (pantrapezial) | trapezectomia total |\n\n### Técnica de Eaton-Littler\n- Tira de **metade do flexor radial do carpo** passada por túnel na base do 1º MC.\n- Reconstrói o **ligamento oblíquo anterior** (freio da subluxação dorsal).\n- Só faz sentido com **cartilagem preservada**.\n\n### LRTI (Burton-Pellegrini)\n- Trapezectomia + reconstrução ligamentar + interposição tendínea (FRC ou abdutor longo).\n\n### Estágio III: artrodese × trapezectomia\n| Aspecto | Artrodese TMC | Trapezectomia (± LRTI) |\n|---|---|---|\n| perfil | ==jovem, trabalho manual pesado== | idoso, menor demanda |\n| força de pinça | preservada | menor |\n| mobilidade | perdida (não aplana a mão) | preservada |\n| recuperação | espera consolidação; risco de pseudartrose | mais rápida |\n| pré-requisito | ==STT sadia== | |\n\n### Estabilizadores da TMC\n| Ligamento | Papel |\n|---|---|\n| ==oblíquo anterior (em bico)== | ==freia a subluxação dorsal==; falha inicial |\n| dorsorradial | o mais espesso; estabilizador dorsal |\n| intermetacarpal | ancora ao 2º MC |\n\n- A pinça empurra a base para ==dorsal e radial==.\n- Desgaste começa na ==faceta volar== do trapézio.\n\n> **Na prova:** rizartrose = falha do ==oblíquo anterior== com ==subluxação dorsal==",
+  "correta": "**Oblíquo anterior, subluxação dorsal.**\n- Ligamento em bico freia o deslocamento dorsal da base.\n- Desgaste começa na faceta volar.",
   "incorretas": {
-   "B": "Inverte o ligamento e a direção do deslocamento.",
-   "C": "O ligamento está certo e a direção não: a subluxação é dorsal, e é justamente contra ela que o oblíquo anterior trabalha.",
-   "D": "A direção está certa e o ligamento não: os ligamentos dorsais resistem ao deslocamento depois que ele começa, mas não é a falência deles que inicia o processo."
+   "B": "**Duplamente invertida.**\n- Ligamento e direção.",
+   "C": "**Direção errada.**\n- A subluxação é dorsal.",
+   "D": "**Ligamento errado.**\n- Dorsais não iniciam o processo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0482": {
