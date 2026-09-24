@@ -4050,92 +4050,93 @@
   "conferido": false
  },
  "mao-0345": {
-  "conceito": "Gilford descreveu o carpo como uma cadeia de segmentos em que a fileira proximal é um segmento intercalado, ela não tem tendão inserido e se move por consequência do que acontece em volta. Uma cadeia assim é instável por natureza, e precisa de algo que a amarre.",
-  "correta": "O escafoide é esse elo. Ele atravessa as duas fileiras, articulando-se com o rádio e com o semilunar de um lado e com o trapézio, o trapezoide e o capitato do outro, e por isso funciona como a barra que impede a cadeia de colapsar em ziguezague. Daí duas consequências: quando o ligamento escafossemilunar rompe, o escafoide se desliga do semilunar e cada fileira passa a rodar por conta própria, produzindo o padrão DISI; e quando o escafoide fratura na cintura, o efeito é o mesmo, porque o elo se parte no meio.",
+  "conceito": "### Fileira proximal: segmento intercalado\n- Nenhum tendão se insere nela: move-se pela ação das fileiras vizinhas e dos ligamentos.\n\n| Movimento do punho | Fileira proximal |\n|---|---|\n| desvio radial | ==flexão (palmar)==; escafoide encurta (sinal do anel) |\n| ==desvio ulnar== | ==extensão (dorsal)==; escafoide alonga |\n\n### Mecânica\n- No desvio radial, o escafoide é comprimido entre estiloide e trapézio e **flete**, arrastando semilunar e piramidal.\n- No desvio ulnar, o piramidal desliza na faceta helicoidal do hamato e a fileira **estende**.\n\n### Aplicações\n- **Teste de Watson:** pressão no tubérculo do escafoide enquanto o punho vai de ulnar para radial; na lesão escafossemilunar o escafoide subluxa dorsalmente e \"estala\".\n- **DISI:** semilunar em extensão (lesão escafossemilunar). **VISI:** semilunar em flexão (lesão lunopiramidal).\n\n### Gilford: cadeia de segmentos\n- Fileira proximal = segmento intercalado, instável por natureza.\n- O ==escafoide== atravessa as duas fileiras e funciona como ==barra de ligação==.\n\n| Falha do elo | Resultado |\n|---|---|\n| ruptura escafossemilunar | semilunar e piramidal estendem: DISI |\n| fratura da cintura do escafoide | fragmento distal flete, proximal estende: DISI, \"humpback\" |\n\n> **Na prova:** osso que liga as duas fileiras (Gilford) = ==escafoide==",
+  "correta": "**Escafoide.**\n- Articula com rádio e semilunar e com trapézio, trapezoide e capitato.\n- Barra que impede o colapso em ziguezague.\n- Rompido o elo, surge o DISI.",
   "incorretas": {
-   "A": "O capitato é o centro de rotação do punho e a peça central da fileira distal, mas não pertence às duas fileiras.",
-   "B": "O semilunar é o coração da fileira proximal e o osso que dá nome às instabilidades, mas ele fica inteiramente na fileira proximal.",
-   "D": "O hamato pertence à fileira distal, articulando-se com o quarto e o quinto metacarpos."
+   "A": "**Fileira distal.**\n- Centro de rotação do punho, mas só distal.",
+   "B": "**Fileira proximal.**\n- Coração da fileira, inteiramente proximal.",
+   "D": "**Fileira distal.**\n- Articula com 4º e 5º metacarpos."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0346": {
-  "conceito": "A tabaqueira anatômica é a depressão que aparece na borda radial do punho quando o polegar é estendido. Ela é limitada dorsalmente pelo tendão do extensor longo do polegar e volarmente pelos tendões do abdutor longo e do extensor curto do polegar.",
-  "correta": "A letra C indica o extensor longo do polegar, a borda dorsal e ulnar, e a letra A o extensor curto do polegar, na borda volar e radial. Entre os dois fica a depressão propriamente dita, e o que importa dela é o assoalho: ali se palpa o escafoide, e dor à palpação da tabaqueira é o achado mais sensível na suspeita de fratura do escafoide. Também passam por ali a artéria radial e ramos do nervo radial superficial, o que explica o Tinel positivo nessa topografia na síndrome de Wartenberg.",
+  "conceito": "### Tabaqueira anatômica\n| Limite | Estrutura |\n|---|---|\n| ==dorsal (ulnar)== | ==extensor longo do polegar== |\n| ==volar (radial)== | ==extensor curto e abdutor longo do polegar== |\n| proximal | estiloide radial |\n| assoalho | ==escafoide== e trapézio |\n\n### Conteúdo\n- Artéria radial (a caminho do 1º espaço).\n- Ramos do nervo radial superficial (superficiais ao teto).\n- Veia cefálica (origem, subcutânea).\n\n### Na clínica\n| Achado | Significado |\n|---|---|\n| dor à palpação | fratura do escafoide (achado mais sensível) |\n| Tinel | Wartenberg |\n| tabaqueira desaparece | ruptura do ELP |\n\n> **Na prova:** limites da tabaqueira = ==ELP (dorsal) e ECP/ALP (volar)==.",
+  "correta": "**C = extensor longo; A = extensor curto.**\n- ELP forma a borda dorsal e ulnar.\n- ECP forma a borda volar e radial.\n- O assoalho é o escafoide.",
   "incorretas": {
-   "A": "Extensor curto e abdutor longo são os dois tendões da borda volar, e a letra C está claramente na borda oposta, dorsal.",
-   "C": "Nomeia uma estrutura tendínea e um espaço, mas troca a ordem: a tabaqueira é a depressão entre as bordas, não uma delas.",
-   "D": "Mesma inversão, agora começando pelo espaço."
+   "A": "**Mesma borda.**\n- ECP e ALP são ambos volares; C está na borda dorsal.",
+   "C": "**Troca a ordem.**\n- A tabaqueira é a depressão entre as bordas.",
+   "D": "**Mesma inversão.**\n- A letra C é tendão, não o espaço."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0347": {
-  "conceito": "O músculo acessório de Gantzer é uma cabeça acessória do flexor longo do polegar, presente numa parcela grande das pessoas, que nasce do processo coronoide ou do epicôndilo medial e desce até o tendão do flexor longo.",
-  "correta": "Ele se relaciona com o nervo mediano, e mais precisamente com o ramo interósseo anterior, que costuma passar por baixo dele ou entre ele e o flexor profundo. É por isso que ele figura entre as causas anatômicas de síndrome do interósseo anterior, compressão que produz déficit motor puro, com o gesto de \"ok\" achatado e sem qualquer alteração de sensibilidade. Ele é achado anatômico frequente e quase sempre assintomático, mas precisa ser procurado quando se explora um interósseo anterior sem outra causa aparente.",
+  "conceito": "### Nervo interósseo anterior (NIA)\n- Ramo **motor puro** do mediano, sai logo abaixo do pronador redondo.\n- Desce sobre a **membrana interóssea** com a artéria interóssea anterior.\n\n| Músculo inervado | Função testada |\n|---|---|\n| flexor longo do polegar | flexão da IF do polegar |\n| ==flexor profundo do indicador e do médio== | ==flexão da IFD== desses dedos |\n| pronador quadrado | pronação com cotovelo fletido |\n\n### O que fica preservado\n| Músculo | Nervo |\n|---|---|\n| flexor superficial dos dedos | mediano (acima do NIA) |\n| pronador redondo, FRC, palmar longo | mediano |\n| tenar, lumbricais 1 e 2 | mediano na mão |\n| extensores | radial (NIP) |\n\n### Sinal do O\n- Polpa contra polpa achatada; IFP do indicador flete normalmente (FSD preservado).\n- Sensibilidade **normal**.\n\n### Causas de compressão do NIA\n| Estrutura | Detalhe |\n|---|---|\n| ==músculo de Gantzer== | ==cabeça acessória do FLP== (coronoide ou epicôndilo medial); frequente |\n| cabeça profunda do pronador redondo | banda fibrosa |\n| arcada do FSD | |\n| vasos trombosados, cistos | raros |\n\n- Diferencial: neurite braquial (Parsonage-Turner), que é a causa mais comum de paralisia espontânea do NIA.\n\n> **Na prova:** músculo de Gantzer = ==nervo mediano== (interósseo anterior).",
+  "correta": "**Mediano.**\n- O ramo interósseo anterior passa sob a cabeça acessória do FLP.\n- Causa anatômica de síndrome do NIA.\n- Achado frequente, quase sempre assintomático.",
   "incorretas": {
-   "A": "O ulnar não tem relação com esse músculo acessório: ele corre medialmente e o Gantzer é uma estrutura do compartimento volar profundo, no território do mediano.",
-   "B": "O radial e seus ramos ficam do lado radial e dorsal.",
-   "D": "O axilar está no ombro, muito longe do antebraço."
+   "A": "**Medial.**\n- Sem relação com o Gantzer.",
+   "B": "**Radial e dorsal.**\n- Fora do compartimento volar profundo.",
+   "D": "**Ombro.**\n- Muito longe."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0348": {
-  "conceito": "As duas técnicas endoscópicas de liberação do túnel do carpo se distinguem por quantos portais usam, e os dois nomes costumam ser cobrados juntos justamente por isso.",
-  "correta": "Chow usa dois portais (entrada no antebraço distal e saída na palma, com o aparelho atravessando o túnel de proximal para distal) e Agee usa um portal único proximal, com todo o procedimento feito por uma incisão no punho. Ambas trazem o mesmo ganho sobre a técnica aberta: retorno mais precoce ao trabalho e menos dor nos pilares tenar e hipotenar nas primeiras semanas, com resultados que se igualam aos da aberta depois de alguns meses. E ambas trazem o mesmo risco: liberação incompleta e lesão de estruturas que não se enxerga.",
+  "conceito": "### Liberação do túnel do carpo: técnicas\n| Técnica | Vantagens | Desvantagens |\n|---|---|---|\n| aberta clássica | visão direta, segura, barata | dor na cicatriz e nos pilares, retorno mais lento |\n| ==endoscópica / miniincisão== | ==retorno mais precoce ao trabalho==, menos dor de pilar e cicatriz nas primeiras semanas | curva de aprendizado; risco de **liberação incompleta** e de lesão de nervo, arco palmar e tendões; custo |\n\n### Resultados\n- Após cerca de **3 meses**, resultados funcionais **semelhantes**.\n- Infecção rara em ambas.\n\n### Complicações da liberação\n- Liberação incompleta (causa principal de persistência).\n- Lesão do ramo cutâneo palmar (neuroma), do ramo motor, do arco superficial.\n- **Dor do pilar** (tenar/hipotenar).\n- Síndrome dolorosa regional complexa.\n\n### Endoscópicas\n| Técnica | Portais |\n|---|---|\n| ==Chow== | ==dois== (antebraço distal e palma) |\n| Agee | um (punho) |\n\n> **Na prova:** Chow ==dois portais==, Agee ==portal único proximal==",
+  "correta": "**Duplo e único proximal.**\n- Chow: entrada no antebraço distal, saída na palma.\n- Agee: tudo por uma incisão no punho.\n- Ambas: retorno mais precoce; risco de liberação incompleta.",
   "incorretas": {
-   "A": "Inverte as duas técnicas.",
-   "C": "Nenhuma das duas é de portal único distal.",
-   "D": "As duas não são iguais, é justamente o número de portais que as separa."
+   "A": "**Invertida.**\n- Troca as técnicas.",
+   "C": "**Não existe.**\n- Nenhuma é de portal único distal.",
+   "D": "**Não são iguais.**\n- O número de portais as separa."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0349": {
-  "conceito": "Cada corda de Dupuytren produz uma contratura própria, e saber qual é qual permite prever o que a cirurgia vai encontrar e o que vai conseguir corrigir.",
-  "correta": "A corda pré-tendínea, derivada da banda pré-tendínea da aponeurose palmar, é a responsável pela contratura primária da metacarpofalângica. É a mais superficial e a mais segura de dissecar, porque corre na linha média da palma e não tem relação íntima com o feixe vasculonervoso. É também a que dá o melhor resultado cirúrgico: a contratura da metacarpofalângica corrige quase sempre por completo, ao contrário da interfalângica proximal.",
+  "conceito": "### Fáscia palmar normal → corda patológica\n| Estrutura normal | Orientação | Corda | Efeito |\n|---|---|---|---|\n| banda pré-tendínea | longitudinal | pré-tendínea (central na palma) | flexão da MF |\n| ==ligamento natatório== | ==transversa, nas comissuras== | ==natatória== | ==fecha a comissura, limita abdução== |\n| banda espiral + lâmina digital lateral + Grayson | espiral | ==corda espiral== | flexão da IFP, desloca o feixe |\n| lâmina digital lateral | longitudinal no dedo | lateral | flexão da IFP e IFD |\n| fibras transversas (lig. palmar transverso) | transversa proximal | ==poupada== | |\n| ligamento de Cleland | dorsal ao feixe | ==poupado== | |\n\n### Memória\n- Pré-tendínea limita ==extensão== do dedo.\n- Natatória limita ==abertura== entre os dedos.\n\n### Qual corda, qual articulação\n| Corda | Contratura | Risco cirúrgico |\n|---|---|---|\n| ==pré-tendínea== | ==MF== | baixo (linha média, longe do feixe); corrige bem |\n| espiral | IFP | ==alto==: feixe deslocado para o centro e superfície |\n| central (digital) | IFP | moderado |\n| natatória | comissura | |\n| abdutor do mínimo | IFP do mínimo | |\n\n> **Na prova:** contratura da MF = ==corda pré-tendínea==",
+  "correta": "**Corda pré-tendínea.**\n- Deriva da banda pré-tendínea da aponeurose palmar.\n- Superficial e longe do feixe: dissecção segura.\n- A contratura da MF corrige quase sempre por completo.",
   "incorretas": {
-   "B": "A banda espiral, ao se transformar em corda espiral, produz contratura da interfalângica proximal e desloca o feixe vasculonervoso para a linha média e para a superfície. É a corda perigosa, não a da metacarpofalângica.",
-   "C": "O ligamento de Grayson participa da formação da corda espiral, e portanto também da contratura da interfalângica proximal.",
-   "D": "O ligamento de Cleland é dorsal ao feixe e não é acometido pela doença, é a estrutura que o cirurgião encontra íntegra e usa como referência de plano."
+   "B": "**IFP.**\n- A corda espiral desloca o feixe.",
+   "C": "**Parte da espiral.**\n- Também contratura da IFP.",
+   "D": "**Poupado.**\n- Dorsal ao feixe, referência de plano."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0350": {
-  "alerta": "Na classificação de Nalebuff a botoeira do polegar é o tipo I, e não o II. O tipo II é a botoeira que já vem com subluxação da carpometacarpiana, variante rara. Guarde a série: I botoeira, II botoeira com carpometacarpiana acometida, III pescoço de cisne, IV polegar do guarda-caça, V pescoço de cisne por frouxidão da placa volar da metacarpofalângica, VI artrite mutilante.",
-  "conceito": "Nalebuff organizou o polegar reumatoide por qual articulação adoeceu primeiro e em que direção a deformidade se instalou. A botoeira nasce na metacarpofalângica; o pescoço de cisne nasce na trapeziometacarpiana.",
-  "correta": "O gabarito aponta o tipo II. O que o tipo II descreve, na classificação, é a botoeira acompanhada de subluxação da carpometacarpiana, ou seja, botoeira ela é, mas não é a forma característica nem a mais comum. A botoeira típica, e de longe a deformidade mais frequente do polegar reumatoide, é o tipo I. O mecanismo dela vale ser guardado: a sinovite distende a cápsula dorsal da metacarpofalângica, o extensor curto do polegar se afrouxa e as fibras do extensor longo escorregam para ulnar e volar; a metacarpofalângica cai em flexão e a interfalângica compensa em hiperextensão, com o primeiro metacarpo em abdução.",
+  "conceito": "### Polegar reumatoide (Nalebuff)\n| Tipo | Deformidade | Origem | Frequência |\n|---|---|---|---|\n| ==I== | ==botoeira==: MF em flexão, IF em hiperextensão | ==MF== (sinovite distende cápsula dorsal, EPB frouxo, ELP desliza ulnar e volar) | ==a mais comum== |\n| II | botoeira + subluxação da CMC | MF e CMC | rara |\n| III | pescoço de cisne: MF em hiperextensão, metacarpo aduzido | **CMC** | segunda |\n| IV | goleiro: instabilidade do colateral ulnar da MF | MF | |\n| V | pescoço de cisne pela placa volar da MF | MF | |\n| VI | artrite mutilante | | |\n\n### Tratamento do tipo I\n| Estágio | Conduta |\n|---|---|\n| inicial, flexível | sinovectomia da MF e reconstrução do extensor |\n| MF rígida, IF passível | **artrodese da MF** (± artroplastia) |\n| MF e IF acometidas | artrodese da MF e IF (não as duas com a CMC rígida) |\n\n### Regra de origem\n| Começa em | Deformidade |\n|---|---|\n| MF | ==botoeira== (tipo I) |\n| CMC | ==pescoço de cisne== (tipo III) |\n| placa volar da MF, CMC estável | ==pescoço de cisne== (tipo V) |\n\n- Tipo V: tratar só a MF (capsulodese volar, sesamoidodese ou artrodese).\n\n> **Na prova:** botoeira do polegar = ==Nalebuff I== (o gabarito dá II, veja o alerta).",
+  "correta": "**Resposta oficial, com reserva.**\n- O tipo II é botoeira com subluxação da CMC, variante rara.\n- A botoeira característica e mais comum é o tipo I (veja o alerta).",
   "incorretas": {
-   "A": "Esta é a resposta que corresponde à classificação: o tipo I é a botoeira.",
-   "C": "O tipo III é o pescoço de cisne, que começa na trapeziometacarpiana com subluxação dorsal da base e adução do metacarpo, e a metacarpofalângica hiperestendendo para compensar.",
-   "D": "O tipo IV é o polegar do guarda-caça reumatoide, frouxidão do ligamento colateral ulnar da metacarpofalângica, com adução secundária do metacarpo."
+   "A": "**Corresponde à classificação.**\n- O tipo I é a botoeira típica.",
+   "C": "**Pescoço de cisne.**\n- Começa na CMC.",
+   "D": "**Guarda-caça.**\n- Frouxidão do colateral ulnar da MF."
   },
-  "geradoEm": "2026-09-06",
+  "alerta": "Na classificação de Nalebuff a botoeira do polegar é o tipo I, e não o II. O tipo II é a botoeira que já vem com subluxação da carpometacarpiana, variante rara. Guarde a série: I botoeira, II botoeira com carpometacarpiana acometida, III pescoço de cisne, IV polegar do guarda-caça, V pescoço de cisne por frouxidão da placa volar da metacarpofalângica, VI artrite mutilante.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0351": {
-  "conceito": "Bain e Begg classificam a doença de Kienböck contando quantas superfícies articulares já perderam cartilagem, e não pelo aspecto do semilunar. As quatro superfícies em jogo são: a proximal do semilunar, a fossa semilunar do rádio, a distal do semilunar e a proximal do capitato.",
-  "correta": "Lesão na faceta do rádio e na superfície proximal do semilunar são duas superfícies, grau II. A lógica da classificação é cirúrgica: ela responde à pergunta de quais procedimentos ainda estão disponíveis. Com a fossa semilunar do rádio comprometida, por exemplo, a ressecção da fileira proximal perde sentido, porque é justamente ali que o capitato passaria a apoiar. Guarde o par de sistemas: Lichtman descreve o que aconteceu com o osso e com o alinhamento, Bain e Begg descrevem o que sobrou de cartilagem.",
+  "conceito": "### Classificação de Lichtman (Kienböck)\n| Estágio | Achado |\n|---|---|\n| I | radiografia normal; RM alterada |\n| II | ==esclerose== do semilunar, sem colapso |\n| IIIA | colapso/fragmentação do semilunar, **alinhamento carpal preservado** |\n| ==IIIB== | colapso + ==rotação fixa do escafoide em flexão== (anel cortical), ângulo radioescafoide > 60°, migração proximal do capitato |\n| IIIC | fratura coronal crônica do semilunar |\n| IV | artrose radiocarpal ou mediocarpal |\n\n### Conduta por estágio (resumo)\n| Estágio | Opções |\n|---|---|\n| I a IIIA, ulna minus | encurtamento do rádio, osteotomia de nivelamento |\n| I a IIIA, ulna neutra/plus | encurtamento do capitato, enxerto vascularizado |\n| ==IIIB== | ==artrodese escafotrapeziotrapezoide ou escafocapitato, ressecção da fileira proximal== |\n| IV | artrodese total, artroplastia, denervação |\n\n### Bain e Begg (artroscópica)\n| Grau | Superfícies sem cartilagem | Opções que restam |\n|---|---|---|\n| 0 | nenhuma | nivelamento, revascularização |\n| I | 1 (proximal do semilunar) | nivelamento, revascularização |\n| ==II== | ==2: proximal do semilunar + fossa semilunar do rádio== | artrodese radioescafossemilunar; ==não carpectomia proximal== |\n| II (variante) | 2: proximal e distal do semilunar | carpectomia proximal ou artrodese |\n| III | 3 (+ capitato) | artrodese, hemiartroplastia |\n| IV | 4 | artrodese total, artroplastia |\n\n- Lichtman = osso e alinhamento; Bain e Begg = cartilagem restante.\n\n> **Na prova:** rádio + proximal do semilunar = ==Bain e Begg II==",
+  "correta": "**Grau II.**\n- Duas superfícies acometidas.\n- Com a fossa semilunar do rádio gasta, a carpectomia proximal perde sentido.",
   "incorretas": {
-   "A": "O grau I corresponde a uma única superfície acometida, em geral a proximal do semilunar.",
-   "C": "O grau III são três superfícies, incluindo a cabeça do capitato, e é aí que a ressecção da fileira proximal fica contraindicada.",
-   "D": "O grau IV são as quatro superfícies, situação em que restam apenas artrodese total ou artroplastia."
+   "A": "**Uma superfície.**\n- Em geral a proximal do semilunar.",
+   "C": "**Três superfícies.**\n- Inclui a cabeça do capitato.",
+   "D": "**Quatro superfícies.**\n- Artrodese total ou artroplastia."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0352": {
-  "conceito": "Tachdjian gradua a sinostose radioulnar congênita pelo que aconteceu com a cabeça do rádio, que é o que a radiografia mostra e o que determina o que se pode fazer cirurgicamente.",
-  "correta": "A ausência da cabeça do rádio, com rádio e ulna fundidos de forma lisa e contínua na sua porção proximal ao longo de vários centímetros, é o grau I, e é a apresentação mais típica. No grau II a cabeça do rádio existe, mas está luxada, em geral posteriormente, e a fusão fica logo distal à epífise radial proximal. A distinção importa porque a presença de uma cabeça, ainda que luxada, muda o que a cirurgia pode tentar.",
+  "conceito": "### Sinostose radioulnar congênita\n- Falha de segmentação entre rádio e ulna proximais; **bilateral** em cerca de 60%.\n- Antebraço fixo, frequentemente em **pronação**; compensação pelo ombro e punho.\n\n### Indicação de osteotomia derrotativa\n- Pronação fixa acima de cerca de 60° com prejuízo funcional (levar a mão à boca, receber objetos).\n- Posição alvo: **neutra a 10 a 20° de pronação** no lado dominante; um pouco de supinação no não dominante (em bilaterais).\n\n### Complicações\n| Complicação | Comentário |\n|---|---|\n| ==síndrome compartimental== | ==a mais frequente== com rotações de 90° de uma vez (torção do envelope e dos vasos) |\n| lesão do interósseo posterior | acessos proximais |\n| perda de correção, pseudartrose | incomuns |\n\n### Prevenção\n- Limitar a correção aguda a cerca de **60 a 85°**, osteotomia dupla, fasciotomia profilática, correção gradual com fixador.\n- Vigilância de perfusão e dor desproporcional.\n\n### Separar os ossos\n- Ressecção com interposição: **recidiva** frequente; pouco usada.\n\n### Classificações\n| Tachdjian | Achado | Cleary e Omer |\n|---|---|---|\n| I | ==cabeça do rádio ausente==, fusão lisa proximal longa | III ou IV |\n| II | cabeça do rádio ==luxada== (posterior), fusão distal à epífise | IV |\n| ==III== | ==sinostose fibrosa==, sem ponte óssea, pronossupinação bloqueada | I |\n\n- Tipo fibroso: RX quase normal, diagnóstico tardio; ==tomografia== esclarece.\n\n> **Na prova:** cabeça do rádio ausente = ==Tachdjian I==",
+  "alerta": "Duas classificações são usadas para esta doença e numeram de forma diferente. A resposta segue Tachdjian. Na de Cleary e Omer, a sinostose fibrosa com cabeça do rádio normal é o tipo I, e não o III, se o enunciado não disser qual sistema está usando, confira antes de responder.",
+  "correta": "**Grau I.**\n- Cabeça ausente, fusão lisa e longa proximal.\n- A apresentação mais típica.",
   "incorretas": {
-   "B": "O grau II é o que tem cabeça do rádio presente e luxada.",
-   "C": "O grau III não é definido pela ausência da cabeça.",
-   "D": "Um grau IV não faz parte dessa classificação, que descreve três tipos."
+   "B": "**Cabeça luxada.**\n- Presente, em geral posterior.",
+   "C": "**Fibrosa.**\n- Sem ponte óssea.",
+   "D": "**Não existe.**\n- São três graus."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0353": {
