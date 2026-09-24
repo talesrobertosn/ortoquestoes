@@ -24,7 +24,14 @@ export function ResumoAssinatura() {
     if (!sessao) return
     try {
       const linhas = await chamarRpc<EstadoAssinatura[]>('obter_estado_conta', {})
-      definirEstado(linhas[0] ?? null)
+      let proximoEstado = linhas[0] ?? null
+      if (proximoEstado?.plano && ['ativa', 'cancelada', 'pendente', 'falha_pagamento', 'pausada'].includes(proximoEstado.status_assinatura ?? '')) {
+        try {
+          await chamarFuncao('gerenciar-plano', { acao: 'sincronizar_cobranca' })
+          proximoEstado = (await chamarRpc<EstadoAssinatura[]>('obter_estado_conta', {}))[0] ?? proximoEstado
+        } catch { /* A consulta da conta permanece disponível se a conciliação falhar. */ }
+      }
+      definirEstado(proximoEstado)
     } catch { definirMensagem('Não foi possível consultar a assinatura agora.') }
     finally { definirCarregando(false) }
   }, [sessao])
@@ -50,7 +57,7 @@ export function ResumoAssinatura() {
   if (!sessao) return null
   const ativo = estado?.status_assinatura === 'ativa'
   const statusExibido = ativo ? 'Em dia' : estado?.status_assinatura ?? 'Sem assinatura'
-  const garantia = ativo && estado?.ultima_cobranca_em
+  const garantia = (ativo || estado?.status_assinatura === 'cancelada') && estado?.ultima_cobranca_em
     && Date.now() - new Date(estado.ultima_cobranca_em).getTime() <= 7 * 864e5
 
   return <section className="ct-cartao ct-cartao--largo" aria-label="Minha assinatura">
