@@ -4228,91 +4228,91 @@
   "conferido": false
  },
  "mao-0361": {
-  "conceito": "O palmar longo é o tendão doador de enxerto mais usado da mão, e está ausente em cerca de 15% das pessoas, de um lado ou dos dois. Confirmar a presença dele antes de planejar uma reconstrução evita uma surpresa desagradável na mesa.",
-  "correta": "O teste é opor o polegar ao quinto dedo e fletir ativamente o punho contra resistência: o tendão salta na linha média da face volar do punho, e é possível vê-lo e palpá-lo. A flexão precisa ser ativa, porque o que se procura é a contração do músculo; passivamente nada aparece. Quando o teste é duvidoso, outras manobras ajudam, o teste de Schaeffer, opondo polegar e mínimo, e o de Thompson, com o punho fletido e o polegar sob os dedos fechados.",
+  "conceito": "### Palmar longo\n| Aspecto | Dado |\n|---|---|\n| origem | epicôndilo medial |\n| inserção | aponeurose palmar |\n| nervo | mediano |\n| ausência | ==cerca de 15%== (uni ou bilateral) |\n| uso | ==enxerto tendíneo== mais usado da mão |\n\n### Testes de presença\n| Teste | Manobra |\n|---|---|\n| ==clássico (Schaeffer)== | ==oponência polegar-mínimo + flexão ativa do punho== contra resistência |\n| Thompson | punho fletido, polegar sob os dedos fechados |\n| Mishra | abdução resistida do polegar com punho fletido |\n\n### Outros enxertos\n- Plantar delgado (ausente em até 20%), extensores dos dedos do pé, flexor superficial.\n\n### Referência cirúrgica\n- O mediano fica imediatamente profundo e ==radial== ao palmar longo no punho.\n\n> **Na prova:** palmar longo = oposição polegar-mínimo com ==flexão ativa do punho==.",
+  "correta": "**Flexão ativa do punho.**\n- Com oposição do polegar ao mínimo.\n- O tendão salta na linha média volar do punho.\n- A contração ativa é indispensável.",
   "incorretas": {
-   "A": "A extensão do punho relaxa o palmar longo, que é flexor. Ele não aparece assim.",
-   "B": "Além de a direção estar errada, movimento passivo não contrai músculo nenhum.",
-   "D": "Flexão passiva não faz o tendão saltar: sem contração, ele não se destaca do plano."
+   "A": "**Extensão relaxa.**\n- O palmar longo é flexor.",
+   "B": "**Duplamente errada.**\n- Direção errada e movimento passivo.",
+   "D": "**Passivo não contrai.**\n- O tendão não se destaca."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0362": {
-  "conceito": "Avaliar sensibilidade em criança pequena esbarra num problema simples: os testes clássicos exigem colaboração e resposta verbal confiável, e a criança não tem nem uma coisa nem outra.",
-  "correta": "O teste do enrugamento resolve isso, porque não depende de colaboração nenhuma. Mergulha-se a mão em água morna por cerca de 5 a 10 minutos: a pele da polpa enruga normalmente, e a polpa de um dedo denervado permanece lisa. O fenômeno é autonômico e simpático, o mesmo sistema que se perde na secção do nervo e que também produz a anidrose do território. Vale para criança, para quem não colabora e para simulação.",
+  "conceito": "### Sensibilidade em quem não colabora\n| Teste | Princípio | Exige colaboração |\n|---|---|---|\n| ==enrugamento (O'Riain)== | ==imersão em água morna 5 a 10 min==; dedo denervado fica liso | ==não== |\n| ninidrina (suor) | anidrose do território denervado | não |\n| discriminação de dois pontos | densidade de inervação | sim |\n| Semmes-Weinstein | limiar de pressão | sim |\n\n- O enrugamento é autonômico: some quando o nervo (e suas fibras simpáticas) está seccionado.\n- Útil em ==criança==, paciente inconsciente e simulação.\n\n### Na criança com corte no dedo\n- Observar a postura: dedo que não participa da preensão.\n- Explorar cirurgicamente na dúvida: reparo precoce tem ótimo prognóstico na infância.\n\n> **Na prova:** lesão de nervo digital na criança = ==teste do enrugamento==.",
+  "correta": "**Enrugamento.**\n- Imersão em água morna: polpa denervada não enruga.\n- Fenômeno autonômico, sem depender de resposta.\n- Serve para criança, inconsciente e simulação.",
   "incorretas": {
-   "A": "A discriminação de dois pontos exige que a pessoa diga se sente um ou dois estímulos, e a resposta de uma criança pequena não é confiável.",
-   "C": "O teste de Allen avalia a circulação arterial da mão, não a inervação.",
-   "D": "Os monofilamentos medem limiar de pressão e também dependem de resposta verbal consistente."
+   "A": "**Exige resposta.**\n- Criança pequena não responde de forma confiável.",
+   "C": "**Circulação.**\n- Avalia artérias, não nervos.",
+   "D": "**Exige resposta.**\n- Limiar de pressão depende de relato."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0363": {
-  "conceito": "Os músculos intrínsecos fletem a metacarpofalângica e estendem as interfalângicas, cruzando as duas articulações. Por isso a posição da metacarpofalângica muda a tensão deles: estendida, eles ficam esticados; fletida, relaxam.",
-  "correta": "Na retração dos intrínsecos, o achado é déficit de flexão passiva da interfalângica proximal com a metacarpofalângica mantida em extensão, e essa flexão melhora ou se normaliza ao fletir a metacarpofalângica. O raciocínio: se a limitação depende da posição da articulação vizinha, o freio é um músculo que cruza as duas; se não depende, a causa é capsular ou articular. É esse par de manobras que separa as duas coisas em segundos e muda a conduta.",
+  "conceito": "### Teste de Bunnell-Littler (Finochietto)\n- Intrínsecos fletem a MF e estendem as IF: cruzam as duas articulações.\n\n| Posição da MF | Flexão passiva da IFP | Interpretação |\n|---|---|---|\n| ==estendida== | ==limitada== | tensão nos intrínsecos |\n| ==fletida== | ==melhora== | ==contratura intrínseca== |\n| estendida e fletida | igualmente limitada | ==contratura capsular (articular)== |\n\n### Testes análogos\n| Teste | Estrutura |\n|---|---|\n| ligamento retinacular oblíquo (Haines-Zancolli) | flexão da IFD limitada com IFP estendida |\n| extrínsecos (extensor) | flexão da IFP limitada com MF fletida |\n\n### Causas de contratura intrínseca\n- Síndrome compartimental da mão, esmagamento, AR, espasticidade, isquemia.\n\n> **Na prova:** contratura intrínseca = ==flexão da IFP limitada com MF estendida==.",
+  "correta": "**Déficit de flexão da IFP com MF estendida.**\n- MF estendida estica os intrínsecos e freia a flexão da IFP.\n- Fletindo a MF, a flexão melhora.\n- Limitação igual nas duas posições é capsular.",
   "incorretas": {
-   "B": "O que se limita é a flexão, não a extensão. Os intrínsecos retraídos puxam a interfalângica em direção à extensão, eles impedem que ela dobre, não que ela estenda.",
-   "C": "Com a metacarpofalângica fletida os intrínsecos relaxam, e é justamente aí que a flexão da interfalângica melhora. Déficit nas duas posições apontaria contratura articular.",
-   "D": "Erra a direção do movimento e a posição da metacarpofalângica ao mesmo tempo."
+   "B": "**Direção errada.**\n- Intrínsecos retraídos impedem dobrar, não estender.",
+   "C": "**MF fletida relaxa.**\n- É quando a flexão melhora.",
+   "D": "**Duplamente errada.**\n- Movimento e posição trocados."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0364": {
-  "conceito": "A eletroneuromiografia não enxerga a lesão: ela enxerga as consequências elétricas da lesão, e essas consequências levam tempo para aparecer. É por isso que o exame pedido cedo demais vem falsamente tranquilizador.",
-  "correta": "O intervalo ideal é a partir de cerca de 21 dias, ou três semanas. Esse é o tempo que a degeneração walleriana leva para se completar no coto distal e para que os potenciais de desnervação (fibrilações e ondas positivas) apareçam no músculo desnervado. Antes disso, o nervo distal ainda conduz e o exame pode sugerir integridade onde já não há. Nas lesões de plexo, a eletroneuromiografia acrescenta ainda a avaliação dos músculos paravertebrais: desnervação neles indica lesão pré-ganglionar, porque o ramo dorsal sai da raiz antes do gânglio.",
+  "conceito": "### Momento da ENMG na lesão nervosa\n| Tempo | O que mostra |\n|---|---|\n| imediato | coto distal ainda conduz (falso normal) |\n| 7 a 10 dias | queda da amplitude motora e sensitiva (degeneração walleriana) |\n| ==3 semanas== | ==fibrilações e ondas positivas== no músculo desnervado |\n| 3 a 4 meses | potenciais de reinervação (nascentes) |\n\n### Pré × pós-ganglionar\n| Achado | Pré-ganglionar (avulsão) | Pós-ganglionar |\n|---|---|---|\n| potencial sensitivo (SNAP) em área anestésica | ==preservado== | ausente |\n| paravertebrais | ==desnervados== (ramo dorsal sai antes do gânglio) | normais |\n\n### Outros exames\n- Mielotomografia ou RM: pseudomeningocele.\n- Exame clínico seriado permanece essencial.\n\n> **Na prova:** ENMG após lesão do plexo = a partir de ==3 semanas (21 dias)==.",
+  "correta": "**21 dias.**\n- Tempo para a degeneração walleriana se completar.\n- Surgem fibrilações e ondas positivas.\n- Paravertebrais desnervados indicam avulsão.",
   "incorretas": {
-   "A": "Aos 3 dias o coto distal ainda conduz normalmente. O exame seria enganosamente normal.",
-   "B": "Aos 7 dias a degeneração ainda está em curso e a desnervação muscular não se manifestou.",
-   "C": "Aos 14 dias já se começa a ver alguma coisa, mas o exame ainda pode subestimar a lesão."
+   "A": "**Cedo demais.**\n- Coto distal ainda conduz.",
+   "B": "**Degeneração em curso.**\n- Desnervação ainda não aparece.",
+   "C": "**Subestima.**\n- Começa a aparecer, mas incompleto."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0365": {
-  "conceito": "Numa lesão completa de plexo não se recupera tudo: os doadores são poucos e o tempo até a placa motora degenerar é curto. A reconstrução obedece a uma hierarquia, da função que mais devolve autonomia para a que menos devolve.",
-  "correta": "A prioridade número um é a flexão do cotovelo. Sem ela a mão não chega ao rosto nem à boca, e nenhuma outra função compensa isso, um ombro estável com o cotovelo que não dobra não leva a mão a lugar nenhum. Depois vêm a estabilização e a abdução do ombro, a sensibilidade protetora da mão, a extensão do punho com a flexão dos dedos, e por último os intrínsecos, que praticamente nunca se recuperam.",
+  "conceito": "### Plexo braquial: padrões\n| Lesão | Raízes | Quadro |\n|---|---|---|\n| ==superior (Erb)== | ==C5-C6== | ombro sem abdução e RE, cotovelo sem flexão, sem supinação; ==gorjeta de garçom== |\n| estendida | C5-C7 | + extensão do cotovelo e punho fracas |\n| inferior (Klumpke) | C8-T1 | mão em garra, intrínsecos, Horner |\n| total | C5-T1 | membro flácido e anestésico |\n\n### Por que cada déficit\n| Função perdida | Nervo |\n|---|---|\n| abdução do ombro | axilar (deltoide), supraescapular |\n| flexão do cotovelo | musculocutâneo (bíceps, braquial) |\n| supinação | bíceps |\n| sensibilidade lateral do braço | axilar (cutâneo lateral superior) |\n\n### Sinais de avulsão pré-ganglionar\n- **Horner** (T1), escápula alada (torácico longo), hemidiafragma elevado (frênico), dor em queimação, pseudomeningocele na RM.\n- Histamina e condução sensitiva preservadas em região anestésica.\n\n### Prioridades na lesão completa\n| Ordem | Função | Opção comum |\n|---|---|---|\n| ==1== | ==flexão do cotovelo== | Oberlin (fascículo do ulnar), intercostais, frênico, acessório |\n| 2 | estabilidade e abdução do ombro | acessório para supraescapular |\n| 3 | sensibilidade protetora da mão | |\n| 4 | extensão do punho, flexão dos dedos | transferências, músculo livre (grácil) |\n| 5 | intrínsecos | quase nunca recuperam |\n\n- Placa motora degenera em 12 a 18 meses: operar cedo (3 a 6 meses).\n\n> **Na prova:** prioridade na lesão completa do plexo = ==flexão do cotovelo==",
+  "correta": "**Flexão do cotovelo.**\n- Leva a mão ao rosto e à boca.\n- Nenhuma outra função compensa sua falta.\n- Depois ombro, sensibilidade e mão.",
   "incorretas": {
-   "A": "A sensibilidade da mão é prioridade real (sobretudo a protetora, para que a mão não se machuque sem que a pessoa perceba), mas vem depois das funções motoras que posicionam o membro.",
-   "C": "Extensão do punho e flexão dos dedos entram na lista, mas abaixo do cotovelo e do ombro.",
-   "D": "O ombro é a segunda prioridade, e não a primeira."
+   "A": "**Importante, depois.**\n- Vem após as funções que posicionam o membro.",
+   "C": "**Mais abaixo.**\n- Depois de cotovelo e ombro.",
+   "D": "**Segunda.**\n- O ombro vem depois do cotovelo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0366": {
-  "conceito": "A descompressão simples abre o teto do túnel cubital sem mover o nervo. É a cirurgia menos agressiva e a que menos desvasculariza, mas, ao remover a contenção posterior, ela pode deixar o nervo livre para saltar por cima do epicôndilo medial.",
-  "correta": "O critério para transpor é a subluxação do nervo durante a flexão do cotovelo, testada ainda na mesa depois da liberação. Nervo que salta o epicôndilo a cada flexão é nervo que continua sendo traumatizado, e nesse caso a descompressão isolada troca uma compressão por um atrito. A transposição anterior, subcutânea ou submuscular, tira o nervo da frente do epicôndilo e ainda encurta o trajeto dele, o que reduz a tensão na flexão.",
+  "conceito": "### Túnel cubital: técnicas cirúrgicas\n| Técnica | Vantagens | Desvantagens |\n|---|---|---|\n| ==descompressão in situ== | simples, preserva a irrigação, menos complicações | ==subluxação do nervo== pós-operatória |\n| transposição anterior (subcutânea, intramuscular, submuscular) | trata instabilidade | mais dissecção, desvascularização, nova compressão se mal feita |\n| epicondilectomia medial | trata instabilidade | dor no epicôndilo, instabilidade do colateral se excessiva |\n\n### Resultados\n- Metanálises: in situ e transposição com resultados semelhantes; in situ com menos complicações.\n\n### Revisão por instabilidade após in situ\n- Mais frequente em ==menores de 50 anos== e ==sintomas leves==:\n  - tecidos elásticos permitem que o nervo **subluxe**;\n  - pouco ganho clínico, insatisfação maior com estalidos novos.\n- Na cirurgia: testar a estabilidade com **flexão do cotovelo**; se o nervo subluxa, transpor.\n\n### Critérios para transpor\n- ==Subluxação do nervo na flexão== do cotovelo após liberação.\n- Leito ruim (cicatriz, osteófitos, cúbito valgo), revisão.\n\n> **Na prova:** transposição anterior = ==nervo subluxa na flexão==",
+  "correta": "**Subluxação na flexão.**\n- Testada na mesa após a liberação.\n- Nervo que salta o epicôndilo continua sendo traumatizado.\n- A transposição tira o nervo da frente e reduz a tensão.",
   "incorretas": {
-   "A": "O sinal da ampulheta é o estreitamento do nervo no ponto da compressão, visto na cirurgia ou na ultrassonografia. Ele indica compressão grave e pode motivar neurólise mais ampla, mas não é o critério que define a transposição.",
-   "C": "A subluxação acontece na flexão, não na extensão: é fletindo que o epicôndilo se afasta do olécrano e o nervo é empurrado para frente.",
-   "D": "Isquemia mantida do nervo não é achado que se avalie assim, e não é o critério descrito."
+   "A": "**Compressão grave.**\n- Pode motivar neurólise, não define transposição.",
+   "C": "**Movimento errado.**\n- A subluxação ocorre na flexão.",
+   "D": "**Não é critério.**\n- Não se avalia assim."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0367": {
-  "conceito": "O músculo acessório de Gantzer é uma cabeça acessória do flexor longo do polegar, presente numa parcela grande das pessoas, nascendo do processo coronoide ou do epicôndilo medial e descendo até o tendão do flexor longo.",
-  "correta": "Ele é possível causador da síndrome do interósseo anterior, porque o ramo costuma passar por baixo dele ou entre ele e o flexor profundo. A síndrome é motora pura: perda da flexão da interfalângica do polegar e da distal do indicador e do médio, com o gesto de \"ok\" achatado e sem qualquer alteração de sensibilidade. O Gantzer é achado anatômico frequente e quase sempre assintomático, mas precisa ser procurado quando se explora um interósseo anterior sem outra causa aparente.",
+  "conceito": "### Nervo interósseo anterior (NIA)\n- Ramo **motor puro** do mediano, sai logo abaixo do pronador redondo.\n- Desce sobre a **membrana interóssea** com a artéria interóssea anterior.\n\n| Músculo inervado | Função testada |\n|---|---|\n| flexor longo do polegar | flexão da IF do polegar |\n| ==flexor profundo do indicador e do médio== | ==flexão da IFD== desses dedos |\n| pronador quadrado | pronação com cotovelo fletido |\n\n### O que fica preservado\n| Músculo | Nervo |\n|---|---|\n| flexor superficial dos dedos | mediano (acima do NIA) |\n| pronador redondo, FRC, palmar longo | mediano |\n| tenar, lumbricais 1 e 2 | mediano na mão |\n| extensores | radial (NIP) |\n\n### Sinal do O\n- Polpa contra polpa achatada; IFP do indicador flete normalmente (FSD preservado).\n- Sensibilidade **normal**.\n\n### Causas de compressão do NIA\n| Estrutura | Detalhe |\n|---|---|\n| ==músculo de Gantzer== | ==cabeça acessória do FLP== (coronoide ou epicôndilo medial); frequente |\n| cabeça profunda do pronador redondo | banda fibrosa |\n| arcada do FSD | |\n| vasos trombosados, cistos | raros |\n\n- Diferencial: neurite braquial (Parsonage-Turner), que é a causa mais comum de paralisia espontânea do NIA.\n\n> **Na prova:** Gantzer = causa de ==síndrome do interósseo anterior==",
+  "correta": "**Síndrome do interósseo anterior.**\n- O ramo passa sob a cabeça acessória do FLP.\n- Motor puro: FLP e FPD do indicador e médio.",
   "incorretas": {
-   "B": "O túnel do carpo fica no punho, muito distal ao Gantzer, que é do terço proximal do antebraço.",
-   "C": "O túnel cubital é do nervo ulnar, no cotovelo, e o Gantzer não tem relação com ele.",
-   "D": "A síndrome do pronador é a compressão do mediano propriamente dito, e o agressor ali é o próprio pronador redondo, o lacerto fibroso ou a arcada do flexor superficial, não o Gantzer, que fica mais profundo e distal a esses pontos."
+   "B": "**Punho.**\n- Muito distal ao Gantzer.",
+   "C": "**Ulnar no cotovelo.**\n- Sem relação.",
+   "D": "**Mediano propriamente dito.**\n- Agressores: pronador, lacerto, arcada do FSD."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0368": {
-  "conceito": "O perfil epidemiológico da doença de Dupuytren é constante nas séries: predomínio masculino acentuado, origem no norte da Europa, herança autossômica dominante de penetrância variável.",
-  "correta": "É mais comum em homens e surge mais cedo neles. Nas mulheres a doença existe, mas começa mais tarde, em geral depois dos 60 anos, e evolui mais devagar, a ponto de a proporção entre os sexos diminuir com o avançar da idade. Início precoce, aliás, é critério de diátese: quanto mais cedo começa, mais agressiva tende a ser e mais recidiva depois da cirurgia.",
+  "conceito": "### Epidemiologia da doença de Dupuytren\n| Aspecto | Característica |\n|---|---|\n| sexo | ==masculino, cerca de 10:1== nas séries clássicas (menos em idosos) |\n| etnia | norte-europeus (\"doença dos vikings\"); rara em asiáticos e africanos |\n| idade | aumenta após 40 a 50 anos |\n| herança | autossômica dominante com penetrância variável |\n| lateralidade | bilateral, ==assimétrica== |\n\n### Associações\n- **Diabetes**, **álcool**, **tabagismo**, epilepsia (fenobarbital), HIV, trabalho com vibração, trauma.\n\n### Corticoide\n- Não é causa; a **infiltração de triancinolona** é usada em nódulos dolorosos iniciais.\n\n### Tratamentos\n| Opção | Indicação |\n|---|---|\n| observação | nódulo sem contratura |\n| aponeurotomia por agulha | cordas bem definidas, MF |\n| colagenase | cordas palpáveis (disponibilidade variável) |\n| fasciectomia limitada | padrão |\n| dermofasciectomia com enxerto | recidiva, diátese |\n\n### Quando foge do perfil\n| Situação | Significado |\n|---|---|\n| início antes dos 50 anos | ==diátese==: mais agressiva, mais recidiva |\n| mulher | começa mais tarde, evolui mais devagar |\n| criança com dedo fletido | pensar em camptodactilia, artrogripose |\n\n> **Na prova:** Dupuytren = ==mais comum e mais precoce em homens==",
+  "correta": "**Homens, mais precoce.**\n- Predomínio masculino acentuado.\n- Nas mulheres começa depois dos 60 e evolui devagar.\n- Início precoce é critério de diátese.",
   "incorretas": {
-   "A": "Erra o sexo e o momento de aparecimento.",
-   "B": "O momento está certo para as mulheres, mas o predomínio é masculino.",
-   "D": "O sexo está certo e o momento não: nos homens a doença começa mais cedo, não mais tarde."
+   "A": "**Duplamente errada.**\n- Nem sexo nem momento.",
+   "B": "**Sexo errado.**\n- O tardio é das mulheres, mas o predomínio é masculino.",
+   "D": "**Momento errado.**\n- Nos homens começa mais cedo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0369": {
