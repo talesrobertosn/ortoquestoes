@@ -4302,107 +4302,107 @@
   "conferido": false
  },
  "pediatria-0338": {
-  "conceito": "O arqueamento posteromedial congênito da tíbia apresenta história natural muito diferente da displasia anterolateral associada à pseudoartrose congênita. Ao nascimento há arqueamento posterior e medial da tíbia e fíbula, frequentemente acompanhado por pé calcaneovalgo em dorsiflexão acentuada. A angulação costuma remodelar espontaneamente de forma importante nos primeiros anos, mas permanece uma deficiência de crescimento da tíbia que produz discrepância de comprimento na maturidade. Por isso, a observação longitudinal deve separar dois problemas: deformidade angular, que geralmente melhora, e encurtamento, que pode persistir. Alongamentos suaves podem ser utilizados para o pé, porém gessos e órteses não são necessários rotineiramente para corrigir a tíbia. Osteotomia precoce também é evitada porque boa parte da deformidade se remodela. Persistência de angulação relevante em criança mais velha pode justificar correção, enquanto discrepância final é tratada por estratégias próprias de equalização.",
-  "correta": "A alternativa D está correta. Como a maior parte da angulação posteromedial remodela espontaneamente, osteotomia não deve ser realizada de rotina no lactente. Se, após aproximadamente 4 anos, persistir uma deformidade angular clinicamente relevante, a capacidade de remodelação residual é menor e uma osteotomia corretiva pode ser considerada. A decisão também deve levar em conta eixo mecânico, função e discrepância de comprimento.",
+  "conceito": "### Arqueamentos congênitos da tíbia\n| Direção | Associação | Evolução |\n|---|---|---|\n| ==posteromedial== | ==pé calcaneovalgo== | ==benigna==, corrige espontaneamente |\n| anterolateral | NF1, pseudartrose | maligna; órtese, nunca osteotomia profilática |\n| anteromedial | hemimelia fibular | discrepância, deformidade do pé |\n\n### Posteromedial: o que esperar\n- Angulação melhora nos primeiros 2 a 3 anos; o pé calcâneo também.\n- Deixa ==discrepância residual== (3 a 4 cm em média): acompanhar até a maturidade (epifisiodese ou alongamento).\n- Alongamento passivo do tornozelo em ==flexão plantar== (o pé está em dorsiflexão).\n- ==Osteotomia== só se persistir arqueamento importante ==após os 4 anos== (raro).\n\n> **Na prova:** posteromedial = benigno; osteotomia só se ==arqueamento persistir após 4 anos==",
+  "correta": "**Osteotomia após 4 anos se persistir.**\n- A maioria corrige sozinha.\n- Discrepância residual é o problema real.",
   "incorretas": {
-   "A": "Gessos seriados não são necessários para a maioria dos casos porque a deformidade tibial apresenta forte tendência à remodelação espontânea. Podem ser utilizados seletivamente para deformidade do pé, mas não constituem tratamento padrão do arqueamento ósseo.",
-   "B": "Órtese estabilizadora após início da marcha não é obrigatória na evolução habitual. O membro deve ser acompanhado, principalmente quanto ao comprimento e à remodelação, mas a órtese não altera de forma significativa o processo natural da tíbia.",
-   "C": "O pé associado é calcaneovalgo e já apresenta dorsiflexão excessiva; portanto, orientar manipulação para aumentar ainda mais a dorsiflexão não corresponde ao objetivo. Quando necessário, trabalha-se suavemente a posição do pé sem forçar estruturas."
+   "A": "**Gesso seriado.**\n- Não indicado; resolução espontânea.",
+   "B": "**Órtese.**\n- Desnecessária; não é o arqueamento anterolateral.",
+   "C": "**Direção errada.**\n- Pé já está em dorsiflexão; alonga-se em flexão plantar."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America. Posteromedial Bowing of the Tibia Study Guide.",
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0339": {
-  "conceito": "A forma oligoarticular é a mais comum da artrite idiopática juvenil e tem um perfil bem definido: menina pequena, entre dois e quatro anos, com quatro ou menos articulações acometidas (quase sempre o joelho), FAN positivo com frequência e, o que mais importa, risco alto de uveíte anterior crônica. Essa uveíte é silenciosa: não dói, não avermelha o olho e pode levar à perda visual antes de qualquer queixa. Por isso toda criança com essa forma precisa de exame oftalmológico com lâmpada de fenda em intervalos regulares.",
-  "correta": "Meninas entre 2 e 4 anos, o perfil característico da forma oligoarticular.",
+  "conceito": "### Artrite idiopática juvenil (ILAR)\n| Subtipo | Perfil |\n|---|---|\n| ==oligoarticular== | ==o mais comum== (50%); ==meninas de 2 a 4 anos==; ≤ 4 articulações (joelho); ==FAN+ e uveíte== |\n| poliarticular FR- | meninas, qualquer idade |\n| poliarticular FR+ | adolescentes, semelhante à AR |\n| sistêmica (Still) | febre, exantema, serosite, hepatoesplenomegalia |\n| entesite (ERA) | meninos > 8 anos, HLA-B27 |\n| psoriásica | dactilite |\n\n### Ortopedia\n- Joelho com derrame crônico: ==hipercrescimento do membro== (hiperemia da fise), valgo, flexo.\n- Rastreio oftalmológico periódico (uveíte assintomática).\n\n> **Na prova:** oligoarticular = ==meninas de 2 a 4 anos==",
+  "correta": "**Meninas, 2 a 4 anos.**\n- Subtipo mais comum.\n- FAN positivo e uveíte silenciosa.",
   "incorretas": {
-   "A": "O sexo está certo, mas a faixa é mais tardia do que 1 a 2 anos.",
-   "C": "O predomínio é feminino, e a faixa etária também não corresponde.",
-   "D": "A faixa etária está certa, mas o predomínio é de meninas."
+   "A": "**Idade.**\n- Pico entre 2 e 4 anos.",
+   "C": "**Sexo e idade.**\n- Predomina em meninas.",
+   "D": "**Sexo.**\n- Predomina em meninas."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0340": {
-  "conceito": "Os quatro critérios de Kocher, febre acima de 38,5 graus, incapacidade de apoiar o membro, VHS acima de 40 mm/h e leucócitos acima de 12.000, dão uma probabilidade acumulada de artrite séptica: cerca de 3% com um, 40% com dois, mais de 93% com três e praticamente 100% com quatro. A pergunta aqui inverte a leitura: se a probabilidade de artrite séptica com os quatro critérios beira 100%, a de ser sinovite transitória é o complemento, ou seja, abaixo de 10%, na prática, próxima de 1%.",
-  "correta": "Menos de 10% de chance de ser sinovite transitória.",
+  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n### Raciocínio inverso\n- Com ==4 critérios==, a probabilidade de artrite séptica é de ==99%==.\n- Logo, a de sinovite transitória é ==< 1%== (< 10%).\n\n> **Na prova:** 4 critérios de Kocher = sinovite transitória ==< 10%== (séptica 99%)",
+  "correta": "**< 10%.**\n- Séptica em 99% com 4 critérios.\n- Sinovite fica abaixo de 1%.",
   "incorretas": {
-   "B": "40% é a probabilidade de artrite séptica com DOIS critérios, e não a de sinovite com quatro.",
-   "C": "70% não corresponde a nenhum patamar da série.",
-   "D": "90% inverte a leitura: com quatro critérios é a artrite séptica que beira essa probabilidade."
+   "B": "**40%.**\n- Probabilidade de séptica com 2 critérios.",
+   "C": "**70%.**\n- Não corresponde.",
+   "D": "**90%.**\n- É o inverso (séptica com 3 a 4)."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0341": {
-  "conceito": "No tratamento da luxação congênita do quadril associada à artrogripose, a decisão de tentar a redução (fechada ou aberta) depende muito da qualidade da articulação disponível para ser reduzida, diferente da displasia do desenvolvimento do quadril isolada, em que a redução é quase sempre almejada. Quando há **limitação marcada da amplitude de flexo-extensão** do quadril (refletindo uma articulação rígida, com pouco potencial de mobilidade funcional mesmo após uma eventual redução anatômica), essa rigidez é considerada uma **contraindicação relativa importante à redução**, já que submeter a criança ao trauma cirúrgico de uma redução (com risco de rigidez ainda maior, necrose avascular e dor) tem pouco benefício funcional esperado quando o quadril já não tem amplitude de movimento útil para ganhar com a cirurgia.\n\nNesses casos, a prioridade terapêutica costuma ser preservar (ou ganhar) amplitude de movimento funcional, mesmo que o quadril permaneça luxado, em vez de insistir na redução anatômica a qualquer custo.",
-  "correta": "D. A limitação marcada da amplitude de flexo-extensão do quadril contraindica a redução na luxação congênita associada à artrogripose.",
+  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n### Luxação do quadril na artrogripose\n- Luxação ==teratológica==: redução fechada costuma ==falhar==.\n- ==Unilateral==: reduzir (evita obliquidade pélvica e escoliose), redução aberta por via medial aos 3 a 6 meses.\n- Bilateral: controversa; reduzir se bom potencial de marcha e boa mobilidade.\n- ==Arco de flexo-extensão muito limitado== (quadril rígido): ==contraindica== a redução (resultado ruim, rigidez).\n\n> **Na prova:** rigidez marcada contraindica a ==redução do quadril== na artrogripose",
+  "correta": "**Rigidez contraindica.**\n- Quadril rígido reduzido evolui mal.\n- Mobilidade orienta a decisão.",
   "incorretas": {
-   "A": "A redução não é categoricamente evitada em casos unilaterais, a decisão depende mais da qualidade e mobilidade da articulação do que apenas da lateralidade.",
-   "B": "O potencial de deambulação é, sim, um fator relevante considerado na decisão de indicar ou não a redução cirúrgica nesses pacientes.",
-   "C": "A redução fechada isolada costuma ter baixa taxa de sucesso na artrogripose, justamente pela rigidez articular característica, a tentativa isolada no período neonatal não é a conduta padrão recomendada sem essa ressalva."
+   "A": "**Unilateral deve ser reduzida.**\n- Evita obliquidade pélvica.",
+   "B": "**Marcha influencia.**\n- Potencial de deambulação guia a indicação.",
+   "C": "**Redução fechada falha.**\n- Luxação teratológica: via aberta medial."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0342": {
-  "conceito": "A atrofia muscular espinhal é uma doença do neurônio motor inferior, geralmente causada por deleção ou mutação bialélica de SMN1, com gravidade modulada em parte pelo número de cópias de SMN2. A classificação fenotípica histórica considera idade de início e maior marco motor atingido. Tipo 0 inicia no período fetal, com fraqueza neonatal extrema; tipo I surge antes de 6 meses e a criança não senta independentemente; tipo II geralmente inicia entre 6 e 18 meses, a criança consegue sentar sem apoio quando colocada nessa posição, mas historicamente não adquire marcha independente; tipo III apresenta marcha independente, embora possa perdê-la posteriormente; tipo IV é uma forma adulta e mais branda. Hipotonia, fraqueza proximal, arreflexia, escoliose e contraturas são frequentes. A cognição é preservada. Terapias modificadoras de doença mudaram a história natural, portanto a classificação baseada em marcos motores deve ser interpretada no contexto da era terapêutica.",
-  "correta": "A alternativa C está correta. A característica que melhor identifica a atrofia muscular espinhal tipo II é a capacidade de adquirir controle suficiente do tronco para sentar sem apoio, porém sem desenvolver marcha independente na história natural clássica. O dado é justamente o divisor funcional entre tipo I, em que a criança não chega a sentar independentemente, e tipo III, em que a marcha é adquirida.",
+  "conceito": "### Atrofia muscular espinhal (AME)\n- Degeneração das células do ==corno anterior==; gene ==SMN1== (5q), AR.\n- Fraqueza ==proximal, simétrica, MMII > MMSS==; ==arreflexia==; fasciculação de língua.\n\n| Tipo | Início | Função máxima |\n|---|---|---|\n| I (Werdnig-Hoffmann) | < 6 meses | ==nunca senta== |\n| ==II== | 6 a 18 meses | ==senta sem apoio==, nunca anda |\n| III (Kugelberg-Welander) | > 18 meses | ==anda== (pode perder) |\n| IV | adulto | anda |\n\n### Ortopedia\n- Escoliose quase universal no tipo II (colete, hastes de crescimento, artrodese).\n- Quadril subluxado frequentemente assintomático: observação.\n- Terapias: nusinersena, onasemnogeno, risdiplam.\n\n> **Na prova:** AME tipo II = ==senta com equilíbrio de tronco, não anda==",
+  "correta": "**Senta com equilíbrio de tronco.**\n- Marco máximo do tipo II.\n- Nunca adquire marcha.",
   "incorretas": {
-   "A": "Reflexos profundos, inclusive patelar, costumam estar reduzidos ou ausentes na atrofia muscular espinhal porque a doença compromete neurônios motores inferiores. Reflexo patelar preservado não é a característica definidora do tipo II.",
-   "B": "A capacidade de caminhar independentemente caracteriza historicamente o fenótipo tipo III, não o tipo II. Tratamentos modernos podem modificar marcos motores, mas a classificação tradicional utilizada pela questão é baseada no máximo desempenho motor natural.",
-   "D": "Fraqueza de membros superiores pode ocorrer com progressão, porém a doença tipicamente apresenta predomínio proximal e maior comprometimento inicial dos membros inferiores. Esse achado não distingue especificamente o tipo II."
+   "A": "**Arreflexia.**\n- Reflexo patelar ausente.",
+   "B": "**Não anda.**\n- Marcha é do tipo III.",
+   "D": "**MMII mais fracos.**\n- Fraqueza predomina nos membros inferiores."
   },
   "referencias": [
    "Spinal Muscular Atrophy. GeneReviews. NCBI Bookshelf NBK1352.",
    "Clinical Features, Epidemiology, Natural History, and Management of Spinal Muscular Atrophy. NCBI Bookshelf NBK533981."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0343": {
-  "conceito": "A coxa vara do desenvolvimento é uma deformidade progressiva do fêmur proximal caracterizada por redução do ângulo cervicodiafisário e orientação anormal da fise proximal, frequentemente acompanhada de retroversão. O ângulo epifisário de Hilgenreiner é uma medida fundamental. Traça-se a linha de Hilgenreiner horizontalmente através das cartilagens trirradiadas e uma segunda linha ao longo da fise proximal do fêmur; o ângulo entre essas duas linhas é o ângulo epifisário de Hilgenreiner. Quanto maior o ângulo, maior a orientação vertical da fise e maior o componente de cisalhamento que perpetua a deformidade. Valores acima de aproximadamente 60 graus são associados a progressão e constituem indicação clássica de correção cirúrgica. Clinicamente, surgem claudicação, Trendelenburg, encurtamento e limitação de abdução e rotação interna. A osteotomia valgizante procura reduzir o ângulo epifisário e transformar cisalhamento em compressão.",
-  "correta": "A alternativa D está correta. O ângulo epifisário de Hilgenreiner é formado pela linha horizontal de Hilgenreiner e pela linha correspondente à fise femoral proximal. É justamente essa relação que quantifica a verticalização da fise na coxa vara do desenvolvimento. Quanto mais elevado o ângulo, maior a tendência de progressão e maior a importância da correção valgizante.",
+  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Como medir o HE\n- Ângulo entre a ==linha de Hilgenreiner== (horizontal, pelas trirradiadas) e a ==linha da fise femoral proximal==.\n- Normal < 25 a 30°.\n- Diferente do ângulo cervicodiafisário (colo × diáfise).\n\n> **Na prova:** ângulo HE = ==Hilgenreiner × linha epifisária proximal==",
+  "correta": "**Hilgenreiner × fise proximal.**\n- Mede a verticalização da fise.\n- Guia a indicação de osteotomia.",
   "incorretas": {
-   "A": "O ângulo entre o eixo da diáfise e o colo femoral é o ângulo cervicodiafisário. Ele também é importante na coxa vara, mas não deve ser confundido com o ângulo epifisário de Hilgenreiner solicitado pelo enunciado.",
-   "B": "A linha de Hilgenreiner participa da medida, porém a segunda referência não é o eixo do colo femoral. O parâmetro foi criado para expressar a orientação da própria fise proximal em relação ao plano horizontal.",
-   "C": "Relacionar o eixo diafisário à fise não corresponde à definição do ângulo de Hilgenreiner. Essa construção poderia expressar outra relação geométrica do fêmur proximal, mas não é a medida padronizada usada para prognóstico da coxa vara."
+   "A": "**Cervicodiafisário.**\n- Outro ângulo.",
+   "B": "**Colo femoral.**\n- Não é a referência.",
+   "C": "**Diáfise × fise.**\n- Não é o HE."
   },
   "referencias": [
    "Surgical correction of coxa vara: Evaluation of neck shaft angle, Hilgenreiner-epiphyseal angle for indication of recurrence. PMCID: PMC6494758.",
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0344": {
-  "conceito": "A **deficiência congênita do fêmur** (antigo \"deficiência femoral focal proximal\") é um espectro de hipoplasia femoral, do encurtamento simples até a ausência funcional do segmento proximal com grande discrepância de comprimento.\n\nA deformidade não é só longitudinal. O quadril tipicamente apresenta:\n- **Flexão**\n- **Abdução**\n- **Rotação externa**\n\nPodem coexistir coxa vara, deficiência acetabular, instabilidade do joelho e hemimelia fibular.\n\nO planejamento exige estimar o comprimento previsto na maturidade e avaliar estabilidade do quadril e do joelho, amplitude articular, pé e função muscular. Crianças com reconstrução articular possível podem ser candidatas a procedimentos de estabilização e alongamento; nas deficiências mais graves, rotationplastia ou protetização podem oferecer melhor função.\n\nEm TEOT/TARO, é comum cobrar justamente essa postura típica do quadril e a associação com a deficiência fibular.",
-  "correta": "A alternativa **C** está correta: a postura clínica típica é quadril **fletido**, **abduzido** e em **rotação externa**.\n\nEsse padrão deriva da anatomia anormal do fêmur proximal e das contraturas de partes moles que acompanham a deficiência longitudinal. Reconhecê-lo é importante tanto para o diagnóstico quanto para o planejamento, já que corrigir apenas o encurtamento sem abordar a deformidade e a estabilidade proximal pode comprometer qualquer estratégia de alongamento.",
+  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n> **Na prova:** contratura na DFFP = ==flexão, abdução e rotação externa==.",
+  "correta": "**Abduzido e em rotação externa.**\n- Quadril fletido, abduzido e em RE.\n- Coxa curta e volumosa.",
   "incorretas": {
-   "A": "A flexão é um componente frequente, mas a combinação de **adução** e **rotação interna** não representa o padrão habitual: a deficiência proximal tende a produzir abdução e rotação externa do segmento femoral.",
-   "B": "A rotação externa está de acordo com a deformidade típica, porém o quadril costuma estar em **abdução**, não em adução. A direção da contratura é uma associação clássica cobrada em questões sobre deficiência femoral congênita.",
-   "D": "A abdução é característica, mas o componente rotacional esperado é o **externo**. A rotação interna seria o sentido oposto ao da deformidade mais frequentemente observada nesses pacientes."
+   "A": "**Adução e RI.**\n- Oposto.",
+   "B": "**Adução.**\n- Fica abduzido.",
+   "D": "**RI.**\n- Fica em RE."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America. Proximal Focal Femoral Deficiency Study Guide.",
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0345": {
-  "conceito": "No manejo da deficiência congênita longitudinal da fíbula (hemimelia fibular), com ausência completa do osso e deformidade importante do pé, um dos princípios reconhecidos no planejamento cirúrgico (especialmente em casos bilaterais, onde a função dos membros inferiores se torna ainda mais crítica para a independência da criança) é considerar a **funcionalidade dos membros superiores** antes de indicar amputação bilateral dos membros inferiores: se os membros superiores também não forem funcionais (por exemplo, em uma condição sindrômica associada), a criança perderia sua principal via alternativa de mobilidade e autocuidado (engatinhar, transferências, uso de próteses com apoio manual), o que pode **contraindicar a amputação bilateral** nesse contexto específico, levando a considerar alternativas reconstrutivas mesmo com resultado funcional inferior.",
-  "correta": "A. Membros superiores não funcionais podem contraindicar a amputação em casos bilaterais de deficiência longitudinal da fíbula.",
+  "conceito": "### Hemimelia fibular\n- Deficiência longitudinal ==pós-axial==; a mais comum dos ossos longos.\n- Espectro: fíbula ausente ou hipoplásica, tíbia curta e arqueada (anteromedial, com covinha), fêmur curto, pé equinovalgo, ==raios laterais ausentes==, coalizão tarsal (bola e soquete no tornozelo).\n\n### Joelho\n| Achado | Consequência |\n|---|---|\n| ==hipoplasia do côndilo femoral lateral== | joelho valgo |\n| ==cruzados hipoplásicos ou ausentes== | ==instabilidade anteroposterior== |\n| espinhas tibiais pequenas | |\n\n### Classificações e tratamento\n- Achterman-Kalamchi, Paley (baseada no tornozelo e reconstrutibilidade).\n- Discrepância prevista e pé funcional decidem entre ==alongamento== (Paley SUPERankle) e ==Syme== + prótese.\n\n### Detalhes de conduta\n| Ponto | Regra |\n|---|---|\n| bilateral com MMSS não funcionais | ==não amputar==: os pés substituem as mãos |\n| Syme × Boyd | ==Boyd== (artrodese calcâneo-tibial) retém melhor o coxim e evita migração |\n| discrepância < 5 cm | epifisiodese contralateral |\n| arqueamento tibial | ==anteromedial==; corrigir com osteotomia se necessário |\n\n> **Na prova:** MMSS não funcionais ==contraindicam amputação bilateral==",
+  "correta": "**MMSS não funcionais contraindicam.**\n- Pés preservados servem para preensão.\n- Decisão individual.",
   "incorretas": {
-   "B": "A vantagem classicamente atribuída à técnica de Boyd sobre a de Syme é a preservação do calcâneo fundido à tíbia, proporcionando um coto de apoio terminal mais estável e durável, não o contrário.",
-   "C": "O limiar mais comumente citado para manejo apenas com epifisiodese contralateral é de discrepâncias bem menores (na faixa de poucos centímetros, tipicamente até cerca de 5 a 6 cm), não de até 10 cm.",
-   "D": "A hemimelia fibular, quando associada a arqueamento da tíbia, classicamente cursa com curvatura anterolateral, não posteromedial, a curvatura posteromedial é característica de uma condição distinta, geralmente autolimitada."
+   "B": "**Boyd é melhor.**\n- Fixa o calcâneo e mantém o coxim.",
+   "C": "**Limite errado.**\n- Epifisiodese para discrepâncias pequenas (< 5 cm).",
+   "D": "**Direção errada.**\n- Arqueamento é anteromedial."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0346": {
