@@ -6619,111 +6619,112 @@
   "conferido": false
  },
  "mao-0570": {
-  "conceito": "A figura mostra as origens musculares no dorso do antebraço, e a seta aponta a área larga que atravessa a membrana interóssea alcançando os dois ossos. Essa é a assinatura do abdutor longo do polegar: entre os músculos profundos do dorso, é o único que se origina ao mesmo tempo da face posterior da ulna, da membrana interóssea e da face posterior do rádio, e é também o mais proximal deles. Daí ele cruza obliquamente por cima dos extensores radiais do carpo para chegar à base do primeiro metacarpo.",
-  "correta": "Abdutor longo do polegar: origem larga em ulna, membrana interóssea e rádio, a mais proximal dos músculos profundos do dorso.",
+  "conceito": "### Compartimento dorsal do antebraço\n| Camada | Músculos |\n|---|---|\n| superficial | ERLC, ERCC, extensor comum, extensor do mínimo, EUC (+ braquiorradial) |\n| profunda | supinador, ==abdutor longo, extensor curto e extensor longo do polegar==, extensor do indicador |\n\n- O ==nervo interósseo posterior== sai do supinador e corre ==entre as camadas==.\n\n### Extensor longo do polegar\n- Trajeto ==oblíquo acentuado==, do lado ulnar ao radial.\n- Contorna o ==tubérculo de Lister== (3º compartimento) e cruza os extensores radiais.\n- Interseção distal; ruptura por atrito após fratura do rádio (mesmo sem desvio).\n\n### Nervos sensitivos\n- Cutâneo antebraquial posterior: subcutâneo, ramo do radial no braço.\n\n### Origens da camada profunda dorsal\n| Músculo | Origem | Posição |\n|---|---|---|\n| ==abdutor longo do polegar== | ==ulna, membrana interóssea e rádio== | ==o mais proximal== |\n| extensor curto do polegar | rádio e membrana | distal ao ALP |\n| extensor longo do polegar | ulna e membrana | distal ao ALP |\n| extensor do indicador | ulna e membrana | o mais distal |\n\n> **Na prova:** origem larga cruzando a membrana nos dois ossos = ==abdutor longo do polegar==",
+  "correta": "**Abdutor longo do polegar.**\n- Nasce de ulna, membrana e rádio.\n- O mais proximal da camada profunda.",
   "incorretas": {
-   "A": "O extensor longo do polegar nasce só da face posterior da ulna e da membrana interóssea vizinha, distal ao abdutor longo, numa área bem mais estreita.",
-   "B": "O extensor curto do polegar nasce apenas do rádio e da membrana interóssea, distal ao abdutor longo, e não alcança a ulna.",
-   "D": "O extensor ulnar do carpo tem cabeça na origem extensora comum, no epicôndilo lateral, e outra na borda posterior da ulna, não é uma origem que cruze a membrana interóssea."
+   "A": "**Ulna e membrana.**\n- Área estreita, distal.",
+   "B": "**Rádio e membrana.**\n- Não alcança a ulna.",
+   "D": "**Epicôndilo e borda ulnar.**\n- Não cruza a membrana."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Netter, Atlas de Anatomia Humana, 7ª edição, Seção 7"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0571": {
-  "conceito": "O desenho mostra o epineuro aberto e as suturas passando na bainha de cada fascículo, uma a uma, com o nó ficando dentro do coto, não na capa externa do nervo. Isso é a neurorrafia perineural, também chamada fascicular. Ela permite alinhar fascículo com fascículo, o que interessa nos nervos mistos, em que uma coaptação torta manda axônio motor para caminho sensitivo; o preço é mais manipulação e mais material de sutura dentro do nervo, com mais fibrose.",
-  "correta": "Perineural (fascicular): a sutura pega o perineuro de cada fascículo, como o desenho mostra.",
+  "conceito": "### Envoltórios do nervo\n| Camada | Envolve | Sutura |\n|---|---|---|\n| endoneuro | cada axônio | ==não existe endoneurorrafia== |\n| perineuro | cada fascículo | perineurorrafia (fascicular) |\n| ==epineuro== | ==nervo inteiro== | ==epineurorrafia== (padrão) |\n\n### Técnicas\n| Técnica | Indicação | Vantagem × custo |\n|---|---|---|\n| ==epineurorrafia== | ==maioria dos reparos== | menos trauma e fibrose; alinhamento por vasos epineurais |\n| perineurorrafia | fascículos grandes, grupos motor e sensitivo conhecidos (ulnar no punho) | mais precisa, mais manipulação |\n| epiperineurorrafia | intermediária | pontos no epineuro e perineuro periférico |\n\n### Princípios\n- Sem tensão (fio 8-0 a 10-0 deve segurar); se houver gap, enxerto ou conduto.\n- Alinhar pelos vasos longitudinais e pelo desenho fascicular.\n\n> **Na prova:** pontos no perineuro de cada fascículo = ==neurorrafia perineural (fascicular)==",
+  "correta": "**Perineural.**\n- Ponto na bainha de cada fascículo.\n- Alinha fascículos em nervos mistos; mais manipulação.",
   "incorretas": {
-   "A": "Na epineural os pontos ficam só na capa externa do nervo, sem tocar os fascículos, não é o que a figura mostra.",
-   "C": "Não existe reparo endoneural: o endoneuro envolve o axônio isolado e não tem consistência para segurar ponto.",
-   "D": "A interfascicular (fascicular em grupo) sutura o epineuro interno que separa grupos de fascículos, não a bainha de cada fascículo individualmente."
+   "A": "**Só capa externa.**\n- Não toca os fascículos.",
+   "C": "**Não existe.**\n- Endoneuro não segura ponto.",
+   "D": "**Grupos de fascículos.**\n- Não cada fascículo."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 67"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0572": {
-  "conceito": "Enxerto de tendão flexor precisa de um doador fino, longo, liso e dispensável. O palmar longo cumpre tudo isso: está no mesmo campo cirúrgico, tem o calibre certo para deslizar dentro da bainha digital, tem comprimento suficiente do punho à falange distal e sua ausência não faz falta nenhuma. Falta em cerca de 15% das pessoas, e é isso (não a qualidade) que obriga a procurar outro.",
-  "correta": "Palmar longo: mesmo campo cirúrgico, calibre e comprimento adequados, e nenhuma perda funcional ao retirá-lo.",
+  "conceito": "### Palmar longo\n| Aspecto | Dado |\n|---|---|\n| origem | epicôndilo medial |\n| inserção | aponeurose palmar |\n| nervo | mediano |\n| ausência | ==cerca de 15%== (uni ou bilateral) |\n| uso | ==enxerto tendíneo== mais usado da mão |\n\n### Testes de presença\n| Teste | Manobra |\n|---|---|\n| ==clássico (Schaeffer)== | ==oponência polegar-mínimo + flexão ativa do punho== contra resistência |\n| Thompson | punho fletido, polegar sob os dedos fechados |\n| Mishra | abdução resistida do polegar com punho fletido |\n\n### Outros enxertos\n- Plantar delgado (ausente em até 20%), extensores dos dedos do pé, flexor superficial.\n\n### Referência cirúrgica\n- O mediano fica imediatamente profundo e ==radial== ao palmar longo no punho.\n\n> **Na prova:** enxerto preferencial para flexor = ==palmar longo==",
+  "correta": "**Palmar longo.**\n- Mesmo campo, calibre e comprimento certos, dispensável.\n- Ausente em cerca de 15%.",
   "incorretas": {
-   "B": "O plantar delgado é a segunda opção, não a primeira: exige um segundo campo cirúrgico, no membro inferior, e também falta em parte das pessoas.",
-   "C": "O extensor longo dos dedos do pé serve quando são necessários enxertos múltiplos ou muito longos, mas de novo cobra outro campo cirúrgico e não é a escolha preferencial.",
-   "D": "O extensor comum dos dedos da mão é um tendão em uso: retirá-lo troca um déficit de flexão por um de extensão."
+   "B": "**Segunda opção.**\n- Outro campo, também pode faltar.",
+   "C": "**Enxertos múltiplos.**\n- Outro campo.",
+   "D": "**Tendão em uso.**\n- Troca um déficit por outro."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 71"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0573": {
-  "conceito": "As cordas do Dupuytren se distinguem pela relação com o feixe neurovascular, e é isso que decide o risco da dissecção. A corda pré-tendínea (central) fica volar ao feixe e vem direto da fáscia palmar. A corda espiral é a perigosa: envolve o feixe e o desloca para a linha média e para a superfície, aproximando o nervo da pele. A corda lateral vem da fáscia digital lateral. A retrovascular é a única que corre dorsal ao feixe, encostada no periósteo da falange, e é a que responde pela contratura residual da interfalângica proximal depois de uma fasciectomia aparentemente completa. Ressalva: a foto é de baixa resolução, e o que sustenta a resposta é a posição da estrutura em relação ao feixe, não um detalhe visível de textura.",
-  "correta": "Retrovascular: é a corda que passa por trás do feixe neurovascular, junto ao periósteo, a única das quatro nessa posição, e a que costuma sobrar quando a interfalângica proximal continua fletida depois da cirurgia.",
+  "conceito": "### Fáscia palmar normal → corda patológica\n| Estrutura normal | Orientação | Corda | Efeito |\n|---|---|---|---|\n| banda pré-tendínea | longitudinal | pré-tendínea (central na palma) | flexão da MF |\n| ==ligamento natatório== | ==transversa, nas comissuras== | ==natatória== | ==fecha a comissura, limita abdução== |\n| banda espiral + lâmina digital lateral + Grayson | espiral | ==corda espiral== | flexão da IFP, desloca o feixe |\n| lâmina digital lateral | longitudinal no dedo | lateral | flexão da IFP e IFD |\n| fibras transversas (lig. palmar transverso) | transversa proximal | ==poupada== | |\n| ligamento de Cleland | dorsal ao feixe | ==poupado== | |\n\n### Memória\n- Pré-tendínea limita ==extensão== do dedo.\n- Natatória limita ==abertura== entre os dedos.\n\n### Qual corda, qual articulação\n| Corda | Contratura | Risco cirúrgico |\n|---|---|---|\n| ==pré-tendínea== | ==MF== | baixo (linha média, longe do feixe); corrige bem |\n| espiral | IFP | ==alto==: feixe deslocado para o centro e superfície |\n| central (digital) | IFP | moderado |\n| natatória | comissura | |\n| abdutor do mínimo | IFP do mínimo | |\n\n| retrovascular | IFD (residual) | dorsal ao feixe |\n\n> **Na prova:** corda dorsal ao feixe, junto ao periósteo = ==retrovascular==",
+  "alerta": "A foto da questão tem baixa resolução. A resposta se sustenta pela posição da corda em relação ao feixe neurovascular.",
+  "correta": "**Retrovascular.**\n- Única dorsal ao feixe, junto ao periósteo.\n- Explica contratura residual após fasciectomia.",
   "incorretas": {
-   "A": "A corda lateral origina-se na fáscia digital lateral e permanece lateral ao feixe, não dorsal a ele.",
-   "B": "A corda central (pré-tendínea) é volar, superficial ao feixe, e é a que se encontra primeiro ao abrir a palma.",
-   "C": "A corda espiral também é volar na origem: ela envolve o feixe e o traz para a superfície, o que é o oposto de estar por trás dele."
+   "A": "**Lateral ao feixe.**\n- Fáscia digital lateral.",
+   "B": "**Volar.**\n- A primeira que aparece.",
+   "C": "**Volar na origem.**\n- Traz o feixe à superfície."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 80"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0574": {
-  "conceito": "A dissecção mostra o feixe neurovascular do braço no seu trajeto medial, com o corte transversal à esquerda. A seta indica o nervo que corre entre a artéria braquial e a veia basílica, superficial e colado à veia, posição do nervo cutâneo medial do antebraço. É ele que perfura a fáscia junto com a basílica, na metade do braço, e leva sensibilidade para a face medial do antebraço. Importa saber onde ele está por dois motivos: é o nervo doador clássico de enxertos e é o que se lesa em punção de veia basílica e no acesso medial do cotovelo.",
-  "correta": "Cutâneo medial do antebraço: nervo superficial, acompanhando a veia basílica ao longo da face medial do braço.",
+  "conceito": "### Veias e nervos superficiais do membro superior\n| Lado | Veia | Nervo acompanhante |\n|---|---|---|\n| radial | ==cefálica== | ramo superficial do radial (punho), cutâneo lateral do antebraço |\n| ==ulnar== | ==basílica== | ramo dorsal do ulnar; cutâneo medial do antebraço (volar-medial) |\n| dorso do antebraço | tributárias | ==cutâneo posterior do antebraço== (radial) |\n\n### Origem dos cutâneos do antebraço\n| Nervo | Origem |\n|---|---|\n| lateral | musculocutâneo |\n| medial | fascículo medial (C8-T1) |\n| posterior | radial (no braço) |\n\n### Na prática\n- Veias dorsais são essenciais à drenagem: sacrificá-las gera edema.\n- Nervos cutâneos ao lado das veias: neuroma na dissecção descuidada.\n\n### No braço\n| Nervo | Posição |\n|---|---|\n| ==cutâneo medial do antebraço== | ==superficial, junto à basílica==; perfura a fáscia no meio do braço |\n| mediano | com a artéria braquial |\n| ulnar | atravessa o septo e vai para trás |\n| cutâneo medial do braço | proximal, curto |\n\n- Doador clássico de enxerto; lesado na punção da basílica e no acesso medial do cotovelo.\n\n> **Na prova:** nervo junto à basílica no braço = ==cutâneo medial do antebraço==",
+  "correta": "**Cutâneo medial do antebraço.**\n- Superficial, acompanhando a basílica.\n- Doador de enxerto; risco no acesso medial.",
   "incorretas": {
-   "A": "O ulnar, nesse nível, já atravessou o septo intermuscular medial e correu para trás, em direção ao túnel cubital, fica profundo e posterior, não junto à veia.",
-   "B": "O mediano acompanha a artéria braquial e segue com ela até a fossa cubital; é o nervo que aparece sobre a artéria, e não o apontado.",
-   "C": "O cutâneo medial do braço é mais proximal e mais curto, e inerva a pele da face medial do braço, não desce acompanhando a basílica até o antebraço."
+   "A": "**Posterior e profundo.**\n- Rumo ao túnel cubital.",
+   "B": "**Com a artéria.**\n- Sobre a braquial.",
+   "C": "**Proximal e curto.**\n- Não desce ao antebraço."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Netter, Atlas de Anatomia Humana, 7ª edição, Seção 7"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0575": {
-  "conceito": "A osteotomia de extensão da base do primeiro metacarpo trata a rizartrose inicial redirecionando a carga: ela transfere o contato da porção volar da trapeziometacarpiana, que é onde a cartilagem se gasta primeiro, para a porção dorsal, ainda preservada. Por isso só serve nos estágios iniciais, com cartilagem dorsal íntegra. A geometria é a de uma cunha de fechamento dorsal: o corte fica cerca de 1 cm distal à superfície articular, deixando osso subcondral suficiente para fixar, e a cunha de aproximadamente 5 mm de base produz algo em torno de 20 a 30 graus de extensão num metacarpo dessa largura.",
-  "correta": "10 mm de distância da superfície articular e cunha de 5 mm: o corte fica longe o bastante para permitir fixação, e a cunha corresponde à extensão pretendida.",
+  "conceito": "### Eaton-Littler e conduta na rizartrose\n| Estágio | Radiografia | Opções |\n|---|---|---|\n| ==I== | normal ou espaço **alargado** (sinovite), subluxação < 1/3 | órtese, infiltração, ==reconstrução ligamentar (Eaton-Littler)==, osteotomia de extensão do 1º MC |\n| II | estreitamento, osteófitos < 2 mm | osteotomia, artroscopia, trapezectomia parcial |\n| III | osteófitos > 2 mm, esclerose, cistos | trapezectomia (± LRTI), artrodese, prótese |\n| IV | + escafotrapeziotrapezoide (pantrapezial) | trapezectomia total |\n\n### Técnica de Eaton-Littler\n- Tira de **metade do flexor radial do carpo** passada por túnel na base do 1º MC.\n- Reconstrói o **ligamento oblíquo anterior** (freio da subluxação dorsal).\n- Só faz sentido com **cartilagem preservada**.\n\n### LRTI (Burton-Pellegrini)\n- Trapezectomia + reconstrução ligamentar + interposição tendínea (FRC ou abdutor longo).\n\n### Osteotomia de extensão (Wilson)\n- Cunha de fechamento ==dorsal== na base do 1º MC.\n- Corte a cerca de ==10 mm== da superfície articular; cunha de cerca de ==5 mm== (20 a 30° de extensão).\n- Desloca a carga da faceta volar gasta para a dorsal preservada.\n- Estágios I e II, sobretudo jovens.\n\n> **Na prova:** osteotomia da base do 1º MC = ==10 mm da articulação, cunha de 5 mm==",
+  "correta": "**10 mm e 5 mm.**\n- Corte longe o bastante para fixar.\n- Cunha corresponde a 20 a 30° de extensão.",
   "incorretas": {
-   "A": "5 mm da superfície articular deixa o fragmento proximal curto demais para segurar a fixação com segurança.",
-   "C": "Erra nas duas medidas: aproxima demais o corte da articulação e ainda pede uma cunha de 10 mm, que hipercorrige.",
-   "D": "A distância está certa, mas uma cunha de 10 mm dobra a correção pretendida e leva a extensão excessiva do metacarpo."
+   "A": "**Muito perto.**\n- Fragmento proximal curto.",
+   "C": "**Duplamente errada.**\n- Perto demais e hipercorrige.",
+   "D": "**Cunha grande.**\n- Extensão excessiva."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, 6ª edição, Cap. 65"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0576": {
-  "alerta": "Nas duas escalas de monofilamentos que conheço, a perda da sensibilidade protetora é do filamento VERMELHO, não do amarelo. No kit de Semmes-Weinstein de cinco cores usado em reabilitação da mão a sequência é verde (normal), azul (tato leve diminuído), violeta (sensibilidade protetora diminuída) e vermelho (perda da sensibilidade protetora). No estesiômetro de seis cores adotado no Brasil, a sequência é verde 0,05 g, azul 0,2 g, violeta 2 g, vermelho 4 g, laranja 10 g e magenta 300 g, e ali quem marca a perda da protetora na mão é o vermelho, com o laranja correspondendo ao pé. Não encontro o amarelo em nenhuma das duas. Guarde o raciocínio das cores; o gabarito desta questão eu não consigo sustentar.",
-  "conceito": "O monofilamento de Semmes-Weinstein mede o limiar de pressão: cada cor corresponde a uma força fixa, e o que se registra é o filamento mais fino que o paciente ainda percebe. A escala é crescente em força e decrescente em função, quanto mais grosso o filamento necessário, pior a inervação. A fronteira que importa clinicamente é a da sensibilidade protetora: abaixo dela o paciente ainda sente o suficiente para retirar a mão de uma superfície quente ou cortante; acima, não sente, e passa a se queimar e se ferir sem perceber.",
-  "correta": "A resposta oficial é o amarelo. O conceito que a questão cobra (existe um filamento que marca a fronteira entre sentir o suficiente para se proteger e não sentir) está certo; a cor que ela atribui a essa fronteira é a que não bate com as escalas conhecidas.",
+  "conceito": "### Testes de sensibilidade\n| Grupo | Teste | Mede | Quando altera |\n|---|---|---|---|\n| ==limiar== | ==Semmes-Weinstein==, vibração (256 Hz) | menor estímulo percebido | ==precoce== (compressão) |\n| densidade de inervação | discriminação de dois pontos (estática e dinâmica) | número de fibras | ==tardio== (perda axonal) |\n| provocativos | Durkan, Phalen, Tinel | reprodução do sintoma | clínica já manifesta |\n\n### Semmes-Weinstein\n| Filamento | Interpretação |\n|---|---|\n| 2,83 | normal |\n| 3,61 | diminuição do tato leve |\n| 4,31 | diminuição da sensibilidade protetora |\n| 6,65 | perda da sensibilidade protetora |\n\n### Uso\n- Compressão: testes de limiar.\n- Regeneração após secção: discriminação de dois pontos.\n\n### Cores (kit de 5 filamentos)\n| Cor | Filamento | Interpretação |\n|---|---|---|\n| verde | 2,83 | normal |\n| azul | 3,61 | tato leve diminuído |\n| violeta | 4,31 | protetora diminuída |\n| ==vermelho== | 4,56 a 6,65 | ==perda da protetora== |\n\n> **Na prova:** o gabarito dá ==amarelo== para perda da protetora (veja o alerta).",
+  "correta": "**Resposta oficial, com reserva.**\n- O conceito da fronteira protetora está certo.\n- Nas escalas conhecidas, a perda da protetora é o vermelho (veja o alerta).",
   "incorretas": {
-   "A": "O verde é o extremo oposto da escala: é o filamento mais fino, e percebê-lo significa sensibilidade normal.",
-   "B": "O violeta marca sensibilidade protetora DIMINUÍDA, um degrau antes da perda, a mão ainda se protege, mas com margem menor.",
-   "C": "Branca não faz parte de nenhuma das escalas de monofilamento em uso."
+   "A": "**Normal.**\n- O mais fino.",
+   "B": "**Protetora diminuída.**\n- Um degrau antes da perda.",
+   "C": "**Não existe.**\n- Fora das escalas."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
+  "alerta": "Nas duas escalas de monofilamentos que conheço, a perda da sensibilidade protetora é do filamento VERMELHO, não do amarelo. No kit de Semmes-Weinstein de cinco cores usado em reabilitação da mão a sequência é verde (normal), azul (tato leve diminuído), violeta (sensibilidade protetora diminuída) e vermelho (perda da sensibilidade protetora). No estesiômetro de seis cores adotado no Brasil, a sequência é verde 0,05 g, azul 0,2 g, violeta 2 g, vermelho 4 g, laranja 10 g e magenta 300 g, e ali quem marca a perda da protetora na mão é o vermelho, com o laranja correspondendo ao pé. Não encontro o amarelo em nenhuma das duas. Guarde o raciocínio das cores; o gabarito desta questão eu não consigo sustentar.",
   "referencias": [
    "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 9"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0577": {
-  "conceito": "Na face volar do punho, o **radiolunato longo** parte do rádio e dirige-se ao semilunar; o **triquetocapitato** integra o arco ligamentar ulnar e segue do piramidal ao capitato. A identificação depende da origem e da direção de cada feixe.",
-  "correta": "**A, radiolunato longo e triquetocapitato.** Essa é a correspondência registrada para as setas 1 e 2.",
+  "conceito": "### Ligamentos do punho\n| Ligamento | Liga | Função |\n|---|---|---|\n| ==radioescafocapitato== (volar) | rádio → cintura do escafoide → capitato | ==eixo de rotação do escafoide==; impede translação ulnar |\n| radiossemilunar longo | rádio → semilunar | estabiliza o semilunar |\n| radioescafossemilunar (Testut) | rádio → espaço escafossemilunar | estrutura neurovascular |\n| ==escafossemilunar== (intrínseco) | ==escafoide ↔ semilunar== | parte dorsal é a mais forte |\n| radiocarpal dorsal | rádio → semilunar, piramidal | estabilizador dorsal |\n\n### Lesão escafossemilunar\n- Estágio I de Mayfield; sinal de **Terry Thomas** (> 3 mm), anel cortical do escafoide, DISI.\n- Teste de Watson.\n\n### Arco ulnar volar\n| Ligamento | Trajeto |\n|---|---|\n| ==triquetocapitato== | piramidal → capitato |\n| triquetohamato | piramidal → hamato |\n| ulnocapitato | ulna → capitato (junto ao arco) |\n\n- Radioescafocapitato + ulnocapitato/triquetocapitato formam o ==V distal== (arqueado).\n- Radiossemilunar longo + ulnossemilunar formam o ==V proximal==.\n- Entre os dois V: espaço de Poirier.\n\n> **Na prova:** 1 = ==radiossemilunar longo==, 2 = ==triquetocapitato== (veja o alerta).",
+  "correta": "**Radiossemilunar longo e triquetocapitato.**\n- Correspondência registrada no gabarito.\n- Figura ausente do acervo (veja o alerta).",
   "incorretas": {
-   "B": "A primeira estrutura coincide, mas o segundo feixe não é denominado semilunocapitato na configuração indicada pelo gabarito.",
-   "C": "O radioescafocapitato passa do rádio em direção ao capitato, apoiando o escafoide; ele não corresponde à seta 1.",
-   "D": "Troca os dois componentes: a seta 1 não é radioescafocapitato e a seta 2 não é semilunocapitato."
+   "B": "**Segundo feixe errado.**\n- Não é semilunocapitato.",
+   "C": "**Primeiro errado.**\n- Radioescafocapitato vai ao capitato.",
+   "D": "**Ambos errados.**\n- Troca os dois."
   },
   "alerta": "A figura original está ausente do acervo. O comentário explica a relação anatômica do gabarito, mas a correspondência visual das setas não pôde ser conferida e deve permanecer sinalizada até a imagem ser recuperada.",
   "referencias": [
@@ -6731,17 +6732,8 @@
    "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Wrist ligament anatomy.",
    "Netter, Atlas de Anatomia Humana, 7ª edição, Seção 7"
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "baixo",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0578": {
   "conceito": "Os compartimentos extensores do punho, numerados de radial para ulnar no retináculo extensor dorsal, contêm: 1º (abdutor longo e extensor curto do polegar; 2º) extensores radiais curto e longo do carpo; 3º (EXTENSOR LONGO DO POLEGAR (que contorna o tubérculo de Lister, uma referência cirúrgica importante nas abordagens dorsais do rádio distal); 4º) extensor comum dos dedos e extensor do indicador; 5º (extensor do dedo mínimo; 6º) extensor ulnar do carpo. Conhecer essa disposição é essencial para proteger o EPL durante o acesso dorsal ou a fixação dorsal do rádio distal.",
