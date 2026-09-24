@@ -3844,101 +3844,102 @@
   "conferido": false
  },
  "mao-0329": {
-  "conceito": "Na mão torta radial, alinhar o punho sobre a ulna melhora aparência e alavanca. Mas alinhar nem sempre é o melhor negócio funcional, e a decisão depende do que existe acima do punho.",
-  "correta": "Cotovelo rígido ipsilateral é a contraindicação. Com o cotovelo que não dobra, a única forma de a criança levar a mão ao rosto e à boca é justamente pelo desvio radial do punho, que funciona como articulação de substituição. Corrigir o punho nesse caso troca uma mão torta e útil por uma mão alinhada que não alcança o rosto. A conduta é tratar antes a mobilidade do cotovelo, ou aceitar o desvio.",
+  "conceito": "### Classificação de Heikel (displasia radial)\n| Heikel | Bayne | Descrição |\n|---|---|---|\n| A | I | rádio distal curto (fise distal atrasada) |\n| B | II | rádio hipoplásico em miniatura |\n| C | III | ausência parcial (remanescente proximal) |\n| ==D== | ==IV== | ==ausência total do rádio==: ==a mais comum== |\n\n### Mão torta radial (tipo D)\n- Mão desviada radialmente sobre a ponta da ulna.\n- Ulna curta e encurvada; polegar ausente ou hipoplásico.\n- Bilateral em cerca de metade.\n\n### Investigação obrigatória\n| Síndrome | Exame |\n|---|---|\n| Fanconi | teste de quebra cromossômica (diepoxibutano) |\n| Holt-Oram | ecocardiograma |\n| TAR | hemograma (plaquetas) |\n| VACTERL | coluna, rim, coração, ânus, traqueia/esôfago |\n\n### Remanescente no tipo C\n- Pode funcionar como **banda** que agrava a curvatura da ulna com o crescimento.\n\n### Tratamento da mão torta radial\n| Fase | Medida |\n|---|---|\n| recém-nascido | alongamento e órteses seriadas |\n| 6 a 12 meses | distração de partes moles (fixador) se rígida |\n| ~1 ano | centralização ou radialização do carpo sobre a ulna |\n| depois | policização se polegar ausente |\n\n### Contraindicações à correção\n| Situação | Motivo |\n|---|---|\n| ==cotovelo rígido em extensão== | ==o desvio radial é o que leva a mão à boca== |\n| adulto adaptado com boa função | ganho funcional pequeno |\n| doença sistêmica grave (Fanconi, TAR) | risco clínico |\n\n> **Na prova:** não centralizar com ==cotovelo rígido ipsilateral==",
+  "correta": "**Cotovelo rígido ipsilateral.**\n- Sem flexão do cotovelo, o desvio radial leva a mão à boca.\n- Corrigir o punho tiraria essa função.\n- Tratar o cotovelo antes, ou aceitar o desvio.",
   "incorretas": {
-   "A": "Desvio radial acentuado é a razão de operar, não de não operar.",
-   "B": "O encurtamento da ulna é parte do quadro em todos os tipos e não contraindica a correção, ele pode, inclusive, ser tratado por alongamento em tempo próprio.",
-   "D": "Déficit cognitivo não contraindica por si só. O que pesa é o benefício funcional esperado e a capacidade de cooperar com a reabilitação, avaliados caso a caso."
+   "A": "**Indicação.**\n- Desvio acentuado é motivo para operar.",
+   "B": "**Faz parte do quadro.**\n- Pode ser alongada em outro tempo.",
+   "D": "**Não contraindica por si.**\n- Pesa o benefício e a cooperação, caso a caso."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0330": {
-  "conceito": "No estágio III de Eaton a trapeziometacarpiana está gasta e a escafotrapézio-trapezoide ainda está preservada. Isso abre duas estratégias: retirar o trapézio, o que preserva movimento à custa de força, ou fundir a articulação, o que devolve força à custa de movimento.",
-  "correta": "A artrodese trapeziometacarpiana é a melhor escolha no estágio III do paciente jovem. Ela devolve força de pinça durável, o que importa para quem tem alta demanda manual e ainda tem décadas de uso pela frente, e é justamente no jovem que a trapeziectomia tende a decepcionar com o tempo, por perda de força e migração proximal do metacarpo. O preço é conhecido: perde-se a mobilidade da base do polegar, exige-se consolidação e há risco de pseudoartrose. A condição para indicá-la é a escafotrapézio-trapezoide estar sadia, do contrário, a artrodese só transfere a carga para uma articulação também doente.",
+  "conceito": "### Eaton-Littler e conduta na rizartrose\n| Estágio | Radiografia | Opções |\n|---|---|---|\n| ==I== | normal ou espaço **alargado** (sinovite), subluxação < 1/3 | órtese, infiltração, ==reconstrução ligamentar (Eaton-Littler)==, osteotomia de extensão do 1º MC |\n| II | estreitamento, osteófitos < 2 mm | osteotomia, artroscopia, trapezectomia parcial |\n| III | osteófitos > 2 mm, esclerose, cistos | trapezectomia (± LRTI), artrodese, prótese |\n| IV | + escafotrapeziotrapezoide (pantrapezial) | trapezectomia total |\n\n### Técnica de Eaton-Littler\n- Tira de **metade do flexor radial do carpo** passada por túnel na base do 1º MC.\n- Reconstrói o **ligamento oblíquo anterior** (freio da subluxação dorsal).\n- Só faz sentido com **cartilagem preservada**.\n\n### LRTI (Burton-Pellegrini)\n- Trapezectomia + reconstrução ligamentar + interposição tendínea (FRC ou abdutor longo).\n\n### Estágio III: artrodese × trapezectomia\n| Aspecto | Artrodese TMC | Trapezectomia (± LRTI) |\n|---|---|---|\n| perfil | ==jovem, trabalho manual pesado== | idoso, menor demanda |\n| força de pinça | preservada | menor |\n| mobilidade | perdida (não aplana a mão) | preservada |\n| recuperação | espera consolidação; risco de pseudartrose | mais rápida |\n| pré-requisito | ==STT sadia== | |\n\n> **Na prova:** artrodese TMC = ==Eaton III no jovem==",
+  "correta": "**III, no jovem.**\n- Devolve força de pinça durável para alta demanda.\n- Exige STT preservada.\n- Custa mobilidade e tem risco de pseudartrose.",
   "incorretas": {
-   "B": "No idoso a preferência é pela trapeziectomia, com ou sem interposição e suspensão: recuperação mais rápida, sem espera de consolidação, e a menor força resultante é bem tolerada numa demanda menor.",
-   "C": "No estágio IV a artrose é pantrapezial, a escafotrapézio-trapezoide também está comprometida. Fundir a trapeziometacarpiana ali é jogar a carga sobre uma articulação já gasta, e a dor permanece.",
-   "D": "Pelo mesmo motivo do anterior, agravado pelo perfil de menor demanda do idoso."
+   "B": "**Idoso.**\n- Trapezectomia: recuperação rápida, força menor tolerada.",
+   "C": "**Pantrapezial.**\n- Fundir a TMC joga carga na STT gasta.",
+   "D": "**Pantrapezial no idoso.**\n- Trapezectomia total."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0331": {
-  "conceito": "Swanson organizou as malformações congênitas do membro superior em sete grupos, e o primeiro deles é o das falhas de formação, quando uma parte simplesmente não se formou, por interrupção do desenvolvimento. Os demais incluem falha de diferenciação, duplicação, crescimento excessivo, crescimento insuficiente, síndrome das bandas de constrição e anomalias esqueléticas generalizadas.",
-  "correta": "A mão torta radial é uma falha de formação das partes, na sua variedade longitudinal, falta o rádio, no todo ou em parte, ao longo de um eixo. Falhas de formação se dividem em transversas, que produzem cotos como uma amputação, e longitudinais, que produzem as deficiências radial, ulnar e central.",
+  "conceito": "### Classificação de Swanson (IFSSH)\n| Grupo | Categoria | Exemplos |\n|---|---|---|\n| ==I== | ==falha de formação== | transversa (coto), ==longitudinal: mão torta radial==, ulnar, fenda central, focomelia |\n| II | falha de diferenciação (separação) | sindactilia, sinostose radioulnar, camptodactilia, clinodactilia |\n| III | duplicação | polidactilia, mão em espelho |\n| IV | crescimento excessivo | macrodactilia |\n| V | crescimento insuficiente | hipoplasia do polegar, braquidactilia |\n| VI | bandas de constrição | Streeter |\n| VII | anomalias esqueléticas generalizadas | acondroplasia, displasias |\n\n### Classificação atual\n- **OMT (Oberg, Manske, Tonkin):** malformações, deformações e displasias, pelo eixo embriológico afetado; adotada pela IFSSH.\n\n> **Na prova:** mão torta radial = ==falha de formação longitudinal (Swanson I)==.",
+  "correta": "**Falha de formação.**\n- Variedade longitudinal: falta o rádio no todo ou em parte.\n- Grupo I de Swanson.",
   "incorretas": {
-   "A": "Anomalias generalizadas do esqueleto são outro grupo, que reúne as displasias esqueléticas, acondroplasia, displasia diastrófica e afins.",
-   "B": "Falha de diferenciação é quando as partes se formaram mas não se separaram ou não se moldaram: sindactilia, sinostose radioulnar, camptodactilia, clinodactilia.",
-   "D": "Duplicação é o grupo da polidactilia e da mão em espelho."
+   "A": "**Grupo VII.**\n- Displasias esqueléticas.",
+   "B": "**Grupo II.**\n- Partes formadas que não se separaram.",
+   "D": "**Grupo III.**\n- Polidactilia, mão em espelho."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0332": {
-  "conceito": "A pseudoartrose congênita da clavícula é rara e, ao contrário da pseudoartrose congênita da tíbia, não tem relação com neurofibromatose. A hipótese mais aceita para explicá-la é mecânica e vascular: a pulsação da artéria subclávia contra a clavícula em formação.",
-  "correta": "Ela é mais comum em meninas e do lado direito. O lado é a parte mais reveladora: a artéria subclávia direita passa mais alta, o que sustenta a hipótese da pulsação, e explica também por que os casos à esquerda quase sempre se associam a dextrocardia. Casos bilaterais existem e são raros. O quadro é uma proeminência indolor no terço médio da clavícula, presente ao nascimento e sem história de trauma, o que a separa da fratura obstétrica, que dói, e que consolida com calo em duas ou três semanas.",
+  "conceito": "### Pseudartrose congênita da clavícula\n| Aspecto | Dado |\n|---|---|\n| lado | ==direito== (esquerdo só com dextrocardia) |\n| sexo | ==feminino== |\n| local | terço médio |\n| etiologia | pulsação da ==artéria subclávia== (mais alta à direita) |\n| neurofibromatose | ==sem relação== (diferente da tíbia) |\n| bilateral | rara |\n\n### Diferencial\n| Condição | Diferença |\n|---|---|\n| fratura obstétrica | dor, pseudoparalisia, calo em 2 a 3 semanas |\n| displasia cleidocraniana | falha ossificação lateral, bilateral, fontanelas abertas |\n\n### Tratamento\n- Assintomática: observar.\n- Dor ou deformidade (geralmente 3 a 6 anos): ressecção da pseudartrose, enxerto e fixação; alta taxa de consolidação.\n\n> **Na prova:** pseudartrose congênita da clavícula = ==menina, lado direito==.",
+  "correta": "**Feminino, lado direito.**\n- A subclávia direita passa mais alta e pulsa contra a clavícula em formação.\n- Proeminência indolor ao nascer, sem trauma.",
   "incorretas": {
-   "B": "O lado está certo e o sexo não.",
-   "C": "O sexo está certo, mas o lado esquerdo é a exceção, e quando ocorre, obriga a investigar dextrocardia.",
-   "D": "Erra as duas características."
+   "B": "**Sexo errado.**\n- Predomina em meninas.",
+   "C": "**Lado errado.**\n- Esquerdo é exceção e sugere dextrocardia.",
+   "D": "**Duplamente errada.**\n- Nem sexo nem lado."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0333": {
-  "conceito": "A luxação congênita da cabeça do rádio é a anomalia congênita mais comum do cotovelo, e o que a diferencia da luxação traumática crônica é justamente a forma do osso: sendo congênita, a cabeça do rádio nunca se articulou corretamente e por isso não se modelou.",
-  "correta": "O desvio mais comum é posterior, e a cabeça do rádio é menor que o normal, hipoplásica e com a superfície convexa ou em cúpula, em vez de côncava. Junto com isso: colo do rádio longo e afilado, capítulo hipoplásico e ausência de história de trauma. Esses achados morfológicos são o que permite dizer que a luxação é congênita e não a sequela de um Monteggia despercebido, distinção que muda tudo, porque o Monteggia crônico se reduz com osteotomia da ulna e o congênito, não.",
+  "conceito": "### Luxação congênita da cabeça do rádio\n- Anomalia congênita ==mais comum do cotovelo==; frequentemente bilateral e sindrômica.\n\n| Achado | Congênita | Monteggia crônico |\n|---|---|---|\n| direção | ==posterior== (mais comum) | anterior (mais comum) |\n| cabeça do rádio | ==pequena, convexa (cúpula)== | côncava, tamanho normal |\n| colo | longo e afilado | normal |\n| capítulo | hipoplásico | normal |\n| ulna | reta ou arqueada | deformidade plástica |\n| trauma | ausente | história de queda |\n\n### Tratamento\n- Geralmente não cirúrgico: função boa.\n- Dor ou bloqueio no adulto jovem: ressecção da cabeça do rádio após a maturidade.\n- ==Não se reduz== como o Monteggia (osteotomia da ulna não funciona).\n\n> **Na prova:** congênita = ==posterior e com cabeça pequena e convexa==.",
+  "correta": "**Posterior, cabeça menor.**\n- Cabeça hipoplásica, convexa, colo longo, capítulo hipoplásico.\n- A morfologia separa do Monteggia crônico.",
   "incorretas": {
-   "A": "O desvio anterior ocorre e é menos comum; e uma cabeça de tamanho normal aponta para luxação adquirida, não congênita.",
-   "B": "O desvio está errado, ainda que a morfologia esteja certa.",
-   "C": "O desvio está certo e a morfologia não, e é a morfologia que faz o diagnóstico diferencial."
+   "A": "**Menos comum.**\n- Cabeça normal sugere luxação adquirida.",
+   "B": "**Direção errada.**\n- A morfologia está certa.",
+   "C": "**Morfologia errada.**\n- É a morfologia que faz o diagnóstico."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0334": {
-  "conceito": "As técnicas cirúrgicas do Dupuytren se distinguem pelo que fazem com a pele depois de retirar a fáscia doente. Fechar sob tensão é a receita do hematoma e da necrose de borda, e várias soluções foram descritas para evitar isso.",
-  "correta": "A figura mostra o dedo mínimo fechado em zigue-zague e uma área triangular deixada aberta na base da palma, para cicatrizar por segunda intenção, a técnica que a banca atribui a Jacobsen. Vale registrar que esse nome é pouco citado na literatura de mão que consulto; o que importa entender é o princípio, e ele é o mesmo de McCash: depois de uma fasciectomia extensa, a pele não sobra, e fechá-la sob tensão comprime o leito e produz hematoma. Deixar um trecho aberto elimina a tensão, drena o leito e cicatriza em três a seis semanas com resultado estético aceitável na palma.",
+  "alerta": "O nome Jacobsen para esta técnica é pouco citado na literatura de mão. Guarde o princípio: deixar parte da pele aberta, sem tensão, para cicatrizar por segunda intenção.",
+  "conceito": "### Dupuytren do quinto dedo\n- Cordas próprias da borda ulnar: ==corda do abdutor do dedo mínimo== e corda digital lateral.\n- A pele volar e ulnar fica curta e aderida.\n- A IFP do mínimo é a articulação mais difícil de recuperar.\n\n### Retalho de Jacobsen\n- Rearranjo cutâneo local da ==borda ulnar do dedo mínimo==.\n- Cobre o defeito após liberar a contratura sem tensão.\n\n### Opções de pele no Dupuytren\n| Técnica | Uso |\n|---|---|\n| incisão de Bruner | exposição ampla em zigue-zague |\n| incisão longitudinal + zetaplastias | um raio |\n| palma aberta (McCash) | pele deficiente na palma |\n| ==Jacobsen== | ==quinto dedo== |\n| dermofasciectomia + enxerto | recidiva, diátese |\n\n### Epônimos do Dupuytren\n| Nome | Contribuição |\n|---|---|\n| Skoog | fasciectomia preservando o ligamento transverso superficial (de Skoog) |\n| McCash | ==palma aberta== transversa, segunda intenção |\n| Hueston | dermofasciectomia com enxerto; teste da mesa; diátese |\n| ==Jacobsen== | ==quinto dedo em zigue-zague com triângulo aberto na base== (figura) |\n\n> **Na prova:** técnica da figura = ==Jacobsen== (veja o alerta).",
+  "correta": "**Jacobsen, conforme o gabarito.**\n- Mínimo fechado em zigue-zague, triângulo aberto na base.\n- Mesmo princípio de McCash: sem tensão, drena o leito.\n- Cicatriza em 3 a 6 semanas.",
   "incorretas": {
-   "A": "Skoog descreveu a fasciectomia que preserva o ligamento transverso superficial da palma (o ligamento de Skoog), poupado pela doença e útil como referência de plano. É uma técnica de ressecção, não de manejo da pele.",
-   "B": "McCash é a técnica da palma aberta propriamente dita: uma incisão transversa na palma é deixada inteiramente aberta para cicatrizar por segunda intenção. O princípio é o mesmo da figura, mas o desenho é transverso e palmar, não triangular na base do dedo.",
-   "C": "Hueston dá nome à dermofasciectomia com enxerto de pele total, o enxerto de barreira, indicado na recidiva e na doença de diátese, porque a pele enxertada não recidiva. Além disso, Hueston é o nome do teste da mesa e da própria diátese."
+   "A": "**Técnica de ressecção.**\n- Preserva o ligamento transverso superficial.",
+   "B": "**Palma aberta transversa.**\n- Mesmo princípio, desenho diferente.",
+   "C": "**Enxerto de barreira.**\n- Dermofasciectomia para recidiva e diátese."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 75"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0335": {
-  "conceito": "A lesão do nervo ulnar tem uma coleção de sinais com nome próprio, e vale organizá-los pelo que cada um mostra. Duchenne é a garra; Froment é a interfalângica do polegar dobrando na pinça; Jeanne é a metacarpofalângica do polegar hiperestendida; Wartenberg é o mínimo abduzido; Egawa é a incapacidade de desviar o dedo médio; Masse é o achatamento do arco transverso da palma; André-Thomas é a flexão do punho como compensação.",
-  "correta": "A atitude em garra é o sinal de Duchenne. Ela vem da perda dos intrínsecos: sem eles, o extensor extrínseco hiperestende as metacarpofalângicas e os flexores extrínsecos, sem oposição, fletem as interfalângicas. Aparece no quarto e no quinto dedos, porque os lumbricais do indicador e do médio são do nervo mediano e continuam funcionando. E aqui cabe o paradoxo ulnar: a garra é mais evidente na lesão baixa, no punho, do que na alta, no cotovelo, porque na alta o flexor profundo do quarto e do quinto dedos também está fraco e não consegue fletir as interfalângicas com a mesma força.",
+  "conceito": "### Testes do nervo ulnar\n| Teste | Músculo | Achado |\n|---|---|---|\n| ==Froment== | adutor do polegar | flexão da IF do polegar na pinça lateral |\n| Jeanne | adutor | hiperextensão da MF do polegar |\n| ==Egawa== | interósseos | incapacidade de desviar o médio para os lados com a mão espalmada |\n| Wartenberg | 3º interósseo palmar | mínimo abduzido |\n| Pitres-Testut | interósseos | cruzar os dedos |\n| Duchenne | lumbricais 3 e 4 | garra ulnar |\n\n### Testes de outros nervos\n| Teste | Nervo |\n|---|---|\n| Kiloh-Nevin (sinal do O) | interósseo anterior (mediano) |\n| extensão do polegar / do punho resistidas | radial / NIP |\n| Watson | não é neurológico (escafossemilunar) |\n\n### Garra ulnar (Duchenne)\n- Sem lumbricais 3 e 4 e interósseos: extensor hiperestende a MF, flexores fletem as IF.\n- Só no ==4º e 5º dedos== (lumbricais 1 e 2 são do mediano).\n- ==Paradoxo ulnar:== garra maior na lesão baixa (Guyon) que na alta, pois o FPD do 4º e 5º está preservado.\n- **André-Thomas:** flexão do punho para estender os dedos por tenodese (compensação).\n\n> **Na prova:** garra ulnar = sinal de ==Duchenne==",
+  "correta": "**Duchenne.**\n- Garra por perda dos intrínsecos no 4º e 5º dedos.\n- Mais evidente na lesão baixa (paradoxo ulnar).",
   "incorretas": {
-   "B": "A mão da bênção é atribuída à lesão do mediano, e o que ela mostra é a incapacidade de fletir indicador e médio ao tentar fechar a mão, não uma garra em repouso.",
-   "C": "O sinal de Pitres-Testut é a incapacidade de fazer um cone com os dedos, ou de desviar o médio lateralmente. Também é ulnar, mas testa os interósseos, não a atitude em garra.",
-   "D": "O sinal de André-Thomas é a flexão do punho que o paciente faz para tentar estender os dedos por tenodese, compensando a perda intrínseca. É consequência da garra, não o nome dela."
+   "B": "**Mediano.**\n- A bênção é ao tentar fechar a mão, não garra em repouso.",
+   "C": "**Interósseos.**\n- Testa cruzar os dedos ou fazer cone.",
+   "D": "**Compensação.**\n- Flexão do punho para estender os dedos; consequência da garra."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 7.4.5"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0336": {
-  "conceito": "Na classe 1 de Palmer as lesões traumáticas do complexo triangular são nomeadas pela borda que se soltou: A é a perfuração central, B a avulsão ulnar, C a distal e D a radial.",
-  "correta": "A fratura marginal da fossa sigmoide (ou seja, a avulsão do disco da sua inserção na borda do rádio, com fragmento ósseo) é a lesão 1D. Como a borda que se soltou é a radial, o reparo reinsere o disco ali, por via artroscópica ou aberta. Guarde a série acompanhando o giro em torno do disco: centro, ulnar, distal, radial.",
+  "conceito": "### Palmer classe 1 e o tratamento\n| Tipo | Local da lesão | Tratamento |\n|---|---|---|\n| 1A | perfuração central (avascular) | desbridamento |\n| 1B | avulsão **ulnar** (fóvea, estiloide) | reinserção na **ulna** |\n| 1C | avulsão **distal** (ulnossemilunar, ulnopiramidal) | reparo ulnocarpal |\n| ==1D== | ==avulsão radial== (incisura sigmoide) | ==reinserção no rádio== (ou desbridamento em lesões pequenas) |\n\n### Por que o rádio na 1D\n- A borda solta é a **radial**: reancora-se o disco na borda da incisura sigmoide (túneis transósseos ou âncoras), artroscópico ou aberto.\n\n### Instabilidade da RUD\n- Mais associada à **1B** (lesão foveal dos ligamentos radioulnares).\n- Teste do **balote** radioulnar em pronação, neutro e supinação.\n\n- Memória: ==centro, ulnar, distal, radial== (A, B, C, D).\n\n> **Na prova:** fratura marginal da fossa sigmoide = ==Palmer 1D==",
+  "correta": "**1D.**\n- Avulsão do disco na borda radial, com fragmento da fossa sigmoide.\n- Reparo reinsere no rádio.",
   "incorretas": {
-   "A": "A 1A é a perfuração central, numa região avascular que não cicatriza, o tratamento é desbridamento, não reparo.",
-   "B": "A 1B é a avulsão ulnar, na fóvea e no estiloide, e é a mais associada a instabilidade da radioulnar distal.",
-   "C": "A 1C é a avulsão distal, dos ligamentos ulnossemilunar e ulnopiramidal, com quadro de instabilidade ulnocarpal."
+   "A": "**Perfuração central.**\n- Avascular; desbridamento.",
+   "B": "**Avulsão ulnar.**\n- Fóvea e estiloide; instabilidade da RUD.",
+   "C": "**Avulsão distal.**\n- Ligamentos ulnossemilunar e ulnopiramidal."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 69"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0337": {
   "conceito": "A descompressão isolada, ou neurólise in situ, abre o teto do túnel cubital sem mover o nervo. É a cirurgia menos agressiva e a que menos desvasculariza, mas, ao remover a contenção posterior, pode deixar o nervo livre para saltar por cima do epicôndilo medial na flexão.",
