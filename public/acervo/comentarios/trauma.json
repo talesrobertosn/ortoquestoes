@@ -642,101 +642,101 @@
   "conferido": false
  },
  "trauma-0057": {
-  "conceito": "O desvio dos fragmentos na fratura do úmero proximal é ditado pelas inserções do **manguito rotador**, e a regra é simples de deduzir.\n\nNo **tubérculo maior**, situado lateralmente, inserem-se três músculos (o supraespinal na faceta superior, o infraespinal na média e o redondo menor na inferior), todos com trajeto que passa por trás e por cima da articulação; quando o tubérculo maior fratura, esses músculos o puxam **superior e posteriormente**, para debaixo do acrômio e para trás da cabeça.\n\nJá no **tubérculo menor**, situado anteriormente, insere-se apenas o subescapular, cujo ventre ocupa a fossa subescapular, na face anterior da escápula; a sua tração leva o fragmento **medialmente**, em direção à glenoide e ao processo coracoide.\n\nA **diáfise**, por sua vez, é puxada medialmente pelo peitoral maior, e a cabeça, quando isolada, tende ao varo pela ação do manguito remanescente.\n\nEssas direções não são apenas curiosidade anatômica: elas explicam o tratamento. O desvio do tubérculo **maior** é o que mais importa clinicamente, porque poucos milímetros de deslocamento superior já produzem impacto subacromial e bloqueio da elevação, daí o limiar cirúrgico baixo, de cerca de 5 mm (ou 3 mm no atleta de arremesso), bem abaixo do 1 cm da classificação de Neer.\n\nO desvio do tubérculo **menor** é mais bem tolerado, mas a sua fratura isolada tem uma armadilha: ela é o marcador da luxação posterior do ombro, sobretudo depois de crise convulsiva ou choque elétrico, e obriga a procurar ativamente o sinal da lâmpada e a incidência axilar ou a tomografia.\n\nNa reconstrução, seja na osteossíntese, seja na artroplastia, a regra é reancorar os tubérculos com suturas transósseas fortes passadas pela junção tendão-osso, e não pelo osso porótico isolado.",
-  "correta": "C. O tubérculo menor desvia MEDIALMENTE pela ação do músculo SUBESCAPULAR, único tendão do manguito que nele se insere e cujo ventre ocupa a face anterior da escápula.",
+  "conceito": "### Desvio dos fragmentos no úmero proximal\n| Fragmento | Músculos | Desvio |\n|---|---|---|\n| tuberosidade maior | supraespinal, infraespinal, redondo menor | ==superior e posterior== (retração) |\n| ==tuberosidade menor== | ==subescapular== | ==medial== (e anterior) |\n| diáfise | ==peitoral maior== | medial e anterior |\n| deltoide | | abdução/encurtamento da diáfise |\n\n### Implicações\n- Tuberosidade maior desviada > 5 mm (atleta 3 mm): fixar (impacto subacromial).\n- Tuberosidade menor isolada: pensar em ==luxação posterior== associada.\n\n> **Na prova:** tuberosidade menor = ==medial, pelo subescapular==",
+  "correta": "**Medial, subescapular.**\n- Único músculo inserido na menor.\n- Puxa medialmente.",
   "incorretas": {
-   "A": "Erra o músculo e a direção. O infraespinal insere-se no tubérculo MAIOR, e não no menor, e a sua tração leva o fragmento superior e posteriormente, nunca lateralmente.",
-   "B": "Acerta a direção medial, mas erra o músculo: o infraespinal pertence ao tubérculo maior. O tubérculo menor tem um único tendão, o do subescapular.",
-   "D": "Acerta o músculo, mas erra a direção: o subescapular tem origem na face anterior da escápula e traciona o fragmento em direção MEDIAL, para dentro, e não lateralmente."
+   "A": "**Infraespinal.**\n- Insere na tuberosidade maior.",
+   "B": "**Infraespinal.**\n- Músculo errado.",
+   "D": "**Lateral.**\n- Subescapular puxa medial."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0058": {
-  "conceito": "Duas incidências radiográficas especiais são frequentemente confundidas na avaliação do ombro por causa da semelhança dos nomes e da região que abordam.\n\nA incidência de **Stryker** (Stryker notch view), obtida com a mão do paciente sobre a cabeça e o feixe angulado cefalicamente (cerca de 10 graus em direção ao teto), oferece uma visão tangencial do processo coracoide. Foi desenvolvida originalmente para revelar lesões de Hill-Sachs na cabeça umeral (a impressão óssea posterolateral da cabeça, marcador de luxação anterior recorrente), mas também expõe bem a base do coracoide, sendo útil para identificar fraturas nessa região, que podem mimetizar uma luxação acromioclavicular completa ao alargar a distância coracoclavicular sem que os ligamentos estejam realmente rotos.\n\nJá a incidência de **Zanca** (uma AP com inclinação cefálica de 10 a 15 graus, com 50% da penetração habitual) foi desenvolvida especificamente para avaliar a própria articulação acromioclavicular, retirando a sobreposição da espinha da escápula e permitindo medir com mais precisão o espaço articular e a distância coracoclavicular. Quando se busca diferenciar os graus III e V de Rockwood, a versão em estresse (com peso suspenso nos punhos, bilateral e comparativa) ajuda a quantificar o aumento percentual da distância coracoclavicular em relação ao lado normal.\n\nA incidência de Zanca não é a incidência voltada para o coracoide, e tampouco avalia deslocamento posterior da clavícula, papel que cabe à incidência **axilar**, terceira peça desse conjunto de imagens especiais do ombro.",
-  "correta": "C. A incidência de Stryker, com sua visão tangencial do coracoide, é a indicada para avaliar fraturas da base do processo coracoide.",
+  "conceito": "### Incidências na acromioclavicular\n| Incidência | Técnica | Avalia |\n|---|---|---|\n| ==Zanca== | AP com raio ==10 a 15° cefálico==, metade da voltagem | articulação AC sem sobreposição |\n| axilar | | ==deslocamento posterior== (tipo IV) |\n| ==Stryker (notch)== | mão sobre a cabeça, raio 10° cefálico | ==base do coracoide== (fratura) e lesão de Hill-Sachs |\n| estresse (peso) | comparativa | pouco usada hoje |\n\n### Rockwood\n| Tipo | Achado |\n|---|---|\n| I-II | entorse, CC íntegros |\n| III | CC rompidos, desvio 25 a 100% |\n| IV | clavícula posterior (trapézio) |\n| V | desvio 100 a 300% |\n| VI | inferior ao coracoide |\n\n- Coracoclaviculares íntegros com clavícula alta: suspeitar de ==fratura da base do coracoide==.\n\n> **Na prova:** Stryker = ==fratura da base do coracoide==",
+  "correta": "**Stryker, base do coracoide.**\n- Projeção livre do coracoide.\n- Explica desvio com CC íntegros.",
   "incorretas": {
-   "A": "A incidência de Zanca é voltada para a avaliação da própria articulação acromioclavicular (espaço articular, distância coracoclavicular), não especificamente para fraturas do coracoide.",
-   "B": "Nem Zanca avalia deslocamento posterior da clavícula (papel da incidência axilar) nem essa é sua finalidade principal, que é a avaliação da articulação acromioclavicular.",
-   "D": "O deslocamento posterior da clavícula é avaliado pela incidência axilar, não pela de Stryker, cuja finalidade é a visualização tangencial do coracoide."
+   "A": "**Zanca.**\n- Mostra a articulação AC.",
+   "B": "**Zanca posterior.**\n- Posterior se vê no axilar.",
+   "D": "**Stryker posterior.**\n- Não avalia o deslocamento posterior."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0059": {
-  "conceito": "O mecanismo da **tríade terrível** é o mesmo da luxação posterolateral do cotovelo, descrito por O'Driscoll, e é preciso enxergá-lo em três vetores simultâneos que atuam sobre um cotovelo em extensão ou semiflexão durante a queda sobre a mão espalmada:\n- A **carga axial**, que sobe pela mão e pelo antebraço e comprime a articulação, é ela que esmaga a cabeça do rádio contra o capítulo\n- O **valgo**, produzido porque o corpo cai para o lado oposto ao membro apoiado, abrindo o cotovelo pela face medial\n- A **supinação** do antebraço em relação ao úmero, que ocorre porque o tronco roda internamente sobre a mão fixa no chão, e é esse componente rotatório que caracteriza a lesão\n\nSomados, os três produzem a subluxação rotatória posterolateral: a ulna e o rádio rodam juntos para fora e para trás em relação à tróclea, e as estruturas cedem de lateral para medial, no círculo de Horii.\n\nA extensão importa porque é ela que alinha o membro com o vetor da queda, transmitindo a carga axial diretamente ao cotovelo; com o cotovelo bem fletido, a energia é absorvida de outro modo e o padrão de lesão muda.\n\nGuarde o mecanismo espelhado, que é a fonte das alternativas erradas e cai sempre junto: a instabilidade rotatória **posteromedial** resulta de carga axial com varo e pronação, e produz a fratura da faceta anteromedial do coronoide (O'Driscoll tipo 2) com ruptura por tração do complexo colateral lateral.\n\nDa simetria decorre uma regra prática de imobilização e reabilitação que vale para o consultório: o antebraço **pronado** estabiliza o cotovelo com lesão posterolateral e desestabiliza o com lesão posteromedial; o **supinado** faz o inverso; e quando os dois lados foram reparados, mantém-se a posição neutra.",
-  "correta": "D. O mecanismo é a queda com o cotovelo em EXTENSÃO, com carga axial, VALGO e antebraço SUPINADO, a combinação que produz a subluxação rotatória posterolateral e, no seu trajeto, esmaga a cabeça do rádio e cisalha a ponta do coronoide.",
+  "conceito": "### Mecanismo da tríade terrível\n- Queda sobre a mão estendida: cotovelo em ==extensão (ou semiflexão)==, carga ==axial==, ==valgo== e ==supinação== do antebraço (rotação externa da ulna sob o úmero).\n- Sequência de O'Driscoll (círculo de Horii): LCL (lateral) → cápsula anterior/posterior → LCM.\n- Cabeça do rádio e coronoide fraturam contra o úmero ao luxar.\n\n### Instabilidades do cotovelo\n| Tipo | Mecanismo |\n|---|---|\n| ==posterolateral rotatória== | valgo + supinação + axial (tríade) |\n| posteromedial em varo | varo + pronação (faceta anteromedial) |\n| transolecraniana | alta energia direta |\n\n> **Na prova:** tríade = ==extensão, valgo e supinação==",
+  "correta": "**Extensão, valgo, supinação.**\n- Mecanismo posterolateral rotatório.\n- Carga axial na queda.",
   "incorretas": {
-   "A": "Descreve o mecanismo POSTEROMEDIAL em quase todos os termos (varo e pronação), que produz a fratura da faceta anteromedial do coronoide, lesão diferente, com tratamento diferente. E a flexão não é a posição da queda que gera a tríade.",
-   "B": "Acerta o valgo e a supinação, mas erra a posição: é a EXTENSÃO (ou semiflexão) que alinha o membro com o vetor da queda e transmite a carga axial ao cotovelo. Com o cotovelo fletido, a energia é dissipada de outro modo.",
-   "C": "Combina a extensão correta com os dois vetores do mecanismo oposto (varo e pronação), que caracterizam a instabilidade rotatória posteromedial e a fratura da faceta anteromedial."
+   "A": "**Varo e pronação.**\n- Instabilidade posteromedial.",
+   "B": "**Flexão.**\n- Cotovelo estendido na queda.",
+   "C": "**Varo e pronação.**\n- Não é a tríade."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0060": {
-  "conceito": "O padrão-ouro para a fratura diafisária dos dois ossos do antebraço no adulto é a **placa** de compressão, e a razão é biomecânica: o antebraço funciona como uma articulação rotatória, e a pronossupinação depende de restaurar com precisão o comprimento, a rotação e a curvatura radial, o radial bow, com ápice lateral por volta de 1,5 cm no ponto médio do rádio. A placa permite redução anatômica sob visão direta e controle rigoroso desses três parâmetros; a haste intramedular, que é um dispositivo de alinhamento e não de redução anatômica, controla pior a rotação e tende a endireitar a curvatura, o que custa arco de rotação, motivo pelo qual ela nunca substituiu a placa como primeira escolha, mesmo com os modelos travados modernos.\n\nA haste fica, então, para as situações em que a placa cobraria caro demais em **partes moles**. A indicação clássica é a fratura **segmentar**, sobretudo quando acomete os dois ossos: colocar placa numa fratura segmentar obriga a expor toda a extensão entre os traços e a desperiostizar o segmento intermediário, justamente o fragmento de vascularização mais precária, com risco elevado de pseudartrose; a haste atravessa o segmento por dentro, com incisões pequenas nas extremidades e preservação do envelope de partes moles.\n\nAs demais indicações reconhecidas seguem a mesma lógica: fratura exposta com cobertura ruim, fratura patológica, politraumatizado que exige cirurgia rápida, perda óssea segmentar e resgate de falha de osteossíntese com placa.\n\nIndependentemente do implante, dois cuidados permanecem obrigatórios: verificar a radioulnar **distal** (Galeazzi) e a **proximal**, com a linha radiocapitelar (Monteggia), porque a fratura diafisária pode esconder uma lesão articular nas pontas; e vigiar a síndrome compartimental no pós-operatório imediato.",
-  "correta": "C. A fratura SEGMENTAR do rádio e da ulna é a indicação clássica da haste intramedular: a placa exigiria expor toda a extensão entre os traços e desperiostizar o fragmento intermediário, de vascularização precária, enquanto a haste atravessa o segmento por dentro e poupa o envelope de partes moles.",
+  "conceito": "### Haste × placa no antebraço adulto\n- Padrão-ouro: ==placa de compressão== (restaura comprimento, rotação e arco radial).\n- Haste intramedular: controle rotacional pior, arco radial difícil.\n\n### Indicações da haste\n| Situação | Motivo |\n|---|---|\n| ==fratura segmentar dos dois ossos== | placas muito longas, desvitalização |\n| partes moles ruins (queimadura, exposta grave) | menor dissecção |\n| osso osteoporótico/patológico | proteção de todo o osso |\n| politrauma | tempo cirúrgico |\n\n> **Na prova:** haste no antebraço adulto = ==fratura segmentar do rádio e da ulna==",
+  "correta": "**Segmentar dos dois ossos.**\n- Evita placas longas.\n- Menos desvitalização.",
   "incorretas": {
-   "A": "A fratura segmentar isolada da ULNA é o caso menos convincente para a haste: a ulna é subcutânea, tem acesso direto e de baixo custo biológico sobre a sua crista, e a placa ali controla comprimento e rotação sem os problemas de exposição que a fratura segmentar dos dois ossos impõe.",
-   "B": "A fratura complexa e irregular da ulna não é indicação de haste: quanto mais irregular o traço, menor o encaixe cortical e pior o controle rotacional que a haste oferece, e é justamente rotação o que não se pode perder no antebraço. A cominuição isolada da ulna se resolve com placa em ponte.",
-   "D": "A fratura complexa e irregular dos dois ossos é o cenário em que a haste mais falha em controlar a ROTAÇÃO e a CURVATURA RADIAL, porque não há contato cortical que estabilize os fragmentos. A indicação da haste vem do padrão SEGMENTAR e do custo de partes moles, não da cominuição."
+   "A": "**Segmentar só da ulna.**\n- Placa resolve; indicação é com os dois.",
+   "B": "**Complexa da ulna.**\n- Placa em ponte.",
+   "D": "**Complexa dos dois.**\n- Placas em ponte preferidas."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0061": {
-  "conceito": "O fechamento primário da ferida na fratura exposta foi por décadas um tabu: ensinava-se a deixar toda ferida aberta, pelo medo da gangrena gasosa e da infecção profunda. A literatura das últimas duas décadas mudou isso, e hoje se aceita que o fechamento primário (feito no mesmo tempo do desbridamento inicial) **reduz** a infecção em casos selecionados, porque uma ferida fechada não é colonizada pela flora hospitalar, que é justamente a origem da maioria das infecções estabelecidas.\n\nO que decide não é o tipo de Gustilo isoladamente, e sim a soma de critérios da ferida e do hospedeiro.\n\nDa **ferida** exige-se:\n- Desbridamento adequado e completo, com todo o tecido inviável removido\n- Ausência de contaminação grosseira (terra, esterco, água estagnada, material orgânico)\n- Ausência de perda de pele, permitindo fechar sem tensão\n- Ausência de comprometimento vascular\n\nDo **hospedeiro** exige-se um paciente com reserva fisiológica para cicatrizar: baixa gravidade sistêmica, medida pelo ISS (Injury Severity Score), e ausência de comorbidades que comprometam a microcirculação e a resposta imune. O **diabetes** encabeça essa lista, porque a hiperglicemia prejudica a função de neutrófilos e macrófagos, a angiogênese e a síntese de colágeno. Some-se a esses fatores o tabagismo, a desnutrição, a imunossupressão e a doença vascular periférica.\n\nO ISS é um escore anatômico de gravidade do politraumatizado que soma os quadrados dos três piores escores AIS de regiões corporais distintas, variando de 0 a 75; valores mais altos indicam trauma mais grave e maior resposta inflamatória sistêmica, e um paciente gravemente traumatizado, em estado inflamatório e frequentemente hipoperfundido, cicatriza mal e não é candidato ao fechamento primário.\n\nQuando os critérios não são preenchidos, a alternativa é deixar a ferida aberta com curativo de pressão negativa e reavaliar em 48 a 72 horas, planejando o fechamento ou a cobertura definitiva precoce.",
-  "correta": "B. O fechamento primário é indicado no paciente com ISS BAIXO (menor que 20) e SEM diabetes (isto é, com reserva fisiológica para cicatrizar), somado aos critérios da ferida: desbridamento completo, ausência de contaminação grosseira e possibilidade de fechar sem tensão.",
+  "conceito": "### Fechamento primário na fratura exposta\n- Tabu antigo; hoje aceito após ==desbridamento adequado== em casos selecionados.\n\n### Condições favoráveis\n| Critério | Detalhe |\n|---|---|\n| desbridamento completo | sem tecido desvitalizado ou contaminação grosseira |\n| sem tensão | bordas aproximam |\n| ==ISS < 20 a 25== | politrauma leve |\n| ==sem comorbidades== (diabetes, doença vascular, tabagismo pesado) | cicatrização adequada |\n| antibiótico precoce (< 1 h) | |\n| contaminação baixa | sem fazenda/água |\n\n### Gustilo\n| Tipo | Ferida |\n|---|---|\n| I | < 1 cm, limpa |\n| II | 1 a 10 cm |\n| IIIA | cobertura possível |\n| IIIB | precisa de retalho |\n| IIIC | lesão arterial reparável |\n\n> **Na prova:** fechamento primário = ==ISS < 20, sem diabetes==",
+  "correta": "**ISS < 20, sem diabetes.**\n- Paciente sem comorbidade.\n- Ferida limpa após desbridamento.",
   "incorretas": {
-   "A": "Acerta a gravidade sistêmica baixa, mas o diabetes é justamente a comorbidade que mais compromete a cicatrização de uma ferida traumática, por prejudicar a função dos neutrófilos e macrófagos, a angiogênese e a síntese de colágeno. Ele contraindica o fechamento primário, não o autoriza.",
-   "C": "Combina os dois piores cenários: gravidade sistêmica alta, com o paciente em estado inflamatório e frequentemente hipoperfundido, somada ao diabetes. É a situação em que a ferida deve permanecer aberta com curativo de pressão negativa e reavaliação em 48 a 72 horas.",
-   "D": "A ausência de diabetes é favorável, mas o ISS elevado indica um politraumatizado grave, cuja resposta inflamatória sistêmica e cuja perfusão comprometida tornam a cicatrização primária pouco confiável."
+   "A": "**Com diabetes.**\n- Contraindica fechamento primário.",
+   "C": "**ISS > 25 e diabetes.**\n- Ambos desfavoráveis.",
+   "D": "**ISS > 25.**\n- Politrauma grave."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0062": {
-  "conceito": "A **clavícula** é o osso mais fraturado do adulto jovem, e cerca de 80% dessas fraturas ocorrem no terço médio, a região mais fina do osso, sem inserções musculares diretas que a protejam e na transição entre a curvatura medial (côncava para trás) e a lateral (côncava para a frente).\n\nO desvio dos fragmentos é previsível e resulta de forças que atuam em direções opostas. O fragmento **medial** (proximal) é tracionado para cima e para trás pelo esternocleidomastóideo, inserido na sua face superior. O fragmento **lateral** (distal), que é o da questão, sofre três forças convergentes:\n\n- O peso do membro superior, que o puxa para baixo (translação inferior).\n- O peitoral maior, o peitoral menor e o latíssimo, que o tracionam medialmente, produzindo encurtamento.\n- A rotação imposta pela escápula, que gira o fragmento em sentido anterior à medida que o ombro se protrai (translação anterior com rotação anterior).\n\nO resultado é o padrão clássico: fragmento medial elevado, fragmento distal caído, encurtado e rodado para a frente, com a deformidade visível de ombro caído e protruso.\n\nDuas consequências práticas. Primeira, terapêutica: o encurtamento acima de 15 a 20 mm, o desvio com perda completa do contato entre os fragmentos e a cominuição são hoje os critérios que favorecem a osteossíntese com placa, porque se associam a maior taxa de pseudartrose e de consolidação viciosa sintomática. Segunda, de segurança: o fragmento medial elevado e a cominuição inferior aproximam o foco do plexo braquial e dos vasos subclávios, que passam imediatamente abaixo da clavícula, daí a atenção obrigatória ao exame neurovascular e o cuidado com a broca durante a fixação.",
-  "correta": "A. O fragmento distal sofre translação ANTERIOR, INFERIOR e MEDIAL, com ROTAÇÃO ANTERIOR, puxado para baixo pelo peso do membro, para dentro pelo peitoral maior e girado para a frente pela protração da escápula.",
+  "conceito": "### Clavícula média: desvio\n| Fragmento | Força | Desvio |\n|---|---|---|\n| ==medial== | ==ECM== | ==superior e posterior== |\n| ==lateral (distal)== | peso do membro, ==peitoral maior== | ==inferior, anterior e medial== (encurtamento) + ==rotação anterior== |\n\n### Indicações relativas de cirurgia\n- Encurtamento > 1,5 a 2 cm, desvio > 100%, cominução (Z), pele em risco, ombro flutuante, politrauma.\n- Placa superior ou anteroinferior; haste intramedular.\n\n### Robinson\n| Tipo | Local |\n|---|---|\n| 1 | medial |\n| 2 | ==diáfise (75 a 80%)== |\n| 3 | lateral |\n\n> **Na prova:** fragmento distal = ==anterior, inferior e medial + rotação anterior==",
+  "correta": "**Anterior, inferior, medial, rotação anterior.**\n- Peso do membro e peitoral.\n- Ombro cai e vai para frente.",
   "incorretas": {
-   "B": "Acerta a translação inferior, mas erra as demais: o fragmento distal vai para MEDIAL (encurtando o osso), e não para lateral, e a rotação imposta pela protração da escápula é ANTERIOR, não posterior.",
-   "C": "Erra as três informações principais: quem sobe é o fragmento MEDIAL, tracionado pelo esternocleidomastóideo; o distal cai pelo peso do membro, medializa pela ação do peitoral maior e roda para a frente.",
-   "D": "Acerta a rotação anterior e a translação medial, mas erra o sentido vertical e anteroposterior: o fragmento distal se desloca INFERIOR e ANTERIORMENTE, e não superior e posteriormente."
+   "B": "**Posterior e lateral.**\n- Direções erradas.",
+   "C": "**Superior.**\n- Superior é o medial.",
+   "D": "**Posterior e superior.**\n- Descreve o fragmento medial."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 33"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0063": {
-  "conceito": "O **espaço coracoclavicular** (a distância entre a face inferior da clavícula e a face superior do processo coracoide, medida na radiografia) é o parâmetro usado para quantificar objetivamente o grau de deslocamento vertical numa luxação acromioclavicular.\n\nO valor **normal** desse espaço, na população adulta, situa-se entre aproximadamente **11 e 13 milímetros**, com alguma variação individual esperada.\n\nÉ a partir desse valor de referência que se calcula o percentual de aumento observado no lado lesado, comparando-o com o lado contralateral saudável do mesmo paciente, uma prática recomendada justamente porque a variação anatômica normal entre indivíduos é significativa o suficiente para tornar um valor absoluto isolado, sem comparação, menos confiável.\n\nEsse aumento percentual é o que orienta a distinção entre os diferentes graus de Rockwood:\n\n- **25% a 100%**: sugere lesão tipo II (ligamentos coracoclaviculares parcialmente lesados).\n- **Maior que 100%**: sugere lesão tipo III (ruptura completa desses ligamentos).\n\nEssa mesma medida percentual, comparativa e bilateral, é a base técnica das incidências de estresse (com peso suspenso nos punhos) usadas quando a radiografia simples deixa dúvida entre um tipo II e um tipo III.",
-  "correta": "B. O espaço coracoclavicular normal situa-se entre aproximadamente 11 e 13 milímetros, servindo de referência para calcular o percentual de aumento observado na luxação acromioclavicular.",
+  "conceito": "### Espaço coracoclavicular\n- Distância entre a face superior do coracoide e a inferior da clavícula no AP.\n- Normal: ==11 a 13 mm==.\n- Aumento de ==25 a 100%== ≈ tipo III; ==> 100%== (até 300%) ≈ tipo V.\n- Comparar sempre com o lado contralateral.\n\n### Conduta\n| Tipo | Tratamento |\n|---|---|\n| I-II | conservador |\n| III | conservador inicial na maioria; cirurgia em trabalhadores braçais/atletas de arremesso |\n| IV-VI | cirurgia |\n\n> **Na prova:** espaço CC normal = ==11 a 13 mm==",
+  "correta": "**11 a 13 mm.**\n- Referência para o desvio.\n- Comparar com o lado normal.",
   "incorretas": {
-   "A": "O intervalo de 8 a 10 mm é menor do que o valor normal classicamente citado para o espaço coracoclavicular.",
-   "C": "O intervalo de 15 a 17 mm é maior do que o valor normal classicamente citado, que gira em torno de 11 a 13 mm.",
-   "D": "O intervalo de 18 a 21 mm está bem acima do valor normal classicamente citado para esse espaço."
+   "A": "**8 a 10 mm.**\n- Subestimado.",
+   "C": "**15 a 17 mm.**\n- Já sugere lesão.",
+   "D": "**18 a 21 mm.**\n- Patológico."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 5.8"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0064": {
-  "conceito": "A qualidade da **redução** é o fator controlável mais importante no tratamento da fratura do colo do fêmur com osteossíntese, e existem dois instrumentos clássicos para aferi-la.\n\nO **índice de Garden** (ou ângulo de alinhamento de Garden) mede o alinhamento das trabéculas ósseas: traça-se o eixo do trabeculado compressivo primário da cabeça femoral e o eixo do trabeculado medial da diáfise, e mede-se o ângulo entre eles. Na incidência em frente, esse ângulo é normalmente de cerca de 160 graus; no perfil, de cerca de 180 graus. A faixa aceitável após a redução é de **160 a 180 graus** em ambas as incidências, e o motivo de haver um limite inferior e um superior é clínico: abaixo de 160 graus a redução está em varo, situação que leva a colapso, cut-out e falha da síntese; acima de 180 graus há valgo excessivo, que compromete a vascularização remanescente da cabeça e aumenta o risco de osteonecrose.\n\nO outro instrumento são as **linhas de Lowell**, que se apoiam num princípio geométrico: o contorno da cabeça femoral e o contorno do colo formam duas curvas que se cruzam em \"S\" suave, tangentes uma à outra. Numa redução anatômica, essa tangência é lisa em todas as incidências; qualquer degrau, quebra ou cruzamento abrupto entre as curvas denuncia desvio residual, método sensível e que dispensa medir ângulos.\n\nVale distinguir dos demais epônimos: o índice de Dorr classifica a morfologia do canal femoral proximal (tipos A, B e C) para escolher a haste na artroplastia, e nada tem a ver com redução de fratura. E os valores de 128 a 135 graus correspondem ao ângulo cervicodiafisário normal do fêmur, outro parâmetro.",
-  "correta": "C. O índice que avalia a redução pelo alinhamento das TRABÉCULAS é o de GARDEN, com valores aceitáveis entre 160 e 180 graus na incidência em frente (e também no perfil).",
+  "conceito": "### Avaliação da redução no colo do fêmur\n| Índice | Critério | Aceitável |\n|---|---|---|\n| ==Garden (alinhamento trabecular)== | AP: trabéculas compressivas × cortical medial da diáfise; perfil: trabéculas × eixo do colo | ==AP 160 a 180°==; perfil 180° (± 20) |\n| Lowell | curvas em S/C das corticais (cabeça-colo) | contorno contínuo |\n| ângulo cervicodiafisário | | 130 a 135° |\n\n- Redução em ==valgo leve== é aceitável; varo ou retroversão aumenta falha.\n- Fora da faixa: risco de pseudartrose e necrose.\n\n> **Na prova:** Garden = ==160 a 180° no AP==",
+  "correta": "**Garden, 160 a 180° no AP.**\n- Alinhamento trabecular.\n- Aceita valgo discreto.",
   "incorretas": {
-   "A": "Erra o epônimo e o valor. As linhas de LOWELL avaliam a redução pela tangência entre os contornos da cabeça e do colo, e não por trabéculas; e 128 a 135 graus é o ângulo CERVICODIAFISÁRIO normal, não um índice de redução.",
-   "B": "Acerta a faixa de 160 a 180 graus, mas atribui o método ao autor errado: quem mede o alinhamento trabecular é GARDEN. Lowell descreveu as linhas de tangência entre os contornos ósseos.",
-   "D": "Acerta o epônimo, mas erra a faixa: 128 a 135 graus corresponde ao ângulo cervicodiafisário do fêmur. O índice de Garden aceitável situa-se entre 160 e 180 graus."
+   "A": "**Lowell com ângulos.**\n- Lowell avalia contornos, não ângulos.",
+   "B": "**Lowell.**\n- Índice errado.",
+   "D": "**128 a 135°.**\n- É o cervicodiafisário, não o Garden."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 52"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0065": {
   "conceito": "As fraturas por estresse são classificadas em **alto** e **baixo risco** conforme a probabilidade de evolução desfavorável, não consolidação, progressão para fratura completa e necessidade de tratamento cirúrgico. Essa classificação, descrita por Boden e Osbahr, orienta diretamente a conduta: sítios de alto risco pedem investigação e tratamento mais agressivos (frequentemente imobilização rígida, descarga de peso e até fixação profilática), enquanto sítios de baixo risco toleram bem o tratamento conservador com ajuste de carga.\n\nOs sítios clássicos de **alto risco** incluem a cortical anterior da tíbia, o colo femoral (face de tensão, superior), o maléolo medial, o tálus, o navicular do tarso, a base do quinto metatarso na zona de Jones (junção metáfise-diáfise) e, o que costuma surpreender, a patela, por ser um osso sesamoide sujeito a tração intensa do aparelho extensor, com risco real de propagação completa e desvio.\n\nJá os sítios de **baixo risco** incluem a diáfise da fíbula, a cortical posteromedial da tíbia, as costelas, a diáfise do fêmur e a base do quinto metatarso quando o traço é de avulsão da tuberosidade (zona I, mecanismo distinto do Jones, com prognóstico bem mais benigno).\n\nÉ essa distinção fina (zona de Jones, alto risco, versus avulsão da tuberosidade, baixo risco) que explica por que a \"base do quinto metatarso\" pode aparecer como exemplo de baixo risco nesta questão, desde que se trate da avulsão da tuberosidade, e não da fratura de Jones.",
