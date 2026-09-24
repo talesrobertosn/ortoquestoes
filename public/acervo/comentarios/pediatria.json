@@ -3346,91 +3346,91 @@
   "conferido": false
  },
  "pediatria-0254": {
-  "conceito": "O menisco discoide **assintomático**, achado de forma incidental durante uma artroscopia realizada por outro motivo, não deve ser tratado, a conduta correta é **deixá-lo intacto**, sem qualquer intervenção sobre ele. Isso porque qualquer procedimento sobre o menisco (mesmo uma saucerização parcial) carrega risco de complicações e não deve ser realizado profilaticamente em uma estrutura que não está causando sintomas.\n\nAs indicações de tratamento cirúrgico do menisco discoide (saucerização, com ou sem estabilização periférica, ou raramente meniscectomia) são reservadas para os casos **sintomáticos** (dor, estalido audível/palpável (\"snapping knee\"), bloqueio articular ou instabilidade) e não para achados incidentais assintomáticos.",
-  "correta": "D. O menisco discoide assintomático, achado incidentalmente na artroscopia, deve ser deixado intacto, sem tratamento.",
+  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n> **Na prova:** menisco discoide assintomático achado na artroscopia = ==deixar sem tratamento==",
+  "correta": "**Deixar intacto.**\n- Assintomático não se opera.\n- Menisco discoide funcional protege a cartilagem.",
   "incorretas": {
-   "A": "A saucerização é reservada para os casos sintomáticos, não para achados incidentais assintomáticos.",
-   "B": "A meniscoplastia (reparo/estabilização) é reservada para os casos sintomáticos com instabilidade, não para achados incidentais assintomáticos.",
-   "C": "A ressecção total é uma conduta ultrapassada mesmo para os casos sintomáticos mais instáveis, e, com mais razão, não é indicada para um achado incidental assintomático."
+   "A": "**Só se sintomático.**\n- Saucerização tem indicação clínica.",
+   "B": "**Só se sintomático.**\n- Idem.",
+   "C": "**Nunca como rotina.**\n- Leva a artrose."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0255": {
-  "conceito": "Os ligamentos meniscofemorais (de Humphry, anterior ao ligamento cruzado posterior, e de Wrisberg, posterior a ele) são estruturas acessórias que conectam o **corno posterior do menisco lateral** ao **côndilo femoral medial**, próximo à inserção femoral do ligamento cruzado posterior. Essa relação anatômica (origem no côndilo medial do fêmur e inserção no corno posterior do menisco **lateral**) é frequentemente confundida em prova com uma suposta relação com o menisco medial, mas a anatomia correta é justamente cruzada: estruturas que se originam medialmente (no fêmur) se inserem lateralmente (no menisco).",
-  "correta": "D. Os ligamentos meniscofemorais têm origem no côndilo medial do fêmur e se inserem no corno posterior do menisco lateral.",
+  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Fixações meniscais\n| Estrutura | Liga |\n|---|---|\n| ==ligamento coronário (meniscotibial)== | ==borda do menisco à tíbia== |\n| ligamento transverso (intermeniscal) | cornos anteriores |\n| Humphrey (anterior ao LCP) e Wrisberg (posterior ao LCP) | corno posterior do ==lateral== ao côndilo medial |\n| oblíquo posterior | cápsula posteromedial (não é fixação tibial do menisco) |\n| poplíteo | menisco lateral (hiato poplíteo) |\n\n> **Na prova:** menisco medial preso à tíbia pelo ==ligamento coronário==",
+  "correta": "**Côndilo medial ao corno posterior do lateral.**\n- Humphrey anterior e Wrisberg posterior ao LCP.\n- Estabilizam o menisco lateral.",
   "incorretas": {
-   "A": "A inserção não é no menisco medial, os ligamentos meniscofemorais se inserem no corno posterior do menisco lateral.",
-   "B": "A origem não é no côndilo lateral do fêmur, os ligamentos meniscofemorais se originam no côndilo medial.",
-   "C": "Tanto a origem (côndilo lateral) quanto a inserção (menisco medial) estão invertidas nessa alternativa, a origem correta é medial e a inserção é no menisco lateral."
+   "A": "**Menisco errado.**\n- Vão ao lateral.",
+   "B": "**Côndilo errado.**\n- Medial.",
+   "C": "**Duplamente errada.**\n- Côndilo e menisco."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0256": {
-  "conceito": "O **menisco discoide**, uma variação anatômica congênita em que o menisco (mais comumente o lateral) não assume seu formato semilunar normal, permanecendo mais largo, espesso e discoide, aparece na ressonância magnética como uma estrutura meniscal anormalmente volumosa, estendendo-se mais amplamente pelo compartimento articular e aparecendo de forma mais contínua em múltiplos cortes sagitais consecutivos (\"bow-tie sign\" ampliado), compatível com o corpo meniscal espessado indicado pela seta na imagem.",
-  "correta": "A. A imagem é mais sugestiva de menisco discoide.",
+  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Imagem\n- RM: menisco em \"==gravata-borboleta==\" em ==3 ou mais cortes sagitais== consecutivos de 5 mm (normal: 2).\n- Coronal: largura > 15 mm ou > 20% do platô.\n- RX: espaço lateral alargado, côndilo achatado, eminência hipoplásica.\n\n> **Na prova:** imagem sugestiva = ==menisco discoide==",
+  "correta": "**Menisco discoide.**\n- Menisco largo, contínuo em vários cortes.\n- Lateral na quase totalidade.",
   "incorretas": {
-   "B": "A **lesão meniscal em alça de balde** mostraria um fragmento meniscal deslocado, frequentemente visível como um fragmento adicional junto ao ligamento cruzado posterior (\"double PCL sign\"), um achado diferente do corpo meniscal simplesmente alargado mostrado.",
-   "C": "A **lesão do LCA** mostraria alteração de sinal e descontinuidade do próprio ligamento cruzado anterior, uma estrutura distinta do menisco assinalado pela seta.",
-   "D": "A **lesão da raiz meniscal** mostraria uma interrupção radial focal na inserção do menisco, com um sinal característico de \"menisco fantasma\" nos cortes sagitais, um padrão diferente do corpo meniscal difusamente alargado mostrado."
+   "B": "**Fragmento na fossa.**\n- Duplo LCP.",
+   "C": "**Ligamento.**\n- Não é o achado.",
+   "D": "**Raiz.**\n- Extrusão, sinal fantasma."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0259": {
-  "conceito": "No fêmur curto congênito (dentro do espectro da deficiência femoral focal), a escolha do tratamento depende do grau de encurtamento projetado e da funcionalidade das articulações do quadril e do joelho. Quando o encurtamento é **superior a 50%** do comprimento do fêmur contralateral (um grau severo demais para ser corrigido por alongamento ósseo isolado, que exigiria múltiplas cirurgias estagiadas com risco cumulativo elevado de complicações) mas o **quadril e o joelho são funcionais** (estáveis e móveis), a **rotacionplastia (técnica de Van Nes)** costuma ser a opção mais indicada: o segmento distal do membro é rodado 180° e reimplantado, transformando o tornozelo em uma nova \"articulação do joelho\" funcional para uso futuro de prótese abaixo do joelho, uma solução que aproveita justamente a boa função do quadril e do joelho remanescentes.",
-  "correta": "B. Em um fêmur curto congênito com encurtamento maior que 50% e quadril e joelho funcionais, a rotacionplastia costuma ser a opção mais indicada.",
+  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Gillespie (deficiência femoral)\n| Grupo | Achado | Tratamento |\n|---|---|---|\n| ==A== | fêmur curto, ==quadril e joelho funcionais==, pé no nível da tíbia contralateral | ==alongamento== (± epifisiodese) |\n| B | DFFP verdadeira, pé no nível do joelho oposto | Van Nes, Syme, artrodese do joelho + prótese |\n| C | deficiência grave, quase ausência do fêmur | prótese |\n\n### Discrepância prevista\n| Fêmur previsto | Opção |\n|---|---|\n| < 50% mais curto, articulações boas | alongamento(s) |\n| ==> 50% mais curto== | ==rotacionplastia de Van Nes== (tornozelo vira joelho) ou prótese |\n\n> **Na prova:** fêmur > 50% mais curto com quadril e joelho funcionais = ==rotacionplastia== (gabarito).",
+  "correta": "**Rotacionplastia.**\n- Van Nes: tornozelo girado 180° funciona como joelho.\n- Para encurtamentos grandes demais para alongar.",
   "incorretas": {
-   "A": "O alongamento ósseo isolado é mais indicado para discrepâncias menores, sendo impraticável (por exigir múltiplas cirurgias e ter alto risco de complicações) para encurtamentos superiores a 50%.",
-   "C": "A protetização (sem cirurgia reconstrutiva) costuma ser reservada para casos com articulações não funcionais, diferente do caso descrito, em que quadril e joelho são funcionais.",
-   "D": "A amputação não é a primeira escolha quando há quadril e joelho funcionais que podem ser aproveitados por meio da rotacionplastia."
+   "A": "**Encurtamento pequeno.**\n- Viável se < 50%.",
+   "C": "**Alternativa.**\n- Não a preferida no gabarito.",
+   "D": "**Alternativa.**\n- Syme + prótese é opção."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0260": {
-  "conceito": "O ângulo de Hilgenreiner-epifisário (HEA) é o principal parâmetro radiográfico usado para decidir a conduta na coxa vara do desenvolvimento, refletindo diretamente o risco de progressão da deformidade em varo. Valores de HEA superiores a **60 graus** estão associados a alto risco de progressão espontânea desfavorável, sendo esse o limiar mais aceito para indicar o **tratamento cirúrgico** (osteotomia valgizante) em vez de apenas observação, abaixo desse valor, a conduta costuma ser mais conservadora, com acompanhamento clínico e radiográfico periódico.",
-  "correta": "C. O tratamento cirúrgico na coxa vara do desenvolvimento é indicado a partir de um ângulo de Hilgenreiner de aproximadamente 60 graus.",
+  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n> **Na prova:** coxa vara do desenvolvimento limita ==abdução e rotação medial==.",
+  "correta": "**60°.**\n- HE acima de 60° progride.\n- Osteotomia valgizante.",
   "incorretas": {
-   "A": "30 graus é um valor considerado de baixo risco de progressão, não o limiar para indicação cirúrgica.",
-   "B": "45 graus está numa faixa intermediária, geralmente ainda acompanhada de forma conservadora, não é o limiar clássico para cirurgia.",
-   "D": "90 graus seria um valor extremamente elevado, muito além do limiar já suficiente (60 graus) para indicar tratamento cirúrgico."
+   "A": "**Normal.**\n- Resolve.",
+   "B": "**Observar.**\n- Entre 45 e 60°.",
+   "D": "**Não é o limiar.**\n- Muito alto."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0261": {
-  "conceito": "A manobra de **Barlow** é um teste **provocativo**, usado para verificar se um quadril aparentemente normal ao exame é, na verdade, instável e luxável. A técnica consiste em **flexionar o quadril a 90°** e, em seguida, realizar **adução** do quadril associada a uma **pressão posterior aplicada próxima ao trocânter menor** (região da face interna da coxa), buscando deslocar a cabeça femoral posteriormente para fora do acetábulo, provocando a luxação em um quadril instável.\n\nÉ importante não confundir com a manobra de **Ortolani**, que faz o movimento oposto: parte de um quadril já luxado e, por meio de **abdução** associada à pressão sobre o **trocânter maior**, busca **reduzir** a cabeça femoral de volta ao acetábulo (o \"click\" de redução característico).",
-  "correta": "C. Na manobra de Barlow, flexiona-se o quadril a 90°, seguido de adução e pressão próxima ao trocânter menor, buscando provocar a luxação.",
+  "conceito": "### DDQ: exame conforme a idade\n| Idade | Achado útil |\n|---|---|\n| recém-nascido a 2-3 meses | ==Ortolani== (reduz) e ==Barlow== (luxa) |\n| ==após 3 meses== | ==limitação da abdução (Hart)==, Galeazzi, assimetria de pregas |\n| marcha | Trendelenburg, claudicação, hiperlordose (bilateral) |\n\n### Sinais\n| Sinal | O que é |\n|---|---|\n| ==Hart== | abdução limitada com quadril e joelho fletidos (adutores retraídos) |\n| Galeazzi | joelho mais baixo com quadris fletidos |\n| Peter-Bade | pregas assimétricas (pouco específico) |\n| Klisic | linha trocanter-EIAS passa abaixo do umbigo |\n\n### Imagem\n| Idade | Exame |\n|---|---|\n| < 4 a 6 meses | ultrassom (Graf) |\n| > 4 a 6 meses | radiografia (Hilgenreiner, Perkins, Shenton, índice acetabular) |\n\n### Manobras neonatais\n| Manobra | Técnica | Achado |\n|---|---|---|\n| ==Barlow== | quadril a 90°, ==adução==, pressão ==posterior== com o polegar no ==trocanter menor== | ==luxa== (quadril luxável) |\n| Ortolani | quadril a 90°, ==abdução== com o dedo no ==trocanter maior== empurrando para frente | ==reduz== (quadril luxado redutível) |\n\n> **Na prova:** Barlow = adução e pressão no ==trocanter menor== para ==luxar==",
+  "correta": "**Adução e pressão no trocanter menor para luxar.**\n- Testa o quadril luxável.\n- Ortolani faz o inverso.",
   "incorretas": {
-   "A": "A combinação de abdução e pressão no trocânter maior para provocar redução corresponde à manobra de Ortolani, não à de Barlow.",
-   "B": "A pressão na manobra de Barlow é aplicada próxima ao trocânter menor (face medial da coxa), não sobre o trocânter maior.",
-   "D": "A combinação de abdução, pressão no trocânter menor e objetivo de redução não corresponde nem à técnica nem ao objetivo da manobra de Barlow."
+   "A": "**Ortolani.**\n- Abdução para reduzir.",
+   "B": "**Trocanter errado.**\n- O maior é usado no Ortolani.",
+   "D": "**Mistura.**\n- Abdução reduz."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0262": {
-  "conceito": "A classificação de **Phelps** para a paralisia cerebral correlaciona o padrão clínico predominante (espástico, discinético/atetoide, atáxico) com a topografia da lesão neurológica de base:\n- **Espástico**: lesão do **córtex motor** e das vias piramidais (trato corticoespinhal).\n- **Discinético (atetoide/distônico)**: lesão dos **núcleos da base** (gânglios da base), classicamente associada a quadros como o kernicterus, em que a bilirrubina se deposita preferencialmente nessas estruturas.\n- **Atáxico**: lesão do **cerebelo** e suas vias de conexão, comprometendo coordenação e equilíbrio.\n\nEssa correlação topográfica-clínica é a base para compreender por que cada subtipo de paralisia cerebral apresenta um padrão de movimento tão distinto: espasticidade (piramidal), movimentos involuntários (extrapiramidal/núcleos da base) ou incoordenação (cerebelar).",
-  "correta": "B. Segundo a classificação de Phelps, os indivíduos com padrão discinético apresentam lesão nos núcleos da base.",
+  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n> **Na prova:** PC atetoide = ==extrapiramidal==.",
+  "correta": "**Discinéticos: núcleos da base.**\n- Extrapiramidal.\n- Movimentos involuntários.",
   "incorretas": {
-   "A": "A lesão cerebelar está associada ao padrão atáxico, não ao discinético.",
-   "C": "A lesão nos núcleos da base está associada ao padrão discinético, não ao espástico, o padrão espástico corresponde a lesão do córtex motor e das vias piramidais.",
-   "D": "A lesão cerebelar está associada ao padrão atáxico, não ao espástico, o padrão espástico corresponde a lesão do córtex motor e das vias piramidais."
+   "A": "**Cerebelo é atáxico.**\n- Discinético é núcleos da base.",
+   "C": "**Espástico é piramidal.**\n- Não núcleos da base.",
+   "D": "**Espástico é piramidal.**\n- Cerebelo é atáxico."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0263": {
-  "conceito": "A classificação de **Wilson** para a epifisiólise proximal do fêmur avalia a gravidade do escorregamento de forma **proporcional**, medindo o quanto a epífise está deslocada em relação à largura do colo femoral (expresso como uma porcentagem do deslocamento em relação ao diâmetro do colo), diferente de métodos que usam ângulos absolutos (como o ângulo cefalodiafisário de Southwick) ou classificações baseadas em critérios clínicos, como a duração dos sintomas (aguda/crônica) ou a capacidade de deambulação (estável/instável, segundo Loder).\n\nEssa abordagem proporcional permite comparar o grau de escorregamento de forma relativamente padronizada entre pacientes com colos femorais de tamanhos diferentes, complementando outros sistemas de classificação usados na prática.",
-  "correta": "B. A classificação de Wilson quantifica proporcionalmente o escorregamento da epífise em relação ao colo femoral.",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Wilson (proporção do escorregamento no AP)\n| Grau | Deslizamento |\n|---|---|\n| leve | < 1/3 da largura do colo |\n| moderado | 1/3 a 1/2 |\n| grave | > 1/2 |\n\n> **Na prova:** Wilson = ==proporção do escorregamento em relação ao colo==",
+  "correta": "**Proporção do escorregamento.**\n- Fração da largura do colo deslocada.\n- Southwick mede em graus; Loder, carga.",
   "incorretas": {
-   "A": "A quantificação por ângulo epifisodiafisário corresponde ao método de Southwick, não à classificação de Wilson.",
-   "C": "A classificação baseada no tempo de apresentação da doença (aguda, crônica, aguda sobre crônica) é um critério clínico distinto, não o princípio da classificação de Wilson.",
-   "D": "A divisão pela capacidade de carga no membro afetado (estável/instável) corresponde à classificação de Loder, não à de Wilson."
+   "A": "**Southwick.**\n- Ângulo em graus.",
+   "C": "**Classificação temporal.**\n- Aguda, crônica.",
+   "D": "**Loder.**\n- Estável × instável."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0264": {
