@@ -6424,91 +6424,91 @@
   "conferido": false
  },
  "mao-0554": {
-  "conceito": "O tendão flexor recebe sangue por duas vias: difusão pelo líquido sinovial e vínculas, que chegam pelo dorso do tendão em pontos específicos. Entre uma vínculo e outra sobram trechos de irrigação pobre, e eles coincidem com as polias anulares que apertam o tendão contra o osso. No superficial, essa zona fica sob a A2; no profundo, sob a A4. É por isso que a reparação nessas alturas cicatriza pior e as duas polias são as que não se sacrificam.",
-  "correta": "No flexor superficial, a zona de isquemia relativa fica sob a polia A2, na falange proximal.",
+  "conceito": "### Nutrição dos tendões flexores\n| Fonte | Via |\n|---|---|\n| vascular | vínculas (curtas e longas), entram pela face **dorsal** |\n| difusão | líquido sinovial dentro da bainha |\n\n### Zonas avasculares\n| Tendão | Zona isquêmica |\n|---|---|\n| ==flexor superficial== | ==sob a polia A2== |\n| flexor profundo | sob a polia **A4** |\n\n- Nessas zonas, o tendão depende quase só da difusão.\n- A face **volar** do tendão (em contato com a polia) é a mais pobre em vasos.\n\n### Polias\n| Polia | Local | Importância |\n|---|---|---|\n| A1 | MF | seccionada no dedo em gatilho |\n| ==A2== | falange proximal | ==essencial== (evita corda de arco) |\n| A3 | IFP | fina |\n| A4 | falange média | ==essencial== |\n| A5 | IFD | fina |\n\n### Implicações\n- Suturas no **lado dorsal** do tendão preservam a irrigação.\n- Mobilização precoce melhora a difusão sinovial.\n\n> **Na prova:** zona isquêmica do flexor superficial = ==polia A2==.",
+  "correta": "**A2.**\n- Zona hipovascular do FSD entre as vínculas.\n- No FPD, a zona equivalente fica sob a A4.",
   "incorretas": {
-   "A": "A A1 fica sobre a metacarpofalângica. É a polia do dedo em gatilho, e liberá-la não compromete nutrição nem função, exatamente o oposto de uma zona crítica.",
-   "C": "A A3, sobre a interfalângica proximal, é curta e não corresponde à zona hipovascular descrita para o superficial.",
-   "D": "As polias cruciformes (C1, C2, C3) são finas e colapsáveis, feitas para deixar o dedo dobrar. Não são o ponto de compressão que define a área isquêmica."
+   "A": "**Gatilho.**\n- Liberá-la não compromete nutrição.",
+   "C": "**Curta.**\n- Não é a zona descrita.",
+   "D": "**Cruciforme.**\n- Fina e colapsável."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0555": {
-  "conceito": "Camptodactilia é a flexão fixa e progressiva da interfalângica proximal, quase sempre do quinto dedo, sem que haja trauma ou lesão do extensor. Tem dois picos de aparecimento (no primeiro ano de vida e na adolescência) e a decisão de tratar não se toma pelo grau isolado, mas pelo quanto a deformidade atrapalha. Deformidade pequena não atrapalha, e o que resolve nesses casos é alongamento e órtese, não cirurgia.",
-  "correta": "Até 30-40 graus a interfalângica proximal fletida não impede as atividades da mão, e o tratamento é clínico, órtese e alongamento.",
+  "conceito": "### Camptodactilia\n- Contratura em **flexão da IFP**, quase sempre do **mínimo**, sem trauma e sem alteração palmar.\n- Causas: inserção anômala do **lumbrical**, **FSD** curto ou anômalo, retináculo.\n- **Bilateral** na maioria (frequentemente assimétrica).\n\n### Dois picos\n| Forma | Idade | Sexo |\n|---|---|---|\n| infantil | 1º ano | igual |\n| adolescente | estirão | meninas |\n\n### Associações\n- Trissomia do 21, Marfan, orofaciodigital, Poland, artrogripose distal, Beals.\n\n### Tratamento\n| Deformidade | Conduta |\n|---|---|\n| ==até 30 a 40°== | ==alongamento e órtese de extensão== (clínico) |\n| > 40 a 60°, progressiva, funcional | liberação (pele, FSD, lumbrical, placa volar), transferência do FSD para o aparelho extensor |\n\n- Resultados cirúrgicos **imprevisíveis**; perda de flexão possível.\n\n### Diferenciais\n- Clinodactilia (desvio no plano coronal), Kirner, botoeira, Dupuytren (adulto).\n\n> **Na prova:** até ==30 a 40°== = tratamento clínico.",
+  "correta": "**Até 30 a 40°: tratamento clínico.**\n- Não interfere nas atividades.\n- Órtese e alongamento.",
   "incorretas": {
-   "A": "É o contrário: a apresentação bilateral é a regra, ainda que muitas vezes assimétrica.",
-   "C": "A adolescência é um dos dois picos, não o único. A forma infantil aparece já no primeiro ano de vida.",
-   "D": "Há associação sindrômica descrita (trissomias, síndrome oro-facio-digital, Marfan, entre outras), e é por isso que a criança com camptodactilia merece exame geral, não só da mão."
+   "A": "**Bilateral é regra.**\n- Frequentemente assimétrica.",
+   "C": "**Dois picos.**\n- Primeiro ano e adolescência.",
+   "D": "**Pode ser sindrômica.**\n- Trissomias, Marfan, orofaciodigital."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0556": {
-  "conceito": "Narakas classifica a lesão obstétrica do plexo pela extensão das raízes envolvidas, e a extensão é o que determina o prognóstico. Tipo I é C5-C6 (Erb clássico), tipo II é C5-C7, tipo III é a lesão completa C5-T1 sem Horner e tipo IV é a completa com síndrome de Horner. Quanto mais baixa a raiz envolvida, pior a recuperação espontânea: o tipo I recupera quase sempre e cedo, e o tipo IV é o que praticamente não recupera sozinho.",
-  "correta": "O tipo I, que é a lesão de C5-C6, é o de melhor prognóstico e o que recupera integralmente entre a primeira e a oitava semana.",
+  "conceito": "### Narakas e prognóstico\n| Grupo | Raízes | Recuperação espontânea |\n|---|---|---|\n| ==I== | ==C5-C6== | ==completa em cerca de 90%==, muitas vezes ==nas primeiras 1 a 8 semanas== |\n| II | C5-C7 | cerca de 65%; mais lenta, frequentemente incompleta |\n| III | C5-T1 sem Horner | pouca; sequelas |\n| IV | C5-T1 com Horner | a pior; lesão pré-ganglionar |\n\n### Marcos de acompanhamento\n- **Bíceps** contra a gravidade aos 3 meses (Gilbert e Tassin): se ausente, considerar cirurgia.\n- **Teste do biscoito** (Toronto): levar o biscoito à boca aos 9 meses.\n- **Escala de Toronto** e escala de movimento ativo (AMS).\n\n### Fatores de pior prognóstico\n- Horner, lesão total, ausência de recuperação do bíceps até 3 meses, avulsões (pré-ganglionares).\n\n> **Na prova:** recuperação total em 1 a 8 semanas = ==Narakas I==.",
+  "correta": "**Tipo I.**\n- C5-C6, melhor prognóstico.\n- Recuperação total entre 1 e 8 semanas.",
   "incorretas": {
-   "B": "O tipo II acrescenta C7, com perda da extensão do punho e dos dedos, e a recuperação completa nesse prazo já não é a regra.",
-   "C": "O tipo III é a lesão completa, de C5 a T1, sem Horner. Recuperação total em oito semanas não é o que se espera dele.",
-   "D": "O tipo IV é a lesão completa com síndrome de Horner, sinal de avulsão de raiz, o pior prognóstico da classificação, e não o melhor."
+   "B": "**C5-C7.**\n- Recuperação completa não é regra.",
+   "C": "**Completa sem Horner.**\n- Não recupera assim.",
+   "D": "**Completa com Horner.**\n- Pior prognóstico."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0557": {
-  "conceito": "Na lesão de plexo do adulto a reconstrução é hierárquica, porque o tempo de reinervação é limitado e não dá para recuperar tudo. A flexão do cotovelo vem primeiro: sem ela a mão não chega à boca nem ao rosto, e nenhum outro ganho substitui isso. A neurotização que atende esse objetivo é a de Oberlin, fascículos do nervo ulnar destinados ao flexor ulnar do carpo transferidos para o ramo do bíceps no musculocutâneo, aproveitando que o ulnar está íntegro nas lesões altas.",
-  "correta": "O primeiro objetivo é o ganho de flexão do cotovelo, e a neurotização compatível é a de Oberlin.",
+  "conceito": "### Plexo braquial: padrões\n| Lesão | Raízes | Quadro |\n|---|---|---|\n| ==superior (Erb)== | ==C5-C6== | ombro sem abdução e RE, cotovelo sem flexão, sem supinação; ==gorjeta de garçom== |\n| estendida | C5-C7 | + extensão do cotovelo e punho fracas |\n| inferior (Klumpke) | C8-T1 | mão em garra, intrínsecos, Horner |\n| total | C5-T1 | membro flácido e anestésico |\n\n### Por que cada déficit\n| Função perdida | Nervo |\n|---|---|\n| abdução do ombro | axilar (deltoide), supraescapular |\n| flexão do cotovelo | musculocutâneo (bíceps, braquial) |\n| supinação | bíceps |\n| sensibilidade lateral do braço | axilar (cutâneo lateral superior) |\n\n### Sinais de avulsão pré-ganglionar\n- **Horner** (T1), escápula alada (torácico longo), hemidiafragma elevado (frênico), dor em queimação, pseudomeningocele na RM.\n- Histamina e condução sensitiva preservadas em região anestésica.\n\n### Prioridades na lesão completa\n| Ordem | Função | Opção comum |\n|---|---|---|\n| ==1== | ==flexão do cotovelo== | Oberlin (fascículo do ulnar), intercostais, frênico, acessório |\n| 2 | estabilidade e abdução do ombro | acessório para supraescapular |\n| 3 | sensibilidade protetora da mão | |\n| 4 | extensão do punho, flexão dos dedos | transferências, músculo livre (grácil) |\n| 5 | intrínsecos | quase nunca recuperam |\n\n- Placa motora degenera em 12 a 18 meses: operar cedo (3 a 6 meses).\n\n### Transferências nervosas clássicas\n| Técnica | Doador | Receptor | Função |\n|---|---|---|---|\n| ==Oberlin== | ==fascículo do ulnar (FUC)== | ==ramo do bíceps== | flexão do cotovelo |\n| Oberlin dupla (Mackinnon) | + fascículo do mediano | ramo do braquial | flexão do cotovelo |\n| Somsak | ramo do tríceps (radial) | nervo axilar | abdução |\n| acessório → supraescapular | XI par | supraescapular | abdução, RE |\n| intercostais | T3-T5 | musculocutâneo | flexão do cotovelo |\n\n> **Na prova:** ulnar para o ramo do bíceps = ==Oberlin==",
+  "correta": "**Flexão do cotovelo, Oberlin.**\n- Prioridade número um.\n- Fascículo do ulnar para o ramo do bíceps.",
   "incorretas": {
-   "A": "O objetivo está certo, mas Steindler não é neurotização: é a flexorplastia, uma transferência da massa flexo-pronadora para a região mais proximal do úmero, portanto uma cirurgia de músculo, não de nervo.",
-   "C": "Somsak é neurotização de verdade (o ramo do tríceps para o axilar), mas serve à abdução do ombro, que não é o primeiro objetivo da reconstrução.",
-   "D": "A operação de Saha é transferência tendínea do trapézio para o ombro, não neurotização, e o alvo continua sendo o objetivo secundário."
+   "A": "**Steindler não é nervo.**\n- Flexorplastia muscular.",
+   "C": "**Objetivo secundário.**\n- Somsak serve à abdução.",
+   "D": "**Tendínea.**\n- Saha: trapézio, não neurotização."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0558": {
-  "conceito": "Reimplante não devolve sensibilidade normal. A regeneração atravessa a sutura nervosa, perde axônios pelo caminho e reinerva o polegar com uma densidade de receptores menor do que a original. Por isso o resultado esperado fica entre a sensibilidade normal (discriminação abaixo de 6 mm) e a apenas protetora: o corte limpo, que é o mecanismo de melhor prognóstico, costuma chegar à casa dos 10 a 12 mm. Vale a ressalva de que este é um número de série, não uma regra fisiológica, separar 11 de 14 mm depende da casuística citada, e o que se sustenta com firmeza é a ordem de grandeza.",
-  "correta": "Cerca de 11 mm: melhor do que a sensibilidade apenas protetora, e bem longe da discriminação normal.",
+  "conceito": "### Discriminação de dois pontos (D2P)\n| Valor estático | Interpretação |\n|---|---|\n| < 6 mm | normal (polpa) |\n| 6 a 10 mm | regular |\n| ==11 a 15 mm== | ==sensibilidade funcional reduzida== |\n| > 15 mm | apenas protetora |\n\n### Reimplante do polegar\n- Média esperada após ferimento **cortante**: ==cerca de 11 mm==.\n- Esmagamento e avulsão: resultados piores (lesão nervosa extensa).\n- Crianças recuperam melhor.\n\n### Fatores de melhor recuperação sensitiva\n- Idade jovem, mecanismo cortante, nível distal, reparo sem tensão, reparo precoce.\n\n### Escala de Mackinnon-Dellon (sensibilidade)\n- S0 a S4, com D2P como parâmetro nos graus altos (S3+: D2P de 7 a 15 mm; S4: 2 a 6 mm).\n\n> **Na prova:** D2P esperada no polegar reimplantado por corte = ==cerca de 11 mm==.",
+  "correta": "**Cerca de 11 mm.**\n- Melhor que só protetora, longe do normal.\n- Corte limpo é o mecanismo de melhor prognóstico.",
   "incorretas": {
-   "A": "4 mm é discriminação normal de polpa digital. Nenhuma série de reimplante alcança isso como média.",
-   "B": "6 mm ainda está dentro da faixa normal. Esperar isso de um dedo reimplantado é superestimar a regeneração.",
-   "D": "14 mm subestima o resultado do corte limpo, que é justamente o mecanismo com melhor recuperação sensitiva entre as amputações."
+   "A": "**Normal.**\n- Nenhum reimplante alcança como média.",
+   "B": "**Ainda normal.**\n- Superestima a regeneração.",
+   "D": "**Subestima.**\n- O corte limpo recupera melhor."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0559": {
-  "conceito": "O polegar em gatilho da criança não é a mesma doença do dedo em gatilho do adulto nem do dedo em gatilho da criança. É uma desproporção entre o flexor longo do polegar espessado (o nódulo de Notta) e a polia A1, que segura esse espessamento. Aparece isolada, sem doença de base, e a apresentação típica é a interfalângica travada em flexão, muitas vezes descoberta pelos pais sem história de travamento e destravamento. Já o dedo em gatilho da criança, esse sim, obriga a procurar mucopolissacaridose e outras doenças sistêmicas.",
-  "correta": "É alteração isolada, e o conflito é com a polia A1.",
+  "conceito": "### Polegar em gatilho da criança\n- **Não é inflamatório**: desproporção entre o FLP, com o **nódulo de Notta**, e a ==polia A1==.\n- Alteração ==isolada== (não sindrômica), bilateral em cerca de 25 a 30%.\n- Apresentação: **IF travada em flexão** (muitas vezes sem estalido), nódulo palpável na base do polegar.\n- Pais frequentemente atribuem a trauma.\n\n### Evolução e tratamento\n| Conduta | Detalhe |\n|---|---|\n| observação | resolução espontânea em parte considerável até cerca de 3 a 4 anos |\n| órtese em extensão | opção em alguns serviços |\n| ==liberação da A1== | curativa; evitar lesar os nervos digitais (muito próximos e superficiais no polegar) |\n\n### Dedo em gatilho dos dedos longos na criança\n- Mais raro e diferente: pode envolver FSD anômalo, nódulos e exigir mais que a liberação da A1.\n- Múltiplos gatilhos: pensar em **mucopolissacaridose**, AIJ, trissomia do 21.\n\n> **Na prova:** polegar em gatilho infantil = ==isolado, polia A1==.",
+  "correta": "**Isolada, polia A1.**\n- Nódulo de Notta contra a A1.\n- Gatilhos múltiplos é que são sindrômicos.",
   "incorretas": {
-   "B": "A polia A2 não é o ponto de bloqueio. No polegar, o que aperta o nódulo de Notta é a A1, na metacarpofalângica.",
-   "C": "Sindrômico é o dedo em gatilho da criança, não o polegar. O polegar em gatilho infantil ocorre isoladamente.",
-   "D": "Erra as duas coisas ao mesmo tempo: nem é sindrômico, nem a polia envolvida é a A2."
+   "B": "**Polia errada.**\n- É a A1.",
+   "C": "**Não sindrômico.**\n- Isolado.",
+   "D": "**Duplamente errada.**\n- Nem sindrômico nem A2."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0560": {
-  "conceito": "Enxerto de tendão flexor em um tempo só funciona quando o leito por onde ele vai deslizar está pronto para recebê-lo. Isso significa articulações móveis, pele e tecido subcutâneo de boa qualidade, e sobretudo o sistema de polias íntegro, porque é a polia que mantém o tendão junto ao osso e converte o deslizamento em flexão. Faltando qualquer uma dessas condições, a operação vira dois tempos: espaçador de silicone primeiro, para construir uma bainha nova e reconstruir polias, e o enxerto depois.",
-  "correta": "Polias permeáveis: é a condição que permite ao enxerto deslizar e trabalhar no primeiro tempo.",
+  "conceito": "### Reconstrução tardia do flexor na zona II\n| Condição do dedo | Estratégia |\n|---|---|\n| ==polias permeáveis== (A2 e A4), bainha utilizável, articulações ==móveis passivamente==, pele boa | ==enxerto em um tempo== |\n| bainha cicatrizada, polias perdidas, rigidez, pele ruim | ==dois tempos==: haste de silicone (Hunter) + reconstrução de polias; enxerto após 3 meses |\n| articulação destruída, dedo pouco útil | artrodese, tenodese ou amputação |\n\n### Classificação de Boyes (candidatos a enxerto)\n| Grau | Situação | Prognóstico |\n|---|---|---|\n| 1 | boa: cicatriz mínima, articulações móveis | melhor |\n| 2 | cicatriz | |\n| 3 | lesão articular | |\n| 4 | lesão nervosa | |\n| 5 | múltiplas lesões | pior |\n\n### Doadores de enxerto\n- **Palmar longo** (ausente em cerca de 15%), plantar, extensor longo dos dedos do pé.\n\n### Pré-requisito comum\n- Mobilidade passiva completa das articulações (reabilitação antes).\n\n> **Na prova:** enxerto primário indicado com ==polias permeáveis==.",
+  "correta": "**Polias permeáveis.**\n- Permitem ao enxerto deslizar e fletir.\n- Também exigem articulações móveis e leito bom.",
   "incorretas": {
-   "A": "Rigidez articular é contraindicação, não indicação. Enxertar tendão em dedo rígido devolve deslizamento a uma articulação que não se move.",
-   "C": "Bainha lesada é justamente o caso do procedimento em dois tempos, com haste de Hunter para formar uma pseudobainha antes do enxerto.",
-   "D": "Lesão nervosa concomitante precisa ser tratada, mas não é o que indica o enxerto primário, se algo, pesa contra ele, porque um dedo insensível recupera função pior."
+   "A": "**Contraindicação.**\n- Dedo rígido não se beneficia.",
+   "C": "**Dois tempos.**\n- Haste de Hunter antes.",
+   "D": "**Pesa contra.**\n- Dedo insensível recupera pior."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0561": {
-  "conceito": "A dissecção mostra o antebraço volar com a musculatura superficial afastada, e a seta aponta o ramo que o nervo mediano emite logo abaixo do pronador redondo e que segue em profundidade, sobre a membrana interóssea, acompanhando a artéria interóssea anterior. É o nervo interósseo anterior. Ele é puramente motor e comanda três músculos: flexor longo do polegar, flexor profundo dos dedos indicador e médio, e pronador quadrado. É por isso que a lesão dele não dá alteração de sensibilidade nenhuma, e o sinal clínico é a incapacidade de fazer o \"O\" com polegar e indicador.",
-  "correta": "Flexores profundos do indicador e do médio: junto com o flexor longo do polegar e o pronador quadrado, são o território motor do interósseo anterior.",
+  "conceito": "### Nervo interósseo anterior (NIA)\n- Ramo **motor puro** do mediano, sai logo abaixo do pronador redondo.\n- Desce sobre a **membrana interóssea** com a artéria interóssea anterior.\n\n| Músculo inervado | Função testada |\n|---|---|\n| flexor longo do polegar | flexão da IF do polegar |\n| ==flexor profundo do indicador e do médio== | ==flexão da IFD== desses dedos |\n| pronador quadrado | pronação com cotovelo fletido |\n\n### O que fica preservado\n| Músculo | Nervo |\n|---|---|\n| flexor superficial dos dedos | mediano (acima do NIA) |\n| pronador redondo, FRC, palmar longo | mediano |\n| tenar, lumbricais 1 e 2 | mediano na mão |\n| extensores | radial (NIP) |\n\n### Sinal do O\n- Polpa contra polpa achatada; IFP do indicador flete normalmente (FSD preservado).\n- Sensibilidade **normal**.\n\n> **Na prova:** compressão do NIA enfraquece os ==flexores profundos do indicador e médio==.",
+  "correta": "**FPD do indicador e médio.**\n- Território do interósseo anterior, com FLP e pronador quadrado.\n- Motor puro, sem déficit sensitivo.",
   "incorretas": {
-   "A": "Os flexores superficiais recebem ramos do tronco do mediano, acima da saída do interósseo anterior. Numa lesão isolada do interósseo anterior eles continuam funcionando.",
-   "C": "O flexor curto do polegar é tenar (ramo recorrente do mediano e ulnar), e os lumbricais dividem-se entre mediano e ulnar. Nenhum deles depende do interósseo anterior.",
-   "D": "Os extensores dos dedos são território radial, pelo interósseo posterior, do outro lado da membrana interóssea e sem relação com o nervo apontado."
+   "A": "**Superficiais preservados.**\n- Ramos do tronco acima do NIA.",
+   "C": "**Tenar e lumbricais.**\n- Mediano na mão e ulnar.",
+   "D": "**Radial.**\n- Interósseo posterior."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0562": {
