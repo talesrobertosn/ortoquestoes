@@ -4514,111 +4514,111 @@
   "conferido": false
  },
  "pediatria-0355": {
-  "conceito": "A epifisiólise proximal do fêmur ocorre tipicamente durante a adolescência por falha da fise submetida a forças de cisalhamento. Obesidade e estirão de crescimento são os fatores epidemiológicos mais importantes, mas apresentações atípicas exigem pesquisa de causas secundárias. Hipotireoidismo, deficiência de hormônio do crescimento antes ou durante tratamento, pan-hipopituitarismo, osteodistrofia renal e exposição prévia à radioterapia envolvendo a região fisária podem aumentar o risco. Epifisiólise em criança muito jovem, paciente magro, baixa estatura ou fora da faixa etária habitual deve levantar suspeita endocrinológica/metabólica. Clinicamente há dor em quadril, coxa ou joelho, claudicação, redução da rotação interna e rotação externa obrigatória na flexão. O diagnóstico é radiográfico e o tratamento padrão do escorregamento estável é fixação in situ, evitando progressão.",
-  "correta": "A alternativa B está correta. Radioterapia prévia é um fator reconhecido para epifisiólise atípica porque pode alterar a estrutura e a resistência da fise, especialmente em pacientes tratados por neoplasias na infância. Diante de um adolescente com escorregamento fora do perfil epidemiológico habitual, história oncológica e exposição à radiação devem integrar a investigação.",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n### Fatores endócrinos e sistêmicos\n- Tudo que ==enfraquece a fise== ou prolonga sua abertura: ==hipotireoidismo== (não hiper), ==hipogonadismo== (testosterona baixa), GH, ==radioterapia== da pelve, osteodistrofia renal.\n- Testosterona e estrogênio ==fecham e fortalecem== a fise.\n- O escorregamento é por ==estresse crônico==, não por trauma de alta energia.\n\n> **Na prova:** radioterapia prévia = ==fator de risco== para epifisiólise",
+  "correta": "**Radioterapia prévia.**\n- Lesa os condrócitos da fise.\n- Escorregamento em fise enfraquecida.",
   "incorretas": {
-   "A": "A endocrinopatia classicamente relacionada é hipotireoidismo, não hipertireoidismo. Alterações de hormônio do crescimento e insuficiência renal também são associações conhecidas. Trocar hipo por hipertireoidismo é uma armadilha frequente.",
-   "C": "Trauma de grande energia pode produzir fratura fisária aguda, mas epifisiólise típica é resultado de falha progressiva sobre uma fise vulnerável e não exige mecanismo traumático de alta energia.",
-   "D": "Níveis altos de testosterona não são reconhecidos como fator causal isolado da epifisiólise. A maturação hormonal da puberdade influencia a fise, porém a associação clínica relevante é com determinadas endocrinopatias, obesidade e fatores mecânicos."
+   "A": "**Hipotireoidismo.**\n- É o hipo, não o hiper.",
+   "C": "**Alta energia.**\n- Causaria fratura, não epifisiólise.",
+   "D": "**Testosterona baixa.**\n- Hormônios sexuais fortalecem a fise."
   },
   "referencias": [
    "Slipped Capital Femoral Epiphysis: Prevalence, Pathogenesis, and Natural History. PMCID: PMC3492592.",
    "Slipped capital femoral epiphysis: current management strategies. PMID: 31040725."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0356": {
-  "conceito": "A osteotomia de **Southwick** (osteotomia intertrocantérica biplanar) é uma técnica de correção da deformidade residual em pacientes com epifisiólise proximal do fêmur que já **estabilizou**, ou seja, indicada para escorregamentos de apresentação **crônica**, em que o risco de necrose avascular associado à manipulação aguda da epífise já não é uma preocupação imediata, permitindo uma correção extra-articular segura da deformidade angular residual.\n\nQuanto ao grau de escorregamento, essa osteotomia é reservada para deformidades de magnitude **moderada a grave** (na faixa de aproximadamente **30 a 70 graus**), já que escorregamentos mais leves geralmente não geram deformidade funcional significativa a ponto de justificar uma osteotomia corretiva, enquanto escorregamentos muito mais graves podem exigir abordagens diferentes (como técnicas de realinhamento subcapital com preservação vascular).",
-  "correta": "D. A osteotomia de Southwick é recomendada nos escorregamentos crônicos, entre 30 e 70 graus.",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Ângulo de Southwick\n- Em ==perfil (rã de Lauenstein)==: ângulo entre a perpendicular à linha epifisária e o eixo da diáfise.\n- Comparar com o lado normal (subtrair o contralateral, ou ~10-12° se bilateral).\n\n### Outros\n| Nome | O que é |\n|---|---|\n| Klein | linha na borda superior do colo no AP deve cortar a epífise |\n| Dunn (modificado) | redução aberta com luxação cirúrgica |\n| Kramer | osteotomia basocervical |\n\n### Osteotomia de Southwick\n- Intertrocantérica ==biplanar== (flexão, valgo e rotação interna).\n- Indicação: escorregamento ==crônico, moderado a grave (30 a 70°)==, fise fechada ou fixada.\n- Longe da deformidade: ==menor risco de necrose== que as do colo, porém correção menor.\n- Agudos/instáveis: redução suave e fixação ou Dunn modificado.\n\n> **Na prova:** Southwick = escorregamentos ==crônicos de 30 a 70°==",
+  "correta": "**Crônicos, 30 a 70°.**\n- Corrige a deformidade residual.\n- Intertrocantérica, menor risco de necrose.",
   "incorretas": {
-   "A": "A osteotomia de Southwick não é indicada para escorregamentos agudos, a manipulação extra-articular nessa fase não trata adequadamente a instabilidade aguda, que exige redução e fixação.",
-   "B": "A osteotomia de Southwick não é indicada para escorregamentos agudos, independentemente do grau.",
-   "C": "10-30 graus representa uma deformidade leve, que geralmente não justifica uma osteotomia corretiva."
+   "A": "**Agudo e leve.**\n- Fixação in situ.",
+   "B": "**Agudo.**\n- Não se osteotomiza no agudo.",
+   "C": "**Leve.**\n- < 30° remodela e tolera bem."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0357": {
-  "conceito": "Stulberg, Cooperman e Wallensten propuseram uma classificação para a morfologia residual do quadril após Legg-Calvé-Perthes e sua relação com artrose futura. Ela é aplicada na maturidade esquelética. Classe I: cabeça, colo e acetábulo praticamente normais, com congruência esférica. Classe II: cabeça ainda esférica, dentro de aproximadamente 2 mm dos círculos de Mose, mas pode haver coxa magna, colo curto ou acetábulo mais oblíquo; também é congruência esférica e tem bom prognóstico. Classe III: cabeça não esférica, com desvio superior a 2 mm, porém ainda não plana; existe congruência asférica e risco intermediário de artrose. Classe IV: cabeça femoral plana, com pelo menos aproximadamente 1 cm de achatamento na superfície de carga, e acetábulo também remodelado/achatado, mantendo congruência asférica. Classe V: cabeça plana em acetábulo relativamente normal, produzindo incongruência asférica e pior prognóstico. Classes I-II apresentam melhor sobrevida articular; IV-V maior risco de artrose.",
-  "correta": "A alternativa C está correta. A descrição de cabeça femoral significativamente achatada, com pelo menos cerca de 1 cm de perda do contorno na região de carga, associada a acetábulo também achatado e congruente com a deformidade corresponde ao Stulberg IV. O ponto fundamental é distinguir IV de V: em IV o acetábulo deformou-se junto com a cabeça e mantém congruência asférica; no V o acetábulo permanece relativamente normal diante de uma cabeça plana, produzindo incongruência.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Herring em detalhe\n| Grupo | Pilar lateral | Prognóstico |\n|---|---|---|\n| A | ==sem perda== de altura | bom |\n| B | ==perda < 50%== | bom < 8 anos |\n| B/C | pilar estreito ou pouco ossificado, ~50% | intermediário |\n| C | ==perda > 50%== | ruim |\n\n### Desfecho a longo prazo\n- Dois fatores dominam: ==idade de início== (> 8 anos pior) e ==deformidade final da cabeça== (Stulberg).\n\n### Stulberg (maturidade)\n| Classe | Cabeça | Prognóstico |\n|---|---|---|\n| I-II | esférica | sem artrose |\n| III-IV | ovoide/achatada, congruente assférica | artrose no adulto médio |\n| V | achatada incongruente | artrose precoce |\n\n### Stulberg detalhado\n| Classe | Definição |\n|---|---|\n| I | cabeça normal |\n| II | ==congruência esférica==: cabeça esférica (dentro de 2 mm em círculos concêntricos), coxa magna, colo curto |\n| III | ==congruência não esférica==: cabeça ovoide/em cogumelo, sem achatamento |\n| ==IV== | ==congruência não esférica==: cabeça ==achatada > 1 cm== na área de carga, ==acetábulo também achatado== |\n| V | ==incongruência não esférica==: cabeça achatada, ==acetábulo normal== |\n\n> **Na prova:** Stulberg IV = cabeça ==achatada > 1 cm== com ==acetábulo achatado==",
+  "correta": "**Tipo IV.**\n- Cabeça e acetábulo achatados, congruentes.\n- Artrose na meia-idade.",
   "incorretas": {
-   "A": "Stulberg II ainda é uma articulação com congruência esférica. Pela definição modificada, a cabeça deve caber dentro de aproximadamente 2 mm dos círculos de Mose, embora possa haver coxa magna, colo curto ou acetábulo íngreme. Perda de esfericidade superior a 2 mm desloca o caso para classe III.",
-   "B": "Classe III apresenta cabeça asférica por mais de 2 mm, mas ainda não verdadeiramente plana, e existe congruência asférica com o acetábulo. A alternativa atribui a deformidade de maneira inadequada ao acetábulo e usa o conceito de incongruência, que caracteriza principalmente o tipo V.",
-   "D": "Classe V realmente envolve cabeça femoral achatada, porém o acetábulo permanece relativamente normal, gerando incongruência asférica. Uma cabeça esférica com acetábulo achatado não corresponde à definição do tipo V."
+   "A": "**II é esférica.**\n- Dentro de 2 mm; não há perda de esfericidade.",
+   "B": "**III é congruência não esférica.**\n- Cabeça ovoide, sem achatamento; não é incongruência.",
+   "D": "**V tem cabeça achatada.**\n- Acetábulo normal (é o inverso)."
   },
   "referencias": [
    "Stulberg SD, Cooperman DR, Wallensten R. The natural history of Legg-Calvé-Perthes disease. J Bone Joint Surg Am. 1981.",
    "Legg-Calve-Perthes disease. Part I: Classification of radiographs with use of the modified lateral pillar and Stulberg classifications. PMID: 15466719."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0358": {
-  "conceito": "Luxação congênita do joelho representa espectro de hiperextensão grave, subluxação e luxação anterior da tíbia sobre o fêmur. A deformidade relaciona-se a encurtamento do quadríceps e cápsula anterior, além de alterações na posição dos isquiotibiais. Uma característica importante é a frequência de anomalias associadas. Displasia ou luxação do desenvolvimento do quadril e pé torto congênito são associações clássicas, assim como artrogripose, síndrome de Larsen e outras condições neuromusculares. Por isso, o recém-nascido com joelho luxado deve ter quadris e pés examinados sistematicamente. Tratamento começa o mais cedo possível: deformidades flexíveis podem responder a manipulação e gessos seriados, enquanto casos rígidos podem exigir tenotomia do quadríceps, quadricepsplastia ou encurtamento femoral. A redução do joelho costuma ser priorizada antes do tratamento definitivo da luxação do quadril.",
-  "correta": "A alternativa C está correta. Luxação congênita do joelho possui associação conhecida com displasia/luxação do quadril e com pé torto congênito. Portanto, encontrar uma dessas deformidades exige procurar as demais. Essa associação também influencia a sequência terapêutica, porque um joelho rígido em hiperextensão pode dificultar posicionamento e tratamento do quadril.",
+  "conceito": "### Luxação congênita do joelho (genu recurvatum congênito)\n- Joelho em ==hiperextensão== ao nascer; pé pode tocar o rosto.\n- ==Quadríceps fibrótico e encurtado==, bolsa suprapatelar obliterada, isquiotibiais subluxados anteriormente.\n- Associações: ==DDQ== (até 50%), pé torto, Larsen, artrogripose, mielomeningocele.\n\n### Graus\n| Grau | Achado |\n|---|---|\n| 1 | hiperextensão simples (recurvato) |\n| 2 | subluxação anterior da tíbia |\n| 3 | luxação completa |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| precoce, redutível | alongamento e gessos seriados em flexão progressiva, Pavlik |\n| irredutível ou falha | ==alongamento do quadríceps== (V-Y), capsulotomia anterior |\n\n- Com DDQ: tratar o ==joelho primeiro== (Pavlik exige joelho fletido).\n\n> **Na prova:** luxação congênita do joelho associa-se a ==DDQ e pé torto congênito==",
+  "correta": "**Quadril e pé torto congênito.**\n- DDQ em até metade dos casos.\n- Examinar os três segmentos.",
   "incorretas": {
-   "A": "Luxação do quadril é realmente uma associação importante, mas o pé talo vertical não é o par mais típico nessa formulação. O pé torto congênito aparece com maior frequência no conjunto clássico de anomalias associadas.",
-   "B": "Pé talo vertical pode ocorrer em síndromes neuromusculares e artrogripose, porém luxação patelar não é a associação principal usada para caracterizar luxação congênita do joelho.",
-   "D": "Pé torto está corretamente lembrado, mas luxação da patela não substitui a forte associação com displasia ou luxação do desenvolvimento do quadril."
+   "A": "**Talo vertical.**\n- Associação menos frequente.",
+   "B": "**Patela e talo vertical.**\n- Não são as clássicas.",
+   "D": "**Patela.**\n- Luxação da patela não é a associação típica."
   },
   "referencias": [
    "Ellsworth B, Dawkins B, Hidalgo Perea S, Green D. Management of Congenital Dislocation of the Knee: Current Concept Review. JPOSNA. 2021;3(3). DOI: 10.55275/JPOSNA-2021-272."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0360": {
-  "conceito": "O padrão de marcha em **crouch** (agachado) caracteriza-se por flexão excessiva e sustentada do joelho ao longo de toda a fase de apoio, sem retorno adequado à extensão, refletindo fraqueza do quadríceps, contratura dos flexores do joelho e/ou fraqueza do tríceps sural, um padrão bilateral e simétrico típico de pacientes com **diplegia espástica**, exatamente o padrão de flexão elevada e mantida durante o apoio mostrado no gráfico.",
-  "correta": "A. O gráfico representa o padrão crouch em paciente diplégico.",
+  "conceito": "### Padrões sagitais de marcha na diplegia (Rodda e Graham)\n| Padrão | Tornozelo | Joelho | Quadril |\n|---|---|---|---|\n| I equino verdadeiro | equino | estendido ou recurvado | estendido |\n| II marcha em salto (jump) | equino | fletido | fletido |\n| III equino aparente | neutro | fletido | fletido |\n| ==IV agachada (crouch)== | ==dorsiflexão excessiva== | ==fletido== | ==fletido== |\n\n### Marcha agachada\n- Causas: ==alongamento excessivo do tendão calcâneo== (sóleo fraco), isquiotibiais e psoas curtos, patela alta, deformidades de alavanca.\n- Consequências: dor anterior no joelho, fratura por estresse da patela, alto gasto energético.\n- Tratamento: órtese de reação ao solo, cirurgia multinível (extensão femoral distal, avanço patelar).\n\n### Lendo o gráfico de cinemática\n- ==Crouch==: joelho ==fletido em todo o apoio== (não chega a 0°), tornozelo em dorsiflexão, quadril fletido; ==bilateral== = diplegia.\n- Stiff knee: pico de flexão no balanço ==reduzido e tardio== (reto femoral ativo).\n- Hemiplegia: curvas assimétricas, lado sadio normal.\n\n> **Na prova:** joelho fletido no apoio bilateralmente = ==crouch no diplégico==",
+  "correta": "**Crouch em diplégico.**\n- Flexão do joelho mantida no apoio.\n- Padrão bilateral.",
   "incorretas": {
-   "B": "O padrão **stiff knee** (joelho rígido) caracteriza-se por uma **redução** do pico de flexão do joelho durante a fase de balanço (não um excesso de flexão sustentada durante o apoio), um padrão diferente do mostrado no gráfico.",
-   "C": "O padrão crouch está corretamente identificado, mas costuma ser descrito de forma bilateral e simétrica, mais característico da diplegia do que de um padrão tipicamente assimétrico da hemiplegia.",
-   "D": "O padrão stiff knee não corresponde ao excesso de flexão mostrado no gráfico, e a hemiplegia tipicamente produziria um padrão assimétrico, diferente do representado."
+   "B": "**Stiff knee.**\n- Afeta o balanço, não o apoio.",
+   "C": "**Hemiplégico.**\n- Seria unilateral.",
+   "D": "**Dupla errada.**\n- Nem stiff knee nem hemiplegia."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0362": {
-  "conceito": "A avaliação de fraturas em possível abuso infantil exige integrar idade, capacidade de deambulação, mecanismo informado, atraso na procura por atendimento e padrão radiográfico. Nenhuma fratura é absolutamente patognomônica, mas alguns padrões possuem alta especificidade para trauma infligido. A lesão metafisária clássica, também chamada corner fracture ou bucket-handle conforme a projeção, é altamente específica em lactentes. Fraturas de costelas posteriores também têm forte associação, devido ao mecanismo de compressão torácica. Fraturas da escápula, esterno e processos espinhosos são raras em trauma acidental de baixa energia e também recebem alta especificidade. Já fraturas de clavícula, diáfises de ossos longos e fraturas lineares simples são menos específicas e dependem fortemente do contexto. Quando indicado, levantamento radiográfico do esqueleto deve seguir protocolos pediátricos e a avaliação precisa ser multidisciplinar e orientada à proteção da criança.",
-  "correta": "A alternativa D está correta. A combinação de fratura de costela posterior, fratura da escápula e lesão do canto metafisário reúne três padrões classicamente considerados de alta especificidade para abuso físico, principalmente em crianças pequenas sem mecanismo acidental de alta energia compatível. A força da resposta está no conjunto: cada uma dessas lesões é incomum em acidentes cotidianos do lactente.",
+  "conceito": "### Tipos de maus-tratos\n| Tipo | Frequência |\n|---|---|\n| ==negligência== | ==a mais comum== |\n| abuso físico | o mais visto pelo ortopedista |\n| emocional | frequente, coexistente |\n| sexual | subnotificado |\n\n### Fraturas suspeitas de abuso físico\n| Alta especificidade | Moderada |\n|---|---|\n| ==lesão metafisária clássica== (canto, alça de balde) | fraturas múltiplas em estágios diferentes |\n| ==costelas posteriores== | fratura de crânio complexa |\n| escápula, processos espinhosos, esterno | vértebras, dedos em não deambulante |\n\n### Alertas\n- Fratura de fêmur em criança que não anda.\n- História incompatível, atraso na busca de atendimento.\n- Conduta: ==inventário esquelético== (< 2 anos), fundo de olho, notificação obrigatória.\n\n### Lesão metafisária clássica (fratura do canto)\n- Fratura ==planar na zona de ossificação provisória==, por forças de tração e torção (sacudir o bebê).\n- Aspecto de ==canto== ou ==alça de balde== conforme a incidência.\n- Fêmur distal, tíbia proximal e distal, úmero proximal.\n- Em lactentes, ==altamente específica== de abuso.\n\n### Menos específicas\n- Diafisárias (espiral ou transversa) são comuns e só sugerem abuso pelo contexto (criança que não anda).\n\n> **Na prova:** alta especificidade = ==costela posterior, escápula, canto metafisário== (também esterno e espinhosos)",
+  "correta": "**Costela posterior, escápula e canto.**\n- Todas de alta especificidade.\n- Exigem forças incomuns na criança.",
   "incorretas": {
-   "A": "Escápula e esterno são altamente suspeitos, porém fratura de clavícula é frequente em quedas, trauma obstétrico e outros mecanismos acidentais e possui baixa especificidade isolada. A presença da clavícula enfraquece a alternativa.",
-   "B": "Lesão metafisária clássica é altamente específica, mas fraturas de fêmur e tíbia, consideradas genericamente, não são. Sua relevância depende de idade, padrão, mobilidade da criança e coerência do mecanismo relatado.",
-   "C": "Processo espinhoso e esterno são lesões raras e preocupantes, porém fratura do úmero, sem qualificação de padrão ou idade, não pertence ao grupo clássico de maior especificidade. Deve ser interpretada no contexto."
+   "A": "**Clavícula.**\n- Comum em acidentes.",
+   "B": "**Fêmur e tíbia.**\n- Diafisárias têm baixa especificidade.",
+   "C": "**Úmero.**\n- Especificidade moderada."
   },
   "referencias": [
    "American Academy of Pediatrics. Evaluating Young Children With Fractures for Child Abuse: Clinical Report. Pediatrics. 2025.",
    "Kleinman PK. Diagnostic Imaging of Child Abuse. Cambridge University Press."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0363": {
-  "conceito": "O menisco discoide lateral é uma anomalia congênita de forma e, em alguns casos, de fixação periférica. Crianças pequenas frequentemente não conseguem descrever dor ou instabilidade de forma precisa e podem apresentar principalmente ressalto audível/palpável e perda da extensão. O tipo Wrisberg é particularmente associado ao snapping knee por ausência ou deficiência da inserção tibial posterior, tornando o menisco hipermóvel. Crianças maiores apresentam com maior frequência dor, derrame, bloqueio ou sintomas relacionados a rotura. Ao exame podem existir ressalto na flexoextensão, linha articular lateral dolorosa e déficit de extensão. Radiografias podem ser normais ou mostrar espaço articular lateral alargado e alterações do côndilo/espinha tibial. Ressonância avalia morfologia, rotura e instabilidade. Menisco incidental e assintomático é observado; nos sintomáticos, a estratégia moderna busca saucerização e estabilização/reparo, preservando o máximo de tecido possível.",
-  "correta": "A alternativa D está correta. Em crianças de baixa idade, uma apresentação clássica é ressalto associado a dificuldade ou limitação para atingir extensão completa. Esse padrão pode ocorrer mesmo antes de a criança relatar dor de maneira consistente e é particularmente relacionado à hipermobilidade do segmento posterior. O examinador deve observar e palpar o joelho durante flexão e extensão.",
+  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Clínica por idade\n| Idade | Apresentação |\n|---|---|\n| ==criança pequena== | ==ressalto (clunk)== audível e ==perda da extensão==, geralmente indolor (Wrisberg instável) |\n| criança maior/adolescente | dor, derrame, bloqueio (lesão do discoide) |\n\n> **Na prova:** discoide na criança pequena = ==ressalto e limitação da extensão==",
+  "correta": "**Ressalto e limitação da extensão.**\n- Joelho que estala (snapping knee).\n- Pouca dor na criança pequena.",
   "incorretas": {
-   "A": "Dor e claudicação podem ocorrer, especialmente em crianças maiores ou quando há rotura, mas não são o par mais característico da apresentação mecânica em crianças pequenas.",
-   "B": "Dor e bloqueio verdadeiro são manifestações possíveis de lesão meniscal, porém o bloqueio verdadeiro é menos frequente nas crianças menores. Ressalto e perda de extensão formam uma apresentação mais típica do discoide hipermóvel.",
-   "C": "Ressalto está correto, mas a manifestação mecânica descrita classicamente é limitação da extensão, não instabilidade subjetiva como sintoma predominante na criança pequena."
+   "A": "**Dor e claudicação.**\n- Mais em crianças maiores.",
+   "B": "**Bloqueio.**\n- Com lesão, na criança maior.",
+   "C": "**Instabilidade.**\n- Não é queixa típica."
   },
   "referencias": [
    "Discoid Lateral Meniscus in Children. PMID: 11880735.",
    "The discoid meniscus. PMCID: PMC2656711.",
    "Discoid Meniscus. Pediatric Orthopaedic Society of North America Study Guide."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0364": {
-  "conceito": "A abordagem do quadril na mielomeningocele difere significativamente da abordagem em outras condições neurológicas pediátricas, como a paralisia cerebral, justamente porque a relação entre a posição anatômica do quadril e a função de marcha é mais complexa e menos direta nesses pacientes. Um dos pontos mais relevantes e por vezes contraintuitivos dessa literatura é que, em pacientes com **nível lombar baixo**, uma **luxação unilateral** do quadril (desde que a musculatura residual ainda permita marcha funcional) costuma manter um padrão de marcha **semelhante ao de pacientes sem luxação**, ao contrário do que ocorre, por exemplo, na paralisia cerebral, em que a luxação do quadril tipicamente compromete de forma mais direta a função de marcha.\n\nEsse achado é parte do racional que levou a uma reavaliação crítica, ao longo dos anos, sobre quando realmente vale a pena submeter esses pacientes ao trauma cirúrgico de uma redução do quadril, já que a redução concêntrica, por si só, não garante necessariamente melhora funcional da marcha.",
-  "correta": "D. Em pacientes com nível lombar baixo, a luxação unilateral do quadril tende a manter um padrão de marcha semelhante ao de pacientes sem luxação.",
+  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Quadril na MMC\n- Luxação por ==desequilíbrio muscular== (flexores e adutores sem oposição), mais em L3-L4.\n- Redução cirúrgica ==não melhora a marcha== e tem muitas complicações (reluxação, rigidez, fratura).\n- O que importa para a marcha: ==ausência de contraturas== e simetria, não a redução.\n- Luxação unilateral em nível lombar baixo: marcha ==semelhante== à dos quadris reduzidos, se sem contratura.\n- Contratura em flexão: tratar quando ==compromete a marcha==, não por idade.\n\n> **Na prova:** luxação unilateral lombar baixa = ==mesmo padrão de marcha==",
+  "correta": "**Mesmo padrão de marcha.**\n- Luxação isolada não piora a marcha.\n- Contraturas e assimetria pesam mais.",
   "incorretas": {
-   "A": "A indicação de reconstrução com redução do quadril não se baseia apenas na presença de potencial de marcha, mas envolve uma avaliação mais criteriosa, já que a redução não garante, por si só, melhora funcional.",
-   "B": "Não há um consenso rígido de que toda contratura em flexão deva ser tratada antes dos 2 anos de idade, a decisão é individualizada conforme o grau da contratura e o impacto funcional.",
-   "C": "A redução concêntrica do quadril não está diretamente ligada à melhora do padrão de marcha nesses pacientes, a função depende mais do nível neurológico residual do que da posição anatômica do quadril."
+   "A": "**Reconstrução não indicada.**\n- Não melhora a marcha.",
+   "B": "**Sem idade fixa.**\n- Trata-se quando atrapalha a função.",
+   "C": "**Sem relação direta.**\n- Redução concêntrica não melhora a marcha."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0365": {
