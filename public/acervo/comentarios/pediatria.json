@@ -5777,104 +5777,104 @@
   "conferido": false
  },
  "pediatria-0468": {
-  "conceito": "A especificidade de uma fratura para maus-tratos depende de idade, desenvolvimento, mecanismo informado, achados associados e padrão radiográfico; nenhuma fratura isolada é patognomônica. A classificação de Kleinman organiza achados em alta, moderada e baixa especificidade. Lesões metafisárias clássicas e fraturas costais posteriores estão entre os achados de alta especificidade; fraturas de escápula, esterno e processos espinhosos também merecem investigação rigorosa, pois exigem energia incomum na criança pequena. O exame deve incluir proteção imediata da criança e avaliação multidisciplinar, sem acusação baseada apenas em radiografia.",
-  "correta": "A alternativa B está correta. Fratura de escápula é lesão de alta especificidade na classificação de Kleinman, especialmente quando a história não oferece mecanismo de alta energia compatível. Sua raridade em acidentes cotidianos explica o peso diagnóstico, sempre interpretado junto ao contexto clínico.",
+  "conceito": "### Especificidade das fraturas no abuso (Kleinman)\n| Alta | Moderada | Baixa (comuns) |\n|---|---|---|\n| lesão metafisária clássica | múltiplas, bilaterais | clavícula |\n| costelas posteriores | em estágios diferentes de consolidação | diáfises de ossos longos |\n| ==escápula== | epifisárias (descolamentos) | crânio linear |\n| processos espinhosos | corpo vertebral | |\n| esterno | dedos | |\n| | crânio complexa | |\n\n### Conduta\n- Inventário esquelético em < 2 anos (repetir em 2 semanas).\n- Fundo de olho, TC/RM de crânio, exames de coagulação e metabolismo ósseo (OI, raquitismo).\n- ==Notificação obrigatória==.\n\n> **Na prova:** fratura de alta especificidade (Kleinman) = ==escápula== (e metafisária, costelas posteriores, processos espinhosos, esterno).",
+  "correta": "**Escápula.**\n- Alta especificidade (Kleinman).\n- Exige força incomum em lactentes.",
   "incorretas": {
-   "A": "Fraturas de clavícula são frequentes em parto e quedas acidentais e, isoladamente, têm baixa especificidade. Elas não excluem maus-tratos, mas exigem contexto adicional.",
-   "C": "Fraturas diafisárias de ossos longos podem ocorrer tanto em acidentes como em abuso. O local, idade, padrão e história importam mais que a designação genérica de osso longo.",
-   "D": "Fraturas do corpo vertebral integram grupo de especificidade intermediária, não alta, na tabela clássica. Processos espinhosos, e não corpos vertebrais, são o achado vertebral de maior especificidade."
+   "A": "**Clavícula.**\n- Baixa especificidade.",
+   "C": "**Ossos longos.**\n- Diáfises: baixa especificidade.",
+   "D": "**Corpo vertebral.**\n- Moderada."
   },
   "referencias": [
    "AAP. Evaluating Young Children With Fractures for Child Abuse. https://doi.org/10.1542/peds.2024-070074",
    "Kleinman PK. Diagnostic Imaging of Child Abuse. Cambridge University Press."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0469": {
-  "conceito": "A pseudoartrose congênita da tíbia costuma iniciar como arqueamento anterolateral no primeiro ano e associa-se fortemente à neurofibromatose tipo 1. O osso apresenta displasia e baixa capacidade de consolidação; a fratura pode ocorrer espontaneamente e evoluir com encurtamento, deformidade e refratura. O tratamento exige reconstrução biológica e mecânica prolongada.",
-  "correta": "A alternativa A está correta. O arqueamento anterolateral é a deformidade típica e deve ser acompanhado mesmo antes de ocorrer fratura.",
+  "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n> **Na prova:** pseudartrose congênita da tíbia = arqueamento ==anterolateral==.",
+  "correta": "**Anterolateral.**\n- Arqueamento pré-fratura.\n- NF1 em cerca de metade.",
   "incorretas": {
-   "B": "A alternativa B (Anteromedial.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "C": "A alternativa C (Posterolateral.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "D": "A alternativa D (Posteromedial.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa."
+   "B": "**Anteromedial.**\n- Hemimelia fibular.",
+   "C": "**Posterolateral.**\n- Não é típico.",
+   "D": "**Posteromedial.**\n- Benigno, com pé calcaneovalgo."
   },
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0470": {
-  "conceito": "Na mielomeningocele, achados sugestivos de medula presa (baixa implantação do cone medular, filo terminal espessado, ou aderências fibrosas na região da correção cirúrgica) são um achado **comum** na ressonância magnética, praticamente esperado após o fechamento primário da bolsa, já que a medula fica inerentemente ancorada na região da cicatriz cirúrgica. No entanto, apenas uma **minoria** desses pacientes (cerca de **30%**) desenvolve sinais clínicos de síndrome da medula presa (piora progressiva da função motora, alterações do padrão de marcha, agravamento de deformidades como a escoliose, ou mudanças no padrão urinário/intestinal), o que reforça a importância de correlacionar o achado de imagem com a evolução clínica, e não tratar cirurgicamente todo achado radiográfico isolado de medula presa.",
-  "correta": "C. A presença de medula presa na ressonância magnética é comum na mielomeningocele, e cerca de 30% dos pacientes apresentam sinais clínicos.",
+  "conceito": "### Medula presa na mielomeningocele\n| Aspecto | Dado |\n|---|---|\n| ancoragem na RM | ==comum== (quase todos após o fechamento) |\n| síndrome clínica | ==cerca de 30%== |\n\n### Sinais de tração (síndrome clínica)\n- Perda de força ou piora da marcha.\n- ==Escoliose que progride rápido==, deformidade nova no pé.\n- Espasticidade nova, dor lombar.\n- Piora vesical ou intestinal.\n\n### Diferencial de deterioração\n- Disfunção da ==derivação== (hidrocefalia), siringomielia, Chiari II.\n\n### Conduta\n- RM isolada não indica cirurgia; ==correlação clínica== e desancoragem se deterioração.\n\n> **Na prova:** medula presa na MMC = ==comum na RM, sintomática em cerca de 30%==.",
+  "correta": "**Comum, 30% com sinais.**\n- Quase todos ancorados na RM.\n- Síndrome clínica em cerca de 30%.",
   "incorretas": {
-   "A": "O achado de medula presa na ressonância é comum, não raro, nesses pacientes.",
-   "B": "O achado é comum na ressonância, mas apenas cerca de 30% (não 70%) dos pacientes desenvolvem sinais clínicos.",
-   "D": "O achado é comum, mas a proporção de pacientes com sinais clínicos é de cerca de 30%, não 70%."
+   "A": "**Rara.**\n- Achado quase universal na RM.",
+   "B": "**Rara e 70%.**\n- Ambos errados.",
+   "D": "**70%.**\n- Sintomática em cerca de 30%."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0471": {
-  "conceito": "A curvatura congênita **posteromedial** da tíbia é uma condição distinta e, em geral, de **bom prognóstico**, diferente do arqueamento anterolateral, que se associa ao alto risco de pseudartrose verdadeira. O arqueamento posteromedial está classicamente associado a uma **deformidade em calcâneo valgo** do pé ipsilateral ao nascimento, e tende a se corrigir espontaneamente ao longo dos primeiros anos de vida, sem evoluir para fratura patológica ou pseudartrose, a principal sequela a longo prazo costuma ser uma discreta discrepância de comprimento do membro, não a pseudartrose.",
-  "correta": "D. A curvatura congênita posteromedial dos ossos da perna está associada à deformidade em calcâneo valgo.",
+  "conceito": "### Arqueamentos congênitos da tíbia\n| Direção | Associação | Evolução |\n|---|---|---|\n| ==posteromedial== | ==pé calcaneovalgo== | ==benigna==, corrige espontaneamente |\n| anterolateral | NF1, pseudartrose | maligna; órtese, nunca osteotomia profilática |\n| anteromedial | hemimelia fibular | discrepância, deformidade do pé |\n\n### Posteromedial: o que esperar\n- Angulação melhora nos primeiros 2 a 3 anos; o pé calcâneo também.\n- Deixa ==discrepância residual== (3 a 4 cm em média): acompanhar até a maturidade (epifisiodese ou alongamento).\n- Alongamento passivo do tornozelo em ==flexão plantar== (o pé está em dorsiflexão).\n- ==Osteotomia== só se persistir arqueamento importante ==após os 4 anos== (raro).\n\n> **Na prova:** arqueamento posteromedial da tíbia = associado ao ==pé calcaneovalgo==",
+  "correta": "**Calcâneo valgo.**\n- Associação clássica.\n- Ambos melhoram espontaneamente.",
   "incorretas": {
-   "A": "É o arqueamento anterolateral, não o posteromedial, que está associado ao risco de pseudartrose verdadeira.",
-   "B": "A platispondilia não é a associação classicamente descrita para o arqueamento posteromedial da tíbia.",
-   "C": "A neurofibromatose está classicamente associada ao arqueamento anterolateral, não ao posteromedial."
+   "A": "**Pseudartrose congênita.**\n- Arqueamento anterolateral.",
+   "B": "**Platispondilia.**\n- Displasias espondiloepifisárias.",
+   "C": "**NF1.**\n- Arqueamento anterolateral."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0472": {
-  "conceito": "O colágeno tipo I tem uma estrutura em tripla-hélice que exige a presença do aminoácido **glicina** a cada três posições da sequência (padrão Gly-X-Y repetido), já que apenas a glicina, por ser o menor aminoácido, cabe no espaço restrito do centro da tripla-hélice. Na osteogênese imperfeita, a maioria das mutações causadoras envolve justamente a **substituição da glicina** por outro aminoácido maior nessa posição crítica, desestabilizando o dobramento correto da molécula de colágeno tipo I, esse é o mecanismo molecular central por trás da maioria das formas de osteogênese imperfeita, explicando a relação direta entre a gravidade da doença e a localização/tipo da substituição da glicina na cadeia.",
-  "correta": "B. O aminoácido classicamente envolvido no defeito do colágeno tipo I na osteogênese imperfeita é a glicina.",
+  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Por que glicina\n- Tripla hélice do colágeno: repetição ==Gly-X-Y==; a glicina, menor aminoácido, ocupa o centro da hélice.\n- Substituição da glicina por aminoácido maior ==impede o enrolamento==: colágeno qualitativamente anormal (tipos II, III, IV).\n- Quanto mais perto da extremidade C-terminal, mais grave.\n\n> **Na prova:** aminoácido do defeito na OI = ==glicina==",
+  "correta": "**Glicina.**\n- A cada terceira posição da hélice.\n- Substituição impede o enrolamento.",
   "incorretas": {
-   "A": "A lisina não é o aminoácido classicamente associado ao mecanismo molecular central da osteogênese imperfeita.",
-   "C": "A cisteína não é o aminoácido classicamente associado a esse mecanismo, embora esteja envolvida em outras proteínas estruturais.",
-   "D": "A arginina não é o aminoácido classicamente associado ao mecanismo molecular central da osteogênese imperfeita."
+   "A": "**Lisina.**\n- Hidroxilada nas ligações cruzadas; não é o defeito típico.",
+   "C": "**Cisteína.**\n- Ausente na hélice madura.",
+   "D": "**Arginina.**\n- Substituições por arginina ocorrem, mas o alvo é a glicina."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0474": {
-  "conceito": "O anel pericondral de **LaCroix** é uma estrutura **fibrosa** que envolve circunferencialmente a periferia da placa de crescimento, na transição entre a epífise, a fise e a metáfise, funcionando, na prática, como uma estrutura que **ancora e estabiliza mecanicamente a epífise à metáfise** através dessa região de transição, ajudando a resistir a forças de cisalhamento e tração que poderiam desestabilizar essa área estruturalmente mais frágil do osso em crescimento. É uma estrutura distinta da zona de Ranvier (relacionada ao crescimento periférico em espessura da fise), embora as duas estejam anatomicamente próximas.",
-  "correta": "C. O anel pericondral de LaCroix é uma estrutura fibrosa que prende a epífise à metáfise.",
+  "conceito": "### A periferia da fise\n- **Zona de Ranvier:** células que fazem a fise crescer **em largura** (aposicional).\n- **Anel pericondral de LaCroix:** faixa fibrosa densa, contínua com o periósteo metafisário, que dá ==estabilidade mecânica à junção osso–cartilagem==.\n- **Processos mamilares:** interdigitações que ajudam a resistir ao cisalhamento, mas não são a estrutura de contenção periférica.\n- O **periósteo** espesso da criança também contribui, mas o anel de LaCroix é a resposta clássica.\n\n### Vascularização da fise\n| Região | Irrigação |\n|---|---|\n| epífise e zona germinativa | artérias epifisárias |\n| metáfise | nutrícia e metafisárias |\n| periferia | pericondrais |\n\n> **Na prova:** anel de LaCroix = ==estabilização mecânica da fise==",
+  "correta": "**Fibrosa, prende epífise à metáfise.**\n- Contínua com o periósteo.\n- Resiste ao cisalhamento.",
   "incorretas": {
-   "A": "O anel de LaCroix não está localizado dentro da epífise propriamente dita, e sim na periferia da fise, na transição entre epífise e metáfise.",
-   "B": "O anel de LaCroix é uma estrutura fibrosa, não cartilaginosa.",
-   "D": "O anel de LaCroix é uma estrutura fibrosa, não cartilaginosa, apesar de sua função de conexão entre epífise e metáfise estar corretamente descrita."
+   "A": "**Só na epífise.**\n- Circunda a junção fise-metáfise.",
+   "B": "**Cartilaginosa.**\n- É fibrosa; cartilaginosa é a zona de Ranvier.",
+   "D": "**Cartilaginosa.**\n- É fibrosa."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0475": {
-  "conceito": "Na classificação de **Aitken** para o defeito femoral focal proximal, o critério que diferencia os tipos A e B é o comportamento da zona radiotransparente subtrocantérica ao longo do crescimento:\n- **Tipo A**: a zona radiotransparente se **ossifica** espontaneamente com a maturidade esquelética, unindo cabeça/colo à diáfise.\n- **Tipo B**: a zona radiotransparente **não se ossifica**, persistindo como uma verdadeira **pseudoartrose do colo femoral**, a cabeça permanece presente, mas sem continuidade óssea estabelecida com a diáfise.\n\nA persistência de uma pseudoartrose verdadeira do colo femoral é, portanto, a marca registrada do tipo B.",
-  "correta": "B. A pseudoartrose do colo femoral, no defeito femoral focal proximal, corresponde ao tipo B de Aitken.",
+  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Aitken em detalhe\n| Tipo | Cabeça | Acetábulo | Colo |\n|---|---|---|---|\n| A | presente | normal | pseudartrose que ==consolida== (coxa vara) |\n| ==B== | presente | adequado | ==pseudartrose do colo persistente==, sem conexão |\n| C | ausente | displásico | segmento curto com ossículo |\n| D | ausente | ausente | fêmur muito curto |\n\n> **Na prova:** pseudartrose do colo na DFFP = ==Aitken B==",
+  "correta": "**Tipo B.**\n- Cabeça presente, sem conexão ao colo.\n- Pseudartrose persistente.",
   "incorretas": {
-   "A": "No tipo A, a zona subtrocantérica tende a se ossificar espontaneamente, sem persistir como pseudoartrose.",
-   "C": "O tipo C é caracterizado por displasia acetabular mais grave e cabeça femoral ausente ou rudimentar, não pela pseudoartrose isolada do colo.",
-   "D": "O tipo D representa o grau mais grave do espectro, com ausência completa da cabeça femoral e do acetábulo, não a pseudoartrose isolada do colo."
+   "A": "**Tipo A.**\n- Pseudartrose consolida.",
+   "C": "**Tipo C.**\n- Cabeça ausente.",
+   "D": "**Tipo D.**\n- Cabeça e acetábulo ausentes."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0476": {
-  "conceito": "O método de Ponseti corrige o pé torto respeitando sua anatomia: primeiro supinação/cavo pela elevação do primeiro raio; depois adução e varo simultaneamente por abdução progressiva do pé sob estabilização do tálus; por último equino, geralmente após tenotomia percutânea do Aquiles. Tentar dorsifletir antes de corrigir varo e adução produz pé em mata-borrão e deformidade residual.",
-  "correta": "A alternativa A está correta: cavo, aduto, varo e equino. A sequência “CAVE” impede a correção iatrogênica em pronação e preserva a redução talonavicular.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** sequência de Ponseti = ==CAVE (cavo, aduto, varo, equino)==",
+  "correta": "**Cavo, aduto, varo, equino.**\n- CAVE.\n- Equino por último.",
   "incorretas": {
-   "B": "A alternativa B (equino, aduto, varo, cavo) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "C": "A alternativa C (aduto, varo, cavo, equino) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "D": "A alternativa D (equino, cavo, aduto, varo) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa."
+   "B": "**Equino primeiro.**\n- Gera pé em mata-borrão.",
+   "C": "**Cavo depois.**\n- Cavo é o primeiro.",
+   "D": "**Equino primeiro.**\n- Erro clássico."
   },
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0477": {
   "conceito": "O centro de gravidade do corpo humano, na posição anatômica ortostática, está localizado aproximadamente **5 cm anteriormente à segunda vértebra sacral (S2)**, essa é a referência anatômica clássica usada nos textos de análise de marcha (Perry e colaboradores). Durante o ciclo normal da marcha, esse ponto não permanece fixo: ele oscila tanto no plano vertical quanto no lateral, mas sua posição de referência estática é sempre descrita em relação a essa marca óssea específica (S2), e não em relação a outros níveis vertebrais mais altos, como L2, T12 ou T5.",
