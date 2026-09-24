@@ -1134,91 +1134,91 @@
   "conferido": false
  },
  "trauma-0097": {
-  "conceito": "Na fratura da cabeça do fêmur tipo I de Pipkin (fratura infrafoveal, abaixo da inserção do ligamento redondo), o fragmento não compromete a superfície de carga principal da cabeça femoral. Por isso, o tratamento cirúrgico indicado é a **fixação do fragmento fraturado** (com parafusos, por via que preserve a vascularização), buscando restaurar a congruência articular e preservar a cabeça, reservando procedimentos mais radicais como a artroplastia para os casos com comprometimento maior da superfície de carga, necrose avascular estabelecida ou falha do tratamento inicial.",
-  "correta": "C. A fixação do fragmento fraturado é o tratamento cirúrgico indicado na fratura Pipkin tipo I.",
+  "conceito": "### Pipkin (fratura da cabeça femoral com luxação posterior)\n| Tipo | Fratura |\n|---|---|\n| I | ==abaixo da fóvea== (fora da carga) |\n| II | ==acima da fóvea== (inclui o ligamento redondo, área de carga) |\n| III | I ou II + ==colo== do fêmur |\n| ==IV== | I ou II + ==acetábulo== |\n\n### Conduta\n| Tipo | Tratamento |\n|---|---|\n| I | conservador se congruente; excisão de fragmento pequeno |\n| II | fixação (acesso de Smith-Petersen ou luxação cirúrgica de Ganz) |\n| III | jovem: fixação do colo primeiro; idoso: artroplastia |\n| IV | tratar o acetábulo e a cabeça (via conforme a parede) |\n\n- Redução urgente da luxação (< 6 h).\n\n### Pipkin I operado\n- Fragmento infrafoveal fora da carga.\n- Se desviado e grande (incongruência, bloqueio): ==fixação== com parafusos sem cabeça/embutidos (via anterior de Smith-Petersen ou luxação cirúrgica).\n- Fragmento pequeno e cominuto: excisão.\n\n> **Na prova:** Pipkin I cirúrgico = ==fixação do fragmento==",
+  "correta": "**Fixação do fragmento.**\n- Preserva a congruência.\n- Parafusos embutidos na cartilagem.",
   "incorretas": {
-   "A": "A artroplastia total é reservada a situações mais graves ou a falhas de tratamento, não à indicação inicial do tipo I.",
-   "B": "A artroplastia parcial também não é a conduta inicial recomendada para um fragmento infrafoveal fixável.",
-   "D": "A ressecção do fragmento comprometeria a congruência articular sem necessidade, quando a fixação é factível."
+   "A": "**Artroplastia total.**\n- Excesso num jovem com fragmento fora da carga.",
+   "B": "**Artroplastia parcial.**\n- Desnecessária.",
+   "D": "**Ressecção.**\n- Reservada a fragmentos pequenos e cominutos."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0098": {
-  "conceito": "O princípio da ESTABILIDADE RELATIVA busca permitir um mínimo de micromovimento controlado no foco de fratura, estimulando a consolidação por via SECUNDÁRIA, com formação de calo ósseo (diferente da estabilidade absoluta, que busca compressão rígida e consolidação primária sem calo visível). A HASTE INTRAMEDULAR FRESADA é o método consagrado como padrão-ouro para a fixação da fratura diafisária do fêmur sob esse princípio: a fresagem aumenta o contato entre a haste e o canal medular, permite o uso de hastes de maior diâmetro (mais rígidas à flexão e à rotação) e preserva o suprimento sanguíneo perióstico, favorecendo a consolidação por calo enquanto compartilha a carga mecânica com o osso.",
-  "correta": "A. A haste fresada é o tratamento consagrado da fratura diafisária do fêmur sob o princípio da estabilidade relativa, permitindo consolidação por calo com compartilhamento de carga.",
+  "conceito": "### Estabilidade relativa × absoluta\n| Princípio | Consolidação | Implantes |\n|---|---|---|\n| ==relativa== | ==secundária (calo)==, micromovimento controlado | ==haste intramedular==, placa em ponte, fixador externo |\n| absoluta | primária (sem calo), compressão interfragmentária | parafuso de tração + placa de proteção/compressão |\n\n### Fêmur diafisário\n- Padrão-ouro: ==haste intramedular bloqueada fresada==.\n- Fresagem: aumenta o diâmetro da haste (mais estável), gera autoenxerto no foco; consolidação ==maior e mais rápida== que sem fresar.\n- Fixador: controle de danos. Placa: exceções (fise aberta, canal estreito, periprotética).\n\n> **Na prova:** estabilidade relativa ideal no fêmur = ==haste fresada==",
+  "correta": "**Haste fresada.**\n- Estabilidade relativa ideal.\n- Maior taxa de consolidação.",
   "incorretas": {
-   "B": "O fixador externo é reservado para situações de controle de danos ou contaminação grave, não é o tratamento ideal de rotina para a diáfise femoral sob esse princípio.",
-   "C": "A haste sem fresar também segue o princípio da estabilidade relativa, mas oferece menor rigidez e está associada a maior taxa de retardo de consolidação do que a fresada, não sendo o método ideal preferencial.",
-   "D": "A placa percutânea em ponte segue princípios semelhantes de estabilidade relativa, mas não é o método consagrado como ideal para a diáfise femoral, onde a haste fresada é o padrão-ouro."
+   "B": "**Fixador externo.**\n- Temporário, controle de danos.",
+   "C": "**Haste sem fresar.**\n- Mais pseudartrose.",
+   "D": "**Placa percutânea.**\n- Exceções específicas."
   },
-  "geradoEm": "2026-09-15",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0099": {
-  "conceito": "A coxa tem três compartimentos, delimitados pelos septos intermusculares que partem da fáscia lata e se inserem na linha áspera do fêmur:\n- **Anterior**: quadríceps femoral, sartório e iliopsoas distal, com o nervo femoral e os vasos femorais em sua porção medial\n- **Posterior**: isquiotibiais, com o nervo isquiático\n- **Medial** (dos adutores): adutor magno, longo e curto, grácil e pectíneo, com o nervo obturatório\n\nA síndrome compartimental da coxa é muito menos comum que a da perna, e a explicação é anatômica: os compartimentos da coxa são grandes, comunicam-se parcialmente entre si e têm fáscia mais complacente, de modo que acomodam um volume considerável de sangue antes de a pressão subir, a mesma propriedade que faz a fratura fechada de fêmur perder de 1 a 1,5 litro no compartimento sem sinais compartimentais.\n\nQuando ela ocorre, porém, é o compartimento **anterior** o mais acometido, por três motivos que se somam: é o de maior volume muscular e por isso gera mais edema; é o mais diretamente atingido pelo mecanismo do trauma de alta energia e pelo hematoma da fratura diafisária; e é o que recebe o sangramento das artérias perfurantes lesadas.\n\nOs fatores de risco reconhecidos são o trauma de alta energia, o esmagamento, a lesão vascular com reperfusão, o uso de tração cutânea excessiva, a coagulopatia e o uso de anticoagulantes, a compressão externa prolongada (paciente encontrado caído após horas) e a hipotensão sistêmica, que reduz o gradiente de perfusão e faz a síndrome se instalar com pressões compartimentais mais baixas.\n\nO quadro clínico é o mesmo (dor desproporcional, dor à extensão passiva do joelho, coxa tensa e progressivamente aumentada, parestesia no território do femoral), e o tratamento é a fasciotomia, feita por uma única incisão **lateral** longitudinal que descomprime o compartimento anterior e, através do septo intermuscular lateral, o posterior. O compartimento medial, quando envolvido, exige incisão medial própria.",
-  "correta": "C. O compartimento ANTERIOR da coxa é o de maior risco: é o de maior volume muscular, o mais diretamente atingido pelo mecanismo do trauma e pelo hematoma da fratura diafisária, e o que recebe o sangramento das artérias perfurantes lesadas.",
+  "conceito": "### Compartimentos da coxa\n| Compartimento | Conteúdo |\n|---|---|\n| ==anterior== | quadríceps, sartório; nervo femoral |\n| medial | adutores, grácil; nervo obturatório |\n| posterior | isquiotibiais; nervo ciático |\n\n### Síndrome compartimental da coxa\n- Rara (grande volume e comunicação com o quadril).\n- Mais comum no ==anterior== (quadríceps), com trauma de alta energia, esmagamento, anticoagulação, hipotensão.\n- Fasciotomia: incisão lateral libera anterior e posterior; medial se necessário.\n\n> **Na prova:** compartimento da coxa de maior risco = ==anterior==",
+  "correta": "**Anterior.**\n- Quadríceps volumoso.\n- Mais acometido.",
   "incorretas": {
-   "A": "Não existe um compartimento lateral na coxa. A face lateral é ocupada pelo trato iliotibial e pelo septo intermuscular lateral, que são justamente as estruturas atravessadas na fasciotomia por incisão lateral única para alcançar os compartimentos anterior e posterior.",
-   "B": "O compartimento MEDIAL, dos adutores, é o menos frequentemente acometido dos três. Quando envolvido, exige incisão própria, porque a fasciotomia lateral não o alcança.",
-   "D": "O compartimento posterior, dos isquiotibiais, pode ser acometido (sobretudo em lesões por esmagamento e em compressão externa prolongada), mas com frequência bem menor que o anterior. Ele é descomprimido pela mesma incisão lateral, através do septo intermuscular."
+   "A": "**Lateral.**\n- Não é compartimento separado.",
+   "B": "**Medial.**\n- Menos acometido.",
+   "D": "**Posterior.**\n- Segundo em frequência."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0100": {
-  "conceito": "O **sinal de Grey Turner** (a equimose que aparece na região dos flancos, geralmente de 24 a 48 horas após o evento causador) foi descrito originalmente no contexto da pancreatite hemorrágica, mas seu significado fisiopatológico é mais amplo: ele indica a presença de sangue dissecando o espaço retroperitoneal e migrando por planos fasciais até atingir o tecido subcutâneo do flanco, tornando-se visível como equimose.\n\nNas lesões do anel pélvico, esse mesmo mecanismo se aplica: uma **hemorragia retroperitoneal** originada do plexo venoso pré-sacral, de uma artéria pélvica lesada, ou de uma fratura óssea sangrante, pode se acumular no espaço retroperitoneal e, com tempo suficiente, dissecar até o flanco, produzindo o mesmo sinal clínico independentemente da causa retroperitoneal de base.\n\nReconhecer o Grey Turner num paciente com fratura pélvica é, portanto, um sinal de alerta para hemorragia retroperitoneal significativa, e não um achado específico de uma estrutura anatômica isolada, diferente de sinais como o de Destot (equimose escrotal/perineal ou inguinal, também associada a fratura pélvica, mas por trajeto de dissecção mais direto e anterior) ou o de Earle (massa ou crepitação palpável ao toque retal em fraturas do anel pélvico posterior), mais associados a uma topografia específica de sangramento ou de deslocamento ósseo.",
-  "correta": "B. O sinal de Grey Turner (equimose nos flancos) indica hemorragia retroperitoneal, refletindo a dissecção de sangue por planos fasciais até o tecido subcutâneo, independentemente da causa retroperitoneal específica.",
+  "conceito": "### Sinais cutâneos no trauma pélvico\n| Sinal | Achado | Significado |\n|---|---|---|\n| ==Grey Turner== | equimose nos ==flancos== (24 a 48 h) | ==hemorragia retroperitoneal== |\n| Cullen | equimose periumbilical | sangue intraperitoneal/retroperitoneal |\n| Destot | hematoma inguinal/escrotal | fratura pélvica |\n| Earle | massa óssea/dor ao toque retal | fratura pélvica |\n| Roux | distância trocanter-espinha púbica diminuída | compressão lateral |\n| Morel-Lavallée | coleção flutuante sobre o trocanter | desenluvamento fechado |\n\n> **Na prova:** Grey Turner = ==hemorragia retroperitoneal==",
+  "correta": "**Hemorragia retroperitoneal.**\n- Sangue disseca até os flancos.\n- Equimose tardia.",
   "incorretas": {
-   "A": "A fratura dos ramos púbicos é um achado estrutural da própria fratura pélvica, não o que o sinal de Grey Turner indica, que é hemorragia retroperitoneal.",
-   "C": "A síndrome de Morel-Lavallée é uma lesão de descolamento de partes moles por cisalhamento, com apresentação clínica e mecanismo distintos do sinal de Grey Turner.",
-   "D": "A lesão do trato geniturinário tem sinais próprios (hematúria, sangue no meato uretral), distintos do sinal de Grey Turner, que indica hemorragia retroperitoneal."
+   "A": "**Fratura dos ramos.**\n- Sinal de Destot/Earle.",
+   "C": "**Morel-Lavallée.**\n- Desenluvamento sobre o trocanter.",
+   "D": "**Geniturinário.**\n- Sangue no meato, próstata alta."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0101": {
-  "conceito": "A fratura do **colo do fêmur** é, no adulto, sobretudo uma fratura por fragilidade, e seu perfil epidemiológico é o da osteoporose.\n\nPredomina de forma marcante no sexo feminino, com razão de cerca de 2 a 3 mulheres para cada homem, e a incidência dobra a cada década a partir dos 50 anos. Entre os grupos raciais, a incidência é mais alta em mulheres brancas (e também em asiáticas), e significativamente mais baixa em mulheres negras, diferença atribuída a maior densidade mineral óssea de pico, maior massa muscular e geometria femoral distinta (colo mais curto, o que reduz o braço de alavanca).\n\nE o **baixo índice de massa corpórea** é fator de risco independente e consistente: um IMC abaixo de 18,5 (abaixo do peso) se associa a maior risco por três caminhos somados:\n\n- Menor massa óssea (menor carga mecânica sobre o esqueleto e menor conversão periférica de andrógenos em estrogênio no tecido adiposo).\n- Menor massa muscular, com pior equilíbrio e maior propensão a quedas.\n- Menor \"almofada\" de partes moles sobre o trocanter para absorver o impacto da queda lateral.\n\nOs demais fatores de risco a conhecer são a idade avançada, o antecedente de fratura por fragilidade, o tabagismo, o etilismo, o uso de corticoide, a deficiência de vitamina D, a demência e o uso de medicamentos sedativos ou que causem hipotensão postural.\n\nA consequência prática é a mais importante do tema: a fratura do quadril no idoso é um **evento sentinela** de altíssima mortalidade (em torno de 20% a 30% no primeiro ano), e o tratamento não termina na cirurgia: exige investigação e tratamento da osteoporose e avaliação do risco de quedas, sob pena de o paciente voltar com a fratura contralateral.",
-  "correta": "D. A fratura do colo do fêmur é mais frequente em mulheres BRANCAS com ÍNDICE DE MASSA CORPÓREA MENOR QUE 18,5, perfil que combina menor densidade mineral óssea, menor massa muscular e menos tecido mole para amortecer a queda lateral.",
+  "conceito": "### Epidemiologia da fratura do colo do fêmur\n| Fator | Risco maior |\n|---|---|\n| sexo | ==feminino== (2 a 3:1) |\n| raça | ==branca== (e asiática) |\n| IMC | ==baixo (< 18,5)==: menos massa óssea e coxim trocantérico |\n| idade | > 65 anos |\n| outros | tabagismo, álcool, corticoide, quedas, demência, história familiar |\n\n- Negras têm maior massa óssea: menor risco.\n- Mortalidade em 1 ano: 20 a 30%.\n\n> **Na prova:** colo do fêmur = mulheres ==brancas com IMC < 18,5==",
+  "correta": "**Brancas, IMC < 18,5.**\n- Osteoporose mais frequente.\n- Pouco coxim sobre o trocanter.",
   "incorretas": {
-   "A": "Mulheres negras têm incidência significativamente MENOR de fratura do colo do fêmur, atribuída a maior densidade mineral óssea de pico, maior massa muscular e geometria femoral distinta. E o IMC acima de 18,5 não é fator de risco.",
-   "B": "Embora o baixo IMC seja de fato fator de risco, a raça negra se associa a menor, e não a maior, incidência dessa fratura.",
-   "C": "Acerta a raça branca, mas erra o IMC: é o BAIXO peso (abaixo de 18,5) que aumenta o risco. Um IMC mais alto, dentro de certos limites, tem até efeito protetor, por maior carga mecânica sobre o osso e mais tecido mole sobre o trocanter."
+   "A": "**Negras.**\n- Maior massa óssea.",
+   "B": "**Negras.**\n- Menor risco.",
+   "C": "**IMC > 18,5.**\n- Peso normal protege."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0102": {
-  "conceito": "A fratura do calcâneo do tipo **língua** (tongue-type), na classificação de Essex-Lopresti, é aquela em que o traço secundário se dirige posteriormente e sai pela tuberosidade, produzindo um fragmento grande em forma de língua que permanece preso ao tendão de Aquiles.\n\nE é justamente essa inserção que cria a emergência: o tríceps sural traciona o fragmento em direção proximal e posterior, fazendo com que a sua borda superior seja empurrada **contra a pele da face posterior do calcanhar**, uma pele fina, aderida, com irrigação terminal e nenhuma almofada de tecido subcutâneo para absorver a pressão.\n\nO resultado é a **necrose da pele posterior**, complicação precoce e a mais frequente nessas fraturas com grande desvio. Ela pode se instalar em **horas**, e a sua evolução é catastrófica: a necrose expõe o osso, converte uma fratura fechada em exposta e leva a osteomielite do calcâneo, que é de tratamento penoso e às vezes termina em amputação.\n\nPor isso a fratura em língua com desvio acentuado é uma das poucas emergências verdadeiras do pé: exige avaliação imediata da pele (procurando a área pálida, tensa e sem enchimento capilar sobre a proeminência) e **redução urgente**, sem esperar pelo edema regredir. A manobra de escolha é a técnica de **Essex-Lopresti percutânea**: com o joelho fletido para relaxar o tríceps sural, introduz-se um pino de Steinmann no fragmento em língua, faz-se alavanca para baixo e à frente, e fixa-se percutaneamente com fios ou parafusos.\n\nAs demais complicações citadas existem, mas em outro tempo ou com outra frequência: a síndrome compartimental do pé ocorre em cerca de 10% das fraturas do calcâneo e produz a garra dos artelhos; a exposição óssea é a consequência da necrose, e não a sua alternativa; e a lesão nervosa é bem menos comum.",
-  "correta": "C. A NECROSE DA PELE POSTERIOR é a complicação precoce mais frequente da fratura em língua com grande desvio: o tríceps sural traciona o fragmento contra uma pele fina e sem almofada subcutânea, e a necrose pode se instalar em horas, o que faz dessa fratura uma emergência de redução.",
+  "conceito": "### Fratura em língua do calcâneo (Essex-Lopresti)\n- Traço secundário sai pela ==tuberosidade posterior==: fragmento em língua com a faceta posterior.\n- Tendão calcâneo traciona o fragmento para cima: ==pressão na pele posterior==.\n\n### Emergência\n- Pele esbranquiçada/isquêmica sobre o calcanhar = ==necrose iminente==.\n- ==Redução urgente== (Essex-Lopresti percutânea com Schanz) e fixação nas primeiras horas.\n\n### Outras complicações\n| Complicação | Frequência |\n|---|---|\n| deiscência/infecção da via lateral estendida | 10 a 25% |\n| síndrome compartimental do pé | 10% |\n| artrose subtalar | tardia |\n\n> **Na prova:** língua com grande desvio = risco de ==necrose da pele posterior==",
+  "correta": "**Necrose da pele posterior.**\n- Fragmento empurra a pele.\n- Reduzir com urgência.",
   "incorretas": {
-   "A": "A exposição óssea é a CONSEQUÊNCIA da necrose cutânea, e não uma complicação alternativa a ela: a pele necrosa primeiro e depois se rompe, convertendo uma fratura fechada em exposta, com risco de osteomielite do calcâneo.",
-   "B": "A síndrome compartimental do pé complica cerca de 10% das fraturas do calcâneo e deve ser procurada (dor desproporcional, dor ao estiramento passivo dos artelhos, com sequela em garra), mas não é a complicação precoce mais frequente do padrão em língua com grande desvio.",
-   "D": "A lesão do nervo plantar medial é incomum nessas fraturas. Quando há queixa neurológica, o nervo mais frequentemente envolvido é o SURAL, sobretudo como complicação da via lateral estendida usada na osteossíntese."
+   "A": "**Exposição.**\n- Menos frequente.",
+   "B": "**Compartimental.**\n- Ocorre, mas menos que a necrose na língua desviada.",
+   "D": "**Plantar medial.**\n- Lesão rara."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0103": {
-  "conceito": "A complicação mais frequente após a fratura do capítulo umeral (tratada cirúrgica ou conservadoramente) não é a que mais preocupa à primeira vista, a necrose avascular do fragmento, temida por sua relação com a vascularização retrógrada do capítulo, mas sim a **perda de amplitude de movimento do cotovelo**, sobretudo da extensão terminal.\n\nIsso acontece porque o próprio mecanismo da lesão (um impacto por cisalhamento sobre a superfície articular anterior do cotovelo) inflama e cicatriza a cápsula articular anterior, formando aderências que restringem a extensão mesmo quando a fratura consolida com boa congruência articular e sem necrose.\n\nEssa perda de mobilidade costuma ser parcial e bem tolerada funcionalmente na maioria dos pacientes, mas é, disparadamente, o achado mais relatado no seguimento a longo prazo dessas fraturas, mais comum do que a pseudartrose (o capítulo tem boa vascularização quando a fixação é estável), a necrose avascular (que ocorre, mas em proporção bem menor de casos, sobretudo nos padrões mais cominuídos) ou a consolidação viciosa.\n\nNa prática, essa alta prevalência de rigidez reforça o valor da mobilização precoce assim que a fixação for estável o suficiente, e explica por que a discussão pré-operatória com o paciente costuma incluir a expectativa realista de um déficit residual de extensão de alguns graus, mesmo com um resultado cirúrgico tecnicamente satisfatório.",
-  "correta": "D. A diminuição da mobilidade articular, sobretudo da extensão terminal, é a complicação mais frequentemente relatada após a fratura do capítulo umeral, decorrente da cicatrização da cápsula anterior lesada pelo próprio mecanismo de cisalhamento.",
+  "conceito": "### Fraturas do capítulo (plano coronal)\n| Classificação | Tipo | Fragmento |\n|---|---|---|\n| Bryan-Morrey | I (Hahn-Steinthal) | grande porção óssea do capítulo |\n| | II (Kocher-Lorenz) | lasca osteocondral fina |\n| | III | cominutiva |\n| | IV (McKee) | ==capítulo + parte da tróclea== |\n| Dubberley | 1 a 3, A (sem cominução posterior) / B (com) | |\n\n### Sinal do duplo arco (duplo crescente)\n- No perfil: dois arcos subcondrais sobrepostos = ==capítulo e crista lateral da tróclea== no mesmo fragmento.\n- Indica fratura do ==capítulo com extensão para a tróclea== (McKee, Bryan-Morrey IV).\n- ==TC== é obrigatória para planejar.\n\n### Tratamento\n- Redução aberta e fixação (parafusos anteroposteriores sem cabeça ou posteroanteriores); artroplastia no idoso com cominução.\n\n### Complicações\n| Complicação | Frequência |\n|---|---|\n| ==rigidez (perda de mobilidade)== | ==a mais comum== |\n| necrose avascular | rara, pouco sintomática |\n| pseudartrose | rara |\n| artrose | tardia |\n\n> **Na prova:** complicação mais frequente = ==perda de mobilidade==",
+  "correta": "**Diminuição da mobilidade.**\n- Rigidez é a mais comum.\n- Mobilização precoce reduz.",
   "incorretas": {
-   "A": "A pseudartrose não é a complicação mais comum: o capítulo tem boa vascularização e, com fixação estável, consolida bem na maioria dos casos.",
-   "B": "A necrose avascular ocorre, sobretudo nos padrões mais cominuídos, mas em proporção bem menor do que a perda de mobilidade articular, que é a complicação mais frequentemente relatada.",
-   "C": "A consolidação viciosa não é a complicação mais comumente descrita nessa fratura, que costuma consolidar em posição aceitável quando adequadamente fixada."
+   "A": "**Pseudartrose.**\n- Rara.",
+   "B": "**Necrose.**\n- Temida, pouco frequente.",
+   "C": "**Consolidação viciosa.**\n- Menos comum."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0104": {
-  "conceito": "A região **subtrocantérica** recebe as maiores cargas do esqueleto: a cortical medial (o calcar) trabalha em compressão com forças que podem ultrapassar várias vezes o peso corporal, e a cortical lateral trabalha em tensão. Qualquer implante colocado ali precisa suportar essa solicitação até a consolidação, e é isso que separa as opções.\n\nA **haste intramedular** cefalomedular é um dispositivo de carga compartilhada, posicionado no eixo mecânico do osso: o braço de alavanca entre a carga e o implante é curto, as tensões de flexão sobre o material são menores, e a haste resiste melhor à falha por fadiga.\n\nJá as **placas** (o parafuso dinâmico condilar/DCS, a placa angulada de 95 graus e a placa trocantérica bloqueada) são dispositivos de carga total (load bearing), fixados na cortical lateral, portanto excêntricos em relação ao eixo mecânico: elas suportam sozinhas o momento fletor até a consolidação, e quando há cominuição medial, com perda do apoio do calcar, tendem a falhar por fadiga, com quebra do implante ou colapso em varo.\n\nPor isso a haste intramedular é o implante de escolha nas fraturas subtrocantéricas e a que apresenta **menor** índice de colapso em varo com redução adequada, vantagem que se acentua no paciente obeso, em quem as cargas são ainda maiores e as vias de acesso para placa, mais difíceis.\n\nDuas ressalvas técnicas são indispensáveis:\n- A haste só protege se a **redução** for boa: reduzir antes de introduzir o implante, vencendo a flexão, abdução e rotação lateral do fragmento proximal (iliopsoas e glúteos), sob pena de consolidar em varo\n- As placas mantêm indicação em situações específicas, como deformidades prévias, canais muito estreitos e algumas fraturas com extensão intertrocantérica complexa",
-  "correta": "C. A HASTE INTRAMEDULAR é o implante com menor índice de colapso em varo: por ser um dispositivo de carga compartilhada, posicionado no eixo mecânico do osso, sofre menor momento fletor e resiste melhor à falha por fadiga.",
+  "conceito": "### Fratura subtrocantérica\n- Até 5 cm abaixo do trocanter menor: grandes cargas (compressão medial, tração lateral).\n- Forças deformantes do fragmento proximal: ==flexão== (iliopsoas), ==abdução== (glúteos) e ==rotação externa== (rotadores).\n- Tendência a consolidar em ==varo e flexão== se não reduzida antes da haste.\n\n### Aceitável × revisão\n| Parâmetro | Tolerância |\n|---|---|\n| varo | < 5 a 10° (evitar qualquer varo) |\n| rotação | < 10 a 15° comparando com o lado normal |\n| ==encurtamento== | ==> 2 cm é inaceitável== (revisar na hora) |\n| flexão proximal | corrigir na redução |\n\n### Dicas\n- Reduzir antes de fresar (pinças, cerclagem, Schanz).\n- Ponto de entrada ==medial ao ápice== do trocanter para haste cefalomedular (evita varo).\n\n### Implante × varo\n| Implante | Braço de alavanca | Varo |\n|---|---|---|\n| ==haste cefalomedular== | ==curto== (intramedular, carga compartilhada) | ==menor== |\n| DCS, placa angulada 95° | longo (lateral) | maior se sem suporte medial |\n| placa bloqueada trocantérica | longo | falhas por fadiga |\n\n> **Na prova:** menos colapso em varo = ==haste intramedular==",
+  "correta": "**Haste intramedular.**\n- Braço de alavanca curto.\n- Compartilha carga.",
   "incorretas": {
-   "A": "O DCS (parafuso dinâmico condilar) é um implante de carga TOTAL, fixado excentricamente na cortical lateral: ele suporta sozinho o momento fletor e, diante de cominuição medial, tende a falhar por fadiga ou a permitir o colapso em varo.",
-   "B": "A placa angulada de 95 graus é biomecanicamente robusta e tem uso consagrado nessa região, mas continua sendo um implante excêntrico e de carga total, com maior taxa de colapso em varo do que a haste intramedular.",
-   "D": "A placa trocantérica bloqueada, apesar dos parafusos de ângulo fixo, permanece um dispositivo lateral e excêntrico. A sua rigidez pode inclusive retardar a consolidação, e o colapso em varo é mais frequente do que com a haste."
+   "A": "**DCS.**\n- Implante lateral, sujeito a varo.",
+   "B": "**Placa angulada.**\n- Braço longo.",
+   "D": "**Placa bloqueada.**\n- Falha em varo por fadiga."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0105": {
