@@ -1941,50 +1941,50 @@
   "conferido": false
  },
  "mao-0169": {
-  "conceito": "O adutor do polegar é o único músculo do primeiro espaço interósseo com formato de leque: cabeça transversa nascendo em toda a diáfise do terceiro metacarpo e cabeça oblíqua no capitato e nas bases do segundo e terceiro metacarpos, convergindo para a base da falange proximal do polegar.",
-  "correta": "A estrutura assinalada é o adutor do polegar. A origem dele no terceiro metacarpo é o que explica dois fatos aparentemente distantes: a amputação do terceiro raio compromete a adução do polegar, e a lesão do nervo ulnar (que o inerva pelo ramo profundo) produz o sinal de Froment, com a interfalângica dobrando para compensar a pinça que o adutor não faz mais.",
+  "conceito": "### Músculos do polegar na palma\n| Músculo | Forma e posição | Origem | Nervo |\n|---|---|---|---|\n| ==adutor do polegar== | ==leque== no 1º espaço | cabeça transversa: **3º MC**; oblíqua: capitato, bases do 2º e 3º MC | **ulnar** |\n| abdutor curto | tenar mais superficial e radial | retináculo, escafoide, trapézio | mediano |\n| oponente | profundo ao abdutor curto | retináculo, trapézio | mediano |\n| flexor curto | tenar, medial ao abdutor | retináculo, trapézio (superficial); capitato (profunda) | duplo |\n\n### Pistas\n- Leque que converge do 3º metacarpo à falange proximal do polegar: **adutor**.\n- O oponente insere-se ao longo do **1º metacarpo**; os demais na falange proximal.\n\n### Clínica\n- Adutor paralisado: **Froment**, pinça lateral fraca.\n- Atrofia do **abdutor curto**: túnel do carpo avançado.\n\n> **Na prova:** leque do 1º espaço = ==adutor do polegar==.",
+  "correta": "**Adutor do polegar.**\n- É o músculo em leque do 1º espaço, nascido no 3º metacarpo e no capitato.",
   "incorretas": {
-   "B": "O oponente do polegar é tenar, mais radial e profundo ao abdutor curto, e se insere em toda a borda radial do primeiro metacarpo, não na falange, e não em forma de leque a partir do terceiro metacarpo.",
-   "C": "O flexor curto do polegar também é tenar e tem inervação dupla: cabeça superficial pelo mediano, profunda pelo ulnar. Fica radial e volar ao adutor, com formato e direção diferentes.",
-   "D": "O abdutor curto é o mais superficial e radial da eminência tenar, nascendo no retináculo dos flexores, no escafoide e no trapézio. É o músculo cuja atrofia se vê na síndrome do túnel do carpo avançada."
+   "B": "**Insere no metacarpo.**\n- O oponente é tenar e vai à borda radial do 1º metacarpo.",
+   "C": "**Tenar, radial.**\n- O flexor curto fica radial e volar ao adutor.",
+   "D": "**Superficial e radial.**\n- O abdutor curto é o tenar mais superficial."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0170": {
-  "conceito": "Na palma, o que distingue o lumbrical do interósseo à primeira vista é a origem: o interósseo nasce do osso, o lumbrical nasce do tendão do flexor profundo dos dedos.",
-  "correta": "A seta indica o primeiro lumbrical (o mais radial, ligado ao tendão do flexor profundo do indicador) e ele é inervado pelo nervo mediano. A divisão é fixa e vale decorar: primeiro e segundo lumbricais pelo mediano, terceiro e quarto pelo ulnar. É a única exceção, junto com a musculatura tenar, à regra de que o ulnar inerva todos os intrínsecos da mão. Consequência prática: numa lesão ulnar completa a garra aparece no anelar e no mínimo, e poupa indicador e médio, cujos lumbricais continuam funcionando.",
+  "conceito": "### Lumbricais e sua inervação\n| Lumbrical | Dedo | Nervo |\n|---|---|---|\n| ==1º== | indicador | ==mediano== |\n| 2º | médio | mediano |\n| 3º | anelar | ulnar |\n| 4º | mínimo | ulnar |\n\n- Origem nos tendões do **FPD**; inserção na **banda lateral radial**.\n- 1º e 2º são **unipenados** (um tendão); 3º e 4º **bipenados** (dois tendões adjacentes).\n\n### Consequência clínica\n- Lesão ulnar: **garra do anelar e mínimo**; indicador e médio poupados (lumbricais do mediano).\n- Lesão combinada mediano + ulnar: garra de todos os dedos.\n\n### Regra dos intrínsecos\n- Mediano: tenar (abdutor curto, oponente, flexor curto superficial) + lumbricais 1 e 2 (**LOAF**).\n- Ulnar: todo o resto.\n\n> **Na prova:** 1º lumbrical = ==nervo mediano==.",
+  "correta": "**Mediano.**\n- O 1º e o 2º lumbricais são inervados pelo mediano.\n- Por isso a garra ulnar poupa indicador e médio.",
   "incorretas": {
-   "A": "O ulnar inerva o terceiro e o quarto lumbricais, os dos dedos anelar e mínimo, não o primeiro, que a seta mostra.",
-   "C": "O interósseo anterior é ramo motor do mediano no antebraço e inerva flexor longo do polegar, pronador quadrado e a metade radial do flexor profundo. Ele não chega à mão.",
-   "D": "O interósseo posterior é do radial, inerva os extensores no antebraço e termina como ramo sensitivo articular no punho. Não inerva músculo nenhum da mão."
+   "A": "**3º e 4º.**\n- O ulnar inerva os lumbricais do anelar e do mínimo.",
+   "C": "**Não chega à mão.**\n- O interósseo anterior inerva FLP, FPD radial e pronador quadrado.",
+   "D": "**Nervo do radial.**\n- O interósseo posterior não inerva músculos da mão."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Netter, Atlas de Anatomia Humana, 7ª edição, Cap. 7"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0171": {
-  "conceito": "No corte transversal do punho, os seis compartimentos extensores se dispõem em ordem fixa em torno do rádio, de radial para ulnar: primeiro (abdutor longo e extensor curto do polegar), segundo (extensores radiais do carpo), tubérculo de Lister, terceiro (extensor longo do polegar), quarto (extensor comum e extensor próprio do indicador), quinto (extensor do dedo mínimo) e sexto (extensor ulnar do carpo, já sobre a ulna).",
-  "correta": "Os dois tendões marcados com a letra B são os do segundo compartimento: extensor radial curto e extensor radial longo do carpo, com o longo mais radial dos dois, porque ele vai à base do segundo metacarpo e o curto à do terceiro. Guardar essa dupla ajuda em duas situações: é ela que o abdutor longo e o extensor curto do polegar cruzam por cima na síndrome da interseção proximal, e é por cima dela que o extensor longo do polegar cruza no tubérculo de Lister, na interseção distal.",
+  "conceito": "### Compartimentos extensores no corte transversal (radial → ulnar)\n| Nº | Conteúdo |\n|---|---|\n| 1 | abdutor longo e extensor curto do polegar |\n| ==2== | ==extensores radiais longo (mais radial) e curto do carpo== |\n| entre 2 e 3 | tubérculo de Lister |\n| 3 | extensor longo do polegar |\n| 4 | extensor comum dos dedos e extensor do indicador |\n| 5 | extensor do mínimo (sobre a RUD) |\n| 6 | extensor ulnar do carpo (sulco da ulna) |\n\n### Inserções do 2º compartimento\n- **ERLC:** base do **2º** metacarpo.\n- **ERCC:** base do **3º** metacarpo.\n\n### Síndromes de interseção\n- Proximal: 1º sobre 2º.\n- Distal: 3º (ELP) sobre 2º, no Lister.\n\n> **Na prova:** letra B = ==ERCC e ERLC== (2º compartimento).",
+  "correta": "**2º compartimento.**\n- Os tendões B são os extensores radiais curto e longo do carpo.\n- O longo é o mais radial.",
   "incorretas": {
-   "A": "Mistura um tendão do segundo compartimento com o do terceiro, que corre isolado, do outro lado do tubérculo de Lister.",
-   "B": "Extensor longo e extensor curto do polegar estão em compartimentos diferentes e distantes: o longo é o terceiro, o curto é o primeiro, e entre eles fica o segundo inteiro.",
-   "C": "Junta um tendão do segundo compartimento com um do primeiro. São vizinhos, mas separados por um septo próprio, e é justamente esse septo que os mantém em compartimentos distintos."
+   "A": "**Mistura 2º e 3º.**\n- O ELP corre isolado do outro lado do Lister.",
+   "B": "**Compartimentos distantes.**\n- O ELP é do 3º e o extensor curto do 1º.",
+   "C": "**Mistura 1º e 2º.**\n- São vizinhos, mas separados por septo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0172": {
-  "conceito": "A via dorsal ao rádio, ou via de Thompson, é feita no intervalo entre o extensor radial curto do carpo e o extensor comum dos dedos. Aprofundando o plano, encontra-se o supinador envolvendo o colo do rádio, e, dentro dele, o nervo interósseo posterior.",
-  "correta": "A letra A corresponde ao extensor radial curto do carpo, que forma a margem radial do intervalo, e a letra B ao supinador, que aparece no fundo cobrindo o terço proximal do rádio. A sequência é a chave da segurança da via: identificar o intervalo superficial, chegar ao supinador, achar o nervo antes de descolar qualquer coisa e supinar o antebraço para afastá-lo. Descolar o supinador de dentro para fora sem esse cuidado é a forma clássica de lesar o interósseo posterior.",
+  "conceito": "### Via de Thompson: camadas\n1. **Superficial:** intervalo entre ==ERCC (A)== (radial) e extensor comum dos dedos (ulnar).\n2. **Profundo:** ==supinador (B)== sobre o terço proximal do rádio; distalmente, abdutor longo e extensor curto do polegar cruzando o rádio.\n3. **Nervo interósseo posterior** atravessa o supinador.\n\n### Proteção do NIP\n- Identificá-lo antes de descolar.\n- **Supinar** o antebraço e desinserir o supinador da borda anterior do rádio.\n\n### Via de Henry (comparação)\n- Superficial: braquiorradial × FRC/pronador redondo.\n- Profundo proximal: supinador (antebraço supinado), pronador redondo no terço médio.\n\n> **Na prova:** A = ==ERCC==; B = ==supinador==.",
+  "correta": "**ERCC e supinador.**\n- A é a margem radial do intervalo de Thompson.\n- B é o supinador, no fundo, sobre o colo do rádio.",
   "incorretas": {
-   "A": "O extensor dos dedos é a outra margem do intervalo, ulnar, e não a que a letra A indica.",
-   "B": "O pronador redondo é volar e se insere na face lateral do rádio, mas é estrutura da via de Henry, anterior. Não aparece no fundo de uma via dorsal.",
-   "D": "Acerta a letra A e erra a B pelo mesmo motivo: no assoalho dessa via está o supinador, não o pronador."
+   "A": "**A errada.**\n- O extensor dos dedos é a margem ulnar.",
+   "B": "**Os dois errados.**\n- O pronador redondo é da via de Henry.",
+   "D": "**B errada.**\n- No assoalho está o supinador, não o pronador."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0173": {
@@ -1999,51 +1999,51 @@
   "conferido": false
  },
  "mao-0174": {
-  "conceito": "Na face lateral do cotovelo os músculos se dispõem em camadas ordenadas, de anterior para posterior: braquiorradial, extensor radial longo do carpo, extensor radial curto do carpo, extensor comum dos dedos e, mais posterior, extensor ulnar do carpo.",
-  "correta": "O número 1 é o braquiorradial e o número 4 é o extensor ulnar do carpo. O braquiorradial se reconhece por nascer bem acima da articulação, na crista supracondilar lateral (é o único do grupo que começa no úmero e não no epicôndilo), e por isso ele aparece cruzando o cotovelo por fora. O extensor ulnar do carpo é o mais posterior e ulnar da série, e é ele que o número 4 mostra descendo em direção à borda ulnar.",
+  "conceito": "### Músculos da face lateral do cotovelo (anterior → posterior)\n| Ordem | Músculo | Origem |\n|---|---|---|\n| ==1== | ==braquiorradial== | crista supracondilar lateral (acima do epicôndilo) |\n| 2 | ERLC | crista supracondilar, abaixo do braquiorradial |\n| 3 | ERCC | epicôndilo lateral (tendão comum) |\n| 4* | extensor comum dos dedos | epicôndilo lateral |\n| ==posterior== | ==extensor ulnar do carpo== | epicôndilo lateral e borda da ulna |\n| mais posterior | ancôneo | epicôndilo até olécrano |\n\n*A numeração depende da figura; o ponto é identificar o **mais anterior** (braquiorradial) e o **mais posterior** dos extensores (EUC).\n\n### Relevância\n- Epicondilite lateral: origem do **ERCC**.\n- Via de **Kocher**: ancôneo × EUC; **Kaplan**: ERCC × extensor comum.\n\n> **Na prova:** 1 e 4 = ==braquiorradial e extensor ulnar do carpo==.",
+  "correta": "**Braquiorradial e EUC.**\n- O braquiorradial nasce acima do epicôndilo, na crista supracondilar.\n- O EUC é o extensor mais posterior e ulnar.",
   "incorretas": {
-   "A": "Acerta o braquiorradial e erra o segundo: o extensor comum dos dedos fica entre o extensor radial curto e o extensor ulnar do carpo, mais anterior que a estrutura apontada.",
-   "C": "O extensor radial longo do carpo nasce logo abaixo do braquiorradial, na mesma crista, mas é a segunda camada, não a primeira.",
-   "D": "Erra a primeira estrutura pelo mesmo motivo, ainda que acerte a segunda."
+   "A": "**Segundo errado.**\n- O extensor comum fica anterior ao EUC.",
+   "C": "**Primeiro errado.**\n- O ERLC é a segunda camada.",
+   "D": "**Primeiro errado.**\n- O mais anterior é o braquiorradial."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0175": {
-  "conceito": "Atenção ao comando: a questão pede a associação INCORRETA. A sequência de Mayfield é fixa e vale decorar em ordem, estágio I escafossemilunar, II capitossemilunar através do espaço de Poirier, III lunopiramidal, IV luxação volar do semilunar.",
-  "correta": "A alternativa A é a associação falsa, e por isso é a resposta. O estágio I não é a luxação capitossemilunar: é a falha do ligamento escafossemilunar, a primeira amarra a ceder quando o punho é forçado em hiperextensão, desvio ulnar e supinação intercarpal. A luxação capitossemilunar corresponde ao estágio II.",
+  "conceito": "### Sequência de Mayfield (decorar)\n| Estágio | Ligamento |\n|---|---|\n| ==I== | ==escafossemilunar== |\n| II | capitossemilunar |\n| ==III== | ==piramidal-semilunar (lunopiramidal)== |\n| IV | radiocarpal dorsal (semilunar luxa para volar) |\n\n- Direção: **radial → em torno do semilunar → ulnar → dorsal**.\n- Mecanismo: hiperextensão, desvio ulnar, supinação intercarpal.\n\n### Radiografia\n| Estágio | Achado |\n|---|---|\n| I | diástase escafossemilunar (Terry Thomas), anel cortical |\n| II e III | capitato fora do semilunar no perfil; linhas de Gilula quebradas |\n| IV | semilunar em \"xícara derramada\" no perfil; forma triangular no PA |\n\n### Espaço de Poirier\n- Área frágil da cápsula volar entre os ligamentos radioescafocapitato e radiossemilunar longo: por onde o capitato se desloca (estágio II).\n\n> **Na prova:** associação incorreta = ==estágio I como luxação capitossemilunar== (o I é escafossemilunar).",
+  "correta": "**É a associação falsa.**\n- O estágio I é a lesão escafossemilunar.\n- A luxação capitossemilunar é o estágio II.",
   "incorretas": {
-   "B": "A associação está correta, então não é o que a questão pede. O estágio III é mesmo a lesão do ligamento semilunopiramidal, quando a força completa a volta em torno do semilunar e chega ao lado ulnar.",
-   "C": "Também correta. No estágio IV, rompido o ligamento radiocarpal dorsal, o semilunar perde a última amarra e roda para volar, luxando para dentro do túnel do carpo, daí o desvio ventral e o risco de compressão aguda do nervo mediano.",
-   "D": "Correta igualmente. O espaço de Poirier é a área frágil da cápsula volar entre o ligamento radioescafocapitato e o radiossemilunar longo, e é por ele que o capitato se desloca no estágio II."
+   "B": "**Correta.**\n- O estágio III é a lesão lunopiramidal.",
+   "C": "**Correta.**\n- No IV o semilunar luxa para volar.",
+   "D": "**Correta.**\n- O capitato escapa pelo espaço de Poirier no estágio II."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0176": {
-  "conceito": "As vias laterais ao cotovelo (Kocher, entre o ânconeo e o extensor ulnar do carpo, e Kaplan, entre o extensor radial curto do carpo e o extensor comum dos dedos) descem sobre o colo do rádio, exatamente onde o nervo interósseo posterior o cruza dentro do supinador.",
-  "correta": "A manobra que protege o nervo interósseo posterior é pronar o antebraço. Com a pronação, o rádio gira e leva consigo o supinador e o nervo, que se deslocam medial e distalmente, afastando-se do campo cirúrgico. Ganha-se com isso alguns centímetros de margem sobre o colo do rádio. A regra prática que acompanha: nas vias laterais, disseque com o antebraço pronado; se precisar supinar, saiba que o nervo se aproximou.",
+  "conceito": "### Vias laterais do cotovelo e o nervo interósseo posterior\n| Via | Intervalo |\n|---|---|\n| Kocher | ancôneo × extensor ulnar do carpo |\n| Kaplan | ERCC × extensor comum dos dedos |\n| Thompson | ERCC × extensor comum (mais distal, diáfise) |\n\n- O ==NIP== cruza o colo do rádio dentro do supinador.\n- ==Pronação== afasta o nervo do campo **lateral** (Kocher, Kaplan): ganha-se margem sobre o colo e a cabeça.\n- Na via de **Thompson** (dorsal à diáfise), usa-se a **supinação** para afastar o nervo ao desinserir o supinador.\n\n### Zona de segurança\n- Não dissecar mais de cerca de 3 a 4 cm distal à cabeça do rádio sem identificar o nervo.\n- Evitar afastadores na face anterior do colo.\n\n### Nervos fora do campo lateral\n| Nervo | Posição |\n|---|---|\n| mediano, interósseo anterior | volar, medial |\n| ulnar | posteromedial (túnel cubital) |\n\n> **Na prova:** pronação nas vias de Kocher e Kaplan protege o ==interósseo posterior==.",
+  "correta": "**Interósseo posterior.**\n- A pronação desloca o NIP medial e distalmente.\n- Ganha margem de segurança sobre o colo do rádio.",
   "incorretas": {
-   "A": "O interósseo anterior é ramo do mediano e corre na face volar profunda do antebraço. Ele não está no campo de uma via lateral do cotovelo.",
-   "C": "O mediano também é volar, e passa medial ao cotovelo, na fossa cubital, do lado oposto ao acesso.",
-   "D": "O ulnar corre pela face medial e posterior do cotovelo, no túnel cubital. Ele é a estrutura em risco nas vias mediais, não nas laterais."
+   "A": "**Volar profundo.**\n- O interósseo anterior não está no campo lateral.",
+   "C": "**Medial e volar.**\n- O mediano passa pela fossa cubital.",
+   "D": "**Posteromedial.**\n- O ulnar corre no túnel cubital."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0177": {
-  "conceito": "As deformidades do dedo reumatoide se agrupam por qual articulação está errada e em que direção. Pescoço de cisne é interfalângica proximal em hiperextensão com a distal em flexão; botoeira é o inverso, proximal em flexão e distal em hiperextensão.",
-  "correta": "A técnica de Beckenbaugh trata a hiperextensão da interfalângica proximal, ou seja, o pescoço de cisne. O princípio de todas as técnicas para o pescoço de cisne flexível é o mesmo: criar um freio volar que impeça a articulação de passar da extensão. Isso pode ser feito por dermodese, por tenodese com uma banda do flexor superficial dos dedos, pela reconstrução do ligamento retinacular oblíquo de Littler ou pela mobilização e reposicionamento das bandas laterais. O que muda é a estrutura usada como freio, não a lógica.",
+  "conceito": "### Pescoço de cisne: técnicas de freio volar da IFP\n| Técnica | Freio usado |\n|---|---|\n| dermodese | elipse de pele volar |\n| ==tenodese com FSD (Beckenbaugh e outras)== | ==uma banda do flexor superficial ancorada na falange proximal== |\n| Littler (SORL) | reconstrução do ligamento retinacular oblíquo com banda lateral |\n| Zancolli | tenodese do FSD com a polia A2 |\n| mobilização das bandas laterais (Nalebuff) | reposicionamento volar |\n\n- Objetivo: impedir a ==hiperextensão da IFP==, mantendo o pescoço de cisne corrigido.\n\n### Deformidades\n| Deformidade | IFP | IFD |\n|---|---|---|\n| ==pescoço de cisne== | ==hiperextensão== | flexão |\n| botoeira | flexão | hiperextensão |\n\n### Polegar\n- Botoeira (Nalebuff I) começa na MF; pescoço de cisne (III) na CMC.\n\n> **Na prova:** Beckenbaugh = correção da ==hiperextensão da IFP (pescoço de cisne)==.",
+  "correta": "**Hiperextensão da IFP.**\n- A técnica cria um freio volar com o flexor superficial.\n- Trata o pescoço de cisne flexível.",
   "incorretas": {
-   "A": "A botoeira do polegar é o tipo I de Nalebuff e começa na metacarpofalângica, com o mecanismo do extensor curto se afrouxando. Deformidade e articulação diferentes.",
-   "B": "O pescoço de cisne do polegar é o tipo III de Nalebuff e nasce na trapeziometacarpiana, com subluxação dorsal da base e adução do metacarpo. A articulação de origem é outra.",
-   "C": "A botoeira da interfalângica proximal é a deformidade oposta (proximal fletida, não hiperestendida) e o tratamento parte de reconstruir a banda central, não de criar um freio volar."
+   "A": "**Polegar, MF.**\n- A botoeira do polegar nasce na MF.",
+   "B": "**Polegar, CMC.**\n- O pescoço de cisne do polegar começa na trapeziometacarpiana.",
+   "C": "**Deformidade oposta.**\n- A botoeira exige reconstruir a banda central."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 73"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0178": {
   "conceito": "A infiltração de corticoide no túnel do carpo pode produzir alívio rápido em casos leves ou moderados sem atrofia tenar, embora a recorrência em médio prazo seja comum. Sexo, idade, duração dos sintomas e gravidade eletrofisiológica influenciam a resposta.",
