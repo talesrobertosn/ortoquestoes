@@ -614,6 +614,24 @@ function Resultado({ questao, resposta }: { questao: Questao; resposta: Resposta
 }
 
 
+const normalizarEco = (t: string) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
+
+/**
+ * Muitos comentários abrem a explicação de cada alternativa repetindo o texto
+ * dela em negrito ("**Torácica.**"). O cartão já mostra a alternativa no
+ * cabeçalho, então essa primeira linha só ocupa espaço: sai quando é eco do
+ * texto da alternativa e há explicação depois dela.
+ */
+function semEco(texto: string, alternativa?: string): string {
+  if (!alternativa) return texto
+  const [primeiro, ...resto] = texto.split(/\n\s*\n|\n(?=- )/)
+  const eco = /^\*\*([^*]+)\*\*\s*$/.exec(primeiro.trim())
+  if (!eco || !resto.join('').trim()) return texto
+  const a = normalizarEco(eco[1]), b = normalizarEco(alternativa)
+  if (!a || !(b.startsWith(a) || a.startsWith(b) || b.includes(a))) return texto
+  return texto.slice(texto.indexOf(primeiro) + primeiro.length).replace(/^\s+/, '')
+}
+
 /**
  * Comentário escrito por inteligência artificial. A origem do texto fica
  * registrada no menu de referências (não na visão direta), mas o conteúdo em
@@ -671,6 +689,7 @@ function ComentarioDaIA({
             </section>
           )}
 
+          <p className="cm-secao">Alternativa por alternativa</p>
           <div className="cm-alternativas">
             {questao.gabarito && (
               <article className="cm-alt cm-alt--certa">
@@ -680,7 +699,7 @@ function ComentarioDaIA({
                   <span className="cm-selo cm-selo--certa"><Icone nome="certo" tamanho={13} /> Correta</span>
                   {escolhida === questao.gabarito && <span className="cm-selo">Sua resposta</span>}
                 </header>
-                <TextoEditorial texto={comentario.correta} />
+                <TextoEditorial texto={semEco(comentario.correta, textoAlternativa(questao.gabarito))} />
               </article>
             )}
 
@@ -693,7 +712,7 @@ function ComentarioDaIA({
                     ? <span className="cm-selo cm-selo--erro"><Icone nome="errado" tamanho={13} /> Sua resposta</span>
                     : <span className="cm-selo cm-selo--neutro">Incorreta</span>}
                 </header>
-                <TextoEditorial texto={comentario.incorretas[letra]!} />
+                <TextoEditorial texto={semEco(comentario.incorretas[letra]!, textoAlternativa(letra))} />
               </article>
             ))}
           </div>
