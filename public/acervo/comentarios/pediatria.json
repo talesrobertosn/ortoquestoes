@@ -6159,99 +6159,100 @@
   "conferido": false
  },
  "pediatria-0503": {
-  "conceito": "Entre as condições esqueléticas hereditárias, o padrão de herança varia bastante conforme a doença. A **doença de Morquio (mucopolissacaridose tipo IV)** tem herança **autossômica recessiva**, assim como praticamente todas as mucopolissacaridoses, com a única exceção clássica sendo a síndrome de Hunter (MPS tipo II), que é ligada ao X. Já as demais condições listadas têm herança predominantemente **autossômica dominante**: a acondroplasia, a osteogênese imperfeita (nas suas formas mais comuns, tipo I por exemplo), a neurofibromatose tipo 1 e a displasia espondiloepifisária congênita.",
-  "correta": "B. Entre as condições listadas, a doença de Morquio tem origem por distúrbio autossômico recessivo.",
+  "conceito": "### Herança das principais afecções ortopédicas\n| Autossômica dominante | Autossômica recessiva | Ligada ao X |\n|---|---|---|\n| acondroplasia (FGFR3) | ==Morquio e quase todas as MPS== | Hunter (MPS II) |\n| OI tipos I a V | OI tipos VI em diante | Duchenne, Becker |\n| NF1, NF2 | displasia diastrófica | raquitismo hipofosfatêmico (dominante ligado ao X) |\n| displasia espondiloepifisária congênita | AME, Friedreich | displasia espondiloepifisária tarda |\n| Marfan, Ehlers-Danlos clássico | Ellis-van Creveld, hipoplasia cartilagem-cabelo | |\n| DEM (maioria), osteocondromas múltiplos | homocistinúria | |\n\n### Regra prática\n- Doenças de ==enzima== (erros inatos do metabolismo, MPS) tendem a ser ==recessivas==.\n- Doenças de ==proteína estrutural== (colágeno, FGFR3, COMP) tendem a ser ==dominantes==.\n\n> **Na prova:** recessiva da lista = ==Morquio==",
+  "correta": "**Doença de Morquio.**\n- MPS IV, deficiência enzimática.\n- Herança autossômica recessiva.",
   "incorretas": {
-   "A": "A acondroplasia tem herança autossômica dominante, não recessiva.",
-   "C": "A osteogênese imperfeita, em suas formas mais comuns, tem herança autossômica dominante, não recessiva.",
-   "D": "A neurofibromatose tipo 1 tem herança autossômica dominante, não recessiva.",
-   "E": "A displasia espondiloepifisária congênita tem herança autossômica dominante, não recessiva."
+   "A": "**Acondroplasia.**\n- AD, FGFR3; 80% mutação nova.",
+   "C": "**OI.**\n- Formas clássicas AD (COL1A1/2).",
+   "D": "**NF1.**\n- AD, metade mutação nova.",
+   "E": "**Displasia espondiloepifisária.**\n- Congênita AD (COL2A1); tarda ligada ao X."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0504": {
-  "conceito": "A vinheta descreve um quadro bastante característico: paciente de ascendência **finlandesa**, baixa estatura, **cabelos finos e claros** (hipoplasia capilar), frouxidão ligamentar, geno varo discreto e, principalmente, uma história de **infecção grave por varicela-zóster**, achado que reflete a imunodeficiência combinada (sobretudo de linfócitos T) característica dessa condição. Esse conjunto de achados é o quadro clássico da **condrodisplasia metafisária tipo McKusick**, também conhecida como hipoplasia de cartilagem-cabelo (\"cartilage-hair hypoplasia\"), uma condição autossômica recessiva com prevalência particularmente alta na população finlandesa (efeito fundador), e que se destaca justamente pela associação entre displasia esquelética e imunodeficiência com risco de infecções virais graves.",
-  "correta": "D. O quadro descrito, com ascendência finlandesa, cabelos finos, frouxidão ligamentar e varicela grave, corresponde à condrodisplasia metafisária do tipo McKusick.",
+  "conceito": "### Hipoplasia cartilagem-cabelo (McKusick)\n- Condrodisplasia metafisária ==autossômica recessiva== (RMRP), frequente em ==Amish e finlandeses==.\n- ==Cabelos finos, claros e esparsos==, baixa estatura, geno varo leve, ==frouxidão ligamentar==, limitação da extensão do cotovelo.\n- ==Imunodeficiência celular==: ==varicela grave==, infecções; risco de linfoma, anemia, Hirschsprung.\n\n### Condrodisplasias metafisárias\n| Tipo | Herança | Marca |\n|---|---|---|\n| Schmid | AD (COL10A1) | coxa vara, varo, sem alterações extraesqueléticas |\n| ==McKusick== | ==AR== | ==cabelo fino + imunodeficiência== |\n| Jansen | AD (PTH1R) | grave, hipercalcemia |\n| Shwachman-Diamond | AR | insuficiência pancreática, neutropenia |\n\n### Diferenciais da lista\n- Condrodisplasia puntacta: calcificações pontilhadas epifisárias no RN.\n- Léri-Weill: Madelung + baixa estatura (SHOX).\n- Kozlowski: espondilometafisária, platispondilia, escoliose.\n\n> **Na prova:** finlandesa, cabelo fino, varicela grave = ==McKusick==",
+  "correta": "**McKusick.**\n- Hipoplasia cartilagem-cabelo.\n- Cabelo fino e imunodeficiência (varicela).",
   "incorretas": {
-   "A": "A condrodisplasia punctata não tem a associação clássica com ascendência finlandesa e imunodeficiência descrita no caso.",
-   "B": "A discondrosteose (síndrome de Léri-Weill) se caracteriza pela deformidade de Madelung do punho, não pelo quadro de imunodeficiência e ascendência finlandesa descrito.",
-   "C": "A condrodisplasia metafisária tipo Schmid é uma forma mais branda, sem a associação clássica com imunodeficiência e infecções virais graves.",
-   "E": "A displasia espondilometafisária tipo Kozlowski não tem a associação clássica com ascendência finlandesa e imunodeficiência descrita no caso."
+   "A": "**Puntacta.**\n- Calcificações pontilhadas no RN.",
+   "B": "**Léri-Weill.**\n- Madelung e mesomelia.",
+   "C": "**Schmid.**\n- Sem cabelo fino nem imunodeficiência.",
+   "E": "**Kozlowski.**\n- Platispondilia e escoliose."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0505": {
-  "conceito": "A síndrome de Proteus é uma condição rara de supercrescimento tecidual segmentar e assimétrico, causada por mutação somática em mosaico. Entre suas manifestações mais características está a **hemi-hipertrofia**, o crescimento assimétrico e desproporcional de partes do corpo (membros, dedos), frequentemente progressivo e distorcido, sendo um dos achados centrais para o reconhecimento clínico da síndrome. Outros achados típicos incluem o nevo de tecido conjuntivo cerebriforme (com **aumento**, não diminuição, da profundidade dos sulcos da pele, sobretudo palmar e plantar), macrodactilia (não microdactilia) e alterações vasculares associadas.",
-  "correta": "B. Entre as anormalidades da síndrome de Proteus, é correto citar a hemi-hipertrofia.",
+  "conceito": "### Discrepância de membros inferiores\n| Mecanismo | Encurtamento | Alongamento (hipercrescimento) |\n|---|---|---|\n| congênito | DFFP, hemimelias, coxa vara | hemi-hipertrofia |\n| fise | infecção, trauma fisário, tumor | |\n| vascular | isquemia | ==aumento de fluxo==: fratura diafisária, AIJ, MAV, hemangioma |\n| neurológico | pólio, PC | |\n| síndromes | Ollier, NF1 | ==Proteus, Klippel-Trénaunay-Weber==, Beckwith-Wiedemann |\n\n### Pontos\n- ==Fratura de fêmur na criança causa hipercrescimento== (1 a 2 cm), não encurtamento.\n- Escanometria/panorâmica e idade óssea são ==essenciais== (Moseley, Paley multiplicador).\n\n### Conduta por discrepância prevista\n| Final | Conduta |\n|---|---|\n| < 2 cm | palmilha ou nada |\n| 2 a 5 cm | epifisiodese contralateral |\n| > 5 cm | alongamento |\n| > 15 a 20 cm | amputação/protetização |\n\n### Síndrome de Proteus\n- Mosaicismo somático ==AKT1==; hipercrescimento ==assimétrico, desproporcional e progressivo==.\n- ==Hemi-hipertrofia==, ==macrodactilia==, exostoses, escoliose.\n- ==Nevo do tecido conjuntivo cerebriforme== na planta e palma (sulcos ==espessos e profundos==).\n- Malformações vasculares, lipomas, risco de TVP/TEP.\n\n> **Na prova:** Proteus = ==hemi-hipertrofia==, macrodactilia, nevo cerebriforme",
+  "correta": "**Hemi-hipertrofia.**\n- Crescimento assimétrico progressivo.\n- Mosaicismo AKT1.",
   "incorretas": {
-   "A": "A síndrome de Proteus se associa a macrodactilia (crescimento excessivo), não a microdactilia.",
-   "C": "Os nódulos de Lisch são achados característicos da neurofibromatose tipo 1, não da síndrome de Proteus.",
-   "D": "O achado característico é o aumento, não a diminuição, da espessura/profundidade dos sulcos da pele palmar (padrão cerebriforme).",
-   "E": "O achado característico é o aumento, não a diminuição, da profundidade dos sulcos da pele palmar."
+   "A": "**Macrodactilia.**\n- Dedos grandes, não pequenos.",
+   "C": "**Lisch.**\n- Hamartomas de íris da NF1.",
+   "D": "**Sulcos espessos.**\n- Nevo cerebriforme espessa a pele.",
+   "E": "**Sulcos profundos.**\n- Aumentam, não diminuem."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0506": {
-  "conceito": "O recém-nascido normal apresenta um padrão neuromotor característico, diferente do observado em crianças mais velhas. Ao nascer, os membros são mantidos predominantemente em postura de **flexão** (não de extensão), refletindo o tônus flexor fisiológico do período neonatal, e um achado importante de normalidade neurológica é que, quando estimulados, os **membros do recém-nascido se movem de forma alternada (recíproca)**, um padrão de movimento espontâneo e simétrico entre os lados que reflete a integridade do sistema nervoso nessa fase, sendo sua ausência (movimentos não alternados ou muito assimétricos) um sinal de alerta para investigação neurológica.\n\nAlém disso, o desenvolvimento motor normal da criança progride no sentido **céfalo-caudal** (da cabeça para os membros (controle cervical antes do controle de tronco, que vem antes do controle dos membros inferiores)), e não o contrário.",
-  "correta": "E. Os membros do recém-nascido normalmente se movem de forma alternada quando estimulados.",
+  "conceito": "### Tônus do recém-nascido a termo\n- ==Hipertonia flexora fisiológica==: membros em ==flexão== (quadris, joelhos, cotovelos).\n- ==Contraturas em flexão== de quadril e joelho (até 30°) normais, desaparecem em meses.\n- Movimentos espontâneos ==alternados== dos membros (pedalar) quando estimulado.\n- Reflexos primitivos presentes: Moro, preensão, tônico cervical assimétrico, marcha automática.\n\n### Direção do desenvolvimento\n- ==Cefalocaudal== (cabeça antes do tronco e membros) e ==proximodistal==.\n- Controle cervical (3 meses), sentar (6), engatinhar (9), andar (12).\n\n> **Na prova:** RN normal = membros em flexão e ==movimentos alternados== ao estímulo",
+  "correta": "**Movimentos alternados.**\n- Padrão recíproco espontâneo.\n- Assimetria sugere lesão (plexo, fratura).",
   "incorretas": {
-   "A": "Contraturas em flexão, não em extensão, são típicas da postura do recém-nascido normal.",
-   "B": "O movimento passivo do pescoço não é descrito como provocador de um forte tônus extensor generalizado como achado normal esperado.",
-   "C": "Os membros do recém-nascido são mantidos predominantemente em postura de flexão, não de extensão.",
-   "D": "O desenvolvimento normal progride no sentido céfalo-caudal (da cabeça para os membros), não o contrário."
+   "A": "**Flexão.**\n- Contraturas típicas são em flexão.",
+   "B": "**Sem forte tônus extensor.**\n- Hipertonia extensora sugere lesão.",
+   "C": "**Flexão.**\n- Postura normal é fletida.",
+   "D": "**Cefalocaudal.**\n- Da cabeça para os membros."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0507": {
-  "conceito": "A doença de Charcot-Marie-Tooth (CMT), a neuropatia hereditária mais comum, é classicamente incluída em um espectro mais amplo de condições conhecido como **neuropatias motoras hereditárias (HMNs)**, uma classificação que reúne diferentes formas de neuropatia periférica hereditária, com graus variáveis de comprometimento motor e sensitivo, dentro da qual a CMT se insere como a forma mais prevalente e mais estudada. Clinicamente, a doença cursa com fraqueza distal progressiva dos membros inferiores, pé cavo (tipicamente bilateral, embora possa ser assimétrico) e, com a progressão, também pode acometer os membros superiores, não se restringindo apenas aos membros inferiores, como poderia sugerir uma leitura mais simplista do quadro clínico inicial.",
-  "correta": "C. A doença de Charcot-Marie-Tooth faz parte de um grupo denominado neuropatias motoras hereditárias (HMNs).",
+  "conceito": "### Pé cavo-varo na criança\n- Investigar ==causa neurológica== (Charcot-Marie-Tooth, medula presa, Friedreich): RM de coluna, ENMG.\n- ==Teste de Coleman== (bloco): retropé flexível se corrige quando o 1º raio fica solto.\n\n### Osteotomias\n| Técnica | Local | Corrige |\n|---|---|---|\n| ==Dwyer== | ==calcâneo== (cunha lateral de fechamento ou deslizamento) | ==varo do retropé== rígido |\n| Cole | cunha dorsal no mediopé (cuneiformes/navicular) | cavo anterior |\n| Japas | osteotomia em V do mediopé | cavo |\n| osteotomia do 1º MT | dorsiflexora | 1º raio plantarfletido |\n| Steindler | ==liberação da fáscia plantar== | cavo (partes moles) |\n\n### Charcot-Marie-Tooth\n- Neuropatia hereditária mais comum; CMT1A (duplicação PMP22, desmielinizante) é a forma típica.\n- Grupo das neuropatias hereditárias ==motoras e sensitivas== (HMSN).\n- Fraqueza ==precoce do tibial anterior e do fibular curto==: tibial posterior e fibular longo predominam, gerando ==cavo-varo bilateral==.\n- Mãos também: atrofia intrínseca (garra).\n- Marcha ==escarvante== (steppage) por pé caído.\n\n> **Na prova:** CMT = neuropatia hereditária (veja o alerta)",
+  "correta": "**Neuropatia hereditária.**\n- Grupo HMSN (motora e sensitiva).\n- Gabarito oficial (veja o alerta).",
   "incorretas": {
-   "A": "A apresentação clássica é o pé cavo bilateral (embora possa ser assimétrico), não unilateral.",
-   "B": "A CMT também pode acometer os membros superiores ao longo da progressão da doença, não se restringindo exclusivamente aos membros inferiores.",
-   "D": "O achado precoce clássico envolve a fraqueza do tibial anterior (dorsiflexor) e do fibular curto, não do tibial posterior.",
-   "E": "A marcha escalonada é, de fato, um achado característico da CMT (por fraqueza de dorsiflexão e comprometimento proprioceptivo), mas não é a classificação buscada nesta questão, referente ao grupo de neuropatias ao qual a doença pertence."
+   "A": "**Bilateral.**\n- Cavo-varo unilateral sugere lesão medular ou tumor.",
+   "B": "**MMSS também.**\n- Intrínsecos da mão atrofiam.",
+   "D": "**Tibial anterior e fibular curto.**\n- Tibial posterior está preservado e forte.",
+   "E": "**Marcha escarvante.**\n- Não escalonada; equino não é fixo no início."
   },
-  "geradoEm": "2026-09-21",
+  "alerta": "A nomenclatura correta de Charcot-Marie-Tooth é neuropatia hereditária motora e sensitiva (HMSN). As neuropatias motoras hereditárias puras (HMN, distais) são outro grupo. A banca aceitou C mesmo assim.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0508": {
-  "conceito": "A acheiropodia é uma deficiência congênita rara e grave dos membros, de herança autossômica recessiva, descrita com relativa frequência em determinadas regiões do Brasil devido a efeito fundador genético. Como o próprio nome sugere (\"a\" = ausência, \"cheiro\" = mão, \"pod\" = pé), a condição se caracteriza pela **ausência completa e bilateral de ambas as mãos e de ambos os pés** (deficiência terminal transversa nos quatro membros, ao nível do antebraço distal e da perna distal), sendo uma das formas mais graves e simétricas de deficiência congênita de membros descritas.",
-  "correta": "D. Na acheiropodia, a deficiência corresponde às ausências de ambas as mãos e de ambos os pés.",
+  "conceito": "### Acheiropodia (aquiropodia)\n- Deficiência transversa ==bilateral de mãos e pés== (ausência distal dos antebraços e pernas).\n- ==Autossômica recessiva==, gene ==LMBR1== (regulador do SHH, ZRS).\n- Descrita em famílias do ==Brasil== (Paraná e Minas Gerais), com consanguinidade.\n- Inteligência e demais órgãos normais.\n\n### Outras deficiências\n| Termo | Definição |\n|---|---|\n| amelia | ausência do membro inteiro |\n| focomelia | mão/pé ligados ao tronco |\n| ==acheiropodia== | ==ausência de mãos e pés== |\n| ectrodactilia | mão/pé fendido |\n\n> **Na prova:** acheiropodia = ausência de ==ambas as mãos e ambos os pés==",
+  "correta": "**Ausência de mãos e pés bilateral.**\n- Transversa, simétrica.\n- Descrita no Brasil (LMBR1).",
   "incorretas": {
-   "A": "A acheiropodia envolve a ausência de ambos os pés (e mãos), não de apenas um pé isoladamente.",
-   "B": "A acheiropodia envolve a ausência completa das mãos, não apenas de um dedo isolado.",
-   "C": "A acheiropodia é bilateral e simétrica, envolvendo ambas as mãos e ambos os pés, não apenas um lado do corpo.",
-   "E": "A acheiropodia envolve a ausência completa das mãos e dos pés, não apenas de alguns dedos isolados."
+   "A": "**Um pé.**\n- É bilateral e inclui as mãos.",
+   "B": "**Um dedo.**\n- Muito limitado.",
+   "C": "**Ipsilateral.**\n- É bilateral, os quatro.",
+   "E": "**Vários dedos.**\n- Ausência completa das mãos e pés."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0509": {
-  "conceito": "A classificação de **Stulberg**, modificada por Herring, avalia o resultado final da doença de Legg-Calvé-Perthes na maturidade esquelética, com base na esfericidade e na congruência da cabeça femoral:\n- **Classe I**: cabeça femoral esférica (normal).\n- **Classe II**: cabeça esférica, mas com alguma alteração secundária (coxa magna, colo curto), ainda se ajustando a um molde circular.\n- **Classe III**: cabeça **não esférica, elíptica (ovoide)**, desviando-se de um molde circular em **mais de 2 mm**, ainda não achatada, mas já não perfeitamente redonda.\n- **Classe IV**: cabeça achatada (não esférica), mas congruente com um acetábulo também achatado.\n- **Classe V**: cabeça achatada e incongruente com um acetábulo de formato normal (pior prognóstico).\n\nA descrição de uma cabeça femoral **elíptica**, desviada do círculo em mais de 2 mm, corresponde exatamente à definição da **classe III**.",
-  "correta": "C. A cabeça femoral elíptica, desviada do círculo em mais de 2 mm, corresponde à classe III da classificação de Stulberg modificada por Herring.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Herring em detalhe\n| Grupo | Pilar lateral | Prognóstico |\n|---|---|---|\n| A | ==sem perda== de altura | bom |\n| B | ==perda < 50%== | bom < 8 anos |\n| B/C | pilar estreito ou pouco ossificado, ~50% | intermediário |\n| C | ==perda > 50%== | ruim |\n\n### Desfecho a longo prazo\n- Dois fatores dominam: ==idade de início== (> 8 anos pior) e ==deformidade final da cabeça== (Stulberg).\n\n### Stulberg (maturidade)\n| Classe | Cabeça | Prognóstico |\n|---|---|---|\n| I-II | esférica | sem artrose |\n| III-IV | ovoide/achatada, congruente assférica | artrose no adulto médio |\n| V | achatada incongruente | artrose precoce |\n\n### Stulberg detalhado\n| Classe | Definição |\n|---|---|\n| I | cabeça normal |\n| II | ==congruência esférica==: cabeça esférica (dentro de 2 mm em círculos concêntricos), coxa magna, colo curto |\n| III | ==congruência não esférica==: cabeça ovoide/em cogumelo, sem achatamento |\n| ==IV== | ==congruência não esférica==: cabeça ==achatada > 1 cm== na área de carga, ==acetábulo também achatado== |\n| V | ==incongruência não esférica==: cabeça achatada, ==acetábulo normal== |\n\n### Modificação de Herring\n- Círculos concêntricos: cabeça esférica se ficar a ==até 2 mm== do círculo.\n- ==III==: cabeça ==elíptica (ovoide)==, desviada ==mais de 2 mm==, sem achatamento.\n- IV: achatamento ≥ 1 cm na área de carga.\n\n> **Na prova:** cabeça elíptica, > 2 mm fora do círculo = ==Stulberg III==",
+  "correta": "**Stulberg III.**\n- Elíptica, > 2 mm fora do círculo.\n- Sem achatamento de 1 cm.",
   "incorretas": {
-   "A": "A classe I corresponde a uma cabeça femoral esférica, normal, sem desvio do molde circular.",
-   "B": "A classe II corresponde a uma cabeça ainda esférica, apenas com alterações secundárias associadas, não a uma cabeça elíptica.",
-   "D": "A classe IV corresponde a uma cabeça já achatada (não apenas elíptica), congruente com um acetábulo também achatado.",
-   "E": "A classe V corresponde a uma cabeça achatada e incongruente com o acetábulo, um grau mais avançado do que a cabeça elíptica descrita."
+   "A": "**I.**\n- Normal.",
+   "B": "**II.**\n- Esférica dentro de 2 mm.",
+   "D": "**IV.**\n- Achatamento ≥ 1 cm.",
+   "E": "**V.**\n- Achatada e incongruente."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0511": {
-  "conceito": "A avaliação da epifisiólise proximal do fêmur combina dois eixos complementares: a **classificação de Loder** (estável versus instável, baseada na capacidade de apoio do membro) e a **classificação de Southwick** (leve, moderado ou grave, baseada na diferença do ângulo cabeça-diáfise em relação ao lado contralateral). No caso descrito, o paciente ainda consegue deambular apoiando o membro, mesmo que com o auxílio de muletas, o que caracteriza uma epifisiólise **estável**, segundo Loder. Quanto à gravidade do desvio, uma diferença de **40 graus** entre os lados se enquadra na faixa **moderada** de Southwick (geralmente entre 30 e 50 graus), intermediária entre os desvios leves (menores que 30°) e os graves (maiores que 50°).",
-  "correta": "D. O caso descreve uma epifisiólise estável (segundo Loder) com deslizamento moderado (segundo Southwick).",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n### Aplicando ao caso\n- Apoia o membro (com muletas) = ==estável== (Loder).\n- Diferença de 40° no ângulo = ==moderado== (Southwick: < 30 leve, 30 a 50 moderado, > 50 grave).\n\n> **Na prova:** apoia com muletas + 40° = ==estável e moderado==",
+  "correta": "**Estável, moderado.**\n- Muletas não tornam instável.\n- 40° está entre 30 e 50°.",
   "incorretas": {
-   "A": "O desvio de 40 graus corresponde a um deslizamento moderado, não leve, segundo a classificação de Southwick.",
-   "B": "O paciente ainda consegue deambular com apoio (mesmo com muletas), caracterizando uma epifisiólise estável, não instável, segundo Loder.",
-   "C": "O desvio de 40 graus corresponde a um deslizamento moderado, não grave, e o paciente ainda deambula com apoio, caracterizando estabilidade, não instabilidade.",
-   "E": "O paciente ainda consegue deambular com apoio, caracterizando uma epifisiólise estável, não instável, segundo a classificação de Loder."
+   "A": "**Leve.**\n- < 30°.",
+   "B": "**Instável.**\n- Ele apoia.",
+   "C": "**Instável e grave.**\n- Ambos errados.",
+   "E": "**Instável.**\n- Consegue andar."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0512": {
