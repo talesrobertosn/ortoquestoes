@@ -3942,110 +3942,111 @@
   "conferido": false
  },
  "mao-0337": {
-  "conceito": "A descompressão isolada, ou neurólise in situ, abre o teto do túnel cubital sem mover o nervo. É a cirurgia menos agressiva e a que menos desvasculariza, mas, ao remover a contenção posterior, pode deixar o nervo livre para saltar por cima do epicôndilo medial na flexão.",
-  "correta": "A revisão é mais necessária em quem tem menos de 50 anos e foi operado com sintomas leves. Duas razões se somam. No mais jovem os tecidos são elásticos e pouco fibrosados, e o nervo ganha mobilidade suficiente para subluxar quando o teto é aberto, no mais velho, a fibrose da compressão crônica acaba servindo de contenção. E quem chegou à cirurgia com pouco sintoma tinha pouco a ganhar: qualquer estalido ou desconforto novo é percebido como piora. Daí a regra prática: testar a estabilidade do nervo em flexão máxima ainda na mesa, e transpor de saída se ele subluxar.",
+  "conceito": "### Túnel cubital: técnicas cirúrgicas\n| Técnica | Vantagens | Desvantagens |\n|---|---|---|\n| ==descompressão in situ== | simples, preserva a irrigação, menos complicações | ==subluxação do nervo== pós-operatória |\n| transposição anterior (subcutânea, intramuscular, submuscular) | trata instabilidade | mais dissecção, desvascularização, nova compressão se mal feita |\n| epicondilectomia medial | trata instabilidade | dor no epicôndilo, instabilidade do colateral se excessiva |\n\n### Resultados\n- Metanálises: in situ e transposição com resultados semelhantes; in situ com menos complicações.\n\n### Revisão por instabilidade após in situ\n- Mais frequente em ==menores de 50 anos== e ==sintomas leves==:\n  - tecidos elásticos permitem que o nervo **subluxe**;\n  - pouco ganho clínico, insatisfação maior com estalidos novos.\n- Na cirurgia: testar a estabilidade com **flexão do cotovelo**; se o nervo subluxa, transpor.\n\n> **Na prova:** revisão por instabilidade = ==menores de 50 anos com sintomas leves==.",
+  "correta": "**Menos de 50 anos, sintomas leves.**\n- Tecidos elásticos permitem que o nervo subluxe após abrir o teto.\n- Pouco a ganhar: qualquer estalido novo é percebido como piora.\n- Testar a estabilidade em flexão na mesa; transpor se subluxar.",
   "incorretas": {
-   "A": "Idade acima de 50 anos protege, pela menor mobilidade do nervo nos tecidos já fibrosados.",
-   "B": "Junta dois fatores de menor risco, idade maior e sintomas graves, em que a margem de melhora é grande e a satisfação é alta.",
-   "D": "A idade está certa, o perfil de sintomas não: sintoma grave prévio significa muito a ganhar, e o resultado, mesmo parcial, costuma satisfazer."
+   "A": "**Idade protege.**\n- Fibrose crônica contém o nervo.",
+   "B": "**Menor risco.**\n- Muito a ganhar e tecido fibrosado.",
+   "D": "**Sintoma grave.**\n- Grande margem de melhora, satisfação alta."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 77"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0338": {
-  "alerta": "Os cinco fatores de Kaplan, Glickel e Eaton prevêem FALHA do tratamento não cirúrgico, e três das quatro alternativas (inclusive a apontada pelo gabarito) descrevem justamente fatores de falha. A única que se associa a sucesso é a idade menor que 50 anos, alternativa A. Guarde os cinco fatores e não a letra.",
-  "conceito": "Kaplan, Glickel e Eaton identificaram cinco fatores que prevêem que o tratamento não cirúrgico da síndrome do túnel do carpo vai fracassar: idade acima de 50 anos, sintomas há mais de 10 meses, parestesia constante, tenossinovite estenosante associada e teste de Phalen positivo em menos de 30 segundos.",
-  "correta": "O gabarito aponta o Phalen positivo em 20 segundos. Isso é menos de 30 segundos e, portanto, é um dos cinco fatores de falha, não de sucesso. O que a série de Kaplan mostra é uma escala: sem nenhum fator, cerca de dois terços melhoram só com tratamento conservador; com três fatores, menos de um em cada dez; com quatro ou cinco, praticamente ninguém. É por isso que a lista é útil na conversa de consultório: ela transforma \"vamos tentar por três meses\" numa estimativa concreta de quanto essa tentativa vale a pena.",
+  "conceito": "### Fatores de Kaplan, Glickel e Eaton\n- Preveem ==falha== do tratamento não cirúrgico do túnel do carpo:\n\n| Fator | Limite |\n|---|---|\n| idade | ==> 50 anos== |\n| duração | ==> 10 meses== |\n| parestesia | ==constante== |\n| tenossinovite estenosante associada | presente |\n| Phalen | ==positivo em < 30 s== |\n\n### Escala de sucesso conservador\n| Nº de fatores | Melhora sem cirurgia |\n|---|---|\n| 0 | cerca de 2/3 |\n| 1 | cerca de 40% |\n| 2 | cerca de 17% |\n| 3 | < 10% |\n| 4 ou 5 | praticamente nenhum |\n\n### Tratamento conservador\n- Órtese noturna em neutro, infiltração de corticoide, ajuste de atividade.\n\n> **Na prova:** os cinco fatores de Kaplan preveem ==falha== (veja o alerta).",
+  "correta": "**Resposta oficial, com reserva.**\n- Phalen positivo em 20 s é menos de 30 s: fator de falha, não de sucesso.\n- A alternativa de sucesso é idade menor que 50 anos (veja o alerta).",
   "incorretas": {
-   "A": "Esta é a alternativa que de fato se associa a sucesso: idade abaixo de 50 anos é a ausência do primeiro fator da lista.",
-   "B": "Doze meses de sintomas ultrapassa os 10 meses do critério, e é fator de falha.",
-   "C": "Tenossinovite estenosante associada é o quarto fator da lista, e também prevê falha."
+   "A": "**A de fato associada a sucesso.**\n- Ausência do primeiro fator da lista.",
+   "B": "**Fator de falha.**\n- Mais de 10 meses de sintomas.",
+   "C": "**Fator de falha.**\n- Quarto fator da lista."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
+  "alerta": "Os cinco fatores de Kaplan, Glickel e Eaton prevêem FALHA do tratamento não cirúrgico, e três das quatro alternativas (inclusive a apontada pelo gabarito) descrevem justamente fatores de falha. A única que se associa a sucesso é a idade menor que 50 anos, alternativa A. Guarde os cinco fatores e não a letra.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 77"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0339": {
-  "conceito": "A deformidade de Madelung vem de uma falha de crescimento da porção volar e ulnar da fise distal do rádio, e o que trava esse canto é uma banda anômala com nome próprio.",
-  "correta": "O ligamento espessado é o de Vickers, que vai da metáfise volar e ulnar do rádio ao semilunar. Preso ali, ele impede o crescimento daquele canto da fise enquanto o resto continua: o rádio se encurva, a superfície articular volta-se para volar e ulnar, a ulna fica proeminente no dorso e o carpo assume forma de cunha entre os dois ossos. Em criança ainda em crescimento, ressecá-lo junto com a fisiólise pode interromper a progressão, o que não se consegue tratando só o osso.",
+  "conceito": "### Deformidade de Madelung\n- Falha de crescimento da porção ==volar e ulnar da fise distal do rádio==.\n- Frequentemente com o **ligamento de Vickers** (banda do semilunar ao rádio) freando a fise.\n\n### Perfil\n- ==Meninas==, ==bilateral== (muitas vezes assimétrica).\n- Surge na **segunda década**, com o estirão.\n- Bilateral em menina de baixa estatura: pensar em **discondrosteose de Léri-Weill** (gene **SHOX**), Turner.\n\n### Achados\n| Clínica | Radiografia |\n|---|---|\n| ulna proeminente no dorso | rádio curto e curvo (dorsal e radial) |\n| mão subluxada para volar | inclinação ulnar e volar exagerada da superfície articular |\n| supinação e extensão limitadas | carpo em cunha, \"triangular\", semilunar afundado |\n\n### Madelung reverso\n- Curvatura volar do rádio (raro).\n\n### Tratamento\n- Assintomáticos: observação.\n- Dor ou deformidade progressiva: liberação do ligamento de Vickers com fisiólise (jovem), osteotomia do rádio em cúpula, encurtamento da ulna.\n\n### Ligamento de Vickers\n| Aspecto | Dado |\n|---|---|\n| origem | ==semilunar== |\n| inserção | ==metáfise volar-ulnar do rádio== (atravessa a fise) |\n| efeito | trava o crescimento do canto volar-ulnar |\n| tratamento | ressecção + fisiólise na criança em crescimento |\n\n### Epônimos distratores\n| Nome | Associação |\n|---|---|\n| Salter | lesões fisárias (Salter-Harris), osteotomia do quadril |\n| Langer | linhas de tensão da pele; displasia mesomélica de Langer (SHOX) |\n\n> **Na prova:** ligamento espessado no Madelung = ==Vickers==",
+  "correta": "**Vickers.**\n- Do semilunar à metáfise volar-ulnar do rádio.\n- Trava o crescimento daquele canto da fise.\n- Ressecção com fisiólise na criança em crescimento.",
   "incorretas": {
-   "A": "Salter dá nome à classificação das lesões fisárias, junto com Harris, e à osteotomia inominada do quadril. Não a esse ligamento.",
-   "B": "Bowels não corresponde a nenhuma estrutura descrita nesta deformidade.",
-   "C": "Langer dá nome às linhas de tensão da pele, que orientam o desenho das incisões, e à mesodermal dysplasia de Langer. Não ao ligamento do Madelung."
+   "A": "**Fises e quadril.**\n- Salter-Harris e osteotomia inominada.",
+   "B": "**Sem relação.**\n- Nenhuma estrutura desta deformidade.",
+   "C": "**Linhas da pele.**\n- E displasia mesomélica, não o ligamento."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 12"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0340": {
-  "conceito": "Vale conhecer a ambiguidade deste nome. A mão da bênção clássica é a da lesão alta do nervo mediano: ao tentar fechar a mão, indicador e médio ficam estendidos porque tanto o flexor superficial quanto o profundo desses dedos estão paralisados. A síndrome do interósseo anterior produz um quadro aparentado, porém distinto, porque nela o flexor superficial é poupado.",
-  "correta": "Entre as alternativas oferecidas, a única do território do mediano é o interósseo anterior, e é ela que o gabarito aponta. O que o interósseo anterior de fato produz: perda da flexão da interfalângica do polegar, pelo flexor longo, e da interfalângica distal do indicador e do médio, pelo flexor profundo, daí o sinal próprio dele, o do círculo ou de Kiloh-Nevin, com as polpas achatadas em vez de um círculo ao pedir o gesto de \"ok\". Como o ramo é motor puro, não há alteração de sensibilidade.",
+  "conceito": "### Mão da bênção × garra\n| Sinal | Nervo | Quando aparece | Dedos |\n|---|---|---|---|\n| ==mão da bênção== | ==mediano alto== | ao tentar ==fechar== a mão | indicador e médio ficam estendidos |\n| garra ulnar | ulnar | em ==repouso== | anelar e mínimo |\n\n### Síndrome do interósseo anterior\n| Músculo paralisado | Déficit |\n|---|---|\n| flexor longo do polegar | flexão da IF do polegar |\n| flexor profundo do indicador e médio | flexão da IFD |\n| pronador quadrado | pronação com cotovelo fletido |\n\n- **Kiloh-Nevin (sinal do círculo):** \"ok\" vira pinça de polpas achatadas.\n- ==Motor puro==: sem alteração sensitiva.\n- Diferencial: Parsonage-Turner, ruptura do flexor longo do polegar.\n\n> **Na prova:** bênção sem garra, único ramo do mediano nas alternativas = ==interósseo anterior== (veja o alerta).",
+  "alerta": "Mão da bênção clássica é o sinal da lesão alta do nervo mediano (flexores superficial e profundo do indicador e médio paralisados). O interósseo anterior poupa o flexor superficial e tem como sinal próprio o de Kiloh-Nevin. O gabarito escolhe o interósseo anterior por ser a única alternativa do território do mediano.",
+  "correta": "**Interósseo anterior, conforme o gabarito.**\n- Único ramo do mediano entre as opções.\n- Perde FLP e FPD do indicador e médio.\n- Motor puro; sinal do círculo.",
   "incorretas": {
-   "A": "O ulnar produz a mão em garra, que se parece com a da bênção mas envolve o quarto e o quinto dedos, aparece em repouso e não ao tentar fechar a mão.",
-   "B": "O radial produz punho e dedos caídos, com alteração sensitiva no dorso da mão.",
-   "D": "O interósseo posterior dá queda dos dedos na metacarpofalângica, com o punho ainda estendendo em desvio radial e sem déficit sensitivo."
+   "A": "**Garra.**\n- 4º e 5º dedos, em repouso.",
+   "B": "**Punho caído.**\n- Sensibilidade dorsal alterada.",
+   "D": "**Queda dos dedos na MF.**\n- Punho estende com desvio radial."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 7.2"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0341": {
-  "conceito": "Sunderland nomeou cada grau pela estrutura que se perde, e a nomenclatura é precisa: grau II lesa o axônio; grau III lesa a fibra nervosa, que é o axônio mais o seu tubo endoneural; grau IV lesa o fascículo, ou seja, também o perineuro; grau V lesa o tronco nervoso inteiro, incluindo o epineuro.",
-  "correta": "Lesão da fibra nervosa corresponde ao grau III. Perdido o tubo endoneural, os axônios em regeneração podem trocar de canal dentro do mesmo fascículo e chegar a um alvo que não é o seu: a recuperação existe, mas é parcial e imprevisível. É nesse grau que a reeducação sensitiva tem papel real, ensinando o cérebro a reinterpretar o que passa a chegar.",
+  "conceito": "### Classificação de Sunderland (e Seddon)\n| Sunderland | Estrutura lesada | Seddon | Prognóstico |\n|---|---|---|---|\n| I | bloqueio de condução, mielina | neuropraxia | recuperação completa em dias a semanas |\n| II | axônio (endoneuro íntegro) | axonotmese | completa (cerca de 1 mm/dia) |\n| III | axônio + endoneuro | axonotmese | parcial, imprevisível |\n| ==IV== | ==axônio + endoneuro + perineuro== (só epineuro íntegro) | axonotmese | ==neuroma em continuidade; exige ressecção e enxerto== |\n| V | secção completa (epineuro) | neurotmese | só com reparo |\n| VI (Mackinnon) | lesão mista em fascículos diferentes | | variável |\n\n### Sinal de Tinel\n- Avança ao longo do nervo na regeneração (graus II e III); fica **estacionário** no grau IV (neuroma).\n\n### Regeneração\n- Cerca de **1 mm/dia** (1 polegada por mês).\n- Placa motora degenera após **12 a 18 meses** de denervação.\n\n### Nomenclatura de Sunderland\n| Grau | Estrutura perdida |\n|---|---|\n| II | axônio |\n| ==III== | ==fibra nervosa== (axônio + tubo endoneural) |\n| IV | fascículo (perineuro) |\n| V | tronco (epineuro) |\n\n> **Na prova:** lesão da fibra nervosa = ==Sunderland III==",
+  "correta": "**Grau III.**\n- Fibra nervosa = axônio + tubo endoneural.\n- Axônios trocam de canal: recuperação parcial e imprevisível.\n- Reeducação sensitiva tem papel.",
   "incorretas": {
-   "A": "O grau II é a lesão apenas do axônio, com o tubo endoneural íntegro guiando a regeneração de volta ao alvo original, recuperação completa, à razão de cerca de um milímetro por dia.",
-   "C": "O grau IV é a lesão do fascículo, com perineuro roto e neuroma em continuidade. Não recupera espontaneamente.",
-   "D": "O grau V é a secção do tronco nervoso, a neurotmese de Seddon."
+   "A": "**Só axônio.**\n- Tubo íntegro guia a regeneração; recuperação completa.",
+   "C": "**Fascículo.**\n- Neuroma em continuidade, sem recuperação espontânea.",
+   "D": "**Tronco.**\n- Neurotmese de Seddon."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 7.8.1"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0342": {
-  "conceito": "Dentro do túnel do carpo os dez tendões não estão embolados: os flexores superficiais e profundos dos dedos ocupam a bursa ulnar, ao centro e do lado ulnar, enquanto o flexor longo do polegar corre isolado no canto radial, dentro da bursa radial, com bainha própria.",
-  "correta": "O tendão assinalado é o flexor longo do polegar, reconhecível por estar sozinho, no canto radial, separado do bloco dos flexores dos dedos. Essa posição isolada explica dois fatos clínicos: a bursa radial se comunica com a bainha do polegar e com o espaço de Parona, o que permite o abscesso em ferradura; e é ali, contra uma espícula do escafoide, que o tendão se rompe por atrito na artrite reumatoide, a lesão de Mannerfelt.",
+  "conceito": "### Conteúdo do túnel do carpo\n| Estrutura | Posição | Bursa |\n|---|---|---|\n| nervo mediano | mais superficial, radial | |\n| flexores superficiais (4) | plano volar; 3º e 4º superficiais aos 2º e 5º | ulnar |\n| flexores profundos (4) | plano dorsal | ulnar |\n| ==flexor longo do polegar== | ==isolado no canto radial== | ==radial== |\n\n- ==Fora do túnel==: flexor radial do carpo (túnel próprio no trapézio), palmar longo (sobre o retináculo), nervo e artéria ulnar (Guyon).\n\n### Importância clínica do FLP\n| Situação | Detalhe |\n|---|---|\n| abscesso em ferradura | bursa radial comunica com a ulnar pelo espaço de Parona |\n| ==Mannerfelt== | ruptura do FLP por atrito no escafoide (AR) |\n| síndrome do interósseo anterior | perda da flexão da IF do polegar |\n\n> **Na prova:** tendão isolado no canto radial do túnel = ==flexor longo do polegar==.",
+  "correta": "**Flexor longo do polegar.**\n- Sozinho no canto radial, na bursa radial.\n- Explica o abscesso em ferradura e a lesão de Mannerfelt.",
   "incorretas": {
-   "A": "O flexor radial do carpo passa pelo punho num compartimento próprio, escavado no trapézio, e por isso fica fora do túnel do carpo propriamente dito, detalhe anatômico que costuma escapar.",
-   "C": "Os flexores profundos dos dedos formam o plano mais dorsal do bloco central, atrás dos superficiais, e não ocupam o canto radial.",
-   "D": "O flexor profundo do quinto dedo está na extremidade ulnar do bloco, do lado oposto ao indicado."
+   "A": "**Fora do túnel.**\n- Corre em túnel próprio no trapézio.",
+   "C": "**Bloco central.**\n- Plano dorsal, atrás dos superficiais.",
+   "D": "**Extremo ulnar.**\n- Lado oposto."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Netter, Atlas de Anatomia Humana, 7ª edição, Cap. 7"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0343": {
-  "conceito": "A escápula alada tem duas causas nervosas principais, e cada uma tem a sua cirurgia. Lesão do torácico longo paralisa o serrátil e se trata com transferência do peitoral maior. Lesão do nervo acessório paralisa o trapézio e se trata com a cirurgia de Eden-Lange.",
-  "correta": "Eden-Lange lateraliza as inserções dos romboides e do elevador da escápula, transferindo-as para mais lateral na espinha e no corpo da escápula. Com isso esses músculos passam a reproduzir o vetor do trapézio que se perdeu: o elevador substitui a porção superior, o romboide menor a média e o romboide maior a inferior. É por isso que a cirurgia só funciona com romboides e elevador íntegros, eles são inervados pelo nervo dorsal da escápula, e é preciso confirmar que essa raiz está preservada antes de indicar.",
+  "conceito": "### Escápula alada\n| Causa | Nervo | Músculo | Escápula |\n|---|---|---|---|\n| ==torácico longo== | C5 a C7 | ==serrátil anterior== | **medial** (ângulo inferior para medial) |\n| acessório espinal | XI par | trapézio | lateral, ombro caído |\n| dorsal da escápula | C5 | romboides | lateral, discreta |\n\n### Lesão do torácico longo\n- Tração (esportes, mochila), compressão, iatrogênica (mastectomia, drenagem torácica), Parsonage-Turner.\n- Observação por 12 a 24 meses (muitas recuperam).\n\n### Transferências na paralisia crônica\n| Paralisia | Transferência de escolha |\n|---|---|\n| ==serrátil (torácico longo)== | ==peitoral maior (cabeça esternal) ao ângulo inferior da escápula==, geralmente com enxerto de fáscia lata |\n| trapézio (acessório) | **Eden-Lange**: levantador da escápula e romboides lateralizados (ou trapézio inferior) |\n\n- Salvamento: **escapulotoracodese**.\n\n### Eden-Lange\n| Músculo | Nova inserção | Substitui |\n|---|---|---|\n| elevador da escápula | espinha, lateral | trapézio superior |\n| romboide menor | fossa supraespinal | trapézio médio |\n| romboide maior | fossa infraespinal | trapézio inferior |\n\n- Exige ==dorsal da escápula íntegro== (romboides e elevador funcionando).\n\n> **Na prova:** Eden-Lange = ==lateralização dos romboides e do elevador== (paralisia do trapézio).",
+  "correta": "**Lateralização de romboides e elevador.**\n- Reproduz o vetor do trapézio perdido.\n- Indicada na lesão do nervo acessório.\n- Exige o dorsal da escápula preservado.",
   "incorretas": {
-   "B": "Nem o elevador é inferiorizado, nem o serrátil é medializado. E o serrátil, na paralisia do torácico longo, é justamente o músculo que não funciona, não há o que transferir dele.",
-   "C": "Centralizar os romboides no ângulo inferior não corresponde à técnica e não reproduz o vetor do trapézio.",
-   "D": "A transferência do peitoral maior para a escápula é o tratamento da escápula alada por lesão do torácico longo, com paralisia do serrátil, a outra doença, com a escápula alando para o lado oposto."
+   "B": "**Não é a técnica.**\n- O serrátil paralisado não tem o que transferir.",
+   "C": "**Sem vetor útil.**\n- Não reproduz o trapézio.",
+   "D": "**Outra doença.**\n- Peitoral maior trata a paralisia do serrátil (torácico longo)."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0344": {
-  "conceito": "A camada superficial do compartimento volar do antebraço nasce do epicôndilo medial e é toda inervada pelo nervo mediano, com uma única exceção: o flexor ulnar do carpo, que é do ulnar.",
-  "correta": "O pronador redondo é inervado pelo nervo mediano, e por ramos que saem acima da origem do interósseo anterior. Isso tem duas consequências que caem em prova. Primeira: na síndrome do interósseo anterior o pronador redondo é poupado, porque o ramo dele já saiu antes. Segunda: é o próprio pronador redondo que comprime o mediano na síndrome do pronador, o que faz dele agressor e não vítima.",
+  "conceito": "### Camada superficial volar do antebraço\n| Músculo | Nervo |\n|---|---|\n| ==pronador redondo== | ==mediano== (acima do interósseo anterior) |\n| flexor radial do carpo | mediano |\n| palmar longo | mediano |\n| flexor superficial dos dedos | mediano |\n| flexor ulnar do carpo | ==ulnar== (a exceção) |\n\n### Inervação do antebraço por nervo\n| Nervo | Músculos |\n|---|---|\n| mediano | pronador redondo, FRC, palmar longo, FSD |\n| interósseo anterior | FLP, FPD indicador e médio, pronador quadrado |\n| ulnar | FUC, FPD anelar e mínimo |\n| radial | braquiorradial, ERLC (ERCC) |\n| interósseo posterior | supinador, extensores |\n\n### Pronador redondo na clínica\n- Poupado na síndrome do interósseo anterior (ramo sai antes).\n- É o próprio compressor na síndrome do pronador.\n\n> **Na prova:** pronador redondo = ==nervo mediano==.",
+  "correta": "**Mediano.**\n- Ramos que saem acima do interósseo anterior.\n- Poupado na síndrome do interósseo anterior.\n- Comprime o mediano na síndrome do pronador.",
   "incorretas": {
-   "A": "O musculocutâneo inerva os flexores do braço (bíceps, braquial e coracobraquial) e termina como nervo cutâneo lateral do antebraço.",
-   "C": "O radial inerva o compartimento dorsal e o braquiorradial. Nenhum músculo pronador é dele.",
-   "D": "Do ulnar, no antebraço, são apenas dois músculos: o flexor ulnar do carpo e a metade ulnar do flexor profundo dos dedos."
+   "A": "**Flexores do braço.**\n- Bíceps, braquial, coracobraquial.",
+   "C": "**Compartimento dorsal.**\n- Nenhum pronador é do radial.",
+   "D": "**Só dois no antebraço.**\n- FUC e metade ulnar do FPD."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0345": {
