@@ -954,94 +954,95 @@
   "conferido": false
  },
  "trauma-0081": {
-  "conceito": "A síndrome compartimental na perna da criança tem um desafio diagnóstico particular: os sinais clássicos do adulto (dor desproporcional, os \"5 P\", dor, palidez, parestesia, ausência de pulso, paralisia) são pouco confiáveis na criança pequena, que não comunica bem a dor ou a parestesia. Por isso, a vigilância clínica precisa ser redobrada justamente nos pacientes mais jovens, e estudos que avaliaram fatores de risco para o desenvolvimento da síndrome compartimental em fraturas de perna na infância identificaram a **idade mais baixa** como o preditor mais forte, provavelmente refletindo tanto uma vulnerabilidade biológica real quanto o próprio atraso diagnóstico nessa faixa etária, quando os sinais clínicos habituais ainda não são confiáveis.",
-  "correta": "A. A baixa idade é descrita como o preditor mais forte para o desenvolvimento de síndrome compartimental na perna da criança.",
+  "conceito": "### Síndrome compartimental na perna da criança\n- Sinais clássicos pouco confiáveis: usar os ==3 A== (ansiedade, agitação, analgesia crescente).\n- Fraturas da tíbia: incidência de 2 a 11% (maior que se pensava).\n\n### Preditores\n| Fator | Observação |\n|---|---|\n| idade | a banca indicou ==baixa idade== |\n| adolescência (> 14 anos) e peso > 50 kg | associados em séries de fraturas da tíbia |\n| alta energia, cominução | |\n| lesão por veículo | |\n\n- Adolescentes têm fáscia menos complacente e musculatura maior, semelhante ao adulto.\n\n> **Na prova:** a banca considerou ==baixa idade== o preditor mais forte (veja o alerta)",
+  "correta": "**Baixa idade (gabarito).**\n- Resposta oficial.\n- Crianças pequenas são difíceis de avaliar.",
   "incorretas": {
-   "B": "O peso maior que 50 kg não é o fator mais fortemente associado nesse contexto.",
-   "C": "O déficit neurológico já seria, na maioria das vezes, uma manifestação tardia da síndrome compartimental instalada, não um preditor precoce do seu desenvolvimento.",
-   "D": "A cominuição da fratura é um fator de risco reconhecido para lesão de partes moles em geral, mas não é descrita como o preditor mais forte nesse contexto específico."
+   "B": "**Peso > 50 kg.**\n- Associado em algumas séries; a banca não aceitou.",
+   "C": "**Déficit neurológico.**\n- Consequência tardia.",
+   "D": "**Cominução.**\n- Fator de energia, não o mais forte."
   },
-  "geradoEm": "2026-09-21",
+  "alerta": "Séries de fraturas da tíbia em crianças (como a de Shore e colaboradores) apontam a idade acima de 14 anos e o peso acima de 50 kg como os preditores mais fortes de síndrome compartimental, o contrário de baixa idade. A banca indicou A.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0082": {
-  "conceito": "A classificação HOST (\"Host classification\") avalia o hospedeiro (o paciente, não a ferida) no tratamento das fraturas expostas, complementando classificações da lesão de partes moles como a de Gustilo-Anderson. Ela estratifica o paciente em tipos conforme comorbidades e capacidade de cicatrização:\n- **Tipo A**: hospedeiro sem comorbidades relevantes.\n- **Tipo B**: uma comorbidade isolada (por exemplo, tabagismo ou diabetes controlado).\n- **Tipo C**: **doença sistêmica múltipla**, múltiplas comorbidades que comprometem significativamente a cicatrização óssea e de partes moles, elevando o risco de infecção e de falha do tratamento.\n\nEssa estratificação ajuda a calibrar a expectativa de complicações e a intensidade do acompanhamento, além de orientar decisões como o momento da cobertura de partes moles.",
-  "correta": "C. O tipo C da classificação HOST corresponde à presença de doença sistêmica múltipla.",
+  "conceito": "### Classificação do hospedeiro (Cierny-Mader, usada nas fraturas expostas e osteomielite)\n| Tipo | Hospedeiro |\n|---|---|\n| A | normal, boa resposta imune e vascular |\n| B | comprometido: ==local== (BL: estase venosa, cicatriz, radiação) ou ==sistêmico== (BS: diabetes, desnutrição, imunossupressão, idade) |\n| ==C== | ==comprometimento grave/múltiplo==: tratamento pior que a doença |\n\n### Uso\n- Complementa Gustilo (ferida) e decide agressividade da reconstrução.\n- Otimizar o hospedeiro: parar tabagismo, controlar glicemia, nutrição.\n\n> **Na prova:** doença sistêmica múltipla = ==tipo C==",
+  "correta": "**Tipo C.**\n- Hospedeiro gravemente comprometido.\n- Tratamento agressivo arriscado.",
   "incorretas": {
-   "A": "O tipo A representa o hospedeiro sem comorbidades relevantes, o extremo oposto do descrito na questão.",
-   "B": "O tipo B representa uma única comorbidade isolada, não múltiplas doenças sistêmicas.",
-   "D": "A classificação HOST não define um tipo D."
+   "A": "**A.**\n- Hospedeiro normal.",
+   "B": "**B.**\n- Comprometimento local ou sistêmico isolado.",
+   "D": "**D.**\n- Não existe."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0083": {
-  "conceito": "No paciente OBESO, a haste intramedular ANTERÓGRADA exige acesso ao trocanter maior (ou à fossa piriforme) através de uma espessa camada de tecido subcutâneo e muscular sobre o quadril, tornando tecnicamente difícil localizar e manter o ponto de entrada correto durante todo o procedimento, especialmente com o paciente posicionado em mesa de tração. A haste RETRÓGRADA, com ponto de entrada no espaço intercondilar do joelho (uma região bem mais superficial e acessível mesmo em pacientes com grande panículo adiposo), elimina essa dificuldade específica, sendo por isso vantajosa nesse subgrupo de pacientes.",
-  "correta": "C. A principal vantagem da haste retrógrada no paciente obeso é a menor dificuldade de localizar e manter o ponto de entrada correto, por este estar numa região mais superficial e acessível (joelho) do que o quadril.",
+  "conceito": "### Haste retrógrada × anterógrada no fêmur\n| Situação | Preferir retrógrada |\n|---|---|\n| ==obesidade== | ==ponto de entrada fácil== (joelho), sem partes moles espessas do quadril |\n| gestante | menos radiação pélvica |\n| fratura ipsilateral do colo, acetábulo, tíbia (joelho flutuante) | |\n| fratura bilateral, politrauma | posição supina simples |\n| fraturas distais | |\n\n| Desvantagem da retrógrada | |\n|---|---|\n| dor no joelho, risco de artrite séptica | |\n| fraturas subtrocantéricas proximais | controle proximal pior |\n\n> **Na prova:** retrógrada no obeso = ==menor dificuldade no ponto de entrada==",
+  "correta": "**Ponto de entrada mais fácil.**\n- Joelho acessível no obeso.\n- Evita partes moles do quadril.",
   "incorretas": {
-   "A": "A fluoroscopia pode ser tecnicamente desafiadora no paciente obeso por ambas as vias, não sendo essa a vantagem distintiva mais citada da via retrógrada.",
-   "B": "A dificuldade de fresagem do canal medular não depende primariamente do ponto de entrada nem se relaciona especificamente à obesidade do paciente.",
-   "D": "A probabilidade de trombose venosa profunda está mais relacionada a fatores de imobilização e trauma geral do que à escolha entre haste anterógrada e retrógrada especificamente no paciente obeso."
+   "A": "**Fluoroscopia.**\n- Não é a vantagem principal.",
+   "B": "**Fresagem.**\n- Semelhante.",
+   "D": "**TVP.**\n- Sem diferença."
   },
-  "geradoEm": "2026-09-15",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 54"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0084": {
-  "conceito": "A fratura por **explosão** (burst) é a lesão toracolombar produzida por carga axial pura: queda de altura sobre os pés ou sobre as nádegas, acidente automobilístico com impacto vertical. O disco é impelido contra o platô vertebral, o corpo estoura de dentro para fora e os fragmentos se dispersam em todas as direções.\n\nEla se distingue da fratura por **compressão** (wedge) por um detalhe decisivo: na compressão, apenas a coluna anterior de Denis falha, e o muro posterior permanece íntegro; na explosão, a coluna **média** (o terço posterior do corpo, o muro posterior e o ligamento longitudinal posterior) também falha, e é a integridade dessa coluna média que separa uma lesão estável de uma potencialmente instável.\n\nDois achados radiográficos traduzem esse comportamento:\n- Na incidência em **perfil** e na tomografia, vê-se a retropulsão de fragmentos do muro posterior para dentro do canal vertebral, com perda de altura do corpo\n- Na incidência em **frente**, vê-se o sinal mais característico e mais cobrado: o **aumento da distância interpedicular** da vértebra fraturada, comparada com as vértebras vizinhas, porque o corpo, ao explodir, empurra os pedículos para os lados\n\nEsse mesmo afastamento explica a fratura vertical da lâmina, que se associa à laceração da dura-máter e ao encarceramento de raízes.\n\nA conduta depende de três variáveis, e é isso que a classificação TLICS sistematiza: a morfologia da fratura, o estado neurológico e a integridade do **complexo ligamentar posterior**. Uma explosão sem déficit e com complexo posterior íntegro pode ser tratada com órtese, enquanto a mesma morfologia com déficit ou com ruptura ligamentar posterior é cirúrgica. A ressonância é o exame que define a integridade ligamentar quando a dúvida persiste.",
-  "correta": "C. O aumento da DISTÂNCIA INTERPEDICULAR da vértebra fraturada, medido na incidência em frente e comparado com as vértebras vizinhas, é o sinal característico da fratura por explosão: o corpo estoura e empurra os pedículos para os lados.",
+  "conceito": "### Fratura por explosão (burst)\n- Carga axial: falha das colunas ==anterior e média== (Denis).\n- Sinais radiográficos:\n  - ==aumento da distância interpedicular== no AP;\n  - retropulsão do muro posterior (canal);\n  - perda de altura anterior e posterior;\n  - fratura vertical da lâmina.\n\n### Diferencial\n| Lesão | Achado |\n|---|---|\n| compressão (cunha) | só coluna anterior; muro posterior íntegro |\n| ==explosão== | ==muro posterior roto==, interpedicular aumentada |\n| flexão-distração (Chance) | ==aumento da distância interespinhosa== |\n| fratura-luxação | translação |\n\n### Tratamento\n- Neurologicamente íntegro e CLP íntegro: colete/deambulação precoce.\n- Déficit ou CLP roto (TLICS ≥ 5): cirurgia.\n\n> **Na prova:** explosão = ==aumento da distância interpedicular==",
+  "correta": "**Distância interpedicular aumentada.**\n- Corpo explode lateralmente.\n- Pedículos se afastam.",
   "incorretas": {
-   "A": "O deslocamento de uma vértebra sobre a outra caracteriza a fratura-LUXAÇÃO, a lesão de translação, que é o padrão mais instável e resulta de mecanismo de cisalhamento, não da carga axial que produz a explosão.",
-   "B": "O aumento da distância entre os processos espinhosos indica falha em TENSÃO do complexo ligamentar posterior e caracteriza as lesões por FLEXÃO-DISTRAÇÃO, como a fratura de Chance. Na explosão pura o mecanismo é de compressão, não de distração.",
-   "D": "O número de fragmentos entra em outra classificação, a de distribuição de carga (load sharing) de McCormack, que pontua a cominuição, a dispersão dos fragmentos e a correção da cifose para decidir a necessidade de suporte anterior. Não é o que define a fratura como explosão."
+   "A": "**Deslocamento.**\n- Fratura-luxação.",
+   "B": "**Espinhosos afastados.**\n- Flexão-distração.",
+   "D": "**Número de fragmentos.**\n- Não é critério."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0085": {
-  "conceito": "Nas fraturas **diafisárias da clavícula** (que representam cerca de 80% de todas as fraturas desse osso), os desvios são inteiramente previsíveis a partir das forças que atuam em cada fragmento.\n\nSobre o fragmento **medial** age o esternocleidomastóideo, inserido na sua face superior, que o traciona para cima e para trás. Sobre o fragmento **lateral** agem três forças convergentes:\n\n- O **peso do membro superior**, transmitido pelos ligamentos coracoclaviculares e pela articulação acromioclavicular, que o puxa para baixo — daí a translação inferior.\n- O **peitoral maior** e o latíssimo, que o tracionam medialmente, produzindo o encurtamento.\n- A **protração da escápula**, que gira o fragmento em sentido anterior — daí a rotação anterior.\n\nO resultado clínico é o clássico ombro caído, encurtado e protruso, com o fragmento medial proeminente sob a pele. Essa mecânica explica também por que a redução fechada é fácil de obter (basta retrair e elevar o ombro) e impossível de manter, e por que a tipoia americana ou o \"oito\" não corrigem o encurtamento.\n\nOs critérios modernos que favorecem a osteossíntese com placa derivam desse padrão: encurtamento maior que 15 a 20 mm, desvio com perda completa do contato entre os fragmentos, cominuição com fragmento em Z, fratura exposta, lesão neurovascular, ombro flutuante e pele em risco. Os ensaios randomizados mostraram que a fixação reduz tanto a taxa global de pseudartrose quanto a de pseudartrose sintomática e acelera o retorno às atividades, ao custo de complicações locais (irritação pelo implante, cicatriz, necessidade de retirada de material).\n\nE há um cuidado anatômico permanente: o plexo braquial e os vasos subclávios passam imediatamente abaixo da clavícula.",
-  "correta": "C. O fragmento lateral sofre TRANSLAÇÃO INFERIOR (pelo peso do membro superior) e ROTAÇÃO ANTERIOR, imposta pela protração da escápula, além de medializar pela tração do peitoral maior.",
+  "conceito": "### Clavícula média: desvio\n| Fragmento | Força | Desvio |\n|---|---|---|\n| ==medial== | ==ECM== | ==superior e posterior== |\n| ==lateral (distal)== | peso do membro, ==peitoral maior== | ==inferior, anterior e medial== (encurtamento) + ==rotação anterior== |\n\n### Indicações relativas de cirurgia\n- Encurtamento > 1,5 a 2 cm, desvio > 100%, cominução (Z), pele em risco, ombro flutuante, politrauma.\n- Placa superior ou anteroinferior; haste intramedular.\n\n### Robinson\n| Tipo | Local |\n|---|---|\n| 1 | medial |\n| 2 | ==diáfise (75 a 80%)== |\n| 3 | lateral |\n\n> **Na prova:** fragmento lateral = ==translação inferior + rotação anterior==",
+  "correta": "**Inferior e rotação anterior.**\n- Peso do membro abaixa.\n- Peitoral roda para frente.",
   "incorretas": {
-   "A": "Acerta a translação inferior, mas erra o sentido da rotação: a protração da escápula gira o fragmento lateral para a FRENTE, e não para trás. É essa combinação que produz o ombro caído e protruso.",
-   "B": "Erra as duas informações. A translação SUPERIOR é do fragmento MEDIAL, tracionado pelo esternocleidomastóideo; e a rotação do fragmento lateral é anterior.",
-   "D": "Acerta a rotação anterior, mas erra a translação: quem sobe é o fragmento medial. O lateral cai, puxado pelo peso do membro superior através dos ligamentos coracoclaviculares."
+   "A": "**Rotação posterior.**\n- Rotação é anterior.",
+   "B": "**Superior.**\n- Superior é o medial.",
+   "D": "**Superior.**\n- Fragmento lateral desce."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0086": {
-  "conceito": "A **sinostose radioulnar** pós-traumática é a ponte óssea que se forma entre o rádio e a ulna e abole a pronossupinação, a complicação mais temida das fraturas do antebraço, porque nenhuma reabilitação a resolve e a ressecção cirúrgica tem taxa alta de recidiva.\n\nA sua incidência global é baixa, em torno de 2% a 6%, mas concentra-se de forma muito clara em um perfil, e os fatores de risco são cumulativos: fratura dos dois ossos no mesmo nível, localização no **terço proximal**, trauma de alta energia, fratura exposta, traumatismo craniencefálico associado, retardo cirúrgico, enxerto ósseo colocado próximo à membrana interóssea e, sobretudo, a **incisão única** para abordar os dois ossos.\n\nA explicação anatômica é direta. No terço proximal o rádio e a ulna estão mais próximos um do outro, o espaço interósseo é mais estreito e a musculatura que os separa é mais fina; além disso, é ali que fica o supinador, cuja desinserção expõe a superfície óssea. Uma incisão única obriga a dissecar através do **espaço interósseo** para alcançar os dois ossos, viola a membrana interóssea, cria um hematoma **contínuo** entre eles e semeia detritos ósseos e periósteo no caminho, todos os ingredientes da ponte.\n\nA prevenção é técnica e simples de enunciar:\n- **Duas** incisões separadas, uma para cada osso, com o máximo de músculo interposto entre elas\n- Não abrir a membrana interóssea\n- Lavar abundantemente os detritos ósseos ao final\n- Evitar colocar enxerto no espaço interósseo\n- Mobilizar precocemente\n\nNos pacientes de alto risco (sobretudo os com trauma craniencefálico) cogita-se profilaxia com indometacina ou radioterapia, à semelhança do que se faz para a ossificação heterotópica do quadril. Quando a sinostose já está formada, a ressecção só deve ser feita com a ponte madura, e é seguida de mobilização imediata e de alguma medida de interposição ou profilaxia.",
-  "correta": "C. A sinostose radioulnar é mais frequente nas fraturas do terço PROXIMAL operadas por incisão ÚNICA: ali o espaço interósseo é mais estreito, e a incisão única obriga a atravessá-lo, violando a membrana interóssea e criando um hematoma contínuo entre os dois ossos.",
+  "conceito": "### Sinostose radioulnar pós-traumática\n| Fator de risco | |\n|---|---|\n| ==terço proximal== | membrana interóssea e supinador próximos |\n| ==incisão única== para os dois ossos (Boyd) | hematoma comum, desperiostização |\n| alta energia, exposta, cominução | |\n| traumatismo cranioencefálico | ossificação heterotópica |\n| enxerto/parafusos no espaço interósseo | |\n| retardo da cirurgia > 2 semanas | |\n\n### Vince e Miller\n| Tipo | Local |\n|---|---|\n| 1 | distal (intra-articular) |\n| 2 | terço médio/distal |\n| 3 | proximal (pior prognóstico) |\n\n- Tratamento: ressecção após maturação (12 a 24 meses) com interposição; radioterapia/indometacina.\n\n> **Na prova:** sinostose = ==terço proximal, incisão única==",
+  "correta": "**Proximal, incisão única.**\n- Hematoma único liga os ossos.\n- Terço proximal mais propenso.",
   "incorretas": {
-   "A": "Erra a localização e o número de incisões. O terço DISTAL é o de menor risco (o espaço interósseo é mais amplo e as vias aos dois ossos são naturalmente separadas), e a incisão dupla é justamente a medida PREVENTIVA, não o fator de risco.",
-   "B": "Acerta o risco da incisão única, mas erra o nível: no terço distal os dois ossos estão mais afastados e o risco de ponte óssea é bem menor. A concentração da sinostose é proximal.",
-   "D": "Acerta o nível proximal, que é de fato o de maior risco, mas a incisão DUPLA é a técnica recomendada para evitar a sinostose, duas vias separadas, com músculo interposto e sem abertura da membrana interóssea. A incisão única é que multiplica o risco."
+   "A": "**Distal, incisão dupla.**\n- Menor risco.",
+   "B": "**Distal.**\n- Local de menor risco.",
+   "D": "**Incisão dupla.**\n- Diminui o risco."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0087": {
-  "conceito": "Na ORIF da fratura diafisária do úmero pela via ANTEROLATERAL, o NERVO RADIAL, que cruza obliquamente a face posterior do úmero no sulco espiral e perfura o septo intermuscular lateral para emergir anteriormente entre o braquial e o braquiorradial, no terço distal do braço, fica particularmente exposto a tração, compressão por afastadores ou lesão direta durante a exposição e a colocação dos implantes. Por isso, a PARALISIA (ou neuropraxia) DO NERVO RADIAL é classicamente descrita como a complicação mais frequente dessa via de acesso específica.",
-  "correta": "D. A paralisia do nervo radial é a complicação mais frequente da fixação da fratura diafisária do úmero pela via anterolateral, dado o trajeto do nervo cruzando essa região.",
+  "conceito": "### Vias para a diáfise do úmero\n| Via | Risco |\n|---|---|\n| ==anterolateral== | ==nervo radial== (sulco espiral e septo intermuscular lateral), musculocutâneo |\n| posterior (Gerwin, triciptal) | radial no sulco espiral |\n| MIPO anterior | musculocutâneo/radial |\n\n### Nervo radial\n- Paralisia primária: 10 a 12% (Holstein-Lewis: terço distal espiral).\n- ==Iatrogênica==: complicação mais frequente da RAFI (até 5 a 10%); maioria neuropraxia.\n- Paralisia primária em fechada: observar (70 a 90% recuperam); explorar se exposta ou após redução.\n\n> **Na prova:** RAFI anterolateral = complicação mais frequente ==paralisia do radial==",
+  "correta": "**Paralisia do radial.**\n- Nervo cruza o úmero.\n- Neuropraxia na maioria.",
   "incorretas": {
-   "A": "A infecção é uma complicação possível de qualquer cirurgia aberta, mas não é a mais frequente e característica dessa via específica.",
-   "B": "A refratura é uma complicação tardia relacionada à remoção precoce do implante ou ao stress-shielding, não a mais associada a essa via de acesso.",
-   "C": "A não união é uma complicação reconhecida da fixação diafisária do úmero em geral, mas não é a mais especificamente associada ao trajeto do nervo radial nessa via."
+   "A": "**Infecção.**\n- Baixa (< 5%).",
+   "B": "**Refratura.**\n- Rara.",
+   "C": "**Pseudartrose.**\n- Rara com fixação rígida."
   },
-  "geradoEm": "2026-09-15",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0088": {
-  "conceito": "Após a consolidação de uma fratura diafisária da tíbia tratada com haste intramedular, a queixa clínica mais comum e mais bem documentada na literatura é a **dor anterior do joelho**, localizada no ponto de inserção proximal da haste, a região onde o instrumental perfura o tendão patelar (na via infrapatelar clássica) ou o retináculo (na via suprapatelar) para alcançar o canal medular.\n\nSéries de seguimento a longo prazo relatam essa queixa em uma proporção expressiva dos pacientes, mesmo anos após a fratura ter consolidado e mesmo sem qualquer sinal de complicação mecânica associada, o que sugere um componente de lesão de partes moles (tendão patelar, gordura de Hoffa, ramos nervosos infrapatelares) causada pela própria via de acesso, e não necessariamente pelo material implantado em si.\n\nÉ justamente essa dor no ponto de entrada proximal um dos principais motivadores para o desenvolvimento e a popularização da técnica suprapatelar com joelho semiestendido, que busca reduzir a agressão a essas estruturas durante a inserção da haste.\n\nA dor relacionada aos parafusos de bloqueio (proximais ou distais) e à extremidade distal da haste também é descrita, mas em frequência bem menor do que a dor no sítio de inserção proximal.",
-  "correta": "A. A dor no ponto de inserção proximal da haste (dor anterior do joelho) é a queixa mais comum após a consolidação da fratura diafisária da tíbia tratada com haste intramedular, relatada numa proporção expressiva dos pacientes em seguimento a longo prazo.",
+  "conceito": "### Haste intramedular da tíbia: dor anterior do joelho\n- Queixa ==mais comum== após consolidação: ==dor no ponto de entrada== (anterior do joelho), em ==até 50 a 60%==.\n- Causas: lesão do ligamento patelar/gordura de Hoffa, ramo infrapatelar do safeno, haste saliente.\n- Retirar a haste alivia só parte dos pacientes.\n\n### Portal\n| Portal | Detalhe |\n|---|---|\n| transpatelar/parapatelar | clássico |\n| ==suprapatelar== (semiestendido) | facilita redução proximal/distal; dor semelhante |\n\n> **Na prova:** queixa mais comum pós-haste de tíbia = dor na ==inserção da haste== (joelho)",
+  "correta": "**Inserção da haste.**\n- Dor anterior do joelho.\n- Até metade dos pacientes.",
   "incorretas": {
-   "B": "A dor na extremidade distal da haste é descrita, mas com frequência bem menor do que a dor no ponto de inserção proximal.",
-   "C": "A dor relacionada aos parafusos de bloqueio distais existe, mas não é a queixa mais comum, essa posição pertence à dor no sítio de inserção proximal da haste.",
-   "D": "Da mesma forma, a dor nos parafusos de bloqueio proximais é menos frequente do que a dor no próprio ponto de inserção da haste."
+   "B": "**Extremidade distal.**\n- Raramente dói.",
+   "C": "**Bloqueio distal.**\n- Irritação local menos frequente.",
+   "D": "**Bloqueio proximal.**\n- Menos frequente."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0089": {
