@@ -2504,97 +2504,97 @@
   "conferido": false
  },
  "pediatria-0178": {
-  "conceito": "A osteocondrite do navicular tarsal, ou **doença de Köhler**, é uma osteocondrose autolimitada que acomete classicamente **meninos** (proporção de aproximadamente 4-5:1 em relação às meninas) e crianças **jovens**, tipicamente **antes dos 10 anos de idade** (pico entre 4 e 7 anos), um perfil epidemiológico oposto ao de outra osteocondrose do pé, a doença de Freiberg (que acomete a cabeça do metatarso, predominando em meninas adolescentes, mais velhas).\n\nEssa diferença de perfil (Köhler: meninos jovens / Freiberg: meninas mais velhas) é um ponto clássico de diferenciação cobrado em prova entre as duas condições.",
-  "correta": "A. A osteocondrite de Köhler é mais comum em meninos e em crianças menores de 10 anos.",
+  "conceito": "### Osteocondroses e apofisites do pé\n| Epônimo | Local | Idade/perfil |\n|---|---|---|\n| ==Köhler== | ==navicular== | meninos de 4 a 7 anos; autolimitada |\n| ==Iselin== | ==base do 5º metatarso== (fibular curto) | adolescente ativo |\n| Freiberg | cabeça do 2º metatarso | adolescente feminina |\n| Sever | apófise do calcâneo (tendão calcâneo) | 8 a 12 anos, esportes |\n| Renander | sesamoide do hálux | |\n\n### Köhler\n- Navicular achatado, esclerótico, fragmentado.\n- Tratamento: bota gessada curta alivia a dor; reossifica sem sequela.\n\n### Iselin\n- Não confundir apófise (longitudinal) com fratura (transversa).\n\n### Köhler (osteocondrite do navicular)\n- ==Meninos== (4 a 6:1), 4 a 7 anos.\n- ==Unilateral== (bilateral em até 25%).\n- Navicular ossifica tarde e sofre compressão entre tálus e cuneiformes.\n\n> **Na prova:** Köhler = ==meninos, unilateral==",
+  "correta": "**Meninos, menores de 10 anos.**\n- Pico entre 4 e 7 anos.\n- Predomínio masculino.",
   "incorretas": {
-   "B": "O perfil de meninas mais velhas é característico da doença de Freiberg, não da doença de Köhler.",
-   "C": "A doença de Köhler predomina em meninos, não em meninas, embora a faixa etária jovem esteja correta.",
-   "D": "A doença de Köhler predomina em crianças mais jovens (antes dos 10 anos), não em crianças mais velhas."
+   "B": "**Sexo e idade errados.**\n- Freiberg é que atinge meninas adolescentes.",
+   "C": "**Sexo errado.**\n- Meninos.",
+   "D": "**Idade errada.**\n- Crianças pequenas."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0179": {
-  "conceito": "A doença de Blount **infantil** (de início precoce) tem sua prevalência e sua gravidade associadas a fatores de risco bem estabelecidos: obesidade, marcha precoce e a **raça negra**. Entre esses pacientes, o sexo **feminino** está associado a um pior prognóstico e a uma maior tendência de progressão da deformidade, sendo, portanto, o grupo (sexo feminino, raça negra) mais associado a evolução desfavorável na forma infantil da doença.",
-  "correta": "D. O pior prognóstico ocorre no sexo feminino, na raça negra.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Prognóstico da Blount infantil\n- Pior em ==meninas negras== obesas, diagnóstico tardio (> 4 anos), estágio avançado, recidiva após osteotomia.\n\n> **Na prova:** pior prognóstico da Blount infantil = ==sexo feminino, raça negra==",
+  "correta": "**Feminino, raça negra.**\n- Grupo com mais recidiva e progressão.\n- Obesidade soma risco.",
   "incorretas": {
-   "A": "O sexo masculino e a raça branca não correspondem ao perfil de pior prognóstico classicamente descrito para a forma infantil da doença de Blount.",
-   "B": "Embora a raça negra seja de fato um fator de pior prognóstico, o sexo associado a essa maior gravidade na forma infantil é o feminino, não o masculino.",
-   "C": "Embora o sexo feminino esteja corretamente associado ao pior prognóstico, a raça associada não é a branca, e sim a negra."
+   "A": "**Menor risco.**\n- Masculino branco.",
+   "B": "**Raça certa.**\n- Sexo errado.",
+   "C": "**Sexo certo.**\n- Raça errada."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0180": {
-  "conceito": "O método de Ponseti corrige o pé torto segundo a sequência CAVE. Primeiro corrige-se o cavo elevando o primeiro raio e alinhando o antepé. Em seguida, durante abdução progressiva do complexo calcaneopedal ao redor da cabeça do tálus, corrigem-se simultaneamente adução do mediopé e varo do calcâneo. O equino é o último componente tratado, porque tentar dorsifletir o pé antes de corrigir o varo e aduto pode produzir rocker-bottom. A maioria dos pacientes necessita tenotomia percutânea do Aquiles para obter dorsiflexão final. Depois, utiliza-se órtese de abdução por período prolongado para prevenir recidiva.",
-  "correta": "A alternativa A está correta. A sequência didática é cavo, aduto, varo e equino. Na prática, aduto e varo são corrigidos de maneira acoplada durante a abdução, mas o acrônimo CAVE permanece extremamente útil para provas e para lembrar que o equino deve ser tratado somente no final.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** primeira manipulação de Ponseti = ==cavo, supinando o antepé e elevando o 1º MT==",
+  "correta": "**Cavo, aduto, varo, equino (CAVE).**\n- Equino por último, geralmente com tenotomia.",
   "incorretas": {
-   "B": "Começar pelo equino viola o princípio do método e aumenta risco de deformidade em rocker-bottom.",
-   "C": "O cavo deve ser abordado antes da abdução; portanto, não pode aparecer depois de aduto e varo.",
-   "D": "Novamente coloca o equino como primeira etapa, contrariando a biomecânica da correção de Ponseti."
+   "B": "**Equino primeiro.**\n- Cria pé em mata-borrão.",
+   "C": "**Cavo fora de ordem.**\n- Cavo é o primeiro.",
+   "D": "**Equino primeiro.**\n- Proibido."
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/clubfoot"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0181": {
-  "conceito": "Durante a marcha normal, o centro de gravidade do corpo não se desloca em linha reta, ele oscila tanto no plano vertical quanto no plano horizontal (lateral), em um padrão sinusoidal suave que minimiza o gasto energético total do deslocamento. No plano **vertical**, essa oscilação tem uma amplitude de aproximadamente **4,5 cm** (o centro de gravidade está mais baixo durante o duplo apoio e mais alto durante o apoio médio/unipodal).\n\nEssa oscilação, junto com a oscilação lateral (de amplitude um pouco menor, em torno de 4 a 5 cm também), faz parte dos chamados \"determinantes da marcha\", mecanismos biomecânicos (rotação pélvica, inclinação pélvica, flexão de joelho no apoio, entre outros) que, em conjunto, suavizam a trajetória do centro de gravidade e reduzem o custo energético do caminhar.",
-  "correta": "B. O centro de gravidade oscila aproximadamente 4,5 cm no plano vertical durante a marcha normal.",
+  "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n### Altura do centro de massa\n| Momento | Altura |\n|---|---|\n| ==contato do calcanhar== (duplo apoio) | ==mais baixa== |\n| ==apoio médio== (acomodação intermediária) | ==mais alta== |\n\n- No lateral: máximo deslocamento no apoio médio, sobre o membro de apoio.\n\n### Oscilação do centro de gravidade\n| Plano | Amplitude |\n|---|---|\n| ==vertical== | ==cerca de 4,5 a 5 cm== (curva senoidal) |\n| lateral | cerca de 4 a 5 cm |\n\n> **Na prova:** oscilação vertical do centro de gravidade = ==cerca de 4,5 cm==",
+  "correta": "**4,5 cm.**\n- Curva senoidal suave.\n- Determinantes reduzem a amplitude.",
   "incorretas": {
-   "A": "3 cm subestima a amplitude de oscilação vertical classicamente descrita para a marcha normal.",
-   "C": "6 cm superestima a amplitude de oscilação vertical classicamente descrita.",
-   "D": "7,5 cm superestima consideravelmente a amplitude de oscilação vertical esperada na marcha normal."
+   "A": "**Subestima.**\n- 3 cm.",
+   "C": "**Superestima.**\n- 6 cm.",
+   "D": "**Superestima.**\n- 7,5 cm."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0182": {
-  "conceito": "O arqueamento posteromedial congênito da tíbia é uma deformidade presente ao nascimento e frequentemente associada a pé calcaneovalgo. Tíbia e fíbula apresentam curvatura posterior e medial, enquanto o pé permanece em dorsiflexão e valgo acentuados. A história natural difere radicalmente da curvatura anterolateral associada à pseudoartrose congênita: no posteromedial, a angulação tende a remodelar espontaneamente nos primeiros anos, embora permaneça discrepância de comprimento porque a tíbia cresce menos. O seguimento deve continuar até a maturidade para estimar encurtamento. Osteotomia é raramente necessária para angulação residual importante em crianças maiores; tratamento do pé costuma ser conservador.",
-  "correta": "A alternativa D está correta. A associação clássica do arqueamento posteromedial é deformidade em calcaneovalgo. Esse pareamento é muito cobrado porque permite diferenciá-lo imediatamente do arqueamento anterolateral da pseudoartrose congênita da tíbia.",
+  "conceito": "### Arqueamentos congênitos da tíbia\n| Direção | Associação | Evolução |\n|---|---|---|\n| ==posteromedial== | pé calcaneovalgo | ==corrige espontaneamente==; resta ==discrepância== (3 a 5 cm) |\n| anterolateral | ==NF1==, ==pseudartrose congênita== | piora, fratura |\n| anteromedial | hemimelia fibular | discrepância, pé valgo |\n\n### Posteromedial\n- Ao nascer: pé em dorsiflexão tocando a tíbia.\n- Angulação melhora nos primeiros anos.\n- Discrepância: epifisiodese contralateral ou alongamento na idade adequada.\n\n### Anterolateral\n- Proteger com órtese (TLSO/KAFO) até a maturidade; evitar osteotomia.\n\n> **Na prova:** arqueamento posteromedial associa-se ao ==pé calcaneovalgo==",
+  "correta": "**Calcâneo valgo.**\n- Pé encostado na tíbia ao nascer.\n- Arqueamento corrige; sobra discrepância.",
   "incorretas": {
-   "A": "Pseudoartrose congênita associa-se principalmente ao arqueamento anterolateral, não posteromedial.",
-   "B": "Platispondilia pertence a displasias esqueléticas e não é uma associação típica dessa deformidade tibial.",
-   "C": "Neurofibromatose tipo 1 associa-se fortemente à displasia anterolateral e pseudoartrose da tíbia."
+   "A": "**Anterolateral.**\n- Esse é o da pseudartrose.",
+   "B": "**Sem relação.**\n- Platispondilia é de displasias.",
+   "C": "**Anterolateral.**\n- NF1."
   },
   "referencias": [
    "https://posna.org/blogs/resident-review/december-2017/pediatric-lower-extremity-disorders"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0183": {
-  "conceito": "A terminologia da análise de marcha tem definições precisas que costumam ser cobradas de forma invertida ou trocada em prova. As definições corretas são:\n- **Passo (step)**: distância entre o contato do calcanhar de um pé e o contato do calcanhar do pé **oposto**.\n- **Passada (stride)**: distância entre o contato do calcanhar de um pé e o próximo contato do calcanhar do **mesmo** pé, corresponde a um ciclo completo da marcha.\n- **Cadência**: número de **passos por unidade de tempo** (geralmente expressa em passos por minuto).\n- **Ciclo da marcha**: sequência de eventos entre o contato inicial de um pé e o próximo contato inicial do mesmo pé, conceitualmente equivalente, em termos de distância percorrida, à passada.\n\nA definição de cadência como \"passos por tempo\" é direta e está correta como apresentada na alternativa B, enquanto as demais alternativas trocam as definições de passo, passada e ciclo da marcha entre si.",
-  "correta": "B. Cadência é definida como o número de passos por unidade de tempo.",
+  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n### Parâmetros lineares\n| Parâmetro | Definição |\n|---|---|\n| ==passo== | distância entre o ==calcanhar de um pé e o do outro== (no duplo apoio) |\n| passada (ciclo) | distância entre dois contatos do ==mesmo pé== = 2 passos |\n| cadência | passos por minuto |\n| velocidade | passada × cadência |\n| base de apoio | distância lateral entre os pés |\n\n> **Na prova:** distância entre calcanhares dos dois pés = ==passo==",
+  "correta": "**Cadência = passos por tempo.**\n- Em geral por minuto.\n- As outras trocam passo e passada.",
   "incorretas": {
-   "A": "A definição apresentada (distância entre impactos sucessivos do mesmo pé) corresponde à passada, e não estritamente ao \"ciclo da marcha\" descrito dessa forma.",
-   "C": "A definição apresentada corresponde à passada (mesmo pé a mesmo pé), não ao comprimento do passo, que é medido entre pés opostos.",
-   "D": "A definição apresentada (impacto de um pé até o impacto do pé oposto) corresponde ao comprimento do passo, não à passada, que é definida entre impactos do mesmo pé."
+   "A": "**Ciclo é tempo e eventos.**\n- A definição dada é da passada.",
+   "C": "**Descreve a passada.**\n- Passo é entre os dois pés.",
+   "D": "**Descreve o passo.**\n- Passada é do mesmo pé."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0184": {
-  "conceito": "A classificação radiográfica de **Langenskiöld** para a doença de Blount descreve seis estágios progressivos de acometimento da fise medial proximal da tíbia. O **estágio II** é caracterizado por:\n- Formação inicial de um **bico ósseo medial** na metáfise (menos proeminente que nos estágios mais avançados).\n- **Radiotransparência e irregularidade da epífise** medial.\n- Nesse estágio, a fise ainda não desenvolveu uma barra óssea verdadeira nem um degrau metafisário estabelecido (achados dos estágios mais avançados, III em diante), por isso o tratamento ainda pode ser tentado de forma conservadora, com **órteses**, antes de se considerar cirurgia.\n\nÀ medida que a doença progride para os estágios III, IV e V, os achados radiográficos se tornam mais graves (barra óssea, degrau metafisário, fragmentação epifisária), e o tratamento cirúrgico (osteotomia, eventualmente associada a procedimentos sobre a fise) se torna necessário.",
-  "correta": "B. O estágio II de Langenskiöld caracteriza-se por bico medial, radiotransparência da epífise e tratamento com órteses.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Órtese (KAFO)\n- Indicação: ==< 3 anos==, ==Langenskiöld I-II==, especialmente unilateral.\n- Órtese de apoio com força valgizante, uso diurno na marcha.\n- Sem melhora em cerca de 1 ano ou > 4 anos: ==osteotomia valgizante== da tíbia (hipercorrigir).\n\n> **Na prova:** Blount unilateral aos 2,5 anos, estágio II = ==órtese==",
+  "correta": "**Bico medial, radiolucência epifisária, órtese.**\n- Estágio inicial.\n- Órtese em crianças pequenas.",
   "incorretas": {
-   "A": "O bico lateral não é um achado da doença de Blount, que acomete a fise medial, além disso, o tratamento cirúrgico é reservado a estágios mais avançados.",
-   "C": "A barra óssea e o degrau metafisário são achados de estágios mais avançados (a partir do estágio III), que já exigem tratamento cirúrgico.",
-   "D": "A dupla placa epifisária não é um achado característico do estágio II de Langenskiöld."
+   "A": "**Bico lateral.**\n- É medial.",
+   "C": "**Barra é estágio IV.**\n- Não II.",
+   "D": "**Dupla placa é V.**\n- Não II."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0185": {
-  "conceito": "O método de Ponseti para o tratamento do pé torto congênito segue uma sequência específica e bem definida de correção dos componentes da deformidade (cavo, aduto, varo e equino), e um dos princípios fundamentais do método é **nunca corrigir o componente de supinação do antepé por meio de pronação forçada**. Essa manobra é expressamente **proscrita** porque a pronação do antepé, nesse contexto, tende a **acentuar o cavo** (por rodar o antepé pronado sobre um retropé ainda em varo, aumentando a deformidade em vez de corrigi-la), o cavo, na verdade, já é corrigido indiretamente no primeiro tempo do método, supinando levemente o antepé para alinhá-lo ao retropé antes de iniciar a abdução sob a cabeça do tálus.\n\nA correção segue a sequência CAVE: **C**avo (corrigido junto ao primeiro passo), **A**duto e **V**aro (corrigidos simultaneamente pela abdução do pé sob a cabeça do tálus, usada como fulcro), e **E**quino (corrigido por último, frequentemente com tenotomia percutânea do tendão calcâneo).",
-  "correta": "B. É proscrita a realização de pronação do antepé como tentativa de corrigir a supinação, pois essa manobra tende a acentuar o cavo em vez de corrigi-lo.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** primeira manipulação de Ponseti = ==cavo, supinando o antepé e elevando o 1º MT==",
+  "correta": "**Pronar o pé.**\n- Aumenta o cavo e bloqueia a correção.\n- Supina-se o antepé no primeiro gesso.",
   "incorretas": {
-   "A": "A correção do cavo é feita logo no início do tratamento, supinando levemente o antepé, não é proscrita, é parte da sequência padrão.",
-   "C": "A correção do equino é, de fato, feita por último no método de Ponseti, essa é a sequência correta, não uma prática proscrita.",
-   "D": "A abdução do pé sob a cabeça do tálus é justamente a manobra usada para corrigir o aduto e o varo, é o princípio central do método, não algo proscrito."
+   "A": "**Correto.**\n- O cavo é o primeiro.",
+   "C": "**Correto.**\n- Equino por último.",
+   "D": "**Correto.**\n- Abdução corrige o aduto."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0186": {
