@@ -2491,113 +2491,113 @@
   "conferido": false
  },
  "trauma-0225": {
-  "conceito": "O SINAL DO ARQUEADO (arcuate sign) é o achado radiográfico de uma pequena FRATURA POR AVULSÃO DA CABEÇA/PROCESSO ESTILOIDE DA FÍBULA, no ponto de inserção do complexo do ligamento arqueado (arcuate ligament complex), uma das estruturas do canto posterolateral do joelho. Sua presença numa radiografia AP sinaliza lesão do CANTO POSTEROLATERAL, um achado importante porque essa lesão, se não identificada e tratada, compromete a estabilidade rotacional do joelho e pode levar ao insucesso de uma reconstrução isolada do ligamento cruzado.",
-  "correta": "A. O sinal do arqueado corresponde a uma fratura por avulsão da cabeça da fíbula, no ponto de inserção do complexo arqueado do canto posterolateral.",
+  "conceito": "### Sinais radiográficos de lesão ligamentar do joelho\n| Sinal | Achado | Lesão |\n|---|---|---|\n| ==arqueado (arcuate)== | ==avulsão da cabeça/estiloide da fíbula== | ==canto posterolateral== (complexo arqueado, LCL, bíceps) |\n| Segond | avulsão do platô lateral | LCA (ligamento anterolateral) |\n| Segond reverso | avulsão do platô medial | LCP + LCM |\n| Pellegrini-Stieda | calcificação no LCM femoral | LCM crônico |\n| eminência intercondilar | avulsão da espinha | LCA |\n\n- Sinal arqueado: alta associação com LCP e luxação do joelho; investigar vasos e fibular.\n\n> **Na prova:** sinal arqueado = ==fratura (avulsão) da cabeça da fíbula==",
+  "correta": "**Fratura da cabeça da fíbula.**\n- Avulsão do complexo arqueado.\n- Lesão do canto posterolateral.",
   "incorretas": {
-   "B": "A lesão do ligamento colateral medial não produz o sinal do arqueado, que é um achado específico da fíbula proximal e do canto posterolateral.",
-   "C": "A lesão isolada do ligamento cruzado anterior não gera o sinal do arqueado; o achado radiográfico associado ao LCA é mais classicamente a fratura de Segond, na tíbia lateral.",
-   "D": "A fratura da eminência intercondilar da tíbia é um achado distinto, associado à avulsão do ligamento cruzado anterior em sua inserção tibial, não ao complexo arqueado da fíbula."
+   "B": "**LCM.**\n- Pellegrini-Stieda (crônico).",
+   "C": "**LCA.**\n- Sinal de Segond.",
+   "D": "**Eminência.**\n- Avulsão tibial do LCA."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 60"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0227": {
-  "conceito": "O cotovelo é a articulação que mais enrijece depois de um trauma, pela combinação de três características que poucas articulações reúnem: é muito **congruente** (três articulações em uma cápsula: umeroulnar, radiocapitelar e radioulnar proximal), tem uma **cápsula fina** que reage à hemartrose com fibrose intensa, e está envolvido por músculos que se aderem diretamente a ela, sobretudo o **braquial**, cuja face posterior repousa sobre a cápsula anterior.\n\nDepois de uma fratura da cabeça do rádio, a hemartrose distende a cápsula, a resposta inflamatória deposita colágeno desorganizado, e o cotovelo, que naturalmente repousa em flexão (a posição de maior volume capsular e menor pressão intra-articular, a posição antálgica), consolida essa fibrose em encurtamento. O resultado é a **contratura capsular**, causa mais comum de rigidez nesse cenário, e, por isso mesmo, a perda predominante é a de **extensão**, isto é, a contratura em flexão.\n\nDuas consequências práticas seguem daí:\n- A mais importante do tratamento das fraturas da cabeça do rádio: **mobilizar precocemente**. Fraturas tipo I e boa parte das tipo II sem bloqueio mecânico são tratadas com imobilização de poucos dias, apenas para conforto, seguida de movimento ativo; a aspiração do hematoma articular com infiltração de anestésico, além de valor diagnóstico no teste da lidocaína, alivia a dor e permite iniciar o arco mais cedo\n- Quando a fixação é feita, ela precisa ser estável o bastante para permitir movimento imediato; uma síntese frágil que obrigue a imobilizar troca um problema por outro\n\nAs demais causas de rigidez existem e devem ser reconhecidas: a ossificação heterotópica (mais ligada ao trauma de alta energia, à fratura-luxação, ao traumatismo craniencefálico e à mobilização passiva forçada), a incongruência articular residual, os corpos livres, os osteófitos que preenchem as fossas e a proeminência de material de síntese.",
-  "correta": "A. A CONTRATURA CAPSULAR é a causa mais comum de rigidez após a fratura da cabeça do rádio: a hemartrose e a fibrose subsequente encurtam uma cápsula fina, aderida ao músculo braquial, em um cotovelo que repousa espontaneamente em flexão, daí a perda predominante de extensão.",
+  "conceito": "### Rigidez do cotovelo pós-trauma\n- Articulação muito congruente, cápsula que ==fibrosa rápido==, braquial sobre a cápsula (ossificação heterotópica).\n\n### Causas\n| Causa | Frequência |\n|---|---|\n| ==contratura capsular== | ==a mais comum== (extrínseca) |\n| ossificação heterotópica | TCE, queimadura, cirurgia tardia, luxação |\n| bloqueio ósseo/consolidação viciosa | intrínseca |\n| material saliente | ocasional |\n\n### Prevenção e tratamento\n- Mobilização precoce (< 2 semanas); órteses progressivas (estáticas/dinâmicas).\n- Liberação capsular (aberta/artroscópica) se arco < 100° após 6 meses.\n- Arco funcional (Morrey): ==30 a 130°== de flexoextensão, 50/50 de rotação.\n\n> **Na prova:** rigidez após cabeça do rádio = ==contratura capsular==",
+  "correta": "**Contratura capsular.**\n- Causa mais comum.\n- Mobilização precoce previne.",
   "incorretas": {
-   "B": "A fragmentação óssea, quando produz incongruência articular residual ou corpo livre, causa rigidez de tipo INTRÍNSECO, mas é bem menos frequente que a contratura capsular e tem um marcador clínico próprio: o bloqueio mecânico, com sensação de travamento, e não a perda progressiva e simétrica do arco.",
-   "C": "A ossificação heterotópica é causa importante de rigidez do cotovelo, mas está mais associada ao trauma de ALTA ENERGIA, à fratura-luxação, ao traumatismo craniencefálico, à queimadura e à mobilização passiva forçada, e não à fratura isolada da cabeça do rádio, que é tipicamente de menor energia.",
-   "D": "A proeminência de material de síntese pode limitar o movimento, sobretudo quando o implante sai da zona de segurança e impacta contra a incisura radial da ulna. É um erro técnico evitável e uma causa pontual, não a explicação habitual da rigidez pós-traumática."
+   "B": "**Fragmentação.**\n- Bloqueio ósseo, menos comum.",
+   "C": "**Ossificação heterotópica.**\n- Menos frequente.",
+   "D": "**Material saliente.**\n- Ocasional."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 39"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0228": {
-  "conceito": "Fraturas do fêmur proximal em idosos ocorrem tipicamente por quedas da própria altura, e o mesmo evento de queda que causa a fratura transtrocantérica frequentemente também traumatiza o membro superior usado para amortecer a queda, o punho estendido de apoio absorve parte do impacto, produzindo uma fratura associada do RÁDIO DISTAL, classicamente do mesmo lado (ipsilateral) por ser o braço usado no reflexo de proteção durante a queda lateral sobre o quadril.",
-  "correta": "B. A fratura transtrocantérica do fêmur está mais comumente associada, pelo mesmo mecanismo de queda, à fratura do rádio distal ipsilateral, sofrida ao apoiar o braço durante a queda.",
+  "conceito": "### Fraturas associadas no idoso\n- Queda da própria altura: impacto lateral no quadril e mão estendida do ==mesmo lado==.\n- Associação mais frequente com a transtrocantérica: ==rádio distal ipsilateral==; também úmero proximal.\n- Fratura de punho após os 50 anos é ==sentinela de osteoporose== (prever fratura de quadril).\n\n### Implicações\n| Situação | Conduta |\n|---|---|\n| quadril + punho ipsilateral | fixar o punho para permitir apoio em andador |\n| fratura por fragilidade | densitometria, tratamento da osteoporose, prevenção de quedas |\n\n### Transtrocantérica (AO 31A)\n| Tipo | Detalhe | Implante |\n|---|---|---|\n| A1 | simples, estável | DHS ou haste |\n| A2 | multifragmentada, parede lateral fina | haste |\n| A3 | intertrocantérica reversa/transversa | ==haste cefalomedular== |\n\n> **Na prova:** transtrocantérica associa-se a fratura do ==rádio distal ipsilateral==",
+  "correta": "**Rádio distal ipsilateral.**\n- Mesma queda.\n- Mão do lado do impacto.",
   "incorretas": {
-   "A": "A fratura do acetábulo ipsilateral não é a associação mais comumente descrita para o mecanismo de queda simples do idoso.",
-   "C": "A fratura do tornozelo contralateral não é a associação clássica descrita para esse mecanismo de trauma.",
-   "D": "A fratura do úmero proximal contralateral não é a associação mais comumente citada para a fratura transtrocantérica por queda."
+   "A": "**Acetábulo.**\n- Alta energia.",
+   "C": "**Tornozelo contralateral.**\n- Sem relação.",
+   "D": "**Úmero contralateral.**\n- Mecanismo não explica."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 53"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0229": {
-  "conceito": "A perna tem quatro compartimentos fasciais:\n- **Anterior**: tibial anterior, extensor longo dos dedos, extensor longo do hálux, fibular terceiro, com o nervo fibular profundo e a artéria tibial anterior\n- **Lateral**: fibular longo e curto, com o nervo fibular superficial\n- **Posterior superficial**: gastrocnêmio, sóleo e plantar, com o nervo sural\n- **Posterior profundo**: tibial posterior, flexor longo dos dedos e do hálux, com o nervo tibial e as artérias tibial posterior e fibular\n\nO compartimento **anterior** é o mais frequentemente acometido pela síndrome compartimental aguda após fratura da diáfise tibial, e há razões anatômicas para isso: ele é o menor e o mais rígido dos quatro, delimitado pela tíbia medialmente, pela fíbula lateralmente, pela membrana interóssea posteriormente e pela fáscia densa e pouco complacente anteriormente, uma caixa praticamente inextensível. Além disso, é o que fica em contato direto com o foco de fratura e recebe o hematoma.\n\nO compartimento **lateral**, que divide com ele o mesmo envelope fascial rígido da face anterolateral, é acometido em seguida, e é por isso que os dois são abertos pela mesma incisão. Já o compartimento posterior **profundo** é o mais traiçoeiro, porque está encoberto pela massa do tríceps sural e a sua tensão não é palpável: é ele o responsável pelas sequelas de garra dos dedos e do hálux quando a fasciotomia é incompleta.\n\nO diagnóstico é **clínico**: dor desproporcional, dor ao estiramento passivo dos dedos (o sinal mais precoce e sensível), tensão compartimental à palpação e parestesia; o pulso presente não afasta o diagnóstico, porque a pressão que mata o músculo é muito inferior à sistólica. No paciente sedado, intubado ou com bloqueio regional, mede-se a pressão: diferencial (delta-P) menor que 30 mmHg em relação à diastólica indica fasciotomia.\n\nO tratamento é a descompressão **ampla** dos quatro compartimentos, em regra por duas incisões, lateral e posteromedial.",
-  "correta": "B. O compartimento ANTERIOR é o mais frequentemente acometido: é o menor e o mais rígido dos quatro, contido entre tíbia, fíbula, membrana interóssea e uma fáscia pouco complacente, e é o que recebe diretamente o hematoma da fratura diafisária.",
+  "conceito": "### Compartimentos da perna\n| Compartimento | Conteúdo | Teste |\n|---|---|---|\n| ==anterior== | tibial anterior, extensores; ==fibular profundo==, tibial anterior | dor à flexão plantar passiva; hipoestesia do 1º espaço |\n| lateral | fibulares; fibular superficial | dor à inversão passiva |\n| posterior superficial | gastrocnêmio, sóleo; sural | dor à dorsiflexão |\n| posterior profundo | tibial posterior, flexores; tibial, tibial posterior | dor à extensão dos dedos |\n\n- ==Anterior== é o ==mais acometido== (pouca complacência, junto à tíbia).\n- Posterior profundo: frequentemente não descomprimido (deve ser aberto na fasciotomia).\n\n### Fasciotomia de dupla incisão\n- Lateral (anterior + lateral) e medial (posteriores).\n\n> **Na prova:** compartimento mais acometido = ==anterior==",
+  "correta": "**Anterior.**\n- Pouco complacente.\n- Fibular profundo em risco.",
   "incorretas": {
-   "A": "O compartimento lateral é acometido com frequência, logo depois do anterior, e por isso os dois são abertos pela mesma incisão lateral, mas o mais frequente dos quatro é o ANTERIOR. É no lateral que corre o nervo fibular superficial, cuidado obrigatório da fasciotomia.",
-   "C": "O compartimento posterior profundo é o mais TRAIÇOEIRO (está encoberto pelo tríceps sural, não dá tensão palpável e é o responsável pelas sequelas em garra quando a fasciotomia é incompleta), mas não é o mais frequentemente acometido.",
-   "D": "O compartimento posterior superficial é o mais amplo e complacente dos quatro, contendo gastrocnêmio, sóleo e plantar dentro de uma fáscia que se distende com relativa facilidade. É o menos frequentemente acometido."
+   "A": "**Lateral.**\n- Menos frequente.",
+   "C": "**Posterior profundo.**\n- Temido, mas menos comum.",
+   "D": "**Posterior superficial.**\n- Mais complacente."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 16"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0231": {
-  "conceito": "Na fratura de **Galeazzi** (fratura da diáfise do rádio com lesão da articulação radioulnar distal, RUD) a fratura é a parte fácil; o desafio é reconhecer a lesão articular, que é a que determina o resultado. A RUD é estabilizada sobretudo pelos ligamentos radioulnares dorsal e volar, componentes do complexo da fibrocartilagem triangular, que se ancoram na fóvea da ulna, na base do estiloide.\n\nExiste um conjunto de sinais radiográficos de **alta suspeição**, e vale decorá-los como lista:\n- **Encurtamento do rádio maior que 5 mm** em relação à ulna (medido na incidência em frente, comparando com o lado contralateral)\n- **Traço de fratura a menos de 7,5 cm** da superfície articular distal do rádio (Rettig e Raskin mostraram instabilidade em cerca de metade desses casos, contra uma pequena minoria dos traços mais proximais)\n- **Alargamento** do espaço da radioulnar distal na incidência em frente\n- **Luxação** da ulna em relação ao rádio na incidência em perfil\n- **Fratura da base do estiloide da ulna**, que arranca a fóvea junto com a inserção profunda dos ligamentos radioulnares, ao contrário da fratura da ponta, que desinsere apenas fibras superficiais e não significa instabilidade\n\nReunidos, esses achados justificam a expressão de Campbell, \"fratura da **necessidade**\": no adulto, a osteossíntese com placa é obrigatória, porque o pronador quadrado, o braquiorradial e o extensor longo do polegar puxam o fragmento distal em encurtamento, pronação e desvio radial, e nenhum gesso segura isso.\n\nFeita a placa e restaurados comprimento e curvatura do rádio, **testa-se** a RUD no intraoperatório: se estável, mobiliza-se; se instável mas redutível, imobiliza-se em **supinação** por quatro a seis semanas, com ou sem fio transfixando a articulação; se irredutível, explora-se, porque em regra há interposição do tendão do extensor ulnar do carpo.",
-  "correta": "C. Os dois parâmetros de alta suspeição citados são o encurtamento do rádio MAIOR QUE 5 mm e o traço de fratura a até 7,5 cm da superfície articular distal do rádio, quanto mais distal o traço, mais perto ele passa das inserções ligamentares da radioulnar distal.",
+  "conceito": "### Fratura de Galeazzi\n- Diáfise do ==rádio== (terço distal) + lesão da ==radioulnar distal== (RUD).\n- \"Fratura da necessidade\": no adulto exige ==placa== (pronador quadrado, braquiorradial e abdutor longo desviam o fragmento).\n\n### Sinais de instabilidade da RUD\n| Sinal | Detalhe |\n|---|---|\n| ==traço a < 7,5 cm== da superfície articular | maior chance de RUD instável (Rettig e Raskin) |\n| ==fratura da base do estiloide ulnar== | inserção da fóvea do TFCC |\n| alargamento da RUD no AP | |\n| luxação da ulna no perfil | |\n| encurtamento do rádio > 5 mm | |\n\n### Conduta na RUD após fixar o rádio\n| Achado | Conduta |\n|---|---|\n| estável | mobilização |\n| estável em supinação | imobilizar em supinação 4 a 6 semanas |\n| instável | fixar estiloide/reparar TFCC; fios radioulnares |\n| irredutível | abrir (ECU interposto) |\n\n> **Na prova:** suspeita de lesão da RUD = encurtamento do rádio ==> 5 mm== e traço ==até 7,5 cm==",
+  "correta": "**5 mm e 7,5 cm.**\n- Encurtamento significativo.\n- Traço distal.",
   "incorretas": {
-   "A": "Acerta a distância de 7,5 cm, mas erra o encurtamento: 2 mm está dentro da variação de medida e da variância ulnar fisiológica, e não caracteriza sinal de alarme. O limiar consagrado é de 5 mm.",
-   "B": "Erra os dois valores. O encurtamento de 2 mm não é preditor, e 10 cm ultrapassa a distância crítica: acima de 7,5 cm da articulação, a instabilidade da radioulnar distal passa a ser a exceção.",
-   "D": "Acerta o encurtamento de 5 mm, mas erra a distância: o limiar estabelecido é 7,5 cm, e não 10 cm. Traços mais proximais que 7,5 cm têm risco baixo de instabilidade da radioulnar distal."
+   "A": "**2 mm.**\n- Pouco encurtamento.",
+   "B": "**2 mm e 10 cm.**\n- Ambos errados.",
+   "D": "**10 cm.**\n- Distância maior que a descrita."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 41"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0232": {
-  "conceito": "A fratura do úmero proximal **impactada em valgo** é um padrão particular e vale entendê-la separadamente, porque contraria a intuição em dois pontos.\n\nEla resulta de uma carga axial transmitida pelo membro superior (a queda com a mão espalmada) com o ombro em flexão, abdução e rotação interna. Nessa posição, a força sobe pelo eixo do úmero e impacta a cabeça contra a glenoide e o acrômio: o segmento articular báscula em valgo e afunda entre os dois tubérculos, que se afastam lateralmente como as abas de um livro que se abre. O aspecto radiográfico é dramático (a cabeça deitada, olhando para cima, e os tubérculos desviados), e a fratura frequentemente se classifica como de quatro partes de Neer.\n\nE aqui está a contradição útil: apesar do aspecto, a fratura impactada em valgo tem risco de **osteonecrose menor** do que as demais de quatro partes, porque o periósteo medial costuma permanecer íntegro — a cabeça bascula, mas não se destaca completamente da dobradiça medial, e continua sendo perfundida por essa ponte. É exatamente o que os critérios de Hertel formalizam: o que prediz isquemia é a dobradiça medial desviada mais de 2 mm, a extensão metafisária menor que 8 mm e o traço no colo anatômico, e a valgo-impactada típica não preenche esses critérios.\n\nA consequência terapêutica é importante: essa é a fratura em que vale a pena tentar a **redução e fixação** (elevando a cabeça, enxertando o defeito metafisário resultante e reancorando os tubérculos) em vez de partir para a artroplastia, mesmo em pacientes mais velhos, desde que a redução seja feita com cuidado para não destruir a dobradiça medial, que é justamente o que mantém a cabeça viva.",
-  "correta": "B. O mecanismo é a queda com a mão espalmada e o ombro em FLEXÃO, ABDUÇÃO e ROTAÇÃO INTERNA: a carga axial impacta a cabeça, que bascula em valgo e afunda entre os tubérculos, poupando em geral o periósteo medial.",
+  "conceito": "### Irrigação da cabeça umeral\n- ==Circunflexa umeral posterior==: cerca de 2/3 da perfusão (dado mais recente).\n- Circunflexa anterior: ramo arqueado de Laing no sulco bicipital.\n\n### Critérios de Hertel (isquemia)\n| Preditor | Limite |\n|---|---|\n| ==extensão metafisária posteromedial== | ==< 8 mm== (calcar curto) |\n| ==dobradiça medial rompida== | ==desvio > 2 mm== |\n| padrão | fratura do colo anatômico |\n\n- Os dois primeiros juntos: valor preditivo de isquemia de cerca de 97%.\n- Isquemia inicial nem sempre evolui para necrose.\n\n### Neer\n| Partes | Conceito |\n|---|---|\n| 1 a 4 | segmento desviado > 1 cm ou > 45° |\n| luxação/split da cabeça | |\n\n### Impactada em valgo\n- Queda com a mão espalmada e ombro em ==flexão, abdução e rotação interna==: carga axial empurra a diáfise para dentro da cabeça.\n- Cabeça ==inclina em valgo== e as tuberosidades se afastam lateralmente.\n- Dobradiça medial frequentemente ==preservada==: irrigação poupada, necrose menor que parece.\n\n> **Na prova:** valgo impactado = ombro em ==flexão, abdução e rotação interna==",
+  "correta": "**Flexão, abdução, rotação interna.**\n- Carga axial empurra a diáfise.\n- Cabeça inclina em valgo.",
   "incorretas": {
-   "A": "A ADUÇÃO não reproduz o vetor que impacta a cabeça em valgo: com o braço junto ao corpo, a carga axial tende a produzir impactação em VARO, que é o padrão oposto. E a rotação externa afasta o tubérculo maior da linha de impacto.",
-   "C": "Erra as três posições. Com o ombro em extensão e adução a força se transmite por outro eixo, e a rotação externa muda a relação entre a cabeça e a glenoide, nenhuma delas corresponde ao mecanismo descrito para a valgo-impactada.",
-   "D": "Acerta a abdução e a rotação interna, mas erra a extensão: é a FLEXÃO do ombro, na queda para a frente sobre a mão espalmada, que alinha o eixo do úmero com o vetor da carga e produz a impactação em valgo."
+   "A": "**Adução e RE.**\n- Produz varo.",
+   "C": "**Extensão e adução.**\n- Mecanismo de varo.",
+   "D": "**Extensão.**\n- Posição errada."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 35"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0233": {
-  "conceito": "A transposição anterior do nervo ulnar após a redução e fixação interna da fratura distal do úmero é um tema com alguma variação na prática entre cirurgiões, mas há um critério amplamente aceito para indicá-la de forma **rotineira**, e não apenas seletiva: a **presença de neuropatia ulnar prévia** à cirurgia.\n\nQuando o paciente já chega com sintomas de disfunção do nervo ulnar (parestesia no quarto e quinto dedos, fraqueza da musculatura intrínseca da mão), o nervo já está mecanicamente comprometido antes mesmo da manipulação cirúrgica, e mantê-lo na sua posição anatômica original (no túnel cubital, junto à fratura e ao material de síntese que ali será colocado) o expõe a um risco adicional de piora.\n\nTranspor esse nervo para uma posição anterior, longe do foco de fratura e da instrumentação cirúrgica, reduz esse risco e cria condições mais favoráveis para a recuperação da função nervosa já comprometida.\n\nEm contraste, num nervo sem sintomas prévios, a decisão de transpor rotineiramente (versus apenas neurólise e proteção in situ) varia mais entre serviços e não é um consenso tão claro quanto o critério de neuropatia prévia.",
-  "correta": "A. A presença de neuropatia ulnar prévia à cirurgia é o critério mais amplamente aceito para indicar a transposição anterior de rotina, protegendo um nervo já comprometido do foco de fratura e da instrumentação cirúrgica.",
+  "conceito": "### Úmero distal: nervos\n| Nervo | Relação | Risco |\n|---|---|---|\n| ==ulnar== | sulco atrás do epicôndilo medial, túnel cubital | ==o mais acometido== (trauma, cirurgia, placa medial, neurite tardia) |\n| radial | sulco espiral/septo lateral (diafisária distal) | Holstein-Lewis |\n| mediano | anterior | raro |\n\n### Conduta\n- ==Identificar e proteger (ou transpor anteriormente)== o ulnar na RAFI.\n- Via posterior (osteotomia do olécrano, paratricipital).\n\n### Transposição do ulnar\n- Consenso: transpor quando há ==neuropatia prévia== (sintomas antes da fratura) ou nervo em contato com o implante/instável.\n- Transposição de rotina é controversa: não reduz neuropatia pós-operatória em estudos comparativos.\n\n> **Na prova:** transposição indicada = ==neuropatia prévia==",
+  "correta": "**Neuropatia prévia.**\n- Indicação aceita.\n- Rotina é controversa.",
   "incorretas": {
-   "B": "O uso de placa medial é um fator que pode influenciar a decisão de alguns cirurgiões, mas não é o critério mais amplamente estabelecido para a indicação rotineira de transposição, esse é a neuropatia ulnar prévia.",
-   "C": "A localização específica da fratura (tróclea e capítulo) não é, por si só, o critério mais estabelecido para a indicação rotineira de transposição do nervo ulnar.",
-   "D": "A fixação com placas paralelas, embora frequentemente envolva uma placa medial, não é isoladamente o critério mais aceito para indicar transposição de rotina, o critério central é a presença de neuropatia prévia."
+   "B": "**Placa medial.**\n- Não obriga transpor.",
+   "C": "**Tróclea e capítulo.**\n- Não é critério.",
+   "D": "**Placas paralelas.**\n- Não é critério isolado."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0234": {
-  "conceito": "A **tríade da mulher atleta** é uma síndrome descrita originalmente pelo Colégio Americano de Medicina do Esporte, reconhecendo que o excesso de treinamento associado a ingestão calórica insuficiente cria uma cascata hormonal e metabólica com repercussão direta no esqueleto.\n\nOs três componentes clássicos são:\n\n- **Disponibilidade energética baixa** (com ou sem transtorno alimentar declarado).\n- **Disfunção menstrual** (desde ciclos irregulares até amenorreia).\n- **Baixa densidade mineral óssea** (osteopenia ou osteoporose precoce).\n\nO elo entre esses três componentes é hormonal: a baixa disponibilidade energética suprime o eixo hipotálamo-hipófise-ovariano, reduzindo o estrogênio circulante, e o estrogênio é fundamental para conter a reabsorção óssea mediada por osteoclastos.\n\nSem esse freio hormonal, o osso perde massa e, mais importante para a prova, perde também resistência à fadiga, o que torna a atleta muito mais suscetível a fraturas por estresse mesmo sob cargas de treino que antes eram bem toleradas.\n\nReconhecer a tríade é clinicamente relevante porque a fratura de estresse recorrente ou em local atípico numa atleta jovem deve, sempre, levantar a suspeita dessa síndrome de base: tratar apenas a fratura sem investigar e corrigir o desequilíbrio energético e hormonal expõe a atleta a recidivas.",
-  "correta": "C. A tríade da mulher atleta (baixa disponibilidade energética, disfunção menstrual e baixa densidade óssea) reduz a resistência do osso à fadiga pela supressão do estrogênio, sendo fator de risco reconhecido para fratura por estresse.",
+  "conceito": "### Tríade da mulher atleta (RED-S)\n| Componente | Mecanismo |\n|---|---|\n| baixa disponibilidade energética (com ou sem transtorno alimentar) | gasto > ingestão |\n| disfunção menstrual (amenorreia hipotalâmica) | estrogênio baixo |\n| ==baixa densidade mineral óssea== | reabsorção aumentada |\n\n- Consequência: ==fraturas por estresse== (colo do fêmur, pelve, sacro, tíbia, metatarsos), inclusive de alto risco.\n- Hoje ampliada para ==RED-S== (deficiência energética relativa no esporte), inclui homens.\n\n### Conduta\n- Equipe multidisciplinar: nutrição, ginecologia/endocrinologia, psicologia; densitometria.\n\n> **Na prova:** tríade da mulher atleta = risco de ==fratura por estresse==",
+  "correta": "**Fratura por estresse.**\n- Osso pobre sob carga repetitiva.\n- Inclusive sítios de alto risco.",
   "incorretas": {
-   "A": "A pubalgia atlética tem outros fatores de risco (desequilíbrio muscular abdominal/adutor, sobrecarga rotacional do quadril), sem relação direta estabelecida com a tríade da mulher atleta.",
-   "B": "A espondilolistese ístmica está relacionada a esportes com hiperextensão repetitiva da coluna lombar (ginástica, balé), não à tríade da mulher atleta como fator de risco reconhecido.",
-   "D": "A lesão condral do joelho decorre principalmente de trauma direto ou sobrecarga mecânica articular, sem o mecanismo hormonal de fragilidade óssea que caracteriza a relação entre a tríade e a fratura por estresse."
+   "A": "**Pubalgia.**\n- Desequilíbrio muscular.",
+   "B": "**Espondilolistese.**\n- Ginastas, mas não pela tríade.",
+   "D": "**Lesão condral.**\n- Sem relação."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.14"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0235": {
   "conceito": "O **ângulo de Matta** (arco do teto, ou \"roof arc angle\") é uma medida radiográfica usada para avaliar, nas três incidências padrão (AP, alar e obturatriz), quanto da cúpula acetabular de sustentação de carga permanece intacta e ligada ao ilíaco numa fratura com traço transverso.\n\nUm ângulo menor que 45 graus em qualquer uma das três incidências sugere que uma porção insuficiente do teto permanece íntegra, indicando tratamento cirúrgico (e não o contrário: ângulos maiores que 45 graus são os que sugerem teto suficientemente preservado para considerar tratamento conservador).\n\nUma limitação importante e específica desse sistema de medida é que ele não avalia adequadamente a **parede posterior**: quando há um componente de parede posterior associado ao traço transverso, essa porção precisa ser avaliada separadamente (geralmente por tomografia computadorizada ou pela avaliação direta do tamanho do fragmento), porque a metodologia do arco do teto não foi validada, nem se aplica bem, à avaliação da integridade da parede posterior isoladamente.\n\nDa mesma forma, o sistema não é aplicável às fraturas de **dupla coluna**, nas quais, por definição, nenhuma porção do teto permanece ligada ao ilíaco, não havendo, portanto, arco algum para medir.",
