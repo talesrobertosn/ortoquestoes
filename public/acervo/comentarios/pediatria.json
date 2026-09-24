@@ -1873,118 +1873,118 @@
   "conferido": false
  },
  "pediatria-0129": {
-  "conceito": "Sinovite transitória é causa comum de quadril doloroso agudo na infância, predominando em meninos entre aproximadamente 3 e 8 anos, com média próxima de 6 anos. Geralmente há claudicação, dor e limitação dolorosa, mas pouco comprometimento sistêmico. O principal diagnóstico a excluir é artrite séptica. Os critérios de Kocher incluem febre acima de 38,5 graus, incapacidade de apoiar, velocidade de hemossedimentação acima de 40 mm/h e leucócitos acima de 12.000/mm³; posteriormente Caird acrescentou proteína C reativa acima de 2 mg/dL. Nenhum critério substitui julgamento clínico ou aspiração quando existe forte suspeita. Sinovite transitória costuma melhorar rapidamente com repouso e anti-inflamatórios.",
-  "correta": "A alternativa C está correta. Sinovite transitória predomina em meninos e a idade média é aproximadamente 6 anos. Incapacidade de apoiar o membro é um dos critérios clássicos de Kocher que aumenta a probabilidade de artrite séptica. A alternativa reúne corretamente epidemiologia e estratificação diagnóstica.",
+  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** sinovite transitória = ==meninos de ~6 anos==; Kocher inclui ==não apoiar o membro==",
+  "correta": "**Meninos, 6 anos; não apoiar o membro.**\n- Perfil epidemiológico correto.\n- Incapacidade de apoio é critério de Kocher.",
   "incorretas": {
-   "A": "O valor de VHS acima de 40 mm/h é realmente um critério de Kocher, porém a doença não predomina em meninas.",
-   "B": "Erra sexo e idade média e ainda utiliza leucocitose acima de 20.000, quando o limiar clássico do algoritmo é acima de 12.000/mm³.",
-   "D": "A febre acima de 38,5 graus é critério válido, mas a idade média de 2 anos é baixa para a apresentação epidemiológica habitual."
+   "A": "**Sexo errado.**\n- VHS > 40 é critério, mas meninas não.",
+   "B": "**Sexo, idade e corte errados.**\n- Leucócitos > 12.000.",
+   "D": "**Idade errada.**\n- Média de 6 anos; febre é critério."
   },
   "referencias": [
    "https://pubmed.ncbi.nlm.nih.gov/10608376/",
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3831260/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0130": {
-  "conceito": "A hemimelia fibular é a deficiência longitudinal congênita mais frequente dos ossos longos. O espectro inclui hipoplasia ou ausência da fíbula, discrepância de comprimento, deformidade tibial, valgo do tornozelo, deficiência de raios laterais do pé e alterações do joelho. No fêmur distal, é comum hipoplasia do côndilo lateral. Além disso, os ligamentos cruzados podem estar hipoplásicos ou ausentes, produzindo instabilidade anteroposterior. O planejamento não deve se limitar à ausência da fíbula: estabilidade do joelho, eixo, tornozelo, pé e discrepância prevista na maturidade determinam a reconstrução. Sistemas modernos, como Paley, classificam principalmente o tornozelo e o retropé para orientar estratégias de reconstrução.",
-  "correta": "A alternativa A está correta. Hemimelia fibular associa-se a hipoplasia do côndilo femoral lateral e deficiência dos ligamentos cruzados, produzindo instabilidade predominantemente anteroposterior do joelho. Esse achado deve ser pesquisado antes de procedimentos de alongamento, pois joelho instável pode subluxar durante distração.",
+  "conceito": "### Hemimelia fibular\n- Deficiência longitudinal ==pós-axial==; a mais comum dos ossos longos.\n- Espectro: fíbula ausente ou hipoplásica, tíbia curta e arqueada (anteromedial, com covinha), fêmur curto, pé equinovalgo, ==raios laterais ausentes==, coalizão tarsal (bola e soquete no tornozelo).\n\n### Joelho\n| Achado | Consequência |\n|---|---|\n| ==hipoplasia do côndilo femoral lateral== | joelho valgo |\n| ==cruzados hipoplásicos ou ausentes== | ==instabilidade anteroposterior== |\n| espinhas tibiais pequenas | |\n\n### Classificações e tratamento\n- Achterman-Kalamchi, Paley (baseada no tornozelo e reconstrutibilidade).\n- Discrepância prevista e pé funcional decidem entre ==alongamento== (Paley SUPERankle) e ==Syme== + prótese.\n\n> **Na prova:** hemimelia fibular = ==côndilo lateral hipoplásico e instabilidade AP==.",
+  "correta": "**AP e côndilo lateral.**\n- Cruzados deficientes.\n- Côndilo femoral lateral hipoplásico.",
   "incorretas": {
-   "B": "Hipoplasia do côndilo lateral está correta, porém a alteração ligamentar clássica envolve cruzados e gera instabilidade anteroposterior, não primariamente varo-valgo.",
-   "C": "A instabilidade anteroposterior está correta, mas o côndilo mais frequentemente hipoplásico é o lateral.",
-   "D": "Erra tanto o côndilo mais caracteristicamente acometido quanto o plano de instabilidade predominante."
+   "B": "**Instabilidade errada.**\n- É anteroposterior.",
+   "C": "**Côndilo errado.**\n- Lateral.",
+   "D": "**Duplamente errada.**\n- Côndilo e instabilidade."
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5145840/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0131": {
-  "conceito": "No pé torto, a deformidade é complexa e as articulações não se deslocam como blocos independentes. O tálus tem colo encurtado e desviado medialmente; o navicular está medializado/invertido e o cuboide acompanha medialmente. A articulação subtalar encontra-se em varo e inversão, aproximando calcâneo e fíbula.",
-  "correta": "A alternativa C é a incorreta. No pé torto, o colo do tálus encontra-se rodado medialmente em relação ao corpo, e não “o colo e o corpo” como uma unidade rodada internamente em relação ao encaixe do tornozelo. As demais descrevem componentes da deformidade.",
+  "conceito": "### Anatomia patológica do pé torto\n| Estrutura | Alteração |\n|---|---|\n| tálus | colo desviado ==medial e plantar==; corpo ==rodado externamente== no encaixe (não internamente) |\n| calcâneo | ==aduzido, invertido e em equino==; gira sob o tálus e se aproxima da fíbula |\n| navicular | ==medial==, junto ao maléolo medial (inversão extrema da talonavicular) |\n| cuboide | ==desviado medialmente== sobre o calcâneo |\n| partes moles | retração posteromedial (tibial posterior, FLH, FLD, tríceps, ligamentos) |\n\n### Deformidades (CAVE)\n- Cavo, Aduto, Varo, Equino.\n\n### Pirani e Dimeglio\n- Escores de gravidade para acompanhar o Ponseti.\n\n> **Na prova:** ERRADO dizer que o ==corpo do tálus está rodado internamente== no encaixe (ele roda externamente).",
+  "correta": "**C é a errada.**\n- O corpo do tálus está rodado externamente no encaixe.\n- O colo é que desvia medialmente.",
   "incorretas": {
-   "A": "A alternativa A (A articulação subtalar gira horizontalmente e aproxima o calcâneo da fíbula) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "B": "A alternativa B (A articulação talonavicular fica em posição extrema de inversão e o navicular se move em torno da cabeça do tálus) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "D": "A alternativa D (O cuboide é desviado medialmente em relação ao calcâneo) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta."
+   "A": "**Correta.**\n- Calcâneo gira e se aproxima da fíbula.",
+   "B": "**Correta.**\n- Navicular medial na cabeça do tálus.",
+   "D": "**Correta.**\n- Cuboide desviado medialmente."
   },
   "referencias": [
    "The anatomy of club foot. https://pmc.ncbi.nlm.nih.gov/articles/PMC3764290/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0132": {
-  "conceito": "Deficiências congênitas de membros são descritas pelo eixo afetado e por haver ou não segmento distal. Deficiência longitudinal acomete o raio pré-axial ou pós-axial; intercalar significa que há estruturas proximal e distal preservadas com ausência/hipoplasia entre elas. A classificação orienta reconstrução, prótese e prognóstico funcional.",
-  "correta": "A alternativa A está correta. Na hemimelia fibular com pé normal, a alteração é longitudinal intercalar: falta ou hipoplasia da fíbula, mas o segmento distal pé está presente. Não é transversal, pois não há amputação de todo o membro além de um nível.",
+  "conceito": "### Frantz e O'Rahilly (deficiências congênitas)\n| Termo | Significado |\n|---|---|\n| ==terminal== | ==nada normal distal== ao nível afetado |\n| intercalar | segmento intermediário ausente, ==distal preservado== (focomelia) |\n| transversal | ausência de toda a largura do membro (coto) |\n| ==paraxial (longitudinal)== | ==só um lado== (pré-axial radial/tibial ou pós-axial ulnar/fibular) |\n| completa / parcial | todo o osso ou parte |\n\n### Exemplos\n| Nome | Classificação |\n|---|---|\n| amelia | terminal transversal completa |\n| focomelia | intercalar transversal |\n| ==mão torta radial com ausência total do rádio== | ==terminal longitudinal paraxial (pré-axial) completa== |\n| hemimelia fibular | paraxial pós-axial |\n\n### Classificação atual\n- IFSSH/Swanson e OMT (Oberg-Manske-Tonkin).\n\n### Hemimelia fibular com pé normal\n- Falta um segmento lateral (fíbula), mas ==o pé distal está presente e normal==: ==intercalar==.\n- Paraxial = ==longitudinal== (só um lado do membro).\n\n> **Na prova:** hemimelia fibular com pé normal = ==longitudinal intercalar==",
+  "correta": "**Longitudinal intercalar.**\n- Falta a fíbula, mas o pé está íntegro.\n- Só um lado do membro: longitudinal.",
   "incorretas": {
-   "B": "A alternativa B (Deficiência longitudinal terminal) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "C": "A alternativa C (Deficiência transversal intercalar) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "D": "A alternativa D (Deficiência transversal terminal) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta."
+   "B": "**Terminal.**\n- Faltaria o pé.",
+   "C": "**Transversal.**\n- Toda a largura.",
+   "D": "**Duplamente errada.**\n- Transversal e terminal."
   },
   "referencias": [
    "Fibular hemimelia. https://pmc.ncbi.nlm.nih.gov/articles/PMC5505326/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0133": {
-  "conceito": "A displasia do desenvolvimento do quadril possui fatores de risco bem estabelecidos: sexo feminino, apresentação pélvica, história familiar, primogênito e oligodrâmnio. Restrição intrauterina favorece posicionamento mecânico desfavorável. Existe claro predomínio do lado esquerdo, provavelmente relacionado à posição fetal mais frequente com o quadril esquerdo junto à coluna materna. Bilateralidade também ocorre. O exame muda conforme a idade: Barlow e Ortolani têm maior utilidade no recém-nascido, enquanto limitação da abdução, Galeazzi e alterações de marcha se tornam mais importantes posteriormente. Ultrassom é preferido nos primeiros meses e radiografia após maior ossificação da cabeça femoral.",
-  "correta": "A alternativa B está correta porque a questão solicita a afirmação errada. O lado direito não é o mais frequentemente acometido; há predomínio clássico do quadril esquerdo. Os demais elementos apresentados (oligodrâmnio, primogênito e apresentação pélvica) são fatores de risco conhecidos.",
+  "conceito": "### Embriologia do quadril\n- ==Massa mesenquimal única e contínua== forma o esboço femoral e o acetabular (4ª a 6ª semana).\n- A ==interzona== se cavita (7ª semana) e origina a articulação: cartilagens, sinovial, ligamento redondo, pulvinar, lábio.\n- Articulação formada por volta da 11ª semana.\n\n### Por que importa na DDQ\n- Cabeça e acetábulo ==dependem um do outro==: a cabeça centrada é o estímulo para o acetábulo se aprofundar.\n- Redução concêntrica precoce permite remodelação acetabular.\n\n### Fatores de risco da DDQ\n- Primogênita, feminino, pélvica, história familiar, oligoidrâmnio, torcicolo, metatarso aduto.\n\n### Lado\n- ==Esquerdo== em cerca de 60% (posição fetal: quadril esquerdo contra o sacro materno); bilateral 20%; direito 20%.\n\n> **Na prova:** ERRADO = ==o lado direito é o mais acometido== (é o esquerdo).",
+  "correta": "**B é a errada.**\n- O lado esquerdo é o mais acometido.\n- Quadril esquerdo aduzido contra o sacro materno.",
   "incorretas": {
-   "A": "Oligodrâmnio reduz o espaço intrauterino e aumenta restrição mecânica, sendo fator reconhecido para DDQ.",
-   "C": "Primogênitos apresentam maior risco, provavelmente pelo menor grau de distensibilidade uterina na primeira gestação.",
-   "D": "Apresentação pélvica é um dos fatores de risco mais importantes e pode justificar rastreamento ultrassonográfico mesmo com exame clínico normal."
+   "A": "**Correta.**\n- Oligoidrâmnio restringe o espaço.",
+   "C": "**Correta.**\n- Primogênita.",
+   "D": "**Correta.**\n- Pélvica é o maior fator."
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0134": {
-  "conceito": "O suspensório de Pavlik é uma órtese dinâmica para lactentes com instabilidade ou luxação redutível do quadril. As tiras anteriores mantêm flexão; as posteriores restringem principalmente adução, permitindo abdução espontânea sem forçá-la. Consequentemente, o dispositivo evita sobretudo extensão e adução, movimentos que favorecem deslocamento da cabeça femoral. Hiperflexão deve ser evitada pelo risco de neuropatia femoral; abdução forçada aumenta risco de osteonecrose. O acompanhamento deve confirmar redução e desenvolvimento acetabular, idealmente com ultrassonografia quando apropriado. Persistir com Pavlik em quadril irreduzível pode atrasar tratamento e não deve ser feito indefinidamente.",
-  "correta": "A alternativa C está correta. O Pavlik limita extensão e adução, ao mesmo tempo em que mantém flexão terapêutica e permite abdução dinâmica. Esse posicionamento favorece que a cabeça permaneça centrada no acetábulo sem imposição rígida de uma posição extrema.",
+  "conceito": "### Suspensório de Pavlik\n| Tira | Função |\n|---|---|\n| anterior | ==flexão== do quadril (100 a 110°), bloqueia a extensão |\n| posterior | ==limita a adução== (não força a abdução) |\n\n- Permite ==flexão e abdução ativas==; ==limita extensão e adução==.\n- Indicação: < 6 meses; controle por ultrassom.\n\n### Complicações\n| Complicação | Causa |\n|---|---|\n| ==necrose avascular== (lesão fisária) | ==abdução forçada== (> 60°) |\n| paralisia do nervo femoral | ==flexão excessiva== |\n| doença do Pavlik (erosão posterior do acetábulo) | quadril luxado mantido sem reduzir |\n| luxação inferior (obturatória) | flexão excessiva |\n\n- Sem redução em 3 a 4 semanas: suspender.\n\n> **Na prova:** Pavlik limita ==extensão e adução==",
+  "correta": "**Adução e extensão.**\n- Mantém flexão e abdução livres.\n- Posição de redução espontânea.",
   "incorretas": {
-   "A": "A abdução dentro de uma faixa segura deve ser permitida, e não bloqueada; extensão é que deve ser limitada.",
-   "B": "Flexão é parte intencional do tratamento e não deve ser impedida quando corretamente ajustada.",
-   "D": "Adução realmente deve ser limitada, mas a flexão é desejada. A combinação correta é impedir adução e extensão."
+   "A": "**Abdução livre.**\n- Não é impedida.",
+   "B": "**Ambas permitidas.**\n- Flexão e abdução.",
+   "D": "**Flexão permitida.**\n- Adução certa."
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6959914/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0135": {
-  "conceito": "O prognóstico da doença de Perthes depende principalmente da idade de início, extensão do comprometimento da cabeça, deformidade durante a doença e congruência final. Início em idade mais avançada, especialmente após 8 anos, é desfavorável porque existe menos potencial de remodelação. Sinais radiográficos de risco incluem extrusão lateral e sinais de cabeça em risco descritos por Catterall. Sexo feminino foi associado historicamente a pior resultado em algumas séries, possivelmente em razão de maturidade esquelética mais avançada para a mesma idade cronológica. Baixa estatura e curso prolongado também aparecem em descrições prognósticas clássicas. A classificação de Herring tem forte valor prognóstico, principalmente quando combinada à idade.",
-  "correta": "A alternativa A está correta entre as opções apresentadas. Ela reúne fatores historicamente associados a pior evolução, baixa estatura, curso prolongado, sexo feminino e hipotrofia. As outras alternativas incluem idade de início mais baixa, que em geral é fator favorável por proporcionar maior capacidade de remodelação.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Epidemiologia do Perthes\n| Aspecto | Dado |\n|---|---|\n| sexo | ==masculino== (4 a 5:1) |\n| idade | 4 a 8 anos |\n| lado | ==unilateral== (bilateral 10 a 15%, ==assimétrico no tempo==) |\n| perfil | baixa estatura, idade óssea atrasada, hiperatividade, tabagismo passivo |\n\n- Bilateral simétrico e simultâneo: pensar em ==displasia epifisária múltipla== ou hipotireoidismo.\n\n> **Na prova:** Perthes = ==masculino e unilateral==",
+  "correta": "**Baixa estatura, duração longa, feminino, hipotrofia.**\n- Fatores históricos da fonte.\n- Hoje pesam mais idade e Herring (veja o alerta).",
   "incorretas": {
-   "B": "A duração prolongada e o sexo feminino podem associar-se a pior evolução, mas início em idade mais baixa é geralmente fator de melhor prognóstico.",
-   "C": "Novamente, idade de início baixa atua em sentido favorável, reduzindo a coerência da combinação proposta.",
-   "D": "Inclui dois elementos potencialmente desfavoráveis, porém considera idade baixa como mau prognóstico, contrariando um dos princípios prognósticos mais consolidados da doença."
+   "B": "**Idade baixa é bom.**\n- Início precoce tem melhor prognóstico.",
+   "C": "**Idade baixa é bom.**\n- Idem.",
+   "D": "**Idade baixa é bom.**\n- Idem."
   },
+  "alerta": "A redação usa fatores prognósticos históricos e inclui o termo hipotrofia de forma pouco específica. Na prática contemporânea, idade de início, classificação de Herring, extrusão e deformidade da cabeça têm sustentação mais robusta que alguns elementos da alternativa.",
   "referencias": [
    "https://pubmed.ncbi.nlm.nih.gov/15466719/"
   ],
-  "alerta": "A redação usa fatores prognósticos históricos e inclui o termo hipotrofia de forma pouco específica. Na prática contemporânea, idade de início, classificação de Herring, extrusão e deformidade da cabeça têm sustentação mais robusta que alguns elementos da alternativa.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0136": {
-  "conceito": "A epifisiólise proximal do fêmur deve ser suspeitada em adolescentes com dor no quadril, coxa ou joelho e claudicação. O quadro pode ser estável ou instável segundo Loder, dependendo da capacidade de deambular, mesmo com auxílio. O exame mostra redução de rotação interna, abdução e flexão; na flexão do quadril ocorre rotação externa obrigatória, sinal de Drehmann. Trendelenburg pode aparecer por alteração do braço de alavanca e dor. A marcha tende à rotação externa, não interna. Radiografias devem incluir incidência anteroposterior e lateral apropriada, evitando frog-leg em escorregamentos instáveis. O tratamento precoce previne progressão e complicações como osteonecrose, condrólise e impacto femoroacetabular.",
-  "correta": "A alternativa D está correta. Claudicação, limitação do arco de movimento e sinal ou marcha de Trendelenburg podem ocorrer na epifisiólise. O elemento que elimina as demais alternativas é a afirmação de marcha com rotação interna: o padrão típico é justamente rotação externa, associada à perda de rotação interna do quadril.",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n> **Na prova:** sinais = ==Trendelenburg, claudicação e limitação do movimento==",
+  "correta": "**Trendelenburg, claudicação, limitação.**\n- Tríade clínica frequente.\n- Marcha em rotação externa.",
   "incorretas": {
-   "A": "Claudicação e limitação são corretas, porém a marcha com rotação interna é contrária ao padrão típico da epifisiólise.",
-   "B": "Limitação e Trendelenburg podem estar presentes, mas novamente a rotação interna do membro torna a alternativa inadequada.",
-   "C": "Trendelenburg e claudicação são plausíveis; a rotação interna da marcha é o componente incorreto."
+   "A": "**Rotação errada.**\n- Externa, não interna.",
+   "B": "**Rotação errada.**\n- Idem.",
+   "C": "**Rotação errada.**\n- Idem."
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3492592/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0137": {
   "conceito": "Mielomeningocele é um defeito aberto do tubo neural decorrente de falha do fechamento caudal do neuroporo durante a quarta semana do desenvolvimento embrionário. O fechamento do tubo neural ocorre aproximadamente entre os dias 22 e 28 após a fecundação, e falha na região caudal produz defeitos lombo-sacrais de gravidade variável. A etiologia é multifatorial, envolvendo fatores genéticos e ambientais; deficiência de folato é um fator modificável importante, razão pela qual suplementação periconcepcional reduz incidência. O diagnóstico pré-natal pode envolver ultrassonografia e alfafetoproteína materna. Após o nascimento, o nível neurológico determina força, deformidades e potencial de marcha. Hidrocefalia, Chiari II, medula presa, deformidades dos pés, luxação do quadril e escoliose são associações relevantes.",
