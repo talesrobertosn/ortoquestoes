@@ -5345,91 +5345,91 @@
   "conferido": false
  },
  "mao-0458": {
-  "conceito": "A técnica de Bilhaut-Cloquet combina os dois polegares num só: ressecam-se as metades centrais e unem-se as metades externas, aproveitando osso, unha e partes moles de ambos. Ela é a escolha quando nenhum dos dois, sozinho, daria um polegar de largura aceitável.",
-  "correta": "A indicação abrange os tipos I, II e IV de Wassel. A indicação original e mais consolidada são as duplicações distais (I e II, ao nível da falange distal), em que os dois polegares são simétricos e pequenos. A extensão ao tipo IV, o mais comum de todos, veio depois, com técnicas modificadas que reconstroem a articulação metacarpofalângica ao unir as duas metades. Vale saber que o preço é o mesmo em todos: risco de sulco e deformidade da unha, e de rigidez ou desalinhamento da articulação reconstruída, o que faz muitos cirurgiões preferirem, no tipo IV, ressecar o polegar radial e reconstruir o ulnar.",
+  "conceito": "### Duplicação do polegar: estratégias\n| Técnica | Indicação |\n|---|---|\n| ressecção do polegar menor + reconstrução (colateral, abdutor curto) | ==a mais usada== (um polegar claramente melhor, em geral o ulnar) |\n| ==Bilhaut-Cloquet== | ==dois polegares semelhantes e hipoplásicos==: ressecção das metades centrais e ==união das metades externas== |\n| on-top plasty | um tem boa porção distal, o outro boa base |\n\n### Bilhaut-Cloquet\n- Vantagem: polegar de **largura** adequada, osso e unha de ambos.\n- Desvantagens: **sulco ou deformidade da unha**, rigidez articular, desvio angular, lesão fisária.\n- Modificações (Baek, Tonkin) poupam a articulação ou a unha.\n\n### Outras condições citadas\n| Condição | Tratamento |\n|---|---|\n| dimelia ulnar (mão em espelho) | policização de um dedo, ressecção dos excedentes |\n| acrossindactilia | liberação |\n| polegar trifalângico | ressecção da falange delta, osteotomias |\n\n### Indicação ampliada\n- Clássica: Wassel ==I e II==.\n- Modificações (Baek, Tonkin): também ==IV==, reconstruindo a MF.\n- No IV, muitos preferem ressecar o radial e reconstruir o ulnar.\n\n> **Na prova:** Bilhaut-Cloquet = Wassel ==I, II e IV==",
+  "correta": "**I, II e IV.**\n- Clássica nas duplicações distais simétricas.\n- Estendida ao IV com técnicas modificadas.\n- Risco de sulco ungueal e rigidez.",
   "incorretas": {
-   "A": "O tipo V é o metacarpo bífido, proximal demais para a técnica.",
-   "B": "O tipo VI é o metacarpo completamente duplicado, e a solução ali é a ressecção de um dos raios.",
-   "D": "O tipo VII é o polegar trifalângico, cujo problema é o número de falanges e não a largura, o tratamento envolve ressecção da falange supranumerária ou osteotomia de correção."
+   "A": "**Proximal demais.**\n- Metacarpo bífido.",
+   "B": "**Ressecção de raio.**\n- Metacarpo duplicado.",
+   "D": "**Problema de falanges.**\n- Trifalângico: ressecção ou osteotomia."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0459": {
-  "conceito": "Enneking estadia os tumores musculoesqueléticos por três variáveis: grau histológico (baixo é I, alto é II), extensão em relação ao compartimento (A é intracompartimental, B é extracompartimental) e presença de metástase (que define o estágio III, independentemente do resto).",
-  "correta": "Alto grau e extracompartimental é o estágio IIB. Ele é, na prática, o cenário mais comum dos sarcomas que chegam ao ortopedista (o tumor de alto grau que já rompeu a barreira do compartimento), e a margem cirúrgica exigida é a ampla ou radical. Vale guardar o que conta como barreira de compartimento: osso cortical, cartilagem articular, fáscia espessa e periósteo; e o que não conta: planos entre músculos do mesmo compartimento.",
+  "conceito": "### Estadiamento de Enneking (MSTS)\n| Estágio | Grau | Local | Metástase |\n|---|---|---|---|\n| IA | baixo (G1) | intracompartimental (T1) | não |\n| IB | baixo | extracompartimental (T2) | não |\n| IIA | alto (G2) | intracompartimental | não |\n| ==IIB== | ==alto== | ==extracompartimental== | não |\n| III | qualquer | qualquer | ==sim (M1)== |\n\n### Barreiras de compartimento\n- Contam: cortical óssea, cartilagem articular, fáscia espessa, periósteo, cápsula.\n- Extracompartimentais por natureza: axila, fossa poplítea, mão e pé medial/central, etc.\n\n### Margens (Enneking)\n| Margem | Plano | Indicação |\n|---|---|---|\n| intralesional | dentro do tumor | benignos (curetagem) |\n| marginal | pela zona reativa | benignos agressivos |\n| ampla | tecido normal em volta | ==alto grau== |\n| radical | compartimento inteiro | alto grau extenso |\n\n### Benignos (1, 2, 3)\n- Latente, ativo, agressivo.\n\n> **Na prova:** alto grau extracompartimental = ==Enneking IIB==.",
+  "correta": "**IIB.**\n- Alto grau que rompeu o compartimento.\n- O cenário mais comum dos sarcomas.\n- Margem ampla ou radical.",
   "incorretas": {
-   "A": "O estágio I reúne os de baixo grau, subdivididos em IA, intracompartimental, e IB, extracompartimental.",
-   "B": "O IIA é alto grau porém ainda contido no compartimento.",
-   "D": "O estágio III é definido pela presença de metástase, qualquer que seja o grau ou a extensão local."
+   "A": "**Baixo grau.**\n- IA ou IB.",
+   "B": "**Contido.**\n- Alto grau intracompartimental.",
+   "D": "**Metástase.**\n- Define o III."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0460": {
-  "conceito": "Na classe 1 de Palmer, traumática, as lesões são nomeadas pela borda que se soltou, acompanhando um giro em torno do disco: A é a perfuração central, B a avulsão ulnar, C a distal e D a radial.",
-  "correta": "A avulsão radial é a 1D, o disco se solta da inserção na incisura sigmoide do rádio, com ou sem fragmento ósseo. Sendo borda vascularizada, ela se repara reinserindo o disco ao rádio, por via artroscópica ou aberta, e não se desbrida. O contraste que fecha o raciocínio: a perfuração central, 1A, fica numa região avascular que não cicatriza, e por isso ali o tratamento é desbridamento.",
+  "conceito": "### Palmer classe 1 e o tratamento\n| Tipo | Local da lesão | Tratamento |\n|---|---|---|\n| 1A | perfuração central (avascular) | desbridamento |\n| 1B | avulsão **ulnar** (fóvea, estiloide) | reinserção na **ulna** |\n| 1C | avulsão **distal** (ulnossemilunar, ulnopiramidal) | reparo ulnocarpal |\n| ==1D== | ==avulsão radial== (incisura sigmoide) | ==reinserção no rádio== (ou desbridamento em lesões pequenas) |\n\n### Por que o rádio na 1D\n- A borda solta é a **radial**: reancora-se o disco na borda da incisura sigmoide (túneis transósseos ou âncoras), artroscópico ou aberto.\n\n### Instabilidade da RUD\n- Mais associada à **1B** (lesão foveal dos ligamentos radioulnares).\n- Teste do **balote** radioulnar em pronação, neutro e supinação.\n\n- Memória: ==centro, ulnar, distal, radial== (A, B, C, D).\n\n### Classe 2 (degenerativa)\n| Tipo | Achado |\n|---|---|\n| 2A | desgaste do CFCT |\n| 2B | + condromalácia do semilunar ou ulna |\n| 2C | + perfuração do CFCT |\n| 2D | + lesão lunopiramidal |\n| 2E | + artrose ulnocarpal |\n\n> **Na prova:** avulsão radial = ==Palmer 1D== (reinserir no rádio).",
+  "correta": "**D.**\n- Disco solto da incisura sigmoide.\n- Borda vascularizada: reinserir no rádio.",
   "incorretas": {
-   "A": "A 1A é a perfuração central.",
-   "B": "A 1B é a avulsão ulnar, na fóvea e no estiloide, com ou sem fratura do estiloide, a mais associada a instabilidade da radioulnar distal.",
-   "C": "A 1C é a avulsão distal, dos ligamentos ulnossemilunar e ulnopiramidal, com quadro de instabilidade ulnocarpal."
+   "A": "**Central.**\n- Avascular; desbrida.",
+   "B": "**Ulnar.**\n- Fóvea e estiloide; instabilidade da RUD.",
+   "C": "**Distal.**\n- Ligamentos ulnocarpais."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0461": {
-  "conceito": "Na avulsão, a artéria não é cortada: ela é arrancada. A camada íntima descola ao longo de vários centímetros além do ponto visível de ruptura, e uma anastomose feita sobre esse segmento tromba, porque a superfície interna já não é lisa.",
-  "correta": "A conduta é ressecar a artéria até tecido sadio nas duas pontas e interpor um enxerto de veia invertido. Ressecar cria uma falha que não permite aproximação sem tensão, e é o enxerto que a preenche. O enxerto vai invertido porque a veia tem válvulas: montada no sentido original, elas bloqueariam o fluxo arterial. O sinal clássico da lesão da íntima que orienta a ressecção é o sinal da fita vermelha, a artéria trombosada aparecendo como um cordão avermelhado, e o sinal do saca-rolhas, com o vaso enovelado pela tração.",
+  "conceito": "### Anastomose entre vasos de calibres diferentes\n| Discrepância | Solução |\n|---|---|\n| pequena (< 1,5:1) | ==secção oblíqua do vaso menor (cerca de 30°)==, dilatação mecânica do menor |\n| moderada | incisão em **boca de peixe** (fishmouth) no menor, espatulação |\n| grande (> 2:1) | anastomose **término-lateral**, **enxerto de veia** interposto, luva |\n\n### Por que o corte oblíquo\n- Transforma a boca circular em **elipse** de perímetro maior.\n- Iguala as circunferências e distribui os pontos.\n- Bisel exagerado (45 a 60°) angula o vaso e gera turbulência.\n\n### Princípios da microanastomose\n- Ressecar até íntima normal, sem tensão, pontos de espessura total igualmente espaçados, sem incluir a parede oposta.\n- Teste de patência (empty and refill).\n\n### Avulsão\n- Íntima descolada muito além da ruptura visível.\n- Sinais: ==fita vermelha== (trombose no vaso), ==saca-rolhas== (vaso enovelado), equimose ao longo do trajeto digital.\n- Conduta: ressecar até íntima normal e interpor ==enxerto de veia invertido== (válvulas).\n- Doadoras: veias do dorso do pé, volar do antebraço distal.\n\n> **Na prova:** amputação por avulsão = ==enxerto de veia invertido==",
+  "correta": "**Enxerto de veia invertido.**\n- Ressecar a íntima lesada cria falha sem aproximação.\n- Inverter por causa das válvulas.",
   "incorretas": {
-   "B": "Inverte a fisiopatologia: na avulsão a lesão da íntima é a regra, não a exceção, e é justamente por isso que a arteriorrafia primária costuma falhar.",
-   "C": "A veia dorsal do antebraço é doadora habitual, mas a inversão é obrigatória, sem ela as válvulas impedem o fluxo.",
-   "D": "A incompatibilidade de calibre não pode ser ignorada: ela se resolve com corte oblíquo do vaso menor, dilatação cuidadosa, anastomose em luva ou interposição de enxerto. Anastomose entre bocas de tamanhos diferentes vaza ou tromba."
+   "B": "**Fisiopatologia invertida.**\n- Lesão da íntima é a regra na avulsão.",
+   "C": "**Inversão obrigatória.**\n- Sem ela as válvulas bloqueiam.",
+   "D": "**Não se ignora.**\n- Incompatibilidade trombosa ou vaza."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0462": {
-  "conceito": "Um retalho livre pode falhar por trombose arterial ou venosa, e os dois quadros são opostos. Na arterial, nada entra: o retalho fica pálido, frio, sem sangramento à punção. Na venosa, entra e não sai: o sangue se acumula.",
-  "correta": "A trombose venosa precoce se manifesta por sangramento rápido e de coloração escurecida à punção, petéquias na ilha de monitoramento e edema do retalho, com o enchimento capilar acelerado e o retalho tenso e azulado. Ela é a mais comum das duas e tem janela de resgate: reconhecida cedo, a reexploração salva o retalho. Daí a monitorização horária nas primeiras 24 a 48 horas e a atenção ao que muda, e não só ao que está.",
+  "conceito": "### Monitorização do retalho livre\n| Sinal | Normal | ==Trombose venosa== | Trombose arterial |\n|---|---|---|---|\n| cor | rosada | ==azulada, violácea== | pálida |\n| temperatura | normal | normal ou quente | fria |\n| turgor | normal | ==aumentado (tenso, edema)== | diminuído, murcho |\n| enchimento capilar | 2 a 3 s | ==rápido== (< 1 s) | lento ou ausente |\n| punção | sangue vermelho em 2 a 3 s | ==sangue escuro, rápido e abundante== | sem sangramento |\n| petéquias | não | ==sim== | não |\n\n### Condutas\n- Venosa é a mais comum; janela de resgate: ==reexploração imediata==.\n- Monitorização a cada hora nas primeiras 24 a 48 h (maioria das tromboses ocorre aí).\n- Resgate: sanguessugas, heparina local se não houver drenagem venosa possível.\n\n> **Na prova:** trombose venosa do retalho = ==sangramento escuro rápido, petéquias e edema==.",
+  "correta": "**Sangramento escuro rápido, petéquias e edema.**\n- Entra sangue e não sai.\n- Retalho tenso e azulado, enchimento acelerado.\n- Reexplorar cedo salva o retalho.",
   "incorretas": {
-   "B": "Ausência de sangramento, pele pálida e fria e turgor diminuído descrevem a trombose arterial, o quadro oposto.",
-   "C": "Junta sinais arteriais com secreção purulenta, que aponta infecção e não trombose.",
-   "D": "Começa certo, com os sinais venosos, e termina errado: o turgor no retalho congesto está aumentado, com o retalho tenso, e não diminuído."
+   "B": "**Trombose arterial.**\n- Pálido, frio, sem sangramento.",
+   "C": "**Mistura com infecção.**\n- Secreção purulenta não é trombose.",
+   "D": "**Turgor errado.**\n- Na congestão o turgor aumenta."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0463": {
-  "conceito": "O dedo de jérsei é a avulsão do flexor profundo da sua inserção na falange distal, com ou sem fragmento ósseo, quase sempre no anelar e pelo gesto de agarrar a camisa do adversário. O paciente perde a flexão ativa da interfalângica distal.",
-  "correta": "O tratamento é cirúrgico: reinserção do flexor profundo, com âncora, sutura transóssea ou fixação do fragmento quando ele é grande. Não há tratamento conservador, porque o tendão arrancado não reencontra o osso sozinho. E há urgência conforme o tipo de Leddy e Packer: no tipo I, com as duas vínculas rotas e o tendão retraído até a palma, ele fica sem suprimento e encurta rápido, o reparo deve ser feito em cerca de sete a dez dias.",
+  "conceito": "### Avulsão do flexor profundo (dedo de jérsei)\n- Zona I: só o ==flexor profundo== está presente (distal à inserção do FSD).\n- Dedo mais acometido: ==anelar== (cerca de 75%).\n\n### Por que o anelar\n- Em extensão, a polpa do anelar se projeta mais ao fechar a mão: recebe a tração.\n- Inserção do FPD do anelar é mais fraca.\n- FPD do anelar ligado ao do médio e mínimo por ventre comum.\n\n### Exame\n- Bloquear a IFP e pedir flexão da IFD: ausente.\n- Palpar o coto retraído (palma ou IFP).\n\n### Leddy e Packer\n| Tipo | Retração |\n|---|---|\n| I | até a palma (reparo em 7 a 10 dias) |\n| II | até a IFP |\n| III | fragmento ósseo retido na A4 |\n| IV | fragmento + tendão avulsionado dele |\n\n### Polegar\n- Não tem flexor profundo: o flexor é o **flexor longo do polegar**.\n\n### Tratamento\n- ==Sempre cirúrgico==: reinserção do FPD (âncora, pull-out, fixação do fragmento).\n- Tipo I: operar em 7 a 10 dias; tardio: enxerto em dois tempos, tenodese ou artrodese da IFD.\n\n> **Na prova:** jersey finger = ==reinserção do flexor profundo==",
+  "correta": "**Reinserção do FPD.**\n- Tendão arrancado não volta sozinho.\n- Urgência maior no Leddy I.",
   "incorretas": {
-   "B": "Tala em extensão da interfalângica distal é o tratamento do dedo em martelo, que é a lesão do aparelho extensor. Lesão oposta, direção oposta.",
-   "C": "Matriz germinativa interposta com descolamento epifisário descreve a lesão de Seymour, uma fratura fisária exposta da falange distal em criança.",
-   "D": "Mesma confusão com o dedo em martelo, e com um grau de hiperextensão que, aliás, não se recomenda nem lá: hiperestender comprime a pele dorsal e produz necrose."
+   "B": "**Martelo.**\n- Lesão extensora.",
+   "C": "**Seymour.**\n- Fratura fisária exposta na criança.",
+   "D": "**Martelo e hiperextensão.**\n- Hiperextensão necrosa a pele."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0464": {
-  "conceito": "A artroscopia do punho serve para o que está dentro da articulação e é pequeno: ver, desbridar, reparar bordas e ressecar. Ela não substitui a cirurgia aberta quando é preciso manipular osso grande, revisar implantes ou trabalhar fora da articulação.",
-  "correta": "Retirada de corpo estranho, sinovectomia e encurtamento da cabeça da ulna pela técnica do wafer são todas indicações consagradas. O procedimento de wafer merece nota: ele ressecca alguns milímetros da porção distal da cabeça da ulna por via artroscópica, através de uma perfuração já existente do disco, e resolve o impacto ulnocarpal sem osteotomia e sem material de síntese, a alternativa à osteotomia de encurtamento da ulna, quando a variância positiva é pequena.",
+  "conceito": "### Portais dorsais da artroscopia do punho\n| Portal | Localização | Uso principal |\n|---|---|---|\n| 1-2 | entre 1º e 2º compartimentos | estiloide radial; risco para o radial superficial e a artéria radial |\n| 3-4 | entre ELP e extensores comuns | ==visão padrão==: escafoide, semilunar, ligamento escafossemilunar |\n| ==4-5== | entre extensores comuns e extensor do mínimo | ==melhor inspeção do complexo da fibrocartilagem triangular== |\n| ==6R== | radial ao EUC | ==portal de trabalho== do CFCT (reparo, desbridamento) |\n| 6U | ulnar ao EUC | saída de fluxo; risco para o ramo dorsal do ulnar |\n| mediocarpal radial e ulnar | 1 cm distal ao 3-4 e ao 4-5 | articulação mediocarpal, instabilidades |\n\n### Rotina\n- 3-4 para visão geral, 4-5 ou 6R para o lado ulnar.\n- Tração de 4 a 5 kg (torre).\n\n### Indicações da artroscopia do punho\n| Diagnóstica | Terapêutica |\n|---|---|\n| dor crônica sem diagnóstico | ==corpo estranho==, corpos livres |\n| instabilidade (Geissler) | ==sinovectomia== |\n| lesão do CFCT | desbridamento e reparo do CFCT |\n| | ==wafer== (ressecção distal da ulna) |\n| | cisto dorsal, estiloidectomia |\n| | auxílio na redução de fratura articular |\n\n- Não substitui a cirurgia aberta para revisão de implante, reparo de tendão ou artrodese grande.\n\n> **Na prova:** indicações = ==corpo estranho, sinovectomia e wafer==",
+  "correta": "**Corpo estranho, sinovectomia e wafer.**\n- Todas intra-articulares e pequenas.\n- Wafer: ressecção da cabeça da ulna pela perfuração do disco.",
   "incorretas": {
-   "B": "O cisto sinovial é indicação legítima, mas a reabordagem de fratura após falha de material de síntese não: retirar e trocar implante exige acesso aberto.",
-   "C": "Reparo de tendão flexor é feito a céu aberto, e os tendões nem estão dentro da articulação.",
-   "D": "Repete a reabordagem de fratura, e o retardo de consolidação do escafoide, embora possa contar com auxílio artroscópico em técnicas específicas, não é uma indicação simples de artroscopia."
+   "B": "**Revisão de implante.**\n- Exige acesso aberto.",
+   "C": "**Flexor e artrodese.**\n- Fora da articulação ou grandes.",
+   "D": "**Revisão de implante.**\n- E escafoide não é indicação simples."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0465": {
-  "conceito": "O nervo mediano é o único do plexo formado por duas raízes, uma de cada fascículo: a lateral, vinda do fascículo lateral, e a medial, do fascículo medial. E elas não carregam a mesma coisa.",
-  "correta": "A porção sensitiva do mediano vem predominantemente da raiz lateral, isto é, do fascículo lateral, com fibras de C6 e C7. A raiz medial, do fascículo medial, traz sobretudo as fibras motoras, de C8 e T1. Essa divisão tem uso clínico direto: numa lesão de plexo, déficit sensitivo no território do mediano com força preservada aponta para o lado lateral e superior do plexo, enquanto perda motora da mão com sensibilidade dos dedos radiais preservada aponta para o lado medial e inferior.",
+  "conceito": "### Ramos dos fascículos do plexo\n| Fascículo | Ramos |\n|---|---|\n| lateral | peitoral lateral, ==musculocutâneo==, raiz lateral do mediano |\n| medial | peitoral medial, cutâneo medial do braço e do antebraço, ==ulnar==, raiz medial do mediano |\n| ==posterior== | subescapular superior, ==toracodorsal==, subescapular inferior, ==axilar==, ==radial== (STSAR) |\n\n### Ramos de raízes e troncos\n| Origem | Nervo |\n|---|---|\n| raízes C5 | dorsal da escápula |\n| raízes C5-C7 | torácico longo |\n| tronco superior | supraescapular, nervo do subclávio |\n\n### Toracodorsal e grande dorsal\n- Pedículo toracodorsal: retalho pediculado ou livre, transferência funcional (flexão do cotovelo, RE do ombro na paralisia obstétrica).\n\n### Nervo mediano\n| Raiz | Fascículo | Fibras | Nível |\n|---|---|---|---|\n| ==lateral== | ==lateral== | ==sensitivas== (predominância) | C6-C7 |\n| medial | medial | motoras (mão) | C8-T1 |\n\n> **Na prova:** porção sensitiva do mediano = ==fascículo (corda) lateral==",
+  "correta": "**Corda lateral.**\n- Raiz lateral com fibras sensitivas C6-C7.\n- Raiz medial traz as motoras C8-T1.",
   "incorretas": {
-   "B": "O fascículo medial contribui com a raiz medial do mediano, predominantemente motora, além de originar o nervo ulnar e os cutâneos mediais.",
-   "C": "O fascículo posterior origina os subescapulares, o toracodorsal, o axilar e o radial. Ele não participa da formação do mediano.",
-   "D": "Nem o posterior participa, nem a contribuição do medial é sensitiva predominante."
+   "B": "**Motora.**\n- Raiz medial, predominantemente motora.",
+   "C": "**Não participa.**\n- Origina axilar e radial.",
+   "D": "**Não participa.**\n- Posterior não forma o mediano."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0466": {
