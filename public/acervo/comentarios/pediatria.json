@@ -4736,115 +4736,116 @@
   "conferido": false
  },
  "pediatria-0373": {
-  "conceito": "A instabilidade atlanto-odontoide (atlantoaxial) é uma condição bem documentada em pacientes com síndrome de Down, decorrente da frouxidão ligamentar generalizada característica da condição (envolvendo o ligamento transverso do atlas, que normalmente mantém o processo odontoide do áxis firmemente contra o arco anterior do atlas). Estudos de triagem radiográfica mostram essa instabilidade (definida por um intervalo atlanto-odontoide aumentado) em cerca de **10%** dos pacientes com síndrome de Down, sendo importante notar que a grande maioria desses casos permanece **assintomática**, e apenas uma pequena fração desenvolve sintomas neurológicos relacionados à compressão medular, o que orienta a triagem e o acompanhamento clínico, mais do que necessariamente a intervenção cirúrgica profilática em todos os casos com instabilidade radiográfica isolada.",
-  "correta": "A. A instabilidade atlanto-odontoide está presente em cerca de 10% dos pacientes com síndrome de Down.",
+  "conceito": "### Síndrome de Down: ortopedia\n| Achado | Detalhe |\n|---|---|\n| ==instabilidade atlantoaxial== | ADI > 4,5 a 5 mm em cerca de ==10 a 20%==; sintomática em 1 a 2% |\n| instabilidade occipitocervical | também frequente |\n| quadril | luxação habitual, displasia tardia, epifisiólise |\n| patela | instabilidade, luxação recidivante |\n| pé | plano valgo flexível, hálux valgo |\n| escoliose | comum |\n\n### Por quê\n- ==Frouxidão ligamentar== generalizada (colágeno VI) e hipotonia.\n- Os achados radiográficos têm pouca correlação com sintomas: rastreio clínico (mielopatia).\n\n> **Na prova:** instabilidade atlantoaxial no Down = cerca de ==10%== (veja o alerta)",
+  "correta": "**Cerca de 10%.**\n- Instabilidade radiográfica atlantoaxial.\n- Sintomática em apenas 1 a 2%.",
   "incorretas": {
-   "B": "30% superestima a prevalência classicamente descrita dessa instabilidade radiográfica na síndrome de Down.",
-   "C": "50% superestima consideravelmente a prevalência classicamente descrita.",
-   "D": "70% superestima de forma ainda mais expressiva a prevalência classicamente descrita dessa condição."
+   "B": "**30%.**\n- Limite superior de algumas séries; a banca não aceitou.",
+   "C": "**50%.**\n- Superestimado.",
+   "D": "**70%.**\n- Superestimado."
   },
-  "geradoEm": "2026-09-21",
+  "alerta": "A prevalência da instabilidade atlantoaxial na síndrome de Down varia entre 10 e 30% conforme o critério radiográfico. A banca adotou o valor clássico de 10%.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0374": {
-  "conceito": "A síndrome de Klippel-Trenaunay é uma malformação congênita de baixo fluxo atualmente incluída no espectro de sobrecrescimento relacionado a PIK3CA. O fenótipo clássico combina malformação capilar, malformações venosas/linfáticas e hipertrofia óssea e de partes moles do membro acometido. O crescimento assimétrico pode produzir discrepância de comprimento, alterações dos pés e necessidade de procedimentos ortopédicos. Também são descritas anomalias digitais, incluindo sindactilia e macrodactilia. As malformações venosas predispõem a dor, edema, trombose venosa superficial, trombose venosa profunda e embolia pulmonar. É essencial diferenciá-la da síndrome de Parkes-Weber, em que há malformações arteriovenosas de alto fluxo. O tratamento é multidisciplinar e pode incluir compressão, tratamento de malformações vasculares, controle de trombose e estratégias para discrepância de membros.",
-  "correta": "A alternativa B está correta. Sindactilia é uma alteração congênita descrita na síndrome de Klippel-Trenaunay, e tromboflebite superficial é uma complicação conhecida das malformações venosas. A combinação reúne uma manifestação ortopédica/digital e uma complicação vascular típica da doença. A presença de dor súbita, edema ou dispneia exige atenção para eventos tromboembólicos mais graves.",
+  "conceito": "### Síndrome de Klippel-Trénaunay\n- Malformação vascular ==capilar-linfático-venosa== de baixo fluxo (PIK3CA).\n- Tríade: ==mancha em vinho do Porto==, ==varizes/malformação venosa== e ==hipercrescimento== do membro.\n- Parkes-Weber: variante com fístulas arteriovenosas (alto fluxo).\n\n### Alterações ao longo do tempo\n| Tipo | Achados |\n|---|---|\n| ortopédicas | discrepância de membros, ==macrodactilia, sindactilia==, pé grande |\n| não ortopédicas | ==tromboflebite==, TVP/TEP, sangramento, linfedema, celulite |\n\n### Conduta\n- Epifisiodese para a discrepância; meias compressivas; anticoagulação quando indicada; sirolimo.\n\n> **Na prova:** Klippel-Trénaunay = ==sindactilia== e ==tromboflebite==",
+  "correta": "**Sindactilia e tromboflebite.**\n- Anomalias dos dedos acompanham o hipercrescimento.\n- Malformação venosa gera tromboflebite.",
   "incorretas": {
-   "A": "Pé plano pode ocorrer secundariamente a sobrecrescimento ou alterações do membro, mas não é uma manifestação tão característica quanto anomalias digitais como sindactilia. A tromboflebite, isoladamente, está correta.",
-   "C": "Celulite recorrente pode ocorrer quando há componente linfático importante, mas hálux valgo não é uma associação definidora ou particularmente característica da síndrome em comparação com sindactilia e outras anomalias de desenvolvimento.",
-   "D": "Hálux rigidus não é manifestação típica que ajude a reconhecer Klippel-Trenaunay. A doença é dominada por malformações vasculares, sobrecrescimento e anomalias digitais, não por artrose primária da primeira metatarsofalângica."
+   "A": "**Pé plano.**\n- Não é característico.",
+   "C": "**Hálux valgo.**\n- Não é típico.",
+   "D": "**Hálux rígido.**\n- Sem relação."
   },
   "referencias": [
    "Klippel-Trenaunay Syndrome. PMCID: PMC3881214.",
    "Presentation and Management of Klippel-Trenaunay Syndrome: A Review of Available Data. PMCID: PMC7282379."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0375": {
-  "conceito": "A criança com quadril agudamente doloroso exige exclusão prioritária de artrite séptica. Sinovite transitória é muito mais comum e geralmente ocorre em crianças entre aproximadamente 3 e 8 anos, frequentemente após infecção viral, com dor, claudicação e febre ausente ou baixa. Kocher, Zurakowski e Kasser propuseram quatro preditores para artrite séptica: temperatura acima de 38,5 graus, incapacidade de apoiar, velocidade de hemossedimentação acima de 40 mm/h e leucócitos acima de 12.000/mm³. Caird posteriormente acrescentou proteína C reativa acima de 2 mg/dL. Esses critérios auxiliam estratificação, mas não substituem avaliação clínica, ultrassom e aspiração quando a suspeita permanece. Artrite séptica costuma apresentar quadro sistêmico mais intenso, dor marcada à mobilização e marcadores inflamatórios elevados. Sinovite transitória é autolimitada e tratada com repouso, analgesia e acompanhamento.",
-  "correta": "A alternativa D está correta. A criança tem 7 anos, temperatura de apenas 37,2 graus, leucócitos de 5.000/mm³, proteína C reativa inferior a 0,5 mg/dL e velocidade de hemossedimentação de 27 mm/h. Esses dados não atingem os principais limiares de Kocher/Caird e tornam artrite séptica muito menos provável. Dor aguda, claudicação e baixa repercussão sistêmica são compatíveis com sinovite transitória.",
+  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n### Aplicando ao caso\n| Critério | Paciente |\n|---|---|\n| febre > 38,5 °C | não (37,2 °C) |\n| não apoia | ==sim== |\n| VHS > 40 | não (27) |\n| leucócitos > 12.000 | não (5.000) |\n| PCR > 2 mg/dL | não (< 0,5) |\n\n- 1 critério: séptica cerca de 3%; quadro típico de ==sinovite transitória==.\n- Idade (7 anos) fora do pico da epifisiólise; sem febre para psoíte.\n\n> **Na prova:** afebril, exames normais e dor aguda aos 7 anos = ==sinovite transitória==",
+  "correta": "**Sinovite transitória.**\n- Só 1 critério de Kocher.\n- Exames inflamatórios normais.",
   "incorretas": {
-   "A": "Psoíte pode causar dor no quadril, postura em flexão e dor à extensão do quadril, geralmente acompanhada de contexto infeccioso ou sistêmico apropriado. Os dados apresentados são mais típicos de quadril irritável por sinovite transitória.",
-   "B": "Epifisiólise é mais comum no adolescente, especialmente com obesidade, e costuma apresentar dor subaguda, perda de rotação interna e rotação externa obrigatória na flexão. Sete anos é uma idade bastante atípica sem endocrinopatia.",
-   "C": "Artrite séptica é o diagnóstico que não pode ser perdido, porém febre ausente, leucócitos normais, proteína C reativa muito baixa e VHS abaixo de 40 reduzem substancialmente sua probabilidade no cenário apresentado."
+   "A": "**Psoíte.**\n- Febre, sinais infecciosos, dor à extensão.",
+   "B": "**Epifisiólise.**\n- Adolescente, evolução em semanas.",
+   "C": "**Séptica.**\n- Exigiria febre e marcadores altos."
   },
   "referencias": [
    "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81:1662-1670. PMID: 10608376."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0376": {
-  "conceito": "A doença de Blount é uma alteração do crescimento endocondral na região medial da fise proximal da tíbia. Sob carga mecânica excessiva, a porção medial da fise sofre desorganização, retardo da ossificação e formação irregular de cartilagem. Histologicamente há desorganização das colunas fisárias, áreas de condrócitos agrupados e hipertrofiados em disposição anormal, além de alterações da ossificação endocondral. Esse processo explica o crescimento assimétrico que produz varo progressivo, procurvato e torção interna. Na radiografia, especialmente na forma infantil, observam-se inclinação e irregularidade da metáfise medial, beaking, alargamento da fise e, nos estágios avançados de Langenskiöld, depressão epifisária e formação de barra. A histologia não é necessária para diagnóstico habitual, mas aparece em provas para diferenciar a doença de distúrbios puramente mecânicos sem alteração fisária estrutural.",
-  "correta": "A alternativa C está correta. O achado histológico característico envolve ilhas ou agrupamentos de células cartilaginosas hipertrofiadas de forma anormal, em meio a desorganização da arquitetura fisária. Isso reflete falha da ossificação endocondral no lado medial da fise e é coerente com o crescimento assimétrico progressivo da tíbia proximal.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Histologia da fise medial\n- ==Ilhas de condrócitos hipertrofiados== além do esperado, agrupados.\n- Colunas ==desorganizadas==, fissuras, fibrocartilagem, vasos anômalos.\n- Ossificação endocondral ==irregular==: reflexo da compressão crônica (Hueter-Volkmann).\n\n> **Na prova:** histologia do Blount = ==ilhas de cartilagem com hipertrofia excessiva==",
+  "correta": "**Ilhas com hipertrofia excessiva.**\n- Condrócitos agrupados e hipertrofiados.\n- Resposta à sobrecarga medial.",
   "incorretas": {
-   "A": "Ilhas de fibrocartilagem celular não constituem a descrição histológica típica da fise de Blount. O processo ocorre na cartilagem de crescimento e envolve sobretudo desorganização e maturação anormal dos condrócitos.",
-   "B": "Aglomerados de pequenos vasos capilares podem ser encontrados em processos reparativos ou outras lesões ósseas, mas não definem a histopatologia de Blount, que é essencialmente uma alteração de crescimento endocondral.",
-   "D": "A ossificação endocondral realmente está alterada, porém as colunas celulares não permanecem regulares. A desorganização da arquitetura fisária é justamente um dos elementos histológicos fundamentais."
+   "A": "**Fibrocartilagem.**\n- Aparece, mas não é o achado característico.",
+   "B": "**Capilares.**\n- Não é o achado principal.",
+   "D": "**Colunas regulares.**\n- As colunas são desorganizadas."
   },
   "referencias": [
    "Sabharwal S. Blount disease. J Bone Joint Surg Am. 2009;91:1758-1776. PMID: 19571101.",
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0377": {
-  "conceito": "O torcicolo muscular congênito é uma deformidade por encurtamento unilateral do esternocleidomastoideo, frequentemente acompanhada de plagiocefalia e assimetria facial quando persistente. Clinicamente, a literatura divide os pacientes em três grupos. Primeiro, grupo com tumor do esternocleidomastoideo: massa fibrosa palpável no músculo, geralmente observada nas primeiras semanas. Segundo, torcicolo muscular: encurtamento ou hipertonia do esternocleidomastoideo sem massa palpável. Terceiro, torcicolo postural: postura típica, mas sem massa e sem encurtamento muscular objetivo. O diagnóstico é predominantemente clínico; ultrassonografia pode ajudar a caracterizar o músculo e radiografias são utilizadas quando há suspeita de anomalia óssea ou apresentação atípica. Tratamento precoce com alongamento, posicionamento e fisioterapia possui excelente prognóstico. Falha persistente pode justificar liberação cirúrgica.",
-  "correta": "A alternativa C está correta. A divisão em tumor do esternocleidomastoideo, torcicolo muscular sem massa e torcicolo postural corresponde aos três subgrupos clínicos reconhecidos. Essa classificação é útil porque o grupo com massa ou fibrose importante tende a exigir tratamento mais prolongado e possui maior risco de limitação persistente quando o diagnóstico é tardio.",
+  "conceito": "### Torcicolo muscular congênito\n- Fibrose do ==esternocleidomastoideo== (ECM): cabeça inclinada para o lado afetado e queixo para o oposto.\n- Associação com ==DDQ== (examinar quadris), metatarso aduto, parto difícil.\n- ==Tumoração== (pseudotumor) no ECM nas primeiras semanas, que regride.\n\n### Tratamento\n- Alongamento e posicionamento: resolve a maioria (> 90%) se iniciado antes de 1 ano.\n- Cirurgia (tenotomia uni ou bipolar): após 1 ano sem resposta, déficit > 15° persistente.\n\n### Fatores de pior prognóstico do conservador\n| Fator |\n|---|\n| ==fibrose do ECM== (no US; ==terço distal== segundo a fonte da prova) |\n| déficit de rotação > 30° |\n| início do tratamento após 1 ano |\n| ECM todo acometido |\n\n### Diferenciais\n- Klippel-Feil, subluxação atlantoaxial, estrabismo (torcicolo ocular), tumor de fossa posterior, Sandifer (refluxo).\n\n### Pontos cobrados\n- Cabeça ==inclina para o lado do ECM encurtado== e roda para o oposto.\n- Causa ==indolor== mais comum de torcicolo na criança: o ==muscular congênito==.\n- Deformidade evidente nas ==primeiras semanas==; nódulo ao ==1 mês==, regride em meses.\n\n### Subgrupos clínicos (Cheng)\n| Grupo | Achado |\n|---|---|\n| ==tumor do ECM== | massa palpável no ECM |\n| ==muscular== | ECM espessado e tenso, sem massa |\n| ==postural== | sem massa, ECM normal; melhor prognóstico |\n\n- ==Ultrassom== confirma fibrose; ==radiografia cervical== afasta anomalia vertebral.\n- A tumoração surge por volta de 2 a 4 semanas, não ao nascer.\n\n> **Na prova:** torcicolo congênito = ==tumor, muscular e postural==",
+  "correta": "**Três subgrupos.**\n- Tumor do ECM, muscular e postural.\n- Orientam o prognóstico.",
   "incorretas": {
-   "A": "Exames complementares não são obrigatórios em todo caso típico, mas podem ser muito importantes diante de apresentação atípica, suspeita de causa óssea, déficit neurológico ou dúvida diagnóstica. A afirmação absoluta de que não são importantes é incorreta.",
-   "B": "Contratura e plagiocefalia podem coexistir, mas assimetria facial não precisa estar presente desde o nascimento; costuma desenvolver-se ou acentuar-se com persistência da posição assimétrica. A alternativa transforma possíveis consequências em critérios obrigatórios.",
-   "D": "O músculo envolvido é o esternocleidomastoideo, não o escaleno. Além disso, o queixo roda para o lado oposto ao músculo encurtado, enquanto a cabeça inclina-se para o lado da lesão."
+   "A": "**Exames importam.**\n- US confirma; RX afasta anomalia óssea.",
+   "B": "**Não desde o nascimento.**\n- Tumor e assimetria surgem nas semanas seguintes.",
+   "D": "**ECM, não escaleno.**\n- Queixo roda para o lado oposto."
   },
   "referencias": [
    "Congenital muscular torticollis. PMCID: PMC3814673.",
    "Correlation of ultrasonographic imaging of congenital muscular torticollis with clinical assessment in infants. Ultrasound Med Biol. 2000."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0378": {
-  "conceito": "O cotovelo pediátrico possui seis centros secundários de ossificação cuja sequência deve ser conhecida para evitar interpretar estruturas normais como fragmentos de fratura. O mnemônico clássico CRITOE representa Capitellum, Radial head, Internal or medial epicondyle, Trochlea, Olecranon e External or lateral epicondyle. As idades exatas variam com sexo e população, mas a ordem é mais importante: o capítulo/capitelo é o primeiro e costuma aparecer aproximadamente no primeiro ano; depois surgem cabeça do rádio, epicôndilo medial, tróclea, olécrano e epicôndilo lateral. Além dos núcleos, a radiografia deve avaliar linha umeral anterior, linha radiocapitelar e sinais de derrame. Em trauma, conhecer a sequência evita confundir a tróclea multifragmentada ou o epicôndilo medial deslocado com variações normais. Comparação com o lado contralateral pode ajudar em casos duvidosos.",
-  "correta": "A alternativa B está correta. O capítulo, ou capitelo, é o primeiro centro de ossificação secundário do cotovelo a se tornar radiograficamente visível. Esse é o primeiro elemento do mnemônico CRITOE. Embora a idade absoluta varie, a sequência relativa é bastante útil e deve ser lembrada para interpretação de radiografias traumáticas pediátricas.",
+  "conceito": "### Núcleos do cotovelo: CRITOE\n- **Ordem de aparecimento** (anos aproximados):\n  - Capítulo (1);\n  - Rádio, cabeça (3–5);\n  - epicôndilo medial (Internal, 5–7);\n  - Tróclea (7–9);\n  - Olécrano (8–10);\n  - Epicôndilo lateral (External, 10–11).\n- **Fusão:** capítulo, tróclea e epicôndilo lateral se unem entre si e ao úmero por volta dos 12–14 anos.\n- O ==epicôndilo medial== é o **último a fundir**, entre 15 e 17 anos.\n\n### Regra\n- Ordem de aparecimento: ==C==apítulo, ==R==ádio, ==I==nterno, ==T==róclea, ==O==lécrano, ==E==xterno (CRITOE: 1, 3, 5, 7, 9, 11 anos).\n- Tróclea fragmentada é normal (vários núcleos): não confundir com fratura.\n- Tróclea ossificada sem epicôndilo medial visível: ==epicôndilo encarcerado== na articulação.\n\n> **Na prova:** primeiro núcleo do cotovelo = ==capítulo== (cerca de 1 ano)",
+  "correta": "**Capítulo.**\n- Aparece por volta de 1 ano.\n- Primeira letra do CRITOE.",
   "incorretas": {
-   "A": "A tróclea ossifica consideravelmente mais tarde e pode apresentar aparência irregular ou multifocal. Ela ocupa a quarta posição do mnemônico CRITOE, não a primeira.",
-   "C": "O epicôndilo lateral é tradicionalmente o último dos seis centros a surgir. Em crianças maiores, sua aparência deve ser diferenciada de fraturas por avulsão, mas ele não é esperado no início da ossificação do cotovelo.",
-   "D": "O epicôndilo medial aparece antes da tróclea, porém depois do capitelo e da cabeça do rádio. Sua importância clínica é grande porque pode ser avulsionado e encarcerado em luxações do cotovelo."
+   "A": "**Tróclea.**\n- 7 a 9 anos.",
+   "C": "**Epicôndilo lateral.**\n- O último, 10 a 11 anos.",
+   "D": "**Epicôndilo medial.**\n- 5 a 7 anos."
   },
   "referencias": [
    "A Segmental Approach to Imaging of Sports-Related Injuries of the Pediatric Elbow. PMCID: PMC3435948.",
    "Common Pediatric Elbow Fractures: A Radiographic Review. 2023."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0379": {
-  "conceito": "Torcicolo é um sinal clínico, não um diagnóstico. Em uma criança com postura cervical anormal é necessário distinguir torcicolo muscular congênito, alterações ósseas, causas oculares, neurológicas, inflamatórias e traumáticas. A síndrome de Klippel-Feil é caracterizada por fusão congênita de duas ou mais vértebras cervicais e pode produzir torcicolo indolor, limitação de movimento e assimetria cervical. A tríade clássica é pescoço curto, implantação baixa da linha posterior do cabelo e limitação do arco cervical, mas todos os componentes não estão presentes em todos os pacientes. Podem coexistir deformidade de Sprengel, escoliose, anomalias renais, auditivas e cardiovasculares. Alguns pacientes apresentam hipermobilidade compensatória e instabilidade em segmentos não fusionados, o que aumenta risco neurológico. Radiografias definem as fusões; tomografia e ressonância são indicadas conforme anatomia e sintomas.",
-  "correta": "A alternativa C está correta. Um torcicolo congênito, indolor e associado a anomalias ósseas cervicais é uma apresentação típica da síndrome de Klippel-Feil. Diferentemente do torcicolo muscular, a limitação decorre de malformação e fusão vertebral. A identificação é importante porque manipulação cervical indiscriminada pode ser perigosa em pacientes com instabilidade associada.",
+  "conceito": "### Síndrome de Klippel-Feil\n- ==Falha de segmentação de vértebras cervicais== (fusões congênitas).\n- Tríade clássica (presente em < 50%): ==implantação baixa do cabelo, pescoço curto, limitação do movimento cervical==.\n\n### Associações (investigar)\n| Sistema | Achado |\n|---|---|\n| escápula | ==Sprengel== (cerca de 30%) |\n| rim | agenesia, malformações (ultrassom) |\n| ouvido | surdez |\n| coração | defeitos septais |\n| coluna | escoliose congênita |\n| neuro | movimentos em espelho (sincinesia) |\n\n### Risco\n- Segmentos móveis adjacentes às fusões: ==instabilidade e lesão medular== com trauma menor; evitar esportes de contato em padrões de risco.\n\n### Torcicolo indolor com anomalia óssea\n| Causa | Dor | Base |\n|---|---|---|\n| ==Klippel-Feil== | ==indolor== | ==fusão vertebral congênita== |\n| muscular congênito | indolor | fibrose do ECM |\n| Grisel | dolorosa | subluxação C1-C2 pós-infecção |\n| Sprengel | não causa torcicolo verdadeiro | escápula alta |\n\n> **Na prova:** torcicolo congênito indolor com anomalia vertebral = ==Klippel-Feil==",
+  "correta": "**Klippel-Feil.**\n- Falha de segmentação cervical.\n- Torcicolo ósseo, indolor.",
   "incorretas": {
-   "A": "Síndrome de Grisel corresponde a subluxação atlantoaxial não traumática, geralmente adquirida após infecção de vias aéreas superiores ou cirurgia de cabeça e pescoço. Costuma produzir torcicolo doloroso ou agudo, não uma deformidade congênita óssea típica.",
-   "B": "A deformidade citada não corresponde a uma causa ortopédica clássica e consolidada de torcicolo congênito associada a fusões cervicais. Em prova, a associação anatômica descrita aponta diretamente para Klippel-Feil.",
-   "D": "Sprengel é elevação congênita da escápula e pode coexistir com Klippel-Feil. Pode produzir assimetria cervicoescapular, mas não é definida primariamente por anomalias de segmentação vertebral cervical causadoras de torcicolo."
+   "A": "**Grisel.**\n- Adquirida e dolorosa.",
+   "B": "**Não existe.**\n- Epônimo inválido.",
+   "D": "**Sprengel.**\n- Escápula alta; pode coexistir, mas não é a causa."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America. Klippel-Feil Syndrome Study Guide.",
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier.",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 8"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0380": {
-  "conceito": "A artrogripose múltipla congênita clássica (amioplasia) tem um achado cutâneo característico e frequentemente citado: um **hemangioma capilar (\"mancha em vinho do Porto\" ou mancha salmão) na região frontal/fronte** da criança, um marcador cutâneo típico dessa condição, sem significado patológico próprio além de seu valor como pista diagnóstica. Igualmente importante é reconhecer que, apesar do comprometimento físico frequentemente grave (contraturas articulares múltiplas e simétricas), o **desenvolvimento cognitivo costuma ser normal** na artrogripose clássica, um ponto fundamental para orientar expectativas familiares e definir metas de reabilitação centradas na função física, sem presumir comprometimento intelectual associado.",
-  "correta": "A. Na artrogripose clássica, é comum encontrar hemangioma cutâneo na fronte, associado a inteligência normal.",
+  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n### Pistas cutâneas e cognitivas\n- ==Hemangioma capilar na fronte== (linha média, nevus flammeus) na amioplasia.\n- ==Inteligência normal==: diferencia das síndromes neurológicas.\n- Pele lisa, sem pregas; covinhas sobre as articulações.\n\n> **Na prova:** artrogripose clássica = ==hemangioma frontal e inteligência normal==",
+  "correta": "**Hemangioma frontal, inteligência normal.**\n- Mancha capilar na linha média da fronte.\n- Cognição preservada.",
   "incorretas": {
-   "B": "O hemangioma característico da artrogripose clássica é classicamente descrito na região frontal, não na coxa.",
-   "C": "A inteligência costuma ser normal na artrogripose clássica, não alterada, e o hemangioma característico é frontal, não na coxa.",
-   "D": "O hemangioma característico é descrito na região frontal da face, não no membro superior."
+   "B": "**Local errado.**\n- Hemangioma é na fronte.",
+   "C": "**Local e cognição errados.**\n- Inteligência normal.",
+   "D": "**Local errado.**\n- Fronte, não membro superior."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0381": {
