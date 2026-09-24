@@ -4492,91 +4492,91 @@
   "conferido": false
  },
  "mao-0385": {
-  "conceito": "Os lumbricais são numerados de radial para ulnar, do primeiro ao quarto, e nascem dos tendões do flexor profundo. A inervação deles é dividida, e essa divisão é a única exceção, junto com a musculatura tenar, à regra de que o ulnar inerva todos os intrínsecos.",
-  "correta": "Os músculos 1 e 2 (o primeiro e o segundo lumbricais, dos dedos indicador e médio) são inervados pelo nervo mediano, por ramos dos nervos digitais. O terceiro e o quarto são do ramo profundo do ulnar. A consequência clínica é direta e vale guardar: numa lesão ulnar completa a garra aparece no anelar e no mínimo, poupando indicador e médio, cujos lumbricais continuam funcionando. É por isso que a garra da mão ulnar é sempre parcial, e não de todos os dedos.",
+  "conceito": "### Lumbricais\n- **Origem:** tendões do flexor profundo dos dedos (único músculo que nasce em tendão de outro).\n- **Inserção:** **banda lateral** (lado radial) do aparelho extensor.\n- **Inervação:** 1º e 2º pelo **mediano**; 3º e 4º pelo **ulnar**.\n\n### Ações\n| Articulação | Ação |\n|---|---|\n| MF | ==estabilização== (leve flexão; linha de tração próxima ao eixo) |\n| ==IFP e IFD== | ==extensão== (via banda lateral) |\n\n- Ao contrair, puxa o FPD para distal: **relaxa o próprio antagonista**.\n\n### Clínica\n| Condição | Mecanismo |\n|---|---|\n| **dedo lumbrical plus** | FPD seccionado distal à origem do lumbrical ou enxerto longo: ao tentar fletir, o FPD puxa o lumbrical e a IFP **estende paradoxalmente** |\n| garra | perda de lumbricais e interósseos (lesão ulnar/mediana baixa) |\n\n### Interósseos (comparação)\n- Fletem a MF com mais força, abduzem (dorsais) ou aduzem (palmares), estendem as IF.\n\n### Inervação dos lumbricais\n| Lumbrical | Dedo | Nervo | Origem |\n|---|---|---|---|\n| ==1º== | indicador | ==mediano== | unipenado (FPD do indicador) |\n| ==2º== | médio | ==mediano== | unipenado |\n| 3º | anelar | ulnar | bipenado |\n| 4º | mínimo | ulnar | bipenado |\n\n- Por isso a garra ulnar poupa indicador e médio.\n\n> **Na prova:** lumbricais do mediano = ==1º e 2º==",
+  "correta": "**1 e 2.**\n- Lumbricais do indicador e médio, pelo mediano.\n- 3º e 4º são do ulnar.\n- A garra ulnar poupa indicador e médio.",
   "incorretas": {
-   "A": "O quarto lumbrical é do ulnar.",
-   "C": "Terceiro e quarto são ambos do ulnar, é o par oposto ao pedido.",
-   "D": "Mistura um lumbrical de cada nervo."
+   "A": "**4º é ulnar.**\n- Mistura os nervos.",
+   "C": "**Ambos ulnares.**\n- Par oposto ao pedido.",
+   "D": "**Um de cada.**\n- 3º é ulnar."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0386": {
-  "conceito": "A imagem mostra contratura em flexão dos dedos mínimos, nas duas mãos, a apresentação da doença de Dupuytren, que é uma fibromatose da fáscia palmar.",
-  "correta": "O quadro mais comum atinge o quarto dedo e é assimétrico. O anelar é o dedo mais acometido, seguido de perto pelo mínimo, e o acometimento costuma ser bilateral porém em graus bem diferentes, é comum encontrar uma mão com corda e contratura instaladas e a outra ainda em nódulo. Bilateral, portanto, não é sinônimo de simétrico, e essa distinção é justamente o que a alternativa acerta.",
+  "conceito": "### Contratura de Dupuytren\n- Fibromatose da **fáscia palmar** (miofibroblastos, colágeno tipo III).\n- Perfil: ==homem== (várias vezes mais que mulher), acima de 40 anos, ascendência norte-europeia.\n- ==Bilateral com frequência, mas assimétrica==: uma mão bem mais avançada.\n- Dedos mais acometidos: **anelar** e **mínimo**.\n\n### Diátese de Dupuytren (doença agressiva)\n- História familiar, início antes de 50 anos, bilateral, **almofadas de Garrod**, **Ledderhose** (plantar), **Peyronie** (pênis).\n- Maior recidiva após tratamento.\n\n### Fatores associados\n- Diabetes, tabagismo, álcool, epilepsia (anticonvulsivantes), trabalho com vibração.\n\n### Estruturas normais → patológicas\n| Fáscia normal | Corda |\n|---|---|\n| banda pré-tendínea | corda pré-tendínea (MF) |\n| banda espiral, lâmina lateral, ligamento de Grayson | ==corda espiral== (desloca o feixe neurovascular para o centro) |\n| ligamento natatório | corda natatória |\n\n### Prognóstico pior\n| Fator | Motivo |\n|---|---|\n| ==bilateral== | critério de diátese |\n| ==dedos ulnares== (anelar, mínimo) | IFP do mínimo: contratura mais difícil e que mais recidiva |\n| lado radial | incomum, também marca doença agressiva |\n\n### Distribuição\n- Dedo mais acometido: ==anelar==, depois mínimo, médio, polegar e indicador.\n- Bilateral é comum, mas ==assimétrico==.\n\n### Luck\n| Fase | Recidiva se operar |\n|---|---|\n| proliferativa | ==maior== |\n| involutiva | intermediária |\n| residual | menor (corda madura) |\n\n> **Na prova:** Dupuytren = ==4º dedo, bilateral e assimétrico==",
+  "correta": "**4º dedo e assimétrico.**\n- O anelar é o mais acometido.\n- Bilateral é frequente, mas em graus diferentes.",
   "incorretas": {
-   "A": "Green classificou o dedo em gatilho, não o Dupuytren, e são doenças diferentes: o gatilho trava e estala, com nódulo doloroso na base do dedo, e o dedo destrava com um salto; o Dupuytren produz uma corda fixa que impede a extensão progressivamente, sem travamento.",
-   "B": "Erra duas coisas. A doença é de descendentes do norte da Europa (a doença dos vikings) e rara em africanos e no leste asiático. E o diagnóstico é clínico: biópsia não faz parte da rotina.",
-   "C": "Os três estágios de Luck estão certos: proliferativo, involutivo e residual. O que a alternativa inverte é a conclusão, a recidiva é maior, e não menor, quando se opera na fase proliferativa, com a doença em plena atividade. Por isso se prefere operar a corda madura."
+   "A": "**Outra doença.**\n- Green classifica o dedo em gatilho.",
+   "B": "**Duplamente errada.**\n- Rara em negros; diagnóstico clínico.",
+   "C": "**Conclusão invertida.**\n- Operar na fase proliferativa recidiva mais."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0387": {
-  "conceito": "Wassel classificou a duplicação do polegar pelo nível em que a duplicação começa, de distal para proximal: I duplicação da falange distal bífida, II falange distal completa, III falange proximal bífida, IV falange proximal completa, V metacarpo bífido, VI metacarpo completo, VII polegar trifalângico.",
-  "correta": "A classificação vai de I a VII, o tipo IV é o mais comum (cerca de metade dos casos) e o tipo VII é o trifalângico. Guardar a lógica ajuda mais que decorar: os tipos ímpares são duplicações parciais, com o osso bífido, e os pares são duplicações completas, com dois ossos separados. O IV, duplicação completa ao nível da falange proximal, é o que se encontra na maioria das vezes.",
+  "conceito": "### Duplicação do polegar (polidactilia pré-axial)\n- ==Unilateral== e ==esporádica== na maioria; raramente associada a outras malformações.\n\n### Wassel\n| Tipo | Nível | Frequência |\n|---|---|---|\n| I | falange distal bífida | |\n| II | falange distal completa (duplicada) | cerca de 15 a 20% |\n| III | falange proximal bífida | |\n| ==IV== | ==falange proximal completa== | ==o mais comum (40 a 50%)== |\n| V | metacarpo bífido | |\n| VI | metacarpo completo | |\n| ==VII== | ==trifalângico== | cerca de 20% |\n\n- Ímpares = bífidos (parcial); pares = duplicação completa.\n- Tipo VII: herança autossômica ==dominante==.\n\n### Tratamento\n- Ressecar o polegar menos desenvolvido (geralmente o ==radial==), preservando e reinserindo o ==colateral radial== e a musculatura tenar no remanescente.\n- Idade: cerca de 12 meses.\n\n### Polidactilia pós-axial\n| Aspecto | Pós-axial |\n|---|---|\n| raça | muito mais comum em negros |\n| herança | dominante, bilateral |\n| associação | em brancos, investigar síndromes |\n\n> **Na prova:** Wassel ==IV é o mais comum==, ==VII é trifalângico==.",
+  "correta": "**Wassel I a VII, IV mais comum, VII trifalângico.**\n- IV: duplicação completa na falange proximal.\n- Ímpares bífidos, pares completos.",
   "incorretas": {
-   "A": "O polegar trifalângico associado à duplicação (o tipo VII) tem herança autossômica dominante, não recessiva.",
-   "B": "A polidactilia pré-axial é em geral esporádica e isolada, sem associação a malformações de outros sistemas. Quem obriga a investigar outros órgãos é a deficiência radial.",
-   "D": "A duplicação pré-axial é predominantemente unilateral. Bilateralidade e herança marcada são características da polidactilia pós-axial, do lado do dedo mínimo."
+   "A": "**Herança errada.**\n- O trifalângico é dominante.",
+   "B": "**Isolada.**\n- Deficiência radial é que exige investigar órgãos.",
+   "D": "**Unilateral.**\n- Bilateral é típico da pós-axial."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0388": {
-  "conceito": "As variações do primeiro compartimento extensor não são curiosidade anatômica: elas explicam por que uma tenossinovite de De Quervain tratada corretamente às vezes não melhora.",
-  "correta": "A variação mais frequente é a duplicação (na verdade multiplicação) do abdutor longo do polegar, com bandas acessórias que se inserem no trapézio, além da inserção principal na base do primeiro metacarpo. Algumas dessas bandas terminam também nos músculos tenares. Junto com ela vale guardar a outra variação de peso: o septo que separa o extensor curto num subcompartimento próprio, presente numa parcela grande dos punhos. Ele é a causa mais comum de falha da infiltração, porque o corticoide injetado no compartimento principal não alcança o tendão do outro lado do septo, e é o que obriga a procurar e abrir esse septo na liberação cirúrgica.",
+  "conceito": "### Variações do primeiro compartimento extensor\n| Variação | Frequência aproximada | Importância |\n|---|---|---|\n| ==ausência do extensor curto do polegar== | ==cerca de 5%== | |\n| ==septo separando o extensor curto== (subcompartimento) | ==cerca de 20 a 70%== (bem mais em pacientes com De Quervain) | ==causa principal de falha== da infiltração e da liberação |\n| múltiplas bandeletas do abdutor longo | muito comum | confundidas com o extensor curto |\n\n### Tenossinovite de De Quervain\n- Mulheres 30 a 50 anos, pós-parto (\"mãe de bebê\"), uso repetitivo.\n- **Finkelstein** (Eichhoff): polegar na mão, desvio ulnar do punho.\n- **WHAT test:** extensão do punho com abdução resistida do polegar (sensível para o extensor curto).\n\n### Tratamento\n- Órtese em espica, infiltração (cerca de 70 a 80% de sucesso).\n- Liberação cirúrgica: abrir o compartimento **dorsalmente** (evita subluxação volar dos tendões), procurar o **septo**, proteger o **ramo superficial do radial**.\n\n### Inserções do abdutor longo\n| Inserção | Tipo |\n|---|---|\n| base do 1º metacarpo | normal (principal) |\n| ==trapézio== | ==banda acessória mais frequente== |\n| músculos tenares (abdutor curto, oponente) | acessória |\n\n> **Na prova:** variação mais comum = ==duplicação do ALP inserindo-se no trapézio==",
+  "correta": "**ALP duplicado inserindo-se no trapézio.**\n- Bandas acessórias além da inserção no 1º metacarpo.\n- Junto ao septo do ECP, explicam falhas no De Quervain.",
   "incorretas": {
-   "A": "Quem se multiplica é o abdutor longo, não o extensor curto.",
-   "C": "Erra o tendão, e a inserção no primeiro metacarpo é justamente a inserção principal do abdutor longo, não uma variação.",
-   "D": "O tendão está certo, mas a inserção na base do primeiro metacarpo é a normal. A variação está nas bandas acessórias que vão ao trapézio."
+   "A": "**Tendão errado.**\n- Quem se multiplica é o ALP.",
+   "C": "**Duplamente errada.**\n- Tendão errado e inserção normal do ALP.",
+   "D": "**Inserção normal.**\n- A variação vai ao trapézio."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0389": {
-  "conceito": "Cada exame complementar responde uma pergunta diferente na síndrome do túnel do carpo: a eletroneuromiografia mede o quanto o nervo está comprometido e afasta outros diagnósticos, a ultrassonografia mostra a anatomia e a causa, e a ressonância fica reservada a situações específicas.",
-  "correta": "A área de secção transversal do nervo mediano medida no nível do pisiforme é o parâmetro ultrassonográfico de referência, e 10 mm² é o valor de corte: acima disso a sensibilidade descrita passa de 97% para o diagnóstico. Faz sentido medir aí, e não dentro do túnel: o nervo incha antes do estreitamento, como um rio se alarga antes de uma ponte estreita. A ultrassonografia acrescenta ainda o que a eletroneuromiografia não vê (cisto, tenossinovite, nervo mediano bífido, artéria mediana persistente), achados que mudam o planejamento cirúrgico.",
+  "conceito": "### Exames nas neuropatias compressivas\n| Exame | O que mostra | Limite |\n|---|---|---|\n| ==eletroneuromiografia== | ==condução, bloqueio, desnervação==; gravidade e nível | pode ser normal no inicial |\n| ultrassonografia | área de secção do mediano (> 10 a 12 mm²), cisto, nervo bífido, artéria mediana | operador-dependente |\n| ressonância | ==hipersinal em T2== (edema), T1 isointenso; lesões expansivas | custo, não gradua função |\n\n### ENMG no túnel do carpo\n| Grau | Achado |\n|---|---|\n| leve | latência sensitiva aumentada |\n| moderado | + latência motora aumentada |\n| grave | amplitudes reduzidas, desnervação no abdutor curto |\n\n- Diferencia de radiculopatia C6-C7 e polineuropatia.\n- Exame normal não exclui clínica típica.\n\n### Valores de referência\n| Parâmetro | Alterado |\n|---|---|\n| latência motora distal | ==> 4,5 ms== |\n| latência sensitiva | ==> 3,5 ms== |\n| ==área do mediano (US, no pisiforme)== | ==> 10 mm²== |\n\n- O nervo incha ==antes== do estreitamento (proximal ao túnel).\n- RM: massa, anomalia, recidiva; não por tempo de doença.\n\n> **Na prova:** área normal do mediano no pisiforme = até ==10 mm²==",
+  "correta": "**10 mm² no pisiforme.**\n- Valor de corte da área de secção do mediano.\n- O nervo incha antes do estreitamento.\n- US mostra também cisto, nervo bífido, artéria mediana.",
   "incorretas": {
-   "A": "Os números estão certos como limites, mas a leitura está invertida: latência distal motora acima de 4,5 ms e latência sensitiva acima de 3,5 ms são valores alterados, não normais.",
-   "B": "Não é assim que funciona. A eletroneuromiografia pode vir normal numa síndrome inicial e sintomática, com testes provocativos positivos, e exame normal não desfaz uma clínica típica. Nenhum teste clínico garante o resultado de um exame complementar.",
-   "D": "A ressonância não é indicada por tempo de doença. Ela se reserva a suspeita de massa ocupando o túnel, anomalia anatômica ou recidiva após cirurgia, quando é preciso enxergar o que sobrou do ligamento."
+   "A": "**Leitura invertida.**\n- Acima desses valores é alterado.",
+   "B": "**Não garante.**\n- ENMG pode vir normal com clínica típica.",
+   "D": "**Indicação errada.**\n- RM para massa, anomalia ou recidiva."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0390": {
-  "conceito": "Os testes de sensibilidade se dividem em dois grupos que medem coisas diferentes. Os de limiar (vibração e monofilamentos) perguntam qual é o menor estímulo que a pessoa percebe. Os de densidade de inervação (discriminação de dois pontos) perguntam quantas fibras ainda chegam àquela área de pele.",
-  "correta": "Os monofilamentos de Semmes-Weinstein são os primeiros a positivar. A razão é a sequência da doença: na compressão crônica e progressiva, a condução das fibras sofre antes que qualquer fibra morra, e o limiar sobe cedo. A discriminação de dois pontos só se altera quando já há perda real de fibras, ou seja, tardiamente, motivo pelo qual ela é bom teste para acompanhar a regeneração depois de uma secção nervosa, mas ruim para diagnosticar compressão inicial. Guardar essa divisão evita a armadilha de descartar uma síndrome do túnel do carpo porque a discriminação de dois pontos estava normal.",
+  "conceito": "### Testes de sensibilidade\n| Grupo | Teste | Mede | Quando altera |\n|---|---|---|---|\n| ==limiar== | ==Semmes-Weinstein==, vibração (256 Hz) | menor estímulo percebido | ==precoce== (compressão) |\n| densidade de inervação | discriminação de dois pontos (estática e dinâmica) | número de fibras | ==tardio== (perda axonal) |\n| provocativos | Durkan, Phalen, Tinel | reprodução do sintoma | clínica já manifesta |\n\n### Semmes-Weinstein\n| Filamento | Interpretação |\n|---|---|\n| 2,83 | normal |\n| 3,61 | diminuição do tato leve |\n| 4,31 | diminuição da sensibilidade protetora |\n| 6,65 | perda da sensibilidade protetora |\n\n### Uso\n- Compressão: testes de limiar.\n- Regeneração após secção: discriminação de dois pontos.\n\n> **Na prova:** primeiro a positivar na compressão = ==Semmes-Weinstein==.",
+  "correta": "**Semmes-Weinstein.**\n- Teste de limiar: altera antes da perda de fibras.\n- Discriminação de dois pontos é tardia.\n- D2P normal não descarta túnel do carpo.",
   "incorretas": {
-   "B": "O teste de Durkan é o melhor dos testes provocativos, mas ele é provocativo, depende de reproduzir o sintoma, e não mede limiar sensitivo.",
-   "C": "O sinal de Tinel tem sensibilidade baixa e não é o primeiro a se alterar.",
-   "D": "O teste de Phalen, como o Durkan, é provocativo, e positiva depois que o quadro já se manifesta clinicamente."
+   "B": "**Provocativo.**\n- O melhor provocativo, mas não mede limiar.",
+   "C": "**Sensibilidade baixa.**\n- Não é o primeiro.",
+   "D": "**Provocativo.**\n- Positiva com a clínica já manifesta."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0391": {
-  "conceito": "Os flexores profundos dos dedos longos partilham um único ventre muscular. Mexer no comprimento de um deles muda o alcance de todos, é isso que produz o efeito quadriga, nome que vem das rédeas presas juntas nas bigas romanas.",
-  "correta": "A causa é o encurtamento excessivo ou o reparo tensionado demais de um tendão flexor, que limita a amplitude dos dedos vizinhos. Encurtado um tendão, quando a musculatura comum se contrai ela chega ao fim da excursão com aquele dedo já fletido e os outros ainda a meio caminho: os vizinhos deixam de fechar. É a razão da regra da zona I, que limita o avanço do flexor profundo a 1 centímetro, e o motivo de uma cirurgia bem feita num dedo poder deixar a mão inteira pior do que estava. O mesmo acontece na amputação de ponta de dedo em que o coto do flexor profundo é suturado sob tensão ao periósteo.",
+  "conceito": "### Lumbrical plus × quadriga\n| Condição | Mecanismo | Clínica |\n|---|---|---|\n| ==lumbrical plus== | FPD sem continuidade distal (secção distal ao lumbrical, amputação, **enxerto longo e frouxo**): o FPD puxa o lumbrical | ==extensão paradoxal das IF== ao tentar fletir com força |\n| quadriga | FPD **encurtado** (avanço > 1 cm, enxerto curto, sutura ao extensor no coto) | **vizinhos não fecham** a mão |\n| aderência flexora | cicatriz | flexão ativa limitada, extensão passiva limitada |\n| garra (perda lumbrical) | paralisia intrínseca | MF hiperestendida, IF fletidas |\n\n### Tratamento do lumbrical plus\n- **Secção do lumbrical** (liberação).\n\n### Tratamento da quadriga\n- Liberar o FPD encurtado (tenólise, tenotomia do coto).\n\n### Quadriga\n- Os FPD dos dedos longos partilham ==um ventre comum== (rédeas presas juntas).\n- Encurtar um tendão faz o músculo esgotar a excursão antes que os vizinhos fechem.\n- Prevenção: avanço do FPD na zona I ==até 1 cm==; não suturar o FPD ao extensor em amputações.\n\n> **Na prova:** quadriga = ==FPD encurtado ou tensionado limita os dedos vizinhos==",
+  "correta": "**Encurtamento ou reparo tensionado.**\n- O ventre comum esgota a excursão com o dedo operado já fletido.\n- Os vizinhos não fecham.\n- Por isso o avanço do FPD se limita a 1 cm.",
   "incorretas": {
-   "A": "Aderência entre superficial e profundo limita o dedo operado, e não os vizinhos. É outra complicação, a mais comum de todas, mas não é a quadriga.",
-   "C": "Lesão do mediano produz déficit motor e sensitivo no território dele, e não uma limitação mecânica de excursão.",
-   "D": "Ruptura tardia do reparo faz o dedo perder a flexão ativa, o oposto do quadro descrito, em que o dedo operado fecha e os outros é que não fecham."
+   "A": "**Aderência.**\n- Limita o próprio dedo, não os vizinhos.",
+   "C": "**Déficit neurológico.**\n- Não é limitação mecânica.",
+   "D": "**Ruptura.**\n- Perde flexão do próprio dedo, o oposto."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0392": {
-  "conceito": "O diagrama da mão, descrito por Katz e Stirrat, pede que a própria pessoa marque num desenho onde sente dor, dormência ou formigamento. É exame clínico, sem aparelho nenhum, e a interpretação é padronizada.",
-  "correta": "O teste é o do diagrama da mão. O padrão clássico é o marcado no enunciado: sintomas nos dedos do lado radial (polegar, indicador, médio e metade radial do anelar) poupando a palma. Poupar a palma é o achado que mais vale, e tem explicação anatômica: o ramo cutâneo palmar do mediano sai do tronco cerca de 5 a 8 centímetros acima do punho e passa por cima do ligamento transverso, e não por baixo, de modo que ele escapa da compressão. Marcação que inclui a palma ou que sobe pelo antebraço obriga a procurar compressão mais proximal ou radiculopatia cervical.",
+  "conceito": "### Diagrama da mão (Katz e Stirrat)\n- O próprio paciente marca dor, dormência e formigamento num desenho.\n\n| Padrão | Sintomas | Interpretação |\n|---|---|---|\n| ==clássico== | ==polegar, indicador, médio (≥ 2), poupa a palma== | ==túnel do carpo== |\n| provável | como o clássico, palma incluída se não for só ulnar | |\n| possível | ao menos um dedo do mediano | |\n| improvável | nenhum dedo do mediano | outra causa |\n\n### Por que a palma é poupada\n- O ==ramo cutâneo palmar== sai 5 a 8 cm acima do punho e passa ==sobre== o ligamento transverso.\n- Palma acometida: compressão proximal (pronador) ou radiculopatia C6-C7.\n\n### Outros testes da lista\n| Teste | O que é |\n|---|---|\n| Tinel | percussão |\n| discriminação de dois pontos | compasso, densidade de fibras |\n| volumetria | edema por deslocamento de água |\n\n> **Na prova:** paciente marca sintomas num desenho = ==diagrama da mão==.",
+  "correta": "**Diagrama da mão.**\n- Padrão clássico: dedos radiais sem a palma.\n- O ramo cutâneo palmar passa sobre o túnel.\n- Palma acometida: procurar causa proximal.",
   "incorretas": {
-   "A": "O sinal de Tinel é a percussão do nervo pelo examinador, e não um desenho preenchido pelo paciente.",
-   "B": "A discriminação de dois pontos mede densidade de inervação com um compasso, e se altera tardiamente na compressão.",
-   "D": "O teste do volume da mão mede o edema por deslocamento de água, e serve para acompanhar quadros como a síndrome dolorosa regional complexa."
+   "A": "**Percussão.**\n- Feita pelo examinador.",
+   "B": "**Compasso.**\n- Altera tardiamente.",
+   "D": "**Edema.**\n- Deslocamento de água, útil na SDRC."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0393": {
