@@ -6151,92 +6151,92 @@
   "conferido": false
  },
  "mao-0530": {
-  "conceito": "Narakas organizou a paralisia obstétrica pela extensão da lesão, de cima para baixo: grupo 1, C5-C6; grupo 2, acrescenta C7; grupo 3, lesão completa de C5 a T1 sem Horner; grupo 4, completa com Horner.",
-  "correta": "O tipo II é a lesão de C5, C6 e C7. Ao quadro de Erb (ombro em rotação medial, cotovelo estendido, antebraço pronado) soma-se a perda da extensão do punho e dos dedos, deixando o punho caído. O prognóstico é intermediário: pior que o do grupo 1, que recupera espontaneamente na grande maioria, e melhor que o dos grupos com T1.",
+  "conceito": "### Narakas e prognóstico\n| Grupo | Raízes | Recuperação espontânea |\n|---|---|---|\n| ==I== | ==C5-C6== | ==completa em cerca de 90%==, muitas vezes ==nas primeiras 1 a 8 semanas== |\n| II | C5-C7 | cerca de 65%; mais lenta, frequentemente incompleta |\n| III | C5-T1 sem Horner | pouca; sequelas |\n| IV | C5-T1 com Horner | a pior; lesão pré-ganglionar |\n\n### Marcos de acompanhamento\n- **Bíceps** contra a gravidade aos 3 meses (Gilbert e Tassin): se ausente, considerar cirurgia.\n- **Teste do biscoito** (Toronto): levar o biscoito à boca aos 9 meses.\n- **Escala de Toronto** e escala de movimento ativo (AMS).\n\n### Fatores de pior prognóstico\n- Horner, lesão total, ausência de recuperação do bíceps até 3 meses, avulsões (pré-ganglionares).\n\n> **Na prova:** Narakas II = ==C5, C6 e C7== (Erb + punho caído).",
+  "correta": "**C5, C6 e C7.**\n- Erb com punho e dedos caídos.\n- Prognóstico intermediário.",
   "incorretas": {
-   "A": "Lesão completa sem Horner é o grupo 3; com Horner, o grupo 4.",
-   "B": "C5 e C6 isoladas é o grupo 1, o Erb clássico e o mais frequente.",
-   "D": "Lesão isolada das raízes inferiores é a paralisia de Klumpke, rara ao nascimento e que não corresponde a nenhum grupo da escala, que começa sempre pelo tronco superior e desce."
+   "A": "**Grupos 3 e 4.**\n- Completa sem ou com Horner.",
+   "B": "**Grupo 1.**\n- Erb clássico.",
+   "D": "**Klumpke.**\n- Rara ao nascer; fora da escala."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0531": {
-  "conceito": "O nervo mediano pode ser comprimido em quatro pontos entre o braço distal e o antebraço proximal: o ligamento de Struthers, o lacerto fibroso, o espaço entre as duas cabeças do pronador redondo, e a arcada aponeurótica do flexor superficial dos dedos.",
-  "correta": "A arcada aponeurótica do flexor superficial é um desses pontos, o mais distal dos quatro, logo depois de o nervo sair de baixo do pronador. A manobra que a aponta é específica: flexão resistida da interfalângica proximal do dedo médio reproduz a parestesia. Vale contrastar com as outras: pronação resistida com extensão progressiva do cotovelo aponta o pronador redondo, e flexão resistida do cotovelo em supinação aponta o lacerto fibroso.",
+  "conceito": "### Compressão do mediano no cotovelo\n| Ponto | Manobra provocativa |\n|---|---|\n| ligamento de Struthers (processo supracondilar) | RX: esporão supracondilar |\n| lacerto fibroso | flexão resistida do cotovelo em supinação |\n| ==pronador redondo== (entre as cabeças) | ==pronação resistida com extensão do cotovelo==; ==compressão proximal e lateral do ventre== |\n| arcada do flexor superficial | flexão resistida da IFP do dedo médio |\n\n### Síndrome do pronador\n- Dor no antebraço proximal, parestesia no território do mediano ==incluindo a eminência tenar== (ramo cutâneo palmar).\n- Sem sintoma noturno típico; Phalen negativo.\n- ENMG frequentemente normal.\n\n### Teste de compressão\n- Polegar na porção ==proximal e lateral== do pronador, por cerca de 30 s.\n- Positivo: parestesia no mediano.\n\n### Não confundir os Struthers\n| Estrutura | Nervo |\n|---|---|\n| ==ligamento== de Struthers (processo supracondiliano) | ==mediano== |\n| ==arcada== de Struthers (septo intermuscular medial) | ==ulnar== |\n\n> **Na prova:** ponto de compressão na síndrome do pronador = ==arcada do flexor superficial== (entre outros).",
+  "correta": "**Arcada do flexor superficial.**\n- Ponto mais distal dos quatro.\n- Flexão resistida da IFP do médio reproduz a parestesia.",
   "incorretas": {
-   "A": "A cabeça umeral do flexor ulnar do carpo faz parte do túnel cubital, e o nervo que passa entre as suas duas cabeças é o ulnar.",
-   "C": "A arcada de Struthers, no septo intermuscular medial cerca de 8 cm acima do epicôndilo, é ponto de compressão do nervo ulnar. Não confundir com o ligamento de Struthers, que vai do processo supracondiliano ao epicôndilo medial e esse sim comprime o mediano.",
-   "D": "O bíceps braquial tem cabeça longa e curta, não medial. O que participa da compressão do mediano é a aponeurose bicipital, o lacerto fibroso."
+   "A": "**Túnel cubital.**\n- Nervo ulnar.",
+   "C": "**Nervo ulnar.**\n- Arcada ≠ ligamento de Struthers.",
+   "D": "**Não existe.**\n- É o lacerto fibroso que comprime."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0532": {
-  "alerta": "A doença de Dupuytren produz contratura em FLEXÃO da interfalângica proximal, e não hiperextensão, o dedo fecha bem e não abre. A hiperextensão que aparece na doença é da interfalângica distal, secundária, e a corda ligada à distal é a retrovascular. Leia o enunciado com reserva e guarde qual corda produz o quê.",
-  "conceito": "Cada corda de Dupuytren produz uma deformidade própria, e saber qual é qual permite prever o que a cirurgia vai encontrar e o que vai corrigir. Corda pré-tendínea: contratura da metacarpofalângica, a mais fácil de corrigir. Corda espiral e corda lateral: contratura da interfalângica proximal, a mais difícil e a que mais recidiva. Corda natatória: fecha a comissura e limita a abertura entre os dedos. Corda retrovascular: contratura residual da interfalângica distal.",
-  "correta": "O gabarito aponta a corda espiral, e ela é de fato a responsável pela deformidade da interfalângica proximal, mas em flexão, não em hiperextensão. Ela é também a corda perigosa: formada pela banda pré-tendínea, pela banda espiral, pela lâmina digital lateral e pelo ligamento de Grayson, ela se retifica ao se contrair e puxa o feixe vasculonervoso para a linha média e para a superfície, num ponto mais proximal do que se espera. O sinal de alerta na inspeção é o nódulo volar na base do dedo com pele deprimida, e a conduta que decorre dele é começar a dissecção pelo proximal, identificando o nervo em tecido são antes de avançar.",
+  "conceito": "### Fáscia palmar normal → corda patológica\n| Estrutura normal | Orientação | Corda | Efeito |\n|---|---|---|---|\n| banda pré-tendínea | longitudinal | pré-tendínea (central na palma) | flexão da MF |\n| ==ligamento natatório== | ==transversa, nas comissuras== | ==natatória== | ==fecha a comissura, limita abdução== |\n| banda espiral + lâmina digital lateral + Grayson | espiral | ==corda espiral== | flexão da IFP, desloca o feixe |\n| lâmina digital lateral | longitudinal no dedo | lateral | flexão da IFP e IFD |\n| fibras transversas (lig. palmar transverso) | transversa proximal | ==poupada== | |\n| ligamento de Cleland | dorsal ao feixe | ==poupado== | |\n\n### Memória\n- Pré-tendínea limita ==extensão== do dedo.\n- Natatória limita ==abertura== entre os dedos.\n\n### Qual corda, qual articulação\n| Corda | Contratura | Risco cirúrgico |\n|---|---|---|\n| ==pré-tendínea== | ==MF== | baixo (linha média, longe do feixe); corrige bem |\n| espiral | IFP | ==alto==: feixe deslocado para o centro e superfície |\n| central (digital) | IFP | moderado |\n| natatória | comissura | |\n| abdutor do mínimo | IFP do mínimo | |\n\n| retrovascular | IFD (residual) | dorsal ao feixe |\n\n> **Na prova:** corda da IFP = ==espiral== (em flexão; veja o alerta).",
+  "correta": "**Espiral, com reserva.**\n- Responsável pela deformidade da IFP, mas em flexão.\n- Puxa o feixe para o centro e a superfície.\n- Dissecar do proximal para o distal (veja o alerta).",
   "incorretas": {
-   "A": "A corda lateral vem da lâmina digital lateral, corre lateralmente ao feixe e também produz contratura da interfalângica proximal, mas não é a descrita como responsável pelo deslocamento central e superficial do feixe.",
-   "C": "A corda central é a continuação da banda pré-tendínea, corre na linha média e produz a contratura da metacarpofalângica. É a mais segura de dissecar.",
-   "D": "A corda retrovascular passa dorsal ao feixe e é a ligada à contratura residual da interfalângica distal."
+   "A": "**Também IFP.**\n- Mas não desloca o feixe para o centro.",
+   "C": "**MF.**\n- Linha média, segura.",
+   "D": "**IFD.**\n- Contratura residual distal."
   },
-  "geradoEm": "2026-09-06",
+  "alerta": "A doença de Dupuytren produz contratura em FLEXÃO da interfalângica proximal, e não hiperextensão, o dedo fecha bem e não abre. A hiperextensão que aparece na doença é da interfalângica distal, secundária, e a corda ligada à distal é a retrovascular. Leia o enunciado com reserva e guarde qual corda produz o quê.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0533": {
-  "conceito": "O nervo cutâneo lateral do antebraço é a continuação sensitiva do nervo musculocutâneo. Ele emerge lateralmente ao tendão distal do bíceps e desce subcutâneo pela face lateral e volar do antebraço, até a base do polegar.",
-  "correta": "A seta indica o nervo cutâneo lateral do antebraço. Ele importa em três situações concretas. É ele que é comprimido entre o tendão do bíceps e a fáscia do braquial, com dor e parestesia na face lateral do antebraço que se confundem com radiculopatia de C6, mas sem déficit motor. É ele que dá sensibilidade ao retalho antebraquial radial, e por isso é colhido junto quando se quer um retalho sensível. E é ele que está em risco na via anterior ao cotovelo e no acesso ao bíceps distal, onde a lesão deixa uma área dormente incômoda no antebraço.",
+  "conceito": "### Nervo cutâneo lateral do antebraço\n- Continuação sensitiva do ==musculocutâneo==.\n- Emerge ==lateral ao tendão do bíceps==, entre ele e a fáscia do braquial, 2 a 5 cm acima da prega do cotovelo.\n\n### Compressão\n| Posição | Efeito |\n|---|---|\n| ==extensão do cotovelo== | tendão do bíceps contra a fáscia do braquial |\n| ==pronação== | tensiona o tendão sobre o nervo |\n| flexão, supinação | alívio |\n\n- Quadro ==puramente sensitivo==: dor e parestesia na face lateral do antebraço.\n- Esportes: supino, remo, tênis (backhand).\n- Diferencial: radiculopatia C6 (reflexos e força alterados), De Quervain, Wartenberg.\n\n### Tratamento\n- Evitar a posição, órtese, infiltração; descompressão (excisar cunha da aponeurose do bíceps) se persistir.\n\n### Risco iatrogênico\n- Via anterior do cotovelo e de Henry; reparo do bíceps distal.\n\n> **Na prova:** nervo subcutâneo lateral ao bíceps = ==cutâneo lateral do antebraço==",
+  "correta": "**Cutâneo lateral do antebraço.**\n- Continuação do musculocutâneo, lateral ao bíceps.\n- Inerva o retalho chinês; risco na via anterior.",
   "incorretas": {
-   "B": "O interósseo posterior é profundo, corre entre as camadas dos extensores no dorso do antebraço, e não é subcutâneo.",
-   "C": "O interósseo anterior também é profundo, correndo sobre a membrana interóssea no compartimento volar, e é motor puro.",
-   "D": "O nervo radial propriamente dito está no braço e no cotovelo; abaixo dele o que segue subcutâneo pelo lado radial é o ramo sensitivo superficial, e não o tronco."
+   "B": "**Profundo.**\n- Entre as camadas dos extensores.",
+   "C": "**Profundo e motor.**\n- Sobre a membrana volar.",
+   "D": "**Tronco no braço.**\n- Abaixo segue o ramo superficial."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0534": {
-  "conceito": "A rede venosa dorsal da mão drena para dois lados: pelo lado radial ela se organiza na veia cefálica, e pelo lado ulnar na veia basílica. Junto com elas correm nervos cutâneos, e a proximidade entre veia e nervo no dorso é o que torna essa região delicada.",
-  "correta": "A seta 1 aponta a veia basílica, que se forma no lado ulnar do dorso da mão e sobe pela face medial do antebraço; a seta 2 aponta o nervo cutâneo posterior do antebraço, ramo sensitivo do radial. A leitura prática dessa anatomia é direta: no dorso da mão as veias são superficiais e essenciais à drenagem (sacrificá-las produz edema crônico), e os nervos cutâneos correm ao lado delas, de modo que uma dissecção descuidada custa sensibilidade e neuroma. É também por isso que a punção venosa e a fixação de acessos no dorso da mão exigem cuidado.",
+  "conceito": "### Veias e nervos superficiais do membro superior\n| Lado | Veia | Nervo acompanhante |\n|---|---|---|\n| radial | ==cefálica== | ramo superficial do radial (punho), cutâneo lateral do antebraço |\n| ==ulnar== | ==basílica== | ramo dorsal do ulnar; cutâneo medial do antebraço (volar-medial) |\n| dorso do antebraço | tributárias | ==cutâneo posterior do antebraço== (radial) |\n\n### Origem dos cutâneos do antebraço\n| Nervo | Origem |\n|---|---|\n| lateral | musculocutâneo |\n| medial | fascículo medial (C8-T1) |\n| posterior | radial (no braço) |\n\n### Na prática\n- Veias dorsais são essenciais à drenagem: sacrificá-las gera edema.\n- Nervos cutâneos ao lado das veias: neuroma na dissecção descuidada.\n\n> **Na prova:** 1 = ==basílica==, 2 = ==cutâneo posterior do antebraço==.",
+  "correta": "**Basílica e cutâneo posterior do antebraço.**\n- Basílica: lado ulnar do dorso, sobe medial.\n- Cutâneo posterior: ramo sensitivo do radial.",
   "incorretas": {
-   "A": "A cefálica é a veia do lado radial, e o cutâneo medial do antebraço é ramo do fascículo medial do plexo, correndo pela face medial e volar.",
-   "B": "A veia está errada pelo mesmo motivo.",
-   "C": "A veia está certa e o nervo não: o cutâneo medial do antebraço acompanha a basílica na face medial e volar do antebraço, e não no dorso da mão."
+   "A": "**Duplamente errada.**\n- Cefálica é radial; cutâneo medial é volar-medial.",
+   "B": "**Veia errada.**\n- Cefálica é do lado radial.",
+   "C": "**Nervo errado.**\n- Cutâneo medial não está no dorso."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0535": {
-  "conceito": "No cotovelo, o nervo radial se divide em ramo superficial, sensitivo, e ramo profundo, motor. O profundo mergulha no supinador, e a borda proximal desse músculo é a estrutura assinalada.",
-  "correta": "A letra b indica a arcada de Frohse, a borda proximal do supinador, que numa parcela grande das pessoas é tendínea em vez de muscular. É o ponto mais frequente de compressão do nervo interósseo posterior, e a natureza fibrosa da arcada explica por que a supinação repetida contra resistência desencadeia o quadro. Quando produz só dor, o quadro se chama síndrome do túnel radial e confunde-se com epicondilite lateral; quando produz déficit motor, chama-se paralisia do interósseo posterior.",
+  "conceito": "### Túnel radial: cinco pontos de compressão (FREAS)\n| Ponto | Estrutura |\n|---|---|\n| 1 | bandas **fibrosas** anteriores à radiocapitelar |\n| 2 | alça de **Henry** (vasos recorrentes radiais) |\n| 3 | ==borda medial tendínea do extensor radial curto do carpo== |\n| 4 | **arcada de Frohse** (borda proximal do supinador): o mais comum |\n| 5 | borda **distal** do supinador |\n\n### Duas síndromes\n| Síndrome | Quadro |\n|---|---|\n| túnel radial | ==dor== no antebraço proximal, 3 a 4 dedos **distal** ao epicôndilo, sem fraqueza |\n| nervo interósseo posterior | ==fraqueza==: dedos caídos, punho estende em desvio radial (ERLC preservado), sem déficit sensitivo |\n\n### Diferencial com epicondilite\n- Na epicondilite a dor é **sobre** o epicôndilo; no túnel radial, mais distal.\n- **Teste do dedo médio resistido** e supinação resistida dolorosos.\n- Infiltração anestésica no túnel ajuda a separar.\n\n### Síndrome do supinador (túnel radial)\n- Compressão do ==NIP==; dor 3 a 4 dedos ==distal== ao epicôndilo.\n- Só dor: túnel radial; com déficit motor: paralisia do NIP.\n\n### Arcada de Frohse\n- Borda proximal do ==supinador==, tendínea em muitas pessoas.\n- Ponto mais comum de compressão do NIP.\n- Pronar o antebraço afasta o nervo nas vias laterais.\n\n> **Na prova:** arcada de Frohse = ==entrada do supinador==",
+  "correta": "**Arcada de Frohse.**\n- Borda proximal tendínea do supinador.\n- Ponto mais comum de compressão do NIP.",
   "incorretas": {
-   "A": "O lacerto fibroso, ou aponeurose bicipital, cruza a fossa cubital pela face anterior e medial, cobrindo a artéria braquial e o nervo mediano. É ponto de compressão do mediano, não do radial.",
-   "C": "A arcada de Struthers fica no septo intermuscular medial, cerca de 8 cm acima do epicôndilo medial, e comprime o nervo ulnar, do lado oposto do cotovelo.",
-   "D": "O processo supracondiliano é uma esporão ósseo variante na face anteromedial do úmero distal, do qual parte o ligamento de Struthers, que pode comprimir o nervo mediano."
+   "A": "**Mediano.**\n- Face anteromedial.",
+   "C": "**Ulnar.**\n- Septo intermuscular medial.",
+   "D": "**Mediano.**\n- Origem do ligamento de Struthers."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0536": {
-  "conceito": "A trapeziometacarpiana é uma sela com dois graus de liberdade e nenhuma congruência óssea que a segure: quem a estabiliza são os ligamentos, e um deles carrega o papel principal.",
-  "correta": "O ligamento oblíquo anterior (o ligamento em bico) vai da tuberosidade volar do trapézio à base volar-ulnar do primeiro metacarpo, e é o principal freio da subluxação dorsal durante a pinça. Quando ele afrouxa, a base do metacarpo escorrega dorsalmente, o contato articular se concentra numa área pequena na região volar, e é ali que o desgaste começa, motivo pelo qual a artrose aparece primeiro na faceta palmar, tanto na radiografia quanto na artroscopia. É essa mesma insuficiência que produz a deformidade em ziguezague: metacarpo aduzido e subluxado, com hiperextensão compensatória da metacarpofalângica.",
+  "conceito": "### Eaton-Littler e conduta na rizartrose\n| Estágio | Radiografia | Opções |\n|---|---|---|\n| ==I== | normal ou espaço **alargado** (sinovite), subluxação < 1/3 | órtese, infiltração, ==reconstrução ligamentar (Eaton-Littler)==, osteotomia de extensão do 1º MC |\n| II | estreitamento, osteófitos < 2 mm | osteotomia, artroscopia, trapezectomia parcial |\n| III | osteófitos > 2 mm, esclerose, cistos | trapezectomia (± LRTI), artrodese, prótese |\n| IV | + escafotrapeziotrapezoide (pantrapezial) | trapezectomia total |\n\n### Técnica de Eaton-Littler\n- Tira de **metade do flexor radial do carpo** passada por túnel na base do 1º MC.\n- Reconstrói o **ligamento oblíquo anterior** (freio da subluxação dorsal).\n- Só faz sentido com **cartilagem preservada**.\n\n### LRTI (Burton-Pellegrini)\n- Trapezectomia + reconstrução ligamentar + interposição tendínea (FRC ou abdutor longo).\n\n### Estágio III: artrodese × trapezectomia\n| Aspecto | Artrodese TMC | Trapezectomia (± LRTI) |\n|---|---|---|\n| perfil | ==jovem, trabalho manual pesado== | idoso, menor demanda |\n| força de pinça | preservada | menor |\n| mobilidade | perdida (não aplana a mão) | preservada |\n| recuperação | espera consolidação; risco de pseudartrose | mais rápida |\n| pré-requisito | ==STT sadia== | |\n\n### Estabilizadores da TMC\n| Ligamento | Papel |\n|---|---|\n| ==oblíquo anterior (em bico)== | ==freia a subluxação dorsal==; falha inicial |\n| dorsorradial | o mais espesso; estabilizador dorsal |\n| intermetacarpal | ancora ao 2º MC |\n\n- A pinça empurra a base para ==dorsal e radial==.\n- Desgaste começa na ==faceta volar== do trapézio.\n\n> **Na prova:** rizartrose = falha do ==oblíquo anterior== com ==subluxação dorsal==",
+  "correta": "**Oblíquo anterior.**\n- Ligamento em bico, freio da subluxação dorsal.\n- Sua falência concentra carga na faceta volar.",
   "incorretas": {
-   "A": "O ligamento ulnovolar contribui como restritor secundário, mas a sua falência não é o que inicia a cascata.",
-   "C": "O oblíquo posterior é estrutura dorsal e coadjuvante. Há literatura recente valorizando o papel do dorsorradial como restritor, mas o que a questão pede é o estabilizador principal.",
-   "D": "O intermetacarpal une as bases do primeiro e do segundo metacarpos e é secundário."
+   "A": "**Secundário.**\n- Não inicia a cascata.",
+   "C": "**Dorsal coadjuvante.**\n- Não é o principal.",
+   "D": "**Secundário.**\n- Ancora ao 2º MC."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0537": {
-  "conceito": "A escala motora do British Medical Research Council, adaptada às lesões nervosas, gradua a recuperação por dois eixos: até onde a reinervação chegou (músculos proximais, depois distais) e o quanto de força ela devolveu. Ela não é a mesma escala de força muscular de 0 a 5 usada no exame de rotina.",
-  "correta": "O quadro é M2. A reinervação já alcançou músculos proximais e distais (há contração nos flexores profundos e superficiais, na tenar e nos lumbricais), mas ela ainda não devolveu função: não há movimento independente nem força contra resistência. Esse é exatamente o degrau M2. O passo seguinte, M3, exige que todos os músculos importantes ajam contra resistência, e é o limiar habitualmente considerado como resultado útil de um reparo nervoso.",
+  "conceito": "### Escala motora do MRC (lesão nervosa, Highet/Seddon)\n| Grau | Achado |\n|---|---|\n| M0 | sem contração |\n| M1 | contração perceptível nos músculos ==proximais== |\n| ==M2== | ==contração em proximais e distais==, sem função útil |\n| M3 | todos os importantes ==contra resistência== |\n| M4 | + movimentos isolados e sinérgicos |\n| M5 | recuperação completa |\n\n### Escala sensitiva\n| Grau | Achado |\n|---|---|\n| S0 | ausente |\n| S1 | dor profunda |\n| S2 | alguma dor superficial e tato |\n| S3 | dor e tato sem hiperresposta |\n| S3+ | + discriminação de dois pontos parcial |\n| S4 | completa |\n\n- ==M3 e S3== são o limiar de resultado útil.\n\n> **Na prova:** contração proximal e distal sem vencer resistência = ==M2==.",
+  "correta": "**M2.**\n- Reinervação alcançou proximais e distais.\n- Sem movimento independente nem força contra resistência.",
   "incorretas": {
-   "A": "M0 é ausência de qualquer contração, e o enunciado descreve contrações presentes.",
-   "B": "M1 é contração perceptível apenas nos músculos proximais. Aqui a tenar e os lumbricais, que são distais, já contraem.",
-   "D": "M3 exige que os músculos vençam resistência, o que o enunciado nega explicitamente."
+   "A": "**Sem contração.**\n- Há contração.",
+   "B": "**Só proximais.**\n- Aqui os distais já contraem.",
+   "D": "**Contra resistência.**\n- Negado no enunciado."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0538": {
