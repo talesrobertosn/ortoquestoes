@@ -380,128 +380,119 @@
   "conferido": false
  },
  "tumores-0034": {
-  "conceito": "O cordoma é o tumor **maligno** primário mais comum do sacro, origina-se de restos da **notocorda** e por isso ocupa a **linha média**: cerca de metade dos casos é sacrococcígea, uma parte é esfeno-occipital e o restante surge na coluna móvel.\n\nÉ doença de adulto de meia-idade e idoso (quinta à sétima décadas), de crescimento **lento** e insidioso.\n\nEssa lentidão explica a manifestação inicial: **dor lombar baixa** ou dor sacrococcígea vaga, inespecífica, que costuma ser atribuída a lombalgia mecânica durante meses ou anos. O atraso entre o primeiro sintoma e o diagnóstico é longo, e é ele que permite ao tumor alcançar grandes dimensões antes de ser visto.\n\nSó depois vêm os sintomas de massa: constipação e alteração do hábito intestinal, retenção urinária, ciatalgia por compressão radicular e massa palpável, que muitas vezes só é encontrada no **toque retal**. Esse exame é obrigatório diante de dor sacrococcígea persistente e costuma ser esquecido.\n\nO tratamento é a ressecção em bloco com margem ampla, difícil pela topografia e pelo custo neurológico. O prognóstico depende quase inteiramente do controle local: recidiva é a regra quando a margem é comprometida.",
-  "correta": "Dor lombar baixa.",
+  "conceito": "### Tumores do sacro\n| Tipo | Mais comum | Perfil |\n|---|---|---|\n| ==benigno== | ==tumor de células gigantes== | 20 a 40 anos, ==excêntrico==, sacro ==alto==, cruza a sacroilíaca |\n| maligno primário | ==cordoma== | 50 a 70 anos, ==linha média==, sacro distal e cóccix |\n| maligno geral | metástase, mieloma | idosos |\n\n### Outros\n- Cisto ósseo aneurismático, osteoblastoma, granuloma eosinofílico, plasmocitoma, linfoma.\n\n### Cordoma × condrossarcoma\n- Cordoma expressa ==brachyury== (notocorda).\n- Ambos podem ser de linha média com matriz semelhante.\n\n### TGC do sacro\n- Curetagem difícil (raízes); denosumabe, embolização, radioterapia em casos selecionados.\n\n### Cordoma: quadro clínico\n| Fase | Manifestação |\n|---|---|\n| ==inicial== | ==dor lombar baixa / sacrococcígea vaga== (atribuída a lombalgia mecânica) |\n| tardia | constipação, retenção urinária, ciatalgia, massa ao ==toque retal== |\n\n- Crescimento lento: atraso diagnóstico longo.\n- Tratamento: ==ressecção em bloco== com margem ampla; recidiva se margem comprometida; radioterapia de prótons como adjuvante.\n\n> **Na prova:** manifestação inicial do cordoma sacral = ==dor lombar baixa==",
+  "correta": "**Dor lombar baixa.**\n- Vaga e inespecífica por meses ou anos.\n- Toque retal obrigatório na dor sacral persistente.",
   "incorretas": {
-   "A": "A ciatalgia aparece quando o tumor já comprime raízes, é manifestação posterior, não inicial.",
-   "B": "A massa palpável é achado tardio e, no sacro, só é percebida ao toque retal ou quando já muito volumosa.",
-   "C": "A retenção urinária traduz comprometimento das raízes sacras baixas e indica doença avançada."
+   "A": "**Posterior.**\n- Compressão radicular vem depois.",
+   "B": "**Tardia.**\n- Só ao toque retal ou muito volumosa.",
+   "C": "**Doença avançada.**\n- Raízes sacras baixas."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 27"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "tumores-0035": {
-  "conceito": "O fibroma não ossificante é uma lesão fibrosa benigna típica de crianças e adolescentes. Na radiografia aparece como lesão **lítica, excêntrica, metafisária e corticamente baseada**, com margem esclerótica e aspecto lobulado, sem reação periosteal agressiva.",
-  "correta": "**D, fibroma não ossificante.** A imagem mostra lesão excêntrica na metáfise distal da tíbia, alongada e bem delimitada por halo esclerótico.",
+  "conceito": "### Fibroma não ossificante\n- Lesão benigna mais comum da infância (até 30% das crianças); achado incidental.\n- Imagem ==patognomônica==: lítica, ==excêntrica==, ==cortical==, ==metafisária==, borda esclerótica festonada, sem reação periosteal.\n- Fêmur distal, tíbia proximal e distal.\n- Migra para a diáfise e ossifica espontaneamente.\n\n### Conduta\n- Observação (lesão \"não toque\").\n- Cirurgia se > 50% do diâmetro ou > 33 mm (risco de fratura).\n\n### Diferenciais da questão\n| Lesão | Pista |\n|---|---|\n| osteoblastoma | elementos posteriores, expansivo |\n| condroblastoma | epifisário |\n| osteoma osteoide | nicho < 1,5 a 2 cm, esclerose, dor noturna |\n\n> **Na prova:** lítica excêntrica cortical metafisária com borda esclerótica = ==fibroma não ossificante==.",
+  "correta": "**Fibroma não ossificante.**\n- Excêntrica, metafisária, cortical, halo esclerótico.\n- Observação na maioria.",
   "incorretas": {
-   "A": "O osteoblastoma costuma ser expansivo e predomina nos elementos posteriores da coluna ou em ossos longos, sem esse padrão corticamente baseado típico.",
-   "B": "O condroblastoma é epifisário e ocorre junto à articulação em pacientes jovens.",
-   "C": "O osteoma osteoide apresenta um pequeno nidus, geralmente menor que 1,5–2 cm, com esclerose reativa desproporcional."
+   "A": "**Expansivo, coluna posterior.**\n- Outro padrão.",
+   "B": "**Epifisário.**\n- Junto à articulação.",
+   "C": "**Nicho pequeno.**\n- Esclerose desproporcional."
   },
   "referencias": [
    "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
    "Murphey MD et al. From the archives of AFIP: nonossifying fibroma. Radiographics. Revisões de lesões fibrosas benignas.",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 24"
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "tumores-0036": {
-  "conceito": "A regra geral é biopsiar antes de tratar. As exceções são poucas e se justificam por um critério único: quando a **imagem é patognomônica**, a biópsia não acrescenta informação e só acrescenta risco.\n\n**Osteoma osteoide**: nicho central menor que 1,5 cm, radiolucente, com esclerose reativa exuberante ao redor, dor **noturna** que cede dramaticamente a anti-inflamatório. A tomografia mostra o nicho e fecha o diagnóstico. O tratamento (ablação por radiofrequência ou ressecção do nicho) é feito sem biópsia prévia, e mesmo o material obtido na ablação costuma ser insuficiente para o patologista.\n\n**Osteocondroma**: a imagem é definidora porque a lesão tem **continuidade da cortical e da medular** com o osso hospedeiro, algo que nenhuma outra lesão faz. A ressecção, quando indicada por sintoma, dispensa biópsia prévia.\n\nA mesma lógica vale para outras lesões clássicas de \"não toque\" (fibroma não ossificante, ilhota óssea, defeito fibroso cortical, infarto ósseo).\n\nJá o **tumor de células gigantes** e o **condroblastoma** exigem biópsia: o primeiro porque partilha imagem com o cisto ósseo aneurismático, o tumor marrom e o osteossarcoma telangiectásico; o segundo porque a lesão epifisária da criança tem diferencial com abscesso de Brodie e com osteomielite. Tratar tumor como infecção, ou o contrário, é erro caro.",
-  "correta": "Osteoma osteoide e osteocondroma.",
+  "conceito": "### Lesões que dispensam biópsia\n- Critério: ==imagem patognomônica==; biópsia só acrescenta risco.\n\n| Lesão | Imagem |\n|---|---|\n| ==osteoma osteoide== | nicho < 1,5 cm + esclerose; dor noturna que cede com AINE |\n| ==osteocondroma== | ==continuidade cortical e medular== com o osso |\n| fibroma não ossificante | excêntrico, cortical, metafisário |\n| ilhota óssea | esclerose com espículas |\n| infarto ósseo | calcificação serpiginosa |\n\n### Exigem biópsia\n| Lesão | Por quê |\n|---|---|\n| tumor de células gigantes | imagem compartilhada com COA, tumor marrom, osteossarcoma telangiectásico |\n| condroblastoma | diferencial com abscesso de Brodie e osteomielite |\n\n> **Na prova:** dispensam biópsia = ==osteoma osteoide e osteocondroma==.",
+  "correta": "**Osteoma osteoide e osteocondroma.**\n- Imagens patognomônicas.\n- Biópsia não acrescenta.",
   "incorretas": {
-   "B": "O osteoma osteoide está certo, mas o condroblastoma precisa de confirmação histológica.",
-   "C": "O osteocondroma está certo, mas o tumor de células gigantes precisa de biópsia, sua imagem é compartilhada por lesões de comportamento muito diferente.",
-   "D": "Ambos exigem biópsia antes do tratamento."
+   "B": "**Condroblastoma exige.**\n- Diferencial com infecção.",
+   "C": "**TGC exige.**\n- Imagem compartilhada.",
+   "D": "**Ambos exigem.**\n- Biópsia antes."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 24"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "tumores-0037": {
-  "conceito": "A sinovite vilonodular pigmentada (hoje chamada de **tumor tenossinovial de células gigantes**) é uma proliferação da sinovial com translocação envolvendo o gene **CSF1**, que recruta macrófagos em massa.\n\nA histologia é a assinatura: proliferação de células sinoviais e **fibroblastos**, células gigantes multinucleadas, células xantomatosas espumosas e (o achado que dá nome e cor à doença) **macrófagos carregados de hemossiderina**, produto da degradação do sangue dos episódios repetidos de hemartrose.\n\nÉ a hemossiderina que confere à sinovial o aspecto castanho-avermelhado visto na artroscopia e que produz o sinal mais útil na ressonância: focos de **baixo sinal** em T1 e T2, com artefato de suscetibilidade magnética que se acentua nas sequências em eco gradiente.\n\nClinicamente há duas formas:\n\n- **Localizada** (nodular): mais comum na mão e de bom prognóstico após excisão.\n- **Difusa**: prefere o **joelho**, cursa com derrame hemorrágico de repetição, erosões ósseas em ambos os lados da articulação e recidiva em **20% a 50%** após sinovectomia.\n\nNas formas difusas irressecáveis ou recidivadas há hoje tratamento sistêmico com inibidores do CSF1R (pexidartinibe).",
-  "correta": "Macrófagos com depósito de hemossiderina.",
+  "conceito": "### Sinovite vilonodular pigmentada (tumor tenossinovial de células gigantes)\n- Proliferação sinovial com translocação ==CSF1==: recruta macrófagos.\n\n### Histologia\n- Células sinoviais e ==fibroblastos==, células gigantes, células xantomatosas.\n- ==Macrófagos com hemossiderina== (hemartroses repetidas): cor castanho-avermelhada.\n\n### RM\n- ==Baixo sinal em T1 e T2==, artefato de suscetibilidade (blooming) no eco gradiente.\n\n### Formas\n| Forma | Local | Prognóstico |\n|---|---|---|\n| localizada (nodular) | mão (bainha tendínea), joelho | bom após excisão |\n| ==difusa== | ==joelho==, quadril | derrame hemorrágico, erosões dos dois lados; recidiva de 20 a 50% |\n\n### Tratamento\n- Sinovectomia (artroscópica ou aberta, combinada); radiossinovectomia; ==pexidartinibe== (anti-CSF1R) nas irressecáveis.\n\n> **Na prova:** SVNP = ==macrófagos com hemossiderina==.",
+  "correta": "**Macrófagos com hemossiderina.**\n- Resultado das hemartroses repetidas.\n- Dá a cor e o baixo sinal na RM.",
   "incorretas": {
-   "B": "Focos de hemorragia realmente existem, mas descrevem o efeito, não o achado histológico que define a doença, o que se procura é o macrófago repleto de hemossiderina.",
-   "C": "Depósito de fenilalanina não existe como achado sinovial; a alcaptonúria (ocronose) deposita pigmento derivado do ácido homogentísico, e isso é outra doença.",
-   "D": "Purinas e tiamina não descrevem nenhum mecanismo real aqui; os depósitos de cristais das artropatias microcristalinas são de urato monossódico (gota) ou pirofosfato de cálcio (condrocalcinose)."
+   "B": "**Efeito, não assinatura.**\n- Procura-se o macrófago carregado.",
+   "C": "**Não existe.**\n- Ocronose é ácido homogentísico.",
+   "D": "**Não existe.**\n- Cristais são urato ou pirofosfato."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 11"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "tumores-0038": {
-  "conceito": "A fratura **isolada** do trocanter menor no **adulto** é considerada patológica até prova em contrário. É um sinal clássico, e por bom motivo: o trocanter menor é apófise, recebe apenas a tração do iliopsoas, e a força desse músculo não é suficiente para arrancá-lo de um osso normal depois do fechamento fisário.\n\nQuando isso acontece, quase sempre há uma lesão lítica minando o osso: metástase (mama, pulmão, rim, tireoide, próstata), mieloma ou linfoma.\n\nNa **criança** e no **adolescente**, ao contrário, a mesma fratura é uma avulsão apofisária banal do atleta, tratada de forma conservadora.\n\nA conduta correta, portanto, não é fixar: é **investigar a extensão** da doença antes de qualquer gesto:\n\n- Radiografia de todo o fêmur.\n- Ressonância para medir o comprometimento medular e a extensão intraóssea.\n- Tomografia de tórax, abdome e pelve e cintilografia para procurar o primário e outras lesões.\n- Biópsia quando o primário não é conhecido.\n\nSó então se decide, e a decisão costuma envolver estabilização **profilática** de todo o osso com haste intramedular longa (não uma fixação local), radioterapia e tratamento sistêmico.\n\nFixar sem investigar é dois erros num só: trata o sintoma e perde a chance de diagnosticar o tumor.",
-  "correta": "Associada a tumor, e deve-se investigar a extensão da lesão.",
+  "conceito": "### Fratura isolada do trocanter menor\n| Paciente | Significado | Conduta |\n|---|---|---|\n| criança/adolescente | ==avulsão apofisária== (iliopsoas) | conservador |\n| ==adulto== | ==patológica até prova em contrário== | ==investigar extensão== |\n\n### Investigação no adulto\n- RX do fêmur inteiro, RM (extensão medular).\n- TC de tórax, abdome e pelve; cintilografia; eletroforese.\n- Biópsia se primário desconhecido.\n\n### Tratamento depois\n- Fixação ==profilática de todo o osso== (haste longa), radioterapia, tratamento sistêmico.\n\n### Risco de fratura (Mirels)\n| Critério | 1 | 2 | 3 |\n|---|---|---|---|\n| local | membro superior | inferior | ==peritrocantérico== |\n| dor | leve | moderada | funcional |\n| lesão | blástica | mista | lítica |\n| tamanho | < 1/3 | 1/3 a 2/3 | > 2/3 |\n\n- ≥ 9 pontos: fixação profilática.\n\n> **Na prova:** trocanter menor isolado no adulto = ==tumor, investigar extensão==.",
+  "correta": "**Tumor, investigar extensão.**\n- O iliopsoas não arranca a apófise de osso normal no adulto.\n- Estadiar antes de fixar.",
   "incorretas": {
-   "A": "A associação com tumor está certa, mas \"sempre fixar\" inverte a ordem: primeiro se estabelece o diagnóstico e a extensão, depois se planeja a fixação, que costuma ser de todo o osso, e não daquele fragmento.",
-   "B": "Trauma em flexão explica a avulsão apofisária do adolescente, não a fratura isolada do adulto.",
-   "D": "Investigar está certo, mas a hipótese principal no adulto é tumor, e não trauma."
+   "A": "**Ordem invertida.**\n- Diagnóstico antes da fixação.",
+   "B": "**Adolescente.**\n- Avulsão apofisária.",
+   "D": "**Hipótese errada.**\n- No adulto é tumor."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 53"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "tumores-0039": {
-  "conceito": "Dois marcadores séricos têm valor prognóstico estabelecido no osteossarcoma, e ambos refletem carga tumoral.\n\nA **desidrogenase láctica** (LDH) elevada ao diagnóstico associa-se de forma consistente a pior sobrevida e a maior chance de doença metastática oculta. É o marcador mais citado, e a mesma lógica vale para o sarcoma de Ewing.\n\nA **fosfatase alcalina** elevada tem valor semelhante, com a vantagem adicional de servir ao seguimento: uma fosfatase que não cai após a ressecção, ou que volta a subir, levanta a suspeita de doença residual ou de recidiva.\n\nVale organizar os outros preditores, que pesam mais que os laboratoriais:\n\n- Presença de **metástase** ao diagnóstico, o fator isolado mais forte.\n- Localização axial ou proximal.\n- Tamanho do tumor.\n- Margem cirúrgica comprometida.\n- O melhor preditor pós-tratamento: a **resposta histológica** à quimioterapia neoadjuvante, medida pelo percentual de necrose tumoral na peça. Necrose acima de **90%** caracteriza o bom respondedor (critério de Huvos, discutido em outra questão deste acervo), com sobrevida bem superior.",
-  "correta": "Desidrogenase láctica.",
+  "conceito": "### Prognóstico dos osteossarcomas\n| Subtipo | Grau | Sobrevida aproximada |\n|---|---|---|\n| parosteal (fêmur distal posterior) | baixo | ==> 90%== |\n| periosteal | intermediário | 75 a 85% |\n| clássico intramedular | alto | 60 a 70% (com QT) |\n| telangiectásico | alto | semelhante ao clássico |\n| secundário à radiação | alto | baixa |\n| ==secundário ao Paget== | alto | ==5 a 10% em 5 anos== (o pior) |\n\n### Por que o pagético é o pior\n- Paciente idoso, tolera mal a QT.\n- Frequentemente multicêntrico e disseminado ao diagnóstico.\n- Dor em osso já doloroso: diagnóstico tardio.\n- Mudança no padrão de dor em osso pagético = ==sarcoma até prova em contrário==.\n- Transformação em < 1% dos Paget, mas principal causa de morte ligada à doença.\n\n### Fatores prognósticos no osteossarcoma\n| Fator | Pior |\n|---|---|\n| metástase ao diagnóstico | o mais forte |\n| ==DHL elevada== | ==carga tumoral, metástase oculta== |\n| fosfatase alcalina elevada | idem; útil no seguimento |\n| local axial/proximal | |\n| tamanho grande | |\n| margem comprometida | |\n| ==necrose < 90%== após QT (Huvos) | melhor preditor pós-tratamento |\n\n> **Na prova:** marcador de mau prognóstico = ==desidrogenase láctica==",
+  "correta": "**DHL.**\n- Reflete carga tumoral e metástase oculta.\n- Fosfatase alcalina tem valor semelhante.",
   "incorretas": {
-   "A": "A interleucina 6 é marcador inflamatório sem papel prognóstico estabelecido no osteossarcoma.",
-   "B": "A proteína C reativa é inespecífica; sobe em infecção, inflamação e trauma, e não é usada como marcador prognóstico aqui.",
-   "D": "A velocidade de hemossedimentação tem a mesma limitação, inespecífica e sem valor prognóstico definido nesse tumor."
+   "A": "**Sem papel estabelecido.**\n- Inflamatória.",
+   "B": "**Inespecífica.**\n- Infecção, trauma.",
+   "D": "**Inespecífica.**\n- Sem valor prognóstico."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0040": {
-  "conceito": "A transformação sarcomatosa da doença de Paget depende muito da extensão do acometimento, e é isso que a questão testa.\n\nConsiderando **todos** os pacientes com Paget, a taxa é **menor que 1%**. Mas na forma **poliostótica** extensa e de longa duração, ela sobe para a faixa de **5% a 10%**: o risco acompanha a quantidade de osso doente e o tempo de doença.\n\nO tumor resultante é quase sempre um **osteossarcoma** (cerca de **70% a 80%** dos casos), seguido de fibrossarcoma e condrossarcoma, e é o subtipo de **pior prognóstico** de todos: sobrevida em cinco anos em torno de **5% a 10%**.\n\nTrês razões se somam:\n\n- Paciente idoso, que tolera mal a quimioterapia.\n- Tumor frequentemente multicêntrico e já disseminado ao diagnóstico.\n- Reconhecimento tardio, porque a lesão surge sobre um osso já deformado e cronicamente doloroso.\n\nDaí a regra clínica que vale a questão inteira: **mudança no padrão da dor**, dor de repouso ou noturna, aumento de volume ou nova elevação da fosfatase alcalina em paciente com Paget conhecido devem ser lidos como sarcoma até prova em contrário, e investigados com ressonância e biópsia.",
-  "correta": "Entre 5% e 10% na forma poliostótica.",
+  "conceito": "### Doença de Paget\n- Reabsorção osteoclástica desorganizada + formação desordenada: osso em ==mosaico==, expandido, hipervascular, frágil.\n- ==Caucasianos== (anglo-saxões, norte-europeus), ==acima de 55 anos==; rara em orientais e africanos.\n- Genética: SQSTM1 em formas familiares; hipótese viral (paramixovírus).\n\n### Fases\n| Fase | Achado |\n|---|---|\n| lítica | osteoporose circunscrita do crânio; cunha em V (folha de grama) nos ossos longos |\n| mista | |\n| blástica | osso denso, expandido, cortical espessa |\n\n### Laboratório e clínica\n- ==Fosfatase alcalina muito elevada==, cálcio e fósforo normais.\n- Tíbia em sabre, coxa vara, fraturas em giz, surdez, compressão radicular, insuficiência cardíaca de alto débito.\n- Osteossarcoma pagético (< 1%): o de pior prognóstico.\n\n### Tratamento\n- ==Bisfosfonato== (zoledronato): dor, antes de cirurgia eletiva.\n\n### Transformação sarcomatosa\n| Recorte | Taxa |\n|---|---|\n| todos os Paget | < 1% |\n| ==poliostótico extenso e longo== | ==5 a 10%== |\n\n- Osteossarcoma em 70 a 80%; depois fibrossarcoma, condrossarcoma.\n- Sobrevida de 5 a 10% em 5 anos.\n- Mudança no padrão da dor ou nova alta da fosfatase = investigar.\n\n> **Na prova:** Paget poliostótico = ==5 a 10%== de sarcoma.",
+  "correta": "**5 a 10%.**\n- Risco acompanha a extensão e o tempo de doença.\n- Menos de 1% considerando todos.",
   "incorretas": {
-   "A": "Menos de 1% é a taxa considerando TODOS os pacientes com Paget, incluindo as formas monostóticas e limitadas, a pergunta recorta a forma poliostótica.",
-   "B": "1% a 5% subestima o risco da doença extensa.",
-   "D": "Mais de 10% superestima, mesmo nas formas mais graves."
+   "A": "**Todos os Paget.**\n- A questão recorta o poliostótico.",
+   "B": "**Subestima.**\n- Doença extensa.",
+   "D": "**Superestima.**\n- Mesmo nas graves."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0041": {
-  "conceito": "O fibroma não ossificante (e sua forma menor, o defeito fibroso cortical) é a lesão óssea benigna mais comum da infância: está presente em até **30%** das crianças e é quase sempre achado incidental.\n\nA imagem é definidora e dispensa biópsia: lesão **excêntrica**, encostada na **cortical**, situada na **metáfise** dos ossos longos, com bordas nítidas e **esclerosadas** de aspecto festonado ou multiloculado, sem reação periosteal e sem massa de partes moles.\n\nAs sedes preferenciais são fêmur distal, tíbia proximal e tíbia distal.\n\nA história natural é a de uma lesão que **migra** para a diáfise com o crescimento (porque a metáfise se remodela e o osso cresce para longe dela) e depois **ossifica** e desaparece espontaneamente até o fim da adolescência.\n\nPor isso a conduta é observação. Só se opera quando a lesão ocupa mais de **50%** do diâmetro do osso ou mede mais de **33 mm**, situação de risco de fratura patológica que justifica curetagem e enxerto.\n\nQuando aparecem **múltiplos** fibromas não ossificantes com manchas café-com-leite, pensa-se em síndrome de Jaffe-Campanacci, discutida em outra questão deste acervo.",
-  "correta": "Excentricamente na metáfise.",
+  "conceito": "### Fibroma não ossificante\n- Lesão benigna mais comum da infância (até 30% das crianças); achado incidental.\n- Imagem ==patognomônica==: lítica, ==excêntrica==, ==cortical==, ==metafisária==, borda esclerótica festonada, sem reação periosteal.\n- Fêmur distal, tíbia proximal e distal.\n- Migra para a diáfise e ossifica espontaneamente.\n\n### Conduta\n- Observação (lesão \"não toque\").\n- Cirurgia se > 50% do diâmetro ou > 33 mm (risco de fratura).\n\n### Diferenciais da questão\n| Lesão | Pista |\n|---|---|\n| osteoblastoma | elementos posteriores, expansivo |\n| condroblastoma | epifisário |\n| osteoma osteoide | nicho < 1,5 a 2 cm, esclerose, dor noturna |\n\n> **Na prova:** lítica excêntrica cortical metafisária com borda esclerótica = ==fibroma não ossificante==.",
+  "correta": "**Excêntrico na metáfise.**\n- Encostado na cortical.\n- Migra para a diáfise com o crescimento.",
   "incorretas": {
-   "A": "A lesão pode ser encontrada na diáfise em adolescentes mais velhos, mas por migração ao longo do crescimento, sua origem e sua descrição característica são metafisárias.",
-   "B": "Ela não é central: encostar na cortical é justamente um de seus traços definidores.",
-   "D": "Mesma objeção quanto ao posicionamento central."
+   "A": "**Diáfise por migração.**\n- Origem metafisária.",
+   "B": "**Não é central.**\n- Cortical.",
+   "D": "**Não é central.**\n- Excêntrico."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0042": {
-  "conceito": "O cisto ósseo aneurismático é lesão de gente **jovem**: cerca de **80%** dos casos ocorrem **abaixo dos 20 anos**, com pico na segunda década.\n\nNa coluna, que responde por **10% a 30%** dos casos, ele ocupa preferencialmente os **elementos posteriores**: pedículo, lâmina, processo transverso e espinhoso, podendo estender-se secundariamente ao corpo.\n\nEssa topografia posterior é um dado diagnóstico de peso, porque separa o cisto aneurismático (e o osteoblastoma, e o osteoma osteoide) das lesões que preferem o **corpo** vertebral: hemangioma, metástase, mieloma, granuloma eosinofílico (com sua vértebra plana) e cordoma.\n\nConsequências clínicas: dor, escoliose dolorosa antálgica e, pela proximidade do canal, risco de compressão neurológica.\n\nO tratamento é a curetagem ampla com enxerto, muitas vezes precedida de **embolização** (a lesão é hipervascular e sangra muito), com estabilização quando há instabilidade.\n\nE vale sempre a regra: todo material vai ao patologista, para excluir cisto aneurismático **secundário** sobre outra lesão, sobretudo o osteossarcoma telangiectásico.",
-  "correta": "Parte posterior (elementos posteriores) e abaixo de 20 anos.",
+  "conceito": "### Cisto ósseo aneurismático\n- Lesão lítica expansiva, septada, ==níveis líquido-líquido== na RM.\n- Primário: neoplasia verdadeira (rearranjo ==USP6==).\n- Secundário: sobre TGC, condroblastoma, osteossarcoma telangiectásico (mandar todo o material ao patologista).\n\n### Recidiva após curetagem (20 a 30%)\n| Fator de risco | Motivo |\n|---|---|\n| ==idade < 15 anos== | lesão mais celular; curetagem tímida perto da fise |\n| ==localização central== | janela estreita, ângulos mortos |\n\n### Técnica\n- Janela cortical ==ampla==, fresa de alta rotação, adjuvante (fenol, nitrogênio, cimento, argônio).\n- Alternativas: escleroterapia (polidocanol), embolização, denosumabe.\n\n### Diferencial\n- Osteossarcoma telangiectásico (níveis líquidos com septos espessos e nódulos sólidos).\n\n### COA na coluna\n- 80% abaixo de ==20 anos==.\n- ==Elementos posteriores== (pedículo, lâmina, processos), podendo invadir o corpo.\n- Embolização pré-operatória (hipervascular); estabilizar se instável.\n\n### Lesões da coluna por topografia\n| Posteriores | Corpo |\n|---|---|\n| COA, osteoblastoma, osteoma osteoide | hemangioma, metástase, mieloma, granuloma eosinofílico, cordoma, TGC |\n\n> **Na prova:** COA na coluna = ==elementos posteriores, abaixo de 20 anos==",
+  "correta": "**Posterior, abaixo de 20 anos.**\n- Elementos posteriores.\n- 80% dos casos em jovens.",
   "incorretas": {
-   "A": "Erra os dois: a lesão prefere os elementos posteriores e ocorre em pacientes jovens.",
-   "B": "Acerta a topografia, mas a faixa etária está invertida.",
-   "C": "Acerta a idade, mas o corpo vertebral anterior é território de outras lesões."
+   "A": "**Duplamente errada.**\n- Topografia e idade.",
+   "B": "**Idade errada.**\n- Jovens.",
+   "C": "**Topografia errada.**\n- Corpo é de outras lesões."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0043": {
