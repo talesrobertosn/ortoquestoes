@@ -3811,89 +3811,89 @@
   "conferido": false
  },
  "quadril-0323": {
-  "conceito": "Com o ENVELHECIMENTO, a arquitetura óssea do fêmur sofre alterações características: ocorre AFINAMENTO da CORTICAL óssea, processo que se acompanha, paradoxalmente, de um AUMENTO do DIÂMETRO EXTERNO do osso. Esse padrão reflete um desequilíbrio entre os dois processos que constantemente remodelam a superfície óssea: a REABSORÇÃO ENDOSTEAL (na superfície interna do osso, voltada para a cavidade medular) passa a SUPERAR a APOSIÇÃO ÓSSEA PERIOSTEAL (na superfície externa), o que, combinado, resulta em uma cortical mais fina, porém um osso com contorno externo mais largo (um mecanismo compensatório parcial que ajuda a preservar, em parte, a resistência mecânica do osso apesar do afinamento cortical).",
-  "correta": "D. O afinamento da cortical com o envelhecimento se acompanha de aumento do diâmetro externo do osso, refletindo reabsorção endosteal superando a aposição periosteal.",
+  "conceito": "### Remodelação cortical com a idade\n- ==Reabsorção endosteal== (superfície interna) supera a ==aposição periosteal== (superfície externa).\n- Resultado: ==cortical mais fina== e ==canal medular mais largo==, com ==diâmetro externo maior==.\n\n### Por que o diâmetro aumenta\n- A aposição periosteal continua, ainda que lenta.\n- Osso mais largo tem maior **momento de inércia**: compensa em parte o afinamento (a resistência à flexão depende da distância do osso ao eixo).\n\n### Diferenças entre os sexos\n| Aspecto | Homens | Mulheres |\n|---|---|---|\n| aposição periosteal | maior | menor |\n| perda endosteal pós-menopausa | menor | ==acelerada== |\n| resultado | melhor preservação da resistência | mais fratura |\n\n### Implicações ortopédicas\n- Canal largo e cortical fina: fêmur **Dorr C**, haste cimentada preferida.\n- Parafusos e placas com menos pega cortical: considerar bloqueio.\n\n> **Na prova:** envelhecimento = ==cortical fina com diâmetro externo maior==, reabsorção endosteal > aposição periosteal.",
+  "correta": "**Afina por dentro, alarga por fora.**\n- A reabsorção endosteal supera a aposição periosteal.\n- A cortical afina e o diâmetro externo aumenta.",
   "incorretas": {
-   "A": "O afinamento cortical relacionado à idade se acompanha de AUMENTO (não redução) do diâmetro externo do osso, por um mecanismo compensatório parcial.",
-   "B": "O diâmetro ósseo SE ALTERA ao longo da vida, tendendo a aumentar com o envelhecimento à medida que a cortical se afina.",
-   "C": "É a REABSORÇÃO ENDOSTEAL que supera a aposição periosteal no envelhecimento, havendo, sim, contribuição (ainda que menor) da aposição periosteal, e não uma contribuição exclusiva de um único processo isolado."
+   "A": "**Diâmetro aumenta.**\n- O contorno externo se alarga com a idade.",
+   "B": "**Diâmetro muda.**\n- Ele aumenta ao longo da vida.",
+   "C": "**Mecanismo invertido.**\n- O afinamento vem da reabsorção endosteal, não da aposição periosteal."
   },
   "referencias": [
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-16",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0324": {
-  "conceito": "O MÉTODO DE SOUTHWICK quantifica o grau de escorregamento na epifisiólise proximal do fêmur calculando um ÂNGULO DE ESCORREGAMENTO: a diferença entre o ângulo medido no quadril acometido e um valor de referência considerado NORMAL, tanto na incidência em AP quanto na incidência em PERFIL. Os valores de referência (normais) classicamente utilizados por esse método correspondem a 145° na incidência em AP e 10° na incidência em PERFIL, valores que refletem as diferentes convenções de medida do ângulo cabeça-colo-diáfise (epífise-diáfise) em cada uma dessas duas incidências radiográficas.",
-  "correta": "A. Os valores de referência do método de Southwick correspondem a 145° na incidência em AP e 10° na incidência em perfil.",
+  "conceito": "### Ângulo de Southwick (epifisiólise)\n- Ângulo **epífise-diáfise**: linha perpendicular à base da epífise × eixo da diáfise.\n- Medido no **perfil** (rã ou Lauenstein) e no AP.\n- ==Ângulo de escorregamento = ângulo do lado doente − valor normal==.\n| Incidência | Valor de referência |\n|---|---|\n| AP | ==145°== |\n| perfil | ==10°== (retroversão normal) |\n\n- Se o outro lado é normal, usa-se o ==lado contralateral== como referência.\n\n### Gravidade (perfil)\n| Grau | Ângulo de escorregamento |\n|---|---|\n| leve | < 30° |\n| moderado | 30 a 50° (ou 60°) |\n| grave | > 50° (ou 60°) |\n\n### Outras classificações\n- **Loder:** estável (marcha possível) × instável (não deambula): risco de necrose muito maior no instável.\n- **Wilson:** % de deslocamento da epífise em relação à largura da metáfise.\n\n> **Na prova:** Southwick = referências de ==145° no AP e 10° no perfil==.",
+  "correta": "**145° e 10°.**\n- O ângulo de escorregamento é a diferença entre o lado doente e esses valores normais.\n- 145° no AP e 10° no perfil.",
   "incorretas": {
-   "B": "O valor de referência na incidência em AP é de 145°, não de 135°.",
-   "C": "O valor de referência na incidência em perfil é de 10°, não de 15°.",
-   "D": "Os valores de referência corretos são 145° (AP) e 10° (perfil), e não 135° e 15°."
+   "B": "**AP errado.**\n- A referência no AP é 145°.",
+   "C": "**Perfil errado.**\n- A referência no perfil é 10°.",
+   "D": "**Os dois errados.**\n- Os valores corretos são 145° e 10°."
   },
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 4ª edição"
   ],
-  "geradoEm": "2026-09-16",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0325": {
-  "conceito": "O nervo ISQUIÁTICO (ciático) apresenta variações anatômicas reconhecidas em sua relação com o músculo PIRIFORME, sendo a mais comum aquela em que os ramos TIBIAL e FIBULAR do nervo emergem JUNTOS, INFERIORMENTE ao músculo piriforme, sem qualquer relação direta com suas fibras. Durante uma LUXAÇÃO POSTERIOR TRAUMÁTICA do quadril, é justamente essa variação anatômica mais comum (ambos os ramos emergindo inferiormente ao piriforme, sem contato direto com o músculo) que se associa ao MENOR RISCO de lesão do nervo isquiático, já que o nervo fica mais distante do trajeto de tração e do impacto local do trauma sobre a musculatura pélvica profunda.",
-  "correta": "B. O menor risco de lesão do nervo isquiático ocorre quando os ramos tibial e fibular emergem juntos, inferiormente ao piriforme, a variação anatômica mais comum, sem relação direta com o músculo.",
+  "conceito": "### Variações do isquiático em relação ao piriforme (Beaton e Anson)\n| Tipo | Relação | Frequência aproximada |\n|---|---|---|\n| ==A== | ==nervo inteiro abaixo do piriforme== | ==cerca de 85 a 90%== |\n| B | divisão fibular **atravessa** o piriforme, tibial abaixo | cerca de 10% |\n| C | fibular **acima**, tibial abaixo | 1 a 3% |\n| D | nervo inteiro atravessa o músculo | raro |\n| E, F | outras combinações | raríssimas |\n\n### Luxação posterior do quadril\n- Lesão do isquiático em cerca de **10 a 20%**, sobretudo da **divisão fibular**.\n- Menor risco quando o nervo está ==inteiro abaixo do piriforme==, sem ligação às fibras musculares.\n- Variações em que o nervo atravessa o músculo o \"prendem\": maior risco de estiramento e compressão.\n\n### Clínica\n- Síndrome do piriforme mais comum nas variações com passagem através do músculo.\n\n> **Na prova:** menor risco = ==ramos tibial e fibular juntos, abaixo do piriforme== (variação mais comum).",
+  "correta": "**Variação mais comum, menor risco.**\n- Com o nervo inteiro abaixo do piriforme, sem atravessar suas fibras, o isquiático sofre menos na luxação posterior.",
   "incorretas": {
-   "A": "Quando o ramo fibular atravessa o próprio músculo piriforme, essa relação mais íntima com o músculo aumenta (e não reduz) o risco de lesão nervosa durante o trauma.",
-   "C": "A variação em que o ramo fibular emerge proximal ao piriforme também envolve relação mais próxima ao músculo, não correspondendo ao padrão de menor risco descrito.",
-   "D": "Quando ambos os ramos atravessam o músculo piriforme, essa relação mais íntima aumenta o risco de lesão nervosa, ao contrário do padrão de menor risco (ramos emergindo inferiormente ao músculo, sem atravessá-lo)."
+   "A": "**Risco maior.**\n- A divisão fibular que atravessa o músculo fica presa e sofre mais.",
+   "C": "**Também mais preso.**\n- A passagem acima do piriforme cria relação íntima com o músculo.",
+   "D": "**Risco maior.**\n- O nervo que atravessa o músculo fica mais vulnerável."
   },
   "referencias": [
    "Rockwood & Green's Fractures in Adults, 8ª edição"
   ],
-  "geradoEm": "2026-09-16",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0326": {
-  "conceito": "O ÂNGULO ALFA é utilizado na avaliação radiográfica do IMPACTO FEMOROACETABULAR do tipo CAME, quantificando a esfericidade da transição entre a cabeça e o colo femoral. A deformidade característica do tipo came (perda da esfericidade nessa transição, formando uma proeminência óssea) se evidencia quando o ângulo alfa ULTRAPASSA um valor de corte descrito por referências clássicas como Campbell's Operative Orthopaedics em torno de 60°, ainda que a literatura ortopédica registre alguma VARIAÇÃO nesse ponto de corte entre diferentes séries, técnicas de medida (radiografia, tomografia, ressonância magnética) e edições de obras de referência, alguns descrevendo valores um pouco mais baixos (em torno de 50-55°).",
-  "correta": "D. A deformidade do tipo came se evidencia quando o ângulo alfa ultrapassa cerca de 60°, segundo referências como Campbell's Operative Orthopaedics, havendo alguma variação desse ponto de corte na literatura.",
+  "conceito": "### Ângulo alfa: pontos de corte variam\n| Fonte | Corte para came |\n|---|---|\n| Nötzli (RM oblíqua axial, descrição original) | ==acima de 50°== |\n| muitas séries radiográficas | acima de 55° |\n| ==Campbell's Operative Orthopaedics== (e outras) | ==acima de cerca de 60°== (62 a 63° como mais específico) |\n\n### Por que variam\n- Incidência usada (Dunn 45°, 90°, cross-table, perfil de rã), técnica de medida, RM ou TC.\n- Assintomáticos, sobretudo atletas, têm ângulos elevados com frequência.\n\n### O que é constante\n- ==Quanto maior o ângulo alfa, maior a giba== e maior a chance de impacto.\n- O diagnóstico exige **clínica + imagem**: dor, FADIR positivo, rotação interna limitada.\n\n> **Na prova:** came com ângulo alfa ==acima de cerca de 60°== (Campbell), com variação na literatura (50 a 55°).",
+  "correta": "**Corte de Campbell.**\n- O came fica evidente com ângulo alfa acima de cerca de 60° nessa referência.\n- Outras séries usam 50 a 55°.",
   "incorretas": {
-   "A": "O ponto de corte descrito para o ângulo alfa no impacto tipo came está em torno de 60° (ou, em outras séries, 50-55°), valores bem mais altos que 20°.",
-   "B": "O ângulo alfa TEM relação direta com o impacto tipo came, sendo justamente o parâmetro utilizado para avaliar essa deformidade específica da transição cabeça-colo.",
-   "C": "É um ângulo alfa AUMENTADO (e não diminuído) que se associa à maior probabilidade de impacto do tipo came."
+   "A": "**Muito baixo.**\n- 20° não tem relação com os pontos de corte descritos.",
+   "B": "**Relação direta com o came.**\n- O ângulo alfa foi criado para medir a giba femoral.",
+   "C": "**Invertido.**\n- Ângulo maior, não menor, indica came."
   },
   "referencias": [
    "Campbell's Operative Orthopaedics, 12ª edição",
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-16",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0327": {
-  "conceito": "A CLASSIFICAÇÃO DE BOYD E GRIFFIN descreve subtipos de fraturas TRANSTROCANTÉRICAS (intertrocantéricas) do fêmur, conforme o padrão do traço de fratura e sua estabilidade. Nessa classificação, o TIPO III é caracterizado por uma fratura transtrocantérica INSTÁVEL com OBLIQUIDADE REVERSA do traço de fratura, um padrão biomecanicamente mais instável, no qual o fragmento distal tende a se deslocar medialmente em relação ao fragmento proximal, exigindo, em geral, fixação com implantes de maior estabilidade angular (como hastes intramedulares) em vez de dispositivos deslizantes convencionais.",
-  "correta": "C. A fratura transtrocantérica instável com obliquidade reversa do traço corresponde ao tipo III da classificação de Boyd e Griffin.",
+  "conceito": "### Classificação de Boyd e Griffin\n| Tipo | Descrição | Estabilidade |\n|---|---|---|\n| I | traço ao longo da linha intertrocantérica, simples | estável |\n| II | cominuição, traço principal intertrocantérico, várias fraturas corticais | instável se cominuição posteromedial |\n| ==III== | ==traço subtrocantérico, obliquidade reversa== (ao menos uma fratura passa pelo trocânter menor ou logo abaixo) | ==instável== |\n| IV | extensão para a diáfise em pelo menos dois planos (espiral) | instável |\n\n### Obliquidade reversa\n- O traço vai de **inferolateral** para **superomedial**.\n- O fragmento distal tende a **medializar**; o DHS deslizante falha (desliza na direção do desvio).\n- Tratamento: ==haste cefalomedular== (ou placa de ângulo fixo 95°).\n- Equivalente na AO/OTA: **31A3**.\n\n### Instabilidade nas trocantéricas\n- Cominuição **posteromedial** (calcar), obliquidade reversa, extensão subtrocantérica, parede lateral fina.\n\n> **Na prova:** obliquidade reversa = ==Boyd e Griffin III== (AO 31A3).",
+  "correta": "**Tipo III.**\n- A obliquidade reversa, com traço subtrocantérico, é o tipo III de Boyd e Griffin.\n- É instável e pede haste cefalomedular.",
   "incorretas": {
-   "A": "O tipo I da classificação de Boyd e Griffin não corresponde ao padrão de obliquidade reversa, que é descrito no tipo III.",
-   "B": "O tipo II da classificação de Boyd e Griffin não corresponde ao padrão de obliquidade reversa, que é descrito no tipo III.",
-   "D": "O tipo IV da classificação de Boyd e Griffin não corresponde ao padrão de obliquidade reversa, que é descrito no tipo III."
+   "A": "**Traço simples.**\n- O tipo I é a fratura linear estável ao longo da linha intertrocantérica.",
+   "B": "**Cominuição.**\n- O tipo II tem cominuição, mas não a obliquidade reversa.",
+   "D": "**Extensão diafisária.**\n- O tipo IV se estende à diáfise em dois planos."
   },
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 7ª edição"
   ],
-  "geradoEm": "2026-09-16",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0328": {
-  "conceito": "Na avaliação intraoperatória da redução de fraturas do colo femoral, dois índices radiográficos complementares são utilizados: o índice de alinhamento de GARDEN, medido na incidência anteroposterior (valor normal próximo de 160°), e o índice de LOWELL, medido na incidência em perfil (valor normal próximo de 180°). Juntos, permitem avaliar a qualidade da redução nos dois planos.",
-  "correta": "A. As imagens A e B ilustram, respectivamente, os índices de LOWELL (perfil) e GARDEN (anteroposterior).",
+  "conceito": "### Qualidade da redução no colo femoral\n| Parâmetro | Como se avalia | Normal |\n|---|---|---|\n| ==índice de Garden== | ângulo entre trabéculas compressivas e cortical medial da diáfise | ==cerca de 160° no AP e 180° no perfil== (aceitável 155 a 180°) |\n| ==sinal de Lowell== | contornos corticais da cabeça e do colo formando curvas contínuas em ==S== ou ==C== reverso | curvas lisas, sem degrau |\n\n### Leitura prática\n- **Garden** quantifica o ângulo: abaixo de 155 a 160° no AP indica varo; desvio acima de 20° no perfil aumenta necrose e falha.\n- **Lowell** é visual: qualquer quebra ou angulação nas curvas S ou C indica redução imperfeita.\n- Os dois são complementares, avaliados na radioscopia AP e perfil.\n\n### Winter\n- Não é parâmetro de redução do colo femoral.\n\n> **Na prova:** o gabarito identifica ==A = Lowell== e ==B = Garden== (veja o alerta sobre a ordem das imagens).",
+  "correta": "**Resposta oficial.**\n- A imagem A mostra as curvas corticais de Lowell.\n- A imagem B mostra o índice angular de Garden.",
   "incorretas": {
-   "B": "A ordem apresentada nessa alternativa inverte a correspondência entre as imagens A e B e os respectivos índices.",
-   "C": "O índice de WINTER não corresponde a nenhum dos parâmetros de qualidade de redução da fratura do colo femoral avaliados nessas imagens.",
-   "D": "O índice de WINTER não é um dos parâmetros classicamente utilizados para essa avaliação, o que torna essa alternativa incorreta independentemente da ordem."
+   "B": "**Ordem invertida.**\n- O gabarito atribui Lowell à imagem A e Garden à B.",
+   "C": "**Winter não se aplica.**\n- Não é parâmetro de redução do colo femoral.",
+   "D": "**Winter não se aplica.**\n- Independentemente da ordem, Winter não entra."
   },
   "alerta": "A ordem exata entre as imagens A e B (qual mostra o índice de Lowell e qual mostra o de Garden) depende do rótulo de cada imagem no caderno da prova, que não tenho como reconferir com certeza absoluta nesta reanálise. Mantive a alternativa A (Lowell na imagem A, Garden na imagem B) como a mais provável pela ordem observada na figura, mas vale conferir visualmente antes de tratar como definitivo.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 49"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0329": {
