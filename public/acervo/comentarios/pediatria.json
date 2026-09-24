@@ -6582,117 +6582,117 @@
   "conferido": false
  },
  "pediatria-0538": {
-  "conceito": "As linhas de PARK e HARRIS (também chamadas linhas de crescimento ou de recuperação do crescimento) são linhas radiodensas transversais na metáfise, paralelas à fise, que se formam quando o ritmo normal de crescimento da fise é temporariamente desacelerado (por doença sistêmica, desnutrição ou trauma) e depois retoma seu curso habitual. Quando essas linhas permanecem paralelas à fise ao longo de todo o seu trajeto, indicam que o crescimento foi retomado de forma uniforme; quando convergem ou se afunilam em direção à fise, sinalizam a presença de uma barra óssea localizada.",
-  "correta": "D. As linhas de Park e Harris são sinais de distúrbio de crescimento da fise, resultantes de um retardo temporário do ritmo de crescimento normal.",
+  "conceito": "### Linhas de Park-Harris (linhas de parada de crescimento)\n- Faixas ==transversas escleróticas== na metáfise, paralelas à fise.\n- Formam-se quando o crescimento ==desacelera temporariamente== (fratura, doença, desnutrição, quimioterapia) e depois retoma.\n\n### Uso no seguimento de lesões fisárias\n| Aspecto da linha | Interpretação |\n|---|---|\n| ==paralela à fise==, afastando-se | crescimento ==simétrico== retomado |\n| ==oblíqua== ou convergindo para a fise | crescimento assimétrico: suspeitar de ==barra óssea== |\n| ausente, colada à fise | parada de crescimento |\n\n- Avaliar com 6 a 12 meses após a fratura.\n\n> **Na prova:** Park-Harris = ==retardo temporário do crescimento== da fise",
+  "correta": "**Retardo temporário do crescimento.**\n- Desaceleração transitória da fise.\n- Orientação da linha mostra se o crescimento retomou simétrico.",
   "incorretas": {
-   "A": "A presença de barra óssea precoce é sugerida apenas quando essas linhas convergem em direção à fise, não pela sua simples presença.",
-   "B": "As linhas por si só não indicam bom prognóstico; seu significado depende de se manterem paralelas (bom sinal) ou convergirem (sinal de barra) em relação à fise.",
-   "C": "As linhas de Park e Harris não indicam hipercrescimento por hiperemia; elas refletem uma desaceleração temporária do crescimento, não uma aceleração."
+   "A": "**Barra óssea.**\n- Sugerida só por linha oblíqua ou convergente.",
+   "B": "**Prognóstico.**\n- Linha em si não garante; a orientação é que informa.",
+   "C": "**Hipercrescimento.**\n- Refletem desaceleração, não aceleração."
   },
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 12.1"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0539": {
-  "conceito": "Na fratura-luxação de MONTEGGIA tipo II de BADO (luxação posterior da cabeça radial associada a fratura da ulna com ápice posterior), a redução deve ser seguida de imobilização em extensão do cotovelo (ou próxima da extensão), posição que reduz a tendência de redeslocamento posterior da cabeça radial, em contraste com o tipo I (anterior), imobilizado em flexão para evitar o redeslocamento anterior.",
-  "correta": "A. Após a redução incruenta do tipo II de Bado, o cotovelo deve ser mantido imobilizado em extensão.",
+  "conceito": "### Equivalentes de Monteggia\n- Bado classificou pela direção da cabeça do rádio:\n  - I anterior;\n  - II posterior;\n  - III ==lateral==;\n  - IV anterior com fratura dos dois ossos.\n- Equivalentes trocam a luxação da cabeça por **fratura do colo do rádio** e a fratura da ulna por **deformidade plástica** ou fratura do olécrano.\n- Colo do rádio desviado lateralmente + olécrano em **varo** = equivalente do ==tipo III==, produzido por força em varo.\n\n### Imobilização por tipo\n| Bado | Cabeça do rádio | Posição de estabilidade |\n|---|---|---|\n| I | anterior | ==flexão > 100 a 110°== e supinação (bíceps relaxado) |\n| ==II== | ==posterior== | ==extensão== (ou flexão leve) |\n| III | lateral | extensão e supinação, valgo |\n| IV | anterior + fratura do rádio | fixação dos dois ossos |\n\n- Regra: a ulna reduzida com comprimento correto mantém a cabeça reduzida (deformidade plástica corrigida).\n\n> **Na prova:** Bado II = imobilizar em ==extensão==",
+  "correta": "**Extensão.**\n- Cabeça posterior estabiliza em extensão.\n- Oposto do tipo I.",
   "incorretas": {
-   "B": "A flexão de 45 graus não é a posição indicada para o tipo II; essa posição favoreceria o redeslocamento posterior da cabeça radial.",
-   "C": "A flexão de 90 graus é a posição utilizada no tipo I (anterior) de Bado, não no tipo II (posterior).",
-   "D": "A flexão de 110 graus também favoreceria o redeslocamento posterior, sendo inadequada para a estabilização do tipo II."
+   "B": "**45°.**\n- Não é a posição descrita.",
+   "C": "**90°.**\n- Pode redeslocar a cabeça posterior.",
+   "D": "**110°.**\n- Posição do Bado I."
   },
-  "alerta": "A posição exata de imobilização do tipo II de Bado (extensão versus algum grau de flexão) tem menos consenso na literatura do que a do tipo I, e alguns textos descrevem apenas a orientação geral de evitar a posição que favorece o redeslocamento, sem especificar um ângulo fixo. Mantive a alternativa A (extensão) como a mais consistente com o raciocínio biomecânico do tipo posterior, mas vale confirmar esse detalhe específico em fonte primária antes de memorizá-lo com confiança total.",
+  "alerta": "Alguns autores imobilizam o Bado II em flexão leve em vez de extensão completa. A banca aceitou extensão.",
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 29"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0540": {
-  "conceito": "Quando uma luxação traumática do cotovelo se reduz espontaneamente e deixa como sequela uma fratura do colo radial, o mecanismo do trauma (compressão da cabeça radial contra o capítulo durante a luxação e sua redução) tende a deslocar a epífise proximal do rádio para anterior, à medida que a cabeça radial escapa e retorna à sua posição durante o evento de luxação/redução.",
-  "correta": "C. A epífise proximal do rádio desloca-se mais frequentemente em direção anterior nesse contexto.",
+  "conceito": "### Colo do rádio na criança\n- Na criança, a fise e o colo cedem antes da cabeça, que é cartilaginosa.\n- Mecanismo: queda com o cotovelo em ==extensão== e carga em ==valgo==, com compressão do capítulo contra a cabeça.\n- Associações: fratura do olécrano, lesão do colateral medial e avulsão do epicôndilo medial.\n- Aceita-se angulação de até cerca de 30°; acima disso, redução (manobras fechadas, percutânea com fio ou Metaizeau).\n\n### Colo do rádio com luxação do cotovelo (Wilkins/Jeffery)\n- Dois padrões conforme o momento da lesão:\n  - ==na redução==: o capítulo bate na cabeça ao voltar, que se desloca e pode girar até 90°;\n  - ==na luxação==: a cabeça fica presa na posição luxada.\n- Cabeça desviada exige redução aberta com frequência; risco de necrose e sinostose.\n\n> **Na prova:** redução espontânea + colo do rádio = epífise desviada ==anteriormente== (veja o alerta)",
+  "correta": "**Anterior (gabarito).**\n- Padrão associado à redução espontânea.\n- Resposta oficial (veja o alerta).",
   "incorretas": {
-   "A": "O desvio lateral não é o padrão mais frequentemente descrito para essa lesão específica associada à luxação espontaneamente reduzida.",
-   "B": "O desvio medial também não corresponde ao padrão mais comumente relatado nesse mecanismo de lesão combinada.",
-   "D": "O desvio posterior é menos característico desse padrão específico do que o desvio anterior."
+   "A": "**Lateral.**\n- Desvio do padrão em valgo isolado.",
+   "B": "**Medial.**\n- Pouco frequente.",
+   "D": "**Posterior.**\n- Descrito em algumas fontes para o padrão da redução; a banca não aceitou."
   },
-  "alerta": "A direção mais frequente do desvio da epífise radial proximal nesse mecanismo específico (fratura do colo radial associada à redução espontânea de luxação de cotovelo) não é um ponto que eu tenha visto descrito de forma extremamente consistente entre diferentes fontes, e não tenho certeza absoluta de que 'anterior' seja a direção exata privilegiada pela fonte da banca. Mantive essa alternativa como a mais plausível com base no mecanismo biomecânico geral, mas vale confirmar esse detalhe em fonte primária antes de memorizá-lo com confiança total.",
+  "alerta": "A direção do desvio da cabeça radial nas lesões de Jeffery varia entre as fontes: há descrição de desvio posterior no padrão da redução e anterior no da luxação. A banca indicou anterior.",
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 10"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0541": {
-  "conceito": "Durante a confecção do gesso pélvico-podálico (spica) para o tratamento da fratura diafisária do fêmur na criança, a tração excessiva do membro (especialmente quando aplicada de forma prolongada durante a moldagem do gesso) pode comprometer a perfusão da perna, levando à síndrome compartimental, complicação temida por seu potencial de gerar sequelas permanentes (contratura de Volkmann) caso não seja reconhecida e tratada precocemente.",
-  "correta": "B. A síndrome compartimental é a complicação mais temida relacionada à tração excessiva durante a confecção do gesso.",
+  "conceito": "### Fratura diafisária do fêmur por idade\n- **0–6 meses:** suspensório de Pavlik ou tala.\n- **6 meses–5 anos:** gesso pelvipodálico imediato.\n- **5–11 anos:** hastes flexíveis de titânio (estáveis); placa submuscular ou fixador nos instáveis.\n- ==Acima de 11 anos== (ou peso maior que 45–50 kg): **haste intramedular rígida** com entrada **trocantérica** (lateral), evitando a fossa piriforme pelo risco de necrose.\n\n### Gesso pelvipodálico: armadilhas\n- Técnica em ==dois tempos== (bota curta primeiro, depois tração pela bota para reduzir) aumenta a pressão na perna.\n- ==Síndrome compartimental== da perna: dor intensa, choro inconsolável, recusa em mover os dedos; é a complicação mais temida.\n- Outras: úlcera de pressão no calcanhar e na fossa poplítea, encurtamento > 2 cm, angulação.\n- Prevenção: joelho em 45 a 60° de flexão, sem tração exagerada, acolchoamento, vigilância.\n\n> **Na prova:** bota inicial + tração no pelvipodálico = risco de ==síndrome compartimental==",
+  "correta": "**Síndrome compartimental.**\n- Pressão da bota com tração.\n- Complicação grave e evitável.",
   "incorretas": {
-   "A": "O desvio angular em valgo é uma complicação relacionada à consolidação e ao remodelamento da fratura, não diretamente à tração excessiva durante a confecção do gesso.",
-   "C": "O alongamento maior que 3 cm é uma complicação de crescimento assimétrico por hiperemia da fratura, não uma complicação aguda relacionada à tração durante a confecção do gesso.",
-   "D": "O ferimento por compressão no maléolo lateral é uma complicação local relacionada ao ajuste inadequado do gesso, de gravidade bem menor do que a síndrome compartimental."
+   "A": "**Valgo.**\n- Angulação é comum, mas tolerável.",
+   "C": "**Alongamento.**\n- O problema usual é encurtamento.",
+   "D": "**Úlcera maleolar.**\n- Menos grave; calcanhar e poplítea mais frequentes."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 24"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0542": {
-  "conceito": "A fratura por avulsão da tuberosidade da tíbia é uma lesão típica de adolescentes próximos da maturidade esquelética, decorrente de contração violenta do quadríceps durante atividades de salto ou arranque explosivo. É mais frequente em meninos, na faixa dos 13 aos 16 anos, período em que a fise da tuberosidade ainda não fechou completamente, mas o indivíduo já tem massa muscular e força suficientes para gerar a força de avulsão.",
-  "correta": "C. A fratura da tuberosidade da tíbia é mais frequentemente descrita em meninos, de 13 a 16 anos.",
+  "conceito": "### Tuberosidade anterior da tíbia (Watson-Jones/Ogden)\n| Tipo | Traço | Equivalente |\n|---|---|---|\n| I | avulsão distal da própria tuberosidade | SH I da apófise |\n| II | traço até a fise proximal da tíbia (sem entrar na articulação) | SH I/II |\n| ==III== | ==cruza a epífise até a articulação== | ==SH III== |\n| IV (Ogden) | toda a fise proximal, posterior | SH II |\n| V (Ogden) | avulsão periosteal do ligamento patelar | |\n\n### Pontos\n- Adolescente perto do fechamento (a fise fecha de posterior para anterior e de proximal para distal).\n- Salto ou arranque com quadríceps contraído e joelho fletido.\n- Risco de ==síndrome compartimental== (recorrente tibial anterior); tipo III pede artroscopia/redução aberta.\n\n### Epidemiologia\n- ==Meninos de 13 a 16 anos== (mais de 95% masculino).\n- Atividades de salto: basquete, vôlei, salto em altura.\n- Osgood-Schlatter prévio em alguns.\n\n> **Na prova:** fratura da tuberosidade = ==meninos de 13 a 16 anos==",
+  "correta": "**Meninos, 13 a 16 anos.**\n- Apófise perto de fechar.\n- Esportes de salto.",
   "incorretas": {
-   "A": "A faixa de 9 a 12 anos é mais precoce do que a idade típica dessa fratura, que ocorre perto da maturidade esquelética.",
-   "B": "O sexo feminino não é o predominante nessa fratura, que é bem mais comum em meninos.",
-   "D": "Embora a faixa etária de 13 a 16 anos esteja correta, o sexo predominante é o masculino, não o feminino."
+   "A": "**9 a 12 anos.**\n- Apófise ainda cartilaginosa e resistente.",
+   "B": "**Meninas.**\n- Muito raro.",
+   "D": "**Meninas.**\n- Menos de 5% dos casos."
   },
   "referencias": [
    "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 33"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0543": {
-  "conceito": "A fratura do tornozelo tipo TILLAUX ocorre em adolescentes próximos do fechamento fisário, quando a porção medial da fise distal da tíbia já fechou e apenas a porção lateral permanece aberta. O ligamento tibiofibular anterior, ainda mais forte que o osso fisário remanescente, avulsiona um fragmento da epífise anterolateral, configurando uma fratura Salter-Harris tipo III, intra-articular e restrita à epífise.",
-  "correta": "B. A fratura de Tillaux é classificada como Salter-Harris tipo III, com localização anterolateral.",
+  "conceito": "### Fraturas transicionais do tornozelo\n- Adolescente perto do fim do crescimento: a fise distal da tíbia fecha de **central → medial → lateral**.\n- A porção **anterolateral** fica aberta por último e é arrancada pelo ligamento tibiofibular anteroinferior em **rotação externa**.\n- **Tillaux:** fragmento anterolateral; traço vertical pela epífise e horizontal pela fise = ==Salter-Harris III==. Alguns autores a descrevem como SH IV.\n- **Triplanar:** traço em três planos, aspecto de SH III na incidência AP e SH II na perfil.\n- Degrau articular acima de 2 mm: redução e fixação.\n\n### Por que anterolateral\n- Porção ==anterolateral== da fise é a última a fechar.\n- ==Ligamento tibiofibular anteroinferior== arranca o fragmento em ==rotação externa==.\n- RX: fragmento epifisário anterolateral; TC mede o degrau.\n\n> **Na prova:** Tillaux = ==SH III, anterolateral==",
+  "correta": "**SH III, anterolateral.**\n- Epífise anterolateral arrancada.\n- Rotação externa.",
   "incorretas": {
-   "A": "O tipo II envolveria um componente metafisário, o que não é característico da fratura de Tillaux, puramente epifisária.",
-   "C": "A localização medial não corresponde ao padrão da fratura de Tillaux, que ocorre no quadrante anterolateral, onde a fise permanece aberta por mais tempo.",
-   "D": "O tipo IV atravessaria tanto a epífise quanto a metáfise, padrão diferente da fratura de Tillaux, restrita à epífise (tipo III)."
+   "A": "**SH II.**\n- Tillaux atravessa a epífise.",
+   "C": "**Anteromedial.**\n- Parte medial já fechou.",
+   "D": "**SH IV anteromedial.**\n- Descreve o maléolo medial."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 29"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0544": {
-  "conceito": "A fratura por avulsão da tuberosidade da tíbia ocorre classicamente durante uma contração excêntrica violenta do mecanismo extensor com o joelho sendo forçado à flexão enquanto o quadríceps se contrai vigorosamente, situação típica de atividades de salto e arrancada rápida, como um golpe potente no tênis ou uma decolada de salto, em que a tração do tendão patelar sobre a tuberosidade excede sua resistência.",
-  "correta": "A. O mecanismo de trauma mais provável é a flexão forçada do joelho durante contração vigorosa do quadríceps.",
+  "conceito": "### Tuberosidade anterior da tíbia (Watson-Jones/Ogden)\n| Tipo | Traço | Equivalente |\n|---|---|---|\n| I | avulsão distal da própria tuberosidade | SH I da apófise |\n| II | traço até a fise proximal da tíbia (sem entrar na articulação) | SH I/II |\n| ==III== | ==cruza a epífise até a articulação== | ==SH III== |\n| IV (Ogden) | toda a fise proximal, posterior | SH II |\n| V (Ogden) | avulsão periosteal do ligamento patelar | |\n\n### Pontos\n- Adolescente perto do fechamento (a fise fecha de posterior para anterior e de proximal para distal).\n- Salto ou arranque com quadríceps contraído e joelho fletido.\n- Risco de ==síndrome compartimental== (recorrente tibial anterior); tipo III pede artroscopia/redução aberta.\n\n### Mecanismo\n- Contração ==excêntrica== do quadríceps com o joelho sendo ==fletido à força== (aterrissagem de salto, freada).\n- Ou contração concêntrica violenta ao saltar com joelho fletido.\n- Não é trauma direto.\n\n> **Na prova:** fratura da tuberosidade = ==flexão forçada contra o quadríceps contraído==",
+  "correta": "**Flexão forçada.**\n- Quadríceps contraído resiste.\n- Avulsão pelo ligamento patelar.",
   "incorretas": {
-   "B": "A extensão forçada isolada do joelho não é o mecanismo clássico dessa avulsão, que depende da tração do mecanismo extensor sobre a tuberosidade durante a flexão.",
-   "C": "Um movimento rotacional isolado do joelho não é o mecanismo descrito para essa fratura por avulsão específica.",
-   "D": "O trauma direto na região anterior do joelho descreveria um mecanismo de fratura por impacto direto, diferente do mecanismo indireto por tração do mecanismo extensor."
+   "B": "**Extensão forçada.**\n- Não traciona a tuberosidade.",
+   "C": "**Rotação.**\n- Mecanismo de LCA/menisco.",
+   "D": "**Trauma direto.**\n- Causaria contusão ou fratura da patela."
   },
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0545": {
-  "conceito": "A fratura metafisária proximal da tíbia na criança pequena (fratura de COZEN) costuma evoluir, meses após a consolidação, com deformidade tardia em valgo, mesmo quando a redução inicial foi considerada adequada. Uma das explicações propostas para esse fenômeno é a interposição parcial dos tendões da pata de ganso (sartório, grácil e semitendíneo) na linha de fratura medial, que impede o assentamento completo da cortical medial e favorece o crescimento assimétrico responsável pelo valgo progressivo.",
-  "correta": "D. A direção do desvio tardio é o valgo, e a estrutura anatômica interposta mais frequentemente observada é a pata de ganso.",
+  "conceito": "### Fratura da metáfise proximal da tíbia (fratura de Cozen)\n- Criança pequena, fratura metafisária proximal aparentemente benigna.\n- Evolui com ==valgo progressivo== nos meses seguintes.\n- Hipóteses: crescimento assimétrico da fise (hiperemia medial), tração da fíbula intacta e **interposição de partes moles** no lado medial, como a **pata de ganso** e o periósteo.\n- Tende a **remodelar espontaneamente**; a osteotomia precoce costuma recidivar.\n\n### Conduta\n- Gesso inguinopodálico em ==extensão e varo== (moldagem).\n- Explorar se houver abertura medial persistente (interposição).\n- Informar os pais: valgo pode surgir mesmo com boa redução, pico em 12 a 18 meses, remodela em 2 a 4 anos.\n- Osteotomia só se persistir após anos; crescimento guiado é opção.\n\n> **Na prova:** Cozen = ==valgo== tardio; interposição da ==pata de ganso==",
+  "correta": "**Valgo e pata de ganso.**\n- Fenômeno de Cozen.\n- Interposição medial de partes moles.",
   "incorretas": {
-   "A": "O desvio tardio característico dessa fratura é o valgo, não o varo, e a estrutura interposta descrita não é o trato iliotibial (estrutura lateral).",
-   "B": "O trato iliotibial é uma estrutura lateral, sem relação com a interposição medial classicamente descrita nessa fratura.",
-   "C": "O desvio tardio característico dessa fratura é o valgo, não o varo."
+   "A": "**Varo e trato iliotibial.**\n- Ambos errados.",
+   "B": "**Trato iliotibial.**\n- Estrutura lateral.",
+   "C": "**Varo.**\n- O desvio tardio é valgo."
   },
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 36"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0546": {
