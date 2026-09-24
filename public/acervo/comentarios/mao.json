@@ -2794,208 +2794,199 @@
   "conferido": false
  },
  "mao-0241": {
-  "conceito": "Na classe 1 de Palmer, traumática, as lesões são nomeadas pela borda que se soltou: A é o centro, B a inserção ulnar, C a distal e D a radial. A classe 2 é degenerativa e descreve o espectro do impacto ulnocarpal.",
-  "correta": "A avulsão da borda radial, na fosseta ou incisura sigmoide do rádio, é a lesão 1D. Com ou sem fragmento ósseo, o reparo é feito reinserindo o disco na borda da incisura, por via artroscópica ou aberta. Guardar a série por ordem alfabética acompanhando o giro (centro, ulnar, distal, radial) resolve todas as questões da classe 1.",
+  "conceito": "### Palmer: classe 1 (traumática) × classe 2 (degenerativa)\n| Tipo | Descrição |\n|---|---|\n| 1A | perfuração central |\n| 1B | avulsão ulnar (fóvea, estiloide) |\n| ==1C== | ==avulsão distal== (ligamentos **ulnossemilunar e ulnopiramidal**) |\n| 1D | avulsão radial |\n| 2A a 2E | **degenerativas** (impacto ulnocarpal progressivo) |\n\n### Lesão 1C\n- Instabilidade **ulnocarpal**: carpo \"cai\" em supinação e volar em relação à ulna.\n- Dor ulnar, falseio, sinal de **supinação do carpo**.\n- Tratamento: reparo da borda distal (artroscópico ou aberto).\n\n### Classe 2 (resumo)\n- 2A desgaste, 2B + condromalácia, 2C perfuração, 2D + lesão lunopiramidal, 2E artrose.\n- Tratamento do impacto: encurtamento da ulna ou procedimento de Wafer.\n\n> **Na prova:** avulsão radial (incisura sigmoide) = ==Palmer 1D==.",
+  "correta": "**Palmer 1D.**\n- A avulsão da borda radial, na incisura sigmoide, é a 1D.\n- O disco é reinserido na borda do rádio.",
   "incorretas": {
-   "A": "A 1B é a avulsão ulnar, na fóvea e no estiloide ulnar, e é a mais associada a instabilidade da radioulnar distal.",
-   "B": "A 1C é a avulsão distal, dos ligamentos ulnossemilunar e ulnopiramidal, com quadro de instabilidade ulnocarpal.",
-   "C": "A 2C é degenerativa: já há perfuração do disco e condromalácia do semilunar ou do piramidal. A questão pede lesão traumática aguda.",
-   "E": "A 2D também é degenerativa e acrescenta a perfuração do ligamento lunopiramidal."
+   "A": "**Avulsão ulnar.**\n- A 1B é na fóvea e no estiloide ulnar.",
+   "B": "**Avulsão distal.**\n- A 1C atinge os ligamentos ulnocarpais.",
+   "C": "**Degenerativa.**\n- A 2C é perfuração com condromalácia.",
+   "E": "**Degenerativa.**\n- A 2D acrescenta lesão lunopiramidal."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0242": {
-  "conceito": "A **gota de lágrima** do rádio distal é a projeção volar-ulnar da faceta do semilunar. Ela funciona como referência da redução da margem volar e da congruência da articulação radiocárpica; por ser pequena, exige implantes e posicionamento precisos.",
-  "correta": "**A, cerca de 5 mm.** Essa é a maior largura aproximada da gota de lágrima na anatomia marginal volar do rádio.",
+  "conceito": "### Gota de lágrima (teardrop) do rádio distal\n- Projeção **volar-ulnar** da faceta do semilunar: a borda volar da fossa semilunar.\n- Largura aproximada: ==cerca de 5 mm==.\n- Suporta o semilunar contra a translação volar.\n\n### Ângulo da gota de lágrima (perfil)\n- Normal cerca de **70°** (entre o eixo do rádio e a linha central da gota).\n- Abaixo de 45°: fragmento volar-ulnar rodado dorsalmente, **incongruência**.\n\n### Fragmento volar-ulnar (fratura de rádio distal)\n- Fragmento crítico: se não for fixado, o carpo **subluxa para volar** junto com ele.\n- Placas padrão podem não capturá-lo (fica distal à linha watershed): usar placas de borda, fios ou placas específicas.\n\n### Linha watershed\n- Crista volar distal; implantes além dela irritam o **FLP**.\n\n> **Na prova:** largura da gota de lágrima = ==cerca de 5 mm==.",
+  "correta": "**Cerca de 5 mm.**\n- É a largura aproximada da projeção volar da fossa semilunar.\n- Por ser pequena, exige fixação precisa.",
   "incorretas": {
-   "B": "7 mm já supera a dimensão média usada como referência anatômica.",
-   "C": "9 mm é grande demais para essa estrutura marginal.",
-   "D": "10 mm corresponde ao dobro da medida aproximada cobrada.",
-   "E": "12 mm também superestima de forma importante a largura da gota de lágrima."
+   "B": "**Supera a média.**\n- 7 mm passa da dimensão de referência.",
+   "C": "**Grande demais.**\n- 9 mm não corresponde à estrutura.",
+   "D": "**O dobro.**\n- 10 mm superestima.",
+   "E": "**Muito acima.**\n- 12 mm superestima bastante."
   },
   "referencias": [
    "Medoff RJ. Essential radiographic evaluation for distal radius fractures. Hand Clin. 2005;21:279-288.",
    "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Distal radius fractures."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0243": {
-  "conceito": "Duas classificações descrevem a forma do semilunar, e as duas se relacionam com o risco de necrose. Zapico separou os tipos pela orientação e pela relação com a variância ulnar; Viegas separou pela presença ou ausência de uma faceta medial para o hamato.",
-  "correta": "Os tipos de risco são o I de Zapico e o I de Viegas. O tipo I de Zapico é o semilunar de forma mais quadrangular, associado à variância ulnar negativa: com a ulna curta, a carga se concentra num osso que já tem geometria desfavorável. O tipo I de Viegas é o semilunar sem faceta para o hamato, e a ausência dessa segunda superfície de apoio significa menos área para distribuir a carga e menos vasos entrando pelo lado ulnar. Somados à variância ulnar negativa e ao padrão vascular em I, esses são os fatores anatômicos que explicam por que a doença aparece num punho e não no outro.",
+  "conceito": "### Fatores de risco da doença de Kienböck\n| Fator | Associação |\n|---|---|\n| ==punho dominante== | sobrecarga repetida |\n| sexo **masculino**, 20 a 40 anos | perfil clássico |\n| trabalho manual | microtrauma |\n| ==variância ulnar negativa (ulna minus)== | semilunar apoiado quase só no rádio |\n| semilunar tipo I (sem faceta no hamato) | concentração de carga |\n| padrão vascular com artéria única | reserva vascular pequena |\n| inclinação radial reduzida | |\n\n### Não confundir\n| Variância | Problema associado |\n|---|---|\n| ulna **minus** | Kienböck |\n| ulna **plus** | ==impacto ulnocarpal== (lesão degenerativa do CFCT, condromalácia do semilunar) |\n\n### Idade acima de 50\n- Pensar em **Preiser** (escafoide), corticoide, lúpus, anemia falciforme, ou necrose do semilunar em idoso com evolução diferente.\n\n### Forma do semilunar\n| Classificação | Tipo de risco | Característica |\n|---|---|---|\n| Zapico | ==I== | associado à **ulna minus**, geometria desfavorável |\n| Viegas | ==I== | ==sem faceta para o hamato== (menos área de apoio) |\n| Viegas | II | com faceta para o hamato (distribui a carga) |\n\n> **Na prova:** semilunar de risco = ==Zapico I e Viegas I==",
+  "correta": "**Zapico I e Viegas I.**\n- Zapico I se associa à ulna minus.\n- Viegas I não tem faceta para o hamato, com menos área de apoio.",
   "incorretas": {
-   "B": "Zapico I está certo, mas o tipo II de Viegas é o semilunar que tem faceta para o hamato, justamente o que distribui melhor a carga.",
-   "C": "Viegas I está certo, mas o tipo II de Zapico não é o associado à ulna minus.",
-   "D": "Erra nas duas classificações.",
-   "E": "Viegas descreve apenas dois tipos; não há tipo III nessa classificação."
+   "B": "**Viegas II protege.**\n- O semilunar com faceta no hamato distribui carga.",
+   "C": "**Zapico II não.**\n- Não é o tipo associado à ulna minus.",
+   "D": "**Erra as duas.**\n- Ambos os tipos II não são de risco.",
+   "E": "**Não existe.**\n- Viegas tem apenas dois tipos."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0244": {
-  "conceito": "A polpa do polegar exige cobertura com pele de polpa, sensível e resistente à pinça. Enxerto de pele fina resolve a ferida e não devolve o polegar ao trabalho.",
-  "correta": "A imagem mostra o retalho de Moberg: avanço volar do próprio polegar, elevado no plano acima da bainha dos flexores, com incisões médio-laterais bilaterais e os dois feixes vasculonervosos incluídos. Ele é seguro no polegar (e só nele) porque ali existe circulação dorsal independente, o que permite levar os dois feixes volares no retalho sem comprometer a viabilidade. Cobre cerca de 1,5 centímetro com pele de polpa e sensibilidade própria, e a leve flexão da interfalângica ajuda no avanço, com o cuidado de não deixar contratura residual.",
+  "conceito": "### Retalho de Moberg\n- Avanço volar **bipediculado** do polegar, com os **dois feixes neurovasculares**.\n- Elevado sobre a bainha dos flexores, avançado distalmente com flexão da IF.\n- Cobre cerca de **1 a 1,5 cm** de perda de polpa, com pele sensível própria.\n- Seguro no polegar porque o dorso tem **irrigação independente** (nos dedos longos arrisca necrose dorsal).\n- Modificação em ilha com V-Y proximal: avanço maior, menos flexão residual.\n\n### Retalhos da ponta dos dedos\n| Retalho | Característica |\n|---|---|\n| ==Moberg== | ==avanço volar do polegar== |\n| Atasoy (V-Y volar) | defeitos transversos ou dorsais oblíquos |\n| Kutler | V-Y laterais bilaterais |\n| cruzado de dedo | pele dorsal do dedo vizinho para defeito volar |\n| tenar | defeitos volares, crianças e mulheres jovens |\n| Littler (ilha neurovascular) | pele sensível do anelar para o polegar |\n| Foucher (kite) | 1ª artéria metacarpal dorsal, do indicador para o polegar |\n| O'Brien | Moberg em ilha com V-Y proximal |\n\n### Outros nomes\n- **Zaidenberg:** enxerto ósseo vascularizado 1,2 ICSRA (escafoide).\n- **Zancolli:** lasso (garra), técnicas para paralisia.\n\n> **Na prova:** avanço volar bipediculado do polegar = ==Moberg==.",
+  "correta": "**Moberg.**\n- Avanço volar do próprio polegar com os dois feixes.\n- Seguro no polegar pela circulação dorsal independente.",
   "incorretas": {
-   "A": "O retalho de Kite, ou retalho da primeira artéria intermetacarpal dorsal, vem do dorso do indicador e é transposto em ilha para o polegar. Retalho de outro dedo, não do próprio polegar.",
-   "B": "Snow é técnica de reconstrução do aparelho extensor na botoeira, não de cobertura cutânea.",
-   "C": "O retalho de Littler é uma ilha neurovascular tirada da face lateral de outro dedo, em geral o anelar, transferida para devolver sensibilidade ao polegar.",
-   "E": "A modificação de O'Brien é o mesmo avanço volar transformado em ilha, com uma incisão transversa proximal e fechamento em V-Y para ganhar mais avanço. É variante do Moberg, e a imagem mostra a técnica original, sem essa incisão transversa."
+   "A": "**Vem do indicador.**\n- O kite é ilha do dorso do indicador.",
+   "B": "**Aparelho extensor.**\n- Snow é técnica para botoeira.",
+   "C": "**Ilha de outro dedo.**\n- Littler leva pele sensível do anelar.",
+   "E": "**Variante em ilha.**\n- O'Brien acrescenta a incisão transversa com V-Y."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0245": {
-  "conceito": "O canal de Guyon se divide em três zonas, e o quadro clínico diz exatamente em qual delas está a compressão. Zona I, proximal à bifurcação, é mista: motor e sensitivo. Zona II acompanha o ramo motor profundo e é puramente motora. Zona III acompanha o ramo sensitivo superficial e é puramente sensitiva.",
-  "correta": "Sinais motores puros (Egawa, que testa os interósseos pelo desvio lateral do dedo médio, e Duchenne, que é a garra ulnar) sem qualquer alteração sensitiva localizam a compressão na zona II. A causa mais comum ali é o cisto sinovial, seguido pela fratura do hâmulo do hamato, que é justamente por onde o ramo profundo contorna. Lembrando ainda que a compressão baixa poupa o ramo cutâneo dorsal, que saiu do tronco cerca de 8 centímetros acima do punho: sensibilidade dorsoulnar normal é parte do quadro em qualquer zona de Guyon.",
+  "conceito": "### Túnel cubital × canal de Guyon\n| Achado | Túnel cubital (alto) | Canal de Guyon (baixo) |\n|---|---|---|\n| ==sensibilidade dorsoulnar da mão== | ==alterada== | ==preservada== (ramo dorsal sai 5 a 8 cm antes) |\n| sensibilidade palmar ulnar | alterada | alterada (zonas I e III) |\n| FPD do 4º e 5º e FUC | fracos | normais |\n| garra | **menos** evidente (paradoxo ulnar) | **mais** evidente |\n| intrínsecos | fracos | fracos (zonas I e II) |\n| Tinel | cotovelo | punho |\n\n### Zonas do canal de Guyon\n| Zona | Conteúdo | Quadro |\n|---|---|---|\n| I | antes da bifurcação | motor e sensitivo |\n| II | ramo motor profundo | só motor |\n| III | ramo superficial | só sensitivo |\n\n### Causas no Guyon\n- **Gânglio** (mais comum), fratura do hâmulo do hamato, trombose da artéria ulnar (martelo hipotenar), músculos anômalos, ciclistas.\n\n> **Na prova:** Egawa e Duchenne sem alteração sensitiva = ==zona II do Guyon== (ramo motor profundo).",
+  "correta": "**Zona II.**\n- Sinais motores puros sem alteração sensitiva localizam o ramo profundo.\n- Cisto sinovial e fratura do hâmulo são causas típicas.",
   "incorretas": {
-   "A": "A zona I é proximal à bifurcação e, portanto, mista. Compressão ali daria déficit motor e sensitivo juntos.",
-   "C": "A zona III é sensitiva pura. Compressão ali daria dormência no quarto e quinto dedos sem fraqueza, o oposto do descrito.",
-   "D": "O canal de Guyon é dividido em três zonas. Não existe zona IV.",
-   "E": "Tampouco existe uma zona IIIB nessa divisão."
+   "A": "**Mista.**\n- A zona I daria déficit motor e sensitivo.",
+   "C": "**Sensitiva pura.**\n- A zona III daria só dormência.",
+   "D": "**Não existe.**\n- O Guyon tem três zonas.",
+   "E": "**Não existe.**\n- Não há zona IIIB."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0246": {
-  "conceito": "Os portais do punho são nomeados pelos compartimentos extensores entre os quais a agulha entra. Os ulnares (4-5, 6R e 6U) dão acesso ao complexo da fibrocartilagem triangular, cada um com um ângulo de visão diferente.",
-  "correta": "O portal 6R fica radial ao extensor ulnar do carpo e olha diretamente para a periferia ulnar do complexo, o que permite ver ao mesmo tempo a inserção do disco, o recesso pré-estiloide e o orifício pisopiramidal. É também o portal de trabalho por excelência para o reparo do complexo, é por ele que entram o gancho de palpação e o material de sutura. A combinação que a questão cobra, complexo mais orifício pisopiramidal, é justamente a visão do lado ulnar, e é isso que distingue o 6R do 4-5, mais usado para a inspeção geral da superfície do disco.",
+  "conceito": "### Portais dorsais da artroscopia do punho\n| Portal | Localização | Uso principal |\n|---|---|---|\n| 1-2 | entre 1º e 2º compartimentos | estiloide radial; risco para o radial superficial e a artéria radial |\n| 3-4 | entre ELP e extensores comuns | ==visão padrão==: escafoide, semilunar, ligamento escafossemilunar |\n| ==4-5== | entre extensores comuns e extensor do mínimo | ==melhor inspeção do complexo da fibrocartilagem triangular== |\n| ==6R== | radial ao EUC | ==portal de trabalho== do CFCT (reparo, desbridamento) |\n| 6U | ulnar ao EUC | saída de fluxo; risco para o ramo dorsal do ulnar |\n| mediocarpal radial e ulnar | 1 cm distal ao 3-4 e ao 4-5 | articulação mediocarpal, instabilidades |\n\n### Rotina\n- 3-4 para visão geral, 4-5 ou 6R para o lado ulnar.\n- Tração de 4 a 5 kg (torre).\n\n### 6R: visão da periferia ulnar\n- Olha a ==periferia ulnar do CFCT, o recesso pré-estiloide e o orifício pisopiramidal== na mesma visão.\n- O 4-5 é mais usado para inspeção geral da superfície do disco.\n\n> **Na prova:** CFCT + orifício pisopiramidal = ==portal 6R==",
+  "correta": "**6R.**\n- Radial ao EUC, olha a periferia ulnar do complexo e o orifício pisopiramidal.\n- É também o portal de trabalho do reparo.",
   "incorretas": {
-   "A": "O 3-4 é o portal de visão de rotina e mostra bem a fossa escafoide, a fossa semilunar e o ligamento escafossemilunar. O complexo triangular fica oblíquo e distante daí.",
-   "B": "O 4-5 dá boa inspeção da superfície do complexo, mas não é o que alcança o recesso pré-estiloide e o orifício pisopiramidal na mesma visão.",
-   "D": "O 6U fica ulnar ao extensor ulnar do carpo e serve sobretudo como via de saída de fluxo. É o portal de maior risco para o ramo dorsal sensitivo do nervo ulnar.",
-   "E": "O portal mediocarpal ulnar olha para a articulação mediocarpal (lunopiramidal e piramidal-hamato) e não para o complexo triangular, que é radiocarpal."
+   "A": "**Lado radial.**\n- O 3-4 vê bem escafoide e semilunar.",
+   "B": "**Inspeção geral.**\n- O 4-5 não alcança o orifício pisopiramidal na mesma visão.",
+   "D": "**Saída de fluxo.**\n- O 6U arrisca o ramo dorsal do ulnar.",
+   "E": "**Mediocarpal.**\n- O MCU não vê o CFCT, que é radiocarpal."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0247": {
-  "conceito": "A pseudogota é a artropatia por depósito de cristais de pirofosfato de cálcio. Ela tem preferência por fibrocartilagem, e no punho existe uma fibrocartilagem grande e bem definida.",
-  "correta": "O local mais comum é o complexo da fibrocartilagem triangular. É por isso que a condrocalcinose do punho aparece na radiografia como uma linha densa entre a ulna e o carpo, no espaço ulnocarpal, achado que muitas vezes é incidental e depois se torna a explicação de uma dor ulnar arrastada. O segundo local é o ligamento escafossemilunar, e a calcificação dele tem consequência própria: pode acompanhar a dissociação escafossemilunar e o colapso avançado, o chamado punho com padrão de artropatia por pirofosfato.",
+  "conceito": "### Doença por pirofosfato de cálcio (pseudogota, CPPD)\n- Depósito preferencial em ==fibrocartilagem==.\n| Local | Frequência no punho |\n|---|---|\n| ==complexo da fibrocartilagem triangular== | ==o mais comum== |\n| ligamento escafossemilunar | segundo |\n| lunopiramidal, cartilagem hialina | menos |\n| joelho (meniscos), sínfise púbica | fora do punho |\n\n### Radiografia\n- **Condrocalcinose**: linha densa no espaço ulnocarpal.\n\n### SLAC por pirofosfato\n- Calcificação e ruptura do escafossemilunar: colapso tipo SLAC, às vezes com **artrose STT** e escafoide \"afundando\".\n\n### Crise aguda\n- Artrite aguda (pseudogota): cristais **romboides, birrefringência positiva fraca** no líquido sinovial.\n- Associações: hiperparatireoidismo, hemocromatose, hipomagnesemia, hipofosfatasia.\n\n> **Na prova:** depósito mais comum no punho = ==fibrocartilagem triangular==.",
+  "correta": "**Fibrocartilagem triangular.**\n- A CPPD prefere fibrocartilagem, e o CFCT é a maior do punho.\n- Aparece como linha densa no espaço ulnocarpal.",
   "incorretas": {
-   "A": "O espaço radiocarpal é onde a artropatia se manifesta clinicamente, com derrame e dor, mas o depósito em si é na fibrocartilagem, não no espaço articular.",
-   "B": "O espaço mediocarpal também sofre em fases avançadas, mas não é a sede preferencial do depósito.",
-   "D": "O ligamento escafossemilunar é a segunda topografia mais frequente, e importa clinicamente, mas vem depois da fibrocartilagem triangular.",
-   "E": "O ligamento semilunopiramidal é menos acometido que os dois anteriores."
+   "A": "**Local da manifestação.**\n- O espaço radiocarpal sofre clinicamente, mas o depósito é na fibrocartilagem.",
+   "B": "**Fases avançadas.**\n- O mediocarpal não é a sede preferencial.",
+   "D": "**Segundo lugar.**\n- O escafossemilunar vem depois do CFCT.",
+   "E": "**Menos acometido.**\n- O lunopiramidal é raro."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0248": {
-  "conceito": "As manobras da síndrome do desfiladeiro torácico têm em comum a tentativa de estreitar um dos três espaços e reproduzir o sintoma. O problema é que quase todas positivam também em pessoas sadias, a perda do pulso radial, em particular, ocorre em boa parte da população normal.",
-  "correta": "A manobra descrita por Roos, também chamada teste de estresse com os braços elevados, é a que reúne melhor sensibilidade e especificidade. Ela pede que a pessoa fique com os braços em abdução e rotação externa a 90 graus, abrindo e fechando as mãos por três minutos. O que a torna melhor que as demais é o desfecho avaliado: em vez de perda de pulso, procura-se a reprodução dos sintomas (dor, peso, parestesia) e a incapacidade de manter a posição. Isso a aproxima da queixa real e a afasta do achado vascular inespecífico.",
+  "conceito": "### Espaços do desfiladeiro torácico\n| Espaço | Limites | Conteúdo | Destaque |\n|---|---|---|---|\n| ==triângulo interescalênico== | ==escaleno anterior, escaleno médio, 1ª costela== | plexo e **artéria** subclávia (a veia passa à frente do escaleno anterior) | ==mais proximal==, mais envolvido na forma neurogênica |\n| costoclavicular | clavícula, 1ª costela, subclávio | plexo, artéria e **veia** | trombose de esforço (Paget-Schroetter) |\n| retropeitoral menor | peitoral menor, processo coracoide | feixe axilar | compressão em hiperabdução |\n\n### Causas de estreitamento\n- **Costela cervical** ou banda fibrosa, hipertrofia dos escalenos, fraturas de clavícula ou 1ª costela, postura com ombros caídos.\n\n### Testes provocativos\n| Manobra | Técnica | Desempenho |\n|---|---|---|\n| ==Roos (EAST)== | ==braços a 90° de abdução e rotação externa, abrir e fechar as mãos por 3 minutos== | ==a mais sensível e específica==: reproduz os sintomas |\n| Adson | rotação da cabeça, extensão cervical, inspiração | perda de pulso, muitos falsos positivos |\n| Wright | hiperabdução | idem |\n| Halsted (costoclavicular) | ombros para trás e para baixo | idem |\n\n> **Na prova:** manobra mais sensível e específica = ==Roos==",
+  "correta": "**Roos.**\n- O teste de estresse com braços elevados avalia a reprodução dos sintomas.\n- Não depende da perda de pulso, que é inespecífica.",
   "incorretas": {
-   "B": "Phalen é teste do túnel do carpo. Nervo e território completamente diferentes.",
-   "C": "A manobra de Wright é a hiperabdução, que estreita o espaço retropeitoral. É útil, mas positiva com frequência em pessoas sem sintoma nenhum.",
-   "D": "Sanders é autor de trabalhos importantes sobre o desfiladeiro torácico, mas não dá nome à manobra provocativa clássica.",
-   "E": "A manobra de Halsted, ou costoclavicular, pede ombros para trás e para baixo, estreitando o espaço entre clavícula e primeira costela. Também depende da perda de pulso e tem a mesma limitação."
+   "B": "**Túnel do carpo.**\n- Phalen avalia o mediano no punho.",
+   "C": "**Muitos falsos positivos.**\n- A hiperabdução de Wright positiva em sadios.",
+   "D": "**Autor, não manobra.**\n- Sanders estudou o desfiladeiro, sem manobra clássica.",
+   "E": "**Mesma limitação.**\n- A costoclavicular depende da perda de pulso."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0249": {
-  "conceito": "Braquidactilia é o encurtamento de um ou mais segmentos do dedo, e ela não atinge os segmentos ao acaso: existe uma hierarquia ligada à ordem em que cada osso se desenvolve e cresce.",
-  "correta": "A falange média é o segmento mais acometido, e o exemplo mais comum é a braquimesofalangia do dedo mínimo, falange média curta e frequentemente com clinodactilia associada, achado tão frequente que muitas vezes é apenas variação familiar. A falange média é a mais vulnerável porque é a última a se formar e a que tem o centro de ossificação mais tardio, ficando exposta por mais tempo a qualquer interferência no crescimento.",
+  "conceito": "### Braquidactilia\n- Encurtamento de um ou mais segmentos do dedo.\n- Segmento mais acometido: ==falange média== (última a se formar, centro de ossificação mais tardio).\n- Exemplo mais comum: **braquimesofalangia do mínimo**, frequentemente com **clinodactilia**.\n\n### Classificação de Bell (tipos principais)\n| Tipo | Achado |\n|---|---|\n| A | falanges médias curtas (A1 todas; A2 indicador; A3 mínimo) |\n| B | falanges médias e distais hipoplásicas ou ausentes |\n| C | falanges médias do 2º, 3º e 5º, com hiperfalangia |\n| D | falange distal do polegar curta e larga |\n| E | metacarpos curtos (braquimetacarpia) |\n\n### Braquimetacarpia\n- **4º e 5º** metacarpos: pseudo-hipoparatireoidismo (Albright), **Turner**, Beckwith.\n- **Sinal do nó ausente** ao fechar a mão.\n\n### Tratamento\n- Geralmente nenhum; alongamento por distração em casos funcionais ou estéticos selecionados.\n\n> **Na prova:** braquidactilia mais comum na ==falange média==.",
+  "correta": "**Falange média.**\n- É a última a se formar e a mais exposta a alterações do crescimento.\n- A braquimesofalangia do mínimo é o exemplo mais comum.",
   "incorretas": {
-   "B": "A falange proximal é acometida em algumas formas, mas com frequência menor.",
-   "C": "A extremidade distal do rádio não faz parte do quadro de braquidactilia, que é malformação dos raios da mão.",
-   "D": "A braquimetacarpia existe (o metacarpo curto, clássico na pseudo-hipoparatireoidismo e na síndrome de Turner, com o sinal do nó ausente ao fechar a mão), mas o problema é do osso inteiro, não da metáfise, e é menos frequente que o da falange média.",
-   "E": "Mesma observação da alternativa anterior."
+   "B": "**Menos frequente.**\n- A falange proximal é acometida em poucas formas.",
+   "C": "**Não é braquidactilia.**\n- O rádio distal não integra o quadro.",
+   "D": "**Osso inteiro, menos comum.**\n- A braquimetacarpia afeta o metacarpo todo.",
+   "E": "**Mesma observação.**\n- Não é a metáfise, e é menos frequente."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0250": {
-  "conceito": "A grande diferença entre as duas deficiências longitudinais está no que se procura fora do membro. A deficiência radial vem associada a síndromes sistêmicas (VACTERL, Fanconi, Holt-Oram, TAR), o que obriga a investigar coração, rim, coluna e medula óssea. A deficiência ulnar, não: as associações dela são musculoesqueléticas.",
-  "correta": "A mão torta ulnar se associa a deficiência fibular, focomelia e escoliose congênita, além de deficiência femoral proximal. Repare no padrão: são todas malformações de outros membros e do esqueleto axial, e não de órgãos internos. A consequência prática é direta, diante de uma deficiência ulnar, o exame a fazer é o do esqueleto inteiro; diante de uma radial, é hemograma, ecocardiograma e ultrassom de rins.",
+  "conceito": "### Deficiência longitudinal radial (Bayne e Klug)\n| Tipo | Rádio | Frequência |\n|---|---|---|\n| 0 | normal, com hipoplasia do carpo ou polegar | |\n| I | rádio distal curto | leve |\n| II | rádio hipoplásico em miniatura | |\n| III | ausência parcial (geralmente distal) | |\n| ==IV== | ==ausência completa== | ==a mais comum== |\n\n- Mão em **desvio radial** (mão torta radial), polegar hipoplásico ou ausente.\n- Associações: **VACTERL**, Holt-Oram (cardiopatia), TAR (trombocitopenia), anemia de **Fanconi** (fazer teste de quebra cromossômica).\n\n### Deficiência longitudinal ulnar (Bayne)\n| Tipo | Ulna |\n|---|---|\n| ==I== | ==hipoplasia (ulna curta, epífises presentes)== : a mais comum |\n| II | ausência parcial |\n| III | ausência total |\n| IV | sinostose radioumeral |\n\n- Menos frequente que a radial; associações ==musculoesqueléticas==: ==deficiência fibular==, deficiência femoral proximal, ==focomelia==, ==escoliose congênita==, sindactilia, ausência de dedos ulnares.\n- A radial se associa a síndromes **sistêmicas** (VACTERL, Fanconi, Holt-Oram, TAR).\n- Cotovelo e mão (dedos ulnares, comissura) definem a função.\n\n> **Na prova:** mão torta ulnar = ==deficiência fibular, focomelia e escoliose congênita==",
+  "correta": "**Associações musculoesqueléticas.**\n- Deficiência fibular, focomelia e escoliose congênita.\n- Pede exame do esqueleto inteiro, não de órgãos internos.",
   "incorretas": {
-   "B": "A deficiência tibial não é a associação descrita, e cifose congênita progressiva também não integra a lista.",
-   "C": "Erra duas das três: tibial no lugar de fibular, e a deficiência femoral, embora exista na lista, não substitui a focomelia na tríade cobrada.",
-   "D": "Mistura deficiências dos dois ossos da perna e troca a deformidade da coluna.",
-   "E": "Nem a deficiência tibial nem a hiperlordose congênita fazem parte das associações descritas."
+   "B": "**Tibial e cifose não.**\n- Não integram as associações.",
+   "C": "**Tibial no lugar de fibular.**\n- E omite a focomelia.",
+   "D": "**Mistura ossos da perna.**\n- E troca a deformidade da coluna.",
+   "E": "**Tibial e hiperlordose não.**\n- Fora das associações descritas."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0251": {
-  "conceito": "Os ossos do carpo ossificam numa sequência previsível, em sentido anti-horário na mão direita a partir do capitato. É essa previsibilidade que permite usar a radiografia da mão e do punho para estimar idade óssea.",
-  "correta": "Os primeiros centros a aparecer são o do capitato e o do hamato, ambos ainda no primeiro ano de vida, o capitato logo antes do hamato. Depois vêm piramidal, semilunar, escafoide, trapézio, trapezoide e, por último, o pisiforme, que só aparece perto dos 10 anos. Uma regra prática que ajuda a lembrar: até os 6 ou 7 anos, o número de centros carpais visíveis corresponde grosso modo à idade da criança em anos.",
+  "conceito": "### Ossificação do carpo (sentido anti-horário na mão direita, vista palmar)\n| Osso | Idade aproximada |\n|---|---|\n| ==capitato== | ==1 a 3 meses== |\n| ==hamato== | ==2 a 4 meses== |\n| piramidal | cerca de 3 anos |\n| semilunar | cerca de 4 anos |\n| escafoide | cerca de 5 anos |\n| trapézio | cerca de 6 anos |\n| trapezoide | cerca de 6 a 7 anos |\n| pisiforme | cerca de 9 a 12 anos |\n\n- Regra prática: até cerca de 6 a 7 anos, o **número de centros ≈ idade em anos**.\n- Meninas ossificam antes.\n\n### Idade óssea\n- **Greulich e Pyle** (atlas da mão e punho), Tanner-Whitehouse.\n\n> **Na prova:** primeiros centros do carpo = ==capitato e hamato==.",
+  "correta": "**Capitato e hamato.**\n- Ambos aparecem no primeiro ano, o capitato primeiro.\n- O pisiforme é o último, perto dos 10 anos.",
   "incorretas": {
-   "B": "O capitato está certo, mas o escafoide é dos últimos a ossificar, aparecendo por volta dos 5 anos.",
-   "C": "Escafoide e semilunar aparecem tarde na série, não no começo.",
-   "D": "O piramidal vem em terceiro lugar, e o semilunar em quarto, nenhum dos dois abre a sequência.",
-   "E": "O hamato está certo, mas o piramidal vem depois dele."
+   "B": "**Escafoide é tardio.**\n- Aparece por volta dos 5 anos.",
+   "C": "**Ambos tardios.**\n- Escafoide e semilunar vêm depois.",
+   "D": "**Terceiro e quarto.**\n- Piramidal e semilunar não abrem a série.",
+   "E": "**Piramidal depois.**\n- O hamato está certo, mas o piramidal é o terceiro."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0252": {
-  "conceito": "No punho reumatoide os tendões rompem por atrito contra osso irregular, e cada topografia tem nome próprio. Do lado volar, dentro do túnel do carpo, o problema é a superfície do carpo virada para cima.",
-  "correta": "A lesão de Mannerfelt é a ruptura do flexor longo do polegar por atrito contra uma espícula óssea do escafoide (em geral um osteófito no polo distal, exposto pela erosão da cartilagem), dentro do túnel do carpo. A pessoa perde a flexão da interfalângica do polegar. A consequência cirúrgica é a que importa: reparar ou enxertar o tendão sem ressecar a espícula é garantir que o reparo rompa de novo. O espelho dorsal dessa lesão é a síndrome de Vaughan-Jackson, com a cabeça da ulna serrando os extensores.",
+  "conceito": "### Rupturas tendíneas no punho reumatoide\n| Lesão | Tendão | Mecanismo |\n|---|---|---|\n| ==Mannerfelt== | ==flexor longo do polegar== | atrito em osteófito do **escafoide** ou trapézio no túnel do carpo |\n| Vaughan-Jackson | extensor do mínimo, depois extensor comum (ulnar → radial) | atrito na **cabeça da ulna** (caput ulnae) |\n| tubérculo de Lister | extensor longo do polegar | atrito ou sinovite no 3º compartimento |\n\n### Mannerfelt\n- Perda da flexão da **IF do polegar**.\n- Diferencial: síndrome do interósseo anterior (testar também o FPD do indicador).\n- Tratamento: **ressecar o osteófito**, sinovectomia e enxerto em ponte, transferência do FSD do anelar ou artrodese da IF.\n\n### Vaughan-Jackson\n- Tratar com ressecção da cabeça da ulna (Darrach) ou Sauvé-Kapandji, sinovectomia e transferências (sutura látero-lateral, extensor do indicador).\n\n> **Na prova:** Mannerfelt = ==flexor longo do polegar==.",
+  "correta": "**Espícula do escafoide.**\n- O FLP rompe por atrito num osteófito do escafoide dentro do túnel.\n- A espícula precisa ser ressecada junto com o reparo.",
   "incorretas": {
-   "A": "A polia A1 é o ponto do dedo em gatilho, e o problema ali é estreitamento, não atrito contra osso.",
-   "B": "A polia oblíqua é a polia essencial do polegar, sobre a falange proximal, distante do túnel do carpo.",
-   "C": "O estiloide radial é dorsal e lateral; ele não faz contato com o flexor longo do polegar.",
-   "D": "O retináculo flexor é o teto do túnel e é tecido fibroso liso. Ele comprime o nervo mediano, mas não serra tendão."
+   "A": "**Dedo em gatilho.**\n- Na A1 o problema é estreitamento.",
+   "B": "**Distante do túnel.**\n- A polia oblíqua fica na falange proximal.",
+   "C": "**Dorsal e lateral.**\n- O estiloide radial não toca o FLP.",
+   "D": "**Tecido liso.**\n- O retináculo comprime o nervo, não serra tendão."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0253": {
-  "conceito": "O retalho lateral do braço é fasciocutâneo, colhido da face lateral do braço distal, e vale por ser fino, com pele de boa qualidade e por deixar a área doadora fechável diretamente quando estreita. Ele pode ainda vir sensível, se levar junto o nervo cutâneo posterior do antebraço.",
-  "correta": "Ele é baseado no ramo colateral radial posterior, ramo da artéria braquial profunda, que desce no septo intermuscular lateral entre o braquiorradial e o tríceps. O eixo do retalho é desenhado sobre esse septo, na linha entre a inserção do deltoide e o epicôndilo lateral. Ele pode ser usado como retalho livre ou como retalho pediculado reverso para cobrir o cotovelo.",
+  "conceito": "### Retalho lateral do braço\n- **Fasciocutâneo**, fino, face lateral do braço distal.\n- Pedículo: ==artéria colateral radial posterior== (ramo da **braquial profunda**), no **septo intermuscular lateral** entre braquiorradial/braquial e tríceps.\n- Eixo: linha da **inserção do deltoide** ao **epicôndilo lateral**.\n- Pode ser **sensível** (nervo cutâneo posterior do braço).\n- Livre (mão, face) ou pediculado reverso (cotovelo).\n\n### Vantagens\n- Pele fina, área doadora fechável até cerca de 6 cm de largura, sem sacrificar artéria principal.\n\n### Riscos\n- Nervo **radial** próximo no septo; cutâneo posterior do antebraço (hipoestesia).\n\n### Artérias citadas\n| Artéria | Relação |\n|---|---|\n| braquial profunda | origem, divide-se antes do septo |\n| colateral radial anterior | acompanha o nervo radial anteriormente |\n| radial recorrente | rede periarticular anterior do cotovelo |\n\n> **Na prova:** retalho lateral do braço = ==colateral radial posterior==.",
+  "correta": "**Colateral radial posterior.**\n- Ramo da braquial profunda que desce no septo intermuscular lateral.\n- É o pedículo do retalho lateral do braço.",
   "incorretas": {
-   "A": "A artéria axilar é o tronco principal do membro, e nenhum retalho fasciocutâneo do braço distal é baseado diretamente nela.",
-   "B": "A braquial profunda é o vaso de origem, mas ela se divide antes de chegar ao septo, quem entra no retalho é o seu ramo colateral radial posterior.",
-   "C": "A radial recorrente é ramo da artéria radial e sobe pela face anterior do cotovelo, participando da rede periarticular. Não é o pedículo deste retalho.",
-   "D": "O ramo colateral radial anterior acompanha o nervo radial na face anterior do septo e não é o que supre a ilha cutânea descrita."
+   "A": "**Tronco principal.**\n- Nenhum retalho do braço distal se baseia na axilar.",
+   "B": "**Vaso de origem.**\n- A braquial profunda se divide antes; o ramo posterior entra no retalho.",
+   "C": "**Rede do cotovelo.**\n- A radial recorrente sobe pela face anterior.",
+   "D": "**Ramo anterior.**\n- A colateral radial anterior não supre a ilha."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0254": {
-  "conceito": "Nas lesões do tronco superior do plexo, transferir um ramo motor vizinho e dispensável para o nervo do músculo que se quer recuperar encurta a distância até a placa motora e devolve função em meses, não em anos.",
-  "correta": "Leechavengvongs descreveu a transferência do ramo motor da cabeça longa do tríceps para o ramo anterior do nervo axilar, devolvendo a abdução do ombro pelo deltoide. A escolha é elegante: o tríceps tem três cabeças e perder o ramo de uma delas quase não custa força de extensão do cotovelo; o ramo é longo o suficiente para alcançar sem enxerto; e o ramo anterior do axilar é o que leva ao deltoide anterior e médio, que fazem a abdução. Ela costuma ser combinada com a transferência do acessório para o supraescapular, as duas juntas devolvem abdução e rotação externa.",
+  "conceito": "### Transferências nervosas no plexo braquial\n| Transferência | Doador → receptor | Função restaurada |\n|---|---|---|\n| ==Oberlin== | ==fascículo do ulnar (para o FUC) → ramo motor do bíceps== | ==flexão do cotovelo== |\n| Oberlin dupla (Mackinnon) | + fascículo do mediano → ramo do braquial | flexão mais forte |\n| acessório → supraescapular | espinhal acessório (trapézio) | abdução e rotação externa |\n| ==Leechavengvongs (Somsak)== | ==ramo da cabeça longa do tríceps → ramo anterior do axilar== | ==abdução do ombro== (deltoide) |\n| intercostais → musculocutâneo | 2 a 3 intercostais | flexão do cotovelo (avulsão total) |\n| frênico → supraescapular ou musculocutâneo | frênico | custo respiratório |\n\n### Vantagens das transferências distais\n- Coaptação **perto do músculo**: reinervação mais rápida, antes da fibrose da placa motora (ideal em até 6 a 9 meses).\n- Doador expansível: perda do fascículo do FUC é bem tolerada.\n\n> **Na prova:** Leechavengvongs = ==cabeça longa do tríceps para o ramo anterior do axilar==",
+  "correta": "**Cabeça longa → ramo anterior.**\n- O ramo da cabeça longa do tríceps é transferido ao ramo anterior do axilar.\n- Devolve a abdução pelo deltoide anterior e médio.",
   "incorretas": {
-   "A": "A cabeça lateral também já foi usada como doadora em variantes descritas depois, mas não é a da descrição original.",
-   "B": "A cabeça medial aparece em outras variantes, e o ramo posterior do axilar leva ao redondo menor e ao deltoide posterior, não é o alvo da técnica clássica.",
-   "D": "Acerta a cabeça e erra o alvo: quem devolve abdução é o ramo anterior.",
-   "E": "Erra a cabeça doadora na descrição original."
+   "A": "**Variante posterior.**\n- A cabeça lateral aparece em descrições posteriores.",
+   "B": "**Cabeça e alvo errados.**\n- O ramo posterior vai ao redondo menor e deltoide posterior.",
+   "D": "**Alvo errado.**\n- A abdução vem do ramo anterior.",
+   "E": "**Doador errado.**\n- A descrição original usa a cabeça longa."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0255": {
-  "conceito": "A síndrome do martelo hipotenar é o aneurisma ou a trombose da artéria ulnar por trauma repetido: a artéria é esmagada contra o hâmulo do hamato cada vez que a borda da mão é usada como martelo. Aparece em mecânico, marceneiro, pedreiro, e é subdiagnosticada.",
-  "correta": "O dano estrutural é da lâmina elástica interna. Rompida ela, a parede perde a contenção que impede a dilatação, e o vaso se expande formando o aneurisma verdadeiro; a superfície irregular resultante também favorece trombose e embolia distal, com dedos frios, pálidos e dolorosos, tipicamente do quarto e do quinto. Daí a investigação obrigatória incluir o teste de Allen e a angiografia ou angiotomografia, e o tratamento consistir em ressecar o segmento doente com reconstrução por enxerto venoso.",
+  "conceito": "### Síndrome do martelo hipotenar\n- Trauma repetido da borda ulnar da mão (usar a mão como martelo).\n- A **artéria ulnar** é esmagada contra o **hâmulo do hamato**, logo após sair do canal de Guyon.\n- Lesão estrutural: ==lâmina elástica interna== → **aneurisma verdadeiro**; lesão endotelial → **trombose** e embolia.\n\n### Clínica\n- Dedos 4º e 5º (às vezes 3º) frios, pálidos, dolorosos, fenômeno de Raynaud unilateral, úlceras.\n- Massa pulsátil hipotenar, parestesia ulnar.\n- Homens, mecânicos, marceneiros, esportes (caratê, vôlei).\n\n### Investigação\n- **Teste de Allen**, Doppler, angiotomografia ou angiografia (aspecto em saca-rolha).\n\n### Tratamento\n- Parar o trauma, parar de fumar, antiagregação.\n- **Ressecção do segmento** com **enxerto venoso** (ou ligadura se boa circulação colateral).\n\n### Camadas da artéria\n- Íntima (endotélio + lâmina elástica interna), média, adventícia.\n\n> **Na prova:** aneurisma da ulnar por trauma repetido = lesão da ==lâmina elástica interna==.",
+  "correta": "**Lâmina elástica interna.**\n- Rompida, a parede perde contenção e dilata em aneurisma verdadeiro.\n- A superfície irregular favorece trombose e embolia.",
   "incorretas": {
-   "A": "A lesão endotelial ocorre e favorece a trombose, mas ela sozinha não explica a formação do aneurisma, o endotélio não é o que sustenta a parede.",
-   "B": "A trombose é consequência, não causa. Ela vem depois que a parede se alterou.",
-   "D": "Não existe uma camada adventícia interna: a adventícia é a camada mais externa do vaso.",
-   "E": "A adventícia externa é tecido conjuntivo de sustentação e não é o elemento cuja ruptura permite a dilatação."
+   "A": "**Favorece trombose.**\n- O endotélio não sustenta a parede.",
+   "B": "**Consequência.**\n- A trombose vem depois da lesão da parede.",
+   "D": "**Não existe.**\n- A adventícia é a camada mais externa.",
+   "E": "**Sustentação.**\n- A adventícia não impede a dilatação."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0256": {
-  "conceito": "Numa anastomose término-terminal entre vasos de calibres diferentes, a diferença de circunferência precisa ser compensada de alguma forma, ou os pontos ficam espaçados de um lado e amontoados do outro, e a anastomose vaza ou tromba.",
-  "correta": "Uma das soluções é seccionar a artéria de menor diâmetro em ângulo, e o valor descrito na técnica é de cerca de 30 graus. O corte oblíquo transforma a boca circular numa elipse de perímetro maior, o que permite igualar as circunferências e distribuir os pontos por igual. Ele compensa diferenças de até cerca de uma vez e meia; acima disso recorre-se a outras saídas, dilatação mecânica cuidadosa da menor, incisão em boca de peixe, anastomose em luva, ou interposição de enxerto de veia, que se adapta aos dois calibres.",
+  "conceito": "### Anastomose entre vasos de calibres diferentes\n| Discrepância | Solução |\n|---|---|\n| pequena (< 1,5:1) | ==secção oblíqua do vaso menor (cerca de 30°)==, dilatação mecânica do menor |\n| moderada | incisão em **boca de peixe** (fishmouth) no menor, espatulação |\n| grande (> 2:1) | anastomose **término-lateral**, **enxerto de veia** interposto, luva |\n\n### Por que o corte oblíquo\n- Transforma a boca circular em **elipse** de perímetro maior.\n- Iguala as circunferências e distribui os pontos.\n- Bisel exagerado (45 a 60°) angula o vaso e gera turbulência.\n\n### Princípios da microanastomose\n- Ressecar até íntima normal, sem tensão, pontos de espessura total igualmente espaçados, sem incluir a parede oposta.\n- Teste de patência (empty and refill).\n\n> **Na prova:** secção angulada do vaso menor em ==cerca de 30°==.",
+  "correta": "**Cerca de 30°.**\n- A secção oblíqua aumenta o perímetro da boca menor.\n- Iguala as circunferências sem angular o vaso.",
   "incorretas": {
-   "A": "Quinze graus é obliquidade pequena demais: o ganho de perímetro é desprezível e não resolve a diferença de calibre.",
-   "C": "Quarenta e cinco graus já produz um bisel longo, mais difícil de suturar sem dobrar a boca do vaso.",
-   "D": "Sessenta graus alonga ainda mais o bisel e aumenta o risco de angulação e de turbulência no fluxo.",
-   "E": "Noventa graus é o corte transverso comum, ou seja, nenhuma obliquidade, e nenhum ganho de perímetro."
+   "A": "**Pouco ganho.**\n- 15° quase não aumenta o perímetro.",
+   "C": "**Bisel longo.**\n- 45° dificulta a sutura.",
+   "D": "**Excessivo.**\n- 60° angula o vaso e gera turbulência.",
+   "E": "**Corte transverso.**\n- 90° não oferece ganho algum."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0257": {
