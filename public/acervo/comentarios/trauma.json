@@ -2213,69 +2213,69 @@
   "conferido": false
  },
  "trauma-0199": {
-  "conceito": "No joelho flutuante submetido à fixação com haste intramedular, a **tração excessiva** aplicada durante o posicionamento cirúrgico (geralmente numa mesa ortopédica, para auxiliar a redução e o acesso ao canal medular) é um fator de risco bem reconhecido para uma complicação neurológica específica: a **paralisia do nervo fibular (peroneal) comum**.\n\nEsse nervo é particularmente vulnerável à tração porque, ao contornar o colo da fíbula, fica relativamente fixo e superficial nesse ponto. Uma tração prolongada ou excessiva sobre o membro, aplicada por um poste perineal ou por um dispositivo de tração distal, estira o nervo além do que ele tolera sem lesão, produzindo uma neuropraxia que se manifesta clinicamente como pé caído e déficit sensitivo na região correspondente.\n\nDiferente da lesão vascular (mais associada ao trauma inicial em si do que à manobra cirúrgica de tração) ou da síndrome compartimental (mais associada à reperfusão ou ao próprio trauma de partes moles), a paralisia do fibular por tração excessiva é uma complicação iatrogênica específica do posicionamento cirúrgico, e por isso reconhecida especificamente como associada a esse fator técnico.",
-  "correta": "C. A tração excessiva durante o posicionamento cirúrgico para haste intramedular é fator de risco reconhecido para paralisia do nervo fibular comum, que é particularmente vulnerável ao estiramento por seu trajeto superficial ao redor do colo da fíbula.",
+  "conceito": "### Joelho flutuante\n- Fraturas ipsilaterais do ==fêmur e da tíbia==: alta energia.\n\n### Associações\n| Lesão | Frequência |\n|---|---|\n| ==fratura exposta== (pelo menos uma) | ==cerca de 50 a 70%== |\n| lesão ligamentar do joelho | até 50% |\n| lesão vascular | 5 a 15% |\n| politrauma, TCE, tórax | frequente |\n\n### Fraser\n| Tipo | Padrão |\n|---|---|\n| I | ambas diafisárias |\n| IIa | planalto tibial |\n| IIb | fêmur distal intra-articular |\n| IIc | ambas intra-articulares |\n\n- Tratamento: fixar ambas (haste retrógrada no fêmur + anterógrada na tíbia pela mesma incisão).\n\n### Tração excessiva\n- Mesa ortopédica com tração forte para reduzir dois ossos: ==estiramento do nervo fibular== (e do pudendo pelo poste perineal).\n- Prevenção: tração mínima necessária, tempo curto, joelho levemente fletido.\n\n> **Na prova:** tração excessiva no joelho flutuante = ==paralisia do fibular==",
+  "correta": "**Paralisia do fibular.**\n- Nervo estirado no colo da fíbula.\n- Pé caído no pós-operatório.",
   "incorretas": {
-   "A": "A lesão vascular está mais associada ao trauma inicial do que especificamente à tração excessiva durante o posicionamento cirúrgico.",
-   "B": "A lesão ligamentar não é a complicação classicamente associada à tração excessiva no posicionamento cirúrgico para essa fixação.",
-   "D": "A síndrome compartimental está mais associada ao próprio trauma de partes moles e à reperfusão do que especificamente à manobra de tração excessiva durante a cirurgia."
+   "A": "**Vascular.**\n- Menos associada à tração.",
+   "B": "**Ligamentar.**\n- Pré-existente ao trauma.",
+   "D": "**Compartimental.**\n- Relaciona-se à energia e fresagem, não à tração."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0200": {
-  "conceito": "As fraturas do **acrômio** são raras e, na maioria, tratadas de forma conservadora, mas exigem duas cautelas iniciais. A primeira é não confundir a fratura com um **os acromiale**, o centro de ossificação não fundido do acrômio (presente em cerca de 8% da população, frequentemente bilateral, com bordas escleróticas e regulares, mais bem visto na incidência axilar). A segunda é lembrar que a fratura do acrômio pode ser fratura por estresse em pacientes com prótese reversa de ombro, ou lesão iatrogênica após acromioplastia excessiva.\n\nA classificação de **Kuhn** organiza essas fraturas pelo desvio e pela repercussão no espaço subacromial, com três tipos:\n- **Tipo I**: sem desvio ou com desvio mínimo (subdividida em IA, avulsão, e IB, completa), tratada com tipoia e mobilização precoce\n- **Tipo II**: desviada mas sem redução do espaço subacromial, isto é, com desvio no plano do acrômio, também de tratamento em geral conservador\n- **Tipo III**: com desvio inferior que estreita o espaço subacromial\n\nO tipo III é o que tem indicação cirúrgica, porque o acrômio deslocado para baixo colide com o manguito rotador e com a cabeça umeral, produzindo impacto, dor e limitação da elevação. O tratamento é a redução aberta com fixação por placa (em regra na face superior, moldada) ou banda de tensão.\n\nConvém ainda lembrar que a fratura do acrômio é um dos componentes do **complexo suspensório superior do ombro** de Goss: se ela se associar a outra ruptura do anel (fratura da clavícula, do colo da escápula, luxação acromioclavicular), configura-se a dupla ruptura, com instabilidade e indicação cirúrgica mesmo em desvios menores. E a lesão do nervo supraescapular deve ser lembrada nas fraturas próximas à base da espinha.",
-  "correta": "C. A fratura do acrômio com DESVIO INFERIOR e comprometimento do espaço subacromial é o TIPO III de Kuhn, a única do grupo com indicação cirúrgica sistemática, porque o fragmento deslocado colide com o manguito e a cabeça umeral.",
+  "conceito": "### Fraturas do acrômio\n- Raras; diferenciar de ==os acromiale== (bordas lisas, bilateral em 60%).\n- Fratura por estresse após ==artroplastia reversa== (deltoide tenso).\n\n### Kuhn\n| Tipo | Achado | Conduta |\n|---|---|---|\n| I | sem desvio (IA avulsão, IB completa) | conservador |\n| II | desviada ==sem== reduzir o espaço subacromial | conservador na maioria |\n| ==III== | desvio ==inferior== ==estreitando o espaço subacromial== | ==fixação== (+ avaliar manguito) |\n\n> **Na prova:** desvio inferior com espaço subacromial comprometido = ==Kuhn III==",
+  "correta": "**Tipo III.**\n- Desvio inferior.\n- Impacto subacromial: fixar.",
   "incorretas": {
-   "A": "O tipo I é a fratura SEM desvio ou com desvio mínimo, subdividida em IA (avulsão) e IB (completa). É tratada com tipoia e mobilização precoce, com bom prognóstico.",
-   "B": "O tipo II é a fratura DESVIADA mas que NÃO reduz o espaço subacromial, o desvio ocorre no plano do acrômio, sem deslocamento inferior. Também é tratada de forma conservadora na maioria dos casos.",
-   "D": "A classificação de Kuhn para as fraturas do acrômio tem apenas TRÊS tipos; não existe tipo IV."
+   "A": "**I.**\n- Sem desvio.",
+   "B": "**II.**\n- Sem estreitar o espaço.",
+   "D": "**IV.**\n- Não existe."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0201": {
-  "conceito": "A classificação de **Russell e Taylor** das fraturas subtrocantéricas foi criada com um objetivo prático muito específico: decidir se a haste intramedular pode ser usada e qual tipo de haste. Ela se apoia em dois critérios anatômicos, e são exatamente esses os que a questão cobra.\n\nO primeiro é a extensão do traço até a **fossa piriforme**, o ponto de entrada clássico da haste anterógrada, na base do colo, medial ao trocanter maior. Se a fratura alcança a fossa piriforme, a integridade do ponto de entrada está comprometida e a haste convencional deixa de ser segura.\n\nO segundo é o envolvimento do **pequeno trocanter** (trocanter menor), que é a inserção do iliopsoas e a referência do apoio medial (calcar): quando ele está destacado, perde-se o suporte da cortical medial e a estabilidade rotacional do fragmento proximal.\n\nCombinando os dois:\n\n- **Tipo IA**: fossa piriforme íntegra e trocanter menor preservado — a haste padrão bloqueada resolve.\n- **Tipo IB**: fossa piriforme íntegra mas trocanter menor comprometido — exige haste cefalomedular, com parafuso no colo, para controlar o fragmento proximal.\n- **Tipo IIA**: extensão à fossa piriforme e trocanter menor íntegro.\n- **Tipo IIB**: extensão à fossa piriforme e trocanter menor comprometido — o padrão mais grave, em que classicamente se indicava fixação com placa (DCS ou angulada de 95 graus).\n\nVale a nota atual: com as hastes cefalomedulares de entrada trocantérica, que não dependem da fossa piriforme, a classificação perdeu parte do seu poder de decisão, mas continua sendo a referência para descrever essas fraturas e para entender por que a redução do fragmento proximal é tão difícil.",
-  "correta": "C. A classificação de Russell e Taylor apoia-se na extensão do traço à FOSSA PIRIFORME (o ponto de entrada da haste anterógrada) e no envolvimento do PEQUENO TROCANTER (inserção do iliopsoas e referência do apoio medial).",
+  "conceito": "### Russell-Taylor (subtrocantérica)\n| Tipo | Fossa piriforme | Trocanter menor | Implante |\n|---|---|---|---|\n| IA | ==não== atingida | ==íntegro== | haste convencional |\n| IB | não atingida | ==fraturado== | haste cefalomedular |\n| IIA | ==atingida== | íntegro | placa ou haste trocantérica |\n| IIB | atingida | fraturado | placa angulada/cefalomedular |\n\n- Foco: ==extensão à fossa piriforme== (ponto de entrada da haste) e ==trocanter menor== (suporte medial).\n- Com hastes de entrada trocantérica, a importância da fossa diminuiu.\n\n> **Na prova:** Russell-Taylor = ==fossa piriforme + trocanter menor==",
+  "correta": "**Fossa piriforme e pequeno trocanter.**\n- Define o ponto de entrada.\n- E o suporte medial.",
   "incorretas": {
-   "A": "O trocanter MAIOR não é o critério: o que importa é o pequeno trocanter, pela inserção do iliopsoas e pelo apoio da cortical medial. A fossa piriforme está correta como primeiro critério.",
-   "B": "Erra os dois critérios. A extensão à diáfise femoral não define os tipos de Russell e Taylor, e o trocanter relevante é o MENOR, não o maior.",
-   "D": "Acerta o pequeno trocanter, mas erra o outro critério: não é a extensão à diáfise que importa, e sim a extensão à FOSSA PIRIFORME, porque dela depende a viabilidade do ponto de entrada da haste anterógrada clássica."
+   "A": "**Grande trocanter.**\n- Não é o critério.",
+   "B": "**Diáfise e grande trocanter.**\n- Critérios errados.",
+   "D": "**Diáfise.**\n- Não é o eixo da classificação."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0202": {
-  "conceito": "O **processo lateral do tálus** é uma projeção triangular da face lateral do corpo que participa de duas articulações ao mesmo tempo: sua face superior integra a superfície do tornozelo, articulando-se com o maléolo lateral, e sua face inferior integra a faceta posterior da subtalar.\n\nSua fratura ficou conhecida como **fratura do snowboarder**, porque a bota rígida com o pé fixo à prancha reproduz o mecanismo de forma sistemática. Esse mecanismo combina três componentes: dorsiflexão do tornozelo, que traz o processo lateral para debaixo do maléolo lateral e o expõe ao impacto; carga axial, que comprime o tálus contra a pinça maleolar; e a rotação lateral com eversão do pé, que gira o processo contra o maléolo e completa o cisalhamento. Alguns autores descrevem a inversão como componente alternativo, mas a combinação de dorsiflexão com carga axial e eversão é a mais citada para reproduzir o padrão.\n\nO grande problema dessa fratura é diagnóstico: ela é confundida com \"entorse de tornozelo\" na maior parte dos casos, porque o quadro clínico é idêntico (dor e edema laterais, dificuldade de apoio) e o fragmento se esconde na radiografia. A pista está no ponto da dor: anterior e inferior à ponta do maléolo lateral, e não sobre o trajeto do ligamento talofibular anterior. Dor lateral persistente após \"entorse\" pede tomografia.\n\nO tratamento segue o tamanho e o desvio: fragmentos pequenos e sem desvio vão para gesso sem carga por seis semanas; fragmentos maiores que 1 cm ou desviados mais de 2 mm exigem redução e fixação com parafusos, porque a incongruência da subtalar leva a artrose precoce; e os muito cominuídos são excisados.",
-  "correta": "A. O mecanismo é a dorsiflexão com rotação lateral associada a trauma AXIAL e EVERSÃO, combinação que comprime o processo lateral do tálus contra o maléolo lateral e o cisalha.",
+  "conceito": "### Fratura do processo lateral do tálus (snowboarder)\n- Mecanismo: ==dorsiflexão + inversão== (ou eversão) com carga axial e rotação externa.\n- Processo lateral articula com a fíbula e com o calcâneo (subtalar posterior).\n- ==Passa por entorse==: RX normal em até 40%; ==TC== confirma.\n\n### Hawkins (processo lateral)\n| Tipo | Fragmento | Conduta |\n|---|---|---|\n| I | fragmento único grande | fixação se desviado > 2 mm |\n| II | cominutivo | excisão/imobilização |\n| III | pequeno (lasca anteroinferior) | imobilização |\n\n### Outros processos\n| Processo | Nome | Mecanismo |\n|---|---|---|\n| posterior, tubérculo lateral | Shepherd | flexão plantar forçada |\n| posterior, tubérculo medial | Cedell | dorsiflexão + pronação |\n\n> **Na prova:** mecanismo = dorsiflexão + rotação lateral + ==carga axial e eversão==",
+  "correta": "**Axial e eversão.**\n- Com dorsiflexão e rotação externa.\n- Calcâneo cisalha o processo.",
   "incorretas": {
-   "B": "A inversão é descrita por alguns autores como componente alternativo, mas ela afasta o processo lateral do maléolo em vez de comprimi-lo contra ele; a combinação classicamente citada com a carga axial é a eversão.",
-   "C": "O trauma torcional isolado, sem componente AXIAL, produz as lesões ligamentares do tornozelo e as fraturas maleolares por rotação, não a compressão do processo lateral contra a pinça, que exige carga axial.",
-   "D": "Acerta a eversão, mas erra o componente principal: sem a CARGA AXIAL não há a compressão do tálus contra o maléolo lateral que cisalha o processo. O torcional puro leva a outros padrões de lesão."
+   "B": "**Axial e inversão.**\n- Não é o mecanismo indicado pela banca.",
+   "C": "**Torcional e inversão.**\n- Entorse lateral.",
+   "D": "**Torcional e eversão.**\n- Falta a carga axial."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0204": {
-  "conceito": "A fratura do planalto tibial no osso **osteoporótico** tem um padrão morfológico característico, diferente do observado em ossos jovens e densos.\n\nEm pacientes mais jovens, com osso cortical resistente, o impacto do côndilo femoral sobre o planalto tende a produzir primeiro uma fratura de **cisalhamento** (split) ao longo de uma linha cortical relativamente bem definida, muitas vezes associada a algum grau de depressão adicional (split-depression).\n\nJá no osso osteoporótico, mais poroso e com trabéculas mais frágeis, a cortical não resiste da mesma forma, e o que ocorre é o **afundamento** (depressão) da superfície subcondral sob a carga, sem a formação de um fragmento de cisalhamento bem definido, um padrão de depressão central pura, que corresponde ao **Schatzker III**.\n\nEsse padrão reflete a mesma lógica observada em outras fraturas por fragilidade: o osso poroso \"amassa\" sob carga, em vez de se romper ao longo de um plano cortical nítido como faria um osso jovem e denso.",
-  "correta": "A. O padrão de depressão central é o característico do osso osteoporótico na fratura do planalto tibial, o osso poroso 'amassa' sob a carga, sem formar um fragmento de cisalhamento bem definido como ocorreria no osso jovem e denso.",
+  "conceito": "### Planalto medial com cisalhamento posterior\n- Fragmento ==posteromedial== em cisalhamento vertical (Schatzker IV, coluna posteromedial).\n- O fêmur fica sobre o fragmento que desliza posterior e distalmente; ==a tíbia proximal (diáfise e restante do planalto) subluxa anteriormente== em relação ao fêmur.\n- Frequentemente é equivalente de fratura-luxação: lesão de LCA/LCP e lateral associadas.\n\n### Colunas (Luo)\n| Coluna | Fixação |\n|---|---|\n| lateral | placa lateral |\n| medial | placa medial |\n| ==posterior== | ==placa de suporte posterior== (antideslizamento), via posteromedial ou Lobenhoffer |\n\n### Schatzker\n| Tipo | Padrão |\n|---|---|\n| I-III | lateral |\n| IV | medial (alta energia, fratura-luxação) |\n| V | bicondilar |\n| VI | dissociação metáfise-diáfise |\n\n### Osso osteoporótico\n- Côndilo femoral impacta o platô fraco: ==depressão central pura== (Schatzker III) sem split cortical.\n- Jovens (osso denso): ==split lateral== (Schatzker I) ou split-depressão (II).\n- Tratamento: elevação da depressão + enxerto/substituto + parafusos em jangada (rafting).\n\n> **Na prova:** planalto osteoporótico = ==depressão central==",
+  "correta": "**Depressão central.**\n- Osso esponjoso fraco colapsa.\n- Schatzker III.",
   "incorretas": {
-   "B": "O comprometimento bicondilar é um padrão de alta energia, mais associado a trauma de maior magnitude do que especificamente ao osso osteoporótico.",
-   "C": "A dissociação metáfise-diafisária também é um padrão de alta energia, não o padrão característico associado especificamente à fragilidade óssea.",
-   "D": "O afundamento do côndilo medial (Schatzker IV) é um padrão de alta energia por varo, mais associado a trauma significativo em osso jovem do que ao osso osteoporótico."
+   "B": "**Bicondilar.**\n- Alta energia.",
+   "C": "**Dissociação metáfise-diáfise.**\n- Schatzker VI, alta energia.",
+   "D": "**Côndilo medial.**\n- Schatzker IV, alta energia."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0205": {
-  "conceito": "A tríade terrível do cotovelo (luxação posterior somada a fratura da cabeça do rádio e do coronoide) teve o seu prognóstico transformado nas últimas décadas não por uma técnica nova, mas pela adoção de uma **sequência padronizada**, com teste de estabilidade ao fim de cada etapa.\n\nA ordem tem fundamento no mecanismo. O'Driscoll mostrou que a luxação segue o círculo de Horii, com as estruturas cedendo de **lateral** para **medial**: primeiro o ligamento colateral ulnar lateral, depois as cápsulas anterior e posterior, e só por último o complexo medial. Reconstruir é desfazer esse caminho na mesma direção.\n\nA sequência consagrada:\n- **1) Coronoide**, abordado primeiro porque é o mais profundo e o mais difícil de alcançar depois que a cabeça do rádio estiver reconstruída ou substituída; um Regan-Morrey 2, com até 50% da altura, é fragmento grande o bastante para merecer fixação com parafuso, sutura transóssea ou placa\n- **2) Cabeça do rádio**: aqui um Mason 3, cominutivo e não reconstrutível, que impõe artroplastia e nunca ressecção, já que com os ligamentos rotos ela é o único freio ao valgo\n- **3) Complexo colateral lateral**, reinserido no ponto isométrico, no centro da esfera do capítulo, e tensionado com o antebraço pronado e o cotovelo a 90 graus\n- **4) Teste** de estabilidade sob fluoroscopia, em todo o arco\n- **5)** Se persistir instabilidade, **complexo colateral medial**\n- **6)** Se ainda assim não se mantiver reduzido, **fixador externo articulado**, nunca antes de esgotar os reparos\n\nNote por que o coronoide vem antes do rádio, que é a única inversão que a ordem impõe em relação ao círculo de Horii: é uma razão de **acesso**, e não de mecanismo. A janela para o coronoide passa pelo defeito deixado pela cabeça do rádio ressecada; uma vez implantada a prótese, aquele corredor se fecha.",
-  "correta": "A. A ordem é CORONOIDE, RÁDIO, LIGAMENTO COLATERAL LATERAL e, se necessário, LIGAMENTO COLATERAL MEDIAL, o coronoide primeiro por razão de acesso (a janela se fecha depois da prótese), e o lateral antes do medial porque foi ele o primeiro a romper no círculo de Horii.",
+  "conceito": "### Tríade terrível do cotovelo\n- ==Luxação posterior + fratura da cabeça do rádio + fratura da ponta do coronoide== (O'Driscoll 1, Regan-Morrey I).\n- Mecanismo: queda com supinação, valgo e carga axial (instabilidade posterolateral rotatória).\n\n### Tratamento (de dentro para fora)\n1. Coronoide (sutura/laço ou parafuso).\n2. Cabeça do rádio (fixar ou prótese).\n3. ==LCL== (reinserção no epicôndilo lateral).\n4. LCM ou fixador articulado se ainda instável.\n\n> **Na prova:** ordem = ==coronoide, rádio, LCL, LCM==",
+  "correta": "**Coronoide, rádio, LCL, LCM.**\n- De profundo para superficial.\n- LCM só se ainda instável.",
   "incorretas": {
-   "B": "Acerta o começo, mas inverte os ligamentos. O lado medial é o ÚLTIMO a romper no mecanismo e o último a ser abordado: reparar o medial primeiro significa operar o lado errado e expor desnecessariamente o nervo ulnar em um cotovelo que frequentemente se estabiliza só com o reparo lateral.",
-   "C": "Erra nas duas metades: inverte coronoide e rádio (perdendo a janela de acesso ao coronoide assim que a prótese for implantada) e inverte os ligamentos.",
-   "D": "Acerta a ordem dos ligamentos, mas começa pelo rádio. Tratar a cabeça do rádio antes do coronoide fecha o corredor por onde o coronoide seria alcançado e transforma uma fixação viável em uma manobra tecnicamente muito mais difícil."
+   "B": "**LCM antes do LCL.**\n- LCL é reparado antes.",
+   "C": "**Rádio primeiro e LCM antes.**\n- Coronoide é abordado primeiro (via acesso após remover a cabeça).",
+   "D": "**Rádio antes do coronoide.**\n- Coronoide primeiro."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0206": {
@@ -2290,25 +2290,25 @@
   "conferido": false
  },
  "trauma-0207": {
-  "conceito": "A classificação de **Lauge-Hansen** para a fratura do tornozelo descreve o mecanismo de **supinação-adução (SAD)** em dois estágios progressivos.\n\nNo **estágio I**, a força de adução, com o pé em supinação, produz uma fratura transversa (avulsão) do maléolo lateral abaixo do nível da articulação, ou uma lesão isolada dos ligamentos colaterais laterais, sem ainda comprometer a superfície articular medial.\n\nNo **estágio II**, a mesma força de adução continua a atuar, e o tálus (já sem a contenção lateral que se rompeu no primeiro estágio) é empurrado contra o maléolo medial com força suficiente para produzir uma fratura vertical (por cisalhamento) desse maléolo, muitas vezes acompanhada de impacção (depressão) da porção medial da superfície articular da tíbia (o plafond), pelo mesmo mecanismo de esmagamento direto entre o tálus e o osso.\n\nÉ justamente esse segundo estágio, mais avançado, que carrega o risco de depressão articular medial, achado ausente no estágio I, mais limitado ao componente lateral.",
-  "correta": "B. A depressão articular da porção medial do plafond pode ocorrer no estágio II da supinação-adução, quando o tálus, já sem a contenção lateral rompida no estágio I, é empurrado contra o maléolo medial com força suficiente para impactar a superfície articular.",
+  "conceito": "### Fratura de Maisonneuve\n- Fratura da ==fíbula proximal== + lesão da ==sindesmose== e da membrana interóssea + lesão medial (deltoide ou maléolo medial).\n- Mecanismo: ==pronação-rotação externa== (Lauge-Hansen PRE estágio IV, Weber C alta).\n- Palpar toda a fíbula em toda entorse com dor medial.\n\n### Lauge-Hansen\n| Mecanismo | Fíbula | Frequência |\n|---|---|---|\n| supinação-rotação externa | espiral no nível da sindesmose (Weber B) | ==a mais comum== |\n| supinação-adução | transversa baixa (Weber A) + medial vertical | |\n| pronação-abdução | transversa/cominuta no nível ou acima | |\n| ==pronação-rotação externa== | ==espiral alta== (Weber C) | Maisonneuve |\n\n### Tratamento\n- Fixar a ==sindesmose== (parafusos ou botão de sutura) com a fíbula reduzida no comprimento e rotação; a fratura proximal da fíbula não se fixa.\n\n### Supinação-adução\n| Estágio | Lesão |\n|---|---|\n| I | ligamentos laterais ou fíbula transversa ==abaixo da sindesmose== |\n| ==II== | ==maléolo medial vertical== + ==impacção do plafond medial== |\n\n- Reduzir a ==impacção medial== e enxertar antes de fixar o maléolo (placa antideslizante).\n\n> **Na prova:** depressão do plafond medial = ==supinação-adução estágio II==",
+  "correta": "**SA II.**\n- Maléolo medial vertical.\n- Impacção do plafond medial.",
   "incorretas": {
-   "A": "O estágio I da supinação-adução envolve apenas a lesão lateral (fratura transversa do maléolo lateral ou lesão ligamentar), sem ainda comprometer a superfície articular medial.",
-   "C": "O mecanismo de supinação-rotação lateral tem uma sequência de lesão diferente (lateral, depois sindesmose anterior, depois posterior, depois medial), sem a depressão articular medial característica da supinação-adução.",
-   "D": "O estágio II da supinação-rotação lateral corresponde à lesão do ligamento tibiofibular posterior ou fratura do maléolo posterior, não à depressão articular medial, característica específica da supinação-adução."
+   "A": "**SA I.**\n- Só lateral.",
+   "C": "**SRE I.**\n- Ligamento anterior.",
+   "D": "**SRE II.**\n- Fíbula espiral."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0208": {
-  "conceito": "O quinto metatarso proximal é dividido em zonas para orientar o diagnóstico e o tratamento das fraturas:\n- **Zona I**: a base propriamente dita, onde ocorre a fratura por avulsão (tração do tendão fibular curto e da fáscia plantar lateral), geralmente benigna e de bom prognóstico.\n- **Zona II**: a junção metáfise-diáfise, onde ocorre a verdadeira **fratura de Jones**, zona de transição vascular relativamente pouco vascularizada, com maior risco de retardo de consolidação e pseudoartrose.\n- **Zona III**: a diáfise proximal, onde ocorrem as fraturas de estresse por sobrecarga repetitiva, também numa região de vascularização limitada.",
-  "correta": "B. A fratura de Jones ocorre na zona II, e a fratura por estresse ocorre na zona III.",
+  "conceito": "### Zonas da base do 5º metatarso (Lawrence e Botte)\n| Zona | Local | Mecanismo | Tratamento |\n|---|---|---|---|\n| I | tuberosidade (avulsão, fibular curto/banda lateral da fáscia) | inversão aguda | sintomático, bota |\n| II | ==Jones==: junção metáfise-diáfise (articulação 4º-5º) | adução do antepé | gesso sem carga 6 a 8 semanas ou parafuso (atleta) |\n| ==III== | ==diáfise proximal== (distal aos ligamentos 4º-5º) | ==estresse== | alto risco: ==parafuso intramedular== |\n\n- Zonas II e III: área de ==watershed==, consolidação lenta.\n\n> **Na prova:** Jones = ==zona II==; estresse = ==zona III==",
+  "correta": "**II e III.**\n- Jones: junção metáfise-diáfise.\n- Estresse: diáfise proximal.",
   "incorretas": {
-   "A": "A zona I corresponde à fratura por avulsão da base, não à fratura de Jones.",
-   "C": "A zona I é a fratura por avulsão, não a fratura de Jones, que ocorre na zona II.",
-   "D": "A fratura de Jones ocorre na zona II, não na zona IV (que nem é descrita nesta classificação)."
+   "A": "**I e II.**\n- Zona I é avulsão.",
+   "C": "**I e III.**\n- Zona I é avulsão.",
+   "D": "**II e IV.**\n- Zona IV não existe."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0209": {
