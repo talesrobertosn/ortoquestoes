@@ -1829,282 +1829,283 @@
   "conferido": false
  },
  "quadril-0161": {
-  "conceito": "Na figura numerada da região glútea posterior, a estrutura 1, que se origina na face anterior do sacro e se insere no grande trocanter, corresponde ao músculo PIRIFORME, a principal referência anatômica dessa região, situado entre os glúteos (superficialmente) e os demais rotadores curtos (profundamente/inferiormente).",
-  "correta": "A. A estrutura assinalada pelo número 1 corresponde ao músculo piriforme.",
+  "conceito": "### Piriforme\n- Origem: **face anterior do sacro** (S2 a S4), margem da incisura isquiática maior.\n- Sai da pelve pelo **forame isquiático maior** e insere-se na **ponta do trocânter maior**.\n- Ações: rotação externa em extensão; abdução com o quadril fletido.\n- Inervação: nervo para o piriforme (S1 e S2).\n\n### Por que é a chave da região\n- Divide o forame isquiático maior em **supra** e **infrapiriforme**.\n- O nervo isquiático sai, na maioria, **logo abaixo** dele.\n- No acesso posterior, é o primeiro rotador identificado, na borda superior do conjunto.\n\n### Camadas da região glútea\n| Camada | Estruturas |\n|---|---|\n| superficial | glúteo máximo |\n| intermediária | glúteo médio |\n| profunda | glúteo mínimo, ==piriforme==, gêmeos, obturador interno, quadrado femoral |\n\n> **Na prova:** músculo do sacro ao trocânter, saindo pelo forame isquiático maior = ==piriforme==.",
+  "correta": "**Do sacro ao trocânter.**\n- A estrutura 1 atravessa o forame isquiático maior até a ponta do trocânter: é o piriforme.",
   "incorretas": {
-   "B": "O glúteo mínimo é a camada mais profunda dos glúteos, numa posição diferente da mostrada para a estrutura 1 nesta figura.",
-   "C": "O glúteo médio é mais superficial e mais lateral, numa posição diferente da estrutura numerada como 1.",
-   "D": "O gêmeo superior é um músculo menor, situado abaixo do piriforme, não correspondendo à estrutura 1 indicada."
+   "B": "**Profundo ao médio, mais anterior.**\n- O glúteo mínimo nasce no ílio e vai à faceta anterior do trocânter.",
+   "C": "**Mais superficial e lateral.**\n- O glúteo médio cobre o mínimo e o piriforme em parte.",
+   "D": "**Logo abaixo.**\n- O gêmeo superior é pequeno e fica abaixo do piriforme."
   },
-  "geradoEm": "2026-09-16",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0162": {
-  "conceito": "O diagrama representa o modelo clássico de Pauwels sobre a biomecânica do quadril em apoio monopodal: a linha do centro de rotação da cabeça femoral (B) até o ponto de inserção do mecanismo abdutor no grande trocanter (A) representa o BRAÇO DE ALAVANCA DO MECANISMO ABDUTOR, enquanto a linha horizontal de B até o centro de massa corporal (X) representa o BRAÇO DE ALAVANCA DO PESO CORPORAL, sendo este último, classicamente, cerca de 2 a 3 vezes MAIOR que o braço abdutor (ou seja, o braço abdutor é proporcionalmente menor), o que exige que os músculos abdutores gerem uma força várias vezes maior que o peso corporal para equilibrar a pelve durante a marcha.",
-  "correta": "C. A linha AB (braço de alavanca do mecanismo abdutor) é aproximadamente 2,5 vezes menor que a alavanca do peso corporal.",
+  "conceito": "### Modelo de Pauwels (apoio monopodal)\n- **B:** centro de rotação da cabeça femoral (fulcro).\n- **A:** ponto de ação dos abdutores no trocânter.\n- ==AB: braço de alavanca abdutor== (curto).\n- **B até o centro de gravidade:** braço de alavanca do peso (longo).\n\n### A proporção\n- Braço do peso ≈ ==2,5 vezes o braço abdutor==.\n- Para equilibrar, a força abdutora ≈ 2,5 vezes o peso corporal.\n- Resultante na cabeça ≈ **3 vezes** o peso.\n\n### O que muda a relação\n| Situação | Efeito |\n|---|---|\n| coxa vara, trocânter alto | encurta AB: mais força necessária |\n| coxa valga | encurta AB e aumenta a carga |\n| aumento do offset na ATQ | alonga AB |\n| medialização do acetábulo | encurta o braço do peso |\n\n### Offset femoral\n- Distância do centro da cabeça ao **eixo diafisário**: relacionado, mas não é a linha AB do diagrama.\n\n> **Na prova:** AB = ==braço abdutor, cerca de 2,5 vezes menor== que o do peso.",
+  "correta": "**Braço abdutor curto.**\n- AB vai do centro da cabeça ao ponto de ação dos abdutores.\n- É cerca de 2,5 vezes menor que o braço do peso corporal.",
   "incorretas": {
-   "A": "A linha AB representa o braço de alavanca do mecanismo ABDUTOR (a distância do centro da cabeça femoral à inserção abdutora no trocanter), não diretamente a força resultante na cabeça femoral.",
-   "B": "O offset do quadril é uma medida distinta (a distância horizontal entre o centro da cabeça femoral e o eixo do colo/diáfise femoral), não correspondendo exatamente à linha AB deste diagrama de alavancas.",
-   "D": "A linha AB representa o braço de alavanca abdutor, uma medida biomecânica funcional, não o comprimento total anatômico do quadril."
+   "A": "**É distância, não força.**\n- A resultante é um vetor que atravessa a cabeça; AB é um braço de alavanca.",
+   "B": "**Medida diferente.**\n- O offset vai do centro da cabeça ao eixo diafisário.",
+   "D": "**Não é comprimento anatômico.**\n- AB é uma distância biomecânica funcional."
   },
-  "geradoEm": "2026-09-16",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0163": {
-  "conceito": "A orientação do componente acetabular medida na radiografia é fixa em relação à pelve, mas a orientação FUNCIONAL muda conforme a pelve se inclina. Em pé, a pelve tende à inclinação anterior; ao sentar, ela retroverte, o que aumenta a anteversão funcional da taça e protege contra o impacto posterior. Quem tem a coluna lombar artrodesada perde essa compensação: a pelve não acompanha a mudança de posição, e o par coluna-quadril passa a trabalhar fora da faixa segura. Por isso a artrodese lombar é hoje reconhecida como fator de risco importante de luxação após artroplastia do quadril.",
-  "correta": "Artrodese lombar: a pelve rígida deixa de compensar e a orientação funcional da taça sai da faixa segura.",
+  "conceito": "### Mecânica espinopélvica\n- A orientação **radiográfica** da taça é fixa em relação à pelve; a **funcional** muda com a inclinação pélvica.\n| Posição | Pelve | Efeito na taça |\n|---|---|---|\n| em pé | inclinação anterior | menos anteversão funcional |\n| sentado | ==retroversão== (inclinação posterior) | ==mais anteversão funcional==, protege o impacto posterior |\n\n### Coluna rígida\n- Na ==artrodese lombar== (ou coluna rígida por doença), a pelve **não acompanha** a mudança de posição.\n- A taça fica fora da faixa segura em alguma posição: impacto e luxação.\n- Artrodese lombar, sobretudo longa ou incluindo o sacro, é **fator de risco importante** de luxação após ATQ.\n\n### Como planejar\n- Radiografias em pé e sentado (variação do **sacral slope**; menos de 10° = coluna rígida).\n- Ajustar anteversão, usar cabeça maior ou **dupla mobilidade** nos casos de risco.\n\n### Outros fatores de luxação\n- Via posterior sem reparo, cabeça pequena, mau posicionamento, doença neuromuscular, fratura do colo, revisão.\n\n> **Na prova:** altera a anteversão funcional e aumenta a luxação = ==artrodese lombar==.",
+  "correta": "**Pelve que não compensa.**\n- Com a coluna fundida, a pelve não retroverte ao sentar.\n- A orientação funcional da taça sai da zona segura e a luxação fica mais provável.",
   "incorretas": {
-   "B": "A displasia traz dificuldades próprias (acetábulo raso, centro de rotação alterado, alongamento do membro), mas não é o fator que altera a anteversão funcional pela mecânica espinopélvica.",
-   "C": "A fratura do colo aumenta o risco de luxação por outros motivos (partes moles não retraídas, tônus muscular, idade), e não por mudança na inclinação pélvica.",
-   "D": "A fratura do acetábulo compromete o suporte ósseo e a fixação da taça, o que é um problema diferente."
+   "B": "**Dificuldade anatômica.**\n- A displasia complica o posicionamento, mas não altera a anteversão funcional pela mecânica espinopélvica.",
+   "C": "**Risco por outros motivos.**\n- A fratura do colo luxa mais por partes moles não retraídas, idade e cognição.",
+   "D": "**Problema de suporte ósseo.**\n- A fratura do acetábulo afeta a fixação da taça, não a inclinação pélvica."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0164": {
-  "conceito": "O ângulo de Tönnis (índice acetabular, ou obliquidade do teto) mede a inclinação da porção de carga do acetábulo: traça-se a linha horizontal entre as duas lágrimas e mede-se o ângulo entre uma paralela a ela e a linha que une o ponto mais medial da esclerose do teto ao ponto mais lateral do acetábulo. Acima de 10 graus indica teto oblíquo demais, ou seja, displasia; abaixo de zero, teto horizontalizado, aponta para cobertura excessiva e impacto tipo pinçamento. É medida complementar ao ângulo centro-borda lateral, que avalia quanto o teto cobre, e não sua inclinação.",
-  "correta": "Ângulo de Tönnis: acima de 10 graus indica displasia.",
+  "conceito": "### Ângulo de Tönnis (inclinação do teto, índice acetabular do adulto)\n- Referência: linha horizontal entre as **lágrimas**.\n- Linha do ponto mais **medial da esclerose do teto** (sourcil) ao ponto mais **lateral** do acetábulo.\n| Valor | Interpretação |\n|---|---|\n| 0 a 10° | normal |\n| ==acima de 10°== | ==displasia== (teto oblíquo) |\n| abaixo de 0° | teto horizontal: sobrecobertura, pincer |\n\n### Outras medidas de cobertura\n| Medida | Incidência | Displasia | Sobrecobertura |\n|---|---|---|---|\n| centro-borda lateral (Wiberg) | AP | abaixo de 20 a 25° | acima de 40° |\n| centro-borda anterior (Lequesne) | falso perfil | abaixo de 20° | |\n| índice de extrusão da cabeça | AP | acima de 25% | |\n\n### Ângulo alfa\n- É do **fêmur** (came), não de cobertura acetabular.\n\n> **Na prova:** ângulo que sugere displasia quando ==acima de 10°== = ==Tönnis==.",
+  "correta": "**Teto oblíquo.**\n- O ângulo de Tönnis mede a inclinação da zona de carga.\n- Acima de 10° o teto é oblíquo demais: displasia.",
   "incorretas": {
-   "A": "O centro-borda anterior é medido no falso perfil de Lequesne e avalia cobertura anterior, com outro valor de referência.",
-   "B": "O centro-borda lateral também avalia displasia, mas o critério é inverso, displasia abaixo de 20 a 25 graus, e não acima de 10.",
-   "D": "O ângulo alfa mede a transição cabeça-colo no fêmur, e diz respeito ao impacto tipo came."
+   "A": "**Outra incidência e outro corte.**\n- O centro-borda anterior é medido no falso perfil e sugere displasia abaixo de 20°.",
+   "B": "**Critério inverso.**\n- O centro-borda lateral sugere displasia quando **menor** que 20 a 25°.",
+   "D": "**Medida femoral.**\n- O ângulo alfa avalia o came, não a cobertura."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0165": {
-  "conceito": "A lesão em contragolpe é o dano que aparece do lado oposto ao do conflito, e o mecanismo exige um ponto de apoio: no pinçamento, a borda anterossuperior com cobertura excessiva funciona como fulcro, a cabeça é alavancada para trás e para baixo, e a cartilagem sofre na região posteroinferior do acetábulo e na face posterior da cabeça. É um dano por alavanca, não por cisalhamento, o que o separa da delaminação anterossuperior do came, em que a giba entra na articulação e descola a cartilagem em lâmina.",
-  "correta": "Pinçamento (pincer): é a cobertura excessiva anterior que funciona como fulcro e produz o dano posteroinferior.",
+  "conceito": "### Tipos de impacto e padrão de lesão\n| Tipo | Deformidade | Mecanismo | Lesão típica |\n|---|---|---|---|\n| came | giba na transição cabeça-colo | a giba entra na articulação: **cisalhamento** | **delaminação** condral anterossuperior, lábio descolado da cartilagem |\n| ==pincer== | ==sobrecobertura== (retroversão, profunda, protrusão) | o colo bate na borda: **alavanca** | lesão do **lábio** anterossuperior e ==contragolpe posteroinferior== |\n| misto | os dois | | combinação (o mais comum) |\n\n### O contragolpe\n- A borda anterossuperior funciona como **fulcro**.\n- A cabeça é alavancada para **trás e para baixo**, lesando a cartilagem posteroinferior do acetábulo e a face posterior da cabeça.\n- Na radiografia, pode aparecer como estreitamento posteroinferior (\"sinal do contragolpe\").\n\n### Perfil epidemiológico\n- Came: homens jovens e atletas.\n- Pincer: mulheres de meia-idade.\n\n> **Na prova:** lesão em contragolpe posterior = ==pincer==.",
+  "correta": "**Alavanca na borda anterior.**\n- No pincer, a sobrecobertura anterior serve de fulcro.\n- A cabeça é empurrada para trás e lesa a cartilagem posteroinferior.",
   "incorretas": {
-   "A": "No came puro o dano dominante é a delaminação anterossuperior, por cisalhamento, não a lesão em contragolpe.",
-   "C": "O tipo misto tem componentes dos dois, mas a lesão em contragolpe é atribuída ao componente de pinçamento.",
-   "D": "\"Residual\" não é um subtipo da classificação do impacto femoroacetabular."
+   "A": "**Lesão anterossuperior.**\n- No came, o cisalhamento causa delaminação anterossuperior.",
+   "C": "**Componente pincer.**\n- O misto tem os dois, mas o contragolpe é atribuído ao componente pincer.",
+   "D": "**Não é subtipo.**\n- A classificação é came, pincer e misto."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0166": {
-  "conceito": "O impacto isquiofemoral é o estreitamento do espaço entre o ísquio e o pequeno trocanter, no qual corre o músculo quadrado femoral. Comprimido nesse corredor (sobretudo na extensão com adução e rotação externa, e em quem tem pequeno trocanter proeminente, coxa valga ou sequela cirúrgica), o quadrado femoral sofre e mostra edema na ressonância, o achado que dá o diagnóstico. A queixa é dor glútea baixa, muitas vezes com irradiação, confundida com síndrome do piriforme, e o exame que a reproduz é o teste de marcha em passo longo.",
-  "correta": "Quadrado femoral: é o músculo que ocupa o espaço isquiofemoral e o que aparece edemaciado na ressonância.",
+  "conceito": "### Impacto isquiofemoral\n- Estreitamento do espaço entre o **ísquio** e o **trocânter menor**, por onde passa o ==quadrado femoral==.\n- RM: ==edema do quadrado femoral==, às vezes atrofia ou ruptura.\n\n### Medidas na RM\n| Medida | Anormal |\n|---|---|\n| espaço isquiofemoral (ísquio → trocânter menor) | menor que 15 a 17 mm |\n| espaço do quadrado femoral (tendões isquiotibiais → iliopsoas) | menor que 8 a 10 mm |\n\n### Causas\n- Mulheres, coxa valga, anteversão aumentada, trocânter menor proeminente.\n- Sequelas: fratura, osteotomia, artroplastia com offset reduzido.\n\n### Clínica\n- Dor glútea baixa, às vezes irradiada (confundida com piriforme ou radiculopatia).\n- Teste de **marcha em passo longo** (long stride walking): dor com passo largo, alívio com passo curto.\n- Teste de **impacto isquiofemoral**: extensão com adução e rotação externa.\n\n### Tratamento\n- Fisioterapia, infiltração guiada; ressecção do trocânter menor em casos refratários.\n\n> **Na prova:** impacto isquiofemoral = edema do ==quadrado femoral==.",
+  "correta": "**Ocupa o espaço isquiofemoral.**\n- O quadrado femoral passa entre o ísquio e o trocânter menor.\n- Comprimido, mostra edema na RM.",
   "incorretas": {
-   "A": "O gêmeo superior fica mais acima, fora do espaço entre o ísquio e o pequeno trocanter.",
-   "B": "O piriforme é o músculo da outra síndrome compressiva glútea, mais proximal, junto à incisura isquiática maior.",
-   "D": "O obturador externo passa pela região, mas não é ele que ocupa o espaço isquiofemoral nem o que mostra edema."
+   "A": "**Mais proximal.**\n- O gêmeo superior fica acima, fora do espaço isquiofemoral.",
+   "B": "**Outra síndrome.**\n- O piriforme é o da síndrome do piriforme, junto à incisura isquiática maior.",
+   "D": "**Mais profundo.**\n- O obturador externo passa perto, mas não ocupa o espaço nem é o edemaciado clássico."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0167": {
-  "conceito": "A imagem mostra múltiplos ramos nervosos finos cruzando transversalmente sobre a crista ilíaca posterior, indo em direção à pele da região glútea superior. Esse padrão é característico dos NERVOS CLUNEAIS SUPERIORES, ramos cutâneos sensitivos dos ramos dorsais de L1-L3, que cruzam a crista ilíaca para suprir a pele da região glútea superior, estruturas em risco em acessos cirúrgicos posteriores que envolvam a crista ilíaca (como a retirada de enxerto ósseo).",
-  "correta": "D. O nervo indicado corresponde aos nervos cluneais superiores.",
+  "conceito": "### Nervos cutâneos da região glútea\n| Nervo | Origem | Trajeto | Território |\n|---|---|---|---|\n| ==cluneais superiores== | ==ramos dorsais de L1 a L3== | ==cruzam a crista ilíaca posterior==, 7 a 8 cm lateral à EIPS | pele glútea superior |\n| cluneais médios | ramos dorsais de S1 a S3 | saem pelo sacro | pele sobre o sacro |\n| cluneais inferiores | cutâneo femoral posterior | contornam a borda inferior do glúteo máximo | prega glútea |\n| cutâneo femoral lateral | L2 e L3 | junto à EIAS | face lateral da coxa |\n\n### Relevância cirúrgica\n- **Retirada de enxerto da crista ilíaca posterior:** incisões além de 8 cm lateral à EIPS podem lesar os cluneais superiores.\n- Resultado: dormência ou neuroma doloroso na nádega.\n- Compressão dos cluneais superiores é causa pouco lembrada de **lombalgia** baixa.\n\n> **Na prova:** ramos finos cruzando a crista ilíaca posterior = ==cluneais superiores==.",
+  "correta": "**Cruzam a crista posterior.**\n- Os ramos que passam sobre a crista ilíaca posterior para a pele glútea são os cluneais superiores (L1 a L3).",
   "incorretas": {
-   "A": "O nervo cutâneo medial da coxa é um ramo do nervo femoral, com trajeto na face anteromedial da coxa, sem relação com a crista ilíaca posterior mostrada.",
-   "B": "O nervo cutâneo lateral da coxa cruza próximo à espinha ilíaca ântero-superior, na face anterior, não na crista ilíaca posterior mostrada na figura.",
-   "C": "Os nervos cluneais posteriores (ramos de S1-S3) cruzam mais inferiormente, próximo à borda do glúteo máximo/sacro, não sobre a crista ilíaca como os nervos mostrados."
+   "A": "**Face anteromedial.**\n- O cutâneo medial da coxa é ramo do femoral, longe da crista posterior.",
+   "B": "**Anterior.**\n- O cutâneo femoral lateral passa junto à EIAS.",
+   "C": "**Mais baixos.**\n- Os cluneais inferiores contornam a borda inferior do glúteo máximo."
   },
-  "geradoEm": "2026-09-16",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0168": {
-  "conceito": "O diagnóstico de infecção periprotética se faz por critérios combinados. Dois critérios são maiores e bastam sozinhos: fístula comunicando com a prótese e duas culturas positivas para o mesmo germe. Os demais são menores, VHS e PCR elevados, leucócitos e percentual de polimorfonucleares elevados no líquido sinovial, esterase leucocitária positiva, histologia com neutrófilos e uma única cultura positiva, e três deles fecham o diagnóstico. O caso traz exatamente três: uma cultura, marcadores inflamatórios elevados e histologia positiva.",
-  "correta": "Uma cultura positiva, elevação de PCR e VHS e histologia positiva: três critérios menores, que juntos confirmam o diagnóstico.",
+  "conceito": "### Critérios de infecção periprotética (MSIS / ICM 2013)\n| Maiores (um basta) | Menores (três fecham) |\n|---|---|\n| fístula comunicando com a prótese | VHS e PCR elevados |\n| duas culturas positivas para o mesmo germe | leucócitos elevados no líquido sinovial |\n| | polimorfonucleares elevados no líquido |\n| | esterase leucocitária positiva |\n| | ==histologia positiva== (neutrófilos por campo) |\n| | ==uma única cultura positiva== |\n\n### Leitura do caso\n- Uma cultura positiva (menor) + ==PCR e VHS elevados== (menor) + histologia positiva (menor) = **três menores**.\n- O diagnóstico está confirmado.\n\n### Critérios de 2018 (ICM)\n- Sistema de pontuação: maiores definem; menores somam pontos (PCR, D-dímero, VHS, leucócitos, esterase, PMN, alfa-defensina, cultura única, histologia, purulência).\n\n### Tempo desde a cirurgia\n- **Aguda** (até cerca de 4 semanas): DAIR pode ser opção com implante fixo.\n- **Crônica:** revisão em um ou dois tempos.\n\n> **Na prova:** o que confirma = ==cultura única + PCR/VHS + histologia==.",
+  "correta": "**Três critérios menores.**\n- Cultura isolada, marcadores inflamatórios elevados e histologia positiva, somados, fecham o diagnóstico.",
   "incorretas": {
-   "A": "Hiperemia e febre são sinais clínicos sugestivos, mas não constam da lista de critérios diagnósticos.",
-   "B": "Uma cultura isolada é critério menor e pode ser contaminação; febre não é critério.",
-   "C": "A histologia positiva é um critério menor e não fecha o diagnóstico sozinha."
+   "A": "**Sinais clínicos.**\n- Hiperemia e febre sugerem, mas não fazem parte dos critérios.",
+   "B": "**Insuficiente.**\n- Uma cultura isolada pode ser contaminação, e febre não é critério.",
+   "C": "**Um só menor.**\n- A histologia isolada não fecha o diagnóstico."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0169": {
-  "conceito": "Os vasos retinaculares são os ramos terminais do ramo profundo da circunflexa femoral medial e sobem pelo colo, sob a reflexão capsular, em três grupos. O grupo lateral, que corre no retináculo posterossuperior, é o dominante: dele saem as artérias epifisárias laterais, responsáveis pela maior parte da cabeça femoral, incluindo o setor de carga. Por isso a fratura desviada do colo e a luxação posterior põem a cabeça em risco de necrose, e por isso a redução precoce e a fixação sem desvio são o que se pode oferecer ao paciente jovem.",
-  "correta": "Os laterais: correm no retináculo posterossuperior e dão as artérias epifisárias laterais, dominantes na irrigação da cabeça.",
+  "conceito": "### Irrigação da cabeça femoral no adulto\n- Anel extracapsular na base do colo formado pelas **circunflexas medial e lateral**.\n- Dele sobem os **vasos retinaculares** (cervicais ascendentes), sob a sinóvia do colo, em três grupos.\n\n| Grupo retinacular | Origem | Importância |\n|---|---|---|\n| ==lateral (posterossuperior)== | ==ramo profundo da circunflexa medial== | ==dominante==: dá as epifisárias laterais, que irrigam a zona de carga |\n| medial | circunflexa medial | menor |\n| anterior | circunflexa lateral | pequeno |\n| inferior | circunflexa medial | pequeno (vasos de Weitbrecht) |\n\n- **Artéria do ligamento redondo** (ramo da obturatória): contribuição pequena e variável no adulto.\n\n### Consequências clínicas\n- Fratura desviada do colo: lesa os retinaculares e pode levar a **necrose** e pseudartrose.\n- Luxação posterior: redução em até **6 horas** reduz o risco de necrose.\n- Na **luxação cirúrgica (Ganz)**, o retináculo posterossuperior é preservado deixando os rotadores inseridos.\n\n> **Na prova:** retinaculares mais importantes = ==laterais (posterossuperiores)==.",
+  "correta": "**Grupo lateral.**\n- Os retinaculares laterais, no retináculo posterossuperior, vêm do ramo profundo da circunflexa medial.\n- Dão as epifisárias laterais, que irrigam a maior parte da cabeça.",
   "incorretas": {
-   "B": "O grupo medial contribui de forma menor.",
-   "C": "\"Superiores\" descreve a posição do retináculo, mas o grupo assim nomeado na literatura é o lateral, e é dele que saem as epifisárias laterais.",
-   "D": "O grupo inferior tem participação pequena na irrigação da cabeça do adulto."
+   "B": "**Contribuição menor.**\n- O grupo medial participa, mas não domina a irrigação.",
+   "C": "**Descreve posição, não o grupo nomeado.**\n- O retináculo é posterossuperior, mas o grupo cobrado na literatura é o lateral.",
+   "D": "**Participação pequena.**\n- O grupo inferior pouco irriga a cabeça do adulto."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0170": {
-  "conceito": "Os dois ressaltos do quadril se separam pelo tendão e pelo relevo. O interno é o iliopsoas deslizando sobre a eminência iliopectínea (ou sobre a própria cabeça femoral) quando o quadril sai da flexão com abdução e rotação externa para a extensão com adução e rotação interna: é audível, sentido na virilha, muitas vezes percebido pelo próprio paciente. O externo é a banda iliotibial ou a borda anterior do glúteo máximo saltando sobre o trocanter maior: é visível e palpável de fora, reproduzido em pé.",
-  "correta": "Tendão do iliopsoas deslizando sobre a eminência iliopectínea.",
+  "conceito": "### Ressalto do quadril (coxa saltans)\n| Tipo | Estrutura | Relevo | Como se reproduz |\n|---|---|---|---|\n| externo | ==banda iliotibial== ou borda do glúteo máximo | trocânter maior | visível e palpável lateralmente; flexão e rotação em pé ou em decúbito lateral |\n| ==interno== | ==tendão do iliopsoas== | ==eminência iliopectínea== (ou cabeça femoral) | estalido **audível** na virilha ao estender o quadril a partir de flexão, abdução e rotação externa |\n| intra-articular | lesão labial, corpo livre, condral | dentro da articulação | clique com dor, travamento |\n\n### Diagnóstico\n- **Ultrassom dinâmico** mostra o tendão saltando.\n- Descartar causa intra-articular (artro-RM).\n\n### Tratamento\n- Maioria: alongamento, fisioterapia, infiltração da bursa do iliopsoas.\n- Refratários: **alongamento ou liberação** do tendão (artroscópica ou aberta); na externa, zetaplastia da banda iliotibial.\n\n> **Na prova:** ressalto interno = ==iliopsoas sobre a eminência iliopectínea==.",
+  "correta": "**Iliopsoas sobre a eminência iliopectínea.**\n- Ao sair da flexão com abdução e rotação externa, o tendão salta sobre o relevo ósseo.\n- Produz estalido audível na virilha.",
   "incorretas": {
-   "A": "O reto femoral não produz o ressalto interno, e exostose do trocanter maior não é o mecanismo descrito.",
-   "B": "A banda iliotibial sobre o trocanter maior é o ressalto EXTERNO.",
-   "D": "A bursa não desliza sobre o pequeno trocanter; o pequeno trocanter é a inserção do iliopsoas, e não o relevo sobre o qual ele salta."
+   "A": "**Mecanismo inexistente.**\n- O reto femoral não causa o ressalto interno.",
+   "B": "**Ressalto externo.**\n- A banda iliotibial sobre o trocânter maior é a forma externa.",
+   "D": "**Relevo errado.**\n- O trocânter menor é a inserção do iliopsoas, não o relevo do ressalto."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0171": {
-  "conceito": "As causas de osteonecrose se organizam por mecanismo, e é assim que a questão se resolve. Oclusão intravascular: doença falciforme, coagulopatias, hiper-homocisteinemia, bolhas de nitrogênio da doença descompressiva (caisson). Compressão extravascular: acúmulo de células repletas de lipídio na doença de Gaucher, hipertrofia dos adipócitos medulares pelo corticoide. Interrupção mecânica: fratura do colo, luxação. E toxicidade celular direta, em que a célula óssea morre por agressão ao próprio DNA: irradiação e quimioterapia.",
-  "correta": "Irradiação pélvica: a radiação mata diretamente osteócitos e células endoteliais, sem depender de obstrução vascular.",
+  "conceito": "### Mecanismos da osteonecrose da cabeça femoral\n| Mecanismo | Exemplos |\n|---|---|\n| interrupção mecânica | fratura do colo, luxação, epifisiólise instável |\n| oclusão intravascular | anemia falciforme, trombofilias, **hiper-homocisteinemia**, **doença de caisson** (bolhas de nitrogênio), embolia gordurosa |\n| compressão extravascular | **doença de Gaucher** (células de Gaucher na medula), hipertrofia de adipócitos por corticoide |\n| ==toxicidade celular direta== | ==irradiação==, quimioterapia, álcool (em parte) |\n\n### Irradiação\n- Lesa diretamente **osteócitos** e **endotélio**.\n- Efeito dose-dependente; pode aparecer anos depois da radioterapia pélvica.\n- Também causa fraturas por insuficiência.\n\n### Fatores de risco mais comuns na prática\n- **Corticoide** e **álcool** respondem pela maioria dos casos não traumáticos.\n\n> **Na prova:** toxicidade celular direta = ==irradiação==.",
+  "correta": "**Agressão direta à célula.**\n- A radiação mata osteócitos e células endoteliais sem depender de obstrução vascular.",
   "incorretas": {
-   "A": "A hiper-homocisteinemia age por trombose, ou seja, oclusão intravascular.",
-   "B": "A doença de caisson forma bolhas de nitrogênio que obstruem o vaso, também mecanismo intravascular.",
-   "C": "Na doença de Gaucher as células de Gaucher ocupam a medula e comprimem a microcirculação de fora: mecanismo extravascular."
+   "A": "**Trombose.**\n- A hiper-homocisteinemia causa oclusão intravascular.",
+   "B": "**Embolia gasosa.**\n- Na doença de caisson, bolhas de nitrogênio obstruem os vasos.",
+   "C": "**Compressão extravascular.**\n- As células de Gaucher ocupam a medula e comprimem a microcirculação."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0172": {
-  "alerta": "A literatura que conheço descreve dois grupos para a osteoporose transitória do quadril: gestantes no terceiro trimestre e homens de meia-idade, e, em número absoluto, a maioria das séries traz mais homens do que gestantes, em proporção próxima de três para um. Se o critério da pergunta for frequência, a alternativa C tem tanto respaldo quanto a A. O que é seguro é que esses dois são os grupos afetados; qual deles é o maior depende da série citada.",
-  "conceito": "A osteoporose transitória do quadril é um edema de medula óssea autolimitado, com dor de instalação relativamente rápida, claudicação e limitação da rotação, sem trauma que a explique. A radiografia inicial é normal e só depois de semanas mostra rarefação; quem faz o diagnóstico é a ressonância, com edema difuso de cabeça e colo, sem linha de delimitação e sem lesão subcondral focal, o que a separa da osteonecrose. Resolve sozinha em seis a doze meses, e o tratamento é proteção de carga e analgesia, para evitar a fratura do colo enquanto o osso está frágil.",
-  "correta": "A resposta oficial são as gestantes no terceiro trimestre, associação clássica da doença.",
+  "conceito": "### Osteoporose transitória do quadril\n- **Edema de medula óssea** autolimitado da cabeça e do colo.\n- Grupos clássicos: ==gestantes no terceiro trimestre== e **homens de meia-idade** (em número absoluto, muitas séries trazem mais homens).\n\n### Quadro\n- Dor de instalação relativamente rápida, sem trauma, claudicação, limitação de rotação.\n- Radiografia: normal no início; osteopenia após semanas.\n- RM: edema difuso e homogêneo, sem linha de demarcação nem lesão subcondral focal.\n\n### Diferencial com osteonecrose\n| Achado | Osteoporose transitória | Osteonecrose |\n|---|---|---|\n| edema | difuso, até o colo | focal, com linha serpiginosa |\n| evolução | resolução em 6 a 12 meses | tende a progredir |\n| lesão subcondral | ausente | presente nas fases avançadas |\n\n### Conduta\n- Proteção de carga e analgesia; evitar **fratura do colo**.\n- Pode recorrer em outra articulação: **osteoporose regional migratória**.\n\n> **Na prova:** o gabarito aponta ==gestantes no terceiro trimestre== (veja o alerta sobre os homens de meia-idade).",
+  "correta": "**Resposta oficial.**\n- A associação com o terceiro trimestre da gestação é a mais cobrada.\n- Os homens de meia-idade formam o outro grupo clássico (veja o alerta).",
   "incorretas": {
-   "B": "Mulheres acima de 45 anos fora da gestação não constituem o grupo descrito para essa condição.",
-   "C": "Homens de meia-idade são, na verdade, o outro grupo clássico da doença, veja o aviso acima.",
-   "D": "Homens jovens não são o perfil descrito; a faixa citada na literatura é a de meia-idade."
+   "B": "**Não é o grupo descrito.**\n- Mulheres acima de 45 anos fora da gestação não constituem o perfil típico.",
+   "C": "**Outro grupo clássico.**\n- Homens de meia-idade também são típicos e, em muitas séries, mais numerosos (veja o alerta).",
+   "D": "**Faixa etária errada.**\n- O perfil masculino é de meia-idade, não jovem."
   },
-  "geradoEm": "2026-09-06",
+  "alerta": "A literatura que conheço descreve dois grupos para a osteoporose transitória do quadril: gestantes no terceiro trimestre e homens de meia-idade, e, em número absoluto, a maioria das séries traz mais homens do que gestantes, em proporção próxima de três para um. Se o critério da pergunta for frequência, a alternativa C tem tanto respaldo quanto a A. O que é seguro é que esses dois são os grupos afetados; qual deles é o maior depende da série citada.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0173": {
-  "conceito": "O teste de Ober avalia a retração da banda iliotibial e do tensor da fáscia lata. Com o paciente em decúbito lateral, o examinador abduz e estende o quadril de cima, mantendo o joelho fletido, e depois solta: se a coxa não cai em adução, há retração. Fazer o teste com o quadril em posição neutra, em vez de estendido, isola melhor a banda iliotibial, e é essa a versão do enunciado. Retração da banda iliotibial se liga ao ressalto externo do quadril e à síndrome dolorosa peritrocantérica.",
-  "correta": "Contratura da banda iliotibial.",
+  "conceito": "### Teste de Ober\n- **Decúbito lateral**, lado testado para cima; o quadril de baixo e o joelho fletidos estabilizam a pelve.\n- O examinador **abduz e estende** o quadril (joelho fletido na versão clássica) e solta.\n- Normal: a coxa cai em adução.\n- ==Positivo: permanece abduzida== = retração da ==banda iliotibial== e do tensor da fáscia lata.\n\n### Variações\n- **Ober modificado:** joelho em extensão, reduz a interferência do quadríceps.\n- Posição neutra do quadril (sem flexão) garante que a banda fique posterior ao eixo e tensa.\n\n### Onde aparece\n- Síndrome do atrito da banda iliotibial (joelho lateral dos corredores).\n- Ressalto externo do quadril, síndrome dolorosa do grande trocânter.\n- Contratura em abdução (poliomielite, sequelas).\n\n### Outros testes de retração\n| Teste | Estrutura |\n|---|---|\n| Thomas | iliopsoas |\n| Ely | reto femoral |\n| Phelps | grácil |\n| ângulo poplíteo | isquiotibiais |\n\n> **Na prova:** Ober positivo = ==banda iliotibial==.",
+  "correta": "**Banda iliotibial.**\n- Se a coxa não cai em adução com o quadril em extensão ou neutro, a banda iliotibial e o tensor estão retraídos.",
   "incorretas": {
-   "A": "O glúteo máximo não é avaliado por essa manobra; sua retração se investiga por outros meios.",
-   "C": "O glúteo médio se avalia por força de abdução e marcha de Trendelenburg, e não pelo teste de Ober.",
-   "D": "O reto femoral é avaliado pelo teste de Ely, em decúbito ventral."
+   "A": "**Não avaliado pelo Ober.**\n- A retração do glúteo máximo não é testada por essa manobra.",
+   "C": "**Avaliado por força.**\n- O glúteo médio se avalia por abdução resistida e Trendelenburg.",
+   "D": "**Teste de Ely.**\n- O reto femoral é avaliado em decúbito ventral, fletindo o joelho."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0174": {
-  "conceito": "O desvio de carga depende de onde a haste transfere a força ao osso. Uma haste não cimentada com fixação DISTAL (cilíndrica, revestida em toda a extensão, travando na diáfise) leva a carga direto para baixo e deixa o fêmur proximal descarregado, e é ali que a reabsorção aparece, sobretudo no calcar (zona 7 de Gruen). A haste cimentada distribui a carga ao longo de todo o manto, e a de recapeamento preserva o colo e mantém o fêmur proximal carregado, é justamente esse o argumento biomecânico a favor dela.",
-  "correta": "Componentes não cimentados de fixação distal, que descarregam o fêmur proximal.",
+  "conceito": "### Onde a haste transfere a carga\n| Haste | Transferência | Stress shielding proximal |\n|---|---|---|\n| cimentada | ao longo de todo o manto | menor |\n| não cimentada, fixação proximal (metafisária) | metáfise | menor |\n| ==não cimentada, fixação distal (diafisária)== | ==diáfise== | ==maior== |\n| resurfacing | preserva o colo, carga no fêmur proximal | mínimo |\n\n### Por que a fixação distal descarrega o proximal\n- A haste **cilíndrica, com revestimento extenso**, trava na diáfise.\n- A carga desce pela haste e \"pula\" o fêmur proximal.\n- Reabsorção sobretudo no **calcar (zona 7 de Gruen)** e trocânter (zona 1).\n\n### Fatores que aumentam o desvio de carga\n- Haste de maior diâmetro, material mais rígido (cromo-cobalto), osso de baixa densidade pré-operatória.\n\n### Titânio\n- Módulo menor que o do cromo-cobalto: **menos** stress shielding.\n\n> **Na prova:** mais stress shielding = ==não cimentada de fixação distal==.",
+  "correta": "**Carga desviada para a diáfise.**\n- A haste que trava distalmente leva a força direto para baixo.\n- O fêmur proximal fica descarregado e reabsorve, sobretudo no calcar.",
   "incorretas": {
-   "A": "A haste cimentada transfere carga ao longo de todo o manto e produz menos desvio de carga proximal.",
-   "C": "O titânio tem módulo de elasticidade menor que o do cromo-cobalto, e por isso produz MENOS desvio de carga, não mais.",
-   "D": "O recapeamento é justamente o desenho que preserva a carga no fêmur proximal, por manter o colo."
+   "A": "**Distribui a carga.**\n- O manto de cimento reparte a solicitação e gera menos desvio.",
+   "C": "**Reduz o desvio.**\n- O titânio é menos rígido que o cromo-cobalto.",
+   "D": "**Preserva a carga proximal.**\n- O resurfacing mantém o colo carregado; é seu argumento biomecânico."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0175": {
-  "conceito": "O sinal radiográfico mostrado (o cruzamento das linhas da parede anterior e da parede posterior do acetábulo numa radiografia em AP de bacia bem centrada) é o clássico \"sinal do crossover\" (crossover sign), indicativo de RETROVERSÃO acetabular. Quando esse achado se apresenta de forma isolada, sem os demais sinais associados (como o sinal da parede posterior deficiente e o sinal da espinha isquiática proeminente, que caracterizariam uma retroversão mais global), convenciona-se chamar de retroversão VERDADEIRA (ou focal), geralmente por deficiência de cobertura na porção súpero-lateral do acetábulo.",
-  "correta": "B. O sinal radiográfico mostrado é indicativo de retroversão verdadeira do acetábulo.",
+  "alerta": "O sinal do cruzamento isolado pode refletir tanto retroversão verdadeira do acetábulo quanto apenas sobrecobertura anterior cranial. A distinção usa os sinais da parede posterior e da espinha isquiática, além da TC. O gabarito oficial adota retroversão verdadeira.",
+  "conceito": "### Sinal do cruzamento (crossover)\n- No AP bem centrado, a borda **anterior** do acetábulo cruza a **posterior** no terço cranial.\n- Normal: a borda anterior fica medial à posterior em todo o trajeto.\n\n### O que o cruzamento pode significar\n| Padrão | Achados | Nome |\n|---|---|---|\n| cruzamento com parede posterior normal | sobra de borda anterior cranial | sobrecobertura anterior cranial (\"retroversão cranial\") |\n| cruzamento + ==sinal da parede posterior== | anterior sobra e posterior falta | ==retroversão verdadeira== |\n| cruzamento + parede posterior + **espinha isquiática** | toda a hemipelve rodada | retroversão global (da hemipelve) |\n\n### Cuidados técnicos\n- Inclinação pélvica anterior e rotação da bacia criam **falso cruzamento**.\n- TC com medida da versão em vários níveis confirma.\n\n### Consequência\n- Impacto tipo **pincer** anterior; na osteotomia periacetabular, a correção é **reversão** (anteverter o fragmento).\n\n> **Na prova:** o gabarito associa o sinal a ==retroversão verdadeira== (veja o alerta).",
+  "correta": "**Resposta oficial.**\n- O cruzamento das paredes anterior e posterior indica retroversão acetabular.\n- O gabarito a classifica como retroversão verdadeira.",
   "incorretas": {
-   "A": "A sobrecobertura posterior isolada não é o achado classicamente associado ao cruzamento das linhas de parede anterior e posterior mostrado na figura.",
-   "C": "A sobrecobertura anterior isolada não corresponde ao sinal do crossover mostrado, que reflete uma relação anômala entre as paredes anterior e posterior do acetábulo.",
-   "D": "A retroversão global exige a presença de sinais adicionais (parede posterior deficiente, espinha isquiática proeminente) além do sinal do crossover isolado mostrado na figura."
+   "A": "**Sobrecobertura oposta.**\n- O cruzamento reflete excesso anterior, não posterior.",
+   "C": "**Possível, mas não a resposta.**\n- Parte dos cruzamentos isolados é só sobrecobertura anterior cranial, porém o gabarito não a adotou (veja o alerta).",
+   "D": "**Exige mais sinais.**\n- A retroversão global inclui a espinha isquiática proeminente e a parede posterior deficiente."
   },
-  "geradoEm": "2026-09-16",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0176": {
-  "conceito": "No impacto tipo came, a giba da transição cabeça-colo é empurrada para dentro do acetábulo a cada flexão e força a cartilagem anterossuperior para fora, na direção do labrum. O ponto que cede é a junção condrolabral (a linha onde a cartilagem articular encontra o labrum), e o dano típico é a separação nessa transição, com a cartilagem descolando do osso subcondral em lâmina (delaminação). Isso distingue o came do pinçamento, em que o labrum é esmagado diretamente entre as duas bordas ósseas e sofre degeneração intrassubstancial e ossificação da borda.",
-  "correta": "Junção condrolabral, na região anterossuperior, onde a cartilagem se separa do labrum.",
+  "conceito": "### Padrão de lesão por tipo de impacto\n| Tipo | Mecanismo | Lesão labral | Lesão condral |\n|---|---|---|---|\n| ==came== | a giba entra no acetábulo: ==cisalhamento== | ==separação na junção condrolabral== anterossuperior | **delaminação** (cartilagem descola do osso em lâmina) |\n| pincer | o colo bate na borda: esmagamento | degeneração intrassubstancial, ossificação da borda | estreita faixa periférica e **contragolpe posteroinferior** |\n\n### Por que a junção condrolabral\n- A giba empurra a cartilagem anterossuperior **para fora**, contra o lábio.\n- O ponto frágil é a linha onde cartilagem e lábio se encontram: ali ocorre a desinserção.\n- O lábio em si fica relativamente preservado no início.\n\n### Localização\n- Posição de **12 a 3 horas** (anterossuperior) na maioria.\n\n### Na artroscopia\n- Sinal da onda (wave sign) indica delaminação.\n- Tratamento: osteoplastia da giba, reparo labral, desbridamento ou microfratura conforme a lesão.\n\n> **Na prova:** lesão labral típica do came = ==junção condrolabral==.",
+  "correta": "**Junção condrolabral anterossuperior.**\n- A giba força a cartilagem contra o lábio, que se desinsere na junção entre os dois.",
   "incorretas": {
-   "B": "A face posteromedial não é a região de conflito do came, que é anterossuperior.",
-   "C": "A região posteroinferior é onde aparece a lesão em contragolpe, associada ao pinçamento.",
-   "D": "A junção osteocondral (entre cartilagem e osso subcondral) é onde ocorre a delaminação, mas a lesão LABRAL que a questão pede se dá na junção condrolabral."
+   "B": "**Fora da zona de conflito.**\n- O came atua na região anterossuperior.",
+   "C": "**Contragolpe do pincer.**\n- A lesão posteroinferior aparece no impacto tipo pincer.",
+   "D": "**Lesão condral, não labral.**\n- A delaminação ocorre na junção osteocondral, mas a questão pede a lesão labral."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0177": {
-  "conceito": "O acesso direto anterior (Hueter) usa o intervalo internervoso entre o tensor da fáscia lata, inervado pelo glúteo superior, e o sartório, inervado pelo femoral. É por ser um intervalo entre territórios nervosos diferentes que ele não desnerva músculo nenhum. Na camada profunda o plano continua entre o reto femoral (femoral) e o glúteo médio (glúteo superior). O nervo em risco é o cutâneo femoral lateral, que cruza logo medial à espinha ilíaca anterossuperior, motivo pelo qual a dissecção se faz do lado do tensor, e não do sartório.",
-  "correta": "Entre o tensor da fáscia lata e o sartório.",
+  "conceito": "### Acesso anterior direto (Hueter)\n- Intervalo superficial: ==tensor da fáscia lata== (glúteo superior) × ==sartório== (femoral).\n- Intervalo profundo: **reto femoral** × **glúteo médio**.\n- Por ser **internervoso**, não desnerva músculo algum.\n\n### Detalhes técnicos\n- Incisão cerca de 2 a 3 cm lateral e distal à EIAS, sobre o ventre do tensor.\n- Abrir a fáscia **sobre o tensor** (e não sobre o sartório) protege o ==nervo cutâneo femoral lateral==.\n- Ligar o **ramo ascendente da circunflexa lateral**.\n\n### Todos os acessos\n| Acesso | Intervalo superficial | Intervalo profundo | Internervoso? |\n|---|---|---|---|\n| anterior (Smith-Petersen, Hueter) | sartório × tensor da fáscia lata | reto femoral × glúteo médio | sim (femoral × glúteo superior) |\n| anterolateral (Watson-Jones) | tensor da fáscia lata × glúteo médio | | **não** (ambos glúteo superior) |\n| lateral direto (Hardinge) | divide glúteo médio e vasto lateral | | não |\n| posterior (Kocher-Langenbeck, Moore) | divide o glúteo máximo | rotadores curtos | não |\n| medial (Ludloff) | adutor longo e curto × grácil e adutor magno | | ramos do obturatório |\n\n> **Na prova:** via anterior direta = ==tensor da fáscia lata × sartório==.",
+  "correta": "**Tensor e sartório.**\n- O plano superficial passa entre o tensor (glúteo superior) e o sartório (femoral), um intervalo internervoso.",
   "incorretas": {
-   "A": "Reto femoral e tensor da fáscia lata não formam o intervalo superficial dessa via.",
-   "C": "Reto femoral e sartório são ambos do nervo femoral, não seria um intervalo internervoso.",
-   "D": "Mesma dupla da alternativa A, invertida, e igualmente não corresponde ao plano superficial."
+   "A": "**Não é o plano superficial.**\n- Reto femoral e tensor não formam o intervalo desta via.",
+   "C": "**Mesmo nervo.**\n- Reto femoral e sartório são ambos do femoral: não haveria intervalo internervoso.",
+   "D": "**Mesma dupla da A.**\n- Invertida, e igualmente fora do plano superficial."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0178": {
-  "alerta": "A associação com artrite reumatoide e osteomalácia é justamente o que caracteriza a protrusão acetabular SECUNDÁRIA, e a pelve de Otto é, por definição, a protrusão PRIMÁRIA, idiopática. Três outras questões deste mesmo acervo (`quadril-0021`, `quadril-0028` e `quadril-0120`) dizem isso com todas as letras. A alternativa que a literatura sustenta aqui é a B: a pelve de Otto é bilateral na quase totalidade dos casos. Se você marcou B, o erro não foi seu.",
-  "conceito": "Protrusão acetabular é o afundamento da cabeça femoral para dentro da pelve, com o fundo do acetábulo ultrapassando a linha ilioisquiática. Ela se divide em duas: a secundária, com causa identificável (artrite reumatoide, doença de Paget, osteomalácia, sequela de trauma ou de infecção), que costuma acompanhar o lado doente; e a primária ou idiopática, chamada pelve de Otto ou artrocatadise, que é bilateral, aparece em mulheres jovens, é progressiva e evolui para artrose precoce com perda marcada de rotação e abdução.",
-  "correta": "A resposta oficial é a associação com artrite reumatoide e osteomalácia.",
+  "conceito": "### Protrusão acetabular\n- Fundo do acetábulo **medial à linha ilioisquiática** (mais de 3 mm em homens e 6 mm em mulheres); ângulo centro-borda acima de 40°.\n\n| Forma | Causa | Perfil |\n|---|---|---|\n| **primária (pelve de Otto, artrocatadise)** | idiopática | mulheres jovens, **bilateral**, progressiva, artrose precoce |\n| **secundária** | ==artrite reumatoide==, espondilite, Paget, ==osteomalácia==, osteogênese imperfeita, Marfan, trauma, infecção | acompanha a doença de base |\n\n### Clínica\n- Perda precoce de **rotação e abdução**.\n- Dor, artrose precoce.\n\n### Na artroplastia\n- Restaurar o centro de rotação lateralizando o componente e **enxertando o fundo**.\n- Luxar a cabeça pode ser difícil: às vezes é preciso cortar o colo **in situ**.\n\n> **Na prova:** o gabarito oficial associa a pelve de Otto a ==artrite reumatoide/osteomalácia== (veja o alerta: isso descreve a forma secundária).",
+  "correta": "**Resposta oficial.**\n- O gabarito aceita a associação com artrite reumatoide e osteomalácia.\n- Essas doenças, porém, definem a protrusão secundária (veja o alerta).",
   "incorretas": {
-   "A": "A pelve de Otto é progressiva, é justamente a progressão que leva à artrose precoce.",
-   "B": "A bilateralidade é característica da pelve de Otto, e mesmo assim a alternativa foi dada como errada. Veja o aviso acima.",
-   "C": "Os sintomas começam no adolescente ou no adulto jovem, e não na velhice."
+   "A": "**É progressiva.**\n- A progressão leva à artrose precoce.",
+   "B": "**Característica real.**\n- A pelve de Otto é bilateral na maioria; a literatura sustenta esta alternativa (veja o alerta).",
+   "C": "**Começa cedo.**\n- Os sintomas aparecem no adolescente ou no adulto jovem."
   },
-  "geradoEm": "2026-09-06",
+  "alerta": "A associação com artrite reumatoide e osteomalácia é justamente o que caracteriza a protrusão acetabular SECUNDÁRIA, e a pelve de Otto é, por definição, a protrusão PRIMÁRIA, idiopática. Três outras questões deste mesmo acervo (`quadril-0021`, `quadril-0028` e `quadril-0120`) dizem isso com todas as letras. A alternativa que a literatura sustenta aqui é a B: a pelve de Otto é bilateral na quase totalidade dos casos. Se você marcou B, o erro não foi seu.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0183": {
-  "conceito": "A imagem mostra a face lateral e medial da coxa proximal, com o feixe vascular femoral visível. A seta mais lateral (próxima à origem, junto à espinha ilíaca ântero-superior) indica o músculo TENSOR DA FÁSCIA LATA; a seta mais medial, indicando a faixa muscular fina e mais medial de todas na coxa, corresponde ao músculo GRÁCIL.",
-  "correta": "C. Os músculos assinalados são, respectivamente, o tensor da fáscia lata e o grácil.",
+  "conceito": "### Os extremos da coxa proximal\n| Músculo | Posição | Origem | Inserção | Nervo |\n|---|---|---|---|---|\n| ==tensor da fáscia lata== | ==anterolateral== | EIAS e crista ilíaca anterior | trato iliotibial | glúteo superior |\n| ==grácil== | ==o mais medial==, fino e longo | corpo e ramo inferior do púbis | pata de ganso | obturatório |\n| adutor longo | medial, anterior | corpo do púbis | linha áspera | obturatório |\n| glúteo médio | região glútea | face externa do ílio | trocânter maior | glúteo superior |\n\n### Grácil\n- Único adutor que cruza o **joelho**.\n- Usado como **enxerto** (LCA, reconstruções ligamentares) e como **retalho** muscular livre.\n\n### Tensor da fáscia lata\n- Flexão, abdução e rotação interna do quadril.\n- Marco da via anterior (lateral ao intervalo) e anterolateral.\n\n> **Na prova:** lateral anterior = ==tensor da fáscia lata==; o mais medial e fino = ==grácil==.",
+  "correta": "**Tensor lateral, grácil medial.**\n- A seta lateral, junto à EIAS, marca o tensor da fáscia lata.\n- A medial, na faixa fina e longa, marca o grácil.",
   "incorretas": {
-   "A": "O glúteo médio situa-se na região glútea, mais posterior/superior, não na posição lateral proximal da coxa mostrada nesta imagem.",
-   "B": "A estrutura lateral mostrada corresponde ao tensor da fáscia lata, não ao glúteo médio, que fica em posição mais posterior.",
-   "D": "O músculo mais medial mostrado corresponde ao grácil (fino e longo), não ao adutor longo, que tem posição e volume diferentes."
+   "A": "**Seta lateral errada.**\n- O glúteo médio fica na região glútea, posterior e superior.",
+   "B": "**As duas erradas.**\n- A lateral é o tensor, e a medial é o grácil.",
+   "D": "**Seta medial errada.**\n- O adutor longo é mais volumoso e anterior; o mais medial e fino é o grácil."
   },
-  "geradoEm": "2026-09-16",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0185": {
-  "conceito": "Na exposição cirúrgica pela via anterior (Smith-Petersen), os dois músculos identificados nesta etapa mais profunda da dissecção correspondem ao TENSOR DA FÁSCIA LATA (A, mais lateral/distal na ferida) e ao GLÚTEO MÉDIO (B, mais proximal, próximo à crista ilíaca), estruturas encontradas ao se aprofundar a dissecção além do intervalo superficial clássico entre sartório e tensor da fáscia lata.",
-  "correta": "D. As estruturas assinaladas com as letras A e B correspondem, respectivamente, aos músculos tensor da fáscia lata e glúteo médio.",
+  "conceito": "### Via anterior (Smith-Petersen): camadas\n1. **Superficial:** intervalo entre sartório (medial) e ==tensor da fáscia lata== (lateral).\n2. **Profundo:** intervalo entre reto femoral (medial) e ==glúteo médio== (lateral).\n3. Cápsula anterior, após rebater a cabeça refletida do reto femoral.\n\n### Na exposição proximal\n- Ao seguir a crista ilíaca, desinsere-se o tensor e o **glúteo médio** da face externa do ílio (subperiosteal).\n- O **sartório** é rebatido medialmente com a EIAS (ou osteotomia da espinha).\n\n### Estruturas de risco\n- **Nervo cutâneo femoral lateral:** medial à EIAS.\n- **Ramo ascendente da circunflexa lateral:** no intervalo profundo.\n- **Nervo femoral:** medial ao reto e ao iliopsoas.\n\n> **Na prova:** A e B da imagem = ==tensor da fáscia lata e glúteo médio==.",
+  "correta": "**Tensor e glúteo médio.**\n- Na etapa mostrada, A é o tensor da fáscia lata e B o glúteo médio, junto à crista ilíaca.",
   "incorretas": {
-   "A": "O sartório faz parte do intervalo superficial da via anterior, mas não é a estrutura indicada nesta etapa mais profunda da dissecção mostrada.",
-   "B": "A ordem apresentada nesta alternativa (tensor da fáscia lata como A e sartório como B) não corresponde às estruturas assinaladas nesta imagem específica.",
-   "C": "A estrutura A corresponde ao tensor da fáscia lata, não ao glúteo médio, que corresponde à estrutura B nesta imagem."
+   "A": "**Sartório não assinalado.**\n- O sartório forma o intervalo superficial, mas não é a estrutura indicada nesta etapa.",
+   "B": "**B errada.**\n- A é o tensor, mas B é o glúteo médio, não o sartório.",
+   "C": "**Ordem trocada.**\n- A é o tensor, B é o glúteo médio."
   },
-  "geradoEm": "2026-09-16",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0188": {
-  "conceito": "O acesso de Watson-Jones é o anterolateral do quadril e trabalha no intervalo entre o tensor da fáscia lata e o glúteo médio. Ele tem uma peculiaridade importante: os dois músculos são inervados pelo nervo glúteo superior, de modo que este NÃO é um intervalo internervoso verdadeiro, e é por isso que a dissecção proximal precisa ser contida, sob pena de desnervar o tensor. A vantagem da via é abordar o quadril sem violar os abdutores posteriores nem os rotadores curtos, o que reduz o risco de luxação posterior.",
-  "correta": "Entre o glúteo médio e o tensor da fáscia lata.",
+  "conceito": "### Acesso anterolateral (Watson-Jones)\n- Intervalo: ==glúteo médio== × ==tensor da fáscia lata==.\n- **Não é internervoso**: os dois são inervados pelo **glúteo superior**.\n- A dissecção proximal deve ser contida para não desnervar o tensor.\n\n### Vantagens e limitações\n- Preserva rotadores curtos e cápsula posterior: **menos luxação posterior**.\n- Exposição do fêmur mais difícil; pode lesar o glúteo médio por afastamento.\n- Base das variantes minimamente invasivas anterolaterais (OCM).\n\n### Todos os acessos\n| Acesso | Intervalo superficial | Intervalo profundo | Internervoso? |\n|---|---|---|---|\n| anterior (Smith-Petersen, Hueter) | sartório × tensor da fáscia lata | reto femoral × glúteo médio | sim (femoral × glúteo superior) |\n| anterolateral (Watson-Jones) | tensor da fáscia lata × glúteo médio | | **não** (ambos glúteo superior) |\n| lateral direto (Hardinge) | divide glúteo médio e vasto lateral | | não |\n| posterior (Kocher-Langenbeck, Moore) | divide o glúteo máximo | rotadores curtos | não |\n| medial (Ludloff) | adutor longo e curto × grácil e adutor magno | | ramos do obturatório |\n\n> **Na prova:** Watson-Jones = ==glúteo médio × tensor da fáscia lata==.",
+  "correta": "**Glúteo médio e tensor.**\n- O Watson-Jones trabalha entre os dois.\n- Como ambos têm o mesmo nervo, não é intervalo internervoso verdadeiro.",
   "incorretas": {
-   "A": "O glúteo mínimo fica profundo ao médio; o plano de Watson-Jones é entre o médio e o tensor.",
-   "C": "O sartório pertence ao intervalo do acesso anterior (Smith-Petersen e Hueter), e não do anterolateral.",
-   "D": "Mesma razão: o sartório não faz parte deste plano."
+   "A": "**Plano profundo demais.**\n- O glúteo mínimo fica sob o médio; o intervalo é médio × tensor.",
+   "C": "**Via anterior.**\n- O sartório pertence ao intervalo do Smith-Petersen e do Hueter.",
+   "D": "**Mesma razão.**\n- O sartório não participa do acesso anterolateral."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 1"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0189": {
-  "conceito": "A crista ilíaca tem territórios nervosos diferentes na frente e atrás, e é isso que separa as duas retiradas de enxerto. Na crista ANTERIOR, os nervos em risco são o cutâneo femoral lateral, que passa logo medial e abaixo da espinha ilíaca anterossuperior, e os nervos ilioinguinal e ílio-hipogástrico, que cruzam a parede abdominal em direção à crista. Na crista POSTERIOR, quem corre risco são os nervos cluneais superiores, que cruzam a crista de 6 a 8 cm laterais à espinha ilíaca posterossuperior, daí a regra de não estender a osteotomia além desse ponto.",
-  "correta": "Cutâneo femoral lateral e ilioinguinal, os nervos do território anterior da crista.",
+  "conceito": "### Enxerto da crista ilíaca: nervos em risco\n| Local | Nervo | Regra |\n|---|---|---|\n| ==crista anterior== | ==cutâneo femoral lateral== | passa medial e abaixo da EIAS: iniciar a incisão **2 a 3 cm posterior** à espinha |\n| ==crista anterior== | ==ilioinguinal== e ílio-hipogástrico | cruzam a parede abdominal junto à crista; evitar dissecção medial excessiva |\n| crista posterior | **cluneais superiores** | cruzam a crista 6 a 8 cm lateral à EIPS |\n| incisura isquiática | glúteo superior, vasos glúteos | risco na retirada posterior profunda |\n\n### Outras complicações\n- Dor crônica no sítio doador (a mais comum).\n- **Fratura por avulsão da EIAS** (sartório), sobretudo se a retirada for próxima demais.\n- Hérnia através do defeito, hematoma, lesão ureteral (rara).\n\n> **Na prova:** crista anterior = ==cutâneo femoral lateral e ilioinguinal==; posterior = cluneais superiores.",
+  "correta": "**Território anterior.**\n- Na crista anterior correm o cutâneo femoral lateral, junto à EIAS, e o ilioinguinal, na parede abdominal.",
   "incorretas": {
-   "A": "O glúteo superior está mais profundo e posterior, e não é atingido na retirada anterior.",
-   "B": "Os cluneais superiores são o risco da retirada POSTERIOR, e não da anterior.",
-   "D": "O cutâneo femoral lateral está certo, mas os cluneais são da crista posterior."
+   "A": "**Glúteo superior é profundo e posterior.**\n- Não é atingido na retirada anterior.",
+   "B": "**Nervos da crista posterior.**\n- Os cluneais superiores são o risco na retirada posterior.",
+   "D": "**Metade certa.**\n- O cutâneo femoral lateral sim, mas os cluneais são da crista posterior."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 1"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0190": {
-  "conceito": "O corte transversal do terço distal da coxa mostra o conteúdo do canal dos adutores (canal de Hunter/canal adutor): nesse nível, o NERVO FEMORAL já terminou seu trajeto curto e deu origem ao nervo SAFENO (seu ramo sensitivo terminal, que acompanha o feixe vascular através do canal); a ARTÉRIA FEMORAL (que se torna poplítea ao atravessar o hiato dos adutores) também está presente. A veia safena magna, por sua vez, corre mais superficialmente, fora do canal adutor.",
-  "correta": "A. As estruturas assinaladas no canal adutor correspondem ao nervo safeno e à artéria femoral.",
+  "conceito": "### Canal dos adutores (Hunter)\n- Do ápice do triângulo femoral ao **hiato dos adutores**, no terço médio da coxa.\n- Limites:\n  - **anterolateral:** vasto medial;\n  - **posterior:** adutor longo e adutor magno;\n  - **teto (anteromedial):** sartório e membrana vastoadutora.\n\n### Conteúdo\n| Estrutura | Observação |\n|---|---|\n| ==artéria femoral== | torna-se poplítea ao cruzar o hiato |\n| veia femoral | posterior à artéria |\n| ==nervo safeno== | ramo sensitivo do femoral; cruza a artéria de lateral para medial |\n| nervo para o vasto medial | na porção proximal |\n\n### Fora do canal\n- **Veia safena magna:** subcutânea, na face medial.\n- **Nervo femoral:** divide-se logo abaixo do ligamento inguinal.\n\n### Clínica\n- **Bloqueio do canal adutor** na artroplastia do joelho: analgesia sensitiva com pouca perda motora do quadríceps.\n- Lesão do safeno: hipoestesia medial da perna.\n\n> **Na prova:** no canal adutor = ==nervo safeno e artéria femoral==.",
+  "correta": "**Safeno e artéria femoral.**\n- No canal adutor o componente nervoso já é o safeno, ramo terminal do femoral.\n- Acompanha a artéria femoral até o hiato dos adutores.",
   "incorretas": {
-   "B": "O nervo femoral propriamente dito termina mais proximalmente, antes do canal adutor; a estrutura nervosa presente nesse nível já é o nervo safeno, seu ramo terminal.",
-   "C": "A veia safena magna corre superficialmente (fora do canal adutor), não sendo uma das estruturas contidas nesse canal junto ao nervo safeno.",
-   "D": "Nesse nível, o componente nervoso já é o nervo safeno (não mais o nervo femoral), e a veia acompanhante dentro do canal é a veia femoral, não a veia safena magna."
+   "B": "**Femoral termina antes.**\n- O nervo femoral se divide logo abaixo do ligamento inguinal.",
+   "C": "**Safena magna é superficial.**\n- Corre no subcutâneo, fora do canal.",
+   "D": "**Os dois errados.**\n- O nervo é o safeno, e a veia do canal é a femoral."
   },
-  "geradoEm": "2026-09-16",
-  "conferido": false,
   "referencias": [
    "Netter, Atlas de Anatomia Humana, 7ª edição, Cap. 8"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0191": {
-  "conceito": "A imagem mostra uma faixa espessa e esbranquiçada na face lateral da coxa (o TRATO ILIOTIBIAL) que recebe, em sua porção proximal, as inserções tendíneas dos músculos GLÚTEO MÁXIMO (posteriormente) e TENSOR DA FÁSCIA LATA (anteriormente), formando uma estrutura tendinofascial que se estende até o tubérculo de Gerdy, na tíbia proximal.",
-  "correta": "D. A estrutura assinalada recebe as inserções dos músculos glúteo máximo e tensor da fáscia lata.",
+  "conceito": "### Trato iliotibial\n- Espessamento lateral da **fáscia lata**, da crista ilíaca ao **tubérculo de Gerdy**.\n- Recebe proximalmente:\n  - ==glúteo máximo==: cerca de três quartos das fibras superficiais, posteriormente;\n  - ==tensor da fáscia lata==: anteriormente.\n\n### Funções\n- Estabiliza a face lateral do quadril e do joelho.\n- Com o joelho em extensão, age anterior ao eixo; em flexão acima de 30°, passa posterior (base da síndrome do atrito).\n\n### Clínica\n| Condição | Relação |\n|---|---|\n| ressalto externo do quadril | trato salta sobre o trocânter |\n| síndrome do atrito da banda iliotibial | atrito sobre o epicôndilo lateral |\n| teste de Ober | retração |\n| fratura de Segond / lesão anterolateral | fibras profundas (Kaplan) |\n\n> **Na prova:** inserem-se no trato iliotibial = ==glúteo máximo e tensor da fáscia lata==.",
+  "correta": "**Glúteo máximo e tensor.**\n- O trato iliotibial recebe o glúteo máximo posteriormente e o tensor da fáscia lata anteriormente.",
   "incorretas": {
-   "A": "O vasto lateral fica profundamente ao trato iliotibial, mas não é um dos dois músculos que classicamente inserem suas fibras diretamente nele proximalmente, como o glúteo máximo e o tensor da fáscia lata.",
-   "B": "É o glúteo MÁXIMO (não o médio) que se insere no trato iliotibial, junto ao tensor da fáscia lata.",
-   "C": "É o tensor da fáscia lata (não o vasto lateral) o segundo músculo que se insere na porção proximal do trato iliotibial, junto ao glúteo máximo."
+   "A": "**Nenhum dos dois.**\n- O glúteo médio vai ao trocânter e o vasto lateral fica sob o trato.",
+   "B": "**Glúteo errado.**\n- É o glúteo máximo que se insere no trato, não o médio.",
+   "C": "**Segundo músculo errado.**\n- O vasto lateral fica profundo; o outro músculo é o tensor."
   },
-  "geradoEm": "2026-09-16",
-  "conferido": false,
   "referencias": [
    "Netter, Atlas de Anatomia Humana, 7ª edição, Cap. 8"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0192": {
   "alerta": "Esta questão aparece duas vezes no acervo com respostas oficiais diferentes: aqui o gabarito é a alternativa B, e na `quadril-0202`, com enunciado e alternativas idênticos, o gabarito é a A. As duas listas são compostas de fatores de risco reconhecidos (osteólise, soltura asséptica, sexo feminino, implante não cimentado e revisão prévia aparecem todos na literatura), de modo que não há como escolher uma e descartar a outra pelo conteúdo. Trate as duas como aceitáveis e não perca tempo procurando a diferença.",
