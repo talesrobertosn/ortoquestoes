@@ -3434,91 +3434,91 @@
   "conferido": false
  },
  "pediatria-0264": {
-  "conceito": "O alinhamento dos membros inferiores na infância segue uma trajetória fisiológica previsível: **varo** ao nascimento e nos primeiros 18-24 meses (associado ao início da marcha), progredindo para um alinhamento neutro por volta dos 2 anos e, em seguida, para um **valgo fisiológico**, que atinge seu **pico entre os 2 e os 4 anos de idade** (chegando a até 10-15° de valgo em alguns casos, dentro da normalidade), para então diminuir gradualmente ao longo da infância, estabilizando no alinhamento valgo discreto característico do adulto (cerca de 5-7°) por volta dos 6-8 anos.\n\nReconhecer essa curva fisiológica é fundamental para diferenciar o valgo (ou varo) que é apenas uma fase normal do desenvolvimento daquele que representa uma verdadeira deformidade patológica, evitando investigações e tratamentos desnecessários.",
-  "correta": "B. O valgo fisiológico máximo do joelho na criança ocorre entre os 2 e os 4 anos de idade.",
+  "conceito": "### Evolução angular fisiológica (Salenius)\n| Idade | Alinhamento |\n|---|---|\n| nascimento a 1,5-2 anos | ==varo== (máximo ao nascer) |\n| 1,5 a 2 anos | neutro |\n| ==3 a 4 anos== | ==valgo máximo== (cerca de 10 a 12°) |\n| 7 anos | valgo adulto (cerca de 5 a 7°) |\n\n### Sinais de patologia\n- Assimetria, deformidade fora da curva esperada, baixa estatura, dor, progressão.\n- Varo após 2 anos: Blount, raquitismo, displasias.\n- Valgo > 15° ou distância intermaleolar > 8 cm após 7 anos: investigar.\n\n### Tratamento do valgo patológico\n- ==Crescimento guiado== (placa em 8 medial) antes do fechamento fisário.\n\n> **Na prova:** valgo fisiológico máximo = ==por volta de 4 anos== (3 a 4).",
+  "correta": "**Dois a quatro anos.**\n- Valgo máximo por volta de 3 a 4 anos.\n- Estabiliza aos 7.",
   "incorretas": {
-   "A": "Entre zero e dois anos, o padrão predominante costuma ser de varo fisiológico (ou transição para o neutro), não o pico de valgo.",
-   "C": "Entre seis e oito anos, o alinhamento já está se estabilizando em direção ao padrão valgo discreto do adulto, após o pico de valgo já ter ocorrido.",
-   "D": "Entre oito e dez anos, o alinhamento já costuma estar próximo do padrão definitivo do adulto, bem depois do pico fisiológico de valgo."
+   "A": "**Varo fisiológico.**\n- Até cerca de 2 anos.",
+   "C": "**Diminuindo.**\n- Rumo ao adulto.",
+   "D": "**Adulto.**\n- Já estabilizado."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0265": {
-  "conceito": "A órtese de **Pavlik** é o tratamento de primeira linha para a displasia do desenvolvimento do quadril em lactentes, mantendo o quadril em flexão e abdução para favorecer a redução e a estabilização espontânea. Quando posicionada em **hiperflexão excessiva** (além do recomendado, geralmente acima de 100-110°), a complicação clássica é a **lesão do nervo femoral**, o nervo, que passa próximo à região inguinal, pode sofrer compressão mecânica direta pela posição extrema de flexão do quadril, manifestando-se clinicamente como fraqueza do quadríceps (dificuldade de extensão ativa do joelho).\n\nÉ importante diferenciar essa complicação da **necrose avascular da cabeça femoral**, que está classicamente associada não à hiperflexão, mas sim à **hiperabdução forçada** (que pode comprimir os vasos retinaculares responsáveis pela irrigação da cabeça femoral), os dois erros de posicionamento (hiperflexão e hiperabdução) causam complicações distintas.",
-  "correta": "B. A hiperflexão excessiva na órtese de Pavlik tem como principal complicação a lesão do nervo femoral.",
+  "conceito": "### Suspensório de Pavlik\n| Tira | Função |\n|---|---|\n| anterior | ==flexão== do quadril (100 a 110°), bloqueia a extensão |\n| posterior | ==limita a adução== (não força a abdução) |\n\n- Permite ==flexão e abdução ativas==; ==limita extensão e adução==.\n- Indicação: < 6 meses; controle por ultrassom.\n\n### Complicações\n| Complicação | Causa |\n|---|---|\n| ==necrose avascular== (lesão fisária) | ==abdução forçada== (> 60°) |\n| paralisia do nervo femoral | ==flexão excessiva== |\n| doença do Pavlik (erosão posterior do acetábulo) | quadril luxado mantido sem reduzir |\n| luxação inferior (obturatória) | flexão excessiva |\n\n- Sem redução em 3 a 4 semanas: suspender.\n\n> **Na prova:** Pavlik lesa a fise pela ==abdução forçada==; limita ==extensão e adução==.",
+  "correta": "**Lesão do nervo femoral.**\n- Hiperflexão estira o femoral.\n- Suspender até recuperar o quadríceps.",
   "incorretas": {
-   "A": "\"Doença de Pavlik\" não é uma complicação reconhecida, não corresponde a uma entidade clínica real associada ao uso da órtese.",
-   "C": "A luxação póstero-lateral não é a complicação classicamente associada à hiperflexão da órtese de Pavlik.",
-   "D": "A necrose avascular da cabeça femoral está classicamente associada à hiperabdução forçada, não à hiperflexão."
+   "A": "**Luxado mantido.**\n- Erosão posterior do acetábulo.",
+   "C": "**Não é a típica.**\n- Hiperflexão leva a luxação inferior.",
+   "D": "**Abdução forçada.**\n- Não a flexão."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0266": {
-  "conceito": "O quadro clínico da displasia do desenvolvimento do quadril muda conforme a idade da criança. No recém-nascido, os testes de Ortolani e Barlow (que avaliam a redutibilidade/luxabilidade do quadril) são os achados mais úteis. Porém, em uma criança já com **cerca de 2 anos de idade**, momento em que o quadril já está cronicamente luxado ou subluxado, e os testes provocativos de instabilidade perdem sua utilidade (o quadril já não é mais facilmente redutível ao exame), o achado clínico mais consistente e confiável passa a ser a **limitação da abdução** do quadril acometido, refletindo a contratura progressiva dos adutores e a alteração estrutural já estabelecida da articulação.\n\nA assimetria de pregas cutâneas e a discrepância de membros, embora possam estar presentes, são achados menos específicos e menos consistentes, a assimetria de pregas, inclusive, pode ocorrer em crianças com quadris normais, sendo um sinal de baixa especificidade isoladamente.",
-  "correta": "A. Aos dois anos de idade, o principal sinal da displasia do desenvolvimento do quadril é a limitação da abdução.",
+  "conceito": "### DDQ: exame conforme a idade\n| Idade | Achado útil |\n|---|---|\n| recém-nascido a 2-3 meses | ==Ortolani== (reduz) e ==Barlow== (luxa) |\n| ==após 3 meses== | ==limitação da abdução (Hart)==, Galeazzi, assimetria de pregas |\n| marcha | Trendelenburg, claudicação, hiperlordose (bilateral) |\n\n### Sinais\n| Sinal | O que é |\n|---|---|\n| ==Hart== | abdução limitada com quadril e joelho fletidos (adutores retraídos) |\n| Galeazzi | joelho mais baixo com quadris fletidos |\n| Peter-Bade | pregas assimétricas (pouco específico) |\n| Klisic | linha trocanter-EIAS passa abaixo do umbigo |\n\n### Imagem\n| Idade | Exame |\n|---|---|\n| < 4 a 6 meses | ultrassom (Graf) |\n| > 4 a 6 meses | radiografia (Hilgenreiner, Perkins, Shenton, índice acetabular) |\n\n> **Na prova:** DDQ aos 9 meses = ==sinal de Hart== (abdução limitada).",
+  "correta": "**Limitação da abdução.**\n- Sinal mais confiável após 3 meses.\n- Na marcha: claudicação e Trendelenburg.",
   "incorretas": {
-   "B": "O teste de Galeazzi é mais útil em casos unilaterais e reflete principalmente a discrepância de comprimento, sendo menos consistente como sinal isolado do que a limitação de abdução nessa idade.",
-   "C": "A assimetria de pregas cutâneas é um achado pouco específico, podendo estar presente mesmo em crianças com quadris normais.",
-   "D": "A discrepância de membros inferiores é um achado tardio e depende de a luxação ser unilateral, sendo menos consistente como sinal principal do que a limitação de abdução."
+   "B": "**Útil, mas falha no bilateral.**\n- Não o principal.",
+   "C": "**Pouco específico.**\n- Pregas assimétricas em normais.",
+   "D": "**Consequência.**\n- Menos confiável que a abdução."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0267": {
-  "conceito": "Na avaliação radiográfica clássica do quadril pediátrico, cinco referências se combinam: a **linha de Hilgenreiner** (horizontal, unindo as cartilagens trirradiadas), a **linha de Perkins** (vertical, perpendicular a Hilgenreiner, tangente à borda lateral do acetábulo), o **arco de Shenton** (curva contínua entre a borda medial do colo femoral e a borda superior do forame obturador), o **índice acetabular** (ângulo entre Hilgenreiner e a linha do teto acetabular) e o **quadrante ínfero-medial de Ombredanne** (o quadrante formado pelo cruzamento de Hilgenreiner e Perkins onde a cabeça femoral deve estar centrada normalmente).",
-  "correta": "C. As linhas correspondem, na sequência, a linha de Hilgenreiner, linha de Perkins, arco de Shenton, índice acetabular e quadrante ínfero-medial de Ombredanne.",
+  "conceito": "### Núcleo de ossificação da cabeça femoral\n- Aparece entre ==4 e 6 meses== (meninas antes).\n- Ao nascer, a cabeça é cartilaginosa: ==ultrassom (Graf)== é o exame.\n- Atraso do núcleo: sinal de DDQ (lado luxado ossifica depois), hipotireoidismo.\n\n### Imagem na DDQ\n| Idade | Exame | Parâmetros |\n|---|---|---|\n| < 4 a 6 meses | ultrassom | ângulo alfa (≥ 60° normal), beta |\n| > 4 a 6 meses | radiografia | Hilgenreiner, Perkins, Shenton, índice acetabular (< 30° ao nascer) |\n\n### Outros núcleos do quadril\n- Trocanter maior: 4 anos; trocanter menor: 12 anos; trirradiada fecha 14 a 16 anos.\n\n### Linhas no RX da DDQ\n| Linha | Descrição | Normal |\n|---|---|---|\n| ==Hilgenreiner== | horizontal pelas cartilagens trirradiadas | referência |\n| ==Perkins== | vertical pela borda lateral do acetábulo | |\n| quadrantes de ==Ombredanne== | cruzamento das duas | núcleo no ==ínfero-medial== |\n| ==arco de Shenton== | borda inferior do colo e do ramo púbico | contínuo |\n| ==índice acetabular== | Hilgenreiner × teto | < 30° ao nascer |\n\n> **Na prova:** sequência = ==Hilgenreiner, Perkins, Shenton, índice acetabular, quadrante ínfero-medial==",
+  "correta": "**Hilgenreiner, Perkins, Shenton, índice acetabular, ínfero-medial.**\n- Sequência das linhas da figura.\n- Núcleo normal no quadrante ínfero-medial.",
   "incorretas": {
-   "A": "Termos como \"linha de Kleine\", \"arco de Xington\" e \"índice de Wiberg\" não correspondem às referências radiográficas clássicas de triagem do quadril pediátrico representadas na imagem.",
-   "B": "Da mesma forma, \"linha de Kleine\" e \"índice femoral\" não correspondem à nomenclatura padronizada das linhas de Hilgenreiner e do índice acetabular mostradas.",
-   "D": "Essa alternativa inverte a ordem correta: a linha A (horizontal) é a linha de Hilgenreiner, e a linha B (vertical) é a linha de Perkins, não o contrário."
+   "A": "**Nomes errados.**\n- Kleine e Xington não se aplicam.",
+   "B": "**Klein é da epifisiólise.**\n- Sequência errada.",
+   "D": "**Ordem trocada.**\n- A é Hilgenreiner."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0268": {
-  "conceito": "Entre as osteocondroses do pé, cada uma tem um perfil epidemiológico característico: a doença de **Sever** (apofisite do calcâneo) acomete predominantemente meninos de 10 a 12 anos, com bilateralidade frequente (até 60%), sem sequelas e sem necessidade de cirurgia; a doença de **Köhler** (navicular) acomete meninos mais jovens (abaixo de 6 anos), podendo ser bilateral, também sem sequelas ou cirurgia; já a doença de **Freiberg** (cabeça do metatarso) acomete predominantemente meninas de 12 a 15 anos, raramente bilateral (menos de 10%), podendo deixar sequelas articulares e eventualmente exigir tratamento cirúrgico.",
-  "correta": "A. As osteocondrites correspondem, respectivamente, a 1: Sever, 2: Köhler e 3: Freiberg.",
+  "conceito": "### Osteocondroses e apofisites do pé\n| Epônimo | Local | Idade/perfil |\n|---|---|---|\n| ==Köhler== | ==navicular== | meninos de 4 a 7 anos; autolimitada |\n| ==Iselin== | ==base do 5º metatarso== (fibular curto) | adolescente ativo |\n| Freiberg | cabeça do 2º metatarso | adolescente feminina |\n| Sever | apófise do calcâneo (tendão calcâneo) | 8 a 12 anos, esportes |\n| Renander | sesamoide do hálux | |\n\n### Köhler\n- Navicular achatado, esclerótico, fragmentado.\n- Tratamento: bota gessada curta alivia a dor; reossifica sem sequela.\n\n### Iselin\n- Não confundir apófise (longitudinal) com fratura (transversa).\n\n> **Na prova:** Köhler = ==navicular==; Iselin = ==base do 5º metatarso==.",
+  "correta": "**Sever, Köhler e Freiberg.**\n- Calcâneo, navicular e cabeça do 2º MT.\n- Correspondência das características.",
   "incorretas": {
-   "B": "Essa combinação não corresponde aos perfis descritos: a idade mais jovem (\"OC2\", menos de 6 anos) é característica de Köhler, não de Freiberg, que acomete adolescentes mais velhas.",
-   "C": "Freiberg não corresponde ao perfil masculino de 10-12 anos (\"OC1\"), sendo uma doença predominantemente feminina e de idade mais avançada.",
-   "D": "Essa alternativa inverte Köhler e Sever: a faixa etária de 10-12 anos (\"OC1\") corresponde mais precisamente a Sever, e a faixa mais jovem, abaixo de 6 anos (\"OC2\"), a Köhler."
+   "B": "**Ordem trocada.**\n- Não corresponde.",
+   "C": "**Ordem trocada.**\n- Idem.",
+   "D": "**Ordem trocada.**\n- Idem."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0269": {
-  "conceito": "A doença de Legg-Calvé-Perthes evolui radiograficamente por quatro fases clássicas: necrose (inicial), **fragmentação**, reossificação e remodelação (fase residual). A fase de **fragmentação** (caracterizada radiograficamente por áreas de radiotransparência irregular intercaladas com áreas de maior densidade na epífise femoral) representa o processo biológico de **reabsorção do osso necrótico** pelos osteoclastos, à medida que a revascularização avança e o tecido ósseo morto vai sendo progressivamente removido antes da formação de osso novo (que caracterizará a fase seguinte, de reossificação).\n\nÉ justamente durante essa fase de fragmentação, com o osso subcondral mais fragilizado pela reabsorção ativa, que a cabeça femoral fica mais vulnerável à deformação mecânica sob carga, por isso é um período crítico para as decisões de contenção/proteção da cabeça femoral no tratamento.",
-  "correta": "A. O aspecto radiográfico de fragmentação na doença de Perthes representa a reabsorção do osso necrótico.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Fragmentação\n- Aspecto fragmentado = ==reabsorção do osso necrótico== por tecido de granulação vascular.\n- Cabeça mecanicamente frágil: colapso e extrusão possíveis.\n\n> **Na prova:** fragmentação = ==reabsorção do osso necrótico==",
+  "correta": "**Reabsorção de osso necrótico.**\n- Tecido vascular remove o osso morto.\n- Fase mais frágil da cabeça.",
   "incorretas": {
-   "B": "A remodelação da cabeça femoral corresponde à fase final do processo, não à fase de fragmentação.",
-   "C": "Microfraturas subcondrais são um achado mais associado à fase inicial de necrose, não ao aspecto de fragmentação em si.",
-   "D": "Cistos metafisários podem ocorrer em alguns casos, mas não é isso que caracteriza o aspecto radiográfico de fragmentação da epífise."
+   "B": "**Fase residual.**\n- Remodelação vem depois.",
+   "C": "**Fase inicial.**\n- Sinal de Salter-Thompson.",
+   "D": "**Achado associado.**\n- Não é o que a fragmentação representa."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0270": {
-  "conceito": "Entre os diversos fatores associados ao prognóstico da doença de Legg-Calvé-Perthes (grau de necrose, congruência articular, deformidade residual da cabeça femoral, bilateralidade), a **idade do paciente no início da doença** é classicamente considerada o fator prognóstico isolado mais importante e consistente: quanto mais velha a criança ao diagnóstico (sobretudo acima de 6-8 anos), menor o potencial de remodelação óssea durante o crescimento residual, e maior o risco de deformidade residual da cabeça femoral e artrose precoce na vida adulta, ao contrário de crianças mais novas, que têm mais tempo de crescimento pela frente para remodelar uma cabeça femoral inicialmente deformada.",
-  "correta": "A. A idade do paciente é considerada o melhor fator prognóstico isolado na doença de Legg-Calvé-Perthes.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Herring em detalhe\n| Grupo | Pilar lateral | Prognóstico |\n|---|---|---|\n| A | ==sem perda== de altura | bom |\n| B | ==perda < 50%== | bom < 8 anos |\n| B/C | pilar estreito ou pouco ossificado, ~50% | intermediário |\n| C | ==perda > 50%== | ruim |\n\n### Desfecho a longo prazo\n- Dois fatores dominam: ==idade de início== (> 8 anos pior) e ==deformidade final da cabeça== (Stulberg).\n\n### Stulberg (maturidade)\n| Classe | Cabeça | Prognóstico |\n|---|---|---|\n| I-II | esférica | sem artrose |\n| III-IV | ovoide/achatada, congruente assférica | artrose no adulto médio |\n| V | achatada incongruente | artrose precoce |\n\n> **Na prova:** desfecho do Perthes = ==idade e deformidade da cabeça==",
+  "correta": "**Idade.**\n- Início antes de 6 anos: melhor.\n- Após 8: pior.",
   "incorretas": {
-   "B": "A estatura não é um fator prognóstico classicamente reconhecido para a doença de Perthes.",
-   "C": "A obesidade não é o principal fator prognóstico da doença de Perthes, embora possa influenciar outros aspectos ortopédicos na infância.",
-   "D": "O gênero, isoladamente, não é considerado o principal fator prognóstico, apesar de a doença ser mais comum em meninos."
+   "B": "**Não é o principal.**\n- Estatura baixa acompanha.",
+   "C": "**Não é o principal.**\n- Obesidade não pesa tanto.",
+   "D": "**Menor peso.**\n- Idade vale mais."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0271": {
-  "conceito": "No pé torto congênito, os estudos histológicos e de imagem mostram alterações estruturais tanto na musculatura quanto nos tecidos periarticulares (cápsula, ligamentos e tendões) da perna e do pé. A musculatura, particularmente a da panturrilha (tríceps sural) e dos músculos posteromediais, tende a ser **hipotrófica** (menor volume muscular que o normal, por menor número e tamanho de fibras musculares), daí a panturrilha classicamente mais fina observada mesmo após correção bem-sucedida. Já os tecidos periarticulares (cápsula posterior e medial, ligamentos, tendões) estão **espessados e fibróticos**, contribuindo para a rigidez característica da deformidade.\n\nEssa combinação (músculos hipotróficos, porém tecidos capsuloligamentares espessados) explica tanto a fraqueza muscular residual quanto a rigidez característica observada mesmo em pés bem tratados.",
-  "correta": "B. No pé torto congênito, os músculos estão hipotrofiados e os tecidos periarticulares (ligamentos e cápsula) estão espessados.",
+  "conceito": "### Anatomia patológica do pé torto\n| Estrutura | Alteração |\n|---|---|\n| tálus | colo desviado ==medial e plantar==; corpo ==rodado externamente== no encaixe (não internamente) |\n| calcâneo | ==aduzido, invertido e em equino==; gira sob o tálus e se aproxima da fíbula |\n| navicular | ==medial==, junto ao maléolo medial (inversão extrema da talonavicular) |\n| cuboide | ==desviado medialmente== sobre o calcâneo |\n| partes moles | retração posteromedial (tibial posterior, FLH, FLD, tríceps, ligamentos) |\n\n### Deformidades (CAVE)\n- Cavo, Aduto, Varo, Equino.\n\n### Pirani e Dimeglio\n- Escores de gravidade para acompanhar o Ponseti.\n\n### Partes moles no pé torto\n- Músculos da perna ==hipotróficos== (panturrilha fina persiste no adulto).\n- Ligamentos e tendões mediais e posteriores ==espessados e fibróticos== (miofibroblastos, colágeno aumentado).\n\n> **Na prova:** músculos ==hipotrofiados== e ligamentos ==espessados==",
+  "correta": "**Hipotrofiados e espessados.**\n- Panturrilha fina.\n- Ligamentos fibróticos e espessados.",
   "incorretas": {
-   "A": "Os músculos não estão hipertrofiados no pé torto congênito, a musculatura tende a ser hipotrófica, com volume reduzido.",
-   "C": "Os tecidos periarticulares não estão delgados no pé torto congênito, eles tendem a estar espessados e fibróticos, contribuindo para a rigidez.",
-   "D": "Os tecidos periarticulares não estão delgados, estão espessados, embora a musculatura de fato esteja hipotrofiada."
+   "A": "**Músculos errados.**\n- Hipotróficos.",
+   "C": "**Duplamente errada.**\n- Nem hipertrofia nem delgados.",
+   "D": "**Ligamentos errados.**\n- Espessados."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0272": {
