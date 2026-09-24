@@ -6923,115 +6923,116 @@
   "conferido": false
  },
  "pediatria-0566": {
-  "conceito": "O sinal do \"OK\", em que o paciente forma um círculo pinçando a polpa do polegar e do indicador, depende da flexão das falanges distais de ambos os dedos, função motora do nervo interósseo anterior (ramo do nervo mediano) para o flexor longo do polegar e o flexor profundo do indicador.",
-  "correta": "C. O sinal de \"OK\" avalia a função do nervo interósseo anterior; sua lesão impede a flexão das falanges distais do polegar e do indicador, produzindo um sinal em pinça anormal.",
+  "conceito": "### Exame neurológico rápido na criança\n| Nervo | Teste |\n|---|---|\n| ==interósseo anterior== | ==sinal de OK== (FLP do polegar + FPD do indicador): pinça em O |\n| mediano (sensitivo) | polpa do indicador |\n| ulnar | cruzar os dedos (interósseos), sensibilidade do 5º |\n| radial / interósseo posterior | polegar para cima (extensão do polegar e dedos) |\n| musculocutâneo | flexão do cotovelo, sensibilidade lateral do antebraço |\n\n### Lesão típica\n- ==Interósseo anterior==: o nervo mais lesado na ==supracondiliana em extensão com desvio posterolateral==.\n- Sem alteração sensitiva: passa despercebido se não testado.\n\n> **Na prova:** sinal de OK = ==interósseo anterior==",
+  "correta": "**Interósseo anterior.**\n- FLP e FPD do indicador.\n- Motor puro, sem déficit sensitivo.",
   "incorretas": {
-   "A": "O nervo ulnar é avaliado por outros testes, como a abdução do dedo mínimo ou o sinal de Froment, não pelo sinal do \"OK\".",
-   "B": "O nervo musculocutâneo é sensitivo para a face lateral do antebraço e motor para os flexores do cotovelo, sem relação com o sinal do \"OK\".",
-   "D": "O nervo interósseo posterior é motor para os extensores do punho e dos dedos, avaliado pela extensão ativa, não pelo sinal do \"OK\"."
+   "A": "**Ulnar.**\n- Cruzar os dedos.",
+   "B": "**Musculocutâneo.**\n- Flexão do cotovelo.",
+   "D": "**Interósseo posterior.**\n- Extensão do polegar e dedos."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 9"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0567": {
-  "conceito": "A classificação de Torode e Zieg para fraturas do anel pélvico na criança separa lesões estáveis (avulsões e fraturas isoladas da asa ilíaca ou dos ramos púbicos) das instáveis, que envolvem rotura do anel com lesão associada da sínfise ou da articulação sacroilíaca.",
-  "correta": "C. Na versão modificada, consideram-se instáveis os tipos III-B (fratura do anel com lesão associada da sínfise ou sacroilíaca) e IV (fratura com dupla solução de continuidade do anel).",
+  "conceito": "### Torode e Zieg modificada (pelve pediátrica)\n| Tipo | Lesão | Estabilidade |\n|---|---|---|\n| I | avulsões (EIAS, EIAI, ísquio) | estável |\n| II | asa do ilíaco | estável |\n| IIIA | anel anterior simples (ramos púbicos, diástase) | estável |\n| ==IIIB== | anel ==anterior e posterior== | ==instável== segundo a banca |\n| ==IV== | ==instável== (ruptura completa do anel, acetábulo) | instável |\n\n### Particularidades da pelve infantil\n- Pelve elástica: absorve energia; ==lesões viscerais== e cranianas são frequentes mesmo sem grande desvio.\n- Mortalidade vem das lesões associadas.\n- Maioria tratada sem cirurgia; fixação nas instáveis e acetabulares com degrau.\n\n> **Na prova:** instáveis = ==IIIB e IV==",
+  "correta": "**IIIB e IV.**\n- Lesão do anel anterior e posterior.\n- Podem precisar de fixação.",
   "incorretas": {
-   "A": "Os tipos I (avulsão) e II (fratura da asa ilíaca) são as lesões mais estáveis dessa classificação, sem risco relevante de deslocamento.",
-   "B": "O tipo III-A, que envolve fratura isolada dos ramos púbicos sem lesão associada da sínfise ou sacroilíaca, é considerado estável.",
-   "D": "O tipo IV também é instável, mas o tipo III-B já se qualifica como instável, não sendo correto restringir a instabilidade só ao tipo IV."
+   "A": "**I e II.**\n- Avulsões e asa: estáveis.",
+   "B": "**IIIA.**\n- Anel anterior simples é estável.",
+   "D": "**Só IV.**\n- A modificação inclui o IIIB."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 22"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0568": {
-  "conceito": "A fratura juvenil de Tillaux ocorre numa fase de fechamento assimétrico da fise distal da tíbia (porções central e medial já fechadas, lateral ainda aberta): um trauma em rotação externa do pé traciona o ligamento tibiofibular anteroinferior, avulsionando o fragmento epifisário anterolateral.",
-  "correta": "C. O mecanismo é rotação lateral (externa) do pé, com avulsão do fragmento epifisário anterolateral por tração do ligamento tibiofibular anteroinferior.",
+  "conceito": "### Fraturas transicionais do tornozelo\n- Adolescente perto do fim do crescimento: a fise distal da tíbia fecha de **central → medial → lateral**.\n- A porção **anterolateral** fica aberta por último e é arrancada pelo ligamento tibiofibular anteroinferior em **rotação externa**.\n- **Tillaux:** fragmento anterolateral; traço vertical pela epífise e horizontal pela fise = ==Salter-Harris III==. Alguns autores a descrevem como SH IV.\n- **Triplanar:** traço em três planos, aspecto de SH III na incidência AP e SH II na perfil.\n- Degrau articular acima de 2 mm: redução e fixação.\n\n### Por que anterolateral\n- Porção ==anterolateral== da fise é a última a fechar.\n- ==Ligamento tibiofibular anteroinferior== arranca o fragmento em ==rotação externa==.\n- RX: fragmento epifisário anterolateral; TC mede o degrau.\n\n> **Na prova:** Tillaux = ==SH III, anterolateral==",
+  "correta": "**Rotação lateral, tibiofibular anteroinferior.**\n- Rotação externa do pé.\n- Ligamento arranca o fragmento anterolateral.",
   "incorretas": {
-   "A": "A rotação medial (interna) não é o mecanismo clássico dessa fratura.",
-   "B": "Além da rotação estar invertida, o ligamento tibiofibular posteroinferior não é o responsável pela avulsão característica dessa fratura.",
-   "D": "O mecanismo rotacional está correto (lateral), mas o ligamento envolvido é o anteroinferior, não o posteroinferior."
+   "A": "**Rotação medial.**\n- Mecanismo é externo.",
+   "B": "**Medial e posterior.**\n- Ambos errados.",
+   "D": "**Posteroinferior.**\n- Ligamento anterior."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 29"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0569": {
-  "conceito": "Nas epífises do tipo C (classificação de Trueta/Ogden), o suprimento sanguíneo da camada germinativa da fise depende exclusivamente de vasos epifisários que atravessam a superfície articular, sem contribuição metafisária relevante, por isso a separação entre epífise e metáfise nesses locais compromete diretamente essa nutrição, com risco de necrose avascular.",
-  "correta": "D. O fêmur proximal e o rádio proximal são os exemplos clássicos de epífises cujo suprimento sanguíneo da camada germinativa depende só do lado epifisário, ficando comprometido quando ocorre a separação epífise-metáfise.",
+  "conceito": "### Irrigação epifisária (Dale e Harris)\n| Tipo | Epífise | Consequência da separação |\n|---|---|---|\n| ==A== | ==quase toda recoberta por cartilagem articular==, vasos entram pelo pericôndrio junto à fise | ==vasos rompem== junto com a separação: camada germinativa isquêmica, necrose, parada |\n| B | vasos entram por áreas sem cartilagem | irrigação preservada |\n\n- Tipo A: ==fêmur proximal== e ==rádio proximal== (epífises intra-articulares).\n- Por isso Delbet I e fraturas do colo do rádio desviadas têm risco de necrose e parada fisária.\n\n> **Na prova:** separação compromete a camada germinativa = ==fêmur proximal e rádio proximal==",
+  "correta": "**Fêmur proximal e rádio proximal.**\n- Epífises intra-articulares.\n- Vasos entram junto à fise e rompem.",
   "incorretas": {
-   "A": "O fêmur distal e a tíbia proximal têm ampla vascularização perimetafisária que contribui para a camada germinativa, não dependendo só do lado epifisário.",
-   "B": "O úmero proximal recebe contribuição metafisária relevante; a tíbia distal também não é o exemplo clássico desse padrão de risco.",
-   "C": "O úmero proximal não é o exemplo clássico; o par clássico de risco é fêmur proximal e rádio proximal."
+   "A": "**Fêmur distal e tíbia proximal.**\n- Irrigação preservada na separação.",
+   "B": "**Úmero proximal e tíbia distal.**\n- Vasos de entrada preservados.",
+   "C": "**Rádio distal.**\n- Irrigação pelas partes moles preservada."
   },
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 27"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0570": {
-  "conceito": "A fise do fêmur distal tem contorno ondulado e maior área de superfície, o que a torna mais suscetível à formação de barra óssea (ponte fisária) após fraturas com componente intra-articular, como as Salter-Harris III e IV, favorecendo a parada de crescimento.",
-  "correta": "B. A região distal do fêmur é o local mais comumente associado à parada de crescimento fisário após fraturas Salter-Harris III e IV, por seu contorno fisário mais irregular.",
+  "conceito": "### Fisárias do fêmur distal\n- Adolescentes, trauma esportivo ou alta energia.\n- ==Valgo== no joelho: o ==ligamento colateral tibial (medial)==, inserido na ==epífise== femoral, transmite a força e arranca o côndilo medial (SH III) ou abre a fise.\n- Ligamentos inseridos na epífise: a ==fise cede antes== do ligamento (mais fraca que o ligamento na criança).\n\n### Por que temer\n- Fise distal do fêmur gera 70% do crescimento do fêmur e é ==ondulada==: ==parada de crescimento em 30 a 50%== mesmo com boa redução.\n- Redução anatômica e fixação (parafusos epifisários paralelos à fise no SH III).\n- Seguimento até a maturidade.\n\n> **Na prova:** parada de crescimento após SH III/IV mais comum = ==fêmur distal==",
+  "correta": "**Fêmur distal.**\n- Fise ondulada e muito ativa.\n- Parada mesmo com boa redução.",
   "incorretas": {
-   "A": "O maléolo medial pode sofrer parada de crescimento, mas com menor frequência do que a fise distal do fêmur.",
-   "C": "A fise proximal da tíbia é menos ondulada que a distal do fêmur, sendo menos frequentemente associada a essa complicação.",
-   "D": "A fise proximal do fêmur é mais associada a osteonecrose do que a barras fisárias por fraturas III/IV."
+   "A": "**Maléolo medial.**\n- Frequente, mas menos que o fêmur distal.",
+   "C": "**Tíbia proximal.**\n- Fraturas menos comuns.",
+   "D": "**Fêmur proximal.**\n- Raro nesse padrão."
   },
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 27"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0571": {
-  "conceito": "O núcleo de ossificação da tuberosidade maior do úmero surge tipicamente entre 1 e 3 anos de idade, mais tardiamente que o núcleo da cabeça umeral, essa cronologia ajuda a diferenciar variações normais de fraturas na radiografia da criança pequena.",
-  "correta": "A. O centro de ossificação da tuberosidade maior aparece entre 1 e 3 anos de idade.",
+  "conceito": "### Úmero proximal: núcleos de ossificação\n| Núcleo | Aparecimento |\n|---|---|\n| cabeça | 3 a 6 meses (às vezes ao nascer) |\n| ==tuberosidade maior== | ==1 a 3 anos== |\n| tuberosidade menor | 4 a 5 anos |\n| fusão dos três | 5 a 7 anos |\n| fusão com a diáfise | 14 a 17 anos (meninas antes) |\n\n### Armadilhas\n- Fise proximal em ==V invertido== (ápice posteromedial): pode parecer fratura na incidência oblíqua.\n- Núcleos separados antes da fusão simulam fragmentos.\n\n> **Na prova:** tuberosidade maior = ==1 a 3 anos==",
+  "correta": "**1 a 3 anos.**\n- Após o núcleo da cabeça.\n- Pode simular fragmento.",
   "incorretas": {
-   "B": "Esse intervalo é mais tardio do que o observado habitualmente para o aparecimento desse núcleo.",
-   "C": "Esse intervalo também é mais tardio do que o esperado.",
-   "D": "Esse intervalo é bem mais tardio do que o real aparecimento do núcleo da tuberosidade maior."
+   "B": "**4 a 5 anos.**\n- Tuberosidade menor.",
+   "C": "**6 a 7 anos.**\n- Núcleos já fundidos.",
+   "D": "**8 a 9 anos.**\n- Tarde."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 18"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0572": {
-  "conceito": "Nas luxações posteriores do cotovelo em crianças, a força em valgo e extensão que desloca a ulna e o rádio posteriormente também traciona o ligamento colateral medial, favorecendo a avulsão do epicôndilo medial, por isso essa é a fratura associada mais frequente.",
-  "correta": "C. A fratura do epicôndilo medial é a lesão associada mais frequente às luxações posteriores do cotovelo na criança.",
+  "conceito": "### Luxação do cotovelo na criança\n- Pico aos 10 a 15 anos; ==posterolateral== é a mais comum.\n- Associações: ==avulsão do epicôndilo medial== (até 50%, pode encarcerar), colo do rádio, processo coronoide.\n\n### Lesões nervosas\n| Nervo | Frequência | Detalhe |\n|---|---|---|\n| ==ulnar== | o mais lesado | estiramento; epicôndilo medial encarcerado |\n| mediano | raro | ==encarceramento== na articulação (Matev): explorar se piora após redução |\n| ==radial== | ==raro== | neuropraxia, ==resolve== espontaneamente |\n\n### Conduta\n- Redução suave; testar estabilidade e checar epicôndilo medial.\n- Imobilização curta (1 a 2 semanas) e mobilização precoce.\n\n### Epicôndilo medial\n- Associado em ==até 50%== das luxações do cotovelo na criança.\n- Pode ==encarcerar== na articulação após a redução (checar RX: congruência, ausência do núcleo no lugar).\n\n> **Na prova:** fratura mais associada à luxação = ==epicôndilo medial==",
+  "correta": "**Epicôndilo medial.**\n- Até 50% das luxações.\n- Pode encarcerar na articulação.",
   "incorretas": {
-   "A": "A fratura do colo do rádio é mais associada a mecanismos de queda com carga axial isolada, sendo menos frequente nas luxações posteriores.",
-   "B": "A fratura da cabeça do rádio é mais típica do adulto; na criança, o epicôndilo medial é a associação clássica.",
-   "D": "A fratura do processo coronóide é mais característica de instabilidade póstero-medial associada, não sendo a associação mais frequente na criança."
+   "A": "**Colo do rádio.**\n- Associação menos frequente.",
+   "B": "**Cabeça do rádio.**\n- Cartilaginosa; o colo cede antes.",
+   "D": "**Coronoide.**\n- Menos comum que no adulto."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 15"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0574": {
-  "conceito": "Na deformidade em baioneta reversa da fratura do rádio distal na criança, o fragmento proximal se desloca para a face volar, ficando anterior aos tecidos moles, nessa posição, a extremidade proximal fica sujeita a comprimir ou lacerar os tendões flexores que cruzam essa região.",
-  "correta": "B. O fragmento proximal, deslocado volarmente na baioneta reversa, frequentemente lesiona os tendões flexores adjacentes.",
+  "conceito": "### Onde as fises mais se lesam\n- ==Rádio distal==: a lesão fisária mais comum (cerca de 30–50% das lesões fisárias).\n- Em seguida: falanges, tíbia distal e úmero distal.\n- O padrão mais frequente é o Salter-Harris II.\n\n### Fratura completa do rádio distal com cavalgamento\n- Baioneta: fragmentos sobrepostos, encurtamento; remodela bem < 10 anos.\n- Espícula do fragmento proximal pode ==perfurar partes moles==: pele (exposição), ==tendões flexores==, nervo mediano (síndrome do túnel do carpo aguda).\n- Redução difícil: interposição de pronador quadrado, periósteo, tendões.\n\n> **Na prova:** baioneta reversa = fragmento proximal lesa ==tendões flexores== (veja o alerta)",
+  "correta": "**Tendões flexores.**\n- Espícula volar do fragmento proximal.\n- Pode interpor-se e impedir a redução.",
   "incorretas": {
-   "A": "O nervo mediano pode ser eventualmente afetado, mas a lesão mais frequentemente descrita nessa deformidade específica é a dos tendões flexores.",
-   "C": "Os tendões extensores ficam na face dorsal, oposta ao deslocamento volar do fragmento na baioneta reversa.",
-   "D": "O nervo radial sensitivo é dorsolateral, distante do trajeto do fragmento deslocado volarmente."
+   "A": "**Mediano.**\n- Também em risco, mas não é o gabarito.",
+   "C": "**Extensores.**\n- Dorsais.",
+   "D": "**Radial sensitivo.**\n- Lateral, pouco exposto."
   },
+  "alerta": "O termo baioneta reversa não é padronizado; a estrutura em risco depende de o fragmento proximal ficar volar ou dorsal. A banca indicou os tendões flexores.",
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 8"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0576": {
