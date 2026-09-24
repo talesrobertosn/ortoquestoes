@@ -75,15 +75,27 @@ Deno.serve(async (req) => {
         const reembolso = await fetch(`https://api.mercadopago.com/v1/payments/${encodeURIComponent(assinatura.ultima_cobranca_id)}/refunds`, {
           method: 'POST',
           headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json', 'X-Idempotency-Key': `garantia-${assinatura.id}-${assinatura.ultima_cobranca_id}` },
+          body: '{}',
         })
         if (!reembolso.ok) {
           const resposta = await reembolso.json().catch(() => ({})) as { error?: unknown; cause?: Array<{ code?: unknown }> }
           const codigo = typeof resposta.error === 'string' && /^[a-z0-9_-]{1,80}$/i.test(resposta.error) ? resposta.error : null
-          const causa = resposta.cause?.find((item) => typeof item.code === 'string' && /^[a-z0-9_-]{1,80}$/i.test(item.code))?.code
-          const detalhe = Deno.env.get('MERCADO_PAGO_AMBIENTE') === 'teste'
-            ? `_http_${reembolso.status}${codigo ? `_erro_${codigo}` : ''}${causa ? `_causa_${causa}` : ''}` : ''
-          return json({ erro: `reembolso_nao_confirmado${detalhe}` }, 502, req)
+          const causa = Array.isArray(resposta.cause)
+            ? resposta.cause.find((item) => typeof item.code === 'string' && /^[a-z0-9_-]{1,80}$/i.test(item.code))?.code
+            : null
+          console.error('mercado_pago_reembolso_recusado', { http_status: reembolso.status, codigo, causa })
+          return json({ erro: 'O Mercado Pago não confirmou o reembolso. Sua assinatura não foi alterada; tente novamente mais tarde.' }, 502, req)
         }
+        const resposta = await reembolso.json().catch(() => ({})) as { payment_id?: number | string }
+        if (resposta.payment_id && String(resposta.payment_id) !== assinatura.ultima_cobranca_id) {
+          console.error('mercado_pago_reembolso_pagamento_divergente')
+          return json({ erro: 'Não foi possível confirmar o reembolso da cobrança desta assinatura.' }, 502, req)
+        }
+      }
+      const pagamentoAposReembolso = await consultarPagamento(token, assinatura.ultima_cobranca_id)
+      if (String(pagamentoAposReembolso.id) !== assinatura.ultima_cobranca_id || pagamentoAposReembolso.status !== 'refunded') {
+        console.error('mercado_pago_reembolso_aguardando_confirmacao')
+        return json({ erro: 'O reembolso ainda não foi confirmado pelo Mercado Pago. Sua assinatura não foi alterada.' }, 502, req)
       }
     } else if (assinatura.status !== 'ativa') {
       return json({ erro: 'plano_ativo_nao_encontrado' }, 404, req)
