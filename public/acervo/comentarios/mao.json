@@ -2046,12 +2046,12 @@
   "conferido": false
  },
  "mao-0178": {
-  "conceito": "A infiltração de corticoide no túnel do carpo pode produzir alívio rápido em casos leves ou moderados sem atrofia tenar, embora a recorrência em médio prazo seja comum. Sexo, idade, duração dos sintomas e gravidade eletrofisiológica influenciam a resposta.",
-  "correta": "**C, homens acima de 40 anos**, grupo associado à melhora mais rápida na análise específica cobrada pela questão.",
+  "conceito": "### Infiltração com corticoide no túnel do carpo\n- Indicada em casos **leves a moderados**, sem atrofia tenar nem déficit motor.\n- Alívio rápido em muitos pacientes; **recorrência** comum em meses (muitos acabam operando).\n- Também tem valor **diagnóstico e prognóstico**: boa resposta à infiltração prediz bom resultado cirúrgico.\n\n### Preditores de resposta (variam entre estudos)\n| Favorável | Desfavorável |\n|---|---|\n| sintomas de curta duração | sintomas acima de 1 ano |\n| ENMG leve | ENMG grave, perda axonal |\n| sem atrofia | atrofia tenar, parestesia constante |\n| perfil demográfico do estudo citado: ==homens acima de 40 anos== | diabetes, doença sistêmica |\n\n### Técnica\n- Agulha ulnar ao palmar longo, na prega proximal do punho, angulada distalmente; evitar injeção no nervo.\n\n### Indicação cirúrgica\n- Atrofia, fraqueza, falha do conservador, ENMG grave.\n\n> **Na prova:** resposta mais rápida no gabarito = ==homens acima de 40 anos== (veja o alerta).",
+  "correta": "**Resposta oficial.**\n- Na análise cobrada, homens acima de 40 anos melhoraram mais rápido.\n- O dado não deve decidir sozinho a indicação.",
   "incorretas": {
-   "A": "Mulheres acima de 40 anos formam o grupo epidemiologicamente mais numeroso, mas frequência da doença não equivale à resposta mais rápida à infiltração.",
-   "B": "Sexo feminino e idade abaixo de 40 anos não formaram o grupo de resposta mais rápida no estudo usado pelo item.",
-   "D": "O sexo masculino está correto, mas a faixa etária indicada pelo gabarito é acima, não abaixo, de 40 anos."
+   "A": "**Grupo mais numeroso.**\n- Mulheres acima de 40 anos são as mais acometidas, o que não significa resposta mais rápida.",
+   "B": "**Não é o grupo descrito.**\n- Mulheres jovens não formaram o grupo de resposta mais rápida.",
+   "D": "**Idade errada.**\n- O gabarito aponta homens acima de 40 anos."
   },
   "alerta": "Esse preditor demográfico deriva de uma análise específica e não deve decidir isoladamente a indicação. Atrofia tenar, déficit motor ou neuropatia grave exigem avaliação para descompressão cirúrgica.",
   "referencias": [
@@ -2059,196 +2059,187 @@
    "Atroshi I et al. Extended follow-up of local steroid injection for carpal tunnel syndrome. JAMA Netw Open. 2021;4:e213075.",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 77"
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "baixo",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0179": {
-  "conceito": "Michon classificou a tenossinovite infecciosa dos flexores pelo que se encontra ao abrir a bainha, e a conduta segue diretamente do achado. Estágio I: líquido seroso aumentado, sinóvia apenas inflamada. Estágio II: líquido turvo ou francamente purulento, sinóvia granulomatosa. Estágio III: necrose séptica do tendão, da bainha e das polias.",
-  "correta": "Necrose séptica encontrada no intraoperatório é estágio III, e o tratamento é o desbridamento extenso, com amputação como possibilidade real. A razão é dura mas objetiva: tendão necrosado não volta a deslizar, a bainha destruída não contém mais nada, e insistir em preservar um dedo sem função põe em risco a mão inteira e a vida do paciente numa infecção que se espalha. A decisão se toma na mesa, com a bainha aberta, não antes, pela radiografia ou pelo exame externo.",
+  "conceito": "### Classificação de Michon (tenossinovite infecciosa dos flexores)\n| Estágio | Achado intraoperatório | Tratamento |\n|---|---|---|\n| I | líquido **seroso** aumentado, sinovite | irrigação por cateter |\n| II | líquido **purulento**, sinóvia granulomatosa | irrigação ± desbridamento limitado |\n| ==III== | ==necrose séptica de tendão, bainha e polias== | ==desbridamento extenso, possível amputação== |\n\n### Por que o estágio III é tão grave\n- Tendão necrosado não recupera deslizamento.\n- Infecção pode progredir para bursas e espaço de Parona (**ferradura**).\n\n### Fatores de mau prognóstico\n- Idade acima de 43 anos, diabetes, doença vascular, pus subcutâneo, isquemia digital, polimicrobiana (Dailiana).\n\n> **Na prova:** necrose séptica = ==Michon III, desbridamento extenso e possível amputação==.",
+  "correta": "**Michon III.**\n- Necrose de tendão e bainha exige desbridamento extenso.\n- A amputação é possibilidade real para salvar a mão.",
   "incorretas": {
-   "A": "O estágio II tem líquido purulento mas sinóvia ainda viável, e é tratado com irrigação, com ou sem desbridamento limitado. Não é o quadro descrito, que já traz necrose.",
-   "B": "O estágio está certo e a conduta não. Irrigar por cateter uma bainha com tendão necrosado deixa dentro do dedo justamente o tecido morto que alimenta a infecção.",
-   "D": "A classificação de Michon tem três estágios. Não existe estágio IV."
+   "A": "**Estágio II.**\n- Pus com sinóvia viável se trata com irrigação.",
+   "B": "**Conduta errada.**\n- Irrigar deixa o tecido necrótico dentro do dedo.",
+   "D": "**Não existe.**\n- Michon tem três estágios."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 79"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0180": {
-  "conceito": "Na duplicação do polegar (a polidactilia pré-axial) nenhum dos dois polegares costuma ser normal: os dois são estreitos, com tendões e ligamentos divididos entre eles. Há duas estratégias: ressecar o menos desenvolvido e reconstruir o outro, ou combinar os dois num só.",
-  "correta": "A técnica de Bilhaut-Cloquet é a de combinação: ressecam-se as metades centrais dos dois polegares e unem-se as metades externas, aproveitando osso, unha e partes moles de ambos para construir um polegar de largura adequada. Ela é reservada aos casos em que os dois polegares têm tamanho parecido e nenhum, sozinho, daria um polegar aceitável. O preço é conhecido: risco de deformidade e sulco na unha, e de rigidez ou desalinhamento da articulação reconstruída, motivo pelo qual a ressecção com reconstrução continua sendo a escolha mais frequente quando um dos polegares é claramente melhor.",
+  "conceito": "### Duplicação do polegar: estratégias\n| Técnica | Indicação |\n|---|---|\n| ressecção do polegar menor + reconstrução (colateral, abdutor curto) | ==a mais usada== (um polegar claramente melhor, em geral o ulnar) |\n| ==Bilhaut-Cloquet== | ==dois polegares semelhantes e hipoplásicos==: ressecção das metades centrais e ==união das metades externas== |\n| on-top plasty | um tem boa porção distal, o outro boa base |\n\n### Bilhaut-Cloquet\n- Vantagem: polegar de **largura** adequada, osso e unha de ambos.\n- Desvantagens: **sulco ou deformidade da unha**, rigidez articular, desvio angular, lesão fisária.\n- Modificações (Baek, Tonkin) poupam a articulação ou a unha.\n\n### Outras condições citadas\n| Condição | Tratamento |\n|---|---|\n| dimelia ulnar (mão em espelho) | policização de um dedo, ressecção dos excedentes |\n| acrossindactilia | liberação |\n| polegar trifalângico | ressecção da falange delta, osteotomias |\n\n> **Na prova:** Bilhaut-Cloquet = ==duplicação do polegar==.",
+  "correta": "**Duplicação do polegar.**\n- A técnica une as metades externas de dois polegares semelhantes.\n- Constrói um polegar de largura adequada.",
   "incorretas": {
-   "A": "A dimelia ulnar, ou mão em espelho, é duplicação do lado ulnar com ausência do polegar, e o tratamento é a policização de um dos dedos, não a combinação de dois polegares.",
-   "B": "A acrossindactilia é a sindactilia fenestrada da síndrome das bandas de constrição, tratada por liberação e reconstrução comissural.",
-   "C": "O polegar trifalângico tem uma falange extra e o tratamento envolve ressecção da falange supranumerária ou osteotomia de correção, problema de número de segmentos, não de duplicação de raios."
+   "A": "**Mão em espelho.**\n- A dimelia ulnar não tem polegar e se trata com policização.",
+   "B": "**Bandas de constrição.**\n- A acrossindactilia se trata com liberação.",
+   "C": "**Falange extra.**\n- O polegar trifalângico não é duplicação de raios."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 12"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0181": {
-  "conceito": "O ligamento transverso do carpo é o teto do túnel. Ele se prende, no lado radial, ao tubérculo do escafoide e ao trapézio e, no ulnar, ao pisiforme e ao hâmulo do hamato, ou seja, ele cobre a fileira distal do carpo e o pisiforme, e não os metacarpos nem o rádio.",
-  "correta": "A área correspondente é a letra C, sobre os ossos do carpo. Saber isso tem uso prático imediato: é essa a faixa que precisa ser completamente seccionada na liberação, e liberação incompleta (que quase sempre significa ter parado antes da borda distal do ligamento) é a principal causa de sintoma persistente depois da cirurgia. A incidência radiográfica do túnel do carpo, com o punho em hiperextensão, é a que mostra bem o hâmulo do hamato e o pisiforme, as duas âncoras ulnares.",
+  "conceito": "### Ligamento transverso do carpo (retináculo dos flexores)\n- **Inserções radiais:** tubérculo do escafoide, trapézio.\n- **Inserções ulnares:** pisiforme, hâmulo do hamato.\n- Cobre a região da ==fileira distal do carpo== (letra C na figura), com cerca de 3 a 4 cm de comprimento.\n\n### Liberação do túnel\n- Seccionar **todo** o ligamento, incluindo a borda distal (até a gordura palmar sobre o arco superficial).\n- Estender proximalmente à **fáscia antebraquial** distal.\n- Liberação incompleta distal: causa principal de **sintoma persistente**.\n\n### Regiões da figura\n| Letra | Região |\n|---|---|\n| A | diáfises dos metacarpos (fáscia palmar, arcos) |\n| B | bases dos metacarpos, CMC (distal ao ligamento) |\n| ==C== | ==ossos do carpo: ligamento transverso== |\n| D | rádio e ulna distais (fáscia antebraquial) |\n\n### Incidência do túnel do carpo\n- Punho em hiperextensão: mostra hâmulo do hamato e pisiforme (fratura do hâmulo).\n\n> **Na prova:** ligamento transverso = área ==C== (sobre o carpo).",
+  "correta": "**Área C.**\n- O ligamento se prende a escafoide, trapézio, pisiforme e hamato.\n- Cobre a região do carpo, não metacarpos nem rádio.",
   "incorretas": {
-   "A": "A faixa A corresponde às diáfises dos metacarpos, bem distal ao ligamento. Ali o que existe é a fáscia palmar e os arcos vasculares, não o teto do túnel.",
-   "B": "A faixa B fica sobre as bases dos metacarpos e as articulações carpometacarpianas, distal à borda do ligamento, e é exatamente onde a dissecção precisa chegar para não deixar liberação incompleta.",
-   "D": "A faixa D está sobre o rádio e a ulna distais, proximal ao ligamento. Ali passa a fáscia antebraquial, cuja secção também faz parte da liberação, mas que não é o ligamento transverso."
+   "A": "**Metacarpos.**\n- A faixa A é distal ao ligamento.",
+   "B": "**Bases dos metacarpos.**\n- Fica além da borda distal do ligamento.",
+   "D": "**Rádio e ulna.**\n- É a fáscia antebraquial, proximal."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 77"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0182": {
-  "conceito": "Na lesão por avulsão em anel o dedo é puxado por uma argola que não cede. As estruturas falham em ordem, da menos para a mais resistente à tração, e é essa ordem que explica o aspecto do dedo ao chegar ao pronto-socorro.",
-  "correta": "O tendão é a última estrutura a ceder. A pele e o subcutâneo saem primeiro, descolando-se em luva; os vasos, de parede fina e presos ao longo do trajeto, rompem em seguida, o que explica por que a lesão pode parecer pequena por fora e já ser isquêmica; os nervos estiram e rompem; o esqueleto falha por desarticulação ou fratura; e o flexor profundo, que é a estrutura mais resistente, costuma ser arrancado por último, muitas vezes ao longo de todo o seu comprimento, saindo pela palma junto com o segmento avulsionado. É por isso que a classificação de Urbaniak organiza a lesão pelo comprometimento circulatório e pela integridade esquelética, e por isso a avaliação vascular vem antes de tudo, mesmo com a pele aparentemente íntegra.",
+  "conceito": "### Lesão por avulsão em anel (ring avulsion)\n- Ordem de falha (menos → mais resistente):\n  1. **pele** e subcutâneo (desenluvamento);\n  2. **vasos** (isquemia mesmo com pele razoável);\n  3. nervos;\n  4. osso / articulação (desarticulação);\n  5. ==tendão== (FPD, muitas vezes arrancado com o ventre).\n\n### Classificação de Urbaniak\n| Classe | Achado | Conduta |\n|---|---|---|\n| I | circulação adequada | tratamento de partes moles e osso |\n| II | circulação inadequada | reparo vascular microcirúrgico |\n| III | desenluvamento completo ou amputação | geralmente **amputação** (reimplante em casos selecionados) |\n\n### Classificação de Kay\n- I a IV: acrescenta lesão arterial e venosa, fratura e amputação completa.\n\n### Prevenção\n- Retirar anéis em trabalhos de risco; cortar o anel em edema da mão.\n\n> **Na prova:** última estrutura a ceder = ==tendão==.",
+  "correta": "**Tendão.**\n- O FPD é a estrutura mais resistente e cede por último.\n- Muitas vezes é arrancado com o segmento, saindo pela palma.",
   "incorretas": {
-   "A": "O osso cede antes do tendão, em geral por desarticulação na interfalângica distal ou proximal.",
-   "B": "A pele é a primeira a sair, e o descolamento em luva é a marca da lesão.",
-   "C": "Os vasos rompem cedo, e é isso que torna a lesão mais grave do que parece: o dedo pode estar avascular com cobertura cutânea ainda razoável."
+   "A": "**Cede antes.**\n- O osso falha por desarticulação antes do tendão.",
+   "B": "**A primeira.**\n- A pele sai primeiro, em luva.",
+   "C": "**Cede cedo.**\n- Os vasos rompem antes, por isso o dedo pode estar isquêmico."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 19"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0183": {
-  "conceito": "Na botoeira a banda central rompe e as bandas laterais escorregam para volar do eixo da interfalângica proximal. As técnicas cirúrgicas se dividem por qual estrutura usam para refazer a extensão: as próprias bandas laterais, um retalho do tendão extensor ou a soltura do tendão terminal.",
-  "correta": "A sequência das figuras (bandas laterais soltas, mobilizadas para dorsal e suturadas entre si na linha média sobre a interfalângica proximal) é a técnica de Aiache. A lógica é aproveitar o que já existe: as bandas laterais continuam íntegras e apenas se deslocaram, então recolocá-las no dorso e uni-las reconstrói a extensão sem enxerto e sem tecido de fora.",
+  "conceito": "### Técnicas para botoeira crônica\n| Técnica | Princípio |\n|---|---|\n| ==Aiache== | ==bandas laterais mobilizadas para dorsal e suturadas entre si na linha média== sobre a IFP |\n| Snow | retalho do extensor rebatido distalmente para cobrir a falha da banda central |\n| Matev | bandas laterais cortadas em comprimentos diferentes: uma reconstrói a banda central, a outra o extensor terminal |\n| Littler / Eaton (Fowler) | **tenotomia do extensor terminal** (distal ao ligamento triangular): corrige a hiperextensão da IFD |\n| Curtis | liberação sequencial em etapas |\n| enxerto (palmar longo) | reconstrução da banda central |\n\n### Pré-requisito\n- **IFP passivamente móvel** (reabilitação e órteses seriadas antes).\n\n### Botoeira aguda\n- Conservador: IFP em extensão, IFD livre por 6 semanas.\n\n> **Na prova:** bandas laterais unidas no dorso da IFP = ==Aiache==.",
+  "correta": "**Aiache.**\n- As bandas laterais são levadas ao dorso e suturadas na linha média.\n- Reconstrói a extensão sem enxerto.",
   "incorretas": {
-   "A": "A técnica de Snow usa um retalho do tendão extensor rebatido distalmente a partir da porção proximal, para cobrir a falha da banda central. Não é mobilização de bandas laterais.",
-   "B": "A técnica de Matev encurta uma banda lateral e alonga a outra em degrau, transferindo uma delas para reconstruir a banda central. Também mexe nas bandas, mas por outro desenho, com cortes escalonados de comprimentos diferentes.",
-   "D": "Littler dá nome à tenotomia do tendão terminal, que trata a hiperextensão da interfalângica distal na botoeira crônica, e à reconstrução do ligamento retinacular oblíquo. Nenhuma das duas corresponde ao desenho mostrado."
+   "A": "**Retalho do extensor.**\n- Snow rebate um retalho do tendão extensor.",
+   "B": "**Cortes escalonados.**\n- Matev alonga e encurta as bandas de forma diferente.",
+   "D": "**Tenotomia distal.**\n- Littler dá nome à tenotomia do extensor terminal e ao SORL."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 66"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0184": {
-  "conceito": "Na paralisia crônica do nervo torácico longo o serrátil anterior não segura mais a escápula contra o tórax, e ela alada. Passados um a dois anos sem recuperação, a reinervação deixa de ser opção e a saída é transferir um músculo que puxe o ângulo inferior da escápula para frente.",
-  "correta": "A transferência do peitoral maior para o ângulo inferior da escápula é a que reúne os melhores resultados. O músculo tem a direção de tração certa (de trás para a frente e para lateral, exatamente o vetor do serrátil), força suficiente e comprimento adequado, ainda que quase sempre precise de um enxerto de fáscia lata ou de tendão para alcançar. É a operação de referência para a escápula alada por lesão do torácico longo.",
+  "conceito": "### Escápula alada\n| Causa | Nervo | Músculo | Escápula |\n|---|---|---|---|\n| ==torácico longo== | C5 a C7 | ==serrátil anterior== | **medial** (ângulo inferior para medial) |\n| acessório espinal | XI par | trapézio | lateral, ombro caído |\n| dorsal da escápula | C5 | romboides | lateral, discreta |\n\n### Lesão do torácico longo\n- Tração (esportes, mochila), compressão, iatrogênica (mastectomia, drenagem torácica), Parsonage-Turner.\n- Observação por 12 a 24 meses (muitas recuperam).\n\n### Transferências na paralisia crônica\n| Paralisia | Transferência de escolha |\n|---|---|\n| ==serrátil (torácico longo)== | ==peitoral maior (cabeça esternal) ao ângulo inferior da escápula==, geralmente com enxerto de fáscia lata |\n| trapézio (acessório) | **Eden-Lange**: levantador da escápula e romboides lateralizados (ou trapézio inferior) |\n\n- Salvamento: **escapulotoracodese**.\n\n> **Na prova:** paralisia crônica do torácico longo = transferência do ==peitoral maior==.",
+  "correta": "**Peitoral maior.**\n- A cabeça esternal ao ângulo inferior da escápula reproduz o vetor do serrátil.\n- É a transferência de referência, geralmente com enxerto.",
   "incorretas": {
-   "A": "Os romboides puxam a escápula para cima e para medial, direção oposta à que se precisa. Transferi-los agravaria a rotação errada.",
-   "B": "O grande dorsal tem inserção e vetor ligados ao úmero, não à escápula, e é doador de outras reconstruções, sobretudo do manguito posterossuperior.",
-   "D": "A transferência do trapézio inferior é a operação de escolha na escápula alada por lesão do nervo acessório, com paralisia do trapézio, problema diferente, com a escápula alada para o lado oposto."
+   "A": "**Vetor oposto.**\n- Os romboides puxam a escápula para cima e medial.",
+   "B": "**Vetor umeral.**\n- O grande dorsal é doador para o manguito.",
+   "D": "**Lesão do acessório.**\n- O trapézio inferior trata a paralisia do trapézio."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0185": {
-  "conceito": "A zona I dos flexores fica distal à inserção do flexor superficial, então o único tendão em jogo ali é o flexor profundo. A avulsão fechada dele tem nome próprio: dedo de jérsei, pelo gesto de agarrar a camisa do adversário.",
-  "correta": "O tendão é o flexor profundo e o dedo mais acometido é o anelar. A razão é anatômica e mecânica: em extensão máxima o anelar projeta-se mais que os vizinhos, recebendo sozinho a força da tração; e a inserção dele tem menos resistência que a dos outros dedos. O achado clínico é a perda isolada da flexão da interfalângica distal, que passa despercebida se o examinador não bloquear a proximal e testar dedo por dedo.",
+  "conceito": "### Avulsão do flexor profundo (dedo de jérsei)\n- Zona I: só o ==flexor profundo== está presente (distal à inserção do FSD).\n- Dedo mais acometido: ==anelar== (cerca de 75%).\n\n### Por que o anelar\n- Em extensão, a polpa do anelar se projeta mais ao fechar a mão: recebe a tração.\n- Inserção do FPD do anelar é mais fraca.\n- FPD do anelar ligado ao do médio e mínimo por ventre comum.\n\n### Exame\n- Bloquear a IFP e pedir flexão da IFD: ausente.\n- Palpar o coto retraído (palma ou IFP).\n\n### Leddy e Packer\n| Tipo | Retração |\n|---|---|\n| I | até a palma (reparo em 7 a 10 dias) |\n| II | até a IFP |\n| III | fragmento ósseo retido na A4 |\n| IV | fragmento + tendão avulsionado dele |\n\n### Polegar\n- Não tem flexor profundo: o flexor é o **flexor longo do polegar**.\n\n> **Na prova:** avulsão na zona I = ==flexor profundo do anelar==.",
+  "correta": "**FPD do anelar.**\n- Na zona I só existe o flexor profundo.\n- O anelar é o dedo mais atingido no dedo de jérsei.",
   "incorretas": {
-   "A": "O polegar não tem flexor profundo: quem o flete é o flexor longo do polegar. A alternativa nomeia um tendão que não existe.",
-   "C": "O flexor superficial se insere na falange média e não alcança a zona I. Além disso, a avulsão típica não é dele.",
-   "D": "O médio pode ser acometido, mas com frequência bem menor que o anelar."
+   "A": "**Não existe.**\n- O polegar tem flexor longo, não profundo.",
+   "C": "**Não alcança a zona I.**\n- O FSD insere-se na falange média.",
+   "D": "**Menos frequente.**\n- O médio é acometido bem menos que o anelar."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0186": {
-  "conceito": "Escalada indoor é o mecanismo clássico de duas lesões que se confundem: a ruptura da polia A2, típica da pegada em crimp, e a avulsão do flexor profundo. O que as separa no consultório é o exame, na lesão de polia há dor localizada e efeito corda de arco à flexão resistida, com a flexão da interfalângica distal preservada; na avulsão, a interfalângica distal simplesmente não flete.",
-  "correta": "O caso é de avulsão do flexor profundo do dedo, e a ressonância confirma a descontinuidade com retração do tendão. O tipo 2 de Leddy e Packer é aquele em que o coto retrai até o nível da interfalângica proximal e para ali, retido pela vínculo longo, que permanece íntegro e continua nutrindo o tendão. É por isso que o tipo 2 tolera um intervalo maior até a cirurgia que o tipo 1, mas dez dias já é tempo para o tendão começar a aderir, e o reparo não deve esperar mais.",
+  "conceito": "### Escalada e lesões do dedo\n| Lesão | Mecanismo | Clínica |\n|---|---|---|\n| ruptura da polia A2 (A3, A4) | pegada em **crimp** | dor na falange proximal, **corda de arco** à flexão resistida; IFD **flete** |\n| ==avulsão do FPD== | tração com IFD fletida | ==IFD não flete== |\n\n### Classificação de Leddy e Packer\n| Tipo | Retração | Vínculas | Reparo |\n|---|---|---|---|\n| I | palma | ambas rompidas | 7 a 10 dias |\n| ==II== | ==até a IFP== | ==vínculo longo íntegro== | ==até cerca de 6 semanas== (idealmente precoce) |\n| III | fragmento grande retido na A4 | íntegras | fixar fragmento |\n| IV | fragmento + tendão solto dele | | fixar e reinserir |\n\n### Lesões de polia (Schöffl)\n- Graus I a IV, da distensão à ruptura múltipla; A2 isolada completa costuma ser conservadora (anel de proteção), múltiplas: reconstrução.\n\n> **Na prova:** escalador com IFD sem flexão e coto na IFP = ==FPD tipo 2==.",
+  "correta": "**FPD, tipo 2.**\n- O coto retraiu até a IFP, preso pelo vínculo longo.\n- Tolera algum atraso, mas 10 dias já pedem reparo.",
   "incorretas": {
-   "B": "Lesão de polia A2 é a hipótese concorrente e o diagnóstico mais frequente em escalador, mas ela não produz dificuldade de fletir o dedo: produz dor sobre a falange proximal, edema e o tendão arqueando visivelmente à flexão contra resistência. E o efeito corda de arco não se classifica em tipos como a alternativa sugere.",
-   "C": "O tipo 3 tem um fragmento ósseo grande retido na polia A4, e o tendão nem chega a retrair além da falange média. O achado radiográfico ou de ressonância seria o fragmento, não um coto retraído.",
-   "D": "Lesão simultânea dos dois flexores não é o quadro da avulsão fechada por tração: nela o superficial permanece íntegro, e é justamente por isso que a interfalângica proximal continua fletindo."
+   "B": "**A IFD fletiria.**\n- A lesão de polia dá dor e corda de arco, sem perda de flexão; e não tem esses tipos.",
+   "C": "**Fragmento na A4.**\n- O tipo 3 tem fragmento ósseo grande, sem retração do tendão.",
+   "D": "**FSD íntegro.**\n- Na avulsão fechada o superficial fica preservado."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0187": {
-  "conceito": "As técnicas de sutura tendínea se distinguem pelo desenho do fio dentro do tendão e por quantos fios cruzam a linha de reparo, é esse número que determina a resistência e, portanto, se cabe mobilização precoce.",
-  "correta": "O desenho em X cruzado ao longo de cada coto é a sutura de Bunnell. Ela é resistente, mas tem o defeito que a tirou do uso corrente: o trajeto em zigue-zague estrangula a circulação intratendínea, comprometendo a nutrição do coto justamente na área que precisa cicatrizar. Por isso as técnicas modernas preferem desenhos que agarrem o tendão sem cercá-lo, e o Bunnell hoje aparece mais em reparos de tendões extensores, em transferências e em situações em que a vascularização do coto importa menos.",
+  "conceito": "### Técnicas de sutura tendínea\n| Técnica | Desenho | Uso |\n|---|---|---|\n| ==Bunnell== | ==X cruzados sucessivos== em cada coto | resistente, mas **estrangula a irrigação**; hoje em extensores e transferências |\n| Kessler modificado (Pennington) | alças em ângulo reto com pegas bloqueantes, 2 fios | clássico dos flexores |\n| Strickland, cruciate (Adelaide), Tang, MGH | 4 a 6 fios cruzando o foco | permitem movimento ativo precoce |\n| ==Pulvertaft== | ==entrelaçamento== de um tendão através do outro | transferências (calibres diferentes) |\n| Mason-Allen | horizontal + vertical | manguito rotador (tendão-osso) |\n| Krackow | pegas bloqueantes laterais em série | tendões grossos, ligamentos |\n\n### Princípios de um bom reparo\n- Número de fios cruzando o foco, pegas de cerca de 1 cm, bloqueio, epitendínea contínua, preservar a vascularização dorsal.\n\n> **Na prova:** X cruzados ao longo do coto = ==Bunnell==.",
+  "correta": "**Bunnell.**\n- O desenho em X cruzado ao longo de cada coto é a sutura de Bunnell.\n- É resistente, mas estrangula a circulação intratendínea.",
   "incorretas": {
-   "A": "A técnica de Pulvertaft é a de entrelaçamento, usada quando dois tendões de calibres diferentes precisam ser unidos, típica de transferências tendíneas. O desenho é de um tendão passando por dentro do outro, não de X sucessivos.",
-   "B": "O Kessler modificado tem alças em ângulo reto que agarram o tendão em quatro pontos, com o nó dentro do foco. O desenho é retangular, não cruzado.",
-   "C": "A técnica de Mason-Allen é usada no reparo do manguito rotador, unindo tendão a osso, e combina um ponto horizontal com um vertical. Contexto e desenho diferentes."
+   "A": "**Entrelaçamento.**\n- Pulvertaft une tendões de calibres diferentes nas transferências.",
+   "B": "**Desenho retangular.**\n- O Kessler usa alças em ângulo reto.",
+   "C": "**Manguito rotador.**\n- Mason-Allen une tendão a osso no ombro."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0188": {
-  "conceito": "O lumbrical nasce no tendão do flexor profundo e se insere na banda lateral do aparelho extensor. Essa origem móvel é o que torna possível um fenômeno paradoxal: se o flexor profundo perde a continuidade distal, contraí-lo deixa de fletir o dedo e passa a puxar a origem do lumbrical para proximal, e o lumbrical, então, estende as interfalângicas.",
-  "correta": "Extensão paradoxal das interfalângicas à tentativa de flexão vigorosa é o dedo lumbrical plus. As causas são todas variações do mesmo problema: secção do flexor profundo distal à origem do lumbrical, amputação distal com o tendão livre, ou enxerto tendíneo longo demais e frouxo. O tratamento é liberar o lumbrical, e o diagnóstico é feito pelo simples pedido de fechar a mão com força, o dedo abre em vez de fechar.",
+  "conceito": "### Lumbrical plus × quadriga\n| Condição | Mecanismo | Clínica |\n|---|---|---|\n| ==lumbrical plus== | FPD sem continuidade distal (secção distal ao lumbrical, amputação, **enxerto longo e frouxo**): o FPD puxa o lumbrical | ==extensão paradoxal das IF== ao tentar fletir com força |\n| quadriga | FPD **encurtado** (avanço > 1 cm, enxerto curto, sutura ao extensor no coto) | **vizinhos não fecham** a mão |\n| aderência flexora | cicatriz | flexão ativa limitada, extensão passiva limitada |\n| garra (perda lumbrical) | paralisia intrínseca | MF hiperestendida, IF fletidas |\n\n### Tratamento do lumbrical plus\n- **Secção do lumbrical** (liberação).\n\n### Tratamento da quadriga\n- Liberar o FPD encurtado (tenólise, tenotomia do coto).\n\n> **Na prova:** extensão paradoxal na flexão vigorosa = ==lumbrical plus==.",
+  "correta": "**Lumbrical plus.**\n- Sem continuidade distal do FPD, a contração puxa o lumbrical.\n- O lumbrical estende as IF paradoxalmente.",
   "incorretas": {
-   "A": "Lumbrical minus não é um termo usado para esse quadro. O que existe é a perda de função lumbrical, que produz garra, e não extensão paradoxal ativa.",
-   "B": "O efeito quadriga é o oposto: limitação da flexão dos outros dedos porque um flexor profundo foi encurtado. Nele o dedo não estende paradoxalmente, os vizinhos é que deixam de fechar.",
-   "D": "Aderências tendíneas limitam o deslizamento e restringem tanto a flexão ativa quanto a extensão passiva, mas não produzem movimento na direção contrária à que se pediu."
+   "A": "**Termo sem uso.**\n- A perda do lumbrical dá garra, não extensão paradoxal.",
+   "B": "**Quadro oposto.**\n- Na quadriga os vizinhos deixam de fletir.",
+   "D": "**Limitam, não invertem.**\n- Aderências restringem o movimento sem produzir extensão."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0189": {
-  "conceito": "Os flexores profundos dos dedos longos partilham um único ventre muscular. Mexer no comprimento de um deles muda o alcance de todos, é isso que produz o efeito quadriga, nome que vem das rédeas presas juntas nas bigas romanas.",
-  "correta": "O efeito quadriga é a limitação da flexão dos dedos, e uma das causas é o enxerto tendíneo curto demais, tensionado em excesso. Encurtado um tendão, quando a musculatura comum se contrai ela chega ao fim da excursão com aquele dedo já fletido e os outros ainda a meio caminho: os vizinhos deixam de fechar. É a mesma razão de a regra da zona I limitar o avanço do flexor profundo a 1 centímetro. E é por isso que uma cirurgia bem feita num dedo pode deixar a mão inteira pior do que estava.",
+  "conceito": "O lumbrical nasce no tendão do flexor profundo e se insere na banda lateral do aparelho extensor. Essa origem móvel é o que torna possível um fenômeno paradoxal: se o flexor profundo perde a continuidade distal, contraí-lo deixa de fletir o dedo e passa a puxar a origem do lumbrical para proximal, e o lumbrical, então, estende as interfalângicas.",
+  "correta": "**Limitação de flexão.**\n- Um FPD encurtado esgota a excursão do ventre comum.\n- Os outros dedos não completam a flexão.",
   "incorretas": {
-   "A": "Essa é a descrição do dedo lumbrical plus, e a causa citada (ruptura do flexor profundo distal à origem dos lumbricais) é justamente a dele, não a da quadriga.",
-   "B": "Enxerto longo e frouxo produz o lumbrical plus, não bloqueio de flexão. E a quadriga não bloqueia o dedo operado: prejudica os outros.",
-   "C": "Limitação de extensão por aderência é outro problema, de deslizamento, e não tem relação com o comprimento do tendão nem com o ventre comum."
+   "A": "**Lumbrical plus.**\n- Extensão paradoxal com ruptura distal do FPD é outro quadro.",
+   "B": "**Enxerto longo gera lumbrical plus.**\n- A quadriga vem do tendão curto.",
+   "C": "**Problema de deslizamento.**\n- Aderências não se relacionam ao ventre comum."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0190": {
-  "conceito": "As zonas extensoras do polegar recebem o prefixo T e vão de I a V, com as ímpares sobre as articulações: T-I na interfalângica, T-II na falange proximal, T-III na metacarpofalângica, T-IV no metacarpo e T-V no punho.",
-  "correta": "Lesão do extensor longo do polegar ao nível da metacarpofalângica é zona T-III. A implicação prática é a mesma da zona III dos dedos longos: nesse nível o aparelho extensor é uma lâmina fina e larga, e o reparo precisa ser cuidadoso para não deixar aderência nem extensão incompleta.",
+  "conceito": "### Zonas extensoras do polegar\n| Zona | Local |\n|---|---|\n| T-I | interfalângica |\n| T-II | falange proximal |\n| ==T-III== | ==metacarpofalângica== |\n| T-IV | metacarpo |\n| T-V | punho, CMC |\n\n### Zonas dos dedos longos (comparação)\n| Zona | Local |\n|---|---|\n| I | IFD |\n| III | IFP |\n| V | MF |\n| VI | metacarpos |\n| VII | retináculo |\n| VIII | antebraço |\n\n### Lesão do ELP em T-III\n- Aparelho extensor fino e largo sobre a MF, junto ao extensor curto.\n- Reparo cuidadoso; órtese com MF e IF em extensão por 4 a 6 semanas (ou mobilização controlada).\n\n> **Na prova:** ELP sobre a MF do polegar = ==T-III==.",
+  "correta": "**T-III.**\n- A MF do polegar é a zona T-III.\n- O polegar tem série própria, de T-I a T-V.",
   "incorretas": {
-   "B": "A zona V da numeração dos dedos longos corresponde à metacarpofalângica dos dedos, não do polegar, que tem série própria.",
-   "C": "A T-II é a falange proximal do polegar, distal à metacarpofalângica.",
-   "D": "A zona VI é o dorso da mão na numeração dos dedos longos, e não existe na série do polegar, que termina em V."
+   "B": "**Série dos dedos longos.**\n- A zona V é a MF dos dedos, não do polegar.",
+   "C": "**Falange proximal.**\n- T-II é distal à MF.",
+   "D": "**Não existe no polegar.**\n- A zona VI é o dorso da mão dos dedos longos."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0191": {
-  "conceito": "Mayfield reproduziu em laboratório o trauma que produz a instabilidade perissemilunar, e o mecanismo é sempre o mesmo, variando apenas até onde a força chegou.",
-  "correta": "Trauma de alta energia com o punho em hiperextensão, desvio ulnar e supinação intercarpal. Nessa posição o semilunar é retido pelos ligamentos volares enquanto o resto do carpo é forçado a girar e deslocar dorsalmente em torno dele. A energia importa: não é uma queda banal, é queda de altura, acidente de moto, esmagamento. Daí a regra prática de procurar lesões associadas e de nunca aceitar uma radiografia de punho normal em quem chegou com esse mecanismo e dor difusa.",
+  "conceito": "### Luxação perissemilunar: mecanismo\n- ==Trauma de alta energia== (queda de altura, moto, esmagamento).\n- ==Hiperextensão== do punho, ==desvio ulnar== e ==supinação intercarpal== (Mayfield).\n- O semilunar fica preso pelos ligamentos volares; o carpo gira e desloca dorsalmente.\n\n### Diagnóstico\n- Até cerca de **25%** passam despercebidas no pronto-socorro.\n- PA: linhas de **Gilula** quebradas, sobreposição carpal, semilunar triangular.\n- Perfil: capitato fora da cúpula do semilunar (perissemilunar) ou semilunar volar (xícara derramada).\n- TC para fraturas associadas (arco maior).\n\n### Tratamento\n1. Redução fechada urgente (tração, manobra de Tavernier).\n2. Descompressão do mediano se sintomático.\n3. Redução aberta, reparo ligamentar, fixação com fios, tratamento das fraturas.\n\n> **Na prova:** mecanismo = ==alta energia, hiperextensão, desvio ulnar, supinação intercarpal==.",
+  "correta": "**Alta energia e Mayfield.**\n- Hiperextensão, desvio ulnar e supinação intercarpal em trauma de alta energia.\n- O semilunar fica retido e o carpo gira em volta dele.",
   "incorretas": {
-   "B": "O desvio radial aproxima o escafoide do rádio e não gera a torção que separa as fileiras.",
-   "C": "Erra duas coisas. A energia é alta, não baixa, e a rotação é supinação, não pronação.",
-   "D": "Acerta a energia e o desvio, mas troca a rotação: o carpo supina em relação ao antebraço."
+   "B": "**Desvio errado.**\n- O desvio radial não gera a torção necessária.",
+   "C": "**Energia e rotação erradas.**\n- É alta energia e supinação.",
+   "D": "**Rotação errada.**\n- O carpo supina em relação ao antebraço."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0192": {
-  "conceito": "A sequência de Mayfield é fixa: I escafossemilunar, II capitossemilunar, III lunopiramidal, IV luxação volar do semilunar.",
-  "correta": "O estágio III é a lesão completa do ligamento semilunopiramidal com luxação nessa articulação. É o momento em que a força, tendo dado a volta pelo lado radial e pelo centro, chega ao lado ulnar do semilunar, e a partir dele o carpo inteiro está desconectado do semilunar, que ainda permanece articulado com o rádio.",
+  "conceito": "### Sequência de Mayfield (decorar)\n| Estágio | Ligamento |\n|---|---|\n| ==I== | ==escafossemilunar== |\n| II | capitossemilunar |\n| ==III== | ==piramidal-semilunar (lunopiramidal)== |\n| IV | radiocarpal dorsal (semilunar luxa para volar) |\n\n- Direção: **radial → em torno do semilunar → ulnar → dorsal**.\n- Mecanismo: hiperextensão, desvio ulnar, supinação intercarpal.\n\n### Radiografia\n| Estágio | Achado |\n|---|---|\n| I | diástase escafossemilunar (Terry Thomas), anel cortical |\n| II e III | capitato fora do semilunar no perfil; linhas de Gilula quebradas |\n| IV | semilunar em \"xícara derramada\" no perfil; forma triangular no PA |\n\n> **Na prova:** Mayfield III = ==lesão completa do semilunopiramidal com luxação==.",
+  "correta": "**Lunopiramidal.**\n- No estágio III a força chega ao lado ulnar do semilunar.\n- O carpo fica desconectado, mas o semilunar ainda articula com o rádio.",
   "incorretas": {
-   "A": "Lesão do escafossemilunar, com ou sem fratura do escafoide, é o estágio I. Quando há fratura do escafoide em vez de ruptura ligamentar, a lesão recebe o nome de transescafoperissemilunar.",
-   "C": "A luxação semilunocapitato é o estágio II, quando o capitato se desloca dorsalmente através do espaço de Poirier.",
-   "D": "A luxação palmar do semilunar é o estágio IV, o último, rompido o ligamento radiocarpal dorsal, o semilunar roda para volar e vai para dentro do túnel do carpo."
+   "A": "**Estágio I.**\n- Lesão escafossemilunar ou fratura do escafoide (transescafoide).",
+   "C": "**Estágio II.**\n- O capitato escapa pelo espaço de Poirier.",
+   "D": "**Estágio IV.**\n- O semilunar luxa para volar."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0193": {
-  "conceito": "A síndrome escafocapitato, ou síndrome de Fenton, é uma variante rara da lesão perissemilunar, produzida por trauma de alta energia com o punho em hiperextensão.",
-  "correta": "Ela consiste na fratura do escafoide associada a fratura do colo do capitato, com o fragmento proximal do capitato rodando, clássicamente 180 graus, ficando com a superfície cartilaginosa voltada para o lado errado. O tratamento é cirúrgico, e não há alternativa: um fragmento rodado não se reduz por manobra externa, fica sem suprimento vascular e evolui para necrose e artrose se não for reduzido e fixado. A armadilha diagnóstica é que a radiografia inicial pode parecer só uma fratura de escafoide, e a rotação do capitato passa despercebida, por isso o mecanismo de alta energia justifica tomografia.",
+  "conceito": "### Síndrome escafocapitato (Fenton)\n- Variante rara do **arco maior** perissemilunar.\n- ==Fratura do escafoide + fratura do colo do capitato==, com o ==fragmento proximal do capitato rodado== (até 90 a 180°).\n- Mecanismo: alta energia, hiperextensão com impacto do capitato no rádio dorsal.\n\n### Diagnóstico\n- Radiografia pode parecer só fratura do escafoide.\n- **TC** mostra a cabeça do capitato rodada.\n\n### Tratamento\n- ==Cirúrgico==: redução aberta do fragmento do capitato (rotação desfeita) e fixação de ambas as fraturas (parafusos sem cabeça).\n- Sem tratamento: **necrose** do fragmento, pseudartrose, artrose mediocarpal.\n\n### Lesões do arco maior\n| Variante | Ossos fraturados |\n|---|---|\n| transescafoperissemilunar | escafoide (a mais comum) |\n| transestiloide | estiloide radial |\n| ==escafocapitato (Fenton)== | escafoide + capitato |\n| transpiramidal | piramidal |\n\n> **Na prova:** Fenton = ==fratura do escafoide + capitato com fragmento rodado; tratamento cirúrgico==.",
+  "correta": "**Duas fraturas, fragmento rodado.**\n- Escafoide e colo do capitato fraturados, com a cabeça do capitato girada.\n- Exige redução aberta e fixação.",
   "incorretas": {
-   "A": "Descreve outra coisa: pseudoartrose isolada do capitato. A síndrome de Fenton é uma lesão aguda com duas fraturas, e a rotação do fragmento é a sua marca.",
-   "B": "Não se trata de lesão ligamentar, e conduta conservadora é justamente o que não cabe aqui.",
-   "C": "A síndrome não corresponde a um estágio de Mayfield, que classifica lesões ligamentares progressivas, e o tratamento conservador está fora de questão com um fragmento osteocondral rodado."
+   "A": "**Outra entidade.**\n- Pseudartrose isolada do capitato não é Fenton.",
+   "B": "**Não é ligamentar.**\n- E o tratamento conservador não cabe.",
+   "C": "**Não é estágio de Mayfield.**\n- O fragmento rodado não se reduz de forma fechada."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0194": {
