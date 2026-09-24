@@ -5148,94 +5148,95 @@
   "conferido": false
  },
  "pediatria-0407": {
-  "conceito": "A coxa vara do desenvolvimento produz redução progressiva do ângulo cervicodiafisário e verticalização da fise femoral proximal. Duas medidas orientam prognóstico e indicação cirúrgica. O ângulo cervicodiafisário expressa o varo global; valores abaixo de aproximadamente 100 a 110 graus indicam deformidade importante. O ângulo epifisário de Hilgenreiner é formado pela linha horizontal de Hilgenreiner e pela fise proximal do fêmur; valores acima de 60 graus correspondem a maior componente de cisalhamento, baixa probabilidade de correção espontânea e maior risco de progressão. Tratamento cirúrgico clássico é osteotomia valgizante do fêmur proximal, frequentemente com correção de retroversão associada. A meta não é apenas aumentar o ângulo cervicodiafisário: deve-se horizontalizar suficientemente a fise, idealmente reduzindo o ângulo de Hilgenreiner para valores próximos ou inferiores a 35 a 40 graus, reduzindo recorrência.",
-  "correta": "A alternativa B está correta. A combinação de ângulo cervicodiafisário menor que 100 graus e ângulo epifisário de Hilgenreiner maior que 60 graus representa deformidade estrutural importante com fise muito verticalizada e alto componente de cisalhamento. Essa configuração é uma indicação clássica de osteotomia valgizante, sobretudo quando há progressão, claudicação de Trendelenburg ou limitação funcional.",
+  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Indicação cirúrgica\n| Parâmetro | Limite |\n|---|---|\n| ==ângulo HE== | ==> 60°== (ou 45 a 60° progressivo) |\n| ==cervicodiafisário== | ==< 100 a 110°== |\n| clínica | Trendelenburg, progressão |\n\n- Meta da osteotomia valgizante: HE < 38° e cervicodiafisário ≈ 140°.\n\n> **Na prova:** cirurgia na coxa vara = ==cervicodiafisário < 100° e HE > 60°==",
+  "correta": "**< 100° e > 60°.**\n- Colo muito varo.\n- Fise verticalizada.",
   "incorretas": {
-   "A": "Ângulo cervicodiafisário inferior a 100 graus sugere deformidade importante, porém um ângulo epifisário de Hilgenreiner abaixo de 60 graus está associado a menor risco de progressão. A combinação não é o critério clássico mais forte para cirurgia.",
-   "C": "Ângulo de Hilgenreiner acima de 60 graus é preocupante, mas ângulo cervicodiafisário maior que 100 graus representa varo menos pronunciado. A questão procura a associação dos dois parâmetros de maior gravidade.",
-   "D": "Ambas as medidas apontam para deformidade menos grave: ângulo cervicodiafisário acima de 100 e Hilgenreiner abaixo de 60. Esses valores podem justificar acompanhamento em vez de correção imediata, dependendo de idade e evolução."
+   "A": "**HE < 60°.**\n- Tende a estabilizar.",
+   "C": "**Cervicodiafisário > 100°.**\n- Varo menos grave.",
+   "D": "**Invertido.**\n- Ambos fora do limite cirúrgico."
   },
   "referencias": [
    "Surgical correction of coxa vara: Evaluation of neck shaft angle, Hilgenreiner-epiphyseal angle for indication of recurrence. PMCID: PMC6494758; PMID: 31061596."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0408": {
-  "conceito": "A sinovite transitória do quadril é a causa mais comum de claudicação dolorosa aguda em crianças pequenas, com pico de incidência classicamente descrito entre **5 e 6 anos** de idade (dentro de uma faixa mais ampla de 3 a 8 anos em que a condição pode ocorrer), sendo mais rara antes dos 2-3 anos e após os 10 anos. Reconhecer essa faixa etária típica é parte do raciocínio diagnóstico inicial diante de uma criança com dor e claudicação do quadril de início agudo, ajudando a diferenciar esse quadro autolimitado de outras causas de dor no quadril mais comuns em faixas etárias distintas (como a displasia do desenvolvimento do quadril em lactentes ou a epifisiólise em pré-adolescentes/adolescentes).",
-  "correta": "B. A sinovite transitória do quadril acomete principalmente crianças entre 5 e 6 anos de idade.",
+  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** sinovite transitória = pico entre ==5 e 6 anos== (faixa de 3 a 8)",
+  "correta": "**5 a 6 anos.**\n- Pico na faixa de 3 a 8 anos.\n- Meninos após virose.",
   "incorretas": {
-   "A": "2 a 3 anos é uma faixa etária um pouco mais precoce do que o pico de incidência classicamente descrito.",
-   "C": "8 a 10 anos é uma faixa etária um pouco mais tardia do que o pico de incidência classicamente descrito.",
-   "D": "12 a 14 anos corresponde a uma faixa etária em que outras condições (como a epifisiólise) tornam-se mais relevantes, sendo incomum a sinovite transitória clássica nessa idade."
+   "A": "**2 a 3 anos.**\n- Menos frequente.",
+   "C": "**8 a 10 anos.**\n- Pensar em Perthes.",
+   "D": "**12 a 14 anos.**\n- Pensar em epifisiólise."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0409": {
-  "conceito": "Na paralisia cerebral espástica hemiplégica, o padrão de desequilíbrio muscular entre o lado acometido e o não acometido gera assimetrias rotacionais características da marcha, uma delas é a tendência da **hemipelve do lado acometido** em assumir uma posição de **rotação medial (interna)**, relativa ao lado sadio. Esse padrão rotacional contribui para a aparência de aumento da anteversão femoral funcional e para o padrão de marcha com rotação interna do membro acometido, frequentemente observado nesses pacientes, sendo um componente importante a ser avaliado na análise tridimensional da marcha antes do planejamento cirúrgico.",
-  "correta": "C. Na paralisia cerebral espástica hemiplégica, o lado acometido apresenta rotação medial da hemipelve.",
+  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n### Rotação na hemiplegia espástica\n| Segmento | Achado |\n|---|---|\n| fêmur | ==anteversão aumentada==, rotação ==medial== do quadril |\n| hemipelve acometida | ==rotação medial== (retração posterior do lado afetado) |\n| tíbia | torção variável |\n| pé | equinovaro |\n\n- Marcha com o membro rodado para dentro; pé em adução progressiva.\n- Osteotomia derrotativa femoral quando a rotação interna prejudica a marcha.\n\n> **Na prova:** lado acometido = ==rotação medial da hemipelve== (veja o alerta)",
+  "correta": "**Rotação medial da hemipelve.**\n- Acompanha a anteversão femoral aumentada.\n- Membro rodado para dentro.",
   "incorretas": {
-   "A": "A retroversão femoral verdadeira não é o achado classicamente descrito no lado acometido, o padrão observado é mais de rotação pélvica associada a aumento aparente de anteversão.",
-   "B": "A rotação lateral femoral não é o padrão classicamente descrito no lado acometido da paralisia cerebral hemiplégica.",
-   "D": "É a rotação medial, não lateral, da hemipelve que é classicamente descrita no lado acometido."
+   "A": "**Retroversão.**\n- Há anteversão aumentada.",
+   "B": "**Rotação lateral do fêmur.**\n- É medial.",
+   "D": "**Rotação lateral da hemipelve.**\n- Banca considerou medial."
   },
-  "geradoEm": "2026-09-21",
+  "alerta": "A nomenclatura da rotação pélvica na hemiplegia varia: muitos laboratórios descrevem retração (rotação posterior) da hemipelve acometida. A banca considerou rotação medial, acompanhando a rotação interna do quadril.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0410": {
-  "conceito": "O método de **Ilizarov** (fixação externa circular com compressão-distração) é uma das opções de tratamento para a pseudartrose congênita da tíbia, especialmente nos casos refratários a outras técnicas. Sua indicação, no entanto, costuma ser reservada para crianças um pouco maiores, a partir de aproximadamente **4 anos de idade**, em crianças muito pequenas, os segmentos ósseos são finos e frágeis demais para uma fixação estável com fios/pinos do aparelho circular, além de a cooperação da criança e da família com os cuidados do fixador externo (limpeza dos trajetos, ajustes periódicos) ser mais difícil de obter em idades muito precoces.",
-  "correta": "D. O método de Ilizarov na pseudartrose congênita da tíbia é indicado a partir dos quatro anos de idade.",
+  "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n### Ilizarov\n- Ressecção do hamartoma, compressão no foco e ==alongamento proximal== (transporte ósseo) ao mesmo tempo.\n- Idade mínima: ==por volta de 4 anos== (tamanho do osso para os fios e anéis, tolerância ao fixador).\n- Antes disso: haste intramedular (Williams) e enxerto; órtese.\n\n> **Na prova:** Ilizarov na pseudartrose congênita = a partir de ==4 anos==",
+  "correta": "**4 anos.**\n- Osso com tamanho para anéis e fios.\n- Permite compressão e alongamento.",
   "incorretas": {
-   "A": "Um ano é uma idade precoce demais, com osso ainda muito fino e frágil para a fixação estável necessária.",
-   "B": "Dois anos ainda é considerado precoce para a fixação circular externa nesse contexto.",
-   "C": "Três anos ainda antecipa um pouco a idade geralmente recomendada para essa técnica."
+   "A": "**1 ano.**\n- Osso pequeno demais.",
+   "B": "**2 anos.**\n- Precoce.",
+   "C": "**3 anos.**\n- Ainda precoce para a banca."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0411": {
-  "conceito": "O alinhamento dos membros inferiores na infância segue uma trajetória fisiológica previsível: varo ao nascimento e nos primeiros 18-24 meses, progredindo para um alinhamento neutro por volta dos 2 anos e, em seguida, para um **valgo fisiológico**, que atinge seu **pico entre os 2 e os 4 anos de idade**, para então diminuir gradualmente ao longo da infância, estabilizando no alinhamento valgo discreto característico do adulto (cerca de 5-7°) por volta dos 6-8 anos. Reconhecer essa curva fisiológica é fundamental para diferenciar o valgo (ou varo) que é apenas uma fase normal do desenvolvimento daquele que representa uma verdadeira deformidade patológica.",
-  "correta": "B. O valgo fisiológico máximo do joelho na criança ocorre entre os 2 e os 4 anos de idade.",
+  "conceito": "### Evolução angular fisiológica (Salenius)\n| Idade | Alinhamento |\n|---|---|\n| nascimento a 1,5-2 anos | ==varo== (máximo ao nascer) |\n| 1,5 a 2 anos | neutro |\n| ==3 a 4 anos== | ==valgo máximo== (cerca de 10 a 12°) |\n| 7 anos | valgo adulto (cerca de 5 a 7°) |\n\n### Sinais de patologia\n- Assimetria, deformidade fora da curva esperada, baixa estatura, dor, progressão.\n- Varo após 2 anos: Blount, raquitismo, displasias.\n- Valgo > 15° ou distância intermaleolar > 8 cm após 7 anos: investigar.\n\n### Tratamento do valgo patológico\n- ==Crescimento guiado== (placa em 8 medial) antes do fechamento fisário.\n\n> **Na prova:** valgo fisiológico máximo = entre ==2 e 4 anos==",
+  "correta": "**2 a 4 anos.**\n- Pico de 10 a 12° aos 3 a 4 anos.\n- Regride até os 7 anos.",
   "incorretas": {
-   "A": "Entre zero e dois anos, o padrão predominante costuma ser de varo fisiológico ou transição para o neutro, não o pico de valgo.",
-   "C": "Entre seis e oito anos, o alinhamento já está se estabilizando em direção ao padrão valgo discreto do adulto, após o pico de valgo já ter ocorrido.",
-   "D": "Entre oito e dez anos, o alinhamento já costuma estar próximo do padrão definitivo do adulto, bem depois do pico fisiológico de valgo."
+   "A": "**0 a 2 anos.**\n- Fase de varo.",
+   "C": "**6 a 8 anos.**\n- Valgo adulto.",
+   "D": "**8 a 10 anos.**\n- Valgo já estabilizado."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0412": {
-  "conceito": "A spina bífida oculta é um achado frequentemente incidental, caracterizado por uma falha de fusão do arco vertebral posterior sem herniação de tecido neural ou meníngeo através do defeito (ao contrário da mielomeningocele, uma forma aberta e muito mais grave de disrafismo espinhal). Esse achado é localizado, com grande frequência, na transição **lombossacra**, mais especificamente entre os níveis de **L5 e S1**, a região da coluna onde a fusão dos arcos vertebrais posteriores ocorre mais tardiamente durante o desenvolvimento embrionário, tornando-a mais suscetível a essa falha de fechamento incompleta e geralmente assintomática.",
-  "correta": "C. A spina bífida oculta localiza-se mais comumente entre as vértebras L5 e S1.",
+  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Espinha bífida oculta\n- Falha de fusão do ==arco posterior== sem herniação de meninges.\n- Muito comum (até 10 a 20% da população), achado radiográfico, em ==L5 e S1==.\n- Pistas cutâneas de disrafismo oculto: tufo de pelos, lipoma, fosseta, hemangioma: investigar ==medula presa== (RM).\n\n| Forma | Conteúdo |\n|---|---|\n| oculta | sem herniação |\n| meningocele | meninges |\n| mielomeningocele | meninges + medula/raízes |\n\n> **Na prova:** espinha bífida oculta = ==L5 e S1==",
+  "correta": "**L5 e S1.**\n- Local mais frequente.\n- Geralmente achado incidental.",
   "incorretas": {
-   "A": "L3 e L4 não é a localização mais comum classicamente descrita para a spina bífida oculta.",
-   "B": "L4 e L5, embora próximo à localização correta, não é o nível mais comumente citado, a transição L5-S1 é a mais classicamente descrita.",
-   "D": "T12 e L1 corresponde à transição toracolombar, não à localização lombossacra mais comumente descrita para a spina bífida oculta."
+   "A": "**L3 e L4.**\n- Pouco comum.",
+   "B": "**L4 e L5.**\n- Menos frequente.",
+   "D": "**T12 e L1.**\n- Raro."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0414": {
-  "conceito": "Na doença de Legg-Calvé-Perthes, a fase de **necrose** é a fase inicial do processo patológico, em que o suprimento sanguíneo da epífise femoral é interrompido. Histologicamente, essa fase se caracteriza pela **ausência de osteócitos viáveis** nas lacunas ósseas ou pela presença de osteócitos com **núcleo picnótico** (sinal de morte celular), achados que refletem diretamente a morte do tecido ósseo por falta de suprimento vascular, antes que os processos de reabsorção (fragmentação) e reconstrução óssea (reossificação e remodelação) se iniciem nas fases seguintes da doença.",
-  "correta": "B. A ausência de osteócitos viáveis ou a presença de osteócitos com núcleo picnótico caracteriza a fase de necrose na doença de Perthes.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Histologia por fase\n| Fase | Histologia |\n|---|---|\n| ==necrose== | ==lacunas vazias== ou osteócitos com ==núcleo picnótico==; medula necrótica |\n| fragmentação | revascularização, reabsorção osteoclástica, tecido fibrovascular |\n| reossificação | osso novo (woven) sobre trabéculas mortas |\n| remodelação/residual | osso lamelar |\n\n> **Na prova:** osteócitos ausentes ou picnóticos = fase de ==necrose==",
+  "correta": "**Necrose.**\n- Lacunas vazias, núcleos picnóticos.\n- Antes da revascularização.",
   "incorretas": {
-   "A": "A fase de fragmentação é caracterizada pela reabsorção ativa do osso necrótico já estabelecido, não pelo achado histológico inicial de morte celular.",
-   "C": "A fase de sequela é a fase residual final da doença, após a remodelação, não a fase de morte celular inicial.",
-   "D": "A fase de remodelação é a fase mais tardia, de reconstituição da forma da cabeça femoral, não a fase histológica de necrose celular."
+   "A": "**Fragmentação.**\n- Revascularização e reabsorção.",
+   "C": "**Sequela.**\n- Osso remodelado.",
+   "D": "**Remodelação.**\n- Osso lamelar novo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0415": {
-  "conceito": "A classificação de **Loder e colaboradores** para a epifisiólise proximal do fêmur, baseada na capacidade de apoio do membro (estável versus instável), tem uma correlação direta e clinicamente muito relevante com o risco de **osteonecrose** da cabeça femoral: os escorregamentos classificados como **instáveis** (quando a criança não consegue deambular, mesmo com auxílio de muletas) apresentam um risco de necrose avascular dramaticamente maior do que os escorregamentos estáveis, justamente por envolver maior grau de lesão dos vasos retinaculares responsáveis pela irrigação da epífise no momento do trauma agudo. Essa correlação entre instabilidade e risco de necrose é a principal contribuição prática da classificação de Loder para o manejo clínico da epifisiólise aguda.",
-  "correta": "B. Segundo Loder e colaboradores, a instabilidade é o fator preditivo mais relacionado ao risco de osteonecrose na epifisiólise aguda.",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n### Loder (1993)\n| Tipo | Definição | Necrose |\n|---|---|---|\n| estável | anda (com ou sem muletas) | cerca de ==0%== |\n| ==instável== | ==não consegue andar== | até ==47%== |\n\n- Melhor preditor de necrose que a cronologia (aguda/crônica) ou o grau de desvio.\n\n> **Na prova:** preditor de necrose (Loder) = ==instabilidade==",
+  "correta": "**Instabilidade.**\n- Instável: não anda.\n- Necrose em até 47%.",
   "incorretas": {
-   "A": "A idade do paciente não é o fator preditivo de osteonecrose destacado na classificação de Loder, que se baseia na capacidade de apoio do membro.",
-   "C": "O grau de desvio influencia o quadro clínico geral, mas não é o fator central destacado por Loder para o risco de osteonecrose.",
-   "D": "A força do trauma não é o parâmetro avaliado pela classificação de Loder, que se baseia na capacidade de apoio (estável ou instável)."
+   "A": "**Idade.**\n- Não é o critério de Loder.",
+   "C": "**Grau de desvio.**\n- Southwick; pior preditor.",
+   "D": "**Força do trauma.**\n- Não entra na classificação."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0416": {
