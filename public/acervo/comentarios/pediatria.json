@@ -3150,95 +3150,95 @@
   "conferido": false
  },
  "pediatria-0237": {
-  "conceito": "No tratamento cirúrgico da contratura em flexo do quadril na paralisia cerebral, a escolha do procedimento depende da magnitude da contratura. Para contraturas **leves a moderadas, tipicamente até cerca de 30 graus**, a liberação (ou alongamento) isolado do músculo iliopsoas costuma ser suficiente para melhorar o alinhamento e a postura em pé/marcha. Para contraturas mais acentuadas, geralmente são necessários procedimentos mais extensos, associando liberação de outras estruturas anteriores do quadril (como a fáscia do reto femoral e estruturas capsulares), já que a liberação isolada do psoas tende a ser insuficiente para corrigir deformidades mais graves.",
-  "correta": "B. A liberação isolada do psoas é utilizada para contraturas em flexo do quadril de até aproximadamente 30 graus.",
+  "conceito": "### Padrões sagitais de marcha na diplegia (Rodda e Graham)\n| Padrão | Tornozelo | Joelho | Quadril |\n|---|---|---|---|\n| I equino verdadeiro | equino | estendido ou recurvado | estendido |\n| II marcha em salto (jump) | equino | fletido | fletido |\n| III equino aparente | neutro | fletido | fletido |\n| ==IV agachada (crouch)== | ==dorsiflexão excessiva== | ==fletido== | ==fletido== |\n\n### Marcha agachada\n- Causas: ==alongamento excessivo do tendão calcâneo== (sóleo fraco), isquiotibiais e psoas curtos, patela alta, deformidades de alavanca.\n- Consequências: dor anterior no joelho, fratura por estresse da patela, alto gasto energético.\n- Tratamento: órtese de reação ao solo, cirurgia multinível (extensão femoral distal, avanço patelar).\n\n### Contratura em flexão do quadril na PC\n- Avaliar pelo ==teste de Thomas==.\n| Flexo | Conduta |\n|---|---|\n| leve | alongamento, órtese |\n| ==até cerca de 30°== | ==liberação/alongamento do psoas== (sobre a borda pélvica, preserva força em deambuladores) |\n| maior | liberação ampliada (reto femoral, sartório, tensor) ± osteotomia de extensão |\n\n> **Na prova:** liberação do psoas para flexo de até ==30°==",
+  "correta": "**30°.**\n- Alongamento do psoas resolve flexos moderados.\n- Acima disso, liberações ampliadas.",
   "incorretas": {
-   "A": "10 graus é um limite baixo demais, contraturas dessa magnitude frequentemente nem exigem intervenção cirúrgica isolada do psoas.",
-   "C": "40 graus já costuma exceder o que a liberação isolada do psoas consegue corrigir de forma satisfatória, exigindo procedimentos mais extensos.",
-   "D": "50 graus representa uma contratura grave, que tipicamente exige procedimentos mais amplos do que a liberação isolada do psoas."
+   "A": "**Leve.**\n- Tratamento conservador.",
+   "C": "**Grande.**\n- Liberação ampliada.",
+   "D": "**Grande.**\n- Idem."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0238": {
-  "conceito": "A osteotomia descrita por **Greene** para o tratamento da tíbia vara de Blount consiste em uma osteotomia metafisária proximal com remoção de uma cunha óssea (como representado na imagem), corrigindo o varismo e o procurvato da deformidade ao realinhar o eixo mecânico do membro, uma técnica voltada especificamente para essa correção angular na região proximal da tíbia.",
-  "correta": "D. A figura corresponde à osteotomia de Greene.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Órtese (KAFO)\n- Indicação: ==< 3 anos==, ==Langenskiöld I-II==, especialmente unilateral.\n- Órtese de apoio com força valgizante, uso diurno na marcha.\n- Sem melhora em cerca de 1 ano ou > 4 anos: ==osteotomia valgizante== da tíbia (hipercorrigir).\n\n### Osteotomias na Blount\n| Técnica | Desenho |\n|---|---|\n| ==Greene== | osteotomia em ==chevron== (V invertido) da tíbia proximal + fíbula |\n| Rab | osteotomia ==oblíqua== (plano único) que corrige varo e torção |\n| em cúpula | proximal, abaixo da tuberosidade |\n| elevação do hemiplatô medial | estágios avançados (V-VI) |\n| fixador (hexápode) | correção gradual, adolescentes |\n\n> **Na prova:** osteotomia da figura = ==Greene== (chevron).",
+  "correta": "**Greene.**\n- Osteotomia em chevron da tíbia proximal.\n- Associada à osteotomia da fíbula.",
   "incorretas": {
-   "A": "A osteotomia **hemicondilar** atua de forma mais localizada em um único côndilo tibial, uma abordagem diferente da correção metafisária ampla mostrada na imagem.",
-   "B": "A osteotomia de **Rab** utiliza um traço oblíquo específico na metáfise proximal da tíbia, uma configuração técnica diferente da mostrada.",
-   "C": "A osteotomia de **Laurencin** também representa uma técnica específica de correção da tíbia vara, com configuração distinta da cunha metafisária mostrada na imagem."
+   "A": "**Elevação do platô.**\n- Estágios avançados.",
+   "B": "**Oblíqua em plano único.**\n- Outro desenho.",
+   "C": "**Não é a da figura.**\n- Distrator."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0239": {
-  "conceito": "A distrofia muscular de Duchenne é uma miopatia progressiva ligada ao X, com início dos sintomas tipicamente entre **2 e 5 anos** de idade (não entre 6-9 anos) e acometimento inicial da musculatura **proximal** (cintura pélvica), não da musculatura cervical. Um dos achados clínicos mais característicos e precoces é a **pseudo-hipertrofia das panturrilhas**, o aumento visível do volume da panturrilha ocorre por infiltração de tecido fibroadiposo substituindo as fibras musculares progressivamente destruídas, e não por hipertrofia muscular verdadeira.\n\nQuanto ao padrão genético, cerca de **dois terços** dos casos são herdados de mães portadoras (padrão recessivo ligado ao X), enquanto aproximadamente um terço resulta de mutações **de novo**, ou seja, a proporção hereditária é bem maior que 30%, não menor.",
-  "correta": "C. O aumento do volume das panturrilhas (pseudo-hipertrofia) é um achado clássico e verdadeiro da distrofia muscular de Duchenne.",
+  "conceito": "### Distrofia muscular de Duchenne\n- ==Ligada ao X==, meninos; ausência de ==distrofina==.\n- Fraqueza ==proximal== (cintura pélvica primeiro), ==pseudo-hipertrofia das panturrilhas==, ==Gowers== positivo.\n- CPK muito elevada; biópsia/genética.\n\n### Perda da marcha (8 a 12 anos)\n| Fraqueza | Compensação |\n|---|---|\n| ==extensores do quadril== | hiperlordose, tronco atrás do quadril |\n| ==dorsiflexores== | marcha na ponta, equino |\n| quadríceps | joelho travado em extensão |\n\n### Ortopedia\n- Contraturas: equino, flexão do quadril, banda iliotibial.\n- ==Escoliose== após perder a marcha: artrodese precoce (antes da piora respiratória, CVF > 30 a 40%).\n- Corticoide prolonga a marcha e reduz escoliose.\n\n### Becker\n- Distrofina reduzida; mais tardia e branda.\n\n> **Na prova:** Duchenne para de andar por fraqueza de ==extensores do quadril e dorsiflexores==.",
+  "correta": "**Panturrilhas aumentadas.**\n- Pseudo-hipertrofia por gordura e fibrose.\n- Sinal clássico.",
   "incorretas": {
-   "A": "Os sintomas da distrofia de Duchenne costumam iniciar entre 2 e 5 anos de idade, não entre 6 e 9 anos.",
-   "B": "É a musculatura proximal (cintura pélvica), não a cervical, que é inicialmente acometida na distrofia de Duchenne.",
-   "D": "Aproximadamente dois terços dos casos são hereditários (herdados de mães portadoras), a proporção é bem maior que 30%, não menor."
+   "A": "**Mais cedo.**\n- Sintomas de 2 a 5 anos.",
+   "B": "**Cintura pélvica primeiro.**\n- Proximal inferior.",
+   "D": "**Dois terços hereditários.**\n- Um terço mutação nova."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0240": {
-  "conceito": "Na displasia do desenvolvimento do quadril não tratada ou tratada tardiamente, a progressão para **luxação posterior/posterossuperior** da cabeça femoral está classicamente associada à tensão (contratura) do grupo muscular **adutor**, o adutor longo, em particular, tende a se contrair de forma retraída conforme a cabeça femoral migra proximal e posteriormente, tanto contribuindo para a progressão da luxação quanto dificultando a redução fechada (funcionando como obstáculo mecânico e formando parte da \"cruz\" de partes moles interpostas descrita nos casos de redução aberta).\n\nÉ por esse motivo que a tenotomia percutânea do adutor longo é um procedimento frequentemente associado ao tratamento da DDH, tanto para facilitar a redução quanto para reduzir a pressão intra-articular após a redução.",
-  "correta": "A. A tensão do grupo muscular adutor está classicamente associada à progressão para luxação posterior na displasia do desenvolvimento do quadril.",
+  "conceito": "### Obstáculos à redução na DDQ\n| Extra-articulares | Intra-articulares |\n|---|---|\n| iliopsoas (estrangula a cápsula em ampulheta) | ==cápsula constrita== (istmo) |\n| adutores | lábio invertido (limbo) |\n| | pulvinar hipertrofiado |\n| | ligamento redondo alongado e espesso |\n| | ligamento transverso do acetábulo |\n\n- Na DDQ tardia, a ==constrição capsular== (ampulheta pelo psoas) é o obstáculo principal segundo a fonte.\n\n### Conduta\n| Idade | Tratamento |\n|---|---|\n| < 6 meses | Pavlik |\n| 6 a 18 meses | redução fechada + gesso (artrografia) |\n| > 18 meses | ==redução aberta== ± osteotomia femoral encurtadora e pélvica |\n\n> **Na prova:** DDQ com luxação posterior tensiona os ==adutores== (limitação da abdução).",
+  "correta": "**Adutores.**\n- Encurtam com a cabeça luxada.\n- Limitam a abdução (Hart).",
   "incorretas": {
-   "B": "Os abdutores não são o grupo muscular classicamente associado à progressão para luxação nesse contexto.",
-   "C": "Os rotadores mediais não são o grupo muscular classicamente implicado nessa progressão.",
-   "D": "Os rotadores laterais não são o grupo muscular classicamente implicado nessa progressão, é o grupo adutor que tem esse papel central."
+   "B": "**Encurtados e fracos.**\n- Não tensos.",
+   "C": "**Não é o grupo.**\n- Rotadores mediais.",
+   "D": "**Não é o grupo.**\n- Rotadores laterais."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0241": {
-  "conceito": "A ossificação dos ossos do carpo segue uma sequência previsível ao longo da infância, sendo usada, inclusive, como referência para estimativa de idade óssea. O escafoide é um dos ossos carpais de ossificação mais tardia, seu centro de ossificação costuma se tornar radiograficamente visível por volta dos **4 a 5 anos** de idade, bem depois de ossos como o capitato e o hamato (visíveis já nos primeiros meses de vida), mas antes de outros ossos carpais ainda mais tardios (como o pisiforme, visível apenas na pré-adolescência).\n\nEssa sequência de ossificação é relevante na avaliação de fraturas do punho em crianças pequenas, já que um escafoide ainda não ossificado pode mascarar ou dificultar a interpretação radiográfica de lesões nessa região.",
-  "correta": "C. A ossificação do escafoide nas crianças geralmente ocorre entre 4 e 5 anos de idade.",
+  "conceito": "### Ossificação do carpo (sentido anti-horário na mão direita, vista palmar)\n| Osso | Idade aproximada |\n|---|---|\n| ==capitato== | ==1 a 3 meses== |\n| ==hamato== | ==2 a 4 meses== |\n| piramidal | cerca de 3 anos |\n| semilunar | cerca de 4 anos |\n| escafoide | cerca de 5 anos |\n| trapézio | cerca de 6 anos |\n| trapezoide | cerca de 6 a 7 anos |\n| pisiforme | cerca de 9 a 12 anos |\n\n- Regra prática: até cerca de 6 a 7 anos, o **número de centros ≈ idade em anos**.\n- Meninas ossificam antes.\n\n### Idade óssea\n- **Greulich e Pyle** (atlas da mão e punho), Tanner-Whitehouse.\n\n### Implicação clínica\n- Até os 5 anos o escafoide é quase todo cartilagem: fratura rara e invisível ao RX.\n- Fratura pediátrica típica: ==polo distal== e avulsões, não a cintura.\n\n> **Na prova:** escafoide ossifica aos ==4 a 5 anos==",
+  "correta": "**4 a 5 anos.**\n- Depois do semilunar.\n- Antes disso, RX normal não exclui lesão.",
   "incorretas": {
-   "A": "1 a 2 anos é uma idade precoce demais, o escafoide é um dos ossos carpais de ossificação mais tardia, não um dos primeiros.",
-   "B": "3 a 4 anos ainda antecipa um pouco a idade média de ossificação do escafoide.",
-   "D": "6 a 7 anos tende a ser um pouco mais tardio que a idade média classicamente descrita para a ossificação do escafoide."
+   "A": "**Cedo.**\n- Só capitato e hamato.",
+   "B": "**Piramidal e semilunar.**\n- Escafoide ainda não.",
+   "D": "**Já ossificado.**\n- Falta o pisiforme."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0242": {
-  "conceito": "A classificação funcional da mielomeningocele por nível motor combina a avaliação de força de grupos musculares-chave para estimar, na prática, qual raiz nervosa mais distal ainda tem função preservada, informação essencial para prognóstico de marcha e planejamento ortopédico. Quando o **quadríceps** (L3-L4) e o **glúteo médio** (abdutor do quadril, L5) apresentam força **grau 3 ou mais**, isso indica preservação funcional até o nível **L5**. Já quando o **complexo gastrocnêmio-sóleo** (plantiflexores do tornozelo, S1-S2) apresenta força **grau 2 ou menos**, isso indica que os níveis sacrais mais distais (S1 em diante) ainda estão comprometidos.\n\nEssa combinação (quadríceps e glúteo médio funcionantes, mas plantiflexores fracos) caracteriza o nível funcional de **sacral alta**, uma categoria intermediária entre o nível lombar baixo (quadríceps funcionante, mas abdutores do quadril ainda fracos) e o sacral baixo (quase toda a musculatura, incluindo plantiflexão, preservada).",
-  "correta": "C. A combinação de quadríceps e glúteo médio com força preservada e complexo gastrocnêmio-sóleo fraco caracteriza o nível funcional sacral alto.",
+  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Classificação funcional (Broughton)\n| Grupo | Critério |\n|---|---|\n| torácico | sem força útil nos MMII |\n| lombar alto | flexores e adutores do quadril, quadríceps < 3 |\n| lombar baixo | ==quadríceps ≥ 3==, glúteo médio < 3 |\n| ==sacral alto== | ==quadríceps e glúteo médio ≥ 3==, ==gastrocnêmio-sóleo ≤ 2== |\n| sacral baixo | gastrocnêmio-sóleo ≥ 3 |\n\n> **Na prova:** quadríceps e glúteo médio ≥ 3 com tríceps ≤ 2 = ==sacral alto==",
+  "correta": "**Sacral alto.**\n- Quadríceps e glúteo médio funcionantes.\n- Tríceps sural fraco.",
   "incorretas": {
-   "A": "O nível lombar alto é caracterizado por quadríceps ainda fraco (força inferior a 3), o que não corresponde ao caso descrito.",
-   "B": "O nível lombar baixo é caracterizado por quadríceps funcionante, mas com glúteo médio (abdutores do quadril) ainda fraco, diferente do caso descrito, em que ambos estão preservados.",
-   "D": "O nível sacral baixo é caracterizado por preservação de praticamente toda a musculatura, incluindo boa força do complexo gastrocnêmio-sóleo, diferente do caso descrito."
+   "A": "**Quadríceps fraco.**\n- Nível mais alto.",
+   "B": "**Glúteo médio fraco.**\n- Aqui ≥ 3.",
+   "D": "**Tríceps forte.**\n- Aqui ≤ 2."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0243": {
-  "conceito": "A deformidade de Sprengel (elevação congênita da escápula) resulta de uma falha na descida normal da escápula durante o desenvolvimento embrionário, e cursa com alterações estruturais e funcionais características:\n- A escápula é **hipoplásica** (menor que o normal), além de estar elevada e frequentemente rodada de forma anômala.\n- A **abdução do ombro é limitada**, já que a mecânica escapulotorácica normal depende de uma escápula bem posicionada e móvel para permitir a rotação necessária durante a elevação completa do braço, com a escápula elevada, hipoplásica e por vezes fixada por um osso omovertebral, esse mecanismo fica comprometido.\n\nEssa limitação funcional (não apenas estética) é, inclusive, um dos principais motivadores da correção cirúrgica em casos mais significativos.",
-  "correta": "C. Na deformidade de Sprengel, a abdução do ombro está limitada e a escápula é hipoplásica.",
+  "conceito": "### Sprengel: movimento do ombro\n- Escápula ==pequena (hipoplásica)==, alta e rodada, presa pelo omovertebral ou fibrose.\n- A ==glenoumeral é normal==; perde-se o ==ritmo escapulotorácico==.\n- Resultado: ==abdução limitada== (a escápula não roda).\n\n### Achados associados\n- Klippel-Feil, escoliose, costelas anômalas, diastematomielia, rim.\n\n### Cirurgia\n| Técnica | Princípio |\n|---|---|\n| Woodward | desinserção da origem medial (trapézio, romboides) e reinserção mais baixa |\n| Green | desinserção na escápula e descida |\n| + | ressecção do omovertebral (extraperiosteal), osteotomia da clavícula |\n\n- Idade 3 a 8 anos; ganho funcional maior na abdução.\n\n> **Na prova:** Sprengel = ==glenoumeral normal com escápula hipoplásica==.",
+  "correta": "**Abdução limitada, escápula hipoplásica.**\n- Escapulotorácica travada.\n- Glenoumeral normal.",
   "incorretas": {
-   "A": "A abdução do ombro está tipicamente limitada, não normal, na deformidade de Sprengel.",
-   "B": "A escápula é hipoplásica, não hiperplásica, na deformidade de Sprengel, e a abdução do ombro também está limitada.",
-   "D": "A escápula é hipoplásica, não hiperplásica, na deformidade de Sprengel."
+   "A": "**Abdução limitada.**\n- Não normal.",
+   "B": "**Duplamente errada.**\n- Abdução e tamanho.",
+   "D": "**Escápula pequena.**\n- Não hiperplásica."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0244": {
-  "conceito": "Os ossos acessórios do pé são frequentes e quase sempre achados incidentais, mas o que mais dá sintoma é o OS NAVICULARE ACESSORIUM (navicular acessório), presente em cerca de 10 a 14% das pessoas. Ele fica na face medial do navicular, dentro ou junto à inserção do tibial posterior, e dói por dois motivos: a proeminência atrita no calçado, e a sincondrose entre o osso acessório e o navicular sofre tração do tendão. O quadro típico é adolescente com dor na face medial do médio-pé, proeminência palpável e, com frequência, pé plano associado. O tratamento inicial é conservador; se falha, faz-se a ressecção do osso acessório com reinserção do tibial posterior (procedimento de Kidner).",
-  "correta": "Os naviculare accessorium.",
+  "conceito": "### Ossos acessórios do pé\n| Osso | Local | Sintoma |\n|---|---|---|\n| ==navicular acessório== | medial ao navicular, inserção do ==tibial posterior== | ==o mais sintomático==: dor medial, proeminência, pé plano |\n| os trigonum | posterior ao tálus | impacto posterior (bailarinas) |\n| os peroneum | no fibular longo, junto ao cuboide | dor lateral, ruptura |\n| os vesalianum | base do 5º MT | raro |\n| os intermetatarseum | entre 1º e 2º MT | raro |\n\n### Navicular acessório (Geist)\n| Tipo | Descrição |\n|---|---|\n| I | sesamoide no tendão |\n| II | sincondrose (o mais sintomático) |\n| III | fundido (navicular cornuto) |\n\n- Tratamento: órtese, gesso; excisão (Kidner) se persistir.\n\n> **Na prova:** osso acessório mais sintomático = ==navicular acessório==.",
+  "correta": "**Navicular acessório.**\n- Tração do tibial posterior na sincondrose.\n- Dor medial, especialmente no tipo II.",
   "incorretas": {
-   "A": "O os fibulare (os peroneum) fica no trajeto do fibular longo, junto ao cuboide, e é bem menos sintomático, quando dói, costuma ser por ruptura do tendão associada.",
-   "B": "O os trigonum, no processo posterior do tálus, é causa do impacto posterior do tornozelo em bailarinas e jogadores de futebol, mas é menos prevalente como causa de dor na criança.",
-   "C": "O os vesalianum, na base do quinto metatarso, é raro e quase sempre assintomático."
+   "A": "**Raro sintoma.**\n- Os fibulare.",
+   "B": "**Impacto posterior.**\n- Menos frequente em criança.",
+   "C": "**Raro.**\n- Base do 5º MT."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 19"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0245": {
   "conceito": "No protocolo de Ponseti para manutenção da correção do pé torto congênito, após a última troca de gesso (e eventual tenotomia do tendão calcâneo), utiliza-se a órtese de abdução tipo **Denis Browne**, uma barra rígida conectando dois sapatos de cano alto, mantendo os pés em posição de abdução e rotação externa para preservar a correção obtida. Nos casos **bilaterais**, a orientação clássica é posicionar ambos os pés em rotação lateral de aproximadamente **70 graus**, com a barra ajustada na largura dos ombros da criança, um grau de rotação externa maior do que o usado no lado afetado em casos unilaterais (onde o pé são costuma ser posicionado em cerca de 30-40°, e o pé afetado em cerca de 60-70°).",
