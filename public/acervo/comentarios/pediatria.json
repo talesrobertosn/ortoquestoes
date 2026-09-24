@@ -5685,95 +5685,95 @@
   "conferido": false
  },
  "pediatria-0460": {
-  "conceito": "Sinovite transitória do quadril é causa comum de dor atraumática e claudicação em crianças, mais frequente em meninos de 3 a 8 anos, com pico ao redor de 6 anos. Pode seguir infecção viral, cursa com criança geralmente bem e limitação dolorosa. Artrite séptica deve sempre ser excluída diante de febre alta, toxemia, incapacidade de apoiar e marcadores inflamatórios elevados.",
-  "correta": "A alternativa C está correta: meninos, idade média aproximada de 6 anos.",
+  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** sinovite transitória = ==meninos, idade média de 6 anos==",
+  "correta": "**Meninos, idade média de 6 anos.**\n- Predomínio masculino (2:1).\n- Faixa de 3 a 8 anos.",
   "incorretas": {
-   "A": "A alternativa A (Meninas com idade média de 6 anos.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "B": "A alternativa B (Meninas com idade média de 2 anos.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "D": "A alternativa D (Meninos com idade média de 2 anos.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa."
+   "A": "**Meninas.**\n- Predomina em meninos.",
+   "B": "**Meninas e 2 anos.**\n- Sexo e idade errados.",
+   "D": "**2 anos.**\n- Abaixo do pico."
   },
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0461": {
-  "conceito": "A doença de Legg-Calvé-Perthes evolui radiograficamente por quatro fases clássicas: necrose, **fragmentação**, reossificação e remodelação. A fase de **fragmentação** (caracterizada radiograficamente por áreas de radiotransparência irregular intercaladas com áreas de maior densidade na epífise femoral) representa o processo biológico de **reabsorção do osso necrótico** pelos osteoclastos, à medida que a revascularização avança, antes da formação de osso novo que caracterizará a fase seguinte. É justamente durante essa fase, com o osso subcondral mais fragilizado pela reabsorção ativa, que a cabeça femoral fica mais vulnerável à deformação mecânica sob carga.",
-  "correta": "A. O aspecto radiográfico de fragmentação na doença de Perthes representa a reabsorção do osso necrótico.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Histologia por fase\n| Fase | Histologia |\n|---|---|\n| ==necrose== | ==lacunas vazias== ou osteócitos com ==núcleo picnótico==; medula necrótica |\n| fragmentação | revascularização, reabsorção osteoclástica, tecido fibrovascular |\n| reossificação | osso novo (woven) sobre trabéculas mortas |\n| remodelação/residual | osso lamelar |\n\n> **Na prova:** fragmentação no RX = ==reabsorção do osso necrótico==",
+  "correta": "**Reabsorção do osso necrótico.**\n- Revascularização traz osteoclastos.\n- Áreas radiotransparentes entre fragmentos.",
   "incorretas": {
-   "B": "A remodelação da cabeça femoral corresponde à fase final do processo, não à fase de fragmentação.",
-   "C": "Microfraturas subcondrais são um achado mais associado à fase inicial de necrose, não ao aspecto de fragmentação em si.",
-   "D": "Cistos metafisários podem ocorrer em alguns casos, mas não é isso que caracteriza o aspecto radiográfico de fragmentação da epífise."
+   "B": "**Remodelação.**\n- Fase final.",
+   "C": "**Microfraturas subcondrais.**\n- Sinal do crescente, fase inicial.",
+   "D": "**Cistos metafisários.**\n- Sinal de cabeça em risco."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0462": {
-  "conceito": "Entre os diversos fatores associados ao prognóstico da doença de Legg-Calvé-Perthes, a **idade do paciente no início da doença** é classicamente considerada o fator prognóstico isolado mais importante e consistente: quanto mais velha a criança ao diagnóstico (sobretudo acima de 6-8 anos), menor o potencial de remodelação óssea durante o crescimento residual, e maior o risco de deformidade residual da cabeça femoral e artrose precoce na vida adulta.",
-  "correta": "A. A idade do paciente é considerada o melhor fator prognóstico isolado na doença de Legg-Calvé-Perthes.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Herring em detalhe\n| Grupo | Pilar lateral | Prognóstico |\n|---|---|---|\n| A | ==sem perda== de altura | bom |\n| B | ==perda < 50%== | bom < 8 anos |\n| B/C | pilar estreito ou pouco ossificado, ~50% | intermediário |\n| C | ==perda > 50%== | ruim |\n\n### Desfecho a longo prazo\n- Dois fatores dominam: ==idade de início== (> 8 anos pior) e ==deformidade final da cabeça== (Stulberg).\n\n### Stulberg (maturidade)\n| Classe | Cabeça | Prognóstico |\n|---|---|---|\n| I-II | esférica | sem artrose |\n| III-IV | ovoide/achatada, congruente assférica | artrose no adulto médio |\n| V | achatada incongruente | artrose precoce |\n\n> **Na prova:** desfecho do Perthes = ==idade e deformidade da cabeça==",
+  "correta": "**Idade.**\n- Início após 8 anos piora.\n- Menos tempo para remodelar.",
   "incorretas": {
-   "B": "A estatura não é um fator prognóstico classicamente reconhecido para a doença de Perthes.",
-   "C": "A obesidade não é o principal fator prognóstico da doença de Perthes, embora possa influenciar outros aspectos ortopédicos na infância.",
-   "D": "O gênero, isoladamente, não é considerado o principal fator prognóstico, apesar de a doença ser mais comum em meninos."
+   "B": "**Estatura.**\n- Sem valor prognóstico.",
+   "C": "**Obesidade.**\n- Não é o principal.",
+   "D": "**Gênero.**\n- Meninas às vezes pior, mas pela maturidade óssea."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0463": {
-  "conceito": "A classificação do **pilar lateral de Herring** para a doença de Legg-Calvé-Perthes avalia a altura relativa da coluna (pilar) lateral da epífise femoral, comparando-a com a altura original antes da doença. Essa avaliação é feita especificamente na radiografia em incidência **ântero-posterior** do quadril, e deve ser realizada durante a fase de **fragmentação** da doença, momento em que a altura do pilar lateral já reflete de forma confiável o grau de colapso estrutural da epífise, permitindo classificar o quadril em grupos A, B, B/C ou C, com valor prognóstico bem estabelecido, sobretudo em crianças mais velhas ao diagnóstico.",
-  "correta": "D. A classificação de Herring baseia-se na radiografia em incidência ântero-posterior, avaliada na fase de fragmentação.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n> **Na prova:** Herring = ==AP na fase de fragmentação==.",
+  "correta": "**AP, fragmentação.**\n- Mede o pilar lateral.\n- Melhor preditor na fase ativa.",
   "incorretas": {
-   "A": "A classificação de Herring não é avaliada na incidência de perfil, e sim na ântero-posterior, e não na fase de necrose.",
-   "B": "A classificação de Herring é avaliada na incidência ântero-posterior, não na de perfil.",
-   "C": "A classificação de Herring é avaliada na fase de fragmentação, não na fase de necrose."
+   "A": "**Perfil e necrose.**\n- Salter-Thompson.",
+   "B": "**Perfil.**\n- Herring usa AP.",
+   "C": "**Necrose.**\n- Ainda sem colapso."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0464": {
-  "conceito": "Na paralisia cerebral, os diferentes padrões de distúrbio de movimento correspondem a diferentes topografias de lesão neurológica. O tipo **atetoide** (parte do espectro discinético, com movimentos lentos e sinuosos involuntários) está associado a um acometimento de nível **extrapiramidal**, tipicamente envolvendo os núcleos da base, estruturas frequentemente lesadas em quadros como o kernicterus (encefalopatia bilirrubínica) ou a asfixia perinatal grave, mecanismos classicamente associados a esse subtipo de paralisia cerebral, diferente do acometimento piramidal (córtex motor) do tipo espástico ou do acometimento cerebelar do tipo atáxico.",
-  "correta": "D. O tipo atetoide da paralisia cerebral apresenta acometimento de nível extrapiramidal.",
+  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n> **Na prova:** PC atetoide = ==extrapiramidal==.",
+  "correta": "**Extrapiramidal.**\n- Núcleos da base.\n- Kernicterus, asfixia a termo.",
   "incorretas": {
-   "A": "O acometimento piramidal está associado ao tipo espástico, não ao atetoide.",
-   "B": "O acometimento cerebelar está associado ao tipo atáxico, não ao atetoide.",
-   "C": "O nível ventricular não é a topografia classicamente associada ao tipo atetoide da paralisia cerebral."
+   "A": "**Piramidal.**\n- Espástico.",
+   "B": "**Cerebelar.**\n- Atáxico.",
+   "C": "**Ventricular.**\n- Leucomalácia periventricular causa diplegia espástica."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0465": {
-  "conceito": "No pé torto congênito, o padrão de deformidade (equino, varo, aduto e cavo) resulta de um desequilíbrio entre grupos musculares, com predomínio relativo dos músculos posteromediais sobre seus antagonistas laterais e anteriores. Os músculos que mais contribuem para a deformidade são o **tibial posterior** (aduzindo e supinando o antepé), o **flexor longo do hálux** e o **flexor longo dos dedos** (contribuindo para a deformidade em garra e reforçando o padrão de supinação), e o **tríceps sural** (gastrocnêmio e sóleo, responsável pelo componente de equino, por retração do tendão calcâneo). Esse conjunto de músculos relativamente contraídos e encurtados é o alvo terapêutico do alongamento seriado do método de Ponseti.",
-  "correta": "A. Os músculos que mais contribuem para a deformidade do pé torto congênito são o tibial posterior, o flexor longo do hálux, o flexor longo dos dedos e o tríceps sural.",
+  "conceito": "### Anatomia patológica do pé torto\n| Estrutura | Alteração |\n|---|---|\n| tálus | colo desviado ==medial e plantar==; corpo ==rodado externamente== no encaixe (não internamente) |\n| calcâneo | ==aduzido, invertido e em equino==; gira sob o tálus e se aproxima da fíbula |\n| navicular | ==medial==, junto ao maléolo medial (inversão extrema da talonavicular) |\n| cuboide | ==desviado medialmente== sobre o calcâneo |\n| partes moles | retração posteromedial (tibial posterior, FLH, FLD, tríceps, ligamentos) |\n\n### Deformidades (CAVE)\n- Cavo, Aduto, Varo, Equino.\n\n### Pirani e Dimeglio\n- Escores de gravidade para acompanhar o Ponseti.\n\n### Músculos da deformidade\n| Músculo | Deformidade |\n|---|---|\n| ==tríceps sural== | equino |\n| ==tibial posterior== | varo, aduto |\n| ==flexor longo do hálux e dos dedos== | cavo, varo, dedos em garra |\n| tibial anterior | supinação (dinâmica, na recidiva) |\n\n- Fibulares estão alongados e fracos: não contribuem.\n\n> **Na prova:** músculos do PTC = ==TP, FLH, FLD e tríceps==",
+  "correta": "**TP, FLH, FLD e tríceps.**\n- Todos posteromediais.\n- Retraídos e fibrosos.",
   "incorretas": {
-   "B": "O fibular longo é um músculo evertor/pronador, antagonista do padrão de deformidade do pé torto, não um dos músculos que a causam.",
-   "C": "O fibular curto também é evertor, não fazendo parte do grupo de músculos que contribuem para a deformidade em equinovaro.",
-   "D": "É o tibial posterior, não o tibial anterior, que contribui para a deformidade, o tibial anterior tem papel mais relevante na recidiva dinâmica após a correção, não na deformidade estrutural inicial."
+   "B": "**Fibular longo.**\n- Está alongado.",
+   "C": "**Fibular curto.**\n- Lateral, alongado.",
+   "D": "**Tibial anterior.**\n- Não é o principal na deformidade congênita."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0466": {
-  "conceito": "No pé torto congênito, os estudos histológicos mostram alterações estruturais tanto na musculatura quanto nos tecidos periarticulares (cápsula, ligamentos e tendões). A musculatura, particularmente a da panturrilha e a posteromedial, tende a ser **hipotrófica** (menor volume muscular que o normal), daí a panturrilha classicamente mais fina observada mesmo após correção bem-sucedida. Já os tecidos periarticulares (cápsula posterior e medial, ligamentos, tendões) estão **espessados e fibróticos**, contribuindo para a rigidez característica da deformidade.",
-  "correta": "B. No pé torto congênito, os músculos estão hipotrofiados e os tecidos periarticulares estão espessados.",
+  "conceito": "### Anatomia patológica do pé torto\n| Estrutura | Alteração |\n|---|---|\n| tálus | colo desviado ==medial e plantar==; corpo ==rodado externamente== no encaixe (não internamente) |\n| calcâneo | ==aduzido, invertido e em equino==; gira sob o tálus e se aproxima da fíbula |\n| navicular | ==medial==, junto ao maléolo medial (inversão extrema da talonavicular) |\n| cuboide | ==desviado medialmente== sobre o calcâneo |\n| partes moles | retração posteromedial (tibial posterior, FLH, FLD, tríceps, ligamentos) |\n\n### Deformidades (CAVE)\n- Cavo, Aduto, Varo, Equino.\n\n### Pirani e Dimeglio\n- Escores de gravidade para acompanhar o Ponseti.\n\n### Partes moles\n- Músculos da perna ==hipotróficos== (panturrilha fina persiste mesmo após correção).\n- Ligamentos e cápsulas posteromediais ==espessados e fibróticos== (miofibroblastos, colágeno denso).\n- Por isso o pé é rígido; gessos distendem gradualmente.\n\n> **Na prova:** no PTC, músculos ==hipotróficos==, ligamentos ==espessados==",
+  "correta": "**Hipotrofiados e espessados.**\n- Panturrilha fina.\n- Ligamentos fibróticos.",
   "incorretas": {
-   "A": "Os músculos não estão hipertrofiados no pé torto congênito, a musculatura tende a ser hipotrófica.",
-   "C": "Os tecidos periarticulares não estão delgados no pé torto congênito, eles tendem a estar espessados e fibróticos.",
-   "D": "Os tecidos periarticulares não estão delgados, estão espessados, embora a musculatura de fato esteja hipotrofiada."
+   "A": "**Hipertrofia.**\n- Músculos atróficos.",
+   "C": "**Os dois errados.**\n- Hipotrofia e espessamento.",
+   "D": "**Delgados.**\n- Ligamentos espessados."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0467": {
-  "conceito": "No protocolo de Ponseti, após a retirada do último gesso (e eventual tenotomia percutânea do tendão calcâneo), a órtese de abdução deve ser mantida em **uso contínuo por 3 a 4 meses**, com o pé afetado posicionado em cerca de **70 graus de rotação externa**, grau de abdução necessário para manter o alongamento obtido durante a fase de gessos seriados. Após esse período inicial de uso contínuo, a órtese passa a um regime de manutenção com **uso predominantemente noturno**, mantido por um período prolongado de **2 a 4 anos**, já que a recidiva da deformidade está diretamente relacionada à adesão a esse uso prolongado da órtese.",
-  "correta": "A. Após a retirada do gesso, a órtese deve ser mantida com o pé em 70 graus de rotação externa, seguida de uso noturno por 2 a 4 anos.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** órtese = RE de ==60 a 70°== contínua por 3 meses, depois ==noturna até 4 anos==",
+  "correta": "**70 graus, noturno por 2 a 4 anos.**\n- RE de 60 a 70° no pé afetado.\n- Uso noturno até 4 a 5 anos.",
   "incorretas": {
-   "B": "50 graus subestima o grau de rotação externa classicamente recomendado nessa fase do protocolo de Ponseti.",
-   "C": "6 a 12 meses de uso noturno é um período mais curto do que o classicamente recomendado, que se estende por 2 a 4 anos.",
-   "D": "Tanto o grau de rotação (50°) quanto a duração do uso noturno (6-12 meses) subestimam os valores classicamente recomendados no protocolo de Ponseti."
+   "B": "**50 graus.**\n- Pouca rotação.",
+   "C": "**6 a 12 meses.**\n- Tempo insuficiente.",
+   "D": "**Os dois errados.**\n- Rotação e tempo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0468": {
