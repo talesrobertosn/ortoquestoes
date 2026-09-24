@@ -2713,95 +2713,95 @@
   "conferido": false
  },
  "trauma-0243": {
-  "conceito": "O **cisalhamento vertical** (o padrão de lesão do anel pélvico em que a hemipelve se desloca cefalicamente em relação ao sacro, rompendo completamente a estabilidade vertical do anel) deixa uma marca radiográfica indireta e bastante específica: a **fratura do processo transverso de L5**.\n\nIsso ocorre porque o ligamento **iliolombar** conecta o processo transverso de L5 à crista ilíaca, e quando a hemipelve se desloca cefalicamente com força suficiente para romper toda a estabilidade vertical do anel, esse mesmo deslocamento traciona o ligamento iliolombar, que por sua vez avulsiona um pequeno fragmento ósseo do processo transverso de L5 antes de se romper (ou permanecer tracionado).\n\nEncontrar esse achado na radiografia simples é um sinal indireto valioso de instabilidade vertical grave, mesmo quando o próprio traço de fratura da pelve não deixa isso evidente à primeira vista, e reforça a necessidade de investigação tomográfica completa e de estabilização cirúrgica rigorosa nesse padrão de lesão.",
-  "correta": "D. A fratura do processo transverso de L5, por avulsão do ligamento iliolombar tracionado pelo deslocamento cefálico da hemipelve, é o achado radiográfico sugestivo de cisalhamento vertical.",
+  "conceito": "### Cisalhamento vertical (Tile C, Young-Burgess VS)\n- Hemipelve desloca ==cefalicamente== em relação ao sacro: ruptura completa posterior (sacroilíaca ou sacro) e anterior.\n\n### Sinais radiográficos\n| Sinal | Significado |\n|---|---|\n| ==fratura do processo transverso de L5== | avulsão do ==ligamento iliolombar==: instabilidade vertical |\n| avulsão da espinha isquiática/borda do sacro | sacroespinhoso roto |\n| ascensão da hemipelve (> 1 cm) | deslocamento vertical |\n| diástase da sínfise > 2,5 cm | lesão do sacroespinhoso (livro aberto, não prova cisalhamento) |\n\n### Conduta\n- Tração esquelética longitudinal no membro, fixação posterior (parafuso iliossacral) + anterior.\n\n> **Na prova:** sugere cisalhamento vertical = fratura do ==processo transverso de L5==",
+  "correta": "**Processo transverso de L5.**\n- Avulsão do iliolombar.\n- Instabilidade vertical.",
   "incorretas": {
-   "A": "A fratura isolada dos ramos púbicos é um achado mais inespecífico, presente em diversos padrões de lesão pélvica, não especificamente sugestivo de cisalhamento vertical.",
-   "B": "A fratura do córtex sacral anterior é mais associada ao padrão de compressão lateral (impacção da asa sacral), não ao cisalhamento vertical.",
-   "C": "A diástase da sínfise púbica de 2,5 cm é o critério clássico de instabilidade na compressão ântero-posterior, não o achado específico do cisalhamento vertical."
+   "A": "**Ramos isolados.**\n- Lesão estável.",
+   "B": "**Córtex sacral anterior.**\n- Compressão lateral.",
+   "C": "**Diástase de 2,5 cm.**\n- Instabilidade rotacional (livro aberto)."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.34"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0244": {
-  "conceito": "O **índice MESS** (Mangled Extremity Severity Score) foi desenvolvido para objetivar a decisão mais difícil da traumatologia de extremidades (tentar salvar o membro ou indicar amputação primária), somando pontos em quatro categorias.\n\n- **Energia do trauma**: do baixo impacto (1 ponto) ao esmagamento de alta energia ou lesão por arma de fogo de alta velocidade (4 pontos).\n- **Isquemia do membro**: ausente (0), leve a moderada (1 a 2 pontos), ou grave, sem pulso e com enchimento capilar lento (3 pontos), sendo que essa pontuação é **dobrada** se a isquemia já dura mais de **seis horas**.\n- **Choque sistêmico**: pressão arterial normal (0), hipotensão transitória (1 ponto), ou hipotensão persistente (2 pontos).\n- **Idade** do paciente: categorizada em faixas etárias, com pontuação crescente conforme a idade aumenta (de 0 a 2 pontos).\n\nEntre essas quatro categorias, a **isquemia** e a **energia do trauma** se destacam por refletir diretamente a viabilidade biológica do membro: quanto mais tempo de isquemia e quanto maior a energia do trauma, menor a chance de recuperação funcional satisfatória mesmo com um esforço de salvamento bem-sucedido.\n\nComo já discutido em outra questão deste acervo, o limiar classicamente citado é de **sete pontos ou mais**, associado a uma probabilidade muito alta de que a amputação, mesmo que adiada por uma tentativa inicial de salvamento, acabe sendo necessária. Ainda assim, o MESS é uma ferramenta de apoio, não um critério absoluto isolado, e a decisão final permanece clínica, considerando também a integridade do nervo tibial e as expectativas do próprio paciente.",
-  "correta": "C. A isquemia e a energia do trauma são duas das quatro categorias que compõem a pontuação do índice MESS, refletindo diretamente a viabilidade biológica do membro lesado.",
+  "conceito": "### MESS (Mangled Extremity Severity Score)\n| Critério | Pontos |\n|---|---|\n| ==energia== da lesão esquelética/partes moles | 1 a 4 |\n| ==isquemia== do membro (dobra se > 6 h) | 1 a 3 (até 6) |\n| ==choque== (PA sistólica) | 0 a 2 |\n| ==idade== | 0 a 2 (< 30, 30 a 50, > 50) |\n\n- ==≥ 7==: associado a amputação (valor preditivo limitado; não decide sozinho).\n- Não inclui: tempo de sangramento, comorbidades, múltiplos membros.\n\n> **Na prova:** MESS inclui ==isquemia e energia do trauma== (além de choque e idade)",
+  "correta": "**Isquemia e energia.**\n- Dois dos quatro critérios.\n- Com choque e idade.",
   "incorretas": {
-   "A": "O tempo de sangramento isolado não é uma das quatro categorias do MESS, a categoria relacionada é o choque sistêmico (pressão arterial), não o tempo de sangramento em si.",
-   "B": "O acometimento múltiplo de membros não é uma das categorias do MESS, que avalia um único membro por vez; a idade, sim, é uma categoria real do escore.",
-   "D": "Doenças sistêmicas prévias não compõem o índice MESS, que se baseia em energia do trauma, isquemia, choque e idade."
+   "A": "**Tempo de sangramento.**\n- Não entra.",
+   "B": "**Múltiplos membros.**\n- Não entra (idade sim).",
+   "D": "**Sangramento e doenças prévias.**\n- Não entram."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0245": {
-  "conceito": "A classificação de **Neer** organiza a fratura do úmero proximal em quatro partes potenciais (cabeça, segmento articular; tubérculo maior; tubérculo menor; e diáfise), contando como \"parte\" apenas o fragmento desviado mais de 1 cm ou angulado mais de 45 graus. Ela é útil para descrever, mas não responde à pergunta que mais importa no planejamento: esta cabeça vai necrosar?\n\n**Hertel** construiu um sistema binário (doze perguntas de sim ou não, gerando os padrões de fratura possíveis) e, sobretudo, identificou os **preditores de isquemia** da cabeça umeral, verificados no intraoperatório por sangramento ativo após perfuração da cabeça. Três achados se mostraram os mais fortes:\n- A **extensão metafisária menor que 8 mm**: mede-se quanto de metáfise (o calcar) permanece aderido ao fragmento cefálico, e um esporão curto significa cabeça praticamente desnuda, sem o manguito periosteal medial que conduz os vasos\n- O **desvio da dobradiça medial maior que 2 mm**: a integridade dessa dobradiça é o sinal indireto de que o periósteo medial não rompeu; um desvio acima de 2 mm indica que rompeu\n- O traço no **colo anatômico**\n\nA combinação dos três tem valor preditivo positivo de cerca de 97%.\n\nO raciocínio subjacente é sempre o mesmo: a cabeça umeral não depende de uma artéria específica (embora hoje se atribua à circunflexa umeral posterior cerca de dois terços da perfusão, e não à anterior, como se pensava), e sim de manter uma ponte de partes moles que a alimente.\n\nDuas ressalvas úteis: isquemia intraoperatória não equivale a necrose tardia, porque parte dessas cabeças revasculariza; e a fratura impactada em **valgo**, apesar do aspecto assustador, tem risco menor, porque o periósteo medial costuma permanecer íntegro.",
-  "correta": "B. Os preditores de isquemia de Hertel são o desvio da dobradiça medial MAIOR que 2 mm e a extensão metafisária MENOR que 8 mm, os dois traduzem a mesma coisa: a cabeça perdeu a ponte medial de partes moles que a perfunde.",
+  "conceito": "### Irrigação da cabeça umeral\n- ==Circunflexa umeral posterior==: cerca de 2/3 da perfusão (dado mais recente).\n- Circunflexa anterior: ramo arqueado de Laing no sulco bicipital.\n\n### Critérios de Hertel (isquemia)\n| Preditor | Limite |\n|---|---|\n| ==extensão metafisária posteromedial== | ==< 8 mm== (calcar curto) |\n| ==dobradiça medial rompida== | ==desvio > 2 mm== |\n| padrão | fratura do colo anatômico |\n\n- Os dois primeiros juntos: valor preditivo de isquemia de cerca de 97%.\n- Isquemia inicial nem sempre evolui para necrose.\n\n### Neer\n| Partes | Conceito |\n|---|---|\n| 1 a 4 | segmento desviado > 1 cm ou > 45° |\n| luxação/split da cabeça | |\n\n> **Na prova:** Hertel = dobradiça medial ==> 2 mm== e extensão metafisária ==< 8 mm==",
+  "correta": "**> 2 mm e < 8 mm.**\n- Dobradiça rota e calcar curto.\n- Alto risco de isquemia.",
   "incorretas": {
-   "A": "Acerta a dobradiça e erra a metáfise. Uma extensão metafisária MAIOR que 8 mm é achado FAVORÁVEL: significa que um bom pedaço de calcar permaneceu aderido à cabeça, levando consigo o periósteo medial e os vasos.",
-   "C": "Inverte os dois critérios: dobradiça medial desviada menos de 2 mm indica periósteo íntegro, e calcar maior que 8 mm indica cabeça bem ancorada. Esse é o perfil da fratura com bom prognóstico vascular.",
-   "D": "Descreve a fratura de BAIXO risco de isquemia, dobradiça medial preservada e calcar longo. É exatamente o oposto do que os critérios de Hertel apontam como preditor."
+   "A": "**> 8 mm.**\n- Calcar longo protege.",
+   "C": "**< 2 mm e > 8 mm.**\n- Perfil de baixo risco.",
+   "D": "**< 2 mm.**\n- Dobradiça íntegra."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0246": {
-  "conceito": "A confusão mais comum na fratura de **Bennett** é de nomenclatura, e vale resolvê-la de uma vez.\n\nO traço oblíquo intra-articular divide a base do primeiro metacarpo em duas partes muito desiguais. A parte pequena é o \"bico\" (beak), um fragmento volar e ulnar que permanece no lugar porque está ancorado ao trapézio pelo ligamento oblíquo anterior — é o fragmento **proximal**. A parte grande é todo o restante do metacarpo, do traço até a cabeça — é o fragmento **distal**, e é ele que se desloca. Ou seja: o fragmento \"distal\" da Bennett é praticamente o osso inteiro, e o \"proximal\" é uma lasca.\n\nFeita essa distinção, as forças se organizam:\n\n- O **abdutor longo do polegar** insere-se na base do primeiro metacarpo (portanto, no fragmento distal) e o traciona proximalmente (encurtamento), dorsalmente e para radial. É a força dominante do desvio, e explica por que a deformidade é tão previsível.\n- O **adutor do polegar**, inserido na base da falange proximal pelo lado ulnar, puxa a cabeça do metacarpo em adução e imprime ao eixo uma rotação em supinação.\n\nSomando: encurtamento, desvio dorsorradial e supinação. A manobra de redução desfaz cada componente (tração longitudinal, abdução palmar e extensão, pronação do fragmento distal e pressão direta sobre a base), mas as forças retornam assim que a mão do cirurgião sai.\n\nPor isso a Bennett é lesão **cirúrgica**: fios de Kirschner percutâneos, em regra transfixando o primeiro ao segundo metacarpo, sem necessidade de capturar o pequeno fragmento, ou parafuso quando ele é grande o bastante. O objetivo é a congruência da trapeziometacarpiana, articulação em sela e de altíssima demanda, em que degraus residuais levam a artrose sintomática precoce.",
-  "correta": "B. O abdutor longo do polegar insere-se na base do primeiro metacarpo, isto é, no fragmento DISTAL (o osso quase inteiro), e produz nele ENCURTAMENTO com desvio RADIAL e DORSAL.",
+  "conceito": "### Fratura de Bennett\n- Fratura-luxação intra-articular da base do 1º metacarpo.\n- Fragmento ==volar-ulnar== pequeno fica preso ao trapézio pelo ==ligamento oblíquo anterior== (beak ligament).\n\n### Forças deformantes\n| Músculo | Efeito na diáfise |\n|---|---|\n| ==abdutor longo do polegar== | desvio ==dorsal-radial== e encurtamento |\n| adutor do polegar | adução e ==supinação== da cabeça |\n| extensor longo do polegar | encurtamento |\n\n### Classificação das fraturas da base\n| Tipo | Nome |\n|---|---|\n| intra-articular 2 partes | Bennett |\n| intra-articular cominutiva (Y/T) | ==Rolando== |\n| extra-articular | transversa/oblíqua |\n\n### Tratamento\n- Redução: tração, pronação e abdução com pressão na base.\n- Fixação: fios percutâneos (1º MC ao trapézio ou ao 2º MC) ou parafuso se fragmento grande.\n\n### Nomenclatura\n- Fragmento ==proximal== = pequeno bico volar-ulnar (fica no trapézio).\n- Fragmento ==distal== = restante do metacarpo (diáfise), onde insere o ==abdutor longo== (base dorsal-radial).\n\n> **Na prova:** abdutor longo no fragmento ==distal==: ==encurtamento, desvio radial e dorsal==",
+  "correta": "**Distal; encurtamento, radial e dorsal.**\n- Insere na base do metacarpo.\n- Desvia a diáfise.",
   "incorretas": {
-   "A": "Acerta o fragmento, mas erra a direção: o abdutor longo do polegar corre pela face DORSORRADIAL do punho, no primeiro compartimento extensor, e por isso traciona a base do metacarpo para DORSAL, e não para volar. O componente volar pertence ao pequeno fragmento que permanece no lugar.",
-   "C": "Erra tudo. O fragmento proximal é o pequeno 'bico' volar e ulnar, que NÃO se desloca porque está preso ao trapézio pelo ligamento oblíquo anterior; e o desvio do fragmento que se move é radial e dorsal, não ulnar e volar.",
-   "D": "Acerta a direção do desvio, mas atribui a inserção ao fragmento errado: o abdutor longo do polegar se insere na base do metacarpo, que integra o fragmento DISTAL. O fragmento proximal é a lasca articular que permanece reduzida."
+   "A": "**Volar.**\n- Desvio é dorsal.",
+   "C": "**Proximal, ulnar e volar.**\n- Fragmento e direções errados.",
+   "D": "**Proximal.**\n- O bico não recebe o abdutor longo."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0247": {
-  "conceito": "O que torna a lesão de **Essex-Lopresti** perigosa não é a sua gravidade intrínseca, e sim a facilidade com que ela é **perdida** no atendimento inicial. O paciente cai sobre a mão espalmada, chega com dor no cotovelo, a radiografia do cotovelo mostra a fratura cominutiva da cabeça ou do colo do rádio, e o caso é tratado como uma fratura isolada, enquanto a ruptura da membrana interóssea e a lesão da articulação radioulnar distal passam despercebidas, porque ninguém examinou nem radiografou o punho. Meses depois instala-se o quadro crônico: dor ulnocarpal, variância ulnar positiva, perda de força de preensão e limitação da pronossupinação, agora com a membrana interóssea cicatrizada em encurtamento e sem boa solução reconstrutiva.\n\nOs elos que a lesão rompe são três, e eles formam o sistema de contenção longitudinal do antebraço: a articulação radioulnar **proximal**, a **membrana interóssea** (cuja banda central, oblíqua do rádio proximal para a ulna distal, responde por cerca de 70% dessa estabilidade) e a articulação radioulnar **distal**. Perdidos os três, o rádio migra proximalmente.\n\nO diagnóstico exige um protocolo deliberado:\n- **Examinar o punho** em toda fratura cominutiva da cabeça do rádio: dor à palpação da radioulnar distal e teste da tecla do piano positivo são os sinais\n- **Radiografar** o punho e o antebraço, comparando a variância ulnar com o lado contralateral em incidência padronizada\n- Considerar o **teste de tração radiográfica** sob anestesia: tracionando o punho com a cabeça do rádio ressecada ou fraturada, uma migração proximal do rádio maior que 3 mm confirma a instabilidade longitudinal\n\nA ressonância e a ultrassonografia podem demonstrar a lesão da banda central, mas o diagnóstico é sobretudo de suspeita clínica somada às radiografias comparativas.",
-  "correta": "B. A lesão de Essex-Lopresti é a fratura do colo (ou da cabeça) do rádio associada à ruptura da MEMBRANA INTERÓSSEA e à lesão da articulação RADIOULNAR DISTAL, os três elos da contenção longitudinal do antebraço, cuja perda permite a migração proximal do rádio.",
+  "conceito": "### Lesão de Essex-Lopresti\n- Anel do antebraço: radioulnar proximal, ==membrana interóssea== e ==radioulnar distal==.\n- Tríade: fratura da ==cabeça/colo do rádio== + ruptura da ==membrana interóssea== + lesão da ==RUD==.\n- Rádio migra proximalmente: dor no punho, ulna positiva.\n\n### Diagnóstico\n| Exame | Achado |\n|---|---|\n| RX comparativo dos punhos | variância ulnar positiva > 2 mm |\n| teste do rádio (radius pull test) | migração > 3 mm intraoperatória |\n| US/RM | lesão da membrana interóssea |\n\n### Tratamento\n- ==Nunca ressecar a cabeça do rádio==: fixar ou prótese.\n- Estabilizar a RUD (fios em supinação); reconstrução da membrana nos crônicos.\n\n> **Na prova:** Essex-Lopresti = cabeça/colo do rádio + membrana interóssea + ==RUD==",
+  "correta": "**Membrana interóssea e RUD.**\n- Com fratura da cabeça/colo.\n- Migração proximal do rádio.",
   "incorretas": {
-   "A": "A luxação da cabeça do rádio com fratura da ULNA é a fratura-luxação de Monteggia, e não a de Essex-Lopresti. Na Essex-Lopresti a cabeça do rádio está FRATURADA, e não luxada, e o que a define é justamente a associação com a lesão distal, no punho.",
-   "C": "A lesão da radioulnar proximal está implícita na própria fratura da cabeça do rádio, mas a alternativa omite o elo essencial: a MEMBRANA INTERÓSSEA, cuja banda central responde por cerca de 70% da estabilidade longitudinal. Sem ela rompida, o rádio não migra.",
-   "D": "Fratura da ulna proximal com lesão da radioulnar proximal descreve outro cenário (as fraturas-luxações de Monteggia ou transolecranianas), em que a instabilidade é da articulação do cotovelo e não longitudinal do antebraço."
+   "A": "**Luxação da cabeça.**\n- Monteggia.",
+   "C": "**Radioulnar proximal.**\n- Não é o componente.",
+   "D": "**Ulna proximal.**\n- Monteggia."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0248": {
-  "conceito": "Os três parâmetros radiográficos do rádio distal são a inclinação ulnar, ou desvio radial, medida na incidência posteroanterior; a inclinação volar, medida no perfil; e a altura ou comprimento radial, também na posteroanterior.",
-  "correta": "A inclinação ulnar é o ângulo entre a linha que une a ponta do processo estiloide do rádio ao ponto mais ulnar da superfície articular do rádio e uma perpendicular ao eixo longo do osso. O valor normal é de cerca de 22 graus, com faixa aceita de 21 a 25. Perder inclinação ulnar significa que a superfície articular ficou horizontal, e isso transfere carga para a ulna e para o lado ulnar do carpo, daí a dor ulnar residual depois de uma fratura mal consolidada.",
+  "conceito": "### Parâmetros radiográficos do rádio distal\n| Parâmetro | Como medir | Normal | Aceitável |\n|---|---|---|---|\n| ==altura (comprimento) radial== | distância entre ==ponta do estiloide radial== e a ==superfície articular da ulna== (linhas perpendiculares ao eixo) | ==11 a 12 mm== | perda < 3 a 5 mm |\n| inclinação radial | linha estiloide-canto ulnar do rádio × perpendicular | 22 a 23° | > 15° |\n| inclinação volar | perfil | 11 a 12° | até neutro ou 10° dorsal |\n| variância ulnar | rádio × ulna na RUD | neutra (± 2 mm) | < 2 a 3 mm positiva |\n| degrau articular | | 0 | < 2 mm |\n\n### Inclinação radial (ulnar)\n- Linha da ==ponta do estiloide radial== ao ==ponto mais ulnar da superfície articular do rádio== × perpendicular ao eixo do rádio.\n- Normal ==22 a 23°==; aceitável > 15°.\n\n> **Na prova:** inclinação ulnar = estiloide radial × ponto ulnar do rádio, ==22°==",
+  "correta": "**Estiloide radial e ponto ulnar do rádio; 22°.**\n- Medida no PA.\n- Aceitável > 15°.",
   "incorretas": {
-   "A": "O ângulo se mede dentro do rádio, entre dois pontos do próprio rádio. Usar o estiloide da ulna como referência mistura os dois ossos e mede outra coisa.",
-   "B": "Os pontos estão certos e o valor não: 11 graus é aproximadamente o valor normal da inclinação volar, medida no perfil. É a troca que a questão arma.",
-   "C": "Erra os dois itens: pontos de referência errados e o valor da inclinação volar no lugar do da ulnar."
+   "A": "**Estiloide ulnar.**\n- Referência errada.",
+   "B": "**11°.**\n- É a inclinação volar.",
+   "C": "**Estiloides e 11°.**\n- Ambos errados."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0249": {
-  "conceito": "O escafoide fratura quando o punho é forçado além dos 95 graus de extensão com desvio radial: nessa posição o polo proximal fica preso entre o rádio e o ligamento radioescafocapitato enquanto o polo distal continua sendo empurrado, e o osso quebra no meio.",
-  "correta": "O mecanismo é a queda com hiperextensão e desvio radial do punho, e entre os testes oferecidos o de Watson é o único que se refere ao escafoide. Vale uma ressalva honesta: o teste de Watson foi descrito para instabilidade escafossemilunar, não para fratura. O exame clínico da fratura aguda do escafoide se apoia em outros três achados, que valem mais na prática, dor à palpação da tabaqueira anatômica, dor à palpação do tubérculo do escafoide na face volar e dor à compressão axial do polegar. Nenhum deles é sensível o bastante para excluir a fratura, e é por isso que a suspeita clínica com radiografia normal se trata como fratura até nova avaliação ou exame de maior resolução.",
+  "conceito": "### Fratura do escafoide\n- Osso mais fraturado do carpo (cerca de 70%).\n- Mecanismo: queda com ==hiperextensão (> 95°) e desvio radial==: o escafoide impacta na borda dorsal do rádio.\n- Irrigação ==retrógrada== (ramos dorsais distais da radial): polo proximal em risco de necrose.\n\n### Risco por local\n| Local | Frequência | Necrose |\n|---|---|---|\n| cintura | 65 a 80% | 30% |\n| polo proximal | 10 a 20% | ==até 100%== |\n| polo distal/tubérculo | 5 a 10% | rara |\n\n### Conduta\n| Situação | Tratamento |\n|---|---|\n| suspeita com RX normal | imobilizar; RM (ou TC) |\n| cintura sem desvio | gesso 6 a 12 semanas ou parafuso percutâneo |\n| desvio > 1 mm, polo proximal | ==fixação== |\n\n### Exame do escafoide\n| Teste | Achado |\n|---|---|\n| tabaqueira anatômica | dor (sensível, pouco específico) |\n| tubérculo do escafoide | dor volar |\n| compressão axial do polegar | dor |\n| Watson (desvio radial com pressão no tubérculo) | descrito para instabilidade escafossemilunar |\n| Finkelstein | tenossinovite de De Quervain |\n\n> **Na prova:** a banca combinou ==Watson== com ==hiperextensão e desvio radial== (veja o alerta)",
+  "correta": "**Watson; hiperextensão e desvio radial.**\n- Mecanismo clássico.\n- Teste aceito pela banca (veja o alerta).",
   "incorretas": {
-   "A": "O teste está certo, o desvio não: é radial, não ulnar. O desvio radial é o que trava o polo proximal contra o rádio.",
-   "C": "O teste de Finkelstein avalia a tenossinovite de De Quervain, no primeiro compartimento dorsal, e o desvio do mecanismo também está errado.",
-   "D": "O mecanismo está certo, mas Finkelstein é teste de outra doença: a dor dele fica sobre o estiloide radial e piora com o polegar dentro da mão e desvio ulnar do punho."
+   "A": "**Desvio ulnar.**\n- Mecanismo é com desvio radial.",
+   "C": "**Finkelstein.**\n- De Quervain.",
+   "D": "**Finkelstein.**\n- Teste errado."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
-  "alerta": "O teste de Watson é o único do escafoide entre as alternativas, mas ele foi descrito para instabilidade escafossemilunar, e não para fratura. O exame clínico da fratura aguda do escafoide se apoia em outros achados, listados no comentário."
+  "alerta": "O teste de Watson é o único do escafoide entre as alternativas, mas ele foi descrito para instabilidade escafossemilunar, e não para fratura. O exame clínico da fratura aguda do escafoide se apoia em outros achados, listados no comentário.",
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0250": {
-  "conceito": "A qualidade da **redução** é o fator controlável mais importante no tratamento das fraturas do colo do fêmur com preservação da cabeça, e dois instrumentos clássicos a aferem.\n\nAs **linhas de Lowell** apoiam-se num princípio geométrico elegante: o contorno da cabeça femoral e o contorno do colo são duas curvas que se encontram tangencialmente, formando um \"S\" liso e contínuo. Numa redução anatômica, essa tangência é suave em todas as incidências e em qualquer rotação; qualquer degrau, quebra ou cruzamento abrupto entre as curvas denuncia desvio residual. A vantagem do método é dispensar medidas angulares e funcionar mesmo em radioscopia de baixa qualidade.\n\nO **índice de Garden** mede o alinhamento do trabeculado: o ângulo entre o eixo do trabeculado compressivo primário da cabeça e o eixo do trabeculado medial da diáfise, com valor normal em torno de 160 graus na incidência em frente e 180 graus no perfil. A faixa aceitável é de **160 a 180 graus** em ambas, e os dois limites têm razão de ser: abaixo de 160 graus a redução está em varo, com perda do apoio cortical inferomedial e risco de colapso e cut-out; acima de 180 graus há valgo excessivo, que tensiona e pode ocluir os vasos retinaculares posterossuperiores, aumentando o risco de osteonecrose.\n\nConvém não confundir com o **índice de Dorr**, que classifica a morfologia do canal femoral proximal em tipos A (canal estreito, \"ampulheta\"), B (intermediário) e C (\"chaminé\", canal alargado do osso porótico), parâmetro usado para escolher entre haste cimentada e não cimentada na artroplastia, e sem qualquer relação com a redução de fraturas. E 135 a 145 graus corresponde à faixa do ângulo cervicodiafisário, outro parâmetro.",
-  "correta": "B. Os dois instrumentos são as LINHAS DE LOWELL (tangência lisa entre os contornos da cabeça e do colo) e o ÍNDICE DE GARDEN, cujo valor aceitável está entre 160 e 180 graus.",
+  "conceito": "### Avaliação da redução no colo do fêmur\n| Índice | Critério | Aceitável |\n|---|---|---|\n| ==Garden (alinhamento trabecular)== | AP: trabéculas compressivas × cortical medial da diáfise; perfil: trabéculas × eixo do colo | ==AP 160 a 180°==; perfil 180° (± 20) |\n| Lowell | curvas em S/C das corticais (cabeça-colo) | contorno contínuo |\n| ângulo cervicodiafisário | | 130 a 135° |\n\n- Redução em ==valgo leve== é aceitável; varo ou retroversão aumenta falha.\n- Fora da faixa: risco de pseudartrose e necrose.\n\n### Lowell\n- Contornos côncavo-convexos da cabeça e do colo formam ==curvas em S (ou C) contínuas== no AP e no perfil.\n- Degrau ou ângulo agudo = redução imperfeita.\n- Índice de Dorr: formato do canal femoral (artroplastia), não redução.\n\n> **Na prova:** qualidade da redução = ==Lowell e Garden (160 a 180°)==",
+  "correta": "**Lowell e Garden 160 a 180°.**\n- Contornos e trabéculas.\n- Dois índices complementares.",
   "incorretas": {
-   "A": "Acerta os dois instrumentos, mas erra a faixa do índice de Garden: 135 a 145 graus aproxima-se do ângulo cervicodiafisário, e não do alinhamento trabecular, cujo normal é de cerca de 160 graus em frente e 180 no perfil.",
-   "C": "Erra o instrumento e a faixa. O índice de DORR classifica a morfologia do canal femoral proximal (tipos A, B e C) para a escolha da haste na artroplastia, e não avalia redução de fratura.",
-   "D": "Acerta a faixa de 160 a 180 graus, mas troca as linhas de Lowell pelo índice de Dorr, que pertence ao planejamento da artroplastia e não à aferição da redução."
+   "A": "**135 a 145°.**\n- Valor errado para Garden.",
+   "C": "**Dorr.**\n- Morfologia do canal.",
+   "D": "**Dorr.**\n- Não avalia redução."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0252": {
