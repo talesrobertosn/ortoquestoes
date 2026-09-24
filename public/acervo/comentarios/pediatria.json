@@ -4622,116 +4622,118 @@
   "conferido": false
  },
  "pediatria-0365": {
-  "conceito": "A síndrome de Morquio corresponde às mucopolissacaridoses tipo IV e produz displasia esquelética particularmente intensa. Na MPS IVA há deficiência de N-acetilgalactosamina-6-sulfatase, com acúmulo de queratan sulfato e condroitina-6-sulfato. Os pacientes podem apresentar baixa estatura, pectus carinatum, cifoescoliose, platispondilia, coxa valga, geno valgo, frouxidão ligamentar e marcha alterada. A hipoplasia ou ausência do processo odontoide é uma característica ortopédica crucial porque predispõe à instabilidade atlantoaxial e compressão medular. Assim, avaliação cervical dinâmica e estudo por ressonância podem ser necessários antes de anestesia ou cirurgia. Diferentemente de várias outras mucopolissacaridoses, inteligência costuma ser preservada. O tratamento exige equipe multidisciplinar e vigilância neurológica, cardiopulmonar, auditiva, ocular e musculoesquelética.",
-  "correta": "A alternativa C está correta. Hipoplasia do odontoide é uma associação clássica da síndrome de Morquio e explica o risco de instabilidade C1-C2 e mielopatia cervical. Esse achado tem implicação prática imediata: manipulação cervical, intubação e posicionamento cirúrgico devem ser planejados com cuidado, e sinais neurológicos exigem investigação da junção craniocervical.",
+  "conceito": "### Mucopolissacaridoses (MPS)\n| Tipo | Nome | Herança | Achados |\n|---|---|---|---|\n| I | ==Hurler== (grave) / Scheie | AR | ==retardo==, face grosseira, opacidade de córnea, giba toracolombar |\n| II | Hunter | ==ligada ao X== | sem opacidade de córnea |\n| III | Sanfilippo | AR | predomínio neurológico |\n| IV | ==Morquio== | AR | ==inteligência normal==, nanismo de tronco curto, ==instabilidade C1-C2 (odontoide hipoplásico)==, genu valgo |\n| VI | Maroteaux-Lamy | AR | inteligência normal |\n\n### Ortopedia\n- Morquio: ==avaliar a coluna cervical== antes de anestesia; artrodese occipitocervical se instável.\n- Hurler: cifose, displasia do quadril, túnel do carpo, dedo em gatilho múltiplo.\n- Tratamento: reposição enzimática, transplante de medula (Hurler).\n\n### Odontoide no Morquio\n- ==Hipoplasia ou aplasia do odontoide== + frouxidão ligamentar: ==instabilidade C1-C2==, mielopatia.\n- Radiografias dinâmicas e RM antes de anestesia; artrodese occipitocervical se instável.\n- Também presente em outras displasias (espondiloepifisária, Down), mas é a marca do Morquio entre as MPS.\n\n> **Na prova:** odontoide hipoplásico = ==Morquio==",
+  "correta": "**Morquio.**\n- Odontoide hipoplásico e instabilidade C1-C2.\n- Inteligência normal, queratan sulfato na urina.",
   "incorretas": {
-   "A": "Hurler apresenta disostose múltipla, cifose toracolombar, rigidez articular e manifestações sistêmicas importantes, mas hipoplasia odontoidea com instabilidade atlantoaxial é muito mais característica e clássica de Morquio.",
-   "B": "Hunter compartilha várias manifestações esqueléticas com outras mucopolissacaridoses, além de ser ligada ao X, porém a associação ortopédica de prova com odontoide hipoplásico e instabilidade cervical é Morquio.",
-   "D": "Sanfilippo apresenta predominância neurodegenerativa e alterações comportamentais, com comprometimento esquelético geralmente menos exuberante. Não é a síndrome clássica relacionada à hipoplasia do processo odontoide."
+   "A": "**Hurler.**\n- Retardo, giba toracolombar.",
+   "B": "**Hunter.**\n- Ligada ao X, sem opacidade de córnea.",
+   "D": "**Sanfilippo.**\n- Predomínio neurológico."
   },
   "referencias": [
    "Morquio A Syndrome: Diagnosis and Current and Future Therapies. PMCID: PMC4259875.",
    "Mucopolysaccharidosis Type IVA. GeneReviews."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0366": {
-  "conceito": "Na osteogênese imperfeita, a fragilidade decorre principalmente de alterações quantitativas ou qualitativas do colágeno tipo I e da arquitetura óssea. Apesar da frequência elevada de fraturas, a capacidade de consolidação costuma ser preservada e pseudoartrose é incomum. Por isso, imobilizações prolongadas devem ser evitadas: além de não serem necessárias na maioria dos casos, agravam osteopenia por desuso, fraqueza muscular e perda funcional. O tratamento conservador utiliza imobilização leve e pelo menor período necessário para controle da dor e proteção inicial da fratura, seguida de mobilização e reabilitação precoces. Quando cirurgia é necessária, hastes intramedulares são preferidas porque compartilham carga ao longo do osso e podem acompanhar melhor um esqueleto deformável; placas isoladas criam segmentos de concentração de tensão. O cuidado é multidisciplinar e pode incluir bifosfonatos, fisioterapia, correção de deformidades e hastes telescópicas.",
-  "correta": "A alternativa B está correta. A estratégia habitual é imobilizar apenas até alívio suficiente dos sintomas e estabilidade clínica, evitando esperar rigidamente uma consolidação radiográfica completa. Pacientes com osteogênese imperfeita, apesar da fragilidade, apresentam baixo risco de pseudoartrose na maioria das fraturas. Mobilização precoce é importante para evitar ciclo de desuso, perda de massa óssea e nova fragilidade.",
+  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Fraturas na OI\n- ==Consolidam no tempo normal==; pseudartrose é incomum (exceto tipo V com calo hiperplásico e fraturas repetidas).\n- Imobilização ==curta, só até aliviar a dor==: imobilização longa gera osteopenia e novas fraturas.\n- Mobilização precoce; hastes telescópicas nas deformidades e fraturas de repetição.\n\n> **Na prova:** fratura na OI = imobilizar até ==alívio dos sintomas==; ==baixo risco de pseudartrose==",
+  "correta": "**Alívio dos sintomas; baixo risco.**\n- Consolidação em tempo normal.\n- Imobilização curta evita osteopenia.",
   "incorretas": {
-   "A": "A duração curta baseada no controle dos sintomas está adequada, porém a afirmação de alto risco de pseudoartrose não corresponde à história natural típica. A consolidação geralmente ocorre; a maior preocupação é refratura, deformidade e osteopenia.",
-   "C": "Esperar consolidação radiográfica completa com imobilização prolongada aumenta descondicionamento e perda óssea. Além disso, pseudoartrose não é uma complicação habitualmente alta o suficiente para justificar essa conduta.",
-   "D": "A alternativa reconhece o baixo risco de pseudoartrose, mas erra ao defender imobilização até consolidação completa. O princípio atual é utilizar períodos curtos e iniciar mobilização e reabilitação assim que clinicamente seguro."
+   "A": "**Pseudartrose rara.**\n- Consolida normalmente.",
+   "C": "**Imobilização longa.**\n- Piora a osteopenia; pseudartrose é rara.",
+   "D": "**Tempo de imobilização.**\n- Não é necessário esperar a consolidação completa."
   },
   "referencias": [
    "Fractures in Osteogenesis Imperfecta: Pathogenesis, Treatment, Rehabilitation and Prevention. PMCID: PMC8869965; PMID: 35204988.",
    "Osteogenesis Imperfecta. GeneReviews. NCBI Bookshelf."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0367": {
-  "conceito": "Na paralisia cerebral, os diferentes padrões de distúrbio de movimento se correlacionam com a topografia da lesão neurológica de base. Dentro do grande grupo dos distúrbios **discinéticos** (extrapiramidais, associados a lesão dos núcleos da base), o padrão **distônico** (caracterizado por posturas anormais sustentadas e flutuações do tônus muscular, alternando entre hipertonia e hipotonia) é classicamente descrito como o subtipo mais diretamente associado ao comprometimento predominante dos **núcleos da base**, distinguindo-se do padrão atetoide (movimentos lentos e sinuosos, também de origem extrapiramidal, mas com correlação anatômica um pouco mais variável) e claramente dos padrões atáxico (lesão cerebelar) e espástico (lesão do córtex motor e das vias piramidais).",
-  "correta": "D. O distúrbio de movimento do tipo distônico é o classicamente associado à lesão extrapiramidal predominante nos núcleos da base.",
+  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n### Discinéticos (SCPE)\n| Subtipo | Clínica |\n|---|---|\n| ==distônico== | ==hipocinesia e hipertonia==, posturas anormais sustentadas; o ==mais comum== dos discinéticos |\n| coreoatetoide | hipercinesia, tônus reduzido, movimentos rápidos e contorcidos |\n\n> **Na prova:** lesão predominante nos núcleos da base = ==distônico== (veja o alerta)",
+  "correta": "**Distônico.**\n- Lesão de núcleos da base.\n- Posturas sustentadas, hipertonia flutuante.",
   "incorretas": {
-   "A": "O padrão atáxico está associado à lesão cerebelar, não aos núcleos da base.",
-   "B": "O padrão atetoide também tem origem extrapiramidal, mas o padrão distônico é o mais diretamente associado ao comprometimento predominante dos núcleos da base nessa classificação.",
-   "C": "O padrão espástico está associado à lesão do córtex motor e das vias piramidais, não dos núcleos da base."
+   "A": "**Atáxico.**\n- Cerebelo.",
+   "B": "**Atetoide.**\n- Também extrapiramidal; a banca preferiu distônico.",
+   "C": "**Espástico.**\n- Piramidal."
   },
-  "geradoEm": "2026-09-21",
+  "alerta": "Atetoide e distônico são ambos discinéticos, por lesão dos núcleos da base. A banca considerou apenas o distônico, o subtipo discinético mais frequente.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0368": {
-  "conceito": "O Gross Motor Function Classification System foi desenvolvido por Palisano, Rosenbaum e colaboradores em 1997 e posteriormente expandido e revisado. Ele descreve função motora grossa habitual na paralisia cerebral em cinco níveis, não a qualidade do movimento ou potencial futuro. Nível I: marcha independente sem restrições funcionais importantes, embora corrida e salto possam ser limitados. Nível II: marcha na maioria dos ambientes, porém com limitações em superfícies irregulares, longas distâncias e habilidades motoras; escadas geralmente são realizadas segurando corrimão. Nível III: marcha com dispositivo manual de mobilidade e uso frequente de cadeira para maiores distâncias. Nível IV: mobilidade própria é limitada, frequentemente com assistência física ou cadeira motorizada. Nível V: dependência importante para transporte, com controle limitado de cabeça e tronco. A idade precisa ser considerada porque as descrições funcionais são específicas por faixa etária.",
-  "correta": "A alternativa B está correta. Uma criança que anda na maioria dos ambientes, mas precisa segurar no corrimão para subir escadas, corresponde ao GMFCS II. A distinção fundamental para o nível I é a limitação funcional mais evidente em tarefas de maior demanda; para o nível III, a criança necessitaria de dispositivo manual de mobilidade para a marcha habitual. O GMFCS descreve o que a criança realmente faz no cotidiano.",
+  "conceito": "### GMFCS (6 a 12 anos)\n| Nível | Mobilidade |\n|---|---|\n| I | anda sem restrições; corre e salta com limitação |\n| II | anda na maioria dos ambientes; limitação em distâncias, terreno irregular |\n| III | anda com ==dispositivo manual== (andador, muletas); cadeira para distâncias |\n| ==IV== | ==controle de cabeça e tronco==; anda pouco (casa, com ajuda); ==cadeira de rodas na comunidade== (pode ser motorizada) |\n| V | sem controle de cabeça e tronco; transportado |\n\n### Uso ortopédico\n| Nível | Preocupação |\n|---|---|\n| I-III | marcha: análise, cirurgia multinível |\n| ==IV-V== | ==luxação do quadril== (vigilância radiográfica), escoliose |\n\n- Índice de migração de Reimers > 30 a 40%: cirurgia de partes moles ou osteotomias.\n\n### Escadas no GMFCS\n| Nível | Escadas |\n|---|---|\n| I | sobe sem corrimão |\n| ==II== | ==segurando no corrimão== |\n| III | corrimão e ajuda |\n\n> **Na prova:** anda na maioria dos ambientes e sobe com corrimão = ==GMFCS II==",
+  "correta": "**GMFCS II.**\n- Anda sem dispositivo na maioria dos ambientes.\n- Escadas com corrimão.",
   "incorretas": {
-   "A": "GMFCS I corresponde a marcha independente com maior capacidade para escadas, corrida e salto, ainda que velocidade e coordenação possam ser menores que as dos pares. Dependência do corrimão como padrão habitual aproxima a criança do nível II.",
-   "C": "No nível III, o elemento distintivo é necessidade de dispositivo de mobilidade manual, como muletas ou andador, para caminhar em ambientes internos, além de maior uso de mobilidade sobre rodas em trajetos longos.",
-   "D": "No nível IV, a mobilidade autônoma é consideravelmente mais limitada e a criança costuma necessitar assistência física ou mobilidade motorizada. Andar na maioria dos ambientes é capacidade superior ao esperado nesse nível."
+   "A": "**GMFCS I.**\n- Sobe escadas sem apoio.",
+   "C": "**GMFCS III.**\n- Precisa de dispositivo manual.",
+   "D": "**GMFCS IV.**\n- Cadeira na comunidade."
   },
   "referencias": [
    "Palisano R, Rosenbaum P, Walter S, Russell D, Wood E, Galuppi B. Development and reliability of a system to classify gross motor function in children with cerebral palsy. Dev Med Child Neurol. 1997;39:214-223. PMID: 9183258.",
    "Rosenbaum P et al. Development of the Gross Motor Function Classification System for cerebral palsy. PMID: 18318732."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0369": {
-  "conceito": "O tálus vertical congênito é uma deformidade rígida em pé plano convexo, também chamada rocker-bottom. A alteração central é luxação dorsal fixa do navicular sobre a cabeça do tálus, com tálus orientado verticalmente, retropé em equino-valgo e antepé/médiopé dorsifletidos e abduzidos. Diversas estruturas dorsolaterais encontram-se contraídas, incluindo tibial anterior, extensores longos dos dedos e do hálux e cápsula talonavicular; posteriormente também há encurtamento do Aquiles. Aproximadamente metade dos casos pode estar associada a doenças neuromusculares ou síndromes, como artrogripose. O diagnóstico radiográfico requer incidências laterais em flexão plantar máxima para demonstrar persistência da luxação talonavicular. O tratamento atual frequentemente utiliza manipulação e gessos seriados reversos ao princípio de Ponseti, seguidos de redução minimamente invasiva e tenotomia do Aquiles.",
-  "correta": "A alternativa C está correta. A contratura do tibial anterior integra o conjunto de partes moles dorsais encurtadas do tálus vertical e contribui para manter o mediopé e antepé em dorsiflexão. O reconhecimento dessa anatomia é importante porque a deformidade é rígida e não corresponde a um simples pé plano flexível.",
+  "conceito": "### Pé talo vertical congênito\n- ==Luxação dorsal fixa da talonavicular==; tálus vertical, calcâneo em equino.\n- Aspecto de ==mata-borrão== (rocker-bottom): planta convexa, cabeça do tálus palpável na planta.\n- Presente ==ao nascer==; rígido.\n\n### Partes moles retraídas\n| Grupo | Estruturas |\n|---|---|\n| dorsais | ==tibial anterior==, extensores dos dedos e do hálux, fibulares |\n| posteriores | tendão calcâneo (equino) |\n\n### Associações (cerca de 50%)\n- Artrogripose, mielomeningocele, síndromes cromossômicas (trissomias 13, 18), Larsen.\n\n### Diagnóstico e tratamento\n- RX em ==flexão plantar máxima==: talonavicular não reduz (tálus oblíquo reduz).\n- ==Dobbs==: gessos reversos ao Ponseti + pino talonavicular + tenotomia do calcâneo.\n- Diferencial: ==tálus oblíquo==, pé ==calcaneovalgo== postural.\n\n> **Na prova:** talo vertical = ==tibial anterior retraído==, congênito e associado",
+  "correta": "**Tibial anterior contraturado.**\n- Com extensores e fibulares.\n- Mantém o dorso luxado.",
   "incorretas": {
-   "A": "O tálus vertical é congênito e está presente ao nascimento, embora possa ser reconhecido tardiamente. Não surge secundariamente meses depois do parto como uma deformidade adquirida.",
-   "B": "Existe associação importante com artrogripose, mielomeningocele, síndromes genéticas e outras doenças neuromusculares. Portanto, o diagnóstico exige avaliação global da criança e não apenas do pé.",
-   "D": "Pé torto congênito é praticamente a deformidade oposta em vários componentes e não é o principal diagnóstico diferencial. O diferencial clássico inclui pé calcaneovalgo e pé plano oblíquo, que podem ser mais flexíveis."
+   "A": "**Presente ao nascer.**\n- Deformidade congênita rígida.",
+   "B": "**Associação em metade.**\n- Artrogripose, MMC, trissomias.",
+   "D": "**Diferencial é o calcaneovalgo e o tálus oblíquo.**\n- PTC é deformidade oposta."
   },
   "referencias": [
    "Congenital Vertical Talus: An Updated Review. PMCID: PMC10518251.",
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0370": {
-  "conceito": "A correção pelo método de Ponseti respeita a anatomia tridimensional do pé torto. A sequência clássica é corrigir primeiro o cavo elevando o primeiro metatarsal e alinhando o antepé com o retropé. Depois, mantendo o pé em supinação relativa e aplicando contrapressão sobre a face lateral da cabeça do tálus, o complexo calcaneopedal é progressivamente abduzido. Essa abdução permite que calcâneo e navicular se desloquem lateralmente ao redor do tálus, corrigindo simultaneamente adução e varo. O erro clássico é pronar ou evertir o antepé para 'corrigir' o varo: isso aumenta o cavo e pode gerar deformidade em mata-borrão. Equino é corrigido apenas depois que a abdução está adequada, frequentemente por tenotomia percutânea do Aquiles. Após correção, a órtese de abdução é indispensável para prevenir recidiva.",
-  "correta": "A alternativa C está correta. Durante a correção do aduto e do varo pelo método de Ponseti, o antepé deve permanecer em supinação enquanto todo o complexo do pé é abduzido sob a cabeça do tálus. Essa técnica evita pronar apenas o antepé e permite que o calcâneo saia do varo por movimento acoplado. A supinação inicialmente também corrige o cavo ao alinhar o primeiro raio.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** abdução no Ponseti com antepé em ==supinação== (nunca pronar)",
+  "correta": "**Supinação.**\n- Mantém o antepé alinhado ao retropé.\n- Pronar recria o cavo.",
   "incorretas": {
-   "A": "Eversão forçada do retropé não é utilizada para corrigir o varo no Ponseti. O calcâneo corrige espontaneamente à medida que o complexo calcaneopedal é abduzido; tentar evertê-lo diretamente pode causar deformidade iatrogênica.",
-   "B": "Pronação é uma das principais armadilhas do método. Pronar o antepé contra um retropé ainda em varo aumenta o cavo e pode produzir pé em mata-borrão, impedindo a correção anatômica correta.",
-   "D": "Dorsiflexão precoce antes de obter abdução adequada força o tálus e pode produzir rocker-bottom. O equino deve ser abordado no final da sequência, muitas vezes por tenotomia do Aquiles."
+   "A": "**Eversão.**\n- Bloqueia a correção.",
+   "B": "**Pronação.**\n- Piora o cavo.",
+   "D": "**Dorsiflexão.**\n- Só no fim, para o equino."
   },
   "referencias": [
    "Ponseti IV. Congenital Clubfoot: Fundamentals of Treatment. Oxford University Press; 1996.",
    "Pediatric Orthopaedic Society of North America. Clubfoot Study Guide."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0371": {
-  "conceito": "A deformidade dinâmica em supinação observada no pé torto congênito (especialmente em recidivas ou durante a fase de balanço da marcha em pés tratados) resulta de um desequilíbrio muscular característico: o músculo **tibial anterior**, relativamente **forte** e sem o contrabalanço adequado de seu antagonista everto-pronador, o **fibular longo**, que fica relativamente **fraco**, produz uma tração desbalanceada que supina e aduz o antepé durante a fase de balanço. Além disso, há um padrão de **recrutamento compensatório do flexor longo do hálux**, um músculo que substitui parcialmente a função estabilizadora deficiente, contribuindo ainda mais para o padrão de supinação dinâmica observado clinicamente durante a marcha.",
-  "correta": "A. O desbalanço muscular da supinação dinâmica no pé torto congênito envolve tibial anterior forte, fibular longo fraco e recrutamento do flexor do hálux.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Desbalanço da supinação dinâmica\n| Músculo | Situação |\n|---|---|\n| ==tibial anterior== | ==forte==, sem oposição |\n| ==fibular longo== | ==fraco== (não plantiflete o 1º raio) |\n| ==flexor do hálux== | ==recrutado== para abaixar o 1º raio |\n\n- Mesmo mecanismo do ==joanete dorsal==: 1º MT elevado + hálux fletido.\n\n> **Na prova:** supinação dinâmica = ==TA forte, fibular longo fraco, flexor do hálux recrutado== (veja o alerta)",
+  "correta": "**TA forte, fibular longo fraco, flexor do hálux.**\n- TA supina sem oposição.\n- FLH tenta estabilizar o 1º raio.",
   "incorretas": {
-   "B": "É o tibial anterior que está relativamente forte, não fraco, nesse desequilíbrio muscular.",
-   "C": "É o flexor do hálux, não o extensor, que é recrutado de forma compensatória nesse padrão de desbalanço.",
-   "D": "Tanto a relação de força do tibial anterior/fibular longo quanto o músculo recrutado (extensor em vez de flexor do hálux) estão invertidos nessa alternativa."
+   "B": "**Invertido.**\n- TA forte, fibular fraco.",
+   "C": "**Extensor.**\n- Banca considerou o flexor (veja o alerta).",
+   "D": "**Tudo invertido.**\n- TA forte, fibular fraco."
   },
-  "geradoEm": "2026-09-21",
+  "alerta": "Algumas descrições clínicas citam o extensor longo do hálux, recrutado na fase de balanço, junto do tibial anterior na supinação dinâmica. A banca seguiu o modelo do joanete dorsal (flexor do hálux recrutado).",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0372": {
-  "conceito": "A pseudoartrose congênita da tíbia é uma displasia segmentar, frequentemente associada à neurofibromatose tipo 1. Muitas crianças nascem com arqueamento anterolateral e desenvolvem fratura e pseudoartrose posteriormente. A lesão biológica principal envolve periósteo anormal, espessado e substituído por tecido fibro-hamartomatoso altamente celular, com alterações de vascularização, osteogênese deficiente e maior atividade osteoclástica. Esse tecido cria um ambiente hostil à consolidação e explica por que simplesmente fixar a fratura sem abordar o foco patológico apresenta alta taxa de falha. O tratamento moderno busca ressecar tecido anormal, proporcionar estabilidade duradoura e melhorar ambiente biológico, utilizando combinações de haste intramedular, enxerto, enxerto vascularizado, fixação circular ou técnicas de cross-union conforme o caso. Mesmo após união, refratura continua sendo preocupação relevante até a maturidade.",
-  "correta": "A alternativa A está correta. A alteração primária da pseudoartrose congênita da tíbia está no periósteo, que apresenta fibrose e tecido hamartomatoso biologicamente anormal. Essa compreensão é essencial porque a doença não deve ser encarada como uma pseudoartrose traumática comum. O periósteo doente participa da osteólise, da falha de união e da recorrência.",
+  "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n### Patogenia\n- Lesão primária no ==periósteo==: tecido ==fibromatoso hamartomatoso== espessado (células de Schwann/fibroblastos, NF1) que estrangula o osso.\n- Osso osteoclástico, sem potencial osteogênico: não consolida.\n- Tratamento remove o periósteo doente (ressecção ampla) e usa enxerto de periósteo sadio.\n\n> **Na prova:** lesão primária na pseudartrose congênita = ==periósteo==",
+  "correta": "**Periósteo.**\n- Tecido fibromatoso hamartomatoso.\n- Ressecção e enxerto periosteal.",
   "incorretas": {
-   "B": "O endósteo e a medular podem sofrer alterações secundárias, especialmente após fratura e múltiplas cirurgias, mas a anormalidade histológica clássica descrita como fundamental está no periósteo e nos tecidos circundantes.",
-   "C": "A artéria tibial anterior não é a sede primária da doença. Alterações vasculares locais podem participar da fisiopatologia, mas a entidade não é explicada por uma lesão isolada desse vaso.",
-   "D": "A fáscia do tibial anterior não é a estrutura em que se origina a lesão. A deformidade anterolateral pode sugerir relação topográfica com o compartimento anterior, mas a patologia fundamental é periosteal."
+   "B": "**Endósteo.**\n- Não é a origem.",
+   "C": "**Artéria.**\n- Sem papel primário.",
+   "D": "**Fáscia.**\n- Não é a sede da lesão."
   },
   "referencias": [
    "Boyd HB. Pathology and natural history of congenital pseudarthrosis of the tibia. Clin Orthop Relat Res. 1982;(166):5-13. PMID: 7083685.",
    "Congenital pseudarthrosis of the tibia: Management and complications. PMCID: PMC3543877."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0373": {
   "conceito": "A instabilidade atlanto-odontoide (atlantoaxial) é uma condição bem documentada em pacientes com síndrome de Down, decorrente da frouxidão ligamentar generalizada característica da condição (envolvendo o ligamento transverso do atlas, que normalmente mantém o processo odontoide do áxis firmemente contra o arco anterior do atlas). Estudos de triagem radiográfica mostram essa instabilidade (definida por um intervalo atlanto-odontoide aumentado) em cerca de **10%** dos pacientes com síndrome de Down, sendo importante notar que a grande maioria desses casos permanece **assintomática**, e apenas uma pequena fração desenvolve sintomas neurológicos relacionados à compressão medular, o que orienta a triagem e o acompanhamento clínico, mais do que necessariamente a intervenção cirúrgica profilática em todos os casos com instabilidade radiográfica isolada.",
