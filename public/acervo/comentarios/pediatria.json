@@ -1524,117 +1524,117 @@
   "conferido": false
  },
  "pediatria-0105": {
-  "conceito": "Artrogripose multiplex congênita descreve múltiplas contraturas presentes ao nascimento envolvendo pelo menos duas regiões corporais. Não é uma doença única: a redução dos movimentos fetais pode decorrer de causas neuropáticas, miopáticas, alterações do tecido conjuntivo, restrição intrauterina e numerosas síndromes. A amioplasia é o fenótipo clássico. Nos membros superiores, o padrão típico inclui ombros aduzidos e rodados internamente, cotovelos frequentemente em extensão, antebraços pronados e punhos em flexão e desvio ulnar. Nos membros inferiores podem existir luxação do quadril, joelhos rígidos e pés tortos. O tratamento inicia-se precocemente com mobilização, alongamento, fisioterapia e órteses. Procedimentos cirúrgicos são guiados por função: conseguir levar a mão à boca, posicionar o punho para preensão e obter um membro inferior plantígrado pode ser mais importante que obter amplitude articular normal.",
-  "correta": "A alternativa A está correta. O padrão clássico da amioplasia combina cotovelo em extensão, ombro em rotação interna e punho fletido. Essa configuração resulta de hipoplasia muscular e desequilíbrio das estruturas periarticulares durante o desenvolvimento fetal. O reconhecimento do padrão ajuda a distinguir amioplasia de artrogriposes distais e de síndromes específicas com outras distribuições de contraturas.",
+  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n> **Na prova:** amioplasia = ombro ==aduzido e em RI==, cotovelo estendido, ==punho fletido==",
+  "correta": "**Rotação interna e punho fletido.**\n- Postura típica da amioplasia.\n- Cotovelo estendido.",
   "incorretas": {
-   "B": "O punho em flexão é compatível com a amioplasia, porém o ombro tipicamente encontra-se em rotação interna, e não externa.",
-   "C": "A rotação interna do ombro está correta, mas o punho costuma estar fletido e frequentemente desviado ulnarmente, não estendido.",
-   "D": "Rotação externa do ombro e extensão do punho representam praticamente o padrão oposto à apresentação clássica de amioplasia."
+   "B": "**Rotação errada.**\n- É interna.",
+   "C": "**Punho errado.**\n- Fletido.",
+   "D": "**Duplamente errada.**\n- RE e punho estendido."
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0106": {
-  "conceito": "Crouch gait, ou marcha agachada, é um padrão patológico frequente na paralisia cerebral espástica, principalmente diplegia. Durante a fase de apoio, existe flexão excessiva do quadril e joelho associada a dorsiflexão excessiva do tornozelo. A fisiopatologia é multifatorial: fraqueza de extensores do quadril e joelho, contraturas, aumento de anteversão femoral, torsão tibial externa, pé plano-valgo, insuficiência do tríceps sural e alongamento excessivo prévio do Aquiles podem contribuir. O aumento da flexão do joelho eleva muito a demanda sobre o quadríceps e aumenta o gasto energético. O exame deve diferenciar espasticidade dinâmica de contratura fixa e avaliar força, lever-arm dysfunction e alinhamento. Análise tridimensional da marcha pode orientar procedimentos multiníveis. Uma armadilha de prova é confundir crouch gait com equino: no agachamento verdadeiro, o tornozelo está geralmente excessivamente dorsifletido durante o apoio.",
-  "correta": "A alternativa B está correta. A marcha agachada é definida pela combinação de flexão excessiva do quadril, flexão persistente do joelho e dorsiflexão excessiva do tornozelo durante a fase de apoio. A posição desloca o centro de massa e aumenta enormemente a demanda do quadríceps. Em pacientes com paralisia cerebral, esse padrão pode piorar após enfraquecimento excessivo do tríceps sural.",
+  "conceito": "### Padrões sagitais de marcha na diplegia (Rodda e Graham)\n| Padrão | Tornozelo | Joelho | Quadril |\n|---|---|---|---|\n| I equino verdadeiro | equino | estendido ou recurvado | estendido |\n| II marcha em salto (jump) | equino | fletido | fletido |\n| III equino aparente | neutro | fletido | fletido |\n| ==IV agachada (crouch)== | ==dorsiflexão excessiva== | ==fletido== | ==fletido== |\n\n### Marcha agachada\n- Causas: ==alongamento excessivo do tendão calcâneo== (sóleo fraco), isquiotibiais e psoas curtos, patela alta, deformidades de alavanca.\n- Consequências: dor anterior no joelho, fratura por estresse da patela, alto gasto energético.\n- Tratamento: órtese de reação ao solo, cirurgia multinível (extensão femoral distal, avanço patelar).\n\n> **Na prova:** crouch gait = joelho fletido + ==quadril fletido + dorsiflexão excessiva==.",
+  "correta": "**Flexão do quadril e dorsiflexão excessiva.**\n- Três articulações cedendo no apoio.\n- Frequentemente após alongamento excessivo do tendão calcâneo.",
   "incorretas": {
-   "A": "Flexão de quadril e joelho é compatível com crouch gait, mas equino excessivo não. Equino produz padrão em flexão plantar; a marcha agachada típica apresenta dorsiflexão aumentada no apoio.",
-   "C": "Extensão do quadril não é o componente característico e equino também está em direção oposta ao padrão de tornozelo da marcha agachada.",
-   "D": "Dorsiflexão excessiva está correta, porém o quadril tende a permanecer em flexão, e não extensão."
+   "A": "**Equino.**\n- Seria jump gait.",
+   "C": "**Duplamente errada.**\n- Quadril estendido e equino.",
+   "D": "**Quadril errado.**\n- Fletido."
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/cerebral-palsy"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0107": {
-  "conceito": "A displasia acetabular é tridimensional e não deve ser avaliada apenas pela cobertura lateral na radiografia anteroposterior. A incidência de falso perfil de Lequesne posiciona a pelve obliquamente e permite avaliar a cobertura anterior da cabeça femoral por meio do ângulo centro-borda anterior. Já o ângulo centro-borda lateral de Wiberg é obtido na incidência anteroposterior e estima cobertura superolateral. O ângulo de Tönnis avalia inclinação do teto acetabular. Em adolescentes e adultos jovens, a combinação dessas medidas ajuda a caracterizar deficiência global ou focal de cobertura, instabilidade e indicação de procedimentos de preservação, como osteotomia periacetabular. A armadilha é chamar toda displasia de deficiência lateral: alguns pacientes possuem cobertura lateral limítrofe, mas deficiência anterior relevante identificada apenas em falso perfil.",
-  "correta": "A alternativa C está correta. A incidência em falso perfil é especialmente útil para avaliar cobertura anterior do acetábulo, quantificada pelo ângulo centro-borda anterior. Dessa forma, complementa a radiografia anteroposterior, que fornece sobretudo informações sobre cobertura lateral e inclinação do teto acetabular.",
+  "conceito": "### Radiografias na displasia do quadril\n| Incidência | Avalia |\n|---|---|\n| AP da bacia | CE lateral (Wiberg), índice acetabular, Tönnis, Shenton, extrusão |\n| ==falso perfil (Lequesne)== | ==cobertura anterior== (ângulo CE anterior: normal > 20 a 25°) |\n| Dunn 45° | colo, came |\n| abdução-RI (von Rosen) | congruência na redução, planejar osteotomia |\n\n### Ângulos\n| Ângulo | Normal | Displasia |\n|---|---|---|\n| CE lateral | > 25° | < 20° |\n| CE anterior (falso perfil) | > 20° | < 20° |\n| Tönnis (inclinação do teto) | 0 a 10° | > 10° |\n\n> **Na prova:** falso perfil avalia a displasia ==anterior== do acetábulo.",
+  "correta": "**Anterior.**\n- Ângulo centro-borda anterior de Lequesne.\n- Complementa o CE lateral do AP.",
   "incorretas": {
-   "A": "A cobertura lateral é melhor estudada pelo ângulo centro-borda lateral na radiografia anteroposterior da pelve, não sendo o principal objetivo do falso perfil.",
-   "B": "Cobertura medial não é a variável principal definida pela incidência de Lequesne. O exame busca sobretudo demonstrar o componente anterior da cobertura acetabular.",
-   "D": "A parede posterior pode ser avaliada por outros sinais radiográficos e por métodos tridimensionais, mas o falso perfil foi desenvolvido principalmente para mensuração da cobertura anterior."
+   "A": "**AP.**\n- Cobertura lateral.",
+   "B": "**Não é o foco.**\n- Medial.",
+   "D": "**Não é o foco.**\n- Posterior se vê em TC ou sinais no AP."
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9983115/",
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2682767/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0108": {
-  "conceito": "Na corrida, o apoio monopodálico concentra carga em um membro. Os abdutores do quadril estabilizam a pelve no plano frontal enquanto forças de reação do solo e aceleração aumentam a carga articular. Esses valores são estimativas biomecânicas e variam com velocidade, técnica, massa e inclinação.",
-  "correta": "A alternativa D está correta: a questão adota até 10 vezes o peso corporal como força do mecanismo abdutor durante apoio monopodálico na corrida. O número não deve ser confundido com caminhada, em que as forças de contato são menores.",
+  "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n### Carga no quadril\n| Situação | Força articular / abdutora |\n|---|---|\n| apoio bipodal | cerca de 1/3 do peso por quadril |\n| apoio monopodal (parado) | cerca de 2,5 a 3 vezes o peso |\n| marcha | 3 a 5 vezes |\n| ==corrida== | ==até cerca de 10 vezes== |\n\n- Braço de alavanca: peso corporal (longo) × abdutores (curto): por isso os abdutores precisam de muita força.\n- Bengala do lado ==oposto== reduz a carga.\n\n> **Na prova:** abdutores na corrida = até ==10 vezes o peso==",
+  "correta": "**10 vezes.**\n- Braço de alavanca desfavorável dos abdutores.\n- Carga máxima na corrida.",
   "incorretas": {
-   "A": "A alternativa A (3 vezes.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "B": "A alternativa B (5 vezes.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "C": "A alternativa C (7 vezes.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta."
+   "A": "**Apoio monopodal parado.**\n- Cerca de 3 vezes.",
+   "B": "**Marcha.**\n- Até cerca de 5.",
+   "C": "**Subestima.**\n- A corrida chega a 10."
   },
   "referencias": [
    "Hip joint forces during walking and running. https://pmc.ncbi.nlm.nih.gov/articles/PMC5724525/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0109": {
-  "conceito": "O método de Ponseti corrige o pé torto congênito seguindo a anatomia da deformidade CAVE: cavo, aduto, varo e equino. A primeira etapa é corrigir o cavo, que decorre principalmente de flexão plantar excessiva do primeiro raio em relação aos demais. Para isso, eleva-se ou dorsiflete-se o primeiro metatarsal e mantém-se o antepé em supinação relativa, alinhando antepé e retropé. Depois, o pé é progressivamente abduzido ao redor da cabeça do tálus, corrigindo adução e varo de forma acoplada. O equino é corrigido por último, frequentemente por tenotomia percutânea do Aquiles. Pronar o antepé para corrigir a supinação aparente é um erro clássico e pode criar pé em mata-borrão. Após correção, a órtese de abdução é fundamental para evitar recidiva.",
-  "correta": "A alternativa B está correta. A primeira manipulação do método de Ponseti visa corrigir o cavo. Isso é feito por supinação do antepé e dorsiflexão do primeiro metatarsal, colocando todos os metatarsais no mesmo plano. Somente depois dessa correção é seguro iniciar a abdução progressiva do complexo calcaneopedal.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** primeira manipulação de Ponseti = ==cavo, supinando o antepé e elevando o 1º MT==",
+  "correta": "**Cavo, por supinação e dorsiflexão do 1º MT.**\n- Alinha o antepé ao retropé.\n- Pronar pioraria o cavo.",
   "incorretas": {
-   "A": "O varo não é o primeiro componente corrigido isoladamente. Ele melhora durante a abdução do complexo calcaneopedal, após a correção inicial do cavo.",
-   "C": "Além de escolher o varo como primeiro alvo, propõe pronação e flexão plantar do primeiro raio, manobras que piorariam o cavo.",
-   "D": "Identifica corretamente o cavo como alvo inicial, mas descreve a manobra em sentido oposto. O primeiro raio deve ser elevado, e não plantifletido."
+   "A": "**Deformidade errada.**\n- Varo corrige depois.",
+   "C": "**Duplamente errada.**\n- Varo e pronação.",
+   "D": "**Manobra errada.**\n- Pronar aumenta o cavo."
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/clubfoot"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0110": {
-  "conceito": "A pseudoartrose congênita da tíbia é uma displasia segmentar rara, fortemente associada à neurofibromatose tipo 1. A apresentação frequentemente começa como arqueamento anterolateral da tíbia, que pode estar presente desde o nascimento. A criança pode posteriormente fraturar a região displásica após trauma mínimo e evoluir para pseudoartrose resistente. Histologicamente há periósteo anormal e tecido fibro-hamartomatoso, com osteogênese deficiente e maior atividade osteoclástica. A deformidade deve ser diferenciada do arqueamento posteromedial congênito, que se associa a pé calcaneovalgo e costuma remodelar espontaneamente. Em neurofibromatose, café com leite, neurofibromas e outros critérios diagnósticos devem ser pesquisados. Tratamento após fratura é complexo e tem como objetivos obter união, corrigir deformidade e evitar refratura.",
-  "correta": "A alternativa A está correta. A deformidade típica associada à displasia tibial e pseudoartrose congênita, especialmente na neurofibromatose tipo 1, é arqueamento anterolateral. Essa direção da curvatura é uma associação clássica de prova e possui grande importância porque sinaliza risco de fratura e pseudoartrose futura.",
+  "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n### Histologia\n- ==Hamartoma fibroso no periósteo espessado== (tecido fibroso proliferativo) que estrangula o osso.\n- Por isso a ressecção do periósteo doente faz parte do tratamento.\n\n> **Na prova:** pseudartrose congênita da tíbia = alteração no ==periósteo== com ==tecido fibroso==",
+  "correta": "**Anterolateral.**\n- Arqueamento típico da pseudartrose congênita.\n- NF1 em metade dos casos.",
   "incorretas": {
-   "B": "Arqueamento anteromedial não é o padrão clássico da pseudoartrose congênita da tíbia.",
-   "C": "O componente lateral está presente na deformidade verdadeira, porém a direção no plano sagital é anterior, e não posterior.",
-   "D": "Arqueamento posteromedial corresponde a outra entidade congênita, geralmente associada a pé calcaneovalgo e com melhor potencial de remodelação."
+   "B": "**Hemimelia fibular.**\n- Anteromedial.",
+   "C": "**Não é padrão.**\n- Posterolateral.",
+   "D": "**Benigno.**\n- Posteromedial."
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/congenital-pseudarthrosis-of-the-tibia-%28cpt%29"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0111": {
-  "conceito": "O crescimento longitudinal do membro inferior depende de diferentes contribuições fisárias. A fise distal do fêmur é a mais produtiva do membro inferior, contribuindo aproximadamente 9 mm por ano; a fise proximal da tíbia contribui cerca de 6 mm por ano. Juntas, as duas fises ao redor do joelho respondem pela maior parte do crescimento longitudinal do membro. Esse conhecimento é essencial em discrepância dos membros inferiores, lesões fisárias e planejamento de epifisiodese. Uma regra clássica do método de Menelaus considera cerca de 15 mm por ano ao redor do joelho, com 9 mm provenientes do fêmur distal e 6 mm da tíbia proximal. A fise proximal do fêmur contribui relativamente pouco para o comprimento total do fêmur, enquanto a distal é dominante.",
-  "correta": "A alternativa B está correta. A fise distal do fêmur é a que apresenta maior contribuição anual para o crescimento longitudinal do membro inferior. Por isso, lesões nessa região podem produzir discrepância importante e deformidade angular, e epifisiodese distal femoral é uma ferramenta potente na correção de discrepâncias previstas na maturidade.",
+  "conceito": "### Medida da discrepância\n| Medida | Pontos | O que mostra |\n|---|---|---|\n| ==real== (verdadeira) | ==EIAS ao maléolo medial== | comprimento ósseo |\n| aparente | umbigo (ou xifoide) ao maléolo medial | inclui obliquidade pélvica e contraturas |\n| blocos sob o pé | nivelar as cristas ilíacas | prática, funcional |\n| Galeazzi | joelhos com quadris fletidos | fêmur × tíbia |\n\n### Imagem\n- Escanometria / telerradiografia; TC (scanograma) com menos radiação.\n\n### Previsão na criança\n| Método | Uso |\n|---|---|\n| Moseley (gráfico de linha reta) | discrepância na maturidade |\n| Paley (multiplicador) | simples |\n| Green-Anderson | tabelas de crescimento |\n\n### Conduta pela discrepância prevista\n| Discrepância | Conduta |\n|---|---|\n| < 2 cm | nada ou palmilha |\n| 2 a 5 cm | ==epifisiodese== contralateral |\n| > 5 cm | alongamento |\n| > 15 a 20 cm | amputação/prótese |\n\n### Contribuição das fises\n| Fise | mm/ano | % do membro |\n|---|---|---|\n| fêmur proximal | 3 | 15% |\n| ==fêmur distal== | ==9 a 10== | ==cerca de 37 a 40%== (a maior) |\n| tíbia proximal | 6 | cerca de 28% |\n| tíbia distal | 3 a 5 | 20% |\n\n- Joelho = cerca de 65% do crescimento do membro inferior.\n- Menino cresce até cerca de 16 anos, menina até 14 (ósseo).\n\n> **Na prova:** fise que mais cresce = ==fêmur distal==",
+  "correta": "**Fêmur distal.**\n- Cerca de 1 cm por ano.\n- Aproximadamente 40% do membro.",
   "incorretas": {
-   "A": "A fise distal da tíbia participa do crescimento, porém sua contribuição anual é muito menor que a da fise distal do fêmur.",
-   "C": "A fise proximal da tíbia é altamente ativa e contribui aproximadamente 6 mm por ano, mas ainda menos que os cerca de 9 mm anuais do fêmur distal.",
-   "D": "A fise proximal do fêmur contribui relativamente pouco para o comprimento longitudinal total e não é a principal fise de crescimento do membro."
+   "A": "**Menor.**\n- Cerca de 20%.",
+   "C": "**Segunda.**\n- Cerca de 28%.",
+   "D": "**Menor.**\n- Cerca de 15%."
   },
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0112": {
-  "conceito": "O eixo coronal fisiológico dos membros inferiores muda progressivamente com o crescimento. O recém-nascido apresenta genu varum, que diminui durante o segundo ano. Em torno de 18 a 24 meses, o alinhamento aproxima-se do neutro e depois progride para genu valgum. O pico de valgo ocorre aproximadamente entre 3 e 4 anos, seguido de regressão gradual até um valgo discreto semelhante ao adulto por volta dos 7 anos. A avaliação deve considerar simetria, magnitude e progressão. Varismo persistente depois dos 2 a 3 anos, especialmente em criança obesa, sugere Blount; deformidades assimétricas podem indicar lesão fisária ou doença metabólica. Em TEOT, a sequência varo-neutro-valgo é muito cobrada.",
-  "correta": "A alternativa B está correta. O genu valgo fisiológico atinge sua maior magnitude aproximadamente aos 3 a 4 anos, sendo 4 anos a melhor resposta entre as opções. A partir daí ocorre redução progressiva até o alinhamento habitual da criança maior e do adulto.",
+  "conceito": "### Evolução angular fisiológica (Salenius)\n| Idade | Alinhamento |\n|---|---|\n| nascimento a 1,5-2 anos | ==varo== (máximo ao nascer) |\n| 1,5 a 2 anos | neutro |\n| ==3 a 4 anos== | ==valgo máximo== (cerca de 10 a 12°) |\n| 7 anos | valgo adulto (cerca de 5 a 7°) |\n\n### Sinais de patologia\n- Assimetria, deformidade fora da curva esperada, baixa estatura, dor, progressão.\n- Varo após 2 anos: Blount, raquitismo, displasias.\n- Valgo > 15° ou distância intermaleolar > 8 cm após 7 anos: investigar.\n\n### Tratamento do valgo patológico\n- ==Crescimento guiado== (placa em 8 medial) antes do fechamento fisário.\n\n> **Na prova:** valgo fisiológico máximo = ==por volta de 4 anos== (3 a 4).",
+  "correta": "**4 anos.**\n- Valgo máximo entre 3 e 4 anos.\n- Estabiliza no padrão adulto aos 7.",
   "incorretas": {
-   "A": "Por volta de 1 ano e meio a criança está saindo do varo fisiológico e aproximando-se do alinhamento neutro; ainda não atingiu o pico de valgo.",
-   "C": "Aos 6 anos o valgo já está em regressão em direção ao padrão adulto, portanto não representa seu máximo fisiológico.",
-   "D": "Aos 8 anos o eixo normalmente já se estabilizou próximo do alinhamento definitivo, muito depois do pico fisiológico."
+   "A": "**Neutro.**\n- Transição do varo.",
+   "C": "**Já reduzindo.**\n- Caminho do adulto.",
+   "D": "**Adulto.**\n- Valgo estabilizado."
   },
   "referencias": [
    "https://pubmed.ncbi.nlm.nih.gov/8459023/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0113": {
   "conceito": "O glúteo máximo é o principal extensor potente do quadril, especialmente ao levantar-se, subir escadas e controlar o tronco no início do apoio. Quando existe fraqueza importante, o paciente utiliza uma compensação biomecânica conhecida como marcha do glúteo máximo: inclina o tronco posteriormente no contato inicial e na resposta à carga. Ao deslocar o centro de massa para trás do quadril, a linha da força de reação do solo gera um momento extensor externo, reduzindo a demanda sobre o músculo insuficiente. Essa marcha deve ser diferenciada de Trendelenburg, relacionada aos abdutores e marcada por queda pélvica contralateral e inclinação lateral compensatória do tronco.",
