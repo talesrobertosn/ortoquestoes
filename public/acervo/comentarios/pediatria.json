@@ -3241,47 +3241,47 @@
   "conferido": false
  },
  "pediatria-0245": {
-  "conceito": "No protocolo de Ponseti para manutenção da correção do pé torto congênito, após a última troca de gesso (e eventual tenotomia do tendão calcâneo), utiliza-se a órtese de abdução tipo **Denis Browne**, uma barra rígida conectando dois sapatos de cano alto, mantendo os pés em posição de abdução e rotação externa para preservar a correção obtida. Nos casos **bilaterais**, a orientação clássica é posicionar ambos os pés em rotação lateral de aproximadamente **70 graus**, com a barra ajustada na largura dos ombros da criança, um grau de rotação externa maior do que o usado no lado afetado em casos unilaterais (onde o pé são costuma ser posicionado em cerca de 30-40°, e o pé afetado em cerca de 60-70°).",
-  "correta": "C. Na órtese de Denis Browne para pé torto bilateral, os pés devem ser posicionados em rotação lateral de aproximadamente 70 graus.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n> **Na prova:** pé normal na órtese = ==40° de rotação lateral==",
+  "correta": "**70 graus.**\n- Bilateral: os dois pés a 60 a 70°.\n- Unilateral: normal a 30 a 40°.",
   "incorretas": {
-   "A": "50 graus subestima o grau de rotação externa classicamente recomendado para o pé torto bilateral na órtese de Denis Browne.",
-   "B": "60 graus é o valor mais próximo do usado no pé afetado em casos unilaterais, mas não corresponde ao valor padrão recomendado para os casos bilaterais.",
-   "D": "80 graus supera o grau de rotação externa classicamente recomendado para essa órtese."
+   "A": "**Insuficiente.**\n- Abaixo do recomendado.",
+   "B": "**Limite inferior.**\n- O gabarito é 70°.",
+   "D": "**Excessivo.**\n- Acima da faixa."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0246": {
-  "conceito": "No tratamento da doença de Blount infantil, a órtese (geralmente do tipo KAFO, com controle de varo) é uma opção terapêutica reservada para os estágios iniciais da doença, sendo indicada preferencialmente em crianças **menores de 3 anos de idade**, faixa etária em que ainda existe potencial de resposta à correção não cirúrgica, já que a doença ainda não progrediu para uma barra fisária estabelecida. O uso é mantido por um período limitado, tipicamente **até cerca de um ano**, com reavaliação radiográfica periódica: se não houver resposta satisfatória nesse intervalo, a indicação cirúrgica (osteotomia) passa a ser considerada, já que o uso prolongado de órtese sem resposta apenas atrasa uma intervenção necessária.",
-  "correta": "A. A órtese na doença de Blount deve ser indicada até os 3 anos de idade e usada por até um ano.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Órtese (KAFO)\n- Indicação: ==< 3 anos==, ==Langenskiöld I-II==, especialmente unilateral.\n- Órtese de apoio com força valgizante, uso diurno na marcha.\n- Sem melhora em cerca de 1 ano ou > 4 anos: ==osteotomia valgizante== da tíbia (hipercorrigir).\n\n> **Na prova:** Blount unilateral aos 2,5 anos, estágio II = ==órtese==",
+  "correta": "**Até 3 anos, por até um ano.**\n- Estágios precoces.\n- Sem melhora em um ano: osteotomia.",
   "incorretas": {
-   "B": "6 anos é uma idade tardia demais para se esperar boa resposta ao tratamento com órtese na doença de Blount infantil.",
-   "C": "O uso da órtese não é mantido até a maturidade esquelética, é reavaliado após cerca de um ano, quando a cirurgia passa a ser considerada em caso de resposta insatisfatória.",
-   "D": "Nem a idade de indicação (6 anos) nem a duração de uso (até a maturidade esquelética) correspondem à prática recomendada para a órtese na doença de Blount infantil."
+   "B": "**Idade alta.**\n- Aos 6 a órtese não funciona.",
+   "C": "**Tempo errado.**\n- Não até a maturidade.",
+   "D": "**Duplamente errada.**\n- Idade e tempo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0247": {
-  "conceito": "A coxa vara do desenvolvimento, embora possa ocorrer de forma isolada, tem uma associação reconhecida com condições displásicas esqueléticas mais amplas, entre elas, a **disostose cleidocraniana**, uma displasia óssea generalizada caracterizada por aplasia/hipoplasia das clavículas, atraso de ossificação de múltiplas suturas e ossos, e alterações do quadril que incluem, classicamente, a coxa vara entre suas manifestações ortopédicas.\n\nAs demais condições listadas (pé talo vertical, escoliose congênita, síndrome de Marfan) não têm essa associação clássica e consistente com a coxa vara do desenvolvimento na literatura ortopédica pediátrica.",
-  "correta": "D. A coxa vara do desenvolvimento está mais frequentemente associada à disostose cleidocraniana.",
+  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Associações\n- ==Disostose cleidocraniana== (RUNX2): clavículas ausentes/hipoplásicas, fontanelas abertas, ==coxa vara==, sínfise púbica alargada.\n- Displasias metafisárias (Schmid), espondiloepifisárias.\n\n> **Na prova:** coxa vara do desenvolvimento associa-se à ==disostose cleidocraniana==",
+  "correta": "**Disostose cleidocraniana.**\n- Defeito de ossificação membranosa e endocondral.\n- Coxa vara é achado clássico.",
   "incorretas": {
-   "A": "O pé talo vertical não tem associação clássica consistente com a coxa vara do desenvolvimento.",
-   "B": "A escoliose congênita não tem associação clássica consistente com a coxa vara do desenvolvimento.",
-   "C": "A síndrome de Marfan não tem associação clássica consistente com a coxa vara do desenvolvimento, suas manifestações esqueléticas características são outras (aracnodactilia, escoliose, deformidades torácicas)."
+   "A": "**Sem relação.**\n- Pé em mata-borrão.",
+   "B": "**Sem relação típica.**\n- Coluna.",
+   "C": "**Hiperfrouxidão.**\n- Não coxa vara."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0248": {
-  "conceito": "Na avaliação tomográfica pós-redução incruenta do quadril na displasia do desenvolvimento do quadril, busca-se confirmar o posicionamento **concêntrico** da cabeça femoral dentro do acetábulo em ambos os lados. A imagem mostra as cabeças femorais bem centralizadas dentro das cavidades acetabulares, de forma simétrica em ambos os quadris (regiões D e E), confirmando a redução bilateral bem-sucedida.",
-  "correta": "B. A imagem demonstra ambos os quadris reduzidos.",
+  "conceito": "### Obstáculos à redução na DDQ\n| Extra-articulares | Intra-articulares |\n|---|---|\n| iliopsoas (estrangula a cápsula em ampulheta) | ==cápsula constrita== (istmo) |\n| adutores | lábio invertido (limbo) |\n| | pulvinar hipertrofiado |\n| | ligamento redondo alongado e espesso |\n| | ligamento transverso do acetábulo |\n\n- Na DDQ tardia, a ==constrição capsular== (ampulheta pelo psoas) é o obstáculo principal segundo a fonte.\n\n### Conduta\n| Idade | Tratamento |\n|---|---|\n| < 6 meses | Pavlik |\n| 6 a 18 meses | redução fechada + gesso (artrografia) |\n| > 18 meses | ==redução aberta== ± osteotomia femoral encurtadora e pélvica |\n\n### Controle pós-redução\n- ==TC ou RM== com poucos cortes após o gesso: confirma a cabeça ==concêntrica== no acetábulo.\n- Na TC axial: metáfise femoral alinhada ao centro do acetábulo (trirradiada), sem deslocamento posterior.\n\n> **Na prova:** imagem pós-redução = ==ambos os quadris reduzidos==",
+  "correta": "**Ambos reduzidos.**\n- Cabeças centradas nos acetábulos.\n- TC confirma a redução no gesso.",
   "incorretas": {
-   "A": "\"Ambos luxados\" implicaria um posicionamento assimétrico e excêntrico das cabeças femorais fora das cavidades acetabulares, diferente do posicionamento concêntrico e simétrico mostrado na imagem.",
-   "C": "A imagem não mostra uma assimetria entre os lados (com um quadril luxado e o outro reduzido); ambos aparecem concentricamente reduzidos.",
-   "D": "Da mesma forma, não há evidência de assimetria entre os lados na imagem, que mostra redução concêntrica bilateral."
+   "A": "**Não luxados.**\n- Centrados.",
+   "C": "**Direito reduzido.**\n- Ambos.",
+   "D": "**Esquerdo reduzido.**\n- Ambos."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0249": {
@@ -3296,54 +3296,54 @@
   "conferido": false
  },
  "pediatria-0250": {
-  "conceito": "No manejo da epifisiólise proximal do fêmur **aguda e instável** (situação de maior risco de necrose avascular, em que a redução precisa ser cuidadosa para não comprometer ainda mais a vascularização da epífise), uma das técnicas descritas para redução aberta suave é a de **Parsch**: realiza-se uma artrotomia anterior com **descompressão da cápsula articular** (aliviando a pressão intracapsular, que pode contribuir para tamponamento vascular) seguida de uma redução aberta **delicada e suave** da epífise, evitando manipulação forçada que aumentaria o risco de lesão dos vasos retinaculares responsáveis pela irrigação da cabeça femoral.\n\nEssa abordagem se diferencia de técnicas mais invasivas, como a osteotomia de subcapital com luxação cirúrgica seguindo a técnica de Ganz/Dunn modificada, que envolve exposição mais extensa e reposicionamento direto da epífise sob visualização completa.",
-  "correta": "C. A técnica de Parsch consiste em artrotomia com descompressão capsular e redução aberta suave na epifisiólise aguda e instável.",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Epifisiólise instável\n| Técnica | Princípio |\n|---|---|\n| ==Parsch== | ==artrotomia anterior, descompressão capsular, redução suave aberta== e fixação |\n| Dunn modificado (Ganz) | luxação cirúrgica, retináculo preservado, encurtamento do colo e redução anatômica |\n| redução incidental + fixação | posicionamento na mesa |\n\n- Descompressão do hematoma intracapsular pode reduzir a necrose.\n\n> **Na prova:** redução aberta suave com descompressão capsular = ==Parsch==",
+  "correta": "**Parsch.**\n- Artrotomia, descompressão e redução suave.\n- Menor taxa de necrose nas séries do autor.",
   "incorretas": {
-   "A": "A técnica de Ganz está associada à luxação cirúrgica controlada do quadril (com preservação vascular), uma abordagem mais extensa do que a artrotomia com descompressão simples descrita.",
-   "B": "A técnica de Dunn (e sua versão modificada, associada a Ganz) envolve osteotomia subcapital com reposicionamento direto da epífise, não apenas artrotomia com descompressão capsular.",
-   "D": "A técnica de Southwick está associada à osteotomia extra-articular (basicervical ou intertrocantérica) para correção de deformidade residual, não à redução aberta suave na fase aguda e instável."
+   "A": "**Luxação cirúrgica.**\n- Via de Ganz.",
+   "B": "**Encurtamento do colo.**\n- Redução anatômica.",
+   "D": "**Ângulo.**\n- Classificação."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0251": {
-  "conceito": "A técnica de **Vulpius** para o alongamento do tríceps sural no tratamento do pé equino na paralisia cerebral consiste em um recesso miofascial realizado ao nível da **junção aponeurótica entre o gastrocnêmio e o sóleo**, um nível intermediário de alongamento (nem na origem proximal do músculo, nem no próprio tendão calcâneo distal), preservando parte da função muscular ativa ao evitar o alongamento excessivo característico das técnicas realizadas mais distalmente, no próprio tendão de Aquiles.",
-  "correta": "B. A técnica de Vulpius é realizada na zona de alongamento 2.",
+  "conceito": "### Zonas do tríceps sural (alongamento na PC)\n| Zona | Local | Técnicas | Alonga |\n|---|---|---|---|\n| 1 | ventres do gastrocnêmio | ==Strayer== (recessão da aponeurose proximal), Baumann (fáscia intramuscular) | só gastrocnêmio |\n| ==2== | ==aponeurose conjunta gastrocnêmio-sóleo, distal aos ventres== | ==Vulpius== (V invertido), Baker (língua em U) | gastro + sóleo moderado |\n| 3 | tendão calcâneo | ==Hoke== (três hemissecções percutâneas), White, Z | tudo; maior risco de ==hiperalongamento== (marcha agachada) |\n\n### Silfverskiöld\n- Equino que ==melhora com joelho fletido==: contratura do ==gastrocnêmio== isolado → zonas 1-2.\n- Equino fixo com joelho fletido: sóleo também → zona 2-3.\n\n> **Na prova:** alongamento na zona 2 = ==Vulpius== (e Baker).",
+  "correta": "**Zona 2.**\n- Recessão em V invertido da aponeurose.\n- Distal aos ventres do gastrocnêmio.",
   "incorretas": {
-   "A": "A zona 1, mais proximal (ao nível do ventre muscular do gastrocnêmio), corresponde a um nível diferente do recesso aponeurótico intermediário característico da técnica de Vulpius.",
-   "C": "A zona 3, mais distal do que a junção miotendínea do gastrocnêmio-sóleo, não corresponde ao nível clássico da técnica de Vulpius.",
-   "D": "A zona 4, correspondente ao alongamento no próprio tendão calcâneo (como no alongamento percutâneo do tendão de Aquiles), é um nível mais distal e diferente do nível aponeurótico intermediário da técnica de Vulpius."
+   "A": "**Ventres.**\n- Strayer, Baumann.",
+   "C": "**Tendão calcâneo.**\n- Hoke, White.",
+   "D": "**Não existe.**\n- São três zonas."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0252": {
-  "conceito": "O broto do membro superior surge por volta do 26º dia de gestação, na parede lateral do embrião, e é formado por um núcleo de MESODERMA DA LÂMINA LATERAL (mesoderma lateral) revestido por ectoderma. A divisão de trabalho entre as camadas germinativas é o que a questão cobra e vale decorar: o MESODERMA LATERAL dá origem ao esqueleto do membro (ossos, cartilagens, tendões e ligamentos), além do tecido conjuntivo e da vasculatura; os MÚSCULOS não vêm dali, e sim das células precursoras miogênicas que MIGRAM dos SOMITOS (mesoderma paraxial) para dentro do broto; e os NERVOS têm origem ECTODÉRMICA, no tubo neural e na crista neural, crescendo para dentro do membro depois que a musculatura já se organizou. Três centros sinalizadores comandam os eixos e são cobrados junto: a CRISTA ECTODÉRMICA APICAL (AER), na borda distal, controla o crescimento PROXIMODISTAL por meio dos fatores de crescimento fibroblástico (FGF); a ZONA DE ATIVIDADE POLARIZANTE (ZPA), na margem posterior, controla o eixo ANTEROPOSTERIOR (radioulnar) pelo Sonic hedgehog; e a via Wnt controla o eixo DORSOVENTRAL. O membro superior desenvolve-se ligeiramente à frente do inferior, e todo o processo de formação está essencialmente completo por volta da oitava semana, o que explica por que os agentes teratogênicos atuam nessa janela estreita, e por que malformações do membro se associam com frequência a malformações cardíacas, renais e hematológicas, formadas no mesmo período.",
-  "correta": "A. O mesoderma lateral é responsável pela formação dos OSSOS, TENDÕES e CARTILAGENS do membro (além do tecido conjuntivo e dos vasos), enquanto a musculatura vem dos somitos e os nervos, do ectoderma.",
+  "conceito": "### Formação do esqueleto do membro\n1. Broto do membro: mesoderma da placa lateral + ectoderma (4ª semana).\n2. ==Condensações mesenquimais== no formato do futuro osso.\n3. Molde cartilaginoso.\n4. Ossificação endocondral.\n\n### Origem de cada tecido\n| Tecido do membro | Origem |\n|---|---|\n| ==ossos, cartilagem, tendões, ligamentos== | ==mesoderma da placa lateral== (condensações mesenquimais) |\n| músculos | somitos (mioblastos migram para o broto) |\n| nervos periféricos, Schwann, melanócitos | crista neural |\n| vasos | angioblastos locais |\n\n### Centros de sinalização\n| Centro | Eixo | Molécula | Falha |\n|---|---|---|---|\n| crista ectodérmica apical | proximal-distal | FGF | deficiências transversas |\n| zona de atividade polarizada | radioulnar | ==Shh== | polidactilia, mão em espelho |\n| ectoderma dorsal | dorsoventral | Wnt7a | unhas palmares, nail-patella |\n\n> **Na prova:** mesoderma da placa lateral = ==osso, cartilagem e tendão==",
+  "correta": "**Ossos, tendões e cartilagens.**\n- Arcabouço vem da placa lateral.\n- Músculos vêm dos somitos.",
   "incorretas": {
-   "B": "Cartilagens e tendões de fato derivam do mesoderma lateral, mas os MÚSCULOS não: as células precursoras miogênicas migram para o broto a partir dos somitos, que são derivados do mesoderma paraxial.",
-   "C": "Ossos e vasos derivam do mesoderma lateral, mas os NERVOS são de origem ectodérmica, brotam do tubo neural e da crista neural e crescem para dentro do membro já formado.",
-   "D": "Erra em dois dos três elementos: os músculos vêm dos somitos e os nervos, do ectoderma. Apenas os vasos sanguíneos derivam do mesoderma lateral."
+   "B": "**Músculos não.**\n- Somitos.",
+   "C": "**Nervos não.**\n- Crista e tubo neural.",
+   "D": "**Nenhum deles.**\n- Outras origens."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 1"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0253": {
-  "conceito": "Na sinostose radioulnar congênita a criança não perde força nem estabilidade, perde a rotação, e fica travada na posição em que a fusão ocorreu. O que decide a conduta, portanto, não é a sinostose em si: é a posição em que o antebraço ficou e o quanto isso atrapalha.",
-  "correta": "Acometimento unilateral com o antebraço em posição neutra é a melhor situação possível, e o tratamento é não cirúrgico. Em neutro a mão alcança a boca, recebe objeto na palma e faz praticamente tudo; e sendo unilateral, o outro lado compensa o que faltar. A cirurgia é reservada à pronação acentuada, sobretudo bilateral, situação em que a criança não consegue receber nada na palma e compensa abduzindo o ombro.",
+  "conceito": "### Sinostose radioulnar congênita\n- Falha de segmentação entre rádio e ulna proximais; **bilateral** em cerca de 60%.\n- Antebraço fixo, frequentemente em **pronação**; compensação pelo ombro e punho.\n\n### Indicação de osteotomia derrotativa\n- Pronação fixa acima de cerca de 60° com prejuízo funcional (levar a mão à boca, receber objetos).\n- Posição alvo: **neutra a 10 a 20° de pronação** no lado dominante; um pouco de supinação no não dominante (em bilaterais).\n\n### Complicações\n| Complicação | Comentário |\n|---|---|\n| ==síndrome compartimental== | ==a mais frequente== com rotações de 90° de uma vez (torção do envelope e dos vasos) |\n| lesão do interósseo posterior | acessos proximais |\n| perda de correção, pseudartrose | incomuns |\n\n### Prevenção\n- Limitar a correção aguda a cerca de **60 a 85°**, osteotomia dupla, fasciotomia profilática, correção gradual com fixador.\n- Vigilância de perfusão e dor desproporcional.\n\n### Separar os ossos\n- Ressecção com interposição: **recidiva** frequente; pouco usada.\n\n### Decisão\n| Situação | Conduta |\n|---|---|\n| ==unilateral, neutro ou leve pronação== | ==não cirúrgico== |\n| pronação > 60° com limitação funcional | osteotomia derrotativa |\n| bilateral em pronação acentuada | derrotar pelo menos um lado |\n\n> **Na prova:** unilateral em neutro = ==não operar==",
+  "correta": "**Não cirúrgico.**\n- Neutro é funcional.\n- O outro lado compensa.",
   "incorretas": {
-   "B": "Ressecar a sinostose sem interpor nada leva à recidiva quase certa: os dois ossos voltam a se fundir.",
-   "C": "A ressecção com interposição existe e é tentada em alguns serviços, mas tem resultado inconstante, recidiva frequente e não se justifica num antebraço já em posição funcional.",
-   "D": "Osteotomia derrotatória se faz para tirar o antebraço de uma pronação acentuada, e não para levá-lo até ela. Fixar em pronação um antebraço que estava em neutro seria criar o problema que a cirurgia deveria resolver, sem contar o risco de síndrome compartimental nas correções amplas."
+   "B": "**Recidiva quase certa.**\n- Refunde.",
+   "C": "**Resultado inconstante.**\n- Não se justifica.",
+   "D": "**O contrário.**\n- Tira da pronação."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 12"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0254": {
   "conceito": "O menisco discoide **assintomático**, achado de forma incidental durante uma artroscopia realizada por outro motivo, não deve ser tratado, a conduta correta é **deixá-lo intacto**, sem qualquer intervenção sobre ele. Isso porque qualquer procedimento sobre o menisco (mesmo uma saucerização parcial) carrega risco de complicações e não deve ser realizado profilaticamente em uma estrutura que não está causando sintomas.\n\nAs indicações de tratamento cirúrgico do menisco discoide (saucerização, com ou sem estabilização periférica, ou raramente meniscectomia) são reservadas para os casos **sintomáticos** (dor, estalido audível/palpável (\"snapping knee\"), bloqueio articular ou instabilidade) e não para achados incidentais assintomáticos.",
