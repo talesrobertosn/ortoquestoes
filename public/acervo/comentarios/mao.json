@@ -4668,91 +4668,92 @@
   "conferido": false
  },
  "mao-0401": {
-  "conceito": "Na classe 1 de Palmer, traumática, as lesões são nomeadas pela borda que se soltou: A é a perfuração central, B a avulsão ulnar, C a distal e D a radial. A classe 2 é degenerativa.",
-  "correta": "A lesão central é a 1A. A conduta segue direto da vascularização: a região central do disco é avascular e não cicatriza, então o tratamento é o desbridamento artroscópico da borda instável, e não a sutura. Guarde o par (1A, centro, avascular, desbrida) e a série resolve-se sozinha, acompanhando o giro em torno do disco.",
+  "conceito": "### Palmer classe 1 e o tratamento\n| Tipo | Local da lesão | Tratamento |\n|---|---|---|\n| 1A | perfuração central (avascular) | desbridamento |\n| 1B | avulsão **ulnar** (fóvea, estiloide) | reinserção na **ulna** |\n| 1C | avulsão **distal** (ulnossemilunar, ulnopiramidal) | reparo ulnocarpal |\n| ==1D== | ==avulsão radial== (incisura sigmoide) | ==reinserção no rádio== (ou desbridamento em lesões pequenas) |\n\n### Por que o rádio na 1D\n- A borda solta é a **radial**: reancora-se o disco na borda da incisura sigmoide (túneis transósseos ou âncoras), artroscópico ou aberto.\n\n### Instabilidade da RUD\n- Mais associada à **1B** (lesão foveal dos ligamentos radioulnares).\n- Teste do **balote** radioulnar em pronação, neutro e supinação.\n\n- Memória: ==centro, ulnar, distal, radial== (A, B, C, D).\n\n### Classe 2 (degenerativa)\n| Tipo | Achado |\n|---|---|\n| 2A | desgaste do CFCT |\n| 2B | + condromalácia do semilunar ou ulna |\n| 2C | + perfuração do CFCT |\n| 2D | + lesão lunopiramidal |\n| 2E | + artrose ulnocarpal |\n\n> **Na prova:** lesão traumática central = ==Palmer 1A== (desbridar).",
+  "correta": "**1A.**\n- Perfuração central, em zona avascular.\n- Não cicatriza: desbridamento artroscópico.",
   "incorretas": {
-   "B": "A 1B é a avulsão ulnar, na fóvea e no estiloide ulnar. Como essa borda é vascularizada, ela se repara com sutura, e é a lesão que mais se associa a instabilidade da radioulnar distal.",
-   "C": "A 1C é a avulsão distal, dos ligamentos ulnossemilunar e ulnopiramidal, com quadro de instabilidade ulnocarpal.",
-   "D": "A 2C é degenerativa: já há perfuração do disco e condromalácia do semilunar ou do piramidal. A questão pede lesão traumática."
+   "B": "**Avulsão ulnar.**\n- Vascularizada, repara-se; instabilidade da RUD.",
+   "C": "**Avulsão distal.**\n- Ligamentos ulnocarpais.",
+   "D": "**Degenerativa.**\n- Perfuração com condromalácia."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0402": {
-  "conceito": "As técnicas de sutura tendínea se distinguem pelo desenho do fio dentro do tendão e por quantos fios cruzam a linha de reparo, é esse número que determina a resistência e, portanto, se cabe mobilização precoce.",
-  "correta": "O desenho em X cruzado, sucessivo ao longo de cada coto, é a sutura de Bunnell. Ela é resistente, mas tem o defeito que a tirou do uso corrente nos flexores: o trajeto em zigue-zague estrangula a circulação intratendínea, comprometendo a nutrição justamente na área que precisa cicatrizar. Hoje ela aparece mais em tendões extensores, em transferências e onde a vascularização do coto importa menos.",
+  "conceito": "### Técnicas de sutura tendínea\n| Técnica | Desenho | Uso |\n|---|---|---|\n| ==Bunnell== | ==X cruzados sucessivos== em cada coto | resistente, mas **estrangula a irrigação**; hoje em extensores e transferências |\n| Kessler modificado (Pennington) | alças em ângulo reto com pegas bloqueantes, 2 fios | clássico dos flexores |\n| Strickland, cruciate (Adelaide), Tang, MGH | 4 a 6 fios cruzando o foco | permitem movimento ativo precoce |\n| ==Pulvertaft== | ==entrelaçamento== de um tendão através do outro | transferências (calibres diferentes) |\n| Mason-Allen | horizontal + vertical | manguito rotador (tendão-osso) |\n| Krackow | pegas bloqueantes laterais em série | tendões grossos, ligamentos |\n\n### Princípios de um bom reparo\n- Número de fios cruzando o foco, pegas de cerca de 1 cm, bloqueio, epitendínea contínua, preservar a vascularização dorsal.\n\n### Outras técnicas\n| Técnica | Desenho |\n|---|---|\n| Tajima | Kessler com alça separada em cada coto, nó ao fim |\n| Tsuge | alça de fio duplo intratendínea |\n\n> **Na prova:** X cruzados sucessivos = ==Bunnell==",
+  "correta": "**Bunnell.**\n- X cruzados sucessivos em cada coto.\n- Resistente, mas estrangula a irrigação intratendínea.\n- Hoje em extensores e transferências.",
   "incorretas": {
-   "A": "A técnica de Tajima é uma variante do Kessler em que cada coto recebe a sua alça separadamente, com os fios amarrados no fim, desenho retangular, não cruzado, e com a vantagem prática de deixar os fios servindo de reparo enquanto se trabalha.",
-   "C": "O Kessler tem alças em ângulo reto que agarram o tendão em quatro pontos, com o nó dentro do foco de reparo.",
-   "D": "A técnica de Tsuge usa uma alça de fio duplo com ancoragem intratendínea, e o desenho também não é o de X sucessivos."
+   "A": "**Retangular.**\n- Alça separada em cada coto.",
+   "C": "**Alças em ângulo reto.**\n- Nó dentro do foco.",
+   "D": "**Alça dupla.**\n- Ancoragem intratendínea."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0403": {
-  "conceito": "A regra dos intrínsecos resolve quase toda questão de inervação da mão: o nervo ulnar inerva praticamente todos eles. Ao mediano cabem apenas o primeiro e o segundo lumbricais e três músculos tenares, abdutor curto, oponente e a cabeça superficial do flexor curto do polegar. Tudo o mais é ulnar.",
-  "correta": "As duas setas apontam músculos do território ulnar: A na região hipotenar e B na musculatura profunda da palma, entre a tenar e o terceiro metacarpo. Hipotenares (abdutor, flexor curto e oponente do dedo mínimo) são todos do ramo profundo do ulnar, assim como o adutor do polegar, todos os interósseos e o terceiro e o quarto lumbricais. Vale registrar que a figura veio em resolução baixa no PDF de origem e foi renderizada de novo a partir da página; ainda assim ela é apertada para leitura, e o raciocínio que resolve a questão é o da regra, não o do detalhe da imagem.",
+  "conceito": "### Musculatura tenar\n| Músculo | Nervo | Função |\n|---|---|---|\n| ==abdutor curto do polegar== | ==mediano (ramo motor recorrente)== | abdução palmar; o primeiro a atrofiar |\n| ==oponente do polegar== | mediano | oposição |\n| flexor curto, cabeça superficial | mediano | flexão da MF |\n| flexor curto, cabeça profunda | ulnar | flexão da MF |\n| adutor do polegar | ulnar | adução, pinça lateral |\n\n### Túnel do carpo: progressão\n| Fase | Achado |\n|---|---|\n| inicial | parestesia noturna, melhora ao sacudir a mão |\n| intermediária | parestesia constante, perda de destreza |\n| ==avançada== | ==atrofia tenar==, perda sensitiva fixa |\n\n- Atrofia é sinal tardio: não esperar por ela para operar.\n- Ramo motor pode ser extraligamentar, subligamentar ou transligamentar (Lanz).\n\n### Regra dos intrínsecos\n- Mediano na mão: ==LOAF== (lumbricais 1 e 2, oponente, abdutor curto, flexor curto superficial).\n- Todo o resto é ulnar, inclusive o ==adutor do polegar==.\n- Froment: sem adutor, o FLP (mediano) flete a IF na pinça lateral.\n\n### Hipotenares\n- Abdutor, flexor curto e oponente do mínimo: todos ==ulnar==.\n\n> **Na prova:** hipotenar e palma profunda = ==ulnar e ulnar==",
+  "alerta": "A figura veio em resolução baixa no PDF de origem. A questão se resolve pela regra de inervação dos intrínsecos, não pelo detalhe da imagem.",
+  "correta": "**Ulnar e ulnar.**\n- A: hipotenar; B: musculatura profunda da palma.\n- Mediano só tem LOAF na mão.",
   "incorretas": {
-   "A": "Se um dos músculos fosse do mediano, teria de ser tenar ou um dos dois primeiros lumbricais, e nenhuma das duas setas aponta para esse grupo.",
-   "B": "Mesma observação, com a ordem invertida.",
-   "D": "Atribuir os dois ao mediano ignora que ele inerva, na mão, apenas o grupo tenar e os dois primeiros lumbricais."
+   "A": "**Mediano não.**\n- Nenhuma seta aponta tenar ou 1º e 2º lumbricais.",
+   "B": "**Mediano não.**\n- Mesma observação.",
+   "D": "**Ambos errados.**\n- O mediano só inerva LOAF."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0404": {
-  "conceito": "A carga que atravessa o punho se reparte em duas etapas. Primeiro entre os lados: cerca de 80% passa pela articulação radiocarpal e 20% pela ulnocarpal. Depois, dentro da radiocarpal: cerca de 60% pela radioescafoide e 40% pela radiossemilunar.",
-  "correta": "Fazendo a conta em relação à carga total que atravessa o punho, a radiossemilunar transmite em torno de 30%, 40% dos 80% que passam pelo lado radial. Essa aritmética explica várias condutas. Encurtar o rádio por osteotomia de nivelamento transfere carga para o lado ulnar, e por isso só se faz com variância ulnar negativa. Perder altura radial numa fratura mal consolidada faz o mesmo, e daí a dor ulnar tardia. E ressecar a cabeça da ulna elimina o caminho ulnocarpal, jogando toda a carga sobre o rádio.",
+  "conceito": "### Transmissão de carga no punho\n| Articulação | Carga total |\n|---|---|\n| radiocarpal | ==cerca de 80%== |\n| ulnocarpal | cerca de 20% |\n\n| Dentro da radiocarpal | Parcela | Sobre o total |\n|---|---|---|\n| radioescafoide | 60% | cerca de 50% |\n| ==radiossemilunar== | 40% | ==cerca de 30%== |\n\n### Variância ulnar e carga\n| Variação | Carga ulnocarpal |\n|---|---|\n| −2,5 mm | cai para cerca de 4% |\n| neutra | cerca de 18 a 20% |\n| +2,5 mm | sobe para cerca de 42% |\n\n### Consequências\n- Encurtar o rádio (nivelamento) transfere carga para a ulna: só com ulna minus.\n- Rádio encurtado após fratura: dor ulnar.\n- Ressecção da cabeça da ulna: toda a carga no rádio.\n\n> **Na prova:** radiossemilunar = ==cerca de 30%== da carga total.",
+  "correta": "**30%.**\n- 40% dos 80% que passam pelo rádio.\n- Explica as osteotomias de nivelamento e a dor ulnar após encurtamento.",
   "incorretas": {
-   "A": "Vinte por cento é aproximadamente a fração que atravessa toda a articulação ulnocarpal, não a radiossemilunar.",
-   "C": "Cinquenta por cento se aproxima da fração da radioescafoide sobre a carga total, que é a maior das três.",
-   "D": "Sessenta por cento é a fração da radioescafoide dentro da própria radiocarpal, e não a da radiossemilunar sobre o total."
+   "A": "**Ulnocarpal.**\n- Fração de todo o lado ulnar.",
+   "C": "**Radioescafoide.**\n- A maior das três.",
+   "D": "**Radioescafoide dentro da radiocarpal.**\n- Não é sobre o total."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0405": {
-  "conceito": "Na mão reumatoide as deformidades se encadeiam de proximal para distal: o desalinhamento de um segmento puxa o do seguinte. Operar na ordem errada é corrigir o que vai deformar de novo sobre uma base que continua torta.",
-  "correta": "A ordem é punho, polegar, cotovelo e dedos. O punho vem primeiro porque é a base: com o carpo em supinação e translação ulnar, os metacarpos inclinam para radial e o desvio ulnar dos dedos se reproduz mesmo depois de corrigido. O polegar vem em seguida porque a pinça é a função que mais devolve autonomia, sem polegar estável, dedos alinhados servem de pouco. O cotovelo entra antes dos dedos porque é ele que leva a mão ao rosto e à boca. E os dedos longos ficam por último, porque o alinhamento deles depende de tudo o que está acima. Vale somar a regra geral: procedimento que previne ruptura, como sinovectomia e ressecção da cabeça da ulna, tem prioridade sobre procedimento que corrige deformidade já instalada.",
+  "conceito": "### Prioridades cirúrgicas na mão reumatoide\n1. ==Procedimentos preventivos== (evitam ruptura): sinovectomia, ressecção da cabeça da ulna, remoção de espículas ósseas.\n2. ==Punho== (a base): artrodese radiossemilunar ou total, Darrach, Sauvé-Kapandji.\n3. ==Polegar== (pinça): artrodese da MF ou IF conforme a deformidade de Nalebuff.\n4. ==Dedos longos==: artroplastia das MF (silicone), correção de pescoço de cisne e botoeira.\n\n### Por que essa ordem\n- Punho em desvio radial dos metacarpos reproduz o **desvio ulnar dos dedos**.\n- A **pinça** do polegar devolve mais função que o alinhamento dos dedos.\n- Em geral, **proximal antes de distal**; e **membro inferior** antes do superior quando o paciente precisa de muletas.\n\n### Polegar reumatoide (Nalebuff)\n| Tipo | Deformidade |\n|---|---|\n| I | botoeira (mais comum): MF fletida, IF estendida |\n| II | botoeira + subluxação CMC |\n| III | pescoço de cisne (CMC) |\n| IV | goleiro (colateral ulnar da MF) |\n\n### Com o cotovelo\n- Ordem cobrada: ==punho, polegar, cotovelo e dedos==.\n- Cotovelo leva a mão ao rosto; dedos dependem de tudo acima.\n\n> **Na prova:** prioridade = ==punho, polegar, cotovelo e dedos==",
+  "correta": "**Punho, polegar, cotovelo e dedos.**\n- Punho é a base do desvio ulnar dos dedos.\n- Polegar devolve a pinça.\n- Dedos por último; preventivos têm prioridade.",
   "incorretas": {
-   "B": "Começar pelo cotovelo e deixar o polegar por último inverte a hierarquia de função.",
-   "C": "Coloca o cotovelo antes do polegar, adiando a correção da pinça.",
-   "D": "Também começa pelo cotovelo, deixando a base (o punho) para depois."
+   "B": "**Hierarquia invertida.**\n- Polegar por último é o erro.",
+   "C": "**Cotovelo cedo.**\n- Adia a pinça.",
+   "D": "**Começa pelo cotovelo.**\n- Deixa a base para depois."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0406": {
-  "conceito": "Bayne e Klug graduam a deficiência longitudinal do rádio em quatro tipos: I, rádio distal apenas encurtado; II, rádio hipoplásico em toda a extensão; III, ausência parcial; IV, ausência total.",
-  "correta": "A radiografia mostra um antebraço com um único osso (a ulna, curta e encurvada), com a mão desviada radialmente sobre a extremidade dela e sem polegar visível. É a ausência total do rádio, tipo IV, que é também o mais comum da classificação. O achado obriga a investigar o resto da criança: hemograma e teste de fragilidade cromossômica para anemia de Fanconi, plaquetas para a síndrome TAR, ecocardiograma para Holt-Oram, e ultrassom de rins e radiografia de coluna para VACTERL.",
+  "conceito": "### Classificação de Heikel (displasia radial)\n| Heikel | Bayne | Descrição |\n|---|---|---|\n| A | I | rádio distal curto (fise distal atrasada) |\n| B | II | rádio hipoplásico em miniatura |\n| C | III | ausência parcial (remanescente proximal) |\n| ==D== | ==IV== | ==ausência total do rádio==: ==a mais comum== |\n\n### Mão torta radial (tipo D)\n- Mão desviada radialmente sobre a ponta da ulna.\n- Ulna curta e encurvada; polegar ausente ou hipoplásico.\n- Bilateral em cerca de metade.\n\n### Investigação obrigatória\n| Síndrome | Exame |\n|---|---|\n| Fanconi | teste de quebra cromossômica (diepoxibutano) |\n| Holt-Oram | ecocardiograma |\n| TAR | hemograma (plaquetas) |\n| VACTERL | coluna, rim, coração, ânus, traqueia/esôfago |\n\n### Remanescente no tipo C\n- Pode funcionar como **banda** que agrava a curvatura da ulna com o crescimento.\n\n### Tratamento da mão torta radial\n| Fase | Medida |\n|---|---|\n| recém-nascido | alongamento e órteses seriadas |\n| 6 a 12 meses | distração de partes moles (fixador) se rígida |\n| ~1 ano | centralização ou radialização do carpo sobre a ulna |\n| depois | policização se polegar ausente |\n\n### Contraindicações à correção\n| Situação | Motivo |\n|---|---|\n| ==cotovelo rígido em extensão== | ==o desvio radial é o que leva a mão à boca== |\n| adulto adaptado com boa função | ganho funcional pequeno |\n| doença sistêmica grave (Fanconi, TAR) | risco clínico |\n\n> **Na prova:** antebraço com um só osso e mão desviada = ==Bayne IV (ausência total)==",
+  "correta": "**Tipo IV.**\n- Um só osso (ulna curta e curva), mão desviada radialmente.\n- Ausência total, o tipo mais comum.\n- Investigar Fanconi, TAR, Holt-Oram, VACTERL.",
   "incorretas": {
-   "A": "No tipo I o rádio existe inteiro, apenas encurtado na extremidade distal, a radiografia mostraria os dois ossos do antebraço.",
-   "B": "No tipo II o rádio está presente em toda a extensão, embora hipoplásico e mais fino. Também apareceriam dois ossos.",
-   "C": "No tipo III há ausência parcial, com um remanescente do rádio visível, em geral proximal. A radiografia mostra um coto ósseo, e não um antebraço com um osso só."
+   "A": "**Dois ossos.**\n- Rádio só encurtado.",
+   "B": "**Dois ossos.**\n- Rádio hipoplásico inteiro.",
+   "C": "**Remanescente.**\n- Coto de rádio visível."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0407": {
-  "conceito": "O nervo ulnar não é comprimido apenas por um teto que aperta: ele também é estirado. Ao fletir o cotovelo, o epicôndilo medial se afasta do olécrano, o teto do túnel cubital se tensiona e o próprio nervo precisa alongar-se para acompanhar o trajeto, porque ele passa por trás do eixo de rotação.",
-  "correta": "A tensão máxima ocorre com o cotovelo em flexão e o antebraço em pronação máximas. A flexão é o componente principal, e a pronação soma tensão ao trajeto do nervo, é essa combinação, acrescida de extensão do punho e abdução do ombro, que compõe o teste de tensão neural com viés ulnar. Duas consequências práticas: a queixa piora dormindo com o cotovelo dobrado, e a órtese noturna que mantém o cotovelo próximo da extensão é medida conservadora de primeira linha.",
+  "conceito": "### Anatomia do túnel cubital\n| Parte | Estrutura |\n|---|---|\n| ==teto== | ==fáscia (ligamento) de Osborne==: epicôndilo-olecraniano, arqueado; contínuo com a aponeurose do FUC |\n| assoalho | feixe posterior e transverso do ligamento colateral ulnar, cápsula |\n| paredes | epicôndilo medial e olécrano |\n\n### Pontos de compressão do ulnar (proximal → distal)\n1. Arcada de Struthers (8 cm acima do epicôndilo).\n2. Septo intermuscular medial.\n3. Epicôndilo medial (subluxação, cúbito valgo).\n4. ==Túnel cubital (Osborne)==.\n5. Entre as cabeças do FUC.\n6. Aponeurose flexora-pronadora profunda.\n\n### Na cirurgia\n- Liberação **in situ**: seccionar Osborne e a aponeurose do FUC.\n- Transposição anterior: liberar também Struthers e o septo intermuscular para não criar nova compressão.\n\n### Não confundir\n- **Ligamento transverso do carpo:** teto do túnel do carpo (mediano).\n- **Ligamento de Struthers:** do processo supracondiliano ao epicôndilo (mediano).\n\n### Tensão e pressão no túnel cubital\n| Posição | Efeito |\n|---|---|\n| ==flexão do cotovelo== | teto tenso, volume do canal cai, nervo alonga (4 a 8 mm) |\n| ==pronação== | soma tensão ao trajeto |\n| extensão do cotovelo | alívio |\n\n- Teste de flexão do cotovelo: flexão máxima com punho estendido por 60 s.\n- Órtese noturna com cotovelo quase estendido.\n\n> **Na prova:** tensão máxima no ulnar = ==flexão e pronação máximas==",
+  "correta": "**Flexão e pronação máximas.**\n- Flexão é o componente principal.\n- Pronação soma tensão.\n- Piora dormindo com o cotovelo dobrado.",
   "incorretas": {
-   "B": "A flexão está certa, e supinar de fato também é usado em algumas descrições da manobra provocativa, mas a posição descrita como de maior tensão combina a flexão com a pronação.",
-   "C": "A extensão relaxa o túnel cubital: o teto afrouxa e o volume do canal aumenta. É a posição de alívio, não a de tensão.",
-   "D": "Pelo mesmo motivo, a extensão exclui a alternativa, independentemente da rotação do antebraço."
+   "B": "**Rotação trocada.**\n- A posição de maior tensão combina flexão e pronação.",
+   "C": "**Extensão alivia.**\n- Teto afrouxa, canal aumenta.",
+   "D": "**Extensão alivia.**\n- Independe da rotação."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0408": {
-  "conceito": "A camada superficial do compartimento volar do antebraço, de radial para ulnar: pronador redondo, flexor radial do carpo, palmar longo e flexor ulnar do carpo, todos inervados pelo mediano, com uma exceção.",
-  "correta": "A estrutura apontada é o flexor ulnar do carpo, o músculo mais medial da camada superficial. Ele é a exceção da regra: é o único músculo dessa camada inervado pelo nervo ulnar. E é ele quem forma o túnel cubital pela outra ponta, o nervo passa entre as suas duas cabeças, e a aponeurose que as une é a que se tensiona sobre o nervo na flexão do cotovelo. Na prática, seccionar essa aponeurose é parte obrigatória de qualquer descompressão.",
+  "conceito": "### Camada superficial volar do antebraço\n| Músculo | Nervo |\n|---|---|\n| ==pronador redondo== | ==mediano== (acima do interósseo anterior) |\n| flexor radial do carpo | mediano |\n| palmar longo | mediano |\n| flexor superficial dos dedos | mediano |\n| flexor ulnar do carpo | ==ulnar== (a exceção) |\n\n### Inervação do antebraço por nervo\n| Nervo | Músculos |\n|---|---|\n| mediano | pronador redondo, FRC, palmar longo, FSD |\n| interósseo anterior | FLP, FPD indicador e médio, pronador quadrado |\n| ulnar | FUC, FPD anelar e mínimo |\n| radial | braquiorradial, ERLC (ERCC) |\n| interósseo posterior | supinador, extensores |\n\n### Pronador redondo na clínica\n- Poupado na síndrome do interósseo anterior (ramo sai antes).\n- É o próprio compressor na síndrome do pronador.\n\n### Flexor ulnar do carpo\n- Mais medial da camada superficial; ==ulnar==.\n- Duas cabeças (umeral e ulnar): o nervo ulnar passa entre elas.\n- A aponeurose entre as cabeças (Osborne) tensiona na flexão.\n\n> **Na prova:** músculo mais medial da camada superficial = ==flexor ulnar do carpo==",
+  "correta": "**Flexor ulnar do carpo.**\n- O mais medial da camada superficial.\n- Única exceção inervada pelo ulnar.\n- O nervo passa entre suas duas cabeças.",
   "incorretas": {
-   "B": "O flexor radial do carpo fica do lado oposto, radial, e desce em direção à base do segundo metacarpo passando por um túnel próprio escavado no trapézio.",
-   "C": "A cabeça radial do flexor superficial dos dedos nasce da linha oblíqua do rádio e fica num plano mais profundo, ela é parte da camada intermediária.",
-   "D": "A cabeça umeroulnar do flexor superficial também é de plano mais profundo, e é entre ela e a cabeça radial que o nervo mediano atravessa a arcada do flexor superficial."
+   "B": "**Lado radial.**\n- Vai à base do 2º metacarpo.",
+   "C": "**Plano intermediário.**\n- Nasce da linha oblíqua do rádio.",
+   "D": "**Plano intermediário.**\n- O mediano passa sob a arcada."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0409": {
