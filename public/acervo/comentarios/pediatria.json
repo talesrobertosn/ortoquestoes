@@ -5509,91 +5509,91 @@
   "conferido": false
  },
  "pediatria-0442": {
-  "conceito": "As manchas café com leite são um achado cutâneo compartilhado por diversas condições, além da já conhecida associação com a neurofibromatose tipo 1. Duas outras condições classicamente associadas a esse achado são:\n- A **síndrome de McCune-Albright**, cuja tríade clássica inclui manchas café com leite (tipicamente de bordas irregulares, descritas como \"costa do Maine\"), displasia fibrosa poliostótica e endocrinopatias (como puberdade precoce).\n- A **síndrome de Jaffe-Campanacci**, caracterizada pela associação de múltiplos fibromas não ossificantes com manchas café com leite e outras anomalias associadas (como criptorquidia e retardo mental leve).\n\nJá a síndrome de Mazabraud (displasia fibrosa associada a mixomas intramusculares) e a doença de Maffucci (encondromatose associada a hemangiomas) não são classicamente definidas pela presença de manchas café com leite como achado central.",
-  "correta": "C. Além da neurofibromatose tipo 1, as síndromes de Jaffe-Campanacci e McCune-Albright apresentam manchas café com leite.",
+  "conceito": "### Neurofibromatoses\n| Tipo | Nome | Gene | Achados | Ortopedia |\n|---|---|---|---|---|\n| ==NF1== | ==periférica== (von Recklinghausen) | neurofibromina (17q) | café-com-leite, neurofibromas, Lisch, Crowe | ==frequente== |\n| NF2 | central | merlina (22q) | ==schwannoma vestibular bilateral==, meningiomas | rara |\n| schwannomatose | | SMARCB1, LZTR1 | schwannomas múltiplos dolorosos | |\n\n### NF1 na ortopedia\n| Manifestação | Detalhe |\n|---|---|\n| escoliose | a mais comum; distrófica (raio curto) |\n| pseudartrose congênita da tíbia | anterolateral |\n| hipertrofia de membro | elefantíase |\n| TMBNP | transformação do plexiforme |\n| deficiência de vitamina D, osteoporose | |\n\n- Herança dominante; metade mutação nova.\n\n### Manchas café com leite: além da NF1\n| Síndrome | Componentes | Borda da mancha |\n|---|---|---|\n| NF1 | neurofibromas, Lisch, ≥ 6 manchas | lisa (costa da Califórnia) |\n| ==McCune-Albright== | displasia fibrosa poliostótica + ==manchas== + puberdade precoce | irregular (costa do Maine) |\n| ==Jaffe-Campanacci== | ==fibromas não ossificantes múltiplos== + manchas | |\n| Mazabraud | displasia fibrosa + ==mixomas== intramusculares | sem manchas |\n| Maffucci | encondromas + ==hemangiomas== | sem manchas |\n\n> **Na prova:** café com leite fora da NF1 = ==McCune-Albright e Jaffe-Campanacci==",
+  "correta": "**Jaffe-Campanacci e McCune-Albright.**\n- Ambas cursam com manchas café com leite.\n- FNO múltiplos e displasia fibrosa.",
   "incorretas": {
-   "A": "A síndrome de Mazabraud não é classicamente definida pela presença de manchas café com leite.",
-   "B": "Nem a síndrome de Mazabraud nem a doença de Maffucci são classicamente definidas pela presença de manchas café com leite.",
-   "D": "A doença de Maffucci não é classicamente definida pela presença de manchas café com leite, sua associação clássica é com hemangiomas e encondromas."
+   "A": "**Mazabraud.**\n- Displasia fibrosa e mixomas, sem manchas.",
+   "B": "**Mazabraud e Maffucci.**\n- Nenhuma com manchas típicas.",
+   "D": "**Maffucci.**\n- Hemangiomas, não manchas café com leite."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0443": {
-  "conceito": "A **coxa vara congênita** (coxa vara do desenvolvimento) manifesta-se na primeira infância com claudicação **indolor**, limitação da abdução e da rotação interna do quadril, dismetria dos membros inferiores e sinal de Trendelenburg positivo (pela insuficiência do braço de alavanca do glúteo médio, decorrente da diminuição do ângulo cervicodiafisário), tudo na ausência de febre ou sinais inflamatórios, exatamente o quadro clínico descrito, compatível com a diminuição do ângulo cervicodiafisário e o fragmento triangular metafisário característico visíveis nos exames de imagem.",
-  "correta": "A. A hipótese diagnóstica é coxa vara congênita.",
+  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Quadro típico\n- Criança que ==já anda==, claudicação ==indolor==, Trendelenburg, discrepância leve.\n- Limitação de ==abdução e rotação interna==.\n- RX: colo varo, fise vertical, triângulo de Fairbank.\n\n> **Na prova:** claudicação indolor com abdução e RI limitadas aos 4 anos = ==coxa vara==",
+  "correta": "**Coxa vara.**\n- Claudicação indolor e Trendelenburg.\n- Colo varo com fise vertical.",
   "incorretas": {
-   "B": "A **doença de Perthes** costuma cursar com dor pelo menos intermitente (não puramente indolor) e apresenta achados de imagem de colapso/fragmentação da cabeça femoral, diferentes da alteração predominante do ângulo cervicodiafisário sugerida pelo quadro.",
-   "C": "A **epifisiólise do fêmur proximal** ocorre tipicamente em adolescentes (geralmente entre 11 e 15 anos), uma faixa etária muito mais avançada do que os quatro anos do paciente descrito.",
-   "D": "A **sequela de pioartrite do quadril** pressupõe um episódio infeccioso prévio (com febre e sinais inflamatórios na fase aguda), uma história ausente no caso descrito, que enfatiza justamente a ausência de febre."
+   "B": "**Perthes.**\n- Epífise densa ou fragmentada, dor.",
+   "C": "**Epifisiólise.**\n- Adolescente.",
+   "D": "**Sequela de pioartrite.**\n- História de infecção, cabeça destruída."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0444": {
-  "conceito": "A osteotomia periacetabular de **Ganz** envolve múltiplos cortes ósseos ao redor do acetábulo (isquiático, púbico e ilíaco), preservando a coluna posterior e a integridade do anel pélvico, permitindo a reorientação completa do fragmento acetabular em um único bloco. É uma técnica mais utilizada em adolescentes e adultos jovens com cartilagens trirradiadas já fechadas, quando as osteotomias mais simples (como a de Salter) não são mais aplicáveis.",
-  "correta": "A. A técnica cirúrgica representada é a de Ganz.",
+  "conceito": "### Osteotomias pélvicas na DDQ\n| Tipo | Técnica | Característica |\n|---|---|---|\n| ==Salter== | osteotomia ==inominada completa== acima do acetábulo, cunha de ilíaco anterior | redireciona; ==não muda volume==; 18 meses a 6 anos |\n| Pemberton | pericapsular incompleta, dobradiça na trirradiada | reduz volume, acetábulo grande |\n| Dega | incompleta, posterior preservada | PC, displasia posterolateral |\n| Steel | ==tripla== (ílio, ísquio, púbis) | criança maior |\n| Ganz | ==periacetabular== (Bernese) | trirradiada fechada |\n| Chiari | salvamento, medializa | sem congruência |\n\n### Salter na imagem\n- Linha reta do ciático maior à espinha ilíaca anteroinferior.\n- Enxerto triangular da crista ilíaca, fixado com fios.\n- Pivô na sínfise púbica.\n\n### Ganz (periacetabular, Bernese)\n- Cortes: ísquio parcial, púbis, ilíaco supra-acetabular e ==retroacetabular==, preservando a ==coluna posterior==.\n- ==Trirradiada fechada== (adolescente e adulto jovem).\n- Grande correção, pelve continua estável (marcha precoce), não altera o canal de parto.\n\n> **Na prova:** osteotomia periacetabular com coluna posterior íntegra = ==Ganz==",
+  "correta": "**Ganz.**\n- Periacetabular, coluna posterior preservada.\n- Trirradiada fechada.",
   "incorretas": {
-   "B": "A osteotomia tripla de **Steel** envolve três cortes separados e distintos (ílio, ísquio e púbis), uma configuração diferente do corte periacetabular contínuo e preservador da coluna posterior mostrado na imagem.",
-   "C": "A osteotomia de **Chiari** é um procedimento de salvamento por deslocamento medial do fragmento distal, criando uma prateleira de cobertura, sem a reorientação acetabular completa mostrada na imagem.",
-   "D": "O procedimento de **Staheli** é uma técnica de prateleira (aumento da cobertura com enxerto ósseo), uma abordagem diferente da reorientação acetabular mostrada."
+   "B": "**Steel.**\n- Tripla, cortes distantes.",
+   "C": "**Chiari.**\n- Salvamento, medializa.",
+   "D": "**Staheli.**\n- Shelf (prateleira), aumento do teto."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0445": {
-  "conceito": "O sinal de **Meryon**, na distrofia muscular de Duchenne, é obtido ao tentar erguer a criança pelas axilas: pela fraqueza da cintura escapular (particularmente do músculo serrátil anterior e de outros estabilizadores da escápula), os ombros não conseguem ser adequadamente fixados, e a criança \"escorrega\" por entre as mãos do examinador, com os braços se elevando (como mostrado na imagem, com os braços cruzados acima da cabeça), refletindo a incapacidade de sustentar o peso do corpo pela cintura escapular enfraquecida.",
-  "correta": "C. A imagem corresponde ao sinal de Meryon.",
+  "conceito": "### Distrofia muscular de Duchenne\n- ==Ligada ao X==, meninos; ausência de ==distrofina==.\n- Fraqueza ==proximal== (cintura pélvica primeiro), ==pseudo-hipertrofia das panturrilhas==, ==Gowers== positivo.\n- CPK muito elevada; biópsia/genética.\n\n### Perda da marcha (8 a 12 anos)\n| Fraqueza | Compensação |\n|---|---|\n| ==extensores do quadril== | hiperlordose, tronco atrás do quadril |\n| ==dorsiflexores== | marcha na ponta, equino |\n| quadríceps | joelho travado em extensão |\n\n### Ortopedia\n- Contraturas: equino, flexão do quadril, banda iliotibial.\n- ==Escoliose== após perder a marcha: artrodese precoce (antes da piora respiratória, CVF > 30 a 40%).\n- Corticoide prolonga a marcha e reduz escoliose.\n\n### Becker\n- Distrofina reduzida; mais tardia e branda.\n\n### Sinal de Gowers\n- Para levantar do chão, a criança ==apoia as mãos nas coxas e \"escala\" o próprio corpo==.\n- Traduz fraqueza de ==quadríceps e glúteo máximo== (extensores proximais).\n\n### Outros testes da lista\n| Sinal | Uso |\n|---|---|\n| Ober | contratura da banda iliotibial |\n| Meryon | criança escorrega entre as mãos do examinador ao ser erguida (cintura escapular) |\n\n> **Na prova:** criança que escorrega das mãos ao ser erguida = ==sinal de Meryon==",
+  "correta": "**Meryon.**\n- Fraqueza da cintura escapular.\n- Escorrega entre as mãos do examinador.",
   "incorretas": {
-   "A": "\"Weber\" não corresponde a um sinal clínico clássico e padronizado da distrofia muscular de Duchenne relacionado a essa manobra.",
-   "B": "\"O'Brien\" também não corresponde a um sinal clássico dessa manobra específica na distrofia de Duchenne.",
-   "D": "O sinal de **Gowers** é obtido de forma diferente, observando a criança se levantar do chão utilizando as mãos para \"escalar\" as próprias coxas (pela fraqueza proximal dos membros inferiores e do tronco), uma manobra distinta da elevação pelas axilas mostrada na imagem."
+   "A": "**Weber.**\n- Não é sinal da Duchenne.",
+   "B": "**O'Brien.**\n- Teste de ombro (SLAP).",
+   "D": "**Gowers.**\n- Levantar do chão escalando as coxas."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0446": {
-  "conceito": "A sinostose radioulnar congênita resulta de uma falha na segmentação (separação) entre o rádio e a ulna durante o desenvolvimento embrionário do antebraço, especificamente antes de o membro superior completar sua **rotação lateral (externa)** normal, diferente do membro inferior, que gira medialmente. Como essa segmentação falha ocorre antes da rotação lateral se completar, o antebraço fica \"congelado\" em uma posição rotacional mais precoce do desenvolvimento, resultando classicamente em uma deformidade fixa em **pronação** do antebraço, o padrão clínico característico da sinostose radioulnar congênita, frequentemente bilateral.",
-  "correta": "D. A sinostose radioulnar congênita ocorre por falha de separação antes da rotação lateral do membro, originando deformidade em pronação do antebraço fetal.",
+  "conceito": "### Sinostose radioulnar congênita\n- Falha de segmentação entre rádio e ulna proximais (7ª semana).\n- ==Bilateral em cerca de 60%==, geralmente ==isolada==.\n- Pode associar-se a síndromes (Apert, Klinefelter e aneuploidias do X, artrogripose).\n- Antebraço fixo, em geral ==pronado==; compensação pelo ombro e punho.\n- Diagnóstico tardio (compensação eficiente).\n\n### Classificação (Tachdjian / Cleary-Omer)\n- Fibrosa × óssea; cabeça do rádio normal, ausente ou luxada.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| neutro ou leve pronação | ==observação== |\n| pronação > 60° com limitação | osteotomia derrotativa (neutro a 10-20° de pronação) |\n| risco | ==síndrome compartimental== nas grandes correções |\n\n### Embriologia\n- Rádio e ulna nascem de uma ==massa cartilaginosa comum==; separam-se longitudinalmente de distal para proximal.\n- Falha dessa separação ==antes da rotação lateral== do membro superior: antebraço preso na posição fetal, em ==pronação==.\n\n> **Na prova:** sinostose = falha antes da ==rotação lateral==, antebraço em ==pronação==",
+  "correta": "**Rotação lateral, pronação.**\n- Antebraço fixo na posição fetal.\n- Pronação é o achado habitual.",
   "incorretas": {
-   "A": "É a rotação lateral (não medial) do membro superior que está envolvida nesse processo embrionário.",
-   "B": "É a rotação lateral do membro que está envolvida, e a deformidade resultante é em pronação, não em supinação.",
-   "C": "A deformidade resultante da falha de segmentação antes da rotação lateral é em pronação, não em supinação, do antebraço fetal."
+   "A": "**Rotação medial.**\n- O membro superior roda lateralmente.",
+   "B": "**Medial e supinação.**\n- Ambos errados.",
+   "C": "**Supinação.**\n- Fica em pronação."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0448": {
-  "conceito": "As diferentes formas de raquitismo têm perfis bioquímicos distintos que ajudam a diferenciá-las. No raquitismo por **osteodistrofia renal** (secundário à insuficiência renal crônica), o rim perde progressivamente sua capacidade de excretar fosfato, levando a um quadro de **hiperfosfatemia**, ao contrário das demais formas listadas (raquitismo nutricional por deficiência de vitamina D, raquitismo vitamina D-resistente ligado ao X por perda renal de fosfato, e raquitismo vitamina D-dependente por defeito no metabolismo da vitamina D), que classicamente cursam com **hipofosfatemia**, já que nelas o rim mantém ou até aumenta a perda urinária de fosfato.",
-  "correta": "B. No raquitismo por osteodistrofia renal, o nível sérico de fosfato está aumentado.",
+  "conceito": "### Raquitismo: laboratório\n| Tipo | Ca | P | FA | PTH | Detalhe |\n|---|---|---|---|---|---|\n| nutricional (vit. D) | ↓/N | ↓ | ↑ | ↑ | 25-OH-D baixa |\n| hipofosfatêmico (vit. D resistente, ligado ao X) | N | ==↓↓== | ↑ | N | PHEX, FGF23 alto; perda renal de P |\n| vit. D dependente I | ↓ | ↓ | ↑ | ↑ | 1α-hidroxilase |\n| vit. D dependente II | ↓ | ↓ | ↑ | ↑ | receptor, alopecia |\n| ==osteodistrofia renal== | ↓ | ==↑== | ↑ | ↑↑ | rim ==não excreta fosfato== |\n\n### Ortopedia da osteodistrofia renal\n- Geno valgo, ==epifisiólise== (inclusive em locais atípicos), fraturas.\n- Controle metabólico antes de operar.\n\n> **Na prova:** fosfato alto no raquitismo = ==osteodistrofia renal==",
+  "correta": "**Osteodistrofia renal.**\n- Rim retém fosfato.\n- Hiperparatireoidismo secundário.",
   "incorretas": {
-   "A": "O raquitismo nutricional classicamente cursa com hipofosfatemia, não com aumento do fosfato sérico.",
-   "C": "O raquitismo vitamina D-resistente (hipofosfatêmico ligado ao X) classicamente cursa com hipofosfatemia, por perda renal de fosfato, não com aumento do fosfato sérico.",
-   "D": "O raquitismo vitamina D-dependente classicamente cursa com hipofosfatemia, não com aumento do fosfato sérico."
+   "A": "**Nutricional.**\n- Fosfato baixo.",
+   "C": "**Vitamina D resistente.**\n- Fosfato muito baixo (perda renal).",
+   "D": "**Vitamina D dependente.**\n- Fosfato baixo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0449": {
-  "conceito": "A **linha de Klein**, traçada ao longo da borda superior do colo femoral na radiografia AP do quadril, normalmente intersecta uma porção da epífise femoral lateral. Na epifisiólise, com o escorregamento posteroinferior da epífise, essa linha deixa de cruzar a epífise (ou cruza uma porção menor dela em comparação ao lado contralateral); essa falha de intersecção é conhecida como **sinal de Trethowan**, um achado radiográfico precoce e sutil, especialmente útil nos casos de escorregamento discreto.",
-  "correta": "C. A linha e o sinal demonstrados são, respectivamente, Klein e Trethowan.",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n### Imagem\n| Exame | Uso |\n|---|---|\n| RX AP e perfil (rã) | diagnóstico, Klein, Southwick |\n| RM | ==pré-deslizamento==, edema fisário, lado contralateral |\n| ==TC== | ==avaliar fechamento da fise==, posição do parafuso, cam residual |\n\n### Sinais radiográficos precoces\n| Sinal | Achado |\n|---|---|\n| ==Scham== | perda da ==dupla densidade== normal no ==colo inferomedial== (sobreposição da epífise escorregada) |\n| Steel (metafisário branco) | aumento de densidade na metáfise (sobreposição) |\n| Klein (Trethowan) | linha na borda superior do colo não corta a epífise |\n| alargamento fisário | pré-deslizamento |\n\n### Linha e sinal\n- ==Linha de Klein==: tangente à borda superior do colo no AP; normal corta parte da epífise.\n- ==Sinal de Trethowan==: a linha de Klein ==não corta== a epífise (ou corta menos que o lado normal).\n\n> **Na prova:** linha na borda do colo = ==Klein==; não cortar a epífise = ==Trethowan==",
+  "correta": "**Klein e Trethowan.**\n- Klein é a linha.\n- Trethowan é o sinal positivo.",
   "incorretas": {
-   "A": "\"Scham\" não é o nome padronizado do sinal associado à falha de intersecção da linha de Klein com a epífise; o nome correto é sinal de Trethowan.",
-   "B": "Além do nome do sinal estar incorreto, a ordem também inverteria a linha (Klein) e o sinal (Trethowan) de forma inconsistente com a nomenclatura padrão.",
-   "D": "A linha traçada ao longo do colo femoral é a linha de Klein, não \"Scham\"; o restante da combinação também está incorreto."
+   "A": "**Scham.**\n- Perda da dupla densidade no colo inferomedial.",
+   "B": "**Ordem trocada.**\n- A linha é de Klein.",
+   "D": "**Scham não é linha.**\n- É sinal de densidade."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0450": {
-  "conceito": "O desenvolvimento embrionário da articulação do quadril começa com o surgimento de uma **fenda (interzona)** no mesênquima condensado do broto primitivo do membro inferior, marcando o início da separação entre o que se tornará a cabeça femoral e o acetábulo, esse processo tem início por volta da **7ª semana** de vida intrauterina, com a cavitação articular progredindo ao longo das semanas seguintes até a formação completa do espaço articular, geralmente por volta da 11ª semana. Esse marco embrionário precoce é importante para compreender a origem de algumas anomalias congênitas do desenvolvimento do quadril, quando esse processo de cavitação é interrompido ou ocorre de forma incompleta.",
-  "correta": "B. O desenvolvimento da articulação do quadril inicia-se com o surgimento de uma fenda no mesênquima, por volta da sétima semana de vida intrauterina.",
+  "conceito": "### Embriologia do quadril\n- ==Massa mesenquimal única e contínua== forma o esboço femoral e o acetabular (4ª a 6ª semana).\n- A ==interzona== se cavita (7ª semana) e origina a articulação: cartilagens, sinovial, ligamento redondo, pulvinar, lábio.\n- Articulação formada por volta da 11ª semana.\n\n### Por que importa na DDQ\n- Cabeça e acetábulo ==dependem um do outro==: a cabeça centrada é o estímulo para o acetábulo se aprofundar.\n- Redução concêntrica precoce permite remodelação acetabular.\n\n### Fatores de risco da DDQ\n- Primogênita, feminino, pélvica, história familiar, oligoidrâmnio, torcicolo, metatarso aduto.\n\n> **Na prova:** fenda articular do quadril = ==7ª semana==",
+  "correta": "**Sétima semana.**\n- Cavitação da interzona.\n- Articulação completa por volta da 11ª.",
   "incorretas": {
-   "A": "A quinta semana é precoce demais para o início desse processo específico de cavitação articular do quadril.",
-   "C": "A nona semana corresponde a uma fase posterior do processo de cavitação, já em andamento, não ao seu início.",
-   "D": "A décima primeira semana corresponde, na verdade, à fase de conclusão da formação do espaço articular, não ao seu início."
+   "A": "**Quinta.**\n- Ainda massa mesenquimal.",
+   "C": "**Nona.**\n- Já há cavidade.",
+   "D": "**Décima primeira.**\n- Articulação formada."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0451": {
