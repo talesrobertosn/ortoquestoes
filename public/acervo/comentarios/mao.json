@@ -5166,94 +5166,94 @@
   "conferido": false
  },
  "mao-0442": {
-  "conceito": "Os interósseos dorsais nascem de duas cabeças, em metacarpos adjacentes, e preenchem os espaços entre eles. O primeiro, entre o polegar e o indicador, é o maior de todos e o mais superficial pelo dorso.",
-  "correta": "A seta indica o primeiro interósseo dorsal, o volume que dá relevo à comissura do polegar. A atrofia dele, vista como um vale escavado no dorso dessa comissura, é o sinal mais precoce de perda intrínseca por lesão do nervo ulnar, e vale sempre comparar com o outro lado. Todos os interósseos, dorsais e palmares, são inervados pelo ramo profundo do ulnar, e vale a regra funcional: os dorsais abduzem os dedos, os palmares aduzem.",
+  "conceito": "### Interósseos\n| Grupo | Número | Posição | Ação | Nervo |\n|---|---|---|---|---|\n| ==dorsais== | ==4, bipenados== (duas cabeças) | espaços intermetacarpais, visíveis no dorso | ==abdução== (DAB) | ulnar profundo |\n| palmares | 3, unipenados | face volar dos metacarpos | adução (PAD) | ulnar profundo |\n\n- Todos flexionam a MF e estendem as IF (com os lumbricais).\n- Eixo de referência: ==dedo médio==.\n\n### 1º interósseo dorsal\n- O maior; relevo da comissura do polegar no dorso.\n- ==Atrofia precoce== na lesão do ulnar (vale no dorso da comissura).\n- Teste: abdução resistida do indicador.\n\n### Vizinhos\n| Músculo | Plano |\n|---|---|\n| adutor do polegar | volar, profundo, em leque do 3º metacarpo |\n| abdutor curto do polegar | tenar, volar |\n| abdutor longo do polegar | tendão no 1º compartimento |\n\n> **Na prova:** músculo dorsal da 1ª comissura = ==1º interósseo dorsal==.",
+  "correta": "**1º interósseo dorsal.**\n- Relevo dorsal da comissura do polegar.\n- Atrofia precoce na lesão do ulnar.\n- Dorsais abduzem, palmares aduzem.",
   "incorretas": {
-   "B": "O adutor do polegar fica do lado volar, em forma de leque, indo do terceiro metacarpo à base da falange proximal do polegar. É vizinho do primeiro interósseo dorsal, mas num plano volar.",
-   "C": "Os interósseos palmares são três, menores, e ficam na face volar dos metacarpos, não aparecem numa dissecção dorsal.",
-   "D": "Não existe um músculo chamado apenas abdutor do polegar: existem o abdutor longo, que vem do antebraço, e o abdutor curto, que é tenar e volar."
+   "B": "**Plano volar.**\n- Leque do 3º metacarpo ao polegar.",
+   "C": "**Face volar.**\n- Não aparece na vista dorsal.",
+   "D": "**Não existe.**\n- Abdutor longo ou curto."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Netter, Atlas de Anatomia Humana, 7ª edição, Cap. 7"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0443": {
-  "conceito": "A indicação de reimplante não é uma lista de níveis: é uma pergunta sobre o que se ganha. Reimplantar um dedo que voltará rígido e insensível pode custar mais função à mão do que a amputação bem feita.",
-  "correta": "O polegar é a indicação mais forte, em qualquer nível. Ele responde por cerca de 40% a 50% da função da mão, e nenhuma reconstrução substitui bem a oposição, mesmo um polegar reimplantado rígido e com sensibilidade parcial vale como poste de oposição, e isso já devolve a pinça. As outras indicações fortes seguem a mesma lógica: amputações múltiplas, amputação transmetacarpiana ou mais proximal, e qualquer amputação em criança, cujo potencial de recuperação nervosa é muito maior.",
+  "conceito": "### Tempo de isquemia tolerado no reimplante\n| Segmento | Isquemia quente | Isquemia fria (4 °C) |\n|---|---|---|\n| ==dedo== (sem músculo) | ==cerca de 12 h== | ==até 24 a 30 h== |\n| mão, punho, antebraço, braço (com músculo) | ==cerca de 6 h== | cerca de ==12 h== |\n\n- Necrose muscular irreversível começa por volta de **6 horas** de isquemia quente.\n\n### Conservação do segmento\n- Gaze **úmida** com soro, dentro de **saco plástico fechado**, saco sobre **gelo e água**.\n- Nunca contato direto com gelo nem imersão.\n\n### Síndrome de reperfusão (segmentos proximais)\n- Hipercalemia, acidose, **mioglobinúria**, insuficiência renal.\n- Em isquemia prolongada de braço, **não reimplantar** pode salvar a vida.\n\n### Indicações clássicas\n- Polegar, múltiplos dedos, mão, punho, antebraço, qualquer amputação em **criança**, dedo isolado distal à inserção do FSD (zona I).\n\n### Indicações e contraindicações\n| Forte | Relativa contra |\n|---|---|\n| ==polegar em qualquer nível== | dedo único em zona II (adulto) |\n| múltiplos dedos | indicador isolado |\n| mão, punho, antebraço | amputação segmentar em vários níveis |\n| qualquer amputação em ==criança== | esmagamento, avulsão extensa |\n| dedo isolado distal ao FSD (zona I) | comorbidades graves, isquemia longa |\n\n- Polegar: 40 a 50% da função da mão; mesmo rígido serve de poste de oposição.\n\n> **Na prova:** melhor indicação de reimplante = ==polegar em qualquer nível==.",
+  "correta": "**Polegar em qualquer nível.**\n- 40 a 50% da função da mão.\n- Mesmo rígido, é poste para a pinça.\n- Outras fortes: múltiplos dedos, proximais, criança.",
   "incorretas": {
-   "B": "O indicador é justamente o contra-exemplo: um indicador reimplantado rígido e insensível é excluído do uso e atrapalha a pinça, e muitos autores preferem a amputação do raio. Reimplantar o indicador isolado, em adulto, tem indicação fraca.",
-   "C": "Amputação única de dedo em zona 2, com os demais preservados, é a indicação mais discutível de todas: o resultado funcional costuma ser pior que o de uma amputação bem regularizada, e o afastamento é bem maior.",
-   "D": "Amputação segmentar em múltiplos níveis é considerada contraindicação relativa forte, porque exige múltiplas anastomoses e enxertos num segmento já muito traumatizado."
+   "B": "**Contraexemplo.**\n- Indicador rígido é excluído da pinça.",
+   "C": "**Discutível.**\n- Resultado costuma ser pior que a amputação.",
+   "D": "**Contraindicação relativa.**\n- Múltiplas anastomoses em segmento destruído."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0444": {
-  "conceito": "Na coleta do retalho de fíbula vascularizado, os vasos fibulares correm colados ao osso pela face posterior, e não estão à vista quando se aborda a fíbula pela lateral: há um músculo por cima deles.",
-  "correta": "O flexor longo do hálux é esse músculo. Ele recobre a face posterior da fíbula ao longo de quase todo o comprimento do osso e esconde os vasos fibulares durante a dissecção. A regra técnica que decorre disso é conhecida: deixa-se sempre um manguito do flexor longo do hálux aderido ao osso, sem tentar descolá-lo até enxergar o pedículo, porque descolar cedo demais é a forma clássica de lesar os vasos que se está tentando colher.",
+  "conceito": "### Retalho de fíbula vascularizado\n- Pedículo: ==artéria e veias fibulares==, colados à face posterior do osso.\n- Até cerca de 25 cm de osso; preservar 6 a 8 cm distais (tornozelo) e proximais (nervo fibular, joelho).\n\n### Músculos em volta da fíbula\n| Músculo | Compartimento | Relação |\n|---|---|---|\n| fibulares longo e curto | lateral | afastados para chegar ao osso |\n| extensores, tibial anterior | anterior | liberados da membrana |\n| ==flexor longo do hálux== | ==posterior profundo== | ==cobre os vasos fibulares==; deixar manguito aderido |\n| tibial posterior | posterior profundo | separado da membrana |\n| sóleo | posterior superficial | proximal |\n\n### Usos\n- Falhas ósseas > 6 cm, pseudartrose congênita da tíbia, reconstrução após tumor, mandíbula; com ilha de pele (osteocutâneo).\n\n> **Na prova:** músculo que esconde os vasos fibulares = ==flexor longo do hálux==.",
+  "correta": "**Flexor longo do hálux.**\n- Recobre a face posterior da fíbula e os vasos.\n- Deixar um manguito aderido ao osso.\n- Descolar cedo lesa o pedículo.",
   "incorretas": {
-   "B": "O tibial anterior está no compartimento anterior, do outro lado da membrana interóssea.",
-   "C": "O sóleo é posterior e superficial, e cobre a região proximal, mas não é ele que se interpõe entre o cirurgião e os vasos fibulares ao longo da diáfise.",
-   "D": "Os fibulares longo e curto estão no compartimento lateral, e são justamente os músculos que se afastam para chegar ao osso."
+   "B": "**Compartimento anterior.**\n- Do outro lado da membrana.",
+   "C": "**Superficial e proximal.**\n- Não se interpõe ao longo da diáfise.",
+   "D": "**Compartimento lateral.**\n- Afastado para chegar ao osso."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0445": {
-  "conceito": "A transferência de Oberlin usa um fascículo do nervo ulnar como doador. Isso significa que ela só é possível se o ulnar estiver funcionando, ou seja, se C8 e T1 estiverem preservados.",
-  "correta": "A indicação são as lesões de C5-C6 ou C5-C7 com preservação de C8-T1: a paralisia de Erb no adulto, em que o ombro e o cotovelo pararam e a mão continua boa. O fascículo colhido é um dos destinados ao flexor ulnar do carpo, cuja perda é bem tolerada, e o alvo é o ramo motor do musculocutâneo para o bíceps. O ganho é de tempo: o coto doador fica a poucos centímetros da placa motora, e a reinervação acontece em meses, dentro da janela em que o músculo ainda responde.",
+  "conceito": "### Plexo braquial: padrões\n| Lesão | Raízes | Quadro |\n|---|---|---|\n| ==superior (Erb)== | ==C5-C6== | ombro sem abdução e RE, cotovelo sem flexão, sem supinação; ==gorjeta de garçom== |\n| estendida | C5-C7 | + extensão do cotovelo e punho fracas |\n| inferior (Klumpke) | C8-T1 | mão em garra, intrínsecos, Horner |\n| total | C5-T1 | membro flácido e anestésico |\n\n### Por que cada déficit\n| Função perdida | Nervo |\n|---|---|\n| abdução do ombro | axilar (deltoide), supraescapular |\n| flexão do cotovelo | musculocutâneo (bíceps, braquial) |\n| supinação | bíceps |\n| sensibilidade lateral do braço | axilar (cutâneo lateral superior) |\n\n### Sinais de avulsão pré-ganglionar\n- **Horner** (T1), escápula alada (torácico longo), hemidiafragma elevado (frênico), dor em queimação, pseudomeningocele na RM.\n- Histamina e condução sensitiva preservadas em região anestésica.\n\n### Prioridades na lesão completa\n| Ordem | Função | Opção comum |\n|---|---|---|\n| ==1== | ==flexão do cotovelo== | Oberlin (fascículo do ulnar), intercostais, frênico, acessório |\n| 2 | estabilidade e abdução do ombro | acessório para supraescapular |\n| 3 | sensibilidade protetora da mão | |\n| 4 | extensão do punho, flexão dos dedos | transferências, músculo livre (grácil) |\n| 5 | intrínsecos | quase nunca recuperam |\n\n- Placa motora degenera em 12 a 18 meses: operar cedo (3 a 6 meses).\n\n### Transferências nervosas clássicas\n| Técnica | Doador | Receptor | Função |\n|---|---|---|---|\n| ==Oberlin== | ==fascículo do ulnar (FUC)== | ==ramo do bíceps== | flexão do cotovelo |\n| Oberlin dupla (Mackinnon) | + fascículo do mediano | ramo do braquial | flexão do cotovelo |\n| Somsak | ramo do tríceps (radial) | nervo axilar | abdução |\n| acessório → supraescapular | XI par | supraescapular | abdução, RE |\n| intercostais | T3-T5 | musculocutâneo | flexão do cotovelo |\n\n### Indicação de Oberlin\n- ==C5-C6 ou C5-C7 com C8-T1 preservados== (ulnar funcionando como doador).\n- Não serve em Klumpke nem em avulsão extensa.\n\n> **Na prova:** Oberlin = ==C5-C6 (C5-C7) com C8-T1 íntegros==",
+  "correta": "**C5-C6 ou C5-C7 com C8-T1 preservados.**\n- O ulnar precisa estar íntegro para doar.\n- Reinervação em meses, dentro da janela da placa motora.",
   "incorretas": {
-   "B": "Lesão isolada de C8 e T1 é a paralisia de Klumpke, nela o próprio ulnar está lesado, e não há doador.",
-   "C": "Lesão pré-ganglionar de C5 a C8 compromete quase todo o plexo, incluindo os doadores intraplexuais. Nesses casos recorre-se a doadores de fora: acessório, frênico, intercostais, contralateral C7.",
-   "D": "A técnica trata a flexão do cotovelo em lesão de plexo, e não lesão do nervo mediano."
+   "B": "**Klumpke.**\n- O próprio ulnar está lesado.",
+   "C": "**Sem doador intraplexual.**\n- Usa-se acessório, frênico, intercostais.",
+   "D": "**Outro problema.**\n- A técnica trata flexão do cotovelo no plexo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0446": {
-  "conceito": "A profundidade da queimadura se lê pela dor e pelo aspecto, e o raciocínio é direto: dói enquanto houver terminação nervosa viva, e a terminação nervosa vive na derme.",
-  "correta": "Na queimadura de segundo grau superficial há bolhas e dor intensa, justamente porque as terminações nervosas da derme superficial estão preservadas. O leito, ao romper a bolha, é rosado, úmido e enche rápido ao ser comprimido. Ela epiteliza sozinha em duas a três semanas a partir dos anexos cutâneos que sobreviveram, e não deixa cicatriz significativa, não se enxerta. A regra prática que decorre: a queimadura que dói é a que tende a cicatrizar sozinha; a que não dói é a que precisa de cirurgia.",
+  "conceito": "### Profundidade da queimadura\n| Grau | Camada | Aspecto | Dor | Cicatrização |\n|---|---|---|---|---|\n| 1º | epiderme | eritema, sem bolha | sim | dias |\n| ==2º superficial== | ==derme papilar== | ==bolhas==, leito rosado e úmido, enche ao comprimir | ==intensa== | ==2 a 3 semanas, sem enxerto== |\n| 2º profundo | derme reticular | pálido, mosqueado, enchimento lento | menor | > 3 semanas: excisão e enxerto |\n| 3º | toda a derme | escara branca ou marrom, seca | ==ausente== | enxerto |\n| 4º | tendão, osso | carbonizado | ausente | retalho |\n\n### Regra prática\n- A queimadura que ==dói== tende a cicatrizar sozinha; a que ==não dói== precisa de cirurgia.\n\n### Mão queimada\n- Posição de segurança na órtese (punho estendido, MF fletidas, IF estendidas).\n- Escarotomia em queimadura circunferencial com compressão.\n\n> **Na prova:** 2º grau superficial = ==bolhas e dor intensa==.",
+  "correta": "**Bolhas e dor intensa.**\n- Terminações nervosas da derme preservadas.\n- Epiteliza em 2 a 3 semanas pelos anexos cutâneos.",
   "incorretas": {
-   "B": "Ausência de dor por destruição das terminações nervosas é achado de terceiro grau, com escara branca ou acastanhada, seca e insensível.",
-   "C": "Pele carbonizada e sem sangramento é queimadura de espessura total ou de quarto grau.",
-   "D": "Exposição de tendão e osso é quarto grau, e exige cobertura com retalho, não com enxerto."
+   "B": "**3º grau.**\n- Escara insensível.",
+   "C": "**Espessura total ou 4º grau.**\n- Carbonizada, sem sangramento.",
+   "D": "**4º grau.**\n- Exige retalho."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0447": {
-  "conceito": "O broto do membro se forma a partir de duas origens diferentes que chegam ao mesmo lugar. O mesoderma da placa lateral fornece o esqueleto e o tecido conjuntivo; os somitos, pela migração de mioblastos, fornecem a musculatura.",
-  "correta": "Do mesoderma da placa lateral vêm osso, cartilagem, tendão e ligamento, o arcabouço do membro. Guardar essa divisão explica um fato que costuma cair em prova: numa deficiência longitudinal como a mão torta radial, é o esqueleto e o conjuntivo do lado radial que falham, e a musculatura correspondente é anômala por não ter onde se inserir, e não por defeito próprio. Explica também por que a musculatura pode estar presente e desorganizada em malformações graves do esqueleto.",
+  "conceito": "### Formação do esqueleto do membro\n1. Broto do membro: mesoderma da placa lateral + ectoderma (4ª semana).\n2. ==Condensações mesenquimais== no formato do futuro osso.\n3. Molde cartilaginoso.\n4. Ossificação endocondral.\n\n### Origem de cada tecido\n| Tecido do membro | Origem |\n|---|---|\n| ==ossos, cartilagem, tendões, ligamentos== | ==mesoderma da placa lateral== (condensações mesenquimais) |\n| músculos | somitos (mioblastos migram para o broto) |\n| nervos periféricos, Schwann, melanócitos | crista neural |\n| vasos | angioblastos locais |\n\n### Centros de sinalização\n| Centro | Eixo | Molécula | Falha |\n|---|---|---|---|\n| crista ectodérmica apical | proximal-distal | FGF | deficiências transversas |\n| zona de atividade polarizada | radioulnar | ==Shh== | polidactilia, mão em espelho |\n| ectoderma dorsal | dorsoventral | Wnt7a | unhas palmares, nail-patella |\n\n> **Na prova:** mesoderma da placa lateral = ==osso, cartilagem e tendão==",
+  "correta": "**Osso, cartilagem e tendão.**\n- Arcabouço do membro vem da placa lateral.\n- Músculos vêm dos somitos.\n- Explica a musculatura anômala na mão torta radial.",
   "incorretas": {
-   "A": "A musculatura vem dos somitos, cujos mioblastos migram para o broto. Nervos e a bainha de Schwann vêm da crista neural e do tubo neural, e os vasos, do mesoderma angiogênico.",
-   "B": "A epiderme vem do ectoderma de superfície, que forma também a crista ectodérmica apical, o centro que comanda o crescimento proximal-distal.",
-   "D": "Fáscia e tecido adiposo derivam do mesoderma, mas não são o que a questão pede, e listá-los sem o esqueleto deixa de fora a contribuição principal."
+   "A": "**Origens diferentes.**\n- Músculo dos somitos; nervo da crista e tubo neural.",
+   "B": "**Ectoderma.**\n- Pele e crista ectodérmica apical.",
+   "D": "**Incompleta.**\n- Deixa de fora o esqueleto."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0448": {
-  "conceito": "O tempo desde a lesão é o que decide se ainda há ligamento para reparar. Passado o prazo, os cotos retraem, degeneram e não têm mais como ser suturados de volta, e a estratégia muda de reparo para reconstrução.",
-  "correta": "Seis semanas é o limite habitualmente usado para chamar a dissociação escafossemilunar de crônica. Dentro dele, o reparo direto do ligamento com âncoras, protegido por fios de Kirschner, ainda é possível e é o que dá o melhor resultado. Passado esse prazo, entram as reconstruções, tenodese triligamentar de Garcia-Elias, capsulodese, ou, quando já há artrose, os procedimentos de salvamento. Daí a insistência em não perder o diagnóstico na emergência: é um dos poucos lugares da ortopedia em que seis semanas mudam completamente a cirurgia.",
+  "conceito": "### Estadiamento de Garcia-Elias (instabilidade escafossemilunar)\n| Estágio | Ligamento | Alinhamento | Cartilagem | Tratamento |\n|---|---|---|---|---|\n| 1 | lesão parcial | normal | íntegra | pinagem (artroscópica), capsulodese |\n| 2 | completo, **reparável** | normal | íntegra | **reparo ligamentar** + pinagem |\n| 3 | irreparável, estabilizadores secundários íntegros | normal | íntegra | tenodese/capsulodese |\n| ==4== | ==irreparável== | ==subluxação rotatória redutível== | ==íntegra== | ==tenodese triligamentar== |\n| 5 | irreparável | subluxação **irredutível** | íntegra | artrodese parcial (STT, escafossemilunocapitato) |\n| 6 | irreparável | irredutível | **lesada** (SLAC) | fileira proximal, **quatro esquinas** |\n\n### Tenodese triligamentar\n- Tira do **FRC** passada pelo escafoide (volar → dorsal), ancorada no **semilunar** e fixada ao **piramidal** (ligamento radiopiramidal dorsal).\n- Impede a flexão do escafoide, une-o ao semilunar e amarra ao lado ulnar.\n\n### Aguda × crônica\n| Tempo | Classificação | Opção |\n|---|---|---|\n| até 6 semanas | aguda | ==reparo direto== (âncoras) + fios |\n| ==> 6 semanas== | ==crônica== | reconstrução (tenodese, capsulodese) |\n\n> **Na prova:** dissociação escafossemilunar crônica = ==após 6 semanas==",
+  "correta": "**6 semanas.**\n- Até aí o reparo direto ainda é viável.\n- Depois, cotos retraídos: reconstrução.",
   "incorretas": {
-   "B": "Oito semanas já está além do prazo em que o reparo direto costuma ser viável.",
-   "C": "Doze semanas é claramente território de reconstrução.",
-   "D": "Quinze semanas, mais ainda."
+   "B": "**Além do prazo.**\n- Reparo direto pouco viável.",
+   "C": "**Reconstrução.**\n- Claramente crônica.",
+   "D": "**Reconstrução.**\n- Mais ainda."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0449": {
-  "conceito": "O semilunar recebe vasos por duas faces, dorsal e volar, que se anastomosam dentro do osso. O desenho dessa rede varia entre as pessoas e foi descrito em três padrões pelas letras que ele forma: Y, X e I.",
-  "correta": "O padrão em I é o de maior risco. Nele existe um único vaso atravessando o osso, sem rede colateral: basta uma interrupção para que uma região inteira fique sem suprimento. Soma-se a isso a segunda vulnerabilidade descrita por Gelberman (uma parcela das pessoas tem apenas uma artéria nutrícia entrando no osso, em vez de duas), e está montado o cenário anatômico que, junto com a variância ulnar negativa e a sobrecarga repetida, explica por que a doença atinge um punho e não o outro.",
+  "conceito": "### Vascularização do semilunar\n- Entrada de vasos pelas faces **dorsal** e **volar**, anastomosados dentro do osso.\n- Cerca de 7 a 20% das pessoas têm **uma única** fonte (só volar ou só dorsal): mais vulnerável.\n\n### Padrões intraósseos (Gelberman)\n| Padrão | Frequência aproximada | Risco |\n|---|---|---|\n| Y | cerca de 60% | intermediário (ramificado) |\n| X | cerca de 10% | menor (mais anastomoses) |\n| ==I== | ==cerca de 30%== | ==maior==: vaso único, sem colateral |\n\n### Fatores somados no Kienböck\n- Padrão vascular pobre + **ulna minus** + semilunar tipo I + sobrecarga repetida.\n\n### Gelberman: entrada extraóssea\n| Padrão | Frequência |\n|---|---|\n| vasos dorsais e volares | cerca de 80% |\n| ==artéria única (só volar ou só dorsal)== | ==cerca de 8 a 20%== (risco maior) |\n\n### Zapico (forma do semilunar)\n| Tipo | Faceta proximal | Associação |\n|---|---|---|\n| ==I== | ângulo maior (forma quadrangular) | ==ulna minus==, maior risco |\n| II | intermediária | neutra |\n| III | menor | ulna plus |\n\n> **Na prova:** padrão vascular de maior risco = ==em I==",
+  "correta": "**Padrão em I.**\n- Vaso único atravessando o osso, sem colateral.\n- Soma-se a artéria nutrícia única e a ulna minus.",
   "incorretas": {
-   "B": "O padrão em Y tem ramificação e, portanto, circulação de reserva. É protetor.",
-   "C": "Na classificação de Zapico, que descreve a forma do semilunar, o tipo associado a maior risco é o I (o de forma mais quadrangular, ligado à variância ulnar negativa), e não o II.",
-   "D": "Pelo mesmo motivo, o tipo III de Zapico não é o de risco."
+   "B": "**Ramificado.**\n- Tem reserva; protetor.",
+   "C": "**Forma, não vaso.**\n- O Zapico de risco é o I.",
+   "D": "**Forma, não vaso.**\n- Associado a ulna plus."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0450": {
