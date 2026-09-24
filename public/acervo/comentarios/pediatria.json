@@ -4017,91 +4017,91 @@
   "conferido": false
  },
  "pediatria-0313": {
-  "conceito": "A classificação de **Sillence** para a osteogênese imperfeita diferencia os tipos, entre outros critérios, pelo tipo de defeito no colágeno tipo I. O **tipo I** (a forma mais leve e mais comum da doença) é caracterizado por um defeito **quantitativo** (produção reduzida de colágeno tipo I estruturalmente normal, e não um colágeno defeituoso em sua estrutura), associado classicamente a **esclera azulada**, estatura próxima do normal e fraturas de frequência variável, geralmente reduzindo após a puberdade.\n\nJá as formas mais graves da doença (tipos II, III e IV) estão, em geral, associadas a defeitos **qualitativos** do colágeno (produção de um colágeno estruturalmente anormal), o que se correlaciona com fenótipos muito mais graves, essa distinção quantitativo (tipo I, mais leve) versus qualitativo (tipos mais graves) é um dos pontos centrais da classificação de Sillence.",
-  "correta": "A. O tipo I da classificação de Sillence é caracterizado por um defeito quantitativo do colágeno tipo I e esclera azulada.",
+  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Quantitativo × qualitativo\n- Tipo I: colágeno tipo 1 ==normal em estrutura, mas em quantidade reduzida== (alelo nulo de COL1A1).\n- Tipos II, III e IV: colágeno ==estruturalmente anormal== (substituição de glicina): mais graves.\n- Escleras azuis: I (persistentes) e II; III azuladas ao nascer, clareiam; IV normais.\n\n> **Na prova:** Sillence I = defeito ==quantitativo== + ==escleras azuis==",
+  "correta": "**Quantitativo e escleras azuis.**\n- Metade do colágeno normal.\n- Forma mais leve e mais comum.",
   "incorretas": {
-   "B": "A esclera é azulada, não normal, no tipo I, além de o defeito ser quantitativo, não qualitativo.",
-   "C": "O defeito no tipo I é quantitativo, não qualitativo, os defeitos qualitativos estão associados às formas mais graves da doença.",
-   "D": "A esclera é azulada, não normal, no tipo I, embora o defeito seja de fato quantitativo."
+   "B": "**Perfil do tipo IV.**\n- Qualitativo com esclera normal.",
+   "C": "**Qualitativo é dos tipos graves.**\n- Tipo I é quantitativo.",
+   "D": "**Esclera errada.**\n- Tipo I tem esclera azul."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0314": {
-  "conceito": "A escoliose congênita nasce de falha de formação ou de segmentação vertebral entre a quinta e a oitava semanas de gestação, exatamente o período em que se formam também o tubo neural, o coração e o trato geniturinário. Por isso as malformações associadas seguem esses três sistemas: alterações do NEUROEIXO em cerca de um terço (medula presa, diastematomielia, siringomielia, Chiari), CARDÍACAS em torno de 10 a 25%, e GENITURINÁRIAS em 20 a 30% (agenesia renal, rim em ferradura, duplicação ureteral). A consequência prática é obrigatória: toda criança com escoliose congênita precisa de ressonância de todo o neuroeixo, ecocardiograma e ultrassonografia renal antes de qualquer cirurgia.",
-  "correta": "Do neuroeixo, cardíacas e do sistema geniturinário.",
+  "conceito": "### Escoliose congênita\n| Tipo | Exemplo | Risco de progressão |\n|---|---|---|\n| falha de formação | hemivértebra, vértebra em cunha | variável |\n| falha de segmentação | barra unilateral | alto |\n| ==misto== | ==barra unilateral + hemivértebra contralateral== | ==o maior== |\n\n### Malformações associadas (cerca de 60%)\n| Sistema | Frequência | Exame |\n|---|---|---|\n| ==neuroeixo== (diastematomielia, medula presa, siringomielia) | ==20 a 40%== | RM de todo o neuroeixo |\n| ==geniturinário== | ==20 a 30%== | ultrassom renal |\n| ==cardíaco== | ==10 a 25%== | ecocardiograma |\n\n- Mesma janela embrionária (4ª a 6ª semana) para coluna, rim e coração.\n- VACTERL e Klippel-Feil também entram no diferencial.\n\n> **Na prova:** escoliose congênita = investigar ==neuroeixo, coração e sistema geniturinário==",
+  "correta": "**Neuroeixo, cardíaca e geniturinária.**\n- As três mais frequentes.\n- RM, ecocardiograma e ultrassom renal na rotina.",
   "incorretas": {
-   "A": "Fístula traqueoesofágica e alterações de membros fazem parte da associação VACTERL, que é outro contexto.",
-   "C": "Ânus imperfurado e alterações de membros também pertencem ao espectro VACTERL.",
-   "D": "A deformidade de Sprengel pode coexistir, mas não integra a tríade de associações mais frequentes."
+   "A": "**Mistura VACTERL.**\n- Fístula traqueoesofágica é rara isoladamente.",
+   "C": "**Ânus imperfurado.**\n- Associação de VACTERL, menos comum.",
+   "D": "**Sprengel e fístula.**\n- Menos frequentes que rim e coração."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0315": {
-  "conceito": "O **ângulo centro-borda lateral** (ângulo de Wiberg) é medido, na radiografia AP de bacia, entre uma linha vertical que passa pelo centro da cabeça femoral e uma linha que liga esse mesmo centro à borda lateral do teto acetabular, avaliando a cobertura lateral da cabeça femoral pelo acetábulo, exatamente a configuração de linhas mostrada na imagem, convergindo no centro da cabeça femoral em direção à borda acetabular lateral.",
-  "correta": "B. O ângulo demonstrado é o centro-borda lateral.",
+  "conceito": "### Radiografias na displasia do quadril\n| Incidência | Avalia |\n|---|---|\n| AP da bacia | CE lateral (Wiberg), índice acetabular, Tönnis, Shenton, extrusão |\n| ==falso perfil (Lequesne)== | ==cobertura anterior== (ângulo CE anterior: normal > 20 a 25°) |\n| Dunn 45° | colo, came |\n| abdução-RI (von Rosen) | congruência na redução, planejar osteotomia |\n\n### Ângulos\n| Ângulo | Normal | Displasia |\n|---|---|---|\n| CE lateral | > 25° | < 20° |\n| CE anterior (falso perfil) | > 20° | < 20° |\n| Tönnis (inclinação do teto) | 0 a 10° | > 10° |\n\n### Centro-borda lateral (Wiberg)\n- Linha vertical pelo ==centro da cabeça== × linha do centro à ==borda lateral do acetábulo==.\n- Normal > 25°; displasia < 20°.\n- No falso perfil de Lequesne mede-se o centro-borda ==anterior==.\n\n> **Na prova:** ângulo do centro da cabeça à borda lateral = ==centro-borda lateral (Wiberg)==",
+  "correta": "**Centro-borda lateral.**\n- Vertical pelo centro da cabeça e linha até a borda lateral.\n- Mede cobertura lateral.",
   "incorretas": {
-   "A": "O ângulo de **Tönnis** é medido de forma diferente, entre uma linha horizontal e uma linha unindo as bordas medial e lateral do sourcil acetabular, não a configuração vertical/centro-lateral mostrada.",
-   "C": "O ângulo centro-borda **posterior** é medido em uma incidência radiográfica diferente (perfil falso de Lequesne), avaliando a cobertura posterior, não a lateral mostrada na incidência padrão da imagem.",
-   "D": "O ângulo de **Lequesne** corresponde justamente ao ângulo centro-borda posterior, medido no perfil falso, uma incidência e um plano de cobertura diferentes dos mostrados na imagem."
+   "A": "**Tönnis.**\n- Inclinação do teto de carga.",
+   "C": "**Centro-borda posterior.**\n- Não é medido no AP.",
+   "D": "**Lequesne.**\n- Centro-borda anterior, no falso perfil."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0316": {
-  "conceito": "A classificação de **Bayne e Klug** para a mão torta radial (deficiência longitudinal do rádio) estratifica a gravidade conforme o grau de acometimento do rádio:\n- **Tipo I**: encurtamento discreto do rádio distal, com ambas as fises presentes.\n- **Tipo II**: rádio hipoplásico, com ambas as fises presentes, porém com crescimento comprometido.\n- **Tipo III**: ausência **parcial** do rádio, tipicamente a porção distal, incluindo sua fise de crescimento, está ausente, restando um rádio mais fino e curto que a ulna, sem fise distal funcionante.\n- **Tipo IV**: ausência **total** do rádio, o tipo mais grave e também o mais comum.\n\nA descrição de um rádio mais fino e curto que a ulna, sem fise de crescimento, corresponde exatamente à definição do **tipo III**, que se diferencia do tipo IV (ausência completa do osso) por ainda haver alguma porção do rádio presente, ainda que hipoplásica e sem potencial de crescimento distal.",
-  "correta": "C. Um rádio mais fino e curto que a ulna, sem fise de crescimento, corresponde ao tipo III da classificação de Bayne e Klug.",
+  "conceito": "### Deficiência longitudinal radial (Bayne e Klug)\n| Tipo | Rádio | Frequência |\n|---|---|---|\n| 0 | normal, com hipoplasia do carpo ou polegar | |\n| I | rádio distal curto | leve |\n| II | rádio hipoplásico em miniatura | |\n| III | ausência parcial (geralmente distal) | |\n| ==IV== | ==ausência completa== | ==a mais comum== |\n\n- Mão em **desvio radial** (mão torta radial), polegar hipoplásico ou ausente.\n- Associações: **VACTERL**, Holt-Oram (cardiopatia), TAR (trombocitopenia), anemia de **Fanconi** (fazer teste de quebra cromossômica).\n\n### Deficiência longitudinal ulnar (Bayne)\n| Tipo | Ulna |\n|---|---|\n| ==I== | ==hipoplasia (ulna curta, epífises presentes)== : a mais comum |\n| II | ausência parcial |\n| III | ausência total |\n| IV | sinostose radioumeral |\n\n- Menos frequente que a radial; mais associada a anomalias **musculoesqueléticas** (não sistêmicas).\n- Cotovelo e mão (dedos ulnares, comissura) definem a função.\n\n### Detalhe dos tipos II e III\n- II: rádio hipoplásico ==com as duas fises==, crescimento reduzido.\n- ==III==: rádio ==curto e fino, ausência parcial== (geralmente distal), ==sem fise distal==.\n\n> **Na prova:** rádio fino, curto e sem fise = ==Bayne e Klug III==",
+  "correta": "**Tipo III.**\n- Ausência parcial, em geral distal.\n- Sem fise distal: sem crescimento.",
   "incorretas": {
-   "A": "O tipo I corresponde a um encurtamento discreto do rádio, com ambas as fises ainda presentes, não à ausência de fise descrita.",
-   "B": "O tipo II corresponde a um rádio hipoplásico, mas ainda com ambas as fises presentes, diferente do quadro sem fise distal descrito.",
-   "D": "O tipo IV corresponde à ausência total do rádio, não a um rádio ainda presente, porém fino e sem fise distal."
+   "A": "**Tipo I.**\n- Rádio distal apenas curto.",
+   "B": "**Tipo II.**\n- Miniatura, com fises.",
+   "D": "**Tipo IV.**\n- Ausência completa."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0318": {
-  "conceito": "Na mielomeningocele, a exposição do tecido neural na bolsa herniada representa um risco contínuo e crescente de infecção (meningite, ventriculite) e de dessecação/lesão adicional do tecido neural exposto ao ambiente. Por esse motivo, a recomendação consagrada é o **fechamento cirúrgico precoce**, idealmente ainda **nas primeiras horas de vida**, quanto mais cedo a bolsa for fechada, menor o risco de contaminação e de lesão neural adicional, sendo esse um dos poucos verdadeiros \"tempos cirúrgicos de urgência\" dentro da ortopedia pediátrica, coordenado geralmente com a equipe de neurocirurgia já na admissão do recém-nascido.",
-  "correta": "A. O fechamento cirúrgico da bolsa de mielomeningocele deve ser realizado nas primeiras horas após o nascimento.",
+  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Fechamento da bolsa\n- Cirurgia nas ==primeiras 24 a 48 horas==: reduz ==infecção do SNC== (meningite, ventriculite).\n- Cobrir com compressa úmida estéril, decúbito ventral, ambiente livre de látex.\n- Hidrocefalia (80 a 90%): derivação ventriculoperitoneal conforme necessidade.\n- Correção intrauterina (MOMS): menos derivação, melhor função motora.\n\n> **Na prova:** fechamento da MMC = ==primeiras horas== (até 48 h)",
+  "correta": "**Primeiras horas.**\n- Idealmente em 24 a 48 horas.\n- Reduz infecção do sistema nervoso.",
   "incorretas": {
-   "B": "Aguardar 48 horas prolonga desnecessariamente a exposição do tecido neural, aumentando o risco de infecção.",
-   "C": "Aguardar a primeira semana representa um atraso significativo e inaceitável frente ao risco de infecção do sistema nervoso central.",
-   "D": "Aguardar o primeiro mês representa um atraso muito além do recomendado, com risco inaceitavelmente alto de infecção e lesão neural adicional."
+   "B": "**Após 48 horas.**\n- Aumenta o risco de infecção.",
+   "C": "**Após uma semana.**\n- Tarde.",
+   "D": "**Após um mês.**\n- Inaceitável."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0319": {
-  "conceito": "O **índice de Reimers** (percentual de migração da cabeça femoral) é a principal ferramenta radiográfica usada nos programas de vigilância do quadril em pacientes com **paralisia cerebral**, condição em que o desequilíbrio muscular progressivo (predomínio de adutores e flexores do quadril sobre seus antagonistas) favorece a subluxação lenta e progressiva da cabeça femoral ao longo da infância. O índice mede o percentual da cabeça femoral que está descoberta pelo teto acetabular, permitindo quantificar objetivamente o grau de subluxação e acompanhar sua evolução ao longo do tempo, orientando decisões sobre intervenção preventiva (cirurgias de partes moles ou ósseas) antes que ocorra luxação completa.",
-  "correta": "D. O índice de Reimers é utilizado na vigilância radiográfica do quadril em pacientes com paralisia cerebral.",
+  "conceito": "### Índice de migração de Reimers\n- Porcentagem da ==cabeça femoral lateral à linha de Perkins==.\n\n| Valor | Conduta (PC) |\n|---|---|\n| < 30% | vigilância |\n| 30 a 40% | liberação de partes moles (adutores, psoas) |\n| > 40 a 60% | osteotomia femoral varizante ± pélvica (Dega) |\n| luxado doloroso | salvamento |\n\n- Vigilância radiográfica anual a partir de 2 anos, maior risco em ==GMFCS IV e V==.\n\n### Outros índices do quadril\n| Índice | O que mede |\n|---|---|\n| Wiberg | ângulo centro-borda (cobertura) |\n| Perkins | linha vertical pela borda do acetábulo |\n| Hilgenreiner | linha horizontal pelas trirradiadas |\n| índice acetabular | inclinação do teto |\n\n> **Na prova:** Reimers = vigilância do quadril na ==paralisia cerebral==",
+  "correta": "**Paralisia cerebral.**\n- Controle da subluxação espástica.\n- Guia a indicação cirúrgica.",
   "incorretas": {
-   "A": "A coxa vara do desenvolvimento é avaliada principalmente pelo ângulo de Hilgenreiner-epifisário, não pelo índice de Reimers.",
-   "B": "A epifisiólise é avaliada principalmente por ângulos como o cefalodiafisário (Southwick) ou a classificação de Wilson, não pelo índice de Reimers.",
-   "C": "A doença de Perthes é avaliada por classificações específicas como Catterall, Herring ou Salter-Thompson, não pelo índice de Reimers."
+   "A": "**Coxa vara.**\n- Ângulo HE.",
+   "B": "**Epifisiólise.**\n- Southwick, Klein.",
+   "C": "**Perthes.**\n- Herring, Catterall, Stulberg."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0320": {
-  "conceito": "Na terminologia da análise de marcha, a distância entre o ponto de contato de um pé com o solo e a repetição desse mesmo evento pelo **mesmo pé** é chamada de **passada (stride)**, corresponde a um ciclo completo da marcha. Ela se diferencia do **passo (step)**, que é a distância entre o contato de um pé e o contato do pé **oposto**; da **cadência**, que mede o número de passos por unidade de tempo; e do **balanço**, que é uma das duas grandes fases do ciclo da marcha (junto com o apoio), não uma medida de distância.",
-  "correta": "B. A distância entre o contato de um pé e a repetição desse evento pelo mesmo pé é chamada de passada.",
+  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n### Parâmetros lineares\n| Parâmetro | Definição |\n|---|---|\n| ==passo== | distância entre o ==calcanhar de um pé e o do outro== (no duplo apoio) |\n| passada (ciclo) | distância entre dois contatos do ==mesmo pé== = 2 passos |\n| cadência | passos por minuto |\n| velocidade | passada × cadência |\n| base de apoio | distância lateral entre os pés |\n\n### Nomenclaturas do balanço\n| Clássica | Rancho Los Amigos | Evento |\n|---|---|---|\n| ==aceleração== | ==balanço inicial== | ==flexão máxima do joelho (~60°)==, pé sai do chão |\n| oscilação intermediária | balanço médio | tíbia vertical |\n| desaceleração | balanço terminal | joelho estende, isquiotibiais freiam |\n\n> **Na prova:** do contato de um pé ao próximo contato do ==mesmo pé== = ==passada==",
+  "correta": "**Passada.**\n- Um ciclo completo, mesmo pé.\n- Equivale a dois passos.",
   "incorretas": {
-   "A": "O passo é a distância entre o contato de um pé e o contato do pé oposto, não do mesmo pé.",
-   "C": "A cadência é uma medida de frequência (passos por unidade de tempo), não de distância entre eventos do mesmo pé.",
-   "D": "O balanço é uma fase do ciclo da marcha, não uma medida de distância."
+   "A": "**Passo.**\n- Entre um pé e o outro.",
+   "C": "**Cadência.**\n- Passos por minuto.",
+   "D": "**Balanço.**\n- Fase sem contato, cerca de 40%."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0321": {
-  "conceito": "A osteocondrite dissecante do cotovelo (classicamente acometendo o capítulo umeral) é uma lesão por sobrecarga mecânica repetitiva, associada a esportes que impõem **estresse axial de compressão e valgo repetitivo** sobre a articulação radiocapitelar, o padrão clássico ocorre em atletas de **ginástica**, pelo apoio repetitivo de todo o peso corporal sobre os membros superiores em extensão (solo, paralelas, salto), gerando cargas compressivas repetitivas justamente sobre o capítulo umeral. Esportes de arremesso (beisebol) também são classicamente associados por mecanismo de estresse em valgo repetitivo, mas entre as opções apresentadas, a ginástica é o esporte mais consistentemente associado a essa lesão.",
-  "correta": "A. A osteocondrite dissecante do cotovelo é mais observada em atletas de ginástica.",
+  "conceito": "### Panner × osteocondrite dissecante do capítulo\n| Aspecto | ==Panner== | ==OCD do capítulo== |\n|---|---|---|\n| idade | ==< 10 anos== (5 a 10) | ==12 a 16 anos== |\n| extensão | ==todo o capítulo== (fragmentação difusa) | lesão focal anterolateral |\n| corpos livres | não | ==sim== (bloqueio, estalido) |\n| prognóstico | ==bom==, reossifica | variável; pode exigir cirurgia |\n| perfil | | ginastas, arremessadores (valgo repetido) |\n\n### Tratamento da OCD\n| Lesão | Conduta |\n|---|---|\n| estável, fise aberta | repouso esportivo |\n| instável ou corpo livre | artroscopia: remoção, microfratura, fixação, enxerto osteocondral |\n\n### Esportes de risco\n- Compressão radiocapitelar repetida: ==ginástica== (apoio de carga no MS) e ==arremesso== (beisebol).\n- Também tênis e levantamento de peso.\n\n> **Na prova:** OCD do capítulo = ==ginastas== e arremessadores",
+  "correta": "**Ginástica.**\n- Carga axial repetida no cotovelo em valgo.\n- Compressão radiocapitelar.",
   "incorretas": {
-   "B": "O vôlei não é classicamente associado à osteocondrite dissecante do cotovelo com a mesma intensidade da ginástica.",
-   "C": "O basquete não é classicamente associado a essa lesão, por não envolver sobrecarga axial repetitiva sobre o cotovelo.",
-   "D": "O judô não é classicamente associado à osteocondrite dissecante do cotovelo entre os esportes citados."
+   "B": "**Vôlei.**\n- Mais ombro.",
+   "C": "**Basquete.**\n- Mais joelho e tornozelo.",
+   "D": "**Judô.**\n- Trauma agudo, luxação."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0322": {
