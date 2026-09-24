@@ -241,118 +241,118 @@
   "conferido": false
  },
  "pediatria-0017": {
-  "conceito": "A pseudoartrose congênita da clavícula apresenta um perfil epidemiológico bastante característico. A maioria dos casos ocorre à direita, no terço médio, e existe predomínio do sexo feminino. Clinicamente, é comum a presença de uma proeminência indolor e móvel desde o nascimento ou primeira infância, geralmente sem limitação importante da função do ombro. A ausência de história traumática e o aspecto radiográfico sem calo diferenciam a condição de fratura obstétrica. O tratamento pode ser observacional em casos assintomáticos; cirurgia é considerada quando há dor, comprometimento funcional, sintomas neurovasculares ou preocupação estética relevante. Quando indicada, a reconstrução costuma envolver ressecção das extremidades da pseudoartrose, enxertia óssea e estabilização.",
-  "correta": "A alternativa A está correta. A pseudoartrose congênita da clavícula apresenta predomínio no sexo feminino e ocorre muito mais frequentemente do lado direito. A combinação feminino-direita corresponde ao padrão epidemiológico clássico.",
+  "conceito": "### Pseudartrose congênita da clavícula\n| Aspecto | Dado |\n|---|---|\n| lado | ==direito== (esquerdo só com dextrocardia) |\n| local | ==terço médio== |\n| sexo | feminino |\n| etiologia | pulsação da artéria subclávia (mais alta à direita) |\n| NF1 | sem relação |\n\n### Diferencial\n| Condição | Pista |\n|---|---|\n| fratura obstétrica | dor, calo em 2 a 3 semanas |\n| displasia cleidocraniana | falha lateral, bilateral, fontanelas abertas |\n| pós-traumática | história de trauma |\n\n### Tratamento\n- Assintomática: observar.\n- Dor ou deformidade (3 a 6 anos): ressecção, enxerto e fixação.\n\n> **Na prova:** pseudartrose congênita da clavícula = ==menina, lado direito==",
+  "correta": "**Feminino e à direita.**\n- Padrão epidemiológico clássico.\n- Esquerda sugere dextrocardia.",
   "incorretas": {
-   "B": "O predomínio feminino está correto, mas o lado esquerdo é incomum em comparação com o direito.",
-   "C": "O lado direito é o mais frequente, porém há predomínio feminino, e não masculino.",
-   "D": "Apresenta tanto sexo quanto lado menos característicos: a condição predomina em meninas e no lado direito."
+   "B": "**Lado errado.**\n- Esquerda é incomum.",
+   "C": "**Sexo errado.**\n- Predomínio feminino.",
+   "D": "**Duplamente errada.**\n- Sexo e lado."
   },
   "referencias": [
    "Congenital Clavicular Pseudoarthrosis. https://pmc.ncbi.nlm.nih.gov/articles/PMC7672733/",
    "Surgical Technique for Management of Congenital Pseudarthrosis of the Clavicle. https://pmc.ncbi.nlm.nih.gov/articles/PMC11411332/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0018": {
-  "conceito": "A classificação de Herring, também chamada classificação do pilar lateral, é uma das principais classificações prognósticas da doença de Legg-Calvé-Perthes. Ela avalia o terço lateral da epífise femoral na radiografia anteroposterior durante a fase de fragmentação, quando o grau de colapso pode ser adequadamente observado. Grupo A mantém a altura do pilar lateral; grupo B apresenta perda inferior a aproximadamente 50%; grupo C apresenta colapso superior a 50%, existindo ainda o grupo limítrofe B/C. O erro clássico de prova é tentar aplicar Herring precocemente, antes da fragmentação, ou utilizar a radiografia de perfil como base. A classificação orienta prognóstico e participa da decisão terapêutica juntamente com idade de início, extrusão da cabeça e amplitude de movimento.",
-  "correta": "A alternativa D está correta. A classificação de Herring é determinada na radiografia anteroposterior e deve ser aplicada durante a fase de fragmentação, idealmente quando o comprometimento do pilar lateral já pode ser quantificado.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n> **Na prova:** Herring = ==AP na fase de fragmentação==.",
+  "correta": "**AP na fragmentação.**\n- Quantifica a altura do pilar lateral.\n- Antes disso, o colapso ainda não está definido.",
   "incorretas": {
-   "A": "Herring não se baseia primariamente na radiografia de perfil e não deve ser aplicada na fase inicial de necrose.",
-   "B": "A fase de fragmentação está correta, mas a avaliação do pilar lateral é feita na incidência anteroposterior.",
-   "C": "A incidência anteroposterior está correta, porém na fase de necrose a classificação pode subestimar o comprometimento porque o colapso do pilar ainda não está definido."
+   "A": "**Incidência e fase erradas.**\n- Nem perfil nem necrose.",
+   "B": "**Incidência errada.**\n- Pilar lateral no AP.",
+   "C": "**Fase errada.**\n- Na necrose subestima."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Legg-Calve-Perthes Disease. https://posna.org/physician-education/study-guide/legg-calve-perthes-disease"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0019": {
-  "conceito": "A distrofia muscular de Duchenne causa degeneração muscular progressiva, inicialmente mais evidente nas cinturas pélvica e escapular. A marcha preservada depende de mecanismos compensatórios: aumento da lordose para manter o centro de massa atrás do quadril, redução da flexão do joelho para compensar fraqueza do quadríceps e adaptações no tornozelo. Com a progressão, a fraqueza dos **extensores do quadril** reduz a capacidade de estabilizar o tronco sobre o membro em apoio, enquanto a perda de **dorsiflexão** prejudica a progressão tibial e a liberação do pé durante a marcha. Contraturas em flexão de quadril, joelho e equino agravam o desequilíbrio. A perda da deambulação é multifatorial; a questão pede os grupos musculares cuja perda de força tem papel mecânico decisivo.",
-  "correta": "A alternativa C está correta. A perda de força da extensão do quadril e da dorsiflexão do tornozelo compromete duas funções essenciais: a extensão do quadril ajuda a estabilizar o tronco no apoio, e a dorsiflexão permite controle do tornozelo e adequada passagem do pé durante a oscilação. Na Duchenne, o aumento da inclinação pélvica anterior e da lordose é uma tentativa de compensar a fraqueza dos extensores de quadril. À medida que a compensação falha, a marcha se torna energeticamente inviável.",
+  "conceito": "### Distrofia muscular de Duchenne\n- ==Ligada ao X==, meninos; ausência de ==distrofina==.\n- Fraqueza ==proximal== (cintura pélvica primeiro), ==pseudo-hipertrofia das panturrilhas==, ==Gowers== positivo.\n- CPK muito elevada; biópsia/genética.\n\n### Perda da marcha (8 a 12 anos)\n| Fraqueza | Compensação |\n|---|---|\n| ==extensores do quadril== | hiperlordose, tronco atrás do quadril |\n| ==dorsiflexores== | marcha na ponta, equino |\n| quadríceps | joelho travado em extensão |\n\n### Ortopedia\n- Contraturas: equino, flexão do quadril, banda iliotibial.\n- ==Escoliose== após perder a marcha: artrodese precoce (antes da piora respiratória, CVF > 30 a 40%).\n- Corticoide prolonga a marcha e reduz escoliose.\n\n### Becker\n- Distrofina reduzida; mais tardia e branda.\n\n> **Na prova:** Duchenne para de andar por fraqueza de ==extensores do quadril e dorsiflexores==.",
+  "correta": "**Extensão do quadril e dorsiflexão.**\n- Extensores do quadril estabilizam o tronco no apoio.\n- Dorsiflexores controlam o pé.",
   "incorretas": {
-   "A": "A dorsiflexão está corretamente envolvida, porém a flexão do quadril não é a perda proximal principal que explica a estratégia de hiperlordose e a falha do apoio. O problema central é a fraqueza dos extensores do quadril.",
-   "B": "A alternativa troca a dorsiflexão pela flexão plantar. Embora os flexores plantares também possam ser comprometidos e o tornozelo sofra contraturas, a redução da dorsiflexão é a alteração característica que prejudica a fase de oscilação e o contato inicial na marcha progressiva da Duchenne.",
-   "D": "A extensão do quadril faz parte do mecanismo correto, mas a flexão plantar não substitui a dorsiflexão cobrada. A dificuldade para dorsifletir contribui para arraste do antepé e para compensações excessivas de quadril e joelho."
+   "A": "**Flexão do quadril não.**\n- O problema proximal é o extensor.",
+   "B": "**Duplamente errada.**\n- Flexão do quadril e plantar.",
+   "D": "**Plantar não.**\n- É a dorsiflexão."
   },
   "referencias": [
    "Gait deviations in Duchenne muscular dystrophy: systematic review. https://pubmed.ncbi.nlm.nih.gov/29579701/",
    "Gait classification for growing children with Duchenne muscular dystrophy. https://pmc.ncbi.nlm.nih.gov/articles/PMC11088636/",
    "MRI findings and ambulatory function in Duchenne muscular dystrophy. https://pmc.ncbi.nlm.nih.gov/articles/PMC7596892/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0020": {
-  "conceito": "O Gross Motor Function Classification System (GMFCS) classifica a função motora grossa na paralisia cerebral em cinco níveis, considerando desempenho habitual, não o melhor desempenho possível. A idade importa, mas a ideia central é a mobilidade em casa, na escola e na comunidade. **Nível I** caminha sem limitações; **II** caminha com limitações; **III** caminha com dispositivo manual; **IV** tem mobilidade própria limitada e geralmente precisa de assistência física, cadeira de rodas ou mobilidade motorizada em diferentes ambientes; **V** é transportado em cadeira de rodas manual e tem limitação importante de controle antigravitacional de tronco e cabeça. A descrição de caminhada restrita ao domicílio, com cadeira de rodas na comunidade, caracteriza o nível IV.",
-  "correta": "A alternativa C está correta. A criança descrita possui controle cervical e de tronco, mas sua marcha é funcional apenas em ambientes restritos e ela utiliza cadeira de rodas na comunidade. Esse padrão é GMFCS nível IV. O ponto-chave é que o nível IV não significa ausência total de movimentos ou de marcha: significa que a mobilidade independente é limitada e que a participação fora de casa depende usualmente de tecnologia de mobilidade ou assistência.",
+  "conceito": "### GMFCS (6 a 12 anos)\n| Nível | Mobilidade |\n|---|---|\n| I | anda sem restrições; corre e salta com limitação |\n| II | anda na maioria dos ambientes; limitação em distâncias, terreno irregular |\n| III | anda com ==dispositivo manual== (andador, muletas); cadeira para distâncias |\n| ==IV== | ==controle de cabeça e tronco==; anda pouco (casa, com ajuda); ==cadeira de rodas na comunidade== (pode ser motorizada) |\n| V | sem controle de cabeça e tronco; transportado |\n\n### Uso ortopédico\n| Nível | Preocupação |\n|---|---|\n| I-III | marcha: análise, cirurgia multinível |\n| ==IV-V== | ==luxação do quadril== (vigilância radiográfica), escoliose |\n\n- Índice de migração de Reimers > 30 a 40%: cirurgia de partes moles ou osteotomias.\n\n> **Na prova:** controla tronco, anda só em casa, cadeira na comunidade = ==GMFCS IV==.",
+  "correta": "**Nível IV.**\n- Controle de cabeça e tronco preservado.\n- Marcha restrita; cadeira fora de casa.",
   "incorretas": {
-   "A": "O nível II contempla crianças que caminham na maioria dos ambientes, embora tenham restrições para longas distâncias, terreno irregular, correr ou saltar. A necessidade de cadeira de rodas na comunidade é mais grave que o esperado para esse nível.",
-   "B": "No nível III, a marcha geralmente exige dispositivo de mobilidade manual, como andador ou muletas. Para percursos maiores, pode haver cadeira de rodas, mas a descrição de mobilidade muito limitada e cadeira comunitária se ajusta melhor ao nível IV.",
-   "D": "O nível V corresponde a limitação muito grave de controle de cabeça e tronco e dependência de transporte manual em cadeira de rodas. A questão informa que há controle cervical e de tronco e alguma marcha domiciliar, dados incompatíveis com o nível V."
+   "A": "**Anda na maioria dos ambientes.**\n- Menos grave.",
+   "B": "**Anda com dispositivo.**\n- Mobilidade maior.",
+   "D": "**Sem controle de tronco.**\n- Transportado."
   },
   "referencias": [
    "GMFCS Expanded and Revised. CanChild. https://mld.foundation/wp-content/uploads/2020/04/GMFCS-ER_2007.pdf"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0021": {
-  "conceito": "A osteotomia periacetabular de Ganz (Berna) redireciona o acetábulo para cobrir a cabeça femoral, e o que ela oferece é cartilagem melhor distribuída, não cartilagem nova. Por isso as duas condições que definem a indicação são a displasia com cobertura insuficiente, expressa por ângulo centro-borda abaixo de 20 a 25 graus, e a articulação ainda sem artrose, ou seja, Tönnis grau 0 (ou no máximo 1). Exige também congruência articular e placa de crescimento fechada. Com artrose instalada, a cobertura redirecionada não resolve, e o caminho é a artroplastia.",
-  "correta": "Ângulo centro-borda inferior a 20 graus com Tönnis grau 0: displasia verdadeira em articulação ainda preservada.",
+  "conceito": "### Osteotomia periacetabular de Berna (Ganz)\n| Indicação | Contraindicação |\n|---|---|\n| displasia ==sintomática== | artrose Tönnis ==≥ 2== |\n| ==CE lateral < 20°== (ou < 25° com sintomas) | incongruência grave |\n| ==Tönnis 0 ou 1== | fise trirradiada aberta |\n| articulação ==congruente== | |\n\n### Vantagens\n- Coluna posterior preservada: pelve estável, marcha precoce.\n- Grande correção multiplanar.\n- Canal de parto preservado.\n\n### Tönnis (artrose)\n| Grau | Achado |\n|---|---|\n| 0 | normal |\n| 1 | esclerose, discreta redução |\n| 2 | cistos pequenos, redução moderada |\n| 3 | cistos grandes, colapso |\n\n> **Na prova:** PAO de Berna = ==CE < 20° com Tönnis 0==.",
+  "correta": "**CE < 20°, Tönnis 0.**\n- Displasia verdadeira em articulação preservada.\n- Redirecionar o acetábulo protege a cartilagem.",
   "incorretas": {
-   "B": "Ângulo acima de 20 graus já não caracteriza a displasia que a osteotomia corrige.",
-   "C": "O ângulo está certo, mas Tönnis grau 2 significa artrose estabelecida, redirecionar o acetábulo não devolve cartilagem.",
-   "D": "Erra os dois critérios: sem displasia e com artrose instalada, a osteotomia não tem o que oferecer."
+   "B": "**Sem displasia.**\n- CE > 20°.",
+   "C": "**Artrose instalada.**\n- Não devolve cartilagem.",
+   "D": "**Duplamente errada.**\n- Sem displasia e com artrose."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0022": {
-  "conceito": "Marcos motores devem ser interpretados como faixas de desenvolvimento, não como datas rígidas. Aos 18 meses, a criança tipicamente já caminha sozinha e começa a subir alguns degraus com ajuda, usando corrimão ou as duas mãos. Ficar de pé sem apoio e iniciar marcha independente são marcos em torno de 12 a 15 meses. Inclinar-se e recuperar o equilíbrio sentado ocorre bem antes, no primeiro ano de vida. Subir escadas sem apoio e pular no lugar exigem equilíbrio e coordenação mais maduros, mais próximos dos 2 anos. A questão pede a sequência funcional: primeiro estabilidade em pé e marcha, depois escadas com apoio, e só posteriormente escadas independentes e salto.",
-  "correta": "A alternativa A está correta. Aos 18 meses, espera-se que a criança comece a subir escadas com apoio, geralmente segurando corrimão, mão do adulto ou usando ambas as mãos. Essa habilidade combina marcha já estabelecida com uma necessidade residual de apoio para equilíbrio e transferência de peso nos degraus. Na prática, discrepâncias isoladas devem ser avaliadas no contexto global do desenvolvimento, tônus, assimetria e progressão dos marcos.",
+  "conceito": "### Marcos motores\n| Idade | Marco |\n|---|---|\n| 3 a 4 meses | sustenta a cabeça |\n| 6 meses | senta com apoio; rola |\n| 7 a 8 meses | senta sem apoio, recupera equilíbrio |\n| 9 a 10 meses | engatinha, fica de pé com apoio |\n| 12 meses | anda com ou sem apoio |\n| 15 meses | anda sozinho bem |\n| ==18 meses== | ==sobe escadas com apoio==, corre de modo rígido |\n| 24 meses | sobe e desce escadas sozinho (dois pés por degrau), ==pula no lugar== |\n| 3 anos | pedala triciclo, alterna os pés na escada |\n| 4 anos | pula num pé só |\n\n### Alerta\n- Não andar aos 18 meses: investigar (Duchenne, PC, DDQ).\n\n> **Na prova:** 18 meses = ==sobe escadas com apoio==.",
+  "correta": "**Sobe escadas com apoio.**\n- Marcha já estabelecida, ainda precisa de apoio nos degraus.",
   "incorretas": {
-   "B": "Subir escadas sem apoio e pular no lugar exigem controle postural e dissociação motora mais avançados, tipicamente observados por volta de 2 anos. Aos 18 meses, o apoio ainda é habitual para escadas.",
-   "C": "Inclinar e recuperar o equilíbrio na posição sentada é um marco muito mais precoce, relacionado ao desenvolvimento do controle de tronco durante o primeiro ano de vida. Não é a aquisição nova esperada aos 18 meses.",
-   "D": "Ficar de pé e caminhar para a frente sem apoio ocorre antes, em geral ao final do primeiro ano ou no início do segundo. Aos 18 meses, a criança deveria já ter ultrapassado esse marco e estar progredindo para escadas com assistência."
+   "B": "**Por volta de 2 anos.**\n- Sem apoio e pular.",
+   "C": "**Primeiro ano.**\n- Controle de tronco sentado.",
+   "D": "**Antes.**\n- Final do primeiro ano."
   },
   "referencias": [
    "CDC Developmental Milestones. https://www.cdc.gov/act-early/milestones/index.html",
    "CDC Milestone Moments Booklet. https://www.cdc.gov/act-early/media/pdfs/Milestone-Moments-Booklet_Eng-Print_updated-9.2023_508-P.pdf"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0023": {
-  "conceito": "O ciclo normal da marcha inicia-se com o contato inicial de um membro e termina no contato inicial seguinte do mesmo membro. Em velocidade confortável, aproximadamente 60% do ciclo corresponde à fase de apoio e 40% à fase de balanço. Dentro dos 60% de apoio existem dois períodos de duplo apoio, que juntos ocupam aproximadamente 20% do ciclo. Consequentemente, o período em que apenas um membro permanece apoiado corresponde a cerca de 40%. Essa matemática simples é uma forma segura de resolver questões de prova: apoio total 60%, duplo apoio total 20%, apoio simples 40% e balanço 40%. A duração relativa muda com velocidade extrema; ao aumentar a velocidade, o duplo apoio diminui e desaparece na corrida.",
-  "correta": "A alternativa C está correta. O apoio simples corresponde aproximadamente a 40% de um ciclo normal da marcha. Dos cerca de 60% de fase de apoio, aproximadamente 20% correspondem aos dois intervalos somados de duplo apoio.",
+  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n> **Na prova:** apoio simples = ==40%== do ciclo.",
+  "correta": "**Apoio simples: 40%.**\n- Apoio total 60%, com 20% de duplo apoio.\n- Balanço 40%.",
   "incorretas": {
-   "A": "A fase de balanço não ocupa 60%; em marcha habitual corresponde a aproximadamente 40% do ciclo.",
-   "B": "A fase de apoio total é maior, cerca de 60% do ciclo, e não 30%.",
-   "D": "Embora o balanço total represente cerca de 40%, a expressão 'balanço simples' não corresponde à subdivisão padrão que a questão contrapõe ao apoio simples. O dado específico correto solicitado é apoio simples de aproximadamente 40%."
+   "A": "**Balanço é 40%.**\n- Não 60%.",
+   "B": "**Apoio é 60%.**\n- Não 30%.",
+   "D": "**Termo inexistente.**\n- Balanço não se subdivide assim."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Gait. https://posna.org/physician-education/study-guide/gait"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0024": {
-  "conceito": "Na avaliação radiográfica do quadril infantil é essencial conhecer a cronologia de ossificação. A cabeça femoral é predominantemente cartilaginosa ao nascimento; o núcleo de ossificação torna-se visível habitualmente por volta do quarto ao sexto mês de vida, com alguma variação individual e entre os sexos. Essa é a razão pela qual a ultrassonografia é especialmente útil nos primeiros meses: ela permite avaliar estruturas cartilaginosas antes que a radiografia consiga demonstrar adequadamente a cabeça femoral. Após a ossificação, a radiografia da pelve ganha maior utilidade para avaliar índice acetabular, linha de Hilgenreiner, linha de Perkin e posição relativa da cabeça. Em questões de prova com valores discretos, o quarto mês representa o início clássico da visualização radiográfica.",
-  "correta": "A alternativa B está correta. O núcleo de ossificação da cabeça do fêmur começa a ser visualizado radiograficamente aproximadamente entre o quarto e o sexto mês; entre as opções fornecidas, o quarto mês é a resposta que corresponde ao início esperado.",
+  "conceito": "### Núcleo de ossificação da cabeça femoral\n- Aparece entre ==4 e 6 meses== (meninas antes).\n- Ao nascer, a cabeça é cartilaginosa: ==ultrassom (Graf)== é o exame.\n- Atraso do núcleo: sinal de DDQ (lado luxado ossifica depois), hipotireoidismo.\n\n### Imagem na DDQ\n| Idade | Exame | Parâmetros |\n|---|---|---|\n| < 4 a 6 meses | ultrassom | ângulo alfa (≥ 60° normal), beta |\n| > 4 a 6 meses | radiografia | Hilgenreiner, Perkins, Shenton, índice acetabular (< 30° ao nascer) |\n\n### Outros núcleos do quadril\n- Trocanter maior: 4 anos; trocanter menor: 12 anos; trirradiada fecha 14 a 16 anos.\n\n> **Na prova:** núcleo da cabeça femoral = ==por volta do 4º mês==.",
+  "correta": "**4º mês.**\n- Começa a aparecer entre 4 e 6 meses.\n- Antes disso, usar ultrassom.",
   "incorretas": {
-   "A": "Ao nascimento, a cabeça femoral é majoritariamente cartilaginosa e seu núcleo de ossificação normalmente ainda não é visível na radiografia simples.",
-   "C": "O oitavo mês é mais tardio que o momento habitual de aparecimento do núcleo. Ausência persistente nessa idade merece interpretação no contexto clínico e de desenvolvimento.",
-   "D": "O décimo segundo mês é muito posterior ao período normal de aparecimento do núcleo de ossificação da cabeça femoral."
+   "A": "**Cartilaginosa ao nascer.**\n- Núcleo invisível.",
+   "C": "**Tardio.**\n- Ausente aos 8 meses merece atenção.",
+   "D": "**Muito tardio.**\n- Fora do normal."
   },
   "referencias": [
    "Developmental dysplasia of the hip. https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/",
    "Developmental Dysplasia of the Hip: Controversies in Management. https://pmc.ncbi.nlm.nih.gov/articles/PMC9276911/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0025": {
   "conceito": "A luxação congênita do joelho é uma deformidade em hiperextensão presente ao nascimento, podendo variar de simples recurvato a subluxação e luxação anterior da tíbia em relação ao fêmur. O mecanismo de partes moles inclui encurtamento e fibrose do quadríceps, cápsula anterior tensa e alterações da bolsa suprapatelar; em casos graves, os isquiotibiais podem estar deslocados anteriormente e contribuir para a deformidade. A condição associa-se a artrogripose, síndrome de Larsen, mielodisplasia e outras anomalias de quadril e pé. O tratamento deve começar precocemente com manipulação e gessos seriados quando a deformidade é redutível. Nos casos resistentes, podem ser necessárias quadricepsplastia, liberação de partes moles ou encurtamento femoral.",
