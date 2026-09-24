@@ -195,98 +195,98 @@
   "conferido": false
  },
  "trauma-0017": {
-  "correta": "A alternativa D está correta: fratura do capítulo com extensão para a tróclea.",
-  "conceito": "O sinal do duplo arco representa o capítulo e a crista troclear lateral.",
+  "conceito": "### Fraturas do capítulo (plano coronal)\n| Classificação | Tipo | Fragmento |\n|---|---|---|\n| Bryan-Morrey | I (Hahn-Steinthal) | grande porção óssea do capítulo |\n| | II (Kocher-Lorenz) | lasca osteocondral fina |\n| | III | cominutiva |\n| | IV (McKee) | ==capítulo + parte da tróclea== |\n| Dubberley | 1 a 3, A (sem cominução posterior) / B (com) | |\n\n### Sinal do duplo arco (duplo crescente)\n- No perfil: dois arcos subcondrais sobrepostos = ==capítulo e crista lateral da tróclea== no mesmo fragmento.\n- Indica fratura do ==capítulo com extensão para a tróclea== (McKee, Bryan-Morrey IV).\n- ==TC== é obrigatória para planejar.\n\n### Tratamento\n- Redução aberta e fixação (parafusos anteroposteriores sem cabeça ou posteroanteriores); artroplastia no idoso com cominução.\n\n> **Na prova:** duplo arco = ==capítulo com extensão à tróclea==",
+  "correta": "**Capítulo com extensão à tróclea.**\n- Dois arcos no mesmo fragmento.\n- Tipo IV de McKee.",
   "incorretas": {
-   "C": "Fratura do epicôndilo medial não explica o sinal.",
-   "B": "Fratura isolada do capítulo não cria o segundo arco troclear.",
-   "A": "Fratura isolada da tróclea não produz o duplo arco típico."
+   "A": "**Tróclea isolada.**\n- Rara; não gera duplo arco.",
+   "B": "**Capítulo isolado.**\n- Um arco apenas.",
+   "C": "**Epicôndilo medial.**\n- Não produz o sinal."
   },
   "referencias": [
    "https://pubmed.ncbi.nlm.nih.gov/8550679/",
    "https://pubmed.ncbi.nlm.nih.gov/35789821/"
   ],
-  "geradoEm": "2026-09-13",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0018": {
-  "correta": "A alternativa B está correta: limite anterior da cabeça da fíbula e limite posterior da inserção do ligamento colateral medial.",
-  "conceito": "A divisão coronal usa a cabeça da fíbula e a inserção do ligamento colateral medial como referências.",
+  "conceito": "### Classificação de Schatzker revisada (Kfuri e Schatzker, 2018)\n- Mantém os tipos I a VI e acrescenta a ==localização por TC axial== (planos coronal e sagital).\n- Plano ==coronal== (anterior × posterior): linha do ==limite anterior da cabeça da fíbula== ao ==limite posterior da inserção do colateral medial==.\n- Plano sagital: pelas espinhas tibiais (medial × lateral).\n- Resultado: quatro quadrantes (anterolateral, posterolateral, anteromedial, posteromedial) que orientam a via e a placa.\n\n### Conceito de três colunas (Luo)\n| Coluna | Via |\n|---|---|\n| lateral | anterolateral |\n| medial | medial |\n| posterior | posteromedial ou posterolateral |\n\n> **Na prova:** divisão coronal = ==anterior da cabeça da fíbula × posterior do colateral medial==",
+  "correta": "**Anterior da fíbula e posterior do LCM.**\n- Linha que separa anterior de posterior.\n- Define os quadrantes.",
   "incorretas": {
-   "C": "Inverte o limite da cabeça da fíbula e mantém o limite anterior do ligamento.",
-   "D": "Usa o limite posterior da cabeça da fíbula, que não é a referência indicada.",
-   "A": "Usa o limite anterior do ligamento colateral medial, em vez do posterior."
+   "A": "**Anterior do LCM.**\n- Referência medial errada.",
+   "C": "**Posterior da fíbula.**\n- Referência lateral errada.",
+   "D": "**Posterior da fíbula.**\n- Deslocaria a divisão para trás."
   },
   "referencias": [
    "https://pubmed.ncbi.nlm.nih.gov/30580669/"
   ],
-  "geradoEm": "2026-09-13",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0019": {
-  "conceito": "A **laceração dural** é uma complicação subestimada das fraturas toracolombares, presente em cerca de um terço das fraturas por explosão (burst) com déficit neurológico. Ela importa por três motivos práticos: pode haver encarceramento de raízes nervosas na linha de fratura, o que transforma um déficit aparentemente \"de contusão\" num déficit mecânico e reversível; a manipulação cega dos fragmentos durante a redução pode agravar a lesão radicular; e a dura não reparada evolui para fístula liquórica, pseudomeningocele e risco de meningite.\n\nO sinal radiográfico que melhor a prediz é a **fratura vertical da lâmina**. A explicação é mecânica e elegante: na fratura por explosão, a carga axial faz o corpo vertebral estourar e aumentar de diâmetro em todas as direções, daí o aumento da distância interpedicular, que é o sinal radiográfico clássico do burst. Esse afastamento dos pedículos abre o arco posterior como se abre um livro, e a lâmina, presa nas duas extremidades, racha longitudinalmente ao meio.\n\nNo instante em que a lâmina se abre, o saco dural e as raízes, que estavam logo à frente dela, são apanhados; quando a lâmina se fecha de novo pela elasticidade dos tecidos, ela se comporta como uma armadilha, e a dura fica rasgada, com raízes herniadas para dentro do traço. A associação é ainda mais forte quando há déficit neurológico e quando a fratura da lâmina é ampla.\n\nA consequência para o cirurgião é direta: diante de fratura por explosão com traço vertical na lâmina (sobretudo com déficit), a laminectomia deve ser feita de forma cuidadosa e ampla o suficiente para inspecionar a dura **antes** de qualquer manobra de redução, liberando as raízes encarceradas e reparando a dura no mesmo tempo cirúrgico, com sutura ou enxerto e selante.",
-  "correta": "B. A fratura VERTICAL DA LÂMINA é o sinal associado à laceração dural: o aumento da distância interpedicular na fratura por explosão abre o arco posterior, a lâmina racha longitudinalmente e captura a dura e as raízes no seu traço.",
+  "conceito": "### Laceração dural na toracolombar\n- Presente em cerca de ==1/3 das explosões com déficit neurológico==.\n- Achado de alerta: ==fratura vertical (em galho verde) da lâmina==, especialmente com explosão e déficit.\n- Raízes podem ficar ==encarceradas== na fratura da lâmina: redução sem descompressão pode lesá-las.\n\n### Implicações\n| Aspecto | Conduta |\n|---|---|\n| via | considerar ==posterior com laminectomia== para reparar a dura e liberar raízes |\n| complicações | fístula liquórica, pseudomeningocele, meningite |\n\n### TLICS\n| Item | Pontos |\n|---|---|\n| morfologia | compressão 1, explosão 2, translação 3, distração 4 |\n| neurológico | 0 a 3 |\n| complexo ligamentar posterior | 0 a 3 |\n| total | ≤ 3 conservador, ≥ 5 cirúrgico |\n\n> **Na prova:** lesão dural suspeita = ==fratura vertical da lâmina==",
+  "correta": "**Vertical da lâmina.**\n- Associada a explosão com déficit.\n- Raízes podem encarcerar.",
   "incorretas": {
-   "A": "A fratura do pedículo faz parte do padrão de dispersão da fratura por explosão, mas não é o sinal que prediz a lesão dural. O que captura a dura é a abertura da LÂMINA, no plano posterior à passagem do saco dural.",
-   "C": "A fratura do processo transverso é um achado periférico, frequentemente isolado e de tratamento conservador. Ela indica trauma na musculatura paravertebral e, na coluna lombar alta, deve levantar suspeita de lesão renal, mas não tem relação com a dura.",
-   "D": "A fratura do muro posterior do corpo vertebral define a própria fratura por explosão e explica a retropulsão de fragmentos para o canal, mas é a lesão do ARCO POSTERIOR, e não a do corpo, que captura a dura no seu traço."
+   "A": "**Pedículo.**\n- Sem associação específica.",
+   "C": "**Transverso.**\n- Lesão estável, sem relação.",
+   "D": "**Muro posterior.**\n- Compressão neural, não o marcador dural clássico."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0020": {
-  "conceito": "A fratura **subtrocantérica** (situada nos 5 cm abaixo do trocanter menor) é uma das mais exigentes do fêmur, porque a região recebe as maiores cargas em compressão do esqueleto (na cortical medial, o calcar) e em tensão (na cortical lateral), e porque as forças musculares desviam o fragmento proximal de forma constante: o iliopsoas o traciona em flexão e rotação lateral, os glúteos o levam em abdução, e os adutores puxam o fragmento distal medialmente.\n\nO implante de escolha é a **haste cefalomedular**, por ser uma montagem de carga compartilhada, posicionada no eixo mecânico e mais resistente à falha por fadiga do que as placas. Mas a técnica é difícil, e a redução precisa ser obtida antes de introduzir a haste, com o membro em ligeira flexão e adução, com auxílio de manobras percutâneas, e nunca contando que a haste \"reduza\" a fratura.\n\nOs parâmetros de aceitação são estreitos, e o mais rigoroso é o **comprimento**: um encurtamento acima de 2 cm (e certamente 2,5 cm) é inaceitável e indica revisão imediata da síntese, porque produz claudicação, discrepância de membros, sobrecarga do quadril e da coluna, e traduz uma redução em que os fragmentos telescopam dentro da haste.\n\nO **varo** é o segundo inimigo (a angulação em varo deve ficar abaixo de 5 a 10 graus, e é a causa mais comum de falha por fadiga do implante), e a rotação deve ser conferida comparando a versão femoral com o lado contralateral.\n\nUm desvio rotacional de 10 graus e uma flexão residual de 15 graus do fragmento proximal são tolerados; um varo de 10 graus está no limite. O que não se aceita, e obriga a refazer, é o encurtamento significativo.",
-  "correta": "C. O ENCURTAMENTO DE 2,5 cm é indicação de revisão imediata: traduz fragmentos telescopados e produz claudicação, discrepância de membros e sobrecarga do quadril e da coluna, desvio que a haste não corrige com o tempo.",
+  "conceito": "### Fratura subtrocantérica\n- Até 5 cm abaixo do trocanter menor: grandes cargas (compressão medial, tração lateral).\n- Forças deformantes do fragmento proximal: ==flexão== (iliopsoas), ==abdução== (glúteos) e ==rotação externa== (rotadores).\n- Tendência a consolidar em ==varo e flexão== se não reduzida antes da haste.\n\n### Aceitável × revisão\n| Parâmetro | Tolerância |\n|---|---|\n| varo | < 5 a 10° (evitar qualquer varo) |\n| rotação | < 10 a 15° comparando com o lado normal |\n| ==encurtamento== | ==> 2 cm é inaceitável== (revisar na hora) |\n| flexão proximal | corrigir na redução |\n\n### Dicas\n- Reduzir antes de fresar (pinças, cerclagem, Schanz).\n- Ponto de entrada ==medial ao ápice== do trocanter para haste cefalomedular (evita varo).\n\n> **Na prova:** revisão imediata = ==encurtamento de 2,5 cm==",
+  "correta": "**Encurtamento de 2,5 cm.**\n- Acima do limite de 2 cm.\n- Corrigir no mesmo ato.",
   "incorretas": {
-   "A": "Um desvio em varo de 10 graus está no limite do tolerado (aceita-se em geral até 5 a 10 graus). É um achado a evitar, porque o varo é a principal causa de falha por fadiga do implante, mas não constitui, isoladamente, indicação de revisão imediata.",
-   "B": "Um desvio rotacional de 10 graus é considerado aceitável: a tolerância habitual para a rotação femoral é de até cerca de 15 graus em relação ao lado contralateral, e desvios menores não produzem repercussão funcional.",
-   "D": "A flexão residual de 15 graus do fragmento proximal reflete a ação do iliopsoas e é comum nessas fraturas; dentro dessa magnitude é tolerada, sem indicação de refazer a montagem."
+   "A": "**Varo de 10°.**\n- Indesejável, mas considerado no limite pela banca.",
+   "B": "**Rotação de 10°.**\n- Tolerável.",
+   "D": "**Flexão de 15°.**\n- Banca não considerou indicação de revisão imediata."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0021": {
-  "conceito": "A ÓRTESE FUNCIONAL DE SARMIENTO é o dispositivo clássico do tratamento conservador da fratura diafisária do úmero, e seu princípio biomecânico se apoia em três elementos: a CONTRAÇÃO MUSCULAR ATIVA dentro do compartimento rígido da órtese, que gera pressão hidrostática sobre os tecidos moles e estabiliza os fragmentos; o EFEITO HIDRÁULICO das partes moles envoltas pela órtese, que funciona como um cilindro de compressão circunferencial; e a GRAVIDADE, que auxilia no alinhamento axial do membro pendente. Diferente da imobilização rígida tradicional, a órtese permite mobilidade articular precoce do ombro e do cotovelo enquanto mantém a fratura alinhada por esses mecanismos dinâmicos.",
-  "correta": "B. A órtese de Sarmiento é o dispositivo cujo princípio de tratamento se baseia na contração muscular ativa, no efeito hidráulico das partes moles e na gravidade.",
+  "conceito": "### Órtese funcional de Sarmiento\n- Princípios: ==contração muscular ativa==, ==efeito hidráulico== das partes moles comprimidas e ==gravidade== (alinha o úmero).\n- Iniciar após 1 a 2 semanas de pinça de confeiteiro (edema diminuído).\n- Consolidação em cerca de 90%; aceita deformidade.\n\n### Desvio aceitável na diáfise do úmero\n| Parâmetro | Limite |\n|---|---|\n| angulação anterior | 20° |\n| varo | 30° |\n| encurtamento | 3 cm |\n\n### Indicações cirúrgicas\n- Exposta, lesão vascular, cotovelo flutuante, politrauma, fratura patológica, falha do conservador, obesidade/mama grande (varo), paralisia radial após redução.\n\n> **Na prova:** músculo ativo + hidráulico + gravidade = ==órtese de Sarmiento==",
+  "correta": "**Órtese de Sarmiento.**\n- Compressão hidráulica.\n- Movimento ativo estimula consolidação.",
   "incorretas": {
-   "A": "A tipoia de Velpeau é usada principalmente para imobilização do ombro após luxações ou em crianças pequenas, sem o princípio funcional dinâmico descrito.",
-   "C": "O gesso circular axilopalmar é uma imobilização rígida, que restringe a mobilidade articular, o oposto do princípio funcional da órtese de Sarmiento.",
-   "D": "A tala tipo pinça de confeiteiro (sugar-tong) é usada mais para fraturas do antebraço distal e punho, não representando o princípio funcional descrito para a diáfise umeral."
+   "A": "**Velpeau.**\n- Imobiliza sem esses princípios.",
+   "C": "**Gesso axilopalmar.**\n- Imobiliza cotovelo; sem hidráulica funcional.",
+   "D": "**Pinça de confeiteiro.**\n- Fase inicial, antes da órtese."
   },
-  "geradoEm": "2026-09-15",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0022": {
-  "conceito": "A fratura diafisária do fêmur associada a uma fratura IPSILATERAL do colo femoral é uma combinação relativamente rara, descrita em cerca de 3% A 10% dos casos, e clinicamente traiçoeira: a fratura do colo costuma ser VERTICAL, pouco desviada e localizada mais frequentemente na região BASOCERVICAL (próxima à base do colo, junto à transição para a região trocantérica), características que fazem com que ela passe despercebida nas radiografias iniciais, ofuscada pela fratura diafisária mais evidente e dramática. Por esse motivo, a tomografia computadorizada fina do quadril é recomendada de rotina na avaliação de toda fratura diafisária do fêmur, justamente para não perder essa associação.",
-  "correta": "A. A associação com fratura ipsilateral do colo femoral ocorre em 3% a 10% dos casos de fratura diafisária do fêmur, sendo mais frequente na região basocervical.",
+  "conceito": "### Diáfise do fêmur + colo ipsilateral\n- Associação em ==3 a 10%==, alta energia (painel).\n- Fratura do colo: ==basocervical==, ==vertical== e pouco desviada; passa despercebida em até 30%.\n- Rotina: ==TC fina do colo== em toda fratura diafisária de alta energia e RX intraoperatório.\n\n### Tratamento\n| Estratégia | Detalhe |\n|---|---|\n| prioridade | ==colo== (risco de necrose/pseudartrose) |\n| opções | parafusos ou DHS no colo + haste retrógrada; ou haste cefalomedular única |\n\n> **Na prova:** associação = ==3 a 10%, basocervical==",
+  "correta": "**3 a 10%, basocervical.**\n- Traço vertical, pouco desviado.\n- Fácil de não ver.",
   "incorretas": {
-   "B": "A região mediocervical não é a mais frequentemente descrita para essa fratura associada, que tende a ocorrer mais na base do colo (basocervical).",
-   "C": "A faixa de 15% a 20% superestima a frequência real dessa associação, mais próxima de 3% a 10% na maioria das séries.",
-   "D": "Combina uma frequência superestimada com a localização menos citada (mediocervical em vez de basocervical)."
+   "B": "**Mediocervical.**\n- Local é basocervical.",
+   "C": "**15 a 20%.**\n- Frequência superestimada.",
+   "D": "**15 a 20% e mediocervical.**\n- Ambos errados."
   },
-  "geradoEm": "2026-09-15",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0023": {
-  "conceito": "O **complexo suspensório superior do ombro (SSSC)**, descrito por Goss, é um anel osteoligamentar que suspende o membro superior ao esqueleto axial. É formado por: o processo glenoidal, o processo coracoide, os ligamentos coracoclaviculares, a clavícula distal, a articulação acromioclavicular e o acrômio. Esse anel é sustentado por duas escoras (struts): a superior, formada pelo terço médio da clavícula, e a inferior, formada pelo corpo lateral da escápula e pela espinha escapular.\n\nO conceito que dá utilidade ao modelo é o da **dupla ruptura**: uma lesão isolada de qualquer componente do anel mantém o conjunto estável, porque os demais elementos preservam a suspensão; duas rupturas, porém, desconectam o segmento intermediário e produzem instabilidade, com desvio, consolidação viciosa e perda de função.\n\nA combinação mais frequente dessa dupla ruptura é a fratura da clavícula associada à fratura do colo da escápula, precisamente a lesão que se convencionou chamar de **ombro flutuante**. Nela, a escora superior (clavícula) e o anel (colo da escápula) falham juntos, e o fragmento glenoidal, perdendo a suspensão, desloca-se em sentido distal e medial pela ação do peso do membro e dos músculos.\n\nAs demais combinações existem (coracoide com acromioclavicular, acrômio com clavícula, colo da escápula com acromioclavicular) mas são bem menos frequentes.\n\nA relevância prática é a indicação cirúrgica: as duplas rupturas com desvio significativo, sobretudo com ângulo glenopolar menor que 20 graus, tendem a ser operadas, em regra pela fixação da clavícula, que muitas vezes restaura indiretamente a posição da glenoide.",
-  "correta": "B. A lesão mais frequente do complexo suspensório superior é a associação de fratura da CLAVÍCULA com fratura do COLO DA ESCÁPULA, a dupla ruptura que caracteriza o ombro flutuante.",
+  "conceito": "### Complexo suspensório superior do ombro (Goss)\n- Anel osteoligamentar: ==glenoide, coracoide, ligamentos coracoclaviculares, clavícula distal, acromioclavicular e acrômio==.\n- Suportes: clavícula (anterior) e corpo da escápula/espinha (posterior).\n- Lesão ==dupla== do anel = instabilidade.\n\n### Lesão dupla mais comum\n- ==Clavícula + colo da escápula== (ombro flutuante).\n- Outras: coracoide + AC; acrômio + clavícula.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| pouco desvio | conservador |\n| colo com medialização > 1 cm ou angulação > 40° | fixar clavícula ± escápula |\n\n> **Na prova:** lesão dupla mais frequente = ==clavícula e colo da escápula==",
+  "correta": "**Clavícula e colo da escápula.**\n- Ombro flutuante.\n- Lesão dupla mais comum do anel.",
   "incorretas": {
-   "A": "A associação de fratura da clavícula com fratura do acrômio é uma dupla ruptura possível do anel, mas incomum: as fraturas isoladas do acrômio já são raras, e a sua coexistência com fratura da clavícula é ainda menos frequente.",
-   "C": "A combinação de fratura do colo da escápula com luxação acromioclavicular também caracteriza dupla ruptura e produz instabilidade, mas não é a apresentação mais comum do complexo.",
-   "D": "Fratura do processo coracoide com luxação acromioclavicular é uma associação clássica e conceitualmente importante (duas rupturas do anel), porém rara na prática, e bem menos frequente do que a clavícula com o colo da escápula."
+   "A": "**Clavícula e acrômio.**\n- Menos comum.",
+   "C": "**Colo e AC.**\n- Menos frequente.",
+   "D": "**Coracoide e AC.**\n- Menos frequente."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0024": {
-  "conceito": "A classificação de Sangeorzan para as fraturas do corpo do navicular organiza os padrões por gravidade e desvio:\n- **Tipo I**: traço **horizontal transverso**, sem desvio angular do antepé, o fragmento dorsal se separa, mas o alinhamento geral do pé se mantém, com lesão ligamentar dorsal associada.\n- **Tipo II**: traço obliquo dorsolateral para plantomedial, com desvio medial do antepé.\n- **Tipo III**: cominuição, geralmente com desvio lateral do antepé e frequente envolvimento do cuboide.\n\nQuanto mais alto o tipo, maior a energia do trauma e pior o prognóstico funcional, por isso o tipo I costuma responder bem à fixação simples, enquanto os tipos II e III exigem reconstrução mais extensa da coluna medial do pé.",
-  "correta": "B. O tipo I de Sangeorzan tem traço horizontal transverso, com lesão ligamentar dorsal associada, sem desvio angular do antepé.",
+  "conceito": "### Sangeorzan (corpo do navicular)\n| Tipo | Traço | Desvio |\n|---|---|---|\n| ==I== | ==horizontal (coronal) transverso==, fragmento dorsal < 50% | ==sem angulação== do antepé |\n| II | dorsolateral para plantar-medial (o mais comum) | antepé aduzido |\n| III | cominuto no plano sagital | antepé abduzido, lesão da coluna lateral |\n\n### Pontos\n- Navicular tem irrigação central pobre: risco de necrose e pseudartrose.\n- Objetivo: restaurar o comprimento da ==coluna medial==.\n- Fixação com parafusos; ponte com placa ou fixador no tipo III.\n\n> **Na prova:** Sangeorzan I = traço ==horizontal transverso== (dorsal)",
+  "correta": "**Horizontal transverso, lesão dorsal.**\n- Fragmento dorsal separado.\n- Alinhamento do pé mantido.",
   "incorretas": {
-   "A": "Um traço vertical sem desvio não corresponde ao padrão descrito para o tipo I, que é horizontal transverso.",
-   "C": "A lesão ligamentar associada ao tipo I é dorsal, não plantar.",
-   "D": "A cominuição da porção lateral do navicular é uma característica mais associada aos tipos mais graves (II e III), não ao tipo I."
+   "A": "**Vertical.**\n- Tipos II e III.",
+   "C": "**Plantar.**\n- Fragmento separado é dorsal.",
+   "D": "**Cominução lateral.**\n- Tipo III."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0025": {
