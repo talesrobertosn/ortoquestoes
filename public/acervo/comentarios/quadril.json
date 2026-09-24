@@ -5334,5 +5334,640 @@
   ],
   "geradoEm": "2026-09-24",
   "conferido": false
+ },
+ "quadril-0431": {
+  "conceito": "### Duas defesas que se somam\n\nKung e Ries compararam 230 pacientes com cabeça de 28 ou de 36 mm, com e sem abdutores funcionantes. A cabeça maior reduziu a luxação, mas o dado mais interessante está na combinação: com abdutores, a luxação foi de 13% com 28 mm e de 0% com 36 mm; sem abdutores, subiu para 40% e 33%.\n\nA cabeça maior protege por uma razão geométrica. Ela aumenta a distância de salto, que é quanto a cabeça precisa sair da cavidade antes de luxar, e a razão cabeça-colo, que é quanto ela gira antes de o colo bater na borda. Os abdutores protegem por outro caminho, segurando dinamicamente a cabeça no acetábulo. Uma defesa não substitui a outra: ==estabilidade é a soma do implante com os tecidos moles==.\n\n### O limite do estudo\n\nO desenho foi retrospectivo, e as taxas de luxação ficaram acima das médias de registro. Ainda assim, a mensagem cinemática é clara e aparece em outros pontos do capítulo.\n\n> **Na prova:** cabeça de 36 mm com abdutores, luxação zero; sem abdutores, a cabeça grande não resolve.",
+  "correta": "**Correta.** A combinação de cabeça de 36 mm e abdutores íntegros não teve luxação, mostrando que implante e tecidos moles atuam juntos.",
+  "incorretas": {
+   "B": "**Errada: sem abdutores, a luxação foi de 33%.** A cabeça grande sozinha não compensa a perda dos abdutores.",
+   "C": "**Errada: os abdutores fizeram diferença.** Com 28 mm, a luxação foi de 13% com eles e de 40% sem eles.",
+   "D": "**Errada: foi a maior taxa.** Com cabeça de 28 mm e sem abdutores, a luxação chegou a 40%."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 11 (Cinemática do Quadril)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0432": {
+  "conceito": "### A versão desloca o arco, não o amplia\n\nO arco de oscilação do colo dentro da cavidade tem um tamanho limitado. Girar o componente para a frente ou para trás não cria movimento novo: apenas desloca esse arco. Na figura, o componente antevertido abre mais espaço para a flexão (verde) e, em troca, o colo encontra a borda mais cedo na extensão (amarelo).\n\nÉ por isso que ==a anteversão aumenta a flexão ao custo da extensão==. Nos extremos, o colo bate na borda e passa a funcionar como fulcro, podendo alavancar a cabeça para fora da cavidade.\n\n### O excesso também cobra\n\nO modelo de Higa mostrou que o ganho de flexão com a anteversão cresce até cerca de 10 a 20 graus e depois diminui, e que componentes antevertidos mais de 20 graus ficam sob risco muito maior de luxação em flexão. D'Lima, por sua vez, recomendou 45 a 55 graus de abdução acetabular como o melhor equilíbrio entre amplitude e estabilidade.\n\n> **Na prova:** anteversão ganha flexão e perde extensão.",
+  "correta": "**Correta.** A anteversão desloca o arco de movimento: ganha-se flexão e perde-se extensão, com impacto do colo na borda nos extremos.",
+  "incorretas": {
+   "A": "**Errada: o arco é deslocado, não ampliado.** Ganho de flexão vem acompanhado de perda de extensão.",
+   "C": "**Errada: é o contrário.** A retroversão reduz a flexão, justamente a posição de risco para luxação posterior.",
+   "D": "**Errada: a versão muda o arco.** A figura mostra o impacto do colo em pontos diferentes conforme a versão."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 11 (Cinemática do Quadril)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0433": {
+  "conceito": "### A forma do movimento importa para o desgaste\n\nO polietileno se desgasta de modo diferente conforme o caminho que a cabeça percorre sobre ele. Quando o movimento é linear e repetido na mesma direção, as cadeias do polímero se alinham e a superfície endurece nesse sentido. Quando o trajeto é circular ou tortuoso, a cabeça cruza essas cadeias alinhadas por vários lados e arranca partículas com mais facilidade.\n\nBragdon e Calonius mostraram em laboratório, e Turell e Davey confirmaram em componentes recuperados, que ==quanto menor a razão de aspecto do trajeto, maior o desgaste==. No gráfico C, a taxa de desgaste linear sobe com o inverso da razão de aspecto.\n\n### O mesmo vale para metal\n\nO capítulo generaliza: seja polietileno ou íons metálicos, o movimento unidirecional produz de 2 a 100 vezes menos partículas que o multidirecional em laboratório. A cinemática da prótese, e não só o material, decide a longevidade.\n\n> **Na prova:** trajeto circular desgasta mais que trajeto linear.",
+  "correta": "**Correta.** Trajetos menos lineares, com menor razão de aspecto, associaram-se a maior desgaste linear do polietileno.",
+  "incorretas": {
+   "A": "**Errada: é o contrário.** O movimento linear endurece o polímero na direção do trajeto e desgasta menos.",
+   "B": "**Errada: há relação.** O gráfico C mostra o desgaste crescendo com o inverso da razão de aspecto.",
+   "D": "**Errada: invertido.** O unidirecional é que gera de 2 a 100 vezes menos partículas."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 11 (Cinemática do Quadril)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0434": {
+  "conceito": "### Cada ligamento com seu freio\n\nClassicamente, a cápsula tem quatro reforços: iliofemoral, pubofemoral e isquiofemoral, com fibras longitudinais, e a zona orbicular, com fibras anulares. O **iliofemoral**, o Y de Bigelow, é o principal estabilizador estático em pé, resiste sobretudo à hiperextensão e tem a maior força até a falha (cerca de 350 N) e a maior rigidez (100 N/mm). O pubofemoral resiste à translação lateral, à abdução excessiva e à rotação externa.\n\nNa face posterior, o ==isquiofemoral é o freio primário da rotação interna== em todo o arco de movimento; suas bandas superiores ajudam a conter a adução em flexão. A Tabela 11.1 confirma: seccioná-lo produz o maior ganho de rotação interna em todas as posições testadas.\n\n### O anel que não cruza a articulação\n\nO ligamento arqueado corre transversalmente na base do colo, do trocânter maior ao menor, e não cruza a articulação. Faz parte da zona orbicular, que resiste aos extremos de flexão e extensão e às forças de distração.\n\n> **Na prova:** iliofemoral freia a extensão; isquiofemoral freia a rotação interna.",
+  "correta": "**Correta.** O isquiofemoral é o freio primário da rotação interna, e sua secção produziu o maior ganho de rotação interna em todas as posições.",
+  "incorretas": {
+   "A": "**Errada: esse é o iliofemoral.** O pubofemoral resiste à translação lateral, à abdução e à rotação externa.",
+   "B": "**Errada: o iliofemoral freia a hiperextensão.** O maior ganho de rotação interna vem da secção do isquiofemoral.",
+   "C": "**Errada: o arqueado não cruza a articulação.** Ele integra a zona orbicular, que resiste a flexão, extensão e distração."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 11 (Cinemática do Quadril)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0435": {
+  "conceito": "### Uma vedação que trabalha como sistema hidráulico\n\nO lábio é fibrocartilaginoso, circunda a borda acetabular exceto na porção inferomedial e aprofunda funcionalmente a cavidade. Mais que isso, ele veda a articulação: cria uma cápsula de pressão negativa que resiste à deformação na carga e na descarga, como o lábio da glenoide.\n\nSob carga, a cartilagem expulsa líquido sinovial. Com o selo íntegro, a pressão do sistema sobe e a força se espalha por toda a articulação e pelo líquido. Sem ele, o líquido vaza, a pressão cai, a cartilagem perde líquido mais depressa e a força reativa aumenta. Os modelos preveem ==aumento de até 90% nas tensões de contato== da cartilagem de carga, com o pico deslocado para a borda acetabular lateral.\n\n### A artroplastia também perde o selo\n\nNa artroplastia, o lábio é ressecado para assentar o componente. Sem os efeitos de gaxeta e hidráulico, a força reativa e a translação dos componentes aumentam: há separação de 0,5 a 1 mm da cabeça mesmo em assintomáticos, ao girar o corpo ou amarrar sapatos.\n\n> **Na prova:** perder o lábio aumenta até 90% a tensão na cartilagem e sobrecarrega a borda lateral.",
+  "correta": "**Correta.** O lábio funciona como gaxeta, e sua perda eleva até 90% as tensões de contato, com o pico deslocado para a borda lateral.",
+  "incorretas": {
+   "B": "**Errada: poupa a porção inferomedial e mantém a pressão.** O selo eleva a pressão do sistema, que distribui a carga.",
+   "C": "**Errada: o pico vai para a borda lateral.** A perda do efeito hidráulico sobrecarrega a borda acetabular lateral.",
+   "D": "**Errada: altera ambas.** Sem o lábio, a força reativa e a translação dos componentes aumentam."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 11 (Cinemática do Quadril)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0436": {
+  "conceito": "### O quadril é incongruente de propósito\n\nAcetábulo e cabeça não são duas esferas perfeitas encaixadas. O acetábulo é esférico apenas na cúpula de carga, o terço superior; a cabeça é esférica em até dois terços da superfície articular. Somadas às diferenças de anteversão e inclinação, essas formas deixam sempre uma parte da cabeça descoberta.\n\nA posição de ==máxima cobertura e congruência é flexão, abdução e rotação externa==. Na marcha, porém, o que importa é outro detalhe: a maior cobertura coincide com a transmissão máxima de força, no contato do calcanhar e no apoio unipodal. A geometria está ajustada para ser mais congruente justamente quando a carga é maior.\n\n### Conexão com o capítulo 2\n\nCongruência máxima não é estabilidade máxima. A posição mais estável é a extensão, quando os ligamentos se enrolam e apertam, mesmo sem o melhor contato articular.\n\n> **Na prova:** máxima cobertura em flexão, abdução e rotação externa.",
+  "correta": "**Correta.** A cobertura máxima está em flexão, abdução e rotação externa, e na marcha coincide com a maior transmissão de força.",
+  "incorretas": {
+   "A": "**Errada: é o contrário.** O acetábulo é esférico só na cúpula; a cabeça, em até dois terços da superfície.",
+   "C": "**Errada: essa não é a posição de máxima cobertura.** A extensão é a de maior estabilidade ligamentar.",
+   "D": "**Errada: é a maior cobertura.** A cobertura máxima coincide com o contato do calcanhar e o apoio unipodal."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 11 (Cinemática do Quadril)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0437": {
+  "conceito": "### A marcha usa pouco do que o quadril oferece\n\nO quadril nativo adulto tem arco amplo: cerca de 140 graus de flexão e 30 de extensão, 50 de abdução e 25 de adução, e 90 de rotação interna e 70 de externa. Para caminhar em solo plano, porém, Heller mostrou que bastam ==cerca de 40 graus de arco de flexão-extensão, 10 de abdução-adução e 10 de rotação==.\n\nIsso bate com o capítulo 2, que cita 30 graus de flexão, 10 de hiperextensão e 5 graus nos demais planos para a marcha.\n\n### Onde o arco faz falta\n\nTerreno irregular, corrida, escadas e levantar-se da cadeira exigem muito mais. É por isso que um quadril com arco reduzido pode caminhar bem no plano e ainda assim limitar a vida diária.\n\n> **Na prova:** marcha em plano pede cerca de 40, 10 e 10 graus de arco.",
+  "correta": "**Correta.** Heller mostrou que a marcha em solo plano exige cerca de 40 graus de arco de flexão-extensão, 10 de abdução-adução e 10 de rotação.",
+  "incorretas": {
+   "A": "**Errada: valores altos demais.** A marcha em solo plano exige bem menos.",
+   "B": "**Errada: é o arco normal total.** Descreve a amplitude do quadril nativo em repouso, não a exigência da marcha.",
+   "D": "**Errada: arco de flexão-extensão insuficiente.** São cerca de 40 graus nesse plano."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 11 (Cinemática do Quadril)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0438": {
+  "conceito": "### Por que a prótese luxa mais que o quadril nativo\n\nO quadril nativo raramente luxa: precisa de alta energia em posições específicas. A artroplastia remove vários estabilizadores estáticos de uma vez, como lábio, parte da cápsula e a cabeça grande, e a articulação fica muito menos estável. A luxação é a ==segunda complicação mais comum, depois da soltura asséptica==, com 0,7% a 8% nos registros após a primária.\n\n### O mecanismo de alavanca\n\nHá duas posições de risco: flexão com rotação interna e extensão com rotação externa. Nelas, o colo encosta na borda do componente e vira fulcro, alavancando a cabeça para fora. Tanino mostrou que quadris instáveis engajam o colo mais cedo em extensão com rotação externa: com 25 graus, contra 42 graus nos estáveis. Em flexão e rotação interna, o trocânter maior também pode tocar o acetábulo superolateral e atuar como fulcro, com braço de momento mais curto.\n\n> **Na prova:** posições de risco são flexão com rotação interna e extensão com rotação externa.",
+  "correta": "**Correta.** A luxação vem depois da soltura asséptica entre as complicações, com taxas de 0,7% a 8% nos registros após artroplastia primária.",
+  "incorretas": {
+   "A": "**Errada: não é a primeira, e a taxa é menor.** Vem após a soltura asséptica, com 0,7% a 8%.",
+   "B": "**Errada: rotações trocadas.** O risco é flexão com rotação interna e extensão com rotação externa.",
+   "C": "**Errada: engajam mais cedo.** Nos instáveis, o colo toca a borda com 25 graus, contra 42 graus."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 11 (Cinemática do Quadril)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0439": {
+  "conceito": "### Como se mede o movimento do quadril\n\nOs métodos iniciais, com marcadores de pele, telemetria e modelos matemáticos, esbarram num problema: o movimento dos tecidos moles durante a marcha é muitas vezes maior que o do osso ou do implante. A radioestereometria é o padrão-ouro para migração de implantes, com acurácia de 0,2 mm in vivo, mas exige marcadores implantados na cirurgia e imagens estáticas.\n\nO sistema de ==fluoroscopia dupla é não invasivo e tem acurácia comparável à da radioestereometria==: cerca de 0,2 mm em translação e 0,2 grau em rotação, com modelo tridimensional do próprio paciente. O custo é a radiação, de 5 a 6 mSv.\n\n### O que se aprendeu com essas medidas\n\nA fase de apoio ocupa cerca de 60% do ciclo, e a força reativa oscila de 3,5 a 5 vezes o peso corporal, com o vetor girando de anterossuperior para posterior. Turley mostrou que o osso define o limite absoluto do movimento, mas os tecidos moles definem o limite real: na extensão, o freio é de partes moles, e o impacto ósseo aparece na adução em pé e na abdução a 90 graus de flexão.\n\n> **Na prova:** fluoroscopia dupla é não invasiva e tão acurada quanto a radioestereometria.",
+  "correta": "**Correta (é a exceção).** A fluoroscopia dupla é não invasiva, dispensa marcadores e tem acurácia comparável à da radioestereometria.",
+  "incorretas": {
+   "A": "**Correta.** A radioestereometria é o padrão-ouro, com o limite de exigir marcadores implantados.",
+   "C": "**Correta.** O apoio ocupa cerca de 60% do ciclo; o balanço, o restante.",
+   "D": "**Correta.** A força reativa oscila de 3,5 a 5 vezes o peso corporal ao longo da marcha.",
+   "E": "**Correta.** É a conclusão de Turley ao comparar o arco ósseo com o arco medido in vivo."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 11 (Cinemática do Quadril)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0440": {
+  "conceito": "### Duas curvas que descem juntas\n\nA reticulação foi a defesa mais eficaz contra o desgaste do polietileno. A radiação rompe ligações, e sem oxigênio os radicais se reconectam a cadeias vizinhas, formando uma rede mais interligada. No gráfico, a curva vermelha mostra o desgaste despencando nas doses iniciais.\n\nMas a curva azul cai junto: a tenacidade ao impacto diminui à medida que a dose aumenta. McKellop mostrou que ==acima de cerca de 100 kGy o ganho em desgaste fica cada vez menor==, enquanto a perda mecânica continua. Por isso os materiais comerciais refundidos raramente passam de 100 kGy.\n\n### O resultado clínico\n\nMesmo assim, o benefício no organismo foi grande. Em cinco anos, o desgaste médio do altamente reticulado foi de 0,05 mm por ano, contra 0,26 mm por ano do convencional, com queda acentuada da osteólise.\n\n> **Na prova:** mais radiação, menos desgaste e menos tenacidade; acima de 100 kGy, o ganho é pequeno.",
+  "correta": "**Correta.** O desgaste cai rapidamente nas doses iniciais, os ganhos diminuem acima de 100 kGy e a tenacidade ao impacto cai progressivamente.",
+  "incorretas": {
+   "A": "**Errada: a tenacidade diminui.** E o ganho em desgaste não é linear, pois diminui nas doses altas.",
+   "B": "**Errada: o desgaste não volta a subir.** Os materiais raramente passam de 100 kGy porque o ganho é pequeno e a perda mecânica continua.",
+   "D": "**Errada: a tenacidade cai.** A curva azul mostra a perda progressiva com a dose."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 12 (Visão Geral dos Biomateriais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0441": {
+  "conceito": "### Uma faixa que conta como a cabeça se moveu\n\nCerâmica sobre cerâmica tem desgaste linear muito baixo, mas não é imune a falhas. Componentes recuperados às vezes mostram desgaste concentrado numa faixa estreita, onde a microscopia revela a remoção completa de grãos cerâmicos.\n\nA explicação mais aceita é a ==carga na borda==. Durante a fase de balanço da marcha, os centros da cabeça e do inserto se separam um pouco. No contato do calcanhar, a cabeça volta de forma excêntrica e bate na borda do inserto, sempre na mesma região, esculpindo a faixa.\n\n### A faixa e o ruído\n\nO desgaste em faixa também foi ligado ao ruído agudo de algumas articulações cerâmicas, relatado de menos de 1% até 20% conforme a série. Posição dos componentes, desenho do colo, obesidade e idade menor também foram implicados, e Stanat e Restrepo concluíram que o mau posicionamento sozinho não explica o fenômeno.\n\n> **Na prova:** desgaste em faixa na cerâmica = carga na borda por microseparação.",
+  "correta": "**Correta.** O desgaste em faixa é atribuído à carga na borda: microseparação no balanço e retorno excêntrico da cabeça no contato do calcanhar.",
+  "incorretas": {
+   "A": "**Errada: descreve o polietileno oxidado.** A banda branca subsuperficial é achado do polietileno esterilizado por radiação gama.",
+   "B": "**Errada: a transformação de fase é da zircônia.** A alumina não sofre essa transformação.",
+   "C": "**Errada: não é mecanismo da superfície articular.** A corrosão em fresta ocorre na conexão cônica metálica."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 12 (Visão Geral dos Biomateriais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0442": {
+  "conceito": "### Três famílias de liga, três perfis\n\nO aço inoxidável foi a primeira liga dos implantes ortopédicos e é fácil de trabalhar, mas algum grau de corrosão é inevitável; por isso é recomendado para aplicações de duração limitada e pouco usado em artroplastia nos Estados Unidos. As ligas de cobalto-cromo-molibdênio têm alta resistência, tenacidade e resistência ao desgaste, mas são difíceis de usinar e costumam ser fundidas ou conformadas.\n\nO titânio, em geral com 6% de alumínio e 4% de vanádio, tem baixa densidade, boa resistência mecânica e boa resistência à fadiga, de 500 a 700 MPa. Seu ponto fraco é a ==sensibilidade a entalhes==, maior que a do cobalto, que favorece fraturas ligadas a concentradores de tensão, além da corrosão em frestas.\n\n### A camada passiva do titânio\n\nO titânio vira dióxido de titânio tão depressa que tende a impedir reações galvânicas. Mesmo assim, o micromovimento cíclico pode raspar a camada de óxido, e frestas estreitas acumulam íons e acidificam o fluido local.\n\n> **Na prova:** titânio tem boa fadiga, mas é sensível ao entalhe e à corrosão em fresta.",
+  "correta": "**Correta.** O titânio combina baixa densidade e boa resistência à fadiga, mas é sensível a entalhes e sujeito à corrosão em frestas.",
+  "incorretas": {
+   "B": "**Errada: pouco usado e com corrosão inevitável.** O aço é reservado a aplicações de duração limitada.",
+   "C": "**Errada: a usinagem é difícil.** Por isso o cobalto-cromo costuma ser fundido ou conformado.",
+   "D": "**Errada: forma-se muito rápido.** A camada passiva rápida tende a impedir reações galvânicas."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 12 (Visão Geral dos Biomateriais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0443": {
+  "conceito": "### Preenchimento, não cola\n\nCharnley descreveu o cimento como material de preenchimento, porque o polimetilmetacrilato não tem propriedade adesiva intrínseca: fixa por encaixe mecânico nas irregularidades do osso. Ele vem em dois componentes. O pó traz o polímero já polimerizado, o peróxido de benzoíla que inicia a reação e um radiopacificante, como sulfato de bário. O líquido traz o monômero e os controladores da reação.\n\nA resistência do manto depende de como ele é preparado. ==Porosidade elevada, excesso de radiopacificante, muito antibiótico e proporção errada entre pó e líquido== reduzem a resistência clínica.\n\n### O calor da reação\n\nA polimerização é exotérmica. Num manto fino junto a uma prótese metálica, parte do calor se dissipa pelo implante. Mantos muito espessos ou penetração extensa no osso esponjoso, como no recapeamento, podem causar osteonecrose térmica.\n\n> **Na prova:** o cimento não cola, e o preparo decide sua resistência.",
+  "correta": "**Correta.** Porosidade, excesso de radiopacificante ou de antibiótico e proporção incorreta entre pó e líquido reduzem a resistência do manto.",
+  "incorretas": {
+   "A": "**Errada: não tem adesão intrínseca.** Charnley o chamou de material de preenchimento.",
+   "C": "**Errada: isso está no pó.** O líquido contém o monômero e os controladores da polimerização.",
+   "D": "**Errada: a reação é exotérmica.** Mantos espessos podem causar osteonecrose térmica."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 12 (Visão Geral dos Biomateriais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0444": {
+  "conceito": "### O problema dos radicais que sobram\n\nA radiação gama rompe ligações do polietileno e deixa sítios reativos, os radicais livres. Parte deles forma ligações cruzadas, mas os que sobram, na presença de oxigênio, disparam uma cadeia de reações que termina na oxidação: o peso molecular cai, e o material perde resistência, ductilidade e resistência à fadiga.\n\nComponentes muito oxidados mostram uma ==banda branca cerca de 1 mm abaixo da superfície==, região mais oxidada que trinca e vira ponto de partida de delaminação. Laboratórios de análise encontraram falha por fadiga em cerca de metade dos componentes esterilizados em ar, o que levou a indústria a abandonar esse método.\n\n### As alternativas\n\nA radiação em gás inerte com embalagem de barreira evita a oxidação na prateleira, mas não no organismo, onde há oxigênio dissolvido. Óxido de etileno e plasma gasoso quase não geram radicais, mas também não reticulam, e por isso o desgaste é maior que o do material irradiado se não houver reticulação prévia.\n\n> **Na prova:** radiação em ar oxida; gás inerte protege só na prateleira; óxido de etileno e plasma não reticulam.",
+  "correta": "**Correta.** Os radicais livres deixados pela radiação gama em ar oxidam o polímero, e a banda branca subsuperficial marca a região mais degradada.",
+  "incorretas": {
+   "A": "**Errada: protege só na prateleira.** No organismo, o oxigênio dissolvido continua oxidando o polímero.",
+   "B": "**Errada: não reticula.** Por isso o desgaste é maior que o do polietileno irradiado.",
+   "D": "**Errada: gera poucos radicais e não reticula.** Precisa de tratamento prévio para melhorar o desgaste."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 12 (Visão Geral dos Biomateriais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0445": {
+  "conceito": "### Duas formas de lidar com os radicais\n\nDepois de irradiado, o polietileno recebe um tratamento térmico para reduzir os radicais livres. As duas opções têm custos opostos.\n\nO **recozimento abaixo da fusão** acelera a migração dos radicais para as regiões amorfas, onde eles reagem, mas não elimina todos. Ele preserva melhor a cristalinidade e as propriedades mecânicas, e em troca ==pode deixar radicais residuais que oxidam no organismo==, sobretudo em impacto do colo contra a borda ou em subluxações.\n\nA **refundição acima da fusão** dá mobilidade total às cadeias, e os radicais caem abaixo do detectável. O preço é que a rede reticulada atrapalha a recristalização no resfriamento, e o material perde cristalinidade, ductilidade, tenacidade e resistência à fadiga.\n\n### Nem mais é melhor\n\nCollier comparou seis produtos comerciais e confirmou: dose maior reduz tenacidade, refundir piora as propriedades mecânicas, e só o processamento acima da fusão impediu a oxidação em laboratório.\n\n> **Na prova:** recozer preserva a mecânica e deixa radicais; refundir elimina radicais e perde mecânica.",
+  "correta": "**Correta.** O recozimento preserva cristalinidade e propriedades mecânicas, mas pode deixar radicais residuais sujeitos a oxidação no organismo.",
+  "incorretas": {
+   "A": "**Errada: descreve o recozimento.** A refundição reduz radicais, mas perde cristalinidade.",
+   "B": "**Errada: descreve a refundição.** O recozimento deixa radicais residuais.",
+   "C": "**Errada: a refundição reduz as propriedades mecânicas.** Tenacidade e fadiga pioram."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 12 (Visão Geral dos Biomateriais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0446": {
+  "conceito": "### Mais tenaz, mas instável\n\nA zircônia chegou como sucessora da alumina porque é mais tenaz: cerca de 5,5 MPa·m½, contra 4,2 da alumina, e com resistência à flexão bem maior. O problema é que ela é intrinsecamente instável e precisa ser estabilizada com óxido de ítrio, ficando com grãos tetragonais metaestáveis.\n\nNa degradação em baixa temperatura, essa fase tetragonal pode virar monoclínica. A ==transformação reduz a resistência e aumenta a rugosidade da superfície==, elevando também o desgaste do polietileno. Numa cabeça fraturada, a fase monoclínica chegava a 60% perto do cone.\n\n### O desfecho clínico\n\nAllain encontrou alta incidência de osteólise e sobrevida de apenas 63% em oito anos com cabeças de zircônia sobre polietileno. Entre 2000 e 2004, foram documentadas 343 falhas, e em 2001 o maior fabricante recolheu lotes por problema no processamento térmico. O desenvolvimento migrou para os compósitos de alumina e zircônia.\n\n> **Na prova:** zircônia pura é tenaz, mas a transformação monoclínica a derrubou.",
+  "correta": "**Correta.** A transformação tetragonal para monoclínica reduz a resistência e aumenta a rugosidade, o que também eleva o desgaste do polietileno.",
+  "incorretas": {
+   "B": "**Errada: é mais tenaz que a alumina.** Foi justamente essa vantagem que motivou seu uso.",
+   "C": "**Errada: a sobrevida foi ruim.** Houve 63% em oito anos, e o recolhimento foi por problema no processamento térmico.",
+   "D": "**Errada: é intrinsecamente instável.** Precisa de estabilização, geralmente por óxido de ítrio."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 12 (Visão Geral dos Biomateriais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0447": {
+  "conceito": "### Menos volume, mas partículas piores\n\nO metal sobre metal ressurgiu com duas promessas: menor desgaste volumétrico em laboratório e cabeças maiores, mais estáveis. O problema estava no tamanho dos detritos. As partículas metálicas medem de 10 a 120 nanômetros, contra 400 a 1.150 do polietileno, são produzidas em número muito maior e podem viajar pelo organismo. Liberam íons de cobalto e cromo, tóxicos para as células e capazes de provocar hipersensibilidade.\n\n### Do local ao sistêmico\n\nLocalmente, aparecem metalose, dor, lesões de vasculite linfocítica asséptica, pseudotumores e necrose. No recapeamento, **mulheres, componentes pequenos, displasia e idade abaixo de 40 anos** se associaram a mais pseudotumor e revisão.\n\nSistemicamente, alguns pacientes desenvolveram ==cobaltismo com cobalto sérico acima de 60 µg/L==: cardiomiopatia, perda visual e auditiva, neuropatia, convulsões e declínio cognitivo. Após revisão para uma articulação sem metal sobre metal, o cobalto caiu rapidamente e houve melhora, embora o excesso de íons não desapareça de imediato.\n\n> **Na prova:** cobalto acima de 60 µg/L pode causar cobaltismo sistêmico.",
+  "correta": "**Correta.** Os relatos de cobaltismo, com cardiomiopatia, perda visual e auditiva e alterações neurológicas, tinham cobalto sérico acima de 60 µg/L.",
+  "incorretas": {
+   "A": "**Errada: são nanométricas.** São menores que as do polietileno e se espalham pelo organismo.",
+   "C": "**Errada: o perfil de risco é outro.** Sexo feminino, componentes pequenos, displasia e idade abaixo de 40 anos.",
+   "D": "**Errada: a queda não é imediata.** A revisão reduz os níveis de forma significativa, mas não elimina logo o excesso."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 12 (Visão Geral dos Biomateriais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0448": {
+  "conceito": "### Dura, lisa e frágil\n\nAs cerâmicas têm baixa rugosidade e dureza cerca de cinco vezes maior que a do cobalto-cromo, e por isso atritam e desgastam menos que o metal sobre polietileno. O preço é a fragilidade: seu comportamento é elástico linear, com ==pouca ou nenhuma deformação plástica antes da falha==. Um dano crítico pode evoluir direto para fratura catastrófica.\n\nA fabricação moderna reduziu grãos e porosidade e aumentou a pureza, e as fraturas caíram muito. A alumina reforçada por zircônia soma a dureza da alumina à resistência à propagação de trincas da zircônia e, ao contrário da zircônia pura, é estável. Em contrapartida, o ruído audível ajudou a derrubar o uso de cerâmica sobre cerâmica para menos de 2% das novas artroplastias.\n\n### O zircônio oxidado\n\nÉ uma liga de zircônio com nióbio cuja superfície vira uma camada negra e dura de óxido de 4 a 5 micrômetros. Desgasta menos que o cobalto-cromo em condições estáveis, mas numa luxação ou contato metálico a camada se perde e expõe o metal mais macio, com desgaste acelerado.\n\n> **Na prova:** cerâmica não deforma antes de quebrar.",
+  "correta": "**Correta (é a exceção).** A cerâmica é elástica linear, com pouca ou nenhuma deformação plástica antes da falha, e por isso pode fraturar de forma catastrófica.",
+  "incorretas": {
+   "A": "**Correta.** A dureza da cerâmica pode ser cerca de cinco vezes a das ligas de cobalto-cromo.",
+   "B": "**Correta.** O ruído ajudou a reduzir o uso para menos de 2% das novas artroplastias.",
+   "D": "**Correta.** Ao contrário da zircônia pura, o compósito é microestruturalmente estável.",
+   "E": "**Correta.** Luxação e contato metálico destroem a camada e expõem o zircônio mais macio."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 12 (Visão Geral dos Biomateriais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0449": {
+  "conceito": "### A zircônia como freio de trinca\n\nA alumina é dura e estável, mas frágil. O compósito moderno acrescenta partículas de zircônia tetragonal à matriz de alumina, e elas funcionam como um mecanismo ativo contra as trincas.\n\nQuando uma sobrecarga abre uma microtrinca, as partículas de zircônia próximas à ponta se transformam espontaneamente da fase tetragonal para a monoclínica. Essa transformação vem com ==expansão volumétrica de cerca de 4%==. A partícula incha, comprime a ponta da trinca e consome parte da energia que a faria avançar. Na figura, é por isso que os grãos ficam vermelhos em torno da trinca à medida que a carga aumenta.\n\n### O mesmo fenômeno, dois destinos\n\nÉ a mesma transformação que arruinou a zircônia pura. Lá, ela acontecia de forma espontânea na superfície e aumentava a rugosidade; aqui, fica contida dentro da matriz de alumina e só é disparada pela trinca. A tenacidade não vem apenas da presença física de partículas resistentes, mas dessa zona compressiva.\n\n> **Na prova:** a zircônia se transforma, expande cerca de 4% e prende a trinca.",
+  "correta": "**Correta.** A zircônia tetragonal vira monoclínica junto à trinca, expande cerca de 4% e cria compressão que bloqueia sua propagação.",
+  "incorretas": {
+   "A": "**Errada: fase e material trocados.** Quem se transforma é a zircônia, de tetragonal para monoclínica, com expansão.",
+   "B": "**Errada: as plaquetas não se fundem.** O mecanismo principal é a transformação da zircônia.",
+   "C": "**Errada: a cerâmica quase não deforma.** A alumina tem pouca deformação plástica antes da falha."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 13 (Ciência Básica das Cerâmicas)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0450": {
+  "conceito": "### Testar o material e testar o componente\n\nO desempenho de uma peça cerâmica depende do material, do desenho, da fabricação e de fatores do paciente e da cirurgia. Por isso existem dois grupos de ensaio.\n\nO ensaio de **flexão em quatro pontos**, da ISO 6474-2, mede a resistência intrínseca do material. O ensaio de **ruptura da cabeça femoral**, pela ISO 7206, testa o componente acabado montado num cone e simula as cargas que ela pode receber no organismo. Sua ==referência mínima é de 46 quilonewtons==, muito acima da maior carga estimada in vivo, de cerca de 10 kN.\n\n### O compósito na prática\n\nCom geometria idêntica, o compósito supera a alumina nos dois ensaios: 1.400 contra 620 MPa em flexão, e 85 contra 54 kN na ruptura de uma cabeça de 28 mm em cone 12/14 longo.\n\n> **Na prova:** flexão em quatro pontos avalia o material; a ruptura da cabeça exige no mínimo 46 kN.",
+  "correta": "**Correta.** A flexão em quatro pontos mede a resistência do material, e a ruptura da cabeça tem referência mínima de 46 kN.",
+  "incorretas": {
+   "B": "**Errada: testa o componente, e o mínimo é 46 kN.** Os 10 kN são a maior carga estimada no organismo.",
+   "C": "**Errada: essa é a ruptura da cabeça.** A flexão em quatro pontos usa corpo de prova do material.",
+   "D": "**Errada: o mínimo fica muito acima.** São 46 kN, contra cerca de 10 kN no organismo."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 13 (Ciência Básica das Cerâmicas)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0451": {
+  "conceito": "### Quimicamente estável e molhável\n\nA alumina, ou óxido de alumínio, já está oxidada em seu estado de equilíbrio. Não há corrosão nem liberação de íons comparáveis às dos metais, e essa estabilidade, somada ao baixo desgaste, foi chamada por John Fisher de segurança biológica funcional. A única fase bioestável é a alfa-alumina, o coríndon, de estrutura hexagonal compacta e ligações muito fortes.\n\nA superfície tem ânions de oxigênio que prendem fortemente água e proteínas, um mecanismo chamado quimissorção. Por isso a alumina é **mais molhável que os metais**: forma uma película de fluido que melhora a lubrificação e reduz atrito e desgaste.\n\n### A limitação central\n\nA fraqueza é mecânica. A alumina tem ==baixa tenacidade==, sofre pouca deformação antes de falhar e é sensível a defeitos, entalhes, partículas interpostas e impactos excêntricos, que podem iniciar trincas.\n\n> **Na prova:** alumina é inerte, dura e molhável; o ponto fraco é a tenacidade.",
+  "correta": "**Correta.** A alumina já está oxidada, é muito dura e molhável, mas tem baixa tenacidade por ser frágil.",
+  "incorretas": {
+   "A": "**Errada: já está oxidada.** Não há oxidação progressiva nem liberação de íons como nos metais.",
+   "C": "**Errada: é mais molhável que os metais.** A quimissorção favorece a película de fluido e a lubrificação.",
+   "D": "**Errada: a tenacidade é baixa.** A cerâmica é sensível a entalhes e impactos."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 13 (Ciência Básica das Cerâmicas)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0452": {
+  "conceito": "### Da França para a Alemanha\n\nNo fim dos anos 1960, o desgaste dos materiais disponíveis preocupava. Pierre Boutin, cirurgião de Pau, na França, desenvolveu com uma fabricante de cerâmica a ==primeira articulação de alumina sobre alumina, implantada em 1970==. A haste era de aço, o componente acetabular era todo de alumina, ambos cimentados, e a cabeça era presa a um colo curto com cola epóxi.\n\nA grande contribuição alemã veio com os sistemas Lindenhof, Autophor e Xenophor: a **conexão cônica de travamento** entre cabeça e haste. Em 1972, Dörre e Semlitsch introduziram a modularidade pelo cone Morse, permitindo usar metal na haste e cerâmica na articulação.\n\n### Normas depois das lições\n\nAs séries iniciais tiveram falhas, e conceitos como cabeça colada, acetábulo monobloco rosqueado e cabeças com saia foram abandonados. A primeira norma para alumina de grau médico foi a ISO 6474, de 1980, baseada na DIN 58835 e seguida pela ASTM F603.\n\n> **Na prova:** Boutin, 1970, primeira alumina sobre alumina; o cone de travamento veio dos alemães.",
+  "correta": "**Correta.** Boutin implantou em 1970 a primeira alumina sobre alumina, com a cabeça colada ao colo por epóxi.",
+  "incorretas": {
+   "A": "**Errada: Charnley usou aço e polietileno.** Em 1962, a cabeça era de aço inoxidável.",
+   "B": "**Errada: Boutin usava cola epóxi.** A conexão cônica veio dos sistemas alemães, e o cone Morse, em 1972.",
+   "D": "**Errada: a primeira norma foi a ISO 6474, de 1980.** A ASTM F603 veio depois."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 13 (Ciência Básica das Cerâmicas)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0453": {
+  "conceito": "### Uma matriz de alumina com dois reforços\n\nO compósito foi criado para manter o que a alumina tem de bom, respaldado por mais de 40 anos de uso, e aumentar sobretudo a tenacidade à fratura. A matriz é de alumina fina e pura, e recebe duas fases de reforço.\n\nA composição é de ==cerca de 80% de alumina dopada com cromo, 17% de zircônia estabilizada por ítrio e 3% de plaquetas de aluminato de estrôncio==. A zircônia tem grãos de cerca de 0,27 micrômetro e é o principal mecanismo de bloqueio de trincas; as plaquetas são cristais alongados que desviam a trinca. O cromo dá a cor rosada característica.\n\n### Por que a alumina domina\n\nNum compósito, rigidez, dureza e condutividade térmica são ditadas pela fase dominante, a alumina, enquanto os reforços mudam a resistência à propagação de trincas. Por isso o compósito mantém dureza próxima à da alumina e ganha tenacidade.\n\n> **Na prova:** delta é 80% alumina, 17% zircônia e 3% aluminato de estrôncio.",
+  "correta": "**Correta.** O compósito tem cerca de 80% de alumina com cromo, 17% de zircônia estabilizada por ítrio e 3% de plaquetas de aluminato de estrôncio.",
+  "incorretas": {
+   "A": "**Errada: não tem nitreto de silício.** Os reforços são zircônia e aluminato de estrôncio.",
+   "B": "**Errada: a zircônia é cerca de 17%.** E há também as plaquetas de aluminato de estrôncio.",
+   "C": "**Errada: a matriz é de alumina.** A zircônia é o reforço, e não a fase dominante."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 13 (Ciência Básica das Cerâmicas)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0454": {
+  "conceito": "### Um nome que diz pouco\n\nA conexão cônica é um dos fatores mais importantes para a confiabilidade da cabeça cerâmica. O problema é que a designação 12/14 informa apenas dois diâmetros do cone. ==Ela não define ângulo, tolerância angular, rugosidade nem comprimento==, e dois cones chamados 12/14 podem ser incompatíveis.\n\nO ângulo do cone importa muito: ângulos menores aumentam as tensões transmitidas à cabeça e podem reduzir drasticamente a carga de ruptura. O cone com ângulo incluído de 5,73 graus suporta muito mais carga que os de 2,73 ou 1,5 grau.\n\n### O que contamina o cone\n\nEm relação ao cone limpo, a água reduz pouco a capacidade de carga; cimento e soro a reduzem para cerca de três quartos; fragmentos ósseos, para pouco mais da metade; gordura, para cerca de 40%; e riscos, para cerca de 20%. Por isso o cone deve estar compatível, íntegro, limpo, seco e alinhado antes de um impacto firme.\n\n> **Na prova:** 12/14 não garante compatibilidade; cone limpo, íntegro e bem impactado.",
+  "correta": "**Correta.** A designação 12/14 informa só dois diâmetros e não define ângulo, tolerância, rugosidade ou comprimento.",
+  "incorretas": {
+   "B": "**Errada: podem ser incompatíveis.** O padrão não define todas as características do cone.",
+   "C": "**Errada: é o contrário.** Ângulos menores aumentam as tensões e reduzem a carga suportada.",
+   "D": "**Errada: a gordura reduz muito.** A carga cai para cerca de 40%, bem mais que com água."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 13 (Ciência Básica das Cerâmicas)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0455": {
+  "conceito": "### Uma cabeça que não se risca\n\nCom polietileno convencional, trocar a cabeça metálica por uma de alumina ==reduz o desgaste de duas a cinco vezes==. Cabeças recuperadas após mais de 20 anos não mudaram de diâmetro, esfericidade ou rugosidade. Zichner viu a taxa de revisão em dez anos cair para um quinto com a cerâmica, e Dahl, com radioestereometria, mediu 0,43 mm de desgaste com alumina contra 0,93 mm com metal.\n\n### Também ajuda o polietileno moderno\n\nO polietileno altamente reticulado desgasta pouco, mas é mais frágil, e uma cabeça metálica riscada acelera seu desgaste. A cerâmica quase não se risca. Lee mostrou que, em condições abrasivas, cabeças de compósito reduziram o desgaste do reticulado de 65% a 97% em comparação com cabeças metálicas riscadas.\n\n> **Na prova:** cabeça cerâmica reduz de duas a cinco vezes o desgaste do polietileno convencional.",
+  "correta": "**Correta.** Cabeças de alumina reduzem o desgaste do polietileno convencional de duas a cinco vezes em relação às metálicas.",
+  "incorretas": {
+   "A": "**Errada: reduzem o desgaste.** A superfície cerâmica estável gera menos partículas.",
+   "C": "**Errada: protegem.** Com cabeças metálicas riscadas como comparação, a redução foi de 65% a 97%.",
+   "D": "**Errada: foi um quinto.** A revisão com cerâmica foi cinco vezes menor que com metal."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 13 (Ciência Básica das Cerâmicas)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0456": {
+  "conceito": "### A primeira geração falhou por outros motivos\n\nAs primeiras séries de alumina sobre alumina tiveram muitas revisões, mas a maior parte ligada ao desenho do implante e à falta de superfície para crescimento ósseo, não à articulação cerâmica. A primeira geração também fraturava entre 3% e 5%, numa época sem normas uniformes.\n\n### Hoje, fratura é rara\n\nO capítulo reuniu ==65.177 artroplastias publicadas entre 2000 e 2012, com 24 fraturas, cerca de 0,036%==. D'Antonio e Capello, em 52 mil articulações cerâmicas, encontraram 0,008% de fraturas acetabulares e 0,017% de fraturas da cabeça.\n\nQuando a fratura acontece, raramente é espontânea. Cone contaminado ou danificado, inserto mal assentado ou inclinado, carcaça deformada, componentes incompatíveis, sobrecarga e trauma devem ser procurados.\n\n> **Na prova:** a fratura cerâmica moderna é rara (cerca de 0,036%) e multifatorial.",
+  "correta": "**Correta.** Em 65.177 artroplastias publicadas entre 2000 e 2012, houve 24 fraturas, cerca de 0,036%.",
+  "incorretas": {
+   "A": "**Errada: foram desenho e fixação.** A maioria das falhas iniciais não era do par cerâmico.",
+   "B": "**Errada: 3% a 5% era a primeira geração.** A taxa moderna é cerca de 0,036%.",
+   "D": "**Errada: é multifatorial.** Cone, assentamento, incompatibilidade e sobrecarga devem ser investigados."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 13 (Ciência Básica das Cerâmicas)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0457": {
+  "conceito": "### Um fenômeno de vários fatores\n\nO rangido agudo preocupa pacientes, mas ==não é exclusivo da cerâmica==: já foi descrito em metal sobre polietileno, metal sobre metal e recapeamento. Pacientes altos e pesados, laxidade muscular, posição dos implantes e impacto de osso ou partes moles contribuem, assim como o desenho do sistema.\n\nA frequência varia muito com o implante. Carcaças com travamento cônico e inserto cerâmico no nível da borda têm incidência abaixo de 1%; um desenho com inserto recuado e cercado por titânio chegou a mais de 20%. Numa mesma instituição, uma haste específica teve mais ruído que outras com o mesmo acetábulo.\n\n### O que dizer ao paciente\n\nNão há evidência publicada de que o ruído comprometa a integridade mecânica ou a longevidade do implante, e ele pode desaparecer com o tempo. Como vários fatores podem se somar num mesmo paciente, o ruído deve entrar no consentimento.\n\n> **Na prova:** squeaking é multifatorial, depende do sistema e não prediz falha.",
+  "correta": "**Correta (é a exceção).** O ruído foi descrito também em metal sobre polietileno, metal sobre metal e recapeamento.",
+  "incorretas": {
+   "B": "**Correta.** A incidência varia de menos de 1% a mais de 20% conforme o desenho.",
+   "C": "**Correta.** Há relatos de desaparecimento espontâneo.",
+   "D": "**Correta.** Não se demonstrou prejuízo à integridade mecânica ou à longevidade.",
+   "E": "**Correta.** A possibilidade de ruído deve ser discutida no consentimento."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 13 (Ciência Básica das Cerâmicas)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0458": {
+  "conceito": "### A degradação que avança com o tempo\n\nA oxidação foi o problema mais persistente das articulações com polietileno. Por décadas, os componentes eram esterilizados com 25 a 40 kGy de radiação gama em ar logo após a fabricação. Essa dose produzia alguma reticulação, mas deixava radicais livres de longa duração.\n\nNa fase cristalina, os radicais ficam presos nas lamelas e persistem por anos. Na presença de oxigênio, formam radicais peróxi que roubam hidrogênio das cadeias vizinhas e propagam uma reação em cadeia. Os hidroperóxidos se decompõem em cetonas, ésteres e ácidos, com ==cisão de cadeias, queda do peso molecular e perda das propriedades mecânicas==. A resistência à propagação de trincas despenca, e as trincas por fadiga iniciadas abaixo da superfície levam à delaminação vista na figura.\n\n### A mudança de 1995\n\nA partir de 1995, muitos componentes passaram a ser irradiados em embalagem com gás inerte. A oxidação na prateleira caiu, mas a oxidação progressiva no organismo continuou.\n\n> **Na prova:** radicais residuais + oxigênio = oxidação, cisão de cadeias e delaminação.",
+  "correta": "**Correta.** Os radicais livres residuais da radiação gama iniciam a oxidação, com cisão de cadeias, perda mecânica e delaminação por fadiga.",
+  "incorretas": {
+   "A": "**Errada: o convencional era pouco reticulado.** A dose de esterilização produzia só alguma reticulação.",
+   "C": "**Errada: não é o mecanismo do polímero.** A corrosão em fresta é problema das conexões metálicas.",
+   "D": "**Errada: transformação de fase é mecanismo da zircônia.** O polietileno degrada por oxidação."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 14 (Ciência Básica do Polietileno)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0459": {
+  "conceito": "### Eliminar os radicais não bastou\n\nA refundição foi pensada para dar estabilidade vitalícia: se não sobrasse radical livre, não haveria oxidação. Os componentes recuperados após sete a dez anos contaram outra história. Mesmo materiais sem radicais detectáveis na implantação mostraram pequenas quantidades de oxidação.\n\nDuas explicações aparecem no capítulo. Os lipídios do líquido sinovial são absorvidos pelo polímero e podem iniciar reações oxidativas. E ==a carga cíclica aumenta a oxidação==, inclusive no material irradiado e refundido. No gráfico, os quadrados vazios, com carga cíclica, sobem muito mais que os cheios, sem carga, sobretudo perto das superfícies.\n\n### A resposta: proteção ativa\n\nA conclusão é que a estabilidade passiva, obtida só pela remoção dos radicais de fabricação, pode não bloquear todos os mecanismos de oxidação no organismo. Daí o interesse em antioxidantes, como a vitamina E, que agem durante toda a vida útil do implante.\n\n> **Na prova:** até o polietileno refundido oxida sob carga cíclica; daí a vitamina E.",
+  "correta": "**Correta.** A carga cíclica aumentou a oxidação do material irradiado e refundido, mesmo sem radicais detectáveis.",
+  "incorretas": {
+   "A": "**Errada: houve oxidação.** Componentes recuperados e ensaios com carga mostraram oxidação mesmo sem radicais detectáveis.",
+   "B": "**Errada: é o contrário.** Os corpos de prova sob carga cíclica oxidaram mais.",
+   "D": "**Errada: o pico foi junto às superfícies.** O gráfico mostra oxidação maior nas extremidades de profundidade."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 14 (Ciência Básica do Polietileno)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0460": {
+  "conceito": "### Um compósito de duas fases\n\nNa escala nanométrica, o polietileno de ultra-alto peso molecular é ==semicristalino==. Lamelas cristalinas de 10 a 50 nanômetros de espessura ficam imersas numa fase amorfa de cadeias emaranhadas, e moléculas de ligação atravessam essa fase conectando as lamelas. Por isso ele se comporta como um compósito viscoplástico, cujas propriedades dependem da história mecânica, química e térmica.\n\nA ASTM define o material por massa molecular média acima de 3,1 milhões de g/mol; a ISO usa limite acima de 1 milhão. As resinas GUR 1020 e 1050 têm cerca de 3,5 e 6 milhões. O que Charnley usou era chamado, na época, de polietileno de alta densidade, termo que hoje se reserva ao material abaixo de 200 mil g/mol.\n\n### Por que a fase importa na radiação\n\nNa fase amorfa, as cadeias se movem e os radicais se recombinam em ligações cruzadas. Na fase cristalina, a distância fixa entre cadeias impede a reticulação, e os radicais ficam presos por anos.\n\n> **Na prova:** semicristalino, com massa molecular acima de 3,1 milhões pela ASTM.",
+  "correta": "**Correta.** O polietileno é semicristalino, e a ASTM o define por massa molecular média acima de 3,1 milhões de g/mol.",
+  "incorretas": {
+   "A": "**Errada: é semicristalino.** Tem lamelas cristalinas numa matriz amorfa.",
+   "B": "**Errada: essa é a definição de alta densidade.** O ultra-alto peso molecular passa de 3,1 milhões de g/mol.",
+   "C": "**Errada: ficam presos.** Na fase cristalina, os radicais persistem por anos."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 14 (Ciência Básica do Polietileno)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0461": {
+  "conceito": "### Onde o radical nasce decide o que ele faz\n\nA radiação ionizante rompe ligações carbono-hidrogênio e forma radicais de carbono. O destino deles depende da fase em que surgem.\n\nNa fase amorfa, as cadeias têm mobilidade, e os radicais se recombinam formando ligações cruzadas em forma de Y ou H. Na fase cristalina, a distância fixa entre as cadeias impede essa recombinação, e os ==radicais ficam presos nas lamelas por anos==. São eles que, ao encontrar oxigênio, disparam a oxidação.\n\n### Como se mede\n\nA oxidação é medida por espectroscopia, quantificando os grupos carbonila que surgem da decomposição dos hidroperóxidos. Ensaios acelerados comparam formulações, mas não predizem com precisão o perfil de oxidação de um implante no organismo. A embalagem em gás inerte, adotada em 1995, reduziu a oxidação na prateleira, mas não a eliminou no organismo.\n\n> **Na prova:** radical na fase cristalina fica preso e oxida depois; na amorfa, vira ligação cruzada.",
+  "correta": "**Correta.** Na fase cristalina, a distância fixa entre cadeias impede a recombinação, e os radicais ficam presos nas lamelas por anos.",
+  "incorretas": {
+   "B": "**Errada: na fase amorfa eles se recombinam.** A mobilidade das cadeias favorece as ligações cruzadas.",
+   "C": "**Errada: reduziu só a oxidação na prateleira.** No organismo, a oxidação progressiva continuou.",
+   "D": "**Errada: mede-se a carbonila.** A espectroscopia quantifica os grupos carbonila."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 14 (Ciência Básica do Polietileno)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0462": {
+  "conceito": "### A penalidade das cabeças grandes quase sumiu\n\nNo polietileno convencional, cabeças maiores percorrem uma distância maior a cada ciclo e desgastam mais, apesar da menor tensão de contato. Por isso, por décadas, usaram-se cabeças de 22 a 28 mm, com o preço de menos estabilidade e menos arco de movimento.\n\nCom o altamente reticulado, ==os simuladores não mostraram aumento relevante do desgaste com cabeças maiores==. Um inserto de 46 mm de diâmetro interno desgastou menos que um convencional de 22 mm. As cabeças acima de 32 mm passaram a ser usadas com menos preocupação com osteólise, e a literatura estimou redução de 87% no risco de osteólise do quadril após cinco anos.\n\n### O custo da reticulação\n\nA reticulação reduz a deformação plástica de grande amplitude e, com ela, o desgaste adesivo e abrasivo. Em troca, a ductilidade e a resistência à propagação de trincas diminuem. A densidade de reticulação sobe com a dose até um platô perto de 100 kGy. Cabeças grandes exigem insertos mais finos, e o risco passa do desgaste para o impacto do colo e a fratura da borda.\n\n> **Na prova:** com polietileno reticulado, cabeça grande não aumenta o desgaste de forma relevante.",
+  "correta": "**Correta.** Com polietileno altamente reticulado, cabeças maiores não aumentaram o desgaste de forma relevante nos simuladores.",
+  "incorretas": {
+   "A": "**Errada: com o convencional, cabeça maior desgasta mais.** A distância percorrida por ciclo aumenta.",
+   "C": "**Errada: a reticulação reduz a ductilidade.** E também a resistência à propagação de trincas.",
+   "D": "**Errada: há um platô.** A densidade de reticulação estabiliza perto de 100 kGy."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 14 (Ciência Básica do Polietileno)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0463": {
+  "conceito": "### Reticular primeiro, proteger depois\n\nA primeira formulação comercial com antioxidante chegou ao quadril em ==2007==. O material é irradiado para reticular, mergulhado em vitamina E em temperatura elevada, mas abaixo da fusão, e depois homogeneizado, usinado e esterilizado. A temperatura fica em cerca de 120 °C porque o pico de fusão está perto de 140 °C: sem refundir, a cristalinidade se preserva.\n\nA vitamina E, hidrofóbica, difunde-se facilmente pelo polímero. Ela doa um hidrogênio ao radical livre e forma um radical estável, interrompendo a cascata oxidativa. O resultado foi um material estável contra oxidação, com desgaste 90% a 92% menor que o convencional no simulador e **mais resistente à fadiga** que o refundido: 46 contra 35 MPa de resistência à tração.\n\n### Misturar antes é diferente\n\nQuando a vitamina E é misturada à resina antes da radiação, ela consome radicais durante a irradiação e reduz a eficiência da reticulação, exigindo doses maiores.\n\n> **Na prova:** vitamina E difundida após a radiação preserva cristalinidade e resistência à fadiga.",
+  "correta": "**Correta.** Introduzido em 2007, o material com vitamina E difundida não é refundido, mantém a cristalinidade e tem mais resistência à fadiga que o refundido.",
+  "incorretas": {
+   "A": "**Errada: essa é a mistura prévia.** Ela reduz a eficiência da reticulação.",
+   "B": "**Errada: não é refundido.** A difusão fica em cerca de 120 °C, abaixo da fusão.",
+   "D": "**Errada: é hidrofóbica.** Por isso difunde-se facilmente pelo polietileno."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 14 (Ciência Básica do Polietileno)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0464": {
+  "conceito": "### Quando o problema é a borda\n\nAs falhas por fadiga dos insertos irradiados e refundidos são ==raras, mas quando ocorrem se concentram na borda==. Costumam estar ligadas a componente acetabular muito vertical ou anteversão excessiva, situações em que o colo bate repetidamente na borda.\n\nO inserto sofre compressão e cisalhamento, e tensões residuais de tração se acumulam com os ciclos. A inversão da direção das tensões favorece o início de trincas e a delaminação. Como a refundição reduz a resistência à fadiga, a borda fina de um inserto mal posicionado vira o ponto fraco.\n\n### O material não corrige o posicionamento\n\nCabeças grandes pedem insertos finos, e isso pode trocar o modo de falha: sai o desgaste volumétrico, entra a fadiga localizada da borda. Como muitos componentes são implantados fora das zonas ideais, o desempenho depende de desenho, espessura do inserto, diâmetro da cabeça e posicionamento cirúrgico, e não apenas do polímero.\n\n> **Na prova:** fratura do polietileno refundido é rara, na borda, com componente vertical ou antevertido.",
+  "correta": "**Correta.** As falhas por fadiga são raras, concentram-se na borda e associam-se a componente muito vertical ou com anteversão excessiva.",
+  "incorretas": {
+   "A": "**Errada: são raras e na borda.** Dependem do posicionamento do componente.",
+   "B": "**Errada: é o contrário.** O risco aparece com componente vertical e antevertido demais.",
+   "C": "**Errada: inserto fino aumenta o risco.** A falha pode migrar para fadiga localizada da borda."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 14 (Ciência Básica do Polietileno)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0465": {
+  "conceito": "### Por que o polietileno ainda importa\n\nMais de um milhão de artroplastias são feitas por ano nos Estados Unidos, e as revisões seguem crescendo, com cerca de 200 mil por ano. Entre as causas de revisão do quadril citadas estão ==luxação (23%), afrouxamento mecânico (20%) e infecção (15%)==, e a osteólise e a instabilidade tardia se ligam sobretudo às partículas do polietileno convencional.\n\nO perfil dos pacientes também mudou: entre 1990 e 2002, a proporção de 45 a 64 anos nas primárias subiu de 28% para 42%. Pacientes mais jovens e idosos mais ativos exigem mais da articulação.\n\n### Aditivos que falharam\n\nNem todo aditivo ajudou. O estearato de cálcio foi encontrado em regiões oxidadas, e as fibras de carbono do Poly II funcionaram como pontos de início de trinca, levando ao fracasso do material.\n\n> **Na prova:** revisão por luxação 23%, afrouxamento 20%, infecção 15%.",
+  "correta": "**Correta.** O capítulo cita luxação (23%), afrouxamento mecânico (20%) e infecção (15%) entre as causas de revisão do quadril.",
+  "incorretas": {
+   "B": "**Errada: chamava-se alta densidade.** A nomenclatura mudou; hoje alta densidade é outro material.",
+   "C": "**Errada: a proporção subiu.** Foi de 28% para 42%.",
+   "D": "**Errada: o Poly II fracassou.** As fibras de carbono iniciavam trincas."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 14 (Ciência Básica do Polietileno)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0466": {
+  "conceito": "### Várias rotas para o mesmo equilíbrio\n\nO objetivo de todas as estratégias novas é o mesmo: pouco desgaste sem sacrificar a resistência ao impacto e à fadiga.\n\nO X3 usa ==três ciclos de 30 kGy, cada um seguido de recozimento a 130 °C, abaixo da fusão==, e esterilização por plasma gasoso. Os radicais ficam baixos, mas detectáveis, e a cristalinidade se mantém perto de 62%. A vitamina E misturada à resina antes da radiação consome radicais e reduz a eficiência da reticulação, exigindo doses maiores.\n\n### Outras ideias\n\nA reticulação limitada à superfície cria uma camada reticulada de cerca de 2 mm sobre um núcleo pouco reticulado; com desgaste de 0,05 mm por ano, levaria 40 anos para atravessá-la. A cristalização sob alta pressão induz fase hexagonal e cristais maiores. E a fusão em alta temperatura, entre 280 e 320 °C, reduz os defeitos de fusão entre grânulos e aumenta o alongamento até a ruptura.\n\n> **Na prova:** X3 é recozido abaixo da fusão, em três ciclos, e não refundido.",
+  "correta": "**Correta (é a exceção).** O X3 recebe três ciclos de 30 kGy com recozimento a 130 °C, abaixo da fusão, justamente para preservar a cristalinidade.",
+  "incorretas": {
+   "A": "**Correta.** A vitamina E consome radicais durante a irradiação.",
+   "B": "**Correta.** A camada reticulada de cerca de 2 mm fica sobre um núcleo mais resistente.",
+   "C": "**Correta.** A alta pressão induz fase hexagonal e aumenta a cristalinidade.",
+   "E": "**Correta.** A difusão das cadeias entre grânulos reduz os defeitos de fusão."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 14 (Ciência Básica do Polietileno)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0467": {
+  "conceito": "### Um implante que vive de ciclos\n\nFadiga é a falha por tensão cíclica repetida: ao longo de muitos ciclos, uma trinca surge e cresce até a ruptura. A curva de Wöhler relaciona a tensão aplicada com o número de ciclos até falhar. Considera-se ==fadiga de alto ciclo a partir de cerca de 10 mil ciclos==, e o quadril é carregado de 2 a 5 milhões de vezes por ano, em pleno regime de alto ciclo.\n\nComo regra, a resistência à fadiga de uma liga acompanha sua resistência à tração. A 10 milhões de ciclos, ela fica em cerca de 0,3 a 0,5 da resistência máxima à tração.\n\n### A superfície decide\n\nNos metais, na fadiga de alto ciclo, quase toda a vida é gasta iniciando a trinca, e só uma pequena parte propagando-a. Por isso o que mais prolonga a vida é inibir o início da trinca na superfície: superfícies lisas, tensões residuais compressivas e endurecimento superficial, por jateamento com granalha ou implantação iônica.\n\n> **Na prova:** quadril = 2 a 5 milhões de ciclos por ano, fadiga de alto ciclo.",
+  "correta": "**Correta.** A fadiga de alto ciclo começa por volta de 10 mil ciclos, e o quadril é carregado de 2 a 5 milhões de vezes por ano.",
+  "incorretas": {
+   "B": "**Errada: é cerca de 0,3 a 0,5 dela.** A resistência à fadiga fica bem abaixo da resistência máxima à tração.",
+   "C": "**Errada: é o contrário.** Quase toda a vida é gasta iniciando a trinca.",
+   "D": "**Errada: são milhões de ciclos.** O quadril sofre de 2 a 5 milhões de ciclos por ano."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 15 (Ciência Básica dos Metais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0468": {
+  "conceito": "### Três arranjos para quase todas as ligas\n\nOs metais são cristais: os átomos se arrumam num padrão periódico tridimensional. Existem 14 arranjos possíveis, as redes de Bravais, mas quase todas as ligas ortopédicas usam três.\n\nA ==cúbica de face centrada é a do aço inoxidável 316L==, austenítico. A cúbica de corpo centrado é a do titânio beta. A hexagonal compacta aparece no titânio alfa e no cobalto-cromo. O cobalto, aliás, muda com a temperatura: é cúbico de face centrada, a fase alfa, acima de cerca de 400 °C, e hexagonal compacto, a fase épsilon, abaixo disso.\n\n### Por que a estrutura importa\n\nA estrutura cristalina, junto com o tamanho de grão e as fases presentes, define como as discordâncias se movem e, portanto, a resistência, a ductilidade e o comportamento em fadiga. No titânio-6-4, por exemplo, a mistura bimodal de alfa hexagonal e beta cúbica é o que dá a alta resistência à fadiga.\n\n> **Na prova:** 316L é cúbico de face centrada; titânio beta, de corpo centrado; titânio alfa, hexagonal.",
+  "correta": "**Correta.** O aço 316L é cúbico de face centrada, o titânio beta é cúbico de corpo centrado, e o titânio alfa é hexagonal compacto.",
+  "incorretas": {
+   "A": "**Errada: as cúbicas estão trocadas.** O 316L é de face centrada, e o titânio beta, de corpo centrado.",
+   "C": "**Errada: o 316L não é hexagonal.** Ele é austenítico, cúbico de face centrada.",
+   "D": "**Errada: o 316L é cúbico de face centrada.** O cobalto-cromo é que tem fase hexagonal."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 15 (Ciência Básica dos Metais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0469": {
+  "conceito": "### Um mito corrigido\n\nCostuma-se dizer que o cobalto-cromo-molibdênio veio da aeronáutica. O capítulo corrige: as ligas foram criadas por Haynes no início do século XX, e nos anos 1930 o Vitallium ==já era usado em próteses dentárias parciais==. Só em 1941 foram adaptadas a motores aeronáuticos de alta temperatura, e por isso são consideradas superligas. O titânio, esse sim, veio da aeronáutica e foi adotado pelos biomateriais no fim dos anos 1950 e início dos 1960.\n\n### O aço precisou do molibdênio\n\nO aço inoxidável 18-8, com 18% de cromo e 8% de níquel, surgiu em 1926, mas sua resistência à corrosão não bastava para implantes de longo prazo. Isso só mudou com a adição de 2% a 3% de molibdênio, que reduziu a corrosão puntiforme e por fresta.\n\n### A era moderna\n\nWiles usou uma substituição total em aço inoxidável em 1938, e McKee e Farrar introduziram nos anos 1950 a primeira articulação total metal sobre metal, depois em Vitallium.\n\n> **Na prova:** cobalto veio da odontologia; titânio, da aeronáutica; aço precisou de molibdênio.",
+  "correta": "**Correta.** As ligas de cobalto vieram da odontologia, e o molibdênio (2% a 3%) tornou o aço resistente à corrosão para uso prolongado.",
+  "incorretas": {
+   "A": "**Errada: é o mito que o capítulo corrige.** O cobalto veio da odontologia e só em 1941 foi adaptado a motores.",
+   "B": "**Errada: a corrosão não era adequada.** Só com molibdênio o aço serviu para implantação prolongada.",
+   "D": "**Errada: o titânio veio da aeronáutica.** Foi adotado pelos biomateriais no fim dos anos 1950."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 15 (Ciência Básica dos Metais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0470": {
+  "conceito": "### Tudo gira em torno das discordâncias\n\nA discordância é um defeito linear, um semiplano extra de átomos no cristal. Quando a tensão é suficiente, ela se move pela rede, e o metal deforma plasticamente. Por isso ==todo mecanismo de endurecimento funciona impedindo o movimento das discordâncias==.\n\nNa solução sólida, átomos de soluto ancoram as discordâncias. Os intersticiais, pequenos como carbono, oxigênio e nitrogênio, são os mais efetivos: menos de 0,1% de carbono no ferro aumenta a resistência cerca de dez vezes. No trabalho a frio, a deformação multiplica e emaranha as discordâncias; resistência e escoamento sobem, mas a ductilidade cai. É o mecanismo usado no **aço 316L**.\n\n### Grãos e precipitados\n\nContornos de grão também barram as discordâncias, e por isso grãos menores significam mais resistência, base das ligas de cobalto por metalurgia do pó. No endurecimento por precipitação, carbonetos dispersos no cobalto-cromo ancoram as discordâncias. O recozimento faz o caminho inverso, recristalizando o metal e restaurando a ductilidade.\n\n> **Na prova:** endurecer é travar discordâncias; o 316L é endurecido por trabalho a frio.",
+  "correta": "**Correta.** Todos os mecanismos de endurecimento impedem o movimento das discordâncias, e o trabalho a frio é o usado no aço 316L.",
+  "incorretas": {
+   "A": "**Errada: os intersticiais são mais efetivos.** Pouco carbono no ferro aumenta a resistência cerca de dez vezes.",
+   "B": "**Errada: o trabalho a frio reduz a ductilidade.** E é o mecanismo do 316L.",
+   "C": "**Errada: grãos menores é que aumentam a resistência.** Há mais contornos barrando as discordâncias."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 15 (Ciência Básica dos Metais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0471": {
+  "conceito": "### A microestrutura que dá a fadiga\n\nO titânio-6-4 é a principal liga de implante em uso. Sua força vem de uma microestrutura bimodal: pequenos grãos alfa arredondados, de 10 a 20 micrômetros, cercados por beta transformada. Ela surge quando a liga é deformada na região em que alfa e beta coexistem, ==abaixo da beta transus, de cerca de 930 °C==, como exigem as normas ASTM F-136 e F-1481. Se a liga passar para o campo beta, a estrutura vira acicular e perde resistência à fadiga.\n\nCom essa estrutura, o titânio-6-4 tem a maior resistência à fadiga entre as ligas relatadas, de 480 a 590 MPa.\n\n### Duas características clínicas\n\nO módulo de elasticidade do titânio é **cerca de metade** do cobalto-cromo e do 316L, o que diminui a rigidez e ajuda a transferir carga ao osso, com menos blindagem de tensão. O ponto fraco é a sensibilidade ao entalhe: arranhões ou mudanças bruscas de geometria, como na transição do revestimento poroso, reduzem a vida em fadiga.\n\n> **Na prova:** titânio-6-4 bimodal, deformado abaixo de cerca de 930 °C; módulo de metade do cobalto.",
+  "correta": "**Correta.** A estrutura bimodal alfa mais beta exige deformação abaixo da beta transus, de cerca de 930 °C.",
+  "incorretas": {
+   "B": "**Errada: a estrutura acicular perde fadiga.** Aquecer acima do campo beta é justamente o que se evita.",
+   "C": "**Errada: o módulo é cerca de metade.** Por isso a blindagem de tensão é menor.",
+   "D": "**Errada: o titânio é sensível ao entalhe.** Arranhões aceleram a falha por fadiga."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 15 (Ciência Básica dos Metais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0472": {
+  "conceito": "### Oxigênio: pouco ajuda, muito atrapalha\n\nO titânio comercialmente puro é monofásico, hexagonal compacto, e existe em quatro graus que diferem ==sobretudo no teor de oxigênio==. O titânio tem enorme afinidade pelo oxigênio. Em pequena quantidade, o oxigênio age como soluto intersticial e endurece o metal; em excesso, forma na superfície uma camada contínua estabilizada em alfa, a alfa-case, que reduz a resistência à fadiga e a ductilidade superficial.\n\n### Para que serve\n\nO limite de escoamento vai de cerca de 150 MPa no grau 1 a 480 MPa no grau 4. Isso é pouco para as tensões de uma substituição total, e por isso o titânio puro é usado sobretudo em **revestimentos porosos** e aplicações de baixa tensão. Para hastes, usa-se o titânio-6-4, com escoamento acima de 790 MPa.\n\n> **Na prova:** titânio puro difere no oxigênio, serve para revestimento poroso, e oxigênio demais gera alfa-case.",
+  "correta": "**Correta.** Os graus diferem no teor de oxigênio, o titânio puro é usado em revestimento poroso, e o excesso de oxigênio forma a alfa-case.",
+  "incorretas": {
+   "A": "**Errada: diferem no oxigênio, e o grau 4 é o mais resistente.** O escoamento chega a cerca de 480 MPa.",
+   "C": "**Errada: não suporta essas cargas.** O escoamento máximo é de cerca de 480 MPa.",
+   "D": "**Errada: é monofásico.** A estrutura bifásica é a do titânio-6-4."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 15 (Ciência Básica dos Metais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0473": {
+  "conceito": "### Feitas para articular\n\nAs ligas de cobalto são duras e resistentes, e ==encruam muito rapidamente==: uma pequena deformação plástica gera grande aumento de resistência. Somada aos carbonetos muito duros espalhados pela matriz, essa propriedade lhes dá alta resistência ao desgaste e as torna ideais para superfícies articulares. Também resistem bem à corrosão em soluções com cloreto. O custo é a dificuldade de usinar e de deformar a liga.\n\n### Fundida ou conformada\n\nA liga fundida tem estrutura dendrítica, com química variável ao longo da dendrita, carbonetos entre as dendritas e grãos grandes, de 2 a 5 mm, que reduzem a resistência. A conformada tem grãos pequenos e equiaxiais, de 10 micrômetros ou menos, e é mais resistente. A única diferença entre F-1537 e F-75 é o **teor de nitrogênio**, maior na primeira.\n\n> **Na prova:** cobalto encrua rápido e tem carbonetos: resiste ao desgaste, mas é difícil de usinar.",
+  "correta": "**Correta.** O encruamento rápido e os carbonetos dão ao cobalto-cromo alta resistência ao desgaste, ao custo da usinagem difícil.",
+  "incorretas": {
+   "A": "**Errada: a fundida tem grãos grandes.** De 2 a 5 mm, e é menos resistente que a conformada.",
+   "B": "**Errada: a diferença é o nitrogênio.** A F-1537 tem mais nitrogênio que a F-75.",
+   "D": "**Errada: é o contrário.** Acima de cerca de 400 °C é cúbica de face centrada; abaixo, hexagonal."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 15 (Ciência Básica dos Metais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0474": {
+  "conceito": "### Uma película finíssima segura tudo\n\nA força que empurra as ligas ortopédicas para a corrosão é altíssima; elas só resistem por causa do filme passivo, uma camada de óxido de ==2 a 10 nanômetros== que funciona como barreira à liberação de íons. No aço e no cobalto, esse óxido é basicamente de cromo; no titânio, dióxido de titânio. O filme não é estático: muda com a imersão, a química da solução e o potencial elétrico.\n\nA passivação em ácido nítrico (ASTM F-86) é útil no 316L, mas há pouca evidência de benefício no titânio e no cobalto-cromo.\n\n### Quando o mecânico acelera o químico\n\nNa corrosão mecanicamente assistida, o fretting raspa o óxido, a reação eletroquímica tenta refazê-lo, e a geometria estreita da fresta muda o ambiente local. Ela é ubíqua: ocorre nos cones cabeça-colo e colo-haste, em corpos modulares e até em joelhos. Todas as ligas são suscetíveis, mas o cobalto-cromo parece gerar mais reação biológica, com osteólise e pseudotumor. Dentro da fresta, o pH pode cair **abaixo de 1**, a ponto de atacar até o titânio.\n\n> **Na prova:** filme passivo tem nanômetros; na fresta do cone, o pH cai abaixo de 1.",
+  "correta": "**Correta.** O filme passivo mede 2 a 10 nanômetros, e dentro da fresta do cone o pH pode cair abaixo de 1, atacando até o titânio.",
+  "incorretas": {
+   "A": "**Errada: são nanômetros, e o filme é dinâmico.** Ele muda com imersão, solução e potencial.",
+   "B": "**Errada: é útil no 316L.** Há pouca evidência de benefício no titânio ou no cobalto-cromo.",
+   "C": "**Errada: todas as ligas são suscetíveis.** O cobalto-cromo só gera mais reação biológica."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 15 (Ciência Básica dos Metais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "quadril-0475": {
+  "conceito": "### O módulo mede outra coisa\n\nO módulo de elasticidade é a inclinação da parte linear da curva tensão-deformação e reflete a rigidez do material: o quanto é difícil afastar os átomos de sua posição de equilíbrio. Por isso ele é ==relativamente insensível a defeitos como as discordâncias==, que governam a deformação plástica, e não a elástica. O limite de escoamento é definido pela tensão que produz 0,2% de deformação permanente.\n\n### Fadiga entre as ligas\n\nA 10 milhões de ciclos, o titânio-6-4 tem a maior resistência à fadiga, de 480 a 590 MPa, e o 316L, a menor, de 180 a 300 MPa. O cobalto fundido F-75 fica em cerca de 310 MPa.\n\n### Rigidez é geometria mais módulo\n\nA rigidez de uma haste depende do material e da forma. Uma fenda distal reduz o segundo momento de área, diminui a rigidez em flexão e, com ela, a blindagem de tensão.\n\n> **Na prova:** o módulo de elasticidade não depende das discordâncias.",
+  "correta": "**Correta (é a exceção).** O módulo de elasticidade é relativamente insensível a defeitos como as discordâncias.",
+  "incorretas": {
+   "A": "**Correta.** Com a estrutura bimodal, chega a 480 a 590 MPa a 10 milhões de ciclos.",
+   "B": "**Correta.** O 316L tem a menor resistência à fadiga entre as ligas listadas.",
+   "D": "**Correta.** É a definição convencional do limite de escoamento.",
+   "E": "**Correta.** A fenda reduz a rigidez flexural e a blindagem de tensão."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 15 (Ciência Básica dos Metais)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  }
 }
