@@ -2202,104 +2202,104 @@
   "conferido": false
  },
  "pediatria-0153": {
-  "conceito": "No defeito femoral focal proximal, a classificação clássica em quatro tipos (A a D) (descrita por **Aitken** e frequentemente referida na literatura junto com a classificação funcional de Gillespie) caracteriza o **tipo A** pela presença dos seguintes achados:\n- **Cabeça femoral presente** e localizada dentro do acetábulo.\n- **Acetábulo normal ou apenas levemente displásico**.\n- Uma zona radiotransparente subtrocantérica que, tipicamente, acaba por se ossificar ao longo do crescimento, unindo a cabeça/colo ao restante da diáfise femoral.\n\nÉ o tipo mais favorável dentro do espectro da deficiência femoral focal, já que a continuidade entre cabeça e diáfise tende a se estabelecer espontaneamente com a maturidade esquelética.",
-  "correta": "B. No tipo A do defeito femoral focal proximal, a cabeça femoral está presente e o acetábulo é normal.",
+  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Gillespie (deficiência femoral)\n| Grupo | Achado | Tratamento |\n|---|---|---|\n| ==A== | fêmur curto, ==quadril e joelho funcionais==, pé no nível da tíbia contralateral | ==alongamento== (± epifisiodese) |\n| B | DFFP verdadeira, pé no nível do joelho oposto | Van Nes, Syme, artrodese do joelho + prótese |\n| C | deficiência grave, quase ausência do fêmur | prótese |\n\n### Gillespie A\n- Cabeça femoral ==presente==, acetábulo ==normal==, joelho funcional: reconstruível por alongamento.\n\n> **Na prova:** Gillespie A = ==cabeça presente e acetábulo normal==",
+  "correta": "**Presente e normal.**\n- Quadril reconstruível.\n- Candidato a alongamento.",
   "incorretas": {
-   "A": "A cabeça femoral ausente com acetábulo normal não corresponde ao padrão descrito no tipo A.",
-   "C": "A cabeça femoral ausente com acetábulo displásico é característica dos tipos mais graves (C ou D), não do tipo A.",
-   "D": "O acetábulo displásico associado à cabeça femoral presente caracteriza o tipo B, não o tipo A."
+   "A": "**Cabeça ausente.**\n- Grupos graves.",
+   "C": "**Grave.**\n- Aitken C/D.",
+   "D": "**Acetábulo displásico.**\n- Não é o A."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0154": {
-  "conceito": "Dror Paley propôs uma classificação funcional da hemimelia fibular voltada para a deformidade do tornozelo e do retropé, buscando relacionar cada padrão a procedimentos reconstrutivos. Tipo 1: tornozelo estável. Tipo 2: valgo dinâmico, em que a articulação é móvel e desvia sob carga. Tipo 3: equinovalgo fixo, subdividido em 3A quando a principal coalizão/deformidade está no tornozelo, 3B quando predomina na subtalar e 3C quando ambos os níveis participam. Tipo 4: equinovaro fixo. Diferentemente de classificações puramente anatômicas baseadas na quantidade de fíbula ausente, Paley procura orientar reconstrução do tornozelo e alongamento. Deve-se avaliar simultaneamente discrepância prevista, número de raios, estabilidade do joelho e função do pé.",
-  "correta": "A alternativa C está correta. Equinovalgo fixo corresponde ao tipo 3 de Paley. O passo seguinte, na avaliação completa, seria determinar se o bloqueio está predominantemente no tornozelo, na subtalar ou em ambos, classificando em 3A, 3B ou 3C. Essa distinção influencia a estratégia reconstrutiva.",
+  "conceito": "### Hemimelia fibular\n- Deficiência longitudinal ==pós-axial==; a mais comum dos ossos longos.\n- Espectro: fíbula ausente ou hipoplásica, tíbia curta e arqueada (anteromedial, com covinha), fêmur curto, pé equinovalgo, ==raios laterais ausentes==, coalizão tarsal (bola e soquete no tornozelo).\n\n### Joelho\n| Achado | Consequência |\n|---|---|\n| ==hipoplasia do côndilo femoral lateral== | joelho valgo |\n| ==cruzados hipoplásicos ou ausentes== | ==instabilidade anteroposterior== |\n| espinhas tibiais pequenas | |\n\n### Classificações e tratamento\n- Achterman-Kalamchi, Paley (baseada no tornozelo e reconstrutibilidade).\n- Discrepância prevista e pé funcional decidem entre ==alongamento== (Paley SUPERankle) e ==Syme== + prótese.\n\n### Paley (hemimelia fibular)\n| Tipo | Tornozelo |\n|---|---|\n| 1 | estável |\n| 2 | valgo ==dinâmico== |\n| ==3== | ==equinovalgo fixo== (3a tornozelo, 3b subtalar, 3c ambos) |\n| 4 | pé em equinovaro (tipo pé torto) |\n\n- Tipo 3: SUPERankle (osteotomia, ressecção da anlage fibular) ou Syme.\n\n> **Na prova:** equinovalgo fixo na hemimelia fibular = ==Paley III==",
+  "correta": "**Tipo III.**\n- Equinovalgo fixo.\n- Subdivide pelo local da deformidade.",
   "incorretas": {
-   "A": "Tipo 1 apresenta tornozelo relativamente estável, sem deformidade equinovalga fixa.",
-   "B": "Tipo 2 corresponde a valgo dinâmico, isto é, deformidade que se manifesta ou piora com carga, mas mantém mobilidade; não é equinovalgo rígido.",
-   "D": "Tipo 4 é definido por equinovaro fixo, direção oposta ao valgo apresentado na questão."
+   "A": "**Estável.**\n- Sem deformidade fixa.",
+   "B": "**Dinâmico.**\n- Não fixo.",
+   "D": "**Equinovaro.**\n- Tipo pé torto."
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5145840/",
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13033323/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0155": {
-  "conceito": "As mucopolissacaridoses se dividem clinicamente em dois padrões articulares opostos. Hurler, Hunter e Scheie acumulam dermatan e heparan sulfato e produzem rigidez: contraturas progressivas, mão em garra, síndrome do túnel do carpo na criança. Morquio (tipo IV) acumula queratan sulfato, tem inteligência preservada e faz o oposto, frouxidão ligamentar generalizada, com displasia espondiloepifisária, genu valgo e, o que mais importa ao ortopedista, hipoplasia do odontoide com instabilidade atlantoaxial, motivo pelo qual toda criança com Morquio precisa ser avaliada antes de qualquer anestesia.",
-  "correta": "Morquio: é a mucopolissacaridose da frouxidão, e a instabilidade atlantoaxial é a consequência que muda a conduta.",
+  "conceito": "### Mucopolissacaridoses (MPS)\n| Tipo | Nome | Herança | Achados |\n|---|---|---|---|\n| I | ==Hurler== (grave) / Scheie | AR | ==retardo==, face grosseira, opacidade de córnea, giba toracolombar |\n| II | Hunter | ==ligada ao X== | sem opacidade de córnea |\n| III | Sanfilippo | AR | predomínio neurológico |\n| IV | ==Morquio== | AR | ==inteligência normal==, nanismo de tronco curto, ==instabilidade C1-C2 (odontoide hipoplásico)==, genu valgo |\n| VI | Maroteaux-Lamy | AR | inteligência normal |\n\n### Ortopedia\n- Morquio: ==avaliar a coluna cervical== antes de anestesia; artrodese occipitocervical se instável.\n- Hurler: cifose, displasia do quadril, túnel do carpo, dedo em gatilho múltiplo.\n- Tratamento: reposição enzimática, transplante de medula (Hurler).\n\n### Morquio × Hurler\n| Aspecto | Morquio (IV) | Hurler (I) |\n|---|---|---|\n| cognição | ==normal== | retardo |\n| articulações | ==hiperfrouxidão== (odontoide, joelho valgo) | ==rigidez== (mão em garra) |\n| córnea | opaca leve | opaca |\n| urina | queratan sulfato | dermatan e heparan |\n\n> **Na prova:** Morquio = ==cognição normal e hiperfrouxidão==",
+  "correta": "**Morquio.**\n- Hiperfrouxidão, odontoide hipoplásico.\n- Cognição normal.",
   "incorretas": {
-   "A": "Hurler cursa com rigidez articular e contraturas, além de comprometimento neurológico grave.",
-   "B": "Scheie é a forma atenuada do mesmo defeito enzimático de Hurler, e também segue o padrão rígido.",
-   "C": "Hunter é ligado ao X e também apresenta rigidez articular, não frouxidão."
+   "A": "**Rigidez.**\n- Mão em garra.",
+   "B": "**Rigidez.**\n- Forma atenuada da MPS I.",
+   "C": "**Rigidez.**\n- Ligada ao X."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0156": {
-  "conceito": "O menisco discoide é uma variante anatômica em que o menisco (geralmente o **lateral**, muito mais frequentemente que o medial) tem formato discoide em vez do formato semilunar normal, sendo classicamente dividido em três tipos pela classificação de **Watanabe**: completo, incompleto e o tipo **Wrisberg**, este último definido pela **ausência das inserções meniscotibiais posteriores normais**, ficando o menisco estabilizado apenas pelo ligamento meniscofemoral de Wrisberg, o que o torna intrinsecamente **instável**.\n\nPor essa instabilidade inerente do tipo Wrisberg (sem fixação posterior normal ao platô tibial), o tratamento clássico historicamente descrito para os casos sintomáticos é a **meniscectomia total**, diferente dos tipos completo e incompleto, nos quais a saucerização parcial (preservando a periferia estável) costuma ser suficiente. Vale registrar que a tendência atual da literatura, quando tecnicamente viável, é tentar preservar tecido meniscal com saucerização associada à estabilização periférica mesmo no tipo Wrisberg, mas a meniscectomia total continua sendo a conduta classicamente associada a esse tipo instável nas classificações de prova.",
-  "correta": "B. A meniscectomia total é classicamente indicada no tipo Wrisberg do menisco discoide, por sua instabilidade intrínseca.",
+  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n> **Na prova:** tipo Wrisberg = sem fixação tibial posterior; clássico: ==meniscectomia total== (veja o alerta).",
+  "correta": "**Meniscectomia total no Wrisberg.**\n- Associação clássica de prova.\n- Hoje prefere-se saucerizar e estabilizar (veja o alerta).",
   "incorretas": {
-   "A": "As lesões do menisco discoide costumam ser atraumáticas justamente pela forma anômala predispor à ruptura espontânea, mas essa não é a alternativa correta na questão, já que a lesão atraumática não é o achado mais característico cobrado aqui.",
-   "C": "É o menisco lateral, e não o medial, que é acometido com grande predomínio pelo formato discoide, a incidência global também é bem maior que 0 a 0,3%.",
-   "D": "É justamente a ausência das inserções meniscotibiais posteriores normais (não do próprio ligamento de Wrisberg) que caracteriza o tipo Wrisberg, o ligamento de Wrisberg está presente e é o único estabilizador posterior remanescente."
+   "A": "**Frequentes, sim.**\n- Mas o gabarito é o B.",
+   "C": "**Menisco errado.**\n- É o lateral.",
+   "D": "**Invertida.**\n- O Wrisberg tem o ligamento de Wrisberg; falta o coronário."
   },
   "alerta": "A literatura mais recente tende a preferir a saucerização parcial com estabilização periférica, mesmo no tipo Wrisberg, sempre que tecnicamente possível, reservando a meniscectomia total para os casos em que a preservação não é viável, mas a associação clássica \"tipo Wrisberg = meniscectomia total\" continua sendo a mais cobrada nas classificações de prova.",
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0157": {
-  "conceito": "Durante o ciclo da marcha, o pé e a tíbia realizam uma sequência coordenada de rotações no plano transverso. De forma resumida:\n- A rotação externa do pé/tíbia **aumenta progressivamente** ao longo da fase de apoio, atingindo seu valor máximo próximo ao apoio terminal.\n- No **pré-balanço** (preparação para o desprendimento do pé), essa rotação externa começa a **reverter**, com o membro iniciando o movimento de rotação interna que continuará durante o balanço, ou seja, há uma **diminuição da rotação externa** nessa fase.\n- O retropé (calcâneo), por sua vez, everte durante a resposta à carga e o início do apoio médio (não durante o balanço médio) e inverte progressivamente em direção ao desprendimento do pé (não everte nesse momento).\n\nEsses detalhes de rotação e inversão/eversão do retropé são frequentemente cobrados de forma invertida em prova, exatamente como nas alternativas incorretas desta questão.",
-  "correta": "C. Há diminuição progressiva da rotação externa do pé durante a fase de pré-balanço, quando se inicia a rotação interna que continuará no balanço.",
+  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n### Parâmetros lineares\n| Parâmetro | Definição |\n|---|---|\n| ==passo== | distância entre o ==calcanhar de um pé e o do outro== (no duplo apoio) |\n| passada (ciclo) | distância entre dois contatos do ==mesmo pé== = 2 passos |\n| cadência | passos por minuto |\n| velocidade | passada × cadência |\n| base de apoio | distância lateral entre os pés |\n\n### Pé na marcha\n| Fase | Calcâneo | Rotação |\n|---|---|---|\n| contato inicial | leve inversão | |\n| resposta à carga | ==eversão== (desbloqueia a mediotársica, absorve) | rotação interna da tíbia |\n| apoio terminal/desprendimento | ==inversão== (trava, alavanca rígida) | ==rotação externa== |\n| pré-balanço | | ==rotação externa diminui== |\n\n- Ângulo de progressão do pé: cerca de ==10° de rotação externa==.\n\n> **Na prova:** durante a marcha há ==diminuição da rotação externa no pré-balanço==",
+  "correta": "**Menor rotação externa no pré-balanço.**\n- Resposta oficial.\n- O pé se prepara para o balanço.",
   "incorretas": {
-   "A": "A rotação externa média do pé durante a marcha normal é de cerca de 7 graus, não 25 graus.",
-   "B": "É durante a resposta à carga e o início do apoio médio que o calcâneo everte, não durante o balanço médio.",
-   "D": "É durante o desprendimento do pé que o calcâneo já está em processo de inversão, não de eversão."
+   "A": "**Exagerado.**\n- Cerca de 10°.",
+   "B": "**Não é o evento.**\n- Balanço sem carga.",
+   "D": "**Invertida.**\n- Inverte no desprendimento."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0158": {
-  "conceito": "O metatarso aduto é uma deformidade EXCLUSIVA DO ANTEPÉ: os metatarsos desviam medialmente a partir das articulações tarsometatársicas, desenhando a borda lateral do pé convexa e a medial côncava, com o sulco entre hálux e segundo dedo alargado. O RETROPÉ É NORMAL, sem equino, sem varo e com MOBILIDADE PRESERVADA na subtalar. É precisamente isso que o separa do pé torto congênito, em que o retropé está em equinovaro e rígido, e o que permite classificá-lo pela flexibilidade (Bleck): corrige passivamente além da linha média, até a linha média, ou não corrige. A grande maioria resolve espontaneamente, e mesmo os casos rígidos respondem bem ao gesso seriado.",
-  "correta": "Mobilidade preservada no retropé.",
+  "conceito": "### Bissetriz do calcanhar (Bleck)\n- Linha que divide a ==planta do retropé== ao meio, projetada para o antepé.\n\n| Projeção | Interpretação |\n|---|---|\n| ==entre 2º e 3º dedos== | normal |\n| sobre o 3º dedo | adução leve |\n| ==lateral ao 3º== (3º-4º) | adução moderada |\n| entre 4º e 5º | adução grave |\n\n- No pé torto e no metatarso aduto a bissetriz fica ==lateral ao 3º raio== (antepé aduzido).\n\n### Metatarso aduto\n| Tipo | Flexibilidade | Conduta |\n|---|---|---|\n| flexível | corrige além do neutro | observação |\n| parcialmente flexível | até o neutro | alongamento, gesso |\n| rígido | não corrige | gessos seriados |\n\n### Metatarso aduto × pé torto\n| Aspecto | Metatarso aduto | Pé torto |\n|---|---|---|\n| antepé | ==aduzido== (e supinado) | aduzido, cavo |\n| retropé | ==normal e móvel== | varo e equino fixos |\n| dorsiflexão | normal | limitada |\n| borda lateral | convexa (\"feijão\") | |\n\n> **Na prova:** metatarso aduto = ==retropé com mobilidade preservada==",
+  "correta": "**Retropé com mobilidade preservada.**\n- Só o antepé aduz.\n- Diferencia do pé torto.",
   "incorretas": {
-   "A": "Varo do retropé é achado do pé torto congênito; no metatarso aduto o retropé é neutro.",
-   "C": "O arco plantar medial não está diminuído, se algo, ele parece acentuado pela concavidade da borda medial.",
-   "D": "Pronação do antepé é achado do pé cavovaro. No metatarso aduto o desvio é de ADUÇÃO, no plano transverso."
+   "A": "**Pé torto.**\n- Retropé varo.",
+   "C": "**Não é típico.**\n- Arco preservado ou alto.",
+   "D": "**Supinação.**\n- Não pronação."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0160": {
-  "conceito": "Na investigação de possível abuso físico, alguns padrões de fratura apresentam alta especificidade, embora nenhum seja absolutamente patognomônico. Lesões metafisárias clássicas, fraturas de costelas posteriores, escápula, esterno e processos espinhosos são particularmente preocupantes quando não existe mecanismo acidental de alta energia compatível. Fraturas de clavícula, diáfises dos ossos longos e fraturas lineares simples são menos específicas e exigem interpretação no contexto de idade e mobilidade da criança. Uma fratura em criança não deambuladora, história incompatível ou múltiplas lesões de idades diferentes aumenta a suspeita. O manejo inclui proteção da criança, investigação multidisciplinar e levantamento radiográfico conforme idade e protocolo.",
-  "correta": "A alternativa A está correta. Fraturas da escápula, esterno e lesões metafisárias clássicas pertencem ao grupo de alta especificidade para abuso infantil. São lesões incomuns em mecanismos cotidianos de baixa energia e exigem explicação traumática plausível.",
+  "conceito": "### Especificidade das fraturas no abuso (Kleinman)\n| Alta | Moderada | Baixa (comuns) |\n|---|---|---|\n| lesão metafisária clássica | múltiplas, bilaterais | clavícula |\n| costelas posteriores | em estágios diferentes de consolidação | diáfises de ossos longos |\n| ==escápula== | epifisárias (descolamentos) | crânio linear |\n| processos espinhosos | corpo vertebral | |\n| esterno | dedos | |\n| | crânio complexa | |\n\n### Conduta\n- Inventário esquelético em < 2 anos (repetir em 2 semanas).\n- Fundo de olho, TC/RM de crânio, exames de coagulação e metabolismo ósseo (OI, raquitismo).\n- ==Notificação obrigatória==.\n\n> **Na prova:** fratura de alta especificidade (Kleinman) = ==escápula== (e metafisária, costelas posteriores, processos espinhosos, esterno).",
+  "correta": "**Escápula, esterno ou metafisárias.**\n- Grupo de alta especificidade de Kleinman.\n- Também costelas posteriores e processos espinhosos.",
   "incorretas": {
-   "B": "Escápula e esterno são altamente específicos, porém fraturas diafisárias, consideradas genericamente, possuem especificidade menor.",
-   "C": "Lesões metafisárias são altamente suspeitas, mas fraturas de clavícula são comuns em trauma acidental e nascimento, reduzindo a especificidade do conjunto.",
-   "D": "Clavícula e diáfise não pertencem ao grupo clássico de maior especificidade, embora possam ocorrer em maus-tratos."
+   "B": "**Diafisárias.**\n- Baixa especificidade.",
+   "C": "**Clavícula e corpo vertebral.**\n- Baixa e moderada.",
+   "D": "**Todas de baixa ou moderada.**\n- Nenhuma alta."
   },
   "referencias": [
    "https://publications.aap.org/pediatrics/article/155/2/e2024070074/200638/Evaluating-Young-Children-With-Fractures-for-Child"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0161": {
-  "conceito": "Watanabe classificou o menisco discoide lateral em três tipos clássicos. Tipo I completo: menisco espesso cobre praticamente todo o platô lateral e possui inserções periféricas usuais. Tipo II incompleto: cobertura aumentada, porém menor que no tipo completo. Tipo III, ou variante de Wrisberg: morfologia pode ser próxima da habitual, mas existe deficiência da fixação posterior à tíbia, especialmente do ligamento meniscotibial/coronário posterior, fazendo com que o menisco dependa do ligamento meniscofemoral de Wrisberg e se torne hipermóvel. Essa hipermobilidade produz snapping knee. Atualmente, classificação baseada também em estabilidade periférica tem maior relevância cirúrgica. Menisco assintomático não deve ser ressecado profilaticamente.",
-  "correta": "A alternativa D está correta. A variante de Wrisberg caracteriza-se pela ausência ou deficiência da fixação posterior meniscotibial, frequentemente descrita como ausência do ligamento coronário posterior, deixando o menisco hipermóvel. O ligamento meniscofemoral de Wrisberg permanece como principal restritor posterior.",
+  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n> **Na prova:** tipo Wrisberg ==não possui o ligamento coronário== (fixação tibial posterior) (veja o alerta).",
+  "correta": "**Wrisberg sem ligamento coronário.**\n- Sem fixação tibial posterior: hipermóvel.\n- Estalido no joelho.",
   "incorretas": {
-   "A": "Menisco discoide ocorre predominantemente no menisco lateral; envolvimento medial é muito raro.",
-   "B": "Bilateralidade é consideravelmente mais frequente que 5% em várias séries, especialmente em populações asiáticas.",
-   "C": "O tipo completo de Watanabe cobre grande parte do platô e possui inserções periféricas; tipo III é o Wrisberg, definido sobretudo por instabilidade posterior."
+   "A": "**Lateral.**\n- Medial é raro.",
+   "B": "**Mais que 5%.**\n- Até 20% bilateral.",
+   "C": "**Descreve o tipo I.**\n- O III é o Wrisberg."
   },
+  "alerta": "A nomenclatura anatômica varia entre autores: alguns descrevem ausência do ligamento meniscotibial posterior, outros utilizam o termo ligamento coronário posterior. O conceito essencial é deficiência da fixação tibial posterior com hipermobilidade.",
   "referencias": [
    "https://pubmed.ncbi.nlm.nih.gov/29059110/"
   ],
-  "alerta": "A nomenclatura anatômica varia entre autores: alguns descrevem ausência do ligamento meniscotibial posterior, outros utilizam o termo ligamento coronário posterior. O conceito essencial é deficiência da fixação tibial posterior com hipermobilidade.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0162": {
   "conceito": "Metatarso aduto é a deformidade mais comum do pé no lactente e consiste em desvio medial do antepé em relação ao retropé, que permanece neutro ou discretamente valgo. A borda lateral assume formato em C e a linha bissetriz do calcâneo passa mais lateralmente no antepé. Classifica-se pela gravidade da adução e, sobretudo, pela flexibilidade: flexível, parcialmente flexível ou rígido. A grande maioria dos casos flexíveis melhora espontaneamente. Alongamentos podem ser orientados e gessos seriados são reservados a deformidades moderadas ou rígidas identificadas precocemente. Cirurgia é rara. Deve ser diferenciado do skewfoot, no qual existe também valgo rígido do retropé e subluxação talonavicular.",
