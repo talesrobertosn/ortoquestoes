@@ -1293,123 +1293,123 @@
   "conferido": false
  },
  "pediatria-0089": {
-  "conceito": "O alongamento do tríceps sural na paralisia cerebral pode ser descrito por zonas anatômicas. A zona 1 envolve gastrocnêmio distal; a zona 2 vai do ventre distal do gastrocnêmio até o término das fibras do sóleo; a zona 3 corresponde ao tendão de Aquiles. A técnica de **Vulpius** é recessão transversal do gastrocnêmio e sóleo na zona 2, usada para equino em que ambos participam da contratura. A Strayer é recessão distal isolada do gastrocnêmio, zona 1. Hoke é alongamento do tendão de Aquiles, zona 3. Baker e Vulpius são ambas técnicas de alongamento aponeurótico gastrocnêmio-sóleo na zona 2, com variações de execução.",
-  "correta": "A alternativa C está correta. A técnica demonstrada na zona 2 é a de Vulpius. Ela alonga o complexo gastrocnêmio-sóleo no nível aponeurótico, permitindo dorsiflexão sem seccionar diretamente o tendão de Aquiles. A escolha entre procedimentos depende de análise da marcha, teste de Silfverskiöld, gravidade do equino, padrão unilateral ou diplegia e risco de hipercorreção para calcâneo/crouch gait.",
+  "conceito": "### Zonas do tríceps sural (alongamento na PC)\n| Zona | Local | Técnicas | Alonga |\n|---|---|---|---|\n| 1 | ventres do gastrocnêmio | ==Strayer== (recessão da aponeurose proximal), Baumann (fáscia intramuscular) | só gastrocnêmio |\n| ==2== | ==aponeurose conjunta gastrocnêmio-sóleo, distal aos ventres== | ==Vulpius== (V invertido), Baker (língua em U) | gastro + sóleo moderado |\n| 3 | tendão calcâneo | ==Hoke== (três hemissecções percutâneas), White, Z | tudo; maior risco de ==hiperalongamento== (marcha agachada) |\n\n### Silfverskiöld\n- Equino que ==melhora com joelho fletido==: contratura do ==gastrocnêmio== isolado → zonas 1-2.\n- Equino fixo com joelho fletido: sóleo também → zona 2-3.\n\n> **Na prova:** alongamento na zona 2 = ==Vulpius== (e Baker).",
+  "correta": "**Vulpius.**\n- Recessão em V invertido na aponeurose da zona 2.\n- Alonga gastrocnêmio e parte do sóleo.",
   "incorretas": {
-   "A": "Hoke é alongamento do tendão de Aquiles, portanto procedimento da zona 3. Indicá-lo como zona 2 confunde a localização anatômica e aumenta a chance de erro ao relacionar técnica e estrutura.",
-   "B": "Baker também é descrita como técnica de zona 2 em muitas classificações. Porém, a manobra específica mostrada e o gabarito identificam Vulpius; as técnicas diferem no padrão de incisão e alongamento aponeurótico.",
-   "D": "Strayer é recessão distal do gastrocnêmio, tipicamente zona 1. Ela é apropriada quando o sóleo não está significativamente retraído, ao contrário do princípio do Vulpius na zona 2."
+   "A": "**Zona 3.**\n- Tendão calcâneo percutâneo.",
+   "B": "**Também zona 2.**\n- Língua em U; o gabarito indica Vulpius na figura.",
+   "D": "**Zona 1.**\n- Só gastrocnêmio."
   },
   "referencias": [
    "Surgical correction of equinus in cerebral palsy: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC2908346/",
    "Endoscopic transverse Vulpius gastrocsoleus recession. https://pmc.ncbi.nlm.nih.gov/articles/PMC7105772/",
    "Indications for gastrocsoleus lengthening in CP. https://pmc.ncbi.nlm.nih.gov/articles/PMC7666804/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0090": {
-  "conceito": "A síndrome de Klippel-Feil é definida por fusão congênita de duas ou mais vértebras cervicais. A tríade clássica é pescoço curto, implantação baixa da linha posterior do cabelo e limitação do movimento cervical. Entretanto, todos os três achados não estão presentes em todos os pacientes, e muitos casos são diagnosticados incidentalmente. O ortopedista deve procurar deformidade de Sprengel, escoliose e instabilidade de segmentos cervicais adjacentes. Também existem associações geniturinárias, cardíacas e auditivas. A relevância prática está no risco neurológico: determinadas configurações de fusão produzem hipermobilidade compensatória e instabilidade em níveis adjacentes, podendo aumentar vulnerabilidade à lesão neurológica.",
-  "correta": "A alternativa D está correta. Pescoço curto, linha posterior do cabelo baixa e limitação do arco cervical formam a tríade clássica da síndrome de Klippel-Feil.",
+  "conceito": "### Síndrome de Klippel-Feil\n- ==Falha de segmentação de vértebras cervicais== (fusões congênitas).\n- Tríade clássica (presente em < 50%): ==implantação baixa do cabelo, pescoço curto, limitação do movimento cervical==.\n\n### Associações (investigar)\n| Sistema | Achado |\n|---|---|\n| escápula | ==Sprengel== (cerca de 30%) |\n| rim | agenesia, malformações (ultrassom) |\n| ouvido | surdez |\n| coração | defeitos septais |\n| coluna | escoliose congênita |\n| neuro | movimentos em espelho (sincinesia) |\n\n### Risco\n- Segmentos móveis adjacentes às fusões: ==instabilidade e lesão medular== com trauma menor; evitar esportes de contato em padrões de risco.\n\n> **Na prova:** cabelo baixo, pescoço curto e pouco movimento = ==Klippel-Feil==.",
+  "correta": "**Klippel-Feil.**\n- Tríade clássica (incompleta na maioria).\n- Investigar rim, coração, audição e Sprengel.",
   "incorretas": {
-   "A": "Neurofibromatose pode produzir deformidades cervicais e escoliose, mas não é definida pela tríade clássica descrita.",
-   "B": "Síndrome de Larsen associa-se a múltiplas luxações congênitas e alterações craniofaciais, não à tríade de fusão cervical de Klippel-Feil.",
-   "C": "Displasia cervical familiar não é o diagnóstico clássico relacionado a essa combinação específica de pescoço curto, implantação baixa do cabelo e limitação cervical."
+   "A": "**Outra doença.**\n- Café-com-leite, neurofibromas.",
+   "B": "**Luxações múltiplas.**\n- Face achatada.",
+   "C": "**Não é o epônimo.**\n- Distrator."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Klippel Feil Syndrome. https://posna.org/physician-education/study-guide/klippel-feil-syndrome"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0091": {
-  "conceito": "A luxação congênita da cabeça do rádio é a anomalia congênita mais frequente da região do cotovelo, embora seja rara na população geral. Pode ser bilateral e associar-se a outras displasias ou síndromes. O diagnóstico costuma ocorrer mais tarde porque muitas crianças são inicialmente assintomáticas; com o crescimento podem surgir perda de extensão, limitação da pronossupinação, dor ou proeminência lateral/posterior. A direção mais frequente é posterior, frequentemente descrita também como posterolateral. Radiograficamente há alterações adaptativas que ajudam a diferenciar a luxação congênita da traumática, como cabeça radial dismórfica e capitelo hipoplásico.",
-  "correta": "A alternativa B está correta. A direção mais frequente da luxação congênita da cabeça do rádio é posterior; séries clássicas descrevem aproximadamente dois terços dos casos nessa direção.",
+  "conceito": "### Luxação congênita da cabeça do rádio\n- Anomalia congênita mais comum do cotovelo.\n- ==Bilateral== na maioria e ==associada== a outras manifestações (sinostose, síndromes como nail-patella, Ehlers-Danlos, Larsen).\n- Direção mais comum: ==posterior==.\n\n### Congênita × Monteggia crônico\n| Achado | Congênita | Traumática |\n|---|---|---|\n| lado | bilateral | unilateral |\n| cabeça | ==convexa (cúpula)==, pequena | côncava, normal |\n| capítulo | hipoplásico | normal |\n| ulna | reta | deformidade plástica |\n| direção | posterior | anterior |\n\n### Tratamento\n- Observação; ressecção da cabeça após a maturidade se dor.\n\n### Limitação de movimento\n| Direção | Bloqueio |\n|---|---|\n| ==posterior== | ==extensão== (cabeça bate atrás do capítulo) |\n| anterior | flexão |\n\n- Pronossupinação costuma ser pouco limitada; dor e estalido na adolescência.\n\n> **Na prova:** luxação congênita = ==posterior com limitação da extensão==",
+  "correta": "**Posterior.**\n- Direção mais comum da forma congênita.\n- Anterior sugere Monteggia.",
   "incorretas": {
-   "A": "Luxação puramente lateral não é a direção predominante na deformidade congênita.",
-   "C": "Direções anterolaterais podem ocorrer, mas são menos comuns que a luxação posterior/posterolateral.",
-   "D": "Anteromedial não corresponde ao padrão epidemiológico habitual da luxação congênita da cabeça radial."
+   "A": "**Não é a mais comum.**\n- Lateral.",
+   "C": "**Monteggia.**\n- Anterolateral.",
+   "D": "**Incomum.**\n- Anteromedial."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Congenital Radial Head Dislocation. https://posna.org/physician-education/study-guide/congenital-radial-head-dislocation"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0092": {
-  "conceito": "A distrofia facioescapuloumeral atinge, na ordem do nome, a face, os estabilizadores da escápula e a musculatura do úmero. O padrão é assimétrico e progressivo, e a queixa que leva ao ortopedista é a escápula alada com dificuldade de elevar o braço.",
-  "correta": "O deltoide é o músculo caracteristicamente preservado. Essa preservação é justamente o que fundamenta a cirurgia oferecida a esses pacientes: a artrodese escapulotorácica. Com os estabilizadores da escápula fracos, o deltoide contrai e move a escápula em vez de mover o úmero, a força se perde. Fixando a escápula ao gradil costal, dá-se ao deltoide uma base estável, e a elevação ativa do braço melhora de forma substancial, muitas vezes de 60 para mais de 120 graus.",
+  "conceito": "### Escápula alada\n| Causa | Nervo | Músculo | Escápula |\n|---|---|---|---|\n| ==torácico longo== | C5 a C7 | ==serrátil anterior== | **medial** (ângulo inferior para medial) |\n| acessório espinal | XI par | trapézio | lateral, ombro caído |\n| dorsal da escápula | C5 | romboides | lateral, discreta |\n\n### Lesão do torácico longo\n- Tração (esportes, mochila), compressão, iatrogênica (mastectomia, drenagem torácica), Parsonage-Turner.\n- Observação por 12 a 24 meses (muitas recuperam).\n\n### Transferências na paralisia crônica\n| Paralisia | Transferência de escolha |\n|---|---|\n| ==serrátil (torácico longo)== | ==peitoral maior (cabeça esternal) ao ângulo inferior da escápula==, geralmente com enxerto de fáscia lata |\n| trapézio (acessório) | **Eden-Lange**: levantador da escápula e romboides lateralizados (ou trapézio inferior) |\n\n- Salvamento: **escapulotoracodese**.\n\n### Distrofia facioescapuloumeral\n- Autossômica dominante (4q35, DUX4); assimétrica, progressiva.\n- Acomete face, ==estabilizadores da escápula== (trapézio, romboides, serrátil, elevador) e úmero.\n- ==Deltoide preservado==.\n- Cirurgia: ==escapulotoracodese== (artrodese escapulotorácica): base estável para o deltoide, elevação de cerca de 60° para mais de 120°.\n\n> **Na prova:** músculo preservado na FSH = ==deltoide==",
+  "correta": "**Deltoide.**\n- Preservado enquanto os periescapulares falham.\n- Base da escapulotoracodese.",
   "incorretas": {
-   "B": "O trapézio está entre os estabilizadores acometidos, e a fraqueza dele participa da escápula alada.",
-   "C": "Os romboides também são acometidos.",
-   "D": "O levantador da escápula, idem, são todos músculos periescapulares, exatamente o grupo que a doença atinge."
+   "B": "**Acometido.**\n- Participa da escápula alada.",
+   "C": "**Acometido.**\n- Periescapular.",
+   "D": "**Acometido.**\n- Periescapular."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0093": {
-  "conceito": "Após redução de DDQ, o gesso pélvico deve manter a cabeça femoral concentrada sem comprometer sua vascularização. A posição histórica de Lorenz, com abdução máxima, aumentava risco de necrose avascular. A chamada posição humana busca flexão elevada do quadril (em geral ao redor de 90 a 100 graus) e **abdução controlada, menor que a máxima**, dentro da zona segura de estabilidade. O princípio é simples: abdução insuficiente favorece reluxação; abdução forçada ou extrema pode tensionar vasos e aumentar risco de necrose avascular. A posição é ajustada conforme idade, redução fechada ou aberta e confirmação radiológica de concentricidade.",
-  "correta": "A alternativa C está correta. O gesso em posição humana é realizado com hiperflexão e abdução menor que a máxima. A hipoflexão não mantém adequadamente a redução, enquanto a abdução máxima é evitada para reduzir tensão sobre a circulação da cabeça femoral. O objetivo não é atingir um número universal de graus, mas manter redução estável na zona segura sem hiperabdução.",
+  "conceito": "### Obstáculos à redução na DDQ\n| Extra-articulares | Intra-articulares |\n|---|---|\n| iliopsoas (estrangula a cápsula em ampulheta) | ==cápsula constrita== (istmo) |\n| adutores | lábio invertido (limbo) |\n| | pulvinar hipertrofiado |\n| | ligamento redondo alongado e espesso |\n| | ligamento transverso do acetábulo |\n\n- Na DDQ tardia, a ==constrição capsular== (ampulheta pelo psoas) é o obstáculo principal segundo a fonte.\n\n### Conduta\n| Idade | Tratamento |\n|---|---|\n| < 6 meses | Pavlik |\n| 6 a 18 meses | redução fechada + gesso (artrografia) |\n| > 18 meses | ==redução aberta== ± osteotomia femoral encurtadora e pélvica |\n\n### Posição humana (Salter)\n- Quadril em ==flexão de 90 a 100° (\"hiperflexão\")== e ==abdução moderada, menor que a máxima== (40 a 60°).\n- Zona de segurança de Ramsey: entre a abdução máxima e a mínima que mantém a redução.\n- Abdução máxima (posição de rã de Lorenz) causa ==necrose avascular==.\n\n> **Na prova:** posição humana = ==hiperflexão com abdução menor que a máxima== (veja o alerta).",
+  "correta": "**Hiperflexão e abdução submáxima.**\n- Mantém a redução sem comprimir os vasos.\n- Evitar abdução extrema.",
   "incorretas": {
-   "A": "Hiperflexão com abdução máxima reproduz a lógica da posição extrema historicamente associada a maior risco de necrose avascular. A abdução deve ser controlada, não forçada ao máximo.",
-   "B": "Flexão de 90 graus pode ser usada em alguns protocolos, mas a alternativa permanece errada por indicar abdução máxima. O componente que mais claramente contraria a posição humana é a hiperabdução.",
-   "D": "Abdução menor que a máxima está correta, porém a flexão de 90 graus não é a descrição clássica da posição humana cobrada. O gabarito enfatiza hiperflexão associada a abdução moderada."
+   "A": "**Abdução máxima.**\n- Posição de rã: necrose.",
+   "B": "**Abdução máxima.**\n- Idem.",
+   "D": "**Nomenclatura da fonte.**\n- A questão chama de hiperflexão."
   },
+  "alerta": "Protocolos atuais frequentemente descrevem 90–100 graus de flexão e abdução controlada abaixo de 60 graus. A expressão 'hiperflexão' é a nomenclatura histórica da questão; o princípio clínico essencial é evitar abdução extrema.",
   "referencias": [
    "DDQ: controversies in management. https://pmc.ncbi.nlm.nih.gov/articles/PMC9276911/",
    "Developmental dysplasia of the hip. https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/",
    "DDQ: changes in the last 20 years. https://pmc.ncbi.nlm.nih.gov/articles/PMC4686436/"
   ],
-  "alerta": "Protocolos atuais frequentemente descrevem 90–100 graus de flexão e abdução controlada abaixo de 60 graus. A expressão 'hiperflexão' é a nomenclatura histórica da questão; o princípio clínico essencial é evitar abdução extrema.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0094": {
-  "conceito": "A coxa vara do desenvolvimento gera forças de cisalhamento anormais através da fise proximal e pode progredir durante o crescimento. Quando existe indicação cirúrgica, o princípio do tratamento definitivo é corrigir o varo por osteotomia valgizante do fêmur proximal. A correção aumenta o ângulo cervicodiafisário, reduz o ângulo epifisário de Hilgenreiner e transforma parte das forças de cisalhamento em forças compressivas, favorecendo ossificação e reduzindo recorrência. O planejamento deve também considerar retroversão e outras deformidades tridimensionais. Epifisiodese isolada do grande trocânter pode ter papel complementar em desequilíbrio trocantérico, mas não corrige o problema biomecânico primário.",
-  "correta": "A alternativa C está correta. A osteotomia valgizante do fêmur proximal é o tratamento cirúrgico clássico e definitivo para coxa vara do desenvolvimento com indicação operatória, corrigindo a biomecânica patológica da fise.",
+  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Achado radiográfico\n- ==Duas linhas radiolucentes em V invertido== no colo inferomedial, delimitando o ==triângulo de Fairbank==.\n- Ângulo cervicodiafisário ==diminuído==, fise vertical e alargada.\n\n> **Na prova:** coxa vara congênita = ==V invertido radiolucente== (triângulo de Fairbank).",
+  "correta": "**Osteotomia valgizante.**\n- Corrige o ângulo e horizontaliza a fise.\n- Indicada com ângulo HE > 60°.",
   "incorretas": {
-   "A": "Epifisiodese do grande trocânter pode ser utilizada em situações específicas de sobrecrescimento relativo, mas não corrige a deformidade em varo da região proximal do fêmur.",
-   "B": "Fixação percutânea não corrige o ângulo epifisário anormal nem a biomecânica em varo e não constitui tratamento definitivo da coxa vara do desenvolvimento.",
-   "D": "Enxertia e fixação do colo não substituem a correção angular; o princípio terapêutico fundamental é a osteotomia valgizante."
+   "A": "**Complemento.**\n- Evita o trocanter alto, não corrige o varo.",
+   "B": "**Não corrige.**\n- Fixação sem realinhar.",
+   "D": "**Não corrige.**\n- Enxerto sem valgizar."
   },
   "referencias": [
    "Proximal femoral valgus osteotomy for the treatment of developmental coxa vara: a systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC10937198/",
    "Subtrochanteric valgus osteotomy in developmental coxa vara. https://pmc.ncbi.nlm.nih.gov/articles/PMC3134016/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0095": {
-  "conceito": "Na mielomeningocele, o potencial de marcha depende do nível neurológico, equilíbrio, contraturas, deformidades, obesidade e força muscular. Para manutenção da deambulação ao longo do crescimento, dois grupos têm importância particular: **quadríceps**, que estabiliza o joelho no apoio e evita colapso em flexão, e **isquiotibiais**, que contribuem para controle do joelho e equilíbrio muscular. Estudos de seguimento mostram melhor chance de marcha adulta quando a força do quadríceps é pelo menos grau 4; a função dos isquiotibiais ganha maior importância quando há déficit associado. Iliopsoas, glúteos e tibial anterior também influenciam marcha, mas o par clássico cobrado é quadríceps–isquiotibiais.",
-  "correta": "A alternativa C está correta. A força do quadríceps e dos isquiotibiais é o fator físico mais importante para manutenção de deambulação na mielomeningocele segundo o padrão cobrado. O quadríceps mantém o joelho estável no apoio; isquiotibiais participam do controle sagital e do equilíbrio ao redor do joelho. A avaliação deve ser seriada, porque uma criança que caminha pode perder mobilidade com crescimento, ganho de peso, contraturas, escoliose ou medula presa.",
+  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Preditor de marcha\n- ==Quadríceps== (L3-L4) forte: estabiliza o joelho.\n- ==Isquiotibiais mediais== (L5): estabilizam quadril e joelho.\n- Glúteo médio (L5-S1): menos Trendelenburg.\n\n> **Na prova:** manutenção da marcha na MMC = ==quadríceps e isquiotibiais==",
+  "correta": "**Quadríceps e isquiotibiais.**\n- Estabilizam o joelho no apoio.\n- Nível lombar baixo anda na comunidade.",
   "incorretas": {
-   "A": "Iliopsoas é relevante e pode predizer capacidade de marcha em algumas coortes, mas a alternativa troca os isquiotibiais pelo iliopsoas e não traz o par clássico para manutenção da deambulação de longo prazo.",
-   "B": "Iliopsoas e isquiotibiais ajudam no avanço do membro e controle do quadril, mas falta o quadríceps, estabilizador essencial do joelho em apoio. Por isso a dupla é incompleta para a pergunta.",
-   "D": "Glúteo máximo contribui para extensão de quadril e quadríceps para joelho, mas a função de isquiotibiais é a associação mais importante junto ao quadríceps no gabarito. A alternativa troca um componente decisivo do controle do joelho."
+   "A": "**Iliopsoas não.**\n- Flexor, não estabiliza o apoio.",
+   "B": "**Iliopsoas não.**\n- Isquiotibiais certos.",
+   "D": "**Glúteo máximo raro.**\n- S1-S2; não é o determinante."
   },
   "referencias": [
    "Orthopedic management of spina bifida: hip, knee and rotational deformities. https://pmc.ncbi.nlm.nih.gov/articles/PMC2782071/",
    "Ambulatory outcome in myelomeningocele and muscle strength. https://pubmed.ncbi.nlm.nih.gov/1864474/",
    "Lowell and Winters: Myelomeningocele. https://www.rchsd.org/documents/2020/12/chapter-15-lowell-and-winters-pediatric-orthopedics-7th-ed-7.pdf"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0096": {
-  "conceito": "A deficiência focal proximal do fêmur (DFPF/PFFD) é espectro de falha de desenvolvimento do fêmur proximal, variando de encurtamento leve até ausência de conexão entre cabeça, colo e diáfise. A posição típica do segmento femoral é **flexão, abdução e rotação externa** por encurtamento e desequilíbrio de partes moles: os flexores e abdutores ficam relativamente retraídos e o fêmur proximal apresenta deformidade em retroversão. Essa postura deve ser reconhecida porque afeta o planejamento de prótese, alongamento, osteotomia ou reconstrução; tentar simplesmente 'forçar' o membro a neutro sem compreender as contraturas pode piorar função e estabilidade.",
-  "correta": "A alternativa D está correta. Na deficiência focal proximal do fêmur, o segmento fica em abdução e rotação externa, além da flexão descrita no enunciado. Essa postura decorre da anatomia anormal do quadril e de contraturas musculares. A avaliação deve incluir comprimento residual de fêmur, estabilidade do quadril e joelho, presença de fíbula e pé funcional, pois o tratamento é individualizado conforme potencial de apoio e discrepância prevista na maturidade.",
+  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n> **Na prova:** contratura na DFFP = ==flexão, abdução e rotação externa==.",
+  "correta": "**Abdução e rotação externa.**\n- Com flexão: padrão clássico da DFFP.",
   "incorretas": {
-   "A": "A adução e a rotação interna são opostas ao padrão postural usual de abdução e rotação externa. A alternativa ignora a tendência à retroversão e às contraturas abdução-flexão.",
-   "B": "A rotação externa está correta, mas adução não. O fêmur proximal tende a permanecer abduzido, não aduzido, na deformidade típica.",
-   "C": "A abdução está correta, porém a rotação interna é incompatível com a postura clássica em rotação externa. A questão exige a combinação dos dois componentes."
+   "A": "**Adução e RI.**\n- Não é o padrão.",
+   "B": "**Adução errada.**\n- É abdução.",
+   "C": "**RI errada.**\n- É RE."
   },
+  "alerta": "A primeira referência discute padrões de contratura do quadril em artrogripose e serve apenas como apoio biomecânico geral; a posição de DFPF deve ser confirmada em fonte específica da prova durante revisão humana.",
   "referencias": [
    "The hip in arthrogryposis: contracture patterns. https://pmc.ncbi.nlm.nih.gov/articles/PMC4661154/",
    "Proximal femoral focal deficiency: treatment principles. https://pubmed.ncbi.nlm.nih.gov/2996387/"
   ],
-  "alerta": "A primeira referência discute padrões de contratura do quadril em artrogripose e serve apenas como apoio biomecânico geral; a posição de DFPF deve ser confirmada em fonte específica da prova durante revisão humana.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0097": {
   "conceito": "Em trauma pediátrico, a especificidade de uma fratura para violência física depende de localização, padrão, idade e contexto. Segundo classificações utilizadas em radiologia pediátrica e documentos da American Academy of Pediatrics, fraturas da escápula, esterno e processos espinhosos, fraturas costais e lesões metafisárias clássicas têm alta especificidade, principalmente quando não existe mecanismo de alta energia plausível. Fraturas vertebrais e de corpos vertebrais têm associação relevante, mas tradicionalmente são colocadas em categoria de especificidade moderada. Fraturas de clavícula e diáfises de ossos longos são frequentes na infância e possuem baixa especificidade isoladamente. A classificação nunca substitui a análise completa da história.",
