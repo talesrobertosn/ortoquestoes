@@ -3087,100 +3087,100 @@
   "conferido": false
  },
  "mao-0265": {
-  "conceito": "O quadro descrito é o de tenossinovite de De Quervain: dor no lado radial do punho, sobre o abdutor longo e o extensor curto do polegar, piorando com desvio do punho e com o uso repetido do polegar, como no gatilho de uma pistola de pintura.",
-  "correta": "A infiltração com corticoide é o tratamento inicial com melhor evidência. Ela é a medida isolada de maior taxa de resolução no quadro não crônico, com resultados consistentemente superiores aos da órtese isolada nos ensaios comparativos, e resolve boa parte dos casos numa ou duas aplicações. A técnica importa: é preciso alcançar o compartimento, e o septo que separa o extensor curto num subcompartimento próprio, quando presente, é a razão mais comum de falha.",
+  "conceito": "### Variações do primeiro compartimento extensor\n| Variação | Frequência aproximada | Importância |\n|---|---|---|\n| ==ausência do extensor curto do polegar== | ==cerca de 5%== | |\n| ==septo separando o extensor curto== (subcompartimento) | ==cerca de 20 a 70%== (bem mais em pacientes com De Quervain) | ==causa principal de falha== da infiltração e da liberação |\n| múltiplas bandeletas do abdutor longo | muito comum | confundidas com o extensor curto |\n\n### Tenossinovite de De Quervain\n- Mulheres 30 a 50 anos, pós-parto (\"mãe de bebê\"), uso repetitivo.\n- **Finkelstein** (Eichhoff): polegar na mão, desvio ulnar do punho.\n- **WHAT test:** extensão do punho com abdução resistida do polegar (sensível para o extensor curto).\n\n### Tratamento\n- Órtese em espica, infiltração (cerca de 70 a 80% de sucesso).\n- Liberação cirúrgica: abrir o compartimento **dorsalmente** (evita subluxação volar dos tendões), procurar o **septo**, proteger o **ramo superficial do radial**.\n\n### Escalonamento\n| Etapa | Medida |\n|---|---|\n| 1 | ==infiltração de corticoide== na bainha (± órtese em espica) |\n| 2 | segunda infiltração se houver melhora parcial |\n| 3 | liberação cirúrgica após falha |\n\n> **Na prova:** tratamento inicial de De Quervain com melhor resultado = ==infiltração de corticoide==",
+  "correta": "**Infiltração de corticoide.**\n- Medida isolada com maior taxa de resolução, superior à órtese isolada.\n- Resolve a maioria em uma ou duas aplicações.\n- A falha costuma vir do septo do extensor curto não atingido.",
   "incorretas": {
-   "A": "A cirurgia é reservada à falha do tratamento conservador, e não à primeira consulta. Ela é eficaz, mas expõe o ramo sensitivo do radial, cuja lesão deixa um neuroma doloroso na borda radial do punho.",
-   "B": "Repouso e órtese em posição do polegar ajudam e costumam ser associados, mas como medida isolada têm taxa de resolução bem menor.",
-   "D": "Fortalecimento não tem papel na fase dolorosa. O problema é atrito num túnel estreito, não fraqueza.",
-   "E": "Anti-inflamatórios aliviam o sintoma e entram como adjuvante, sem alterar o curso da estenose."
+   "A": "**Só após falha do conservador.**\n- Risco de neuroma do ramo sensitivo do radial.",
+   "B": "**Adjuvante.**\n- Órtese isolada resolve menos que a infiltração.",
+   "D": "**Sem papel na fase dolorosa.**\n- O problema é atrito num túnel estreito.",
+   "E": "**Alívio sintomático.**\n- Não altera a estenose."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0266": {
-  "conceito": "Os ossos do membro se formam por ossificação endocondral: primeiro o mesênquima se condensa no formato do futuro osso, essa condensação vira cartilagem, e a cartilagem é depois substituída por osso. Nada disso passa por tecido neural nem por somitos.",
-  "correta": "São as condensações mesenquimais que dão origem aos ossos longos dos dedos. Elas surgem no broto do membro seguindo os três eixos de controle, a crista ectodérmica apical comanda o crescimento proximal-distal, a zona de atividade polarizada o eixo radioulnar pelo Shh, e o ectoderma dorsal a diferenciação dorsoventral pelo Wnt7a. É por isso que uma falha nesses centros produz ausência ou duplicação de raios inteiros, e não apenas um osso malformado.",
+  "conceito": "### Formação do esqueleto do membro\n1. Broto do membro: mesoderma da placa lateral + ectoderma (4ª semana).\n2. ==Condensações mesenquimais== no formato do futuro osso.\n3. Molde cartilaginoso.\n4. Ossificação endocondral.\n\n### Origem de cada tecido\n| Tecido do membro | Origem |\n|---|---|\n| ==ossos, cartilagem, tendões, ligamentos== | ==mesoderma da placa lateral== (condensações mesenquimais) |\n| músculos | somitos (mioblastos migram para o broto) |\n| nervos periféricos, Schwann, melanócitos | crista neural |\n| vasos | angioblastos locais |\n\n### Centros de sinalização\n| Centro | Eixo | Molécula | Falha |\n|---|---|---|---|\n| crista ectodérmica apical | proximal-distal | FGF | deficiências transversas |\n| zona de atividade polarizada | radioulnar | ==Shh== | polidactilia, mão em espelho |\n| ectoderma dorsal | dorsoventral | Wnt7a | unhas palmares, nail-patella |\n\n> **Na prova:** ossos dos dedos vêm das ==condensações mesenquimais== (mesoderma da placa lateral).",
+  "correta": "**Condensações mesenquimais.**\n- Viram cartilagem e depois osso por ossificação endocondral.\n- Seguem os três eixos de sinalização do broto.",
   "incorretas": {
-   "A": "O arco aórtico origina estruturas vasculares do pescoço e do tórax.",
-   "B": "Os somitos dão origem à musculatura esquelética do membro (os mioblastos migram dos somitos para o broto), mas não ao esqueleto dos dedos.",
-   "C": "A crista neural origina neurônios sensitivos, células de Schwann, melanócitos e parte do esqueleto craniofacial. Não os ossos dos dedos.",
-   "D": "A placa neural origina o sistema nervoso central."
+   "A": "**Vascular.**\n- Estruturas arteriais do pescoço e tórax.",
+   "B": "**Músculo, não osso.**\n- Os mioblastos dos somitos migram para o broto.",
+   "C": "**Tecido neural periférico.**\n- Também melanócitos e esqueleto craniofacial, não os dedos.",
+   "D": "**Sistema nervoso central.**\n- Nada a ver com o esqueleto do membro."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0267": {
-  "conceito": "Entre a sexta e a oitava semana, o esboço da mão é uma pá em que os raios digitais já estão desenhados por dentro, mas ainda unidos por tecido interdigital. A separação não acontece por crescimento: acontece por morte celular programada desse tecido entre os raios.",
-  "correta": "As cristas ou raios digitais são as estruturas cuja separação incompleta produz a sindactilia. A apoptose interdigital, comandada por proteínas da família das BMP, avança de distal para proximal e do lado radial para o ulnar, e é essa ordem que explica a distribuição da malformação: o terceiro espaço, entre médio e anelar, é o mais acometido, e o primeiro, entre polegar e indicador, o menos.",
+  "conceito": "### Separação dos dedos\n- 6ª a 8ª semana: placa da mão com ==raios (cristas) digitais== unidos por tecido interdigital.\n- A separação ocorre por ==apoptose interdigital== (via BMP), não por crescimento.\n- Progride de distal para proximal e de radial para ulnar.\n\n### Sindactilia\n| Aspecto | Dado |\n|---|---|\n| frequência | 1 em 2.000 a 2.500 nascidos; malformação congênita mais comum da mão junto com polidactilia |\n| espaço mais acometido | ==3º (médio e anelar)== |\n| espaço menos acometido | 1º (polegar e indicador) |\n| bilateral | cerca de 50% |\n\n### Classificação\n| Termo | Definição |\n|---|---|\n| simples | só pele |\n| complexa | ponte óssea (sinostose) |\n| completa | até a ponta |\n| complicada | ossos anômalos (Apert) |\n\n### Cirurgia\n- Por volta de 12 a 18 meses; mais cedo em dedos de tamanhos diferentes (polegar, mínimo).\n- Um lado do dedo por vez; retalho dorsal para a comissura, enxerto de pele total.\n\n> **Na prova:** sindactilia = falha de separação das ==cristas (raios) digitais==.",
+  "correta": "**Cristas digitais.**\n- A apoptose interdigital as separa; se falhar, surge a sindactilia.\n- A ordem da apoptose explica por que o 3º espaço é o mais acometido.",
   "incorretas": {
-   "A": "As condensações mesenquimais formam o esqueleto dos dedos. Elas participam do processo, mas o que precisa se separar, e cuja falha produz a sindactilia, são os raios já formados.",
-   "B": "Os somitos dão a musculatura do membro.",
-   "C": "A placa neural origina o sistema nervoso central.",
-   "D": "A crista neural origina tecido neural periférico, melanócitos e parte do esqueleto craniofacial."
+   "A": "**Formam o esqueleto.**\n- Participam, mas o que falha em separar são os raios já formados.",
+   "B": "**Musculatura.**\n- Os somitos não formam os dedos.",
+   "C": "**Sistema nervoso central.**\n- Sem relação com a separação digital.",
+   "D": "**Tecido neural periférico.**\n- Também melanócitos e face, não os dedos."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0268": {
-  "conceito": "A combinação descrita (ombro sem abdução, cotovelo que não flete, antebraço que não supina e perda de sensibilidade na face lateral do braço) desenha exatamente o território de C5 e C6.",
-  "correta": "A lesão é do plexo braquial superior, o tronco formado por C5 e C6, a paralisia de Erb. Cada peça do quadro tem endereço: a abdução do ombro se perde pelo axilar e pelo supraescapular; a flexão do cotovelo e a supinação, pelo musculocutâneo e pelo bíceps; a sensibilidade da face lateral do braço, pelo axilar. Sem oposição, o braço fica aduzido e em rotação interna, o cotovelo estendido e o antebraço pronado, a posição em gorjeta de garçom. Num acidente de moto, o mecanismo é a tração que afasta a cabeça do ombro, e a primeira coisa a procurar é sinal de avulsão: síndrome de Horner, escápula alada e elevação da cúpula diafragmática na radiografia de tórax.",
+  "conceito": "### Plexo braquial: padrões\n| Lesão | Raízes | Quadro |\n|---|---|---|\n| ==superior (Erb)== | ==C5-C6== | ombro sem abdução e RE, cotovelo sem flexão, sem supinação; ==gorjeta de garçom== |\n| estendida | C5-C7 | + extensão do cotovelo e punho fracas |\n| inferior (Klumpke) | C8-T1 | mão em garra, intrínsecos, Horner |\n| total | C5-T1 | membro flácido e anestésico |\n\n### Por que cada déficit\n| Função perdida | Nervo |\n|---|---|\n| abdução do ombro | axilar (deltoide), supraescapular |\n| flexão do cotovelo | musculocutâneo (bíceps, braquial) |\n| supinação | bíceps |\n| sensibilidade lateral do braço | axilar (cutâneo lateral superior) |\n\n### Sinais de avulsão pré-ganglionar\n- **Horner** (T1), escápula alada (torácico longo), hemidiafragma elevado (frênico), dor em queimação, pseudomeningocele na RM.\n- Histamina e condução sensitiva preservadas em região anestésica.\n\n> **Na prova:** ombro e cotovelo paralisados com sensibilidade lateral do braço = ==plexo superior C5-C6 (Erb)==.",
+  "correta": "**Plexo superior (C5-C6).**\n- Abdução do ombro, flexão do cotovelo e supinação são C5-C6.\n- Tração que afasta cabeça e ombro na moto.\n- Procurar sinais de avulsão.",
   "incorretas": {
-   "A": "O ulnar dá déficit nos intrínsecos da mão e no quarto e quinto dedos, sem afetar ombro nem cotovelo.",
-   "B": "O mediano compromete a pinça e a sensibilidade dos dedos radiais, também sem envolver o ombro.",
-   "C": "O radial produz punho e dedos caídos, com sensibilidade alterada no dorso da mão. Não explica a perda de flexão do cotovelo, que é do musculocutâneo.",
-   "E": "O plexo inferior, C8 e T1, é a paralisia de Klumpke: mão em garra, déficit dos intrínsecos e da flexão dos dedos, com sensibilidade alterada na borda ulnar do antebraço e da mão, território oposto ao descrito."
+   "A": "**Mão.**\n- Intrínsecos e 4º e 5º dedos, sem ombro ou cotovelo.",
+   "B": "**Pinça e dedos radiais.**\n- Não afeta o ombro.",
+   "C": "**Punho caído.**\n- Não explica a flexão do cotovelo perdida.",
+   "E": "**Klumpke (C8-T1).**\n- Mão em garra e borda ulnar, o oposto do descrito."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0269": {
-  "conceito": "Vale ler esta questão com reserva, porque a alternativa dada como certa não corresponde à anatomia que o enunciado descreve. O que liga a extremidade distal do rádio ao escafoide são os ligamentos radiocarpais volares, sobretudo o radioescafocapitato, que passa pela cintura do escafoide como uma alça e funciona como eixo de rotação dele, e o radiossemilunar longo. Dorsalmente, o radiocarpal dorsal cumpre papel semelhante.",
-  "correta": "O gabarito aponta o ligamento escafossemilunar. Ele é peça central da mecânica do carpo, é a amarra que impede o escafoide de fletir sozinho, e a sua ruptura é o estágio I de Mayfield, a dissociação escafossemilunar, com o sinal de Terry Thomas na radiografia. Mas ele liga o escafoide ao semilunar, e não o rádio ao escafoide. Guarde a anatomia: o radioescafocapitato é o ligamento que sai do rádio e abraça o escafoide, e preservá-lo é regra na artroscopia e nas vias volares, porque seccioná-lo permite a translação ulnar do carpo.",
+  "conceito": "### Ligamentos do punho\n| Ligamento | Liga | Função |\n|---|---|---|\n| ==radioescafocapitato== (volar) | rádio → cintura do escafoide → capitato | ==eixo de rotação do escafoide==; impede translação ulnar |\n| radiossemilunar longo | rádio → semilunar | estabiliza o semilunar |\n| radioescafossemilunar (Testut) | rádio → espaço escafossemilunar | estrutura neurovascular |\n| ==escafossemilunar== (intrínseco) | ==escafoide ↔ semilunar== | parte dorsal é a mais forte |\n| radiocarpal dorsal | rádio → semilunar, piramidal | estabilizador dorsal |\n\n### Lesão escafossemilunar\n- Estágio I de Mayfield; sinal de **Terry Thomas** (> 3 mm), anel cortical do escafoide, DISI.\n- Teste de Watson.\n\n> **Na prova:** o gabarito dá ==escafossemilunar==, mas quem liga rádio e escafoide é o ==radioescafocapitato== (veja o alerta).",
+  "correta": "**Resposta oficial, com reserva.**\n- O escafossemilunar une escafoide e semilunar, não o rádio ao escafoide.\n- Anatomicamente, a resposta é o radioescafocapitato (veja o alerta).\n- Guarde a anatomia, não a letra.",
   "incorretas": {
-   "A": "O colateral ulnar fica do lado oposto do punho, ligando o estiloide ulnar ao piramidal e ao pisiforme.",
-   "B": "O tendão do bíceps se insere na tuberosidade do rádio, no cotovelo, e não chega ao punho.",
-   "C": "O ligamento cruzado anterior é do joelho. A alternativa está aqui apenas para preencher.",
-   "E": "Ligamento palmar é designação genérica. Os ligamentos palmares do punho existem e é entre eles que está a resposta anatomicamente correta (o radioescafocapitato), mas o termo solto não nomeia estrutura nenhuma em particular."
+   "A": "**Lado ulnar.**\n- Liga o estiloide ulnar ao piramidal e pisiforme.",
+   "B": "**Cotovelo.**\n- Insere-se na tuberosidade do rádio.",
+   "C": "**Joelho.**\n- Distrator.",
+   "E": "**Termo genérico.**\n- O radioescafocapitato é palmar, mas o termo solto não nomeia estrutura."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
-  "alerta": "O gabarito afirma que o ligamento escafossemilunar liga o rádio ao escafoide. Ele liga o escafoide ao semilunar. Quem sai do rádio e abraça o escafoide é o radioescafocapitato, e nenhuma alternativa o nomeia. Guarde a anatomia, não a letra."
+  "alerta": "O gabarito afirma que o ligamento escafossemilunar liga o rádio ao escafoide. Ele liga o escafoide ao semilunar. Quem sai do rádio e abraça o escafoide é o radioescafocapitato, e nenhuma alternativa o nomeia. Guarde a anatomia, não a letra.",
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0270": {
-  "conceito": "A lesão de Stener é a do polegar do esquiador levada ao extremo: o ligamento colateral ulnar da metacarpofalângica do polegar se rompe, o coto retrai e escapa para cima da aponeurose do adutor.",
-  "correta": "Trata-se da ruptura do ligamento colateral ulnar. O que dá nome próprio à lesão é a interposição: a aponeurose do adutor fica entre o ligamento e a base da falange proximal, de onde ele se avulsionou, e o impede fisicamente de cicatrizar no lugar. Nenhuma imobilização resolve isso, o tratamento é cirúrgico. O sinal a procurar é o nódulo palpável proximal à articulação, que é o próprio coto dobrado sobre a aponeurose.",
+  "conceito": "### Lesão do colateral ulnar da MF do polegar\n| Nome | Mecanismo |\n|---|---|\n| polegar do esquiador | agudo, valgo forçado (queda com bastão) |\n| polegar do guarda-caça | crônico, atenuação repetida |\n\n### Lesão de Stener\n- Coto do ==colateral ulnar== retrai e fica ==acima da aponeurose do adutor==.\n- A aponeurose se interpõe e impede a cicatrização: ==cirurgia obrigatória==.\n- Incidência: cerca de 60 a 80% das rupturas completas.\n- Sinal: nódulo palpável proximal à MF (o coto dobrado).\n\n### Exame\n| Achado | Interpretação |\n|---|---|\n| abertura > 30 a 35° em 30° de flexão | ruptura do colateral próprio |\n| abertura também em extensão | + colateral acessório (lesão completa) |\n| > 15° a mais que o lado oposto | instabilidade |\n| sem ponto final firme | ruptura completa |\n\n- RX antes do estresse (fratura-avulsão); US ou RM para ver Stener.\n\n> **Na prova:** Stener = ==colateral ulnar da MF do polegar com aponeurose do adutor interposta==.",
+  "correta": "**Colateral ulnar.**\n- Da MF do polegar, com o coto sobre a aponeurose do adutor.\n- A interposição impede a cicatrização: tratamento cirúrgico.",
   "incorretas": {
-   "A": "Não há tendão extensor envolvido: a lesão é ligamentar e da face ulnar da metacarpofalângica.",
-   "B": "Pode haver fratura por avulsão na base da falange proximal, e isso muda a técnica, mas a lesão de Stener não é uma fratura de metacarpo.",
-   "C": "A cartilagem não é a estrutura em questão.",
-   "E": "O colateral radial do polegar também pode romper, e é uma lesão real e menos falada, mas ela não recebe o nome de Stener, porque do lado radial não há aponeurose do adutor para se interpor."
+   "A": "**Não é tendínea.**\n- A lesão é ligamentar.",
+   "B": "**Não é fratura de metacarpo.**\n- Pode haver avulsão da base da falange proximal.",
+   "C": "**Estrutura errada.**\n- A cartilagem não está em questão.",
+   "E": "**Lado oposto.**\n- Do lado radial não há aponeurose do adutor para interpor."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0271": {
-  "conceito": "O dorso da mão exige cobertura fina, flexível e que deslize: por baixo dela passam os tendões extensores, e um retalho volumoso ou aderente impede o dedo de fechar.",
-  "correta": "O retalho fasciocutâneo é o mais apropriado. Ele leva pele e fáscia, sem massa muscular, e por isso é fino o bastante para não empatar o deslizamento e resistente o bastante para cobrir tendão sem paratendão. As opções clássicas dessa família para o dorso da mão são o retalho da artéria interóssea posterior, o antebraquial radial e, quando é preciso ir mais longe, retalhos livres fasciocutâneos. Quando o paratendão está preservado, aliás, enxerto de pele parcial ainda pode bastar.",
+  "conceito": "### Cobertura do dorso da mão\n- Precisa ser ==fina, flexível e deslizante== sobre os extensores.\n\n| Leito | Opção |\n|---|---|\n| paratendão preservado | enxerto de pele parcial |\n| tendão ou osso exposto | ==retalho fasciocutâneo== |\n| defeito grande | retalho livre fasciocutâneo (anterolateral da coxa) |\n\n### Retalhos fasciocutâneos úteis\n| Retalho | Pedículo |\n|---|---|\n| interósseo posterior | artéria interóssea posterior (fluxo reverso) |\n| antebraquial radial (chinês) | artéria radial (fluxo reverso) |\n| cross-finger reverso | dorso dos dedos |\n\n### Classificação dos retalhos\n| Critério | Tipos |\n|---|---|\n| composição | cutâneo, ==fasciocutâneo==, muscular, miocutâneo, osteocutâneo |\n| vascularização | aleatório, axial |\n| movimento | avanço, rotação, transposição, livre |\n\n> **Na prova:** dorso da mão = ==retalho fasciocutâneo== (fino e deslizante).",
+  "correta": "**Fasciocutâneo.**\n- Pele e fáscia sem músculo: fino e deslizante.\n- Cobre tendão sem paratendão.\n- Exemplos: interósseo posterior, antebraquial radial.",
   "incorretas": {
-   "A": "Retalho axial é classificação pelo tipo de vascularização (ele tem um vaso próprio e conhecido), e não pelo tecido que carrega. Um retalho fasciocutâneo pode ser axial; os termos não competem entre si.",
-   "B": "Retalho proporcional não é uma categoria reconhecida na classificação dos retalhos.",
-   "D": "O miocutâneo leva músculo e é volumoso demais para o dorso da mão. Ele tem indicação onde é preciso preencher cavidade ou combater infecção com tecido bem vascularizado, não onde é preciso deslizar.",
-   "E": "O osteomuscular é usado para reconstruir osso junto com partes moles, o que não é o problema aqui."
+   "A": "**Critério diferente.**\n- Axial fala da vascularização; um fasciocutâneo pode ser axial.",
+   "B": "**Não existe.**\n- Não é categoria reconhecida.",
+   "D": "**Volumoso demais.**\n- Serve para preencher cavidade, não para deslizar.",
+   "E": "**Reconstrução óssea.**\n- Não é o problema aqui."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0272": {
-  "conceito": "O cisto sinovial, ou gânglio, é uma bolsa de líquido gelatinoso que se comunica com uma articulação ou bainha por um pedículo estreito, funcionando como válvula de mão única. Ele não é tumor, e por isso a conduta pode ser simplesmente acompanhar.",
-  "correta": "A localização mais comum é dorsal, o gânglio dorsal do punho, originado da articulação escafossemilunar, responde por cerca de 60% a 70% de todos os cistos da mão. Ele aumenta com o uso e some com o repouso, o que confunde o paciente. Dois pontos práticos: a transiluminação ajuda a confirmar que o conteúdo é líquido, e o cisto oculto, pequeno demais para ser visto, pode ser causa de dor dorsal do punho sem massa palpável. A recidiva após ressecção gira em torno de 5% a 15% quando o pedículo e um pouco da cápsula são retirados junto, e é bem maior com aspiração isolada.",
+  "conceito": "### Cisto sinovial (gânglio)\n- Mucina em bolsa sem revestimento epitelial, ligada à articulação ou bainha por pedículo (válvula).\n- O tumor de partes moles mais comum da mão.\n\n| Local | Frequência | Origem | Detalhe |\n|---|---|---|---|\n| ==dorsal do punho== | ==60 a 70%== | ==escafossemilunar== | cisto oculto causa dor sem massa |\n| volar do punho | 18 a 20% | radiocarpal ou STT | junto à artéria radial |\n| bainha flexora | 10 a 12% | polia A1 ou A2 | nódulo firme na base do dedo |\n| mucoso | menos comum | IFD com artrose | sulco ungueal |\n| intraósseo | raro | semilunar, escafoide | |\n\n### Conduta\n- Observação (regressão espontânea em até metade).\n- Aspiração: alta recidiva.\n- Ressecção com pedículo e cápsula: recidiva de 5 a 15%.\n\n> **Na prova:** cisto mais comum da mão = ==dorsal do punho== (escafossemilunar).",
+  "correta": "**Dorsal.**\n- O gânglio dorsal do punho responde por 60 a 70% dos cistos.\n- Nasce da escafossemilunar.",
   "incorretas": {
-   "B": "O gânglio volar do punho é o segundo em frequência, originado da radiocarpal ou da escafotrapézio-trapezoide. A cirurgia dele é mais delicada pela proximidade da artéria radial.",
-   "C": "Nos dedos existe o cisto mucoso, junto à interfalângica distal e associado à artrose, e o cisto da bainha dos flexores, na base do dedo. Ambos são frequentes, mas não superam o dorsal do punho.",
-   "D": "O gânglio intraósseo existe, sobretudo no semilunar e no escafoide, e é raro.",
-   "E": "Cisto no cotovelo é incomum e não integra a estatística da mão."
+   "B": "**Segundo lugar.**\n- O volar vem da radiocarpal ou STT, junto à artéria radial.",
+   "C": "**Frequentes, mas menos.**\n- Cisto de bainha e cisto mucoso.",
+   "D": "**Raro.**\n- O intraósseo aparece no semilunar e escafoide.",
+   "E": "**Fora da mão.**\n- Cisto no cotovelo é incomum."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0273": {
