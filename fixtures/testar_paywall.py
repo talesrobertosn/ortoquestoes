@@ -54,8 +54,9 @@ for trecho in (
     "external_reference: usuario.id",
     "ambiente === 'teste' ? Deno.env.get('MERCADO_PAGO_PAYER_EMAIL_TESTE') : usuario.email",
     "X-Idempotency-Key",
-    "checkout_sandbox_requer_conta_teste",
+    "checkout_requer_conta_teste",
     "MERCADO_PAGO_AMBIENTE",
+    "MERCADO_PAGO_RESTRITO_CONTAS_TESTE",
 ):
     assert trecho in CRIAR_CHECKOUT, f"Contrato de checkout ausente: {trecho}"
 
@@ -108,6 +109,10 @@ for trecho in (
     "Date.parse(pagamento.date_approved) !== Date.parse(assinatura.ultima_cobranca_em)",
     "status: 'reembolsada'",
     "'X-Idempotency-Key': `garantia-${assinatura.id}-${assinatura.ultima_cobranca_id}`",
+    "'Content-Type': 'application/json'",
+    "body: '{}'",
+    "pagamentoAposReembolso.status !== 'refunded'",
+    "mercado_pago_reembolso_recusado",
 ):
     assert trecho in GERENCIAR_PLANO, f"Garantia de cobrança ausente: {trecho}"
 
