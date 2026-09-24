@@ -2695,91 +2695,91 @@
   "conferido": false
  },
  "pediatria-0195": {
-  "conceito": "O teste de **Klisic** é uma manobra clínica auxiliar no diagnóstico da displasia do desenvolvimento do quadril em crianças um pouco maiores (quando os testes de Ortolani e Barlow já perderam sensibilidade). O examinador posiciona o dedo indicador sobre a espinha ilíaca ântero-superior e o dedo médio sobre o **trocanter maior**, formando uma linha imaginária entre os dois pontos:\n- Em um quadril **normal**, essa linha, prolongada, aponta para o **umbigo**.\n- Em um quadril **luxado**, o trocanter maior está deslocado **proximalmente** (por causa da migração cefálica do fêmur), o que faz a linha apontar para um ponto **abaixo do umbigo**, entre este e a sínfise púbica.\n\nEsse deslocamento da linha imaginária para baixo do umbigo é o sinal positivo do teste, sugerindo luxação da articulação coxofemoral.",
-  "correta": "D. No teste de Klisic, quando há luxação, a linha entre os dedos do examinador se direciona para um ponto entre o púbis e o umbigo.",
+  "conceito": "### DDQ: exame conforme a idade\n| Idade | Achado útil |\n|---|---|\n| recém-nascido a 2-3 meses | ==Ortolani== (reduz) e ==Barlow== (luxa) |\n| ==após 3 meses== | ==limitação da abdução (Hart)==, Galeazzi, assimetria de pregas |\n| marcha | Trendelenburg, claudicação, hiperlordose (bilateral) |\n\n### Sinais\n| Sinal | O que é |\n|---|---|\n| ==Hart== | abdução limitada com quadril e joelho fletidos (adutores retraídos) |\n| Galeazzi | joelho mais baixo com quadris fletidos |\n| Peter-Bade | pregas assimétricas (pouco específico) |\n| Klisic | linha trocanter-EIAS passa abaixo do umbigo |\n\n### Imagem\n| Idade | Exame |\n|---|---|\n| < 4 a 6 meses | ultrassom (Graf) |\n| > 4 a 6 meses | radiografia (Hilgenreiner, Perkins, Shenton, índice acetabular) |\n\n### Teste de Klisic\n- Dedo médio no ==trocanter maior==, indicador na ==EIAS==.\n- Normal: a linha aponta para o ==umbigo== (ou acima).\n- ==Luxado==: trocanter alto, a linha aponta ==entre o umbigo e o púbis== (abaixo do umbigo).\n- Útil na ==DDQ bilateral== (sem assimetria para comparar).\n\n> **Na prova:** Klisic na luxação = linha para ==entre o púbis e o umbigo==",
+  "correta": "**Entre o púbis e o umbigo.**\n- Trocanter alto desvia a linha para baixo.\n- Útil na forma bilateral.",
   "incorretas": {
-   "A": "É no quadril normal, sem luxação, que a linha imaginária aponta diretamente para o umbigo.",
-   "B": "A linha não aponta diretamente para o púbis, mas para um ponto intermediário entre o púbis e o umbigo.",
-   "C": "Um ponto acima do umbigo não corresponde ao sinal de luxação, a migração proximal do trocanter desloca a linha para baixo do umbigo, não para cima."
+   "A": "**Normal.**\n- Aponta para o umbigo.",
+   "B": "**Muito baixo.**\n- Não é o padrão.",
+   "C": "**Normal ou acima.**\n- Sem luxação."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0196": {
-  "conceito": "A doença de Blount (tíbia vara patológica) é classificada radiograficamente pelos estágios de **Langenskiöld** (I a VI), que descrevem a progressão do dano à fise medial proximal da tíbia. Nos estágios mais avançados (**IV e V**), já existe uma **barra óssea (ponte fisária)** estabelecida na porção medial da fise, comprometendo permanentemente o potencial de crescimento dessa região.\n\nNesses estágios avançados, uma osteotomia tibial **isolada** (sem abordar cirurgicamente a barra fisária) corrige o alinhamento no momento da cirurgia, mas não resolve a causa de base, a fise medial continua a crescer de forma assimétrica (ou parar de crescer), fazendo com que a deformidade em varo **recidive** com o crescimento residual. A taxa de recidiva nesse cenário se aproxima dos **100%**, o que reforça a importância de associar (ou substituir a osteotomia por) procedimentos que abordem diretamente a fise comprometida, como a ressecção da barra fisária, nos estágios avançados da doença.",
-  "correta": "D. Nos estágios IV e V de Langenskiöld, a osteotomia tibial isolada leva à recorrência da deformidade em praticamente 100% dos casos.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Órtese (KAFO)\n- Indicação: ==< 3 anos==, ==Langenskiöld I-II==, especialmente unilateral.\n- Órtese de apoio com força valgizante, uso diurno na marcha.\n- Sem melhora em cerca de 1 ano ou > 4 anos: ==osteotomia valgizante== da tíbia (hipercorrigir).\n\n### Recidiva após osteotomia\n- Maior nos estágios ==IV e V== (barra fisária) e após 4 anos.\n- Nesses casos: osteotomia + ==ressecção da barra== ou epifisiodese lateral/completa, elevação do planalto medial (VI).\n\n> **Na prova:** osteotomia isolada em Langenskiöld IV e V = recidiva em ==cerca de 100%== (fonte).",
+  "correta": "**100%.**\n- A barra continua travando a fise medial.\n- Associar ressecção da barra ou epifisiodese.",
   "incorretas": {
-   "A": "25% subestima consideravelmente a taxa de recidiva descrita para osteotomia isolada nos estágios avançados da doença de Blount.",
-   "B": "50% ainda subestima a taxa de recidiva, que se aproxima da totalidade dos casos nesses estágios avançados.",
-   "C": "75% também subestima a taxa de recidiva relatada, que se aproxima dos 100% nesses estágios."
+   "A": "**Subestima.**\n- Recidiva quase certa.",
+   "B": "**Subestima.**\n- Idem.",
+   "C": "**Subestima.**\n- Idem."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0197": {
-  "conceito": "O corno posterior do menisco medial é fixado à borda superior do platô tibial por meio do **ligamento coronário** (também chamado de ligamento meniscotibial), uma condensação da cápsula articular que ancora firmemente a periferia do menisco medial à tíbia ao longo de toda sua extensão, incluindo o corno posterior.\n\nEssa fixação firme e circunferencial é justamente uma das razões pelas quais o menisco medial é **menos móvel** que o lateral (que tem inserções mais frouxas e pode, inclusive, ter o hiato poplíteo interrompendo sua fixação periférica lateralmente), e, por ser menos móvel, o menisco medial é proporcionalmente mais suscetível a lesões traumáticas.",
-  "correta": "A. O corno posterior do menisco medial está aderido à borda superior da tíbia por meio do ligamento coronário.",
+  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Fixações meniscais\n| Estrutura | Liga |\n|---|---|\n| ==ligamento coronário (meniscotibial)== | ==borda do menisco à tíbia== |\n| ligamento transverso (intermeniscal) | cornos anteriores |\n| Humphrey (anterior ao LCP) e Wrisberg (posterior ao LCP) | corno posterior do ==lateral== ao côndilo medial |\n| oblíquo posterior | cápsula posteromedial (não é fixação tibial do menisco) |\n| poplíteo | menisco lateral (hiato poplíteo) |\n\n> **Na prova:** menisco medial preso à tíbia pelo ==ligamento coronário==",
+  "correta": "**Ligamento coronário.**\n- Meniscotibial, prende a borda à tíbia.\n- Falta no discoide tipo Wrisberg (lateral).",
   "incorretas": {
-   "B": "O ligamento oblíquo posterior é uma estrutura do complexo capsular medial do joelho, relacionada à estabilidade em valgo, não à fixação do menisco à tíbia.",
-   "C": "O tendão do músculo poplíteo se relaciona à fixação periférica do menisco lateral (no hiato poplíteo), não à fixação do menisco medial.",
-   "D": "Os ligamentos de Humphry e Wrisberg são ligamentos meniscofemorais, conectando o corno posterior do menisco lateral ao côndilo femoral medial, não se relacionam à fixação do menisco medial à tíbia."
+   "B": "**Cápsula.**\n- Estabilizador posteromedial.",
+   "C": "**Menisco lateral.**\n- Hiato poplíteo.",
+   "D": "**Menisco lateral.**\n- Ao côndilo femoral medial."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0198": {
-  "conceito": "No desenvolvimento embriológico dos membros inferiores, antes de ocorrer a **rotação axial medial** (rotação interna) característica desses membros durante a vida fetal, o compartimento que dará origem ao mecanismo extensor do joelho (incluindo a patela) está posicionado **lateralmente** em relação ao eixo do membro em desenvolvimento.\n\nÉ justamente a rotação medial (interna) do membro inferior, que ocorre ao longo do desenvolvimento fetal, que traz essa região (originalmente lateral) para a posição **anterior** definitiva, característica da anatomia do joelho no indivíduo já formado. Esse processo é o oposto do que ocorre no membro superior, cuja rotação (lateral/externa) traz a região originalmente também lateral para a posição posterior do cotovelo.",
-  "correta": "A. Antes da rotação axial dos membros inferiores, a patela encontra-se posicionada lateralmente.",
+  "conceito": "### Cronologia embrionária do membro\n| Semana | Evento |\n|---|---|\n| 4ª | broto do membro superior (inferior poucos dias depois) |\n| 5ª a 6ª | condensação mesenquimal, molde cartilaginoso |\n| ==7ª a 8ª== | ==centros de ossificação primários== dos ossos longos (clavícula primeiro, ~5ª a 6ª; ==fêmur e tíbia na 7ª a 8ª==) |\n| 7ª | rotação dos membros |\n| 8ª | fim da organogênese |\n| 12ª em diante | ossificação progride nos ossos curtos |\n\n### Particularidades\n- ==Clavícula==: primeiro osso a ossificar (membranosa, 5ª semana), último a fechar a fise medial (cerca de 25 anos).\n- Ossificação endocondral: centro primário na diáfise; secundários (epífises) em geral após o nascimento, exceto fêmur distal (36ª semana, sinal de maturidade fetal).\n\n### Rotação e a patela\n- Antes da ==rotação medial== do membro inferior (7ª semana), a face extensora (com a patela) está voltada ==lateralmente==.\n- A rotação medial de 90° leva o joelho (e a patela) para a frente.\n- Explica a disposição em espiral dos dermátomos.\n\n> **Na prova:** antes da rotação, a patela está ==lateral==",
+  "correta": "**Lateral.**\n- A face extensora olha para fora.\n- A rotação medial traz o joelho para a frente.",
   "incorretas": {
-   "B": "É a posição lateral, e não a medial, que precede a rotação axial que leva a patela à posição anterior definitiva.",
-   "C": "A posição anterior é o resultado final, após a rotação, não a posição original antes dela.",
-   "D": "A posição posterior corresponde ao destino do compartimento equivalente no membro superior (por rotação em direção oposta), não à posição original da patela no membro inferior."
+   "B": "**Oposto.**\n- Seria depois de rodar demais.",
+   "C": "**Após a rotação.**\n- Posição final.",
+   "D": "**Não é a posição.**\n- Posterior."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0199": {
-  "conceito": "A haste telescopada de **Fassier-Duvall** é um sistema moderno de fixação intramedular para o tratamento cirúrgico das fraturas e deformidades ósseas na osteogênese imperfeita, projetado como peça única, inserido de forma minimamente invasiva (por via percutânea, sem necessidade de artrotomia), com um mecanismo de expansão telescópica que acompanha o crescimento longitudinal do osso, ancorado proximalmente por uma peça em T, reduzindo a necessidade de revisões cirúrgicas frequentes.",
-  "correta": "D. A osteotomia com fixação demonstrada utiliza a haste telescopada de Fassier-Duvall.",
+  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Hastes na OI\n| Haste | Tipo |\n|---|---|\n| Sofield-Millar | ==osteotomias múltiplas em espeto== (\"shish kebab\") + haste não extensível |\n| Bailey-Dubow, Sheffield | extensíveis (telescopadas) com T |\n| ==Fassier-Duval== | ==telescopada== inserida por via proximal, rosca nas epífises; menos cirurgias abertas |\n| Rush, Steinmann | não extensíveis (migram com o crescimento) |\n\n> **Na prova:** haste telescopada da figura = ==Fassier-Duval==",
+  "correta": "**Fassier-Duval.**\n- Telescopada, cresce com a criança.\n- Fixada nas epífises por rosca.",
   "incorretas": {
-   "A": "A técnica de **Sofield** (ou Sofield-Millar) refere-se à técnica de múltiplas osteotomias com realinhamento dos fragmentos (\"shish kebab\"), tradicionalmente associada a hastes não telescopadas ou a sistemas mais antigos, distinta do sistema moderno de peça única mostrado.",
-   "B": "Um pino de **Steinmann** é um dispositivo de fixação simples e não expansível, sem o mecanismo telescópico mostrado na imagem.",
-   "C": "O sistema **Russell-Taylor** é destinado a fraturas do fêmur em adultos (fêmur proximal/diafisário), não um sistema telescópico pediátrico para osteogênese imperfeita."
+   "A": "**Técnica de osteotomias.**\n- Haste não extensível.",
+   "B": "**Pino liso.**\n- Não telescopado.",
+   "C": "**Haste de adulto.**\n- Bloqueada, não telescopada."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0200": {
-  "conceito": "O ângulo coxa-pé (\"thigh-foot angle\"), formado entre o eixo longitudinal da coxa e o eixo do pé, é o parâmetro clínico utilizado para avaliar a **torção tibial**: um ângulo com o pé rodado internamente em relação ao eixo da coxa sugere torção tibial interna, enquanto um ângulo com rotação externa excessiva sugere torção tibial externa, exatamente a medida angular representada na imagem, entre o eixo dos membros inferiores e o eixo dos pés.",
-  "correta": "B. O teste avalia torção tibial interna ou externa.",
+  "conceito": "### Perfil rotacional (Staheli)\n| Teste | Avalia |\n|---|---|\n| ângulo de progressão do pé | marcha (in-toeing/out-toeing) |\n| rotação do quadril em prono | ==anteversão femoral== (RI > 70° = anteversão aumentada) |\n| ==ângulo coxa-pé== (prono, joelho a 90°) | ==torção tibial== (normal 0 a 20° externo) |\n| eixo transmaleolar | torção tibial |\n| borda lateral do pé (bissetriz) | metatarso aduto |\n\n### Torção tibial\n| Tipo | Idade | Evolução |\n|---|---|---|\n| interna | 1 a 3 anos | corrige espontaneamente |\n| externa | mais tardia | pode piorar; dor patelofemoral |\n\n> **Na prova:** ângulo coxa-pé avalia ==torção tibial==.",
+  "correta": "**Torção tibial.**\n- Ângulo coxa-pé com a criança em prono e joelho a 90°.\n- Normal: leve rotação externa.",
   "incorretas": {
-   "A": "O varo ou valgo do joelho é avaliado pelo alinhamento angular do próprio joelho (medindo a distância intermaleolar ou intercondilar), não pela relação angular entre o eixo da coxa e o pé mostrada na imagem.",
-   "C": "A adução ou abdução dos metatarsos é avaliada especificamente pelo alinhamento do antepé em relação ao retropé (linha bissetriz do calcanhar), um teste diferente e mais focal do que a avaliação rotacional de todo o membro mostrada.",
-   "D": "A anteversão ou retroversão do colo femoral é avaliada pela rotação do quadril (por exemplo, no teste de Craig, com a criança em decúbito ventral e o joelho fletido), um teste diferente do alinhamento coxa-pé mostrado na imagem."
+   "A": "**Plano coronal.**\n- Avaliado em pé.",
+   "C": "**Bissetriz do calcanhar.**\n- Outro teste.",
+   "D": "**Rotação do quadril em prono.**\n- Outro teste."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0201": {
-  "conceito": "A coxa vara do desenvolvimento (diferente da coxa vara congênita associada a outras síndromes, e diferente da epifisiólise) é uma condição relativamente rara cuja epidemiologia, ao contrário de outras doenças pediátricas do quadril como a doença de Perthes (mais comum em meninos caucasianos) ou a displasia do desenvolvimento do quadril (mais comum em meninas), **não apresenta predileção conhecida por sexo ou raça**, acomete meninos e meninas de forma equivalente, em diferentes grupos étnicos, sem o padrão demográfico característico observado em outras patologias do quadril infantil.",
-  "correta": "D. A coxa vara do desenvolvimento acomete igualmente meninos e meninas, sem predileção por raça.",
+  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Epidemiologia\n- Rara (1:25.000).\n- ==Igual entre os sexos==, ==sem predileção racial==.\n- Bilateral em 30 a 50%.\n\n> **Na prova:** coxa vara do desenvolvimento = ==meninos e meninas igualmente, sem predileção racial==",
+  "correta": "**Igual entre sexos, sem predileção racial.**\n- Distribuição homogênea.\n- Bilateral em até metade.",
   "incorretas": {
-   "A": "Não há predileção por sexo masculino nem por etnia caucasiana na coxa vara do desenvolvimento, esse padrão é mais característico da doença de Perthes.",
-   "B": "Não há predileção por sexo masculino na coxa vara do desenvolvimento, a condição acomete meninos e meninas igualmente.",
-   "C": "Não há predileção por etnia caucasiana especificamente, a condição não tem padrão racial característico."
+   "A": "**Predomínio inexistente.**\n- Sem sexo ou raça.",
+   "B": "**Sexo errado.**\n- Igual.",
+   "C": "**Raça errada.**\n- Sem predileção."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0202": {
-  "conceito": "Entre as síndromes artrogripóticas, a síndrome de **Freeman-Sheldon** (também chamada de displasia craniocarpotarsal) tem uma apresentação facial e de extremidades bastante característica, que a diferencia das demais síndromes desse grupo:\n- **Face**: aparência \"assobiante\" (whistling face), com boca pequena e projetada para frente, sulco nasolabial profundo e bochechas proeminentes, como se a criança estivesse permanentemente assobiando.\n- **Mãos**: desvio ulnar e contraturas em flexão dos dedos (\"mão em soco de boxeador\", windmill vane hand).\n- **Pés**: pés tortos congênitos rígidos, frequentemente bilaterais.\n\nEssa combinação de face assobiante + desvio ulnar das mãos + pés tortos rígidos é o quadro clássico e patognomônico da síndrome de Freeman-Sheldon entre as várias síndromes artrogripóticas.",
-  "correta": "C. A associação de aparência facial assobiante, desvio ulnar das mãos e pés tortos rígidos caracteriza a síndrome de Freeman-Sheldon.",
+  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n### Artrogriposes distais\n| Síndrome | Achados |\n|---|---|\n| ==Freeman-Sheldon== (DA2A) | ==face assobiante== (\"whistling face\"), microstomia, ==desvio ulnar dos dedos==, pé torto rígido, escoliose |\n| Sheldon-Hall (DA2B) | semelhante, face menos afetada |\n| Larsen | luxações múltiplas (joelhos, quadris, cotovelos), face achatada |\n| Möbius | paralisia facial e do abducente |\n| Cornelia de Lange | sinofre, microcefalia, deficiência de membros superiores |\n\n> **Na prova:** face assobiante + desvio ulnar + pé torto rígido = ==Freeman-Sheldon==",
+  "correta": "**Freeman-Sheldon.**\n- Face assobiante com microstomia.\n- Desvio ulnar e pés tortos rígidos.",
   "incorretas": {
-   "A": "A síndrome de Larsen se caracteriza por luxações articulares múltiplas e face achatada característica, não pela aparência assobiante.",
-   "B": "A síndrome de Möbius se caracteriza por paralisia facial bilateral e comprometimento de nervos cranianos, não pelo quadro descrito de mãos e pés.",
-   "D": "A síndrome de Cornelia de Lange se caracteriza por retardo de crescimento, sinofris e outras dismorfias faciais distintas da aparência assobiante descrita."
+   "A": "**Luxações múltiplas.**\n- Face achatada.",
+   "B": "**Paralisia facial.**\n- VI e VII pares.",
+   "D": "**Sinofre e microcefalia.**\n- Membros superiores curtos."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0203": {
