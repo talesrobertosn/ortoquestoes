@@ -95,6 +95,7 @@ type ChaveFaceta =
   | 'dificuldades'
   | 'comImagem'
   | 'comComentario'
+  | 'soSimulados'
   | 'situacao'
   | 'busca'
 
@@ -162,6 +163,7 @@ function aplicaUm(
   }
   if (ignorar !== 'comImagem' && filtros.comImagem && item.img !== 1) return false
   if (ignorar !== 'comComentario' && filtros.comComentario && item.c !== 1) return false
+  if (ignorar !== 'soSimulados' && filtros.soSimulados && item.sim !== 1) return false
 
   if (ignorar !== 'situacao' && filtros.situacao !== 'todas') {
     const registro = contexto.respondidas[item.id]
@@ -210,6 +212,8 @@ export interface Contagens {
   porAno: Record<number, number>
   porDificuldade: Record<string, number>
   porSituacao: Record<string, number>
+  /** questões OrtoQuestões Simulados no recorte, sem contar o próprio filtro */
+  simulados: number
 }
 
 export function contar(
@@ -225,6 +229,7 @@ export function contar(
     porAno: {},
     porDificuldade: {},
     porSituacao: {},
+    simulados: 0,
   }
 
   for (const item of indice.questoes) {
@@ -262,6 +267,7 @@ export function contar(
       const prova = indice.provas[item.p]
       if (prova) contagens.porProva[prova] = (contagens.porProva[prova] ?? 0) + 1
     }
+    if (item.sim === 1 && aplicaUm(indice, item, filtros, contexto, 'soSimulados')) contagens.simulados++
     if (aplicaUm(indice, item, filtros, contexto, 'anos') && item.a !== null) {
       contagens.porAno[item.a] = (contagens.porAno[item.a] ?? 0) + 1
     }

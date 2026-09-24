@@ -18,7 +18,6 @@ import { usarEtiquetas } from '../estado/preferencias'
 import { href } from '../util/rotas'
 import { usarConta } from '../conta/ContextoConta'
 import { Icone, type NomeIcone } from '../componentes/Icone'
-import { PROVA_SIMULADOS } from '../config'
 
 // A maior parte do acervo ainda traz a prova genérica "TEOT/TARO" (sem
 // diferenciar as duas), então por enquanto as três formas aparecem como uma
@@ -75,7 +74,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     const teotTaro = PROVAS_TEOT_TARO.filter((p) => provasNoAcervo.includes(p))
     if (teotTaro.length > 0) grupos.push({ rotulo: 'TEOT/TARO', provas: teotTaro })
     for (const prova of provasNoAcervo) {
-      if (PROVAS_TEOT_TARO.includes(prova) || prova === PROVA_SIMULADOS) continue
+      if (PROVAS_TEOT_TARO.includes(prova)) continue
       grupos.push({ rotulo: prova, provas: [prova] })
     }
     return grupos
@@ -85,8 +84,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
   // Filtro que não tem nenhuma opção não vira campo vazio na tela.
   const temProva = gruposProva.length > 0
-  const totalSimulados = gerais?.porProva[PROVA_SIMULADOS] ?? 0
-  const soSimulados = filtros.provas.includes(PROVA_SIMULADOS)
+  const totalSimulados = gerais?.simulados ?? 0
+  const soSimulados = filtros.soSimulados
   const temAno = (indice?.anos.length ?? 0) > 0
   const temComentario = useMemo(
     () => (indice?.questoes ?? []).some((q) => q.c === 1),
@@ -126,14 +125,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     definirFiltros((atuais) => ({ ...atuais, ...parcial }))
   }
 
-  /** Liga ou desliga o recorte dos simulados autorais nos filtros. */
-  function alternarSimulados(ligar: boolean) {
-    atualizar({ provas: ligar ? [...filtros.provas.filter((x) => x !== PROVA_SIMULADOS), PROVA_SIMULADOS] : filtros.provas.filter((x) => x !== PROVA_SIMULADOS) })
-  }
-
-  /** Recorte dos simulados já no modo com tempo, levando ao formato. */
+  /** Recorte dos OrtoQuestões Simulados já no modo com tempo, levando ao formato. */
   function montarSimulado() {
-    atualizar({ provas: [PROVA_SIMULADOS] })
+    atualizar({ soSimulados: true })
     definirSimulado(true)
     document.getElementById('etapa-formato')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
@@ -188,21 +182,21 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
       {totalSimulados > 0 && (
         <section className="tr-simulados" aria-labelledby="tr-simulados-titulo">
           <div className="tr-simulados__texto">
-            <span className="tr-simulados__selo">Autoral</span>
+            <span className="tr-simulados__selo">Simulados</span>
             <h2 id="tr-simulados-titulo">OrtoQuestões Simulados</h2>
             <p>
-              Questões inéditas feitas pelo OrtoQuestões a partir da bibliografia de referência, no padrão
-              das provas de subespecialidade. <strong className="numerico">{totalSimulados}</strong> questões, todas comentadas.
+              Questões elaboradas de acordo com a bibliografia de referência e inspiradas no padrão de cada
+              prova. <strong className="numerico">{totalSimulados}</strong> questões, todas comentadas.
             </p>
           </div>
           <div className="tr-simulados__acoes">
-            <button type="button" className="botao botao--principal" onClick={() => sessaoRapida({ provas: [PROVA_SIMULADOS] })}>
+            <button type="button" className="botao botao--principal" onClick={() => sessaoRapida({ soSimulados: true })}>
               <Icone nome="raio" tamanho={18} /> 10 questões agora
             </button>
             <button type="button" className="botao" onClick={montarSimulado}>
               <Icone nome="calendario" tamanho={18} /> Simulado com tempo
             </button>
-            <button type="button" className="tr-pilula" aria-pressed={soSimulados} onClick={() => alternarSimulados(!soSimulados)}>
+            <button type="button" className="tr-pilula" aria-pressed={soSimulados} onClick={() => atualizar({ soSimulados: !soSimulados })}>
               {soSimulados ? 'Usando nos filtros' : 'Usar nos filtros abaixo'}
             </button>
           </div>
@@ -305,6 +299,17 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                     </button>
                   )
                 })}
+              </div>
+            </div>
+          )}
+          {totalSimulados > 0 && (
+            <div className="tr-grupo">
+              <span className="tr-grupo__rotulo">OrtoQuestões Simulados</span>
+              <div className="tr-pilulas">
+                <button type="button" className="tr-pilula tr-pilula--simulados" aria-pressed={soSimulados} onClick={() => atualizar({ soSimulados: !soSimulados })}>
+                  Só simulados
+                  <span className="numerico">{contagens?.simulados ?? 0}</span>
+                </button>
               </div>
             </div>
           )}

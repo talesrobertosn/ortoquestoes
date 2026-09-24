@@ -77,6 +77,7 @@ export function filtrosParaConsulta(filtros: Filtros): string {
   if (filtros.dificuldades.length) p.set('dif', filtros.dificuldades.join(','))
   if (filtros.comImagem) p.set('imagem', '1')
   if (filtros.comComentario) p.set('comentario', '1')
+  if (filtros.soSimulados) p.set('simulados', '1')
   if (filtros.incluirAnuladas) p.set('anuladas', '1')
   if (!filtros.embaralhar) p.set('ordem', 'prova')
   if (filtros.limite) p.set('limite', String(filtros.limite))
@@ -109,6 +110,7 @@ export function consultaParaFiltros(consulta: URLSearchParams): Filtros {
     ),
     comImagem: consulta.get('imagem') === '1',
     comComentario: consulta.get('comentario') === '1',
+    soSimulados: consulta.get('simulados') === '1',
     incluirAnuladas: consulta.get('anuladas') === '1',
     embaralhar: consulta.get('ordem') !== 'prova',
     limite: Number.isFinite(limite) && limite > 0 ? Math.floor(limite) || 1 : null,

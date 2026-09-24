@@ -6,7 +6,7 @@ import { AvaliarComentario } from './AvaliarComentario'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { ComentarioIA, Letra, Questao, Resposta } from '../dados/tipos'
 import { ROTULO_DIFICULDADE } from '../dados/tipos'
-import { PROVA_SIMULADOS, recurso } from '../config'
+import { recurso, ROTULO_SIMULADOS } from '../config'
 import { href } from '../util/rotas'
 import { EstrelaCheia, Icone } from './Icone'
 import { ContribuirComentario } from './ContribuirComentario'
@@ -247,7 +247,8 @@ export function CartaoQuestao({
         <div className="qz-topo">
           <div className="qz-topo__info">
             {numero && total ? <span className="qz-numero">Questão {numero}<small> de {total}</small></span> : <span className="qz-numero">Questão</span>}
-            {(questao.prova || questao.ano) && <span className={'qz-origem' + (questao.prova === PROVA_SIMULADOS ? ' qz-origem--simulado' : '')}>{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {(questao.prova || questao.ano) && <span className="qz-origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {questao.simulado && <span className="qz-origem qz-origem--simulado">{ROTULO_SIMULADOS}</span>}
             {questao.anulada && <span className="qz-chip qz-chip--alerta">Anulada</span>}
           </div>
 
@@ -307,7 +308,8 @@ export function CartaoQuestao({
 
         {(etiquetasVisiveis || questao.prova || questao.ano) && (
           <div className={'qz-etiquetas' + (etiquetasVisiveis ? '' : ' qz-etiquetas--so-origem')}>
-            {(questao.prova || questao.ano) && <span className={'qz-chip qz-chip--origem' + (questao.prova === PROVA_SIMULADOS ? ' qz-chip--simulado' : '')}>{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {(questao.prova || questao.ano) && <span className="qz-chip qz-chip--origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {questao.simulado && <span className="qz-chip qz-chip--origem qz-chip--simulado">{ROTULO_SIMULADOS}</span>}
             {etiquetasVisiveis && <>
               <span className="qz-chip qz-chip--tema">{questao.tema}</span>
               {questao.subtemas.slice(0, 2).map((s) => <span className="qz-chip" key={s}>{s}</span>)}
@@ -316,11 +318,10 @@ export function CartaoQuestao({
           </div>
         )}
 
-        {questao.prova === PROVA_SIMULADOS && (
+        {questao.simulado && (
           <p className="meta origem-questao">
-            Questão autoral dos <strong>OrtoQuestões Simulados</strong>, elaborada pelo OrtoQuestões a partir
-            da bibliografia de referência da subespecialidade (a obra usada está nas referências do
-            comentário). Não reproduz nenhuma prova oficial.
+            <strong>{ROTULO_SIMULADOS}</strong>: questão elaborada de acordo com a bibliografia de
+            referência e inspirada no padrão da prova{questao.prova ? ` ${questao.prova}` : ''}.
           </p>
         )}
         <div className="questao__enunciado">{questao.enunciado}</div>

@@ -155,6 +155,7 @@ export function descreverFiltros(filtros: Filtros): string {
   const assuntos = filtros.temas.length + filtros.subtemas.length
   partes.push(assuntos === 0 ? 'Todos os assuntos' : `${assuntos} assunto(s)`)
   if (filtros.provas.length) partes.push(filtros.provas.join(', '))
+  if (filtros.soSimulados) partes.push('OrtoQuestões Simulados')
   if (filtros.anos.length) partes.push(filtros.anos.join(', '))
   return partes.join(' · ')
 }

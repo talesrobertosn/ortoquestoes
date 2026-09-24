@@ -27,11 +27,12 @@ export const SITE = {
 } as const
 
 /**
- * Rótulo de "prova" das questões autorais do site. Não é prova oficial: são os
- * simulados do OrtoQuestões, com área própria no Treinar e fora da lista de
- * provas. É por este rótulo que um acesso de assinante poderá ser aplicado.
+ * Nome da etiqueta das questões elaboradas pelo site no padrão de uma prova
+ * (campo `simulado` da questão). Ela se soma à prova, que continua sendo a da
+ * prova de referência. É por essa etiqueta que um acesso de assinante poderá
+ * ser aplicado.
  */
-export const PROVA_SIMULADOS = 'OrtoQuestões Simulados'
+export const ROTULO_SIMULADOS = 'OrtoQuestões Simulados'
 
 /** Prefixo de todas as chaves gravadas no localStorage. */
 export const PREFIXO_ARMAZENAMENTO = 'ortoquestoes:'

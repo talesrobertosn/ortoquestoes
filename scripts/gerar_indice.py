@@ -97,6 +97,8 @@ def principal() -> int:
                     if questao.get("comentarioIA") or questao["id"] in comentados
                     else 0,
                     "cc": 1 if questao.get("comentariosComunidade") else 0,
+                    # Etiqueta OrtoQuestões Simulados: soma-se à prova, não a substitui.
+                    **({"sim": 1} if questao.get("simulado") else {}),
                 }
             )
             if questao.get("ano") and questao["ano"] not in anos:

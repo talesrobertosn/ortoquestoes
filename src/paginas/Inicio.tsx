@@ -16,7 +16,7 @@ import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
 import { planoRevisao } from '../estado/planoRevisao'
-import { PROVA_SIMULADOS, SITE } from '../config'
+import { SITE } from '../config'
 import { calcularStreak } from '../estado/streak'
 
 // A maior parte do acervo ainda não distingue TEOT de TARO (prova genérica
@@ -78,7 +78,7 @@ export function Inicio() {
     const grupos: { rotulo: string; provas: string[]; quantidade: number }[] = []
     if (teotTaroTotal > 0) grupos.push({ rotulo: 'TEOT/TARO', provas: PROVAS_TEOT_TARO, quantidade: teotTaroTotal })
     for (const prova of indice.provas ?? []) {
-      if (PROVAS_TEOT_TARO.includes(prova) || prova === PROVA_SIMULADOS) continue
+      if (PROVAS_TEOT_TARO.includes(prova)) continue
       const quantidade = contagens.porProva[prova] ?? 0
       if (quantidade > 0) grupos.push({ rotulo: prova, provas: [prova], quantidade })
     }
@@ -300,12 +300,12 @@ export function Inicio() {
                     {grupo.rotulo}
                   </a>
                 ))}
-                {(contagens.porProva[PROVA_SIMULADOS] ?? 0) > 0 && (
+                {contagens.simulados > 0 && (
                   <a
                     className="provas-selecao__simulados"
-                    href={href(`/treinar${filtrosParaConsulta({ ...FILTROS_VAZIOS, provas: [PROVA_SIMULADOS] })}`)}
+                    href={href(`/treinar${filtrosParaConsulta({ ...FILTROS_VAZIOS, soSimulados: true })}`)}
                   >
-                    OrtoQuestões Simulados <small>autoral</small>
+                    OrtoQuestões Simulados
                   </a>
                 )}
               </div>

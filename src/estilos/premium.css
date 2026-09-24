@@ -2193,4 +2193,5 @@ a.rs-marco:hover { color: var(--texto); border-color: var(--traco-forte); }
 .qz-origem--simulado, .qz-chip--origem.qz-chip--simulado { background: linear-gradient(135deg, #ffe3a3, var(--ouro)); color: #5c3f06; border-color: transparent; }
 :root[data-tema="escuro"] .qz-origem--simulado, :root[data-tema="escuro"] .qz-chip--origem.qz-chip--simulado { background: linear-gradient(135deg, #ffe3a3, var(--ouro)); color: #5c3f06; border-color: transparent; }
 .provas-selecao a.provas-selecao__simulados { border-color: color-mix(in srgb, var(--ouro) 50%, var(--traco)); background: var(--ouro-veu); }
-.provas-selecao__simulados small { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ouro); }
+.tr-pilula--simulados[aria-pressed="true"] { background: linear-gradient(135deg, #ffe3a3, var(--ouro)); border-color: transparent; color: #5c3f06; }
+.tr-pilula--simulados[aria-pressed="true"] span { color: #5c3f06; }

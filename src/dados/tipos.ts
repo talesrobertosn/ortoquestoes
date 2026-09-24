@@ -73,6 +73,8 @@ export interface Questao {
   tema: string
   subtemas: string[]
   prova: TipoProva | null
+  /** Etiqueta OrtoQuestões Simulados: questão elaborada no padrão da prova, soma-se a ela. */
+  simulado?: boolean
   ano: number | null
   dificuldade: Dificuldade | null
   enunciado: string
@@ -116,6 +118,8 @@ export interface ItemIndice {
   cia: 0 | 1
   /** tem ao menos um comentário da comunidade */
   cc: 0 | 1
+  /** OrtoQuestões Simulados (ausente nas demais) */
+  sim?: 1
 }
 
 /**
@@ -181,6 +185,8 @@ export interface Filtros {
   dificuldades: Dificuldade[]
   comImagem: boolean
   comComentario: boolean
+  /** só as questões com a etiqueta OrtoQuestões Simulados */
+  soSimulados: boolean
   incluirAnuladas: boolean
   embaralhar: boolean
   limite: number | null
@@ -196,6 +202,7 @@ export const FILTROS_VAZIOS: Filtros = {
   dificuldades: [],
   comImagem: false,
   comComentario: false,
+  soSimulados: false,
   incluirAnuladas: false,
   embaralhar: true,
   limite: null,

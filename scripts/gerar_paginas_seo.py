@@ -111,9 +111,6 @@ footer { border-top: 1px solid var(--traco); margin-top: 3rem; padding-top: 1rem
 """.strip()
 
 
-PROVA_SIMULADOS = "OrtoQuestões Simulados"
-
-
 def esc(texto: str) -> str:
     return html.escape(texto or "", quote=False)
 
@@ -395,7 +392,7 @@ def principal() -> int:
             dict(q, tema_slug=slug)
             for q in dados["questoes"]
             if q["id"] in comentarios and not q.get("anulada") and not q.get("figuraPendente")
-            and q.get("prova") != PROVA_SIMULADOS
+            and not q.get("simulado")
         ]
         pasta = DIR_SAIDA / slug
         if pasta.exists():
