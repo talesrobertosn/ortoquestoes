@@ -5701,104 +5701,96 @@
   "conferido": false
  },
  "mao-0490": {
-  "conceito": "Na escápula alta congênita, ou deformidade de Sprengel, a escápula não desceu durante o desenvolvimento e ficou pequena, rodada e alta, muitas vezes presa ao pescoço por um osso omovertebral. A cirurgia desce a escápula, e é justamente descer que cria o perigo.",
-  "correta": "A osteotomia da clavícula, associada na técnica de Wilkinson e Campbell, existe para diminuir o risco de lesão neurológica. O raciocínio é mecânico: ao rebaixar a escápula, o conjunto formado pela clavícula e pela primeira costela funciona como uma tesoura sobre o plexo braquial e os vasos subclávios, que ficam estirados e comprimidos no espaço costoclavicular. Seccionar a clavícula solta essa tesoura e permite a descida sem tracionar o plexo. A paralisia do plexo é a complicação mais temida dessa cirurgia, e é ela que a osteotomia previne.",
+  "conceito": "### Escápula alta congênita (Sprengel)\n- Falha da descida da escápula (9ª a 12ª semana); escápula pequena, alta e ==rodada medialmente== (ângulo inferior para medial).\n- ==Osso omovertebral== em cerca de 1/3.\n- Associações: ==Klippel-Feil==, escoliose, costelas anômalas, anomalias renais.\n- Limitação da ==abdução==.\n\n### Cavendish (gravidade)\n| Grau | Aspecto |\n|---|---|\n| 1 | muito leve, ombros no mesmo nível vestido |\n| 2 | leve, nódulo no pescoço vestido |\n| 3 | moderado, ombro 2 a 5 cm mais alto |\n| 4 | grave, ângulo superior perto do occipital |\n\n### Cirurgias (idade ideal 3 a 8 anos)\n| Técnica | Princípio |\n|---|---|\n| Woodward | desinserção da origem do trapézio e romboides na coluna, reinserção mais distal |\n| Green | desinserção na escápula, descida e reinserção |\n| ==Wilkinson e Campbell== | descida + ==osteotomia da clavícula== |\n\n- A ==osteotomia da clavícula== evita a ==lesão do plexo braquial== por compressão costoclavicular ao descer a escápula.\n\n> **Na prova:** osteotomia clavicular no Sprengel = ==reduzir risco de lesão neurológica==.",
+  "correta": "**Diminuir risco de lesão neurológica.**\n- Descer a escápula aperta o plexo entre clavícula e 1ª costela.\n- A osteotomia solta essa tesoura.\n- Paralisia do plexo é a complicação mais temida.",
   "incorretas": {
-   "A": "O ganho estético vem da descida da escápula em si, e não da osteotomia clavicular, que, aliás, acrescenta uma cicatriz.",
-   "B": "A retroversão da escápula não é o alvo do procedimento.",
-   "D": "A inclinação inferior da escápula também não: o que se corrige é a altura e a rotação, e isso se faz na própria escápula."
+   "A": "**Estética vem da descida.**\n- A osteotomia acrescenta cicatriz.",
+   "B": "**Não é alvo.**\n- Retroversão não se corrige assim.",
+   "D": "**Correção na escápula.**\n- Altura e rotação se corrigem na própria escápula."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0491": {
-  "conceito": "Nas classificações topográficas das deficiências congênitas, **T** indica deficiência terminal: não há segmentos normais além do nível afetado. O código longitudinal paraxial completo descreve ausência ao longo de um dos lados do membro, padrão também chamado de hemimelia longitudinal completa.",
-  "correta": "**B.** O tipo **T/1** representa hemimelia **terminal, longitudinal paraxial completa**.",
+  "alerta": "A notação T/1 depende do sistema didático adotado (Frantz e O'Rahilly e derivados), e a correspondência exata não pôde ser conferida. Guarde os conceitos de terminal, intercalar, transversal e paraxial.",
+  "conceito": "### Frantz e O'Rahilly (deficiências congênitas)\n| Termo | Significado |\n|---|---|\n| ==terminal== | ==nada normal distal== ao nível afetado |\n| intercalar | segmento intermediário ausente, ==distal preservado== (focomelia) |\n| transversal | ausência de toda a largura do membro (coto) |\n| ==paraxial (longitudinal)== | ==só um lado== (pré-axial radial/tibial ou pós-axial ulnar/fibular) |\n| completa / parcial | todo o osso ou parte |\n\n### Exemplos\n| Nome | Classificação |\n|---|---|\n| amelia | terminal transversal completa |\n| focomelia | intercalar transversal |\n| ==mão torta radial com ausência total do rádio== | ==terminal longitudinal paraxial (pré-axial) completa== |\n| hemimelia fibular | paraxial pós-axial |\n\n### Classificação atual\n- IFSSH/Swanson e OMT (Oberg-Manske-Tonkin).\n\n> **Na prova:** T/1 = hemimelia ==terminal, longitudinal paraxial completa== (veja o alerta).",
+  "correta": "**Terminal, longitudinal paraxial completa.**\n- Terminal: nada normal distal.\n- Paraxial: falta um lado do membro por inteiro.",
   "incorretas": {
-   "A": "Mistura os conceitos terminal e intercalar; uma deficiência não pode ser simultaneamente classificada pelos dois padrões topográficos.",
-   "C": "Intercalar significa preservação de segmentos distais e não corresponde ao prefixo T.",
-   "D": "A descrição longitudinal paraxial completa está correta, mas o termo intercalar contradiz o código terminal."
+   "A": "**Contradição.**\n- Não pode ser terminal e intercalar.",
+   "C": "**Intercalar.**\n- Preserva o distal; não é T.",
+   "D": "**Intercalar contradiz T.**\n- Paraxial completa estaria certo."
   },
   "referencias": [
    "Swanson AB. A classification for congenital limb malformations. J Hand Surg Am. 1976;1:8-22.",
    "Goldfarb CA et al. Congenital hand differences: terminology and classification. J Hand Surg Am. 2015;40:2064-2069."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "moderado",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0492": {
-  "conceito": "Navarro propôs ler o carpo como três colunas verticais, e a leitura persiste porque explica bem a mecânica: a coluna lateral, ou móvel, é a de flexão e extensão; a central é a de carga; a medial é a de rotação.",
-  "correta": "A coluna central é formada pelo semilunar, o capitato e o hamato. É por ela que passa a maior parte da carga do punho, e é ela que define o eixo em torno do qual o carpo se move, o capitato é o centro de rotação. A coluna lateral reúne escafoide, trapézio e trapezoide; a medial, piramidal e pisiforme. Guardar a divisão ajuda a entender por que as artrodeses parciais são desenhadas como são: fundir a coluna central preserva a lateral e boa parte do movimento.",
+  "conceito": "### Ossos do carpo\n| Fileira | Ossos (radial → ulnar) |\n|---|---|\n| ==proximal== | ==escafoide, semilunar, piramidal== (+ pisiforme, sesamoide no FUC) |\n| distal | trapézio, trapezoide, capitato, hamato |\n\n- Mnemônico: \"**E**le **S**empre **P**ede **P**ão, **T**orrada, **T**rigo, **C**afé e **H**ortelã\".\n\n### Fileira proximal: segmento intercalado\n- Sem inserções tendíneas; move-se pelas fileiras vizinhas e ligamentos.\n- Escafoide faz a ponte entre as fileiras (elo mecânico).\n- Vulnerável às instabilidades (DISI, VISI).\n\n### Colunas de Navarro e Taleisnik\n| Coluna | Ossos |\n|---|---|\n| lateral (móvel) | escafoide, trapézio, trapezoide |\n| central (flexoextensão) | semilunar, capitato, hamato |\n| medial (rotação) | piramidal, pisiforme |\n\n> **Na prova:** coluna central (Navarro) = ==semilunar, capitato e hamato==",
+  "correta": "**Hamato.**\n- Coluna central: semilunar, capitato, hamato.\n- Coluna de carga; capitato é o centro de rotação.",
   "incorretas": {
-   "B": "O piramidal pertence à coluna medial, junto com o pisiforme.",
-   "C": "O trapezoide é da coluna lateral, com o escafoide e o trapézio.",
-   "D": "Junta um osso da coluna medial com um da lateral."
+   "B": "**Coluna medial.**\n- Com o pisiforme.",
+   "C": "**Trapezoide é lateral.**\n- Com escafoide e trapézio.",
+   "D": "**Mistura colunas.**\n- Medial e lateral."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0493": {
-  "conceito": "Os dois pares de membros rodam em torno do próprio eixo durante o desenvolvimento, e rodam em sentidos opostos. É essa rotação que explica por que o cotovelo aponta para trás e o joelho para a frente, e por que os dermátomos se dispõem em espiral.",
-  "correta": "O membro superior roda 90 graus lateralmente e o inferior 90 graus medialmente, por volta da sétima semana. No superior, a rotação leva o polegar da posição cranial para a lateral e coloca a superfície extensora original no dorso; no inferior, leva o hálux para medial e o joelho para a frente. Guardar o par (superior lateral, inferior medial) resolve as questões de embriologia dos dois membros de uma vez.",
+  "conceito": "### Cronologia do desenvolvimento do membro superior\n| Período | Evento |\n|---|---|\n| 4ª semana (cerca de 26 dias) | surge o broto do membro superior |\n| 5ª a 6ª semanas | placa da mão, condensação mesenquimal |\n| 7ª semana | raios digitais, apoptose interdigital |\n| ==8ª semana== | dedos separados; ==fim da organogênese== dos membros |\n| 3º mês em diante | crescimento, ossificação, maturação |\n\n### Implicações\n- Agressões entre a **4ª e a 8ª semanas** causam malformações estruturais (focomelia pela talidomida, deficiências longitudinais).\n- Depois, predominam **deformações** e alterações de crescimento.\n\n### Classificação OMT\n- Malformações (falha de formação ou diferenciação por eixo), deformações (ex.: bridas amnióticas) e displasias.\n\n### Rotação dos membros (7ª semana)\n| Membro | Rotação | Resultado |\n|---|---|---|\n| ==superior== | ==90° lateral== | polegar lateral, cotovelo para trás, extensores no dorso |\n| inferior | 90° medial | hálux medial, joelho para a frente, extensores na frente |\n\n- Explica a disposição em espiral dos dermátomos.\n\n> **Na prova:** membro superior roda ==90° lateralmente na 7ª semana==",
+  "correta": "**90° lateral e medial.**\n- Superior roda lateral; inferior roda medial.\n- Por volta da 7ª semana.",
   "incorretas": {
-   "B": "Inverte os dois sentidos.",
-   "C": "O ângulo está errado: são 90 graus, não 60.",
-   "D": "Erra o ângulo e os sentidos."
+   "B": "**Invertida.**\n- Troca os sentidos.",
+   "C": "**Ângulo errado.**\n- São 90°.",
+   "D": "**Duplamente errada.**\n- Ângulo e sentidos."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0494": {
-  "conceito": "O retalho tenar leva pele da eminência tenar para cobrir a ponta de um dedo longo, mantendo o dedo fletido contra a palma por duas a três semanas até a autonomização. É bom retalho (pele espessa, com coxim e boa cor) mas cobra a posição.",
-  "correta": "A complicação principal é a contratura em flexão da interfalângica proximal, resultado direto das duas a três semanas com o dedo dobrado contra a palma. Ela é o motivo de o retalho ser reservado a pacientes jovens, que toleram a imobilização e recuperam a extensão com reabilitação, e de ser evitado em idosos e em quem já tem rigidez. Reduz o risco desenhar o retalho mais proximal na tenar, o que exige menos flexão, e liberar cedo, com fisioterapia agressiva desde a autonomização.",
+  "conceito": "### Retalho cruzado de dedo (cross finger)\n- Pele do ==dorso do dedo vizinho== virada como página de livro sobre o defeito ==volar==.\n- Pedículo seccionado em 2 a 3 semanas.\n- Área doadora: enxerto de pele total.\n\n| Indicação | Contraindicação relativa |\n|---|---|\n| ==defeito volar com tendão ou osso exposto== (falanges média e proximal, polpa) | ==idoso== (rigidez) |\n| sem paratendão (enxerto não pega) | artrite, doença vascular (Raynaud, diabetes, tabagismo) |\n| | infecção ativa |\n\n### Variações\n| Retalho | Uso |\n|---|---|\n| cross finger reverso | defeito ==dorsal== (desepidermizado) |\n| cross finger inervado | polpa, com ramo dorsal do nervo digital |\n| Moberg, Foucher (kite) | polegar |\n\n### Retalho tenar\n- Pele da eminência tenar para a ==polpa de dedo longo== (indicador, médio, anelar).\n- Dedo fletido contra a palma por 2 a 3 semanas.\n- Complicação principal: ==contratura em flexão da IFP==.\n- Indicado em ==jovens== (crianças, mulheres jovens); evitar em idosos e rígidos.\n- Desenhar mais proximal na tenar reduz a flexão necessária.\n\n> **Na prova:** complicação do retalho tenar = ==contratura em flexão da IFP==",
+  "correta": "**Flexão da IFP.**\n- Duas a três semanas com o dedo dobrado contra a palma.\n- Reservado a jovens.\n- Desenho proximal e reabilitação precoce reduzem o risco.",
   "incorretas": {
-   "A": "A interfalângica distal fica relativamente livre durante a imobilização e não é a articulação que enrijece.",
-   "B": "A metacarpofalângica flete facilmente e recupera bem; não é ela que trava.",
-   "C": "A contratura que se instala é em flexão, e não em extensão, a posição mantida é de flexão."
+   "A": "**IFD relativamente livre.**\n- Não é a que enrijece.",
+   "B": "**MF recupera bem.**\n- Não trava.",
+   "C": "**Direção errada.**\n- A posição mantida é em flexão."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0495": {
-  "conceito": "A artrose da mão tem endereços preferenciais: interfalângicas distais, com os nódulos de Heberden; interfalângicas proximais, com os de Bouchard; e a base do polegar. No polegar especificamente, uma articulação se destaca das demais.",
-  "correta": "A carpometacarpiana do polegar (a trapeziometacarpiana) é a mais acometida, e o quadro tem nome próprio: rizartrose. A explicação é mecânica: é uma sela sem congruência óssea, mantida apenas por ligamentos, e submetida a forças de compressão que chegam a mais de dez vezes a força aplicada na ponta do polegar durante a pinça. É a artrose sintomática mais comum da mão em mulheres depois dos 50 anos, e o sinal clínico mais útil é o teste de moagem, com dor e crepitação à compressão axial com rotação.",
+  "conceito": "### Eaton-Littler e conduta na rizartrose\n| Estágio | Radiografia | Opções |\n|---|---|---|\n| ==I== | normal ou espaço **alargado** (sinovite), subluxação < 1/3 | órtese, infiltração, ==reconstrução ligamentar (Eaton-Littler)==, osteotomia de extensão do 1º MC |\n| II | estreitamento, osteófitos < 2 mm | osteotomia, artroscopia, trapezectomia parcial |\n| III | osteófitos > 2 mm, esclerose, cistos | trapezectomia (± LRTI), artrodese, prótese |\n| IV | + escafotrapeziotrapezoide (pantrapezial) | trapezectomia total |\n\n### Técnica de Eaton-Littler\n- Tira de **metade do flexor radial do carpo** passada por túnel na base do 1º MC.\n- Reconstrói o **ligamento oblíquo anterior** (freio da subluxação dorsal).\n- Só faz sentido com **cartilagem preservada**.\n\n### LRTI (Burton-Pellegrini)\n- Trapezectomia + reconstrução ligamentar + interposição tendínea (FRC ou abdutor longo).\n\n### Estágio III: artrodese × trapezectomia\n| Aspecto | Artrodese TMC | Trapezectomia (± LRTI) |\n|---|---|---|\n| perfil | ==jovem, trabalho manual pesado== | idoso, menor demanda |\n| força de pinça | preservada | menor |\n| mobilidade | perdida (não aplana a mão) | preservada |\n| recuperação | espera consolidação; risco de pseudartrose | mais rápida |\n| pré-requisito | ==STT sadia== | |\n\n### Rizartrose\n- Sela sem congruência óssea, mantida por ligamentos.\n- Pinça gera compressão de ==mais de 10 vezes== a força na ponta.\n- Mais comum em ==mulheres após 50 anos==.\n- Teste de moagem (grind): dor e crepitação à compressão axial com rotação.\n\n> **Na prova:** artrose mais comum do polegar = ==carpometacarpal (trapeziometacarpiana)==",
+  "correta": "**Carpometacarpal.**\n- Rizartrose: sela instável sob grande compressão.\n- Mulheres após 50 anos; teste de moagem.",
   "incorretas": {
-   "A": "A interfalângica do polegar é acometida com frequência muito menor.",
-   "B": "A intermetacarpal não é uma articulação com mobilidade relevante no polegar, e não é sede habitual de artrose sintomática.",
-   "D": "A metacarpofalângica do polegar adoece sobretudo de forma secundária, por trauma ou como parte da deformidade em ziguezague da rizartrose avançada, a hiperextensão compensatória."
+   "A": "**Menos frequente.**\n- IF do polegar adoece pouco.",
+   "B": "**Sem mobilidade relevante.**\n- Não é sede habitual.",
+   "D": "**Secundária.**\n- Trauma ou hiperextensão compensatória."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0496": {
-  "conceito": "Na classe 1 de Palmer, traumática, o tratamento segue a vascularização: a região central do disco é avascular e se desbrida; as bordas são vascularizadas e se reinserem ao osso de onde saíram.",
-  "correta": "A lesão 1B é a avulsão ulnar, o disco se solta da fóvea e do estiloide ulnar, com ou sem fratura do estiloide. Por ser borda vascularizada, ela é a indicação clássica de reinserção, e o reparo pode ser feito por dentro para fora, de fora para dentro, ou tudo por dentro, conforme a técnica artroscópica escolhida. É também a lesão que mais se associa a instabilidade da radioulnar distal, e por isso a que mais exige reparo e não simples desbridamento.",
+  "conceito": "### Palmer classe 1 e o tratamento\n| Tipo | Local da lesão | Tratamento |\n|---|---|---|\n| 1A | perfuração central (avascular) | desbridamento |\n| 1B | avulsão **ulnar** (fóvea, estiloide) | reinserção na **ulna** |\n| 1C | avulsão **distal** (ulnossemilunar, ulnopiramidal) | reparo ulnocarpal |\n| ==1D== | ==avulsão radial== (incisura sigmoide) | ==reinserção no rádio== (ou desbridamento em lesões pequenas) |\n\n### Por que o rádio na 1D\n- A borda solta é a **radial**: reancora-se o disco na borda da incisura sigmoide (túneis transósseos ou âncoras), artroscópico ou aberto.\n\n### Instabilidade da RUD\n- Mais associada à **1B** (lesão foveal dos ligamentos radioulnares).\n- Teste do **balote** radioulnar em pronação, neutro e supinação.\n\n- Memória: ==centro, ulnar, distal, radial== (A, B, C, D).\n\n### Classe 2 (degenerativa)\n| Tipo | Achado |\n|---|---|\n| 2A | desgaste do CFCT |\n| 2B | + condromalácia do semilunar ou ulna |\n| 2C | + perfuração do CFCT |\n| 2D | + lesão lunopiramidal |\n| 2E | + artrose ulnocarpal |\n\n> **Na prova:** reinserção do CFCT = ==Palmer 1B== (avulsão ulnar, fóvea).",
+  "correta": "**1B.**\n- Avulsão ulnar da fóvea e estiloide.\n- Borda vascularizada: reinserção.\n- Mais associada à instabilidade da RUD.",
   "incorretas": {
-   "A": "A 1A é a perfuração central, numa região avascular que não cicatriza, o tratamento é desbridamento da borda instável.",
-   "C": "A 2A é degenerativa: desgaste do disco sem perfuração e sem lesão condral, tratada conservadoramente ou com encurtamento da ulna quando há variância positiva.",
-   "D": "A 2B acrescenta condromalácia do semilunar ou da ulna, e continua sendo do espectro degenerativo, cujo tratamento ataca a variância ulnar e não a borda do disco."
+   "A": "**Central avascular.**\n- Desbridamento.",
+   "C": "**Degenerativa.**\n- Desgaste; trata a variância.",
+   "D": "**Degenerativa.**\n- Condromalácia; trata a variância."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0497": {
-  "conceito": "O nervo interósseo anterior é o ramo motor puro do mediano, que se separa dele logo abaixo do pronador redondo. Ele inerva exatamente três músculos: o flexor longo do polegar, a metade radial do flexor profundo dos dedos (indicador e médio) e o pronador quadrado.",
-  "correta": "Os músculos comprometidos são o flexor profundo do indicador e o flexor longo do polegar, o que produz o sinal clássico: pedir o gesto de \"ok\" e ver polpa contra polpa achatada em vez de um círculo, porque nem a interfalângica do polegar nem a distal do indicador conseguem fletir. E como o ramo é motor puro, não há alteração de sensibilidade, é isso que separa a síndrome da compressão do mediano no pronador e no túnel do carpo.",
+  "conceito": "### Nervo interósseo anterior (NIA)\n- Ramo **motor puro** do mediano, sai logo abaixo do pronador redondo.\n- Desce sobre a **membrana interóssea** com a artéria interóssea anterior.\n\n| Músculo inervado | Função testada |\n|---|---|\n| flexor longo do polegar | flexão da IF do polegar |\n| ==flexor profundo do indicador e do médio== | ==flexão da IFD== desses dedos |\n| pronador quadrado | pronação com cotovelo fletido |\n\n### O que fica preservado\n| Músculo | Nervo |\n|---|---|\n| flexor superficial dos dedos | mediano (acima do NIA) |\n| pronador redondo, FRC, palmar longo | mediano |\n| tenar, lumbricais 1 e 2 | mediano na mão |\n| extensores | radial (NIP) |\n\n### Sinal do O\n- Polpa contra polpa achatada; IFP do indicador flete normalmente (FSD preservado).\n- Sensibilidade **normal**.\n\n> **Na prova:** compressão do NIA enfraquece os ==flexores profundos do indicador e médio==.",
+  "correta": "**Profundo do indicador e longo do polegar.**\n- Perde a flexão da IFD do indicador e da IF do polegar.\n- Sinal do círculo; sem alteração sensitiva.",
   "incorretas": {
-   "A": "O flexor superficial é inervado pelo mediano propriamente dito, acima da origem do interósseo anterior, e fica preservado, por isso a interfalângica proximal do indicador continua fletindo. E o flexor radial do carpo também recebe ramos proximais.",
-   "B": "O flexor longo do polegar está certo, mas o superficial do indicador é o erro clássico do assunto.",
-   "C": "O flexor profundo do indicador está certo, e o flexor radial do carpo é preservado."
+   "A": "**Ambos preservados.**\n- FSD e FRC recebem ramos proximais do mediano.",
+   "B": "**FSD preservado.**\n- O erro clássico do assunto.",
+   "C": "**FRC preservado.**\n- Ramo proximal do mediano."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0498": {
