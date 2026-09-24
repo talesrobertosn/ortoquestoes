@@ -2783,104 +2783,104 @@
   "conferido": false
  },
  "pediatria-0203": {
-  "conceito": "Na embriologia do desenvolvimento dos membros, a **crista ectodérmica apical (CEA)** é a estrutura que controla o crescimento longitudinal do brotamento do membro no eixo próximo-distal. A manutenção e o desenvolvimento dessa crista dependem principalmente de sinalização por **fatores de crescimento fibroblástico (FGF)**, secretados tanto pela própria crista (FGF-4, FGF-8) quanto pelo mesênquima subjacente, em um circuito de sinalização recíproca que sustenta a proliferação celular na zona de progresso.\n\nÉ importante não confundir essa via com a **proteína sonic hedgehog (SHH)**, que é a molécula responsável pela sinalização da **zona de atividade polarizante (ZPA)**, a estrutura que controla o eixo ântero-posterior do membro (por exemplo, a diferenciação entre o lado radial/tibial e o lado ulnar/fibular), e não o desenvolvimento da crista ectodérmica apical em si.",
-  "correta": "E. O fator de crescimento fibroblástico é a substância responsável pelo desenvolvimento e manutenção da crista ectodérmica apical.",
+  "conceito": "### Formação do esqueleto do membro\n1. Broto do membro: mesoderma da placa lateral + ectoderma (4ª semana).\n2. ==Condensações mesenquimais== no formato do futuro osso.\n3. Molde cartilaginoso.\n4. Ossificação endocondral.\n\n### Origem de cada tecido\n| Tecido do membro | Origem |\n|---|---|\n| ==ossos, cartilagem, tendões, ligamentos== | ==mesoderma da placa lateral== (condensações mesenquimais) |\n| músculos | somitos (mioblastos migram para o broto) |\n| nervos periféricos, Schwann, melanócitos | crista neural |\n| vasos | angioblastos locais |\n\n### Centros de sinalização\n| Centro | Eixo | Molécula | Falha |\n|---|---|---|---|\n| crista ectodérmica apical | proximal-distal | FGF | deficiências transversas |\n| zona de atividade polarizada | radioulnar | ==Shh== | polidactilia, mão em espelho |\n| ectoderma dorsal | dorsoventral | Wnt7a | unhas palmares, nail-patella |\n\n> **Na prova:** crista ectodérmica apical = ==FGF== (fator de crescimento fibroblástico).",
+  "correta": "**FGF.**\n- Sinal da crista ectodérmica apical.\n- Comanda o crescimento proximal-distal.",
   "incorretas": {
-   "A": "O Lmx-1 está relacionado à diferenciação dorsoventral do membro, não ao desenvolvimento da crista ectodérmica apical.",
-   "B": "\"Fator de transcrição\" é um termo genérico demais e não corresponde especificamente à molécula responsável pela crista ectodérmica apical.",
-   "C": "A proteína sonic hedgehog está relacionada à zona de atividade polarizante, que controla o eixo ântero-posterior do membro, não ao desenvolvimento da crista ectodérmica apical.",
-   "D": "Não existe uma \"proteína de transcrição sonic\" como estrutura reconhecida associada a essa função embriológica."
+   "A": "**Eixo dorsoventral.**\n- Lmx-1 junto com Wnt7a.",
+   "B": "**Genérico.**\n- Não nomeia a molécula.",
+   "C": "**Zona de atividade polarizada.**\n- Eixo radioulnar.",
+   "D": "**Não existe.**\n- Distrator."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0204": {
-  "conceito": "A sinovite transitória do quadril é uma condição inflamatória autolimitada, tipicamente de instalação **aguda** (não crônica), que acomete crianças pequenas após um quadro viral recente. O achado de exame físico mais característico é a **limitação da amplitude de movimento do quadril acometido**, com a criança adotando (ou apresentando resistência ao exame fora) uma posição de conforto em **flexão, abdução e rotação externa**, postura que maximiza o volume articular e reduz a pressão intracapsular, aliviando a dor.\n\nOutros achados que ajudam a diferenciar a sinovite transitória de quadros mais graves como a artrite séptica incluem: febre ausente ou baixa (geralmente abaixo de 38°C), bom estado geral preservado, e a possibilidade de a dor ser referida para a região do joelho (via inervação compartilhada pelo nervo obturatório), todos elementos que, nesta questão, aparecem invertidos nas demais alternativas.",
-  "correta": "B. Há limitação funcional do membro afetado, com o quadril adotando uma posição de flexão e rotação externa.",
+  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n### Quadro clínico\n- Dor ==aguda==, claudicação, quadril em ==flexão, abdução e rotação externa== (maior volume capsular).\n- Dor ==referida no joelho== é comum.\n- Estado geral ==bom==; febre baixa ou ausente.\n\n> **Na prova:** sinovite transitória = limitação com quadril em ==flexão e rotação externa==",
+  "correta": "**Limitação em flexão e rotação externa.**\n- Posição de maior volume da cápsula.\n- Alivia a pressão do derrame.",
   "incorretas": {
-   "A": "A dor da sinovite transitória é de instalação aguda, não crônica.",
-   "C": "A febre, quando presente, costuma ser baixa (geralmente abaixo de 38°C), a alternativa inverte esse conceito ao afirmar um limite que soa como exceção, quando na verdade é a regra.",
-   "D": "O estado geral da criança costuma estar preservado na sinovite transitória, ao contrário do que se espera em quadros mais graves como a artrite séptica.",
-   "E": "A dor pode, sim, ser referida para a região do joelho, um achado clássico que não invalida o diagnóstico."
+   "A": "**Aguda.**\n- Não crônica.",
+   "C": "**Não é critério rígido.**\n- Febre baixa, mas pode passar de 38.",
+   "D": "**Estado geral bom.**\n- Comprometido sugere séptica.",
+   "E": "**Referida sim.**\n- Dor no joelho é comum."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0205": {
-  "conceito": "Ao contrário de várias condições que causam **sobrecrescimento** de um membro (como a síndrome de Klippel-Trénaunay, a síndrome de Beckwith-Wiedemann e os hemangiomas extensos, todos associados a hipertrofia por aumento do fluxo sanguíneo local ou desregulação do crescimento), a doença de **Legg-Calvé-Perthes** é uma causa clássica de **encurtamento** do membro inferior, a necrose avascular da cabeça femoral e o distúrbio de crescimento da fise proximal do fêmur que ela provoca levam a um encurtamento relativo do fêmur acometido, frequentemente associado a coxa vara residual.\n\nO abscesso de Brodie, por sua vez, é uma infecção óssea localizada (osteomielite subaguda) que pode, dependendo da localização, tanto estimular quanto lesar a fise, mas não é classicamente listado entre as causas típicas de discrepância de comprimento nos quadros de prova.",
-  "correta": "D. A doença de Legg-Calvé-Perthes é uma causa clássica de encurtamento do membro inferior.",
+  "conceito": "### Medida da discrepância\n| Medida | Pontos | O que mostra |\n|---|---|---|\n| ==real== (verdadeira) | ==EIAS ao maléolo medial== | comprimento ósseo |\n| aparente | umbigo (ou xifoide) ao maléolo medial | inclui obliquidade pélvica e contraturas |\n| blocos sob o pé | nivelar as cristas ilíacas | prática, funcional |\n| Galeazzi | joelhos com quadris fletidos | fêmur × tíbia |\n\n### Imagem\n- Escanometria / telerradiografia; TC (scanograma) com menos radiação.\n\n### Previsão na criança\n| Método | Uso |\n|---|---|\n| Moseley (gráfico de linha reta) | discrepância na maturidade |\n| Paley (multiplicador) | simples |\n| Green-Anderson | tabelas de crescimento |\n\n### Conduta pela discrepância prevista\n| Discrepância | Conduta |\n|---|---|\n| < 2 cm | nada ou palmilha |\n| 2 a 5 cm | ==epifisiodese== contralateral |\n| > 5 cm | alongamento |\n| > 15 a 20 cm | amputação/prótese |\n\n### Causas de discrepância\n| Encurtamento | Alongamento (hipercrescimento) |\n|---|---|\n| congênitas (DFFP, hemimelias) | Klippel-Trénaunay, hemangiomas, malformações vasculares |\n| lesão fisária (trauma, infecção) | Beckwith-Wiedemann (hemi-hipertrofia) |\n| ==Perthes==, DDQ, epifisiólise | fratura diafisária do fêmur na criança (estímulo) |\n| paralisias (pólio, PC) | inflamação metafisária crônica (Brodie, osteomielite, AIJ) |\n| radiação | NF1 |\n\n> **Na prova:** causa de encurtamento = ==Legg-Calvé-Perthes==",
+  "correta": "**Legg-Calvé-Perthes.**\n- Cabeça achatada e fechamento fisário precoce.\n- Encurta o membro.",
   "incorretas": {
-   "A": "A síndrome de Klippel-Trénaunay classicamente causa sobrecrescimento (alongamento), não encurtamento do membro.",
-   "B": "A síndrome de Beckwith-Wiedemann está associada a hemi-hipertrofia e sobrecrescimento, não a encurtamento.",
-   "C": "O abscesso de Brodie não é classicamente listado entre as causas típicas de encurtamento de membro nesse contexto.",
-   "E": "Hemangiomas extensos classicamente se associam a sobrecrescimento do membro acometido, não a encurtamento."
+   "A": "**Hipercrescimento.**\n- Malformação vascular.",
+   "B": "**Hipercrescimento.**\n- Hemi-hipertrofia.",
+   "C": "**Hiperemia metafisária.**\n- Tende a alongar.",
+   "E": "**Hipercrescimento.**\n- Aumento de fluxo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0206": {
-  "conceito": "A classificação de **Sillence** para a osteogênese imperfeita (OI) divide a doença em tipos conforme o padrão de herança e a gravidade clínica. O **tipo I** é a forma mais leve e mais comum, de herança **autossômica dominante**, caracterizada por estatura normal ou próxima do normal, escleróticas azuladas, fraturas de frequência variável (geralmente reduzindo após a puberdade) e, tipicamente, ausência de deformidades ósseas graves.\n\nOs tipos mais graves (como o tipo II, letal no período perinatal, e o tipo III, progressivamente deformante) têm, em geral, herança autossômica recessiva ou mutações de novo, associadas a fenótipos muito mais graves, informação importante para o aconselhamento genético da família, já que o padrão de herança influencia diretamente o risco de recorrência em futuras gestações.",
-  "correta": "A. O tipo I da classificação de Sillence, a forma mais leve de osteogênese imperfeita, tem herança autossômica dominante.",
+  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Base molecular\n- Colágeno tipo I: tripla hélice com repetição ==Gly-X-Y== (glicina a cada terceiro aminoácido).\n- ==Substituição da glicina== (mutação de sentido trocado em COL1A1/COL1A2) impede o enrolamento: formas graves (II, III, IV).\n- Mutação que reduz a quantidade (haploinsuficiência): forma leve (I).\n\n> **Na prova:** aminoácido do defeito do colágeno na OI = ==glicina==",
+  "correta": "**Tipo I.**\n- Autossômica dominante clássica (COL1A1).\n- Forma leve, escleras azuis.",
   "incorretas": {
-   "B": "O tipo II é a forma mais grave, geralmente letal no período perinatal, e não corresponde ao padrão autossômico dominante típico do tipo I.",
-   "C": "O tipo III é uma forma progressivamente deformante e grave, com padrão de herança frequentemente distinto do tipo I.",
-   "D": "O tipo IIIB não é uma nomenclatura padrão dentro da classificação clássica de Sillence.",
-   "E": "O tipo V, embora também autossômico dominante em algumas classificações estendidas, não é a forma clássica mais leve e mais associada ao aconselhamento familiar descrito na questão, essa é a do tipo I."
+   "B": "**Geralmente mutação nova.**\n- Letal, esporádica.",
+   "C": "**Pode ser recessiva.**\n- Nem sempre dominante.",
+   "D": "**Não existe.**\n- Subtipo inventado.",
+   "E": "**Dominante também.**\n- Mas o clássico cobrado é o I."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0207": {
-  "conceito": "Na classificação topográfica da paralisia cerebral, a **hemiparesia (ou hemiplegia)** é definida pelo comprometimento motor restrito a **um hemicorpo** (braço e perna do mesmo lado), tipicamente com o membro superior mais afetado que o inferior. Uma característica marcante e clinicamente relevante desse padrão é justamente a **assimetria** entre os dois lados do corpo, o que a diferencia claramente de outros padrões topográficos, como a diplegia (comprometimento predominante dos membros inferiores, geralmente de forma relativamente simétrica) ou a quadriplegia (comprometimento dos quatro membros, também com tendência à simetria maior entre os lados).\n\nEssa assimetria interhemicorporal é, inclusive, um dos elementos-chave no exame clínico para classificar corretamente o padrão topográfico da paralisia cerebral.",
-  "correta": "D. A hemiparesia é caracterizada pelo comprometimento de um hemicorpo, sendo a assimetria uma importante característica.",
+  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n### Topografia × lesão\n| Topografia | Lesão típica |\n|---|---|\n| ==diplegia== (MMII > MMSS) | ==leucomalácia periventricular== (prematuro); fibras dos MMII passam mais perto dos ventrículos |\n| hemiplegia | infarto (artéria cerebral média), malformação |\n| tetraplegia | lesão difusa, hipóxia grave |\n\n### Topografias\n| Tipo | Acometimento |\n|---|---|\n| ==hemiplegia== | ==um hemicorpo==, MS geralmente mais que MI; ==assimetria== |\n| diplegia | MMII mais que MMSS |\n| tetraplegia | quatro membros, tronco |\n| monoplegia | um membro (rara) |\n\n> **Na prova:** hemiparesia = ==um hemicorpo, assimetria==",
+  "correta": "**Um hemicorpo, assimetria.**\n- Membro superior costuma ser o mais afetado.\n- Assimetria é a marca.",
   "incorretas": {
-   "A": "A hemiparesia não se restringe aos membros superiores, compromete um hemicorpo inteiro (braço e perna do mesmo lado).",
-   "B": "A hemiparesia não se restringe aos membros inferiores, compromete um hemicorpo inteiro, e a simetria não é sua característica marcante.",
-   "C": "A hemiparesia não se restringe aos membros superiores, compromete todo um hemicorpo, incluindo o membro inferior correspondente.",
-   "E": "É a assimetria, não a simetria, a característica marcante da hemiparesia, os dois lados do corpo são afetados de forma bem diferente."
+   "A": "**Não é só MS.**\n- Hemicorpo.",
+   "B": "**Diplegia.**\n- MMII simétricos.",
+   "C": "**Não é só MS.**\n- Hemicorpo.",
+   "E": "**Simetria errada.**\n- É assimétrica."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0208": {
-  "conceito": "A discrepância de comprimento dos membros inferiores pode ser anatômica ou funcional e deve ser avaliada considerando magnitude, idade, causa e repercussão biomecânica. Discrepâncias pequenas podem ser compensadas por inclinação pélvica, flexão do joelho do membro longo, equino funcional do membro curto ou alterações do comprimento do passo. Na prática ortopédica, cerca de 2 cm é um limiar clássico a partir do qual a diferença passa a ter maior relevância funcional e terapêutica, embora estudos tridimensionais de marcha demonstrem que compensações cinemáticas podem começar com discrepâncias menores. O exame inclui medida real entre espinha ilíaca anterossuperior e maléolo medial, teste dos blocos, avaliação de contraturas e análise do alinhamento. Escanometria, radiografia panorâmica ou métodos equivalentes são utilizados quando é necessária mensuração precisa. Em crianças, o valor atual não basta: é fundamental estimar a discrepância prevista na maturidade para decidir entre observação, compensação no calçado, epifisiodese, encurtamento ou alongamento.",
-  "correta": "A alternativa B está correta. O enunciado pergunta quando a discrepância costuma produzir alteração compensatória perceptível da marcha. O valor tradicional utilizado em ortopedia é aproximadamente 2 cm. Acima dessa ordem de grandeza, tornam-se mais evidentes estratégias como flexão do joelho do lado longo, equino do lado curto, inclinação pélvica e assimetria do comprimento do passo. Esse valor também aparece frequentemente como um dos limites clínicos utilizados para separar discrepâncias pequenas, geralmente observadas ou compensadas, de discrepâncias que justificam avaliação terapêutica mais detalhada.",
+  "conceito": "### Medida da discrepância\n| Medida | Pontos | O que mostra |\n|---|---|---|\n| ==real== (verdadeira) | ==EIAS ao maléolo medial== | comprimento ósseo |\n| aparente | umbigo (ou xifoide) ao maléolo medial | inclui obliquidade pélvica e contraturas |\n| blocos sob o pé | nivelar as cristas ilíacas | prática, funcional |\n| Galeazzi | joelhos com quadris fletidos | fêmur × tíbia |\n\n### Imagem\n- Escanometria / telerradiografia; TC (scanograma) com menos radiação.\n\n### Previsão na criança\n| Método | Uso |\n|---|---|\n| Moseley (gráfico de linha reta) | discrepância na maturidade |\n| Paley (multiplicador) | simples |\n| Green-Anderson | tabelas de crescimento |\n\n### Conduta pela discrepância prevista\n| Discrepância | Conduta |\n|---|---|\n| < 2 cm | nada ou palmilha |\n| 2 a 5 cm | ==epifisiodese== contralateral |\n| > 5 cm | alongamento |\n| > 15 a 20 cm | amputação/prótese |\n\n> **Na prova:** comprimento real = ==EIAS ao maléolo medial==.",
+  "correta": "**2 cm.**\n- Referência clínica clássica.\n- Compensações mensuráveis podem surgir antes (veja o alerta).",
   "incorretas": {
-   "A": "Uma discrepância de 1 cm é muito comum e frequentemente é compensada sem alteração clínica evidente da marcha. Estudos instrumentados mostram que algumas crianças podem apresentar modificações cinemáticas nessa faixa, mas 1 cm não é o limiar clínico clássico utilizado nas questões de ortopedia para descompensação funcional evidente.",
-   "C": "Quatro centímetros representam discrepância clinicamente importante e já ultrapassam o ponto em que compensações da marcha costumam aparecer. Essa magnitude pode inclusive entrar em faixas de indicação de procedimentos para equalização, dependendo da discrepância prevista na maturidade, mas não corresponde ao início habitual da descompensação.",
-   "D": "Seis centímetros configuram discrepância importante, frequentemente com repercussão funcional clara e necessidade de planejamento reconstrutivo. Esperar essa magnitude para considerar que ocorre alteração da marcha subestimaria as compensações que surgem muito antes.",
-   "E": "Oito centímetros representam discrepância grave. Nessa situação podem ser necessários alongamentos, estratégias combinadas ou procedimentos reconstrutivos mais complexos. Não é um valor utilizado como limiar inicial para compensação da marcha."
+   "A": "**Bem tolerado.**\n- 1 cm não descompensa.",
+   "C": "**Já descompensou.**\n- Bem acima.",
+   "D": "**Muito alto.**\n- Faixa de alongamento.",
+   "E": "**Muito alto.**\n- Idem."
   },
+  "alerta": "O gabarito de 2 cm corresponde ao ensino ortopédico clássico. Entretanto, análise tridimensional recente encontrou início mensurável de compensações por volta de 14 mm em uma pequena coorte pediátrica. Portanto, 2 cm deve ser entendido como referência clínica convencional, não como limiar biomecânico absoluto.",
   "referencias": [
    "A pilot study of gait compensation for limb-length discrepancy in children and adolescents: threshold values and compensatory strategies in the sagittal plane. PMID: 40397432.",
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
   ],
-  "alerta": "O gabarito de 2 cm corresponde ao ensino ortopédico clássico. Entretanto, análise tridimensional recente encontrou início mensurável de compensações por volta de 14 mm em uma pequena coorte pediátrica. Portanto, 2 cm deve ser entendido como referência clínica convencional, não como limiar biomecânico absoluto.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0209": {
-  "conceito": "O ciclo da marcha é dividido em duas grandes fases: **apoio** (cerca de 60% do ciclo, quando o pé está em contato com o solo) e **balanço** (cerca de 40% do ciclo, quando o membro está no ar). A fase de balanço é caracterizada por três eventos sequenciais fundamentais: o **levantamento do pé** do solo, o **avanço do membro** para frente (encurtando-o funcionalmente para não tocar o chão, por meio da flexão de quadril, joelho e tornozelo) e a **preparação para o próximo contato inicial** com o solo, que encerra o ciclo.\n\nAs demais alternativas descrevem eventos e fases pertencentes à fase de **apoio** (desprendimento do calcanhar, desprendimento dos dedos, contato do mediopé, aplanamento do pé com o solo), não à fase de balanço.",
-  "correta": "D. A fase de balanço tem como característica o levantamento do pé, o avanço do membro e a preparação para o próximo apoio.",
+  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n> **Na prova:** apoio simples = ==40%== do ciclo.",
+  "correta": "**Levantar o pé, avançar e preparar o apoio.**\n- Três objetivos do balanço.\n- Cerca de 40% do ciclo.",
   "incorretas": {
-   "A": "O desprendimento do calcanhar ocorre ainda durante a fase de apoio, não de balanço.",
-   "B": "O desprendimento dos dedos marca a transição do apoio para o balanço, mas o evento em si ainda faz parte da fase de apoio (pré-balanço).",
-   "C": "O contato do mediopé com o solo é um evento da fase de apoio, não de balanço.",
-   "E": "O aplanamento do pé com o solo ocorre durante a fase de apoio, não durante o balanço."
+   "A": "**Apoio terminal.**\n- Ainda apoio.",
+   "B": "**Pré-balanço.**\n- Fim do apoio.",
+   "C": "**Apoio.**\n- Contato com o solo.",
+   "E": "**Resposta à carga.**\n- Apoio."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0210": {
-  "conceito": "Na coxa vara do desenvolvimento, o defeito ocorre ao nível da fise proximal do fêmur, onde há um distúrbio de ossificação encondral que leva a um deslizamento progressivo da epífise em relação à metáfise. Esse deslocamento segue um padrão direcional bem definido: a epífise se desloca em sentido **posteroinferior** em relação à metáfise (de forma conceitualmente semelhante (embora por mecanismo diferente) ao que se observa na epifisiólise proximal do fêmur), o que contribui progressivamente para o aumento da deformidade em varo do colo femoral ao longo do crescimento, caso não tratada.",
-  "correta": "B. Na coxa vara do desenvolvimento, o deslocamento da epífise proximal femoral em relação à metáfise é posteroinferior.",
+  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Epidemiologia\n- Rara (1:25.000).\n- ==Igual entre os sexos==, ==sem predileção racial==.\n- Bilateral em 30 a 50%.\n\n> **Na prova:** coxa vara do desenvolvimento = ==meninos e meninas igualmente, sem predileção racial==",
+  "correta": "**Posteroinferior.**\n- A epífise escorrega para baixo e para trás.\n- Progressão com fise vertical.",
   "incorretas": {
-   "A": "O deslocamento não ocorre em sentido anteroinferior, o padrão característico é posteroinferior.",
-   "C": "O deslocamento não ocorre em sentido anterossuperior, isso seria o oposto do padrão progressivo característico da coxa vara do desenvolvimento.",
-   "D": "O deslocamento não ocorre em sentido posterossuperior, o componente inferior, não superior, é o que caracteriza esse deslizamento.",
-   "E": "O padrão descrito não é inferolateral, o deslocamento clássico é posteroinferior, envolvendo o plano sagital, não um componente lateral isolado."
+   "A": "**Anterior errado.**\n- É posterior.",
+   "C": "**Direção oposta.**\n- Superior não.",
+   "D": "**Superior não.**\n- É inferior.",
+   "E": "**Lateral não.**\n- Posteroinferior."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0211": {
