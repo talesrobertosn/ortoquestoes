@@ -3616,107 +3616,107 @@
   "conferido": false
  },
  "pediatria-0280": {
-  "conceito": "A luxação congênita da cabeça do rádio é a anomalia congênita mais comum do cotovelo, e o que a diferencia da luxação traumática crônica é justamente a forma do osso: sendo congênita, a cabeça do rádio nunca se articulou corretamente e por isso não se modelou.",
-  "correta": "O desvio mais comum é posterior, e a cabeça do rádio é menor que o normal, hipoplásica e com a superfície convexa ou em cúpula, em vez de côncava. Junto com isso: colo do rádio longo e afilado, capítulo hipoplásico e ausência de história de trauma. Esses achados morfológicos são o que permite dizer que a luxação é congênita e não a sequela de um Monteggia despercebido, distinção que muda tudo, porque o Monteggia crônico se reduz com osteotomia da ulna e o congênito, não.",
+  "conceito": "### Luxação congênita da cabeça do rádio\n- Anomalia congênita mais comum do cotovelo.\n- ==Bilateral== na maioria e ==associada== a outras manifestações (sinostose, síndromes como nail-patella, Ehlers-Danlos, Larsen).\n- Direção mais comum: ==posterior==.\n\n### Congênita × Monteggia crônico\n| Achado | Congênita | Traumática |\n|---|---|---|\n| lado | bilateral | unilateral |\n| cabeça | ==convexa (cúpula)==, pequena | côncava, normal |\n| capítulo | hipoplásico | normal |\n| ulna | reta | deformidade plástica |\n| direção | posterior | anterior |\n\n### Tratamento\n- Observação; ressecção da cabeça após a maturidade se dor.\n\n### Morfologia da cabeça\n- Sem articulação com o capítulo, a cabeça cresce ==pequena e em cúpula== (convexa).\n- Colo alongado; rádio relativamente longo em relação à ulna.\n\n> **Na prova:** luxação congênita da cabeça do rádio = ==posterior, cabeça pequena==",
+  "correta": "**Posterior, cabeça menor que o normal.**\n- Direção mais comum: posterior.\n- Cabeça pequena e convexa (cúpula), sem molde do capítulo.",
   "incorretas": {
-   "A": "O desvio anterior ocorre e é menos comum; e uma cabeça de tamanho normal aponta para luxação adquirida, não congênita.",
-   "B": "O desvio está errado, ainda que a morfologia esteja certa.",
-   "C": "O desvio está certo e a morfologia não, e é a morfologia que faz o diagnóstico diferencial."
+   "A": "**Anterior e normal lembram o Monteggia.**\n- Traumática: cabeça côncava, normal.",
+   "B": "**Direção errada.**\n- A mais comum é posterior.",
+   "C": "**Tamanho errado.**\n- Cabeça congênita é pequena."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 21"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0281": {
-  "conceito": "A osteotomia valgizante de **Borden** para o tratamento da coxa vara do desenvolvimento é realizada na região **intertrocantérica**, corrigindo o ângulo cervicodiafisário a partir de um nível distal ao colo femoral propriamente dito. Essa localização evita manipular diretamente a fise proximal já comprometida, além de oferecer uma área óssea mais ampla e estável para a fixação do implante após a correção angular.",
-  "correta": "D. A osteotomia de Borden é realizada na região intertrocantérica.",
+  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Osteotomias valgizantes\n| Técnica | Nível |\n|---|---|\n| ==Borden== | ==intertrocantérica== (ou subtrocantérica), valgizante com placa |\n| Pauwels | intertrocantérica em Y |\n| Langenskiöld | intertrocantérica |\n\n- Meta: HE < 38°; recidiva se hipocorreção.\n\n> **Na prova:** osteotomia de Borden = ==intertrocantérica==",
+  "correta": "**Intertrocantérica.**\n- Valgizante, fixada com placa.\n- Objetivo: HE < 38°.",
   "incorretas": {
-   "A": "A região **subcapital**, logo abaixo da cabeça femoral, é um nível mais proximal do que o utilizado na osteotomia de Borden, mais associado a outras técnicas (como a osteotomia de Dunn, usada na epifisiólise).",
-   "B": "A região **basocervical**, na base do colo femoral, também é um nível mais proximal do que o intertrocantérico utilizado por Borden.",
-   "C": "A região **mediocervical**, no meio do colo femoral, é uma área de osso mais frágil e menos utilizada para osteotomias de correção angular como a de Borden."
+   "A": "**Subcapital.**\n- Nível de Dunn.",
+   "B": "**Basocervical.**\n- Kramer.",
+   "C": "**Mediocervical.**\n- Não se faz osteotomia valgizante no colo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0282": {
-  "conceito": "No pé equinovaro espástico da paralisia cerebral, o problema é o desequilíbrio: o tibial posterior e o tibial anterior espásticos invertem o pé, e o tríceps o mantém em equino. O PROCEDIMENTO DE RANCHO (de Rancho Los Amigos) combina duas coisas: o ALONGAMENTO INTRAMUSCULAR DO TIBIAL POSTERIOR, que reduz a força invertora sem aboli-la, e a TRANSFERÊNCIA DO HEMITENDÃO do tibial anterior (SPLATT, split anterior tibial tendon transfer) para o cuboide ou para o fibular curto, convertendo parte da força invertora em eversora. Some-se o alongamento do tríceps quando necessário. A lógica de dividir o tendão em vez de transferi-lo inteiro é evitar a hipercorreção para valgo, erro difícil de resgatar numa criança espástica.",
-  "correta": "Procedimento de Rancho.",
+  "conceito": "### Equinovaro na PC\n- Desequilíbrio entre ==tibial posterior== e/ou ==tibial anterior== espásticos e fibulares fracos.\n- Mais comum na ==hemiplegia==.\n- Definir o culpado: EMG dinâmica, exame (varo no apoio × balanço).\n\n### Procedimentos\n| Epônimo | Técnica |\n|---|---|\n| ==Hoffer (SPLATT)== | hemitransferência do ==tibial anterior== para o cuboide |\n| ==Rancho== | ==alongamento do tibial posterior + SPLATT== |\n| Green | transferência do tibial posterior pela membrana interóssea |\n| Kaufer | hemitransferência do tibial posterior (SPLOTT) para o fibular curto |\n| Turco | liberação posteromedial (PTC congênito) |\n\n- Transferência total do tibial posterior na PC: risco de ==valgo== (evitada).\n\n> **Na prova:** alongamento do TP + hemitransferência do TA = ==Rancho==",
+  "correta": "**Rancho.**\n- Alonga o tibial posterior.\n- Soma a hemitransferência do tibial anterior (SPLATT).",
   "incorretas": {
-   "A": "Hoffer descreveu a transferência do tibial anterior dividido (SPLATT) propriamente dita; o procedimento que ASSOCIA o alongamento do tibial posterior é o de Rancho.",
-   "C": "Turco é conhecido pela liberação póstero-medial ampla do pé torto congênito.",
-   "D": "Green é lembrado pela transferência do flexor ulnar do carpo (Green) no membro superior espástico, e não por esse procedimento no pé."
+   "A": "**Hoffer.**\n- Só a SPLATT, sem alongar o TP.",
+   "C": "**Turco.**\n- Liberação do PTC congênito.",
+   "D": "**Green.**\n- Transferência do TP pela membrana interóssea."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 31"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0283": {
-  "conceito": "A doença de Freiberg é uma osteocondrose/osteonecrose da cabeça de um metatarsal, observada mais frequentemente em adolescentes e adultos jovens, com predomínio no sexo feminino. O segundo metatarsal é disparadamente o mais afetado, provavelmente pela combinação de comprimento relativo, menor mobilidade da base e sobrecarga repetitiva. O paciente apresenta metatarsalgia localizada, edema e dor à mobilização da articulação metatarsofalângica. Radiografias iniciais podem mostrar discreta irregularidade; com evolução surgem esclerose, achatamento, fragmentação e degeneração articular. A classificação de Smillie descreve progressão do dano osteocondral em cinco estágios, do colapso subcondral inicial à artrose avançada com deformidade da cabeça. Tratamento inicial inclui redução de impacto, calçados adequados, palmilhas e, em fases dolorosas, imobilização. Casos persistentes podem exigir procedimentos preservadores da articulação ou reconstrução conforme estágio.",
-  "correta": "A alternativa B está correta. A cabeça do segundo metatarsal é o local clássico e mais frequentemente acometido pela doença de Freiberg. Esse metatarsal frequentemente recebe carga elevada e pode ser relativamente longo, aumentando o estresse na cabeça durante a fase de apoio e propulsão. O terceiro metatarsal é a segunda localização possível, mas ocorre com frequência muito menor.",
+  "conceito": "### Osteocondroses e apofisites do pé\n| Epônimo | Local | Idade/perfil |\n|---|---|---|\n| ==Köhler== | ==navicular== | meninos de 4 a 7 anos; autolimitada |\n| ==Iselin== | ==base do 5º metatarso== (fibular curto) | adolescente ativo |\n| Freiberg | cabeça do 2º metatarso | adolescente feminina |\n| Sever | apófise do calcâneo (tendão calcâneo) | 8 a 12 anos, esportes |\n| Renander | sesamoide do hálux | |\n\n### Köhler\n- Navicular achatado, esclerótico, fragmentado.\n- Tratamento: bota gessada curta alivia a dor; reossifica sem sequela.\n\n### Iselin\n- Não confundir apófise (longitudinal) com fratura (transversa).\n\n### Freiberg\n- Necrose da cabeça do ==2º metatarso== (o mais longo e rígido, maior carga); 3º em segundo.\n- Adolescentes do sexo feminino, salto alto.\n- Tratamento: descarga, palmilha; cirurgia (desbridamento, osteotomia de Gauthier).\n\n> **Na prova:** Freiberg = ==cabeça do 2º metatarso==",
+  "correta": "**2º metatarso.**\n- Mais longo e fixo: maior carga.\n- Adolescentes do sexo feminino.",
   "incorretas": {
-   "A": "A cabeça do primeiro metatarsal não é a localização típica de Freiberg. Alterações osteocondrais ou sesamoideas nessa região possuem diagnóstico diferencial diferente e devem ser investigadas conforme o padrão clínico.",
-   "C": "O terceiro metatarsal pode ser acometido, porém é menos frequente que o segundo. A armadilha é escolher um metatarsal central plausível sem lembrar que o segundo é a localização dominante nas séries.",
-   "D": "A cabeça do quarto metatarsal é uma localização possível, mas rara. Quando a questão pede o sítio mais frequente de Freiberg, a resposta permanece a cabeça do segundo metatarsal."
+   "A": "**1º metatarso.**\n- Raro.",
+   "C": "**3º metatarso.**\n- Segundo mais frequente.",
+   "D": "**4º metatarso.**\n- Raro."
   },
   "referencias": [
    "Schade VL. Surgical Management of Freiberg's Infraction: A Systematic Review. Foot Ankle Spec. 2015. PMID: 25990579.",
    "Treatment of Freiberg Disease. PMID: 29362030.",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 32"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0284": {
-  "conceito": "Um fenômeno bem descrito em amputações diafisárias realizadas em crianças em crescimento é o **sobrecrescimento ósseo apositivo** do coto residual, diferente do crescimento longitudinal normal por uma fise, esse sobrecrescimento ocorre por proliferação óssea ativa na extremidade seccionada da diáfise, podendo formar espículas ósseas dolorosas que perfuram a pele e exigem revisão cirúrgica. Esse fenômeno tem intensidade variável conforme o osso amputado, sendo classicamente mais frequente e mais intenso em ossos como a fíbula e o **úmero**, entre as opções listadas, o úmero é o osso com maior tendência a esse sobrecrescimento apositivo em crianças menores de 12 anos, exigindo acompanhamento mais próximo e, eventualmente, revisões cirúrgicas periódicas do coto.",
-  "correta": "D. O sobrecrescimento ósseo após amputação diafisária em crianças menores de 12 anos é mais comum no úmero, entre as opções apresentadas.",
+  "conceito": "### Sobrecrescimento ósseo no coto (overgrowth)\n- Complicação mais comum da amputação ==transdiafisária em crianças==.\n- Aposição óssea terminal perfura pele e partes moles (bursa, dor, úlcera).\n- Não depende da fise: é crescimento aposicional.\n\n| Osso | Frequência |\n|---|---|\n| ==úmero== | o mais comum |\n| ==fíbula== | segundo |\n| tíbia | terceiro |\n| rádio e ulna, fêmur | menos |\n\n### Prevenção e tratamento\n- Preferir ==desarticulação== quando possível (preserva a fise e evita o problema).\n- Técnicas de capa: cobrir o coto com cartilagem/osso (Marquardt, epífise do hálux ou fíbula).\n- Revisão (ressecção) frequente, até várias vezes.\n\n> **Na prova:** sobrecrescimento mais comum = ==úmero==",
+  "correta": "**Úmero.**\n- Mais frequente; fíbula em seguida.\n- Crescimento aposicional, não fisário.",
   "incorretas": {
-   "A": "A tíbia apresenta sobrecrescimento apositivo com menor frequência do que o úmero entre as opções apresentadas.",
-   "B": "O rádio não é classicamente descrito como um dos ossos mais propensos a esse fenômeno de sobrecrescimento apositivo.",
-   "C": "O fêmur apresenta esse fenômeno com menor intensidade relativa do que o úmero, entre as opções apresentadas."
+   "A": "**Tíbia.**\n- Terceira.",
+   "B": "**Rádio.**\n- Menos comum.",
+   "C": "**Fêmur.**\n- Menos comum."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0285": {
-  "conceito": "Duas informações que se apoiam na mesma mecânica. Como o braço de alavanca dos abdutores é cerca de 2,5 vezes menor que o do peso corporal, a força que eles precisam gerar para equilibrar a pelve é da ordem de 2,5 vezes o peso do corpo. E a elevação da perna estendida, que parece um exercício inofensivo, exige contração vigorosa do iliopsoas com o membro em alavanca longa: a carga resultante na cabeça femoral chega a valores comparáveis aos da fase de apoio da marcha. É exatamente por isso que esse movimento não é recomendado no pós-operatório precoce.",
-  "correta": "Cerca de 2,5 vezes o peso corporal, e a elevação da perna estendida gera carga semelhante à da fase de apoio da marcha.",
+  "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n### Carga no quadril\n| Situação | Força articular / abdutora |\n|---|---|\n| apoio bipodal | cerca de 1/3 do peso por quadril |\n| apoio monopodal (parado) | cerca de 2,5 a 3 vezes o peso |\n| marcha | 3 a 5 vezes |\n| ==corrida== | ==até cerca de 10 vezes== |\n\n- Braço de alavanca: peso corporal (longo) × abdutores (curto): por isso os abdutores precisam de muita força.\n- Bengala do lado ==oposto== reduz a carga.\n\n### Elevação da perna estendida\n- Longo braço de alavanca do membro: carga na cabeça ==semelhante à da fase de apoio da marcha==.\n- Por isso é evitada no pós-operatório de fraturas do quadril.\n\n> **Na prova:** abdutores = ==2,5 × o peso==; elevação da perna estendida = ==carga do apoio==",
+  "correta": "**2,5 vezes; carga similar ao apoio.**\n- Braço de alavanca do peso é cerca de 2,5 vezes o dos abdutores.\n- Elevar a perna estendida gera carga igual à do apoio.",
   "incorretas": {
-   "A": "A força abdutora de 1,5 vez subestima o efeito da diferença entre os braços de alavanca.",
-   "C": "Erra as duas: a força é maior, e a elevação da perna estendida não gera apenas metade da carga da marcha.",
-   "D": "A força está certa, mas a carga da elevação da perna estendida é comparável à da marcha, e não metade dela."
+   "A": "**1,5 é pouco.**\n- Abdutores fazem cerca de 2,5 vezes.",
+   "C": "**Os dois dados errados.**\n- 2,5 vezes; carga não cai à metade.",
+   "D": "**Carga subestimada.**\n- Elevação da perna ≈ apoio."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0286": {
-  "conceito": "A cronologia dos centros de ossificação é útil tanto para estimar maturidade quanto para não confundir cartilagem normal com fratura ou ausência óssea. Uma criança que começa a deambular com apoio de um braço encontra-se habitualmente perto do final do primeiro ano ou início do segundo ano de vida. Nessa faixa, a epífise distal da tíbia já pode ser visível radiograficamente. Em contraste, o núcleo proximal da fíbula surge mais tarde, geralmente por volta dos 3 a 4 anos; o navicular é um dos últimos ossos do tarso a ossificar, habitualmente entre aproximadamente 2 e 5 anos; e a tuberosidade anterior da tíbia torna-se radiograficamente evidente muito mais tarde, no período pré-adolescente. As idades exatas apresentam variação individual e diferenças entre os sexos. Em prova, o raciocínio mais seguro é ordenar os centros por maturidade, em vez de decorar uma única idade absoluta.",
-  "correta": "A alternativa C está correta. O marco motor descrito sugere aproximadamente 12 a 15 meses de idade. Nessa fase, entre as estruturas oferecidas, o centro de ossificação da epífise distal da tíbia é aquele esperado na radiografia. O raciocínio é eliminar estruturas com aparecimento claramente posterior: cabeça da fíbula, navicular e principalmente tuberosidade tibial anterior.",
+  "conceito": "### Marcos motores\n| Idade | Marco |\n|---|---|\n| 6 meses | senta com apoio |\n| 9 meses | engatinha, fica em pé com apoio |\n| ==10 a 12 meses== | ==anda com apoio de uma mão== |\n| 12 a 15 meses | anda sozinho |\n| 2 anos | corre, sobe escadas |\n\n### Centros de ossificação do membro inferior\n| Centro | Aparecimento |\n|---|---|\n| fêmur distal, tíbia proximal | ao nascer |\n| cabeça femoral | 4 a 6 meses |\n| ==epífise distal da tíbia== | ==6 a 12 meses== |\n| epífise distal da fíbula | 1 a 2 anos |\n| navicular | 3 a 4 anos |\n| epífise proximal da fíbula | 3 a 4 anos |\n| tuberosidade anterior da tíbia | 8 a 12 anos |\n\n> **Na prova:** criança de cerca de 1 ano = ==epífise distal da tíbia já ossificada==",
+  "correta": "**Epífise distal da tíbia.**\n- Andar com apoio de uma mão: cerca de 1 ano.\n- Núcleo distal da tíbia surge entre 6 e 12 meses.",
   "incorretas": {
-   "A": "A tuberosidade anterior da tíbia é uma apófise que se torna radiograficamente evidente muito mais tarde, na infância avançada ou pré-adolescência. Sua ossificação está relacionada ao desenvolvimento do aparelho extensor e não seria esperada em uma criança que acabou de iniciar marcha assistida.",
-   "B": "O centro de ossificação da epífise proximal da fíbula aparece alguns anos depois do início da marcha independente. Portanto, seria precoce esperar sua presença sistemática no período de aproximadamente um ano de idade descrito no enunciado.",
-   "D": "O navicular é classicamente um dos ossos do tarso de ossificação mais tardia. Seu núcleo normalmente aparece depois do início da marcha, frequentemente entre 2 e 5 anos, e por isso não é a melhor resposta para o marco motor apresentado."
+   "A": "**Tuberosidade anterior da tíbia.**\n- 8 a 12 anos.",
+   "B": "**Fíbula proximal.**\n- 3 a 4 anos.",
+   "D": "**Navicular.**\n- 3 a 4 anos, último do tarso."
   },
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier.",
    "Keats TE, Anderson MW. Atlas of Normal Roentgen Variants That May Simulate Disease. Elsevier.",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 1"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0287": {
-  "conceito": "A doença de **Legg-Calvé-Perthes**, uma osteonecrose idiopática da cabeça femoral em crianças (mais comum entre 4 e 8 anos), manifesta-se com dor progressiva e claudicação de início insidioso, frequentemente com piora gradual ao longo de semanas a meses, como descrito no caso. Nas fases iniciais, a ressonância magnética evidencia alteração de sinal na epífise femoral (edema, efusão articular e, posteriormente, colapso subcondral), compatível com o exame apresentado.",
-  "correta": "A. O diagnóstico mais compatível é a doença de Legg-Calvé-Perthes.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Diferenciais\n| Diagnóstico | Pista |\n|---|---|\n| ==Perthes== | ==unilateral==, 4 a 8 anos, claudicação, cabeça densa ou fragmentada |\n| displasia epifisária múltipla | ==bilateral e simétrica==, outras epífises, baixa estatura |\n| epifisiólise | adolescente obeso, escorregamento, epífise preservada |\n| osteomielite | febre, PCR alta, lesão metafisária |\n\n> **Na prova:** criança com dor e claudicação unilateral + epífise alterada = ==Perthes==",
+  "correta": "**Perthes.**\n- Idade e quadro clínico típicos.\n- Imagem de necrose/fragmentação epifisária unilateral.",
   "incorretas": {
-   "B": "A **displasia epifisária múltipla** tipicamente acomete múltiplas epífises de forma simétrica e bilateral, com um quadro clínico mais crônico e insidioso desde idades mais precoces, diferente do quadro unilateral e subagudo descrito no caso.",
-   "C": "A **epifisiólise femoral proximal** ocorre tipicamente em adolescentes (mais frequentemente entre 11 e 15 anos, muitas vezes com sobrepeso), uma faixa etária mais avançada do que os oito anos da paciente descrita.",
-   "D": "A **osteomielite do fêmur proximal** costuma apresentar sinais inflamatórios mais agudos (febre, mal-estar, dor intensa de início rápido), um quadro clínico diferente da evolução insidiosa ao longo de dois meses descrita no caso."
+   "B": "**Displasia epifisária múltipla.**\n- Bilateral e simétrica.",
+   "C": "**Epifisiólise.**\n- Adolescente; escorregamento.",
+   "D": "**Osteomielite.**\n- Sinais infecciosos, metáfise."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0288": {
