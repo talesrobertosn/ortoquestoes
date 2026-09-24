@@ -362,296 +362,287 @@
   "conferido": false
  },
  "quadril-0033": {
-  "conceito": "O enxerto vascularizado de fíbula na osteonecrose faz três coisas ao mesmo tempo: descomprime o núcleo, sustenta mecanicamente o osso subcondral e leva circulação nova para dentro da cabeça. Para isso a fíbula é retirada com seu pedículo (a artéria fibular (peroneira) e as veias acompanhantes), introduzida pelo colo até logo abaixo da cartilagem e revascularizada por anastomose microcirúrgica no sistema da circunflexa femoral lateral, cujo ramo ascendente fica acessível no mesmo campo do acesso anterolateral do quadril.",
-  "correta": "Circunflexa femoral lateral, cujo ramo ascendente está no campo do acesso e tem calibre compatível com o da fibular.",
+  "conceito": "### Enxerto vascularizado de fíbula na osteonecrose\n- Faz três coisas ao mesmo tempo:\n  - **descomprime** o núcleo (túnel no colo);\n  - **sustenta** o osso subcondral (suporte mecânico);\n  - leva **circulação nova** para dentro da cabeça.\n\n### A técnica\n- A fíbula é retirada com seu pedículo: **artéria fibular** (peroneira) e veias.\n- Um túnel é feito pelo colo, a partir da região trocantérica lateral, até logo abaixo da cartilagem.\n- O pedículo é anastomosado no sistema da ==circunflexa femoral lateral== (ramo ascendente), acessível pela mesma via anterolateral.\n\n### Indicações e limites\n- Paciente jovem, lesão **pré-colapso** ou com colapso pequeno.\n- Morbidade da área doadora (dor, fraqueza do FLH, alteração do tornozelo), técnica exigente e cirurgia longa.\n- Resultados melhores que a descompressão simples em algumas séries, sobretudo nas lesões maiores.\n\n> **Na prova:** anastomose da fíbula vascularizada = ==fibular com circunflexa femoral lateral==.",
+  "correta": "**Vaso receptor no campo do acesso.**\n- O ramo ascendente da circunflexa lateral está na via anterolateral usada para passar a fíbula.\n- Tem calibre compatível com a artéria fibular, facilitando a anastomose.",
   "incorretas": {
-   "A": "A artéria femoral é vaso principal do membro: anastomosar nela seria expor a perfusão de toda a perna sem necessidade.",
-   "B": "A glútea inferior fica na região posterior, fora do campo do acesso usado para esse enxerto.",
-   "C": "A glútea superior também é posterior e não está acessível por essa via."
+   "A": "**Vaso principal do membro.**\n- Anastomosar na femoral arriscaria a perfusão de toda a perna sem necessidade.\n- Usa-se um ramo, não o tronco.",
+   "B": "**Fora do campo.**\n- A glútea inferior fica na região posterior da pelve.\n- Não é acessível pela via anterolateral do enxerto.",
+   "C": "**Também posterior.**\n- A glútea superior sai pela incisura isquiática maior, longe do campo cirúrgico."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0034": {
-  "conceito": "Na classificação de Della Valle e Paprosky, as fraturas acetabulares periprotéticas são organizadas pelo momento e mecanismo, pela estabilidade do componente e pela perda óssea. A fratura traumática ocorrida após a artroplastia enquadra-se no grupo III.",
-  "correta": "C, Fratura periprotética acetabular traumática no pós-operatório é classificada como tipo III.",
+  "conceito": "### Classificação de Della Valle e Paprosky (acetábulo)\n| Tipo | Situação |\n|---|---|\n| I | intraoperatória, durante a **inserção** do componente (encaixe por pressão) |\n| II | intraoperatória, durante a **remoção** do componente (revisão) |\n| ==III== | ==traumática== (pós-operatória) |\n| IV | **espontânea** (osteólise, insuficiência) |\n| V | **descontinuidade pélvica** |\n\n### Condutas gerais\n- Componente **estável** e fratura sem desvio: carga protegida e acompanhamento.\n- Componente **instável** ou fratura desviada: revisão com placa na coluna posterior, taças de revisão, cages ou técnica de distração para descontinuidade.\n\n### Fatores de risco\n- Taças não cimentadas grandes demais (sub-fresagem acentuada), osso osteoporótico, osteólise por desgaste.\n\n> **Na prova:** fratura acetabular periprotética ==traumática = tipo III== de Della Valle e Paprosky.",
+  "correta": "**É a definição do tipo III.**\n- Fraturas acetabulares ao redor de artroplastia causadas por trauma no pós-operatório são o tipo III.",
   "incorretas": {
-   "A": "O tipo I corresponde a padrões intraoperatórios reconhecidos durante a cirurgia.",
-   "B": "O tipo II reúne fraturas intraoperatórias descobertas no pós-operatório imediato.",
-   "D": "O tipo IV está relacionado a fratura pélvica espontânea ou por insuficiência, não ao trauma descrito."
+   "A": "**Intraoperatória na inserção.**\n- O tipo I ocorre durante a impactação do componente, sobretudo com taças não cimentadas.",
+   "B": "**Intraoperatória na remoção.**\n- O tipo II ocorre ao retirar o componente, em cirurgias de revisão.",
+   "D": "**Espontânea.**\n- O tipo IV é a fratura sem trauma significativo, por osteólise ou osso insuficiente."
   },
   "referencias": [
    "Della Valle CJ, Momberger NG, Paprosky WG. Periprosthetic fractures of the acetabulum associated with a total hip arthroplasty. Instr Course Lect. 2003.",
    "Paprosky WG, Della Valle CJ. Classification and treatment of periprosthetic acetabular fractures."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "moderado",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0035": {
-  "alerta": "A descrição clássica é o inverso desta. Na lágrima radiográfica, o ramo LATERAL corresponde à parede da fossa acetabular (fossa cotiloide) e o ramo MEDIAL corresponde à superfície quadrilátera, a placa quadrilateral, que é a alternativa D, marcada como errada. Se você respondeu placa quadrilateral, o erro não foi seu.",
-  "conceito": "A lágrima radiográfica é uma imagem em U que aparece no AP da pelve porque duas superfícies ósseas quase paralelas são atravessadas pelo feixe no mesmo ponto: a parede lateral da fossa acetabular, do lado de fora, e a superfície quadrilátera, do lado de dentro da pelve. Ela importa por ser um dos poucos pontos de referência confiáveis da pelve: serve para medir protrusão acetabular (quando a linha ilioisquiática ultrapassa a lágrima), para conferir a posição do centro de rotação na artroplastia e para comparar os dois lados. Nas fraturas, a lágrima distorcida indica acometimento da parede medial.",
-  "correta": "A resposta oficial é a fossa acetabular.",
+  "conceito": "### A gota de lágrima (U de Köhler)\n- Imagem em **U** no AP da pelve, na parte inferomedial do acetábulo.\n- Formada porque duas superfícies ósseas quase paralelas são atravessadas pelo feixe no mesmo ponto:\n  - **ramo lateral:** parede da **fossa acetabular** (fossa cotiloide);\n  - **ramo medial:** **superfície quadrilátera** (placa quadrilateral), na face interna da pelve.\n\n### Para que serve\n- Referência **estável** da pelve, pouco alterada pela rotação.\n- Medir **protrusão acetabular**: a linha ilioisquiática ultrapassa o limite da lágrima.\n- Posicionar a taça na artroplastia (altura e medialização do centro de rotação) e medir discrepância de membros (linha entre as lágrimas).\n- Nas fraturas: lágrima deslocada indica envolvimento da parede medial.\n\n### Linhas do AP da pelve\n| Linha | Estrutura |\n|---|---|\n| iliopectínea | coluna anterior |\n| ilioisquiática | coluna posterior |\n| lágrima | fossa acetabular (lateral) e placa quadrilateral (medial) |\n| teto | domo de carga |\n\n> **Na prova:** gabarito oficial aqui = ==fossa acetabular==; a descrição clássica atribui o ramo medial à placa quadrilateral (ver o alerta).",
+  "correta": "**É o gabarito oficial.**\n- A fossa acetabular forma uma das paredes da lágrima.\n- Na descrição anatômica clássica, porém, ela corresponde ao ramo lateral, e o medial é a placa quadrilateral (ver o alerta).",
   "incorretas": {
-   "A": "A coluna anterior é uma estrutura maior, que no AP se projeta pela linha iliopectínea, e não compõe a lágrima.",
-   "B": "A coluna posterior corresponde à linha ilioisquiática, que corre ao lado da lágrima e serve justamente para compará-la, mas não a forma.",
-   "D": "É a alternativa que a descrição clássica atribui ao ramo medial da lágrima, e mesmo assim foi dada como errada. Veja o aviso acima."
+   "A": "**Projeta-se em outra linha.**\n- A coluna anterior aparece no AP como a linha iliopectínea.\n- Não compõe a lágrima.",
+   "B": "**Corre ao lado, sem formá-la.**\n- A coluna posterior é representada pela linha ilioisquiática.\n- Serve para comparar com a lágrima (protrusão), mas não a forma.",
+   "D": "**Descrição clássica do ramo medial.**\n- Pela anatomia radiográfica clássica, o ramo medial da lágrima é a superfície quadrilátera.\n- A banca, porém, considerou a alternativa errada (ver o alerta)."
   },
-  "geradoEm": "2026-09-06",
+  "alerta": "A descrição clássica é o inverso desta. Na lágrima radiográfica, o ramo LATERAL corresponde à parede da fossa acetabular (fossa cotiloide) e o ramo MEDIAL corresponde à superfície quadrilátera, a placa quadrilateral, que é a alternativa D, marcada como errada. Se você respondeu placa quadrilateral, o erro não foi seu.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0036": {
-  "conceito": "A deformidade tipo came é ósseo: a perda da concavidade da transição entre a cabeça e o colo, medida pelo ângulo alfa. Como o problema é forma óssea em três dimensões, e a giba pode estar em qualquer ponto do contorno anterossuperior, o exame que melhor a demonstra é a tomografia com reconstrução tridimensional, que permite girar o fêmur na tela e ver a giba de todos os ângulos. A radiografia flagra apenas o que o perfil escolhido revelar, e a ressonância é o exame das partes moles, labrum e cartilagem.",
-  "correta": "Tomografia computadorizada com reconstrução tridimensional, que mostra o contorno ósseo por inteiro e permite localizar a giba.",
+  "conceito": "### Deformidade tipo cam\n- Perda da concavidade na **transição cabeça-colo** (giba óssea), em geral anterossuperior.\n- Medida principal: **ângulo alfa** (anormal acima de cerca de 55–60°).\n\n### Exames e o que cada um mostra melhor\n| Exame | Papel |\n|---|---|\n| radiografia (AP, Dunn 45°, cross-table, falso perfil) | rastreamento; mostra o contorno só na direção do feixe |\n| RM | lábio, cartilagem, edema; ângulo alfa em cortes radiais |\n| artro-RM | lábio e cartilagem com mais detalhe |\n| ==TC 3D== | ==forma óssea completa==, localização e extensão da giba, versão femoral e acetabular |\n\n### Por que a TC 3D\n- A giba pode estar em qualquer ponto do contorno; a TC permite girar o fêmur e vê-la de todos os ângulos.\n- É muito usada no **planejamento** da osteocondroplastia (quanto ressecar e onde).\n- Também mede a **versão femoral**, que influencia o tipo de impacto.\n\n> **Na prova:** cam \"mais bem evidenciado\" = ==TC com reconstrução 3D==; lábio e cartilagem = artro-RM.",
+  "correta": "**Mostra a forma óssea inteira.**\n- A reconstrução tridimensional permite ver a giba em qualquer ponto do contorno cabeça-colo.\n- Define extensão e localização para planejar a ressecção.",
   "incorretas": {
-   "A": "A radiografia simples faz o rastreamento (perfil de Dunn, cross-table, falso perfil), mas só mostra o contorno na direção em que o feixe passou, a giba pode escapar.",
-   "B": "A ressonância é o exame do labrum e da cartilagem, e mede o ângulo alfa em cortes radiais, mas não é onde a deformidade óssea aparece melhor.",
-   "C": "A artrorressonância acrescenta contraste intra-articular e melhora ainda mais o labrum, de novo, partes moles, não contorno ósseo."
+   "A": "**Rastreamento, não o melhor.**\n- A radiografia (Dunn, cross-table) detecta o cam na maioria dos casos.\n- Mas só mostra o contorno na direção do feixe; a giba pode escapar.",
+   "B": "**Exame das partes moles.**\n- A RM avalia lábio e cartilagem e mede o ângulo alfa em cortes radiais.\n- Não é o melhor exame para a forma óssea tridimensional.",
+   "C": "**Melhora o lábio, não o osso.**\n- A artro-RM acrescenta contraste para detalhar lábio e cartilagem.\n- O contorno ósseo é melhor na TC 3D."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0037": {
-  "conceito": "A anteversão femoral é máxima ao nascer e diminui progressivamente até a maturidade: fica em torno de 30 a 40 graus no recém-nascido, cai cerca de 1 a 2 graus por ano e estabiliza entre 10 e 15 graus no adulto. Aos 10 anos ela já passou pela faixa dos 20 graus. Guardar a direção da curva é o que resolve a questão sem decorar números: qualquer alternativa em que a anteversão AUMENTA com a idade está errada de saída. É essa remodelação espontânea que justifica não operar a marcha com os pés para dentro da criança pequena.",
-  "correta": "30 graus ao nascer e 20 graus aos 10 anos, valores decrescentes, como manda a remodelação normal.",
+  "conceito": "### Evolução da anteversão femoral\n| Idade | Anteversão média |\n|---|---|\n| recém-nascido | ==cerca de 30–40°== |\n| 10 anos | ==cerca de 20°== |\n| adulto | 10–15° |\n\n- Cai cerca de **1–2° por ano** durante o crescimento.\n- Regra prática: a anteversão **diminui** com a idade. Qualquer alternativa em que ela aumenta está errada.\n\n### Consequência clínica\n- Anteversão aumentada = **rotação interna** do quadril ampla e externa reduzida.\n- Criança anda com os pés para dentro, senta em \"W\".\n- A maioria **remodela espontaneamente** até os 8–10 anos: não se opera nem se usa órtese.\n- Osteotomia derrotativa só em casos persistentes e graves (anteversão acima de 45–50°, rotação externa menor que 10°, sintomas) após os 8–10 anos.\n\n### Diferencial de marcha com pés para dentro por idade\n- Lactente: **metatarso aduto**.\n- 1–3 anos: **torção tibial interna**.\n- Acima de 3 anos: **anteversão femoral**.\n\n> **Na prova:** anteversão = ==30° ao nascer, 20° aos 10 anos==, diminuindo com o crescimento.",
+  "correta": "**Valores decrescentes, como na remodelação normal.**\n- Cerca de 30° ao nascer.\n- Por volta de 20° aos 10 anos, a caminho dos 10–15° do adulto.",
   "incorretas": {
-   "A": "Inverte o sentido da curva: a anteversão diminui com a idade, não aumenta.",
-   "C": "Anteversão zero ao nascimento não existe, e o aumento para 40 graus contraria a evolução normal.",
-   "D": "O valor inicial é plausível, mas anteversão zero aos 10 anos não corresponde a nada: o adulto normal fica entre 10 e 15 graus."
+   "A": "**Inverte a curva.**\n- A anteversão diminui com a idade, não aumenta.",
+   "C": "**Valores impossíveis.**\n- Não existe anteversão zero ao nascer.\n- E o aumento para 40° contraria a evolução normal.",
+   "D": "**Valor final errado.**\n- 40° ao nascer é plausível.\n- Mas aos 10 anos a anteversão não chega a zero; o adulto normal fica entre 10 e 15°."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0038": {
-  "conceito": "No componente acetabular cimentado, a carga chega ao osso através do polietileno e do manto de cimento. Polietileno espesso distribui essa carga por uma área maior e amortece o pico de tensão, enquanto polietileno fino transmite tensão concentrada e ainda se desgasta mais rápido. E o osso subcondral é a camada mais rígida e resistente do acetábulo: fresar até removê-lo entrega o cimento ao osso esponjoso, mole, que deforma e afunda. Preservá-lo, perfurando apenas orifícios de ancoragem para o cimento, é o que sustenta a fixação a longo prazo.",
-  "correta": "Polietilenos espessos e preservação do osso subcondral, distribuição melhor da carga sobre a camada óssea mais resistente.",
+  "conceito": "### Acetábulo cimentado: como proteger o osso\n- A carga passa do **polietileno** para o **manto de cimento** e daí para o osso.\n\n| Fator | Melhor escolha | Por quê |\n|---|---|---|\n| espessura do polietileno | ==espesso== (pelo menos 6–8 mm) | distribui a carga por área maior e reduz o pico de tensão; desgasta menos |\n| osso subcondral | ==preservar== | é a camada mais rígida; sem ela o cimento apoia em esponjoso mole, que deforma |\n| manto de cimento | uniforme, 2–3 mm | manto fino ou incompleto trinca |\n| ancoragem | orifícios pequenos no ílio, ísquio e púbis | aumenta a interdigitação |\n\n### Erros que levam à soltura\n- Fresar até expor o esponjoso (perde o apoio rígido).\n- Polietileno fino (concentração de tensão e desgaste).\n- Sangue no leito na hora de cimentar (interface fraca).\n- Taça verticalizada.\n\n> **Na prova:** acetábulo cimentado = ==polietileno espesso e osso subcondral preservado==.",
+  "correta": "**Distribui melhor a carga sobre osso rígido.**\n- O polietileno espesso espalha a tensão e se desgasta menos.\n- O osso subcondral preservado oferece apoio rígido ao cimento, evitando afundamento e soltura.",
   "incorretas": {
-   "A": "Erra as duas coisas: polietileno fino concentra tensão e remover o subcondral entrega a carga ao osso esponjoso.",
-   "B": "A preservação do subcondral está certa, mas o polietileno fino concentra tensão e se desgasta mais.",
-   "C": "A espessura está certa, mas remover o osso subcondral desfaz a vantagem, porque a carga passa a incidir sobre osso esponjoso."
+   "A": "**Erra as duas escolhas.**\n- Polietileno fino concentra tensão.\n- Remover o subcondral entrega a carga ao osso esponjoso, que deforma.",
+   "B": "**Erra o polietileno.**\n- Preservar o subcondral está certo.\n- Mas o polietileno fino concentra tensão e se desgasta mais.",
+   "C": "**Erra o osso.**\n- O polietileno espesso está certo.\n- Remover o subcondral desfaz a vantagem, porque a carga passa ao esponjoso."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0039": {
-  "conceito": "A artéria femoral profunda desce por trás dos adutores e emite as perfurantes, que atravessam o adutor magno junto ao fêmur e cruzam o campo cirúrgico em direção ao compartimento posterior. Elas correm perpendiculares ao osso, e não paralelas, é essa direção que faz com que sejam encontradas de forma repetida e transversal durante a elevação do vasto lateral, e é por isso que a técnica manda identificá-las e ligá-las em vez de deixá-las retrair. Ressalva: a direção perpendicular é o que sustenta a resposta com firmeza; o intervalo de cerca de 3 centímetros é o número que a banca adota, e esse eu não consigo confirmar de forma independente.",
-  "correta": "Perpendiculares ao fêmur, em intervalos de cerca de 3 cm.",
+  "conceito": "### Perfurantes da femoral profunda\n- A femoral profunda desce **atrás dos adutores**.\n- Emite geralmente **3 a 4 perfurantes**, que atravessam o adutor magno junto à linha áspera.\n- Seguem para o compartimento posterior e irrigam isquiotibiais, vasto lateral e o próprio fêmur (a artéria nutrícia vem de uma delas).\n\n### Na via lateral da coxa\n- Ao elevar o **vasto lateral** do septo intermuscular lateral, as perfurantes aparecem ==perpendiculares ao fêmur==, cruzando o campo transversalmente.\n- Ficam a intervalos regulares, em torno de ==3 cm== (dado adotado pela banca).\n- Devem ser **identificadas e ligadas** (ou cauterizadas) antes de seccionar: se retraírem para trás do septo, sangram muito e são difíceis de achar.\n\n### Via lateral × posterolateral\n- **Lateral (transvasto):** atravessa o vasto lateral.\n- **Subvastal (posterolateral):** eleva o vasto do septo, com as perfurantes cruzando.\n\n> **Na prova:** perfurantes na via lateral = ==perpendiculares ao fêmur, a cerca de 3 cm==.",
+  "correta": "**Direção e intervalo adotados.**\n- As perfurantes cruzam o campo transversalmente, perpendiculares ao osso.\n- Aparecem de forma repetida, em intervalos de cerca de 3 cm, e precisam ser ligadas.",
   "incorretas": {
-   "A": "Erra a direção: as perfurantes cruzam o campo transversalmente, e um vaso paralelo ao fêmur seria acompanhado, não cortado.",
-   "B": "Mesmo erro de direção.",
-   "D": "A direção está certa, mas o intervalo adotado pela banca é o de 3 cm."
+   "A": "**Direção errada.**\n- Um vaso paralelo ao fêmur seria acompanhado na dissecção, não cortado repetidamente.\n- As perfurantes cruzam o campo em direção ao compartimento posterior.",
+   "B": "**Mesmo erro de direção.**\n- As perfurantes não correm paralelas ao fêmur.",
+   "D": "**Intervalo diferente do adotado.**\n- A direção perpendicular está certa.\n- Mas a banca adota intervalos de cerca de 3 cm."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0040": {
-  "conceito": "O ramo profundo da artéria circunflexa femoral medial é o vaso que mantém a cabeça femoral viva no adulto. Ele contorna o fêmur por trás caminhando entre o quadrado femoral, que fica abaixo, e o gêmeo inferior, acima, cruza a face posterior do tendão do obturador externo e então sobe pela crista intertrocantérica até perfurar a cápsula. Essa relação anatômica gera duas regras de mesa: nunca desinserir o quadrado femoral no acesso posterior, e seccionar os rotadores curtos a pelo menos 1,5 cm da inserção femoral. O tendão do obturador externo, íntegro, é o que protege o vaso na luxação cirúrgica.",
-  "correta": "Entre o quadrado femoral e o gêmeo inferior, o intervalo por onde o vaso contorna o fêmur.",
+  "conceito": "### Trajeto do ramo profundo da circunflexa femoral medial\n- Nasce da circunflexa medial, que sai da femoral profunda.\n- Passa entre o **pectíneo e o iliopsoas**, contorna o colo por baixo.\n- Emerge na região posterior ==entre o quadrado femoral (abaixo) e o gêmeo inferior (acima)==.\n- Cruza a face **posterior do tendão do obturador externo**.\n- Sobe **anterior** aos gêmeos e ao obturador interno, ao longo da crista intertrocantérica.\n- Perfura a cápsula na região posterossuperior e forma os **vasos retinaculares**.\n\n### Regras cirúrgicas\n- **Não desinserir o quadrado femoral** no acesso posterior.\n- Seccionar os rotadores curtos a **1,5 cm ou mais** da inserção.\n- Preservar o **obturador externo**: na luxação cirúrgica de Ganz, é ele que protege o vaso.\n\n> **Na prova:** o ramo profundo emerge ==entre o quadrado femoral e o gêmeo inferior==.",
+  "correta": "**É o intervalo de passagem do vaso.**\n- O ramo profundo contorna o fêmur por trás, saindo entre o quadrado femoral e o gêmeo inferior.\n- Depois cruza o obturador externo e sobe em direção à cápsula posterossuperior.",
   "incorretas": {
-   "B": "O gêmeo superior fica mais acima; não é ele que delimita a passagem do vaso.",
-   "C": "O ramo cruza a face posterior do obturador externo, mas não emerge entre ele e o gêmeo inferior.",
-   "D": "Erra os dois músculos que fazem o intervalo."
+   "B": "**Músculo alto demais.**\n- O gêmeo superior fica acima do obturador interno.\n- Não delimita a saída do vaso.",
+   "C": "**Relação incorreta.**\n- O ramo cruza a face posterior do obturador externo.\n- Mas não emerge entre ele e o gêmeo inferior.",
+   "D": "**Erra os dois músculos.**\n- Nem o gêmeo superior nem o obturador externo formam o intervalo de saída."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0041": {
-  "conceito": "Osteonecrose e osteoporose transitória se distinguem na ressonância pelo desenho do edema, não pela intensidade dele. Na osteonecrose há uma lesão focal delimitada por linha serpiginosa na zona de carga da cabeça, com edema ao redor que não costuma passar do colo. Na osteoporose transitória o edema é difuso e homogêneo, sem lesão focal e sem linha de demarcação, e se estende pelo colo até a região intertrocantérica, é justamente essa extensão que fecha o diagnóstico. A distinção muda tudo: uma é doença autolimitada, a outra evolui para colapso.",
-  "correta": "O edema medular que se estende para a região intertrocantérica, difuso e sem linha de delimitação.",
+  "conceito": "### Osteonecrose × osteoporose transitória na RM\n| | Osteonecrose | ==Osteoporose transitória== |\n|---|---|---|\n| lesão | **focal**, na zona de carga da cabeça | **difusa**, sem lesão focal |\n| linha de demarcação | serpiginosa (\"duplo halo\" em T2) | ausente |\n| edema | ao redor da lesão, raramente além do colo | ==homogêneo, da cabeça ao colo e à região intertrocantérica== |\n| evolução | colapso e artrose | **autolimitada**, 6–12 meses |\n\n### Perfil da osteoporose transitória\n- Homens de meia-idade ou **mulheres no 3º trimestre da gestação**.\n- Dor súbita no quadril, sem trauma, com claudicação.\n- Radiografia: osteopenia da cabeça e do colo **semanas depois**.\n- Pode ser migratória (outras articulações).\n\n### Tratamento\n- Descarga (muletas) para evitar **fratura por insuficiência**, analgesia; bisfosfonatos podem acelerar a recuperação.\n\n> **Na prova:** edema difuso que desce até a ==região intertrocantérica==, sem linha de demarcação = osteoporose transitória.",
+  "correta": "**É o desenho do edema que separa.**\n- Na osteoporose transitória, o edema medular é difuso e homogêneo.\n- Estende-se da cabeça pelo colo até a região intertrocantérica, sem a linha de demarcação da osteonecrose.",
   "incorretas": {
-   "A": "Perda de densidade óssea é achado de radiografia, e tardio; a ressonância mostra o edema muito antes disso.",
-   "B": "Amolecimento da cartilagem não é o que a ressonância caracteriza nessa condição, e não é o que a separa da osteonecrose.",
-   "C": "Proliferação mieloproliferativa é infiltração medular por doença hematológica, um diagnóstico diferente."
+   "A": "**Achado radiográfico e tardio.**\n- A perda de densidade aparece na radiografia semanas depois.\n- A RM mostra o edema muito antes e é o que caracteriza a doença.",
+   "B": "**Não é o achado característico.**\n- A cartilagem fica preservada na osteoporose transitória.\n- O que a RM mostra é o edema medular.",
+   "C": "**Outro diagnóstico.**\n- Proliferação mieloproliferativa é infiltração da medula por doença hematológica.\n- Não é a característica da osteoporose transitória."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0042": {
-  "conceito": "A figura mostra a parede posterior do abdome com o plexo lombar dissecado, e a seta aponta o nervo mais alto entre os que saem da borda lateral do psoas e cruzam obliquamente o quadrado lombar em direção à crista ilíaca: o ílio-hipogástrico (L1). Ele importa ao ortopedista por dois motivos: é o nervo em risco na retirada de enxerto da crista ilíaca anterior e nos acessos ilioinguinais, e sua lesão produz dor e alteração de sensibilidade na região suprapúbica e glútea lateral.",
-  "correta": "Ílio-hipogástrico: o ramo mais cranial do plexo lombar a cruzar o quadrado lombar rumo à crista ilíaca.",
+  "conceito": "### Ramos do plexo lombar (L1–L4)\n| Nervo | Raízes | Onde aparece | Relevância ortopédica |\n|---|---|---|---|\n| ==ílio-hipogástrico== | L1 | borda lateral do psoas, **o mais cranial**, cruza o quadrado lombar até a crista | lesado na **retirada de enxerto da crista anterior** e em incisões ilioinguinais |\n| ilioinguinal | L1 | logo abaixo do anterior, paralelo | idem; dor inguinal pós-operatória |\n| genitofemoral | L1–L2 | **perfura o psoas**, corre na face anterior | risco no acesso lateral transpsoas (XLIF) |\n| cutâneo femoral lateral | L2–L3 | borda lateral, cruza o ilíaco até a EIAS | meralgia parestésica, via anterior do quadril |\n| femoral | L2–L4 | borda lateral, entre psoas e ilíaco | afastadores na borda anterior do acetábulo |\n| obturatório | L2–L4 | borda **medial** do psoas | parafusos na parede medial |\n\n### Por que o ílio-hipogástrico importa\n- Sensibilidade da região **suprapúbica** e da face lateral do glúteo.\n- Lesão na coleta de enxerto gera dor ou dormência nessas áreas.\n\n> **Na prova:** nervo mais cranial saindo da borda lateral do psoas e cruzando o quadrado lombar = ==ílio-hipogástrico==.",
+  "correta": "**Posição e trajeto característicos.**\n- É o ramo mais alto do plexo lombar a emergir da borda lateral do psoas.\n- Cruza obliquamente o quadrado lombar em direção à crista ilíaca, como na figura.",
   "incorretas": {
-   "A": "O femoral é o maior ramo do plexo, emerge bem mais abaixo na borda lateral do psoas e desce para a coxa entre o psoas e o ilíaco.",
-   "C": "O genitofemoral é o único que perfura o psoas e corre sobre a face ANTERIOR do músculo, e não lateralmente a ele.",
-   "D": "O cutâneo femoral lateral sai mais abaixo e cruza o músculo ilíaco em direção à espinha ilíaca anterossuperior."
+   "A": "**Maior e mais baixo.**\n- O femoral emerge bem mais abaixo na borda lateral do psoas.\n- Desce entre o psoas e o ilíaco em direção à coxa.",
+   "C": "**Corre sobre o psoas.**\n- O genitofemoral é o único que perfura o psoas e corre na sua face anterior.\n- Não sai lateralmente ao músculo.",
+   "D": "**Sai mais abaixo.**\n- O cutâneo femoral lateral cruza o músculo ilíaco em direção à espinha ilíaca anterossuperior.\n- Não percorre o quadrado lombar."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0043": {
-  "conceito": "A classificação de Vancouver responde a três perguntas, nessa ordem: onde está a fratura (A no maciço trocantérico, B ao redor ou logo abaixo da haste, C bem abaixo da ponta), a haste está solta, e quanto osso proximal restou. As duas últimas são o que decide a conduta, daí a resposta apontar estabilidade do componente e estoque ósseo. Idade e tipo de fixação, cimentada ou não, não entram na classificação: uma haste cimentada bem fixa e uma não cimentada bem fixa recebem a mesma letra e o mesmo tratamento.",
-  "correta": "Estabilidade do componente femoral e estoque ósseo, os dois dados que definem o subtipo e a conduta.",
+  "conceito": "### Vancouver: três perguntas\n1. **Onde** é a fratura?\n   - A: região trocantérica (AG trocânter maior, AL menor).\n   - B: ao redor ou logo abaixo da haste.\n   - C: bem abaixo da ponta da haste.\n2. A haste está ==estável (fixa) ou solta==?\n3. Como está o ==estoque ósseo== proximal?\n\n### Como as respostas definem a conduta\n| Tipo | Haste | Osso | Tratamento |\n|---|---|---|---|\n| B1 | fixa | bom | osteossíntese |\n| B2 | solta | bom | revisão com haste longa |\n| B3 | solta | ruim | revisão + reconstrução óssea |\n| C | fixa | não se aplica | osteossíntese independente |\n\n### O que não entra\n- **Idade** do paciente.\n- **Tipo de fixação** (cimentada ou não): uma haste cimentada fixa e uma não cimentada fixa recebem a mesma letra.\n- Embora esses fatores pesem na escolha do implante, não fazem parte da classificação.\n\n> **Na prova:** Vancouver se apoia em ==local, estabilidade da haste e estoque ósseo==.",
+  "correta": "**São os dois critérios que decidem a conduta.**\n- A estabilidade da haste separa B1 de B2/B3.\n- O estoque ósseo separa B2 de B3 e orienta a reconstrução.",
   "incorretas": {
-   "A": "Idade não é critério de Vancouver; o estoque ósseo é.",
-   "B": "Nem a idade nem o tipo de fixação entram na classificação.",
-   "D": "A estabilidade está certa, mas o segundo critério é o estoque ósseo, e não se a haste é cimentada."
+   "A": "**Idade não é critério.**\n- O estoque ósseo está certo.\n- Mas a classificação não considera a idade.",
+   "B": "**Nenhum dos dois entra.**\n- Idade e tipo de fixação não definem o tipo de Vancouver.",
+   "D": "**Segundo critério errado.**\n- A estabilidade está certa.\n- O outro critério é o estoque ósseo, e não se a haste é cimentada."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0044": {
-  "conceito": "O ressalto interno é o tendão do iliopsoas escapando bruscamente sobre um relevo ósseo quando o quadril sai da flexão com abdução e rotação externa para a extensão com adução e rotação interna. O relevo é a eminência iliopectínea ou a própria cabeça femoral, pontos sobre os quais o tendão desliza no seu trajeto para o pequeno trocanter. Ele é audível, muitas vezes ouvido pelo próprio paciente, e sentido na virilha, diferente do ressalto externo, que é visível e palpável sobre o trocanter maior.",
-  "correta": "Iliopsoas atritando com a eminência iliopectínea ou com a cabeça femoral, os dois relevos sobre os quais o tendão desliza.",
+  "conceito": "### Ressalto interno do quadril\n- O ==tendão do iliopsoas== escapa bruscamente sobre um relevo ósseo:\n  - a ==eminência iliopectínea==;\n  - a ==cabeça femoral== (e cápsula anterior).\n- Acontece ao sair da **flexão, abdução e rotação externa** para **extensão, adução e rotação interna**.\n- É **audível** e sentido na virilha; o paciente muitas vezes consegue reproduzir.\n\n### Diferenciar\n| Ressalto | Estrutura | Onde |\n|---|---|---|\n| externo | banda iliotibial / glúteo máximo | sobre o trocânter maior, visível |\n| ==interno== | ==iliopsoas== | ==eminência iliopectínea / cabeça femoral== |\n| intra-articular | lábio, corpo livre | dor e bloqueio |\n\n### Tratamento\n- Alongamento do iliopsoas e fortalecimento do core.\n- Infiltração guiada da bursa do iliopsoas.\n- Refratários: **alongamento/tenotomia endoscópica** do iliopsoas (na junção musculotendínea ou no trocânter menor).\n\n> **Na prova:** ressalto interno = ==iliopsoas sobre a eminência iliopectínea ou a cabeça femoral==.",
+  "correta": "**Tendão e relevos corretos.**\n- O iliopsoas desliza sobre a eminência iliopectínea e a cabeça femoral a caminho do trocânter menor.\n- Ao passar da flexão para a extensão, salta sobre esses relevos.",
   "incorretas": {
-   "B": "O pequeno trocanter é a inserção do tendão, e não a saliência sobre a qual ele salta.",
-   "C": "O reto femoral tem sua cabeça refletida próxima ao acetábulo, mas não é o tendão do ressalto interno clássico.",
-   "D": "Erra o músculo e o relevo ao mesmo tempo."
+   "B": "**O trocânter menor é a inserção.**\n- O tendão termina no trocânter menor; não salta sobre ele.",
+   "C": "**Tendão errado.**\n- O reto femoral tem a cabeça refletida perto do acetábulo.\n- Mas não é o tendão do ressalto interno clássico.",
+   "D": "**Erra tendão e relevo.**\n- Nem o reto femoral nem o trocânter menor explicam o ressalto interno."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0045": {
-  "conceito": "A incisão da figura começa na crista ilíaca, contorna a espinha ilíaca anterossuperior e desce pela face anterolateral da coxa, o traçado do acesso de Smith-Petersen, o anterior clássico do quadril. Ele explora dois intervalos internervosos: superficialmente entre o sartório (femoral) e o tensor da fáscia lata (glúteo superior), e profundamente entre o reto femoral (femoral) e o glúteo médio (glúteo superior). É o acesso da artroplastia por via anterior, da redução aberta da displasia e das osteotomias pélvicas, e o nervo em risco é o cutâneo femoral lateral, que cruza logo medial à espinha ilíaca.",
-  "correta": "Smith-Petersen: incisão da crista ilíaca sobre a espinha ilíaca anterossuperior, descendo pela face anterolateral da coxa.",
+  "conceito": "### Acesso de Smith-Petersen (anterior)\n- Incisão ao longo da crista ilíaca anterior, passando pela **EIAS** e descendo pela face anterolateral da coxa.\n\n### Intervalos internervosos\n| Plano | Entre | Nervos |\n|---|---|---|\n| superficial | sartório e tensor da fáscia lata | femoral × glúteo superior |\n| profundo | reto femoral e glúteo médio | femoral × glúteo superior |\n\n### Usos\n- Artroplastia pela **via anterior direta** (versão mais distal, sem descolar a crista).\n- **Redução aberta** da displasia do quadril na criança maior.\n- Osteotomias pélvicas (Salter, Ganz), fraturas da cabeça femoral e drenagem de artrite séptica.\n\n### Estruturas em risco\n- ==Nervo cutâneo femoral lateral==, logo medial e distal à EIAS.\n- Ramo ascendente da **circunflexa femoral lateral**, no plano profundo (ligar).\n\n### Outros acessos do quadril\n| Acesso | Tipo |\n|---|---|\n| Hardinge | lateral direto, divide glúteo médio e vasto lateral |\n| Kocher-Langenbeck | posterior (acetábulo) |\n| Ludloff | medial, entre os adutores |\n| Watson-Jones | anterolateral, entre tensor e glúteo médio |\n\n> **Na prova:** incisão sobre a EIAS descendo pela coxa anterior = ==Smith-Petersen==.",
+  "correta": "**É o traçado clássico.**\n- A incisão da figura segue a crista ilíaca, contorna a EIAS e desce pela face anterolateral da coxa.\n- É o acesso anterior de Smith-Petersen, com o intervalo sartório–tensor.",
   "incorretas": {
-   "A": "O acesso de Hardinge é lateral direto, com incisão longitudinal centrada no trocanter maior e divisão do glúteo médio e do vasto lateral.",
-   "B": "Kocher dá nome ao acesso lateral do cotovelo, entre o ancôneo e o extensor ulnar do carpo, e não a um acesso do quadril.",
-   "C": "O acesso de Ludloff é medial, feito entre os adutores, usado sobretudo na redução aberta da displasia do lactente."
+   "A": "**Acesso lateral.**\n- O Hardinge tem incisão longitudinal centrada no trocânter maior, dividindo glúteo médio e vasto lateral.",
+   "B": "**Nome ligado a outros acessos.**\n- \"Kocher\" isolado designa o acesso lateral do cotovelo.\n- No quadril, o nome aparece no Kocher-Langenbeck, que é posterior.",
+   "C": "**Acesso medial.**\n- O Ludloff passa entre os adutores, usado sobretudo na redução aberta do lactente."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0046": {
-  "conceito": "As manobras do piriforme vêm em dois grupos opostos, e é preciso saber qual está sendo pedida. As passivas alongam o músculo e comprimem o nervo contra a borda óssea: FAIR (flexão, adução e rotação interna) e Freiberg (rotação interna forçada com o quadril estendido). As ativas fazem o músculo contrair contra resistência, aumentando seu volume sobre o nervo: o teste de Pace, com o paciente sentado fazendo abdução e rotação externa contra resistência, e o de Beatty. Como o piriforme é rotador externo e abdutor com o quadril fletido, contraí-lo é justamente abduzir e rodar externamente.",
-  "correta": "Abdução e rotação lateral contra resistência, as duas ações do piriforme, que é o que se pede quando o teste é ativo.",
+  "conceito": "### Testes do piriforme: passivos × ativos\n| Tipo | Mecanismo | Teste | Movimento |\n|---|---|---|---|\n| passivo | alonga o músculo sobre o nervo | FAIR | flexão, adução, rotação interna |\n| passivo | idem | Freiberg | rotação interna forçada em extensão |\n| ==ativo== | contração aumenta o volume do músculo | ==Pace== | ==abdução e rotação externa contra resistência==, sentado |\n| ativo | idem | Beatty | abdução do quadril em decúbito lateral, com joelho fletido |\n\n### A ação do piriforme\n- Quadril estendido: **rotador externo**.\n- Quadril fletido (sentado): **abdutor** e rotador externo.\n- Por isso, sentado, contraí-lo contra resistência é ==abduzir e rodar externamente==.\n\n### Síndrome do piriforme\n- Dor glútea que irradia pela face posterior da coxa, pior sentado.\n- Diagnóstico de exclusão; infiltração guiada ajuda a confirmar.\n\n> **Na prova:** teste **ativo** do piriforme (Pace) = ==abdução + rotação lateral contra resistência==.",
+  "correta": "**São as ações do piriforme.**\n- No teste ativo, o paciente contrai o músculo contra resistência.\n- Sentado, o piriforme abduz e roda externamente; a dor ao fazer isso sugere a síndrome.",
   "incorretas": {
-   "A": "A adução resistida recruta os adutores, e não o piriforme.",
-   "B": "A rotação medial é o movimento contrário à ação do músculo; resistir a ela não o contrai.",
-   "D": "A abdução está certa, mas a rotação medial é justamente o oposto do que o piriforme faz."
+   "A": "**Recruta outro grupo.**\n- A adução resistida contrai os adutores, não o piriforme.",
+   "B": "**Movimentos opostos à ação.**\n- Adução e rotação medial são o contrário do que o piriforme faz.\n- Aparecem, passivamente, no teste FAIR.",
+   "D": "**Metade certa.**\n- A abdução está correta.\n- A rotação medial é o oposto da ação do músculo."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Barros Filho, Lech, Exame físico em ortopedia, 3ª edição, Cap. 10"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0047": {
-  "conceito": "A seta aponta a longa faixa muscular que atravessa obliquamente a face anterior da coxa, da espinha ilíaca anterossuperior até a face medial da tíbia: o sartório, o músculo mais longo do corpo. Ele pertence ao compartimento anterior e, como todo o compartimento anterior, é inervado pelo nervo femoral. Vale notar que duas alternativas caem só pela categoria: o safeno e o cutâneo femoral lateral são nervos puramente sensitivos e não inervam músculo nenhum, o safeno, aliás, é o ramo terminal do próprio femoral e acompanha o sartório no canal dos adutores.",
-  "correta": "Nervo femoral: o sartório é do compartimento anterior da coxa.",
+  "conceito": "### O sartório\n- Músculo mais **longo** do corpo.\n- Vai da **EIAS** à face medial da tíbia proximal (pata de ganso, com grácil e semitendíneo).\n- Ações: flexão, abdução e rotação externa do quadril; flexão do joelho (\"posição de alfaiate\").\n- Compartimento **anterior** da coxa: inervado pelo ==nervo femoral==.\n\n### Relações úteis\n- Forma o **teto do canal dos adutores** (de Hunter), onde passam a artéria e a veia femorais e o **nervo safeno**.\n- Limite lateral do **triângulo femoral**.\n- Intervalo superficial do acesso de Smith-Petersen (com o tensor da fáscia lata).\n- Avulsão da **EIAS** no adolescente é arrancamento do sartório.\n\n### Nervos sensitivos puros (não inervam músculos)\n- **Safeno:** ramo terminal do femoral, face medial da perna e do pé.\n- **Cutâneo femoral lateral:** face lateral da coxa.\n\n> **Na prova:** sartório = ==nervo femoral==.",
+  "correta": "**Músculo do compartimento anterior.**\n- A seta mostra o sartório, que cruza obliquamente a coxa anterior.\n- Todo o compartimento anterior é inervado pelo nervo femoral.",
   "incorretas": {
-   "A": "O safeno é ramo sensitivo terminal do femoral, para a face medial da perna. Não inerva músculo.",
-   "C": "O obturatório comanda o compartimento medial (adutores, grácil e obturador externo), e não o sartório.",
-   "D": "O cutâneo femoral (lateral) também é puramente sensitivo, para a face lateral da coxa."
+   "A": "**Nervo só sensitivo.**\n- O safeno é ramo terminal do femoral para a pele da face medial da perna.\n- Não inerva músculo algum.",
+   "C": "**Compartimento medial.**\n- O obturatório inerva adutores, grácil e obturador externo.\n- Não inerva o sartório.",
+   "D": "**Também sensitivo.**\n- O cutâneo femoral lateral inerva a pele da face lateral da coxa.\n- Não tem ramos motores."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Netter, Atlas de Anatomia Humana, 7ª edição, Cap. 8"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0048": {
-  "conceito": "As figuras mostram um acesso lateral do quadril, com incisão longitudinal centrada no trocanter maior, abertura da fáscia lata no eixo e (o detalhe que decide a questão) uma osteotomia de lâmina do trocanter, com as superfícies ósseas cruentas expostas, levando junto a inserção dos abdutores. Dos quatro nomes oferecidos, apenas o de McLauchlan corresponde à variante com osteotomia trocantérica; a vantagem alegada é reinserir tendão por osso, e não tendão por tendão, ao custo dos problemas próprios de uma osteotomia.",
-  "correta": "McLauchlan: acesso lateral com osteotomia de uma lâmina do trocanter maior carregando a inserção dos abdutores.",
+  "conceito": "### Acessos laterais do quadril e o que acontece com os abdutores\n| Acesso | Como trata os abdutores |\n|---|---|\n| ==McLauchlan== | ==osteotomia de uma lâmina do trocânter maior==, levando a inserção dos abdutores |\n| Hardinge | divide glúteo médio e vasto lateral, manguito contínuo sobre o trocânter, sem osteotomia |\n| Osborne / McFarland | desinserção dos abdutores em manguito de partes moles |\n| Charnley | osteotomia trocantérica completa (clássica) |\n\n### Vantagens e custos da osteotomia\n- Reinserção **osso com osso**, que consolida melhor que tendão com tendão.\n- Custos: pseudartrose do fragmento, migração, dor por cerclagens, bursite.\n\n### O risco comum aos acessos laterais\n- **Nervo glúteo superior**, a cerca de 5 cm acima da ponta do trocânter: não estender a divisão do glúteo médio além desse limite.\n- Lesão dele gera marcha de Trendelenburg.\n\n> **Na prova:** acesso lateral com ==osteotomia de lâmina do trocânter== = McLauchlan.",
+  "correta": "**É a variante com osteotomia de lâmina.**\n- As figuras mostram a incisão lateral e uma lâmina do trocânter levantada com a inserção dos abdutores.\n- Dentre os nomes oferecidos, só o de McLauchlan corresponde a essa técnica.",
   "incorretas": {
-   "A": "Osborne descreveu o acesso lateral com desinserção dos abdutores em manguito de partes moles, sem cortar osso.",
-   "B": "Hardinge divide o glúteo médio e o vasto lateral deixando um manguito contínuo sobre o trocanter, também sem osteotomia.",
-   "C": "McFarland, junto com Osborne, é o nome ligado ao acesso lateral por manguito de partes moles, e não à osteotomia."
+   "A": "**Sem osteotomia.**\n- Osborne descreveu o acesso lateral com desinserção dos abdutores em manguito de partes moles.",
+   "B": "**Também sem osso.**\n- O Hardinge divide o glúteo médio e o vasto lateral, mantendo um manguito contínuo sobre o trocânter.",
+   "C": "**Manguito de partes moles.**\n- McFarland, junto com Osborne, é ligado ao acesso por manguito tendíneo, não à osteotomia."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 1"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0049": {
-  "conceito": "O nervo desenhado sai da pelve pela incisura isquiática maior acima do músculo piriforme e se abre em leque entre o glúteo médio e o glúteo mínimo, em direção ao tensor da fáscia lata: é o nervo glúteo superior. Na artroscopia do quadril, o portal que caminha nessa região é o anterolateral, feito logo à frente e acima do trocanter maior. A distância descrita até o nervo é da ordem de poucos centímetros, o que explica por que o portal deve ser feito rente ao trocanter e por que a distração prolongada e a distensão excessiva aumentam o risco.",
-  "correta": "Portal anterolateral, que passa perto do nervo glúteo superior no seu trajeto sobre o glúteo médio.",
+  "conceito": "### Nervo glúteo superior\n- Sai da pelve pela incisura isquiática maior, **acima do piriforme**, com a artéria glútea superior.\n- Corre entre o **glúteo médio e o glúteo mínimo**, em leque, até o **tensor da fáscia lata**.\n- Fica a cerca de **4–6 cm** acima da ponta do trocânter maior (\"zona de segurança\" de 5 cm nos acessos laterais).\n\n### Na artroscopia do quadril\n| Portal | Estrutura em risco |\n|---|---|\n| ==anterolateral== | ==nervo glúteo superior== (acima) |\n| anterior | nervo cutâneo femoral lateral; feixe femoral se medializado |\n| posterolateral | nervo **ciático** |\n\n- O anterolateral é feito rente à borda anterossuperior do trocânter; subir demais aproxima do nervo.\n- Lesão: fraqueza dos abdutores e do tensor, marcha de Trendelenburg.\n\n### Outras situações de risco para o glúteo superior\n- Acesso lateral (Hardinge) estendido proximalmente além de 5 cm.\n- Via de Kocher-Langenbeck com tração excessiva na incisura.\n- Parafusos iliossacrais mal posicionados.\n\n> **Na prova:** nervo glúteo superior = risco no ==portal anterolateral==.",
+  "correta": "**É o portal que passa sob o trajeto do nervo.**\n- O glúteo superior corre entre os glúteos médio e mínimo, a poucos centímetros acima do trocânter.\n- O portal anterolateral, feito na borda anterossuperior do trocânter, é o que mais se aproxima dele.",
   "incorretas": {
-   "A": "O portal anterior põe em risco o nervo cutâneo femoral lateral, que é sensitivo e superficial, outro nervo e outra região.",
-   "B": "Não há um portal simplesmente \"posterior\" na artroscopia padrão do quadril, e o nervo desenhado não é o isquiático.",
-   "D": "O portal posterolateral é o que se aproxima do nervo isquiático, e não do glúteo superior."
+   "A": "**Outro nervo em risco.**\n- O portal anterior ameaça o nervo cutâneo femoral lateral, sensitivo e superficial.\n- Não é o nervo da figura.",
+   "B": "**Portal inexistente no padrão.**\n- Não há um portal simplesmente \"posterior\" na artroscopia convencional do quadril.\n- E o nervo da figura não é o ciático.",
+   "D": "**Aproxima-se do ciático.**\n- O posterolateral é o portal com risco para o nervo ciático.\n- Não é o glúteo superior."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 51"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0050": {
-  "conceito": "Vale fixar os dois ressaltos de uma vez, porque a prova volta neles com frequência. O interno é do iliopsoas, saltando sobre a eminência iliopectínea ou a cabeça femoral: audível, sentido na virilha, reproduzido ao levar o quadril de flexão-abdução-rotação externa para extensão-adução-rotação interna. O externo é da banda iliotibial ou da borda anterior do glúteo máximo sobre o trocanter maior: visível, palpável de fora, reproduzido em pé. O primeiro se trata com alongamento e, se necessário, alongamento cirúrgico do tendão; o segundo com fisioterapia e, raramente, plastia da banda.",
-  "correta": "Iliopsoas: o tendão do ressalto interno.",
+  "conceito": "### Os dois ressaltos lado a lado\n| | Interno | Externo |\n|---|---|---|\n| estrutura | ==iliopsoas== | trato iliotibial / borda do glúteo máximo |\n| relevo | eminência iliopectínea, cabeça femoral | trocânter maior |\n| percepção | audível, na virilha | visível e palpável na lateral |\n| manobra | flexão-abdução-RE para extensão-adução-RI | em pé, flexão e rotação |\n| tratamento cirúrgico | alongamento/tenotomia do iliopsoas | plastia em Z ou fenestração da banda |\n\n### Ressalto interno\n- Comum em bailarinas, corredores e jogadores de futebol.\n- Muitas vezes indolor e sem necessidade de tratamento.\n- Doloroso ou limitante: alongamento, fortalecimento, infiltração; endoscopia nos refratários.\n\n### Não confundir\n- **Piriforme:** síndrome compressiva do isquiático, não ressalto.\n- **Ressalto intra-articular:** lesão labral, corpo livre, com dor e bloqueio.\n\n> **Na prova:** ressalto interno = ==iliopsoas==; externo = trato iliotibial.",
+  "correta": "**Tendão do ressalto interno.**\n- O iliopsoas salta sobre a eminência iliopectínea ou a cabeça femoral ao estender o quadril.\n- O ressalto é audível e sentido na virilha.",
   "incorretas": {
-   "A": "O piriforme é rotador externo profundo e não produz ressalto; ele dá nome à síndrome compressiva do isquiático.",
-   "C": "O trato iliotibial é o responsável pelo ressalto EXTERNO, sobre o trocanter maior.",
-   "D": "O adutor magno não tem trajeto que cruze relevo ósseo dessa maneira."
+   "A": "**Não produz ressalto.**\n- O piriforme é rotador externo profundo.\n- Dá nome à síndrome compressiva do nervo isquiático, não a um ressalto.",
+   "C": "**É o do ressalto externo.**\n- O trato iliotibial salta sobre o trocânter maior, na face lateral.",
+   "D": "**Trajeto sem relevo.**\n- O adutor magno não cruza um relevo ósseo de modo a produzir ressalto."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 6"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0051": {
-  "conceito": "Duas informações numa alternativa só, e as duas precisam estar certas. A classificação de Vancouver se apoia na estabilidade do componente femoral e no estoque ósseo (além do local da fratura), e não na idade nem no tipo de cimentação. E dentro do tipo B, que é a fratura ao redor da haste, o subtipo B2 é exatamente aquele em que a haste está solta com osso proximal ainda aceitável, o que indica revisar a haste por uma mais longa. O B3 é a haste solta com osso proximal deficiente, e não \"haste cimentada em osso osteoporótico\".",
-  "correta": "Estabilidade do componente femoral e estoque ósseo, com B2 significando implante solto.",
+  "conceito": "### Vancouver em uma frase\n- Classifica pela **localização**, pela ==estabilidade da haste== e pelo ==estoque ósseo==.\n- Idade e tipo de fixação (cimentada ou não) **não** entram.\n\n### Subtipos do tipo B\n| Subtipo | Haste | Osso proximal | Conduta |\n|---|---|---|---|\n| B1 | fixa | bom | osteossíntese (placa + cerclagens) |\n| ==B2== | ==solta== | bom | revisão com haste longa |\n| B3 | solta | **deficiente** | revisão + reconstrução (enxerto, aloenxerto, megaprótese) |\n\n### Armadilha comum\n- B3 **não** é \"haste cimentada em osso osteoporótico\".\n- É haste **solta** com **perda óssea proximal** importante, qualquer que seja o tipo de fixação.\n\n> **Na prova:** Vancouver = ==estabilidade + estoque ósseo==; ==B2 = haste solta== com osso bom.",
+  "correta": "**As duas partes estão certas.**\n- A classificação se apoia na estabilidade do componente e no estoque ósseo.\n- B2 é justamente a fratura com haste solta e osso proximal aceitável.",
   "incorretas": {
-   "B": "Acerta o significado de B2, mas erra a base da classificação: idade e tipo de fixação não entram nela.",
-   "C": "A base está certa, mas B3 é haste solta com osso proximal deficiente, e não haste cimentada em osso osteoporótico.",
-   "D": "Erra as duas partes ao mesmo tempo."
+   "B": "**Base errada.**\n- O significado de B2 está certo.\n- Mas idade e tipo de fixação não fazem parte da classificação.",
+   "C": "**Definição de B3 errada.**\n- A base da classificação está certa.\n- Mas B3 é haste solta com osso proximal deficiente, não haste cimentada em osso osteoporótico.",
+   "D": "**Erra as duas partes.**\n- Nem a base nem a definição de B3 estão corretas."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0052": {
-  "conceito": "A pergunta soma o vaso e o intervalo anatômico. O ramo ascendente (profundo) da artéria circunflexa femoral MEDIAL é o responsável pela irrigação da cabeça femoral no adulto, e ele contorna o fêmur por trás passando entre o quadrado femoral, abaixo, e o gêmeo inferior, acima. Daí sobe pela crista intertrocantérica e perfura a cápsula posterossuperior, dando os vasos retinaculares. As duas regras práticas do acesso posterior saem daí: não desinserir o quadrado femoral e seccionar os rotadores curtos a pelo menos 1,5 cm da inserção femoral.",
-  "correta": "Ramo ascendente da circunflexa femoral medial, emergindo entre o quadrado femoral e o gêmeo inferior.",
+  "conceito": "### O vaso da cabeça femoral no acesso posterior\n- ==Ramo ascendente (profundo) da circunflexa femoral medial==.\n- Emerge posteriormente ==entre o quadrado femoral (abaixo) e o gêmeo inferior (acima)==.\n- Cruza a face posterior do tendão do **obturador externo**.\n- Sobe **anterior** aos gêmeos e ao obturador interno até a cápsula posterossuperior, onde forma os vasos retinaculares.\n\n### Regras práticas do acesso posterior\n- Não desinserir o **quadrado femoral**.\n- Seccionar os rotadores curtos a **1,5 cm ou mais** da inserção femoral.\n- Preservar o **obturador externo**.\n- Na artroplastia a cabeça é ressecada, mas essas regras valem para osteossínteses, osteotomias e cirurgia preservadora.\n\n### Por que não a circunflexa lateral\n- Irriga sobretudo o trocânter maior e a porção **anterior** do colo; contribui pouco para a cabeça no adulto.\n\n> **Na prova:** preservar o ==ramo ascendente da circunflexa medial, entre o quadrado femoral e o gêmeo inferior==.",
+  "correta": "**Vaso certo e intervalo certo.**\n- A circunflexa medial, pelo seu ramo ascendente, é a principal irrigação da cabeça no adulto.\n- Ela aparece posteriormente entre o quadrado femoral e o gêmeo inferior.",
   "incorretas": {
-   "A": "Erra a artéria (a lateral não irriga a cabeça) e o intervalo.",
-   "B": "O intervalo está certo, mas a artéria é a circunflexa medial, e não a lateral.",
-   "C": "A artéria está certa, mas o ramo não emerge entre o gêmeo inferior e o obturador externo, ele cruza a face posterior do tendão do obturador externo depois de já ter passado entre o quadrado femoral e o gêmeo inferior."
+   "A": "**Erra artéria e intervalo.**\n- A circunflexa lateral não é a principal irrigação da cabeça.\n- E o intervalo descrito não é o de saída do vaso.",
+   "B": "**Artéria errada.**\n- O intervalo quadrado femoral–gêmeo inferior está certo.\n- Mas quem passa por ali é a circunflexa medial.",
+   "C": "**Intervalo errado.**\n- A artéria está certa.\n- O ramo cruza a face posterior do obturador externo depois de sair entre o quadrado femoral e o gêmeo inferior."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0053": {
-  "conceito": "No AP da bacia, cada linha corresponde a uma estrutura: a iliopectínea desenha a coluna anterior, a ilioisquiática desenha a coluna posterior, e a lágrima de Köhler tem um ramo lateral (parede da fossa acetabular) e um medial (superfície quadrilátera). Como a lágrima e a linha ilioisquiática correm lado a lado e quase se sobrepõem no quadril normal, elas funcionam como um par de referência: quando se separam uma da outra, alguma das duas se deslocou. A dissociação indica que a superfície quadrilátera migrou medialmente, o que é a marca da fratura dessa parede.",
-  "correta": "Fratura da superfície quadrilátera: é o deslocamento medial dela que separa a lágrima da linha ilioisquiática.",
+  "conceito": "### Linhas do AP da bacia\n| Linha | Estrutura |\n|---|---|\n| iliopectínea | coluna anterior |\n| ilioisquiática | coluna posterior |\n| lágrima de Köhler | ramo lateral: fossa acetabular; ramo medial: **superfície quadrilátera** |\n| teto | domo de carga |\n| rebordo anterior e posterior | paredes |\n\n### A relação lágrima–ilioisquiática\n- No quadril normal, a lágrima e a linha ilioisquiática correm lado a lado, quase sobrepostas.\n- Quando se **separam**, uma delas se deslocou.\n- A dissociação indica que a ==superfície quadrilátera== migrou medialmente: marca da fratura dessa parede (e da protrusão central).\n\n### Assinatura de outras fraturas\n- **Parede posterior:** fragmento sobre a cabeça, melhor no oblíquo obturador (Judet).\n- **Transversa:** interrompe as linhas iliopectínea e ilioisquiática no mesmo nível; transtectal, justatectal ou infratectal conforme cruza o teto.\n- **Dupla coluna:** sinal do esporão no oblíquo obturador.\n\n> **Na prova:** lágrima dissociada da linha ilioisquiática = fratura da ==superfície quadrilátera==.",
+  "correta": "**É o deslocamento medial da placa quadrilateral.**\n- O ramo medial da lágrima corresponde à superfície quadrilátera.\n- Quando ela fratura e desvia para medial, separa-se da linha ilioisquiática.",
   "incorretas": {
-   "A": "A fratura da parede posterior aparece como um fragmento sobreposto à cabeça no AP e se confirma no oblíquo obturador, não altera a relação entre lágrima e coluna posterior.",
-   "B": "A transversa infratectal cruza abaixo do teto acetabular e interrompe as duas linhas de coluna, sem produzir especificamente essa dissociação.",
-   "C": "A transversa transtectal cruza o teto e tem outra assinatura radiográfica, com desabamento da superfície de carga."
+   "A": "**Outra assinatura.**\n- A parede posterior aparece como fragmento sobreposto à cabeça e se confirma no oblíquo obturador.\n- Não altera a relação entre lágrima e coluna posterior.",
+   "B": "**Interrompe as duas linhas.**\n- A transversa infratectal cruza abaixo do teto e interrompe as linhas das colunas.\n- Não produz especificamente a dissociação descrita.",
+   "C": "**Atinge o teto.**\n- A transversa transtectal cruza a superfície de carga, com outra assinatura radiográfica."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0054": {
-  "conceito": "Tudo aqui se resolve identificando qual braço de alavanca cada manobra altera. O braço do peso corporal vai da linha média até o centro de rotação: medializar o acetábulo o ENCURTA. O braço dos abdutores vai do centro de rotação até o trocanter maior: aumentar o offset do colo o ALONGA, porque afasta o fêmur do centro sem mudar a posição do centro. Alongar o braço dos abdutores significa que o mesmo músculo produz mais momento (é nesse sentido que a alternativa fala em aumentar a força da musculatura abdutora) e, como consequência, a força resultante na articulação cai.",
-  "correta": "Offset aumentado alonga o braço de alavanca dos abdutores, que passam a gerar mais momento para a mesma contração.",
+  "conceito": "### Qual braço cada manobra muda\n| Manobra | Braço alterado | Efeito |\n|---|---|---|\n| medializar o acetábulo | ==encurta o braço do peso corporal== | menos carga articular |\n| aumentar o offset femoral | ==alonga o braço dos abdutores== | abdutores mais eficientes, menos carga |\n| lateralizar o acetábulo | alonga o braço do peso | mais carga |\n| reduzir o offset | encurta o braço dos abdutores | Trendelenburg, instabilidade |\n\n### O efeito do offset\n- O offset afasta a diáfise do centro de rotação, sem mudar a posição do centro em relação à linha média.\n- Com braço maior, o mesmo músculo gera **mais momento abdutor**: é nesse sentido que a alternativa diz \"aumenta a força da musculatura abdutora\".\n- Consequência: a força resultante na articulação diminui e a marcha melhora.\n\n### Limites\n- Offset exagerado alonga o membro, gera dor trocantérica e aumenta o torque na haste.\n\n> **Na prova:** offset maior = ==braço dos abdutores maior== (mais momento abdutor); medializar = braço do peso menor.",
+  "correta": "**Alonga o braço dos abdutores.**\n- Com maior offset, os abdutores trabalham com braço de alavanca maior.\n- Geram mais momento para a mesma contração, e a carga resultante na articulação cai.",
   "incorretas": {
-   "A": "Medializar o acetábulo ENCURTA o braço do peso corporal, e é por isso que reduz a carga articular.",
-   "B": "Medializar melhora a eficiência dos abdutores em vez de piorá-la, pela mesma razão geométrica.",
-   "C": "O offset do colo não interfere no braço do peso corporal, que depende da posição do centro de rotação em relação à linha média, ele altera o braço dos abdutores."
+   "A": "**Efeito contrário.**\n- Medializar o acetábulo encurta o braço do peso corporal.\n- É por isso que reduz a carga articular.",
+   "B": "**Melhora, não piora.**\n- Com o braço do peso menor, os abdutores precisam de menos força para equilibrar a pelve.\n- A eficiência deles melhora.",
+   "C": "**Braço errado.**\n- O offset femoral não altera o braço do peso corporal.\n- Ele muda o braço dos abdutores."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0055": {
-  "conceito": "O osso só se mantém onde é solicitado. Uma haste femoral rígida transmite a carga direto para a diáfise, onde ela está bem fixa, e o fêmur proximal deixa de ser carregado, é o desvio de carga (stress shielding). A região que mais perde densidade é a cortical proximal e medial, o calcar, correspondente à zona 7 de Gruen, seguida da zona 1 lateral. Isso vale tanto para haste cimentada quanto não cimentada, e é mais acentuado quanto mais rígida e mais volumosa a haste, daí o interesse por hastes de menor módulo e por fixação metafisária.",
-  "correta": "Região cortical proximal e medial, o calcar, zona 7 de Gruen, que é onde o desvio de carga mais se manifesta.",
+  "conceito": "### Desvio de carga (*stress shielding*)\n- O osso se mantém onde é solicitado (lei de Wolff).\n- Uma haste rígida bem fixa na diáfise leva a carga direto para baixo.\n- O fêmur **proximal** deixa de receber carga e perde densidade.\n\n### Onde perde mais\n| Zona de Gruen | Região | Perda óssea |\n|---|---|---|\n| ==7== | ==calcar (proximal medial)== | ==a maior== |\n| 1 | proximal lateral (trocânter) | importante, menor que a 7 |\n| 3–5 | distal, ponta da haste | pouca perda; pode haver **hipertrofia cortical** |\n\n### Fatores que aumentam o desvio de carga\n- Haste **rígida** (cromo-cobalto) e de **grande diâmetro**.\n- Fixação **distal** extensa (revestimento poroso completo).\n- Osso de baixa densidade prévia.\n\n### Estratégias para reduzir\n- Hastes de menor módulo (titânio), cônicas, com fixação **metafisária** e revestimento proximal.\n\n> **Na prova:** maior perda de densidade = cortical ==proximal e medial (calcar, zona 7)==.",
+  "correta": "**É o calcar, zona 7 de Gruen.**\n- A haste leva a carga para a diáfise, e o fêmur proximal medial deixa de ser solicitado.\n- É ali que a densidade mineral mais cai, com hastes cimentadas ou não.",
   "incorretas": {
-   "A": "A cortical distal é justamente onde a carga passa a ser transmitida, e ali costuma haver hipertrofia em vez de perda.",
-   "B": "Mesma razão: distalmente o osso é solicitado, não poupado.",
-   "C": "A perda proximal existe também na cortical lateral (zona 1), mas é menor do que no calcar medial."
+   "A": "**Região solicitada.**\n- Distalmente a carga é transmitida pela haste.\n- O osso ali se mantém ou até hipertrofia.",
+   "B": "**Mesma razão.**\n- A cortical distal medial também recebe carga.\n- Não é onde a perda é maior.",
+   "C": "**Perde, mas menos.**\n- A zona 1 (proximal lateral) também sofre desvio de carga.\n- A perda, porém, é menor que no calcar medial."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0056": {
-  "conceito": "É a mesma mecânica da questão sobre como reduzir o estresse, lida ao contrário. Polietileno fino transmite a carga concentrada em vez de distribuí-la, e ressecar o osso subcondral entrega o cimento ao osso esponjoso, que é muito menos rígido. Somando as duas coisas, o pico de tensão no cimento e no osso trabecular é máximo. Daí as duas regras de técnica: manter espessura mínima de polietileno (o que limita o tamanho de cabeça que a taça cimentada aceita) e fresar o acetábulo com parcimônia, preservando a placa subcondral e fazendo apenas orifícios de ancoragem.",
-  "correta": "Copa mais fina com osso subcondral ressecado: carga concentrada apoiada em osso esponjoso.",
+  "conceito": "### Estresse no cimento e no osso do acetábulo\n- O **polietileno** distribui a carga; quanto mais fino, mais concentra.\n- O **osso subcondral** é a camada mais rígida; sem ela, o cimento se apoia no esponjoso, muito menos rígido.\n\n| Polietileno | Subcondral | Estresse no cimento e no osso trabecular |\n|---|---|---|\n| espesso | preservado | menor |\n| espesso | ressecado | intermediário |\n| fino | preservado | intermediário |\n| ==fino== | ==ressecado== | ==maior== |\n\n### Regras de técnica\n- Espessura mínima de polietileno de 6–8 mm, o que limita o tamanho da cabeça na taça cimentada.\n- Fresar com parcimônia, preservando a placa subcondral; fazer orifícios de ancoragem.\n- Manto de cimento de 2–3 mm, leito seco e pressurizado.\n\n> **Na prova:** maior estresse = ==polietileno fino + subcondral ressecado==.",
+  "correta": "**Soma das duas piores condições.**\n- O polietileno fino concentra a carga em vez de distribuí-la.\n- Sem o osso subcondral, o cimento se apoia no esponjoso, pouco rígido.\n- O pico de tensão no cimento e no osso trabecular fica máximo.",
   "incorretas": {
-   "A": "É a combinação de menor estresse, e não de maior.",
-   "B": "A ressecção do subcondral piora, mas a copa espessa compensa parcialmente ao distribuir melhor a carga.",
-   "C": "A copa fina piora, mas preservar o subcondral mantém o apoio na camada óssea mais resistente."
+   "A": "**É a combinação de menor estresse.**\n- Polietileno espesso e subcondral preservado são justamente a recomendação técnica.",
+   "B": "**Uma condição ruim, outra boa.**\n- Ressecar o subcondral piora.\n- Mas o polietileno espesso distribui melhor a carga e compensa em parte.",
+   "C": "**Também só uma ruim.**\n- O polietileno fino piora.\n- Mas preservar o subcondral mantém o apoio na camada óssea mais resistente."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0057": {
