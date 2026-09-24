@@ -1181,116 +1181,116 @@
   "conferido": false
  },
  "pediatria-0081": {
-  "conceito": "A sinovite transitória do quadril é causa comum de dor e claudicação em crianças, geralmente após infecção viral recente e com estado geral preservado. O diagnóstico é de exclusão e exige afastar artrite séptica, que tende a cursar com febre alta, incapacidade de apoiar, marcadores inflamatórios elevados e aspecto tóxico. A sinovite transitória costuma melhorar com analgesia, repouso relativo e observação. Pode haver recorrência, mais frequentemente nos primeiros meses após o episódio inicial. As séries mostram ampla variação, aproximadamente 4% a 17%; em perguntas de prova, a taxa anual clássica cobrada é 4%.",
-  "correta": "A alternativa B está correta. A taxa anual de recorrência usada pela questão é 4%. A informação deve ser interpretada como estimativa populacional: recorrência não transforma automaticamente o diagnóstico em outra doença, mas episódios repetidos exigem reavaliação para doença de Perthes, artrite inflamatória, infecção, displasia ou outras causas. A conduta segura permanece confirmar que a apresentação atual não possui critérios de gravidade para artrite séptica.",
+  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** recorrência anual da sinovite transitória = ==cerca de 4%== (veja o alerta).",
+  "correta": "**4%.**\n- Dado anual adotado pela fonte.\n- Doença benigna e autolimitada.",
   "incorretas": {
-   "A": "0,4% subestima a recorrência relatada em estudos clínicos. Embora a maioria tenha episódio único e autolimitado, recorrência é um evento reconhecido.",
-   "C": "14% situa-se dentro de algumas séries de recorrência acumulada, mas não corresponde à taxa anual clássica cobrada pela fonte da questão. Variação entre estudos reflete tempo de seguimento e critérios diagnósticos.",
-   "D": "24% superestima a taxa anual usual. Recorrências múltiplas ou muito frequentes justificam revisar o diagnóstico inicial, em vez de presumir que todo quadro seja sinovite transitória."
+   "A": "**Subestima.**\n- 0,4%.",
+   "C": "**Superestima.**\n- Pode ser a taxa acumulada em séries longas.",
+   "D": "**Superestima.**\n- Muito alta."
   },
+  "alerta": "As taxas de recorrência publicadas variam conforme o período de seguimento; o valor de 4% é o dado anual adotado pelo gabarito da prova.",
   "referencias": [
    "Transient synovitis of the hip in children: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC3029041/",
    "Transient synovitis: recurrence and clinical course. https://pubmed.ncbi.nlm.nih.gov/1701691/"
   ],
-  "alerta": "As taxas de recorrência publicadas variam conforme o período de seguimento; o valor de 4% é o dado anual adotado pelo gabarito da prova.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0082": {
-  "conceito": "Durante o ciclo normal da marcha, o centro de gravidade do corpo oscila verticalmente: atinge seu ponto mais **baixo** durante o **apoio do calcanhar** (contato inicial, fase de duplo apoio, quando o peso começa a ser transferido de um membro para o outro) e seu ponto mais **alto** durante a **acomodação intermediária** (apoio unipodal, quando o corpo \"passa por cima\" do membro em extensão, no meio da fase de apoio).",
-  "correta": "B. As fases são, respectivamente, apoio do calcanhar e acomodação intermediária.",
+  "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n### Altura do centro de massa\n| Momento | Altura |\n|---|---|\n| ==contato do calcanhar== (duplo apoio) | ==mais baixa== |\n| ==apoio médio== (acomodação intermediária) | ==mais alta== |\n\n- No lateral: máximo deslocamento no apoio médio, sobre o membro de apoio.\n\n> **Na prova:** centro de gravidade mais baixo no ==apoio do calcanhar== e mais alto no ==apoio médio==",
+  "correta": "**Apoio do calcanhar e apoio médio.**\n- Duplo apoio: pernas abertas, centro baixo.\n- Apoio médio: perna vertical, centro alto.",
   "incorretas": {
-   "A": "A \"oscilação intermediária\" é uma fase da fase de balanço (não de apoio), e não corresponde ao ponto de maior elevação do centro de gravidade, que ocorre durante o apoio unipodal (acomodação intermediária).",
-   "C": "O \"aplanamento do pé\" ocorre logo após o contato inicial, mas não é o ponto mais baixo do centro de gravidade, que ocorre no próprio apoio do calcanhar.",
-   "D": "Nem o aplanamento do pé corresponde ao ponto mais baixo, nem a oscilação intermediária ao ponto mais alto do centro de gravidade durante o ciclo da marcha."
+   "A": "**Máximo errado.**\n- Oscilação não é o ponto mais alto.",
+   "C": "**Mínimo errado.**\n- Não é o aplanamento.",
+   "D": "**Mínimo errado.**\n- É o contato do calcanhar."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0083": {
-  "conceito": "A osteogênese imperfeita tipo V é uma forma clínica distinta: fragilidade óssea sem dentinogênese imperfeita típica, calo hiperplásico exuberante e ossificação da membrana interóssea do antebraço. O calo pode crescer, ser doloroso e adquirir aspecto agressivo, criando armadilha diagnóstica com neoplasia óssea.",
-  "correta": "A alternativa B está correta. A OI tipo V pode simular clínica e radiograficamente osteossarcoma devido ao calo hiperplásico. O contexto de fraturas, história familiar e imagem evolutiva evita biópsia ou cirurgia precipitadas.",
+  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n> **Na prova:** OI que simula osteossarcoma = ==tipo V== (calo hiperplásico).",
+  "correta": "**Tipo V.**\n- Calo hiperplásico pseudotumoral.\n- Calcificação da membrana interóssea.",
   "incorretas": {
-   "A": "A alternativa A (IV) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "C": "A alternativa C (VI) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "D": "A alternativa D (VII) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta."
+   "A": "**Moderado.**\n- Sem calo pseudotumoral.",
+   "C": "**Defeito de mineralização.**\n- Osteoide em escamas de peixe.",
+   "D": "**Recessivo (CRTAP).**\n- Rizomelia."
   },
   "referencias": [
    "Osteogenesis imperfecta type V: a review. https://pmc.ncbi.nlm.nih.gov/articles/PMC5078863/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0084": {
-  "conceito": "A doença de Panner e a osteocondrite dissecante (OCD) do capítulo ocorrem no mesmo osso, mas têm idade, mecanismo e prognóstico distintos. **Panner** é osteocondrose autolimitada do capítulo inteiro em crianças mais novas, geralmente abaixo de 10 a 12 anos, com remodelação e recuperação espontânea. A **OCD do capítulo** é lesão focal osteocondral típica de adolescentes ativos, especialmente esportes de arremesso ou apoio repetitivo; pode evoluir com fragmento instável, corpos livres e sintomas mecânicos. A diferenciação por idade é extremamente útil: criança pequena com alteração difusa sugere Panner; adolescente com lesão focal sugere OCD.",
-  "correta": "A alternativa A está correta. A OCD do capítulo acomete crianças mais velhas que a doença de Panner. A OCD aparece habitualmente entre 10 e 24 anos, com pico na adolescência esportiva, enquanto Panner afeta crianças menores e tende a ser autolimitada. Essa diferença muda a orientação: Panner costuma responder a repouso e acompanhamento, já OCD pode demandar ressonância para estabilidade e tratamento cirúrgico em lesões instáveis.",
+  "conceito": "### Panner × osteocondrite dissecante do capítulo\n| Aspecto | ==Panner== | ==OCD do capítulo== |\n|---|---|---|\n| idade | ==< 10 anos== (5 a 10) | ==12 a 16 anos== |\n| extensão | ==todo o capítulo== (fragmentação difusa) | lesão focal anterolateral |\n| corpos livres | não | ==sim== (bloqueio, estalido) |\n| prognóstico | ==bom==, reossifica | variável; pode exigir cirurgia |\n| perfil | | ginastas, arremessadores (valgo repetido) |\n\n### Tratamento da OCD\n| Lesão | Conduta |\n|---|---|\n| estável, fise aberta | repouso esportivo |\n| instável ou corpo livre | artroscopia: remoção, microfratura, fixação, enxerto osteocondral |\n\n> **Na prova:** OCD do capítulo difere de Panner por acometer ==crianças mais velhas==.",
+  "correta": "**Crianças mais velhas.**\n- OCD em adolescentes; Panner antes dos 10.\n- Panner é difusa e benigna.",
   "incorretas": {
-   "B": "Sintomas mecânicos, como travamento, são mais sugestivos de OCD, mas a afirmação não é a distinção mais básica e universal entre as duas entidades. A idade é o critério clínico mais confiável entre as opções.",
-   "C": "Rigidez pode ocorrer em ambas e depende de dor, derrame e duração do quadro. Não é um critério tão específico quanto a faixa etária e o padrão da lesão.",
-   "D": "Esclerose radiográfica pode aparecer em alterações osteocondrais e não separa com segurança Panner de OCD. O padrão difuso versus focal e a idade do paciente são mais úteis."
+   "B": "**Gabarito é a idade.**\n- Sintomas mecânicos também ocorrem na OCD.",
+   "C": "**Não é o critério.**\n- Rigidez em ambas.",
+   "D": "**Não diferencia.**\n- Esclerose em ambas."
   },
   "referencias": [
    "Diagnosis and prevention of osteochondritis dissecans of the capitellum. https://pmc.ncbi.nlm.nih.gov/articles/PMC10901169/",
    "Panner’s disease: literature review. https://pmc.ncbi.nlm.nih.gov/articles/PMC4340849/",
    "Osteochondritis dissecans of the elbow. https://pmc.ncbi.nlm.nih.gov/articles/PMC4896885/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0085": {
-  "conceito": "A coxa vara congênita ou do desenvolvimento é deformidade proximal do fêmur com redução do ângulo cervicodiafisário e defeito de ossificação no colo femoral inferomedial. A radiografia pode mostrar uma área triangular metafisária e duas linhas radiolucentes que convergem, formando um **V invertido**. A linha vertical corresponde à fise e a linha oblíqua ao defeito metafisário; o ângulo epifisário de Hilgenreiner ajuda a estimar progressão e indicação de osteotomia valgizante. É diferente de epifisiólise, em que há deslizamento epifisário, e de coxa vara metabólica, em que o padrão é mais difuso.",
-  "correta": "A alternativa D está correta. A presença de duas linhas radiolucentes formando V invertido é o achado radiográfico característico da coxa vara congênita. Ele representa a anatomia anormal da fise e do defeito metafisário do colo femoral e orienta a mensuração do ângulo de Hilgenreiner. O reconhecimento é importante porque deformidades progressivas podem causar encurtamento, claudicação, Trendelenburg e necessidade de osteotomia para restaurar biomecânica do quadril.",
+  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Achado radiográfico\n- ==Duas linhas radiolucentes em V invertido== no colo inferomedial, delimitando o ==triângulo de Fairbank==.\n- Ângulo cervicodiafisário ==diminuído==, fise vertical e alargada.\n\n> **Na prova:** coxa vara congênita = ==V invertido radiolucente== (triângulo de Fairbank).",
+  "correta": "**V invertido radiolucente.**\n- Delimita o triângulo de Fairbank.\n- No colo inferomedial.",
   "incorretas": {
-   "A": "Coxa vara reduz, e não aumenta, o ângulo cervicodiafisário. O aumento desse ângulo define coxa valga, condição de mecanismo diferente.",
-   "B": "Alteração da fise proximal pode estar presente, mas estreitamento isolado não é o sinal característico. O padrão em V invertido é mais específico para a forma congênita/desenvolvimental.",
-   "C": "Pode haver um fragmento triangular metafisário, porém a descrição clássica completa é a dupla de linhas radiolucentes em V invertido. A alternativa descreve apenas parte e ainda a localiza lateralmente de modo impreciso."
+   "A": "**Invertido.**\n- Ângulo diminuído.",
+   "B": "**Invertido.**\n- Fise alargada e vertical.",
+   "C": "**Lado errado.**\n- Fragmento é inferomedial."
   },
   "referencias": [
    "Pediatric Orthopedics for Primary Care Physicians: congenital coxa vara. https://jasulib.org.kg/wp-content/uploads/2022/11/5.1.-Pediatric-Orthopedics-for-Primary-Care-Physicians.-Second-Edition.-Dennis-S.Weiner-M.D.-2004.-%E2%80%93-185-p..pdf"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0086": {
-  "conceito": "A **diplegia espástica**, forma de paralisia cerebral classicamente associada à prematuridade e à leucomalácia periventricular (decorrente de anóxia perinatal), acomete predominantemente os membros inferiores, com relativa preservação dos membros superiores, produzindo o padrão de marcha característico \"em tesoura\", com adução e rotação interna dos quadris, flexão dos joelhos e equino dos tornozelos, compatível com o padrão de marcha observado na paciente.",
-  "correta": "A. A paciente é classificada como tendo uma diplegia espástica.",
+  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n### Topografia × lesão\n| Topografia | Lesão típica |\n|---|---|\n| ==diplegia== (MMII > MMSS) | ==leucomalácia periventricular== (prematuro); fibras dos MMII passam mais perto dos ventrículos |\n| hemiplegia | infarto (artéria cerebral média), malformação |\n| tetraplegia | lesão difusa, hipóxia grave |\n\n> **Na prova:** leucomalácia periventricular = ==diplegia==",
+  "correta": "**Diplegia espástica.**\n- Membros inferiores mais acometidos.\n- Anoxia perinatal e atraso motor.",
   "incorretas": {
-   "B": "A **hemiplegia espástica** acomete predominantemente um único lado do corpo (um padrão assimétrico), diferente do comprometimento bilateral dos membros inferiores sugerido pelo caso.",
-   "C": "A **monoplegia espástica**, acometendo um único membro, é um padrão raro e não corresponde ao comprometimento mais amplo sugerido pela história de anoxia perinatal.",
-   "D": "A **tetraplegia espástica** envolve os quatro membros de forma mais grave e geralmente mais simétrica entre membros superiores e inferiores, um quadro habitualmente mais associado a lesão cerebral mais difusa do que a leucomalácia periventricular típica da diplegia."
+   "B": "**Um lado.**\n- Membro superior e inferior do mesmo lado.",
+   "C": "**Rara.**\n- Um membro.",
+   "D": "**Quatro membros.**\n- Tronco e MMSS muito afetados."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0087": {
-  "conceito": "O GMFCS tem cinco níveis, sem nível VI. O nível V descreve a maior limitação de mobilidade grossa: a criança é transportada em cadeira de rodas manual em todos os ambientes e apresenta dificuldade importante para manter controle antigravitacional de cabeça e tronco e para controlar movimentos de braços e pernas. A classificação não se baseia só em uma fotografia, mas a ausência de controle cervical e de tronco é um sinal altamente compatível com nível V. Essa definição ajuda a diferenciar do nível IV, em que a criança pode sentar com suporte limitado e usar mobilidade assistida ou motorizada em alguns contextos.",
-  "correta": "A alternativa C está correta. Ausência de controle cervical e de tronco corresponde ao GMFCS V. A criança nesse nível depende de transporte em cadeira de rodas e suporte amplo para posicionamento e participação. A escala descreve função habitual; intervenções de reabilitação podem melhorar conforto, cuidados e comunicação, mas não mudam automaticamente o nível funcional apenas por uma habilidade isolada.",
+  "conceito": "### GMFCS (6 a 12 anos)\n| Nível | Mobilidade |\n|---|---|\n| I | anda sem restrições; corre e salta com limitação |\n| II | anda na maioria dos ambientes; limitação em distâncias, terreno irregular |\n| III | anda com ==dispositivo manual== (andador, muletas); cadeira para distâncias |\n| ==IV== | ==controle de cabeça e tronco==; anda pouco (casa, com ajuda); ==cadeira de rodas na comunidade== (pode ser motorizada) |\n| V | sem controle de cabeça e tronco; transportado |\n\n### Uso ortopédico\n| Nível | Preocupação |\n|---|---|\n| I-III | marcha: análise, cirurgia multinível |\n| ==IV-V== | ==luxação do quadril== (vigilância radiográfica), escoliose |\n\n- Índice de migração de Reimers > 30 a 40%: cirurgia de partes moles ou osteotomias.\n\n> **Na prova:** sem controle cervical e de tronco = ==GMFCS V==",
+  "correta": "**Nível V.**\n- Sem controle de cabeça e tronco.\n- Transportado em cadeira.",
   "incorretas": {
-   "A": "O nível III envolve marcha com dispositivo manual. É incompatível com ausência de controle de cabeça e tronco demonstrada no enunciado.",
-   "B": "O nível IV tem mobilidade independente limitada, porém costuma preservar mais controle postural que o descrito. A falta de controle cervical e troncal aponta para nível V.",
-   "D": "GMFCS possui apenas cinco níveis. Portanto, nível VI não existe e é um distrator estrutural da classificação."
+   "A": "**Dispositivo manual.**\n- Anda com andador.",
+   "B": "**Controla o tronco.**\n- Cadeira na comunidade.",
+   "D": "**Não existe.**\n- São cinco níveis."
   },
   "referencias": [
    "GMFCS Expanded and Revised. CanChild. https://canchild.ca/system/tenon/assets/attachments/000/000/058/original/GMFCS-ER_English.pdf"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0088": {
-  "conceito": "A vigilância do quadril na paralisia cerebral usa radiografia AP de pelve seriada, pois a migração pode ser silenciosa até fase avançada. O índice de **Reimers**, ou porcentagem de migração, calcula a proporção lateral da cabeça femoral que não está coberta pelo acetábulo: porção descoberta dividida pela largura total da cabeça, multiplicada por 100. Valores acima de 30% indicam quadril em risco e exigem acompanhamento mais estreito. Ele é o índice mais usado para quantificar subluxação. Outros nomes cobram medidas diferentes: Wiberg é ângulo centro-borda; Perkins é uma linha de referência da DDQ; Hilgenreiner é linha pélvica; nenhum deles expressa porcentagem de migração.",
-  "correta": "A alternativa C está correta. A figura representa o índice de Reimers porque mede a porcentagem de lateralização da cabeça femoral em relação ao acetábulo. Essa medida é central na vigilância de quadril da paralisia cerebral e permite comparar radiografias ao longo do crescimento. Quanto maior a porcentagem, maior o risco de subluxação, deformidade da cabeça femoral, dor e dificuldade para sentar ou realizar higiene.",
+  "conceito": "### Índice de migração de Reimers\n- Porcentagem da ==cabeça femoral lateral à linha de Perkins==.\n\n| Valor | Conduta (PC) |\n|---|---|\n| < 30% | vigilância |\n| 30 a 40% | liberação de partes moles (adutores, psoas) |\n| > 40 a 60% | osteotomia femoral varizante ± pélvica (Dega) |\n| luxado doloroso | salvamento |\n\n- Vigilância radiográfica anual a partir de 2 anos, maior risco em ==GMFCS IV e V==.\n\n### Outros índices do quadril\n| Índice | O que mede |\n|---|---|\n| Wiberg | ângulo centro-borda (cobertura) |\n| Perkins | linha vertical pela borda do acetábulo |\n| Hilgenreiner | linha horizontal pelas trirradiadas |\n| índice acetabular | inclinação do teto |\n\n> **Na prova:** porcentagem da cabeça fora da linha de Perkins = ==Reimers==.",
+  "correta": "**Reimers.**\n- Índice de migração da cabeça femoral.\n- Guia a vigilância do quadril na PC.",
   "incorretas": {
-   "A": "O ângulo de Wiberg, ou centro-borda lateral, avalia cobertura acetabular por meio de ângulo, não porcentagem de cabeça femoral descoberta. É mais associado à avaliação de displasia acetabular.",
-   "B": "A linha de Perkins é uma linha vertical traçada a partir do rebordo acetabular lateral e participa dos quadrantes de localização na DDQ. Ela pode ser usada no desenho do Reimers, mas não é o índice percentual em si.",
-   "D": "A linha de Hilgenreiner é horizontal, unindo cartilagens trirradiadas, e serve como referência radiográfica pélvica. Não quantifica lateralização da cabeça femoral."
+   "A": "**Centro-borda.**\n- Cobertura acetabular.",
+   "B": "**Linha.**\n- Usada no cálculo, não o índice.",
+   "D": "**Linha horizontal.**\n- Hilgenreiner."
   },
   "referencias": [
    "Hip surveillance and management in cerebral palsy. https://pmc.ncbi.nlm.nih.gov/articles/PMC3838516/",
    "Hip displacement in CP: current concepts review. https://pmc.ncbi.nlm.nih.gov/articles/PMC11342852/",
    "Radiological assessment of hip disease in CP. https://pmc.ncbi.nlm.nih.gov/articles/PMC10618048/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0089": {
   "conceito": "O alongamento do tríceps sural na paralisia cerebral pode ser descrito por zonas anatômicas. A zona 1 envolve gastrocnêmio distal; a zona 2 vai do ventre distal do gastrocnêmio até o término das fibras do sóleo; a zona 3 corresponde ao tendão de Aquiles. A técnica de **Vulpius** é recessão transversal do gastrocnêmio e sóleo na zona 2, usada para equino em que ambos participam da contratura. A Strayer é recessão distal isolada do gastrocnêmio, zona 1. Hoke é alongamento do tendão de Aquiles, zona 3. Baker e Vulpius são ambas técnicas de alongamento aponeurótico gastrocnêmio-sóleo na zona 2, com variações de execução.",
