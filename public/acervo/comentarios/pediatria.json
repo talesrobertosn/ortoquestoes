@@ -589,124 +589,124 @@
   "conferido": false
  },
  "pediatria-0041": {
-  "conceito": "A marcha humana utiliza movimentos coordenados da pelve, quadril, joelho e tornozelo para aumentar o comprimento efetivo do passo e suavizar a trajetória do centro de massa. A rotação pélvica no plano transverso avança anteriormente o lado do membro em progressão, contribuindo para alongar funcionalmente o membro e o passo sem exigir aumento equivalente da flexão do quadril. Na descrição clássica dos determinantes da marcha, esse movimento ajuda a reduzir a excursão vertical do centro de massa. Estudos biomecânicos modernos mostram que a contribuição quantitativa da rotação pélvica para essa redução é menor do que inicialmente proposto, mas o princípio cinemático permanece válido e é o que a questão explora.",
-  "correta": "A alternativa A está correta. A rotação anterior da hemipelve do membro que progride, associada à flexão do quadril, aumenta o avanço do membro e contribui para suavizar a oscilação vertical do centro de massa durante a marcha.",
+  "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n> **Na prova:** rotação pélvica = deslocamento ==anterior== com ==menor oscilação vertical==.",
+  "correta": "**Anterior, menor oscilação vertical.**\n- A pelve gira para frente com o membro em balanço.\n- Alonga o passo sem subir o centro de massa.",
   "incorretas": {
-   "B": "O movimento funcional do lado que avança é anterior, não posterior. Rotação posterior reduziria o avanço efetivo do membro.",
-   "C": "A direção anterior está correta, mas o determinante clássico está relacionado à redução da excursão vertical do centro de massa, não simplesmente da oscilação horizontal.",
-   "D": "Erra tanto a direção predominante da hemipelve durante o avanço quanto o plano de oscilação que o mecanismo clássico procura suavizar."
+   "B": "**Direção errada.**\n- Anterior.",
+   "C": "**Plano errado.**\n- Reduz a oscilação vertical.",
+   "D": "**Duplamente errada.**\n- Direção e plano."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Gait. https://posna.org/physician-education/study-guide/gait",
    "Quantification of pelvic rotation as a determinant of gait. Arch Phys Med Rehabil. 2001. https://pubmed.ncbi.nlm.nih.gov/11239313/",
    "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 20"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0042": {
-  "conceito": "A paralisia cerebral discinética está relacionada principalmente à disfunção dos núcleos da base e seus circuitos. O kernicterus, decorrente de neurotoxicidade por bilirrubina não conjugada em níveis elevados, tem predileção por estruturas como globo pálido e núcleos subtalâmicos e historicamente constitui causa clássica de paralisia cerebral discinética. A atetose descreve movimentos lentos, contínuos e contorcidos, sobretudo distais, frequentemente misturados a distonia. Em termos modernos, é comum utilizar o termo paralisia cerebral discinética, subdividindo o componente predominante em distonia e coreoatetose. Para diferenciar: espasticidade relaciona-se à via piramidal; ataxia ao cerebelo; discinesia aos núcleos da base.",
-  "correta": "A alternativa B está correta. A atetose é um distúrbio extrapiramidal típico do acometimento dos gânglios da base e possui associação clássica com kernicterus neonatal.",
+  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n> **Na prova:** lesão dos núcleos da base por kernicterus = ==atetose==",
+  "correta": "**Atetose.**\n- Núcleos da base, clássica do kernicterus.\n- Movimentos lentos, contorcidos, involuntários.",
   "incorretas": {
-   "A": "Ataxia decorre principalmente de disfunção cerebelar e se manifesta por dificuldade de coordenação, dismetria e instabilidade.",
-   "C": "Distonia também integra o espectro discinético e pode ocorrer após lesões dos núcleos da base, mas o epônimo e a associação clássica histórica do kernicterus na questão apontam para a forma atetoide.",
-   "D": "Espasticidade corresponde a lesão de vias motoras superiores/piramidais e produz hipertonia dependente da velocidade, não movimentos coreoatetoides."
+   "A": "**Cerebelo.**\n- Desequilíbrio e dismetria.",
+   "C": "**Também discinética.**\n- Posturas sustentadas; a questão cobra a atetose do kernicterus.",
+   "D": "**Piramidal.**\n- Hipertonia velocidade-dependente."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Cerebral Palsy. https://posna.org/physician-education/study-guide/cerebral-palsy",
    "Cerebral palsy in children: A clinical practice review. https://pubmed.ncbi.nlm.nih.gov/39168782/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 31"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0043": {
-  "conceito": "Na epifisiólise femoral proximal, a fixação in situ estabiliza a fise sem tentar redução forçada. O parafuso deve atravessar a fise de modo central, com ponta segura dentro da epífise e trajetória que evite cartilagem articular e vasos retinaculares. A necrose avascular é a complicação temida: relaciona-se sobretudo ao deslizamento instável, manipulação e agressão à circulação pós-superior da cabeça.",
-  "correta": "A alternativa B está correta. O quadrante anterossuperior é a região a evitar na posição do parafuso segundo a técnica cobrada, pois uma trajetória inadequada aumenta o risco de violação articular e de agressão às estruturas vasculares. Planejamento AP e perfil, fluoroscopia e confirmação de ponta epifisária são indispensáveis.",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n> **Na prova:** parafuso na epifisiólise deve evitar o quadrante ==anterossuperior==",
+  "correta": "**Anterossuperior.**\n- Região de risco vascular da epífise.\n- Parafuso central, perpendicular à fise.",
   "incorretas": {
-   "A": "A alternativa A (anteroinferior.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "C": "A alternativa C (posteroinferior.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "D": "A alternativa D (posterossuperior.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta."
+   "A": "**Não é o de risco.**\n- Anteroinferior.",
+   "C": "**Não é o de risco cobrado.**\n- Posteroinferior.",
+   "D": "**Gabarito indica o anterossuperior.**\n- Evitar o superior como um todo."
   },
   "referencias": [
    "Slipped capital femoral epiphysis: current management strategies. https://pmc.ncbi.nlm.nih.gov/articles/PMC6460813/",
    "SCFE. Orthobullets. https://www.orthobullets.com/pediatrics/4038/slipped-capital-femoral-epiphysis-scfe",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 15"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0044": {
-  "conceito": "A classificação de **Langenskiöld** para a tíbia vara de Blount descreve a progressão radiográfica da deformidade metafisária medial em seis estágios. No **estágio IV**, a epífise medial já se estende para dentro do defeito metafisário deprimido, preenchendo parcialmente essa área, mas a fise ainda não apresenta uma ponte óssea completa (barra fisária) que caracterizaria os estágios mais avançados (V e VI), compatível com o fragmento epifisário medial e a irregularidade metafisária mostrados na imagem.",
-  "correta": "B. As imagens correspondem ao tipo IV.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n> **Na prova:** barra óssea na Blount = a partir de ==Langenskiöld IV== (veja o alerta).",
+  "correta": "**Tipo IV.**\n- Imagem com ponte óssea medial começando.\n- Dano fisário estabelecido.",
   "incorretas": {
-   "A": "O estágio **III** apresenta um bico metafisário mais afiado, sem a extensão da epífise medial preenchendo o defeito como mostrado na imagem.",
-   "C": "O estágio **V** já mostra a epífise medial nitidamente dividida em duas partes pela depressão metafisária, um grau de deformidade mais avançado do que o mostrado.",
-   "D": "O estágio **VI**, o mais avançado, apresenta uma barra óssea (ponte fisária) completa unindo a metáfise à epífise medial, causando fechamento fisário, um achado mais grave do que o mostrado na imagem."
+   "A": "**Sem ponte.**\n- Degrau e fragmentação.",
+   "C": "**Epífise dupla.**\n- Posterior.",
+   "D": "**Fechamento completo.**\n- Estágio final."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0045": {
-  "conceito": "A deficiência femoral focal proximal frequentemente não ocorre de maneira isolada. Existe forte associação com outras deficiências longitudinais do mesmo membro, especialmente hemimelia fibular. Na prática, deve-se avaliar todo o membro inferior: comprimento e estabilidade do fêmur proximal, presença e morfologia da cabeça femoral, estabilidade do joelho, ligamentos cruzados, comprimento da fíbula, alinhamento do tornozelo e número de raios do pé. A presença de hemimelia fibular modifica significativamente o planejamento, pois pode acrescentar discrepância de comprimento, instabilidade e deformidade do pé. O tratamento é individualizado entre reconstrução, alongamento, epifisiodese, procedimentos de equalização, rotação-plastia ou adaptação protética, conforme a gravidade e a previsão funcional.",
-  "correta": "A alternativa B está correta. A hemimelia fibular é uma das anomalias congênitas mais frequentemente associadas à deficiência femoral focal proximal e deve ser especificamente pesquisada durante a avaliação.",
+  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n> **Na prova:** anomalia mais associada à DFFP = ==hemimelia fibular== (cerca de 50%).",
+  "correta": "**Hemimelia fibular.**\n- Cerca de metade dos casos.\n- Mesmo espectro de deficiência pós-axial.",
   "incorretas": {
-   "A": "Coxa vara pode fazer parte do espectro morfológico do fêmur deficiente, mas a associação congênita clássica e mais importante entre as opções é a hemimelia fibular.",
-   "C": "Pé torto pode coexistir com diversas deficiências congênitas, porém não é a associação típica mais frequente da deficiência femoral focal proximal.",
-   "D": "Pseudoartrose congênita da tíbia está fortemente ligada à displasia tibial e neurofibromatose tipo 1, não é a associação característica da deficiência femoral proximal."
+   "A": "**Parte do espectro.**\n- Não é a anomalia associada mais comum.",
+   "C": "**Não é típico.**\n- Pé na hemimelia é equinovalgo.",
+   "D": "**NF1.**\n- Sem relação típica."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). PFFD – Proximal Focal Femoral Deficiency. https://posna.org/physician-education/study-guide/pffd-proximal-focal-femoral-deficiency"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0046": {
-  "conceito": "A pseudoartrose congênita da tíbia faz parte de uma displasia óssea segmentar que frequentemente se manifesta inicialmente como arqueamento anterolateral da tíbia. O termo 'congênita' não significa necessariamente que a pseudoartrose já esteja presente ao nascimento: muitas crianças nascem com arqueamento e desenvolvem fratura e não união posteriormente, frequentemente após trauma mínimo. A doença associa-se fortemente à neurofibromatose tipo 1. Histologicamente há periósteo patológico e tecido fibro-hamartomatoso que prejudicam osteogênese e favorecem reabsorção. O contraste clássico em prova é com o arqueamento posteromedial, que tende a remodelar espontaneamente e associa-se a pé calcaneovalgo.",
-  "correta": "A alternativa A está correta. O arqueamento anterolateral da tíbia é a deformidade angular característica que deve levantar suspeita de displasia tibial e risco de evolução para pseudoartrose congênita.",
+  "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n> **Na prova:** pseudartrose congênita da tíbia = arqueamento ==anterolateral==.",
+  "correta": "**Anterolateral.**\n- Arqueamento que fratura e não consolida.\n- Metade tem NF1.",
   "incorretas": {
-   "B": "Arqueamento anteromedial não é o padrão característico da pseudoartrose congênita da tíbia.",
-   "C": "O componente lateral está no sentido correto, porém a direção característica é anterior e lateral, não posterior e lateral.",
-   "D": "Arqueamento posteromedial corresponde a outra entidade, com história natural muito mais favorável e tendência à correção espontânea da angulação."
+   "B": "**Hemimelia fibular.**\n- Anteromedial.",
+   "C": "**Não é padrão.**\n- Posterolateral.",
+   "D": "**Benigno.**\n- Posteromedial corrige."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Congenital Pseudarthrosis of the Tibia. https://posna.org/physician-education/study-guide/congenital-pseudarthrosis-of-the-tibia-%28cpt%29",
    "Pediatric Lower Extremity Disorders – congenital tibia dysplasia. https://posna.org/blogs/resident-review/december-2017/pediatric-lower-extremity-disorders"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0047": {
-  "conceito": "Na luxação congênita da cabeça do rádio, os desvios mais comuns são posterior e posterolateral. A alteração é frequentemente bilateral, com cabeça radial em domo, capítulo hipoplásico e possível associação com sinostose radioulnar ou síndromes. O exame pode revelar perda de extensão terminal e rotação do antebraço. O diagnóstico diferencial central é a lesão de Monteggia antiga: nesta, a cabeça radial também pode estar luxada, mas existe história traumática e deformidade/encurvamento ulnar. A direção do desvio integra o reconhecimento radiográfico e é mais útil quando combinada aos demais sinais de desenvolvimento anômalo.",
-  "correta": "A alternativa C está correta. Os desvios mais comuns são posterior e posterolateral. A direção posterior explica a limitação de extensão e a proeminência posterior da cabeça radial. A identificação evita tratamento inadequado de uma condição congênita como se fosse luxação traumática recente.",
+  "conceito": "### Luxação congênita da cabeça do rádio\n- Anomalia congênita mais comum do cotovelo.\n- ==Bilateral== na maioria e ==associada== a outras manifestações (sinostose, síndromes como nail-patella, Ehlers-Danlos, Larsen).\n- Direção mais comum: ==posterior==.\n\n### Congênita × Monteggia crônico\n| Achado | Congênita | Traumática |\n|---|---|---|\n| lado | bilateral | unilateral |\n| cabeça | ==convexa (cúpula)==, pequena | côncava, normal |\n| capítulo | hipoplásico | normal |\n| ulna | reta | deformidade plástica |\n| direção | posterior | anterior |\n\n### Tratamento\n- Observação; ressecção da cabeça após a maturidade se dor.\n\n> **Na prova:** luxação congênita da cabeça do rádio = ==posterior ou posterolateral==",
+  "correta": "**Posterior e posterolateral.**\n- Desvios mais comuns da forma congênita.\n- Anterior sugere Monteggia.",
   "incorretas": {
-   "A": "Desvios anterior e anterolateral podem ocorrer, mas não são os mais frequentes na forma congênita. A maioria é posterior ou posterolateral.",
-   "B": "Anteromedial não representa o padrão usual. A alternativa mistura direção anterior rara com uma orientação medial ainda menos característica.",
-   "D": "Posterior está correto, mas posteromedial não é o segundo desvio clássico. A associação reconhecida é posterior e posterolateral."
+   "A": "**Monteggia.**\n- Anterior é traumático.",
+   "B": "**Não é o padrão.**\n- Anteromedial.",
+   "D": "**Não é o padrão.**\n- Posteromedial."
   },
   "referencias": [
    "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
    "Congenital radial head dislocation: narrative review. https://pubmed.ncbi.nlm.nih.gov/42611687/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0048": {
-  "conceito": "Escoliose na mielomeningocele pode progredir por desequilíbrio muscular, nível neurológico alto, deformidades pélvicas e fatores neurológicos associados. Quando uma curva acelera, é obrigatório investigar deterioração neurológica potencialmente tratável. A **medula ancorada** pode causar perda progressiva de função, espasticidade, piora da marcha e progressão da deformidade; a **hidrocefalia** e problemas de derivação também podem acompanhar piora clínica e devem ser avaliados. Meningite é uma intercorrência infecciosa aguda, não o par clássico de causas associadas à progressão rápida de curva. Contratura em flexão dos quadris interfere na postura e deambulação, mas não é o marcador neurológico principal solicitado.",
-  "correta": "A alternativa B está correta. Medula ancorada e hidrocefalia são condições neurológicas associadas à rápida progressão de escoliose em pacientes com mielomeningocele. A conduta não é atribuir automaticamente a curva ao crescimento: investigar novos déficits motores, dor, função vesical e intestinal, sinais de disfunção de derivação e imagem da medula é parte da avaliação. A relação causal exata varia entre estudos, mas ambas são intercorrências reconhecidas e importantes na investigação.",
+  "conceito": "### Medula presa na mielomeningocele\n| Aspecto | Dado |\n|---|---|\n| ancoragem na RM | ==comum== (quase todos após o fechamento) |\n| síndrome clínica | ==cerca de 30%== |\n\n### Sinais de tração (síndrome clínica)\n- Perda de força ou piora da marcha.\n- ==Escoliose que progride rápido==, deformidade nova no pé.\n- Espasticidade nova, dor lombar.\n- Piora vesical ou intestinal.\n\n### Diferencial de deterioração\n- Disfunção da ==derivação== (hidrocefalia), siringomielia, Chiari II.\n\n### Conduta\n- RM isolada não indica cirurgia; ==correlação clínica== e desancoragem se deterioração.\n\n### Escoliose na MMC\n| Tipo | Causa |\n|---|---|\n| congênita | malformação vertebral |\n| paralítica | desequilíbrio muscular (mais comum em níveis altos) |\n\n- ==Progressão rápida==: suspeitar de ==medula ancorada==, ==hidrocefalia descompensada== (válvula), siringomielia.\n\n> **Na prova:** progressão rápida da escoliose na MMC = ==medula ancorada e hidrocefalia== (veja o alerta).",
+  "correta": "**Medula ancorada e hidrocefalia.**\n- Tração medular e válvula disfuncionante pioram a curva.\n- Investigar antes da artrodese.",
   "incorretas": {
-   "A": "Hidrocefalia é relevante, porém meningite não constitui a associação clássica para progressão rápida de escoliose na mielomeningocele. Meningite exige abordagem aguda própria, mas não explica o padrão crônico de deformidade progressiva cobrado.",
-   "C": "Contratura em flexão do quadril pode agravar posicionamento sentado e marcha, mas meningite não é o fator neurológico típico de investigação diante de curva rapidamente progressiva.",
-   "D": "A contratura de quadril pode coexistir e afetar função, porém a dupla com medula ancorada não corresponde ao par de causas neurológicas clássicas do gabarito. A hidrocefalia deve ser lembrada pela associação frequente com mielomeningocele e possível deterioração clínica."
+   "A": "**Meningite não.**\n- Hidrocefalia sim.",
+   "C": "**Nenhum dos dois.**\n- Não explicam a progressão rápida.",
+   "D": "**Contratura não.**\n- Medula ancorada sim."
   },
+  "alerta": "A força da evidência para uma relação causal isolada entre medula ancorada e progressão de escoliose é limitada por séries observacionais. O comentário preserva a associação usada na questão e ressalta a necessidade de avaliação clínica completa.",
   "referencias": [
    "Neurosurgical causes of scoliosis in myelomeningocele. https://pubmed.ncbi.nlm.nih.gov/16122001/",
    "Orthopedic management of myelomeningocele: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC8361640/",
    "Tethered cord syndrome after myelomeningocele repair. https://pmc.ncbi.nlm.nih.gov/articles/PMC7560491/"
   ],
-  "alerta": "A força da evidência para uma relação causal isolada entre medula ancorada e progressão de escoliose é limitada por séries observacionais. O comentário preserva a associação usada na questão e ressalta a necessidade de avaliação clínica completa.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0049": {
   "conceito": "A coxa vara do desenvolvimento é definida por redução patológica do ângulo cervicodiafisário associada a defeito de ossificação do colo femoral e aumento do ângulo epifisário de Hilgenreiner. A deformidade é tridimensional e costuma incluir aumento da retroversão. No exame físico, observam-se claudicação, Trendelenburg, encurtamento e limitação principalmente de abdução e rotação interna. Esses movimentos são restringidos pela orientação em varo e retroversão do fêmur proximal e pela elevação relativa do grande trocânter. Radiograficamente, o aumento do ângulo epifisário de Hilgenreiner é importante tanto para indicação quanto para prognóstico. Quando cirurgia é necessária, a osteotomia valgizante busca transformar forças de cisalhamento através da fise em forças mais compressivas.",
