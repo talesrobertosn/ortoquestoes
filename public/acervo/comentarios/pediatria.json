@@ -2401,106 +2401,106 @@
   "conferido": false
  },
  "pediatria-0170": {
-  "conceito": "A fase de balanço ocupa cerca de 40% do ciclo da marcha e pode ser dividida, na terminologia moderna, em balanço inicial, médio e terminal. Na terminologia clássica de Rancho Los Amigos, o balanço inicial corresponde à fase de aceleração. Logo após a retirada dos dedos, o joelho flexiona rapidamente para aproximadamente 60 graus, produzindo encurtamento funcional do membro e permitindo clearance do pé. Depois, no balanço médio, o joelho começa a estender; no terminal, a extensão continua para preparar o contato inicial. O pico de flexão durante o balanço ocorre, portanto, no balanço inicial/aceleração.",
-  "correta": "A alternativa A está correta. A flexão máxima do joelho ocorre no início da fase de balanço, tradicionalmente chamado período de aceleração. Esse movimento é essencial para encurtar funcionalmente o membro e impedir que o pé arraste durante o avanço.",
+  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n### Parâmetros lineares\n| Parâmetro | Definição |\n|---|---|\n| ==passo== | distância entre o ==calcanhar de um pé e o do outro== (no duplo apoio) |\n| passada (ciclo) | distância entre dois contatos do ==mesmo pé== = 2 passos |\n| cadência | passos por minuto |\n| velocidade | passada × cadência |\n| base de apoio | distância lateral entre os pés |\n\n### Nomenclaturas do balanço\n| Clássica | Rancho Los Amigos | Evento |\n|---|---|---|\n| ==aceleração== | ==balanço inicial== | ==flexão máxima do joelho (~60°)==, pé sai do chão |\n| oscilação intermediária | balanço médio | tíbia vertical |\n| desaceleração | balanço terminal | joelho estende, isquiotibiais freiam |\n\n> **Na prova:** flexão máxima do joelho no balanço = ==aceleração (balanço inicial)== (veja o alerta).",
+  "correta": "**Aceleração.**\n- Balanço inicial na nomenclatura atual.\n- Joelho a cerca de 60° para o pé passar.",
   "incorretas": {
-   "B": "Na desaceleração ou balanço terminal, o joelho está progressivamente estendendo para preparar o contato inicial, e não alcançando a flexão máxima.",
-   "C": "No balanço intermediário o joelho já começou a estender após atingir o pico de flexão no balanço inicial.",
-   "D": "Acomodação intermediária pertence à fase de apoio na terminologia clássica, não ao balanço."
+   "B": "**Balanço terminal.**\n- Joelho estende.",
+   "C": "**Balanço médio.**\n- Flexão já diminuindo.",
+   "D": "**Fase de apoio.**\n- Não é balanço."
   },
+  "alerta": "A questão utiliza a terminologia antiga aceleração/desaceleração. Na nomenclatura atual de Rancho Los Amigos, o correspondente é balanço inicial, médio e terminal.",
   "referencias": [
    "https://posna.org/physician-education/study-guide/gait",
    "Barros Filho, Lech, Exame físico em ortopedia, 3ª edição, Cap. 5"
   ],
-  "alerta": "A questão utiliza a terminologia antiga aceleração/desaceleração. Na nomenclatura atual de Rancho Los Amigos, o correspondente é balanço inicial, médio e terminal.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0171": {
-  "conceito": "O protocolo de manutenção do Ponseti é tão importante quanto os gessos. Após correção completa e tenotomia quando necessária, utiliza-se órtese de abdução com aproximadamente 60 a 70 graus no pé acometido e 10 a 15 graus de dorsiflexão. O regime inicial é praticamente contínuo, em geral 23 horas por dia por cerca de 3 meses. Em seguida, o uso passa a ocorrer durante sono noturno e cochilos, totalizando aproximadamente 12 a 14 horas diárias, até pelo menos 4 anos em muitos protocolos. A principal causa evitável de recidiva é baixa adesão à órtese. O brace não deve ser usado para corrigir um pé ainda deformado: primeiro é necessário obter correção com gessos.",
-  "correta": "A alternativa A está correta. O pé corrigido é mantido em aproximadamente 70 graus de rotação externa/abdução durante o período de uso integral inicial e depois a órtese continua durante sono por vários anos, frequentemente até 4 anos. Essa fase prolongada reduz de forma importante o risco de recidiva.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n> **Na prova:** pé normal na órtese = ==40° de rotação lateral==",
+  "correta": "**70° e noturno por 2 a 4 anos.**\n- Uso contínuo nos primeiros 3 meses.\n- Noturno até 4 a 5 anos.",
   "incorretas": {
-   "B": "Cinquenta graus oferece menos abdução que o recomendado para o pé previamente torto e pode não manter adequadamente a correção.",
-   "C": "A rotação está adequada, mas suspender a órtese após apenas 6 a 12 meses aumenta risco de recidiva; a manutenção noturna costuma seguir por anos.",
-   "D": "Combina abdução insuficiente com período de manutenção excessivamente curto."
+   "B": "**Rotação insuficiente.**\n- Pé afetado a 60 a 70°.",
+   "C": "**Tempo curto.**\n- Recidiva se parar cedo.",
+   "D": "**Duplamente errada.**\n- Rotação e tempo."
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/clubfoot",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 19"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0172": {
-  "conceito": "Na displasia acetabular do adolescente e adulto jovem, a cabeça femoral apresenta cobertura insuficiente e aumento das pressões articulares, predispondo a lesão labral, instabilidade e artrose precoce. O ângulo centro-borda lateral de Wiberg mede cobertura lateral: em adultos, valores inferiores a 20 graus indicam displasia franca, enquanto 20 a 25 graus são frequentemente chamados borderline. O ângulo de Tönnis mede inclinação do teto acetabular; valores de 0 a 10 graus são geralmente considerados normais, enquanto valores acima de 10 graus sugerem teto excessivamente inclinado e deficiência estrutural. Avaliação moderna também inclui cobertura anterior, versão, FEAR index, morfologia femoral e estabilidade clínica. Não se deve indicar artroscopia isolada com base apenas no LCEA em um quadril estruturalmente instável.",
-  "correta": "A alternativa B está correta. A combinação de centro-borda lateral inferior a 20 graus e ângulo de Tönnis acima de 10 graus descreve acetábulo com cobertura lateral deficiente e teto mais inclinado, configuração típica de displasia. Ambos os parâmetros apontam para instabilidade estrutural.",
+  "conceito": "### Radiografias na displasia do quadril\n| Incidência | Avalia |\n|---|---|\n| AP da bacia | CE lateral (Wiberg), índice acetabular, Tönnis, Shenton, extrusão |\n| ==falso perfil (Lequesne)== | ==cobertura anterior== (ângulo CE anterior: normal > 20 a 25°) |\n| Dunn 45° | colo, came |\n| abdução-RI (von Rosen) | congruência na redução, planejar osteotomia |\n\n### Ângulos\n| Ângulo | Normal | Displasia |\n|---|---|---|\n| CE lateral | > 25° | < 20° |\n| CE anterior (falso perfil) | > 20° | < 20° |\n| Tönnis (inclinação do teto) | 0 a 10° | > 10° |\n\n> **Na prova:** displasia do adulto = ==CE < 20°== e ==Tönnis > 10°== (veja o alerta).",
+  "correta": "**CE < 20° e Tönnis > 10°.**\n- Pouca cobertura e teto inclinado.\n- 20 a 25° é limítrofe.",
   "incorretas": {
-   "A": "O LCEA baixo está correto, mas ângulo de Tönnis abaixo de 10 graus corresponde a inclinação acetabular normal ou reduzida, não ao padrão clássico de displasia.",
-   "C": "LCEA acima de 20 graus reduz a evidência de displasia franca e Tönnis baixo também não indica teto deficiente.",
-   "D": "Tönnis aumentado sugere displasia, mas LCEA maior que 20 graus pode representar apenas quadro limítrofe, dependendo do valor e de outros parâmetros."
+   "A": "**Tönnis errado.**\n- Normal é 0 a 10°.",
+   "C": "**CE normal.**\n- Não é displasia.",
+   "D": "**CE normal.**\n- Tönnis alto isolado."
   },
+  "alerta": "Os pontos de corte para displasia limítrofe variam entre estudos. LCEA menor que 20 graus é amplamente aceito como displasia franca; valores de 20 a 25 graus exigem avaliação multidimensional e não devem ser interpretados isoladamente.",
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7083976/",
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9983115/",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 6"
   ],
-  "alerta": "Os pontos de corte para displasia limítrofe variam entre estudos. LCEA menor que 20 graus é amplamente aceito como displasia franca; valores de 20 a 25 graus exigem avaliação multidimensional e não devem ser interpretados isoladamente.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0173": {
-  "conceito": "Na avaliação de suspeita de maus-tratos infantis, é importante distinguir fraturas de **alta especificidade** (fortemente sugestivas de trauma não acidental) das fraturas comuns e inespecíficas (frequentes em acidentes domésticos rotineiros da infância). Entre as fraturas classicamente associadas a alta especificidade para abuso estão: as lesões metafisárias clássicas (\"corner/bucket-handle fractures\"), fraturas de costelas posteriores, fraturas de escápula, esterno e, especificamente, fraturas do **processo espinhoso** vertebral, todas incomuns em quedas ou acidentes triviais e que exigem mecanismo de força significativa e direcionada, raramente presente em traumas acidentais típicos da infância.\n\nJá as fraturas de clavícula, de falanges da mão e de diáfise de ossos longos (fêmur em não deambuladores à parte) são extremamente comuns em quedas acidentais e brincadeiras normais, tendo, isoladamente, especificidade muito mais baixa para abuso.",
-  "correta": "C. A fratura do processo espinhoso vertebral tem alta especificidade para maus-tratos infantis.",
+  "conceito": "### Especificidade das fraturas no abuso (Kleinman)\n| Alta | Moderada | Baixa (comuns) |\n|---|---|---|\n| lesão metafisária clássica | múltiplas, bilaterais | clavícula |\n| costelas posteriores | em estágios diferentes de consolidação | diáfises de ossos longos |\n| ==escápula== | epifisárias (descolamentos) | crânio linear |\n| processos espinhosos | corpo vertebral | |\n| esterno | dedos | |\n| | crânio complexa | |\n\n### Conduta\n- Inventário esquelético em < 2 anos (repetir em 2 semanas).\n- Fundo de olho, TC/RM de crânio, exames de coagulação e metabolismo ósseo (OI, raquitismo).\n- ==Notificação obrigatória==.\n\n> **Na prova:** fratura de alta especificidade (Kleinman) = ==escápula== (e metafisária, costelas posteriores, processos espinhosos, esterno).",
+  "correta": "**Processo espinhoso.**\n- Alta especificidade (hiperflexão violenta).\n- Junto com escápula, esterno, costelas posteriores e metafisária.",
   "incorretas": {
-   "A": "A fratura de clavícula é extremamente comum em quedas acidentais e no próprio parto, tendo baixa especificidade isolada para abuso.",
-   "B": "Fraturas de falange da mão são comuns em acidentes domésticos triviais, com baixa especificidade isolada para abuso.",
-   "D": "Fraturas de diáfise de ossos longos, isoladamente, são comuns em quedas acidentais em crianças maiores, tendo especificidade mais baixa que as lesões listadas como clássicas de abuso."
+   "A": "**Baixa.**\n- Comum em quedas.",
+   "B": "**Moderada.**\n- Dedos em não deambulante.",
+   "D": "**Baixa.**\n- Diáfises são comuns."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0174": {
-  "conceito": "O método de **Menelaus** é uma forma simplificada e amplamente usada na prática clínica para estimar o crescimento residual dos membros inferiores e prever a discrepância final de comprimento, sem depender de tabelas de idade óssea. Após os **9 anos de idade**, o método assume taxas de crescimento anual aproximadamente constantes para cada fise:\n- **Fêmur distal**: cerca de **9 mm/ano**.\n- **Tíbia proximal**: cerca de **6 mm/ano**.\n\nEssa relação (fêmur distal contribuindo com mais crescimento anual que a tíbia proximal) reflete a maior contribuição relativa da fise femoral distal para o comprimento total do membro, e é a base para os cálculos simplificados de discrepância projetada usados à beira do leito.",
-  "correta": "A. Pelo método de Menelaus, após os 9 anos, o fêmur distal cresce cerca de 9 mm/ano e a tíbia proximal cerca de 6 mm/ano.",
+  "conceito": "### Medida da discrepância\n| Medida | Pontos | O que mostra |\n|---|---|---|\n| ==real== (verdadeira) | ==EIAS ao maléolo medial== | comprimento ósseo |\n| aparente | umbigo (ou xifoide) ao maléolo medial | inclui obliquidade pélvica e contraturas |\n| blocos sob o pé | nivelar as cristas ilíacas | prática, funcional |\n| Galeazzi | joelhos com quadris fletidos | fêmur × tíbia |\n\n### Imagem\n- Escanometria / telerradiografia; TC (scanograma) com menos radiação.\n\n### Previsão na criança\n| Método | Uso |\n|---|---|\n| Moseley (gráfico de linha reta) | discrepância na maturidade |\n| Paley (multiplicador) | simples |\n| Green-Anderson | tabelas de crescimento |\n\n### Conduta pela discrepância prevista\n| Discrepância | Conduta |\n|---|---|\n| < 2 cm | nada ou palmilha |\n| 2 a 5 cm | ==epifisiodese== contralateral |\n| > 5 cm | alongamento |\n| > 15 a 20 cm | amputação/prótese |\n\n### Contribuição das fises\n| Fise | mm/ano | % do membro |\n|---|---|---|\n| fêmur proximal | 3 | 15% |\n| ==fêmur distal== | ==9 a 10== | ==cerca de 37 a 40%== (a maior) |\n| tíbia proximal | 6 | cerca de 28% |\n| tíbia distal | 3 a 5 | 20% |\n\n- Joelho = cerca de 65% do crescimento do membro inferior.\n- Menino cresce até cerca de 16 anos, menina até 14 (ósseo).\n\n### Menelaus (regra simples)\n- Após os 9 anos (meninos até 16, meninas até 14):\n| Fise | Crescimento anual |\n|---|---|\n| ==fêmur distal== | ==cerca de 9 a 10 mm== (3/8 de polegada) |\n| ==tíbia proximal== | ==cerca de 6 mm== (1/4 de polegada) |\n\n- Base para programar ==epifisiodese==.\n\n> **Na prova:** Menelaus = fêmur distal ==9 mm==, tíbia proximal ==6 mm== por ano.",
+  "correta": "**9 e 6 mm.**\n- Fêmur distal cresce mais.\n- Base para calcular epifisiodese.",
   "incorretas": {
-   "B": "Os valores estão invertidos, é o fêmur distal que cresce mais (9 mm/ano) e a tíbia proximal menos (6 mm/ano), não o contrário.",
-   "C": "Os valores de 15 e 8 mm superestimam as taxas de crescimento anual consideradas pelo método de Menelaus após os 9 anos.",
-   "D": "Os valores de 8 e 15 mm não correspondem às taxas de crescimento anual do método de Menelaus, além de estarem na ordem invertida."
+   "B": "**Invertida.**\n- Fêmur distal é maior.",
+   "C": "**Exagerada.**\n- Valores altos.",
+   "D": "**Invertida e exagerada.**\n- Ambos errados."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0175": {
-  "conceito": "A pseudartrose congênita da tíbia é classicamente associada a uma deformidade angular no plano em que o ápice da curvatura se projeta para **anterolateral**, diferente do arqueamento **posteromedial** da tíbia, que é uma condição distinta, geralmente benigna e autolimitada (associada a discrepância de comprimento, mas que tende a corrigir espontaneamente sem evoluir para verdadeira pseudartrose).\n\nEssa distinção é clinicamente crucial: o arqueamento anterolateral (frequentemente associado à neurofibromatose tipo 1) é a condição de alto risco para fratura patológica e pseudartrose verdadeira, exigindo acompanhamento rigoroso e, muitas vezes, órteses profiláticas mesmo antes de qualquer fratura ocorrer, já que a pseudartrose estabelecida é notoriamente difícil de tratar.",
-  "correta": "A. A pseudartrose congênita da tíbia está associada à deformidade angular do tipo anterolateral.",
+  "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n### Histologia\n- ==Hamartoma fibroso no periósteo espessado== (tecido fibroso proliferativo) que estrangula o osso.\n- Por isso a ressecção do periósteo doente faz parte do tratamento.\n\n> **Na prova:** pseudartrose congênita da tíbia = alteração no ==periósteo== com ==tecido fibroso==",
+  "correta": "**Anterolateral.**\n- Arqueamento da pseudartrose congênita.\n- NF1 em metade.",
   "incorretas": {
-   "B": "O arqueamento anteromedial não é o padrão clássico associado à pseudartrose congênita da tíbia.",
-   "C": "O arqueamento posterolateral não é uma apresentação clássica associada a essa condição.",
-   "D": "É o arqueamento posteromedial que corresponde a uma condição distinta e de bom prognóstico, geralmente autolimitada, não à pseudartrose congênita, que se associa ao arqueamento anterolateral."
+   "B": "**Hemimelia fibular.**\n- Anteromedial.",
+   "C": "**Não é padrão.**\n- Posterolateral.",
+   "D": "**Benigno.**\n- Calcaneovalgo associado."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0176": {
-  "conceito": "O **índice acetabular** é uma medida radiográfica clássica usada na avaliação da displasia do desenvolvimento do quadril, formado pelo ângulo entre a linha de Hilgenreiner e uma linha traçada do centro do acetábulo até sua borda látero-superior, quanto maior o índice, mais raso (displásico) é o teto acetabular. Embora o valor de referência varie um pouco conforme a idade da criança (sendo mais alto ao nascimento e diminuindo progressivamente com o crescimento), o valor mais comumente adotado como **limite superior da normalidade** na criança pequena é de aproximadamente **30 graus**, valores acima disso sugerem displasia acetabular e justificam investigação e acompanhamento mais próximo.",
-  "correta": "C. O limite superior da normalidade do índice acetabular na criança é de aproximadamente 30 graus.",
+  "conceito": "### Núcleo de ossificação da cabeça femoral\n- Aparece entre ==4 e 6 meses== (meninas antes).\n- Ao nascer, a cabeça é cartilaginosa: ==ultrassom (Graf)== é o exame.\n- Atraso do núcleo: sinal de DDQ (lado luxado ossifica depois), hipotireoidismo.\n\n### Imagem na DDQ\n| Idade | Exame | Parâmetros |\n|---|---|---|\n| < 4 a 6 meses | ultrassom | ângulo alfa (≥ 60° normal), beta |\n| > 4 a 6 meses | radiografia | Hilgenreiner, Perkins, Shenton, índice acetabular (< 30° ao nascer) |\n\n### Outros núcleos do quadril\n- Trocanter maior: 4 anos; trocanter menor: 12 anos; trirradiada fecha 14 a 16 anos.\n\n### Índice acetabular\n- Entre Hilgenreiner e a borda do teto acetabular.\n| Idade | Normal |\n|---|---|\n| recém-nascido | até ==30°== (média 27°) |\n| 1 ano | cerca de 20 a 25° |\n| 2 anos | cerca de 20° |\n| adulto | < 10° (Tönnis) |\n\n- Acima de 30° no lactente: displasia.\n\n> **Na prova:** limite superior do índice acetabular na criança = ==30°==",
+  "correta": "**30°.**\n- Limite ao nascer.\n- Diminui com o crescimento.",
   "incorretas": {
-   "A": "15 graus é um valor baixo demais, mais próximo do índice acetabular esperado em crianças maiores e adolescentes já com o teto acetabular bem formado.",
-   "B": "20 graus subestima o limite superior da normalidade classicamente adotado para a criança pequena.",
-   "D": "40 graus já é francamente um valor patológico, indicando displasia significativa, não o limite superior da faixa normal."
+   "A": "**Baixo demais.**\n- Seria adulto.",
+   "B": "**Idade maior.**\n- Por volta de 2 anos.",
+   "D": "**Displasia franca.**\n- Acima do limite."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0177": {
-  "conceito": "O **GMFCS (Gross Motor Function Classification System)** classifica a função motora grossa na paralisia cerebral em cinco níveis, de I (função quase normal) a V (dependência total, sem controle de tronco e cabeça). A distinção entre os níveis IV e V é particularmente relevante na prática:\n- **Nível IV**: a criança **não deambula de forma independente**, mas consegue se locomover de forma autônoma usando **cadeira de rodas** (manual ou motorizada), mantendo algum controle de tronco suficiente para essa mobilização.\n- **Nível V**: dependência **total**, sem controle antigravitacional de tronco e cabeça suficiente, exigindo transporte manual ou tecnologia assistiva avançada mesmo para mobilização, a criança **não consegue mobilizar a própria cadeira de rodas** de forma autônoma.\n\nOu seja, a capacidade de se autopropelir na cadeira de rodas, mesmo sem deambular, é justamente o que caracteriza o nível IV, diferenciando-o do nível V.",
-  "correta": "C. A criança não deambuladora que consegue mobilizar sua própria cadeira de rodas é classificada como GMFCS nível IV.",
+  "conceito": "### GMFCS (6 a 12 anos)\n| Nível | Mobilidade |\n|---|---|\n| I | anda sem restrições; corre e salta com limitação |\n| II | anda na maioria dos ambientes; limitação em distâncias, terreno irregular |\n| III | anda com ==dispositivo manual== (andador, muletas); cadeira para distâncias |\n| ==IV== | ==controle de cabeça e tronco==; anda pouco (casa, com ajuda); ==cadeira de rodas na comunidade== (pode ser motorizada) |\n| V | sem controle de cabeça e tronco; transportado |\n\n### Uso ortopédico\n| Nível | Preocupação |\n|---|---|\n| I-III | marcha: análise, cirurgia multinível |\n| ==IV-V== | ==luxação do quadril== (vigilância radiográfica), escoliose |\n\n- Índice de migração de Reimers > 30 a 40%: cirurgia de partes moles ou osteotomias.\n\n> **Na prova:** controla tronco, anda só em casa, cadeira na comunidade = ==GMFCS IV==.",
+  "correta": "**Nível IV.**\n- Não deambula na comunidade.\n- Mobilidade própria em cadeira (manual ou motorizada).",
   "incorretas": {
-   "A": "O nível II do GMFCS corresponde a crianças que deambulam de forma independente, com limitações apenas em superfícies irregulares ou distâncias longas.",
-   "B": "O nível III corresponde a crianças que deambulam com apoio de dispositivos auxiliares de marcha, não a não deambuladoras.",
-   "D": "O nível V corresponde à dependência total, sem capacidade de autopropulsão da cadeira de rodas, diferente do quadro descrito na questão."
+   "A": "**Anda na maioria dos ambientes.**\n- Muito mais leve.",
+   "B": "**Anda com dispositivo.**\n- Deambulador.",
+   "D": "**Transportado.**\n- Não se mobiliza sozinho."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0178": {
