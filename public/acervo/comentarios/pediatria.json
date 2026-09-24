@@ -6059,102 +6059,103 @@
   "conferido": false
  },
  "pediatria-0494": {
-  "conceito": "A sinostose radioulnar congênita resulta de uma falha na segmentação entre o rádio e a ulna durante o desenvolvimento embrionário, antes da rotação lateral do membro superior se completar, resultando classicamente em uma posição fixa do antebraço em **pronação**. Quanto à localização, o defeito é mais frequentemente encontrado no **terço proximal** do antebraço, próximo à articulação do cotovelo, a forma proximal é, de longe, mais comum do que a sinostose radioulnar distal, que é uma apresentação bem mais rara.",
-  "correta": "C. Na sinostose radioulnar congênita, a posição fixa do antebraço é em pronação, e a localização mais frequente é no terço proximal.",
+  "conceito": "### Sinostose radioulnar congênita\n- Falha de segmentação entre rádio e ulna proximais (7ª semana).\n- ==Bilateral em cerca de 60%==, geralmente ==isolada==.\n- Pode associar-se a síndromes (Apert, Klinefelter e aneuploidias do X, artrogripose).\n- Antebraço fixo, em geral ==pronado==; compensação pelo ombro e punho.\n- Diagnóstico tardio (compensação eficiente).\n\n### Classificação (Tachdjian / Cleary-Omer)\n- Fibrosa × óssea; cabeça do rádio normal, ausente ou luxada.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| neutro ou leve pronação | ==observação== |\n| pronação > 60° com limitação | osteotomia derrotativa (neutro a 10-20° de pronação) |\n| risco | ==síndrome compartimental== nas grandes correções |\n\n### Embriologia\n- Rádio e ulna nascem de uma ==massa cartilaginosa comum==; separam-se longitudinalmente de distal para proximal.\n- Falha dessa separação ==antes da rotação lateral== do membro superior: antebraço preso na posição fetal, em ==pronação==.\n\n> **Na prova:** sinostose radioulnar = ==pronação==, ==terço proximal==",
+  "correta": "**Pronação, terço proximal.**\n- Fusão proximal é a regra.\n- Antebraço fixo em pronação.",
   "incorretas": {
-   "A": "A posição fixa é em pronação, não é o terço distal a localização mais frequente do defeito.",
-   "B": "A posição fixa do antebraço é em pronação, não em supinação.",
-   "D": "A posição fixa é em pronação, não em supinação, embora a localização proximal esteja correta."
+   "A": "**Distal.**\n- Sinostose distal é rara.",
+   "B": "**Supinação e distal.**\n- Ambos errados.",
+   "D": "**Supinação.**\n- Fica em pronação."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0495": {
-  "conceito": "Na segmentação embriológica dos membros, três grandes segmentos são reconhecidos ao longo do eixo proximal-distal: o **stylopodium** (segmento mais proximal (úmero no membro superior, fêmur no inferior), o **zeugopodium** (segmento intermediário) rádio e ulna no membro superior, tíbia e fíbula no inferior) e o **autopodium** (segmento mais distal, mão ou pé). O cotovelo, como articulação intermediária entre o braço e o antebraço, se forma justamente na transição entre o **stylopodium** e o **zeugopodium**, de forma análoga ao joelho, que se forma na mesma transição segmentar no membro inferior.",
-  "correta": "B. O cotovelo se forma entre os segmentos stylopodium e zeugopodium.",
+  "conceito": "### Segmentos do membro em desenvolvimento\n| Segmento | Membro superior | Membro inferior |\n|---|---|---|\n| zonoesqueleto (cintura) | escápula, clavícula | pelve |\n| ==estilopódio== | ==úmero== | fêmur |\n| ==zeugopódio== | ==rádio e ulna== | tíbia e fíbula |\n| autopódio | mão | pé |\n\n- Formação em sentido ==proximal para distal== (zona de progressão, crista ectodérmica apical).\n- Articulações surgem entre segmentos: ==cotovelo entre estilopódio e zeugopódio==; punho entre zeugopódio e autopódio; ombro entre cintura e estilopódio.\n\n### Eixos e sinalização\n| Eixo | Centro |\n|---|---|\n| proximodistal | crista ectodérmica apical (FGF) |\n| anteroposterior (radioulnar) | zona de atividade polarizante (SHH) |\n| dorsoventral | ectoderma dorsal (WNT7A) |\n\n> **Na prova:** cotovelo = entre ==estilopódio e zeugopódio==",
+  "correta": "**Estilopódio e zeugopódio.**\n- Úmero e antebraço.\n- Junção forma o cotovelo.",
   "incorretas": {
-   "A": "\"Zonoskeleton\" não corresponde a um dos três segmentos clássicos da segmentação proximal-distal do membro (stylopodium, zeugopodium, autopodium).",
-   "C": "O cotovelo se forma entre o stylopodium e o zeugopodium, não entre o zeugopodium e o autopodium (essa transição corresponde ao punho, não ao cotovelo).",
-   "D": "\"Zonoskeleton\" não corresponde a um dos três segmentos clássicos da segmentação do membro, e a transição correta para o cotovelo é entre stylopodium e zeugopodium."
+   "A": "**Cintura e estilopódio.**\n- Forma o ombro.",
+   "C": "**Zeugopódio e autopódio.**\n- Forma o punho.",
+   "D": "**Não são contíguos.**\n- Cintura e mão não se articulam."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0496": {
-  "conceito": "Entre as técnicas de alongamento do complexo gastrocnêmio-sóleo para tratamento do pé equino na paralisia cerebral, os procedimentos realizados em nível mais **proximal** (zona I, mais próxima da origem muscular do gastrocnêmio) são mais **seletivos**, isolando o componente gastrocnêmio (biarticular) sem comprometer tanto o sóleo (monoarticular). Isso resulta em **menor perda de força flexora plantar** residual, em comparação com procedimentos mais distais (que alongam tanto o gastrocnêmio quanto o sóleo, ou o próprio tendão calcâneo). Consequentemente, essa maior preservação de força também está associada a um **menor risco de evolução para a marcha em agachamento (crouch gait)**, uma complicação tardia relacionada ao enfraquecimento excessivo dos flexores plantares, que perdem a capacidade de conter o avanço da tíbia durante a fase de apoio.",
-  "correta": "A. Técnicas realizadas na zona I proporcionam menor perda de força flexora plantar e menor risco de evolução para marcha em agachamento.",
+  "conceito": "### Zonas do tríceps sural (alongamento na PC)\n| Zona | Local | Técnicas | Alonga |\n|---|---|---|---|\n| 1 | ventres do gastrocnêmio | ==Strayer== (recessão da aponeurose proximal), Baumann (fáscia intramuscular) | só gastrocnêmio |\n| ==2== | ==aponeurose conjunta gastrocnêmio-sóleo, distal aos ventres== | ==Vulpius== (V invertido), Baker (língua em U) | gastro + sóleo moderado |\n| 3 | tendão calcâneo | ==Hoke== (três hemissecções percutâneas), White, Z | tudo; maior risco de ==hiperalongamento== (marcha agachada) |\n\n### Silfverskiöld\n- Equino que ==melhora com joelho fletido==: contratura do ==gastrocnêmio== isolado → zonas 1-2.\n- Equino fixo com joelho fletido: sóleo também → zona 2-3.\n\n### Força × zona\n- Quanto mais ==proximal== (zona 1), mais seletivo: só o gastrocnêmio, ==menor perda de força== e menor risco de hiperalongamento.\n- Zona 3 (tendão calcâneo) alonga tudo: maior fraqueza, risco de marcha agachada.\n\n> **Na prova:** zona I = ==menos fraqueza e menos marcha agachada==",
+  "correta": "**Menos fraqueza, menos crouch.**\n- Alonga só o gastrocnêmio.\n- Sóleo preservado segura a tíbia.",
   "incorretas": {
-   "B": "É menor, não maior, a perda de força flexora plantar associada às técnicas realizadas na zona I, mais seletivas.",
-   "C": "O risco de evolução para marcha em agachamento é menor, não maior, com as técnicas mais seletivas da zona I.",
-   "D": "Tanto a perda de força quanto o risco de marcha em agachamento são menores, não maiores, com as técnicas da zona I."
+   "B": "**Mais fraqueza.**\n- Zona I é a mais seletiva.",
+   "C": "**Mais crouch.**\n- Risco maior é na zona III.",
+   "D": "**Tudo invertido.**\n- Descreve a zona III."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0497": {
-  "conceito": "No tratamento cirúrgico da doença de Blount, a escolha da técnica depende, entre outros fatores, da viabilidade da fise medial da tíbia proximal. Quando a fise medial ainda está **funcionante** (viável, sem barra óssea estabelecida), o **crescimento guiado** (hemiepifisiodese temporária, geralmente com placa em oito ou grampo no lado lateral da fise) é o tratamento de escolha: a técnica modula o crescimento ao longo do tempo, corrigindo progressivamente a deformidade de forma gradual e menos invasiva, mas depende justamente de uma fise medial ainda capaz de crescer para funcionar, já que a correção ocorre pela frenagem seletiva do crescimento lateral, não por manipulação direta do osso.",
-  "correta": "A. Na doença de Blount com fise tibial medial funcionante, o tratamento de escolha é o crescimento guiado.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Escolha do tratamento\n| Situação | Conduta |\n|---|---|\n| < 3 anos, Langenskiöld I-II | órtese |\n| ==fise medial funcionante==, crescimento restante | ==crescimento guiado== (hemiepifisiodese lateral, placa em 8) |\n| < 4 anos, deformidade maior | osteotomia metafisária valgizante |\n| barra medial | ressecção da barra + osteotomia |\n| depressão do planalto medial | elevação do hemiplatô |\n\n> **Na prova:** fise medial funcionante = ==crescimento guiado==",
+  "correta": "**Crescimento guiado.**\n- Freia a fise lateral.\n- Depende da fise medial ainda crescer.",
   "incorretas": {
-   "B": "A osteotomia epifisária é um procedimento mais invasivo e não é a primeira escolha quando a fise ainda está funcionante.",
-   "C": "A osteotomia metafisária é indicada em cenários distintos, como correção aguda de deformidade estabelecida, não como primeira escolha quando a fise medial ainda funciona.",
-   "D": "A elevação do hemiplatô medial é um procedimento reservado para casos com afundamento articular estabelecido, não a primeira escolha com fise ainda funcionante."
+   "B": "**Osteotomia epifisária.**\n- Casos com depressão articular.",
+   "C": "**Osteotomia metafisária.**\n- Deformidades maiores ou tardias.",
+   "D": "**Elevação do hemiplatô.**\n- Estágios avançados, planalto deprimido."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0498": {
-  "conceito": "O alinhamento coronal dos joelhos muda fisiologicamente com a idade. Lactentes apresentam genu varum, mais acentuado aproximadamente no primeiro semestre; o eixo aproxima-se do neutro por volta de 18 a 24 meses. Depois surge genu valgum, que atinge seu máximo aproximadamente aos 3 a 4 anos e então diminui gradualmente até o padrão do adulto, em geral 5 a 7 graus de valgo. Estudos populacionais apresentam valores médios diferentes: Heath e Staheli encontraram cerca de 8 graus no pico aos 4 anos, enquanto outras populações relatam valores próximos de 7 a 10 graus. Portanto, idade, simetria e evolução são tão importantes quanto o número isolado. Varismo persistente após 2 a 3 anos, assimetria, progressão ou baixa estatura exigem investigação de Blount, raquitismo, displasias e outras causas patológicas.",
-  "correta": "A alternativa C está correta. Aos 4 anos espera-se genu valgo fisiológico próximo de seu pico. Entre as opções, 10 graus de valgo representa melhor o alinhamento esperado e está dentro das faixas clínicas aceitas para essa idade. O conceito mais importante é que a criança já passou da fase de varo fisiológico e encontra-se no período de máximo valgo antes da regressão progressiva.",
+  "conceito": "### Evolução angular fisiológica (Salenius)\n| Idade | Alinhamento |\n|---|---|\n| nascimento a 1,5-2 anos | ==varo== (máximo ao nascer) |\n| 1,5 a 2 anos | neutro |\n| ==3 a 4 anos== | ==valgo máximo== (cerca de 10 a 12°) |\n| 7 anos | valgo adulto (cerca de 5 a 7°) |\n\n### Sinais de patologia\n- Assimetria, deformidade fora da curva esperada, baixa estatura, dor, progressão.\n- Varo após 2 anos: Blount, raquitismo, displasias.\n- Valgo > 15° ou distância intermaleolar > 8 cm após 7 anos: investigar.\n\n### Tratamento do valgo patológico\n- ==Crescimento guiado== (placa em 8 medial) antes do fechamento fisário.\n\n> **Na prova:** aos 4 anos = ==cerca de 10° de valgo== (veja o alerta)",
+  "correta": "**10° de valgo.**\n- Pico de valgo aos 3 a 4 anos.\n- Regride até cerca de 5 a 7° aos 7 anos.",
   "incorretas": {
-   "A": "Dez graus de varo aos 4 anos não corresponde à evolução normal. Nessa idade, varismo persistente deve levantar suspeita de doença de Blount, raquitismo ou outra causa de deformidade, especialmente quando assimétrico ou progressivo.",
-   "B": "Quinze graus de varo seria ainda mais claramente anormal aos 4 anos. A fisiologia normal já transitou para valgo muitos meses antes, aproximadamente entre 18 e 24 meses.",
-   "D": "Quinze graus de valgo pode ultrapassar a média fisiológica esperada. Embora exista variação individual, o valor clássico aproximado no pico está mais próximo de 8 a 10 graus, tornando 10 graus a melhor alternativa."
+   "A": "**Varo.**\n- Varo é até 2 anos.",
+   "B": "**Varo.**\n- Seria patológico nessa idade.",
+   "D": "**15° de valgo.**\n- Limite de investigação."
   },
+  "alerta": "O número exato varia entre populações e métodos de mensuração. Estudos relatam médias aproximadas entre 7 e 10 graus no pico de valgo. Assim, os 10 graus do gabarito devem ser interpretados como valor didático aproximado, não como normalidade universal rígida.",
   "referencias": [
    "Heath CH, Staheli LT. Normal limits of knee angle in white children--genu varum and genu valgum. J Pediatr Orthop. 1993;13:259-262. PMID: 8459023.",
    "Normal development of the tibiofemoral angle in children. PMID: 11242264.",
    "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 26"
   ],
-  "alerta": "O número exato varia entre populações e métodos de mensuração. Estudos relatam médias aproximadas entre 7 e 10 graus no pico de valgo. Assim, os 10 graus do gabarito devem ser interpretados como valor didático aproximado, não como normalidade universal rígida.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0499": {
-  "conceito": "O uso crônico de corticosteroides (prednisona ou deflazacorte) na distrofia muscular de Duchenne, apesar do seu bem estabelecido benefício clínico de retardar a progressão da doença e prolongar a capacidade de deambulação, carrega também efeitos colaterais catabólicos relevantes sobre o próprio músculo esquelético: o uso prolongado de corticoide está associado a um efeito de **miopatia esteroide**, contribuindo para **perda adicional de massa muscular**, um efeito paradoxal, já que a droga é usada justamente para preservar função motora, mas cujo mecanismo catabólico direto sobre o tecido muscular é um efeito colateral bem reconhecido e que exige monitoramento cuidadoso da dose e do esquema terapêutico ao longo do tratamento.",
-  "correta": "A. Na distrofia muscular de Duchenne, o uso de corticoide está associado à perda de massa muscular.",
+  "conceito": "### Distrofia muscular de Duchenne\n- ==Ligada ao X==, meninos; ausência de ==distrofina==.\n- Fraqueza ==proximal== (cintura pélvica primeiro), ==pseudo-hipertrofia das panturrilhas==, ==Gowers== positivo.\n- CPK muito elevada; biópsia/genética.\n\n### Perda da marcha (8 a 12 anos)\n| Fraqueza | Compensação |\n|---|---|\n| ==extensores do quadril== | hiperlordose, tronco atrás do quadril |\n| ==dorsiflexores== | marcha na ponta, equino |\n| quadríceps | joelho travado em extensão |\n\n### Ortopedia\n- Contraturas: equino, flexão do quadril, banda iliotibial.\n- ==Escoliose== após perder a marcha: artrodese precoce (antes da piora respiratória, CVF > 30 a 40%).\n- Corticoide prolonga a marcha e reduz escoliose.\n\n### Becker\n- Distrofina reduzida; mais tardia e branda.\n\n### Corticoide na Duchenne\n| Efeito | Detalhe |\n|---|---|\n| benefício | ==prolonga a marcha== (2 a 3 anos), protege função pulmonar e cardíaca, reduz escoliose |\n| ==efeito catabólico== | ==miopatia esteroide==, perda de massa muscular |\n| osso | ==osteoporose==, fraturas vertebrais |\n| outros | ganho de peso, baixa estatura, catarata, puberdade tardia |\n\n- Prednisona ou deflazacorte; vamorolona com menos efeitos no osso.\n\n> **Na prova:** a banca associou corticoide à ==perda de massa muscular== (veja o alerta)",
+  "correta": "**Perda de massa muscular.**\n- Efeito catabólico (miopatia esteroide).\n- Gabarito oficial (veja o alerta).",
   "incorretas": {
-   "B": "O uso prolongado de corticoide tende a piorar a qualidade óssea (fragilidade e maior risco de fraturas), não a melhorá-la.",
-   "C": "O uso de corticoide tende a ter impacto favorável (não piora) na função pulmonar a longo prazo nesses pacientes.",
-   "D": "A manutenção da marcha por mais tempo é, de fato, um benefício clínico relevante do corticoide nesses pacientes, mas não é a associação buscada nesta questão, que trata do efeito catabólico direto sobre a massa muscular."
+   "B": "**Piora o osso.**\n- Osteoporose e fraturas vertebrais.",
+   "C": "**Protege o pulmão.**\n- Retarda a queda da capacidade vital.",
+   "D": "**Verdadeira na prática.**\n- Maior benefício do corticoide; a banca não a aceitou."
   },
-  "geradoEm": "2026-09-21",
+  "alerta": "Manter a marcha por mais tempo (D) é o benefício mais documentado do corticoide na Duchenne e também é afirmação correta. A banca escolheu o efeito catabólico sobre o músculo; em recurso, D seria defensável.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0500": {
-  "conceito": "Órteses para deformidades do pé infantil devem ser identificadas pela função. A Bebax atua no antepé e é utilizada para correção gradual de metatarso varo/aduto flexível; talo vertical exige método de redução seriada e estabilização específica, não apenas órtese de antepé.",
-  "correta": "A alternativa B está correta: Bebax é indicada para pé metatarso varo.",
+  "conceito": "### Bissetriz do calcanhar (Bleck)\n- Linha que divide a ==planta do retropé== ao meio, projetada para o antepé.\n\n| Projeção | Interpretação |\n|---|---|\n| ==entre 2º e 3º dedos== | normal |\n| sobre o 3º dedo | adução leve |\n| ==lateral ao 3º== (3º-4º) | adução moderada |\n| entre 4º e 5º | adução grave |\n\n- No pé torto e no metatarso aduto a bissetriz fica ==lateral ao 3º raio== (antepé aduzido).\n\n### Metatarso aduto\n| Tipo | Flexibilidade | Conduta |\n|---|---|---|\n| flexível | corrige além do neutro | observação |\n| parcialmente flexível | até o neutro | alongamento, gesso |\n| rígido | não corrige | gessos seriados |\n\n### Órtese de Bebax\n- Duas peças (antepé e retropé) unidas por ==articulação ajustável==: permite corrigir o antepé mantendo o retropé neutro.\n- Indicação: ==metatarso varo/aduto== flexível ou parcialmente flexível, após ou no lugar do gesso.\n- Codivilla: órtese de mola para ==pé caído==.\n\n> **Na prova:** Bebax = ==metatarso varo (aduto)==",
+  "correta": "**Bebax para metatarso varo.**\n- Corrige o antepé com o retropé controlado.\n- Alternativa ao gesso.",
   "incorretas": {
-   "A": "A alternativa A (BEBAX e está indicada no tratamento do pé talo vertical.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "C": "A alternativa C (CODVILLA e está indicada no tratamento do pé talo vertical.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "D": "A alternativa D (CODVILLA e está indicada no tratamento do pé metatarso varo.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa."
+   "A": "**Talo vertical.**\n- Tratado com gessos reversos e cirurgia.",
+   "C": "**Codivilla.**\n- Mola para pé caído.",
+   "D": "**Codivilla.**\n- Não é a órtese da imagem."
   },
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide",
    "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, 6ª edição, Cap. 27"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0502": {
-  "conceito": "A osteotomia tripla de **Steel** envolve três cortes ósseos distintos e separados: no ílio (acima do acetábulo), no ísquio e no púbis, permitindo a rotação livre de todo o fragmento acetabular para melhorar sua cobertura sobre a cabeça femoral, sendo indicada principalmente em crianças mais velhas, quando a cartilagem trirradiada já está total ou parcialmente fechada e osteotomias mais simples (como a de Salter) não seriam suficientes.",
-  "correta": "B. A técnica demonstrada é conhecida como osteotomia de Steel.",
+  "conceito": "### Osteotomias pélvicas na DDQ\n| Tipo | Técnica | Característica |\n|---|---|---|\n| ==Salter== | osteotomia ==inominada completa== acima do acetábulo, cunha de ilíaco anterior | redireciona; ==não muda volume==; 18 meses a 6 anos |\n| Pemberton | pericapsular incompleta, dobradiça na trirradiada | reduz volume, acetábulo grande |\n| Dega | incompleta, posterior preservada | PC, displasia posterolateral |\n| Steel | ==tripla== (ílio, ísquio, púbis) | criança maior |\n| Ganz | ==periacetabular== (Bernese) | trirradiada fechada |\n| Chiari | salvamento, medializa | sem congruência |\n\n### Salter na imagem\n- Linha reta do ciático maior à espinha ilíaca anteroinferior.\n- Enxerto triangular da crista ilíaca, fixado com fios.\n- Pivô na sínfise púbica.\n\n### Steel (tripla)\n- Cortes no ==ílio (supra-acetabular), ísquio e púbis==, distantes do acetábulo.\n- Criança maior/adolescente com trirradiada aberta, quando Salter não basta.\n- Reorienta o acetábulo; o fragmento fica preso pelos ligamentos sacroespinhoso e sacrotuberoso (limita a correção).\n\n> **Na prova:** três cortes (ílio, ísquio, púbis) = ==Steel==",
+  "correta": "**Steel.**\n- Osteotomia tripla.\n- Ílio, ísquio e púbis.",
   "incorretas": {
-   "A": "A osteotomia periacetabular de **Ganz** utiliza um padrão de cortes contínuo ao redor do acetábulo, preservando a coluna posterior, uma configuração diferente dos três cortes distintos e separados (ílio, ísquio e púbis) mostrados na imagem.",
-   "C": "A osteotomia de **Chiari** é um procedimento de deslocamento medial (sem os três cortes separados característicos da tripla osteotomia), criando uma prateleira de cobertura.",
-   "D": "O procedimento de **Staheli** é uma técnica de prateleira com enxerto ósseo de aumento, sem os três cortes ósseos distintos mostrados na imagem."
+   "A": "**Ganz.**\n- Periacetabular, perto da articulação.",
+   "C": "**Chiari.**\n- Um corte, medialização.",
+   "D": "**Staheli.**\n- Prateleira (shelf)."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0503": {
