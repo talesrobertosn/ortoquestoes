@@ -6336,91 +6336,91 @@
   "conferido": false
  },
  "mao-0546": {
-  "conceito": "Na doença de Kienböck o estágio de Lichtman decide a estratégia: enquanto o alinhamento do carpo está preservado, tenta-se descarregar o semilunar; perdido o alinhamento, parte-se para salvamento.",
-  "correta": "A ressecção da fileira proximal do carpo é indicada no estágio III-B, semilunar colapsado, escafoide em rotação fixa com sinal do anel cortical, altura carpal reduzida e alinhamento perdido. Ela cria uma articulação nova entre a cabeça do capitato e a fossa semilunar do rádio, e por isso exige que essas duas superfícies tenham cartilagem preservada. Perde-se cerca de metade do arco de movimento e parte da força de preensão, e ganha-se alívio da dor com um procedimento simples e sem material de síntese.",
+  "conceito": "### Classificação de Lichtman (Kienböck)\n| Estágio | Achado |\n|---|---|\n| I | radiografia normal; RM alterada |\n| II | ==esclerose== do semilunar, sem colapso |\n| IIIA | colapso/fragmentação do semilunar, **alinhamento carpal preservado** |\n| ==IIIB== | colapso + ==rotação fixa do escafoide em flexão== (anel cortical), ângulo radioescafoide > 60°, migração proximal do capitato |\n| IIIC | fratura coronal crônica do semilunar |\n| IV | artrose radiocarpal ou mediocarpal |\n\n### Conduta por estágio (resumo)\n| Estágio | Opções |\n|---|---|\n| I a IIIA, ulna minus | encurtamento do rádio, osteotomia de nivelamento |\n| I a IIIA, ulna neutra/plus | encurtamento do capitato, enxerto vascularizado |\n| ==IIIB== | ==artrodese escafotrapeziotrapezoide ou escafocapitato, ressecção da fileira proximal== |\n| IV | artrodese total, artroplastia, denervação |\n\n### Ressecção da fileira proximal\n- Nova articulação: ==cabeça do capitato na fossa semilunar do rádio==.\n- Exige cartilagem preservada nas duas superfícies.\n- Perde cerca de metade do arco e parte da força; alivia a dor sem síntese.\n\n> **Na prova:** carpectomia proximal no Kienböck = ==Lichtman IIIB==",
+  "correta": "**Lichtman IIIB.**\n- Colapso com rotação fixa do escafoide.\n- Capitato e fossa semilunar precisam de cartilagem boa.",
   "incorretas": {
-   "A": "No estágio I a radiografia é normal e o diagnóstico se faz por ressonância; o tratamento é imobilização e descarga.",
-   "B": "No estágio II há esclerose sem colapso e com alinhamento normal, cabem osteotomia de nivelamento, quando há variância ulnar negativa, ou revascularização.",
-   "C": "No III-A o semilunar já colapsou, mas o escafoide ainda não rodou e o alinhamento está mantido; ressecar a fileira proximal aí seria desproporcional."
+   "A": "**RX normal.**\n- Imobilização e descarga.",
+   "B": "**Sem colapso.**\n- Nivelamento ou revascularização.",
+   "C": "**Alinhamento mantido.**\n- Ainda cabe descarregar."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0547": {
-  "conceito": "Swanson organizou as malformações do membro superior em sete grupos, e o primeiro é o das falhas de formação, quando uma parte simplesmente não se formou, por interrupção do desenvolvimento. Elas se dividem em transversas, que produzem cotos como uma amputação, e longitudinais, que produzem as deficiências radial, ulnar e central.",
-  "correta": "A mão torta radial é falha de formação das partes, na variedade longitudinal. Guardar o grupo ajuda a lembrar a companhia: no mesmo grupo estão a deficiência ulnar, a mão fendida e as deficiências transversas; nos outros grupos ficam a sindactilia e a sinostose radioulnar (falha de diferenciação), a polidactilia (duplicação), a macrodactilia (crescimento excessivo), a hipoplasia do polegar (crescimento insuficiente), as bandas de constrição e as displasias esqueléticas generalizadas.",
+  "conceito": "### Classificação de Swanson (IFSSH)\n| Grupo | Categoria | Exemplos |\n|---|---|---|\n| ==I== | ==falha de formação== | transversa (coto), ==longitudinal: mão torta radial==, ulnar, fenda central, focomelia |\n| II | falha de diferenciação (separação) | sindactilia, sinostose radioulnar, camptodactilia, clinodactilia |\n| III | duplicação | polidactilia, mão em espelho |\n| IV | crescimento excessivo | macrodactilia |\n| V | crescimento insuficiente | hipoplasia do polegar, braquidactilia |\n| VI | bandas de constrição | Streeter |\n| VII | anomalias esqueléticas generalizadas | acondroplasia, displasias |\n\n### Classificação atual\n- **OMT (Oberg, Manske, Tonkin):** malformações, deformações e displasias, pelo eixo embriológico afetado; adotada pela IFSSH.\n\n> **Na prova:** mão torta radial = ==falha de formação longitudinal (Swanson I)==.",
+  "correta": "**Falha de formação.**\n- Longitudinal, pré-axial.\n- Mesmo grupo da deficiência ulnar e da mão fendida.",
   "incorretas": {
-   "A": "Anomalias generalizadas do esqueleto reúnem as displasias, acondroplasia, displasia diastrófica e afins.",
-   "B": "Falha de diferenciação é quando as partes se formaram mas não se separaram nem se moldaram: sindactilia, sinostose radioulnar, camptodactilia, clinodactilia.",
-   "D": "Duplicação é o grupo da polidactilia e da mão em espelho."
+   "A": "**Grupo VII.**\n- Displasias.",
+   "B": "**Grupo II.**\n- Sindactilia, sinostose.",
+   "D": "**Grupo III.**\n- Polidactilia."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0548": {
-  "conceito": "A distrofia facioescapuloumeral atinge, na ordem do nome, a face, os estabilizadores da escápula e a musculatura do úmero. O padrão é assimétrico e progressivo, e a queixa que leva ao ortopedista é a escápula alada com dificuldade de elevar o braço.",
-  "correta": "O deltoide é o músculo caracteristicamente preservado. Essa preservação é justamente o que fundamenta a cirurgia oferecida a esses pacientes: a artrodese escapulotorácica. Com os estabilizadores da escápula fracos, o deltoide contrai e move a escápula em vez de mover o úmero, a força se perde. Fixando a escápula ao gradil costal, dá-se ao deltoide uma base estável, e a elevação ativa do braço melhora de forma substancial, muitas vezes de 60 para mais de 120 graus.",
+  "conceito": "### Escápula alada\n| Causa | Nervo | Músculo | Escápula |\n|---|---|---|---|\n| ==torácico longo== | C5 a C7 | ==serrátil anterior== | **medial** (ângulo inferior para medial) |\n| acessório espinal | XI par | trapézio | lateral, ombro caído |\n| dorsal da escápula | C5 | romboides | lateral, discreta |\n\n### Lesão do torácico longo\n- Tração (esportes, mochila), compressão, iatrogênica (mastectomia, drenagem torácica), Parsonage-Turner.\n- Observação por 12 a 24 meses (muitas recuperam).\n\n### Transferências na paralisia crônica\n| Paralisia | Transferência de escolha |\n|---|---|\n| ==serrátil (torácico longo)== | ==peitoral maior (cabeça esternal) ao ângulo inferior da escápula==, geralmente com enxerto de fáscia lata |\n| trapézio (acessório) | **Eden-Lange**: levantador da escápula e romboides lateralizados (ou trapézio inferior) |\n\n- Salvamento: **escapulotoracodese**.\n\n### Distrofia facioescapuloumeral\n- Autossômica dominante (4q35, DUX4); assimétrica, progressiva.\n- Acomete face, ==estabilizadores da escápula== (trapézio, romboides, serrátil, elevador) e úmero.\n- ==Deltoide preservado==.\n- Cirurgia: ==escapulotoracodese== (artrodese escapulotorácica): base estável para o deltoide, elevação de cerca de 60° para mais de 120°.\n\n> **Na prova:** músculo preservado na FSH = ==deltoide==",
+  "correta": "**Deltoide.**\n- Preservado enquanto os periescapulares falham.\n- Fundamenta a escapulotoracodese.",
   "incorretas": {
-   "B": "O trapézio está entre os estabilizadores acometidos, e a fraqueza dele participa da escápula alada.",
-   "C": "Os romboides também são acometidos.",
-   "D": "O levantador da escápula, idem, são todos músculos periescapulares, exatamente o grupo que a doença atinge."
+   "B": "**Acometido.**\n- Participa da escápula alada.",
+   "C": "**Acometidos.**\n- Periescapulares.",
+   "D": "**Acometido.**\n- Periescapular."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0549": {
-  "conceito": "Os lumbricais nascem dos tendões do flexor profundo dos dedos, e a origem deles muda conforme a posição na mão. Os dois radiais saem de um tendão só; os dois ulnares saem de dois tendões adjacentes.",
-  "correta": "O terceiro e o quarto lumbricais são bipenados: cada um nasce das faces adjacentes de dois tendões do flexor profundo. O primeiro e o segundo são unipenados, nascendo apenas da face radial do tendão do indicador e do médio, respectivamente. E essa divisão anatômica acompanha exatamente a divisão da inervação: os dois unipenados e radiais são do nervo mediano, os dois bipenados e ulnares são do ramo profundo do ulnar. Guardar as duas coisas juntas ajuda a fixar as duas.",
+  "conceito": "### Lumbricais\n- **Origem:** tendões do flexor profundo dos dedos (único músculo que nasce em tendão de outro).\n- **Inserção:** **banda lateral** (lado radial) do aparelho extensor.\n- **Inervação:** 1º e 2º pelo **mediano**; 3º e 4º pelo **ulnar**.\n\n### Ações\n| Articulação | Ação |\n|---|---|\n| MF | ==estabilização== (leve flexão; linha de tração próxima ao eixo) |\n| ==IFP e IFD== | ==extensão== (via banda lateral) |\n\n- Ao contrair, puxa o FPD para distal: **relaxa o próprio antagonista**.\n\n### Clínica\n| Condição | Mecanismo |\n|---|---|\n| **dedo lumbrical plus** | FPD seccionado distal à origem do lumbrical ou enxerto longo: ao tentar fletir, o FPD puxa o lumbrical e a IFP **estende paradoxalmente** |\n| garra | perda de lumbricais e interósseos (lesão ulnar/mediana baixa) |\n\n### Interósseos (comparação)\n- Fletem a MF com mais força, abduzem (dorsais) ou aduzem (palmares), estendem as IF.\n\n### Inervação dos lumbricais\n| Lumbrical | Dedo | Nervo | Origem |\n|---|---|---|---|\n| ==1º== | indicador | ==mediano== | unipenado (FPD do indicador) |\n| ==2º== | médio | ==mediano== | unipenado |\n| 3º | anelar | ulnar | bipenado |\n| 4º | mínimo | ulnar | bipenado |\n\n- Por isso a garra ulnar poupa indicador e médio.\n\n> **Na prova:** lumbricais bipenados = ==3º e 4º== (ulnares)",
+  "correta": "**3 e 4.**\n- Nascem de dois tendões adjacentes do FPD.\n- Bipenados e ulnares; 1º e 2º unipenados e medianos.",
   "incorretas": {
-   "B": "O segundo lumbrical é unipenado.",
-   "C": "O segundo é unipenado, e a alternativa deixa de fora o terceiro.",
-   "D": "O primeiro é unipenado."
+   "B": "**2º unipenado.**\n- Face radial do FPD do médio.",
+   "C": "**2º unipenado.**\n- E falta o 3º.",
+   "D": "**1º unipenado.**\n- Face radial do FPD do indicador."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0550": {
-  "conceito": "As comunicações entre o mediano e o ulnar são frequentes e enganam quem não as conhece. Duas têm nome próprio, e elas se distinguem pelo local e pelo sentido.",
-  "correta": "A anastomose de Riche-Cannieu ocorre entre o nervo mediano e o nervo ulnar na mão, mais precisamente entre o ramo motor recorrente da tenar e o ramo profundo do ulnar. Ela é frequente e explica achados que de outro modo pareceriam impossíveis: uma lesão completa do mediano no punho com musculatura tenar ainda funcionante, ou uma mão praticamente toda inervada pelo ulnar, a chamada mão ulnar total. O contraste é com a anastomose de Martin-Gruber, que ocorre no antebraço e no sentido do mediano para o ulnar.",
+  "conceito": "### Anastomoses entre mediano e ulnar\n| Anastomose | Local | Sentido | Frequência |\n|---|---|---|---|\n| ==Martin-Gruber== | ==antebraço== (proximal/médio) | ==mediano (ou NIA) → ulnar== | cerca de 15 a 30% |\n| Marinacci | antebraço | ulnar → mediano | rara |\n| Riche-Cannieu | palma (ramo profundo do ulnar e ramo recorrente do mediano) | ulnar ↔ mediano | frequente |\n| Berrettini | palma, ramos sensitivos digitais | | frequente |\n\n### Consequências de Martin-Gruber\n- ENMG: achados paradoxais, pode simular ==bloqueio de condução== do ulnar no antebraço.\n- Lesão alta do ulnar pode ==poupar intrínsecos==.\n- Túnel do carpo com Martin-Gruber: atrofia de primeiro interósseo e adutor pode aparecer.\n\n### Riche-Cannieu\n- ==Mão==: ramo motor recorrente do mediano ↔ ramo profundo do ulnar.\n- Explica tenar funcionando com mediano seccionado e a \"mão ulnar total\".\n\n> **Na prova:** Riche-Cannieu = ==mediano e ulnar na mão==",
+  "correta": "**Mediano e ulnar na mão.**\n- Ramo recorrente tenar e ramo profundo do ulnar.\n- Tenar funciona apesar do mediano lesado.",
   "incorretas": {
-   "A": "Mediano e ulnar no antebraço é a anastomose de Martin-Gruber, e não a de Riche-Cannieu.",
-   "B": "Não há comunicação descrita com esse nome entre radial e ulnar.",
-   "D": "Tampouco entre mediano e radial."
+   "A": "**Martin-Gruber.**\n- Antebraço.",
+   "B": "**Não descrita.**\n- Sem esse nome.",
+   "D": "**Não descrita.**\n- Idem."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0551": {
-  "conceito": "Froment não testa o polegar: testa o nervo ulnar. Quem faz a pinça lateral forte, prendendo o papel entre o polegar e a face radial do indicador, é o adutor do polegar, ulnar. Sem ele, o paciente só consegue segurar o papel recrutando o flexor longo do polegar, que é mediano (interósseo anterior), e o dedo dobra na interfalângica. O sinal positivo é essa flexão da IF, e o músculo que aparece é o substituto, não o que faltou.",
-  "correta": "O adutor do polegar é o músculo que falta, e o flexor longo do polegar é o que entra no lugar dele: sendo mediano, sobrevive à lesão ulnar e flete a interfalângica para gerar a preensão que o adutor não gera mais.",
+  "conceito": "### Sinais da paralisia do ulnar no polegar\n| Sinal | Achado | Músculo fraco | Compensação |\n|---|---|---|---|\n| ==Froment== | ==flexão da IF== ao segurar papel entre polegar e indicador | ==adutor do polegar== (ulnar) | ==flexor longo do polegar== (mediano) |\n| Jeanne | **hiperextensão da MF** na pinça | adutor, flexor curto (cabeça profunda) | extensor longo |\n\n### Outros sinais do ulnar\n- **Wartenberg:** mínimo abduzido.\n- **Duchenne:** garra do anelar e mínimo.\n- **Masse:** achatamento do arco metacarpal.\n- **Pitres-Testut:** incapacidade de desviar o médio lateralmente.\n- Atrofia do 1º interósseo dorsal.\n\n### Intrínsecos do polegar\n| Músculo | Nervo |\n|---|---|\n| adutor | ulnar |\n| abdutor curto, oponente | mediano |\n| flexor curto | duplo (superficial mediano, profunda ulnar) |\n\n> **Na prova:** Froment = ==adutor (fraco) e flexor longo do polegar (compensa)==.",
+  "correta": "**FLP, na falta do adutor.**\n- Adutor (ulnar) ausente.\n- FLP (mediano) flete a IF para prender o papel.",
   "incorretas": {
-   "A": "O primeiro interósseo dorsal também é inervado pelo ulnar. Numa lesão ulnar ele está tão paralisado quanto o adutor, não tem como ser o músculo de compensação.",
-   "C": "Inverte os papéis: o adutor é o músculo ausente, não o que compensa. E o flexor curto do polegar tem inervação dupla (cabeça superficial mediana, profunda ulnar), o que não o coloca como o alvo do teste.",
-   "D": "Inverte os papéis do mesmo jeito. O flexor longo do polegar é justamente o que continua funcionando e produz a flexão da interfalângica que caracteriza o sinal."
+   "A": "**Também ulnar.**\n- Paralisado como o adutor.",
+   "C": "**Papéis invertidos.**\n- O adutor é o que falta.",
+   "D": "**Papéis invertidos.**\n- O FLP é o que compensa."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0552": {
-  "conceito": "A lesão de Stener é o motivo de o polegar do esquiador precisar de cirurgia. O ligamento colateral ulnar da metacarpofalângica se rompe na sua inserção distal, na base da falange proximal. A aponeurose do adutor do polegar passa por cima desse ponto; quando o coto ligamentar retrai e escapa para fora dela, a aponeurose se interpõe entre o ligamento e o osso onde ele deveria cicatrizar. Nenhuma imobilização resolve isso, porque as duas pontas nunca mais se encostam.",
-  "correta": "É a aponeurose do adutor do polegar que se interpõe, e o ponto onde ela impede a cicatrização é a inserção distal do ligamento, na base da falange proximal.",
+  "conceito": "### Lesão do colateral ulnar da MF do polegar\n| Nome | Mecanismo |\n|---|---|\n| polegar do esquiador | agudo, valgo forçado (queda com bastão) |\n| polegar do guarda-caça | crônico, atenuação repetida |\n\n### Lesão de Stener\n- Coto do ==colateral ulnar== retrai e fica ==acima da aponeurose do adutor==.\n- A aponeurose se interpõe e impede a cicatrização: ==cirurgia obrigatória==.\n- Incidência: cerca de 60 a 80% das rupturas completas.\n- Sinal: nódulo palpável proximal à MF (o coto dobrado).\n\n### Exame\n| Achado | Interpretação |\n|---|---|\n| abertura > 30 a 35° em 30° de flexão | ruptura do colateral próprio |\n| abertura também em extensão | + colateral acessório (lesão completa) |\n| > 15° a mais que o lado oposto | instabilidade |\n| sem ponto final firme | ruptura completa |\n\n- RX antes do estresse (fratura-avulsão); US ou RM para ver Stener.\n\n### Anatomia\n- A ==aponeurose do adutor== cobre a face ulnar da MF por cima do colateral ulnar.\n- O abdutor curto é tenar, do lado radial.\n\n> **Na prova:** Stener = colateral ==ulnar== + aponeurose do ==adutor==",
+  "correta": "**Adutor, entre o LCU e a base da falange proximal.**\n- A inserção distal é a que se solta.\n- A aponeurose impede o reencontro com o osso.",
   "incorretas": {
-   "A": "Troca o músculo. O abdutor curto do polegar é tenar, fica do lado radial e não tem relação com o colateral ulnar.",
-   "B": "Erra músculo e lugar. O abdutor longo do polegar insere na base do primeiro metacarpo e não cobre a metacarpofalângica.",
-   "C": "Acerta o músculo e erra o nível. A aponeurose do adutor não separa o ligamento da cabeça do metacarpo, que é a origem proximal, e ali o ligamento continua preso. O que fica órfão é a inserção na base da falange proximal."
+   "A": "**Músculo errado.**\n- Abdutor curto é radial.",
+   "B": "**Duplamente errada.**\n- Músculo e nível.",
+   "C": "**Nível errado.**\n- A origem no metacarpo fica presa."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0553": {
-  "conceito": "Na artrite reumatoide, cada tendão que rompe tem um nome ligado ao lugar por onde ele passa. Mannerfelt é a ruptura por dentro do túnel do carpo: uma espícula óssea que se forma na região escafotrapezial, no assoalho volar do túnel, serra o tendão que corre mais próximo dela. Esse tendão é o flexor longo do polegar, e a perda é a flexão ativa da interfalângica do polegar.",
-  "correta": "A síndrome de Mannerfelt é a ruptura do flexor longo do polegar por atrito contra osteófito volar no assoalho do túnel do carpo.",
+  "conceito": "### Rupturas tendíneas no punho reumatoide\n| Lesão | Tendão | Mecanismo |\n|---|---|---|\n| ==Mannerfelt== | ==flexor longo do polegar== | atrito em osteófito do **escafoide** ou trapézio no túnel do carpo |\n| Vaughan-Jackson | extensor do mínimo, depois extensor comum (ulnar → radial) | atrito na **cabeça da ulna** (caput ulnae) |\n| tubérculo de Lister | extensor longo do polegar | atrito ou sinovite no 3º compartimento |\n\n### Mannerfelt\n- Perda da flexão da **IF do polegar**.\n- Diferencial: síndrome do interósseo anterior (testar também o FPD do indicador).\n- Tratamento: **ressecar o osteófito**, sinovectomia e enxerto em ponte, transferência do FSD do anelar ou artrodese da IF.\n\n### Vaughan-Jackson\n- Tratar com ressecção da cabeça da ulna (Darrach) ou Sauvé-Kapandji, sinovectomia e transferências (sutura látero-lateral, extensor do indicador).\n\n### EUC no punho reumatoide\n- Subluxa para volar e passa a flexor: favorece supinação do carpo e colapso radial.\n\n> **Na prova:** Mannerfelt = ruptura do ==flexor longo do polegar== no escafoide.",
+  "correta": "**Ruptura do FLP.**\n- Atrito contra espícula volar do escafoide no túnel do carpo.\n- Perde a flexão da IF do polegar.",
   "incorretas": {
-   "A": "A ruptura do extensor longo do polegar acontece no tubérculo de Lister, no dorso do rádio, e não leva o nome de Mannerfelt.",
-   "B": "Inverte o lado. O esporão de Mannerfelt é volar, no assoalho do túnel. Osteófito dorsal no rádio e na radioulnar distal é o que rompe extensores, a síndrome de Vaughan-Jackson.",
-   "D": "Ruptura dos extensores, em sequência do dedo mínimo para o radial, é Vaughan-Jackson, e o atrito é contra a cabeça ulnar dorsalmente deslocada."
+   "A": "**Lister.**\n- ELP rompe no dorso, sem esse nome.",
+   "B": "**Lado errado.**\n- A espícula é volar.",
+   "D": "**Vaughan-Jackson.**\n- Extensores contra a cabeça ulnar."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0554": {
