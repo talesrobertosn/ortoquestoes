@@ -1647,209 +1647,209 @@
   "conferido": false
  },
  "mao-0145": {
-  "conceito": "Na deficiência radial não falta só osso. O nervo radial costuma estar ausente ou rudimentar abaixo do cotovelo, e quem ocupa o lugar dele, correndo pelo lado radial do antebraço, é o nervo mediano, deslocado e muito mais superficial do que a anatomia normal faria esperar.",
-  "correta": "O mediano é o nervo de maior risco na correção cirúrgica. Ele corre subcutâneo na borda radial do punho, exatamente onde o cirurgião entra para centralizar o carpo, e às vezes é confundido com um tendão ou com uma banda fibrosa. A regra é procurá-lo antes de qualquer secção e nunca ressecar estruturas do lado radial sem identificá-lo, e é também por causa dele que a liberação radial deve ser feita sob visão direta, não por divulsão cega.",
+  "conceito": "### Nervos na mão torta radial\n| Nervo | Situação |\n|---|---|\n| radial | frequentemente ==ausente ou rudimentar abaixo do cotovelo== |\n| ==mediano== | ==assume o lado radial==: corre **superficial**, subcutâneo, na borda radial do punho |\n| ulnar | normal |\n| musculocutâneo | braço, fora do campo |\n\n### Por que o mediano está em risco\n- Fica exatamente onde o cirurgião entra para **centralizar** o carpo e liberar a banda radial.\n- Pode ser confundido com **banda fibrosa** ou tendão anômalo.\n- Regra: ==identificar o mediano antes de seccionar qualquer estrutura radial==.\n\n### Outras anomalias do lado radial\n- Artéria radial ausente; FRC, ERLC, ERCC ausentes ou fundidos; bíceps anômalo.\n\n> **Na prova:** nervo de maior risco na correção = ==mediano==.",
+  "correta": "**Mediano.**\n- O mediano ocupa o lado radial e corre superficial no punho.\n- Deve ser identificado antes de qualquer secção.",
   "incorretas": {
-   "B": "O musculocutâneo está no braço e não é atingido pelo acesso ao punho.",
-   "C": "O radial é justamente o que costuma estar ausente ou rudimentar distalmente nessa malformação, daí a inervação do lado radial ficar a cargo do mediano.",
-   "D": "O interósseo posterior é ramo do radial e, pelo mesmo motivo, não é a estrutura em risco no acesso ao punho."
+   "B": "**Fora do campo.**\n- O musculocutâneo está no braço.",
+   "C": "**Costuma faltar.**\n- O radial é ausente ou rudimentar distalmente.",
+   "D": "**Ramo do radial.**\n- O interósseo posterior também não está no acesso."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0146": {
-  "conceito": "A camptodactilia é a contratura em flexão da interfalângica proximal, quase sempre do dedo mínimo, sem trauma e sem alteração da pele palmar. A causa é uma anomalia de inserção (do lumbrical ou do flexor superficial), e ela tem dois picos de apresentação: no primeiro ano de vida e na adolescência.",
-  "correta": "Deformidades de até 30 a 40 graus não atrapalham as atividades e são de tratamento clínico: alongamento e órtese de extensão progressiva, mantida por meses. A cirurgia é reservada aos casos que passam disso, que progridem apesar do tratamento ou que comprometem a função, e ela tem resultado imprevisível, o que reforça a preferência pela conduta conservadora enquanto ela for razoável.",
+  "conceito": "### Camptodactilia\n- Contratura em **flexão da IFP**, quase sempre do **mínimo**, sem trauma e sem alteração palmar.\n- Causas: inserção anômala do **lumbrical**, **FSD** curto ou anômalo, retináculo.\n- **Bilateral** na maioria (frequentemente assimétrica).\n\n### Dois picos\n| Forma | Idade | Sexo |\n|---|---|---|\n| infantil | 1º ano | igual |\n| adolescente | estirão | meninas |\n\n### Associações\n- Trissomia do 21, Marfan, orofaciodigital, Poland, artrogripose distal, Beals.\n\n### Tratamento\n| Deformidade | Conduta |\n|---|---|\n| ==até 30 a 40°== | ==alongamento e órtese de extensão== (clínico) |\n| > 40 a 60°, progressiva, funcional | liberação (pele, FSD, lumbrical, placa volar), transferência do FSD para o aparelho extensor |\n\n- Resultados cirúrgicos **imprevisíveis**; perda de flexão possível.\n\n### Diferenciais\n- Clinodactilia (desvio no plano coronal), Kirner, botoeira, Dupuytren (adulto).\n\n> **Na prova:** até ==30 a 40°== = tratamento clínico.",
+  "correta": "**Clínico até 30 a 40°.**\n- Contraturas pequenas não atrapalham e respondem a alongamento e órtese.\n- A cirurgia tem resultado imprevisível.",
   "incorretas": {
-   "A": "A maioria dos casos é bilateral, ainda que frequentemente assimétrica. Camptodactilia estritamente unilateral deve levantar dúvida sobre outra causa.",
-   "C": "Existem dois picos: a forma infantil, que aparece no primeiro ano, e a do adolescente, que surge no estirão e é mais comum em meninas. Restringir à adolescência ignora metade dos casos.",
-   "D": "Ela se associa a várias síndromes, trissomia do 21, Marfan, orofaciodigital, Poland, artrogripose distal, entre outras. Encontrar camptodactilia obriga a olhar o resto da criança."
+   "A": "**Bilateral.**\n- A maioria é bilateral, embora assimétrica.",
+   "C": "**Dois picos.**\n- Há uma forma infantil e outra no estirão.",
+   "D": "**Associada a síndromes.**\n- Trissomia do 21, Marfan e outras."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0147": {
-  "conceito": "Numa lesão de plexo braquial não se recupera tudo: os doadores são poucos e o tempo até a placa motora degenerar é curto. Por isso a reconstrução obedece a uma hierarquia de funções, da que mais devolve autonomia para a que menos devolve.",
-  "correta": "A ordem é flexão do cotovelo, depois abdução e estabilização do ombro, depois sensibilidade da borda ulnar do antebraço e da mão. A flexão do cotovelo vem primeiro porque sem ela a mão não chega ao rosto nem à boca, e nenhuma outra função compensa isso. O ombro vem em seguida, porque posiciona a mão no espaço. A sensibilidade protetora do lado ulnar entra depois, para que a mão não se machuque sem que a pessoa perceba. Mais abaixo na lista ficam extensão do punho e flexão dos dedos, e por último os intrínsecos, que praticamente nunca se recuperam.",
+  "conceito": "### Prioridades na reconstrução do plexo braquial\n1. ==Flexão do cotovelo== (levar a mão à boca).\n2. ==Abdução e estabilização do ombro== (rotação externa).\n3. ==Sensibilidade protetora== da borda ulnar da mão e antebraço.\n4. Extensão do punho e dos dedos.\n5. Flexão dos dedos (preensão).\n6. Intrínsecos (raramente recuperam).\n\n### Transferências típicas\n| Função | Doador → receptor |\n|---|---|\n| flexão do cotovelo | Oberlin (ulnar → bíceps), intercostais → musculocutâneo |\n| ombro | acessório → supraescapular; tríceps → axilar |\n| sensibilidade | intercostais sensitivos, radial superficial |\n| lesões globais | C7 contralateral, transferência muscular livre (grácil) |\n\n### Janela\n- Idealmente em **3 a 6 meses**; resultados caem após 9 a 12 meses.\n\n> **Na prova:** ordem = ==flexão do cotovelo, abdução do ombro, sensibilidade ulnar==.",
+  "correta": "**Cotovelo, ombro, sensibilidade.**\n- A flexão do cotovelo leva a mão ao rosto e vem primeiro.\n- Depois o ombro posiciona a mão, e a sensibilidade ulnar a protege.",
   "incorretas": {
-   "A": "Troca as duas primeiras prioridades. Ombro abduzido com cotovelo que não flete não leva a mão a lugar nenhum.",
-   "C": "Acerta a primeira e antecipa a sensibilidade em detrimento do ombro.",
-   "D": "Inverte quase toda a hierarquia, deixando a flexão do cotovelo (a função mais importante) em último lugar."
+   "A": "**Inverte as duas primeiras.**\n- Ombro abduzido sem cotovelo que flete não leva a mão a lugar nenhum.",
+   "C": "**Antecipa a sensibilidade.**\n- O ombro vem antes.",
+   "D": "**Hierarquia invertida.**\n- Deixa a flexão do cotovelo por último."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0148": {
-  "conceito": "Na escala de Narakas o prognóstico acompanha a extensão da lesão: grupo I é C5-C6, grupo II acrescenta C7, grupo III é a lesão completa sem Horner e grupo IV é a completa com Horner.",
-  "correta": "O grupo I é o de melhor prognóstico e o mais frequente. Cerca de nove em cada dez recuperam espontaneamente, e a recuperação se completa entre a primeira e a oitava semana de vida. O marco que se acompanha é o retorno da flexão do cotovelo contra a gravidade.",
+  "conceito": "### Narakas e prognóstico\n| Grupo | Raízes | Recuperação espontânea |\n|---|---|---|\n| ==I== | ==C5-C6== | ==completa em cerca de 90%==, muitas vezes ==nas primeiras 1 a 8 semanas== |\n| II | C5-C7 | cerca de 65%; mais lenta, frequentemente incompleta |\n| III | C5-T1 sem Horner | pouca; sequelas |\n| IV | C5-T1 com Horner | a pior; lesão pré-ganglionar |\n\n### Marcos de acompanhamento\n- **Bíceps** contra a gravidade aos 3 meses (Gilbert e Tassin): se ausente, considerar cirurgia.\n- **Teste do biscoito** (Toronto): levar o biscoito à boca aos 9 meses.\n- **Escala de Toronto** e escala de movimento ativo (AMS).\n\n### Fatores de pior prognóstico\n- Horner, lesão total, ausência de recuperação do bíceps até 3 meses, avulsões (pré-ganglionares).\n\n> **Na prova:** recuperação total em 1 a 8 semanas = ==Narakas I==.",
+  "correta": "**Grupo I.**\n- A lesão C5-C6 tem o melhor prognóstico.\n- A recuperação costuma se completar nas primeiras semanas.",
   "incorretas": {
-   "B": "O grupo II acrescenta C7 e leva junto a extensão do punho e dos dedos, com recuperação mais lenta e frequentemente incompleta.",
-   "C": "O grupo III é a lesão completa, de C5 a T1, sem Horner. A mão está flácida e o prognóstico é reservado.",
-   "D": "O grupo IV é a completa com síndrome de Horner, sinal de avulsão de T1. É o pior da escala e não recupera espontaneamente."
+   "B": "**Mais lenta.**\n- Com C7 a recuperação é demorada e muitas vezes incompleta.",
+   "C": "**Lesão completa.**\n- Mão flácida, prognóstico reservado.",
+   "D": "**O pior.**\n- Horner indica avulsão de T1; não recupera sozinho."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0149": {
-  "conceito": "A decisão de explorar cirurgicamente o plexo de um recém-nascido é uma corrida contra o relógio: esperar demais deixa a placa motora degenerar e torna a reconstrução inútil; operar cedo demais opera crianças que iriam recuperar sozinhas.",
-  "correta": "O critério mais usado é o retorno da flexão do cotovelo. A regra clássica é a do bíceps aos três meses: se a criança não flete o cotovelo contra a gravidade até essa idade, a exploração é indicada. Junto com ela usa-se o teste do biscoito (a criança consegue levar a mão à boca com o cotovelo aduzido?) e as escalas de movimento ativo, como a de Toronto. Nenhum critério isolado é perfeito, mas a flexão do cotovelo é o mais reprodutível e o mais empregado.",
+  "conceito": "### Indicação cirúrgica na paralisia obstétrica\n| Critério | Descrição |\n|---|---|\n| ==flexão do cotovelo (bíceps) aos 3 meses== | ==o mais usado== (Gilbert e Tassin): ausente contra a gravidade → explorar |\n| teste do biscoito (Toronto) | levar o biscoito à boca com o braço aduzido, aos 9 meses |\n| escala de Toronto | soma < 3,5 aos 3 meses → explorar |\n| Horner, lesão total | explorar mais cedo (cerca de 3 meses) |\n\n### Por que não outros critérios\n- **Extensão do cotovelo** (tríceps, radial) costuma estar preservada nas lesões altas.\n- Sensibilidade do lactente é difícil de avaliar.\n\n### Cirurgia\n- Neurólise, ressecção de neuroma e enxertos, transferências nervosas.\n\n> **Na prova:** critério mais usado = retorno da ==flexão do cotovelo==.",
+  "correta": "**Flexão do cotovelo.**\n- A ausência de flexão contra a gravidade aos 3 meses indica exploração.\n- É o critério mais reprodutível.",
   "incorretas": {
-   "B": "A extensão do cotovelo depende do tríceps, inervado pelo radial a partir do fascículo posterior, e é preservada nas lesões altas mais comuns. Ela não serve para separar quem vai recuperar de quem não vai.",
-   "C": "A sensibilidade da face lateral do braço, território do axilar, é difícil de avaliar com precisão num lactente e não tem o mesmo valor prognóstico.",
-   "D": "A sensibilidade da face lateral do antebraço, do musculocutâneo, esbarra na mesma dificuldade: avaliação subjetiva num bebê que não colabora."
+   "B": "**Preservada nas lesões altas.**\n- O tríceps não separa quem vai recuperar.",
+   "C": "**Difícil no lactente.**\n- A sensibilidade do axilar é subjetiva.",
+   "D": "**Mesma dificuldade.**\n- A sensibilidade do musculocutâneo não é confiável no bebê."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 34"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0150": {
-  "conceito": "Na doença de Kienböck, o estágio de Lichtman decide o procedimento: enquanto o alinhamento do carpo está preservado, tenta-se descarregar o semilunar; quando ele já se perdeu, parte-se para procedimentos de salvamento.",
-  "correta": "A carpectomia da fileira proximal é indicada no estágio III-B, semilunar colapsado, escafoide em rotação fixa, altura carpal reduzida e alinhamento perdido. Ela funciona transformando o punho numa articulação nova entre a cabeça do capitato e a fossa semilunar do rádio, e por isso exige que essas duas superfícies estejam com cartilagem preservada. Perde-se cerca de metade do arco de movimento e parte da força de preensão, mas se ganha alívio da dor com um procedimento simples e sem material de síntese.",
+  "conceito": "### Carpectomia da fileira proximal no Kienböck\n- Indicação clássica: ==Lichtman IIIB== (colapso do semilunar, escafoide em flexão fixa, carpo desalinhado).\n- Retira escafoide, semilunar e piramidal; o **capitato** passa a articular com a **fossa semilunar** do rádio.\n- Pré-requisito: ==cartilagem preservada na cabeça do capitato e na fossa semilunar==.\n\n### Classificação de Bain e Begg (artroscópica)\n| Grau | Superfícies não funcionais |\n|---|---|\n| 0 | nenhuma |\n| 1 | uma (em geral proximal do semilunar) |\n| 2A / 2B | duas (semilunar proximal + fossa do rádio; ou superfícies do semilunar) |\n| 3 | três (inclui o capitato ou o rádio) |\n| 4 | todas as quatro |\n\n- Com o **capitato** acometido (grau 3 ou 4): a carpectomia fica contraindicada; opções são artrodese total, parcial ou artroplastia.\n\n### Opções por estágio de Lichtman\n| Estágio | Opções |\n|---|---|\n| I a IIIA | descarga (encurtamento do rádio se ulna minus), revascularização |\n| IIIB | ==carpectomia da fileira proximal==, artrodese escafocapitato ou STT |\n| IV | artrodese total, artroplastia |\n\n> **Na prova:** carpectomia da fileira proximal = ==Lichtman IIIB==.",
+  "correta": "**Lichtman IIIB.**\n- Semilunar colapsado, escafoide em flexão fixa e carpo desalinhado.\n- O capitato passa a articular com a fossa semilunar, que precisa estar preservada.",
   "incorretas": {
-   "A": "No estágio I a radiografia é normal e o diagnóstico se faz por ressonância. O tratamento é a imobilização e a descarga, não uma cirurgia de salvamento.",
-   "B": "No estágio II há esclerose do semilunar sem colapso e com alinhamento carpal normal. Cabem procedimentos que preservam o carpo: osteotomia de nivelamento quando há variância ulnar negativa, ou revascularização.",
-   "C": "No III-A o semilunar já colapsou, mas o escafoide ainda não assumiu rotação fixa e o alinhamento carpal está mantido. Aí ainda faz sentido tentar descarregar o semilunar, e a carpectomia seria uma escolha desproporcional."
+   "A": "**Radiografia normal.**\n- No estágio I trata-se com imobilização e descarga.",
+   "B": "**Sem colapso.**\n- No estágio II cabem procedimentos que preservam o carpo.",
+   "C": "**Alinhamento mantido.**\n- No IIIA ainda se tenta descarregar o semilunar."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. Seção 7"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0151": {
-  "conceito": "O teste de Froment procura fraqueza do adutor do polegar, inervado pelo ramo profundo do nervo ulnar. Segurar uma folha entre o polegar e a borda radial do indicador exige adução, e é isso que falta.",
-  "correta": "Sem o adutor, a única forma de manter a folha presa é fletir a interfalângica com o flexor longo do polegar, que é do nervo mediano e continua funcionando. Por isso o sinal positivo é o polegar dobrando a ponta. O mesmo raciocínio explica o sinal de Jeanne, em que a metacarpofalângica hiperestende para compensar, e ambos aparecem juntos na lesão ulnar.",
+  "conceito": "### Sinais da paralisia do ulnar no polegar\n| Sinal | Achado | Músculo fraco | Compensação |\n|---|---|---|---|\n| ==Froment== | ==flexão da IF== ao segurar papel entre polegar e indicador | ==adutor do polegar== (ulnar) | ==flexor longo do polegar== (mediano) |\n| Jeanne | **hiperextensão da MF** na pinça | adutor, flexor curto (cabeça profunda) | extensor longo |\n\n### Outros sinais do ulnar\n- **Wartenberg:** mínimo abduzido.\n- **Duchenne:** garra do anelar e mínimo.\n- **Masse:** achatamento do arco metacarpal.\n- **Pitres-Testut:** incapacidade de desviar o médio lateralmente.\n- Atrofia do 1º interósseo dorsal.\n\n### Intrínsecos do polegar\n| Músculo | Nervo |\n|---|---|\n| adutor | ulnar |\n| abdutor curto, oponente | mediano |\n| flexor curto | duplo (superficial mediano, profunda ulnar) |\n\n> **Na prova:** Froment = ==adutor (fraco) e flexor longo do polegar (compensa)==.",
+  "correta": "**Flexor longo do polegar compensa.**\n- Sem o adutor (ulnar), o paciente flete a IF com o FLP (mediano) para prender o papel.",
   "incorretas": {
-   "A": "O primeiro interósseo dorsal também é inervado pelo ulnar e está fraco na mesma lesão. Um músculo denervado não pode compensar a falta de outro do mesmo nervo, aliás, a atrofia dele é o sinal mais precoce de perda intrínseca ulnar.",
-   "C": "Inverte os papéis: quem falta é o adutor, e o flexor curto do polegar tem inervação dupla, o que o torna mal candidato a ser o músculo ausente.",
-   "D": "Também inverte. O flexor longo é justamente o músculo preservado, que entra como substituto, não o que falta."
+   "A": "**Também denervado.**\n- O 1º interósseo dorsal é ulnar e está fraco na mesma lesão.",
+   "C": "**Papéis invertidos.**\n- Quem falta é o adutor; o flexor curto tem inervação dupla.",
+   "D": "**Invertido.**\n- O FLP é o músculo preservado que substitui."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 9"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0152": {
-  "conceito": "Na zona I o flexor superficial já se inseriu na falange média, e o único tendão em jogo é o flexor profundo. Como a lesão é distal, muitas vezes a saída é reinserir o coto no osso, mas avançar o tendão tem um limite.",
-  "correta": "O reparo direto é possível quando o intervalo entre os cotos do flexor profundo é de até 1 centímetro. Passar disso significa avançar o tendão além do que ele tolera, e o preço tem nome: efeito quadriga. Como os flexores profundos dos dedos longos partilham um ventre muscular comum, encurtar um deles impede que os outros completem a flexão, o dedo operado fica em flexo e os vizinhos deixam de fechar. Uma cirurgia num dedo estraga a mão inteira.",
+  "conceito": "### Zona I dos flexores\n- Distal à inserção do **FSD**: só o ==flexor profundo== está em jogo.\n- Reparo direto ou **reinserção** na falange distal (âncora, pull-out).\n- Avanço máximo tolerado: ==cerca de 1 cm==.\n\n### Efeito quadriga\n- FPD dos dedos médio, anelar e mínimo compartilham **ventre comum**.\n- Avançar demais um FPD (> 1 cm) encurta-o: ao fletir, ele chega ao fim antes e **impede a flexão completa dos vizinhos**.\n- Também ocorre após amputação com sutura do FPD ao extensor.\n\n### Lumbrical plus (oposto)\n- FPD longo demais (enxerto frouxo, secção distal ao lumbrical): IFP **estende** paradoxalmente ao tentar fletir.\n\n### Subdivisões da zona I (Moiemen e Elliot)\n- 1A: distal, sem coto para suturar; 1B: coto curto; 1C: próximo à A4.\n\n> **Na prova:** reparo direto na zona I se o intervalo do ==FPD for ≤ 1 cm==.",
+  "correta": "**FPD até 1 cm.**\n- Avançar mais de 1 cm produz efeito quadriga.\n- Os vizinhos deixam de fechar a mão.",
   "incorretas": {
-   "B": "Dois centímetros é justamente o avanço que produz quadriga. E o enunciado inverte a lógica: o reparo direto se faz quando o intervalo é pequeno, não quando é grande.",
-   "C": "O tendão em questão na zona I é o profundo. O superficial já terminou o seu trajeto antes, inserindo-se na falange média.",
-   "D": "Erra o tendão e o sentido da regra ao mesmo tempo."
+   "B": "**Quadriga.**\n- 2 cm de avanço causa o efeito quadriga.",
+   "C": "**Tendão errado.**\n- O FSD já se inseriu antes da zona I.",
+   "D": "**Erra os dois.**\n- Tendão e sentido da regra errados."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 66"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0153": {
-  "conceito": "Na mão reumatoide cada deformidade tem uma articulação de origem, e saber qual é resolve boa parte das questões. Na botoeira dos dedos longos, a origem é a interfalângica proximal.",
-  "correta": "A sinovite da interfalângica proximal distende a cápsula e enfraquece a inserção da banda central na base da falange média. Perdida a banda central, a articulação cai em flexão e as bandas laterais escorregam para volar do eixo de rotação: deixam de estender a proximal e passam a hiperestender a distal. Está armada a botoeira, proximal fletida, distal hiperestendida. O contraste vale a pena guardar: no polegar reumatoide a botoeira começa na metacarpofalângica, e o pescoço de cisne dos dedos longos costuma começar mais proximalmente, na metacarpofalângica ou no próprio punho.",
+  "conceito": "### Origem das deformidades na mão reumatoide\n| Deformidade | Articulação de origem |\n|---|---|\n| ==botoeira dos dedos longos== | ==IFP== (sinovite distende a banda central) |\n| pescoço de cisne dos dedos | MF (subluxação volar, intrínseco plus), IFP (placa volar) ou IFD (martelo) |\n| desvio ulnar dos dedos | MF + punho (desvio radial dos metacarpos) |\n| botoeira do polegar (Nalebuff I) | MF |\n| pescoço de cisne do polegar (Nalebuff III) | CMC |\n| colapso do carpo | radiocarpal, RUD |\n\n### Botoeira reumatoide (Nalebuff e Millender)\n| Estágio | Achado | Tratamento |\n|---|---|---|\n| I (leve) | déficit de extensão da IFP de 10 a 15°, passível | sinovectomia, tenotomia do extensor terminal (Fowler) |\n| II (moderado) | cerca de 40°, passível | reconstrução da banda central |\n| III (grave) | IFP rígida | artrodese ou artroplastia |\n\n### IFD na AR\n- Classicamente poupada: ajuda a diferenciar de artrose e psoriásica.\n\n> **Na prova:** botoeira dos dedos longos = sinovite da ==IFP==.",
+  "correta": "**IFP.**\n- A sinovite da IFP enfraquece a banda central.\n- As bandas laterais migram para volar e hiperestendem a IFD.",
   "incorretas": {
-   "A": "A sinovite radiocárpica é o motor do colapso do punho (supinação, translação ulnar e palmar do carpo) e por essa via contribui para o desvio ulnar dos dedos. Não é ela, porém, que produz a botoeira.",
-   "B": "A sinovite metacarpofalângica leva à subluxação volar e ao desvio ulnar dos dedos, e participa da gênese do pescoço de cisne. Botoeira, não.",
-   "C": "A interfalângica distal é a articulação mais poupada pela artrite reumatoide, e é essa preservação que ajuda a diferenciá-la da artrose e da artrite psoriásica."
+   "A": "**Colapso do carpo.**\n- A radiocarpal contribui para o desvio ulnar dos dedos.",
+   "B": "**Desvio ulnar e pescoço de cisne.**\n- A MF gera subluxação volar e desvio ulnar.",
+   "C": "**Poupada na AR.**\n- A IFD é a articulação mais preservada."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 73"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0154": {
-  "conceito": "Para saber se uma lesão de plexo é pré ou pós-ganglionar, procura-se função em músculos cujos nervos saem das raízes muito proximalmente, antes de qualquer tronco. Se esses músculos funcionam, a raiz correspondente não foi arrancada.",
-  "correta": "A protração da escápula depende do serrátil anterior, inervado pelo nervo torácico longo, que nasce diretamente das raízes C5, C6 e C7 praticamente na saída do forame. Protração presente indica que C5 está preservada, isto é, que a lesão é pós-ganglionar naquele nível, o que muda o prognóstico e abre a possibilidade de enxerto a partir de um coto proximal viável. A mesma lógica se aplica aos romboides, pelo nervo dorsal da escápula, e ao diafragma, pelo frênico.",
+  "conceito": "### Músculos que localizam o nível da lesão do plexo\n| Função | Nervo | Raízes | Se presente |\n|---|---|---|---|\n| ==protração da escápula (serrátil anterior)== | ==torácico longo== | ==C5, C6, C7== | ==C5 preservada== (lesão pós-ganglionar nesse nível) |\n| romboides | dorsal da escápula | C5 | C5 preservada |\n| diafragma | frênico | C3-C5 | C5 preservada |\n| ausência de Horner | cadeia simpática | T1 | T1 não avulsionada |\n\n### Por que importa\n- Raiz preservada = **coto proximal** disponível para enxerto.\n- Raiz avulsionada = só **transferências** nervosas.\n\n### Avaliação de outras raízes\n| Raiz | Marcadores |\n|---|---|\n| C6 | bíceps, braquiorradial |\n| C7 | tríceps, extensores do punho e dedos |\n| C8 | flexores dos dedos |\n| T1 | intrínsecos, Horner |\n\n> **Na prova:** protração da escápula preservada = raiz ==C5== preservada.",
+  "correta": "**C5.**\n- O serrátil anterior é inervado pelo torácico longo, que sai direto das raízes.\n- Protração presente indica que C5 não foi avulsionada.",
   "incorretas": {
-   "B": "C6 contribui para o torácico longo, mas o achado é lido como indicador de C5 na avaliação clássica, e é ela que se procura preservar nas lesões altas.",
-   "C": "C7 também contribui, mas a sua integridade é avaliada por outros marcadores, como a extensão do punho e dos dedos.",
-   "D": "C8 não participa da inervação do serrátil. A avaliação dela se faz pelos flexores dos dedos e pelos intrínsecos, e a avulsão dela costuma vir acompanhada de sinal de Horner por T1."
+   "B": "**Contribui, mas não é o marcador.**\n- O achado é lido classicamente como indicador de C5.",
+   "C": "**Outros marcadores.**\n- C7 se avalia pela extensão do punho e dos dedos.",
+   "D": "**Não inerva o serrátil.**\n- C8 se avalia pelos flexores dos dedos."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 7.9"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0155": {
-  "conceito": "A ultrassonografia mede a área de secção transversal do nervo mediano (não o diâmetro linear), e o achado que sustenta o diagnóstico é o nervo edemaciado logo antes de entrar no túnel, onde ele encontra a resistência.",
-  "correta": "O corte é feito no nível do pisiforme, na entrada do túnel, e o valor de referência é 10 mm². Acima disso a sensibilidade descrita passa de 97%. O ponto de medida importa tanto quanto o número: é proximal ao estreitamento que o nervo incha, do mesmo jeito que um rio se alarga antes de uma ponte estreita. A ultrassonografia tem ainda a vantagem de mostrar o que a eletroneuromiografia não vê (cisto, tenossinovite, nervo mediano bífido, artéria mediana persistente), achados que mudam o planejamento cirúrgico.",
+  "conceito": "### Ultrassonografia no túnel do carpo\n- Mede a ==área de secção transversa== do mediano.\n- Local: ==entrada do túnel (nível do pisiforme)==, onde o nervo incha antes do estreitamento.\n- Corte: ==acima de 10 mm²== (sensibilidade descrita acima de 97% em algumas séries; outras usam 9 a 12 mm²).\n\n### Outros parâmetros\n| Parâmetro | Anormal |\n|---|---|\n| razão entre área no punho e no antebraço | > 1,4 |\n| achatamento no hamato | aumentado |\n| arqueamento do retináculo | > 2,5 a 4 mm |\n| mobilidade do nervo | reduzida |\n\n### Vantagens\n- Barata, dinâmica, sem dor.\n- Mostra causas: **cisto**, tenossinovite, mediano **bífido**, **artéria mediana persistente**, músculos anômalos.\n\n### ENMG\n- Gradua a gravidade, exclui radiculopatia e polineuropatia; pode ser normal em casos leves.\n\n> **Na prova:** US com área ==> 10 mm² no pisiforme==.",
+  "correta": "**10 mm² no pisiforme.**\n- A área do mediano acima de 10 mm² na entrada do túnel sustenta o diagnóstico.\n- O nervo incha antes do estreitamento.",
   "incorretas": {
-   "A": "Erra o valor e o nível. Sete milímetros quadrados está dentro da faixa considerada normal ou limítrofe.",
-   "B": "O nível está certo e o valor não: 7 mm² não separa doente de sadio com a sensibilidade descrita.",
-   "C": "O valor está certo e o nível não. No capitato o nervo já está dentro do túnel, achatado pelo ligamento, ali a área é menor, não maior, e medir nesse ponto subestima o achado."
+   "A": "**Valor e nível errados.**\n- 7 mm² é normal ou limítrofe.",
+   "B": "**Valor baixo.**\n- 7 mm² não separa doentes de sadios.",
+   "C": "**Nível errado.**\n- No capitato o nervo está achatado dentro do túnel."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 77"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0156": {
-  "conceito": "A neurólise in situ, ou descompressão simples, abre o teto do túnel cubital sem mover o nervo. É a cirurgia menos agressiva e a que menos desvasculariza, mas, ao remover a contenção posterior, ela pode deixar o nervo livre para saltar por cima do epicôndilo medial na flexão.",
-  "correta": "A necessidade de reoperação por instabilidade depois da neurólise in situ é maior em quem tem menos de 50 anos e sintomas prévios leves. Duas razões se somam. Nos mais jovens os tecidos são mais elásticos e menos fibrosados, e o nervo ganha mobilidade suficiente para subluxar quando o teto é aberto, nos mais velhos a fibrose que acompanha a compressão crônica acaba servindo de contenção. E quem chegou à cirurgia com sintomas leves tinha pouco a ganhar: qualquer estalido ou desconforto novo é percebido como piora, e a insatisfação leva à revisão. Por isso, diante de nervo instável na manobra de flexão intraoperatória, prefere-se transpor de saída.",
+  "conceito": "### Túnel cubital: técnicas cirúrgicas\n| Técnica | Vantagens | Desvantagens |\n|---|---|---|\n| ==descompressão in situ== | simples, preserva a irrigação, menos complicações | ==subluxação do nervo== pós-operatória |\n| transposição anterior (subcutânea, intramuscular, submuscular) | trata instabilidade | mais dissecção, desvascularização, nova compressão se mal feita |\n| epicondilectomia medial | trata instabilidade | dor no epicôndilo, instabilidade do colateral se excessiva |\n\n### Resultados\n- Metanálises: in situ e transposição com resultados semelhantes; in situ com menos complicações.\n\n### Revisão por instabilidade após in situ\n- Mais frequente em ==menores de 50 anos== e ==sintomas leves==:\n  - tecidos elásticos permitem que o nervo **subluxe**;\n  - pouco ganho clínico, insatisfação maior com estalidos novos.\n- Na cirurgia: testar a estabilidade com **flexão do cotovelo**; se o nervo subluxa, transpor.\n\n> **Na prova:** revisão por instabilidade = ==menores de 50 anos com sintomas leves==.",
+  "correta": "**Jovens com sintomas leves.**\n- Tecidos elásticos permitem que o nervo subluxe após abrir o teto.\n- Com pouco a ganhar, qualquer sintoma novo leva à revisão.",
   "incorretas": {
-   "A": "A idade acima de 50 anos protege, e não o contrário, pela menor mobilidade do nervo nos tecidos já fibrosados.",
-   "B": "Junta dois fatores de menor risco: idade maior e sintomas graves, quem tinha muito a ganhar tende a ficar satisfeito mesmo com um resultado parcial.",
-   "D": "A idade está certa, o perfil de sintomas não. Sintoma grave prévio significa margem grande de melhora, e a satisfação com o resultado reduz a chance de revisão."
+   "A": "**Idade protege.**\n- Acima de 50 anos a fibrose segura o nervo.",
+   "B": "**Dois fatores de menor risco.**\n- Idade maior e sintomas graves reduzem a revisão.",
+   "D": "**Sintomas graves protegem.**\n- Quem tinha muito a ganhar tende a ficar satisfeito."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 77"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0157": {
-  "conceito": "Na mão torta radial, alinhar o punho sobre a ulna melhora a aparência e a alavanca. Mas alinhar nem sempre é o melhor negócio funcional, e a decisão depende do que existe acima do punho.",
-  "correta": "Flexão inadequada do cotovelo é contraindicação. Com o cotovelo que não dobra, a única forma de a criança levar a mão ao rosto e à boca é justamente pelo desvio radial do punho, que funciona como articulação de substituição. Endereçar o punho nesse caso troca uma mão torta e útil por uma mão alinhada e inútil. A conduta é tratar antes a mobilidade do cotovelo, ou aceitar o desvio.",
+  "conceito": "### Mão torta radial: quando não centralizar\n| Contraindicação | Por quê |\n|---|---|\n| ==cotovelo rígido em extensão== | ==o desvio radial do punho é o que permite levar a mão à boca== |\n| adulto bem adaptado | função já compensada |\n| doença sistêmica grave (Fanconi, cardiopatia) | risco cirúrgico, expectativa |\n| partes moles gravemente retraídas | risco vascular e nervoso (distrair antes) |\n\n### Não são contraindicações\n- Ausência do polegar (a policização vem depois).\n- Pronossupinação ausente (faz parte do quadro).\n- Camptodactilia.\n\n### Sequência habitual\n1. Alongamento e órteses desde o nascimento.\n2. Distração com fixador (se retração importante).\n3. Centralização ou radialização (cerca de 6 a 18 meses).\n4. Policização (se polegar ausente ou Blauth IIIB a V).\n\n### Avaliação do cotovelo\n- A criança precisa ter **flexão do cotovelo** suficiente para usar a mão alinhada.\n\n> **Na prova:** principal contraindicação = ==cotovelo rígido em extensão==.",
+  "correta": "**Cotovelo que não flete.**\n- Sem flexão do cotovelo, o desvio radial do punho é o que leva a mão ao rosto.\n- Alinhar o punho tiraria essa função.",
   "incorretas": {
-   "A": "Ausência de polegar acompanha frequentemente a deficiência radial e não impede a correção do punho, pelo contrário, a policização do indicador costuma vir depois, e o punho alinhado ajuda esse plano.",
-   "B": "Ausência total do rádio é o tipo mais comum e a indicação típica do procedimento, não uma contraindicação.",
-   "D": "Aqui a alternativa inverte a frase. Anomalias associadas compatíveis com uma vida longa são o que justifica investir na reconstrução; contraindicação seria o oposto, anomalias graves e incompatíveis com sobrevida prolongada, situação em que uma cirurgia funcional demorada não se justifica."
+   "A": "**Não impede.**\n- A policização vem depois da centralização.",
+   "B": "**Indicação típica.**\n- A ausência total do rádio é o tipo mais comum e o alvo do procedimento.",
+   "D": "**Frase invertida.**\n- Anomalias compatíveis com vida longa justificam a reconstrução."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 80"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0158": {
-  "conceito": "Eaton e Littler estadiaram a artrose da base do polegar pelo que a radiografia mostra, e a graduação orienta a conduta: quanto mais articulações envolvidas, menos opções restam.",
-  "correta": "O grau IV se distingue por acrescentar o acometimento da articulação escafotrapézio-trapezoide, é a artrose pantrapezial, em que não só a trapeziometacarpiana está gasta, mas também a face oposta do trapézio. A consequência prática é direta: com o trapézio doente dos dois lados, a artrodese trapeziometacarpiana deixa de fazer sentido, porque ela apenas transferiria a carga para uma articulação também comprometida. A saída é a trapeziectomia, com ou sem interposição e suspensão.",
+  "conceito": "### Eaton-Littler (rizartrose)\n| Estágio | Achados |\n|---|---|\n| I | espaço normal ou **alargado** (sinovite) |\n| II | estreitamento, osteófitos **< 2 mm** |\n| III | estreitamento marcado, osteófitos **> 2 mm**, esclerose, cistos |\n| ==IV== | ==+ artrose escafotrapeziotrapezoide (pantrapezial)== |\n\n### Por que o IV muda a conduta\n- Com o trapézio doente dos dois lados, a **artrodese trapeziometacarpiana** só transfere carga para a STT gasta.\n- Opção: ==trapezectomia total== (com ou sem interposição e suspensão, LRTI).\n- Próteses trapeziometacarpianas também ficam limitadas.\n\n### Incidências úteis\n- **Roberts** (AP verdadeiro da CMC), **Bett** (perfil verdadeiro), estresse de Eaton.\n\n> **Na prova:** Eaton IV = ==acometimento da escafotrapeziotrapezoide==.",
+  "correta": "**Pantrapezial.**\n- O grau IV acrescenta a artrose da escafotrapeziotrapezoide.\n- A saída passa a ser a trapezectomia.",
   "incorretas": {
-   "A": "Osteófitos maiores que 2 milímetros caracterizam o grau III, junto com estreitamento marcado do espaço e esclerose subcondral.",
-   "B": "Ausência de alterações radiológicas, ou apenas alargamento do espaço por sinovite, é o grau I, a fase em que a reconstrução ligamentar de Eaton e Littler ainda tem lugar.",
-   "D": "Esclerose da trapeziometacarpiana já aparece no grau III, e não é o que define a passagem para o IV."
+   "A": "**Grau III.**\n- Osteófitos acima de 2 mm definem o III.",
+   "B": "**Grau I.**\n- Sem alterações ou só alargamento.",
+   "D": "**Já no III.**\n- A esclerose aparece antes do IV."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. Seção 7"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0159": {
-  "conceito": "O teste de O'Brien avalia a lesão do lábio superior de anterior para posterior, a lesão SLAP. Quando ela se estende posteriormente, o líquido articular pode escapar por um mecanismo de válvula e formar um cisto paralabral que se aloja no entalhe espinoglenoidal.",
-  "correta": "O'Brien positivo somado a hipotrofia do infraespinal aumenta a suspeita de cisto gangliônico no entalhe espinoglenoidal. A combinação é característica: a lesão labral explica o teste, e o cisto comprimindo o nervo supraescapular além do ramo do supraespinal explica a atrofia isolada da fossa infraespinal, poupando a supraespinal. É quadro típico de atleta de arremesso e de vôlei, e a conduta segue daí, tratar apenas o cisto sem tratar a lesão labral que o alimenta leva à recidiva.",
+  "conceito": "### SLAP + cisto espinoglenoidal\n- Lesão labral superior que se estende **posteriormente**: mecanismo de válvula forma **cisto paralabral**.\n- O cisto no **entalhe espinoglenoidal** comprime o supraescapular **após** o ramo do supraespinal.\n- Resultado: ==atrofia isolada do infraespinal==, fraqueza de rotação externa.\n\n### Teste de O'Brien (compressão ativa)\n- Ombro em 90° de flexão, 10 a 15° de adução, **rotação interna** (polegar para baixo), resistência.\n- Dor profunda que **alivia** em supinação: lesão SLAP.\n- Dor superior (acromioclavicular) sugere lesão da AC.\n\n### Diagnóstico\n- **RM ou artro-RM**: cisto e lesão labral; ENMG: denervação do infraespinal.\n\n### Tratamento\n- Artroscopia: **reparo labral** + descompressão do cisto (tratar só o cisto → recidiva).\n\n### Diferenciais\n| Condição | Diferença |\n|---|---|\n| ruptura do manguito | atrofia de supra e infraespinal, fraqueza desde o início |\n| lesão do bíceps | dor no sulco, sem atrofia |\n| subluxação medial do bíceps | lesão do subescapular |\n\n> **Na prova:** O'Brien + atrofia do infraespinal = ==cisto gangliônico espinoglenoidal==.",
+  "correta": "**Cisto gangliônico.**\n- A lesão SLAP explica o O'Brien.\n- O cisto no entalhe espinoglenoidal explica a atrofia isolada do infraespinal.",
   "incorretas": {
-   "B": "Ruptura do manguito também produz atrofia, mas o padrão é outro e o O'Brien não é o teste que a investiga. Além disso, na ruptura a fraqueza acompanha a atrofia desde o início, sem o intervalo típico do cisto.",
-   "C": "Lesão longitudinal do bíceps dá dor no sulco e sinais de tendinopatia, sem atrofia do infraespinal.",
-   "D": "Subluxação medial do bíceps se associa a lesão do subescapular e da polia, e o achado muscular seria no subescapular, não no infraespinal."
+   "B": "**Padrão diferente.**\n- A ruptura do manguito atrofia os dois músculos e não é investigada pelo O'Brien.",
+   "C": "**Sem atrofia.**\n- A lesão do bíceps dá dor no sulco.",
+   "D": "**Subescapular.**\n- A subluxação medial do bíceps associa-se à lesão do subescapular."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0160": {
-  "conceito": "Reparo tardio de flexor na zona II é reconstrução, não sutura. A escolha entre enxerto num tempo ou em dois, com haste de silicone, depende do estado do leito por onde o enxerto vai deslizar.",
-  "correta": "Polias permeáveis autorizam o enxerto primário. Com A2 e A4 preservadas e a bainha utilizável, o enxerto tem por onde correr. Somam-se duas exigências: articulações passivamente móveis e cobertura cutânea adequada. Faltando qualquer uma, o caminho é a reconstrução em dois tempos.",
+  "conceito": "### Reconstrução tardia do flexor na zona II\n| Condição do dedo | Estratégia |\n|---|---|\n| ==polias permeáveis== (A2 e A4), bainha utilizável, articulações ==móveis passivamente==, pele boa | ==enxerto em um tempo== |\n| bainha cicatrizada, polias perdidas, rigidez, pele ruim | ==dois tempos==: haste de silicone (Hunter) + reconstrução de polias; enxerto após 3 meses |\n| articulação destruída, dedo pouco útil | artrodese, tenodese ou amputação |\n\n### Classificação de Boyes (candidatos a enxerto)\n| Grau | Situação | Prognóstico |\n|---|---|---|\n| 1 | boa: cicatriz mínima, articulações móveis | melhor |\n| 2 | cicatriz | |\n| 3 | lesão articular | |\n| 4 | lesão nervosa | |\n| 5 | múltiplas lesões | pior |\n\n### Doadores de enxerto\n- **Palmar longo** (ausente em cerca de 15%), plantar, extensor longo dos dedos do pé.\n\n### Pré-requisito comum\n- Mobilidade passiva completa das articulações (reabilitação antes).\n\n> **Na prova:** enxerto primário indicado com ==polias permeáveis==.",
+  "correta": "**Polias permeáveis.**\n- Com A2 e A4 preservadas e bainha utilizável, o enxerto tem por onde deslizar.\n- Articulações móveis e pele boa completam os requisitos.",
   "incorretas": {
-   "A": "Rigidez articular é contraindicação. Enxerto não mobiliza articulação travada, o pré-requisito é recuperar o arco passivo antes, com reabilitação.",
-   "C": "Bainha lesada e cicatrizada é exatamente o cenário do procedimento em dois tempos: primeiro a haste de silicone forma a pseudobainha e reconstroem-se as polias, depois vem o enxerto.",
-   "D": "Lesão nervosa associada precisa ser tratada e pesa no prognóstico, mas não é o critério que define enxerto em um ou em dois tempos."
+   "A": "**Contraindicação.**\n- O enxerto não move articulação rígida.",
+   "C": "**Indica dois tempos.**\n- Bainha lesada pede haste de silicone antes do enxerto.",
+   "D": "**Não define a técnica.**\n- A lesão nervosa piora o prognóstico, mas não decide um ou dois tempos."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0161": {
