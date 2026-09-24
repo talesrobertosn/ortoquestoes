@@ -1486,91 +1486,91 @@
   "conferido": false
  },
  "trauma-0129": {
-  "conceito": "A hemorragia arterial nas lesões do anel pélvico, embora responda pela minoria dos casos de sangramento pélvico (a maioria é venosa, do plexo pré-sacral), pode ser catastrófica quando ocorre, e duas artérias do sistema **ilíaco interno** concentram a maior parte do risco: a artéria **glútea superior** e a artéria **pudenda** (interna).\n\nA glútea superior corre próxima à articulação sacroilíaca posterior, saindo da pelve pela incisura isquiática maior, uma região frequentemente comprometida em fraturas com desvio posterior, o que a torna vulnerável a laceração direta pelos fragmentos ósseos ou pelo cisalhamento articular.\n\nA artéria pudenda interna, por sua vez, corre próxima aos ramos púbicos e à sínfise, ficando exposta em fraturas anteriores com diástase ou fratura dos ramos.\n\nReconhecer essas duas artérias como as mais associadas à hemorragia arterial pélvica é o que orienta, na prática, os territórios prioritários de embolização quando a angiografia identifica um sangramento ativo.",
-  "correta": "B. As artérias glútea superior e pudenda interna são as mais relacionadas à hemorragia arterial nas lesões do anel pélvico, pela sua proximidade com as regiões mais frequentemente comprometidas pela fratura.",
+  "conceito": "### Hemorragia pélvica\n- Origem: ==venosa (80 a 90%)==, plexo pré-sacral e superfícies ósseas; ==arterial (10 a 20%)==.\n- Artérias mais lesadas (ramos da ilíaca interna):\n\n| Artéria | Relação |\n|---|---|\n| ==glútea superior== | sai pela incisura isquiática maior, acima do piriforme: lesão em fraturas posteriores/sacroilíacas |\n| ==pudenda interna== | junto à espinha isquiática e ramos: fraturas anteriores/compressão lateral |\n| obturatória | ramos púbicos (corona mortis) |\n| sacral lateral | menos frequente |\n\n### Algoritmo\n- Instável: cinta pélvica, reposição balanceada (sangue), FAST.\n- Blush arterial na TC ou instabilidade persistente: ==angioembolização==; tamponamento pré-peritoneal onde não há hemodinâmica.\n\n> **Na prova:** artérias mais relacionadas = ==glútea superior e pudenda==",
+  "correta": "**Glútea superior e pudenda.**\n- Ramos da ilíaca interna mais lesados.\n- Alvos da angioembolização.",
   "incorretas": {
-   "A": "A glútea inferior é menos associada à hemorragia pélvica grave do que a glútea superior, cuja proximidade com a articulação sacroilíaca a torna mais vulnerável.",
-   "C": "A sacral lateral não é a artéria classicamente pareada com a glútea inferior nessa associação, a combinação mais reconhecida é glútea superior e pudenda.",
-   "D": "A sacral lateral, combinada à glútea superior, também não corresponde ao par classicamente mais associado à hemorragia pélvica grave, que é glútea superior e pudenda."
+   "A": "**Glútea inferior.**\n- Menos frequente.",
+   "C": "**Inferior e sacral lateral.**\n- Menos frequentes.",
+   "D": "**Sacral lateral.**\n- Menos frequente que a pudenda."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0130": {
-  "conceito": "Quando a fratura diafisária do fêmur vem acompanhada de uma fratura IPSILATERAL DO COLO FEMORAL, a fixação com HASTE INTRAMEDULAR (que exigiria abordar a região trocantérica/cervical para o ponto de entrada) pode interferir tecnicamente com a fixação do colo, dificultando a colocação de parafusos ou de um dispositivo cefálico de forma independente e anatômica. Por isso, nessa combinação específica, a fixação da diáfise com PLACA por via ABERTA é preferida, deixando a região do colo femoral livre para ser fixada de forma independente e anatômica (tipicamente com parafusos canulados), sem que os dois implantes disputem o mesmo espaço ósseo proximal.",
-  "correta": "D. A fratura ipsilateral do colo do fêmur é a situação que melhor indica a fixação da diáfise com placa por via aberta, permitindo que o colo seja fixado de forma independente sem interferência entre os implantes.",
+  "conceito": "### Diáfise do fêmur + colo ipsilateral\n- Associação em ==3 a 10%==, alta energia (painel).\n- Fratura do colo: ==basocervical==, ==vertical== e pouco desviada; passa despercebida em até 30%.\n- Rotina: ==TC fina do colo== em toda fratura diafisária de alta energia e RX intraoperatório.\n\n### Tratamento\n| Estratégia | Detalhe |\n|---|---|\n| prioridade | ==colo== (risco de necrose/pseudartrose) |\n| opções | parafusos ou DHS no colo + haste retrógrada; ou haste cefalomedular única |\n\n### Por que placa\n- Com ==colo ipsilateral==, a haste anterógrada disputa o espaço proximal com a fixação do colo e pode desviá-lo.\n- Opções: ==parafusos/DHS no colo + placa na diáfise== (ou haste retrógrada).\n- Haste retrógrada é alternativa comum; a banca indicou a placa.\n\n> **Na prova:** placa aberta na diáfise = ==colo ipsilateral==",
+  "correta": "**Colo ipsilateral.**\n- Libera o fêmur proximal para o colo.\n- Fixações independentes.",
   "incorretas": {
-   "A": "O joelho flutuante (fraturas ipsilaterais de fêmur e tíbia) é, ao contrário, uma indicação clássica de haste intramedular retrógrada, que facilita a fixação simultânea de ambos os segmentos.",
-   "B": "A fratura toracolombar instável é uma lesão associada que pode influenciar o posicionamento cirúrgico, mas não é a indicação específica descrita para a fixação com placa da diáfise femoral.",
-   "C": "A fratura ipsilateral do acetábulo não gera o mesmo conflito técnico direto com o ponto de entrada da haste que a fratura do colo femoral gera."
+   "A": "**Joelho flutuante.**\n- Hastes (retrógrada + tíbia).",
+   "B": "**Coluna instável.**\n- Não muda o implante do fêmur.",
+   "C": "**Acetábulo.**\n- Haste retrógrada preferida."
   },
-  "geradoEm": "2026-09-15",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0131": {
-  "conceito": "O mecanismo clássico da LUXAÇÃO ANTERIOR traumática do quadril envolve o membro inferior posicionado em ROTAÇÃO LATERAL (externa) e ABDUÇÃO forçadas, o oposto do mecanismo da luxação posterior (adução e rotação interna/flexão). Esse posicionamento em abdução e rotação externa faz o trocanter maior (ou o colo femoral) impactar contra a borda acetabular ou o rebordo pélvico, alavancando a cabeça femoral para fora do acetábulo em direção anterior.",
-  "correta": "D. O mecanismo da luxação anterior traumática do quadril envolve o membro em rotação lateral (externa) e abdução, opondo-se ao padrão de adução e rotação interna da luxação posterior.",
+  "conceito": "### Luxação anterior do quadril\n- 10 a 15% das luxações; mecanismo: ==abdução + rotação externa== forçadas (± extensão).\n- O ==iliopsoas== (tendão sobre a cápsula anterior) funciona como ==fulcro==: a cabeça rompe a cápsula inferomedial.\n\n### Tipos\n| Tipo | Posição da cabeça | Posição do membro |\n|---|---|---|\n| inferior (obturatória) | forame obturatório | flexão, abdução, RE |\n| superior (púbica/ilíaca) | ramo púbico | extensão, abdução, RE |\n\n### Complicações\n- Lesão da ==artéria e veia femorais== (superior), impacção/fratura condral da cabeça (pior prognóstico de artrose), necrose menor que na posterior.\n\n> **Na prova:** luxação anterior = ==rotação lateral + abdução==",
+  "correta": "**Rotação lateral e abdução.**\n- Oposto da posterior.\n- Iliopsoas como fulcro.",
   "incorretas": {
-   "A": "Rotação medial e adução descrevem o padrão típico da luxação POSTERIOR, não da anterior.",
-   "B": "Rotação lateral com adução mistura elementos de mecanismos opostos; a luxação anterior clássica combina rotação externa com abdução, não adução.",
-   "C": "Rotação medial e abdução também mistura elementos que não correspondem ao padrão consistente descrito para a luxação anterior."
+   "A": "**RM e adução.**\n- Mecanismo da posterior.",
+   "B": "**Adução.**\n- Não luxa anteriormente.",
+   "C": "**Rotação medial.**\n- Posterior."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0132": {
-  "conceito": "Duas classificações convivem nas fraturas da clavícula, e é preciso saber traduzir uma na outra.\n\nA de **Craig** (que incorpora a de Neer para o terço distal) divide o osso em três grupos: I, terço médio; II, terço distal (com os tipos I a V de Neer); III, terço medial.\n\nA de **Robinson**, mais recente e desenhada para ter valor prognóstico, divide por quintos: tipo 1, quinto medial; tipo 2, os três quintos médios; tipo 3, quinto lateral. E acrescenta um segundo nível: a letra A designa as fraturas sem desvio (ou com desvio menor que 100% do diâmetro) e a letra B as desviadas; e o algarismo final detalha a morfologia — nos tipos 1 e 3, o subgrupo 1 é extra-articular e o subgrupo 2 é intra-articular; no tipo 2, o subgrupo 1 é simples ou em cunha e o 2 é cominuído ou segmentar.\n\nAssim, **Robinson 3A2** significa: quinto lateral (3), sem desvio (A), intra-articular (2) — isto é, uma fratura do terço distal que entra na articulação acromioclavicular sem desvio. E essa é exatamente a definição do **tipo III de Neer** (grupo II tipo III de Craig): fratura intra-articular da acromioclavicular, sem lesão dos ligamentos coracoclaviculares e sem desvio.\n\nO tratamento é conservador, com tipoia e mobilização precoce, mas exige acompanhamento, porque essas fraturas podem evoluir com artrose acromioclavicular tardia e dor localizada, tratada, quando sintomática, por ressecção da clavícula distal.\n\nVale reforçar o contraste com o tipo II de Neer, o instável, em que o traço é medial aos coracoclaviculares e o fragmento proximal é puxado para cima pelo esternocleidomastóideo — esse, sim, com alta taxa de pseudartrose e indicação cirúrgica frequente.",
-  "correta": "C. Robinson 3A2 (quinto lateral (3), sem desvio (A), intra-articular (2)) corresponde ao TIPO III DE NEER: fratura intra-articular da acromioclavicular, sem lesão ligamentar e sem desvio.",
+  "conceito": "### Robinson × Neer/Craig\n| Robinson | Local | Subtipo |\n|---|---|---|\n| 1 | medial | A sem desvio (1 extra, 2 intra-articular), B desviada |\n| 2 | diáfise | A alinhada (1 sem desvio, 2 angulada), B desviada (1 simples, 2 cominuta) |\n| ==3== | ==lateral== | ==A sem desvio==: ==A1 extra-articular==, ==A2 intra-articular== (AC) |\n| | | B desviada (B1 extra, B2 intra) |\n\n- ==3A2== = lateral, sem desvio, ==intra-articular (AC)== = ==Neer III==.\n\n> **Na prova:** Robinson 3A2 = ==Neer III==",
+  "correta": "**Neer III.**\n- Lateral intra-articular.\n- Sem desvio.",
   "incorretas": {
-   "A": "O tipo I de Neer é a fratura do terço distal com traço LATERAL aos ligamentos coracoclaviculares, que permanecem íntegros, é estável e extra-articular, correspondendo a um 3A1 de Robinson, e não a 3A2.",
-   "B": "O tipo II de Craig designa o GRUPO do terço distal como um todo, e não um subtipo comparável. Além disso, o tipo II de Neer é a fratura INSTÁVEL, com traço medial aos coracoclaviculares, o que corresponderia a um 3B de Robinson, por definição desviada.",
-   "D": "A classificação de Craig não tem 'tipo IV' como categoria autônoma nesse sentido: os tipos I a V pertencem ao GRUPO II (terço distal), e o tipo IV é a pseudoluxação da criança, com descolamento periosteal, que não corresponde a 3A2."
+   "A": "**Neer I.**\n- Extra-articular, lateral aos CC (3A1).",
+   "B": "**Craig II.**\n- Desviada/instável.",
+   "D": "**Craig IV.**\n- Criança, tubo periosteal."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0133": {
-  "conceito": "Duas estruturas radiográficas de referência na avaliação do acetábulo, a **linha ilioisquiática** (que representa o contorno da coluna posterior) e a **gota de lágrima de Köhler** (uma sombra composta que inclui, entre suas contribuições, a superfície quadrilátera, a parede medial do acetábulo), mantêm normalmente uma relação espacial constante entre si.\n\nQuando essa relação se rompe (ou seja, quando a distância entre as duas linhas aumenta de forma anormal, ou quando a gota de lágrima se desloca em relação à linha ilioisquiática), o achado sugere que a **superfície quadrilátera** se deslocou medialmente em relação ao restante da coluna posterior, um sinal indireto de fratura ou de protrusão dessa parede medial.\n\nEsse achado é particularmente valioso porque a superfície quadrilátera é uma estrutura fina e de difícil visualização direta na radiografia simples: reconhecer sua fratura através da dissociação dessas duas linhas de referência, em vez de tentar visualizá-la diretamente, é uma das habilidades mais úteis na leitura da radiografia AP de bacia num paciente com fratura acetabular.\n\nVale situar essas duas linhas entre as demais referências radiográficas do acetábulo, que juntas formam as seis linhas clássicas de Judet-Letournel: a linha ilioisquiática e a linha ilioentopélvica (coluna posterior e anterior, respectivamente), a linha do teto acetabular, as linhas das paredes anterior e posterior, e a própria gota de lágrima, cada uma correspondendo a uma estrutura anatômica específica cuja descontinuidade aponta para um padrão de fratura diferente.",
-  "correta": "D. A dissociação entre a linha ilioisquiática e a gota de lágrima de Köhler sugere deslocamento medial da superfície quadrilátera, um sinal indireto de fratura dessa parede medial do acetábulo.",
+  "conceito": "### Linhas radiográficas do acetábulo (AP)\n| Linha | Estrutura |\n|---|---|\n| iliopectínea | ==coluna anterior== |\n| ==ilioisquiática== | ==coluna posterior== |\n| ==gota de lágrima (Köhler)== | parede medial/==superfície quadrilátera== + fossa |\n| teto | área de carga |\n| parede anterior e posterior | bordas |\n\n### Interpretação\n- Linha ilioisquiática e gota ==separadas== = medialização da ==superfície quadrilátera== (fratura).\n- Normalmente a gota fica junto/sobreposta à ilioisquiática.\n\n> **Na prova:** dissociação ilioisquiática-gota = fratura da ==superfície quadrilátera==",
+  "correta": "**Superfície quadrilátera.**\n- Gota se afasta da coluna posterior.\n- Medialização da lâmina.",
   "incorretas": {
-   "A": "A fratura da parede posterior tem sinais radiográficos próprios (descontinuidade do contorno da parede posterior), não a dissociação entre essas duas linhas específicas.",
-   "B": "A fratura transversa infratectal tem seus próprios critérios de reconhecimento (relacionados à localização do traço abaixo do teto), não a dissociação ilioisquiática-gota de lágrima.",
-   "C": "A fratura transversa transtectal também tem seus próprios critérios de localização do traço em relação ao teto acetabular, distintos do sinal descrito nesta questão."
+   "A": "**Parede posterior.**\n- Contorno posterior interrompido.",
+   "B": "**Transversa infratectal.**\n- Interrompe ambas as linhas.",
+   "C": "**Transversa transtectal.**\n- Envolve o teto."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0134": {
-  "conceito": "A luxação acromioclavicular **tipo III de Rockwood** (definida pela ruptura completa dos ligamentos coracoclaviculares, com aumento do espaço coracoclavicular maior que 100% em relação ao lado normal) tem um diagnóstico diferencial importante que pode confundir mesmo um examinador experiente: a **fratura da base do processo coracoide**.\n\nNesse cenário, o que parece radiograficamente uma luxação tipo III completa (com a clavícula visivelmente mais alta em relação ao coracoide) na verdade não representa ruptura ligamentar nenhuma: os ligamentos coracoclaviculares permanecem intactos, ainda inseridos no processo coracoide, mas o próprio coracoide está fraturado na sua base e se desloca junto com o fragmento ósseo, criando a falsa impressão radiográfica de uma luxação completa.\n\nReconhecer essa possibilidade é clinicamente relevante porque muda a conduta: em vez de reconstruir ligamentos que na verdade estão íntegros, o tratamento deve se voltar para a fratura do coracoide propriamente dita, e é por isso que a incidência de Stryker, discutida em outras questões deste acervo, é útil nesse contexto específico, ao expor bem a base do coracoide.",
-  "correta": "D. A integridade dos ligamentos coracoclaviculares, apesar do quadro radiográfico de luxação tipo III, ocorre quando há fratura da base do processo coracoide, os ligamentos permanecem inseridos no fragmento fraturado, e não estão realmente rotos.",
+  "conceito": "### Incidências na acromioclavicular\n| Incidência | Técnica | Avalia |\n|---|---|---|\n| ==Zanca== | AP com raio ==10 a 15° cefálico==, metade da voltagem | articulação AC sem sobreposição |\n| axilar | | ==deslocamento posterior== (tipo IV) |\n| ==Stryker (notch)== | mão sobre a cabeça, raio 10° cefálico | ==base do coracoide== (fratura) e lesão de Hill-Sachs |\n| estresse (peso) | comparativa | pouco usada hoje |\n\n### Rockwood\n| Tipo | Achado |\n|---|---|\n| I-II | entorse, CC íntegros |\n| III | CC rompidos, desvio 25 a 100% |\n| IV | clavícula posterior (trapézio) |\n| V | desvio 100 a 300% |\n| VI | inferior ao coracoide |\n\n- Coracoclaviculares íntegros com clavícula alta: suspeitar de ==fratura da base do coracoide==.\n\n> **Na prova:** AC tipo III com CC íntegros = fratura do ==processo coracoide==",
+  "correta": "**Processo coracoide.**\n- Base fraturada sobe com a clavícula.\n- CC permanecem íntegros.",
   "incorretas": {
-   "A": "A fratura do acrômio não é a condição associada à integridade dos ligamentos coracoclaviculares nesse contexto específico, é a fratura da base do coracoide, ponto de inserção desses ligamentos.",
-   "B": "A fratura do corpo da clavícula é uma lesão distinta, sem a relação específica com a integridade dos ligamentos coracoclaviculares descrita nesta questão.",
-   "C": "A fratura da cavidade glenoide também não tem a relação anatômica direta com os ligamentos coracoclaviculares, que se inserem no processo coracoide, não na glenoide."
+   "A": "**Acrômio.**\n- Não explica o desvio.",
+   "B": "**Corpo da clavícula.**\n- Fratura, não luxação.",
+   "C": "**Glenoide.**\n- Sem relação."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0135": {
-  "conceito": "A banda de tensão para a fratura transversa do olécrano é a aplicação didática de um princípio da AO: converter a força de **tração** exercida pelo tríceps sobre o fragmento proximal em força de **compressão** no foco de fratura.\n\nPara que isso funcione, três condições precisam ser satisfeitas: o traço deve ser transverso ou oblíquo curto (a banda de tensão é contraindicada em fraturas cominutivas ou com envolvimento do coronoide, que exigem placa), a cortical anterior deve estar íntegra para servir de apoio, e a montagem deve ser tecnicamente correta.\n\nOs dois fios de Kirschner são introduzidos a partir da ponta do olécrano, paralelos entre si, dirigidos anteriormente de modo a engatar a cortical anterior da ulna logo distal ao processo coronoide; esse engate é o que impede a migração dos fios, complicação frequente da técnica quando ele não é conseguido.\n\nO erro de **direção** tem consequências distintas conforme o sentido do desvio, e é isso que a questão cobra:\n- Se os fios forem dirigidos muito **anteriormente**, atravessando além da cortical, o risco é neurovascular: o nervo interósseo anterior e a artéria interóssea anterior correm no compartimento profundo, sobre a membrana interóssea\n- Se forem dirigidos muito **lateralmente** (isto é, para o lado radial), eles se aproximam da articulação radioulnar proximal e da tuberosidade bicipital do rádio, produzindo impacto mecânico que bloqueia a pronossupinação, a queixa mais incapacitante do cotovelo operado, e que exige reoperação para retirar o material\n\nSome-se a isso a complicação mais comum de todas nessa técnica, que é a **proeminência sintomática do material** sob a pele fina da região posterior do olécrano: até metade dos pacientes refere incômodo, e a retirada do material é uma das reoperações mais frequentes de toda a traumatologia.",
-  "correta": "C. Fios de Kirschner posicionados muito lateralmente aproximam-se da articulação radioulnar proximal e produzem IMPACTO CONTRA A TUBEROSIDADE BICIPITAL do rádio, bloqueando mecanicamente a pronossupinação.",
+  "conceito": "### Banda de tensão no olécrano\n- Converte a ==tração do tríceps== em ==compressão== na superfície articular (em flexão).\n- Indicação: fratura ==transversa simples== (não cominuta, não oblíqua).\n\n### Erros técnicos\n| Erro | Consequência |\n|---|---|\n| fios intramedulares só | migração, soltura |\n| ==fios transcorticais longos/laterais== atravessando a cortical anterior | ==impacto na tuberosidade bicipital/rádio== (perda de rotação), lesão do interósseo anterior se muito longos |\n| cerclagem sem apoio | perda de redução |\n| uso em cominuta | colapso, incongruência |\n\n- Cominuta/oblíqua/Monteggia: ==placa==.\n\n> **Na prova:** fios muito laterais = impacto na ==tuberosidade bicipital==",
+  "correta": "**Impacto na tuberosidade bicipital.**\n- Fios saem perto do rádio proximal.\n- Bloqueiam a pronossupinação.",
   "incorretas": {
-   "A": "A perda de fixação decorre de outros erros: fios que não engatam a cortical anterior da ulna (o que permite a sua migração proximal), fio de cerclagem frouxo ou mal posicionado, e sobretudo a aplicação da técnica em um traço para o qual ela não serve, fratura cominutiva ou com envolvimento do coronoide, que exige placa.",
-   "B": "O atraso de consolidação não é consequência da orientação lateral dos fios. A banda de tensão bem executada gera compressão dinâmica no foco e favorece a consolidação; o que a compromete é a cominuição não reconhecida, que impede o apoio cortical anterior e transforma a compressão em encurtamento.",
-   "D": "A lesão do nervo interósseo anterior é o risco do desvio ANTERIOR excessivo, quando os fios ultrapassam a cortical e alcançam o compartimento profundo do antebraço. É uma complicação real, mas de outro erro de direção."
+   "A": "**Perda da fixação.**\n- Relaciona-se a fios intramedulares.",
+   "B": "**Atraso da consolidação.**\n- Não é o problema da posição lateral.",
+   "D": "**Interósseo anterior.**\n- Risco com fios longos anteriores; a banca indicou o impacto."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0136": {
-  "conceito": "A **síndrome naviculocapitato** (também chamada de síndrome escafocapitato, ou fratura de Fenton) é uma variante rara e grave das lesões perilunares, e o seu reconhecimento é quase inteiramente radiográfico.\n\nEla consiste na fratura simultânea do **escafoide** e do **capitato**, com um achado patognomônico: o fragmento proximal do capitato fica **rodado**, em geral 90 ou até 180 graus, com a sua superfície articular voltada para o lado errado.\n\nO mecanismo é o da hiperextensão forçada com desvio radial e alta energia: o capitato é fraturado no seu colo pelo choque contra a borda dorsal do rádio, e o fragmento proximal (que é intra-articular, sem inserções ligamentares próprias e portanto livre) gira sobre si mesmo quando o punho retorna à posição neutra, ficando preso na nova posição.\n\nTrata-se, conceitualmente, de uma variante da instabilidade perilunar de Mayfield que ocorre **transóssea** em vez de puramente ligamentar, e por isso é frequentemente descrita junto com as luxações trans-escafo-perilunares.\n\nDuas consequências práticas:\n- **Diagnóstica**: a rotação do fragmento é sutil na radiografia simples e a lesão passa despercebida em boa parte dos casos, o que torna a tomografia obrigatória diante de qualquer fratura do capitato ou de trauma de alta energia do punho\n- **Terapêutica**: o tratamento é cirúrgico, com redução aberta do fragmento rodado (desrodando-o para a posição anatômica) e fixação com parafuso sem cabeça, além da fixação do escafoide, e o prognóstico é reservado, com taxas altas de osteonecrose do fragmento proximal do capitato, que é avascular, e de artrose mediocárpica\n\nA alternativa que fala em luxação axial descreve outra entidade: as lesões por esmagamento que separam o carpo em colunas longitudinais.",
-  "correta": "C. A síndrome naviculocapitato caracteriza-se pela fratura do CAPITATO com ROTAÇÃO do fragmento proximal (em geral 90 a 180 graus), associada à fratura do escafoide, uma variante transóssea da instabilidade perilunar.",
+  "conceito": "### Síndrome escafocapitato (Fenton)\n- Variante de lesão perilunar do arco maior: fratura do ==escafoide== + fratura do ==colo do capitato==.\n- O fragmento proximal do capitato ==roda 90 a 180°== (superfície articular virada).\n- Mecanismo: hiperextensão com o capitato batendo na borda dorsal do rádio.\n- Tratamento: ==redução aberta== e fixação de ambos (risco de necrose e pseudartrose do capitato).\n\n### Arcos de Johnson\n| Arco | Trajeto |\n|---|---|\n| menor | ligamentar ao redor do semilunar (perilunar) |\n| maior | ósseo: estiloide, escafoide, capitato, hamato, piramidal |\n\n> **Na prova:** naviculocapitato = ==fratura do capitato com rotação do fragmento proximal==",
+  "correta": "**Capitato com rotação do proximal.**\n- Fragmento gira até 180°.\n- Associado ao escafoide.",
   "incorretas": {
-   "A": "A ruptura isolada do ligamento escafocapitato não define a síndrome. O que a caracteriza é a fratura de DOIS ossos, com a marca específica do fragmento proximal do capitato rodado sobre o próprio eixo.",
-   "B": "A luxação mediocárpica incluindo o escafoide descreve as luxações perilunares em geral, que são lesões predominantemente LIGAMENTARES. Na síndrome naviculocapitato, o que define é a fratura do capitato com rotação do fragmento.",
-   "D": "A luxação axial do carpo entre as colunas central e medial é outra entidade: uma lesão por esmagamento de alta energia que divide o carpo longitudinalmente em colunas, com frequência associada a lesões neurovasculares e de partes moles."
+   "A": "**Ligamento escafocapitato.**\n- É fratura, não lesão ligamentar.",
+   "B": "**Mediocárpica.**\n- Descreve perilunar.",
+   "D": "**Luxação axial.**\n- Outra lesão de alta energia."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0137": {
