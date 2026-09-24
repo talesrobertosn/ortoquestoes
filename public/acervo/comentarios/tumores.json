@@ -264,129 +264,120 @@
   "conferido": false
  },
  "tumores-0025": {
-  "conceito": "A síndrome de Maffucci é a **encondromatose múltipla** associada a **hemangiomas** de partes moles, nódulos azulados, compressíveis, na pele e no subcutâneo, que na radiografia podem mostrar **flebólitos**, pequenas calcificações arredondadas que são a assinatura da lesão vascular.\n\nComo a doença de Ollier, ela decorre de mutação **pós-zigótica** em mosaico dos genes **IDH1/IDH2**: não é hereditária e o acometimento é assimétrico.\n\nO que a distingue de Ollier é a gravidade do risco oncológico. A **taxa de degeneração sarcomatosa é alta**, as séries falam em torno de **30% a 50%**, e algumas descrevem risco que se aproxima de 100% ao longo de uma vida inteira, contra 25% a 30% na doença de Ollier.\n\nE o risco não se limita ao condrossarcoma: esses pacientes desenvolvem também angiossarcoma, tumores cerebrais (glioma), tumores ovarianos e neoplasias pancreáticas e hepatobiliares.\n\nConsequência prática: o seguimento é vitalício e não se restringe ao esqueleto; dor nova ou crescimento em lesão previamente estável deve ser investigado com ressonância, e não observado.",
-  "correta": "Hemangiomas, com alta taxa de degeneração sarcomatosa.",
+  "conceito": "### Doença de Ollier (encondromatose múltipla)\n- Encondromas em vários ossos: tubulares das mãos e pés, metáfises dos ossos longos.\n- ==Não hereditária==: mutação ==pós-zigótica em mosaico== (IDH1 ou IDH2).\n- Distribuição ==assimétrica, predominantemente unilateral==.\n\n### Consequências\n| Problema | Comentário |\n|---|---|\n| deformidade angular | fises acometidas |\n| discrepância de membros | encurtamento do lado afetado |\n| ==condrossarcoma== | risco de ==25 a 30%== ao longo da vida |\n\n### Ollier × Maffucci × exostoses\n| Doença | Achado | Herança | Malignização |\n|---|---|---|---|\n| Ollier | encondromas | esporádica (mosaico) | 25 a 30% |\n| ==Maffucci== | encondromas + ==hemangiomas== | esporádica | maior; também gliomas e adenocarcinomas |\n| exostoses múltiplas | osteocondromas | ==dominante== (EXT1, EXT2) | 1 a 5% |\n\n### Maffucci\n- Encondromatose + ==hemangiomas== de partes moles (nódulos azulados; ==flebólitos== no RX).\n- Malignização ==alta==: 30 a 50% ou mais (condrossarcoma, angiossarcoma).\n- Outras neoplasias: glioma, ovário, pâncreas, vias biliares.\n- Seguimento vitalício; dor nova ou crescimento = RM.\n\n> **Na prova:** Maffucci = encondromas + ==hemangiomas==, ==alto risco== de sarcoma.",
+  "correta": "**Hemangiomas, alta degeneração.**\n- 30 a 50% ou mais de malignização.\n- Pior que Ollier; outras neoplasias viscerais.",
   "incorretas": {
-   "A": "Acerta os hemangiomas, mas subestima gravemente o risco, é justamente a taxa alta de malignização que faz da Maffucci uma síndrome mais temida que a doença de Ollier.",
-   "C": "Hipoplasia renal não faz parte da síndrome.",
-   "D": "Erra a associação, ainda que acerte o risco elevado."
+   "A": "**Risco subestimado.**\n- A taxa alta é a marca da síndrome.",
+   "C": "**Associação errada.**\n- Rim não faz parte.",
+   "D": "**Associação errada.**\n- Risco certo."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0026": {
-  "conceito": "O sarcoma de Ewing é um tumor de **pequenas células redondas e azuis**, enquanto o osteossarcoma convencional apresenta células malignas produtoras de osteoide, frequentemente pleomórficas ou fusiformes. Ambos predominam nas duas primeiras décadas, com grande sobreposição etária.",
-  "correta": "**C.** A característica histológica inequívoca é o padrão de células **arredondadas**; o gabarito associa-o a crianças de maior idade.",
+  "conceito": "### Ewing × osteossarcoma\n| Aspecto | Ewing | Osteossarcoma |\n|---|---|---|\n| histologia | ==pequenas células redondas e azuis== | células pleomórficas/fusiformes ==produzindo osteoide== |\n| marcador | CD99, t(11;22) EWSR1-FLI1 | osteoide |\n| local | ==diáfise==, pelve, costelas | metáfise (fêmur distal, tíbia proximal) |\n| RX | casca de cebola, grande massa de partes moles | raios de sol, triângulo de Codman |\n| sistêmico | febre, VHS alta (simula osteomielite) | fosfatase alcalina, DHL |\n| radioterapia | sensível | resistente |\n| idade | 5 a 20 anos | 10 a 25 anos |\n\n### Tratamento do Ewing\n- QT neoadjuvante, controle local (cirurgia e/ou radioterapia), QT adjuvante.\n\n> **Na prova:** Ewing = ==células redondas== (veja o alerta sobre a idade).",
+  "correta": "**Arredondado, crianças de maior idade (gabarito).**\n- A marca inequívoca é a célula redonda pequena e azul.\n- A faixa etária é contestável (veja o alerta).",
   "incorretas": {
-   "A": "O padrão fusiforme não descreve o aspecto clássico do Ewing; células pequenas e redondas são o achado característico.",
-   "B": "Também erra a morfologia ao indicar células fusiformes.",
-   "D": "Acerta o padrão arredondado, mas diverge da faixa etária adotada pelo gabarito."
+   "A": "**Morfologia errada.**\n- Ewing não é fusiforme.",
+   "B": "**Morfologia errada.**\n- Idem.",
+   "D": "**Idade diverge do gabarito.**\n- Morfologia certa."
   },
   "alerta": "A parte etária é pouco discriminativa e pode ser contestada: Ewing e osteossarcoma têm pico na adolescência, e diferentes séries mostram medianas próximas. O item deveria cobrar principalmente a histologia de pequenas células redondas.",
   "referencias": [
    "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
    "WHO Classification of Tumours: Ewing sarcoma. https://tumourclassification.iarc.who.int/"
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "baixo",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "tumores-0027": {
-  "conceito": "A biópsia é o passo em que mais se estraga o tratamento de um tumor ósseo, os trabalhos de **Mankin** mostraram erro de diagnóstico, de conduta ou complicação em algo entre **15% e 20%** das biópsias feitas fora do centro que trataria o paciente, e prejuízo ao resultado final em cerca de **8%**.\n\nUm dos princípios é o **controle da hemostasia**, porque o **hematoma contamina**: ele se difunde pelos planos, alcança compartimentos que o tumor não havia atingido e transforma o que seria uma ressecção ampla num campo alargado, às vezes inviabilizando a preservação do membro.\n\nDaí a técnica: janela cortical pequena, **oval ou redonda** (nunca retangular, cujos cantos concentram estresse e favorecem fratura patológica), e o orifício **preenchido com metilmetacrilato** ao final, que veda a saída de sangue do canal medular e ainda devolve alguma resistência mecânica.\n\nOs demais princípios do mesmo conjunto:\n\n- Incisão **longitudinal**, alinhada ao trajeto da futura ressecção.\n- Trajeto pelo menor número de compartimentos, jamais entre compartimentos ou por intervalo neurovascular.\n- Dreno, se usado, saindo **em linha** com a incisão e próximo a ela, porque o trajeto do dreno também será ressecado.\n- A biópsia feita, de preferência, pela mesma equipe que fará o tratamento definitivo.",
-  "correta": "Preenchido com metilmetacrilato.",
+  "conceito": "### Princípios da biópsia (Mankin)\n- Biópsia fora do centro de referência: erro ou complicação em 15 a 20%; prejuízo ao resultado em cerca de 8%.\n\n| Princípio | Motivo |\n|---|---|\n| incisão ==longitudinal==, no trajeto da futura ressecção | o trajeto será ressecado |\n| menor número de compartimentos; evitar intervalos e feixes | não contaminar |\n| janela cortical ==oval ou redonda== | cantos retangulares concentram estresse |\n| ==preencher o orifício com metilmetacrilato== | ==veda o sangramento medular==; evita hematoma |\n| hemostasia rigorosa, dreno em linha com a incisão | hematoma dissemina células |\n| mesma equipe do tratamento definitivo | |\n| mandar material para cultura também | infecção simula tumor |\n\n### Biópsia percutânea\n- Agulha guiada por TC: primeira escolha em muitos centros.\n\n> **Na prova:** orifício da biópsia óssea = ==preencher com metilmetacrilato==.",
+  "correta": "**Metilmetacrilato.**\n- Veda o canal medular e evita hematoma.\n- Devolve alguma resistência mecânica.",
   "incorretas": {
-   "A": "Deixar aberto é exatamente o que se quer evitar: o canal medular sangra e o hematoma dissemina células pelos planos.",
-   "B": "Recolocar a tampa de cortical não veda o sangramento medular, o osso esponjoso subjacente continua drenando.",
-   "C": "Enxerto ósseo não sela a cavidade, é permeável ao sangue, e ainda introduz material que dificulta a leitura da imagem no seguimento."
+   "A": "**Sangra.**\n- Hematoma dissemina células.",
+   "B": "**Não veda.**\n- Esponjoso continua drenando.",
+   "C": "**Permeável.**\n- Não sela e atrapalha a imagem."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0028": {
-  "conceito": "A doença de Paget óssea é um distúrbio do remodelamento em que a reabsorção osteoclástica desorganizada é seguida por formação óssea igualmente desordenada, produzindo osso em mosaico, expandido, hipervascular e mecanicamente frágil.\n\nO perfil epidemiológico é bem definido: descendentes **caucasianos**, sobretudo de origem anglo-saxônica e do norte da Europa, com prevalência alta na Inglaterra, na Austrália e na Nova Zelândia, e **rara** em **orientais** e em africanos; e idade **acima de 55 anos**, com prevalência que sobe progressivamente com a década.\n\nAs três fases se sucedem: **lítica** (osteoporose circunscrita do crânio, cunha de avanço em V nos ossos longos), **mista** e **blástica** (osso denso, expandido, com cortical espessada e trabeculado grosseiro).\n\nLaboratório clássico: **fosfatase alcalina** muito elevada com cálcio e fósforo normais.\n\nAs implicações ortopédicas são três:\n\n- Deformidade em arco dos ossos longos (tíbia em sabre, coxa vara).\n- Fraturas por insuficiência transversais na convexidade (fraturas em giz).\n- A temida transformação em osteossarcoma pagético, menos de **1%** dos casos, porém o subtipo de pior prognóstico de todos, discutido em outra questão deste acervo.",
-  "correta": "Caucasianos com idade superior a 55 anos.",
+  "conceito": "### Doença de Paget\n- Reabsorção osteoclástica desorganizada + formação desordenada: osso em ==mosaico==, expandido, hipervascular, frágil.\n- ==Caucasianos== (anglo-saxões, norte-europeus), ==acima de 55 anos==; rara em orientais e africanos.\n- Genética: SQSTM1 em formas familiares; hipótese viral (paramixovírus).\n\n### Fases\n| Fase | Achado |\n|---|---|\n| lítica | osteoporose circunscrita do crânio; cunha em V (folha de grama) nos ossos longos |\n| mista | |\n| blástica | osso denso, expandido, cortical espessa |\n\n### Laboratório e clínica\n- ==Fosfatase alcalina muito elevada==, cálcio e fósforo normais.\n- Tíbia em sabre, coxa vara, fraturas em giz, surdez, compressão radicular, insuficiência cardíaca de alto débito.\n- Osteossarcoma pagético (< 1%): o de pior prognóstico.\n\n### Tratamento\n- ==Bisfosfonato== (zoledronato): dor, antes de cirurgia eletiva.\n\n> **Na prova:** Paget = ==caucasianos acima de 55 anos==.",
+  "correta": "**Caucasianos acima de 55 anos.**\n- Anglo-saxões e norte-europeus.\n- Prevalência cresce com a idade.",
   "incorretas": {
-   "A": "Erra etnia e idade.",
-   "B": "A doença é rara em orientais, é um dos poucos distúrbios ósseos com contraste étnico tão marcado.",
-   "C": "A etnia está certa, mas abaixo dos 55 anos a doença é incomum; a prevalência cresce com a idade."
+   "A": "**Duplamente errada.**\n- Etnia e idade.",
+   "B": "**Rara em orientais.**\n- Contraste étnico marcado.",
+   "C": "**Idade errada.**\n- Incomum abaixo de 55."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0029": {
-  "conceito": "O **sarcoma epitelioide** é o sarcoma de partes moles mais comum da **mão** e do punho, e é também um dos mais traiçoeiros de toda a ortopedia, por três motivos que vale conhecer.\n\n**Primeiro**, a apresentação **engana**: aparece como nódulo pequeno, firme, indolor, no subcutâneo da palma, dos dedos ou do antebraço de um adulto jovem, frequentemente **ulcerado**, e é confundido com granuloma, ferida infectada, doença de Dupuytren ou cisto, não é raro ser tratado por meses como infecção.\n\n**Segundo**, ele se **dissemina ao longo de estruturas lineares**, subindo pelas bainhas tendíneas, fáscias e nervos, o que produz nódulos satélites em cordão e explica a taxa altíssima de recidiva local após ressecção econômica.\n\n**Terceiro**, é um dos poucos sarcomas com **metástase linfonodal** frequente, o que obriga a examinar as cadeias epitrocleares e axilares e a considerar biópsia de linfonodo sentinela.\n\nNa imuno-histoquímica marca citoqueratina e EMA (daí o nome epitelioide) e tem perda característica da expressão de **INI1**.\n\nRegra prática que decorre de tudo isso: nódulo firme na mão que não some, que ulcera ou que recidiva após excisão exige biópsia, não nova excisão.",
-  "correta": "Sarcoma epitelioide.",
+  "conceito": "### Sarcoma epitelioide\n- Sarcoma de partes moles ==mais comum da mão== e punho; adulto jovem.\n\n| Traço | Consequência |\n|---|---|\n| nódulo firme, indolor, às vezes ==ulcerado== | confundido com granuloma, infecção, Dupuytren, cisto |\n| ==dissemina ao longo de bainhas, fáscias e nervos== | nódulos em cordão, recidiva alta |\n| ==metástase linfonodal== frequente | examinar epitrocleares e axilares; linfonodo sentinela |\n| citoqueratina e EMA +, ==perda de INI1== | imuno-histoquímica |\n\n### Sarcomas com metástase linfonodal (SCARE)\n- Sinovial, Células claras, Angiossarcoma, Rabdomiossarcoma, Epitelioide.\n\n### Regra\n- Nódulo na mão que não some, ulcera ou recidiva = ==biópsia==, não nova excisão.\n\n> **Na prova:** sarcoma de partes moles mais comum da mão = ==sarcoma epitelioide==.",
+  "correta": "**Sarcoma epitelioide.**\n- Nódulo ulcerado que engana.\n- Dissemina por bainhas e dá metástase linfonodal.",
   "incorretas": {
-   "A": "O lipossarcoma é o sarcoma de partes moles mais comum do ADULTO em geral, mas prefere coxa e retroperitônio, a mão é sede rara.",
-   "B": "O fibrossarcoma ocorre na mão, mas é bem menos frequente e hoje é diagnóstico de exclusão, depois que boa parte dos casos antigos foi reclassificada.",
-   "C": "O rabdomiossarcoma é o sarcoma de partes moles mais comum da CRIANÇA, com predileção por cabeça, pescoço e trato geniturinário."
+   "A": "**Coxa e retroperitônio.**\n- Mais comum no adulto em geral.",
+   "B": "**Menos frequente.**\n- Diagnóstico de exclusão hoje.",
+   "C": "**Criança.**\n- Cabeça, pescoço, geniturinário."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 28"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "tumores-0030": {
-  "conceito": "A **escoliose** é a manifestação esquelética mais frequente da neurofibromatose tipo 1, presente em algo entre **10% e 30%** dos pacientes, e ela se divide em dois tipos com condutas opostas.\n\n**Não distrófica**: indistinguível de uma escoliose idiopática, de raio longo, com muitas vértebras e transição suave; trata-se como idiopática, com órtese e artrodese conforme a magnitude.\n\n**Distrófica**: a que tem cara própria, curva de **raio curto**, com apenas quatro a seis vértebras, angulada de forma aguda, tipicamente alta (cervicotorácica ou torácica alta), acompanhada dos sinais distróficos que dão o diagnóstico na radiografia: costelas afiladas em fita, escalope dos corpos vertebrais, alargamento do forame de conjugação, displasia e afilamento dos pedículos, e deslocamento do ápice.\n\nEla progride rápido, responde mal ao colete, tem risco alto de déficit neurológico e de pseudartrose após artrodese, e por isso costuma exigir artrodese circunferencial e precoce.\n\nUma armadilha importante: uma curva não distrófica pode se **modular** e virar distrófica ao longo do crescimento, de modo que essas crianças precisam de radiografia seriada mesmo quando a curva parece banal.",
-  "correta": "Escoliose.",
+  "conceito": "### Critérios da NF1 (dois ou mais)\n| Critério | Detalhe |\n|---|---|\n| manchas café-com-leite | ≥ 6 (> 5 mm pré-puberal, > 15 mm pós) |\n| neurofibromas | ≥ 2, ou 1 plexiforme |\n| ==sardas axilares ou inguinais== | ==sinal de Crowe== |\n| nódulos de Lisch | ≥ 2 hamartomas da íris |\n| glioma óptico | |\n| lesão óssea | displasia da asa do esfenoide, afilamento cortical ± pseudartrose |\n| parente de 1º grau | ou variante NF1 |\n\n### NF1 na ortopedia\n| Problema | Comentário |\n|---|---|\n| escoliose distrófica | curva curta, angulada, progressiva |\n| pseudartrose congênita da tíbia | arqueamento anterolateral |\n| hipertrofia de membro | |\n| TMBNP | 8 a 13% ao longo da vida (dor e crescimento de plexiforme) |\n\n### Escoliose na NF1 (10 a 30%)\n| Tipo | Características | Conduta |\n|---|---|---|\n| não distrófica | como idiopática | colete, artrodese conforme a curva |\n| ==distrófica== | ==raio curto== (4 a 6 vértebras), alta, angulada; costelas em fita, escalope, forame alargado | artrodese ==precoce e circunferencial== |\n\n- Curva não distrófica pode ==modular== para distrófica: RX seriado.\n\n> **Na prova:** manifestação esquelética mais comum da NF1 = ==escoliose==",
+  "correta": "**Escoliose.**\n- Presente em 10 a 30% dos pacientes.\n- A distrófica progride rápido e exige artrodese precoce.",
   "incorretas": {
-   "B": "A sinostose radioulnar é uma falha de segmentação do membro superior, sem relação com a neurofibromatose.",
-   "C": "A pseudartrose congênita da tíbia é altamente ASSOCIADA à NF1 (cerca de metade dos casos ocorre em pacientes com a doença), mas é bem menos frequente que a escoliose entre os pacientes com NF1.",
-   "D": "A pseudartrose congênita da clavícula é entidade própria, quase sempre à direita, sem relação estabelecida com a neurofibromatose."
+   "B": "**Sem relação.**\n- Falha de segmentação.",
+   "C": "**Associada, menos frequente.**\n- Metade das pseudartroses tem NF1, não o contrário.",
+   "D": "**Sem relação.**\n- Entidade própria, à direita."
   },
-  "geradoEm": "2026-09-07",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "tumores-0031": {
-  "conceito": "Quatro síndromes com nome próprio se cruzam nesse território, e vale separá-las de vez.\n\n**Mazabraud**: displasia fibrosa (em geral **poliostótica**) associada a **mixomas intramusculares**, tipicamente na musculatura próxima aos ossos acometidos, os mixomas são benignos, podem ser múltiplos e recidivam se ressecados de forma incompleta.\n\n**McCune-Albright**: displasia fibrosa poliostótica somada a manchas café-com-leite de bordas irregulares (em costa de Maine, que se distinguem das bordas lisas em costa da Califórnia da neurofibromatose) e a **endocrinopatias**, sobretudo puberdade precoce, a base é a mesma mutação em mosaico do GNAS, e o predomínio é feminino.\n\n**Jaffe-Campanacci**: fibromas não ossificantes múltiplos com manchas café-com-leite, retardo mental, hipogonadismo e alterações oculares e cardiovasculares.\n\n**Li-Fraumeni**: síndrome hereditária de mutação germinativa do **TP53**, com predisposição a sarcomas (osteossarcoma incluído), câncer de mama precoce, tumores cerebrais e adrenocortical, nada a ver com displasia fibrosa, mas cai como distrator justamente por ser síndrome de predisposição a tumor ósseo.",
-  "correta": "Síndrome de Mazabraud.",
+  "conceito": "### Displasia fibrosa\n- Mutação ativadora do ==GNAS== (Gs-alfa): osteoblastos imaturos, osso fibroso (woven) que não amadurece.\n- Monostótica (mais comum), poliostótica, McCune-Albright (manchas café-com-leite de bordas irregulares, puberdade precoce), Mazabraud (mixomas).\n- RX: ==vidro fosco==, cortical afilada, cajado de pastor no fêmur.\n\n### Fratura patológica\n| Aspecto | Comportamento |\n|---|---|\n| velocidade | ==rápida== (tecido celular e vascular) |\n| calo | ==pobre==, de osso displásico |\n| resultado | refratura, deformidade progressiva (coxa vara) |\n\n### Tratamento\n- Curetagem e enxerto falham (enxerto vira displasia).\n- ==Haste intramedular== profilática; evitar placas (parafusos soltam).\n- Bisfosfonato para dor.\n\n### Distribuição\n| Forma | Frequência | Sexo |\n|---|---|---|\n| ==monostótica== | ==70 a 80%== | ==igual== |\n| poliostótica | minoria | igual |\n| McCune-Albright | rara | ==feminino== |\n\n### Síndromes com nome\n| Síndrome | Componentes |\n|---|---|\n| ==Mazabraud== | ==displasia fibrosa (poliostótica) + mixomas intramusculares== |\n| McCune-Albright | displasia poliostótica + café-com-leite (costa do Maine) + endocrinopatia (puberdade precoce) |\n| Jaffe-Campanacci | fibromas ==não ossificantes== múltiplos + café-com-leite |\n| Li-Fraumeni | TP53 germinativo: sarcomas, mama, cérebro, adrenal |\n\n> **Na prova:** displasia fibrosa + mixomas = ==Mazabraud==",
+  "correta": "**Mazabraud.**\n- Displasia fibrosa com mixomas intramusculares.\n- Mixomas benignos, perto dos ossos acometidos.",
   "incorretas": {
-   "B": "Li-Fraumeni é síndrome hereditária de predisposição a câncer por mutação do TP53, sem relação com mixomas nem com displasia fibrosa.",
-   "C": "McCune-Albright associa displasia fibrosa poliostótica a manchas café-com-leite e endocrinopatias, não a mixomas.",
-   "D": "Jaffe-Campanacci associa fibromas NÃO OSSIFICANTES múltiplos a manchas café-com-leite e outras alterações sistêmicas."
+   "B": "**TP53.**\n- Predisposição a câncer.",
+   "C": "**Café-com-leite e endócrino.**\n- Não mixomas.",
+   "D": "**Fibromas não ossificantes.**\n- Outra lesão."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 25"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "tumores-0032": {
-  "conceito": "A pergunta tem três filtros embutidos e cada um elimina uma alternativa.\n\n\"**Primária**\" exclui a **metástase**, que é de longe a lesão maligna mais comum do osso, mas nasce em outro órgão.\n\n\"**Não hematológica**\" exclui o **mieloma múltiplo**, que é a neoplasia maligna primária mais frequente do osso quando se contam as hematológicas, e o linfoma.\n\nSobrando os tumores primários de origem mesenquimal, o mais frequente é o **osteossarcoma**, com incidência bimodal: um pico grande na segunda década, ligado ao estirão de crescimento (daí a localização nas metáfises de maior crescimento, fêmur distal, tíbia proximal, úmero proximal), e um segundo pico, bem menor, após os 60 anos, aí quase sempre secundário a doença de Paget ou a radiação prévia.\n\nO condrossarcoma vem em segundo lugar entre os primários não hematológicos e é o mais comum quando se olha apenas o **adulto** acima de 40 anos, detalhe que vale guardar, porque muda a resposta conforme o recorte etário do enunciado.",
-  "correta": "Osteossarcoma.",
+  "conceito": "### Malignos do osso: frequência\n| Recorte | Mais comum |\n|---|---|\n| todas as lesões malignas do osso | ==metástase== |\n| primário (incluindo hematológicos) | mieloma múltiplo |\n| ==primário não hematológico== | ==osteossarcoma== |\n| primário no adulto > 40 anos | condrossarcoma |\n| criança (2ª lugar) | Ewing |\n\n### Osteossarcoma\n- Pico ==bimodal==: 2ª década (estirão; fêmur distal, tíbia proximal, úmero proximal) e > 60 anos (Paget, radiação).\n- Fatores: Li-Fraumeni (TP53), retinoblastoma hereditário (RB1), radiação, Paget.\n\n> **Na prova:** maligno primário não hematológico mais comum = ==osteossarcoma==.",
+  "correta": "**Osteossarcoma.**\n- Primário, mesenquimal, mais comum.\n- Pico na 2ª década e outro após 60 anos.",
   "incorretas": {
-   "B": "A metástase óssea é a lesão maligna mais comum do esqueleto, mas não é PRIMÁRIA do osso.",
-   "C": "O condrossarcoma é o segundo entre os primários não hematológicos, e o primeiro se o recorte for o adulto acima de 40 anos.",
-   "D": "O mieloma múltiplo é a neoplasia primária maligna mais comum do osso, porém é HEMATOLÓGICA, e o enunciado a exclui."
+   "B": "**Não é primária.**\n- A mais comum no esqueleto, mas vem de fora.",
+   "C": "**Segundo lugar.**\n- Primeiro só no adulto > 40.",
+   "D": "**Hematológico.**\n- Excluído pelo enunciado."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 27"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "tumores-0033": {
-  "conceito": "O fibroma condromixoide é o mais **raro** dos tumores cartilaginosos benignos (menos de **1%** dos tumores ósseos), e tem um endereço preferencial muito cobrado: a **metáfise proximal da tíbia**, seguida do fêmur distal, dos ossos do pé e da pelve.\n\nOcorre em adolescentes e adultos jovens, entre a segunda e a terceira décadas.\n\nNa radiografia é uma lesão lítica **excêntrica**, metafisária, alongada no eixo do osso, com bordas nítidas e escleróticas, aspecto lobulado ou trabeculado e insuflação da cortical, e, ao contrário do que o nome cartilaginoso sugere, geralmente **não** tem calcificações de matriz visíveis, o que é um bom sinal diferencial.\n\nA histologia dá o nome: lóbulos com zonas condroides, mixoides e fibrosas, com células estreladas ou fusiformes e periferia mais celular.\n\nO tratamento é a curetagem ampla com enxerto, e a recidiva chega a **20% a 25%** quando a curetagem é econômica, o que justifica fresa de alta rotação e adjuvante local.",
-  "correta": "Extremidade proximal da tíbia.",
+  "conceito": "### Fibroma condromixoide\n- O ==mais raro== dos tumores cartilaginosos benignos (< 1%).\n- 2ª e 3ª décadas.\n- Local: ==metáfise proximal da tíbia== (mais comum), fêmur distal, pé, pelve.\n\n### Imagem\n- Lítica ==excêntrica==, metafisária, alongada no eixo, borda esclerótica, lobulada, insufla a cortical.\n- Geralmente ==sem calcificação de matriz==.\n\n### Histologia\n- Lóbulos condroides, mixoides e fibrosos; células estreladas; periferia mais celular.\n\n### Tratamento\n- Curetagem ampla + enxerto; recidiva de 20 a 25% se econômica: fresa e adjuvante.\n\n### Diferenciais metafisários excêntricos\n| Lesão | Pista |\n|---|---|\n| fibroma não ossificante | cortical, criança, assintomático |\n| cisto ósseo aneurismático | níveis líquidos |\n| TGC | epifisário, adulto |\n\n> **Na prova:** fibroma condromixoide = ==tíbia proximal==.",
+  "correta": "**Tíbia proximal.**\n- Metáfise, excêntrico, sem calcificação de matriz.",
   "incorretas": {
-   "A": "A extremidade proximal do fêmur não é sede característica.",
-   "B": "O fêmur distal é a segunda sede em frequência, mas fica atrás da tíbia proximal.",
-   "D": "A tíbia distal não é sítio preferencial."
+   "A": "**Não é sede típica.**\n- Fêmur proximal.",
+   "B": "**Segundo lugar.**\n- Fêmur distal.",
+   "D": "**Não preferencial.**\n- Tíbia distal."
   },
-  "geradoEm": "2026-09-07",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 26"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "tumores-0034": {
   "conceito": "O cordoma é o tumor **maligno** primário mais comum do sacro, origina-se de restos da **notocorda** e por isso ocupa a **linha média**: cerca de metade dos casos é sacrococcígea, uma parte é esfeno-occipital e o restante surge na coluna móvel.\n\nÉ doença de adulto de meia-idade e idoso (quinta à sétima décadas), de crescimento **lento** e insidioso.\n\nEssa lentidão explica a manifestação inicial: **dor lombar baixa** ou dor sacrococcígea vaga, inespecífica, que costuma ser atribuída a lombalgia mecânica durante meses ou anos. O atraso entre o primeiro sintoma e o diagnóstico é longo, e é ele que permite ao tumor alcançar grandes dimensões antes de ser visto.\n\nSó depois vêm os sintomas de massa: constipação e alteração do hábito intestinal, retenção urinária, ciatalgia por compressão radicular e massa palpável, que muitas vezes só é encontrada no **toque retal**. Esse exame é obrigatório diante de dor sacrococcígea persistente e costuma ser esquecido.\n\nO tratamento é a ressecção em bloco com margem ampla, difícil pela topografia e pelo custo neurológico. O prognóstico depende quase inteiramente do controle local: recidiva é a regra quando a margem é comprometida.",
