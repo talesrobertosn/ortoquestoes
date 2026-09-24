@@ -2598,100 +2598,100 @@
   "conferido": false
  },
  "pediatria-0186": {
-  "conceito": "A displasia do desenvolvimento do quadril é multifatorial. Os principais fatores de risco são sexo feminino, apresentação pélvica, história familiar de primeiro grau, primogenitura e restrição intrauterina, como oligodrâmnio. A doença também é mais frequente em determinadas populações caucasianas e indígenas e menos comum em algumas populações africanas. O quadril esquerdo é mais acometido. O exame neonatal utiliza Barlow e Ortolani; depois dos primeiros meses, limitação da abdução ganha maior importância. Ultrassonografia é o método de escolha no lactente pequeno, enquanto a radiografia se torna mais útil após ossificação progressiva da cabeça femoral. Reconhecer fatores de risco permite selecionar lactentes para rastreamento por imagem mesmo quando o exame físico é normal.",
-  "correta": "A alternativa A está correta porque a pergunta solicita o fator que não aumenta o risco. O sexo masculino não é fator de risco; existe claro predomínio feminino, atribuído em parte à maior frouxidão ligamentar e sensibilidade hormonal.",
+  "conceito": "### Embriologia do quadril\n- ==Massa mesenquimal única e contínua== forma o esboço femoral e o acetabular (4ª a 6ª semana).\n- A ==interzona== se cavita (7ª semana) e origina a articulação: cartilagens, sinovial, ligamento redondo, pulvinar, lábio.\n- Articulação formada por volta da 11ª semana.\n\n### Por que importa na DDQ\n- Cabeça e acetábulo ==dependem um do outro==: a cabeça centrada é o estímulo para o acetábulo se aprofundar.\n- Redução concêntrica precoce permite remodelação acetabular.\n\n### Fatores de risco da DDQ\n- Primogênita, feminino, pélvica, história familiar, oligoidrâmnio, torcicolo, metatarso aduto.\n\n### Lado\n- ==Esquerdo== em cerca de 60% (posição fetal: quadril esquerdo contra o sacro materno); bilateral 20%; direito 20%.\n\n### Fatores de risco da DDQ\n| Fator | Comentário |\n|---|---|\n| ==apresentação pélvica== | o maior |\n| ==sexo feminino== | 4 a 8:1 (relaxina, frouxidão) |\n| primogênita | útero menos complacente |\n| história familiar | |\n| oligoidrâmnio | pouco espaço |\n| raça branca, povos que enfaixam | |\n| deformidades de \"pouco espaço\" | torcicolo, metatarso aduto, joelho luxado |\n\n> **Na prova:** NÃO é fator de risco = ==sexo masculino==",
+  "correta": "**Sexo masculino.**\n- O feminino é que predomina.\n- Relaxina e frouxidão ligamentar.",
   "incorretas": {
-   "B": "Raça branca apresenta incidência maior que algumas populações africanas e integra descrições epidemiológicas clássicas de maior risco.",
-   "C": "Oligodrâmnio aumenta restrição mecânica intrauterina e está associado à DDQ.",
-   "D": "Apresentação pélvica é um dos fatores de risco mais importantes e frequentemente justifica ultrassonografia de rastreamento."
+   "B": "**É fator.**\n- Brancos mais que negros.",
+   "C": "**É fator.**\n- Menos espaço intrauterino.",
+   "D": "**É fator.**\n- O mais forte."
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0188": {
-  "conceito": "A **fratura metafisária em alça de balde** (\"bucket-handle fracture\"), uma variante da clássica lesão metafisária (CML) em que o fragmento periférico assume um contorno curvo, semelhante a uma alça, decorre de forças de cisalhamento e torção aplicadas ao membro (como ao puxar ou sacudir a criança). É um achado radiográfico de alta especificidade para **maus tratos** infantis, praticamente patognomônico de trauma não acidental, especialmente em lactentes.",
-  "correta": "B. A imagem corresponde à fratura metafisária em alça de balde, associada a maus tratos.",
+  "conceito": "### Tipos de maus-tratos\n| Tipo | Frequência |\n|---|---|\n| ==negligência== | ==a mais comum== |\n| abuso físico | o mais visto pelo ortopedista |\n| emocional | frequente, coexistente |\n| sexual | subnotificado |\n\n### Fraturas suspeitas de abuso físico\n| Alta especificidade | Moderada |\n|---|---|\n| ==lesão metafisária clássica== (canto, alça de balde) | fraturas múltiplas em estágios diferentes |\n| ==costelas posteriores== | fratura de crânio complexa |\n| escápula, processos espinhosos, esterno | vértebras, dedos em não deambulante |\n\n### Alertas\n- Fratura de fêmur em criança que não anda.\n- História incompatível, atraso na busca de atendimento.\n- Conduta: ==inventário esquelético== (< 2 anos), fundo de olho, notificação obrigatória.\n\n### Lesão metafisária clássica (fratura do canto)\n- Fratura ==planar na zona de ossificação provisória==, por forças de tração e torção (sacudir o bebê).\n- Aspecto de ==canto== ou ==alça de balde== conforme a incidência.\n- Fêmur distal, tíbia proximal e distal, úmero proximal.\n- Em lactentes, ==altamente específica== de abuso.\n\n### Menos específicas\n- Diafisárias (espiral ou transversa) são comuns e só sugerem abuso pelo contexto (criança que não anda).\n\n> **Na prova:** fratura de extremidade mais sugestiva de abuso = ==fratura do canto (metafisária clássica)==",
+  "correta": "**Alça de balde, maus-tratos.**\n- Lesão metafisária clássica vista de frente em ângulo.\n- Mesma lesão que a fratura do canto.",
   "incorretas": {
-   "A": "A fratura metafisária \"do canto\" descreve um fragmento mais angular e reto, diferente do contorno curvo em alça de balde mostrado especificamente nesta imagem (ainda que ambas as variantes compartilhem o mesmo mecanismo e a mesma associação com maus tratos).",
-   "C": "As linhas escleróticas, associadas à osteogênese imperfeita, representam um padrão radiográfico diferente (bandas de densidade alterada ao longo da metáfise, refletindo o uso de bifosfonatos, por exemplo), não o fragmento curvo agudo mostrado na imagem.",
-   "D": "A reação periosteal, associada à osteomielite, mostra formação de osso novo ao longo da diáfise/metáfise, um achado radiográfico distinto do fragmento ósseo destacado mostrado na imagem."
+   "A": "**Mesma lesão, outra incidência.**\n- A imagem mostra alça de balde.",
+   "C": "**Não é o padrão.**\n- Linhas escleróticas são de bisfosfonato.",
+   "D": "**Não é o padrão.**\n- Reação periosteal difusa."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0189": {
-  "conceito": "O sobrecrescimento terminal é complicação exclusiva da criança amputada e não tem relação com a placa de crescimento: o osso cresce por aposição na extremidade seccionada, formando uma espícula que perfura a pele por dentro. A ordem de frequência é úmero, fíbula, tíbia e fêmur, daí a resposta reunir os dois primeiros. Epifisiodese não resolve, porque o crescimento não vem da fise, e a ressecção repetida apenas repete o problema; o tratamento eficaz é capear a extremidade com enxerto osteocondral autólogo.",
-  "correta": "Úmero e fíbula, os dois ossos de maior incidência.",
+  "conceito": "### Sobrecrescimento ósseo no coto (overgrowth)\n- Complicação mais comum da amputação ==transdiafisária em crianças==.\n- Aposição óssea terminal perfura pele e partes moles (bursa, dor, úlcera).\n- Não depende da fise: é crescimento aposicional.\n\n| Osso | Frequência |\n|---|---|\n| ==úmero== | o mais comum |\n| ==fíbula== | segundo |\n| tíbia | terceiro |\n| rádio e ulna, fêmur | menos |\n\n### Prevenção e tratamento\n- Preferir ==desarticulação== quando possível (preserva a fise e evita o problema).\n- Técnicas de capa: cobrir o coto com cartilagem/osso (Marquardt, epífise do hálux ou fíbula).\n- Revisão (ressecção) frequente, até várias vezes.\n\n> **Na prova:** sobrecrescimento no coto = ==úmero e fíbula==.",
+  "correta": "**Úmero e fíbula.**\n- Ossos mais afetados pelo crescimento aposicional.\n- Desarticular evita o problema.",
   "incorretas": {
-   "A": "O rádio não figura entre os mais acometidos, e a tíbia vem depois da fíbula.",
-   "B": "A fíbula está certa, mas o rádio não é dos principais.",
-   "C": "O úmero está certo, mas a fíbula precede a tíbia na ordem de frequência."
+   "A": "**Menos comum.**\n- Rádio e tíbia.",
+   "B": "**Rádio menos.**\n- Fíbula certa.",
+   "C": "**Tíbia menos.**\n- Úmero certo."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 14"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0190": {
-  "conceito": "A cirurgia de **Woodward** é uma das técnicas clássicas para correção da deformidade de Sprengel (elevação congênita da escápula). Seu princípio é destacar a **origem** da musculatura paraescapular (trapézio e romboides) dos processos espinhosos vertebrais e **reinserir essa origem em uma posição mais distal (caudal)** na coluna, isso permite que a escápula, tracionada pela musculatura reposicionada, desça para uma posição mais próxima da normal, ao mesmo tempo em que preserva a continuidade e a função muscular (diferente de técnicas mais antigas que ressecavam parte do músculo).\n\nA vantagem da técnica de Woodward sobre abordagens anteriores (como a de Green, que também remove a porção supraescapular da escápula) é justamente preservar melhor a função muscular, já que a musculatura permanece íntegra, apenas reinserida em outro nível.",
-  "correta": "A. A técnica de Woodward transfere a origem da musculatura paraescapular para uma posição mais distal na coluna vertebral.",
+  "conceito": "### Sprengel: movimento do ombro\n- Escápula ==pequena (hipoplásica)==, alta e rodada, presa pelo omovertebral ou fibrose.\n- A ==glenoumeral é normal==; perde-se o ==ritmo escapulotorácico==.\n- Resultado: ==abdução limitada== (a escápula não roda).\n\n### Achados associados\n- Klippel-Feil, escoliose, costelas anômalas, diastematomielia, rim.\n\n### Cirurgia\n| Técnica | Princípio |\n|---|---|\n| Woodward | desinserção da origem medial (trapézio, romboides) e reinserção mais baixa |\n| Green | desinserção na escápula e descida |\n| + | ressecção do omovertebral (extraperiosteal), osteotomia da clavícula |\n\n- Idade 3 a 8 anos; ganho funcional maior na abdução.\n\n> **Na prova:** Sprengel = ==glenoumeral normal com escápula hipoplásica==.",
+  "correta": "**Origem para distal.**\n- Woodward desinsere a origem vertebral dos músculos (trapézio, romboides).\n- Reinsere mais baixo, descendo a escápula.",
   "incorretas": {
-   "B": "É a origem da musculatura (não a inserção) que é transferida na técnica de Woodward.",
-   "C": "A transferência é feita para uma posição mais distal (caudal), não proximal, esse é o princípio que permite a descida da escápula.",
-   "D": "É a origem, não a inserção, que é manipulada nessa técnica, e a direção da transferência é distal, não proximal."
+   "B": "**Inserção.**\n- Green mexe na escápula.",
+   "C": "**Direção errada.**\n- Para distal.",
+   "D": "**Duplamente errada.**\n- Inserção e proximal."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0191": {
-  "conceito": "A articulação do tornozelo suporta, na fase de apoio da marcha, cerca de CINCO VEZES o peso corporal, e o número sobe muito mais na corrida e no salto. A razão é o braço de alavanca: o tríceps sural precisa gerar uma força muito maior que o peso do corpo para equilibrar o momento do antepé em relação ao eixo do tornozelo, e essa força se soma à carga axial na articulação. Dois dados completam o quadro e explicam por que o tornozelo é tão menos artrósico que joelho e quadril: sua área de contato é pequena (algo em torno de 350 mm²), o que significa pressões altas, mas a cartilagem do tálus é mais fina, mais uniforme e mais resistente à carga cíclica. Por isso a artrose primária do tornozelo é rara, a esmagadora maioria é PÓS-TRAUMÁTICA.",
-  "correta": "Cinco vezes o peso corporal.",
+  "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n### Carga no quadril\n| Situação | Força articular / abdutora |\n|---|---|\n| apoio bipodal | cerca de 1/3 do peso por quadril |\n| apoio monopodal (parado) | cerca de 2,5 a 3 vezes o peso |\n| marcha | 3 a 5 vezes |\n| ==corrida== | ==até cerca de 10 vezes== |\n\n- Braço de alavanca: peso corporal (longo) × abdutores (curto): por isso os abdutores precisam de muita força.\n- Bengala do lado ==oposto== reduz a carga.\n\n### Tornozelo\n- Na marcha, a tibiotársica suporta até ==cerca de 5 vezes o peso== (tríceps sural no apoio terminal).\n- Área de contato pequena: pressão alta.\n\n> **Na prova:** carga no tornozelo na marcha = ==cerca de 5 vezes o peso==",
+  "correta": "**Cinco vezes o peso.**\n- Pico no apoio terminal com o tríceps sural.\n- Área pequena, pressão alta.",
   "incorretas": {
-   "A": "O peso corporal simples é bem menos do que a articulação recebe durante o apoio.",
-   "B": "Metade do peso corporal não corresponde nem ao apoio bipodal estático.",
-   "C": "Duas vezes o peso corporal é a ordem de grandeza citada para o QUADRIL na marcha, não para o tornozelo."
+   "A": "**Subestima.**\n- Só apoio estático.",
+   "B": "**Subestima.**\n- Muito baixo.",
+   "C": "**Subestima.**\n- Abaixo do pico."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 10"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0192": {
-  "conceito": "Quando a doença de Legg-Calvé-Perthes se apresenta de forma **bilateral em crianças muito jovens**, é fundamental considerar diagnósticos diferenciais que mimetizam radiograficamente uma necrose avascular bilateral simétrica da cabeça femoral, e o principal deles é a **displasia epifisária de Meyer**, uma condição benigna e autolimitada, caracterizada por atraso e irregularidade na ossificação das epífises femorais proximais, tipicamente bilateral e simétrica, que costuma se resolver espontaneamente com o crescimento, sem a evolução deformante característica do Perthes verdadeiro.\n\nDiferenciar Perthes bilateral verdadeiro da displasia de Meyer é importante porque o prognóstico e a necessidade de intervenção são bem distintos, a displasia de Meyer, em geral, não exige tratamento cirúrgico.",
-  "correta": "B. A displasia epifisária de Meyer é o principal diagnóstico diferencial da doença de Perthes bilateral em crianças de baixa idade.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Epidemiologia do Perthes\n| Aspecto | Dado |\n|---|---|\n| sexo | ==masculino== (4 a 5:1) |\n| idade | 4 a 8 anos |\n| lado | ==unilateral== (bilateral 10 a 15%, ==assimétrico no tempo==) |\n| perfil | baixa estatura, idade óssea atrasada, hiperatividade, tabagismo passivo |\n\n- Bilateral simétrico e simultâneo: pensar em ==displasia epifisária múltipla== ou hipotireoidismo.\n\n### Displasia de Meyer (dysplasia epiphysealis capitis femoris)\n- ==< 4 anos==, frequentemente ==bilateral==, ==assintomática==.\n- Núcleo da cabeça ==atrasado, irregular e granular==, sem fases de Perthes.\n- ==Regride sem sequelas==: não tratar como Perthes.\n\n### Outros diferenciais do Perthes bilateral\n- Displasia epifisária múltipla, hipotireoidismo, anemia falciforme, Gaucher.\n\n> **Na prova:** Perthes bilateral em criança pequena = pensar em ==displasia de Meyer==",
+  "correta": "**Displasia de Meyer.**\n- Menor de 4 anos, bilateral, assintomática.\n- Resolve sozinha.",
   "incorretas": {
-   "A": "A artrogripose se manifesta com contraturas articulares múltiplas desde o nascimento, não com um quadro radiográfico de necrose bilateral da cabeça femoral.",
-   "C": "A síndrome unha-patela cursa com alterações características de unhas, patela e cotovelos, não com um quadro mimetizando Perthes bilateral.",
-   "D": "O raquitismo hipofosfatêmico causa deformidades em varo dos membros inferiores e alterações metafisárias difusas, não um quadro focal de necrose epifisária bilateral do quadril."
+   "A": "**Contraturas múltiplas.**\n- Outro quadro.",
+   "C": "**Patela e unhas.**\n- Cornos ilíacos.",
+   "D": "**Metáfises.**\n- Alargamento fisário."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0193": {
-  "conceito": "A osteotomia de **Dwyer**, uma osteotomia de fechamento em cunha lateral do calcâneo, é utilizada no tratamento do pé cavo varo para corrigir o varismo do retropé, removendo uma cunha óssea lateral e fechando-a para realinhar o eixo do calcâneo, exatamente o procedimento representado na imagem, com a linha de osteotomia calcânea e a correção do varismo indicada pelas setas.",
-  "correta": "C. A osteotomia representada é a de Dwyer.",
+  "conceito": "### Pé cavo-varo na criança\n- Investigar ==causa neurológica== (Charcot-Marie-Tooth, medula presa, Friedreich): RM de coluna, ENMG.\n- ==Teste de Coleman== (bloco): retropé flexível se corrige quando o 1º raio fica solto.\n\n### Osteotomias\n| Técnica | Local | Corrige |\n|---|---|---|\n| ==Dwyer== | ==calcâneo== (cunha lateral de fechamento ou deslizamento) | ==varo do retropé== rígido |\n| Cole | cunha dorsal no mediopé (cuneiformes/navicular) | cavo anterior |\n| Japas | osteotomia em V do mediopé | cavo |\n| osteotomia do 1º MT | dorsiflexora | 1º raio plantarfletido |\n| Steindler | ==liberação da fáscia plantar== | cavo (partes moles) |\n\n> **Na prova:** osteotomia do calcâneo para varo do retropé = ==Dwyer==.",
+  "correta": "**Dwyer.**\n- Osteotomia do calcâneo para o varo rígido.\n- Cunha lateral ou deslizamento lateral.",
   "incorretas": {
-   "A": "A osteotomia de **Cole** é uma osteotomia do médio-pé (dorsal, de fechamento em cunha), destinada a corrigir o cavo, uma localização e um objetivo diferentes da osteotomia calcânea mostrada.",
-   "B": "A osteotomia de **Japas** é uma osteotomia em V do médio-tarso, também voltada à correção do cavo no médio-pé, não do varismo do retropé mostrado.",
-   "D": "O procedimento de **Steindler** é uma liberação de partes moles (fasciotomia plantar), não uma osteotomia óssea como a mostrada na imagem."
+   "A": "**Mediopé.**\n- Cunha dorsal para o cavo.",
+   "B": "**Mediopé.**\n- Osteotomia em V.",
+   "D": "**Partes moles.**\n- Fasciotomia plantar."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0194": {
-  "conceito": "A doença de **Sinding-Larsen-Johansson** é uma apofisite de tração no polo inferior da patela, no ponto de origem do tendão patelar, análoga à doença de Osgood-Schlatter (que ocorre na tuberosidade tibial, na inserção distal do mesmo tendão). Ocorre por **tração repetitiva** na junção osteotendínea durante atividades esportivas de impacto em crianças em crescimento, e não por um mecanismo isquêmico (como nas osteocondroses articulares clássicas), refletindo-se radiograficamente por fragmentação e irregularidade do polo inferior da patela, como mostrado na imagem.",
-  "correta": "D. A imagem refere-se à doença de Sinding-Larsen-Johansson, que ocorre devido à tração repetitiva na junção do tendão com o osso.",
+  "conceito": "### Apofisites do joelho\n| Doença | Local | Idade | Perfil |\n|---|---|---|---|\n| ==Sinding-Larsen-Johansson== | ==polo inferior da patela== | ==10 a 14 anos== | ==meninos== ativos (saltos) |\n| Osgood-Schlatter | tuberosidade anterior da tíbia | 10 a 15 anos | meninos esportistas; bilateral em 25% |\n| joelho do saltador (adulto) | tendão patelar proximal | adulto | tendinopatia |\n\n### Sinding-Larsen-Johansson\n- Tração do tendão patelar sobre o polo inferior imaturo: fragmentação, calcificação.\n- Autolimitada: repouso relativo, gelo, alongamento do quadríceps.\n- Diferencial: fratura-avulsão em manga (sleeve fracture) da patela, que é aguda e cirúrgica.\n\n### Mecanismo\n- ==Tração repetitiva== do tendão patelar na junção osso-tendão imatura (apofisite), não isquemia.\n\n### Van Neck\n- Osteocondrose da ==sincondrose isquiopúbica== (4 a 10 anos); simula tumor ou fratura.\n\n> **Na prova:** Sinding-Larsen-Johansson = ==tração repetitiva== no polo inferior da patela.",
+  "correta": "**Sinding-Larsen-Johansson por tração.**\n- Polo inferior da patela.\n- Apofisite de tração, não isquemia.",
   "incorretas": {
-   "A": "A doença de **Van Neck** acomete a sincondrose isquiopúbica, uma localização anatômica completamente diferente do polo inferior da patela mostrado, e também não é causada por mecanismo isquêmico.",
-   "B": "Embora o mecanismo de tração esteja correto, a doença de Van Neck não corresponde à localização patelar mostrada na imagem.",
-   "C": "A localização (patela) está correta, mas o mecanismo da doença de Sinding-Larsen-Johansson é de tração repetitiva, não isquêmico."
+   "A": "**Local errado.**\n- Van Neck é isquiopúbica.",
+   "B": "**Local errado.**\n- Idem.",
+   "C": "**Mecanismo errado.**\n- Tração, não isquemia."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0195": {
