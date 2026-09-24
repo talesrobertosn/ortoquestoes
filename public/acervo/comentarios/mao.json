@@ -6512,128 +6512,111 @@
   "conferido": false
  },
  "mao-0562": {
-  "conceito": "Na mão torta radial falta o rádio e falta também o nervo radial abaixo do cotovelo, ele costuma terminar acima da articulação. Quem ocupa o lugar dele é o nervo mediano, que corre superficial e desviado para o lado radial do punho, muitas vezes logo sob a pele e assumindo a sensibilidade do dorso radial. Na centralização, o cirurgião trabalha exatamente nesse lado, e é o mediano que está no caminho.",
-  "correta": "O mediano, porque na deficiência radial ele corre superficial e deslocado para o lado radial do punho, bem no campo da centralização.",
+  "conceito": "### Classificação de Heikel (displasia radial)\n| Heikel | Bayne | Descrição |\n|---|---|---|\n| A | I | rádio distal curto (fise distal atrasada) |\n| B | II | rádio hipoplásico em miniatura |\n| C | III | ausência parcial (remanescente proximal) |\n| ==D== | ==IV== | ==ausência total do rádio==: ==a mais comum== |\n\n### Mão torta radial (tipo D)\n- Mão desviada radialmente sobre a ponta da ulna.\n- Ulna curta e encurvada; polegar ausente ou hipoplásico.\n- Bilateral em cerca de metade.\n\n### Investigação obrigatória\n| Síndrome | Exame |\n|---|---|\n| Fanconi | teste de quebra cromossômica (diepoxibutano) |\n| Holt-Oram | ecocardiograma |\n| TAR | hemograma (plaquetas) |\n| VACTERL | coluna, rim, coração, ânus, traqueia/esôfago |\n\n### Remanescente no tipo C\n- Pode funcionar como **banda** que agrava a curvatura da ulna com o crescimento.\n\n### Tratamento da mão torta radial\n| Fase | Medida |\n|---|---|\n| recém-nascido | alongamento e órteses seriadas |\n| 6 a 12 meses | distração de partes moles (fixador) se rígida |\n| ~1 ano | centralização ou radialização do carpo sobre a ulna |\n| depois | policização se polegar ausente |\n\n### Contraindicações à correção\n| Situação | Motivo |\n|---|---|\n| ==cotovelo rígido em extensão== | ==o desvio radial é o que leva a mão à boca== |\n| adulto adaptado com boa função | ganho funcional pequeno |\n| doença sistêmica grave (Fanconi, TAR) | risco clínico |\n\n### Partes moles na mão torta radial\n| Estrutura | Estado |\n|---|---|\n| ==tríceps== | ==geralmente normal== (doador para flexão do cotovelo) |\n| bíceps, braquiorradial, pronador redondo | ausentes ou anômalos |\n| extensores radiais do carpo | ausentes ou fundidos |\n| artéria radial | ausente frequentemente |\n| nervo radial superficial | ausente; mediano assume a sensibilidade radial |\n\n### Risco na centralização\n- O ==mediano== corre superficial e desviado para o lado radial do punho, assumindo a sensibilidade radial.\n- O radial costuma terminar acima do cotovelo.\n\n> **Na prova:** nervo em risco na centralização = ==mediano==",
+  "correta": "**Mediano.**\n- Superficial e radial no punho, no campo da centralização.\n- Substitui o radial ausente na sensibilidade.",
   "incorretas": {
-   "B": "O musculocutâneo é nervo do braço e não chega à área operada no punho.",
-   "C": "O nervo radial em geral não existe abaixo do cotovelo nessa malformação, não há como ser o mais exposto justamente por já não estar lá.",
-   "D": "O interósseo posterior é ramo do radial e falta pelo mesmo motivo."
+   "B": "**Braço.**\n- Não chega ao punho.",
+   "C": "**Ausente.**\n- Termina acima do cotovelo.",
+   "D": "**Ausente.**\n- Ramo do radial."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0563": {
-  "conceito": "O espaço de Parona é o espaço virtual do antebraço distal, limitado atrás pelo pronador quadrado e à frente pelos tendões flexores profundos. Ele importa por uma razão: é por ali que a infecção de uma bainha passa de um lado da mão para o outro. A tenossinovite do polegar (bainha radial) e a do dedo mínimo (bainha ulnar) se comunicam através do Parona, e o resultado é o abscesso em ferradura.",
-  "correta": "Entre o pronador quadrado e os tendões flexores profundos, no antebraço distal, o corredor por onde a infecção atravessa de uma bainha à outra.",
+  "conceito": "### Espaço de Parona\n- Espaço virtual no **terço distal volar do antebraço**.\n- Limites: ==atrás, o pronador quadrado==; ==à frente, os tendões do flexor profundo==.\n- Comunica-se, pelo túnel do carpo, com as ==bursas radial e ulnar== e com os espaços profundos da mão (e, pela literatura clássica, com a região mediocarpal por continuidade dos planos).\n\n### Abscesso em ferradura\n- Infecção da bainha do **polegar** (bursa radial) → espaço de Parona → **bursa ulnar** → bainha do **mínimo** (ou o caminho inverso).\n- Drenagem precisa incluir a região volar distal do antebraço.\n\n### Bainhas que se continuam com as bursas\n| Bainha | Bursa |\n|---|---|\n| polegar (FLP) | radial |\n| mínimo | ulnar |\n| indicador, médio, anelar | terminam na palma (em geral) |\n\n> **Na prova:** espaço de Parona = entre ==pronador quadrado e flexores profundos==.",
+  "correta": "**Entre pronador quadrado e flexores profundos.**\n- Antebraço distal volar.\n- Corredor do abscesso em ferradura.",
   "incorretas": {
-   "A": "Entre o pronador quadrado e o rádio não há espaço virtual: ali o músculo se insere no osso.",
-   "B": "A radiocárpica é articulação, e o intervalo até o pronador quadrado não define o espaço descrito.",
-   "D": "A membrana interóssea proximal à radioulnar distal não é o Parona, este é volar ao pronador quadrado, não entre os ossos."
+   "A": "**Não há espaço.**\n- O pronador se insere no osso.",
+   "B": "**Articulação.**\n- Não define o espaço.",
+   "D": "**Entre os ossos.**\n- O Parona é volar ao pronador."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0564": {
-  "conceito": "O espaço quadrangular tem limites fixos: redondo menor acima, redondo maior abaixo, cabeça longa do tríceps medialmente e colo do úmero lateralmente. Por ele passam duas estruturas, e as duas dão o nome à síndrome: o nervo axilar e a artéria circunflexa posterior do úmero. O quadro é dor posterior no ombro com parestesia mal delimitada na face lateral do braço, tipicamente em atletas de arremesso, e piora com abdução e rotação externa.",
-  "correta": "Nervo axilar e artéria circunflexa posterior do úmero, o conteúdo do espaço quadrangular.",
+  "conceito": "### Espaços da região posterior do ombro\n| Espaço | Limites | Conteúdo |\n|---|---|---|\n| ==quadrangular== | redondo menor (acima), redondo maior (abaixo), cabeça longa do tríceps (medial), colo do úmero (lateral) | ==nervo axilar + artéria circunflexa posterior do úmero== |\n| triangular (medial) | redondos menor e maior, cabeça longa do tríceps | artéria circunflexa da escápula |\n| intervalo triangular (inferior) | redondo maior, cabeça longa e lateral do tríceps | ==nervo radial + artéria braquial profunda== |\n\n### Síndrome do espaço quadrilátero\n- Atletas de arremesso; dor posterior, parestesia lateral do braço mal definida.\n- Piora em ==abdução e rotação externa==.\n- Atrofia de deltoide e redondo menor; angiografia com oclusão da circunflexa em ABD-RE.\n- Tratamento conservador; descompressão se falhar.\n\n### Outras compressões do ombro\n| Local | Nervo |\n|---|---|\n| incisura supraescapular | supraescapular (supra e infraespinal) |\n| espinoglenoidal | supraescapular (só infraespinal) |\n\n> **Na prova:** espaço quadrangular = ==nervo axilar e artéria circunflexa posterior do úmero==.",
+  "correta": "**Axilar e circunflexa posterior do úmero.**\n- Conteúdo do espaço quadrangular.\n- Arremessadores; piora em ABD-RE.",
   "incorretas": {
-   "A": "O nervo é o certo, a artéria não. A artéria braquial profunda acompanha o nervo radial e passa pelo intervalo triangular, abaixo do redondo maior.",
-   "B": "Toracodorsal e artéria subescapular correm pela parede posterior da axila, fora do espaço quadrangular.",
-   "C": "O supraescapular e sua artéria são comprimidos na incisura supraescapular ou na espinoglenoidal, e nem sequer atravessam esse espaço."
+   "A": "**Artéria errada.**\n- Braquial profunda vai com o radial no intervalo triangular.",
+   "B": "**Parede axilar.**\n- Fora do espaço.",
+   "C": "**Incisuras.**\n- Nem passam pelo espaço."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0565": {
-  "conceito": "A palpação seriada ao redor do cotovelo ajuda a localizar síndromes compressivas. A dor sobre o **túnel radial**, distal ao epicôndilo lateral ao longo do supinador, corresponde às áreas 1–2; a provocação sobre o trajeto proximal do nervo mediano/pronador situa-se mais central e distal, nas áreas 5–6.",
-  "correta": "**B, áreas 1–2 e 5–6.** O primeiro par localiza o túnel radial; o segundo, os pontos de compressão proximal do nervo mediano.",
+  "alerta": "A figura numera áreas de palpação ao redor do cotovelo e a correspondência exata não pode ser conferida aqui. Guarde a topografia: túnel radial distal ao epicôndilo lateral, mediano no pronador e na fossa cubital medial.",
+  "conceito": "### Compressão do mediano no cotovelo\n| Ponto | Manobra provocativa |\n|---|---|\n| ligamento de Struthers (processo supracondilar) | RX: esporão supracondilar |\n| lacerto fibroso | flexão resistida do cotovelo em supinação |\n| ==pronador redondo== (entre as cabeças) | ==pronação resistida com extensão do cotovelo==; ==compressão proximal e lateral do ventre== |\n| arcada do flexor superficial | flexão resistida da IFP do dedo médio |\n\n### Síndrome do pronador\n- Dor no antebraço proximal, parestesia no território do mediano ==incluindo a eminência tenar== (ramo cutâneo palmar).\n- Sem sintoma noturno típico; Phalen negativo.\n- ENMG frequentemente normal.\n\n### Teste de compressão\n- Polegar na porção ==proximal e lateral== do pronador, por cerca de 30 s.\n- Positivo: parestesia no mediano.\n\n### Túnel radial na palpação\n- Dor ==3 a 4 dedos distal ao epicôndilo lateral==, sobre a massa extensora (supinador).\n- Epicondilite: dor sobre o próprio epicôndilo.\n\n> **Na prova:** túnel radial = áreas ==1-2==; mediano = áreas ==5-6== (veja o alerta).",
+  "correta": "**1-2 e 5-6, conforme o gabarito.**\n- Túnel radial distal ao epicôndilo lateral.\n- Mediano nos pontos proximais do pronador (veja o alerta).",
   "incorretas": {
-   "A": "As áreas 4–5 não abrangem o par distal indicado para a pesquisa do nervo mediano nessa grade.",
-   "C": "Desloca a pesquisa radial para 2–3, mais distal do que o intervalo 1–2 marcado na figura.",
-   "D": "Combina os dois intervalos incorretos em relação ao mapa apresentado."
+   "A": "**Mediano fora do par.**\n- 4-5 não é o intervalo indicado.",
+   "C": "**Radial deslocado.**\n- 2-3 é distal demais.",
+   "D": "**Ambos errados.**\n- Os dois intervalos."
   },
   "referencias": [
    "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Radial tunnel and pronator syndromes.",
    "Spinner M. Injuries to the Major Branches of Peripheral Nerves of the Forearm. 2nd ed. Saunders; 1978."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "moderado",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0566": {
-  "conceito": "A ultrassonografia entrou na reumatologia por conseguir enxergar tecido mole em tempo real e com Doppler: sinovite proliferativa, com sinal de fluxo indicando atividade inflamatória, aparece com sensibilidade próxima à da ressonância e com uma vantagem prática, dá para examinar várias articulações na mesma consulta, à beira do leito, sem contraste. Serve para diagnóstico precoce, para medir atividade e para guiar punção e infiltração.",
-  "correta": "Revelar sinovite proliferativa com sensibilidade comparável à da ressonância, que é justamente o achado inflamatório que muda a conduta cedo.",
+  "conceito": "### Ultrassonografia nas artropatias inflamatórias\n| Achado | US | RM | RX |\n|---|---|---|---|\n| ==sinovite proliferativa== | ==sim (Doppler mostra atividade)== | sim | não |\n| derrame | sim | sim | não |\n| tenossinovite | sim | sim | não |\n| ==erosão precoce== | sim (antes do RX) | sim | tardio |\n| edema ósseo | ==não== (não atravessa o córtex) | ==sim== | não |\n\n### Vantagens\n- Várias articulações na mesma consulta, à beira do leito, sem contraste.\n- Guia punção e infiltração; monitora resposta ao tratamento.\n\n### Limites\n- Operador-dependente; não substitui clínica e laboratório (FR, anti-CCP, provas inflamatórias).\n\n> **Na prova:** US na AR = ==sinovite com sensibilidade comparável à RM==.",
+  "correta": "**Sinovite com sensibilidade comparável à RM.**\n- Doppler mostra atividade inflamatória.\n- Várias articulações na mesma consulta.",
   "incorretas": {
-   "A": "Subestima o exame. A ultrassonografia detecta erosão em fase precoce, antes da radiografia; limitá-la ao estágio avançado inverte o mérito do método.",
-   "B": "Edema subcondral (edema de medula óssea) é achado de ressonância. O ultrassom não atravessa o osso cortical e não consegue vê-lo.",
-   "D": "Nenhum método de imagem substitui exame clínico e laboratório nas artropatias inflamatórias, o diagnóstico continua sendo composto."
+   "A": "**Subestima.**\n- Detecta erosão precoce.",
+   "B": "**Edema ósseo é RM.**\n- O US não atravessa o córtex.",
+   "D": "**Não substitui.**\n- Diagnóstico composto."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 33"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0567": {
-  "conceito": "A banda central da membrana interóssea é o estabilizador longitudinal do antebraço: é ela que impede o rádio de migrar proximalmente quando a cabeça radial é ressecada, e é a lesão dela que transforma uma fratura de cabeça de rádio na lesão de Essex-Lopresti. As fibras correm de proximal-radial para distal-ulnar, e ficam mais retesadas perto da rotação neutra; a pronação as afrouxa. Entre as opções, 20 graus de supinação é a que mais se aproxima da neutra.",
-  "correta": "Perto da neutra (20 graus de supinação), que é onde a banda central atinge a maior tensão.",
+  "conceito": "### Membrana interóssea do antebraço\n| Componente | Direção | Papel |\n|---|---|---|\n| ==banda central== | proximal-radial → distal-ulnar | ==estabilizador longitudinal==; transfere carga do rádio para a ulna |\n| banda acessória | | |\n| banda distal oblíqua | | estabiliza a RUD (quando presente) |\n| banda oblíqua proximal (corda de Weitbrecht) | | |\n\n### Tensão e rotação\n- Banda central ==mais tensa perto do neutro== (cerca de 20° de supinação).\n- Pronação afrouxa.\n\n### Essex-Lopresti\n- Fratura da cabeça do rádio + lesão da membrana + lesão da RUD.\n- Ressecar a cabeça sem perceber: migração proximal do rádio, impacto ulnocarpal.\n- Testes: radius pull test, US e RM da membrana.\n\n> **Na prova:** banda central mais tensa em ==20° de supinação== (perto do neutro).",
+  "correta": "**20° de supinação.**\n- Perto do neutro, a banda central fica mais tensa.\n- Pronação afrouxa.",
   "incorretas": {
-   "A": "A pronação afrouxa a banda central; mesmo poucos graus vão na direção de menor tensão, não de maior.",
-   "B": "45 graus de supinação já passa do ponto de maior tensão e afasta demais da rotação neutra.",
-   "D": "45 graus de pronação é a posição mais frouxa entre as quatro, o oposto do que a questão pede."
+   "A": "**Pronação afrouxa.**\n- Menor tensão.",
+   "B": "**Passa do ponto.**\n- Longe do neutro.",
+   "D": "**Mais frouxa.**\n- O oposto."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.20"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0568": {
-  "conceito": "Preservar a radioulnar distal na desarticulação do punho é o que permite ao amputado usar a própria pronossupinação para orientar a mão protética, sem precisar de um mecanismo de rotação na prótese. Só que o movimento não passa inteiro: entre o osso que gira e o encaixe da prótese há pele, tecido subcutâneo e a folga do socket, e boa parte da rotação se perde nesse deslizamento. Na prática, chega à prótese cerca de metade do arco disponível, o que já é bem mais do que sobra numa amputação transradial.",
-  "correta": "Cerca de 50%: a metade do arco se perde no deslizamento entre o coto e o encaixe da prótese.",
+  "conceito": "### Desarticulação do punho\n| Vantagem | Desvantagem |\n|---|---|\n| preserva a ==RUD== e a pronossupinação | coto longo: prótese mais longa que o lado oposto |\n| coto com alavanca longa e ==estiloides para suspensão== | pior estética da prótese |\n| | espaço limitado para componentes mioelétricos |\n\n### Pronossupinação transmitida à prótese\n| Nível | Transmissão |\n|---|---|\n| ==desarticulação do punho== | ==cerca de 50%== do arco |\n| transradial longo | menos (cerca de 1/3 ou menos) |\n| transradial curto | praticamente nenhuma |\n\n- Perda na interface pele, subcutâneo e folga do encaixe.\n\n> **Na prova:** desarticulação do punho transmite ==cerca de 50%== da pronossupinação.",
+  "correta": "**50%.**\n- Metade do arco se perde na interface coto-encaixe.\n- Ainda bem mais que no transradial.",
   "incorretas": {
-   "A": "95% seria transmissão praticamente completa, o que ignora a perda inevitável na interface entre coto e encaixe.",
-   "B": "80% ainda superestima bastante o que chega ao dispositivo.",
-   "C": "65% continua acima do que se observa; a referência prática é a metade."
+   "A": "**Quase total.**\n- Ignora a perda na interface.",
+   "B": "**Superestima.**\n- Acima do observado.",
+   "C": "**Acima.**\n- A referência é metade."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 20"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0569": {
-  "conceito": "No corte transversal do antebraço proximal, o **flexor superficial dos dedos** ocupa grande parte do compartimento volar intermediário, superficial ao flexor profundo e relacionado ao septo que separa os planos flexores.",
-  "correta": "**A, flexor superficial dos dedos.** A seta aponta o grande ventre muscular do plano flexor intermediário, anterior ao plano profundo.",
+  "conceito": "### Camadas do compartimento volar\n| Camada | Músculos |\n|---|---|\n| ==superficial== | ==pronador redondo==, flexor radial do carpo, palmar longo, flexor ulnar do carpo |\n| intermediária | flexor superficial dos dedos |\n| profunda | flexor profundo dos dedos, flexor longo do polegar, **pronador quadrado** |\n\n### Pronador redondo\n- Duas cabeças: **umeral** (epicôndilo medial) e **ulnar** (processo coronoide).\n- Trajeto ==oblíquo== até o **terço médio da face lateral do rádio**.\n- O **nervo mediano** passa entre as cabeças (síndrome do pronador).\n- Via de Henry: o pronador é desinserido (com o antebraço em pronação) para expor o terço médio do rádio.\n\n### Pronador quadrado\n- Lâmina **transversa** entre rádio e ulna distais; camada profunda.\n- Desinserido na via volar para placas do rádio distal.\n\n> **Na prova:** grande ventre da camada intermediária = ==flexor superficial dos dedos==",
+  "correta": "**Flexor superficial dos dedos.**\n- Camada intermediária, grande ventre.\n- Anterior ao plano profundo.",
   "incorretas": {
-   "B": "O flexor profundo dos dedos encontra-se mais profundamente, junto à ulna e à membrana interóssea.",
-   "C": "O flexor longo do polegar ocupa posição profunda e mais radial, junto ao rádio.",
-   "D": "O flexor radial do carpo é mais superficial e radial, com ventre menor e trajeto tendíneo próprio."
+   "B": "**Plano profundo.**\n- Junto à ulna e membrana.",
+   "C": "**Profundo e radial.**\n- Junto ao rádio.",
+   "D": "**Superficial.**\n- Ventre menor."
   },
   "referencias": [
    "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020. Anterior compartment of the forearm.",
    "Netter FH. Atlas of Human Anatomy. 8th ed. Elsevier; 2022. Forearm cross-sectional anatomy.",
    "Netter, Atlas de Anatomia Humana, 7ª edição, Seção 7"
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0570": {
   "conceito": "A figura mostra as origens musculares no dorso do antebraço, e a seta aponta a área larga que atravessa a membrana interóssea alcançando os dois ossos. Essa é a assinatura do abdutor longo do polegar: entre os músculos profundos do dorso, é o único que se origina ao mesmo tempo da face posterior da ulna, da membrana interóssea e da face posterior do rádio, e é também o mais proximal deles. Daí ele cruza obliquamente por cima dos extensores radiais do carpo para chegar à base do primeiro metacarpo.",
