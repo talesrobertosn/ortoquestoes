@@ -230,7 +230,9 @@ def rodape(raiz: str = "../") -> str:
 <footer class="envoltorio">
   <p class="meta">
     <strong>OrtoQuestões</strong>: banco de questões de ortopedia e traumatologia para TEOT, TARO e
-    ENARE R4. As questões são transcritas das provas originais e o gabarito é o da própria banca.
+    ENARE R4. As questões são transcritas das provas originais e o gabarito é o da própria banca;
+    as marcadas como OrtoQuestões Simulados são elaboradas pelo site de acordo com a bibliografia de
+    referência, inspiradas no padrão da prova indicada.
     Os comentários se baseiam na bibliografia de referência da especialidade; a redação pode contar
     com apoio de inteligência artificial. <a href="{raiz}#/contato">Encontrou um erro?</a>
     · <a href="https://www.instagram.com/ortoquestoes/">@ortoquestoes</a>
@@ -241,11 +243,32 @@ def rodape(raiz: str = "../") -> str:
 """
 
 
+def nota_simulado(questao: dict) -> str:
+    """Aviso das questões com a etiqueta OrtoQuestões Simulados (vazio nas demais)."""
+    if not questao.get("simulado"):
+        return ""
+    prova = f" {esc(questao['prova'])}" if questao.get("prova") else ""
+    return (
+        '<p class="meta"><strong>OrtoQuestões Simulados</strong>: questão elaborada de acordo com a '
+        f"bibliografia de referência e inspirada no padrão da prova{prova}.</p>"
+    )
+
+
+def origem_da_questao(questao: dict) -> str:
+    """Prova e ano; nos simulados, deixa claro que é no padrão da prova."""
+    origem = " ".join(filter(None, [questao.get("prova"), str(questao.get("ano") or "")])).strip()
+    if questao.get("simulado"):
+        return f"OrtoQuestões Simulados, padrão {origem}" if origem else "OrtoQuestões Simulados"
+    return origem
+
+
 def montar_questao(questao: dict, comentario: dict, raiz: str = "../") -> str:
     """Versão completa, usada nas páginas por assunto (vitrine)."""
     gabarito = questao.get("gabarito")
     textos = {a["letra"]: a["texto"] for a in questao.get("alternativas") or []}
     partes = ['<article class="questao">']
+    if questao.get("simulado"):
+        partes.append(nota_simulado(questao))
     partes.append(f'<p class="enunciado">{esc(questao["enunciado"])}</p>')
     partes.append('<ol type="A">')
     for alternativa in questao.get("alternativas") or []:
@@ -284,7 +307,7 @@ def pagina_questao(questao: dict, comentario: dict, tema: dict, anterior: dict |
     raiz = "../../"
     slug = tema["slug"]
     subtema = (questao.get("subtemas") or [tema["nome"]])[0]
-    origem = " ".join(filter(None, [questao.get("prova"), str(questao.get("ano") or "")])).strip()
+    origem = origem_da_questao(questao)
     titulo = resumir(f"{subtema}: {questao['enunciado']}", 64) + " | Questão comentada"
     descricao = resumir(
         f"Questão de {tema['nome'].lower()}{' (' + origem + ')' if origem else ''} com gabarito e conceito-chave: {questao['enunciado']}",
@@ -312,6 +335,8 @@ def pagina_questao(questao: dict, comentario: dict, tema: dict, anterior: dict |
     rotulos = [tema["nome"], subtema] + ([origem] if origem else [])
     corpo.append('<p class="etiquetas">' + "".join(f"<span>{esc(r)}</span>" for r in dict.fromkeys(rotulos)) + "</p>")
     corpo.append('<article class="questao">')
+    if questao.get("simulado"):
+        corpo.append(nota_simulado(questao))
     corpo.append(f'<p class="enunciado">{esc(questao["enunciado"])}</p>')
     corpo.append(figuras(questao, raiz))
     corpo.append('<ol type="A">')
@@ -385,14 +410,12 @@ def principal() -> int:
             f"Questões de provas anteriores de {tema['nome'].lower()}, com gabarito e comentário.",
         ))
 
-        # Uma página por questão comentada. Fica de fora o que não se sustenta
-        # fora do site (anulada, figura ainda não recuperada) e os simulados
-        # autorais, que são conteúdo próprio reservado ao site.
+        # Uma página por questão comentada. Fica de fora só o que não se
+        # sustenta fora do site: anulada e figura que ainda não foi recuperada.
         publicaveis = [
             dict(q, tema_slug=slug)
             for q in dados["questoes"]
             if q["id"] in comentarios and not q.get("anulada") and not q.get("figuraPendente")
-            and not q.get("simulado")
         ]
         pasta = DIR_SAIDA / slug
         if pasta.exists():
@@ -430,7 +453,14 @@ def principal() -> int:
             "originais, sem reescrita, e o gabarito é o da própria banca. Os comentários se baseiam "
             "na bibliografia de referência da especialidade; a redação pode contar com apoio de "
             "inteligência artificial. Quando resta dúvida sobre o gabarito, o comentário registra a "
-            "dúvida em vez de escondê-la.</p></div>"
+            "dúvida em vez de escondê-la."
+            + (
+                " As questões marcadas como <strong>OrtoQuestões Simulados</strong> são elaboradas pelo "
+                "site de acordo com a bibliografia de referência, inspiradas no padrão da prova indicada."
+                if any(q.get("simulado") for q in publicaveis)
+                else ""
+            )
+            + "</p></div>"
         )
         corpo.append(f"<h2>{len(vitrine)} questões comentadas</h2>")
         for questao, comentario in itens:
