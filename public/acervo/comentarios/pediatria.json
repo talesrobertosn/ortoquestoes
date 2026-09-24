@@ -4105,91 +4105,92 @@
   "conferido": false
  },
  "pediatria-0322": {
-  "conceito": "Entre as diversas classificações usadas na doença de Legg-Calvé-Perthes, é importante diferenciar aquelas usadas durante a fase **ativa** da doença (para orientar tratamento) das usadas para avaliar o **desfecho final**, já na maturidade esquelética. A classificação de **Stulberg** é justamente a que avalia o **resultado radiográfico final** (a esfericidade e a congruência entre a cabeça femoral remodelada e o acetábulo ao final do crescimento), sendo usada para prever o risco de desenvolvimento de artrose precoce do quadril na vida adulta.\n\nAs demais classificações citadas (Catterall, Herring, Salter-Thompson) são usadas durante a fase ativa da doença, para estimar a extensão do acometimento e orientar decisões terapêuticas, não para avaliar o desfecho final.",
-  "correta": "D. A classificação de Stulberg é a que avalia o desfecho radiográfico final da doença de Legg-Calvé-Perthes.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Stulberg (desfecho na maturidade)\n| Classe | Cabeça | Artrose |\n|---|---|---|\n| I | normal | não |\n| II | esférica, coxa magna, colo curto | leve tardia |\n| III | ovoide, não esférica | moderada |\n| IV | achatada, congruência asférica | precoce (5ª década) |\n| V | achatada com acetábulo normal (incongruência asférica) | grave, precoce |\n\n> **Na prova:** classificação do desfecho radiográfico = ==Stulberg==",
+  "correta": "**Stulberg.**\n- Aplicada na maturidade esquelética.\n- Esfericidade e congruência predizem artrose.",
   "incorretas": {
-   "A": "A classificação de Catterall avalia a extensão do acometimento epifisário durante a fase ativa da doença, não o desfecho final.",
-   "B": "A classificação de Herring (pilar lateral) avalia o comprometimento durante a fase ativa da doença, não o desfecho radiográfico final.",
-   "C": "A classificação de Salter-Thompson avalia a extensão da fratura subcondral na fase inicial da doença, não o desfecho final."
+   "A": "**Catterall.**\n- Extensão da necrose, fase ativa.",
+   "B": "**Herring.**\n- Pilar lateral, fase de fragmentação.",
+   "C": "**Salter-Thompson.**\n- Fratura subcondral, fase inicial."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0323": {
-  "conceito": "A deficiência femoral focal proximal (doença congênita femoral) compartilha uma origem embriológica relacionada a distúrbios do desenvolvimento do broto do membro inferior com outra condição congênita: a **hemimelia fibular**. Por esse motivo, é comum encontrar as duas condições associadas no mesmo paciente, em graus variáveis, desde formas leves de hipoplasia fibular até a ausência completa da fíbula, associadas a diferentes graus de encurtamento e deformidade femoral.\n\nEssa associação é relevante na prática clínica, já que o planejamento terapêutico de um paciente com deficiência femoral focal proximal deve sempre incluir avaliação cuidadosa da fíbula e do pé, para identificar eventual hemimelia fibular associada, que impacta diretamente as opções de tratamento e reconstrução do membro.",
-  "correta": "D. A deficiência femoral focal proximal está comumente relacionada à hemimelia fibular.",
+  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n> **Na prova:** deficiência congênita do fêmur associa-se a ==hemimelia fibular== (cerca de 50%)",
+  "correta": "**Hemimelia fibular.**\n- Presente em cerca de metade.\n- Mesmo espectro de deficiência pós-axial.",
   "incorretas": {
-   "A": "A pseudartrose congênita da tíbia não tem associação clássica consistente com a deficiência femoral focal proximal.",
-   "B": "A hemimelia tibial é uma condição rara e distinta, sem a associação clássica e consistente que a hemimelia fibular tem com a deficiência femoral focal proximal.",
-   "C": "A polidactilia não tem associação clássica com a deficiência femoral focal proximal."
+   "A": "**Pseudartrose da tíbia.**\n- Associada à NF1.",
+   "B": "**Hemimelia tibial.**\n- Pré-axial; associa-se à polidactilia pré-axial.",
+   "C": "**Polidactilia.**\n- Associação da hemimelia tibial."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0324": {
-  "conceito": "A deformidade de Sprengel resulta de uma falha na descida normal da escápula durante o desenvolvimento fetal, e está associada a um conjunto característico de síndromes e anomalias: é classicamente descrita em associação com a **síndrome de Klippel-Feil** (fusão congênita de vértebras cervicais) e com **alterações renais** (agenesia, ectopia ou outras malformações renais), refletindo uma origem embriológica compartilhada entre estruturas que se desenvolvem em período semelhante da vida intrauterina.\n\nÉ importante notar que, ao contrário do que se poderia supor, a limitação de movimento na deformidade de Sprengel é predominantemente **escapulotorácica**, a articulação glenoumeral costuma manter boa amplitude de movimento, já que a limitação funcional decorre principalmente da posição anômala e da mobilidade reduzida da própria escápula em relação ao tórax, não de um comprometimento intrínseco da articulação do ombro.",
-  "correta": "C. A deformidade de Sprengel apresenta associação com a síndrome de Klippel-Feil e com alterações renais.",
+  "conceito": "### Sprengel: movimento do ombro\n- Escápula ==pequena (hipoplásica)==, alta e rodada, presa pelo omovertebral ou fibrose.\n- A ==glenoumeral é normal==; perde-se o ==ritmo escapulotorácico==.\n- Resultado: ==abdução limitada== (a escápula não roda).\n\n### Achados associados\n- Klippel-Feil, escoliose, costelas anômalas, diastematomielia, rim.\n\n### Cirurgia\n| Técnica | Princípio |\n|---|---|\n| Woodward | desinserção da origem medial (trapézio, romboides) e reinserção mais baixa |\n| Green | desinserção na escápula e descida |\n| + | ressecção do omovertebral (extraperiosteal), osteotomia da clavícula |\n\n- Idade 3 a 8 anos; ganho funcional maior na abdução.\n\n### Embriologia e osso omovertebral\n- Escápula forma-se na altura de C4-C6 e desce entre a ==9ª e a 12ª semana==; Sprengel = falha dessa descida.\n- ==Osso omovertebral== (liga o ângulo superomedial à coluna cervical) em ==25 a 50%==.\n\n### Associações\n| Associação | Frequência |\n|---|---|\n| ==Klippel-Feil== | frequente |\n| ==anomalias renais== | investigar com ultrassom |\n| escoliose, costelas | comuns |\n\n> **Na prova:** Sprengel associa-se a ==Klippel-Feil e alterações renais== (veja o alerta)",
+  "correta": "**Klippel-Feil e renais.**\n- Associações clássicas.\n- Solicitar ultrassom renal e RX cervical.",
   "incorretas": {
-   "A": "A migração normal da escápula ocorre mais precocemente, entre aproximadamente a 5ª e a 12ª semanas de gestação, não entre a 12ª e a 15ª.",
-   "B": "O osso omovertebral está presente em uma parcela significativa dos pacientes (cerca de um terço a metade dos casos), não sendo correto afirmar que a minoria o possui de forma isolada e definitiva sem qualificação, já que essa faixa representa uma proporção substancial dos casos.",
-   "D": "A perda de movimento predominante é escapulotorácica, a articulação glenoumeral costuma manter boa amplitude de movimento na deformidade de Sprengel."
+   "A": "**Janela errada.**\n- Descida entre a 9ª e a 12ª semana.",
+   "B": "**Considerada falsa pela banca.**\n- Omovertebral em 25 a 50% (veja o alerta).",
+   "D": "**Glenoumeral preservada.**\n- Perde-se só o movimento escapulotorácico."
   },
-  "geradoEm": "2026-09-21",
+  "alerta": "O osso omovertebral é descrito em 25 a 50% dos casos, o que tecnicamente é uma minoria; algumas fontes citam até 50%. A banca considerou B falsa e manteve C como única correta.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0325": {
-  "conceito": "Na hemimelia fibular com **ausência completa da fíbula**, a classificação de Achterman e Kalamchi define esse quadro como **tipo II**, o grau mais grave dentro dessa classificação, associado tipicamente a deformidades importantes do pé e tornozelo (instabilidade, ausência de raios laterais, pé equinovalgo rígido) devido à falta completa do suporte lateral que a fíbula normalmente oferece.\n\nNesses casos mais graves, especialmente quando o pé é significativamente deformado e não funcional, a **amputação de Syme** (desarticulação do tornozelo preservando o coxim plantar do calcâneo) costuma ser a opção terapêutica mais indicada, permitindo uma protetização funcional e durável, com um coto de apoio terminal resistente, em vez de tentativas de reconstrução do pé que tendem a resultados funcionais inferiores nesses casos de ausência completa da fíbula.",
-  "correta": "C. A ausência completa da fíbula corresponde ao tipo II de Achterman-Kalamchi, e o tratamento mais indicado é a amputação de Syme.",
+  "conceito": "### Hemimelia fibular\n- Deficiência longitudinal ==pós-axial==; a mais comum dos ossos longos.\n- Espectro: fíbula ausente ou hipoplásica, tíbia curta e arqueada (anteromedial, com covinha), fêmur curto, pé equinovalgo, ==raios laterais ausentes==, coalizão tarsal (bola e soquete no tornozelo).\n\n### Joelho\n| Achado | Consequência |\n|---|---|\n| ==hipoplasia do côndilo femoral lateral== | joelho valgo |\n| ==cruzados hipoplásicos ou ausentes== | ==instabilidade anteroposterior== |\n| espinhas tibiais pequenas | |\n\n### Classificações e tratamento\n- Achterman-Kalamchi, Paley (baseada no tornozelo e reconstrutibilidade).\n- Discrepância prevista e pé funcional decidem entre ==alongamento== (Paley SUPERankle) e ==Syme== + prótese.\n\n### Achterman e Kalamchi\n| Tipo | Fíbula |\n|---|---|\n| IA | hipoplásica, fise proximal abaixo e distal acima do normal |\n| IB | ausência parcial (30 a 50% proximal), sem suporte distal |\n| ==II== | ==ausência completa== |\n\n- Tipo II com pé não funcional (poucos raios, instável) e grande discrepância: ==Syme== (ou Boyd) + prótese.\n\n> **Na prova:** ausência completa da fíbula = ==tipo II; Syme==",
+  "correta": "**Tipo II, Syme.**\n- Ausência completa da fíbula.\n- Pé instável e grande discrepância: amputação e prótese.",
   "incorretas": {
-   "A": "O tipo IB corresponde a uma fíbula ainda presente, ainda que gravemente hipoplásica, não à sua ausência completa.",
-   "B": "O tipo IB não corresponde à ausência completa da fíbula, e a osteotomia supramaleolar isolada não é o tratamento mais indicado nos casos mais graves com pé significativamente deformado.",
-   "D": "A osteotomia supramaleolar isolada não é o tratamento mais indicado quando há ausência completa da fíbula com deformidade importante do pé, a amputação de Syme costuma oferecer melhor resultado funcional nesses casos."
+   "A": "**IB é ausência parcial.**\n- Classificação errada.",
+   "B": "**Tipo e conduta errados.**\n- Ausência completa é tipo II.",
+   "D": "**Osteotomia supramaleolar.**\n- Não resolve a discrepância nem o pé instável."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0326": {
-  "conceito": "Na artrogripose clássica (amioplasia), as deformidades dos membros superiores seguem um padrão característico e bastante previsível: os ombros costumam estar aduzidos e rodados internamente, os **cotovelos em extensão** (contratura em extensão, limitando a flexão ativa e passiva, um dos achados mais marcantes e funcionalmente mais limitantes da doença) e os **punhos em flexão** (associados a desvio ulnar), com os dedos frequentemente contraídos também em flexão.\n\nÉ justamente por essa combinação de cotovelo em extensão fixa que o ganho de flexão do cotovelo costuma ser a prioridade inicial no tratamento cirúrgico dos membros superiores na artrogripose, sem flexão do cotovelo, a criança não consegue levar a mão à boca, comprometendo atividades básicas de autocuidado.",
-  "correta": "C. Na artrogripose clássica, o cotovelo costuma estar em extensão e o punho em flexão.",
+  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n> **Na prova:** amioplasia = ombro ==aduzido e em RI==, cotovelo estendido, ==punho fletido==",
+  "correta": "**Extensão e flexão.**\n- Cotovelo estendido, punho fletido.\n- Postura típica da amioplasia.",
   "incorretas": {
-   "A": "O padrão de flexão e flexão não corresponde ao achado clássico, o cotovelo tipicamente está em extensão, não em flexão.",
-   "B": "O padrão de flexão (cotovelo) e extensão (punho) está invertido em relação ao achado clássico da artrogripose.",
-   "D": "O punho tipicamente está em flexão, não em extensão, na artrogripose clássica."
+   "A": "**Cotovelo em flexão.**\n- Menos comum.",
+   "B": "**Tudo invertido.**\n- Cotovelo estende, punho flete.",
+   "D": "**Punho em extensão.**\n- Punho fica fletido e desviado ulnar."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0327": {
-  "conceito": "A **fratura metafisária clássica** (\"corner fracture\"), um pequeno fragmento angular destacado na margem da metáfise, decorrente de forças de cisalhamento e torção aplicadas ao membro (como ao puxar ou sacudir a criança), é um achado radiográfico de alta especificidade para **maus tratos** infantis, sendo considerada praticamente patognomônica de trauma não acidental, especialmente em lactentes e crianças pequenas.",
-  "correta": "B. A imagem é altamente sugestiva de maus tratos.",
+  "conceito": "### Tipos de maus-tratos\n| Tipo | Frequência |\n|---|---|\n| ==negligência== | ==a mais comum== |\n| abuso físico | o mais visto pelo ortopedista |\n| emocional | frequente, coexistente |\n| sexual | subnotificado |\n\n### Fraturas suspeitas de abuso físico\n| Alta especificidade | Moderada |\n|---|---|\n| ==lesão metafisária clássica== (canto, alça de balde) | fraturas múltiplas em estágios diferentes |\n| ==costelas posteriores== | fratura de crânio complexa |\n| escápula, processos espinhosos, esterno | vértebras, dedos em não deambulante |\n\n### Alertas\n- Fratura de fêmur em criança que não anda.\n- História incompatível, atraso na busca de atendimento.\n- Conduta: ==inventário esquelético== (< 2 anos), fundo de olho, notificação obrigatória.\n\n### Lesão metafisária clássica (fratura do canto)\n- Fratura ==planar na zona de ossificação provisória==, por forças de tração e torção (sacudir o bebê).\n- Aspecto de ==canto== ou ==alça de balde== conforme a incidência.\n- Fêmur distal, tíbia proximal e distal, úmero proximal.\n- Em lactentes, ==altamente específica== de abuso.\n\n### Menos específicas\n- Diafisárias (espiral ou transversa) são comuns e só sugerem abuso pelo contexto (criança que não anda).\n\n> **Na prova:** fratura de canto metafisária no lactente = ==maus-tratos==",
+  "correta": "**Maus-tratos.**\n- Lesão metafisária clássica (canto ou alça de balde).\n- Tração e torção do membro.",
   "incorretas": {
-   "A": "Uma **infecção** (osteomielite) costuma mostrar reação periosteal, edema de partes moles e, por vezes, coleção líquida associada, um padrão radiográfico diferente do fragmento angular isolado mostrado.",
-   "C": "Um **tumor ósseo** costuma apresentar uma lesão mais expansiva, com margens permeativas ou uma reação periosteal característica (como \"casca de cebola\" ou triângulo de Codman), um padrão diferente do fragmento metafisário focal mostrado.",
-   "D": "A **osteogênese imperfeita** tipicamente se manifesta com fraturas diafisárias associadas a fragilidade óssea difusa e osteopenia generalizada, não o fragmento metafisário focal e específico mostrado."
+   "A": "**Infecção.**\n- Lise e reação periosteal, com clínica.",
+   "C": "**Tumor.**\n- Lesão agressiva, não fratura planar.",
+   "D": "**OI.**\n- Diafisárias, osteopenia, escleras azuis."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0328": {
-  "conceito": "Na deficiência (defeito) focal femoral proximal, a anatomia alterada do quadril e do fêmur proximal frequentemente resulta em uma postura característica de flexão, abdução e rotação externa do membro. Esse desequilíbrio funcional altera principalmente a ação dos **abdutores** (que perdem eficiência mecânica pela alteração do braço de alavanca do fêmur proximal deformado, gerando um padrão de marcha semelhante ao Trendelenburg) e dos **extensores** do quadril, comprometendo a extensão ativa e a estabilidade do quadril durante a marcha.",
-  "correta": "D. Ocorre alteração na função dos abdutores e extensores do quadril.",
+  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Insuficiência muscular\n- Fêmur curto e proximal instável: braço de alavanca curto.\n- ==Abdutores e extensores== trabalham encurtados e em desvantagem: marcha de Trendelenburg e flexão do quadril.\n\n> **Na prova:** DFFP compromete ==abdutores e extensores do quadril==",
+  "correta": "**Abdutores e extensores.**\n- Encurtados e sem alavanca.\n- Quadril fica fletido, abduzido e em RE.",
   "incorretas": {
-   "A": "Os adutores e flexores não são o par muscular classicamente descrito como mais afetado nesse contexto; a postura típica do defeito focal femoral proximal está mais associada à disfunção dos abdutores e extensores.",
-   "B": "Embora os abdutores estejam corretamente incluídos, os flexores não correspondem ao segundo grupo classicamente afetado, que são os extensores do quadril.",
-   "C": "Os adutores não correspondem ao grupo classicamente descrito; o padrão típico envolve os abdutores, não os adutores."
+   "A": "**Adutores e flexores.**\n- Flexores são predominantes, não insuficientes.",
+   "B": "**Flexores não.**\n- Quadril fica em flexão.",
+   "C": "**Adutores não.**\n- Abdutores é que perdem função."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0329": {
-  "conceito": "A escoliose é uma manifestação musculoesquelética comum na osteogênese imperfeita, decorrente da combinação de fragilidade óssea vertebral (predispondo a microfraturas e deformidades em cunha dos corpos vertebrais) com frouxidão ligamentar generalizada. Assim como ocorre na escoliose idiopática do adolescente (ainda que por mecanismos de base distintos), o padrão de curva mais frequentemente encontrado na osteogênese imperfeita é a curva **torácica**, geralmente progressiva e de manejo particularmente desafiador nesses pacientes, já que a fragilidade óssea limita as opções cirúrgicas convencionais de instrumentação usadas na escoliose idiopática.",
-  "correta": "A. A curva escoliótica mais comum na osteogênese imperfeita é a torácica.",
+  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Escoliose na OI\n- Comum (40 a 80%), progride mesmo após a maturidade.\n- Curva mais comum: ==torácica==.\n- Colete ineficaz (deforma a caixa torácica); artrodese se > 45 a 50°.\n\n> **Na prova:** escoliose mais comum na OI = ==torácica==",
+  "correta": "**Torácica.**\n- Curva mais frequente.\n- Colete ineficaz: artrodese precoce.",
   "incorretas": {
-   "B": "A curva toracolombar, embora possa ocorrer, não é classicamente descrita como o padrão mais frequente na osteogênese imperfeita.",
-   "C": "A curva lombar isolada não é o padrão mais frequentemente descrito nesses pacientes.",
-   "D": "A curva lombossacra não é o padrão mais frequentemente descrito nesses pacientes."
+   "B": "**Toracolombar.**\n- Menos comum.",
+   "C": "**Lombar.**\n- Menos comum.",
+   "D": "**Lombossacra.**\n- Rara."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0330": {
