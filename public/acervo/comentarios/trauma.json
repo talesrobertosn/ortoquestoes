@@ -1754,95 +1754,95 @@
   "conferido": false
  },
  "trauma-0153": {
-  "conceito": "A incidência radiográfica em PERFIL (lateral) do joelho projeta o plano da patela de forma que fraturas com traço perpendicular ao eixo longitudinal do osso (ou seja, fraturas TRANSVERSAS) ficam bem alinhadas com o feixe de raios-X, tornando o traço de fratura nitidamente visível como uma linha clara separando os fragmentos proximal e distal. Já os traços verticais/marginais são mais bem vistos na incidência axial (Merchant/sunrise), que projeta a superfície articular da patela tangencialmente.",
-  "correta": "B. A fratura transversa da patela é a mais bem visualizada na incidência em perfil, por seu traço ficar alinhado perpendicularmente ao feixe de raios-X nessa projeção.",
+  "conceito": "### Fraturas da patela por padrão\n| Padrão | Mecanismo | Mecanismo extensor |\n|---|---|---|\n| transversa | ==indireto== (contração do quadríceps com joelho fletido) | geralmente ==roto== |\n| ==vertical/longitudinal== | ==direto, joelho fletido== (painel) | ==íntegro== (retináculos preservados) |\n| cominutiva (estrelada) | direto de alta energia | variável |\n| polo inferior | indireto/avulsão | roto |\n| osteocondral | luxação da patela | íntegro |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| extensão ativa preservada, degrau < 2 mm, diástase < 3 mm | conservador (órtese em extensão) |\n| falha do mecanismo extensor ou desvio | banda de tensão, parafusos canulados, placas; patelectomia parcial |\n\n### Incidências da patela\n| Incidência | Mostra melhor |\n|---|---|\n| ==perfil== | ==transversa== (diástase, degrau articular), polos, altura (Insall-Salvati) |\n| axial (Merchant/sunrise) | ==vertical== (longitudinal), osteocondral |\n| AP | cominutiva, patela bipartida (superolateral) |\n\n> **Na prova:** perfil mostra melhor a ==transversa==",
+  "correta": "**Transversa.**\n- Traço perpendicular ao eixo.\n- Perfil mostra a diástase.",
   "incorretas": {
-   "A": "A fratura vertical é mais bem identificada na incidência axial (Merchant), que projeta a superfície articular tangencialmente, não no perfil.",
-   "C": "A fratura cominutiva não tem uma única incidência ideal; sua avaliação completa geralmente exige a combinação de múltiplas projeções.",
-   "D": "A fratura osteocondral, por envolver a superfície articular, é mais bem avaliada na incidência axial (Merchant) ou por tomografia/ressonância, não no perfil."
+   "A": "**Vertical.**\n- Axial.",
+   "C": "**Cominutiva.**\n- AP e TC.",
+   "D": "**Osteocondral.**\n- Axial/RM."
   },
-  "geradoEm": "2026-09-15",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0154": {
-  "conceito": "A classificação de **Bryan e Morrey** para as fraturas do capítulo umeral, com a modificação de **McKee**, descreve quatro tipos por extensão e padrão do traço.\n\n- **Tipo I** (Hahn-Steinthal): grande fragmento osteoarticular do capítulo, com quantidade substancial de osso subcondral.\n- **Tipo II** (Kocher-Lorenz): fragmento fino, quase só cartilaginoso, com pouquíssimo osso subcondral associado, mais difícil de fixar pela escassez de osso.\n- **Tipo III** (Broberg-Morrey): fratura cominuída do capítulo, fragmentada em múltiplos pedaços pequenos.\n- **Tipo IV**, acrescentado por McKee para preencher uma lacuna da classificação original: descreve especificamente a fratura por cisalhamento do capítulo que se estende para envolver uma porção substancial da tróclea, um padrão que os três tipos anteriores não contemplavam, porque foram descritos pensando no capítulo isoladamente, sem considerar a possibilidade de o traço avançar significativamente sobre a superfície articular medial adjacente.",
-  "correta": "D. A fratura por cisalhamento do capítulo com envolvimento da maior parte da tróclea corresponde ao tipo IV, a modificação específica que McKee acrescentou à classificação original de Bryan e Morrey.",
+  "conceito": "### Fraturas do capítulo (plano coronal)\n| Classificação | Tipo | Fragmento |\n|---|---|---|\n| Bryan-Morrey | I (Hahn-Steinthal) | grande porção óssea do capítulo |\n| | II (Kocher-Lorenz) | lasca osteocondral fina |\n| | III | cominutiva |\n| | IV (McKee) | ==capítulo + parte da tróclea== |\n| Dubberley | 1 a 3, A (sem cominução posterior) / B (com) | |\n\n### Sinal do duplo arco (duplo crescente)\n- No perfil: dois arcos subcondrais sobrepostos = ==capítulo e crista lateral da tróclea== no mesmo fragmento.\n- Indica fratura do ==capítulo com extensão para a tróclea== (McKee, Bryan-Morrey IV).\n- ==TC== é obrigatória para planejar.\n\n### Tratamento\n- Redução aberta e fixação (parafusos anteroposteriores sem cabeça ou posteroanteriores); artroplastia no idoso com cominução.\n\n> **Na prova:** capítulo + maior parte da tróclea = ==Bryan-Morrey/McKee tipo IV==",
+  "correta": "**Tipo IV.**\n- Modificação de McKee.\n- Capítulo + tróclea (duplo arco).",
   "incorretas": {
-   "A": "O tipo I (Hahn-Steinthal) descreve um grande fragmento osteoarticular do capítulo com osso subcondral substancial, sem a extensão trocleaR que caracteriza o tipo IV.",
-   "B": "O tipo II (Kocher-Lorenz) descreve um fragmento fino, quase só cartilaginoso, restrito ao capítulo, sem a extensão troclear do tipo IV.",
-   "C": "O tipo III (Broberg-Morrey) descreve a cominuição do capítulo, não a extensão para a tróclea, que é o critério definidor específico do tipo IV."
+   "A": "**I.**\n- Hahn-Steinthal, capítulo.",
+   "B": "**II.**\n- Kocher-Lorenz, lasca.",
+   "C": "**III.**\n- Cominutiva."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0155": {
-  "conceito": "Fratura por estresse é falha óssea por carga repetitiva, sem trauma único suficiente para quebrar o osso. Na tíbia existem dois padrões que precisam ser separados: o **posteromedial**, no lado de compressão, é o mais frequente e costuma consolidar com redução de carga; o **anterior**, no lado de tensão, é menos frequente, mas tem maior risco de atraso de consolidação e fratura completa. Dor localizada que aumenta com corrida, sensibilidade óssea focal e RM precoce ajudam a distinguir a lesão de síndrome do estresse tibial medial.",
-  "correta": "A alternativa D está correta. A diáfise posteromedial da tíbia é o local mais comum da fratura de estresse tibial. A combinação de carga compressiva e forças repetidas do complexo gastrocnêmio-sóleo e flexores profundos explica essa predileção. É considerada lesão de menor risco porque se encontra no lado de compressão e, em regra, responde bem a repouso relativo e retorno progressivo.",
+  "conceito": "### Fratura por estresse da tíbia\n| Local | Força | Evolução |\n|---|---|---|\n| ==cortical posteromedial== (terço médio-distal) | ==compressão== | ==a mais comum==, benigna; repouso relativo |\n| cortical anterior (terço médio) | ==tensão== | \"==linha negra temida==\": pseudartrose, fratura completa; pode exigir haste |\n\n### Diagnóstico\n- RX inicial normal em até 2/3; ==RM== é o exame mais sensível (Fredericson).\n- Cintilografia sensível, pouco específica.\n\n### Fatores de risco\n- Aumento súbito de treino, tríade da mulher atleta (RED-S), baixa vitamina D, calçado, alinhamento.\n\n> **Na prova:** local mais frequente = ==posteromedial==",
+  "correta": "**Posteromedial.**\n- Lado de compressão.\n- Bom prognóstico.",
   "incorretas": {
-   "A": "A região anterolateral não é a localização típica. O córtex anterior é o padrão de tensão de maior risco, geralmente na face anterior da diáfise média, e não o local mais frequente.",
-   "B": "A alternativa aproxima-se do compartimento anterior, mas a área mais comum é posterior e medial. Confundir dor anterior de sobrecarga com o padrão posteromedial altera também o prognóstico.",
-   "C": "O córtex posterolateral não é o sítio clássico. A carga repetitiva se concentra mais habitualmente na borda posteromedial da diáfise."
+   "A": "**Anterolateral.**\n- Não é o típico.",
+   "B": "**Anteromedial.**\n- Menos comum.",
+   "C": "**Posterolateral.**\n- Não é o típico."
   },
   "referencias": [
    "Chronic Lower Leg Pain in Athletes. https://pmc.ncbi.nlm.nih.gov/articles/PMC6973789/",
    "Stress Fractures of the Foot and Ankle in Athletes. https://pmc.ncbi.nlm.nih.gov/articles/PMC10426306/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0156": {
-  "conceito": "O **ombro flutuante** é a designação da lesão em que a fratura da diáfise da clavícula se associa à fratura da escápula (classicamente do colo), e o conceito nasce do modelo do **complexo suspensório superior do ombro** de Goss.\n\nEsse complexo é um anel osteoligamentar (processo glenoidal, coracoide, ligamentos coracoclaviculares, clavícula distal, articulação acromioclavicular e acrômio) sustentado por duas escoras: a **superior**, o terço médio da clavícula, e a **inferior**, o corpo lateral da escápula com a espinha. Quando apenas um elemento falha, o conjunto se mantém estável. Quando **dois** falham (a escora superior e o anel, no caso), o segmento intermediário perde a suspensão ao esqueleto axial e o fragmento **glenoidal** \"flutua\", deslocando-se em sentido distal e medial pelo peso do membro e pela tração muscular.\n\nAs consequências da consolidação nessa posição são fraqueza da abdução, fadiga, dor e alteração da cinemática escapulotorácica.\n\nA avaliação exige incidência em frente verdadeira da escápula, perfil em Y e tomografia com reconstrução tridimensional, medindo o **ângulo glenopolar** (normal 30 a 45 graus; abaixo de 20 indica cirurgia), a translação (maior que 20 mm) e a angulação (maior que 45 graus).\n\nO tratamento é objeto de debate: lesões com desvio pequeno e periósteo íntegro podem ser conduzidas sem cirurgia, com bons resultados; já as com desvio significativo são operadas, e com frequência a **fixação isolada da clavícula** (tecnicamente mais simples e de menor morbidade) restaura indiretamente a posição da glenoide, dispensando a osteossíntese da escápula.\n\nE há um alerta obrigatório: por ser lesão de alta energia, o ombro flutuante exige procurar ativamente fraturas de costela, pneumotórax, lesão do plexo braquial e da artéria subclávia.",
-  "correta": "A. O ombro flutuante é a associação da fratura da diáfise da clavícula com FRATURA DA ESCÁPULA (classicamente do colo), uma dupla ruptura do complexo suspensório superior, que faz o fragmento glenoidal perder a suspensão ao esqueleto axial.",
+  "conceito": "### Complexo suspensório superior do ombro (Goss)\n- Anel osteoligamentar: ==glenoide, coracoide, ligamentos coracoclaviculares, clavícula distal, acromioclavicular e acrômio==.\n- Suportes: clavícula (anterior) e corpo da escápula/espinha (posterior).\n- Lesão ==dupla== do anel = instabilidade.\n\n### Lesão dupla mais comum\n- ==Clavícula + colo da escápula== (ombro flutuante).\n- Outras: coracoide + AC; acrômio + clavícula.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| pouco desvio | conservador |\n| colo com medialização > 1 cm ou angulação > 40° | fixar clavícula ± escápula |\n\n> **Na prova:** ombro flutuante = clavícula + ==fratura da escápula (colo)==",
+  "correta": "**Fratura da escápula.**\n- Classicamente o colo.\n- Dupla ruptura do SSSC.",
   "incorretas": {
-   "B": "A fratura do terço proximal do úmero associada à da clavícula produz um membro superior gravemente lesado, mas não caracteriza o ombro flutuante: o úmero proximal não faz parte do complexo suspensório superior.",
-   "C": "A ruptura dos ligamentos coracoclaviculares associada à fratura da clavícula é uma dupla ruptura possível do anel, mas a entidade designada como ombro flutuante é definida pela associação com a FRATURA DA ESCÁPULA.",
-   "D": "A ruptura dos ligamentos acromioclaviculares com fratura da clavícula também compromete dois componentes do complexo, mas o termo ombro flutuante ficou consagrado para a combinação com a fratura da escápula."
+   "B": "**Úmero proximal.**\n- Não compõe o anel.",
+   "C": "**Coracoclaviculares.**\n- Combinação com clavícula distal, não ombro flutuante clássico.",
+   "D": "**Acromioclaviculares.**\n- Equivalente ligamentar, não a definição."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0157": {
-  "conceito": "A decisão nessa questão depende de somar dois dados: o tipo da fratura e a presença de **instabilidade longitudinal** do antebraço.\n\nA cabeça do rádio **Mason tipo 3** é a fratura cominutiva, não reconstrutível, e o adjetivo importa, porque a tentativa heroica de fixar uma cabeça em três ou mais fragmentos tem taxas altas de falha, pseudartrose e necrose dos fragmentos; a literatura é consistente em mostrar piores resultados quando se fixa o que não devia ser fixado.\n\nA **instabilidade longitudinal** significa que a membrana interóssea e a articulação radioulnar distal estão comprometidas: é a lesão de Essex-Lopresti, em que os três elos de contenção do antebraço (radioulnar proximal, membrana interóssea e radioulnar distal) falharam e o rádio perdeu qualquer anteparo contra a migração proximal. Nesse cenário, a cabeça do rádio deixa de ser um estabilizador secundário e passa a ser a única coisa que impede o rádio de subir.\n\nSomados os dois dados, a conclusão é obrigatória: é preciso **restaurar o comprimento** com uma artroplastia, e a ressecção está formalmente contraindicada.\n\nVale conhecer os cuidados técnicos da prótese, porque eles determinam o resultado: escolher a altura pela peça ressecada remontada fora do campo, e confirmar na radiografia em AP que a articulação **ulnoumeral** permaneceu paralela, um alargamento do lado lateral desse espaço denuncia o overstuffing, que produz sobrecarga e erosão do capítulo, a principal complicação da artroplastia.\n\nCompleta-se o tratamento estabilizando a articulação radioulnar distal, habitualmente em **supinação** por quatro a seis semanas, com ou sem fio transfixante, e reparando o complexo colateral lateral quando também está lesado.\n\nE vale a advertência que resume o assunto: o momento de tratar a Essex-Lopresti é o **agudo**, a reconstrução crônica, com encurtamento da ulna e artroplastia tardia, tem resultado incomparavelmente pior.",
-  "correta": "B. A artroplastia com IMPLANTE é o tratamento indicado: a fratura Mason 3 não é reconstrutível e a instabilidade longitudinal do antebraço torna a cabeça do rádio o único anteparo contra a migração proximal do rádio, de modo que o comprimento precisa ser restaurado.",
+  "conceito": "### Essex-Lopresti crônica\n- Membrana interóssea cicatrizada encurtada; ==migração proximal do rádio==: ulna positiva, impacto ulnocarpal, dor no punho e cotovelo.\n- Nenhum procedimento isolado resolve bem.\n\n### Estratégia\n| Componente | Procedimento |\n|---|---|\n| punho (ulna positiva) | ==encurtamento da ulna== |\n| cotovelo (cabeça ressecada/deformada) | ==artroplastia da cabeça do rádio== (restaura suporte longitudinal) |\n| membrana interóssea | reconstrução (enxerto de tendão, TightRope) |\n| salvamento | antebraço de um osso |\n\n- ==Nunca== ressecar a cabeça do rádio: agrava a migração.\n\n### Agudo\n- Mason III (cominutiva, irreconstruível) + instabilidade longitudinal (Essex-Lopresti) = ==artroplastia com implante==.\n- Ressecção isolada é ==contraindicada==: migração proximal do rádio.\n\n> **Na prova:** Mason III + instabilidade longitudinal = ==artroplastia com implante==",
+  "correta": "**Artroplastia com implante.**\n- Restaura o suporte longitudinal.\n- Cominução impede fixar.",
   "incorretas": {
-   "A": "A artroplastia de ressecção é formalmente CONTRAINDICADA aqui. Removida a cabeça em um antebraço com membrana interóssea rota, o rádio migra proximalmente sem qualquer contenção, produzindo variância ulnar positiva, impacto ulnocarpal e dor crônica no punho, a sequela clássica da lesão de Essex-Lopresti mal tratada.",
-   "C": "A fixação com parafusos canulados serve às fraturas de traço simples, com dois ou três fragmentos grandes (tipo 2 e alguns tipo 3 favoráveis). Uma cabeça verdadeiramente cominutiva não oferece fragmentos com massa óssea suficiente para o parafuso, e a fixação falha.",
-   "D": "A placa com parafusos bloqueados tem indicação nas fraturas do COLO com cominuição metafisária, aplicada na zona de segurança. Não resolve uma cabeça articular fragmentada, e a placa proeminente fora do arco não articulante ainda bloquearia a pronossupinação."
+   "A": "**Ressecção.**\n- Rádio migra proximalmente.",
+   "C": "**Parafusos.**\n- Cominução irreconstruível.",
+   "D": "**Placa.**\n- Falha em cominução grave."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0158": {
-  "conceito": "A regra que resolve praticamente qualquer questão sobre a classificação de **Bado** é uma só: o nome do tipo é dado pelo sentido da luxação da cabeça do rádio, e a cabeça se desloca sempre para o mesmo lado do ápice da angulação da ulna.\n\n- **Tipo I**: cabeça anterior, ulna em ápice anterior; é o mais frequente no conjunto, cerca de 60%, e o padrão da criança\n- **Tipo II**: cabeça posterior (ou posterolateral), ulna em ápice posterior; é o padrão do adulto, sobretudo do mais velho, e o de piores resultados\n- **Tipo III**: cabeça lateral, com fratura metafisária da ulna proximal; quase exclusivo da criança e o mais associado à lesão do nervo interósseo posterior\n- **Tipo IV**: cabeça anterior com fratura dos dois ossos do antebraço no mesmo nível; o mais raro e o de maior risco de sinostose radioulnar\n\nVale detalhar o tipo II, que é o que a questão cobra. **Jupiter** subclassificou-o em quatro subtipos conforme o nível do traço da ulna:\n- **IIA**: na incisura troclear distal, envolvendo o processo coronoide\n- **IIB**: na junção metafisodiafisária, distal ao coronoide, o subtipo mais comum\n- **IIC**: diafisário\n- **IID**: com traço cominuído que se estende do olécrano à diáfise\n\nEssa subclassificação importa porque o tipo II frequentemente não é uma Monteggia \"pura\": compromete a incisura troclear, leva junto o coronoide e vem acompanhado de fratura da cabeça do rádio, funcionando como fratura-luxação complexa do cotovelo, com instabilidade posterior. A distinção com a luxação simples se faz pela linha **radiocapitelar**, que deve cruzar o centro do capítulo em todas as incidências.\n\nE há uma armadilha de imobilização a evitar: enquanto o tipo I se estabiliza em supinação e flexão acentuada, no tipo II a flexão acentuada tende a **reluxar** a cabeça posteriormente, e o cotovelo é mantido em relativa extensão. Mas, no adulto, o tratamento é cirúrgico de qualquer modo, com placa dorsal na ulna proximal moldada à sua curvatura.",
-  "correta": "B. A luxação POSTERIOR da cabeça do rádio caracteriza o tipo II de Bado, o padrão do adulto, com a ulna angulada em ápice posterior, frequentemente comprometendo o coronoide e associado a fratura da cabeça do rádio.",
+  "conceito": "### Monteggia: prognóstico\n| Grupo | Resultado |\n|---|---|\n| criança | bom na maioria (redução fechada) |\n| adulto tipo I | bom com placa na ulna |\n| ==adulto tipo II== | ==pior==: idoso, osso porótico, ==fratura da cabeça do rádio e do coronoide== associadas, instabilidade |\n\n### Bado II (Jupiter)\n| Subtipo | Nível da fratura da ulna |\n|---|---|\n| IIA | olécrano distal, envolvendo coronoide |\n| IIB | metáfise-diáfise, distal ao coronoide |\n| IIC | diafisária |\n| IID | proximal à metade da ulna, cominutiva |\n\n### Complicações\n- Instabilidade, rigidez, sinostose, pseudartrose, lesão do interósseo posterior.\n\n> **Na prova:** cabeça do rádio posterior = ==Bado 2==",
+  "correta": "**Tipo II.**\n- Cabeça posterior.\n- Ápice da ulna posterior.",
   "incorretas": {
-   "A": "O tipo I é a luxação ANTERIOR da cabeça do rádio, com a ulna em ápice anterior. É o tipo mais frequente no conjunto e o padrão da criança, em que a redução incruenta com supinação e flexão acentuada costuma bastar.",
-   "C": "O tipo III é a luxação LATERAL da cabeça do rádio, com fratura metafisária ou em galho verde da ulna proximal. É quase exclusivo da criança e o que mais se associa à paralisia do nervo interósseo posterior.",
-   "D": "O tipo IV é a luxação ANTERIOR da cabeça do rádio somada à fratura dos DOIS ossos do antebraço no mesmo nível, o mais raro e o de maior risco de sinostose radioulnar. Nem o sentido da luxação nem o padrão da fratura correspondem ao que a questão descreve."
+   "A": "**I.**\n- Anterior.",
+   "C": "**III.**\n- Lateral.",
+   "D": "**IV.**\n- Anterior + dois ossos."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0159": {
-  "conceito": "Embora a combinação de luxação esternoclavicular com luxação acromioclavicular seja uma apresentação rara (cada uma dessas lesões já é incomum isoladamente), quando ocorrem juntas a direção do deslocamento esternoclavicular tende a acompanhar o padrão epidemiológico geral dessa lesão: a luxação esternoclavicular **anterior** é, disparadamente, a mais frequente entre todas as luxações dessa articulação, seja isolada, seja associada a outras lesões do complexo do ombro.\n\nIsso decorre da própria anatomia da articulação: o ligamento capsular **posterior** da esternoclavicular é a estrutura mais robusta de todo o complexo ligamentar dessa articulação (discutido em outras questões deste acervo como o principal restritor à translação anteroposterior), e sua resistência superior faz com que, na maioria dos mecanismos de trauma que solicitam essa articulação, a falha ocorra primeiro anteriormente, produzindo o deslocamento anterior muito mais comumente do que o posterior, que exige uma força e uma direção de impacto mais específicas para vencer essa estrutura posterior mais resistente.\n\nVale lembrar a diferença prática entre as duas direções: a luxação anterior costuma ser tratada de forma conservadora, mesmo quando redunda em subluxação crônica residual (que dá pouco sintoma funcional), enquanto a luxação posterior é a verdadeira emergência do grupo, pelo risco de compressão da traqueia, do esôfago, dos grandes vasos mediastinais e do plexo braquial, exigindo redução com cirurgião torácico disponível.",
-  "correta": "C. A luxação esternoclavicular anterior é a mais frequente entre todas as apresentações dessa lesão, inclusive quando combinada à luxação acromioclavicular, refletindo a maior resistência do ligamento capsular posterior em relação às demais estruturas dessa articulação.",
+  "conceito": "### Luxação bipolar da clavícula (clavícula flutuante)\n- Luxação ==esternoclavicular + acromioclavicular== simultâneas: rara, alta energia.\n- Direções mais comuns: ==ES anterior== + AC posterior.\n\n### Luxação esternoclavicular isolada\n| Direção | Frequência | Gravidade |\n|---|---|---|\n| ==anterior== | ==a mais comum== | benigna, instável, conservadora |\n| posterior | rara | emergência (mediastino) |\n\n### Tratamento da bipolar\n- Jovens ativos: estabilizar a AC (e a ES se instável); conservador em baixa demanda.\n\n> **Na prova:** ES combinada à AC = mais frequentemente ==anterior==",
+  "correta": "**Anterior.**\n- Direção mais frequente.\n- Na clavícula flutuante também.",
   "incorretas": {
-   "A": "A direção inferior não é um padrão reconhecido de luxação esternoclavicular, as duas direções clinicamente relevantes dessa lesão são a anterior e a posterior.",
-   "B": "'Superior' também não corresponde a uma direção reconhecida de luxação esternoclavicular, a nomenclatura clássica dessa lesão distingue apenas anterior e posterior.",
-   "D": "A luxação esternoclavicular posterior é bem menos frequente do que a anterior, exigindo uma força e direção de impacto específicas para vencer a resistência do ligamento capsular posterior."
+   "A": "**Inferior.**\n- Rara.",
+   "B": "**Superior.**\n- Rara.",
+   "D": "**Posterior.**\n- Menos frequente, mais grave."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0160": {
-  "conceito": "Os tempos de tolerância à isquemia são a base do senso de urgência na síndrome compartimental, e vale memorizá-los em dois pares (o do começo da disfunção e o do dano irreversível), para cada tecido.\n\n- **Nervo**: a alteração da função começa cedo, por volta de 30 minutos de isquemia, e é ela que explica a parestesia precoce; o dano irreversível, com degeneração axonal, instala-se de forma progressiva a partir de 12 a 24 horas.\n- **Músculo**: a alteração funcional começa em torno de 2 a 4 horas, e a necrose irreversível se estabelece a partir de 4 a 12 horas, com a maioria das fontes situando o ponto sem retorno entre 6 e 8 horas.\n\nÉ essa diferença de sensibilidade que explica a sequência clínica: a parestesia aparece antes da paresia, e a paresia antes da necrose. E é ela que justifica a máxima da urgência: cada hora de atraso conta, e a fasciotomia feita depois de 8 a 12 horas de isquemia estabelecida deixa de ser um procedimento de salvamento e passa a ser um procedimento de risco — abrir um compartimento com músculo já necrótico expõe o paciente à infecção e à síndrome de reperfusão, com rabdomiólise, hipercalemia, acidose e insuficiência renal aguda por mioglobinúria. Em casos de isquemia muito prolongada e músculo comprovadamente inviável, alguns autores defendem não abrir e considerar a amputação, decisão difícil que ilustra bem por que o tempo é o eixo do assunto.\n\nGuarde também as duas sequelas da falha diagnóstica: a **contratura isquêmica de Volkmann**, no antebraço, com a mão em garra por retração dos flexores; e, na perna, o pé equinovaro com garra dos dedos por acometimento do compartimento posterior profundo, além do pé caído quando o compartimento anterior é o afetado.",
-  "correta": "B. Segundo Matsen, a alteração da função NERVOSA começa a partir de aproximadamente 30 MINUTOS de isquemia, o tecido mais sensível do compartimento, e a razão de a parestesia ser um sinal relativamente precoce.",
+  "conceito": "### Tolerância à isquemia (Matsen)\n| Tecido | Disfunção | Lesão irreversível |\n|---|---|---|\n| ==nervo== | ==30 min== | 12 a 24 h |\n| músculo | 2 a 4 h | ==4 a 8 h== (necrose) |\n\n### Implicação\n- Parestesia surge cedo (nervo); a necrose muscular define a urgência da fasciotomia (< 6 h do início).\n- Fasciotomia tardia (> 8 a 12 h, músculo morto): risco de infecção e insuficiência renal (mioglobinúria); às vezes melhor não abrir.\n\n> **Na prova:** nervo altera a função a partir de ==30 min==",
+  "correta": "**30 min.**\n- Disfunção nervosa precoce.\n- Parestesia antecede a necrose.",
   "incorretas": {
-   "A": "Dez minutos é um tempo muito curto: nesse intervalo ainda não há alteração funcional mensurável do nervo, e a reperfusão é completa e sem sequela. É a ordem de grandeza de uma isquemia por posicionamento, não de uma síndrome compartimental.",
-   "C": "Sessenta minutos já está além do início da disfunção nervosa. A essa altura a parestesia costuma estar instalada, e o relógio da lesão muscular (que começa entre 2 e 4 horas) já corre.",
-   "D": "Noventa minutos é tempo suficiente para disfunção nervosa bem estabelecida e aproxima-se da faixa em que o músculo começa a sofrer. Aceitar esse valor como o início do dano nervoso atrasaria perigosamente a percepção da urgência."
+   "A": "**10 min.**\n- Cedo demais.",
+   "C": "**60 min.**\n- Já há alteração antes.",
+   "D": "**90 min.**\n- Tardio para o início."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0161": {
