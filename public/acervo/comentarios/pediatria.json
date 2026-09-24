@@ -120,125 +120,125 @@
   "conferido": false
  },
  "pediatria-0009": {
-  "conceito": "A hemimelia fibular é uma deficiência longitudinal que vai muito além da ausência ou hipoplasia da fíbula. O espectro pode incluir encurtamento tibial e femoral, deformidade do pé e tornozelo, deficiência dos raios laterais e alterações do joelho. No joelho, a **hipoplasia do côndilo femoral lateral** é uma associação típica. Também são comuns hipoplasia ou aplasia dos ligamentos cruzados anterior e posterior, o que explica instabilidade no plano sagital, isto é, anteroposterior. A deformidade frontal, como valgo, pode coexistir, mas a pergunta associa especificamente a morfologia condilar à insuficiência dos cruzados e à instabilidade anteroposterior.",
-  "correta": "A alternativa A está correta. Na hemimelia fibular, pode haver hipoplasia do côndilo femoral lateral e deficiência dos ligamentos cruzados, levando a instabilidade anteroposterior do joelho. O quadro deve ser entendido como uma malformação global do membro: o mesmo processo de desenvolvimento que altera a fíbula pode alterar côndilos, espinhas tibiais, meniscos e cruzados. Antes de alongamentos, a estabilidade e o alinhamento do joelho precisam ser avaliados, porque a instabilidade pode ficar mais evidente com o crescimento e com a correção do comprimento.",
+  "conceito": "### Hemimelia fibular\n- Deficiência longitudinal ==pós-axial==; a mais comum dos ossos longos.\n- Espectro: fíbula ausente ou hipoplásica, tíbia curta e arqueada (anteromedial, com covinha), fêmur curto, pé equinovalgo, ==raios laterais ausentes==, coalizão tarsal (bola e soquete no tornozelo).\n\n### Joelho\n| Achado | Consequência |\n|---|---|\n| ==hipoplasia do côndilo femoral lateral== | joelho valgo |\n| ==cruzados hipoplásicos ou ausentes== | ==instabilidade anteroposterior== |\n| espinhas tibiais pequenas | |\n\n### Classificações e tratamento\n- Achterman-Kalamchi, Paley (baseada no tornozelo e reconstrutibilidade).\n- Discrepância prevista e pé funcional decidem entre ==alongamento== (Paley SUPERankle) e ==Syme== + prótese.\n\n> **Na prova:** hemimelia fibular = ==côndilo lateral hipoplásico e instabilidade AP==.",
+  "correta": "**Côndilo lateral e instabilidade AP.**\n- Cruzados deficientes: instabilidade sagital.\n- Avaliar antes de qualquer alongamento.",
   "incorretas": {
-   "B": "A hipoplasia lateral está corretamente associada à hemimelia fibular, mas a instabilidade em varo e valgo descreve predominantemente falha dos estabilizadores colaterais ou grande desalinhamento frontal. A associação clássica cobrada é deficiência cruzada e instabilidade anteroposterior.",
-   "C": "O côndilo envolvido tipicamente é o lateral, não o medial. A predominância lateral acompanha outras alterações postaxiais, como deficiência da fíbula e dos raios laterais do pé.",
-   "D": "A alternativa erra tanto a topografia condilar quanto o padrão principal de instabilidade. A instabilidade do joelho na hemimelia fibular é frequentemente sagital, relacionada a cruzados hipoplásicos ou ausentes."
+   "B": "**Instabilidade errada.**\n- Varo-valgo é colateral; o padrão é cruzado.",
+   "C": "**Côndilo errado.**\n- É o lateral.",
+   "D": "**Duplamente errada.**\n- Côndilo e instabilidade."
   },
   "referencias": [
    "Surgical reconstruction for fibular hemimelia. https://pmc.ncbi.nlm.nih.gov/articles/PMC5145840/",
    "The unstable knee in congenital limb deficiency. https://pmc.ncbi.nlm.nih.gov/articles/PMC5145834/",
    "Postaxial limb hypoplasia: clinical features. https://pmc.ncbi.nlm.nih.gov/articles/PMC5730483/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0010": {
-  "conceito": "Maus-tratos infantis abrangem abuso físico, abuso sexual, violência emocional e negligência. Em epidemiologia de proteção à infância, negligência é tradicionalmente o tipo mais frequente identificado nos sistemas de vigilância. Ela inclui falha persistente em prover necessidades básicas compatíveis com o contexto: alimentação, abrigo, supervisão, assistência médica, educação e proteção. Para o ortopedista, a relevância vai além da epidemiologia. Uma fratura suspeita deve ser interpretada em conjunto com idade, capacidade de deambulação, mecanismo informado, atraso na procura por atendimento, incompatibilidade entre história e lesão e presença de múltiplas lesões ou fraturas de idades diferentes. Nenhum achado isolado substitui avaliação clínica e multidisciplinar. Negligência também não deve ser confundida automaticamente com pobreza: o conceito exige incapacidade ou omissão de cuidado dentro do contexto clínico e social.",
-  "correta": "A alternativa D está correta. A negligência é descrita como a forma mais frequente de maus-tratos em crianças nos sistemas de proteção e vigilância. Ela pode ser menos visível que o abuso físico, mas apresenta grande impacto cumulativo sobre saúde e desenvolvimento.",
+  "conceito": "### Tipos de maus-tratos\n| Tipo | Frequência |\n|---|---|\n| ==negligência== | ==a mais comum== |\n| abuso físico | o mais visto pelo ortopedista |\n| emocional | frequente, coexistente |\n| sexual | subnotificado |\n\n### Fraturas suspeitas de abuso físico\n| Alta especificidade | Moderada |\n|---|---|\n| ==lesão metafisária clássica== (canto, alça de balde) | fraturas múltiplas em estágios diferentes |\n| ==costelas posteriores== | fratura de crânio complexa |\n| escápula, processos espinhosos, esterno | vértebras, dedos em não deambulante |\n\n### Alertas\n- Fratura de fêmur em criança que não anda.\n- História incompatível, atraso na busca de atendimento.\n- Conduta: ==inventário esquelético== (< 2 anos), fundo de olho, notificação obrigatória.\n\n> **Na prova:** maus-tratos mais frequentes = ==negligência==.",
+  "correta": "**Negligência.**\n- Categoria mais frequente nos registros de proteção.\n- Menos visível, grande impacto cumulativo.",
   "incorretas": {
-   "A": "O abuso físico tem enorme relevância clínica, principalmente diante de fraturas suspeitas, mas não é a categoria mais frequente quando se consideram os registros globais de maus-tratos.",
-   "B": "O abuso sexual é uma forma grave e subnotificada de violência, porém não corresponde à categoria mais frequente nos dados de proteção infantil.",
-   "C": "O abuso emocional é comum e frequentemente coexistente com outras formas de maus-tratos, mas não supera a negligência nos registros tradicionais."
+   "A": "**Relevante, não o mais comum.**\n- O mais visto pelo ortopedista.",
+   "B": "**Grave e subnotificado.**\n- Não é o mais comum.",
+   "C": "**Comum e coexistente.**\n- Não supera a negligência."
   },
   "referencias": [
    "U.S. Child Welfare Information Gateway. Child Neglect: A Guide for Prevention, Assessment, and Intervention. https://www.childwelfare.gov/pubPDFs/neglect_ch2.pdf",
    "World Health Organization. Child maltreatment. https://www.who.int/news-room/fact-sheets/detail/child-maltreatment"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0011": {
-  "conceito": "Na hemofilia, sangramentos musculoesqueléticos predominam em articulações, mas hematomas intramusculares profundos também são relevantes por risco de anemia, neuropatia compressiva e síndrome compartimental. Os músculos grandes da coxa, especialmente o **quadríceps femoral**, são o local intramuscular mais frequentemente acometido. O psoas é menos comum, porém clinicamente perigoso porque pode provocar neuropatia femoral e simular abdome agudo. A investigação considera dor, aumento de volume, queda de hemoglobina e limitação funcional; a reposição do fator é prioritária antes de punções, fisioterapia agressiva ou procedimentos invasivos.",
-  "correta": "A alternativa D está correta. O quadríceps femoral é o músculo em que a hemorragia intramuscular ocorre com maior frequência na hemofilia. Seu grande volume e exposição a microtraumas ajudam a explicar o padrão. O ponto prático é não banalizar dor ou aumento de volume de coxa em paciente hemofílico: hematoma pode expandir, limitar joelho e quadril e demandar tratamento hemostático precoce.",
+  "conceito": "### Hemofilia na ortopedia\n| Tipo | Deficiência |\n|---|---|\n| A | fator VIII (mais comum) |\n| B | fator IX |\n\n### Sangramentos\n| Local | Comentário |\n|---|---|\n| articulações | joelho > cotovelo > tornozelo; artropatia hemofílica |\n| ==intramuscular mais comum== | ==quadríceps femoral== |\n| psoas-ilíaco | ==grave==: neuropatia femoral, simula apendicite, quadril em flexão |\n| antebraço, panturrilha | síndrome compartimental |\n\n### Condutas\n- ==Reposição do fator== antes de qualquer procedimento.\n- Pseudotumor hemofílico: lesão expansiva óssea.\n- Artropatia: sinovectomia (radioisotópica), artroplastia.\n\n> **Na prova:** hematoma intramuscular mais comum na hemofilia = ==quadríceps==.",
+  "correta": "**Quadríceps femoral.**\n- Músculo grande e exposto a microtraumas.\n- Tratar cedo com reposição do fator.",
   "incorretas": {
-   "A": "O sartório é músculo superficial e delgado; não é o local mais comum de hematoma muscular na hemofilia. A alternativa tenta distrair com um músculo da coxa, mas o grupo de maior relevância é o quadríceps.",
-   "B": "O psoas maior pode sangrar e tem grande importância clínica por risco de compressão do nervo femoral. Entretanto, não é o local de maior frequência entre as opções; deve ser lembrado como localização de gravidade, não como a mais comum.",
-   "C": "O tríceps sural pode ser acometido após trauma ou esforço, mas hematomas em panturrilha são menos frequentes que no quadríceps femoral."
+   "A": "**Delgado e superficial.**\n- Não é o mais comum.",
+   "B": "**Grave, não o mais comum.**\n- Compressão do nervo femoral.",
+   "C": "**Menos frequente.**\n- Panturrilha."
   },
   "referencias": [
    "Musculoskeletal complications of hemophilia. https://pmc.ncbi.nlm.nih.gov/articles/PMC4691997/",
    "World Federation of Hemophilia Guidelines. https://www1.wfh.org/publications/files/pdf-1863.pdf"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0012": {
-  "conceito": "O quadril embrionário desenvolve-se a partir de uma massa mesenquimal contínua. Antes de existir uma cavidade articular verdadeira, o esboço femoral e o acetabular estão intimamente relacionados e separados posteriormente por uma interzona especializada. A partir dessa região derivam estruturas articulares, incluindo cartilagem da cabeça femoral e do acetábulo, sinóvia, ligamento redondo, pulvinar e lábio acetabular. Esse desenvolvimento conjunto explica um princípio essencial da displasia do desenvolvimento do quadril: o desenvolvimento do acetábulo e do fêmur proximal é interdependente. Uma cabeça femoral concentrada dentro do acetábulo funciona como estímulo mecânico para crescimento acetabular adequado; a perda de concentricidade durante a infância compromete progressivamente a morfologia de ambos os componentes.",
-  "correta": "A alternativa A está correta. Cabeça femoral e acetábulo originam-se de uma massa mesenquimal comum, que posteriormente se diferencia e forma a articulação por meio do desenvolvimento da interzona. Por isso, não se trata de dois tecidos embrionários completamente independentes.",
+  "conceito": "### Embriologia do quadril\n- ==Massa mesenquimal única e contínua== forma o esboço femoral e o acetabular (4ª a 6ª semana).\n- A ==interzona== se cavita (7ª semana) e origina a articulação: cartilagens, sinovial, ligamento redondo, pulvinar, lábio.\n- Articulação formada por volta da 11ª semana.\n\n### Por que importa na DDQ\n- Cabeça e acetábulo ==dependem um do outro==: a cabeça centrada é o estímulo para o acetábulo se aprofundar.\n- Redução concêntrica precoce permite remodelação acetabular.\n\n### Fatores de risco da DDQ\n- Primogênita, feminino, pélvica, história familiar, oligoidrâmnio, torcicolo, metatarso aduto.\n\n> **Na prova:** acetábulo e cabeça femoral vêm do ==mesmo tecido mesenquimal==.",
+  "correta": "**Mesmo tecido mesenquimal.**\n- Massa contínua que se separa pela interzona.\n- Explica a interdependência na DDQ.",
   "incorretas": {
-   "B": "Acetábulo e cabeça femoral não surgem de dois tecidos mesenquimais independentes; o desenvolvimento inicial ocorre dentro de uma massa mesenquimal contínua.",
-   "C": "A alternativa separa tanto os tecidos quanto as células de origem, contrariando a continuidade embrionária do esboço articular.",
-   "D": "Embora reconheça um mesmo tecido, introduz uma separação entre populações mesenquimais como se fossem origens distintas. A formulação clássica é de uma massa mesenquimal comum que posteriormente se diferencia."
+   "B": "**Não independentes.**\n- Massa contínua.",
+   "C": "**Separação inexistente.**\n- Mesma origem.",
+   "D": "**Separação celular errada.**\n- Massa comum."
   },
   "referencias": [
    "Hip preservation surgery and the acetabular fossa: a canary in a coal mine? Embryonic and postnatal development section. https://pmc.ncbi.nlm.nih.gov/articles/PMC9021901/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0013": {
-  "conceito": "A hemimelia tibial é uma deficiência longitudinal pré-axial rara em que a tíbia pode variar de discretamente hipoplásica a completamente ausente, enquanto a fíbula permanece relativamente preservada. Nos casos de ausência completa, todo o mecanismo extensor e a anatomia do joelho podem estar gravemente comprometidos. A patela pode estar ausente, o quadríceps pode ser deficiente e a estabilidade do joelho deve ser cuidadosamente determinada, pois a função ativa do quadríceps é um dos fatores fundamentais na decisão entre reconstrução e procedimentos ablativos. O pé costuma apresentar deformidade rígida em equinovaro, frequentemente com anomalias de raios e duplicações. Em prova, a associação de ausência completa da tíbia com patela ausente e pé varo/equinovaro é característica.",
-  "correta": "A alternativa A está correta. Na forma grave com ausência completa da tíbia, são descritas ausência ou importante hipoplasia do aparelho extensor, incluindo a patela, associadas tipicamente a deformidade rígida do pé em varo/equinovaro.",
+  "conceito": "### Hemimelia tibial\n- Deficiência longitudinal ==pré-axial==, rara; fíbula preservada (às vezes hipertrofiada).\n- Frequentemente hereditária (dominante) e associada a mão fendida, polidactilia.\n\n### Forma completa\n| Achado | Detalhe |\n|---|---|\n| ==patela== | ==ausente== ou hipoplásica |\n| quadríceps | deficiente |\n| joelho | instável, em flexão |\n| ==pé== | ==equinovaro rígido== |\n\n### Jones\n| Tipo | Tíbia |\n|---|---|\n| 1a | ausente, epífise distal do fêmur hipoplásica |\n| 1b | ausente, epífise femoral normal |\n| 2 | tíbia distal ausente |\n| 3 | tíbia proximal ausente |\n| 4 | diástase tibiofibular distal |\n\n### Tratamento\n- Sem quadríceps ativo: ==desarticulação do joelho== + prótese.\n- Com quadríceps: centralização da fíbula (Brown).\n\n> **Na prova:** ausência completa da tíbia = ==patela ausente e pé varo==.",
+  "correta": "**Patela ausente e pé varo.**\n- Aparelho extensor deficiente.\n- Pé equinovaro rígido.",
   "incorretas": {
-   "B": "O pé varo é compatível com a deformidade, mas a presença normal da patela não corresponde ao padrão clássico da ausência tibial completa.",
-   "C": "A ausência da patela pode ocorrer, porém a deformidade típica do pé é varo/equinovaro, e não valgo.",
-   "D": "Combina duas características inadequadas para a forma completa: preservação patelar e pé valgo."
+   "B": "**Patela presente não.**\n- Não é o padrão da forma completa.",
+   "C": "**Pé valgo não.**\n- É varo.",
+   "D": "**Duplamente errada.**\n- Patela e pé."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Tibial Hemimelia. https://posna.org/physician-education/study-guide/tibial-hemimelia",
    "Intraoperative sectional anatomy of congenital absence of tibia type IA. https://pubmed.ncbi.nlm.nih.gov/10367527/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0014": {
-  "conceito": "A luxação congênita da cabeça do rádio deve ser diferenciada de luxação traumática crônica, como a de uma lesão de Monteggia não reconhecida. Na forma congênita, os achados radiográficos e clínicos costumam incluir cabeça radial arredondada ou em domo, capítulo hipoplásico, ulna e rádio com alterações de comprimento e deformidade progressiva da cabeça radial. Ela é frequentemente **bilateral** e pode estar associada a sinostose radioulnar proximal, deformidades do membro superior e síndromes genéticas. A direção mais comum do deslocamento é posterior ou posterolateral. Muitas crianças permanecem pouco sintomáticas até adolescência, quando aparecem limitação de extensão, de pronação-supinação, dor ou proeminência lateral.",
-  "correta": "A alternativa A está correta. Na maioria dos casos, a luxação congênita da cabeça do rádio é bilateral e acompanha outras manifestações congênitas. Esse padrão bilateral e associado é uma pista útil contra causa traumática. A bilateralidade não significa que ambos os lados terão igual limitação funcional, mas reforça que se trata de alteração de desenvolvimento e exige exame do membro contralateral e busca de outras malformações.",
+  "conceito": "### Luxação congênita da cabeça do rádio\n- Anomalia congênita mais comum do cotovelo.\n- ==Bilateral== na maioria e ==associada== a outras manifestações (sinostose, síndromes como nail-patella, Ehlers-Danlos, Larsen).\n- Direção mais comum: ==posterior==.\n\n### Congênita × Monteggia crônico\n| Achado | Congênita | Traumática |\n|---|---|---|\n| lado | bilateral | unilateral |\n| cabeça | ==convexa (cúpula)==, pequena | côncava, normal |\n| capítulo | hipoplásico | normal |\n| ulna | reta | deformidade plástica |\n| direção | posterior | anterior |\n\n### Tratamento\n- Observação; ressecção da cabeça após a maturidade se dor.\n\n> **Na prova:** luxação congênita da cabeça do rádio = ==bilateral e associada==.",
+  "correta": "**Bilateral e associada.**\n- Pista contra causa traumática.\n- Examinar o outro lado e procurar síndromes.",
   "incorretas": {
-   "B": "A forma congênita pode ser unilateral, mas a apresentação mais habitual é bilateral. A presença de associações está correta, porém a lateralidade proposta não representa o padrão predominante.",
-   "C": "A bilateralidade está correta, mas afirmar ausência de associações contraria a característica clássica da condição. Sinostose radioulnar e síndromes do desenvolvimento são exemplos importantes de associações.",
-   "D": "A combinação unilateral e isolada pode ocorrer, porém não descreve a maioria dos casos. Uma luxação unilateral sem achados congênitos também exige investigação cuidadosa de trauma prévio e lesão de Monteggia negligenciada."
+   "B": "**Lateralidade errada.**\n- Predomina bilateral.",
+   "C": "**Associações existem.**\n- Sinostose, síndromes.",
+   "D": "**Não é o padrão.**\n- Unilateral isolada: pensar em Monteggia."
   },
   "referencias": [
    "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
    "Congenital radial head dislocation: narrative review. https://pubmed.ncbi.nlm.nih.gov/42611687/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0015": {
-  "conceito": "As osteocondroses e apofisites do pé pediátrico são frequentemente cobradas pela associação entre epônimo, idade e localização anatômica. A doença de Köhler é osteonecrose/osteocondrose do navicular tarsal na infância, mais comum em meninos por volta de 4 a 7 anos, e produz dor e edema no mediopé medial. Radiograficamente, o navicular pode aparecer achatado, esclerótico e fragmentado. A doença de Iselin, em contraste, é uma apofisite de tração da tuberosidade da base do quinto metatarsal, relacionada à tração do fibular curto em crianças e adolescentes fisicamente ativos. O diagnóstico diferencial de Iselin inclui fratura por avulsão e fratura de Jones; reconhecer a orientação longitudinal da apófise e a localização da dor ajuda a evitar confusão.",
-  "correta": "A alternativa A está correta. Köhler acomete o navicular tarsal, enquanto Iselin é uma apofisite da tuberosidade/base do quinto metatarsal. Essa associação anatômica deve ser memorizada porque é frequentemente utilizada em questões de prova.",
+  "conceito": "### Osteocondroses e apofisites do pé\n| Epônimo | Local | Idade/perfil |\n|---|---|---|\n| ==Köhler== | ==navicular== | meninos de 4 a 7 anos; autolimitada |\n| ==Iselin== | ==base do 5º metatarso== (fibular curto) | adolescente ativo |\n| Freiberg | cabeça do 2º metatarso | adolescente feminina |\n| Sever | apófise do calcâneo (tendão calcâneo) | 8 a 12 anos, esportes |\n| Renander | sesamoide do hálux | |\n\n### Köhler\n- Navicular achatado, esclerótico, fragmentado.\n- Tratamento: bota gessada curta alivia a dor; reossifica sem sequela.\n\n### Iselin\n- Não confundir apófise (longitudinal) com fratura (transversa).\n\n> **Na prova:** Köhler = ==navicular==; Iselin = ==base do 5º metatarso==.",
+  "correta": "**Navicular e base do 5º metatarso.**\n- Köhler: osteocondrose do navicular.\n- Iselin: apofisite de tração do fibular curto.",
   "incorretas": {
-   "B": "A cabeça do segundo metatarsal é classicamente associada à doença de Freiberg, e não à doença de Köhler. Iselin também não acomete o navicular.",
-   "C": "A tuberosidade posterior do calcâneo está relacionada à doença de Sever, enquanto o navicular corresponde a Köhler.",
-   "D": "A base do quinto metatarsal está corretamente relacionada a Iselin, mas Köhler não acomete a cabeça do terceiro metatarsal; acomete o navicular."
+   "B": "**Freiberg.**\n- Cabeça do 2º MT.",
+   "C": "**Sever.**\n- Calcâneo.",
+   "D": "**Köhler errado.**\n- Não é o 3º MT."
   },
   "referencias": [
    "Kohler Disease. StatPearls/NCBI Bookshelf. https://www.ncbi.nlm.nih.gov/books/NBK507831/",
    "Iselin's Disease: A Systematic Review. https://pubmed.ncbi.nlm.nih.gov/28842092/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0016": {
-  "conceito": "A doença de Blount é uma alteração do crescimento medial da fise tibial proximal que produz varo progressivo, inclinação do planalto medial e rotação interna da tíbia. A classificação radiográfica de **Langenskiöld** tem seis estágios e descreve a progressão da deformidade fisária e epifisária. Nos estágios iniciais há irregularidade e depressão medial; nos estágios intermediários a epífise se fragmenta e a fise se estreita; no estágio IV aparece uma ponte óssea medial através da fise. Os estágios V e VI mostram deformidade progressivamente mais grave e fechamento/alteração marcada da fise. A classificação ajuda no prognóstico porque a presença de barra fisária reduz a capacidade de correção por crescimento e frequentemente exige planejamento reconstrutivo mais complexo.",
-  "correta": "A alternativa C está correta. A barra óssea trans-fisária na tíbia vara de Blount é característica a partir do estágio **IV de Langenskiöld**. Esse marco diferencia estágios potencialmente mais responsivos ao crescimento guiado ou a osteotomias de menor complexidade de apresentações com dano fisário estabelecido. Em uma prova, associe estágio IV à ponte óssea medial; não é apenas uma deformidade angular, mas uma alteração que atravessa a placa de crescimento.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n> **Na prova:** barra óssea na Blount = a partir de ==Langenskiöld IV== (veja o alerta).",
+  "correta": "**Estágio IV.**\n- Ponte óssea medial atravessa a fise.\n- Marca dano fisário estabelecido.",
   "incorretas": {
-   "A": "No estágio II, há maior depressão e irregularidade medial, mas ainda não se descreve a barra óssea através da fise. Confundir alteração epifisária inicial com ponte fisária faz antecipar indevidamente o estágio IV.",
-   "B": "O estágio III apresenta maior irregularidade, fragmentação e aspecto em degrau da epífise medial. Embora indique evolução da doença, a ponte óssea trans-fisária não é o achado que o define.",
-   "D": "O estágio V é posterior ao aparecimento da barra e pode mostrar maior deformidade e extensão das alterações. A pergunta pede o primeiro estágio em que a ponte está presente; portanto, a resposta não pode ser V."
+   "A": "**Depressão sem barra.**\n- Ainda sem ponte.",
+   "B": "**Degrau e fragmentação.**\n- Sem ponte definidora.",
+   "D": "**Posterior à barra.**\n- A pergunta pede o primeiro."
   },
+  "alerta": "A classificação de Langenskiöld apresenta variabilidade entre observadores, sobretudo nos estágios III e IV. A identificação de barra fisária deve ser correlacionada com radiografias seriadas e, quando necessário, tomografia ou ressonância.",
   "referencias": [
    "Deformity Reconstruction Surgery for Blount’s Disease. https://pmc.ncbi.nlm.nih.gov/articles/PMC8303124/",
    "Infantile tibia vara: treatment of Langenskiöld stage IV. https://pmc.ncbi.nlm.nih.gov/articles/PMC2739466/"
   ],
-  "alerta": "A classificação de Langenskiöld apresenta variabilidade entre observadores, sobretudo nos estágios III e IV. A identificação de barra fisária deve ser correlacionada com radiografias seriadas e, quando necessário, tomografia ou ressonância.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0017": {
   "conceito": "A pseudoartrose congênita da clavícula apresenta um perfil epidemiológico bastante característico. A maioria dos casos ocorre à direita, no terço médio, e existe predomínio do sexo feminino. Clinicamente, é comum a presença de uma proeminência indolor e móvel desde o nascimento ou primeira infância, geralmente sem limitação importante da função do ombro. A ausência de história traumática e o aspecto radiográfico sem calo diferenciam a condição de fratura obstétrica. O tratamento pode ser observacional em casos assintomáticos; cirurgia é considerada quando há dor, comprometimento funcional, sintomas neurovasculares ou preocupação estética relevante. Quando indicada, a reconstrução costuma envolver ressecção das extremidades da pseudoartrose, enxertia óssea e estabilização.",
