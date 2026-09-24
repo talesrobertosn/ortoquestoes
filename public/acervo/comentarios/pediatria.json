@@ -1637,124 +1637,124 @@
   "conferido": false
  },
  "pediatria-0113": {
-  "conceito": "O glúteo máximo é o principal extensor potente do quadril, especialmente ao levantar-se, subir escadas e controlar o tronco no início do apoio. Quando existe fraqueza importante, o paciente utiliza uma compensação biomecânica conhecida como marcha do glúteo máximo: inclina o tronco posteriormente no contato inicial e na resposta à carga. Ao deslocar o centro de massa para trás do quadril, a linha da força de reação do solo gera um momento extensor externo, reduzindo a demanda sobre o músculo insuficiente. Essa marcha deve ser diferenciada de Trendelenburg, relacionada aos abdutores e marcada por queda pélvica contralateral e inclinação lateral compensatória do tronco.",
-  "correta": "A alternativa B está correta. Na insuficiência do glúteo máximo, o tronco inclina-se posteriormente no início da fase de apoio. A compensação desloca a linha de reação do solo para trás do centro do quadril e cria um momento extensor, permitindo estabilizar a articulação com menor necessidade de força ativa do glúteo máximo.",
+  "conceito": "### Marchas patológicas\n| Marcha | Achado | Causa |\n|---|---|---|\n| ==mão na coxa== | empurra a coxa para estender o joelho | ==quadríceps insuficiente== (pólio, Duchenne) |\n| glúteo máximo | tronco jogado para trás no apoio | extensor do quadril fraco |\n| Trendelenburg | pelve cai do lado oposto; tronco inclina para o lado do apoio | ==glúteo médio== |\n| escarvante (steppage) | eleva o joelho para o pé não arrastar | dorsiflexores fracos (fibular) |\n| atáxica | base alargada, instável | cerebelo |\n| antálgica | apoio curto | dor |\n| ceifante | circundução | espasticidade (hemiplegia) |\n\n### Glúteo máximo (marcha em \"cavalo de pau\")\n- No contato inicial, o tronco é ==jogado para trás==: a linha de força passa atrás do quadril e o estabiliza sem o extensor.\n- Glúteo médio: inclinação ==lateral== (Trendelenburg compensado).\n\n> **Na prova:** insuficiência do glúteo máximo = tronco inclina ==posteriormente== no início do apoio.",
+  "correta": "**Posteriormente.**\n- Joga o tronco para trás no contato inicial.\n- Força do peso passa atrás do quadril e o estende.",
   "incorretas": {
-   "A": "Inclinação anterior aumentaria a demanda de extensão do quadril e não compensaria adequadamente a fraqueza do glúteo máximo.",
-   "C": "Inclinação para o lado afetado é mais característica de compensação por insuficiência dos abdutores do quadril, como na marcha de Trendelenburg compensada.",
-   "D": "Inclinar o tronco para o lado oposto não reduz o momento flexor sagital responsável pela compensação necessária na insuficiência do glúteo máximo."
+   "A": "**Oposto.**\n- Anterior pioraria a flexão.",
+   "C": "**Glúteo médio.**\n- Trendelenburg compensado.",
+   "D": "**Glúteo médio não compensado.**\n- Pelve cai."
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/gait"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0114": {
-  "conceito": "Reinhard Graf desenvolveu a classificação ultrassonográfica da displasia do desenvolvimento do quadril com base em um plano coronal padronizado e na morfologia dos tetos ósseo e cartilaginoso. O ângulo alfa mede o teto ósseo; o beta avalia o componente cartilaginoso/labrum. Tipo I é quadril maduro, alfa igual ou superior a 60 graus. Tipo II apresenta atraso de maturação ou displasia com alfa aproximadamente entre 43 e 59 graus e é subdividido conforme idade e gravidade: IIa fisiologicamente imaturo em lactentes jovens, IIb displásico após a idade esperada para maturação e IIc criticamente displásico. Tipo D é um quadril em descentralização. Tipos III e IV representam quadris deslocados, com alterações progressivas da relação do teto cartilaginoso e cabeça femoral. A idade é indispensável para interpretar os subtipos II.",
-  "correta": "A alternativa B está correta. A combinação de alfa abaixo de 60 graus e beta aumentado, dentro das faixas apresentadas, pertence ao espectro do tipo II de Graf. O ponto essencial é que o tipo II não é uma categoria única: idade e valores exatos separam IIa, IIb e IIc. A questão pede apenas o grupo principal, razão pela qual tipo II é a melhor resposta.",
+  "conceito": "### Ultrassom de Graf\n| Ângulo | Linhas | Mede | Normal |\n|---|---|---|---|\n| ==alfa== | ilíaco × teto ==ósseo== | cobertura óssea | ==≥ 60°== |\n| ==beta== | ilíaco × teto ==cartilaginoso== (lábio) | cobertura cartilaginosa | ==< 55°== |\n\n### Tipos\n| Tipo | Alfa | Conduta |\n|---|---|---|\n| I | ≥ 60° | normal |\n| IIa | 50 a 59°, < 3 meses | imaturo fisiológico, controle |\n| IIb | 50 a 59°, > 3 meses | tratar |\n| IIc | 43 a 49° (beta < 77°) | tratar |\n| D | 43 a 49°, beta > 77° | descentrando |\n| III | < 43°, luxado | tratar |\n| IV | < 43°, luxado com lábio invertido | tratar |\n\n> **Na prova:** alfa 43 a 60° com beta 55 a 77° = ==Graf II== (veja o alerta).",
+  "correta": "**Tipo II.**\n- Alfa entre 43 e 59°, beta abaixo de 77°.\n- Subtipos dependem da idade e dos valores exatos.",
   "incorretas": {
-   "A": "Graf I exige maturidade óssea adequada, caracterizada principalmente por ângulo alfa de pelo menos 60 graus. Os valores apresentados incluem quadris abaixo desse limite.",
-   "C": "Tipo III corresponde a quadril deslocado com importante deficiência do teto ósseo e alteração do teto cartilaginoso, situação mais grave que a faixa descrita.",
-   "D": "Tipo IV é luxação grave com deslocamento importante da cabeça e inversão do labrum, não uma displasia moderada com valores angulares do espectro tipo II."
+   "A": "**Normal.**\n- Alfa ≥ 60°.",
+   "C": "**Luxado.**\n- Alfa < 43°.",
+   "D": "**Luxado com lábio invertido.**\n- Alfa < 43°."
   },
+  "alerta": "Os intervalos impressos na questão são amplos e agrupam diferentes subtipos do tipo II de Graf. A classificação detalhada exige considerar a idade do lactente e os valores exatos de alfa e beta; portanto, o gabarito é válido apenas para a categoria principal II.",
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3965765/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 13"
   ],
-  "alerta": "Os intervalos impressos na questão são amplos e agrupam diferentes subtipos do tipo II de Graf. A classificação detalhada exige considerar a idade do lactente e os valores exatos de alfa e beta; portanto, o gabarito é válido apenas para a categoria principal II.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0115": {
-  "conceito": "Na doença de Perthes, a isquemia epifisária inicia um ciclo de necrose, reabsorção e reconstrução em uma cabeça femoral mecanicamente vulnerável. O principal princípio terapêutico clássico é contenção: manter a cabeça femoral profundamente posicionada no acetábulo, que funciona como molde durante o processo de remodelação. Contenção pode ser obtida de forma não operatória ou por osteotomias femoral e/ou pélvica em pacientes selecionados. Antes disso, é fundamental preservar ou recuperar abdução e mobilidade; um quadril rígido não deve ser simplesmente forçado a uma posição de contenção. Idade, classificação de Herring, extrusão lateral e amplitude influenciam a indicação. Crianças pequenas com doença limitada frequentemente evoluem bem apenas com observação e manutenção da mobilidade.",
-  "correta": "A alternativa D está correta. O objetivo biomecânico central do tratamento é manter a cabeça femoral contida dentro do acetábulo durante as fases em que está suscetível à deformação. O acetábulo fornece um molde que favorece manutenção ou recuperação de esfericidade. Esse princípio deve ser individualizado conforme idade, extensão da doença e mobilidade.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Epidemiologia do Perthes\n| Aspecto | Dado |\n|---|---|\n| sexo | ==masculino== (4 a 5:1) |\n| idade | 4 a 8 anos |\n| lado | ==unilateral== (bilateral 10 a 15%, ==assimétrico no tempo==) |\n| perfil | baixa estatura, idade óssea atrasada, hiperatividade, tabagismo passivo |\n\n- Bilateral simétrico e simultâneo: pensar em ==displasia epifisária múltipla== ou hipotireoidismo.\n\n### Exame\n- Claudicação, dor referida no joelho.\n- Limitação de ==abdução e rotação interna== (sinovite, contratura de adutores, cabeça deformada).\n- Perda da abdução: risco de extrusão (tratamento visa manter abdução e contenção).\n\n### Princípio da ==contenção==\n- Manter a cabeça ==dentro do acetábulo== durante a fragmentação para que remodele esférica.\n| Meio | Exemplo |\n|---|---|\n| conservador | fisioterapia (abdução), órtese (Atlanta), gesso de Petrie |\n| cirúrgico | osteotomia femoral varizante, pélvica (Salter), shelf |\n\n- Indicação cirúrgica: > 6 a 8 anos com Herring B ou B/C.\n- < 6 anos: bom prognóstico com sintomáticos.\n\n> **Na prova:** objetivo do tratamento do Perthes = ==contenção da cabeça femoral==",
+  "correta": "**Contenção da cabeça femoral.**\n- Acetábulo molda a cabeça durante a reparação.\n- Evita extrusão e cabeça em sela.",
   "incorretas": {
-   "A": "Discrepância residual pode ocorrer, mas corrigi-la não é o objetivo primário durante a fase ativa da doença. O foco inicial é preservar a congruência da articulação.",
-   "B": "Descompressão da cabeça femoral não é o princípio terapêutico central aceito para Perthes.",
-   "C": "Alterações do ângulo cervicodiafisário podem coexistir ou surgir como sequela, mas sua correção não define o objetivo principal do tratamento."
+   "A": "**Secundário.**\n- Discrepância é tardia.",
+   "B": "**Não é tratamento padrão.**\n- Descompressão não muda a história.",
+   "C": "**Meio, não fim.**\n- Osteotomia varizante serve à contenção."
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/legg-calve-perthes-disease",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 32"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0116": {
-  "conceito": "A deformidade de Sprengel resulta de falha da descida embrionária da escápula, que permanece elevada, hipoplásica e rotada. Pode existir conexão omovertebral e associações com Klippel-Feil, escoliose, anomalias costais e renais. A limitação funcional do ombro decorre sobretudo de restrição do movimento escapulotorácico e da posição anormal da escápula; a articulação glenoumeral propriamente dita pode manter arco relativamente preservado. A classificação de Cavendish descreve a gravidade clínica e estética em graus I a IV. Casos leves são tratados conservadoramente; formas moderadas e graves com limitação funcional ou preocupação estética podem ser tratadas por técnicas como Woodward ou Green modificada. O risco cirúrgico mais importante é lesão do plexo braquial por descida excessiva da escápula.",
-  "correta": "A alternativa C está correta. Em Sprengel, a escápula é hipoplásica e anormalmente elevada, mas o movimento glenoumeral pode permanecer relativamente normal. A limitação global da elevação do braço ocorre predominantemente porque a escápula não roda e não desliza adequadamente sobre o tórax.",
+  "conceito": "### Sprengel: movimento do ombro\n- Escápula ==pequena (hipoplásica)==, alta e rodada, presa pelo omovertebral ou fibrose.\n- A ==glenoumeral é normal==; perde-se o ==ritmo escapulotorácico==.\n- Resultado: ==abdução limitada== (a escápula não roda).\n\n### Achados associados\n- Klippel-Feil, escoliose, costelas anômalas, diastematomielia, rim.\n\n### Cirurgia\n| Técnica | Princípio |\n|---|---|\n| Woodward | desinserção da origem medial (trapézio, romboides) e reinserção mais baixa |\n| Green | desinserção na escápula e descida |\n| + | ressecção do omovertebral (extraperiosteal), osteotomia da clavícula |\n\n- Idade 3 a 8 anos; ganho funcional maior na abdução.\n\n> **Na prova:** Sprengel = ==glenoumeral normal com escápula hipoplásica==.",
+  "correta": "**Glenoumeral normal, escápula hipoplásica.**\n- A limitação vem do escapulotorácico.\n- Escápula pequena, alta e rodada.",
   "incorretas": {
-   "A": "O movimento glenoumeral pode estar preservado, mas a escápula não é normal: ela é elevada, hipoplásica e frequentemente malrotada.",
-   "B": "A escápula não é morfologicamente normal e a principal restrição é escapulotorácica, não necessariamente da articulação glenoumeral.",
-   "D": "A hipoplasia escapular está correta, porém atribuir a limitação típica diretamente ao movimento glenoumeral ignora que o principal defeito mecânico está na escápula."
+   "A": "**Escápula alterada.**\n- Hipoplásica.",
+   "B": "**Glenoumeral preservada.**\n- Escápula anormal.",
+   "D": "**Glenoumeral preservada.**\n- Só a escápula é anormal."
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/sprengel-s-deformity",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 12"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0117": {
-  "conceito": "Sindactilia é falha de separação dos dedos durante o desenvolvimento embrionário. Pode ser simples, envolvendo apenas partes moles; complexa, com união óssea; completa ou incompleta; e complicada quando existem anomalias adicionais. O momento da cirurgia depende do espaço interdigital acometido. Sindactilias entre dedos de comprimentos muito diferentes, especialmente entre quarto e quinto dedos, devem ser separadas mais cedo porque o dedo mais longo continua crescendo e pode produzir desvio angular do dedo menor. Em espaços centrais com dedos de comprimentos semelhantes, costuma-se aguardar aproximadamente 12 meses para facilitar técnica e reduzir complicações. Cirurgias em múltiplos espaços adjacentes são frequentemente estagiadas para proteger a vascularização digital.",
-  "correta": "A alternativa D está correta. A união entre quarto e quinto dedos envolve raios com diferença de comprimento significativa. Se mantidos unidos durante o crescimento, o dedo maior pode tracionar o menor e produzir deformidade angular. Por isso, essa sindactilia é uma das que justificam liberação mais precoce.",
+  "conceito": "### Separação dos dedos\n- 6ª a 8ª semana: placa da mão com ==raios (cristas) digitais== unidos por tecido interdigital.\n- A separação ocorre por ==apoptose interdigital== (via BMP), não por crescimento.\n- Progride de distal para proximal e de radial para ulnar.\n\n### Sindactilia\n| Aspecto | Dado |\n|---|---|\n| frequência | 1 em 2.000 a 2.500 nascidos; malformação congênita mais comum da mão junto com polidactilia |\n| espaço mais acometido | ==3º (médio e anelar)== |\n| espaço menos acometido | 1º (polegar e indicador) |\n| bilateral | cerca de 50% |\n\n### Classificação\n| Termo | Definição |\n|---|---|\n| simples | só pele |\n| complexa | ponte óssea (sinostose) |\n| completa | até a ponta |\n| complicada | ossos anômalos (Apert) |\n\n### Cirurgia\n- Por volta de 12 a 18 meses; mais cedo em dedos de tamanhos diferentes (polegar, mínimo).\n- Um lado do dedo por vez; retalho dorsal para a comissura, enxerto de pele total.\n\n### Quando operar mais cedo\n- Dedos de ==comprimentos diferentes== (==IV-V==, I-II): a ponte provoca ==desvio angular== e rotação com o crescimento.\n- Operar por volta de 6 meses; demais aos 12 a 18 meses.\n- Um lado do dedo por vez.\n\n> **Na prova:** operar cedo a sindactilia ==IV-V== para evitar ==deformidade angular==",
+  "correta": "**IV e V, para evitar deformidade angular.**\n- Comprimentos diferentes: o maior se desvia.\n- Operar por volta de 6 meses.",
   "incorretas": {
-   "A": "O espaço entre terceiro e quarto dedos não é o exemplo clássico de maior discrepância de comprimento que exige operação precoce, e recorrência não é o principal motivo para antecipar cirurgia.",
-   "B": "Deformidade angular é uma preocupação real, porém é mais marcante nos espaços de borda, especialmente quarto-quinto, em que os dedos apresentam maior diferença de comprimento.",
-   "C": "Quarto-quinto realmente requerem atenção precoce, mas a indicação não é principalmente evitar recorrência pós-operatória; o objetivo é prevenir deformidade angular durante o crescimento."
+   "A": "**Comprimentos semelhantes.**\n- III-IV pode esperar.",
+   "B": "**III-IV não desvia.**\n- Mesmo comprimento.",
+   "C": "**Motivo errado.**\n- Não é recorrência."
   },
   "referencias": [
    "https://posna.org/blogs/resident-review/september-2017/simple-and-complex-syndactyly",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 80"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0118": {
-  "conceito": "A síndrome de Morquio corresponde à mucopolissacaridose tipo IV, causada por deficiência enzimática na degradação de glicosaminoglicanos. O fenótipo é predominantemente musculoesquelético: baixa estatura, platispondilia, pectus carinatum, cifose, genu valgo, coxa valga e hipoplasia do odontoide. Diferentemente de muitas outras mucopolissacaridoses, a cognição geralmente é preservada. Outra característica marcante é hiperfrouxidão ligamentar, particularmente nos punhos, mãos, joelhos e coluna cervical, em contraste com a rigidez articular observada em Hurler e outras MPS. A hipoplasia odontoidea e frouxidão C1-C2 podem causar instabilidade atlantoaxial e mielopatia, sendo fundamentais na avaliação pré-operatória e anestésica.",
-  "correta": "A alternativa C está correta. Morquio caracteriza-se por cognição habitualmente normal e hiperfrouxidão articular acentuada. Essa combinação é extremamente útil para diferenciação entre as mucopolissacaridoses e explica parte das deformidades ortopédicas, incluindo genu valgo e instabilidade cervical.",
+  "conceito": "### Mucopolissacaridoses (MPS)\n| Tipo | Nome | Herança | Achados |\n|---|---|---|---|\n| I | ==Hurler== (grave) / Scheie | AR | ==retardo==, face grosseira, opacidade de córnea, giba toracolombar |\n| II | Hunter | ==ligada ao X== | sem opacidade de córnea |\n| III | Sanfilippo | AR | predomínio neurológico |\n| IV | ==Morquio== | AR | ==inteligência normal==, nanismo de tronco curto, ==instabilidade C1-C2 (odontoide hipoplásico)==, genu valgo |\n| VI | Maroteaux-Lamy | AR | inteligência normal |\n\n### Ortopedia\n- Morquio: ==avaliar a coluna cervical== antes de anestesia; artrodese occipitocervical se instável.\n- Hurler: cifose, displasia do quadril, túnel do carpo, dedo em gatilho múltiplo.\n- Tratamento: reposição enzimática, transplante de medula (Hurler).\n\n### Morquio × Hurler\n| Aspecto | Morquio (IV) | Hurler (I) |\n|---|---|---|\n| cognição | ==normal== | retardo |\n| articulações | ==hiperfrouxidão== (odontoide, joelho valgo) | ==rigidez== (mão em garra) |\n| córnea | opaca leve | opaca |\n| urina | queratan sulfato | dermatan e heparan |\n\n> **Na prova:** Morquio = ==cognição normal e hiperfrouxidão==",
+  "correta": "**Cognição normal e hiperfrouxidão.**\n- Instabilidade C1-C2 é o risco.\n- Hurler é que enrijece.",
   "incorretas": {
-   "A": "A cognição preservada está correta, porém rigidez articular não é característica dominante de Morquio; a frouxidão ligamentar é muito mais típica.",
-   "B": "Erra os dois elementos: comprometimento cognitivo não é habitual e a doença tende a produzir hipermobilidade, não rigidez generalizada.",
-   "D": "A hiperfrouxidão está correta, mas a cognição costuma permanecer preservada."
+   "A": "**Rigidez é Hurler.**\n- Cognição certa.",
+   "B": "**Hurler.**\n- Retardo e rigidez.",
+   "D": "**Cognição errada.**\n- Normal."
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4259875/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 36"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0119": {
-  "conceito": "Na amioplasia clássica, o membro superior apresenta padrão bastante reconhecível: ombros aduzidos e rodados internamente, cotovelos frequentemente estendidos, antebraços pronados, punhos fletidos e desviados ulnarmente e polegares em palma. A causa é redução grave dos movimentos fetais associada a hipoplasia muscular. Apesar das deformidades impressionantes, a cognição é normalmente preservada. O tratamento funcional prioriza levar a mão à boca, posicionar o punho para permitir preensão e liberar o polegar. Ganhar flexão de cotovelo pode ser fundamental para alimentação e higiene. Órteses e fisioterapia iniciam precocemente e procedimentos cirúrgicos devem considerar a força muscular disponível.",
-  "correta": "A alternativa C está correta. Cotovelo em extensão e punho em flexão compõem o padrão clássico dos membros superiores na amioplasia. Essa associação é tão característica que costuma aparecer de forma direta em provas de ortopedia pediátrica.",
+  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n> **Na prova:** amioplasia = ombro ==aduzido e em RI==, cotovelo estendido, ==punho fletido==",
+  "correta": "**Cotovelo em extensão, punho em flexão.**\n- Postura clássica da amioplasia.\n- Ombro aduzido em RI.",
   "incorretas": {
-   "A": "O punho fletido é típico, porém o cotovelo encontra-se mais frequentemente em extensão, não flexão.",
-   "B": "Flexão de cotovelo e extensão de punho não correspondem à configuração habitual da amioplasia.",
-   "D": "A extensão do cotovelo está correta, mas o punho geralmente está fletido e desviado ulnarmente."
+   "A": "**Cotovelo errado.**\n- Estendido.",
+   "B": "**Duplamente errada.**\n- Cotovelo e punho.",
+   "D": "**Punho errado.**\n- Fletido."
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 37"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0120": {
-  "conceito": "O ângulo de Southwick quantifica a deformidade da epifisiólise no perfil em rã: compara-se o eixo da fise do lado doente com o contralateral. Ele classifica o deslizamento em leve, moderado ou grave e auxilia no planejamento, mas não substitui a avaliação de estabilidade, dor e risco vascular.",
-  "correta": "A alternativa C está correta: a imagem representa o ângulo de Southwick. Klein é uma linha AP para rastreio, Drehrmann é sinal clínico de rotação externa obrigatória e Trethowan refere-se à linha de Klein.",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Ângulo de Southwick\n- Em ==perfil (rã de Lauenstein)==: ângulo entre a perpendicular à linha epifisária e o eixo da diáfise.\n- Comparar com o lado normal (subtrair o contralateral, ou ~10-12° se bilateral).\n\n### Outros\n| Nome | O que é |\n|---|---|\n| Klein | linha na borda superior do colo no AP deve cortar a epífise |\n| Dunn (modificado) | redução aberta com luxação cirúrgica |\n| Kramer | osteotomia basocervical |\n\n> **Na prova:** técnica da figura = ==ângulo de Southwick==",
+  "correta": "**Southwick.**\n- Ângulo epifisário-diafisário no perfil.\n- Leve < 30°, moderado 30 a 50°, grave > 50°.",
   "incorretas": {
-   "A": "A alternativa A (KLEIN.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "B": "A alternativa B (DREHMANN.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "D": "A alternativa D (TRETHOWAN.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta."
+   "A": "**Linha no AP.**\n- Klein na borda superior do colo.",
+   "B": "**Sinal clínico.**\n- Rotação externa ao fletir.",
+   "D": "**Sinal radiográfico.**\n- Mesma linha de Klein."
   },
   "referencias": [
    "SCFE review. https://pmc.ncbi.nlm.nih.gov/articles/PMC6460813/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 15"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0121": {
   "conceito": "Osteogênese imperfeita é um grupo de doenças hereditárias de fragilidade óssea, frequentemente relacionadas a COL1A1 e COL1A2. Na classificação clássica de Sillence, tipo I é leve; tipo II é forma perinatal letal; tipo III é grave e progressivamente deformante; tipo IV tem gravidade intermediária. Escoliose é comum entre sobreviventes, particularmente nos tipos III e IV. A deformidade resulta de fragilidade vertebral, compressões, fraqueza ligamentar e alterações do crescimento. A progressão costuma ser mais rápida no tipo III. O tratamento conservador inclui otimização metabólica, fisioterapia e acompanhamento radiográfico; curvas progressivas importantes podem necessitar fusão instrumentada, tecnicamente desafiadora pela baixa qualidade óssea.",
