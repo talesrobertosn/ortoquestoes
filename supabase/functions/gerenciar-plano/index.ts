@@ -74,9 +74,16 @@ Deno.serve(async (req) => {
       if (pagamento.status === 'approved') {
         const reembolso = await fetch(`https://api.mercadopago.com/v1/payments/${encodeURIComponent(assinatura.ultima_cobranca_id)}/refunds`, {
           method: 'POST',
-          headers: { Authorization: `Bearer ${token}`, 'X-Idempotency-Key': `garantia-${assinatura.id}-${assinatura.ultima_cobranca_id}` },
+          headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json', 'X-Idempotency-Key': `garantia-${assinatura.id}-${assinatura.ultima_cobranca_id}` },
         })
-        if (!reembolso.ok) return json({ erro: 'reembolso_nao_confirmado' }, 502, req)
+        if (!reembolso.ok) {
+          const resposta = await reembolso.json().catch(() => ({})) as { error?: unknown; cause?: Array<{ code?: unknown }> }
+          const codigo = typeof resposta.error === 'string' && /^[a-z0-9_-]{1,80}$/i.test(resposta.error) ? resposta.error : null
+          const causa = resposta.cause?.find((item) => typeof item.code === 'string' && /^[a-z0-9_-]{1,80}$/i.test(item.code))?.code
+          const detalhe = Deno.env.get('MERCADO_PAGO_AMBIENTE') === 'teste'
+            ? `_http_${reembolso.status}${codigo ? `_erro_${codigo}` : ''}${causa ? `_causa_${causa}` : ''}` : ''
+          return json({ erro: `reembolso_nao_confirmado${detalhe}` }, 502, req)
+        }
       }
     } else if (assinatura.status !== 'ativa') {
       return json({ erro: 'plano_ativo_nao_encontrado' }, 404, req)
