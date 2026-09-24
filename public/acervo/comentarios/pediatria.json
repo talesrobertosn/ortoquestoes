@@ -4948,96 +4948,96 @@
   "conferido": false
  },
  "pediatria-0390": {
-  "conceito": "A sinovite transitória do quadril é a causa mais comum de claudicação dolorosa aguda em crianças pequenas, com pico de incidência classicamente descrito entre **5 e 6 anos** de idade (dentro de uma faixa mais ampla de 3 a 8 anos em que a condição pode ocorrer), sendo mais rara antes dos 2-3 anos e após os 10 anos. Reconhecer essa faixa etária típica é parte do raciocínio diagnóstico inicial diante de uma criança com dor e claudicação do quadril de início agudo, ajudando a diferenciar esse quadro autolimitado de outras causas de dor no quadril mais comuns em faixas etárias distintas (como a displasia do desenvolvimento do quadril em lactentes ou a epifisiólise em pré-adolescentes/adolescentes).",
-  "correta": "B. A sinovite transitória do quadril acomete principalmente crianças entre 5 e 6 anos de idade.",
+  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** sinovite transitória = pico entre ==5 e 6 anos== (faixa de 3 a 8)",
+  "correta": "**5 a 6 anos.**\n- Pico dentro da faixa de 3 a 8.\n- Meninos, após virose.",
   "incorretas": {
-   "A": "2 a 3 anos é uma faixa etária um pouco mais precoce do que o pico de incidência classicamente descrito.",
-   "C": "8 a 10 anos é uma faixa etária um pouco mais tardia do que o pico de incidência classicamente descrito.",
-   "D": "12 a 14 anos corresponde a uma faixa etária em que outras condições (como a epifisiólise) tornam-se mais relevantes, sendo incomum a sinovite transitória clássica nessa idade."
+   "A": "**2 a 3 anos.**\n- Início da faixa; menos frequente.",
+   "C": "**8 a 10 anos.**\n- Fim da faixa; pensar em Perthes.",
+   "D": "**12 a 14 anos.**\n- Pensar em epifisiólise."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0391": {
-  "conceito": "As mucopolissacaridoses (MPS) são um grupo de doenças de depósito lisossômico causadas pela deficiência de enzimas específicas envolvidas na degradação dos glicosaminoglicanos. A deficiência da enzima **α-L-iduronidase** é a que caracteriza a **MPS tipo I** (síndrome de Hurler, em sua forma mais grave, ou as formas intermediárias/atenuadas Hurler-Scheie e Scheie), diferente de outras MPS, que envolvem deficiências enzimáticas distintas, como a MPS tipo II (síndrome de Hunter, deficiência de iduronato-2-sulfatase) ou a MPS tipo IV (síndrome de Morquio, deficiência de galactosamina-6-sulfatase ou beta-galactosidase, dependendo do subtipo).",
-  "correta": "A. A deficiência da enzima α-L-iduronidase caracteriza a mucopolissacaridose tipo I.",
+  "conceito": "### Mucopolissacaridoses (MPS)\n| Tipo | Nome | Herança | Achados |\n|---|---|---|---|\n| I | ==Hurler== (grave) / Scheie | AR | ==retardo==, face grosseira, opacidade de córnea, giba toracolombar |\n| II | Hunter | ==ligada ao X== | sem opacidade de córnea |\n| III | Sanfilippo | AR | predomínio neurológico |\n| IV | ==Morquio== | AR | ==inteligência normal==, nanismo de tronco curto, ==instabilidade C1-C2 (odontoide hipoplásico)==, genu valgo |\n| VI | Maroteaux-Lamy | AR | inteligência normal |\n\n### Ortopedia\n- Morquio: ==avaliar a coluna cervical== antes de anestesia; artrodese occipitocervical se instável.\n- Hurler: cifose, displasia do quadril, túnel do carpo, dedo em gatilho múltiplo.\n- Tratamento: reposição enzimática, transplante de medula (Hurler).\n\n### Enzimas deficientes\n| MPS | Enzima |\n|---|---|\n| ==I (Hurler/Scheie)== | ==α-L-iduronidase== |\n| II (Hunter) | iduronato-2-sulfatase |\n| III A (Sanfilippo) | heparan N-sulfatase |\n| IV A (Morquio) | galactose-6-sulfatase |\n| VI (Maroteaux-Lamy) | arilsulfatase B |\n\n> **Na prova:** α-L-iduronidase = ==MPS I (Hurler)==",
+  "correta": "**Tipo I.**\n- Hurler, Hurler-Scheie e Scheie.\n- Reposição com laronidase.",
   "incorretas": {
-   "B": "A mucopolissacaridose tipo II (síndrome de Hunter) é causada pela deficiência da enzima iduronato-2-sulfatase, não da α-L-iduronidase.",
-   "C": "A mucopolissacaridose tipo IIIA (síndrome de Sanfilippo) é causada pela deficiência de uma enzima diferente, envolvida na degradação do heparan sulfato.",
-   "D": "A mucopolissacaridose tipo IV (síndrome de Morquio) é causada pela deficiência de enzimas distintas, não da α-L-iduronidase."
+   "B": "**Tipo II.**\n- Iduronato sulfatase.",
+   "C": "**Tipo III A.**\n- Heparan N-sulfatase.",
+   "D": "**Tipo IV.**\n- Galactose-6-sulfatase."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0392": {
-  "conceito": "O menisco discoide tipo **Wrisberg** é uma variante anatômica que acomete predominantemente o menisco **lateral**, caracterizada pela ausência das inserções meniscotibiais posteriores normais, o menisco fica estabilizado apenas pelo ligamento de Wrisberg, tornando-o hipermóvel e biomecanicamente instável. Essa instabilidade e a alteração da distribuição de carga no compartimento lateral do joelho estão associadas a um risco aumentado de desenvolvimento de **osteocondrite dissecante do côndilo femoral lateral**, a superfície articular que se articula diretamente com esse menisco alterado, e que sofre as consequências mecânicas do contato anômalo e da hipermobilidade meniscal ao longo do tempo.",
-  "correta": "D. O menisco discoide tipo Wrisberg se relaciona com a osteocondrite dissecante do côndilo femoral lateral.",
+  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Discoide e osteocondrite dissecante\n- Menisco discoide ==lateral== altera a carga no compartimento lateral.\n- Associa-se à ==OCD do côndilo femoral lateral== (local atípico: a OCD clássica é no côndilo medial, face lateral).\n- OCD também pode surgir após saucerização/meniscectomia.\n\n> **Na prova:** Wrisberg associa-se à OCD do ==côndilo femoral lateral==",
+  "correta": "**Côndilo femoral lateral.**\n- Mesmo compartimento do discoide.\n- Local atípico de OCD.",
   "incorretas": {
-   "A": "O planalto tibial medial não é a estrutura classicamente associada ao menisco discoide tipo Wrisberg, que acomete o compartimento lateral.",
-   "B": "O planalto tibial lateral, embora faça parte do mesmo compartimento, não é a localização classicamente descrita da osteocondrite dissecante associada, é o côndilo femoral lateral.",
-   "C": "O côndilo femoral medial não é a estrutura associada ao menisco discoide tipo Wrisberg, que acomete o compartimento lateral do joelho."
+   "A": "**Planalto medial.**\n- Compartimento oposto.",
+   "B": "**Planalto tibial.**\n- OCD é femoral.",
+   "C": "**Côndilo medial.**\n- Local clássico da OCD comum, não da associada ao discoide."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0393": {
-  "conceito": "A classificação de **Paley** para a deficiência femoral congênita categoriza a doença conforme a integridade do fêmur e a relação entre a cabeça femoral e o acetábulo. O **tipo II**, especificamente, é definido pela presença de uma **pseudartrose móvel** na região proximal do fêmur, associada a uma cabeça femoral definida, mas sem continuidade óssea estável entre ela e a diáfise, exatamente a descrição fornecida na questão.",
-  "correta": "B. O fêmur curto congênito com pseudartrose móvel do fêmur proximal é classificado como do tipo II.",
+  "conceito": "### Deficiência femoral congênita (Paley)\n| Tipo | Descrição |\n|---|---|\n| 1 | fêmur íntegro, quadril e joelho móveis (ossificação normal 1a ou tardia 1b) |\n| ==2== | ==pseudartrose móvel== do fêmur proximal: 2a cabeça móvel no acetábulo; 2b cabeça ausente ou rígida |\n| 3 | deficiência diafisária (3a joelho móvel > 45°, 3b < 45°, 3c ausência total) |\n| 4 | deficiência distal |\n\n### Por que é útil\n- Orienta a ==reconstrução== (SUPERhip, SUPERknee) antes do alongamento.\n- Aitken é mais antiga e baseada só na radiografia do quadril.\n\n> **Na prova:** pseudartrose móvel proximal = ==Paley 2==",
+  "correta": "**Tipo 2.**\n- Pseudartrose móvel proximal.\n- Subtipo pela cabeça femoral.",
   "incorretas": {
-   "A": "O **tipo I** caracteriza-se por um fêmur hipoplásico, porém com continuidade óssea preservada entre a cabeça/colo e a diáfise, e um quadril móvel e funcional, sem a pseudartrose móvel descrita.",
-   "C": "O **tipo III** envolve uma ausência mais significativa da relação anatômica entre a cabeça femoral e o acetábulo, um grau de comprometimento diferente da pseudartrose móvel isolada descrita.",
-   "D": "O **tipo IV**, o mais grave, caracteriza-se pela ausência completa do segmento proximal do fêmur e/ou do acetábulo, uma condição bem mais severa do que a pseudartrose móvel descrita."
+   "A": "**Tipo 1.**\n- Fêmur íntegro.",
+   "C": "**Tipo 3.**\n- Deficiência diafisária.",
+   "D": "**Tipo 4.**\n- Deficiência distal."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0394": {
-  "conceito": "O método de Ponseti para tratamento do pé torto congênito segue uma sequência específica de correção, resumida pelo mnemônico **CAVE**: **C**avo (corrigido primeiro), **A**duto e **V**aro (corrigidos simultaneamente pela abdução do pé sob a cabeça do tálus) e **E**quino (corrigido por último). O primeiro passo do tratamento é justamente a correção do **cavo**, feita por meio da supinação e elevação do primeiro raio, alinhando o antepé (que se encontra pronado em relação ao retropé) ao retropé, antes de qualquer manobra de abdução ser iniciada. Corrigir o cavo primeiro é essencial: tentar abduzir o pé sem antes alinhar o antepé apenas acentuaria a deformidade em cavo, em vez de corrigi-la.",
-  "correta": "C. O tratamento pelo método de Ponseti inicia-se com a correção do cavo, por meio da elevação do primeiro raio.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** Ponseti começa pelo ==cavo== (elevar o 1º raio)",
+  "correta": "**Cavo do 1º raio.**\n- Primeiro gesso corrige o cavo.\n- Supinar o antepé e elevar o 1º MT.",
   "incorretas": {
-   "A": "O varo do retropé é corrigido junto com o aduto, por meio da abdução do pé sob a cabeça do tálus, não sendo a primeira etapa do tratamento.",
-   "B": "A adução do antepé é corrigida junto com o varo do retropé, na etapa seguinte à correção do cavo, não sendo a primeira etapa.",
-   "D": "A correção do cavo envolve a supinação/elevação do primeiro raio, mas não é descrita como uma correção isolada e nomeada de \"supinação do antepé\" como primeira etapa distinta, o primeiro passo formal do método é a correção do cavo."
+   "A": "**Varo.**\n- Corrige junto com a abdução.",
+   "B": "**Adução.**\n- Segunda etapa.",
+   "D": "**Supinação.**\n- O antepé é supinado para corrigir o cavo, não corrigido."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0395": {
-  "conceito": "Na paralisia cerebral, o encurtamento (contratura) da musculatura **isquiotibial** tem um impacto biomecânico relevante sobre a postura da coluna lombar, especialmente na posição sentada: como os isquiotibiais cruzam tanto o quadril quanto o joelho, sua contratura limita a flexão do quadril com o joelho estendido, obrigando a pelve a rodar posteriormente (retroversão pélvica) quando a criança tenta sentar-se com os joelhos estendidos, essa retroversão pélvica compensatória, por sua vez, tende a retificar ou inverter a lordose lombar normal, favorecendo o surgimento de uma **cifose lombar** postural, particularmente evidente na posição sentada.",
-  "correta": "B. O surgimento da cifose lombar na paralisia cerebral se deve, entre outros fatores, ao encurtamento dos músculos isquiotibiais.",
+  "conceito": "### Cifose lombar na PC\n- ==Isquiotibiais encurtados== puxam o ísquio: ==retroversão pélvica== ao sentar.\n- Para ficar sentado com joelhos estendidos, a coluna lombar ==flete== (cifose, sacro na cadeira).\n- Teste: ângulo poplíteo aumentado; cifose melhora ao fletir os joelhos.\n\n### Deformidades sagitais\n| Músculo encurtado | Deformidade |\n|---|---|\n| ==isquiotibiais== | ==cifose lombar==, sentar sacral |\n| iliopsoas | ==hiperlordose== lombar |\n| adutores | tesoura, luxação do quadril |\n\n### Tratamento\n- Alongamento dos isquiotibiais; adequação postural da cadeira.\n\n> **Na prova:** cifose lombar na PC = encurtamento dos ==isquiotibiais==",
+  "correta": "**Isquiotibiais.**\n- Retrovertem a pelve.\n- A lombar flete para compensar.",
   "incorretas": {
-   "A": "O encurtamento do iliopsoas está mais associado à contratura em flexão do quadril e ao aumento da lordose lombar compensatória, não à cifose lombar.",
-   "C": "O encurtamento dos adutores está mais associado a deformidades de adução do quadril (como a tesoura), não diretamente à cifose lombar.",
-   "D": "O encurtamento da musculatura paravertebral tenderia a favorecer hiperextensão (lordose), não cifose, da coluna lombar."
+   "A": "**Iliopsoas.**\n- Gera hiperlordose.",
+   "C": "**Adutores.**\n- Tesoura, luxação do quadril.",
+   "D": "**Paravertebrais.**\n- Extensores; não causam cifose."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0396": {
-  "conceito": "A classificação de **Kleinman** estratifica as fraturas pediátricas conforme sua especificidade para o diagnóstico de maus-tratos, agrupando-as em categorias de alta, moderada e baixa especificidade. O grupo de **alta especificidade** reúne classicamente: as lesões metafisárias clássicas (\"corner/bucket-handle\"), as fraturas de costelas **posteriores**, as fraturas de **escápula**, de **esterno** e do **processo espinhoso** vertebral, todas incomuns em mecanismos acidentais típicos da infância e que exigem forças direcionadas de alta energia, raramente presentes em quedas ou traumas triviais.\n\nA alternativa que reúne corretamente três dessas fraturas de alta especificidade (escápula, esterno e processo espinhoso) é a que representa fielmente esse grupo, diferente das demais alternativas, que misturam fraturas de alta especificidade com outras de especificidade apenas moderada (como lesões fisárias, fraturas em diferentes estágios de consolidação ou fraturas de corpo vertebral).",
-  "correta": "D. Fratura de escápula, fratura de esterno e fratura de processo espinhoso compõem o grupo de fraturas de alta suspeita para maus-tratos segundo Kleinman.",
+  "conceito": "### Especificidade das fraturas no abuso (Kleinman)\n| Alta | Moderada | Baixa (comuns) |\n|---|---|---|\n| lesão metafisária clássica | múltiplas, bilaterais | clavícula |\n| costelas posteriores | em estágios diferentes de consolidação | diáfises de ossos longos |\n| ==escápula== | epifisárias (descolamentos) | crânio linear |\n| processos espinhosos | corpo vertebral | |\n| esterno | dedos | |\n| | crânio complexa | |\n\n### Conduta\n- Inventário esquelético em < 2 anos (repetir em 2 semanas).\n- Fundo de olho, TC/RM de crânio, exames de coagulação e metabolismo ósseo (OI, raquitismo).\n- ==Notificação obrigatória==.\n\n> **Na prova:** alta suspeita (Kleinman) = ==escápula, esterno e processo espinhoso==",
+  "correta": "**Escápula, esterno e espinhoso.**\n- Todas de alta especificidade.\n- Exigem força incomum em lactentes.",
   "incorretas": {
-   "A": "Fraturas bilaterais e fraturas complexas de crânio são classificadas como de especificidade moderada, não de alta especificidade como as lesões metafisárias.",
-   "B": "Lesões fisárias e fraturas em diferentes estágios de consolidação são classificadas como de especificidade moderada, não de alta especificidade.",
-   "C": "Fratura de corpo vertebral e lesões fisárias são classificadas como de especificidade moderada, misturando-se incorretamente com a fratura posterior de costelas, que é de alta especificidade."
+   "A": "**Bilaterais e crânio complexo.**\n- Moderada especificidade.",
+   "B": "**Fisárias e estágios.**\n- Moderada especificidade.",
+   "C": "**Corpo vertebral e fisárias.**\n- Moderada; só costelas posteriores são de alta."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0397": {
-  "conceito": "Paralisia cerebral é lesão não progressiva do cérebro imaturo, mas deformidades musculoesqueléticas podem progredir. Espasticidade é mais frequente que distonia. Epilepsia é comorbidade comum, particularmente nas formas hemiplégicas; incapacidade cognitiva é também frequente, porém a marcha depende de fenótipo motor, seletividade, força, equilíbrio e deformidades, não de relação direta simples com cognição. Cirurgia segue princípios de preservação de função, com alongamentos e osteotomias conforme cada deformidade.",
-  "correta": "A alternativa B está correta. Convulsões são associação comum e especialmente observadas em hemiplegia. As demais simplificam inadequadamente prognóstico ou ordem cirúrgica.",
+  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n### Comorbidades\n| Associação | Detalhe |\n|---|---|\n| déficit cognitivo | frequente; pouca relação direta com a marcha |\n| ==epilepsia== | ==segunda mais comum==, ==mais na hemiplegia== e quadriplegia |\n| visão (estrabismo), audição | comuns |\n| disfagia, desnutrição | quadriplégicos |\n\n### Princípios cirúrgicos\n- Primeiro ==partes moles== (alongamentos, transferências); osteotomias para deformidades ósseas, em ==cirurgia multinível única== (SEMLS).\n- Espástico é o tipo mais frequente (70 a 80%).\n\n> **Na prova:** convulsão = ==segunda associação mais comum==, principalmente em ==hemiplégicos==",
+  "correta": "**Convulsões, mais em hemiplégicos.**\n- Lesão cortical focal.\n- Segunda comorbidade mais frequente.",
   "incorretas": {
-   "A": "A alternativa A (A associação mais comum é o déficit cognitivo, tendo relação direta com o prognóstico de marcha.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "C": "A alternativa C (No tratamento cirúrgico, a prioridade é a realização de osteotomias, seguida por alongamentos e transferências.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa.",
-   "D": "A alternativa D (É mais frequente pacientes com distonia do que com espasticidade.) está incorreta porque não corresponde ao padrão específico descrito. Compare o mecanismo, a anatomia ou o critério temporal com a explicação acima; o detalhe que a torna diferente é precisamente o que a questão testa."
+   "A": "**Marcha não depende do cognitivo.**\n- Depende do padrão motor e do controle.",
+   "C": "**Ordem errada.**\n- Partes moles primeiro, osteotomias na mesma sessão multinível.",
+   "D": "**Espasticidade predomina.**\n- 70 a 80% dos casos."
   },
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0399": {
   "conceito": "A vinheta descreve um achado clássico de **torcicolo muscular congênito**: um nódulo palpável (fibromatose/tumor do esternocleidomastóideo) na região cervical de um recém-nascido, associado à postura característica de **inclinação lateral do pescoço para o mesmo lado** do músculo acometido e **rotação do queixo para o lado contralateral**, resultado da contratura fibrótica do esternocleidomastóideo desse lado. Esse quadro se diferencia claramente da síndrome de Grisel (subluxação rotatória atlantoaxial), que tipicamente ocorre em crianças maiores após infecção de vias aéreas superiores ou cirurgia de cabeça/pescoço, apresentando-se com dor aguda, e não como um achado neonatal com nódulo palpável.\n\nO tratamento de primeira linha do torcicolo muscular congênito é conservador, com **manipulações e fisioterapia** (alongamento passivo do esternocleidomastóideo), reservando-se a cirurgia (como técnicas de alongamento/liberação) para os casos que não respondem ao tratamento conservador ao longo da infância.",
