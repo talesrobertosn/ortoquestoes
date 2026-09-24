@@ -739,107 +739,107 @@
   "conferido": false
  },
  "trauma-0065": {
-  "conceito": "As fraturas por estresse são classificadas em **alto** e **baixo risco** conforme a probabilidade de evolução desfavorável, não consolidação, progressão para fratura completa e necessidade de tratamento cirúrgico. Essa classificação, descrita por Boden e Osbahr, orienta diretamente a conduta: sítios de alto risco pedem investigação e tratamento mais agressivos (frequentemente imobilização rígida, descarga de peso e até fixação profilática), enquanto sítios de baixo risco toleram bem o tratamento conservador com ajuste de carga.\n\nOs sítios clássicos de **alto risco** incluem a cortical anterior da tíbia, o colo femoral (face de tensão, superior), o maléolo medial, o tálus, o navicular do tarso, a base do quinto metatarso na zona de Jones (junção metáfise-diáfise) e, o que costuma surpreender, a patela, por ser um osso sesamoide sujeito a tração intensa do aparelho extensor, com risco real de propagação completa e desvio.\n\nJá os sítios de **baixo risco** incluem a diáfise da fíbula, a cortical posteromedial da tíbia, as costelas, a diáfise do fêmur e a base do quinto metatarso quando o traço é de avulsão da tuberosidade (zona I, mecanismo distinto do Jones, com prognóstico bem mais benigno).\n\nÉ essa distinção fina (zona de Jones, alto risco, versus avulsão da tuberosidade, baixo risco) que explica por que a \"base do quinto metatarso\" pode aparecer como exemplo de baixo risco nesta questão, desde que se trate da avulsão da tuberosidade, e não da fratura de Jones.",
-  "correta": "A. A patela é um sítio clássico de alto risco (osso sesamoide sob tração do aparelho extensor, risco de desvio), e a avulsão da tuberosidade da base do quinto metatarso é o exemplo clássico de sítio de baixo risco, distinta da fratura de Jones, que é de alto risco.",
+  "conceito": "### Fraturas por estresse: risco\n| Alto risco (lado de tensão, má vascularização) | Baixo risco (compressão) |\n|---|---|\n| colo do fêmur (lado ==tensão/superolateral==) | colo do fêmur (lado compressão/inferomedial) |\n| ==patela== | ==costelas== |\n| cortical anterior da tíbia | tíbia posteromedial |\n| maléolo medial | diáfise do fêmur |\n| tálus (processo lateral), ==navicular== | calcâneo |\n| ==base do 5º MT (zona 2, Jones)== | diáfise dos metatarsos (2º a 4º) |\n| sesamoides do hálux | ulna (diáfise), úmero |\n\n### Conduta\n- Baixo risco: modificar atividade, retorno gradual.\n- Alto risco: descarga rígida; ==cirurgia== com frequência (fixação).\n\n> **Na prova:** alto × baixo = ==patela × costela==",
+  "correta": "**Patela e costela.**\n- Patela: lado de tensão.\n- Costela: baixo risco.",
   "incorretas": {
-   "B": "A base do quinto metatarso pode até ser de baixo risco (na avulsão da tuberosidade), mas a patela é ela mesma um sítio de alto risco, não de baixo, a combinação da alternativa inverte a lógica da questão.",
-   "C": "A diáfise da ulna, em atletas de arremesso, é reconhecida como sítio de baixo risco; a costela também costuma ser considerada de baixo risco. A combinação não contempla o exemplo clássico de alto risco pedido pela questão.",
-   "D": "Diáfise da ulna e base do quinto metatarso (avulsão) são ambos exemplos de baixo risco, a alternativa não oferece nenhum representante do grupo de alto risco."
+   "B": "**Base do 5º MT.**\n- Zona 2 (Jones) é de alto risco.",
+   "C": "**Costela alto risco.**\n- É de baixo risco.",
+   "D": "**Ulna alto risco.**\n- É de baixo risco; 5º MT proximal alto."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 23"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0066": {
-  "conceito": "A tuberosidade bicipital do rádio fica na face medial do rádio proximal, um pouco fora do plano da radiografia padrão em perfil. Para visualizá-la de perfil verdadeiro (essencial ao avaliar a redução rotacional em fraturas do antebraço, já que a posição da tuberosidade indica a rotação do fragmento proximal), a incidência recomendada é com o **cotovelo fletido a 90°** e o feixe de raios com **20° de inclinação posterior** em relação ao antebraço, o que projeta a tuberosidade em perfil sem a sobreposição de outras estruturas ósseas.",
-  "correta": "D. Cotovelo fletido a 90° e fonte com 20° de inclinação posterior é a incidência que melhor perfila a tuberosidade bicipital.",
+  "conceito": "### Avaliação rotacional no antebraço\n- Tuberosidade bicipital fica na face ==medial== do rádio proximal.\n- Incidência da tuberosidade: ==cotovelo fletido a 90°== e raio com ==20° de inclinação posterior== (antebraço sobre o chassi).\n- Comparar com o lado normal: posição da tuberosidade indica a rotação do fragmento proximal.\n\n### Referências\n| Posição do antebraço | Tuberosidade |\n|---|---|\n| supinação | medial |\n| neutro | posterior |\n| pronação | lateral |\n\n- Fragmento distal: estiloide radial (lateral em supinação).\n\n> **Na prova:** tuberosidade bicipital = cotovelo a ==90° e raio inclinado 20° posterior==",
+  "correta": "**90° e 20° posterior.**\n- Perfil da tuberosidade.\n- Avalia rotação do proximal.",
   "incorretas": {
-   "A": "O cotovelo estendido não é a posição recomendada para essa incidência específica.",
-   "B": "A flexão de 90° está correta, mas sem a angulação de 20° da fonte a tuberosidade não fica bem perfilada.",
-   "C": "A angulação da fonte está correta, mas o cotovelo precisa estar fletido a 90°, não estendido."
+   "A": "**Estendido perpendicular.**\n- AP padrão, tuberosidade sobreposta.",
+   "B": "**Perpendicular.**\n- Falta a inclinação.",
+   "C": "**Estendido.**\n- Cotovelo deve estar fletido."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0067": {
-  "conceito": "O risco de lesão da **artéria poplítea** varia consideravelmente entre as diferentes lesões traumáticas da região do joelho, e essa variação reflete diretamente a relação anatômica entre cada estrutura óssea/articular e o trajeto do vaso.\n\nA artéria poplítea é relativamente fixa em dois pontos (proximalmente, no hiato dos adutores, e distalmente, no arco do sóleo), o que a torna especialmente vulnerável a qualquer deslocamento franco da própria articulação do joelho: por isso, a **luxação do joelho** carrega o maior risco de lesão vascular entre todas as lesões dessa região, historicamente relatado em uma proporção alta dos casos.\n\nA fratura da extremidade **proximal da tíbia**, sobretudo em padrões com componente posterior ou luxação-fratura associada, também impõe risco considerável, dada a proximidade direta do vaso com essa região.\n\nJá a fratura **supracondiliana do fêmur**, apesar de também poder ameaçar a artéria (pelo deslocamento posterior do fragmento distal, tracionado pelo gastrocnêmio), carrega um risco relativamente menor do que essas outras duas lesões: o osso, mesmo fraturado, ainda oferece alguma proteção mecânica ao vaso que a completa perda de continuidade articular da luxação não oferece.",
-  "correta": "B. O risco de lesão da artéria poplítea na fratura supracondiliana do fêmur é menor do que na luxação do joelho e na fratura da extremidade proximal da tíbia, lesões em que a relação anatômica direta com o vaso é ainda mais crítica.",
+  "conceito": "### Risco de lesão da poplítea\n| Lesão | Risco |\n|---|---|\n| ==luxação do joelho== | ==20 a 40%== (artéria presa no hiato dos adutores e sob o arco do sóleo) |\n| ==planalto tibial== (Schatzker IV a VI, bicondilar) | alto; trifurcação próxima |\n| ==supracondiliana do fêmur== | ==2 a 3%==: artéria mais móvel no canal dos adutores |\n\n### Avaliação\n- ==Índice tornozelo-braquial < 0,9==: angiotomografia.\n- Pulso presente não exclui lesão intimal.\n\n### Por que o fêmur distal arrisca menos\n- Fragmento distal flexiona (gastrocnêmios), mas a artéria acompanha com mais folga acima do hiato.\n\n> **Na prova:** supracondiliana = risco ==menor== que luxação do joelho e planalto",
+  "correta": "**Menor que ambos.**\n- Artéria mais móvel acima do hiato.\n- Luxação e planalto fixam a artéria.",
   "incorretas": {
-   "A": "O risco na fratura supracondiliana do fêmur não é maior do que nas outras duas lesões citadas, é menor, dado o grau de proteção mecânica residual que o osso, mesmo fraturado, ainda oferece ao vaso.",
-   "C": "O risco não é maior do que na luxação do joelho, é menor do que ambas as lesões citadas, luxação e fratura proximal da tíbia.",
-   "D": "O risco não é maior do que na fratura proximal da tíbia, é menor do que ambas as lesões, luxação e fratura proximal da tíbia."
+   "A": "**Maior.**\n- Risco é o menor dos três.",
+   "C": "**Maior que luxação.**\n- Luxação tem o maior risco.",
+   "D": "**Maior que planalto.**\n- Planalto arrisca mais."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 57"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0068": {
-  "conceito": "A incidência tangencial dorsal (dorsal tangential view) do punho é usada principalmente para avaliar a extremidade distal do rádio após osteossíntese, sobretudo para detectar **protrusão dorsal de parafusos** colocados por via volar, um problema clínico relevante porque pode causar ruptura de tendões extensores. Diferente da incidência de perfil convencional, ela é obtida com o punho em **flexão máxima**, o que afasta os tendões extensores do dorso do rádio, e com o feixe de raios X angulado cerca de **15 graus** em relação ao eixo do antebraço, tangenciando a cortical dorsal e expondo qualquer ponta de parafuso que ultrapasse o osso.\n\nEssa combinação (flexão máxima + angulação de 15°) é o que diferencia essa incidência das demais e justifica sua indicação específica: confirmar, ainda na mesa cirúrgica, que nenhum parafuso está protruso dorsalmente.",
-  "correta": "A. A incidência tangencial dorsal é realizada com o punho em flexão máxima e angulação da fonte de raio X de 15 graus, para expor a cortical dorsal e detectar protrusão de parafusos.",
+  "conceito": "### Incidência tangencial dorsal (skyline) do punho\n- Objetivo: detectar ==parafusos salientes na cortical dorsal== após placa volar (risco de ruptura do extensor longo do polegar).\n- Técnica: punho em ==flexão máxima==, antebraço apoiado, raio ==15°== inclinado em relação ao eixo do antebraço (tangente ao dorso do rádio).\n- Mostra o tubérculo de Lister e os compartimentos extensores.\n\n### Complicações da placa volar\n| Complicação | Causa |\n|---|---|\n| ruptura do ELP | parafusos dorsais longos |\n| ruptura do FLP | placa distal à linha watershed |\n| perda de redução | placa proximal/sem suporte subcondral |\n\n> **Na prova:** tangencial dorsal = ==flexão máxima e raio a 15°==",
+  "correta": "**Flexão máxima e 15°.**\n- Dorso do rádio em perfil.\n- Detecta parafusos salientes.",
   "incorretas": {
-   "B": "A angulação de 60 graus não corresponde ao parâmetro técnico dessa incidência.",
-   "C": "A extensão do punho não é a posição usada, é a flexão máxima que afasta os tendões extensores e tangencia a cortical dorsal.",
-   "D": "Nem a extensão do punho nem a angulação de 60 graus correspondem à técnica correta."
+   "B": "**60°.**\n- Angulação errada.",
+   "C": "**Extensão.**\n- Punho deve estar fletido.",
+   "D": "**Extensão e 60°.**\n- Ambos errados."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0069": {
-  "conceito": "Na fratura aguda da patela, o hemartro (derrame articular sanguinolento) costuma se acumular de forma tensa dentro da cápsula articular íntegra. Quando, porém, há uma ruptura associada do RETINÁCULO (a expansão fibrosa medial e lateral do mecanismo extensor, contígua à cápsula articular), o sangue extravasa PARA FORA da articulação através dessa brecha, dissipando-se nos tecidos moles periarticulares, o que explica o achado aparentemente paradoxal de um derrame articular pouco significativo mesmo na presença de uma fratura patelar com defeito ósseo palpável, reforçando a suspeita de lesão retinacular associada.",
-  "correta": "A. A combinação de derrame articular pouco significativo com defeito ósseo patelar palpável sugere lesão retinacular associada, que permite a decompressão do hemartro para fora da articulação.",
+  "conceito": "### Fratura da patela: exame\n- Hemartrose ==tensa== é esperada se a cápsula e os ==retináculos== estão íntegros.\n- ==Pouco derrame + defeito palpável== = sangue extravasou pelos ==retináculos rotos==: mecanismo extensor provavelmente incompetente.\n- Testar ==extensão ativa== do joelho (elevação da perna estendida); aspirar hemartrose e infiltrar anestésico se dor impedir.\n\n### Indicação cirúrgica\n| Critério | Limite |\n|---|---|\n| degrau articular | > 2 mm |\n| diástase | > 3 mm |\n| extensão ativa | ausente |\n\n> **Na prova:** sem derrame e defeito palpável = lesão ==retinacular==",
+  "correta": "**Retinacular.**\n- Hemartrose escapa pelos retináculos.\n- Extensão ativa comprometida.",
   "incorretas": {
-   "B": "A lesão isolada do ligamento patelar não explica por si só a decompressão do hemartro através de uma via distinta da cápsula articular, como a lesão retinacular faz.",
-   "C": "A lesão do tendão quadricipital, embora possa coexistir, não é a explicação clássica citada para a decompressão do derrame articular nesse contexto específico.",
-   "D": "O ligamento colateral fibular fica fora da cápsula articular anterior e sua lesão não explica a decompressão do hemartro relacionado à fratura patelar."
+   "B": "**Ligamento patelar.**\n- Patela alta, sem fratura.",
+   "C": "**Quadricipital.**\n- Defeito suprapatelar, sem fratura.",
+   "D": "**Colateral fibular.**\n- Sem relação."
   },
-  "geradoEm": "2026-09-15",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 59"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0070": {
-  "conceito": "A resposta inflamatória sistêmica ao trauma envolve a liberação de múltiplas citocinas, mas nem todas são igualmente úteis como marcador clínico de gravidade: algumas têm meia-vida muito curta ou picos muito precoces, dificultando sua dosagem prática no momento em que a decisão clínica precisa ser tomada.\n\nA **interleucina-6 (IL-6)** se destaca justamente por ser o marcador que mais se correlaciona com a gravidade da síndrome da resposta inflamatória sistêmica (SIRS): seus níveis séricos sobem de forma proporcional à magnitude do trauma e permanecem elevados por tempo suficiente para serem dosados e monitorados de forma útil na prática clínica, funcionando como um preditor precoce de complicações como a síndrome do desconforto respiratório agudo e a disfunção de múltiplos órgãos.\n\nO **TNF** e a **IL-1**, embora sejam mediadores importantes e iniciadores da cascata inflamatória, têm picos mais precoces e efêmeros, tornando sua dosagem clínica menos prática e menos correlacionada de forma consistente com a gravidade global observada.\n\nNa prática de trauma ortopédico, esse conceito é o que sustenta a lógica do \"segundo golpe\" e do controle de danos: níveis elevados de IL-6 num paciente ainda em fase inflamatória aguda são um sinal de alerta contra a fixação definitiva precoce de grande porte, exatamente o cenário em que se prefere a fixação externa temporária discutida em outras questões deste acervo.",
-  "correta": "C. A IL-6 é o marcador inflamatório que melhor se correlaciona com a gravidade da SIRS no paciente politraumatizado, por seus níveis se elevarem de forma proporcional à magnitude do trauma e permanecerem detectáveis por tempo clinicamente útil.",
+  "conceito": "### Marcadores inflamatórios no politrauma\n| Marcador | Característica |\n|---|---|\n| TNF-α, IL-1 | picos precoces e fugazes (minutos a horas): pouco práticos |\n| ==IL-6== | ==eleva-se em 1 a 2 h==, pico em 4 a 6 h, correlaciona com ==ISS==, SIRS, falência orgânica e complicações |\n| IL-10 | anti-inflamatória (CARS) |\n| PCR | tardia, depende de IL-6 |\n| lactato, déficit de bases | perfusão |\n\n### Implicações\n- IL-6 > 500 pg/mL: risco de ==segundo impacto== (\"second hit\"); favorece ==controle de danos== (fixador externo) em vez de fixação definitiva precoce.\n\n> **Na prova:** melhor marcador da SIRS no trauma = ==IL-6==",
+  "correta": "**IL-6.**\n- Pico previsível e duradouro.\n- Correlaciona com gravidade.",
   "incorretas": {
-   "A": "O TNF é um mediador importante e iniciador da cascata inflamatória, mas seu pico é mais precoce e efêmero, tornando-o menos útil como marcador prático de gravidade do que a IL-6.",
-   "B": "A IL-1 também tem cinética mais precoce e menos prática para dosagem clínica seriada do que a IL-6.",
-   "D": "O interferon beta não é o marcador classicamente citado como o de melhor correlação com a gravidade da SIRS no trauma, essa posição pertence à IL-6."
+   "A": "**TNF.**\n- Pico fugaz.",
+   "B": "**IL-1.**\n- Meia-vida curta.",
+   "D": "**Interferon beta.**\n- Não é marcador de SIRS."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.3"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0071": {
-  "conceito": "A **placa bloqueada** transformou o tratamento das fraturas do úmero proximal porque resolve o problema central desse osso: no idoso, a metáfise é porótica e os parafusos convencionais não seguram. Os parafusos bloqueados, ao travarem na placa, formam um construto de ângulo fixo que não depende do atrito osso-placa.\n\nMas essa mesma virtude cria a complicação característica da técnica: a **perfuração condral**, o \"cut-out\" dos parafusos para dentro da articulação glenoumeral. O mecanismo é bem compreendido: os parafusos são posicionados o mais próximo possível do osso subcondral, porque é ali que a ancoragem é melhor. Como o construto é rígido e não colapsa, quando a fratura perde altura (por reabsorção do foco, por colapso em varo, por falha da coluna medial ou por necrose parcial da cabeça), o osso migra em direção à placa enquanto os parafusos permanecem imóveis. O resultado é que as pontas dos parafusos, antes intraósseas, emergem através da cartilagem, produzindo dor, crepitação e destruição rápida da glenoide.\n\nÉ a complicação **mais frequente** da osteossíntese com placa bloqueada nesse sítio, e nem sempre é aparente na radiografia simples, exige incidências em várias rotações ou tomografia.\n\nA prevenção passa por três medidas, e todas se ligam entre si:\n- Restaurar o **suporte medial** (reduzir a dobradiça medial e usar um parafuso de calcar, oblíquo e inferior, que impeça o colapso em varo)\n- Não avançar os parafusos até a cortical subcondral, deixando alguns milímetros de margem\n- Checar a posição sob radioscopia em rotação interna e externa completas, procurando a ponta de cada parafuso em todos os planos\n\nO colapso em **varo**, a osteonecrose e o retardo de consolidação são complicações reais e frequentemente encadeadas com essa, mas é a perfuração condral que mais leva à reoperação.",
-  "correta": "D. A perfuração condral dos parafusos é a complicação mais frequente: o construto bloqueado não colapsa, de modo que, quando a fratura perde altura, os parafusos permanecem parados e emergem através da cartilagem da cabeça umeral.",
+  "conceito": "### Placa bloqueada no úmero proximal\n- Parafusos bloqueados seguram em osso porótico: estabilidade angular.\n\n### Complicações\n| Complicação | Frequência |\n|---|---|\n| ==perfuração intra-articular dos parafusos== (primária ou secundária) | ==a mais comum== (até 15 a 30%) |\n| colapso em varo/perda de redução | 10 a 15% |\n| necrose avascular | 5 a 15% |\n| impacto subacromial (placa alta) | |\n\n### Prevenção\n- Restaurar ==suporte medial== (parafusos no calcar, enxerto de fíbula intramedular).\n- Evitar varo; parafusos com ponta 5 a 8 mm subcondral.\n- Placa 5 a 8 mm abaixo do topo da tuberosidade maior.\n\n> **Na prova:** complicação mais frequente = ==perfuração condral dos parafusos==",
+  "correta": "**Perfuração condral.**\n- Parafusos rígidos cortam a cabeça que colapsa.\n- Complicação mais frequente.",
   "incorretas": {
-   "A": "O colapso em varo é complicação frequente e importante (e é, aliás, a causa mecânica que precede a perfuração condral), mas é o parafuso emergindo na articulação que caracteriza a falha e leva à reoperação. Preveni-lo é restaurar o suporte medial.",
-   "B": "A osteonecrose depende sobretudo do padrão da fratura e da vascularização remanescente (os preditores de Hertel: dobradiça medial desviada mais de 2 mm, extensão metafisária menor que 8 mm e traço no colo anatômico), e não do implante escolhido.",
-   "C": "O retardo de consolidação ocorre, particularmente quando a redução é insuficiente e a coluna medial não é restaurada, mas é bem menos frequente do que a perfuração condral nas séries de placa bloqueada."
+   "A": "**Colapso em varo.**\n- Frequente, mas causa a perfuração.",
+   "B": "**Osteonecrose.**\n- Menos comum.",
+   "C": "**Retardo.**\n- Pouco frequente na metáfise."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0072": {
-  "conceito": "A fratura **trimaleolar** (envolvendo os maléolos medial, lateral e posterior) costuma preservar, mesmo em meio a tanta destruição ligamentar e óssea ao redor da articulação, um ligamento específico: o **ligamento tibiofibular posteroinferior (PITFL)**.\n\nIsso acontece porque o fragmento do maléolo posterior, na maioria dos casos, não representa uma ruptura desse ligamento, e sim uma fratura por avulsão causada por ele: o PITFL, ao invés de se romper, traciona e destaca um pequeno fragmento ósseo da face posterior da tíbia, permanecendo ele próprio íntegro e ainda inserido nesse fragmento avulsionado.\n\nEsse detalhe tem implicação prática direta: ao reduzir e fixar o fragmento do maléolo posterior à sua posição anatômica original, o cirurgião automaticamente restaura também a tensão e a função desse ligamento, sem precisar de uma reconstrução ligamentar isolada, diferente de outras estruturas da sindesmose (como o ligamento tibiofibular anteroinferior) que, em muitos padrões de fratura, sofrem ruptura verdadeira e exigem atenção específica.\n\nÉ essa lógica que sustenta o princípio moderno de tratamento do maléolo posterior: fixar o fragmento ósseo (em vez de apenas reparar tecido mole) é, ao mesmo tempo, a forma de restaurar a congruência articular e de devolver a estabilidade sindesmótica posterior, motivo pelo qual fragmentos maiores que 25% a 30% da superfície articular costumam ser fixados diretamente, em vez de tratados apenas indiretamente pela redução dos outros maléolos.",
-  "correta": "D. O ligamento tibiofibular posteroinferior costuma permanecer preservado na fratura trimaleolar, já que o fragmento do maléolo posterior representa, na maioria dos casos, uma avulsão óssea causada por esse ligamento, e não sua ruptura.",
+  "conceito": "### Fratura trimaleolar\n- Maléolos medial, lateral e ==posterior== (Volkmann).\n- O maléolo posterior é arrancado pelo ==ligamento tibiofibular posteroinferior==, que fica ==íntegro== preso ao fragmento.\n- Fixar o maléolo posterior restaura a estabilidade da sindesmose posterior.\n\n### Avulsões da sindesmose anterior\n| Epônimo | Fragmento |\n|---|---|\n| Tillaux-Chaput | tubérculo anterolateral da ==tíbia== (TFAI) |\n| Wagstaffe-Le Fort | tubérculo anterior da ==fíbula== (TFAI) |\n| Volkmann | maléolo posterior (TFPI) |\n\n### Fixar o posterior quando\n- > 25% da superfície (critério clássico), subluxação posterior do tálus, incisura fibular comprometida, degrau.\n\n> **Na prova:** trimaleolar preserva o ==tibiofibular posteroinferior==",
+  "correta": "**Tibiofibular posteroinferior.**\n- Íntegro, preso ao maléolo posterior.\n- Fixar o fragmento estabiliza.",
   "incorretas": {
-   "A": "O ligamento de Chaput (tibiofibular anteroinferior, na sua inserção tibial) está mais associado a fraturas por avulsão do fragmento anterolateral da tíbia, e não é o ligamento classicamente descrito como preservado na trimaleolar.",
-   "B": "O ligamento de Wagstaffe (relacionado à inserção fibular do tibiofibular anteroinferior) também está associado a um padrão de avulsão específico, não ao ligamento classicamente preservado na trimaleolar.",
-   "C": "O ligamento tibiofibular anteroinferior, ao contrário do posteroinferior, sofre ruptura verdadeira com frequência relevante em diversos padrões de fratura do tornozelo."
+   "A": "**Chaput.**\n- Epônimo de avulsão tibial anterior.",
+   "B": "**Wagstaffe.**\n- Avulsão fibular anterior.",
+   "C": "**TFAI.**\n- Frequentemente lesado."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 64"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "trauma-0073": {
   "conceito": "A fratura do **hâmulo do hamato** (o gancho do hamato) é a fratura cárpica mais sistematicamente perdida, e o motivo é radiográfico: o hâmulo é uma projeção volar, fina e curva, que se sobrepõe ao corpo do hamato e ao restante do carpo nas incidências habituais.\n\nO quadro clínico é característico e deveria bastar para levantar a suspeita: dor na eminência hipotenar, agravada pela preensão forte, em atleta de esportes com **taco ou raquete** (golfe, beisebol, tênis, hóquei), tipicamente na mão que fica na extremidade do cabo, com o mecanismo de impacto direto do taco contra o gancho, ou por avulsão pelo ligamento transverso do carpo e pelo piso-hamato.\n\nDois sinais ajudam: a dor à **palpação direta** do gancho (localizado cerca de 1 a 2 cm distal e radial ao pisiforme) e o **teste de tração do gancho** (hook of hamate pull test), em que a flexão resistida dos dedos anular e mínimo com o punho em desvio ulnar reproduz a dor.\n\nAs incidências que revelam a lesão são duas, e é preciso pedi-las explicitamente: a do **túnel do carpo** (carpal tunnel view, com o punho em hiperextensão e o feixe tangencial), que projeta o gancho de perfil, e a **oblíqua com o punho em supinação** de cerca de 45 graus (semissupinada), que o desloca da sobreposição. Quando a dúvida persiste (e persiste com frequência), a tomografia é o exame definitivo.\n\nO diagnóstico importa porque as complicações da fratura negligenciada são específicas: **pseudartrose** (favorecida pela vascularização precária do gancho e pela tração dos flexores), **neuropatia do nervo ulnar** no canal de Guyon, cujo trajeto contorna o gancho, e **ruptura atritiva** dos tendões flexores profundos do anular e do mínimo, que deslizam sobre a borda irregular. O tratamento da pseudartrose sintomática é, em regra, a excisão do fragmento.",
