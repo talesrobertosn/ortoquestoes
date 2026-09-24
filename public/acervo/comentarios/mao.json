@@ -1853,69 +1853,69 @@
   "conferido": false
  },
  "mao-0161": {
-  "conceito": "O polegar em gatilho da criança não é a doença do adulto. Não há inflamação nem esforço repetitivo: há desproporção entre o tendão flexor longo do polegar, que traz um nódulo (o nódulo de Notta), e o anel da polia A1.",
-  "correta": "É alteração isolada, não sindrômica, e o ponto de estreitamento é a polia A1. A criança chega em geral com a interfalângica travada em flexão, e não com o estalido do adulto. Parte resolve espontaneamente nos primeiros anos; quando não resolve, a liberação da A1 é curativa.",
+  "conceito": "### Polegar em gatilho da criança\n- **Não é inflamatório**: desproporção entre o FLP, com o **nódulo de Notta**, e a ==polia A1==.\n- Alteração ==isolada== (não sindrômica), bilateral em cerca de 25 a 30%.\n- Apresentação: **IF travada em flexão** (muitas vezes sem estalido), nódulo palpável na base do polegar.\n- Pais frequentemente atribuem a trauma.\n\n### Evolução e tratamento\n| Conduta | Detalhe |\n|---|---|\n| observação | resolução espontânea em parte considerável até cerca de 3 a 4 anos |\n| órtese em extensão | opção em alguns serviços |\n| ==liberação da A1== | curativa; evitar lesar os nervos digitais (muito próximos e superficiais no polegar) |\n\n### Dedo em gatilho dos dedos longos na criança\n- Mais raro e diferente: pode envolver FSD anômalo, nódulos e exigir mais que a liberação da A1.\n- Múltiplos gatilhos: pensar em **mucopolissacaridose**, AIJ, trissomia do 21.\n\n> **Na prova:** polegar em gatilho infantil = ==isolado, polia A1==.",
+  "correta": "**Isolado, na A1.**\n- É desproporção entre o FLP com nódulo de Notta e a polia A1.\n- A liberação da A1 resolve quando não há melhora espontânea.",
   "incorretas": {
-   "B": "A polia A2 do polegar existe, sobre a falange proximal, mas não é o ponto de travamento, nem deve ser seccionada.",
-   "C": "Não é manifestação sindrômica. Dedo em gatilho múltiplo, sim, obriga a procurar mucopolissacaridose, artrite idiopática juvenil ou trissomia do 21.",
-   "D": "Erra nas duas afirmações."
+   "B": "**Polia errada.**\n- A A2 não é o ponto de travamento e não deve ser seccionada.",
+   "C": "**Não é sindrômico.**\n- Só gatilhos múltiplos obrigam a investigar síndromes.",
+   "D": "**Erra os dois.**\n- Não é sindrômico nem na A2."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0162": {
-  "conceito": "O tendão flexor recebe sangue pelas vínculas, na face dorsal, e por difusão do líquido sinovial. Onde ele é comprimido contra uma polia, o suprimento é pobre e a nutrição depende quase só da difusão.",
-  "correta": "No flexor superficial a zona isquêmica fica sob a polia A2; no flexor profundo, sob a A4. Não é coincidência que essas sejam as duas polias que se preservam a todo custo: além de mecanicamente essenciais, são os pontos em que o tendão tem menos capacidade de cicatrizar.",
+  "conceito": "### Nutrição dos tendões flexores\n| Fonte | Via |\n|---|---|\n| vascular | vínculas (curtas e longas), entram pela face **dorsal** |\n| difusão | líquido sinovial dentro da bainha |\n\n### Zonas avasculares\n| Tendão | Zona isquêmica |\n|---|---|\n| ==flexor superficial== | ==sob a polia A2== |\n| flexor profundo | sob a polia **A4** |\n\n- Nessas zonas, o tendão depende quase só da difusão.\n- A face **volar** do tendão (em contato com a polia) é a mais pobre em vasos.\n\n### Polias\n| Polia | Local | Importância |\n|---|---|---|\n| A1 | MF | seccionada no dedo em gatilho |\n| ==A2== | falange proximal | ==essencial== (evita corda de arco) |\n| A3 | IFP | fina |\n| A4 | falange média | ==essencial== |\n| A5 | IFD | fina |\n\n### Implicações\n- Suturas no **lado dorsal** do tendão preservam a irrigação.\n- Mobilização precoce melhora a difusão sinovial.\n\n> **Na prova:** zona isquêmica do flexor superficial = ==polia A2==.",
+  "correta": "**Sob a A2.**\n- No flexor superficial, a zona pobre em vasos fica sob a A2.\n- No profundo, sob a A4.",
   "incorretas": {
-   "A": "A A1 é a polia da metacarpofalângica, seccionada no dedo em gatilho sem consequência mecânica. Não é a topografia descrita.",
-   "C": "A A3 é fina, fica sobre a interfalângica proximal e é cruzada pelas cruciformes.",
-   "D": "A C1 é cruciforme: existe para permitir que a bainha dobre sem colabar, e não comprime o tendão contra o osso."
+   "A": "**Polia sacrificável.**\n- A A1 é liberada no dedo em gatilho; não é a zona isquêmica.",
+   "C": "**Polia fina.**\n- A A3 não é a descrita.",
+   "D": "**Cruciforme.**\n- A C1 permite que a bainha dobre; não comprime o tendão contra o osso."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0163": {
-  "conceito": "A seta indica o nervo interósseo anterior, ramo profundo e puramente motor do mediano, que se separa dele logo abaixo do pronador redondo e desce sobre a membrana interóssea, acompanhando a artéria interóssea anterior.",
-  "correta": "O território dele são três músculos: o flexor longo do polegar, a metade radial do flexor profundo dos dedos (indicador e médio) e o pronador quadrado. A perda desses dois flexores profundos, somada à do flexor longo do polegar, produz o sinal clássico: pedir o gesto de \"ok\" e ver polpa contra polpa achatada em vez de um círculo, porque nem a interfalângica do polegar nem a distal do indicador fletem. E como o ramo é motor puro, não há alteração de sensibilidade, o que separa esta síndrome da compressão do mediano no pronador e no túnel do carpo.",
+  "conceito": "### Nervo interósseo anterior (NIA)\n- Ramo **motor puro** do mediano, sai logo abaixo do pronador redondo.\n- Desce sobre a **membrana interóssea** com a artéria interóssea anterior.\n\n| Músculo inervado | Função testada |\n|---|---|\n| flexor longo do polegar | flexão da IF do polegar |\n| ==flexor profundo do indicador e do médio== | ==flexão da IFD== desses dedos |\n| pronador quadrado | pronação com cotovelo fletido |\n\n### O que fica preservado\n| Músculo | Nervo |\n|---|---|\n| flexor superficial dos dedos | mediano (acima do NIA) |\n| pronador redondo, FRC, palmar longo | mediano |\n| tenar, lumbricais 1 e 2 | mediano na mão |\n| extensores | radial (NIP) |\n\n### Sinal do O\n- Polpa contra polpa achatada; IFP do indicador flete normalmente (FSD preservado).\n- Sensibilidade **normal**.\n\n> **Na prova:** compressão do NIA enfraquece os ==flexores profundos do indicador e médio==.",
+  "correta": "**FPD do indicador e médio.**\n- O NIA inerva a metade radial do FPD, o FLP e o pronador quadrado.\n- A IFD desses dedos perde a flexão, sem alteração sensitiva.",
   "incorretas": {
-   "A": "É a pegadinha do assunto: os flexores superficiais são inervados pelo mediano propriamente dito, acima da origem do interósseo anterior, e estão preservados. Por isso a interfalângica proximal do indicador continua fletindo normalmente, e só a distal falha.",
-   "C": "O flexor curto do polegar tem inervação dupla, e os lumbricais primeiro e segundo vêm dos ramos digitais do mediano, na mão. O interósseo anterior não chega à mão.",
-   "D": "Os extensores dos dedos são do nervo radial, pelo interósseo posterior. Nervo diferente, compartimento diferente."
+   "A": "**Pegadinha.**\n- Os flexores superficiais são do mediano acima do NIA e ficam preservados.",
+   "C": "**Músculos da mão.**\n- O NIA não chega à mão.",
+   "D": "**Nervo radial.**\n- Os extensores são do interósseo posterior."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0164": {
-  "conceito": "A imagem mostra uma formação de conteúdo líquido, muito hiperintensa e de contornos lobulados, situada posteriormente ao colo da glenoide, um cisto paralabral alojado na região do entalhe espinoglenoidal.",
-  "correta": "O nervo em risco ali é o supraescapular. Ele já deu o ramo para o supraespinal ao passar pela incisura supraescapular e, ao contornar a espinha da escápula pelo entalhe espinoglenoidal, fica exposto à compressão por um cisto, com atrofia isolada do infraespinal e fraqueza de rotação externa, poupando a fossa supraespinal. O cisto quase sempre é alimentado por uma lesão do lábio posterossuperior, então a ressonância deve ser lida procurando também essa lesão: tratar o cisto sem tratar o lábio é convidar a recidiva.",
+  "conceito": "### Cisto paralabral espinoglenoidal na RM\n- Formação **hiperintensa em T2**, lobulada, posterior ao colo da glenoide.\n- Associada a **lesão labral posterossuperior** (mecanismo de válvula).\n- Comprime o ==nervo supraescapular== no entalhe espinoglenoidal: **atrofia isolada do infraespinal**.\n\n### Nervos ao redor da escápula\n| Nervo | Passagem | Músculos |\n|---|---|---|\n| ==supraescapular== | incisura supraescapular → entalhe espinoglenoidal | supraespinal, infraespinal |\n| axilar | espaço quadrangular | deltoide, redondo menor |\n| subescapular (superior e inferior) | face anterior | subescapular, redondo maior |\n| torácico longo | parede torácica | serrátil anterior |\n\n### Espaço quadrangular\n- Compressão do **axilar** (fibrose, cisto): fraqueza do deltoide e redondo menor, dor posterior.\n\n### Tratamento do cisto\n- Descompressão artroscópica + **reparo labral**.\n\n> **Na prova:** cisto espinoglenoidal na RM comprime o ==supraescapular==.",
+  "correta": "**Supraescapular.**\n- O cisto no entalhe espinoglenoidal comprime o nervo após o ramo do supraespinal.\n- Gera atrofia isolada do infraespinal.",
   "incorretas": {
-   "A": "Não existe nervo supraespinhal. Supraespinal é o nome do músculo, inervado justamente pelo supraescapular, a alternativa troca músculo por nervo.",
-   "B": "O nervo subescapular inerva o subescapular, na face anterior da escápula. Ele não passa pelo entalhe espinoglenoidal, que é posterior.",
-   "D": "O nervo axilar atravessa o espaço quadrangular, mais inferior, junto com a artéria circunflexa umeral posterior. Cisto nessa outra topografia daria fraqueza de deltoide, e não é o que a imagem mostra."
+   "A": "**Não existe.**\n- Supraespinal é o músculo, inervado pelo supraescapular.",
+   "B": "**Face anterior.**\n- O subescapular não passa pelo entalhe.",
+   "D": "**Espaço quadrangular.**\n- O axilar é comprimido em outra topografia."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0165": {
-  "conceito": "A regra dos intrínsecos resolve a inervação da mão: o ulnar inerva quase todos. Ao mediano cabem apenas o primeiro e o segundo lumbricais e o grupo tenar, abdutor curto, oponente e a cabeça superficial do flexor curto do polegar.",
-  "correta": "A seta aponta o adutor do polegar, o músculo em leque que ocupa o primeiro espaço interósseo, com a cabeça transversa no terceiro metacarpo e a oblíqua no capitato e nas bases do segundo e terceiro metacarpos. Ele é inervado pelo ramo profundo do nervo ulnar, que atravessa a palma justamente para terminar nele. É a perda desse músculo que produz o sinal de Froment, e é a origem dele no terceiro metacarpo que explica por que a amputação do terceiro raio compromete a adução do polegar.",
+  "conceito": "### Adutor do polegar\n- Músculo em **leque** no 1º espaço interósseo.\n- Cabeças: **transversa** (diáfise do 3º MC) e **oblíqua** (base do 2º e 3º MC, capitato).\n- Inserção: sesamoide ulnar e base da falange proximal do polegar, aparelho extensor.\n- Inervação: ==ramo profundo do ulnar== (seu último ramo motor).\n\n### Inervação dos intrínsecos (resumo)\n| Nervo | Músculos |\n|---|---|\n| ==ulnar== | ==adutor do polegar==, interósseos, lumbricais 3º e 4º, hipotenares, cabeça profunda do flexor curto |\n| mediano | abdutor curto, oponente, cabeça superficial do flexor curto, lumbricais 1º e 2º |\n| radial | nenhum (só sensitivo na mão) |\n\n### Clínica\n- Paralisia do adutor: **Froment** e **Jeanne**, perda da força de pinça lateral (até 75%).\n- Reconstrução: transferência do ERCC com enxerto, ou do FSD do anelar (Smith).\n\n> **Na prova:** adutor do polegar = ==nervo ulnar==.",
+  "correta": "**Ulnar.**\n- O adutor do polegar é inervado pelo ramo profundo do ulnar.\n- Sua paralisia produz o sinal de Froment.",
   "incorretas": {
-   "B": "O nervo radial não inerva nenhum músculo intrínseco da mão: ele termina como ramo sensitivo puro.",
-   "C": "Ao mediano cabem os dois primeiros lumbricais e a tenar. O adutor, apesar de vizinho da tenar, não está nesse grupo.",
-   "D": "O interósseo anterior é ramo motor do mediano no antebraço e não chega à mão."
+   "B": "**Só sensitivo na mão.**\n- O radial não inerva intrínsecos.",
+   "C": "**Confusão frequente.**\n- O mediano inerva a tenar e os lumbricais 1º e 2º, não o adutor.",
+   "D": "**Não chega à mão.**\n- O interósseo anterior inerva FLP, FPD radial e pronador quadrado."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0166": {
-  "conceito": "Na palma, dois grupos musculares ocupam a região entre os metacarpos, e o que os distingue à primeira vista é a origem: o interósseo nasce do osso, o lumbrical nasce de um tendão.",
-  "correta": "A estrutura assinalada é o lumbrical: veja que ela se origina do tendão do flexor profundo dos dedos, não do metacarpo. São quatro, e cada um passa volar ao ligamento intermetacarpal transverso profundo e sobe pelo lado radial do dedo para se inserir na banda lateral do aparelho extensor. Essa origem num tendão e inserção em outro faz do lumbrical o único músculo que, ao se contrair, relaxa o próprio antagonista. Inervação dividida: primeiro e segundo pelo mediano, terceiro e quarto pelo ulnar.",
+  "conceito": "### Músculos da palma entre os metacarpos\n| Músculo | Origem | Inserção | Ação | Nervo |\n|---|---|---|---|---|\n| ==lumbricais (4)== | ==tendões do FPD== | banda lateral (lado **radial**) | estende IF, estabiliza MF | 1º e 2º mediano; 3º e 4º ulnar |\n| interósseos palmares (3) | **metacarpo** (uma cabeça) | falange proximal e aparelho extensor | **aduzem** (PAD) | ulnar |\n| interósseos dorsais (4) | metacarpos adjacentes (duas cabeças) | falange proximal e aparelho extensor | **abduzem** (DAB) | ulnar |\n\n### Pistas na imagem\n- Músculo que nasce de **tendão** na palma: lumbrical.\n- Passa **volar** ao ligamento intermetacarpal transverso profundo (os interósseos passam dorsais).\n\n### Flexor curto dos dedos\n- Músculo do **pé**; na mão o flexor superficial é extrínseco.\n\n> **Na prova:** músculo que nasce no tendão do FPD = ==lumbrical==.",
+  "correta": "**Lumbrical.**\n- A estrutura nasce do tendão do flexor profundo.\n- Sobe pelo lado radial até a banda lateral.",
   "incorretas": {
-   "B": "Os interósseos palmares nascem do próprio metacarpo, e não de tendão. São três, aduzem os dedos em direção ao eixo do dedo médio e são todos do ulnar.",
-   "C": "Os interósseos dorsais também nascem do osso, com duas cabeças em metacarpos adjacentes, e abduzem os dedos. Também são do ulnar.",
-   "D": "O flexor curto dos dedos é músculo do pé, não da mão. Na mão o correspondente seria o flexor superficial dos dedos, que é extrínseco e vem do antebraço."
+   "B": "**Nasce do osso.**\n- O interósseo palmar tem origem no metacarpo.",
+   "C": "**Duas cabeças ósseas.**\n- O interósseo dorsal nasce de metacarpos adjacentes.",
+   "D": "**Músculo do pé.**\n- Não existe flexor curto dos dedos na mão."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0167": {
@@ -1930,14 +1930,14 @@
   "conferido": false
  },
  "mao-0168": {
-  "conceito": "A via de Thompson é o acesso dorsal ao rádio, feita entre o extensor radial curto do carpo e o extensor comum dos dedos. Ela cruza o supinador, e é dentro dele que mora o problema.",
-  "correta": "A seta indica o nervo interósseo posterior, que entra no supinador pela arcada de Frohse e o atravessa em espiral em torno do colo do rádio. Ele é a estrutura em risco em toda cirurgia do terço proximal do rádio por essa via. Duas manobras o protegem: identificá-lo antes de qualquer descolamento, e supinar o antebraço, o que leva o nervo lateralmente e o afasta do campo. A referência de segurança é conhecida, o nervo cruza o rádio em torno de 5 a 7 centímetros distalmente à articulação radiocapitelar, e nesse território não se disseca às cegas.",
+  "conceito": "### Via de Thompson e o nervo interósseo posterior\n- Intervalo: **ERCC × extensor comum dos dedos**.\n- O ==nervo interósseo posterior== entra no supinador pela **arcada de Frohse** e o atravessa em espiral ao redor do colo do rádio.\n- Cruza o rádio a cerca de **5 a 7 cm** da radiocapitelar (mais perto em pronação).\n\n### Proteção\n- **Identificar** o nervo antes de descolar o supinador.\n- **Supinar** o antebraço: o nervo se desloca lateralmente e se afasta.\n- Desinserir o supinador da borda anterior do rádio com o nervo protegido dentro do músculo.\n\n### Nervos que não estão nesse campo\n| Nervo | Onde corre |\n|---|---|\n| mediano | volar, entre FSD e FPD |\n| sensitivo radial | sob o braquiorradial, emergindo distal e dorsal |\n| cutâneo lateral do antebraço | subcutâneo lateral e volar (musculocutâneo) |\n\n> **Na prova:** estrutura na via de Thompson = ==nervo interósseo posterior==.",
+  "correta": "**Interósseo posterior.**\n- O NIP atravessa o supinador no campo da via de Thompson.\n- Identificá-lo e supinar o antebraço o protegem.",
   "incorretas": {
-   "A": "O nervo mediano corre pela face volar do antebraço, no compartimento flexor. Ele não aparece numa via dorsal.",
-   "B": "O ramo sensitivo do radial corre por baixo do braquiorradial, na face radial e volar, e emerge distalmente para inervar o dorso da mão. Ele está em risco em acessos radiais mais distais, não neste ponto da via dorsal.",
-   "D": "O cutâneo lateral do antebraço é a continuação sensitiva do musculocutâneo e corre subcutâneo na face lateral e volar. Está fora do campo de uma via dorsal profunda."
+   "A": "**Face volar.**\n- O mediano não aparece numa via dorsal.",
+   "B": "**Mais radial e distal.**\n- O ramo sensitivo corre sob o braquiorradial.",
+   "D": "**Subcutâneo lateral.**\n- O cutâneo lateral está fora do plano profundo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0169": {
