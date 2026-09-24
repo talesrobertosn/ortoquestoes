@@ -3928,91 +3928,92 @@
   "conferido": false
  },
  "pediatria-0304": {
-  "conceito": "Nos casos de displasia do desenvolvimento do quadril com sinais de instabilidade ao exame físico, a radiografia costuma mostrar: quebra do arco de Shenton, atraso na ossificação do núcleo epifisário femoral e aumento do índice acetabular (geralmente maior que 30°). Já o posicionamento da cabeça femoral dentro do **quadrante inferomedial** de Ombredanne (formado pelas linhas de Hilgenreiner e Perkins) é o achado **normal**, esperado em um quadril bem localizado; em um quadril displásico/luxado, a cabeça femoral está deslocada para fora desse quadrante (tipicamente para o quadrante superolateral), sendo esse, portanto, o sinal ausente no exame.",
-  "correta": "B. O sinal não encontrado é a cabeça femoral no quadrante inferomedial.",
+  "conceito": "### Núcleo de ossificação da cabeça femoral\n- Aparece entre ==4 e 6 meses== (meninas antes).\n- Ao nascer, a cabeça é cartilaginosa: ==ultrassom (Graf)== é o exame.\n- Atraso do núcleo: sinal de DDQ (lado luxado ossifica depois), hipotireoidismo.\n\n### Imagem na DDQ\n| Idade | Exame | Parâmetros |\n|---|---|---|\n| < 4 a 6 meses | ultrassom | ângulo alfa (≥ 60° normal), beta |\n| > 4 a 6 meses | radiografia | Hilgenreiner, Perkins, Shenton, índice acetabular (< 30° ao nascer) |\n\n### Outros núcleos do quadril\n- Trocanter maior: 4 anos; trocanter menor: 12 anos; trirradiada fecha 14 a 16 anos.\n\n### Quadrantes de Ombrédanne\n- Linhas de Hilgenreiner (horizontal, pelas cartilagens trirradiadas) e Perkins (vertical, pela borda lateral do acetábulo).\n- Normal: cabeça (ou metáfise medial) no ==quadrante inferomedial==.\n- Luxado: ==superolateral==.\n\n### Achados no quadril luxado\n- Shenton quebrado, índice acetabular > 30°, núcleo atrasado, cabeça superolateral.\n- Sinal de Hart: limitação da abdução, o sinal mais confiável após 3 meses.\n\n> **Na prova:** quadril luxado = cabeça no quadrante ==superolateral==, não inferomedial",
+  "correta": "**Inferomedial é normal.**\n- No quadril luxado a cabeça fica superolateral.\n- Por isso é o sinal ausente.",
   "incorretas": {
-   "A": "A quebra do arco de Shenton é um achado clássico e esperado em quadris displásicos/luxados, não sendo o sinal ausente.",
-   "C": "Um índice acetabular maior que 30° é um achado esperado de displasia acetabular associada, não sendo o sinal ausente no exame.",
-   "D": "O atraso na ossificação da epífise femoral é um achado comumente presente em quadris displásicos, não sendo o sinal ausente no exame."
+   "A": "**Shenton quebrado.**\n- Presente na luxação.",
+   "C": "**Índice acetabular > 30°.**\n- Presente: acetábulo raso.",
+   "D": "**Núcleo atrasado.**\n- Presente do lado luxado."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0306": {
-  "conceito": "Em crianças com mielomeningocele, contraturas em flexão do joelho já estabelecidas e **rígidas** (não corrigíveis por alongamento passivo ou fisioterapia) exigem correção cirúrgica óssea. Uma **osteotomia extensora** do fêmur distal realinha o eixo do membro, corrigindo o flexo fixo e melhorando a capacidade de apoio em extensão durante a marcha, sendo indicada quando o grau de contratura (como os 30° descritos) já ultrapassa o que medidas conservadoras conseguem corrigir.",
-  "correta": "C. O tratamento indicado é a osteotomia extensora.",
+  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Flexo do joelho na MMC\n| Contratura | Conduta |\n|---|---|\n| < 20°, flexível | fisioterapia, órteses |\n| 20 a 30° | liberação posterior radical (isquiotibiais, cápsula) |\n| ==> 30° ou rígida== | ==osteotomia extensora supracondiliana== (ou hemiepifisiodese anterior) |\n\n- Flexo aumenta o gasto energético e a demanda do quadríceps.\n\n> **Na prova:** flexo rígido de 30° na MMC = ==osteotomia extensora== (veja o alerta)",
+  "correta": "**Osteotomia extensora.**\n- Corrige contratura rígida.\n- Evita estirar vasos e nervos da liberação isolada.",
   "incorretas": {
-   "A": "A fisioterapia isolada não é capaz de corrigir uma contratura **rígida** já estabelecida, sendo mais eficaz na prevenção ou no manejo de contraturas ainda flexíveis.",
-   "B": "O uso de órteses associado à fisioterapia também não corrige uma deformidade angular fixa e rígida do joelho, sendo mais útil para contraturas passíveis de correção ou para manutenção pós-operatória.",
-   "D": "A liberação posterior de partes moles é mais indicada para contraturas ainda flexíveis ou de menor magnitude; quando a deformidade já é rígida e de grau considerável, a correção óssea isolada (osteotomia extensora) costuma ser suficiente e mais direta."
+   "A": "**Fisioterapia isolada.**\n- Não corrige contratura rígida.",
+   "B": "**Órtese.**\n- Mantém, não corrige.",
+   "D": "**Associação.**\n- Liberação posterior é reservada a contraturas menores; a banca não a aceitou."
   },
-  "geradoEm": "2026-09-21",
+  "alerta": "Muitos autores associam liberação posterior à osteotomia extensora em contraturas de 30° ou mais, e a hemiepifisiodese anterior do fêmur é uma alternativa em crianças com crescimento remanescente. A banca aceitou apenas a osteotomia isolada.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0307": {
-  "conceito": "A doença de Blount (tíbia vara patológica) tem várias características clássicas bem estabelecidas:\n- Há **subluxação lateral da tíbia** em relação ao fêmur, à medida que a deformidade progride, por conta do comprometimento assimétrico da fise medial proximal da tíbia.\n- Há formação de um **bico ósseo medial** na metáfise proximal da tíbia, achado radiográfico característico.\n- Existe associação bem documentada com **sobrepeso/obesidade** e, mais recentemente, com **deficiência de vitamina D**, ambos fatores de risco reconhecidos para a forma infantil da doença.\n- Quanto ao prognóstico por sexo e raça, a literatura aponta pior prognóstico associado ao sexo **feminino** e à raça **negra**, não ao sexo masculino, como a alternativa afirma.\n\nOu seja, a única afirmativa incorreta entre as listadas é a que atribui o pior prognóstico a \"meninos negros\", quando o padrão classicamente descrito é de pior prognóstico em **meninas negras**.",
-  "correta": "D. O pior prognóstico na doença de Blount está classicamente associado a meninas negras, não a meninos negros, por isso essa é a afirmativa incorreta.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Achados\n- ==Bico metafisário medial==; ==subluxação lateral da tíbia== (lateral thrust na marcha).\n- Associação com obesidade e deficiência de vitamina D.\n- Pior prognóstico: ==meninas negras==, obesas, início precoce, estágios avançados.\n\n> **Na prova:** Blount pior prognóstico = ==meninas negras obesas==, não meninos",
+  "correta": "**Incorreta: pior em meninas.**\n- A forma infantil é mais grave em meninas negras obesas.\n- Os demais itens são verdadeiros.",
   "incorretas": {
-   "A": "A subluxação lateral da tíbia é, de fato, uma característica descrita na progressão da doença de Blount, essa afirmativa está correta.",
-   "B": "A formação do bico ósseo medial na metáfise tibial é, de fato, um achado radiográfico característico da doença de Blount, essa afirmativa está correta.",
-   "C": "A associação com sobrepeso e deficiência de vitamina D é, de fato, reconhecida na literatura sobre a doença de Blount, essa afirmativa está correta."
+   "A": "**Verdadeira.**\n- Subluxação lateral, com thrust na marcha.",
+   "B": "**Verdadeira.**\n- Bico metafisário medial.",
+   "C": "**Verdadeira.**\n- Sobrepeso e hipovitaminose D associados."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0308": {
-  "conceito": "A marcha da criança pequena (em torno de 18 meses, pouco depois de iniciar a deambulação independente) tem características biomecânicas bem distintas da marcha madura do adulto, refletindo o desenvolvimento ainda incompleto do controle de equilíbrio e coordenação:\n- **Base alargada**, para compensar o equilíbrio ainda imaturo.\n- **Joelhos fletidos** durante toda a fase de apoio (ausência do padrão de extensão do joelho no contato inicial característico da marcha madura).\n- **Cadência alta** (passos rápidos e curtos), também como estratégia compensatória de equilíbrio.\n- Os braços ainda ficam tipicamente em posição de **\"guarda alta\"** (elevados, sem o balanço recíproco coordenado com as pernas), a **reciprocação do balanço dos membros superiores** com os membros inferiores é uma característica que só se desenvolve mais tardiamente, por volta dos 3-4 anos, à medida que a marcha amadurece.\n\nOu seja, a reciprocação do balanço dos braços é justamente a característica que **ainda não está presente** aos 18 meses.",
-  "correta": "C. A reciprocação do balanço dos membros superiores ainda não está presente na marcha da criança aos 18 meses de idade.",
+  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n### Marcha imatura (até cerca de 3 anos)\n| Característica | Explicação |\n|---|---|\n| base alargada | equilíbrio instável |\n| joelhos fletidos, contato com o pé plano | sem contato de calcanhar |\n| ==cadência alta==, passo curto | membros curtos |\n| braços em guarda alta | ==sem balanço recíproco== consistente |\n| apoio simples curto | pouco controle |\n\n- Marcha madura por volta dos ==3 anos== (Sutherland), com padrão adulto aos 7.\n\n> **Na prova:** aos 18 meses ainda falta o ==balanço recíproco dos MMSS==",
+  "correta": "**Balanço recíproco dos MMSS.**\n- Braços ficam em guarda alta.\n- Padrão recíproco firma-se depois, com a marcha madura.",
   "incorretas": {
-   "A": "A base alargada é, de fato, uma característica presente na marcha da criança aos 18 meses.",
-   "B": "Os joelhos fletidos durante o apoio são, de fato, uma característica presente nessa fase da marcha infantil.",
-   "D": "A cadência alta é, de fato, uma característica presente na marcha da criança pequena nessa idade."
+   "A": "**Base alargada.**\n- Presente.",
+   "B": "**Joelhos fletidos.**\n- Presente.",
+   "D": "**Cadência alta.**\n- Presente, passos curtos."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0309": {
-  "conceito": "A deficiência femoral focal proximal (PFFD) tem associações teratogênicas e anatômicas bem documentadas na literatura:\n- **Talidomida**: droga teratogênica historicamente associada a defeitos de redução de membros, incluindo a PFFD.\n- **Hemimelia fibular**: associação anatômica frequente, já que ambas as condições compartilham uma origem embriológica relacionada a distúrbios do desenvolvimento do broto do membro inferior.\n- **Agenesia dos ligamentos cruzados**: associação bem descrita, já que a PFFD frequentemente cursa com anomalias associadas do joelho, incluindo ausência ou hipoplasia dos ligamentos cruzados.\n\nJá o **tabagismo materno**, apesar de ser um fator de risco obstétrico reconhecido para diversas complicações gestacionais (baixo peso ao nascer, prematuridade), não tem uma associação teratogênica específica e bem estabelecida com a deficiência femoral focal proximal na literatura ortopédica.",
-  "correta": "D. O tabagismo materno não é uma associação classicamente estabelecida com a deficiência femoral focal proximal.",
+  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Associações e etiologia\n| Associação | Relação |\n|---|---|\n| ==hemimelia fibular== | cerca de 50% |\n| ==agenesia dos cruzados== | frequente |\n| ==talidomida== | teratógeno clássico |\n| diabetes materno | associada |\n| tabagismo materno | ==sem associação estabelecida== |\n\n> **Na prova:** DFFP associa-se a talidomida, hemimelia fibular e agenesia do LCA; ==não ao tabagismo==",
+  "correta": "**Tabagismo materno.**\n- Sem associação estabelecida.\n- Diabetes materno e talidomida são os fatores conhecidos.",
   "incorretas": {
-   "A": "O uso de talidomida é uma associação teratogênica classicamente reconhecida com a deficiência femoral focal proximal.",
-   "B": "A hemimelia fibular é uma associação anatômica frequente e bem documentada com a deficiência femoral focal proximal.",
-   "C": "A agenesia dos ligamentos cruzados é uma associação anatômica bem descrita, frequentemente encontrada em pacientes com deficiência femoral focal proximal."
+   "A": "**Talidomida.**\n- Associada.",
+   "B": "**Hemimelia fibular.**\n- Em cerca de metade.",
+   "C": "**Agenesia dos cruzados.**\n- Frequente."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0310": {
-  "conceito": "A **coxa vara do desenvolvimento** caracteriza-se por uma diminuição progressiva do ângulo cervicodiafisário do fêmur proximal, com um fragmento triangular inferomedial característico no colo femoral (triângulo de Fairbank) e alargamento/verticalização da fise, sem o colapso ou a fragmentação da cabeça femoral observados na doença de Legg-Calvé-Perthes, nem o deslizamento epifisário posteroinferior característico da epifisiólise.",
-  "correta": "C. A imagem corresponde à coxa vara do desenvolvimento.",
+  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n> **Na prova:** colo varo com fragmento triangular inferior (Fairbank) = ==coxa vara do desenvolvimento==",
+  "correta": "**Coxa vara do desenvolvimento.**\n- Colo varo, fise vertical.\n- Triângulo de Fairbank no colo inferior.",
   "incorretas": {
-   "A": "A **epifisiólise crônica estável** mostraria um deslizamento posteroinferior da epífise em relação ao colo femoral (visível pela quebra da linha de Klein), um padrão diferente da simples diminuição do ângulo cervicodiafisário mostrada.",
-   "B": "A **displasia do desenvolvimento do quadril** mostraria sinais de displasia acetabular e/ou subluxação/luxação da cabeça femoral, achados diferentes da alteração isolada do colo femoral mostrada.",
-   "D": "A doença de **Legg-Calvé-Perthes** mostraria achatamento, fragmentação ou esclerose da própria cabeça femoral, achados ausentes na imagem, que mostra principalmente uma alteração do ângulo cervicodiafisário."
+   "A": "**Epifisiólise.**\n- Adolescente; escorregamento da epífise.",
+   "B": "**DDQ.**\n- Acetábulo raso, cabeça migrada.",
+   "D": "**Perthes.**\n- Epífise densa ou fragmentada."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0311": {
-  "conceito": "O **ângulo coxa-pé (thigh-foot angle)** é um dos parâmetros usados no perfil rotacional dos membros inferiores para avaliar a torção tibial, medido com a criança em decúbito ventral, joelho fletido a 90°, comparando o eixo da coxa com o eixo do pé. Segundo essa referência, o valor médio já se encontra discretamente **positivo (rotação externa)** desde os primeiros anos de vida (em torno de **+5 graus aos 2 anos**) e continua a progredir no sentido de mais rotação externa ao longo do crescimento, atingindo em média cerca de **+10 graus aos 8 anos**, valor próximo ao encontrado no adulto.\n\nReconhecer essa progressão (de um discreto valor positivo para um valor positivo maior) é parte do raciocínio usado para diferenciar variações rotacionais fisiológicas de deformidades que exigem investigação adicional.",
-  "correta": "D. O ângulo coxa-pé médio é de aproximadamente +5 graus aos 2 anos e +10 graus aos 8 anos.",
+  "conceito": "### Torção tibial externa patológica\n- Normal no adulto: cerca de 20° (ângulo coxa-pé).\n- Aumentada (> 18 a 30°) no adolescente: marcha com pé para fora.\n\n### Associações\n| Condição | Relação |\n|---|---|\n| ==coalizão tarsal== | pé plano rígido, compensação rotacional |\n| anteversão femoral aumentada | síndrome do mau alinhamento (compensação) |\n| mielomeningocele | torção externa |\n| Blount | torção ==interna== |\n\n### Síndrome do mau alinhamento\n- Anteversão femoral + torção tibial externa: dor patelofemoral, instabilidade patelar.\n- Osteotomias derrotativas em casos graves.\n\n### Rotacionais na criança\n| Causa | Idade típica |\n|---|---|\n| metatarso aduto | lactente |\n| torção tibial interna | 1 a 3 anos |\n| anteversão femoral | 3 a 8 anos |\n\n### Ângulo coxa-pé (Staheli)\n| Idade | Média |\n|---|---|\n| lactente | cerca de -5° (interno) |\n| ==2 anos== | ==cerca de +5°== |\n| ==8 anos== | ==cerca de +10°== |\n| adulto | +10 a +20° |\n\n- A tíbia roda externamente com o crescimento: torção tibial interna do lactente se resolve.\n\n> **Na prova:** coxa-pé aos 2 e 8 anos = ==+5° e +10°==",
+  "correta": "**+5 e +10 graus.**\n- Rotação externa progressiva da tíbia.\n- Negativo só no lactente.",
   "incorretas": {
-   "A": "A progressão descrita nessa alternativa é decrescente (de +5 para -10), o oposto do padrão de progressivo aumento da rotação externa esperado com o crescimento.",
-   "B": "O valor aos 2 anos já costuma ser discretamente positivo (não negativo) nessa referência específica.",
-   "C": "O valor aos 8 anos é positivo, não negativo, a torção tibial se torna progressivamente mais externa com o crescimento, não o contrário."
+   "A": "**Negativo aos 8 anos.**\n- Seria torção interna persistente.",
+   "B": "**Negativo aos 2 anos.**\n- Valor do lactente.",
+   "C": "**Ambos negativos.**\n- Patológico."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0312": {
-  "conceito": "A classificação de **Boyd** para a pseudartrose congênita da tíbia divide a condição em subtipos conforme a apresentação e a patologia associada. O **tipo II**, caracterizado por uma pseudartrose **já estabelecida ao nascimento**, tipicamente com um estreitamento em \"ampulheta\" (hourglass) da tíbia distal, sem uma fase prévia de simples arqueamento, é classicamente considerado o de **pior prognóstico** dentro do espectro dessa doença: por já se apresentar como uma verdadeira falha de consolidação desde o nascimento (e não como um arqueamento que fratura posteriormente), esse subtipo tem taxas de consolidação mais baixas e maior tendência à recidiva, mesmo após tratamento cirúrgico agressivo.",
-  "correta": "B. O tipo II da classificação de Boyd, com pseudartrose já estabelecida ao nascimento, é o de pior prognóstico na pseudartrose congênita da tíbia.",
+  "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n### Prognóstico no Boyd\n- ==Tipo II (ampulheta)==: o mais comum e o de ==pior prognóstico==; fratura antes dos 2 anos, associado a NF1.\n- Tipos III e IV: melhor evolução após consolidação.\n\n> **Na prova:** pior prognóstico no Boyd = ==tipo II==",
+  "correta": "**Tipo II.**\n- Ampulheta, NF1.\n- Fratura precoce e consolidação difícil.",
   "incorretas": {
-   "A": "O tipo I, associado a um arqueamento anterolateral presente ao nascimento sem fratura estabelecida, tem prognóstico relativamente melhor do que o tipo II.",
-   "C": "O tipo III, de padrão cístico, não é classicamente considerado o de pior prognóstico entre os subtipos de Boyd.",
-   "D": "O tipo IV, de padrão esclerótico sem estreitamento importante, tende a ter prognóstico relativamente mais favorável do que o tipo II."
+   "A": "**Tipo I.**\n- Pseudartrose ao nascer; menos comum.",
+   "C": "**Tipo III.**\n- Cisto; prognóstico melhor.",
+   "D": "**Tipo IV.**\n- Esclerose; melhor prognóstico."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0313": {
