@@ -3369,104 +3369,95 @@
   "conferido": false
  },
  "mao-0289": {
-  "conceito": "Cada teste provocativo tem um tempo próprio, e não é detalhe burocrático: encurtá-lo produz falso negativo, porque em compressão inicial o sintoma leva tempo para aparecer.",
-  "correta": "Phalen 60 segundos, Durkan 30 segundos. A diferença faz sentido pelo mecanismo: o Phalen eleva a pressão intratúnel de forma indireta, pela flexão do punho, e precisa de mais tempo para que a parestesia surja; o Durkan comprime o nervo diretamente com o polegar, sendo mais rápido e mais eficiente, é ele o teste de melhor desempenho dos três clássicos. Registre também o tempo até o sintoma aparecer: quanto mais rápido, mais grave tende a ser a compressão.",
+  "conceito": "### Testes provocativos do túnel do carpo\n| Teste | Mecanismo | Desempenho |\n|---|---|---|\n| Tinel | percussão sobre o nervo | sensibilidade baixa a moderada |\n| Phalen | flexão do punho por 60 s (aumenta a pressão) | sensibilidade e especificidade moderadas |\n| ==Durkan (compressão carpal)== | ==pressão direta do polegar sobre o túnel por 30 s== | ==melhor sensibilidade e especificidade== dos três |\n| teste de elevação da mão | mão acima da cabeça por 2 min | útil |\n\n### Outros elementos do diagnóstico\n- Parestesia noturna nos três primeiros dedos e metade radial do anelar; **sinal da sacudida** (flick).\n- Hipoestesia poupando a eminência tenar (ramo cutâneo palmar sai antes do túnel).\n- Atrofia tenar e fraqueza de abdução do polegar nos casos avançados.\n- **ENMG** confirma e gradua.\n- Ultrassom: área de secção transversa do mediano acima de cerca de 10 a 12 mm².\n\n### Tempos\n| Teste | Tempo |\n|---|---|\n| ==Phalen== | ==60 segundos== |\n| ==Durkan== | ==30 segundos== |\n| Phalen reverso | 60 segundos |\n| elevação da mão | 2 minutos |\n\n- Encurtar o tempo gera falso negativo na compressão inicial.\n- Sintoma que surge rápido sugere compressão mais grave.\n\n> **Na prova:** Phalen ==60 s==, Durkan ==30 s==",
+  "correta": "**60 e 30 segundos.**\n- Phalen age indiretamente pela flexão do punho e precisa de mais tempo.\n- Durkan comprime o nervo diretamente e é o de melhor desempenho.",
   "incorretas": {
-   "A": "Inverte os dois tempos.",
-   "B": "Encurta o Phalen para 30 segundos, o que aumenta o falso negativo nos casos iniciais.",
-   "D": "Estende o Durkan para 60 segundos. Não é errado manter a pressão mais tempo, mas o tempo descrito para o teste é de 30 segundos."
+   "A": "**Invertida.**\n- Troca os dois tempos.",
+   "B": "**Phalen curto.**\n- 30 s aumenta o falso negativo.",
+   "D": "**Durkan longo.**\n- O tempo descrito é de 30 s."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0290": {
-  "conceito": "A síndrome dolorosa regional complexa altera a forma como o estímulo é processado, e cada alteração tem nome preciso. Usá-los corretamente não é preciosismo: eles descrevem fenômenos diferentes e orientam a escolha da medicação.",
-  "correta": "Sensibilidade aumentada a estímulos que já são dolorosos é hiperalgesia, a dor desproporcional ao estímulo. É um dos achados centrais da síndrome, ao lado da alodinia, e ambas indicam sensibilização central, motivo pelo qual analgésico comum resolve pouco e as medicações neuropáticas, como gabapentina e amitriptilina, entram cedo no tratamento.",
+  "conceito": "### Síndrome dolorosa regional complexa (SDRC)\n| Tipo | Definição |\n|---|---|\n| I (distrofia simpático-reflexa) | sem lesão nervosa definida |\n| II (causalgia) | com lesão de nervo identificável |\n\n### Critérios de Budapeste\n- Dor contínua desproporcional ao evento.\n- Sintomas e sinais em categorias: **sensitiva** (alodinia, hiperalgesia), **vasomotora** (temperatura, cor), **sudomotora/edema**, **motora/trófica**.\n\n### Fases clássicas\n| Fase | Achados |\n|---|---|\n| ==aguda (quente)== | ==calor, edema, eritema==, **hiperidrose**, dor intensa |\n| distrófica | pele fria, cianótica, rigidez, osteopenia |\n| atrófica | pele seca e fina, atrofia, contraturas |\n\n### Tratamento\n- **Precoce**: analgesia, fisioterapia (dessensibilização, imagem motora graduada), corticoide oral, bisfosfonato, bloqueios.\n- Prevenção: **vitamina C** após fratura do rádio distal (evidência discutida).\n\n### Termos da dor\n| Termo | Definição |\n|---|---|\n| ==hiperalgesia== | ==dor aumentada a estímulo que já é doloroso== |\n| alodinia | dor a estímulo que normalmente não dói (roçar do lençol) |\n| hiperpatia | resposta exagerada, retardada, com somação e dor que persiste após o estímulo |\n| disestesia | sensação anormal desagradável, espontânea ou provocada |\n| hipoestesia | sensibilidade diminuída |\n\n- Hiperalgesia e alodinia indicam ==sensibilização central==: medicação neuropática cedo.\n\n> **Na prova:** mais dor a estímulo doloroso = ==hiperalgesia==",
+  "correta": "**Hiperalgesia.**\n- Dor desproporcional a um estímulo que já é doloroso.\n- Sinal de sensibilização central, ao lado da alodinia.",
   "incorretas": {
-   "A": "Alodinia é dor provocada por estímulo que normalmente não dói, o roçar do lençol, a manga da camisa, uma brisa. Fenômeno diferente e igualmente característico da síndrome.",
-   "C": "Hiperpatia é uma resposta exagerada e retardada, com somação anormal e dor que persiste depois que o estímulo cessou, frequentemente mal localizada. Também aparece na síndrome, mas não é o que a questão descreve.",
-   "D": "Hipersensibilidade é termo genérico, sem definição na taxonomia da dor."
+   "A": "**Estímulo não doloroso.**\n- Alodinia é dor ao toque leve.",
+   "C": "**Resposta retardada e persistente.**\n- Com somação anormal, mal localizada.",
+   "D": "**Termo genérico.**\n- Não existe na taxonomia da dor."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0291": {
-  "conceito": "A posição do punho no momento do impacto decide qual estrutura recebe a força. Em hiperextensão com desvio ulnar, a carga atravessa os ligamentos e produz a sequência perissemilunar de Mayfield. Em hiperextensão com desvio radial, ela vai para o osso.",
-  "correta": "Com desvio radial, o escafoide fratura. O mecanismo é direto: nessa posição o polo proximal do escafoide fica preso entre o rádio e o ligamento radioescafocapitato, que funciona como um cinto sobre a cintura do osso, enquanto o polo distal continua sendo empurrado. O escafoide quebra no meio, na cintura, que é a topografia de cerca de 70% a 80% das fraturas. Some-se a extensão do punho além de 95 graus e está descrito o mecanismo clássico da queda com a mão espalmada.",
+  "conceito": "### Sequência de Mayfield (decorar)\n| Estágio | Ligamento |\n|---|---|\n| ==I== | ==escafossemilunar== |\n| II | capitossemilunar |\n| ==III== | ==piramidal-semilunar (lunopiramidal)== |\n| IV | radiocarpal dorsal (semilunar luxa para volar) |\n\n- Direção: **radial → em torno do semilunar → ulnar → dorsal**.\n- Mecanismo: hiperextensão, desvio ulnar, supinação intercarpal.\n\n### Radiografia\n| Estágio | Achado |\n|---|---|\n| I | diástase escafossemilunar (Terry Thomas), anel cortical |\n| II e III | capitato fora do semilunar no perfil; linhas de Gilula quebradas |\n| IV | semilunar em \"xícara derramada\" no perfil; forma triangular no PA |\n\n### A posição define a lesão\n| Posição no impacto | Lesão |\n|---|---|\n| hiperextensão + desvio ulnar + supinação | sequência ligamentar de Mayfield |\n| ==hiperextensão + desvio radial== | ==fratura do escafoide== (cintura) |\n| extensão > 95° | mecanismo clássico da fratura do escafoide |\n\n- No desvio radial, o polo proximal fica preso entre rádio e radioescafocapitato enquanto o distal é empurrado.\n- Cintura: 70 a 80% das fraturas do escafoide.\n\n> **Na prova:** hiperextensão com desvio radial = ==fratura do escafoide==",
+  "correta": "**Fratura do escafoide.**\n- No desvio radial, a carga vai para o osso e não para os ligamentos.\n- O radioescafocapitato funciona como cinto sobre a cintura.\n- Queda com a mão espalmada, extensão acima de 95°.",
   "incorretas": {
-   "A": "A dissociação escafossemilunar é o estágio I de Mayfield e vem do mecanismo descrito no enunciado (hiperextensão com desvio ulnar e supinação), não do desvio radial.",
-   "B": "A fratura do estiloide radial ocorre por impacto direto ou por avulsão ligamentar, e não é a lesão característica desse mecanismo.",
-   "D": "A luxação capitossemilunar é o estágio II de Mayfield, e portanto pertence à mesma sequência do desvio ulnar."
+   "A": "**Mayfield I.**\n- Vem do desvio ulnar descrito no enunciado.",
+   "B": "**Outro mecanismo.**\n- Impacto direto ou avulsão ligamentar.",
+   "D": "**Mayfield II.**\n- Mesma sequência do desvio ulnar."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0292": {
-  "conceito": "Os portais volares do punho foram descritos para ver o que os dorsais não alcançam: a face volar dos ligamentos escafossemilunar e lunopiramidal, a cápsula volar e a superfície volar do complexo da fibrocartilagem triangular, regiões cegas na visão dorsal.",
-  "correta": "O portal volar radial é feito lateral, ou seja, radial, ao tendão do flexor radial do carpo: abre-se a bainha do tendão, ele é afastado para ulnar, e a cápsula é penetrada por baixo. Assim o próprio tendão funciona como escudo entre o instrumento e o nervo mediano, que fica ulnar a ele. Existe também o portal volar ulnar, feito na borda ulnar dos tendões flexores dos dedos, e nele o cuidado é o feixe vasculonervoso ulnar.",
+  "conceito": "### Portais dorsais da artroscopia do punho\n| Portal | Localização | Uso principal |\n|---|---|---|\n| 1-2 | entre 1º e 2º compartimentos | estiloide radial; risco para o radial superficial e a artéria radial |\n| 3-4 | entre ELP e extensores comuns | ==visão padrão==: escafoide, semilunar, ligamento escafossemilunar |\n| ==4-5== | entre extensores comuns e extensor do mínimo | ==melhor inspeção do complexo da fibrocartilagem triangular== |\n| ==6R== | radial ao EUC | ==portal de trabalho== do CFCT (reparo, desbridamento) |\n| 6U | ulnar ao EUC | saída de fluxo; risco para o ramo dorsal do ulnar |\n| mediocarpal radial e ulnar | 1 cm distal ao 3-4 e ao 4-5 | articulação mediocarpal, instabilidades |\n\n### Rotina\n- 3-4 para visão geral, 4-5 ou 6R para o lado ulnar.\n- Tração de 4 a 5 kg (torre).\n\n### Portais volares\n| Portal | Local | Estrutura protegida | Visão |\n|---|---|---|---|\n| ==volar radial== | ==radial ao flexor radial do carpo== (tendão afastado para ulnar) | ==nervo mediano== (ulnar ao FRC) | face volar do escafossemilunar, cápsula volar |\n| volar ulnar | borda ulnar dos flexores dos dedos | feixe ulnar | lunopiramidal, face volar do CFCT |\n\n> **Na prova:** portal volar = ==lateral (radial) ao flexor radial do carpo==",
+  "correta": "**Lateral ao flexor radial do carpo.**\n- Abre-se a bainha e o tendão é afastado para ulnar.\n- O próprio FRC protege o nervo mediano.\n- Mostra a face volar do escafossemilunar, cega pelos portais dorsais.",
   "incorretas": {
-   "A": "Medial ao flexor ulnar do carpo é território do feixe vasculonervoso ulnar. Entrar por ali é procurar o nervo e a artéria ulnar.",
-   "B": "Lateral ao flexor ulnar do carpo também aproxima demais do feixe ulnar, que corre justamente radial a esse tendão.",
-   "C": "Medial ao flexor radial do carpo é exatamente onde passa o nervo mediano. É o lado a evitar, e é por isso que o tendão é afastado para lá e não para cá."
+   "A": "**Feixe ulnar.**\n- Nervo e artéria ulnar estão ali.",
+   "B": "**Perto do feixe ulnar.**\n- Ele corre radial ao FUC.",
+   "C": "**Nervo mediano.**\n- É o lado a evitar."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0293": {
-  "conceito": "O retalho cruzado entre dedos traz pele do dorso do dedo vizinho para cobrir uma perda no dedo lesado. Ele resolve o que enxerto não resolve (leito sem paratendão, com tendão ou osso expostos), mas cobra um preço: os dois dedos ficam costurados juntos por duas a três semanas, até a autonomização.",
-  "correta": "A indicação é justamente a lesão volar do dedo com tendões expostos. Tendão sem paratendão não recebe enxerto de pele: sem leito vascularizado, o enxerto não pega, e mesmo que pegasse aderiria ao tendão e impediria o deslizamento. O retalho traz pele com o seu próprio suprimento e resolve as duas coisas. Vale lembrar que ele deixa área doadora no dorso do dedo vizinho, que precisa de enxerto de pele total.",
+  "conceito": "### Retalho cruzado de dedo (cross finger)\n- Pele do ==dorso do dedo vizinho== virada como página de livro sobre o defeito ==volar==.\n- Pedículo seccionado em 2 a 3 semanas.\n- Área doadora: enxerto de pele total.\n\n| Indicação | Contraindicação relativa |\n|---|---|\n| ==defeito volar com tendão ou osso exposto== (falanges média e proximal, polpa) | ==idoso== (rigidez) |\n| sem paratendão (enxerto não pega) | artrite, doença vascular (Raynaud, diabetes, tabagismo) |\n| | infecção ativa |\n\n### Variações\n| Retalho | Uso |\n|---|---|\n| cross finger reverso | defeito ==dorsal== (desepidermizado) |\n| cross finger inervado | polpa, com ramo dorsal do nervo digital |\n| Moberg, Foucher (kite) | polegar |\n\n> **Na prova:** cross finger = ==defeito volar com tendão exposto==.",
+  "correta": "**Defeito volar com tendão exposto.**\n- Tendão sem paratendão não recebe enxerto.\n- O retalho traz pele vascularizada que desliza.\n- Área doadora dorsal recebe enxerto de pele total.",
   "incorretas": {
-   "B": "Idade avançada é contraindicação relativa, e por um motivo mecânico: as duas a três semanas com os dedos unidos produzem rigidez, e em pessoa idosa essa rigidez frequentemente não se desfaz.",
-   "C": "Dedo com artrite tem a mesma limitação, agravada, a imobilização prolongada é o pior tratamento possível para uma articulação já comprometida.",
-   "D": "Infecção contraindica qualquer retalho eletivo. Primeiro se resolve a infecção, com desbridamento e antibiótico; a cobertura vem depois."
+   "B": "**Contraindicação relativa.**\n- Duas a três semanas com dedos unidos deixam rigidez.",
+   "C": "**Contraindicação.**\n- Imobilização prolongada piora a articulação doente.",
+   "D": "**Contraindicação.**\n- Tratar a infecção antes de cobrir."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0294": {
-  "conceito": "Na doença de Kienböck o estágio de Lichtman decide a estratégia: enquanto o alinhamento do carpo está preservado, tenta-se descarregar o semilunar; perdido o alinhamento, parte-se para salvamento.",
-  "correta": "A ressecção da fileira proximal do carpo é indicada no estágio III-B, semilunar colapsado, escafoide em rotação fixa com sinal do anel cortical, altura carpal reduzida e alinhamento perdido. Ela funciona criando uma articulação nova entre a cabeça do capitato e a fossa semilunar do rádio, e por isso exige que essas duas superfícies estejam com cartilagem preservada. Perde-se cerca de metade do arco de movimento e parte da força de preensão, e ganha-se alívio da dor com um procedimento simples e sem material de síntese.",
+  "conceito": "### Classificação de Lichtman (Kienböck)\n| Estágio | Achado |\n|---|---|\n| I | radiografia normal; RM alterada |\n| II | ==esclerose== do semilunar, sem colapso |\n| IIIA | colapso/fragmentação do semilunar, **alinhamento carpal preservado** |\n| ==IIIB== | colapso + ==rotação fixa do escafoide em flexão== (anel cortical), ângulo radioescafoide > 60°, migração proximal do capitato |\n| IIIC | fratura coronal crônica do semilunar |\n| IV | artrose radiocarpal ou mediocarpal |\n\n### Conduta por estágio (resumo)\n| Estágio | Opções |\n|---|---|\n| I a IIIA, ulna minus | encurtamento do rádio, osteotomia de nivelamento |\n| I a IIIA, ulna neutra/plus | encurtamento do capitato, enxerto vascularizado |\n| ==IIIB== | ==artrodese escafotrapeziotrapezoide ou escafocapitato, ressecção da fileira proximal== |\n| IV | artrodese total, artroplastia, denervação |\n\n### Ressecção da fileira proximal\n- Nova articulação: ==cabeça do capitato na fossa semilunar do rádio==.\n- Exige cartilagem preservada nas duas superfícies.\n- Perde cerca de metade do arco e parte da força; alivia a dor sem síntese.\n\n> **Na prova:** carpectomia proximal no Kienböck = ==Lichtman IIIB==",
+  "correta": "**Lichtman IIIB.**\n- Colapso do semilunar com rotação fixa do escafoide.\n- Alinhamento perdido: hora do salvamento.\n- Exige capitato e fossa semilunar com cartilagem boa.",
   "incorretas": {
-   "A": "No estágio I a radiografia é normal e o diagnóstico se faz por ressonância. O tratamento é imobilização e descarga.",
-   "B": "No estágio II há esclerose sem colapso e com alinhamento normal, cabem osteotomia de nivelamento, quando há variância ulnar negativa, ou revascularização.",
-   "C": "No III-A o semilunar já colapsou, mas o escafoide ainda não rodou e o alinhamento carpal está mantido. Ainda faz sentido tentar descarregar o semilunar, e ressecar a fileira proximal seria desproporcional."
+   "A": "**RX normal.**\n- Imobilização e descarga.",
+   "B": "**Esclerose sem colapso.**\n- Nivelamento ou revascularização.",
+   "C": "**Alinhamento mantido.**\n- Ainda cabe descarregar o semilunar."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0295": {
-  "conceito": "Na doença de Dupuytren do **quinto dedo**, a pele volar e lateral frequentemente está encurtada e aderida aos cordões. O retalho de Jacobsen é uma técnica de rearranjo cutâneo destinada a fornecer cobertura após a liberação dessa contratura, especialmente na borda ulnar da mão.",
-  "correta": "**D, quinto dedo.** O Jacobsen flap é utilizado para tratar a contratura de Dupuytren que acomete o dedo mínimo.",
+  "conceito": "### Dupuytren do quinto dedo\n- Cordas próprias da borda ulnar: ==corda do abdutor do dedo mínimo== e corda digital lateral.\n- A pele volar e ulnar fica curta e aderida.\n- A IFP do mínimo é a articulação mais difícil de recuperar.\n\n### Retalho de Jacobsen\n- Rearranjo cutâneo local da ==borda ulnar do dedo mínimo==.\n- Cobre o defeito após liberar a contratura sem tensão.\n\n### Opções de pele no Dupuytren\n| Técnica | Uso |\n|---|---|\n| incisão de Bruner | exposição ampla em zigue-zague |\n| incisão longitudinal + zetaplastias | um raio |\n| palma aberta (McCash) | pele deficiente na palma |\n| ==Jacobsen== | ==quinto dedo== |\n| dermofasciectomia + enxerto | recidiva, diátese |\n\n> **Na prova:** retalho de Jacobsen = ==quinto dedo==.",
+  "correta": "**Quinto dedo.**\n- Retalho da borda ulnar do mínimo.\n- Cobre o defeito após liberar a contratura.",
   "incorretas": {
-   "A": "O indicador é raramente o alvo dessa técnica e tem anatomia cutânea distinta da borda ulnar.",
-   "B": "O dedo médio pode ser afetado por Dupuytren, mas não é a indicação clássica do retalho de Jacobsen.",
-   "C": "O anular é frequentemente acometido, porém a técnica citada é descrita especificamente para o quinto dedo."
+   "A": "**Indicador.**\n- Raramente acometido e sem relação com a técnica.",
+   "B": "**Médio.**\n- Não é a indicação clássica.",
+   "C": "**Anelar.**\n- O mais acometido, mas o retalho é do mínimo."
   },
   "referencias": [
    "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Dupuytren disease.",
    "Hueston JT. Dupuytren's Contracture. Churchill Livingstone; 1985."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "moderado",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "mao-0296": {
-  "conceito": "Os três testes clássicos do túnel do carpo agem por mecanismos diferentes, e a descrição de cada um denuncia qual é.",
-  "correta": "Compressão direta sobre o nervo mediano no punho, mantida por 30 segundos, é o teste de Durkan, o teste de compressão carpal. Ele reproduz o próprio mecanismo da doença, elevar a pressão dentro do túnel, em vez de agir indiretamente, e por isso reúne o melhor desempenho dos três clássicos. A técnica: polegares sobre o túnel, pressão firme e sustentada, resposta positiva quando surge parestesia no território do mediano.",
+  "conceito": "### Testes provocativos do túnel do carpo\n| Teste | Mecanismo | Desempenho |\n|---|---|---|\n| Tinel | percussão sobre o nervo | sensibilidade baixa a moderada |\n| Phalen | flexão do punho por 60 s (aumenta a pressão) | sensibilidade e especificidade moderadas |\n| ==Durkan (compressão carpal)== | ==pressão direta do polegar sobre o túnel por 30 s== | ==melhor sensibilidade e especificidade== dos três |\n| teste de elevação da mão | mão acima da cabeça por 2 min | útil |\n\n### Outros elementos do diagnóstico\n- Parestesia noturna nos três primeiros dedos e metade radial do anelar; **sinal da sacudida** (flick).\n- Hipoestesia poupando a eminência tenar (ramo cutâneo palmar sai antes do túnel).\n- Atrofia tenar e fraqueza de abdução do polegar nos casos avançados.\n- **ENMG** confirma e gradua.\n- Ultrassom: área de secção transversa do mediano acima de cerca de 10 a 12 mm².\n\n### Não confundir\n- **Semmes-Weinstein:** limiar de pressão cutânea; quantifica, não provoca.\n- **Discriminação de dois pontos:** densidade de inervação; altera tarde.\n\n> **Na prova:** compressão sobre o mediano por 30 s = ==Durkan==",
+  "correta": "**Durkan.**\n- Pressão direta do polegar sobre o túnel por 30 segundos.\n- Reproduz o mecanismo da doença.\n- Melhor desempenho dos três testes clássicos.",
   "incorretas": {
-   "A": "O sinal de Tinel é percussão, não compressão sustentada. Tem especificidade razoável e sensibilidade baixa, e positiva também em nervo em regeneração.",
-   "C": "O teste de Phalen mantém o punho em flexão máxima por 60 segundos, sem que o examinador encoste no nervo.",
-   "D": "Os monofilamentos de Semmes-Weinstein medem o limiar de pressão da sensibilidade cutânea. São exame quantitativo de sensibilidade, não manobra provocativa."
+   "A": "**Percussão.**\n- Não é compressão sustentada.",
+   "C": "**Flexão do punho.**\n- 60 segundos, sem tocar no nervo.",
+   "D": "**Exame quantitativo.**\n- Mede limiar de pressão, não é teste provocativo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0297": {
