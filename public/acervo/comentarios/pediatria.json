@@ -830,122 +830,122 @@
   "conferido": false
  },
  "pediatria-0057": {
-  "conceito": "A cronologia de ossificação fetal ajuda a interpretar ultrassonografia, radiografia neonatal e displasias esqueléticas. O molde cartilaginoso de ossos longos aparece primeiro; centros de ossificação primários invadem progressivamente a diáfise. A questão cobra a sequência embrionária aproximada, não a data de aparecimento de cada núcleo epifisário pós-natal.",
-  "correta": "A alternativa B está correta: fêmur e tíbia iniciam ossificação por volta da 7ª e 8ª semanas de gestação, respectivamente, na referência clássica de embriologia ortopédica.",
+  "conceito": "### Cronologia embrionária do membro\n| Semana | Evento |\n|---|---|\n| 4ª | broto do membro superior (inferior poucos dias depois) |\n| 5ª a 6ª | condensação mesenquimal, molde cartilaginoso |\n| ==7ª a 8ª== | ==centros de ossificação primários== dos ossos longos (clavícula primeiro, ~5ª a 6ª; ==fêmur e tíbia na 7ª a 8ª==) |\n| 7ª | rotação dos membros |\n| 8ª | fim da organogênese |\n| 12ª em diante | ossificação progride nos ossos curtos |\n\n### Particularidades\n- ==Clavícula==: primeiro osso a ossificar (membranosa, 5ª semana), último a fechar a fise medial (cerca de 25 anos).\n- Ossificação endocondral: centro primário na diáfise; secundários (epífises) em geral após o nascimento, exceto fêmur distal (36ª semana, sinal de maturidade fetal).\n\n> **Na prova:** ossificação de fêmur e tíbia = ==7ª e 8ª semanas==.",
+  "correta": "**7ª e 8ª semanas.**\n- Centros primários diafisários.\n- Final do período embrionário.",
   "incorretas": {
-   "A": "A alternativa A (5 e 6.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "C": "A alternativa C (9 e 10.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "D": "A alternativa D (10 e 11.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta."
+   "A": "**Cedo demais.**\n- Ainda mesênquima/cartilagem.",
+   "C": "**Tarde.**\n- Já ossificando antes.",
+   "D": "**Tarde.**\n- Idem."
   },
   "referencias": [
    "The Developing Human: Clinically Oriented Embryology, skeletal system. https://www.ncbi.nlm.nih.gov/books/NBK548949/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0058": {
-  "conceito": "No GMFCS, nível I é o mais frequente entre crianças com paralisia cerebral em muitas coortes. Crianças nesse nível caminham sem limitações nos ambientes habituais, mas podem ter redução de velocidade, coordenação ou equilíbrio em tarefas avançadas como correr, saltar, terreno irregular e longas distâncias. A escala não mede inteligência, espasticidade isolada ou habilidade manual; descreve mobilidade grossa habitual. Os níveis aumentam em restrição funcional de I a V, e a distribuição populacional varia conforme gravidade da população estudada, idade, acesso a reabilitação e critérios de inclusão.",
-  "correta": "A alternativa A está correta. O nível I é o mais frequente segundo a distribuição epidemiológica usada pela questão. Ele representa a criança que deambula de forma independente em casa, escola e comunidade. Reconhecer esse nível evita um erro comum: caminhar não significa necessariamente desempenho motor perfeito, pois podem persistir limitações em velocidade, qualidade da marcha e atividades complexas.",
+  "conceito": "### GMFCS (6 a 12 anos)\n| Nível | Mobilidade |\n|---|---|\n| I | anda sem restrições; corre e salta com limitação |\n| II | anda na maioria dos ambientes; limitação em distâncias, terreno irregular |\n| III | anda com ==dispositivo manual== (andador, muletas); cadeira para distâncias |\n| ==IV== | ==controle de cabeça e tronco==; anda pouco (casa, com ajuda); ==cadeira de rodas na comunidade== (pode ser motorizada) |\n| V | sem controle de cabeça e tronco; transportado |\n\n### Uso ortopédico\n| Nível | Preocupação |\n|---|---|\n| I-III | marcha: análise, cirurgia multinível |\n| ==IV-V== | ==luxação do quadril== (vigilância radiográfica), escoliose |\n\n- Índice de migração de Reimers > 30 a 40%: cirurgia de partes moles ou osteotomias.\n\n### Distribuição\n- ==Nível I== é o mais frequente nos registros populacionais (cerca de 1/3 a 40%).\n- Espásticos unilaterais (hemiplegia) concentram-se em I e II.\n\n> **Na prova:** GMFCS mais frequente = ==nível I== (veja o alerta).",
+  "correta": "**Nível I.**\n- Mais frequente nos registros.\n- Hemiplégicos predominam nos níveis leves.",
   "incorretas": {
-   "B": "O nível II também inclui marcha independente, porém com limitações mais evidentes para longas distâncias, terreno irregular ou habilidades motoras avançadas. Não é o nível modal descrito pela questão.",
-   "C": "O nível III requer habitualmente dispositivo manual de mobilidade para caminhar. É menos frequente que os níveis ambulatoriais independentes nas coortes gerais de paralisia cerebral.",
-   "D": "O nível IV implica mobilidade independente muito limitada e uso frequente de assistência ou cadeira de rodas. Ele representa comprometimento mais grave e não é o nível funcional mais prevalente."
+   "B": "**Frequente, não o maior.**\n- Nível II.",
+   "C": "**Menos frequente.**\n- Dispositivo manual.",
+   "D": "**Menos frequente.**\n- Cadeira na comunidade."
   },
+  "alerta": "A prevalência de cada nível GMFCS varia entre registros e serviços. A alternativa reproduz a distribuição epidemiológica esperada pela fonte da prova.",
   "referencias": [
    "GMFCS Expanded and Revised. CanChild. https://mld.foundation/wp-content/uploads/2020/04/GMFCS-ER_2007.pdf"
   ],
-  "alerta": "A prevalência de cada nível GMFCS varia entre registros e serviços. A alternativa reproduz a distribuição epidemiológica esperada pela fonte da prova.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0059": {
-  "conceito": "O colágeno tipo I é a principal proteína estrutural do osso e é formado por uma tripla hélice na qual a glicina ocupa cada terceiro aminoácido. A glicina possui cadeia lateral extremamente pequena, permitindo o empacotamento estreito das três cadeias no centro da hélice. Nas formas clássicas de osteogênese imperfeita relacionadas a COL1A1 e COL1A2, substituições de glicina podem perturbar a formação e estabilidade da tripla hélice, produzindo colágeno estruturalmente anormal. De modo geral, variantes que reduzem a quantidade de colágeno normal podem produzir fenótipo mais brando, enquanto substituições estruturais podem causar doença mais grave, embora exista grande heterogeneidade genótipo-fenótipo.",
-  "correta": "A alternativa B está correta. A glicina é o aminoácido central para a organização repetitiva Gly-X-Y da tripla hélice do colágeno tipo I. Substituições de glicina são um mecanismo clássico de defeito estrutural em osteogênese imperfeita.",
+  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Base molecular\n- Colágeno tipo I: tripla hélice com repetição ==Gly-X-Y== (glicina a cada terceiro aminoácido).\n- ==Substituição da glicina== (mutação de sentido trocado em COL1A1/COL1A2) impede o enrolamento: formas graves (II, III, IV).\n- Mutação que reduz a quantidade (haploinsuficiência): forma leve (I).\n\n> **Na prova:** aminoácido do defeito do colágeno na OI = ==glicina==",
+  "correta": "**Glicina.**\n- Presente a cada três posições da hélice.\n- Sua substituição desestrutura a tripla hélice.",
   "incorretas": {
-   "A": "Lisina participa de modificações pós-traducionais e ligações cruzadas do colágeno, mas não é o aminoácido que ocupa obrigatoriamente cada terceiro resíduo da tripla hélice.",
-   "C": "Cisteína não constitui o resíduo estrutural repetitivo característico do colágeno tipo I.",
-   "D": "Arginina pode aparecer na cadeia proteica, mas não exerce o papel estrutural obrigatório da glicina no centro da tripla hélice."
+   "A": "**Não é o defeito clássico.**\n- Lisina é hidroxilada, mas não é o alvo.",
+   "C": "**Não é o defeito.**\n- Cisteína.",
+   "D": "**Não é o defeito.**\n- Arginina."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Osteogenesis Imperfecta. https://posna.org/physician-education/study-guide/osteogenesis-imperfecta",
    "GeneReviews. COL1A1- and COL1A2-Related Osteogenesis Imperfecta. https://www.ncbi.nlm.nih.gov/books/NBK1295/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0060": {
-  "conceito": "A sinostose radioulnar congênita resulta de falha de segmentação embrionária entre rádio e ulna, formando ponte óssea ou fibrosa proximal e bloqueando pronação-supinação. Flexão e extensão do cotovelo podem estar preservadas, e muitas crianças compensam a posição fixa do antebraço com ombro e punho. A deformidade é bilateral em aproximadamente 60% a 80% dos casos e, na maior parte, é **isolada**, embora um terço possa ter associações sindrômicas ou outras malformações. A decisão cirúrgica não se baseia apenas na radiografia: depende da posição fixa, bilateralidade e limitação para alimentação, higiene e atividades diárias.",
-  "correta": "A alternativa A está correta. A sinostose radioulnar congênita é geralmente uma alteração isolada e bilateral. A bilateralidade favorece origem congênita; uma sinostose adquirida após trauma costuma ser unilateral e tem história de fratura, cirurgia ou lesão de partes moles. A associação com síndromes deve ser pesquisada, mas sua possibilidade não muda o fato de que a apresentação mais frequente é não sindrômica.",
+  "conceito": "### Sinostose radioulnar congênita\n- Falha de segmentação entre rádio e ulna proximais (7ª semana).\n- ==Bilateral em cerca de 60%==, geralmente ==isolada==.\n- Pode associar-se a síndromes (Apert, Klinefelter e aneuploidias do X, artrogripose).\n- Antebraço fixo, em geral ==pronado==; compensação pelo ombro e punho.\n- Diagnóstico tardio (compensação eficiente).\n\n### Classificação (Tachdjian / Cleary-Omer)\n- Fibrosa × óssea; cabeça do rádio normal, ausente ou luxada.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| neutro ou leve pronação | ==observação== |\n| pronação > 60° com limitação | osteotomia derrotativa (neutro a 10-20° de pronação) |\n| risco | ==síndrome compartimental== nas grandes correções |\n\n> **Na prova:** sinostose radioulnar = ==isolada e bilateral==.",
+  "correta": "**Isolada e bilateral.**\n- Bilateral em cerca de 60%.\n- Na maioria, sem outras malformações.",
   "incorretas": {
-   "B": "A condição pode ser unilateral, mas isso não representa o padrão predominante. A bilateralidade é um dado epidemiológico clássico e uma pista diagnóstica importante.",
-   "C": "Há associações com síndromes e malformações, porém não em todos os casos. Classificá-la como tipicamente associada ignora que a maioria é isolada.",
-   "D": "A alternativa reúne duas características menos frequentes: associação obrigatória e unilateralidade. Elas podem ocorrer, mas não descrevem a apresentação usual da sinostose radioulnar congênita."
+   "B": "**Lado errado.**\n- Predomina bilateral.",
+   "C": "**Associações são exceção.**\n- Geralmente isolada.",
+   "D": "**Duplamente errada.**\n- Associada e unilateral."
   },
   "referencias": [
    "Congenital Radioulnar Synostosis Review. https://pmc.ncbi.nlm.nih.gov/articles/PMC11593211/",
    "Functional outcomes in congenital radioulnar synostosis. https://pmc.ncbi.nlm.nih.gov/articles/PMC13081135/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0061": {
-  "conceito": "A luxação congênita da cabeça do rádio é uma anomalia de desenvolvimento frequentemente bilateral e associada a outras alterações do membro superior. A direção mais comum do deslocamento é **posterior** ou posterolateral. A cabeça radial pode ser arredondada ou em domo, o capítulo pode ser hipoplásico e o colo radial alongado. A limitação funcional típica é perda de extensão terminal do cotovelo e restrição de pronação-supinação; dor e estalidos tendem a surgir mais tarde. Diferencie de luxação de Monteggia antiga: no trauma, a história e a deformidade ulnar são fundamentais; na forma congênita, a anatomia é displásica e pode ser bilateral.",
-  "correta": "A alternativa D está correta. A luxação congênita costuma ser posterior e limitar a extensão do cotovelo. A posição posterior da cabeça radial cria bloqueio mecânico à extensão terminal e pode produzir proeminência posterior/lateral. A associação entre direção posterior e déficit de extensão é o par anatômico solicitado pela questão.",
+  "conceito": "### Luxação congênita da cabeça do rádio\n- Anomalia congênita mais comum do cotovelo.\n- ==Bilateral== na maioria e ==associada== a outras manifestações (sinostose, síndromes como nail-patella, Ehlers-Danlos, Larsen).\n- Direção mais comum: ==posterior==.\n\n### Congênita × Monteggia crônico\n| Achado | Congênita | Traumática |\n|---|---|---|\n| lado | bilateral | unilateral |\n| cabeça | ==convexa (cúpula)==, pequena | côncava, normal |\n| capítulo | hipoplásico | normal |\n| ulna | reta | deformidade plástica |\n| direção | posterior | anterior |\n\n### Tratamento\n- Observação; ressecção da cabeça após a maturidade se dor.\n\n### Limitação de movimento\n| Direção | Bloqueio |\n|---|---|\n| ==posterior== | ==extensão== (cabeça bate atrás do capítulo) |\n| anterior | flexão |\n\n- Pronossupinação costuma ser pouco limitada; dor e estalido na adolescência.\n\n> **Na prova:** luxação congênita = ==posterior com limitação da extensão==",
+  "correta": "**Posterior, limitação da extensão.**\n- A cabeça posterior bloqueia a extensão.\n- Anterior limitaria a flexão.",
   "incorretas": {
-   "A": "A direção anterior é menos comum e a limitação predominante não é tipicamente de flexão. A apresentação clássica é posterior ou posterolateral, com déficit de extensão.",
-   "B": "A direção posterior está correta, mas a limitação de flexão não é o padrão principal. O bloqueio mecânico costuma se manifestar mais na extensão terminal e na rotação do antebraço.",
-   "C": "A limitação de extensão é compatível, porém a direção anterior não é a mais frequente. A alternativa mistura um efeito funcional correto com a direção anatômica errada."
+   "A": "**Direção errada.**\n- Anterior é Monteggia.",
+   "B": "**Bloqueio errado.**\n- Posterior limita a extensão.",
+   "C": "**Duplamente errada.**\n- Direção e bloqueio."
   },
   "referencias": [
    "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
    "Congenital radial head dislocation: narrative review. https://pubmed.ncbi.nlm.nih.gov/42611687/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0062": {
-  "conceito": "A neurofibromatose tipo 1 é uma doença autossômica dominante causada por alterações do gene NF1 e apresenta manifestações cutâneas, neurológicas, tumorais e musculoesqueléticas. Na terminologia histórica, era chamada de neurofibromatose periférica, em contraste com a antiga denominação de neurofibromatose central para a doença hoje incluída no espectro NF2-related schwannomatosis. Para o ortopedista, NF1 tem grande relevância: podem ocorrer escoliose distrófica ou não distrófica, displasia e pseudoartrose congênita da tíbia, alterações de crescimento, deformidades ósseas e neurofibromas plexiformes. A escoliose distrófica pode progredir rapidamente e apresentar scalloping vertebral, costelas afiladas e cifose angular. A displasia tibial frequentemente começa por arqueamento anterolateral.",
-  "correta": "A alternativa C está correta. Pela nomenclatura clássica empregada na questão, a neurofibromatose tipo 1 corresponde à forma 'periférica' e apresenta manifestações ortopédicas relevantes e relativamente frequentes.",
+  "conceito": "### Neurofibromatoses\n| Tipo | Nome | Gene | Achados | Ortopedia |\n|---|---|---|---|---|\n| ==NF1== | ==periférica== (von Recklinghausen) | neurofibromina (17q) | café-com-leite, neurofibromas, Lisch, Crowe | ==frequente== |\n| NF2 | central | merlina (22q) | ==schwannoma vestibular bilateral==, meningiomas | rara |\n| schwannomatose | | SMARCB1, LZTR1 | schwannomas múltiplos dolorosos | |\n\n### NF1 na ortopedia\n| Manifestação | Detalhe |\n|---|---|\n| escoliose | a mais comum; distrófica (raio curto) |\n| pseudartrose congênita da tíbia | anterolateral |\n| hipertrofia de membro | elefantíase |\n| TMBNP | transformação do plexiforme |\n| deficiência de vitamina D, osteoporose | |\n\n- Herança dominante; metade mutação nova.\n\n> **Na prova:** NF1 = ==periférica, manifestações ortopédicas frequentes==.",
+  "correta": "**Periférica, ortopedia frequente.**\n- Escoliose, pseudartrose da tíbia, hipertrofia.\n- A NF2 é central e pouco ortopédica.",
   "incorretas": {
-   "A": "A expressão 'central' era historicamente aplicada à neurofibromatose tipo 2, não à NF1. A frequência de manifestações musculoesqueléticas na NF1 torna também inadequado ignorar sua importância ortopédica.",
-   "B": "Além de utilizar a classificação histórica incorreta como 'central', subestima manifestações ortopédicas bem reconhecidas da NF1.",
-   "D": "A denominação histórica 'periférica' está compatível com NF1, mas manifestações ortopédicas não são raras; escoliose e displasia tibial são exemplos clássicos."
+   "A": "**Central é NF2.**\n- Manifestações certas.",
+   "B": "**NF2.**\n- Central e pouco ortopédica.",
+   "D": "**Frequentes.**\n- Periférica certa."
   },
   "referencias": [
    "Feldman DS, Jordan C, Fonseca L. Orthopaedic manifestations of neurofibromatosis type 1. J Am Acad Orthop Surg. 2010. https://pubmed.ncbi.nlm.nih.gov/20511440/",
    "Orthopaedic manifestations of neurofibromatosis in children: an update. https://pubmed.ncbi.nlm.nih.gov/12151887/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0063": {
-  "conceito": "A leucomalácia periventricular é uma lesão da substância branca cerebral especialmente associada à prematuridade. As fibras motoras destinadas aos membros inferiores percorrem regiões próximas aos ventrículos laterais e podem ser desproporcionalmente afetadas. O resultado clínico clássico é paralisia cerebral espástica do tipo diplegia, na qual o comprometimento dos membros inferiores é maior do que o dos membros superiores. O ortopedista frequentemente acompanha essas crianças por marcha em equino, flexão de joelhos, adução dos quadris, rotação femoral aumentada, deformidades torsionais e risco de subluxação do quadril. O tratamento deve integrar nível funcional, análise da marcha, espasticidade, força, controle motor seletivo e deformidades fixas.",
-  "correta": "A alternativa A está correta. Leucomalácia periventricular é uma lesão cerebral clássica do prematuro e associa-se fortemente à diplegia espástica, com predomínio do déficit motor nos membros inferiores.",
+  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n### Topografia × lesão\n| Topografia | Lesão típica |\n|---|---|\n| ==diplegia== (MMII > MMSS) | ==leucomalácia periventricular== (prematuro); fibras dos MMII passam mais perto dos ventrículos |\n| hemiplegia | infarto (artéria cerebral média), malformação |\n| tetraplegia | lesão difusa, hipóxia grave |\n\n> **Na prova:** leucomalácia periventricular = ==diplegia==",
+  "correta": "**Diplegia.**\n- Prematuro com lesão periventricular.\n- Fibras dos membros inferiores passam junto aos ventrículos.",
   "incorretas": {
-   "B": "Hemiplegia decorre mais tipicamente de lesões cerebrais unilaterais, como infarto arterial ou outras injúrias focais, e não é a associação clássica com leucomalácia periventricular simétrica.",
-   "C": "Tetraplegia pode ocorrer em lesões encefálicas extensas, mas a topografia periventricular característica do prematuro produz classicamente predomínio nos membros inferiores.",
-   "D": "Monoplegia é uma apresentação focal e não corresponde ao padrão típico da lesão bilateral periventricular."
+   "B": "**Infarto focal.**\n- Artéria cerebral média.",
+   "C": "**Lesão difusa.**\n- Hipóxia grave.",
+   "D": "**Rara.**\n- Não é a associação."
   },
   "referencias": [
    "Progress in Periventricular Leukomalacia. https://pmc.ncbi.nlm.nih.gov/articles/PMC2898886/",
    "Cerebral palsy in children: A clinical practice review. https://pubmed.ncbi.nlm.nih.gov/39168782/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0064": {
-  "conceito": "O estirão puberal não é uniforme. Mãos e pés aceleram primeiro, seguidos por membros inferiores, e o tronco completa mais tardiamente o crescimento; por isso as proporções corporais mudam durante a adolescência. Ao interpretar escoliose e desigualdade de membros, importa conhecer essa sequência e não tratar “crescimento” como fenômeno homogêneo.",
-  "correta": "A alternativa C está correta na formulação da questão: na puberdade, o crescimento do tronco é mais acentuado que o dos membros inferiores na fase tardia do estirão. A alternativa resume a mudança de proporções que acompanha a maturação esquelética.",
+  "conceito": "### Crescimento: tronco × membros\n| Fase | Predomínio |\n|---|---|\n| até a puberdade | ==membros inferiores== crescem mais |\n| ==puberdade== | ==tronco== cresce mais (estirão vertebral) |\n\n### Números úteis (Dimeglio)\n- Estatura sentada: reflete o tronco.\n- No estirão, o tronco responde por cerca de 2/3 do ganho de altura.\n- Pico de velocidade: meninas ~12 anos (antes da menarca), meninos ~14 anos.\n\n### Aplicações\n| Situação | Relevância |\n|---|---|\n| escoliose | risco de progressão máximo no ==pico de crescimento== (Risser 0, cartilagem trirradiada aberta) |\n| discrepância de MMII | membros terminam de crescer antes do tronco |\n| artrodese precoce | tronco curto, restrição torácica |\n\n> **Na prova:** na puberdade o tronco cresce ==mais== que os membros inferiores.",
+  "correta": "**Tronco cresce mais.**\n- Estirão predominantemente vertebral.\n- Antes disso, os membros inferiores lideram.",
   "incorretas": {
-   "A": "A alternativa A (é proporcional ao crescimento dos membros inferiores.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "B": "A alternativa B (não tem relação com o crescimento dos membros inferiores.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "D": "A alternativa D (é menos acentuado que o crescimento dos membros inferiores.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta."
+   "A": "**Não é proporcional.**\n- O tronco predomina.",
+   "B": "**Há relação.**\n- Ambos crescem.",
+   "D": "**Invertida.**\n- Menos acentuado antes da puberdade."
   },
   "referencias": [
    "Growth and pubertal development in children. https://www.ncbi.nlm.nih.gov/books/NBK534874/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0065": {
   "conceito": "Crianças com mielomeningocele têm maior risco de osteopenia e fraturas por paralisia, ausência de carga vertical, imobilização, alterações nutricionais e sensibilidade reduzida. As fraturas podem decorrer de trauma mínimo, transferências ou gesso e, como a dor pode estar ausente, manifestam-se por edema, calor, hiperemia, febre ou recusa a apoiar. O local mais frequente é o **fêmur distal**, região vulnerável em membros paralisados e próxima ao joelho. O risco cresce com nível neurológico alto, especialmente torácico, e exige cuidado com a duração de imobilização para não agravar perda óssea.",
