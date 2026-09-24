@@ -6063,91 +6063,91 @@
   "conferido": false
  },
  "mao-0522": {
-  "conceito": "Os flexores profundos dos dedos longos partilham um único ventre muscular. Mexer no comprimento de um deles muda o alcance de todos, daí o nome quadriga, das rédeas presas juntas nas bigas romanas.",
-  "correta": "O efeito quadriga aparece quando o enxerto é tensionado em excesso, ou seja, fica curto. Encurtado um tendão, ao se contrair a musculatura comum chega ao fim da excursão com aquele dedo já fletido e os outros ainda a meio caminho: os vizinhos deixam de fechar. O paciente reclama de força de preensão e de dedos que não fecham, em dedos que nem foram operados. É por isso que o ajuste da tensão do enxerto é o momento decisivo da cirurgia, e que a regra da zona I limita o avanço do flexor profundo a 1 centímetro.",
+  "conceito": "### Lumbrical plus × quadriga\n| Condição | Mecanismo | Clínica |\n|---|---|---|\n| ==lumbrical plus== | FPD sem continuidade distal (secção distal ao lumbrical, amputação, **enxerto longo e frouxo**): o FPD puxa o lumbrical | ==extensão paradoxal das IF== ao tentar fletir com força |\n| quadriga | FPD **encurtado** (avanço > 1 cm, enxerto curto, sutura ao extensor no coto) | **vizinhos não fecham** a mão |\n| aderência flexora | cicatriz | flexão ativa limitada, extensão passiva limitada |\n| garra (perda lumbrical) | paralisia intrínseca | MF hiperestendida, IF fletidas |\n\n### Tratamento do lumbrical plus\n- **Secção do lumbrical** (liberação).\n\n### Tratamento da quadriga\n- Liberar o FPD encurtado (tenólise, tenotomia do coto).\n\n### Quadriga\n- Os FPD dos dedos longos partilham ==um ventre comum== (rédeas presas juntas).\n- Encurtar um tendão faz o músculo esgotar a excursão antes que os vizinhos fechem.\n- Prevenção: avanço do FPD na zona I ==até 1 cm==; não suturar o FPD ao extensor em amputações.\n\n> **Na prova:** quadriga com enxerto = ==tensão excessiva (enxerto curto)==; enxerto longo = lumbrical plus.",
+  "correta": "**Tensão excessiva do enxerto.**\n- Enxerto curto esgota a excursão do ventre comum.\n- Vizinhos não fecham.\n- Ajuste de tensão é o momento decisivo.",
   "incorretas": {
-   "B": "A amputação da falange distal pode produzir quadriga, mas por outro caminho: quando o coto do flexor profundo é suturado sob tensão ao periósteo. Não é o mecanismo do enxerto.",
-   "C": "A avulsão do flexor profundo com retração produz o quadro oposto, o dedo lumbrical plus, com extensão paradoxal das interfalângicas à tentativa de flexão vigorosa.",
-   "D": "Enxerto longo demais também produz lumbrical plus, e não quadriga: sobra comprimento, e a tração acaba puxando a origem do lumbrical em vez de fletir o dedo."
+   "B": "**Outro mecanismo.**\n- Coto do FPD suturado sob tensão.",
+   "C": "**Lumbrical plus.**\n- Extensão paradoxal.",
+   "D": "**Lumbrical plus.**\n- Sobra comprimento."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0523": {
-  "conceito": "As comunicações entre nervos do antebraço e da mão são frequentes e enganam quem não as conhece, tanto no exame clínico quanto na eletroneuromiografia.",
-  "correta": "A anastomose de Martin-Gruber ocorre entre o nervo mediano (ou o seu ramo interósseo anterior) e o nervo ulnar, no antebraço proximal ou médio, e o sentido é sempre do mediano para o ulnar. As fibras que cruzam são motoras, destinadas aos intrínsecos da mão. Duas consequências práticas: uma lesão alta do ulnar pode poupar parcialmente os intrínsecos, e uma lesão do mediano pode dar déficit onde se esperava território ulnar. A comunicação de sentido oposto, do ulnar para o mediano, ocorre na palma e chama-se anastomose de Riche-Cannieu.",
+  "conceito": "### Anastomoses entre mediano e ulnar\n| Anastomose | Local | Sentido | Frequência |\n|---|---|---|---|\n| ==Martin-Gruber== | ==antebraço== (proximal/médio) | ==mediano (ou NIA) → ulnar== | cerca de 15 a 30% |\n| Marinacci | antebraço | ulnar → mediano | rara |\n| Riche-Cannieu | palma (ramo profundo do ulnar e ramo recorrente do mediano) | ulnar ↔ mediano | frequente |\n| Berrettini | palma, ramos sensitivos digitais | | frequente |\n\n### Consequências de Martin-Gruber\n- ENMG: achados paradoxais, pode simular ==bloqueio de condução== do ulnar no antebraço.\n- Lesão alta do ulnar pode ==poupar intrínsecos==.\n- Túnel do carpo com Martin-Gruber: atrofia de primeiro interósseo e adutor pode aparecer.\n\n> **Na prova:** Martin-Gruber = ==mediano e ulnar no antebraço==.",
+  "correta": "**Mediano e ulnar.**\n- No antebraço, fibras motoras do mediano para o ulnar.\n- Oposto na palma: Riche-Cannieu.",
   "incorretas": {
-   "A": "Não há comunicação motora descrita entre mediano e radial com esse nome.",
-   "B": "Ulnar e radial também não.",
-   "D": "Radial e musculocutâneo tampouco, e o musculocutâneo termina como nervo sensitivo antes do punho."
+   "A": "**Não descrita.**\n- Sem essa comunicação.",
+   "B": "**Não descrita.**\n- Idem.",
+   "D": "**Não descrita.**\n- Musculocutâneo termina sensitivo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0524": {
-  "conceito": "Na mão de Apert todos os dedos podem estar fundidos, inclusive o polegar, e a mão não pega nada. A sequência cirúrgica é ditada pela função: primeiro devolve-se a capacidade de pinçar, depois se separa o resto.",
-  "correta": "O primeiro procedimento é a abertura da primeira comissura, liberando o polegar. Sem oposição não há pinça, e sem pinça a mão não serve, separar os dedos longos antes disso resolveria a aparência sem devolver função. Depois vêm as liberações dos demais espaços, sempre em tempos e nunca soltando os dois lados do mesmo dedo no mesmo ato, sob risco de necrose por comprometer a circulação dos dois lados de uma vez.",
+  "conceito": "### Síndrome de Apert (acrocefalossindactilia)\n- Mutação do **FGFR2**; craniossinostose (coronal), hipoplasia da face média, sindactilia **complexa** das mãos e pés.\n\n### Classificação de Upton da mão\n| Tipo | Nome | Características |\n|---|---|---|\n| I | ==mão em pá== (spade) | polegar separado ou com sindactilia parcial; palma plana |\n| ==II== | ==mão em colher== (mitten, luva) | ==2º a 4º dedos em sinostose com palma côncava==; polegar em clinodactilia radial; sindactilia simples 4º-5º; a mais comum |\n| III | ==botão de rosa== (hoof, casco) | todos os dedos fundidos, incluindo o polegar; sinoníquia |\n\n### Outros achados\n- Falange proximal do polegar **delta** (clinodactilia radial), sinfalangismo, sinostose do 4º e 5º metacarpos, ombro e cotovelo com anquilose.\n\n### Cirurgia\n- Liberar primeiro a **1ª comissura** e o 4º espaço (bordas), depois os centrais; várias etapas até cerca de 3 a 4 anos.\n\n> **Na prova:** primeiro passo na mão de Apert = ==abrir a 1ª comissura==",
+  "correta": "**Abertura da 1ª comissura.**\n- Sem polegar livre não há pinça.\n- Depois, demais espaços em tempos, nunca os dois lados do mesmo dedo.",
   "incorretas": {
-   "B": "A policização do indicador é reconstrução de polegar ausente, e na mão de Apert o polegar existe, está apenas preso e mal orientado.",
-   "C": "A amputação de um dedo pode entrar em casos muito graves de mão em botão de rosa, para reduzir o número de raios num espaço apertado, mas nunca como primeiro procedimento.",
-   "D": "Ressecar o dedo medial também não é o primeiro passo."
+   "B": "**Polegar existe.**\n- Está preso, não ausente.",
+   "C": "**Casos extremos.**\n- Nunca primeiro.",
+   "D": "**Não é o primeiro.**\n- Idem."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0525": {
-  "conceito": "A fasciotomia subcutânea, ou percutânea, não retira tecido: ela apenas rompe a corda com uma agulha ou uma lâmina fina, sem abrir a pele. Isso só funciona se houver uma corda bem definida para romper.",
-  "correta": "O melhor resultado é na fase residual, em que a doença já está madura: existe uma corda espessa, bem delimitada, pobre em células e em vasos, e a atividade proliferativa cessou. Nessa fase a agulha rompe o que precisa ser rompido e a chance de recidiva precoce é menor. A indicação típica é a contratura da metacarpofalângica por corda pré-tendínea palpável, em paciente idoso ou com comorbidades que desaconselhem cirurgia aberta.",
+  "conceito": "### Fases histológicas de Luck (Dupuytren)\n| Fase | Histologia | Colágeno III/I |\n|---|---|---|\n| I: proliferativa | fibroblastos e miofibroblastos abundantes, nódulos | ==alta== |\n| II: involutiva | miofibroblastos alinhados na linha de tração | intermediária |\n| ==III: residual== | ==tecido acelular, pouco vascularizado (corda madura)== | ==cerca de 20%== (próximo da fáscia normal) |\n\n### Implicações\n- Doença ativa (nódulos, colágeno III alto): **mais recidiva** após cirurgia.\n- Preferir operar cordas maduras.\n- Corticoide injetável atua nos nódulos ativos.\n\n### Biologia\n- **Miofibroblasto** com actina de músculo liso: gera a contração.\n- TGF-β, via Wnt, genética.\n\n### Tipos de colágeno\n| Tipo | Onde |\n|---|---|\n| I | fáscia normal, tendão, osso, cicatriz madura |\n| II | cartilagem hialina |\n| ==III== | ==cicatriz recente, Dupuytren (excesso)== |\n| IV | membrana basal |\n\n### Fasciotomia percutânea (agulha)\n- Rompe a corda sem abrir a pele.\n- Ideal: ==corda madura== (fase residual), MF, idoso ou com comorbidades.\n- Recidiva maior que a fasciectomia a longo prazo.\n\n> **Na prova:** fasciotomia subcutânea funciona melhor na fase ==residual==",
+  "correta": "**Residual.**\n- Corda madura, acelular e bem definida.\n- Menor recidiva precoce.\n- Indicação típica: MF com corda pré-tendínea.",
   "incorretas": {
-   "A": "Não há uma fase hiperplásica na classificação de Luck, que descreve as fases proliferativa, involutiva e residual.",
-   "B": "Na fase proliferativa não há corda para romper, há nódulo, tecido rico em células e vasos, em plena atividade. Intervir aí é a receita da recidiva rápida.",
-   "C": "Na fase involutiva a corda está se formando e os miofibroblastos ainda estão ativos; o resultado é intermediário."
+   "A": "**Não existe.**\n- Luck não tem fase hiperplásica.",
+   "B": "**Nódulo ativo.**\n- Recidiva rápida.",
+   "C": "**Intermediária.**\n- Miofibroblastos ativos."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0526": {
-  "conceito": "As reconstruções da lesão escafossemilunar crônica usam um enxerto tendíneo passado por túneis ósseos para refazer a amarra entre escafoide e semilunar. O doador precisa estar por perto, ser dispensável e ter comprimento suficiente.",
-  "correta": "A técnica de Brunelli usa o flexor radial do carpo. Uma tira dele, mantida presa distalmente na base do segundo metacarpo, é passada por um túnel no escafoide de volar para dorsal e ancorada dorsalmente, o que reconstrói ao mesmo tempo a contenção volar e a dorsal. A técnica original ancorava no rádio distal e sacrificava movimento; a modificação de Garcia-Elias, a tenodese triligamentar, leva o enxerto ao semilunar e depois ao piramidal, preservando melhor a mobilidade. O flexor radial do carpo é doador natural por passar exatamente ao lado do escafoide e por ter metade dispensável sem perda funcional perceptível.",
+  "conceito": "### Estadiamento de Garcia-Elias (instabilidade escafossemilunar)\n| Estágio | Ligamento | Alinhamento | Cartilagem | Tratamento |\n|---|---|---|---|---|\n| 1 | lesão parcial | normal | íntegra | pinagem (artroscópica), capsulodese |\n| 2 | completo, **reparável** | normal | íntegra | **reparo ligamentar** + pinagem |\n| 3 | irreparável, estabilizadores secundários íntegros | normal | íntegra | tenodese/capsulodese |\n| ==4== | ==irreparável== | ==subluxação rotatória redutível== | ==íntegra== | ==tenodese triligamentar== |\n| 5 | irreparável | subluxação **irredutível** | íntegra | artrodese parcial (STT, escafossemilunocapitato) |\n| 6 | irreparável | irredutível | **lesada** (SLAC) | fileira proximal, **quatro esquinas** |\n\n### Tenodese triligamentar\n- Tira do **FRC** passada pelo escafoide (volar → dorsal), ancorada no **semilunar** e fixada ao **piramidal** (ligamento radiopiramidal dorsal).\n- Impede a flexão do escafoide, une-o ao semilunar e amarra ao lado ulnar.\n\n### Brunelli × Garcia-Elias\n| Técnica | Trajeto do FRC | Ancoragem |\n|---|---|---|\n| ==Brunelli== | túnel no escafoide volar → dorsal | ==rádio distal== (perde movimento) |\n| Garcia-Elias (triligamentar) | idem | ==semilunar e piramidal== (preserva movimento) |\n\n> **Na prova:** Brunelli = ==flexor radial do carpo==",
+  "correta": "**Flexor radial do carpo.**\n- Tira presa na base do 2º MC, passada pelo escafoide.\n- Garcia-Elias modificou a ancoragem para semilunar e piramidal.",
   "incorretas": {
-   "A": "O extensor radial curto do carpo é o principal extensor puro do punho; sacrificá-lo custaria função.",
-   "B": "O extensor radial longo do carpo também é indispensável, na paralisia do interósseo posterior é ele que ainda estende o punho.",
-   "D": "O abdutor longo do polegar tem bandas acessórias que são usadas em outras reconstruções, sobretudo da base do polegar, mas não é o doador desta técnica."
+   "A": "**Extensor puro.**\n- Indispensável.",
+   "B": "**Indispensável.**\n- Estende o punho na paralisia do NIP.",
+   "D": "**Base do polegar.**\n- Usado em outras reconstruções."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0527": {
-  "conceito": "A lesão 1B de Palmer é a avulsão da borda ulnar do complexo triangular, na fóvea e no estiloide ulnar. Ela é diferente da perfuração central em uma coisa decisiva: a borda ulnar é vascularizada, e o que é vascularizado pode cicatrizar sozinho.",
-  "correta": "Na lesão aguda e sem instabilidade da radioulnar distal, o tratamento recomendado é conservador: imobilização por quatro a seis semanas, em gesso longo ou órtese tipo Munster, bloqueando a pronossupinação, porque é justamente ela que abre e fecha o foco a cada movimento. O reparo cirúrgico entra em duas situações: quando há instabilidade da radioulnar distal desde o início, ou quando o tratamento conservador falha. O contraste com a 1A fecha o raciocínio: perfuração central fica em região avascular, não cicatriza, e o tratamento é desbridamento.",
+  "conceito": "### Palmer classe 1 e o tratamento\n| Tipo | Local da lesão | Tratamento |\n|---|---|---|\n| 1A | perfuração central (avascular) | desbridamento |\n| 1B | avulsão **ulnar** (fóvea, estiloide) | reinserção na **ulna** |\n| 1C | avulsão **distal** (ulnossemilunar, ulnopiramidal) | reparo ulnocarpal |\n| ==1D== | ==avulsão radial== (incisura sigmoide) | ==reinserção no rádio== (ou desbridamento em lesões pequenas) |\n\n### Por que o rádio na 1D\n- A borda solta é a **radial**: reancora-se o disco na borda da incisura sigmoide (túneis transósseos ou âncoras), artroscópico ou aberto.\n\n### Instabilidade da RUD\n- Mais associada à **1B** (lesão foveal dos ligamentos radioulnares).\n- Teste do **balote** radioulnar em pronação, neutro e supinação.\n\n- Memória: ==centro, ulnar, distal, radial== (A, B, C, D).\n\n### Classe 2 (degenerativa)\n| Tipo | Achado |\n|---|---|\n| 2A | desgaste do CFCT |\n| 2B | + condromalácia do semilunar ou ulna |\n| 2C | + perfuração do CFCT |\n| 2D | + lesão lunopiramidal |\n| 2E | + artrose ulnocarpal |\n\n### Palmer 1B aguda\n| Situação | Conduta |\n|---|---|\n| ==sem instabilidade da RUD== | ==imobilização 4 a 6 semanas== (Munster/gesso longo, bloqueia pronossupinação) |\n| instável ou falha do conservador | reparo (artroscópico ou aberto) |\n| crônica irreparável instável | reconstrução (Adams) |\n\n> **Na prova:** 1B aguda estável = ==imobilização gessada==",
+  "correta": "**Imobilização gessada.**\n- Borda ulnar vascularizada cicatriza.\n- Bloquear a pronossupinação por 4 a 6 semanas.\n- Reparo se RUD instável ou falha.",
   "incorretas": {
-   "B": "Desbridamento é o tratamento da lesão central, 1A, e das degenerativas, regiões que não cicatrizam.",
-   "C": "O reparo é a segunda linha aqui, indicado na instabilidade da radioulnar distal ou depois de falhar o conservador. A questão pede o tratamento recomendado para a lesão aguda.",
-   "D": "Reconstrução, com enxerto de tendão, é reservada às lesões crônicas irreparáveis com instabilidade da radioulnar distal."
+   "B": "**Lesões avasculares.**\n- 1A e degenerativas.",
+   "C": "**Segunda linha.**\n- Instabilidade ou falha.",
+   "D": "**Crônica irreparável.**\n- Enxerto tendíneo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0528": {
-  "conceito": "O nervo interósseo anterior é o ramo motor puro do mediano e inerva exatamente três músculos: o flexor longo do polegar, a metade radial do flexor profundo dos dedos (indicador e médio) e o pronador quadrado.",
-  "correta": "A paralisia atinge o flexor longo do polegar e o flexor profundo do indicador e do médio, produzindo o sinal clássico: pedir o gesto de \"ok\" e ver polpa contra polpa achatada em vez de um círculo, porque nem a interfalângica do polegar nem a distal do indicador fletem. Como o ramo é motor puro, não há alteração de sensibilidade, é isso que separa a síndrome da compressão do mediano no pronador e no túnel do carpo. O pronador quadrado também é atingido, mas o déficit passa despercebido porque o pronador redondo compensa.",
+  "conceito": "### Nervo interósseo anterior (NIA)\n- Ramo **motor puro** do mediano, sai logo abaixo do pronador redondo.\n- Desce sobre a **membrana interóssea** com a artéria interóssea anterior.\n\n| Músculo inervado | Função testada |\n|---|---|\n| flexor longo do polegar | flexão da IF do polegar |\n| ==flexor profundo do indicador e do médio== | ==flexão da IFD== desses dedos |\n| pronador quadrado | pronação com cotovelo fletido |\n\n### O que fica preservado\n| Músculo | Nervo |\n|---|---|\n| flexor superficial dos dedos | mediano (acima do NIA) |\n| pronador redondo, FRC, palmar longo | mediano |\n| tenar, lumbricais 1 e 2 | mediano na mão |\n| extensores | radial (NIP) |\n\n### Sinal do O\n- Polpa contra polpa achatada; IFP do indicador flete normalmente (FSD preservado).\n- Sensibilidade **normal**.\n\n> **Na prova:** compressão do NIA enfraquece os ==flexores profundos do indicador e médio==.",
+  "correta": "**FLP e FPD do indicador e médio.**\n- Sinal do círculo.\n- Pronador quadrado também, compensado pelo redondo.\n- Motor puro.",
   "incorretas": {
-   "A": "O flexor radial do carpo e o flexor superficial recebem ramos do mediano acima da origem do interósseo anterior, e ficam preservados.",
-   "B": "O flexor profundo está certo, mas o flexor radial do carpo não faz parte do território.",
-   "C": "O flexor longo do polegar está certo, e o superficial do indicador é o erro clássico do assunto, é justamente a preservação dele que faz a interfalângica proximal continuar fletindo."
+   "A": "**Ambos preservados.**\n- Ramos proximais do mediano.",
+   "B": "**FRC preservado.**\n- FPD certo.",
+   "C": "**FSD preservado.**\n- O erro clássico."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0529": {
-  "conceito": "No estágio III de Lichtman o semilunar já colapsou, e a divisão em A e B não é sobre o semilunar: é sobre o que o carpo em volta fez para compensar.",
-  "correta": "O III-B se caracteriza pela rotação fixa do escafoide em flexão, que aparece na radiografia em posteroanterior como um escafoide encurtado, com o sinal do anel cortical. Junto vêm a migração proximal do capitato, a queda da altura carpal e o ângulo radioescafoide acima de 60 graus. A distinção muda a conduta: no III-A ainda cabem procedimentos que descarregam o semilunar, enquanto no III-B, com o carpo já desalinhado, entram as artrodeses parciais e a ressecção da fileira proximal.",
+  "conceito": "### Classificação de Lichtman (Kienböck)\n| Estágio | Achado |\n|---|---|\n| I | radiografia normal; RM alterada |\n| II | ==esclerose== do semilunar, sem colapso |\n| IIIA | colapso/fragmentação do semilunar, **alinhamento carpal preservado** |\n| ==IIIB== | colapso + ==rotação fixa do escafoide em flexão== (anel cortical), ângulo radioescafoide > 60°, migração proximal do capitato |\n| IIIC | fratura coronal crônica do semilunar |\n| IV | artrose radiocarpal ou mediocarpal |\n\n### Conduta por estágio (resumo)\n| Estágio | Opções |\n|---|---|\n| I a IIIA, ulna minus | encurtamento do rádio, osteotomia de nivelamento |\n| I a IIIA, ulna neutra/plus | encurtamento do capitato, enxerto vascularizado |\n| ==IIIB== | ==artrodese escafotrapeziotrapezoide ou escafocapitato, ressecção da fileira proximal== |\n| IV | artrodese total, artroplastia, denervação |\n\n> **Na prova:** Lichtman IIIB = ==rotação fixa do escafoide==.",
+  "correta": "**Rotação do escafoide.**\n- Rotação fixa em flexão, sinal do anel.\n- Capitato migra, altura carpal cai.\n- Muda a conduta para salvamento.",
   "incorretas": {
-   "A": "Colapso e fragmentação do semilunar definem o estágio III como um todo, e não separam o A do B.",
-   "B": "Esclerose do semilunar sem colapso e com alinhamento preservado é o estágio II.",
-   "D": "Artrose entre escafoide e semilunar não é o critério, o que define o IIIB é a rotação do escafoide, e a artrose das articulações vizinhas caracteriza o estágio IV."
+   "A": "**Todo o estágio III.**\n- Não separa A de B.",
+   "B": "**Estágio II.**\n- Sem colapso.",
+   "D": "**Estágio IV.**\n- Artrose vizinha."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0530": {
