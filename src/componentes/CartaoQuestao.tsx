@@ -6,7 +6,7 @@ import { AvaliarComentario } from './AvaliarComentario'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { ComentarioIA, Letra, Questao, Resposta } from '../dados/tipos'
 import { ROTULO_DIFICULDADE } from '../dados/tipos'
-import { recurso } from '../config'
+import { PROVA_SIMULADOS, recurso } from '../config'
 import { href } from '../util/rotas'
 import { EstrelaCheia, Icone } from './Icone'
 import { ContribuirComentario } from './ContribuirComentario'
@@ -247,7 +247,7 @@ export function CartaoQuestao({
         <div className="qz-topo">
           <div className="qz-topo__info">
             {numero && total ? <span className="qz-numero">Questão {numero}<small> de {total}</small></span> : <span className="qz-numero">Questão</span>}
-            {(questao.prova || questao.ano) && <span className="qz-origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {(questao.prova || questao.ano) && <span className={'qz-origem' + (questao.prova === PROVA_SIMULADOS ? ' qz-origem--simulado' : '')}>{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
             {questao.anulada && <span className="qz-chip qz-chip--alerta">Anulada</span>}
           </div>
 
@@ -307,7 +307,7 @@ export function CartaoQuestao({
 
         {(etiquetasVisiveis || questao.prova || questao.ano) && (
           <div className={'qz-etiquetas' + (etiquetasVisiveis ? '' : ' qz-etiquetas--so-origem')}>
-            {(questao.prova || questao.ano) && <span className="qz-chip qz-chip--origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {(questao.prova || questao.ano) && <span className={'qz-chip qz-chip--origem' + (questao.prova === PROVA_SIMULADOS ? ' qz-chip--simulado' : '')}>{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
             {etiquetasVisiveis && <>
               <span className="qz-chip qz-chip--tema">{questao.tema}</span>
               {questao.subtemas.slice(0, 2).map((s) => <span className="qz-chip" key={s}>{s}</span>)}
@@ -316,11 +316,11 @@ export function CartaoQuestao({
           </div>
         )}
 
-        {questao.prova?.startsWith('SBQ') && (
+        {questao.prova === PROVA_SIMULADOS && (
           <p className="meta origem-questao">
-            Questão elaborada pelo OrtoQuestões no padrão das provas da SBQ e do Fellowship de
-            Quadril, a partir do livro <em>The Adult Hip</em> (Callaghan et al.) — não é uma
-            reprodução de nenhuma prova oficial, que não é de acesso público.
+            Questão autoral dos <strong>OrtoQuestões Simulados</strong>, elaborada pelo OrtoQuestões a partir
+            da bibliografia de referência da subespecialidade (a obra usada está nas referências do
+            comentário). Não reproduz nenhuma prova oficial.
           </p>
         )}
         <div className="questao__enunciado">{questao.enunciado}</div>

@@ -4,7 +4,7 @@ import type { RegistroQuestao } from '../estado/revisao'
 import { BackupProgresso } from '../componentes/BackupProgresso'
 import { Icone } from '../componentes/Icone'
 import { useMemo } from 'react'
-import { SITE } from '../config'
+import { PROVA_SIMULADOS, SITE } from '../config'
 import { href } from '../util/rotas'
 import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
 import { armazenamentoDisponivel, tamanhoArmazenado } from '../estado/armazenamento'
@@ -48,7 +48,7 @@ export function Sobre() {
             <div><dt>Questões</dt><dd>{indice.total.toLocaleString('pt-BR')}</dd></div>
             <div><dt>Comentadas</dt><dd>{comentadas.toLocaleString('pt-BR')}</dd></div>
             <div><dt>Temas</dt><dd>{indice.temas.length}</dd></div>
-            <div><dt>Provas</dt><dd>{(indice.provas ?? []).filter((p) => !['TEOT', 'TARO'].includes(p)).length}</dd></div>
+            <div><dt>Provas</dt><dd>{(indice.provas ?? []).filter((p) => !['TEOT', 'TARO', PROVA_SIMULADOS].includes(p)).length}</dd></div>
           </dl>
         )}
       </section>

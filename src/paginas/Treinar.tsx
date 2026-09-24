@@ -18,6 +18,7 @@ import { usarEtiquetas } from '../estado/preferencias'
 import { href } from '../util/rotas'
 import { usarConta } from '../conta/ContextoConta'
 import { Icone, type NomeIcone } from '../componentes/Icone'
+import { PROVA_SIMULADOS } from '../config'
 
 // A maior parte do acervo ainda traz a prova genérica "TEOT/TARO" (sem
 // diferenciar as duas), então por enquanto as três formas aparecem como uma
@@ -74,14 +75,18 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     const teotTaro = PROVAS_TEOT_TARO.filter((p) => provasNoAcervo.includes(p))
     if (teotTaro.length > 0) grupos.push({ rotulo: 'TEOT/TARO', provas: teotTaro })
     for (const prova of provasNoAcervo) {
-      if (PROVAS_TEOT_TARO.includes(prova)) continue
+      if (PROVAS_TEOT_TARO.includes(prova) || prova === PROVA_SIMULADOS) continue
       grupos.push({ rotulo: prova, provas: [prova] })
     }
     return grupos
   }, [indice])
 
+  const gerais = useMemo(() => (indice ? contar(indice, FILTROS_VAZIOS, contexto) : null), [indice, contexto])
+
   // Filtro que não tem nenhuma opção não vira campo vazio na tela.
-  const temProva = (indice?.provas.length ?? 0) > 0
+  const temProva = gruposProva.length > 0
+  const totalSimulados = gerais?.porProva[PROVA_SIMULADOS] ?? 0
+  const soSimulados = filtros.provas.includes(PROVA_SIMULADOS)
   const temAno = (indice?.anos.length ?? 0) > 0
   const temComentario = useMemo(
     () => (indice?.questoes ?? []).some((q) => q.c === 1),
@@ -100,7 +105,6 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     return tentativas ? Math.round((acertos / tentativas) * 100) : null
   }, [contexto.respondidas])
 
-  const gerais = useMemo(() => (indice ? contar(indice, FILTROS_VAZIOS, contexto) : null), [indice, contexto])
   const comentadas = useMemo(() => (indice?.questoes ?? []).filter((q) => q.c === 1).length, [indice])
   const rapidas: { titulo: string; icone: NomeIcone; quantidade: number; preset: Partial<Filtros> }[] = [
     { titulo: 'Revisar hoje', icone: 'calendario', quantidade: gerais?.porSituacao.revisarHoje ?? 0, preset: { situacao: 'revisarHoje' } },
@@ -120,6 +124,18 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
   function atualizar(parcial: Partial<Filtros>) {
     definirFiltros((atuais) => ({ ...atuais, ...parcial }))
+  }
+
+  /** Liga ou desliga o recorte dos simulados autorais nos filtros. */
+  function alternarSimulados(ligar: boolean) {
+    atualizar({ provas: ligar ? [...filtros.provas.filter((x) => x !== PROVA_SIMULADOS), PROVA_SIMULADOS] : filtros.provas.filter((x) => x !== PROVA_SIMULADOS) })
+  }
+
+  /** Recorte dos simulados já no modo com tempo, levando ao formato. */
+  function montarSimulado() {
+    atualizar({ provas: [PROVA_SIMULADOS] })
+    definirSimulado(true)
+    document.getElementById('etapa-formato')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
   function comecar() {
@@ -169,6 +185,30 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           ))}
         </div>
       </section>
+      {totalSimulados > 0 && (
+        <section className="tr-simulados" aria-labelledby="tr-simulados-titulo">
+          <div className="tr-simulados__texto">
+            <span className="tr-simulados__selo">Autoral</span>
+            <h2 id="tr-simulados-titulo">OrtoQuestões Simulados</h2>
+            <p>
+              Questões inéditas feitas pelo OrtoQuestões a partir da bibliografia de referência, no padrão
+              das provas de subespecialidade. <strong className="numerico">{totalSimulados}</strong> questões, todas comentadas.
+            </p>
+          </div>
+          <div className="tr-simulados__acoes">
+            <button type="button" className="botao botao--principal" onClick={() => sessaoRapida({ provas: [PROVA_SIMULADOS] })}>
+              <Icone nome="raio" tamanho={18} /> 10 questões agora
+            </button>
+            <button type="button" className="botao" onClick={montarSimulado}>
+              <Icone nome="calendario" tamanho={18} /> Simulado com tempo
+            </button>
+            <button type="button" className="tr-pilula" aria-pressed={soSimulados} onClick={() => alternarSimulados(!soSimulados)}>
+              {soSimulados ? 'Usando nos filtros' : 'Usar nos filtros abaixo'}
+            </button>
+          </div>
+        </section>
+      )}
+
       {!conta && <p className="aviso-ia">Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. <a href={href('/conta')}>Criar minha conta</a></p>}
 
       <section className="tr-etapa">
@@ -320,7 +360,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         </section>
       )}
 
-      <section className="tr-etapa">
+      <section className="tr-etapa" id="etapa-formato">
         <header className="tr-etapa__cabeca">
           <span className="tr-etapa__numero">{temProva || temAno ? 4 : 3}</span>
           <div>
@@ -419,6 +459,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           <strong>{total === 0 ? 'Nenhuma questão' : `${quantidadeSessao} ${quantidadeSessao === 1 ? 'questão' : 'questões'}`}</strong>
           <span>
             {total > 0 && `cerca de ${estimativaMinutos} min · `}
+            {soSimulados ? 'OrtoQuestões Simulados · ' : ''}
             {selecionados ? `${selecionados} ${selecionados === 1 ? 'assunto' : 'assuntos'}` : 'acervo misto'}
             {desempenhoAnterior !== null ? ` · seu acerto: ${desempenhoAnterior}%` : ''}
           </span>

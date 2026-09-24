@@ -26,5 +26,12 @@ export const SITE = {
   instagramUsuario: 'ortoquestoes',
 } as const
 
+/**
+ * Rótulo de "prova" das questões autorais do site. Não é prova oficial: são os
+ * simulados do OrtoQuestões, com área própria no Treinar e fora da lista de
+ * provas. É por este rótulo que um acesso de assinante poderá ser aplicado.
+ */
+export const PROVA_SIMULADOS = 'OrtoQuestões Simulados'
+
 /** Prefixo de todas as chaves gravadas no localStorage. */
 export const PREFIXO_ARMAZENAMENTO = 'ortoquestoes:'

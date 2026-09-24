@@ -2168,3 +2168,29 @@ a.rs-marco:hover { color: var(--texto); border-color: var(--traco-forte); }
   .rs-anel svg circle { stroke: #999; }
   .rs-rodape .rs-marco { display: none; }
 }
+
+/* Simulados autorais: área própria no Treinar e selo nas questões. */
+.tr-simulados {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem 1.5rem; align-items: center;
+  padding: clamp(1.1rem, 3vw, 1.6rem); border-radius: var(--raio-grande);
+  background: linear-gradient(135deg, var(--ouro-veu), var(--superficie) 70%);
+  border: 1px solid color-mix(in srgb, var(--ouro) 45%, var(--traco)); box-shadow: var(--sombra-media);
+}
+.tr-simulados h2 { margin: 0.35rem 0 0.25rem; font-size: 1.3rem; }
+.tr-simulados p { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); max-width: 60ch; }
+.tr-simulados__selo {
+  display: inline-block; padding: 0.15rem 0.6rem; border-radius: 999px;
+  background: linear-gradient(135deg, #ffe3a3, var(--ouro)); color: #5c3f06;
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
+}
+.tr-simulados__acoes { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: flex-end; }
+.tr-simulados__acoes .botao { display: inline-flex; align-items: center; gap: 0.45rem; }
+@media (max-width: 46rem) {
+  .tr-simulados { grid-template-columns: 1fr; }
+  .tr-simulados__acoes { justify-content: flex-start; }
+  .tr-simulados__acoes .botao { flex: 1 1 auto; justify-content: center; }
+}
+.qz-origem--simulado, .qz-chip--origem.qz-chip--simulado { background: linear-gradient(135deg, #ffe3a3, var(--ouro)); color: #5c3f06; border-color: transparent; }
+:root[data-tema="escuro"] .qz-origem--simulado, :root[data-tema="escuro"] .qz-chip--origem.qz-chip--simulado { background: linear-gradient(135deg, #ffe3a3, var(--ouro)); color: #5c3f06; border-color: transparent; }
+.provas-selecao a.provas-selecao__simulados { border-color: color-mix(in srgb, var(--ouro) 50%, var(--traco)); background: var(--ouro-veu); }
+.provas-selecao__simulados small { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ouro); }
