@@ -7261,31 +7261,31 @@
   "conferido": false
  },
  "pediatria-0594": {
-  "conceito": "Fraturas distais do antebraço em crianças raramente são irredutíveis; quando isso ocorre, deve-se suspeitar de interposição de tecidos moles. O tecido interposto depende da direção do deslocamento: no deslocamento volar, estruturas dorsais podem ficar encarceradas no foco. Assim, periósteo dorsal e/ou tendões extensores constituem o bloqueio típico à redução nesse padrão.",
-  "correta": "C. No deslocamento volar, a interposição costuma envolver o periósteo dorsal e/ou os tendões extensores.",
+  "conceito": "### Fraturas irredutíveis do rádio distal na criança\n- Raras; pensar em ==interposição de partes moles== no foco.\n- O bloqueio fica do lado ==oposto ao desvio== do fragmento distal: a estrutura do lado convexo é estirada e entra no foco.\n\n| Desvio do fragmento distal | Estruturas interpostas |\n|---|---|\n| dorsal (mais comum) | periósteo volar, pronador quadrado, tendões flexores, nervo mediano |\n| ==volar== | ==periósteo dorsal== e/ou ==tendões extensores== |\n\n### Conduta\n- Tentar redução fechada sob anestesia (exagerar a deformidade e empurrar).\n- Falha: ==redução aberta== pelo lado do bloqueio e liberação da estrutura interposta; fixação com fios.\n\n> **Na prova:** desvio volar irredutível = interposição ==dorsal (periósteo e extensores)==",
+  "correta": "**Periósteo dorsal e/ou extensores.**\n- Lado oposto ao desvio volar.\n- Redução aberta dorsal se falhar a fechada.",
   "incorretas": {
-   "A": "Periósteo volar e estruturas flexoras são mais compatíveis com fraturas cujo fragmento distal está deslocado dorsalmente, não volarmente.",
-   "B": "O pronador quadrado é uma estrutura volar e pode bloquear redução em padrões de deslocamento dorsal; não é o bloqueio típico quando há desvio volar.",
-   "D": "O periósteo dorsal pode interpor-se, porém o tendão do braquiorradial não é o tendão caracteristicamente citado como bloqueio; a associação clássica é com tendões extensores."
+   "A": "**Volar e flexores.**\n- Interpõem-se no desvio dorsal.",
+   "B": "**Pronador quadrado.**\n- Bloqueio típico do desvio dorsal.",
+   "D": "**Braquiorradial.**\n- Força deformante, não interposição."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 8"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0595": {
-  "conceito": "A capacidade de remodelamento do úmero proximal é alta na infância, mas diminui significativamente na adolescência próxima da maturidade esquelética. Em pacientes de aproximadamente 14 anos, fraturas muito desviadas ou com angulação em varo importante ultrapassam os limites aceitáveis para simples imobilização. Quando a redução fechada é possível, a fixação percutânea com fios de Kirschner fornece estabilidade suficiente e evita uma abordagem aberta desnecessária.",
-  "correta": "D. As radiografias mostram fratura proximal do úmero com desvio/angulação importante em adolescente próximo da maturidade; a conduta indicada é redução incruenta seguida de fixação percutânea com fios de Kirschner.",
+  "conceito": "### Úmero proximal no adolescente\n- Remodelação alta na infância, mas ==cai perto da maturidade== (poucos anos de crescimento).\n\n| Idade | Desvio aceitável |\n|---|---|\n| < 10 anos | até 70° de angulação e qualquer translação |\n| 10 a 13 anos | até 40 a 60° |\n| ==> 13 anos== | ==até cerca de 30°== e translação < 50% |\n\n### Conduta\n- Dentro do limite: tipoia ou velpeau.\n- Fora do limite: ==redução fechada== (abdução, flexão, rotação externa) + ==fios de Kirschner percutâneos== ou hastes intramedulares retrógradas.\n- Redução aberta se irredutível (bíceps, periósteo interpostos).\n\n> **Na prova:** adolescente com desvio grande = ==redução incruenta + fios percutâneos==",
+  "correta": "**Redução incruenta e fios percutâneos.**\n- Pouca remodelação aos 14 anos.\n- Fios mantêm a redução sem abordagem aberta.",
   "incorretas": {
-   "A": "A imobilização isolada é apropriada para fraturas sem desvio ou com alinhamento aceitável, o que não corresponde ao importante desvio observado nas imagens.",
-   "B": "Redução fechada seguida apenas de imobilização não oferece estabilidade suficiente para uma fratura marcadamente desviada em adolescente com menor potencial de remodelamento.",
-   "C": "Redução aberta não é a primeira escolha se a redução incruenta é obtenível; além disso, parafusos canulados atravessando região fisária não são a opção habitual de primeira linha nesse padrão pediátrico."
+   "A": "**Tipoia.**\n- Só se o desvio for aceitável.",
+   "B": "**Velpeau sem fixação.**\n- Redução instável tende a perder.",
+   "C": "**Redução aberta e parafusos.**\n- Reservada às irredutíveis."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 18"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0596": {
@@ -7317,12 +7317,12 @@
   "conferido": false
  },
  "pediatria-0598": {
-  "conceito": "### Fraturas do antebraço na criança\n- A maioria ocorre por **mecanismo indireto**: queda sobre a mão estendida.\n- Cada osso tem um ponto mais vulnerável:\n  - **Rádio:** ==transição entre os terços médio e distal==.\n  - **Ulna:** ==diáfise==.\n- Por isso os traços costumam ficar em **níveis diferentes** nos dois ossos.\n\n> **Na prova:** mecanismo indireto = rádio na transição médio-distal e ulna na diáfise.",
-  "correta": "**Transição médio-distal (rádio) e diáfise (ulna).**",
+  "conceito": "### Fraturas do antebraço na criança\n- A maioria ocorre por **mecanismo indireto**: queda sobre a mão estendida.\n- Cada osso tem um ponto mais vulnerável:\n  - **Rádio:** ==transição entre os terços médio e distal==.\n  - **Ulna:** ==diáfise==.\n- Por isso os traços costumam ficar em **níveis diferentes** nos dois ossos.\n\n### Localização das fraturas do antebraço\n| Região | Frequência |\n|---|---|\n| ==terço distal== | 75 a 85% |\n| terço médio | 15 a 18% |\n| terço proximal | < 5% |\n\n- Remodelação: melhor perto da fise distal e em < 10 anos; ==rotação não remodela==.\n\n> **Na prova:** mecanismo indireto = rádio na ==transição médio-distal== e ulna na ==diáfise==",
+  "correta": "**Médio-distal e diáfise.**\n- Pontos de maior fragilidade.\n- Traços em níveis diferentes.",
   "incorretas": {
-   "B": "A transição **médio-proximal** do rádio não é o ponto mais vulnerável no mecanismo indireto.",
-   "C": "A **metáfise distal da ulna** não é o segmento mais vulnerável da ulna.",
-   "D": "Combina dois segmentos que não são os mais frágeis."
+   "B": "**Médio-proximal.**\n- Protegido pela musculatura.",
+   "C": "**Ulna na metáfise.**\n- Vulnerável na diáfise.",
+   "D": "**Ambos errados.**\n- Rádio médio-distal, ulna diafisária."
   },
   "referencias": [
    "Rockwood and Wilkins's fractures in Children 7 th ed. 350 pg  (referência indicada na prova TARO 2015, questão 22)"
@@ -7345,12 +7345,12 @@
   "conferido": false
  },
  "pediatria-0600": {
-  "conceito": "### Supracondiliana em extensão: para onde vai o fragmento distal\n- O fragmento distal desvia **posteriormente**.\n- No plano coronal, o desvio mais comum é ==posteromedial== (cerca de 75%).\n- A direção prediz a estrutura em risco:\n  - **Posteromedial:** nervo **radial**.\n  - **Posterolateral:** artéria braquial e nervo **mediano** (interósseo anterior).\n\n> **Na prova:** desvio mais comum = ==posteromedial==.",
-  "correta": "**Posterior e medial.**",
+  "conceito": "### Supracondiliana em extensão: para onde vai o fragmento distal\n- O fragmento distal desvia **posteriormente**.\n- No plano coronal, o desvio mais comum é ==posteromedial== (cerca de 75%).\n- A direção prediz a estrutura em risco:\n  - **Posteromedial:** nervo **radial**.\n  - **Posterolateral:** artéria braquial e nervo **mediano** (interósseo anterior).\n\n### Classificação de Gartland\n| Tipo | Achado | Conduta |\n|---|---|---|\n| I | sem desvio | gesso |\n| II | cortical posterior íntegra (IIA sem rotação, IIB com rotação) | redução ± fios |\n| III | desvio completo | redução fechada + fios |\n| IV | instável em flexão e extensão | fios com técnica especial |\n\n> **Na prova:** desvio mais comum = ==posteromedial==",
+  "correta": "**Posterior e medial.**\n- Cerca de 75% dos casos.\n- Risco ao nervo radial.",
   "incorretas": {
-   "A": "Desvio **anterior** é da fratura em flexão, que é rara.",
-   "B": "Desvio **anterior** caracteriza o tipo em flexão.",
-   "C": "**Posterolateral** existe, mas é menos comum que o posteromedial; coloca em risco a artéria braquial e o mediano."
+   "A": "**Anterior.**\n- Padrão em flexão, raro.",
+   "B": "**Anterior e medial.**\n- Flexão; raro.",
+   "C": "**Posterolateral.**\n- Menos comum; risco a mediano e artéria."
   },
   "referencias": [
    "Rockwood and Wilkins's fractures in Children 7 th ed. 490 pg  (referência indicada na prova TARO 2015, questão 79)"
@@ -7429,12 +7429,12 @@
   "conferido": false
  },
  "pediatria-0606": {
-  "conceito": "### Deformidade plástica do antebraço\n- O osso curva sem fraturar, com microfraturas ao longo da diáfise; é comum na ulna.\n- Remodela pouco, sobretudo depois dos 4–6 anos.\n- Indica-se redução quando há **deformidade clínica** ou **limitação da pronossupinação**.\n- Técnica: ==redução incruenta sob anestesia==, com força lenta e contínua por minutos, seguida de gesso.\n\n> **Na prova:** deformidade plástica que bloqueia rotação = ==redução incruenta + gesso==.",
-  "correta": "**Redução incruenta com imobilização gessada.**",
+  "conceito": "### Deformidade plástica do antebraço\n- O osso curva sem fraturar, com microfraturas ao longo da diáfise; é comum na ulna.\n- Remodela pouco, sobretudo depois dos 4–6 anos.\n- Indica-se redução quando há **deformidade clínica** ou **limitação da pronossupinação**.\n- Técnica: ==redução incruenta sob anestesia==, com força lenta e contínua por minutos, seguida de gesso.\n\n### Quando corrigir\n| Situação | Conduta |\n|---|---|\n| < 4 anos, deformidade < 20°, rotação livre | observar |\n| ==limitação da pronossupinação== ou deformidade clínica | ==redução incruenta== + gesso |\n| associada a luxação da cabeça do rádio | Monteggia equivalente: corrigir a ulna |\n\n> **Na prova:** deformidade plástica que bloqueia rotação = ==redução incruenta + gesso==",
+  "correta": "**Redução incruenta e gesso.**\n- Força contínua por minutos.\n- Restaura a rotação.",
   "incorretas": {
-   "A": "**Redução cruenta com haste** é exceção, não o tratamento indicado.",
-   "B": "Não há necessidade de **abrir** para corrigir curvatura plástica.",
-   "D": "**Gesso em supinação** sem redução mantém o bloqueio."
+   "A": "**Aberta com haste.**\n- Desnecessária.",
+   "B": "**Aberta com gesso.**\n- Não há foco para abrir.",
+   "D": "**Só gesso.**\n- Não corrige a curva."
   },
   "referencias": [
    "Skeletal Trauma in Children 5th Ed (referência indicada na prova TARO 2016, questão 40)"
@@ -7443,12 +7443,12 @@
   "conferido": false
  },
  "pediatria-0607": {
-  "conceito": "### Classificação de Peterson (lesões fisárias)\n- **I:** fratura metafisária transversa que se estende à fise.\n- **II:** equivale ao Salter-Harris II.\n- **III:** equivale ao SH I.\n- **IV:** equivale ao SH III.\n- **V:** equivale ao SH IV.\n- **VI:** ==perda de parte da fise==, em fratura **exposta** (cortador de grama, abrasão), com alto risco de barra.\n\n> **Na prova:** Peterson VI = ==exposta com perda fisária==.",
-  "correta": "**Fratura exposta com perda de parte da fise.**",
+  "conceito": "### Classificação de Peterson (lesões fisárias)\n- **I:** fratura metafisária transversa que se estende à fise.\n- **II:** equivale ao Salter-Harris II.\n- **III:** equivale ao SH I.\n- **IV:** equivale ao SH III.\n- **V:** equivale ao SH IV.\n- **VI:** ==perda de parte da fise==, em fratura **exposta** (cortador de grama, abrasão), com alto risco de barra.\n\n### Peterson × Salter-Harris\n| Peterson | Correspondência |\n|---|---|\n| I | metafisária transversa até a fise (novo) |\n| II | SH II |\n| III | SH I |\n| IV | SH III |\n| V | SH IV |\n| ==VI== | ==perda de parte da fise== (exposta), não descrito por Salter-Harris |\n\n- Lesão do anel pericondral é o tipo VI de ==Rang==, não de Peterson.\n\n> **Na prova:** Peterson VI = ==exposta com perda fisária==",
+  "correta": "**Exposta com perda de fise.**\n- Cortador de grama, abrasão.\n- Alto risco de barra.",
   "incorretas": {
-   "A": "Lesão do **anel pericondral** é o tipo VI de **Rang**, não de Peterson.",
-   "B": "**Esmagamento da fise** corresponde ao SH V.",
-   "D": "Redução do crescimento é **consequência**, não a definição do tipo."
+   "A": "**Anel pericondral.**\n- Rang VI.",
+   "B": "**Esmagamento.**\n- SH V.",
+   "D": "**Diminuição do crescimento.**\n- Consequência, não definição."
   },
   "referencias": [
    "Herring: Tachdjian’s Pediatric Orthopaedics 5th Ed. 1203 Pg (referência indicada na prova TARO 2016, questão 54)"
@@ -7471,12 +7471,12 @@
   "conferido": false
  },
  "pediatria-0609": {
-  "conceito": "### \"Polegar do esquiador\" na criança\n- O mesmo mecanismo que rompe o **ligamento colateral ulnar** da MF no adulto (valgo forçado).\n- Na criança, o ligamento é mais forte que a fise: ele ==arranca um fragmento epifisário ulnar== da base da falange proximal.\n- Resultado: fratura **Salter-Harris III**.\n- Desvio acima de 1,5–2 mm ou rotação do fragmento: **fixação**.\n\n> **Na prova:** SH III da base da F1 do polegar = ==avulsão do colateral ulnar==.",
-  "correta": "**Do ligamento colateral ulnar.**",
+  "conceito": "### \"Polegar do esquiador\" na criança\n- O mesmo mecanismo que rompe o **ligamento colateral ulnar** da MF no adulto (valgo forçado).\n- Na criança, o ligamento é mais forte que a fise: ele ==arranca um fragmento epifisário ulnar== da base da falange proximal.\n- Resultado: fratura **Salter-Harris III**.\n- Desvio acima de 1,5–2 mm ou rotação do fragmento: **fixação**.\n\n### Estruturas da MF do polegar\n| Estrutura | Lesão na criança |\n|---|---|\n| ==colateral ulnar== | avulsão epifisária ulnar (SH III): polegar do esquiador |\n| placa volar | hiperextensão; avulsão volar |\n| adutor do polegar | aponeurose pode interpor (lesão de Stener no adulto) |\n\n> **Na prova:** SH III ulnar da base da F1 do polegar = ==colateral ulnar==",
+  "correta": "**Colateral ulnar.**\n- Mais forte que a fise.\n- Arranca fragmento epifisário.",
   "incorretas": {
-   "A": "**Placa volar** avulsiona fragmento volar na hiperextensão.",
-   "C": "O **adutor** insere-se via aponeurose, mas não produz o SH III típico.",
-   "D": "**Flexor curto** não causa essa avulsão."
+   "A": "**Placa volar.**\n- Hiperextensão; fragmento volar.",
+   "C": "**Adutor.**\n- Aponeurose interposta (Stener), não avulsão.",
+   "D": "**Flexor curto.**\n- Insere radialmente."
   },
   "referencias": [
    "Rockwood and Wilkins's fractures in Children 8th Ed (referência indicada na prova TARO 2016, questão 80)"
@@ -7485,12 +7485,12 @@
   "conferido": false
  },
  "pediatria-0610": {
-  "conceito": "### Fratura do côndilo lateral na criança\n- É intra-articular e **instável**: tende a desviar com o tempo.\n- O fragmento leva a origem de músculos extensores do punho, sobretudo o ==extensor radial longo do carpo==, e o ligamento colateral lateral.\n- A tração muscular gira e afasta o fragmento; por isso desvio acima de 2 mm vai para **redução e fixação**.\n- Complicações: pseudartrose, cúbito valgo e paralisia tardia do ulnar.\n\n> **Na prova:** músculo preso ao fragmento = ==extensor radial longo do carpo==.",
-  "correta": "**Extensor radial longo do carpo.**\n- Sua origem permanece no fragmento e ajuda a desviá-lo.",
+  "conceito": "### Fratura do côndilo lateral na criança\n- É intra-articular e **instável**: tende a desviar com o tempo.\n- O fragmento leva a origem de músculos extensores do punho, sobretudo o ==extensor radial longo do carpo==, e o ligamento colateral lateral.\n- A tração muscular gira e afasta o fragmento; por isso desvio acima de 2 mm vai para **redução e fixação**.\n- Complicações: pseudartrose, cúbito valgo e paralisia tardia do ulnar.\n\n### Milch e Jakob\n| Classificação | Tipo | Detalhe |\n|---|---|---|\n| Milch | I | traço lateral à tróclea (SH IV), estável |\n| Milch | II | traço pela tróclea (SH II), instável |\n| Jakob | 1 | < 2 mm, dobradiça articular íntegra: gesso |\n| Jakob | 2 | 2 a 4 mm: fixação |\n| Jakob | 3 | desviado e rodado: redução aberta |\n\n> **Na prova:** músculo preso ao fragmento = ==extensor radial longo do carpo==",
+  "correta": "**Extensor radial longo do carpo.**\n- Origem no fragmento.\n- Traciona e roda o côndilo.",
   "incorretas": {
-   "A": "O **braquiorradial** origina-se mais proximal, na crista supracondilar.",
-   "B": "O **extensor ulnar do carpo** não é o músculo classicamente descrito.",
-   "C": "O **extensor comum dos dedos** não é o músculo classicamente descrito."
+   "A": "**Braquiorradial.**\n- Origem proximal, na crista supracondilar.",
+   "B": "**Extensor ulnar do carpo.**\n- Epicôndilo lateral; não é o descrito.",
+   "C": "**Extensor comum.**\n- Não é o classicamente descrito."
   },
   "referencias": [
    "Rockwood and Wilkins's fractures in Children 7th Ed (referência indicada na prova TARO 2017, questão 1)"
