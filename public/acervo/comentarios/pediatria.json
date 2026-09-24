@@ -4406,112 +4406,112 @@
   "conferido": false
  },
  "pediatria-0346": {
-  "conceito": "Jones, Barnes e Lloyd-Roberts publicaram em 1978 uma classificação radiográfica para hemimelia tibial destinada a organizar o grau de deficiência e orientar o raciocínio reconstrutivo. Tipo Ia: nenhuma tíbia visível e epífise distal do fêmur hipoplásica, geralmente correspondendo à deficiência mais grave; tipo Ib: tíbia também não visível, mas a epífise distal femoral é relativamente normal, sugerindo presença de tíbia proximal cartilaginosa; tipo II: segmento proximal da tíbia está ossificado, com deficiência distal; tipo III: segmento distal está presente, com deficiência proximal, padrão extremamente raro; tipo IV: tíbia curta, com diástase tibiofibular distal e deformidade do tornozelo. A classificação tem limitações porque depende de ossificação e alguns membros não se encaixam adequadamente, levando a sistemas posteriores como Weber e Paley. Nos tipos graves, a condição do quadríceps, patela e mecanismo extensor é decisiva para reconstrução, pois um joelho sem extensão ativa funcional possui prognóstico muito pior.",
-  "correta": "A alternativa A está correta. O tipo Ia de Jones representa a deficiência mais grave, com ausência radiográfica completa da tíbia e hipoplasia da epífise distal do fêmur. Nesse grupo é frequente deficiência importante ou ausência funcional do mecanismo extensor, incluindo patela e quadríceps. Esse detalhe tem grande implicação prática: a viabilidade de reconstrução do joelho depende fortemente da existência de extensão ativa.",
+  "conceito": "### Hemimelia tibial\n- Deficiência longitudinal ==pré-axial==, rara; fíbula preservada (às vezes hipertrofiada).\n- Frequentemente hereditária (dominante) e associada a mão fendida, polidactilia.\n\n### Forma completa\n| Achado | Detalhe |\n|---|---|\n| ==patela== | ==ausente== ou hipoplásica |\n| quadríceps | deficiente |\n| joelho | instável, em flexão |\n| ==pé== | ==equinovaro rígido== |\n\n### Jones\n| Tipo | Tíbia |\n|---|---|\n| 1a | ausente, epífise distal do fêmur hipoplásica |\n| 1b | ausente, epífise femoral normal |\n| 2 | tíbia distal ausente |\n| 3 | tíbia proximal ausente |\n| 4 | diástase tibiofibular distal |\n\n### Tratamento\n- Sem quadríceps ativo: ==desarticulação do joelho== + prótese.\n- Com quadríceps: centralização da fíbula (Brown).\n\n### Por que o 1a\n- Epífise distal do fêmur ==hipoplásica== na radiografia indica ==quadríceps e patela deficientes==.\n- No 1b a epífise femoral é normal: há um coto cartilaginoso de tíbia proximal e mecanismo extensor presente (RM ou US confirmam).\n\n> **Na prova:** mecanismo extensor ausente = ==Jones 1a==",
+  "correta": "**Tipo 1a.**\n- Tíbia ausente, epífise femoral hipoplásica.\n- Sem quadríceps: desarticulação do joelho.",
   "incorretas": {
-   "B": "No tipo Ib também não há tíbia ossificada visível inicialmente, porém a epífise distal femoral tem aparência relativamente normal e costuma existir um segmento tibial proximal cartilaginoso. O prognóstico reconstrutivo é, em geral, melhor do que no Ia.",
-   "C": "O tipo II apresenta tíbia proximal ossificada e deficiência do segmento distal. A preservação proximal favorece um joelho mais bem formado e diferencia esse padrão da ausência completa e da deficiência extensora grave típica do Ia.",
-   "D": "A denominação IIb não pertence à classificação original de Jones de 1978. Jones utiliza Ia, Ib, II, III e IV. A presença dessa opção é uma armadilha que mistura sistemas ou subdivisões utilizadas em outras classificações."
+   "B": "**Tipo 1b.**\n- Coto tibial cartilaginoso; mecanismo extensor presente.",
+   "C": "**Tipo 2.**\n- Tíbia proximal presente; extensor preservado.",
+   "D": "**Não existe IIb.**\n- Jones 2 é tíbia distal ausente."
   },
   "referencias": [
    "Tibial hemimelia: new classification and reconstructive options. PMCID: PMC5145835.",
    "Jones D, Barnes J, Lloyd-Roberts GC. Congenital aplasia and dysplasia of the tibia with intact fibula. Classification and management. J Bone Joint Surg Br. 1978."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0347": {
-  "conceito": "A deformidade de Sprengel é elevação congênita da escápula causada por falha na descida embrionária da escápula da região cervical para sua posição torácica. Pode existir hipoplasia e rotação anormal da escápula, barra omovertebral, Klippel-Feil, escoliose e anomalias costais. Cavendish propôs em 1972 uma classificação clínica e estética em quatro graus. Grau I: deformidade muito leve, ombros praticamente no mesmo nível e alteração quase invisível com roupas. Grau II: deformidade leve, ainda com ombros aproximadamente nivelados, mas com saliência superomedial visível como um pequeno abaulamento cervical. Grau III: deformidade moderada, com elevação de aproximadamente 2 a 5 cm do ombro. Grau IV: deformidade grave, elevação maior que 5 cm e ângulo superomedial próximo ao pescoço, frequentemente com webbing. A classificação ajuda a quantificar aspecto clínico, mas não substitui avaliação da amplitude e anatomia radiográfica.",
-  "correta": "A alternativa B está correta. Um paciente cuja deformidade não é perceptível quando vestido corresponde ao grau I de Cavendish. É a forma muito leve, em que os ombros permanecem aproximadamente nivelados e a elevação escapular é discreta. A importância é diferenciar esse grupo dos graus II a IV, nos quais a proeminência e a assimetria tornam-se progressivamente visíveis e podem justificar discussão cirúrgica quando há comprometimento funcional ou estético importante.",
+  "conceito": "### Deformidade de Sprengel\n- Falha da descida da escápula; pequena, alta, ==rodada medialmente==.\n- ==Osso omovertebral== (ou banda fibrosa) em cerca de 1/3: liga o ângulo superior à coluna cervical.\n- Associações: Klippel-Feil, escoliose, costelas anômalas, rim.\n\n### Cirurgia\n| Aspecto | Detalhe |\n|---|---|\n| idade | ==após 3 anos== (ideal 3 a 8) |\n| técnicas | Woodward (desinserção medial), Green (desinserção na escápula), Wilkinson-Campbell |\n| ==omovertebral== | ressecção ==extraperiosteal== (subperiosteal regenera a ponte) |\n| risco | lesão do ==plexo braquial== ao descer: osteotomia da clavícula protege |\n\n### Cavendish\n| Grau | Aparência |\n|---|---|\n| ==1 (muito leve)== | ombros nivelados; ==invisível vestido== |\n| 2 (leve) | ombros nivelados; saliência ==visível vestido== |\n| 3 (moderado) | ombro elevado 2 a 5 cm |\n| 4 (grave) | ombro elevado > 5 cm, escápula perto do occipital |\n\n- Graus 3 e 4 costumam indicar cirurgia.\n\n> **Na prova:** omovertebral = ressecção ==extraperiosteal, depois dos 3 anos==.",
+  "correta": "**Grau 1.**\n- Muito leve.\n- Ombros nivelados, nada aparece com roupa.",
   "incorretas": {
-   "A": "A classificação original de Cavendish inicia no grau I, e não no grau 0. Algumas adaptações modernas podem utilizar categorias modificadas, mas a classificação clássica cobrada em ortopedia utiliza graus I a IV.",
-   "C": "Grau II representa deformidade leve, porém já existe uma saliência perceptível do ângulo superomedial da escápula, inclusive sob determinadas roupas. Isso é mais evidente do que a descrição do enunciado.",
-   "D": "Grau III corresponde a deformidade moderada, geralmente com elevação do ombro entre aproximadamente 2 e 5 cm. Seria claramente visível e não combina com um paciente sem deformidade aparente quando vestido."
+   "A": "**Grau 0.**\n- Não existe na escala (1 a 4).",
+   "C": "**Grau 2.**\n- Saliência visível com roupa.",
+   "D": "**Grau 3.**\n- Ombro elevado 2 a 5 cm."
   },
   "referencias": [
    "Surgical Treatment of Sprengel's Deformity: A Systematic Review and Meta-Analysis. PMCID: PMC8700527.",
    "Cavendish ME. Congenital elevation of the scapula. J Bone Joint Surg Br. 1972."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0348": {
-  "conceito": "A doença de Blount é um distúrbio do crescimento da porção posteromedial da fise proximal da tíbia associado a carga mecânica anormal, particularmente em crianças com obesidade e início precoce da marcha. Embora historicamente chamada tíbia vara, a deformidade é tridimensional. Existe varo da tíbia proximal no plano coronal, procurvato no plano sagital e torção interna no plano axial. Também podem coexistir depressão do platô medial, translação e discrepância de comprimento. A forma infantil surge antes dos 4 anos; formas tardias incluem juvenil e adolescente. Radiograficamente podem aparecer beaking metafisário medial, inclinação e irregularidade fisária e ossificação epifisária assimétrica. A classificação de Langenskiöld descreve seis estágios progressivos da deformidade epifisária e metafisária. O tratamento varia de órtese em crianças muito pequenas e estágios iniciais a osteotomia, hemiepifisiodese ou reconstruções mais complexas nos estágios avançados.",
-  "correta": "A alternativa A está correta. A tríade deformante clássica de Blount é varo, procurvato e torção interna da tíbia. Essa compreensão tridimensional é essencial no planejamento: uma osteotomia que corrija apenas o varo pode deixar deformidade rotacional e sagital residual. O examinador deve avaliar eixo mecânico, rotação dos pés, recurvato/procurvato e eventual deformidade femoral associada.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Componentes da deformidade\n- ==Varo== (metafisário medial).\n- ==Torção tibial interna==.\n- ==Procurvato== da tíbia proximal (com joelho recurvato compensatório) e instabilidade lateral.\n\n> **Na prova:** Blount = ==varo, procurvato e torção interna==",
+  "correta": "**Procurvato e torção interna.**\n- Deformidade triplanar.\n- A osteotomia corrige os três planos.",
   "incorretas": {
-   "B": "Procurvato faz parte da deformidade, porém o componente torsional típico da tíbia é interno, não externo. Torção externa apontaria para outra combinação deformante e não corresponde à fisiopatologia clássica de Blount.",
-   "C": "A torção interna está correta, mas o componente sagital é procurvato. Retrocurvato corresponde a angulação posterior/recurvato, direção oposta à deformidade proximal usual na doença.",
-   "D": "Essa opção erra os dois componentes adicionais: Blount associa-se a procurvato e torção interna, e não retrocurvato com torção externa."
+   "B": "**Torção externa.**\n- É interna.",
+   "C": "**Retrocurvato.**\n- Tíbia proximal em procurvato.",
+   "D": "**Dupla errada.**\n- Procurvato e torção interna."
   },
   "referencias": [
    "Sabharwal S. Blount disease. J Bone Joint Surg Am. 2009;91:1758-1776. PMID: 19571101.",
    "Osteotomy for deformities in Blount disease: A systematic review. PMCID: PMC4925742."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0350": {
-  "conceito": "Discrepância dos membros inferiores pode resultar tanto de deficiência de crescimento quanto de sobrecrescimento. Entre as causas de crescimento excessivo estão síndromes de sobrecrescimento e malformações vasculares. A síndrome de Proteus é um distúrbio mosaico relacionado à ativação de AKT1, com crescimento desproporcional e progressivo de ossos, tecidos moles e pele. A síndrome de Klippel-Trenaunay pertence ao espectro de sobrecrescimento relacionado a PIK3CA e combina malformações capilares e venosas com hipertrofia óssea e de partes moles, frequentemente em um único membro. A discrepância deve ser quantificada clinicamente e por imagem, e em crianças deve-se prever o valor final na maturidade. O tratamento depende da magnitude e do padrão: palmilhas, epifisiodese contralateral, procedimentos de encurtamento, alongamento ou, raramente, técnicas ablativas. Malformações vasculares exigem planejamento multidisciplinar devido ao risco de sangramento, trombose e complicações de ferida.",
-  "correta": "A alternativa D está correta. Proteus e Klippel-Trenaunay são exemplos clássicos de condições capazes de produzir sobrecrescimento generalizado ou segmentar de um membro, aumentando seu comprimento e volume. Na Klippel-Trenaunay, o crescimento ósseo acompanha malformações capilares e venosas; em Proteus, o crescimento assimétrico e progressivo decorre de mosaicismo. Esses diagnósticos pertencem ao grupo etiológico oposto às causas de encurtamento.",
+  "conceito": "### Discrepância de membros inferiores\n| Mecanismo | Encurtamento | Alongamento (hipercrescimento) |\n|---|---|---|\n| congênito | DFFP, hemimelias, coxa vara | hemi-hipertrofia |\n| fise | infecção, trauma fisário, tumor | |\n| vascular | isquemia | ==aumento de fluxo==: fratura diafisária, AIJ, MAV, hemangioma |\n| neurológico | pólio, PC | |\n| síndromes | Ollier, NF1 | ==Proteus, Klippel-Trénaunay-Weber==, Beckwith-Wiedemann |\n\n### Pontos\n- ==Fratura de fêmur na criança causa hipercrescimento== (1 a 2 cm), não encurtamento.\n- Escanometria/panorâmica e idade óssea são ==essenciais== (Moseley, Paley multiplicador).\n\n### Conduta por discrepância prevista\n| Final | Conduta |\n|---|---|\n| < 2 cm | palmilha ou nada |\n| 2 a 5 cm | epifisiodese contralateral |\n| > 5 cm | alongamento |\n| > 15 a 20 cm | amputação/protetização |\n\n> **Na prova:** hipercrescimento generalizado = ==Proteus e Klippel-Trénaunay-Weber==",
+  "correta": "**Proteus e Klippel-Trénaunay-Weber.**\n- Hipercrescimento de todo o membro.\n- Malformações vasculares e de tecidos.",
   "incorretas": {
-   "A": "Fraturas de fêmur em crianças frequentemente produzem sobrecrescimento pós-traumático, especialmente em determinadas idades, e não necessariamente encurtamento. Encurtamento pode ocorrer por perda óssea, consolidação viciosa ou lesão fisária, mas a afirmação generaliza incorretamente.",
-   "B": "Malformações arteriovenosas podem aumentar fluxo e estimular crescimento do membro, exatamente o oposto de uma diminuição permanente de perfusão. Artrites inflamatórias também podem alterar crescimento fisário, mas o mecanismo descrito na alternativa não é adequado.",
-   "C": "Escanometria e radiografias panorâmicas são justamente ferramentas importantes para medir discrepância, localizar sua origem e planejar tratamento. Em crianças, medições seriadas permitem ainda acompanhar velocidade de crescimento e estimar discrepância final."
+   "A": "**Fêmur cresce mais.**\n- Hiperemia pós-fratura gera hipercrescimento.",
+   "B": "**Fluxo aumentado.**\n- AIJ e MAV aumentam o fluxo e alongam.",
+   "C": "**Exames essenciais.**\n- Escanometria e idade óssea planejam o tratamento."
   },
   "referencias": [
    "Klippel-Trenaunay Syndrome. PMCID: PMC3881214.",
    "Presentation and Management of Klippel-Trenaunay Syndrome: A Review of Available Data. PMCID: PMC7282379."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0351": {
-  "conceito": "A epifisiodese do trocânter maior, utilizada para limitar seu crescimento relativo quando há necrose avascular da cabeça/colo femoral com comprometimento do crescimento nessa região (levando a uma relação de sobrecrescimento trocantérico progressivo, com risco de coxa vara secundária e insuficiência do glúteo médio), é mais eficaz quando realizada **precocemente**, antes que uma discrepância significativa entre o crescimento trocantérico e o do colo femoral se estabeleça, sendo classicamente indicada por volta dos **5 anos** de idade.",
-  "correta": "A. É mais bem indicada aos 5 anos.",
+  "conceito": "### Necrose após DDQ: supercrescimento do trocanter\n- Lesão da fise da cabeça (Kalamchi-MacEwen II): colo curto e ==trocanter alto== (coxa breva).\n- Resultado: abdutores encurtados, ==Trendelenburg==.\n\n### Epifisiodese do trocanter maior\n| Aspecto | Detalhe |\n|---|---|\n| objetivo | frear o trocanter enquanto o colo cresce |\n| ==idade ideal== | ==até cerca de 8 anos== (melhor por volta dos ==5==) |\n| após 8 a 10 anos | pouco crescimento restante: preferir ==avanço distal do trocanter== |\n\n> **Na prova:** epifisiodese do trocanter maior = ==por volta dos 5 anos==",
+  "correta": "**5 anos.**\n- Ainda há crescimento a controlar.\n- Após 8 anos o efeito é pequeno.",
   "incorretas": {
-   "B": "Aos 7 anos, uma discrepância de crescimento relativo entre o trocânter maior e o colo femoral já pode estar mais estabelecida, reduzindo a eficácia preventiva da intervenção precoce.",
-   "C": "Aos 9 anos, essa janela de intervenção precoce e mais eficaz já estaria mais avançada.",
-   "D": "Aos 11 anos, próximo à adolescência, a intervenção já ocorreria tardiamente em relação ao objetivo de prevenir o sobrecrescimento trocantérico progressivo."
+   "B": "**7 anos.**\n- Menos efetiva.",
+   "C": "**9 anos.**\n- Tarde; avanço distal do trocanter.",
+   "D": "**11 anos.**\n- Sem crescimento útil."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0352": {
-  "conceito": "Após a redução incruenta do quadril na displasia do desenvolvimento do quadril, avalia-se a chamada \"zona de segurança\" de movimento em que o quadril permanece estável e reduzido. Quando o quadril **só se mantém centrado em uma posição extrema** (especificamente em **abdução ampla associada a rotação interna maior que 10 a 15 graus**), essa redução é considerada **instável**: qualquer posição mais próxima da funcional (menos extrema) resulta em nova luxação, sinalizando que há fatores obstrutivos residuais (contratura de adutores, labrum invertido, cápsula redundante ou tecido interposto) impedindo uma redução verdadeiramente concêntrica e estável.",
-  "correta": "C. O quadril é considerado instável quando se mantém centrado apenas em abdução ampla e rotação interna maior que 10 a 15 graus.",
+  "conceito": "### Obstáculos à redução na DDQ\n| Extra-articulares | Intra-articulares |\n|---|---|\n| iliopsoas (estrangula a cápsula em ampulheta) | ==cápsula constrita== (istmo) |\n| adutores | lábio invertido (limbo) |\n| | pulvinar hipertrofiado |\n| | ligamento redondo alongado e espesso |\n| | ligamento transverso do acetábulo |\n\n- Na DDQ tardia, a ==constrição capsular== (ampulheta pelo psoas) é o obstáculo principal segundo a fonte.\n\n### Conduta\n| Idade | Tratamento |\n|---|---|\n| < 6 meses | Pavlik |\n| 6 a 18 meses | redução fechada + gesso (artrografia) |\n| > 18 meses | ==redução aberta== ± osteotomia femoral encurtadora e pélvica |\n\n### Posição humana (Salter)\n- Quadril em ==flexão de 90 a 100° (\"hiperflexão\")== e ==abdução moderada, menor que a máxima== (40 a 60°).\n- Zona de segurança de Ramsey: entre a abdução máxima e a mínima que mantém a redução.\n- Abdução máxima (posição de rã de Lorenz) causa ==necrose avascular==.\n\n### Redução instável\n- Quadril que só fica reduzido em ==abdução ampla== e/ou ==rotação interna > 15°==: zona de segurança estreita.\n- Risco de necrose se imobilizado assim: indica ==redução aberta== (± tenotomia de adutores, encurtamento femoral).\n\n> **Na prova:** redução instável = só em ==abdução ampla e/ou RI > 15°==",
+  "correta": "**Abdução ampla e RI > 10 a 15°.**\n- Zona de segurança estreita.\n- Risco de necrose: indicar redução aberta.",
   "incorretas": {
-   "A": "É a abdução ampla, não a adução, que caracteriza essa instabilidade, a adução ampla tenderia a favorecer a luxação, não a manutenção da redução.",
-   "B": "É a rotação interna, não a externa, que está associada a essa instabilidade.",
-   "D": "É a rotação interna, não a externa, que caracteriza essa instabilidade, apesar do componente de abdução estar correto."
+   "A": "**Adução.**\n- Quadril reduzido em adução é estável.",
+   "B": "**Adução e RE.**\n- Direções erradas.",
+   "D": "**RE.**\n- É rotação interna."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0353": {
-  "conceito": "A displasia epifisária múltipla (DEM) é uma condição geneticamente heterogênea que compromete a ossificação endocondral de múltiplas epífises, com apresentação clínica geralmente mais sutil do que outras displasias esqueléticas mais graves. As epífises, sobretudo dos quadris e joelhos, costumam apresentar **atraso e irregularidade no surgimento dos centros de ossificação** (não um surgimento precoce), o que frequentemente causa desconforto articular e alteração da marcha desde cedo na infância, um **atraso no desenvolvimento da marcha** é, portanto, um achado clínico relevante e reconhecido nessa condição, refletindo o comprometimento articular já presente antes mesmo da criança começar a deambular.\n\nDiferente do que se poderia supor pelo nome \"epifisária\", a condição costuma acometer **múltiplas epífises**, incluindo as umerais (que, portanto, não costumam estar normais), e não é classicamente caracterizada por contraturas precoces das interfalangianas das mãos e pés, achado mais associado a outras condições displásicas ou artrogripóticas.",
-  "correta": "A. Na displasia epifisária múltipla, é comum encontrar atraso no desenvolvimento da marcha.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Epidemiologia do Perthes\n| Aspecto | Dado |\n|---|---|\n| sexo | ==masculino== (4 a 5:1) |\n| idade | 4 a 8 anos |\n| lado | ==unilateral== (bilateral 10 a 15%, ==assimétrico no tempo==) |\n| perfil | baixa estatura, idade óssea atrasada, hiperatividade, tabagismo passivo |\n\n- Bilateral simétrico e simultâneo: pensar em ==displasia epifisária múltipla== ou hipotireoidismo.\n\n### Displasia epifisária múltipla (DEM)\n- COMP, matrilina 3, colágeno IX; AD em geral.\n- ==Ossificação epifisária atrasada e irregular==, bilateral e simétrica (quadris, joelhos, tornozelos, ombros).\n- Clínica: ==marcha atrasada== ou gingada, dor articular, baixa estatura leve, dedos curtos.\n- ==Epífises do úmero== também afetadas.\n- Joelho: patela dupla (tipo recessivo), valgo; artrose precoce.\n\n> **Na prova:** DEM = ossificação ==atrasada==, pode haver ==atraso de marcha==",
+  "correta": "**Atraso de marcha.**\n- Ossificação epifisária atrasada.\n- Marcha gingada, dor articular.",
   "incorretas": {
-   "B": "As epífises umerais também costumam estar acometidas na displasia epifisária múltipla, não permanecendo normais, já que a condição afeta múltiplas epífises do esqueleto.",
-   "C": "Há, na verdade, atraso e irregularidade no surgimento dos centros de ossificação, não um surgimento precoce.",
-   "D": "Contraturas precoces das interfalangianas das mãos e pés não são um achado característico da displasia epifisária múltipla."
+   "B": "**Úmeros afetados.**\n- Epífises proximais irregulares.",
+   "C": "**Atrasado.**\n- Centros surgem tarde.",
+   "D": "**Contraturas IF.**\n- Não é típico; mãos com dedos curtos."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0354": {
-  "conceito": "A distrofia muscular de Duchenne produz fraqueza progressiva, inicialmente predominante em músculos proximais de membros inferiores. Fraqueza de extensores e abdutores do quadril leva a hiperlordose, inclinação compensatória do tronco e marcha anserina. Com progressão, o paciente reduz velocidade, aumenta a base e tende a aumentar o tempo relativo de duplo apoio para melhorar estabilidade. A doença é simétrica; assimetria acentuada deve levantar diagnóstico diferencial. O tônus não é aumentado: trata-se de miopatia com perda de força, não síndrome piramidal. Radiografias podem mostrar osteopenia e alterações secundárias ao desuso e ao tratamento, mas hipoplasia do núcleo de ossificação femoral não é uma característica definidora. Corticoides e terapias específicas preservam função por mais tempo, enquanto contraturas, escoliose após perda da marcha, saúde óssea, cardiomiopatia e função respiratória exigem acompanhamento.",
-  "correta": "A alternativa C está correta. A fraqueza dos abdutores do quadril reduz a estabilidade pélvica durante apoio unipodal. Como compensação, a criança passa mais tempo em posições de maior estabilidade e pode aumentar a duração relativa do duplo apoio à medida que a doença progride. Esse fenômeno integra um padrão maior de marcha anserina, inclinação do tronco e redução de velocidade.",
+  "conceito": "### Distrofia muscular de Duchenne\n- ==Ligada ao X==, meninos; ausência de ==distrofina==.\n- Fraqueza ==proximal== (cintura pélvica primeiro), ==pseudo-hipertrofia das panturrilhas==, ==Gowers== positivo.\n- CPK muito elevada; biópsia/genética.\n\n### Perda da marcha (8 a 12 anos)\n| Fraqueza | Compensação |\n|---|---|\n| ==extensores do quadril== | hiperlordose, tronco atrás do quadril |\n| ==dorsiflexores== | marcha na ponta, equino |\n| quadríceps | joelho travado em extensão |\n\n### Ortopedia\n- Contraturas: equino, flexão do quadril, banda iliotibial.\n- ==Escoliose== após perder a marcha: artrodese precoce (antes da piora respiratória, CVF > 30 a 40%).\n- Corticoide prolonga a marcha e reduz escoliose.\n\n### Becker\n- Distrofina reduzida; mais tardia e branda.\n\n### Marcha na Duchenne\n- Fraqueza de ==abdutores==: marcha gingada (Trendelenburg bilateral), base alargada, ==duplo apoio mais longo==.\n- Hiperlordose e equino compensam extensores fracos.\n- Hipotonia e fraqueza ==simétricas==; sem alteração do núcleo femoral.\n\n> **Na prova:** fraqueza de abdutores na Duchenne ==aumenta o duplo apoio==",
+  "correta": "**Duplo apoio aumenta.**\n- Abdutores fracos: apoio simples instável.\n- Marcha gingada com base alargada.",
   "incorretas": {
-   "A": "Duchenne apresenta padrão predominantemente simétrico. Diferença marcante entre os membros superiores não é característica e deve fazer pensar em outra etiologia neuromuscular, ortopédica ou neurológica.",
-   "B": "O problema é fraqueza e substituição muscular por gordura e tecido fibroso, não hipertonia. Aumento do tônus sugere comprometimento de neurônio motor superior, como paralisia cerebral espástica, e não uma distrofia muscular.",
-   "D": "Hipoplasia do núcleo de ossificação da cabeça femoral não é achado radiográfico característico de Duchenne. Alterações ósseas relevantes incluem redução da densidade mineral e fraturas por fragilidade, agravadas por imobilidade e corticoides."
+   "A": "**Simétrica.**\n- Fraqueza simétrica.",
+   "B": "**Hipotonia.**\n- Não há hipertonia.",
+   "D": "**Núcleo normal.**\n- Sem hipoplasia radiográfica."
   },
   "referencias": [
    "Dystrophinopathies. GeneReviews. NCBI Bookshelf NBK1119.",
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0355": {
   "conceito": "A epifisiólise proximal do fêmur ocorre tipicamente durante a adolescência por falha da fise submetida a forças de cisalhamento. Obesidade e estirão de crescimento são os fatores epidemiológicos mais importantes, mas apresentações atípicas exigem pesquisa de causas secundárias. Hipotireoidismo, deficiência de hormônio do crescimento antes ou durante tratamento, pan-hipopituitarismo, osteodistrofia renal e exposição prévia à radioterapia envolvendo a região fisária podem aumentar o risco. Epifisiólise em criança muito jovem, paciente magro, baixa estatura ou fora da faixa etária habitual deve levantar suspeita endocrinológica/metabólica. Clinicamente há dor em quadril, coxa ou joelho, claudicação, redução da rotação interna e rotação externa obrigatória na flexão. O diagnóstico é radiográfico e o tratamento padrão do escorregamento estável é fixação in situ, evitando progressão.",
