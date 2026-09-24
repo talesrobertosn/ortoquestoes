@@ -1243,329 +1243,266 @@
   "conferido": false
  },
  "quadril-0105": {
-  "conceito": "O caso já se resolve sem a imagem, que não veio no PDF de origem: gestante no último mês, dor no quadril sem trauma e radiografias inespecíficas compõem o quadro da osteoporose transitória do quadril. A ressonância confirmaria com edema difuso e homogêneo de cabeça e colo, sem lesão focal e sem linha de demarcação, muitas vezes estendendo-se até a região intertrocantérica. É condição autolimitada, que se resolve em seis a doze meses; o tratamento é proteção de carga e analgesia, e o cuidado principal é evitar a fratura do colo enquanto o osso está fragilizado.",
-  "correta": "Osteoporose transitória do quadril: gestante no terceiro trimestre, dor sem trauma e radiografia inicialmente inespecífica.",
+  "conceito": "### Osteoporose transitória do quadril\n- Perfil clássico: ==gestante no terceiro trimestre== ou homem de meia-idade.\n- Dor no quadril **sem trauma**, de início relativamente súbito, com marcha antálgica.\n- Radiografia: normal no início; depois, osteopenia da cabeça e do colo.\n- RM: ==edema difuso e homogêneo== da cabeça e do colo, às vezes até a região intertrocantérica, **sem lesão focal** e sem linha de demarcação.\n\n### Diagnóstico diferencial na RM\n| Condição | Achado típico |\n|---|---|\n| ==osteoporose transitória== | edema difuso, sem linha, sem lesão subcondral focal |\n| osteonecrose | lesão focal anterossuperior, linha serpiginosa (\"duplo halo\") |\n| fratura por estresse | linha de baixo sinal no colo dentro do edema |\n| osteomielite / artrite séptica | derrame, coleções, clínica infecciosa |\n\n### Evolução e conduta\n- **Autolimitada:** melhora em 6 a 12 meses.\n- Tratamento: **retirada de carga**, analgesia; bisfosfonato em casos selecionados (fora da gestação).\n- Risco principal: **fratura do colo** enquanto o osso está frágil.\n\n> **Na prova:** gestante + dor no quadril + edema difuso = ==osteoporose transitória==.",
+  "correta": "**Quadro típico.**\n- Gestante no último mês, dor sem trauma e radiografia inespecífica.\n- A RM mostra edema difuso de cabeça e colo, sem lesão focal.\n- Evolui bem com retirada de carga.",
   "incorretas": {
-   "A": "A osteonecrose dá lesão focal na zona de carga, delimitada por linha serpiginosa, e não tem a associação com o terceiro trimestre.",
-   "B": "A fratura por estresse apareceria como linha de baixo sinal atravessando o colo dentro do edema, e costuma vir com história de sobrecarga.",
-   "D": "A osteomielite traria febre, marcadores inflamatórios elevados e coleção, nada disso está no enunciado."
+   "A": "**Lesão focal, não difusa.**\n- A osteonecrose mostra área anterossuperior delimitada por linha serpiginosa.\n- Não tem a associação típica com o terceiro trimestre.",
+   "B": "**Teria linha de fratura.**\n- A fratura por estresse aparece como linha de baixo sinal no colo e costuma ter história de sobrecarga.",
+   "D": "**Faltaria clínica infecciosa.**\n- Febre, marcadores inflamatórios altos e coleções não estão no enunciado."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0106": {
-  "conceito": "No AP da bacia, as bordas anterior e posterior do acetábulo se projetam como duas linhas que descem até o fundo. No acetábulo normal (anteversado), a borda anterior fica sempre medial à posterior e as duas não se cruzam. Quando o acetábulo é retrovertido, a porção superior da borda anterior é jogada lateralmente e cruza a linha posterior, formando o sinal do cruzamento, a figura em oito. É um dos sinais do impacto tipo pincer, e só vale numa radiografia com inclinação e rotação da bacia bem controladas, porque a inclinação posterior da pelve o simula.",
-  "correta": "Parede anterior mais lateralizada que a posterior, o que indica retroversão acetabular.",
+  "conceito": "### Sinal do cruzamento (crossover)\n- No AP, as bordas **anterior** e **posterior** do acetábulo descem como duas linhas.\n- **Normal (anteversão):** a borda anterior fica **medial** à posterior em todo o trajeto.\n- ==Retroversão:== a porção cranial da ==borda anterior fica lateral== à posterior e as linhas se **cruzam** (figura em oito).\n\n### Sinais de retroversão acetabular\n| Sinal | O que mostra |\n|---|---|\n| ==cruzamento== | retroversão cranial |\n| parede posterior | centro da cabeça lateral à borda posterior: parede posterior deficiente |\n| espinha isquiática | espinha projetando-se para dentro da pelve: retroversão de toda a hemipelve |\n\n### Cuidado técnico\n- Exige AP bem feito: cóccix centrado na sínfise, 1 a 3 cm acima dela.\n- **Inclinação pélvica anterior** (lordose) cria falso cruzamento; rotação também distorce.\n\n### Relação com o impacto\n- Retroversão é causa de impacto tipo **pincer** (cobertura anterior excessiva).\n\n> **Na prova:** borda anterior lateral à posterior = ==retroversão==.",
+  "correta": "**Anterior lateralizada = retroversão.**\n- A borda anterior cruza a posterior no terço cranial.\n- Indica cobertura anterior excessiva, substrato do impacto tipo pincer.",
   "incorretas": {
-   "A": "Inverte as paredes e a conclusão: a parede posterior mais lateral é a configuração normal, de anteversão.",
-   "B": "A relação descrita corresponde ao acetábulo normal, e portanto não indica retroversão.",
-   "D": "A relação está certa, mas o significado é o oposto: parede anterior lateralizada indica retroversão, não anteversão."
+   "A": "**Configuração normal.**\n- A borda posterior mais lateral é o acetábulo normal, em anteversão; não há cruzamento.",
+   "B": "**Relação normal com conclusão errada.**\n- Posterior lateral à anterior é o padrão normal, não retroversão.",
+   "D": "**Conclusão invertida.**\n- A relação está certa, mas ela indica retroversão, não anteversão."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0107": {
-  "conceito": "O ângulo alfa precisa de uma incidência que mostre a transição cabeça-colo de perfil, e a de escolha é a de Dunn (quadril em 45 ou 90 graus de flexão, 20 graus de abdução, rotação neutra), porque ela expõe justamente o setor anterossuperior onde a giba do came costuma estar. Mede-se traçando um círculo sobre a cabeça e marcando onde o contorno ósseo escapa dele. O limiar trabalhado na literatura fica entre 50 e 55 graus, com zona cinzenta nessa faixa, outras questões deste acervo usam 50, e aqui o valor adotado é 55.",
-  "correta": "Incidência de Dunn, com alteração acima de 55 graus.",
+  "conceito": "### Ângulo alfa\n- Quantifica a **giba do came** na transição cabeça-colo.\n- Círculo sobre a cabeça; linha do centro pelo eixo do colo; linha até onde o contorno sai do círculo.\n- Limite: ==50 a 55°==, com zona cinzenta nessa faixa (esta questão adota 55°).\n\n### Incidências\n| Incidência | Posição | Uso principal |\n|---|---|---|\n| ==Dunn 45° / 90°== | quadril fletido, 20° abdução, rotação neutra | ==transição cabeça-colo anterossuperior (ângulo alfa)== |\n| cross-table lateral | perfil verdadeiro | came anterior |\n| Lequesne (falso perfil) | pelve rodada 65° | **cobertura anterior** (ângulo centro-borda anterior) |\n| AP da bacia | padrão | cruzamento, ângulo centro-borda lateral |\n\n### Onde está a giba\n- Geralmente na posição de **1 a 2 horas** (anterossuperior), que o Dunn mostra melhor.\n\n> **Na prova:** ângulo alfa = ==Dunn, alterado acima de 50 a 55°==.",
+  "correta": "**Dunn e 55°.**\n- O Dunn expõe o setor anterossuperior, onde fica a giba do came.\n- Valores acima de 55° são considerados alterados nesta questão.",
   "incorretas": {
-   "B": "A incidência está certa, mas 45 graus está dentro da normalidade em qualquer referência.",
-   "C": "O valor está certo, mas a incidência de Lequesne (falso perfil) serve para avaliar a cobertura ANTERIOR do acetábulo, medindo o ângulo centro-borda anterior, não a transição cabeça-colo.",
-   "D": "Erra a incidência e o valor ao mesmo tempo."
+   "B": "**Limite baixo demais.**\n- 45° é normal em qualquer referência.",
+   "C": "**Incidência de cobertura.**\n- O falso perfil de Lequesne mede o ângulo centro-borda anterior (cobertura), não a transição cabeça-colo.",
+   "D": "**Erra os dois.**\n- Incidência e limite estão errados."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0108": {
-  "alerta": "A proporção está invertida. O braço de alavanca dos abdutores, do centro de rotação até o trocanter maior, é o CURTO; o do peso corporal, da linha média até o centro de rotação, é o longo, cerca de duas vezes e meia maior. É justamente por isso que os abdutores precisam fazer força várias vezes maior que o peso do corpo para equilibrar a pelve, e a `quadril-0068`, neste mesmo acervo, diz exatamente isso ao explicar por que as duas forças não podem ser iguais. Se a alavanca abdutora fosse a maior, o músculo faria menos força que o peso corporal, e a carga na cabeça femoral não chegaria a três ou quatro vezes o peso. Entre as alternativas, a correta é a A.",
-  "conceito": "O quadril em apoio monopodal é uma balança de braços desiguais. De um lado o peso do corpo, agindo a partir do centro de gravidade, com braço longo; do outro os abdutores, puxando do trocanter maior, com braço curto, a razão entre eles é de cerca de 2,5 para 1 a favor do peso. Para equilibrar, o abdutor precisa gerar força proporcionalmente maior, e a resultante que atravessa a cabeça femoral é a soma vetorial das duas. Toda a cirurgia que mexe nessa razão (medializar a taça, aumentar o offset, lateralizar o trocanter) está tentando aproximar os dois braços.",
-  "correta": "A resposta oficial diz que o braço abdutor é 2,5 vezes maior que o do peso corporal.",
+  "conceito": "### A balança do quadril (apoio monopodal)\n- De um lado, o **peso corporal** (menos o membro de apoio), agindo no centro de gravidade.\n- Do outro, os **abdutores**, puxando do trocânter maior.\n- O braço do peso (linha média → centro da cabeça) é o **longo**; o dos abdutores (centro da cabeça → trocânter) é o **curto**.\n- Razão: cerca de ==2,5 para 1== a favor do peso.\n\n### Consequência\n- Para equilibrar, o abdutor faz força cerca de 2,5 vezes o peso.\n- A resultante na cabeça femoral chega a **cerca de 3 vezes** o peso corporal.\n\n### Como a cirurgia muda essa razão\n| Manobra | Efeito |\n|---|---|\n| medializar o componente acetabular | encurta o braço do peso |\n| aumentar o offset femoral | alonga o braço abdutor |\n| lateralizar o trocânter | alonga o braço abdutor |\n| bengala contralateral | cria um braço extra para o peso |\n\n> **Na prova:** a razão é ==2,5==; atenção ao sentido (veja o alerta).",
+  "correta": "**Resposta oficial.**\n- O gabarito considera o braço abdutor 2,5 vezes maior que o do peso.\n- Na biomecânica clássica, a relação é a inversa (veja o alerta).",
   "incorretas": {
-   "A": "É a proporção correta (o braço abdutor é cerca de 2,5 vezes MENOR) e mesmo assim foi dada como errada. Veja o aviso acima.",
-   "C": "A razão descrita na literatura é de cerca de 2,5 para 1, e não de 4 para 1.",
-   "D": "O sentido está certo (o braço abdutor é o menor), mas a razão de 4 vezes não é a descrita."
+   "A": "**Proporção correta pela biomecânica.**\n- O braço abdutor é cerca de 2,5 vezes menor, por isso a força abdutora supera o peso.\n- O gabarito oficial não a aceitou (veja o alerta).",
+   "C": "**Razão errada.**\n- A literatura descreve cerca de 2,5 para 1, não 4 para 1.",
+   "D": "**Sentido certo, número errado.**\n- O braço abdutor é o menor, mas a razão não é de 4 vezes."
   },
-  "geradoEm": "2026-09-06",
+  "alerta": "A proporção está invertida. O braço de alavanca dos abdutores, do centro de rotação até o trocanter maior, é o CURTO; o do peso corporal, da linha média até o centro de rotação, é o longo, cerca de duas vezes e meia maior. É justamente por isso que os abdutores precisam fazer força várias vezes maior que o peso do corpo para equilibrar a pelve, e a `quadril-0068`, neste mesmo acervo, diz exatamente isso ao explicar por que as duas forças não podem ser iguais. Se a alavanca abdutora fosse a maior, o músculo faria menos força que o peso corporal, e a carga na cabeça femoral não chegaria a três ou quatro vezes o peso. Entre as alternativas, a correta é a A.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0109": {
-  "conceito": "A carga no quadril não é o peso que está acima dele, e sim a resultante entre o peso corporal e a força que os abdutores precisam fazer para equilibrar a pelve. Com o corpo apoiado em um só membro (que é a situação que interessa, porque em apoio bipodal a carga se divide e fica abaixo do peso do corpo em cada quadril), a soma vetorial dessas duas forças chega a cerca de três vezes o peso corporal. Daí para cima os valores crescem com a exigência do gesto: marcha em torno de três a quatro vezes, subir escadas ainda mais.",
-  "correta": "Cerca de 3 vezes o peso corporal.",
+  "conceito": "### Carga na cabeça femoral\n- Resultante do **peso corporal** somado à **força abdutora** necessária para equilibrar a pelve.\n- No apoio em um membro, chega a cerca de ==3 vezes o peso corporal==.\n\n### Valores de referência\n| Situação | Carga (× peso) |\n|---|---|\n| apoio bipodal (cada quadril) | cerca de 0,3 a 0,5 |\n| elevação da perna estendida | cerca de 1,5 a 2 |\n| ==apoio monopodal / ortostase de referência== | ==cerca de 3== |\n| marcha | 3 a 4 |\n| escadas | acima da marcha |\n| corrida, tropeço | 5 a 8 |\n\n### Por que tão alto\n- O braço de alavanca do peso é cerca de 2,5 vezes o dos abdutores.\n- A força abdutora é, portanto, bem maior que o peso.\n\n> **Na prova:** carga de referência na cabeça femoral = ==3 vezes o peso==.",
+  "correta": "**Cerca de 3 vezes.**\n- Soma vetorial do peso com a força dos abdutores no apoio em um membro.",
   "incorretas": {
-   "A": "Uma vez o peso corporal ignora a contribuição da musculatura abdutora, que é a maior parte da conta.",
-   "B": "Duas vezes fica abaixo do valor de referência.",
-   "D": "Quatro vezes já corresponde à marcha com aceleração, e não à postura ereta."
+   "A": "**Ignora os abdutores.**\n- Uma vez o peso desconsidera a força muscular, que é a maior parte da conta.",
+   "B": "**Abaixo do valor de referência.**\n- Duas vezes subestima a resultante.",
+   "D": "**Valor da marcha.**\n- Quatro vezes corresponde à marcha, com aceleração, não à postura."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0110": {
-  "conceito": "O teste de Thomas avalia contratura em flexão do quadril. Ao flexionar o quadril contralateral para retificar a lordose lombar, a elevação da coxa testada indica encurtamento do iliopsoas; extensão do joelho pode acrescentar informação sobre o reto femoral.",
-  "correta": "D, É o teste de Thomas, usado para avaliar contratura do iliopsoas/flexores do quadril.",
+  "conceito": "### Teste de Thomas\n- Paciente em decúbito dorsal; flexão **máxima** do quadril contralateral até retificar a lordose lombar.\n- Positivo: a coxa testada **sai da mesa** = contratura em flexão do quadril (==iliopsoas==).\n- O ângulo entre coxa e mesa quantifica a contratura.\n\n### Variação (Thomas modificado)\n- Paciente na borda da mesa, com a perna pendente.\n- Se o joelho **estende** ao se fletir o quadril contralateral: participação do **reto femoral**.\n- Se a coxa **abduz**: participação do tensor da fáscia lata.\n\n### Testes de retração muscular\n| Teste | Posição | Músculo |\n|---|---|---|\n| ==Thomas== | supino, flexão contralateral | ==iliopsoas== |\n| Ely | prono, flexão do joelho | reto femoral (a pelve se eleva) |\n| Ober | decúbito lateral, adução | banda iliotibial |\n| ângulo poplíteo | supino, quadril a 90° | isquiotibiais |\n\n> **Na prova:** coxa sai da mesa com o outro quadril fletido = ==Thomas, iliopsoas==.",
+  "correta": "**Thomas para o iliopsoas.**\n- A flexão do quadril contralateral anula a lordose e revela a contratura em flexão do lado testado.",
   "incorretas": {
-   "A": "O teste de Ely é feito em pronação com flexão do joelho e avalia principalmente reto femoral.",
-   "B": "Embora nomeie Ely, atribui a ele a avaliação principal errada.",
-   "C": "Thomas pode sugerir participação do reto femoral em variações, mas o teste mostrado e o objetivo principal são contratura em flexão pelo iliopsoas."
+   "A": "**Outro teste.**\n- O Ely é feito em decúbito ventral e avalia o reto femoral.",
+   "B": "**Nome e músculo trocados.**\n- Ely não avalia o iliopsoas; avalia o reto femoral.",
+   "C": "**Músculo secundário.**\n- A variação do Thomas pode sugerir reto femoral, mas o objetivo principal é o iliopsoas."
   },
   "referencias": [
    "Magee DJ. Orthopedic Physical Assessment. Hip examination.",
    "Hoppenfeld S. Physical Examination of the Spine and Extremities."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0111": {
-  "conceito": "A manobra mostrada coloca o quadril em flexão, adução e rotação interna, tensionando o piriforme e podendo reproduzir dor glútea ou sintomas ciáticos. É uma manobra usada na investigação da síndrome do piriforme, sempre em conjunto com o restante do exame.",
-  "correta": "C, O teste avalia contratura ou irritação relacionada ao músculo piriforme.",
+  "conceito": "### Síndrome do piriforme\n- Compressão do **nervo ciático** pelo piriforme na incisura isquiática maior.\n- Dor glútea profunda, irradiação posterior, piora sentado.\n- Faz parte da **síndrome glútea profunda**.\n\n### Manobras que tensionam o piriforme\n| Teste | Posição |\n|---|---|\n| ==FAIR== | flexão, adução e rotação interna em decúbito lateral |\n| Freiberg | rotação interna forçada do quadril em extensão |\n| Pace | abdução e rotação externa contra resistência (sentado) |\n| Beatty | elevação do joelho em decúbito lateral |\n\n### Diferencial com testes parecidos\n| Teste | Posição | Avalia |\n|---|---|---|\n| FADIR | supino, flexão 90°, adução, RI | impacto anterior |\n| impacto posterior | extensão + rotação externa | impacto posterior |\n| Ober | decúbito lateral, adução do membro | banda iliotibial |\n\n> **Na prova:** a manobra da imagem é dirigida ao ==piriforme==.",
+  "correta": "**Tensiona o piriforme.**\n- A flexão com adução e rotação interna estira o piriforme sobre o ciático.\n- A reprodução da dor glútea sugere síndrome do piriforme.",
   "incorretas": {
-   "A": "Impacto posterior é provocado principalmente em extensão e rotação externa.",
-   "B": "Impacto anterior é mais associado ao teste FADIR, mas a posição e o objetivo específicos da figura são dirigidos ao piriforme.",
-   "D": "Contratura do trato iliotibial é avaliada classicamente pelo teste de Ober."
+   "A": "**Posição oposta.**\n- O impacto posterior é provocado em extensão com rotação externa.",
+   "B": "**Posição parecida, objetivo diferente.**\n- O FADIR em supino testa impacto anterior; a manobra da figura mira o piriforme.",
+   "D": "**Teste de Ober.**\n- A banda iliotibial é avaliada com o membro em adução, em decúbito lateral."
   },
   "referencias": [
    "Magee DJ. Orthopedic Physical Assessment. Hip special tests.",
    "Hopayian K et al. The clinical features of the piriformis syndrome: a systematic review. Eur Spine J. 2010."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "moderado",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0112": {
-  "conceito": "A elevação do membro estendido tem duas leituras. A primária é neurológica: o teste de Lasègue estira as raízes lombossacras e reproduz a dor irradiada da hérnia de disco. A secundária é articular: ao levantar o membro estendido, o iliopsoas se contrai e comprime a articulação do quadril, de modo que dor na virilha durante a manobra (sobretudo contra resistência, que é o teste de Stinchfield) sugere doença intra-articular do quadril. É por isso que a mesma manobra serve para separar dor lombar irradiada de dor de origem no próprio quadril.",
-  "correta": "Avaliar patologias intra-articulares do quadril: com o membro estendido elevado, o iliopsoas comprime a articulação e a dor na virilha aponta para dentro dela.",
+  "conceito": "### Straight leg raise (elevação do membro estendido)\n| Finalidade | Mecanismo | Achado |\n|---|---|---|\n| primária: neurológica (Lasègue) | estira as raízes L5 e S1 | dor irradiada abaixo do joelho entre 30 e 70° |\n| ==secundária: articular== | o ==iliopsoas comprime a articulação== do quadril | ==dor na virilha== |\n\n### Stinchfield\n- Elevação do membro estendido **contra resistência** a cerca de 30°.\n- Dor na virilha sugere patologia **intra-articular** (artrose, lesão labial, soltura do implante).\n\n### Separando quadril de coluna\n- Dor inguinal com rotação interna e com Stinchfield: quadril.\n- Dor irradiada com Lasègue e Bragard: raiz nervosa.\n- Infiltração intra-articular diagnóstica resolve a dúvida.\n\n> **Na prova:** finalidade secundária do SLR = ==patologia intra-articular do quadril==.",
+  "correta": "**Compressão articular pelo iliopsoas.**\n- Ao elevar o membro estendido, o iliopsoas comprime o quadril.\n- Dor na virilha sugere doença intra-articular (ideia do teste de Stinchfield).",
   "incorretas": {
-   "A": "O glúteo médio se avalia por abdução contra resistência e pela marcha de Trendelenburg.",
-   "B": "O arco de movimento se mede articulação por articulação, e não por essa manobra.",
-   "C": "Testar compressão do nervo isquiático é a finalidade PRIMÁRIA do teste, e a questão pede a secundária."
+   "A": "**Outro teste.**\n- O glúteo médio é avaliado por abdução resistida e pela marcha de Trendelenburg.",
+   "B": "**Não é medida de arco.**\n- O arco de movimento é medido plano a plano, com goniômetro.",
+   "C": "**Finalidade primária.**\n- Testar a compressão radicular do ciático é o objetivo principal (Lasègue); a questão pede a secundária."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0113": {
-  "conceito": "O ângulo beta é uma medida relacionada à cobertura acetabular e ao impacto femoroacetabular; valores reduzidos indicam menor espaço angular disponível e podem sugerir conflito. Pelo critério adotado no item, valor abaixo de 30 graus define alteração.",
-  "correta": "A, O gabarito identifica o ângulo beta e considera impacto quando menor que 30°.",
+  "conceito": "### Ângulo alfa × ângulo beta\n| Medida | O que mede | Alterado quando |\n|---|---|---|\n| alfa (Nötzli) | asfericidade da transição cabeça-colo (giba do came) | ==maior== que 50 a 55° |\n| ==beta (Wyss)== | espaço angular entre a transição cabeça-colo e a **borda acetabular**, com o quadril fletido | ==menor que 30°== (pouco espaço = conflito) |\n\n### Ângulo beta\n- Radiografia com o quadril em **flexão de 90°** (axial tipo Lauenstein ou Dunn).\n- Vértice no centro da cabeça: uma linha até o ponto em que a cabeça perde a esfericidade e outra até a borda do acetábulo.\n- Integra os dois lados do conflito: **came** (fêmur) e **pincer** (acetábulo).\n- Quanto **menor**, menos espaço antes do impacto.\n\n### Regra de raciocínio\n- Alfa: **maior** = pior (mais giba).\n- Beta: **menor** = pior (menos folga).\n\n> **Na prova:** ==ângulo beta < 30°== sugere impacto; ângulo alfa > 50 a 55° indica came.",
+  "correta": "**Beta menor que 30°.**\n- O gabarito identifica o ângulo beta, que mede a folga entre colo e borda acetabular em flexão.\n- Valor reduzido indica pouco espaço e sugere impacto.",
   "incorretas": {
-   "B": "O sentido do ponto de corte está invertido em relação ao critério cobrado.",
-   "C": "O ângulo alfa avalia a asfericidade cabeça-colo e valores elevados, não reduzidos, sugerem deformidade cam.",
-   "D": "Embora o alfa elevado se relacione ao impacto tipo cam, a figura referida pelo item foi classificada como medida do beta."
+   "B": "**Sentido invertido.**\n- No ângulo beta, valor **menor** é que sugere conflito.",
+   "C": "**Alfa com sentido errado.**\n- No alfa, o que indica came é o valor elevado, não o reduzido.",
+   "D": "**Medida diferente da figura.**\n- Alfa acima de 50° indica came, mas o gabarito classifica a medida da imagem como ângulo beta."
   },
   "alerta": "A figura mencionada não está disponível no acervo. Além disso, os pontos de corte variam com a técnica e a incidência radiográfica; a identificação precisa deve ser conferida na fonte original.",
   "referencias": [
    "Nötzli HP et al. The contour of the femoral head-neck junction as a predictor for the risk of anterior impingement. J Bone Joint Surg Br. 2002.",
    "Tannast M et al. Hip damage occurs at the zone of femoroacetabular impingement. Clin Orthop Relat Res."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "baixo",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0114": {
-  "conceito": "O osso só se mantém onde é solicitado. Uma haste de módulo de elasticidade alto é muito mais rígida que o fêmur, assume a carga e deixa o osso proximal descarregado, é o desvio de carga, que leva à reabsorção do calcar. Uma haste de módulo baixo deforma junto com o osso, devolve a solicitação a ele e favorece a manutenção e a formação óssea. É por isso que o titânio (módulo em torno de 110 GPa) é preferido ao cromo-cobalto (cerca de 210 GPa) em hastes não cimentadas, e é por isso que se pesquisam ligas de módulo ainda menor.",
-  "correta": "Módulo de elasticidade baixo, com formação óssea como efeito desejado.",
+  "conceito": "### Módulo de elasticidade e remodelação\n- **Lei de Wolff:** o osso se mantém onde é solicitado.\n- Haste **rígida** (módulo alto) assume a carga e descarrega o fêmur proximal: ==stress shielding==, com reabsorção do calcar.\n- Haste de ==módulo baixo== deforma junto com o osso e devolve a carga: favorece ==manutenção e formação óssea==.\n\n### Módulos aproximados (GPa)\n| Material | Módulo |\n|---|---|\n| cerâmica (alumina, zircônia) | 350 a 380 |\n| cromo-cobalto | cerca de 210 |\n| aço inoxidável | cerca de 200 |\n| **titânio** | cerca de 110 |\n| osso cortical | 15 a 20 |\n| cimento (PMMA) | 2 a 3 |\n| polietileno | cerca de 1 |\n| osso esponjoso | cerca de 1 |\n\n### Na prática\n- **Titânio** é preferido em hastes não cimentadas: mais próximo do osso e ótima biocompatibilidade para osteointegração.\n- Cromo-cobalto é usado em hastes cimentadas e cabeças.\n\n> **Na prova:** objetivo = ==módulo baixo para estimular formação óssea==; stress shielding é o efeito indesejado.",
+  "correta": "**Módulo baixo, formação óssea.**\n- Material mais próximo do osso compartilha a carga com ele.\n- Isso mantém o estímulo mecânico e favorece a formação óssea.",
   "incorretas": {
-   "A": "O material está certo, mas o desvio de carga (stress shielding) é justamente o efeito INDESEJADO que se quer evitar.",
-   "C": "Erra as duas coisas: módulo alto produz desvio de carga, que é o problema, e não o objetivo.",
-   "D": "Módulo alto não favorece formação óssea, ele descarrega o osso e leva à reabsorção."
+   "A": "**Efeito errado.**\n- O material está certo, mas o stress shielding é o que se quer evitar.",
+   "C": "**Erra os dois.**\n- Módulo alto causa stress shielding, que é o problema, não o objetivo.",
+   "D": "**Não favorece formação.**\n- Módulo alto descarrega o osso e leva à reabsorção."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0115": {
-  "conceito": "O sinal do crescente é uma linha radiolucente subcondral causada por fratura do osso necrótico, indicando progressão da osteonecrose antes do colapso franco. Na classificação de Ficat e Arlet, corresponde ao estágio IIB.",
-  "correta": "B, A radiografia mostra sinal do crescente, compatível com Ficat e Arlet IIB.",
+  "conceito": "### Sinal do crescente\n- Linha **radiolucente subcondral** em forma de meia-lua na cabeça femoral.\n- Representa ==fratura subcondral== do osso necrótico, antes do achatamento franco.\n- Melhor visto no **perfil** (rã), por estar na região anterossuperior.\n\n### Ficat e Arlet\n| Estágio | Radiografia | RM |\n|---|---|---|\n| I | normal | alterada |\n| IIA | esclerose e cistos, cabeça esférica | alterada |\n| ==IIB (transição)== | ==sinal do crescente==, sem achatamento | alterada |\n| III | colapso, perda da esfericidade | |\n| IV | artrose, redução do espaço, acetábulo acometido | |\n\n### Steinberg e ARCO\n- No ARCO, o sinal do crescente marca o início do estágio **3** (fratura subcondral).\n\n### Implicação\n- A fratura subcondral indica que o colapso é **iminente**; os resultados das técnicas preservadoras pioram a partir daqui.\n\n> **Na prova:** meia-lua subcondral = ==sinal do crescente, Ficat IIB==.",
+  "correta": "**Crescente = fratura subcondral.**\n- A linha radiolucente em meia-lua, sem achatamento da cabeça, corresponde ao Ficat e Arlet IIB.",
   "incorretas": {
-   "A": "Sinal do fantasma não é a denominação da linha subcondral mostrada.",
-   "C": "Mantém o estágio, mas nomeia incorretamente o sinal.",
-   "D": "No estágio III já existe colapso e perda de esfericidade da cabeça femoral."
+   "A": "**Sinal e estágio errados.**\n- \"Sinal do fantasma\" não descreve a linha subcondral, e o III já tem colapso.",
+   "C": "**Nome errado.**\n- O estágio está certo, mas o sinal é o do crescente.",
+   "D": "**Estágio adiante.**\n- O sinal está certo, mas no III já há colapso e perda de esfericidade."
   },
   "referencias": [
    "Ficat RP. Idiopathic bone necrosis of the femoral head. J Bone Joint Surg Br. 1985.",
    "ARCO Committee. Revised classification of osteonecrosis of the femoral head."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0116": {
-  "alerta": "Esta questão tem duas alternativas idênticas: a C e a D dizem exatamente a mesma coisa (radioluscência entre o terço inferomedial da haste e o manto de cimento). Vale registrar também que essa radioluscência inferomedial é, ela própria, um sinal descrito de descolamento, o padrão clássico do afrouxamento cimentado é justamente o par superolateral mais inferomedial, produzido pela haste que pivota dentro do cimento. A alternativa marcada como certa é apenas metade desse par.",
-  "conceito": "O afrouxamento da haste cimentada aparece na radiografia por três achados: linha radiotransparente progressiva nas interfaces (haste-cimento ou cimento-osso), migração do implante (afundamento e báscula em VARO) e fratura do manto de cimento. Como a haste pivota tendo o terço médio como apoio, o descolamento se manifesta primeiro no alto e do lado de fora e embaixo e do lado de dentro. O que caracteriza soltura não é a existência de uma linha isolada, e sim a progressão dela entre radiografias sucessivas.",
-  "correta": "Radioluscência entre o terço superolateral da haste e o manto de cimento adjacente, a metade proximal do padrão de descolamento.",
+  "conceito": "### Soltura da haste cimentada\n- Achados radiográficos:\n  1. **linha radiolucente progressiva** nas interfaces haste-cimento ou cimento-osso;\n  2. **migração**: afundamento e báscula em **varo**;\n  3. **fratura do manto** de cimento;\n  4. fratura ou deformação da haste.\n\n### Mecanismos de falha (Gruen)\n| Modo | Nome | Padrão |\n|---|---|---|\n| Ia | pistão (haste no cimento) | afundamento dentro do manto |\n| Ib | pistão (cimento no osso) | haste e cimento afundam juntos |\n| II | pivô medial no meio | radiolucência ==superolateral== e inferomedial |\n| III | pivô no calcar | radiolucência distal |\n| IV | flexão em balanço | fratura da haste |\n\n### Zonas de Gruen\n- Sete zonas femorais: **1** superolateral (trocânter) até **7** calcar (superomedial); 4 é a ponta.\n\n### Harris (classificação da soltura)\n- **Definitiva:** migração ou fratura do cimento.\n- **Provável:** linha radiolucente contínua em 100% da interface.\n- **Possível:** linha em 50 a 99% da interface.\n\n> **Na prova:** o gabarito aceita a radiolucência ==superolateral== entre haste e cimento; a haste solta bascula para ==varo==.",
+  "correta": "**Descolamento proximal lateral.**\n- A radiolucência superolateral entre haste e cimento indica que a haste está se soltando.\n- É a metade proximal do padrão em pivô, que também tem o componente inferomedial.",
   "incorretas": {
-   "B": "Está invertido: a haste solta bascula para VARO, e não para valgo, o topo migra medialmente e a ponta encosta na cortical lateral.",
-   "C": "Descreve a outra metade do mesmo padrão de descolamento e é idêntica à alternativa D, veja o aviso acima.",
-   "D": "Idêntica à alternativa C."
+   "B": "**Sentido invertido.**\n- A haste solta bascula para varo: o topo desloca-se medialmente e a ponta encosta na cortical lateral.",
+   "C": "**Metade distal do mesmo padrão.**\n- A radiolucência inferomedial também é descrita no descolamento.\n- É idêntica à alternativa D (veja o alerta).",
+   "D": "**Idêntica à C.**\n- As duas alternativas trazem o mesmo texto (veja o alerta)."
   },
-  "geradoEm": "2026-09-06",
+  "alerta": "Esta questão tem duas alternativas idênticas: a C e a D dizem exatamente a mesma coisa (radioluscência entre o terço inferomedial da haste e o manto de cimento). Vale registrar também que essa radioluscência inferomedial é, ela própria, um sinal descrito de descolamento, o padrão clássico do afrouxamento cimentado é justamente o par superolateral mais inferomedial, produzido pela haste que pivota dentro do cimento. A alternativa marcada como certa é apenas metade desse par.",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0117": {
-  "conceito": "A técnica de Coventry utiliza fios metálicos configurados ao redor do trocânter maior para estabilizar a osteotomia e resistir às forças de tração dos abdutores. A disposição mostrada diferencia essa montagem de outras técnicas de cerclagem trocantérica.",
-  "correta": "C, A figura corresponde à técnica de Coventry.",
+  "conceito": "### Osteotomia do trocânter maior\n- Usada em artroplastias difíceis (revisão, displasia, anquilose) e na luxação cirúrgica.\n- Tipos: **clássica** (Charnley), **deslizante** (trocanteric slide), **estendida**, **digástrica** (Ganz).\n\n### Fixação\n- O trocânter é tracionado pelos abdutores **para cima e para fora**; a montagem precisa resistir a essas forças.\n- Opções: fios de cerclagem em várias configurações, cabos, placas-gancho (garras).\n\n### Montagens com nome\n| Técnica | Ideia geral |\n|---|---|\n| ==Coventry== | fios em configuração cruzada ao redor do trocânter e através do fêmur |\n| Harris | dois fios verticais e dois horizontais |\n| Charnley | fios cruzados e horizontal |\n| Dall-Miles | cabos com garra |\n\n### Complicações\n- **Pseudartrose** trocantérica (mais comum em revisões e na osteotomia clássica), migração, bursite por material, fratura do fio.\n\n> **Na prova:** a montagem da figura corresponde a ==Coventry== (veja o alerta sobre nomenclatura).",
+  "correta": "**Montagem de Coventry.**\n- A disposição dos fios na figura corresponde à técnica descrita por Coventry.\n- É pensada para neutralizar a tração dos abdutores.",
   "incorretas": {
-   "A": "A técnica de Amstutz utiliza outra configuração de fixação trocantérica.",
-   "B": "Smith não corresponde ao padrão de fios mostrado.",
-   "D": "Markolf está associado a análises biomecânicas e montagens distintas da configuração ilustrada."
+   "A": "**Configuração diferente.**\n- Amstutz descreveu outra montagem de fixação trocantérica.",
+   "B": "**Não corresponde ao desenho.**\n- Smith não é o padrão de fios mostrado.",
+   "D": "**Estudo biomecânico.**\n- Markolf está ligado a análises comparando montagens, não a esta configuração."
   },
   "alerta": "A nomenclatura dessas montagens pode variar entre fontes históricas; a identificação segue o desenho e o gabarito do banco.",
   "referencias": [
    "Coventry MB. Technique of fixation of the greater trochanter in total hip arthroplasty.",
    "Campbell's Operative Orthopaedics. Trochanteric osteotomy and fixation."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "moderado",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0118": {
-  "conceito": "Todo procedimento que preserva a cabeça femoral (descompressão do núcleo, enxerto vascularizado, osteotomia) depende de sobrar osso viável suficiente para sustentar a superfície de carga. A extensão da necrose é, por isso, o melhor preditor de resultado, medida pelo percentual da cabeça acometida ou pelo ângulo necrótico combinado nos dois planos da ressonância. Acima de cerca de 30% da cabeça (ou de 200 graus de ângulo necrótico combinado), o índice de sucesso cai de forma marcada, e a discussão passa a ser sobre artroplastia.",
-  "correta": "A partir de cerca de 30% de acometimento da cabeça o sucesso dos procedimentos de preservação cai.",
+  "conceito": "### Extensão da necrose: o melhor preditor\n- Procedimentos de preservação dependem de sobrar **osso viável** para sustentar a superfície de carga.\n- Formas de medir:\n  - ==percentual da cabeça acometida== (Steinberg: A < 15%, B 15 a 30%, C > 30%);\n  - **ângulo necrótico combinado** (Kerboul modificado): soma dos arcos no coronal e no sagital da RM;\n  - **localização** (JIC: tipos A a C conforme a zona de carga).\n\n### Pontos de corte práticos\n| Medida | Bom prognóstico | Mau prognóstico |\n|---|---|---|\n| percentual da cabeça | abaixo de 15 a 20% | ==acima de 30%== |\n| ângulo combinado | abaixo de 190° | acima de 240° |\n| localização | medial | lateral, na zona de carga |\n\n### Opções de preservação\n- Descompressão do núcleo (com ou sem células ou enxerto).\n- Enxerto de fíbula vascularizada.\n- Osteotomias rotacionais (Sugioka) ou de varo.\n\n> **Na prova:** acima de ==30%== de acometimento, a preservação da cabeça funciona pior.",
+  "correta": "**Cerca de 30%.**\n- Acima dessa extensão sobra pouco osso viável na zona de carga.\n- O sucesso dos procedimentos de preservação cai de forma marcada.",
   "incorretas": {
-   "A": "10% é lesão pequena, de bom prognóstico com preservação.",
-   "B": "20% ainda está na faixa em que os procedimentos de preservação vão bem.",
-   "D": "40% já é lesão extensa, bem além do ponto em que os resultados pioram."
+   "A": "**Lesão pequena.**\n- Com 10%, os procedimentos de preservação têm bom resultado.",
+   "B": "**Ainda favorável.**\n- 20% está na faixa em que a preservação ainda funciona.",
+   "D": "**Além do ponto de corte.**\n- Com 40%, os resultados já pioraram bastante."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0119": {
-  "conceito": "Após artrodese do quadril, a transferência crônica de movimento e carga para a coluna lombar, joelho ipsilateral e quadril contralateral pode produzir degeneração sintomática tardia. A janela clássica descrita é de aproximadamente 15 a 25 anos.",
-  "correta": "B, As alterações degenerativas adjacentes costumam tornar-se sintomáticas após 15–25 anos.",
+  "conceito": "### Consequências tardias da artrodese do quadril\n- Transferência crônica de movimento e carga para as articulações vizinhas.\n- Sintomas degenerativos em ==15 a 25 anos==, em média.\n\n### Articulações acometidas (frequência aproximada)\n| Região | Queixa |\n|---|---|\n| coluna lombar | lombalgia (a mais comum, cerca de 60%) |\n| joelho ipsilateral | dor e instabilidade (cerca de 45%) |\n| quadril contralateral | dor (cerca de 25%) |\n\n### Fatores que aceleram\n- Posição inadequada da fusão, sobretudo em **abdução** (obliquidade pélvica).\n- Flexão excessiva ou insuficiente.\n- Idade avançada na artrodese; atividade intensa.\n\n### Conversão para artroplastia\n- Indicação principal: **lombalgia ou dor no joelho**.\n- Resultado inferior ao de uma ATQ primária: abdutores atróficos, mais luxação e infecção.\n\n> **Na prova:** sintomas nas vizinhas após artrodese = ==15 a 25 anos==.",
+  "correta": "**Janela clássica.**\n- A degeneração da coluna, do joelho e do outro quadril costuma ficar sintomática entre 15 e 25 anos após a fusão.",
   "incorretas": {
-   "A": "Cinco a dez anos é geralmente curto para a evolução tardia clássica descrita.",
-   "C": "Dez a vinte anos se sobrepõe parcialmente, mas não corresponde ao intervalo cobrado no gabarito.",
-   "D": "Vinte e cinco a trinta anos é mais tardio que a faixa usual indicada."
+   "A": "**Curto demais.**\n- Cinco a dez anos é cedo para a degeneração clássica das vizinhas.",
+   "C": "**Sobrepõe, mas não é a faixa cobrada.**\n- Dez a vinte anos antecipa o intervalo classicamente descrito.",
+   "D": "**Tardio demais.**\n- Vinte e cinco a trinta anos passa da faixa usual."
   },
   "alerta": "O tempo é uma média histórica e varia com idade na artrodese, posição da fusão, atividade e estado das articulações adjacentes.",
   "referencias": [
    "Callaghan JJ et al. Hip arthrodesis: a long-term follow-up. J Bone Joint Surg Am.",
    "Campbell's Operative Orthopaedics. Hip arthrodesis."
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "moderado",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0120": {
-  "conceito": "A pelve de Otto (artrocatadise) é a protrusão acetabular primária, idiopática, e o perfil dela é bem definido: mulheres, com acometimento bilateral, dor presente e evolução para artrose precoce, costuma se manifestar na adolescência ou no adulto jovem, e não no idoso. A cabeça afunda para dentro da pelve, o contato se concentra no fundo do acetábulo e a rotação e a abdução se perdem cedo. Protrusão de um lado só, ou em paciente com doença conhecida, aponta para a forma secundária: artrite reumatoide, Paget, osteomalácia, sequela de trauma ou infecção.",
-  "correta": "Mais comum em mulheres.",
+  "conceito": "### Protrusão acetabular\n- Cabeça femoral e fundo do acetábulo **medializados**, ultrapassando a linha ilioisquiática.\n- Critério: fundo acetabular medial à linha ilioisquiática em mais de **3 mm (homens)** ou **6 mm (mulheres)**; ângulo centro-borda acima de 40°.\n\n### Pelve de Otto (artrocatadise): forma primária\n| Característica | Perfil |\n|---|---|\n| sexo | ==feminino== |\n| lateralidade | **bilateral** |\n| início | adolescência ou adulto jovem |\n| dor | presente |\n| evolução | artrose precoce, perda de rotação e abdução |\n\n### Formas secundárias\n- **Artrite reumatoide** (causa mais comum), espondilite anquilosante.\n- Paget, osteomalácia, osteogênese imperfeita, Marfan.\n- Sequela de trauma ou infecção; soltura do componente acetabular.\n\n### Na artroplastia\n- Restaurar o centro de rotação com **enxerto no fundo** e componente lateralizado.\n\n> **Na prova:** pelve de Otto = ==mulher, bilateral, jovem, com dor==.",
+  "correta": "**Predomínio feminino.**\n- A protrusão acetabular primária é bem mais frequente em mulheres, geralmente bilateral.",
   "incorretas": {
-   "A": "A forma primária é bilateral; a unilateralidade sugere causa secundária.",
-   "B": "Os sintomas costumam começar no adolescente ou no adulto jovem, e não na velhice.",
-   "C": "A dor é característica e é o que traz a paciente ao consultório, junto com a limitação de rotação e abdução."
+   "A": "**É bilateral.**\n- A forma primária costuma ser bilateral; a unilateral sugere causa secundária.",
+   "B": "**Começa cedo.**\n- Os sintomas aparecem na adolescência ou no adulto jovem.",
+   "C": "**Há dor.**\n- A dor, com limitação de rotação e abdução, é o que leva à consulta."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0121": {
-  "conceito": "A artroplastia de superfície (resurfacing) mantém o colo femoral e usa uma cabeça do tamanho da original, portanto muito maior que a de uma artroplastia convencional. Cabeça grande significa jump distance grande (a distância que a cabeça precisa percorrer até a borda do componente é o raio dela) e melhor relação cabeça-colo, o que retarda o impacto do colo na borda. O resultado é que a luxação, que na artroplastia total gira em torno de 2 a 3%, cai para menos de 1% no resurfacing. Os problemas dele são outros: fratura do colo, íons metálicos e reação adversa a partículas metálicas.",
-  "correta": "Cerca de 0,3%: taxa muito baixa, consequência direta do diâmetro da cabeça preservado.",
+  "conceito": "### Resurfacing do quadril\n- Preserva o **colo femoral** e reveste a cabeça com uma capa metálica, articulando com componente acetabular metálico (metal-metal).\n- A cabeça tem o **diâmetro anatômico**, muito maior que a de uma ATQ convencional.\n\n### Por que luxa pouco\n- ==Jump distance== maior: a cabeça precisa subir mais até escapar (proporcional ao raio).\n- Melhor **relação cabeça-colo**: o colo demora a impactar na borda.\n- Luxação: ==menos de 1% (cerca de 0,3%)==, contra cerca de 2 a 3% na ATQ primária.\n\n### Problemas próprios\n| Complicação | Comentário |\n|---|---|\n| **fratura do colo** | a mais típica, geralmente no primeiro ano; notch no colo aumenta o risco |\n| íons metálicos | cobalto e cromo elevados no sangue |\n| ALVAL / pseudotumor | reação adversa a partículas metálicas |\n| necrose da cabeça | pela lesão vascular do acesso |\n\n### Candidato ideal\n- **Homem jovem**, ativo, cabeça grande, boa qualidade óssea.\n- Evitar em mulheres, cabeça pequena, cistos grandes, osteoporose e insuficiência renal.\n\n> **Na prova:** luxação após resurfacing = ==cerca de 0,3%==.",
+  "correta": "**Taxa muito baixa.**\n- A cabeça de diâmetro anatômico aumenta a jump distance e a relação cabeça-colo.\n- A luxação fica bem abaixo de 1%.",
   "incorretas": {
-   "B": "3% é a ordem de grandeza da artroplastia total convencional, justamente o que o resurfacing melhora.",
-   "C": "7% seria uma taxa alta até para artroplastia de revisão.",
-   "D": "15% é taxa de cenário de instabilidade recorrente, incompatível com o desenho do resurfacing."
+   "B": "**Taxa da ATQ convencional.**\n- Cerca de 2 a 3% é a ordem de grandeza da artroplastia total primária.",
+   "C": "**Alta demais.**\n- Seria uma taxa elevada até para revisão.",
+   "D": "**Incompatível com o desenho.**\n- 15% é cenário de instabilidade recorrente."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0122": {
-  "conceito": "As duas incidências oblíquas de Judet se obtêm girando o paciente 45 graus e cada uma mostra uma coluna e uma parede. O oblíquo ILÍACO (girando o lado lesado para cima, com o ilíaco de frente para o filme) abre a asa do ilíaco e mostra a borda posterior do osso inominado (ou seja, a coluna posterior) e a parede anterior do acetábulo. O oblíquo OBTURADOR (girando o lado lesado para baixo, abrindo o forame obturador) mostra a coluna anterior e a parede posterior. Guardar esse cruzamento é o que evita errar as duas.",
-  "correta": "Borda posterior do osso inominado, isto é, a coluna posterior.",
+  "conceito": "### Incidências oblíquas de Judet (45°)\n| Incidência | Posição | Mostra |\n|---|---|---|\n| ==oblíqua ilíaca== (alar) | lado lesado **para baixo**, asa ilíaca paralela ao filme | ==coluna posterior== (borda posterior do inominado, incisura isquiática) e **parede anterior** |\n| oblíqua obturadora | lado lesado **para cima**, forame obturador aberto | **coluna anterior** e **parede posterior** |\n\n### Regra do cruzamento\n- Cada oblíqua mostra **uma coluna e a parede oposta**.\n- Ilíaca: coluna **posterior** + parede **anterior**.\n- Obturadora: coluna **anterior** + parede **posterior**.\n\n### AP da bacia: seis linhas\n- Iliopectínea, ilioisquiática, lágrima, teto, parede anterior e parede posterior.\n\n### Hoje\n- A TC com reconstrução 3D complementa, mas as oblíquas continuam essenciais no planejamento e no intraoperatório.\n\n> **Na prova:** oblíqua ilíaca = ==borda posterior do osso inominado== (coluna posterior) e parede anterior.",
+  "correta": "**Coluna posterior.**\n- A oblíqua ilíaca abre a asa do ilíaco e mostra de perfil a borda posterior do inominado e a incisura isquiática maior.",
   "incorretas": {
-   "A": "O teto acetabular se avalia no AP e nas oblíquas em conjunto, e não é o que caracteriza a incidência ilíaca.",
-   "B": "A borda posterior do acetábulo (parede posterior) é o que o oblíquo OBTURADOR mostra.",
-   "C": "A lágrima é referência do AP da bacia."
+   "A": "**Não é característico.**\n- O teto é avaliado no AP e nas duas oblíquas, sem ser a marca da incidência ilíaca.",
+   "B": "**Incidência oposta.**\n- A borda (parede) posterior do acetábulo é vista na oblíqua obturadora.",
+   "C": "**Referência do AP.**\n- A lágrima é avaliada no AP da bacia."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0123": {
-  "conceito": "O intervalo entre o sartório e o tensor da fáscia lata é o mesmo de Smith-Petersen, mas o que distingue as duas descrições é a extensão. Smith-Petersen começa na crista ilíaca, contorna a espinha ilíaca anterossuperior e permite expor a asa do ilíaco, é o acesso das osteotomias pélvicas e da redução aberta da displasia. A descrição do enunciado, com incisão de 12 a 15 cm limitada à região do quadril, é a versão distal e restrita desse intervalo, conhecida como acesso de Hueter, que é o direto anterior usado hoje em artroplastia.",
-  "correta": "Hueter, o acesso direto anterior: mesmo intervalo internervoso, incisão limitada à coxa proximal, sem extensão para a crista ilíaca.",
+  "conceito": "### Acessos anteriores do quadril\n| Acesso | Intervalo | Extensão |\n|---|---|---|\n| ==Hueter (anterior direto)== | sartório × tensor da fáscia lata; reto femoral × glúteo médio | ==incisão distal à EIAS, 8 a 15 cm, só na coxa proximal== |\n| Smith-Petersen | mesmo intervalo | começa na **crista ilíaca**, contorna a EIAS e expõe a asa do ilíaco |\n| Watson-Jones | tensor da fáscia lata × glúteo médio | anterolateral |\n| Hardinge | divide glúteo médio e vasto lateral | lateral direto |\n\n### Hueter\n- É a base da **artroplastia pela via anterior direta** (DAA).\n- Internervoso: femoral × glúteo superior.\n- Risco: **nervo cutâneo femoral lateral** (parestesia na coxa), ramo ascendente da circunflexa lateral.\n\n### Diferença para o Smith-Petersen\n- Smith-Petersen é a versão **estendida**, usada em osteotomias pélvicas, redução aberta da displasia e acetábulo anterior.\n\n> **Na prova:** intervalo sartório-tensor com incisão limitada ao quadril = ==Hueter==.",
+  "correta": "**Anterior direto limitado.**\n- Usa o intervalo sartório-tensor e reto-glúteo médio, com incisão restrita à coxa proximal.\n- É o acesso de Hueter, base da ATQ pela via anterior.",
   "incorretas": {
-   "B": "Smith-Petersen usa o mesmo intervalo, mas a incisão começa na crista ilíaca e permite abordar a asa do ilíaco, extensão que o enunciado não descreve.",
-   "C": "Watson-Jones é o anterolateral, entre o tensor da fáscia lata e o glúteo médio.",
-   "D": "Hardinge é o lateral direto, com divisão do glúteo médio e do vasto lateral sobre o trocanter."
+   "B": "**Mesmo intervalo, mais extenso.**\n- O Smith-Petersen começa na crista ilíaca e expõe a asa, extensão que o enunciado não descreve.",
+   "C": "**Anterolateral.**\n- O Watson-Jones passa entre o tensor da fáscia lata e o glúteo médio.",
+   "D": "**Lateral direto.**\n- O Hardinge divide o glúteo médio e o vasto lateral sobre o trocânter."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0124": {
-  "conceito": "A figura mostra o paciente sentado tentando elevar a coxa contra resistência: é o **teste de Ludloff**. Dor ou dificuldade nessa flexão ativa pode indicar comprometimento do iliopsoas ou de sua inserção no trocanter menor. O teste contribui para a hipótese, mas não confirma sozinho uma fratura-avulsão.",
-  "correta": "**A, Ludloff; iliopsoas e trocanter menor.** A contração do flexor transmite força à sua inserção, podendo reproduzir dor quando há lesão tendínea ou avulsão.",
+  "conceito": "### Sinal de Ludloff\n- Paciente **sentado**, tenta elevar a coxa (flexão do quadril) contra a gravidade ou resistência.\n- Incapacidade ou dor sugere lesão do ==iliopsoas== ou ==avulsão do trocânter menor==.\n- Sentado, o reto femoral e o sartório ficam em desvantagem; o iliopsoas é o flexor que resta.\n\n### Avulsão do trocânter menor\n| Faixa etária | Significado |\n|---|---|\n| adolescente | avulsão apofisária por contração do iliopsoas (esporte) |\n| ==adulto ou idoso sem trauma relevante== | ==suspeitar de metástase==: fratura patológica até prova em contrário |\n\n### Outras avulsões pélvicas\n| Local | Músculo |\n|---|---|\n| EIAS | sartório |\n| EIAI | reto femoral |\n| tuberosidade isquiática | isquiotibiais |\n| crista ilíaca | abdominais |\n\n### Bragard\n- Manobra neural: após o Lasègue, abaixa-se a perna até a dor sumir e faz-se **dorsiflexão** do tornozelo; a dor volta na radiculopatia.\n\n> **Na prova:** flexão sentada fraca = ==Ludloff, iliopsoas e trocânter menor==.",
+  "correta": "**Ludloff: iliopsoas.**\n- Sentado, a flexão ativa do quadril depende do iliopsoas.\n- Dor ou incapacidade sugere lesão dele ou avulsão do trocânter menor.",
   "incorretas": {
-   "B": "O reto femoral tem origem direta na espinha ilíaca anteroinferior, mas essa não é a associação anatômica cobrada pelo sinal de Ludloff.",
-   "C": "Bragard é uma manobra de tensão neural associada à elevação da perna estendida e dorsiflexão do tornozelo; não corresponde à flexão ativa sentada da figura.",
-   "D": "Além de trocar Ludloff por Bragard, atribui ao teste uma investigação de avulsão da origem do reto femoral que não corresponde ao item."
+   "B": "**Estrutura errada.**\n- O teste é Ludloff, mas a avulsão da EIAI é do reto femoral, não o objeto deste sinal.",
+   "C": "**Outro teste.**\n- Bragard é manobra de tensão neural com dorsiflexão do tornozelo.",
+   "D": "**Teste e estrutura errados.**\n- Bragard não avalia o reto femoral nem a EIAI."
   },
   "referencias": [
    "Isolated Avulsion Fracture of the Lesser Trochanter in an Adolescent: A Case Report and Review of the Literature. https://pmc.ncbi.nlm.nih.gov/articles/PMC10127991/",
    "Lesser Trochanter Apophyseal Avulsion Fracture: A Case Report and Review of the Literature. https://pmc.ncbi.nlm.nih.gov/articles/PMC11281936/",
    "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 13"
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "alto",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0126": {
-  "conceito": "Vancouver combina **localização da fratura, estabilidade da haste e estoque ósseo**. A radiografia mostra uma fratura ao redor da haste femoral, portanto do grupo B. Para classificá-la como B2, como estabelece o gabarito, é necessário que a haste esteja solta e o estoque ósseo seja adequado.",
-  "correta": "**B, Vancouver B2.** Corresponde à fratura em torno de uma haste solta, com estoque ósseo preservado.",
+  "conceito": "### Classificação de Vancouver (fraturas periprotéticas do fêmur)\n| Tipo | Local | Haste | Osso | Tratamento usual |\n|---|---|---|---|---|\n| AG / AL | trocânter maior / menor | | | conservador ou fixação |\n| B1 | ao redor ou logo abaixo da haste | **fixa** | bom | osteossíntese (placa, cabos) |\n| ==B2== | idem | ==solta== | ==bom== | ==revisão com haste longa== (± placa) |\n| B3 | idem | solta | **ruim** | revisão com enxerto, megaprótese ou APC |\n| C | bem abaixo da haste | fixa | | osteossíntese como fratura isolada |\n\n### Como saber se a haste está solta\n- Radiografias prévias com afundamento ou linhas radiolucentes.\n- Fratura em espiral ao redor da ponta, fragmento que carrega o cimento.\n- Confirmação intraoperatória: **luxar e testar a haste** (até 20% das B1 são B2).\n\n### Fatores de risco\n- Haste não cimentada, osteoporose, revisão prévia, queda.\n\n> **Na prova:** fratura ao redor de haste solta com osso bom = ==Vancouver B2==.",
+  "correta": "**Haste solta, osso adequado.**\n- A fratura envolve a região da haste; o gabarito a considera solta, com estoque ósseo preservado.\n- O tratamento é revisão com haste longa de fixação distal.",
   "incorretas": {
-   "A": "B1 tem haste bem fixada. O traço por si só não distingue B1 de B2: a estabilidade do implante é decisiva.",
-   "C": "B3 também tem haste solta, porém com estoque ósseo proximal inadequado; esse déficit não é o pressuposto do gabarito.",
-   "D": "C é uma fratura claramente distal à haste. Aqui o traço envolve a região ocupada pelo componente femoral."
+   "A": "**Haste fixa.**\n- B1 tem implante estável; seria tratada só com osteossíntese.",
+   "C": "**Osso ruim.**\n- B3 também tem haste solta, mas com estoque ósseo proximal inadequado.",
+   "D": "**Distal à haste.**\n- No tipo C, o traço fica bem abaixo da ponta do implante."
   },
   "alerta": "A imagem isolada permite reconhecer o grupo B, mas não comprova com segurança a soltura da haste. Radiografias anteriores, sinais de migração e, quando necessário, avaliação intraoperatória ajudam a diferenciar B1 de B2.",
   "referencias": [
@@ -1573,56 +1510,47 @@
    "In Brief: Classifications in Brief: Vancouver Classification of Postoperative Periprosthetic Femur Fractures. https://pmc.ncbi.nlm.nih.gov/articles/PMC3069264/",
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 58"
   ],
-  "geradoEm": "2026-09-13",
-  "conferido": false,
-  "nivelConfianca": "moderado",
-  "verificacao": {
-   "status": "aprovado",
-   "alternativasCompletas": true,
-   "gabaritoConferido": true,
-   "fontesPresentes": true,
-   "verificadoEm": "2026-09-13",
-   "observacao": "Checagem automática estrutural; não substitui revisão médica."
-  }
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0127": {
-  "conceito": "O acesso lateral direto de Hardinge divide o glúteo médio no seu terço anterior e continua pelo vasto lateral, formando um manguito contínuo de partes moles sobre o trocanter. O limite proximal dessa divisão é anatômico: o nervo glúteo superior entra no glúteo médio pela face profunda, correndo transversalmente a cerca de 3 a 5 cm acima da ponta do trocanter maior. Passar desse ponto secciona o nervo, e o resultado é insuficiência abdutora permanente com marcha de Trendelenburg, uma complicação que não tem tratamento reconstrutivo satisfatório.",
-  "correta": "Nervo glúteo superior, que cruza a face profunda do glúteo médio a 3 a 5 cm acima do trocanter.",
+  "conceito": "### Acesso lateral direto de Hardinge\n- Divide o **terço anterior do glúteo médio** e continua pelo **vasto lateral**, mantendo um manguito contínuo sobre o trocânter.\n- Rebate anteriormente glúteo médio anterior, glúteo mínimo e vasto lateral para expor a cápsula.\n\n### Zona de segurança\n- O ==nervo glúteo superior== corre entre glúteo médio e mínimo, cerca de ==3 a 5 cm acima da ponta do trocânter==.\n- Dissecção proximal além disso lesa os ramos para o glúteo médio anterior e o tensor da fáscia lata.\n\n### Consequência da lesão\n- **Insuficiência abdutora** com marcha de Trendelenburg e claudicação.\n- Sem tratamento reconstrutivo satisfatório: a prevenção é o essencial.\n\n### Nervos por acesso\n| Acesso | Nervo em risco |\n|---|---|\n| ==lateral direto (Hardinge)== | ==glúteo superior== |\n| posterior | ciático |\n| anterior direto | cutâneo femoral lateral |\n| anterolateral | glúteo superior (ramo para o tensor) |\n\n> **Na prova:** limite proximal do Hardinge = ==3 a 5 cm, glúteo superior==.",
+  "correta": "**Glúteo superior.**\n- Cruza a face profunda do glúteo médio a 3 a 5 cm acima do trocânter.\n- Sua lesão causa insuficiência abdutora permanente.",
   "incorretas": {
-   "A": "O isquiático corre posteriormente e não está no campo do acesso lateral direto.",
-   "B": "O femoral é anterior e profundo, e também não é alcançado por essa via.",
-   "C": "O glúteo inferior inerva o glúteo máximo e entra abaixo do piriforme, fora do trajeto dessa dissecção."
+   "A": "**Risco do acesso posterior.**\n- O ciático corre posteriormente, fora do campo do Hardinge.",
+   "B": "**Estrutura anterior.**\n- O femoral fica anterior e profundo; não é alcançado por essa via.",
+   "C": "**Nervo do glúteo máximo.**\n- O glúteo inferior sai abaixo do piriforme; é mais relevante no acesso posterior."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "quadril-0128": {
-  "conceito": "Dorr classificou a morfologia do fêmur proximal pela espessura das corticais e pela forma do canal, e a utilidade é escolher o tipo de fixação. O tipo A é a taça de champanhe: corticais espessas, canal estreito, osso bom, ótimo para haste não cimentada. O B é intermediário. O C é o cano de chaminé: corticais finas, canal largo, com perda óssea que ocorre preferencialmente nas corticais medial e posterior, motivo pelo qual esse fêmur não oferece encaixe confiável e costuma indicar cimentação.",
-  "correta": "Corticais medial e posterior: é onde a perda óssea do tipo C de Dorr se concentra.",
+  "conceito": "### Classificação de Dorr\n| Tipo | Forma | Corticais | Fixação |\n|---|---|---|---|\n| A | taça de champanhe | espessas, canal estreito | não cimentada |\n| B | intermediário | perda **medial e posterior** moderada | não cimentada, em geral |\n| ==C== | ==chaminé== | finas; perda **acentuada** ==medial e posterior== | preferir cimentada |\n\n### Por que medial e posterior\n- Com a idade e a osteoporose, o afinamento é mais evidente no **calcar** (medial) e na cortical **posterior**.\n- No perfil, a cortical posterior fina aparece como perda do contorno posterior.\n\n### Índice canal-calcar\n- Diâmetro do canal 10 cm abaixo do trocânter menor ÷ diâmetro no nível do trocânter menor.\n- Acima de **0,75**: Dorr C.\n\n### Implicações\n- Risco de **fratura intraoperatória** e afundamento em hastes não cimentadas.\n\n> **Na prova:** perda cortical no Dorr C = ==medial e posterior==.",
+  "correta": "**Medial e posterior.**\n- No fêmur em chaminé, o afinamento se concentra no calcar (medial) e na cortical posterior.",
   "incorretas": {
-   "A": "A cortical anterior não é a que mais perde osso nesse padrão.",
-   "C": "A perda é medial e posterior, não lateral e anterior.",
-   "D": "A cortical posterior está certa, mas a outra é a medial, e não a lateral."
+   "A": "**Anterior preservada.**\n- A cortical anterior não é a que mais perde osso.",
+   "C": "**Paredes erradas.**\n- A perda é medial e posterior, não lateral e anterior.",
+   "D": "**Metade certa.**\n- A posterior está certa, mas a outra é a medial."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 3"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0129": {
-  "conceito": "A artroplastia de baixo atrito de Charnley se apoiou em três ideias: par de baixo atrito com cabeça pequena de 22 mm, fixação com cimento e, o que interessa aqui, redesenho da alavanca do quadril. Medializar o componente acetabular encurta o braço do peso corporal; osteotomizar o grande trocanter e reinseri-lo mais lateral e distalmente alonga o braço dos abdutores. As duas manobras vão no mesmo sentido: reduzir a força que os abdutores precisam fazer e, com ela, a carga resultante sobre o implante.",
-  "correta": "Medialização do componente acetabular somada à osteotomia do grande trocanter com reinserção lateralizada.",
+  "conceito": "### Artroplastia de baixo atrito de Charnley\n| Pilar | Ideia |\n|---|---|\n| baixo atrito | cabeça de **22 mm** em polietileno de alta densidade |\n| fixação | **cimento** (PMMA) |\n| ==biomecânica== | ==medializar o acetábulo== e ==lateralizar o trocânter maior== |\n\n### A alavanca do quadril\n- Peso corporal: braço **longo** (linha média → centro da cabeça).\n- Abdutores: braço **curto** (centro da cabeça → trocânter).\n- Medializar o componente **encurta o braço do peso**.\n- Osteotomia com reinserção lateral e distal do trocânter **alonga o braço abdutor**.\n- Resultado: menor força abdutora necessária e **menor carga** no implante.\n\n### Por que a osteotomia caiu em desuso\n- Pseudartrose trocantérica e complicações dos fios.\n- Hoje, o mesmo efeito é obtido com hastes de **offset maior**.\n\n> **Na prova:** Charnley = ==medialização do acetábulo + trocânter lateralizado==.",
+  "correta": "**Dois braços ajustados.**\n- Medializar a taça encurta o braço do peso.\n- Reinserir o trocânter lateralmente alonga o braço abdutor; os dois reduzem a carga na articulação.",
   "incorretas": {
-   "A": "A medialização está certa, mas o objetivo era AUMENTAR o braço dos abdutores, e não diminuí-lo.",
-   "C": "Lateralizar a taça faria o oposto: alongaria o braço do peso corporal e aumentaria a carga.",
-   "D": "A osteotomia com reinserção lateralizada está certa, mas a taça era medializada, e não lateralizada."
+   "A": "**Objetivo invertido.**\n- A medialização está certa, mas a ideia era aumentar o braço abdutor.",
+   "C": "**Os dois errados.**\n- Lateralizar a taça alongaria o braço do peso e aumentaria a carga.",
+   "D": "**Taça errada.**\n- A osteotomia está certa, mas a taça era medializada."
   },
-  "geradoEm": "2026-09-06",
-  "conferido": false,
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 3"
-  ]
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "quadril-0130": {
   "conceito": "A figura mostra a face posteromedial da coxa, com o nervo isquiático visível centralmente. O músculo indicado, mais medial e mais largo que o nervo, corresponde ao SEMIMEMBRANÁCEO, um dos músculos isquiotibiais mediais, mais profundo e de ventre mais largo/achatado que o semitendíneo (que tem tendão longo e fino, mais superficial). Ambos são inervados pela divisão tibial do nervo isquiático.",
