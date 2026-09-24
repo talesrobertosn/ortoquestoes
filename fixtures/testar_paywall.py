@@ -9,6 +9,7 @@ SUPABASE_CLIENTE = (RAIZ / "src/servicos/supabase.ts").read_text()
 PAGINA_ENTRAR = (RAIZ / "src/paginas/Conta.tsx").read_text()
 WORKFLOW_PUBLICACAO = (RAIZ / ".github/workflows/publicar.yml").read_text()
 CRIAR_CHECKOUT = (RAIZ / "supabase/functions/criar-checkout/index.ts").read_text()
+HTTP_COMPARTILHADO = (RAIZ / "supabase/functions/_shared/http.ts").read_text()
 WEBHOOK_MERCADO_PAGO = (RAIZ / "supabase/functions/webhook-mercado-pago/index.ts").read_text()
 COBRANCA_MERCADO_PAGO = (RAIZ / "supabase/functions/_shared/cobranca-mercado-pago.ts").read_text()
 GERENCIAR_PLANO = (RAIZ / "supabase/functions/gerenciar-plano/index.ts").read_text()
@@ -64,6 +65,8 @@ assert "MERCADO_PAGO_SANDBOX_PAYER_EMAIL" not in CRIAR_CHECKOUT
 assert "console." not in CRIAR_CHECKOUT
 assert "external_reference: usuario.id" in CRIAR_CHECKOUT
 assert "!payerEmail" in CRIAR_CHECKOUT
+assert "Deno.env.get('MERCADO_PAGO_RESTRITO_CONTAS_TESTE') === 'true'" in HTTP_COMPARTILHADO
+assert "&& origem && origensSandbox.has(origem)" in HTTP_COMPARTILHADO
 
 for trecho in (
     "planoDaRecorrencia(preapproval.auto_recurring)",

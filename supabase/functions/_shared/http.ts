@@ -3,7 +3,9 @@ const origensSandbox = new Set(['http://localhost:5173', 'http://127.0.0.1:5173'
 
 export function cors(req?: Request) {
   const origem = req?.headers.get('origin')
-  const permitirOrigemLocal = Deno.env.get('MERCADO_PAGO_AMBIENTE') === 'teste' && origem && origensSandbox.has(origem)
+  const checkoutRestrito = Deno.env.get('MERCADO_PAGO_RESTRITO_CONTAS_TESTE') === 'true'
+  const permitirOrigemLocal = (Deno.env.get('MERCADO_PAGO_AMBIENTE') === 'teste' || checkoutRestrito)
+    && origem && origensSandbox.has(origem)
   return {
     'Access-Control-Allow-Origin': permitirOrigemLocal ? origem : origemConfigurada,
     'Access-Control-Allow-Headers': 'authorization, apikey, content-type',
