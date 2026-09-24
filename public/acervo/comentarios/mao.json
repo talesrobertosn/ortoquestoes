@@ -4316,91 +4316,91 @@
   "conferido": false
  },
  "mao-0369": {
-  "conceito": "A fáscia palmar normal é feita quase inteiramente de colágeno tipo I, maduro e resistente. O tecido de Dupuytren é diferente na composição, e é essa diferença que explica o comportamento dele.",
-  "correta": "O colágeno produzido em excesso é o tipo III, o mesmo do tecido de cicatrização recente, imaturo e mais frouxo. A proporção de tipo III em relação ao tipo I acompanha a atividade da doença: alta na fase proliferativa de Luck, quando o tecido é jovem e está sendo depositado depressa, e caindo até perto do normal na fase residual, quando a corda já amadureceu. Isso tem leitura prática direta, quanto mais ativa a doença, mais colágeno III, e maior a chance de recidiva depois da cirurgia, motivo pelo qual se prefere operar a corda madura e não o nódulo em plena atividade.",
+  "conceito": "### Fases histológicas de Luck (Dupuytren)\n| Fase | Histologia | Colágeno III/I |\n|---|---|---|\n| I: proliferativa | fibroblastos e miofibroblastos abundantes, nódulos | ==alta== |\n| II: involutiva | miofibroblastos alinhados na linha de tração | intermediária |\n| ==III: residual== | ==tecido acelular, pouco vascularizado (corda madura)== | ==cerca de 20%== (próximo da fáscia normal) |\n\n### Implicações\n- Doença ativa (nódulos, colágeno III alto): **mais recidiva** após cirurgia.\n- Preferir operar cordas maduras.\n- Corticoide injetável atua nos nódulos ativos.\n\n### Biologia\n- **Miofibroblasto** com actina de músculo liso: gera a contração.\n- TGF-β, via Wnt, genética.\n\n### Tipos de colágeno\n| Tipo | Onde |\n|---|---|\n| I | fáscia normal, tendão, osso, cicatriz madura |\n| II | cartilagem hialina |\n| ==III== | ==cicatriz recente, Dupuytren (excesso)== |\n| IV | membrana basal |\n\n> **Na prova:** Dupuytren produz excesso de ==colágeno tipo III==",
+  "correta": "**Tipo III.**\n- Colágeno imaturo, de cicatrização recente.\n- A razão III/I acompanha a atividade da doença (Luck).\n- Mais tipo III, mais recidiva: preferir operar a corda madura.",
   "incorretas": {
-   "A": "O tipo I é o colágeno da fáscia normal e da cicatriz madura. Ele existe no tecido doente, mas não é o produzido em excesso.",
-   "B": "O tipo II é o colágeno da cartilagem hialina, e não aparece nesse contexto.",
-   "D": "O tipo IV é o das membranas basais, também sem relação com a doença."
+   "A": "**Fáscia normal.**\n- Presente, mas não em excesso.",
+   "B": "**Cartilagem hialina.**\n- Sem relação.",
+   "D": "**Membrana basal.**\n- Sem relação."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0370": {
-  "conceito": "No punho reumatoide os tendões rompem por atrito contra osso irregular, não por trauma, e cada topografia tem nome próprio.",
-  "correta": "A lesão de Mannerfelt é a ruptura do flexor longo do polegar dentro do túnel do carpo, por atrito contra uma espícula óssea do escafoide, em geral um osteófito no polo distal, exposto pela erosão da cartilagem. A pessoa perde a flexão da interfalângica do polegar. A consequência cirúrgica é o que importa: reparar ou enxertar o tendão sem ressecar a espícula é garantir que o reparo rompa de novo. O espelho dorsal dessa lesão é a síndrome de Vaughan-Jackson, com a cabeça da ulna serrando os extensores.",
+  "conceito": "### Rupturas tendíneas no punho reumatoide\n| Lesão | Tendão | Mecanismo |\n|---|---|---|\n| ==Mannerfelt== | ==flexor longo do polegar== | atrito em osteófito do **escafoide** ou trapézio no túnel do carpo |\n| Vaughan-Jackson | extensor do mínimo, depois extensor comum (ulnar → radial) | atrito na **cabeça da ulna** (caput ulnae) |\n| tubérculo de Lister | extensor longo do polegar | atrito ou sinovite no 3º compartimento |\n\n### Mannerfelt\n- Perda da flexão da **IF do polegar**.\n- Diferencial: síndrome do interósseo anterior (testar também o FPD do indicador).\n- Tratamento: **ressecar o osteófito**, sinovectomia e enxerto em ponte, transferência do FSD do anelar ou artrodese da IF.\n\n### Vaughan-Jackson\n- Tratar com ressecção da cabeça da ulna (Darrach) ou Sauvé-Kapandji, sinovectomia e transferências (sutura látero-lateral, extensor do indicador).\n\n### EUC no punho reumatoide\n- Subluxa para volar e passa a flexor: favorece supinação do carpo e colapso radial.\n\n> **Na prova:** Mannerfelt = ruptura do ==flexor longo do polegar== no escafoide.",
+  "correta": "**Flexor longo do polegar.**\n- Atrito contra espícula do escafoide no túnel do carpo.\n- Perde a flexão da IF do polegar.\n- Ressecar a espícula junto com o reparo.",
   "incorretas": {
-   "A": "O extensor ulnar do carpo sofre subluxação volar no punho reumatoide, deixando de ser extensor e passando a agir como flexor, o que participa do colapso do carpo. Mas não é ele que rompe na lesão de Mannerfelt.",
-   "B": "O braquiorradial fica no antebraço e não é sede de ruptura por atrito nesse contexto.",
-   "C": "O flexor ulnar do carpo também não."
+   "A": "**Subluxa, não rompe.**\n- Vai para volar e vira flexor.",
+   "B": "**Antebraço.**\n- Não rompe por atrito aqui.",
+   "C": "**Não é sede.**\n- Não participa dessas rupturas."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0371": {
-  "conceito": "A artrite reumatoide tem assinatura articular própria, e é ela que a separa da artrose e da artrite psoriásica no consultório.",
-  "correta": "O acometimento é simétrico e começa pelas metacarpofalângicas, junto com os punhos e as interfalângicas proximais. A simetria não é detalhe descritivo: é critério diagnóstico e orienta o exame, porque encontrar de um lado obriga a procurar do outro. E vale guardar a exceção que mais ajuda: a doença poupa as interfalângicas distais, de modo que acometimento distal aponta para artrose, com nódulos de Heberden, ou para psoríase, com alteração ungueal associada.",
+  "conceito": "### Origem das deformidades na mão reumatoide\n| Deformidade | Articulação de origem |\n|---|---|\n| ==botoeira dos dedos longos== | ==IFP== (sinovite distende a banda central) |\n| pescoço de cisne dos dedos | MF (subluxação volar, intrínseco plus), IFP (placa volar) ou IFD (martelo) |\n| desvio ulnar dos dedos | MF + punho (desvio radial dos metacarpos) |\n| botoeira do polegar (Nalebuff I) | MF |\n| pescoço de cisne do polegar (Nalebuff III) | CMC |\n| colapso do carpo | radiocarpal, RUD |\n\n### Botoeira reumatoide (Nalebuff e Millender)\n| Estágio | Achado | Tratamento |\n|---|---|---|\n| I (leve) | déficit de extensão da IFP de 10 a 15°, passível | sinovectomia, tenotomia do extensor terminal (Fowler) |\n| II (moderado) | cerca de 40°, passível | reconstrução da banda central |\n| III (grave) | IFP rígida | artrodese ou artroplastia |\n\n### IFD na AR\n- Classicamente poupada: ajuda a diferenciar de artrose e psoriásica.\n\n### Padrão articular\n| Doença | Distribuição |\n|---|---|\n| ==artrite reumatoide== | ==simétrica==; ==MF==, punho, IFP; poupa IFD |\n| artrose | IFD (Heberden), IFP (Bouchard), TMC |\n| psoriásica | assimétrica, IFD, dactilite, unhas |\n| gota | assimétrica, tofos |\n\n> **Na prova:** AR = ==simétrica, início nas MF==",
+  "correta": "**Simétrica, início nas MF.**\n- Junto com punhos e IFP.\n- Simetria é critério diagnóstico.\n- Poupa as IFD.",
   "incorretas": {
-   "A": "Padrão assimétrico aponta para artrite psoriásica ou espondiloartrite, não para reumatoide.",
-   "B": "Mesmo problema, agora com a lateralidade invertida.",
-   "D": "A simetria está certa, mas o início não é nas interfalângicas, e as distais, em particular, são as poupadas."
+   "A": "**Assimetria.**\n- Aponta para psoriásica ou espondiloartrite.",
+   "B": "**Assimetria.**\n- Mesmo problema.",
+   "D": "**Início errado.**\n- As IFD são justamente as poupadas."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0372": {
-  "conceito": "O polegar do esquiador é a lesão do ligamento colateral ulnar da metacarpofalângica do polegar, produzida por um estresse em abdução forçada, clássicamente a mão presa no bastão de esqui numa queda.",
-  "correta": "O ligamento lesado é o colateral ulnar. A versão crônica dessa lesão é o polegar do guarda-caça, nome que vem dos guardas escoceses que torciam o pescoço da caça entre o polegar e o indicador. Quando o coto retrai e escapa para cima da aponeurose do adutor, a lesão vira Stener e passa a ser cirúrgica, porque a aponeurose interposta impede fisicamente a cicatrização. O exame se faz com estresse em valgo em duas posições (metacarpofalângica em 30 graus de flexão, que testa o feixe próprio, e em extensão, que testa o acessório), sempre com radiografia antes.",
+  "conceito": "### Lesão do colateral ulnar da MF do polegar\n| Nome | Mecanismo |\n|---|---|\n| polegar do esquiador | agudo, valgo forçado (queda com bastão) |\n| polegar do guarda-caça | crônico, atenuação repetida |\n\n### Lesão de Stener\n- Coto do ==colateral ulnar== retrai e fica ==acima da aponeurose do adutor==.\n- A aponeurose se interpõe e impede a cicatrização: ==cirurgia obrigatória==.\n- Incidência: cerca de 60 a 80% das rupturas completas.\n- Sinal: nódulo palpável proximal à MF (o coto dobrado).\n\n### Exame\n| Achado | Interpretação |\n|---|---|\n| abertura > 30 a 35° em 30° de flexão | ruptura do colateral próprio |\n| abertura também em extensão | + colateral acessório (lesão completa) |\n| > 15° a mais que o lado oposto | instabilidade |\n| sem ponto final firme | ruptura completa |\n\n- RX antes do estresse (fratura-avulsão); US ou RM para ver Stener.\n\n### Colateral radial\n- Menos comum; instabilidade em varo, subluxação volar-ulnar da falange.\n- Sem aponeurose interposta: não existe Stener radial.\n\n> **Na prova:** polegar do esquiador = ==colateral ulnar da MF==",
+  "correta": "**Colateral ulnar.**\n- Abdução forçada com a mão presa no bastão.\n- Versão crônica: polegar do guarda-caça.\n- Coto sobre a aponeurose do adutor = Stener, cirúrgico.",
   "incorretas": {
-   "A": "A ruptura do colateral radial existe e é bem menos falada. Ela produz instabilidade em varo, e do lado radial não há aponeurose para se interpor, por isso não recebe o nome de Stener.",
-   "C": "O feixe acessório do colateral existe e é testado com a articulação em extensão, mas ele é parte do mesmo ligamento, e não o nome da lesão.",
-   "D": "Não existe um ligamento colateral circunflexo no polegar."
+   "A": "**Menos comum.**\n- Instabilidade em varo, sem Stener.",
+   "C": "**Parte do ligamento.**\n- Testado em extensão; não é o nome da lesão.",
+   "D": "**Não existe.**\n- Distrator."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0373": {
-  "conceito": "A regra dos intrínsecos da mão é curta: o nervo ulnar inerva quase todos eles. Ao mediano cabem apenas o primeiro e o segundo lumbricais e três músculos tenares, abdutor curto, oponente e a cabeça superficial do flexor curto do polegar.",
-  "correta": "O adutor do polegar é a exceção pedida: ele é inervado pelo ramo profundo do nervo ulnar, e não pelo mediano. É justamente por isso que a lesão ulnar produz o sinal de Froment, sem adutor, a pinça lateral passa a depender do flexor longo do polegar, que é do mediano, e a interfalângica dobra para compensar. Uma forma de guardar o grupo tenar do mediano é o acrônimo dos três primeiros: abdutor curto, oponente e cabeça superficial do flexor curto. Tudo o mais é ulnar.",
+  "conceito": "### Musculatura tenar\n| Músculo | Nervo | Função |\n|---|---|---|\n| ==abdutor curto do polegar== | ==mediano (ramo motor recorrente)== | abdução palmar; o primeiro a atrofiar |\n| ==oponente do polegar== | mediano | oposição |\n| flexor curto, cabeça superficial | mediano | flexão da MF |\n| flexor curto, cabeça profunda | ulnar | flexão da MF |\n| adutor do polegar | ulnar | adução, pinça lateral |\n\n### Túnel do carpo: progressão\n| Fase | Achado |\n|---|---|\n| inicial | parestesia noturna, melhora ao sacudir a mão |\n| intermediária | parestesia constante, perda de destreza |\n| ==avançada== | ==atrofia tenar==, perda sensitiva fixa |\n\n- Atrofia é sinal tardio: não esperar por ela para operar.\n- Ramo motor pode ser extraligamentar, subligamentar ou transligamentar (Lanz).\n\n### Regra dos intrínsecos\n- Mediano na mão: ==LOAF== (lumbricais 1 e 2, oponente, abdutor curto, flexor curto superficial).\n- Todo o resto é ulnar, inclusive o ==adutor do polegar==.\n- Froment: sem adutor, o FLP (mediano) flete a IF na pinça lateral.\n\n> **Na prova:** adutor do polegar = ==ulnar==, não mediano.",
+  "correta": "**Adutor do polegar.**\n- Inervado pelo ramo profundo do ulnar.\n- Sua falta explica o sinal de Froment.\n- Mediano na mão: LOAF.",
   "incorretas": {
-   "B": "O oponente do polegar é do mediano, pelo ramo motor recorrente da tenar, o mesmo que se lesa ao errar a incisão na liberação do túnel do carpo.",
-   "C": "O abdutor curto do polegar também é do mediano, e é o músculo cuja atrofia se vê na síndrome do túnel do carpo avançada.",
-   "D": "A cabeça superficial do flexor curto do polegar é do mediano. A profunda é do ulnar, o músculo tem inervação dupla, o que explica por que ele resiste parcialmente às duas lesões."
+   "B": "**Mediano.**\n- Ramo motor recorrente.",
+   "C": "**Mediano.**\n- Atrofia no túnel do carpo avançado.",
+   "D": "**Mediano.**\n- A profunda é ulnar: inervação dupla."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0374": {
-  "conceito": "A síndrome dolorosa regional complexa, antiga distrofia simpático-reflexa, tem fatores de risco bem descritos, e eles se agrupam em características da pessoa, do trauma e do tratamento.",
-  "correta": "Idade acima de 60 anos não é fator de risco: a incidência se concentra na meia-idade, e a síndrome é francamente incomum em idosos e em crianças pequenas. Os fatores que de fato pesam são o sexo feminino, o acometimento do membro superior (sobretudo depois de fratura do rádio distal), o tabagismo, a dor desproporcional nas primeiras semanas, a imobilização prolongada e o gesso apertado. Vale lembrar o que previne: analgesia adequada desde o início, mobilização precoce e vitamina C, 500 mg por dia por cerca de 50 dias após a fratura.",
+  "conceito": "### Síndrome dolorosa regional complexa (SDRC)\n| Tipo | Definição |\n|---|---|\n| I (distrofia simpático-reflexa) | sem lesão nervosa definida |\n| II (causalgia) | com lesão de nervo identificável |\n\n### Critérios de Budapeste\n- Dor contínua desproporcional ao evento.\n- Sintomas e sinais em categorias: **sensitiva** (alodinia, hiperalgesia), **vasomotora** (temperatura, cor), **sudomotora/edema**, **motora/trófica**.\n\n### Fases clássicas\n| Fase | Achados |\n|---|---|\n| ==aguda (quente)== | ==calor, edema, eritema==, **hiperidrose**, dor intensa |\n| distrófica | pele fria, cianótica, rigidez, osteopenia |\n| atrófica | pele seca e fina, atrofia, contraturas |\n\n### Tratamento\n- **Precoce**: analgesia, fisioterapia (dessensibilização, imagem motora graduada), corticoide oral, bisfosfonato, bloqueios.\n- Prevenção: **vitamina C** após fratura do rádio distal (evidência discutida).\n\n### Fatores de risco\n| Fator | Associação |\n|---|---|\n| ==sexo feminino== | 3 a 4:1 |\n| ==membro superior== | fratura do rádio distal é o gatilho mais comum |\n| ==tabagismo== | disfunção vascular e simpática |\n| dor intensa precoce | sinal de alerta |\n| imobilização prolongada, gesso apertado | |\n| idade | pico na ==meia-idade== (40 a 60); incomum em idosos e crianças |\n\n### Critérios de Budapeste\n1. Dor contínua desproporcional ao evento.\n2. Sintomas em 3 de 4 categorias (sensitiva, vasomotora, sudomotora/edema, motora/trófica).\n3. Sinais em 2 de 4 categorias no exame.\n4. Sem outro diagnóstico que explique.\n\n> **Na prova:** idade ==acima de 60 anos não== é fator de risco para SDRC.",
+  "correta": "**Idade acima de 60 anos.**\n- A incidência se concentra na meia-idade.\n- Incomum em idosos e crianças pequenas.\n- Prevenção: analgesia, mobilização precoce, vitamina C.",
   "incorretas": {
-   "A": "O membro superior é o mais acometido, e a fratura do rádio distal é o trauma desencadeante mais frequente de todos.",
-   "B": "O sexo feminino é fator de risco consistente, com proporções descritas de três ou quatro mulheres para cada homem.",
-   "C": "O tabagismo é fator de risco descrito, provavelmente pela disfunção vascular e simpática que produz."
+   "A": "**Fator de risco.**\n- Fratura do rádio distal é o gatilho mais comum.",
+   "B": "**Fator de risco.**\n- 3 a 4 mulheres para cada homem.",
+   "C": "**Fator de risco.**\n- Disfunção vascular e simpática."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0375": {
-  "conceito": "A síndrome dolorosa regional complexa é definida por um conjunto de achados sensitivos, vasomotores, sudomotores e motores, mas um deles é o eixo em torno do qual todos os outros giram.",
-  "correta": "A dor é o sintoma mais prevalente, e é ela que define a síndrome: dor desproporcional ao trauma que a originou, em intensidade e em duração, acompanhada de alodinia e hiperalgesia. Os critérios de Budapeste exigem justamente isso como porta de entrada (dor contínua desproporcional ao evento) e depois pedem sinais e sintomas em pelo menos duas ou três das quatro categorias. O detalhe prático: dor desproporcional na segunda ou terceira semana depois de uma fratura do rádio distal é o sinal de alerta que muda a conduta, com analgesia agressiva e mobilização em vez de imobilização.",
+  "conceito": "### Síndrome dolorosa regional complexa (SDRC)\n| Tipo | Definição |\n|---|---|\n| I (distrofia simpático-reflexa) | sem lesão nervosa definida |\n| II (causalgia) | com lesão de nervo identificável |\n\n### Critérios de Budapeste\n- Dor contínua desproporcional ao evento.\n- Sintomas e sinais em categorias: **sensitiva** (alodinia, hiperalgesia), **vasomotora** (temperatura, cor), **sudomotora/edema**, **motora/trófica**.\n\n### Fases clássicas\n| Fase | Achados |\n|---|---|\n| ==aguda (quente)== | ==calor, edema, eritema==, **hiperidrose**, dor intensa |\n| distrófica | pele fria, cianótica, rigidez, osteopenia |\n| atrófica | pele seca e fina, atrofia, contraturas |\n\n### Tratamento\n- **Precoce**: analgesia, fisioterapia (dessensibilização, imagem motora graduada), corticoide oral, bisfosfonato, bloqueios.\n- Prevenção: **vitamina C** após fratura do rádio distal (evidência discutida).\n\n### Fatores de risco\n| Fator | Associação |\n|---|---|\n| ==sexo feminino== | 3 a 4:1 |\n| ==membro superior== | fratura do rádio distal é o gatilho mais comum |\n| ==tabagismo== | disfunção vascular e simpática |\n| dor intensa precoce | sinal de alerta |\n| imobilização prolongada, gesso apertado | |\n| idade | pico na ==meia-idade== (40 a 60); incomum em idosos e crianças |\n\n### Critérios de Budapeste\n1. Dor contínua desproporcional ao evento.\n2. Sintomas em 3 de 4 categorias (sensitiva, vasomotora, sudomotora/edema, motora/trófica).\n3. Sinais em 2 de 4 categorias no exame.\n4. Sem outro diagnóstico que explique.\n\n> **Na prova:** sintoma mais prevalente e definidor da SDRC = ==dor desproporcional==.",
+  "correta": "**Dor.**\n- Desproporcional ao trauma em intensidade e duração.\n- Porta de entrada dos critérios de Budapeste.\n- Dor desproporcional após fratura do rádio é sinal de alerta.",
   "incorretas": {
-   "A": "O edema é achado frequente e faz parte da categoria sudomotora e vasomotora, mas não está presente em todos os casos nem define a síndrome.",
-   "B": "A hiperemia aparece na fase quente e some na fase fria, quando a mão fica pálida e atrófica. É variável ao longo do tempo.",
-   "D": "A palidez pertence à fase tardia, e a mesma pessoa pode ter tido hiperemia semanas antes."
+   "A": "**Frequente, não constante.**\n- Não define a síndrome.",
+   "B": "**Fase quente.**\n- Some na fase fria.",
+   "D": "**Fase tardia.**\n- Variável ao longo do tempo."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0376": {
-  "conceito": "O primeiro compartimento dorsal do punho é o mais radial e volar dos seis, e corre sobre o estiloide radial.",
-  "correta": "Os tendões são o abdutor longo e o extensor curto do polegar, no primeiro compartimento. Vale guardar as duas armadilhas anatômicas que decidem o tratamento: em boa parte dos punhos existe um septo separando o extensor curto num subcompartimento próprio, e a infiltração que não o alcança é a causa mais comum de falha; e o abdutor longo frequentemente tem várias bandas tendíneas, com inserções acessórias no trapézio e nos músculos tenares. A confirmação diagnóstica é o teste de Finkelstein, com o polegar dentro da mão e o punho desviado para ulnar.",
+  "conceito": "### Variações do primeiro compartimento extensor\n| Variação | Frequência aproximada | Importância |\n|---|---|---|\n| ==ausência do extensor curto do polegar== | ==cerca de 5%== | |\n| ==septo separando o extensor curto== (subcompartimento) | ==cerca de 20 a 70%== (bem mais em pacientes com De Quervain) | ==causa principal de falha== da infiltração e da liberação |\n| múltiplas bandeletas do abdutor longo | muito comum | confundidas com o extensor curto |\n\n### Tenossinovite de De Quervain\n- Mulheres 30 a 50 anos, pós-parto (\"mãe de bebê\"), uso repetitivo.\n- **Finkelstein** (Eichhoff): polegar na mão, desvio ulnar do punho.\n- **WHAT test:** extensão do punho com abdução resistida do polegar (sensível para o extensor curto).\n\n### Tratamento\n- Órtese em espica, infiltração (cerca de 70 a 80% de sucesso).\n- Liberação cirúrgica: abrir o compartimento **dorsalmente** (evita subluxação volar dos tendões), procurar o **septo**, proteger o **ramo superficial do radial**.\n\n### Escalonamento\n| Etapa | Medida |\n|---|---|\n| 1 | ==infiltração de corticoide== na bainha (± órtese em espica) |\n| 2 | segunda infiltração se houver melhora parcial |\n| 3 | liberação cirúrgica após falha |\n\n> **Na prova:** De Quervain = ==abdutor longo e extensor curto do polegar, 1º compartimento==",
+  "correta": "**ALP e ECP, 1º compartimento.**\n- Correm sobre o estiloide radial.\n- Septo do ECP explica falha da infiltração.\n- Finkelstein confirma.",
   "incorretas": {
-   "B": "O segundo compartimento contém os extensores radiais do carpo. Compartimento errado.",
-   "C": "O abdutor curto do polegar é músculo tenar e volar, sem tendão no dorso do punho, e o extensor longo do polegar corre no terceiro compartimento, do outro lado do tubérculo de Lister.",
-   "D": "Erra os tendões e o compartimento ao mesmo tempo."
+   "B": "**2º compartimento.**\n- Extensores radiais do carpo.",
+   "C": "**Tendões errados.**\n- Abdutor curto é tenar; ELP é do 3º.",
+   "D": "**Duplamente errada.**\n- Tendões e compartimento."
   },
-  "geradoEm": "2026-09-06",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "mao-0377": {
