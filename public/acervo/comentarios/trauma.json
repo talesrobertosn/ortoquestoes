@@ -290,91 +290,91 @@
   "conferido": false
  },
  "trauma-0025": {
-  "conceito": "A fratura por estresse da diáfise tibial é um bom modelo para entender por que a mesma força mecânica produz lesões de gravidade tão diferente conforme o lado do osso solicitado.\n\nA tíbia, ao sofrer flexão repetitiva durante a corrida e o salto, tem uma cortical que trabalha em tensão e uma que trabalha em compressão.\n\nA cortical **anterolateral** (ou simplesmente anterior, no terço médio) é a face de tensão: ali, o osso responde mal à sobrecarga repetitiva, e a fratura de estresse que se forma nessa região é de alto risco, a temida \"linha negra\" na radiografia, com tendência a propagação completa, retardo de consolidação e necessidade eventual de fixação.\n\nJá a cortical **posteromedial** é a face de compressão, mais tolerante ao estresse repetitivo por natureza do próprio tecido ósseo (que resiste melhor à compressão do que à tração), e é justamente ali que ocorre a imensa maioria das fraturas de estresse tibiais do dia a dia, o quadro benigno, comum em corredores, que responde bem a repouso relativo e adaptação de carga.\n\nReconhecer essa dicotomia tensão-alto risco / compressão-baixo risco é a chave para interpretar tanto a localização quanto o prognóstico de qualquer fratura de estresse tibial, e é o mesmo raciocínio que se aplica, por exemplo, ao colo do fêmur (tensão superior, compressão inferior).",
-  "correta": "D. A cortical posteromedial da tíbia é a face de compressão, mecanicamente mais tolerante, e é onde ocorre a fratura de estresse por compressão, a apresentação mais frequente e de menor risco.",
+  "conceito": "### Fratura por estresse da tíbia\n| Local | Força | Evolução |\n|---|---|---|\n| ==cortical posteromedial== (terço médio-distal) | ==compressão== | ==a mais comum==, benigna; repouso relativo |\n| cortical anterior (terço médio) | ==tensão== | \"==linha negra temida==\": pseudartrose, fratura completa; pode exigir haste |\n\n### Diagnóstico\n- RX inicial normal em até 2/3; ==RM== é o exame mais sensível (Fredericson).\n- Cintilografia sensível, pouco específica.\n\n### Fatores de risco\n- Aumento súbito de treino, tríade da mulher atleta (RED-S), baixa vitamina D, calçado, alinhamento.\n\n> **Na prova:** estresse tibial mais comum = ==compressão posteromedial==",
+  "correta": "**Compressão posteromedial.**\n- Padrão mais frequente.\n- Bom prognóstico com repouso.",
   "incorretas": {
-   "A": "A face anterolateral é a de TENSÃO, não a que sofre com maior frequência, e a fratura de estresse por tensão, embora menos comum, é a de alto risco (a 'linha negra'), não a mais frequente.",
-   "B": "A cortical posteromedial de fato sofre com maior frequência, mas por COMPRESSÃO, não por tensão, o lado posteromedial é a face de compressão da tíbia em flexão.",
-   "C": "A compressão de fato ocorre na face posteromedial, não na anterolateral: a anterolateral é a face de tensão, onde a fratura de estresse é menos frequente e de maior risco."
+   "A": "**Tensão anterolateral.**\n- Não é o padrão típico.",
+   "B": "**Tensão posteromedial.**\n- Lado posteromedial está em compressão.",
+   "C": "**Compressão anterolateral.**\n- Anterior está em tensão."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0026": {
-  "conceito": "O **processo odontoide** (dente do áxis) é a estrutura em torno da qual o atlas gira, e sua estabilidade depende de três ligamentos: o ligamento transverso do atlas, que o abraça posteriormente e é o principal estabilizador contra a translação anterior de C1; e os dois ligamentos alares, que vão do ápice do odontoide aos côndilos occipitais e limitam a rotação e a inclinação lateral entre a cabeça e o áxis.\n\nA classificação de **Anderson e D'Alonzo** divide as fraturas do odontoide por nível:\n\n- **Tipo I**: fratura do ápice (ponta) do odontoide, acima do ligamento transverso. É uma avulsão produzida pela tração do ligamento alar, e corresponde a apenas cerca de 1% a 5% dos casos, sendo a mais rara das três.\n- **Tipo II**: fratura na junção do processo com o corpo do áxis, na sua base. É a mais frequente (cerca de 60% a 65%) e a de pior prognóstico, com pseudartrose em torno de 36% no tratamento conservador, por ser uma região de osso cortical fino, vascularização precária e grande braço de alavanca.\n- **Tipo III**: fratura que se estende ao corpo do áxis, envolvendo osso esponjoso bem vascularizado. Consolida bem com halo ou colar.\n\nA importância clínica do tipo I é indireta e séria: por resultar de tração dos alares, ele deve levantar a suspeita de instabilidade occipitocervical e de luxação atlanto-occipital, que é lesão potencialmente fatal. Isolado e sem instabilidade, o tipo I tem tratamento conservador com órtese; associado à dissociação occipitocervical, exige fixação.\n\nA avaliação exige tomografia com reconstruções e ressonância quando há suspeita de lesão ligamentar.",
-  "correta": "A. O tipo I de Anderson e D'Alonzo é a avulsão do ápice do odontoide pela tração do LIGAMENTO ALAR, e corresponde a cerca de 1% dos casos, o mais raro dos três tipos.",
+  "conceito": "### Anderson e D'Alonzo (odontoide)\n| Tipo | Local | Frequência | Conduta |\n|---|---|---|---|\n| ==I== | ==ponta== (avulsão do ==ligamento alar==) | ==cerca de 1%== | colar; investigar instabilidade occipitocervical |\n| II | base do dente (cintura) | 60% | halo ou cirurgia (pseudartrose alta) |\n| III | corpo de C2 | 30% | colar/halo; consolida |\n\n### Ligamentos do dente\n| Ligamento | Função |\n|---|---|\n| transverso | contém a translação anterior de C1 |\n| ==alares== | limitam rotação; inserem na ponta do dente |\n| apical | fraco |\n\n### Tipo II: fatores de pseudartrose\n- Idade > 50 anos, desvio > 5 mm, angulação > 10°, cominução (IIA de Hadley).\n\n> **Na prova:** tipo I = ==ligamento alar==, cerca de ==1%==",
+  "correta": "**Alar, 1%.**\n- Avulsão da ponta.\n- Rara e estável na maioria.",
   "incorretas": {
-   "B": "Acerta o ligamento, mas erra a frequência: o tipo I é raro, em torno de 1% a 5%. Uma cifra de 18% aproximaria o tipo I do tipo III, quando na verdade ele é de longe o menos comum.",
-   "C": "Erra o ligamento. O LIGAMENTO TRANSVERSO abraça o odontoide posteriormente e é o principal estabilizador contra a translação anterior de C1, a sua ruptura produz a instabilidade atlantoaxial, e não a avulsão do ápice.",
-   "D": "Erra as duas informações: o ligamento responsável pela avulsão do ápice é o ALAR, e a frequência do tipo I é de cerca de 1%, não 18%."
+   "B": "**18%.**\n- Frequência errada.",
+   "C": "**Transverso.**\n- Contém a translação; não insere na ponta.",
+   "D": "**Transverso e 18%.**\n- Ambos errados."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0027": {
-  "conceito": "A prótese de cabeça do rádio existe porque a cabeça é o principal estabilizador **secundário ao valgo**: com os ligamentos íntegros, a sua ressecção é tolerada; com o colateral medial roto, ela se torna o único freio, e a ressecção produz instabilidade franca, valgo progressivo e migração proximal do rádio. Daí a regra do cenário agudo: fixar quando possível, **substituir** quando não for, nunca simplesmente ressecar.\n\nA complicação dominante dessa substituição é uma consequência direta do que a prótese faz de errado quando é grande demais: a **sobrecarga do capítulo**. Uma prótese com altura excessiva (o overstuffing ou overlengthening) empurra a cabeça protética contra a cartilagem do capítulo com pressão contínua, produzindo dor lateral, perda de extensão, desgaste e erosão condral do capítulo (visíveis na radiografia como afilamento e cistos subcondrais) e, com o tempo, artrose radiocapitelar.\n\nReconhecer o excesso na mesa é o ponto técnico que se cobra, com três sinais confiáveis:\n- A articulação **ulnoumeral** deve permanecer paralela na radiografia em AP: um alargamento do lado lateral do espaço ulnoumeral significa que a prótese está afastando as superfícies, o sinal mais sensível\n- A borda proximal da prótese deve ficar aproximadamente no nível da margem proximal da incisura radial da ulna (a incisura sigmoide menor), nunca acima dela\n- A peça ressecada deve ser remontada e **medida** fora do campo, servindo de gabarito para a altura\n\nVale conhecer as demais complicações e o seu peso relativo: a radiotransparência ao redor da haste é frequente nos desenhos de haste lisa e não cimentada, mas costuma ser **assintomática** e faz parte do comportamento esperado desses implantes (o chamado stem loosening benigno). A rigidez, a ossificação heterotópica e a instabilidade residual dependem mais das lesões associadas do que da prótese em si. Já a dor no punho aponta para outra coisa: a lesão de Essex-Lopresti não reconhecida, com migração proximal do rádio e impacto ulnocarpal.",
-  "correta": "D. A sobrecarga do CAPÍTULO é a principal complicação: uma prótese com altura excessiva pressiona continuamente a cartilagem capitelar, produzindo dor, perda de extensão, erosão condral e artrose radiocapitelar, reconhecível na mesa pelo alargamento lateral do espaço ulnoumeral.",
+  "conceito": "### Artroplastia da cabeça do rádio\n- Cabeça do rádio: estabilizador ==secundário ao valgo== e longitudinal (com a membrana interóssea).\n- Indicação: Mason III irreconstruível com instabilidade (tríade terrível, Essex-Lopresti, LCM roto).\n\n### Complicações\n| Complicação | Causa |\n|---|---|\n| ==sobrecarga do capítulo== (desgaste, dor) | ==prótese alta (overstuffing)== |\n| perda de flexão, dor lateral | overstuffing |\n| soltura (halo radiotransparente) | comum e frequentemente assintomática em hastes lisas |\n| ossificação heterotópica, rigidez | |\n| lesão do interósseo posterior | acesso |\n\n### Altura correta\n- Topo da prótese no nível da ==borda lateral do coronoide== (incisura radial); espaço ulnoumeral lateral simétrico.\n\n> **Na prova:** principal complicação = ==sobrecarga do capítulo== (overstuffing)",
+  "correta": "**Sobrecarga do capítulo.**\n- Prótese alta.\n- Dor e desgaste do capítulo.",
   "incorretas": {
-   "A": "A luxação da prótese é rara e, quando ocorre, reflete instabilidade não corrigida do cotovelo (lesões ligamentares e do coronoide não tratadas) mais do que um problema do implante. É complicação de causa externa à prótese.",
-   "B": "Dor no punho não é complicação da artroplastia em si, é a manifestação de uma lesão de ESSEX-LOPRESTI não reconhecida, com ruptura da membrana interóssea, migração proximal do rádio e impacto ulnocarpal. Aliás, é justamente a prótese que PREVINE essa migração, ao contrário da ressecção.",
-   "C": "A radiotransparência ao redor da haste é comum nos desenhos de haste lisa não cimentada, mas costuma ser assintomática e é considerada comportamento esperado desses implantes, e não uma falha clínica. A soltura sintomática, que exige revisão, é bem menos frequente que a sobrecarga capitelar."
+   "A": "**Luxação.**\n- Rara.",
+   "B": "**Dor no punho.**\n- Sugere Essex-Lopresti ou prótese curta.",
+   "C": "**Soltura.**\n- Frequente radiograficamente, pouco relevante clinicamente."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0028": {
-  "conceito": "A lesão de **Essex-Lopresti** é uma lesão do antebraço inteiro disfarçada de fratura do cotovelo, e o seu diagnóstico depende de entender que rádio e ulna formam um anel funcional com três elos: a articulação radioulnar proximal, a membrana interóssea e a articulação radioulnar distal.\n\nA lesão consiste na tríade (fratura cominutiva da cabeça, ou do colo, do rádio, ruptura da membrana interóssea e lesão da articulação radioulnar distal), produzida por uma carga axial de alta energia, tipicamente na queda sobre a mão espalmada. Perdidos os três elos, o rádio deixa de ter contenção longitudinal e **migra proximalmente**, o que produz uma variância ulnar positiva progressiva, impacto ulnocarpal e dor no punho.\n\nO componente crítico da lesão é a banda **central** da membrana interóssea, que responde por cerca de 70% da estabilidade longitudinal do antebraço e corre obliquamente do rádio proximal para a ulna distal.\n\nA grande armadilha diagnóstica é que o paciente chega com dor no cotovelo, a radiografia mostra a fratura da cabeça do rádio, e ninguém examina nem radiografa o punho: a lesão só se revela meses depois, quando a dor ulnocarpal se instala e a variância positiva aparece. Daí a regra: em toda fratura cominutiva da cabeça do rádio, examinar e radiografar o punho e o antebraço, comparando com o lado contralateral, e considerar o teste de tração radiográfica sob anestesia (uma migração proximal do rádio maior que 3 mm indica instabilidade longitudinal).\n\nNo cenário **agudo**, o tratamento é preservar o comprimento do rádio: fixação da cabeça quando possível e, quando não, artroplastia (nunca ressecção simples, que é o erro capaz de transformar uma lesão tratável em uma sequela grave), associada à estabilização da radioulnar distal em supinação por quatro a seis semanas.",
-  "correta": "B. A lesão de Essex-Lopresti é a fratura da cabeça ou do COLO DO RÁDIO associada à ruptura da MEMBRANA INTERÓSSEA e à lesão da articulação RADIOULNAR DISTAL, a perda dos três elos de contenção longitudinal permite a migração proximal do rádio.",
+  "conceito": "### Lesão de Essex-Lopresti\n- Anel do antebraço: radioulnar proximal, ==membrana interóssea== e ==radioulnar distal==.\n- Tríade: fratura da ==cabeça/colo do rádio== + ruptura da ==membrana interóssea== + lesão da ==RUD==.\n- Rádio migra proximalmente: dor no punho, ulna positiva.\n\n### Diagnóstico\n| Exame | Achado |\n|---|---|\n| RX comparativo dos punhos | variância ulnar positiva > 2 mm |\n| teste do rádio (radius pull test) | migração > 3 mm intraoperatória |\n| US/RM | lesão da membrana interóssea |\n\n### Tratamento\n- ==Nunca ressecar a cabeça do rádio==: fixar ou prótese.\n- Estabilizar a RUD (fios em supinação); reconstrução da membrana nos crônicos.\n\n> **Na prova:** Essex-Lopresti = cabeça/colo do rádio + membrana interóssea + ==RUD==",
+  "correta": "**Colo do rádio e RUD.**\n- Membrana interóssea rompida.\n- Migração proximal do rádio.",
   "incorretas": {
-   "A": "Fratura da diáfise da ulna com luxação da cabeça do rádio é a fratura-luxação de MONTEGGIA, classificada por Bado pela direção do deslocamento da cabeça (I anterior, a mais comum; II posterior; III lateral; IV com fratura associada do rádio). É outra lesão, e nela o princípio do tratamento é a redução anatômica da ULNA, que reduz a cabeça do rádio.",
-   "C": "A fratura da diáfise do rádio com lesão da radioulnar distal é a fratura-luxação de GALEAZZI, a fratura do 'de necessidade', assim chamada por exigir fixação cirúrgica. A diferença essencial é o nível: no Galeazzi a falência é na DIÁFISE, e não na cabeça do rádio com ruptura da membrana interóssea.",
-   "D": "Acerta a fratura da cabeça do rádio, mas erra a articulação: no Essex-Lopresti a lesão é da radioulnar DISTAL, e é ela que responde pela dor no punho e pela migração proximal do rádio. A radioulnar proximal está, por definição, comprometida pela própria fratura da cabeça."
+   "A": "**Ulna e cabeça do rádio.**\n- Monteggia.",
+   "C": "**Diáfise do rádio e RUD.**\n- Galeazzi.",
+   "D": "**Radioulnar proximal.**\n- A lesão ligamentar distal é que caracteriza."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0029": {
-  "conceito": "A classificação de Pipkin para as fraturas da cabeça do fêmur associadas à luxação posterior do quadril progride em gravidade:\n- **Tipo I**: fratura infrafoveal (abaixo da fóvea), o fragmento não inclui a inserção do ligamento redondo.\n- **Tipo II**: fratura suprafoveal (acima da fóvea), fragmento maior, incluindo parte da superfície de carga.\n- **Tipo III**: tipo I ou II associado a fratura do colo do fêmur, o subtipo com pior prognóstico, pelo risco de necrose avascular.\n- **Tipo IV**: tipo I, II ou III associado a fratura do acetábulo (fratura da parede ou do rebordo posterior, geralmente concomitante à luxação).",
-  "correta": "D. A fratura da cabeça do fêmur associada à fratura do acetábulo corresponde ao tipo IV de Pipkin.",
+  "conceito": "### Pipkin (fratura da cabeça femoral com luxação posterior)\n| Tipo | Fratura |\n|---|---|\n| I | ==abaixo da fóvea== (fora da carga) |\n| II | ==acima da fóvea== (inclui o ligamento redondo, área de carga) |\n| III | I ou II + ==colo== do fêmur |\n| ==IV== | I ou II + ==acetábulo== |\n\n### Conduta\n| Tipo | Tratamento |\n|---|---|\n| I | conservador se congruente; excisão de fragmento pequeno |\n| II | fixação (acesso de Smith-Petersen ou luxação cirúrgica de Ganz) |\n| III | jovem: fixação do colo primeiro; idoso: artroplastia |\n| IV | tratar o acetábulo e a cabeça (via conforme a parede) |\n\n- Redução urgente da luxação (< 6 h).\n\n> **Na prova:** cabeça + acetábulo = ==Pipkin IV==",
+  "correta": "**Pipkin IV.**\n- Cabeça + acetábulo.\n- Geralmente parede posterior.",
   "incorretas": {
-   "A": "O tipo I é a fratura infrafoveal isolada, sem fratura do acetábulo.",
-   "B": "O tipo II é a fratura suprafoveal isolada, sem fratura do acetábulo.",
-   "C": "O tipo III associa fratura do colo do fêmur, não do acetábulo."
+   "A": "**I.**\n- Infrafoveal isolada.",
+   "B": "**II.**\n- Suprafoveal isolada.",
+   "C": "**III.**\n- Com colo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0030": {
-  "conceito": "A **fratura femoral atípica** associada ao uso prolongado de bifosfonatos (alendronato) é uma entidade com critérios diagnósticos definidos pela Sociedade Americana de Pesquisa Óssea e Mineral, e conhecê-los evita confundi-la com uma fratura comum.\n\nOs critérios **maiores** são: localização entre o trocanter menor e a metáfise supracondiliana; traço que se origina na cortical lateral e é substancialmente transverso (podendo tornar-se oblíquo ao cruzar o fêmur); cominuição mínima ou ausente; fratura completa que atravessa as duas corticais, eventualmente com uma espícula medial, ou incompleta acometendo apenas a cortical lateral; e ausência de trauma ou trauma mínimo.\n\nOs critérios **menores** incluem o espessamento da cortical lateral (o \"bicudo\" ou beaking, sinal de reação de estresse que precede a fratura), o espessamento cortical difuso da diáfise, a dor prodrômica na coxa ou na virilha (presente em boa parte dos pacientes por semanas a meses antes da fratura completa, e o achado clínico mais valioso), o acometimento bilateral (as lesões incompletas contralaterais são frequentes e devem ser ativamente procuradas com radiografia ou ressonância do outro fêmur), o retardo de consolidação e a associação a outras medicações (corticoide, inibidores de bomba de prótons).\n\nA fisiopatologia proposta é a supressão excessiva do turnover ósseo, que impede o reparo das microfraturas por fadiga na cortical lateral, submetida a tensão.\n\nA conduta: suspender o bifosfonato, avaliar cálcio e vitamina D, considerar teriparatida; nas fraturas completas, haste intramedular cefalomedular longa; nas incompletas com dor, fixação profilática com a mesma haste.",
-  "correta": "A. A DOR PRODRÔMICA na coxa ou na virilha, por semanas a meses antes da fratura completa, é a característica clínica da fratura atípica por bifosfonato, e o sinal que permite intervir antes que o osso se rompa.",
+  "conceito": "### Fratura femoral atípica (ASBMR)\n| Critério maior | Detalhe |\n|---|---|\n| trauma mínimo ou nenhum | queda da própria altura |\n| traço ==transverso== na cortical lateral | pode ficar oblíquo medialmente |\n| completa com ==espícula medial== | incompleta só na lateral |\n| sem cominução | |\n| ==espessamento (beaking) da cortical lateral== | reação periosteal localizada |\n\n| Critério menor | |\n|---|---|\n| ==dor prodrômica== na coxa/virilha | semanas a meses antes |\n| ==bilateralidade== | até 30 a 50% |\n| espessamento cortical generalizado | |\n| consolidação retardada | |\n\n### Conduta\n- Suspender bisfosfonato; cálcio/vitamina D; teriparatida pode ajudar.\n- Haste cefalomedular; ==investigar o lado oposto== (fixação profilática se dor + linha).\n\n> **Na prova:** fratura atípica por bisfosfonato = ==dor prodrômica==",
+  "correta": "**Dor prodrômica.**\n- Coxa ou virilha semanas antes.\n- Sinal de fratura incompleta.",
   "incorretas": {
-   "B": "O envolvimento é frequentemente BILATERAL, e não unilateral: as lesões incompletas contralaterais são comuns e devem ser ativamente procuradas com radiografia ou ressonância do outro fêmur.",
-   "C": "A espícula descrita nos critérios ocorre na cortical MEDIAL, e não na lateral, na lateral o que se observa é o ESPESSAMENTO cortical (o 'beaking'), que é o sinal de reação de estresse precedendo a fratura.",
-   "D": "O espessamento cortical característico é o da cortical LATERAL, que é a submetida a tensão e onde o traço se origina. A cortical medial trabalha em compressão e não apresenta esse achado."
+   "B": "**Unilateral.**\n- Frequentemente bilateral.",
+   "C": "**Espícula lateral.**\n- A espícula é medial.",
+   "D": "**Cortical medial.**\n- Espessamento é lateral."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0031": {
-  "conceito": "A fratura do planalto tibial por cisalhamento **posteromedial** é um padrão que a classificação clássica de Schatzker historicamente subestimava: ela costuma aparecer associada a outros traços (bicondilares, por exemplo) e, por isso, passou a receber atenção específica nas classificações mais modernas baseadas em tomografia (Luo, Kfuri).\n\nO mecanismo que a produz é distinto do mecanismo em varo puro de uma fratura medial simples: envolve o joelho em flexão no momento do impacto, combinado com uma força de rotação interna do côndilo femoral medial sobre o platô. O côndilo, girando internamente enquanto pressiona a tíbia flexionada, concentra a força de cisalhamento especificamente na porção posterior e medial do platô, e não na porção puramente medial que um mecanismo em varo simples, sem componente rotacional e sem flexão, produziria.\n\nReconhecer esse mecanismo composto (flexão + rotação interna) é o que ajuda a entender por que o fragmento posteromedial costuma ter um traço orientado obliquamente, tipicamente coronal, exigindo uma via de acesso posterior específica para sua fixação com placa em posição antiglide (anticisalhante), diferente do acesso anteromedial simples usado numa fratura puramente medial.",
-  "correta": "A. O mecanismo da fratura por cisalhamento posteromedial combina flexão do joelho com rotação interna do côndilo medial do fêmur, que concentra a força de cisalhamento especificamente na porção posterior e medial do platô tibial.",
+  "conceito": "### Cisalhamento posteromedial do planalto\n- Mecanismo: ==varo com joelho fletido== e o côndilo femoral medial em ==rotação interna== cisalhando o platô posteromedial.\n- Fragmento posteromedial desliza distal e posteriormente; tíbia subluxa anteriormente.\n- Associação frequente com lesões ligamentares laterais e do LCP.\n\n### Tratamento\n- ==Placa de suporte posteromedial== (antideslizamento) por via posteromedial (intervalo gastrocnêmio medial × pata de ganso) ou Lobenhoffer (prono).\n- Parafusos anteroposteriores isolados falham (cisalhamento).\n\n> **Na prova:** posteromedial = varo, ==flexão do joelho e rotação interna== do côndilo medial",
+  "correta": "**Flexão e rotação interna.**\n- Varo com joelho fletido.\n- Côndilo medial cisalha o platô posterior.",
   "incorretas": {
-   "B": "A rotação externa do côndilo medial não é o componente rotacional descrito para esse mecanismo específico, é a rotação interna que se combina à flexão do joelho.",
-   "C": "A extensão do joelho não é o componente postural descrito para esse mecanismo, é a flexão que, combinada à rotação interna, direciona a força para a região posteromedial.",
-   "D": "Nem a extensão nem a rotação externa correspondem ao mecanismo composto (flexão + rotação interna) que caracteriza essa fratura específica."
+   "B": "**Rotação externa.**\n- Rotação do côndilo é interna.",
+   "C": "**Extensão e RE.**\n- Ambos errados.",
+   "D": "**Extensão.**\n- Joelho está fletido."
   },
-  "geradoEm": "2026-09-14",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0032": {
-  "conceito": "As fraturas da PATELA com traço LONGITUDINAL (vertical) resultam classicamente de TRAUMA DIRETO sobre a face anterior do joelho FLETIDO (como no impacto contra o painel do veículo ou queda direta sobre o joelho dobrado). Como o traço vertical corre paralelo às fibras do mecanismo extensor (tendão quadricipital, retináculos e tendão patelar), sem seccioná-las transversalmente, o MECANISMO EXTENSOR costuma permanecer ÍNTEGRO, e o paciente mantém a capacidade de realizar a extensão ativa do joelho (elevação da perna estendida) apesar da fratura, ao contrário do que ocorre nas fraturas transversas, de mecanismo indireto, que rompem o mecanismo extensor.",
-  "correta": "A. A fratura patelar com traço longitudinal resulta de trauma direto com o joelho em flexão, e o mecanismo extensor costuma permanecer íntegro por não ser seccionado transversalmente.",
+  "conceito": "### Fraturas da patela por padrão\n| Padrão | Mecanismo | Mecanismo extensor |\n|---|---|---|\n| transversa | ==indireto== (contração do quadríceps com joelho fletido) | geralmente ==roto== |\n| ==vertical/longitudinal== | ==direto, joelho fletido== (painel) | ==íntegro== (retináculos preservados) |\n| cominutiva (estrelada) | direto de alta energia | variável |\n| polo inferior | indireto/avulsão | roto |\n| osteocondral | luxação da patela | íntegro |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| extensão ativa preservada, degrau < 2 mm, diástase < 3 mm | conservador (órtese em extensão) |\n| falha do mecanismo extensor ou desvio | banda de tensão, parafusos canulados, placas; patelectomia parcial |\n\n> **Na prova:** patela vertical = trauma direto em ==flexão==, mecanismo extensor ==íntegro==",
+  "correta": "**Flexão, extensor íntegro.**\n- Impacto direto com joelho dobrado.\n- Retináculos preservados: extensão ativa possível.",
   "incorretas": {
-   "B": "A ruptura do mecanismo extensor é mais característica das fraturas TRANSVERSAS, de mecanismo indireto, e não do traço longitudinal por trauma direto.",
-   "C": "A extensão do joelho não é a posição típica do trauma direto que produz o traço longitudinal, que ocorre classicamente com o joelho fletido.",
-   "D": "Combina a posição errada do joelho com a ruptura do mecanismo extensor, quando o traço longitudinal ocorre em flexão e preserva esse mecanismo."
+   "B": "**Extensor roto.**\n- Típico da transversa.",
+   "C": "**Extensão.**\n- Joelho está fletido no impacto.",
+   "D": "**Extensão e ruptura.**\n- Ambos errados."
   },
-  "geradoEm": "2026-09-15",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "trauma-0033": {
