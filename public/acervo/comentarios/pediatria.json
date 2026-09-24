@@ -1757,120 +1757,120 @@
   "conferido": false
  },
  "pediatria-0121": {
-  "conceito": "Osteogênese imperfeita é um grupo de doenças hereditárias de fragilidade óssea, frequentemente relacionadas a COL1A1 e COL1A2. Na classificação clássica de Sillence, tipo I é leve; tipo II é forma perinatal letal; tipo III é grave e progressivamente deformante; tipo IV tem gravidade intermediária. Escoliose é comum entre sobreviventes, particularmente nos tipos III e IV. A deformidade resulta de fragilidade vertebral, compressões, fraqueza ligamentar e alterações do crescimento. A progressão costuma ser mais rápida no tipo III. O tratamento conservador inclui otimização metabólica, fisioterapia e acompanhamento radiográfico; curvas progressivas importantes podem necessitar fusão instrumentada, tecnicamente desafiadora pela baixa qualidade óssea.",
-  "correta": "A alternativa D está correta. Entre os tipos clássicos de Sillence que sobrevivem até a infância e adolescência, a prevalência de escoliose é particularmente elevada nos tipos III e IV. Estudos mostram frequência e progressão maiores no tipo III, seguida do tipo IV, enquanto o tipo I apresenta menor prevalência.",
+  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Coluna na OI\n- ==Escoliose== em até 80% nos tipos graves (==III e IV==); fraturas vertebrais por compressão, cifose.\n- Colete pouco eficaz (costelas frágeis, deformidade progressiva).\n- Artrodese se > 45 a 50° progressiva; bisfosfonato ajuda a estabilizar.\n- Impressão basilar nos tipos graves: vigiar.\n\n> **Na prova:** escoliose mais prevalente na OI = ==tipos III e IV==",
+  "correta": "**III e IV.**\n- Formas graves e moderadas que sobrevivem.\n- Colete funciona mal.",
   "incorretas": {
-   "A": "Tipo I é a forma mais branda e apresenta menor incidência e velocidade de progressão da escoliose. Tipo II geralmente é letal no período perinatal.",
-   "B": "Tipo III apresenta alto risco, mas o tipo II não constitui uma população habitual de acompanhamento de escoliose devido à elevada mortalidade perinatal.",
-   "C": "Tipo IV é relevante, mas novamente a inclusão do tipo II torna a associação inadequada para prevalência de escoliose na população pediátrica sobrevivente."
+   "A": "**I leve, II letal.**\n- Não é o par.",
+   "B": "**II é letal.**\n- Não chega a desenvolver escoliose.",
+   "C": "**II letal.**\n- IV certo."
   },
   "referencias": [
    "https://pubmed.ncbi.nlm.nih.gov/26927310/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 28"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0122": {
-  "conceito": "Parâmetros de marcha têm definições precisas. **Passo** é a distância entre contatos consecutivos de calcanhares opostos; **passada** é o ciclo completo entre dois contatos do mesmo calcanhar. Cadência é número de passos por minuto e velocidade é distância por tempo. Decorar a unidade evita confundir termos semelhantes.",
-  "correta": "A alternativa A está correta: a distância entre os calcanhares dos dois pés durante o duplo apoio corresponde ao passo. Uma passada contém dois passos, um direito e um esquerdo.",
+  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n### Parâmetros lineares\n| Parâmetro | Definição |\n|---|---|\n| ==passo== | distância entre o ==calcanhar de um pé e o do outro== (no duplo apoio) |\n| passada (ciclo) | distância entre dois contatos do ==mesmo pé== = 2 passos |\n| cadência | passos por minuto |\n| velocidade | passada × cadência |\n| base de apoio | distância lateral entre os pés |\n\n> **Na prova:** distância entre calcanhares dos dois pés = ==passo==",
+  "correta": "**Passo.**\n- Calcanhar de um pé ao do outro.\n- A passada soma dois passos.",
   "incorretas": {
-   "B": "A alternativa B (a passada.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "C": "A alternativa C (a cadência.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "D": "A alternativa D (a velocidade.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta."
+   "B": "**Mesmo pé.**\n- Dois passos.",
+   "C": "**Frequência.**\n- Passos por minuto.",
+   "D": "**Não linear.**\n- Distância por tempo."
   },
   "referencias": [
    "Gait analysis: an overview. https://www.ncbi.nlm.nih.gov/books/NBK544254/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 5"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0123": {
-  "conceito": "Little leaguer’s elbow reúne lesões por arremesso repetitivo no cotovelo imaturo. A compressão lateral afeta o capítulo, enquanto a tração medial pode causar apofisite do epicôndilo medial. Panner é osteocondrose do capítulo em crianças menores; OCD do capítulo ocorre mais em adolescentes e pode gerar fragmento instável.",
-  "correta": "A alternativa C está correta. A osteocondrose associada ao little leaguer’s elbow é a doença de Panner, no capítulo. A idade e o padrão radiográfico ajudam a diferenciá-la de osteocondrite dissecante.",
+  "conceito": "### Cotovelo do arremessador infantil (little leaguer's elbow)\n- Estresse em ==valgo== repetido no arremesso.\n\n| Compartimento | Mecanismo | Lesão |\n|---|---|---|\n| medial | ==tração== | apofisite/avulsão do epicôndilo medial |\n| lateral | ==compressão== (radiocapitelar) | ==Panner== (< 10 anos), OCD do capítulo (adolescente), cabeça do rádio |\n| posterior | impacto | olécrano (apofisite, fratura por estresse) |\n\n### Panner\n- Osteocondrose do ==capítulo== inteiro, 5 a 10 anos, benigna.\n- Repouso de arremessos; reossifica.\n\n### Prevenção\n- Limite de arremessos por jogo/semana, descanso sazonal.\n\n> **Na prova:** osteocondrose do little leaguer's elbow = ==Panner==.",
+  "correta": "**Panner.**\n- Compressão radiocapitelar no valgo repetido.\n- Criança pequena, benigna.",
   "incorretas": {
-   "A": "A alternativa A (ISELIN.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "B": "A alternativa B (SEVER.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta.",
-   "D": "A alternativa D (KÖHLER.) está incorreta porque não corresponde ao achado, associação ou definição específica cobrada. Ela pode pertencer a outro contexto ortopédico, mas não explica adequadamente o mecanismo apresentado no enunciado; compare-a com o critério técnico descrito na alternativa correta."
+   "A": "**Pé.**\n- Base do 5º MT.",
+   "B": "**Calcâneo.**\n- Apófise do calcâneo.",
+   "D": "**Navicular.**\n- Pé."
   },
   "referencias": [
    "Panner disease and OCD of capitellum. https://pmc.ncbi.nlm.nih.gov/articles/PMC3435938/",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 32"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0124": {
-  "conceito": "Langenskiöld descreveu seis estágios radiográficos evolutivos da tíbia vara infantil. Estágio I: beaking metafisário medial. II: depressão em forma de pires da metáfise medial. III: aprofundamento com formação de degrau. IV: epífise medial curva-se sobre o beak. V: aspecto de dupla epífise e depressão posteromedial grave. VI: formação de barra fisária medial. Nos estágios iniciais, ainda existe potencial de recuperação fisária; nos avançados, especialmente IV a VI, a deformidade epifisária e a lesão fisária medial tornam uma osteotomia simples insuficiente. A recidiva após correção do eixo é maior quando a fise medial permanece doente. Esses casos podem exigir tratamento da depressão do platô, ponte fisária, crescimento guiado complementar ou outras reconstruções.",
-  "correta": "A alternativa C está correta. Estágios IV e V apresentam deformidade avançada da epífise e comprometimento importante da fise medial. Uma osteotomia tibial simples pode corrigir o eixo momentaneamente, mas não remove o motor biológico da deformidade; por isso, a recorrência é particularmente frequente nesses estágios.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Órtese (KAFO)\n- Indicação: ==< 3 anos==, ==Langenskiöld I-II==, especialmente unilateral.\n- Órtese de apoio com força valgizante, uso diurno na marcha.\n- Sem melhora em cerca de 1 ano ou > 4 anos: ==osteotomia valgizante== da tíbia (hipercorrigir).\n\n### Recidiva após osteotomia\n- Maior nos estágios ==IV e V== (barra fisária) e após 4 anos.\n- Nesses casos: osteotomia + ==ressecção da barra== ou epifisiodese lateral/completa, elevação do planalto medial (VI).\n\n> **Na prova:** recidiva após osteotomia simples = ==Langenskiöld IV e V==",
+  "correta": "**IV e V.**\n- A barra medial continua freando o crescimento.\n- Associar ressecção da barra ou epifisiodese.",
   "incorretas": {
-   "A": "Estágios II e III ainda correspondem a doença relativamente inicial, com maior possibilidade de recuperação e menor taxa de recidiva que os estágios avançados.",
-   "B": "Estágio IV já é avançado, mas estágio III isoladamente apresenta menor comprometimento epifisário e fisário que o estágio V.",
-   "D": "Inclui corretamente o estágio V, porém o estágio III possui risco menor que o IV; portanto, IV e V formam a combinação mais coerente."
+   "A": "**Precoces.**\n- Osteotomia costuma resolver.",
+   "B": "**III ainda sem barra.**\n- IV certo.",
+   "D": "**III.**\n- Não é o par de risco."
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/blount-s-disease-infantile",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 18"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0125": {
-  "conceito": "O suspensório de Pavlik mantém o quadril do lactente em flexão e permite abdução dinâmica dentro de uma zona segura. O objetivo é favorecer redução concêntrica sem forçar a articulação. Hiperflexão pode comprimir o nervo femoral sob o ligamento inguinal e causar neuropraxia, percebida pela redução do movimento ativo do joelho. Abdução excessiva e forçada aumenta a pressão sobre a cabeça femoral e está associada a osteonecrose e alterações da epífise/fise proximal. Por isso, o aparelho deve permitir movimento espontâneo e ser ajustado regularmente. Falha de redução em quadril luxado não deve ser mantida indefinidamente no harness, pois existe risco de deformidade acetabular e falsa sensação de tratamento.",
-  "correta": "A alternativa A está correta. Flexão excessiva pode produzir neuropraxia do nervo femoral; abdução excessiva relaciona-se a dano da epífise/fise proximal e osteonecrose. A questão explora justamente duas complicações dependentes da posição da órtese. Clinicamente, perda de extensão ativa do joelho durante Pavlik deve levantar suspeita de neuropatia femoral.",
+  "conceito": "### Suspensório de Pavlik\n| Tira | Função |\n|---|---|\n| anterior | ==flexão== do quadril (100 a 110°), bloqueia a extensão |\n| posterior | ==limita a adução== (não força a abdução) |\n\n- Permite ==flexão e abdução ativas==; ==limita extensão e adução==.\n- Indicação: < 6 meses; controle por ultrassom.\n\n### Complicações\n| Complicação | Causa |\n|---|---|\n| ==necrose avascular== (lesão fisária) | ==abdução forçada== (> 60°) |\n| paralisia do nervo femoral | ==flexão excessiva== |\n| doença do Pavlik (erosão posterior do acetábulo) | quadril luxado mantido sem reduzir |\n| luxação inferior (obturatória) | flexão excessiva |\n\n- Sem redução em 3 a 4 semanas: suspender.\n\n> **Na prova:** Pavlik lesa a fise pela ==abdução forçada==; limita ==extensão e adução==.",
+  "correta": "**Nervo femoral e lesão fisária.**\n- Flexão excessiva estira o femoral.\n- Abdução forçada comprime os vasos da fise.",
   "incorretas": {
-   "B": "A hiperflexão está mais relacionada à lesão femoral, enquanto abdução excessiva não é o mecanismo típico de neuropatia femoral.",
-   "C": "Alteração fisária por posição extrema está mais relacionada à abdução excessiva, não à hiperflexão; a ordem das complicações está invertida.",
-   "D": "Osteonecrose associa-se principalmente à abdução forçada. Subluxação não é a complicação posicional clássica descrita para abdução excessiva."
+   "B": "**Ordem trocada.**\n- Flexão lesa o femoral.",
+   "C": "**Flexão não causa isso.**\n- Causa neuropraxia.",
+   "D": "**Troca.**\n- Necrose vem da abdução."
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6959914/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0126": {
-  "conceito": "Após a correção do pé torto pelo método de Ponseti, a órtese de abdução não corrige deformidade residual: sua função é manter a correção e reduzir recidivas enquanto os tecidos continuam biologicamente propensos a retornar à posição original. No pé acometido, recomenda-se geralmente abdução ou rotação externa de aproximadamente 60 a 70 graus e discretos graus de dorsiflexão. Após a última retirada do gesso, o uso é praticamente integral, cerca de 23 horas por dia, nos primeiros 3 meses. Depois passa-se para uso durante sono noturno e cochilos, normalmente até 4 a 5 anos. Em casos unilaterais, o pé normal é colocado em menor abdução, aproximadamente 30 a 40 graus. Má adesão é um dos principais fatores associados à recidiva.",
-  "correta": "A alternativa B está correta. A configuração clássica para o pé corrigido é cerca de 70 graus de rotação externa/abdução e 5 a 10 graus de dorsiflexão, com uso por aproximadamente 23 horas diárias nos primeiros 3 meses. A manutenção subsequente noturna por anos é parte indispensável do método de Ponseti.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n> **Na prova:** pé normal na órtese = ==40° de rotação lateral==",
+  "correta": "**70° de RE, 5 a 10° de dorsiflexão, 23 h/dia.**\n- Pé afetado bem rodado para fora.\n- Três meses em tempo integral, depois noturno.",
   "incorretas": {
-   "A": "Quarenta graus é rotação mais próxima da utilizada no pé normal de um caso unilateral, e 18 horas não corresponde ao regime inicial recomendado após a correção.",
-   "C": "Os 70 graus estão adequados, mas o pé deve permanecer em dorsiflexão, não flexão plantar; além disso, o uso inicial é mais prolongado que 18 horas.",
-   "D": "Combina rotação insuficiente para o pé acometido, flexão plantar inadequada e, embora indique 23 horas, não reproduz o posicionamento correto."
+   "A": "**Pé normal.**\n- 40° é do contralateral; tempo curto.",
+   "C": "**Flexão plantar.**\n- Recria o equino.",
+   "D": "**Duplamente errada.**\n- 40° e flexão plantar."
   },
   "referencias": [
    "https://posna.org/physician-education/study-guide/clubfoot"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0127": {
-  "conceito": "O Gross Motor Function Classification System foi desenvolvido por Palisano e colaboradores para descrever a função motora grossa habitual de crianças com paralisia cerebral. Nível I: caminha sem restrições importantes. Nível II: caminha na maioria dos ambientes, mas apresenta limitações para distâncias, terrenos e habilidades mais complexas. Nível III: utiliza dispositivo manual de mobilidade, como muletas ou andador, e pode necessitar cadeira de rodas para distâncias maiores. Nível IV: mobilidade própria limitada, frequentemente com assistência física ou mobilidade motorizada. Nível V: dependência importante, incluindo controle limitado de cabeça e tronco. O GMFCS não mede espasticidade nem qualidade do movimento; descreve a função cotidiana e possui descrições específicas por faixa etária.",
-  "correta": "A alternativa C está correta. Aos 10 anos, uma criança que anda em ambientes internos, mas necessita muletas ou outro dispositivo manual de mobilidade na comunidade, enquadra-se no GMFCS III. O elemento que mais diferencia III de II é a necessidade de dispositivo manual para mobilidade funcional.",
+  "conceito": "### GMFCS (6 a 12 anos)\n| Nível | Mobilidade |\n|---|---|\n| I | anda sem restrições; corre e salta com limitação |\n| II | anda na maioria dos ambientes; limitação em distâncias, terreno irregular |\n| III | anda com ==dispositivo manual== (andador, muletas); cadeira para distâncias |\n| ==IV== | ==controle de cabeça e tronco==; anda pouco (casa, com ajuda); ==cadeira de rodas na comunidade== (pode ser motorizada) |\n| V | sem controle de cabeça e tronco; transportado |\n\n### Uso ortopédico\n| Nível | Preocupação |\n|---|---|\n| I-III | marcha: análise, cirurgia multinível |\n| ==IV-V== | ==luxação do quadril== (vigilância radiográfica), escoliose |\n\n- Índice de migração de Reimers > 30 a 40%: cirurgia de partes moles ou osteotomias.\n\n> **Na prova:** anda com muletas na comunidade = ==GMFCS III==",
+  "correta": "**Nível III.**\n- Anda com dispositivo manual.\n- Cadeira só para distâncias longas.",
   "incorretas": {
-   "A": "GMFCS I apresenta marcha independente com poucas restrições funcionais e não exige muletas para mobilidade comunitária.",
-   "B": "Nível II pode ter dificuldade para correr, saltar e percorrer longas distâncias, mas a marcha habitual não depende de dispositivo manual de mobilidade.",
-   "D": "Nível IV possui capacidade de marcha muito mais limitada e utiliza frequentemente assistência física ou mobilidade motorizada; o caso descrito possui função superior."
+   "A": "**Sem dispositivo.**\n- Anda sem restrição.",
+   "B": "**Sem dispositivo.**\n- Limitação só em terreno difícil.",
+   "D": "**Cadeira na comunidade.**\n- Mais grave."
   },
   "referencias": [
    "https://pubmed.ncbi.nlm.nih.gov/9183258/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0128": {
-  "conceito": "Na epifisiólise proximal do fêmur, estudos morfológicos demonstram que o fêmur proximal apresenta frequentemente menor anteversão e menor ângulo cervicodiafisário, isto é, tendência à retroversão relativa e coxa vara. Essa geometria aumenta forças de cisalhamento sobre a fise durante o estirão puberal, especialmente em adolescentes com obesidade. Clinicamente, a retroversão relativa contribui para perda de rotação interna e rotação externa obrigatória na flexão, conhecida como sinal de Drehmann. Radiograficamente, utilizam-se incidências anteroposterior e lateral; a gravidade pode ser quantificada pelo ângulo de Southwick. O tratamento padrão do escorregamento estável é fixação in situ, evitando manipulação forçada que possa comprometer a vascularização.",
-  "correta": "A alternativa A está correta. Na epifisiólise, tanto a anteversão femoral quanto o ângulo cefalodiafisário tendem a estar diminuídos. Em termos clínicos, isso significa configuração mais retrovertida e em varo, coerente com o padrão de rotação externa observado ao exame.",
+  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n> **Na prova:** epifisiólise = ==menos anteversão e menor ângulo cervicodiafisário==.",
+  "correta": "**Anteversão diminuída, ângulo diminuído.**\n- Retroversão relativa e coxa vara.\n- Aumentam o cisalhamento na fise.",
   "incorretas": {
-   "B": "A diminuição do ângulo cefalodiafisário é compatível, porém a anteversão não costuma aumentar; ocorre redução relativa.",
-   "C": "A redução da anteversão está correta, mas o ângulo cervicodiafisário tende a diminuir, e não aumentar.",
-   "D": "Ambos os componentes seguem direção oposta à morfologia classicamente associada à epifisiólise."
+   "B": "**Anteversão errada.**\n- Diminuída.",
+   "C": "**Ângulo errado.**\n- Diminuído.",
+   "D": "**Duplamente errada.**\n- Ambos diminuídos."
   },
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3492592/"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0129": {
   "conceito": "Sinovite transitória é causa comum de quadril doloroso agudo na infância, predominando em meninos entre aproximadamente 3 e 8 anos, com média próxima de 6 anos. Geralmente há claudicação, dor e limitação dolorosa, mas pouco comprometimento sistêmico. O principal diagnóstico a excluir é artrite séptica. Os critérios de Kocher incluem febre acima de 38,5 graus, incapacidade de apoiar, velocidade de hemossedimentação acima de 40 mm/h e leucócitos acima de 12.000/mm³; posteriormente Caird acrescentou proteína C reativa acima de 2 mg/dL. Nenhum critério substitui julgamento clínico ou aspiração quando existe forte suspeita. Sinovite transitória costuma melhorar rapidamente com repouso e anti-inflamatórios.",
