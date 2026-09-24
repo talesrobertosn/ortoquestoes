@@ -6468,117 +6468,117 @@
   "conferido": false
  },
  "pediatria-0529": {
-  "conceito": "A classificação de WATSON-JONES para as fraturas por avulsão da tuberosidade anterior da tíbia divide a lesão em três tipos, de gravidade crescente. O tipo III, o mais grave, corresponde a uma fratura que se estende através da epífise tibial proximal até a superfície articular do joelho, configurando, na terminologia de SALTER-HARRIS, uma fratura tipo III (fratura puramente epifisária, intra-articular, sem envolvimento metafisário).",
-  "correta": "C. O tipo III de WATSON-JONES, por estender-se até a superfície articular através da epífise, corresponde a uma fratura SALTER-HARRIS tipo III.",
+  "conceito": "### Tuberosidade anterior da tíbia (Watson-Jones/Ogden)\n| Tipo | Traço | Equivalente |\n|---|---|---|\n| I | avulsão distal da própria tuberosidade | SH I da apófise |\n| II | traço até a fise proximal da tíbia (sem entrar na articulação) | SH I/II |\n| ==III== | ==cruza a epífise até a articulação== | ==SH III== |\n| IV (Ogden) | toda a fise proximal, posterior | SH II |\n| V (Ogden) | avulsão periosteal do ligamento patelar | |\n\n### Pontos\n- Adolescente perto do fechamento (a fise fecha de posterior para anterior e de proximal para distal).\n- Salto ou arranque com quadríceps contraído e joelho fletido.\n- Risco de ==síndrome compartimental== (recorrente tibial anterior); tipo III pede artroscopia/redução aberta.\n\n> **Na prova:** Watson-Jones III = ==Salter-Harris III==",
+  "correta": "**SH III.**\n- Traço cruza a epífise.\n- Intra-articular.",
   "incorretas": {
-   "A": "SALTER-HARRIS tipo I descreve um descolamento fisário puro, sem fragmento ósseo metafisário ou epifisário, padrão mais simples do que o observado no tipo III de WATSON-JONES.",
-   "B": "SALTER-HARRIS tipo II envolve um fragmento metafisário associado ao descolamento fisário, sem extensão articular, diferente do traço intra-articular do tipo III de WATSON-JONES.",
-   "D": "SALTER-HARRIS tipo IV envolve tanto a epífise quanto a metáfise, atravessando a fise verticalmente, padrão mais complexo do que o tipo III de WATSON-JONES, que é puramente epifisário-articular."
+   "A": "**SH I.**\n- Tipo I, avulsão distal.",
+   "B": "**SH II.**\n- Tipo IV de Ogden.",
+   "D": "**SH IV.**\n- Não é o equivalente do tipo III."
   },
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 36"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0530": {
-  "conceito": "A classificação de DELBET para as fraturas do fêmur proximal em crianças divide as lesões conforme a localização: tipo I (transepifisária, mais rara), tipo II (transcervical, pelo colo femoral), tipo III (cervicotrocantérica/basicervical) e tipo IV (intertrocantérica). O tipo II é o mais frequente na maioria das séries pediátricas.",
-  "correta": "B. O tipo II (transcervical) é o mais comum entre as fraturas do fêmur proximal na criança, segundo DELBET.",
+  "conceito": "### Delbet (colo do fêmur na criança)\n| Tipo | Traço | Frequência | Necrose |\n|---|---|---|---|\n| ==I== | ==transepifisário== (IA sem luxação; ==IB com luxação== da epífise) | < 10% | ==até 100% no IB== |\n| II | transcervical | ==o mais comum== (40 a 50%) | cerca de 50% |\n| III | cervicotrocantérico | 25 a 35% | cerca de 25% |\n| IV | intertrocantérico | 10% | cerca de 10% |\n\n### Pontos\n- Alta energia; tipo I em < 2 anos sugere maus-tratos ou parto.\n- Tratamento: redução (fechada ou aberta) e fixação; descompressão capsular.\n- Complicações: necrose, coxa vara, fechamento fisário, pseudartrose.\n\n> **Na prova:** Delbet mais comum = ==tipo II (transcervical)==",
+  "correta": "**Tipo II.**\n- Transcervical.\n- 40 a 50% dos casos.",
   "incorretas": {
-   "A": "O tipo I (transepifisária) é o mais raro dos quatro tipos, frequentemente associado a alto risco de necrose avascular, mas não o mais comum.",
-   "C": "O tipo III (cervicotrocantérica) é menos frequente que o tipo II na maioria das séries pediátricas.",
-   "D": "O tipo IV (intertrocantérica) tem, em geral, o melhor prognóstico vascular, mas não é o tipo mais comum."
+   "A": "**Tipo I.**\n- Raro, < 10%.",
+   "C": "**Tipo III.**\n- Segundo mais comum.",
+   "D": "**Tipo IV.**\n- Menos comum, melhor prognóstico."
   },
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0531": {
-  "conceito": "As fraturas fisárias do tornozelo (envolvendo a fise distal da tíbia, isoladas ou nos padrões de Tillaux e triplano) podem evoluir com fechamento prematuro, parcial ou total, da fise acometida. Quando o fechamento é parcial e assimétrico (o padrão mais comumente descrito), o crescimento residual desigual gera uma deformidade angular progressiva do tornozelo, mais frequentemente em valgo.",
-  "correta": "C. A complicação mais comum é a deformidade em valgo do tornozelo, decorrente do fechamento fisário parcial e assimétrico mais frequentemente descrito nessas fraturas.",
+  "conceito": "### Fraturas fisárias do tornozelo\n| Lesão | Complicação típica |\n|---|---|\n| SH III/IV do maléolo medial | ==barra medial==: tornozelo em ==varo== |\n| SH I/II da tíbia distal (pronação-eversão) | fechamento parcial, deformidade angular; valgo quando a fíbula também é afetada |\n| todas | parada de crescimento (discrepância), incongruência articular |\n| fíbula distal | fechamento precoce da fíbula com tíbia crescendo: ==valgo== |\n\n### Prevenção\n- Redução anatômica das intra-articulares (degrau < 2 mm).\n- Controle radiográfico por 6 a 12 meses: linhas de Park-Harris paralelas à fise indicam crescimento simétrico.\n\n> **Na prova:** a banca considerou a ==deformidade em valgo== a mais comum (veja o alerta)",
+  "correta": "**Deformidade em valgo (gabarito).**\n- Deformidade angular por fechamento parcial.\n- Resposta oficial (veja o alerta).",
   "incorretas": {
-   "A": "A consolidação viciosa isolada, sem componente de crescimento, não é a complicação mais tipicamente destacada nesse contexto, que é essencialmente uma complicação de crescimento fisário.",
-   "B": "A sinostose tibiofibular distal é uma complicação possível, mas bem menos frequente do que a deformidade angular por fechamento fisário parcial.",
-   "D": "A parada completa e simétrica da fise geraria apenas discrepância de comprimento, sem deformidade angular, um cenário menos comum do que o fechamento parcial assimétrico."
+   "A": "**Consolidação viciosa.**\n- Fraturas fisárias remodelam bem.",
+   "B": "**Sinostose.**\n- Rara.",
+   "D": "**Parada simétrica.**\n- Discrepância, menos comum que a deformidade angular."
   },
-  "alerta": "A literatura descreve o fechamento fisário parcial, levando a deformidade angular, como a complicação mais temida das fraturas fisárias do tornozelo, e a direção mais frequentemente citada é o valgo. Ainda assim, alguns textos dão destaque também à parada completa/simétrica da fise (com discrepância de comprimento) dependendo da série e da faixa etária estudada, então não tenho certeza absoluta de que 'valgo' seja exatamente o achado que a fonte usada pela banca privilegia. Mantenho a alternativa C como a mais provável, mas vale reconferir esse ponto na fonte primária antes de memorizá-lo com confiança total.",
+  "alerta": "A complicação mais citada das fraturas fisárias do tornozelo é o fechamento fisário precoce, que pode causar discrepância ou deformidade angular. A deformidade angular clássica após SH III/IV do maléolo medial é o varo; a banca indicou o valgo.",
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0532": {
-  "conceito": "O cúbito varo pós-fratura supracondiliana do úmero na criança não decorre de um distúrbio de crescimento fisário (a fise distal do úmero raramente é lesada nesse tipo de fratura extra-articular), mas sim de uma consolidação viciosa da fratura original: o fragmento distal permanece desviado em varo e rotacionado internamente (medialmente) no momento da consolidação, resultando na deformidade tridimensional característica, daí a importância de corrigir tanto a angulação quanto a rotação na redução inicial.",
-  "correta": "D. A causa principal é a consolidação viciosa por desvio medial (varo) e rotação da epífise umeral distal, um problema mecânico de redução, não de crescimento.",
+  "conceito": "### Cúbito varo após supracondiliana\n- É a complicação tardia mais comum da fratura supracondiliana.\n- Causa principal: ==consolidação viciosa==, por redução imperfeita com rotação medial e inclinação em varo do fragmento distal.\n- **Lesão fisária** com crescimento assimétrico é causa rara.\n- É sobretudo estético, mas pode associar-se a instabilidade posterolateral e a neuropatia do ulnar; o tratamento é a osteotomia supracondiliana.\n\n### Como evitar\n- Redução com ==rotação medial e varo corrigidos== (Baumann 70 a 75°, comparar com o lado normal).\n- Pinos laterais divergentes bem espaçados (colunas medial e lateral).\n- Cominução medial favorece o colapso em varo.\n\n> **Na prova:** cúbito varo = ==desvio medial e rotação do fragmento distal==",
+  "correta": "**Desvio medial e rotação.**\n- Consolidação viciosa.\n- Fragmento distal em varo e rotação medial.",
   "incorretas": {
-   "A": "A fise distal do úmero raramente é acometida diretamente nas fraturas supracondilianas, que são extra-articulares e proximais à fise, tornando o crescimento assimétrico por lesão fisária um mecanismo pouco provável.",
-   "B": "A osteonecrose da tróclea é uma complicação rara e distinta, não a causa principal do cúbito varo pós-fratura supracondiliana.",
-   "C": "Essa alternativa captura apenas o componente de varo da deformidade, mas omite o componente rotacional, hoje reconhecido como parte essencial do mecanismo da deformidade em cúbito varo."
+   "A": "**Lesão fisária.**\n- Causa rara.",
+   "B": "**Osteonecrose da tróclea.**\n- Rara; gera deformidade em rabo de peixe.",
+   "C": "**Só varo.**\n- Falta a rotação medial."
   },
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 36"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0533": {
-  "conceito": "Na luxação esternoclavicular posterior em crianças, a manobra de redução clássica é feita com o paciente em posição supina e um coxim colocado entre as escápulas, o que promove extensão da coluna torácica e retração das escápulas, aproximando a extremidade medial da clavícula da linha média. Associa-se a essa manobra a tração do membro superior do lado acometido, que ajuda a desengatar a clavícula de detrás do esterno.",
-  "correta": "D. A manobra combina o coxim entre as escápulas com a tração do membro superior do lado acometido.",
+  "conceito": "### Luxação esternoclavicular posterior\n- Na criança e no adolescente, frequentemente é ==descolamento fisário da clavícula medial== (fise fecha aos 23 a 25 anos).\n- ==Emergência==: compressão de traqueia, esôfago, grandes vasos (disfagia, dispneia, congestão venosa).\n- ==TC== para diagnóstico.\n\n### Redução fechada (centro cirúrgico, cirurgião torácico disponível)\n- Supino, ==coxim entre as escápulas==.\n- ==Tração do membro em abdução== e extensão; pinça de campo puxando a clavícula anteriormente se necessário.\n- Falha ou tardia: redução aberta e sutura/reconstrução (nunca fios metálicos).\n\n> **Na prova:** redução ES posterior = ==coxim interescapular + tração do membro==",
+  "correta": "**Coxim entre escápulas + tração.**\n- Abre o espaço esternoclavicular.\n- Clavícula volta anteriormente.",
   "incorretas": {
-   "A": "O coxim abaixo do ombro não promove a extensão torácica necessária para aproximar a clavícula da linha média; o posicionamento correto é entre as escápulas.",
-   "B": "A flexão do ombro não é o movimento associado à manobra de redução clássica, que utiliza tração do membro, não flexão.",
-   "C": "O coxim abaixo do ombro, mesmo associado à tração, não reproduz o posicionamento entre as escápulas necessário para a extensão torácica que facilita a redução."
+   "A": "**Coxim sob o ombro e flexão.**\n- Não abre a articulação.",
+   "B": "**Flexão.**\n- Precisa de tração em abdução e extensão.",
+   "C": "**Coxim sob o ombro.**\n- Deve ser interescapular."
   },
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 12.3"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0534": {
-  "conceito": "A classificação de LANGENSKIÖLD descreve a progressão radiográfica da doença de BLOUNT (tíbia vara infantil) em seis estágios, de I a VI, com piora progressiva da irregularidade metafisária medial, fragmentação e, nos estágios mais avançados (V e VI), formação de uma barra óssea física medial com separação da epífise em dois fragmentos distintos.",
-  "correta": "C. A imagem representa o estágio V de Langenskiöld, com fragmentação e separação evidente da epífise medial, compatível com formação de barra física.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n> **Na prova:** barra óssea na Blount = a partir de ==Langenskiöld IV== (veja o alerta).",
+  "correta": "**Estágio V.**\n- Aspecto de epífise dupla.\n- Fenda separa a porção medial da epífise.",
   "incorretas": {
-   "A": "O estágio III mostra uma irregularidade metafisária menos avançada, sem a fragmentação e separação evidentes na imagem.",
-   "B": "O estágio IV mostra a epífise se aprofundando no defeito metafisário, mas ainda sem a separação em fragmentos distintos observada na imagem.",
-   "D": "O estágio VI representa uma barra óssea física medial já completamente estabelecida, com fechamento fisário medial mais definido do que o mostrado."
+   "A": "**III.**\n- Degrau profundo, sem epífise dupla.",
+   "B": "**IV.**\n- Barra óssea começando.",
+   "D": "**VI.**\n- Fechamento medial completo."
   },
-  "alerta": "A distinção radiográfica entre os estágios IV, V e VI de Langenskiöld depende de detalhes finos de fragmentação e continuidade da fise que são difíceis de avaliar com certeza absoluta numa reprodução esquemática pequena como a desta imagem. Mantive a alternativa C como a mais provável, mas recomendo comparar a figura original com uma referência de Langenskiöld lado a lado antes de tratar esse estágio como definitivo.",
+  "alerta": "A diferença entre os estágios IV, V e VI de Langenskiöld depende de detalhes finos da fise medial, difíceis de ver em figuras pequenas. O estágio V é reconhecido pela aparência de epífise dupla.",
   "referencias": [
    "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 26"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0535": {
-  "conceito": "A classificação de MEYERS e MCKEEVER para as fraturas por avulsão da espinha tibial (eminência intercondilar) em crianças divide a lesão em tipos de gravidade crescente: tipo I (deslocamento mínimo), tipo II (elevação anterior do fragmento, com a porção posterior ainda em contato/hinged com o leito ósseo, como uma \"tampa de caixa\" parcialmente aberta) e tipo III (deslocamento completo do fragmento, sem contato com o leito ósseo, por vezes rotado).",
-  "correta": "B. A figura representa o tipo II, com elevação anterior do fragmento e a porção posterior ainda articulada com o leito ósseo tibial.",
+  "conceito": "### Fratura da espinha tibial (eminência intercondilar)\n- É o equivalente pediátrico da lesão do **LCA**: o ligamento arranca a espinha em vez de romper.\n- Mecanismo clássico: queda de bicicleta, com ==hiperextensão== associada a ==rotação== (em geral externa) ou valgo.\n- Classificação de **Meyers e McKeever** (I sem desvio, II desvio anterior em dobradiça, III desviada; IV cominutiva).\n- O menisco medial ou o ligamento intermeniscal pode interpor-se e impedir a redução.\n\n### Meyers e McKeever\n| Tipo | Aspecto | Conduta |\n|---|---|---|\n| I | sem desvio | gesso em extensão (ou 10 a 20° de flexão) |\n| ==II== | ==terço anterior elevado, dobradiça posterior íntegra== (bico de pássaro) | tentar redução em extensão; se falhar, artroscopia |\n| III | fragmento totalmente desviado (IIIA só a espinha; IIIB com rotação) | fixação artroscópica ou aberta |\n| IV (Zaricznyj) | cominutiva | fixação |\n\n> **Na prova:** anterior elevado com dobradiça posterior = ==Meyers e McKeever II==",
+  "correta": "**Tipo II.**\n- Anterior elevado.\n- Dobradiça posterior íntegra.",
   "incorretas": {
-   "A": "O tipo I mostra apenas um deslocamento mínimo, sem a elevação evidente do fragmento mostrada na figura.",
-   "C": "O tipo III mostra o fragmento completamente deslocado do seu leito, sem o contato posterior parcial visível na figura.",
-   "D": "O tipo IV corresponde a uma adição posterior à classificação original, referente a fraturas cominutivas, padrão diferente do mostrado na figura."
+   "A": "**Tipo I.**\n- Sem desvio.",
+   "C": "**Tipo III.**\n- Completamente desviado.",
+   "D": "**Tipo IV.**\n- Cominutiva."
   },
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 27"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0537": {
-  "conceito": "A luxação traumática do quadril em crianças tende a ocorrer com desvio posterior, semelhante ao padrão observado em adultos. Em crianças menores de 5 anos, a maior elasticidade ligamentar e capsular permite que essa luxação ocorra mesmo com traumas de baixa energia (como quedas simples), diferentemente de crianças maiores e adultos, que geralmente necessitam de traumas de alta energia para luxar o quadril.",
-  "correta": "D. O desvio mais comum é posterior, e em crianças menores de 5 anos está associado a traumas de baixa energia.",
+  "conceito": "### Luxação traumática do quadril na criança\n- ==Posterior== em cerca de 90%.\n- ==< 5 anos==: acetábulo cartilaginoso e frouxidão: luxa com ==trauma de baixa energia== (queda banal); raramente fratura associada.\n- Crianças maiores e adolescentes: alta energia, fraturas da parede posterior e da cabeça.\n\n### Conduta\n- ==Redução urgente== (< 6 horas) sob anestesia: necrose de 3 a 15%, maior com atraso.\n- TC pós-redução: congruência, fragmentos interpostos (lábio invertido, cápsula, fragmento cartilaginoso).\n- Alargamento articular pós-redução = interposição: redução aberta.\n- Nervo ciático: lesão em 5 a 10%.\n\n> **Na prova:** luxação do quadril na criança = ==posterior==; < 5 anos com ==baixa energia==",
+  "correta": "**Posterior, baixa energia.**\n- Acetábulo cartilaginoso e frouxo.\n- Queda simples basta.",
   "incorretas": {
-   "A": "O desvio anterior não é o padrão mais comum na luxação traumática pediátrica do quadril, que costuma ser posterior.",
-   "B": "Além do erro quanto à direção do desvio, a luxação em crianças pequenas está associada a traumas de baixa energia, não de alta energia.",
-   "C": "A direção posterior está correta, mas em crianças menores de 5 anos a luxação costuma decorrer de traumas de baixa energia, não de alta energia."
+   "A": "**Anterior e alta.**\n- Posterior; baixa energia no pequeno.",
+   "B": "**Anterior.**\n- Posterior é o padrão.",
+   "C": "**Alta energia.**\n- Crianças maiores; não < 5 anos."
   },
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 36"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0538": {
