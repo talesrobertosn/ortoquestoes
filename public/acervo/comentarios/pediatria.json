@@ -474,119 +474,119 @@
   "conferido": false
  },
  "pediatria-0033": {
-  "conceito": "A avaliação clínica da discrepância de membros inferiores começa distinguindo comprimento real de comprimento aparente. O comprimento real busca medir diretamente o segmento entre referências ósseas do membro e é tradicionalmente obtido da espinha ilíaca anterossuperior ao maléolo medial. O comprimento aparente pode ser medido do umbigo ao maléolo medial e sofre maior influência da obliquidade pélvica. É essencial nivelar a pelve antes da medição e reconhecer que contraturas em adução, abdução ou flexão podem simular discrepâncias. O teste dos blocos sob o membro curto é extremamente útil para estimar discrepância funcional. Quando há necessidade de precisão ou planejamento cirúrgico, utiliza-se avaliação radiográfica de comprimento e métodos de previsão de crescimento.",
-  "correta": "A alternativa D está correta. A medida clínica clássica do comprimento real do membro inferior é feita entre a espinha ilíaca anterossuperior e o maléolo medial, mantendo a pelve alinhada e os membros posicionados de forma comparável.",
+  "conceito": "### Medida da discrepância\n| Medida | Pontos | O que mostra |\n|---|---|---|\n| ==real== (verdadeira) | ==EIAS ao maléolo medial== | comprimento ósseo |\n| aparente | umbigo (ou xifoide) ao maléolo medial | inclui obliquidade pélvica e contraturas |\n| blocos sob o pé | nivelar as cristas ilíacas | prática, funcional |\n| Galeazzi | joelhos com quadris fletidos | fêmur × tíbia |\n\n### Imagem\n- Escanometria / telerradiografia; TC (scanograma) com menos radiação.\n\n### Previsão na criança\n| Método | Uso |\n|---|---|\n| Moseley (gráfico de linha reta) | discrepância na maturidade |\n| Paley (multiplicador) | simples |\n| Green-Anderson | tabelas de crescimento |\n\n### Conduta pela discrepância prevista\n| Discrepância | Conduta |\n|---|---|\n| < 2 cm | nada ou palmilha |\n| 2 a 5 cm | ==epifisiodese== contralateral |\n| > 5 cm | alongamento |\n| > 15 a 20 cm | amputação/prótese |\n\n> **Na prova:** comprimento real = ==EIAS ao maléolo medial==.",
+  "correta": "**EIAS ao maléolo medial.**\n- Mede o comprimento ósseo.\n- Aparente usa o umbigo.",
   "incorretas": {
-   "A": "Trocanter maior até maléolo lateral não é a medida clínica padronizada do comprimento total real do membro.",
-   "B": "Apesar de o maléolo medial ser a referência distal tradicional, o ponto proximal utilizado é a espinha ilíaca anterossuperior, e não o trocanter maior.",
-   "C": "A espinha ilíaca anterossuperior está correta, porém a referência distal convencional é o maléolo medial, não o lateral."
+   "A": "**Referências erradas.**\n- Trocanter não é o ponto.",
+   "B": "**Proximal errado.**\n- Deve ser a EIAS.",
+   "C": "**Distal errado.**\n- Maléolo medial."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Leg Length Discrepancy. https://posna.org/physician-education/study-guide/leg-length-discrepancy-%28lld%29"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0034": {
-  "conceito": "O torcicolo muscular congênito decorre de encurtamento e fibrose unilateral do esternocleidomastoideo (ECM), gerando inclinação da cabeça para o lado afetado e rotação do queixo para o lado oposto. O tratamento inicial é conservador: orientação dos cuidadores, posicionamento, alongamento passivo, fortalecimento ativo e estímulo a padrões motores simétricos. O prognóstico depende principalmente da idade no início do tratamento, da amplitude passiva de movimento e da gravidade estrutural do ECM. Uma massa fibrosa e fibrose extensa indicam alteração muscular mais estabelecida; atraso no início da fisioterapia permite progressão de plagiocefalia, assimetria facial e compensações cervicais. A localização distal da fibrose no ECM é descrita como marcador de pior resposta ao tratamento conservador na literatura ortopédica clássica usada pela prova.",
-  "correta": "A alternativa D está correta. Fibrose no terço distal do esternocleidomastoideo indica uma forma estruturalmente mais rígida do torcicolo muscular congênito e se associa a pior resposta ao tratamento conservador. A fibrose reduz a extensibilidade muscular e dificulta recuperar rotação e inclinação cervical apenas com alongamentos. Isso não determina cirurgia de início: tratamento precoce e intensivo continua sendo a conduta inicial, mas a criança exige acompanhamento mais próximo para documentar ganho de amplitude e prevenção de assimetrias secundárias.",
+  "conceito": "### Torcicolo muscular congênito\n- Fibrose do ==esternocleidomastoideo== (ECM): cabeça inclinada para o lado afetado e queixo para o oposto.\n- Associação com ==DDQ== (examinar quadris), metatarso aduto, parto difícil.\n- ==Tumoração== (pseudotumor) no ECM nas primeiras semanas, que regride.\n\n### Tratamento\n- Alongamento e posicionamento: resolve a maioria (> 90%) se iniciado antes de 1 ano.\n- Cirurgia (tenotomia uni ou bipolar): após 1 ano sem resposta, déficit > 15° persistente.\n\n### Fatores de pior prognóstico do conservador\n| Fator |\n|---|\n| ==fibrose do ECM== (no US; ==terço distal== segundo a fonte da prova) |\n| déficit de rotação > 30° |\n| início do tratamento após 1 ano |\n| ECM todo acometido |\n\n### Diferenciais\n- Klippel-Feil, subluxação atlantoaxial, estrabismo (torcicolo ocular), tumor de fossa posterior, Sandifer (refluxo).\n\n> **Na prova:** pior prognóstico conservador = ==fibrose do terço distal do ECM== (veja o alerta).",
+  "correta": "**Fibrose do terço distal do ECM.**\n- Fibrose estabelecida responde mal a alongamento.\n- Critério didático da fonte (veja o alerta).",
   "incorretas": {
-   "A": "Plagiocefalia é uma associação frequente e pode refletir tempo prolongado em postura assimétrica. Ela merece tratamento e vigilância, mas isoladamente não é o fator muscular de pior prognóstico mais específico entre as alternativas.",
-   "B": "Idade inferior a um ano tende a ser favorável, pois o tratamento iniciado precocemente apresenta maior taxa de resolução. A idade avançada no começo da fisioterapia, e não a idade baixa, é fator de pior resposta.",
-   "C": "Uma tumoração no ECM, muitas vezes chamada pseudotumor do esternocleidomastoideo, indica a variante com massa, que pode demandar tratamento mais prolongado. Porém, a localização de fibrose distal é o fator prognóstico específico solicitado pelo gabarito da questão."
+   "A": "**Consequência.**\n- Plagiocefalia acompanha, não prediz falha.",
+   "B": "**Bom prognóstico.**\n- Tratar antes de 1 ano funciona.",
+   "C": "**Regride.**\n- Pseudotumor tende a desaparecer."
   },
+  "alerta": "Evidência recente confirma fibrose do ECM, maior déficit de amplitude e início tardio como fatores robustos de pior evolução. A associação específica com o terço distal do músculo deve ser entendida como critério didático da fonte usada pela prova.",
   "referencias": [
    "Diagnosis and habilitation of congenital muscular torticollis. https://pmc.ncbi.nlm.nih.gov/articles/PMC11827386/",
    "Congenital muscular torticollis: research and clinical practice. https://pmc.ncbi.nlm.nih.gov/articles/PMC6855899/",
    "Physical therapy guideline for congenital muscular torticollis. https://pmc.ncbi.nlm.nih.gov/articles/PMC8568067/"
   ],
-  "alerta": "Evidência recente confirma fibrose do ECM, maior déficit de amplitude e início tardio como fatores robustos de pior evolução. A associação específica com o terço distal do músculo deve ser entendida como critério didático da fonte usada pela prova.",
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0035": {
-  "conceito": "Fraqueza do quadríceps produz uma estratégia de marcha característica porque, durante a resposta à carga, o joelho tende naturalmente a flexionar e o quadríceps precisa gerar momento extensor para impedir colapso. Quando esse músculo é insuficiente, o paciente pode usar a mão sobre a face anterior da coxa para manter o joelho em extensão, substituindo externamente o momento extensor. Outra compensação é inclinar o tronco anteriormente para deslocar a linha de reação do solo anteriormente ao joelho. A observação da marcha deve sempre ser integrada ao teste manual de força, amplitude articular e exame neurológico. Essa estratégia é diferente da marcha escarvante por déficit de dorsiflexão e da marcha de insuficiência do glúteo máximo, em que a compensação predominante ocorre pelo tronco durante a extensão do quadril.",
-  "correta": "A alternativa C está correta. Apoiar a mão sobre a face anterior da coxa é uma manobra compensatória clássica da insuficiência do quadríceps: o paciente estabiliza mecanicamente o joelho em extensão durante a fase de apoio para evitar que ele colapse em flexão.",
+  "conceito": "### Marchas patológicas\n| Marcha | Achado | Causa |\n|---|---|---|\n| ==mão na coxa== | empurra a coxa para estender o joelho | ==quadríceps insuficiente== (pólio, Duchenne) |\n| glúteo máximo | tronco jogado para trás no apoio | extensor do quadril fraco |\n| Trendelenburg | pelve cai do lado oposto; tronco inclina para o lado do apoio | ==glúteo médio== |\n| escarvante (steppage) | eleva o joelho para o pé não arrastar | dorsiflexores fracos (fibular) |\n| atáxica | base alargada, instável | cerebelo |\n| antálgica | apoio curto | dor |\n| ceifante | circundução | espasticidade (hemiplegia) |\n\n> **Na prova:** mão na face anterior da coxa = ==insuficiência do quadríceps==.",
+  "correta": "**Insuficiência do quadríceps.**\n- A mão empurra a coxa e trava o joelho em extensão.",
   "incorretas": {
-   "A": "A marcha atáxica caracteriza-se por base alargada, variabilidade e dificuldade de coordenação, sem relação específica com apoio da mão sobre a coxa.",
-   "B": "A marcha escarvante resulta de déficit de dorsiflexores e apresenta elevação excessiva do joelho para permitir a passagem do pé durante o balanço.",
-   "D": "Na insuficiência do glúteo máximo, a estratégia clássica é inclinar o tronco posteriormente no início do apoio para reduzir a demanda extensora do quadril, não apoiar a mão na coxa."
+   "A": "**Cerebelar.**\n- Base alargada.",
+   "B": "**Dorsiflexores.**\n- Eleva o joelho.",
+   "D": "**Glúteo máximo.**\n- Tronco para trás."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Gait. https://posna.org/physician-education/study-guide/gait"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0036": {
-  "conceito": "A amioplasia é a forma clássica e mais reconhecível de artrogripose multiplex congênita. No membro superior, o padrão típico inclui ombros aduzidos e em rotação interna, cotovelos em extensão, antebraços pronados, punhos fletidos com desvio ulnar, dedos rígidos e polegares em palma. A compreensão do padrão é importante porque o tratamento não busca simplesmente normalizar a aparência; busca posicionar cada articulação para maximizar função e independência. A prioridade funcional inclui permitir levar a mão à boca, posicionar adequadamente o punho e obter preensão útil. Alongamentos, órteses e terapia começam precocemente; deformidades rígidas que limitam funções essenciais podem exigir liberações, osteotomias ou transferências musculares selecionadas.",
-  "correta": "A alternativa A está correta. Na amioplasia clássica, o conjunto típico é ombro em rotação interna, cotovelo em extensão e punho fletido, frequentemente associado a pronação do antebraço e desvio ulnar do punho.",
+  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n> **Na prova:** amioplasia = ombro ==aduzido e em RI==, cotovelo estendido, ==punho fletido==",
+  "correta": "**Rotação interna e punho fletido.**\n- Postura do \"policial pedindo gorjeta\".\n- Cotovelo estendido.",
   "incorretas": {
-   "B": "O punho fletido é compatível, mas a posição típica do ombro é rotação interna, e não externa.",
-   "C": "A rotação interna do ombro está correta, porém o punho classicamente encontra-se fletido, e não estendido.",
-   "D": "Tanto rotação externa do ombro quanto extensão do punho se afastam do padrão clássico da amioplasia."
+   "B": "**Rotação errada.**\n- É interna.",
+   "C": "**Punho errado.**\n- Fletido.",
+   "D": "**Duplamente errada.**\n- RE e punho estendido."
   },
   "referencias": [
    "Arthrogryposis: A Review and Update. https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/",
    "AMC: amyoplasia and distal arthrogryposis. https://pmc.ncbi.nlm.nih.gov/articles/PMC4661149/",
    "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 8"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0037": {
-  "conceito": "Os sinais clínicos da displasia do desenvolvimento do quadril mudam com a idade. Ortolani e Barlow têm maior utilidade no recém-nascido e no lactente jovem, quando ainda existe mobilidade suficiente para provocar ou reduzir a luxação. Com o passar dos meses, a contratura de adutores aumenta e a limitação da abdução torna-se um dos achados mais importantes. Ela é particularmente fácil de perceber quando unilateral, porque a comparação lado a lado revela assimetria. Em acometimento bilateral, ambos os lados podem estar igualmente limitados e a assimetria desaparece, exigindo atenção à amplitude absoluta. Em crianças maiores também podem aparecer discrepância de comprimento, sinal de Galeazzi, marcha claudicante, Trendelenburg e hiperlordose nos casos bilaterais.",
-  "correta": "A alternativa C está correta. A limitação da abdução é um sinal relevante de displasia do desenvolvimento do quadril e tende a ser mais evidente nas formas unilaterais porque existe um lado normal para comparação direta.",
+  "conceito": "### DDQ: exame conforme a idade\n| Idade | Achado útil |\n|---|---|\n| recém-nascido a 2-3 meses | ==Ortolani== (reduz) e ==Barlow== (luxa) |\n| ==após 3 meses== | ==limitação da abdução (Hart)==, Galeazzi, assimetria de pregas |\n| marcha | Trendelenburg, claudicação, hiperlordose (bilateral) |\n\n### Sinais\n| Sinal | O que é |\n|---|---|\n| ==Hart== | abdução limitada com quadril e joelho fletidos (adutores retraídos) |\n| Galeazzi | joelho mais baixo com quadris fletidos |\n| Peter-Bade | pregas assimétricas (pouco específico) |\n| Klisic | linha trocanter-EIAS passa abaixo do umbigo |\n\n### Imagem\n| Idade | Exame |\n|---|---|\n| < 4 a 6 meses | ultrassom (Graf) |\n| > 4 a 6 meses | radiografia (Hilgenreiner, Perkins, Shenton, índice acetabular) |\n\n### Bilateral\n- Abdução limitada ==simétrica== passa despercebida: a assimetria é o que chama atenção.\n- Na bilateral: hiperlordose, marcha anserina, períneo alargado.\n\n> **Na prova:** limitação da abdução = ==mais evidente na DDQ unilateral==",
+  "correta": "**Mais evidente na unilateral.**\n- A assimetria salta aos olhos.\n- Na bilateral é simétrica e engana.",
   "incorretas": {
-   "A": "A limitação da abdução é clinicamente relevante, especialmente após os primeiros meses de vida, quando Ortolani e Barlow tornam-se menos sensíveis.",
-   "B": "Nas formas bilaterais ela pode ser menos óbvia por ausência de assimetria, mas não é necessariamente imperceptível; a amplitude absoluta pode estar reduzida bilateralmente.",
-   "D": "Hiperlordose pode ocorrer em luxações bilaterais tardias, mas a importância da limitação de abdução não depende desse sinal."
+   "A": "**Relevante.**\n- Sinal mais confiável após 3 meses.",
+   "B": "**Não imperceptível.**\n- Menos evidente, mas presente.",
+   "D": "**Relevante sozinho.**\n- Não depende da lordose."
   },
   "referencias": [
    "Developmental dysplasia of the hip. https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/",
    "Developmental Dysplasia of the Hip: Controversies in Management. https://pmc.ncbi.nlm.nih.gov/articles/PMC9276911/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 13"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0038": {
-  "conceito": "Na doença de Legg-Calvé-Perthes, a classificação de **Catterall** estima a extensão do comprometimento epifisário: o **grupo IV** corresponde ao acometimento de toda a cabeça femoral (100%), o padrão mais extenso e de pior prognóstico. Já a fase evolutiva da doença (classificação de Waldenström) descreve o aspecto radiográfico ao longo do tempo: a **fase de fragmentação**, com aspecto irregular e heterogêneo da epífise (áreas mais radiolucentes intercaladas com áreas mais densas), diferente da fase de reossificação, em que já se observa a formação de osso novo mais organizado e homogêneo. A imagem mostra o colapso de toda a cabeça femoral, com aspecto fragmentado e irregular, compatível com o grupo IV em fase de fragmentação.",
-  "correta": "C. A imagem corresponde ao tipo IV com fragmentação.",
+  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Catterall\n| Grupo | Epífise acometida |\n|---|---|\n| I | só anterior, sem colapso |\n| II | anterior com sequestro, pilares preservados |\n| III | maior parte, só pequena porção posterior preservada |\n| ==IV== | ==epífise inteira== |\n\n### Sinais de cabeça em risco\n- Gage (V lateral), calcificação lateral, subluxação lateral, metáfise com cistos, fise horizontal.\n\n> **Na prova:** figura = ==Catterall IV em fragmentação==",
+  "correta": "**IV com fragmentação.**\n- Toda a epífise acometida.\n- Fase de fragmentação na imagem.",
   "incorretas": {
-   "A": "O grupo **III** corresponde a um acometimento de 50 a 75% da cabeça femoral, uma extensão menor do que o colapso completo da cabeça mostrado na imagem.",
-   "B": "Além da extensão (III, não IV), a fase de **reossificação** mostraria um aspecto mais organizado, com formação de osso novo, diferente da irregularidade fragmentada mostrada.",
-   "D": "O grupo IV está correto quanto à extensão, mas o aspecto irregular e heterogêneo mostrado na imagem é mais compatível com a fase de fragmentação do que com a fase de reossificação, em que a densidade óssea já se apresenta mais uniforme."
+   "A": "**Grupo errado.**\n- Há acometimento total.",
+   "B": "**Grupo e fase errados.**\n- Não é reossificação.",
+   "D": "**Fase errada.**\n- Ainda fragmentando."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0039": {
-  "conceito": "A doença de **Freiberg** é uma osteocondrose do centro de ossificação da cabeça do metatarso, mais comumente o segundo, que se manifesta tipicamente em adolescentes do sexo feminino com dor no antepé e claudicação. Radiograficamente, observa-se achatamento, esclerose e irregularidade da cabeça metatarsal acometida, achado compatível com o observado na radiografia apresentada.",
-  "correta": "D. O diagnóstico mais provável é a doença de Freiberg.",
+  "conceito": "### Osteocondroses e apofisites do pé\n| Epônimo | Local | Idade/perfil |\n|---|---|---|\n| ==Köhler== | ==navicular== | meninos de 4 a 7 anos; autolimitada |\n| ==Iselin== | ==base do 5º metatarso== (fibular curto) | adolescente ativo |\n| Freiberg | cabeça do 2º metatarso | adolescente feminina |\n| Sever | apófise do calcâneo (tendão calcâneo) | 8 a 12 anos, esportes |\n| Renander | sesamoide do hálux | |\n\n### Köhler\n- Navicular achatado, esclerótico, fragmentado.\n- Tratamento: bota gessada curta alivia a dor; reossifica sem sequela.\n\n### Iselin\n- Não confundir apófise (longitudinal) com fratura (transversa).\n\n### Freiberg\n- Osteonecrose da ==cabeça do 2º metatarso== (às vezes 3º); ==adolescente feminina==.\n- 2º MT longo e fixo; salto alto.\n- RX: achatamento, esclerose, fragmentação da cabeça.\n- Tratamento: descarga, palmilha; cirurgia (desbridamento, osteotomia de Gauthier em cunha dorsal).\n\n> **Na prova:** adolescente de 15 anos com cabeça do 2º MT achatada = ==Freiberg==",
+  "correta": "**Freiberg.**\n- Cabeça do 2º metatarso.\n- Meninas adolescentes.",
   "incorretas": {
-   "A": "A doença de **Sever** é uma apofisite de tração do calcâneo, causando dor no calcanhar, uma localização diferente da cabeça metatarsal mostrada.",
-   "B": "A doença de **Iselin** é uma apofisite de tração da base do quinto metatarso, uma localização diferente (base, não cabeça) da mostrada na imagem.",
-   "C": "A doença de **Köhler** acomete o osso navicular tarsal (região do médio-pé), uma localização diferente da cabeça do metatarso mostrada na imagem."
+   "A": "**Calcâneo.**\n- 8 a 12 anos.",
+   "B": "**Base do 5º MT.**\n- Apofisite.",
+   "C": "**Navicular.**\n- 4 a 7 anos."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0040": {
-  "conceito": "Recidiva do pé torto após tratamento pelo método de Ponseti deve ser reconhecida cedo. O primeiro princípio é recuperar a correção por manipulação e novos gessos seriados sempre que a deformidade ainda for corrigível. A transferência do tibial anterior é indicada posteriormente em crianças selecionadas com supinação dinâmica recorrente e pé passivamente corrigível; não substitui o tratamento da deformidade estrutural. Nova tenotomia do Aquiles pode ser necessária se permanecer equino após a correção dos componentes CAVE, mas não constitui isoladamente o tratamento padrão de toda recidiva. Grandes liberações de partes moles são reservadas para casos resistentes. A principal causa evitável de recidiva é baixa adesão à órtese de abdução.",
-  "correta": "A alternativa B está correta. Na recidiva precoce, a primeira estratégia é repetir o método de Ponseti com manipulações e gessos seriados, restaurando progressivamente a correção antes de considerar procedimentos adicionais.",
+  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n> **Na prova:** recidiva precoce = ==repetir Ponseti com gessos seriados==",
+  "correta": "**Ponseti com gessos seriados.**\n- A recidiva ainda é flexível e responde.\n- Tenotomia se o equino persistir; órtese depois.",
   "incorretas": {
-   "A": "A transferência do tibial anterior é útil para supinação dinâmica em crianças mais velhas depois que o pé está passivamente corrigido; não é o tratamento inicial de uma recidiva precoce estrutural.",
-   "C": "Tenotomia do Aquiles pode integrar o retratamento quando persiste equino, mas isoladamente não corrige adução, varo, cavo e demais componentes da recidiva.",
-   "D": "Liberações extensas de partes moles e procedimentos ósseos não são primeira escolha quando a recidiva pode ser corrigida novamente por técnicas de Ponseti."
+   "A": "**Dinâmica em criança maior.**\n- Só com pé corrigido e flexível.",
+   "C": "**Complemento.**\n- Parte do Ponseti se o equino não cede.",
+   "D": "**Último recurso.**\n- Rígido e resistente."
   },
   "referencias": [
    "Clubfoot. StatPearls/NCBI Bookshelf. https://www.ncbi.nlm.nih.gov/books/NBK551574/",
    "Pediatric Orthopaedic Society of North America (POSNA). Clubfoot. https://posna.org/physician-education/study-guide/clubfoot",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 29"
   ],
-  "conferido": false,
-  "geradoEm": "2026-09-13"
+  "geradoEm": "2026-09-24",
+  "conferido": false
  },
  "pediatria-0041": {
   "conceito": "A marcha humana utiliza movimentos coordenados da pelve, quadril, joelho e tornozelo para aumentar o comprimento efetivo do passo e suavizar a trajetória do centro de massa. A rotação pélvica no plano transverso avança anteriormente o lado do membro em progressão, contribuindo para alongar funcionalmente o membro e o passo sem exigir aumento equivalente da flexão do quadril. Na descrição clássica dos determinantes da marcha, esse movimento ajuda a reduzir a excursão vertical do centro de massa. Estudos biomecânicos modernos mostram que a contribuição quantitativa da rotação pélvica para essa redução é menor do que inicialmente proposto, mas o princípio cinemático permanece válido e é o que a questão explora.",
