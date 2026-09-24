@@ -8014,5 +8014,657 @@
     ],
     "geradoEm": "2026-09-24",
     "conferido": false
+  },
+  "pediatria-0649": {
+    "conceito": "### Pronação dolorosa (cotovelo da babá)\n- Criança de 1 a 4 anos, depois de uma **tração longitudinal** com o antebraço em pronação.\n- O ==ligamento anular== escorrega sobre a cabeça do rádio, que ainda é pequena, e fica interposto na articulação radiocapitelar.\n- Criança mantém o braço junto ao corpo, em pronação, sem usar a mão; a radiografia é normal.\n- Redução: **hiperpronação** (mais eficaz) ou supinação com flexão, sentindo o estalo.\n\n> **Na prova:** o que subluxa é o ==ligamento anular==.",
+    "correta": "**Do ligamento anular do rádio.**",
+    "incorretas": {
+      "A": "A **radioulnar proximal** não luxa; é o ligamento que desliza.",
+      "B": "A **capitulorradial** fica apenas com o ligamento interposto.",
+      "D": "O **colateral lateral** não participa."
+    },
+    "referencias": [
+      "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott. 5th ed., p. 1484 (referência indicada na prova TARO 2011, questão 36)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0650": {
+    "conceito": "### Por que a triplanar acontece\n- É uma fratura **transicional**: só ocorre no adolescente, na janela de fechamento da fise distal da tíbia (cerca de 18 meses).\n- A fise fecha numa ==sequência previsível==: central → medial → lateral.\n- A parte ainda aberta (anterolateral) rompe sob **rotação externa**, e o traço segue os três planos.\n- A mesma lógica explica a fratura de **Tillaux**.\n\n> **Na prova:** o padrão é definido pela ==sequência de fechamento da fise==.",
+    "correta": "**A sequência de fechamento da placa fisária da tíbia.**",
+    "incorretas": {
+      "A": "O mecanismo é **indireto**, por rotação externa.",
+      "B": "A **espessura do periósteo** não determina o padrão.",
+      "C": "A **diferença de diâmetro** entre tíbia e fíbula não explica o padrão."
+    },
+    "referencias": [
+      "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott. 3rd ed., p. 1506 (referência indicada na prova TARO 2011, questão 40)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0651": {
+    "conceito": "### Delbet e necrose avascular\n- Risco de osteonecrose conforme o tipo:\n  - **I (transepifisária):** até cerca de 90–100% com luxação;\n  - **II (transcervical):** cerca de 50%;\n  - **III (cervicotrocantérica):** cerca de 25%;\n  - ==IV (intertrocantérica): cerca de 10%==, o menor risco.\n- Quanto mais distal o traço, mais preservada a circulação epifisária.\n\n> **Na prova:** menor necrose = ==Delbet IV==.",
+    "correta": "**Tipo IV.**",
+    "incorretas": {
+      "A": "**Tipo I** tem o maior risco.",
+      "B": "**Tipo II** tem risco alto, cerca de 50%.",
+      "C": "**Tipo III** tem risco intermediário."
+    },
+    "referencias": [
+      "Rockwood and Wilkins, Fractures in Children. 6th ed., pg. 874 (referência indicada na prova TARO 2011, questão 54)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0652": {
+    "conceito": "### Cúbito varo após supracondiliana\n- É a complicação tardia mais comum da fratura supracondiliana.\n- Causa principal: ==consolidação viciosa==, por redução imperfeita com rotação medial e inclinação em varo do fragmento distal.\n- **Lesão fisária** com crescimento assimétrico é causa rara.\n- É sobretudo estético, mas pode associar-se a instabilidade posterolateral e a neuropatia do ulnar; o tratamento é a osteotomia supracondiliana.\n\n> **Na prova:** cúbito varo = ==consolidação viciosa==, não distúrbio de crescimento.",
+    "correta": "**Consolidação viciosa.**",
+    "incorretas": {
+      "A": "**Lesão fisária** é causa rara.",
+      "B": "**Pseudartrose** da supracondiliana é excepcional.",
+      "C": "**Necrose avascular** da tróclea causa deformidade em rabo de peixe, não o varo típico."
+    },
+    "referencias": [
+      "Rockwood and Wilkins. Fractures in Children. Philadelphia: Lippincott. 5th ed., p. 611 (referência indicada na prova TARO 2011, questão 63)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0653": {
+    "conceito": "### Sobrecrescimento ósseo no coto da criança\n- É a complicação mais comum da amputação **transdiafisária** na criança.\n- A extremidade óssea cresce por aposição e fura as partes moles, formando uma espícula dolorosa.\n- Ordem de frequência: ==úmero== > fíbula > tíbia > fêmur.\n- Prevenção e tratamento: **desarticulação** quando possível, revisão do coto ou capa epifisária (técnica de Marquardt).\n\n> **Na prova:** sobrecrescimento mais comum = ==úmero==.",
+    "correta": "**No úmero.**",
+    "incorretas": {
+      "B": "**Rádio** é menos frequente.",
+      "C": "**Fêmur** é o menos frequente entre os ossos longos principais.",
+      "D": "**Tíbia** vem depois do úmero e da fíbula."
+    },
+    "referencias": [
+      "Canale S. T. Campbell's operative orthopaedics. St. Louis: Mosby. 10th ed., p. 551 (referência indicada na prova TARO 2011, questão 68)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0654": {
+    "conceito": "### Fise distal do fêmur\n- O tipo mais frequente é o ==Salter-Harris II==, com fragmento de Thurston-Holland.\n- Mesmo os tipos I e II têm **alto risco de distúrbio de crescimento** (30–50%), pela fise larga e ondulada.\n- Fixação com parafusos pelo fragmento metafisário, sem atravessar a fise quando possível.\n\n> **Na prova:** fêmur distal = ==SH II== é o mais comum, com prognóstico pior que em outras fises.",
+    "correta": "**Tipo II.**",
+    "incorretas": {
+      "A": "**Tipo I** é mais comum no recém-nascido e no lactente.",
+      "C": "**Tipo III** é menos comum, típico do trauma em valgo do adolescente.",
+      "D": "**Tipo IV** é raro."
+    },
+    "referencias": [
+      "Rockwood and Wilkins. Fractures in Children. Philadelphia: Lippincott. 6th ed., p. 940 (referência indicada na prova TARO 2011, questão 96)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0655": {
+    "conceito": "### Acesso ao côndilo lateral\n- Via **lateral** (Kocher estendida): exposição da superfície articular pela face **anterior**.\n- Evitar a dissecção ==posterior== do fragmento: a irrigação do côndilo e da tróclea lateral entra por trás, e desinseri-la causa **necrose avascular**.\n- Fixação com fios de Kirschner divergentes ou parafuso metafisário.\n\n> **Na prova:** côndilo lateral = não descolar ==posteriormente==.",
+    "correta": "**Posterior.**",
+    "incorretas": {
+      "A": "A dissecção **distal** não é a restrição clássica.",
+      "B": "A dissecção **medial** não é a restrição clássica.",
+      "C": "A face **anterior** é justamente por onde se expõe e reduz a articulação."
+    },
+    "referencias": [
+      "Rockwood and Wilkins. Fractures in Children. Philadelphia: Lippincott. 6th ed., p. 600 (referência indicada na prova TARO 2011, questão 100)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0656": {
+    "conceito": "### Luxação congênita da cabeça do rádio\n- Rara, frequentemente **bilateral** e associada a síndromes.\n- Desvio mais comum: ==posterior== (seguido de anterior e lateral).\n- Diferenças em relação à traumática (Monteggia não diagnosticado):\n  - cabeça **convexa** e pequena;\n  - capítulo hipoplásico;\n  - ulna sem deformidade de fratura.\n- Tratamento: observação; ressecção da cabeça no adulto com dor.\n\n> **Na prova:** congênita = ==posterior==; Monteggia antigo costuma ser anterior.",
+    "correta": "**Posterior.**",
+    "incorretas": {
+      "A": "**Anterior** é mais típico da lesão traumática (Monteggia I).",
+      "C": "**Medial** é raro.",
+      "D": "**Lateral** é menos comum."
+    },
+    "referencias": [
+      "Lovell and Winter’s Pediatric Orthopaedics, 6th Ed., p. 934 (referência indicada na prova TARO 2012, questão 1)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0657": {
+    "conceito": "### Epidemiologia das fraturas na criança\n- As mais frequentes são as do **antebraço distal**.\n- A **clavícula** responde por cerca de ==10–15%== das fraturas da infância e da adolescência. O estudo de Guarniero et al. (RBO, 2011) encontrou índice em torno de 11%.\n- É a fratura mais comum do **recém-nascido** (tocotrauma).\n\n> **Na prova:** clavícula = cerca de ==11%== das fraturas pediátricas.",
+    "correta": "**11%.**",
+    "incorretas": {
+      "A": "**3%** subestima.",
+      "C": "**19%** superestima.",
+      "D": "**27%** se aproxima da frequência do antebraço distal, não da clavícula."
+    },
+    "referencias": [
+      "RBO, VOL 46, SUPLEMENTO 4, NOV- DEZ 2011, p. 35 (referência indicada na prova TARO 2012, questão 15)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0658": {
+    "conceito": "### Cotovelo flutuante na criança\n- Supracondiliana do úmero com fratura ipsilateral do antebraço (em geral o rádio distal).\n- Na série de Soni et al., a supracondiliana mais associada foi a ==Gartland III fechada==.\n- **Alto risco de síndrome compartimental**: fixação percutânea dos dois níveis e evitar gesso circular apertado.\n\n> **Na prova:** cotovelo flutuante = ==Gartland III fechada== + vigilância compartimental.",
+    "correta": "**III, fechada.**",
+    "incorretas": {
+      "A": "**Tipo II aberta** é rara.",
+      "B": "Fraturas **abertas** são minoria.",
+      "C": "**Tipo II** é menos associado ao cotovelo flutuante."
+    },
+    "referencias": [
+      "RBO, VOL 46, SUPLEMENTO 4, NOV-DEZ-2011, p. 52 (referência indicada na prova TARO 2012, questão 16)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0659": {
+    "conceito": "### Equivalentes de Monteggia\n- Bado classificou pela direção da cabeça do rádio:\n  - I anterior;\n  - II posterior;\n  - III ==lateral==;\n  - IV anterior com fratura dos dois ossos.\n- Equivalentes trocam a luxação da cabeça por **fratura do colo do rádio** e a fratura da ulna por **deformidade plástica** ou fratura do olécrano.\n- Colo do rádio desviado lateralmente + olécrano em **varo** = equivalente do ==tipo III==, produzido por força em varo.\n\n> **Na prova:** desvio lateral + varo do olécrano = ==Bado III==.",
+    "correta": "**Tipo III.**",
+    "incorretas": {
+      "A": "**Tipo I** tem desvio anterior.",
+      "B": "**Tipo II** tem desvio posterior.",
+      "D": "**Tipo IV** exige fratura dos dois ossos."
+    },
+    "referencias": [
+      "Rockwood & Wilkins' – Fractures in Children, 6th Ed., p. 451 (referência indicada na prova TARO 2012, questão 17)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0660": {
+    "conceito": "### Torode e Zieg modificada\n- **I:** avulsões.\n- **II:** asa do ilíaco.\n- **IIIa:** fraturas simples do anel anterior.\n- **IIIb:** anterior e posterior, estáveis.\n- **IV:** ruptura instável do anel:\n  - IVa: ramos bilaterais;\n  - ==IVb: ramo anterior com lesão posterior== (sacroilíaca ou sacro);\n  - IVc: acetábulo.\n\n> **Na prova:** ramo + elemento posterior = ==4b==.",
+    "correta": "**4b.**",
+    "incorretas": {
+      "A": "**1c** não é um tipo da classificação.",
+      "B": "**Tipo 2** é fratura da asa do ilíaco.",
+      "C": "**3a** é fratura simples do anel anterior."
+    },
+    "referencias": [
+      "Rockwood & Wilkins'– Fractures in Children, 6th Ed., p. 836 (referência indicada na prova TARO 2012, questão 18)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0661": {
+    "conceito": "### Tuberosidade anterior da tíbia\n- **Watson-Jones modificada por Ogden:**\n  - I: fratura distal pela apófise;\n  - II: traço até a junção da apófise com a epífise;\n  - III: traço cruza a epífise até a **articulação** = ==Salter-Harris III==;\n  - IV: envolve toda a fise proximal (SH II ou IV);\n  - V: avulsão periosteal.\n- Tipo III é intra-articular: redução aberta e fixação.\n\n> **Na prova:** Watson-Jones III = ==SH III==.",
+    "correta": "**Tipo III.**",
+    "incorretas": {
+      "A": "**SH II** corresponde ao Ogden IV.",
+      "C": "**SH IV** não é a equivalência do tipo III.",
+      "D": "**SH V** é compressão, não se aplica."
+    },
+    "referencias": [
+      "Jupiter J.: Skeletal Trauma, 3 Ed., p. 458 (referência indicada na prova TARO 2012, questão 19)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0662": {
+    "conceito": "### Aparência da fratura triplanar\n- **AP:** traço vertical pela epífise e horizontal pela fise, aspecto de ==SH III==.\n- **Perfil:** fragmento metafisário posterior, aspecto de ==SH II==.\n- Na realidade é uma lesão em três planos (sagital, axial e coronal); a **TC** define os fragmentos e o degrau.\n\n> **Na prova:** triplanar = ==III no AP e II no perfil==.",
+    "correta": "**III e II.**",
+    "incorretas": {
+      "B": "Inverte as incidências.",
+      "C": "**IV** não é a aparência típica.",
+      "D": "**V** não se aplica."
+    },
+    "referencias": [
+      "Rockwood & Wilkins' - Fractures in Children, 6 Ed., p. 1083 (referência indicada na prova TARO 2012, questão 20)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0663": {
+    "conceito": "### Zona de calcificação provisória\n- Fica no fim da camada **hipertrófica**, junto à metáfise.\n- Eventos: produção e calcificação de matriz, hipertrofia celular, invasão vascular e ==apoptose== dos condrócitos.\n- A matriz calcificada serve de molde para os osteoblastos da esponjosa primária.\n\n> **Na prova:** calcificação provisória = hipertrofia + ==apoptose==.",
+    "correta": "**Apoptose.**",
+    "incorretas": {
+      "A": "**Mitose** caracteriza a zona **proliferativa**.",
+      "B": "**Meiose** não ocorre em células somáticas.",
+      "C": "**Encondrose** não é um evento dessa zona."
+    },
+    "referencias": [
+      "Rockwood & Wilkins' - Fractures in Children, 6 Ed., p. 100 (referência indicada na prova TARO 2012, questão 21)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0664": {
+    "conceito": "### Sinostose radioulnar pós-traumática\n- Fatores de risco:\n  - ==trauma de alta energia==, cominuição e **fratura exposta**;\n  - fraturas dos dois ossos no mesmo nível;\n  - lesão da membrana interóssea;\n  - traumatismo craniano;\n  - acesso único para os dois ossos, enxerto ou parafuso que invade o espaço interósseo.\n- Na lesão de Monteggia, a sinostose é mais associada ao **trauma de alta energia** com exposição.\n\n> **Na prova:** sinostose = sobretudo ==alta energia/exposta==.",
+    "correta": "**Lesão por trauma de alta energia com exposição óssea.**",
+    "incorretas": {
+      "A": "**Enxertia** é fator de risco, mas menos frequente.",
+      "C": "A **redução não anatômica** limita a rotação, mas não é a causa principal da sinostose.",
+      "D": "**Parafuso longo** é fator de risco técnico, menos comum."
+    },
+    "referencias": [
+      "Jupiter J.: Skeletal Trauma, 3th Ed., p. 1388 (referência indicada na prova TARO 2012, questão 30)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0665": {
+    "conceito": "### Deformidade plástica do antebraço\n- Remodela pouco, principalmente depois dos 4 anos.\n- Critério clássico de correção: deformidade ==acima de 20° em criança com mais de 4 anos==, ou deformidade que bloqueie a rotação.\n- Técnica: redução fechada sob anestesia, com pressão lenta e contínua sobre um apoio.\n\n> **Na prova:** reduzir quando ==mais de 20° e mais de 4 anos==.",
+    "correta": "**20° e faixa etária acima de quatro anos.**",
+    "incorretas": {
+      "A": "**10°** remodela.",
+      "B": "**Abaixo de 4 anos** o potencial de remodelação é maior.",
+      "C": "**10° abaixo de 4 anos** remodela."
+    },
+    "referencias": [
+      "Jupiter J.: Skeletal Trauma, 3th Ed., p. 177 (referência indicada na prova TARO 2012, questão 31)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0666": {
+    "conceito": "### Isquemia de Volkmann na supracondiliana\n- Contratura isquêmica do antebraço por síndrome compartimental ou lesão arterial.\n- Historicamente associada à imobilização em ==gesso com flexão acentuada do cotovelo==, que comprime a artéria braquial e aumenta a pressão no antebraço.\n- Com a redução fechada e **fixação percutânea**, o cotovelo fica em flexão menor, e a incidência caiu muito.\n\n> **Na prova:** Volkmann = ==gesso em hiperflexão==.",
+    "correta": "**Gesso com flexão do cotovelo.**",
+    "incorretas": {
+      "A": "A **tração** mantém o cotovelo sem flexão forçada.",
+      "B": "A **redução aberta** não está associada ao aumento do risco.",
+      "D": "A **fixação percutânea** reduziu a incidência."
+    },
+    "referencias": [],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0667": {
+    "conceito": "### Redução do úmero proximal na criança\n- O fragmento proximal fica em **abdução e rotação lateral** (manguito) e flexão.\n- A distal deve ser levada até ele: ==abdução, flexão e rotação lateral== (posição de \"saudação\").\n- Na maioria dos casos se aceita a deformidade, pelo enorme potencial de remodelação.\n\n> **Na prova:** redução em abdução + ==flexão + rotação lateral==.",
+    "correta": "**Flexão com rotação lateral.**",
+    "incorretas": {
+      "A": "**Extensão** não alinha o fragmento distal.",
+      "B": "**Rotação medial** afasta do fragmento proximal.",
+      "C": "**Extensão e rotação medial** são o oposto."
+    },
+    "referencias": [],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0668": {
+    "conceito": "### CRITOE aos 7 anos\n- Idades aproximadas de aparecimento:\n  - Capítulo: 1 ano;\n  - Rádio (cabeça): 3–5;\n  - epicôndilo medial (Interno): 5–7;\n  - Tróclea: 7–9;\n  - Olécrano: 8–10;\n  - Epicôndilo lateral (Externo): 10–11.\n- Aos 7 anos: ==capítulo, cabeça do rádio e epicôndilo medial==.\n- Se houver núcleo da tróclea sem o do epicôndilo medial, desconfiar de **epicôndilo medial encarcerado** na articulação.\n\n> **Na prova:** 7 anos = ==C, R, I==.",
+    "correta": "**Epicôndilo medial, cabeça do rádio e capítulo.**",
+    "incorretas": {
+      "A": "**Epicôndilo lateral** aparece por volta dos 10–11 anos.",
+      "B": "O **olécrano** só aparece aos 8–10 anos.",
+      "C": "**Epicôndilo lateral e tróclea** ainda não aparecem aos 7 anos."
+    },
+    "referencias": [],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0669": {
+    "conceito": "### Encurvamentos da tíbia na criança\n- **Anterolateral:** ==pseudartrose congênita da tíbia== (neurofibromatose tipo 1). Não corrige, e a osteotomia é contraindicada.\n- **Posteromedial:** benigno, corrige espontaneamente, mas deixa **discrepância de comprimento**.\n- **Anteromedial:** hemimelia fibular.\n\n> **Na prova:** anterolateral = ==pseudartrose congênita/NF1==.",
+    "correta": "**Ântero-lateral.**",
+    "incorretas": {
+      "B": "**Anteromedial** associa-se à hemimelia fibular.",
+      "C": "**Posteromedial** é benigno e remodela.",
+      "D": "**Posterolateral** não é o padrão descrito."
+    },
+    "referencias": [
+      "Herring: Tachdjian’s Pediatric Orthopaedics, 4th Ed., p. 1007 (referência indicada na prova TARO 2013, questão 7)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0670": {
+    "conceito": "### Torcicolo muscular congênito\n- Fibrose do esternocleidomastoideo, ligada a mau posicionamento intrauterino ou parto difícil; associa-se a displasia do quadril.\n- A \"oliva\" (pseudotumor) aparece nas primeiras semanas, geralmente na porção ==esternal== (cabeça esternal).\n- Cabeça inclinada para o lado afetado e mento rodado para o lado oposto.\n- Tratamento: alongamento (90% resolvem); cirurgia (liberação bipolar) se persistir após 1 ano.\n\n> **Na prova:** acometimento mais comum = ==inserção esternal==.",
+    "correta": "**Na inserção esternal.**",
+    "incorretas": {
+      "A": "O acometimento difuso das **três porções** é menos comum.",
+      "C": "A **inserção occipital** (mastoide) raramente é o local da fibrose.",
+      "D": "A **inserção clavicular** é menos comum."
+    },
+    "referencias": [
+      "Canale : Campbell’s Operative Orthopaedics, 12th Ed., p.1233 (referência indicada na prova TARO 2013, questão 14)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0671": {
+    "conceito": "### Pseudartrose do côndilo lateral\n- Evolui para **cúbito valgo** progressivo e paralisia **tardia do ulnar**.\n- Critérios de **Flynn** para fixar a pseudartrose:\n  - ==fragmento metafisário grande==;\n  - desvio **menor que 1 cm**;\n  - fise ainda aberta.\n- Fora disso (desvio grande, fragmento pequeno), a fixação arrisca necrose e rigidez. Preferem-se osteotomia corretiva do valgo e transposição do ulnar.\n\n> **Na prova:** Flynn = fixar quando o ==fragmento metafisário é grande== e o desvio é menor que 1 cm.",
+    "correta": "**Grande fragmento metafisário.**",
+    "incorretas": {
+      "A": "**Degrau articular** não é critério de Flynn.",
+      "C": "**Cúbito valgo com paralisia ulnar** indica osteotomia e transposição, não fixação.",
+      "D": "**Diástase acima de 1 cm** é contraindicação à fixação."
+    },
+    "referencias": [
+      "Rockwood and Wilkins's fractures in Children. 6th., p. 604 (referência indicada na prova TARO 2013, questão 15)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0672": {
+    "conceito": "### Epifisiólise e endocrinopatias\n- Suspeitar de causa endócrina em criança **abaixo de 10 anos**, peso normal ou baixa estatura.\n- Associações:\n  - ==hipotireoidismo==;\n  - ==deficiência de GH== (e também sua reposição);\n  - hipogonadismo e pan-hipopituitarismo;\n  - osteodistrofia renal.\n- Nesses casos, alto risco de **bilateralidade**: considerar fixação profilática contralateral.\n\n> **Na prova:** epifisiólise endócrina = ==hipotireoidismo + deficiência de GH==.",
+    "correta": "**Hipotireoidismo e a deficiência do GH.**",
+    "incorretas": {
+      "A": "O GH elevado aparece no contexto da reposição, mas a associação clássica é a **deficiência**.",
+      "C": "**Hipertireoidismo** não é associação clássica.",
+      "D": "**Hipertireoidismo** não é associação clássica."
+    },
+    "referencias": [
+      "Lovell and Winter’s Pediatric Orthopaedics, 6th Ed., p. 1087 (referência indicada na prova TARO 2013, questão 17)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0673": {
+    "conceito": "### Diâmetro das hastes flexíveis\n- Regra: cada haste com cerca de ==40% do diâmetro do istmo==.\n- Duas hastes = cerca de 80% de preenchimento.\n- Canal de 6 mm: 0,4 × 6 = 2,4 mm → hastes de ==2,5 mm==.\n- Hastes de mesmo diâmetro para não criar forças assimétricas.\n\n> **Na prova:** diâmetro = ==0,4 × canal==.",
+    "correta": "**2,5 mm.**",
+    "incorretas": {
+      "A": "**2,0 mm** preenche pouco.",
+      "C": "**3,0 mm** passa de 40% (50%).",
+      "D": "**3,5 mm** não passaria bem pelo canal."
+    },
+    "referencias": [
+      "Rockwood and Wilkins's fractures in Children. 7th Ed., p. 811 (referência indicada na prova TARO 2013, questão 24)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0674": {
+    "conceito": "### Deformidade plástica\n- Encurvamento ósseo sem traço visível, por microfraturas longitudinais.\n- Mais comum na ==ulna==, seguida do rádio (antebraço).\n- Pode acompanhar a luxação da cabeça do rádio (equivalente de Monteggia): **sempre radiografar o cotovelo**.\n\n> **Na prova:** deformidade plástica = ==ulna==.",
+    "correta": "**Na ulna.**",
+    "incorretas": {
+      "B": "O **rádio** é o segundo.",
+      "C": "O **úmero** raramente tem deformidade plástica.",
+      "D": "A **clavícula** raramente tem deformidade plástica."
+    },
+    "referencias": [
+      "Herring: Tachdjian’s Pediatric Orthopaedics, 2nd Ed., p. 3195 (referência indicada na prova TARO 2013, questão 25)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0675": {
+    "conceito": "### Complicações da fratura proximal do fêmur na criança\n- A mais frequente e mais grave é a ==osteonecrose==, em cerca de 30% no geral e mais nas Delbet I e II.\n- Outras:\n  - coxa vara (cerca de 20%);\n  - fechamento fisário precoce;\n  - pseudartrose.\n\n> **Na prova:** complicação mais frequente = ==osteonecrose==.",
+    "correta": "**A osteonecrose da cabeça femoral.**",
+    "incorretas": {
+      "A": "**Coxa vara** é a segunda.",
+      "B": "**Pseudartrose** é menos comum.",
+      "C": "O **fechamento precoce** costuma acompanhar a necrose ou os pinos transfisários."
+    },
+    "referencias": [
+      "Rockwood and Wilkins's fractures in Children, 6th Ed., p. 874 (referência indicada na prova TARO 2013, questão 31)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0676": {
+    "conceito": "### Órtese de abdução pós-Ponseti\n- Barra com sapatos na largura dos ombros.\n- Lado afetado em ==60–70° de rotação lateral== e lado normal em 30–40°.\n- ==Dorsiflexão de 10–15°==, pela curvatura da barra.\n- Uso: 23 horas por dia por 3 meses; depois noites e sestas até os 4–5 anos.\n- A causa mais comum de recidiva é a **não adesão** à órtese.\n\n> **Na prova:** órtese = ==70° de rotação lateral e 10° de dorsiflexão==.",
+    "correta": "**70º de rotação lateral e 10º de dorsiflexão.**",
+    "incorretas": {
+      "B": "A barra deve dar **dorsiflexão**.",
+      "C": "**40°** é a rotação do lado **normal**.",
+      "D": "**40° e 0°** não mantêm a correção."
+    },
+    "referencias": [
+      "Herring: Tachdjian’s Pediatric Orthopaedics, 5th Ed., p. 1081 (referência indicada na prova TARO 2013, questão 35)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0677": {
+    "conceito": "### Blount infantil × adolescente\n- **Infantil (menor de 4 anos):** a deformidade é da tíbia proximal; o fêmur distal é ==normal ou em valgo compensatório==.\n- **Adolescente:** obesos, com componente ==varo do fêmur distal== associado.\n- Avaliar o fêmur antes de planejar a correção: no adolescente, a correção só na tíbia pode ser insuficiente.\n\n> **Na prova:** fêmur distal = ==valgo/normal no infantil, varo no adolescente==.",
+    "correta": "**Valgo ou normal no tipo infantil e em varo no tipo do adolescente.**",
+    "incorretas": {
+      "A": "No infantil, o fêmur **não** é varo.",
+      "B": "Inverte o padrão.",
+      "D": "No adolescente, o fêmur distal tende ao **varo**."
+    },
+    "referencias": [
+      "Lovell and Winter’s Pediatric Orthopaedics, 6th Ed., p. 1179 (referência indicada na prova TARO 2013, questão 44)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0678": {
+    "conceito": "### Artrite séptica do ombro na criança\n- Em algumas articulações a metáfise é **intra-articular**: quadril, ==ombro==, cotovelo (rádio proximal) e tornozelo.\n- Nelas, a ==osteomielite metafisária== rompe a cortical e drena direto para dentro da articulação.\n- Por isso, na criança, a pioartrite do ombro costuma ser secundária à osteomielite do úmero proximal.\n\n> **Na prova:** ombro/quadril infantil = ==osteomielite metafisária intra-articular==.",
+    "correta": "**Osteomielite da metáfise proximal do úmero.**",
+    "incorretas": {
+      "A": "**Infecção dentária** não é a fonte habitual.",
+      "B": "**Doença crônica** é fator de risco no adulto.",
+      "C": "**Trauma** raramente é a causa."
+    },
+    "referencias": [
+      "Canale & Beaty: Campbell's Operative Orthopaedics, 12th Ed., p. 762 (referência indicada na prova TARO 2013, questão 50)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0679": {
+    "conceito": "### Blount: o que indica risco\n- Diferenciar do **geno varo fisiológico**, comum até os 2 anos.\n- Sinais de risco para Blount:\n  - ==impulso (thrust) lateral== do joelho na marcha;\n  - varo unilateral ou assimétrico, ou que piora depois dos 2 anos;\n  - obesidade, marcha precoce e ascendência africana;\n  - ângulo metafisodiafisário (Drennan) acima de 16° na radiografia.\n- O thrust lateral é o **sinal clínico** de instabilidade e progressão.\n\n> **Na prova:** sinal de risco = ==impulso lateral==.",
+    "correta": "**Impulso lateral da tíbia.**",
+    "incorretas": {
+      "A": "**Obesidade** é fator de risco, não sinal.",
+      "C": "**Ângulo MD acima de 16°** é critério radiográfico, não sinal clínico.",
+      "D": "**Instabilidade ligamentar** não é o sinal descrito."
+    },
+    "referencias": [
+      "Lovell and Winter’s Pediatric Orthopaedics, 5th Ed., p. 1162 (referência indicada na prova TARO 2013, questão 53)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0680": {
+    "conceito": "### Classificação de Swanson (falhas de formação)\n- **Transversa:** amputação congênita, com ausência de tudo distal a um nível.\n- ==Longitudinal==: falta um raio ou lado do membro:\n  - **pré-axial:** rádio e polegar (mão torta radial);\n  - **pós-axial:** ulna;\n  - **central:** mão em fenda.\n- **Intercalar:** falta um segmento intermediário (focomelia).\n\n> **Na prova:** pré-axial = ==longitudinal==.",
+    "correta": "**Longitudinal.**",
+    "incorretas": {
+      "A": "**Terminal** não é a denominação usada.",
+      "B": "**Intercalar** é a focomelia.",
+      "C": "**Transversa** é a amputação congênita."
+    },
+    "referencias": [
+      "Lovell and Winter’s Pediatric Orthopaedics, 6th Ed., p. 942 (referência indicada na prova TARO 2013, questão 56)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0681": {
+    "conceito": "### Hálux valgo na paralisia cerebral\n- Mais comum nos pacientes **deambuladores espásticos**, especialmente na ==diplegia espástica== e também na quadriplegia.\n- Resulta de pé plano valgo, equino e espasticidade do adutor do hálux.\n- Tratamento cirúrgico preferencial: **artrodese da 1ª metatarsofalângica** (osteotomias recidivam).\n\n> **Na prova:** hálux valgo na PC = ==diplegia espástica==.",
+    "correta": "**Diplegia espástica.**",
+    "incorretas": {
+      "A": "A **tetraplegia mista** é menos citada.",
+      "B": "A **monoplegia** é rara.",
+      "D": "A **forma atáxica** é pouco associada a deformidades fixas."
+    },
+    "referencias": [
+      "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 4540 (referência indicada na prova TARO 2013, questão 62)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0682": {
+    "conceito": "### Fusão dos núcleos do cotovelo\n- Capítulo, tróclea e epicôndilo lateral fundem-se entre si e à metáfise por volta dos 12–14 anos.\n- Olécrano: por volta dos 14–15 anos.\n- ==Epicôndilo medial==: o **último**, entre 15 e 17 anos.\n- Por isso a avulsão do epicôndilo medial acontece até o fim da adolescência.\n\n> **Na prova:** último a fundir = ==epicôndilo medial==.",
+    "correta": "**Epicôndilo medial.**",
+    "incorretas": {
+      "A": "O **capítulo** funde antes.",
+      "B": "O **olécrano** funde antes do epicôndilo medial.",
+      "C": "O **epicôndilo lateral** funde antes."
+    },
+    "referencias": [
+      "Rockwood and Green’s fractures in Childrens, 7th Ed., p. 478 (referência indicada na prova TARO 2013, questão 70)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0683": {
+    "conceito": "### Sinal do crescente na doença de Perthes\n- A fratura subcondral (sinal de **Caffey**/crescente) aparece cedo, na fase de necrose e fragmentação inicial.\n- **Salter e Thompson:** a extensão da fratura subcondral ==prediz a extensão da necrose==:\n  - **A:** menos de 50% da cabeça;\n  - **B:** mais de 50%.\n- Útil antes da fragmentação, quando Herring ainda não se aplica.\n\n> **Na prova:** fratura subcondral = ==extensão da necrose== (Salter-Thompson).",
+    "correta": "**Extensão da necrose.**",
+    "incorretas": {
+      "B": "A **artrose** é prevista por Stulberg, no fim do processo.",
+      "C": "A **indicação cirúrgica** depende de idade e de Herring.",
+      "D": "A **subluxação** é avaliada por outros sinais (Catterall)."
+    },
+    "referencias": [
+      "Lovell and Winter’s Pediatric Orthopaedics, 5th Ed., p. 1051 (referência indicada na prova TARO 2013, questão 71)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0684": {
+    "conceito": "### Prevenção da mielomeningocele\n- Defeito de fechamento do tubo neural (4ª semana).\n- ==Ácido fólico== periconcepcional reduz o risco em cerca de 70%:\n  - 0,4 mg/dia na população geral;\n  - 4 mg/dia se houver filho prévio afetado.\n- Deve começar **antes** da concepção.\n- O ácido valproico é **fator de risco**.\n\n> **Na prova:** prevenção = ==ácido fólico==.",
+    "correta": "**Ácido fólico.**",
+    "incorretas": {
+      "A": "A **vitamina E** não previne.",
+      "B": "A **vitamina D** não previne.",
+      "D": "O **ácido valproico** **aumenta** o risco."
+    },
+    "referencias": [
+      "Lovell and Winter’s Pediatric Orthopaedics, 5th Ed., p. 655 (referência indicada na prova TARO 2013, questão 89)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0685": {
+    "conceito": "### Clavícula na criança: localização\n- ==Terço médio: 76–85%==.\n- Terço lateral: 10–15%.\n- Terço medial: menos de 5%. Muitas são descolamentos fisários, que simulam luxação esternoclavicular.\n\n> **Na prova:** terço médio = ==cerca de 80%==.",
+    "correta": "**76% a 85%.**",
+    "incorretas": {
+      "A": "**10–21%** corresponde ao terço lateral.",
+      "B": "Subestima.",
+      "C": "Subestima."
+    },
+    "referencias": [
+      "Rockwood and Wilkins’s fractures in Children, 6th Ed., p. 724 (referência indicada na prova TARO 2013, questão 90)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0686": {
+    "conceito": "### Fratura de Tillaux\n- Adolescente, com a fise distal da tíbia em fechamento (a parte anterolateral fecha por último).\n- O **ligamento tibiofibular anteroinferior** arranca o fragmento anterolateral em rotação externa.\n- Traço vertical pela epífise e horizontal pela fise, sem metáfise: ==Salter-Harris III==.\n- Degrau acima de 2 mm: fixação com parafuso epifisário.\n\n> **Na prova:** Tillaux = ==SH III==.",
+    "correta": "**III.**",
+    "incorretas": {
+      "A": "**SH I** não é intra-articular.",
+      "B": "**SH II** tem fragmento metafisário.",
+      "D": "**SH IV** atravessa a metáfise, o que não ocorre no Tillaux clássico."
+    },
+    "referencias": [
+      "Sizinio H.: Ortopedia e Traumatologia: Princípios e Práticas, 4ª Ed., p. 981 (referência indicada na prova TARO 2013, questão 98)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0687": {
+    "conceito": "### Epilepsia na paralisia cerebral\n- Ocorre em 30–50% dos pacientes.\n- Mais frequente na forma ==quadriplégica (tetraplégica)==, em até 50–90%, e também comum na hemiplégica.\n- Menos frequente na diplegia e nas formas discinéticas.\n\n> **Na prova:** convulsões = ==quadriplegia==.",
+    "correta": "**Quadriplégica.**",
+    "incorretas": {
+      "A": "A **diplégica** tem menos crises.",
+      "B": "A **hemiplégica** tem crises frequentes, mas menos que a quadriplégica.",
+      "C": "A **monoplégica** é rara."
+    },
+    "referencias": [
+      "Lovell and Winter’s Pediatric Orthopaedics 5th Ed., p. 612 (referência indicada na prova TARO 2013, questão 99)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0688": {
+    "conceito": "### Componentes do pé torto congênito (CAVE)\n- **C**avo (1º raio em flexão).\n- **A**duto do ==mediopé== (navicular medializado sobre a cabeça do tálus).\n- **V**aro do retropé (==subtalar==).\n- **E**quino do tornozelo.\n- Ponseti corrige nessa ordem: primeiro o cavo (supinando o antepé), depois aduto e varo juntos, por último o equino (tenotomia).\n\n> **Na prova:** varo da ==subtalar== e aduto do ==mediopé==.",
+    "correta": "**Subtalar e aduto do mediopé.**",
+    "incorretas": {
+      "A": "O aduto é principalmente do **mediopé**.",
+      "C": "O varo é da **subtalar**, não da tibiotársica.",
+      "D": "O varo é da **subtalar**, não da tibiotársica."
+    },
+    "referencias": [
+      "Lovell and Winter’s Pediatric Orthopaedics, 5th Ed., p. 1259 (referência indicada na prova TARO 2013, questão 100)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0689": {
+    "conceito": "### Onde as fises mais se lesam\n- ==Rádio distal==: a lesão fisária mais comum (cerca de 30–50% das lesões fisárias).\n- Em seguida: falanges, tíbia distal e úmero distal.\n- O padrão mais frequente é o Salter-Harris II.\n\n> **Na prova:** descolamento epifisário mais comum = ==rádio distal==.",
+    "correta": "**No terço distal do rádio.**",
+    "incorretas": {
+      "A": "As **falanges** são frequentes, mas ficam atrás do rádio distal.",
+      "B": "A **tíbia distal** é a segunda nas grandes séries.",
+      "D": "A **fíbula distal** é menos frequente."
+    },
+    "referencias": [
+      "Rockwood and Wilkins's fractures in Children, 7th Ed., p. 105 (referência indicada na prova TARO 2014, questão 2)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0690": {
+    "conceito": "### Recorrência da pronação dolorosa\n- Ocorre entre 1 e 4 anos, com pico por volta dos 2 anos.\n- **Recorrência** em 5–39%, mais comum nas ==crianças menores (1 a 2 anos)==.\n- Depois dos 5 anos, a cabeça do rádio cresce, o ligamento anular fortalece e o problema desaparece.\n\n> **Na prova:** recorrência = ==1 a 2 anos==.",
+    "correta": "**1 a 2 anos de idade.**",
+    "incorretas": {
+      "B": "**3 a 4 anos** recorre menos.",
+      "C": "**5 a 6 anos** é raro.",
+      "D": "**7 a 8 anos** não acontece."
+    },
+    "referencias": [
+      "Rockwood and Wilkins's fractures in Children, 7th Ed., p. 617 (referência indicada na prova TARO 2014, questão 14)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0691": {
+    "conceito": "### Supracondiliana: direção do desvio e nervo\n- **Posteromedial:** o fragmento proximal migra lateralmente e lesa o nervo ==radial==.\n- **Posterolateral:** o fragmento proximal migra medialmente e lesa o **mediano/interósseo anterior** e a artéria braquial.\n- **Flexão:** nervo **ulnar**.\n- Iatrogênica: ulnar no pino medial.\n\n> **Na prova:** posteromedial = ==radial==.",
+    "correta": "**Radial.**",
+    "incorretas": {
+      "A": "O **ulnar** é lesado no tipo em flexão ou no pino medial.",
+      "C": "O **mediano** é lesado no desvio posterolateral.",
+      "D": "O **musculocutâneo** raramente é lesado."
+    },
+    "referencias": [
+      "Herring: Tachdjian’s Pediatric Orthopaedics, 4th Ed., p. 2451 (referência indicada na prova TARO 2014, questão 20)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0692": {
+    "conceito": "### Técnica de redução da deformidade plástica\n- Sob anestesia geral, com o ápice sobre um apoio acolchoado.\n- Força de ==20 a 30 kg== aplicada lentamente por ==2 a 3 minutos==.\n- A correção é gradual: a curvatura cede aos poucos, por deformação das microfraturas.\n- Depois, gesso axilopalmar.\n\n> **Na prova:** ==20–30 kg por 2–3 minutos==.",
+    "correta": "**20 a 30 kg e 2 a 3 minutos.**",
+    "incorretas": {
+      "A": "**10–20 kg** é força insuficiente.",
+      "B": "**4 a 5 minutos** é mais tempo que o descrito.",
+      "C": "**10–20 kg** é força insuficiente."
+    },
+    "referencias": [
+      "Canale & Beaty: Campbell’s Operative Orthopaedics, 12th Ed., p. 1380 (referência indicada na prova TARO 2014, questão 52)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0693": {
+    "conceito": "### Fratura da eminência intercondilar\n- Equivalente pediátrico da ruptura do LCA.\n- Mecanismo mais comum: queda de bicicleta com ==hiperextensão do joelho==, muitas vezes com rotação associada.\n- **Meyers e McKeever:** I sem desvio; II elevação anterior; III desviada; IV cominutiva.\n- Tipos II que não reduzem e tipos III: redução artroscópica e fixação; atenção ao menisco interposto.\n\n> **Na prova:** eminência tibial = ==hiperextensão==.",
+    "correta": "**A hiperextensão do joelho.**",
+    "incorretas": {
+      "A": "**Hiperflexão** não é o mecanismo clássico.",
+      "C": "**Varo com rotação medial** não é o mecanismo clássico.",
+      "D": "**Valgo com rotação lateral** rompe o LCA/LCM no adulto."
+    },
+    "referencias": [
+      "Rockwood and Wilkins's fractures in Children, 6th Ed., p. 887 (referência indicada na prova TARO 2014, questão 67)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0694": {
+    "conceito": "### Pelve da criança Torode-Zieg III\n- Fraturas simples e estáveis do anel (ramos, sínfise).\n- Consolidam bem com tratamento conservador. A complicação mais relatada é a ==consolidação viciosa==, com assimetria pélvica e discrepância de membros, geralmente com pouca repercussão.\n- A **cartilagem trirradiada** é ameaçada nas fraturas acetabulares (tipo IV).\n\n> **Na prova:** Torode III = ==consolidação viciosa==.",
+    "correta": "**Consolidação viciosa.**",
+    "incorretas": {
+      "B": "**Falha de consolidação** é rara na pelve da criança.",
+      "C": "**Retardo de consolidação** é incomum.",
+      "D": "A **lesão da trirradiada** ocorre nas fraturas acetabulares."
+    },
+    "referencias": [
+      "Jupiter J:. Skeletal Trauma, 3rd Ed., p. 374 (referência indicada na prova TARO 2014, questão 69)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
+  },
+  "pediatria-0695": {
+    "conceito": "### Úmero proximal da criança: mecanismos\n- **Indireto (mais comum):** queda sobre a mão estendida, com extensão e rotação.\n- **Direto:** golpe na face ==posterolateral== do ombro.\n- Em recém-nascidos: tocotrauma (SH I).\n- Em lactentes com fratura sem história compatível: pensar em maus-tratos.\n\n> **Na prova:** trauma direto = ==posterolateral==.",
+    "correta": "**Posterolateral.**",
+    "incorretas": {
+      "A": "**Anterolateral** não é a região descrita para o trauma direto.",
+      "B": "**Anteromedial** não é a região descrita para o trauma direto.",
+      "D": "**Posteromedial** não é a região descrita para o trauma direto."
+    },
+    "referencias": [
+      "Herring: Tachdjian’s Pediatric Orthopaedics, 4th Ed., p. 2432 (referência indicada na prova TARO 2014, questão 84)"
+    ],
+    "geradoEm": "2026-09-24",
+    "conferido": false
   }
 }

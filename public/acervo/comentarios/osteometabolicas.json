@@ -893,5 +893,47 @@
   ],
   "geradoEm": "2026-09-23",
   "conferido": false
+ },
+ "osteometabolicas-0078": {
+  "conceito": "### Critérios de artrite reumatoide (ACR 1987)\n- Rigidez **matinal** de pelo menos 1 hora.\n- Artrite em 3 ou mais áreas articulares.\n- Artrite das ==articulações da mão== (punho, MCF, IFP).\n- Artrite **simétrica**.\n- Nódulos reumatoides, fator reumatoide positivo e erosões radiográficas.\n- 4 de 7 por pelo menos 6 semanas. (Os critérios ACR/EULAR 2010 pontuam articulações, sorologia, provas inflamatórias e duração.)\n\n> **Na prova:** critério = ==mãos==, simetria, rigidez **matinal**.",
+  "correta": "**Acometimento de articulações da mão.**",
+  "incorretas": {
+   "A": "A rigidez é **matinal**, não noturna.",
+   "B": "O acometimento é **simétrico**.",
+   "C": "O critério exige **três** ou mais áreas."
+  },
+  "referencias": [
+   "Canale & Beaty: Campbell’s Operative Orthopaedics, 11th Ed., p.988 (referência indicada na prova TARO 2013, questão 33)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "osteometabolicas-0079": {
+  "conceito": "### Densitometria no homem\n- Indicações usuais:\n  - homens acima de **70 anos**;\n  - entre 50 e 69 com fatores de risco;\n  - ==acima de 50 anos com fratura por trauma leve== (fragilidade);\n  - uso de corticoide, hipogonadismo e outras causas secundárias.\n\n> **Na prova:** homem com mais de 50 anos e ==fratura de baixa energia== = densitometria.",
+  "correta": "**50 anos, acometido de fratura por trauma leve.**",
+  "incorretas": {
+   "A": "A raça negra, isoladamente, não é indicação.",
+   "B": "O rastreamento de rotina é a partir dos **70 anos**.",
+   "D": "**Anti-hipertensivo** não é indicação (os tiazídicos até protegem)."
+  },
+  "referencias": [
+   "RBO, VOL 45, numero 5, SET-OUT 2010, p.392 (referência indicada na prova TARO 2013, questão 60)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "osteometabolicas-0080": {
+  "conceito": "### Drogas na osteoporose\n- **Anabólicas (formam osso):** ==paratormônio== (teriparatida, abaloparatida) em doses intermitentes; romosozumabe (misto).\n- **Antirreabsortivas:** bisfosfonatos (alendronato), denosumabe, estrógeno/SERM, calcitonina.\n- A teriparatida fica reservada para osteoporose grave ou falha, por até 2 anos.\n\n> **Na prova:** formador de osso = ==PTH==.",
+  "correta": "**O paratormônio.**",
+  "incorretas": {
+   "A": "O **estrógeno** é antirreabsortivo.",
+   "B": "A **calcitonina** é antirreabsortiva.",
+   "C": "O **alendronato** é antirreabsortivo."
+  },
+  "referencias": [
+   "Rockwood and Green’s fractures in Adults 6th Ed., p. 627 (referência indicada na prova TARO 2013, questão 73)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  }
 }

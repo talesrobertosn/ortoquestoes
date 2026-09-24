@@ -3834,5 +3834,117 @@
   ],
   "geradoEm": "2026-09-23",
   "conferido": false
+ },
+ "tumores-0319": {
+  "conceito": "### Vértebra plana na criança\n- Colapso uniforme do corpo vertebral, com discos e elementos posteriores preservados.\n- Causa clássica: ==granuloma eosinofílico== (histiocitose de células de Langerhans).\n- Diagnósticos diferenciais: Ewing, leucemia, linfoma, osteomielite.\n- A evolução costuma ser benigna, com **reconstituição parcial da altura** durante o crescimento. Biópsia só se o quadro for atípico.\n\n> **Na prova:** vértebra plana em criança = ==granuloma eosinofílico==.",
+  "correta": "**Granuloma eosinofílico.**",
+  "incorretas": {
+   "A": "**Linfoma** entra no diferencial, mas é raro.",
+   "B": "**Ewing** pode colapsar a vértebra, mas não é a causa mais comum.",
+   "D": "**Cisto ósseo aneurismático** acomete mais os elementos posteriores."
+  },
+  "referencias": [
+   "Canale S. T. Campbell's operative orthopaedics. St. Louis: Mosby. 11th ed., p. 896 (referência indicada na prova TARO 2011, questão 23)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "tumores-0320": {
+  "conceito": "### Condrossarcoma após ressecção\n- Tumor resistente a quimioterapia e radioterapia: o tratamento é a ressecção com **margem ampla**.\n- A complicação mais frequente é a ==recidiva local==, sobretudo com margem inadequada ou na pelve.\n- A recidiva pode vir com **grau histológico maior**.\n- Metástase pulmonar é o destino dos de alto grau, mas é menos frequente que a recidiva.\n\n> **Na prova:** condrossarcoma operado = ==recidiva local==.",
+  "correta": "**Recidiva local.**",
+  "incorretas": {
+   "B": "**Metástase hepática** é rara.",
+   "C": "**Metástase saltatória** é característica do osteossarcoma.",
+   "D": "**Metástase pulmonar** ocorre nos de alto grau, menos que a recidiva."
+  },
+  "referencias": [
+   "Canale & Beaty: Campbell’s Operative Orthopaedics, 10th Ed., p. 835 (referência indicada na prova TARO 2013, questão 26)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "tumores-0321": {
+  "conceito": "### Histologia do granuloma eosinofílico\n- Proliferação de **células de Langerhans** (histiócitos de núcleo reniforme, em \"grão de café\"), com eosinófilos.\n- Marcadores: CD1a, S-100 e langerina (CD207).\n- ==Grânulos de Birbeck== no citoplasma, perto do núcleo, com forma de raquete de tênis na microscopia eletrônica.\n- Atividade mitótica baixa.\n\n> **Na prova:** granuloma eosinofílico = ==grânulos de Birbeck==.",
+  "correta": "**Grânulos no citoplasma próximos ao núcleo.**",
+  "incorretas": {
+   "A": "**Mitoses** são raras.",
+   "B": "**Células gigantes** podem aparecer, mas não definem a lesão.",
+   "C": "O infiltrado é de **eosinófilos**, não de neutrófilos."
+  },
+  "referencias": [
+   "Herring: Tachdjian’s Pediatric Orthopaedics, 4th Ed., p. 2227 (referência indicada na prova TARO 2013, questão 37)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "tumores-0322": {
+  "conceito": "### Estadiamento de Enneking (malignos)\n- **I:** baixo grau. **II:** alto grau. **III:** metástase (qualquer grau).\n- **A:** intracompartimental. **B:** extracompartimental.\n- ==IIA = alto grau, intracompartimental, sem metástase==.\n\n> **Na prova:** IIA = ==alto grau + intra + sem metástase==.",
+  "correta": "**Intracompartimental, de alto grau de malignidade e sem metástase.**",
+  "incorretas": {
+   "A": "Com **metástase** é estágio III.",
+   "C": "**Baixo grau** é estágio I.",
+   "D": "Com **metástase** é estágio III."
+  },
+  "referencias": [
+   "Canale & Beaty: Campbell’s Operative Orthopaedics, 11th Ed., p. 778 (referência indicada na prova TARO 2013, questão 43)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "tumores-0323": {
+  "conceito": "### Sinovite vilonodular pigmentada (tumor tenossinovial de células gigantes difuso)\n- Proliferação sinovial com vilosidades e nódulos.\n- Histologia: ==estroma fibroso com depósito de hemossiderina== (pigmento marrom), células mononucleares (histiócitos), **células gigantes multinucleadas** e células espumosas.\n- Sem atipia nem mitoses anormais.\n- RM: hipossinal em T1 e T2 (**blooming** no gradiente de eco).\n\n> **Na prova:** SVNP = ==hemossiderina==.",
+  "correta": "**Estroma fibroso com hemossiderina.**",
+  "incorretas": {
+   "A": "Não há **atipia**.",
+   "B": "Não há **mitoses anormais**.",
+   "C": "As células gigantes são **multinucleadas**."
+  },
+  "referencias": [
+   "Lovell and Winter’s Pediatric Orthopaedics, 6th Ed., p. 539 (referência indicada na prova TARO 2013, questão 49)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "tumores-0324": {
+  "conceito": "### Princípios da biópsia de tumor maligno\n- Incisão ==longitudinal==, no trajeto da futura ressecção, para que o trajeto seja retirado em bloco.\n- Por um único compartimento, sem expor feixes neurovasculares.\n- Garrote **sem exsanguinação** por faixa (espremer o membro dissemina células), soltando antes de fechar para hemostasia rigorosa.\n- Dreno, se usado, sai em linha com a incisão.\n- Idealmente feita pelo cirurgião que fará a ressecção.\n\n> **Na prova:** biópsia = ==longitudinal e sem exsanguinação==.",
+  "correta": "**Longitudinal e sem exsanguinação.**",
+  "incorretas": {
+   "A": "Incisão **transversa** contamina vários planos e compromete a ressecção.",
+   "B": "Incisão **transversa** contamina vários planos e compromete a ressecção.",
+   "C": "A **exsanguinação** espreme o tumor e dissemina células."
+  },
+  "referencias": [
+   "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 780 (referência indicada na prova TARO 2013, questão 52)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "tumores-0325": {
+  "conceito": "### Escore de Mirels (risco de fratura patológica)\n- Quatro itens, de 1 a 3 pontos cada:\n  - **Local:** membro superior 1, membro inferior 2, ==peritrocantérica 3==;\n  - **Dor:** leve 1, moderada 2, **funcional** 3;\n  - **Lesão:** blástica 1, mista 2, **lítica** 3;\n  - **Tamanho:** menos de 1/3 da cortical 1; 1/3 a 2/3 2; mais de 2/3 3.\n- Pontuação ≥ 9: fixação profilática; 8: limítrofe; ≤ 7: radioterapia e observação.\n\n> **Na prova:** peritrocantérica = ==3 pontos==.",
+  "correta": "**3.**",
+  "incorretas": {
+   "A": "Não há 0 no escore.",
+   "B": "**1** é membro superior.",
+   "C": "**2** é membro inferior fora da região peritrocantérica."
+  },
+  "referencias": [
+   "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 925 (referência indicada na prova TARO 2013, questão 79)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "tumores-0326": {
+  "conceito": "### Fratura de estresse da tíbia proximal\n- Adolescente ativo, dor na tíbia proximal.\n- Na radiografia: reação periosteal e esclerose metafisária.\n- Diagnóstico diferencial principal: ==osteossarcoma==, pela mesma idade, mesmo local e reação periosteal.\n- A RM mostra traço linear e edema na fratura; lesão com massa e destruição cortical exige biópsia.\n\n> **Na prova:** fratura de estresse metafisária × ==osteossarcoma==.",
+  "correta": "**Osteossarcoma.**",
+  "incorretas": {
+   "B": "O **condroblastoma** é epifisário.",
+   "C": "O **condrossarcoma** é do adulto.",
+   "D": "O **granuloma eosinofílico** é mais diafisário e na criança menor."
+  },
+  "referencias": [
+   "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 876 (referência indicada na prova TARO 2013, questão 88)"
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
  }
 }
