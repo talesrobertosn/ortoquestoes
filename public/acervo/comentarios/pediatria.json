@@ -2884,93 +2884,93 @@
   "conferido": false
  },
  "pediatria-0211": {
-  "conceito": "A vinheta descreve um recém-nascido com crânio alongado por fusão precoce (craniossinostose) da sutura coronal, proeminência frontal, exoftalmia e hipoplasia maxilar, um conjunto de achados de **disostose craniofacial**. Entre as síndromes craniossinostóticas sindrômicas, a **síndrome de Apert** é classicamente descrita com essa combinação de craniossinostose bicoronal, proeminência frontal, exoftalmia acentuada e hipoplasia do terço médio da face, associada tipicamente também à **sindactilia das mãos e pés** (\"mão em luva de boxe\"), achado que não foi explicitamente mencionado na vinheta, mas que não invalida o diagnóstico, já que nem toda vinheta de prova descreve exaustivamente todos os achados de uma síndrome.\n\nA síndrome de Crouzon compartilha boa parte do quadro craniofacial com a de Apert, mas se diferencia justamente pela **ausência de sindactilia**, sendo o principal diagnóstico diferencial a se considerar diante desse tipo de vinheta.",
-  "correta": "B. O quadro de craniossinostose coronal, exoftalmia e hipoplasia maxilar é mais compatível com a síndrome de Apert.",
+  "conceito": "### Craniossinostoses sindrômicas (FGFR)\n| Síndrome | Gene | Crânio/face | Mãos e pés |\n|---|---|---|---|\n| ==Apert== | FGFR2 | ==coronal bilateral==, turribraquicefalia, exoftalmia, hipoplasia maxilar | ==sindactilia complexa== (mão em colher/botão de rosa) |\n| Crouzon | FGFR2 | coronal, exoftalmia, hipoplasia maxilar | ==normais== |\n| Pfeiffer | FGFR1/2 | trevo (grave), exoftalmia | ==polegar e hálux largos e desviados== |\n| Saethre-Chotzen | TWIST1 | ptose, implantação baixa do cabelo | sindactilia cutânea leve |\n| Muenke | FGFR3 | coronal uni ou bilateral | alterações discretas |\n\n### Ortopedia na Apert\n- Sindactilia (Upton I-III): liberar 1ª comissura primeiro.\n- Sinostoses (ombro, cotovelo, coluna cervical C5-C6).\n\n> **Na prova:** coronal fechada + exoftalmia + hipoplasia maxilar = ==Apert== pelo gabarito (veja o alerta sobre a sindactilia).",
+  "correta": "**Apert, conforme o gabarito.**\n- Coronal precoce, exoftalmia, hipoplasia maxilar.\n- A sindactilia, não citada, é a chave que a separa de Crouzon (veja o alerta).",
   "incorretas": {
-   "A": "A síndrome de Crouzon compartilha os achados craniofaciais descritos, mas se diferencia da de Apert justamente pela ausência de sindactilia das mãos e pés.",
-   "C": "A síndrome de Pfeiffer se associa a polegares e hálux largos e desviados, achados não descritos na vinheta.",
-   "D": "A síndrome de Saethre-Chotzen tem apresentação facial geralmente mais leve, com ptose palpebral e assimetria facial características, diferente do quadro descrito.",
-   "E": "A síndrome de Muenke costuma ter apresentação mais leve e variável, sem o quadro florido de exoftalmia e hipoplasia maxilar descrito."
+   "A": "**Mesmo crânio, mãos normais.**\n- Sem sindactilia não se separa bem de Apert.",
+   "C": "**Polegar e hálux largos.**\n- Não descritos.",
+   "D": "**Ptose e cabelo baixo.**\n- Quadro mais leve.",
+   "E": "**Mais leve.**\n- FGFR3, achados discretos."
   },
   "alerta": "A vinheta não menciona sindactilia das mãos e pés, achado tradicionalmente citado como praticamente obrigatório na síndrome de Apert e um dos principais elementos que a diferenciam da síndrome de Crouzon. Fica a ressalva de que, sem esse achado descrito, a diferenciação clínica entre as duas síndromes fica menos direta do que o gabarito sugere.",
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0212": {
-  "conceito": "O teste de Silfverskiöld aproveita o fato de o GASTROCNÊMIO ser biarticular (cruza joelho e tornozelo) e o SÓLEO ser monoarticular (só cruza o tornozelo). Mede-se a dorsiflexão do tornozelo com o joelho ESTENDIDO e depois com o joelho FLETIDO, sempre mantendo o retropé em leve inversão para travar a subtalar. Se a dorsiflexão MELHORA com o joelho fletido, o que estava limitando era o gastrocnêmio, que relaxa nessa posição: contratura ISOLADA DO GASTROCNÊMIO. Se não melhora, a limitação está no sóleo ou em ambos, e a rigidez é de todo o tríceps. A consequência é cirúrgica: contratura isolada do gastrocnêmio se trata por recessão do gastrocnêmio (Strayer, Vulpius, Baumann); contratura de todo o tríceps exige alongamento do tendão calcâneo.",
-  "correta": "Contratura isolada do gastrocnêmio.",
+  "conceito": "### Zonas do tríceps sural (alongamento na PC)\n| Zona | Local | Técnicas | Alonga |\n|---|---|---|---|\n| 1 | ventres do gastrocnêmio | ==Strayer== (recessão da aponeurose proximal), Baumann (fáscia intramuscular) | só gastrocnêmio |\n| ==2== | ==aponeurose conjunta gastrocnêmio-sóleo, distal aos ventres== | ==Vulpius== (V invertido), Baker (língua em U) | gastro + sóleo moderado |\n| 3 | tendão calcâneo | ==Hoke== (três hemissecções percutâneas), White, Z | tudo; maior risco de ==hiperalongamento== (marcha agachada) |\n\n### Silfverskiöld\n- Equino que ==melhora com joelho fletido==: contratura do ==gastrocnêmio== isolado → zonas 1-2.\n- Equino fixo com joelho fletido: sóleo também → zona 2-3.\n\n> **Na prova:** dorsiflexão melhora com joelho fletido = contratura do ==gastrocnêmio isolado== (Silfverskiöld).",
+  "correta": "**Gastrocnêmio isolado.**\n- Fletir o joelho relaxa o gastrocnêmio (biarticular).\n- Sóleo não cruza o joelho.",
   "incorretas": {
-   "A": "Contratura isolada do sóleo não melhoraria com a flexão do joelho: o sóleo não cruza o joelho e sua tensão não muda com a posição dele.",
-   "C": "Se gastrocnêmio e sóleo estivessem ambos contraídos, a dorsiflexão continuaria limitada mesmo com o joelho fletido.",
-   "D": "Os fibulares são eversores; sua contratura não limita a dorsiflexão dessa maneira nem responde à posição do joelho."
+   "A": "**Sóleo não muda.**\n- Não cruza o joelho.",
+   "C": "**Não melhoraria tanto.**\n- Sóleo manteria o equino.",
+   "D": "**Eversores.**\n- Não limitam dorsiflexão assim."
   },
-  "geradoEm": "2026-09-10",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0213": {
-  "conceito": "A triagem pré-natal para defeitos abertos do tubo neural, como a mielomeningocele, é feita classicamente pela dosagem da **alfafetoproteína (AFP) no soro materno**, tipicamente entre a **16ª e a 18ª semana** de gestação (período em que o teste tem melhor acurácia). Quando há um defeito aberto do tubo neural, o líquido cefalorraquidiano fetal extravasa diretamente para o líquido amniótico através do defeito, elevando a concentração de AFP tanto no líquido amniótico quanto, secundariamente, no soro materno.\n\nOu seja, o achado esperado é de **níveis elevados** de AFP materna nessa janela gestacional, um resultado alterado que, na prática, costuma ser seguido de ultrassonografia morfológica detalhada para confirmação diagnóstica.",
-  "correta": "A. Na mielomeningocele, espera-se encontrar níveis elevados de alfafetoproteína materna entre 16 e 18 semanas de gestação.",
+  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Embriologia e prevenção\n- Falha do ==fechamento do tubo neural== (neuróporo caudal) entre o ==26º e 28º dias==.\n- Fatores: ==deficiência de ácido fólico==, ácido valproico, carbamazepina, diabetes, obesidade, hipertermia; componente genético (recorrência 2 a 5% em irmãos).\n- Prevenção: ácido fólico 0,4 mg/dia antes da concepção (4 mg se filho anterior afetado).\n- Diagnóstico: alfafetoproteína elevada, ultrassom (sinal do limão e da banana).\n\n### Triagem pré-natal\n- ==Alfafetoproteína elevada== no soro materno entre ==16 e 18 semanas== (vazamento pelo defeito aberto).\n- Confirmação: ultrassom morfológico (limão, banana, ventriculomegalia) e AFP/acetilcolinesterase no líquido amniótico.\n- Cirurgia fetal (MOMS) reduz hidrocefalia e melhora a função motora.\n\n> **Na prova:** triagem da MMC = ==AFP alta entre 16 e 18 semanas==",
+  "correta": "**AFP alta entre 16 e 18 semanas.**\n- Vaza pelo defeito aberto.\n- Ultrassom confirma.",
   "incorretas": {
-   "B": "Os níveis de AFP estão elevados, não reduzidos, na presença de um defeito aberto do tubo neural.",
-   "C": "A janela de maior acurácia para essa triagem é entre 16 e 18 semanas, não entre 8 e 12 semanas.",
-   "D": "Os níveis de AFP estão elevados, não reduzidos, e a janela de triagem correta é entre 16 e 18 semanas, não entre 8 e 12 semanas."
+   "B": "**Baixa sugere Down.**\n- Não defeito do tubo neural.",
+   "C": "**Cedo demais.**\n- Janela de 16 a 18 semanas.",
+   "D": "**Duplamente errada.**\n- Nível e janela."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0214": {
-  "conceito": "Nos pacientes com mielomeningocele de nível **torácico** (paralisia flácida completa dos membros inferiores, sem função motora residual), a ausência de qualquer contração muscular ativa faz com que os membros adotem uma postura determinada exclusivamente pela **gravidade**, a clássica posição em \"flog leg\" (posição de abandono): quadris em **abdução, flexão e rotação externa** (posição mais estável sob ação da gravidade, com a face lateral da coxa apoiada no leito) e tornozelos em **equino** (também por efeito gravitacional, sem tônus ativo para mantê-los neutros).\n\nEssa postura de abandono, característica dos níveis mais altos e completos de mielomeningocele, contrasta com os padrões observados em níveis mais baixos, onde grupos musculares específicos ainda funcionantes geram contraturas ativas e mais previsíveis (por exemplo, flexores de quadril e adutores em níveis lombares altos).",
-  "correta": "B. Na posição de abandono do mielomeningocele torácico, o quadril está em abdução, flexão e rotação externa, com o tornozelo em equino.",
+  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Posição de rã (abandono)\n- Quadril em ==flexão, abdução e rotação externa==.\n- Joelhos fletidos; ==tornozelos em equino== (gravidade).\n- Prevenir com posicionamento e órteses.\n\n> **Na prova:** frog leg na MMC torácica = quadril em ==abdução, flexão e RE== + ==equino==",
+  "correta": "**Abdução, flexão, RE e equino.**\n- Membros flácidos caem pela gravidade.\n- Contraturas se instalam se não posicionar.",
   "incorretas": {
-   "A": "A rotação interna do quadril não é característica da posição de abandono, é a rotação externa, por efeito gravitacional, que predomina.",
-   "C": "A posição de abandono envolve os quadris também, não apenas o joelho em extensão e o tornozelo em equino de forma isolada.",
-   "D": "A rotação interna do quadril e o tornozelo dorsifletido não correspondem à posição de abandono, o padrão gravitacional característico é rotação externa do quadril e equino do tornozelo."
+   "A": "**Rotação errada.**\n- É externa.",
+   "C": "**Joelho errado.**\n- Fletido.",
+   "D": "**Duplamente errada.**\n- RI e dorsiflexão."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0215": {
-  "conceito": "O centro de gravidade do corpo humano, na posição ortostática, está localizado aproximadamente **5 cm anteriormente à segunda vértebra sacral (S2)**, essa é a referência anatômica clássica usada nos textos de análise de marcha (Perry e colaboradores). Durante o ciclo normal da marcha, esse ponto não se desloca em linha reta: ele oscila tanto verticalmente quanto lateralmente, com uma amplitude de oscilação de aproximadamente **4,5 cm**.\n\nEssa combinação de localização (5 cm anterior a S2) e amplitude de oscilação (4,5 cm) resume os dois parâmetros clássicos cobrados sobre o centro de gravidade na biomecânica da marcha.",
-  "correta": "B. O centro de gravidade está localizado cerca de 5 cm anteriormente a S2, com oscilação de aproximadamente 4,5 cm durante a marcha.",
+  "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n### Altura do centro de massa\n| Momento | Altura |\n|---|---|\n| ==contato do calcanhar== (duplo apoio) | ==mais baixa== |\n| ==apoio médio== (acomodação intermediária) | ==mais alta== |\n\n- No lateral: máximo deslocamento no apoio médio, sobre o membro de apoio.\n\n### Oscilação do centro de gravidade\n| Plano | Amplitude |\n|---|---|\n| ==vertical== | ==cerca de 4,5 a 5 cm== (curva senoidal) |\n| lateral | cerca de 4 a 5 cm |\n\n### Posição do centro de gravidade\n- Cerca de ==5 cm anterior a S2== na posição ereta.\n\n> **Na prova:** centro de gravidade = ==5 cm à frente de S2==, oscilação vertical ==4,5 cm==",
+  "correta": "**5 cm à frente de S2; 4,5 cm.**\n- Posição e amplitude clássicas.",
   "incorretas": {
-   "A": "A referência anatômica clássica é S2, não S1, e a amplitude de oscilação classicamente descrita é de 4,5 cm, não 3,5 cm.",
-   "C": "A referência anatômica clássica para a localização do centro de gravidade é S2, não S1.",
-   "D": "A amplitude de oscilação classicamente descrita é de 4,5 cm, não 3,5 cm."
+   "A": "**Duplamente errada.**\n- Nível e amplitude.",
+   "C": "**Nível errado.**\n- S2.",
+   "D": "**Amplitude errada.**\n- 4,5 cm."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0216": {
-  "conceito": "Os três \"rockers\" (mecanismos de rolamento) do tornozelo durante a fase de apoio da marcha, descritos por Perry, controlam o avanço suave do corpo sobre o pé fixo no solo:\n- **1º rocker (rolamento do calcanhar)**: do contato inicial até o apoio plantar total, controlado pelo tibial anterior em **contração excêntrica**, desacelerando a queda do antepé.\n- **2º rocker (rolamento do tornozelo)**: durante o apoio médio, quando a tíbia avança sobre o pé fixo, controlado pelo **tríceps sural, principalmente o sóleo, em contração excêntrica**, freando a velocidade de avanço da tíbia e evitando o colapso em dorsiflexão excessiva.\n- **3º rocker (rolamento do antepé)**: do apoio terminal até o desprendimento dos dedos, controlado pelo tríceps sural em **contração concêntrica**, gerando o impulso final de propulsão.\n\nA distinção entre contração concêntrica e excêntrica nesses três momentos é um ponto clássico de prova: apenas no terceiro rolamento há geração ativa de força propulsiva (concêntrica); nos outros dois, a musculatura trabalha excentricamente, controlando (freando) o movimento, não impulsionando-o.",
-  "correta": "D. O sóleo, em contração excêntrica, é o principal responsável pelo controle do avanço da tíbia durante o segundo rolamento do tornozelo.",
+  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n### Três rolamentos (Perry)\n| Rolamento | Fase | Pivô | Músculo |\n|---|---|---|---|\n| 1º (calcanhar) | resposta à carga | calcâneo | ==tibial anterior== excêntrico (abaixa o pé) |\n| ==2º (tornozelo)== | apoio médio | tibiotársica | ==sóleo excêntrico== (freia o avanço da tíbia) |\n| 3º (antepé) | apoio terminal | MTF | tríceps concêntrico (impulsão) |\n\n> **Na prova:** 2º rolamento = ==sóleo em contração excêntrica==",
+  "correta": "**Sóleo excêntrico.**\n- Freia o avanço da tíbia sobre o pé.\n- Base da órtese de reação ao solo.",
   "incorretas": {
-   "A": "O gastrocnêmio em contração concêntrica não corresponde ao mecanismo do segundo rolamento, a contração concêntrica do tríceps sural ocorre no terceiro rolamento, durante a propulsão.",
-   "B": "Embora o gastrocnêmio também contribua, o controle do avanço tibial no segundo rolamento é classicamente atribuído sobretudo ao sóleo, em contração excêntrica.",
-   "C": "É a contração excêntrica, não concêntrica, do sóleo que controla o avanço da tíbia no segundo rolamento, a contração concêntrica ocorre apenas no terceiro rolamento."
+   "A": "**Impulsão.**\n- 3º rolamento, concêntrico.",
+   "B": "**Principal é o sóleo.**\n- Monoarticular, controla a tíbia.",
+   "C": "**Tipo errado.**\n- Excêntrico no apoio médio."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0217": {
-  "conceito": "A artrogripose múltipla congênita (na sua forma clássica, a amioplasia) apresenta um conjunto característico de achados clínicos: **deformidades articulares simétricas** nos membros superiores e inferiores; os membros inferiores tipicamente assumem uma atitude em **rotação externa**; e, no tratamento das deformidades do membro superior, a prioridade cirúrgica costuma ser obter **flexão ativa ou passiva do cotovelo**, já que essa função é essencial para a independência em atividades básicas (higiene, alimentação).\n\nUm ponto fundamental (e frequentemente mal compreendido) sobre a artrogripose clássica (amioplasia) é que o **desenvolvimento cognitivo costuma ser normal**, apesar das limitações físicas importantes. Isso contrasta com algumas síndromes artrogripóticas específicas (associadas a comprometimento do sistema nervoso central), mas não é a regra geral da condição.",
-  "correta": "D. Diferente do que a alternativa afirma, o desenvolvimento cognitivo costuma ser preservado nas crianças com artrogripose clássica, por isso essa é a afirmativa incorreta.",
+  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n### Epidemiologia\n- Incidência de cerca de ==1:3.000== nascidos vivos (varia com a definição).\n- Amioplasia é ==esporádica== (não hereditária).\n- ==Simétrica==, quatro membros; pé ==equinovaro== rígido.\n\n> **Na prova:** artrogripose = cerca de ==1:3.000== nascidos vivos (veja o alerta).",
+  "correta": "**D é a incorreta.**\n- Cognição é normal na amioplasia.\n- As demais afirmações estão certas.",
   "incorretas": {
-   "A": "As deformidades articulares na artrogripose costumam ser, de fato, simétricas, essa afirmativa está correta.",
-   "B": "Os membros inferiores costumam assumir uma atitude em rotação externa na artrogripose, essa afirmativa está correta.",
-   "C": "O ganho de flexão do cotovelo é, de fato, a prioridade inicial no tratamento das deformidades do membro superior, essa afirmativa está correta."
+   "A": "**Correta.**\n- Simetria é típica.",
+   "B": "**Correta.**\n- MMII em rotação externa.",
+   "C": "**Correta.**\n- Primeiro, flexão do cotovelo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0218": {
-  "conceito": "A diferenciação entre arqueamento fisiológico dos membros inferiores e a doença de Blount patológica é feita, entre outros critérios, pelo **ângulo metáfise-diafisário de Levine-Drennan**, medido na radiografia AP da tíbia proximal. Quanto maior esse ângulo, maior a probabilidade de se tratar de uma tíbia vara patológica (Blount) em vez de um arqueamento fisiológico, que tende a se corrigir espontaneamente com o crescimento.\n\nEm uma criança de 6 anos com varo persistente (idade em que o arqueamento fisiológico já deveria ter se corrigido espontaneamente), valores nitidamente elevados desse ângulo (como **20 graus**, o maior entre as opções apresentadas) são os mais sugestivos de doença de Blount estabelecida, reforçando a indicação de investigação e tratamento direcionado, em vez de apenas observação.",
-  "correta": "D. Um ângulo metáfise-diafisário de 20 graus é o mais sugestivo de doença de Blount entre as opções apresentadas.",
+  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Ângulo metafisário-diafisário (Levine-Drennan)\n- Entre a linha pelos bicos metafisários e a perpendicular ao eixo da tíbia.\n| Valor | Interpretação |\n|---|---|\n| < 10° | provavelmente fisiológico |\n| 10 a 16° | zona cinzenta, seguir |\n| > 16° | Blount provável |\n\n- ==Pouco confiável isolado==: varia com a rotação do membro e a técnica; combinar com clínica e evolução.\n\n> **Na prova:** ângulo de Levine-Drennan = ==pouco confiável quando usado isoladamente==",
+  "correta": "**20°.**\n- Acima de 16° sugere Blount.\n- Varo persistente aos 6 anos não é fisiológico.",
   "incorretas": {
-   "A": "Um ângulo de 8 graus é mais compatível com arqueamento fisiológico do que com doença de Blount.",
-   "B": "Um ângulo de 11 graus está numa faixa limítrofe, menos sugestiva de Blount do que o valor mais elevado apresentado nas opções.",
-   "C": "Um ângulo de 16 graus já é preocupante, mas o valor de 20 graus, sendo ainda maior, é o mais sugestivo entre as opções apresentadas."
+   "A": "**Fisiológico.**\n- Menor que 10°.",
+   "B": "**Zona cinzenta.**\n- 10 a 16°.",
+   "C": "**Limite.**\n- Acima dele é mais sugestivo."
   },
-  "geradoEm": "2026-09-21",
+  "geradoEm": "2026-09-24",
   "conferido": false
  },
  "pediatria-0219": {
