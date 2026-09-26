@@ -33,6 +33,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   )
   const [email, definirEmail] = useState(''), [senha, definirSenha] = useState('')
   const [confirmacao, definirConfirmacao] = useState(''), [verSenha, definirVerSenha] = useState(false)
+  const [novaSenha, definirNovaSenha] = useState(''), [confirmacaoNovaSenha, definirConfirmacaoNovaSenha] = useState('')
   // Aviso deixado pelo retorno de um link de e-mail com problema (expirado,
   // já usado, aberto em outro navegador). Ver conta/retornoAuth.ts.
   const [ocupado, definirOcupado] = useState(false), [mensagem, definirMensagem] = useState(avisoConta)
@@ -150,6 +151,20 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     } catch (e) { definirMensagem(textoErro((e as { code?: string }).code)) }
     finally { definirOcupado(false) }
   }
+  async function trocarSenha(e: FormEvent) {
+    e.preventDefault()
+    if (!supabase || ocupado || !sessao) return
+    if (novaSenha.length < 8) { definirMensagem('Use pelo menos 8 caracteres na nova senha.'); return }
+    if (novaSenha !== confirmacaoNovaSenha) { definirMensagem('As senhas não coincidem.'); return }
+    definirOcupado(true); definirMensagem('')
+    try {
+      const { error } = await supabase.auth.updateUser({ password: novaSenha })
+      if (error) throw error
+      definirNovaSenha(''); definirConfirmacaoNovaSenha('')
+      definirMensagem('Senha alterada com segurança.')
+    } catch (e) { definirMensagem(textoErro((e as { code?: string }).code)) }
+    finally { definirOcupado(false) }
+  }
   function importar() {
     if (!status.pronto) return
     for (const tipo of TIPOS_SYNC) {
@@ -235,7 +250,11 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     if (!supabase) return
     if (status.pendentes && !window.confirm('Ainda há alterações não sincronizadas. Elas ficarão neste navegador, disponíveis quando você entrar novamente nesta conta. Sair agora?')) return
     definirOcupado(true)
-    try { const { error } = await supabase.auth.signOut({ scope: 'local' }); if (error) throw error } catch { definirMensagem('Não foi possível sair. Confira sua conexão e tente novamente.') } finally { definirOcupado(false) }
+    try {
+      const { error } = await supabase.auth.signOut({ scope: 'local' })
+      if (error) throw error
+      definirMensagem('Você saiu da sua conta com segurança.')
+    } catch { definirMensagem('Não foi possível sair. Confira sua conexão e tente novamente.') } finally { definirOcupado(false) }
   }
   return <article className="empilha-2 conta-pagina ct">
     <section className="ct-heroi">
@@ -328,6 +347,12 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
 
       <section className="ct-cartao">
         <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="alerta" tamanho={18} /></span><div><h2>Segurança</h2><p>Trocar o e-mail exige confirmação pelo novo endereço.</p></div></header>
+        <form className="empilha" onSubmit={e => void trocarSenha(e)}>
+          <label className="campo">Nova senha<input className="entrada" type="password" autoComplete="new-password" minLength={8} required value={novaSenha} onChange={e => definirNovaSenha(e.target.value)} /></label>
+          <label className="campo">Confirmar nova senha<input className="entrada" type="password" autoComplete="new-password" minLength={8} required value={confirmacaoNovaSenha} onChange={e => definirConfirmacaoNovaSenha(e.target.value)} /></label>
+          <p className="ct-nota">Use pelo menos 8 caracteres. A nova senha é enviada diretamente ao Supabase e não é salva no progresso.</p>
+          <button className="botao botao--principal" type="submit" disabled={ocupado || !novaSenha || !confirmacaoNovaSenha}>Alterar senha</button>
+        </form>
         <label className="campo">Novo e-mail<input className="entrada" type="email" value={novoEmail} onChange={e => definirNovoEmail(e.target.value)} placeholder="novo@email.com" /></label>
         <div className="linha"><button className="botao botao--principal" type="button" onClick={() => void trocarEmail()} disabled={ocupado || !novoEmail.trim()}>Trocar e-mail</button></div>
         <p className="ct-nota">Conta criada em {new Date(sessao.user.created_at).toLocaleDateString('pt-BR')}. Quer apagar tudo? <a href={href('/contato?assunto=exclusao-conta')}>Solicitar exclusão da conta</a>.</p>

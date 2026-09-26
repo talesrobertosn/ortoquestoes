@@ -17,13 +17,23 @@ export function ModalEntrar({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
   const [erro, definirErro] = useState('')
   const referencia = useRef<HTMLDivElement>(null)
   const anterior = useRef<HTMLElement | null>(null)
+  const fechar = () => { definirSenha(''); aoFechar() }
 
   useEffect(() => {
     if (!aberto) return
     anterior.current = document.activeElement as HTMLElement | null
     referencia.current?.querySelector<HTMLElement>('input')?.focus()
     function aoTeclar(evento: KeyboardEvent) {
-      if (evento.key === 'Escape') { evento.stopPropagation(); aoFechar() }
+      if (evento.key === 'Escape') { evento.stopPropagation(); fechar() }
+      if (evento.key !== 'Tab' || !referencia.current) return
+      const focaveis = [...referencia.current.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), input:not([disabled])')]
+      if (!focaveis.length) return
+      const ultimo = focaveis[focaveis.length - 1]
+      if (evento.shiftKey && document.activeElement === focaveis[0]) {
+        evento.preventDefault(); ultimo.focus()
+      } else if (!evento.shiftKey && document.activeElement === ultimo) {
+        evento.preventDefault(); focaveis[0].focus()
+      }
     }
     document.addEventListener('keydown', aoTeclar, true)
     return () => {
@@ -44,7 +54,7 @@ export function ModalEntrar({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
       const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password: senha })
       if (error) throw error
       definirSenha('')
-      aoFechar()
+      fechar()
     } catch (e) {
       definirErro(textoErro((e as { code?: string }).code))
     } finally {
@@ -54,11 +64,11 @@ export function ModalEntrar({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
 
   return (
     <>
-      <button className="veu" aria-label="Fechar" onClick={aoFechar} />
+      <button className="veu" aria-label="Fechar" onClick={fechar} />
       <div className="modal-central" role="dialog" aria-modal="true" aria-label="Entrar na sua conta" ref={referencia}>
         <div className="modal-central__topo">
           <h2>Entrar</h2>
-          <button type="button" className="botao-icone" onClick={aoFechar} aria-label="Fechar">
+          <button type="button" className="botao-icone" onClick={fechar} aria-label="Fechar">
             <Icone nome="fechar" />
           </button>
         </div>
@@ -76,7 +86,7 @@ export function ModalEntrar({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
         </form>
         <a
           href={href('/conta?modo=recuperar')}
-          onClick={aoFechar}
+          onClick={fechar}
           className="texto-2"
         >
           Esqueceu sua senha?
@@ -86,7 +96,7 @@ export function ModalEntrar({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
           <button
             type="button"
             className="botao botao--principal"
-            onClick={() => { aoFechar(); navegar('/conta?modo=criar') }}
+            onClick={() => { fechar(); navegar('/conta?modo=criar') }}
           >
             Criar conta gratuita
           </button>
