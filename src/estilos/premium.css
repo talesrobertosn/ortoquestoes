@@ -1437,7 +1437,13 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
 .conta-assinatura__dados dd { margin: .25rem 0 0; font-weight: 700; }
 .admin-assinaturas__tabela { overflow-x: auto; }
 .admin-assinaturas__tabela .tabela { min-width: 42rem; }
-@media (max-width: 40rem) { .conta-assinatura__dados { grid-template-columns: 1fr; } }
+.admin-assinaturas__tabela:focus-visible { outline: 2px solid var(--verdete); outline-offset: 3px; }
+.admin-assinaturas__filtros { display: grid; grid-template-columns: minmax(0, 2fr) minmax(10rem, 1fr); gap: .75rem; }
+.admin-assinaturas__tabela td { overflow-wrap: anywhere; }
+@media (max-width: 40rem) {
+  .conta-assinatura__dados { grid-template-columns: 1fr; }
+  .admin-assinaturas__filtros { grid-template-columns: 1fr; }
+}
 @media (max-width: 52rem) { .ct-grade { grid-template-columns: minmax(0, 1fr); } }
 .ct-cartao {
   display: grid; gap: 1rem; padding: clamp(1.2rem, 3vw, 1.75rem);
