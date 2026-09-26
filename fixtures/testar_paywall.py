@@ -41,6 +41,8 @@ for proibido in ("grant_type=password", "access_token=", "auth/v1/otp", "setSess
 # A tela de entrada (/entrar e /conta) usa o cliente de conta do Supabase.
 for trecho in ("'password'", "signInWithPassword", "Confirmar senha", "senha !== confirmacao", "resetPasswordForEmail"):
     assert trecho in PAGINA_ENTRAR, f"Interface de senha ausente: {trecho}"
+for trecho in ("auth.updateUser({ password: novaSenha })", "Alterar senha", "auth.signOut({ scope: 'local' })"):
+    assert trecho in PAGINA_ENTRAR, f"Gestão segura da sessão ausente: {trecho}"
 
 assert "localStorage" not in PAGINA_ENTRAR
 assert "console." not in PAGINA_ENTRAR
