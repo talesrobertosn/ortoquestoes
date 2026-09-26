@@ -87,8 +87,8 @@ export function Assinatura() {
       </section>
 
       <section className="vp-prova" aria-label="O acervo">
-        <div><strong>{indice ? indice.total.toLocaleString('pt-BR') : '4.400+'}</strong><span>questões de prova</span></div>
-        <div><strong>{comentadas ? comentadas.toLocaleString('pt-BR') : '4.400+'}</strong><span>com comentário</span></div>
+        <div><strong>{indice ? indice.total.toLocaleString('pt-BR') : '3.800+'}</strong><span>questões de prova</span></div>
+        <div><strong>{comentadas ? comentadas.toLocaleString('pt-BR') : '3.800+'}</strong><span>com comentário</span></div>
         <div><strong>{indice ? indice.temas.length : 11}</strong><span>temas da especialidade</span></div>
         <div><strong>TEOT · TARO</strong><span>e ENARE R4</span></div>
       </section>

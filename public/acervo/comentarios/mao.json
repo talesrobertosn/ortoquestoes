@@ -1326,29 +1326,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0116": {
-    "conceito": "### Parâmetros radiográficos do rádio distal\n| Parâmetro | Incidência | Como medir | Normal | Aceitável após redução |\n|---|---|---|---|---|\n| ==inclinação ulnar (radial)== | PA | ==ponta do estiloide radial → ponto mais ulnar da superfície articular do rádio==, contra a perpendicular ao eixo | ==cerca de 22° (21 a 25°)== | > 15° |\n| inclinação volar | perfil | borda dorsal → borda volar da superfície articular | ==cerca de 11° (10 a 12°)== | neutro a 20° volar (< 10 a 15° dorsal) |\n| altura radial | PA | ponta do estiloide até a superfície articular da ulna | cerca de 11 a 12 mm | perda < 3 a 5 mm |\n| variância ulnar | PA | diferença de altura entre rádio (borda ulnar) e ulna | neutra (± 2 mm) | |\n| degrau articular | | | 0 | < 2 mm |\n\n### Consequências da perda\n- Inclinação ulnar reduzida: carga desviada para a **ulna** e o lado ulnar do carpo.\n- Inclinação dorsal: instabilidade mediocarpal adaptativa (DISI adaptativo), dor, perda de flexão.\n\n> **Na prova:** inclinação ulnar = ==estiloide radial ao ponto mais ulnar da superfície articular; 22°==.",
-    "correta": "**Pontos do rádio, 22°.**\n- O ângulo se mede entre o estiloide radial e o ponto mais ulnar da superfície articular do rádio.\n- O valor normal é cerca de 22°.",
-    "incorretas": {
-      "A": "**Mistura os ossos.**\n- O estiloide da ulna não é referência da inclinação ulnar.",
-      "B": "**Valor da inclinação volar.**\n- 11° é o valor normal medido no perfil.",
-      "C": "**Erra os dois.**\n- Pontos e valor incorretos."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0117": {
-    "conceito": "### Fratura do escafoide\n- Osso mais fraturado do carpo (cerca de 70%).\n- Mecanismo: queda com ==hiperextensão (> 95°) e desvio radial==: o escafoide impacta na borda dorsal do rádio.\n- Irrigação ==retrógrada== (ramos dorsais distais da radial): polo proximal em risco de necrose.\n\n### Risco por local\n| Local | Frequência | Necrose |\n|---|---|---|\n| cintura | 65 a 80% | 30% |\n| polo proximal | 10 a 20% | ==até 100%== |\n| polo distal/tubérculo | 5 a 10% | rara |\n\n### Conduta\n| Situação | Tratamento |\n|---|---|\n| suspeita com RX normal | imobilizar; RM (ou TC) |\n| cintura sem desvio | gesso 6 a 12 semanas ou parafuso percutâneo |\n| desvio > 1 mm, polo proximal | ==fixação== |\n\n### Exame do escafoide\n| Teste | Achado |\n|---|---|\n| tabaqueira anatômica | dor (sensível, pouco específico) |\n| tubérculo do escafoide | dor volar |\n| compressão axial do polegar | dor |\n| Watson (desvio radial com pressão no tubérculo) | descrito para instabilidade escafossemilunar |\n| Finkelstein | tenossinovite de De Quervain |\n\n> **Na prova:** a banca combinou ==Watson== com ==hiperextensão e desvio radial== (veja o alerta)",
-    "correta": "**Watson; hiperextensão e desvio radial.**\n- Mecanismo clássico.\n- Teste aceito pela banca (veja o alerta).",
-    "incorretas": {
-      "A": "**Desvio ulnar.**\n- Mecanismo é com desvio radial.",
-      "C": "**Finkelstein.**\n- De Quervain.",
-      "D": "**Finkelstein.**\n- Teste errado."
-    },
-    "alerta": "O teste de Watson é o único do escafoide entre as alternativas, mas ele foi descrito para instabilidade escafossemilunar, e não para fratura. O exame clínico da fratura aguda do escafoide se apoia em outros achados, listados no comentário.",
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0118": {
     "conceito": "### Sistema de polias flexoras\n| Nº na figura | Polia | Local | Importância |\n|---|---|---|---|\n| 1 | A1 | MF | liberada no dedo em gatilho |\n| ==2== | ==A2== | ==falange proximal (diáfise)== | ==essencial== |\n| 3 | C1 | cruciforme | permite dobrar a bainha |\n| 4 | A3 | IFP | fina |\n| 5 | C2 | cruciforme | |\n| ==6== | ==A4== | ==falange média (diáfise)== | ==essencial== |\n| (7) | C3, A5 | IFD | fina |\n\n- Polias **pares** (A2, A4) sobre ossos; **ímpares** (A1, A3, A5) sobre articulações.\n\n### Efeito corda de arco\n- Tendão se afasta do osso na flexão: aumenta o braço de alavanca na base, **perde excursão** na ponta e força de flexão da IFD.\n- Reconstrução: tira de tendão em torno da falange (sob o extensor na A2, por cima na A4), loop triplo.\n\n### Escaladores\n- Ruptura da A2 (e A3, A4) por pegada em crimp.\n\n> **Na prova:** polias essenciais = ==A2 e A4== .",
     "correta": "**A2 e A4.**\n- São as polias longas sobre a falange proximal e a média.\n- Sem elas o tendão arqueia e a ponta do dedo não fecha.",
@@ -1356,28 +1333,6 @@
       "A": "**A1 é sacrificável.**\n- A A1 é liberada no dedo em gatilho sem arqueamento.",
       "C": "**C1 é cruciforme.**\n- As cruciformes permitem a dobra da bainha, não retêm o tendão.",
       "D": "**C2 é cruciforme.**\n- A A4 está certa, mas a C2 não tem função de retenção."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0119": {
-    "conceito": "### Dupuytren: os cinco itens cobrados\n| Item | Correto |\n|---|---|\n| sexo | ==homens, cerca de 10:1== |\n| associação | ==diabetes==, álcool, tabagismo, epilepsia, HIV |\n| distribuição | bilateral, ==assimétrica== |\n| genética | ==forte== (autossômica dominante, penetrância variável; \"doença dos vikings\") |\n| dedo mais acometido | ==anelar (4º)==, depois o mínimo |\n\n### Diátese\n- Início precoce, história familiar, bilateral, Garrod, Ledderhose, Peyronie: mais recidiva.\n\n### Biologia\n- Miofibroblastos, colágeno tipo III, TGF-β, via Wnt.\n\n> **Na prova:** Dupuytren = ==10x homens, diabetes, assimétrico, genético, 4º dedo==.",
-    "correta": "**Os cinco itens certos.**\n- Dez homens para cada mulher, mais comum em diabéticos, assimétrico, genético.\n- O anelar é o dedo mais acometido.",
-    "incorretas": {
-      "B": "**Proporção e dedo errados.**\n- A proporção é maior que 3:1, e o dedo mais comum é o anelar.",
-      "C": "**Quase tudo errado.**\n- Inverte o sexo, afirma simetria e nega a genética.",
-      "D": "**Quatro erros.**\n- Sexo, simetria, genética e dedo incorretos."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0120": {
-    "conceito": "### Sequência de Mayfield (decorar)\n| Estágio | Ligamento |\n|---|---|\n| ==I== | ==escafossemilunar== |\n| II | capitossemilunar |\n| ==III== | ==piramidal-semilunar (lunopiramidal)== |\n| IV | radiocarpal dorsal (semilunar luxa para volar) |\n\n- Direção: **radial → em torno do semilunar → ulnar → dorsal**.\n- Mecanismo: hiperextensão, desvio ulnar, supinação intercarpal.\n\n### Radiografia\n| Estágio | Achado |\n|---|---|\n| I | diástase escafossemilunar (Terry Thomas), anel cortical |\n| II e III | capitato fora do semilunar no perfil; linhas de Gilula quebradas |\n| IV | semilunar em \"xícara derramada\" no perfil; forma triangular no PA |\n\n> **Na prova:** estágios I e III = ==escafossemilunar e piramidal-semilunar==.",
-    "correta": "**Escafossemilunar e lunopiramidal.**\n- O estágio I rompe o escafossemilunar.\n- O estágio III rompe o piramidal-semilunar.",
-    "incorretas": {
-      "A": "**III errado.**\n- O capitossemilunar é o estágio II.",
-      "B": "**Desloca a série.**\n- Nomeia os ligamentos dos estágios II e IV.",
-      "C": "**Ordem invertida.**\n- Começa pelo último estágio."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -2023,17 +1978,6 @@
     "geradoEm": "2026-09-21",
     "conferido": false
   },
-  "mao-0175": {
-    "conceito": "### Sequência de Mayfield (decorar)\n| Estágio | Ligamento |\n|---|---|\n| ==I== | ==escafossemilunar== |\n| II | capitossemilunar |\n| ==III== | ==piramidal-semilunar (lunopiramidal)== |\n| IV | radiocarpal dorsal (semilunar luxa para volar) |\n\n- Direção: **radial → em torno do semilunar → ulnar → dorsal**.\n- Mecanismo: hiperextensão, desvio ulnar, supinação intercarpal.\n\n### Radiografia\n| Estágio | Achado |\n|---|---|\n| I | diástase escafossemilunar (Terry Thomas), anel cortical |\n| II e III | capitato fora do semilunar no perfil; linhas de Gilula quebradas |\n| IV | semilunar em \"xícara derramada\" no perfil; forma triangular no PA |\n\n### Espaço de Poirier\n- Área frágil da cápsula volar entre os ligamentos radioescafocapitato e radiossemilunar longo: por onde o capitato se desloca (estágio II).\n\n> **Na prova:** associação incorreta = ==estágio I como luxação capitossemilunar== (o I é escafossemilunar).",
-    "correta": "**É a associação falsa.**\n- O estágio I é a lesão escafossemilunar.\n- A luxação capitossemilunar é o estágio II.",
-    "incorretas": {
-      "B": "**Correta.**\n- O estágio III é a lesão lunopiramidal.",
-      "C": "**Correta.**\n- No IV o semilunar luxa para volar.",
-      "D": "**Correta.**\n- O capitato escapa pelo espaço de Poirier no estágio II."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0176": {
     "conceito": "### Vias laterais do cotovelo e o nervo interósseo posterior\n| Via | Intervalo |\n|---|---|\n| Kocher | ancôneo × extensor ulnar do carpo |\n| Kaplan | ERCC × extensor comum dos dedos |\n| Thompson | ERCC × extensor comum (mais distal, diáfise) |\n\n- O ==NIP== cruza o colo do rádio dentro do supinador.\n- ==Pronação== afasta o nervo do campo **lateral** (Kocher, Kaplan): ganha-se margem sobre o colo e a cabeça.\n- Na via de **Thompson** (dorsal à diáfise), usa-se a **supinação** para afastar o nervo ao desinserir o supinador.\n\n### Zona de segurança\n- Não dissecar mais de cerca de 3 a 4 cm distal à cabeça do rádio sem identificar o nervo.\n- Evitar afastadores na face anterior do colo.\n\n### Nervos fora do campo lateral\n| Nervo | Posição |\n|---|---|\n| mediano, interósseo anterior | volar, medial |\n| ulnar | posteromedial (túnel cubital) |\n\n> **Na prova:** pronação nas vias de Kocher e Kaplan protege o ==interósseo posterior==.",
     "correta": "**Interósseo posterior.**\n- A pronação desloca o NIP medial e distalmente.\n- Ganha margem de segurança sobre o colo do rádio.",
@@ -2234,72 +2178,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0192": {
-    "conceito": "### Sequência de Mayfield (decorar)\n| Estágio | Ligamento |\n|---|---|\n| ==I== | ==escafossemilunar== |\n| II | capitossemilunar |\n| ==III== | ==piramidal-semilunar (lunopiramidal)== |\n| IV | radiocarpal dorsal (semilunar luxa para volar) |\n\n- Direção: **radial → em torno do semilunar → ulnar → dorsal**.\n- Mecanismo: hiperextensão, desvio ulnar, supinação intercarpal.\n\n### Radiografia\n| Estágio | Achado |\n|---|---|\n| I | diástase escafossemilunar (Terry Thomas), anel cortical |\n| II e III | capitato fora do semilunar no perfil; linhas de Gilula quebradas |\n| IV | semilunar em \"xícara derramada\" no perfil; forma triangular no PA |\n\n> **Na prova:** Mayfield III = ==lesão completa do semilunopiramidal com luxação==.",
-    "correta": "**Lunopiramidal.**\n- No estágio III a força chega ao lado ulnar do semilunar.\n- O carpo fica desconectado, mas o semilunar ainda articula com o rádio.",
-    "incorretas": {
-      "A": "**Estágio I.**\n- Lesão escafossemilunar ou fratura do escafoide (transescafoide).",
-      "C": "**Estágio II.**\n- O capitato escapa pelo espaço de Poirier.",
-      "D": "**Estágio IV.**\n- O semilunar luxa para volar."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0193": {
-    "conceito": "### Síndrome escafocapitato (Fenton)\n- Variante rara do **arco maior** perissemilunar.\n- ==Fratura do escafoide + fratura do colo do capitato==, com o ==fragmento proximal do capitato rodado== (até 90 a 180°).\n- Mecanismo: alta energia, hiperextensão com impacto do capitato no rádio dorsal.\n\n### Diagnóstico\n- Radiografia pode parecer só fratura do escafoide.\n- **TC** mostra a cabeça do capitato rodada.\n\n### Tratamento\n- ==Cirúrgico==: redução aberta do fragmento do capitato (rotação desfeita) e fixação de ambas as fraturas (parafusos sem cabeça).\n- Sem tratamento: **necrose** do fragmento, pseudartrose, artrose mediocarpal.\n\n### Lesões do arco maior\n| Variante | Ossos fraturados |\n|---|---|\n| transescafoperissemilunar | escafoide (a mais comum) |\n| transestiloide | estiloide radial |\n| ==escafocapitato (Fenton)== | escafoide + capitato |\n| transpiramidal | piramidal |\n\n> **Na prova:** Fenton = ==fratura do escafoide + capitato com fragmento rodado; tratamento cirúrgico==.",
-    "correta": "**Duas fraturas, fragmento rodado.**\n- Escafoide e colo do capitato fraturados, com a cabeça do capitato girada.\n- Exige redução aberta e fixação.",
-    "incorretas": {
-      "A": "**Outra entidade.**\n- Pseudartrose isolada do capitato não é Fenton.",
-      "B": "**Não é ligamentar.**\n- E o tratamento conservador não cabe.",
-      "C": "**Não é estágio de Mayfield.**\n- O fragmento rodado não se reduz de forma fechada."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0194": {
-    "conceito": "### Altura (comprimento) radial\n- PA do punho: distância entre duas linhas perpendiculares ao eixo do rádio:\n  - uma pela ==ponta do estiloide radial==;\n  - outra pelo ==limite distal da superfície articular da cabeça da ulna==.\n- Normal: ==cerca de 11 a 12 mm==.\n- Aceitável após fratura: perda de até cerca de 3 a 5 mm.\n\n### Parâmetros do rádio distal\n| Parâmetro | Normal |\n|---|---|\n| inclinação ulnar | 22° |\n| inclinação volar | 11° |\n| ==altura radial== | ==11 a 12 mm== |\n| variância ulnar | neutra (± 2 mm) |\n\n### Consequências do encurtamento\n- Variância ulnar **positiva**: impacto ulnocarpal, dor ulnar, lesão do CFCT, incongruência da RUD.\n- Critério de **instabilidade** (encurtamento > 3 a 5 mm) que indica fixação.\n\n### Por que não usar o estiloide ulnar\n- Comprimento variável e frequentemente fraturado junto.\n\n> **Na prova:** altura radial = ==estiloide radial ao limite distal da cabeça da ulna, cerca de 12 mm==.",
-    "correta": "**Estiloide radial e cabeça da ulna.**\n- Mede-se entre a ponta do estiloide radial e a superfície articular distal da ulna.\n- O normal é cerca de 12 mm.",
-    "incorretas": {
-      "A": "**Referência instável.**\n- O estiloide ulnar varia muito e fratura com frequência.",
-      "C": "**Referência e valor errados.**\n- O centro da RUD não é usado, e 9 mm está abaixo do normal.",
-      "D": "**Referências trocadas.**\n- O canto medial do rádio serve à inclinação ulnar."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0195": {
-    "conceito": "### Ruptura tendínea após fratura do rádio distal\n| Tendão | Contexto |\n|---|---|\n| ==extensor longo do polegar (ELP)== | ==o mais comum==; fraturas **sem desvio** tratadas conservadoramente; semanas a meses depois |\n| FLP | placa volar proeminente (além da linha **watershed**) |\n| extensores dorsais (4º compartimento) | parafusos dorsais longos na placa volar |\n\n### Por que o ELP\n- Contorna o **tubérculo de Lister** em ângulo fechado.\n- Túnel apertado, **vascularização pobre** nesse trecho.\n- Hematoma e edema no compartimento fechado: isquemia e atrito.\n\n### Clínica\n- Perda súbita e **indolor** da retropulsão do polegar.\n\n### Tratamento\n- Transferência do ==extensor próprio do indicador (EIP)== (reparo direto raramente possível).\n- Alternativa: enxerto intercalar (palmar longo).\n\n### Prevenção na placa volar\n- Parafusos distais curtos (2 a 4 mm menores que a medida) e placa proximal à linha watershed.\n\n> **Na prova:** ruptura mais comum = ==extensor longo do polegar==.",
-    "correta": "**ELP.**\n- Rompe por atrito e isquemia no tubérculo de Lister.\n- É mais frequente após fraturas sem desvio tratadas sem cirurgia.",
-    "incorretas": {
-      "A": "**Sem trajeto anguloso.**\n- O extensor comum não contorna o Lister.",
-      "B": "**É o doador.**\n- O EIP raramente rompe e substitui o ELP.",
-      "C": "**Sem mudança brusca.**\n- O ERCC corre no 2º compartimento, sem o ângulo do ELP."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0196": {
-    "conceito": "### Síndrome do túnel do carpo aguda\n- Após fratura do rádio distal (ou luxação perissemilunar): **hematoma e edema** no túnel fechado.\n- Sinais de alerta:\n  - parestesia no mediano ==progressiva== após um intervalo;\n  - ==dor que piora==, desproporcional;\n  - déficit sensitivo que avança.\n- Emergência: pressões acima de 40 mmHg por horas lesam o nervo de forma permanente.\n\n### Conduta\n| Quadro | Conduta |\n|---|---|\n| parestesia leve, estável ou melhorando após redução | elevação, afrouxar gesso, observar |\n| ==parestesia progressiva / dor crescente== | ==liberação imediata do túnel do carpo== (junto com a fixação) |\n| compartimentos do antebraço tensos | fasciotomia do antebraço |\n\n### Fatores de risco\n- Fraturas de alta energia, translação > 35%, cominuição, jovens, gesso com punho muito fletido (posição de Cotton-Loder).\n\n> **Na prova:** dormência progressiva após fratura do rádio = ==liberação imediata do túnel do carpo==.",
-    "correta": "**Liberar o túnel já.**\n- Parestesia progressiva com dor crescente indica túnel do carpo agudo.\n- A descompressão não pode esperar; a fixação vai no mesmo tempo.",
-    "incorretas": {
-      "A": "**Não descomprime.**\n- A placa resolve o osso, não o nervo.",
-      "B": "**Só para quadro estável.**\n- Com piora progressiva, observar permite lesão definitiva.",
-      "C": "**Outro território.**\n- A fasciotomia da mão não abre o túnel do carpo."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0197": {
-    "conceito": "### Dissociação escafossemilunar: sinais radiográficos\n| Sinal | Incidência | Significado |\n|---|---|---|\n| ==Terry Thomas== | PA | ==espaço escafossemilunar > 3 mm== (2 a 3 mm duvidoso) |\n| anel cortical | PA | escafoide **fletido** (visto de topo) |\n| escafoide encurtado | PA | flexão |\n| ângulo escafossemilunar > 60 a 70° | perfil | DISI |\n| semilunar triangular | PA | semilunar estendido |\n\n### Incidências de estresse\n- **Punho cerrado** em desvio ulnar (clenched fist), comparativa.\n\n### Outros sinais citados\n| Sinal | Significado |\n|---|---|\n| xícara derramada (spilled teacup) | semilunar luxado para volar (Mayfield IV), perfil |\n| Wartenberg | mínimo abduzido (lesão do ulnar) |\n\n### Tratamento\n- Agudo: reparo ligamentar com âncoras e fios.\n- Crônico redutível sem artrose: reconstrução (tenodese de Brunelli modificada, Garcia-Elias, SLIC).\n- SLAC: fileira proximal ou quatro esquinas.\n\n> **Na prova:** diástase escafossemilunar = ==sinal de Terry Thomas==.",
-    "correta": "**Terry Thomas.**\n- A diástase entre escafoide e semilunar acima de 3 mm indica dissociação escafossemilunar.",
-    "incorretas": {
-      "A": "**Nome errado.**\n- A flexão do escafoide se vê pelo anel cortical.",
-      "B": "**Perfil e estágio IV.**\n- A xícara derramada é a luxação volar do semilunar.",
-      "C": "**Sinal neurológico.**\n- Wartenberg é o mínimo abduzido na lesão ulnar."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0198": {
     "conceito": "### Testes do nervo ulnar\n| Teste | Músculo | Achado |\n|---|---|---|\n| ==Froment== | adutor do polegar | flexão da IF do polegar na pinça lateral |\n| Jeanne | adutor | hiperextensão da MF do polegar |\n| ==Egawa== | interósseos | incapacidade de desviar o médio para os lados com a mão espalmada |\n| Wartenberg | 3º interósseo palmar | mínimo abduzido |\n| Pitres-Testut | interósseos | cruzar os dedos |\n| Duchenne | lumbricais 3 e 4 | garra ulnar |\n\n### Testes de outros nervos\n| Teste | Nervo |\n|---|---|\n| Kiloh-Nevin (sinal do O) | interósseo anterior (mediano) |\n| extensão do polegar / do punho resistidas | radial / NIP |\n| Watson | não é neurológico (escafossemilunar) |\n\n> **Na prova:** lesão ulnar no punho = ==Froment e Egawa==.",
     "correta": "**Froment e Egawa.**\n- Froment revela o adutor fraco; Egawa, os interósseos.\n- Ambos dependem do ramo profundo do ulnar.",
@@ -2307,138 +2185,6 @@
       "B": "**Kiloh-Nevin é do NIA.**\n- É o sinal do O, ramo do mediano.",
       "C": "**Nervo radial.**\n- Extensões resistidas testam o radial.",
       "D": "**Watson é ligamentar.**\n- Jeanne é ulnar, mas Watson avalia o escafossemilunar."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0199": {
-    "conceito": "### Tempo de isquemia tolerado no reimplante\n| Segmento | Isquemia quente | Isquemia fria (4 °C) |\n|---|---|---|\n| ==dedo== (sem músculo) | ==cerca de 12 h== | ==até 24 a 30 h== |\n| mão, punho, antebraço, braço (com músculo) | ==cerca de 6 h== | cerca de ==12 h== |\n\n- Necrose muscular irreversível começa por volta de **6 horas** de isquemia quente.\n\n### Conservação do segmento\n- Gaze **úmida** com soro, dentro de **saco plástico fechado**, saco sobre **gelo e água**.\n- Nunca contato direto com gelo nem imersão.\n\n### Síndrome de reperfusão (segmentos proximais)\n- Hipercalemia, acidose, **mioglobinúria**, insuficiência renal.\n- Em isquemia prolongada de braço, **não reimplantar** pode salvar a vida.\n\n### Indicações clássicas\n- Polegar, múltiplos dedos, mão, punho, antebraço, qualquer amputação em **criança**, dedo isolado distal à inserção do FSD (zona I).\n\n> **Na prova:** com resfriamento a 4 °C, ==dedo até cerca de 30 horas==; níveis com músculo, cerca de 12 horas.",
-    "correta": "**Dedo, 30 horas.**\n- Sem músculo, o dedo resfriado tolera até cerca de 30 horas.\n- Os níveis com músculo ficam em torno de 12 horas.",
-    "incorretas": {
-      "A": "**Subestima.**\n- O braço resfriado tolera cerca de 12 horas.",
-      "B": "**Não é o teto.**\n- O nível transmetacarpal resfriado vai a cerca de 12 horas.",
-      "D": "**Aquém do máximo.**\n- O antebraço resfriado também fica em cerca de 12 horas."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0200": {
-    "conceito": "### Ruptura da banda sagital\n- Mais comum: ==lado radial do dedo médio== (boxer's knuckle).\n- O extensor subluxa para **ulnar**, no vale intermetacarpal.\n\n### Por que o médio\n- Dedo mais longo e proeminente no soco.\n- A banda radial sofre tração no desvio ulnar forçado durante a flexão.\n\n### Clínica\n- Dor e edema dorsais na MF, estalido.\n- ==Não estende ativamente a partir da flexão==, mas ==mantém a extensão== se o dedo for estendido passivamente.\n- Desvio ulnar do dedo ao fletir.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| aguda (até cerca de 3 semanas) | órtese com MF em extensão (ou yoke) por 4 a 6 semanas |\n| crônica ou falha | reparo direto ou reconstrução (faixa do extensor, junctura) |\n\n### Não traumática\n- Artrite reumatoide: frouxidão das bandas radiais contribui para o desvio ulnar.\n\n> **Na prova:** ruptura mais comum = ==lado radial do dedo médio==.",
-    "correta": "**Banda sagital radial do médio.**\n- O tendão luxa para ulnar quando a banda radial rompe.\n- O médio é o dedo mais acometido.",
-    "incorretas": {
-      "A": "**Direção e dedo errados.**\n- Banda ulnar rota luxaria o tendão para radial.",
-      "B": "**Estrutura distal.**\n- A bandeleta lateral lesada gera botoeira ou pescoço de cisne.",
-      "D": "**Sobre a IFP.**\n- A ruptura da banda central produz botoeira."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0201": {
-    "conceito": "### Distribuição da doença de Dupuytren\n| Dedo | Frequência |\n|---|---|\n| ==anelar== | ==o mais acometido== |\n| mínimo | segundo |\n| médio | terceiro |\n| polegar, 1ª comissura | menos comuns (doença extensa) |\n| indicador | raro isolado |\n\n- Preferência pelo **lado ulnar** da mão.\n\n### Prognóstico por articulação\n| Articulação | Resposta à cirurgia |\n|---|---|\n| MF | boa correção, pouca recidiva |\n| IFP | correção difícil, **mais recidiva**, sobretudo no mínimo |\n\n### Indicações de tratamento (clássicas)\n- Contratura da MF acima de **30°**.\n- **Qualquer** contratura da IFP (progressiva).\n- Teste de Hueston positivo.\n\n> **Na prova:** Dupuytren = ==homens, anelar e mínimo==.",
-    "correta": "**Homens, anelar e mínimo.**\n- A doença predomina no homem e no lado ulnar da mão.\n- O mínimo tem a contratura da IFP mais difícil.",
-    "incorretas": {
-      "A": "**Dedos errados.**\n- Polegar e indicador são os menos acometidos.",
-      "B": "**Sexo errado.**\n- O predomínio é masculino.",
-      "D": "**Médio menos frequente.**\n- A dupla típica é anelar e mínimo."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0202": {
-    "conceito": "### Ligamentos do dedo e o feixe neurovascular\n| Ligamento | Posição em relação ao feixe | Na doença de Dupuytren |\n|---|---|---|\n| ==Grayson== | ==volar== | ==acometido==: participa da **corda espiral** |\n| Cleland | **dorsal** | **poupado** (referência de plano correto) |\n| natatório | comissura | corda natatória (fecha a comissura) |\n| transverso superficial da palma (Skoog) | palma, profundo às bandas pré-tendíneas | **poupado** |\n| lâmina digital lateral | lateral | corda lateral, participa da espiral |\n\n### Corda espiral\n- Banda pré-tendínea + banda espiral + lâmina digital lateral + ==ligamento de Grayson==.\n- Desloca o feixe para a **linha média** e para a **superfície**: risco de lesão nervosa.\n\n### Mnemônico\n- **G**rayson na **G**round (chão = volar); **C**leland no **C**eiling (teto = dorsal).\n\n> **Na prova:** acometidas = ==banda digital lateral, Grayson, pré-tendínea e espiral==; Cleland poupado.",
-    "correta": "**Todas adoecem.**\n- Banda digital lateral, Grayson, pré-tendínea e espiral são acometidas.\n- Juntas formam a corda espiral.",
-    "incorretas": {
-      "A": "**Cleland é poupado.**\n- O ligamento dorsal ao feixe não adoece.",
-      "C": "**Inclui Cleland.**\n- E repete a banda digital lateral.",
-      "D": "**Também inclui Cleland.**\n- Grayson adoece; Cleland não."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0203": {
-    "conceito": "### Classificação de Heikel (displasia radial)\n| Heikel | Bayne | Descrição |\n|---|---|---|\n| A | I | rádio distal curto (fise distal atrasada) |\n| B | II | rádio hipoplásico em miniatura |\n| C | III | ausência parcial (remanescente proximal) |\n| ==D== | ==IV== | ==ausência total do rádio==: ==a mais comum== |\n\n### Mão torta radial (tipo D)\n- Mão desviada radialmente sobre a ponta da ulna.\n- Ulna curta e encurvada; polegar ausente ou hipoplásico.\n- Bilateral em cerca de metade.\n\n### Investigação obrigatória\n| Síndrome | Exame |\n|---|---|\n| Fanconi | teste de quebra cromossômica (diepoxibutano) |\n| Holt-Oram | ecocardiograma |\n| TAR | hemograma (plaquetas) |\n| VACTERL | coluna, rim, coração, ânus, traqueia/esôfago |\n\n### Remanescente no tipo C\n- Pode funcionar como **banda** que agrava a curvatura da ulna com o crescimento.\n\n> **Na prova:** Heikel mais comum = ==tipo D (ausência total)==.",
-    "correta": "**Tipo IV.**\n- A ausência total do rádio é a forma mais comum.\n- É a mão torta radial clássica.",
-    "incorretas": {
-      "B": "**Tipo I é leve.**\n- Rádio distal apenas curto.",
-      "C": "**Não é o mais frequente.**\n- O tipo II é a hipoplasia do rádio.",
-      "D": "**Ausência parcial.**\n- O tipo III também é menos comum."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0204": {
-    "conceito": "### Associações da mão torta radial\n| Categoria | Associação |\n|---|---|\n| local | ==hipoplasia do polegar== (Blauth), bíceps anômalo, cotovelo rígido |\n| ==VACTERL== | ==vértebras, ânus, coração, traqueia/esôfago, rim, membros== |\n| **Fanconi** | falência medular tardia: **teste de quebra cromossômica** (diepoxibutano) |\n| **TAR** | trombocitopenia com ausência do rádio: **polegar presente** |\n| **Holt-Oram** | cardiopatia (CIA): ecocardiograma |\n| outras | trissomias 13 e 18, talidomida |\n\n### Investigação inicial\n- Hemograma, teste de quebra cromossômica, ecocardiograma, ultrassom renal, radiografias de coluna.\n\n### Diferenciais citados\n| Condição | Característica |\n|---|---|\n| Down | frouxidão, instabilidade atlantoaxial |\n| dimelia ulnar | mão em espelho, lado ulnar duplicado |\n\n> **Na prova:** mão torta radial associa-se a ==hipoplasia do polegar e VACTERL==.",
-    "correta": "**Polegar e VACTERL.**\n- A hipoplasia do polegar é a associação local mais constante.\n- VACTERL, Fanconi, TAR e Holt-Oram devem ser investigados.",
-    "incorretas": {
-      "A": "**Down não se associa.**\n- O polegar está certo, mas Down não integra as associações.",
-      "B": "**Dimelia ulnar.**\n- Mão em espelho é malformação do lado oposto.",
-      "C": "**Sem relação.**\n- Fêmur curto e Klinefelter não são associações descritas."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0205": {
-    "conceito": "### Polidactilia pré-axial × pós-axial\n| Aspecto | Pré-axial (polegar) | Pós-axial (mínimo) |\n|---|---|---|\n| lado | radial | ulnar |\n| lateralidade | ==geralmente unilateral== | frequentemente bilateral |\n| herança | esporádica | autossômica dominante (tipo B) |\n| população | asiáticos, brancos | ==negros== (tipo B, pedunculada) |\n| associação | trifalangia, Holt-Oram, Fanconi | tipo A em brancos: investigar síndromes |\n\n### Classificação de Wassel\n| Tipo | Nível da duplicação |\n|---|---|\n| I | falange distal bífida |\n| II | falange distal duplicada (IF) |\n| III | falange proximal bífida |\n| ==IV== | ==falange proximal duplicada (MF): o mais comum== |\n| V | metacarpo bífido |\n| VI | metacarpo duplicado |\n| VII | com polegar trifalângico |\n\n### Cirurgia\n- Em geral o ==polegar radial== é o ==mais hipoplásico== e é **ressecado**.\n- Reconstruir o ulnar: **colateral radial** com retalho de periósteo e reinserção do **abdutor curto**, centralizar tendões, osteotomias se desvio.\n- Idade: cerca de 1 ano.\n\n> **Na prova:** pré-axial = ==caucasianos e asiáticos, unilateral e esporádica==.",
-    "correta": "**Caucasianos e asiáticos, unilateral, esporádica.**\n- É o perfil da polidactilia pré-axial.\n- A pós-axial é o espelho: afrodescendentes, bilateral e hereditária.",
-    "incorretas": {
-      "A": "**Mistura perfis.**\n- População e genética da pós-axial.",
-      "B": "**Lateralidade e genética erradas.**\n- A pré-axial é unilateral e esporádica.",
-      "D": "**Perfil da pós-axial.**\n- Afrodescendentes e bilateral descrevem a pós-axial."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0206": {
-    "conceito": "### Classificação da sindactilia\n| Eixo | Tipos |\n|---|---|\n| extensão | **completa** (até a ponta, unhas fundidas) × **incompleta** |\n| tecido | ==simples== (só partes moles) × **complexa** (fusão óssea, geralmente falange distal) |\n| associação | **complicada**: ossos acessórios, tendões anômalos, feixe único (Apert, sinfalangismo) |\n\n### Sindactilia simples\n- Ponte **só de pele e subcutâneo**.\n- Cada dedo mantém ==artéria e nervo digitais próprios (duplicados)==: separação possível sem sacrificar dedo.\n- A bifurcação da artéria digital comum pode ser **mais distal**: limita o aprofundamento da comissura.\n\n### Epidemiologia e cirurgia\n- Mais comum entre **médio e anelar**; bilateral em cerca de metade; predomínio masculino.\n- Separar primeiro dedos de tamanhos diferentes (polegar-indicador, anelar-mínimo) cedo (6 a 12 meses) para evitar desvios.\n- Separar **um lado de cada dedo por vez** (risco vascular); comissura com retalho dorsal e **enxerto** de pele total.\n\n> **Na prova:** ponte até as pontas + fusão óssea = ==completa e complexa==.",
-    "correta": "**Completa e complexa.**\n- A ponte chega às pontas (completa) e há fusão óssea (complexa).\n- O aspecto sugere Apert: separar em tempos.",
-    "incorretas": {
-      "A": "**Há fusão óssea.**\n- A radiografia exclui a forma simples.",
-      "B": "**Chega às pontas.**\n- A ponte até a ponta caracteriza a forma completa.",
-      "C": "**Erra os dois eixos.**\n- É completa e complexa."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0207": {
-    "conceito": "### Sinostose radioulnar congênita\n- Falha de segmentação entre rádio e ulna proximais; **bilateral** em cerca de 60%.\n- Antebraço fixo, frequentemente em **pronação**; compensação pelo ombro e punho.\n\n### Indicação de osteotomia derrotativa\n- Pronação fixa acima de cerca de 60° com prejuízo funcional (levar a mão à boca, receber objetos).\n- Posição alvo: **neutra a 10 a 20° de pronação** no lado dominante; um pouco de supinação no não dominante (em bilaterais).\n\n### Complicações\n| Complicação | Comentário |\n|---|---|\n| ==síndrome compartimental== | ==a mais frequente== com rotações de 90° de uma vez (torção do envelope e dos vasos) |\n| lesão do interósseo posterior | acessos proximais |\n| perda de correção, pseudartrose | incomuns |\n\n### Prevenção\n- Limitar a correção aguda a cerca de **60 a 85°**, osteotomia dupla, fasciotomia profilática, correção gradual com fixador.\n- Vigilância de perfusão e dor desproporcional.\n\n### Separar os ossos\n- Ressecção com interposição: **recidiva** frequente; pouco usada.\n\n> **Na prova:** sinostose radioulnar = ==bilateral, proximal, antebraço pronado==.",
-    "correta": "**Bilateral, proximal, pronado.**\n- A fusão é das extremidades proximais e o antebraço fica fixo em pronação.\n- Por ser indolor e compensada, o diagnóstico costuma ser tardio.",
-    "incorretas": {
-      "B": "**Erra tudo.**\n- É bilateral, proximal e em pronação.",
-      "C": "**Local e posição errados.**\n- A fusão é proximal e o antebraço fica pronado.",
-      "D": "**Lateralidade errada.**\n- A apresentação típica é bilateral."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0208": {
-    "conceito": "### Testes provocativos do túnel do carpo\n| Teste | Mecanismo | Desempenho |\n|---|---|---|\n| Tinel | percussão sobre o nervo | sensibilidade baixa a moderada |\n| Phalen | flexão do punho por 60 s (aumenta a pressão) | sensibilidade e especificidade moderadas |\n| ==Durkan (compressão carpal)== | ==pressão direta do polegar sobre o túnel por 30 s== | ==melhor sensibilidade e especificidade== dos três |\n| teste de elevação da mão | mão acima da cabeça por 2 min | útil |\n\n### Outros elementos do diagnóstico\n- Parestesia noturna nos três primeiros dedos e metade radial do anelar; **sinal da sacudida** (flick).\n- Hipoestesia poupando a eminência tenar (ramo cutâneo palmar sai antes do túnel).\n- Atrofia tenar e fraqueza de abdução do polegar nos casos avançados.\n- **ENMG** confirma e gradua.\n- Ultrassom: área de secção transversa do mediano acima de cerca de 10 a 12 mm².\n\n> **Na prova:** teste mais sensível e específico = ==Durkan==.",
-    "correta": "**Durkan.**\n- Compressão direta sobre o mediano no punho por cerca de 30 segundos.\n- Reproduz o mecanismo da doença e tem o melhor desempenho.",
-    "incorretas": {
-      "A": "**Tinel.**\n- Especificidade razoável, sensibilidade baixa.",
-      "B": "**Phalen.**\n- Útil, mas inferior ao Durkan.",
-      "D": "**Phalen invertido.**\n- Existe, mas tem desempenho menor."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0209": {
-    "conceito": "### A tríade do tumor glômico\n- **Dor intensa**, desproporcional ao tamanho da lesão.\n- **Sensibilidade ao frio**.\n- **Dor pontual** ao toque.\n\nNuma lesão **subungueal** arroxeada, em mulher adulta: ==tumor glômico==. A maioria fica no leito ungueal da mão.\n\n### O que é\nTumor **benigno** do **glomo**, estrutura neuromioarterial que regula a temperatura da pele.\n\n### Os testes clássicos\n- **Love:** pressionar um ponto com objeto pequeno e firme (a ponta de um alfinete ou de uma caneta) reproduz dor intensa **só naquele ponto**.\n- **Hildreth:** inflar um manguito acima da pressão sistólica faz a dor **sumir**; ela volta ao desinflar.\n- **Frio:** imersão em água gelada reproduz a dor.\n\n### Confirmação e tratamento\n- **Ressonância:** lesão pequena, mas **muito vascularizada**, com realce intenso.\n- **Excisão completa**, com alívio imediato. Recidiva sugere ressecção incompleta.\n\n### Detalhes úteis\n- O atraso diagnóstico costuma ser de **anos**.\n- Tumores glômicos **múltiplos** sugerem **neurofibromatose tipo 1**.\n\n> **Na prova:** dor subungueal intensa, ao frio e pontual é ==tumor glômico==. Testes: Love, Hildreth e frio.",
-    "correta": "**Tumor glômico; teste de Love.**\n- Lesão subungueal arroxeada, dolorosa ao toque e ao frio.\n- O teste de Love localiza a dor num ponto exato.",
-    "incorretas": {
-      "A": "**Não explica o quadro.**\n- Corpo estranho pode doer, mas não dá sensibilidade ao frio nem cor arroxeada.\n- Seis meses sem inflamação não combinam.",
-      "C": "**Indolor e raro ali.**\n- O encondroma da falange distal é incomum e **indolor**, costuma aparecer com fratura.\n- O teste de Hildreth, aliás, é do próprio tumor glômico.",
-      "D": "**Indolor.**\n- O melanoma subungueal entra no diferencial de lesão pigmentada (sinal de Hutchinson), mas não dói nem tem sensibilidade ao frio.\n- O garroteamento digital é o princípio do teste de Hildreth, do tumor glômico."
-    },
-    "geradoEm": "2026-09-23",
-    "conferido": false
-  },
-  "mao-0210": {
-    "conceito": "### Sinais de Kanavel (tenossinovite infecciosa dos flexores)\n| Sinal | Comentário |\n|---|---|\n| ==dor à palpação ao longo da bainha== | ==considerado por Kanavel o mais importante==; constante e precoce |\n| dor à extensão passiva | muito reprodutível; alguns autores o consideram o mais precoce |\n| dedo em semiflexão | posição de menor pressão na bainha |\n| edema fusiforme (salsicha) | leva tempo para se instalar |\n\n### Etiologia\n- **Staphylococcus aureus** (o mais comum), estreptococos; *Pasteurella* em mordeduras de animais; gonococo em disseminação hematogênica.\n- Ferida punctiforme volar, muitas vezes esquecida.\n\n### Tratamento\n- **Urgência**: antibiótico endovenoso e **drenagem/irrigação da bainha** (fechada com cateter ou aberta).\n- Casos muito precoces (menos de 24 a 48 h): tentativa de antibiótico com observação rigorosa.\n\n### Complicações\n- Aderências, rigidez, necrose do tendão, disseminação para as bursas (**abscesso em ferradura**: polegar ↔ mínimo) e espaço de Parona.\n\n> **Na prova:** Kanavel = ==dor na bainha, semiflexão, dor à extensão passiva, edema fusiforme==.",
-    "correta": "**Os quatro sinais.**\n- Dor ao longo da bainha, dedo semifletido, dor à extensão passiva e edema fusiforme.\n- A semiflexão é a posição de menor pressão na bainha.",
-    "incorretas": {
-      "A": "**Dois sinais invertidos.**\n- O dedo fica semifletido e dói à extensão, não à flexão.",
-      "C": "**Eritema não é sinal.**\n- E repete os erros de posição e de dor.",
-      "D": "**Primeiro sinal errado.**\n- É dor à palpação da bainha, não eritema."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -2487,28 +2233,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0215": {
-    "conceito": "### Vascularização do semilunar\n- Entrada de vasos pelas faces **dorsal** e **volar**, anastomosados dentro do osso.\n- Cerca de 7 a 20% das pessoas têm **uma única** fonte (só volar ou só dorsal): mais vulnerável.\n\n### Padrões intraósseos (Gelberman)\n| Padrão | Frequência aproximada | Risco |\n|---|---|---|\n| Y | cerca de 60% | intermediário (ramificado) |\n| X | cerca de 10% | menor (mais anastomoses) |\n| ==I== | ==cerca de 30%== | ==maior==: vaso único, sem colateral |\n\n### Fatores somados no Kienböck\n- Padrão vascular pobre + **ulna minus** + semilunar tipo I + sobrecarga repetida.\n\n> **Na prova:** padrão de maior risco = ==em I==.",
-    "correta": "**Padrão em I.**\n- Um único vaso atravessa o osso sem rede colateral.\n- Qualquer interrupção deixa uma região sem sangue.",
-    "incorretas": {
-      "A": "**Ramificado.**\n- O Y tem circulação de reserva.",
-      "B": "**O mais protegido.**\n- O X tem mais anastomoses.",
-      "D": "**Não existe.**\n- Não há padrão em S."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0216": {
-    "conceito": "### Classificação de Lichtman (Kienböck)\n| Estágio | Achado |\n|---|---|\n| I | radiografia normal; RM alterada |\n| II | ==esclerose== do semilunar, sem colapso |\n| IIIA | colapso/fragmentação do semilunar, **alinhamento carpal preservado** |\n| ==IIIB== | colapso + ==rotação fixa do escafoide em flexão== (anel cortical), ângulo radioescafoide > 60°, migração proximal do capitato |\n| IIIC | fratura coronal crônica do semilunar |\n| IV | artrose radiocarpal ou mediocarpal |\n\n### Conduta por estágio (resumo)\n| Estágio | Opções |\n|---|---|\n| I a IIIA, ulna minus | encurtamento do rádio, osteotomia de nivelamento |\n| I a IIIA, ulna neutra/plus | encurtamento do capitato, enxerto vascularizado |\n| ==IIIB== | ==artrodese escafotrapeziotrapezoide ou escafocapitato, ressecção da fileira proximal== |\n| IV | artrodese total, artroplastia, denervação |\n\n> **Na prova:** Lichtman IIIA = ==colapso do semilunar sem instabilidade carpal==.",
-    "correta": "**Colapso sem instabilidade.**\n- No IIIA o semilunar colapsa, mas o alinhamento carpal está preservado.\n- Ainda cabem procedimentos de descarga.",
-    "incorretas": {
-      "A": "**Mistura estágios.**\n- Esclerose é o II; ressonância alterada com radiografia normal é o I.",
-      "C": "**É o IIIB.**\n- A instabilidade carpal define o IIIB.",
-      "D": "**Também IIIB.**\n- A rotação fixa do escafoide é o achado do IIIB."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0217": {
     "conceito": "### Técnicas de sutura tendínea\n| Técnica | Desenho | Uso |\n|---|---|---|\n| ==Bunnell== | ==X cruzados sucessivos== em cada coto | resistente, mas **estrangula a irrigação**; hoje em extensores e transferências |\n| Kessler modificado (Pennington) | alças em ângulo reto com pegas bloqueantes, 2 fios | clássico dos flexores |\n| Strickland, cruciate (Adelaide), Tang, MGH | 4 a 6 fios cruzando o foco | permitem movimento ativo precoce |\n| ==Pulvertaft== | ==entrelaçamento== de um tendão através do outro | transferências (calibres diferentes) |\n| Mason-Allen | horizontal + vertical | manguito rotador (tendão-osso) |\n| Krackow | pegas bloqueantes laterais em série | tendões grossos, ligamentos |\n\n### Princípios de um bom reparo\n- Número de fios cruzando o foco, pegas de cerca de 1 cm, bloqueio, epitendínea contínua, preservar a vascularização dorsal.\n\n### Pulvertaft (entrelaçamento)\n- Um tendão passa por dentro do outro em 2 a 3 janelas, em direções alternadas, com sutura em cada passagem.\n- Resistência pelo atrito e pela área de contato: permite **mobilização precoce**.\n- Padrão em transferências tendíneas e junção de enxertos.\n\n> **Na prova:** entrelaçamento para reparo crônico = ==Pulvertaft==.",
     "correta": "**Pulvertaft.**\n- Um tendão é entrelaçado no outro em janelas alternadas.\n- É a técnica padrão de enxertos e transferências.",
@@ -2527,77 +2251,6 @@
       "A": "**Inserção errada.**\n- A zona I é distal à inserção do FSD.",
       "B": "**Lumbricais na zona III.**\n- A zona II vai da A1 à inserção do FSD.",
       "C": "**Sem interósseos.**\n- A zona III abriga os lumbricais."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0219": {
-    "conceito": "### Sinais de lesão pré-ganglionar (avulsão)\n| Sinal | Nervo | Origem |\n|---|---|---|\n| ==escápula alada (serrátil anterior)== | ==torácico longo== | raízes C5, C6, C7 |\n| romboides paralisados | dorsal da escápula | raiz C5 |\n| hemidiafragma elevado | frênico | C3-C5 |\n| Horner | cadeia simpática | T1 |\n| Tinel negativo, dor neuropática intensa | | |\n| potencial sensitivo presente com anestesia (ENMG) | gânglio da raiz dorsal íntegro | |\n\n### Por que músculos proximais localizam\n- Nervos que saem **direto das raízes** são lesados só se a lesão for na raiz (pré-ganglionar ou muito proximal).\n\n### Músculos que não ajudam\n| Músculo | Motivo |\n|---|---|\n| trapézio | **acessório (XI par)**: fora do plexo; serve de doador |\n| tríceps, FRC | nervos distais (radial, mediano): mapeiam extensão, não o nível |\n\n### Conduta\n- Pré-ganglionar: **transferências nervosas** (sem coto proximal para enxertar).\n\n### Radiografia de tórax no trauma do plexo\n- ==Cúpula diafragmática elevada== = paralisia do **frênico** (C3-C5).\n- Com plexopatia: ==avulsão das raízes altas== (pré-ganglionar).\n- Procurar também fraturas de costelas, clavícula, escápula e processos transversos cervicais.\n\n> **Na prova:** diafragma elevado + paralisia do membro = ==avulsão das raízes altas==.",
-    "correta": "**Avulsão das raízes altas.**\n- O frênico sai de C3 a C5, junto ao forame.\n- Sua paralisia com plexopatia indica lesão pré-ganglionar alta.",
-    "incorretas": {
-      "A": "**Não paralisa o membro.**\n- O plexo começa em C5.",
-      "C": "**Raízes baixas dão Horner.**\n- O frênico não vem de C8 e T1.",
-      "D": "**Explica só a radiografia.**\n- Não justifica a paralisia do membro."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0220": {
-    "conceito": "### Classificação de McGowan (túnel cubital)\n| Grau | Sensibilidade | Motricidade |\n|---|---|---|\n| I | parestesia **intermitente** | fraqueza **subjetiva** (sem déficit ao exame) |\n| ==IIa== | ==achados objetivos sensitivos== | sem fraqueza intrínseca importante |\n| IIb | achados objetivos | **fraqueza intrínseca** |\n| ==III== | ==parestesia permanente== | ==fraqueza mensurável com atrofia== intrínseca |\n\n### Classificação de Dellon (mais detalhada)\n- Leve, moderada e grave, somando alterações sensitivas (vibração, discriminação de dois pontos) e motoras.\n\n### Achados do grau III\n- Atrofia do **1º interósseo dorsal**, garra do 4º e 5º dedos, Froment e Wartenberg positivos.\n- Prognóstico **pior**: recuperação motora incompleta mesmo após descompressão.\n\n### Tratamento\n- Graus leves: evitar flexão prolongada do cotovelo, órtese noturna em extensão.\n- Graus avançados: descompressão in situ ou transposição anterior.\n\n> **Na prova:** McGowan modificado IIa = ==alterações objetivas sensitivas do ulnar== (veja o alerta).",
-    "correta": "**IIa sensitivo.**\n- O IIa já tem alterações objetivas no território sensitivo do ulnar.\n- Ainda sem a fraqueza intrínseca do IIb.",
-    "incorretas": {
-      "B": "**IIb é motor.**\n- O IIb se define pela fraqueza intrínseca.",
-      "C": "**III é atrofia.**\n- No III a fraqueza é acentuada e há atrofia.",
-      "D": "**Parcialmente verdadeira.**\n- Descreve parte do IIb, mas o item busca o IIa (veja o alerta)."
-    },
-    "alerta": "A alternativa D também expressa uma característica verdadeira do grau IIb em descrições usuais. A questão fica ambígua sem qualificar intensidade da fraqueza e merece conferência editorial.",
-    "referencias": [
-      "Dellon AL. Review of treatment results for ulnar nerve entrapment at the elbow. J Hand Surg Am. 1989;14:688-700.",
-      "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Ulnar neuropathy at the elbow."
-    ],
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0221": {
-    "conceito": "### Dissociação escafossemilunar: sinais radiográficos\n| Sinal | Incidência | Significado |\n|---|---|---|\n| ==Terry Thomas== | PA | ==espaço escafossemilunar > 3 mm== (2 a 3 mm duvidoso) |\n| anel cortical | PA | escafoide **fletido** (visto de topo) |\n| escafoide encurtado | PA | flexão |\n| ângulo escafossemilunar > 60 a 70° | perfil | DISI |\n| semilunar triangular | PA | semilunar estendido |\n\n### Incidências de estresse\n- **Punho cerrado** em desvio ulnar (clenched fist), comparativa.\n\n### Outros sinais citados\n| Sinal | Significado |\n|---|---|\n| xícara derramada (spilled teacup) | semilunar luxado para volar (Mayfield IV), perfil |\n| Wartenberg | mínimo abduzido (lesão do ulnar) |\n\n### Tratamento\n- Agudo: reparo ligamentar com âncoras e fios.\n- Crônico redutível sem artrose: reconstrução (tenodese de Brunelli modificada, Garcia-Elias, SLIC).\n- SLAC: fileira proximal ou quatro esquinas.\n\n### Sinal da chaleira (xícara) virada\n- Incidência em ==perfil==: semilunar ==rodado para palmar==, concavidade para volar, capitato fora dele (==luxação semilunocapitato==).\n- No PA, o semilunar luxado aparece **triangular**.\n- Mayfield IV: redução urgente (mediano).\n\n> **Na prova:** chaleira virada = ==perfil, rotação palmar do semilunar, luxação semilunocapitato==.",
-    "correta": "**Perfil, rotação palmar.**\n- O semilunar tomba para volar e perde o capitato.\n- Só aparece bem no perfil.",
-    "incorretas": {
-      "B": "**Incidência errada.**\n- No PA o semilunar luxado fica triangular.",
-      "C": "**Articulação errada.**\n- Quem luxa é a semilunocapitato.",
-      "D": "**Erra os dois.**\n- Incidência e articulação incorretas."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0222": {
-    "conceito": "### Tempo de isquemia tolerado no reimplante\n| Segmento | Isquemia quente | Isquemia fria (4 °C) |\n|---|---|---|\n| ==dedo== (sem músculo) | ==cerca de 12 h== | ==até 24 a 30 h== |\n| mão, punho, antebraço, braço (com músculo) | ==cerca de 6 h== | cerca de ==12 h== |\n\n- Necrose muscular irreversível começa por volta de **6 horas** de isquemia quente.\n\n### Conservação do segmento\n- Gaze **úmida** com soro, dentro de **saco plástico fechado**, saco sobre **gelo e água**.\n- Nunca contato direto com gelo nem imersão.\n\n### Síndrome de reperfusão (segmentos proximais)\n- Hipercalemia, acidose, **mioglobinúria**, insuficiência renal.\n- Em isquemia prolongada de braço, **não reimplantar** pode salvar a vida.\n\n### Indicações clássicas\n- Polegar, múltiplos dedos, mão, punho, antebraço, qualquer amputação em **criança**, dedo isolado distal à inserção do FSD (zona I).\n\n### O que nunca fazer\n- Contato direto com gelo, imersão do segmento, ==gelo seco== (cerca de −78 °C congela), formol.\n\n> **Na prova:** transporte = ==saco com soro, sobre gelo e água==",
-    "correta": "**Soro e gelo com água.**\n- O segmento vai em saco com soro ou gaze úmida.\n- O saco fica sobre gelo com água, a cerca de 4 °C.",
-    "incorretas": {
-      "B": "**Gelo seco congela.**\n- O Ringer não é o problema; o gelo seco é.",
-      "C": "**Mesmo erro.**\n- Gelo seco inviabiliza o reimplante.",
-      "D": "**Formol fixa o tecido.**\n- Mata o segmento de forma definitiva."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0223": {
-    "conceito": "### Punho reumatoide\n- A sinovite começa pela ==borda ulnar==: radioulnar distal, estiloide ulnar, bainha do **extensor ulnar do carpo (EUC)**.\n\n### Sequência das deformidades\n1. Frouxidão radioulnar distal: **caput ulnae** (cabeça da ulna sobe dorsalmente).\n2. O EUC escorrega para **volar** e passa a fletir o punho.\n3. O carpo roda em ==supinação== e translada ==ulnar e palmar==.\n4. Metacarpos desviam para **radial**.\n5. Dedos compensam com **desvio ulnar** (ziguezague).\n\n### Complicações\n| Complicação | Mecanismo |\n|---|---|\n| ruptura dos extensores (Vaughan-Jackson) | atrito na cabeça da ulna; começa pelo extensor do mínimo |\n| ruptura do FLP (Mannerfelt) | atrito no escafoide |\n| translocação ulnar do carpo | frouxidão radiocarpal |\n\n### Tratamento cirúrgico\n- Sinovectomia, ressecção da cabeça da ulna (Darrach) ou Sauvé-Kapandji, artrodese radiossemilunar ou total, transferências tendíneas.\n\n### Síndrome da cabeça da ulna (Backdahl)\n- ==Luxação (subluxação) dorsal da cabeça da ulna==, com dor, sinovite e limitação da supinação.\n- **Sinal da tecla de piano**: a cabeça afunda à pressão e salta ao soltar.\n- Risco: ruptura dos extensores (Vaughan-Jackson).\n- Tratamento: **Darrach** ou **Sauvé-Kapandji** + sinovectomia (prevenção).\n\n> **Na prova:** síndrome de Backdahl = ==luxação da cabeça da ulna==.",
-    "correta": "**Luxação da cabeça da ulna.**\n- A cabeça subluxa para dorsal e fica proeminente.\n- Serra os extensores, por isso sua ressecção é preventiva.",
-    "incorretas": {
-      "A": "**Sem fratura.**\n- A cabeça está inteira, fora do lugar.",
-      "B": "**Só parece maior.**\n- Está deslocada, não aumentada.",
-      "C": "**Não define a síndrome.**\n- Osteólise pode ocorrer, mas não é o achado central."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0224": {
-    "conceito": "### Pescoço de cisne: técnicas de freio volar da IFP\n| Técnica | Freio usado |\n|---|---|\n| dermodese | elipse de pele volar |\n| ==tenodese com FSD (Beckenbaugh e outras)== | ==uma banda do flexor superficial ancorada na falange proximal== |\n| Littler (SORL) | reconstrução do ligamento retinacular oblíquo com banda lateral |\n| Zancolli | tenodese do FSD com a polia A2 |\n| mobilização das bandas laterais (Nalebuff) | reposicionamento volar |\n\n- Objetivo: impedir a ==hiperextensão da IFP==, mantendo o pescoço de cisne corrigido.\n\n### Deformidades\n| Deformidade | IFP | IFD |\n|---|---|---|\n| ==pescoço de cisne== | ==hiperextensão== | flexão |\n| botoeira | flexão | hiperextensão |\n\n### Polegar\n- Botoeira (Nalebuff I) começa na MF; pescoço de cisne (III) na CMC.\n\n> **Na prova:** Beckenbaugh = correção da ==hiperextensão da IFP (pescoço de cisne)==.",
-    "correta": "**FSD no pescoço de cisne.**\n- Uma banda do FSD é reinserida na falange proximal como tenodese.\n- Freia a hiperextensão da IFP.",
-    "incorretas": {
-      "A": "**Deformidade errada.**\n- Um freio volar agravaria a botoeira.",
-      "C": "**Tendão errado.**\n- O FPD é o único flexor da IFD e não pode ser sacrificado.",
-      "D": "**Tendão errado.**\n- A deformidade está certa, mas o doador é o FSD."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -3270,28 +2923,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0279": {
-    "conceito": "### Altura (comprimento) radial\n- PA do punho: distância entre duas linhas perpendiculares ao eixo do rádio:\n  - uma pela ==ponta do estiloide radial==;\n  - outra pelo ==limite distal da superfície articular da cabeça da ulna==.\n- Normal: ==cerca de 11 a 12 mm==.\n- Aceitável após fratura: perda de até cerca de 3 a 5 mm.\n\n### Parâmetros do rádio distal\n| Parâmetro | Normal |\n|---|---|\n| inclinação ulnar | 22° |\n| inclinação volar | 11° |\n| ==altura radial== | ==11 a 12 mm== |\n| variância ulnar | neutra (± 2 mm) |\n\n### Consequências do encurtamento\n- Variância ulnar **positiva**: impacto ulnocarpal, dor ulnar, lesão do CFCT, incongruência da RUD.\n- Critério de **instabilidade** (encurtamento > 3 a 5 mm) que indica fixação.\n\n### Por que não usar o estiloide ulnar\n- Comprimento variável e frequentemente fraturado junto.\n\n### Atenção à unidade\n- Inclinações se medem em ==graus==; altura e variância em ==milímetros==.\n- 11 a 12 serve para inclinação volar (graus) e altura (mm), nunca para inclinação radial.\n\n> **Na prova:** altura radial = ==11 a 12 mm==",
-    "correta": "**Altura radial, 11 a 12 mm.**\n- Única combinação coerente de parâmetro e valor.\n- Medida na PA, da ponta do estiloide radial à superfície articular ulnar do rádio.\n- Encurtamento sobrecarrega o lado ulnar.",
-    "incorretas": {
-      "A": "**Valor trocado.**\n- A inclinação radial fica em torno de 22°.",
-      "B": "**Valor baixo.**\n- 10 a 20° já é perda de inclinação.",
-      "D": "**Faixa larga demais.**\n- 20 mm de altura radial não existe."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0280": {
-    "conceito": "### Vascularização do escafoide\n- Cerca de 80% da superfície é **cartilagem articular**: pouca área para vasos.\n- Irrigação por ramos da **artéria radial**:\n\n| Via | Parte irrigada | Proporção |\n|---|---|---|\n| ==ramos da crista dorsal== (cintura) | ==70 a 80%, incluindo todo o polo proximal== (fluxo **retrógrado**) | principal |\n| ramos palmares na tuberosidade | polo distal | 20 a 30% |\n\n### Consequências\n| Fratura | Risco de necrose e pseudartrose |\n|---|---|\n| polo distal / tuberosidade | baixo |\n| cintura | intermediário |\n| ==polo proximal== | ==alto== (necrose em até 30% ou mais) |\n\n- Via **dorsal**: não dissecar a crista dorsal.\n- Via **volar**: poupa a crista; preferida em fraturas da cintura e distais.\n- Enxertos vascularizados (1,2 ICSRA, côndilo femoral medial) em pseudartroses com necrose.\n\n### Hierarquia\n| Ordem | Sistema | Área |\n|---|---|---|\n| 1º | extraósseo dorsal (crista dorsal) | 70 a 80%, todo o polo proximal |\n| ==2º== | ==extraósseo volar== (tubérculo) | ==20 a 30%, polo distal== |\n\n> **Na prova:** segundo sistema do escafoide = ==extraósseo volar== (tubérculo, polo distal).",
-    "correta": "**Extraósseo volar.**\n- Ramos da radial entram pelo tubérculo.\n- Irrigam 20 a 30% do osso, só o polo distal.",
-    "incorretas": {
-      "A": "**Trajeto interno.**\n- Intraósseo é distribuição, não sistema de entrada.",
-      "B": "**Trajeto interno.**\n- Mesma observação.",
-      "C": "**O primeiro.**\n- O dorsal responde por 70 a 80% e pelo polo proximal."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0281": {
     "conceito": "### Fáscia palmar normal → corda patológica\n| Estrutura normal | Orientação | Corda | Efeito |\n|---|---|---|---|\n| banda pré-tendínea | longitudinal | pré-tendínea (central na palma) | flexão da MF |\n| ==ligamento natatório== | ==transversa, nas comissuras== | ==natatória== | ==fecha a comissura, limita abdução== |\n| banda espiral + lâmina digital lateral + Grayson | espiral | ==corda espiral== | flexão da IFP, desloca o feixe |\n| lâmina digital lateral | longitudinal no dedo | lateral | flexão da IFP e IFD |\n| fibras transversas (lig. palmar transverso) | transversa proximal | ==poupada== | |\n| ligamento de Cleland | dorsal ao feixe | ==poupado== | |\n\n### Memória\n- Pré-tendínea limita ==extensão== do dedo.\n- Natatória limita ==abertura== entre os dedos.\n\n> **Na prova:** banda transversa nas comissuras = ==ligamento natatório== (corda natatória).",
     "correta": "**Ligamento natatório.**\n- Banda transversa na base dos dedos, nas comissuras.\n- Vira a corda natatória, que fecha a comissura.\n- A liberação precisa incluí-la.",
@@ -3299,17 +2930,6 @@
       "A": "**Mais distal, no dedo.**\n- Região da lâmina digital lateral, que forma a corda espiral.",
       "C": "**Longitudinal.**\n- Forma a corda central na palma, não a transversa.",
       "D": "**Termo genérico.**\n- A estrutura transversa nomeada ali é o natatório."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0282": {
-    "conceito": "### Fatores de risco da doença de Kienböck\n| Fator | Associação |\n|---|---|\n| ==punho dominante== | sobrecarga repetida |\n| sexo **masculino**, 20 a 40 anos | perfil clássico |\n| trabalho manual | microtrauma |\n| ==variância ulnar negativa (ulna minus)== | semilunar apoiado quase só no rádio |\n| semilunar tipo I (sem faceta no hamato) | concentração de carga |\n| padrão vascular com artéria única | reserva vascular pequena |\n| inclinação radial reduzida | |\n\n### Não confundir\n| Variância | Problema associado |\n|---|---|\n| ulna **minus** | Kienböck |\n| ulna **plus** | ==impacto ulnocarpal== (lesão degenerativa do CFCT, condromalácia do semilunar) |\n\n### Idade acima de 50\n- Pensar em **Preiser** (escafoide), corticoide, lúpus, anemia falciforme, ou necrose do semilunar em idoso com evolução diferente.\n\n### Hipótese mecânica\n- Ulna minus: o semilunar apoia quase só no rádio, comprimido contra a borda da fossa semilunar.\n- ==Pico de pressão em área pequena== + reserva vascular escassa = necrose.\n- Base da ==osteotomia de nivelamento== (encurtar o rádio ou alongar a ulna) nas fases sem colapso.\n\n### Formato do semilunar\n- Zapico (inclinação da faceta proximal), Viegas (faceta para o hamato): outro caminho de risco.\n\n> **Na prova:** figura do Kienböck = ==diferença de pressão no semilunar com ulna minus==",
-    "correta": "**Pressão no semilunar com ulna minus.**\n- Sem apoio da ulna, a carga se concentra no semilunar sobre o rádio.\n- As setas mostram o pico de pressão.\n- Fundamenta a osteotomia de nivelamento.",
-    "incorretas": {
-      "A": "**Não é formato.**\n- Formato é tema de Zapico e Viegas.",
-      "B": "**Duplamente errada.**\n- Nem formato nem ulna plus.",
-      "D": "**Outra doença.**\n- Ulna plus causa impacto ulnocarpal."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -3326,28 +2946,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0284": {
-    "conceito": "### Compartimentos extensores\n| Nº | Conteúdo | Clínica |\n|---|---|---|\n| 1 | abdutor longo (mais radial/volar) e extensor curto do polegar | De Quervain |\n| ==2== | ==extensores radiais longo (mais radial) e curto do carpo== | interseção |\n| 3 | ELP (contorna o Lister) | ruptura após fratura do rádio |\n| 4 | extensor comum, extensor do indicador, NIP | sinovite reumatoide |\n| 5 | extensor do mínimo | Vaughan-Jackson (primeiro a romper) |\n| 6 | EUC | subluxação, tendinite |\n\n### 2º compartimento\n- **ERLC** insere-se na base do **2º MC** e fica mais radial.\n- **ERCC** insere-se na base do **3º MC** e fica mais ulnar; é o extensor mais \"puro\" do punho.\n- Separado do 3º pelo **tubérculo de Lister**.\n\n### Síndromes de interseção\n- Proximal: 1º sobre o 2º (4 a 6 cm do Lister).\n- Distal: ELP sobre o 2º (no Lister).\n\n### Contagem de tendões\n| Compartimento | 1 | 2 | 3 | 4 | 5 | 6 |\n|---|---|---|---|---|---|---|\n| nº de tendões | 2 | 2 | 1 | ==5== | 1 | 1 |\n\n- 4º = quatro do extensor comum + ==extensor próprio do indicador== (ulnar e profundo ao comum).\n- EIP é o doador clássico para o ELP rompido.\n\n> **Na prova:** 2, 2, 1, ==5==, 1, 1 (total 12).",
-    "correta": "**2, 2, 1, 5, 1, 1.**\n- Doze tendões ao todo.\n- O 4º tem cinco: quatro do comum mais o extensor próprio do indicador.",
-    "incorretas": {
-      "A": "**Quatro no 4º.**\n- Esquece o extensor próprio do indicador.",
-      "C": "**Ordem trocada.**\n- E o 5º tem só o extensor do mínimo.",
-      "D": "**1º errado.**\n- O primeiro tem dois tendões."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0285": {
-    "conceito": "### Classificação de Heikel (displasia radial)\n| Heikel | Bayne | Descrição |\n|---|---|---|\n| A | I | rádio distal curto (fise distal atrasada) |\n| B | II | rádio hipoplásico em miniatura |\n| C | III | ausência parcial (remanescente proximal) |\n| ==D== | ==IV== | ==ausência total do rádio==: ==a mais comum== |\n\n### Mão torta radial (tipo D)\n- Mão desviada radialmente sobre a ponta da ulna.\n- Ulna curta e encurvada; polegar ausente ou hipoplásico.\n- Bilateral em cerca de metade.\n\n### Investigação obrigatória\n| Síndrome | Exame |\n|---|---|\n| Fanconi | teste de quebra cromossômica (diepoxibutano) |\n| Holt-Oram | ecocardiograma |\n| TAR | hemograma (plaquetas) |\n| VACTERL | coluna, rim, coração, ânus, traqueia/esôfago |\n\n### Remanescente no tipo C\n- Pode funcionar como **banda** que agrava a curvatura da ulna com o crescimento.\n\n- Algumas provas numeram de 1 a 4 (equivalente a A a D ou Bayne I a IV).\n\n> **Na prova:** Heikel mais comum = ==tipo 4 (ausência total do rádio)==",
-    "correta": "**Tipo 4.**\n- Ausência total do rádio, a forma clássica da mão torta radial.\n- Obriga a investigar Fanconi, TAR, Holt-Oram e VACTERL.",
-    "incorretas": {
-      "A": "**Mais leve e rara.**\n- Rádio só encurtado.",
-      "B": "**Intermediário.**\n- Rádio hipoplásico em miniatura.",
-      "C": "**Ausência parcial.**\n- O remanescente pode agravar a curvatura, mas é menos comum."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0286": {
     "conceito": "### Exames nas neuropatias compressivas\n| Exame | O que mostra | Limite |\n|---|---|---|\n| ==eletroneuromiografia== | ==condução, bloqueio, desnervação==; gravidade e nível | pode ser normal no inicial |\n| ultrassonografia | área de secção do mediano (> 10 a 12 mm²), cisto, nervo bífido, artéria mediana | operador-dependente |\n| ressonância | ==hipersinal em T2== (edema), T1 isointenso; lesões expansivas | custo, não gradua função |\n\n### ENMG no túnel do carpo\n| Grau | Achado |\n|---|---|\n| leve | latência sensitiva aumentada |\n| moderado | + latência motora aumentada |\n| grave | amplitudes reduzidas, desnervação no abdutor curto |\n\n- Diferencia de radiculopatia C6-C7 e polineuropatia.\n- Exame normal não exclui clínica típica.\n\n> **Na prova:** padrão-ouro nas compressões = ==eletroneuromiografia==.",
     "correta": "**Eletroneuromiografia.**\n- Mede o que a compressão faz: lentificação, bloqueio, desnervação.\n- Gradua, localiza e afasta diferenciais.\n- Pode vir normal no quadro inicial; a clínica prevalece.",
@@ -3359,29 +2957,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0287": {
-    "alerta": "Mão da bênção clássica é o sinal da lesão alta do nervo mediano (flexores superficial e profundo do indicador e médio paralisados). O interósseo anterior poupa o flexor superficial e tem como sinal próprio o de Kiloh-Nevin. O gabarito escolhe o interósseo anterior por ser a única alternativa do território do mediano.",
-    "conceito": "### Mão da bênção × garra\n| Sinal | Nervo | Quando aparece | Dedos |\n|---|---|---|---|\n| ==mão da bênção== | ==mediano alto== | ao tentar ==fechar== a mão | indicador e médio ficam estendidos |\n| garra ulnar | ulnar | em ==repouso== | anelar e mínimo |\n\n### Síndrome do interósseo anterior\n| Músculo paralisado | Déficit |\n|---|---|\n| flexor longo do polegar | flexão da IF do polegar |\n| flexor profundo do indicador e médio | flexão da IFD |\n| pronador quadrado | pronação com cotovelo fletido |\n\n- **Kiloh-Nevin (sinal do círculo):** \"ok\" vira pinça de polpas achatadas.\n- ==Motor puro==: sem alteração sensitiva.\n- Diferencial: Parsonage-Turner, ruptura do flexor longo do polegar.\n\n> **Na prova:** bênção sem garra, único ramo do mediano nas alternativas = ==interósseo anterior== (veja o alerta).",
-    "correta": "**Interósseo anterior, conforme o gabarito.**\n- Único ramo do mediano entre as opções.\n- Perde FLP e FPD do indicador e médio; sinal do círculo.\n- Motor puro, sem déficit sensitivo.",
-    "incorretas": {
-      "A": "**Punho caído.**\n- O radial não afeta a flexão dos dedos.",
-      "B": "**Queda dos dedos na MF.**\n- Punho estende com desvio radial, sem déficit sensitivo.",
-      "D": "**Garra.**\n- Em repouso, no anelar e mínimo."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0288": {
-    "conceito": "### Polegar reumatoide (Nalebuff)\n| Tipo | Deformidade | Origem | Frequência |\n|---|---|---|---|\n| ==I== | ==botoeira==: MF em flexão, IF em hiperextensão | ==MF== (sinovite distende cápsula dorsal, EPB frouxo, ELP desliza ulnar e volar) | ==a mais comum== |\n| II | botoeira + subluxação da CMC | MF e CMC | rara |\n| III | pescoço de cisne: MF em hiperextensão, metacarpo aduzido | **CMC** | segunda |\n| IV | goleiro: instabilidade do colateral ulnar da MF | MF | |\n| V | pescoço de cisne pela placa volar da MF | MF | |\n| VI | artrite mutilante | | |\n\n### Tratamento do tipo I\n| Estágio | Conduta |\n|---|---|\n| inicial, flexível | sinovectomia da MF e reconstrução do extensor |\n| MF rígida, IF passível | **artrodese da MF** (± artroplastia) |\n| MF e IF acometidas | artrodese da MF e IF (não as duas com a CMC rígida) |\n\n### Regra de origem\n| Começa em | Deformidade |\n|---|---|\n| MF | ==botoeira== (tipo I) |\n| CMC | ==pescoço de cisne== (tipo III) |\n| placa volar da MF, CMC estável | ==pescoço de cisne== (tipo V) |\n\n- Tipo V: tratar só a MF (capsulodese volar, sesamoidodese ou artrodese).\n\n> **Na prova:** pescoço de cisne com CMC estável = ==lesão da placa volar da MF (Nalebuff V)==.",
-    "correta": "**Nalebuff tipo V.**\n- Placa volar da MF frouxa, CMC normal.\n- MF hiperestende e a IF compensa em flexão.\n- Trata-se só a MF.",
-    "incorretas": {
-      "B": "**Colateral ulnar.**\n- O polegar do guarda-caça é lesão do colateral ulnar, não radial.",
-      "C": "**Invertida.**\n- CMC primeiro dá pescoço de cisne (tipo III).",
-      "D": "**Invertida.**\n- MF primeiro dá botoeira (tipo I)."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0289": {
     "conceito": "### Testes provocativos do túnel do carpo\n| Teste | Mecanismo | Desempenho |\n|---|---|---|\n| Tinel | percussão sobre o nervo | sensibilidade baixa a moderada |\n| Phalen | flexão do punho por 60 s (aumenta a pressão) | sensibilidade e especificidade moderadas |\n| ==Durkan (compressão carpal)== | ==pressão direta do polegar sobre o túnel por 30 s== | ==melhor sensibilidade e especificidade== dos três |\n| teste de elevação da mão | mão acima da cabeça por 2 min | útil |\n\n### Outros elementos do diagnóstico\n- Parestesia noturna nos três primeiros dedos e metade radial do anelar; **sinal da sacudida** (flick).\n- Hipoestesia poupando a eminência tenar (ramo cutâneo palmar sai antes do túnel).\n- Atrofia tenar e fraqueza de abdução do polegar nos casos avançados.\n- **ENMG** confirma e gradua.\n- Ultrassom: área de secção transversa do mediano acima de cerca de 10 a 12 mm².\n\n### Tempos\n| Teste | Tempo |\n|---|---|\n| ==Phalen== | ==60 segundos== |\n| ==Durkan== | ==30 segundos== |\n| Phalen reverso | 60 segundos |\n| elevação da mão | 2 minutos |\n\n- Encurtar o tempo gera falso negativo na compressão inicial.\n- Sintoma que surge rápido sugere compressão mais grave.\n\n> **Na prova:** Phalen ==60 s==, Durkan ==30 s==",
     "correta": "**60 e 30 segundos.**\n- Phalen age indiretamente pela flexão do punho e precisa de mais tempo.\n- Durkan comprime o nervo diretamente e é o de melhor desempenho.",
@@ -3389,28 +2964,6 @@
       "A": "**Invertida.**\n- Troca os dois tempos.",
       "B": "**Phalen curto.**\n- 30 s aumenta o falso negativo.",
       "D": "**Durkan longo.**\n- O tempo descrito é de 30 s."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0290": {
-    "conceito": "### Síndrome dolorosa regional complexa (SDRC)\n| Tipo | Definição |\n|---|---|\n| I (distrofia simpático-reflexa) | sem lesão nervosa definida |\n| II (causalgia) | com lesão de nervo identificável |\n\n### Critérios de Budapeste\n- Dor contínua desproporcional ao evento.\n- Sintomas e sinais em categorias: **sensitiva** (alodinia, hiperalgesia), **vasomotora** (temperatura, cor), **sudomotora/edema**, **motora/trófica**.\n\n### Fases clássicas\n| Fase | Achados |\n|---|---|\n| ==aguda (quente)== | ==calor, edema, eritema==, **hiperidrose**, dor intensa |\n| distrófica | pele fria, cianótica, rigidez, osteopenia |\n| atrófica | pele seca e fina, atrofia, contraturas |\n\n### Tratamento\n- **Precoce**: analgesia, fisioterapia (dessensibilização, imagem motora graduada), corticoide oral, bisfosfonato, bloqueios.\n- Prevenção: **vitamina C** após fratura do rádio distal (evidência discutida).\n\n### Termos da dor\n| Termo | Definição |\n|---|---|\n| ==hiperalgesia== | ==dor aumentada a estímulo que já é doloroso== |\n| alodinia | dor a estímulo que normalmente não dói (roçar do lençol) |\n| hiperpatia | resposta exagerada, retardada, com somação e dor que persiste após o estímulo |\n| disestesia | sensação anormal desagradável, espontânea ou provocada |\n| hipoestesia | sensibilidade diminuída |\n\n- Hiperalgesia e alodinia indicam ==sensibilização central==: medicação neuropática cedo.\n\n> **Na prova:** mais dor a estímulo doloroso = ==hiperalgesia==",
-    "correta": "**Hiperalgesia.**\n- Dor desproporcional a um estímulo que já é doloroso.\n- Sinal de sensibilização central, ao lado da alodinia.",
-    "incorretas": {
-      "A": "**Estímulo não doloroso.**\n- Alodinia é dor ao toque leve.",
-      "C": "**Resposta retardada e persistente.**\n- Com somação anormal, mal localizada.",
-      "D": "**Termo genérico.**\n- Não existe na taxonomia da dor."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0291": {
-    "conceito": "### Sequência de Mayfield (decorar)\n| Estágio | Ligamento |\n|---|---|\n| ==I== | ==escafossemilunar== |\n| II | capitossemilunar |\n| ==III== | ==piramidal-semilunar (lunopiramidal)== |\n| IV | radiocarpal dorsal (semilunar luxa para volar) |\n\n- Direção: **radial → em torno do semilunar → ulnar → dorsal**.\n- Mecanismo: hiperextensão, desvio ulnar, supinação intercarpal.\n\n### Radiografia\n| Estágio | Achado |\n|---|---|\n| I | diástase escafossemilunar (Terry Thomas), anel cortical |\n| II e III | capitato fora do semilunar no perfil; linhas de Gilula quebradas |\n| IV | semilunar em \"xícara derramada\" no perfil; forma triangular no PA |\n\n### A posição define a lesão\n| Posição no impacto | Lesão |\n|---|---|\n| hiperextensão + desvio ulnar + supinação | sequência ligamentar de Mayfield |\n| ==hiperextensão + desvio radial== | ==fratura do escafoide== (cintura) |\n| extensão > 95° | mecanismo clássico da fratura do escafoide |\n\n- No desvio radial, o polo proximal fica preso entre rádio e radioescafocapitato enquanto o distal é empurrado.\n- Cintura: 70 a 80% das fraturas do escafoide.\n\n> **Na prova:** hiperextensão com desvio radial = ==fratura do escafoide==",
-    "correta": "**Fratura do escafoide.**\n- No desvio radial, a carga vai para o osso e não para os ligamentos.\n- O radioescafocapitato funciona como cinto sobre a cintura.\n- Queda com a mão espalmada, extensão acima de 95°.",
-    "incorretas": {
-      "A": "**Mayfield I.**\n- Vem do desvio ulnar descrito no enunciado.",
-      "B": "**Outro mecanismo.**\n- Impacto direto ou avulsão ligamentar.",
-      "D": "**Mayfield II.**\n- Mesma sequência do desvio ulnar."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -3780,28 +3333,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0322": {
-    "conceito": "### Parâmetros radiográficos do rádio distal\n| Parâmetro | Incidência | Como medir | Normal | Aceitável após redução |\n|---|---|---|---|---|\n| ==inclinação ulnar (radial)== | PA | ==ponta do estiloide radial → ponto mais ulnar da superfície articular do rádio==, contra a perpendicular ao eixo | ==cerca de 22° (21 a 25°)== | > 15° |\n| inclinação volar | perfil | borda dorsal → borda volar da superfície articular | ==cerca de 11° (10 a 12°)== | neutro a 20° volar (< 10 a 15° dorsal) |\n| altura radial | PA | ponta do estiloide até a superfície articular da ulna | cerca de 11 a 12 mm | perda < 3 a 5 mm |\n| variância ulnar | PA | diferença de altura entre rádio (borda ulnar) e ulna | neutra (± 2 mm) | |\n| degrau articular | | | 0 | < 2 mm |\n\n### Consequências da perda\n- Inclinação ulnar reduzida: carga desviada para a **ulna** e o lado ulnar do carpo.\n- Inclinação dorsal: instabilidade mediocarpal adaptativa (DISI adaptativo), dor, perda de flexão.\n\n### Critérios clássicos de redução aceitável\n| Parâmetro | Limite |\n|---|---|\n| ==altura radial== | ==perda até 2 a 3 mm== |\n| inclinação volar | até neutro (alguns aceitam 10° dorsal) |\n| degrau articular | até 2 mm |\n| variância ulnar | até +2 mm em relação ao lado oposto |\n\n- Encurtamento é o critério que mais pesa: dor ulnar crônica.\n\n> **Na prova:** altura radial normal ==11 a 12 mm==, perda aceita ==2 a 3 mm==",
-    "correta": "**11 a 12 mm, perda aceita de 2 a 3 mm.**\n- Encurtamento maior desloca a carga para o lado ulnar.\n- Junto com inclinação volar e degrau articular, define gesso ou fixação.",
-    "incorretas": {
-      "A": "**Normal errado.**\n- 9 a 10 mm já é altura reduzida.",
-      "C": "**Duplamente errada.**\n- Normal baixo e perda permissiva.",
-      "D": "**Perda permissiva.**\n- 4 a 5 mm leva a dor ulnar tardia."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0323": {
-    "conceito": "### Sensibilidade da borda medial do membro superior\n| Região | Nervo | Raiz |\n|---|---|---|\n| ==braço medial== | cutâneo medial do braço | ==T1== (T2 na axila, intercostobraquial) |\n| ==cotovelo e antebraço medial== | ==cutâneo medial do antebraço== | ==C8-T1== |\n| mão ulnar (dorso e palma), 5º dedo | ulnar | C8 |\n\n- ==O ulnar não inerva a pele acima do punho==: sensibilidade alterada no cotovelo medial aponta para cima.\n\n### Síndrome cubital × radiculopatia × plexo\n| Achado | Cubital | C8 | T1 |\n|---|---|---|---|\n| intrínsecos fracos | sim | sim | sim (principalmente tenares) |\n| sensibilidade do 5º dedo | sim | sim | não |\n| cotovelo/antebraço medial | ==não== | parcial | ==sim== |\n| FPD do 4º e 5º | sim | sim | não |\n| Horner | não | não | possível |\n\n- Pensar em ==tumor de Pancoast==, costela cervical (síndrome do desfiladeiro), radiculopatia.\n\n> **Na prova:** intrínsecos fracos + hipoestesia medial do cotovelo = ==síndrome cubital ou T1==.",
-    "correta": "**Síndrome cubital e raiz de T1.**\n- A cubital explica os interósseos, mas não a pele do cotovelo.\n- T1 explica as duas coisas: intrínsecos e cutâneo medial.\n- Alteração sensitiva medial acima do punho não é do ulnar.",
-    "incorretas": {
-      "B": "**Raiz errada.**\n- A pele medial do braço e cotovelo é sobretudo T1.",
-      "C": "**Ramo do radial.**\n- NIP dá dedos caídos, sem hipoestesia e sem afetar interósseos.",
-      "D": "**Duplamente errada.**\n- Nervo e raiz errados."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0324": {
     "conceito": "### Zonas dos flexores (Verdan)\n| Zona | Limites | Particularidade |\n|---|---|---|\n| I | distal à inserção do FSD | só o FPD; avulsão (jersey finger) |\n| ==II== | ==polia A1 até inserção do FSD== | ==terra de ninguém==: dois tendões em túnel rígido, quiasma de Camper |\n| III | palma, fim do túnel até A1 | origem dos lumbricais; bom prognóstico |\n| IV | túnel do carpo | nove tendões + mediano |\n| V | antebraço | lesões múltiplas (\"punho espaguete\") |\n\n### Por que a zona II adere\n- Reparo mais volumoso que o tendão em canal que não cede.\n- Dois tendões competem pelo mesmo espaço.\n- Nutrição dependente de vínculas e líquido sinovial.\n\n### O que mudou o prognóstico\n- Suturas de ==4 a 6 fios== no foco + sutura epitendínea.\n- ==Mobilização precoce== (ativa controlada).\n- Liberação parcial de A2/A4 se necessário.\n\n> **Na prova:** mais aderência = ==zona II== (terra de ninguém de Bunnell).",
     "correta": "**Zona II.**\n- Dois tendões num túnel osteofibroso rígido.\n- Terra de ninguém de Bunnell.\n- Suturas fortes e mobilização precoce mudaram o prognóstico.",
@@ -3809,17 +3340,6 @@
       "A": "**Só o FPD.**\n- Mais espaço, menos aderência.",
       "C": "**Palma.**\n- Tecido frouxo, sem bainha apertada.",
       "D": "**Túnel do carpo.**\n- Risco existe, mas o ligamento transverso pode ser liberado."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0325": {
-    "conceito": "### Liberação do túnel do carpo: técnicas\n| Técnica | Vantagens | Desvantagens |\n|---|---|---|\n| aberta clássica | visão direta, segura, barata | dor na cicatriz e nos pilares, retorno mais lento |\n| ==endoscópica / miniincisão== | ==retorno mais precoce ao trabalho==, menos dor de pilar e cicatriz nas primeiras semanas | curva de aprendizado; risco de **liberação incompleta** e de lesão de nervo, arco palmar e tendões; custo |\n\n### Resultados\n- Após cerca de **3 meses**, resultados funcionais **semelhantes**.\n- Infecção rara em ambas.\n\n### Complicações da liberação\n- Liberação incompleta (causa principal de persistência).\n- Lesão do ramo cutâneo palmar (neuroma), do ramo motor, do arco superficial.\n- **Dor do pilar** (tenar/hipotenar).\n- Síndrome dolorosa regional complexa.\n\n### Endoscópicas\n| Técnica | Portais |\n|---|---|\n| ==Chow== | ==dois== (antebraço distal e palma) |\n| Agee | um (punho) |\n\n> **Na prova:** Chow = ==endoscópica com dois portais==",
-    "correta": "**Endoscópica com dois portais.**\n- Entrada no punho e saída na palma.\n- Ligamento seccionado sob visão.\n- Retorno mais precoce; resultados iguais à aberta após meses.",
-    "incorretas": {
-      "A": "**Não existe.**\n- Neuroestimulação não faz parte da liberação.",
-      "B": "**Aberta clássica.**\n- Segura, mas não é Chow.",
-      "D": "**Agee.**\n- Portal único, a que se contrapõe à de Chow."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -3835,17 +3355,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0327": {
-    "conceito": "### Lesão do colateral ulnar da MF do polegar\n| Nome | Mecanismo |\n|---|---|\n| polegar do esquiador | agudo, valgo forçado (queda com bastão) |\n| polegar do guarda-caça | crônico, atenuação repetida |\n\n### Lesão de Stener\n- Coto do ==colateral ulnar== retrai e fica ==acima da aponeurose do adutor==.\n- A aponeurose se interpõe e impede a cicatrização: ==cirurgia obrigatória==.\n- Incidência: cerca de 60 a 80% das rupturas completas.\n- Sinal: nódulo palpável proximal à MF (o coto dobrado).\n\n### Exame\n| Achado | Interpretação |\n|---|---|\n| abertura > 30 a 35° em 30° de flexão | ruptura do colateral próprio |\n| abertura também em extensão | + colateral acessório (lesão completa) |\n| > 15° a mais que o lado oposto | instabilidade |\n| sem ponto final firme | ruptura completa |\n\n- RX antes do estresse (fratura-avulsão); US ou RM para ver Stener.\n\n### Anatomia\n- A ==aponeurose do adutor== cobre a face ulnar da MF por cima do colateral ulnar.\n- O abdutor curto é tenar, do lado radial.\n\n> **Na prova:** Stener = colateral ==ulnar== + aponeurose do ==adutor==",
-    "correta": "**Colateral ulnar; adutor do polegar.**\n- O coto avulsionado da falange proximal escapa sobre a aponeurose.\n- Tratamento cirúrgico: recolocar sob a aponeurose e reinserir.",
-    "incorretas": {
-      "A": "**Duplamente errada.**\n- Ligamento e músculo errados.",
-      "B": "**Ligamento errado.**\n- No lado radial não há aponeurose do adutor.",
-      "C": "**Músculo errado.**\n- O abdutor curto fica do lado radial."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0328": {
     "conceito": "### Lesão do colateral ulnar da MF do polegar\n| Nome | Mecanismo |\n|---|---|\n| polegar do esquiador | agudo, valgo forçado (queda com bastão) |\n| polegar do guarda-caça | crônico, atenuação repetida |\n\n### Lesão de Stener\n- Coto do ==colateral ulnar== retrai e fica ==acima da aponeurose do adutor==.\n- A aponeurose se interpõe e impede a cicatrização: ==cirurgia obrigatória==.\n- Incidência: cerca de 60 a 80% das rupturas completas.\n- Sinal: nódulo palpável proximal à MF (o coto dobrado).\n\n### Exame\n| Achado | Interpretação |\n|---|---|\n| abertura > 30 a 35° em 30° de flexão | ruptura do colateral próprio |\n| abertura também em extensão | + colateral acessório (lesão completa) |\n| > 15° a mais que o lado oposto | instabilidade |\n| sem ponto final firme | ruptura completa |\n\n- RX antes do estresse (fratura-avulsão); US ou RM para ver Stener.\n\n### Local da avulsão\n- Mais frequente na ==inserção distal (base da falange proximal)==.\n- Fragmento ósseo < 15 a 20% da superfície: ressecar e usar âncora; maior e desviado: fixar.\n\n> **Na prova:** Stener = colateral ==ulnar==, avulsão na ==falange proximal==",
     "correta": "**Colateral ulnar, na falange proximal.**\n- O coto distal solto retrai sobre a aponeurose do adutor.\n- Fragmento, quando há, vem da base da falange proximal.",
@@ -3853,39 +3362,6 @@
       "A": "**Local errado.**\n- A avulsão típica é distal.",
       "B": "**Duplamente errada.**\n- Ligamento e local errados.",
       "D": "**Ligamento errado.**\n- É o ulnar."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0329": {
-    "conceito": "### Classificação de Heikel (displasia radial)\n| Heikel | Bayne | Descrição |\n|---|---|---|\n| A | I | rádio distal curto (fise distal atrasada) |\n| B | II | rádio hipoplásico em miniatura |\n| C | III | ausência parcial (remanescente proximal) |\n| ==D== | ==IV== | ==ausência total do rádio==: ==a mais comum== |\n\n### Mão torta radial (tipo D)\n- Mão desviada radialmente sobre a ponta da ulna.\n- Ulna curta e encurvada; polegar ausente ou hipoplásico.\n- Bilateral em cerca de metade.\n\n### Investigação obrigatória\n| Síndrome | Exame |\n|---|---|\n| Fanconi | teste de quebra cromossômica (diepoxibutano) |\n| Holt-Oram | ecocardiograma |\n| TAR | hemograma (plaquetas) |\n| VACTERL | coluna, rim, coração, ânus, traqueia/esôfago |\n\n### Remanescente no tipo C\n- Pode funcionar como **banda** que agrava a curvatura da ulna com o crescimento.\n\n### Tratamento da mão torta radial\n| Fase | Medida |\n|---|---|\n| recém-nascido | alongamento e órteses seriadas |\n| 6 a 12 meses | distração de partes moles (fixador) se rígida |\n| ~1 ano | centralização ou radialização do carpo sobre a ulna |\n| depois | policização se polegar ausente |\n\n### Contraindicações à correção\n| Situação | Motivo |\n|---|---|\n| ==cotovelo rígido em extensão== | ==o desvio radial é o que leva a mão à boca== |\n| adulto adaptado com boa função | ganho funcional pequeno |\n| doença sistêmica grave (Fanconi, TAR) | risco clínico |\n\n> **Na prova:** não centralizar com ==cotovelo rígido ipsilateral==",
-    "correta": "**Cotovelo rígido ipsilateral.**\n- Sem flexão do cotovelo, o desvio radial leva a mão à boca.\n- Corrigir o punho tiraria essa função.\n- Tratar o cotovelo antes, ou aceitar o desvio.",
-    "incorretas": {
-      "A": "**Indicação.**\n- Desvio acentuado é motivo para operar.",
-      "B": "**Faz parte do quadro.**\n- Pode ser alongada em outro tempo.",
-      "D": "**Não contraindica por si.**\n- Pesa o benefício e a cooperação, caso a caso."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0330": {
-    "conceito": "### Eaton-Littler e conduta na rizartrose\n| Estágio | Radiografia | Opções |\n|---|---|---|\n| ==I== | normal ou espaço **alargado** (sinovite), subluxação < 1/3 | órtese, infiltração, ==reconstrução ligamentar (Eaton-Littler)==, osteotomia de extensão do 1º MC |\n| II | estreitamento, osteófitos < 2 mm | osteotomia, artroscopia, trapezectomia parcial |\n| III | osteófitos > 2 mm, esclerose, cistos | trapezectomia (± LRTI), artrodese, prótese |\n| IV | + escafotrapeziotrapezoide (pantrapezial) | trapezectomia total |\n\n### Técnica de Eaton-Littler\n- Tira de **metade do flexor radial do carpo** passada por túnel na base do 1º MC.\n- Reconstrói o **ligamento oblíquo anterior** (freio da subluxação dorsal).\n- Só faz sentido com **cartilagem preservada**.\n\n### LRTI (Burton-Pellegrini)\n- Trapezectomia + reconstrução ligamentar + interposição tendínea (FRC ou abdutor longo).\n\n### Estágio III: artrodese × trapezectomia\n| Aspecto | Artrodese TMC | Trapezectomia (± LRTI) |\n|---|---|---|\n| perfil | ==jovem, trabalho manual pesado== | idoso, menor demanda |\n| força de pinça | preservada | menor |\n| mobilidade | perdida (não aplana a mão) | preservada |\n| recuperação | espera consolidação; risco de pseudartrose | mais rápida |\n| pré-requisito | ==STT sadia== | |\n\n> **Na prova:** artrodese TMC = ==Eaton III no jovem==",
-    "correta": "**III, no jovem.**\n- Devolve força de pinça durável para alta demanda.\n- Exige STT preservada.\n- Custa mobilidade e tem risco de pseudartrose.",
-    "incorretas": {
-      "B": "**Idoso.**\n- Trapezectomia: recuperação rápida, força menor tolerada.",
-      "C": "**Pantrapezial.**\n- Fundir a TMC joga carga na STT gasta.",
-      "D": "**Pantrapezial no idoso.**\n- Trapezectomia total."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0331": {
-    "conceito": "### Classificação de Swanson (IFSSH)\n| Grupo | Categoria | Exemplos |\n|---|---|---|\n| ==I== | ==falha de formação== | transversa (coto), ==longitudinal: mão torta radial==, ulnar, fenda central, focomelia |\n| II | falha de diferenciação (separação) | sindactilia, sinostose radioulnar, camptodactilia, clinodactilia |\n| III | duplicação | polidactilia, mão em espelho |\n| IV | crescimento excessivo | macrodactilia |\n| V | crescimento insuficiente | hipoplasia do polegar, braquidactilia |\n| VI | bandas de constrição | Streeter |\n| VII | anomalias esqueléticas generalizadas | acondroplasia, displasias |\n\n### Classificação atual\n- **OMT (Oberg, Manske, Tonkin):** malformações, deformações e displasias, pelo eixo embriológico afetado; adotada pela IFSSH.\n\n> **Na prova:** mão torta radial = ==falha de formação longitudinal (Swanson I)==.",
-    "correta": "**Falha de formação.**\n- Variedade longitudinal: falta o rádio no todo ou em parte.\n- Grupo I de Swanson.",
-    "incorretas": {
-      "A": "**Grupo VII.**\n- Displasias esqueléticas.",
-      "B": "**Grupo II.**\n- Partes formadas que não se separaram.",
-      "D": "**Grupo III.**\n- Polidactilia, mão em espelho."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -4203,50 +3679,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0357": {
-    "conceito": "### Vascularização do semilunar\n- Entrada de vasos pelas faces **dorsal** e **volar**, anastomosados dentro do osso.\n- Cerca de 7 a 20% das pessoas têm **uma única** fonte (só volar ou só dorsal): mais vulnerável.\n\n### Padrões intraósseos (Gelberman)\n| Padrão | Frequência aproximada | Risco |\n|---|---|---|\n| Y | cerca de 60% | intermediário (ramificado) |\n| X | cerca de 10% | menor (mais anastomoses) |\n| ==I== | ==cerca de 30%== | ==maior==: vaso único, sem colateral |\n\n### Fatores somados no Kienböck\n- Padrão vascular pobre + **ulna minus** + semilunar tipo I + sobrecarga repetida.\n\n### Gelberman: entrada extraóssea\n| Padrão | Frequência |\n|---|---|\n| vasos dorsais e volares | cerca de 80% |\n| ==artéria única (só volar ou só dorsal)== | ==cerca de 8 a 20%== (risco maior) |\n\n> **Na prova:** semilunares de risco (Gelberman) = ==8 a 20%==",
-    "correta": "**8 a 20%.**\n- Artéria nutrícia única ou padrão pobre em anastomoses.\n- Sem via alternativa quando o fluxo é interrompido.\n- Sustenta a hipótese vascular do Kienböck.",
-    "incorretas": {
-      "B": "**Superestima.**\n- Acima da faixa descrita.",
-      "C": "**Muito alta.**\n- Não condiz com a raridade da doença.",
-      "D": "**Muito acima.**\n- Nenhuma série descreve."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0358": {
-    "conceito": "### Classificação de Lichtman (Kienböck)\n| Estágio | Achado |\n|---|---|\n| I | radiografia normal; RM alterada |\n| II | ==esclerose== do semilunar, sem colapso |\n| IIIA | colapso/fragmentação do semilunar, **alinhamento carpal preservado** |\n| ==IIIB== | colapso + ==rotação fixa do escafoide em flexão== (anel cortical), ângulo radioescafoide > 60°, migração proximal do capitato |\n| IIIC | fratura coronal crônica do semilunar |\n| IV | artrose radiocarpal ou mediocarpal |\n\n### Conduta por estágio (resumo)\n| Estágio | Opções |\n|---|---|\n| I a IIIA, ulna minus | encurtamento do rádio, osteotomia de nivelamento |\n| I a IIIA, ulna neutra/plus | encurtamento do capitato, enxerto vascularizado |\n| ==IIIB== | ==artrodese escafotrapeziotrapezoide ou escafocapitato, ressecção da fileira proximal== |\n| IV | artrodese total, artroplastia, denervação |\n\n### Ressecção da fileira proximal\n- Nova articulação: ==cabeça do capitato na fossa semilunar do rádio==.\n- Exige cartilagem preservada nas duas superfícies.\n- Perde cerca de metade do arco e parte da força; alivia a dor sem síntese.\n\n> **Na prova:** carpectomia proximal no Kienböck = ==Lichtman IIIB==",
-    "correta": "**Lichtman IIIB.**\n- A figura mostra carpectomia proximal: capitato apoiado na fossa semilunar.\n- Indicada com colapso e rotação fixa do escafoide.\n- Exige cartilagem boa no capitato e na fossa.",
-    "incorretas": {
-      "A": "**RX normal.**\n- Imobilização e descarga.",
-      "B": "**Sem colapso.**\n- Nivelamento ou revascularização.",
-      "C": "**Alinhamento mantido.**\n- Ainda cabe descarregar o semilunar."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0359": {
-    "conceito": "### Fatores de risco da paralisia braquial obstétrica\n| Fator | Comentário |\n|---|---|\n| ==distócia de ombro== | ==o principal== |\n| macrossomia (> 4 a 4,5 kg) | |\n| diabetes materno, obesidade materna | macrossomia |\n| parto instrumentado (fórceps, vácuo) | |\n| **segundo** estágio prolongado | fase expulsiva |\n| apresentação **pélvica** | lesões C5-C6 bilaterais, mais avulsões |\n| lesão em parto anterior | recorrência |\n\n### Mecanismo\n- Tração lateral da cabeça com o ombro anterior preso atrás da sínfise: **abertura do ângulo cabeça-ombro**.\n- Parte dos casos ocorre sem distócia (forças expulsivas intrauterinas, cesarianas).\n\n### Incidência\n- Cerca de 1 a 3 por 1.000 nascidos vivos.\n\n### Fatores maternos\n| Fator | Via |\n|---|---|\n| ==diabetes gestacional== | ==macrossomia → distócia de ombro== |\n| obesidade, ganho de peso excessivo | macrossomia |\n| baixa estatura, pelve estreita | desproporção |\n| multiparidade | não é fator estabelecido |\n\n> **Na prova:** principal fator materno = ==diabetes gestacional==",
-    "correta": "**Diabetes gestacional.**\n- Cadeia: diabetes, macrossomia, distócia de ombro, tração do plexo.\n- Controle glicêmico é também prevenção.",
-    "incorretas": {
-      "A": "**Partos mais rápidos.**\n- Não é fator estabelecido.",
-      "B": "**Via indireta.**\n- Pode levar à pélvica, com peso muito menor.",
-      "D": "**Risco obstétrico geral.**\n- Não determina esta lesão."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0360": {
-    "conceito": "### Narakas e prognóstico\n| Grupo | Raízes | Recuperação espontânea |\n|---|---|---|\n| ==I== | ==C5-C6== | ==completa em cerca de 90%==, muitas vezes ==nas primeiras 1 a 8 semanas== |\n| II | C5-C7 | cerca de 65%; mais lenta, frequentemente incompleta |\n| III | C5-T1 sem Horner | pouca; sequelas |\n| IV | C5-T1 com Horner | a pior; lesão pré-ganglionar |\n\n### Marcos de acompanhamento\n- **Bíceps** contra a gravidade aos 3 meses (Gilbert e Tassin): se ausente, considerar cirurgia.\n- **Teste do biscoito** (Toronto): levar o biscoito à boca aos 9 meses.\n- **Escala de Toronto** e escala de movimento ativo (AMS).\n\n### Fatores de pior prognóstico\n- Horner, lesão total, ausência de recuperação do bíceps até 3 meses, avulsões (pré-ganglionares).\n\n### Horner\n- Fibras simpáticas do olho saem com ==T1==: ptose, miose, enoftalmia (anidrose).\n- Indica ==avulsão pré-ganglionar== de T1: sem recuperação espontânea.\n- Tratamento por transferências de doadores extraplexuais (intercostais, acessório, contralateral C7).\n\n> **Na prova:** Horner na paralisia obstétrica = ==Narakas grupo 4==",
-    "correta": "**Grupo 4.**\n- Lesão completa C5-T1 com Horner.\n- T1 avulsionada: pré-ganglionar.\n- Pior prognóstico da escala.",
-    "incorretas": {
-      "A": "**Erb C5-C6.**\n- Mais frequente e melhor prognóstico.",
-      "B": "**C5-C7.**\n- Prognóstico intermediário.",
-      "C": "**Completa sem Horner.**\n- T1 não avulsionada."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0361": {
     "conceito": "### Palmar longo\n| Aspecto | Dado |\n|---|---|\n| origem | epicôndilo medial |\n| inserção | aponeurose palmar |\n| nervo | mediano |\n| ausência | ==cerca de 15%== (uni ou bilateral) |\n| uso | ==enxerto tendíneo== mais usado da mão |\n\n### Testes de presença\n| Teste | Manobra |\n|---|---|\n| ==clássico (Schaeffer)== | ==oponência polegar-mínimo + flexão ativa do punho== contra resistência |\n| Thompson | punho fletido, polegar sob os dedos fechados |\n| Mishra | abdução resistida do polegar com punho fletido |\n\n### Outros enxertos\n- Plantar delgado (ausente em até 20%), extensores dos dedos do pé, flexor superficial.\n\n### Referência cirúrgica\n- O mediano fica imediatamente profundo e ==radial== ao palmar longo no punho.\n\n> **Na prova:** palmar longo = oposição polegar-mínimo com ==flexão ativa do punho==.",
     "correta": "**Flexão ativa do punho.**\n- Com oposição do polegar ao mínimo.\n- O tendão salta na linha média volar do punho.\n- A contração ativa é indispensável.",
@@ -4280,94 +3712,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0364": {
-    "conceito": "### Momento da ENMG na lesão nervosa\n| Tempo | O que mostra |\n|---|---|\n| imediato | coto distal ainda conduz (falso normal) |\n| 7 a 10 dias | queda da amplitude motora e sensitiva (degeneração walleriana) |\n| ==3 semanas== | ==fibrilações e ondas positivas== no músculo desnervado |\n| 3 a 4 meses | potenciais de reinervação (nascentes) |\n\n### Pré × pós-ganglionar\n| Achado | Pré-ganglionar (avulsão) | Pós-ganglionar |\n|---|---|---|\n| potencial sensitivo (SNAP) em área anestésica | ==preservado== | ausente |\n| paravertebrais | ==desnervados== (ramo dorsal sai antes do gânglio) | normais |\n\n### Outros exames\n- Mielotomografia ou RM: pseudomeningocele.\n- Exame clínico seriado permanece essencial.\n\n> **Na prova:** ENMG após lesão do plexo = a partir de ==3 semanas (21 dias)==.",
-    "correta": "**21 dias.**\n- Tempo para a degeneração walleriana se completar.\n- Surgem fibrilações e ondas positivas.\n- Paravertebrais desnervados indicam avulsão.",
-    "incorretas": {
-      "A": "**Cedo demais.**\n- Coto distal ainda conduz.",
-      "B": "**Degeneração em curso.**\n- Desnervação ainda não aparece.",
-      "C": "**Subestima.**\n- Começa a aparecer, mas incompleto."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0365": {
-    "conceito": "### Plexo braquial: padrões\n| Lesão | Raízes | Quadro |\n|---|---|---|\n| ==superior (Erb)== | ==C5-C6== | ombro sem abdução e RE, cotovelo sem flexão, sem supinação; ==gorjeta de garçom== |\n| estendida | C5-C7 | + extensão do cotovelo e punho fracas |\n| inferior (Klumpke) | C8-T1 | mão em garra, intrínsecos, Horner |\n| total | C5-T1 | membro flácido e anestésico |\n\n### Por que cada déficit\n| Função perdida | Nervo |\n|---|---|\n| abdução do ombro | axilar (deltoide), supraescapular |\n| flexão do cotovelo | musculocutâneo (bíceps, braquial) |\n| supinação | bíceps |\n| sensibilidade lateral do braço | axilar (cutâneo lateral superior) |\n\n### Sinais de avulsão pré-ganglionar\n- **Horner** (T1), escápula alada (torácico longo), hemidiafragma elevado (frênico), dor em queimação, pseudomeningocele na RM.\n- Histamina e condução sensitiva preservadas em região anestésica.\n\n### Prioridades na lesão completa\n| Ordem | Função | Opção comum |\n|---|---|---|\n| ==1== | ==flexão do cotovelo== | Oberlin (fascículo do ulnar), intercostais, frênico, acessório |\n| 2 | estabilidade e abdução do ombro | acessório para supraescapular |\n| 3 | sensibilidade protetora da mão | |\n| 4 | extensão do punho, flexão dos dedos | transferências, músculo livre (grácil) |\n| 5 | intrínsecos | quase nunca recuperam |\n\n- Placa motora degenera em 12 a 18 meses: operar cedo (3 a 6 meses).\n\n> **Na prova:** prioridade na lesão completa do plexo = ==flexão do cotovelo==",
-    "correta": "**Flexão do cotovelo.**\n- Leva a mão ao rosto e à boca.\n- Nenhuma outra função compensa sua falta.\n- Depois ombro, sensibilidade e mão.",
-    "incorretas": {
-      "A": "**Importante, depois.**\n- Vem após as funções que posicionam o membro.",
-      "C": "**Mais abaixo.**\n- Depois de cotovelo e ombro.",
-      "D": "**Segunda.**\n- O ombro vem depois do cotovelo."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0366": {
-    "conceito": "### Túnel cubital: técnicas cirúrgicas\n| Técnica | Vantagens | Desvantagens |\n|---|---|---|\n| ==descompressão in situ== | simples, preserva a irrigação, menos complicações | ==subluxação do nervo== pós-operatória |\n| transposição anterior (subcutânea, intramuscular, submuscular) | trata instabilidade | mais dissecção, desvascularização, nova compressão se mal feita |\n| epicondilectomia medial | trata instabilidade | dor no epicôndilo, instabilidade do colateral se excessiva |\n\n### Resultados\n- Metanálises: in situ e transposição com resultados semelhantes; in situ com menos complicações.\n\n### Revisão por instabilidade após in situ\n- Mais frequente em ==menores de 50 anos== e ==sintomas leves==:\n  - tecidos elásticos permitem que o nervo **subluxe**;\n  - pouco ganho clínico, insatisfação maior com estalidos novos.\n- Na cirurgia: testar a estabilidade com **flexão do cotovelo**; se o nervo subluxa, transpor.\n\n### Critérios para transpor\n- ==Subluxação do nervo na flexão== do cotovelo após liberação.\n- Leito ruim (cicatriz, osteófitos, cúbito valgo), revisão.\n\n> **Na prova:** transposição anterior = ==nervo subluxa na flexão==",
-    "correta": "**Subluxação na flexão.**\n- Testada na mesa após a liberação.\n- Nervo que salta o epicôndilo continua sendo traumatizado.\n- A transposição tira o nervo da frente e reduz a tensão.",
-    "incorretas": {
-      "A": "**Compressão grave.**\n- Pode motivar neurólise, não define transposição.",
-      "C": "**Movimento errado.**\n- A subluxação ocorre na flexão.",
-      "D": "**Não é critério.**\n- Não se avalia assim."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0367": {
-    "conceito": "### Nervo interósseo anterior (NIA)\n- Ramo **motor puro** do mediano, sai logo abaixo do pronador redondo.\n- Desce sobre a **membrana interóssea** com a artéria interóssea anterior.\n\n| Músculo inervado | Função testada |\n|---|---|\n| flexor longo do polegar | flexão da IF do polegar |\n| ==flexor profundo do indicador e do médio== | ==flexão da IFD== desses dedos |\n| pronador quadrado | pronação com cotovelo fletido |\n\n### O que fica preservado\n| Músculo | Nervo |\n|---|---|\n| flexor superficial dos dedos | mediano (acima do NIA) |\n| pronador redondo, FRC, palmar longo | mediano |\n| tenar, lumbricais 1 e 2 | mediano na mão |\n| extensores | radial (NIP) |\n\n### Sinal do O\n- Polpa contra polpa achatada; IFP do indicador flete normalmente (FSD preservado).\n- Sensibilidade **normal**.\n\n### Causas de compressão do NIA\n| Estrutura | Detalhe |\n|---|---|\n| ==músculo de Gantzer== | ==cabeça acessória do FLP== (coronoide ou epicôndilo medial); frequente |\n| cabeça profunda do pronador redondo | banda fibrosa |\n| arcada do FSD | |\n| vasos trombosados, cistos | raros |\n\n- Diferencial: neurite braquial (Parsonage-Turner), que é a causa mais comum de paralisia espontânea do NIA.\n\n> **Na prova:** Gantzer = causa de ==síndrome do interósseo anterior==",
-    "correta": "**Síndrome do interósseo anterior.**\n- O ramo passa sob a cabeça acessória do FLP.\n- Motor puro: FLP e FPD do indicador e médio.",
-    "incorretas": {
-      "B": "**Punho.**\n- Muito distal ao Gantzer.",
-      "C": "**Ulnar no cotovelo.**\n- Sem relação.",
-      "D": "**Mediano propriamente dito.**\n- Agressores: pronador, lacerto, arcada do FSD."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0368": {
-    "conceito": "### Epidemiologia da doença de Dupuytren\n| Aspecto | Característica |\n|---|---|\n| sexo | ==masculino, cerca de 10:1== nas séries clássicas (menos em idosos) |\n| etnia | norte-europeus (\"doença dos vikings\"); rara em asiáticos e africanos |\n| idade | aumenta após 40 a 50 anos |\n| herança | autossômica dominante com penetrância variável |\n| lateralidade | bilateral, ==assimétrica== |\n\n### Associações\n- **Diabetes**, **álcool**, **tabagismo**, epilepsia (fenobarbital), HIV, trabalho com vibração, trauma.\n\n### Corticoide\n- Não é causa; a **infiltração de triancinolona** é usada em nódulos dolorosos iniciais.\n\n### Tratamentos\n| Opção | Indicação |\n|---|---|\n| observação | nódulo sem contratura |\n| aponeurotomia por agulha | cordas bem definidas, MF |\n| colagenase | cordas palpáveis (disponibilidade variável) |\n| fasciectomia limitada | padrão |\n| dermofasciectomia com enxerto | recidiva, diátese |\n\n### Quando foge do perfil\n| Situação | Significado |\n|---|---|\n| início antes dos 50 anos | ==diátese==: mais agressiva, mais recidiva |\n| mulher | começa mais tarde, evolui mais devagar |\n| criança com dedo fletido | pensar em camptodactilia, artrogripose |\n\n> **Na prova:** Dupuytren = ==mais comum e mais precoce em homens==",
-    "correta": "**Homens, mais precoce.**\n- Predomínio masculino acentuado.\n- Nas mulheres começa depois dos 60 e evolui devagar.\n- Início precoce é critério de diátese.",
-    "incorretas": {
-      "A": "**Duplamente errada.**\n- Nem sexo nem momento.",
-      "B": "**Sexo errado.**\n- O tardio é das mulheres, mas o predomínio é masculino.",
-      "D": "**Momento errado.**\n- Nos homens começa mais cedo."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0369": {
-    "conceito": "### Fases histológicas de Luck (Dupuytren)\n| Fase | Histologia | Colágeno III/I |\n|---|---|---|\n| I: proliferativa | fibroblastos e miofibroblastos abundantes, nódulos | ==alta== |\n| II: involutiva | miofibroblastos alinhados na linha de tração | intermediária |\n| ==III: residual== | ==tecido acelular, pouco vascularizado (corda madura)== | ==cerca de 20%== (próximo da fáscia normal) |\n\n### Implicações\n- Doença ativa (nódulos, colágeno III alto): **mais recidiva** após cirurgia.\n- Preferir operar cordas maduras.\n- Corticoide injetável atua nos nódulos ativos.\n\n### Biologia\n- **Miofibroblasto** com actina de músculo liso: gera a contração.\n- TGF-β, via Wnt, genética.\n\n### Tipos de colágeno\n| Tipo | Onde |\n|---|---|\n| I | fáscia normal, tendão, osso, cicatriz madura |\n| II | cartilagem hialina |\n| ==III== | ==cicatriz recente, Dupuytren (excesso)== |\n| IV | membrana basal |\n\n> **Na prova:** Dupuytren produz excesso de ==colágeno tipo III==",
-    "correta": "**Tipo III.**\n- Colágeno imaturo, de cicatrização recente.\n- A razão III/I acompanha a atividade da doença (Luck).\n- Mais tipo III, mais recidiva: preferir operar a corda madura.",
-    "incorretas": {
-      "A": "**Fáscia normal.**\n- Presente, mas não em excesso.",
-      "B": "**Cartilagem hialina.**\n- Sem relação.",
-      "D": "**Membrana basal.**\n- Sem relação."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0370": {
-    "conceito": "### Rupturas tendíneas no punho reumatoide\n| Lesão | Tendão | Mecanismo |\n|---|---|---|\n| ==Mannerfelt== | ==flexor longo do polegar== | atrito em osteófito do **escafoide** ou trapézio no túnel do carpo |\n| Vaughan-Jackson | extensor do mínimo, depois extensor comum (ulnar → radial) | atrito na **cabeça da ulna** (caput ulnae) |\n| tubérculo de Lister | extensor longo do polegar | atrito ou sinovite no 3º compartimento |\n\n### Mannerfelt\n- Perda da flexão da **IF do polegar**.\n- Diferencial: síndrome do interósseo anterior (testar também o FPD do indicador).\n- Tratamento: **ressecar o osteófito**, sinovectomia e enxerto em ponte, transferência do FSD do anelar ou artrodese da IF.\n\n### Vaughan-Jackson\n- Tratar com ressecção da cabeça da ulna (Darrach) ou Sauvé-Kapandji, sinovectomia e transferências (sutura látero-lateral, extensor do indicador).\n\n### EUC no punho reumatoide\n- Subluxa para volar e passa a flexor: favorece supinação do carpo e colapso radial.\n\n> **Na prova:** Mannerfelt = ruptura do ==flexor longo do polegar== no escafoide.",
-    "correta": "**Flexor longo do polegar.**\n- Atrito contra espícula do escafoide no túnel do carpo.\n- Perde a flexão da IF do polegar.\n- Ressecar a espícula junto com o reparo.",
-    "incorretas": {
-      "A": "**Subluxa, não rompe.**\n- Vai para volar e vira flexor.",
-      "B": "**Antebraço.**\n- Não rompe por atrito aqui.",
-      "C": "**Não é sede.**\n- Não participa dessas rupturas."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0371": {
-    "conceito": "### Origem das deformidades na mão reumatoide\n| Deformidade | Articulação de origem |\n|---|---|\n| ==botoeira dos dedos longos== | ==IFP== (sinovite distende a banda central) |\n| pescoço de cisne dos dedos | MF (subluxação volar, intrínseco plus), IFP (placa volar) ou IFD (martelo) |\n| desvio ulnar dos dedos | MF + punho (desvio radial dos metacarpos) |\n| botoeira do polegar (Nalebuff I) | MF |\n| pescoço de cisne do polegar (Nalebuff III) | CMC |\n| colapso do carpo | radiocarpal, RUD |\n\n### Botoeira reumatoide (Nalebuff e Millender)\n| Estágio | Achado | Tratamento |\n|---|---|---|\n| I (leve) | déficit de extensão da IFP de 10 a 15°, passível | sinovectomia, tenotomia do extensor terminal (Fowler) |\n| II (moderado) | cerca de 40°, passível | reconstrução da banda central |\n| III (grave) | IFP rígida | artrodese ou artroplastia |\n\n### IFD na AR\n- Classicamente poupada: ajuda a diferenciar de artrose e psoriásica.\n\n### Padrão articular\n| Doença | Distribuição |\n|---|---|\n| ==artrite reumatoide== | ==simétrica==; ==MF==, punho, IFP; poupa IFD |\n| artrose | IFD (Heberden), IFP (Bouchard), TMC |\n| psoriásica | assimétrica, IFD, dactilite, unhas |\n| gota | assimétrica, tofos |\n\n> **Na prova:** AR = ==simétrica, início nas MF==",
-    "correta": "**Simétrica, início nas MF.**\n- Junto com punhos e IFP.\n- Simetria é critério diagnóstico.\n- Poupa as IFD.",
-    "incorretas": {
-      "A": "**Assimetria.**\n- Aponta para psoriásica ou espondiloartrite.",
-      "B": "**Assimetria.**\n- Mesmo problema.",
-      "D": "**Início errado.**\n- As IFD são justamente as poupadas."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0372": {
     "conceito": "### Lesão do colateral ulnar da MF do polegar\n| Nome | Mecanismo |\n|---|---|\n| polegar do esquiador | agudo, valgo forçado (queda com bastão) |\n| polegar do guarda-caça | crônico, atenuação repetida |\n\n### Lesão de Stener\n- Coto do ==colateral ulnar== retrai e fica ==acima da aponeurose do adutor==.\n- A aponeurose se interpõe e impede a cicatrização: ==cirurgia obrigatória==.\n- Incidência: cerca de 60 a 80% das rupturas completas.\n- Sinal: nódulo palpável proximal à MF (o coto dobrado).\n\n### Exame\n| Achado | Interpretação |\n|---|---|\n| abertura > 30 a 35° em 30° de flexão | ruptura do colateral próprio |\n| abertura também em extensão | + colateral acessório (lesão completa) |\n| > 15° a mais que o lado oposto | instabilidade |\n| sem ponto final firme | ruptura completa |\n\n- RX antes do estresse (fratura-avulsão); US ou RM para ver Stener.\n\n### Colateral radial\n- Menos comum; instabilidade em varo, subluxação volar-ulnar da falange.\n- Sem aponeurose interposta: não existe Stener radial.\n\n> **Na prova:** polegar do esquiador = ==colateral ulnar da MF==",
     "correta": "**Colateral ulnar.**\n- Abdução forçada com a mão presa no bastão.\n- Versão crônica: polegar do guarda-caça.\n- Coto sobre a aponeurose do adutor = Stener, cirúrgico.",
@@ -4390,50 +3734,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0374": {
-    "conceito": "### Síndrome dolorosa regional complexa (SDRC)\n| Tipo | Definição |\n|---|---|\n| I (distrofia simpático-reflexa) | sem lesão nervosa definida |\n| II (causalgia) | com lesão de nervo identificável |\n\n### Critérios de Budapeste\n- Dor contínua desproporcional ao evento.\n- Sintomas e sinais em categorias: **sensitiva** (alodinia, hiperalgesia), **vasomotora** (temperatura, cor), **sudomotora/edema**, **motora/trófica**.\n\n### Fases clássicas\n| Fase | Achados |\n|---|---|\n| ==aguda (quente)== | ==calor, edema, eritema==, **hiperidrose**, dor intensa |\n| distrófica | pele fria, cianótica, rigidez, osteopenia |\n| atrófica | pele seca e fina, atrofia, contraturas |\n\n### Tratamento\n- **Precoce**: analgesia, fisioterapia (dessensibilização, imagem motora graduada), corticoide oral, bisfosfonato, bloqueios.\n- Prevenção: **vitamina C** após fratura do rádio distal (evidência discutida).\n\n### Fatores de risco\n| Fator | Associação |\n|---|---|\n| ==sexo feminino== | 3 a 4:1 |\n| ==membro superior== | fratura do rádio distal é o gatilho mais comum |\n| ==tabagismo== | disfunção vascular e simpática |\n| dor intensa precoce | sinal de alerta |\n| imobilização prolongada, gesso apertado | |\n| idade | pico na ==meia-idade== (40 a 60); incomum em idosos e crianças |\n\n### Critérios de Budapeste\n1. Dor contínua desproporcional ao evento.\n2. Sintomas em 3 de 4 categorias (sensitiva, vasomotora, sudomotora/edema, motora/trófica).\n3. Sinais em 2 de 4 categorias no exame.\n4. Sem outro diagnóstico que explique.\n\n> **Na prova:** idade ==acima de 60 anos não== é fator de risco para SDRC.",
-    "correta": "**Idade acima de 60 anos.**\n- A incidência se concentra na meia-idade.\n- Incomum em idosos e crianças pequenas.\n- Prevenção: analgesia, mobilização precoce, vitamina C.",
-    "incorretas": {
-      "A": "**Fator de risco.**\n- Fratura do rádio distal é o gatilho mais comum.",
-      "B": "**Fator de risco.**\n- 3 a 4 mulheres para cada homem.",
-      "C": "**Fator de risco.**\n- Disfunção vascular e simpática."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0375": {
-    "conceito": "### Síndrome dolorosa regional complexa (SDRC)\n| Tipo | Definição |\n|---|---|\n| I (distrofia simpático-reflexa) | sem lesão nervosa definida |\n| II (causalgia) | com lesão de nervo identificável |\n\n### Critérios de Budapeste\n- Dor contínua desproporcional ao evento.\n- Sintomas e sinais em categorias: **sensitiva** (alodinia, hiperalgesia), **vasomotora** (temperatura, cor), **sudomotora/edema**, **motora/trófica**.\n\n### Fases clássicas\n| Fase | Achados |\n|---|---|\n| ==aguda (quente)== | ==calor, edema, eritema==, **hiperidrose**, dor intensa |\n| distrófica | pele fria, cianótica, rigidez, osteopenia |\n| atrófica | pele seca e fina, atrofia, contraturas |\n\n### Tratamento\n- **Precoce**: analgesia, fisioterapia (dessensibilização, imagem motora graduada), corticoide oral, bisfosfonato, bloqueios.\n- Prevenção: **vitamina C** após fratura do rádio distal (evidência discutida).\n\n### Fatores de risco\n| Fator | Associação |\n|---|---|\n| ==sexo feminino== | 3 a 4:1 |\n| ==membro superior== | fratura do rádio distal é o gatilho mais comum |\n| ==tabagismo== | disfunção vascular e simpática |\n| dor intensa precoce | sinal de alerta |\n| imobilização prolongada, gesso apertado | |\n| idade | pico na ==meia-idade== (40 a 60); incomum em idosos e crianças |\n\n### Critérios de Budapeste\n1. Dor contínua desproporcional ao evento.\n2. Sintomas em 3 de 4 categorias (sensitiva, vasomotora, sudomotora/edema, motora/trófica).\n3. Sinais em 2 de 4 categorias no exame.\n4. Sem outro diagnóstico que explique.\n\n> **Na prova:** sintoma mais prevalente e definidor da SDRC = ==dor desproporcional==.",
-    "correta": "**Dor.**\n- Desproporcional ao trauma em intensidade e duração.\n- Porta de entrada dos critérios de Budapeste.\n- Dor desproporcional após fratura do rádio é sinal de alerta.",
-    "incorretas": {
-      "A": "**Frequente, não constante.**\n- Não define a síndrome.",
-      "B": "**Fase quente.**\n- Some na fase fria.",
-      "D": "**Fase tardia.**\n- Variável ao longo do tempo."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0376": {
-    "conceito": "### Variações do primeiro compartimento extensor\n| Variação | Frequência aproximada | Importância |\n|---|---|---|\n| ==ausência do extensor curto do polegar== | ==cerca de 5%== | |\n| ==septo separando o extensor curto== (subcompartimento) | ==cerca de 20 a 70%== (bem mais em pacientes com De Quervain) | ==causa principal de falha== da infiltração e da liberação |\n| múltiplas bandeletas do abdutor longo | muito comum | confundidas com o extensor curto |\n\n### Tenossinovite de De Quervain\n- Mulheres 30 a 50 anos, pós-parto (\"mãe de bebê\"), uso repetitivo.\n- **Finkelstein** (Eichhoff): polegar na mão, desvio ulnar do punho.\n- **WHAT test:** extensão do punho com abdução resistida do polegar (sensível para o extensor curto).\n\n### Tratamento\n- Órtese em espica, infiltração (cerca de 70 a 80% de sucesso).\n- Liberação cirúrgica: abrir o compartimento **dorsalmente** (evita subluxação volar dos tendões), procurar o **septo**, proteger o **ramo superficial do radial**.\n\n### Escalonamento\n| Etapa | Medida |\n|---|---|\n| 1 | ==infiltração de corticoide== na bainha (± órtese em espica) |\n| 2 | segunda infiltração se houver melhora parcial |\n| 3 | liberação cirúrgica após falha |\n\n> **Na prova:** De Quervain = ==abdutor longo e extensor curto do polegar, 1º compartimento==",
-    "correta": "**ALP e ECP, 1º compartimento.**\n- Correm sobre o estiloide radial.\n- Septo do ECP explica falha da infiltração.\n- Finkelstein confirma.",
-    "incorretas": {
-      "B": "**2º compartimento.**\n- Extensores radiais do carpo.",
-      "C": "**Tendões errados.**\n- Abdutor curto é tenar; ELP é do 3º.",
-      "D": "**Duplamente errada.**\n- Tendões e compartimento."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0377": {
-    "conceito": "### Sinais de Kanavel (tenossinovite infecciosa dos flexores)\n| Sinal | Comentário |\n|---|---|\n| ==dor à palpação ao longo da bainha== | ==considerado por Kanavel o mais importante==; constante e precoce |\n| dor à extensão passiva | muito reprodutível; alguns autores o consideram o mais precoce |\n| dedo em semiflexão | posição de menor pressão na bainha |\n| edema fusiforme (salsicha) | leva tempo para se instalar |\n\n### Etiologia\n- **Staphylococcus aureus** (o mais comum), estreptococos; *Pasteurella* em mordeduras de animais; gonococo em disseminação hematogênica.\n- Ferida punctiforme volar, muitas vezes esquecida.\n\n### Tratamento\n- **Urgência**: antibiótico endovenoso e **drenagem/irrigação da bainha** (fechada com cateter ou aberta).\n- Casos muito precoces (menos de 24 a 48 h): tentativa de antibiótico com observação rigorosa.\n\n### Complicações\n- Aderências, rigidez, necrose do tendão, disseminação para as bursas (**abscesso em ferradura**: polegar ↔ mínimo) e espaço de Parona.\n\n> **Na prova:** critérios de Kanavel = dor na bainha, semiflexão, dor à extensão passiva e ==edema fusiforme==",
-    "correta": "**Edema fusiforme.**\n- O pus distende a bainha inteira: dedo em salsicha.\n- Urgência: drenagem da bainha e antibiótico.",
-    "incorretas": {
-      "A": "**Semiflexão.**\n- O dedo fica fletido, posição de menor pressão.",
-      "B": "**Extensão passiva.**\n- Estirar a bainha é o que dói.",
-      "C": "**Inespecífico.**\n- O critério é dor ao longo da bainha."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0378": {
     "conceito": "### Sistema de polias flexoras\n| Nº na figura | Polia | Local | Importância |\n|---|---|---|---|\n| 1 | A1 | MF | liberada no dedo em gatilho |\n| ==2== | ==A2== | ==falange proximal (diáfise)== | ==essencial== |\n| 3 | C1 | cruciforme | permite dobrar a bainha |\n| 4 | A3 | IFP | fina |\n| 5 | C2 | cruciforme | |\n| ==6== | ==A4== | ==falange média (diáfise)== | ==essencial== |\n| (7) | C3, A5 | IFD | fina |\n\n- Polias **pares** (A2, A4) sobre ossos; **ímpares** (A1, A3, A5) sobre articulações.\n\n### Efeito corda de arco\n- Tendão se afasta do osso na flexão: aumenta o braço de alavanca na base, **perde excursão** na ponta e força de flexão da IFD.\n- Reconstrução: tira de tendão em torno da falange (sob o extensor na A2, por cima na A4), loop triplo.\n\n### Escaladores\n- Ruptura da A2 (e A3, A4) por pegada em crimp.\n\n### Polias do polegar\n| Polia | Local | Importância |\n|---|---|---|\n| A1 | MF | liberada no polegar em gatilho |\n| ==oblíqua== | ==falange proximal== (continua com o adutor) | ==essencial==: equivalente da A2 dos dedos |\n| A2 | IF | |\n| Av (variável) | entre A1 e oblíqua | |\n\n- Liberar só a A1 no polegar em gatilho; lesar a oblíqua gera corda de arco.\n- Na liberação da A1 do polegar, cuidado com o nervo digital radial, que cruza obliquamente.\n\n> **Na prova:** polia essencial do polegar = ==oblíqua==",
     "correta": "**Oblíqua.**\n- Sobre a falange proximal, em continuidade com o adutor.\n- Mantém o FLP junto ao osso.\n- No gatilho do polegar, liberar só a A1.",
@@ -4441,50 +3741,6 @@
       "A": "**Sobre a IF.**\n- Não tem o papel de retenção da oblíqua.",
       "B": "**Não existe.**\n- Distrator.",
       "D": "**Dedos longos.**\n- Permitem dobrar a bainha, não retêm."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0379": {
-    "conceito": "### Zonas dos extensores (dedos longos, Verdan)\n| Zona | Local | Lesão típica |\n|---|---|---|\n| I | IFD | dedo em martelo |\n| II | falange média | |\n| III | IFP | botoeira (banda central) |\n| IV | falange proximal | lesão parcial frequente |\n| ==V== | ==MF== | ==mordida humana (fight bite)==, lesão da banda sagital |\n| VI | metacarpos | conexões intertendíneas mascaram a lesão |\n| VII | sob o retináculo | aderências |\n| VIII | antebraço distal | junção miotendínea |\n\n- Regra: zonas **ímpares** sobre articulações, **pares** sobre ossos.\n\n### Fight bite (zona V)\n- Ferida transversa no dorso da MF: considerar **mordida** até prova em contrário.\n- Lesão ocorre com o punho fechado; ao estender, as camadas não se alinham.\n- Conduta: **exploração, lavagem**, antibiótico (amoxicilina-clavulanato; *Eikenella corrodens*), sem sutura primária.\n\n### Dedo em martelo\n- ==Flexão forçada== da IFD estendida (bola na ponta do dedo).\n- Órtese em ==extensão== (não hiperextensão) por 6 a 8 semanas contínuas.\n\n### Albertoni\n| Tipo | Lesão |\n|---|---|\n| A | tendínea pura (A1 déficit < 30°, A2 > 30°) |\n| B | avulsão com fragmento pequeno |\n| C | fratura da base dorsal (C1 pequena, C2 grande, C3 com subluxação volar) |\n| ==D== | ==descolamento epifisário== (criança) |\n\n### Pontos de prova\n- O que define cirurgia é a ==subluxação volar== da falange distal, não só o tamanho do fragmento.\n- Lesão de ==Seymour==: fratura fisária exposta com leito ungueal interposto; lavar, reduzir, antibiótico.\n\n> **Na prova:** Albertoni D = ==descolamento epifisário==",
-    "correta": "**Albertoni D = descolamento epifisário.**\n- Versão pediátrica do martelo.\n- Com ferida ungueal, é Seymour: fratura exposta fisária.",
-    "incorretas": {
-      "A": "**Mecanismo oposto.**\n- Flexão forçada da IFD estendida.",
-      "B": "**Não é regra.**\n- Subluxação pode ocorrer com fragmentos menores.",
-      "D": "**Hiperextensão necrosa pele.**\n- Imobilizar em extensão."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0380": {
-    "conceito": "### Deformidade de Madelung\n- Falha de crescimento da porção ==volar e ulnar da fise distal do rádio==.\n- Frequentemente com o **ligamento de Vickers** (banda do semilunar ao rádio) freando a fise.\n\n### Perfil\n- ==Meninas==, ==bilateral== (muitas vezes assimétrica).\n- Surge na **segunda década**, com o estirão.\n- Bilateral em menina de baixa estatura: pensar em **discondrosteose de Léri-Weill** (gene **SHOX**), Turner.\n\n### Achados\n| Clínica | Radiografia |\n|---|---|\n| ulna proeminente no dorso | rádio curto e curvo (dorsal e radial) |\n| mão subluxada para volar | inclinação ulnar e volar exagerada da superfície articular |\n| supinação e extensão limitadas | carpo em cunha, \"triangular\", semilunar afundado |\n\n### Madelung reverso\n- Curvatura volar do rádio (raro).\n\n### Tratamento\n- Assintomáticos: observação.\n- Dor ou deformidade progressiva: liberação do ligamento de Vickers com fisiólise (jovem), osteotomia do rádio em cúpula, encurtamento da ulna.\n\n### Genética\n- Léri-Weill (SHOX): herança ==dominante pseudoautossômica==.\n- Mão e carpo subluxam para ==volar==; ulna fica proeminente no ==dorso==.\n\n> **Na prova:** Madelung = ==bilateral na maioria==, predomínio feminino.",
-    "correta": "**Bilateral na maioria.**\n- Frequentemente assimétrica.\n- Aparece na segunda década, mais em meninas.\n- Menina baixa: pensar em Léri-Weill (SHOX).",
-    "incorretas": {
-      "A": "**Sexo invertido.**\n- Predomínio feminino.",
-      "C": "**Herança errada.**\n- Léri-Weill é dominante pseudoautossômica.",
-      "D": "**Mecânica invertida.**\n- A ulna fica dorsal; o carpo vai para volar."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0381": {
-    "conceito": "### Classificação de Heikel (displasia radial)\n| Heikel | Bayne | Descrição |\n|---|---|---|\n| A | I | rádio distal curto (fise distal atrasada) |\n| B | II | rádio hipoplásico em miniatura |\n| C | III | ausência parcial (remanescente proximal) |\n| ==D== | ==IV== | ==ausência total do rádio==: ==a mais comum== |\n\n### Mão torta radial (tipo D)\n- Mão desviada radialmente sobre a ponta da ulna.\n- Ulna curta e encurvada; polegar ausente ou hipoplásico.\n- Bilateral em cerca de metade.\n\n### Investigação obrigatória\n| Síndrome | Exame |\n|---|---|\n| Fanconi | teste de quebra cromossômica (diepoxibutano) |\n| Holt-Oram | ecocardiograma |\n| TAR | hemograma (plaquetas) |\n| VACTERL | coluna, rim, coração, ânus, traqueia/esôfago |\n\n### Remanescente no tipo C\n- Pode funcionar como **banda** que agrava a curvatura da ulna com o crescimento.\n\n- Algumas provas numeram de 1 a 4 (equivalente a A a D ou Bayne I a IV).\n\n> **Na prova:** Heikel mais comum = ==tipo 4 (ausência total do rádio)==",
-    "correta": "**Tipo 4, ausência total.**\n- Forma clássica e mais comum.\n- Investigar Fanconi, TAR, Holt-Oram e VACTERL.",
-    "incorretas": {
-      "A": "**Tipo errado.**\n- Tipo 1 não é ausência total.",
-      "B": "**Menos frequente.**\n- Descreve bem o tipo 1, mas é raro.",
-      "D": "**Descrição errada.**\n- Tipo 4 com achado do tipo 1."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0382": {
-    "conceito": "### Amputação de raio central\n| Técnica | Vantagens | Desvantagens |\n|---|---|---|\n| ressecção simples com fechamento (ligamento intermetacarpal) | rápida, sem osteotomia, retorno precoce | vão residual, desvio, rotação dos dedos |\n| ==transposição do raio vizinho== (2º → 3º, 5º → 4º) | fecha o vão, melhor aparência e preensão de objetos pequenos | ==osteotomia que precisa consolidar==, imobilização mais longa, risco de pseudartrose |\n\n### Contraindicação à transposição\n- ==Trabalhador manual pesado==: carga precoce e torção no foco; retorno ao trabalho atrasado.\n\n### Efeitos da perda do 3º raio\n- Perda de parte do adutor do polegar (cabeça transversa): pinça lateral mais fraca.\n- Largura da palma reduzida (menos força de preensão).\n\n### Indicações de amputação do raio\n- Dedo rígido, doloroso ou insensível que atrapalha a mão; tumores; sequelas de trauma.\n\n### Indicador amputado na falange proximal\n| Opção | Resultado |\n|---|---|\n| manter coto curto | ==excluído da pinça==, atrapalha, mão larga |\n| desarticular na MF | cabeça do metacarpo proeminente |\n| ==amputar o raio na base do 2º MC== | mão estreita, pinça polegar-médio livre |\n\n- Preservar a base e a inserção do ==ERLC== (extensão do punho).\n- Custo: cerca de 20% de força de preensão e pinça.\n\n> **Na prova:** indicador amputado na falange proximal = ==amputação do raio na base do metacarpo==",
-    "correta": "**Base do metacarpo.**\n- Amputação do raio preservando a inserção do ERLC.\n- Mão mais estreita e pinça livre com o médio.\n- Perde cerca de 20% da força.",
-    "incorretas": {
-      "A": "**Coto inútil.**\n- Excluído da pinça e atrapalha.",
-      "B": "**Cabeça proeminente.**\n- Mão continua larga.",
-      "C": "**Toco saliente.**\n- Não estreita a mão."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -4500,83 +3756,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0384": {
-    "conceito": "### Conteúdo do túnel do carpo\n| Estrutura | Posição | Bursa |\n|---|---|---|\n| nervo mediano | mais superficial, radial | |\n| flexores superficiais (4) | plano volar; 3º e 4º superficiais aos 2º e 5º | ulnar |\n| flexores profundos (4) | plano dorsal | ulnar |\n| ==flexor longo do polegar== | ==isolado no canto radial== | ==radial== |\n\n- ==Fora do túnel==: flexor radial do carpo (túnel próprio no trapézio), palmar longo (sobre o retináculo), nervo e artéria ulnar (Guyon).\n\n### Importância clínica do FLP\n| Situação | Detalhe |\n|---|---|\n| abscesso em ferradura | bursa radial comunica com a ulnar pelo espaço de Parona |\n| ==Mannerfelt== | ruptura do FLP por atrito no escafoide (AR) |\n| síndrome do interósseo anterior | perda da flexão da IF do polegar |\n\n> **Na prova:** tendão isolado no canto radial do túnel = ==flexor longo do polegar==.",
-    "correta": "**Flexor longo do polegar.**\n- Único tendão da bursa radial.\n- Isolado no canto radial do túnel.\n- Mannerfelt e abscesso em ferradura.",
-    "incorretas": {
-      "B": "**Não existe.**\n- Distrator.",
-      "C": "**Fora do túnel.**\n- Compartimento próprio no trapézio.",
-      "D": "**Superficial ao retináculo.**\n- Passa por cima do túnel."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0385": {
-    "conceito": "### Lumbricais\n- **Origem:** tendões do flexor profundo dos dedos (único músculo que nasce em tendão de outro).\n- **Inserção:** **banda lateral** (lado radial) do aparelho extensor.\n- **Inervação:** 1º e 2º pelo **mediano**; 3º e 4º pelo **ulnar**.\n\n### Ações\n| Articulação | Ação |\n|---|---|\n| MF | ==estabilização== (leve flexão; linha de tração próxima ao eixo) |\n| ==IFP e IFD== | ==extensão== (via banda lateral) |\n\n- Ao contrair, puxa o FPD para distal: **relaxa o próprio antagonista**.\n\n### Clínica\n| Condição | Mecanismo |\n|---|---|\n| **dedo lumbrical plus** | FPD seccionado distal à origem do lumbrical ou enxerto longo: ao tentar fletir, o FPD puxa o lumbrical e a IFP **estende paradoxalmente** |\n| garra | perda de lumbricais e interósseos (lesão ulnar/mediana baixa) |\n\n### Interósseos (comparação)\n- Fletem a MF com mais força, abduzem (dorsais) ou aduzem (palmares), estendem as IF.\n\n### Inervação dos lumbricais\n| Lumbrical | Dedo | Nervo | Origem |\n|---|---|---|---|\n| ==1º== | indicador | ==mediano== | unipenado (FPD do indicador) |\n| ==2º== | médio | ==mediano== | unipenado |\n| 3º | anelar | ulnar | bipenado |\n| 4º | mínimo | ulnar | bipenado |\n\n- Por isso a garra ulnar poupa indicador e médio.\n\n> **Na prova:** lumbricais do mediano = ==1º e 2º==",
-    "correta": "**1 e 2.**\n- Lumbricais do indicador e médio, pelo mediano.\n- 3º e 4º são do ulnar.\n- A garra ulnar poupa indicador e médio.",
-    "incorretas": {
-      "A": "**4º é ulnar.**\n- Mistura os nervos.",
-      "C": "**Ambos ulnares.**\n- Par oposto ao pedido.",
-      "D": "**Um de cada.**\n- 3º é ulnar."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0386": {
-    "conceito": "### Contratura de Dupuytren\n- Fibromatose da **fáscia palmar** (miofibroblastos, colágeno tipo III).\n- Perfil: ==homem== (várias vezes mais que mulher), acima de 40 anos, ascendência norte-europeia.\n- ==Bilateral com frequência, mas assimétrica==: uma mão bem mais avançada.\n- Dedos mais acometidos: **anelar** e **mínimo**.\n\n### Diátese de Dupuytren (doença agressiva)\n- História familiar, início antes de 50 anos, bilateral, **almofadas de Garrod**, **Ledderhose** (plantar), **Peyronie** (pênis).\n- Maior recidiva após tratamento.\n\n### Fatores associados\n- Diabetes, tabagismo, álcool, epilepsia (anticonvulsivantes), trabalho com vibração.\n\n### Estruturas normais → patológicas\n| Fáscia normal | Corda |\n|---|---|\n| banda pré-tendínea | corda pré-tendínea (MF) |\n| banda espiral, lâmina lateral, ligamento de Grayson | ==corda espiral== (desloca o feixe neurovascular para o centro) |\n| ligamento natatório | corda natatória |\n\n### Prognóstico pior\n| Fator | Motivo |\n|---|---|\n| ==bilateral== | critério de diátese |\n| ==dedos ulnares== (anelar, mínimo) | IFP do mínimo: contratura mais difícil e que mais recidiva |\n| lado radial | incomum, também marca doença agressiva |\n\n### Distribuição\n- Dedo mais acometido: ==anelar==, depois mínimo, médio, polegar e indicador.\n- Bilateral é comum, mas ==assimétrico==.\n\n### Luck\n| Fase | Recidiva se operar |\n|---|---|\n| proliferativa | ==maior== |\n| involutiva | intermediária |\n| residual | menor (corda madura) |\n\n> **Na prova:** Dupuytren = ==4º dedo, bilateral e assimétrico==",
-    "correta": "**4º dedo e assimétrico.**\n- O anelar é o mais acometido.\n- Bilateral é frequente, mas em graus diferentes.",
-    "incorretas": {
-      "A": "**Outra doença.**\n- Green classifica o dedo em gatilho.",
-      "B": "**Duplamente errada.**\n- Rara em negros; diagnóstico clínico.",
-      "C": "**Conclusão invertida.**\n- Operar na fase proliferativa recidiva mais."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0387": {
-    "conceito": "### Duplicação do polegar (polidactilia pré-axial)\n- ==Unilateral== e ==esporádica== na maioria; raramente associada a outras malformações.\n\n### Wassel\n| Tipo | Nível | Frequência |\n|---|---|---|\n| I | falange distal bífida | |\n| II | falange distal completa (duplicada) | cerca de 15 a 20% |\n| III | falange proximal bífida | |\n| ==IV== | ==falange proximal completa== | ==o mais comum (40 a 50%)== |\n| V | metacarpo bífido | |\n| VI | metacarpo completo | |\n| ==VII== | ==trifalângico== | cerca de 20% |\n\n- Ímpares = bífidos (parcial); pares = duplicação completa.\n- Tipo VII: herança autossômica ==dominante==.\n\n### Tratamento\n- Ressecar o polegar menos desenvolvido (geralmente o ==radial==), preservando e reinserindo o ==colateral radial== e a musculatura tenar no remanescente.\n- Idade: cerca de 12 meses.\n\n### Polidactilia pós-axial\n| Aspecto | Pós-axial |\n|---|---|\n| raça | muito mais comum em negros |\n| herança | dominante, bilateral |\n| associação | em brancos, investigar síndromes |\n\n> **Na prova:** Wassel ==IV é o mais comum==, ==VII é trifalângico==.",
-    "correta": "**Wassel I a VII, IV mais comum, VII trifalângico.**\n- IV: duplicação completa na falange proximal.\n- Ímpares bífidos, pares completos.",
-    "incorretas": {
-      "A": "**Herança errada.**\n- O trifalângico é dominante.",
-      "B": "**Isolada.**\n- Deficiência radial é que exige investigar órgãos.",
-      "D": "**Unilateral.**\n- Bilateral é típico da pós-axial."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0388": {
-    "conceito": "### Variações do primeiro compartimento extensor\n| Variação | Frequência aproximada | Importância |\n|---|---|---|\n| ==ausência do extensor curto do polegar== | ==cerca de 5%== | |\n| ==septo separando o extensor curto== (subcompartimento) | ==cerca de 20 a 70%== (bem mais em pacientes com De Quervain) | ==causa principal de falha== da infiltração e da liberação |\n| múltiplas bandeletas do abdutor longo | muito comum | confundidas com o extensor curto |\n\n### Tenossinovite de De Quervain\n- Mulheres 30 a 50 anos, pós-parto (\"mãe de bebê\"), uso repetitivo.\n- **Finkelstein** (Eichhoff): polegar na mão, desvio ulnar do punho.\n- **WHAT test:** extensão do punho com abdução resistida do polegar (sensível para o extensor curto).\n\n### Tratamento\n- Órtese em espica, infiltração (cerca de 70 a 80% de sucesso).\n- Liberação cirúrgica: abrir o compartimento **dorsalmente** (evita subluxação volar dos tendões), procurar o **septo**, proteger o **ramo superficial do radial**.\n\n### Inserções do abdutor longo\n| Inserção | Tipo |\n|---|---|\n| base do 1º metacarpo | normal (principal) |\n| ==trapézio== | ==banda acessória mais frequente== |\n| músculos tenares (abdutor curto, oponente) | acessória |\n\n> **Na prova:** variação mais comum = ==duplicação do ALP inserindo-se no trapézio==",
-    "correta": "**ALP duplicado inserindo-se no trapézio.**\n- Bandas acessórias além da inserção no 1º metacarpo.\n- Junto ao septo do ECP, explicam falhas no De Quervain.",
-    "incorretas": {
-      "A": "**Tendão errado.**\n- Quem se multiplica é o ALP.",
-      "C": "**Duplamente errada.**\n- Tendão errado e inserção normal do ALP.",
-      "D": "**Inserção normal.**\n- A variação vai ao trapézio."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0389": {
-    "conceito": "### Exames nas neuropatias compressivas\n| Exame | O que mostra | Limite |\n|---|---|---|\n| ==eletroneuromiografia== | ==condução, bloqueio, desnervação==; gravidade e nível | pode ser normal no inicial |\n| ultrassonografia | área de secção do mediano (> 10 a 12 mm²), cisto, nervo bífido, artéria mediana | operador-dependente |\n| ressonância | ==hipersinal em T2== (edema), T1 isointenso; lesões expansivas | custo, não gradua função |\n\n### ENMG no túnel do carpo\n| Grau | Achado |\n|---|---|\n| leve | latência sensitiva aumentada |\n| moderado | + latência motora aumentada |\n| grave | amplitudes reduzidas, desnervação no abdutor curto |\n\n- Diferencia de radiculopatia C6-C7 e polineuropatia.\n- Exame normal não exclui clínica típica.\n\n### Valores de referência\n| Parâmetro | Alterado |\n|---|---|\n| latência motora distal | ==> 4,5 ms== |\n| latência sensitiva | ==> 3,5 ms== |\n| ==área do mediano (US, no pisiforme)== | ==> 10 mm²== |\n\n- O nervo incha ==antes== do estreitamento (proximal ao túnel).\n- RM: massa, anomalia, recidiva; não por tempo de doença.\n\n> **Na prova:** área normal do mediano no pisiforme = até ==10 mm²==",
-    "correta": "**10 mm² no pisiforme.**\n- Valor de corte da área de secção do mediano.\n- O nervo incha antes do estreitamento.\n- US mostra também cisto, nervo bífido, artéria mediana.",
-    "incorretas": {
-      "A": "**Leitura invertida.**\n- Acima desses valores é alterado.",
-      "B": "**Não garante.**\n- ENMG pode vir normal com clínica típica.",
-      "D": "**Indicação errada.**\n- RM para massa, anomalia ou recidiva."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0390": {
-    "conceito": "### Testes de sensibilidade\n| Grupo | Teste | Mede | Quando altera |\n|---|---|---|---|\n| ==limiar== | ==Semmes-Weinstein==, vibração (256 Hz) | menor estímulo percebido | ==precoce== (compressão) |\n| densidade de inervação | discriminação de dois pontos (estática e dinâmica) | número de fibras | ==tardio== (perda axonal) |\n| provocativos | Durkan, Phalen, Tinel | reprodução do sintoma | clínica já manifesta |\n\n### Semmes-Weinstein\n| Filamento | Interpretação |\n|---|---|\n| 2,83 | normal |\n| 3,61 | diminuição do tato leve |\n| 4,31 | diminuição da sensibilidade protetora |\n| 6,65 | perda da sensibilidade protetora |\n\n### Uso\n- Compressão: testes de limiar.\n- Regeneração após secção: discriminação de dois pontos.\n\n> **Na prova:** primeiro a positivar na compressão = ==Semmes-Weinstein==.",
-    "correta": "**Semmes-Weinstein.**\n- Teste de limiar: altera antes da perda de fibras.\n- Discriminação de dois pontos é tardia.\n- D2P normal não descarta túnel do carpo.",
-    "incorretas": {
-      "B": "**Provocativo.**\n- O melhor provocativo, mas não mede limiar.",
-      "C": "**Sensibilidade baixa.**\n- Não é o primeiro.",
-      "D": "**Provocativo.**\n- Positiva com a clínica já manifesta."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0391": {
     "conceito": "### Lumbrical plus × quadriga\n| Condição | Mecanismo | Clínica |\n|---|---|---|\n| ==lumbrical plus== | FPD sem continuidade distal (secção distal ao lumbrical, amputação, **enxerto longo e frouxo**): o FPD puxa o lumbrical | ==extensão paradoxal das IF== ao tentar fletir com força |\n| quadriga | FPD **encurtado** (avanço > 1 cm, enxerto curto, sutura ao extensor no coto) | **vizinhos não fecham** a mão |\n| aderência flexora | cicatriz | flexão ativa limitada, extensão passiva limitada |\n| garra (perda lumbrical) | paralisia intrínseca | MF hiperestendida, IF fletidas |\n\n### Tratamento do lumbrical plus\n- **Secção do lumbrical** (liberação).\n\n### Tratamento da quadriga\n- Liberar o FPD encurtado (tenólise, tenotomia do coto).\n\n### Quadriga\n- Os FPD dos dedos longos partilham ==um ventre comum== (rédeas presas juntas).\n- Encurtar um tendão faz o músculo esgotar a excursão antes que os vizinhos fechem.\n- Prevenção: avanço do FPD na zona I ==até 1 cm==; não suturar o FPD ao extensor em amputações.\n\n> **Na prova:** quadriga = ==FPD encurtado ou tensionado limita os dedos vizinhos==",
     "correta": "**Encurtamento ou reparo tensionado.**\n- O ventre comum esgota a excursão com o dedo operado já fletido.\n- Os vizinhos não fecham.\n- Por isso o avanço do FPD se limita a 1 cm.",
@@ -4584,17 +3763,6 @@
       "A": "**Aderência.**\n- Limita o próprio dedo, não os vizinhos.",
       "C": "**Déficit neurológico.**\n- Não é limitação mecânica.",
       "D": "**Ruptura.**\n- Perde flexão do próprio dedo, o oposto."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0392": {
-    "conceito": "### Diagrama da mão (Katz e Stirrat)\n- O próprio paciente marca dor, dormência e formigamento num desenho.\n\n| Padrão | Sintomas | Interpretação |\n|---|---|---|\n| ==clássico== | ==polegar, indicador, médio (≥ 2), poupa a palma== | ==túnel do carpo== |\n| provável | como o clássico, palma incluída se não for só ulnar | |\n| possível | ao menos um dedo do mediano | |\n| improvável | nenhum dedo do mediano | outra causa |\n\n### Por que a palma é poupada\n- O ==ramo cutâneo palmar== sai 5 a 8 cm acima do punho e passa ==sobre== o ligamento transverso.\n- Palma acometida: compressão proximal (pronador) ou radiculopatia C6-C7.\n\n### Outros testes da lista\n| Teste | O que é |\n|---|---|\n| Tinel | percussão |\n| discriminação de dois pontos | compasso, densidade de fibras |\n| volumetria | edema por deslocamento de água |\n\n> **Na prova:** paciente marca sintomas num desenho = ==diagrama da mão==.",
-    "correta": "**Diagrama da mão.**\n- Padrão clássico: dedos radiais sem a palma.\n- O ramo cutâneo palmar passa sobre o túnel.\n- Palma acometida: procurar causa proximal.",
-    "incorretas": {
-      "A": "**Percussão.**\n- Feita pelo examinador.",
-      "B": "**Compasso.**\n- Altera tardiamente.",
-      "D": "**Edema.**\n- Deslocamento de água, útil na SDRC."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -4805,17 +3973,6 @@
       "B": "**Sentido errado.**\n- Medial é do inferior.",
       "C": "**Tarde demais.**\n- Na 10ª semana os membros já estão formados.",
       "D": "**Duplamente errada.**\n- Momento e sentido."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0412": {
-    "conceito": "### Ruptura da banda sagital\n- Mais comum: ==lado radial do dedo médio== (boxer's knuckle).\n- O extensor subluxa para **ulnar**, no vale intermetacarpal.\n\n### Por que o médio\n- Dedo mais longo e proeminente no soco.\n- A banda radial sofre tração no desvio ulnar forçado durante a flexão.\n\n### Clínica\n- Dor e edema dorsais na MF, estalido.\n- ==Não estende ativamente a partir da flexão==, mas ==mantém a extensão== se o dedo for estendido passivamente.\n- Desvio ulnar do dedo ao fletir.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| aguda (até cerca de 3 semanas) | órtese com MF em extensão (ou yoke) por 4 a 6 semanas |\n| crônica ou falha | reparo direto ou reconstrução (faixa do extensor, junctura) |\n\n### Não traumática\n- Artrite reumatoide: frouxidão das bandas radiais contribui para o desvio ulnar.\n\n### Rayan e Murray\n| Tipo | Achado | Tratamento |\n|---|---|---|\n| I | lesão da banda, ==tendão estável== | órtese |\n| ==II== | ==tendão subluxado== (ainda sobre a cabeça) | órtese se aguda (< 3 semanas) |\n| III | ==tendão luxado== no vale intermetacarpal | reconstrução |\n\n- Só três tipos.\n\n> **Na prova:** extensor luxado no vale intermetacarpal = ==Rayan e Murray III==",
-    "correta": "**Tipo III.**\n- Tendão luxado no vale entre as cabeças.\n- Não estende ativamente a partir da flexão, mas mantém se estendido passivamente.\n- Reconstrução da banda sagital.",
-    "incorretas": {
-      "A": "**Sem instabilidade.**\n- Extensor centrado.",
-      "B": "**Subluxação.**\n- Não sai da cabeça.",
-      "D": "**Não existe.**\n- São três tipos."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -5852,61 +5009,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0501": {
-    "conceito": "### Variações do primeiro compartimento extensor\n| Variação | Frequência aproximada | Importância |\n|---|---|---|\n| ==ausência do extensor curto do polegar== | ==cerca de 5%== | |\n| ==septo separando o extensor curto== (subcompartimento) | ==cerca de 20 a 70%== (bem mais em pacientes com De Quervain) | ==causa principal de falha== da infiltração e da liberação |\n| múltiplas bandeletas do abdutor longo | muito comum | confundidas com o extensor curto |\n\n### Tenossinovite de De Quervain\n- Mulheres 30 a 50 anos, pós-parto (\"mãe de bebê\"), uso repetitivo.\n- **Finkelstein** (Eichhoff): polegar na mão, desvio ulnar do punho.\n- **WHAT test:** extensão do punho com abdução resistida do polegar (sensível para o extensor curto).\n\n### Tratamento\n- Órtese em espica, infiltração (cerca de 70 a 80% de sucesso).\n- Liberação cirúrgica: abrir o compartimento **dorsalmente** (evita subluxação volar dos tendões), procurar o **septo**, proteger o **ramo superficial do radial**.\n\n### Escalonamento\n| Etapa | Medida |\n|---|---|\n| 1 | ==infiltração de corticoide== na bainha (± órtese em espica) |\n| 2 | segunda infiltração se houver melhora parcial |\n| 3 | liberação cirúrgica após falha |\n\n> **Na prova:** De Quervain = ==abdutor longo e extensor curto do polegar, 1º compartimento==",
-    "correta": "**1º compartimento: ALP e ECP.**\n- Correm sobre o estiloide radial.\n- Septo do ECP e bandas do ALP explicam falhas.\n- Finkelstein confirma.",
-    "incorretas": {
-      "A": "**Tendões errados.**\n- Abdutor curto é tenar; ELP é do 3º.",
-      "C": "**Duplamente errada.**\n- Compartimento e tendões.",
-      "D": "**Compartimento errado.**\n- O 2º tem os extensores radiais."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0502": {
-    "conceito": "### Separação dos dedos\n- 6ª a 8ª semana: placa da mão com ==raios (cristas) digitais== unidos por tecido interdigital.\n- A separação ocorre por ==apoptose interdigital== (via BMP), não por crescimento.\n- Progride de distal para proximal e de radial para ulnar.\n\n### Sindactilia\n| Aspecto | Dado |\n|---|---|\n| frequência | 1 em 2.000 a 2.500 nascidos; malformação congênita mais comum da mão junto com polidactilia |\n| espaço mais acometido | ==3º (médio e anelar)== |\n| espaço menos acometido | 1º (polegar e indicador) |\n| bilateral | cerca de 50% |\n\n### Classificação\n| Termo | Definição |\n|---|---|\n| simples | só pele |\n| complexa | ponte óssea (sinostose) |\n| completa | até a ponta |\n| complicada | ossos anômalos (Apert) |\n\n### Cirurgia\n- Por volta de 12 a 18 meses; mais cedo em dedos de tamanhos diferentes (polegar, mínimo).\n- Um lado do dedo por vez; retalho dorsal para a comissura, enxerto de pele total.\n\n> **Na prova:** sindactilia = falha de separação das ==cristas (raios) digitais==.",
-    "correta": "**3º espaço.**\n- Entre médio e anelar, cerca de metade dos casos.\n- Depois 4º, 2º e 1º.\n- Dedos de tamanhos diferentes: operar mais cedo.",
-    "incorretas": {
-      "A": "**O menos acometido.**\n- Quando envolvido, pensar em síndrome (Apert).",
-      "B": "**Terceiro lugar.**\n- Menos frequente.",
-      "D": "**Segundo lugar.**\n- Não o primeiro."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0503": {
-    "conceito": "### Túnel radial: cinco pontos de compressão (FREAS)\n| Ponto | Estrutura |\n|---|---|\n| 1 | bandas **fibrosas** anteriores à radiocapitelar |\n| 2 | alça de **Henry** (vasos recorrentes radiais) |\n| 3 | ==borda medial tendínea do extensor radial curto do carpo== |\n| 4 | **arcada de Frohse** (borda proximal do supinador): o mais comum |\n| 5 | borda **distal** do supinador |\n\n### Duas síndromes\n| Síndrome | Quadro |\n|---|---|\n| túnel radial | ==dor== no antebraço proximal, 3 a 4 dedos **distal** ao epicôndilo, sem fraqueza |\n| nervo interósseo posterior | ==fraqueza==: dedos caídos, punho estende em desvio radial (ERLC preservado), sem déficit sensitivo |\n\n### Diferencial com epicondilite\n- Na epicondilite a dor é **sobre** o epicôndilo; no túnel radial, mais distal.\n- **Teste do dedo médio resistido** e supinação resistida dolorosos.\n- Infiltração anestésica no túnel ajuda a separar.\n\n### Síndrome do supinador (túnel radial)\n- Compressão do ==NIP==; dor 3 a 4 dedos ==distal== ao epicôndilo.\n- Só dor: túnel radial; com déficit motor: paralisia do NIP.\n\n> **Na prova:** síndrome do supinador = ==nervo interósseo posterior==",
-    "correta": "**Interósseo posterior.**\n- Comprimido na arcada de Frohse.\n- Dor distal ao epicôndilo; teste do dedo médio.\n- Sem alteração sensitiva.",
-    "incorretas": {
-      "A": "**Ramo do mediano.**\n- Volar profundo, sinal do círculo.",
-      "C": "**Tronco.**\n- Daria punho caído e alteração sensitiva.",
-      "D": "**Pronador.**\n- Dor volar e parestesia radial."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0504": {
-    "conceito": "A luxação **dorsal** da metacarpofalângica é uma das poucas lesões da mão em que o gesto instintivo é o errado.\n\nA placa volar insere-se de forma firme na base da falange proximal e frouxa no colo do metacarpo, de modo que, na hiperextensão, ela se destaca do lado proximal e permanece presa à falange. Se o cirurgião aplicar **tração longitudinal** (sobretudo somada a hiperextensão), a placa volar é arrastada para dentro do espaço articular e se interpõe entre a cabeça do metacarpo e a base da falange: a luxação simples, que era redutível, converte-se em complexa (irredutível), e o tratamento passa a ser cirúrgico.\n\nA manobra correta é uma redução por **deslizamento**, sem tração: flete-se o punho (e, quando possível, a própria metacarpofalângica), o que relaxa os tendões flexores e o aparelho extensor e afrouxa o aperto sobre a cabeça do metacarpo; em seguida aplica-se uma força dirigida em sentido **volar** sobre o dorso da falange proximal, mantendo as superfícies articulares em contato e empurrando a base da falange de volta sobre a cabeça do metacarpo, muitas vezes com o polegar do examinador apoiado na cabeça metacarpal proeminente na palma, para servir de ponto fixo.\n\nAntes de qualquer tentativa é obrigatório procurar os sinais da luxação já complexa: dedo apenas discretamente estendido em vez de hiperestendido, pregueamento da pele palmar sobre a cabeça do metacarpo e, na radiografia, o sesamoide dentro do espaço articular ou o alargamento da articulação. Nesses casos indica-se de saída a redução aberta, por via dorsal ou volar, para retirar a placa volar interposta.\n\nReduzida a articulação, testa-se a estabilidade, imobiliza-se por poucos dias com a metacarpofalângica em flexão (nunca em extensão) e inicia-se a mobilização precoce.",
-    "correta": "B. A redução se faz com força dirigida em sentido VOLAR, sem tração: flete-se o punho para relaxar os flexores e empurra-se a falange de volta sobre a cabeça do metacarpo, mantendo as superfícies em contato.",
-    "incorretas": {
-      "A": "Uma força dirigida para DORSAL empurra os elementos no mesmo sentido em que já se deslocaram e não recompõe a articulação. O deslocamento a corrigir é dorsal, e a correção precisa ser volar.",
-      "C": "Erra as duas coisas. Além do sentido dorsal, acrescenta a TRAÇÃO, que é justamente o gesto proscrito: ela afasta as superfícies articulares e arrasta a placa volar (firmemente presa à base da falange) para dentro da articulação.",
-      "D": "Acerta o sentido volar, mas a TRAÇÃO anula o benefício: ao separar a cabeça do metacarpo da base da falange, ela abre espaço para a placa volar se interpor, convertendo uma luxação simples em complexa e irredutível. A redução correta é por deslizamento, com as superfícies em contato."
-    },
-    "geradoEm": "2026-09-10",
-    "conferido": false
-  },
-  "mao-0505": {
-    "conceito": "### Sequência de Mayfield (decorar)\n| Estágio | Ligamento |\n|---|---|\n| ==I== | ==escafossemilunar== |\n| II | capitossemilunar |\n| ==III== | ==piramidal-semilunar (lunopiramidal)== |\n| IV | radiocarpal dorsal (semilunar luxa para volar) |\n\n- Direção: **radial → em torno do semilunar → ulnar → dorsal**.\n- Mecanismo: hiperextensão, desvio ulnar, supinação intercarpal.\n\n### Radiografia\n| Estágio | Achado |\n|---|---|\n| I | diástase escafossemilunar (Terry Thomas), anel cortical |\n| II e III | capitato fora do semilunar no perfil; linhas de Gilula quebradas |\n| IV | semilunar em \"xícara derramada\" no perfil; forma triangular no PA |\n\n### Terry Thomas + DISI\n- Diástase escafossemilunar > 3 mm (PA) e ângulo escafossemilunar > 60 a 70° (perfil).\n- Mecanismo: ==hiperextensão + desvio ulnar + supinação intracarpal== (Mayfield I).\n\n> **Na prova:** Terry Thomas e DISI = ==hiperextensão, desvio ulnar e supinação intercarpal==",
-    "correta": "**Hiperextensão, desvio ulnar, supinação intracarpal.**\n- Escafoide estende, semilunar é retido: o ligamento torce e rompe.\n- Rompido, o semilunar estende: DISI.",
-    "incorretas": {
-      "B": "**Flexão não.**\n- Não gera a torção.",
-      "C": "**Desvio radial.**\n- Fratura do escafoide.",
-      "D": "**Duplamente errada.**\n- Flexão e pronação."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
   "mao-0506": {
     "conceito": "### Teste de Bunnell-Littler (Finochietto)\n- Intrínsecos fletem a MF e estendem as IF: cruzam as duas articulações.\n\n| Posição da MF | Flexão passiva da IFP | Interpretação |\n|---|---|---|\n| ==estendida== | ==limitada== | tensão nos intrínsecos |\n| ==fletida== | ==melhora== | ==contratura intrínseca== |\n| estendida e fletida | igualmente limitada | ==contratura capsular (articular)== |\n\n### Testes análogos\n| Teste | Estrutura |\n|---|---|\n| ligamento retinacular oblíquo (Haines-Zancolli) | flexão da IFD limitada com IFP estendida |\n| extrínsecos (extensor) | flexão da IFP limitada com MF fletida |\n\n### Causas de contratura intrínseca\n- Síndrome compartimental da mão, esmagamento, AR, espasticidade, isquemia.\n\n> **Na prova:** contratura intrínseca = ==flexão da IFP limitada com MF estendida==.",
     "correta": "**Flexão da IFP limitada com MF estendida.**\n- MF estendida estica os intrínsecos.\n- Fletindo a MF, a IFP dobra melhor.\n- Igual nas duas posições = capsular.",
@@ -5914,17 +5016,6 @@
       "B": "**Direção errada.**\n- Intrínseco retraído impede dobrar.",
       "C": "**MF fletida relaxa.**\n- Aí a flexão melhora.",
       "D": "**Duplamente errada.**\n- Movimento e posição."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0507": {
-    "conceito": "### Contratura de Dupuytren\n- Fibromatose da **fáscia palmar** (miofibroblastos, colágeno tipo III).\n- Perfil: ==homem== (várias vezes mais que mulher), acima de 40 anos, ascendência norte-europeia.\n- ==Bilateral com frequência, mas assimétrica==: uma mão bem mais avançada.\n- Dedos mais acometidos: **anelar** e **mínimo**.\n\n### Diátese de Dupuytren (doença agressiva)\n- História familiar, início antes de 50 anos, bilateral, **almofadas de Garrod**, **Ledderhose** (plantar), **Peyronie** (pênis).\n- Maior recidiva após tratamento.\n\n### Fatores associados\n- Diabetes, tabagismo, álcool, epilepsia (anticonvulsivantes), trabalho com vibração.\n\n### Estruturas normais → patológicas\n| Fáscia normal | Corda |\n|---|---|\n| banda pré-tendínea | corda pré-tendínea (MF) |\n| banda espiral, lâmina lateral, ligamento de Grayson | ==corda espiral== (desloca o feixe neurovascular para o centro) |\n| ligamento natatório | corda natatória |\n\n### Focos ectópicos\n| Foco | Local |\n|---|---|\n| ==Garrod== (knuckle pads) | ==dorso das IFP== |\n| Ledderhose | fáscia plantar |\n| Peyronie | pênis |\n\n- Garrod: indolor, não contrai, não se opera; ==marca diátese==.\n\n> **Na prova:** dedo mais acometido ==4º==; Garrod no ==dorso da IFP==",
-    "correta": "**4º dedo; dorso da IFP.**\n- Anelar é o mais acometido.\n- Garrod no dorso das IFP, marcador de diátese.",
-    "incorretas": {
-      "B": "**Face errada.**\n- Volar da IFP é território das cordas.",
-      "C": "**Dedo e articulação errados.**\n- Médio é menos acometido.",
-      "D": "**Triplamente errada.**\n- Dedo, articulação e face."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -6334,17 +5425,6 @@
       "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.18"
     ]
   },
-  "mao-0544": {
-    "conceito": "O **dedo em martelo** (mallet finger) é a perda da extensão ativa da interfalângica distal por descontinuidade do tendão extensor terminal, que se insere na base dorsal da falange distal. O mecanismo típico é a flexão forçada da ponta do dedo enquanto a interfalângica distal está em extensão ativa — a bolada na polpa, o lençol puxado com força.\n\nA classificação de **Albertoni** organiza a lesão por dois eixos simples, e é isso que a questão cobra:\n\n- **Natureza da lesão**: tipo A quando a falha é puramente tendínea, sem arrancamento ósseo; tipo B quando há avulsão óssea na base dorsal da falange distal.\n- **Magnitude do déficit de extensão** (queda da falange distal): subtipo 1 quando menor que 30 graus; subtipo 2 quando maior.\n\nUma lesão com arrancamento ósseo e queda inferior a 30 graus é, portanto, um tipo B1.\n\nA lógica dessa organização é terapêutica, e converge com a de Doyle: o que decide a conduta é a estabilidade da articulação, e não o simples fato de haver ou não fragmento ósseo. As lesões tendíneas puras e as ósseas com fragmento pequeno e sem subluxação (a imensa maioria) são tratadas com **órtese** em extensão contínua da interfalângica distal por seis a oito semanas, mantendo obrigatoriamente a interfalângica proximal livre para se mover; a órtese não pode ser retirada nem por um instante, porque cada flexão reinicia a contagem.\n\nOperam-se as lesões com fragmento grande e subluxação volar da falange distal, as abertas e as irredutíveis, com fio de bloqueio de extensão (técnica de Ishiguro), banda de tensão ou parafuso.\n\nA complicação a antecipar é o **pescoço de cisne**, por migração da força extensora para a banda central.",
-    "correta": "C. Arrancamento ÓSSEO (tipo B) com queda da falange distal MENOR que 30 graus (subtipo 1) corresponde ao tipo B1 de Albertoni.",
-    "incorretas": {
-      "A": "O tipo A1 designa a lesão puramente TENDÍNEA, sem arrancamento ósseo, com queda menor que 30 graus. O enunciado descreve avulsão óssea, o que já exclui o grupo A.",
-      "B": "O tipo A2 também pertence ao grupo das lesões tendíneas puras, com queda maior que 30 graus. Erra na natureza da lesão e no grau do déficit descritos pelo enunciado.",
-      "D": "O tipo B2 acerta a natureza óssea da lesão, mas corresponde à queda MAIOR que 30 graus. O enunciado especifica déficit inferior a 30 graus, o que o coloca no subtipo 1."
-    },
-    "geradoEm": "2026-09-10",
-    "conferido": false
-  },
   "mao-0545": {
     "conceito": "### Lesão do colateral ulnar da MF do polegar\n| Nome | Mecanismo |\n|---|---|\n| polegar do esquiador | agudo, valgo forçado (queda com bastão) |\n| polegar do guarda-caça | crônico, atenuação repetida |\n\n### Lesão de Stener\n- Coto do ==colateral ulnar== retrai e fica ==acima da aponeurose do adutor==.\n- A aponeurose se interpõe e impede a cicatrização: ==cirurgia obrigatória==.\n- Incidência: cerca de 60 a 80% das rupturas completas.\n- Sinal: nódulo palpável proximal à MF (o coto dobrado).\n\n### Exame\n| Achado | Interpretação |\n|---|---|\n| abertura > 30 a 35° em 30° de flexão | ruptura do colateral próprio |\n| abertura também em extensão | + colateral acessório (lesão completa) |\n| > 15° a mais que o lado oposto | instabilidade |\n| sem ponto final firme | ruptura completa |\n\n- RX antes do estresse (fratura-avulsão); US ou RM para ver Stener.\n\n### Local da avulsão\n- Mais frequente na ==inserção distal (base da falange proximal)==.\n- Fragmento ósseo < 15 a 20% da superfície: ressecar e usar âncora; maior e desviado: fixar.\n\n> **Na prova:** Stener = colateral ==ulnar==, avulsão na ==falange proximal==",
     "correta": "**Colateral ulnar, na falange proximal.**\n- O coto distal solto retrai sobre a aponeurose do adutor.\n- Fragmento, quando há, vem da base da falange proximal.",
@@ -6367,17 +5447,6 @@
     "referencias": [
       "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. Seção 7"
     ],
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0547": {
-    "conceito": "### Classificação de Swanson (IFSSH)\n| Grupo | Categoria | Exemplos |\n|---|---|---|\n| ==I== | ==falha de formação== | transversa (coto), ==longitudinal: mão torta radial==, ulnar, fenda central, focomelia |\n| II | falha de diferenciação (separação) | sindactilia, sinostose radioulnar, camptodactilia, clinodactilia |\n| III | duplicação | polidactilia, mão em espelho |\n| IV | crescimento excessivo | macrodactilia |\n| V | crescimento insuficiente | hipoplasia do polegar, braquidactilia |\n| VI | bandas de constrição | Streeter |\n| VII | anomalias esqueléticas generalizadas | acondroplasia, displasias |\n\n### Classificação atual\n- **OMT (Oberg, Manske, Tonkin):** malformações, deformações e displasias, pelo eixo embriológico afetado; adotada pela IFSSH.\n\n> **Na prova:** mão torta radial = ==falha de formação longitudinal (Swanson I)==.",
-    "correta": "**Falha de formação.**\n- Variedade longitudinal: falta o rádio no todo ou em parte.\n- Grupo I de Swanson.",
-    "incorretas": {
-      "A": "**Grupo VII.**\n- Displasias esqueléticas.",
-      "B": "**Grupo II.**\n- Partes formadas que não se separaram.",
-      "D": "**Grupo III.**\n- Polidactilia, mão em espelho."
-    },
     "geradoEm": "2026-09-24",
     "conferido": false
   },
