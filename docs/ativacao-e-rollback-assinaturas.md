@@ -1,8 +1,10 @@
 # Ativação e rollback de assinaturas
 
-Este roteiro não autoriza ativação. Enquanto o reembolso sandbox do chamado
-`WCS-52311` não for confirmado pelo Mercado Pago, manter todas as travas públicas
-e comerciais desligadas. Não usar status manual no banco para simular um reembolso.
+Em 26/09/2026, o titular autorizou abrir assinaturas reais mesmo com o reembolso
+sandbox do chamado `WCS-52311` ainda recusado pela API. O reembolso automático
+continua não validado: a página deve oferecer atendimento manual se a solicitação
+falhar, e nenhum status financeiro pode ser alterado sem confirmação do provedor.
+O paywall permanece desligado até autorização específica posterior.
 
 ## Antes de ativar
 
@@ -10,28 +12,33 @@ e comerciais desligadas. Não usar status manual no banco para simular um reembo
    deve continuar sem JWT do gateway, com validação obrigatória de `x-signature`.
 2. Confirmar a credencial privada do mesmo vendedor que recebeu a cobrança.
    Nunca registrar ou copiar tokens para o repositório, GitHub Variables ou chat.
-3. Confirmar em sandbox, por resposta do provedor, cancelamento, reembolso
-   `refunded`, associação ao usuário e processamento idempotente dos eventos.
+3. Confirmar que cancelamento, associação ao usuário e processamento idempotente
+   dos eventos funcionam; verificar o canal de atendimento manual da garantia.
+   O reembolso sandbox segue pendente de resposta oficial no chamado `WCS-52311`.
 4. Confirmar preços e periodicidades mensal R$ 39,90/1 mês, semestral
    R$ 179,90/6 meses e anual R$ 239,90/12 meses, em BRL.
 5. Fazer revisão de autorização administrativa: RPCs disponíveis somente a
    `authenticated`, com verificação de UUID em `administradores`; usuário comum
    recebe acesso negado. A listagem não expõe payloads de webhook.
-6. Conferir em produção as Repository Variables `VITE_LIMITES_HABILITADOS=false`
-   e `VITE_PAGAMENTOS_HABILITADOS=false`, e no banco `paywall_ativo=false`,
-   `pagamentos_ativos=false`, `limite_diario_gratis=20`.
+6. Conferir em produção `VITE_LIMITES_HABILITADOS=false`, `paywall_ativo=false`
+   e `limite_diario_gratis=20`. Conferir os estados de pagamentos contra a fase
+   da implantação antes de cada mudança.
 
-## Sequência futura, somente após aprovação explícita
+## Sequência autorizada para abrir pagamentos
 
 1. Habilitar a integração privada de produção com checkout ainda restrito a
    `contas_teste`. Validar que cada checkout abre com valor, moeda, recorrência
    e conta vendedora corretos, sem confirmar compra real sem autorização.
-2. Validar webhook de produção e mecanismo de reembolso com credencial da mesma
-   conta vendedora. Nunca marcar `reembolsada` antes de `refunded` confirmado.
-3. Remover a restrição privada de `contas_teste` somente após a validação dos
-   três checkouts. Ativar pagamentos públicos no backend e no build do frontend.
-4. Manter `paywall_ativo=false` até confirmar que botões e checkout públicos
-   funcionam. Ativar o limite apenas em janela acompanhada, com rollback pronto.
+2. Validar webhook de produção com segredo HMAC, URL e eventos de assinaturas e
+   pagamentos. Nunca marcar `reembolsada` antes de `refunded` confirmado.
+3. Publicar termos e página de planos que deixem claro que o gratuito está sem
+   limite nesta fase, a assinatura é opcional e a garantia pode exigir suporte
+   manual quando o provedor recusar a automação.
+4. Remover a restrição privada de `contas_teste`; ativar pagamentos públicos no
+   backend, no banco e no build do frontend. Confirmar os três botões e os
+   valores/periodicidades antes da primeira compra real pelo titular.
+5. Manter `paywall_ativo=false` e `VITE_LIMITES_HABILITADOS=false`. Não ativar o
+   limite sem autorização posterior e verificação do checkout real.
 
 ## Rollback
 
@@ -52,5 +59,6 @@ e comerciais desligadas. Não usar status manual no banco para simular um reembo
 
 ## Estado atual
 
-Pagamentos públicos, limite público, `pagamentos_ativos` e `paywall_ativo`
-permanecem desligados. O reembolso sandbox deve ser resolvido antes da ativação.
+Antes da sequência acima, os pagamentos públicos, o limite público,
+`pagamentos_ativos` e `paywall_ativo` permanecem desligados. Registrar aqui o
+estado efetivamente confirmado após cada etapa; não inferir ativação de um merge.
