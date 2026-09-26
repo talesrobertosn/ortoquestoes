@@ -14,6 +14,7 @@ WEBHOOK_MERCADO_PAGO = (RAIZ / "supabase/functions/webhook-mercado-pago/index.ts
 COBRANCA_MERCADO_PAGO = (RAIZ / "supabase/functions/_shared/cobranca-mercado-pago.ts").read_text()
 GERENCIAR_PLANO = (RAIZ / "supabase/functions/gerenciar-plano/index.ts").read_text()
 RESUMO_ASSINATURA = (RAIZ / "src/componentes/ResumoAssinatura.tsx").read_text()
+ROTEIRO_ROLLBACK = (RAIZ / "docs/ativacao-e-rollback-assinaturas.md").read_text()
 ENV_EXEMPLO = (RAIZ / ".env.example").read_text()
 MIGRACAO_ADMIN = (RAIZ / "supabase/migrations/202609231450_admin_assinaturas.sql").read_text()
 PAGINA_ADMIN = (RAIZ / "src/paginas/AdminAssinaturas.tsx").read_text()
@@ -124,6 +125,10 @@ for trecho in (
 assert "estado?.status_assinatura === 'cancelada'" in RESUMO_ASSINATURA
 assert "{ acao: 'sincronizar_cobranca' }" in RESUMO_ASSINATURA
 assert "!proximoEstado.ultima_cobranca_em" not in RESUMO_ASSINATURA
+for trecho in ("Falha no pagamento", "Reembolsada", "Pendente", "Cancelada", "Em dia"):
+    assert trecho in RESUMO_ASSINATURA, f"Mensagem de estado ausente: {trecho}"
+for trecho in ("paywall_ativo=false", "pagamentos_ativos=false", "VITE_PAGAMENTOS_HABILITADOS=false", "WCS-52311"):
+    assert trecho in ROTEIRO_ROLLBACK, f"Roteiro seguro incompleto: {trecho}"
 
 for trecho in (
     "create table if not exists public.administradores",
