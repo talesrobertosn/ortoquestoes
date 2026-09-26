@@ -71,7 +71,7 @@ def principal() -> int:
                 "slug": slug,
                 "nome": dados.get("tema") or nomes[slug],
                 "arquivo": f"temas/{slug}.json",
-                "total": len(lista),
+                "total": sum(1 for q in lista if not q.get("duplicataDe")),
             }
         )
         for questao in lista:
@@ -99,6 +99,8 @@ def principal() -> int:
                     "cc": 1 if questao.get("comentariosComunidade") else 0,
                     # Etiqueta OrtoQuestões Simulados: soma-se à prova, não a substitui.
                     **({"sim": 1} if questao.get("simulado") else {}),
+                    # Cópia de outra questão: fica no índice para o histórico, fora das sessões.
+                    **({"dup": questao["duplicataDe"]} if questao.get("duplicataDe") else {}),
                 }
             )
             if questao.get("ano") and questao["ano"] not in anos:
@@ -108,12 +110,13 @@ def principal() -> int:
                 + [a.get("texto", "") for a in questao.get("alternativas") or []]
                 + (questao.get("subtemas") or [])
             )
-            busca.append([questao["id"], " ".join(normalizar(texto).split())])
+            if not questao.get("duplicataDe"):
+                busca.append([questao["id"], " ".join(normalizar(texto).split())])
 
     indice = {
         "versao": 1,
         "geradoEm": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
-        "total": len(questoes),
+        "total": sum(1 for q in questoes if "dup" not in q),
         "temas": temas,
         "subtemas": subtemas,
         "provas": provas,

@@ -1,73 +1,73 @@
 {
   "versao": 1,
-  "geradoEm": "2026-09-26T13:05:40+00:00",
-  "total": 4825,
+  "geradoEm": "2026-09-26T13:14:14+00:00",
+  "total": 4421,
   "temas": [
     {
       "slug": "mao",
       "nome": "Mão e punho",
       "arquivo": "temas/mao.json",
-      "total": 597
+      "total": 558
     },
     {
       "slug": "ombro-cotovelo",
       "nome": "Ombro e cotovelo",
       "arquivo": "temas/ombro-cotovelo.json",
-      "total": 443
+      "total": 408
     },
     {
       "slug": "quadril",
       "nome": "Quadril",
       "arquivo": "temas/quadril.json",
-      "total": 459
+      "total": 444
     },
     {
       "slug": "joelho",
       "nome": "Joelho",
       "arquivo": "temas/joelho.json",
-      "total": 277
+      "total": 197
     },
     {
       "slug": "coluna",
       "nome": "Coluna",
       "arquivo": "temas/coluna.json",
-      "total": 296
+      "total": 283
     },
     {
       "slug": "pe-tornozelo",
       "nome": "Pé e tornozelo",
       "arquivo": "temas/pe-tornozelo.json",
-      "total": 324
+      "total": 298
     },
     {
       "slug": "trauma",
       "nome": "Trauma adulto",
       "arquivo": "temas/trauma.json",
-      "total": 1050
+      "total": 971
     },
     {
       "slug": "pediatria",
       "nome": "Ortopedia pediátrica",
       "arquivo": "temas/pediatria.json",
-      "total": 702
+      "total": 649
     },
     {
       "slug": "tumores",
       "nome": "Tumores ósseos e de partes moles",
       "arquivo": "temas/tumores.json",
-      "total": 326
+      "total": 313
     },
     {
       "slug": "conceitos-basicos",
       "nome": "Conceitos básicos",
       "arquivo": "temas/conceitos-basicos.json",
-      "total": 271
+      "total": 233
     },
     {
       "slug": "osteometabolicas",
       "nome": "Osteometabólicas",
       "arquivo": "temas/osteometabolicas.json",
-      "total": 80
+      "total": 67
     }
   ],
   "subtemas": [
@@ -339,7 +339,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0007"
     },
     {
       "id": "mao-0004",
@@ -770,14 +771,15 @@
         16,
         3
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2021,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0019"
     },
     {
       "id": "mao-0033",
@@ -1109,7 +1111,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0384"
     },
     {
       "id": "mao-0055",
@@ -1304,7 +1307,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0066"
     },
     {
       "id": "mao-0068",
@@ -2064,7 +2068,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0249"
     },
     {
       "id": "mao-0118",
@@ -2485,7 +2490,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0562"
     },
     {
       "id": "mao-0146",
@@ -2530,7 +2536,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0062"
     },
     {
       "id": "mao-0149",
@@ -2696,7 +2703,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0112"
     },
     {
       "id": "mao-0160",
@@ -2711,7 +2719,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0079"
     },
     {
       "id": "mao-0161",
@@ -2726,7 +2735,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0061"
     },
     {
       "id": "mao-0162",
@@ -2758,7 +2768,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0116"
     },
     {
       "id": "mao-0164",
@@ -2775,7 +2786,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0117"
     },
     {
       "id": "mao-0165",
@@ -2836,7 +2848,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0120"
     },
     {
       "id": "mao-0169",
@@ -2928,7 +2941,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0129"
     },
     {
       "id": "mao-0175",
@@ -3081,7 +3095,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0207"
     },
     {
       "id": "mao-0185",
@@ -3464,7 +3479,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0141"
     },
     {
       "id": "mao-0210",
@@ -5328,14 +5344,15 @@
         8,
         32
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0279"
     },
     {
       "id": "mao-0333",
@@ -5345,14 +5362,15 @@
         8,
         32
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0280"
     },
     {
       "id": "mao-0334",
@@ -6903,14 +6921,15 @@
         22,
         21
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0800"
     },
     {
       "id": "mao-0437",
@@ -6963,14 +6982,15 @@
       "s": [
         24
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0586"
     },
     {
       "id": "mao-0441",
@@ -7704,7 +7724,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0509"
     },
     {
       "id": "mao-0489",
@@ -7947,7 +7968,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0843"
     },
     {
       "id": "mao-0505",
@@ -8037,7 +8059,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0252"
     },
     {
       "id": "mao-0511",
@@ -8052,7 +8075,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0489"
     },
     {
       "id": "mao-0512",
@@ -8461,7 +8485,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0363"
     },
     {
       "id": "mao-0539",
@@ -8540,7 +8565,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0326"
     },
     {
       "id": "mao-0544",
@@ -8555,7 +8581,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0655"
     },
     {
       "id": "mao-0545",
@@ -8570,7 +8597,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0328"
     },
     {
       "id": "mao-0546",
@@ -8585,7 +8613,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0150"
     },
     {
       "id": "mao-0547",
@@ -8600,7 +8629,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0331"
     },
     {
       "id": "mao-0548",
@@ -8662,7 +8692,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0151"
     },
     {
       "id": "mao-0552",
@@ -8709,7 +8740,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0162"
     },
     {
       "id": "mao-0555",
@@ -8724,7 +8756,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0146"
     },
     {
       "id": "mao-0556",
@@ -8739,7 +8772,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0062"
     },
     {
       "id": "mao-0557",
@@ -8770,7 +8804,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0144"
     },
     {
       "id": "mao-0559",
@@ -8785,7 +8820,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0061"
     },
     {
       "id": "mao-0560",
@@ -8800,7 +8836,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0079"
     },
     {
       "id": "mao-0561",
@@ -8816,7 +8853,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0116"
     },
     {
       "id": "mao-0562",
@@ -8862,7 +8900,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0429"
     },
     {
       "id": "mao-0565",
@@ -9444,7 +9483,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0382"
     },
     {
       "id": "ombro-cotovelo-0006",
@@ -9899,7 +9939,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0389"
     },
     {
       "id": "ombro-cotovelo-0036",
@@ -10109,7 +10150,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0377"
     },
     {
       "id": "ombro-cotovelo-0050",
@@ -10276,7 +10318,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0381"
     },
     {
       "id": "ombro-cotovelo-0061",
@@ -10821,7 +10864,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0270"
     },
     {
       "id": "ombro-cotovelo-0099",
@@ -10853,7 +10897,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0384"
     },
     {
       "id": "ombro-cotovelo-0101",
@@ -10868,7 +10913,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0386"
     },
     {
       "id": "ombro-cotovelo-0102",
@@ -10883,7 +10929,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0383"
     },
     {
       "id": "ombro-cotovelo-0103",
@@ -10898,7 +10945,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0387"
     },
     {
       "id": "ombro-cotovelo-0104",
@@ -10913,7 +10961,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0393"
     },
     {
       "id": "ombro-cotovelo-0105",
@@ -10959,7 +11008,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0141"
     },
     {
       "id": "ombro-cotovelo-0108",
@@ -10975,7 +11025,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0329"
     },
     {
       "id": "ombro-cotovelo-0109",
@@ -11054,7 +11105,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0389"
     },
     {
       "id": "ombro-cotovelo-0115",
@@ -11069,7 +11121,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0391"
     },
     {
       "id": "ombro-cotovelo-0116",
@@ -11118,7 +11171,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0345"
     },
     {
       "id": "ombro-cotovelo-0119",
@@ -11133,7 +11187,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0385"
     },
     {
       "id": "ombro-cotovelo-0120",
@@ -11335,7 +11390,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0124"
     },
     {
       "id": "ombro-cotovelo-0133",
@@ -11413,7 +11469,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0399"
     },
     {
       "id": "ombro-cotovelo-0139",
@@ -11737,14 +11794,15 @@
         57,
         26
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0415"
     },
     {
       "id": "ombro-cotovelo-0171",
@@ -11753,14 +11811,15 @@
         51,
         43
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "osteometabolicas-0033"
     },
     {
       "id": "ombro-cotovelo-0172",
@@ -12128,7 +12187,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0447"
     },
     {
       "id": "ombro-cotovelo-0196",
@@ -12436,7 +12496,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0123"
     },
     {
       "id": "ombro-cotovelo-0216",
@@ -12694,7 +12755,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0533"
     },
     {
       "id": "ombro-cotovelo-0237",
@@ -12940,7 +13002,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0312"
     },
     {
       "id": "ombro-cotovelo-0253",
@@ -13046,7 +13109,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0315"
     },
     {
       "id": "ombro-cotovelo-0260",
@@ -13062,7 +13126,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0316"
     },
     {
       "id": "ombro-cotovelo-0261",
@@ -13077,7 +13142,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0317"
     },
     {
       "id": "ombro-cotovelo-0262",
@@ -13377,7 +13443,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0374"
     },
     {
       "id": "ombro-cotovelo-0286",
@@ -13407,7 +13474,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0939"
     },
     {
       "id": "ombro-cotovelo-0288",
@@ -13598,14 +13666,15 @@
         58,
         52
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0673"
     },
     {
       "id": "ombro-cotovelo-0302",
@@ -13908,14 +13977,15 @@
         56,
         44
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0806"
     },
     {
       "id": "ombro-cotovelo-0322",
@@ -14518,7 +14588,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0535"
     },
     {
       "id": "ombro-cotovelo-0362",
@@ -14730,7 +14801,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0651"
     },
     {
       "id": "ombro-cotovelo-0376",
@@ -14805,7 +14877,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0094"
     },
     {
       "id": "ombro-cotovelo-0381",
@@ -15021,7 +15094,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0113"
     },
     {
       "id": "ombro-cotovelo-0395",
@@ -17262,7 +17336,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0053"
     },
     {
       "id": "quadril-0077",
@@ -17413,7 +17488,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0083"
     },
     {
       "id": "quadril-0087",
@@ -17513,14 +17589,15 @@
         75,
         26
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0418"
     },
     {
       "id": "quadril-0094",
@@ -17529,14 +17606,15 @@
         76,
         16
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0419"
     },
     {
       "id": "quadril-0095",
@@ -17576,14 +17654,15 @@
         77,
         73
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0439"
     },
     {
       "id": "quadril-0098",
@@ -18156,7 +18235,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0154"
     },
     {
       "id": "quadril-0137",
@@ -18339,7 +18419,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0458"
     },
     {
       "id": "quadril-0151",
@@ -18930,7 +19011,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0168"
     },
     {
       "id": "quadril-0201",
@@ -18945,7 +19027,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0009"
     },
     {
       "id": "quadril-0202",
@@ -18960,7 +19043,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0192"
     },
     {
       "id": "quadril-0203",
@@ -18975,7 +19059,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0193"
     },
     {
       "id": "quadril-0204",
@@ -19140,7 +19225,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0147"
     },
     {
       "id": "quadril-0218",
@@ -19186,7 +19272,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0075"
     },
     {
       "id": "quadril-0221",
@@ -19216,7 +19303,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0072"
     },
     {
       "id": "quadril-0223",
@@ -19231,7 +19319,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0027"
     },
     {
       "id": "quadril-0224",
@@ -23346,7 +23435,7 @@
       "s": [
         4
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -23361,7 +23450,7 @@
       "s": [
         4
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -23376,7 +23465,7 @@
       "s": [
         82
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -23391,7 +23480,7 @@
       "s": [
         83
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -23406,7 +23495,7 @@
       "s": [
         84
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -23567,27 +23656,29 @@
       "s": [
         86
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2021,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1078"
     },
     {
       "id": "joelho-0017",
       "t": 3,
       "s": [],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2021,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1079"
     },
     {
       "id": "joelho-0018",
@@ -23595,14 +23686,15 @@
       "s": [
         86
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2021,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1080"
     },
     {
       "id": "joelho-0019",
@@ -23610,14 +23702,15 @@
       "s": [
         87
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2021,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1081"
     },
     {
       "id": "joelho-0020",
@@ -24108,7 +24201,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0248"
     },
     {
       "id": "joelho-0053",
@@ -24131,14 +24225,15 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0245"
     },
     {
       "id": "joelho-0055",
@@ -24153,7 +24248,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1074"
     },
     {
       "id": "joelho-0056",
@@ -24191,7 +24287,7 @@
       "s": [
         89
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24207,7 +24303,7 @@
         82,
         86
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24222,7 +24318,7 @@
       "s": [
         86
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24237,7 +24333,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -24252,14 +24348,15 @@
       "s": [
         86
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2021,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1078"
     },
     {
       "id": "joelho-0063",
@@ -24267,14 +24364,15 @@
       "s": [
         16
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2022,
       "d": null,
       "img": 1,
-      "an": 0,
-      "c": 1,
-      "cia": 1,
-      "cc": 0
+      "an": 1,
+      "c": 0,
+      "cia": 0,
+      "cc": 0,
+      "dup": "trauma-1061"
     },
     {
       "id": "joelho-0064",
@@ -24283,14 +24381,15 @@
         28,
         4
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2022,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1062"
     },
     {
       "id": "joelho-0065",
@@ -24298,14 +24397,15 @@
       "s": [
         87
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2022,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1065"
     },
     {
       "id": "joelho-0066",
@@ -24313,14 +24413,15 @@
       "s": [
         89
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2022,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1066"
     },
     {
       "id": "joelho-0067",
@@ -24329,14 +24430,15 @@
         82,
         86
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2022,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1067"
     },
     {
       "id": "joelho-0068",
@@ -24345,14 +24447,15 @@
         82,
         86
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2022,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1068"
     },
     {
       "id": "joelho-0069",
@@ -24360,14 +24463,15 @@
       "s": [
         87
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2022,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1069"
     },
     {
       "id": "joelho-0070",
@@ -24375,7 +24479,7 @@
       "s": [
         28
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24388,7 +24492,7 @@
       "id": "joelho-0071",
       "t": 3,
       "s": [],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24403,7 +24507,7 @@
       "s": [
         84
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24418,7 +24522,7 @@
       "s": [
         84
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24433,7 +24537,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24448,7 +24552,7 @@
       "s": [
         69
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24463,7 +24567,7 @@
       "s": [
         84
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24479,7 +24583,7 @@
         87,
         68
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24494,7 +24598,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24507,7 +24611,7 @@
       "id": "joelho-0079",
       "t": 3,
       "s": [],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24522,7 +24626,7 @@
       "s": [
         82
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24535,7 +24639,7 @@
       "id": "joelho-0081",
       "t": 3,
       "s": [],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -24550,7 +24654,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24565,7 +24669,7 @@
       "s": [
         83
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24581,7 +24685,7 @@
         28,
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24596,7 +24700,7 @@
       "s": [
         86
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24611,7 +24715,7 @@
       "s": [
         86
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24626,14 +24730,15 @@
       "s": [
         85
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0156"
     },
     {
       "id": "joelho-0088",
@@ -24641,7 +24746,7 @@
       "s": [
         90
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24656,7 +24761,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24671,7 +24776,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24686,7 +24791,7 @@
       "s": [
         4
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24702,14 +24807,15 @@
         29,
         85
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0161"
     },
     {
       "id": "joelho-0093",
@@ -24717,14 +24823,15 @@
       "s": [
         27
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0256"
     },
     {
       "id": "joelho-0094",
@@ -24732,7 +24839,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -24747,14 +24854,15 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0252"
     },
     {
       "id": "joelho-0096",
@@ -24762,14 +24870,15 @@
       "s": [
         4
       ],
-      "p": null,
-      "a": null,
+      "p": 2,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1070"
     },
     {
       "id": "joelho-0097",
@@ -24777,14 +24886,15 @@
       "s": [
         28
       ],
-      "p": null,
-      "a": null,
+      "p": 2,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1071"
     },
     {
       "id": "joelho-0098",
@@ -24799,7 +24909,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1073"
     },
     {
       "id": "joelho-0099",
@@ -24814,7 +24925,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1074"
     },
     {
       "id": "joelho-0100",
@@ -24829,7 +24941,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1076"
     },
     {
       "id": "joelho-0101",
@@ -24852,14 +24965,15 @@
       "s": [
         83
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0254"
     },
     {
       "id": "joelho-0103",
@@ -24867,14 +24981,15 @@
       "s": [
         83
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0259"
     },
     {
       "id": "joelho-0104",
@@ -24882,7 +24997,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -24898,7 +25013,7 @@
         91,
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -24914,7 +25029,7 @@
         16,
         26
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -24930,7 +25045,7 @@
         91,
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -24946,14 +25061,15 @@
         92,
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0081"
     },
     {
       "id": "joelho-0109",
@@ -24961,7 +25077,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -24977,14 +25093,15 @@
         91,
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0107"
     },
     {
       "id": "joelho-0111",
@@ -24993,7 +25110,7 @@
         16,
         91
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25009,14 +25126,15 @@
         91,
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0105"
     },
     {
       "id": "joelho-0113",
@@ -25024,7 +25142,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25039,7 +25157,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25055,14 +25173,15 @@
         92,
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0085"
     },
     {
       "id": "joelho-0116",
@@ -25070,14 +25189,15 @@
       "s": [
         16
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1047"
     },
     {
       "id": "joelho-0117",
@@ -25085,14 +25205,15 @@
       "s": [
         86
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1048"
     },
     {
       "id": "joelho-0118",
@@ -25100,14 +25221,15 @@
       "s": [
         83
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1049"
     },
     {
       "id": "joelho-0119",
@@ -25116,14 +25238,15 @@
         85,
         16
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0197"
     },
     {
       "id": "joelho-0120",
@@ -25132,14 +25255,15 @@
         29,
         27
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0198"
     },
     {
       "id": "joelho-0121",
@@ -25147,14 +25271,15 @@
       "s": [
         84
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0553"
     },
     {
       "id": "joelho-0122",
@@ -25163,14 +25288,15 @@
         20,
         83
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1050"
     },
     {
       "id": "joelho-0123",
@@ -25178,14 +25304,15 @@
       "s": [
         89
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1051"
     },
     {
       "id": "joelho-0124",
@@ -25193,7 +25320,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25208,7 +25335,7 @@
       "s": [
         84
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25223,7 +25350,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25238,7 +25365,7 @@
       "s": [
         27
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25251,7 +25378,7 @@
       "id": "joelho-0128",
       "t": 3,
       "s": [],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25266,7 +25393,7 @@
       "s": [
         88
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25281,7 +25408,7 @@
       "s": [
         82
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25296,7 +25423,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25311,7 +25438,7 @@
       "s": [
         83
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25327,14 +25454,15 @@
         93,
         4
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0556"
     },
     {
       "id": "joelho-0134",
@@ -25343,7 +25471,7 @@
         82,
         86
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25366,7 +25494,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1054"
     },
     {
       "id": "joelho-0136",
@@ -25375,14 +25504,15 @@
         86,
         16
       ],
-      "p": null,
-      "a": null,
+      "p": 2,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1060"
     },
     {
       "id": "joelho-0137",
@@ -25395,7 +25525,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1059"
     },
     {
       "id": "joelho-0138",
@@ -25410,7 +25541,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1056"
     },
     {
       "id": "joelho-0139",
@@ -25425,7 +25557,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1055"
     },
     {
       "id": "joelho-0140",
@@ -25440,7 +25573,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1058"
     },
     {
       "id": "joelho-0141",
@@ -25449,14 +25583,15 @@
         29,
         85
       ],
-      "p": null,
-      "a": null,
+      "p": 2,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0254"
     },
     {
       "id": "joelho-0142",
@@ -25480,7 +25615,7 @@
         16,
         91
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25495,7 +25630,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25510,7 +25645,7 @@
       "s": [
         27
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25525,7 +25660,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25540,7 +25675,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25556,14 +25691,15 @@
         92,
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0130"
     },
     {
       "id": "joelho-0149",
@@ -25572,7 +25708,7 @@
         16,
         91
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25587,7 +25723,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25604,7 +25740,7 @@
         28,
         4
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25619,7 +25755,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25634,7 +25770,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25650,7 +25786,7 @@
         92,
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25666,14 +25802,15 @@
         92,
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 0,
       "cia": 0,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0137"
     },
     {
       "id": "joelho-0156",
@@ -25681,14 +25818,15 @@
       "s": [
         83
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1037"
     },
     {
       "id": "joelho-0157",
@@ -25696,14 +25834,15 @@
       "s": [
         82
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1038"
     },
     {
       "id": "joelho-0158",
@@ -25711,14 +25850,15 @@
       "s": [
         4
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1039"
     },
     {
       "id": "joelho-0159",
@@ -25726,14 +25866,15 @@
       "s": [
         16
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1040"
     },
     {
       "id": "joelho-0160",
@@ -25741,27 +25882,29 @@
       "s": [
         27
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1041"
     },
     {
       "id": "joelho-0161",
       "t": 3,
       "s": [],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1042"
     },
     {
       "id": "joelho-0162",
@@ -25769,14 +25912,15 @@
       "s": [
         68
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1043"
     },
     {
       "id": "joelho-0163",
@@ -25784,14 +25928,15 @@
       "s": [
         87
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0278"
     },
     {
       "id": "joelho-0164",
@@ -25801,14 +25946,15 @@
         91,
         94
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0172"
     },
     {
       "id": "joelho-0165",
@@ -25817,14 +25963,15 @@
         68,
         87
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1045"
     },
     {
       "id": "joelho-0166",
@@ -25833,14 +25980,15 @@
         16,
         82
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1046"
     },
     {
       "id": "joelho-0167",
@@ -25848,7 +25996,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25863,7 +26011,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25878,7 +26026,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -25894,7 +26042,7 @@
         82,
         86
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25909,7 +26057,7 @@
       "s": [
         82
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25924,7 +26072,7 @@
       "s": [
         82
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25939,7 +26087,7 @@
       "s": [
         83
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25954,7 +26102,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25969,7 +26117,7 @@
       "s": [
         84
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25982,7 +26130,7 @@
       "id": "joelho-0176",
       "t": 3,
       "s": [],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -25997,7 +26145,7 @@
       "s": [
         4
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26012,7 +26160,7 @@
       "s": [
         68
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26087,7 +26235,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26102,7 +26250,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26117,7 +26265,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -26147,7 +26295,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -26223,7 +26371,7 @@
       "id": "joelho-0192",
       "t": 3,
       "s": [],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26238,7 +26386,7 @@
       "s": [
         82
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26251,7 +26399,7 @@
       "id": "joelho-0194",
       "t": 3,
       "s": [],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26267,7 +26415,7 @@
         29,
         85
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26282,7 +26430,7 @@
       "s": [
         84
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -26297,7 +26445,7 @@
       "s": [
         84
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26312,14 +26460,15 @@
       "s": [
         87
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
-      "c": 0,
-      "cia": 0,
-      "cc": 0
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "dup": "trauma-1027"
     },
     {
       "id": "joelho-0199",
@@ -26328,14 +26477,15 @@
         38,
         87
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0200"
     },
     {
       "id": "joelho-0200",
@@ -26343,14 +26493,15 @@
       "s": [
         86
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1028"
     },
     {
       "id": "joelho-0201",
@@ -26358,14 +26509,15 @@
       "s": [
         84
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1029"
     },
     {
       "id": "joelho-0202",
@@ -26374,14 +26526,15 @@
         86,
         4
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1030"
     },
     {
       "id": "joelho-0203",
@@ -26389,14 +26542,15 @@
       "s": [
         28
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1031"
     },
     {
       "id": "joelho-0204",
@@ -26405,14 +26559,15 @@
         82,
         86
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1032"
     },
     {
       "id": "joelho-0205",
@@ -26420,14 +26575,15 @@
       "s": [
         83
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1034"
     },
     {
       "id": "joelho-0206",
@@ -26435,14 +26591,15 @@
       "s": [
         91
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1035"
     },
     {
       "id": "joelho-0207",
@@ -26547,7 +26704,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0392"
     },
     {
       "id": "joelho-0214",
@@ -26690,7 +26848,7 @@
         82,
         86
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26705,7 +26863,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26720,7 +26878,7 @@
       "s": [
         84
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26735,7 +26893,7 @@
       "s": [
         91
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26750,7 +26908,7 @@
       "s": [
         82
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26765,7 +26923,7 @@
       "s": [
         86
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26780,7 +26938,7 @@
       "s": [
         69
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26795,7 +26953,7 @@
       "s": [
         83
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26810,7 +26968,7 @@
       "s": [
         82
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26823,7 +26981,7 @@
       "id": "joelho-0232",
       "t": 3,
       "s": [],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26836,7 +26994,7 @@
       "id": "joelho-0233",
       "t": 3,
       "s": [],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26851,7 +27009,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -26866,7 +27024,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -26881,7 +27039,7 @@
       "s": [
         4
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26897,7 +27055,7 @@
         68,
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26912,7 +27070,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -26928,7 +27086,7 @@
         95,
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26943,7 +27101,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -26958,7 +27116,7 @@
       "s": [
         85
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26973,7 +27131,7 @@
       "s": [
         89
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -26988,7 +27146,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 1,
@@ -27003,7 +27161,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -27018,7 +27176,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -27033,14 +27191,15 @@
       "s": [
         4
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0148"
     },
     {
       "id": "joelho-0247",
@@ -27048,7 +27207,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -27079,7 +27238,7 @@
         82,
         4
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -27094,7 +27253,7 @@
       "s": [
         82
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -27124,7 +27283,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -27139,7 +27298,7 @@
       "s": [
         82
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -27154,7 +27313,7 @@
       "s": [
         83
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -27169,14 +27328,15 @@
       "s": [
         83
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0254"
     },
     {
       "id": "joelho-0256",
@@ -27184,7 +27344,7 @@
       "s": [
         87
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -27200,20 +27360,21 @@
         29,
         85
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0161"
     },
     {
       "id": "joelho-0258",
       "t": 3,
       "s": [],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -27228,7 +27389,7 @@
       "s": [
         83
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -27243,7 +27404,7 @@
       "s": [
         16
       ],
-      "p": null,
+      "p": 0,
       "a": null,
       "d": null,
       "img": 0,
@@ -27256,14 +27417,15 @@
       "id": "joelho-0261",
       "t": 3,
       "s": [],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2026,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1018"
     },
     {
       "id": "joelho-0262",
@@ -27271,14 +27433,15 @@
       "s": [
         83
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2026,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1020"
     },
     {
       "id": "joelho-0263",
@@ -27286,14 +27449,15 @@
       "s": [
         68
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2026,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1021"
     },
     {
       "id": "joelho-0264",
@@ -27301,14 +27465,15 @@
       "s": [
         16
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2026,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1022"
     },
     {
       "id": "joelho-0265",
@@ -27316,14 +27481,15 @@
       "s": [
         16
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2026,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1023"
     },
     {
       "id": "joelho-0266",
@@ -27331,14 +27497,15 @@
       "s": [
         4
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2026,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1024"
     },
     {
       "id": "joelho-0267",
@@ -27346,14 +27513,15 @@
       "s": [
         16
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2026,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1026"
     },
     {
       "id": "joelho-0268",
@@ -27362,14 +27530,15 @@
         96,
         89
       ],
-      "p": null,
-      "a": null,
+      "p": 1,
+      "a": 2026,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0306"
     },
     {
       "id": "joelho-0269",
@@ -27535,7 +27704,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0274"
     },
     {
       "id": "coluna-0003",
@@ -27566,7 +27736,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0004"
     },
     {
       "id": "coluna-0005",
@@ -28781,7 +28952,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0036"
     },
     {
       "id": "coluna-0085",
@@ -28826,7 +28998,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0278"
     },
     {
       "id": "coluna-0088",
@@ -28947,7 +29120,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0037"
     },
     {
       "id": "coluna-0096",
@@ -29204,14 +29378,15 @@
         111,
         36
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0137"
     },
     {
       "id": "coluna-0113",
@@ -29527,7 +29702,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0201"
     },
     {
       "id": "coluna-0135",
@@ -30105,7 +30281,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0275"
     },
     {
       "id": "coluna-0177",
@@ -30191,14 +30368,15 @@
         100,
         114
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0204"
     },
     {
       "id": "coluna-0184",
@@ -30223,14 +30401,15 @@
         16,
         115
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0288"
     },
     {
       "id": "coluna-0187",
@@ -30848,14 +31027,15 @@
         100,
         67
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0382"
     },
     {
       "id": "coluna-0233",
@@ -31432,7 +31612,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0036"
     },
     {
       "id": "coluna-0277",
@@ -31477,7 +31658,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0085"
     },
     {
       "id": "coluna-0280",
@@ -32026,7 +32208,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0292"
     },
     {
       "id": "pe-tornozelo-0002",
@@ -32041,7 +32224,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0288"
     },
     {
       "id": "pe-tornozelo-0003",
@@ -32056,7 +32240,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0294"
     },
     {
       "id": "pe-tornozelo-0004",
@@ -32781,7 +32966,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0295"
     },
     {
       "id": "pe-tornozelo-0052",
@@ -32932,7 +33118,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0289"
     },
     {
       "id": "pe-tornozelo-0062",
@@ -33326,7 +33513,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0300"
     },
     {
       "id": "pe-tornozelo-0088",
@@ -33494,7 +33682,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0158"
     },
     {
       "id": "pe-tornozelo-0099",
@@ -33586,7 +33775,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0062"
     },
     {
       "id": "pe-tornozelo-0105",
@@ -33601,7 +33791,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0296"
     },
     {
       "id": "pe-tornozelo-0106",
@@ -33616,7 +33807,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0300"
     },
     {
       "id": "pe-tornozelo-0107",
@@ -33691,7 +33883,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0290"
     },
     {
       "id": "pe-tornozelo-0112",
@@ -33706,7 +33899,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0293"
     },
     {
       "id": "pe-tornozelo-0113",
@@ -33736,7 +33930,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0299"
     },
     {
       "id": "pe-tornozelo-0115",
@@ -33751,7 +33946,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0297"
     },
     {
       "id": "pe-tornozelo-0116",
@@ -33986,14 +34182,15 @@
         28,
         81
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0191"
     },
     {
       "id": "pe-tornozelo-0132",
@@ -34003,14 +34200,15 @@
         133,
         99
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0193"
     },
     {
       "id": "pe-tornozelo-0133",
@@ -34831,7 +35029,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0147"
     },
     {
       "id": "pe-tornozelo-0187",
@@ -34892,7 +35091,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0150"
     },
     {
       "id": "pe-tornozelo-0191",
@@ -34997,7 +35197,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0286"
     },
     {
       "id": "pe-tornozelo-0199",
@@ -35013,7 +35214,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0288"
     },
     {
       "id": "pe-tornozelo-0200",
@@ -35068,14 +35270,15 @@
         67,
         99
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0282"
     },
     {
       "id": "pe-tornozelo-0204",
@@ -35482,7 +35685,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0185"
     },
     {
       "id": "pe-tornozelo-0231",
@@ -35765,14 +35969,15 @@
         26,
         132
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0799"
     },
     {
       "id": "pe-tornozelo-0250",
@@ -35797,14 +36002,15 @@
         28,
         81
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0388"
     },
     {
       "id": "pe-tornozelo-0252",
@@ -36316,7 +36522,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0197"
     },
     {
       "id": "pe-tornozelo-0286",
@@ -36344,9 +36551,10 @@
       "d": null,
       "img": 1,
       "an": 0,
-      "c": 0,
-      "cia": 0,
-      "cc": 0
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "dup": "pediatria-0268"
     },
     {
       "id": "pe-tornozelo-0288",
@@ -36966,7 +37174,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0640"
     },
     {
       "id": "trauma-0004",
@@ -36981,7 +37190,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0653"
     },
     {
       "id": "trauma-0005",
@@ -37011,7 +37221,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0917"
     },
     {
       "id": "trauma-0007",
@@ -37237,7 +37448,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0008"
     },
     {
       "id": "trauma-0022",
@@ -37447,7 +37659,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0931"
     },
     {
       "id": "trauma-0036",
@@ -37657,7 +37870,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0890"
     },
     {
       "id": "trauma-0050",
@@ -38212,7 +38426,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0929"
     },
     {
       "id": "trauma-0087",
@@ -38423,7 +38638,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0934"
     },
     {
       "id": "trauma-0101",
@@ -38575,7 +38791,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0052"
     },
     {
       "id": "trauma-0111",
@@ -38605,7 +38822,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0342"
     },
     {
       "id": "trauma-0113",
@@ -38923,7 +39141,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0053"
     },
     {
       "id": "trauma-0134",
@@ -39105,7 +39324,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0928"
     },
     {
       "id": "trauma-0146",
@@ -39135,7 +39355,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0345"
     },
     {
       "id": "trauma-0148",
@@ -39255,7 +39476,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0339"
     },
     {
       "id": "trauma-0156",
@@ -39830,7 +40052,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0935"
     },
     {
       "id": "trauma-0199",
@@ -39950,7 +40173,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0171"
     },
     {
       "id": "trauma-0208",
@@ -39965,7 +40189,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0172"
     },
     {
       "id": "trauma-0209",
@@ -40304,14 +40529,15 @@
       "s": [
         140
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2022,
       "d": null,
       "img": 0,
-      "an": 0,
-      "c": 1,
-      "cia": 1,
-      "cc": 0
+      "an": 1,
+      "c": 0,
+      "cia": 0,
+      "cc": 0,
+      "dup": "trauma-1064"
     },
     {
       "id": "trauma-0234",
@@ -40507,7 +40733,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0844"
     },
     {
       "id": "trauma-0247",
@@ -40539,7 +40766,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0116"
     },
     {
       "id": "trauma-0249",
@@ -41146,7 +41374,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0075"
     },
     {
       "id": "trauma-0292",
@@ -41269,7 +41498,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0086"
     },
     {
       "id": "trauma-0300",
@@ -41347,7 +41577,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0096"
     },
     {
       "id": "trauma-0305",
@@ -41392,7 +41623,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0950"
     },
     {
       "id": "trauma-0308",
@@ -41408,7 +41640,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0384"
     },
     {
       "id": "trauma-0309",
@@ -41425,7 +41658,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0053"
     },
     {
       "id": "trauma-0310",
@@ -41455,7 +41689,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0893"
     },
     {
       "id": "trauma-0312",
@@ -41470,7 +41705,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0963"
     },
     {
       "id": "trauma-0313",
@@ -42836,14 +43072,15 @@
         77,
         27
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0136"
     },
     {
       "id": "trauma-0418",
@@ -42977,14 +43214,15 @@
       "s": [
         83
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-1050"
     },
     {
       "id": "trauma-0427",
@@ -43214,7 +43452,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0308"
     },
     {
       "id": "trauma-0792",
@@ -43255,14 +43494,15 @@
         27,
         118
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0264"
     },
     {
       "id": "trauma-0795",
@@ -43323,7 +43563,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0247"
     },
     {
       "id": "trauma-0799",
@@ -43824,7 +44065,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0844"
     },
     {
       "id": "trauma-0832",
@@ -43839,7 +44081,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0845"
     },
     {
       "id": "trauma-0833",
@@ -43989,7 +44232,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0830"
     },
     {
       "id": "trauma-0843",
@@ -44049,7 +44293,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0833"
     },
     {
       "id": "trauma-0847",
@@ -44064,7 +44309,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0834"
     },
     {
       "id": "trauma-0848",
@@ -44079,7 +44325,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0836"
     },
     {
       "id": "trauma-0849",
@@ -44094,7 +44341,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0837"
     },
     {
       "id": "trauma-0850",
@@ -44954,7 +45202,8 @@
       "an": 0,
       "c": 0,
       "cia": 0,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0239"
     },
     {
       "id": "trauma-0907",
@@ -45180,7 +45429,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0643"
     },
     {
       "id": "trauma-0922",
@@ -45240,7 +45490,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0647"
     },
     {
       "id": "trauma-0926",
@@ -45270,7 +45521,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0649"
     },
     {
       "id": "trauma-0928",
@@ -45347,7 +45599,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0326"
     },
     {
       "id": "trauma-0933",
@@ -45362,7 +45615,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0656"
     },
     {
       "id": "trauma-0934",
@@ -45469,7 +45723,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0095"
     },
     {
       "id": "trauma-0941",
@@ -45484,7 +45739,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0339"
     },
     {
       "id": "trauma-0942",
@@ -45500,7 +45756,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0384"
     },
     {
       "id": "trauma-0943",
@@ -45530,7 +45787,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0893"
     },
     {
       "id": "trauma-0945",
@@ -45545,7 +45803,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0342"
     },
     {
       "id": "trauma-0946",
@@ -45560,7 +45819,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0337"
     },
     {
       "id": "trauma-0947",
@@ -45575,7 +45835,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0345"
     },
     {
       "id": "trauma-0948",
@@ -45650,7 +45911,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0053"
     },
     {
       "id": "trauma-0953",
@@ -45665,7 +45927,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0340"
     },
     {
       "id": "trauma-0954",
@@ -45695,7 +45958,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0314"
     },
     {
       "id": "trauma-0956",
@@ -45725,7 +45989,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0343"
     },
     {
       "id": "trauma-0958",
@@ -45740,7 +46005,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0338"
     },
     {
       "id": "trauma-0959",
@@ -45800,7 +46066,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0392"
     },
     {
       "id": "trauma-0963",
@@ -46230,14 +46497,15 @@
         33,
         39
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2026,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0569"
     },
     {
       "id": "trauma-0992",
@@ -46246,14 +46514,15 @@
         33,
         39
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2026,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0570"
     },
     {
       "id": "trauma-0993",
@@ -46482,7 +46751,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0196"
     },
     {
       "id": "trauma-0450",
@@ -46724,7 +46994,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0194"
     },
     {
       "id": "trauma-0466",
@@ -46754,7 +47025,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0195"
     },
     {
       "id": "trauma-0468",
@@ -46769,7 +47041,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0196"
     },
     {
       "id": "trauma-0469",
@@ -47280,7 +47553,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0279"
     },
     {
       "id": "trauma-0509",
@@ -47311,7 +47585,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0280"
     },
     {
       "id": "trauma-0511",
@@ -47806,7 +48081,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0137"
     },
     {
       "id": "trauma-0546",
@@ -47882,7 +48158,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0298"
     },
     {
       "id": "trauma-0551",
@@ -48035,7 +48312,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0140"
     },
     {
       "id": "trauma-0561",
@@ -48050,7 +48328,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0142"
     },
     {
       "id": "trauma-0562",
@@ -48216,7 +48495,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0127"
     },
     {
       "id": "trauma-0575",
@@ -48997,7 +49277,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0923"
     },
     {
       "id": "trauma-0646",
@@ -49132,7 +49413,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0930"
     },
     {
       "id": "trauma-0655",
@@ -49222,7 +49504,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0938"
     },
     {
       "id": "trauma-0661",
@@ -51110,7 +51393,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0304"
     },
     {
       "id": "trauma-0790",
@@ -51126,7 +51410,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0305"
     },
     {
       "id": "trauma-1000",
@@ -52010,7 +52295,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0142"
     },
     {
       "id": "trauma-1058",
@@ -52319,7 +52605,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0101"
     },
     {
       "id": "trauma-1078",
@@ -52862,7 +53149,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0455"
     },
     {
       "id": "pediatria-0005",
@@ -53119,7 +53407,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0006"
     },
     {
       "id": "pediatria-0022",
@@ -53855,7 +54144,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0029"
     },
     {
       "id": "pediatria-0071",
@@ -54185,7 +54475,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0548"
     },
     {
       "id": "pediatria-0093",
@@ -54373,14 +54664,15 @@
       "s": [
         170
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2021,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0036"
     },
     {
       "id": "pediatria-0106",
@@ -54965,7 +55257,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0062"
     },
     {
       "id": "pediatria-0145",
@@ -55195,7 +55488,8 @@
       "an": 0,
       "c": 0,
       "cia": 0,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0473"
     },
     {
       "id": "pediatria-0160",
@@ -55255,7 +55549,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0081"
     },
     {
       "id": "pediatria-0164",
@@ -55270,7 +55565,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0478"
     },
     {
       "id": "pediatria-0165",
@@ -55300,7 +55596,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0482"
     },
     {
       "id": "pediatria-0167",
@@ -55330,7 +55627,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0453"
     },
     {
       "id": "pediatria-0169",
@@ -55375,7 +55673,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0467"
     },
     {
       "id": "pediatria-0172",
@@ -55480,7 +55779,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0298"
     },
     {
       "id": "pediatria-0179",
@@ -55495,7 +55795,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0488"
     },
     {
       "id": "pediatria-0180",
@@ -55510,7 +55811,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0476"
     },
     {
       "id": "pediatria-0181",
@@ -55525,7 +55827,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0485"
     },
     {
       "id": "pediatria-0182",
@@ -55540,7 +55843,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0471"
     },
     {
       "id": "pediatria-0183",
@@ -56003,7 +56307,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0166"
     },
     {
       "id": "pediatria-0213",
@@ -56438,7 +56743,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0300"
     },
     {
       "id": "pediatria-0242",
@@ -56484,7 +56790,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0176"
     },
     {
       "id": "pediatria-0245",
@@ -56605,7 +56912,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0243"
     },
     {
       "id": "pediatria-0253",
@@ -56622,7 +56930,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0307"
     },
     {
       "id": "pediatria-0254",
@@ -56792,7 +57101,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0456"
     },
     {
       "id": "pediatria-0266",
@@ -56807,7 +57117,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0417"
     },
     {
       "id": "pediatria-0267",
@@ -56823,7 +57134,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0458"
     },
     {
       "id": "pediatria-0268",
@@ -56853,7 +57165,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0461"
     },
     {
       "id": "pediatria-0270",
@@ -56868,7 +57181,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0462"
     },
     {
       "id": "pediatria-0271",
@@ -56883,7 +57197,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0466"
     },
     {
       "id": "pediatria-0272",
@@ -57298,7 +57613,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0164"
     },
     {
       "id": "pediatria-0299",
@@ -57539,7 +57855,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0204"
     },
     {
       "id": "pediatria-0315",
@@ -57583,9 +57900,10 @@
       "d": null,
       "img": 0,
       "an": 0,
-      "c": 0,
-      "cia": 0,
-      "cc": 0
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "dup": "coluna-0210"
     },
     {
       "id": "pediatria-0318",
@@ -57918,7 +58236,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "osteometabolicas-0053"
     },
     {
       "id": "pediatria-0340",
@@ -58282,7 +58601,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0195"
     },
     {
       "id": "pediatria-0364",
@@ -58676,9 +58996,10 @@
       "d": null,
       "img": 0,
       "an": 0,
-      "c": 0,
-      "cia": 0,
-      "cc": 0
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "dup": "pediatria-0407"
     },
     {
       "id": "pediatria-0390",
@@ -58965,7 +59286,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0390"
     },
     {
       "id": "pediatria-0409",
@@ -59010,7 +59332,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0264"
     },
     {
       "id": "pediatria-0412",
@@ -59205,7 +59528,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0454"
     },
     {
       "id": "pediatria-0425",
@@ -59343,7 +59667,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0261"
     },
     {
       "id": "pediatria-0434",
@@ -59630,7 +59955,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0264"
     },
     {
       "id": "pediatria-0453",
@@ -59705,7 +60031,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0417"
     },
     {
       "id": "pediatria-0458",
@@ -59750,7 +60077,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0099"
     },
     {
       "id": "pediatria-0461",
@@ -59795,7 +60123,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0018"
     },
     {
       "id": "pediatria-0464",
@@ -59810,7 +60139,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0003"
     },
     {
       "id": "pediatria-0465",
@@ -59870,7 +60200,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0097"
     },
     {
       "id": "pediatria-0469",
@@ -59885,7 +60216,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0175"
     },
     {
       "id": "pediatria-0470",
@@ -59900,7 +60232,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0006"
     },
     {
       "id": "pediatria-0471",
@@ -59930,7 +60263,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0059"
     },
     {
       "id": "pediatria-0473",
@@ -59975,7 +60309,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0165"
     },
     {
       "id": "pediatria-0476",
@@ -60035,7 +60370,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0162"
     },
     {
       "id": "pediatria-0480",
@@ -60050,7 +60386,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0081"
     },
     {
       "id": "pediatria-0481",
@@ -60065,7 +60402,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0160"
     },
     {
       "id": "pediatria-0482",
@@ -60110,7 +60448,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0062"
     },
     {
       "id": "pediatria-0485",
@@ -60155,7 +60494,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0161"
     },
     {
       "id": "pediatria-0488",
@@ -63958,14 +64298,15 @@
         100,
         105
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2021,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0019"
     },
     {
       "id": "tumores-0031",
@@ -64615,7 +64956,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0072"
     },
     {
       "id": "tumores-0074",
@@ -65325,7 +65667,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0062"
     },
     {
       "id": "tumores-0121",
@@ -65532,14 +65875,15 @@
         27,
         180
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0302"
     },
     {
       "id": "tumores-0135",
@@ -67114,7 +67458,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0223"
     },
     {
       "id": "tumores-0239",
@@ -67538,7 +67883,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0459"
     },
     {
       "id": "tumores-0267",
@@ -67976,7 +68322,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0270"
     },
     {
       "id": "tumores-0296",
@@ -68055,7 +68402,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0198"
     },
     {
       "id": "tumores-0301",
@@ -68070,7 +68418,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0070"
     },
     {
       "id": "tumores-0302",
@@ -68093,14 +68442,15 @@
       "s": [
         36
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0136"
     },
     {
       "id": "tumores-0304",
@@ -68115,7 +68465,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0118"
     },
     {
       "id": "tumores-0305",
@@ -68145,7 +68496,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0062"
     },
     {
       "id": "tumores-0307",
@@ -68160,7 +68512,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0130"
     },
     {
       "id": "tumores-0308",
@@ -68506,7 +68859,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0243"
     },
     {
       "id": "conceitos-basicos-0005",
@@ -68734,7 +69088,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pe-tornozelo-0016"
     },
     {
       "id": "conceitos-basicos-0020",
@@ -69784,7 +70139,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0067"
     },
     {
       "id": "conceitos-basicos-0091",
@@ -70065,14 +70421,15 @@
         17,
         27
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0189"
     },
     {
       "id": "conceitos-basicos-0115",
@@ -70114,14 +70471,15 @@
         158,
         136
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2023,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0423"
     },
     {
       "id": "conceitos-basicos-0118",
@@ -70197,7 +70555,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0451"
     },
     {
       "id": "conceitos-basicos-0123",
@@ -70550,7 +70909,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0157"
     },
     {
       "id": "conceitos-basicos-0147",
@@ -70626,7 +70986,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0576"
     },
     {
       "id": "conceitos-basicos-0152",
@@ -70657,7 +71018,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0602"
     },
     {
       "id": "conceitos-basicos-0159",
@@ -70688,7 +71050,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0619"
     },
     {
       "id": "conceitos-basicos-0161",
@@ -70803,14 +71166,15 @@
         175,
         27
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0275"
     },
     {
       "id": "conceitos-basicos-0169",
@@ -70895,14 +71259,15 @@
         29,
         175
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2024,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0286"
     },
     {
       "id": "conceitos-basicos-0175",
@@ -70948,7 +71313,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0211"
     },
     {
       "id": "conceitos-basicos-0178",
@@ -71130,7 +71496,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "joelho-0191"
     },
     {
       "id": "conceitos-basicos-0190",
@@ -71161,7 +71528,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0340"
     },
     {
       "id": "conceitos-basicos-0192",
@@ -71260,14 +71628,15 @@
         171,
         176
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2025,
       "d": null,
       "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0381"
     },
     {
       "id": "conceitos-basicos-0199",
@@ -71360,7 +71729,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0466"
     },
     {
       "id": "conceitos-basicos-0205",
@@ -71510,7 +71880,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0132"
     },
     {
       "id": "conceitos-basicos-0215",
@@ -71572,7 +71943,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0276"
     },
     {
       "id": "conceitos-basicos-0219",
@@ -71589,7 +71961,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0168"
     },
     {
       "id": "conceitos-basicos-0220",
@@ -71604,7 +71977,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0213"
     },
     {
       "id": "conceitos-basicos-0221",
@@ -71619,7 +71993,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0132"
     },
     {
       "id": "conceitos-basicos-0222",
@@ -71634,7 +72009,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0215"
     },
     {
       "id": "conceitos-basicos-0223",
@@ -71649,7 +72025,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0205"
     },
     {
       "id": "conceitos-basicos-0224",
@@ -71800,7 +72177,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0438"
     },
     {
       "id": "conceitos-basicos-0234",
@@ -71892,7 +72270,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0272"
     },
     {
       "id": "conceitos-basicos-0240",
@@ -71937,7 +72316,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0001"
     },
     {
       "id": "conceitos-basicos-0243",
@@ -71967,7 +72347,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0163"
     },
     {
       "id": "conceitos-basicos-0245",
@@ -71982,7 +72363,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0094"
     },
     {
       "id": "conceitos-basicos-0246",
@@ -71997,7 +72379,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0164"
     },
     {
       "id": "conceitos-basicos-0247",
@@ -72012,7 +72395,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0165"
     },
     {
       "id": "conceitos-basicos-0248",
@@ -72028,7 +72412,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0064"
     },
     {
       "id": "conceitos-basicos-0249",
@@ -72077,7 +72462,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "osteometabolicas-0070"
     },
     {
       "id": "conceitos-basicos-0252",
@@ -72093,7 +72479,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0095"
     },
     {
       "id": "conceitos-basicos-0253",
@@ -72153,7 +72540,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0255"
     },
     {
       "id": "conceitos-basicos-0257",
@@ -72183,7 +72571,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0044"
     },
     {
       "id": "conceitos-basicos-0259",
@@ -72198,7 +72587,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0093"
     },
     {
       "id": "conceitos-basicos-0260",
@@ -72206,14 +72596,15 @@
       "s": [
         38
       ],
-      "p": 0,
-      "a": null,
+      "p": 1,
+      "a": 2026,
       "d": null,
       "img": 0,
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "conceitos-basicos-0277"
     },
     {
       "id": "conceitos-basicos-0261",
@@ -72762,7 +73153,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "tumores-0057"
     },
     {
       "id": "osteometabolicas-0015",
@@ -72892,7 +73284,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "ombro-cotovelo-0093"
     },
     {
       "id": "osteometabolicas-0024",
@@ -72907,7 +73300,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "pediatria-0155"
     },
     {
       "id": "osteometabolicas-0025",
@@ -72967,7 +73361,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "osteometabolicas-0016"
     },
     {
       "id": "osteometabolicas-0029",
@@ -73232,7 +73627,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0172"
     },
     {
       "id": "osteometabolicas-0047",
@@ -73308,7 +73704,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "trauma-0754"
     },
     {
       "id": "osteometabolicas-0052",
@@ -73381,7 +73778,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "coluna-0230"
     },
     {
       "id": "osteometabolicas-0057",
@@ -73426,7 +73824,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0454"
     },
     {
       "id": "osteometabolicas-0060",
@@ -73456,7 +73855,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "quadril-0199"
     },
     {
       "id": "osteometabolicas-0062",
@@ -73568,7 +73968,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "osteometabolicas-0031"
     },
     {
       "id": "osteometabolicas-0070",
@@ -73615,7 +74016,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "mao-0142"
     },
     {
       "id": "osteometabolicas-0073",
@@ -73645,7 +74047,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "osteometabolicas-0026"
     },
     {
       "id": "osteometabolicas-0075",
@@ -73673,7 +74076,8 @@
       "an": 0,
       "c": 1,
       "cia": 1,
-      "cc": 0
+      "cc": 0,
+      "dup": "osteometabolicas-0027"
     },
     {
       "id": "osteometabolicas-0077",

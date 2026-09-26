@@ -139,6 +139,8 @@ function aplicaUm(
   contexto: ContextoLocal,
   ignorar?: ChaveFaceta,
 ): boolean {
+  // Cópias duplicadas continuam no índice para o histórico, mas nunca são sorteadas nem contadas.
+  if (item.dup) return false
   if (!filtros.incluirAnuladas && item.an === 1) return false
 
   // Assunto é uma árvore: marcar um tema significa "o tema inteiro" e marcar

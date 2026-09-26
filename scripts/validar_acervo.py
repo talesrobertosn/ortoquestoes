@@ -141,6 +141,8 @@ def principal() -> int:
     # Alimentam a conferência dos comentários, logo adiante.
     gabaritos: dict[str, str | None] = {}
     letras_da_questao: dict[str, set[str]] = {}
+    # cópia -> questão mantida (campo duplicataDe)
+    duplicatas: dict[str, str] = {}
 
     arquivos = sorted(DIR_TEMAS.glob("*.json"))
     if not arquivos:
@@ -189,6 +191,9 @@ def principal() -> int:
                     f"{onde}: gabarito '{gabarito}' não existe entre as alternativas {letras}"
                 )
 
+            if questao.get("duplicataDe"):
+                duplicatas[identificador] = questao["duplicataDe"]
+
             for subtema in questao.get("subtemas") or []:
                 if subtema not in subtemas_validos:
                     erros.append(f"{onde}: subtema fora da taxonomia: '{subtema}'")
@@ -224,6 +229,14 @@ def principal() -> int:
             if not questao.get("revisado"):
                 avisos.append(f"{onde}: ainda não revisada por humano")
 
+    for copia, mantida in duplicatas.items():
+        if mantida not in gabaritos:
+            erros.append(f"{copia}: duplicataDe aponta para '{mantida}', que não existe")
+        elif mantida in duplicatas:
+            erros.append(f"{copia}: duplicataDe aponta para '{mantida}', que também é cópia")
+        elif gabaritos.get(copia) != gabaritos.get(mantida):
+            avisos.append(f"{copia}: gabarito diferente da questão mantida ({mantida})")
+
     erros_ia, avisos_ia, total_comentarios = conferir_comentarios(
         gabaritos, letras_da_questao
     )
@@ -233,10 +246,10 @@ def principal() -> int:
     indice = ler_json(CAMINHO_INDICE, None)
     if indice is None:
         erros.append("indice.json não existe. Rode scripts/gerar_indice.py")
-    elif indice.get("total") != total:
+    elif indice.get("total") != total - len(duplicatas):
         erros.append(
             f"indice.json desatualizado: diz {indice.get('total')} questões, "
-            f"os temas somam {total}. Rode scripts/gerar_indice.py"
+            f"os temas somam {total - len(duplicatas)} (sem as cópias). Rode scripts/gerar_indice.py"
         )
     if indice is not None:
         # O índice é quem diz à interface que a questão tem comentário. Se ele
@@ -251,7 +264,7 @@ def principal() -> int:
             )
 
     print(
-        f"Acervo: {total} questões em {len(arquivos)} tema(s), "
+        f"Acervo: {total - len(duplicatas)} questões ({len(duplicatas)} cópias escondidas) em {len(arquivos)} tema(s), "
         f"{total_comentarios} com comentário de IA."
     )
 

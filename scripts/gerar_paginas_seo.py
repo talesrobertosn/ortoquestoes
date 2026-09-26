@@ -416,6 +416,8 @@ def principal() -> int:
             dict(q, tema_slug=slug)
             for q in dados["questoes"]
             if q["id"] in comentarios and not q.get("anulada") and not q.get("figuraPendente")
+            # cópia de outra questão: uma página só, a da questão mantida
+            and not q.get("duplicataDe")
         ]
         pasta = DIR_SAIDA / slug
         if pasta.exists():
@@ -439,7 +441,7 @@ def principal() -> int:
         corpo.append(f"<h1>{esc(titulo_pagina)} comentadas</h1>")
         corpo.append(f"<p>{esc(abertura)}</p>")
         corpo.append(
-            f'<p>O acervo tem <strong>{len(dados["questoes"])}</strong> questões de '
+            f'<p>O acervo tem <strong>{sum(1 for q in dados["questoes"] if not q.get("duplicataDe"))}</strong> questões de '
             f"{esc(tema['nome']).lower()}, e <strong>{len(publicaveis)}</strong> têm página própria "
             "com gabarito e conceito-chave. Abaixo, "
             f"{len(vitrine)} delas com o comentário completo e, no fim, a lista de todas.</p>"

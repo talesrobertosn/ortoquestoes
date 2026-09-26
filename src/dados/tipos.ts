@@ -75,6 +75,8 @@ export interface Questao {
   prova: TipoProva | null
   /** Etiqueta OrtoQuestões Simulados: questão elaborada no padrão da prova, soma-se a ela. */
   simulado?: boolean
+  /** cópia de outra questão do acervo: fica fora de sessões e contagens, mas o id continua válido para o histórico */
+  duplicataDe?: string
   ano: number | null
   dificuldade: Dificuldade | null
   enunciado: string
@@ -120,6 +122,8 @@ export interface ItemIndice {
   cc: 0 | 1
   /** OrtoQuestões Simulados (ausente nas demais) */
   sim?: 1
+  /** é cópia da questão com este id: não entra em sessões nem contagens */
+  dup?: string
 }
 
 /**

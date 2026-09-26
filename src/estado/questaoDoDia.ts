@@ -32,7 +32,7 @@ export async function escolherQuestaoDoDia(indice: Indice, dia = chaveDia()): Pr
   const s = semente('questao-do-dia:' + dia)
   const temas = embaralhado(indice.temas.map((_, i) => i), s)
   for (const t of temas.slice(0, 3)) {
-    const candidatas = new Set(indice.questoes.filter((q) => q.t === t && q.c === 1 && q.an === 0 && q.img === 0).map((q) => q.id))
+    const candidatas = new Set(indice.questoes.filter((q) => q.t === t && q.c === 1 && q.an === 0 && q.img === 0 && !q.dup).map((q) => q.id))
     if (!candidatas.size) continue
     const questoes = await carregarTema(indice.temas[t].slug)
     const validas = questoes.filter((q) => candidatas.has(q.id) && !q.figuraPendente && q.gabarito &&

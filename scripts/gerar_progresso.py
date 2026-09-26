@@ -40,21 +40,24 @@ def contar_no_disco() -> dict:
     """Conta o acervo como ele está agora, nos arquivos."""
     total = 0
     comunidade = 0
+    # Só as questões que contam: um comentário de cópia escondida não soma.
+    validas: set[str] = set()
     for caminho in sorted(DIR_TEMAS.glob("*.json")):
         dados = ler_json(caminho, {"questoes": []}) or {"questoes": []}
         for questao in dados.get("questoes", []):
             # Anuladas fora do denominador, como no resto do site: elas não
             # recebem comentário, e contá-las faria os 100% nunca chegarem.
-            if questao.get("anulada"):
+            if questao.get("anulada") or questao.get("duplicataDe"):
                 continue
             total += 1
+            validas.add(questao.get("id"))
             if questao.get("comentariosComunidade"):
                 comunidade += 1
 
     ia = 0
     if DIR_COMENTARIOS.is_dir():
         for caminho in sorted(DIR_COMENTARIOS.glob("*.json")):
-            ia += len(ler_json(caminho, {}) or {})
+            ia += sum(1 for chave in (ler_json(caminho, {}) or {}) if chave in validas)
 
     return {"total": total, "ia": ia, "comunidade": comunidade}
 
@@ -103,7 +106,7 @@ def _contar_no_commit(sha: str, cache_temas: dict) -> dict:
         for nome in _arquivos_da_arvore(sha, REL_TEMAS):
             dados = _json_da_arvore(sha, f"{REL_TEMAS}/{nome}")
             for questao in (dados or {}).get("questoes", []):
-                if questao.get("anulada"):
+                if questao.get("anulada") or questao.get("duplicataDe"):
                     continue
                 total += 1
                 if questao.get("comentariosComunidade"):

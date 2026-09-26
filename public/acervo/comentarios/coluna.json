@@ -11,12 +11,12 @@
     "conferido": false
   },
   "coluna-0002": {
-    "conceito": "### Glúteo médio e L5\n- **Nervo glúteo superior**, formado por **L4, L5 e S1**, com ==L5 dominante==.\n- **Lesão de L5:**\n  - fraqueza da **abdução do quadril**, com marcha de **Trendelenburg**;\n  - fraqueza do **extensor longo do hálux**, o achado mais sensível;\n  - em lesões mais graves, pé caído.\n- Útil para diferenciar **radiculopatia L5** de **lesão do fibular comum**:\n  - no fibular, a abdução do quadril e a **inversão** (tibial posterior, L5 pelo nervo tibial) estão **preservadas**;\n  - na radiculopatia L5, estão **fracas**.\n\n### Mapa motor lombossacro\n| Raiz | Movimento-chave | Reflexo |\n|---|---|---|\n| L2-L3 | flexão do quadril, adução | nenhum |\n| L3-L4 | extensão do joelho | patelar (L4) |\n| L4 | dorsiflexão do tornozelo (tibial anterior) | patelar |\n| ==L5== | ==extensão do hálux, abdução do quadril== | (tibial posterior, pouco confiável) |\n| S1 | flexão plantar, eversão, glúteo máximo | aquileu |\n\n> **Na prova:** glúteo médio fraco = ==L5==.",
-    "correta": "**L5.**\n- Raiz dominante do nervo glúteo superior.",
+    "conceito": "### Glúteo médio e L5\n- **Nervo:** glúteo superior (L4, L5, S1), com ==predomínio de L5==.\n- **Função:** principal **abdutor** do quadril e **estabilizador da pelve** no apoio unipodal.\n- **Déficit:** **Trendelenburg**, marcha em báscula. Por isso a radiculopatia L5 pode dar Trendelenburg, não só pé caído.\n\n### Diferenciar L5 do nervo fibular (pé caído)\n| | Radiculopatia L5 | Nervo fibular |\n|---|---|---|\n| Dorsiflexão / hálux | fraca | fraca |\n| **Inversão** (tibial posterior, L5 via tibial) | ==fraca== | **preservada** |\n| **Abdução do quadril** (glúteo médio) | ==fraca== | preservada |\n| Dor lombar ou ciatalgia | sim | não |\n\n### Miótomos\n| Raiz | Motor | Reflexo |\n|---|---|---|\n| L3 | flexão do quadril, extensão do joelho | patelar (parcial) |\n| L4 | quadríceps, **tibial anterior** | **patelar** |\n| ==L5== | ==glúteo médio==, **extensor longo do hálux**, tibial anterior | nenhum |\n| S1 | **tríceps sural**, glúteo máximo, fibulares | **aquileu** |\n\n> **Na prova:** glúteo médio = ==L5==.",
+    "correta": "**L5.**",
     "incorretas": {
       "A": "**L3.**\n- Flexão do quadril e extensão do joelho.",
-      "B": "**L4.**\n- Dorsiflexão do tornozelo e reflexo patelar.",
-      "D": "**S1.**\n- Flexão plantar, glúteo máximo e reflexo aquileu."
+      "B": "**L4.**\n- Contribui, mas o miótomo característico é o **quadríceps / tibial anterior**, com o **patelar**.",
+      "D": "**S1.**\n- Tríceps sural, **glúteo máximo** e aquileu."
     },
     "geradoEm": "2026-09-23",
     "conferido": false
@@ -33,12 +33,12 @@
     "conferido": false
   },
   "coluna-0004": {
-    "conceito": "### Charcot-Marie-Tooth (CMT)\nNeuropatia **hereditária sensitivomotora**, com acometimento **distal** e progressivo.\n\n### Achados ortopédicos\n- ==Atrofia da panturrilha== e da musculatura intrínseca: perna em \"**garrafa de champanhe invertida**\".\n- **Pé cavo** (cavovaro / \"equinocavo\"):\n  - o **fibular longo** (mais forte) flete plantarmente o 1º raio;\n  - o **tibial anterior** e o **fibular curto** (mais fracos) falham;\n  - avalie a flexibilidade do retropé com o **teste de Coleman**.\n- **Escoliose:** presente em parcela relevante dos pacientes, geralmente ==leve==, às vezes com padrão **atípico** (curva torácica à esquerda, componente cifótico). Raramente precisa de cirurgia.\n- **Displasia do quadril:** é outra associação a pesquisar.\n\n### Diferenciais\n- **Pseudo-hipertrofia da panturrilha:** distrofia de **Duchenne/Becker**.\n- **Pé plano valgo:** paralisia cerebral (diplegia), coalizão tarsal, entre outros.\n\n> **Na prova:** CMT = escoliose ==leve== + ==panturrilha atrófica== + ==pé cavo==.",
+    "conceito": "### Charcot-Marie-Tooth (neuropatia sensitivo-motora hereditária)\n- **Padrão:** neuropatia **distal** e **simétrica** (CMT1A: duplicação do PMP22, desmielinizante).\n\n### Pé cavovaro\nÉ um desequilíbrio muscular:\n| Fraco | Forte |\n|---|---|\n| **tibial anterior** | **fibular longo**, que plantiflete o 1º raio |\n| **fibular curto** | **tibial posterior**, que inverte e aduz |\n| intrínsecos (garra dos dedos) | extrínsecos |\n\n**Sequência:** 1º raio plantifletido, antepé **pronado**, retropé **varo** (inicialmente flexível), depois rígido.\n\n### Teste de Coleman\nBloco sob a borda lateral com o 1º raio livre:\n- **se o varo corrige**, o retropé é **flexível** e a cirurgia fica no **antepé** (osteotomia do 1º metatarso, transferência do fibular longo para o curto, fáscia plantar);\n- **se não corrige**, soma-se osteotomia do **calcâneo**.\n\n### Outros achados\n- **Atrofia distal:** \"garrafa de champanhe invertida\" (perna de cegonha).\n- **Mãos intrínsecas.**\n- **Displasia do quadril** (vale rastrear).\n- **Escoliose:** em parte dos pacientes, geralmente ==leve==.\n\n> **Na prova:** CMT = escoliose ==leve==, ==atrofia== da panturrilha e pé ==equinocavo== (cavovaro).",
     "correta": "**Escoliose leve, atrofia da panturrilha e pé equinocavo.**",
     "incorretas": {
-      "B": "**Grave e pé planovalgo.**\n- A escoliose costuma ser leve, e o pé é **cavo**.",
-      "C": "**Hipertrofia da panturrilha.**\n- Pseudo-hipertrofia é da **Duchenne**.",
-      "D": "**Grave e hipertrofia.**\n- O pé está certo, mas a escoliose é leve e a panturrilha é **atrófica**."
+      "B": "**Grave, atrofia e planovalgo.**\n- O pé é **cavo**, e a escoliose costuma ser leve.",
+      "C": "**Leve, hipertrofia e planovalgo.**\n- **Pseudo-hipertrofia** é da **Duchenne**.\n- O pé também está errado.",
+      "D": "**Grave, hipertrofia e equinocavo.**\n- Acerta só o pé."
     },
     "geradoEm": "2026-09-23",
     "conferido": false
@@ -1020,11 +1020,11 @@
     "conferido": false
   },
   "coluna-0087": {
-    "conceito": "### Espondilolistese de alto grau no adolescente\nO corpo tenta compensar o desabamento lombossacro:\n- **Pelve:** ==retroverte==. O PT aumenta, e o sacro fica **vertical**.\n- **Quadris e joelhos:** em **flexão**.\n- **Marcha:** agachada, com passos curtos. É a **marcha de Phalen-Dickson**.\n- **Tronco:** encurtado, com **prega abdominal transversa**.\n- **Coluna:** **degrau palpável** nos processos espinhosos e hiperlordose **acima** do escorregamento.\n- **Isquiotibiais:** muito **retraídos** (\"tightness\"), com Lasègue limitado **bilateral**. Isso contribui para a postura.\n- **Radiculopatia** de L5 e, raramente, síndrome da cauda equina.\n\n### Tratamento\n**Artrodese** (L4-S1 in situ, ou com redução parcial nas pelves desequilibradas). A retração dos isquiotibiais melhora após a estabilização.\n\n> **Na prova:** alto grau no adolescente = ==retroversão pélvica==, isquiotibiais **retraídos**, quadris e joelhos fletidos.",
+    "conceito": "### Espondilolistese de alto grau no adolescente\n**Contexto:** geralmente **ístmica / displásica** em **L5-S1**, com Meyerding **III ou mais** e **cifose lombossacra** (ângulo de deslizamento aumentado).\n\n### Pelve\n- A pelve ==gira para trás (retroversão)== para compensar o desequilíbrio sagital: **pelve vertical**.\n- **Parâmetros:** PT (versão pélvica) aumentado, SS (inclinação sacral) diminuída. A **IP** (incidência pélvica) é **alta** (fator predisponente).\n\n### Postura e exame\n- **Isquiotibiais encurtados** (retesados): pouca flexão do tronco, **SLR limitado**. É frequentemente o que leva à consulta.\n- **Quadris e joelhos fletidos:** **marcha agachada** (\"crouch\"), passos curtos.\n- **Tronco encurtado**, com **prega abdominal** transversa.\n- **Degrau palpável** nos espinhosos (L5 fica \"atrás\", pois o arco não escorrega).\n- **Nádegas planas** e sacro vertical.\n- **Radiculopatia L5** possível.\n\n### Tratamento\nAlto grau é **cirúrgico**: artrodese L4 (ou L5) a S1, com ou sem redução.\n\n> **Na prova:** espondilolistese grave do adolescente = ==retroversão pélvica==, com isquiotibiais **encurtados** e quadris e joelhos **fletidos**.",
     "correta": "**Aumento da retroversão pélvica.**",
     "incorretas": {
-      "B": "**Isquiotibiais alongados.**\n- Estão **retraídos**.",
-      "C": "**Extensão do quadril.**\n- Os quadris ficam em **flexão**.",
+      "B": "**Alongamento dos isquiotibiais.**\n- É o contrário: **encurtamento**.",
+      "C": "**Extensão do quadril.**\n- O quadril fica **fletido** (marcha agachada).",
       "D": "**Pé calcâneo.**\n- Não faz parte do quadro."
     },
     "geradoEm": "2026-09-23",
@@ -1356,13 +1356,16 @@
     "conferido": false
   },
   "coluna-0112": {
-    "conceito": "### Classificação de Tomita (tumores vertebrais)\n**Intracompartimental:**\n| Tipo | Extensão |\n|---|---|\n| 1 | só o **corpo** |\n| 2 | corpo + **pedículo** |\n| 3 | corpo + pedículo + **lâmina / espinhoso** |\n\n**Extracompartimental:**\n| Tipo | Extensão |\n|---|---|\n| ==4== | ==extensão epidural== |\n| 5 | extensão **paravertebral** |\n| 6 | acometimento da **vértebra adjacente** |\n\n**Múltiplo:**\n| Tipo | Extensão |\n|---|---|\n| 7 | lesões **múltiplas / salteadas** |\n\n### Aplicação\n- Orienta a **espondilectomia total em bloco** (TES):\n  - tipos 2 a 5: bons candidatos;\n  - tipo 6: relativo;\n  - tipo 7: geralmente contraindicado.\n- Complementa o **escore de Tomita**, que soma crescimento do tumor, metástases viscerais e ósseas para definir o objetivo: curativo ou paliativo.\n\n### Outros sistemas\n- **WBB** (Weinstein-Boriani-Biagini): setores em \"relógio\" + camadas, para planejar a ressecção.\n- **Enneking:** estadiamento de tumores primários.\n- **SINS:** instabilidade por metástase.\n- **NOMS:** decisão terapêutica nas metástases.\n\n> **Na prova:** Tomita **4** = extracompartimental ==epidural==.",
-    "correta": "**Tipo 4.**",
+    "conceito": "### A classificação de Tomita\nDescreve a extensão do tumor **vertebral** em sete tipos, do centro do corpo vertebral para fora.\n\n**Intracompartimentais** (dentro do osso)\n- **Tipo 1:** só o corpo vertebral.\n- **Tipo 2:** estende ao **pedículo**.\n- **Tipo 3:** estende à **lâmina**.\n\n**Extracompartimentais** (o tumor rompeu o osso)\n- ==Tipo 4: extensão epidural==, para dentro do canal.\n- **Tipo 5:** extensão **paravertebral**, para as partes moles.\n- **Tipo 6:** acomete **vértebras adjacentes**.\n\n**Múltiplo**\n- **Tipo 7:** lesões salteadas ou múltiplas.\n\n### Para que serve\nOrienta a **espondilectomia total em bloco**, técnica de Tomita: aplica-se melhor aos tipos intermediários, com planejamento cuidadoso nos extracompartimentais. Os tipos 6 e 7 tornam a intenção curativa difícil.\n\n### Não confundir\n- **Tomita:** extensão, para planejar ressecção.\n- **SINS:** instabilidade.\n- **WBB:** mapa da vértebra em setores e camadas.\n\n> **Na prova:** Tomita extracompartimental começa no ==4 (epidural)==; o 5 é paravertebral.",
+    "correta": "**Tipo 4.**\n- É o primeiro tipo extracompartimental: extensão **epidural**, para o canal.",
     "incorretas": {
-      "A": "**Tipo 3.**\n- Intracompartimental (até lâmina e espinhoso).",
-      "C": "**Tipo 5.**\n- Extensão **paravertebral**.",
-      "D": "**Tipo 6.**\n- Vértebra **adjacente**."
+      "A": "**Ainda dentro do osso.**\n- O tipo 3 chega à lâmina, mas continua intracompartimental.",
+      "C": "**Paravertebral.**\n- O tipo 5 é a extensão para as partes moles **fora** da vértebra, não para o canal.",
+      "D": "**Vértebras adjacentes.**\n- O tipo 6 é o acometimento de mais de uma vértebra."
     },
+    "referencias": [
+      "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 3.6"
+    ],
     "geradoEm": "2026-09-23",
     "conferido": false
   },
@@ -1595,15 +1598,20 @@
     "conferido": false
   },
   "coluna-0134": {
-    "conceito": "### SICK scapula (Burkhart)\nDiscinesia escapular do **arremessador**:\n- **S**capular malposition: escápula mal posicionada (mais baixa, protraída);\n- **I**nferior medial border prominence: proeminência da borda inferomedial;\n- **C**oracoid pain: dor no coracoide (encurtamento do **peitoral menor**);\n- dys**K**inesis: discinesia do movimento escapular.\n\n### Tipos de discinesia (Kibler)\n| Tipo | Proeminência | Fraqueza associada |\n|---|---|---|\n| I | **ângulo inferomedial** | serrátil anterior, trapézio inferior |\n| ==II== | ==toda a borda medial== | ==romboides, trapézio== (médio / superior e inferior) |\n| III | **ângulo superomedial** (elevação) | trapézio superior hiperativo, levantador |\n| IV | simétrica, normal | nenhuma |\n\n### Tratamento\n**Reabilitação escapular:** fortalecer o serrátil, o trapézio e os romboides, e alongar o peitoral menor. A cirurgia é raramente necessária.\n\n> **Na prova:** SICK tipo II = ==borda medial==, fraqueza de ==romboide e trapézio==.",
-    "correta": "**Romboide, trapézio superior e inferior; proeminência da borda medial.**",
+    "conceito": "Discinesia escapular é alteração da posição ou do movimento da escápula durante a elevação do braço. No atleta arremessador, ela pode reduzir a rotação superior e a inclinação posterior, alterar a orientação da glenoide e aumentar a carga sobre manguito e lábio. O acrônimo **SICK** resume Scapular malposition, Inferior medial border prominence, Coracoid pain and malposition e dysKinesis. Na classificação visual de Kibler, o **tipo I** apresenta proeminência do ângulo inferior e rotação anormal no eixo transversal; o **tipo II** apresenta proeminência de toda a borda medial, por rotação anormal em torno de um eixo vertical; o **tipo III** mostra elevação excessiva da borda superior e translação superior; e o tipo IV é movimento simétrico normal. O tipo II se associa a déficit dos estabilizadores que controlam retração e rotação escapular, particularmente romboides e porções média, superior e inferior do trapézio. A avaliação deve observar repouso e elevação/descida repetida dos braços; testes de assistência e retração escapular verificam se corrigir manualmente a posição reduz os sintomas.",
+    "correta": "A alternativa D está correta. O tipo II é reconhecido pela proeminência de toda a borda medial da escápula, e não apenas do ângulo inferomedial. Esse padrão reflete perda de controle da rotação no eixo vertical e pode relacionar-se à fraqueza dos romboides e das porções superior e inferior do trapézio. No arremessador, o achado importa porque a escápula funciona como base para a glenoide; se não estabiliza e gira adequadamente, o úmero e o manguito trabalham em posição menos favorável.",
     "incorretas": {
-      "A": "**Serrátil e trapézio inferior, inferomedial.**\n- Descreve o **tipo I**.",
-      "B": "**Serrátil e trapézio inferior, borda medial.**\n- A borda medial é do tipo II, mas os músculos atribuídos são os **romboides** e o trapézio.",
-      "C": "**Romboide e trapézio, inferomedial.**\n- Os músculos estão certos, mas a proeminência inferomedial é do **tipo I**."
+      "A": "Fraqueza do serrátil anterior e trapézio inferior pode contribuir para alteração da rotação superior, mas a **proeminência inferomedial** descreve o padrão tipo I, não o tipo II. A armadilha é trocar o ângulo inferior por toda a borda medial.",
+      "B": "A descrição morfológica da borda medial é compatível com o tipo II, porém o conjunto muscular apresentado não é o previsto pelo gabarito da classificação usada. O serrátil anterior é crucial para manter a escápula aplicada ao tórax e sua paralisia causa alamento medial clássico; no tipo II funcional do arremessador, a questão enfatiza romboides e trapézio.",
+      "C": "Os músculos citados correspondem ao grupo esperado, mas a proeminência restrita ao ângulo inferomedial caracteriza o tipo I. No tipo II, a alteração visível percorre a borda medial inteira, refletindo rotação em torno do eixo vertical."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "referencias": [
+      "Scapulothoracic Dyskinesis: A Concept Review. https://pmc.ncbi.nlm.nih.gov/articles/PMC8137745/",
+      "A comprehensive review of scapulothoracic abnormal motion: evaluation and classification. https://pmc.ncbi.nlm.nih.gov/articles/PMC11448755/",
+      "Common Conditions in the Overhead Athlete. American Family Physician. https://www.aafp.org/pubs/afp/issues/2014/0401/p537.html"
+    ],
+    "conferido": false,
+    "geradoEm": "2026-09-13"
   },
   "coluna-0135": {
     "conceito": "### Reflexos profundos por raiz\n| Raiz | Reflexo |\n|---|---|\n| C5 | bicipital |\n| C6 | braquiorradial (estilorradial) |\n| C7 | tricipital |\n| ==C8== | ==nenhum== |\n| T1 | nenhum |\n| L4 | patelar |\n| L5 | nenhum confiável (tibial posterior, inconstante) |\n| S1 | aquileu |\n\n### Como diagnosticar C8, então\n- **Sensibilidade:** face medial da mão, anular e **mínimo**.\n- **Força:** **flexores profundos** dos dedos (prensão) e **intrínsecos**.\n- **Imagem:** disco ou forame **C7-T1**.\n\n### Sobre as alternativas\n\"Estiloulnar\" não é um reflexo usado na propedêutica. O **reflexo flexor dos dedos** (Trömner/Hoffmann) avalia neurônio motor superior, não C8 como raiz.\n\n> **Na prova:** C8 ==não tem reflexo== próprio.",
@@ -2060,12 +2068,12 @@
     "conferido": false
   },
   "coluna-0176": {
-    "conceito": "### Como medir o ângulo de Cobb\n1. Identificar as **vértebras terminais**: as **mais inclinadas** em cada extremidade da curva.\n2. Traçar uma linha na ==superfície superior da vértebra terminal superior==.\n3. Traçar outra na ==superfície inferior da vértebra terminal inferior==.\n4. Medir o ângulo entre as duas linhas, ou entre as suas **perpendiculares** (o resultado é o mesmo).\n\nSe os platôs forem mal visíveis, use a borda superior ou inferior dos **pedículos**.\n\n### Erro de medida\n- Cerca de **±5°** entre observadores.\n- **Progressão real:** aumento de **5° a 7°** ou mais, idealmente usando as **mesmas vértebras terminais**.\n\n### Referências\n| Cobb | Significado |\n|---|---|\n| abaixo de 10° | assimetria espinhal, não é escoliose |\n| 10° ou mais | **escoliose** |\n| 25° a 45° com crescimento | colete |\n| acima de 45° a 50° | cirurgia |\n\n> **Na prova:** Cobb = ==superfície superior da terminal superior + superfície inferior da terminal inferior==.",
-    "correta": "**Superfície superior da terminal superior e superfície inferior da terminal inferior.**",
+    "conceito": "### Ângulo de Cobb\n1. **Identificar as vértebras extremas:** as **mais inclinadas** em relação à horizontal, nos limites da curva.\n2. **Traçar:**\n   - o platô ==superior da vértebra extrema superior==;\n   - o platô ==inferior da vértebra extrema inferior==.\n   - Isto é, as superfícies voltadas **para fora** da curva.\n3. **Medir:** o ângulo entre essas linhas, ou entre suas perpendiculares (mesmo valor).\n\n### Detalhes\n- **Erro de medida** interobservador de ~**5°**. Por isso, **progressão** exige aumento acima de 5°.\n- **Escoliose:** Cobb de **10° ou mais**, com rotação.\n- Usar os pedículos quando os platôs não são visíveis.\n\n### Vértebras de referência\n- **Apical:** a mais **rodada** e deslocada, menos inclinada. Serve para descrever o ápice e a **rotação** (**Nash-Moe**, pedículos).\n- **Extremas (limítrofes):** as mais inclinadas; usadas para o **Cobb**.\n- **Neutra**, **estável** (bissectada pela **CSVL**): usadas no planejamento da artrodese.\n\n> **Na prova:** Cobb = ==platô superior da extrema superior + platô inferior da extrema inferior==.",
+    "correta": "**Superfície superior da vértebra extrema superior e superfície inferior da vértebra extrema inferior.**",
     "incorretas": {
-      "A": "**Superfícies invertidas.**\n- Subestima o ângulo.",
-      "C": "**Superfícies da apical.**\n- A apical é a mais rodada; não serve ao Cobb.",
-      "D": "**Pedículos da apical e prumo de C7.**\n- Pedículos da apical = **Nash-Moe**; prumo de C7 = **equilíbrio**."
+      "A": "**Superfícies internas.**\n- Inverte; subestima a curva.",
+      "C": "**Superfícies da apical.**\n- A apical serve para a **rotação**, não para o Cobb.",
+      "D": "**Pedículos da apical e fio de prumo de C7.**\n- Pedículos: **Nash-Moe** (rotação).\n- Prumo de C7: **equilíbrio** coronal ou sagital."
     },
     "geradoEm": "2026-09-23",
     "conferido": false
@@ -2141,13 +2149,16 @@
     "conferido": false
   },
   "coluna-0182": {
-    "conceito": "### Escoliose dolorosa no adolescente: pensar em tumor\nA escoliose **idiopática** não costuma doer muito. Com **dor noturna** que alivia com **AINE**, o principal suspeito é o ==osteoma osteoide== (e o **osteoblastoma**, se maior que ~1,5 a 2 cm).\n\n### Osteoma osteoide na coluna\n- **Local:** **elementos posteriores** (pedículo, lâmina, faceta), frequentemente no **lado côncavo** e perto do **ápice**.\n- **Mecanismo:** o espasmo muscular antálgico gera uma curva **curta, rígida**, sem a rotação típica. É uma escoliose **não estrutural** no início.\n- **Imagem:**\n  - radiografia muitas vezes normal;\n  - **cintilografia:** hipercaptação focal intensa;\n  - **TC:** mostra o **nidus** (a melhor);\n  - RM: edema extenso, que pode confundir.\n- **Tratamento:** **ressecção** do nidus ou **ablação por radiofrequência** guiada por TC (atenção à distância das estruturas neurais). A curva costuma **regredir** se feito cedo, antes de a curva estruturar (em geral, em até ~15 meses).\n\n### Outras causas de escoliose dolorosa\nEspondilólise, hérnia discal juvenil, infecção, **tumor intramedular**, siringomielia.\n\n> **Na prova:** escoliose dolorosa no adolescente = ==osteoma osteoide==.",
-    "correta": "**Osteoma osteoide.**",
+    "conceito": "### A escoliose idiopática não dói\nEssa frase transforma a dor numa **bandeira vermelha**. Diante de escoliose **dolorosa** no adolescente, a causa mais comum é o ==osteoma osteoide== (e, menos, o osteoblastoma), nos **elementos posteriores**.\n\n### O mecanismo\n**Espasmo antálgico** assimétrico: o paciente se inclina para o lado oposto, e a lesão fica na **concavidade** da curva.\n\n### Pistas\n- **Dor noturna** que melhora muito com anti-inflamatório.\n- Curva de instalação **rápida**, **rígida**, sem rotação vertebral proporcional.\n\n### Diagnóstico\n- **Tomografia** com cortes finos mostra o **nicho** (menos de 1,5 cm).\n- A radiografia costuma não vê-lo; a ressonância mostra edema que pode confundir.\n\n### Tratamento\nTratada cedo (ablação ou ressecção), a curva **regride**. Tratada tarde, estrutura-se.\n\n### Outros diferenciais de escoliose dolorosa\nInfecção, cisto aneurismático, **tumor medular**, siringomielia, hérnia de disco.\n\n> **Na prova:** escoliose dolorosa no adolescente é ==osteoma osteoide== até prova em contrário.",
+    "correta": "**Osteoma osteoide.**\n- É a causa mais comum de escoliose dolorosa no adolescente.",
     "incorretas": {
-      "A": "**Espondilodiscite.**\n- Dói, mas com sintomas sistêmicos; não é a causa mais comum de escoliose dolorosa.",
-      "B": "**Neurofibromatose.**\n- Distrófica e progressiva, mas não caracteristicamente dolorosa.",
-      "D": "**Dismetria.**\n- Escoliose postural, **indolor**, que some ao compensar a discrepância."
+      "A": "**Outro quadro.**\n- A espondilodiscite dá dor e rigidez, mas com febre, provas inflamatórias altas e destruição do disco.",
+      "B": "**Indolor.**\n- A escoliose da neurofibromatose costuma não doer.",
+      "D": "**Compensatória e indolor.**\n- A dismetria dá escoliose flexível, que corrige ao sentar ou ao igualar os membros."
     },
+    "referencias": [
+      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 44"
+    ],
     "geradoEm": "2026-09-23",
     "conferido": false
   },
@@ -2167,18 +2178,14 @@
     "conferido": false
   },
   "coluna-0186": {
-    "conceito": "### Nervo acessório (XI par)\n- **Trajeto:** sai do crânio pelo **forame jugular** e passa sob ou através do **esternocleidomastóideo**, perto do **processo mastoide**, como na figura. Emerge na **borda posterior** do ECM (ponto de Erb, no terço médio), cruza o **triângulo posterior** do pescoço, **superficial**, e chega ao **trapézio**.\n- **Inerva:** o **esternocleidomastóideo** e o **trapézio**.\n\n### Relevância\n- **Lesão iatrogênica** no triângulo posterior (biópsia de linfonodo, esvaziamento cervical): paralisia do trapézio, com **ombro caído**, dor, dificuldade de abdução acima de 90°, **escápula alada lateral** discreta.\n- **Torcicolo congênito** (fibrose do ECM): na **liberação cirúrgica** do ECM, sobretudo na porção **proximal** (mastoide), o XI e o nervo auricular magno estão em risco.\n\n### Os outros\n- **Troclear (IV):** oblíquo superior do olho.\n- **Trigêmeo (V):** face e mastigação.\n- **Hipoglosso (XII):** língua; cruza a carótida, alto.\n\n> **Na prova:** nervo junto ao ECM, perto do mastoide = ==acessório== (XI).",
-    "correta": "**Acessório.**",
+    "conceito": "### Torcicolo muscular congênito\n- Fibrose do ==esternocleidomastoideo== (ECM): cabeça inclinada para o lado afetado e queixo para o oposto.\n- Associação com ==DDQ== (examinar quadris), metatarso aduto, parto difícil.\n- ==Tumoração== (pseudotumor) no ECM nas primeiras semanas, que regride.\n\n### Tratamento\n- Alongamento e posicionamento: resolve a maioria (> 90%) se iniciado antes de 1 ano.\n- Cirurgia (tenotomia uni ou bipolar): após 1 ano sem resposta, déficit > 15° persistente.\n\n### Fatores de pior prognóstico do conservador\n| Fator |\n|---|\n| ==fibrose do ECM== (no US; ==terço distal== segundo a fonte da prova) |\n| déficit de rotação > 30° |\n| início do tratamento após 1 ano |\n| ECM todo acometido |\n\n### Diferenciais\n- Klippel-Feil, subluxação atlantoaxial, estrabismo (torcicolo ocular), tumor de fossa posterior, Sandifer (refluxo).\n\n### Pontos cobrados\n- Cabeça ==inclina para o lado do ECM encurtado== e roda para o oposto.\n- Causa ==indolor== mais comum de torcicolo na criança: o ==muscular congênito==.\n- Deformidade evidente nas ==primeiras semanas==; nódulo ao ==1 mês==, regride em meses.\n\n### Anatomia do ECM\n- Origens: manúbrio e terço medial da clavícula; inserção no ==processo mastoide==.\n- Inervação motora: ==nervo acessório (XI)==, que cruza o ECM e segue pelo triângulo posterior até o trapézio.\n- Lesão iatrogênica do XI (biópsia de linfonodo no triângulo posterior): ombro caído, escápula alada lateral.\n\n| Nervo | Função |\n|---|---|\n| troclear (IV) | oblíquo superior do olho |\n| trigêmeo (V) | sensibilidade da face, mastigação |\n| ==acessório (XI)== | ==ECM e trapézio== |\n| hipoglosso (XII) | língua |\n\n> **Na prova:** nervo que inerva o ECM = ==acessório (XI)==",
+    "correta": "**Acessório (XI).**\n- Inerva ECM e trapézio.\n- Atravessa o triângulo posterior do pescoço.",
     "incorretas": {
-      "A": "**Troclear.**\n- Músculo oblíquo superior do olho; não passa no pescoço.",
+      "A": "**Troclear.**\n- Oblíquo superior do olho.",
       "B": "**Trigêmeo.**\n- Face e mastigação.",
-      "D": "**Hipoglosso.**\n- Língua; cruza a região carotídea alta."
+      "D": "**Hipoglosso.**\n- Musculatura da língua."
     },
-    "referencias": [
-      "Gray's Anatomy. Cranial nerve XI and posterior triangle of the neck.",
-      "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
-    ],
-    "geradoEm": "2026-09-23",
+    "geradoEm": "2026-09-24",
     "conferido": false
   },
   "coluna-0187": {
@@ -2665,14 +2672,17 @@
     "conferido": false
   },
   "coluna-0232": {
-    "conceito": "### Incluir a pelve na artrodese neuromuscular?\nDuas perguntas:\n1. **O paciente deambula?**\n   - **Sim:** **evitar** a pelve, porque a mobilidade lombossacra é necessária para a marcha. Na **Duchenne** e em alguns deambuladores, pode-se parar em **L5**.\n   - ==Não== (cadeirante): a pelve pode ser incluída.\n2. **Há obliquidade pélvica significativa?**\n   - ==Acima de ~15°== (muitos autores usam 10° a 15°): **incluir a pelve**. É o que permite nivelar o assento, distribuir a pressão (evitando **úlcera** isquiática) e sustentar a correção acima.\n\n### Técnicas de fixação pélvica\n- **Galveston** (hastes no ilíaco, a clássica).\n- **Parafusos ilíacos.**\n- **S2AI** (S2-alar-ilíaco): perfil baixo, menos proeminência.\n- **Hastes Unit Rod.**\n\n### Cuidados na escoliose neuromuscular\n- **Preparo:** avaliação **respiratória** (capacidade vital), **nutricional** e **cardíaca** (Duchenne), controle de **convulsões**.\n- **Intraoperatório:** sangramento (ácido tranexâmico).\n- **Pós-operatório:** infecção (maior risco), complicações pulmonares.\n\n> **Na prova:** incluir a pelve = ==não deambulador + obliquidade acima de 15°==.",
-    "correta": "**Não deambuladores com obliquidade acima de 15°.**",
+    "conceito": "### Escoliose neuromuscular\n- Curvas longas em C, toracolombares, com ==obliquidade pélvica==; progridem após a maturidade.\n- Colete não impede progressão; ajuda sentar.\n\n### Quando incluir a pelve\n| Situação | Extensão da artrodese |\n|---|---|\n| ==não deambulador== com ==obliquidade > 15°== | ==T2 até a pelve== (ilíaco, S2AI) |\n| deambulador | ==preservar a pelve== (fixar a pelve prejudica a marcha); até L5 |\n| obliquidade pequena, L5 horizontal | pode parar em L5 |\n\n### Indicações gerais\n- Curva > 40 a 50°, dificuldade para sentar, capacidade pulmonar em queda.\n- Riscos: infecção, sangramento, complicações respiratórias.\n\n> **Na prova:** incluir a pelve = ==não deambulador com obliquidade > 15°==",
+    "correta": "**Não deambulador, obliquidade > 15°.**\n- Equilibra a pelve para sentar.\n- Fixação até o ilíaco.",
     "incorretas": {
-      "A": "**Deambuladores com obliquidade acima de 10°.**\n- No deambulador, a fusão pélvica compromete a marcha.",
-      "B": "**Deambuladores com qualquer obliquidade.**\n- Mesma objeção, sem limiar.",
-      "D": "**Não deambuladores com qualquer obliquidade.**\n- Obliquidade pequena não justifica a morbidade."
+      "A": "**Deambulador.**\n- Fixar a pelve prejudica a marcha.",
+      "B": "**Deambulador.**\n- Pelve preservada.",
+      "D": "**Qualquer obliquidade.**\n- Limite de cerca de 15°."
     },
-    "geradoEm": "2026-09-23",
+    "referencias": [
+      "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 4.9"
+    ],
+    "geradoEm": "2026-09-24",
     "conferido": false
   },
   "coluna-0233": {
@@ -3150,12 +3160,12 @@
     "conferido": false
   },
   "coluna-0279": {
-    "conceito": "### Tubérculo carotídeo (de Chassaignac)\n- **O que é:** o **tubérculo anterior** do processo transverso de ==C6==, o mais proeminente e palpável da cervical.\n- **Usos:**\n  - **localizar C6** no acesso anterior (Smith-Robinson), antes da radioscopia;\n  - **compressão da carótida** comum contra ele;\n  - reparo para o **bloqueio do gânglio estrelado** e para o bloqueio **interescalênico**.\n- **Relações:** a **artéria vertebral** costuma entrar no forame transverso em **C6**.\n\n### Referências superficiais do pescoço\n| Estrutura | Nível |\n|---|---|\n| Ângulo da mandíbula | C2-C3 |\n| **Hioide** | **C3** |\n| **Cartilagem tireoide** | **C4-C5** |\n| ==Cricoide + tubérculo carotídeo== | ==C6== |\n| Espinhoso proeminente | C7 |\n\n> **Na prova:** tubérculo carotídeo = ==C6== (mesmo nível da cricoide).",
+    "conceito": "### Tubérculo carotídeo (de Chassaignac)\n- **O que é:** o **tubérculo anterior** do processo transverso de ==C6==, o mais proeminente da cervical.\n- **Onde se palpa:** profundamente, na borda **medial** do esternocleidomastóideo, na altura da **cartilagem cricoide**.\n- **Usos:**\n  - referência de nível no **acesso anterior** à cervical: a incisão na altura da cricoide e do tubérculo expõe **C5-C6 / C6**;\n  - ponto de compressão da **carótida** comum contra o osso;\n  - referência para **bloqueio do gânglio estrelado** e do plexo braquial interescalênico.\n- **Artéria vertebral:** entra no **forame transverso de C6** na maioria das pessoas e sobe por dentro dos forames até C1.\n\n### Marcos de superfície para o acesso anterior\n| Estrutura | Nível |\n|---|---|\n| Ângulo da mandíbula | C2-C3 |\n| Osso hioide | C3 |\n| Cartilagem tireóidea | C4-C5 |\n| ==Cartilagem cricoide / tubérculo carotídeo== | ==C6== |\n\n> **Na prova:** tubérculo carotídeo = ==C6==.",
     "correta": "**C6.**",
     "incorretas": {
-      "A": "**C3.**\n- Nível do **hioide**.",
-      "B": "**C4.**\n- Nível da **cartilagem tireoide**.",
-      "C": "**C5.**\n- Borda inferior da tireoide; o tubérculo fica um nível abaixo."
+      "A": "**C3.**\n- Nível do hioide.",
+      "B": "**C4.**\n- Nível da cartilagem tireóidea (C4-C5).",
+      "C": "**C5.**\n- Logo acima; a proeminência palpável é a de C6."
     },
     "geradoEm": "2026-09-23",
     "conferido": false

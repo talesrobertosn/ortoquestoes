@@ -45,17 +45,13 @@
     "conferido": false
   },
   "pediatria-0004": {
-    "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n> **Na prova:** epifisiólise = ==menos anteversão e menor ângulo cervicodiafisário==.",
-    "correta": "**Menos anteversão, menor ângulo cervicodiafisário.**\n- Retroversão relativa e coxa vara aumentam o cisalhamento na fise.\n- Somam-se à obesidade e ao estirão.",
+    "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n### Biomecânica\n- ==Retroversão relativa== (menos anteversão) e ==colo mais varo== deixam a fise mais vertical.\n- Resultado: mais ==cisalhamento== sobre a fise; obesidade aumenta a carga.\n\n> **Na prova:** fatores biomecânicos = ==menos anteversão e menor ângulo cervicodiafisário==",
+    "correta": "**Menos anteversão, menor ângulo.**\n- Fise mais vertical.\n- Cisalhamento maior.",
     "incorretas": {
-      "A": "**Invertida.**\n- Não é a morfologia da epifisiólise.",
-      "B": "**Anteversão errada.**\n- Há retroversão relativa.",
-      "C": "**Ângulo errado.**\n- Tende à vara."
+      "A": "**Os dois aumentados.**\n- Protegeriam a fise.",
+      "B": "**Anteversão aumentada.**\n- Há retroversão relativa.",
+      "C": "**Ângulo aumentado.**\n- Colo fica mais varo."
     },
-    "referencias": [
-      "Three-dimensional analysis of the proximal femur in patients with slipped capital femoral epiphysis. J Pediatr Orthop. 2001. https://pubmed.ncbi.nlm.nih.gov/11242246/",
-      "Slipped Capital Femoral Epiphysis: Prevalence, Pathogenesis, and Natural History. https://pmc.ncbi.nlm.nih.gov/articles/PMC3492592/"
-    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
@@ -300,12 +296,12 @@
     "conferido": false
   },
   "pediatria-0021": {
-    "conceito": "### Osteotomia periacetabular de Berna (Ganz)\n| Indicação | Contraindicação |\n|---|---|\n| displasia ==sintomática== | artrose Tönnis ==≥ 2== |\n| ==CE lateral < 20°== (ou < 25° com sintomas) | incongruência grave |\n| ==Tönnis 0 ou 1== | fise trirradiada aberta |\n| articulação ==congruente== | |\n\n### Vantagens\n- Coluna posterior preservada: pelve estável, marcha precoce.\n- Grande correção multiplanar.\n- Canal de parto preservado.\n\n### Tönnis (artrose)\n| Grau | Achado |\n|---|---|\n| 0 | normal |\n| 1 | esclerose, discreta redução |\n| 2 | cistos pequenos, redução moderada |\n| 3 | cistos grandes, colapso |\n\n> **Na prova:** PAO de Berna = ==CE < 20° com Tönnis 0==.",
-    "correta": "**CE < 20°, Tönnis 0.**\n- Displasia verdadeira em articulação preservada.\n- Redirecionar o acetábulo protege a cartilagem.",
+    "conceito": "### Osteotomia periacetabular de Ganz (Berna)\n- Cortes ao redor do acetábulo que **preservam a coluna posterior**: a pelve continua estável e permite carga precoce.\n- Redireciona o acetábulo para cobrir melhor a cabeça (anterior e lateral), medializa o centro de rotação.\n- Oferece **cartilagem mais bem distribuída**, não cartilagem nova.\n\n### Indicações\n| Critério | Condição |\n|---|---|\n| cobertura | ==ângulo centro-borda de Wiberg menor que 20°== (displasia) |\n| artrose | ==Tönnis 0== (no máximo 1) |\n| congruência | articulação congruente (em abdução na radiografia) |\n| esqueleto | cartilagem trirradiada **fechada** |\n| idade | geralmente adolescentes e adultos jovens |\n\n### Classificação de Tönnis (artrose)\n- **0:** sem sinais.\n- **1:** esclerose, discreto estreitamento.\n- **2:** cistos pequenos, estreitamento moderado.\n- **3:** cistos grandes, estreitamento acentuado, deformidade da cabeça.\n- Com artrose grau 2 ou mais, a osteotomia rende pouco: o caminho é a **artroplastia**.\n\n> **Na prova:** Ganz = ==displasia (CE menor que 20°) sem artrose (Tönnis 0)==.",
+    "correta": "**Displasia verdadeira em articulação preservada.**\n- O ângulo centro-borda menor que 20° confirma a cobertura insuficiente que a osteotomia corrige.\n- Tönnis 0 garante cartilagem ainda boa para ser redistribuída.",
     "incorretas": {
-      "B": "**Sem displasia.**\n- CE > 20°.",
-      "C": "**Artrose instalada.**\n- Não devolve cartilagem.",
-      "D": "**Duplamente errada.**\n- Sem displasia e com artrose."
+      "B": "**Sem displasia a corrigir.**\n- Ângulo centro-borda acima de 20° (sobretudo acima de 25°) não caracteriza displasia.\n- Não há cobertura a redirecionar.",
+      "C": "**Artrose já instalada.**\n- O ângulo está certo.\n- Mas Tönnis 2 significa artrose estabelecida; redirecionar o acetábulo não devolve cartilagem.",
+      "D": "**Erra os dois critérios.**\n- Sem displasia e com artrose, a osteotomia não tem o que oferecer.\n- Nesse cenário a discussão é artroplastia."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -1022,16 +1018,13 @@
     "conferido": false
   },
   "pediatria-0070": {
-    "conceito": "### Crowe (displasia no adulto)\n| Tipo | Subluxação (altura da cabeça) |\n|---|---|\n| I | < 50% |\n| II | 50 a 75% |\n| III | 75 a 100% |\n| IV | > 100% (luxação alta) |\n\n### Artroplastia em Crowe III e IV\n- Acetábulo no ==centro de rotação verdadeiro== (pouco osso; cotilo pequeno, enxerto, medialização).\n- Fêmur estreito e anteversão excessiva: hastes modulares, ==osteotomia de encurtamento subtrocantérica==.\n\n### Complicação neurológica\n- ==Nervo isquiático== (sobretudo porção fibular): estiramento ao ==alongar mais de 3 a 4 cm== (ou > 6% do comprimento).\n- Prevenção: encurtamento femoral, monitorização, joelho fletido no pós.\n\n> **Na prova:** complicação neurológica na ATQ de Crowe III-IV = ==nervo isquiático==.",
-    "correta": "**Isquiático.**\n- Estiramento ao baixar o centro de rotação.\n- Alongamento acima de 3 a 4 cm: risco.",
+    "conceito": "### Crowe III e IV\n| Crowe | Subluxação (altura da cabeça) |\n|---|---|\n| I | menor que 50% |\n| II | 50–75% |\n| III | 75–100% |\n| IV | maior que 100% (luxação alta) |\n\n### O problema do alongamento\n- Reconstruir no **acetábulo verdadeiro** exige descer o fêmur vários centímetros.\n- O ==nervo isquiático== é a estrutura que menos tolera esse estiramento.\n- Dentro dele, a ==divisão fibular== é a mais vulnerável: mais fixa na incisura, menos tecido conjuntivo protetor, fascículos maiores.\n- Resultado: pé caído.\n\n### Prevenção\n- Limitar o **alongamento agudo** (em geral até cerca de 3–4 cm, ou menos que 6% do comprimento do fêmur).\n- **Osteotomia femoral de encurtamento** subtrocantérica quando a descida necessária é grande.\n- Testar a tensão do nervo com o **joelho fletido** e o quadril estendido ao final.\n- Monitorização neurofisiológica em casos selecionados.\n\n> **Na prova:** Crowe III/IV = lesão do ==isquiático (divisão fibular)== pelo alongamento.",
+    "correta": "**É o nervo estirado pelo descenso do fêmur.**\n- Levar a cabeça do acetábulo falso até o verdadeiro alonga o membro vários centímetros.\n- O isquiático, especialmente a divisão fibular, não tolera esse estiramento agudo.",
     "incorretas": {
-      "A": "**Via anterior.**\n- Menos comum aqui.",
-      "B": "**Tração na mesa.**\n- Não é a lesão típica.",
-      "C": "**Parafuso acetabular.**\n- Rara."
+      "A": "**Lesão por outro mecanismo.**\n- O femoral pode ser comprimido por afastador na borda anterior do acetábulo.\n- Não é a lesão típica do alongamento.",
+      "B": "**Lesão da mesa de tração.**\n- O pudendo sofre com o poste perineal da mesa ortopédica (artroscopia, fraturas).\n- Não é a complicação principal da artroplastia do displásico.",
+      "C": "**Risco em outra situação.**\n- O obturatório corre perigo na parede medial, com parafusos ou cimento intrapélvico.\n- Não é lesado pelo descenso do fêmur."
     },
-    "referencias": [
-      "Total hip arthroplasty in Crowe IV dysplasia. https://pmc.ncbi.nlm.nih.gov/articles/PMC8981668/"
-    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
@@ -1338,10 +1331,10 @@
   },
   "pediatria-0092": {
     "conceito": "### Escápula alada\n| Causa | Nervo | Músculo | Escápula |\n|---|---|---|---|\n| ==torácico longo== | C5 a C7 | ==serrátil anterior== | **medial** (ângulo inferior para medial) |\n| acessório espinal | XI par | trapézio | lateral, ombro caído |\n| dorsal da escápula | C5 | romboides | lateral, discreta |\n\n### Lesão do torácico longo\n- Tração (esportes, mochila), compressão, iatrogênica (mastectomia, drenagem torácica), Parsonage-Turner.\n- Observação por 12 a 24 meses (muitas recuperam).\n\n### Transferências na paralisia crônica\n| Paralisia | Transferência de escolha |\n|---|---|\n| ==serrátil (torácico longo)== | ==peitoral maior (cabeça esternal) ao ângulo inferior da escápula==, geralmente com enxerto de fáscia lata |\n| trapézio (acessório) | **Eden-Lange**: levantador da escápula e romboides lateralizados (ou trapézio inferior) |\n\n- Salvamento: **escapulotoracodese**.\n\n### Distrofia facioescapuloumeral\n- Autossômica dominante (4q35, DUX4); assimétrica, progressiva.\n- Acomete face, ==estabilizadores da escápula== (trapézio, romboides, serrátil, elevador) e úmero.\n- ==Deltoide preservado==.\n- Cirurgia: ==escapulotoracodese== (artrodese escapulotorácica): base estável para o deltoide, elevação de cerca de 60° para mais de 120°.\n\n> **Na prova:** músculo preservado na FSH = ==deltoide==",
-    "correta": "**Deltoide.**\n- Preservado enquanto os periescapulares falham.\n- Base da escapulotoracodese.",
+    "correta": "**Deltoide.**\n- Preservado enquanto os periescapulares falham.\n- Fundamenta a escapulotoracodese.",
     "incorretas": {
       "B": "**Acometido.**\n- Participa da escápula alada.",
-      "C": "**Acometido.**\n- Periescapular.",
+      "C": "**Acometidos.**\n- Periescapulares.",
       "D": "**Acometido.**\n- Periescapular."
     },
     "geradoEm": "2026-09-24",
@@ -1525,14 +1518,16 @@
   },
   "pediatria-0105": {
     "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n> **Na prova:** amioplasia = ombro ==aduzido e em RI==, cotovelo estendido, ==punho fletido==",
-    "correta": "**Rotação interna e punho fletido.**\n- Postura típica da amioplasia.\n- Cotovelo estendido.",
+    "correta": "**Rotação interna e punho fletido.**\n- Postura do \"policial pedindo gorjeta\".\n- Cotovelo estendido.",
     "incorretas": {
       "B": "**Rotação errada.**\n- É interna.",
       "C": "**Punho errado.**\n- Fletido.",
       "D": "**Duplamente errada.**\n- RE e punho estendido."
     },
     "referencias": [
-      "https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/"
+      "Arthrogryposis: A Review and Update. https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/",
+      "AMC: amyoplasia and distal arthrogryposis. https://pmc.ncbi.nlm.nih.gov/articles/PMC4661149/",
+      "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 8"
     ],
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -2086,14 +2081,14 @@
     "conferido": false
   },
   "pediatria-0144": {
-    "conceito": "### Síndrome de Grisel\n- Subluxação ==atlantoaxial rotatória== não traumática após ==infecção de vias aéreas superiores== ou cirurgia otorrinolaringológica (adenoide, amígdala).\n- Hiperemia e frouxidão ligamentar pela drenagem venosa faríngea.\n- Torcicolo doloroso em \"cock robin\" (inclina para um lado, roda para o outro).\n\n### Fielding e Hawkins\n| Tipo | Achado |\n|---|---|\n| 1 | rotatória ==sem translação== anterior (ligamento transverso íntegro) |\n| 2 | rotatória com translação ==anterior de 3 a 5 mm== |\n| 3 | rotatória com translação ==anterior > 5 mm== |\n| ==4== | rotatória com translação ==posterior== (odontoide deficiente) |\n\n### Tratamento\n| Duração | Conduta |\n|---|---|\n| < 1 semana | colar, anti-inflamatório, antibiótico |\n| 1 semana a 1 mês | tração cervical (halter), colar |\n| > 1 mês ou irredutível | halo; artrodese C1-C2 |\n\n- TC dinâmica (rotação para os dois lados) confirma a fixação.\n\n> **Na prova:** Fielding-Hawkins 4 = ==rotatória com translação posterior==.",
-    "correta": "**Tipo 4.**\n- Rotatória com translação posterior.\n- Definição correta da alternativa.",
+    "conceito": "### Síndrome de Grisel\n- **O que é:** subluxação rotatória **atlantoaxial não traumática**, após **infecção** de orofaringe ou pescoço (amigdalite, faringite, otite) ou **cirurgia** (adenoamigdalectomia).\n- **Mecanismo:** a hiperemia inflamatória drena para o plexo venoso faringovertebral e **afrouxa** os ligamentos C1-C2.\n- **Clínica:** criança com **torcicolo** em \"**cock-robin**\": cabeça **inclinada** para um lado e **rodada** para o outro, com o queixo para o lado oposto. Diferente do torcicolo muscular congênito, o **esternocleidomastoideo alongado** (do lado para onde o queixo aponta) é o que está em espasmo, tentando corrigir.\n\n### Classificação de Fielding e Hawkins\n| Tipo | Descrição |\n|---|---|\n| I | rotação **sem** translação anterior (dente como pivô); o mais comum |\n| II | rotação com translação anterior de **3 a 5 mm** |\n| III | rotação com translação anterior **acima de 5 mm** |\n| ==IV== | rotação com translação ==posterior==; raro, com deficiência do dente |\n\n### Tratamento\n- **Precoce:** colar, analgesia e anti-inflamatório, antibiótico para a infecção.\n- **Após ~1 semana:** tração (halter ou halo).\n- **Irredutível ou recidivante:** redução e **artrodese C1-C2**.\n- O diagnóstico é confirmado por **TC dinâmica**, com rotação para os dois lados.\n\n> **Na prova:** Fielding **IV** = rotação com translação ==posterior==.",
+    "correta": "**Tipo 4: rotação com translação posterior.**",
     "incorretas": {
-      "A": "**Tipo 1 é rotatória.**\n- Não é ausência de desvio.",
-      "B": "**Descreve o tipo 1.**\n- Rotatória sem translação.",
-      "C": "**Descreve o tipo 2.**\n- Até 5 mm; o 3 é > 5 mm."
+      "A": "**Tipo 1 = sem luxação.**\n- O tipo I **tem** rotação; só não tem translação anterior.",
+      "B": "**Tipo 2 = rotação sem translação.**\n- Isso descreve o **tipo I**.",
+      "C": "**Tipo 3 = translação até 5 mm.**\n- Até 5 mm é o **tipo II**; acima de 5 mm é o III."
     },
-    "geradoEm": "2026-09-24",
+    "geradoEm": "2026-09-23",
     "conferido": false
   },
   "pediatria-0145": {
@@ -2317,12 +2312,17 @@
   },
   "pediatria-0163": {
     "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** recorrência anual da sinovite transitória = ==cerca de 4%== (veja o alerta).",
-    "correta": "**4%.**\n- Taxa anual da fonte.\n- Doença benigna.",
+    "correta": "**4%.**\n- Dado anual adotado pela fonte.\n- Doença benigna e autolimitada.",
     "incorretas": {
       "A": "**Subestima.**\n- 0,4%.",
-      "C": "**Superestima.**\n- 14%.",
-      "D": "**Superestima.**\n- 24%."
+      "C": "**Superestima.**\n- Pode ser a taxa acumulada em séries longas.",
+      "D": "**Superestima.**\n- Muito alta."
     },
+    "alerta": "As taxas de recorrência publicadas variam conforme o período de seguimento; o valor de 4% é o dado anual adotado pelo gabarito da prova.",
+    "referencias": [
+      "Transient synovitis of the hip in children: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC3029041/",
+      "Transient synovitis: recurrence and clinical course. https://pubmed.ncbi.nlm.nih.gov/1701691/"
+    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
@@ -2349,16 +2349,13 @@
     "conferido": false
   },
   "pediatria-0166": {
-    "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Embriologia e prevenção\n- Falha do ==fechamento do tubo neural== (neuróporo caudal) entre o ==26º e 28º dias==.\n- Fatores: ==deficiência de ácido fólico==, ácido valproico, carbamazepina, diabetes, obesidade, hipertermia; componente genético (recorrência 2 a 5% em irmãos).\n- Prevenção: ácido fólico 0,4 mg/dia antes da concepção (4 mg se filho anterior afetado).\n- Diagnóstico: alfafetoproteína elevada, ultrassom (sinal do limão e da banana).\n\n### Pontos\n- Defeito do arco neural ==posterior==.\n- Lesão ==central (medula e raízes)==; nervos periféricos fora da dura normais.\n- Diagnóstico pré-natal: ==alfafetoproteína==, ultrassom (limão e banana), amniocentese.\n\n> **Na prova:** incidência ==aumenta com irmão afetado==",
-    "correta": "**Maior com irmão afetado.**\n- Recorrência de 2 a 5%.\n- Componente genético e ambiental.",
+    "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Embriologia e prevenção\n- Falha do ==fechamento do tubo neural== (neuróporo caudal) entre o ==26º e 28º dias==.\n- Fatores: ==deficiência de ácido fólico==, ácido valproico, carbamazepina, diabetes, obesidade, hipertermia; componente genético (recorrência 2 a 5% em irmãos).\n- Prevenção: ácido fólico 0,4 mg/dia antes da concepção (4 mg se filho anterior afetado).\n- Diagnóstico: alfafetoproteína elevada, ultrassom (sinal do limão e da banana).\n\n### Pontos cobrados\n- Defeito do ==arco neural posterior== (não anterior).\n- Irmão afetado: risco sobe para ==2 a 5%== (população: 0,1%).\n- Lesão ==do SNC== (medula e raízes intradurais); nervos periféricos fora da dura são normais.\n- Diagnóstico pré-natal frequente: ==alfafetoproteína== no soro/líquido amniótico e ==ultrassom==.\n\n> **Na prova:** MMC = incidência maior com ==irmão afetado==",
+    "correta": "**História familiar aumenta o risco.**\n- Irmão afetado: 2 a 5%.\n- Ácido fólico 4 mg na próxima gestação.",
     "incorretas": {
-      "A": "**Arco posterior.**\n- Não anterior.",
-      "C": "**Lesão central.**\n- Periféricos fora da dura são normais.",
-      "D": "**Estabelecem.**\n- US e alfafetoproteína detectam bem."
+      "A": "**Arco posterior.**\n- Espinha bífida é posterior.",
+      "C": "**Nervos periféricos normais.**\n- Lesão é central.",
+      "D": "**Diagnóstico pré-natal frequente.**\n- Ultrassom e alfafetoproteína."
     },
-    "referencias": [
-      "https://www.ncbi.nlm.nih.gov/books/NBK562303/"
-    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
@@ -2374,12 +2371,12 @@
     "conferido": false
   },
   "pediatria-0168": {
-    "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Aitken em detalhe\n| Tipo | Cabeça | Acetábulo | Colo |\n|---|---|---|---|\n| A | presente | normal | pseudartrose que ==consolida== (coxa vara) |\n| ==B== | presente | adequado | ==pseudartrose do colo persistente==, sem conexão |\n| C | ausente | displásico | segmento curto com ossículo |\n| D | ausente | ausente | fêmur muito curto |\n\n> **Na prova:** pseudartrose do colo na DFFP = ==Aitken B==",
-    "correta": "**Aitken B.**\n- Cabeça presente, acetábulo adequado.\n- Pseudartrose do colo sem conexão.",
+    "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Aitken em detalhe\n| Tipo | Cabeça | Acetábulo | Colo |\n|---|---|---|---|\n| A | presente | normal | pseudartrose que ==consolida== (coxa vara) |\n| ==B== | presente | adequado | ==pseudartrose do colo persistente==, sem conexão |\n| C | ausente | displásico | segmento curto com ossículo |\n| D | ausente | ausente | fêmur muito curto |\n\n> **Na prova:** cabeça presente, acetábulo adequado, sem conexão com a diáfise = ==Aitken B==",
+    "correta": "**Aitken B.**\n- Cabeça e acetábulo presentes.\n- Pseudartrose do colo persistente.",
     "incorretas": {
-      "A": "**Colo consolida.**\n- Coxa vara.",
-      "C": "**Cabeça ausente.**\n- Acetábulo displásico.",
-      "D": "**Grave.**\n- Sem acetábulo."
+      "A": "**Aitken A.**\n- Colo consolida em varo.",
+      "C": "**Aitken C.**\n- Cabeça ausente, acetábulo displásico.",
+      "D": "**Aitken D.**\n- Cabeça e acetábulo ausentes."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -2417,17 +2414,13 @@
     "conferido": false
   },
   "pediatria-0171": {
-    "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n> **Na prova:** pé normal na órtese = ==40° de rotação lateral==",
-    "correta": "**70° e noturno por 2 a 4 anos.**\n- Uso contínuo nos primeiros 3 meses.\n- Noturno até 4 a 5 anos.",
+    "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** órtese = RE de ==60 a 70°== contínua por 3 meses, depois ==noturna até 4 anos==",
+    "correta": "**70 graus, noturno por 2 a 4 anos.**\n- RE de 60 a 70° no pé afetado.\n- Uso noturno até 4 a 5 anos.",
     "incorretas": {
-      "B": "**Rotação insuficiente.**\n- Pé afetado a 60 a 70°.",
-      "C": "**Tempo curto.**\n- Recidiva se parar cedo.",
-      "D": "**Duplamente errada.**\n- Rotação e tempo."
+      "B": "**50 graus.**\n- Pouca rotação.",
+      "C": "**6 a 12 meses.**\n- Tempo insuficiente.",
+      "D": "**Os dois errados.**\n- Rotação e tempo."
     },
-    "referencias": [
-      "https://posna.org/physician-education/study-guide/clubfoot",
-      "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 19"
-    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
@@ -2504,63 +2497,61 @@
     "conferido": false
   },
   "pediatria-0178": {
-    "conceito": "### Osteocondroses e apofisites do pé\n| Epônimo | Local | Idade/perfil |\n|---|---|---|\n| ==Köhler== | ==navicular== | meninos de 4 a 7 anos; autolimitada |\n| ==Iselin== | ==base do 5º metatarso== (fibular curto) | adolescente ativo |\n| Freiberg | cabeça do 2º metatarso | adolescente feminina |\n| Sever | apófise do calcâneo (tendão calcâneo) | 8 a 12 anos, esportes |\n| Renander | sesamoide do hálux | |\n\n### Köhler\n- Navicular achatado, esclerótico, fragmentado.\n- Tratamento: bota gessada curta alivia a dor; reossifica sem sequela.\n\n### Iselin\n- Não confundir apófise (longitudinal) com fratura (transversa).\n\n### Köhler (osteocondrite do navicular)\n- ==Meninos== (4 a 6:1), 4 a 7 anos.\n- ==Unilateral== (bilateral em até 25%).\n- Navicular ossifica tarde e sofre compressão entre tálus e cuneiformes.\n\n> **Na prova:** Köhler = ==meninos, unilateral==",
-    "correta": "**Meninos, menores de 10 anos.**\n- Pico entre 4 e 7 anos.\n- Predomínio masculino.",
+    "conceito": "### Doença de Köhler\n- Osteocondrose (necrose avascular) do ==navicular== do pé.\n- Perfil: ==meninos==, entre 4 e 7 anos (menores de 10), cerca de 4 a 6 meninos para cada menina; geralmente unilateral.\n\n### Por que o navicular\n- É o **último osso do tarso a ossificar**.\n- Fica comprimido entre o tálus e as cunhas enquanto o núcleo de ossificação ainda é pequeno e irrigado por vasos terminais.\n\n### Quadro\n- Dor na face medial do mediopé, claudicação, marcha apoiada na borda lateral.\n- Radiografia: navicular **esclerótico, achatado e fragmentado**.\n\n### Evolução e tratamento\n- **Autolimitada**, com reconstituição do osso em 6 meses a 2 anos e sem sequela.\n- Tratamento sintomático; bota gessada por 6–8 semanas encurta o período de dor.\n\n### Não confundir\n| Doença | Osso | Perfil | Prognóstico |\n|---|---|---|---|\n| ==Köhler== | navicular | meninos, 4–7 anos | excelente |\n| Freiberg | cabeça do 2º metatarso | meninas adolescentes | pode deixar artrose |\n| Sever | apófise do calcâneo | meninos 8–12 anos, ativos | autolimitada |\n\n> **Na prova:** Köhler = navicular, ==menino pequeno==, autolimitada.",
+    "correta": "**É o perfil epidemiológico da doença.**\n- A doença de Köhler aparece entre 4 e 7 anos, bem antes dos 10.\n- Predomina claramente em meninos.\n- O navicular, último osso do tarso a ossificar, é vulnerável justamente nessa faixa.",
     "incorretas": {
-      "B": "**Sexo e idade errados.**\n- Freiberg é que atinge meninas adolescentes.",
-      "C": "**Sexo errado.**\n- Meninos.",
-      "D": "**Idade errada.**\n- Crianças pequenas."
+      "B": "**É o perfil da doença de Freiberg.**\n- Meninas adolescentes, com acometimento da cabeça do 2º metatarso.\n- Nada disso corresponde ao navicular da doença de Köhler.",
+      "C": "**Acerta a idade, erra o sexo.**\n- A doença é de crianças pequenas, mas predomina em meninos, não em meninas.",
+      "D": "**Acerta o sexo, erra a idade.**\n- Acima dos 10 anos o navicular já está ossificado e o mecanismo da doença deixa de operar.\n- Dor no mediopé nessa idade faz pensar em outras causas (navicular acessório, coalizão)."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
   },
   "pediatria-0179": {
-    "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Prognóstico da Blount infantil\n- Pior em ==meninas negras== obesas, diagnóstico tardio (> 4 anos), estágio avançado, recidiva após osteotomia.\n\n> **Na prova:** pior prognóstico da Blount infantil = ==sexo feminino, raça negra==",
-    "correta": "**Feminino, raça negra.**\n- Grupo com mais recidiva e progressão.\n- Obesidade soma risco.",
+    "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Achados\n- ==Bico metafisário medial==; ==subluxação lateral da tíbia== (lateral thrust na marcha).\n- Associação com obesidade e deficiência de vitamina D.\n- Pior prognóstico: ==meninas negras==, obesas, início precoce, estágios avançados.\n\n> **Na prova:** Blount pior prognóstico = ==meninas negras obesas==, não meninos",
+    "correta": "**Feminino, raça negra.**\n- Obesas, início precoce.\n- Maior recidiva após osteotomia.",
     "incorretas": {
-      "A": "**Menor risco.**\n- Masculino branco.",
-      "B": "**Raça certa.**\n- Sexo errado.",
-      "C": "**Sexo certo.**\n- Raça errada."
+      "A": "**Masculino branco.**\n- Melhor prognóstico.",
+      "B": "**Masculino.**\n- Pior em meninas.",
+      "C": "**Branca.**\n- Pior na raça negra."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
   },
   "pediatria-0180": {
-    "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** primeira manipulação de Ponseti = ==cavo, supinando o antepé e elevando o 1º MT==",
-    "correta": "**Cavo, aduto, varo, equino (CAVE).**\n- Equino por último, geralmente com tenotomia.",
+    "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** sequência de Ponseti = ==CAVE (cavo, aduto, varo, equino)==",
+    "correta": "**Cavo, aduto, varo, equino.**\n- CAVE.\n- Equino por último.",
     "incorretas": {
-      "B": "**Equino primeiro.**\n- Cria pé em mata-borrão.",
-      "C": "**Cavo fora de ordem.**\n- Cavo é o primeiro.",
-      "D": "**Equino primeiro.**\n- Proibido."
+      "B": "**Equino primeiro.**\n- Gera pé em mata-borrão.",
+      "C": "**Cavo depois.**\n- Cavo é o primeiro.",
+      "D": "**Equino primeiro.**\n- Erro clássico."
     },
     "referencias": [
-      "https://posna.org/physician-education/study-guide/clubfoot"
+      "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
+      "POSNA Study Guide. https://posna.org/physician-education/study-guide"
     ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
   "pediatria-0181": {
     "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n### Altura do centro de massa\n| Momento | Altura |\n|---|---|\n| ==contato do calcanhar== (duplo apoio) | ==mais baixa== |\n| ==apoio médio== (acomodação intermediária) | ==mais alta== |\n\n- No lateral: máximo deslocamento no apoio médio, sobre o membro de apoio.\n\n### Oscilação do centro de gravidade\n| Plano | Amplitude |\n|---|---|\n| ==vertical== | ==cerca de 4,5 a 5 cm== (curva senoidal) |\n| lateral | cerca de 4 a 5 cm |\n\n> **Na prova:** oscilação vertical do centro de gravidade = ==cerca de 4,5 cm==",
-    "correta": "**4,5 cm.**\n- Curva senoidal suave.\n- Determinantes reduzem a amplitude.",
+    "correta": "**4,5 cm.**\n- Curva senoidal vertical.\n- Determinantes de Saunders reduzem a amplitude.",
     "incorretas": {
-      "A": "**Subestima.**\n- 3 cm.",
-      "C": "**Superestima.**\n- 6 cm.",
-      "D": "**Superestima.**\n- 7,5 cm."
+      "A": "**3 cm.**\n- Subestimado.",
+      "C": "**6 cm.**\n- Superestimado.",
+      "D": "**7,5 cm.**\n- Seria marcha sem determinantes."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
   },
   "pediatria-0182": {
-    "conceito": "### Arqueamentos congênitos da tíbia\n| Direção | Associação | Evolução |\n|---|---|---|\n| ==posteromedial== | pé calcaneovalgo | ==corrige espontaneamente==; resta ==discrepância== (3 a 5 cm) |\n| anterolateral | ==NF1==, ==pseudartrose congênita== | piora, fratura |\n| anteromedial | hemimelia fibular | discrepância, pé valgo |\n\n### Posteromedial\n- Ao nascer: pé em dorsiflexão tocando a tíbia.\n- Angulação melhora nos primeiros anos.\n- Discrepância: epifisiodese contralateral ou alongamento na idade adequada.\n\n### Anterolateral\n- Proteger com órtese (TLSO/KAFO) até a maturidade; evitar osteotomia.\n\n> **Na prova:** arqueamento posteromedial associa-se ao ==pé calcaneovalgo==",
-    "correta": "**Calcâneo valgo.**\n- Pé encostado na tíbia ao nascer.\n- Arqueamento corrige; sobra discrepância.",
+    "conceito": "### Arqueamentos congênitos da tíbia\n| Direção | Associação | Evolução |\n|---|---|---|\n| ==posteromedial== | ==pé calcaneovalgo== | ==benigna==, corrige espontaneamente |\n| anterolateral | NF1, pseudartrose | maligna; órtese, nunca osteotomia profilática |\n| anteromedial | hemimelia fibular | discrepância, deformidade do pé |\n\n### Posteromedial: o que esperar\n- Angulação melhora nos primeiros 2 a 3 anos; o pé calcâneo também.\n- Deixa ==discrepância residual== (3 a 4 cm em média): acompanhar até a maturidade (epifisiodese ou alongamento).\n- Alongamento passivo do tornozelo em ==flexão plantar== (o pé está em dorsiflexão).\n- ==Osteotomia== só se persistir arqueamento importante ==após os 4 anos== (raro).\n\n> **Na prova:** arqueamento posteromedial da tíbia = associado ao ==pé calcaneovalgo==",
+    "correta": "**Calcâneo valgo.**\n- Associação clássica.\n- Ambos melhoram espontaneamente.",
     "incorretas": {
-      "A": "**Anterolateral.**\n- Esse é o da pseudartrose.",
-      "B": "**Sem relação.**\n- Platispondilia é de displasias.",
-      "C": "**Anterolateral.**\n- NF1."
+      "A": "**Pseudartrose congênita.**\n- Arqueamento anterolateral.",
+      "B": "**Platispondilia.**\n- Displasias espondiloepifisárias.",
+      "C": "**NF1.**\n- Arqueamento anterolateral."
     },
-    "referencias": [
-      "https://posna.org/blogs/resident-review/december-2017/pediatric-lower-extremity-disorders"
-    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
@@ -2897,14 +2888,14 @@
     "conferido": false
   },
   "pediatria-0212": {
-    "conceito": "### Zonas do tríceps sural (alongamento na PC)\n| Zona | Local | Técnicas | Alonga |\n|---|---|---|---|\n| 1 | ventres do gastrocnêmio | ==Strayer== (recessão da aponeurose proximal), Baumann (fáscia intramuscular) | só gastrocnêmio |\n| ==2== | ==aponeurose conjunta gastrocnêmio-sóleo, distal aos ventres== | ==Vulpius== (V invertido), Baker (língua em U) | gastro + sóleo moderado |\n| 3 | tendão calcâneo | ==Hoke== (três hemissecções percutâneas), White, Z | tudo; maior risco de ==hiperalongamento== (marcha agachada) |\n\n### Silfverskiöld\n- Equino que ==melhora com joelho fletido==: contratura do ==gastrocnêmio== isolado → zonas 1-2.\n- Equino fixo com joelho fletido: sóleo também → zona 2-3.\n\n> **Na prova:** dorsiflexão melhora com joelho fletido = contratura do ==gastrocnêmio isolado== (Silfverskiöld).",
-    "correta": "**Gastrocnêmio isolado.**\n- Fletir o joelho relaxa o gastrocnêmio (biarticular).\n- Sóleo não cruza o joelho.",
+    "conceito": "### Teste de Silfverskiöld\n- **Base:** o **gastrocnêmio** é **biarticular** (joelho + tornozelo); o **sóleo** é **monoarticular** (só tornozelo).\n- **Como:** medir a dorsiflexão com o joelho **estendido** e depois **fletido**, mantendo a subtalar em **leve inversão** (travada) para não \"roubar\" movimento no médio-pé.\n\n| Resultado | Interpretação | Cirurgia |\n|---|---|---|\n| ==Melhora com o joelho fletido== | ==contratura isolada do gastrocnêmio== | **recessão do gastrocnêmio** (Strayer, Vulpius, **Baumann**) |\n| Não melhora | contratura do **tríceps** (sóleo + gastrocnêmio) | **alongamento do tendão calcâneo** (Hoke / percutâneo, Z) |\n\n### Na paralisia cerebral\n- **Equino** é a deformidade mais comum.\n- **Primeiro:** **toxina botulínica**, gessos seriados, órteses (AFO).\n- **Cirurgia:** geralmente após os **6 a 8 anos**, preferindo a **recessão do gastrocnêmio**.\n  - Alongar demais o Aquiles leva a **marcha agachada** (crouch) por fraqueza do tríceps.\n  - A **cirurgia multinível** (SEMLS) é guiada pela análise de marcha.\n\n> **Na prova:** melhora da dorsiflexão com o joelho fletido = ==contratura isolada do gastrocnêmio==.",
+    "correta": "**Contratura isolada do músculo gastrocnêmio.**",
     "incorretas": {
-      "A": "**Sóleo não muda.**\n- Não cruza o joelho.",
-      "C": "**Não melhoraria tanto.**\n- Sóleo manteria o equino.",
-      "D": "**Eversores.**\n- Não limitam dorsiflexão assim."
+      "A": "**Sóleo isolado.**\n- O sóleo não cruza o joelho: **não** melhoraria com a flexão.",
+      "C": "**Gastrocnêmio + sóleo.**\n- A dorsiflexão continuaria limitada com o joelho fletido.",
+      "D": "**Fibulares.**\n- Eversores; não limitam a dorsiflexão desse modo."
     },
-    "geradoEm": "2026-09-24",
+    "geradoEm": "2026-09-23",
     "conferido": false
   },
   "pediatria-0213": {
@@ -3195,10 +3186,10 @@
   },
   "pediatria-0241": {
     "conceito": "### Ossificação do carpo (sentido anti-horário na mão direita, vista palmar)\n| Osso | Idade aproximada |\n|---|---|\n| ==capitato== | ==1 a 3 meses== |\n| ==hamato== | ==2 a 4 meses== |\n| piramidal | cerca de 3 anos |\n| semilunar | cerca de 4 anos |\n| escafoide | cerca de 5 anos |\n| trapézio | cerca de 6 anos |\n| trapezoide | cerca de 6 a 7 anos |\n| pisiforme | cerca de 9 a 12 anos |\n\n- Regra prática: até cerca de 6 a 7 anos, o **número de centros ≈ idade em anos**.\n- Meninas ossificam antes.\n\n### Idade óssea\n- **Greulich e Pyle** (atlas da mão e punho), Tanner-Whitehouse.\n\n### Implicação clínica\n- Até os 5 anos o escafoide é quase todo cartilagem: fratura rara e invisível ao RX.\n- Fratura pediátrica típica: ==polo distal== e avulsões, não a cintura.\n\n> **Na prova:** escafoide ossifica aos ==4 a 5 anos==",
-    "correta": "**4 a 5 anos.**\n- Depois do semilunar.\n- Antes disso, RX normal não exclui lesão.",
+    "correta": "**4 a 5 anos.**\n- Depois do semilunar e antes de trapézio e trapezoide.\n- Até essa idade, RX normal não exclui lesão.",
     "incorretas": {
-      "A": "**Cedo.**\n- Só capitato e hamato.",
-      "B": "**Piramidal e semilunar.**\n- Escafoide ainda não.",
+      "A": "**Cedo demais.**\n- Só capitato e hamato.",
+      "B": "**Piramidal e semilunar.**\n- O escafoide ainda não.",
       "D": "**Já ossificado.**\n- Falta o pisiforme."
     },
     "geradoEm": "2026-09-24",
@@ -3227,17 +3218,14 @@
     "conferido": false
   },
   "pediatria-0244": {
-    "conceito": "### Ossos acessórios do pé\n| Osso | Local | Sintoma |\n|---|---|---|\n| ==navicular acessório== | medial ao navicular, inserção do ==tibial posterior== | ==o mais sintomático==: dor medial, proeminência, pé plano |\n| os trigonum | posterior ao tálus | impacto posterior (bailarinas) |\n| os peroneum | no fibular longo, junto ao cuboide | dor lateral, ruptura |\n| os vesalianum | base do 5º MT | raro |\n| os intermetatarseum | entre 1º e 2º MT | raro |\n\n### Navicular acessório (Geist)\n| Tipo | Descrição |\n|---|---|\n| I | sesamoide no tendão |\n| II | sincondrose (o mais sintomático) |\n| III | fundido (navicular cornuto) |\n\n- Tratamento: órtese, gesso; excisão (Kidner) se persistir.\n\n> **Na prova:** osso acessório mais sintomático = ==navicular acessório==.",
-    "correta": "**Navicular acessório.**\n- Tração do tibial posterior na sincondrose.\n- Dor medial, especialmente no tipo II.",
+    "conceito": "### Ossos acessórios do pé\n| Osso | Local | Sintomas |\n|---|---|---|\n| ==Navicular acessório== (os naviculare) | **medial** ao navicular, na inserção do **tibial posterior** | ==o mais sintomático== |\n| Os trigonum | **processo posterior do tálus** | **impacto posterior** (bailarinas, jogadores de futebol) |\n| Os peroneum | no **fibular longo**, junto ao cuboide | **POPS** (fratura, diástase, lesão do fibular longo) |\n| Os vesalianum | base do **5º metatarso** | raro; diferencial com fratura / apófise |\n\n### Navicular acessório\n- **Frequência:** cerca de **10% a 14%** da população.\n- **Tipos (Geist / Veitch):**\n  - **I:** sesamoide no tendão;\n  - **II:** unido por **sincondrose**, o mais sintomático;\n  - **III:** **fundido**, formando o navicular \"**cornuto**\".\n- **Por que dói:**\n  - proeminência que **atrita** no calçado;\n  - **tração** do tibial posterior sobre a sincondrose.\n- **Quadro:** adolescente com dor **medial** no médio-pé, proeminência, frequentemente com **pé plano**.\n- **Tratamento:** conservador (calçado, imobilização); se falha, **procedimento de Kidner** (ressecção + reinserção / avanço do tibial posterior).\n\n> **Na prova:** osso acessório mais sintomático na criança = ==navicular acessório==.",
+    "correta": "**Os naviculare accessorium.**",
     "incorretas": {
-      "A": "**Raro sintoma.**\n- Os fibulare.",
-      "B": "**Impacto posterior.**\n- Menos frequente em criança.",
-      "C": "**Raro.**\n- Base do 5º MT."
+      "A": "**Os fibulare / peroneum.**\n- Menos sintomático; dói quando há lesão do fibular longo associada.",
+      "B": "**Os trigonum.**\n- Impacto posterior; menos prevalente como causa de dor na criança.",
+      "C": "**Os vesalianum.**\n- Raro, quase sempre assintomático."
     },
-    "referencias": [
-      "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 19"
-    ],
-    "geradoEm": "2026-09-24",
+    "geradoEm": "2026-09-23",
     "conferido": false
   },
   "pediatria-0245": {
@@ -3318,30 +3306,24 @@
     "conferido": false
   },
   "pediatria-0252": {
-    "conceito": "### Formação do esqueleto do membro\n1. Broto do membro: mesoderma da placa lateral + ectoderma (4ª semana).\n2. ==Condensações mesenquimais== no formato do futuro osso.\n3. Molde cartilaginoso.\n4. Ossificação endocondral.\n\n### Origem de cada tecido\n| Tecido do membro | Origem |\n|---|---|\n| ==ossos, cartilagem, tendões, ligamentos== | ==mesoderma da placa lateral== (condensações mesenquimais) |\n| músculos | somitos (mioblastos migram para o broto) |\n| nervos periféricos, Schwann, melanócitos | crista neural |\n| vasos | angioblastos locais |\n\n### Centros de sinalização\n| Centro | Eixo | Molécula | Falha |\n|---|---|---|---|\n| crista ectodérmica apical | proximal-distal | FGF | deficiências transversas |\n| zona de atividade polarizada | radioulnar | ==Shh== | polidactilia, mão em espelho |\n| ectoderma dorsal | dorsoventral | Wnt7a | unhas palmares, nail-patella |\n\n> **Na prova:** mesoderma da placa lateral = ==osso, cartilagem e tendão==",
-    "correta": "**Ossos, tendões e cartilagens.**\n- Arcabouço vem da placa lateral.\n- Músculos vêm dos somitos.",
+    "conceito": "O broto do membro superior surge por volta do **26º dia** de gestação, na parede lateral do embrião, e é formado por um núcleo de **mesoderma da lâmina lateral** (mesoderma lateral) revestido por ectoderma.\n\nA divisão de trabalho entre as camadas germinativas é o que a questão cobra e vale decorar:\n\n- O **mesoderma lateral** dá origem ao esqueleto do membro (ossos, cartilagens, tendões e ligamentos), além do tecido conjuntivo e da vasculatura.\n- Os **músculos** não vêm dali, e sim das células precursoras miogênicas que **migram** dos **somitos** (mesoderma paraxial) para dentro do broto.\n- Os **nervos** têm origem **ectodérmica**, no tubo neural e na crista neural, crescendo para dentro do membro depois que a musculatura já se organizou.\n\nTrês centros sinalizadores comandam os eixos e são cobrados junto:\n\n- A **crista ectodérmica apical** (AER), na borda distal, controla o crescimento **proximodistal** por meio dos fatores de crescimento fibroblástico (FGF).\n- A **zona de atividade polarizante** (ZPA), na margem posterior, controla o eixo **anteroposterior** (radioulnar) pelo Sonic hedgehog.\n- A via **Wnt** controla o eixo **dorsoventral**.\n\nO membro superior desenvolve-se ligeiramente à frente do inferior, e todo o processo de formação está essencialmente completo por volta da **oitava semana**, o que explica por que os agentes teratogênicos atuam nessa janela estreita, e por que malformações do membro se associam com frequência a malformações cardíacas, renais e hematológicas, formadas no mesmo período.",
+    "correta": "A. O mesoderma lateral é responsável pela formação dos OSSOS, TENDÕES e CARTILAGENS do membro (além do tecido conjuntivo e dos vasos), enquanto a musculatura vem dos somitos e os nervos, do ectoderma.",
     "incorretas": {
-      "B": "**Músculos não.**\n- Somitos.",
-      "C": "**Nervos não.**\n- Crista e tubo neural.",
-      "D": "**Nenhum deles.**\n- Outras origens."
+      "B": "Cartilagens e tendões de fato derivam do mesoderma lateral, mas os MÚSCULOS não: as células precursoras miogênicas migram para o broto a partir dos somitos, que são derivados do mesoderma paraxial.",
+      "C": "Ossos e vasos derivam do mesoderma lateral, mas os NERVOS são de origem ectodérmica, brotam do tubo neural e da crista neural e crescem para dentro do membro já formado.",
+      "D": "Erra em dois dos três elementos: os músculos vêm dos somitos e os nervos, do ectoderma. Apenas os vasos sanguíneos derivam do mesoderma lateral."
     },
-    "referencias": [
-      "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 1"
-    ],
-    "geradoEm": "2026-09-24",
+    "geradoEm": "2026-09-08",
     "conferido": false
   },
   "pediatria-0253": {
     "conceito": "### Sinostose radioulnar congênita\n- Falha de segmentação entre rádio e ulna proximais; **bilateral** em cerca de 60%.\n- Antebraço fixo, frequentemente em **pronação**; compensação pelo ombro e punho.\n\n### Indicação de osteotomia derrotativa\n- Pronação fixa acima de cerca de 60° com prejuízo funcional (levar a mão à boca, receber objetos).\n- Posição alvo: **neutra a 10 a 20° de pronação** no lado dominante; um pouco de supinação no não dominante (em bilaterais).\n\n### Complicações\n| Complicação | Comentário |\n|---|---|\n| ==síndrome compartimental== | ==a mais frequente== com rotações de 90° de uma vez (torção do envelope e dos vasos) |\n| lesão do interósseo posterior | acessos proximais |\n| perda de correção, pseudartrose | incomuns |\n\n### Prevenção\n- Limitar a correção aguda a cerca de **60 a 85°**, osteotomia dupla, fasciotomia profilática, correção gradual com fixador.\n- Vigilância de perfusão e dor desproporcional.\n\n### Separar os ossos\n- Ressecção com interposição: **recidiva** frequente; pouco usada.\n\n### Decisão\n| Situação | Conduta |\n|---|---|\n| ==unilateral, neutro ou leve pronação== | ==não cirúrgico== |\n| pronação > 60° com limitação funcional | osteotomia derrotativa |\n| bilateral em pronação acentuada | derrotar pelo menos um lado |\n\n> **Na prova:** unilateral em neutro = ==não operar==",
-    "correta": "**Não cirúrgico.**\n- Neutro é funcional.\n- O outro lado compensa.",
+    "correta": "**Não cirúrgico.**\n- Em neutro a mão alcança a boca e recebe objetos.\n- O lado contralateral compensa.\n- Cirurgia só para pronação acentuada com limitação.",
     "incorretas": {
-      "B": "**Recidiva quase certa.**\n- Refunde.",
-      "C": "**Resultado inconstante.**\n- Não se justifica.",
-      "D": "**O contrário.**\n- Tira da pronação."
+      "B": "**Recidiva quase certa.**\n- Os ossos voltam a fundir.",
+      "C": "**Resultado inconstante.**\n- Não se justifica em antebraço funcional.",
+      "D": "**O contrário.**\n- A derrotação tira da pronação, não leva a ela."
     },
-    "referencias": [
-      "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 12"
-    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
@@ -3445,23 +3427,23 @@
     "conferido": false
   },
   "pediatria-0265": {
-    "conceito": "### Suspensório de Pavlik\n| Tira | Função |\n|---|---|\n| anterior | ==flexão== do quadril (100 a 110°), bloqueia a extensão |\n| posterior | ==limita a adução== (não força a abdução) |\n\n- Permite ==flexão e abdução ativas==; ==limita extensão e adução==.\n- Indicação: < 6 meses; controle por ultrassom.\n\n### Complicações\n| Complicação | Causa |\n|---|---|\n| ==necrose avascular== (lesão fisária) | ==abdução forçada== (> 60°) |\n| paralisia do nervo femoral | ==flexão excessiva== |\n| doença do Pavlik (erosão posterior do acetábulo) | quadril luxado mantido sem reduzir |\n| luxação inferior (obturatória) | flexão excessiva |\n\n- Sem redução em 3 a 4 semanas: suspender.\n\n> **Na prova:** Pavlik lesa a fise pela ==abdução forçada==; limita ==extensão e adução==.",
-    "correta": "**Lesão do nervo femoral.**\n- Hiperflexão estira o femoral.\n- Suspender até recuperar o quadríceps.",
+    "conceito": "### Suspensório de Pavlik\n| Tira | Função |\n|---|---|\n| anterior | ==flexão== do quadril (100 a 110°), bloqueia a extensão |\n| posterior | ==limita a adução== (não força a abdução) |\n\n- Permite ==flexão e abdução ativas==; ==limita extensão e adução==.\n- Indicação: < 6 meses; controle por ultrassom.\n\n### Complicações\n| Complicação | Causa |\n|---|---|\n| ==necrose avascular== (lesão fisária) | ==abdução forçada== (> 60°) |\n| paralisia do nervo femoral | ==flexão excessiva== |\n| doença do Pavlik (erosão posterior do acetábulo) | quadril luxado mantido sem reduzir |\n| luxação inferior (obturatória) | flexão excessiva |\n\n- Sem redução em 3 a 4 semanas: suspender.\n\n### Nervo femoral\n- ==Hiperflexão== (> 120°) comprime o nervo femoral sob o ligamento inguinal.\n- Sinal: criança ==não estende o joelho== (quadríceps parado).\n- Conduta: afrouxar a tira anterior; recupera em dias.\n\n> **Na prova:** Pavlik em hiperflexão = ==paralisia do nervo femoral==",
+    "correta": "**Lesão do nervo femoral.**\n- Compressão no ligamento inguinal.\n- Criança para de chutar com o joelho.",
     "incorretas": {
-      "A": "**Luxado mantido.**\n- Erosão posterior do acetábulo.",
-      "C": "**Não é a típica.**\n- Hiperflexão leva a luxação inferior.",
-      "D": "**Abdução forçada.**\n- Não a flexão."
+      "A": "**Doença do Pavlik.**\n- Quadril mantido luxado sem reduzir.",
+      "C": "**Posterolateral.**\n- Hiperflexão gera luxação inferior.",
+      "D": "**Necrose.**\n- Causada pela abdução forçada."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
   },
   "pediatria-0266": {
-    "conceito": "### DDQ: exame conforme a idade\n| Idade | Achado útil |\n|---|---|\n| recém-nascido a 2-3 meses | ==Ortolani== (reduz) e ==Barlow== (luxa) |\n| ==após 3 meses== | ==limitação da abdução (Hart)==, Galeazzi, assimetria de pregas |\n| marcha | Trendelenburg, claudicação, hiperlordose (bilateral) |\n\n### Sinais\n| Sinal | O que é |\n|---|---|\n| ==Hart== | abdução limitada com quadril e joelho fletidos (adutores retraídos) |\n| Galeazzi | joelho mais baixo com quadris fletidos |\n| Peter-Bade | pregas assimétricas (pouco específico) |\n| Klisic | linha trocanter-EIAS passa abaixo do umbigo |\n\n### Imagem\n| Idade | Exame |\n|---|---|\n| < 4 a 6 meses | ultrassom (Graf) |\n| > 4 a 6 meses | radiografia (Hilgenreiner, Perkins, Shenton, índice acetabular) |\n\n> **Na prova:** DDQ aos 9 meses = ==sinal de Hart== (abdução limitada).",
-    "correta": "**Limitação da abdução.**\n- Sinal mais confiável após 3 meses.\n- Na marcha: claudicação e Trendelenburg.",
+    "conceito": "### DDQ: exame conforme a idade\n| Idade | Achado útil |\n|---|---|\n| recém-nascido a 2-3 meses | ==Ortolani== (reduz) e ==Barlow== (luxa) |\n| ==após 3 meses== | ==limitação da abdução (Hart)==, Galeazzi, assimetria de pregas |\n| marcha | Trendelenburg, claudicação, hiperlordose (bilateral) |\n\n### Sinais\n| Sinal | O que é |\n|---|---|\n| ==Hart== | abdução limitada com quadril e joelho fletidos (adutores retraídos) |\n| Galeazzi | joelho mais baixo com quadris fletidos |\n| Peter-Bade | pregas assimétricas (pouco específico) |\n| Klisic | linha trocanter-EIAS passa abaixo do umbigo |\n\n### Imagem\n| Idade | Exame |\n|---|---|\n| < 4 a 6 meses | ultrassom (Graf) |\n| > 4 a 6 meses | radiografia (Hilgenreiner, Perkins, Shenton, índice acetabular) |\n\n### Bilateral\n- Abdução limitada ==simétrica== passa despercebida: a assimetria é o que chama atenção.\n- Na bilateral: hiperlordose, marcha anserina, períneo alargado.\n\n> **Na prova:** principal sinal após os 3 meses = ==limitação da abdução==",
+    "correta": "**Limitação da abdução.**\n- Sinal mais confiável após 3 meses.\n- Adutores retraídos pelo quadril luxado.",
     "incorretas": {
-      "B": "**Útil, mas falha no bilateral.**\n- Não o principal.",
-      "C": "**Pouco específico.**\n- Pregas assimétricas em normais.",
-      "D": "**Consequência.**\n- Menos confiável que a abdução."
+      "B": "**Galeazzi.**\n- Falha na bilateral.",
+      "C": "**Pregas.**\n- Pouco específicas.",
+      "D": "**Discrepância.**\n- Consequência, não sinal principal; falha na bilateral."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -3489,34 +3471,34 @@
     "conferido": false
   },
   "pediatria-0269": {
-    "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Fragmentação\n- Aspecto fragmentado = ==reabsorção do osso necrótico== por tecido de granulação vascular.\n- Cabeça mecanicamente frágil: colapso e extrusão possíveis.\n\n> **Na prova:** fragmentação = ==reabsorção do osso necrótico==",
-    "correta": "**Reabsorção de osso necrótico.**\n- Tecido vascular remove o osso morto.\n- Fase mais frágil da cabeça.",
+    "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Histologia por fase\n| Fase | Histologia |\n|---|---|\n| ==necrose== | ==lacunas vazias== ou osteócitos com ==núcleo picnótico==; medula necrótica |\n| fragmentação | revascularização, reabsorção osteoclástica, tecido fibrovascular |\n| reossificação | osso novo (woven) sobre trabéculas mortas |\n| remodelação/residual | osso lamelar |\n\n> **Na prova:** fragmentação no RX = ==reabsorção do osso necrótico==",
+    "correta": "**Reabsorção do osso necrótico.**\n- Revascularização traz osteoclastos.\n- Áreas radiotransparentes entre fragmentos.",
     "incorretas": {
-      "B": "**Fase residual.**\n- Remodelação vem depois.",
-      "C": "**Fase inicial.**\n- Sinal de Salter-Thompson.",
-      "D": "**Achado associado.**\n- Não é o que a fragmentação representa."
+      "B": "**Remodelação.**\n- Fase final.",
+      "C": "**Microfraturas subcondrais.**\n- Sinal do crescente, fase inicial.",
+      "D": "**Cistos metafisários.**\n- Sinal de cabeça em risco."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
   },
   "pediatria-0270": {
     "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Herring em detalhe\n| Grupo | Pilar lateral | Prognóstico |\n|---|---|---|\n| A | ==sem perda== de altura | bom |\n| B | ==perda < 50%== | bom < 8 anos |\n| B/C | pilar estreito ou pouco ossificado, ~50% | intermediário |\n| C | ==perda > 50%== | ruim |\n\n### Desfecho a longo prazo\n- Dois fatores dominam: ==idade de início== (> 8 anos pior) e ==deformidade final da cabeça== (Stulberg).\n\n### Stulberg (maturidade)\n| Classe | Cabeça | Prognóstico |\n|---|---|---|\n| I-II | esférica | sem artrose |\n| III-IV | ovoide/achatada, congruente assférica | artrose no adulto médio |\n| V | achatada incongruente | artrose precoce |\n\n> **Na prova:** desfecho do Perthes = ==idade e deformidade da cabeça==",
-    "correta": "**Idade.**\n- Início antes de 6 anos: melhor.\n- Após 8: pior.",
+    "correta": "**Idade.**\n- Início após 8 anos piora.\n- Menos tempo para remodelar.",
     "incorretas": {
-      "B": "**Não é o principal.**\n- Estatura baixa acompanha.",
-      "C": "**Não é o principal.**\n- Obesidade não pesa tanto.",
-      "D": "**Menor peso.**\n- Idade vale mais."
+      "B": "**Estatura.**\n- Sem valor prognóstico.",
+      "C": "**Obesidade.**\n- Não é o principal.",
+      "D": "**Gênero.**\n- Meninas às vezes pior, mas pela maturidade óssea."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
   },
   "pediatria-0271": {
-    "conceito": "### Anatomia patológica do pé torto\n| Estrutura | Alteração |\n|---|---|\n| tálus | colo desviado ==medial e plantar==; corpo ==rodado externamente== no encaixe (não internamente) |\n| calcâneo | ==aduzido, invertido e em equino==; gira sob o tálus e se aproxima da fíbula |\n| navicular | ==medial==, junto ao maléolo medial (inversão extrema da talonavicular) |\n| cuboide | ==desviado medialmente== sobre o calcâneo |\n| partes moles | retração posteromedial (tibial posterior, FLH, FLD, tríceps, ligamentos) |\n\n### Deformidades (CAVE)\n- Cavo, Aduto, Varo, Equino.\n\n### Pirani e Dimeglio\n- Escores de gravidade para acompanhar o Ponseti.\n\n### Partes moles no pé torto\n- Músculos da perna ==hipotróficos== (panturrilha fina persiste no adulto).\n- Ligamentos e tendões mediais e posteriores ==espessados e fibróticos== (miofibroblastos, colágeno aumentado).\n\n> **Na prova:** músculos ==hipotrofiados== e ligamentos ==espessados==",
-    "correta": "**Hipotrofiados e espessados.**\n- Panturrilha fina.\n- Ligamentos fibróticos e espessados.",
+    "conceito": "### Anatomia patológica do pé torto\n| Estrutura | Alteração |\n|---|---|\n| tálus | colo desviado ==medial e plantar==; corpo ==rodado externamente== no encaixe (não internamente) |\n| calcâneo | ==aduzido, invertido e em equino==; gira sob o tálus e se aproxima da fíbula |\n| navicular | ==medial==, junto ao maléolo medial (inversão extrema da talonavicular) |\n| cuboide | ==desviado medialmente== sobre o calcâneo |\n| partes moles | retração posteromedial (tibial posterior, FLH, FLD, tríceps, ligamentos) |\n\n### Deformidades (CAVE)\n- Cavo, Aduto, Varo, Equino.\n\n### Pirani e Dimeglio\n- Escores de gravidade para acompanhar o Ponseti.\n\n### Partes moles\n- Músculos da perna ==hipotróficos== (panturrilha fina persiste mesmo após correção).\n- Ligamentos e cápsulas posteromediais ==espessados e fibróticos== (miofibroblastos, colágeno denso).\n- Por isso o pé é rígido; gessos distendem gradualmente.\n\n> **Na prova:** no PTC, músculos ==hipotróficos==, ligamentos ==espessados==",
+    "correta": "**Hipotrofiados e espessados.**\n- Panturrilha fina.\n- Ligamentos fibróticos.",
     "incorretas": {
-      "A": "**Músculos errados.**\n- Hipotróficos.",
-      "C": "**Duplamente errada.**\n- Nem hipertrofia nem delgados.",
-      "D": "**Ligamentos errados.**\n- Espessados."
+      "A": "**Hipertrofia.**\n- Músculos atróficos.",
+      "C": "**Os dois errados.**\n- Hipotrofia e espessamento.",
+      "D": "**Delgados.**\n- Ligamentos espessados."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -3862,12 +3844,12 @@
     "conferido": false
   },
   "pediatria-0298": {
-    "conceito": "### Radiografias na displasia do quadril\n| Incidência | Avalia |\n|---|---|\n| AP da bacia | CE lateral (Wiberg), índice acetabular, Tönnis, Shenton, extrusão |\n| ==falso perfil (Lequesne)== | ==cobertura anterior== (ângulo CE anterior: normal > 20 a 25°) |\n| Dunn 45° | colo, came |\n| abdução-RI (von Rosen) | congruência na redução, planejar osteotomia |\n\n### Ângulos\n| Ângulo | Normal | Displasia |\n|---|---|---|\n| CE lateral | > 25° | < 20° |\n| CE anterior (falso perfil) | > 20° | < 20° |\n| Tönnis (inclinação do teto) | 0 a 10° | > 10° |\n\n> **Na prova:** ângulo patológico acima de 10° = ==Tönnis==",
-    "correta": "**Tönnis.**\n- Inclinação do teto de carga.\n- Normal de 0 a 10°; acima de 10° sugere displasia.",
+    "conceito": "### Ângulo de Tönnis (inclinação do teto, índice acetabular do adulto)\n- Referência: linha horizontal entre as **lágrimas**.\n- Linha do ponto mais **medial da esclerose do teto** (sourcil) ao ponto mais **lateral** do acetábulo.\n| Valor | Interpretação |\n|---|---|\n| 0 a 10° | normal |\n| ==acima de 10°== | ==displasia== (teto oblíquo) |\n| abaixo de 0° | teto horizontal: sobrecobertura, pincer |\n\n### Outras medidas de cobertura\n| Medida | Incidência | Displasia | Sobrecobertura |\n|---|---|---|---|\n| centro-borda lateral (Wiberg) | AP | abaixo de 20 a 25° | acima de 40° |\n| centro-borda anterior (Lequesne) | falso perfil | abaixo de 20° | |\n| índice de extrusão da cabeça | AP | acima de 25% | |\n\n### Ângulo alfa\n- É do **fêmur** (came), não de cobertura acetabular.\n\n> **Na prova:** ângulo que sugere displasia quando ==acima de 10°== = ==Tönnis==.",
+    "correta": "**Teto oblíquo.**\n- O ângulo de Tönnis mede a inclinação da zona de carga.\n- Acima de 10° o teto é oblíquo demais: displasia.",
     "incorretas": {
-      "A": "**CE anterior.**\n- Falso perfil; displasia se < 20°.",
-      "B": "**CE lateral.**\n- Displasia se < 20°; menor, não maior.",
-      "D": "**Alfa.**\n- Came (> 55°) ou ultrassom de Graf."
+      "A": "**Outra incidência e outro corte.**\n- O centro-borda anterior é medido no falso perfil e sugere displasia abaixo de 20°.",
+      "B": "**Critério inverso.**\n- O centro-borda lateral sugere displasia quando **menor** que 20 a 25°.",
+      "D": "**Medida femoral.**\n- O ângulo alfa avalia o came, não a cobertura."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -4028,14 +4010,14 @@
     "conferido": false
   },
   "pediatria-0314": {
-    "conceito": "### Escoliose congênita\n| Tipo | Exemplo | Risco de progressão |\n|---|---|---|\n| falha de formação | hemivértebra, vértebra em cunha | variável |\n| falha de segmentação | barra unilateral | alto |\n| ==misto== | ==barra unilateral + hemivértebra contralateral== | ==o maior== |\n\n### Malformações associadas (cerca de 60%)\n| Sistema | Frequência | Exame |\n|---|---|---|\n| ==neuroeixo== (diastematomielia, medula presa, siringomielia) | ==20 a 40%== | RM de todo o neuroeixo |\n| ==geniturinário== | ==20 a 30%== | ultrassom renal |\n| ==cardíaco== | ==10 a 25%== | ecocardiograma |\n\n- Mesma janela embrionária (4ª a 6ª semana) para coluna, rim e coração.\n- VACTERL e Klippel-Feil também entram no diferencial.\n\n> **Na prova:** escoliose congênita = investigar ==neuroeixo, coração e sistema geniturinário==",
-    "correta": "**Neuroeixo, cardíaca e geniturinária.**\n- As três mais frequentes.\n- RM, ecocardiograma e ultrassom renal na rotina.",
+    "conceito": "### Escoliose congênita\n**Origem:** falha de **formação** (hemivértebra, cunha) e/ou de **segmentação** (barra, bloco) entre a **4ª e a 6ª a 8ª semanas** de gestação. É o mesmo período de formação do **tubo neural**, do **coração** e do **trato geniturinário**.\n\n### Malformações associadas (a tríade)\n| Sistema | Frequência aproximada | Exemplos |\n|---|---|---|\n| ==Neuroeixo== | ~1/3 | **diastematomielia**, **medula presa**, siringomielia, Chiari |\n| ==Geniturinário== | ~20% a 30% | agenesia renal, rim em ferradura, duplicação ureteral |\n| ==Cardíaco== | ~10% a 25% | comunicações septais, entre outros |\n\n**Investigação obrigatória:**\n- **RM de todo o neuroeixo;**\n- **ultrassom renal;**\n- **ecocardiograma.**\n\n### Associações sindrômicas\n- **VACTERL:** vertebral, anal, cardíaca, traqueoesofágica, renal, membros.\n- **Klippel-Feil:** fusão cervical, com Sprengel e surdez.\n- **Goldenhar;** **Alagille;** **Jarcho-Levin** (espondilocostal).\n\n> **Na prova:** escoliose congênita = pesquisar ==neuroeixo, coração e geniturinário==.",
+    "correta": "**Neuroeixo, cardíacas e geniturinárias.**",
     "incorretas": {
-      "A": "**Mistura VACTERL.**\n- Fístula traqueoesofágica é rara isoladamente.",
-      "C": "**Ânus imperfurado.**\n- Associação de VACTERL, menos comum.",
-      "D": "**Sprengel e fístula.**\n- Menos frequentes que rim e coração."
+      "A": "**Fístula traqueoesofágica, renal e membros.**\n- Espectro **VACTERL**.",
+      "C": "**Cardíaca, ânus imperfurado, membros.**\n- Também **VACTERL**.",
+      "D": "**Sprengel, neuroeixo, fístula.**\n- Sprengel pode coexistir (Klippel-Feil), mas não integra a tríade."
     },
-    "geradoEm": "2026-09-24",
+    "geradoEm": "2026-09-23",
     "conferido": false
   },
   "pediatria-0315": {
@@ -4317,14 +4299,14 @@
     "conferido": false
   },
   "pediatria-0339": {
-    "conceito": "### Artrite idiopática juvenil (ILAR)\n| Subtipo | Perfil |\n|---|---|\n| ==oligoarticular== | ==o mais comum== (50%); ==meninas de 2 a 4 anos==; ≤ 4 articulações (joelho); ==FAN+ e uveíte== |\n| poliarticular FR- | meninas, qualquer idade |\n| poliarticular FR+ | adolescentes, semelhante à AR |\n| sistêmica (Still) | febre, exantema, serosite, hepatoesplenomegalia |\n| entesite (ERA) | meninos > 8 anos, HLA-B27 |\n| psoriásica | dactilite |\n\n### Ortopedia\n- Joelho com derrame crônico: ==hipercrescimento do membro== (hiperemia da fise), valgo, flexo.\n- Rastreio oftalmológico periódico (uveíte assintomática).\n\n> **Na prova:** oligoarticular = ==meninas de 2 a 4 anos==",
-    "correta": "**Meninas, 2 a 4 anos.**\n- Subtipo mais comum.\n- FAN positivo e uveíte silenciosa.",
+    "conceito": "### O perfil da forma oligoarticular\nA forma **mais comum** da AIJ:\n- ==Meninas pequenas, entre 2 e 4 anos==.\n- **Até 4 articulações** nos primeiros 6 meses, quase sempre o **joelho**.\n- **FAN positivo** com frequência.\n\n### O que mais importa: a uveíte\n- **Uveíte anterior crônica**, com risco alto nesse grupo.\n- **Silenciosa:** não dói, não avermelha o olho.\n- Pode levar a perda visual antes de qualquer queixa.\n- Exige **lâmpada de fenda** em intervalos regulares.\n\n### Para o ortopedista\n- Joelho com derrame crônico pode causar **discrepância de membros** (hipercrescimento do lado inflamado) e contratura em flexão.\n- Infiltração intra-articular de corticoide é opção comum.\n\n> **Na prova:** AIJ oligoarticular = ==menina de 2 a 4 anos==, joelho, FAN+, uveíte.",
+    "correta": "**Meninas entre 2 e 4 anos.**",
     "incorretas": {
-      "A": "**Idade.**\n- Pico entre 2 e 4 anos.",
-      "C": "**Sexo e idade.**\n- Predomina em meninas.",
-      "D": "**Sexo.**\n- Predomina em meninas."
+      "A": "**Idade errada.**\n- A faixa é um pouco mais tardia.",
+      "C": "**Sexo e idade errados.**",
+      "D": "**Sexo errado.**\n- Predominam meninas."
     },
-    "geradoEm": "2026-09-24",
+    "geradoEm": "2026-09-23",
     "conferido": false
   },
   "pediatria-0340": {
@@ -4595,19 +4577,14 @@
     "conferido": false
   },
   "pediatria-0363": {
-    "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Clínica por idade\n| Idade | Apresentação |\n|---|---|\n| ==criança pequena== | ==ressalto (clunk)== audível e ==perda da extensão==, geralmente indolor (Wrisberg instável) |\n| criança maior/adolescente | dor, derrame, bloqueio (lesão do discoide) |\n\n> **Na prova:** discoide na criança pequena = ==ressalto e limitação da extensão==",
-    "correta": "**Ressalto e limitação da extensão.**\n- Joelho que estala (snapping knee).\n- Pouca dor na criança pequena.",
+    "conceito": "### Menisco discoide\nQuase sempre **lateral**. Classificação de **Watanabe**:\n- **Completo:** cobre todo o platô; estável.\n- **Incompleto:** cobre parcialmente; estável.\n- **Tipo Wrisberg:** sem inserção **posterior** no platô, preso só pelo ligamento de Wrisberg; ==instável==.\n\n### Clínica por idade\n- **Criança pequena**, sobretudo no tipo Wrisberg ou com instabilidade periférica:\n  - **joelho em ressalto** (snapping knee), um **estalo audível/visível** na extensão;\n  - ==limitação da extensão== final.\n  - Muitas vezes **sem dor**.\n- **Criança maior / adolescente:** **dor**, derrame e bloqueio por **lesão** do menisco discoide.\n\n### Imagem\n- **Radiografia:** espaço articular lateral alargado, côndilo lateral achatado, platô lateral côncavo.\n- **RM:** \"**gravata-borboleta**\" contínua em **3 ou mais cortes sagitais** consecutivos de 4 a 5 mm.\n\n### Tratamento\n- **Assintomático:** observação.\n- **Sintomático:** **saucerização** artroscópica, deixando ~6 a 8 mm de borda, e **sutura** da instabilidade periférica.\n- Evitar meniscectomia total.\n\n> **Na prova:** criança pequena com discoide = ==ressalto + falta de extensão==.",
+    "correta": "**Ressalto e limitação da extensão.**\n- Quadro clássico do discoide instável na criança pequena.",
     "incorretas": {
-      "A": "**Dor e claudicação.**\n- Mais em crianças maiores.",
-      "B": "**Bloqueio.**\n- Com lesão, na criança maior.",
-      "C": "**Instabilidade.**\n- Não é queixa típica."
+      "A": "**Dor e claudicação.**\n- Inespecíficos; não é o quadro típico da criança pequena.",
+      "B": "**Dor e bloqueio.**\n- Mais comuns na criança **maior** com o discoide **lesado**.",
+      "C": "**Ressalto e instabilidade.**\n- O ressalto está certo, mas o par clássico é com a **limitação da extensão**."
     },
-    "referencias": [
-      "Discoid Lateral Meniscus in Children. PMID: 11880735.",
-      "The discoid meniscus. PMCID: PMC2656711.",
-      "Discoid Meniscus. Pediatric Orthopaedic Society of North America Study Guide."
-    ],
-    "geradoEm": "2026-09-24",
+    "geradoEm": "2026-09-23",
     "conferido": false
   },
   "pediatria-0364": {
@@ -5163,10 +5140,10 @@
   },
   "pediatria-0408": {
     "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** sinovite transitória = pico entre ==5 e 6 anos== (faixa de 3 a 8)",
-    "correta": "**5 a 6 anos.**\n- Pico na faixa de 3 a 8 anos.\n- Meninos após virose.",
+    "correta": "**5 a 6 anos.**\n- Pico dentro da faixa de 3 a 8.\n- Meninos, após virose.",
     "incorretas": {
-      "A": "**2 a 3 anos.**\n- Menos frequente.",
-      "C": "**8 a 10 anos.**\n- Pensar em Perthes.",
+      "A": "**2 a 3 anos.**\n- Início da faixa; menos frequente.",
+      "C": "**8 a 10 anos.**\n- Fim da faixa; pensar em Perthes.",
       "D": "**12 a 14 anos.**\n- Pensar em epifisiólise."
     },
     "geradoEm": "2026-09-24",
@@ -5196,12 +5173,12 @@
     "conferido": false
   },
   "pediatria-0411": {
-    "conceito": "### Evolução angular fisiológica (Salenius)\n| Idade | Alinhamento |\n|---|---|\n| nascimento a 1,5-2 anos | ==varo== (máximo ao nascer) |\n| 1,5 a 2 anos | neutro |\n| ==3 a 4 anos== | ==valgo máximo== (cerca de 10 a 12°) |\n| 7 anos | valgo adulto (cerca de 5 a 7°) |\n\n### Sinais de patologia\n- Assimetria, deformidade fora da curva esperada, baixa estatura, dor, progressão.\n- Varo após 2 anos: Blount, raquitismo, displasias.\n- Valgo > 15° ou distância intermaleolar > 8 cm após 7 anos: investigar.\n\n### Tratamento do valgo patológico\n- ==Crescimento guiado== (placa em 8 medial) antes do fechamento fisário.\n\n> **Na prova:** valgo fisiológico máximo = entre ==2 e 4 anos==",
-    "correta": "**2 a 4 anos.**\n- Pico de 10 a 12° aos 3 a 4 anos.\n- Regride até os 7 anos.",
+    "conceito": "### Evolução angular fisiológica (Salenius)\n| Idade | Alinhamento |\n|---|---|\n| nascimento a 1,5-2 anos | ==varo== (máximo ao nascer) |\n| 1,5 a 2 anos | neutro |\n| ==3 a 4 anos== | ==valgo máximo== (cerca de 10 a 12°) |\n| 7 anos | valgo adulto (cerca de 5 a 7°) |\n\n### Sinais de patologia\n- Assimetria, deformidade fora da curva esperada, baixa estatura, dor, progressão.\n- Varo após 2 anos: Blount, raquitismo, displasias.\n- Valgo > 15° ou distância intermaleolar > 8 cm após 7 anos: investigar.\n\n### Tratamento do valgo patológico\n- ==Crescimento guiado== (placa em 8 medial) antes do fechamento fisário.\n\n> **Na prova:** valgo fisiológico máximo = ==por volta de 4 anos== (3 a 4).",
+    "correta": "**Dois a quatro anos.**\n- Valgo máximo por volta de 3 a 4 anos.\n- Estabiliza aos 7.",
     "incorretas": {
-      "A": "**0 a 2 anos.**\n- Fase de varo.",
-      "C": "**6 a 8 anos.**\n- Valgo adulto.",
-      "D": "**8 a 10 anos.**\n- Valgo já estabilizado."
+      "A": "**Varo fisiológico.**\n- Até cerca de 2 anos.",
+      "C": "**Diminuindo.**\n- Rumo ao adulto.",
+      "D": "**Adulto.**\n- Já estabilizado."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -5319,7 +5296,7 @@
   },
   "pediatria-0424": {
     "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n### Loder (1993)\n| Tipo | Definição | Necrose |\n|---|---|---|\n| estável | anda (com ou sem muletas) | cerca de ==0%== |\n| ==instável== | ==não consegue andar== | até ==47%== |\n\n- Melhor preditor de necrose que a cronologia (aguda/crônica) ou o grau de desvio.\n\n> **Na prova:** Loder = ==capacidade de apoio== (estável × instável)",
-    "correta": "**Capacidade de apoio.**\n- Estável anda; instável não.\n- Prediz necrose.",
+    "correta": "**Capacidade de apoio.**\n- Estável anda; instável não.\n- Instável: necrose em até 47%.",
     "incorretas": {
       "A": "**Porcentagem do desvio.**\n- Wilson.",
       "B": "**Tempo.**\n- Aguda × crônica.",
@@ -5406,14 +5383,14 @@
     "conferido": false
   },
   "pediatria-0433": {
-    "conceito": "### Deformidade de Sprengel\n- Falha da descida da escápula; pequena, alta, ==rodada medialmente==.\n- ==Osso omovertebral== (ou banda fibrosa) em cerca de 1/3: liga o ângulo superior à coluna cervical.\n- Associações: Klippel-Feil, escoliose, costelas anômalas, rim.\n\n### Cirurgia\n| Aspecto | Detalhe |\n|---|---|\n| idade | ==após 3 anos== (ideal 3 a 8) |\n| técnicas | Woodward (desinserção medial), Green (desinserção na escápula), Wilkinson-Campbell |\n| ==omovertebral== | ressecção ==extraperiosteal== (subperiosteal regenera a ponte) |\n| risco | lesão do ==plexo braquial== ao descer: osteotomia da clavícula protege |\n\n### Cavendish\n| Grau | Aparência |\n|---|---|\n| ==1 (muito leve)== | ombros nivelados; ==invisível vestido== |\n| 2 (leve) | ombros nivelados; saliência ==visível vestido== |\n| 3 (moderado) | ombro elevado 2 a 5 cm |\n| 4 (grave) | ombro elevado > 5 cm, escápula perto do occipital |\n\n- Graus 3 e 4 costumam indicar cirurgia.\n\n> **Na prova:** omovertebral = ressecção ==extraperiosteal, depois dos 3 anos==.",
-    "correta": "**Altura da escápula.**\n- Graus pela elevação visível.\n- 2 a 5 cm = grau 3; > 5 cm = grau 4.",
+    "conceito": "### Deformidade de Sprengel\n- **O que é:** falha na **descida da escápula** durante a vida embrionária. A escápula fica **alta**, pequena, **medializada** e **rodada** (ângulo inferior voltado medialmente).\n- **Osso omovertebral:** em ~1/3 dos casos, uma ponte (óssea, cartilaginosa ou fibrosa) entre a escápula e a **coluna cervical**.\n- **Associações:**\n  - **Klippel-Feil;**\n  - escoliose e costelas anômalas;\n  - anomalias **renais**;\n  - espinha bífida.\n\n### Classificação de Cavendish (clínica, estética)\nBaseada na ==altura da escápula== e na visibilidade da deformidade:\n| Grau | Descrição |\n|---|---|\n| I | muito leve; ombros nivelados; **invisível vestido** |\n| II | leve; quase nivelados, mas com saliência visível na base do pescoço |\n| III | moderado; ombro **2 a 5 cm** mais alto |\n| IV | grave; escápula muito alta, com o ângulo superior perto do **occipital** |\n\n### Tratamento\n- **Graus I e II:** observação.\n- **Graus III e IV:** cirurgia, idealmente entre ~3 e 8 anos:\n  - **Woodward** (reinserção do trapézio e dos romboides mais abaixo);\n  - **Green;**\n  - ressecção do osso omovertebral.\n- **Risco:** lesão do **plexo braquial**. Considerar **osteotomia da clavícula**.\n\n> **Na prova:** Cavendish = ==altura da escápula== (grau estético).",
+    "correta": "**Altura da escápula.**",
     "incorretas": {
-      "A": "**Rotação.**\n- Não entra na escala.",
-      "B": "**Forma.**\n- Não é o critério.",
-      "D": "**Mobilidade.**\n- Avaliada à parte."
+      "A": "**Rotação.**\n- Faz parte da deformidade, mas não é a base de Cavendish.",
+      "B": "**Forma.**\n- Idem.",
+      "D": "**Mobilidade.**\n- Pesa na indicação cirúrgica, não na classificação."
     },
-    "geradoEm": "2026-09-24",
+    "geradoEm": "2026-09-23",
     "conferido": false
   },
   "pediatria-0434": {
@@ -5608,12 +5585,12 @@
     "conferido": false
   },
   "pediatria-0452": {
-    "conceito": "### Evolução angular fisiológica (Salenius)\n| Idade | Alinhamento |\n|---|---|\n| nascimento a 1,5-2 anos | ==varo== (máximo ao nascer) |\n| 1,5 a 2 anos | neutro |\n| ==3 a 4 anos== | ==valgo máximo== (cerca de 10 a 12°) |\n| 7 anos | valgo adulto (cerca de 5 a 7°) |\n\n### Sinais de patologia\n- Assimetria, deformidade fora da curva esperada, baixa estatura, dor, progressão.\n- Varo após 2 anos: Blount, raquitismo, displasias.\n- Valgo > 15° ou distância intermaleolar > 8 cm após 7 anos: investigar.\n\n### Tratamento do valgo patológico\n- ==Crescimento guiado== (placa em 8 medial) antes do fechamento fisário.\n\n> **Na prova:** valgo fisiológico máximo = entre ==2 e 4 anos==",
-    "correta": "**2 a 4 anos.**\n- Valgo máximo de 10 a 12°.\n- Regride até os 7 anos.",
+    "conceito": "### Evolução angular fisiológica (Salenius)\n| Idade | Alinhamento |\n|---|---|\n| nascimento a 1,5-2 anos | ==varo== (máximo ao nascer) |\n| 1,5 a 2 anos | neutro |\n| ==3 a 4 anos== | ==valgo máximo== (cerca de 10 a 12°) |\n| 7 anos | valgo adulto (cerca de 5 a 7°) |\n\n### Sinais de patologia\n- Assimetria, deformidade fora da curva esperada, baixa estatura, dor, progressão.\n- Varo após 2 anos: Blount, raquitismo, displasias.\n- Valgo > 15° ou distância intermaleolar > 8 cm após 7 anos: investigar.\n\n### Tratamento do valgo patológico\n- ==Crescimento guiado== (placa em 8 medial) antes do fechamento fisário.\n\n> **Na prova:** valgo fisiológico máximo = ==por volta de 4 anos== (3 a 4).",
+    "correta": "**Dois a quatro anos.**\n- Valgo máximo por volta de 3 a 4 anos.\n- Estabiliza aos 7.",
     "incorretas": {
-      "A": "**0 a 2 anos.**\n- Fase de varo.",
-      "C": "**6 a 8 anos.**\n- Valgo adulto.",
-      "D": "**8 a 10 anos.**\n- Alinhamento estabilizado."
+      "A": "**Varo fisiológico.**\n- Até cerca de 2 anos.",
+      "C": "**Diminuindo.**\n- Rumo ao adulto.",
+      "D": "**Adulto.**\n- Já estabilizado."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -5664,11 +5641,11 @@
   },
   "pediatria-0457": {
     "conceito": "### DDQ: exame conforme a idade\n| Idade | Achado útil |\n|---|---|\n| recém-nascido a 2-3 meses | ==Ortolani== (reduz) e ==Barlow== (luxa) |\n| ==após 3 meses== | ==limitação da abdução (Hart)==, Galeazzi, assimetria de pregas |\n| marcha | Trendelenburg, claudicação, hiperlordose (bilateral) |\n\n### Sinais\n| Sinal | O que é |\n|---|---|\n| ==Hart== | abdução limitada com quadril e joelho fletidos (adutores retraídos) |\n| Galeazzi | joelho mais baixo com quadris fletidos |\n| Peter-Bade | pregas assimétricas (pouco específico) |\n| Klisic | linha trocanter-EIAS passa abaixo do umbigo |\n\n### Imagem\n| Idade | Exame |\n|---|---|\n| < 4 a 6 meses | ultrassom (Graf) |\n| > 4 a 6 meses | radiografia (Hilgenreiner, Perkins, Shenton, índice acetabular) |\n\n### Bilateral\n- Abdução limitada ==simétrica== passa despercebida: a assimetria é o que chama atenção.\n- Na bilateral: hiperlordose, marcha anserina, períneo alargado.\n\n> **Na prova:** principal sinal após os 3 meses = ==limitação da abdução==",
-    "correta": "**Limitação da abdução.**\n- Sinal mais confiável após 3 meses.\n- Adutores retraídos.",
+    "correta": "**Limitação da abdução.**\n- Sinal mais confiável após 3 meses.\n- Adutores retraídos pelo quadril luxado.",
     "incorretas": {
       "B": "**Galeazzi.**\n- Falha na bilateral.",
       "C": "**Pregas.**\n- Pouco específicas.",
-      "D": "**Discrepância.**\n- Falha na bilateral."
+      "D": "**Discrepância.**\n- Consequência, não sinal principal; falha na bilateral."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -5686,15 +5663,15 @@
   },
   "pediatria-0460": {
     "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** sinovite transitória = ==meninos, idade média de 6 anos==",
-    "correta": "**Meninos, idade média de 6 anos.**\n- Predomínio masculino (2:1).\n- Faixa de 3 a 8 anos.",
+    "correta": "**Meninos, cerca de 6 anos.**\n- Faixa de 3 a 8 anos.\n- Predomínio masculino.",
     "incorretas": {
-      "A": "**Meninas.**\n- Predomina em meninos.",
-      "B": "**Meninas e 2 anos.**\n- Sexo e idade errados.",
-      "D": "**2 anos.**\n- Abaixo do pico."
+      "A": "**Sexo errado.**\n- Meninos.",
+      "B": "**Sexo e idade errados.**\n- Mais velhos.",
+      "D": "**Idade errada.**\n- Média de 6 anos."
     },
     "referencias": [
-      "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
-      "POSNA Study Guide. https://posna.org/physician-education/study-guide"
+      "What is the clinical course of transient synovitis in children: a systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC3831260/",
+      "The prevalence of Legg-Calvé-Perthes disease among paediatric patients with transient synovitis: systematic review and meta-analysis. https://pmc.ncbi.nlm.nih.gov/articles/PMC11391785/"
     ],
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -5723,23 +5700,30 @@
   },
   "pediatria-0463": {
     "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n> **Na prova:** Herring = ==AP na fase de fragmentação==.",
-    "correta": "**AP, fragmentação.**\n- Mede o pilar lateral.\n- Melhor preditor na fase ativa.",
+    "correta": "**AP na fragmentação.**\n- Quantifica a altura do pilar lateral.\n- Antes disso, o colapso ainda não está definido.",
     "incorretas": {
-      "A": "**Perfil e necrose.**\n- Salter-Thompson.",
-      "B": "**Perfil.**\n- Herring usa AP.",
-      "C": "**Necrose.**\n- Ainda sem colapso."
+      "A": "**Incidência e fase erradas.**\n- Nem perfil nem necrose.",
+      "B": "**Incidência errada.**\n- Pilar lateral no AP.",
+      "C": "**Fase errada.**\n- Na necrose subestima."
     },
+    "referencias": [
+      "Pediatric Orthopaedic Society of North America (POSNA). Legg-Calve-Perthes Disease. https://posna.org/physician-education/study-guide/legg-calve-perthes-disease"
+    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
   "pediatria-0464": {
     "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n> **Na prova:** PC atetoide = ==extrapiramidal==.",
-    "correta": "**Extrapiramidal.**\n- Núcleos da base.\n- Kernicterus, asfixia a termo.",
+    "correta": "**Extrapiramidal.**\n- Núcleos da base.\n- Movimentos involuntários e tônus flutuante.",
     "incorretas": {
-      "A": "**Piramidal.**\n- Espástico.",
-      "B": "**Cerebelar.**\n- Atáxico.",
-      "C": "**Ventricular.**\n- Leucomalácia periventricular causa diplegia espástica."
+      "A": "**Espástico.**\n- Hiperreflexia e sinergias.",
+      "B": "**Atáxico.**\n- Dismetria e desequilíbrio.",
+      "C": "**Não é sistema motor.**\n- Periventricular associa-se à diplegia espástica."
     },
+    "referencias": [
+      "Pediatric Orthopaedic Society of North America (POSNA). Cerebral Palsy. https://posna.org/physician-education/study-guide/cerebral-palsy",
+      "Cerebral palsy in children: A clinical practice review. Curr Probl Pediatr Adolesc Health Care. 2024. https://pubmed.ncbi.nlm.nih.gov/39168782/"
+    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
@@ -5778,42 +5762,41 @@
   },
   "pediatria-0468": {
     "conceito": "### Especificidade das fraturas no abuso (Kleinman)\n| Alta | Moderada | Baixa (comuns) |\n|---|---|---|\n| lesão metafisária clássica | múltiplas, bilaterais | clavícula |\n| costelas posteriores | em estágios diferentes de consolidação | diáfises de ossos longos |\n| ==escápula== | epifisárias (descolamentos) | crânio linear |\n| processos espinhosos | corpo vertebral | |\n| esterno | dedos | |\n| | crânio complexa | |\n\n### Conduta\n- Inventário esquelético em < 2 anos (repetir em 2 semanas).\n- Fundo de olho, TC/RM de crânio, exames de coagulação e metabolismo ósseo (OI, raquitismo).\n- ==Notificação obrigatória==.\n\n> **Na prova:** fratura de alta especificidade (Kleinman) = ==escápula== (e metafisária, costelas posteriores, processos espinhosos, esterno).",
-    "correta": "**Escápula.**\n- Alta especificidade (Kleinman).\n- Exige força incomum em lactentes.",
+    "correta": "**Escápula.**\n- Exige força incomum; rara por acidente.\n- Alta especificidade para abuso.",
     "incorretas": {
-      "A": "**Clavícula.**\n- Baixa especificidade.",
-      "C": "**Ossos longos.**\n- Diáfises: baixa especificidade.",
-      "D": "**Corpo vertebral.**\n- Moderada."
+      "A": "**Baixa especificidade.**\n- Comum em quedas e partos.",
+      "C": "**Baixa especificidade.**\n- Diáfises são comuns.",
+      "D": "**Moderada.**\n- Não alta."
     },
     "referencias": [
-      "AAP. Evaluating Young Children With Fractures for Child Abuse. https://doi.org/10.1542/peds.2024-070074",
-      "Kleinman PK. Diagnostic Imaging of Child Abuse. Cambridge University Press."
+      "American Academy of Pediatrics. Evaluating Young Children With Fractures for Child Abuse. Pediatrics. 2025. https://publications.aap.org/pediatrics/article/155/2/e2024070074/200638/Evaluating-Young-Children-With-Fractures-for-Child"
     ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
   "pediatria-0469": {
-    "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n> **Na prova:** pseudartrose congênita da tíbia = arqueamento ==anterolateral==.",
-    "correta": "**Anterolateral.**\n- Arqueamento pré-fratura.\n- NF1 em cerca de metade.",
+    "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n### Histologia\n- ==Hamartoma fibroso no periósteo espessado== (tecido fibroso proliferativo) que estrangula o osso.\n- Por isso a ressecção do periósteo doente faz parte do tratamento.\n\n> **Na prova:** pseudartrose congênita da tíbia = alteração no ==periósteo== com ==tecido fibroso==",
+    "correta": "**Anterolateral.**\n- Arqueamento da pseudartrose congênita.\n- NF1 em metade.",
     "incorretas": {
-      "B": "**Anteromedial.**\n- Hemimelia fibular.",
-      "C": "**Posterolateral.**\n- Não é típico.",
-      "D": "**Posteromedial.**\n- Benigno, com pé calcaneovalgo."
+      "B": "**Hemimelia fibular.**\n- Anteromedial.",
+      "C": "**Não é padrão.**\n- Posterolateral.",
+      "D": "**Benigno.**\n- Calcaneovalgo associado."
     },
-    "referencias": [
-      "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
-      "POSNA Study Guide. https://posna.org/physician-education/study-guide"
-    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
   "pediatria-0470": {
     "conceito": "### Medula presa na mielomeningocele\n| Aspecto | Dado |\n|---|---|\n| ancoragem na RM | ==comum== (quase todos após o fechamento) |\n| síndrome clínica | ==cerca de 30%== |\n\n### Sinais de tração (síndrome clínica)\n- Perda de força ou piora da marcha.\n- ==Escoliose que progride rápido==, deformidade nova no pé.\n- Espasticidade nova, dor lombar.\n- Piora vesical ou intestinal.\n\n### Diferencial de deterioração\n- Disfunção da ==derivação== (hidrocefalia), siringomielia, Chiari II.\n\n### Conduta\n- RM isolada não indica cirurgia; ==correlação clínica== e desancoragem se deterioração.\n\n> **Na prova:** medula presa na MMC = ==comum na RM, sintomática em cerca de 30%==.",
-    "correta": "**Comum, 30% com sinais.**\n- Quase todos ancorados na RM.\n- Síndrome clínica em cerca de 30%.",
+    "correta": "**Comum, 30% com sinais.**\n- Ancoragem radiológica é quase universal.\n- Só um terço tem síndrome clínica.",
     "incorretas": {
-      "A": "**Rara.**\n- Achado quase universal na RM.",
-      "B": "**Rara e 70%.**\n- Ambos errados.",
-      "D": "**70%.**\n- Sintomática em cerca de 30%."
+      "A": "**Não é rara.**\n- Proporção de sintomas certa.",
+      "B": "**Duplamente errada.**\n- Nem rara nem 70%.",
+      "D": "**Superestima.**\n- 70% sintomáticos não é o padrão."
     },
+    "referencias": [
+      "Tethered Cord Syndrome After Myelomeningocele Repair: literature update. https://pmc.ncbi.nlm.nih.gov/articles/PMC7560491/",
+      "Recurrent tethered cord: radiological investigation and management. https://pubmed.ncbi.nlm.nih.gov/24013330/"
+    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
@@ -5829,13 +5812,17 @@
     "conferido": false
   },
   "pediatria-0472": {
-    "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Por que glicina\n- Tripla hélice do colágeno: repetição ==Gly-X-Y==; a glicina, menor aminoácido, ocupa o centro da hélice.\n- Substituição da glicina por aminoácido maior ==impede o enrolamento==: colágeno qualitativamente anormal (tipos II, III, IV).\n- Quanto mais perto da extremidade C-terminal, mais grave.\n\n> **Na prova:** aminoácido do defeito na OI = ==glicina==",
-    "correta": "**Glicina.**\n- A cada terceira posição da hélice.\n- Substituição impede o enrolamento.",
+    "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Base molecular\n- Colágeno tipo I: tripla hélice com repetição ==Gly-X-Y== (glicina a cada terceiro aminoácido).\n- ==Substituição da glicina== (mutação de sentido trocado em COL1A1/COL1A2) impede o enrolamento: formas graves (II, III, IV).\n- Mutação que reduz a quantidade (haploinsuficiência): forma leve (I).\n\n> **Na prova:** aminoácido do defeito do colágeno na OI = ==glicina==",
+    "correta": "**Glicina.**\n- Presente a cada três posições da hélice.\n- Sua substituição desestrutura a tripla hélice.",
     "incorretas": {
-      "A": "**Lisina.**\n- Hidroxilada nas ligações cruzadas; não é o defeito típico.",
-      "C": "**Cisteína.**\n- Ausente na hélice madura.",
-      "D": "**Arginina.**\n- Substituições por arginina ocorrem, mas o alvo é a glicina."
+      "A": "**Não é o defeito clássico.**\n- Lisina é hidroxilada, mas não é o alvo.",
+      "C": "**Não é o defeito.**\n- Cisteína.",
+      "D": "**Não é o defeito.**\n- Arginina."
     },
+    "referencias": [
+      "Pediatric Orthopaedic Society of North America (POSNA). Osteogenesis Imperfecta. https://posna.org/physician-education/study-guide/osteogenesis-imperfecta",
+      "GeneReviews. COL1A1- and COL1A2-Related Osteogenesis Imperfecta. https://www.ncbi.nlm.nih.gov/books/NBK1295/"
+    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
@@ -5852,11 +5839,11 @@
   },
   "pediatria-0475": {
     "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Aitken em detalhe\n| Tipo | Cabeça | Acetábulo | Colo |\n|---|---|---|---|\n| A | presente | normal | pseudartrose que ==consolida== (coxa vara) |\n| ==B== | presente | adequado | ==pseudartrose do colo persistente==, sem conexão |\n| C | ausente | displásico | segmento curto com ossículo |\n| D | ausente | ausente | fêmur muito curto |\n\n> **Na prova:** pseudartrose do colo na DFFP = ==Aitken B==",
-    "correta": "**Tipo B.**\n- Cabeça presente, sem conexão ao colo.\n- Pseudartrose persistente.",
+    "correta": "**Tipo B.**\n- Cabeça presente sem conexão óssea com o fêmur.\n- Pseudartrose persistente do colo.",
     "incorretas": {
-      "A": "**Tipo A.**\n- Pseudartrose consolida.",
-      "C": "**Tipo C.**\n- Cabeça ausente.",
-      "D": "**Tipo D.**\n- Cabeça e acetábulo ausentes."
+      "A": "**Consolida.**\n- Vira coxa vara.",
+      "C": "**Cabeça ausente.**\n- Acetábulo displásico.",
+      "D": "**Grave.**\n- Sem cabeça nem acetábulo."
     },
     "geradoEm": "2026-09-24",
     "conferido": false
@@ -5911,24 +5898,31 @@
   },
   "pediatria-0480": {
     "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** recorrência anual da sinovite transitória = ==cerca de 4%== (veja o alerta).",
-    "correta": "**4%.**\n- Recorrência anual.\n- Recorrência frequente pede investigar Perthes.",
+    "correta": "**4%.**\n- Dado anual adotado pela fonte.\n- Doença benigna e autolimitada.",
     "incorretas": {
-      "A": "**0,4%.**\n- Subestimado.",
-      "C": "**14%.**\n- Superestimado.",
-      "D": "**24%.**\n- Superestimado."
+      "A": "**Subestima.**\n- 0,4%.",
+      "C": "**Superestima.**\n- Pode ser a taxa acumulada em séries longas.",
+      "D": "**Superestima.**\n- Muito alta."
     },
     "alerta": "As taxas de recorrência publicadas variam conforme o período de seguimento; o valor de 4% é o dado anual adotado pelo gabarito da prova.",
+    "referencias": [
+      "Transient synovitis of the hip in children: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC3029041/",
+      "Transient synovitis: recurrence and clinical course. https://pubmed.ncbi.nlm.nih.gov/1701691/"
+    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
   "pediatria-0481": {
     "conceito": "### Especificidade das fraturas no abuso (Kleinman)\n| Alta | Moderada | Baixa (comuns) |\n|---|---|---|\n| lesão metafisária clássica | múltiplas, bilaterais | clavícula |\n| costelas posteriores | em estágios diferentes de consolidação | diáfises de ossos longos |\n| ==escápula== | epifisárias (descolamentos) | crânio linear |\n| processos espinhosos | corpo vertebral | |\n| esterno | dedos | |\n| | crânio complexa | |\n\n### Conduta\n- Inventário esquelético em < 2 anos (repetir em 2 semanas).\n- Fundo de olho, TC/RM de crânio, exames de coagulação e metabolismo ósseo (OI, raquitismo).\n- ==Notificação obrigatória==.\n\n> **Na prova:** fratura de alta especificidade (Kleinman) = ==escápula== (e metafisária, costelas posteriores, processos espinhosos, esterno).",
-    "correta": "**Escápula, esterno ou metafisárias.**\n- Todas de alta especificidade.\n- Com costelas posteriores e espinhosos.",
+    "correta": "**Escápula, esterno ou metafisárias.**\n- Grupo de alta especificidade de Kleinman.\n- Também costelas posteriores e processos espinhosos.",
     "incorretas": {
       "B": "**Diafisárias.**\n- Baixa especificidade.",
       "C": "**Clavícula e corpo vertebral.**\n- Baixa e moderada.",
-      "D": "**Clavícula e diafisárias.**\n- Ambas pouco específicas."
+      "D": "**Todas de baixa ou moderada.**\n- Nenhuma alta."
     },
+    "referencias": [
+      "https://publications.aap.org/pediatrics/article/155/2/e2024070074/200638/Evaluating-Young-Children-With-Fractures-for-Child"
+    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
@@ -5977,13 +5971,17 @@
     "conferido": false
   },
   "pediatria-0487": {
-    "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Clínica por idade\n| Idade | Apresentação |\n|---|---|\n| ==criança pequena== | ==ressalto (clunk)== audível e ==perda da extensão==, geralmente indolor (Wrisberg instável) |\n| criança maior/adolescente | dor, derrame, bloqueio (lesão do discoide) |\n\n> **Na prova:** Wrisberg = ==sem ligamento coronário== (instável)",
-    "correta": "**Wrisberg sem coronário.**\n- Preso só pelo ligamento de Wrisberg.\n- Hipermóvel: ressalto.",
+    "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n> **Na prova:** tipo Wrisberg ==não possui o ligamento coronário== (fixação tibial posterior) (veja o alerta).",
+    "correta": "**Wrisberg sem ligamento coronário.**\n- Sem fixação tibial posterior: hipermóvel.\n- Estalido no joelho.",
     "incorretas": {
-      "A": "**Lateral.**\n- Discoide é quase sempre lateral.",
-      "B": "**Bilateral até 20%.**\n- Mais que 5%.",
-      "C": "**Tipo 3 é Wrisberg.**\n- Não tem aderência posterior."
+      "A": "**Lateral.**\n- Medial é raro.",
+      "B": "**Mais que 5%.**\n- Até 20% bilateral.",
+      "C": "**Descreve o tipo I.**\n- O III é o Wrisberg."
     },
+    "alerta": "A nomenclatura anatômica varia entre autores: alguns descrevem ausência do ligamento meniscotibial posterior, outros utilizam o termo ligamento coronário posterior. O conceito essencial é deficiência da fixação tibial posterior com hipermobilidade.",
+    "referencias": [
+      "https://pubmed.ncbi.nlm.nih.gov/29059110/"
+    ],
     "geradoEm": "2026-09-24",
     "conferido": false
   },
@@ -8892,6 +8890,36 @@
       "Ortopedia e Traumatologia, 1ª edição (Motta Filho, Barros Filho), Cap. 12.5"
     ],
     "geradoEm": "2026-09-26",
+    "conferido": false
+  },
+  "pediatria-0317": {
+    "conceito": "### Síndrome de Grisel: apresentação\n- **Quem:** criança após **infecção** de vias aéreas superiores ou **cirurgia** de orofaringe (adenoamigdalectomia).\n- **Quadro:** ==torcicolo doloroso== e **fixo** em \"**cock-robin**\" (pintarroxo):\n  - **inclinação lateral** da cabeça para um lado;\n  - **rotação do queixo** para o lado oposto à inclinação;\n  - leve flexão.\n- **Espasmo:** o **ECM do lado para onde o queixo aponta** fica tenso, tentando corrigir a deformidade (no torcicolo muscular, ao contrário, o ECM encurtado é a causa).\n- **Diagnóstico:** **TC** com rotação para os dois lados (TC dinâmica), que mostra C1-C2 \"travados\". Classificar por **Fielding e Hawkins**.\n\n### Tratamento\n- **Precoce** (menos de 1 semana): colar, anti-inflamatório, antibiótico.\n- **1 a 4 semanas:** tração (halter ou halo).\n- **Crônica, irredutível ou recidivante:** redução e **artrodese C1-C2**.\n\n### Sobre o lado do queixo\nA lateralidade depende da convenção usada para \"lado da lesão\" (ver o alerta). O dado robusto é o ==torcicolo doloroso e fixo==.\n\n> **Na prova:** Grisel = torcicolo ==doloroso== em cock-robin, após infecção.",
+    "correta": "**Com dor, inclinação lateral e queixo rodado para o lado da lesão** (gabarito).",
+    "incorretas": {
+      "A": "**Sem dor, queixo contralateral.**\n- O torcicolo de Grisel é **doloroso**.",
+      "B": "**Sem dor.**\n- Mesma objeção.",
+      "C": "**Com dor, queixo contralateral.**\n- Acerta a dor, mas usa a direção oposta à convenção do gabarito."
+    },
+    "alerta": "A direção do queixo varia conforme se denomina o lado da subluxação, da inclinação ou do espasmo muscular. O achado robusto é o torcicolo doloroso fixo; a lateralidade precisa ser conferida na figura ou fonte original.",
+    "referencias": [
+      "Fielding JW, Hawkins RJ. Atlanto-axial rotatory fixation. J Bone Joint Surg Am. 1977;59:37-44.",
+      "Tachdjian's Pediatric Orthopaedics. 6th ed. Elsevier; 2021."
+    ],
+    "geradoEm": "2026-09-23",
+    "conferido": false
+  },
+  "pediatria-0389": {
+    "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Indicação cirúrgica\n| Parâmetro | Limite |\n|---|---|\n| ==ângulo HE== | ==> 60°== (ou 45 a 60° progressivo) |\n| ==cervicodiafisário== | ==< 100 a 110°== |\n| clínica | Trendelenburg, progressão |\n\n- Meta da osteotomia valgizante: HE < 38° e cervicodiafisário ≈ 140°.\n\n> **Na prova:** cirurgia na coxa vara = ==cervicodiafisário < 100° e HE > 60°==",
+    "correta": "**< 100° e > 60°.**\n- Colo muito varo.\n- Fise verticalizada.",
+    "incorretas": {
+      "A": "**HE < 60°.**\n- Tende a estabilizar.",
+      "C": "**Cervicodiafisário > 100°.**\n- Varo menos grave.",
+      "D": "**Invertido.**\n- Ambos fora do limite cirúrgico."
+    },
+    "referencias": [
+      "Surgical correction of coxa vara: Evaluation of neck shaft angle, Hilgenreiner-epiphyseal angle for indication of recurrence. PMCID: PMC6494758; PMID: 31061596."
+    ],
+    "geradoEm": "2026-09-24",
     "conferido": false
   }
 }

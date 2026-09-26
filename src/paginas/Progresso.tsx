@@ -43,7 +43,7 @@ export function Progresso() {
     // Anuladas ficam de fora, como em todo o resto do site: elas não entram em
     // sessão, não recebem comentário e, no denominador, tornariam os 100%
     // inalcançáveis por construção.
-    const validas = indice.questoes.filter((q) => q.an === 0)
+    const validas = indice.questoes.filter((q) => q.an === 0 && !q.dup)
     const total = validas.length
     const ia = validas.filter((q) => q.cia).length
     const comunidade = validas.filter((q) => q.cc).length
