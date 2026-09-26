@@ -2001,8 +2001,8 @@
       "subtemas": [
         "Lombalgia"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Na avaliação da dor lombar, a piora quando o paciente permanece mais de 30 minutos em pé e alívio ao sentar-se ou deitar-se são características da etiologia",
       "imagens": [],
@@ -2044,8 +2044,8 @@
       "subtemas": [
         "Estenose de Canal"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Na estenose foraminal cervical, o movimento que pode exacerbar a dor radicular é a",
       "imagens": [],
@@ -2087,8 +2087,8 @@
       "subtemas": [
         "Trauma Raquimedular e Síndromes Medulares"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "No trauma raquimedular, a recuperação do choque medular ocorre usualmente entre",
       "imagens": [],
@@ -2181,8 +2181,8 @@
         "Biomecânica",
         "Exame Físico"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Na biomecânica da coluna cervical, de todo movimento de rotação, o que ocorre entre C1 e C2 corresponde a",
       "imagens": [],
@@ -13019,6 +13019,93 @@
         "arquivo": "taro2014.pdf",
         "pagina": 13,
         "numeroOriginal": 61
+      }
+    },
+    {
+      "id": "coluna-0313",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose",
+        "Ortopedia pediátrica"
+      ],
+      "prova": "TEOT",
+      "ano": 2024,
+      "dificuldade": null,
+      "enunciado": "Na escoliose idiopática infantil, o método desenvolvido por MEHTA para avaliar o potencial de progressão é por meio da diferença na mensuração do ângulo entre",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "arcos costais e vértebra."
+        },
+        {
+          "letra": "B",
+          "texto": "pedículos e processo espinhoso."
+        },
+        {
+          "letra": "C",
+          "texto": "vértebra superior e vértebra apical."
+        },
+        {
+          "letra": "D",
+          "texto": "vértebra apical e vértebra neutra inferior."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT_2024_prova_azul.pdf",
+        "pagina": 23,
+        "numeroOriginal": 81
+      }
+    },
+    {
+      "id": "coluna-0314",
+      "tema": "Coluna",
+      "subtemas": [
+        "Estenose de Canal"
+      ],
+      "prova": "TEOT",
+      "ano": 2024,
+      "dificuldade": null,
+      "enunciado": "A estenose de canal cervical associada à cervicobraquialgia tem como um dos diagnósticos diferenciais o tumor de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "MERKEL."
+        },
+        {
+          "letra": "B",
+          "texto": "WARTHIN."
+        },
+        {
+          "letra": "C",
+          "texto": "PANCOAST."
+        },
+        {
+          "letra": "D",
+          "texto": "KRUKENBERG."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT_2024_prova_azul.pdf",
+        "pagina": 24,
+        "numeroOriginal": 83
       }
     }
   ]

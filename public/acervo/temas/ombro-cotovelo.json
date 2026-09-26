@@ -2353,8 +2353,8 @@
       "subtemas": [
         "Lesões do Manguito Rotador"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "O diagnóstico mais provável é a",
       "imagens": [
@@ -2404,8 +2404,8 @@
         "Exame Físico",
         "Lesões do Manguito Rotador"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Na avaliação das lesões do manguito rotador, o teste demonstrado é o de",
       "imagens": [
@@ -2454,8 +2454,8 @@
       "subtemas": [
         "Lesões do Manguito Rotador"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "A imagem de ressonância magnética apresentada demonstra lipossubstituição do subescapular GOUTALLIER grau",
       "imagens": [
@@ -2504,8 +2504,8 @@
       "subtemas": [
         "Lesões do Manguito Rotador"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Paciente de 58 anos, queda ao solo com membro superior em hiperextensão, apresentando lesão isolada do subescapular há 5 anos e com as imagens demonstradas a seguir. O tratamento mais bem indicado é",
       "imagens": [
@@ -2554,8 +2554,8 @@
       "subtemas": [
         "Artrose e artroplastia de ombro"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "A artroplastia reversa de ombro tem como princípio biomecânico a",
       "imagens": [],
@@ -2691,8 +2691,8 @@
       "subtemas": [
         "Lesões do Manguito Rotador"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "A lesão do manguito rotador do tipo PASTA decorre de encurtamento capsular",
       "imagens": [],
@@ -2734,8 +2734,8 @@
       "subtemas": [
         "Luxação e Instabilidade do Ombro"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Na avaliação da instabilidade glenoumeral, o teste de apreensão anterior positivo em 45 graus de abdução e rotação externa é indicativo da presença de",
       "imagens": [],
@@ -2777,8 +2777,8 @@
       "subtemas": [
         "Instabilidade do Cotovelo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "A instabilidade do cotovelo demonstrada na imagem a seguir é causada por insuficiência da banda",
       "imagens": [
@@ -2827,8 +2827,8 @@
       "subtemas": [
         "Rigidez do Cotovelo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Na avaliação do cotovelo rígido devido à ossificação heterotópica, quando ela se localiza dentro da musculatura flexora e em um plano único, sua causa mais provável é",
       "imagens": [],
@@ -2870,8 +2870,8 @@
       "subtemas": [
         "Lesões Tendíneas"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Na abordagem anterior de HENRY para fixação da rotura do tendão distal do bíceps por via única, a complicação mais comum é a lesão do nervo",
       "imagens": [],
@@ -19799,6 +19799,50 @@
         "arquivo": "taro2013.pdf",
         "pagina": 19,
         "numeroOriginal": 94
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0466",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Lesões do Manguito Rotador",
+        "Artroscopia de ombro"
+      ],
+      "prova": "TEOT",
+      "ano": 2023,
+      "dificuldade": null,
+      "enunciado": "Na lesão do manguito rotador, o sinal da vírgula, visualizado na artroscopia é encontrado em rupturas retraídas do tendão",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "infraespinal."
+        },
+        {
+          "letra": "B",
+          "texto": "supraespinal."
+        },
+        {
+          "letra": "C",
+          "texto": "subescapular."
+        },
+        {
+          "letra": "D",
+          "texto": "redondo menor."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT_2023_prova_verde.pdf",
+        "pagina": 19,
+        "numeroOriginal": 74
       }
     }
   ]

@@ -1619,8 +1619,8 @@
       "subtemas": [
         "Artrose e Artroplastia do Quadril"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Na artroplastia do quadril, para diminuir o estresse no osso trabecular da pelve com um componente acetabular cimentado, deve-se utilizar",
       "imagens": [],
@@ -1662,8 +1662,8 @@
       "subtemas": [
         "Anatomia"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Na via de acesso lateral à coxa, os ramos perfurantes da artéria femoral profunda são",
       "imagens": [],
@@ -1705,8 +1705,8 @@
       "subtemas": [
         "Anatomia"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "O ramo profundo da artéria circunflexa femoral medial emerge na região posterior do fêmur entre os",
       "imagens": [],
@@ -1748,8 +1748,8 @@
       "subtemas": [
         "Osteonecrose"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "No diagnóstico diferencial da osteonecrose da cabeça femoral, a característica da osteoporose transitória na ressonância magnética é",
       "imagens": [],
@@ -1791,8 +1791,8 @@
       "subtemas": [
         "Anatomia"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "A estrutura assinalada pela seta é o nervo",
       "imagens": [
@@ -1841,8 +1841,8 @@
       "subtemas": [
         "Fraturas Periprotéticas"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "Na fratura periprotética femoral, a classificação de VANCOUVER fundamenta-se na",
       "imagens": [],
@@ -20661,6 +20661,49 @@
         "arquivo": "Capitulo_15.pdf",
         "pagina": 12,
         "numeroOriginal": null
+      }
+    },
+    {
+      "id": "quadril-0476",
+      "tema": "Quadril",
+      "subtemas": [
+        "Artroscopia de quadril"
+      ],
+      "prova": "TEOT",
+      "ano": 2024,
+      "dificuldade": null,
+      "enunciado": "Na artroscopia do quadril, o primeiro portal a ser realizado na técnica \"de dentro para fora\" (inside-out) é o",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "anterior."
+        },
+        {
+          "letra": "B",
+          "texto": "anterolateral."
+        },
+        {
+          "letra": "C",
+          "texto": "posterolateral."
+        },
+        {
+          "letra": "D",
+          "texto": "anterior acessório."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT_2024_prova_azul.pdf",
+        "pagina": 25,
+        "numeroOriginal": 90
       }
     }
   ]
