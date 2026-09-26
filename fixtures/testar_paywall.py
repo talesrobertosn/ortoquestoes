@@ -19,6 +19,8 @@ ENV_EXEMPLO = (RAIZ / ".env.example").read_text()
 MIGRACAO_ADMIN = (RAIZ / "supabase/migrations/202609231450_admin_assinaturas.sql").read_text()
 MIGRACAO_ADMIN_EVENTOS = (RAIZ / "supabase/migrations/202609261540_admin_eventos.sql").read_text()
 PAGINA_ADMIN = (RAIZ / "src/paginas/AdminAssinaturas.tsx").read_text()
+PAGINA_ASSINATURA = (RAIZ / "src/paginas/Assinatura.tsx").read_text()
+TERMOS = (RAIZ / "src/paginas/Termos.tsx").read_text()
 
 obrigatorios = [
     "paywall_ativo boolean not null default false",
@@ -128,8 +130,13 @@ assert "{ acao: 'sincronizar_cobranca' }" in RESUMO_ASSINATURA
 assert "!proximoEstado.ultima_cobranca_em" not in RESUMO_ASSINATURA
 for trecho in ("Falha no pagamento", "Reembolsada", "Pendente", "Cancelada", "Em dia"):
     assert trecho in RESUMO_ASSINATURA, f"Mensagem de estado ausente: {trecho}"
-for trecho in ("paywall_ativo=false", "pagamentos_ativos=false", "VITE_PAGAMENTOS_HABILITADOS=false", "WCS-52311"):
+for trecho in ("paywall_ativo=false", "VITE_LIMITES_HABILITADOS=false", "WCS-52311", "atendimento manual", "sem confirmação do provedor"):
     assert trecho in ROTEIRO_ROLLBACK, f"Roteiro seguro incompleto: {trecho}"
+for trecho in ("VITE_LIMITES_HABILITADOS", "acesso gratuito está sem limite diário nesta fase", "atendimento manual"):
+    assert trecho in PAGINA_ASSINATURA, f"Informação pré-compra ausente: {trecho}"
+assert "reembolso é integral e automático" not in PAGINA_ASSINATURA
+for trecho in ("assinaturas opcionais", "R$ 39,90", "R$ 179,90", "R$ 239,90", "sete dias", "tratado manualmente"):
+    assert trecho in TERMOS, f"Termos de assinatura incompletos: {trecho}"
 
 for trecho in (
     "create table if not exists public.administradores",

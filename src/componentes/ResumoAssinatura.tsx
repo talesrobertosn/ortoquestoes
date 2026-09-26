@@ -61,7 +61,7 @@ export function ResumoAssinatura() {
     } catch (erro) {
       const texto = erro instanceof Error ? erro.message : ''
       definirMensagem(texto.includes('Mercado Pago não confirmou')
-        ? 'Não recebemos confirmação do reembolso. Atualize a página e confira o pagamento no Mercado Pago antes de tentar novamente.'
+        ? 'Não recebemos confirmação do reembolso. Sua assinatura não foi alterada. Entre em contato pelo canal do site para atendimento manual da garantia; confira o pagamento no Mercado Pago antes de tentar novamente.'
         : 'Não foi possível confirmar o resultado da solicitação. Atualize a página e confira o estado no Mercado Pago antes de tentar novamente.')
     } finally { definirProcessando(false) }
   }

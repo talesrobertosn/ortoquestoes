@@ -13,6 +13,7 @@ const PLANOS = [
   { id: 'anual', nome: 'Anual', total: 239.9, meses: 12, destaque: true, chamada: 'O ano todo de estudo pela metade do preço.' },
 ] as const
 const pagamentosHabilitados = import.meta.env.VITE_PAGAMENTOS_HABILITADOS === 'true'
+const limitesHabilitados = import.meta.env.VITE_LIMITES_HABILITADOS === 'true'
 
 interface MetricasConta { respostas_total: number; sequencia: number; plano: string | null; status_assinatura: string | null; fim_periodo: string | null; ultima_cobranca_em: string | null; cancelar_ao_fim: boolean }
 
@@ -63,7 +64,9 @@ export function Assinatura() {
           <p className="vp-heroi__selo"><Icone nome="raio" tamanho={16} /> Plano ilimitado</p>
           <h1>Questões sem limite. Preparação sem pausa.</h1>
           <p className="vp-heroi__lide">
-            {nome ? `${nome}, o` : 'O'} plano gratuito libera 20 questões por dia. Com o plano ilimitado, você responde quantas quiser, no dia em que render, e ainda mantém o OrtoQuestões no ar.
+            {nome ? `${nome}, o` : 'O'} {limitesHabilitados
+              ? 'plano gratuito libera 20 questões por dia. Com o plano ilimitado, você responde quantas quiser e ainda mantém o OrtoQuestões no ar.'
+              : 'acesso gratuito está sem limite diário nesta fase. A assinatura é opcional, apoia o projeto e mantém o acesso ilimitado caso o limite gratuito seja ativado.'}
           </p>
           <div className="vp-heroi__acoes">
             <a className="botao botao--claro botao--grande" href="#planos" onClick={(e) => { e.preventDefault(); document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' }) }}>Ver os planos</a>
@@ -74,9 +77,9 @@ export function Assinatura() {
         <div className="vp-contador" aria-hidden="true">
           <div className="vp-contador__cartao vp-contador__cartao--livre">
             <span>Gratuito hoje</span>
-            <strong>20 / 20</strong>
+            <strong>{limitesHabilitados ? '20 / 20' : 'Sem limite'}</strong>
             <span className="vp-contador__barra"><span style={{ width: '100%' }} /></span>
-            <small>Próximas questões amanhã</small>
+            <small>{limitesHabilitados ? 'Próximas questões amanhã' : 'Acesso gratuito nesta fase'}</small>
           </div>
           <div className="vp-contador__cartao vp-contador__cartao--pro">
             <span>Plano ilimitado</span>
@@ -126,8 +129,8 @@ export function Assinatura() {
       <section className="vp-secao">
         <header className="vp-secao__cabeca">
           <p className="vp-sobre">Gratuito ou ilimitado</p>
-          <h2>O gratuito é generoso. O ilimitado não tem teto.</h2>
-          <p>Vinte questões por dia bastam para muita gente manter a constância. O plano é para quem quer acelerar: fazer um simulado inteiro de uma vez, maratonar um tema antes da prova ou refazer tudo o que errou no mesmo dia.</p>
+          <h2>{limitesHabilitados ? 'O gratuito é generoso. O ilimitado não tem teto.' : 'Acesso livre agora. Apoio para manter o projeto.'}</h2>
+          <p>{limitesHabilitados ? 'Vinte questões por dia bastam para muita gente manter a constância. O plano é para quem quer acelerar.' : 'Nesta fase, o acesso gratuito não tem limite diário. A assinatura é uma forma opcional de apoiar o OrtoQuestões e assegurar acesso ilimitado se o limite gratuito for ativado.'}</p>
         </header>
         <div className="vp-comparativo" role="table" aria-label="Comparação entre gratuito e ilimitado">
           <div className="vp-comparativo__linha vp-comparativo__cabeca" role="row">
@@ -136,8 +139,8 @@ export function Assinatura() {
             <span role="columnheader" className="vp-comparativo__pro">Ilimitado</span>
           </div>
           {([
-            ['Questões por dia', '20 (as próximas liberam no dia seguinte)', 'Sem limite'],
-            ['Simulado de 50 ou 100 questões de uma vez', 'Em vários dias', 'Na hora'],
+            ['Questões por dia', limitesHabilitados ? '20 (as próximas liberam no dia seguinte)' : 'Sem limite nesta fase', 'Sem limite'],
+            ['Simulado de 50 ou 100 questões de uma vez', limitesHabilitados ? 'Em vários dias' : 'Na hora nesta fase', 'Na hora'],
             ['Comentário de todas as questões', true, true],
             ['Revisão espaçada e calendário', true, true],
             ['Desempenho por período, tema e confiança', true, true],
@@ -156,8 +159,8 @@ export function Assinatura() {
       <section className="vp-secao" id="planos">
         <header className="vp-secao__cabeca">
           <p className="vp-sobre">Planos</p>
-          <h2>Quanto mais tempo, menos você paga por mês</h2>
-          <p>O mesmo acesso ilimitado nos três planos. Muda só o compromisso, e o desconto.</p>
+          <h2>Escolha a periodicidade da assinatura</h2>
+          <p>O mesmo acesso ilimitado nos três planos. A renovação e o valor total variam conforme a periodicidade escolhida.</p>
         </header>
 
         <div className="vp-economia" aria-label="Custo por mês em cada plano">
@@ -211,9 +214,9 @@ export function Assinatura() {
       <section className="vp-garantia">
         <div className="vp-garantia__selo" aria-hidden="true"><strong>7</strong><span>dias</span></div>
         <div>
-          <h2>Risco zero para experimentar</h2>
+          <h2>Cancelamento e garantia</h2>
           <ul>
-            <li><strong>Garantia de 7 dias em cada cobrança.</strong> Não gostou? O reembolso é integral e automático, direto pelo botão.</li>
+            <li><strong>Garantia de 7 dias em cada cobrança.</strong> Solicite o reembolso integral pelo botão em Minha conta. Se o provedor não confirmar a solicitação, entre em contato conosco para atendimento manual; não alteramos o status antes da confirmação.</li>
             <li><strong>Cancele quando quiser.</strong> Sem atendimento, sem justificativa. O acesso segue até o fim do período já pago.</li>
             <li><strong>Seu histórico é seu.</strong> Cancelamento, vencimento ou falha de pagamento nunca apagam respostas, revisões ou desempenho. A conta só volta ao limite gratuito.</li>
           </ul>
@@ -231,11 +234,11 @@ export function Assinatura() {
 
       <section className="vp-secao faq vp-faq">
         <header className="vp-secao__cabeca"><p className="vp-sobre">Dúvidas</p><h2>Perguntas frequentes</h2></header>
-        <details><summary>Como funciona o limite do plano gratuito?</summary><p>Você pode registrar até 20 respostas novas por dia. Quando chega a 20, o site mostra quanto falta para liberar as próximas, que voltam no dia seguinte. Comentários, revisões e desempenho continuam abertos o tempo todo.</p></details>
+        <details><summary>Como funciona o limite do plano gratuito?</summary><p>{limitesHabilitados ? 'Você pode registrar até 20 respostas novas por dia. As próximas voltam no dia seguinte.' : 'O limite diário está desligado nesta fase, portanto o acesso gratuito também está sem limite de respostas. Se o limite for ativado futuramente, o patamar gratuito previsto é de 20 respostas novas por dia.'} Comentários, revisões e desempenho continuam abertos.</p></details>
         <details><summary>Como funciona o cancelamento?</summary><p>Por botão, nesta mesma página, sem justificativa. Fora da garantia, ele impede cobranças futuras e mantém o acesso até o fim do período já pago.</p></details>
-        <details><summary>Como funciona a garantia?</summary><p>Até 7 dias depois de cada cobrança, o reembolso é integral e automático. Ele cancela as cobranças futuras e devolve a conta ao limite gratuito. Depois desse prazo não há reembolso proporcional.</p></details>
+        <details><summary>Como funciona a garantia?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pode pedir reembolso integral em Minha conta. Se a solicitação automática não for confirmada pelo Mercado Pago, use o canal de contato para atendimento manual. O acesso pago só é encerrado após confirmação do reembolso. Depois desse prazo não há reembolso proporcional por esta garantia.</p></details>
         <details><summary>O que acontece com meu histórico se eu cancelar?</summary><p>Nada. Respostas, revisões, favoritas, anotações e desempenho ficam guardados. A conta apenas volta ao limite gratuito.</p></details>
-        <details><summary>O plano muda as revisões ou os comentários?</summary><p>Não. Revisões, calendário e comentários são iguais no gratuito e no ilimitado. O plano remove o limite diário de respostas.</p></details>
+        <details><summary>O plano muda as revisões ou os comentários?</summary><p>Não. Revisões, calendário e comentários são iguais no gratuito e no ilimitado. {limitesHabilitados ? 'O plano remove o limite diário de respostas.' : 'Nesta fase, o acesso gratuito também não tem limite diário.'}</p></details>
         <details><summary>Qual plano vale mais a pena?</summary><p>Se você está a mais de seis meses da prova, o anual sai pela metade do preço do mensal. Para uma reta final curta, o mensal ou o semestral resolvem sem compromisso longo.</p></details>
       </section>
 
