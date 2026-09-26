@@ -16,6 +16,7 @@ GERENCIAR_PLANO = (RAIZ / "supabase/functions/gerenciar-plano/index.ts").read_te
 RESUMO_ASSINATURA = (RAIZ / "src/componentes/ResumoAssinatura.tsx").read_text()
 ENV_EXEMPLO = (RAIZ / ".env.example").read_text()
 MIGRACAO_ADMIN = (RAIZ / "supabase/migrations/202609231450_admin_assinaturas.sql").read_text()
+MIGRACAO_ADMIN_EVENTOS = (RAIZ / "supabase/migrations/202609261540_admin_eventos.sql").read_text()
 PAGINA_ADMIN = (RAIZ / "src/paginas/AdminAssinaturas.tsx").read_text()
 
 obrigatorios = [
@@ -139,6 +140,13 @@ for trecho in (
 assert "create policy" not in MIGRACAO_ADMIN
 assert "listar_assinaturas_admin" in PAGINA_ADMIN
 assert "Acesso negado" in PAGINA_ADMIN
+for trecho in ("listar_eventos_pagamento_admin", "where adm.id_usuario = auth.uid()", "limit 200", "grant execute on function public.listar_eventos_pagamento_admin() to authenticated"):
+    assert trecho in MIGRACAO_ADMIN_EVENTOS, f"Auditoria administrativa ausente: {trecho}"
+assert "create policy" not in MIGRACAO_ADMIN_EVENTOS
+for trecho in ("listar_eventos_pagamento_admin", "status_processamento === 'erro'", "webhook-mercado-pago?acao=reprocessar"):
+    assert trecho in PAGINA_ADMIN, f"Reprocessamento administrativo ausente: {trecho}"
+for trecho in ("usuarioDoPedido(req)", "administradores?id_usuario", "status_processamento=eq.erro", "EdgeRuntime.waitUntil(processar", "x-signature"):
+    assert trecho in WEBHOOK_MERCADO_PAGO, f"Proteção do webhook ausente: {trecho}"
 
 for fonte in (CRIAR_CHECKOUT, WEBHOOK_MERCADO_PAGO, ENV_EXEMPLO):
     assert "preapproval_plan_id" not in fonte

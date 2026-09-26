@@ -1,4 +1,4 @@
-import { banco, json } from '../_shared/http.ts'
+import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { consultarFatura, consultarPagamento, consultarMercadoPago, type PagamentoMercadoPago } from '../_shared/cobranca-mercado-pago.ts'
 
 const planos = {
@@ -136,9 +136,38 @@ async function processar(idRecurso: string, idEvento: string, tipo: string) {
   }
 }
 
+// Esta rota administrativa não substitui a assinatura HMAC dos webhooks do
+// provedor: só reexecuta eventos já recebidos e gravados após HMAC válido.
+async function reprocessarComoAdmin(req: Request) {
+  let usuario: { id: string }
+  try { usuario = await usuarioDoPedido(req) }
+  catch { return json({ erro: 'autenticacao_necessaria' }, 401, req) }
+  const autorizacao = await banco(`administradores?id_usuario=eq.${encodeURIComponent(usuario.id)}&select=id_usuario&limit=1`)
+  if (!autorizacao.ok) return json({ erro: 'autorizacao_indisponivel' }, 503, req)
+  const administradores = await autorizacao.json() as Array<{ id_usuario: string }>
+  if (administradores.length !== 1) return json({ erro: 'acesso_negado' }, 403, req)
+  const pedido = await req.json().catch(() => ({})) as { id_evento?: unknown }
+  if (!Number.isSafeInteger(pedido.id_evento) || Number(pedido.id_evento) <= 0) return json({ erro: 'evento_invalido' }, 400, req)
+  const id = Number(pedido.id_evento)
+  const consulta = await banco(`eventos_pagamento?id=eq.${id}&status_processamento=eq.erro&select=id_evento,id_recurso,tipo&limit=1`)
+  if (!consulta.ok) return json({ erro: 'consulta_evento_falhou' }, 503, req)
+  const [evento] = await consulta.json() as Array<{ id_evento: string; id_recurso: string | null; tipo: string | null }>
+  if (!evento?.id_recurso || !evento.tipo) return json({ erro: 'evento_nao_reprocessavel' }, 409, req)
+  const reserva = await banco(`eventos_pagamento?id=eq.${id}&status_processamento=eq.erro`, {
+    method: 'PATCH', body: JSON.stringify({ status_processamento: 'recebido', erro: null, processado_em: null }),
+  })
+  if (!reserva.ok) return json({ erro: 'reserva_evento_falhou' }, 503, req)
+  const atualizados = await reserva.json() as unknown[]
+  if (atualizados.length !== 1) return json({ erro: 'evento_ja_reprocessado' }, 409, req)
+  EdgeRuntime.waitUntil(processar(evento.id_recurso, evento.id_evento, evento.tipo))
+  return json({ recebido: true }, 202, req)
+}
+
 Deno.serve(async (req) => {
+  if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })
   if (req.method !== 'POST') return json({}, 405)
   if (Deno.env.get('MERCADO_PAGO_INTEGRACAO_VALIDADA') !== 'true') return json({ erro: 'integracao_nao_validada' }, 503)
+  if (new URL(req.url).searchParams.get('acao') === 'reprocessar') return reprocessarComoAdmin(req)
   const segredo = Deno.env.get('MERCADO_PAGO_WEBHOOK_SECRET') ?? ''
   const assinatura = req.headers.get('x-signature') ?? '', requestId = req.headers.get('x-request-id') ?? ''
   const partes = Object.fromEntries(assinatura.split(',').map((p) => p.trim().split('=', 2)))
