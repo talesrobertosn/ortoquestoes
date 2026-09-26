@@ -14,7 +14,7 @@ interface EstadoAssinatura {
 const data = (valor: string | null) => valor ? new Date(valor).toLocaleDateString('pt-BR') : 'Não informada'
 const mensagensStatus: Record<string, { titulo: string; explicacao: string }> = {
   ativa: { titulo: 'Em dia', explicacao: 'Seu plano está ativo. A próxima cobrança, se houver, aparece abaixo.' },
-  cancelada: { titulo: 'Cancelada', explicacao: 'Não haverá novas cobranças desta assinatura. Seu histórico de estudos permanece salvo.' },
+  cancelada: { titulo: 'Cancelada', explicacao: 'O cancelamento está registrado no OrtoQuestões. Confira também o estado da assinatura no Mercado Pago antes de contar com o fim das cobranças. Seu histórico permanece salvo.' },
   pendente: { titulo: 'Pendente', explicacao: 'Aguardamos a confirmação do Mercado Pago. Não considere o acesso pago ativo ainda.' },
   falha_pagamento: { titulo: 'Falha no pagamento', explicacao: 'O pagamento não foi aprovado. Você pode continuar usando a modalidade gratuita.' },
   pausada: { titulo: 'Pausada', explicacao: 'A assinatura está pausada. Consulte o Mercado Pago antes de esperar uma nova cobrança.' },
@@ -61,8 +61,8 @@ export function ResumoAssinatura() {
     } catch (erro) {
       const texto = erro instanceof Error ? erro.message : ''
       definirMensagem(texto.includes('Mercado Pago não confirmou')
-        ? 'O Mercado Pago não confirmou o reembolso. Nenhum status financeiro foi alterado; tente novamente mais tarde.'
-        : 'Não foi possível concluir a solicitação. Nenhum status financeiro foi alterado; tente novamente mais tarde.')
+        ? 'Não recebemos confirmação do reembolso. Atualize a página e confira o pagamento no Mercado Pago antes de tentar novamente.'
+        : 'Não foi possível confirmar o resultado da solicitação. Atualize a página e confira o estado no Mercado Pago antes de tentar novamente.')
     } finally { definirProcessando(false) }
   }
 
@@ -80,11 +80,11 @@ export function ResumoAssinatura() {
       <dl className="conta-assinatura__dados">
         <div><dt>Plano</dt><dd>{estado?.plano ?? 'Gratuito'}</dd></div>
         <div><dt>Status</dt><dd>{statusExibido}</dd></div>
-        <div><dt>{estado?.cancelar_ao_fim || statusAtual === 'cancelada' ? 'Término do acesso' : ativo ? 'Próxima cobrança' : 'Fim do período'}</dt><dd>{data(estado?.fim_periodo ?? null)}</dd></div>
+        <div><dt>{estado?.cancelar_ao_fim || ['cancelada', 'vencida', 'reembolsada'].includes(statusAtual) ? 'Término do acesso' : ativo ? 'Próxima cobrança' : 'Data informada pelo provedor'}</dt><dd>{data(estado?.fim_periodo ?? null)}</dd></div>
         <div><dt>Última cobrança</dt><dd>{data(estado?.ultima_cobranca_em ?? null)}</dd></div>
       </dl>
       <p className="ct-nota">{ativo && estado?.cancelar_ao_fim
-        ? 'Cancelamento registrado. Não haverá novas cobranças; o acesso pago permanece até o fim do período informado.'
+        ? 'Cancelamento registrado. Confira no Mercado Pago se as próximas cobranças foram encerradas; o acesso pago permanece até o fim do período informado.'
         : descricao?.explicacao ?? 'Você está na modalidade gratuita. Pode continuar estudando normalmente.'}</p>
       <div className="linha">
         {ativo && !estado?.cancelar_ao_fim && <button className="botao" type="button" disabled={processando} onClick={() => void gerenciar('cancelar')}>Cancelar assinatura</button>}

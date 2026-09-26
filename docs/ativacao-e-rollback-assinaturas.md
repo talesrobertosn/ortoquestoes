@@ -35,9 +35,13 @@ e comerciais desligadas. Não usar status manual no banco para simular um reembo
 
 ## Rollback
 
-- Se checkout ou webhook falhar, desligar imediatamente `PAGAMENTOS_HABILITADOS`
-  e `MERCADO_PAGO_INTEGRACAO_VALIDADA` nas Edge Functions. Reverter
-  `VITE_PAGAMENTOS_HABILITADOS=false` no build público e aguardar o deploy.
+- Se o checkout falhar, desligar novas contratações com
+  `PAGAMENTOS_HABILITADOS=false` e reverter
+  `VITE_PAGAMENTOS_HABILITADOS=false` no build público. Manter o webhook e a
+  conciliação ativos para assinaturas já existentes. Se o próprio webhook
+  falhar, investigar e corrigir a entrega sem desabilitar a recepção; se isso
+  não for possível, cancelar e conciliar as assinaturas existentes com o
+  provedor antes de desativar `MERCADO_PAGO_INTEGRACAO_VALIDADA`.
 - Se o limite impedir respostas indevidamente, definir `paywall_ativo=false` no
   banco e `VITE_LIMITES_HABILITADOS=false` no build público. Não alterar o limite
   diário de 20 nem apagar consumo ou histórico para mascarar o erro.
