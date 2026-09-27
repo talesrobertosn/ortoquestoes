@@ -208,6 +208,10 @@ export function Assinatura() {
         </div>
         {!pagamentosHabilitados && <p className="vp-aviso"><Icone nome="calendario" tamanho={16} /> As assinaturas abrem em breve. Até lá, todo o acervo continua disponível no plano gratuito.</p>}
         {mensagem && <p role="status" className="vp-aviso">{mensagem}</p>}
+        <div className="vp-pagamento-seguro" role="note">
+          <Icone nome="certo" tamanho={22} />
+          <p><strong>Seu cartão fica no Mercado Pago.</strong> A compra acontece no checkout hospedado pelo Mercado Pago. O OrtoQuestões não recebe nem guarda o número completo ou o código de segurança do cartão. Em Minha conta, você pode cancelar as próximas renovações e solicitar o reembolso integral dentro dos sete dias após cada cobrança aprovada.</p>
+        </div>
         <p className="vp-letras">Renovação automática na periodicidade escolhida, com valor e data da próxima cobrança mostrados no checkout antes de confirmar. Cancelamento por botão, sem justificativa.</p>
       </section>
 
@@ -235,7 +239,8 @@ export function Assinatura() {
       <section className="vp-secao faq vp-faq">
         <header className="vp-secao__cabeca"><p className="vp-sobre">Dúvidas</p><h2>Perguntas frequentes</h2></header>
         <details><summary>Como funciona o limite do plano gratuito?</summary><p>{limitesHabilitados ? 'Você pode registrar até 20 respostas novas por dia. As próximas voltam no dia seguinte.' : 'O limite diário está desligado nesta fase, portanto o acesso gratuito também está sem limite de respostas. Se o limite for ativado futuramente, o patamar gratuito previsto é de 20 respostas novas por dia.'} Comentários, revisões e desempenho continuam abertos.</p></details>
-        <details><summary>Como funciona o cancelamento?</summary><p>Por botão, nesta mesma página, sem justificativa. Fora da garantia, ele impede cobranças futuras e mantém o acesso até o fim do período já pago.</p></details>
+        <details><summary>Como funciona o cancelamento?</summary><p>Por botão em Minha conta, sem justificativa. Fora dos sete dias para reembolso integral, ele impede novas renovações e mantém o acesso até o fim do período já pago.</p></details>
+        <details><summary>Se eu cancelar o semestral após três meses, recebo os três restantes?</summary><p>Após os sete dias para reembolso integral, não há devolução proporcional automática. Você mantém o acesso até completar os seis meses pagos, e a assinatura não renova. A mesma regra vale para o plano anual. Seus direitos previstos em lei permanecem preservados.</p></details>
         <details><summary>Como funciona a garantia?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pode pedir reembolso integral em Minha conta. Se a solicitação automática não for confirmada pelo Mercado Pago, use o canal de contato para atendimento manual. O acesso pago só é encerrado após confirmação do reembolso. Depois desse prazo não há reembolso proporcional por esta garantia.</p></details>
         <details><summary>O que acontece com meu histórico se eu cancelar?</summary><p>Nada. Respostas, revisões, favoritas, anotações e desempenho ficam guardados. A conta apenas volta ao limite gratuito.</p></details>
         <details><summary>O plano muda as revisões ou os comentários?</summary><p>Não. Revisões, calendário e comentários são iguais no gratuito e no ilimitado. {limitesHabilitados ? 'O plano remove o limite diário de respostas.' : 'Nesta fase, o acesso gratuito também não tem limite diário.'}</p></details>
