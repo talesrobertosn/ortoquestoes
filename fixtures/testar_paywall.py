@@ -24,7 +24,23 @@ TERMOS = (RAIZ / "src/paginas/Termos.tsx").read_text()
 CONDICOES_ASSINATURA = (RAIZ / "src/paginas/CondicoesAssinatura.tsx").read_text()
 ACEITES_ASSINATURA = (RAIZ / "supabase/migrations/202609270900_aceites_assinatura.sql").read_text()
 LIMITE_CLIENTE = (RAIZ / "src/estado/limiteDiario.ts").read_text()
+AVISO_LIMITE = (RAIZ / "src/componentes/LimiteRespostas.tsx").read_text()
+CABECALHO = (RAIZ / "src/componentes/Cabecalho.tsx").read_text()
+CONTEXTO_CONTA = (RAIZ / "src/conta/ContextoConta.tsx").read_text()
 VERSOES_TERMOS = (RAIZ / "src/conta/termos.ts").read_text()
+
+# Retomar uma aba não equivale a fazer login novamente: preservar a rota e a
+# sessão de questões. A navegação explícita fica restrita ao formulário.
+assert "if (evento === 'SIGNED_IN'" not in CONTEXTO_CONTA
+assert "signInWithPassword" in PAGINA_ENTRAR and "navegar('/')" in PAGINA_ENTRAR
+
+# O bloqueio permanece visível em todas as rotas e após recarregar, mas some
+# na liberação da cota ou quando uma assinatura vigente tira o limite.
+for trecho in ("registrarBloqueioDiario(normalizado.liberaEm)", "lerBloqueioDiario", "limparBloqueioDiario"):
+    assert trecho in LIMITE_CLIENTE, f"Persistência do limite ausente: {trecho}"
+for trecho in ("AvisoBloqueioDiario", "EVENTO_DADOS", "setInterval", "obter_estado_conta", "formatarDuracao(faltam)"):
+    assert trecho in AVISO_LIMITE, f"Aviso persistente ausente: {trecho}"
+assert "<AvisoBloqueioDiario caminho={caminho} />" in CABECALHO
 
 obrigatorios = [
     "paywall_ativo boolean not null default false",
