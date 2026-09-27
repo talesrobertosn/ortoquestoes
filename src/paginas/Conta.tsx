@@ -4,7 +4,7 @@ import { contasDisponiveis, retornoConta, supabase } from '../conta/supabase'
 import { avisoConta, definirAvisoConta } from '../conta/retornoAuth'
 import { TIPOS_SYNC, deItens, itens } from '../conta/modeloSync'
 import { gravar, ler, lerVisitante } from '../estado/armazenamento'
-import { href } from '../util/rotas'
+import { href, navegar } from '../util/rotas'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { usarIndice } from '../dados/usarIndice'
 import { planoRevisao } from '../estado/planoRevisao'
@@ -117,6 +117,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password: senha })
         if (error) throw error
         definirSenha('')
+        navegar('/')
       } else if (modo === 'criar') {
         if (!aceitouTermos) { definirMensagem('Leia e aceite os Termos de Uso para criar sua conta.'); return }
         if (!perfilCompleto()) return

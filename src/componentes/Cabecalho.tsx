@@ -4,6 +4,7 @@ import { MarcaHorizontal } from '../marca/Simbolo'
 import { usarTema } from '../estado/tema'
 import { href } from '../util/rotas'
 import { Icone, type NomeIcone } from './Icone'
+import { AvisoBloqueioDiario } from './LimiteRespostas'
 
 // No celular a barra de baixo já leva a Início, Treinar, Revisão e
 // Desempenho — repetir os quatro aqui em cima seria a mesma coisa duas
@@ -65,6 +66,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
           </button>
         </div>
       </div>
+      <AvisoBloqueioDiario caminho={caminho} />
     </header>
     <nav className="navegacao-mobile nao-imprime" aria-label="Navegação móvel">
       <a href={href('/')} aria-current={caminho === '/' ? 'page' : undefined}><Icone nome="mapa" /><span>Início</span></a>

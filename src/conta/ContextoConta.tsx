@@ -73,11 +73,10 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
       definirSessao(proxima); if (!aguardandoRetorno) definirCarregando(false)
       if (evento === 'PASSWORD_RECOVERY') definirRecuperacao(true)
       const url = new URL(window.location.href)
-      if (evento === 'SIGNED_IN' && proxima && !recuperacao) {
-        url.searchParams.delete('conta'); url.searchParams.delete('code'); url.hash = '/'
-        window.history.replaceState(null, '', url.href)
-        window.dispatchEvent(new HashChangeEvent('hashchange'))
-      } else if (url.searchParams.has('conta') && (evento === 'INITIAL_SESSION' || evento === 'PASSWORD_RECOVERY')) {
+      // SIGNED_IN também pode ocorrer ao retomar a aba ou renovar a sessão.
+      // Não navegue nesse evento: a tela de login trata a entrada explícita,
+      // e o retorno de link por e-mail é tratado acima por concluir().
+      if (url.searchParams.has('conta') && (evento === 'INITIAL_SESSION' || evento === 'PASSWORD_RECOVERY')) {
         const deRecuperacao = url.searchParams.get('conta') === 'recuperar'
         if (proxima && deRecuperacao) definirRecuperacao(true)
         // ?code= sem sessão: o link PKCE foi aberto em outro navegador (ou

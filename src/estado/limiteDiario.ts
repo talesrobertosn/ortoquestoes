@@ -1,8 +1,28 @@
 import { useCallback, useState } from 'react'
 import { chamarRpc } from '../servicos/supabase'
+import { gravar, ler } from './armazenamento'
 
 export const FUSO_DIA = 'America/Sao_Paulo'
 export const LIMITES_HABILITADOS = import.meta.env.VITE_LIMITES_HABILITADOS === 'true'
+const CHAVE_BLOQUEIO = 'limite:bloqueio'
+
+export function lerBloqueioDiario(): string | null {
+  const registro = ler<{ liberaEm: string } | null>(CHAVE_BLOQUEIO, null)
+  const instante = Date.parse(registro?.liberaEm ?? '')
+  if (!Number.isFinite(instante) || instante <= Date.now() || instante > Date.now() + 26 * 60 * 60 * 1000) return null
+  return registro!.liberaEm
+}
+
+export function limparBloqueioDiario(): void {
+  gravar(CHAVE_BLOQUEIO, null)
+}
+
+function registrarBloqueioDiario(liberaEm: string): void {
+  const instante = Date.parse(liberaEm)
+  if (Number.isFinite(instante) && instante > Date.now() && instante <= Date.now() + 26 * 60 * 60 * 1000) {
+    gravar(CHAVE_BLOQUEIO, { liberaEm })
+  }
+}
 
 export function chaveDia(data = new Date()): string {
   return new Intl.DateTimeFormat('en-CA', { timeZone: FUSO_DIA, year: 'numeric', month: '2-digit', day: '2-digit' }).format(data)
@@ -53,6 +73,8 @@ export function usarLimiteDiario() {
         consumidas: Number(r.consumidas), limite: Number(r.limite), restantes: r.restantes === null ? null : Number(r.restantes),
         liberaEm: String(r.libera_em), sequencia: Number(r.sequencia ?? 0), motivo: r.motivo ? String(r.motivo) : undefined,
       }
+      if (!normalizado.permitido && !normalizado.falhaValidacao && normalizado.paywallAtivo) registrarBloqueioDiario(normalizado.liberaEm)
+      else if (normalizado.permitido && (normalizado.ilimitado || !normalizado.paywallAtivo || (normalizado.restantes ?? 0) > 0)) limparBloqueioDiario()
       definirEstado(normalizado)
       return normalizado
     } catch (erro) {
