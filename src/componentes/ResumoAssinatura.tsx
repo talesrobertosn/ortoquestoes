@@ -86,6 +86,7 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
         <div><dt>Status</dt><dd>{statusExibido}</dd></div>
       </dl>
       {detalhada ? <>
+      {estado?.plano && !ativo && <p className="ct-nota">Plano desta assinatura: {estado.plano}. Seu acesso atual é {planoVisivel.toLowerCase()}.</p>}
       <dl className="conta-assinatura__dados">
         <div><dt>{estado?.cancelar_ao_fim || ['cancelada', 'vencida', 'reembolsada'].includes(statusAtual) ? 'Término do acesso' : ativo ? 'Próxima cobrança' : 'Data informada pelo provedor'}</dt><dd>{data(estado?.fim_periodo ?? null)}</dd></div>
         <div><dt>Última cobrança</dt><dd>{data(estado?.ultima_cobranca_em ?? null)}</dd></div>

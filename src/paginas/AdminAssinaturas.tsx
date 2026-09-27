@@ -81,9 +81,9 @@ export function AdminAssinaturas() {
       <section className="admin-assinaturas__resumo" aria-label="Resumo administrativo">
         <div><span>Assinaturas registradas</span><strong>{linhas.length}</strong></div>
         <div><span>Em dia</span><strong>{linhas.filter(linha => linha.status === 'ativa').length}</strong></div>
-        <div><span>Eventos com erro</span><strong>{eventos.filter(evento => evento.status_processamento === 'erro').length}</strong></div>
+        <div><span>Eventos com erro entre os 200 mais recentes</span><strong>{eventos.filter(evento => evento.status_processamento === 'erro').length}</strong></div>
       </section>
-      <nav className="admin-assinaturas__atalhos" aria-label="Seções da administração"><a href="#titulo-assinaturas-admin">Assinaturas</a><a href="#titulo-eventos-admin">Eventos de pagamento</a></nav>
+      <nav className="admin-assinaturas__atalhos" aria-label="Seções da administração"><a href="#titulo-assinaturas-admin" onClick={e => { e.preventDefault(); document.getElementById('titulo-assinaturas-admin')?.scrollIntoView({ behavior: 'smooth' }) }}>Assinaturas</a><a href="#titulo-eventos-admin" onClick={e => { e.preventDefault(); document.getElementById('titulo-eventos-admin')?.scrollIntoView({ behavior: 'smooth' }) }}>Eventos de pagamento</a></nav>
       <section className="empilha admin-assinaturas__secao" aria-labelledby="titulo-assinaturas-admin">
         <div><h2 id="titulo-assinaturas-admin">Assinaturas</h2><p>Consulte o plano e o estado atual de cada conta.</p></div>
         <div className="admin-assinaturas__filtros">
