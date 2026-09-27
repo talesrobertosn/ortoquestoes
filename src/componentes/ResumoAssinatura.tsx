@@ -71,14 +71,21 @@ export function ResumoAssinatura() {
   const statusAtual = estado?.status_assinatura ?? ''
   const descricao = mensagensStatus[statusAtual]
   const statusExibido = descricao?.titulo ?? 'Sem assinatura'
+  const periodoPagoVigente = Boolean(estado?.fim_periodo && new Date(estado.fim_periodo).getTime() > Date.now())
+  const planoVisivel = estado?.plano && (ativo || (statusAtual === 'cancelada' && periodoPagoVigente))
+    ? `Plano ${estado.plano}`
+    : 'Plano gratuito'
   const garantia = (ativo || estado?.status_assinatura === 'cancelada') && estado?.ultima_cobranca_em
     && Date.now() - new Date(estado.ultima_cobranca_em).getTime() <= 7 * 864e5
 
   return <section className="ct-cartao ct-cartao--largo" aria-label="Minha assinatura">
     <header className="ct-cartao__cabeca"><div><h2>Minha assinatura</h2><p>Seu histórico permanece preservado ao cancelar ou usar a garantia.</p></div></header>
     {carregando ? <p role="status">Carregando assinatura…</p> : <>
+      <p className="conta-assinatura__plano">{planoVisivel}</p>
+      <details className="conta-assinatura__detalhes">
+        <summary>Mais dados sobre minha assinatura</summary>
       <dl className="conta-assinatura__dados">
-        <div><dt>Plano</dt><dd>{estado?.plano ?? 'Gratuito'}</dd></div>
+        <div><dt>Plano contratado</dt><dd>{estado?.plano ?? 'Nenhum'}</dd></div>
         <div><dt>Status</dt><dd>{statusExibido}</dd></div>
         <div><dt>{estado?.cancelar_ao_fim || ['cancelada', 'vencida', 'reembolsada'].includes(statusAtual) ? 'Término do acesso' : ativo ? 'Próxima cobrança' : 'Data informada pelo provedor'}</dt><dd>{data(estado?.fim_periodo ?? null)}</dd></div>
         <div><dt>Última cobrança</dt><dd>{data(estado?.ultima_cobranca_em ?? null)}</dd></div>
@@ -91,6 +98,7 @@ export function ResumoAssinatura() {
         {garantia && <button className="botao botao--fantasma" type="button" disabled={processando} onClick={() => void gerenciar('reembolsar')}>Usar garantia de 7 dias</button>}
         <a className="botao botao--fantasma" href={href('/assinatura')}>Ver planos</a>
       </div>
+      </details>
     </>}
     {mensagem && <p role="status">{mensagem}</p>}
   </section>

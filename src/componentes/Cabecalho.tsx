@@ -42,6 +42,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
           ))}
         </nav>
         <div className="cabecalho__acoes">
+          <a className="nav-link nav-link--planos" href={href('/assinatura')} aria-current={caminho === '/assinatura' ? 'page' : undefined}>Planos</a>
           {contasDisponiveis && (
             <a
               className={'nav-link nav-link--conta' + (sessao ? ' nav-link--logado' : '')}
