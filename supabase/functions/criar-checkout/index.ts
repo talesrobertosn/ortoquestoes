@@ -5,6 +5,7 @@ const planos = {
   semestral: { reason: 'OrtoQuestoes Semestral', frequency: 6, transaction_amount: 179.90 },
   anual: { reason: 'OrtoQuestoes Anual', frequency: 12, transaction_amount: 239.90 },
 } as const
+const versaoCondicoesAssinatura = '2026-09-27'
 
 async function contaTesteAtiva(idUsuario: string) {
   const resposta = await banco(`contas_teste?id_usuario=eq.${encodeURIComponent(idUsuario)}&ativa=eq.true&select=id_usuario`)
@@ -17,8 +18,15 @@ Deno.serve(async (req) => {
   if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
     const usuario = await usuarioDoPedido(req)
-    const { plano } = await req.json() as { plano?: keyof typeof planos }
+    const { plano, aceite_termos_versao, aceite_confirmado } = await req.json() as {
+      plano?: keyof typeof planos
+      aceite_termos_versao?: string
+      aceite_confirmado?: boolean
+    }
     if (!plano || !planos[plano]) return json({ erro: 'plano_invalido' }, 400, req)
+    if (aceite_confirmado !== true || aceite_termos_versao !== versaoCondicoesAssinatura) {
+      return json({ erro: 'Atualize a página para revisar e aceitar as condições atuais da assinatura.' }, 400, req)
+    }
     if (Deno.env.get('PAGAMENTOS_HABILITADOS') !== 'true' || Deno.env.get('MERCADO_PAGO_INTEGRACAO_VALIDADA') !== 'true') {
       return json({ erro: 'Os pagamentos ainda não estão disponíveis.' }, 503, req)
     }
@@ -31,6 +39,18 @@ Deno.serve(async (req) => {
     if (!token || !origem || !payerEmail) return json({ erro: 'checkout_nao_configurado' }, 503, req)
     const restritoContasTeste = ambiente === 'teste' || Deno.env.get('MERCADO_PAGO_RESTRITO_CONTAS_TESTE') !== 'false'
     if (restritoContasTeste && !await contaTesteAtiva(usuario.id)) return json({ erro: 'checkout_requer_conta_teste' }, 403, req)
+
+    const aceite = await banco('aceites_assinatura', {
+      method: 'POST',
+      body: JSON.stringify({
+        id_usuario: usuario.id,
+        versao: versaoCondicoesAssinatura,
+        plano,
+        valor_centavos: Math.round(planos[plano].transaction_amount * 100),
+        periodicidade_meses: planos[plano].frequency,
+      }),
+    })
+    if (!aceite.ok) return json({ erro: 'Não foi possível registrar o aceite das condições. Tente novamente.' }, 503, req)
 
     const resposta = await fetch('https://api.mercadopago.com/preapproval', {
       method: 'POST',
