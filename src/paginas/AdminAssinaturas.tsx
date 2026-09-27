@@ -76,17 +76,23 @@ export function AdminAssinaturas() {
 
   if (!sessao) return <article className="empilha limite-leitura"><h1>Administração de assinaturas</h1><p>Entre na sua conta para continuar.</p><a className="botao" href={href('/conta')}>Entrar</a></article>
   return <article className="empilha-2 conta-pagina">
-    <header><h1>Administração de assinaturas</h1><p>Consulta restrita, autorizada pelo servidor.</p></header>
+    <header className="admin-assinaturas__cabeca"><div><p className="meta">ÁREA RESTRITA</p><h1>Administração de assinaturas</h1><p>Uma visão das assinaturas e dos eventos, com acesso autorizado pelo servidor.</p></div><button className="botao botao--fantasma" type="button" onClick={() => void carregar()}>Atualizar dados</button></header>
     {erro ? <p role="alert">{erro}</p> : linhas === null || eventos === null ? <p role="status">Verificando acesso…</p> : <>
-      <section className="empilha" aria-labelledby="titulo-assinaturas-admin">
-        <h2 id="titulo-assinaturas-admin">Assinaturas</h2>
-        <p role="status">Total registrado: {linhas.length}. Exibindo {filtradas.length} com os filtros atuais.</p>
+      <section className="admin-assinaturas__resumo" aria-label="Resumo administrativo">
+        <div><span>Assinaturas registradas</span><strong>{linhas.length}</strong></div>
+        <div><span>Em dia</span><strong>{linhas.filter(linha => linha.status === 'ativa').length}</strong></div>
+        <div><span>Eventos com erro</span><strong>{eventos.filter(evento => evento.status_processamento === 'erro').length}</strong></div>
+      </section>
+      <nav className="admin-assinaturas__atalhos" aria-label="Seções da administração"><a href="#titulo-assinaturas-admin">Assinaturas</a><a href="#titulo-eventos-admin">Eventos de pagamento</a></nav>
+      <section className="empilha admin-assinaturas__secao" aria-labelledby="titulo-assinaturas-admin">
+        <div><h2 id="titulo-assinaturas-admin">Assinaturas</h2><p>Consulte o plano e o estado atual de cada conta.</p></div>
         <div className="admin-assinaturas__filtros">
           <label className="campo">Buscar usuário, plano ou status<input className="entrada" type="search" value={busca} onChange={e => definirBusca(e.target.value)} /></label>
           <label className="campo">Status<select className="entrada" value={status} onChange={e => definirStatus(e.target.value)}>
             <option value="todos">Todos</option>{[...new Set(linhas.map(l => l.status))].sort().map(valor => <option key={valor} value={valor}>{valor}</option>)}
           </select></label>
         </div>
+        <p role="status">Exibindo {filtradas.length} de {linhas.length} assinatura(s).</p>
         {filtradas.length === 0 ? <p>Nenhuma assinatura corresponde à busca.</p> : <div className="admin-assinaturas__tabela" role="region" aria-label="Tabela de assinaturas" tabIndex={0}>
           <table className="tabela"><thead><tr><th scope="col">Usuário</th><th scope="col">Plano</th><th scope="col">Status</th><th scope="col">Próxima cobrança</th><th scope="col">Atualização</th></tr></thead>
             <tbody>{filtradas.map((linha) => <tr key={`${linha.id_usuario}:${linha.ultima_atualizacao}`}>
@@ -94,9 +100,8 @@ export function AdminAssinaturas() {
             </tr>)}</tbody></table>
         </div>}
       </section>
-      <section className="empilha" aria-labelledby="titulo-eventos-admin">
-        <h2 id="titulo-eventos-admin">Eventos de pagamento</h2>
-        <p>Últimos {eventos.length} eventos. O painel não mostra payloads nem credenciais.</p>
+      <section className="empilha admin-assinaturas__secao" aria-labelledby="titulo-eventos-admin">
+        <div><h2 id="titulo-eventos-admin">Eventos de pagamento</h2><p>Últimos {eventos.length} eventos. O painel não mostra payloads nem credenciais.</p></div>
         <div className="admin-assinaturas__filtros">
           <label className="campo">Buscar evento, recurso ou erro<input className="entrada" type="search" value={buscaEvento} onChange={e => definirBuscaEvento(e.target.value)} /></label>
           <label className="campo">Processamento<select className="entrada" value={statusEvento} onChange={e => definirStatusEvento(e.target.value)}>
@@ -112,7 +117,6 @@ export function AdminAssinaturas() {
             </tr>)}</tbody></table>
         </div>}
         {aviso && <p role="status">{aviso}</p>}
-        <button className="botao botao--fantasma" type="button" onClick={() => void carregar()}>Atualizar dados</button>
       </section>
     </>}
   </article>
