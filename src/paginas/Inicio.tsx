@@ -264,6 +264,16 @@ export function Inicio() {
             </a>
           </nav>
 
+          <section className="inicio-planos" aria-labelledby="inicio-planos-titulo">
+            <div>
+              <p className="meta">PLANOS ORTOQUESTÕES</p>
+              <h2 id="inicio-planos-titulo">Escolha como quer apoiar seu estudo</h2>
+              <p>O gratuito continua sem limite diário nesta fase. Se o limite planejado de 20 novas respostas por dia for ativado, a assinatura mantém suas respostas sem teto durante o período pago.</p>
+              <p className="inicio-planos__valores">Mensal R$ 39,90 · Semestral R$ 179,90 · Anual R$ 239,90</p>
+            </div>
+            <a className="botao botao--principal botao--grande" href={href('/assinatura')}>Conhecer planos e condições</a>
+          </section>
+
           <CartaoStreak />
 
           <CartaoQuestaoDoDia indice={indice} />
