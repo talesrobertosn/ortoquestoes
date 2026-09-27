@@ -66,7 +66,8 @@ header.topo { background: var(--superficie); border-bottom: 1px solid var(--trac
 header.topo .envoltorio { padding-block: 0.9rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
 .marca { color: var(--texto); text-decoration: none; font-size: 1.1rem; }
 .marca span { font-weight: 800; }
-header.topo nav { margin-left: auto; display: flex; gap: 1rem; font-size: 0.9375rem; }
+header.topo nav { margin-left: auto; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.45rem 1rem; font-size: 0.9375rem; }
+@media (max-width: 30rem) { header.topo nav { width: 100%; justify-content: flex-start; } }
 h1 { font-size: 1.7rem; line-height: 1.2; margin: 1.1rem 0 0.75rem; letter-spacing: -0.01em; }
 h2 { font-size: 1.2rem; margin: 2.5rem 0 0.75rem; }
 h3 { font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }

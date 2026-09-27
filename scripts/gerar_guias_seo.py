@@ -20,6 +20,7 @@ GUIAS = [
         "title": "Como estudar para o TEOT com questões comentadas | OrtoQuestões",
         "description": "Um roteiro para usar questões comentadas na preparação para o TEOT: diagnóstico, treino por assunto, revisão e acompanhamento de erros.",
         "headline": "Como estudar para o TEOT com questões comentadas",
+        "atualizado_em": "2026-09-27",
         "content": """
 Preparar-se para o TEOT pede repetição com intenção: responder, entender o motivo de cada alternativa e voltar ao assunto quando ele ainda está fresco. Um banco de questões funciona melhor quando não vira apenas uma contagem de acertos.
 
@@ -50,6 +51,7 @@ Percentual de acerto é um sinal, não um diagnóstico sozinho. Observe também 
         "title": "Questões de ortopedia comentadas: como usar | OrtoQuestões",
         "description": "Entenda como aproveitar questões de ortopedia comentadas: enunciado, alternativas, gabarito, conceito-chave e revisão de erros.",
         "headline": "Como aproveitar questões de ortopedia comentadas",
+        "atualizado_em": "2026-09-27",
         "content": """
 Uma questão comentada é mais útil quando revela a lógica da decisão, não apenas a letra certa. O objetivo é sair da questão sabendo reconhecer o mesmo conceito em um enunciado diferente.
 
@@ -80,6 +82,7 @@ As páginas públicas informam quando a questão vem de prova anterior ou de sim
         "title": "Provas e questões de ortopedia por assunto | OrtoQuestões",
         "description": "Encontre questões de ortopedia organizadas por assunto para revisar mão, ombro, quadril, joelho, coluna, trauma, pé e tornozelo e mais.",
         "headline": "Questões de ortopedia organizadas por assunto",
+        "atualizado_em": "2026-09-27",
         "content": """
 Organizar o treino por assunto ajuda a estudar com uma pergunta clara: qual competência preciso consolidar agora? O OrtoQuestões reúne questões de provas de ortopedia e traumatologia e permite sair do tema amplo para blocos mais específicos.
 
@@ -110,6 +113,7 @@ def dados_estruturados(guia: dict) -> str:
         "headline": guia["headline"],
         "description": guia["description"],
         "inLanguage": "pt-BR",
+        "dateModified": guia["atualizado_em"],
         "mainEntityOfPage": f"{SITE}{caminho}",
         "author": {"@type": "Organization", "name": "OrtoQuestões", "url": SITE},
         "publisher": {"@type": "Organization", "name": "OrtoQuestões", "url": SITE},
@@ -117,12 +121,21 @@ def dados_estruturados(guia: dict) -> str:
     return '<script type="application/ld+json">' + json.dumps(bloco, ensure_ascii=False) + "</script>"
 
 
+def editorial_de_guia(texto: str) -> str:
+    """O renderizador compartilhado usa H4 para seções de comentários.
+
+    Nos guias a seção vem logo após H1, portanto ela deve ser H2. Mantemos a
+    sintaxe editorial comum, mas corrigimos a semântica do documento final.
+    """
+    return editorial(texto).replace("<h4>", "<h2>").replace("</h4>", "</h2>")
+
+
 def pagina_guia(guia: dict) -> str:
     caminho = f"guias/{guia['slug']}.html"
     corpo = [topo(guia["title"], guia["description"], caminho, dados_estruturados(guia), "../")]
     corpo.append('<nav class="migalhas meta"><a href="../">Início</a> › <a href="./">Guias</a></nav>')
     corpo.append(f"<h1>{guia['headline']}</h1>")
-    corpo.append(editorial(guia["content"]))
+    corpo.append(editorial_de_guia(guia["content"]))
     corpo.append('<h2>Continue estudando</h2><ul class="temas">')
     for texto, url in guia["links"]:
         corpo.append(f'<li><a href="{url}">{texto}</a></li>')
@@ -150,6 +163,12 @@ def principal() -> int:
     for guia in GUIAS:
         (DIR_GUIAS / f"{guia['slug']}.html").write_text(pagina_guia(guia), encoding="utf-8")
     (DIR_GUIAS / "index.html").write_text(indice(), encoding="utf-8")
+    manifesto = [
+        {"arquivo": f"{guia['slug']}.html", "atualizado_em": guia["atualizado_em"]}
+        for guia in GUIAS
+    ]
+    ARQUIVO = DIR_GUIAS / "_seo.json"
+    ARQUIVO.write_text(json.dumps(manifesto, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"{len(GUIAS) + 1} guias em public/guias/")
     return 0
 
