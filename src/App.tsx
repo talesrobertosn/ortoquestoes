@@ -1,26 +1,33 @@
-import { Conta } from './paginas/Conta'
-import { useEffect } from 'react'
+import { lazy, Suspense, useEffect, type ReactNode } from 'react'
 import { usarRota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
-import { Inicio } from './paginas/Inicio'
-import { Treinar } from './paginas/Treinar'
-import { Sessao } from './paginas/Sessao'
-import { Resumo } from './paginas/Resumo'
-import { QuestaoDireta } from './paginas/QuestaoDireta'
-import { Contato, DadosLocais, NaoEncontrada, Sobre } from './paginas/Apoio'
-import { Favoritas } from './paginas/Favoritas'
-import { CadernoErros } from './paginas/CadernoErros'
-import { Progresso } from './paginas/Progresso'
-import { Revisao } from './paginas/Revisao'
-import { Ranking } from './paginas/Ranking'
-import { Termos } from './paginas/Termos'
-import { CondicoesAssinatura } from './paginas/CondicoesAssinatura'
-import { Assinatura } from './paginas/Assinatura'
-import { AdminAssinaturas } from './paginas/AdminAssinaturas'
-import { DetalhesAssinatura } from './paginas/DetalhesAssinatura'
 import { SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
+
+// Cada página é carregada apenas ao ser visitada. Além de reduzir o JavaScript
+// inicial, isso evita baixar o acervo completo para rotas administrativas,
+// termos, conta e planos.
+const Inicio = lazy(() => import('./paginas/Inicio').then(({ Inicio }) => ({ default: Inicio })))
+const Treinar = lazy(() => import('./paginas/Treinar').then(({ Treinar }) => ({ default: Treinar })))
+const Sessao = lazy(() => import('./paginas/Sessao').then(({ Sessao }) => ({ default: Sessao })))
+const Resumo = lazy(() => import('./paginas/Resumo').then(({ Resumo }) => ({ default: Resumo })))
+const QuestaoDireta = lazy(() => import('./paginas/QuestaoDireta').then(({ QuestaoDireta }) => ({ default: QuestaoDireta })))
+const Contato = lazy(() => import('./paginas/Apoio').then(({ Contato }) => ({ default: Contato })))
+const DadosLocais = lazy(() => import('./paginas/Apoio').then(({ DadosLocais }) => ({ default: DadosLocais })))
+const NaoEncontrada = lazy(() => import('./paginas/Apoio').then(({ NaoEncontrada }) => ({ default: NaoEncontrada })))
+const Sobre = lazy(() => import('./paginas/Apoio').then(({ Sobre }) => ({ default: Sobre })))
+const Favoritas = lazy(() => import('./paginas/Favoritas').then(({ Favoritas }) => ({ default: Favoritas })))
+const CadernoErros = lazy(() => import('./paginas/CadernoErros').then(({ CadernoErros }) => ({ default: CadernoErros })))
+const Progresso = lazy(() => import('./paginas/Progresso').then(({ Progresso }) => ({ default: Progresso })))
+const Revisao = lazy(() => import('./paginas/Revisao').then(({ Revisao }) => ({ default: Revisao })))
+const Ranking = lazy(() => import('./paginas/Ranking').then(({ Ranking }) => ({ default: Ranking })))
+const Termos = lazy(() => import('./paginas/Termos').then(({ Termos }) => ({ default: Termos })))
+const CondicoesAssinatura = lazy(() => import('./paginas/CondicoesAssinatura').then(({ CondicoesAssinatura }) => ({ default: CondicoesAssinatura })))
+const Assinatura = lazy(() => import('./paginas/Assinatura').then(({ Assinatura }) => ({ default: Assinatura })))
+const Conta = lazy(() => import('./paginas/Conta').then(({ Conta }) => ({ default: Conta })))
+const DetalhesAssinatura = lazy(() => import('./paginas/DetalhesAssinatura').then(({ DetalhesAssinatura }) => ({ default: DetalhesAssinatura })))
+const AdminAssinaturas = lazy(() => import('./paginas/AdminAssinaturas').then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
 
 const TITULOS: Record<string, string> = {
   '/': 'OrtoQuestões — banco de questões de ortopedia e traumatologia',
@@ -60,7 +67,7 @@ export function App() {
         : `${SITE.nome}`)
   }, [rota.caminho, primeiro, segundo])
 
-  let pagina: JSX.Element
+  let pagina: ReactNode
   switch (primeiro) {
     case undefined:
       pagina = <Inicio />
@@ -137,7 +144,11 @@ export function App() {
       </a>
       <Cabecalho caminho={rota.caminho} />
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
-        <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>{pagina}</div>
+        <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
+          <Suspense fallback={<p className="estado" role="status">Carregando…</p>}>
+            {pagina}
+          </Suspense>
+        </div>
       </main>
       <Rodape />
     </div>
