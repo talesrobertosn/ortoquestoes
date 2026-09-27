@@ -66,15 +66,9 @@ export function Assinatura() {
       definirAbrindoCheckout(false)
     }
   }
-  async function gerenciar(acao: 'cancelar' | 'reembolsar') {
-    if (!window.confirm(acao === 'reembolsar' ? 'Solicitar reembolso integral e cancelar cobranças futuras?' : 'Cancelar cobranças futuras?')) return
-    definirMensagem('Processando…')
-    try { await chamarFuncao('gerenciar-plano', { acao }); definirMensagem('Solicitação concluída. Atualize a página para ver o novo estado.') }
-    catch (erro) { definirMensagem(erro instanceof Error ? erro.message : 'Não foi possível concluir.') }
-  }
-
   const respondidasConta = metricas?.respostas_total ?? locais.length
   const ativa = metricas?.status_assinatura === 'ativa'
+  const acessoPagoAteOFim = Boolean(metricas?.status_assinatura === 'cancelada' && metricas.fim_periodo && new Date(metricas.fim_periodo).getTime() > Date.now())
 
   return (
     <div className="empilha-2 vp">
@@ -115,15 +109,14 @@ export function Assinatura() {
         <div><strong>TEOT · TARO</strong><span>e ENARE R4</span></div>
       </section>
 
-      {ativa && metricas && (
+      {(ativa || acessoPagoAteOFim) && metricas && (
         <section className="vp-ativo">
           <span className="vp-ativo__icone"><Icone nome="certo" tamanho={22} /></span>
           <div>
-            <h2>Seu plano {metricas.plano} está ativo</h2>
-            <p>{metricas.cancelar_ao_fim ? 'O plano já está cancelado e não terá nova cobrança.' : 'A próxima cobrança segue a periodicidade escolhida.'} Acesso ilimitado até pelo menos {metricas.fim_periodo ? new Date(metricas.fim_periodo).toLocaleDateString('pt-BR') : 'o fim do período atual'}.</p>
+            <h2>{metricas.cancelar_ao_fim || acessoPagoAteOFim ? 'Renovação cancelada; acesso pago mantido' : `Seu plano ${metricas.plano} está ativo`}</h2>
+            <p>{metricas.cancelar_ao_fim || acessoPagoAteOFim ? 'Não haverá nova cobrança desta assinatura. O período já pago não foi reembolsado.' : 'A próxima cobrança segue a periodicidade escolhida.'} Acesso ilimitado até {metricas.fim_periodo ? new Date(metricas.fim_periodo).toLocaleDateString('pt-BR') : 'o fim do período atual'}.</p>
             <div className="linha">
-              <button className="botao" type="button" onClick={() => gerenciar('cancelar')}>Cancelar plano</button>
-              {metricas.ultima_cobranca_em && Date.now() - new Date(metricas.ultima_cobranca_em).getTime() <= 7 * 864e5 && <button className="botao" type="button" onClick={() => gerenciar('reembolsar')}>Usar garantia de 7 dias</button>}
+              <a className="botao" href={href('/conta/assinatura')}>Gerenciar renovação ou pedir reembolso</a>
             </div>
           </div>
         </section>
@@ -258,10 +251,10 @@ export function Assinatura() {
       <section className="vp-secao faq vp-faq">
         <header className="vp-secao__cabeca"><p className="vp-sobre">Dúvidas</p><h2>Perguntas frequentes</h2></header>
         <details><summary>Como funciona o limite do plano gratuito?</summary><p>{limitesHabilitados ? 'Você pode registrar até 20 respostas novas por dia. As próximas voltam no dia seguinte.' : 'O limite diário está desligado nesta fase, portanto o acesso gratuito também está sem limite de respostas. Se o limite for ativado futuramente, o patamar gratuito previsto é de 20 respostas novas por dia.'} Comentários, revisões e desempenho continuam abertos.</p></details>
-        <details><summary>Como funciona o cancelamento?</summary><p>Por botão em Minha conta, sem justificativa. Fora dos sete dias para reembolso integral, ele impede novas renovações e mantém o acesso até o fim do período já pago.</p></details>
+        <details><summary>Como funciona o cancelamento?</summary><p>Em Minha conta, você escolhe entre impedir a próxima renovação ou, dentro de sete dias da última cobrança, pedir reembolso integral. Impedir a renovação não reembolsa a cobrança atual: o acesso pago continua até o fim do período. Se o Mercado Pago confirmar o reembolso, o acesso pago termina e sua conta volta ao gratuito.</p></details>
         <details><summary>Se eu cancelar o semestral após três meses, recebo os três restantes?</summary><p>Após os sete dias para reembolso integral, não há devolução proporcional automática. Você mantém o acesso até completar os seis meses pagos, e a assinatura não renova. A mesma regra vale para o plano anual. Seus direitos previstos em lei permanecem preservados. Consulte as <a href={href('/condicoes-assinatura')}>condições da assinatura</a> antes de comprar.</p></details>
         <details><summary>Como funciona a garantia?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pode pedir reembolso integral em Minha conta. Se a solicitação automática não for confirmada pelo Mercado Pago, use o canal de contato para atendimento manual. O acesso pago só é encerrado após confirmação do reembolso. Depois desse prazo não há reembolso proporcional por esta garantia.</p></details>
-        <details><summary>O que acontece com meu histórico se eu cancelar?</summary><p>Nada. Respostas, revisões, favoritas, anotações e desempenho ficam guardados. A conta apenas volta ao limite gratuito.</p></details>
+        <details><summary>O que acontece com meu histórico se eu cancelar?</summary><p>Nada. Respostas, revisões, favoritas, anotações e desempenho ficam guardados. Ao impedir a renovação, o acesso pago continua até o fim do período; após um reembolso confirmado, a conta volta ao limite gratuito.</p></details>
         <details><summary>O plano muda as revisões ou os comentários?</summary><p>Não. Revisões, calendário e comentários são iguais no gratuito e no ilimitado. {limitesHabilitados ? 'O plano remove o limite diário de respostas.' : 'Nesta fase, o acesso gratuito também não tem limite diário.'}</p></details>
         <details><summary>Qual plano vale mais a pena?</summary><p>Se você está a mais de seis meses da prova, o anual sai pela metade do preço do mensal. Para uma reta final curta, o mensal ou o semestral resolvem sem compromisso longo.</p></details>
       </section>
