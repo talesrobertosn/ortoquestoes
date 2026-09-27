@@ -155,11 +155,21 @@ for trecho in (
 ):
     assert trecho in GERENCIAR_PLANO, f"Garantia de cobrança ausente: {trecho}"
 
-assert "estado?.status_assinatura === 'cancelada'" in RESUMO_ASSINATURA
+assert "statusAtual === 'cancelada'" in RESUMO_ASSINATURA
 assert "{ acao: 'sincronizar_cobranca' }" in RESUMO_ASSINATURA
 assert "!proximoEstado.ultima_cobranca_em" not in RESUMO_ASSINATURA
-for trecho in ("Falha no pagamento", "Reembolsada", "Pendente", "Cancelada", "Em dia"):
+for trecho in ("Falha no pagamento", "Encerrada e reembolsada", "Pendente", "Renovação cancelada", "Em dia"):
     assert trecho in RESUMO_ASSINATURA, f"Mensagem de estado ausente: {trecho}"
+for trecho in (
+    "Desistir e solicitar reembolso integral",
+    "Apenas impedir a próxima renovação",
+    "Confirmar pedido de reembolso",
+    "Confirmar fim das renovações",
+    "gerenciar(acaoPendente)",
+    "statusAtual === 'cancelada' && periodoPagoVigente",
+):
+    assert trecho in RESUMO_ASSINATURA, f"Escolha clara de cancelamento ausente: {trecho}"
+assert "Cancelar plano" not in PAGINA_ASSINATURA, "Ação ambígua de cancelamento voltou à página de planos"
 for trecho in ("paywall_ativo=false", "VITE_LIMITES_HABILITADOS=false", "WCS-52311", "atendimento manual", "sem confirmação do provedor"):
     assert trecho in ROTEIRO_ROLLBACK, f"Roteiro seguro incompleto: {trecho}"
 for trecho in ("VITE_LIMITES_HABILITADOS", "acesso gratuito está sem limite diário nesta fase", "atendimento manual"):
