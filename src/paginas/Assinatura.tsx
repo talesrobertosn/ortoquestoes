@@ -208,11 +208,11 @@ export function Assinatura() {
         </div>
         {!pagamentosHabilitados && <p className="vp-aviso"><Icone nome="calendario" tamanho={16} /> As assinaturas abrem em breve. Até lá, todo o acervo continua disponível no plano gratuito.</p>}
         {mensagem && <p role="status" className="vp-aviso">{mensagem}</p>}
+        <p className="vp-letras">Renovação automática na periodicidade escolhida, com valor e data da próxima cobrança mostrados no checkout antes de confirmar. Cancelamento por botão, sem justificativa.</p>
         <div className="vp-pagamento-seguro" role="note">
           <Icone nome="certo" tamanho={22} />
-          <p><strong>Seu cartão fica no Mercado Pago.</strong> A compra acontece no checkout hospedado pelo Mercado Pago. O OrtoQuestões não recebe nem guarda o número completo ou o código de segurança do cartão. Em Minha conta, você pode cancelar as próximas renovações e solicitar o reembolso integral dentro dos sete dias após cada cobrança aprovada.</p>
+          <p><strong>Pagamento protegido pelo Mercado Pago.</strong> Você conclui a compra no checkout externo do Mercado Pago: os dados do cartão são informados e processados lá, não no OrtoQuestões. Nós recebemos apenas o status e os identificadores necessários para acompanhar sua assinatura; não recebemos nem guardamos o número completo ou o código de segurança do cartão.</p>
         </div>
-        <p className="vp-letras">Renovação automática na periodicidade escolhida, com valor e data da próxima cobrança mostrados no checkout antes de confirmar. Cancelamento por botão, sem justificativa.</p>
       </section>
 
       <section className="vp-garantia">

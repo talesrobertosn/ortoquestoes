@@ -22,7 +22,7 @@ const mensagensStatus: Record<string, { titulo: string; explicacao: string }> = 
   reembolsada: { titulo: 'Reembolsada', explicacao: 'O reembolso foi confirmado e o acesso voltou à modalidade gratuita. Seu histórico foi preservado.' },
 }
 
-export function ResumoAssinatura() {
+export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean }) {
   const { sessao } = usarConta()
   const [estado, definirEstado] = useState<EstadoAssinatura | null>(null)
   const [carregando, definirCarregando] = useState(true)
@@ -79,14 +79,14 @@ export function ResumoAssinatura() {
     && Date.now() - new Date(estado.ultima_cobranca_em).getTime() <= 7 * 864e5
 
   return <section className="ct-cartao ct-cartao--largo" aria-label="Minha assinatura">
-    <header className="ct-cartao__cabeca"><div><h2>Minha assinatura</h2><p>Seu histórico permanece preservado ao cancelar ou usar a garantia.</p></div></header>
+    <header className="ct-cartao__cabeca"><div><h2>Minha assinatura</h2>{detalhada && <p>Seu histórico permanece preservado ao cancelar ou usar a garantia.</p>}</div></header>
     {carregando ? <p role="status">Carregando assinatura…</p> : <>
-      <p className="conta-assinatura__plano">{planoVisivel}</p>
-      <details className="conta-assinatura__detalhes">
-        <summary>Mais dados sobre minha assinatura</summary>
-      <dl className="conta-assinatura__dados">
-        <div><dt>Plano contratado</dt><dd>{estado?.plano ?? 'Nenhum'}</dd></div>
+      <dl className="conta-assinatura__dados conta-assinatura__dados--resumo">
+        <div><dt>Plano</dt><dd>{planoVisivel}</dd></div>
         <div><dt>Status</dt><dd>{statusExibido}</dd></div>
+      </dl>
+      {detalhada ? <>
+      <dl className="conta-assinatura__dados">
         <div><dt>{estado?.cancelar_ao_fim || ['cancelada', 'vencida', 'reembolsada'].includes(statusAtual) ? 'Término do acesso' : ativo ? 'Próxima cobrança' : 'Data informada pelo provedor'}</dt><dd>{data(estado?.fim_periodo ?? null)}</dd></div>
         <div><dt>Última cobrança</dt><dd>{data(estado?.ultima_cobranca_em ?? null)}</dd></div>
       </dl>
@@ -98,7 +98,7 @@ export function ResumoAssinatura() {
         {garantia && <button className="botao botao--fantasma" type="button" disabled={processando} onClick={() => void gerenciar('reembolsar')}>Usar garantia de 7 dias</button>}
         <a className="botao botao--fantasma" href={href('/assinatura')}>Ver planos</a>
       </div>
-      </details>
+      </> : <a className="conta-assinatura__detalhes-link" href={href('/conta/assinatura')}>Mais dados sobre minha assinatura <span aria-hidden="true">↗</span></a>}
     </>}
     {mensagem && <p role="status">{mensagem}</p>}
   </section>

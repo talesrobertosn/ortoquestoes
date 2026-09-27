@@ -17,6 +17,7 @@ import { Ranking } from './paginas/Ranking'
 import { Termos } from './paginas/Termos'
 import { Assinatura } from './paginas/Assinatura'
 import { AdminAssinaturas } from './paginas/AdminAssinaturas'
+import { DetalhesAssinatura } from './paginas/DetalhesAssinatura'
 import { SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
 
@@ -29,6 +30,7 @@ const TITULOS: Record<string, string> = {
   '/projeto': 'O projeto — OrtoQuestões: questões de ortopedia comentadas',
   '/contato': 'Relatar erro — OrtoQuestões',
   '/conta': 'Minha conta — OrtoQuestões',
+  '/conta/assinatura': 'Dados da assinatura — OrtoQuestões',
   '/dados': 'Seu desempenho — OrtoQuestões',
   '/favoritas': 'Suas favoritas — OrtoQuestões',
   '/erros': 'Caderno de erros — OrtoQuestões',
@@ -85,7 +87,7 @@ export function App() {
       pagina = <Contato consulta={rota.consulta} />
       break
     case 'conta':
-      pagina = <Conta consulta={rota.consulta} />
+      pagina = segundo === 'assinatura' ? <DetalhesAssinatura /> : <Conta consulta={rota.consulta} />
       break
     case 'dados':
       pagina = <DadosLocais />

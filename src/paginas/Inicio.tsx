@@ -266,12 +266,12 @@ export function Inicio() {
 
           <section className="inicio-planos" aria-labelledby="inicio-planos-titulo">
             <div>
-              <p className="meta">PLANOS ORTOQUESTÕES</p>
-              <h2 id="inicio-planos-titulo">Escolha como quer apoiar seu estudo</h2>
-              <p>O gratuito continua sem limite diário nesta fase. Se o limite planejado de 20 novas respostas por dia for ativado, a assinatura mantém suas respostas sem teto durante o período pago.</p>
-              <p className="inicio-planos__valores">Mensal R$ 39,90 · Semestral R$ 179,90 · Anual R$ 239,90</p>
+              <p className="meta">MAIS PRÁTICA, MAIS CONFIANÇA</p>
+              <h2 id="inicio-planos-titulo">Quanto mais você resolve, mais entende a prova.</h2>
+              <p>Responder com constância ajuda a reconhecer padrões e descobrir o que revisar. Hoje o treino gratuito ainda está sem limite. Quando a regra planejada entrar em vigor, serão 20 novas respostas por dia no gratuito, renovadas na virada do dia em São Paulo.</p>
+              <p className="inicio-planos__apoio">Quer manter seu ritmo sem teto e ajudar a sustentar o acervo, os comentários e o site? Conheça a assinatura opcional do OrtoQuestões.</p>
             </div>
-            <a className="botao botao--principal botao--grande" href={href('/assinatura')}>Conhecer planos e condições</a>
+            <a className="botao botao--principal botao--grande" href={href('/assinatura')}>Ver como apoiar o projeto</a>
           </section>
 
           <CartaoStreak />
