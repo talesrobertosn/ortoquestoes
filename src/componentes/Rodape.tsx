@@ -16,6 +16,7 @@ const PROJETO = [
   ['/contato', 'Relatar erro'],
   ['/assinatura', 'Planos'],
   ['/termos', 'Termos de uso'],
+  ['/condicoes-assinatura', 'Condições da assinatura'],
 ] as const
 
 export function Rodape() {

@@ -21,6 +21,10 @@ MIGRACAO_ADMIN_EVENTOS = (RAIZ / "supabase/migrations/202609261540_admin_eventos
 PAGINA_ADMIN = (RAIZ / "src/paginas/AdminAssinaturas.tsx").read_text()
 PAGINA_ASSINATURA = (RAIZ / "src/paginas/Assinatura.tsx").read_text()
 TERMOS = (RAIZ / "src/paginas/Termos.tsx").read_text()
+CONDICOES_ASSINATURA = (RAIZ / "src/paginas/CondicoesAssinatura.tsx").read_text()
+ACEITES_ASSINATURA = (RAIZ / "supabase/migrations/202609270900_aceites_assinatura.sql").read_text()
+LIMITE_CLIENTE = (RAIZ / "src/estado/limiteDiario.ts").read_text()
+VERSOES_TERMOS = (RAIZ / "src/conta/termos.ts").read_text()
 
 obrigatorios = [
     "paywall_ativo boolean not null default false",
@@ -64,6 +68,9 @@ for trecho in (
     "checkout_requer_conta_teste",
     "MERCADO_PAGO_AMBIENTE",
     "MERCADO_PAGO_RESTRITO_CONTAS_TESTE",
+    "aceite_confirmado !== true",
+    "aceite_termos_versao !== versaoCondicoesAssinatura",
+    "banco('aceites_assinatura'",
 ):
     assert trecho in CRIAR_CHECKOUT, f"Contrato de checkout ausente: {trecho}"
 
@@ -71,6 +78,13 @@ assert "MERCADO_PAGO_SANDBOX_PAYER_EMAIL" not in CRIAR_CHECKOUT
 assert "console." not in CRIAR_CHECKOUT
 assert "external_reference: usuario.id" in CRIAR_CHECKOUT
 assert "!payerEmail" in CRIAR_CHECKOUT
+assert "versaoCondicoesAssinatura = '2026-09-27'" in CRIAR_CHECKOUT
+assert "VERSAO_CONDICOES_ASSINATURA = '2026-09-27'" in VERSOES_TERMOS
+assert "create table if not exists public.aceites_assinatura" in ACEITES_ASSINATURA
+assert "alter table public.aceites_assinatura enable row level security" in ACEITES_ASSINATURA
+assert "revoke all on public.aceites_assinatura from anon, authenticated" in ACEITES_ASSINATURA
+assert "create policy" not in ACEITES_ASSINATURA
+assert "permitido: false, paywallAtivo: false" in LIMITE_CLIENTE
 assert "Deno.env.get('MERCADO_PAGO_RESTRITO_CONTAS_TESTE') === 'true'" in HTTP_COMPARTILHADO
 assert "&& origem && origensSandbox.has(origem)" in HTTP_COMPARTILHADO
 
@@ -135,8 +149,12 @@ for trecho in ("paywall_ativo=false", "VITE_LIMITES_HABILITADOS=false", "WCS-523
 for trecho in ("VITE_LIMITES_HABILITADOS", "acesso gratuito está sem limite diário nesta fase", "atendimento manual"):
     assert trecho in PAGINA_ASSINATURA, f"Informação pré-compra ausente: {trecho}"
 assert "reembolso é integral e automático" not in PAGINA_ASSINATURA
-for trecho in ("assinaturas opcionais", "R$ 39,90", "R$ 179,90", "R$ 239,90", "sete dias", "tratado manualmente"):
+for trecho in ("assinaturas opcionais", "R$ 39,90", "R$ 179,90", "R$ 239,90", "sete dias", "sem reembolso proporcional automático"):
     assert trecho in TERMOS, f"Termos de assinatura incompletos: {trecho}"
+for trecho in ("R$ 39,90", "R$ 179,90", "R$ 239,90", "Mercado Pago", "não recebe nem armazena", "não há reembolso proporcional automático"):
+    assert trecho in CONDICOES_ASSINATURA, f"Condições específicas incompletas: {trecho}"
+for trecho in ("aceite_termos_versao: VERSAO_CONDICOES_ASSINATURA", "aceite_confirmado: true", "Continuar para Mercado Pago"):
+    assert trecho in PAGINA_ASSINATURA, f"Aceite pré-checkout ausente: {trecho}"
 
 for trecho in (
     "create table if not exists public.administradores",

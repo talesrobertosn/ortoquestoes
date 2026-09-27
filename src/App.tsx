@@ -15,6 +15,7 @@ import { Progresso } from './paginas/Progresso'
 import { Revisao } from './paginas/Revisao'
 import { Ranking } from './paginas/Ranking'
 import { Termos } from './paginas/Termos'
+import { CondicoesAssinatura } from './paginas/CondicoesAssinatura'
 import { Assinatura } from './paginas/Assinatura'
 import { AdminAssinaturas } from './paginas/AdminAssinaturas'
 import { SITE } from './config'
@@ -35,7 +36,8 @@ const TITULOS: Record<string, string> = {
   '/progresso': 'Progresso dos comentários — OrtoQuestões',
   '/revisao': 'Sua revisão — OrtoQuestões',
   '/ranking': 'Ranking — OrtoQuestões',
-  '/termos': 'Termos de Uso e Consentimento — OrtoQuestões',
+  '/termos': 'Termos de Uso e Privacidade — OrtoQuestões',
+  '/condicoes-assinatura': 'Condições da assinatura — OrtoQuestões',
   '/assinatura': 'Planos — OrtoQuestões',
   '/admin/assinaturas': 'Administração de assinaturas — OrtoQuestões',
   '/entrar': 'Entrar ou criar conta — OrtoQuestões',
@@ -107,6 +109,9 @@ export function App() {
       break
     case 'termos':
       pagina = <Termos />
+      break
+    case 'condicoes-assinatura':
+      pagina = <CondicoesAssinatura />
       break
     case 'assinatura':
       pagina = <Assinatura />

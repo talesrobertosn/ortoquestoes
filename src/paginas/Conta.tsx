@@ -11,7 +11,7 @@ import { planoRevisao } from '../estado/planoRevisao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { usarLeitura, usarEtiquetas } from '../estado/preferencias'
 import { usarTema } from '../estado/tema'
-import { dadosAceiteTermos } from '../conta/termos'
+import { dadosAceiteTermos, VERSAO_TERMOS } from '../conta/termos'
 import { textoErro } from '../conta/erros'
 import { Icone } from '../componentes/Icone'
 import { Medalha } from '../componentes/Medalha'
@@ -56,6 +56,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [uf, definirUf] = useState(String(perfil.uf ?? ''))
   const [receberNovidades, definirReceberNovidades] = useState(Boolean(perfil.receber_novidades ?? false))
   const [aceitouTermos, definirAceitouTermos] = useState(false)
+  const [aceiteAtualizado, definirAceiteAtualizado] = useState(false)
   const [salvandoPerfil, definirSalvandoPerfil] = useState(false)
   const { perfil: perfilRanking, carregado: rankingCarregado, salvar: salvarPerfilRanking, nomeExibido: nomeExibidoRanking, nomeCadastro: nomeCadastroRanking } = usarPerfilRanking(sessao)
   const [apelidoRanking, definirApelidoRanking] = useState('')
@@ -117,7 +118,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         if (error) throw error
         definirSenha('')
       } else if (modo === 'criar') {
-        if (!aceitouTermos) { definirMensagem('É necessário aceitar os Termos de Uso e Consentimento para criar sua conta.'); return }
+        if (!aceitouTermos) { definirMensagem('Leia e aceite os Termos de Uso para criar sua conta.'); return }
         if (!perfilCompleto()) return
         const { error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: { ...dadosPerfil(), ...dadosAceiteTermos() } } })
         if (error) throw error
@@ -234,7 +235,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           </div>}
           {!recuperacao && modo === 'criar' && <>
             <label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o OrtoQuestões</label>
-            <label className="campo campo--checkbox"><input type="checkbox" required checked={aceitouTermos} onChange={e => definirAceitouTermos(e.target.checked)} /> <span>Li e concordo com os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso e Consentimento</a> do OrtoQuestões.</span></label>
+            <label className="campo campo--checkbox"><input type="checkbox" required checked={aceitouTermos} onChange={e => definirAceitouTermos(e.target.checked)} /> <span>Li e concordo com os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso</a> do OrtoQuestões. O cadastro é gratuito; assinaturas são opcionais e têm condições próprias antes da compra.</span></label>
           </>}
           <button className="botao botao--principal acesso__enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}</button>
         </form>
@@ -255,6 +256,17 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       if (error) throw error
       definirMensagem('Você saiu da sua conta com segurança.')
     } catch { definirMensagem('Não foi possível sair. Confira sua conexão e tente novamente.') } finally { definirOcupado(false) }
+  }
+  const confirmarNovosTermos = async () => {
+    if (!supabase || ocupado) return
+    definirOcupado(true)
+    try {
+      const { error } = await supabase.auth.updateUser({ data: dadosAceiteTermos() })
+      if (error) throw error
+      definirAceiteAtualizado(true)
+      definirMensagem('Sua ciência dos Termos de Uso atualizados foi registrada.')
+    } catch { definirMensagem('Não foi possível registrar agora. Você pode continuar usando sua conta e tentar novamente mais tarde.') }
+    finally { definirOcupado(false) }
   }
   return <article className="empilha-2 conta-pagina ct">
     <section className="ct-heroi">
@@ -282,6 +294,15 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       </dl>}
     </section>
     {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
+
+    {!aceiteAtualizado && perfil.termos_versao !== VERSAO_TERMOS && <section className="ct-cartao" aria-label="Termos atualizados">
+      <h2>Termos de uso atualizados</h2>
+      <p>Esclarecemos as condições do acesso gratuito, dos planos e do cancelamento. Sua conta continua disponível enquanto você lê a nova versão.</p>
+      <div className="linha linha--empilha-celular">
+        <a className="botao" href={href('/termos')} target="_blank" rel="noopener noreferrer">Ler os termos</a>
+        <button className="botao botao--principal" type="button" disabled={ocupado} onClick={() => void confirmarNovosTermos()}>Li e concordo com a versão atual</button>
+      </div>
+    </section>}
 
     {status.rejeitados.length > 0 && <section className="ct-rejeitados" id="itens-nao-enviados">
       <header className="ct-cartao__cabeca"><span className="ct-icone ct-icone--alerta"><Icone nome="alerta" tamanho={18} /></span><div><h2>{status.rejeitados.length} {status.rejeitados.length === 1 ? 'item não pôde ser enviado' : 'itens não puderam ser enviados'}</h2><p>{status.rejeitados.length === 1 ? 'Ele continua salvo' : 'Eles continuam salvos'} neste aparelho, mas o servidor recusou o envio. O resto do seu progresso sincronizou normalmente.</p></div></header>

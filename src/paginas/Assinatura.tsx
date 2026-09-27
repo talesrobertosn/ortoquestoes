@@ -4,6 +4,8 @@ import { lerRespondidas } from '../estado/sessao'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { usarIndice } from '../dados/usarIndice'
 import { Icone, type NomeIcone } from '../componentes/Icone'
+import { Painel } from '../componentes/Painel'
+import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { href } from '../util/rotas'
 
 const MENSAL = 39.9
@@ -30,6 +32,9 @@ export function Assinatura() {
   const { indice } = usarIndice()
   const [metricas, definirMetricas] = useState<MetricasConta | null>(null)
   const [mensagem, definirMensagem] = useState<string | null>(null)
+  const [planoEscolhido, definirPlanoEscolhido] = useState<(typeof PLANOS)[number] | null>(null)
+  const [aceitouCondicoes, definirAceitouCondicoes] = useState(false)
+  const [abrindoCheckout, definirAbrindoCheckout] = useState(false)
   const locais = useMemo(() => Object.values(lerRespondidas()), [])
   const nome = String(sessao?.user.user_metadata?.nome ?? '').trim()
   const comentadas = useMemo(() => (indice?.questoes ?? []).filter((q) => q.c === 1).length, [indice])
@@ -39,13 +44,27 @@ export function Assinatura() {
     chamarRpc<MetricasConta[]>('obter_estado_conta', {}).then((r) => definirMetricas(r[0] ?? null)).catch(() => definirMetricas(null))
   }, [sessao])
 
-  async function escolher(plano: string) {
+  function escolher(plano: (typeof PLANOS)[number]) {
     if (!pagamentosHabilitados || !sessao) return
+    definirPlanoEscolhido(plano)
+    definirAceitouCondicoes(false)
+    definirMensagem(null)
+  }
+  async function confirmarCompra() {
+    if (!planoEscolhido || !aceitouCondicoes || !pagamentosHabilitados || !sessao || abrindoCheckout) return
+    definirAbrindoCheckout(true)
     definirMensagem('Preparando checkout seguro…')
     try {
-      const r = await chamarFuncao<{ url: string }>('criar-checkout', { plano })
+      const r = await chamarFuncao<{ url: string }>('criar-checkout', {
+        plano: planoEscolhido.id,
+        aceite_termos_versao: VERSAO_CONDICOES_ASSINATURA,
+        aceite_confirmado: true,
+      })
       location.assign(r.url)
-    } catch (erro) { definirMensagem(erro instanceof Error ? erro.message : 'Não foi possível abrir o checkout.') }
+    } catch (erro) {
+      definirMensagem(erro instanceof Error ? erro.message : 'Não foi possível abrir o checkout.')
+      definirAbrindoCheckout(false)
+    }
   }
   async function gerenciar(acao: 'cancelar' | 'reembolsar') {
     if (!window.confirm(acao === 'reembolsar' ? 'Solicitar reembolso integral e cancelar cobranças futuras?' : 'Cancelar cobranças futuras?')) return
@@ -201,7 +220,7 @@ export function Assinatura() {
                 </ul>
                 {!sessao
                   ? <a className="botao botao--principal botao--largo" href={href('/conta?modo=criar')}>Criar conta para assinar</a>
-                  : <button className={'botao botao--largo' + (p.destaque ? ' botao--principal' : '')} type="button" disabled={!pagamentosHabilitados || ativa} onClick={() => escolher(p.id)}>{ativa ? 'Plano ativo' : pagamentosHabilitados ? `Assinar ${p.nome.toLowerCase()}` : 'Em breve'}</button>}
+                  : <button className={'botao botao--largo' + (p.destaque ? ' botao--principal' : '')} type="button" disabled={!pagamentosHabilitados || ativa} onClick={() => escolher(p)}>{ativa ? 'Plano ativo' : pagamentosHabilitados ? `Assinar ${p.nome.toLowerCase()}` : 'Em breve'}</button>}
               </article>
             )
           })}
@@ -210,7 +229,7 @@ export function Assinatura() {
         {mensagem && <p role="status" className="vp-aviso">{mensagem}</p>}
         <div className="vp-pagamento-seguro" role="note">
           <Icone nome="certo" tamanho={22} />
-          <p><strong>Seu cartão fica no Mercado Pago.</strong> A compra acontece no checkout hospedado pelo Mercado Pago. O OrtoQuestões não recebe nem guarda o número completo ou o código de segurança do cartão. Em Minha conta, você pode cancelar as próximas renovações e solicitar o reembolso integral dentro dos sete dias após cada cobrança aprovada.</p>
+          <p><strong>Seu cartão fica no Mercado Pago.</strong> A compra acontece no checkout hospedado pelo Mercado Pago. O OrtoQuestões não recebe nem guarda o número completo ou o código de segurança do cartão. Em Minha conta, você pode cancelar as próximas renovações e solicitar o reembolso integral dentro dos sete dias após cada cobrança aprovada. <a href={href('/condicoes-assinatura')}>Leia as condições da assinatura.</a></p>
         </div>
         <p className="vp-letras">Renovação automática na periodicidade escolhida, com valor e data da próxima cobrança mostrados no checkout antes de confirmar. Cancelamento por botão, sem justificativa.</p>
       </section>
@@ -240,12 +259,26 @@ export function Assinatura() {
         <header className="vp-secao__cabeca"><p className="vp-sobre">Dúvidas</p><h2>Perguntas frequentes</h2></header>
         <details><summary>Como funciona o limite do plano gratuito?</summary><p>{limitesHabilitados ? 'Você pode registrar até 20 respostas novas por dia. As próximas voltam no dia seguinte.' : 'O limite diário está desligado nesta fase, portanto o acesso gratuito também está sem limite de respostas. Se o limite for ativado futuramente, o patamar gratuito previsto é de 20 respostas novas por dia.'} Comentários, revisões e desempenho continuam abertos.</p></details>
         <details><summary>Como funciona o cancelamento?</summary><p>Por botão em Minha conta, sem justificativa. Fora dos sete dias para reembolso integral, ele impede novas renovações e mantém o acesso até o fim do período já pago.</p></details>
-        <details><summary>Se eu cancelar o semestral após três meses, recebo os três restantes?</summary><p>Após os sete dias para reembolso integral, não há devolução proporcional automática. Você mantém o acesso até completar os seis meses pagos, e a assinatura não renova. A mesma regra vale para o plano anual. Seus direitos previstos em lei permanecem preservados.</p></details>
+        <details><summary>Se eu cancelar o semestral após três meses, recebo os três restantes?</summary><p>Após os sete dias para reembolso integral, não há devolução proporcional automática. Você mantém o acesso até completar os seis meses pagos, e a assinatura não renova. A mesma regra vale para o plano anual. Seus direitos previstos em lei permanecem preservados. Consulte as <a href={href('/condicoes-assinatura')}>condições da assinatura</a> antes de comprar.</p></details>
         <details><summary>Como funciona a garantia?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pode pedir reembolso integral em Minha conta. Se a solicitação automática não for confirmada pelo Mercado Pago, use o canal de contato para atendimento manual. O acesso pago só é encerrado após confirmação do reembolso. Depois desse prazo não há reembolso proporcional por esta garantia.</p></details>
         <details><summary>O que acontece com meu histórico se eu cancelar?</summary><p>Nada. Respostas, revisões, favoritas, anotações e desempenho ficam guardados. A conta apenas volta ao limite gratuito.</p></details>
         <details><summary>O plano muda as revisões ou os comentários?</summary><p>Não. Revisões, calendário e comentários são iguais no gratuito e no ilimitado. {limitesHabilitados ? 'O plano remove o limite diário de respostas.' : 'Nesta fase, o acesso gratuito também não tem limite diário.'}</p></details>
         <details><summary>Qual plano vale mais a pena?</summary><p>Se você está a mais de seis meses da prova, o anual sai pela metade do preço do mensal. Para uma reta final curta, o mensal ou o semestral resolvem sem compromisso longo.</p></details>
       </section>
+
+      <Painel titulo={planoEscolhido ? `Revisar assinatura ${planoEscolhido.nome.toLowerCase()}` : 'Revisar assinatura'} aberto={planoEscolhido !== null} aoFechar={() => { if (!abrindoCheckout) definirPlanoEscolhido(null) }}>
+        {planoEscolhido && <div className="empilha">
+          <p><strong>{planoEscolhido.nome}: {real(planoEscolhido.total)}</strong> cobrados integralmente {planoEscolhido.meses === 1 ? 'a cada mês' : `a cada ${planoEscolhido.meses} meses`}, com renovação automática até o cancelamento.</p>
+          <p>Nos primeiros sete dias após cada cobrança aprovada, você pode solicitar reembolso integral. Depois disso, cancelar interrompe as renovações e mantém o acesso até o fim do período pago, sem reembolso proporcional automático.</p>
+          <p>O próximo passo abre o checkout hospedado pelo Mercado Pago. Você só paga se confirmar a compra lá; o OrtoQuestões não recebe dados completos do cartão.</p>
+          <label className="campo campo--checkbox"><input type="checkbox" checked={aceitouCondicoes} onChange={evento => definirAceitouCondicoes(evento.target.checked)} /> <span>Li e aceito as <a href={href('/condicoes-assinatura')} target="_blank" rel="noopener noreferrer">Condições da Assinatura</a> (versão {VERSAO_CONDICOES_ASSINATURA}) para este plano e este valor.</span></label>
+          {mensagem && <p role="status" className="vp-aviso">{mensagem}</p>}
+          <div className="linha linha--empilha-celular">
+            <button className="botao botao--principal" type="button" disabled={!aceitouCondicoes || abrindoCheckout} onClick={() => void confirmarCompra()}>{abrindoCheckout ? 'Abrindo checkout…' : 'Continuar para Mercado Pago'}</button>
+            <button className="botao" type="button" disabled={abrindoCheckout} onClick={() => definirPlanoEscolhido(null)}>Voltar aos planos</button>
+          </div>
+        </div>}
+      </Painel>
 
       <section className="vp-final">
         <div>
