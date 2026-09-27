@@ -28,4 +28,5 @@ tsconfig.tsbuildinfo
 # Páginas públicas e sitemap: gerados do acervo a cada deploy
 # (scripts/gerar_paginas_seo.py e scripts/gerar_sitemap.py).
 /public/questoes/
+/public/guias/
 /public/sitemap.xml

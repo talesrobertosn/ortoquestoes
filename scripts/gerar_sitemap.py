@@ -22,6 +22,8 @@ from comum import CAMINHO_INDICE, DIR_PUBLICO  # noqa: E402
 
 SITE = "https://ortoquestoes.com.br/"
 DIR_QUESTOES = DIR_PUBLICO / "questoes"
+DIR_GUIAS = DIR_PUBLICO / "guias"
+ARQUIVO_GUIAS = DIR_GUIAS / "_seo.json"
 
 ROBOTS = f"""User-agent: *
 Allow: /
@@ -61,6 +63,23 @@ def principal() -> int:
                 urls.append(entrada(f"{SITE}questoes/{pasta.name}/{questao.name}", data, "monthly", "0.6"))
     else:
         print("aviso: public/questoes/ não existe — rode gerar_paginas_seo.py antes", file=sys.stderr)
+
+    # Guias editoriais com propósito próprio entram somente depois de gerados;
+    # assim uma execução parcial nunca anuncia páginas 404 no sitemap.
+    if DIR_GUIAS.is_dir():
+        try:
+            guias = json.loads(ARQUIVO_GUIAS.read_text(encoding="utf-8"))
+        except (OSError, ValueError, TypeError):
+            guias = []
+        if guias:
+            # A página de índice declara /guias/ como canônica — nunca
+            # anunciamos /guias/index.html, que seria uma duplicata.
+            indice_data = max(g["atualizado_em"] for g in guias)
+            urls.append(entrada(f"{SITE}guias/", indice_data, "monthly", "0.7"))
+            for guia in guias:
+                urls.append(entrada(f"{SITE}guias/{guia['arquivo']}", guia["atualizado_em"], "monthly", "0.7"))
+        else:
+            print("aviso: manifesto dos guias não existe — rode gerar_guias_seo.py antes", file=sys.stderr)
 
     xml = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', *urls, "</urlset>"]
