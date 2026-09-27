@@ -1,6 +1,7 @@
 import { SITE } from '../config'
 import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { href } from '../util/rotas'
+import { LIMITES_HABILITADOS } from '../estado/limiteDiario'
 
 export function CondicoesAssinatura() {
   return <article className="limite-leitura empilha termos-pagina">
@@ -15,7 +16,7 @@ export function CondicoesAssinatura() {
     <p>O checkout hospedado pelo Mercado Pago mostra os dados finais da compra antes de você confirmar o pagamento. Não finalize se o preço, o período ou a próxima cobrança estiverem diferentes da oferta do {SITE.nome}.</p>
 
     <h2>2. Gratuito e acesso da assinatura</h2>
-    <p>O cadastro não exige pagamento. Nesta fase, o acesso gratuito está sem limite diário de respostas, por decisão operacional do projeto. A assinatura assegura acesso sem limite diário durante o período pago caso o limite gratuito planejado de 20 novas respostas por dia venha a ser ativado. Uma futura alteração do gratuito será informada no site e não encurtará um período pago.</p>
+    <p>O cadastro não exige pagamento. {LIMITES_HABILITADOS ? 'O acesso gratuito permite registrar até 20 novas respostas por dia, com renovação na virada do dia em São Paulo. A assinatura oferece respostas novas sem esse limite durante o período pago.' : 'Nesta fase, o acesso gratuito está sem limite diário de respostas, por decisão operacional do projeto. A assinatura assegura acesso sem limite diário durante o período pago caso o limite gratuito planejado de 20 novas respostas por dia venha a ser ativado.'} Uma futura alteração do gratuito será informada no site e não encurtará um período pago.</p>
     <p>O plano não oferece exclusividade de comentários, revisão, caderno de erros ou simulados nesta fase. Conteúdos da SBQ e de cirurgia do quadril permanecem acessíveis a todos, inclusive no gratuito. O {SITE.nome} não promete aprovação em provas.</p>
 
     <h2>3. Processamento do pagamento</h2>

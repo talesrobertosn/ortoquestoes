@@ -1,6 +1,7 @@
 import { SITE } from '../config'
 import { href } from '../util/rotas'
 import { VERSAO_TERMOS } from '../conta/termos'
+import { LIMITES_HABILITADOS } from '../estado/limiteDiario'
 
 export function Termos() {
   return (
@@ -114,7 +115,7 @@ export function Termos() {
       <p><strong>9.4.</strong> O {SITE.nome} reserva-se o direito de, a seu exclusivo critério e independentemente de aviso prévio ou justificativa, remover, ocultar, editar ou recusar a publicação de qualquer Conteúdo Gerado pelo Usuário que considere ofensivo, discriminatório, difamatório, ilícito, configurador de spam ou publicidade não solicitada, violador de direitos autorais de terceiros, ou de qualquer forma incompatível com a finalidade educacional da Plataforma, sem que tal medida gere direito a indenização em favor de quem publicou o conteúdo.</p>
 
       <h2>Cláusula 10 — Acesso gratuito e assinaturas opcionais</h2>
-      <p><strong>10.1.</strong> A criação da Conta e o uso gratuito não exigem cartão. Nesta fase, o plano gratuito permite responder sem limite diário, por decisão operacional do {SITE.nome}. Essa disponibilidade pode ser alterada futuramente, com informação prévia e clara no site. O limite gratuito planejado, mas ainda desligado, é de 20 respostas novas por dia. Nenhuma alteração do gratuito reduzirá o período de acesso ilimitado já contratado e pago.</p>
+      <p><strong>10.1.</strong> A criação da Conta e o uso gratuito não exigem cartão. {LIMITES_HABILITADOS ? 'O plano gratuito permite registrar até 20 novas respostas por dia, com renovação na virada do dia em America/Sao_Paulo.' : 'Nesta fase, o plano gratuito permite responder sem limite diário, por decisão operacional do OrtoQuestões. O limite gratuito planejado, mas ainda desligado, é de 20 respostas novas por dia.'} Nenhuma alteração do gratuito reduzirá o período de acesso ilimitado já contratado e pago.</p>
       <p><strong>10.2.</strong> A assinatura é opcional. Os planos oferecidos são mensal (cobrança total de R$ 39,90 a cada mês), semestral (R$ 179,90 a cada seis meses) e anual (R$ 239,90 a cada doze meses), com renovação automática na periodicidade escolhida. O preço é cobrado por período, não em parcelas mensais; o valor mensal equivalente apresentado na página de planos é apenas comparativo. A contratação segue as <a href={href('/condicoes-assinatura')}>Condições da Assinatura</a>, exibidas para aceite separado antes da ida ao checkout.</p>
       <p><strong>10.3.</strong> O pagamento ocorre no ambiente hospedado do Mercado Pago. O Usuário informa os dados de cartão diretamente ao Mercado Pago; o {SITE.nome} não recebe nem armazena número completo do cartão ou código de segurança. Para acompanhar a assinatura, recebemos identificadores da operação, situação do pagamento e datas de cobrança.</p>
       <p><strong>10.4.</strong> O Usuário pode impedir renovações futuras pela página Minha conta. Após o prazo de sete dias para reembolso integral da cobrança, o cancelamento do plano semestral ou anual mantém o acesso até o fim do período já pago, sem reembolso proporcional automático dos meses restantes. Nos sete dias após cada cobrança aprovada, o Usuário pode solicitar reembolso integral pelo botão de garantia ou pelo canal de contato da Cláusula 31, sem prejuízo dos direitos previstos em lei. O status financeiro e o acesso são atualizados após confirmação do provedor. Cancelamento e reembolso não apagam o histórico de estudos.</p>
@@ -209,7 +210,7 @@ export function Termos() {
         Este resumo não substitui a leitura do Termo completo acima — em caso de qualquer conflito,
         prevalece o texto das cláusulas — mas ajuda a fixar os pontos mais importantes: o aceite deste
         Termo é feito uma única vez, no momento em que você cria sua conta, e o texto completo fica
-        sempre disponível no rodapé do site; o acesso gratuito está sem limite diário nesta fase e as assinaturas recorrentes são opcionais; depois de 5 questões respondidas, você aparece no ranking para quem tem conta, com o apelido que escolher (ou seu nome e a inicial do sobrenome), e pode sair quando quiser; os
+        sempre disponível no rodapé do site; {LIMITES_HABILITADOS ? 'o acesso gratuito permite 20 novas respostas por dia' : 'o acesso gratuito está sem limite diário nesta fase'} e as assinaturas recorrentes são opcionais; depois de 5 questões respondidas, você aparece no ranking para quem tem conta, com o apelido que escolher (ou seu nome e a inicial do sobrenome), e pode sair quando quiser; os
         Comentários de IA podem errar e são baseados em livros, não são a própria fonte; nada aqui
         substitui estudar pelos livros de verdade nem serve de orientação médica para pacientes reais; o
         Acervo mistura questões antigas de prova (TEOT/TARO/ENARE), simulados e questões próprias

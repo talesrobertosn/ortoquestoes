@@ -18,6 +18,7 @@ import { usarConta } from '../conta/ContextoConta'
 import { planoRevisao } from '../estado/planoRevisao'
 import { SITE } from '../config'
 import { calcularStreak } from '../estado/streak'
+import { LIMITES_HABILITADOS } from '../estado/limiteDiario'
 
 // A maior parte do acervo ainda não distingue TEOT de TARO (prova genérica
 // "TEOT/TARO"); enquanto isso não é resolvido, as três provas são somadas
@@ -268,7 +269,7 @@ export function Inicio() {
             <div>
               <p className="meta">MAIS PRÁTICA, MAIS CONFIANÇA</p>
               <h2 id="inicio-planos-titulo">Quanto mais você resolve, mais entende a prova.</h2>
-              <p>Responder com constância ajuda a reconhecer padrões e descobrir o que revisar. Hoje o treino gratuito ainda está sem limite. Quando a regra planejada entrar em vigor, serão 20 novas respostas por dia no gratuito, renovadas na virada do dia em São Paulo.</p>
+              <p>Responder com constância ajuda a reconhecer padrões e descobrir o que revisar. {LIMITES_HABILITADOS ? 'Você pode registrar 20 novas respostas gratuitamente por dia; a cota renova na virada do dia em São Paulo.' : 'Hoje o treino gratuito ainda está sem limite. Quando a regra planejada entrar em vigor, serão 20 novas respostas por dia no gratuito, renovadas na virada do dia em São Paulo.'}</p>
               <p className="inicio-planos__apoio">Quer manter seu ritmo sem teto e ajudar a sustentar o acervo, os comentários e o site? Conheça a assinatura opcional do OrtoQuestões.</p>
             </div>
             <a className="botao botao--principal botao--grande" href={href('/assinatura')}>Ver como apoiar o projeto</a>
