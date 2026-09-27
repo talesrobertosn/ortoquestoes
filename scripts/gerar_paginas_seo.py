@@ -218,6 +218,7 @@ def topo(titulo: str, descricao: str, caminho: str, extra: str = "", raiz: str =
   <a class="marca" href="{raiz}"><span>Orto</span>Questões</a>
   <nav>
     <a href="{raiz}questoes/">Assuntos</a>
+    <a href="{raiz}guias/">Guias de estudo</a>
     <a href="{raiz}#/treinar">Treinar</a>
     <a href="{raiz}#/sobre">O projeto</a>
   </nav>
@@ -235,6 +236,7 @@ def rodape(raiz: str = "../") -> str:
     referência, inspiradas no padrão da prova indicada.
     Os comentários se baseiam na bibliografia de referência da especialidade; a redação pode contar
     com apoio de inteligência artificial. <a href="{raiz}#/contato">Encontrou um erro?</a>
+    · <a href="{raiz}guias/">Guias de estudo</a>
     · <a href="https://www.instagram.com/ortoquestoes/">@ortoquestoes</a>
   </p>
 </footer>

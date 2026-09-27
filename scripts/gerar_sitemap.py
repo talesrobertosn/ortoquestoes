@@ -22,6 +22,7 @@ from comum import CAMINHO_INDICE, DIR_PUBLICO  # noqa: E402
 
 SITE = "https://ortoquestoes.com.br/"
 DIR_QUESTOES = DIR_PUBLICO / "questoes"
+DIR_GUIAS = DIR_PUBLICO / "guias"
 
 ROBOTS = f"""User-agent: *
 Allow: /
@@ -61,6 +62,12 @@ def principal() -> int:
                 urls.append(entrada(f"{SITE}questoes/{pasta.name}/{questao.name}", data, "monthly", "0.6"))
     else:
         print("aviso: public/questoes/ não existe — rode gerar_paginas_seo.py antes", file=sys.stderr)
+
+    # Guias editoriais com propósito próprio entram somente depois de gerados;
+    # assim uma execução parcial nunca anuncia páginas 404 no sitemap.
+    if DIR_GUIAS.is_dir():
+        for guia in sorted(DIR_GUIAS.glob("*.html")):
+            urls.append(entrada(f"{SITE}guias/{guia.name}", data, "monthly", "0.7"))
 
     xml = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', *urls, "</urlset>"]
