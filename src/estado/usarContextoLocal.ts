@@ -3,6 +3,8 @@ import type { RegistroQuestao } from './revisao'
 import { useEffect, useMemo, useState } from 'react'
 import { carregarBusca, type ContextoLocal } from '../dados/acervo'
 import { usarFavoritos } from './sessao'
+import { usarRitmoRevisao } from './preferencias'
+import { idsRevisaoHoje } from './planoRevisao'
 
 /**
  * Reúne o que este navegador sabe sobre quem estuda — o que já foi respondido
@@ -25,9 +27,16 @@ export function usarContextoLocal(busca: string) {
     }
   }, [precisa, textos])
 
+  const { ritmo } = usarRitmoRevisao()
+  const chaveRitmo = `${ritmo.limite}:${ritmo.folgas.join(',')}`
+  const revisaoHoje = useMemo(
+    () => idsRevisaoHoje(respondidas, ritmo),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [respondidas, chaveRitmo],
+  )
   const contexto: ContextoLocal = useMemo(
-    () => ({ respondidas, favoritos, textos }),
-    [respondidas, favoritos, textos],
+    () => ({ respondidas, favoritos, textos, revisaoHoje }),
+    [respondidas, favoritos, textos, revisaoHoje],
   )
 
   return { contexto, carregandoBusca: precisa && !textos }

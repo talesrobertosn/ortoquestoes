@@ -118,6 +118,8 @@ export interface ContextoLocal {
   favoritos: string[]
   /** id → enunciado e alternativas, normalizados. Só existe depois de buscar. */
   textos: Map<string, string> | null
+  /** O que o ritmo de revisão reserva para hoje. Sem ele, vale a data de cada questão. */
+  revisaoHoje?: Set<string>
 }
 
 export const CONTEXTO_VAZIO: ContextoLocal = {
@@ -140,6 +142,10 @@ function termosDeBusca(busca: string): string[] {
     ultimosTermos = normalizar(busca).split(/\s+/).filter(Boolean)
   }
   return ultimosTermos
+}
+
+function venceHoje(id: string, contexto: ContextoLocal): boolean {
+  return contexto.revisaoHoje ? contexto.revisaoHoje.has(id) : revisarHoje(contexto.respondidas[id])
 }
 
 function aplicaUm(
@@ -179,7 +185,7 @@ function aplicaUm(
 
   if (ignorar !== 'situacao' && filtros.situacao !== 'todas') {
     const registro = contexto.respondidas[item.id]
-    if (filtros.situacao === 'revisarHoje' && !revisarHoje(registro)) return false
+    if (filtros.situacao === 'revisarHoje' && !venceHoje(item.id, contexto)) return false
     if (filtros.situacao === 'dominadas' && !dominada(registro)) return false
     if (filtros.situacao === 'naoRespondidas' && registro) return false
     if (filtros.situacao === 'erradas' && registro?.c !== false) return false
@@ -257,7 +263,7 @@ export function contar(
       } else if (registro.c === true) {
         contagens.porSituacao.acertadas = (contagens.porSituacao.acertadas ?? 0) + 1
       }
-      if (revisarHoje(registro)) contagens.porSituacao.revisarHoje = (contagens.porSituacao.revisarHoje ?? 0) + 1
+      if (venceHoje(item.id, contexto)) contagens.porSituacao.revisarHoje = (contagens.porSituacao.revisarHoje ?? 0) + 1
       if (dominada(registro)) contagens.porSituacao.dominadas = (contagens.porSituacao.dominadas ?? 0) + 1
       if (contexto.favoritos.includes(item.id)) {
         contagens.porSituacao.favoritas = (contagens.porSituacao.favoritas ?? 0) + 1
@@ -323,7 +329,7 @@ export function montarSessao(
     const grupos = [[], [], []] as string[][]
     for (const id of ids) {
       const registro = contexto.respondidas[id]
-      if (revisarHoje(registro)) grupos[0].push(id)
+      if (venceHoje(id, contexto)) grupos[0].push(id)
       else if (!registro) grupos[1].push(id)
       else grupos[2].push(id)
     }

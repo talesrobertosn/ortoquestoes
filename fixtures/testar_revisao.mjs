@@ -7,7 +7,7 @@ import { pathToFileURL } from 'node:url'
 const pasta = await mkdtemp(join(tmpdir(), 'ortoquestoes-test-'))
 try {
   const arquivo = join(pasta, 'revisao.mjs')
-  await build({ stdin: { contents: `export * from './src/estado/revisao'; export * from './src/estado/backup'; export * from './src/dados/acervo'; export * from './src/dados/tipos'; export * from './src/util/rotas';`, resolveDir: process.cwd() }, outfile: arquivo, bundle: true, platform: 'node', format: 'esm', define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false' } })
+  await build({ stdin: { contents: `export * from './src/estado/revisao'; export * from './src/estado/backup'; export * from './src/dados/acervo'; export * from './src/dados/tipos'; export * from './src/util/rotas'; export * from './src/estado/planoRevisao';`, resolveDir: process.cwd() }, outfile: arquivo, bundle: true, platform: 'node', format: 'esm', define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false' } })
   const m = await import(pathToFileURL(arquivo))
   const agora = 1000000000
   const erro = m.proximoRegistro(undefined, false, agora)
@@ -59,5 +59,36 @@ try {
   const backup = { aplicativo: 'OrtoQuestões', versao: 1, exportadoEm: new Date().toISOString(), respondidas: { '1': erro }, favoritos: ['1'], notas: { '1': '**Lembrar**' }, historico: [] }
   assert.deepEqual(m.validarBackup(JSON.stringify(backup)), backup)
   for (const invalido of [{ ...backup, versao: 2 }, { ...backup, respondidas: { '1': { c: 'sim', q: 1 } } }, { ...backup, notas: { '1': 3 } }, { ...backup, historico: [{}] }]) assert.throws(() => m.validarBackup(JSON.stringify(invalido)))
+  // Ritmo de revisão: teto diário, prioridade para erros e dias de folga.
+  {
+    const D = 86400000
+    const base = new Date(2026, 8, 28, 12).getTime() // segunda-feira ao meio-dia
+    const hoje = m.inicioDia(base)
+    const regs = {}
+    for (let i = 0; i < 40; i++) regs['v' + i] = { c: true, q: base - 20 * D, tentativas: 1, sequencia: 1, proximaRevisao: base - (i + 1) * 3600000 - D }
+    for (let i = 0; i < 5; i++) regs['e' + i] = { c: false, q: base - D, tentativas: 1, sequencia: 0, proximaRevisao: base - D }
+    const sem = m.distribuirRevisoes(regs, m.SEM_RITMO, 30, base)
+    assert.equal(sem.get(hoje).length, 45)
+    const com = m.distribuirRevisoes(regs, { limite: 30, folgas: [] }, 30, base)
+    assert.equal(com.get(hoje).length, 30)
+    assert.ok(['e0', 'e1', 'e2', 'e3', 'e4'].every(id => com.get(hoje).some(x => x.id === id)), 'erros entram primeiro no dia')
+    const amanha = [...com.keys()].filter(k => k > hoje).sort((a, b) => a - b)[0]
+    assert.equal(com.get(amanha).length, 15)
+    assert.ok(com.get(amanha).every(x => x.redistribuida))
+    assert.equal(m.idsRevisaoHoje(regs, { limite: 30, folgas: [] }, base).size, 30)
+    // Folga hoje: nada hoje, tudo vai para o dia seguinte (respeitando o teto).
+    const folga = m.distribuirRevisoes(regs, { limite: 30, folgas: [new Date(base).getDay()] }, 30, base)
+    assert.equal(folga.get(hoje), undefined)
+    // Revisões já feitas hoje gastam o teto.
+    const feitas = { ...regs }
+    for (let i = 0; i < 10; i++) feitas['f' + i] = { c: true, q: base - 60000, tentativas: 2, sequencia: 2, proximaRevisao: base + 30 * D }
+    assert.equal(m.revisoesFeitasHoje(feitas, base), 10)
+    assert.equal(m.distribuirRevisoes(feitas, { limite: 30, folgas: [] }, 30, base).get(hoje).length, 20)
+    // Filtro "Revisar hoje" segue o ritmo quando o contexto traz a reserva do dia.
+    const reserva = new Set(['e0'])
+    const indice = { questoes: [{ id: 'e0', t: 0, s: [], p: null, a: null, d: null }, { id: 'v0', t: 0, s: [], p: null, a: null, d: null }], temas: [{ slug: 'x', nome: 'X' }], subtemas: [], provas: [], anos: [], total: 2 }
+    const ctx = { respondidas: regs, favoritos: [], textos: null, revisaoHoje: reserva }
+    assert.equal(m.contar(indice, { ...m.FILTROS_VAZIOS, situacao: 'revisarHoje' }, ctx).total, 1)
+  }
   console.log('Revisão, migração do histórico, filtros, URLs e validação de backup: todos os testes passaram.')
 } finally { await rm(pasta, { recursive: true, force: true }) }

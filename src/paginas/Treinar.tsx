@@ -27,6 +27,17 @@ const PROVAS_TEOT_TARO = ['TEOT/TARO', 'TEOT', 'TARO']
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
 const LIMITES = [5, 10, 20, 30, 50, 100]
 const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'erradas', 'acertadas', 'favoritas', 'revisarHoje', 'incertas', 'dominadas']
+/** O que cada situação seleciona, dito por extenso: o rótulo curto sozinho gerava dúvida. */
+const DESCRICAO_SITUACAO: Record<Situacao, string> = {
+  todas: 'Todas as questões do recorte, respondidas ou não. Revisões, novas e já acertadas vêm intercaladas.',
+  naoRespondidas: 'Só as que você ainda não respondeu.',
+  erradas: 'As que você errou na última vez que respondeu.',
+  acertadas: 'As que você acertou na última vez que respondeu.',
+  favoritas: 'As que você marcou com a estrela durante as sessões.',
+  revisarHoje: 'As que o seu ritmo de revisão separou para hoje.',
+  incertas: 'As que você marcou como chute ou dúvida ao responder.',
+  dominadas: 'As que você acertou em todas as revisões programadas.',
+}
 const DURACOES: Array<[number, string]> = [
   [60, '1 hora'],
   [120, '2 horas'],
@@ -104,13 +115,15 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     return tentativas ? Math.round((acertos / tentativas) * 100) : null
   }, [contexto.respondidas])
 
-  const comentadas = useMemo(() => (indice?.questoes ?? []).filter((q) => q.c === 1).length, [indice])
   const rapidas: { titulo: string; icone: NomeIcone; quantidade: number; preset: Partial<Filtros> }[] = [
     { titulo: 'Revisar hoje', icone: 'calendario', quantidade: gerais?.porSituacao.revisarHoje ?? 0, preset: { situacao: 'revisarHoje' } },
-    { titulo: 'Questões novas', icone: 'estrela', quantidade: gerais?.porSituacao.naoRespondidas ?? 0, preset: { situacao: 'naoRespondidas' } },
+    { titulo: 'Questões novas', icone: 'alvo', quantidade: gerais?.porSituacao.naoRespondidas ?? 0, preset: { situacao: 'naoRespondidas' } },
     { titulo: 'Que eu errei', icone: 'reiniciar', quantidade: gerais?.porSituacao.erradas ?? 0, preset: { situacao: 'erradas' } },
-    { titulo: 'Só comentadas', icone: 'livro', quantidade: comentadas, preset: { comComentario: true } },
+    { titulo: 'Favoritas', icone: 'estrela', quantidade: gerais?.porSituacao.favoritas ?? 0, preset: { situacao: 'favoritas' } },
   ]
+  const [filtrosProvaAbertos, definirFiltrosProvaAbertos] = useState(
+    () => filtros.provas.length + filtros.anos.length + filtros.dificuldades.length > 0 || filtros.soSimulados,
+  )
 
   /** Sessão de 10 num clique, sem passar pelos filtros. */
   function sessaoRapida(preset: Partial<Filtros> = {}) {
@@ -125,10 +138,11 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     definirFiltros((atuais) => ({ ...atuais, ...parcial }))
   }
 
-  /** Recorte dos OrtoQuestões Simulados já no modo com tempo, levando ao formato. */
+  /** Recorte dos OrtoQuestões Simulados já no modo prova, levando ao formato. */
   function montarSimulado() {
     atualizar({ soSimulados: true })
     definirSimulado(true)
+    definirFiltrosProvaAbertos(true)
     document.getElementById('etapa-formato')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
@@ -158,6 +172,15 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   }
 
   const selecionados = filtros.temas.length + filtros.subtemas.length
+  const nomesProva = gruposProva.filter((g) => g.provas.some((p) => filtros.provas.includes(p))).map((g) => g.rotulo)
+  const resumoProva = [
+    nomesProva.length ? nomesProva.join(', ') : 'Todas as provas',
+    filtros.soSimulados ? 'só simulados' : '',
+    filtros.anos.length ? [...filtros.anos].sort((a, b) => b - a).join(', ') : 'todos os anos',
+    filtros.dificuldades.length ? filtros.dificuldades.map((d) => ROTULO_DIFICULDADE[d].toLowerCase()).join(', ') : '',
+  ].filter(Boolean).join(' · ')
+  const opcoesAtivas = [filtros.comImagem, filtros.comComentario, filtros.incluirAnuladas, !filtros.embaralhar, !mostrarEtiquetas].filter(Boolean).length
+  const situacoesVisiveis = SITUACOES.filter((s) => s === 'todas' || s === filtros.situacao || (contagens?.porSituacao[s] ?? 0) > 0)
   return (
     <div className="empilha-2 treinar-pagina">
       <section className="tr-heroi">
@@ -179,30 +202,6 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           ))}
         </div>
       </section>
-      {totalSimulados > 0 && (
-        <section className="tr-simulados" aria-labelledby="tr-simulados-titulo">
-          <div className="tr-simulados__texto">
-            <span className="tr-simulados__selo">Simulados</span>
-            <h2 id="tr-simulados-titulo">OrtoQuestões Simulados</h2>
-            <p>
-              Questões autorais, elaboradas a partir da bibliografia de referência e inspiradas no padrão de cada
-              prova. <strong className="numerico">{totalSimulados}</strong> questões, todas comentadas. Não são
-              questões oficiais nem têm vínculo com as sociedades organizadoras.
-            </p>
-          </div>
-          <div className="tr-simulados__acoes">
-            <button type="button" className="botao botao--principal" onClick={() => sessaoRapida({ soSimulados: true })}>
-              <Icone nome="raio" tamanho={18} /> 10 questões agora
-            </button>
-            <button type="button" className="botao" onClick={montarSimulado}>
-              <Icone nome="calendario" tamanho={18} /> Simulado com tempo
-            </button>
-            <button type="button" className="tr-pilula" aria-pressed={soSimulados} onClick={() => atualizar({ soSimulados: !soSimulados })}>
-              {soSimulados ? 'Usando nos filtros' : 'Usar nos filtros abaixo'}
-            </button>
-          </div>
-        </section>
-      )}
 
       {!conta && <p className="aviso-ia">Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. <a href={href('/conta')}>Criar minha conta</a></p>}
 
@@ -245,17 +244,16 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           <span className="tr-etapa__numero">2</span>
           <div>
             <h2>Situação</h2>
-            <p>Vem do que você já respondeu. Refazer o que errou rende mais do que começar sempre por uma nova.</p>
+            <p>Escolha a partir do que você já respondeu.</p>
           </div>
         </header>
         <div className="tr-pilulas" id="filtro-situacao">
-          {SITUACOES.map((situacao) => (
+          {situacoesVisiveis.map((situacao) => (
             <button
               key={situacao}
               type="button"
               className="tr-pilula"
               aria-pressed={filtros.situacao === situacao}
-              disabled={situacao !== 'todas' && !(contagens?.porSituacao[situacao] ?? 0)}
               onClick={() => atualizar({ situacao })}
             >
               {ROTULO_SITUACAO[situacao]}
@@ -263,17 +261,27 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             </button>
           ))}
         </div>
+        <p className="tr-dica">
+          {DESCRICAO_SITUACAO[filtros.situacao]}
+          {filtros.situacao === 'favoritas' && <> <a href={href('/favoritas')}>Ver a lista das favoritas</a></>}
+          {filtros.situacao === 'revisarHoje' && <> <a href={href('/revisao')}>Ajustar o ritmo</a></>}
+        </p>
       </section>
 
-      {(temProva || temAno || Object.keys(contagens?.porDificuldade ?? {}).length > 0) && (
-        <section className="tr-etapa">
-          <header className="tr-etapa__cabeca">
+      {(temProva || temAno || totalSimulados > 0 || Object.keys(contagens?.porDificuldade ?? {}).length > 0) && (
+        <details
+          className="tr-etapa tr-etapa--recolhivel"
+          open={filtrosProvaAbertos}
+          onToggle={(e) => definirFiltrosProvaAbertos((e.currentTarget as HTMLDetailsElement).open)}
+        >
+          <summary className="tr-etapa__cabeca">
             <span className="tr-etapa__numero">3</span>
             <div>
-              <h2>Prova, ano e dificuldade</h2>
-              <p>Sem marcar nada, a sessão considera o acervo inteiro.</p>
+              <h2>Prova, ano e dificuldade <small className="tr-opcional">opcional</small></h2>
+              <p>{resumoProva}</p>
             </div>
-          </header>
+            <Icone nome="baixo" tamanho={18} />
+          </summary>
           {temProva && (
             <div className="tr-grupo">
               <span className="tr-grupo__rotulo">Prova</span>
@@ -300,17 +308,12 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                     </button>
                   )
                 })}
-              </div>
-            </div>
-          )}
-          {totalSimulados > 0 && (
-            <div className="tr-grupo">
-              <span className="tr-grupo__rotulo">OrtoQuestões Simulados</span>
-              <div className="tr-pilulas">
-                <button type="button" className="tr-pilula tr-pilula--simulados" aria-pressed={soSimulados} onClick={() => atualizar({ soSimulados: !soSimulados })}>
-                  Só simulados
-                  <span className="numerico">{contagens?.simulados ?? 0}</span>
-                </button>
+                {totalSimulados > 0 && (
+                  <button type="button" className="tr-pilula tr-pilula--simulados" aria-pressed={soSimulados} onClick={() => atualizar({ soSimulados: !soSimulados })}>
+                    Só OrtoQuestões Simulados
+                    <span className="numerico">{contagens?.simulados ?? 0}</span>
+                  </button>
+                )}
               </div>
             </div>
           )}
@@ -363,15 +366,15 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
               </div>
             </div>
           )}
-        </section>
+        </details>
       )}
 
       <section className="tr-etapa" id="etapa-formato">
         <header className="tr-etapa__cabeca">
-          <span className="tr-etapa__numero">{temProva || temAno ? 4 : 3}</span>
+          <span className="tr-etapa__numero">4</span>
           <div>
             <h2>Formato</h2>
-            <p>Quantidade, modo de estudo e detalhes da sessão.</p>
+            <p>Quantas questões e como você quer ver o gabarito.</p>
           </div>
         </header>
         <div className="tr-grupo">
@@ -392,18 +395,18 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         <div className="tr-modos" role="radiogroup" aria-label="Como você quer estudar">
           <button type="button" role="radio" aria-checked={!simulado} className="tr-modo" onClick={() => definirSimulado(false)}>
             <Icone nome="livro" tamanho={20} />
-            <strong>Treino livre</strong>
+            <strong>Modo estudo</strong>
             <span>Gabarito e comentário logo após cada resposta.</span>
           </button>
           <button type="button" role="radio" aria-checked={simulado} className="tr-modo" onClick={() => definirSimulado(true)}>
-            <Icone nome="calendario" tamanho={20} />
-            <strong>Simulado com tempo</strong>
-            <span>Gabarito guardado até entregar, como na prova.</span>
+            <Icone nome="relogio" tamanho={20} />
+            <strong>Modo prova</strong>
+            <span>Com cronômetro. Gabarito e comentários só ao entregar.</span>
           </button>
         </div>
         {simulado && (
           <div className="tr-grupo">
-            <span className="tr-grupo__rotulo">Duração</span>
+            <span className="tr-grupo__rotulo">Tempo de prova</span>
             <div className="tr-pilulas" id="filtro-duracao">
               {DURACOES.map(([valor, rotulo]) => (
                 <button key={valor} type="button" className="tr-pilula" aria-pressed={minutos === valor} onClick={() => definirMinutos(valor)}>{rotulo}</button>
@@ -412,7 +415,10 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           </div>
         )}
         <details className="tr-mais">
-          <summary>Mais opções</summary>
+          <summary>
+            Mais opções {opcoesAtivas > 0 && <span className="tr-mais__ativas">{opcoesAtivas} {opcoesAtivas === 1 ? 'ativa' : 'ativas'}</span>}
+            <small>Imagem, comentário, anuladas, ordem e etiquetas</small>
+          </summary>
           <div className="tr-mais__lista">
             {temImagem && (
               <label className="caixa">
@@ -460,6 +466,27 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         </Estado>
       )}
 
+      {totalSimulados > 0 && (
+        <section className="tr-simulados" aria-labelledby="tr-simulados-titulo">
+          <div className="tr-simulados__texto">
+            <span className="tr-simulados__selo">Autorais</span>
+            <h2 id="tr-simulados-titulo">OrtoQuestões Simulados</h2>
+            <p>
+              <strong className="numerico">{totalSimulados}</strong> questões do site, no padrão das provas e todas
+              comentadas. Não são questões oficiais.
+            </p>
+          </div>
+          <div className="tr-simulados__acoes">
+            <button type="button" className="botao" onClick={() => sessaoRapida({ soSimulados: true })}>
+              <Icone nome="raio" tamanho={16} /> 10 questões
+            </button>
+            <button type="button" className="botao" onClick={montarSimulado}>
+              <Icone nome="relogio" tamanho={16} /> Fazer como prova
+            </button>
+          </div>
+        </section>
+      )}
+
       <div className="tr-barra" role="region" aria-label="Resumo da sessão">
         <div className="tr-barra__resumo">
           <strong>{total === 0 ? 'Nenhuma questão' : `${quantidadeSessao} ${quantidadeSessao === 1 ? 'questão' : 'questões'}`}</strong>
@@ -473,7 +500,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         <button type="button" className="botao botao--fantasma tr-barra__limpar" onClick={() => definirFiltros({ ...FILTROS_VAZIOS, limite: 10 })}>Limpar</button>
         <button type="button" className="botao botao--principal botao--grande" disabled={total === 0 || carregandoBusca} onClick={comecar}>
           {total === 0 ? 'Ajuste os filtros' : simulado ? (
-            <>Iniciar simulado · <span className="botao__contador">{quantidadeSessao}</span></>
+            <>Iniciar modo prova · <span className="botao__contador">{quantidadeSessao}</span></>
           ) : (
             <>Responder <span className="botao__contador">{quantidadeSessao}</span> {quantidadeSessao === 1 ? 'questão' : 'questões'}</>
           )}

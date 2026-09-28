@@ -17,6 +17,7 @@ import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
 import { planoRevisao } from '../estado/planoRevisao'
+import { usarRitmoRevisao } from '../estado/preferencias'
 import { calcularStreak } from '../estado/streak'
 import { FUSO_DIA, chaveDia } from '../estado/limiteDiario'
 
@@ -79,9 +80,11 @@ export function Inicio() {
   const [cabecalhoDoDia] = useState(() => VARIACOES_CABECALHO[Math.floor(Math.random() * VARIACOES_CABECALHO.length)])
   const [modalEntrarAberto, definirModalEntrarAberto] = useState(false)
 
+  const { ritmo } = usarRitmoRevisao()
   const revisoesPlanejadas = useMemo(
-    () => (indice ? planoRevisao(indice, contexto.respondidas, 7) : new Map()),
-    [indice, contexto.respondidas],
+    () => (indice ? planoRevisao(indice, contexto.respondidas, 7, ritmo) : new Map()),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [indice, contexto.respondidas, ritmo.limite, ritmo.folgas.join(',')],
   )
   const temaFragil = useMemo(() => {
     if (!indice) return null

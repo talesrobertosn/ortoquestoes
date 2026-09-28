@@ -8,8 +8,7 @@ import { href, navegar } from '../util/rotas'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { usarIndice } from '../dados/usarIndice'
 import { planoRevisao } from '../estado/planoRevisao'
-import { usarArmazenado } from '../estado/usarArmazenado'
-import { usarLeitura, usarEtiquetas } from '../estado/preferencias'
+import { usarLeitura, usarEtiquetas, usarRitmoRevisao } from '../estado/preferencias'
 import { usarTema } from '../estado/tema'
 import { dadosAceiteTermos, VERSAO_TERMOS } from '../conta/termos'
 import { textoErro } from '../conta/erros'
@@ -41,7 +40,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [importado, definirImportado] = useState(false)
   const { contexto } = usarContextoLocal('')
   const { indice } = usarIndice()
-  const [metaDiaria, definirMetaDiaria] = usarArmazenado<number>('meta-diaria-revisao', 10)
+  const { ritmo, definirRitmo } = usarRitmoRevisao()
   const { densidade, definirDensidade, fonte, definirFonte } = usarLeitura()
   const { mostrarEtiquetas, definirEtiquetas } = usarEtiquetas()
   const { tema, trocar: trocarTema } = usarTema()
@@ -183,7 +182,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const registros = Object.values(contexto.respondidas)
     const tentativas = registros.reduce((total, registro) => total + (registro.tentativas ?? 1), 0)
     const acertos = registros.reduce((total, registro) => total + (registro.acertos ?? Number(registro.c === true)), 0)
-    const pendentes = [...planoRevisao(indice, contexto.respondidas, 1).values()].reduce((total, dia) => total + dia.ids.length, 0)
+    const pendentes = [...planoRevisao(indice, contexto.respondidas, 1, ritmo).values()].reduce((total, dia) => total + dia.ids.length, 0)
     return { respondidas: registros.length, acerto: tentativas ? Math.round((acertos / tentativas) * 100) : null, pendentes }
   })() : null
   const trocarModo = (m: typeof modo) => { definirModo(m); definirMensagem(''); definirSenha(''); definirConfirmacao('') }
@@ -349,7 +348,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
 
       <section className="ct-cartao">
         <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="livro" tamanho={18} /></span><div><h2>Preferências de estudo</h2><p>Leitura, tema e meta de revisão.</p></div></header>
-        <div className="ct-opcao"><span className="ct-opcao__rotulo">Meta diária de revisão</span><div className="ct-seg" aria-label="Meta diária de revisão">{[10, 20, 30].map(meta => <button type="button" key={meta} aria-pressed={metaDiaria === meta} onClick={() => definirMetaDiaria(meta)}>{meta}/dia</button>)}</div></div>
+        <div className="ct-opcao"><span className="ct-opcao__rotulo">Revisões por dia</span><div className="ct-seg" aria-label="Revisões por dia">{([15, 20, 30, 50, null] as const).map(limite => <button type="button" key={String(limite)} aria-pressed={ritmo.limite === limite} onClick={() => definirRitmo({ ...ritmo, limite })}>{limite === null ? 'Sem teto' : `${limite}/dia`}</button>)}</div></div>
         <div className="ct-opcao"><span className="ct-opcao__rotulo">Densidade da leitura</span><div className="ct-seg">{([['confortavel', 'Confortável'], ['compacta', 'Compacta'], ['foco', 'Foco']] as const).map(([valor, rotulo]) => <button key={valor} type="button" aria-pressed={densidade === valor} onClick={() => definirDensidade(valor)}>{rotulo}</button>)}</div></div>
         <div className="ct-opcao"><span className="ct-opcao__rotulo">Tema</span><div className="ct-seg">{([['claro', 'Claro'], ['escuro', 'Escuro']] as const).map(([valor, rotulo]) => <button key={valor} type="button" aria-pressed={tema === valor} onClick={() => trocarTema(valor)}>{rotulo}</button>)}</div></div>
         <label className="ct-opcao ct-opcao--faixa"><span className="ct-opcao__rotulo">Tamanho da fonte <output>{fonte}%</output></span><input className="ct-faixa" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>

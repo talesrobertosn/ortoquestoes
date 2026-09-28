@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
-import { planoRevisao, inicioDia, chaveDia, rotuloDia, JANELA_REVISAO_DIAS } from '../estado/planoRevisao'
+import { planoRevisao, type DiaRevisao, inicioDia, chaveDia, rotuloDia, JANELA_REVISAO_DIAS, distribuirRevisoes, revisoesFeitasHoje, SEM_RITMO } from '../estado/planoRevisao'
+import { usarRitmoRevisao } from '../estado/preferencias'
 import { usarSessao } from '../estado/sessao'
 import { FILTROS_VAZIOS } from '../dados/tipos'
 import { navegar } from '../util/rotas'
@@ -10,6 +11,7 @@ import { Icone, type NomeIcone } from '../componentes/Icone'
 
 const DIA = 86400000
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
+const TETOS: Array<number | null> = [15, 20, 30, 50, null]
 const FORMATO_MES = new Intl.DateTimeFormat('pt-BR', { month: 'long', year: 'numeric' })
 
 /** "90d" fica ilegível — a partir de 2 meses o rótulo passa a ser em meses/anos. */
@@ -36,7 +38,12 @@ export function Revisao() {
   const { indice, carregando } = usarIndice(); const { contexto } = usarContextoLocal(''); const { iniciar } = usarSessao()
   const [selecionado, definirSelecionado] = useState(inicioDia())
   const [mesExibido, definirMesExibido] = useState(() => inicioMes(inicioDia()))
-  const plano = useMemo(() => indice ? planoRevisao(indice, contexto.respondidas) : new Map(), [indice, contexto.respondidas])
+  const { ritmo, definirRitmo } = usarRitmoRevisao()
+  const chaveRitmo = `${ritmo.limite}:${ritmo.folgas.join(',')}`
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const plano = useMemo(() => indice ? planoRevisao(indice, contexto.respondidas, JANELA_REVISAO_DIAS, ritmo) : new Map<string, DiaRevisao>(), [indice, contexto.respondidas, chaveRitmo])
+  const vencidasHoje = useMemo(() => distribuirRevisoes(contexto.respondidas, SEM_RITMO, 1).get(inicioDia())?.length ?? 0, [contexto.respondidas])
+  const feitasHoje = useMemo(() => revisoesFeitasHoje(contexto.respondidas), [contexto.respondidas])
   const hoje = inicioDia(); const dia = plano.get(chaveDia(selecionado))
   const mesAtual = inicioMes(hoje)
   const mesLimite = useMemo(() => inicioMes(hoje + JANELA_REVISAO_DIAS * DIA), [hoje])
@@ -55,18 +62,32 @@ export function Revisao() {
   const temaFragil = [...plano.values()].flatMap(d => [...d.temas.entries()]).sort((a,b)=>b[1]-a[1])[0]
   const idsHoje = plano.get(chaveDia(hoje))?.ids ?? []
   const hojeTotal = idsHoje.length
+  const excedente = Math.max(0, vencidasHoje - hojeTotal)
+  const folgaHoje = ritmo.folgas.includes(new Date(hoje).getDay())
+  const proximoDia = [...plano.values()].filter(d => d.inicio > hoje && d.ids.length).sort((a, b) => a.inicio - b.inicio)[0]
+  const alternarFolga = (d: number) => definirRitmo({ ...ritmo, folgas: ritmo.folgas.includes(d) ? ritmo.folgas.filter(x => x !== d) : [...ritmo.folgas, d].sort() })
+  const textoHeroi = hojeTotal
+    ? excedente
+      ? `Seu teto é de ${ritmo.limite} por dia. As outras ${excedente} vencidas foram distribuídas nos próximos dias, começando pelas que você errou.`
+      : atrasadas ? `${atrasadas} vieram de dias anteriores. Comece com 10 e mantenha o ritmo.` : 'Uma sessão curta hoje já mantém a memória em dia.'
+    : folgaHoje
+      ? 'Hoje é folga no seu ritmo. O que venceria hoje passou para o próximo dia de estudo.'
+      : feitasHoje
+        ? `Você fez ${feitasHoje} ${feitasHoje === 1 ? 'revisão' : 'revisões'} hoje.${proximoDia ? ' Se sobrar tempo, dá para adiantar as próximas.' : ''}`
+        : pendentes ? 'Nada vence hoje. Aproveite para avançar em questões novas.' : 'Responda questões e o seu calendário de revisão se monta sozinho.'
   return <div className="empilha-2 revisao-premium">
     <section className="rv-heroi">
       <div className="rv-heroi__principal">
         <p className="rv-heroi__sobrelinha"><Icone nome="calendario" tamanho={16} /> Revisão de hoje</p>
         {hojeTotal
           ? <h1><span className="rv-heroi__numero numerico">{hojeTotal}</span> {hojeTotal === 1 ? 'questão espera' : 'questões esperam'} por você</h1>
-          : <h1>Tudo em dia por aqui</h1>}
-        <p className="rv-heroi__texto">{hojeTotal ? (atrasadas ? `${atrasadas} vieram de dias anteriores. Comece com 10 e mantenha o ritmo.` : 'Uma sessão curta hoje já mantém a memória em dia.') : pendentes ? 'Nada vence hoje. Aproveite para avançar em questões novas.' : 'Responda questões e o seu calendário de revisão se monta sozinho.'}</p>
+          : <h1>{folgaHoje ? 'Hoje é dia de folga' : feitasHoje ? 'Revisão de hoje feita' : 'Tudo em dia por aqui'}</h1>}
+        <p className="rv-heroi__texto">{textoHeroi}</p>
         <div className="linha linha--empilha-celular">
           {hojeTotal
             ? <button className="botao rv-heroi__acao" onClick={() => iniciarIds(idsHoje.slice(0, 10))}>Revisar agora · {Math.min(10, hojeTotal)}</button>
             : <a className="botao rv-heroi__acao" href="#/treinar">Treinar questões novas</a>}
+          {!hojeTotal && proximoDia && <button className="botao rv-heroi__secundaria" onClick={() => iniciarIds(proximoDia.ids.slice(0, 10))}>Adiantar {Math.min(10, proximoDia.ids.length)} de {rotuloDia(proximoDia.inicio)}</button>}
           {hojeTotal > 10 && <button className="botao rv-heroi__secundaria" onClick={() => iniciarIds(idsHoje)}>Tudo de hoje · {hojeTotal}</button>}
         </div>
       </div>
@@ -75,6 +96,21 @@ export function Revisao() {
         <div><dt>Atrasadas</dt><dd className="numerico">{atrasadas}</dd></div>
         <div><dt>Mais revisões em</dt><dd className="rv-heroi__tema">{temaFragil?.[0] ?? 'nenhum tema'}</dd></div>
       </dl>
+    </section>
+    <section className="cartao cartao__corpo rv-ritmo" aria-labelledby="rv-ritmo-titulo">
+      <div className="rv-ritmo__cabeca">
+        <h2 id="rv-ritmo-titulo">Seu ritmo</h2>
+        <p>Quando vencem mais revisões do que cabem no dia, o excedente passa para os próximos dias, começando pelas que você errou. Nenhuma se perde.</p>
+      </div>
+      <div className="rv-ritmo__grupo">
+        <span className="tr-grupo__rotulo">Revisões por dia</span>
+        <div className="tr-pilulas">{TETOS.map(limite => <button key={String(limite)} type="button" className="tr-pilula" aria-pressed={ritmo.limite === limite} onClick={() => definirRitmo({ ...ritmo, limite })}>{limite === null ? 'Sem teto' : `até ${limite}`}</button>)}</div>
+      </div>
+      <div className="rv-ritmo__grupo">
+        <span className="tr-grupo__rotulo">Dias sem revisão</span>
+        <div className="tr-pilulas">{DIAS_SEMANA.map((d, i) => <button key={d} type="button" className="tr-pilula" aria-pressed={ritmo.folgas.includes(i)} onClick={() => alternarFolga(i)}>{d}</button>)}</div>
+        <p className="rv-ritmo__nota">Bom para os dias de plantão. O que venceria neles passa para o dia seguinte.</p>
+      </div>
     </section>
     <section className="cartao cartao__corpo rv-regra">
       <div className="rv-regra__cabeca">
@@ -116,6 +152,6 @@ export function Revisao() {
         })}
       </div>
     </section>
-    <section className="cartao cartao__corpo revisao-detalhe"><p className="meta">{rotuloDia(selecionado)}</p><h2>{dia?.ids.length ? `${dia.ids.length} questões programadas` : 'Nenhuma revisão programada'}</h2>{dia?.ids.length ? <><p>{dia.atrasadas ? `${dia.atrasadas} vencidas foram trazidas para hoje. ` : ''}Acerto histórico: {dia.tentativas ? Math.round(dia.acertos/dia.tentativas*100) : 0}%.</p><div className="chips">{[...dia.temas.entries()].sort((a,b)=>b[1]-a[1]).map(([tema,n])=><span key={tema}>{tema} · {n}</span>)}</div><div className="linha"><button className="botao botao--principal" onClick={()=>iniciarIds(dia.ids)}>Revisar este dia</button><button className="botao" onClick={()=>iniciarIds(dia.ids.slice(0,10))}>Dia leve · 10</button></div></> : <p className="texto-2">Escolha outro dia no calendário ou avance com novas questões.</p>}</section>
+    <section className="cartao cartao__corpo revisao-detalhe"><p className="meta">{rotuloDia(selecionado)}</p><h2>{dia?.ids.length ? `${dia.ids.length} questões programadas` : 'Nenhuma revisão programada'}</h2>{dia?.ids.length ? <><p>{dia.inicio === hoje && dia.atrasadas ? `${dia.atrasadas} vencidas foram trazidas para hoje. ` : dia.inicio > hoje && dia.redistribuidas ? `${dia.redistribuidas} vieram de dias anteriores pelo seu ritmo. ` : ''}Acerto histórico: {dia.tentativas ? Math.round(dia.acertos/dia.tentativas*100) : 0}%.</p><div className="chips">{[...dia.temas.entries()].sort((a,b)=>b[1]-a[1]).map(([tema,n])=><span key={tema}>{tema} · {n}</span>)}</div><div className="linha"><button className="botao botao--principal" onClick={()=>iniciarIds(dia.ids)}>Revisar este dia</button><button className="botao" onClick={()=>iniciarIds(dia.ids.slice(0,10))}>Dia leve · 10</button></div></> : <p className="texto-2">Escolha outro dia no calendário ou avance com novas questões.</p>}</section>
   </div>
 }
