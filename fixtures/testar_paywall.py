@@ -23,6 +23,8 @@ PAGINA_ASSINATURA = (RAIZ / "src/paginas/Assinatura.tsx").read_text()
 TERMOS = (RAIZ / "src/paginas/Termos.tsx").read_text()
 CONDICOES_ASSINATURA = (RAIZ / "src/paginas/CondicoesAssinatura.tsx").read_text()
 ACEITES_ASSINATURA = (RAIZ / "supabase/migrations/202609270900_aceites_assinatura.sql").read_text()
+RANKING_MOVIMENTO = (RAIZ / "supabase/migrations/202609280001_ranking_movimento_diario.sql").read_text()
+PAGINA_RANKING = (RAIZ / "src/paginas/Ranking.tsx").read_text()
 LIMITE_CLIENTE = (RAIZ / "src/estado/limiteDiario.ts").read_text()
 AVISO_LIMITE = (RAIZ / "src/componentes/LimiteRespostas.tsx").read_text()
 CABECALHO = (RAIZ / "src/componentes/Cabecalho.tsx").read_text()
@@ -199,6 +201,19 @@ assert "Acesso negado" in PAGINA_ADMIN
 for trecho in ("listar_eventos_pagamento_admin", "where adm.id_usuario = auth.uid()", "limit 200", "grant execute on function public.listar_eventos_pagamento_admin() to authenticated"):
     assert trecho in MIGRACAO_ADMIN_EVENTOS, f"Auditoria administrativa ausente: {trecho}"
 assert "create policy" not in MIGRACAO_ADMIN_EVENTOS
+for trecho in (
+    "ranking_posicoes_diarias",
+    "America/Sao_Paulo",
+    "h.dia < hoje",
+    "anterior.posicao - r.posicao",
+    "enable row level security",
+    "revoke all on public.ranking_posicoes_diarias from public, anon, authenticated",
+    "grant execute on function public.obter_ranking_com_movimento(text) to authenticated",
+):
+    assert trecho in RANKING_MOVIMENTO, f"Histórico privado do ranking incompleto: {trecho}"
+assert "usuario_id uuid" not in RANKING_MOVIMENTO.split("create function public.obter_ranking_com_movimento", 1)[1].split("language plpgsql", 1)[0]
+assert "obter_ranking_com_movimento" in PAGINA_RANKING
+assert "ranking:referencia:" not in PAGINA_RANKING
 for trecho in ("listar_eventos_pagamento_admin", "status_processamento === 'erro'", "webhook-mercado-pago?acao=reprocessar"):
     assert trecho in PAGINA_ADMIN, f"Reprocessamento administrativo ausente: {trecho}"
 for trecho in ("usuarioDoPedido(req)", "administradores?id_usuario", "status_processamento=eq.erro", "EdgeRuntime.waitUntil(processar", "x-signature"):
