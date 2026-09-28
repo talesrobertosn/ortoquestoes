@@ -7,24 +7,25 @@ import { Icone } from './Icone'
 
 /**
  * Balão pequeno, no canto, convidando a compartilhar o site. Não bloqueia
- * nada: aparece depois de 5 minutos de uso ou 5 respostas na visita, e some
- * por semanas depois de fechado (ou por meses, se a pessoa compartilhou).
+ * nada: aparece depois de 5 minutos de uso ou 5 respostas na visita, no
+ * máximo uma vez a cada 24 horas (contadas de quando aparece, feche a pessoa
+ * ou não), e some por meses se ela compartilhou.
  */
 
+// Global em armazenamento.ts: sobrevive à limpeza de dados de visitante.
 const CHAVE = 'ortoquestoes:convite-compartilhar'
 const CHAVE_TEMPO = 'ortoquestoes:convite-compartilhar:tempo'
 const TEMPO_MINIMO = 5 * 60
 const RESPOSTAS_MINIMAS = 5
 const DIA = 86_400_000
-const PAUSA_FECHOU = 14 * DIA
+const PAUSA_ENTRE_EXIBICOES = DIA
 const PAUSA_COMPARTILHOU = 90 * DIA
 
 // Texto que chega pronto no WhatsApp; *negrito* é a formatação do próprio app.
-const MENSAGEM = `Gente, achei um *banco de questões de ortopedia com acesso gratuito* e não consigo mais parar: o *OrtoQuestões*.
+const MENSAGEM = `Olá! Quero indicar o *OrtoQuestões*, um banco de questões de ortopedia com acesso gratuito.
 
-Tem TEOT, TARO, fellowship (quadril, ombro e mão) e R4, com comentário em cada alternativa, revisão das que você errou e até ranking para ver quem da residência estuda mais.
+Reúne provas do TEOT, TARO, fellowships e R4, com comentário em cada alternativa e revisão das questões erradas. São 20 questões por dia sem custo.
 
-São 20 questões por dia de graça. Testem e depois me contem quanto acertaram:
 ${SITE.url}`
 
 function lerPausa(): number {
@@ -94,7 +95,9 @@ export function ConviteCompartilhar({ caminho }: { caminho: string }) {
   }, [])
 
   useEffect(() => {
-    if (!pronto || visivel || atrapalhaAgora(caminho)) return
+    if (!pronto || visivel || atrapalhaAgora(caminho) || lerPausa() > Date.now()) return
+    // Conta a partir de agora: recarregar ou trocar de questão não traz de volta.
+    pausar(PAUSA_ENTRE_EXIBICOES)
     definirVisivel(true)
   }, [pronto, visivel, caminho])
 
@@ -105,7 +108,7 @@ export function ConviteCompartilhar({ caminho }: { caminho: string }) {
   }, [visivel])
 
   const fechar = (compartilhou = false) => {
-    pausar(compartilhou ? PAUSA_COMPARTILHOU : PAUSA_FECHOU)
+    if (compartilhou) pausar(PAUSA_COMPARTILHOU)
     definirSaindo(true)
     window.setTimeout(() => { definirVisivel(false); definirPronto(false); definirSaindo(false); definirArraste(null) }, 220)
   }
