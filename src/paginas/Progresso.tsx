@@ -69,8 +69,8 @@ export function Progresso() {
       <section className="limite-leitura">
         <h1>Como o acervo está sendo comentado</h1>
         <p style={{ marginTop: '0.75rem' }}>
-          Cada questão do OrtoQuestões pode receber duas explicações independentes: um
-          comentário escrito por inteligência artificial e os comentários da comunidade de
+          Cada questão do OrtoQuestões pode receber duas explicações independentes: o
+          comentário do site, baseado na bibliografia de referência, e os comentários da comunidade de
           ortopedistas e residentes. Esta página mostra, sem maquiagem, quanto do acervo já
           tem cada um deles — inclusive o que ainda falta.
         </p>
@@ -234,14 +234,14 @@ function GraficoEvolucao({ marcos }: { marcos: { data: string; total: number; ia
     <section>
       <h2>Evolução</h2>
       <p className="meta" style={{ marginTop: '0.25rem' }}>
-        Porcentagem do acervo com comentário de IA, dia a dia.
+        Porcentagem do acervo com comentário do site, dia a dia.
       </p>
       <figure className="grafico" style={{ marginTop: '0.75rem' }}>
         <svg
           viewBox={`0 0 ${larg} ${alt}`}
           className="grafico__svg"
           role="img"
-          aria-label={`Cobertura dos comentários de IA de ${formatarData(pontos[0].data)} a ${formatarData(ultimo.data)}, chegando a ${formatarPct(ultimo.valor)} por cento.`}
+          aria-label={`Cobertura dos comentários de ${formatarData(pontos[0].data)} a ${formatarData(ultimo.data)}, chegando a ${formatarPct(ultimo.valor)} por cento.`}
           onMouseLeave={() => definirAtivo(null)}
         >
           {[0, 25, 50, 75, 100].map((v) => (

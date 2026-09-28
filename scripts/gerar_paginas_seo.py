@@ -236,8 +236,8 @@ def rodape(raiz: str = "../") -> str:
     as marcadas como OrtoQuestões Simulados são questões autorais do site, elaboradas a partir da
     bibliografia de referência e inspiradas no padrão da prova indicada, sem caráter oficial nem
     vínculo com as instituições organizadoras.
-    Os comentários se baseiam na bibliografia de referência da especialidade; a redação pode contar
-    com apoio de inteligência artificial. <a href="{raiz}#/contato">Encontrou um erro?</a>
+    Os comentários se baseiam na bibliografia de referência da especialidade.
+    <a href="{raiz}#/contato">Encontrou um erro?</a>
     · <a href="{raiz}guias/">Guias de estudo</a>
     · <a href="https://www.instagram.com/ortoquestoes/">@ortoquestoes</a>
   </p>
@@ -458,8 +458,8 @@ def principal() -> int:
         corpo.append(
             '<div class="aviso"><p style="margin:0">As questões são transcritas das provas '
             "originais, sem reescrita, e o gabarito é o da própria banca. Os comentários se baseiam "
-            "na bibliografia de referência da especialidade; a redação pode contar com apoio de "
-            "inteligência artificial. Quando resta dúvida sobre o gabarito, o comentário registra a "
+            "na bibliografia de referência da especialidade. Quando resta dúvida sobre o gabarito, "
+            "o comentário registra a "
             "dúvida em vez de escondê-la."
             + (
                 " As questões marcadas como <strong>OrtoQuestões Simulados</strong> são autorais do site, "

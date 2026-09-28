@@ -80,9 +80,9 @@ export function Referencias({ itens, notaIA }: { itens?: string[]; notaIA?: bool
       <summary>{itens?.length ? `Referências · ${itens.length}` : 'Sobre este comentário'}</summary>
       {notaIA && (
         <p className="referencias__nota">
-          Comentário baseado na bibliografia de referência da ortopedia. A redação pode contar com
-          apoio de inteligência artificial; quando houver revisão médica individual, ela será
-          indicada. <a href={href('/sobre')}>Como os comentários são feitos</a>
+          Comentário baseado na bibliografia de referência da ortopedia. Confira sempre na fonte
+          indicada; quando houver revisão médica individual, ela será indicada.{' '}
+          <a href={href('/sobre')}>Como os comentários são feitos</a>
         </p>
       )}
       {itens?.length ? <ul>{itens.map((r, i) => <li key={i}>{r}</li>)}</ul> : null}
