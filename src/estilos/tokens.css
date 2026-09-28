@@ -64,6 +64,8 @@
   /* Metais dos emblemas */
   --ouro: #a87a1f;
   --ouro-veu: #f8efd9;
+  /* Texto dourado sobre --ouro-veu: --ouro puro fica abaixo de 4,5:1 nesse fundo. */
+  --ouro-texto: #7a5710;
   --prata: #6f7d82;
   --prata-veu: #eef1f2;
   --bronze: #9a5b2e;
@@ -103,6 +105,7 @@
 
   --ouro: #e0b862;
   --ouro-veu: #33291a;
+  --ouro-texto: #e0b862;
   --prata: #b4c0c3;
   --prata-veu: #232b2c;
   --bronze: #d99a6c;

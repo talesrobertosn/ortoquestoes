@@ -25,7 +25,11 @@ export const SEM_RITMO: RitmoRevisao = { limite: null, folgas: [] }
 type Registros = Record<string, Partial<RegistroQuestao> & { c: boolean | null }>
 
 export function inicioDia(data = Date.now()) { const d = new Date(data); d.setHours(0, 0, 0, 0); return d.getTime() }
-export function chaveDia(data: number) { return new Date(data).toISOString().slice(0, 10) }
+/** AAAA-MM-DD no fuso do aparelho: em UTC, quem estuda depois das 21h (Brasília) caía no dia seguinte. */
+export function chaveDia(data: number) {
+  const d = new Date(data)
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+}
 function diaSeguinte(dia: number) { const d = new Date(dia); d.setDate(d.getDate() + 1); d.setHours(0, 0, 0, 0); return d.getTime() }
 
 /** Mesma regra de revisarHoje: registros antigos sem data voltam 3 dias depois da resposta. */

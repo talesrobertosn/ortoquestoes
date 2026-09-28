@@ -246,7 +246,7 @@ export function CartaoQuestao({
       <div className="cartao__corpo">
         <div className="qz-topo">
           <div className="qz-topo__info">
-            {numero && total ? <span className="qz-numero">Questão {numero}<small> de {total}</small></span> : <span className="qz-numero">Questão</span>}
+            {numero && total ? <h1 className="qz-numero">Questão {numero}<small> de {total}</small></h1> : <h1 className="qz-numero">Questão</h1>}
             {(questao.prova || questao.ano) && <span className="qz-origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
             {questao.simulado && <span className="qz-origem qz-origem--simulado">{ROTULO_SIMULADOS}</span>}
             {questao.anulada && <span className="qz-chip qz-chip--alerta">Anulada</span>}

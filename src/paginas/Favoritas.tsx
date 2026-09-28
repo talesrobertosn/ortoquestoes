@@ -7,6 +7,7 @@ import { EstrelaCheia, Icone } from '../componentes/Icone'
 import { usarFavoritos, usarSessao } from '../estado/sessao'
 import { usarEtiquetas } from '../estado/preferencias'
 import { href, navegar } from '../util/rotas'
+import { usarConta } from '../conta/ContextoConta'
 
 /**
  * As favoritas precisavam de um lugar. A estrela existia em toda questão e
@@ -14,6 +15,7 @@ import { href, navegar } from '../util/rotas'
  * a pessoa marcava e a marcação não levava a lugar algum.
  */
 export function Favoritas() {
+  const { sessao } = usarConta()
   const { indice } = usarIndice()
   const { favoritos, alternar } = usarFavoritos()
   const { iniciar } = usarSessao()
@@ -74,8 +76,8 @@ export function Favoritas() {
       <header className="limite-leitura">
         <h1>Suas favoritas</h1>
         <p className="texto-2" style={{ marginTop: '0.5rem' }}>
-          {favoritos.length} {favoritos.length === 1 ? 'questão marcada' : 'questões marcadas'} neste
-          navegador.
+          {favoritos.length} {favoritos.length === 1 ? 'questão marcada' : 'questões marcadas'}
+          {sessao ? ' na sua conta.' : ' neste navegador.'}
         </p>
       </header>
 
@@ -131,8 +133,10 @@ export function Favoritas() {
       </ul>
 
       <p className="meta">
-        <Icone nome="estrela" tamanho={14} /> Guardadas só neste navegador, junto com o resto dos
-        seus <a href={href('/dados')}>dados locais</a>.
+        <Icone nome="estrela" tamanho={14} />{' '}
+        {sessao
+          ? 'Sincronizadas com a sua conta: aparecem em qualquer aparelho em que você entrar.'
+          : <>Guardadas só neste navegador, junto com o resto dos seus <a href={href('/dados')}>dados locais</a>. Entre na sua conta para levar para outros aparelhos.</>}
       </p>
     </div>
   )

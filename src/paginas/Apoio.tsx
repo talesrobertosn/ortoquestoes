@@ -410,7 +410,7 @@ export function DadosLocais() {
           {periodo.tipo === 'desde' && (
             <label className="dp-periodo__data">
               <span className="so-leitor">Data inicial</span>
-              <input className="entrada" type="date" value={periodo.desde ?? ''} max={new Date().toISOString().slice(0, 10)} onChange={(e) => definirPeriodo({ tipo: 'desde', desde: e.target.value })} />
+              <input className="entrada" type="date" value={periodo.desde ?? ''} max={chaveDia(Date.now())} onChange={(e) => definirPeriodo({ tipo: 'desde', desde: e.target.value })} />
             </label>
           )}
         </div>

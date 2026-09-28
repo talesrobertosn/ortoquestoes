@@ -1,4 +1,4 @@
-import { createClient, processLock } from '@supabase/supabase-js'
+import { createClient } from '@supabase/supabase-js'
 // Precisa ser avaliado antes de createClient e do primeiro render: limpa do
 // endereço os parâmetros que o Supabase devolve no hash (ver retornoAuth.ts).
 import './retornoAuth'
@@ -26,11 +26,11 @@ function buscarComPrazo(entrada: RequestInfo | URL, opcoes: RequestInit = {}): P
 }
 
 export const supabase = contasDisponiveis ? createClient(url!, chave!, {
-  // processLock: trava só dentro desta aba. A trava padrão (navigator.locks,
-  // compartilhada entre abas) pode ficar presa no Chrome e congelar todas as
-  // chamadas autenticadas, inclusive a sincronização do progresso.
+  // Sem a opção `lock`: desde a 2.116 o cliente coordena a renovação da sessão
+  // sem trava nenhuma (nem navigator.locks, que podia ficar presa no Chrome e
+  // congelar a sincronização). Passar processLock só gerava aviso de obsoleto.
   auth: { flowType: 'pkce', persistSession: true, autoRefreshToken: true, detectSessionInUrl: true,
-    storageKey: 'sb-ortoquestoes-auth', lock: processLock },
+    storageKey: 'sb-ortoquestoes-auth' },
   global: { fetch: buscarComPrazo },
 }) : null
 
