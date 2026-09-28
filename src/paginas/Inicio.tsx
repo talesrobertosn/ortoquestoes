@@ -19,7 +19,6 @@ import { planoRevisao } from '../estado/planoRevisao'
 import { SITE } from '../config'
 import { calcularStreak } from '../estado/streak'
 import { LIMITES_HABILITADOS } from '../estado/limiteDiario'
-import { CUSTO_POR_DIA, PLANO_MAIS_EM_CONTA, real } from '../dados/planos'
 
 // A maior parte do acervo ainda não distingue TEOT de TARO (prova genérica
 // "TEOT/TARO"); enquanto isso não é resolvido, as três provas são somadas
@@ -273,7 +272,7 @@ export function Inicio() {
               <p>{LIMITES_HABILITADOS
                 ? 'O plano gratuito continua generoso: 20 questões comentadas por dia, com revisão, desempenho e ranking, sem pedir cartão. A cota renova na virada do dia em São Paulo.'
                 : 'Hoje o treino gratuito ainda está sem limite. Quando a regra planejada entrar em vigor, o gratuito seguirá generoso: 20 questões comentadas por dia, renovadas na virada do dia em São Paulo.'}</p>
-              <p className="inicio-planos__apoio">A assinatura é o que mantém o OrtoQuestões de pé: paga a estrutura do site, as provas novas e a revisão dos comentários. Em troca, você treina sem teto, no ritmo da sua prova.</p>
+              <p className="inicio-planos__apoio">Não há cursinho nem editora por trás do OrtoQuestões. Quem mantém o site de pé são os assinantes: eles pagam a estrutura, as provas novas e a revisão de cada comentário. Em troca, treinam sem teto, no ritmo que a prova pede.</p>
               <ul className="inicio-planos__selos">
                 <li><Icone nome="certo" tamanho={14} /> 20 questões grátis por dia</li>
                 <li><Icone nome="certo" tamanho={14} /> Sem limite na assinatura</li>
@@ -281,10 +280,11 @@ export function Inicio() {
               </ul>
             </div>
             <div className="inicio-planos__oferta">
-              <span className="inicio-planos__a-partir">a partir de</span>
-              <strong className="numerico">{real(CUSTO_POR_DIA)}<small>/dia</small></strong>
-              <span className="inicio-planos__nota">no plano {PLANO_MAIS_EM_CONTA.nome.toLowerCase()}, cobrado uma vez por ano</span>
-              <a className="botao botao--principal botao--grande" href={href('/assinatura')}>Apoiar e estudar sem limite</a>
+              <span className="inicio-planos__icone" aria-hidden="true"><Icone nome="estrela" tamanho={22} /></span>
+              <span className="inicio-planos__a-partir">Estudar sem limite custa</span>
+              <strong className="inicio-planos__gancho">Menos que um cafezinho por dia</strong>
+              <span className="inicio-planos__nota">e cada assinatura mantém o gratuito vivo para quem está começando</span>
+              <a className="botao botao--principal botao--grande" href={href('/assinatura')}>Quero apoiar</a>
               <span className="inicio-planos__nota">Cancele quando quiser</span>
             </div>
           </section>
