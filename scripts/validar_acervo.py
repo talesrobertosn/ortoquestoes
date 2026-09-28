@@ -49,6 +49,8 @@ CAMPOS_COMENTARIO = {
     "referencias", "geradoEm", "conferido",
     # "corrido": reescrito em parágrafos com negrito, sem títulos nem listas.
     "formato",
+    # Só sem gabarito oficial: a letra que a bibliografia sustenta.
+    "provavel",
 }
 
 # Ferramentas de leitura elidem o meio de arquivos grandes. Quando essa
@@ -101,6 +103,14 @@ def conferir_comentarios(
                 erros.append(f"{onde}: 'incorretas' deveria ser um objeto por letra")
                 continue
             gabarito = gabaritos.get(qid)
+            provavel = comentario.get("provavel")
+            if provavel is not None:
+                if gabarito:
+                    erros.append(f"{onde}: 'provavel' só vale para questão sem gabarito oficial")
+                elif provavel not in letras[qid]:
+                    erros.append(f"{onde}: 'provavel' aponta letra inexistente {provavel}")
+                else:
+                    gabarito = provavel
             if gabarito and gabarito in incorretas:
                 erros.append(
                     f"{onde}: a letra {gabarito} é o gabarito e está entre as incorretas"

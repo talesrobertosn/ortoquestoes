@@ -57,7 +57,13 @@ export interface ComentarioIA {
   alerta?: string | null
   /** Conceito de fundo, quando ajuda a entender antes de ir alternativa a alternativa. */
   conceito?: string | null
-  /** Por que a alternativa do gabarito é a correta. */
+  /**
+   * Só em questão sem gabarito oficial: a alternativa que a bibliografia
+   * sustenta. Aparece como "Resposta pela bibliografia", sem virar gabarito
+   * nem contar no desempenho.
+   */
+  provavel?: Letra | null
+  /** Por que a alternativa do gabarito (ou a provável) é a correta. */
   correta: string
   /** Por que cada uma das outras está errada, indexado pela letra. */
   incorretas: Partial<Record<Letra, string>>

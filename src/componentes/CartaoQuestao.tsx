@@ -651,9 +651,11 @@ function ComentarioDaIA({
   carregando: boolean
   escolhida: Letra | null
 }) {
+  // Sem gabarito oficial, o comentário pode indicar a resposta pela bibliografia.
+  const referencia = questao.gabarito ?? (questao.anulada ? null : comentario?.provavel ?? null)
   const erradas = questao.alternativas
     .map((a) => a.letra)
-    .filter((letra) => letra !== questao.gabarito && comentario?.incorretas[letra])
+    .filter((letra) => letra !== referencia && comentario?.incorretas[letra])
 
   const textoAlternativa = (letra: string) =>
     questao.alternativas.find((a) => a.letra === letra)?.texto
@@ -693,15 +695,15 @@ function ComentarioDaIA({
 
           <p className="cm-secao">Alternativa por alternativa</p>
           <div className="cm-alternativas">
-            {questao.gabarito && (
+            {referencia && (
               <article className="cm-alt cm-alt--certa">
                 <header className="cm-alt__cabeca">
-                  <span className="cm-alt__letra">{questao.gabarito}</span>
-                  <strong className="cm-alt__texto">{textoAlternativa(questao.gabarito) ?? 'Alternativa correta'}</strong>
-                  <span className="cm-selo cm-selo--certa"><Icone nome="certo" tamanho={13} /> Correta</span>
-                  {escolhida === questao.gabarito && <span className="cm-selo">Sua resposta</span>}
+                  <span className="cm-alt__letra">{referencia}</span>
+                  <strong className="cm-alt__texto">{textoAlternativa(referencia) ?? 'Alternativa correta'}</strong>
+                  <span className="cm-selo cm-selo--certa"><Icone nome="certo" tamanho={13} /> {questao.gabarito ? 'Correta' : 'Resposta pela bibliografia'}</span>
+                  {escolhida === referencia && <span className="cm-selo">Sua resposta</span>}
                 </header>
-                <TextoEditorial texto={semEco(comentario.correta, textoAlternativa(questao.gabarito))} />
+                <TextoEditorial texto={semEco(comentario.correta, textoAlternativa(referencia))} />
               </article>
             )}
 
