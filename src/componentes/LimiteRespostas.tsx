@@ -81,7 +81,7 @@ export function AvisoBloqueioDiario({ caminho }: { caminho: string }) {
           {blocos.map(([valor, unidade]) => <span key={unidade} className="aviso-bloqueio-topo__bloco"><b>{String(valor).padStart(2, '0')}</b><small>{unidade}</small></span>)}
         </time>
       </span>
-      <a className="aviso-bloqueio-topo__cta" href={href('/assinatura')}><Icone nome="estrela" tamanho={15} />Continuar sem limite</a>
+      <a className="aviso-bloqueio-topo__cta" href={href('/assinatura')}>Continuar sem limite</a>
     </div>
   </aside>
 }
@@ -129,7 +129,7 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
         </section>
 
         <section className="paywall__oferta" aria-label="Assinatura">
-          <p className="paywall__rotulo"><Icone nome="estrela" tamanho={14} /> Apoie e estude sem limite</p>
+          <p className="paywall__rotulo">Apoie e estude sem limite</p>
           <ul className="paywall__beneficios">
             <li><Icone nome="certo" tamanho={16} /><span><b>Questões sem limite diário.</b> Resolva quantas quiser, no ritmo que a sua prova pede.</span></li>
             <li><Icone nome="certo" tamanho={16} /><span><b>Simulados e sessões longas sem interrupção.</b> Ideal para a reta final.</span></li>

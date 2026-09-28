@@ -1867,7 +1867,6 @@ kbd {
   background: linear-gradient(135deg, #ffe7a8 0%, #f3c65a 55%, #e0a93a 100%); color: #3d2903; font-weight: 800; font-size: var(--corpo-menor); text-decoration: none;
   box-shadow: 0 6px 16px rgba(0, 0, 0, .22), inset 0 1px 0 rgba(255, 255, 255, .6); transition: transform .15s ease, box-shadow .15s ease;
 }
-.aviso-bloqueio-topo__cta svg { color: #8a5a00; }
 .aviso-bloqueio-topo__cta:hover { color: #3d2903; transform: translateY(-1px); box-shadow: 0 8px 20px rgba(0, 0, 0, .28), inset 0 1px 0 rgba(255, 255, 255, .7); }
 .aviso-bloqueio-topo__cta:focus-visible { outline: 2px solid #ffe3a3; outline-offset: 3px; }
 @media (max-width: 52rem) {

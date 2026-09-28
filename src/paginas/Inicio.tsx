@@ -280,7 +280,6 @@ export function Inicio() {
               </ul>
             </div>
             <div className="inicio-planos__oferta">
-              <span className="inicio-planos__icone" aria-hidden="true"><Icone nome="estrela" tamanho={22} /></span>
               <span className="inicio-planos__a-partir">Estudar sem limite custa</span>
               <strong className="inicio-planos__gancho">Menos que um cafezinho por dia</strong>
               <span className="inicio-planos__nota">e cada assinatura mantém o gratuito vivo para quem está começando</span>
