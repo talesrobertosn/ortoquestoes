@@ -40,7 +40,7 @@ export function Sobre() {
         <p className="pj-heroi__lide">
           O OrtoQuestões reúne questões de provas anteriores (TEOT, TARO, R4 do ENARE, TECOC de ombro e cotovelo e outras),
           organizadas por assunto, para quem se prepara para o título de especialista ou para a
-          residência. Foi criado por um ortopedista para residentes que estudam entre plantões e
+          residência. Foi criado por um residente de ortopedia para quem estuda entre plantões e
           cirurgias: da página inicial até a primeira questão, no máximo dois cliques.
         </p>
         {indice && (

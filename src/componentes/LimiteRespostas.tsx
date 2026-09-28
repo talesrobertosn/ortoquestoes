@@ -73,7 +73,7 @@ export function AvisoBloqueioDiario({ caminho }: { caminho: string }) {
       <span className="aviso-bloqueio-topo__selo" aria-hidden="true"><b className="numerico">20</b><small>de 20</small></span>
       <span className="aviso-bloqueio-topo__texto">
         <strong>Meta gratuita de hoje cumprida.</strong>
-        <span>Siga agora sem limite e ajude o projeto a continuar de pé.</span>
+        <span>Continue agora sem limite e apoie o projeto.</span>
       </span>
       <span className="aviso-bloqueio-topo__relogio">
         <span className="aviso-bloqueio-topo__rotulo">Grátis de novo em</span>
@@ -123,8 +123,8 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
 
         <section className="paywall__projeto">
           <p className="paywall__projeto-titulo">Por que existe um limite?</p>
-          <p>Não há cursinho nem editora por trás do OrtoQuestões. É um projeto independente, feito por um ortopedista, questão por questão, para que treinar para a prova não dependa de pagar caro.</p>
-          <p>Manter tudo isso no ar tem custo, e quem sustenta são os assinantes. É graças a eles que <b>o plano gratuito continua generoso: 20 questões comentadas todos os dias, sem cartão</b>, para quem está começando.</p>
+          <p>O OrtoQuestões é um projeto independente, criado para que treinar para a prova não dependa de pagar caro.</p>
+          <p>Manter o site, incluir provas novas e revisar os comentários tem custo. As assinaturas cobrem essa estrutura, e é isso que permite manter <b>o plano gratuito generoso: 20 questões comentadas todos os dias, sem cartão</b>.</p>
           <p className="paywall__projeto-fecho">Se o OrtoQuestões já te ajudou hoje, assinar é a forma de retribuir e de garantir que ele continue existindo.</p>
         </section>
 

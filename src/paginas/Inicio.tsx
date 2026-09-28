@@ -267,12 +267,12 @@ export function Inicio() {
 
           <section className="inicio-planos" aria-labelledby="inicio-planos-titulo">
             <div className="inicio-planos__texto">
-              <p className="meta">PROJETO INDEPENDENTE</p>
+              <p className="meta">ASSINATURA OPCIONAL</p>
               <h2 id="inicio-planos-titulo">Grátis todos os dias. Sem limite para quem apoia.</h2>
               <p>{LIMITES_HABILITADOS
                 ? 'O plano gratuito continua generoso: 20 questões comentadas por dia, com revisão, desempenho e ranking, sem pedir cartão. A cota renova na virada do dia em São Paulo.'
                 : 'Hoje o treino gratuito ainda está sem limite. Quando a regra planejada entrar em vigor, o gratuito seguirá generoso: 20 questões comentadas por dia, renovadas na virada do dia em São Paulo.'}</p>
-              <p className="inicio-planos__apoio">Não há cursinho nem editora por trás do OrtoQuestões. Quem mantém o site de pé são os assinantes: eles pagam a estrutura, as provas novas e a revisão de cada comentário. Em troca, treinam sem teto, no ritmo que a prova pede.</p>
+              <p className="inicio-planos__apoio">A assinatura libera questões sem limite diário, sessões longas e simulados sem interrupção. Ela também financia a inclusão de provas novas e a revisão contínua dos comentários.</p>
               <ul className="inicio-planos__selos">
                 <li><Icone nome="certo" tamanho={14} /> 20 questões grátis por dia</li>
                 <li><Icone nome="certo" tamanho={14} /> Sem limite na assinatura</li>
