@@ -183,7 +183,7 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
  * No resumo da sessão, quando o gratuito do dia acabou: fecha o dia com
  * reconhecimento e deixa a assinatura como uma linha discreta.
  */
-export function DiaCumprido() {
+export function DiaCumprido({ erradas = 0 }: { erradas?: number }) {
   const { sessao } = usarConta()
   const assinante = usarAssinante(sessao)
   const [liberaEm] = useState(() => (LIMITES_HABILITADOS ? lerBloqueioDiario() : null))
@@ -202,7 +202,7 @@ export function DiaCumprido() {
     <div className="dia-cumprido__texto">
       <p className="dia-cumprido__selo">Estudo gratuito de hoje</p>
       <h2>Dia cumprido. Bom trabalho!</h2>
-      <p>Você completou as 20 questões gratuitas de hoje e amanhã a cota volta inteira. Enquanto isso, comentários, revisões e desempenho seguem abertos: vale reler as que você errou.</p>
+      <p>Você completou as 20 questões gratuitas de hoje e amanhã a cota volta inteira. Enquanto isso, comentários, revisões e desempenho seguem abertos{erradas > 0 ? ': vale reler os comentários das que você errou.' : '. E nesta sessão você não errou nenhuma.'}</p>
       <p className="dia-cumprido__rodape">
         <span><Icone nome="relogio" tamanho={14} /> Grátis de novo em {horas > 0 ? `${horas}h ${String(minutos).padStart(2, '0')}min` : `${minutos}min`}</span>
         <a href={href('/assinatura')}>Prefere continuar agora? Conheça a assinatura</a>

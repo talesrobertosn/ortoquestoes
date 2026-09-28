@@ -3,28 +3,32 @@ import { useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { contar, montarSessao } from '../dados/acervo'
 import { FILTROS_VAZIOS } from '../dados/tipos'
-import { filtrosParaConsulta, href, navegar } from '../util/rotas'
+import { href, navegar } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { CartaoStreak } from '../componentes/CartaoStreak'
 import { InstalarApp } from '../componentes/InstalarApp'
-import { CartaoQuestaoDoDia } from '../componentes/CartaoQuestaoDoDia'
+import { CartaoCompartilhar } from '../componentes/CartaoCompartilhar'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
 import { planoRevisao } from '../estado/planoRevisao'
-import { SITE } from '../config'
 import { calcularStreak } from '../estado/streak'
-import { LIMITES_HABILITADOS } from '../estado/limiteDiario'
-import { usarAssinante } from '../conta/plano'
+import { FUSO_DIA, chaveDia } from '../estado/limiteDiario'
 
 // A maior parte do acervo ainda não distingue TEOT de TARO (prova genérica
 // "TEOT/TARO"); enquanto isso não é resolvido, as três provas são somadas
 // numa única contagem em vez de aparecerem como linhas separadas.
-const PROVAS_TEOT_TARO = ['TEOT/TARO', 'TEOT', 'TARO']
+/** "Hoje", "Ontem" ou a data curta: a lista de sessões lê melhor assim. */
+function quandoFoi(instante: number): string {
+  const dia = chaveDia(new Date(instante))
+  if (dia === chaveDia()) return 'Hoje'
+  if (dia === chaveDia(new Date(Date.now() - 86400000))) return 'Ontem'
+  return new Date(instante).toLocaleDateString('pt-BR', { day: 'numeric', month: 'short', timeZone: FUSO_DIA }).replace('.', '')
+}
 
 const VARIACOES_INICIO = [
   { explicacao: 'Errou? A questão volta hoje. Acertou por chute? Volta amanhã. Acertou com certeza? Só reaparece daqui a semanas.', acao: 'Treinar 10 questões', revisar: 'Retome o que precisa fixar', novas: 'Avance no acervo' },
@@ -62,7 +66,6 @@ export function Inicio() {
   const { indice, carregando } = usarIndice()
   const { iniciar } = usarSessao()
   const { sessao: conta } = usarConta()
-  const assinante = usarAssinante(conta)
   const [sessao] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
 
   const { contexto } = usarContextoLocal('')
@@ -75,18 +78,6 @@ export function Inicio() {
   const [cabecalhoDoDia] = useState(() => VARIACOES_CABECALHO[Math.floor(Math.random() * VARIACOES_CABECALHO.length)])
   const [modalEntrarAberto, definirModalEntrarAberto] = useState(false)
 
-  const provasAgrupadas = useMemo(() => {
-    if (!indice || !contagens) return []
-    const teotTaroTotal = PROVAS_TEOT_TARO.reduce((soma, p) => soma + (contagens.porProva[p] ?? 0), 0)
-    const grupos: { rotulo: string; provas: string[]; quantidade: number }[] = []
-    if (teotTaroTotal > 0) grupos.push({ rotulo: 'TEOT/TARO', provas: PROVAS_TEOT_TARO, quantidade: teotTaroTotal })
-    for (const prova of indice.provas ?? []) {
-      if (PROVAS_TEOT_TARO.includes(prova)) continue
-      const quantidade = contagens.porProva[prova] ?? 0
-      if (quantidade > 0) grupos.push({ rotulo: prova, provas: [prova], quantidade })
-    }
-    return grupos
-  }, [indice, contagens])
   const revisoesPlanejadas = useMemo(
     () => (indice ? planoRevisao(indice, contexto.respondidas, 7) : new Map()),
     [indice, contexto.respondidas],
@@ -112,14 +103,33 @@ export function Inicio() {
       .filter(([, valor]) => valor.tentativas >= 2)
       .sort((a, b) => a[1].acertos / a[1].tentativas - b[1].acertos / b[1].tentativas)[0] ?? null
   }, [indice, contexto.respondidas, revisoesPlanejadas])
-  const resumoSemana = useMemo(() => {
-    const limite = Date.now() - 7 * 86400000
-    const recentes = historico.filter(h => h.concluidaEm >= limite)
-    const respondidas = recentes.reduce((total, h) => total + h.respondidas, 0)
-    const acertos = recentes.reduce((total, h) => total + h.acertos, 0)
-    const dias = new Set(recentes.map(h => new Date(h.concluidaEm).toDateString())).size
-    return { respondidas, acertos, dias }
-  }, [historico])
+  // Questões por dia nos últimos 7 dias (fuso de São Paulo), contadas pelo
+  // histórico de cada resposta, inclusive as de sessões não concluídas.
+  const semana = useMemo(() => {
+    const dias = Array.from({ length: 7 }, (_, i) => {
+      const data = new Date(Date.now() - (6 - i) * 86400000)
+      return {
+        chave: chaveDia(data), hoje: i === 6, total: 0, acertos: 0,
+        rotulo: i === 6 ? 'Hoje' : data.toLocaleDateString('pt-BR', { weekday: 'short', timeZone: FUSO_DIA }).replace('.', ''),
+        nomeCompleto: i === 6 ? 'Hoje' : data.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'short', timeZone: FUSO_DIA }),
+      }
+    })
+    const porChave = new Map(dias.map(d => [d.chave, d]))
+    const inicio = Date.now() - 8 * 86400000
+    for (const registro of Object.values(contexto.respondidas)) {
+      const eventos = registro.historico?.length ? registro.historico : [{ em: registro.q, correta: registro.c }]
+      for (const evento of eventos) {
+        if (!evento.em || evento.em < inicio) continue
+        const dia = porChave.get(chaveDia(new Date(evento.em)))
+        if (!dia) continue
+        dia.total++
+        if (evento.correta === true) dia.acertos++
+      }
+    }
+    const total = dias.reduce((soma, d) => soma + d.total, 0)
+    const acertos = dias.reduce((soma, d) => soma + d.acertos, 0)
+    return { dias, total, acerto: total ? Math.round((acertos / total) * 100) : null, diasAtivos: dias.filter(d => d.total > 0).length, maximo: Math.max(1, ...dias.map(d => d.total)) }
+  }, [contexto.respondidas])
 
   /** Treino rápido: uma sessão embaralhada de todo o acervo, num clique. */
   function treinoRapido(quantidade: number) {
@@ -267,68 +277,78 @@ export function Inicio() {
             </a>
           </nav>
 
-          <section className="painel-diario" aria-label="Seu estudo de hoje">
-            <div className="painel-diario__intro">
+          <div className="inicio-grade">
+            <section className="inicio-hoje" aria-labelledby="inicio-hoje-titulo">
               <p className="meta">SUA ROTINA DE ESTUDO</p>
-              <h2>Seu estudo de hoje</h2>
-              <p>{textoDoDia.explicacao}</p>
-            </div>
-            {Object.keys(contexto.respondidas).length > 0 || conta ? (
-              <div className="atalhos-estudo">
-                <a href={href('/treinar?situacao=revisarHoje&limite=20')}><strong>{contagens.porSituacao.revisarHoje ?? 0}</strong><span>Revisar hoje</span><small>{textoDoDia.revisar}</small></a>
-                <a href={href('/treinar?situacao=dominadas')}><strong>{contagens.porSituacao.dominadas ?? 0}</strong><span>Dominadas</span><small>Ciclo de revisão completo</small></a>
-                <a href={href('/treinar?situacao=naoRespondidas&limite=10')}><strong>{contagens.porSituacao.naoRespondidas ?? 0}</strong><span>Questões novas</span><small>{textoDoDia.novas}</small></a>
-              </div>
-            ) : (
-              <p className="texto-2">Escolha uma sessão curta. Depois da primeira resposta, esta área passa a mostrar suas revisões, evolução e próximos passos.</p>
-            )}
-          </section>
-
-          {temaFragil && <section className="cartao cartao__corpo">
-            <p className="meta">ONDE VOCÊ MAIS GANHA AO REVISAR</p>
-            <h2>{temaFragil[0]} · {Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)}% de acerto</h2>
-            <p>{temaFragil[1].pendentes > 0 ? `${temaFragil[1].pendentes} revisões desse tema estão programadas.` : 'Faça uma sessão curta para transformar este ponto em segurança.'}</p>
-            <a className="botao botao--principal" href={href(`/treinar?temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema</a>
-          </section>}
-
-          <CartaoQuestaoDoDia indice={indice} />
-
-          <CartaoStreak />
-
-          {resumoSemana.respondidas > 0 && <section className="cartao cartao__corpo">
-            <p className="meta">SUA SEMANA</p>
-            <h2>{resumoSemana.respondidas} questões em {resumoSemana.dias} {resumoSemana.dias === 1 ? 'dia ativo' : 'dias ativos'}</h2>
-            <p>{Math.round((resumoSemana.acertos / resumoSemana.respondidas) * 100)}% de acerto nas sessões concluídas nos últimos sete dias. Continue com uma sessão curta para sustentar o ritmo.</p>
-          </section>}
-
-          {provasAgrupadas.length > 1 && (
-            <section>
-              <h2>Por prova</h2>
-              <p className="meta" style={{ marginTop: '0.25rem' }}>
-                Escolha a prova para a qual você está estudando.
-              </p>
-              <div className="provas-selecao" style={{ marginTop: '0.75rem' }}>
-                {provasAgrupadas.map((grupo) => (
-                  <a
-                    key={grupo.rotulo}
-                    href={href(`/treinar${filtrosParaConsulta({ ...FILTROS_VAZIOS, provas: grupo.provas })}`)}
-                  >
-                    {grupo.rotulo}
+              <h2 id="inicio-hoje-titulo">Seu estudo de hoje</h2>
+              <p className="inicio-hoje__intro">{textoDoDia.explicacao}</p>
+              {Object.keys(contexto.respondidas).length > 0 || conta ? (
+                <div className="inicio-hoje__lista">
+                  <a className="inicio-hoje__item inicio-hoje__item--destaque" href={href('/treinar?situacao=revisarHoje&limite=20')}>
+                    <span className="inicio-hoje__icone"><Icone nome="calendario" tamanho={18} /></span>
+                    <span className="inicio-hoje__rotulo"><strong>Revisar hoje</strong><small>{textoDoDia.revisar}</small></span>
+                    <b className="numerico">{(contagens.porSituacao.revisarHoje ?? 0).toLocaleString('pt-BR')}</b>
                   </a>
-                ))}
-                {contagens.simulados > 0 && (
-                  <a
-                    className="provas-selecao__simulados"
-                    href={href(`/treinar${filtrosParaConsulta({ ...FILTROS_VAZIOS, soSimulados: true })}`)}
-                  >
-                    OrtoQuestões Simulados
+                  <a className="inicio-hoje__item" href={href('/treinar?situacao=naoRespondidas&limite=10')}>
+                    <span className="inicio-hoje__icone"><Icone nome="livro" tamanho={18} /></span>
+                    <span className="inicio-hoje__rotulo"><strong>Questões novas</strong><small>{textoDoDia.novas}</small></span>
+                    <b className="numerico">{(contagens.porSituacao.naoRespondidas ?? 0).toLocaleString('pt-BR')}</b>
                   </a>
-                )}
-              </div>
+                  <a className="inicio-hoje__item" href={href('/treinar?situacao=dominadas')}>
+                    <span className="inicio-hoje__icone"><Icone nome="medalha" tamanho={18} /></span>
+                    <span className="inicio-hoje__rotulo"><strong>Dominadas</strong><small>Ciclo de revisão completo</small></span>
+                    <b className="numerico">{(contagens.porSituacao.dominadas ?? 0).toLocaleString('pt-BR')}</b>
+                  </a>
+                </div>
+              ) : (
+                <p className="texto-2">Escolha uma sessão curta. Depois da primeira resposta, esta área passa a mostrar suas revisões, evolução e próximos passos.</p>
+              )}
             </section>
-          )}
 
-          <section>
+            {temaFragil && (() => {
+              const acerto = Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)
+              return <section className="inicio-foco" aria-labelledby="inicio-foco-titulo">
+                <p className="meta">ONDE VOCÊ MAIS GANHA AO REVISAR</p>
+                <h2 id="inicio-foco-titulo">{temaFragil[0]}</h2>
+                <div className="inicio-foco__medida">
+                  <span className="inicio-foco__valor numerico">{acerto}%</span>
+                  <span className="inicio-foco__rotulo">de acerto neste tema</span>
+                </div>
+                <span className="inicio-foco__barra" role="img" aria-label={`${acerto}% de acerto`}><span style={{ width: `${Math.max(3, acerto)}%` }} /></span>
+                <dl className="inicio-foco__numeros">
+                  <div><dt>Respostas</dt><dd className="numerico">{temaFragil[1].tentativas.toLocaleString('pt-BR')}</dd></div>
+                  <div><dt>Erros</dt><dd className="numerico">{(temaFragil[1].tentativas - temaFragil[1].acertos).toLocaleString('pt-BR')}</dd></div>
+                  <div><dt>Revisões</dt><dd className="numerico">{temaFragil[1].pendentes.toLocaleString('pt-BR')}</dd></div>
+                </dl>
+                <p className="texto-2">É o tema com menor acerto entre os que você já treinou. Uma sessão curta aqui rende mais do que em qualquer outro.</p>
+                <a className="botao botao--principal" href={href(`/treinar?temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema <Icone nome="direita" tamanho={16} /></a>
+              </section>
+            })()}
+          </div>
+
+          <div className="inicio-grade">
+            <CartaoStreak />
+            {Object.keys(contexto.respondidas).length > 0 && <section className="inicio-semana" aria-labelledby="inicio-semana-titulo">
+              <p className="meta">SUA SEMANA</p>
+              <h2 id="inicio-semana-titulo">{semana.total > 0 ? `${semana.total.toLocaleString('pt-BR')} ${semana.total === 1 ? 'questão' : 'questões'} em 7 dias` : 'Nenhuma questão nos últimos 7 dias'}</h2>
+              <dl className="inicio-semana__numeros">
+                <div><dt>Dias ativos</dt><dd className="numerico">{semana.diasAtivos} de 7</dd></div>
+                <div><dt>Acerto</dt><dd className="numerico">{semana.acerto === null ? '—' : `${semana.acerto}%`}</dd></div>
+                <div><dt>Média por dia</dt><dd className="numerico">{semana.diasAtivos ? Math.round(semana.total / semana.diasAtivos) : 0}</dd></div>
+              </dl>
+              <ol className="inicio-semana__grafico" aria-label="Questões respondidas por dia">
+                {semana.dias.map(dia => (
+                  <li key={dia.chave} className={dia.hoje ? 'inicio-semana__dia--hoje' : undefined} title={`${dia.nomeCompleto}: ${dia.total} ${dia.total === 1 ? 'questão' : 'questões'}${dia.total ? `, ${Math.round((dia.acertos / dia.total) * 100)}% de acerto` : ''}`}>
+                    <span className="inicio-semana__coluna"><span style={{ height: `${dia.total ? Math.max(6, (dia.total / semana.maximo) * 100) : 0}%` }} /></span>
+                    <span className="inicio-semana__rotulo">{dia.rotulo}</span>
+                    <span className="inicio-semana__sr">{dia.nomeCompleto}: {dia.total} {dia.total === 1 ? 'questão' : 'questões'}</span>
+                  </li>
+                ))}
+              </ol>
+            </section>}
+          </div>
+
+          <section className="inicio-bloco">
             <h2>Por tema</h2>
             <p className="meta" style={{ marginTop: '0.25rem' }}>
               Um clique monta a sessão do tema inteiro.
@@ -355,80 +375,31 @@ export function Inicio() {
           </section>
 
           {historico.length > 0 && (
-            <section>
+            <section className="inicio-bloco">
               <h2>Suas últimas sessões</h2>
-              <div className="rolagem-x" style={{ marginTop: '0.75rem' }}>
-                <table className="tabela">
-                  <thead>
-                    <tr>
-                      <th scope="col">Quando</th>
-                      <th scope="col">Filtro</th>
-                      <th scope="col" className="numerico">
-                        Respondidas
-                      </th>
-                      <th scope="col" className="numerico">
-                        Acerto
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {historico.slice(0, 5).map((h) => (
-                      <tr key={h.id}>
-                        <td className="numerico">
-                          {new Date(h.concluidaEm).toLocaleDateString('pt-BR')}
-                        </td>
-                        <td>{h.descricao}</td>
-                        <td className="numerico">
-                          {h.respondidas}/{h.total}
-                        </td>
-                        <td className="numerico">
-                          {h.respondidas > 0
-                            ? `${Math.round((h.acertos / h.respondidas) * 100)}%`
-                            : '—'}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+              <ol className="inicio-sessoes">
+                {historico.slice(0, 5).map((h) => {
+                  const acerto = h.respondidas > 0 ? Math.round((h.acertos / h.respondidas) * 100) : null
+                  return (
+                    <li key={h.id} className="inicio-sessao">
+                      <span className="inicio-sessao__quando">{quandoFoi(h.concluidaEm)}</span>
+                      <span className="inicio-sessao__nome">
+                        <strong>{h.descricao}</strong>
+                        <small>{h.respondidas} de {h.total} {h.total === 1 ? 'questão' : 'questões'}</small>
+                      </span>
+                      <span className={`inicio-sessao__acerto inicio-sessao__acerto--${acerto === null ? 'vazio' : acerto >= 70 ? 'bom' : acerto >= 50 ? 'medio' : 'baixo'}`}>
+                        {acerto === null ? '—' : `${acerto}%`}
+                      </span>
+                    </li>
+                  )
+                })}
+              </ol>
             </section>
           )}
 
-          {!assinante && <section className="inicio-planos" aria-labelledby="inicio-planos-titulo">
-            <div className="inicio-planos__texto">
-              <p className="meta">ASSINATURA OPCIONAL</p>
-              <h2 id="inicio-planos-titulo">Grátis todos os dias. Sem limite para quem apoia.</h2>
-              <p>{LIMITES_HABILITADOS
-                ? 'O plano gratuito continua generoso: 20 questões comentadas por dia, com revisão, desempenho e ranking, sem pedir cartão. A cota renova na virada do dia em São Paulo.'
-                : 'Hoje o treino gratuito ainda está sem limite. Quando a regra planejada entrar em vigor, o gratuito seguirá generoso: 20 questões comentadas por dia, renovadas na virada do dia em São Paulo.'}</p>
-              <p className="inicio-planos__apoio">A assinatura libera questões sem limite diário, sessões longas e simulados sem interrupção. Ela também financia a inclusão de provas novas e a revisão contínua dos comentários.</p>
-              <ul className="inicio-planos__selos">
-                <li><Icone nome="certo" tamanho={14} /> 20 questões grátis por dia</li>
-                <li><Icone nome="certo" tamanho={14} /> Sem limite na assinatura</li>
-                <li><Icone nome="certo" tamanho={14} /> Garantia de 7 dias</li>
-              </ul>
-            </div>
-            <div className="inicio-planos__oferta">
-              <span className="inicio-planos__a-partir">Estudar sem limite custa</span>
-              <strong className="inicio-planos__gancho">Menos que um cafezinho por dia</strong>
-              <span className="inicio-planos__nota">e cada assinatura mantém o gratuito vivo para quem está começando</span>
-              <a className="botao botao--principal botao--grande" href={href('/assinatura')}>Quero apoiar</a>
-              <span className="inicio-planos__nota">Cancele quando quiser</span>
-            </div>
-          </section>}
+          <CartaoCompartilhar />
 
           <InstalarApp />
-
-          <section className="cartao cartao__corpo cartao-instagram">
-            <span className="cartao-instagram__icone"><Icone nome="instagram" tamanho={26} /></span>
-            <div className="cartao-instagram__texto">
-              <h2>Acompanhe no Instagram</h2>
-              <p className="texto-2">Questão comentada, avisos de acervo novo e os bastidores do projeto.</p>
-            </div>
-            <a className="botao botao--principal" href={SITE.instagram} target="_blank" rel="noopener noreferrer me">
-              Seguir @{SITE.instagramUsuario}
-            </a>
-          </section>
         </>
       )}
     </div>

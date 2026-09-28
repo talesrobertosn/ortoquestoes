@@ -80,7 +80,7 @@ export function CartaoStreak() {
       {streak.recorde > streak.atual && <p className="meta">Recorde: {streak.recorde} dias</p>}
       {streak.atual >= 3 && (
         <div className="linha">
-          <button type="button" className="botao botao--principal" onClick={() => void compartilhar()} disabled={gerando}>
+          <button type="button" className="botao" onClick={() => void compartilhar()} disabled={gerando}>
             <Icone nome="link" tamanho={16} /> {gerando ? 'Gerando imagem…' : 'Compartilhar minha sequência'}
           </button>
           {compartilhado && <span className="meta" role="status">Imagem baixada. Já pode postar no Instagram.</span>}

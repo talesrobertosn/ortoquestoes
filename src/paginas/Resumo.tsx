@@ -277,7 +277,7 @@ export function Resumo() {
         </dl>
       </section>
 
-      <DiaCumprido />
+      <DiaCumprido erradas={dados.erradas.length} />
       {/* Sessão que foi bem, sem o limite do dia na mesma tela: um convite, no máximo. */}
       <ConviteCompartilhar ativo={!emAndamento && dados.respondidas.length >= 5 && pct !== null && pct >= 60 && !lerBloqueioDiario()} />
 
