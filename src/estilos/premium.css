@@ -2394,14 +2394,25 @@ a.rs-marco:hover { color: var(--texto); border-color: var(--traco-forte); }
 .convite__whatsapp:hover { background: #178c46; color: #fff; }
 .convite__copiar { background: var(--superficie); color: var(--verdete-tinta); border: 1px solid color-mix(in srgb, var(--verdete) 35%, var(--traco)); }
 .convite__copiar:hover { background: var(--verdete-veu); }
-@media (max-width: 40rem) {
-  .convite { right: .75rem; left: .75rem; width: auto; bottom: calc(4.9rem + env(safe-area-inset-bottom)); }
-  .convite__topo { padding-block: .5rem; }
-  .convite__conversa { padding-top: .6rem; }
-  .convite__balao { font-size: .84rem; padding: .45rem .65rem; }
-  .convite__acoes { padding-block: .55rem .7rem; }
+.convite--saindo { opacity: 0; transform: translateY(14px) scale(.97); transition: opacity .2s ease, transform .2s ease; }
+/* Celular: uma linha só, fácil de fechar (X grande, arrastar ou esperar). */
+.convite--compacto {
+  left: .6rem; right: .6rem; width: auto; bottom: calc(4.75rem + env(safe-area-inset-bottom));
+  display: flex; align-items: center; gap: .35rem; padding: .4rem .3rem .4rem .5rem; border-radius: 16px;
+  background: linear-gradient(110deg, #0c3b36, #1d6b5f); border: 0; color: #fff;
+  box-shadow: 0 10px 28px rgba(8, 40, 36, .3); touch-action: pan-x; transition: transform .2s ease, opacity .2s ease;
 }
-@media (prefers-reduced-motion: reduce) { .convite, .convite__balao, .convite__digitando i { animation: none; } }
+.convite--compacto.convite--saindo { transform: translateY(24px); }
+.convite--compacto .convite__avatar { width: 1.9rem; height: 1.9rem; }
+.convite__linha { flex: 1; min-width: 0; margin: 0; font-size: .8rem; line-height: 1.25; color: rgba(255, 255, 255, .82); }
+.convite__linha b { color: #fff; font-weight: 700; }
+.convite__icone { flex: none; display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border: 0; border-radius: 999px; background: rgba(255, 255, 255, .12); color: #fff; cursor: pointer; }
+.convite__icone--whatsapp { background: #1fa855; }
+.convite__icone--fechar { background: transparent; color: rgba(255, 255, 255, .8); }
+.convite__icone:active { transform: scale(.94); }
+.convite__tempo { position: absolute; left: 0; bottom: 0; height: 2px; width: 100%; background: rgba(255, 227, 163, .7); transform-origin: left; animation: convite-tempo linear forwards; }
+@keyframes convite-tempo { from { transform: scaleX(1); } to { transform: scaleX(0); } }
+@media (prefers-reduced-motion: reduce) { .convite, .convite__balao, .convite__digitando i, .convite__tempo { animation: none; } .convite--saindo { transition: none; } }
 /* Até 40rem a barra de baixo já leva Revisão; entre 40 e 56rem o cabeçalho
    ainda mostra os quatro links, então a marca fica só no símbolo e a conta
    só no ícone. Sem isso o cabeçalho passava da largura da tela. */
