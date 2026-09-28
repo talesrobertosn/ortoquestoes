@@ -22,5 +22,15 @@ export default defineConfig({
   build: {
     target: 'es2020',
     assetsInlineLimit: 2048,
+    rollupOptions: {
+      output: {
+        // Bibliotecas mudam raramente: em arquivos próprios, continuam no
+        // cache do aparelho a cada publicação, e só o código do site desce de novo.
+        manualChunks(id) {
+          if (id.includes('node_modules/@supabase/')) return 'supabase'
+          if (/node_modules\/(react|react-dom|scheduler)\//.test(id)) return 'react'
+        },
+      },
+    },
   },
 })

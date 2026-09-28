@@ -14,10 +14,20 @@ const INDICE_VAZIO: Indice = {
 }
 
 let promessaIndice: Promise<Indice> | null = null
+
+/** Pedido do índice feito pelo index.html antes do código carregar; usado uma vez. */
+function adiantado(): Promise<Response | null> | null {
+  const janela = window as unknown as { __indiceOrtoQuestoes?: Promise<Response> }
+  const pedido = janela.__indiceOrtoQuestoes
+  if (!pedido) return null
+  delete janela.__indiceOrtoQuestoes
+  // Se o pedido adiantado falhar, o fetch normal tenta de novo.
+  return pedido.then(r => (r.ok ? r : null), () => null)
+}
 const temasCarregados = new Map<string, Promise<Questao[]>>()
 
 async function buscarJson<T>(caminho: string): Promise<T> {
-  const resposta = await fetch(recurso(caminho), { cache: 'no-cache' })
+  const resposta = await (caminho === 'acervo/indice.json' ? adiantado() : null) ?? await fetch(recurso(caminho), { cache: 'no-cache' })
   if (!resposta.ok) throw new Error(`Falha ao carregar ${caminho} (${resposta.status})`)
   return (await resposta.json()) as T
 }
