@@ -282,8 +282,9 @@ export function Inicio() {
             <section className="inicio-hoje" aria-labelledby="inicio-hoje-titulo">
               <p className="meta">SUA ROTINA DE ESTUDO</p>
               <h2 id="inicio-hoje-titulo">Seu estudo de hoje</h2>
+              {Object.keys(contexto.respondidas).length > 0 || conta ? <>
               <p className="inicio-hoje__intro">{textoDoDia.explicacao}</p>
-              {Object.keys(contexto.respondidas).length > 0 || conta ? (
+              {(
                 <div className="inicio-hoje__lista">
                   <a className="inicio-hoje__item inicio-hoje__item--destaque" href={href('/treinar?situacao=revisarHoje&limite=20')}>
                     <span className="inicio-hoje__icone"><Icone nome="calendario" tamanho={18} /></span>
@@ -301,7 +302,7 @@ export function Inicio() {
                     <b className="numerico">{(contagens.porSituacao.dominadas ?? 0).toLocaleString('pt-BR')}</b>
                   </a>
                 </div>
-              ) : (
+              )}</> : (
                 <p className="texto-2">Escolha uma sessão curta. Depois da primeira resposta, esta área passa a mostrar suas revisões, evolução e próximos passos.</p>
               )}
             </section>

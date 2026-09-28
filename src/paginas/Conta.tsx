@@ -279,7 +279,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <p className="ct-heroi__email">{sessao.user.email}</p>
           <p className="ct-heroi__sync" role="status">
             <span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" />
-            {ROTULOS_STATUS[status.estado]}{status.pendentes > 0 && ` ${status.pendentes} alteração(ões) pendente(s).`}
+            {ROTULOS_STATUS[status.estado]}{status.pendentes > 0 && ` · ${status.pendentes} ${status.pendentes === 1 ? 'pendente' : 'pendentes'}`}
           </p>
           {status.estado === 'erro' && status.detalhe && <p className="ct-heroi__erro">Motivo: {status.detalhe}</p>}
         </div>

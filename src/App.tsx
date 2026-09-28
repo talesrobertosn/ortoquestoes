@@ -150,7 +150,8 @@ export function App() {
           </Suspense>
         </div>
       </main>
-      <Rodape />
+      {/* Durante a sessão, nada abaixo da questão: foco no estudo. */}
+      {primeiro !== 'sessao' && <Rodape />}
     </div>
   )
 }
