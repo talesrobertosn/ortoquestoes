@@ -12,21 +12,64 @@ import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking } from '../conta/perfilRanking'
 
 type Periodo = 'geral' | 'semana'
-type LinhaRanking = { posicao: number; apelido: string; total: number; total_geral: number; eh_voce: boolean; variacao: number | null; referencia_em: string | null }
+type LinhaRanking = {
+  posicao: number; apelido: string; total: number; total_geral: number; eh_voce: boolean
+  variacao: number | null; variacao_semana: number | null; novo: boolean; referencia_em: string | null
+}
 type MinhaPosicao = { posicao: number; total: number; total_geral: number } | null
 
 const ROTULOS_PERIODO: Record<Periodo, string> = { geral: 'Geral', semana: 'Últimos 7 dias' }
 
-function Movimento({ valor, referencia }: { valor: number | null; referencia: string | null }) {
-  if (!valor || !referencia) return null
-  const subiu = valor > 0
-  const quantidade = Math.abs(valor)
-  const data = referencia.split('-').reverse().join('/')
-  const descricao = `${subiu ? 'Subiu' : 'Desceu'} ${quantidade} ${quantidade === 1 ? 'posição' : 'posições'} desde ${data}`
-  return <span className={`rk-movimento rk-movimento--${subiu ? 'subiu' : 'desceu'}`} title={descricao}>
-    <span aria-hidden="true"><Icone nome={subiu ? 'cima' : 'baixo'} tamanho={15} />{quantidade}{subiu && quantidade >= 3 && <Icone nome="fogo" tamanho={15} />}</span>
+// Subir 3 posições de um dia para o outro, ou 5 na semana, acende o foguinho.
+const FOGO_NO_DIA = 3
+const FOGO_NA_SEMANA = 5
+
+const posicoes = (n: number) => `${n} ${n === 1 ? 'posição' : 'posições'}`
+const dataCurta = (iso: string) => iso.split('-').reverse().slice(0, 2).join('/')
+
+function emChamas(linha: LinhaRanking): boolean {
+  return (linha.variacao ?? 0) >= FOGO_NO_DIA || (linha.variacao_semana ?? 0) >= FOGO_NA_SEMANA
+}
+
+function Movimento({ linha }: { linha: LinhaRanking }) {
+  const { variacao: valor, referencia_em: referencia, variacao_semana: semana } = linha
+  const fogo = emChamas(linha)
+  if (linha.novo) return <span className="rk-movimento rk-movimento--novo" title="Entrou no ranking desde o último registro">novo</span>
+  if (!referencia) return null
+  if (!valor) {
+    if (!fogo) return <span className="rk-movimento rk-movimento--parado" title={`Mesma posição desde ${dataCurta(referencia)}`}><span aria-hidden="true">=</span><span className="rk-movimento__sr">Mesma posição desde {dataCurta(referencia)}</span></span>
+  }
+  const subiu = (valor ?? 0) > 0 || (!valor && fogo)
+  const quantidade = Math.abs(valor ?? 0)
+  const partes = [valor ? `${subiu ? 'Subiu' : 'Desceu'} ${posicoes(quantidade)} desde ${dataCurta(referencia)}` : `Mesma posição desde ${dataCurta(referencia)}`]
+  if (semana && semana > 0) partes.push(`subiu ${posicoes(semana)} na semana`)
+  if (fogo) partes.push('em chamas')
+  const descricao = partes.join(', ')
+  return <span className={`rk-movimento rk-movimento--${subiu ? 'subiu' : 'desceu'}${fogo ? ' rk-movimento--fogo' : ''}`} title={descricao}>
+    <span aria-hidden="true">{quantidade > 0 && <><Icone nome={subiu ? 'cima' : 'baixo'} tamanho={15} />{quantidade}</>}{fogo && <Icone nome="fogo" tamanho={15} />}</span>
     <span className="rk-movimento__sr">{descricao}</span>
   </span>
+}
+
+/** Quem mais subiu desde o último registro: a vitrine de quem está jogando. */
+function EmAlta({ linhas }: { linhas: LinhaRanking[] }) {
+  const subindo = linhas
+    .filter(linha => (linha.variacao ?? 0) > 0 || (linha.variacao_semana ?? 0) >= FOGO_NA_SEMANA)
+    .sort((a, b) => (b.variacao ?? 0) - (a.variacao ?? 0) || (b.variacao_semana ?? 0) - (a.variacao_semana ?? 0) || a.posicao - b.posicao)
+    .slice(0, 3)
+  if (!subindo.length) return null
+  return <section className="rk-alta" aria-label="Subindo rápido">
+    <p className="rk-alta__titulo"><Icone nome="fogo" tamanho={16} /> Subindo rápido</p>
+    <ol className="rk-alta__lista">
+      {subindo.map(linha => (
+        <li key={linha.posicao} className={'rk-alta__item' + (linha.eh_voce ? ' rk-alta__item--voce' : '')}>
+          <span className="rk-alta__avatar">{iniciais(linha.apelido)}</span>
+          <span className="rk-alta__nome"><strong>{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</strong><small>agora em #{linha.posicao}</small></span>
+          <Movimento linha={linha} />
+        </li>
+      ))}
+    </ol>
+  </section>
 }
 
 function iniciais(apelido: string): string {
@@ -51,12 +94,20 @@ function Podio({ linhas, periodo }: { linhas: LinhaRanking[]; periodo: Periodo }
           <strong className="rk-podio__nome">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</strong>
           <Emblema total={linha.total_geral} tamanho={26} />
           <span className="rk-podio__total"><b className="numerico">{linha.total.toLocaleString('pt-BR')}</b> {periodo === 'semana' ? 'na semana' : 'questões'}</span>
-          <Movimento valor={linha.variacao} referencia={linha.referencia_em} />
+          <Movimento linha={linha} />
           <span className="rk-podio__base" aria-hidden="true">{linha.posicao}º</span>
         </li>
       ))}
     </ol>
   )
+}
+
+/** A próxima meta, em questões, como uma missão de jogo. */
+function Missao({ eu, acima }: { eu: LinhaRanking; acima: LinhaRanking | null }) {
+  if (eu.posicao === 1) return <span className="rk-missao"><Icone nome="trofeu" tamanho={15} /><span>Você lidera. Responda hoje para defender o topo.</span></span>
+  if (!acima) return null
+  const faltam = Math.max(1, acima.total - eu.total + 1)
+  return <span className="rk-missao"><Icone nome="alvo" tamanho={15} /><span>Faltam <b>{faltam.toLocaleString('pt-BR')}</b> {faltam === 1 ? 'questão' : 'questões'} para passar {acima.apelido} e subir para #{acima.posicao}</span></span>
 }
 
 function GradeEmblemas({ lista, valor, unidade }: { lista: readonly Conquista[]; valor: number; unidade: (n: number) => string }) {
@@ -106,7 +157,8 @@ export function Ranking() {
       if (!vivo) return
       if (ranking.error || minha.error) { definirErro(true); return }
       const novasLinhas: LinhaRanking[] = (ranking.data ?? []).map((linha: LinhaRanking) => ({
-        ...linha, variacao: linha.variacao ?? null, referencia_em: linha.referencia_em ?? null,
+        ...linha, variacao: linha.variacao ?? null, variacao_semana: linha.variacao_semana ?? null,
+        novo: linha.novo ?? false, referencia_em: linha.referencia_em ?? null,
       }))
       definirLinhas(novasLinhas)
       definirMinhaPosicao(minha.data?.[0] ?? null)
@@ -126,8 +178,12 @@ export function Ranking() {
   const meuProximo = proximaConquista(meuTotal)
   const anterior = meuEmblema?.minimo ?? 0
   const progressoProximo = meuProximo ? Math.min(100, Math.round(((meuTotal - anterior) / (meuProximo.minimo - anterior)) * 100)) : 100
-  const lider = linhas?.[0]?.total ?? 1
-  const restantes = linhas && linhas.length >= 3 ? linhas.slice(3) : linhas ?? []
+  // A RPC devolve a sua linha mesmo fora do top 50; ela alimenta o cartão, não a lista.
+  const eu = linhas?.find(linha => linha.eh_voce) ?? null
+  const top = linhas?.filter(linha => linha.posicao <= 50) ?? null
+  const acima = eu && linhas ? linhas.find(linha => linha.posicao === eu.posicao - 1) ?? null : null
+  const lider = top?.[0]?.total ?? 1
+  const restantes = top && top.length >= 3 ? top.slice(3) : top ?? []
 
   return <div className="empilha-2 rk">
     <section className="rk-heroi">
@@ -145,8 +201,9 @@ export function Ranking() {
           </> : minhaPosicao ? <>
             <span className="rk-heroi__rotulo">Sua posição {periodo === 'semana' ? 'na semana' : 'geral'}</span>
             <strong className="rk-heroi__posicao">#{minhaPosicao.posicao}</strong>
-            {linhas?.find(linha => linha.eh_voce) && <Movimento valor={linhas.find(linha => linha.eh_voce)!.variacao} referencia={linhas.find(linha => linha.eh_voce)!.referencia_em} />}
+            {eu && <Movimento linha={eu} />}
             <span className="rk-heroi__rotulo">{minhaPosicao.total.toLocaleString('pt-BR')} questões {periodo === 'semana' ? 'nos últimos 7 dias' : 'respondidas'}</span>
+            {eu && <Missao eu={eu} acima={acima} />}
           </> : meuTotal < MINIMO_RANKING ? <>
             <span className="rk-heroi__rotulo">Você entra no ranking com {MINIMO_RANKING} questões</span>
             <strong className="rk-heroi__posicao">Faltam {MINIMO_RANKING - meuTotal}</strong>
@@ -181,15 +238,23 @@ export function Ranking() {
         <p>Seja a primeira pessoa a aparecer aqui.</p>
       </Estado>}
 
-      {linhas && <p className="rk-referencia">As setas comparam a posição com o último dia registrado no ranking. A referência é a mesma em todos os aparelhos; no primeiro dia, ainda não há comparação.</p>}
+      {top && top.length > 0 && <EmAlta linhas={top} />}
 
-      {linhas && linhas.length >= 3 && <Podio linhas={linhas} periodo={periodo} />}
+      {top && top.length >= 3 && <Podio linhas={top} periodo={periodo} />}
+
+      {top && top.length > 0 && <p className="rk-referencia">
+        <span><b className="rk-legenda rk-legenda--subiu"><Icone nome="cima" tamanho={13} /></b> subiu</span>
+        <span><b className="rk-legenda rk-legenda--desceu"><Icone nome="baixo" tamanho={13} /></b> desceu</span>
+        <span><b className="rk-legenda rk-legenda--fogo"><Icone nome="fogo" tamanho={13} /></b> {FOGO_NO_DIA}+ posições no dia ou {FOGO_NA_SEMANA}+ na semana</span>
+        <span><b className="rk-legenda rk-legenda--novo">novo</b> acabou de entrar</span>
+        <small>Comparação com o último dia registrado, igual em todos os aparelhos.</small>
+      </p>}
 
       {restantes.length > 0 && <ol className="rk-lista">
         {restantes.map((linha) => (
           <li key={linha.posicao} className={'rk-linha' + (linha.eh_voce ? ' rk-linha--voce' : '')}>
             <span className="rk-linha__posicao numerico">{linha.posicao}</span>
-            <Movimento valor={linha.variacao} referencia={linha.referencia_em} />
+            <Movimento linha={linha} />
             <span className="rk-linha__avatar">{iniciais(linha.apelido)}</span>
             <span className="rk-linha__nome">
               <span className="rk-linha__apelido">{linha.apelido}<Emblema total={linha.total_geral} />{linha.eh_voce && <span className="rk-voce">você</span>}</span>
@@ -200,8 +265,8 @@ export function Ranking() {
         ))}
       </ol>}
 
-      {linhas && minhaPosicao && minhaPosicao.posicao > linhas.length && (
-        <p className="rk-fora">Você está em <strong>#{minhaPosicao.posicao}</strong>, com {minhaPosicao.total.toLocaleString('pt-BR')} questões {periodo === 'semana' ? 'na semana' : 'respondidas'}. Faltam {Math.max(1, (linhas[linhas.length - 1]?.total ?? 0) - minhaPosicao.total + 1).toLocaleString('pt-BR')} para entrar no top 50.</p>
+      {top && minhaPosicao && minhaPosicao.posicao > top.length && (
+        <p className="rk-fora">Você está em <strong>#{minhaPosicao.posicao}</strong>, com {minhaPosicao.total.toLocaleString('pt-BR')} questões {periodo === 'semana' ? 'na semana' : 'respondidas'}. Faltam {Math.max(1, (top[top.length - 1]?.total ?? 0) - minhaPosicao.total + 1).toLocaleString('pt-BR')} para entrar no top 50.</p>
       )}
     </>}
 

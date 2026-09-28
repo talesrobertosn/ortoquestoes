@@ -24,6 +24,7 @@ TERMOS = (RAIZ / "src/paginas/Termos.tsx").read_text()
 CONDICOES_ASSINATURA = (RAIZ / "src/paginas/CondicoesAssinatura.tsx").read_text()
 ACEITES_ASSINATURA = (RAIZ / "supabase/migrations/202609270900_aceites_assinatura.sql").read_text()
 RANKING_MOVIMENTO = (RAIZ / "supabase/migrations/202609280001_ranking_movimento_diario.sql").read_text()
+RANKING_RPG = (RAIZ / "supabase/migrations/202609280100_ranking_movimento_rpg.sql").read_text()
 PAGINA_RANKING = (RAIZ / "src/paginas/Ranking.tsx").read_text()
 LIMITE_CLIENTE = (RAIZ / "src/estado/limiteDiario.ts").read_text()
 AVISO_LIMITE = (RAIZ / "src/componentes/LimiteRespostas.tsx").read_text()
@@ -214,6 +215,21 @@ for trecho in (
 assert "usuario_id uuid" not in RANKING_MOVIMENTO.split("create function public.obter_ranking_com_movimento", 1)[1].split("language plpgsql", 1)[0]
 assert "obter_ranking_com_movimento" in PAGINA_RANKING
 assert "ranking:referencia:" not in PAGINA_RANKING
+# Versão com subida na semana e selo de novato: segue privada, sem expor o
+# identificador de ninguém, e aplicável sozinha (o retorno mudou, daí o drop).
+for trecho in (
+    "create table if not exists public.ranking_posicoes_diarias",
+    "enable row level security",
+    "revoke all on public.ranking_posicoes_diarias from public, anon, authenticated",
+    "drop function if exists public.obter_ranking_com_movimento(text)",
+    "variacao_semana",
+    "h.dia >= hoje - 7",
+    "r.posicao <= 50 or r.usuario_id = auth.uid()",
+    "grant execute on function public.obter_ranking_com_movimento(text) to authenticated",
+):
+    assert trecho in RANKING_RPG, f"Ranking com movimento incompleto: {trecho}"
+assert "usuario_id uuid" not in RANKING_RPG.split("create function public.obter_ranking_com_movimento", 1)[1].split("language plpgsql", 1)[0]
+assert "linha.posicao <= 50" in PAGINA_RANKING, "A linha própria fora do top 50 não pode entrar na lista"
 for trecho in ("listar_eventos_pagamento_admin", "status_processamento === 'erro'", "webhook-mercado-pago?acao=reprocessar"):
     assert trecho in PAGINA_ADMIN, f"Reprocessamento administrativo ausente: {trecho}"
 for trecho in ("usuarioDoPedido(req)", "administradores?id_usuario", "status_processamento=eq.erro", "EdgeRuntime.waitUntil(processar", "x-signature"):
