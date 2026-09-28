@@ -84,6 +84,11 @@ export function Sobre() {
           <Icone nome="alerta" tamanho={16} />
           <span>Comentário de questão é material de estudo e não substitui o livro nem a conduta do seu serviço. Quando uma questão passar por revisão médica individual, isso aparece indicado nela.</span>
         </p>
+        <aside className="pj-ia" aria-labelledby="pj-ia-titulo">
+          <h3 id="pj-ia-titulo">Sobre o uso de inteligência artificial</h3>
+          <p>Todo o conteúdo parte da <strong>bibliografia de referência</strong> da especialidade. Para dar conta de milhares de questões, usamos inteligência artificial para redigir parte dos textos: comentários, explicações e o enunciado de algumas questões autorais, como as dos OrtoQuestões Simulados.</p>
+          <p>A IA escreve bem, mas <strong>pode acrescentar algo que não está na fonte</strong>, simplificar demais ou errar um detalhe, mesmo com tom seguro. Por isso, trate cada comentário como ponto de partida: <strong>confira sempre na bibliografia indicada</strong> antes de levar a informação para a prova ou para a prática. Se encontrar algo estranho, use o <a href={href('/contato')}>relato de erro</a> ou o botão "Não ajudou" no próprio comentário: é assim que o texto é corrigido.</p>
+        </aside>
       </section>
 
       <div className="pj-duas">

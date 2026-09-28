@@ -233,8 +233,9 @@ def rodape(raiz: str = "../") -> str:
   <p class="meta">
     <strong>OrtoQuestões</strong>: banco de questões de ortopedia e traumatologia para TEOT, TARO e
     ENARE R4. As questões são transcritas das provas originais e o gabarito é o da própria banca;
-    as marcadas como OrtoQuestões Simulados são elaboradas pelo site de acordo com a bibliografia de
-    referência, inspiradas no padrão da prova indicada.
+    as marcadas como OrtoQuestões Simulados são questões autorais do site, elaboradas a partir da
+    bibliografia de referência e inspiradas no padrão da prova indicada, sem caráter oficial nem
+    vínculo com as instituições organizadoras.
     Os comentários se baseiam na bibliografia de referência da especialidade; a redação pode contar
     com apoio de inteligência artificial. <a href="{raiz}#/contato">Encontrou um erro?</a>
     · <a href="{raiz}guias/">Guias de estudo</a>
@@ -252,8 +253,9 @@ def nota_simulado(questao: dict) -> str:
         return ""
     prova = f" {esc(questao['prova'])}" if questao.get("prova") else ""
     return (
-        '<p class="meta"><strong>OrtoQuestões Simulados</strong>: questão elaborada de acordo com a '
-        f"bibliografia de referência e inspirada no padrão da prova{prova}.</p>"
+        '<p class="meta"><strong>OrtoQuestões Simulados</strong>: questão autoral do site, elaborada a '
+        f"partir da bibliografia de referência e inspirada no padrão da prova{prova}. Não é questão "
+        "oficial da prova nem foi elaborada, revisada ou endossada pela instituição organizadora.</p>"
     )
 
 
@@ -460,8 +462,9 @@ def principal() -> int:
             "inteligência artificial. Quando resta dúvida sobre o gabarito, o comentário registra a "
             "dúvida em vez de escondê-la."
             + (
-                " As questões marcadas como <strong>OrtoQuestões Simulados</strong> são elaboradas pelo "
-                "site de acordo com a bibliografia de referência, inspiradas no padrão da prova indicada."
+                " As questões marcadas como <strong>OrtoQuestões Simulados</strong> são autorais do site, "
+                "elaboradas a partir da bibliografia de referência e inspiradas no padrão da prova indicada; "
+                "não são questões oficiais nem têm vínculo com as instituições organizadoras."
                 if any(q.get("simulado") for q in publicaveis)
                 else ""
             )

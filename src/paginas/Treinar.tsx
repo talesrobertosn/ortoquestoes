@@ -185,8 +185,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             <span className="tr-simulados__selo">Simulados</span>
             <h2 id="tr-simulados-titulo">OrtoQuestões Simulados</h2>
             <p>
-              Questões elaboradas de acordo com a bibliografia de referência e inspiradas no padrão de cada
-              prova. <strong className="numerico">{totalSimulados}</strong> questões, todas comentadas.
+              Questões autorais, elaboradas a partir da bibliografia de referência e inspiradas no padrão de cada
+              prova. <strong className="numerico">{totalSimulados}</strong> questões, todas comentadas. Não são
+              questões oficiais nem têm vínculo com as sociedades organizadoras.
             </p>
           </div>
           <div className="tr-simulados__acoes">

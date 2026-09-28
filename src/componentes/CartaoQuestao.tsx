@@ -320,8 +320,9 @@ export function CartaoQuestao({
 
         {questao.simulado && (
           <p className="meta origem-questao">
-            <strong>{ROTULO_SIMULADOS}</strong>: questão elaborada de acordo com a bibliografia de
-            referência e inspirada no padrão da prova{questao.prova ? ` ${questao.prova}` : ''}.
+            <strong>{ROTULO_SIMULADOS}</strong>: questão autoral do site, elaborada a partir da bibliografia
+            de referência e inspirada no padrão da prova{questao.prova ? ` ${questao.prova}` : ''}. Não é questão
+            oficial da prova nem foi elaborada, revisada ou endossada pela instituição organizadora.
           </p>
         )}
         <div className="questao__enunciado">{questao.enunciado}</div>

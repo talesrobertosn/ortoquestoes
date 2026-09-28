@@ -89,7 +89,8 @@ for trecho in (
     "MERCADO_PAGO_AMBIENTE",
     "MERCADO_PAGO_RESTRITO_CONTAS_TESTE",
     "aceite_confirmado !== true",
-    "aceite_termos_versao !== versaoCondicoesAssinatura",
+    "versoesCondicoesAceitas.includes(aceite_termos_versao)",
+    "versao: aceite_termos_versao",
     "banco('aceites_assinatura'",
 ):
     assert trecho in CRIAR_CHECKOUT, f"Contrato de checkout ausente: {trecho}"
@@ -98,8 +99,15 @@ assert "MERCADO_PAGO_SANDBOX_PAYER_EMAIL" not in CRIAR_CHECKOUT
 assert "console." not in CRIAR_CHECKOUT
 assert "external_reference: usuario.id" in CRIAR_CHECKOUT
 assert "!payerEmail" in CRIAR_CHECKOUT
-assert "versaoCondicoesAssinatura = '2026-09-27'" in CRIAR_CHECKOUT
-assert "VERSAO_CONDICOES_ASSINATURA = '2026-09-27'" in VERSOES_TERMOS
+# A versão das condições exibida no site é a vigente no servidor (primeira da lista).
+import re as _re
+_lista = _re.search(r"versoesCondicoesAceitas = \[([^\]]*)\]", CRIAR_CHECKOUT)
+_site = _re.search(r"VERSAO_CONDICOES_ASSINATURA = '([^']+)'", VERSOES_TERMOS)
+assert _lista and _site, "Versões das condições não encontradas"
+_versoes = _re.findall(r"'([^']+)'", _lista.group(1))
+assert _versoes[0] == _site.group(1), f"Site ({_site.group(1)}) e checkout ({_versoes[0]}) com versões diferentes"
+_anterior = _re.search(r"VERSAO_CONDICOES_ANTERIOR = '([^']+)'", VERSOES_TERMOS)
+assert not _anterior or _anterior.group(1) in _versoes, "Versão anterior do site precisa seguir aceita pelo checkout"
 assert "create table if not exists public.aceites_assinatura" in ACEITES_ASSINATURA
 assert "alter table public.aceites_assinatura enable row level security" in ACEITES_ASSINATURA
 assert "revoke all on public.aceites_assinatura from anon, authenticated" in ACEITES_ASSINATURA
@@ -183,7 +191,7 @@ for trecho in ("assinaturas opcionais", "R$ 39,90", "R$ 179,90", "R$ 239,90", "s
     assert trecho in TERMOS, f"Termos de assinatura incompletos: {trecho}"
 for trecho in ("R$ 39,90", "R$ 179,90", "R$ 239,90", "Mercado Pago", "não recebe nem armazena", "não há reembolso proporcional automático"):
     assert trecho in CONDICOES_ASSINATURA, f"Condições específicas incompletas: {trecho}"
-for trecho in ("aceite_termos_versao: VERSAO_CONDICOES_ASSINATURA", "aceite_confirmado: true", "Continuar para Mercado Pago"):
+for trecho in ("pedir(VERSAO_CONDICOES_ASSINATURA)", "aceite_termos_versao: versao", "aceite_confirmado: true", "Continuar para Mercado Pago"):
     assert trecho in PAGINA_ASSINATURA, f"Aceite pré-checkout ausente: {trecho}"
 
 for trecho in (

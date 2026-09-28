@@ -5,7 +5,7 @@ import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { usarIndice } from '../dados/usarIndice'
 import { Icone, type NomeIcone } from '../componentes/Icone'
 import { Painel } from '../componentes/Painel'
-import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
+import { VERSAO_CONDICOES_ANTERIOR, VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { href } from '../util/rotas'
 import { MENSAL, PLANOS, real } from '../dados/planos'
 
@@ -49,11 +49,19 @@ export function Assinatura() {
     definirAbrindoCheckout(true)
     definirMensagem('Preparando checkout seguro…')
     try {
-      const r = await chamarFuncao<{ url: string }>('criar-checkout', {
+      const pedir = (versao: string) => chamarFuncao<{ url: string }>('criar-checkout', {
         plano: planoEscolhido.id,
-        aceite_termos_versao: VERSAO_CONDICOES_ASSINATURA,
+        aceite_termos_versao: versao,
         aceite_confirmado: true,
       })
+      let r: { url: string }
+      try {
+        r = await pedir(VERSAO_CONDICOES_ASSINATURA)
+      } catch (erro) {
+        // Servidor ainda na versão anterior das condições: não trava a compra.
+        if (!(erro instanceof Error) || !erro.message.startsWith('Atualize a página para revisar')) throw erro
+        r = await pedir(VERSAO_CONDICOES_ANTERIOR)
+      }
       location.assign(r.url)
     } catch (erro) {
       definirMensagem(erro instanceof Error ? erro.message : 'Não foi possível abrir o checkout.')
@@ -258,7 +266,7 @@ export function Assinatura() {
           <p><strong>{planoEscolhido.nome}: {real(planoEscolhido.total)}</strong> cobrados integralmente {planoEscolhido.meses === 1 ? 'a cada mês' : `a cada ${planoEscolhido.meses} meses`}, com renovação automática até o cancelamento.</p>
           <p>Nos primeiros sete dias após cada cobrança aprovada, você pode solicitar reembolso integral. Depois disso, cancelar interrompe as renovações e mantém o acesso até o fim do período pago, sem reembolso proporcional automático.</p>
           <p>O próximo passo abre o checkout hospedado pelo Mercado Pago. Você só paga se confirmar a compra lá; o OrtoQuestões não recebe dados completos do cartão.</p>
-          <label className="campo campo--checkbox"><input type="checkbox" checked={aceitouCondicoes} onChange={evento => definirAceitouCondicoes(evento.target.checked)} /> <span>Li e aceito as <a href={href('/condicoes-assinatura')} target="_blank" rel="noopener noreferrer">Condições da Assinatura</a> (versão {VERSAO_CONDICOES_ASSINATURA}) para este plano e este valor.</span></label>
+          <label className="campo campo--checkbox"><input type="checkbox" checked={aceitouCondicoes} onChange={evento => definirAceitouCondicoes(evento.target.checked)} /> <span>Li e aceito as <a href={href('/condicoes-assinatura')} target="_blank" rel="noopener noreferrer">Condições da Assinatura</a> (versão {VERSAO_CONDICOES_ASSINATURA}) e os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso</a> para este plano e este valor, ciente de que os simulados não são questões oficiais e de que parte dos textos é redigida com apoio de IA.</span></label>
           {mensagem && <p role="status" className="vp-aviso">{mensagem}</p>}
           <div className="linha linha--empilha-celular">
             <button className="botao botao--principal" type="button" disabled={!aceitouCondicoes || abrindoCheckout} onClick={() => void confirmarCompra()}>{abrindoCheckout ? 'Abrindo checkout…' : 'Continuar para Mercado Pago'}</button>

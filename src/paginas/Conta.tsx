@@ -298,7 +298,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
 
     {!aceiteAtualizado && perfil.termos_versao !== VERSAO_TERMOS && <section className="ct-cartao" aria-label="Termos atualizados">
       <h2>Termos de uso atualizados</h2>
-      <p>Esclarecemos as condições do acesso gratuito, dos planos e do cancelamento. Sua conta continua disponível enquanto você lê a nova versão.</p>
+      <p>Deixamos mais claros o uso de inteligência artificial nos textos, o caráter não oficial dos simulados, a natureza da assinatura e o que acontece com ela se o serviço mudar. Sua conta continua disponível enquanto você lê a nova versão.</p>
       <div className="linha linha--empilha-celular">
         <a className="botao" href={href('/termos')} target="_blank" rel="noopener noreferrer">Ler os termos</a>
         <button className="botao botao--principal" type="button" disabled={ocupado} onClick={() => void confirmarNovosTermos()}>Li e concordo com a versão atual</button>

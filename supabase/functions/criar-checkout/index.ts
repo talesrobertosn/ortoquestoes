@@ -5,7 +5,10 @@ const planos = {
   semestral: { reason: 'OrtoQuestoes Semestral', frequency: 6, transaction_amount: 179.90 },
   anual: { reason: 'OrtoQuestoes Anual', frequency: 12, transaction_amount: 239.90 },
 } as const
-const versaoCondicoesAssinatura = '2026-09-27'
+// A primeira é a vigente; as seguintes continuam aceitas por algum tempo para
+// quem abriu a página de planos antes da atualização. O aceite registra a versão
+// que a pessoa de fato viu.
+const versoesCondicoesAceitas = ['2026-09-28', '2026-09-27']
 
 async function contaTesteAtiva(idUsuario: string) {
   const resposta = await banco(`contas_teste?id_usuario=eq.${encodeURIComponent(idUsuario)}&ativa=eq.true&select=id_usuario`)
@@ -24,7 +27,7 @@ Deno.serve(async (req) => {
       aceite_confirmado?: boolean
     }
     if (!plano || !planos[plano]) return json({ erro: 'plano_invalido' }, 400, req)
-    if (aceite_confirmado !== true || aceite_termos_versao !== versaoCondicoesAssinatura) {
+    if (aceite_confirmado !== true || !aceite_termos_versao || !versoesCondicoesAceitas.includes(aceite_termos_versao)) {
       return json({ erro: 'Atualize a página para revisar e aceitar as condições atuais da assinatura.' }, 400, req)
     }
     if (Deno.env.get('PAGAMENTOS_HABILITADOS') !== 'true' || Deno.env.get('MERCADO_PAGO_INTEGRACAO_VALIDADA') !== 'true') {
@@ -44,7 +47,7 @@ Deno.serve(async (req) => {
       method: 'POST',
       body: JSON.stringify({
         id_usuario: usuario.id,
-        versao: versaoCondicoesAssinatura,
+        versao: aceite_termos_versao,
         plano,
         valor_centavos: Math.round(planos[plano].transaction_amount * 100),
         periodicidade_meses: planos[plano].frequency,
