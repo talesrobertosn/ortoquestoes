@@ -2431,3 +2431,5 @@ a.rs-marco:hover { color: var(--texto); border-color: var(--traco-forte); }
   .nav-link { padding: 0 .55rem; }
 }
 @media (max-width: 27rem) { .nav-link--oculta-estreito { display: none; } }
+.rk-referencia--inicio { flex-wrap: nowrap; align-items: flex-start; gap: .45rem; padding: .7rem .9rem; border-radius: 12px; background: var(--superficie-2); }
+.rk-referencia--inicio svg { margin-top: .12rem; color: var(--verdete); }

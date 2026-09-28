@@ -134,6 +134,8 @@ export function Ranking() {
   const [linhas, definirLinhas] = useState<LinhaRanking[] | null>(null)
   const [minhaPosicao, definirMinhaPosicao] = useState<MinhaPosicao>(null)
   const [erro, definirErro] = useState(false)
+  // Falso quando o banco ainda responde pelo ranking antigo, sem movimento.
+  const [comMovimento, definirComMovimento] = useState(false)
 
   const meuTotal = Object.keys(contexto.respondidas).length
   const { perfil: perfilRanking, carregado: perfilCarregado, nomeExibido } = usarPerfilRanking(sessao)
@@ -145,11 +147,12 @@ export function Ranking() {
     let vivo = true
     definirErro(false)
     definirLinhas(null)
+    let movimento = true
     Promise.all([
       cliente.rpc('obter_ranking_com_movimento', { periodo }).then(async resultado => {
         // O deploy estático pode chegar antes da migration, ou a RPC nova pode
         // falhar no banco: o ranking antigo continua de pé, só sem as setas.
-        if (resultado.error) return cliente.rpc('obter_ranking_publico', { periodo })
+        if (resultado.error) { movimento = false; return cliente.rpc('obter_ranking_publico', { periodo }) }
         return resultado
       }),
       cliente.rpc('minha_posicao_ranking', { periodo }),
@@ -161,6 +164,7 @@ export function Ranking() {
         novo: linha.novo ?? false, referencia_em: linha.referencia_em ?? null,
       }))
       definirLinhas(novasLinhas)
+      definirComMovimento(movimento)
       definirMinhaPosicao(minha.data?.[0] ?? null)
     }).catch(() => { if (vivo) definirErro(true) })
     return () => { vivo = false }
@@ -242,7 +246,11 @@ export function Ranking() {
 
       {top && top.length >= 3 && <Podio linhas={top} periodo={periodo} />}
 
-      {top && top.length > 0 && <p className="rk-referencia">
+      {top && top.length > 0 && comMovimento && !top.some(linha => linha.referencia_em || linha.novo) && <p className="rk-referencia rk-referencia--inicio">
+        <Icone nome="relogio" tamanho={15} /> As setas de subida e descida e o foguinho aparecem a partir de amanhã: hoje o ranking registra as posições de referência.
+      </p>}
+
+      {top && top.length > 0 && comMovimento && top.some(linha => linha.referencia_em || linha.novo) && <p className="rk-referencia">
         <span><b className="rk-legenda rk-legenda--subiu"><Icone nome="cima" tamanho={13} /></b> subiu</span>
         <span><b className="rk-legenda rk-legenda--desceu"><Icone nome="baixo" tamanho={13} /></b> desceu</span>
         <span><b className="rk-legenda rk-legenda--fogo"><Icone nome="fogo" tamanho={13} /></b> {FOGO_NO_DIA}+ posições no dia ou {FOGO_NA_SEMANA}+ na semana</span>
