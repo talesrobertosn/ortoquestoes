@@ -7,19 +7,13 @@ import { Icone, type NomeIcone } from '../componentes/Icone'
 import { Painel } from '../componentes/Painel'
 import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { href } from '../util/rotas'
+import { MENSAL, PLANOS, real } from '../dados/planos'
 
-const MENSAL = 39.9
-const PLANOS = [
-  { id: 'mensal', nome: 'Mensal', total: 39.9, meses: 1, destaque: false, chamada: 'Para testar o ritmo sem compromisso longo.' },
-  { id: 'semestral', nome: 'Semestral', total: 179.9, meses: 6, destaque: false, chamada: 'Um ciclo inteiro de preparação para a prova.' },
-  { id: 'anual', nome: 'Anual', total: 239.9, meses: 12, destaque: true, chamada: 'O ano todo de estudo pela metade do preço.' },
-] as const
 const pagamentosHabilitados = import.meta.env.VITE_PAGAMENTOS_HABILITADOS === 'true'
 const limitesHabilitados = import.meta.env.VITE_LIMITES_HABILITADOS === 'true'
 
 interface MetricasConta { respostas_total: number; sequencia: number; plano: string | null; status_assinatura: string | null; fim_periodo: string | null; ultima_cobranca_em: string | null; cancelar_ao_fim: boolean }
 
-const real = (valor: number) => valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
 const MOTIVOS: { icone: NomeIcone; titulo: string; texto: string }[] = [
   { icone: 'alvo', titulo: 'A prova cobra padrão, não sorte', texto: 'Quem resolve muitas questões aprende como a banca pensa: as classificações que voltam, as pegadinhas que se repetem, o jeito de perguntar a conduta.' },

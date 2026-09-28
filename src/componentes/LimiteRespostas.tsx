@@ -6,6 +6,8 @@ import { formatarDuracao } from '../dados/tipos'
 import { chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
 import { Painel } from './Painel'
+import { Icone } from './Icone'
+import { CUSTO_POR_DIA, PLANO_MAIS_EM_CONTA, real } from '../dados/planos'
 
 export function AvisoLimite({ estado }: { estado: EstadoLimite | null }) {
   if (!estado?.permitido || estado.ilimitado || estado.restantes === null || estado.restantes > 3) return null
@@ -67,8 +69,8 @@ export function AvisoBloqueioDiario({ caminho }: { caminho: string }) {
   if (faltam === 0) return null
   return <aside className="aviso-bloqueio-topo" aria-label="Limite diário de respostas">
     <div className="conteudo aviso-bloqueio-topo__interno">
-      <span><strong>Você completou as 20 respostas gratuitas de hoje.</strong> Seu treino reabre à meia-noite de São Paulo.</span>
-      <span className="aviso-bloqueio-topo__acoes"><span>Faltam <time className="numerico" dateTime={liberaEm} aria-live="off">{formatarDuracao(faltam)}</time></span><a href={href('/assinatura')}>Conhecer os planos</a></span>
+      <span><strong>Suas 20 questões grátis de hoje estão feitas.</strong> Siga agora sem limite e ajude o projeto a continuar de pé.</span>
+      <span className="aviso-bloqueio-topo__acoes"><span>Grátis de novo em <time className="numerico" dateTime={liberaEm} aria-live="off">{formatarDuracao(faltam)}</time></span><a href={href('/assinatura')}><Icone nome="estrela" tamanho={14} />Continuar sem limite</a></span>
     </div>
   </aside>
 }
@@ -95,24 +97,48 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
       </Painel>
     )
   }
+  const consumidas = estado?.consumidas ?? 20
   return (
-    <Painel titulo="Seu treino gratuito de hoje chegou a 20 respostas" aberto={aberto} aoFechar={aoFechar}>
-      <div className="empilha">
-        <p>Você já registrou {estado?.consumidas ?? 20} respostas hoje. Mandou bem em manter o ritmo! Amanhã você pode continuar gratuitamente.</p>
-        {estado && estado.sequencia > 0 && <p className="meta">Sua sequência atual é de {estado.sequencia} {estado.sequencia === 1 ? 'dia' : 'dias'}.</p>}
+    <Painel titulo="Meta gratuita de hoje cumprida" aberto={aberto} aoFechar={aoFechar}>
+      <div className="paywall">
+        <div className="paywall__topo">
+          <span className="paywall__anel" aria-hidden="true"><b className="numerico">{consumidas}</b><small>de 20</small></span>
+          <div>
+            <p className="paywall__selo">Plano gratuito · hoje</p>
+            <h3 className="paywall__titulo">Você está no embalo. Não precisa parar agora.</h3>
+            <p className="paywall__sub">Você resolveu {consumidas} questões comentadas hoje.{estado && estado.sequencia > 0 && <> São <b>{estado.sequencia} {estado.sequencia === 1 ? 'dia' : 'dias'} seguidos</b> de estudo.</>}</p>
+          </div>
+        </div>
+
+        <section className="paywall__oferta" aria-label="Assinatura">
+          <p className="paywall__rotulo"><Icone nome="estrela" tamanho={14} /> Com a assinatura</p>
+          <ul className="paywall__beneficios">
+            <li><Icone nome="certo" tamanho={16} /><span><b>Questões sem limite diário.</b> Resolva quantas quiser, no ritmo que a sua prova pede.</span></li>
+            <li><Icone nome="certo" tamanho={16} /><span><b>Simulados e sessões longas sem interrupção.</b> Ideal para a reta final.</span></li>
+            <li><Icone nome="certo" tamanho={16} /><span><b>Você mantém o projeto vivo.</b> Servidor, provas novas e comentários revisados são pagos pelos assinantes.</span></li>
+          </ul>
+          <p className="paywall__preco">
+            <span>A partir de</span>
+            <b className="numerico">{real(CUSTO_POR_DIA)}<small>/dia</small></b>
+            <span className="paywall__preco-nota">Menos que um cafezinho. No plano {PLANO_MAIS_EM_CONTA.nome.toLowerCase()}, {real(PLANO_MAIS_EM_CONTA.total)} cobrados uma vez por ano.</span>
+          </p>
+          <a className="botao botao--principal botao--grande paywall__cta" href={href('/assinatura')}>Continuar sem limite</a>
+          <p className="paywall__garantia"><Icone nome="certo" tamanho={14} /> Garantia de 7 dias em cada cobrança · cancele quando quiser</p>
+        </section>
+
+        <section className="paywall__projeto">
+          <p className="paywall__projeto-titulo">Por que existe um limite?</p>
+          <p>O OrtoQuestões é um projeto independente, mantido por um ortopedista para quem se prepara para a prova. Cada assinatura paga a estrutura que deixa o site no ar e é o que permite que <b>o plano gratuito continue generoso: 20 questões comentadas todos os dias, sem cartão</b>.</p>
+        </section>
+
         {libera && faltam !== null && (
           <div className="liberacao-limite">
-            <span>Novas respostas gratuitas em</span>
+            <span>Prefere esperar? Novas questões grátis em</span>
             <strong className="numerico">{formatarDuracao(faltam)}</strong>
-            <span className="meta">Liberação em {libera.toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' })}, horário de São Paulo.</span>
+            <span className="meta">Liberação às {libera.toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' })}, horário de São Paulo. Comentários, desempenho, revisões e todo o seu histórico continuam abertos.</span>
           </div>
         )}
-        <p>Quer seguir respondendo sem esperar? A assinatura paga é opcional: ela tira o limite diário e ajuda a manter o OrtoQuestões, o acervo e os comentários no ar. Há opções com diferentes periodicidades.</p>
-        <p className="texto-2">Comentários, desempenho, calendário, revisões e todo o seu histórico continuam disponíveis gratuitamente.</p>
-        <div className="linha linha--empilha-celular">
-          <a className="botao botao--principal" href={href('/assinatura')}>Ver planos</a>
-          <button className="botao" type="button" onClick={aoFechar}>Continuar amanhã</button>
-        </div>
+        <button className="botao paywall__depois" type="button" onClick={aoFechar}>Volto amanhã pelo gratuito</button>
       </div>
     </Painel>
   )

@@ -19,6 +19,7 @@ import { planoRevisao } from '../estado/planoRevisao'
 import { SITE } from '../config'
 import { calcularStreak } from '../estado/streak'
 import { LIMITES_HABILITADOS } from '../estado/limiteDiario'
+import { CUSTO_POR_DIA, PLANO_MAIS_EM_CONTA, real } from '../dados/planos'
 
 // A maior parte do acervo ainda não distingue TEOT de TARO (prova genérica
 // "TEOT/TARO"); enquanto isso não é resolvido, as três provas são somadas
@@ -266,13 +267,26 @@ export function Inicio() {
           </nav>
 
           <section className="inicio-planos" aria-labelledby="inicio-planos-titulo">
-            <div>
-              <p className="meta">MAIS PRÁTICA, MAIS CONFIANÇA</p>
-              <h2 id="inicio-planos-titulo">Quanto mais você resolve, mais entende a prova.</h2>
-              <p>Responder com constância ajuda a reconhecer padrões e descobrir o que revisar. {LIMITES_HABILITADOS ? 'Você pode registrar 20 novas respostas gratuitamente por dia; a cota renova na virada do dia em São Paulo.' : 'Hoje o treino gratuito ainda está sem limite. Quando a regra planejada entrar em vigor, serão 20 novas respostas por dia no gratuito, renovadas na virada do dia em São Paulo.'}</p>
-              <p className="inicio-planos__apoio">Quer manter seu ritmo sem teto e ajudar a sustentar o acervo, os comentários e o site? Conheça a assinatura opcional do OrtoQuestões.</p>
+            <div className="inicio-planos__texto">
+              <p className="meta">PROJETO INDEPENDENTE</p>
+              <h2 id="inicio-planos-titulo">Grátis todos os dias. Sem limite para quem apoia.</h2>
+              <p>{LIMITES_HABILITADOS
+                ? 'O plano gratuito continua generoso: 20 questões comentadas por dia, com revisão, desempenho e ranking, sem pedir cartão. A cota renova na virada do dia em São Paulo.'
+                : 'Hoje o treino gratuito ainda está sem limite. Quando a regra planejada entrar em vigor, o gratuito seguirá generoso: 20 questões comentadas por dia, renovadas na virada do dia em São Paulo.'}</p>
+              <p className="inicio-planos__apoio">A assinatura é o que mantém o OrtoQuestões de pé: paga a estrutura do site, as provas novas e a revisão dos comentários. Em troca, você treina sem teto, no ritmo da sua prova.</p>
+              <ul className="inicio-planos__selos">
+                <li><Icone nome="certo" tamanho={14} /> 20 questões grátis por dia</li>
+                <li><Icone nome="certo" tamanho={14} /> Sem limite na assinatura</li>
+                <li><Icone nome="certo" tamanho={14} /> Garantia de 7 dias</li>
+              </ul>
             </div>
-            <a className="botao botao--principal botao--grande" href={href('/assinatura')}>Ver como apoiar o projeto</a>
+            <div className="inicio-planos__oferta">
+              <span className="inicio-planos__a-partir">a partir de</span>
+              <strong className="numerico">{real(CUSTO_POR_DIA)}<small>/dia</small></strong>
+              <span className="inicio-planos__nota">no plano {PLANO_MAIS_EM_CONTA.nome.toLowerCase()}, cobrado uma vez por ano</span>
+              <a className="botao botao--principal botao--grande" href={href('/assinatura')}>Apoiar e estudar sem limite</a>
+              <span className="inicio-planos__nota">Cancele quando quiser</span>
+            </div>
           </section>
 
           <CartaoStreak />
