@@ -7,11 +7,9 @@ import { Icone, type NomeIcone } from './Icone'
 import { AvisoBloqueioDiario } from './LimiteRespostas'
 import { usarAssinante } from '../conta/plano'
 
-// No celular a barra de baixo já leva a Início, Treinar, Revisão e
-// Desempenho — repetir os quatro aqui em cima seria a mesma coisa duas
-// vezes. Por isso só Revisão soma "oculta-celular": os outros dois cabem
-// e valem a pena continuar visíveis. Em celulares estreitos (até 27rem),
-// Desempenho também sai, senão o cabeçalho passa da largura da tela.
+// No celular (até 40rem) a barra de baixo já leva Início, Treinar, Revisão
+// e Desempenho, então estes links somem daqui e o nome da marca volta ao
+// cabeçalho. Entre 40 e 56rem, Revisão e Ranking saem para caber.
 const LINKS: { destino: string; rotulo: string; icone: NomeIcone; ocultaCelular: boolean }[] = [
   { destino: '/treinar', rotulo: 'Treinar', icone: 'livro', ocultaCelular: false },
   { destino: '/revisao', rotulo: 'Revisão', icone: 'calendario', ocultaCelular: true },

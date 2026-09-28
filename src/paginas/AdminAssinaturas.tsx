@@ -2,7 +2,12 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
-import { AdminAvaliacoes } from '../componentes/AdminAvaliacoes'
+import { Icone, type NomeIcone } from '../componentes/Icone'
+import { AdminAvaliacoes } from '../componentes/admin/AdminAvaliacoes'
+import { AdminUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
+import {
+  PLANOS, STATUS_ASSINATURA, STATUS_EVENTO, TIPOS_EVENTO, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
+} from '../componentes/admin/formatos'
 
 interface LinhaAssinatura {
   id_usuario: string
@@ -11,6 +16,13 @@ interface LinhaAssinatura {
   status: string
   proxima_cobranca: string | null
   ultima_atualizacao: string
+  // Da migração 202609290100 em diante.
+  nome?: string | null
+  criada_em?: string | null
+  inicio_periodo?: string | null
+  fim_periodo?: string | null
+  ultima_cobranca_em?: string | null
+  cancelar_ao_fim?: boolean
 }
 interface LinhaEvento {
   id: number
@@ -22,129 +34,264 @@ interface LinhaEvento {
   recebido_em: string
   processado_em: string | null
 }
+interface Resumo {
+  online_agora: number
+  usuarios: number; novos_7d: number
+  ativos_hoje: number; ativos_7d: number; ativos_30d: number
+  respondidas_hoje: number; respondidas_7d: number
+  assinantes_vigentes: number
+}
 
-const data = (valor: string | null) => valor ? new Date(valor).toLocaleString('pt-BR') : '—'
-const corresponde = (termos: Array<string | null>, busca: string) => termos.some((termo) => termo?.toLocaleLowerCase('pt-BR').includes(busca))
-const STATUS_ASSINATURA: Record<string, string> = {
-  ativa: 'Em dia', cancelada: 'Cancelada', reembolsada: 'Reembolsada',
-  falha_pagamento: 'Falha no pagamento', pendente: 'Aguardando pagamento', pausada: 'Pausada',
-}
-const STATUS_EVENTO: Record<string, string> = {
-  recebido: 'Recebido', processado: 'Processado', ignorado: 'Ignorado com segurança', erro: 'Precisa de atenção',
-}
-const TIPOS_EVENTO: Record<string, string> = {
-  payment: 'Pagamento', subscription_authorized_payment: 'Cobrança da assinatura',
-  subscription_preapproval: 'Assinatura', subscription_preapproval_plan: 'Plano',
-}
-const FILTROS_ASSINATURA = [
-  ['todos', 'Todas'], ['ativa', 'Em dia'], ['pendente', 'Aguardando'],
-  ['falha_pagamento', 'Falha no pagamento'], ['cancelada', 'Canceladas'], ['reembolsada', 'Reembolsadas'],
-] as const
+type Aba = 'geral' | 'usuarios' | 'assinaturas' | 'pagamentos' | 'avaliacoes'
+const ABAS: Array<[Aba, string, NomeIcone]> = [
+  ['geral', 'Visão geral', 'grafico'], ['usuarios', 'Usuários', 'usuario'], ['assinaturas', 'Assinaturas', 'estrela'],
+  ['pagamentos', 'Pagamentos', 'relogio'], ['avaliacoes', 'Avaliações', 'lapis'],
+]
+const MIGRACAO = '202609290100_painel_admin.sql'
 
-function motivoEvento(erro: string | null) {
-  if (!erro) return '—'
-  if (erro === 'erro_interno') return 'Erro no processamento. O motivo técnico foi omitido por segurança; consulte os logs da Function.'
-  return erro.replace(/_/g, ' ')
+/** Assinatura que dá acesso agora (em dia, ou cancelada que ainda vale até o fim do período). */
+const vigente = (a: LinhaAssinatura) =>
+  (a.status === 'ativa' || (a.status === 'cancelada' && !!a.cancelar_ao_fim)) && (!a.fim_periodo || new Date(a.fim_periodo) > new Date())
+const inicioDe = (a: LinhaAssinatura) => a.criada_em ?? a.inicio_periodo ?? a.ultima_atualizacao
+
+function abaDaUrl(): Aba {
+  const aba = new URLSearchParams(window.location.hash.split('?')[1] ?? '').get('aba')
+  return ABAS.some(([valor]) => valor === aba) ? aba as Aba : 'geral'
 }
 
 export function AdminAssinaturas() {
   const { sessao } = usarConta()
-  const [linhas, definirLinhas] = useState<LinhaAssinatura[] | null>(null)
+  const [aba, definirAba] = useState<Aba>(abaDaUrl)
+  const [assinaturas, definirAssinaturas] = useState<LinhaAssinatura[] | null>(null)
   const [eventos, definirEventos] = useState<LinhaEvento[] | null>(null)
-  const [erro, definirErro] = useState('')
-  const [aviso, definirAviso] = useState('')
-  const [busca, definirBusca] = useState('')
-  const [status, definirStatus] = useState('todos')
-  const [buscaEvento, definirBuscaEvento] = useState('')
-  const [statusEvento, definirStatusEvento] = useState('todos')
-  const [reprocessando, definirReprocessando] = useState<number | null>(null)
+  const [usuarios, definirUsuarios] = useState<LinhaUsuario[] | null>(null)
+  const [resumo, definirResumo] = useState<Resumo | null>(null)
+  const [erroAcesso, definirErroAcesso] = useState('')
+  const [erroNovo, definirErroNovo] = useState('')
+  const [mensagensPendentes, definirMensagensPendentes] = useState<number | null>(null)
+  const [atualizadoEm, definirAtualizadoEm] = useState<Date | null>(null)
 
   const carregar = useCallback(async () => {
     if (!sessao) return
-    try {
-      const [assinaturas, ultimosEventos] = await Promise.all([
-        chamarRpc<LinhaAssinatura[]>('listar_assinaturas_admin', {}),
-        chamarRpc<LinhaEvento[]>('listar_eventos_pagamento_admin', {}),
-      ])
-      definirLinhas(assinaturas); definirEventos(ultimosEventos); definirErro('')
-    } catch (falha) {
-      definirErro(String(falha).includes('(403)')
-        ? 'Acesso negado. Esta área é exclusiva de administradores.'
-        : 'Não foi possível carregar os dados administrativos. Tente novamente mais tarde.')
-    }
+    // Assinaturas e eventos existem desde antes; resumo e usuários dependem da
+    // migração nova. Uma falha nestes não esconde o resto do painel.
+    const [a, e, r, u] = await Promise.allSettled([
+      chamarRpc<LinhaAssinatura[]>('listar_assinaturas_admin', {}),
+      chamarRpc<LinhaEvento[]>('listar_eventos_pagamento_admin', {}),
+      chamarRpc<Resumo[]>('resumo_admin', {}),
+      chamarRpc<LinhaUsuario[]>('listar_usuarios_admin', {}),
+    ])
+    if (a.status === 'rejected') { definirErroAcesso(erroDoPainel(a.reason, MIGRACAO)); return }
+    definirErroAcesso('')
+    definirAssinaturas(a.value)
+    definirEventos(e.status === 'fulfilled' ? e.value : [])
+    if (r.status === 'fulfilled' && u.status === 'fulfilled') {
+      definirResumo(r.value[0] ?? null); definirUsuarios(u.value); definirErroNovo('')
+    } else definirErroNovo(erroDoPainel(r.status === 'rejected' ? r.reason : (u as PromiseRejectedResult).reason, MIGRACAO))
+    definirAtualizadoEm(new Date())
   }, [sessao])
   useEffect(() => { void carregar() }, [carregar])
+  // No celular as abas rolam de lado: a escolhida precisa ficar à vista.
+  useEffect(() => {
+    document.querySelector('.adm-aba[aria-selected="true"]')?.scrollIntoView({ inline: 'center', block: 'nearest' })
+  }, [aba, assinaturas !== null])
 
-  const filtradas = useMemo(() => (linhas ?? []).filter((linha) =>
-    (status === 'todos' || linha.status === status)
-      && corresponde([linha.usuario, linha.plano, linha.status, STATUS_ASSINATURA[linha.status]], busca.trim().toLocaleLowerCase('pt-BR')),
-  ), [linhas, busca, status])
-  const eventosFiltrados = useMemo(() => (eventos ?? []).filter((evento) =>
-    (statusEvento === 'todos' || evento.status_processamento === statusEvento)
-      && corresponde([evento.id_evento, evento.tipo, TIPOS_EVENTO[evento.tipo ?? ''], evento.id_recurso, evento.erro], buscaEvento.trim().toLocaleLowerCase('pt-BR')),
-  ), [eventos, buscaEvento, statusEvento])
+  function trocarAba(nova: Aba) {
+    definirAba(nova)
+    const base = window.location.hash.split('?')[0] || '#/admin'
+    history.replaceState(null, '', nova === 'geral' ? base : `${base}?aba=${nova}`)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  if (!sessao) return <article className="empilha limite-leitura"><h1>Painel do administrador</h1><p>Entre na sua conta para continuar.</p><a className="botao" href={href('/conta')}>Entrar</a></article>
+
+  const errosPagamento = eventos?.filter(ev => ev.status_processamento === 'erro').length ?? 0
+  const contadores: Partial<Record<Aba, number>> = {
+    usuarios: usuarios?.length, assinaturas: assinaturas?.filter(vigente).length,
+    pagamentos: errosPagamento || undefined, avaliacoes: mensagensPendentes || undefined,
+  }
+
+  return <article className="empilha-2 adm">
+    <header className="adm-heroi">
+      <div>
+        <p className="adm-heroi__sobre"><Icone nome="alvo" tamanho={15} /> Área restrita</p>
+        <h1>Painel do administrador</h1>
+        <p>{atualizadoEm ? `Dados de ${atualizadoEm.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}.` : 'Verificando acesso…'} Só contas em administradores conseguem abrir.</p>
+      </div>
+      <button className="botao adm-heroi__atualizar" type="button" onClick={() => void carregar()}><Icone nome="reiniciar" tamanho={16} /> Atualizar</button>
+    </header>
+
+    {erroAcesso ? <p role="alert" className="adm-alerta">{erroAcesso}</p> : assinaturas === null ? <p role="status">Carregando o painel…</p> : <>
+      <nav className="adm-abas" role="tablist" aria-label="Seções do painel">
+        {ABAS.map(([valor, rotulo, icone]) => <button key={valor} type="button" role="tab" aria-selected={aba === valor} className="adm-aba" onClick={() => trocarAba(valor)}>
+          <Icone nome={icone} tamanho={16} /><span>{rotulo}</span>{contadores[valor] ? <b className={valor === 'pagamentos' || valor === 'avaliacoes' ? 'adm-aba__alerta' : ''}>{contadores[valor]}</b> : null}
+        </button>)}
+      </nav>
+
+      {erroNovo && (aba === 'geral' || aba === 'usuarios') && <p role="alert" className="adm-alerta">{erroNovo} Sem ela, usuários ativos e o ranking privado não aparecem; assinaturas, pagamentos e avaliações continuam funcionando.</p>}
+
+      {aba === 'geral' && <VisaoGeral resumo={resumo} usuarios={usuarios} assinaturas={assinaturas} errosPagamento={errosPagamento} mensagens={mensagensPendentes} irPara={trocarAba} />}
+      {aba === 'usuarios' && usuarios && <AdminUsuarios usuarios={usuarios} />}
+      {aba === 'assinaturas' && <Assinaturas linhas={assinaturas} />}
+      {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} recarregar={carregar} />}
+      {/* Montada sempre (escondida fora da aba) para o contador de mensagens aparecer na barra. */}
+      <div hidden={aba !== 'avaliacoes'}><AdminAvaliacoes aoCarregar={definirMensagensPendentes} /></div>
+    </>}
+  </article>
+}
+
+function VisaoGeral({ resumo, usuarios, assinaturas, errosPagamento, mensagens, irPara }: {
+  resumo: Resumo | null; usuarios: LinhaUsuario[] | null; assinaturas: LinhaAssinatura[]
+  errosPagamento: number; mensagens: number | null; irPara: (aba: Aba) => void
+}) {
+  const vigentes = assinaturas.filter(vigente)
+  const novasAssinaturas = [...assinaturas].sort((a, b) => new Date(inicioDe(b)).getTime() - new Date(inicioDe(a)).getTime()).slice(0, 4)
+  const semana = (usuarios ?? []).filter(u => u.respondidas_7d > 0).sort((a, b) => b.respondidas_7d - a.respondidas_7d).slice(0, 5)
+  const n = (valor: number | undefined) => valor === undefined ? '—' : valor.toLocaleString('pt-BR')
+
+  return <div className="empilha-2">
+    <section className="adm-kpis" aria-label="Números principais">
+      <button type="button" className="adm-kpi adm-kpi--botao adm-kpi--online" onClick={() => irPara('usuarios')}><span><i className="adm-online" aria-hidden="true" /> Online agora</span><strong>{n(resumo?.online_agora)}</strong><small>com a conta aberta nos últimos 3 minutos</small></button>
+      <div className="adm-kpi adm-kpi--destaque"><span>Usuários cadastrados</span><strong>{n(resumo?.usuarios)}</strong><small>{resumo ? `+${resumo.novos_7d} nos últimos 7 dias` : 'rode a migração nova'}</small></div>
+      <div className="adm-kpi"><span>Ativos hoje</span><strong>{n(resumo?.ativos_hoje)}</strong><small>responderam ao menos 1 questão</small></div>
+      <div className="adm-kpi"><span>Ativos na semana</span><strong>{n(resumo?.ativos_7d)}</strong><small>{resumo ? `${n(resumo.ativos_30d)} nos últimos 30 dias` : ''}</small></div>
+      <div className="adm-kpi"><span>Questões respondidas</span><strong>{n(resumo?.respondidas_hoje)}</strong><small>{resumo ? `hoje · ${n(resumo.respondidas_7d)} na semana` : 'hoje'}</small></div>
+      <div className="adm-kpi"><span>Assinantes com acesso</span><strong>{vigentes.length}</strong><small>{assinaturas.length} assinatura(s) no histórico</small></div>
+      <button type="button" className={'adm-kpi adm-kpi--botao' + (errosPagamento ? ' adm-kpi--alerta' : '')} onClick={() => irPara('pagamentos')}><span>Pagamentos com problema</span><strong>{errosPagamento}</strong><small>{errosPagamento ? 'toque para revisar' : 'tudo certo'}</small></button>
+      <button type="button" className={'adm-kpi adm-kpi--botao' + (mensagens ? ' adm-kpi--alerta' : '')} onClick={() => irPara('avaliacoes')}><span>Mensagens sobre comentários</span><strong>{mensagens ?? '—'}</strong><small>"não ajudou" com texto</small></button>
+    </section>
+
+    <div className="adm-duas">
+      <section className="adm-secao empilha">
+        <div className="adm-secao__cabeca"><h2>Mais ativos na semana</h2><button type="button" className="adm-link" onClick={() => irPara('usuarios')}>Ver todos <Icone nome="direita" tamanho={14} /></button></div>
+        {!usuarios ? <p className="adm-vazio">Disponível depois da migração nova.</p> : semana.length === 0 ? <p className="adm-vazio">Ninguém respondeu questões nos últimos 7 dias.</p> : <ol className="adm-mini">
+          {semana.map(u => <li key={u.id_usuario}><span className="adm-mini__nome">{u.nome ?? u.email}</span><span className="adm-mini__valor numerico">{u.respondidas_7d}</span></li>)}
+        </ol>}
+      </section>
+      <section className="adm-secao empilha">
+        <div className="adm-secao__cabeca"><h2>Assinaturas recentes</h2><button type="button" className="adm-link" onClick={() => irPara('assinaturas')}>Ver todas <Icone nome="direita" tamanho={14} /></button></div>
+        {novasAssinaturas.length === 0 ? <p className="adm-vazio">Nenhuma assinatura ainda.</p> : <ol className="adm-mini">
+          {novasAssinaturas.map(a => <li key={`${a.id_usuario}:${a.ultima_atualizacao}`}><span className="adm-mini__nome">{a.nome ?? a.usuario}<small>{PLANOS[a.plano] ?? a.plano} · {STATUS_ASSINATURA[a.status] ?? a.status}</small></span><span className="adm-mini__valor">{haQuanto(inicioDe(a))}</span></li>)}
+        </ol>}
+      </section>
+    </div>
+  </div>
+}
+
+type FiltroAssinatura = 'vigentes' | 'todas' | 'pendente' | 'falha_pagamento' | 'encerradas'
+type Periodo = 'tudo' | '7' | '30' | '90' | '365'
+const FILTROS_ASSINATURA: Array<[FiltroAssinatura, string]> = [
+  ['vigentes', 'Pagantes com acesso'], ['todas', 'Todas'], ['pendente', 'Aguardando pagamento'],
+  ['falha_pagamento', 'Falha no pagamento'], ['encerradas', 'Canceladas e encerradas'],
+]
+const PERIODOS: Array<[Periodo, string]> = [['tudo', 'Desde sempre'], ['7', 'Últimos 7 dias'], ['30', 'Últimos 30 dias'], ['90', 'Últimos 3 meses'], ['365', 'Último ano']]
+
+function Assinaturas({ linhas }: { linhas: LinhaAssinatura[] }) {
+  const [filtro, definirFiltro] = useState<FiltroAssinatura>('vigentes')
+  const [periodo, definirPeriodo] = useState<Periodo>('tudo')
+  const [ordem, definirOrdem] = useState<'recentes' | 'antigas'>('recentes')
+  const [busca, definirBusca] = useState('')
+
+  const passa = useCallback((a: LinhaAssinatura, f: FiltroAssinatura) =>
+    f === 'todas' ? true : f === 'vigentes' ? vigente(a) : f === 'encerradas' ? !vigente(a) && ['cancelada', 'vencida', 'reembolsada', 'pausada'].includes(a.status) : a.status === f, [])
+
+  const noPeriodo = useCallback((a: LinhaAssinatura) =>
+    periodo === 'tudo' || Date.now() - new Date(inicioDe(a)).getTime() <= Number(periodo) * 86_400_000, [periodo])
+
+  const visiveis = useMemo(() => {
+    const termo = normalizar(busca.trim())
+    return linhas.filter(a => passa(a, filtro) && noPeriodo(a) && corresponde([a.nome, a.usuario, PLANOS[a.plano], STATUS_ASSINATURA[a.status]], termo))
+      .sort((x, y) => (new Date(inicioDe(y)).getTime() - new Date(inicioDe(x)).getTime()) * (ordem === 'recentes' ? 1 : -1))
+  }, [linhas, filtro, noPeriodo, busca, ordem, passa])
+
+  return <section className="empilha adm-secao" aria-labelledby="adm-titulo-assinaturas">
+    <div className="adm-secao__cabeca"><div>
+      <h2 id="adm-titulo-assinaturas">Assinaturas</h2>
+      <p>Quem paga, desde quando e até quando vale o acesso.</p>
+    </div></div>
+    <div className="adm-filtros" role="group" aria-label="Filtrar assinaturas">
+      {FILTROS_ASSINATURA.map(([valor, rotulo]) => <button key={valor} type="button" className="adm-chip" aria-pressed={filtro === valor} onClick={() => definirFiltro(valor)}>{rotulo}<span>{linhas.filter(a => passa(a, valor) && noPeriodo(a)).length}</span></button>)}
+    </div>
+    <div className="adm-busca adm-busca--tres">
+      <label className="campo">Buscar nome ou e-mail<input className="entrada" type="search" value={busca} onChange={e => definirBusca(e.target.value)} /></label>
+      <label className="campo">Assinou em<select className="entrada" value={periodo} onChange={e => definirPeriodo(e.target.value as Periodo)}>
+        {PERIODOS.map(([valor, rotulo]) => <option key={valor} value={valor}>{rotulo}</option>)}
+      </select></label>
+      <label className="campo">Ordem<select className="entrada" value={ordem} onChange={e => definirOrdem(e.target.value as 'recentes' | 'antigas')}>
+        <option value="recentes">Mais recentes primeiro</option><option value="antigas">Mais antigas primeiro</option>
+      </select></label>
+    </div>
+    <p className="adm-nota" role="status">Mostrando {visiveis.length} de {linhas.length} assinatura(s).</p>
+    {visiveis.length === 0 ? <p className="adm-vazio">Nenhuma assinatura neste filtro.</p> : <ul className="adm-cartoes">
+      {visiveis.map(a => {
+        const inicio = inicioDe(a)
+        return <li key={`${a.id_usuario}:${a.ultima_atualizacao}`} className={'adm-cartao' + (vigente(a) ? ' adm-cartao--ok' : a.status === 'falha_pagamento' ? ' adm-cartao--ruim' : '')}>
+          <div className="adm-cartao__topo">
+            <div><strong>{a.nome ?? a.usuario}</strong>{a.nome && <span className="adm-usuario__email">{a.usuario}</span>}</div>
+            <span className={`adm-selo adm-estado--${a.status}`}>{STATUS_ASSINATURA[a.status] ?? a.status}</span>
+          </div>
+          <dl className="adm-cartao__dados">
+            <div><dt>Plano</dt><dd>{PLANOS[a.plano] ?? a.plano}</dd></div>
+            <div><dt>Assinante desde</dt><dd>{data(inicio)} <small>({haQuanto(inicio)})</small></dd></div>
+            <div><dt>Última cobrança paga</dt><dd>{a.ultima_cobranca_em !== undefined ? data(a.ultima_cobranca_em) : '—'}</dd></div>
+            <div><dt>{a.cancelar_ao_fim || a.status === 'cancelada' ? 'Acesso até' : 'Próxima cobrança'}</dt><dd>{data(a.proxima_cobranca ?? a.fim_periodo)}</dd></div>
+          </dl>
+          {a.status === 'falha_pagamento' && <small className="adm-ajuda">A cobrança não foi confirmada. Veja a aba Pagamentos e o Mercado Pago.</small>}
+          {a.cancelar_ao_fim && a.status !== 'cancelada' && <small className="adm-ajuda">Pediu cancelamento: o acesso vale até o fim do período pago.</small>}
+        </li>
+      })}
+    </ul>}
+  </section>
+}
+
+function Pagamentos({ eventos, recarregar }: { eventos: LinhaEvento[]; recarregar: () => Promise<void> }) {
+  const [busca, definirBusca] = useState('')
+  const [status, definirStatus] = useState<'erro' | 'todos' | 'processado' | 'ignorado' | 'recebido'>(() => eventos.some(e => e.status_processamento === 'erro') ? 'erro' : 'todos')
+  const [reprocessando, definirReprocessando] = useState<number | null>(null)
+  const [aviso, definirAviso] = useState('')
+
+  const visiveis = useMemo(() => {
+    const termo = normalizar(busca.trim())
+    return eventos.filter(e => (status === 'todos' || e.status_processamento === status)
+      && corresponde([e.id_evento, e.tipo, TIPOS_EVENTO[e.tipo ?? ''], e.id_recurso, e.erro, nomeErro(e.erro)], termo))
+  }, [eventos, busca, status])
 
   async function reprocessar(id: number) {
     if (reprocessando !== null) return
     definirReprocessando(id); definirAviso('')
     try {
       await chamarFuncao('webhook-mercado-pago?acao=reprocessar', { id_evento: id })
-      definirAviso('Reprocessamento solicitado. Atualize a lista para conferir o resultado.')
-      await carregar()
+      definirAviso('Reprocessamento pedido. A lista foi atualizada; se continuar com erro, confira o Mercado Pago.')
+      await recarregar()
     } catch {
-      definirAviso('Não foi possível reprocessar este evento. Nenhum status financeiro foi alterado por esta página.')
+      definirAviso('Não foi possível reprocessar. Nada foi alterado nas assinaturas.')
     } finally { definirReprocessando(null) }
   }
 
-  if (!sessao) return <article className="empilha limite-leitura"><h1>Administração de assinaturas</h1><p>Entre na sua conta para continuar.</p><a className="botao" href={href('/conta')}>Entrar</a></article>
-  return <article className="empilha-2 conta-pagina">
-    <header className="admin-assinaturas__cabeca"><div><p className="meta">ÁREA RESTRITA</p><h1>Administração de assinaturas</h1><p>Uma visão das assinaturas e dos eventos, com acesso autorizado pelo servidor.</p></div><button className="botao botao--fantasma" type="button" onClick={() => void carregar()}>Atualizar dados</button></header>
-    {erro ? <p role="alert">{erro}</p> : linhas === null || eventos === null ? <p role="status">Verificando acesso…</p> : <>
-      <section className="admin-assinaturas__resumo" aria-label="Resumo administrativo">
-        <div><span>Assinaturas registradas</span><strong>{linhas.length}</strong></div>
-        <div><span>Em dia</span><strong>{linhas.filter(linha => linha.status === 'ativa').length}</strong></div>
-        <div><span>Falha no pagamento</span><strong>{linhas.filter(linha => linha.status === 'falha_pagamento').length}</strong></div>
-        <div><span>Eventos que precisam de atenção (últimos 200)</span><strong>{eventos.filter(evento => evento.status_processamento === 'erro').length}</strong></div>
-      </section>
-      <nav className="admin-assinaturas__atalhos" aria-label="Seções da administração"><a href="#titulo-assinaturas-admin" onClick={e => { e.preventDefault(); document.getElementById('titulo-assinaturas-admin')?.scrollIntoView({ behavior: 'smooth' }) }}>Assinaturas</a><a href="#titulo-eventos-admin" onClick={e => { e.preventDefault(); document.getElementById('titulo-eventos-admin')?.scrollIntoView({ behavior: 'smooth' }) }}>Eventos de pagamento</a><a href="#titulo-avaliacoes-admin" onClick={e => { e.preventDefault(); document.getElementById('titulo-avaliacoes-admin')?.scrollIntoView({ behavior: 'smooth' }) }}>Avaliações dos comentários</a></nav>
-      <section className="empilha admin-assinaturas__secao" aria-labelledby="titulo-assinaturas-admin">
-        <div><h2 id="titulo-assinaturas-admin">Assinaturas</h2><p>Encontre rapidamente quem está em dia, aguardando, cancelou ou recebeu reembolso.</p></div>
-        <div className="admin-assinaturas__atalhos" role="group" aria-label="Filtros rápidos de assinatura">
-          {FILTROS_ASSINATURA.map(([valor, rotulo]) => <button key={valor} className="admin-assinaturas__filtro-rapido" type="button" aria-pressed={status === valor} onClick={() => definirStatus(valor)}>{rotulo}<span>{valor === 'todos' ? linhas.length : linhas.filter(linha => linha.status === valor).length}</span></button>)}
+  return <section className="empilha adm-secao" aria-labelledby="adm-titulo-pagamentos">
+    <div className="adm-secao__cabeca"><div>
+      <h2 id="adm-titulo-pagamentos">Pagamentos</h2>
+      <p>Avisos que o Mercado Pago mandou para o site (últimos {eventos.length}). "Ignorado" é normal: são avisos que não mudam nada. Só "Precisa de atenção" pede ação.</p>
+    </div></div>
+    <div className="adm-filtros" role="group" aria-label="Filtrar pagamentos">
+      {(['erro', 'todos', 'processado', 'ignorado', 'recebido'] as const).map(valor => <button key={valor} type="button" className="adm-chip" aria-pressed={status === valor} onClick={() => definirStatus(valor)}>{valor === 'todos' ? 'Todos' : STATUS_EVENTO[valor]}<span>{valor === 'todos' ? eventos.length : eventos.filter(e => e.status_processamento === valor).length}</span></button>)}
+    </div>
+    <label className="campo adm-busca__unica">Buscar por tipo, número ou erro<input className="entrada" type="search" value={busca} onChange={e => definirBusca(e.target.value)} /></label>
+    {aviso && <p role="status" className="adm-nota">{aviso}</p>}
+    {visiveis.length === 0 ? <p className="adm-vazio">{status === 'erro' ? 'Nenhum pagamento com problema.' : 'Nenhum aviso neste filtro.'}</p> : <ul className="adm-cartoes">
+      {visiveis.map(e => <li key={e.id} className={'adm-cartao' + (e.status_processamento === 'erro' ? ' adm-cartao--ruim' : '')}>
+        <div className="adm-cartao__topo">
+          <div><strong>{TIPOS_EVENTO[e.tipo ?? ''] ?? 'Aviso do Mercado Pago'}</strong><span className="adm-usuario__email">{dataHora(e.recebido_em)}</span></div>
+          <span className={`adm-selo adm-estado--${e.status_processamento}`}>{STATUS_EVENTO[e.status_processamento] ?? e.status_processamento}</span>
         </div>
-        <div className="admin-assinaturas__filtros">
-          <label className="campo">Buscar usuário, plano ou status<input className="entrada" type="search" value={busca} onChange={e => definirBusca(e.target.value)} /></label>
-          <label className="campo">Status<select className="entrada" value={status} onChange={e => definirStatus(e.target.value)}>
-            <option value="todos">Todos</option>{[...new Set(linhas.map(l => l.status))].sort().map(valor => <option key={valor} value={valor}>{STATUS_ASSINATURA[valor] ?? valor}</option>)}
-          </select></label>
-        </div>
-        <p role="status">Exibindo {filtradas.length} de {linhas.length} assinatura(s).</p>
-        {filtradas.length === 0 ? <p>Nenhuma assinatura corresponde à busca.</p> : <div className="admin-assinaturas__tabela" role="region" aria-label="Tabela de assinaturas" tabIndex={0}>
-          <table className="tabela"><thead><tr><th scope="col">Usuário</th><th scope="col">Plano</th><th scope="col">Status e orientação</th><th scope="col">Próxima cobrança</th><th scope="col">Atualização</th></tr></thead>
-            <tbody>{filtradas.map((linha) => <tr key={`${linha.id_usuario}:${linha.ultima_atualizacao}`}>
-              <td>{linha.usuario}</td><td className="admin-assinaturas__plano">{linha.plano}</td><td><span className={`admin-assinaturas__estado admin-assinaturas__estado--${linha.status}`}>{STATUS_ASSINATURA[linha.status] ?? linha.status}</span>{linha.status === 'falha_pagamento' && <small className="admin-assinaturas__ajuda">A cobrança não foi confirmada. O motivo específico não está disponível neste painel; confira os eventos e o Mercado Pago.</small>}</td><td>{data(linha.proxima_cobranca)}</td><td>{data(linha.ultima_atualizacao)}</td>
-            </tr>)}</tbody></table>
-        </div>}
-      </section>
-      <section className="empilha admin-assinaturas__secao" aria-labelledby="titulo-eventos-admin">
-        <div><h2 id="titulo-eventos-admin">Eventos de pagamento</h2><p>Últimos {eventos.length} eventos. Os eventos ignorados podem ser esperados; os que mostram erro precisam de revisão. O painel não mostra payloads nem credenciais.</p></div>
-        <div className="admin-assinaturas__filtros">
-          <label className="campo">Buscar evento, recurso ou erro<input className="entrada" type="search" value={buscaEvento} onChange={e => definirBuscaEvento(e.target.value)} /></label>
-          <label className="campo">Processamento<select className="entrada" value={statusEvento} onChange={e => definirStatusEvento(e.target.value)}>
-            <option value="todos">Todos</option>{['recebido', 'processado', 'ignorado', 'erro'].map(valor => <option key={valor} value={valor}>{STATUS_EVENTO[valor]}</option>)}
-          </select></label>
-        </div>
-        <p role="status">Exibindo {eventosFiltrados.length} evento(s); {eventos.filter(e => e.status_processamento === 'erro').length} com erro.</p>
-        {eventosFiltrados.length === 0 ? <p>Nenhum evento corresponde à busca.</p> : <div className="admin-assinaturas__tabela" role="region" aria-label="Tabela de eventos de pagamento" tabIndex={0}>
-          <table className="tabela"><thead><tr><th scope="col">Recebido</th><th scope="col">Tipo</th><th scope="col">Recurso</th><th scope="col">Processamento</th><th scope="col">Erro</th><th scope="col">Ação</th></tr></thead>
-            <tbody>{eventosFiltrados.map(evento => <tr key={evento.id}>
-              <td>{data(evento.recebido_em)}</td><td><strong>{TIPOS_EVENTO[evento.tipo ?? ''] ?? evento.tipo ?? '—'}</strong><small className="admin-assinaturas__ajuda">{evento.tipo}</small></td><td className="numerico">{evento.id_recurso ?? '—'}</td><td><span className={`admin-assinaturas__estado admin-assinaturas__estado--${evento.status_processamento}`}>{STATUS_EVENTO[evento.status_processamento] ?? evento.status_processamento}</span></td><td>{motivoEvento(evento.erro)}</td>
-              <td>{evento.status_processamento === 'erro' && <button className="botao" type="button" disabled={reprocessando !== null} onClick={() => void reprocessar(evento.id)}>Reprocessar</button>}</td>
-            </tr>)}</tbody></table>
-        </div>}
-        {aviso && <p role="status">{aviso}</p>}
-      </section>
-      <AdminAvaliacoes />
-    </>}
-  </article>
+        {e.erro && <p className="adm-cartao__erro"><Icone nome="alerta" tamanho={15} /> {nomeErro(e.erro)}</p>}
+        <dl className="adm-cartao__dados">
+          <div><dt>Número no Mercado Pago</dt><dd className="numerico">{e.id_recurso ?? '—'}</dd></div>
+          <div><dt>Processado em</dt><dd>{dataHora(e.processado_em)}</dd></div>
+        </dl>
+        <details className="adm-tecnico"><summary>Códigos técnicos</summary><p>Evento {e.id_evento} · tipo {e.tipo ?? '—'}{e.erro ? ` · erro ${e.erro}` : ''}</p></details>
+        {e.status_processamento === 'erro' && <button className="botao" type="button" disabled={reprocessando !== null} onClick={() => void reprocessar(e.id)}>{reprocessando === e.id ? 'Reprocessando…' : 'Reprocessar'}</button>}
+      </li>)}
+    </ul>}
+  </section>
 }

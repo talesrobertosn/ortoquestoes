@@ -7,6 +7,7 @@ import { estadoVazio, type Documento } from './modeloSync'
 import { navegar } from '../util/rotas'
 import { gerarId } from '../util/id'
 import { retornoAuth, definirAvisoConta, textoErroLink, validarRetornoUmaVez } from './retornoAuth'
+import { esquecerRegistroAparelho, vigiarAparelho } from './aparelho'
 
 const STATUS_INICIAL: StatusSync = { estado: 'sincronizando', pendentes: 0, conflitos: [], pronto: false, rejeitados: [] }
 interface ContaContexto {
@@ -72,6 +73,9 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
       }
       definirSessao(proxima); if (!aguardandoRetorno) definirCarregando(false)
       if (evento === 'PASSWORD_RECOVERY') definirRecuperacao(true)
+      // Saiu (por vontade própria, sessão expirada ou outro aparelho): o
+      // próximo login aqui precisa se registrar de novo como o aparelho da conta.
+      if (evento === 'SIGNED_OUT') esquecerRegistroAparelho()
       const url = new URL(window.location.href)
       // SIGNED_IN também pode ocorrer ao retomar a aba ou renovar a sessão.
       // Não navegue nesse evento: a tela de login trata a entrada explícita,
@@ -95,6 +99,15 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
     if (!supabase || !sessao?.user.id) return
     sync.current = iniciarSincronizacao(supabase, sessao.user.id, definirStatus)
     return () => { sync.current?.parar(); sync.current = null }
+  }, [sessao?.user.id])
+  // Uma conta, um aparelho por vez: ver conta/aparelho.ts.
+  useEffect(() => {
+    const cliente = supabase
+    if (!cliente || !sessao?.user.id) return
+    return vigiarAparelho(sessao.user.id, (outro) => {
+      definirAvisoConta(`Sua conta foi aberta em outro aparelho${outro ? ` (${outro})` : ''}. Ela fica aberta em um aparelho por vez, então saímos daqui. O que você estudou neste aparelho ficou guardado: é só entrar de novo para continuar (e aí o outro aparelho é que sai).`)
+      void cliente.auth.signOut({ scope: 'local' }).finally(() => navegar('/conta'))
+    })
   }, [sessao?.user.id])
   return <Contexto.Provider value={{ sessao, carregando, recuperacao, encerrarRecuperacao: () => definirRecuperacao(false), status,
     reiniciarProgresso: () => {

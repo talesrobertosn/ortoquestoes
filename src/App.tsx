@@ -48,7 +48,8 @@ const TITULOS: Record<string, string> = {
   '/termos': 'Termos de Uso e Privacidade — OrtoQuestões',
   '/condicoes-assinatura': 'Condições da assinatura — OrtoQuestões',
   '/assinatura': 'Planos — OrtoQuestões',
-  '/admin/assinaturas': 'Administração de assinaturas — OrtoQuestões',
+  '/admin': 'Painel do administrador — OrtoQuestões',
+  '/admin/assinaturas': 'Painel do administrador — OrtoQuestões',
   '/entrar': 'Entrar ou criar conta — OrtoQuestões',
 }
 
@@ -126,7 +127,8 @@ export function App() {
       pagina = <Assinatura />
       break
     case 'admin':
-      pagina = segundo === 'assinaturas' ? <AdminAssinaturas /> : <NaoEncontrada />
+      // /admin/assinaturas era o endereço antigo do painel e continua valendo.
+      pagina = !segundo || segundo === 'assinaturas' ? <AdminAssinaturas /> : <NaoEncontrada />
       break
     case 'entrar':
       pagina = <Conta consulta={rota.consulta} />

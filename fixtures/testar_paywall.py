@@ -18,7 +18,10 @@ ROTEIRO_ROLLBACK = (RAIZ / "docs/ativacao-e-rollback-assinaturas.md").read_text(
 ENV_EXEMPLO = (RAIZ / ".env.example").read_text()
 MIGRACAO_ADMIN = (RAIZ / "supabase/migrations/202609231450_admin_assinaturas.sql").read_text()
 MIGRACAO_ADMIN_EVENTOS = (RAIZ / "supabase/migrations/202609261540_admin_eventos.sql").read_text()
-PAGINA_ADMIN = (RAIZ / "src/paginas/AdminAssinaturas.tsx").read_text()
+# O painel foi dividido em abas: a página e os componentes em componentes/admin.
+PAGINA_ADMIN = (RAIZ / "src/paginas/AdminAssinaturas.tsx").read_text() + "".join(
+    arquivo.read_text() for arquivo in sorted((RAIZ / "src/componentes/admin").glob("*.ts*")))
+PAINEL_ADMIN = (RAIZ / "supabase/migrations/202609290100_painel_admin.sql").read_text()
 PAGINA_ASSINATURA = (RAIZ / "src/paginas/Assinatura.tsx").read_text()
 TERMOS = (RAIZ / "src/paginas/Termos.tsx").read_text()
 CONDICOES_ASSINATURA = (RAIZ / "src/paginas/CondicoesAssinatura.tsx").read_text()
@@ -249,6 +252,16 @@ for trecho in (
     "for select to authenticated using (usuario_id = auth.uid())",
 ):
     assert trecho in AVALIACOES_ADMIN, f"Avaliações sem proteção administrativa: {trecho}"
+# Painel novo: toda função administrativa passa por exigir_administrador, e
+# a tabela de aparelhos só é acessível pelas funções (sem policy nem grant).
+for funcao in ("resumo_admin", "listar_usuarios_admin", "listar_assinaturas_admin", "listar_eventos_pagamento_admin"):
+    corpo = PAINEL_ADMIN.split(f"function public.{funcao}()", 1)[1].split("end $$;", 1)[0]
+    assert "perform public.exigir_administrador();" in corpo, f"{funcao} sem checagem de administrador"
+    assert f"revoke all on function public.{funcao}() from public, anon, authenticated;" in PAINEL_ADMIN
+assert "revoke all on public.sessoes_aparelho from public, anon, authenticated;" in PAINEL_ADMIN
+assert "create policy" not in PAINEL_ADMIN
+for funcao in ("registrar_aparelho(text, text)", "sinal_aparelho(text)"):
+    assert f"grant execute on function public.{funcao} to authenticated;" in PAINEL_ADMIN
 for trecho in ("listar_eventos_pagamento_admin", "status_processamento === 'erro'", "webhook-mercado-pago?acao=reprocessar"):
     assert trecho in PAGINA_ADMIN, f"Reprocessamento administrativo ausente: {trecho}"
 for trecho in ("usuarioDoPedido(req)", "administradores?id_usuario", "status_processamento=eq.erro", "EdgeRuntime.waitUntil(processar", "x-signature"):

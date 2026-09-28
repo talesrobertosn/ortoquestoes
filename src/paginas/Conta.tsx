@@ -2,6 +2,8 @@ import { useEffect, useState, type FormEvent } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, retornoConta, supabase } from '../conta/supabase'
 import { avisoConta, definirAvisoConta } from '../conta/retornoAuth'
+import { descreverAparelho, lembrarEmail, ultimoEmail } from '../conta/aparelho'
+import { usarAdministrador } from '../conta/administrador'
 import { TIPOS_SYNC, deItens, itens } from '../conta/modeloSync'
 import { gravar, ler, lerVisitante } from '../estado/armazenamento'
 import { href, navegar } from '../util/rotas'
@@ -30,7 +32,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [modo, definirModo] = useState<'entrar' | 'criar' | 'recuperar'>(
     modoInicial === 'criar' || modoInicial === 'recuperar' ? modoInicial : 'entrar',
   )
-  const [email, definirEmail] = useState(''), [senha, definirSenha] = useState('')
+  const [email, definirEmail] = useState(ultimoEmail), [senha, definirSenha] = useState('')
   const [confirmacao, definirConfirmacao] = useState(''), [verSenha, definirVerSenha] = useState(false)
   const [novaSenha, definirNovaSenha] = useState(''), [confirmacaoNovaSenha, definirConfirmacaoNovaSenha] = useState('')
   // Aviso deixado pelo retorno de um link de e-mail com problema (expirado,
@@ -38,6 +40,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [ocupado, definirOcupado] = useState(false), [mensagem, definirMensagem] = useState(avisoConta)
   const [novoEmail, definirNovoEmail] = useState('')
   const [importado, definirImportado] = useState(false)
+  const administrador = usarAdministrador(sessao?.user.id)
   const { contexto } = usarContextoLocal('')
   const { indice } = usarIndice()
   const { ritmo, definirRitmo } = usarRitmoRevisao()
@@ -115,6 +118,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       } else if (modo === 'entrar') {
         const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password: senha })
         if (error) throw error
+        lembrarEmail(email.trim())
         definirSenha('')
         navegar('/')
       } else if (modo === 'criar') {
@@ -286,7 +290,9 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       <div className="ct-heroi__acoes">
         <button className="botao botao--vidro" onClick={sincronizar} disabled={status.estado === 'sincronizando'}><Icone nome="reiniciar" tamanho={16} /> Sincronizar</button>
         <button className="botao botao--vidro" disabled={ocupado} onClick={() => void sair()}>Sair da conta</button>
+        {administrador && <a className="botao botao--vidro" href={href('/admin')}><Icone nome="grafico" tamanho={16} /> Painel do admin</a>}
       </div>
+      <p className="ct-heroi__aparelho"><Icone nome="celular" tamanho={14} /> Conectada neste aparelho ({descreverAparelho()}). A conta fica aberta em um aparelho por vez.</p>
       {metricas && <dl className="ct-heroi__numeros">
         <a href={href('/dados')}><dt>Questões respondidas</dt><dd>{metricas.respondidas.toLocaleString('pt-BR')}{emblema && <span className="medalha-inline"><Medalha conquista={emblema} tamanho={22} titulo={`Emblema ${emblema.rotulo}`} /></span>}</dd></a>
         <a href={href('/revisao')}><dt>Revisões programadas</dt><dd>{metricas.pendentes.toLocaleString('pt-BR')}</dd></a>

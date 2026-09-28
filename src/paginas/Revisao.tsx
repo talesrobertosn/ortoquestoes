@@ -85,10 +85,10 @@ export function Revisao() {
         <p className="rv-heroi__texto">{textoHeroi}</p>
         <div className="linha linha--empilha-celular">
           {hojeTotal
-            ? <button className="botao rv-heroi__acao" onClick={() => iniciarIds(idsHoje.slice(0, 10))}>Revisar agora · {Math.min(10, hojeTotal)}</button>
+            ? <button className="botao rv-heroi__acao" onClick={() => iniciarIds(idsHoje.slice(0, 10))}>{hojeTotal > 10 ? 'Começar com 10' : `Revisar ${hojeTotal === 1 ? 'a questão' : `as ${hojeTotal}`}`}</button>
             : <a className="botao rv-heroi__acao" href="#/treinar">Treinar questões novas</a>}
           {!hojeTotal && proximoDia && <button className="botao rv-heroi__secundaria" onClick={() => iniciarIds(proximoDia.ids.slice(0, 10))}>Adiantar {Math.min(10, proximoDia.ids.length)} de {rotuloDia(proximoDia.inicio)}</button>}
-          {hojeTotal > 10 && <button className="botao rv-heroi__secundaria" onClick={() => iniciarIds(idsHoje)}>Tudo de hoje · {hojeTotal}</button>}
+          {hojeTotal > 10 && <button className="botao rv-heroi__secundaria" onClick={() => iniciarIds(idsHoje)}>Fazer as {hojeTotal} de uma vez</button>}
         </div>
       </div>
       <dl className="rv-heroi__numeros">
