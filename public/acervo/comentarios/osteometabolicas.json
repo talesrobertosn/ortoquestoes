@@ -77,15 +77,16 @@
     "conferido": false
   },
   "osteometabolicas-0008": {
-    "conceito": "### A classificação funcional (Steinbrocker, adotada pelo ACR)\nSepara quatro classes pelo que o paciente **ainda consegue fazer** em três domínios:\n- **Autocuidado.**\n- **Atividade profissional.**\n- **Lazer.**\n\n### As classes\n- **I:** faz os três.\n- **II:** autocuidado e trabalho; perde o lazer.\n- ==III:== **só o autocuidado**; perdeu trabalho e lazer.\n- **IV:** não faz nenhum dos três.\n\n### O detalhe\nA leitura é **funcional**, do que sobrou. Não depende da radiografia.\n\n> **Na prova:** paciente limitado a pouca atividade diária, que ainda se cuida = ==classe III==.",
-    "correta": "**Classe III.**\n- Mantém o autocuidado, mas perdeu trabalho e lazer.",
+    "conceito": "**A classificação funcional.** Descrita por Steinbrocker e adotada pela associação americana de reumatologia, ela separa o paciente com artrite reumatoide em quatro classes pelo que ele **ainda consegue fazer** em três domínios: o **autocuidado**, a **atividade profissional** e o **lazer**. A leitura é puramente funcional, do que sobrou, e não depende da radiografia.\n\n**Como as classes se escalonam.** Na **classe I** o paciente faz as três coisas. Na **classe II** mantém o autocuidado e o trabalho, mas perde o lazer. Na **classe III** conserva **só o autocuidado**, já sem trabalho e sem lazer. Na **classe IV** não consegue fazer nenhum dos três.\n\n**Na prova:** paciente limitado a pouca atividade no dia a dia, mas que ainda se cuida sozinho, é **classe III**.",
+    "correta": "**Classe III.** O paciente mantém o autocuidado, mas já perdeu o trabalho e o lazer.",
     "incorretas": {
-      "A": "**Sem limitação.**\n- Classe I faz tudo.",
-      "B": "**Só o lazer.**\n- Na classe II o trabalho está preservado.",
-      "D": "**Incapacidade completa.**\n- Na classe IV perde até o autocuidado."
+      "A": "**Sem limitação.** Na classe I o paciente faz tudo, inclusive trabalho e lazer.",
+      "B": "**Perde só o lazer.** Na classe II o trabalho ainda está preservado.",
+      "D": "**Incapacidade completa.** Na classe IV o paciente perde até o autocuidado."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "osteometabolicas-0009": {
     "conceito": "### O freio do osteoclasto\nO ==estrogênio== segura o osteoclasto por várias vias:\n- Aumenta a **osteoprotegerina**.\n- Reduz o **RANKL** e citocinas como IL-1, IL-6 e TNF.\n- Induz **apoptose** do osteoclasto.\n\n### Na menopausa\n- O freio se solta de uma vez e a remodelação **dispara**.\n- Perde-se primeiro o osso **trabecular** (mais superfície por volume).\n- Por isso as fraturas **vertebrais e do rádio distal** vêm antes das do colo do fêmur.\n- A perda é mais rápida nos primeiros anos após a menopausa.\n\n> **Na prova:** perda abrupta na pós-menopausa = queda do ==estrogênio==.",
@@ -99,15 +100,16 @@
     "conferido": false
   },
   "osteometabolicas-0010": {
-    "conceito": "### Doença de Lyme\nPicada de carrapato (**Ixodes**) transmitindo a **Borrelia burgdorferi**.\n\n### As fases\n- **Precoce localizada:** eritema migratório.\n- **Precoce disseminada:** manifestações neurológicas (paralisia facial, meningite) e cardíacas (bloqueio AV).\n- **Tardia:** artrite.\n\n### A artrite de Lyme\n- **Oligoarticular** e assimétrica, intermitente.\n- Predileção por articulações grandes: o ==joelho== é de longe a mais acometida.\n- **Derrame volumoso** com dor desproporcionalmente pequena.\n\n### Diferencial importante\nNa criança, pode imitar **artrite séptica**; a dor e a febre costumam ser menores. Tratamento com antibiótico (doxiciclina ou amoxicilina).\n\n> **Na prova:** artrite após picada de carrapato = Lyme = ==joelho==.",
-    "correta": "**Joelho.**\n- A articulação típica da artrite de Lyme.",
+    "conceito": "**Doença de Lyme.** A picada do carrapato do gênero **Ixodes** transmite a **Borrelia burgdorferi**. A doença evolui em fases: primeiro o **eritema migratório** no local da picada; semanas depois, a disseminação, com manifestações neurológicas (paralisia facial, meningite) e cardíacas (bloqueio atrioventricular); e, mais tarde, a **artrite**.\n\n**A artrite de Lyme** é oligoarticular, assimétrica e intermitente, com predileção por grandes articulações, e o **joelho** é de longe a mais acometida. Chama atenção o **derrame volumoso com dor desproporcionalmente pequena**. Na criança pode imitar a **artrite séptica**, mas a dor e a febre costumam ser menores. O tratamento é antibiótico, com doxiciclina ou amoxicilina.\n\n**Na prova:** artrite depois de picada de carrapato é Lyme, e Lyme é **joelho**.",
+    "correta": "**Joelho.** É a articulação típica da artrite de Lyme, com derrame grande e pouca dor.",
     "incorretas": {
-      "A": "**Possível, não típica.**",
-      "C": "**Bem atrás do joelho.**",
-      "D": "**Possível, não característica.**"
+      "A": "**Possível, mas não típico.** O ombro pode ser acometido, sem a frequência do joelho.",
+      "C": "**Bem atrás do joelho.** O cotovelo não é a articulação característica da doença.",
+      "D": "**Possível, mas não característico.** O tornozelo aparece bem menos que o joelho."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "osteometabolicas-0011": {
     "conceito": "### O mecanismo\nOs ==anticonvulsivantes== clássicos (fenitoína, fenobarbital, carbamazepina, primidona) **induzem o citocromo P450** hepático, que inativa a vitamina D e seus metabólitos mais rápido do que o organismo repõe.\n\n### O resultado\n- **25-OH-vitamina D baixa.**\n- Cálcio baixo, **PTH alto**.\n- Mineralização deficiente: **raquitismo** na criança, **osteomalácia** no adulto.\n\n### Na prática\n- Uso prolongado de anticonvulsivante pede **dosagem e reposição** de vitamina D.\n- Somam-se o menor tempo ao sol e a menor atividade física dessas crianças.\n\n### Outras drogas que afetam o osso\n- **Corticoide:** osteoporose.\n- **Heparina** de uso prolongado: osteoporose.\n- **Antiácidos com alumínio:** depleção de fosfato e osteomalácia.\n\n> **Na prova:** raquitismo medicamentoso = ==anticonvulsivantes== indutores do P450.",
@@ -121,15 +123,16 @@
     "conferido": false
   },
   "osteometabolicas-0012": {
-    "conceito": "### O que é\nA síndrome de Reiter é a forma clássica da **artrite reativa**: surge semanas depois de infecção **urogenital** (Chlamydia) ou **entérica** (Shigella, Salmonella, Yersinia, Campylobacter), sem o germe na articulação.\n\n### A tríade\n**Conjuntivite, uretrite e artrite** (\"não enxerga, não urina, não anda\").\n\n### A artrite\n- ==Oligoarticular e assimétrica==.\n- Predomínio nos **membros inferiores**.\n- **Entesite** (Aquiles, fáscia plantar) e **dactilite** (dedo em salsicha).\n\n### O paciente\n- ==Homem jovem==.\n- Forte associação com **HLA-B27**.\n- Pode ter lesões cutâneas (ceratodermia blenorrágica) e balanite circinada.\n\n> **Na prova:** Reiter = ==assimétrica, homem jovem, HLA-B27==.",
-    "correta": "**Sinovite assimétrica no homem.**\n- Oligoartrite de membros inferiores em homem jovem.",
+    "conceito": "**Síndrome de Reiter.** É a forma clássica da **artrite reativa**: surge semanas depois de uma infecção **urogenital** (Chlamydia) ou **entérica** (Shigella, Salmonella, Yersinia, Campylobacter), sem o germe dentro da articulação. A tríade é **conjuntivite, uretrite e artrite**, o velho \"não enxerga, não urina, não anda\".\n\n**A artrite e o paciente.** A artrite é **oligoarticular e assimétrica**, com predomínio nos **membros inferiores**, e costuma vir com **entesite** (Aquiles, fáscia plantar) e **dactilite**, o dedo em salsicha. O paciente típico é o **homem jovem**, com forte associação ao **HLA-B27**. Podem aparecer lesões de pele, como a ceratodermia blenorrágica, e a balanite circinada.\n\n**Na prova:** Reiter é artrite **assimétrica no homem jovem**, com HLA-B27.",
+    "correta": "**Sinovite assimétrica no homem.** É a oligoartrite de membros inferiores do homem jovem.",
     "incorretas": {
-      "A": "**Erra os dois.**",
-      "B": "**Simetria é de AR.**\n- A artrite reativa é assimétrica.",
-      "C": "**Sexo errado.**\n- O predomínio é masculino."
+      "A": "**Erra os dois.** A artrite reativa é assimétrica e predomina no homem.",
+      "B": "**Simetria é da artrite reumatoide.** A artrite reativa acomete poucas articulações, de forma assimétrica.",
+      "C": "**Sexo errado.** O predomínio é masculino."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "osteometabolicas-0013": {
     "conceito": "### A fratura típica\nA fratura vertebral osteoporótica costuma ser **estável, por compressão**: coluna posterior íntegra, sem padrão explosivo.\n\n### Tratamento\n- **Conservador na maioria:** analgesia, mobilização precoce, órtese se tolerada.\n- **Tratar a osteoporose** de base, sempre.\n\n### Quando operar\n- **Déficit neurológico** ou instabilidade.\n- ==Dor refratária== ao tratamento conservador bem conduzido: é a indicação da **vertebroplastia ou cifoplastia**, cujo alvo é justamente a dor.\n\n### Pontos de atenção\n- Fratura que **não consolida** (sinal da fenda de vácuo, ou de Kümmell) tende a manter a dor.\n- Fratura acima de T5 ou lítica sem trauma: pensar em **metástase ou mieloma**.\n\n> **Na prova:** cirurgia na fratura vertebral osteoporótica = ==dor refratária== ou déficit.",
@@ -154,15 +157,16 @@
     "conferido": false
   },
   "osteometabolicas-0015": {
-    "conceito": "### Os critérios maiores de Jones e sua frequência\nNa criança com febre reumática aguda, aproximadamente:\n- **Artrite:** a mais comum. Poliartrite **migratória** de grandes articulações, muito responsiva a salicilato.\n- **Cardite:** em torno de metade dos casos. É a que define o **prognóstico**.\n- **Coreia de Sydenham:** menos comum, pode aparecer tardiamente e isolada.\n- ==Eritema marginado== e **nódulos subcutâneos**: os mais raros.\n\n### O paradoxo do eritema\nÉ quase **específico** da doença, mas raramente é o que traz a criança ao consultório.\n\n### Para o ortopedista\nA febre reumática entra no diferencial de artrite em criança: dor desproporcional, migração entre articulações e antecedente de faringite estreptocócica.\n\n> **Na prova:** na febre reumática, a mais comum é a artrite; a ==mais rara é o eritema marginado==.",
-    "correta": "**O eritema.**\n- Específico, mas presente numa pequena minoria.",
+    "conceito": "**Os critérios maiores de Jones.** Na criança com febre reumática aguda, a **artrite** é a manifestação mais comum: uma poliartrite **migratória** de grandes articulações, que responde muito bem ao salicilato. A **cardite** aparece em cerca de metade dos casos e é a que define o **prognóstico**. A **coreia de Sydenham** é menos frequente e pode surgir tarde e isolada. O **eritema marginado** e os **nódulos subcutâneos** são os mais raros.\n\n**O paradoxo do eritema.** Ele é quase específico da doença, mas raramente é o que leva a criança ao consultório. Para o ortopedista, a febre reumática entra no diferencial da artrite na criança quando há dor desproporcional, migração entre articulações e faringite estreptocócica recente.\n\n**Na prova:** na febre reumática, a manifestação mais comum é a artrite, e a **mais rara é o eritema marginado**.",
+    "correta": "**O eritema.** É muito específico, mas aparece numa pequena minoria dos pacientes.",
     "incorretas": {
-      "A": "**A mais frequente.**\n- Poliartrite migratória de grandes articulações.",
-      "B": "**Incomum, mas mais que o eritema.**",
-      "C": "**Metade dos casos.**\n- É a que determina o prognóstico."
+      "A": "**É a mais frequente.** A poliartrite migratória de grandes articulações é a manifestação mais comum.",
+      "B": "**Incomum, mas não a mais rara.** A coreia é menos frequente que artrite e cardite, e ainda assim mais comum que o eritema.",
+      "C": "**Cerca de metade dos casos.** A cardite é frequente e é a que determina o prognóstico."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "osteometabolicas-0016": {
     "conceito": "### Por que o disco resiste\n- O disco do adulto é **avascular**.\n- O bacilo **não produz as enzimas proteolíticas** que o germe piogênico usa para destruí-lo.\n\n### O caminho da doença\n- Chega pelo sangue à **porção anterior do corpo vertebral**.\n- Caminha **por baixo do ligamento longitudinal anterior** até a vértebra vizinha.\n- **Contorna o disco** em vez de atravessá-lo.\n\n### Na imagem\nDuas vértebras destruídas com ==altura discal ainda razoável==: o inverso da espondilodiscite piogênica, em que o disco some primeiro.\n\n### O que não é poupado\n- **Canal:** abscesso, granulação e retropulsão óssea podem invadi-lo (paraplegia de Pott).\n- **Ligamentos:** são o caminho da disseminação.\n\n> **Na prova:** a tuberculose vertebral ==poupa o disco== no início.",
@@ -311,18 +315,19 @@
     "conferido": false
   },
   "osteometabolicas-0029": {
-    "conceito": "### Duas doenças sob o mesmo nome\nA AIJ poliarticular (5 ou mais articulações nos primeiros 6 meses) se divide pelo **fator reumatoide**.\n\n### FR positivo\n- **Meninas adolescentes.**\n- Comporta-se como a **artrite reumatoide do adulto**.\n- ==Simétrica, pequenas articulações== de mãos e pés.\n- Nódulos reumatoides, **erosões precoces**, pior prognóstico articular.\n\n### FR negativo\n- Mais heterogênea, começa mais cedo.\n- Pode envolver grandes articulações.\n\n### Os outros subtipos\n- **Oligoarticular:** até 4 articulações, grandes (joelho), meninas pequenas, **FAN positivo** e risco de **uveíte** silenciosa (rastreio oftalmológico).\n- **Relacionada à entesite:** meninos maiores, HLA-B27, membros inferiores.\n- **Sistêmica:** febre, rash, serosite.\n\n> **Na prova:** AIJ poliarticular FR+ = ==simétrica de pequenas articulações==, como a AR do adulto.",
-    "correta": "**Simétrico de pequenas articulações.**\n- O padrão da AR do adulto.",
+    "conceito": "**Duas doenças sob o mesmo nome.** A forma poliarticular da artrite idiopática juvenil, com **cinco ou mais articulações** nos primeiros seis meses, se divide pelo **fator reumatoide**. Quando o FR é **positivo**, a doença é das **meninas adolescentes** e se comporta como a **artrite reumatoide do adulto**: acometimento **simétrico de pequenas articulações** das mãos e dos pés, nódulos reumatoides, **erosões precoces** e pior prognóstico articular. A forma com FR negativo é mais heterogênea, começa mais cedo e pode envolver grandes articulações.\n\n**Os outros subtipos** ajudam a eliminar alternativas. A **oligoarticular** tem até quatro articulações, grandes, sobretudo o joelho, em meninas pequenas, com **FAN positivo** e risco de **uveíte silenciosa**. A **relacionada à entesite** é de meninos maiores, com HLA-B27 e membros inferiores. A **sistêmica** traz febre, rash e serosite.\n\n**Na prova:** AIJ poliarticular com FR positivo é **simétrica e de pequenas articulações**, como a AR do adulto.",
+    "correta": "**Simétrico de pequenas articulações.** É o mesmo padrão da artrite reumatoide do adulto.",
     "incorretas": {
-      "A": "**Grandes não.**\n- Não é o padrão da forma FR positiva.",
-      "C": "**Outras formas.**\n- Assimetria em grandes articulações é oligoarticular ou relacionada à entesite.",
-      "D": "**Simetria errada.**\n- Acerta as pequenas, mas é simétrica."
+      "A": "**Grandes articulações não.** Esse não é o padrão da forma com FR positivo.",
+      "C": "**É de outras formas.** Assimetria em grandes articulações lembra a oligoarticular ou a relacionada à entesite.",
+      "D": "**Simetria errada.** Acerta as pequenas articulações, mas o acometimento é simétrico."
     },
     "referencias": [
       "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 11"
     ],
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "osteometabolicas-0030": {
     "conceito": "### Tuberculose no cotovelo\nO cotovelo é a articulação do **membro superior** mais acometida pela tuberculose. O ponto de partida é a porção proximal da ulna, o ==olécrano==.\n\n### O quadro\n- **Monoartrite arrastada**, com aumento de volume.\n- **Atrofia** do tríceps e do bíceps.\n- Perda progressiva da extensão: o cotovelo inflamado se acomoda **em flexão**.\n- Pode fistulizar.\n\n### Na imagem\nOsteopenia periarticular, erosões marginais e espaço articular preservado por mais tempo que na piogênica (tríade de Phemister).\n\n### Diagnóstico e tratamento\n- **Biópsia sinovial** ou óssea com cultura, histologia e PCR.\n- Esquema antituberculoso prolongado; cirurgia para desbridamento ou sequelas.\n\n> **Na prova:** tuberculose no cotovelo começa no ==olécrano== (ulna proximal).",
@@ -367,18 +372,19 @@
     "conferido": false
   },
   "osteometabolicas-0033": {
-    "conceito": "### O problema da prótese de cotovelo\nO cotovelo tem **braço de alavanca longo**: pequenas cargas na mão viram forças grandes no implante. A sobrevida é limitada, e o melhor resultado é o do paciente que **exige pouco** da prótese.\n\n### O paciente ideal: artrite reumatoide\n- **Baixa demanda** funcional (doença poliarticular).\n- **Dor** domina o quadro: o ganho é grande.\n- Anatomia relativamente preservada, sem a fibrose e a distorção de um cotovelo pós-traumático.\n\nPor isso a ==artrite reumatoide== tem os melhores resultados e a melhor sobrevida do implante.\n\n### Quem vai pior\n- **Pós-traumático:** osso deformado, cicatrizes, demanda maior, mais soltura.\n- **Jovem:** mais anos e mais carga.\n- **Neuropático (Charcot):** contraindicação; o paciente sobrecarrega sem perceber.\n- Idoso com fratura cominutiva do úmero distal e osteopenia é outra boa indicação.\n\n### Restrição após a cirurgia\nClassicamente, evitar carregar mais que poucos quilos com o braço operado, pelo resto da vida.\n\n> **Na prova:** melhor resultado de ATC semiconstrita = ==artrite reumatoide==.",
-    "correta": "**Artrite reumatoide.**\n- Baixa demanda e grande ganho em dor.",
+    "conceito": "**O problema da prótese de cotovelo.** O cotovelo trabalha com um **braço de alavanca longo**: pequenas cargas na mão viram forças grandes no implante. Por isso a sobrevida é limitada, e o melhor resultado é o do paciente que **exige pouco** da prótese. Classicamente, recomenda-se não carregar mais que poucos quilos com o braço operado pelo resto da vida.\n\n**O paciente ideal é o da artrite reumatoide.** A doença é poliarticular, a demanda funcional é **baixa**, a **dor** domina o quadro e a anatomia costuma estar relativamente preservada, sem a fibrose e a deformidade do cotovelo pós-traumático. O idoso com fratura cominutiva do úmero distal e osteopenia é outra boa indicação. Vão pior o **pós-traumático**, com osso deformado, cicatrizes e demanda maior; o **jovem**, com mais anos e mais carga pela frente; e o **neuropático**, em que a articulação de Charcot é contraindicação, porque o paciente sobrecarrega o implante sem perceber.\n\n**Na prova:** melhor resultado da artroplastia total semiconstrita do cotovelo é na **artrite reumatoide**.",
+    "correta": "**Artrite reumatoide.** Baixa demanda funcional e grande ganho em dor dão os melhores resultados e a maior sobrevida do implante.",
     "incorretas": {
-      "B": "**Contraindicação.**\n- A articulação neuropática sobrecarrega o implante.",
-      "C": "**Mais complicações.**\n- Osso deformado, cicatriz e demanda maior.",
-      "D": "**Jovem vai pior.**\n- Mais anos de uso e mais exigência."
+      "B": "**Contraindicação.** A articulação neuropática sobrecarrega o implante sem que o paciente perceba.",
+      "C": "**Mais complicações.** Osso deformado, cicatrizes e demanda maior levam a mais soltura.",
+      "D": "**O jovem vai pior.** Mais anos de uso e mais exigência sobre a prótese."
     },
     "referencias": [
       "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 12"
     ],
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "osteometabolicas-0034": {
     "conceito": "### A divisão\n- **Genético ou biológico:** o que a pessoa não escolhe. Sexo, idade, raça, herança, doença de base, momento da menopausa.\n- **Comportamental:** o que depende de conduta. Tabagismo, álcool, sedentarismo, alimentação.\n\n### A estratégia\nVarrer cada alternativa procurando **qualquer hábito**. Encontrou hábito, está fora.\n\n### Aplicando\n==Menopausa precoce, raça branca e osteogênese imperfeita==: nenhum é escolha.\n\n### Fatores de risco que o FRAX considera\nIdade, sexo, IMC, fratura prévia, fratura de quadril nos pais, tabagismo, corticoide, artrite reumatoide, osteoporose secundária, álcool (3 ou mais doses/dia) e, opcionalmente, a densidade do colo femoral.\n\n> **Na prova:** \"só genéticos/biológicos\" = alternativa ==sem nenhum hábito==.",
@@ -517,15 +523,16 @@
     "conferido": false
   },
   "osteometabolicas-0045": {
-    "conceito": "### O diagnóstico é clínico e de exclusão\n- Artrite persistente por **pelo menos 6 semanas**.\n- Início **antes dos 16 anos**.\n- Afastadas infecção, neoplasia (leucemia!) e outras doenças reumáticas.\n\n### Para que servem FR e FAN\n==Não diagnosticam==:\n- **FR:** separa subtipos da forma poliarticular.\n- **FAN:** identifica maior risco de **uveíte anterior crônica**, que é silenciosa e exige rastreio oftalmológico regular.\n\n### Os subtipos\n- **Oligoarticular:** o **mais comum**; meninas pequenas; **joelho**.\n- **Poliarticular FR negativo** e **FR positivo** (a minoria, meninas adolescentes, como a AR do adulto).\n- **Sistêmica**, relacionada à **entesite**, **psoriásica**.\n\n### Alerta\nQuadril acometido logo no início fala **contra** a forma oligoarticular: pensar em outra causa.\n\n> **Na prova:** AIJ = ==6 semanas, diagnóstico clínico==; FR e FAN classificam, não diagnosticam.",
-    "correta": "**FR e FAN não servem para o diagnóstico.**\n- Classificam e estratificam risco.",
+    "conceito": "**O diagnóstico é clínico e de exclusão.** A artrite idiopática juvenil exige artrite persistente por **pelo menos seis semanas**, com início **antes dos 16 anos**, depois de afastadas infecção, neoplasia (a leucemia sempre entra no diferencial) e outras doenças reumáticas. **Fator reumatoide e FAN não fazem o diagnóstico**: o FR separa subtipos da forma poliarticular, e o FAN identifica maior risco de **uveíte anterior crônica**, que é silenciosa e exige rastreio oftalmológico regular.\n\n**Os subtipos.** A forma **oligoarticular é a mais comum**, em meninas pequenas, e acomete sobretudo o **joelho**. A poliarticular se divide em FR negativo e FR positivo, esta a minoria, em meninas adolescentes. Há ainda as formas sistêmica, relacionada à entesite e psoriásica. Um alerta: **quadril acometido logo no início fala contra a oligoarticular** e deve levar a pensar em outra causa.\n\n**Na prova:** AIJ é **seis semanas e diagnóstico clínico**; FR e FAN classificam, não diagnosticam.",
+    "correta": "**FR e FAN não servem para o diagnóstico.** Eles classificam o subtipo e estratificam o risco de uveíte.",
     "incorretas": {
-      "A": "**Seis semanas.**\n- Não três.",
-      "B": "**Oligoarticular é a mais comum.**\n- A poliarticular FR positiva é minoria.",
-      "C": "**Joelho.**\n- Quadril no início fala contra a forma oligoarticular."
+      "A": "**São seis semanas.** Três semanas não bastam para o critério de duração.",
+      "B": "**A oligoarticular é a mais comum.** A poliarticular com FR positivo é a minoria.",
+      "C": "**É o joelho.** Quadril no início, aliás, fala contra a forma oligoarticular."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "osteometabolicas-0046": {
     "conceito": "### Osteoporose transitória do quadril\n- **Edema de medula óssea** autolimitado da cabeça e do colo.\n- Grupos clássicos: ==gestantes no terceiro trimestre== e **homens de meia-idade** (em número absoluto, muitas séries trazem mais homens).\n\n### Quadro\n- Dor de instalação relativamente rápida, sem trauma, claudicação, limitação de rotação.\n- Radiografia: normal no início; osteopenia após semanas.\n- RM: edema difuso e homogêneo, sem linha de demarcação nem lesão subcondral focal.\n\n### Diferencial com osteonecrose\n| Achado | Osteoporose transitória | Osteonecrose |\n|---|---|---|\n| edema | difuso, até o colo | focal, com linha serpiginosa |\n| evolução | resolução em 6 a 12 meses | tende a progredir |\n| lesão subcondral | ausente | presente nas fases avançadas |\n\n### Conduta\n- Proteção de carga e analgesia; evitar **fratura do colo**.\n- Pode recorrer em outra articulação: **osteoporose regional migratória**.\n\n> **Na prova:** o gabarito aponta ==gestantes no terceiro trimestre== (veja o alerta sobre os homens de meia-idade).",
@@ -606,15 +613,16 @@
     "conferido": false
   },
   "osteometabolicas-0053": {
-    "conceito": "### O perfil da forma oligoarticular\nA forma **mais comum** da AIJ:\n- ==Meninas pequenas, entre 2 e 4 anos==.\n- **Até 4 articulações** nos primeiros 6 meses, quase sempre o **joelho**.\n- **FAN positivo** com frequência.\n\n### O que mais importa: a uveíte\n- **Uveíte anterior crônica**, com risco alto nesse grupo.\n- **Silenciosa:** não dói, não avermelha o olho.\n- Pode levar a perda visual antes de qualquer queixa.\n- Exige **lâmpada de fenda** em intervalos regulares.\n\n### Para o ortopedista\n- Joelho com derrame crônico pode causar **discrepância de membros** (hipercrescimento do lado inflamado) e contratura em flexão.\n- Infiltração intra-articular de corticoide é opção comum.\n\n> **Na prova:** AIJ oligoarticular = ==menina de 2 a 4 anos==, joelho, FAN+, uveíte.",
-    "correta": "**Meninas entre 2 e 4 anos.**",
+    "conceito": "**O perfil da forma oligoarticular.** É a forma **mais comum** da artrite idiopática juvenil e tem um retrato bem definido: **meninas pequenas, entre 2 e 4 anos**, com **até quatro articulações** nos primeiros seis meses, quase sempre o **joelho**, e **FAN positivo** com frequência.\n\n**O que mais importa é o olho.** Esse grupo tem risco alto de **uveíte anterior crônica**, que não dói nem avermelha o olho e pode levar a perda visual antes de qualquer queixa; por isso exige exame com **lâmpada de fenda** em intervalos regulares. Para o ortopedista, o joelho com derrame crônico pode causar **discrepância de membros**, por hipercrescimento do lado inflamado, e contratura em flexão. A infiltração intra-articular de corticoide é uma opção comum.\n\n**Na prova:** AIJ oligoarticular é **menina de 2 a 4 anos**, joelho, FAN positivo e uveíte.",
+    "correta": "**Meninas entre 2 e 4 anos.** É o perfil típico da forma oligoarticular.",
     "incorretas": {
-      "A": "**Idade errada.**\n- A faixa é um pouco mais tardia.",
-      "C": "**Sexo e idade errados.**",
-      "D": "**Sexo errado.**\n- Predominam meninas."
+      "A": "**Idade errada.** A faixa típica é um pouco mais tardia, entre 2 e 4 anos.",
+      "C": "**Sexo e idade errados.** Predominam meninas, e a faixa é de 2 a 4 anos.",
+      "D": "**Sexo errado.** A idade está certa, mas predominam as meninas."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "osteometabolicas-0054": {
     "conceito": "### O defeito\nOsteopetrose é a **falha do osteoclasto** em reabsorver. O osso se acumula, fica **denso** e, paradoxalmente, **quebradiço**.\n\n### Maligna (infantil)\n- ==Autossômica recessiva==.\n- Primeiro ano de vida.\n- **Pancitopenia** por obliteração da medula, hepatoesplenomegalia (hematopoese extramedular).\n- **Cegueira e surdez** por compressão de nervos cranianos em forames estreitados.\n- Fatal sem **transplante de medula óssea** (o osteoclasto vem da linhagem hematopoiética).\n\n### Intermediária\n- Autossômica **recessiva**, gravidade intermediária.\n\n### Benigna (tarda, Albers-Schönberg)\n- Autossômica **dominante**.\n- Adulto, descoberta por **fratura** ou achado radiográfico.\n- **Vértebra em sanduíche** (rugger jersey), osso dentro do osso.\n- Fraturas transversas, consolidação lenta; osso duríssimo que dificulta perfurar e fixar.\n\n> **Na prova:** osteopetrose ==maligna é recessiva==; benigna do adulto é dominante.",
@@ -749,15 +757,16 @@
     "conferido": false
   },
   "osteometabolicas-0066": {
-    "conceito": "### Pista: a interfalângica distal\nA acro-osteólise (reabsorção do **tufo** da falange distal) pede doença que ataque a IFD.\n\n### Artrite psoriásica\nÉ a artropatia inflamatória que caracteristicamente acomete a **IFD**:\n- **Erosão do tufo** (acro-osteólise).\n- **Alteração ungueal** (pitting, onicólise).\n- **Dactilite** (dedo em salsicha).\n- Formas mutilantes: **lápis na taça**, dedo em telescópio.\n- Neoformação óssea periosteal junto às erosões.\n\nResposta: ==psoriática==.\n\n### Outras causas de acro-osteólise\n- **Esclerose sistêmica.**\n- **Hiperparatireoidismo.**\n- Exposição ao **cloreto de vinila**, queimaduras e congelamento.\n\n> **Na prova:** acro-osteólise + IFD + unha = ==artrite psoriásica==.",
-    "correta": "**Psoriática.**\n- Artropatia inflamatória da IFD, com erosão do tufo.",
+    "conceito": "**A pista é a interfalângica distal.** A acro-osteólise é a reabsorção do **tufo** da falange distal, e por isso pede uma doença que ataque a **IFD**. Entre as artropatias inflamatórias, a que faz isso caracteristicamente é a **artrite psoriásica**: erosão do tufo, **alteração ungueal** (pontilhado, onicólise), **dactilite** e, nas formas mutilantes, o **lápis na taça** e o dedo em telescópio, muitas vezes com neoformação óssea junto às erosões.\n\n**Outras causas de acro-osteólise** fora das artrites são a esclerose sistêmica, o hiperparatireoidismo, a exposição ao cloreto de vinila e as lesões térmicas, como queimadura e congelamento.\n\n**Na prova:** acro-osteólise com IFD e unha alterada é **artrite psoriásica**.",
+    "correta": "**Psoriática.** É a artropatia inflamatória da IFD, com erosão do tufo da falange distal.",
     "incorretas": {
-      "A": "**Poupa a IFD.**\n- A artrite reumatoide prefere MCF e IFP.",
-      "C": "**Sem erosão.**\n- O lúpus faz artropatia de Jaccoud, redutível.",
-      "D": "**Outro padrão.**\n- Gota: erosões em saca-bocado com borda saliente e tofos."
+      "A": "**Poupa a IFD.** A artrite reumatoide prefere as metacarpofalângicas e as interfalângicas proximais.",
+      "C": "**Não é erosiva.** O lúpus faz a artropatia de Jaccoud, com deformidades redutíveis.",
+      "D": "**Outro padrão.** A gota dá erosões em saca-bocado com borda saliente e tofos."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "osteometabolicas-0067": {
     "conceito": "### Duas informações numa pergunta\n- **O osso:** a tuberculose do cotovelo começa na ==ulna proximal==, no olécrano.\n- **O movimento:** a articulação inflamada se acomoda na posição de **maior volume capsular**, no cotovelo em torno de 70 a 80 graus de flexão.\n\n### Por que perde a extensão\n- O paciente passa o dia com o cotovelo **dobrado**.\n- A cápsula anterior e posterior retraem na posição de flexão.\n- A ==extensão== é a primeira a ser perdida e a que mais custa a recuperar.\n\n### O quadro\nMonoartrite arrastada, derrame, atrofia do braço e antebraço, às vezes fístula.\n\n> **Na prova:** tuberculose do cotovelo = ==ulna e perda de extensão==.",
@@ -771,15 +780,16 @@
     "conferido": false
   },
   "osteometabolicas-0068": {
-    "conceito": "### A gota no homem acima de 40\nA ==gota== é a artrite inflamatória mais comum do homem depois dos 40 anos.\n- O **estrogênio é uricosúrico**: a mulher só se aproxima do homem após a menopausa.\n\n### O componente familiar\n- A uricemia é traço **poligênico**; transportadores renais de urato (como **SLC2A9** e **ABCG2**) explicam boa parte da variação.\n- As séries descrevem história familiar positiva em torno de ==40%== dos pacientes.\n\n### Pontos-chave\n- **Hiperuricemia isolada não é gota**: a doença é o depósito de cristais.\n- Cristais em **agulha**, com birrefringência **negativa** forte.\n- Crise típica: **podagra** (1ª MTF), noturna, após álcool ou excesso alimentar.\n- Radiografia tardia: erosões em saca-bocado com **borda saliente**.\n\n> **Na prova:** homem acima de 40 = ==gota==, história familiar em cerca de 40%.",
-    "correta": "**Artrite gotosa, 40%.**",
+    "conceito": "**A gota no homem acima dos 40.** A **gota** é a artrite inflamatória mais comum do homem depois dos 40 anos. O estrogênio é **uricosúrico**, e por isso a mulher só se aproxima do homem depois da menopausa. A uricemia é um traço poligênico, em que transportadores renais de urato, como o SLC2A9 e o ABCG2, explicam boa parte da variação, e as séries descrevem **história familiar positiva em cerca de 40%** dos pacientes.\n\n**Pontos que a prova cobra.** Hiperuricemia isolada **não é gota**: a doença é o depósito de cristais, que aparecem em **agulha**, com birrefringência **negativa** forte. A crise típica é a **podagra**, na primeira metatarsofalângica, noturna, depois de álcool ou excesso alimentar. Na radiografia tardia, erosões em saca-bocado com **borda saliente**.\n\n**Na prova:** homem acima dos 40 é **gota**, com história familiar em cerca de 40%.",
+    "correta": "**Artrite gotosa, 40%.** A gota é a artrite inflamatória mais comum nesse grupo, com agregação familiar em torno de 40%.",
     "incorretas": {
-      "B": "**Subestima.**\n- A agregação familiar descrita é maior.",
-      "C": "**Doença errada.**\n- A espondilite começa antes dos 40 e é bem menos prevalente.",
-      "D": "**Doença e número errados.**"
+      "B": "**Subestima.** A doença está certa, mas a agregação familiar descrita é maior.",
+      "C": "**Doença errada.** A espondilite anquilosante começa antes dos 40 e é bem menos prevalente.",
+      "D": "**Doença e número errados.** Não é espondilite, e o percentual familiar é de cerca de 40%."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "osteometabolicas-0069": {
     "conceito": "### Raquitismo por falha de ativação\nNa osteodistrofia renal, o problema não é falta de vitamina D na dieta, e sim falha na **ativação**:\n- O rim doente **não faz a 1-alfa-hidroxilação**: calcitriol baixo.\n- O rim **não excreta fosfato**: ==fosfato alto==.\n- Fosfato alto e calcitriol baixo derrubam o cálcio.\n- A paratireoide responde: ==PTH alto==.\n\n### Como separar os raquitismos\n| | Fosfato | PTH |\n|---|---|---|\n| Nutricional (falta de vitamina D) | baixo | alto |\n| Hipofosfatêmico (ligado ao X) | **baixo** | normal |\n| Renal | **alto** | **alto** |\n\n### Na criança\nAlém do raquitismo: deformidades angulares, **epifisiólise** (inclusive do fêmur proximal) e baixa estatura.\n\n> **Na prova:** raquitismo renal = ==fosfato alto e PTH alto==; os outros têm fosfato baixo.",
@@ -829,15 +839,16 @@
     "conferido": false
   },
   "osteometabolicas-0073": {
-    "conceito": "### A pista\nAcro-osteólise é a reabsorção do **tufo** da falange distal: a doença precisa acometer a **interfalângica distal**.\n\n### A artrite psoriásica\nÉ a artropatia inflamatória da IFD:\n- **Unha** alterada (pontilhado, onicólise).\n- **Dactilite**.\n- Erosão do tufo; nas formas agressivas, **lápis na taça** e dedo em telescópio.\n\nResposta: ==psoriática==.\n\n### Outras causas de acro-osteólise\nEsclerose sistêmica, hiperparatireoidismo, cloreto de vinila, lesões térmicas.\n\n> **Na prova:** acro-osteólise = ==psoríase== (entre as artrites).",
-    "correta": "**Psoriática.**\n- Acomete a IFD e reabsorve o tufo.",
+    "conceito": "**A pista.** A acro-osteólise é a reabsorção do **tufo** da falange distal, então a doença precisa acometer a **interfalângica distal**. A artropatia inflamatória da IFD é a **artrite psoriásica**, que vem com **unha alterada** (pontilhado, onicólise), **dactilite** e erosão do tufo; nas formas agressivas, o **lápis na taça** e o dedo em telescópio.\n\n**Fora das artrites**, a acro-osteólise também aparece na esclerose sistêmica, no hiperparatireoidismo, na exposição ao cloreto de vinila e nas lesões térmicas.\n\n**Na prova:** entre as artrites, acro-osteólise é **psoríase**.",
+    "correta": "**Psoriática.** Acomete a IFD e reabsorve o tufo da falange distal.",
     "incorretas": {
-      "A": "**Poupa a IFD.**",
-      "C": "**Não erosiva.**\n- O Jaccoud é deformidade redutível.",
-      "D": "**Outro padrão.**\n- Saca-bocado com borda saliente e tofo."
+      "A": "**Poupa a IFD.** A artrite reumatoide prefere as articulações mais proximais da mão.",
+      "C": "**Não é erosiva.** A artropatia de Jaccoud do lúpus é uma deformidade redutível.",
+      "D": "**Outro padrão.** A gota faz erosões em saca-bocado com borda saliente e tofos."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "osteometabolicas-0074": {
     "conceito": "### Vitamina D é parte do tratamento\nSem vitamina D e cálcio suficientes, o organismo continua retirando cálcio do osso para manter a calcemia. O antirreabsortivo trabalha contra a corrente.\n\n### A dose\n- Idoso com osteoporose: ==pelo menos 800 UI/dia== (faixa de 800 a 1.000 UI).\n- Foi nessa faixa, com cálcio, que os ensaios mostraram **redução de fratura**.\n- Doses de multivitamínicos comuns muitas vezes não elevam a 25-OH-D ao nível suficiente.\n\n### Na prática\n- Dosar a **25-OH-vitamina D** antes de iniciar antirreabsortivo.\n- Deficiência importante: dose de ataque.\n- Corrigir antes do **denosumabe** e do **zoledrônico**, pelo risco de hipocalcemia.\n\n> **Na prova:** vitamina D na osteoporose = ==no mínimo 700 a 800 UI/dia==.",
@@ -887,18 +898,19 @@
     "conferido": false
   },
   "osteometabolicas-0078": {
-    "conceito": "### Critérios de artrite reumatoide (ACR 1987)\n- Rigidez **matinal** de pelo menos 1 hora.\n- Artrite em 3 ou mais áreas articulares.\n- Artrite das ==articulações da mão== (punho, MCF, IFP).\n- Artrite **simétrica**.\n- Nódulos reumatoides, fator reumatoide positivo e erosões radiográficas.\n- 4 de 7 por pelo menos 6 semanas. (Os critérios ACR/EULAR 2010 pontuam articulações, sorologia, provas inflamatórias e duração.)\n\n> **Na prova:** critério = ==mãos==, simetria, rigidez **matinal**.",
-    "correta": "**Acometimento de articulações da mão.**",
+    "conceito": "**Os critérios de 1987.** Pelos critérios do colégio americano de reumatologia, o diagnóstico de artrite reumatoide exige quatro de sete achados, presentes por pelo menos seis semanas: **rigidez matinal** de pelo menos uma hora, artrite em **três ou mais áreas** articulares, artrite das **articulações da mão** (punho, metacarpofalângicas e interfalângicas proximais), artrite **simétrica**, nódulos reumatoides, fator reumatoide positivo e erosões na radiografia.\n\n**Os critérios de 2010**, do ACR com a EULAR, substituíram essa lista por uma pontuação que soma o número de articulações, a sorologia, as provas inflamatórias e a duração dos sintomas.\n\n**Na prova:** o critério clássico é **mãos**, simetria e rigidez **matinal**.",
+    "correta": "**Acometimento de articulações da mão.** Punho, metacarpofalângicas e interfalângicas proximais formam um dos sete critérios.",
     "incorretas": {
-      "A": "A rigidez é **matinal**, não noturna.",
-      "B": "O acometimento é **simétrico**.",
-      "C": "O critério exige **três** ou mais áreas."
+      "A": "**A rigidez é matinal.** O critério é rigidez de manhã por pelo menos uma hora, não noturna.",
+      "B": "**O acometimento é simétrico.** A simetria é justamente um dos critérios.",
+      "C": "**São três ou mais áreas.** Duas articulações não bastam."
     },
     "referencias": [
       "Canale & Beaty: Campbell’s Operative Orthopaedics, 11th Ed., p.988 (referência indicada na prova TARO 2013, questão 33)"
     ],
-    "geradoEm": "2026-09-24",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "osteometabolicas-0079": {
     "conceito": "### Densitometria no homem\n- Indicações usuais:\n  - homens acima de **70 anos**;\n  - entre 50 e 69 com fatores de risco;\n  - ==acima de 50 anos com fratura por trauma leve== (fragilidade);\n  - uso de corticoide, hipogonadismo e outras causas secundárias.\n\n> **Na prova:** homem com mais de 50 anos e ==fratura de baixa energia== = densitometria.",

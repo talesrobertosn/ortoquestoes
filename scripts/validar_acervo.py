@@ -47,6 +47,8 @@ OBRIGATORIOS = ("id", "tema", "enunciado", "alternativas")
 CAMPOS_COMENTARIO = {
     "alerta", "conceito", "correta", "incorretas",
     "referencias", "geradoEm", "conferido",
+    # "corrido": reescrito em parágrafos com negrito, sem títulos nem listas.
+    "formato",
 }
 
 # Ferramentas de leitura elidem o meio de arquivos grandes. Quando essa
