@@ -9,7 +9,8 @@ import { AvisoBloqueioDiario } from './LimiteRespostas'
 // No celular a barra de baixo já leva a Início, Treinar, Revisão e
 // Desempenho — repetir os quatro aqui em cima seria a mesma coisa duas
 // vezes. Por isso só Revisão soma "oculta-celular": os outros dois cabem
-// e valem a pena continuar visíveis mesmo na tela estreita.
+// e valem a pena continuar visíveis. Em celulares estreitos (até 27rem),
+// Desempenho também sai, senão o cabeçalho passa da largura da tela.
 const LINKS: { destino: string; rotulo: string; icone: NomeIcone; ocultaCelular: boolean }[] = [
   { destino: '/treinar', rotulo: 'Treinar', icone: 'livro', ocultaCelular: false },
   { destino: '/revisao', rotulo: 'Revisão', icone: 'calendario', ocultaCelular: true },
@@ -33,7 +34,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
           {LINKS.map((link) => (
             <a
               key={link.destino}
-              className={'nav-link' + (link.ocultaCelular ? ' nav-link--oculta-celular' : '')}
+              className={'nav-link' + (link.ocultaCelular ? ' nav-link--oculta-celular' : '') + (link.destino === '/dados' ? ' nav-link--oculta-estreito' : '')}
               href={href(link.destino)}
               aria-current={caminho.startsWith(link.destino) ? 'page' : undefined}
             >
@@ -43,7 +44,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
           ))}
         </nav>
         <div className="cabecalho__acoes">
-          <a className="nav-link nav-link--planos" href={href('/assinatura')} aria-current={caminho === '/assinatura' ? 'page' : undefined}><Icone nome="estrela" tamanho={15} />Planos</a>
+          <a className="nav-link nav-link--planos" href={href('/assinatura')} aria-current={caminho === '/assinatura' ? 'page' : undefined}>Planos</a>
           {contasDisponiveis && (
             <a
               className={'nav-link nav-link--conta' + (sessao ? ' nav-link--logado' : '')}

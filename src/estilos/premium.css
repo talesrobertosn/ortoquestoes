@@ -398,24 +398,10 @@
   border-bottom: 1px solid color-mix(in srgb, var(--traco) 80%, transparent);
 }
 .nav-link__icone { display: none; }
-.nav-link--planos {
-  position: relative; overflow: hidden; isolation: isolate; gap: .35rem; min-height: 40px; padding-inline: .95rem 1.05rem;
-  background: linear-gradient(135deg, #ffe7a8 0%, #f3c65a 55%, #e0a93a 100%); color: #4d3405; border: 1px solid #d9a441;
-  font-weight: 800; letter-spacing: .01em; box-shadow: 0 4px 14px rgba(224, 169, 58, .35), inset 0 1px 0 rgba(255, 255, 255, .6);
-  transition: transform .15s ease, box-shadow .15s ease;
-}
-.nav-link--planos svg { color: #8a5a00; }
-.nav-link--planos::after {
-  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, .65) 50%, transparent 70%);
-  transform: translateX(-120%); animation: planos-brilho 5s ease-in-out 1.5s infinite;
-}
-@keyframes planos-brilho { 0%, 70% { transform: translateX(-120%); } 100% { transform: translateX(120%); } }
-.nav-link--planos:hover, .nav-link--planos[aria-current="page"] { background: linear-gradient(135deg, #fff0c4 0%, #f6cf6b 55%, #e5b24a 100%); color: #3d2903; border-color: #c99433; transform: translateY(-1px); box-shadow: 0 6px 18px rgba(224, 169, 58, .45), inset 0 1px 0 rgba(255, 255, 255, .7); }
-.nav-link--planos:focus-visible { outline: 2px solid #d9a441; outline-offset: 3px; }
-@media (prefers-reduced-motion: reduce) { .nav-link--planos::after { animation: none; } .nav-link--planos:hover { transform: none; } }
-@media (min-width: 40.01rem) and (max-width: 80rem) { .nav-link--planos svg { display: none; } }
-@media (max-width: 40rem) { .nav-link--planos { min-height: 36px; padding-inline: .6rem .75rem; font-size: .78rem; } }
+.nav-link--planos { min-height: 38px; padding-inline: .95rem; background: var(--superficie); color: var(--verdete); border: 1px solid color-mix(in srgb, var(--verdete) 38%, var(--traco)); font-weight: 700; }
+.nav-link--planos:hover, .nav-link--planos[aria-current="page"] { background: var(--verdete-veu); color: var(--verdete-tinta); border-color: var(--verdete); }
+.nav-link--planos:focus-visible { outline: 2px solid var(--verdete); outline-offset: 3px; }
+@media (max-width: 40rem) { .nav-link--planos { min-height: 34px; padding-inline: .7rem; font-size: .78rem; } }
 @media (min-width: 56rem) {
   .cabecalho__interno { min-height: 68px; gap: 1rem; }
   .cabecalho__nav-principal {
@@ -2377,3 +2363,61 @@ a.rs-marco:hover { color: var(--texto); border-color: var(--traco-forte); }
 .paywall__projeto .paywall__projeto-titulo { margin-bottom: .3rem; font-weight: 800; color: var(--verdete-tinta); }
 .paywall .liberacao-limite strong { font-size: 1.35rem; }
 .paywall__depois { width: 100%; justify-content: center; }
+
+/* Convite para compartilhar: balão de conversa no canto, sem bloquear a página. */
+.convite {
+  position: fixed; z-index: 30; right: max(1rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom));
+  width: min(21rem, calc(100vw - 2rem)); overflow: hidden; border-radius: 20px;
+  background: var(--superficie); border: 1px solid var(--traco); box-shadow: 0 18px 48px rgba(8, 40, 36, .22), 0 2px 8px rgba(8, 40, 36, .08);
+  animation: convite-entra .35s cubic-bezier(.2, .8, .3, 1.2);
+}
+@keyframes convite-entra { from { opacity: 0; transform: translateY(16px) scale(.96); } to { opacity: 1; transform: none; } }
+.convite__topo { display: flex; align-items: center; gap: .6rem; padding: .7rem .7rem .7rem .85rem; color: #fff; background: linear-gradient(110deg, #0c3b36, #1d6b5f); }
+.convite__avatar { position: relative; display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 999px; background: #fff; color: var(--verdete); flex: none; }
+.convite__avatar i { position: absolute; right: 0; bottom: 0; width: .6rem; height: .6rem; border-radius: 999px; background: #3ddc84; border: 2px solid #145a52; }
+.convite__quem { display: grid; line-height: 1.15; flex: 1; min-width: 0; }
+.convite__quem strong { font-size: .92rem; }
+.convite__quem small { font-size: .72rem; color: rgba(255, 255, 255, .72); }
+.convite__fechar { display: grid; place-items: center; width: 2rem; height: 2rem; border: 0; border-radius: 999px; background: rgba(255, 255, 255, .12); color: #fff; cursor: pointer; }
+.convite__fechar:hover { background: rgba(255, 255, 255, .22); }
+.convite__conversa { display: grid; gap: .45rem; padding: .85rem .85rem .2rem; background: var(--superficie-2); min-height: 3.2rem; }
+.convite__balao { margin: 0; justify-self: start; max-width: 92%; padding: .55rem .75rem; border-radius: 4px 14px 14px 14px; background: var(--superficie); border: 1px solid var(--traco); font-size: var(--corpo-menor); line-height: 1.45; color: var(--texto); animation: convite-entra .3s ease both; }
+.convite__balao + .convite__balao { border-radius: 14px; animation-delay: .25s; }
+.convite__digitando { justify-self: start; display: inline-flex; gap: .25rem; padding: .7rem .8rem; border-radius: 4px 14px 14px 14px; background: var(--superficie); border: 1px solid var(--traco); }
+.convite__digitando i { width: .4rem; height: .4rem; border-radius: 999px; background: var(--texto-2); opacity: .4; animation: convite-ponto 1s infinite ease-in-out; }
+.convite__digitando i:nth-child(2) { animation-delay: .15s; }
+.convite__digitando i:nth-child(3) { animation-delay: .3s; }
+@keyframes convite-ponto { 0%, 80%, 100% { opacity: .3; transform: translateY(0); } 40% { opacity: .9; transform: translateY(-3px); } }
+.convite__acoes { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem; padding: .7rem .85rem .85rem; background: var(--superficie-2); }
+.convite__whatsapp, .convite__copiar { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; min-height: 2.6rem; padding: 0 .75rem; border-radius: 999px; white-space: nowrap; font: inherit; font-size: var(--corpo-menor); font-weight: 700; text-decoration: none; cursor: pointer; }
+.convite__whatsapp { background: #1fa855; color: #fff; border: 0; }
+.convite__whatsapp:hover { background: #178c46; color: #fff; }
+.convite__copiar { background: var(--superficie); color: var(--verdete-tinta); border: 1px solid color-mix(in srgb, var(--verdete) 35%, var(--traco)); }
+.convite__copiar:hover { background: var(--verdete-veu); }
+@media (max-width: 40rem) {
+  .convite { right: .75rem; left: .75rem; width: auto; bottom: calc(4.9rem + env(safe-area-inset-bottom)); }
+  .convite__topo { padding-block: .5rem; }
+  .convite__conversa { padding-top: .6rem; }
+  .convite__balao { font-size: .84rem; padding: .45rem .65rem; }
+  .convite__acoes { padding-block: .55rem .7rem; }
+}
+@media (prefers-reduced-motion: reduce) { .convite, .convite__balao, .convite__digitando i { animation: none; } }
+/* Até 40rem a barra de baixo já leva Revisão; entre 40 e 56rem o cabeçalho
+   ainda mostra os quatro links, então a marca fica só no símbolo e a conta
+   só no ícone. Sem isso o cabeçalho passava da largura da tela. */
+@media (max-width: 40rem) {
+  .nav-link--oculta-celular { display: none; }
+  .nav-link { padding: 0 0.5rem; }
+  .cabecalho__rotulo-conta { display: none; }
+  .nav-link--conta { padding: 0; width: 38px; justify-content: center; }
+  .cabecalho__marca .marca-horizontal__texto { display: none; }
+  .cabecalho__interno { gap: .75rem; }
+}
+@media (min-width: 40.01rem) and (max-width: 56rem) {
+  .cabecalho__marca .marca-horizontal__texto { display: none; }
+  .cabecalho__rotulo-conta { display: none; }
+  .nav-link--conta { padding: 0; width: 38px; justify-content: center; }
+  .cabecalho__interno { gap: .75rem; }
+  .nav-link { padding: 0 .55rem; }
+}
+@media (max-width: 27rem) { .nav-link--oculta-estreito { display: none; } }

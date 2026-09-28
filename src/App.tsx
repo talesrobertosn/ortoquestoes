@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, type ReactNode } from 'react'
 import { usarRota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
+import { ConviteCompartilhar } from './componentes/ConviteCompartilhar'
 import { SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
 
@@ -151,6 +152,7 @@ export function App() {
         </div>
       </main>
       <Rodape />
+      <ConviteCompartilhar caminho={rota.caminho} />
     </div>
   )
 }
