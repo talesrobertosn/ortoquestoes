@@ -3,7 +3,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { BackupProgresso } from '../componentes/BackupProgresso'
 import { Icone } from '../componentes/Icone'
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { SITE } from '../config'
 import { href } from '../util/rotas'
 import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
@@ -156,62 +156,77 @@ export function Sobre() {
   )
 }
 
+const ASSUNTOS_SUPORTE = [
+  { id: 'assinatura', titulo: 'Assinatura ou cobrança', descricao: 'Plano, renovação, cancelamento ou reembolso.' },
+  { id: 'acesso', titulo: 'Acesso à conta', descricao: 'Entrar, senha ou sincronização.' },
+  { id: 'questao', titulo: 'Questão ou comentário', descricao: 'Gabarito, imagem ou enunciado.' },
+  { id: 'dados', titulo: 'Meus dados', descricao: 'Privacidade, exportação ou exclusão da conta.' },
+  { id: 'outro', titulo: 'Outro assunto', descricao: 'Conte o que aconteceu.' },
+] as const
+type AssuntoSuporte = typeof ASSUNTOS_SUPORTE[number]['id']
+
+function assuntoInicial(consulta: URLSearchParams): AssuntoSuporte {
+  if (consulta.has('questao')) return 'questao'
+  const assunto = consulta.get('assunto')
+  if (assunto === 'exclusao-conta') return 'dados'
+  if (assunto === 'sincronizacao') return 'acesso'
+  return 'outro'
+}
+
+function modeloSuporte(tipo: AssuntoSuporte, questao: string | null, exclusao: boolean): string {
+  if (exclusao) return 'Solicito a exclusão da minha conta e dos dados pessoais associados.\n\nInformações adicionais (opcional): '
+  if (tipo === 'questao') return `Questão: ${questao ?? '(identificador, se souber)'}\nO que encontrei: \nO que esperava: `
+  if (tipo === 'assinatura') return 'O que aconteceu com minha assinatura ou cobrança: \nData aproximada: \nO que esperava: '
+  if (tipo === 'acesso') return 'O que aconteceu ao entrar ou sincronizar: \nAparelho/navegador: \nMensagem exibida (sem senha ou código): '
+  if (tipo === 'dados') return 'Minha dúvida ou solicitação sobre meus dados: '
+  return 'Como podemos ajudar?\n\nDetalhes úteis: '
+}
+
 export function Contato({ consulta }: { consulta: URLSearchParams }) {
   const questao = consulta.get('questao')
+  const exclusao = consulta.get('assunto') === 'exclusao-conta'
+  const [tipo, definirTipo] = useState<AssuntoSuporte>(() => assuntoInicial(consulta))
+  const [mensagem, definirMensagem] = useState(() => modeloSuporte(assuntoInicial(consulta), questao, exclusao))
+  const tituloAssunto = ASSUNTOS_SUPORTE.find(item => item.id === tipo)?.titulo ?? 'Outro assunto'
+  const assunto = exclusao && tipo === 'dados' ? 'OrtoQuestões — solicitação de exclusão da conta' : questao && tipo === 'questao'
+    ? `OrtoQuestões — questão ${questao}` : `OrtoQuestões — ${tituloAssunto}`
 
-  const modelo = useMemo(
-    () =>
-      [
-        `Questão: ${questao ?? '(identificador da questão)'}`,
-        'Problema: (enunciado truncado, figura faltando, gabarito divergente, outro)',
-        'O que eu esperava: ',
-        '',
-      ].join('\n'),
-    [questao],
-  )
+  function selecionarTipo(novoTipo: AssuntoSuporte) {
+    if (novoTipo === tipo) return
+    const modeloAtual = modeloSuporte(tipo, questao, exclusao && tipo === 'dados')
+    definirTipo(novoTipo)
+    if (mensagem === modeloAtual) definirMensagem(modeloSuporte(novoTipo, questao, exclusao && novoTipo === 'dados'))
+  }
 
-  const assunto = questao
-    ? `OrtoQuestões — erro na questão ${questao}`
-    : 'OrtoQuestões — relato de erro'
-
-  return (
-    <article className="limite-leitura empilha">
-      <h1>Relatar erro</h1>
-      <p>
-        Erro em questão é o tipo de coisa que precisa ser corrigida rápido. Quanto mais específico o
-        relato, mais rápido a correção entra no ar.
-      </p>
-      {questao && (
-        <p>
-          Você está relatando a questão <span className="numerico">{questao}</span>.
-        </p>
-      )}
-      <h2>Modelo do relato</h2>
-      <pre
-        className="cartao"
-        style={{
-          padding: '1rem',
-          whiteSpace: 'pre-wrap',
-          fontFamily: 'var(--fonte-dados)',
-          fontSize: 'var(--corpo-menor)',
-          margin: 0,
-        }}
-      >
-        {modelo}
-      </pre>
-      <AcoesDeEmail para={SITE.contato} assunto={assunto} corpo={modelo} />
-
-      <p className="texto-2">
-        Prefere mandar por mensagem? O projeto também está no Instagram, em{' '}
-        <a href={SITE.instagram} target="_blank" rel="noopener noreferrer me">
-          @{SITE.instagramUsuario}
-        </a>
-        .
-      </p>
-
-
-    </article>
-  )
+  return <article className="empilha-2 suporte-pagina">
+    <header className="suporte-heroi heroi-escuro">
+      <p className="meta">SUPORTE DO ORTOQUESTÕES</p>
+      <h1>Vamos resolver juntos.</h1>
+      <p>Dúvida sobre conta, assinatura ou uma questão? Conte o que aconteceu. O contato chega diretamente ao responsável pelo projeto.</p>
+      <a className="botao botao--claro" href={`mailto:${SITE.contato}`}>Escrever para o suporte</a>
+    </header>
+    <section className="suporte-contato" aria-label="Contato direto">
+      <div><span>Nosso e-mail</span><strong><a href={`mailto:${SITE.contato}`}>{SITE.contato}</a></strong></div>
+      <p>O contato é por e-mail. Abrir um rascunho não envia a mensagem automaticamente; confira e envie pelo seu aplicativo.</p>
+    </section>
+    <section className="empilha suporte-painel" aria-labelledby="suporte-assunto">
+      <div><p className="meta">PASSO 1</p><h2 id="suporte-assunto">Sobre o que você quer falar?</h2><p>Escolha um tema para preparar a mensagem.</p></div>
+      <div className="suporte-temas" role="group" aria-label="Assunto do contato">
+        {ASSUNTOS_SUPORTE.map(item => <button type="button" key={item.id} className="suporte-tema" aria-pressed={tipo === item.id} onClick={() => selecionarTipo(item.id)}><strong>{item.titulo}</strong><span>{item.descricao}</span></button>)}
+      </div>
+    </section>
+    <section className="empilha suporte-painel" aria-labelledby="suporte-mensagem">
+      <div><p className="meta">PASSO 2</p><h2 id="suporte-mensagem">Descreva o que aconteceu</h2><p>Edite o modelo abaixo. Se for sobre pagamento, informe a data aproximada e o plano; não envie números de cartão.</p></div>
+      <label className="campo" htmlFor="mensagem-suporte">Sua mensagem</label>
+      <textarea id="mensagem-suporte" className="entrada suporte-mensagem" value={mensagem} onChange={evento => definirMensagem(evento.target.value)} rows={7} />
+      <p className="suporte-aviso"><Icone nome="alerta" tamanho={18} /> Não inclua senha, código de acesso, número do cartão ou dados de saúde na mensagem.</p>
+      <AcoesDeEmail para={SITE.contato} assunto={assunto} corpo={mensagem} rotuloCopiar="Copiar mensagem" />
+    </section>
+    <section className="suporte-atalhos" aria-label="Respostas rápidas">
+      <h2>Talvez você resolva agora</h2>
+      <div><a href={href('/conta/assinatura')}>Ver minha assinatura <Icone nome="direita" tamanho={17} /></a><a href={href('/dados')}>Exportar meu progresso <Icone nome="direita" tamanho={17} /></a><a href={href('/condicoes-assinatura')}>Regras de cancelamento e garantia <Icone nome="direita" tamanho={17} /></a></div>
+    </section>
+  </article>
 }
 
 type PeriodoDesempenho = { tipo: 'tudo' | '7' | '30' | '90' | 'desde'; desde?: string }
