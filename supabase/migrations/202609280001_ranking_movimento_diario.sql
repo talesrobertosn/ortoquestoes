@@ -100,7 +100,8 @@ begin
   insert into public.ranking_posicoes_diarias (dia, periodo, usuario_id, posicao, registrada_em)
   select hoje, obter_ranking_com_movimento.periodo, r.usuario_id, r.posicao, now()
   from public.calcular_ranking_interno(periodo) r
-  on conflict (dia, periodo, usuario_id) do update
+  -- Pelo nome da restrição: "periodo" e "posicao" também são nomes da função.
+  on conflict on constraint ranking_posicoes_diarias_pkey do update
     set posicao = excluded.posicao, registrada_em = excluded.registrada_em;
 end;
 $$;

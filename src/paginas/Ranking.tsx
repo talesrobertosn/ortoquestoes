@@ -147,9 +147,9 @@ export function Ranking() {
     definirLinhas(null)
     Promise.all([
       cliente.rpc('obter_ranking_com_movimento', { periodo }).then(async resultado => {
-        // O deploy estático pode chegar antes da migration: o ranking antigo
-        // continua disponível, só sem as setas, até a RPC nova existir.
-        if (resultado.error?.code === 'PGRST202') return cliente.rpc('obter_ranking_publico', { periodo })
+        // O deploy estático pode chegar antes da migration, ou a RPC nova pode
+        // falhar no banco: o ranking antigo continua de pé, só sem as setas.
+        if (resultado.error) return cliente.rpc('obter_ranking_publico', { periodo })
         return resultado
       }),
       cliente.rpc('minha_posicao_ranking', { periodo }),
