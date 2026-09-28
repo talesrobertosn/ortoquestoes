@@ -19,7 +19,13 @@ const DIA = 86_400_000
 const PAUSA_FECHOU = 14 * DIA
 const PAUSA_COMPARTILHOU = 90 * DIA
 
-const MENSAGEM = `Estou usando o OrtoQuestões para estudar para a prova de ortopedia: questões do TEOT, TARO, fellowships e R4 com comentário em cada alternativa, revisão espaçada e ranking. Dá para fazer 20 questões por dia de graça. Vale a pena conhecer: ${SITE.url}`
+// Texto que chega pronto no WhatsApp; *negrito* é a formatação do próprio app.
+const MENSAGEM = `Gente, achei um *banco de questões de ortopedia com acesso gratuito* e não consigo mais parar: o *OrtoQuestões*.
+
+Tem TEOT, TARO, fellowship (quadril, ombro e mão) e R4, com comentário em cada alternativa, revisão das que você errou e até ranking para ver quem da residência estuda mais.
+
+São 20 questões por dia de graça. Testem e depois me contem quanto acertaram:
+${SITE.url}`
 
 function lerPausa(): number {
   try { return Number(localStorage.getItem(CHAVE)) || 0 } catch { return 0 }
