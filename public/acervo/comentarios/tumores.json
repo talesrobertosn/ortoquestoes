@@ -2978,337 +2978,362 @@
     "formato": "corrido"
   },
   "tumores-0302": {
-    "conceito": "### O que é\nVariante **rara** em que o tumor produz osteoide **sem conexão** com osso ou periósteo. Inverte o perfil do osteossarcoma clássico:\n- **Idade:** ==acima dos 40 anos==, pico entre a quinta e a sétima décadas.\n- **Sítio:** partes moles profundas da **coxa**, depois membro superior e retroperitônio.\n- **Antecedente:** parte dos casos surge em campo **irradiado**.\n- **Prognóstico:** ==pior que o intraósseo==, com recidiva local frequente e metástase pulmonar precoce.\n\n### Por que é pior\n- Responde **pouco à quimioterapia**; comporta-se mais como sarcoma pleomórfico de alto grau.\n- Massa indolor: diagnóstico tardio.\n- Margem mais difícil em partes moles.\n\n### O grande diferencial: miosite ossificante\n- **Miosite:** ossifica de **fora para dentro** (zoneamento), periferia madura e centro imaturo.\n- **Osteossarcoma extraósseo:** mais denso no **centro**, periferia desorganizada.\n\n> **Na prova:** osteossarcoma extraósseo = ==mais de 40 anos e prognóstico pior==.",
-    "correta": "**Acima de 40 anos, prognóstico pior que o intraósseo.**\n- Pouca resposta à quimioterapia.",
+    "conceito": "**O que é.** O osteossarcoma extraósseo é uma variante **rara** em que o tumor produz osteoide **sem conexão** com osso ou periósteo, e inverte o perfil do osteossarcoma clássico. Aparece **acima dos 40 anos**, com pico entre a quinta e a sétima décadas, nas partes moles profundas da **coxa**, depois no membro superior e no retroperitônio, e parte dos casos surge em campo **irradiado**. O prognóstico é **pior que o do intraósseo**: responde pouco à quimioterapia, comportando-se mais como um sarcoma pleomórfico de alto grau, apresenta-se como massa indolor diagnosticada tarde e tem margem difícil em partes moles, com recidiva local frequente e metástase pulmonar precoce.\n\n**O grande diferencial é a miosite ossificante.** Ela ossifica de **fora para dentro**, com o zoneamento clássico: periferia madura e centro imaturo. O osteossarcoma extraósseo faz o contrário, mais denso no centro e com periferia desorganizada.\n\n**Na prova:** osteossarcoma extraósseo é de **mais de 40 anos, com prognóstico pior**.",
+    "correta": "**Acima de 40 anos, com prognóstico pior que o intraósseo.** Inverte o perfil do osteossarcoma clássico.",
     "incorretas": {
-      "A": "**Idade errada.**\n- É de adultos mais velhos.",
-      "B": "**Erra os dois.**",
-      "D": "**Prognóstico errado.**\n- Acerta a idade, mas o prognóstico é pior."
+      "A": "**Idade errada.** O extraósseo é de adultos mais velhos.",
+      "B": "**Erra os dois.** Nem a idade nem o prognóstico estão certos.",
+      "D": "**Prognóstico errado.** Acerta a idade, mas o prognóstico é pior."
     },
     "referencias": [
       "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 28"
     ],
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0303": {
-    "conceito": "### Um sinal de alarme\nAvulsão **isolada do trocanter menor no adulto** é sinal clássico de ==doença metastática oculta==.\n\n### Por que\n- O trocanter menor recebe só a tração do **iliopsoas**.\n- Depois do fechamento da fise, essa força não basta para arrancá-lo de um osso normal.\n- Quando isso acontece, quase sempre há uma **lesão lítica** enfraquecendo o osso: metástase (mama, pulmão, rim, tireoide, próstata), mieloma ou linfoma.\n\n### Na criança é outra história\nNo adolescente atleta, com a fise aberta, é **avulsão apofisária** banal, de tratamento conservador.\n\n### Conduta no adulto: investigar antes de fixar\n- Radiografia do **fêmur inteiro**.\n- **Ressonância** para ver a extensão da lesão.\n- Tomografia de tórax, abdome e pelve; cintilografia.\n- **Biópsia** se o primário não aparecer.\n\nO planejamento costuma envolver **haste intramedular longa**, protegendo o osso todo, e não fixar aquele fragmento.\n\n> **Na prova:** avulsão isolada do ==trocanter menor em adulto== é metástase até prova em contrário.",
-    "correta": "**Trocanter menor.**\n- No adulto, o iliopsoas sozinho não arranca um trocanter menor saudável.\n- A avulsão isolada sugere lesão patológica subjacente.",
+    "conceito": "**Um sinal de alarme.** A avulsão **isolada do trocanter menor no adulto** é sinal clássico de **doença metastática oculta**. O trocanter menor recebe só a tração do **iliopsoas**, e depois do fechamento da fise essa força não basta para arrancá-lo de um osso normal. Quando isso acontece, quase sempre há uma lesão lítica enfraquecendo o osso: metástase de mama, pulmão, rim, tireoide ou próstata, mieloma ou linfoma. No adolescente atleta, com a fise aberta, é outra história: avulsão apofisária banal, de tratamento conservador.\n\n**No adulto, investigar antes de fixar.** Radiografia do fêmur inteiro, ressonância para ver a extensão da lesão, tomografia de tórax, abdome e pelve, cintilografia e biópsia se o primário não aparecer. O planejamento costuma envolver **haste intramedular longa**, protegendo o osso todo, e não fixar aquele fragmento.\n\n**Na prova:** avulsão isolada do **trocanter menor no adulto** é metástase até prova em contrário.",
+    "correta": "**Trocanter menor.** No adulto, só o iliopsoas não arranca o trocanter menor de um osso normal.",
     "incorretas": {
-      "A": "**Trauma, sem essa associação.**\n- A avulsão do trocanter maior ocorre por trauma direto ou tração dos glúteos.\n- Não tem a mesma ligação com malignidade.",
-      "C": "**Fratura traumática do ombro.**\n- A fratura do tubérculo maior se liga à **luxação anterior** e ao manguito rotador.",
-      "D": "**Rara e traumática.**\n- A avulsão do tubérculo menor vem de contração forçada do **subescapular**, sobretudo em adolescentes."
+      "A": "**Trauma, sem essa associação.** A avulsão do trocanter maior vem de trauma direto ou da tração dos glúteos, sem a mesma ligação com malignidade.",
+      "C": "**Fratura traumática do ombro.** A fratura do tubérculo maior se liga à luxação anterior e ao manguito rotador.",
+      "D": "**Rara e traumática.** A avulsão do tubérculo menor vem da contração forçada do subescapular, sobretudo em adolescentes."
     },
     "referencias": [
       "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 3.7"
     ],
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0304": {
-    "conceito": "### A lâmina não separa\nO ==tumor marrom do hiperparatireoidismo== é o grande imitador do tumor de células gigantes. Na biópsia, as duas lesões mostram:\n- **Células gigantes multinucleadas** dispersas em estroma de células mononucleares.\n- Áreas de **hemorragia** e depósito de hemossiderina.\n\nO patologista, só com a lâmina, **não consegue** separá-las.\n\n### Quem separa\n**O laboratório:** PTH, cálcio, fósforo e fosfatase alcalina.\n- **Primário:** PTH e cálcio altos, fósforo baixo.\n- **Secundário:** o padrão da doença renal crônica.\n\n### A radiografia ajuda\n- Reabsorção **subperiosteal** nas falanges médias (patognomônica).\n- Crânio em **sal e pimenta**.\n- Acro-osteólise das falanges distais.\n- **Tumores marrons múltiplos**.\n\n### Por que o erro é grave\nOperar um tumor marrom como tumor de células gigantes deixa a doença de base intacta. O tratamento correto é a **paratireoidectomia**, e depois dela os tumores marrons regridem sozinhos.\n\n> **Na prova:** toda lesão de células gigantes pede ==cálcio e PTH antes da biópsia==.",
-    "correta": "**Tumor marrom do hiperparatireoidismo.**\n- Tem histologia **indistinguível** da do tumor de células gigantes.\n- A diferença está no laboratório (PTH, cálcio, fósforo).",
+    "conceito": "**A lâmina não separa.** O **tumor marrom do hiperparatireoidismo** é o grande imitador do tumor de células gigantes: na biópsia, os dois mostram células gigantes multinucleadas dispersas em estroma de células mononucleares, com hemorragia e hemossiderina, e o patologista, só com a lâmina, não consegue separá-los. Quem separa é o **laboratório**: PTH e cálcio altos com fósforo baixo no hiperparatireoidismo primário, ou o padrão da doença renal crônica no secundário. A radiografia ajuda com a reabsorção subperiosteal das falanges médias, o crânio em sal e pimenta, a acro-osteólise e os tumores marrons múltiplos.\n\n**Por que o erro é grave.** Operar um tumor marrom como tumor de células gigantes deixa a doença de base intacta. O tratamento correto é a **paratireoidectomia**, e depois dela os tumores marrons regridem sozinhos. Daí a regra de dosar cálcio e PTH antes de biopsiar qualquer lesão de células gigantes.\n\n**Na prova:** o imitador histológico do TCG é o **tumor marrom**; cálcio e PTH antes da biópsia.",
+    "correta": "**Tumor marrom do hiperparatireoidismo.** Tem a mesma histologia de células gigantes; o laboratório é que separa.",
     "incorretas": {
-      "A": "**Confunde na imagem, não na lâmina.**\n- O condrossarcoma de células claras é epifisário e entra no diferencial **radiográfico**.\n- A histologia com células claras e matriz condroide é distinta.",
-      "B": "**Imita o cisto aneurismático.**\n- O osteossarcoma telangiectásico é o grande imitador do **cisto ósseo aneurismático**.\n- Tem atipia maligna, ausente no tumor de células gigantes.",
-      "C": "**Não é a confusão clássica.**\n- O fibro-histiocitoma benigno pode ter células gigantes.\n- Mas tem padrão **estoriforme** com células xantomatosas."
+      "A": "**Confunde na imagem, não na lâmina.** O condrossarcoma de células claras é epifisário e entra no diferencial radiográfico, mas a histologia, com células claras e matriz condroide, é distinta.",
+      "B": "**Imita o cisto aneurismático.** O osteossarcoma telangiectásico é o grande imitador do cisto ósseo aneurismático e tem atipia maligna, ausente no TCG.",
+      "C": "**Não é a confusão clássica.** O fibro-histiocitoma benigno pode ter células gigantes, mas tem padrão estoriforme com células xantomatosas."
     },
-    "geradoEm": "2026-09-22",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0305": {
-    "conceito": "### O sarcoma de partes moles da criança\nO ==rabdomiossarcoma==, com diferenciação para músculo estriado. Pode surgir até onde não há músculo esquelético.\n\n### Sítios\n- **Cabeça e pescoço** (órbita, parameníngeos): o mais frequente.\n- **Trato geniturinário.**\n- **Extremidades.**\n\n### Subtipos\n- **Embrionário:** o mais comum, criança pequena, melhor prognóstico.\n- **Alveolar:** adolescentes, extremidades, **PAX3/PAX7-FOXO1**, mais agressivo, metástase linfonodal frequente.\n- **Pleomórfico:** do adulto, raro.\n\n### O que define o tratamento\n**Quimiossensibilidade**, incomum entre sarcomas de partes moles. Esquema multimodal (quimioterapia, cirurgia e radioterapia), que mudou muito a sobrevida das formas localizadas.\n\n### Para contraste\n- **Adulto:** lipossarcoma e sarcoma pleomórfico indiferenciado disputam o primeiro lugar.\n- **Mão:** sarcoma epitelioide.\n- **Adolescente e adulto jovem:** sinoviossarcoma entra forte.\n\n> **Na prova:** sarcoma de partes moles da criança = ==rabdomiossarcoma==.",
-    "correta": "**Rabdomiossarcoma.**\n- Cerca de metade dos sarcomas de partes moles pediátricos.",
+    "conceito": "**O sarcoma de partes moles da criança** é o **rabdomiossarcoma**, o mais comum na infância. Tem pico nos primeiros anos de vida e outro na adolescência, e acomete cabeça e pescoço, trato geniturinário e extremidades. Há duas formas principais: a **embrionária**, das crianças menores, de melhor prognóstico, e a **alveolar**, mais comum nas extremidades e em adolescentes, com fusões PAX3 ou PAX7-FOXO1 e prognóstico pior. O tratamento combina quimioterapia, cirurgia e radioterapia.\n\n**Os outros sarcomas por idade.** O sarcoma sinovial é de adolescentes e adultos jovens, perto das grandes articulações, sobretudo o joelho; o lipossarcoma é do adulto, na coxa e no retroperitônio; o fibrossarcoma tem uma forma congênita de bom prognóstico, mas é raro.\n\n**Na prova:** sarcoma de partes moles mais comum na criança é o **rabdomiossarcoma**.",
+    "correta": "**Rabdomiossarcoma.** É o sarcoma de partes moles mais comum na infância.",
     "incorretas": {
-      "A": "**Do adulto.**\n- Coxa e retroperitônio.",
-      "C": "**Menos frequente.**\n- Há forma congênita de bom prognóstico, mas é rara.",
-      "D": "**Mais velhos.**\n- Adolescentes e adultos jovens."
+      "A": "**Do adulto.** O lipossarcoma aparece na coxa e no retroperitônio de adultos.",
+      "C": "**Menos frequente.** Há forma congênita de bom prognóstico, mas é rara.",
+      "D": "**Mais velhos.** O sarcoma sinovial é de adolescentes e adultos jovens."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0306": {
-    "conceito": "### A assinatura histológica do Paget\nNa doença de Paget, a biópsia mostra o padrão ==em mosaico==. Ciclos sucessivos e desordenados de reabsorção e formação deixam **linhas de cimento irregulares**, que desenham um aspecto de ladrilhos.\n\nJunto, aparecem:\n- **Osteoclastos gigantes** com muitos núcleos (às vezes dezenas).\n- Medula substituída por **tecido fibrovascular** muito vascularizado.\n\n### Os outros padrões com nome próprio\nEssas questões costumam trazer a lista inteira:\n- **Paliçada** (paliçada nuclear, corpos de Verocay): **schwannoma**, na área Antoni A.\n- **Roda de carroça** (cromatina em raios): **plasmócito**, no mieloma e no plasmocitoma.\n- **Tela de galinheiro** (calcificação pericelular fina): **condroblastoma**.\n- **Letras chinesas** (trabéculas finas e curvas sem osteoblastos na borda): **displasia fibrosa**.\n- **Osteoide produzido direto por células malignas**: **osteossarcoma**.\n\n> **Na prova:** mosaico é ==Paget==. Paliçada é schwannoma, roda de carroça é plasmócito, galinheiro é condroblastoma.",
-    "correta": "**Mosaico.**\n- As **linhas de cimento irregulares** do remodelamento desordenado desenham o padrão em mosaico.\n- É a marca histológica da doença de Paget.",
+    "conceito": "**A assinatura histológica do Paget** é o padrão em **mosaico**: linhas de cimento irregulares e desordenadas, deixadas por ciclos descoordenados de reabsorção e formação, desenham ladrilhos no osso. Acompanham osteoclastos gigantes e hipermultinucleados, com muito mais núcleos que o normal, e medula substituída por tecido fibrovascular muito vascularizado, que explica o calor local, o aumento do débito cardíaco nas formas extensas e o sangramento na cirurgia.\n\n**Os outros padrões da questão**, cada um com seu dono: **paliçada**, com corpos de Verocay, é do schwannoma; **roda de carroça**, a cromatina em raios, é do núcleo do plasmócito, no mieloma; **tela de galinheiro**, a calcificação fina ao redor de cada célula, é do condroblastoma.\n\n**Na prova:** Paget é **mosaico**; paliçada é schwannoma; roda de carroça é plasmócito; tela de galinheiro é condroblastoma.",
+    "correta": "**Mosaico.** As linhas de cimento desordenadas são a assinatura do Paget.",
     "incorretas": {
-      "B": "**Paliçada é do schwannoma.**\n- Núcleos alinhados em paliçada, com **corpos de Verocay**, na área Antoni A.\n- Tumor da bainha do nervo, sem relação com Paget.",
-      "C": "**Roda de carroça é do plasmócito.**\n- Cromatina distribuída em raios no núcleo.\n- Típica do **mieloma múltiplo** e do plasmocitoma.",
-      "D": "**Tela de galinheiro é do condroblastoma.**\n- Calcificação fina ao redor de cada célula, lembrando arame de galinheiro.\n- Tumor epifisário do adolescente."
+      "B": "**Paliçada é do schwannoma.** Núcleos alinhados, com corpos de Verocay, num tumor da bainha do nervo.",
+      "C": "**Roda de carroça é do plasmócito.** A cromatina em raios é típica do mieloma e do plasmocitoma.",
+      "D": "**Tela de galinheiro é do condroblastoma.** Calcificação fina ao redor de cada célula, num tumor epifisário do adolescente."
     },
-    "geradoEm": "2026-09-22",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0307": {
-    "conceito": "### Metástase acral\nDistal ao cotovelo ou ao joelho (mãos, pés, rádio distal). **Rara**, e o primário mais comum é o ==pulmão== (em torno de metade dos casos).\n\n### A explicação circulatória\n- A maioria das metástases viaja pelo **plexo de Batson**, sem válvulas, para o esqueleto axial e as raízes dos membros.\n- O que cai na circulação venosa é **filtrado** pelo capilar pulmonar.\n- Chegar à mão ou ao pé exige via **arterial**. Só o pulmão lança êmbolos direto na circulação sistêmica, sem filtro.\n\n### Consequência prática\n- Lítica em falange, metacarpo, metatarso ou rádio distal em adulto, tratada como panarício, osteomielite ou artrite: pedir **tomografia de tórax**.\n- Muitas vezes é a **primeira manifestação** do câncer de pulmão.\n- Prognóstico reservado; tratamento local para função e dor.\n\n> **Na prova:** metástase acral = ==pulmão==.",
-    "correta": "**Pulmão.**\n- Único que semeia direto na circulação arterial.",
+    "conceito": "**Metástase acral** é a que aparece distal ao cotovelo ou ao joelho, e o primário mais comum é o **pulmão**, em torno de metade dos casos. A explicação está na circulação: a maioria das metástases chega ao esqueleto pelo plexo venoso de Batson, que despeja na coluna, na pelve e nas raízes dos membros, e o que cai na circulação venosa sistêmica é filtrado pelo capilar pulmonar. Mãos e pés só são alcançados por via **arterial**, e o pulmão é o único primário que lança êmbolos direto na circulação sistêmica, pelas veias pulmonares.\n\n**Na prática.** Lesão lítica em falange, metacarpo ou metatarso de um adulto, tratada como infecção ou artrite sem melhora, pede tomografia de tórax: a metástase acral pode ser a primeira manifestação de um câncer de pulmão desconhecido.\n\n**Na prova:** metástase abaixo do cotovelo ou do joelho é de **pulmão**.",
+    "correta": "**Pulmão.** É o único primário que chega por via arterial direta a mãos e pés.",
     "incorretas": {
-      "B": "**Primário oculto, não acral.**\n- O rim é resposta para primário desconhecido em geral, com distribuição axial.",
-      "C": "**Lidera no geral.**\n- A mama é a mais comum no conjunto, com distribuição axial.",
-      "D": "**Blástica e axial.**\n- A próstata acomete bacia e coluna lombar."
+      "B": "**Primário oculto, não acral.** O rim é resposta para primário desconhecido em geral, com distribuição axial.",
+      "C": "**Lidera no geral.** A mama é a mais comum no conjunto das metástases ósseas, com distribuição axial.",
+      "D": "**Blástica e axial.** A próstata acomete bacia e coluna lombar."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0308": {
-    "conceito": "### Metástase pulmonar do TCG\nOcorre numa minoria dos pacientes: as séries citam em geral **1 a 4%**, e a resposta da banca é ==cerca de 3%==.\n\n### Não é metástase no sentido usual\n- Histologia **idêntica** à do primário.\n- Comportamento **indolente**: pode estabilizar ou até regredir.\n- Mortalidade baixa.\n\n### Mecanismo e fator de risco\n- Aceita-se **embolização vascular** de fragmentos tumorais.\n- O principal fator de risco é a **recidiva local**. Mais um motivo para uma curetagem ampla e bem feita da primeira vez.\n\n### A outra exceção\nA **transformação maligna** é rara e, na maior parte das vezes, secundária a **radioterapia** prévia. Por isso a radioterapia saiu do tratamento quando há alternativa cirúrgica.\n\n### Na prática\n**Tomografia de tórax** no estadiamento e no seguimento de todo TCG, mesmo sendo lesão benigna.\n\n> **Na prova:** metástase pulmonar do TCG = ==cerca de 3%==, indolente.",
-    "correta": "**Cerca de 3%.**\n- Dentro da faixa de 1 a 4% das séries.",
+    "conceito": "**Metástase pulmonar do TCG.** Ocorre numa minoria dos pacientes, com séries citando em geral **1 a 4%**; a resposta da banca é **cerca de 3%**. Não é metástase no sentido usual: a histologia é idêntica à do primário, o comportamento é **indolente**, podendo estabilizar ou até regredir, e a mortalidade é baixa. Aceita-se que venha da **embolização vascular** de fragmentos tumorais, e o principal fator de risco é a **recidiva local**, mais um motivo para uma curetagem ampla e bem feita da primeira vez.\n\n**A outra exceção** é a transformação maligna, rara e na maioria das vezes secundária a radioterapia prévia, o que explica a saída da radioterapia do tratamento quando há alternativa cirúrgica. Na prática, todo TCG recebe **tomografia de tórax** no estadiamento e no seguimento, mesmo sendo uma lesão benigna.\n\n**Na prova:** metástase pulmonar do TCG é de **cerca de 3%**, e indolente.",
+    "correta": "**3%.** Está dentro da faixa de 1 a 4% das séries.",
     "incorretas": {
-      "A": "**Subestima.**\n- A faixa aceita é de 1 a 4%.",
-      "C": "**Acima do relatado.**",
-      "D": "**Muito acima.**\n- Nem a metástase nem a malignização chegam a essa frequência."
+      "A": "**Subestima.** A faixa aceita é de 1 a 4%.",
+      "C": "**Acima do relatado.** Sete por cento passa da frequência descrita.",
+      "D": "**Muito acima.** Nem a metástase nem a malignização chegam a essa frequência."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0309": {
-    "conceito": "### O que as imagens mostram\n- **Radiografias (A e B):** lesão **lítica**, **expansiva** e excêntrica na extremidade distal do rádio, chegando ao **osso subcondral**, com cortical adelgaçada e fratura.\n- **Ressonância (C, D, E):** massa que ocupa a epífise e a metáfise distais, com sinal intermediário e expansão da cortical.\n- **Lâmina:** ==células gigantes multinucleadas== distribuídas **de maneira uniforme** entre células mononucleares ovoides, com hemácias extravasadas.\n\n### Tudo converge\n- **40 anos**, fise fechada.\n- **Rádio distal**: terceira sede mais comum do ==tumor de células gigantes==.\n- Lise epifisária que atinge o subcondral.\n- Histologia típica.\n\n### O rádio distal é sede agressiva\n- Cortical fina, ruptura precoce para partes moles.\n- Recidiva maior após curetagem simples.\n- Com fratura e destruição extensa, considerar **ressecção em bloco** com reconstrução (enxerto de fíbula, artrodese ou translocação ulnar).\n\n### Antes da conduta\nCálcio e PTH (tumor marrom) e tomografia de tórax.\n\n> **Na prova:** adulto, rádio distal, lítica subcondral, células gigantes uniformes = ==TCG==.",
-    "correta": "**Tumor de células gigantes.**\n- Idade, sede, aspecto e lâmina típicos.",
+    "conceito": "**O que as imagens mostram.** As radiografias têm lesão **lítica**, **expansiva** e excêntrica na extremidade distal do rádio, chegando ao **osso subcondral**, com cortical adelgaçada e fratura. A ressonância mostra massa ocupando a epífise e a metáfise distais, com sinal intermediário e expansão da cortical. A lâmina tem **células gigantes multinucleadas** distribuídas de maneira **uniforme** entre células mononucleares ovoides, com hemácias extravasadas. Aos 40 anos, com a fise fechada, no rádio distal, terceira sede mais comum, e com lise epifisária até o subcondral, tudo converge para **tumor de células gigantes**.\n\n**O rádio distal é sede agressiva.** A cortical é fina, a ruptura para partes moles é precoce e a recidiva após curetagem simples é maior. Com fratura e destruição extensa, considera-se a ressecção em bloco com reconstrução por enxerto de fíbula, artrodese ou translocação ulnar. Antes de qualquer conduta, cálcio e PTH para afastar tumor marrom e tomografia de tórax.\n\n**Na prova:** adulto, rádio distal, lise subcondral e células gigantes uniformes é **TCG**.",
+    "correta": "**Tumor de células gigantes.** Idade, rádio distal, lise subcondral e histologia típica convergem.",
     "incorretas": {
-      "A": "**Outra histologia.**\n- O osteossarcoma teria osteoide maligno, atipia marcada e padrão metafisário agressivo.",
-      "B": "**Adolescente.**\n- O condroblastoma tem condroblastos, células gigantes esparsas e calcificação em tela de galinheiro.",
-      "C": "**Matriz cartilaginosa.**\n- O condrossarcoma prefere o esqueleto axial e proximal."
+      "A": "**Outra histologia.** O osteossarcoma teria osteoide maligno, atipia marcada e padrão metafisário agressivo.",
+      "B": "**Adolescente.** O condroblastoma tem condroblastos, células gigantes esparsas e calcificação em tela de galinheiro.",
+      "C": "**Matriz cartilaginosa.** O condrossarcoma prefere o esqueleto axial e proximal."
     },
     "referencias": [
       "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
       "Campanacci M et al. Giant-cell tumor of bone. J Bone Joint Surg Am. 1987;69:106-114.",
       "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 28"
     ],
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0310": {
-    "conceito": "### A tríade de McCune-Albright\n- **Displasia fibrosa poliostótica.**\n- **Manchas café com leite.**\n- ==Endocrinopatia==.\n\n### As manchas\n- Bordas **irregulares** (\"costa do Maine\"), ao contrário das bordas lisas (\"costa da Califórnia\") da neurofibromatose.\n- Tendem a **respeitar a linha média**, reflexo do mosaicismo.\n\n### A endocrinopatia\n- A mais frequente: **puberdade precoce** independente de gonadotrofina, sobretudo em meninas.\n- Também hipertireoidismo, **acromegalia**, Cushing.\n- **Raquitismo hipofosfatêmico** por excesso de **FGF23** produzido pelo tecido displásico.\n\n### A base\nMutação **pós-zigótica em mosaico** do **GNAS**, que ativa de forma constante a proteína Gs alfa. É a mesma da displasia fibrosa isolada; muda o **momento embrionário**: quanto mais cedo, mais tecidos afetados.\n\n### Vizinhas\n- **Mazabraud:** displasia fibrosa + mixomas intramusculares.\n- **Jaffe-Campanacci:** fibromas não ossificantes múltiplos + manchas.\n\n> **Na prova:** McCune-Albright = displasia fibrosa poliostótica + café com leite + ==distúrbio endócrino==.",
-    "correta": "**Distúrbio endócrino.**\n- O mais comum é a puberdade precoce.",
+    "conceito": "**A tríade de McCune-Albright** é **displasia fibrosa poliostótica**, **manchas café-com-leite** de bordas irregulares, as em costa do Maine, e **distúrbio endócrino** por hiperfunção. A endocrinopatia mais lembrada é a **puberdade precoce**, sobretudo em meninas, mas há também hipertireoidismo, excesso de hormônio do crescimento, síndrome de Cushing e hiperprolactinemia. Vem de uma mutação **pós-zigótica em mosaico do GNAS**, que ativa permanentemente a sinalização do AMP cíclico nos tecidos atingidos, o que explica o acometimento assimétrico.\n\n**Um detalhe renal importante.** A displasia fibrosa produz **FGF23**, que faz o rim perder fosfato; a hipofosfatemia piora a qualidade do osso e aumenta as fraturas, e precisa ser procurada. Para não confundir: displasia fibrosa com mixomas intramusculares é a síndrome de **Mazabraud**.\n\n**Na prova:** McCune-Albright é displasia fibrosa poliostótica, manchas e **endocrinopatia**.",
+    "correta": "**Distúrbio endócrino.** A puberdade precoce é a endocrinopatia mais típica.",
     "incorretas": {
-      "A": "**Não faz parte.**\n- O rim, quando envolvido, perde fosfato por ação do FGF23.",
-      "C": "**Mazabraud.**\n- Mixoma intramuscular define outra síndrome.",
-      "D": "**Não compõe.**\n- O tumor de partes moles associado à displasia fibrosa é o mixoma, de Mazabraud."
+      "A": "**Não faz parte.** Quando o rim é envolvido, é pela perda de fosfato causada pelo FGF23, não por síndrome nefrótica.",
+      "C": "**Mazabraud.** O mixoma intramuscular define outra síndrome.",
+      "D": "**Não compõe.** O tumor de partes moles associado à displasia fibrosa é o mixoma, da síndrome de Mazabraud."
     },
     "referencias": [
       "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 27"
     ],
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0311": {
-    "conceito": "### Bessel-Hagen\nDeformidade do antebraço da **osteocondromatose múltipla**:\n- ==Ulna hipoplásica== e curta.\n- ==Rádio encurvado==.\n- Translocação ulnar do carpo.\n- Em parte dos casos, **luxação da cabeça do rádio**.\n\nOs osteocondromas da ulna distal freiam seu crescimento; o rádio segue crescendo e se arqueia.\n\n### Os outros epônimos\n- **Madelung:** parada de crescimento da porção **ulnar e volar da fise do rádio** distal (muitas vezes pelo ligamento de **Vickers**). Superfície articular inclinada volar e ulnarmente, ulna proeminente dorsalmente. Associada à **discondrosteose de Léri-Weill** (gene **SHOX**), mais em meninas.\n- **Sauvé-Kapandji:** não é deformidade, é **cirurgia**. Artrodese da radioulnar distal com pseudartrose criada na ulna, preservando a prono-supinação.\n- **Ollier:** encondromatose múltipla; também deforma o antebraço, por outro mecanismo e sem esse nome.\n\n> **Na prova:** ulna curta + rádio arqueado na exostose múltipla = ==Bessel-Hagen==; Madelung é fise do rádio.",
-    "correta": "**Bessel-Hagen.**\n- A deformidade do antebraço na exostose múltipla.",
+    "conceito": "**A deformidade de Bessel-Hagen** é a do antebraço na **osteocondromatose múltipla**. Os osteocondromas da ulna distal freiam seu crescimento, e a **ulna fica hipoplásica**; o rádio continua crescendo e se **encurva**, com inclinação da superfície articular, translocação ulnar do carpo e, em parte dos casos, luxação da cabeça do rádio. O resultado é desvio do punho e limitação da prono-supinação, uma das principais indicações cirúrgicas da doença, tratada com ressecção das lesões, hemiepifisiodese radial, alongamento ulnar ou osteotomia.\n\n**Para não confundir.** A deformidade de **Madelung** também deixa o punho torto, mas vem da parada da fise distal do rádio, do lado ulnar e palmar, não de exostoses na ulna. **Ollier** é a encondromatose, de lesões intramedulares. **Sauvé-Kapandji** é uma cirurgia da radioulnar distal, e não uma deformidade.\n\n**Na prova:** ulna curta e rádio encurvado na exostose múltipla é **Bessel-Hagen**.",
+    "correta": "**Bessel-Hagen.** É a deformidade do antebraço da osteocondromatose múltipla.",
     "incorretas": {
-      "A": "**Outra doença.**\n- Ollier é encondromatose, de lesões intramedulares.",
-      "B": "**Fise do rádio.**\n- Madelung vem da parada da fise distal do rádio, não de exostoses na ulna.",
-      "D": "**É cirurgia.**\n- Sauvé-Kapandji é técnica para a radioulnar distal."
+      "A": "**Outra doença.** Ollier é encondromatose, de lesões intramedulares.",
+      "B": "**Fise do rádio.** Madelung vem da parada da fise distal do rádio, não de exostoses na ulna.",
+      "D": "**É cirurgia.** Sauvé-Kapandji é técnica para a articulação radioulnar distal."
     },
     "referencias": [
       "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 3.4"
     ],
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0312": {
-    "conceito": "### Os critérios atuais (IMWG)\n- Plasmocitose clonal na medula de **10% ou mais** (ou plasmocitoma comprovado).\n- **Mais** pelo menos um evento definidor.\n\n### CRAB\n- ==Hipercalcemia== (**C**).\n- Insuficiência **R**enal.\n- **A**nemia.\n- Lesões ósseas líticas (**B**one).\n\n### Biomarcadores somados ao CRAB\n- Plasmocitose medular de **60% ou mais**.\n- Relação de **cadeias leves livres** (envolvida/não envolvida) de **100 ou mais**.\n- **Mais de uma lesão focal** na ressonância.\n\n### O que é real, mas não é critério\n- **Infecções recorrentes:** hipogamaglobulinemia funcional.\n- **Sintomas neurológicos:** compressão medular, radiculopatia, neuropatia amiloide.\n- **Perda de peso:** constitucional, inespecífica.\n\n### Nota histórica\nNos antigos critérios (Durie-Salmon), os **maiores** eram plasmocitoma na biópsia, plasmocitose medular alta e pico monoclonal. Pelo critério atual, a hipercalcemia é evento definidor.\n\n> **Na prova:** entre as opções, o critério é a ==hipercalcemia== (o C do CRAB).",
-    "correta": "**Hipercalcemia.**\n- É o C do CRAB, evento definidor de mieloma.",
+    "conceito": "**Os critérios atuais (IMWG)** para mieloma exigem plasmocitose clonal na medula de **10% ou mais**, ou plasmocitoma comprovado por biópsia, **mais** pelo menos um evento definidor. Os eventos clássicos formam o **CRAB**: **hipercalcemia**, insuficiência renal, anemia e lesões ósseas líticas. Somam-se três biomarcadores que definem mieloma mesmo sem CRAB: plasmocitose medular de 60% ou mais, relação de cadeias leves livres envolvida sobre não envolvida de 100 ou mais e mais de uma lesão focal na ressonância.\n\n**O que é real, mas não é critério.** Infecções recorrentes, pela hipogamaglobulinemia funcional; sintomas neurológicos, por compressão medular, radiculopatia ou neuropatia amiloide; e perda de peso, sintoma constitucional inespecífico. Nos critérios antigos de Durie-Salmon, os maiores eram plasmocitoma na biópsia, plasmocitose medular alta e pico monoclonal; entre as opções desta questão, o que tem valor diagnóstico formal é a hipercalcemia.\n\n**Na prova:** entre as opções, o critério é a **hipercalcemia**, o C do CRAB.",
+    "correta": "**Hipercalcemia.** É o C do CRAB, evento definidor de mieloma.",
     "incorretas": {
-      "B": "**Manifestação, não critério.**\n- Decorre da hipogamaglobulinemia funcional.",
-      "C": "**Complicação.**\n- Não entra nos critérios.",
-      "D": "**Inespecífica.**\n- Sintoma constitucional sem valor diagnóstico formal."
+      "B": "**Manifestação, não critério.** As infecções decorrem da hipogamaglobulinemia funcional.",
+      "C": "**Complicação.** Problemas neurológicos não entram nos critérios.",
+      "D": "**Inespecífica.** A perda de peso é sintoma constitucional sem valor diagnóstico formal."
     },
     "referencias": [
       "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, 6ª edição, Cap. 87"
     ],
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0313": {
-    "conceito": "### O que as imagens mostram\n- **Radiografia (A) e tomografia (D):** massa com **calcificações condroides** na região do púbis e ísquio direitos.\n- **Ressonância (B, C):** lesão volumosa, lobulada, muito brilhante em T2: cartilagem.\n- **Peça (E):** ressecção em bloco da massa.\n- **Radiografia pós-operatória (F):** falta o **arco anterior** do lado direito (ramos púbico e isquiático), com o **acetábulo preservado**.\n\n### A classificação das ressecções pélvicas (Enneking e Dunham)\n- **Tipo I:** ilíaco.\n- **Tipo II:** periacetabular.\n- ==Tipo III:== **púbis e ísquio**.\n- **Tipo IV** (acrescentado depois): extensão ao **sacro**.\n\nCombinações são descritas pela soma (I+II, II+III etc.).\n\n### Na prática\n- Ressecção tipo III costuma **dispensar reconstrução**: o anel posterior e o acetábulo sustentam a carga.\n- Ressecções que envolvem o acetábulo (II) exigem reconstrução ou aceitam um quadril instável.\n- No condrossarcoma, a margem ampla é a única arma.\n\n> **Na prova:** ressecção de ==púbis e ísquio = tipo III==; acetábulo = II; ilíaco = I.",
-    "correta": "**Tipo III.**\n- Ressecção de púbis e ísquio, acetábulo preservado.",
+    "conceito": "**O que as imagens mostram.** A radiografia e a tomografia têm massa com **calcificações condroides** no púbis e no ísquio direitos; a ressonância mostra lesão volumosa, lobulada e muito brilhante em T2, de cartilagem; a peça é a ressecção em bloco; e a radiografia pós-operatória mostra a falta do **arco anterior** direito, com os ramos púbico e isquiático removidos e o **acetábulo preservado**.\n\n**A classificação das ressecções pélvicas** de Enneking e Dunham tem o **tipo I**, ilíaco, o **tipo II**, periacetabular, o **tipo III**, **púbis e ísquio**, e o tipo IV, acrescentado depois, com extensão ao sacro; as combinações se descrevem pela soma, como I+II ou II+III. A ressecção tipo III costuma dispensar reconstrução, porque o anel posterior e o acetábulo sustentam a carga; as que retiram o acetábulo exigem reconstrução ou aceitam um quadril instável. No condrossarcoma, a margem ampla é a única arma.\n\n**Na prova:** ressecção de **púbis e ísquio é tipo III**; acetábulo é II; ilíaco é I.",
+    "correta": "**III.** Foram retirados púbis e ísquio, com o acetábulo preservado.",
     "incorretas": {
-      "A": "**Ilíaco.**\n- O tipo I remove a asa ilíaca, não o arco anterior.",
-      "B": "**Acetábulo.**\n- O tipo II é periacetabular, e o acetábulo está preservado na imagem.",
-      "D": "**Sacro.**\n- O tipo IV envolve o sacro."
+      "A": "**Ilíaco.** O tipo I remove a asa ilíaca, não o arco anterior.",
+      "B": "**Acetábulo.** O tipo II é periacetabular, e o acetábulo está preservado na imagem.",
+      "D": "**Sacro.** O tipo IV envolve o sacro."
     },
     "referencias": [
       "Enneking WF, Dunham WK. Resection and reconstruction for primary neoplasms involving the innominate bone. J Bone Joint Surg Am. 1978;60:731-746.",
       "Campanacci M. Bone and Soft Tissue Tumors. 2nd ed. Springer; 1999.",
       "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 26"
     ],
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0314": {
-    "conceito": "### O que é\nA **hiperfosfatasia idiopática** (Paget juvenil) é displasia óssea **autossômica recessiva**, por perda de função do gene **TNFRSF11B**, que codifica a ==osteoprotegerina==.\n\n### Por que imita o Paget\n- A osteoprotegerina é o receptor-isca que **sequestra o RANKL** e freia os osteoclastos.\n- Sem ela, o RANKL age sem oposição.\n- Resultado: remodelamento **acelerado e desorganizado**, o mesmo mecanismo da ==doença de Paget==.\n\n### O quadro\n- Fosfatase alcalina **muito elevada**.\n- Ossos longos alargados, **encurvados** e frágeis, com fraturas de repetição.\n- Crânio alargado, **surdez**, dor óssea, baixa estatura.\n\n### Diferença para o Paget do adulto\n- **Primeira infância.**\n- Distribuição **generalizada**.\n\n### Tratamento\n**Bisfosfonatos**: repõem farmacologicamente o freio osteoclástico que a genética retirou.\n\n> **Na prova:** hiperfosfatasia idiopática = ==Paget juvenil== (falta de osteoprotegerina).",
-    "correta": "**Doença de Paget.**\n- Mesmo remodelamento acelerado e desorganizado.",
+    "conceito": "**O que é.** A hiperfosfatasia idiopática, também chamada **Paget juvenil**, é uma displasia óssea **autossômica recessiva** por perda de função do gene TNFRSF11B, que codifica a **osteoprotegerina**. A osteoprotegerina é o receptor-isca que sequestra o **RANKL** e freia os osteoclastos; sem ela, o RANKL age sem oposição, e o remodelamento fica **acelerado e desorganizado**, o mesmo mecanismo da **doença de Paget**.\n\n**O quadro.** Fosfatase alcalina muito elevada, ossos longos alargados, encurvados e frágeis, com fraturas de repetição, crânio alargado, surdez, dor óssea e baixa estatura. Difere do Paget do adulto por começar na primeira infância e ter distribuição generalizada. O tratamento com **bisfosfonatos** repõe, farmacologicamente, o freio osteoclástico que a genética retirou.\n\n**Na prova:** hiperfosfatasia idiopática é o **Paget juvenil**, por falta de osteoprotegerina.",
+    "correta": "**Doença de Paget.** Remodelamento acelerado e desorganizado, pelo RANKL sem freio.",
     "incorretas": {
-      "A": "**Defeito de mineralização.**\n- A osteomalácia tem osso mole e fosfatase alta, sem hiper-remodelamento.",
-      "C": "**Mineralização na criança.**\n- O raquitismo tem fises alargadas em taça.",
-      "D": "**Defeito de colágeno.**\n- A osteogênese imperfeita tem escleras azuis e dentinogênese imperfeita."
+      "A": "**Defeito de mineralização.** A osteomalácia tem osso mole e fosfatase alta, sem hiper-remodelamento.",
+      "C": "**Mineralização na criança.** O raquitismo tem fises alargadas em taça.",
+      "D": "**Defeito de colágeno.** A osteogênese imperfeita tem escleras azuis e dentinogênese imperfeita."
     },
     "referencias": [
       "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 38"
     ],
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0315": {
-    "conceito": "### Onde cada lesão mora\nA localização dentro do osso (epífise, metáfise, diáfise) orienta o diferencial.\n\n### As epifisárias\n- ==Tumor de células gigantes==: excêntrico, até o osso **subcondral**, com **fise fechada**. O mais importante do grupo.\n- **Condroblastoma:** epifisário com **fise aberta**.\n- **Condrossarcoma de células claras:** epifisário do adulto, raro.\n- Também infecção (abscesso epifisário) e geodo.\n\n### As das alternativas\n- **Histiocitose:** diafisária ou metafisária; crânio, vértebra plana.\n- **Ewing:** diafisário ou metadiafisário.\n- **Linfoma do adulto:** diafisário, permeativo.\n- **Adamantinoma:** diáfise da tíbia, cortical anterior.\n\n> **Na prova:** epífise no adulto = ==TCG==; epífise na criança = condroblastoma.",
-    "correta": "**Tumor de células gigantes.**\n- A lesão epifisária mais importante do adulto.",
+    "conceito": "**Poucas lesões vivem na epífise.** A localização dentro do osso é um dos melhores filtros diagnósticos, e a epífise tem uma lista curta. Com a **fise fechada**, no adulto jovem, a principal é o **tumor de células gigantes**, lítico, excêntrico, sem esclerose marginal e chegando ao osso subcondral. Com a **fise aberta**, é o condroblastoma, com halo esclerótico. Completam a lista a infecção, o geodo das artropatias e, raramente, o condrossarcoma de células claras.\n\n**As outras opções são diafisárias.** O sarcoma de Ewing prefere a diáfise e a metadiáfise, com padrão permeativo e casca de cebola; o linfoma ósseo primário do adulto também é diafisário; o adamantinoma fica na cortical anterior da diáfise da tíbia; e a histiocitose é diafisária ou metafisária, e na coluna faz a vértebra plana.\n\n**Na prova:** lesão epifisária no adulto é **tumor de células gigantes**; na criança, condroblastoma.",
+    "correta": "**Tumor de células gigantes.** É a principal lesão epifisária depois do fechamento da fise.",
     "incorretas": {
-      "A": "**Diafisária ou metafisária.**\n- A histiocitose não é epifisária.",
-      "B": "**Diafisário.**\n- O Ewing prefere a diáfise e a metadiáfise.",
-      "C": "**Diafisário.**\n- O linfoma ósseo primário prefere a diáfise.",
-      "D": "**Diafisário.**\n- O adamantinoma fica na cortical anterior da diáfise da tíbia."
+      "A": "**Diafisária ou metafisária.** A histiocitose não é epifisária.",
+      "B": "**Diafisário.** O Ewing prefere a diáfise e a metadiáfise.",
+      "C": "**Diafisário.** O linfoma ósseo primário prefere a diáfise.",
+      "D": "**Diafisário.** O adamantinoma fica na cortical anterior da diáfise da tíbia."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0316": {
-    "conceito": "### O estadiamento AJCC para sarcomas ósseos (esqueleto apendicular)\n- **T:** T1 até **8 cm**; T2 maior que 8 cm; T3 lesões **descontínuas** no mesmo osso (skip).\n- **G:** baixo grau (G1) ou alto grau (G2/G3).\n- **M:** M1a pulmão; M1b outros sítios.\n\n### Os estágios\n- **IA / IB:** baixo grau, T1 / T2.\n- **IIA:** alto grau, **T1**.\n- **IIB:** alto grau, **T2**.\n- **III:** T3 (skip).\n- **IVA / IVB:** metástase pulmonar / outros sítios.\n\n### O Ewing\nÉ tratado como **alto grau** por definição.\n\n### Aplicando ao caso\nAlto grau, menos de 6 cm (T1), sem skip, sem metástase: pelo sistema atual, o enquadramento é **IIA**. A banca deu **IIB** (veja o alerta acima). Para a prova desta banca, vale o gabarito; para o raciocínio, vale a regra: IIA x IIB se decide pelo tamanho (8 cm), e \"intracompartimental\" é linguagem de **Enneking**, não de AJCC.\n\n> **Na prova:** no AJCC, ==8 cm separa T1 de T2==; skip = III; metástase = IV.",
-    "correta": "**IIB, pelo gabarito oficial.**\n- Pelos critérios atuais do AJCC, o caso (alto grau, T1, M0) se enquadraria em IIA; veja o alerta.",
+    "conceito": "**O estadiamento AJCC para sarcomas ósseos** do esqueleto apendicular usa três letras. O **T**: T1 até **8 cm**, T2 acima de 8 cm e T3 para lesões descontínuas no mesmo osso, as skip. O **G**: baixo ou alto grau. O **M**: M1a para pulmão e M1b para outros sítios. Os estágios ficam assim: IA e IB para baixo grau T1 e T2; **IIA** para alto grau T1; **IIB** para alto grau T2; III para T3; e IVA e IVB para metástase pulmonar ou em outros sítios. O Ewing é tratado como alto grau por definição.\n\n**Aplicando ao caso.** Alto grau, menos de 6 cm, portanto T1, sem skip e sem metástase: pelo sistema atual, o enquadramento seria **IIA**. A banca deu **IIB**, como explica o alerta. Para a prova desta banca vale o gabarito; para o raciocínio vale a regra: IIA e IIB se separam pelo tamanho de 8 cm, e \"intracompartimental\" é linguagem de Enneking, não do AJCC.\n\n**Na prova:** no AJCC, **8 cm separa T1 de T2**; skip é III; metástase é IV.",
+    "correta": "**II B.** É o gabarito oficial da banca, embora os critérios do AJCC apontem para II A.",
     "incorretas": {
-      "A": "**O enquadramento pelos critérios.**\n- Alto grau e até 8 cm é IIA no AJCC, mas não é o gabarito da banca.",
-      "C": "**Exige skip.**\n- O III é reservado às lesões descontínuas no mesmo osso.",
-      "D": "**Não existe.**\n- O AJCC para osso não subdivide o III.",
-      "E": "**Não existe.**\n- Metástase a distância é estágio IV (A pulmão, B outros sítios)."
+      "A": "**O enquadramento pelos critérios.** Alto grau e até 8 cm é IIA no AJCC, mas não foi o gabarito da banca.",
+      "C": "**Exige skip.** O estágio III é reservado às lesões descontínuas no mesmo osso.",
+      "D": "**Não existe.** O AJCC para osso não subdivide o estágio III.",
+      "E": "**Não existe.** Metástase a distância é estágio IV, A para pulmão e B para outros sítios."
     },
     "alerta": "Vale uma ressalva sobre este item: pela descrição do enunciado (lesão intracompartimental, menor que 6 cm (portanto abaixo do corte de 8 cm) e sem metástases), a combinação clássica de critérios do estadiamento AJCC para sarcomas ósseos (grau alto + T1 intracompartimental) aponta para o estágio II A, e não II B (que classicamente corresponde a tumores extracompartimentais ou maiores que 8 cm). Mantemos aqui o gabarito oficial da banca (II B), mas registramos essa aparente divergência para quem for revisar o tema com atenção ao critério de tamanho/compartimento.",
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0317": {
-    "conceito": "### Osteossarcoma secundário\nSurge sobre lesão óssea **pré-existente**, em pacientes mais velhos. A associação mais clássica é a ==doença de Paget==.\n- Degeneração sarcomatosa **rara** em termos absolutos (em torno de 1% dos pacientes).\n- Mais em **doença poliostótica** e de longa data.\n- Sedes: **pelve**, fêmur, úmero, crânio.\n\n### O sinal de alarme\n**Dor nova ou que muda de padrão** num osso pagético. É o caso do enunciado: dor antiga no ilíaco, que piorou nos últimos meses.\n\n### Prognóstico\n**Muito ruim**, pior que o osteossarcoma primário: idade, sede axial e pouca resposta à quimioterapia.\n\n### Outras causas de sarcoma secundário\n- **Radiação** prévia (a outra grande causa).\n- Infarto ósseo e osteomielite crônica, mais raramente.\n\n> **Na prova:** idoso com Paget e dor nova = pensar em ==osteossarcoma secundário==.",
-    "correta": "**Doença de Paget.**\n- A causa clássica de osteossarcoma secundário.",
+    "conceito": "**Osteossarcoma secundário** é o que surge sobre uma lesão óssea **pré-existente**, em pacientes mais velhos, e a associação mais clássica é a **doença de Paget**. A degeneração sarcomatosa é rara em termos absolutos, em torno de 1% dos pacientes, mais comum na doença poliostótica e de longa data, e aparece na pelve, no fêmur, no úmero e no crânio. O sinal de alarme é exatamente o do enunciado: **dor nova, ou que muda de padrão**, num osso pagético, como a dor antiga no ilíaco que piorou nos últimos meses.\n\n**Prognóstico e outras causas.** O prognóstico é muito ruim, pior que o do osteossarcoma primário, pela idade, pela sede axial e pela pouca resposta à quimioterapia. A outra grande causa de sarcoma secundário é a **radiação** prévia; infarto ósseo e osteomielite crônica são causas mais raras e costumam originar outros tumores.\n\n**Na prova:** idoso com Paget e dor nova faz pensar em **osteossarcoma secundário**.",
+    "correta": "**A doença de Paget.** É a lesão pré-existente mais associada ao osteossarcoma secundário.",
     "incorretas": {
-      "A": "**Raro.**\n- O infarto ósseo origina mais sarcoma pleomórfico indiferenciado que osteossarcoma.",
-      "B": "**Condrossarcoma.**\n- O osteocondroma maligniza para condrossarcoma, não osteossarcoma.",
-      "D": "**Não maligniza.**\n- O osteoma osteoide é benigno.",
-      "E": "**Carcinoma.**\n- A osteomielite crônica origina mais carcinoma espinocelular no trajeto fistuloso (úlcera de Marjolin)."
+      "A": "**Raro.** O infarto ósseo origina mais sarcoma pleomórfico indiferenciado que osteossarcoma.",
+      "B": "**Condrossarcoma.** O osteocondroma maligniza para condrossarcoma, não para osteossarcoma.",
+      "D": "**Não maligniza.** O osteoma osteoide é benigno.",
+      "E": "**Carcinoma.** A osteomielite crônica origina mais carcinoma espinocelular no trajeto fistuloso, a úlcera de Marjolin."
     },
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0318": {
-    "conceito": "### O que a radiografia mostra\nOmbro em rotação externa: lesão **lítica**, arredondada e **bem delimitada** na **epífise da cabeça umeral** (seta), com fino halo esclerótico, sem reação periosteal nem massa.\n\n### Por que condroblastoma\n- **15 anos**, fise **aberta**.\n- Lesão **epifisária** (ou apofisária).\n- Sedes típicas: **úmero proximal**, fêmur proximal e distal, tíbia proximal.\n\nDiagnóstico: ==condroblastoma==.\n\n### O que mais ajuda\n- Calcificações internas em parte dos casos.\n- **Edema perilesional** exuberante na ressonância, desproporcional ao tamanho.\n- Histologia: condroblastos, células gigantes esparsas e calcificação em **tela de galinheiro**.\n\n### Tratamento\n- **Curetagem** com adjuvante e enxerto.\n- Cuidado com a **fise** e a **cartilagem articular**.\n- Recidiva não desprezível; rara metástase pulmonar benigna.\n\n> **Na prova:** lítica epifisária em adolescente com fise aberta = ==condroblastoma==.",
-    "correta": "**Condroblastoma.**\n- Lítica epifisária bem delimitada em adolescente.",
+    "conceito": "**O que a radiografia mostra.** O ombro em rotação externa tem lesão **lítica**, arredondada e **bem delimitada** na **epífise da cabeça umeral**, com fino halo esclerótico, sem reação periosteal nem massa. Um adolescente de 15 anos, com a **fise aberta**, lesão epifisária e sede típica, o úmero proximal, ao lado do fêmur proximal e distal e da tíbia proximal: o diagnóstico é **condroblastoma**.\n\n**O que mais ajuda.** Calcificações internas em parte dos casos, **edema perilesional** exuberante na ressonância, desproporcional ao tamanho da lesão, e a histologia com condroblastos, células gigantes esparsas e calcificação em tela de galinheiro. O tratamento é a **curetagem** com adjuvante e enxerto, com cuidado com a fise e a cartilagem articular; a recidiva não é desprezível, e há rara metástase pulmonar benigna.\n\n**Na prova:** lesão lítica epifisária em adolescente com fise aberta é **condroblastoma**.",
+    "correta": "**Condroblastoma.** Lesão lítica epifisária bem delimitada num adolescente com fise aberta.",
     "incorretas": {
-      "A": "**Agressivo e metafisário.**\n- Destruição cortical, reação periosteal e matriz osteoide.",
-      "C": "**Cortical.**\n- Nicho pequeno com esclerose densa, diafisário ou metafisário.",
-      "D": "**Fise fechada.**\n- O TCG é do adulto jovem, depois do fechamento fisário."
+      "A": "**Agressivo e metafisário.** O osteossarcoma teria destruição cortical, reação periosteal e matriz osteoide.",
+      "C": "**Cortical.** O osteoma osteoide é um nicho pequeno com esclerose densa, diafisário ou metafisário.",
+      "D": "**Fise fechada.** O TCG é do adulto jovem, depois do fechamento fisário."
     },
     "referencias": [
       "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 13"
     ],
-    "geradoEm": "2026-09-23",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0319": {
-    "conceito": "### Vértebra plana na criança\n- Colapso uniforme do corpo vertebral, com discos e elementos posteriores preservados.\n- Causa clássica: ==granuloma eosinofílico== (histiocitose de células de Langerhans).\n- Diagnósticos diferenciais: Ewing, leucemia, linfoma, osteomielite.\n- A evolução costuma ser benigna, com **reconstituição parcial da altura** durante o crescimento. Biópsia só se o quadro for atípico.\n\n> **Na prova:** vértebra plana em criança = ==granuloma eosinofílico==.",
-    "correta": "**Granuloma eosinofílico.**",
+    "conceito": "**Vértebra plana na criança.** O colapso quase completo e simétrico do corpo vertebral, com discos adjacentes preservados e sem massa de partes moles, é a **vértebra plana de Calvé**, e no esqueleto imaturo a causa mais comum é o **granuloma eosinofílico**, a forma localizada da histiocitose de células de Langerhans. Déficit neurológico é raro, porque não há massa comprimindo o canal, e a altura se reconstitui em graus variáveis com o crescimento, o que faz da observação, com ou sem órtese, a conduta habitual.\n\n**O diferencial.** Leucemia e linfoma podem colapsar a vértebra, o Ewing destrói com massa de partes moles, e o cisto ósseo aneurismático prefere os elementos posteriores e é expansivo. A infecção ataca o disco, que aqui está preservado. Quadro atípico pede biópsia, porque há malignos na lista.\n\n**Na prova:** vértebra plana na criança é **granuloma eosinofílico**.",
+    "correta": "**Granuloma eosinofílico.** É a causa clássica de vértebra plana no esqueleto imaturo.",
     "incorretas": {
-      "A": "**Linfoma** entra no diferencial, mas é raro.",
-      "B": "**Ewing** pode colapsar a vértebra, mas não é a causa mais comum.",
-      "D": "**Cisto ósseo aneurismático** acomete mais os elementos posteriores."
+      "A": "**Diferencial raro.** O linfoma entra na lista, mas é causa rara de vértebra plana na criança.",
+      "B": "**Não é o mais comum.** O Ewing pode colapsar a vértebra, mas destrói com massa de partes moles.",
+      "D": "**Elementos posteriores.** O cisto ósseo aneurismático acomete mais o arco posterior e é expansivo."
     },
     "referencias": [
       "Canale S. T. Campbell's operative orthopaedics. St. Louis: Mosby. 11th ed., p. 896 (referência indicada na prova TARO 2011, questão 23)"
     ],
-    "geradoEm": "2026-09-24",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0320": {
-    "conceito": "### Condrossarcoma após ressecção\n- Tumor resistente a quimioterapia e radioterapia: o tratamento é a ressecção com **margem ampla**.\n- A complicação mais frequente é a ==recidiva local==, sobretudo com margem inadequada ou na pelve.\n- A recidiva pode vir com **grau histológico maior**.\n- Metástase pulmonar é o destino dos de alto grau, mas é menos frequente que a recidiva.\n\n> **Na prova:** condrossarcoma operado = ==recidiva local==.",
-    "correta": "**Recidiva local.**",
+    "conceito": "**O problema do condrossarcoma é local.** Depois da ressecção, a complicação mais frequente é a **recidiva local**. O condrossarcoma não responde a quimioterapia nem a radioterapia convencionais, e a única arma é a margem cirúrgica; qualquer contaminação, margem estreita ou tumor residual volta a crescer. O risco é maior na **pelve** e no esqueleto axial, onde a margem ampla é mais difícil, e após curetagem de lesões que se revelam de grau maior do que se pensava. A recidiva também pode vir com grau mais alto que o tumor original.\n\n**E as metástases?** A **pulmonar** acontece sobretudo nos tumores de alto grau e no condrossarcoma desdiferenciado, mas é menos frequente que a recidiva no conjunto. Metástase hepática é rara, e a metástase saltatória, a skip, é característica do osteossarcoma.\n\n**Na prova:** a complicação mais comum após ressecar um condrossarcoma é a **recidiva local**.",
+    "correta": "**Recidiva local.** Sem resposta a quimio e radioterapia, tudo depende da margem.",
     "incorretas": {
-      "B": "**Metástase hepática** é rara.",
-      "C": "**Metástase saltatória** é característica do osteossarcoma.",
-      "D": "**Metástase pulmonar** ocorre nos de alto grau, menos que a recidiva."
+      "B": "**Rara.** Metástase hepática é incomum no condrossarcoma.",
+      "C": "**Do osteossarcoma.** A metástase saltatória é característica do osteossarcoma.",
+      "D": "**Menos frequente.** A metástase pulmonar ocorre nos de alto grau, mas menos que a recidiva."
     },
     "referencias": [
       "Canale & Beaty: Campbell’s Operative Orthopaedics, 10th Ed., p. 835 (referência indicada na prova TARO 2013, questão 26)"
     ],
-    "geradoEm": "2026-09-24",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0321": {
-    "conceito": "### Histologia do granuloma eosinofílico\n- Proliferação de **células de Langerhans** (histiócitos de núcleo reniforme, em \"grão de café\"), com eosinófilos.\n- Marcadores: CD1a, S-100 e langerina (CD207).\n- ==Grânulos de Birbeck== no citoplasma, perto do núcleo, com forma de raquete de tênis na microscopia eletrônica.\n- Atividade mitótica baixa.\n\n### Histiocitose de células de Langerhans\n| Forma | Perfil |\n|---|---|\n| ==granuloma eosinofílico== (unifocal) | 5 a 10 anos; crânio, vértebra (vértebra plana), costelas, fêmur |\n| Hand-Schüller-Christian | multifocal: lesões cranianas, exoftalmia, diabetes insípido |\n| Letterer-Siwe | disseminada, lactente, grave |\n\n- RX: lítica em saca-bocado, bordas bem definidas ou agressivas (\"o grande imitador\").\n- Tratamento: biópsia com curetagem, corticoide intralesional, observação; quimioterapia na multissistêmica.\n\n> **Na prova:** granuloma eosinofílico = ==grânulos de Birbeck==.",
-    "correta": "**Grânulos de Birbeck.**\n- Citoplasmáticos, perto do núcleo.\n- Raquete de tênis na microscopia eletrônica.",
+    "conceito": "**A célula de Langerhans.** O granuloma eosinofílico, forma localizada da histiocitose de células de Langerhans, tem como marca a proliferação dessas células: histiócitos de núcleo claro, **reniforme** ou em grão de café, com fenda, e citoplasma com os **grânulos de Birbeck**, estruturas em raquete vistas à microscopia eletrônica, próximas ao núcleo. Na imuno-histoquímica são positivas para **CD1a**, **langerina (CD207)** e S100. Em volta, muitos **eosinófilos**, que dão nome à lesão, e células gigantes ocasionais.\n\n**O que não caracteriza.** A atividade mitótica é baixa; as células gigantes podem existir, mas não definem a lesão; e o infiltrado é de eosinófilos, não de neutrófilos. Clinicamente, é lesão lítica em saca-bocado de criança, no crânio, nas costelas, na coluna (vértebra plana) e nos ossos longos, muitas vezes com regressão espontânea.\n\n**Na prova:** granuloma eosinofílico tem **grânulos de Birbeck** perto do núcleo, com CD1a e langerina.",
+    "correta": "**Grânulos no citoplasma próximos ao núcleo.** São os grânulos de Birbeck da célula de Langerhans.",
     "incorretas": {
-      "A": "**Mitoses.**\n- Atividade mitótica baixa.",
-      "B": "**Células gigantes.**\n- Podem existir, mas não caracterizam.",
-      "C": "**Neutrófilos.**\n- Predominam eosinófilos."
+      "A": "**Mitoses.** A atividade mitótica é baixa.",
+      "B": "**Células gigantes.** Podem existir, mas não caracterizam a lesão.",
+      "C": "**Neutrófilos.** O infiltrado é de eosinófilos."
     },
     "referencias": [
       "Herring: Tachdjian’s Pediatric Orthopaedics, 4th Ed., p. 2227 (referência indicada na prova TARO 2013, questão 37)"
     ],
-    "geradoEm": "2026-09-24",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0322": {
-    "conceito": "### Estadiamento de Enneking (malignos)\n- **I:** baixo grau. **II:** alto grau. **III:** metástase (qualquer grau).\n- **A:** intracompartimental. **B:** extracompartimental.\n- ==IIA = alto grau, intracompartimental, sem metástase==.\n\n### Enneking completo\n| Estágio | Grau | Local | Metástase |\n|---|---|---|---|\n| IA | baixo | intra (T1) | não |\n| IB | baixo | extra (T2) | não |\n| ==IIA== | ==alto== | ==intra== | ==não== |\n| IIB | alto | extra | não |\n| III | qualquer | qualquer | sim |\n\n- Benignos: 1 latente, 2 ativo, 3 agressivo.\n\n> **Na prova:** IIA = ==alto grau + intra + sem metástase==.",
-    "correta": "**Intra, alto grau, sem metástase.**\n- II = alto grau.\n- A = intracompartimental.",
+    "conceito": "**Como se lê Enneking.** O algarismo indica o **grau**: I é baixo grau, II é alto grau, e III é qualquer tumor com **metástase**, que define o estágio sozinha e não recebe letra. A letra indica o **compartimento**: A é intracompartimental, contido pelas barreiras naturais (cortical íntegra, periósteo, cartilagem articular, fáscia e cápsula), e B é extracompartimental. Assim, **IIA** é tumor de **alto grau, intracompartimental e sem metástase**.\n\n**Por que importa.** Com o tumor contido, a margem ampla atravessa tecido normal no mesmo compartimento; com a barreira rompida, é preciso incluir o compartimento vizinho. A sequência completa é IA, IB, IIA, IIB e III, e o estágio IV não existe em Enneking: pertence ao AJCC.\n\n**Na prova:** IIA é **alto grau, contido e sem metástase**.",
+    "correta": "**Intracompartimental, de alto grau de malignidade e sem metástase.** É a definição de IIA.",
     "incorretas": {
-      "A": "**Extra e metástase.**\n- Seria III.",
-      "C": "**Baixo grau.**\n- Seria IA.",
-      "D": "**Com metástase.**\n- Qualquer metástase é III."
+      "A": "**Extracompartimental e com metástase.** Com metástase, o estágio seria III.",
+      "C": "**Baixo grau.** Baixo grau intracompartimental seria IA.",
+      "D": "**Com metástase.** Qualquer metástase coloca o tumor no estágio III."
     },
     "referencias": [
       "Canale & Beaty: Campbell’s Operative Orthopaedics, 11th Ed., p. 778 (referência indicada na prova TARO 2013, questão 43)"
     ],
-    "geradoEm": "2026-09-24",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0323": {
-    "conceito": "### Sinovite vilonodular pigmentada (tumor tenossinovial de células gigantes difuso)\n- Proliferação sinovial com vilosidades e nódulos.\n- Histologia: ==estroma fibroso com depósito de hemossiderina== (pigmento marrom), células mononucleares (histiócitos), **células gigantes multinucleadas** e células espumosas.\n- Sem atipia nem mitoses anormais.\n- RM: hipossinal em T1 e T2 (**blooming** no gradiente de eco).\n\n### Formas do tumor tenossinovial de células gigantes\n| Forma | Local | Tratamento |\n|---|---|---|\n| localizada | bainha dos dedos, nódulo no joelho | excisão marginal |\n| ==difusa (SVNP)== | joelho (80%), quadril, tornozelo | sinovectomia total (aberta ou artroscópica), radiossinovectomia, inibidores de CSF1R (pexidartinibe) |\n\n- Recidiva alta na difusa (até 50%).\n\n> **Na prova:** SVNP = ==hemossiderina==.",
-    "correta": "**Estroma fibroso com hemossiderina.**\n- Pigmento marrom característico.\n- Explica o hipossinal na RM.",
+    "conceito": "**A histologia da sinovite vilonodular**, hoje tumor tenossinovial de células gigantes, é de uma proliferação **benigna**: células sinoviais e fibroblastos num **estroma fibroso**, com **macrófagos carregados de hemossiderina**, das hemartroses de repetição, células xantomatosas espumosas e **células gigantes multinucleadas** de tipo osteoclástico. A hemossiderina dá a cor castanho-avermelhada da sinovial na artroscopia e os focos de sinal baixo em T1 e T2 na ressonância.\n\n**O que não aparece.** Não há atipia celular nem figuras mitóticas anormais, próprias de lesão maligna. E \"células gigantes mononucleares\" é uma contradição: célula gigante, por definição, é multinucleada. A base molecular é uma translocação envolvendo o gene CSF1, o que explica o recrutamento maciço de macrófagos e o uso de inibidores do CSF1R na forma difusa irressecável.\n\n**Na prova:** sinovite vilonodular é **estroma fibroso com hemossiderina**, e células gigantes multinucleadas.",
+    "correta": "**Estroma fibroso com hemossiderina.** Reflete as hemartroses de repetição numa proliferação benigna.",
     "incorretas": {
-      "A": "**Atipia.**\n- Ausente; lesão benigna.",
-      "B": "**Mitoses anormais.**\n- Ausentes.",
-      "C": "**Gigantes mononucleares.**\n- Contradição: gigantes são multinucleadas."
+      "A": "**Atipia.** Não há atipia: a lesão é benigna.",
+      "B": "**Mitoses anormais.** Estão ausentes.",
+      "C": "**Contradição.** Células gigantes são, por definição, multinucleadas."
     },
     "referencias": [
       "Lovell and Winter’s Pediatric Orthopaedics, 6th Ed., p. 539 (referência indicada na prova TARO 2013, questão 49)"
     ],
-    "geradoEm": "2026-09-24",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0324": {
-    "conceito": "### Princípios da biópsia de tumor maligno\n- Incisão ==longitudinal==, no trajeto da futura ressecção, para que o trajeto seja retirado em bloco.\n- Por um único compartimento, sem expor feixes neurovasculares.\n- Garrote **sem exsanguinação** por faixa (espremer o membro dissemina células), soltando antes de fechar para hemostasia rigorosa.\n- Dreno, se usado, sai em linha com a incisão.\n- Idealmente feita pelo cirurgião que fará a ressecção.\n\n### Erros que contaminam\n| Erro | Consequência |\n|---|---|\n| incisão transversa | trajeto largo: amputação ou ressecção maior |\n| exsanguinação com faixa | disseminação de células |\n| hematoma | contaminação dos compartimentos |\n| via por dois compartimentos ou perto de feixes | ressecção maior |\n\n- Biópsia percutânea por agulha guiada por imagem é a primeira escolha na maioria.\n\n> **Na prova:** biópsia = ==longitudinal e sem exsanguinação==.",
-    "correta": "**Longitudinal, sem exsanguinação.**\n- Trajeto ressecável em bloco.\n- Faixa espreme células tumorais.",
+    "conceito": "**Via longitudinal.** A biópsia de tumor ósseo maligno é feita por acesso **longitudinal**, alinhado ao eixo do membro e ao trajeto da futura ressecção, porque todo o trajeto da biópsia será ressecado em bloco com o tumor. Uma incisão transversal cruza compartimentos, amplia muito a ressecção e pode inviabilizar a preservação do membro.\n\n**Sem exsanguinação.** O garrote pode ser usado, mas o membro é esvaziado apenas por **elevação**, nunca com faixa de Esmarch, que espreme o tumor e pode empurrar células tumorais para a circulação. As outras regras completam o cuidado: atravessar o menor número de compartimentos e nunca um intervalo neurovascular, janela óssea oval ou redonda, hemostasia rigorosa, de preferência sem dreno, e biópsia feita pela equipe que fará o tratamento definitivo.\n\n**Na prova:** biópsia de tumor maligno é **longitudinal e sem exsanguinação**.",
+    "correta": "**Longitudinal e sem exsanguinação.** Trajeto ressecável e sem espremer o tumor.",
     "incorretas": {
-      "A": "**Transversa com exsanguinação.**\n- Dois erros.",
-      "B": "**Transversa.**\n- Aumenta a ressecção.",
-      "C": "**Com exsanguinação.**\n- Dissemina células."
+      "A": "**Dois erros.** A incisão transversal amplia a ressecção, e a exsanguinação pode disseminar células.",
+      "B": "**Transversa.** A incisão transversal cruza compartimentos e aumenta a ressecção.",
+      "C": "**Com exsanguinação.** A faixa de Esmarch espreme o tumor e pode disseminar células."
     },
     "referencias": [
       "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 780 (referência indicada na prova TARO 2013, questão 52)"
     ],
-    "geradoEm": "2026-09-24",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0325": {
-    "conceito": "### Escore de Mirels (risco de fratura patológica)\n- Quatro itens, de 1 a 3 pontos cada:\n  - **Local:** membro superior 1, membro inferior 2, ==peritrocantérica 3==;\n  - **Dor:** leve 1, moderada 2, **funcional** 3;\n  - **Lesão:** blástica 1, mista 2, **lítica** 3;\n  - **Tamanho:** menos de 1/3 da cortical 1; 1/3 a 2/3 2; mais de 2/3 3.\n- Pontuação ≥ 9: fixação profilática; 8: limítrofe; ≤ 7: radioterapia e observação.\n\n### Tabela de Mirels\n| Pontos | Local | Dor | Lesão | Tamanho |\n|---|---|---|---|---|\n| 1 | membro superior | leve | blástica | < 1/3 |\n| 2 | membro inferior | moderada | mista | 1/3 a 2/3 |\n| 3 | ==peritrocantérica== | funcional | lítica | > 2/3 |\n\n> **Na prova:** peritrocantérica = ==3 pontos==.",
-    "correta": "**3 pontos.**\n- Maior carga mecânica.\n- Local de maior risco.",
+    "conceito": "**O item local do Mirels** tem três valores, pela carga mecânica da região: **membro superior vale 1**, porque úmero e antebraço não sustentam o peso do corpo; **membro inferior vale 2**, porque fêmur e tíbia sustentam peso a cada passo; e a região **peritrocantérica vale 3**, porque concentra as maiores forças do esqueleto, com braços de alavanca que multiplicam a carga.\n\n**Os outros itens** seguem a mesma escala de 1 a 3: a dor (leve, moderada ou funcional), o tipo de lesão (blástica, mista ou lítica) e o tamanho (menos de um terço, entre um e dois terços, ou mais de dois terços do diâmetro). Não existe zero em nenhum item. O total vai de 4 a 12: até 7, radioterapia e observação; 8, zona cinzenta; 9 ou mais, fixação profilática.\n\n**Na prova:** peritrocantérico vale **3** no Mirels.",
+    "correta": "**3.** A região peritrocantérica tem a maior pontuação do item local.",
     "incorretas": {
-      "A": "**0.**\n- Mínimo por item é 1.",
-      "B": "**1.**\n- Membro superior.",
-      "C": "**2.**\n- Membro inferior fora da região peritrocantérica."
+      "A": "**Não existe.** O mínimo por item é 1.",
+      "B": "**Membro superior.** Um ponto é para lesões no membro superior.",
+      "C": "**Membro inferior fora da região peritrocantérica.** Dois pontos são para o restante do membro inferior."
     },
     "referencias": [
       "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 925 (referência indicada na prova TARO 2013, questão 79)"
     ],
-    "geradoEm": "2026-09-24",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   },
   "tumores-0326": {
-    "conceito": "### Fratura de estresse da tíbia proximal\n- Adolescente ativo, dor na tíbia proximal.\n- Na radiografia: reação periosteal e esclerose metafisária.\n- Diagnóstico diferencial principal: ==osteossarcoma==, pela mesma idade, mesmo local e reação periosteal.\n- A RM mostra traço linear e edema na fratura; lesão com massa e destruição cortical exige biópsia.\n\n### Fratura de estresse × osteossarcoma\n| Achado | Fratura de estresse | Osteossarcoma |\n|---|---|---|\n| dor | melhora com repouso | noturna, progressiva |\n| RX | ==banda esclerótica transversa==, periosteal lisa | destruição, Codman, raios de sol |\n| RM | linha de fratura, edema | massa de partes moles |\n| TC | traço cortical | matriz osteoide tumoral |\n\n> **Na prova:** fratura de estresse metafisária × ==osteossarcoma==.",
-    "correta": "**Osteossarcoma.**\n- Mesma idade e local.\n- Reação periosteal nos dois.",
+    "conceito": "**A fratura de estresse que parece tumor.** Na metáfise proximal da tíbia de um adolescente ou adulto jovem ativo, a fratura por estresse pode produzir **reação periosteal**, esclerose e até massa de calo, e ser confundida com **osteossarcoma**, que tem exatamente a mesma idade e a mesma sede. As pistas que favorecem estresse são a história de aumento de treino, a dor que piora com o esforço e melhora com repouso, a **banda esclerótica linear transversa** na radiografia, perpendicular ao eixo do osso, e, na ressonância, a linha de fratura com edema, sem massa de partes moles.\n\n**O cuidado.** Diante de dúvida, repetir a imagem após algumas semanas de repouso mostra a consolidação progressiva da fratura; a biópsia de um calo exuberante pode enganar o patologista, que vê osso imaturo e atividade osteoblástica intensa. Os outros tumores da questão não fazem esse diferencial: o condroblastoma é epifisário, o condrossarcoma é do adulto, na pelve e no fêmur proximal, e o granuloma eosinofílico é lítico, sem banda esclerótica.\n\n**Na prova:** fratura de estresse da tíbia proximal tem como diferencial o **osteossarcoma**.",
+    "correta": "**Osteossarcoma.** Mesma idade, mesma sede e reação periosteal podem confundir.",
     "incorretas": {
-      "B": "**Condroblastoma.**\n- Epifisário.",
-      "C": "**Condrossarcoma.**\n- Adulto, pelve e fêmur proximal.",
-      "D": "**Granuloma eosinofílico.**\n- Lítico, sem banda esclerótica típica."
+      "B": "**Epifisário.** O condroblastoma fica na epífise, não na metáfise.",
+      "C": "**Adulto, pelve e fêmur proximal.** O condrossarcoma não tem esse perfil.",
+      "D": "**Lítico.** O granuloma eosinofílico não tem a banda esclerótica típica da fratura de estresse."
     },
     "referencias": [
       "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 876 (referência indicada na prova TARO 2013, questão 88)"
     ],
-    "geradoEm": "2026-09-24",
-    "conferido": false
+    "geradoEm": "2026-09-28",
+    "conferido": false,
+    "formato": "corrido"
   }
 }
