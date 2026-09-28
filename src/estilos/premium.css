@@ -2527,3 +2527,19 @@ a.rs-marco:hover { color: var(--texto); border-color: var(--traco-forte); }
 .inicio-foco__numeros div { padding: .5rem .6rem; border-radius: 12px; background: color-mix(in srgb, var(--superficie-2) 80%, transparent); }
 .inicio-foco__numeros dt { font-size: .72rem; color: var(--texto-2); }
 .inicio-foco__numeros dd { margin: .1rem 0 0; font-size: 1.05rem; font-weight: 800; color: var(--texto); font-family: var(--fonte-texto); }
+
+/* Atalho discreto para os planos, ao lado do convite para compartilhar. */
+.inicio-grade--rodape { grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); }
+.inicio-grade--rodape .inicio-compartilhar { flex-direction: column; align-items: flex-start; justify-content: center; }
+.inicio-grade--rodape .inicio-compartilhar__texto { flex: none; }
+.inicio-planos-atalho {
+  display: grid; grid-template-columns: auto minmax(0, 1fr); align-content: center; gap: .75rem 1rem;
+  padding: clamp(1.1rem, 2.5vw, 1.5rem); border: var(--borda); border-radius: var(--raio-grande);
+  background: var(--superficie); color: var(--texto); text-decoration: none; transition: border-color .15s ease;
+}
+.inicio-planos-atalho:hover { border-color: color-mix(in srgb, var(--verdete) 40%, var(--traco)); color: var(--texto); }
+.inicio-planos-atalho__icone { display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border-radius: 12px; background: var(--verdete-veu); color: var(--verdete); }
+.inicio-planos-atalho__texto { display: grid; gap: .25rem; }
+.inicio-planos-atalho__texto strong { font-size: 1.1rem; }
+.inicio-planos-atalho__texto small { color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.45; }
+.inicio-planos-atalho__acao { grid-column: 2; display: inline-flex; align-items: center; gap: .3rem; color: var(--verdete-tinta); font-weight: 700; font-size: var(--corpo-menor); }

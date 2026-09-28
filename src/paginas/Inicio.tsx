@@ -10,6 +10,7 @@ import { ModalEntrar } from '../componentes/ModalEntrar'
 import { CartaoStreak } from '../componentes/CartaoStreak'
 import { InstalarApp } from '../componentes/InstalarApp'
 import { CartaoCompartilhar } from '../componentes/CartaoCompartilhar'
+import { CartaoPlanos } from '../componentes/CartaoPlanos'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
@@ -397,7 +398,10 @@ export function Inicio() {
             </section>
           )}
 
-          <CartaoCompartilhar />
+          <div className="inicio-grade inicio-grade--rodape">
+            <CartaoCompartilhar />
+            <CartaoPlanos />
+          </div>
 
           <InstalarApp />
         </>
