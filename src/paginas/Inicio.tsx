@@ -19,6 +19,7 @@ import { planoRevisao } from '../estado/planoRevisao'
 import { SITE } from '../config'
 import { calcularStreak } from '../estado/streak'
 import { LIMITES_HABILITADOS } from '../estado/limiteDiario'
+import { usarAssinante } from '../conta/plano'
 
 // A maior parte do acervo ainda não distingue TEOT de TARO (prova genérica
 // "TEOT/TARO"); enquanto isso não é resolvido, as três provas são somadas
@@ -61,6 +62,7 @@ export function Inicio() {
   const { indice, carregando } = usarIndice()
   const { iniciar } = usarSessao()
   const { sessao: conta } = usarConta()
+  const assinante = usarAssinante(conta)
   const [sessao] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
 
   const { contexto } = usarContextoLocal('')
@@ -265,33 +267,6 @@ export function Inicio() {
             </a>
           </nav>
 
-          <section className="inicio-planos" aria-labelledby="inicio-planos-titulo">
-            <div className="inicio-planos__texto">
-              <p className="meta">ASSINATURA OPCIONAL</p>
-              <h2 id="inicio-planos-titulo">Grátis todos os dias. Sem limite para quem apoia.</h2>
-              <p>{LIMITES_HABILITADOS
-                ? 'O plano gratuito continua generoso: 20 questões comentadas por dia, com revisão, desempenho e ranking, sem pedir cartão. A cota renova na virada do dia em São Paulo.'
-                : 'Hoje o treino gratuito ainda está sem limite. Quando a regra planejada entrar em vigor, o gratuito seguirá generoso: 20 questões comentadas por dia, renovadas na virada do dia em São Paulo.'}</p>
-              <p className="inicio-planos__apoio">A assinatura libera questões sem limite diário, sessões longas e simulados sem interrupção. Ela também financia a inclusão de provas novas e a revisão contínua dos comentários.</p>
-              <ul className="inicio-planos__selos">
-                <li><Icone nome="certo" tamanho={14} /> 20 questões grátis por dia</li>
-                <li><Icone nome="certo" tamanho={14} /> Sem limite na assinatura</li>
-                <li><Icone nome="certo" tamanho={14} /> Garantia de 7 dias</li>
-              </ul>
-            </div>
-            <div className="inicio-planos__oferta">
-              <span className="inicio-planos__a-partir">Estudar sem limite custa</span>
-              <strong className="inicio-planos__gancho">Menos que um cafezinho por dia</strong>
-              <span className="inicio-planos__nota">e cada assinatura mantém o gratuito vivo para quem está começando</span>
-              <a className="botao botao--principal botao--grande" href={href('/assinatura')}>Quero apoiar</a>
-              <span className="inicio-planos__nota">Cancele quando quiser</span>
-            </div>
-          </section>
-
-          <CartaoStreak />
-
-          <CartaoQuestaoDoDia indice={indice} />
-
           <section className="painel-diario" aria-label="Seu estudo de hoje">
             <div className="painel-diario__intro">
               <p className="meta">SUA ROTINA DE ESTUDO</p>
@@ -308,6 +283,23 @@ export function Inicio() {
               <p className="texto-2">Escolha uma sessão curta. Depois da primeira resposta, esta área passa a mostrar suas revisões, evolução e próximos passos.</p>
             )}
           </section>
+
+          {temaFragil && <section className="cartao cartao__corpo">
+            <p className="meta">ONDE VOCÊ MAIS GANHA AO REVISAR</p>
+            <h2>{temaFragil[0]} · {Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)}% de acerto</h2>
+            <p>{temaFragil[1].pendentes > 0 ? `${temaFragil[1].pendentes} revisões desse tema estão programadas.` : 'Faça uma sessão curta para transformar este ponto em segurança.'}</p>
+            <a className="botao botao--principal" href={href(`/treinar?temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema</a>
+          </section>}
+
+          <CartaoQuestaoDoDia indice={indice} />
+
+          <CartaoStreak />
+
+          {resumoSemana.respondidas > 0 && <section className="cartao cartao__corpo">
+            <p className="meta">SUA SEMANA</p>
+            <h2>{resumoSemana.respondidas} questões em {resumoSemana.dias} {resumoSemana.dias === 1 ? 'dia ativo' : 'dias ativos'}</h2>
+            <p>{Math.round((resumoSemana.acertos / resumoSemana.respondidas) * 100)}% de acerto nas sessões concluídas nos últimos sete dias. Continue com uma sessão curta para sustentar o ritmo.</p>
+          </section>}
 
           {provasAgrupadas.length > 1 && (
             <section>
@@ -362,32 +354,6 @@ export function Inicio() {
             </ul>
           </section>
 
-          <InstalarApp />
-
-          <section className="cartao cartao__corpo cartao-instagram">
-            <span className="cartao-instagram__icone"><Icone nome="instagram" tamanho={26} /></span>
-            <div className="cartao-instagram__texto">
-              <h2>Acompanhe no Instagram</h2>
-              <p className="texto-2">Questão comentada, avisos de acervo novo e os bastidores do projeto.</p>
-            </div>
-            <a className="botao botao--principal" href={SITE.instagram} target="_blank" rel="noopener noreferrer me">
-              Seguir @{SITE.instagramUsuario}
-            </a>
-          </section>
-
-          {temaFragil && <section className="cartao cartao__corpo">
-            <p className="meta">ONDE VOCÊ MAIS GANHA AO REVISAR</p>
-            <h2>{temaFragil[0]} · {Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)}% de acerto</h2>
-            <p>{temaFragil[1].pendentes > 0 ? `${temaFragil[1].pendentes} revisões desse tema estão programadas.` : 'Faça uma sessão curta para transformar este ponto em segurança.'}</p>
-            <a className="botao botao--principal" href={href(`/treinar?temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema</a>
-          </section>}
-
-          {resumoSemana.respondidas > 0 && <section className="cartao cartao__corpo">
-            <p className="meta">SUA SEMANA</p>
-            <h2>{resumoSemana.respondidas} questões em {resumoSemana.dias} {resumoSemana.dias === 1 ? 'dia ativo' : 'dias ativos'}</h2>
-            <p>{Math.round((resumoSemana.acertos / resumoSemana.respondidas) * 100)}% de acerto nas sessões concluídas nos últimos sete dias. Continue com uma sessão curta para sustentar o ritmo.</p>
-          </section>}
-
           {historico.length > 0 && (
             <section>
               <h2>Suas últimas sessões</h2>
@@ -427,6 +393,42 @@ export function Inicio() {
               </div>
             </section>
           )}
+
+          {!assinante && <section className="inicio-planos" aria-labelledby="inicio-planos-titulo">
+            <div className="inicio-planos__texto">
+              <p className="meta">ASSINATURA OPCIONAL</p>
+              <h2 id="inicio-planos-titulo">Grátis todos os dias. Sem limite para quem apoia.</h2>
+              <p>{LIMITES_HABILITADOS
+                ? 'O plano gratuito continua generoso: 20 questões comentadas por dia, com revisão, desempenho e ranking, sem pedir cartão. A cota renova na virada do dia em São Paulo.'
+                : 'Hoje o treino gratuito ainda está sem limite. Quando a regra planejada entrar em vigor, o gratuito seguirá generoso: 20 questões comentadas por dia, renovadas na virada do dia em São Paulo.'}</p>
+              <p className="inicio-planos__apoio">A assinatura libera questões sem limite diário, sessões longas e simulados sem interrupção. Ela também financia a inclusão de provas novas e a revisão contínua dos comentários.</p>
+              <ul className="inicio-planos__selos">
+                <li><Icone nome="certo" tamanho={14} /> 20 questões grátis por dia</li>
+                <li><Icone nome="certo" tamanho={14} /> Sem limite na assinatura</li>
+                <li><Icone nome="certo" tamanho={14} /> Garantia de 7 dias</li>
+              </ul>
+            </div>
+            <div className="inicio-planos__oferta">
+              <span className="inicio-planos__a-partir">Estudar sem limite custa</span>
+              <strong className="inicio-planos__gancho">Menos que um cafezinho por dia</strong>
+              <span className="inicio-planos__nota">e cada assinatura mantém o gratuito vivo para quem está começando</span>
+              <a className="botao botao--principal botao--grande" href={href('/assinatura')}>Quero apoiar</a>
+              <span className="inicio-planos__nota">Cancele quando quiser</span>
+            </div>
+          </section>}
+
+          <InstalarApp />
+
+          <section className="cartao cartao__corpo cartao-instagram">
+            <span className="cartao-instagram__icone"><Icone nome="instagram" tamanho={26} /></span>
+            <div className="cartao-instagram__texto">
+              <h2>Acompanhe no Instagram</h2>
+              <p className="texto-2">Questão comentada, avisos de acervo novo e os bastidores do projeto.</p>
+            </div>
+            <a className="botao botao--principal" href={SITE.instagram} target="_blank" rel="noopener noreferrer me">
+              Seguir @{SITE.instagramUsuario}
+            </a>
+          </section>
         </>
       )}
     </div>

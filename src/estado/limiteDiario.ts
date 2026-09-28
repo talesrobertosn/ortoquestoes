@@ -1,10 +1,24 @@
 import { useCallback, useState } from 'react'
 import { chamarRpc } from '../servicos/supabase'
 import { gravar, ler } from './armazenamento'
+import { registrarAssinante } from '../conta/plano'
 
 export const FUSO_DIA = 'America/Sao_Paulo'
 export const LIMITES_HABILITADOS = import.meta.env.VITE_LIMITES_HABILITADOS === 'true'
 const CHAVE_BLOQUEIO = 'limite:bloqueio'
+const CHAVE_SALDO = 'limite:saldo'
+
+/**
+ * Último saldo informado pelo servidor, só para avisos de interface (quem
+ * decide é autorizar_resposta). Sem registro, o limite não vale para esta
+ * conta; registro de outro dia significa cota cheia de novo.
+ */
+export function saldoGratuitoHoje(): number | null {
+  if (!LIMITES_HABILITADOS) return null
+  const saldo = ler<{ dia: string; restantes: number; limite: number } | null>(CHAVE_SALDO, null)
+  if (!saldo) return null
+  return saldo.dia === chaveDia() ? saldo.restantes : saldo.limite
+}
 
 export function lerBloqueioDiario(): string | null {
   const registro = ler<{ liberaEm: string } | null>(CHAVE_BLOQUEIO, null)
@@ -73,6 +87,9 @@ export function usarLimiteDiario() {
         consumidas: Number(r.consumidas), limite: Number(r.limite), restantes: r.restantes === null ? null : Number(r.restantes),
         liberaEm: String(r.libera_em), sequencia: Number(r.sequencia ?? 0), motivo: r.motivo ? String(r.motivo) : undefined,
       }
+      if (normalizado.paywallAtivo) registrarAssinante(normalizado.ilimitado)
+      if (normalizado.paywallAtivo && !normalizado.ilimitado && normalizado.restantes !== null) gravar(CHAVE_SALDO, { dia: chaveDia(), restantes: normalizado.restantes, limite: normalizado.limite })
+      else if (!normalizado.paywallAtivo || normalizado.ilimitado) gravar(CHAVE_SALDO, null)
       if (!normalizado.permitido && !normalizado.falhaValidacao && normalizado.paywallAtivo) registrarBloqueioDiario(normalizado.liberaEm)
       else if (normalizado.permitido && (normalizado.ilimitado || !normalizado.paywallAtivo || (normalizado.restantes ?? 0) > 0)) limparBloqueioDiario()
       definirEstado(normalizado)

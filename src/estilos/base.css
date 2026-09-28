@@ -2365,3 +2365,16 @@ kbd {
   font-size: var(--corpo-menor);
   color: var(--texto-2);
 }
+.aviso-bloqueio-topo__fechar { flex: none; display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border: 0; border-radius: 999px; background: rgba(255, 255, 255, .1); color: rgba(255, 255, 255, .85); cursor: pointer; }
+.aviso-bloqueio-topo__fechar:hover { background: rgba(255, 255, 255, .2); color: #fff; }
+@media (max-width: 52rem) { .aviso-bloqueio-topo__fechar { position: absolute; top: .45rem; right: .5rem; width: 2rem; height: 2rem; } .aviso-bloqueio-topo__texto { padding-right: 2rem; } }
+.chip-limite { display: none; align-items: center; gap: .3rem; min-height: 32px; padding: 0 .7rem; border: 1px solid var(--traco); border-radius: 999px; background: var(--superficie-2); color: var(--texto-2); font: inherit; font-size: .78rem; font-weight: 650; cursor: pointer; white-space: nowrap; }
+.chip-limite:hover { color: var(--texto); border-color: color-mix(in srgb, var(--verdete) 35%, var(--traco)); }
+.chip-limite svg { color: var(--verdete); }
+@media (min-width: 64rem) { .chip-limite { display: inline-flex; } .chip-limite + .nav-link--planos { display: none; } }
+@media (min-width: 64rem) and (max-width: 80rem) { .chip-limite { padding: 0 .6rem; } .chip-limite svg { display: none; } }
+.aviso-saldo { display: flex; align-items: flex-start; gap: .55rem; margin: 0 0 .75rem; padding: .65rem .75rem; border-radius: var(--raio); background: var(--verdete-veu); color: var(--texto); font-size: var(--meta); line-height: 1.45; }
+.aviso-saldo > svg { flex: none; margin-top: .1rem; color: var(--verdete); }
+.aviso-saldo span { flex: 1; }
+.aviso-saldo__fechar { flex: none; display: grid; place-items: center; width: 1.75rem; height: 1.75rem; margin: -.15rem -.2rem 0 0; border: 0; border-radius: 999px; background: transparent; color: var(--texto-2); cursor: pointer; }
+.aviso-saldo__fechar:hover { background: var(--superficie); color: var(--texto); }

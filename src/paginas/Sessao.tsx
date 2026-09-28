@@ -12,7 +12,8 @@ import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { usarConta } from '../conta/ContextoConta'
 import { usarFavoritos, usarSessao } from '../estado/sessao'
-import { usarLimiteDiario } from '../estado/limiteDiario'
+import { saldoGratuitoHoje, usarLimiteDiario } from '../estado/limiteDiario'
+import { usarAssinante } from '../conta/plano'
 import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 import { href, navegar } from '../util/rotas'
 import { gerarId } from '../util/id'
@@ -31,6 +32,10 @@ export function Sessao() {
   const { estado: estadoLimite, autorizar } = usarLimiteDiario()
   const [limiteAberto, definirLimiteAberto] = useState(false)
   const chavesResposta = useRef(new Map<string, string>())
+  const assinante = usarAssinante(conta)
+  const [avisoSaldoFechado, definirAvisoSaldoFechado] = useState(false)
+  // Lido uma vez por sessão: o aviso é sobre o começo, não uma contagem.
+  const saldoInicial = useMemo(() => saldoGratuitoHoje(), [sessao?.id])
   const autorizando = useRef(false)
 
   const ids = sessao?.ids
@@ -235,6 +240,13 @@ export function Sessao() {
         </div>
       </div>
 
+      {conta && !assinante && !simulado && !avisoSaldoFechado && respondidas === 0 && saldoInicial !== null && saldoInicial > 0 && saldoInicial < total && (
+        <p className="aviso-saldo nao-imprime" role="status">
+          <Icone nome="relogio" tamanho={16} />
+          <span>Hoje restam <b>{saldoInicial}</b> {saldoInicial === 1 ? 'questão gratuita' : 'questões gratuitas'}: esta sessão vai até a {saldoInicial}ª e depois mostra o seu resumo. As outras ficam para amanhã.</span>
+          <button type="button" className="aviso-saldo__fechar" aria-label="Fechar aviso" onClick={() => definirAvisoSaldoFechado(true)}><Icone nome="fechar" tamanho={14} /></button>
+        </p>
+      )}
       {questaoAtual ? (
         <><AvisoLimite estado={estadoLimite} /><CartaoQuestao
           questao={questaoAtual}
@@ -253,7 +265,12 @@ export function Sessao() {
               const chave = chavesResposta.current.get(chaveMapa) ?? gerarId()
               chavesResposta.current.set(chaveMapa, chave)
               const permissao = await autorizar(questaoAtual.id, chave)
-              if (!permissao.permitido) { definirLimiteAberto(true); return }
+              if (!permissao.permitido) {
+                // Com respostas na sessão, o limite vira fechamento: o resumo
+                // mostra o dia cumprido em vez de um painel no meio da questão.
+                if (permissao.paywallAtivo && !permissao.falhaValidacao && respondidas > 0) { concluir(); return }
+                definirLimiteAberto(true); return
+              }
               responder(questaoAtual.id, letra, correta, segundos, confianca)
             } finally { autorizando.current = false }
           }}

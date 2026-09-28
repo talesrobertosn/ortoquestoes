@@ -2433,3 +2433,15 @@ a.rs-marco:hover { color: var(--texto); border-color: var(--traco-forte); }
 @media (max-width: 27rem) { .nav-link--oculta-estreito { display: none; } }
 .rk-referencia--inicio { flex-wrap: nowrap; align-items: flex-start; gap: .45rem; padding: .7rem .9rem; border-radius: 12px; background: var(--superficie-2); }
 .rk-referencia--inicio svg { margin-top: .12rem; color: var(--verdete); }
+
+/* Resumo: o gratuito do dia terminou. */
+.dia-cumprido { display: flex; align-items: flex-start; gap: 1rem; padding: clamp(1rem, 3vw, 1.4rem); border-radius: var(--raio-grande); background: linear-gradient(135deg, var(--verdete-veu), var(--superficie) 70%); border: 1px solid color-mix(in srgb, var(--verdete) 30%, var(--traco)); }
+.dia-cumprido__anel { flex: none; display: grid; place-items: center; width: 3.2rem; height: 3.2rem; border-radius: 999px; background: var(--verdete); color: var(--sobre-destaque); box-shadow: 0 0 0 5px color-mix(in srgb, var(--verdete) 18%, transparent); }
+.dia-cumprido__texto { display: grid; gap: .35rem; min-width: 0; }
+.dia-cumprido__selo { margin: 0; font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--verdete); }
+.dia-cumprido h2 { margin: 0; font-size: 1.25rem; }
+.dia-cumprido p { margin: 0; color: var(--texto-2); line-height: 1.5; }
+.dia-cumprido .dia-cumprido__rodape { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem 1rem; margin-top: .3rem; font-size: var(--meta); }
+.dia-cumprido__rodape span { display: inline-flex; align-items: center; gap: .3rem; font-weight: 650; color: var(--texto); }
+.dia-cumprido__rodape span svg { color: var(--verdete); }
+.dia-cumprido__rodape a { color: var(--verdete-tinta); font-weight: 650; }

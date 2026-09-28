@@ -5,6 +5,7 @@ import { usarTema } from '../estado/tema'
 import { href } from '../util/rotas'
 import { Icone, type NomeIcone } from './Icone'
 import { AvisoBloqueioDiario } from './LimiteRespostas'
+import { usarAssinante } from '../conta/plano'
 
 // No celular a barra de baixo já leva a Início, Treinar, Revisão e
 // Desempenho — repetir os quatro aqui em cima seria a mesma coisa duas
@@ -21,6 +22,8 @@ const LINKS: { destino: string; rotulo: string; icone: NomeIcone; ocultaCelular:
 export function Cabecalho({ caminho }: { caminho: string }) {
   const { alternar } = usarTema()
   const { sessao } = usarConta()
+  // Quem já assina acessa a assinatura em Minha conta; o botão só ofereceria de novo.
+  const assinante = usarAssinante(sessao)
   const inicial = String(sessao?.user.user_metadata?.nome ?? '').trim().charAt(0).toUpperCase()
 
   return (
@@ -44,7 +47,8 @@ export function Cabecalho({ caminho }: { caminho: string }) {
           ))}
         </nav>
         <div className="cabecalho__acoes">
-          <a className="nav-link nav-link--planos" href={href('/assinatura')} aria-current={caminho === '/assinatura' ? 'page' : undefined}>Planos</a>
+          <AvisoBloqueioDiario caminho={caminho} variante="chip" />
+          {!assinante && <a className="nav-link nav-link--planos" href={href('/assinatura')} aria-current={caminho === '/assinatura' ? 'page' : undefined}>Planos</a>}
           {contasDisponiveis && (
             <a
               className={'nav-link nav-link--conta' + (sessao ? ' nav-link--logado' : '')}
