@@ -1969,7 +1969,7 @@ kbd {
 /* Navegação principal ao alcance do polegar. */
 .navegacao-mobile { display: none; }
 @media (max-width: 40rem) {
-  body { padding-bottom: 4.25rem; }
+  body { padding-bottom: calc(4.25rem - 0.35rem + max(0.35rem, env(safe-area-inset-bottom))); }
   .navegacao-mobile {
     position: fixed; z-index: 40; bottom: 0; left: 0; right: 0;
     display: grid; grid-template-columns: repeat(4, 1fr);
@@ -1985,10 +1985,10 @@ kbd {
   .atalhos-sessao__grade { grid-template-columns: 1fr 1fr; }
   .comentario__cabecalho { display: grid; }
   .comentario__cabecalho .selo { margin-left: 0; width: fit-content; }
-  .acao-responder { position: sticky; bottom: 4.2rem; z-index: 10; padding: 0.5rem; margin: 0 -0.5rem; background: color-mix(in srgb, var(--superficie) 94%, transparent); backdrop-filter: blur(8px); }
+  .acao-responder { position: sticky; bottom: calc(4.2rem - 0.35rem + max(0.35rem, env(safe-area-inset-bottom))); z-index: 10; padding: 0.5rem; margin: 0 -0.5rem; background: color-mix(in srgb, var(--superficie) 94%, transparent); backdrop-filter: blur(8px); }
   .termos { gap: 1.5rem; }
   .termos__indice { display: grid; }
-  .termos__aceite { bottom: 4.6rem; margin: 0 -0.25rem; padding: 1rem; }
+  .termos__aceite { bottom: calc(4.6rem - 0.35rem + max(0.35rem, env(safe-area-inset-bottom))); margin: 0 -0.25rem; padding: 1rem; }
   .termos__aceite .botao { width: 100%; }
   .grade-planos { grid-template-columns: 1fr; }
 }
