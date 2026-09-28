@@ -60,6 +60,12 @@ export async function chamarRpc<T>(nome: string, corpo: Record<string, unknown>)
   return await resposta.json() as T
 }
 
+/** Mensagem UTF-8 lida como Latin-1 ("pÃ¡gina"): devolve a acentuação certa. */
+function repararAcentos(texto?: string): string | undefined {
+  if (!texto || !/Ã.|Â./.test(texto)) return texto
+  try { return decodeURIComponent(escape(texto)) } catch { return texto }
+}
+
 export async function chamarFuncao<T>(nome: string, corpo: Record<string, unknown>): Promise<T> {
   if (!clienteConta) throw new Error('Servidor não configurado.')
   const token = await garantirToken()
@@ -68,6 +74,6 @@ export async function chamarFuncao<T>(nome: string, corpo: Record<string, unknow
     method: 'POST', headers: { apikey: chaveSupabase, Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' }, body: JSON.stringify(corpo),
   }, 20_000)
   const dados = await resposta.json().catch(() => ({})) as T & { erro?: string }
-  if (!resposta.ok) throw new Error(dados.erro ?? 'Não foi possível concluir a operação.')
+  if (!resposta.ok) throw new Error(repararAcentos(dados.erro) ?? 'Não foi possível concluir a operação.')
   return dados
 }

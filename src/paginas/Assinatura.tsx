@@ -59,7 +59,8 @@ export function Assinatura() {
         r = await pedir(VERSAO_CONDICOES_ASSINATURA)
       } catch (erro) {
         // Servidor ainda na versão anterior das condições: não trava a compra.
-        if (!(erro instanceof Error) || !erro.message.startsWith('Atualize a página para revisar')) throw erro
+        // Só o começo sem acento, porque a mensagem pode chegar com a acentuação corrompida.
+        if (!(erro instanceof Error) || !/^Atualize a p/i.test(erro.message)) throw erro
         r = await pedir(VERSAO_CONDICOES_ANTERIOR)
       }
       location.assign(r.url)
