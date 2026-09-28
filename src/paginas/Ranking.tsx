@@ -10,12 +10,45 @@ import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking } from '../conta/perfilRanking'
+import { gravar, ler } from '../estado/armazenamento'
 
 type Periodo = 'geral' | 'semana'
 type LinhaRanking = { posicao: number; apelido: string; total: number; total_geral: number; eh_voce: boolean }
 type MinhaPosicao = { posicao: number; total: number; total_geral: number } | null
+type PosicaoSalva = { apelido: string; posicao: number }
+type ReferenciaRanking = { dia: string; referencia: PosicaoSalva[]; ultima: PosicaoSalva[] }
 
 const ROTULOS_PERIODO: Record<Periodo, string> = { geral: 'Geral', semana: 'Últimos 7 dias' }
+const diaRanking = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date())
+
+function guardarReferencia(periodo: Periodo, linhas: LinhaRanking[]): PosicaoSalva[] {
+  const chave = `ranking:referencia:${periodo}`
+  const anterior = ler<ReferenciaRanking | null>(chave, null)
+  const atuais = linhas.map(({ apelido, posicao }) => ({ apelido, posicao }))
+  const dia = diaRanking()
+  const referencia = anterior?.dia === dia ? anterior.referencia : anterior?.ultima ?? atuais
+  gravar(chave, { dia, referencia, ultima: atuais } satisfies ReferenciaRanking)
+  return referencia
+}
+
+function variacao(linha: LinhaRanking, linhas: LinhaRanking[], referencia: PosicaoSalva[] | null): number {
+  if (!referencia) return 0
+  // Apelidos não são identificadores únicos. Não mostramos variação quando há
+  // homônimos para evitar atribuir a movimentação de outra pessoa.
+  if (linhas.filter(item => item.apelido === linha.apelido).length !== 1 || referencia.filter(item => item.apelido === linha.apelido).length !== 1) return 0
+  return referencia.find(item => item.apelido === linha.apelido)!.posicao - linha.posicao
+}
+
+function Movimento({ valor }: { valor: number }) {
+  if (valor === 0) return null
+  const subiu = valor > 0
+  const quantidade = Math.abs(valor)
+  const descricao = `${subiu ? 'Subiu' : 'Desceu'} ${quantidade} ${quantidade === 1 ? 'posição' : 'posições'} desde a referência salva neste navegador`
+  return <span className={`rk-movimento rk-movimento--${subiu ? 'subiu' : 'desceu'}`} title={descricao}>
+    <span aria-hidden="true"><Icone nome={subiu ? 'cima' : 'baixo'} tamanho={15} />{quantidade}{subiu && quantidade >= 3 && <Icone nome="fogo" tamanho={15} />}</span>
+    <span className="rk-movimento__sr">{descricao}</span>
+  </span>
+}
 
 function iniciais(apelido: string): string {
   const partes = apelido.trim().split(/\s+/).filter(Boolean)
@@ -29,7 +62,7 @@ function Emblema({ total, tamanho = 22 }: { total: number; tamanho?: number }) {
   return <span className="rk-emblema"><Medalha conquista={conquista} tamanho={tamanho} titulo={`${conquista.rotulo} · ${total.toLocaleString('pt-BR')} questões no total`} /></span>
 }
 
-function Podio({ linhas, periodo }: { linhas: LinhaRanking[]; periodo: Periodo }) {
+function Podio({ linhas, periodo, referencia }: { linhas: LinhaRanking[]; periodo: Periodo; referencia: PosicaoSalva[] | null }) {
   const ordem = [linhas[1], linhas[0], linhas[2]].filter(Boolean)
   return (
     <ol className="rk-podio" aria-label="Três primeiros colocados">
@@ -39,6 +72,7 @@ function Podio({ linhas, periodo }: { linhas: LinhaRanking[]; periodo: Periodo }
           <strong className="rk-podio__nome">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</strong>
           <Emblema total={linha.total_geral} tamanho={26} />
           <span className="rk-podio__total"><b className="numerico">{linha.total.toLocaleString('pt-BR')}</b> {periodo === 'semana' ? 'na semana' : 'questões'}</span>
+          <Movimento valor={variacao(linha, linhas, referencia)} />
           <span className="rk-podio__base" aria-hidden="true">{linha.posicao}º</span>
         </li>
       ))}
@@ -68,6 +102,7 @@ export function Ranking() {
   const { contexto } = usarContextoLocal('')
   const [periodo, definirPeriodo] = useState<Periodo>('geral')
   const [linhas, definirLinhas] = useState<LinhaRanking[] | null>(null)
+  const [referencia, definirReferencia] = useState<PosicaoSalva[] | null>(null)
   const [minhaPosicao, definirMinhaPosicao] = useState<MinhaPosicao>(null)
   const [erro, definirErro] = useState(false)
 
@@ -80,13 +115,16 @@ export function Ranking() {
     let vivo = true
     definirErro(false)
     definirLinhas(null)
+    definirReferencia(null)
     Promise.all([
       supabase.rpc('obter_ranking_publico', { periodo }),
       supabase.rpc('minha_posicao_ranking', { periodo }),
     ]).then(([ranking, minha]) => {
       if (!vivo) return
       if (ranking.error || minha.error) { definirErro(true); return }
-      definirLinhas(ranking.data ?? [])
+      const novasLinhas: LinhaRanking[] = ranking.data ?? []
+      definirReferencia(guardarReferencia(periodo, novasLinhas))
+      definirLinhas(novasLinhas)
       definirMinhaPosicao(minha.data?.[0] ?? null)
     }).catch(() => { if (vivo) definirErro(true) })
     return () => { vivo = false }
@@ -123,6 +161,7 @@ export function Ranking() {
           </> : minhaPosicao ? <>
             <span className="rk-heroi__rotulo">Sua posição {periodo === 'semana' ? 'na semana' : 'geral'}</span>
             <strong className="rk-heroi__posicao">#{minhaPosicao.posicao}</strong>
+            {linhas?.find(linha => linha.eh_voce) && <Movimento valor={variacao(linhas.find(linha => linha.eh_voce)!, linhas, referencia)} />}
             <span className="rk-heroi__rotulo">{minhaPosicao.total.toLocaleString('pt-BR')} questões {periodo === 'semana' ? 'nos últimos 7 dias' : 'respondidas'}</span>
           </> : meuTotal < MINIMO_RANKING ? <>
             <span className="rk-heroi__rotulo">Você entra no ranking com {MINIMO_RANKING} questões</span>
@@ -158,12 +197,15 @@ export function Ranking() {
         <p>Seja a primeira pessoa a aparecer aqui.</p>
       </Estado>}
 
-      {linhas && linhas.length >= 3 && <Podio linhas={linhas} periodo={periodo} />}
+      {linhas && <p className="rk-referencia">Setas mostram a mudança desde a referência salva neste navegador, atualizada a cada dia. Sem referência anterior ou com apelidos iguais, não há seta.</p>}
+
+      {linhas && linhas.length >= 3 && <Podio linhas={linhas} periodo={periodo} referencia={referencia} />}
 
       {restantes.length > 0 && <ol className="rk-lista">
         {restantes.map((linha) => (
           <li key={linha.posicao} className={'rk-linha' + (linha.eh_voce ? ' rk-linha--voce' : '')}>
             <span className="rk-linha__posicao numerico">{linha.posicao}</span>
+            <Movimento valor={variacao(linha, linhas ?? [], referencia)} />
             <span className="rk-linha__avatar">{iniciais(linha.apelido)}</span>
             <span className="rk-linha__nome">
               <span className="rk-linha__apelido">{linha.apelido}<Emblema total={linha.total_geral} />{linha.eh_voce && <span className="rk-voce">você</span>}</span>

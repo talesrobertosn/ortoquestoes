@@ -36,7 +36,7 @@ const TITULOS: Record<string, string> = {
   '/resumo': 'Resumo da sessão — OrtoQuestões',
   '/sobre': 'O projeto — OrtoQuestões: questões de ortopedia comentadas',
   '/projeto': 'O projeto — OrtoQuestões: questões de ortopedia comentadas',
-  '/contato': 'Relatar erro — OrtoQuestões',
+  '/contato': 'Suporte e contato — OrtoQuestões',
   '/conta': 'Minha conta — OrtoQuestões',
   '/conta/assinatura': 'Dados da assinatura — OrtoQuestões',
   '/dados': 'Seu desempenho — OrtoQuestões',

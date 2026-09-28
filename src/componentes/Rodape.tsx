@@ -13,7 +13,7 @@ const ESTUDAR = [
 ] as const
 const PROJETO = [
   ['/sobre', 'O projeto'],
-  ['/contato', 'Relatar erro'],
+  ['/contato', 'Suporte e contato'],
   ['/assinatura', 'Planos'],
   ['/termos', 'Termos de uso'],
   ['/condicoes-assinatura', 'Condições da assinatura'],
