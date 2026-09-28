@@ -25,6 +25,7 @@ CONDICOES_ASSINATURA = (RAIZ / "src/paginas/CondicoesAssinatura.tsx").read_text(
 ACEITES_ASSINATURA = (RAIZ / "supabase/migrations/202609270900_aceites_assinatura.sql").read_text()
 RANKING_MOVIMENTO = (RAIZ / "supabase/migrations/202609280001_ranking_movimento_diario.sql").read_text()
 RANKING_RPG = (RAIZ / "supabase/migrations/202609280100_ranking_movimento_rpg.sql").read_text()
+AVALIACOES_ADMIN = (RAIZ / "supabase/migrations/202609280200_avaliacoes_comentario_admin.sql").read_text()
 PAGINA_RANKING = (RAIZ / "src/paginas/Ranking.tsx").read_text()
 LIMITE_CLIENTE = (RAIZ / "src/estado/limiteDiario.ts").read_text()
 AVISO_LIMITE = (RAIZ / "src/componentes/LimiteRespostas.tsx").read_text()
@@ -230,6 +231,16 @@ for trecho in (
     assert trecho in RANKING_RPG, f"Ranking com movimento incompleto: {trecho}"
 assert "usuario_id uuid" not in RANKING_RPG.split("create function public.obter_ranking_com_movimento", 1)[1].split("language plpgsql", 1)[0]
 assert "linha.posicao <= 50" in PAGINA_RANKING, "A linha própria fora do top 50 não pode entrar na lista"
+# As avaliações dos comentários só chegam ao painel de quem é administrador.
+for trecho in (
+    "security definer",
+    "set search_path = ''",
+    "where adm.id_usuario = auth.uid()",
+    "raise exception 'acesso_negado'",
+    "revoke all on function public.listar_avaliacoes_comentario_admin() from public, anon, authenticated",
+    "for select to authenticated using (usuario_id = auth.uid())",
+):
+    assert trecho in AVALIACOES_ADMIN, f"Avaliações sem proteção administrativa: {trecho}"
 for trecho in ("listar_eventos_pagamento_admin", "status_processamento === 'erro'", "webhook-mercado-pago?acao=reprocessar"):
     assert trecho in PAGINA_ADMIN, f"Reprocessamento administrativo ausente: {trecho}"
 for trecho in ("usuarioDoPedido(req)", "administradores?id_usuario", "status_processamento=eq.erro", "EdgeRuntime.waitUntil(processar", "x-signature"):

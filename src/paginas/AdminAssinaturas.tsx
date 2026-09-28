@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
+import { AdminAvaliacoes } from '../componentes/AdminAvaliacoes'
 
 interface LinhaAssinatura {
   id_usuario: string
@@ -105,7 +106,7 @@ export function AdminAssinaturas() {
         <div><span>Falha no pagamento</span><strong>{linhas.filter(linha => linha.status === 'falha_pagamento').length}</strong></div>
         <div><span>Eventos que precisam de atenção (últimos 200)</span><strong>{eventos.filter(evento => evento.status_processamento === 'erro').length}</strong></div>
       </section>
-      <nav className="admin-assinaturas__atalhos" aria-label="Seções da administração"><a href="#titulo-assinaturas-admin" onClick={e => { e.preventDefault(); document.getElementById('titulo-assinaturas-admin')?.scrollIntoView({ behavior: 'smooth' }) }}>Assinaturas</a><a href="#titulo-eventos-admin" onClick={e => { e.preventDefault(); document.getElementById('titulo-eventos-admin')?.scrollIntoView({ behavior: 'smooth' }) }}>Eventos de pagamento</a></nav>
+      <nav className="admin-assinaturas__atalhos" aria-label="Seções da administração"><a href="#titulo-assinaturas-admin" onClick={e => { e.preventDefault(); document.getElementById('titulo-assinaturas-admin')?.scrollIntoView({ behavior: 'smooth' }) }}>Assinaturas</a><a href="#titulo-eventos-admin" onClick={e => { e.preventDefault(); document.getElementById('titulo-eventos-admin')?.scrollIntoView({ behavior: 'smooth' }) }}>Eventos de pagamento</a><a href="#titulo-avaliacoes-admin" onClick={e => { e.preventDefault(); document.getElementById('titulo-avaliacoes-admin')?.scrollIntoView({ behavior: 'smooth' }) }}>Avaliações dos comentários</a></nav>
       <section className="empilha admin-assinaturas__secao" aria-labelledby="titulo-assinaturas-admin">
         <div><h2 id="titulo-assinaturas-admin">Assinaturas</h2><p>Encontre rapidamente quem está em dia, aguardando, cancelou ou recebeu reembolso.</p></div>
         <div className="admin-assinaturas__atalhos" role="group" aria-label="Filtros rápidos de assinatura">
@@ -143,6 +144,7 @@ export function AdminAssinaturas() {
         </div>}
         {aviso && <p role="status">{aviso}</p>}
       </section>
+      <AdminAvaliacoes />
     </>}
   </article>
 }

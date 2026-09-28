@@ -2565,3 +2565,14 @@ a.rs-marco:hover { color: var(--texto); border-color: var(--traco-forte); }
   .rs-heroi__selo, .rs-comparacao { border-radius: 12px; font-size: .75rem; line-height: 1.35; }
 }
 @media (max-width: 22.5rem) { .tr-rapidas { grid-template-columns: minmax(0, 1fr); } }
+
+/* Painel: avaliações dos comentários. */
+.admin-avaliacoes { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.admin-avaliacao { display: grid; gap: .35rem; padding: .85rem 1rem; border: var(--borda); border-left: 3px solid var(--erro); border-radius: 12px; background: var(--superficie); }
+.admin-avaliacao--util { border-left-color: var(--acerto); }
+.admin-avaliacao__topo { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .4rem .75rem; }
+.admin-avaliacao__topo a { font-weight: 700; color: var(--verdete-tinta); }
+.admin-avaliacao__selo { padding: .15rem .55rem; border-radius: 999px; font-size: .75rem; font-weight: 700; background: var(--erro-veu); color: var(--erro); }
+.admin-avaliacao--util .admin-avaliacao__selo { background: var(--acerto-veu); color: var(--acerto); }
+.admin-avaliacao__texto { margin: 0; white-space: pre-line; line-height: 1.5; }
+.admin-avaliacao small { color: var(--texto-2); }
