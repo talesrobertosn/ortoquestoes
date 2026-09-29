@@ -8,7 +8,7 @@ import { prontidaoDoTema, type EdicaoNacional, type Prontidao, type ResultadoNac
 import { entregarSessaoNacional } from '../dados/entregaNacional'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
-import { ConvitePremium, SeloAssinante } from '../componentes/Premium'
+import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href, navegar } from '../util/rotas'
 
 const ROTULO_PRONTIDAO: Record<Prontidao, string> = { pronto: 'Pronto', caminho: 'No caminho', reforcar: 'Reforçar' }
@@ -138,13 +138,10 @@ export function SimuladoNacional({ consulta }: { consulta: URLSearchParams }) {
         </div>
       </section>
 
-      {logado && !premium && !minha && (
-        <ConvitePremium
-          icone="trofeu"
-          titulo="Descubra se você está pronto para a prova"
-          texto={<p>Uma prova mensal igual para todos, corrigida na hora, com a sua posição entre os participantes e um relatório por tema: onde você já está pronto e onde está abaixo da média.</p>}
-          itens={['50 questões de prova em 2 horas', 'Nota, posição e percentil', 'Prontidão por tema comparada à turma', 'Ranking da edição']}
-        />
+      {!premium && !minha && (
+        <Degustacao titulo="Assim chega o seu resultado (exemplo)" texto={<p>Uma prova por mês, igual para todos os assinantes, corrigida na hora, com a sua posição e um relatório de prontidão por tema.</p>} acao="Quero fazer o Simulado Nacional">
+          <AmostraResultado />
+        </Degustacao>
       )}
 
       {resultado?.entregue ? (
@@ -291,5 +288,33 @@ function Resultado({ resultado, slugDoTema, aoVerCorrecao, correcao }: {
         )}
       </section>
     </>
+  )
+}
+
+/** Exemplo de resultado para quem não assina: números fictícios, sob desfoque. */
+function AmostraResultado() {
+  const temas: Array<[string, number, number, string]> = [['Trauma adulto', 80, 62, 'pronto'], ['Ombro e cotovelo', 71, 64, 'caminho'], ['Mão e punho', 43, 58, 'reforcar']]
+  return (
+    <div className="empilha">
+      <section className="sn-placar">
+        <div className="sn-nota" style={{ '--p': '74%' } as React.CSSProperties}><strong className="numerico">74%</strong><span>37 de 50</span></div>
+        <dl className="sn-numeros">
+          <div className="sn-numeros__destaque"><dt>Sua posição</dt><dd>#12<small> de 318</small></dd></div>
+          <div><dt>Melhor que</dt><dd>96%<small> dos participantes</small></dd></div>
+          <div><dt>Média da edição</dt><dd>61%</dd></div>
+        </dl>
+      </section>
+      <section className="cartao cartao__corpo sn-prontidao">
+        <ul className="sn-temas-lista">
+          {temas.map(([tema, p, media, estado]) => (
+            <li key={tema} className={`sn-tema sn-tema--${estado}`}>
+              <span className="sn-tema__nome">{tema}</span>
+              <span className="sn-tema__barra"><span className="sn-tema__voce" style={{ width: `${p}%` }} /><span className="sn-tema__media" style={{ left: `${media}%` }} /></span>
+              <span className="sn-tema__pct numerico">{p}%</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
   )
 }

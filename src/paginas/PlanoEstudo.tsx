@@ -2,30 +2,38 @@ import { useEffect, useMemo, useState } from 'react'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
 import { usarPremium } from '../conta/premium'
 import { usarIndice } from '../dados/usarIndice'
-import { FILTROS_VAZIOS } from '../dados/tipos'
+import { FILTROS_VAZIOS, type Indice } from '../dados/tipos'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { usarSessao } from '../estado/sessao'
-import { calcularPlano, dataLocal, idsDoDia, respondidasNoAcervo, ROTULO_INTENSIDADE, simularMeta, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { calcularPlano, dataLocal, idsDoDia, respondidasNoAcervo, ROTULO_INTENSIDADE, simularMeta, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
 import { Carregando } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
-import { ConvitePremium, SeloAssinante } from '../componentes/Premium'
+import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href, navegar } from '../util/rotas'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const PROVAS = ['TEOT', 'TARO', 'ENARE R4', 'Outra prova']
+/** Semanas que o não assinante vê na prévia do próprio cronograma. */
+const SEMANAS_PREVIA = 2
 const curta = (d: Date) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
 const longa = (iso: string) => dataLocal(iso).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })
+type Respondidas = Record<string, RegistroQuestao>
 
 function amanhaIso() {
   const d = new Date(); d.setDate(d.getDate() + 1)
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
 }
 
+/**
+ * Cronograma até a prova. O assinante salva e segue o dele; quem não assina
+ * pode preencher a data e ver a prévia do próprio cronograma (hoje e as duas
+ * primeiras semanas), com o resto guardado.
+ */
 export function PlanoEstudo() {
   const { premium, logado, carregado } = usarPremium()
   const { indice } = usarIndice()
-  const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
+  const [respondidas] = usarArmazenado<Respondidas>('respondidas', {})
   const { sessao, iniciar } = usarSessao()
   const [plano, definirPlano] = useState<PlanoSalvo | null | undefined>(undefined)
   const [editando, definirEditando] = useState(false)
@@ -36,31 +44,16 @@ export function PlanoEstudo() {
     let vivo = true
     chamarRpc<PlanoSalvo[]>('obter_plano_estudo', {})
       .then(([p]) => { if (vivo) { definirPlano(p ?? null); definirEditando(!p) } })
-      .catch(() => { if (vivo) { definirPlano(null); definirErro('Não foi possível carregar seu plano. Confira a conexão.') } })
+      .catch(() => { if (vivo) { definirPlano(null); definirErro('Não foi possível carregar seu cronograma. Confira a conexão.') } })
     return () => { vivo = false }
   }, [premium])
 
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
 
   if (logado && !carregado) return <Carregando linhas={4} rotulo="Carregando" />
-  if (!premium) {
-    return (
-      <div className="empilha-2 pe">
-        <section className="pe-heroi pe-heroi--convite">
-          <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> Plano até a prova</p>
-          <h1>Saiba exatamente o que estudar até o dia da prova</h1>
-          <p>Você informa a data do TEOT. O OrtoQuestões monta a meta de cada dia, distribui os temas nas semanas que faltam, começa pelos assuntos que mais caem na prova e reforça os seus pontos fracos.</p>
-        </section>
-        <ConvitePremium
-          icone="rota"
-          titulo="Chega de decidir o que estudar"
-          texto={<p>O plano se ajusta sozinho todo dia: se você atrasar, a meta sobe um pouco; se adiantar, ela alivia. E mostra se você está à frente ou atrás do ritmo.</p>}
-          itens={['Meta diária calculada até a prova', 'Prioridade para os temas que mais caem', 'Reforço automático nos temas fracos', 'Última semana reservada para a reta final']}
-        />
-      </div>
-    )
-  }
-  if (plano === undefined || !indice) return <Carregando linhas={5} rotulo="Montando seu plano" />
+  if (!indice) return <Carregando linhas={5} rotulo="Carregando o acervo" />
+  if (!premium) return <PreviaCronograma indice={indice} respondidas={respondidas} />
+  if (plano === undefined) return <Carregando linhas={5} rotulo="Montando seu cronograma" />
 
   function comecarHoje() {
     if (!indice || !calculo?.hoje) return
@@ -75,120 +68,153 @@ export function PlanoEstudo() {
       aoSalvar={(novo) => { definirPlano(novo); definirEditando(false) }} />
   }
 
-  const ritmoTexto = Math.abs(calculo.ritmo) <= 5 || calculo.esperadoAteHoje < 20
-    ? { classe: 'em-dia', texto: 'Em dia com o plano' }
-    : calculo.ritmo > 0 ? { classe: 'frente', texto: `${calculo.ritmo}% à frente do plano` } : { classe: 'atras', texto: `${-calculo.ritmo}% atrás do plano` }
-  const progresso = calculo.alvo ? Math.min(100, Math.round((calculo.feitas / calculo.alvo) * 100)) : 100
-  const reforcados = calculo.temas.filter((t) => t.reforcado).sort((a, b) => (a.acerto ?? 0) - (b.acerto ?? 0))
-
   return (
     <div className="empilha-2 pe">
-      <section className="pe-heroi">
-        <div className="pe-heroi__texto">
-          <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> Plano até a prova · {plano.prova}</p>
-          <h1>{calculo.provaPassou ? 'A prova chegou. Boa sorte!' : <>Faltam <span className="numerico">{calculo.diasAteProva}</span> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
-          <p>Prova em {longa(plano.data_prova)}. Intensidade {ROTULO_INTENSIDADE[plano.intensidade].nome.toLowerCase()}{plano.folgas.length ? `, folga ${plano.folgas.map((d) => DIAS_SEMANA[d]).join(', ')}` : ''}.</p>
-          <p className={`pe-ritmo pe-ritmo--${ritmoTexto.classe}`}><Icone nome={ritmoTexto.classe === 'atras' ? 'baixo' : ritmoTexto.classe === 'frente' ? 'cima' : 'certo'} tamanho={15} /> {ritmoTexto.texto}</p>
-        </div>
-        <div className="pe-meta">
-          <span className="pe-meta__rotulo">Meta de hoje</span>
-          <strong className="numerico">{calculo.metaDiaria}</strong>
-          <span className="pe-meta__rotulo">questões novas</span>
-          <span className="pe-meta__barra" aria-label={`${calculo.feitasHoje} de ${calculo.metaDiaria} feitas hoje`}><span style={{ width: `${calculo.metaDiaria ? Math.min(100, (calculo.feitasHoje / calculo.metaDiaria) * 100) : 100}%` }} /></span>
-          <small>{calculo.faltaHoje ? `${calculo.feitasHoje} feitas · faltam ${calculo.faltaHoje}` : 'Meta de hoje cumprida'}</small>
-        </div>
-      </section>
-
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
-
-      <section className="pe-hoje">
-        <div>
-          <p className="meta">{calculo.naRetaFinal ? 'RETA FINAL' : 'HOJE'}</p>
-          {calculo.naRetaFinal ? (
-            <><h2>Semana da reta final</h2><p className="texto-2">Nada de conteúdo novo: refaça os erros e as marcadas com dúvida, e faça um simulado cronometrado.</p></>
-          ) : calculo.hoje ? (
-            <><h2>{calculo.hoje.n} questões de {calculo.hoje.nome}</h2><p className="texto-2">{calculo.hoje.focos.length ? <>Começando pelo que mais cai: {calculo.hoje.focos.join(', ')}. </> : 'Questões que você ainda não fez. '}Depois, passe pela revisão do dia.</p></>
-          ) : calculo.restante === 0 ? (
-            <><h2>Você cumpriu o plano inteiro</h2><p className="texto-2">Mantenha a revisão em dia e faça o Simulado Nacional do mês.</p></>
-          ) : (
-            <><h2>Meta de hoje cumprida</h2><p className="texto-2">Amanhã tem mais. Se sobrar fôlego, adiante a próxima.</p></>
-          )}
-        </div>
-        <div className="pe-hoje__acoes">
-          {calculo.naRetaFinal ? <>
-            <a className="botao botao--principal botao--grande" href={href('/treinar?situacao=erradas')}>Refazer os erros</a>
-            <a className="botao" href={href('/simulado-nacional')}>Simulado Nacional</a>
-          </> : calculo.hoje ? (
-            <button type="button" className="botao botao--principal botao--grande" onClick={comecarHoje}>Começar agora</button>
-          ) : (
-            <a className="botao botao--principal" href={href('/revisao')}>Ir para a revisão</a>
-          )}
-        </div>
-      </section>
-
-      <div className="pe-duas">
-        <section className="cartao cartao__corpo pe-progresso">
-          <h2>Progresso do plano</h2>
-          <div className="pe-progresso__numero"><strong className="numerico">{calculo.feitas.toLocaleString('pt-BR')}</strong><span>de {calculo.alvo.toLocaleString('pt-BR')} questões</span></div>
-          <span className="pe-barra"><span style={{ width: `${progresso}%` }} /></span>
-          <dl className="pe-dados">
-            <div><dt>Esperado até hoje</dt><dd className="numerico">{calculo.esperadoAteHoje.toLocaleString('pt-BR')}</dd></div>
-            <div><dt>Dias de estudo até a reta final</dt><dd className="numerico">{calculo.diasEstudoRestantes}</dd></div>
-            <div><dt>Reta final a partir de</dt><dd>{curta(calculo.inicioRetaFinal)}</dd></div>
-          </dl>
-        </section>
-        <section className="cartao cartao__corpo pe-fracos">
-          <h2>Reforço nos pontos fracos</h2>
-          {reforcados.length ? <>
-            <p className="texto-2">Estes temas estão abaixo do seu acerto médio e ganham mais espaço no plano:</p>
-            <ul className="pe-fracos__lista">{reforcados.slice(0, 5).map((t) => <li key={t.slug}><span>{t.nome}</span><b className="numerico">{t.acerto}%</b></li>)}</ul>
-          </> : <p className="texto-2">Ainda não há tema claramente abaixo da sua média. O plano distribui pelo que falta em cada tema e reforça automaticamente quando algum ficar para trás.</p>}
-        </section>
-      </div>
-
-      <a className="pe-incidencia" href={href('/temas-que-mais-caem')}>
-        <span className="pe-incidencia__icone" aria-hidden="true"><Icone nome="fogo" tamanho={20} /></span>
-        <span><strong>O plano segue os temas que mais caem</strong><small>As áreas que mais caem ganham mais espaço, e cada dia começa pelos assuntos mais cobrados. Veja o ranking completo.</small></span>
-        <Icone nome="direita" tamanho={18} />
-      </a>
-
-      <section className="cartao cartao__corpo pe-semanas" aria-labelledby="pe-semanas-titulo">
-        <header className="pe-semanas__cabeca">
-          <h2 id="pe-semanas-titulo">Semana a semana</h2>
-          <SeloAssinante />
-        </header>
-        <ol className="pe-linha">
-          {calculo.semanas.filter((s) => s.diasEstudo > 0).map((s, i) => (
-            <li key={i} className={'pe-semana' + (s.atual ? ' pe-semana--atual' : '')}>
-              <span className="pe-semana__data">{curta(s.inicio)} – {curta(s.fim)}{s.atual && <em>esta semana</em>}</span>
-              <div className="pe-semana__temas">
-                {s.temas.length ? s.temas.map((t) => <span key={t.slug} className="pe-chip" title={t.focos.length ? `Foco: ${t.focos.join(', ')}` : undefined}>{t.nome}<b className="numerico">{t.n}</b></span>) : <span className="texto-2">Folga do plano: revisão e questões livres.</span>}
-                {s.atual && s.temas[0]?.focos.length > 0 && <span className="pe-semana__foco"><Icone nome="fogo" tamanho={13} /> Foco: {s.temas.flatMap((t) => t.focos.slice(0, 2)).slice(0, 4).join(' · ')}</span>}
-              </div>
-              <span className="pe-semana__total numerico">{s.total}</span>
-            </li>
-          ))}
-          {!calculo.provaPassou && <li className="pe-semana pe-semana--final">
-            <span className="pe-semana__data">{curta(calculo.inicioRetaFinal)} – véspera</span>
-            <div className="pe-semana__temas"><span className="pe-chip pe-chip--final">Reta final: erros, dúvidas e simulado</span></div>
-            <span className="pe-semana__total"><Icone nome="bandeira" tamanho={16} /></span>
-          </li>}
-        </ol>
-      </section>
-
+      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={comecarHoje} />
       <div className="linha">
-        <button type="button" className="botao" onClick={() => definirEditando(true)}><Icone nome="lapis" tamanho={16} /> Ajustar o plano</button>
+        <button type="button" className="botao" onClick={() => definirEditando(true)}><Icone nome="lapis" tamanho={16} /> Ajustar o cronograma</button>
       </div>
     </div>
   )
 }
 
-function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar }: {
-  indice: NonNullable<ReturnType<typeof usarIndice>['indice']>
-  respondidas: Record<string, RegistroQuestao>
+function VisaoCronograma({ plano, calculo, aberto, aoComecar }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void }) {
+  const ritmoTexto = !aberto || Math.abs(calculo.ritmo) <= 5 || calculo.esperadoAteHoje < 20
+    ? { classe: 'em-dia', texto: aberto ? 'Em dia com o cronograma' : 'Começando hoje' }
+    : calculo.ritmo > 0 ? { classe: 'frente', texto: `${calculo.ritmo}% à frente do cronograma` } : { classe: 'atras', texto: `${-calculo.ritmo}% atrás do cronograma` }
+  const progresso = calculo.alvo ? Math.min(100, Math.round((calculo.feitas / calculo.alvo) * 100)) : 100
+  const reforcados = calculo.temas.filter((t) => t.reforcado).sort((a, b) => (a.acerto ?? 0) - (b.acerto ?? 0))
+  const semanas = calculo.semanas.filter((s) => s.diasEstudo > 0)
+  const visiveis = aberto ? semanas : semanas.slice(0, SEMANAS_PREVIA)
+
+  const linhaSemana = (s: CalculoPlano['semanas'][number], i: number) => (
+    <li key={i} className={'pe-semana' + (s.atual ? ' pe-semana--atual' : '')}>
+      <span className="pe-semana__data">{curta(s.inicio)} – {curta(s.fim)}{s.atual && <em>esta semana</em>}</span>
+      <div className="pe-semana__temas">
+        {s.temas.length ? s.temas.map((t) => <span key={t.slug} className="pe-chip" title={t.focos.length ? `Foco: ${t.focos.join(', ')}` : undefined}>{t.nome}<b className="numerico">{t.n}</b></span>) : <span className="texto-2">Folga do cronograma: revisão e questões livres.</span>}
+        {(s.atual || !aberto) && s.temas[0]?.focos.length > 0 && <span className="pe-semana__foco"><Icone nome="fogo" tamanho={13} /> Foco: {s.temas.flatMap((t) => t.focos.slice(0, 2)).slice(0, 4).join(' · ')}</span>}
+      </div>
+      <span className="pe-semana__total numerico">{s.total}</span>
+    </li>
+  )
+
+  return <>
+    <section className="pe-heroi">
+      <div className="pe-heroi__texto">
+        <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> {aberto ? 'Seu cronograma' : 'Prévia do seu cronograma'} · {plano.prova}</p>
+        <h1>{calculo.provaPassou ? 'A prova chegou. Boa sorte!' : <>Faltam <span className="numerico">{calculo.diasAteProva}</span> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
+        <p>Prova em {longa(plano.data_prova)}. Intensidade {ROTULO_INTENSIDADE[plano.intensidade].nome.toLowerCase()}{plano.folgas.length ? `, folga ${plano.folgas.map((d) => DIAS_SEMANA[d]).join(', ')}` : ''}.</p>
+        <p className={`pe-ritmo pe-ritmo--${ritmoTexto.classe}`}><Icone nome={ritmoTexto.classe === 'atras' ? 'baixo' : ritmoTexto.classe === 'frente' ? 'cima' : 'certo'} tamanho={15} /> {ritmoTexto.texto}</p>
+      </div>
+      <div className="pe-meta">
+        <span className="pe-meta__rotulo">Meta de hoje</span>
+        <strong className="numerico">{calculo.metaDiaria}</strong>
+        <span className="pe-meta__rotulo">questões novas</span>
+        <span className="pe-meta__barra" aria-label={`${calculo.feitasHoje} de ${calculo.metaDiaria} feitas hoje`}><span style={{ width: `${calculo.metaDiaria ? Math.min(100, (calculo.feitasHoje / calculo.metaDiaria) * 100) : 100}%` }} /></span>
+        <small>{calculo.faltaHoje ? `${calculo.feitasHoje} feitas · faltam ${calculo.faltaHoje}` : 'Meta de hoje cumprida'}</small>
+      </div>
+    </section>
+
+    <section className="pe-hoje">
+      <div>
+        <p className="meta">{calculo.naRetaFinal ? 'RETA FINAL' : 'HOJE'}</p>
+        {calculo.naRetaFinal ? (
+          <><h2>Semana da reta final</h2><p className="texto-2">Nada de conteúdo novo: refaça os erros e as marcadas com dúvida, e faça um simulado cronometrado.</p></>
+        ) : calculo.hoje ? (
+          <><h2>{calculo.hoje.n} questões de {calculo.hoje.nome}</h2><p className="texto-2">{calculo.hoje.focos.length ? <>Começando pelo que mais cai: {calculo.hoje.focos.join(', ')}. </> : 'Questões que você ainda não fez. '}Depois, passe pela revisão do dia.</p></>
+        ) : calculo.restante === 0 ? (
+          <><h2>Você cumpriu o cronograma inteiro</h2><p className="texto-2">Mantenha a revisão em dia e faça o Simulado Nacional do mês.</p></>
+        ) : (
+          <><h2>Meta de hoje cumprida</h2><p className="texto-2">Amanhã tem mais. Se sobrar fôlego, adiante a próxima.</p></>
+        )}
+      </div>
+      <div className="pe-hoje__acoes">
+        {!aberto ? (
+          <a className="botao botao--ouro botao--grande" href={href('/assinatura')}><Icone nome="cadeado" tamanho={17} /> Seguir este cronograma</a>
+        ) : calculo.naRetaFinal ? <>
+          <a className="botao botao--principal botao--grande" href={href('/treinar?situacao=erradas')}>Refazer os erros</a>
+          <a className="botao" href={href('/simulado-nacional')}>Simulado Nacional</a>
+        </> : calculo.hoje ? (
+          <button type="button" className="botao botao--principal botao--grande" onClick={aoComecar}>Começar agora</button>
+        ) : (
+          <a className="botao botao--principal" href={href('/revisao')}>Ir para a revisão</a>
+        )}
+      </div>
+    </section>
+
+    {aberto && <div className="pe-duas">
+      <section className="cartao cartao__corpo pe-progresso">
+        <h2>Progresso do cronograma</h2>
+        <div className="pe-progresso__numero"><strong className="numerico">{calculo.feitas.toLocaleString('pt-BR')}</strong><span>de {calculo.alvo.toLocaleString('pt-BR')} questões</span></div>
+        <span className="pe-barra"><span style={{ width: `${progresso}%` }} /></span>
+        <dl className="pe-dados">
+          <div><dt>Esperado até hoje</dt><dd className="numerico">{calculo.esperadoAteHoje.toLocaleString('pt-BR')}</dd></div>
+          <div><dt>Dias de estudo até a reta final</dt><dd className="numerico">{calculo.diasEstudoRestantes}</dd></div>
+          <div><dt>Reta final a partir de</dt><dd>{curta(calculo.inicioRetaFinal)}</dd></div>
+        </dl>
+      </section>
+      <section className="cartao cartao__corpo pe-fracos">
+        <h2>Reforço nos pontos fracos</h2>
+        {reforcados.length ? <>
+          <p className="texto-2">Estes temas estão abaixo do seu acerto médio e ganham mais espaço no cronograma:</p>
+          <ul className="pe-fracos__lista">{reforcados.slice(0, 5).map((t) => <li key={t.slug}><span>{t.nome}</span><b className="numerico">{t.acerto}%</b></li>)}</ul>
+        </> : <p className="texto-2">Ainda não há tema claramente abaixo da sua média. O cronograma distribui pelo que falta em cada tema e reforça automaticamente quando algum ficar para trás.</p>}
+      </section>
+    </div>}
+
+    <a className="pe-incidencia" href={href('/temas-que-mais-caem')}>
+      <span className="pe-incidencia__icone" aria-hidden="true"><Icone nome="fogo" tamanho={20} /></span>
+      <span><strong>O cronograma segue os temas que mais caem</strong><small>As áreas que mais caem ganham mais espaço, e cada dia começa pelos assuntos mais cobrados. Veja o ranking.</small></span>
+      <Icone nome="direita" tamanho={18} />
+    </a>
+
+    <section className="cartao cartao__corpo pe-semanas" aria-labelledby="pe-semanas-titulo">
+      <header className="pe-semanas__cabeca">
+        <h2 id="pe-semanas-titulo">Semana a semana</h2>
+        <SeloAssinante />
+      </header>
+      <ol className="pe-linha">
+        {visiveis.map(linhaSemana)}
+        {aberto && !calculo.provaPassou && <li className="pe-semana pe-semana--final">
+          <span className="pe-semana__data">{curta(calculo.inicioRetaFinal)} – véspera</span>
+          <div className="pe-semana__temas"><span className="pe-chip pe-chip--final">Reta final: erros, dúvidas e simulado</span></div>
+          <span className="pe-semana__total"><Icone nome="bandeira" tamanho={16} /></span>
+        </li>}
+      </ol>
+      {!aberto && semanas.length > SEMANAS_PREVIA && (
+        <Degustacao className="pe-degustacao" titulo={`Mais ${semanas.length - SEMANAS_PREVIA} semanas até a prova`} texto={<p>O cronograma completo, com a reta final, o progresso dia a dia e o ajuste automático quando você atrasa ou adianta.</p>} acao="Liberar o cronograma completo">
+          <ol className="pe-linha">{semanas.slice(SEMANAS_PREVIA, SEMANAS_PREVIA + 4).map((s, i) => linhaSemana(s, i + SEMANAS_PREVIA))}</ol>
+        </Degustacao>
+      )}
+    </section>
+  </>
+}
+
+/** Não assinante: preenche como o assinante e vê o começo do próprio cronograma. */
+function PreviaCronograma({ indice, respondidas }: { indice: Indice; respondidas: Respondidas }) {
+  const [previa, definirPrevia] = useState<PlanoSalvo | null>(null)
+  const calculo = useMemo(() => (previa ? calcularPlano(indice, respondidas, previa) : null), [indice, respondidas, previa])
+  if (!previa || !calculo) return <FormularioPlano indice={indice} respondidas={respondidas} atual={null} aoSalvar={definirPrevia} previa />
+  return (
+    <div className="empilha-2 pe">
+      <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Esta é a prévia do seu cronograma. Assinando, ele fica salvo e se ajusta todo dia.</p>
+      <VisaoCronograma plano={previa} calculo={calculo} aberto={false} />
+      <div className="linha">
+        <button type="button" className="botao" onClick={() => definirPrevia(null)}><Icone nome="lapis" tamanho={16} /> Mudar a data ou a intensidade</button>
+      </div>
+    </div>
+  )
+}
+
+function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, previa = false }: {
+  indice: Indice
+  respondidas: Respondidas
   atual: PlanoSalvo | null
   aoSalvar: (p: PlanoSalvo) => void
   aoCancelar?: () => void
+  /** Sem salvar no servidor: monta a prévia no próprio aparelho. */
+  previa?: boolean
 }) {
   const [data, definirData] = useState(atual?.data_prova ?? '')
   const [prova, definirProva] = useState(atual?.prova ?? 'TEOT')
@@ -201,28 +227,37 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar }: {
 
   async function salvar() {
     if (!dataValida || salvando) return
-    definirSalvando(true); definirErro('')
     const base = respondidasNoAcervo(indice, respondidas)
+    if (previa) {
+      aoSalvar({ data_prova: data, intensidade, folgas, prova, base_respondidas: base, criado_em: new Date().toISOString() })
+      return
+    }
+    definirSalvando(true); definirErro('')
     try {
       await chamarRpc('salvar_plano_estudo', { p_data_prova: data, p_intensidade: intensidade, p_folgas: folgas, p_prova: prova, p_base: base, p_recomecar: !atual || recomecar })
       const [salvo] = await chamarRpc<PlanoSalvo[]>('obter_plano_estudo', {})
       aoSalvar(salvo)
     } catch (falha) {
-      definirErro(codigoErro(falha) === 'data_invalida' ? 'Escolha uma data futura, em até dois anos.' : codigoErro(falha) === 'premium_necessario' ? 'O plano até a prova é exclusivo para assinantes.' : 'Não foi possível salvar agora. Tente de novo.')
+      definirErro(codigoErro(falha) === 'data_invalida' ? 'Escolha uma data futura, em até dois anos.' : codigoErro(falha) === 'premium_necessario' ? 'O cronograma é exclusivo para assinantes.' : 'Não foi possível salvar agora. Tente de novo.')
     } finally { definirSalvando(false) }
   }
 
   async function apagar() {
-    if (!window.confirm('Apagar o seu plano até a prova?')) return
+    if (!window.confirm('Apagar o seu cronograma?')) return
     try { await chamarRpc('apagar_plano_estudo', {}); window.location.reload() } catch { definirErro('Não foi possível apagar agora.') }
   }
 
   return (
     <div className="empilha-2 pe">
       <section className="pe-heroi pe-heroi--convite">
-        <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> Plano até a prova</p>
-        <h1>{atual ? 'Ajustar o plano' : 'Monte seu plano até a prova'}</h1>
-        <p>Três perguntas e o OrtoQuestões faz o resto: meta do dia, temas por semana na ordem do que mais cai e reforço nos pontos fracos.</p>
+        <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> Cronograma até a prova</p>
+        <h1>{atual ? 'Ajustar o cronograma' : 'Saiba exatamente o que estudar até o dia da prova'}</h1>
+        <p>Três perguntas e o OrtoQuestões monta o resto: a meta de cada dia, os temas de cada semana na ordem do que mais cai na prova e reforço nos seus pontos fracos.{previa ? ' Preencha e veja a prévia do seu.' : ''}</p>
+        {previa && <ul className="pe-heroi__fatos">
+          <li><Icone nome="fogo" tamanho={15} /> Primeiro o que mais cai</li>
+          <li><Icone nome="calendario" tamanho={15} /> Meta de cada dia</li>
+          <li><Icone nome="reiniciar" tamanho={15} /> Se ajusta sozinho</li>
+        </ul>}
       </section>
       <section className="cartao cartao__corpo pe-form">
         <div className="pe-form__passo">
@@ -263,13 +298,14 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar }: {
             </div>
           </div>
         </div>
-        {atual && <label className="caixa"><input type="checkbox" checked={recomecar} onChange={(e) => definirRecomecar(e.target.checked)} /><span>Recomeçar a contagem hoje (zera o "à frente ou atrás do plano")</span></label>}
+        {atual && <label className="caixa"><input type="checkbox" checked={recomecar} onChange={(e) => definirRecomecar(e.target.checked)} /><span>Recomeçar a contagem hoje (zera o "à frente ou atrás do cronograma")</span></label>}
         {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
         <div className="linha">
-          <button type="button" className="botao botao--principal botao--grande" disabled={!dataValida || salvando} onClick={salvar}>{salvando ? 'Salvando…' : atual ? 'Salvar ajustes' : 'Criar meu plano'}</button>
+          <button type="button" className={'botao botao--grande ' + (previa ? 'botao--ouro' : 'botao--principal')} disabled={!dataValida || salvando} onClick={salvar}>{salvando ? 'Salvando…' : previa ? 'Ver a prévia do meu cronograma' : atual ? 'Salvar ajustes' : 'Criar meu cronograma'}</button>
           {aoCancelar && <button type="button" className="botao botao--fantasma" onClick={aoCancelar}>Cancelar</button>}
-          {atual && <button type="button" className="botao botao--fantasma pe-form__apagar" onClick={apagar}>Apagar plano</button>}
+          {atual && <button type="button" className="botao botao--fantasma pe-form__apagar" onClick={apagar}>Apagar cronograma</button>}
         </div>
+        {previa && <p className="texto-2 pe-form__nota"><Icone nome="cadeado" tamanho={14} /> A prévia mostra o dia de hoje e as duas primeiras semanas. O cronograma completo, salvo e ajustado todo dia, é do assinante.</p>}
       </section>
     </div>
   )

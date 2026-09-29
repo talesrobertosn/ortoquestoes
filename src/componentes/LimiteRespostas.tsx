@@ -155,7 +155,7 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
           <ul className="paywall__beneficios">
             <li><Icone nome="certo" tamanho={16} /><span><b>Questões sem limite diário.</b> Resolva quantas quiser, no ritmo que a sua prova pede.</span></li>
             <li><Icone nome="certo" tamanho={16} /><span><b>Simulado Nacional todo mês.</b> Sua nota, sua posição e o relatório de prontidão por tema.</span></li>
-            <li><Icone nome="certo" tamanho={16} /><span><b>Plano até a prova e temas que mais caem.</b> A meta de cada dia até o TEOT, na ordem do que a prova mais cobra.</span></li>
+            <li><Icone nome="certo" tamanho={16} /><span><b>Cronograma e temas que mais caem.</b> A meta de cada dia até o TEOT, na ordem do que a prova mais cobra.</span></li>
             <li><Icone nome="certo" tamanho={16} /><span><b>Como a turma respondeu, liga da residência e relatório mensal.</b> Estude com referência, e com o seu serviço.</span></li>
           </ul>
           <p className="paywall__preco">

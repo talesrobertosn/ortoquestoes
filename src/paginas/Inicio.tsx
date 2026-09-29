@@ -9,6 +9,7 @@ import { Icone } from '../componentes/Icone'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { CartaoStreak } from '../componentes/CartaoStreak'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
+import { CaixasAssinante } from '../componentes/CaixasAssinante'
 import { InstalarApp } from '../componentes/InstalarApp'
 import { CartaoCompartilhar } from '../componentes/CartaoCompartilhar'
 import { CartaoPlanos } from '../componentes/CartaoPlanos'
@@ -331,6 +332,8 @@ export function Inicio() {
               </section>
             })()}
           </div>
+
+          <CaixasAssinante />
 
           <VitrineAssinante />
 

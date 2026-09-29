@@ -6,7 +6,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 
 /**
  * Acesso aos recursos do plano pago (como a turma respondeu, Simulado
- * Nacional, plano até a prova, liga e relatório mensal). Quem decide é o
+ * Nacional, cronograma, liga e relatório mensal). Quem decide é o
  * servidor, em cada RPC; aqui é só para a interface mostrar o recurso ou o
  * convite sem piscar. Fica guardado por conta, como o estado de assinante.
  */

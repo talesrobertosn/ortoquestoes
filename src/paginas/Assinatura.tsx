@@ -17,13 +17,16 @@ interface MetricasConta { respostas_total: number; sequencia: number; plano: str
 
 /** O que só o assinante tem. A ordem é a da página e a do comparativo. */
 const RECURSOS: { icone: NomeIcone; titulo: string; texto: string; itens: string[]; destino: string; largo?: boolean }[] = [
-  { icone: 'trofeu', titulo: 'Simulado Nacional, todo mês', texto: 'Uma prova igual para todos os assinantes do Brasil, com 50 questões de TEOT e TARO em duas horas. Corrigida na hora, com a sua posição e um relatório de prontidão por tema.', itens: ['Nota, posição e percentil', 'Pronto, no caminho ou reforçar, tema a tema', 'Top 10 da edição'], destino: '/simulado-nacional', largo: true },
-  { icone: 'fogo', titulo: 'Temas que mais caem', texto: 'O ranking das áreas e dos assuntos mais cobrados no TEOT e no TARO. Um toque em qualquer assunto e começa o treino dele, pelas questões que você ainda não fez.', itens: ['Os 20 assuntos campeões de cobrança', 'Ranking das 12 áreas, assunto por assunto', 'Seu progresso em cada tema'], destino: '/temas-que-mais-caem', largo: true },
-  { icone: 'rota', titulo: 'Plano até a prova', texto: 'Você diz a data do TEOT; o OrtoQuestões monta a meta de cada dia e os temas de cada semana, na ordem do que mais cai na prova e com reforço nos seus pontos fracos. Atrasou ou adiantou, o plano se ajusta sozinho.', itens: ['Meta diária até a prova', 'Primeiro os temas que mais caem', 'À frente ou atrás do plano, em %'], destino: '/plano-de-estudo' },
-  { icone: 'grupo', titulo: 'Como a turma respondeu', texto: 'Depois de cada questão, veja quantos marcaram cada alternativa e qual é a pegadinha. No Treinar, monte sessões com as que a turma mais erra e com as que quase todos acertam, mas você errou.', itens: ['"68% marcaram B, 21% caíram na C"', 'Filtro: as que a turma mais erra', 'Filtro: a turma acerta, você errou'], destino: '/treinar' },
-  { icone: 'coroa', titulo: 'Liga da residência', texto: 'Um ranking privado do seu serviço. Crie a liga, mande o link no grupo e acompanhe quem mais estuda entre os colegas, no geral e na semana.', itens: ['Convite pelo WhatsApp', 'Ranking geral e da semana', 'Até 5 ligas por conta'], destino: '/ligas' },
-  { icone: 'correio', titulo: 'Relatório do mês por e-mail', texto: 'Todo dia 1º, um resumo do seu mês: quantas questões, acerto, temas que subiram e caíram, e o próximo passo para o mês que começa.', itens: ['Evolução mês a mês', 'Temas que subiram e caíram', 'Próximo passo sugerido'], destino: '/conta' },
+  { icone: 'rota', titulo: 'Cronograma baseado no que mais cai', texto: 'Você diz a data da prova e o OrtoQuestões monta a meta de cada dia e os temas de cada semana, na ordem do que mais cai no TEOT e no TARO e com reforço nos seus pontos fracos. Atrasou ou adiantou, ele se ajusta sozinho.', itens: ['Meta de cada dia até a prova', 'Primeiro os assuntos mais cobrados', 'Reta final reservada na última semana'], destino: '/cronograma', largo: true },
+  { icone: 'trofeu', titulo: 'Simulado Nacional, todo mês', texto: 'Uma prova igual para todos os assinantes do Brasil, com 50 questões de TEOT e TARO em duas horas. Corrigida na hora, com a sua posição e um relatório de prontidão por tema.', itens: ['Nota, posição e percentil', 'Pronto, no caminho ou reforçar', 'Top 10 da edição'], destino: '/simulado-nacional', largo: true },
+  { icone: 'fogo', titulo: 'Temas que mais caem', texto: 'O ranking das áreas e dos assuntos mais cobrados. Um toque em qualquer assunto e começa o treino dele.', itens: ['20 assuntos campeões', '12 áreas, assunto por assunto'], destino: '/temas-que-mais-caem' },
+  { icone: 'grupo', titulo: 'Como a turma respondeu', texto: 'Depois de cada questão, quantos marcaram cada alternativa e qual é a pegadinha. E sessões com as que a turma mais erra.', itens: ['"68% marcaram B"', 'Filtros pela turma'], destino: '/treinar' },
+  { icone: 'coroa', titulo: 'Liga da residência', texto: 'Um ranking privado do seu serviço. Crie a liga, mande o link no grupo e veja quem mais estuda.', itens: ['Convite pelo WhatsApp', 'Geral e da semana'], destino: '/ligas' },
+  { icone: 'correio', titulo: 'Relatório do mês', texto: 'Todo dia 1º, no seu e-mail: quantas questões, acerto, temas que subiram e caíram e o próximo passo.', itens: ['Evolução mês a mês', 'Próximo passo sugerido'], destino: '/conta' },
 ]
+
+/** O que vem com qualquer plano, listado embaixo do preço. */
+const INCLUI = ['Cronograma baseado no que mais cai na prova', 'Ranking dos temas que mais caem', 'Simulado Nacional todo mês, com sua posição', 'Como a turma respondeu cada questão', 'Liga da residência e relatório mensal', 'Questões sem limite', 'Garantia de 7 dias em cada cobrança']
 
 export function Assinatura() {
   const { sessao } = usarConta()
@@ -84,14 +87,14 @@ export function Assinatura() {
           <p className="vp-heroi__selo"><Icone nome="coroa" tamanho={16} /> Plano do assinante</p>
           <h1>Tudo o que você precisa para chegar pronto na prova.</h1>
           <p className="vp-heroi__lide">
-            {nome ? `${nome}, questões` : 'Questões'} {limitesHabilitados ? 'sem limite diário' : 'sem limite'} e seis recursos que só o assinante tem: Simulado Nacional todo mês, plano até a prova guiado pelos temas que mais caem, o ranking desses temas, como a turma respondeu, liga da residência e relatório mensal.
-            {!limitesHabilitados && ' O acesso gratuito está sem limite diário nesta fase: o que o assinante ganha a mais são esses recursos, e o acesso ilimitado fica garantido se o limite gratuito for ativado.'}
+            {nome ? `${nome}, questões` : 'Questões'} {limitesHabilitados ? 'sem limite diário' : 'sem limite'} e o que só o assinante tem: um cronograma até a prova montado pelo que mais cai, o Simulado Nacional todo mês, o ranking dos temas mais cobrados, como a turma respondeu, a liga da residência e o relatório mensal.
           </p>
           <div className="vp-heroi__acoes">
             <a className="botao botao--claro botao--grande" href="#planos" onClick={(e) => { e.preventDefault(); document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' }) }}>Ver os planos</a>
             <a className="botao botao--vidro botao--grande" href={href(sessao ? '/treinar' : '/conta?modo=criar')}>{sessao ? 'Continuar no gratuito' : 'Começar grátis'}</a>
           </div>
           <p className="vp-heroi__garantia"><Icone nome="certo" tamanho={16} /> Garantia de 7 dias · cancelamento por botão · seu histórico nunca é apagado</p>
+          {!limitesHabilitados && <p className="vp-heroi__fase">O acesso gratuito está sem limite diário nesta fase: o que o assinante ganha a mais são esses recursos, e o acesso ilimitado fica garantido se o limite gratuito for ativado.</p>}
         </div>
         <div className="vp-vitrine" aria-hidden="true">
           <div className="vp-vitrine__cartao vp-vitrine__cartao--nacional">
@@ -106,7 +109,7 @@ export function Assinatura() {
             <span className="vp-vitrine__barra"><b>A</b><i style={{ width: '8%' }} />8%</span>
           </div>
           <div className="vp-vitrine__cartao vp-vitrine__cartao--plano">
-            <span className="vp-vitrine__rotulo"><Icone nome="rota" tamanho={14} /> Plano até a prova</span>
+            <span className="vp-vitrine__rotulo"><Icone nome="rota" tamanho={14} /> Cronograma</span>
             <strong>45</strong><small>questões hoje · faltam 87 dias</small>
           </div>
           <span className="vp-vitrine__nota-rodape">Ilustração com números de exemplo</span>
@@ -118,6 +121,27 @@ export function Assinatura() {
         <div><strong>{comentadas ? comentadas.toLocaleString('pt-BR') : '3.800+'}</strong><span>com comentário</span></div>
         <div><strong>{indice ? indice.temas.length : 11}</strong><span>temas da especialidade</span></div>
         <div><strong>TEOT · TARO</strong><span>e ENARE R4</span></div>
+      </section>
+
+      <section className="vp-perguntas" aria-label="O que o assinante resolve">
+        <a className="vp-pergunta" href={href('/cronograma')}>
+          <span className="vp-pergunta__icone"><Icone nome="rota" tamanho={22} /></span>
+          <span className="vp-pergunta__q">O que eu estudo hoje?</span>
+          <strong>Cronograma pelo que mais cai</strong>
+          <small>A meta do dia e o tema certo, até a prova.</small>
+        </a>
+        <a className="vp-pergunta" href={href('/simulado-nacional')}>
+          <span className="vp-pergunta__icone"><Icone nome="trofeu" tamanho={22} /></span>
+          <span className="vp-pergunta__q">Estou pronto?</span>
+          <strong>Simulado Nacional</strong>
+          <small>Sua nota e posição entre os residentes.</small>
+        </a>
+        <a className="vp-pergunta" href={href('/temas-que-mais-caem')}>
+          <span className="vp-pergunta__icone"><Icone nome="fogo" tamanho={22} /></span>
+          <span className="vp-pergunta__q">O que a prova mais cobra?</span>
+          <strong>Temas que mais caem</strong>
+          <small>O ranking das áreas e dos assuntos.</small>
+        </a>
       </section>
 
       {(ativa || acessoPagoAteOFim) && metricas && (
@@ -136,12 +160,12 @@ export function Assinatura() {
       <section className="vp-secao">
         <header className="vp-secao__cabeca">
           <p className="vp-sobre">Só para assinantes</p>
-          <h2>Seis recursos para estudar com direção</h2>
-          <p>O acervo, os comentários e a revisão continuam abertos para todos. O plano soma o que responde às perguntas de quem está perto da prova: estou pronto? o que estudo hoje? o que mais cai? onde a turma erra?</p>
+          <h2>Estude com direção, não no escuro</h2>
+          <p>O acervo, os comentários e a revisão continuam abertos para todos. O plano soma o que responde às perguntas de quem está perto da prova: o que estudo hoje? o que mais cai? estou pronto? onde a turma erra?</p>
         </header>
         <div className="vp-recursos">
           {RECURSOS.map((r) => (
-            <article key={r.titulo} className={'vp-recurso' + (r.largo ? ' vp-recurso--destaque' : '') + (r.destino === '/temas-que-mais-caem' ? ' vp-recurso--temas' : '')}>
+            <article key={r.titulo} className={'vp-recurso' + (r.largo ? ' vp-recurso--destaque' : '') + (r.destino === '/cronograma' ? ' vp-recurso--temas' : '')}>
               <span className="vp-recurso__icone"><Icone nome={r.icone} tamanho={24} /></span>
               <div className="vp-recurso__corpo">
                 <h3>{r.titulo}</h3>
@@ -149,7 +173,7 @@ export function Assinatura() {
                 <ul>{r.itens.map((item) => <li key={item}><Icone nome="certo" tamanho={15} />{item}</li>)}</ul>
                 <a href={href(r.destino)}>Ver como funciona <Icone nome="direita" tamanho={14} /></a>
               </div>
-              {r.destino === '/temas-que-mais-caem' && <RankingIlustrado />}
+              {r.destino === '/cronograma' && <RankingIlustrado />}
             </article>
           ))}
         </div>
@@ -171,7 +195,7 @@ export function Assinatura() {
             ['Questões por dia', limitesHabilitados ? '20 (as próximas liberam no dia seguinte)' : 'Sem limite nesta fase', 'Sem limite'],
             ['Simulado de 50 ou 100 questões de uma vez', limitesHabilitados ? 'Em vários dias' : 'Na hora nesta fase', 'Na hora'],
             ['Simulado Nacional mensal, com posição e prontidão', false, true],
-            ['Plano até a prova, com meta diária', false, true],
+            ['Cronograma baseado no que mais cai', false, true],
             ['Ranking dos temas que mais caem', false, true],
             ['Como a turma respondeu e filtros pela turma', false, true],
             ['Liga da residência', false, true],
@@ -193,7 +217,7 @@ export function Assinatura() {
         <header className="vp-secao__cabeca">
           <p className="vp-sobre">Planos</p>
           <h2>Escolha a periodicidade da assinatura</h2>
-          <p>Os três planos dão acesso a tudo: questões sem limite e os seis recursos do assinante. Muda só a periodicidade e o valor total.</p>
+          <p>Os três planos dão acesso a tudo: questões sem limite e todos os recursos do assinante. Muda só a periodicidade e o valor total.</p>
         </header>
 
         <div className="vp-economia" aria-label="Custo por mês em cada plano">
@@ -227,12 +251,10 @@ export function Assinatura() {
                 </p>
                 <p className="vp-plano__mensal">{p.meses === 1 ? 'Cancele quando quiser' : <>equivale a <b>{real(porMes)}</b> por mês</>}</p>
                 {economia > 0 && <p className="vp-plano__economia">Você economiza {real(economia)}{p.meses === 12 ? `, menos de ${real(p.total / 365)} por dia` : ''}</p>}
+                {!p.destaque && <p className="vp-plano__resumo"><Icone nome="certo" tamanho={16} /> Tudo o que o anual tem, do cronograma pelo que mais cai ao Simulado Nacional</p>}
+                <p className="vp-plano__inclui">Inclui</p>
                 <ul className="vp-plano__itens">
-                  <li><Icone nome="certo" tamanho={16} /> Questões sem limite</li>
-                  <li><Icone nome="certo" tamanho={16} /> Simulado Nacional todo mês</li>
-                  <li><Icone nome="certo" tamanho={16} /> Plano guiado pelo que mais cai</li>
-                  <li><Icone nome="certo" tamanho={16} /> Turma, liga e relatório mensal</li>
-                  <li><Icone nome="certo" tamanho={16} /> Garantia de 7 dias em cada cobrança</li>
+                  {INCLUI.map((item, i) => <li key={item} className={i === 0 ? 'vp-plano__item--destaque' : ''}><Icone nome={i === 0 ? 'rota' : 'certo'} tamanho={16} /> {item}</li>)}
                 </ul>
                 {!sessao
                   ? <a className="botao botao--principal botao--largo" href={href('/conta?modo=criar')}>Criar conta para assinar</a>
@@ -278,7 +300,8 @@ export function Assinatura() {
         <details><summary>Se eu cancelar o semestral após três meses, recebo os três restantes?</summary><p>Após os sete dias para reembolso integral, não há devolução proporcional automática. Você mantém o acesso até completar os seis meses pagos, e a assinatura não renova. A mesma regra vale para o plano anual. Seus direitos previstos em lei permanecem preservados. Consulte as <a href={href('/condicoes-assinatura')}>condições da assinatura</a> antes de comprar.</p></details>
         <details><summary>Como funciona a garantia?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pode pedir reembolso integral em Minha conta. Se a solicitação automática não for confirmada pelo Mercado Pago, use o canal de contato para atendimento manual. O acesso pago só é encerrado após confirmação do reembolso. Depois desse prazo não há reembolso proporcional por esta garantia.</p></details>
         <details><summary>O que acontece com meu histórico se eu cancelar?</summary><p>Nada. Respostas, revisões, favoritas, anotações e desempenho ficam guardados. Ao impedir a renovação, o acesso pago continua até o fim do período; após um reembolso confirmado, a conta volta ao limite gratuito.</p></details>
-        <details><summary>O que o assinante tem a mais?</summary><p>Questões sem limite{limitesHabilitados ? '' : ' (nesta fase, o gratuito também não tem limite)'} e seis recursos exclusivos: o Simulado Nacional mensal com posição e relatório de prontidão, o plano até a prova, o ranking dos temas que mais caem, como a turma respondeu cada questão (com os filtros pela turma no Treinar), a liga da residência e o relatório do mês por e-mail. Revisões, calendário e comentários são iguais para todos.</p></details>
+        <details><summary>O que o assinante tem a mais?</summary><p>Questões sem limite{limitesHabilitados ? '' : ' (nesta fase, o gratuito também não tem limite)'} e os recursos exclusivos: o cronograma até a prova baseado no que mais cai, o Simulado Nacional mensal com posição e relatório de prontidão, o ranking dos temas que mais caem, como a turma respondeu cada questão (com os filtros pela turma no Treinar), a liga da residência e o relatório do mês por e-mail. Revisões, calendário e comentários são iguais para todos.</p></details>
+        <details><summary>Como o cronograma é montado?</summary><p>Você informa a data da prova, a intensidade (leve, firme ou completo) e os dias de folga. O cronograma divide as questões que faltam pelos dias até a prova, coloca primeiro as áreas e os assuntos que mais caem, dá mais espaço aos temas em que você está abaixo da média e reserva a última semana para a reta final. Todo dia ele se recalcula: se você atrasar, a meta sobe um pouco; se adiantar, alivia. Quem não assina pode ver a prévia do próprio cronograma antes de decidir.</p></details>
         <details><summary>Como funciona o Simulado Nacional?</summary><p>No começo de cada mês sai uma edição nova: a mesma prova, com 50 questões de TEOT e TARO e duas horas de tempo, para todos os assinantes. Você faz quando quiser dentro do mês, numa tentativa só. A correção sai na hora, com a sua posição entre quem entregou no tempo e o acerto por tema comparado à média.</p></details>
         <details><summary>Meus colegas precisam assinar para entrar na liga?</summary><p>Sim. A liga da residência é um recurso do assinante: quem cria e quem entra precisam do plano. Quem recebe o convite sem o plano vê o nome da liga e pode assinar para entrar.</p></details>
         <details><summary>Qual plano vale mais a pena?</summary><p>Se você está a mais de seis meses da prova, o anual sai pela metade do preço do mensal. Para uma reta final curta, o mensal ou o semestral resolvem sem compromisso longo.</p></details>
@@ -312,7 +335,7 @@ export function Assinatura() {
   )
 }
 
-/** Amostra do ranking na página de vendas: só as três primeiras áreas aparecem. */
+/** Amostra do ranking (base do cronograma) na página de vendas: só as três primeiras áreas aparecem. */
 function RankingIlustrado() {
   const linhas: Array<[string, number, string]> = [
     ['Trauma adulto', 100, 'Cai muito'],

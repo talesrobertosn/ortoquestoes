@@ -59,7 +59,8 @@ const TITULOS: Record<string, string> = {
   '/entrar': 'Entrar ou criar conta — OrtoQuestões',
   '/emails': 'E-mails de conquistas — OrtoQuestões',
   '/simulado-nacional': 'Simulado Nacional — OrtoQuestões',
-  '/plano-de-estudo': 'Plano até a prova — OrtoQuestões',
+  '/plano-de-estudo': 'Cronograma — OrtoQuestões',
+  '/cronograma': 'Cronograma — OrtoQuestões',
   '/ligas': 'Liga da residência — OrtoQuestões',
   '/temas-que-mais-caem': 'Temas que mais caem — OrtoQuestões',
 }
@@ -150,6 +151,7 @@ export function App() {
     case 'simulado-nacional':
       pagina = <SimuladoNacional consulta={rota.consulta} />
       break
+    case 'cronograma':
     case 'plano-de-estudo':
       pagina = <PlanoEstudo />
       break

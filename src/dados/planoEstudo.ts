@@ -3,7 +3,7 @@ import { embaralhar } from './embaralhar'
 import { AREAS, idsDoFoco, nivelPorQuestao, pesoIncidenciaDoTema, type Nivel } from './incidencia'
 
 /**
- * Plano até a prova. Tudo é recalculado a cada dia a partir do que a pessoa
+ * Cronograma até a prova. Tudo é recalculado a cada dia a partir do que a pessoa
  * já respondeu: atrasou, a meta sobe um pouco; adiantou, ela desce. A última
  * semana antes da prova fica reservada para a reta final (erros e simulado).
  * Os temas que mais caem na prova ganham mais espaço e vêm antes, e dentro de

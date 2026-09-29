@@ -112,7 +112,7 @@ export function AdminRecursosPagos() {
   return <>
     {mensagem && <p role="status" className="adm-nota adm-mensagem">{mensagem}</p>}
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-pagos">
-      <div><h2 id="adm-titulo-pagos">Recursos do plano pago</h2><p>Como a turma respondeu, Simulado Nacional, plano até a prova, temas que mais caem, liga da residência e relatório mensal.</p></div>
+      <div><h2 id="adm-titulo-pagos">Recursos do plano pago</h2><p>Como a turma respondeu, Simulado Nacional, cronograma, temas que mais caem, liga da residência e relatório mensal.</p></div>
       <label className="ct-interruptor"><input type="checkbox" checked={exclusivos} onChange={(e) => void trocarExclusivos(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span><strong>Só para assinantes</strong><br /><small>Desligado, libera tudo para todas as contas (útil numa promoção). O relatório mensal continua só para quem tem plano, cortesia ou é administrador.</small></span></label>
     </section>
 

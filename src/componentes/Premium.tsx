@@ -50,3 +50,36 @@ export function PortaoPremium({ convite, children }: { convite: ReactNode; child
   if (logado && !carregado) return <p className="estado" role="status">Carregando…</p>
   return <>{premium ? children : convite}</>
 }
+
+interface PropsDegustacao {
+  /** Frase curta sobre o que fica guardado, ex.: "Os outros 17 assuntos". */
+  titulo: string
+  texto?: ReactNode
+  /** Texto do botão; o destino é sempre a página de planos (ou entrar). */
+  acao?: string
+  children: ReactNode
+  className?: string
+}
+
+/**
+ * Prévia de um recurso pago: o conteúdo aparece desfocado por baixo e uma
+ * faixa com cadeado convida a assinar. O que vai dentro deve ser exemplo ou
+ * dado já público: o desfoque é só visual.
+ */
+export function Degustacao({ titulo, texto, acao = 'Liberar com a assinatura', children, className = '' }: PropsDegustacao) {
+  const { logado, pagamentos_ativos, carregado } = usarPremium()
+  return (
+    <div className={`dg ${className}`}>
+      <div className="dg__conteudo" aria-hidden="true" {...{ inert: "" }}>{children}</div>
+      <div className="dg__cortina">
+        <div className="dg__cartao">
+          <span className="dg__cadeado" aria-hidden="true"><Icone nome="cadeado" tamanho={18} /></span>
+          <p className="dg__titulo">{titulo}</p>
+          {texto && <div className="dg__texto">{texto}</div>}
+          <a className="botao botao--ouro" href={href(logado ? '/assinatura' : '/conta?modo=entrar')}>{logado ? acao : 'Entrar para ver mais'}</a>
+          {logado && carregado && !pagamentos_ativos && <small className="dg__nota">As assinaturas abrem em breve.</small>}
+        </div>
+      </div>
+    </div>
+  )
+}

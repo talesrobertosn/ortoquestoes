@@ -3,7 +3,7 @@ import { chamarRpc, chamarRpcPublica, codigoErro } from '../servicos/supabase'
 import { usarPremium } from '../conta/premium'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
-import { ConvitePremium, SeloAssinante } from '../componentes/Premium'
+import { ConvitePremium, Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href, navegar } from '../util/rotas'
 
 interface MinhaLiga { id: string; nome: string; codigo: string; sou_dono: boolean; membros: number; minha_posicao: number | null; lider: string | null }
@@ -67,12 +67,20 @@ function ListaLigas() {
     return (
       <div className="empilha-2 lg">
         <Heroi />
-        <ConvitePremium
-          icone="grupo"
-          titulo="Estude junto com o seu serviço"
-          texto={<p>A liga reúne você e os seus colegas num ranking privado. Quem entra vê a posição de cada um, quem subiu na semana e quanto falta para passar o próximo.</p>}
-          itens={['Crie até 5 ligas e convide pelo link', 'Ranking geral e da semana', 'Só os membros veem a liga']}
-        />
+        <Degustacao titulo="Estude junto com o seu serviço (exemplo de liga)" texto={<p>Um ranking privado com os seus colegas: quem mais estudou no geral e na semana. Crie a liga e convide pelo WhatsApp.</p>} acao="Criar a liga do meu serviço">
+          <section className="cartao cartao__corpo">
+            <ol className="rk-lista">
+              {['Rafael M.', 'Beatriz C.', 'Você', 'Pedro H.', 'Camila R.'].map((nome, i) => (
+                <li key={nome} className={'rk-linha' + (nome === 'Você' ? ' rk-linha--voce' : '')}>
+                  <span className="rk-linha__posicao numerico">{i + 1}</span>
+                  <span className="rk-linha__avatar">{nome.slice(0, 2).toUpperCase()}</span>
+                  <span className="rk-linha__nome"><span className="rk-linha__apelido">{nome}</span></span>
+                  <span className="rk-linha__total numerico">{1400 - i * 170}</span>
+                </li>
+              ))}
+            </ol>
+          </section>
+        </Degustacao>
       </div>
     )
   }
@@ -161,7 +169,7 @@ function EntrarLiga({ codigo }: { codigo: string }) {
           icone="grupo"
           titulo={`Assine para entrar na ${previa.nome}`}
           texto={<p>A liga da residência é exclusiva para assinantes. Com o plano, você entra nesta liga, cria as suas e ainda leva todos os outros recursos.</p>}
-          itens={['Ranking privado com os colegas', 'Simulado Nacional todo mês', 'Temas que mais caem e plano até a prova', 'Como a turma respondeu cada questão']}
+          itens={['Ranking privado com os colegas', 'Simulado Nacional todo mês', 'Temas que mais caem e cronograma', 'Como a turma respondeu cada questão']}
         />
       )}
     </div>
