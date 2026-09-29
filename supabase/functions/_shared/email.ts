@@ -6,12 +6,19 @@ import { emailAlerta } from './modelo-email.ts'
  *   RESEND_API_KEY   chave da API
  *   EMAIL_REMETENTE  ex.: "OrtoQuestões <contato@ortoquestoes.com.br>" (domínio verificado no Resend)
  *   EMAIL_SEGREDO    texto aleatório longo, assina o link de descadastro
+ *   EMAIL_RESPONDER_PARA  (opcional) e-mail que recebe as respostas, ex.: o seu Gmail
  * Sem RESEND_API_KEY nada é enviado e a função responde "email_nao_configurado".
  */
 export const emailConfigurado = () => !!Deno.env.get('RESEND_API_KEY') && !!Deno.env.get('EMAIL_REMETENTE')
 
+/**
+ * `descadastro` vira o cabeçalho List-Unsubscribe, que o Gmail usa como sinal
+ * de envio em massa: vai nos automáticos e fica de fora da carta pessoal (que
+ * mantém o link no rodapé).
+ */
 export async function enviarEmail(para: string | string[], assunto: string, html: string, texto: string, descadastro?: string) {
   const chave = Deno.env.get('RESEND_API_KEY'), remetente = Deno.env.get('EMAIL_REMETENTE')
+  const responder = Deno.env.get('EMAIL_RESPONDER_PARA')?.trim()
   if (!chave || !remetente) throw new Error('email_nao_configurado')
   const resposta = await fetch('https://api.resend.com/emails', {
     method: 'POST',
@@ -22,6 +29,7 @@ export async function enviarEmail(para: string | string[], assunto: string, html
       subject: assunto,
       html,
       text: texto,
+      ...(responder ? { reply_to: responder } : {}),
       ...(descadastro ? { headers: { 'List-Unsubscribe': `<${descadastro}>` } } : {}),
     }),
   })

@@ -6,6 +6,7 @@ import { Icone } from '../Icone'
 import { BarrasHorizontais } from './AdminGraficos'
 import type { LinhaUsuario } from './AdminUsuarios'
 import { PLANOS, data, dataHora, haQuanto, motivoFalhaEmail, porcentagem } from './formatos'
+import { escreverRecado } from './recado'
 
 interface Detalhe {
   respostas: Array<{ id: string; c: string | null; primeira: string | null }>
@@ -29,6 +30,8 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
   const [ocupado, definirOcupado] = useState(false)
   const [recado, definirRecado] = useState('')
   const [previa, definirPrevia] = useState<string | null>(null)
+  const [formato, definirFormato] = useState<'carta' | 'cartao'>('carta')
+  const [variante, definirVariante] = useState(0)
   const [cortesiaDias, definirCortesiaDias] = useState('90')
   const [cortesiaMotivo, definirCortesiaMotivo] = useState('')
 
@@ -108,10 +111,23 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
         <section className="empilha">
           <h3 className="adm-subtitulo">Mandar parabéns por e-mail</h3>
           {!detalhe.emails_conquistas ? <p className="adm-vazio">Esta pessoa desligou os e-mails de conquistas.</p> : <>
-            <label className="campo">Recado seu (opcional, aparece destacado no e-mail)<textarea className="entrada" rows={3} maxLength={600} value={recado} onChange={e => definirRecado(e.target.value)} placeholder="Ex.: Vi seu ritmo nas últimas semanas e fiquei feliz. Continue assim!" /></label>
+            <fieldset className="adm-formato">
+              <legend>Formato</legend>
+              <label className="caixa"><input type="radio" name="formato-email" checked={formato === 'carta'} onChange={() => definirFormato('carta')} /><span><strong>Carta pessoal</strong> · texto simples, assinado por você. Tem mais chance de ficar fora de Promoções no Gmail.</span></label>
+              <label className="caixa"><input type="radio" name="formato-email" checked={formato === 'cartao'} onChange={() => definirFormato('cartao')} /><span><strong>Cartão com emblema</strong> · mais bonito, mas o Gmail tende a pôr em Promoções.</span></label>
+            </fieldset>
+            <label className="campo">{formato === 'carta' ? 'Texto da carta (se ficar vazio, vai um parabéns padrão)' : 'Recado seu (opcional, aparece destacado no e-mail)'}<textarea className="entrada" rows={formato === 'carta' ? 7 : 3} maxLength={600} value={recado} onChange={e => definirRecado(e.target.value)} placeholder="Ex.: Vi seu ritmo nas últimas semanas e fiquei feliz. Continue assim!" /></label>
+            <div className="linha adm-recado__acoes">
+              <button type="button" className="botao botao--fantasma" onClick={() => {
+                const dias = usuario.ultima_atividade ? Math.floor((Date.now() - new Date(usuario.ultima_atividade).getTime()) / 86_400_000) : null
+                definirRecado(escreverRecado({ respondidas: usuario.respondidas, acerto: acertoGeral, semana: usuario.respondidas_7d, diasParado: dias, temas: porTema }, variante))
+                definirVariante(v => v + 1)
+              }}><Icone nome="lapis" tamanho={16} /> {variante ? 'Escrever outra versão' : 'Escrever pelo desempenho'}</button>
+              <small className="adm-nota">{recado.length}/600 · confira e ajuste antes de enviar</small>
+            </div>
             <div className="linha">
-              <button type="button" className="botao" disabled={ocupado} onClick={() => void acao('Prévia', async () => { const r = await chamarFuncao<{ html: string }>('enviar-email', { acao: 'previa', id_usuario: usuario.id_usuario, recado }); definirPrevia(r.html) }, '')}>Ver prévia</button>
-              <button type="button" className="botao botao--principal" disabled={ocupado} onClick={() => { if (window.confirm(`Enviar o e-mail de parabéns para ${usuario.email}?`)) void acao('Envio', () => chamarFuncao('enviar-email', { acao: 'parabens', id_usuario: usuario.id_usuario, recado }), 'E-mail enviado.') }}>Enviar parabéns</button>
+              <button type="button" className="botao" disabled={ocupado} onClick={() => void acao('Prévia', async () => { const r = await chamarFuncao<{ html: string }>('enviar-email', { acao: 'previa', id_usuario: usuario.id_usuario, recado, formato }); definirPrevia(r.html) }, '')}>Ver prévia</button>
+              <button type="button" className="botao botao--principal" disabled={ocupado} onClick={() => { if (window.confirm(`Enviar o e-mail de parabéns (${formato === 'carta' ? 'carta pessoal' : 'cartão com emblema'}) para ${usuario.email}?`)) void acao('Envio', () => chamarFuncao('enviar-email', { acao: 'parabens', id_usuario: usuario.id_usuario, recado, formato }), 'E-mail enviado.') }}>Enviar parabéns</button>
             </div>
             {previa && <div className="adm-previa"><div className="adm-previa__topo"><span>Prévia do e-mail</span><button type="button" className="adm-link" onClick={() => definirPrevia(null)}>Fechar prévia</button></div><iframe title="Prévia do e-mail" srcDoc={previa} sandbox="" /></div>}
           </>}

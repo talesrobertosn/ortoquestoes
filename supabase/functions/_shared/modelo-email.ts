@@ -220,6 +220,49 @@ export function emailMarco(d: DadosMarco): { assunto: string; html: string; text
   return { assunto, html, texto }
 }
 
+/**
+ * Parabéns em forma de carta: poucas linhas, sem faixa colorida, emblema ou
+ * botão, como um e-mail escrito à mão. É o formato que o Gmail costuma pôr
+ * na caixa principal ou em Atualizações, e não em Promoções.
+ */
+export function emailCarta(d: DadosMarco): { assunto: string; html: string; texto: string } {
+  const nome = d.nome?.trim().split(/\s+/)[0] ?? ''
+  const acerto = d.acertos + d.erros > 0 ? Math.round((d.acertos / (d.acertos + d.erros)) * 100) : null
+  const recado = d.recado?.trim()
+  const assunto = nome ? `${nome}, um recado sobre o seu estudo` : 'Um recado sobre o seu estudo'
+  const numeros = `${numero(d.respondidas)} questões respondidas${acerto === null ? '' : `, ${acerto}% de acerto`}${d.respondidas7d ? ` e ${numero(d.respondidas7d)} só nos últimos 7 dias` : ''}.`
+  const paragrafos = recado
+    ? recado.split(/\n{2,}/).map((p) => p.trim()).filter(Boolean)
+    : [`Passando para te dar parabéns: você chegou a ${numero(d.respondidas)} questões no OrtoQuestões. Constância é o que mais faz diferença na prova, e você está construindo isso.`]
+  const linkTreinar = `${d.site}#/treinar`
+  const p = (conteudo: string, estilo = '') => `<p style="margin:0 0 16px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#222222;${estilo}">${conteudo}</p>`
+
+  const html = `<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(assunto)}</title></head>
+<body style="margin:0;padding:0;background:#ffffff;">
+<div style="max-width:560px;padding:24px 20px;">
+${p(nome ? `Oi, ${esc(nome)},` : 'Oi,')}
+${paragrafos.map((t) => p(esc(t).replace(/\n/g, '<br>'))).join('\n')}
+${p(`Seus números até aqui: ${esc(numeros)}`, 'color:#444444;')}
+${p(`Quando quiser continuar: <a href="${linkTreinar}" style="color:#146b61;">${esc(linkTreinar.replace(/^https?:\/\//, ''))}</a>`)}
+${p('Um abraço,<br>Tales<br><span style="color:#666666;">OrtoQuestões</span>')}
+<p style="margin:28px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:16px;color:#999999;">Não quer receber este tipo de e-mail? <a href="${d.linkDescadastro}" style="color:#999999;">Descadastrar</a></p>
+</div>
+</body>
+</html>`
+
+  const texto = [
+    nome ? `Oi, ${nome},` : 'Oi,', '',
+    ...paragrafos.flatMap((t) => [t, '']),
+    `Seus números até aqui: ${numeros}`, '',
+    `Quando quiser continuar: ${linkTreinar}`, '',
+    'Um abraço,', 'Tales', 'OrtoQuestões', '',
+    `Não quer receber este tipo de e-mail? ${d.linkDescadastro}`,
+  ].join('\n')
+  return { assunto, html, texto }
+}
+
 /** Alerta curto para os administradores. */
 export function emailAlerta(titulo: string, linhas: string[], link: string): { assunto: string; html: string; texto: string } {
   const html = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>${esc(titulo)}</title></head>

@@ -1,12 +1,13 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { alertarAdministradores, emailConfigurado, enviarEmail, linkDescadastro, site, tokenDescadastroValido } from '../_shared/email.ts'
-import { MARCOS, emailMarco, emailRelatorio, marcoAtingido, type DadosRelatorio, type Marco } from '../_shared/modelo-email.ts'
+import { MARCOS, emailCarta, emailMarco, emailRelatorio, marcoAtingido, type DadosRelatorio, type Marco } from '../_shared/modelo-email.ts'
 
 /**
  * E-mails do OrtoQuestões. Ações (POST, corpo JSON):
  *   marco              a própria pessoa, ao atingir um emblema: o servidor confere
  *                      o total sincronizado e manda uma vez por emblema.
  *   parabens           administrador: e-mail de parabéns para uma pessoa, com recado.
+ *                      formato "carta" (padrão, texto simples) ou "cartao" (com emblema).
  *   previa             administrador: devolve assunto e HTML sem enviar.
  *   alerta_avaliacao   a própria pessoa, depois de dizer que um comentário não ajudou
  *                      e escrever o motivo: avisa os administradores.
@@ -37,11 +38,11 @@ async function ehAdministrador(id: string) {
   return r.ok && (await r.json() as unknown[]).length > 0
 }
 
-async function montar(id: string, marco: Marco | null, recado?: string | null) {
+async function montar(id: string, marco: Marco | null, recado?: string | null, carta = false) {
   const dados = await dadosUsuario(id)
   if (!dados?.email) return null
   const m = marco ?? marcoAtingido(Number(dados.respondidas)) ?? MARCOS[0]
-  const email = emailMarco({
+  const email = (carta ? emailCarta : emailMarco)({
     nome: dados.nome, marco: m, respondidas: Number(dados.respondidas), acertos: Number(dados.acertos),
     erros: Number(dados.erros), respondidas7d: Number(dados.respondidas_7d), recado,
     site: site(), linkDescadastro: await linkDescadastro(id),
@@ -126,7 +127,7 @@ Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })
   if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
-    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; limite?: number }
+    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; limite?: number }
 
     if (corpo.acao === 'descadastrar') {
       const tipo = corpo.tipo === 'relatorio' ? 'relatorio' : 'conquistas'
@@ -207,13 +208,15 @@ Deno.serve(async (req) => {
       if (!await ehAdministrador(usuario.id)) return json({ erro: 'acesso_negado' }, 403, req)
       if (!corpo.id_usuario || !/^[0-9a-f-]{36}$/.test(corpo.id_usuario)) return json({ erro: 'usuario_invalido' }, 400, req)
       const recado = typeof corpo.recado === 'string' ? corpo.recado.slice(0, 600) : null
-      const pronto = await montar(corpo.id_usuario, null, recado)
+      // Carta (padrão): texto simples, com mais chance de cair fora de Promoções no Gmail.
+      const carta = corpo.formato !== 'cartao'
+      const pronto = await montar(corpo.id_usuario, null, recado, carta)
       if (!pronto) return json({ erro: 'usuario_sem_email' }, 404, req)
       if (corpo.acao === 'previa') return json({ assunto: pronto.email.assunto, html: pronto.email.html, quer_conquistas: pronto.dados.quer_conquistas }, 200, req)
       if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
       if (!pronto.dados.quer_conquistas) return json({ erro: 'pessoa_nao_quer_emails' }, 409, req)
       try {
-        await enviarEmail(pronto.dados.email!, pronto.email.assunto, pronto.email.html, pronto.email.texto, await linkDescadastro(corpo.id_usuario))
+        await enviarEmail(pronto.dados.email!, pronto.email.assunto, pronto.email.html, pronto.email.texto, carta ? undefined : await linkDescadastro(corpo.id_usuario))
         await registrar({ id_usuario: corpo.id_usuario, tipo: 'parabens', marco: pronto.marco.minimo, assunto: pronto.email.assunto, enviado_por: usuario.id })
         return json({ resultado: 'enviado' }, 200, req)
       } catch (falha) {

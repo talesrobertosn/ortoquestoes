@@ -204,6 +204,45 @@ function emailMarco(d) {
   ].join("\n");
   return { assunto, html, texto };
 }
+function emailCarta(d) {
+  const nome = d.nome?.trim().split(/\s+/)[0] ?? "";
+  const acerto = d.acertos + d.erros > 0 ? Math.round(d.acertos / (d.acertos + d.erros) * 100) : null;
+  const recado = d.recado?.trim();
+  const assunto = nome ? `${nome}, um recado sobre o seu estudo` : "Um recado sobre o seu estudo";
+  const numeros = `${numero(d.respondidas)} quest\xF5es respondidas${acerto === null ? "" : `, ${acerto}% de acerto`}${d.respondidas7d ? ` e ${numero(d.respondidas7d)} s\xF3 nos \xFAltimos 7 dias` : ""}.`;
+  const paragrafos = recado ? recado.split(/\n{2,}/).map((p2) => p2.trim()).filter(Boolean) : [`Passando para te dar parab\xE9ns: voc\xEA chegou a ${numero(d.respondidas)} quest\xF5es no OrtoQuest\xF5es. Const\xE2ncia \xE9 o que mais faz diferen\xE7a na prova, e voc\xEA est\xE1 construindo isso.`];
+  const linkTreinar = `${d.site}#/treinar`;
+  const p = (conteudo, estilo = "") => `<p style="margin:0 0 16px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#222222;${estilo}">${conteudo}</p>`;
+  const html = `<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(assunto)}</title></head>
+<body style="margin:0;padding:0;background:#ffffff;">
+<div style="max-width:560px;padding:24px 20px;">
+${p(nome ? `Oi, ${esc(nome)},` : "Oi,")}
+${paragrafos.map((t) => p(esc(t).replace(/\n/g, "<br>"))).join("\n")}
+${p(`Seus n\xFAmeros at\xE9 aqui: ${esc(numeros)}`, "color:#444444;")}
+${p(`Quando quiser continuar: <a href="${linkTreinar}" style="color:#146b61;">${esc(linkTreinar.replace(/^https?:\/\//, ""))}</a>`)}
+${p('Um abra\xE7o,<br>Tales<br><span style="color:#666666;">OrtoQuest\xF5es</span>')}
+<p style="margin:28px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:16px;color:#999999;">N\xE3o quer receber este tipo de e-mail? <a href="${d.linkDescadastro}" style="color:#999999;">Descadastrar</a></p>
+</div>
+</body>
+</html>`;
+  const texto = [
+    nome ? `Oi, ${nome},` : "Oi,",
+    "",
+    ...paragrafos.flatMap((t) => [t, ""]),
+    `Seus n\xFAmeros at\xE9 aqui: ${numeros}`,
+    "",
+    `Quando quiser continuar: ${linkTreinar}`,
+    "",
+    "Um abra\xE7o,",
+    "Tales",
+    "OrtoQuest\xF5es",
+    "",
+    `N\xE3o quer receber este tipo de e-mail? ${d.linkDescadastro}`
+  ].join("\n");
+  return { assunto, html, texto };
+}
 function emailAlerta(titulo, linhas, link) {
   const html = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>${esc(titulo)}</title></head>
 <body style="margin:0;padding:24px 12px;background:#eef2f1;font-family:Arial,Helvetica,sans-serif;">
@@ -393,6 +432,7 @@ function emailRelatorio(d) {
 var emailConfigurado = () => !!Deno.env.get("RESEND_API_KEY") && !!Deno.env.get("EMAIL_REMETENTE");
 async function enviarEmail(para, assunto, html, texto, descadastro) {
   const chave = Deno.env.get("RESEND_API_KEY"), remetente = Deno.env.get("EMAIL_REMETENTE");
+  const responder = Deno.env.get("EMAIL_RESPONDER_PARA")?.trim();
   if (!chave || !remetente) throw new Error("email_nao_configurado");
   const resposta = await fetch("https://api.resend.com/emails", {
     method: "POST",
@@ -403,6 +443,7 @@ async function enviarEmail(para, assunto, html, texto, descadastro) {
       subject: assunto,
       html,
       text: texto,
+      ...responder ? { reply_to: responder } : {},
       ...descadastro ? { headers: { "List-Unsubscribe": `<${descadastro}>` } } : {}
     })
   });
@@ -467,11 +508,11 @@ async function ehAdministrador(id) {
   const r = await banco(`administradores?id_usuario=eq.${encodeURIComponent(id)}&select=id_usuario`);
   return r.ok && (await r.json()).length > 0;
 }
-async function montar(id, marco, recado) {
+async function montar(id, marco, recado, carta = false) {
   const dados = await dadosUsuario(id);
   if (!dados?.email) return null;
   const m = marco ?? marcoAtingido(Number(dados.respondidas)) ?? MARCOS[0];
-  const email = emailMarco({
+  const email = (carta ? emailCarta : emailMarco)({
     nome: dados.nome,
     marco: m,
     respondidas: Number(dados.respondidas),
@@ -621,13 +662,14 @@ Deno.serve(async (req) => {
       if (!await ehAdministrador(usuario.id)) return json({ erro: "acesso_negado" }, 403, req);
       if (!corpo.id_usuario || !/^[0-9a-f-]{36}$/.test(corpo.id_usuario)) return json({ erro: "usuario_invalido" }, 400, req);
       const recado = typeof corpo.recado === "string" ? corpo.recado.slice(0, 600) : null;
-      const pronto = await montar(corpo.id_usuario, null, recado);
+      const carta = corpo.formato !== "cartao";
+      const pronto = await montar(corpo.id_usuario, null, recado, carta);
       if (!pronto) return json({ erro: "usuario_sem_email" }, 404, req);
       if (corpo.acao === "previa") return json({ assunto: pronto.email.assunto, html: pronto.email.html, quer_conquistas: pronto.dados.quer_conquistas }, 200, req);
       if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);
       if (!pronto.dados.quer_conquistas) return json({ erro: "pessoa_nao_quer_emails" }, 409, req);
       try {
-        await enviarEmail(pronto.dados.email, pronto.email.assunto, pronto.email.html, pronto.email.texto, await linkDescadastro(corpo.id_usuario));
+        await enviarEmail(pronto.dados.email, pronto.email.assunto, pronto.email.html, pronto.email.texto, carta ? void 0 : await linkDescadastro(corpo.id_usuario));
         await registrar({ id_usuario: corpo.id_usuario, tipo: "parabens", marco: pronto.marco.minimo, assunto: pronto.email.assunto, enviado_por: usuario.id });
         return json({ resultado: "enviado" }, 200, req);
       } catch (falha) {

@@ -6,7 +6,7 @@ Deno.env.set('SUPABASE_URL', 'https://banco.teste'); Deno.env.set('SUPABASE_ANON
 Deno.env.set('RESEND_API_KEY', 're_teste'); Deno.env.set('EMAIL_REMETENTE', 'OrtoQuestões <contato@ortoquestoes.com.br>'); Deno.env.set('EMAIL_SEGREDO', 'segredo-de-teste-bem-longo')
 
 const ANA = '00000000-0000-0000-0000-00000000000b', ADM = '00000000-0000-0000-0000-00000000000a'
-const estado = { respondidas: 510, quer: true, marcosEnviados: new Set<number>(), enviados: [] as Array<{ to: string[]; subject: string }>, prefs: [] as unknown[], resendFalha: false, linhas: new Map<number, string>(), ultimoErro: '', relatorioEnviado: false, relatorios: [] as unknown[] }
+const estado = { respondidas: 510, quer: true, marcosEnviados: new Set<number>(), enviados: [] as Array<{ to: string[]; subject: string; corpo?: Record<string, unknown> }>, prefs: [] as unknown[], resendFalha: false, linhas: new Map<number, string>(), ultimoErro: '', relatorioEnviado: false, relatorios: [] as unknown[] }
 globalThis.fetch = async (entrada: RequestInfo | URL, opcoes: RequestInit = {}) => {
   const url = String(entrada), metodo = opcoes.method ?? 'GET'
   const corpo = opcoes.body ? JSON.parse(String(opcoes.body)) : null
@@ -16,7 +16,7 @@ globalThis.fetch = async (entrada: RequestInfo | URL, opcoes: RequestInit = {}) 
     return auth === 'Bearer ana' ? j({ id: ANA, email: 'ana@x.com' }) : auth === 'Bearer adm' ? j({ id: ADM, email: 'admin@x.com' }) : j({}, 401)
   }
   if (url.includes('api.resend.com') && estado.resendFalha) return j({ statusCode: 403, message: 'The ortoquestoes.com.br domain is not verified.' }, 403)
-  if (url.includes('api.resend.com')) { estado.enviados.push({ to: corpo.to, subject: corpo.subject }); return j({ id: 'x' }) }
+  if (url.includes('api.resend.com')) { estado.enviados.push({ to: corpo.to, subject: corpo.subject, corpo }); return j({ id: 'x' }) }
   if (url.includes('configuracao_emails')) return j([{ marcos_automaticos: true, alertas_admin: true }])
   if (url.includes('rpc/dados_email_usuario')) return j([{ email: 'ana@x.com', nome: 'Ana Paula', respondidas: estado.respondidas, acertos: 370, erros: 130, respondidas_7d: 80, dias_de_conta: 20, quer_conquistas: estado.quer }])
   if (url.includes('rpc/destinatarios_relatorio_mensal')) return j(estado.relatorioEnviado ? [] : [{ id_usuario: ANA }])
@@ -73,6 +73,15 @@ r = await chamar('adm', { acao: 'previa', id_usuario: ANA, recado: 'Continue ass
 confere('prévia devolve HTML com recado', r.status === 200 && r.dados.html.includes('Continue assim!') && estado.enviados.length === 2, { status: r.status })
 r = await chamar('adm', { acao: 'parabens', id_usuario: ANA, recado: 'Continue assim!' })
 confere('admin manda parabéns', r.dados.resultado === 'enviado' && estado.enviados.length === 3, r)
+{
+  const carta = estado.enviados[2]
+  confere('parabéns sai como carta pessoal', carta.subject === 'Ana, um recado sobre o seu estudo' && !String(carta.corpo?.html).includes('Emblema desbloqueado') && String(carta.corpo?.text).startsWith('Oi, Ana,'), carta.subject)
+  confere('carta sem cabeçalho de envio em massa, com descadastro no rodapé', !carta.corpo?.headers && String(carta.corpo?.html).includes('Descadastrar'), carta.corpo?.headers)
+  const cartao = await chamar('adm', { acao: 'previa', id_usuario: ANA, formato: 'cartao' })
+  confere('formato cartão mantém o emblema', cartao.dados.html.includes('Emblema desbloqueado') && cartao.dados.assunto.startsWith('Ana, você chegou a'), cartao.dados.assunto)
+  const semRecado = await chamar('adm', { acao: 'previa', id_usuario: ANA })
+  confere('carta sem recado tem texto padrão', semRecado.dados.html.includes('Passando para te dar parabéns'), '')
+}
 r = await chamar('ana', { acao: 'alerta_avaliacao', id_questao: 'coluna-0028' })
 confere('alerta de avaliação vai para o admin', r.dados.resultado === 'ok' && estado.enviados.at(-1)?.to[0] === 'admin@x.com', estado.enviados.at(-1))
 r = await chamar(null, { acao: 'descadastrar', u: ANA, t: 'token-falso-0000000000000000000000000000' })
