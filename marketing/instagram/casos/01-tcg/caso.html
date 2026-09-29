@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --ouro: #f4cf7c; --ouro-claro: #ffe7b0; --papel: #f6f1e4; --papel-2: #ece4d0; --tinta: #1b2422; --tinta-2: #5a5446; --verde: #14655e; --vermelho: #b3423a; --mono: "DejaVu Sans Mono", monospace; }
+* { box-sizing: border-box; margin: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: #fff; }
+.slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; margin-bottom: 40px;
+  background: radial-gradient(900px 700px at 100% 0%, rgba(40,160,140,.30), transparent 60%), linear-gradient(160deg, #06201c 0%, #0b3a35 50%, #12594f 100%); }
+.slide.story { height: 1920px; }
+.slide::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: repeating-radial-gradient(circle at 105% -5%, transparent 0 158px, rgba(255,255,255,.045) 158px 160px); }
+.topo { position: absolute; top: 64px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 14px; font-family: Jakarta; font-size: 32px; }
+.marca svg { width: 42px; height: 42px; } .marca b { font-weight: 800; }
+.arquivo { font-family: var(--mono); font-size: 22px; letter-spacing: .14em; color: rgba(255,255,255,.6); text-transform: uppercase; }
+.pag { position: absolute; bottom: 60px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-size: 24px; color: rgba(255,255,255,.6); }
+.pag .pontos { display: flex; gap: 10px; } .pag .pontos i { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,.25); }
+.pag .pontos i.on { background: var(--ouro); width: 34px; border-radius: 6px; }
+.arrasta { font-family: Jakarta; font-weight: 700; color: var(--ouro-claro); font-size: 26px; display: flex; gap: 10px; align-items: center; }
+h1, h2 { font-family: Jakarta; font-weight: 800; letter-spacing: -.022em; line-height: 1.02; text-wrap: balance; }
+h1 { font-size: 104px; } h2 { font-size: 72px; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+.rotulo { font-family: var(--mono); font-size: 24px; letter-spacing: .16em; text-transform: uppercase; color: var(--ouro-claro); }
+.texto { font-size: 34px; line-height: 1.42; color: rgba(255,255,255,.82); text-wrap: pretty; }
+.texto b { color: #fff; font-weight: 650; }
+
+/* papel de dossiê */
+.papel { position: absolute; background: var(--papel); color: var(--tinta); border-radius: 10px; box-shadow: 0 30px 70px rgba(0,0,0,.45), 0 6px 14px rgba(0,0,0,.25); }
+.papel::after { content: ''; position: absolute; inset: 0; border-radius: 10px; pointer-events: none; background: repeating-linear-gradient(0deg, transparent 0 47px, rgba(90,84,70,.08) 47px 48px); }
+.clipe { position: absolute; top: -26px; width: 44px; height: 100px; border: 6px solid #b9c2c0; border-radius: 22px; z-index: 3; }
+.foto { position: relative; background-repeat: no-repeat; border-radius: 6px; box-shadow: inset 0 0 0 2px rgba(0,0,0,.25); }
+.carimbo { position: absolute; font-family: Jakarta; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; border: 7px solid currentColor; border-radius: 14px; padding: 6px 20px; opacity: .92; mix-blend-mode: multiply; }
+.carimbo.fora { color: var(--vermelho); } .carimbo.culpado { color: var(--verde); }
+.maq { font-family: var(--mono); color: var(--tinta-2); font-size: 22px; letter-spacing: .08em; text-transform: uppercase; }
+
+/* suspeitos */
+.suspeitos { position: absolute; left: 80px; right: 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.suspeito { position: relative; background: var(--papel); color: var(--tinta); border-radius: 12px; padding: 28px 30px 30px; min-height: 290px; box-shadow: 0 20px 40px rgba(0,0,0,.35); }
+.suspeito .letra { position: absolute; top: 22px; right: 24px; width: 76px; height: 76px; border-radius: 50%; background: var(--tinta); color: var(--papel); display: grid; place-items: center; font: 800 40px Jakarta; }
+.suspeito h3 { font: 800 40px/1.08 Jakarta; letter-spacing: -.02em; margin-top: 16px; padding-right: 80px; }
+.suspeito p { font-size: 26px; line-height: 1.4; color: var(--tinta-2); margin-top: 14px; }
+.suspeito.apagado { opacity: .5; filter: grayscale(1); }
+.suspeito .carimbo { font-size: 38px; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-12deg); white-space: nowrap; opacity: 1; }
+.suspeito .carimbo.fora { color: var(--vermelho); }
+.lista { list-style: none; padding: 0; display: grid; gap: 18px; }
+.lista li { display: flex; gap: 18px; font-size: 30px; line-height: 1.38; color: var(--tinta); }
+.lista li::before { content: ''; flex: none; width: 14px; height: 14px; margin-top: 14px; border-radius: 3px; background: var(--verde); transform: rotate(45deg); }
+</style></head><body>
+<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9.6" stroke="currentColor" stroke-width="3.3"/><path d="M14.37 16.63 16.63 14.37 24.63 22.37 26.2 26.2 22.37 24.63Z" fill="currentColor"/></svg></template>
+
+<!-- 1. Capa -->
+<section class="slide" id="c1">
+  <div class="topo"><div class="marca"></div><span class="arquivo">Caso 0065 · TEOT 2022</span></div>
+  <div style="position:absolute; left:80px; right:80px; top:190px">
+    <p class="rotulo">Caso para detetive</p>
+    <h1 style="margin-top:22px">Quatro suspeitos. <em>Um culpado.</em></h1>
+    <p class="texto" style="margin-top:26px; max-width: 560px">Mulher, 30 anos. Dor progressiva e aumento de volume no joelho. Você resolve antes da lâmina?</p>
+  </div>
+  <div class="papel" style="left: 640px; top: 470px; width: 380px; padding: 22px; transform: rotate(5deg);">
+    <div class="clipe" style="left: 40px"></div>
+    <div class="foto" data-crop="5 5 245 433" data-largura="336"></div>
+    <p class="maq" style="margin-top:14px">Prova 1 · radiografia</p>
+  </div>
+  <div class="papel" style="left: 80px; top: 820px; width: 520px; padding: 30px 34px; transform: rotate(-2.5deg);">
+    <p class="maq">Ficha da paciente</p>
+    <p style="font: 800 44px/1.15 Jakarta; margin-top: 12px; letter-spacing:-.01em">Feminino · 30 anos</p>
+    <p style="font-size: 28px; margin-top: 10px; color: var(--tinta-2); line-height:1.4">Queixa: dor progressiva e aumento de volume no joelho.</p>
+    <span class="carimbo" style="color: var(--vermelho); right: -18px; bottom: -58px; font-size: 30px; transform: rotate(-8deg); background: var(--papel)">Confidencial</span>
+  </div>
+  <div class="pag"><span class="pontos"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="arrasta">Arraste e investigue <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+</section>
+
+<!-- 2. Suspeitos -->
+<section class="slide" id="c2">
+  <div class="topo"><div class="marca"></div><span class="arquivo">Os suspeitos</span></div>
+  <div style="position:absolute; left:80px; right:80px; top:170px">
+    <h2>Qual é o diagnóstico <em>mais provável?</em></h2>
+    <p class="texto" style="margin-top:20px">Crave o seu palpite <b>nos comentários</b> antes de arrastar. Só a letra.</p>
+  </div>
+  <div class="suspeitos" style="top: 520px">
+    <div class="suspeito" style="transform: rotate(-1.5deg)"><span class="letra">A</span><p class="maq">Suspeito</p><h3>Osteossarcoma</h3><p>Costuma aparecer na 2ª década, na metáfise.</p></div>
+    <div class="suspeito" style="transform: rotate(1.2deg)"><span class="letra">B</span><p class="maq">Suspeito</p><h3>Condroblastoma</h3><p>Epifisário, gosta de adolescentes.</p></div>
+    <div class="suspeito" style="transform: rotate(1deg)"><span class="letra">C</span><p class="maq">Suspeito</p><h3>Condrossarcoma</h3><p>Prefere quem passou dos 40.</p></div>
+    <div class="suspeito" style="transform: rotate(-1deg)"><span class="letra">D</span><p class="maq">Suspeito</p><h3>Tumor de células gigantes</h3><p>Adulto jovem, perto do joelho.</p></div>
+  </div>
+  <div class="pag"><span class="pontos"><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i></span><span class="arrasta">Comentou? Arraste <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+</section>
+
+<!-- 3. Pista 1: idade -->
+<section class="slide" id="c3">
+  <div class="topo"><div class="marca"></div><span class="arquivo">Pista 1 de 3</span></div>
+  <div style="position:absolute; left:80px; right:80px; top:170px">
+    <p class="rotulo">Pista 1 · a idade</p>
+    <h2 style="margin-top:18px">30 anos. <em>A fise já fechou.</em></h2>
+    <p class="texto" style="margin-top:22px">O condroblastoma também é epifisário, mas é tumor de <b>adolescente com fise aberta</b> e costuma ter halo esclerótico. Idade errada para este caso.</p>
+  </div>
+  <div class="suspeitos" style="top: 590px">
+    <div class="suspeito"><span class="letra">A</span><p class="maq">Suspeito</p><h3>Osteossarcoma</h3><p>Ainda em aberto.</p></div>
+    <div class="suspeito apagado"><span class="letra">B</span><p class="maq">Suspeito</p><h3>Condroblastoma</h3><p>Epifisário, gosta de adolescentes.</p></div>
+    <div class="suspeito"><span class="letra">C</span><p class="maq">Suspeito</p><h3>Condrossarcoma</h3><p>Ainda em aberto.</p></div>
+    <div class="suspeito"><span class="letra">D</span><p class="maq">Suspeito</p><h3>Tumor de células gigantes</h3><p>Ainda em aberto.</p></div>
+  </div>
+  <span class="carimbo fora" style="left: 590px; top: 690px; font-size: 52px; transform: rotate(-12deg); background: rgba(246,241,228,.0); z-index: 4; mix-blend-mode: normal; background: var(--papel)">Descartado</span>
+  <div class="pag"><span class="pontos"><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="arrasta">Próxima pista <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+</section>
+
+<!-- 4. Pista 2: radiografia -->
+<section class="slide" id="c4">
+  <div class="topo"><div class="marca"></div><span class="arquivo">Pista 2 de 3</span></div>
+  <div style="position:absolute; left:80px; top:170px; width: 470px">
+    <p class="rotulo">Pista 2 · a radiografia</p>
+    <h2 style="margin-top:18px; font-size: 64px">Lítica, <em>sem matriz.</em></h2>
+    <p class="texto" style="margin-top:22px; font-size: 31px">Epifisometafisária, chega ao <b>osso subcondral</b> e não forma osso nem cartilagem.</p>
+    <div style="margin-top: 34px; display:grid; gap: 22px">
+      <div class="papel" style="position:relative; padding: 22px 26px"><p class="maq">A · Osteossarcoma</p><p style="font-size: 27px; line-height:1.38; margin-top:8px; padding-right: 70px">Teria matriz osteoide, reação periosteal agressiva e seria metafisário.</p><span class="carimbo fora" style="right: 14px; top: 14px; font-size: 24px; transform: rotate(-8deg); padding: 2px 12px; border-width: 5px">Fora</span></div>
+      <div class="papel" style="position:relative; padding: 22px 26px"><p class="maq">C · Condrossarcoma</p><p style="font-size: 27px; line-height:1.38; margin-top:8px; padding-right: 70px">Teria matriz condroide e paciente acima dos 40.</p><span class="carimbo fora" style="right: 14px; top: 14px; font-size: 24px; transform: rotate(-8deg); padding: 2px 12px; border-width: 5px">Fora</span></div>
+    </div>
+  </div>
+  <div class="papel" style="left: 590px; top: 190px; width: 420px; padding: 20px; transform: rotate(2.5deg);">
+    <div class="clipe" style="left: 180px"></div>
+    <div class="foto" data-crop="5 5 245 433" data-largura="380" data-alvo="135 145 88 78"></div>
+    <p class="maq" style="margin-top:12px">Fêmur distal · AP</p>
+  </div>
+  <div style="position:absolute; left:80px; right:80px; top: 1010px; display:flex; align-items:center; justify-content:space-between; padding: 30px 40px; border-radius: 28px; background: rgba(0,0,0,.18); border: 2px solid rgba(255,255,255,.12)">
+    <span><span class="rotulo" style="display:block">Suspeitos restantes</span><span class="texto" style="font-size:30px">Só um continua de pé.</span></span>
+    <span style="display:flex; gap:18px"><span style="width:110px;height:110px;border-radius:50%;display:grid;place-items:center;font:800 54px Jakarta;background:rgba(255,255,255,.08);color:rgba(255,255,255,.35);text-decoration:line-through;text-decoration-thickness:6px;text-decoration-color:#b3423a">A</span><span style="width:110px;height:110px;border-radius:50%;display:grid;place-items:center;font:800 54px Jakarta;background:rgba(255,255,255,.08);color:rgba(255,255,255,.35);text-decoration:line-through;text-decoration-thickness:6px;text-decoration-color:#b3423a">B</span><span style="width:110px;height:110px;border-radius:50%;display:grid;place-items:center;font:800 54px Jakarta;background:rgba(255,255,255,.08);color:rgba(255,255,255,.35);text-decoration:line-through;text-decoration-thickness:6px;text-decoration-color:#b3423a">C</span><span style="width:110px;height:110px;border-radius:50%;display:grid;place-items:center;font:800 54px Jakarta;background:#f4cf7c;color:#0b3a35;box-shadow:0 0 0 10px rgba(244,207,124,.18)">D</span></span>
+  </div>
+  <div class="pag"><span class="pontos"><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i></span><span class="arrasta">Última pista <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+</section>
+
+<!-- 5. Pista 3: RM e lâmina -->
+<section class="slide" id="c5">
+  <div class="topo"><div class="marca"></div><span class="arquivo">Pista 3 de 3</span></div>
+  <div style="position:absolute; left:80px; right:80px; top:170px">
+    <p class="rotulo">Pista 3 · RM e lâmina</p>
+    <h2 style="margin-top:18px">A lâmina <em>entrega o culpado.</em></h2>
+  </div>
+  <div class="papel" style="left: 80px; top: 450px; width: 470px; padding: 20px; transform: rotate(-3deg);">
+    <div class="clipe" style="left: 60px"></div>
+    <div class="foto" data-crop="279 7 241 231" data-largura="430"></div>
+    <p class="maq" style="margin-top:12px">RM axial</p>
+    <p style="font-size: 26px; line-height: 1.4; margin-top: 8px">Lesão expansiva, com áreas císticas ou hemorrágicas.</p>
+  </div>
+  <div class="papel" style="left: 520px; top: 560px; width: 490px; padding: 20px; transform: rotate(3deg);">
+    <div class="clipe" style="left: 380px"></div>
+    <div class="foto" data-crop="280 252 240 180" data-largura="450" data-alvo="395 340 42 38"></div>
+    <p class="maq" style="margin-top:12px">Histologia · H&amp;E</p>
+    <p style="font-size: 26px; line-height: 1.4; margin-top: 8px"><b>Células gigantes multinucleadas</b> entre células mononucleares.</p>
+  </div>
+  <div class="pag"><span class="pontos"><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i></span><span class="arrasta">O veredito <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+</section>
+
+<!-- 6. Veredito -->
+<section class="slide" id="c6">
+  <div class="topo"><div class="marca"></div><span class="arquivo">Veredito</span></div>
+  <div style="position:absolute; left:80px; right:80px; top:170px">
+    <p class="rotulo">Resposta: D</p>
+    <h1 style="margin-top:18px; font-size: 96px">Tumor de <em>células gigantes.</em></h1>
+  </div>
+  <div class="papel" style="left: 80px; right: 80px; top: 590px; padding: 44px 50px;">
+    <p class="maq">Retrato falado · para nunca mais errar</p>
+    <ul class="lista" style="margin-top: 24px">
+      <li><span><b>20 a 40 anos</b>, depois do fechamento da fise, discreto predomínio feminino.</span></li>
+      <li><span>Mais da metade <b>ao redor do joelho</b>; depois rádio distal e sacro.</span></li>
+      <li><span>Lítica, <b>excêntrica</b>, epifisária, <b>até o subcondral</b>, em geral sem halo esclerótico.</span></li>
+      <li><span>Antes de fechar: <b>cálcio e PTH</b> (tumor marrom) e <b>TC de tórax</b> (metástase pulmonar benigna).</span></li>
+    </ul>
+    <span class="carimbo culpado" style="right: 40px; top: -46px; font-size: 44px; transform: rotate(-7deg); background: var(--papel); mix-blend-mode: normal">Culpado</span>
+  </div>
+  <div class="pag"><span class="pontos"><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i></span><span class="arrasta">Seu placar <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+</section>
+
+<!-- 7. Placar e chamada -->
+<section class="slide" id="c7">
+  <div class="topo"><div class="marca"></div><span class="arquivo">Caso encerrado</span></div>
+  <div style="position:absolute; left:80px; right:80px; top:170px">
+    <p class="rotulo">Seu placar de detetive</p>
+    <h2 style="margin-top:18px">Em qual pista <em>você cravou?</em></h2>
+  </div>
+  <div style="position:absolute; left:80px; right:80px; top: 440px; display:grid; gap: 22px">
+    <div class="papel" style="position:relative; padding: 26px 34px; display:flex; gap: 28px; align-items:center"><span style="font: 800 64px Jakarta; color: var(--verde); width: 90px">1</span><span style="font-size: 30px; line-height:1.35"><b>Só pela ficha.</b> Nível preceptor. Mulher de 30 anos com dor no joelho já grita TCG.</span></div>
+    <div class="papel" style="position:relative; padding: 26px 34px; display:flex; gap: 28px; align-items:center"><span style="font: 800 64px Jakarta; color: var(--verde); width: 90px">2</span><span style="font-size: 30px; line-height:1.35"><b>Na radiografia.</b> Lítica, epifisária, até o subcondral: leitura de R3.</span></div>
+    <div class="papel" style="position:relative; padding: 26px 34px; display:flex; gap: 28px; align-items:center"><span style="font: 800 64px Jakarta; color: var(--verde); width: 90px">3</span><span style="font-size: 30px; line-height:1.35"><b>Só na lâmina.</b> Tudo bem: agora o retrato falado não sai mais da cabeça.</span></div>
+  </div>
+  <div style="position:absolute; left:80px; right:80px; top: 1000px">
+    <p class="texto" style="font-size: 32px">Conte nos comentários <b>em que pista você cravou</b> e marque quem da sua residência erraria esta.</p>
+    <div style="margin-top: 30px; padding: 26px 34px; border-radius: 22px; background: #fff; color: #0b3a35; display:flex; justify-content: space-between; align-items: center">
+      <span style="font: 800 40px Jakarta">ortoquestoes.com.br</span><span style="font-size: 24px; color: #5b686c; text-align:right; line-height:1.3">3.812 questões<br>comentadas</span>
+    </div>
+  </div>
+  <div class="pag"><span class="pontos"><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i></span><span>Salve para revisar</span></div>
+</section>
+
+<!-- Story A: quiz -->
+<section class="slide story" id="sA">
+  <div class="topo" style="top: 210px"><div class="marca"></div><span class="arquivo">TEOT 2022</span></div>
+  <div style="position:absolute; left:80px; right:80px; top:330px">
+    <p class="rotulo">Caso para detetive</p>
+    <h2 style="margin-top:18px; font-size: 76px">Mulher, 30 anos, <em>dor e aumento de volume no joelho.</em></h2>
+  </div>
+  <div class="papel" style="left: 80px; top: 700px; width: 356px; padding: 18px; transform: rotate(-3deg);"><div class="foto" data-crop="5 5 245 433" data-largura="320"></div></div>
+  <div class="papel" style="left: 470px; top: 760px; width: 530px; padding: 18px; transform: rotate(3deg);"><div class="foto" data-crop="279 7 241 231" data-largura="494"></div></div>
+  <p class="texto" style="position:absolute; left: 80px; right: 80px; top: 1330px; font-size: 36px; text-align:center">Qual o diagnóstico mais provável?<br><b>Responda no quiz aqui embaixo.</b></p>
+  <p class="texto" style="position:absolute; left: 80px; right: 80px; top: 1700px; font-size: 26px; text-align:center; color: rgba(255,255,255,.55)">A lâmina e a resposta no próximo story</p>
+</section>
+
+<!-- Story B: resposta -->
+<section class="slide story" id="sB">
+  <div class="topo" style="top: 210px"><div class="marca"></div><span class="arquivo">Resposta</span></div>
+  <div style="position:absolute; left:80px; right:80px; top:330px">
+    <p class="rotulo">Resposta: D</p>
+    <h1 style="margin-top:18px; font-size: 104px">Tumor de <em>células gigantes.</em></h1>
+    <p class="texto" style="margin-top: 28px">Idade, fise fechada, joelho, lesão lítica epifisária até o subcondral e células gigantes na lâmina.</p>
+  </div>
+  <div class="papel" style="left: 80px; right: 80px; top: 960px; padding: 40px 46px;">
+    <p class="maq">Por que não as outras</p>
+    <ul class="lista" style="margin-top: 22px">
+      <li><span><b>Osteossarcoma:</b> 2ª década, metafisário, matriz osteoide.</span></li>
+      <li><span><b>Condroblastoma:</b> epifisário, mas de adolescente com fise aberta.</span></li>
+      <li><span><b>Condrossarcoma:</b> acima dos 40, com matriz condroide.</span></li>
+    </ul>
+  </div>
+  <p class="texto" style="position:absolute; left: 80px; right: 80px; top: 1540px; font-size: 30px; text-align:center">O caso completo está no feed. <b>ortoquestoes.com.br</b></p>
+</section>
+
+<script>
+const s = document.getElementById('simbolo').innerHTML
+document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p><b>Orto</b>Questões</p>')
+// Imagem da questão tumores-0065 (TEOT 2022) e o tamanho original dela, para os recortes data-crop.
+const IMAGEM = '../../../../public/imagens/tumores/tumores-0065-1.jpeg', W = 528, H = 442
+document.querySelectorAll('.foto').forEach(el => {
+  const [x, y, w, h] = el.dataset.crop.split(' ').map(Number)
+  const D = Number(el.dataset.largura), k = D / w
+  Object.assign(el.style, { width: D + 'px', height: h * k + 'px', backgroundImage: `url(${IMAGEM})`, backgroundSize: `${W * k}px ${H * k}px`, backgroundPosition: `${-x * k}px ${-y * k}px` })
+  if (el.dataset.alvo) {
+    const [cx, cy, rx, ry] = el.dataset.alvo.split(' ').map(Number)
+    el.insertAdjacentHTML('beforeend', `<svg style="position:absolute;inset:0" width="${D}" height="${h * k}"><ellipse cx="${(cx - x) * k}" cy="${(cy - y) * k}" rx="${rx * k}" ry="${ry * k}" fill="none" stroke="#f4cf7c" stroke-width="5" stroke-dasharray="14 10"/></svg>`)
+  }
+})
+</script>
+</body></html>

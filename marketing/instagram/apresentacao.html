@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face { font-family: Jakarta; src: url(fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --ouro: #f4cf7c; --ouro-claro: #ffe7b0; --branco: #fff; --suave: rgba(255,255,255,.78); --fraco: rgba(255,255,255,.55); --verde: #14655e; }
+* { box-sizing: border-box; margin: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: var(--branco); }
+.story { width: 1080px; height: 1920px; position: relative; overflow: hidden; margin-bottom: 40px;
+  background: radial-gradient(1200px 900px at 100% 0%, rgba(40,160,140,.35), transparent 60%),
+              radial-gradient(900px 900px at 0% 100%, rgba(244,207,124,.10), transparent 60%),
+              linear-gradient(160deg, #06201c 0%, #0b3a35 45%, #12594f 100%); }
+.story::before { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-radial-gradient(circle at 105% -5%, transparent 0 158px, rgba(255,255,255,.05) 158px 160px); }
+.marca { position: absolute; top: 210px; left: 90px; display: flex; align-items: center; gap: 18px; font-family: Jakarta; font-size: 40px; letter-spacing: -.01em; }
+.marca svg { width: 52px; height: 52px; color: var(--branco); }
+.marca b { font-weight: 800; } .marca span { font-weight: 400; }
+.num { position: absolute; top: 214px; right: 90px; font-family: Jakarta; font-weight: 700; font-size: 26px; color: var(--fraco); letter-spacing: .12em; }
+.nota { position: absolute; top: 262px; right: 90px; font-size: 22px; color: var(--fraco); }
+.conteudo { position: absolute; left: 90px; right: 90px; top: 330px; }
+.selo { display: inline-flex; align-items: center; gap: 12px; padding: 12px 26px; border-radius: 999px; background: rgba(244,207,124,.14); border: 2px solid rgba(244,207,124,.45);
+  color: var(--ouro-claro); font-family: Jakarta; font-weight: 700; font-size: 28px; letter-spacing: .08em; text-transform: uppercase; }
+h1 { font-family: Jakarta; font-weight: 800; font-size: 92px; line-height: 1.02; letter-spacing: -.022em; word-spacing: .04em; margin-top: 34px; text-wrap: balance; }
+h1 em { font-style: normal; color: var(--ouro); }
+.sub { text-wrap: pretty; font-size: 38px; line-height: 1.42; color: var(--suave); margin-top: 30px; max-width: 880px; }
+.sub b { color: var(--branco); font-weight: 650; }
+.rodape { position: absolute; left: 90px; right: 90px; bottom: 300px; display: flex; justify-content: space-between; align-items: center; font-size: 26px; color: var(--fraco); }
+.rodape strong { font-family: Jakarta; font-weight: 700; color: var(--suave); font-size: 30px; letter-spacing: .01em; }
+
+/* Celular */
+.cel { position: absolute; width: 600px; border-radius: 76px; padding: 16px; background: #0d1413;
+  box-shadow: 0 0 0 3px rgba(255,255,255,.14), 0 60px 120px rgba(0,0,0,.55), 0 20px 40px rgba(0,0,0,.35); }
+.cel__tela { position: relative; width: 568px; border-radius: 62px; overflow: hidden; background: #f1f3f2; }
+.cel__tela img { position: absolute; left: 0; width: 568px; }
+.cel__ilha { position: absolute; top: 30px; left: 50%; transform: translateX(-50%); width: 150px; height: 42px; border-radius: 30px; background: #0d1413; z-index: 2; }
+.cel__barra { position: absolute; top: 0; left: 0; right: 0; height: 84px; background: #fff; z-index: 1; }
+
+/* Cartões flutuantes */
+.flutua { position: absolute; background: #fff; color: #12181a; border-radius: 30px; padding: 28px 32px; box-shadow: 0 30px 70px rgba(0,0,0,.35); font-family: Inter; }
+.flutua small { display: block; font-size: 22px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #5b686c; }
+.flutua strong { text-wrap: balance; display: block; font-family: Jakarta; font-weight: 800; font-size: 40px; letter-spacing: -.02em; margin-top: 6px; }
+.flutua .ok { color: #1f7a4d; } .flutua .ruim { color: #b3423a; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 40px; }
+.chip { padding: 16px 28px; border-radius: 999px; background: rgba(255,255,255,.1); border: 2px solid rgba(255,255,255,.2); font-size: 30px; font-weight: 600; }
+.lista { list-style: none; padding: 0; margin-top: 44px; display: grid; gap: 26px; }
+.lista li { display: flex; gap: 22px; align-items: flex-start; font-size: 36px; line-height: 1.35; color: var(--suave); }
+.lista li b { color: var(--branco); font-weight: 650; }
+.lista i { flex: none; width: 46px; height: 46px; border-radius: 50%; background: var(--ouro); color: #0b3a35; display: grid; place-items: center; font-style: normal; font-weight: 800; font-size: 26px; font-family: Jakarta; margin-top: 2px; }
+</style></head><body>
+
+<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9.6" stroke="currentColor" stroke-width="3.3"/><path d="M14.37 16.63 16.63 14.37 24.63 22.37 26.2 26.2 22.37 24.63Z" fill="currentColor"/></svg></template>
+
+<!-- 1. Capa -->
+<section class="story" id="s1">
+  <div class="marca"></div><p class="nota" style="top: 226px">Tela ilustrativa</p>
+  <div class="conteudo">
+    <p class="selo">Para quem vai fazer o TEOT</p>
+    <h1>Seu estudo de ortopedia, <em>num lugar só.</em></h1>
+    <p class="sub">Questões de prova comentadas, revisão no tempo certo e a sua evolução em números.</p>
+  </div>
+  <div class="cel" style="left: 400px; top: 1010px; transform: rotate(-6deg);"><div class="cel__tela" style="height: 1150px"><div class="cel__barra"></div><div class="cel__ilha"></div><img src="telas/t-inicio.png" style="top: 84px"></div></div>
+  <div class="flutua" style="left: 90px; top: 1150px; width: 400px; transform: rotate(-3deg);">
+    <small>No acervo</small><strong style="font-size: 88px; line-height: 1; color: #14655e">3.812</strong><span style="font-size: 28px; color: #5b686c; font-weight: 600">questões comentadas</span>
+  </div>
+  <div class="flutua" style="left: 150px; top: 1440px; width: 330px; transform: rotate(2deg);">
+    <small>Provas</small><strong style="font-size: 34px; line-height: 1.25">TEOT · TARO<br>ENARE R4 · TECOC</strong>
+  </div>
+</section>
+
+<!-- 2. Acervo e Treinar -->
+<section class="story" id="s2">
+  <div class="marca"></div><p class="num">01 · TREINAR</p><p class="nota">Tela ilustrativa</p>
+  <div class="conteudo">
+    <p class="selo">O acervo</p>
+    <h1>3.812 questões, <em>do seu jeito.</em></h1>
+    <p class="sub">Monte a sessão por <b>tema</b>, <b>subtema</b>, <b>prova</b>, <b>ano</b> ou só com <b>as que você errou</b>. Ou toque em Sessão rápida e comece em um segundo.</p>
+    <div class="chips"><span class="chip">11 temas</span><span class="chip">195 subtemas</span><span class="chip">2011 a 2026</span></div>
+  </div>
+  <div class="cel" style="left: 240px; top: 1140px;"><div class="cel__tela" style="height: 1100px"><div class="cel__barra"></div><div class="cel__ilha"></div><img src="telas/t-treinar.png" style="top: 84px"></div></div>
+</section>
+
+<!-- 3. Comentários -->
+<section class="story" id="s3">
+  <div class="marca"></div><p class="num">02 · COMENTÁRIOS</p>
+  <div class="conteudo">
+    <p class="selo">Toda questão comentada</p>
+    <h1>Entenda a certa. <em>E cada uma das erradas.</em></h1>
+    <p class="sub">Cada alternativa tem a sua explicação. Você não decora o gabarito: aprende o raciocínio que a prova cobra.</p>
+    <ul class="lista">
+      <li><i>1</i><span><b>Modo estudo:</b> gabarito e comentário logo depois de cada resposta.</span></li>
+      <li><i>2</i><span><b>Modo prova:</b> com cronômetro, correção só no final.</span></li>
+    </ul>
+  </div>
+  <div class="flutua" style="left: 90px; right: 90px; top: 1250px; padding: 34px 40px;">
+    <div style="display:grid; gap: 22px">
+      <div style="display:flex; gap: 22px; align-items:center; padding: 18px 24px; border-radius: 22px; border: 3px solid #1f7a4d; background: #e8f3ec">
+        <span style="flex:none; width:58px; height:58px; border-radius:50%; background:#1f7a4d; color:#fff; display:grid; place-items:center; font: 800 28px Jakarta">B</span>
+        <span style="flex:1"><b style="font: 800 30px Jakarta; color:#1f7a4d">Correta.</b><span style="display:block; height:14px; border-radius:7px; background:#1f7a4d33; margin-top:12px; width:92%"></span><span style="display:block; height:14px; border-radius:7px; background:#1f7a4d33; margin-top:10px; width:70%"></span></span>
+      </div>
+      <div style="display:flex; gap: 22px; align-items:center; padding: 18px 24px; border-radius: 22px; border: 2px solid #dce2e0">
+        <span style="flex:none; width:58px; height:58px; border-radius:50%; border:3px solid #b3423a; color:#b3423a; display:grid; place-items:center; font: 800 28px Jakarta">A</span>
+        <span style="flex:1"><b style="font: 800 30px Jakarta; color:#b3423a">Por que está errada:</b><span style="display:block; height:14px; border-radius:7px; background:#dce2e0; margin-top:12px; width:88%"></span><span style="display:block; height:14px; border-radius:7px; background:#dce2e0; margin-top:10px; width:60%"></span></span>
+      </div>
+      <div style="display:flex; gap: 22px; align-items:center; padding: 18px 24px; border-radius: 22px; border: 2px solid #dce2e0">
+        <span style="flex:none; width:58px; height:58px; border-radius:50%; border:3px solid #b3423a; color:#b3423a; display:grid; place-items:center; font: 800 28px Jakarta">C</span>
+        <span style="flex:1"><b style="font: 800 30px Jakarta; color:#b3423a">Por que está errada:</b><span style="display:block; height:14px; border-radius:7px; background:#dce2e0; margin-top:12px; width:80%"></span><span style="display:block; height:14px; border-radius:7px; background:#dce2e0; margin-top:10px; width:66%"></span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Revisão -->
+<section class="story" id="s4">
+  <div class="marca"></div><p class="num">03 · REVISÃO</p><p class="nota">Tela ilustrativa</p>
+  <div class="conteudo">
+    <p class="selo">Revisão espaçada</p>
+    <h1>O que você errou <em>volta na hora certa.</em></h1>
+    <p class="sub">Chutou? Volta em 1 dia. Teve dúvida? Em 3. Acertou com certeza? Só daqui a 10. Você escolhe <b>quantas por dia</b> e <b>os dias de folga</b>, para o plantão não atrapalhar.</p>
+  </div>
+  <div class="cel" style="left: 90px; top: 990px; transform: rotate(-4deg);"><div class="cel__tela" style="height: 1100px"><div class="cel__barra"></div><div class="cel__ilha"></div><img src="telas/t-revisao.png" style="top: 84px"></div></div>
+  <div class="flutua" style="left: 600px; top: 1130px; width: 390px; transform: rotate(3deg);">
+    <small>Caderno de erros</small><strong>Tudo o que você errou, <span class="ruim">pronto para refazer.</span></strong>
+  </div>
+</section>
+
+<!-- 5. Desempenho -->
+<section class="story" id="s5">
+  <div class="marca"></div><p class="num">04 · DESEMPENHO</p><p class="nota">Tela ilustrativa</p>
+  <div class="conteudo">
+    <p class="selo">Seu desempenho</p>
+    <h1>Saiba onde você <em>perde pontos.</em></h1>
+    <p class="sub">Acerto por tema e por prova, seus pontos fortes, o que reforçar e o gráfico da sua constância. Um toque no tema e a sessão já sai montada.</p>
+  </div>
+  <div class="cel" style="left: 420px; top: 1010px; transform: rotate(4deg);"><div class="cel__tela" style="height: 1100px"><div class="cel__barra"></div><div class="cel__ilha"></div><img src="telas/t-dados.png" style="top: 84px"></div></div>
+  <div class="flutua" style="left: 90px; top: 1180px; width: 380px; transform: rotate(-3deg);">
+    <small>Ponto forte</small><strong class="ok">Conceitos básicos 84%</strong>
+  </div>
+  <div class="flutua" style="left: 110px; top: 1420px; width: 380px; transform: rotate(-1deg);">
+    <small>Para reforçar</small><strong class="ruim">Tumores 57%</strong>
+  </div>
+  
+</section>
+
+<!-- 6. Ranking e emblemas -->
+<section class="story" id="s6">
+  <div class="marca"></div><p class="num">05 · RANKING</p><p class="nota">Tela ilustrativa</p>
+  <div class="conteudo">
+    <p class="selo">Ranking e emblemas</p>
+    <h1>Constância <em>vira jogo.</em></h1>
+    <p class="sub">Ranking geral e da semana, emblemas de <b>R1</b> até <b>Lenda do OrtoQuestões</b> e a sua sequência de dias seguidos estudando.</p>
+  </div>
+  <div class="cel" style="left: 240px; top: 860px;"><div class="cel__tela" style="height: 1200px"><div class="cel__barra"></div><div class="cel__ilha"></div><img src="telas/t-ranking.png" style="top: -1340px"></div></div>
+  <div class="flutua" style="left: 60px; top: 1500px; width: 330px; transform: rotate(-4deg);"><small>Sequência</small><strong>28 dias <span style="color:#c98a12">seguidos</span></strong></div>
+  <div class="flutua" style="left: 700px; top: 1290px; width: 320px; transform: rotate(4deg);"><small>Novo emblema</small><strong style="color:#14655e">R3</strong><span style="font-size: 26px; color:#5b686c; font-weight:600">1.000 questões</span></div>
+  
+</section>
+
+<!-- 7. Chamada -->
+<section class="story" id="s7">
+  <div class="marca"></div>
+  <div class="conteudo" style="top: 470px">
+    <p class="selo">Comece hoje</p>
+    <h1 style="font-size: 120px">Crie sua conta <em>grátis.</em></h1>
+    <p class="sub">Sem cartão de crédito. Funciona no navegador e pode ser instalado no celular como aplicativo.</p>
+    <div style="margin-top: 80px; padding: 44px 50px; border-radius: 36px; background: #fff; color: #0b3a35; display:flex; align-items:center; justify-content: space-between">
+      <span style="font: 800 64px Jakarta; letter-spacing: -.02em">ortoquestoes.com.br</span>
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#14655e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </div>
+    <p class="sub" style="margin-top: 36px; text-align: center; color: var(--fraco); font-size: 32px">ou toque no link abaixo</p>
+  </div>
+  <p class="rodape"><strong>@ortoquestoes</strong><span>Estude com constância. A prova agradece.</span></p>
+</section>
+
+<script>
+const s = document.getElementById('simbolo').innerHTML
+document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p><b>Orto</b><span>Questões</span></p>')
+</script>
+</body></html>
