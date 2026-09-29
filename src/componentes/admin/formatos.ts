@@ -75,3 +75,19 @@ export function erroDoPainel(falha: unknown, migracao: string): string {
   if (texto.includes('(404)')) return `Falta rodar no Supabase a migração ${migracao}.`
   return 'Não foi possível carregar agora. Tente atualizar.'
 }
+
+/** Baixa uma planilha CSV (separador ;, que o Excel em português abre direto). */
+export function baixarCsv(nomeArquivo: string, cabecalho: string[], linhas: Array<Array<string | number | null | undefined>>) {
+  const celula = (v: string | number | null | undefined) => {
+    const texto = v === null || v === undefined ? '' : String(v)
+    // Fórmulas começando com = + - @ viram texto: planilha aberta não executa nada.
+    const seguro = /^[=+\-@]/.test(texto) ? `'${texto}` : texto
+    return /[;"\n]/.test(seguro) ? `"${seguro.replace(/"/g, '""')}"` : seguro
+  }
+  const conteudo = '﻿' + [cabecalho, ...linhas].map(l => l.map(celula).join(';')).join('\r\n')
+  const url = URL.createObjectURL(new Blob([conteudo], { type: 'text/csv;charset=utf-8' }))
+  const a = document.createElement('a')
+  a.href = url; a.download = nomeArquivo
+  document.body.appendChild(a); a.click(); a.remove()
+  setTimeout(() => URL.revokeObjectURL(url), 1000)
+}

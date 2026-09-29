@@ -1,5 +1,6 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { consultarFatura, consultarPagamento, consultarMercadoPago, type PagamentoMercadoPago } from '../_shared/cobranca-mercado-pago.ts'
+import { alertarAdministradores } from '../_shared/email.ts'
 
 const planos = {
   mensal: { frequency: 1, transaction_amount: 39.90 },
@@ -28,6 +29,12 @@ async function marcarEvento(idEvento: string, status: 'processado' | 'ignorado' 
     method: 'PATCH', body: JSON.stringify({ status_processamento: status, erro: erro ? String(erro) : null, processado_em: new Date().toISOString() }),
   })
   if (!resposta.ok) throw new Error('atualizacao_evento_falhou')
+  if (status === 'erro') {
+    await alertarAdministradores('Pagamento precisa de atenção',
+      [`Evento ${idEvento} do Mercado Pago ficou com erro.`, `Código: ${String(erro ?? '').replace(/^Error: /, '').slice(0, 120)}`,
+        'Abra a aba Pagamentos para ver o que significa e reprocessar.'],
+      'pagamentos', `evento:${idEvento}`)
+  }
 }
 function alteracaoDaCobranca(status: string, pagamento: PagamentoMercadoPago, statusAtual: string) {
   const agora = new Date().toISOString()

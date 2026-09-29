@@ -3,6 +3,7 @@ import { supabase } from '../conta/supabase'
 import { usarConta } from '../conta/ContextoConta'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { Icone } from './Icone'
+import { alertarAvaliacao } from '../conta/emailsMarco'
 
 type Motivo = 'confuso' | 'raso' | 'errado' | 'outro'
 interface Avaliacao { util: boolean; motivo?: Motivo; observacao?: string; enviada: boolean }
@@ -43,6 +44,7 @@ export function AvaliarComentario({ idQuestao }: { idQuestao: string }) {
     definirAvaliacoes((todas) => ({ ...todas, [idQuestao]: nova }))
     const ok = await enviar(idQuestao, nova)
     if (ok) definirAvaliacoes((todas) => ({ ...todas, [idQuestao]: { ...nova, enviada: true } }))
+    if (ok && !nova.util && nova.observacao?.trim()) alertarAvaliacao(idQuestao)
   }
 
   // Avaliações feitas sem rede (ou antes da tabela existir) seguem na próxima visita.

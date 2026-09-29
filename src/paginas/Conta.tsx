@@ -4,6 +4,7 @@ import { contasDisponiveis, retornoConta, supabase } from '../conta/supabase'
 import { avisoConta, definirAvisoConta } from '../conta/retornoAuth'
 import { descreverAparelho, lembrarEmail, ultimoEmail } from '../conta/aparelho'
 import { usarAdministrador } from '../conta/administrador'
+import { gravarPreferenciaConquistas, lerPreferenciaConquistas } from '../conta/emailsMarco'
 import { TIPOS_SYNC, deItens, itens } from '../conta/modeloSync'
 import { gravar, ler, lerVisitante } from '../estado/armazenamento'
 import { href, navegar } from '../util/rotas'
@@ -41,6 +42,13 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [novoEmail, definirNovoEmail] = useState('')
   const [importado, definirImportado] = useState(false)
   const administrador = usarAdministrador(sessao?.user.id)
+  // null = ainda não sabemos (ou o banco não tem a preferência): o interruptor fica escondido.
+  const [emailsConquistas, definirEmailsConquistas] = useState<boolean | null>(null)
+  useEffect(() => { if (sessao?.user.id) void lerPreferenciaConquistas().then(definirEmailsConquistas) }, [sessao?.user.id])
+  const trocarEmailsConquistas = async (valor: boolean) => {
+    definirEmailsConquistas(valor)
+    if (!await gravarPreferenciaConquistas(valor)) { definirEmailsConquistas(!valor); definirMensagem('Não foi possível salvar a preferência de e-mail agora.') }
+  }
   const { contexto } = usarContextoLocal('')
   const { indice } = usarIndice()
   const { ritmo, definirRitmo } = usarRitmoRevisao()
@@ -359,6 +367,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         <div className="ct-opcao"><span className="ct-opcao__rotulo">Tema</span><div className="ct-seg">{([['claro', 'Claro'], ['escuro', 'Escuro']] as const).map(([valor, rotulo]) => <button key={valor} type="button" aria-pressed={tema === valor} onClick={() => trocarTema(valor)}>{rotulo}</button>)}</div></div>
         <label className="ct-opcao ct-opcao--faixa"><span className="ct-opcao__rotulo">Tamanho da fonte <output>{fonte}%</output></span><input className="ct-faixa" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>
         <label className="ct-interruptor"><input type="checkbox" checked={mostrarEtiquetas} onChange={e => definirEtiquetas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Mostrar a etiqueta do assunto antes de responder</span></label>
+        {emailsConquistas !== null && <label className="ct-interruptor"><input type="checkbox" checked={emailsConquistas} onChange={e => void trocarEmailsConquistas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber e-mail de parabéns quando eu desbloquear um emblema</span></label>}
       </section>
 
       <section className="ct-cartao ct-cartao--largo">

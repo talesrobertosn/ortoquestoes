@@ -8,6 +8,8 @@ import { navegar } from '../util/rotas'
 import { gerarId } from '../util/id'
 import { retornoAuth, definirAvisoConta, textoErroLink, validarRetornoUmaVez } from './retornoAuth'
 import { esquecerRegistroAparelho, vigiarAparelho } from './aparelho'
+import { verificarMarcoEmail } from './emailsMarco'
+import { ler } from '../estado/armazenamento'
 
 const STATUS_INICIAL: StatusSync = { estado: 'sincronizando', pendentes: 0, conflitos: [], pronto: false, rejeitados: [] }
 interface ContaContexto {
@@ -100,6 +102,11 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
     sync.current = iniciarSincronizacao(supabase, sessao.user.id, definirStatus)
     return () => { sync.current?.parar(); sync.current = null }
   }, [sessao?.user.id])
+  // Tudo enviado ao servidor: é a hora de ver se um emblema novo pede e-mail de parabéns.
+  useEffect(() => {
+    if (!sessao?.user.id || status.estado !== 'salvo' || status.pendentes > 0) return
+    void verificarMarcoEmail(Object.keys(ler<Record<string, unknown>>('respondidas', {})).length)
+  }, [sessao?.user.id, status.estado, status.pendentes])
   // Uma conta, um aparelho por vez: ver conta/aparelho.ts.
   useEffect(() => {
     const cliente = supabase

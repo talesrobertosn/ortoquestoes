@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, type ReactNode } from 'react'
 import { usarRota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
+import { AvisoSite } from './componentes/AvisoSite'
 import { SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
 
@@ -27,6 +28,7 @@ const CondicoesAssinatura = lazy(() => import('./paginas/CondicoesAssinatura').t
 const Assinatura = lazy(() => import('./paginas/Assinatura').then(({ Assinatura }) => ({ default: Assinatura })))
 const Conta = lazy(() => import('./paginas/Conta').then(({ Conta }) => ({ default: Conta })))
 const DetalhesAssinatura = lazy(() => import('./paginas/DetalhesAssinatura').then(({ DetalhesAssinatura }) => ({ default: DetalhesAssinatura })))
+const Emails = lazy(() => import('./paginas/Emails').then(({ Emails }) => ({ default: Emails })))
 const AdminAssinaturas = lazy(() => import('./paginas/AdminAssinaturas').then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
 
 const TITULOS: Record<string, string> = {
@@ -51,6 +53,7 @@ const TITULOS: Record<string, string> = {
   '/admin': 'Painel do administrador — OrtoQuestões',
   '/admin/assinaturas': 'Painel do administrador — OrtoQuestões',
   '/entrar': 'Entrar ou criar conta — OrtoQuestões',
+  '/emails': 'E-mails de conquistas — OrtoQuestões',
 }
 
 export function App() {
@@ -130,6 +133,9 @@ export function App() {
       // /admin/assinaturas era o endereço antigo do painel e continua valendo.
       pagina = !segundo || segundo === 'assinaturas' ? <AdminAssinaturas /> : <NaoEncontrada />
       break
+    case 'emails':
+      pagina = <Emails consulta={rota.consulta} />
+      break
     case 'entrar':
       pagina = <Conta consulta={rota.consulta} />
       break
@@ -145,6 +151,7 @@ export function App() {
         Pular para o conteúdo
       </a>
       <Cabecalho caminho={rota.caminho} />
+      {primeiro !== 'sessao' && <AvisoSite />}
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
           <Suspense fallback={<p className="estado" role="status">Carregando…</p>}>

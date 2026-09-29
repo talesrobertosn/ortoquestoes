@@ -77,3 +77,23 @@ export async function chamarFuncao<T>(nome: string, corpo: Record<string, unknow
   if (!resposta.ok) throw new Error(repararAcentos(dados.erro) ?? 'Não foi possível concluir a operação.')
   return dados
 }
+
+/**
+ * Chamadas que não exigem conta: só a chave publicável. Servem ao aviso do
+ * topo do site (lido por visitantes) e ao link de descadastro dos e-mails.
+ */
+export async function chamarRpcPublica<T>(nome: string, corpo: Record<string, unknown> = {}): Promise<T> {
+  const resposta = await buscarComPrazo(`${url}/rest/v1/rpc/${nome}`, {
+    method: 'POST', headers: { apikey: chaveSupabase, 'Content-Type': 'application/json' }, body: JSON.stringify(corpo),
+  })
+  if (!resposta.ok) throw new Error(`(${resposta.status})`)
+  return await resposta.json() as T
+}
+export async function chamarFuncaoPublica<T>(nome: string, corpo: Record<string, unknown>): Promise<T> {
+  const resposta = await buscarComPrazo(`${url}/functions/v1/${nome}`, {
+    method: 'POST', headers: { apikey: chaveSupabase, 'Content-Type': 'application/json' }, body: JSON.stringify(corpo),
+  }, 20_000)
+  const dados = await resposta.json().catch(() => ({})) as T & { erro?: string }
+  if (!resposta.ok) throw new Error(dados.erro ?? `(${resposta.status})`)
+  return dados
+}

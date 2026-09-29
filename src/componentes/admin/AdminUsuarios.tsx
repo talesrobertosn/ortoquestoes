@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react'
-import { PLANOS, corresponde, data, haQuanto, normalizar, porcentagem } from './formatos'
+import { Icone } from '../Icone'
+import { PLANOS, baixarCsv, corresponde, data, haQuanto, normalizar, porcentagem } from './formatos'
+import { AdminFichaUsuario } from './AdminFichaUsuario'
 
 export interface LinhaUsuario {
   id_usuario: string
@@ -40,6 +42,7 @@ export function AdminUsuarios({ usuarios }: { usuarios: LinhaUsuario[] }) {
   const [busca, definirBusca] = useState('')
   const [filtro, definirFiltro] = useState<Filtro>('todos')
   const [ordem, definirOrdem] = useState<Ordem>('respondidas')
+  const [aberto, definirAberto] = useState<LinhaUsuario | null>(null)
 
   const contagem: Record<Filtro, number> = useMemo(() => ({
     todos: usuarios.length,
@@ -91,12 +94,20 @@ export function AdminUsuarios({ usuarios }: { usuarios: LinhaUsuario[] }) {
       </select></label>
     </div>
     {ordem === 'acerto' && <p className="adm-nota">Quem respondeu menos de {MINIMO_PARA_ACERTO} questões vai para o fim da lista: com poucas respostas o acerto ainda não diz muito.</p>}
-    <p className="adm-nota" role="status">Mostrando {visiveis.length} de {usuarios.length} conta(s).</p>
+    <div className="adm-linha-nota">
+      <p className="adm-nota" role="status">Mostrando {visiveis.length} de {usuarios.length} conta(s). Toque numa pessoa para abrir a ficha.</p>
+      <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-usuarios-${new Date().toISOString().slice(0, 10)}.csv`,
+        ['Nome', 'E-mail', 'Conta criada', 'Questões', 'Acerto (%)', 'Na semana', 'Última atividade', 'Plano'],
+        visiveis.map(u => [u.nome, u.email, data(u.criado_em), u.respondidas, acertoDe(u), u.respondidas_7d, u.ultima_atividade ? data(u.ultima_atividade) : '', u.plano_vigente ? PLANOS[u.plano_vigente] : '']))}>
+        <Icone nome="baixar" tamanho={15} /> Exportar planilha
+      </button>
+    </div>
 
     {visiveis.length === 0 ? <p>Ninguém neste filtro.</p> : <ol className="adm-usuarios">
       {visiveis.map((u, i) => {
         const acerto = acertoDe(u)
-        return <li key={u.id_usuario} className="adm-usuario">
+        return <li key={u.id_usuario} className="adm-usuario adm-usuario--clicavel" role="button" tabIndex={0} aria-label={`Abrir ficha de ${u.nome ?? u.email ?? 'usuário'}`}
+          onClick={() => definirAberto(u)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); definirAberto(u) } }}>
           <span className={'adm-usuario__pos' + (i < 3 && ordem === 'respondidas' && filtro === 'todos' && !busca ? ` adm-usuario__pos--${i + 1}` : '')}>{i + 1}</span>
           <div className="adm-usuario__quem">
             <strong>{u.online && <span className="adm-online" title="Online agora" aria-label="Online agora" />}{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong>
@@ -120,5 +131,6 @@ export function AdminUsuarios({ usuarios }: { usuarios: LinhaUsuario[] }) {
         </li>
       })}
     </ol>}
+    {aberto && <AdminFichaUsuario usuario={aberto} aoFechar={() => definirAberto(null)} />}
   </section>
 }

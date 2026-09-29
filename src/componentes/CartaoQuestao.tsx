@@ -13,6 +13,7 @@ import { ContribuirComentario } from './ContribuirComentario'
 import { usarEtiquetas } from '../estado/preferencias'
 import { usarComentarioIA } from '../dados/comentarios'
 import { usarIndice } from '../dados/usarIndice'
+import { RelatarErro } from './RelatarErro'
 
 interface Props {
   questao: Questao
@@ -548,9 +549,7 @@ export function CartaoQuestao({
         </div>
 
         <div className="qz-rodape nao-imprime">
-          <a className="qz-rodape__link" href={href(`/contato?questao=${questao.id}`)}>
-            <Icone nome="alerta" tamanho={16} /> Relatar erro nesta questão
-          </a>
+          <RelatarErro key={questao.id} idQuestao={questao.id} />
           {ultimaAcao && <button type="button" className="qz-rodape__link" onClick={desfazerUltimaAcao}><Icone nome="reiniciar" tamanho={16} /> Desfazer</button>}
           <span className="qz-rodape__id numerico">{questao.id}</span>
         </div>

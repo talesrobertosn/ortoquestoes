@@ -3,10 +3,12 @@ import { usarConta } from '../conta/ContextoConta'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
 import { Icone, type NomeIcone } from '../componentes/Icone'
-import { AdminAvaliacoes } from '../componentes/admin/AdminAvaliacoes'
+import { AdminConteudo, type VistaConteudo } from '../componentes/admin/AdminConteudo'
+import { AdminCrescimento } from '../componentes/admin/AdminCrescimento'
+import { AdminConfiguracoes } from '../componentes/admin/AdminConfiguracoes'
 import { AdminUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
 import {
-  PLANOS, STATUS_ASSINATURA, STATUS_EVENTO, TIPOS_EVENTO, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
+  PLANOS, STATUS_ASSINATURA, STATUS_EVENTO, TIPOS_EVENTO, baixarCsv, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
 } from '../componentes/admin/formatos'
 
 interface LinhaAssinatura {
@@ -23,6 +25,8 @@ interface LinhaAssinatura {
   fim_periodo?: string | null
   ultima_cobranca_em?: string | null
   cancelar_ao_fim?: boolean
+  // Da migração 202609290200 em diante.
+  cancelada_em?: string | null
 }
 interface LinhaEvento {
   id: number
@@ -42,10 +46,11 @@ interface Resumo {
   assinantes_vigentes: number
 }
 
-type Aba = 'geral' | 'usuarios' | 'assinaturas' | 'pagamentos' | 'avaliacoes'
+type Aba = 'geral' | 'usuarios' | 'conteudo' | 'crescimento' | 'assinaturas' | 'pagamentos' | 'configuracoes'
 const ABAS: Array<[Aba, string, NomeIcone]> = [
-  ['geral', 'Visão geral', 'grafico'], ['usuarios', 'Usuários', 'usuario'], ['assinaturas', 'Assinaturas', 'estrela'],
-  ['pagamentos', 'Pagamentos', 'relogio'], ['avaliacoes', 'Avaliações', 'lapis'],
+  ['geral', 'Visão geral', 'grafico'], ['usuarios', 'Usuários', 'usuario'], ['conteudo', 'Conteúdo', 'livro'],
+  ['crescimento', 'Crescimento', 'raio'], ['assinaturas', 'Assinaturas', 'estrela'], ['pagamentos', 'Pagamentos', 'relogio'],
+  ['configuracoes', 'Ajustes', 'filtro'],
 ]
 const MIGRACAO = '202609290100_painel_admin.sql'
 
@@ -54,21 +59,24 @@ const vigente = (a: LinhaAssinatura) =>
   (a.status === 'ativa' || (a.status === 'cancelada' && !!a.cancelar_ao_fim)) && (!a.fim_periodo || new Date(a.fim_periodo) > new Date())
 const inicioDe = (a: LinhaAssinatura) => a.criada_em ?? a.inicio_periodo ?? a.ultima_atualizacao
 
-function abaDaUrl(): Aba {
+function lerUrl(): { aba: Aba; vista?: VistaConteudo } {
   const aba = new URLSearchParams(window.location.hash.split('?')[1] ?? '').get('aba')
-  return ABAS.some(([valor]) => valor === aba) ? aba as Aba : 'geral'
+  // Links antigos e os dos e-mails de alerta apontam para ?aba=avaliacoes ou relatos.
+  if (aba === 'avaliacoes' || aba === 'relatos') return { aba: 'conteudo', vista: aba }
+  return { aba: ABAS.some(([valor]) => valor === aba) ? aba as Aba : 'geral' }
 }
 
 export function AdminAssinaturas() {
   const { sessao } = usarConta()
-  const [aba, definirAba] = useState<Aba>(abaDaUrl)
+  const [inicial] = useState(lerUrl)
+  const [aba, definirAba] = useState<Aba>(inicial.aba)
   const [assinaturas, definirAssinaturas] = useState<LinhaAssinatura[] | null>(null)
   const [eventos, definirEventos] = useState<LinhaEvento[] | null>(null)
   const [usuarios, definirUsuarios] = useState<LinhaUsuario[] | null>(null)
   const [resumo, definirResumo] = useState<Resumo | null>(null)
   const [erroAcesso, definirErroAcesso] = useState('')
   const [erroNovo, definirErroNovo] = useState('')
-  const [mensagensPendentes, definirMensagensPendentes] = useState<number | null>(null)
+  const [pendenciasConteudo, definirPendenciasConteudo] = useState<number | null>(null)
   const [atualizadoEm, definirAtualizadoEm] = useState<Date | null>(null)
 
   const carregar = useCallback(async () => {
@@ -108,7 +116,7 @@ export function AdminAssinaturas() {
   const errosPagamento = eventos?.filter(ev => ev.status_processamento === 'erro').length ?? 0
   const contadores: Partial<Record<Aba, number>> = {
     usuarios: usuarios?.length, assinaturas: assinaturas?.filter(vigente).length,
-    pagamentos: errosPagamento || undefined, avaliacoes: mensagensPendentes || undefined,
+    pagamentos: errosPagamento || undefined, conteudo: pendenciasConteudo || undefined,
   }
 
   return <article className="empilha-2 adm">
@@ -124,18 +132,20 @@ export function AdminAssinaturas() {
     {erroAcesso ? <p role="alert" className="adm-alerta">{erroAcesso}</p> : assinaturas === null ? <p role="status">Carregando o painel…</p> : <>
       <nav className="adm-abas" role="tablist" aria-label="Seções do painel">
         {ABAS.map(([valor, rotulo, icone]) => <button key={valor} type="button" role="tab" aria-selected={aba === valor} className="adm-aba" onClick={() => trocarAba(valor)}>
-          <Icone nome={icone} tamanho={16} /><span>{rotulo}</span>{contadores[valor] ? <b className={valor === 'pagamentos' || valor === 'avaliacoes' ? 'adm-aba__alerta' : ''}>{contadores[valor]}</b> : null}
+          <Icone nome={icone} tamanho={16} /><span>{rotulo}</span>{contadores[valor] ? <b className={valor === 'pagamentos' || valor === 'conteudo' ? 'adm-aba__alerta' : ''}>{contadores[valor]}</b> : null}
         </button>)}
       </nav>
 
       {erroNovo && (aba === 'geral' || aba === 'usuarios') && <p role="alert" className="adm-alerta">{erroNovo} Sem ela, usuários ativos e o ranking privado não aparecem; assinaturas, pagamentos e avaliações continuam funcionando.</p>}
 
-      {aba === 'geral' && <VisaoGeral resumo={resumo} usuarios={usuarios} assinaturas={assinaturas} errosPagamento={errosPagamento} mensagens={mensagensPendentes} irPara={trocarAba} />}
+      {aba === 'geral' && <VisaoGeral resumo={resumo} usuarios={usuarios} assinaturas={assinaturas} errosPagamento={errosPagamento} mensagens={pendenciasConteudo} irPara={trocarAba} />}
       {aba === 'usuarios' && usuarios && <AdminUsuarios usuarios={usuarios} />}
       {aba === 'assinaturas' && <Assinaturas linhas={assinaturas} />}
       {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} recarregar={carregar} />}
-      {/* Montada sempre (escondida fora da aba) para o contador de mensagens aparecer na barra. */}
-      <div hidden={aba !== 'avaliacoes'}><AdminAvaliacoes aoCarregar={definirMensagensPendentes} /></div>
+      {aba === 'crescimento' && <AdminCrescimento assinaturas={assinaturas} />}
+      {aba === 'configuracoes' && <AdminConfiguracoes />}
+      {/* Montada sempre (escondida fora da aba) para o contador de pendências aparecer na barra. */}
+      <div hidden={aba !== 'conteudo'}><AdminConteudo vistaInicial={inicial.vista} aoMudarPendencias={definirPendenciasConteudo} /></div>
     </>}
   </article>
 }
@@ -158,7 +168,7 @@ function VisaoGeral({ resumo, usuarios, assinaturas, errosPagamento, mensagens, 
       <div className="adm-kpi"><span>Questões respondidas</span><strong>{n(resumo?.respondidas_hoje)}</strong><small>{resumo ? `hoje · ${n(resumo.respondidas_7d)} na semana` : 'hoje'}</small></div>
       <div className="adm-kpi"><span>Assinantes com acesso</span><strong>{vigentes.length}</strong><small>{assinaturas.length} assinatura(s) no histórico</small></div>
       <button type="button" className={'adm-kpi adm-kpi--botao' + (errosPagamento ? ' adm-kpi--alerta' : '')} onClick={() => irPara('pagamentos')}><span>Pagamentos com problema</span><strong>{errosPagamento}</strong><small>{errosPagamento ? 'toque para revisar' : 'tudo certo'}</small></button>
-      <button type="button" className={'adm-kpi adm-kpi--botao' + (mensagens ? ' adm-kpi--alerta' : '')} onClick={() => irPara('avaliacoes')}><span>Mensagens sobre comentários</span><strong>{mensagens ?? '—'}</strong><small>"não ajudou" com texto</small></button>
+      <button type="button" className={'adm-kpi adm-kpi--botao' + (mensagens ? ' adm-kpi--alerta' : '')} onClick={() => irPara('conteudo')}><span>Conteúdo para revisar</span><strong>{mensagens ?? '—'}</strong><small>relatos de erro e "não ajudou" com texto</small></button>
     </section>
 
     <div className="adm-duas">
@@ -221,7 +231,14 @@ function Assinaturas({ linhas }: { linhas: LinhaAssinatura[] }) {
         <option value="recentes">Mais recentes primeiro</option><option value="antigas">Mais antigas primeiro</option>
       </select></label>
     </div>
-    <p className="adm-nota" role="status">Mostrando {visiveis.length} de {linhas.length} assinatura(s).</p>
+    <div className="adm-linha-nota">
+      <p className="adm-nota" role="status">Mostrando {visiveis.length} de {linhas.length} assinatura(s).</p>
+      <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-assinaturas-${new Date().toISOString().slice(0, 10)}.csv`,
+        ['Nome', 'E-mail', 'Plano', 'Status', 'Assinante desde', 'Última cobrança paga', 'Acesso até', 'Cancela ao fim'],
+        visiveis.map(a => [a.nome, a.usuario, PLANOS[a.plano] ?? a.plano, STATUS_ASSINATURA[a.status] ?? a.status, data(inicioDe(a)), a.ultima_cobranca_em ? data(a.ultima_cobranca_em) : '', a.fim_periodo ? data(a.fim_periodo) : '', a.cancelar_ao_fim ? 'sim' : 'não']))}>
+        <Icone nome="baixar" tamanho={15} /> Exportar planilha
+      </button>
+    </div>
     {visiveis.length === 0 ? <p className="adm-vazio">Nenhuma assinatura neste filtro.</p> : <ul className="adm-cartoes">
       {visiveis.map(a => {
         const inicio = inicioDe(a)
