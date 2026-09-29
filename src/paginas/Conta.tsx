@@ -5,6 +5,8 @@ import { avisoConta, definirAvisoConta } from '../conta/retornoAuth'
 import { descreverAparelho, lembrarEmail, ultimoEmail } from '../conta/aparelho'
 import { usarAdministrador } from '../conta/administrador'
 import { gravarPreferenciaConquistas, lerPreferenciaConquistas } from '../conta/emailsMarco'
+import { usarPremium } from '../conta/premium'
+import { chamarRpc } from '../servicos/supabase'
 import { TIPOS_SYNC, deItens, itens } from '../conta/modeloSync'
 import { gravar, ler, lerVisitante } from '../estado/armazenamento'
 import { href, navegar } from '../util/rotas'
@@ -48,6 +50,18 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const trocarEmailsConquistas = async (valor: boolean) => {
     definirEmailsConquistas(valor)
     if (!await gravarPreferenciaConquistas(valor)) { definirEmailsConquistas(!valor); definirMensagem('Não foi possível salvar a preferência de e-mail agora.') }
+  }
+  // Relatório mensal: só aparece para quem tem o plano (é quem recebe).
+  const { premium } = usarPremium()
+  const [relatorioMensal, definirRelatorioMensal] = useState<boolean | null>(null)
+  useEffect(() => {
+    if (!sessao?.user.id || !premium) return
+    chamarRpc<Array<{ relatorio_mensal: boolean }>>('obter_preferencias_email_completas', {}).then(([p]) => definirRelatorioMensal(p?.relatorio_mensal ?? true)).catch(() => undefined)
+  }, [sessao?.user.id, premium])
+  const trocarRelatorioMensal = async (valor: boolean) => {
+    definirRelatorioMensal(valor)
+    try { await chamarRpc('definir_preferencia_relatorio', { p_relatorio: valor }) }
+    catch { definirRelatorioMensal(!valor); definirMensagem('Não foi possível salvar a preferência de e-mail agora.') }
   }
   const { contexto } = usarContextoLocal('')
   const { indice } = usarIndice()
@@ -128,7 +142,10 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         if (error) throw error
         lembrarEmail(email.trim())
         definirSenha('')
-        navegar('/')
+        // Convite aberto antes de entrar (liga da residência): volta para ele.
+        const voltar = consulta?.get('voltar')
+        if (voltar && voltar.startsWith('/') && !voltar.startsWith('//')) navegar(voltar)
+        else navegar('/')
       } else if (modo === 'criar') {
         if (!aceitouTermos) { definirMensagem('Leia e aceite os Termos de Uso para criar sua conta.'); return }
         if (!perfilCompleto()) return
@@ -368,6 +385,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         <label className="ct-opcao ct-opcao--faixa"><span className="ct-opcao__rotulo">Tamanho da fonte <output>{fonte}%</output></span><input className="ct-faixa" type="range" min="90" max="120" step="5" value={fonte} onChange={e => definirFonte(Number(e.target.value))} /></label>
         <label className="ct-interruptor"><input type="checkbox" checked={mostrarEtiquetas} onChange={e => definirEtiquetas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Mostrar a etiqueta do assunto antes de responder</span></label>
         {emailsConquistas !== null && <label className="ct-interruptor"><input type="checkbox" checked={emailsConquistas} onChange={e => void trocarEmailsConquistas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber e-mail de parabéns quando eu desbloquear um emblema</span></label>}
+        {relatorioMensal !== null && <label className="ct-interruptor"><input type="checkbox" checked={relatorioMensal} onChange={e => void trocarRelatorioMensal(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber o relatório do mês por e-mail (evolução, temas que subiram e caíram, próximo passo)</span></label>}
       </section>
 
       <section className="ct-cartao ct-cartao--largo">

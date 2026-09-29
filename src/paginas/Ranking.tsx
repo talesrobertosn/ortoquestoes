@@ -226,10 +226,13 @@ export function Ranking() {
         <p>O ranking reúne quem mais respondeu questões entre todas as contas com pelo menos 5 questões respondidas.</p>
       </Estado>
     ) : <>
-      <div className="rk-abas" role="tablist" aria-label="Período do ranking">
-        {(['geral', 'semana'] as const).map((p) => (
-          <button key={p} type="button" role="tab" aria-selected={periodo === p} className="rk-aba" onClick={() => definirPeriodo(p)}>{ROTULOS_PERIODO[p]}</button>
-        ))}
+      <div className="rk-topo-abas">
+        <div className="rk-abas" role="tablist" aria-label="Período do ranking">
+          {(['geral', 'semana'] as const).map((p) => (
+            <button key={p} type="button" role="tab" aria-selected={periodo === p} className="rk-aba" onClick={() => definirPeriodo(p)}>{ROTULOS_PERIODO[p]}</button>
+          ))}
+        </div>
+        <a className="rk-liga" href={href('/ligas')}><Icone nome="grupo" tamanho={16} /> Liga da residência <span className="pg-selo">Assinante</span></a>
       </div>
 
       {linhas === null && !erro && <Carregando linhas={6} rotulo="Carregando ranking" />}

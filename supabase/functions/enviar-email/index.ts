@@ -1,6 +1,6 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { alertarAdministradores, emailConfigurado, enviarEmail, linkDescadastro, site, tokenDescadastroValido } from '../_shared/email.ts'
-import { MARCOS, emailMarco, marcoAtingido, type Marco } from '../_shared/modelo-email.ts'
+import { MARCOS, emailMarco, emailRelatorio, marcoAtingido, type DadosRelatorio, type Marco } from '../_shared/modelo-email.ts'
 
 /**
  * E-mails do OrtoQuestões. Ações (POST, corpo JSON):
@@ -10,7 +10,11 @@ import { MARCOS, emailMarco, marcoAtingido, type Marco } from '../_shared/modelo
  *   previa             administrador: devolve assunto e HTML sem enviar.
  *   alerta_avaliacao   a própria pessoa, depois de dizer que um comentário não ajudou
  *                      e escrever o motivo: avisa os administradores.
- *   descadastrar       link do rodapé do e-mail (sem login, com assinatura).
+ *   descadastrar       link do rodapé do e-mail (sem login, com assinatura). tipo:
+ *                      "conquistas" (padrão) ou "relatorio".
+ *   relatorios_mensais administrador (ou o agendador, com o cabeçalho x-segredo igual
+ *                      a EMAIL_SEGREDO): envia o relatório do mês a um lote de assinantes.
+ *   previa_relatorio   administrador: o relatório de uma pessoa, sem enviar.
  */
 
 interface DadosUsuario {
@@ -47,6 +51,73 @@ async function montar(id: string, marco: Marco | null, recado?: string | null) {
 
 const motivo = (falha: unknown) => (falha instanceof Error ? falha.message : String(falha)).slice(0, 300)
 
+/** Mês anterior ao de hoje, no fuso de São Paulo ("2026-09"). */
+function mesAnterior(agora = new Date()): string {
+  const sp = new Date(agora.getTime() - 3 * 3600_000)
+  const ano = sp.getUTCMonth() === 0 ? sp.getUTCFullYear() - 1 : sp.getUTCFullYear()
+  const mes = sp.getUTCMonth() === 0 ? 12 : sp.getUTCMonth()
+  return `${ano}-${String(mes).padStart(2, '0')}`
+}
+const mesValido = (mes?: string) => (mes && /^\d{4}-(0[1-9]|1[0-2])$/.test(mes) ? mes : mesAnterior())
+
+async function segredoValido(recebido: string) {
+  const esperado = Deno.env.get('EMAIL_SEGREDO') ?? ''
+  if (!esperado || esperado.length !== recebido.length) return false
+  let diferenca = 0
+  for (let i = 0; i < esperado.length; i++) diferenca |= esperado.charCodeAt(i) ^ recebido.charCodeAt(i)
+  return diferenca === 0
+}
+
+async function montarRelatorio(id: string, mes: string) {
+  const r = await banco('rpc/dados_relatorio_mensal', { method: 'POST', body: JSON.stringify({ p_id: id, p_mes: mes }) })
+  if (!r.ok) throw new Error('consulta_relatorio_falhou')
+  const dados = await r.json() as Omit<DadosRelatorio, 'site' | 'linkDescadastro'> & { email: string | null }
+  if (!dados?.email) return null
+  const email = emailRelatorio({ ...dados, site: site(), linkDescadastro: await linkDescadastro(id, 'relatorio') })
+  return { ...email, para: dados.email }
+}
+
+const esperar = (ms: number) => new Promise((resolver) => setTimeout(resolver, ms))
+
+/**
+ * Envia o relatório do mês a um lote de assinantes que ainda não o receberam.
+ * Cada envio reserva uma linha (um por pessoa e mês); uma falha fica
+ * registrada e é tentada de novo no próximo lote. O Resend aceita 2 envios
+ * por segundo no plano grátis, daí a pausa entre um e outro.
+ */
+async function enviarRelatorios(mesPedido?: string, limitePedido?: number) {
+  const mes = mesValido(mesPedido)
+  const limite = Math.max(1, Math.min(Number(limitePedido) || 40, 80))
+  const r = await banco('rpc/destinatarios_relatorio_mensal', { method: 'POST', body: JSON.stringify({ p_mes: mes, p_limite: limite }) })
+  if (!r.ok) throw new Error('consulta_destinatarios_falhou')
+  const destinatarios = (await r.json() as Array<{ id_usuario: string }>).map((d) => d.id_usuario)
+  let enviados = 0, falhas = 0
+  for (const id of destinatarios) {
+    const reserva = await registrar({ id_usuario: id, tipo: 'relatorio', referencia: mes, status: 'enviando' })
+    let linha: { id: number } | undefined
+    if (reserva.ok) [linha] = await reserva.json() as Array<{ id: number }>
+    else {
+      const retomada = await banco(`emails_enviados?id_usuario=eq.${id}&tipo=eq.relatorio&referencia=eq.${mes}&status=eq.falhou`, {
+        method: 'PATCH', body: JSON.stringify({ status: 'enviando', erro: null, enviado_em: new Date().toISOString() }),
+      })
+      if (retomada.ok) [linha] = await retomada.json() as Array<{ id: number }>
+    }
+    if (!linha) continue
+    try {
+      const pronto = await montarRelatorio(id, mes)
+      if (!pronto) throw new Error('usuario_sem_email')
+      await enviarEmail(pronto.para, pronto.assunto, pronto.html, pronto.texto, await linkDescadastro(id, 'relatorio'))
+      await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'enviado', assunto: pronto.assunto }) })
+      enviados++
+    } catch (falha) {
+      await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: motivo(falha) }) })
+      falhas++
+    }
+    await esperar(600)
+  }
+  return { mes, enviados, falhas, lote: destinatarios.length, talvez_restem: destinatarios.length === limite }
+}
+
 async function registrar(corpo: Record<string, unknown>) {
   return banco('emails_enviados', { method: 'POST', body: JSON.stringify(corpo) })
 }
@@ -55,18 +126,35 @@ Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })
   if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
-    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; id_questao?: string; u?: string; t?: string }
+    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; limite?: number }
 
     if (corpo.acao === 'descadastrar') {
-      if (!corpo.u || !corpo.t || !/^[0-9a-f-]{36}$/.test(corpo.u) || !await tokenDescadastroValido(corpo.u, corpo.t)) return json({ erro: 'link_invalido' }, 400, req)
+      const tipo = corpo.tipo === 'relatorio' ? 'relatorio' : 'conquistas'
+      if (!corpo.u || !corpo.t || !/^[0-9a-f-]{36}$/.test(corpo.u) || !await tokenDescadastroValido(corpo.u, corpo.t, tipo)) return json({ erro: 'link_invalido' }, 400, req)
       const r = await banco('preferencias_email', {
         method: 'POST', headers: { Prefer: 'resolution=merge-duplicates,return=minimal' },
-        body: JSON.stringify({ id_usuario: corpo.u, conquistas: false, atualizado_em: new Date().toISOString() }),
+        body: JSON.stringify({ id_usuario: corpo.u, [tipo === 'relatorio' ? 'relatorio_mensal' : 'conquistas']: false, atualizado_em: new Date().toISOString() }),
       })
-      return r.ok ? json({ ok: true }, 200, req) : json({ erro: 'nao_foi_possivel' }, 503, req)
+      return r.ok ? json({ ok: true, tipo }, 200, req) : json({ erro: 'nao_foi_possivel' }, 503, req)
+    }
+
+    // Relatório mensal pelo agendador (cron): autenticado pelo segredo, sem usuário.
+    if (corpo.acao === 'relatorios_mensais' && req.headers.get('x-segredo')) {
+      if (!await segredoValido(req.headers.get('x-segredo')!)) return json({ erro: 'acesso_negado' }, 403, req)
+      return json(await enviarRelatorios(corpo.mes, corpo.limite), 200, req)
     }
 
     const usuario = await usuarioDoPedido(req)
+
+    if (corpo.acao === 'relatorios_mensais' || corpo.acao === 'previa_relatorio') {
+      if (!await ehAdministrador(usuario.id)) return json({ erro: 'acesso_negado' }, 403, req)
+      if (corpo.acao === 'previa_relatorio') {
+        const pronto = await montarRelatorio(corpo.id_usuario && /^[0-9a-f-]{36}$/.test(corpo.id_usuario) ? corpo.id_usuario : usuario.id, mesValido(corpo.mes))
+        return pronto ? json({ assunto: pronto.assunto, html: pronto.html }, 200, req) : json({ erro: 'usuario_sem_email' }, 404, req)
+      }
+      if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
+      return json(await enviarRelatorios(corpo.mes, corpo.limite), 200, req)
+    }
 
     if (corpo.acao === 'marco') {
       if (!emailConfigurado()) return json({ resultado: 'email_nao_configurado' }, 200, req)

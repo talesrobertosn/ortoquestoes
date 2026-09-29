@@ -6,7 +6,7 @@ Deno.env.set('SUPABASE_URL', 'https://banco.teste'); Deno.env.set('SUPABASE_ANON
 Deno.env.set('RESEND_API_KEY', 're_teste'); Deno.env.set('EMAIL_REMETENTE', 'OrtoQuestões <contato@ortoquestoes.com.br>'); Deno.env.set('EMAIL_SEGREDO', 'segredo-de-teste-bem-longo')
 
 const ANA = '00000000-0000-0000-0000-00000000000b', ADM = '00000000-0000-0000-0000-00000000000a'
-const estado = { respondidas: 510, quer: true, marcosEnviados: new Set<number>(), enviados: [] as Array<{ to: string[]; subject: string }>, prefs: [] as unknown[], resendFalha: false, linhas: new Map<number, string>(), ultimoErro: '' }
+const estado = { respondidas: 510, quer: true, marcosEnviados: new Set<number>(), enviados: [] as Array<{ to: string[]; subject: string }>, prefs: [] as unknown[], resendFalha: false, linhas: new Map<number, string>(), ultimoErro: '', relatorioEnviado: false, relatorios: [] as unknown[] }
 globalThis.fetch = async (entrada: RequestInfo | URL, opcoes: RequestInit = {}) => {
   const url = String(entrada), metodo = opcoes.method ?? 'GET'
   const corpo = opcoes.body ? JSON.parse(String(opcoes.body)) : null
@@ -19,11 +19,17 @@ globalThis.fetch = async (entrada: RequestInfo | URL, opcoes: RequestInit = {}) 
   if (url.includes('api.resend.com')) { estado.enviados.push({ to: corpo.to, subject: corpo.subject }); return j({ id: 'x' }) }
   if (url.includes('configuracao_emails')) return j([{ marcos_automaticos: true, alertas_admin: true }])
   if (url.includes('rpc/dados_email_usuario')) return j([{ email: 'ana@x.com', nome: 'Ana Paula', respondidas: estado.respondidas, acertos: 370, erros: 130, respondidas_7d: 80, dias_de_conta: 20, quer_conquistas: estado.quer }])
+  if (url.includes('rpc/destinatarios_relatorio_mensal')) return j(estado.relatorioEnviado ? [] : [{ id_usuario: ANA }])
+  if (url.includes('rpc/dados_relatorio_mensal')) return j({ email: 'ana@x.com', nome: 'Ana Paula', mes: corpo.p_mes, respostas: 320, certas: 230, erradas: 90, dias_ativos: 18,
+    respostas_anterior: 250, certas_anterior: 160, erradas_anterior: 90, total_acumulado: 1400,
+    temas: [{ tema: 'joelho', certas: 40, total: 50, certas_ant: 25, total_ant: 40 }, { tema: 'tumores', certas: 8, total: 20, certas_ant: 12, total_ant: 20 }],
+    simulado: { titulo: 'Simulado Nacional · Setembro de 2026', acertos: 36, total: 50 } })
   if (url.includes('rpc/emails_administradores')) return j([{ email: 'admin@x.com' }])
   if (url.includes('administradores?id_usuario=eq.')) return j(url.includes(ADM) ? [{ id_usuario: ADM }] : [])
   if (url.includes('avaliacoes_comentario')) return j([{ observacao: 'Não entendi a inervação', motivo: 'confuso', atualizado_em: new Date().toISOString() }])
   if (url.includes('emails_enviados?tipo=eq.alerta_admin')) return j([])
   if (url.includes('emails_enviados') && metodo === 'POST') {
+    if (corpo.tipo === 'relatorio') { estado.relatorios.push(corpo); return j([{ id: 900 }], 201) }
     if (corpo.tipo === 'marco') { if (estado.marcosEnviados.has(corpo.marco)) return j({ code: '23505' }, 409); estado.marcosEnviados.add(corpo.marco); estado.linhas.set(corpo.marco, corpo.status) }
     if (corpo.status === 'falhou') estado.ultimoErro = corpo.erro
     return j([{ id: corpo.marco ?? 1 }], 201)
@@ -87,3 +93,24 @@ confere('e não duplica depois de enviado', r.dados.resultado === 'ja_enviado', 
 estado.resendFalha = true
 r = await chamar('adm', { acao: 'parabens', id_usuario: ANA })
 confere('parabéns que falha devolve o motivo', r.status === 502 && String(r.dados.erro).startsWith('envio_recusado_403:'), r)
+
+// Relatório mensal
+estado.resendFalha = false
+r = await chamar('ana', { acao: 'relatorios_mensais', mes: '2026-09' })
+confere('não admin não dispara relatórios', r.status === 403, r)
+r = await chamar('adm', { acao: 'previa_relatorio', mes: '2026-09' })
+confere('prévia do relatório', r.status === 200 && r.dados.assunto === 'Ana, você respondeu 320 questões em setembro' && r.dados.html.includes('Joelho') && r.dados.html.includes('63% → 80%') && r.dados.html.includes('Tumores'), { status: r.status, assunto: r.dados.assunto })
+const antes = estado.enviados.length
+r = await chamar('adm', { acao: 'relatorios_mensais', mes: '2026-09' })
+confere('admin envia o lote do mês', r.status === 200 && r.dados.enviados === 1 && estado.enviados.length === antes + 1 && estado.enviados.at(-1)?.to[0] === 'ana@x.com', r)
+estado.relatorioEnviado = true
+const semSegredo = await handler(new Request('https://f.teste/enviar-email', { method: 'POST', headers: { 'content-type': 'application/json', 'x-segredo': 'errado' }, body: JSON.stringify({ acao: 'relatorios_mensais' }) }))
+confere('agendador com segredo errado recusado', semSegredo.status === 403)
+const comSegredo = await handler(new Request('https://f.teste/enviar-email', { method: 'POST', headers: { 'content-type': 'application/json', 'x-segredo': 'segredo-de-teste-bem-longo' }, body: JSON.stringify({ acao: 'relatorios_mensais', mes: '2026-09' }) }))
+confere('agendador com segredo certo', comSegredo.status === 200 && (await comSegredo.json()).lote === 0)
+const { linkDescadastro: linkTipo } = await import('../functions/_shared/email.ts')
+const tRel = new URL((await linkTipo(ANA, 'relatorio')).replace('#/emails', 'emails')).searchParams.get('t')!
+r = await chamar(null, { acao: 'descadastrar', u: ANA, t: tRel })
+confere('link do relatório não vale para conquistas', r.status === 400, r)
+r = await chamar(null, { acao: 'descadastrar', u: ANA, t: tRel, tipo: 'relatorio' })
+confere('descadastro do relatório', r.status === 200 && (estado.prefs.at(-1) as { relatorio_mensal?: boolean }).relatorio_mensal === false, r)

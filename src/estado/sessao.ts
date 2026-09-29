@@ -23,6 +23,10 @@ export interface ResumoHistorico {
 export interface OpcoesSessao {
   simulado?: boolean
   limiteSegundos?: number | null
+  /** Edição do Simulado Nacional ("2026-10"): a entrega vai para o servidor. */
+  nacional?: string
+  /** Início vindo do servidor, para o cronômetro bater em qualquer aparelho. */
+  criadaEm?: number
 }
 
 export function novaSessao(
@@ -31,8 +35,8 @@ export function novaSessao(
   opcoes: OpcoesSessao = {},
 ): EstadoSessao {
   return {
-    id: String(Date.now().toString(36)),
-    criadaEm: Date.now(),
+    id: opcoes.nacional ? `nacional-${opcoes.nacional}` : String(Date.now().toString(36)),
+    criadaEm: opcoes.criadaEm ?? Date.now(),
     filtros,
     ids,
     posicao: 0,
@@ -42,6 +46,7 @@ export function novaSessao(
     concluidaEm: null,
     simulado: opcoes.simulado ?? false,
     limiteSegundos: opcoes.limiteSegundos ?? null,
+    ...(opcoes.nacional ? { nacional: opcoes.nacional } : {}),
   }
 }
 
@@ -170,11 +175,19 @@ function registrarHistorico(sessao: EstadoSessao) {
     respondidas: respostas.length,
     acertos: respostas.filter((r) => r.correta === true).length,
     segundos: respostas.reduce((soma, r) => soma + r.segundos, 0),
-    descricao:
-      (sessao.simulado ? 'Simulado · ' : '') + descreverFiltros(sessao.filtros),
+    descricao: sessao.nacional
+      ? `Simulado Nacional · ${nomeEdicao(sessao.nacional)}`
+      : (sessao.simulado ? 'Simulado · ' : '') + descreverFiltros(sessao.filtros),
   }
   const historico = ler<ResumoHistorico[]>(CHAVE_HISTORICO, [])
   gravar(CHAVE_HISTORICO, [resumo, ...historico].slice(0, 50))
+}
+
+const MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+/** "2026-10" → "outubro de 2026". */
+export function nomeEdicao(edicao: string): string {
+  const [ano, mes] = edicao.split('-').map(Number)
+  return MESES[mes - 1] ? `${MESES[mes - 1]} de ${ano}` : edicao
 }
 
 export function lerHistorico(): ResumoHistorico[] {

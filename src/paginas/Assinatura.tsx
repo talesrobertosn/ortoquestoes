@@ -15,10 +15,13 @@ const limitesHabilitados = import.meta.env.VITE_LIMITES_HABILITADOS === 'true'
 interface MetricasConta { respostas_total: number; sequencia: number; plano: string | null; status_assinatura: string | null; fim_periodo: string | null; ultima_cobranca_em: string | null; cancelar_ao_fim: boolean }
 
 
-const MOTIVOS: { icone: NomeIcone; titulo: string; texto: string }[] = [
-  { icone: 'alvo', titulo: 'A prova cobra padrão, não sorte', texto: 'Quem resolve muitas questões aprende como a banca pensa: as classificações que voltam, as pegadinhas que se repetem, o jeito de perguntar a conduta.' },
-  { icone: 'calendario', titulo: 'Revisão no momento certo', texto: 'Cada resposta alimenta a sua revisão espaçada. Quanto mais você responde, mais precisa fica a fila do que precisa voltar.' },
-  { icone: 'livro', titulo: 'Cada erro vira uma aula curta', texto: 'Comentário com conceito-chave, a correta e o porquê de cada errada, baseado na bibliografia de referência da ortopedia.' },
+/** O que só o assinante tem. A ordem é a da página e a do comparativo. */
+const RECURSOS: { icone: NomeIcone; titulo: string; texto: string; itens: string[]; destino: string }[] = [
+  { icone: 'trofeu', titulo: 'Simulado Nacional, todo mês', texto: 'Uma prova igual para todos os assinantes do Brasil, com 50 questões de TEOT e TARO em duas horas. Corrigida na hora, com a sua posição e um relatório de prontidão por tema.', itens: ['Nota, posição e percentil', 'Pronto, no caminho ou reforçar, tema a tema', 'Top 10 da edição'], destino: '/simulado-nacional' },
+  { icone: 'rota', titulo: 'Plano até a prova', texto: 'Você diz a data do TEOT; o OrtoQuestões monta a meta de cada dia e os temas de cada semana, com reforço nos seus pontos fracos. Atrasou ou adiantou, o plano se ajusta sozinho.', itens: ['Meta diária até a prova', 'Semana a semana, com reta final', 'À frente ou atrás do plano, em %'], destino: '/plano-de-estudo' },
+  { icone: 'grupo', titulo: 'Como a turma respondeu', texto: 'Depois de cada questão, veja quantos marcaram cada alternativa e qual é a pegadinha. No Treinar, monte sessões com as que a turma mais erra e com as que quase todos acertam, mas você errou.', itens: ['"68% marcaram B, 21% caíram na C"', 'Filtro: as que a turma mais erra', 'Filtro: a turma acerta, você errou'], destino: '/treinar' },
+  { icone: 'coroa', titulo: 'Liga da residência', texto: 'Um ranking privado do seu serviço. Crie a liga, mande o link no grupo e acompanhe quem mais estuda entre os colegas, no geral e na semana.', itens: ['Convite pelo WhatsApp', 'Ranking geral e da semana', 'Até 5 ligas por conta'], destino: '/ligas' },
+  { icone: 'correio', titulo: 'Relatório do mês por e-mail', texto: 'Todo dia 1º, um resumo do seu mês: quantas questões, acerto, temas que subiram e caíram, e o próximo passo para o mês que começa.', itens: ['Evolução mês a mês', 'Temas que subiram e caíram', 'Próximo passo sugerido'], destino: '/conta' },
 ]
 
 export function Assinatura() {
@@ -77,12 +80,11 @@ export function Assinatura() {
     <div className="empilha-2 vp">
       <section className="vp-heroi">
         <div className="vp-heroi__texto">
-          <p className="vp-heroi__selo"><Icone nome="raio" tamanho={16} /> Plano ilimitado</p>
-          <h1>Questões sem limite. Preparação sem pausa.</h1>
+          <p className="vp-heroi__selo"><Icone nome="coroa" tamanho={16} /> Plano do assinante</p>
+          <h1>Tudo o que você precisa para chegar pronto na prova.</h1>
           <p className="vp-heroi__lide">
-            {nome ? `${nome}, o` : 'O'} {limitesHabilitados
-              ? 'plano gratuito libera 20 questões por dia. Com o plano ilimitado, você responde quantas quiser e ainda mantém o OrtoQuestões no ar.'
-              : 'acesso gratuito está sem limite diário nesta fase. A assinatura é opcional, apoia o projeto e mantém o acesso ilimitado caso o limite gratuito seja ativado.'}
+            {nome ? `${nome}, questões` : 'Questões'} {limitesHabilitados ? 'sem limite diário' : 'sem limite'} e cinco recursos que só o assinante tem: Simulado Nacional todo mês, plano até a prova, como a turma respondeu, liga da residência e relatório mensal.
+            {!limitesHabilitados && ' O acesso gratuito está sem limite diário nesta fase: o que o assinante ganha a mais são esses recursos, e o acesso ilimitado fica garantido se o limite gratuito for ativado.'}
           </p>
           <div className="vp-heroi__acoes">
             <a className="botao botao--claro botao--grande" href="#planos" onClick={(e) => { e.preventDefault(); document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' }) }}>Ver os planos</a>
@@ -90,18 +92,23 @@ export function Assinatura() {
           </div>
           <p className="vp-heroi__garantia"><Icone nome="certo" tamanho={16} /> Garantia de 7 dias · cancelamento por botão · seu histórico nunca é apagado</p>
         </div>
-        <div className="vp-contador" aria-hidden="true">
-          <div className="vp-contador__cartao vp-contador__cartao--livre">
-            <span>Gratuito hoje</span>
-            <strong>{limitesHabilitados ? '20 / 20' : 'Sem limite'}</strong>
-            <span className="vp-contador__barra"><span style={{ width: '100%' }} /></span>
-            <small>{limitesHabilitados ? 'Próximas questões amanhã' : 'Acesso gratuito nesta fase'}</small>
+        <div className="vp-vitrine" aria-hidden="true">
+          <div className="vp-vitrine__cartao vp-vitrine__cartao--nacional">
+            <span className="vp-vitrine__rotulo"><Icone nome="trofeu" tamanho={14} /> Simulado Nacional</span>
+            <div className="vp-vitrine__nota"><strong>74%</strong><span>#12 de 318</span></div>
+            <small>Pronto em Joelho e Trauma</small>
           </div>
-          <div className="vp-contador__cartao vp-contador__cartao--pro">
-            <span>Plano ilimitado</span>
-            <strong>∞</strong>
-            <small>Continue agora, no seu ritmo</small>
+          <div className="vp-vitrine__cartao vp-vitrine__cartao--turma">
+            <span className="vp-vitrine__rotulo"><Icone nome="grupo" tamanho={14} /> Como a turma respondeu</span>
+            <span className="vp-vitrine__barra vp-vitrine__barra--certa"><b>B</b><i style={{ width: '68%' }} />68%</span>
+            <span className="vp-vitrine__barra vp-vitrine__barra--pegadinha"><b>C</b><i style={{ width: '21%' }} />21%</span>
+            <span className="vp-vitrine__barra"><b>A</b><i style={{ width: '8%' }} />8%</span>
           </div>
+          <div className="vp-vitrine__cartao vp-vitrine__cartao--plano">
+            <span className="vp-vitrine__rotulo"><Icone nome="rota" tamanho={14} /> Plano até a prova</span>
+            <strong>45</strong><small>questões hoje · faltam 87 dias</small>
+          </div>
+          <span className="vp-vitrine__nota-rodape">Ilustração com números de exemplo</span>
         </div>
       </section>
 
@@ -127,15 +134,20 @@ export function Assinatura() {
 
       <section className="vp-secao">
         <header className="vp-secao__cabeca">
-          <p className="vp-sobre">Por que resolver mais questões</p>
-          <h2>Aprovação se constrói na repetição com método</h2>
+          <p className="vp-sobre">Só para assinantes</p>
+          <h2>Cinco recursos para estudar com direção</h2>
+          <p>O acervo, os comentários e a revisão continuam abertos para todos. O plano soma o que responde às perguntas de quem está perto da prova: estou pronto? o que estudo hoje? onde a turma cai?</p>
         </header>
-        <div className="vp-motivos">
-          {MOTIVOS.map((m) => (
-            <article key={m.titulo} className="vp-motivo">
-              <span className="vp-motivo__icone"><Icone nome={m.icone} tamanho={22} /></span>
-              <h3>{m.titulo}</h3>
-              <p>{m.texto}</p>
+        <div className="vp-recursos">
+          {RECURSOS.map((r, i) => (
+            <article key={r.titulo} className={'vp-recurso' + (i === 0 ? ' vp-recurso--destaque' : '')}>
+              <span className="vp-recurso__icone"><Icone nome={r.icone} tamanho={24} /></span>
+              <div className="vp-recurso__corpo">
+                <h3>{r.titulo}</h3>
+                <p>{r.texto}</p>
+                <ul>{r.itens.map((item) => <li key={item}><Icone nome="certo" tamanho={15} />{item}</li>)}</ul>
+                <a href={href(r.destino)}>Ver como funciona <Icone nome="direita" tamanho={14} /></a>
+              </div>
             </article>
           ))}
         </div>
@@ -143,24 +155,27 @@ export function Assinatura() {
 
       <section className="vp-secao">
         <header className="vp-secao__cabeca">
-          <p className="vp-sobre">Gratuito ou ilimitado</p>
-          <h2>{limitesHabilitados ? 'O gratuito é generoso. O ilimitado não tem teto.' : 'Acesso livre agora. Apoio para manter o projeto.'}</h2>
-          <p>{limitesHabilitados ? 'Vinte questões por dia bastam para muita gente manter a constância. O plano é para quem quer acelerar.' : 'Nesta fase, o acesso gratuito não tem limite diário. A assinatura é uma forma opcional de apoiar o OrtoQuestões e assegurar acesso ilimitado se o limite gratuito for ativado.'}</p>
+          <p className="vp-sobre">Gratuito ou assinante</p>
+          <h2>{limitesHabilitados ? 'O gratuito é generoso. O assinante vai além.' : 'O acervo é de todos. O assinante vai além.'}</h2>
+          <p>{limitesHabilitados ? 'Vinte questões por dia bastam para muita gente manter a constância. O plano é para quem quer acelerar e saber exatamente onde está.' : 'Nesta fase, as questões não têm limite diário para ninguém. O plano libera os recursos exclusivos e garante o acesso ilimitado se o limite gratuito for ativado.'}</p>
         </header>
-        <div className="vp-comparativo" role="table" aria-label="Comparação entre gratuito e ilimitado">
+        <div className="vp-comparativo" role="table" aria-label="Comparação entre gratuito e assinante">
           <div className="vp-comparativo__linha vp-comparativo__cabeca" role="row">
             <span role="columnheader" />
             <span role="columnheader">Gratuito</span>
-            <span role="columnheader" className="vp-comparativo__pro">Ilimitado</span>
+            <span role="columnheader" className="vp-comparativo__pro">Assinante</span>
           </div>
           {([
             ['Questões por dia', limitesHabilitados ? '20 (as próximas liberam no dia seguinte)' : 'Sem limite nesta fase', 'Sem limite'],
             ['Simulado de 50 ou 100 questões de uma vez', limitesHabilitados ? 'Em vários dias' : 'Na hora nesta fase', 'Na hora'],
+            ['Simulado Nacional mensal, com posição e prontidão', false, true],
+            ['Plano até a prova, com meta diária', false, true],
+            ['Como a turma respondeu e filtros pela turma', false, true],
+            ['Liga da residência', false, true],
+            ['Relatório do mês por e-mail', false, true],
             ['Comentário de todas as questões', true, true],
-            ['Revisão espaçada e calendário', true, true],
-            ['Desempenho por período, tema e confiança', true, true],
-            ['Ranking, emblemas e sequência', true, true],
-            ['Ajuda a manter o projeto no ar', false, true],
+            ['Revisão espaçada, calendário e caderno de erros', true, true],
+            ['Desempenho, ranking, emblemas e sequência', true, true],
           ] as const).map(([rotulo, livre, pro]) => (
             <div className="vp-comparativo__linha" role="row" key={rotulo}>
               <span role="cell" className="vp-comparativo__rotulo">{rotulo}</span>
@@ -175,7 +190,7 @@ export function Assinatura() {
         <header className="vp-secao__cabeca">
           <p className="vp-sobre">Planos</p>
           <h2>Escolha a periodicidade da assinatura</h2>
-          <p>O mesmo acesso ilimitado nos três planos. A renovação e o valor total variam conforme a periodicidade escolhida.</p>
+          <p>Os três planos dão acesso a tudo: questões sem limite e os cinco recursos do assinante. Muda só a periodicidade e o valor total.</p>
         </header>
 
         <div className="vp-economia" aria-label="Custo por mês em cada plano">
@@ -210,8 +225,10 @@ export function Assinatura() {
                 <p className="vp-plano__mensal">{p.meses === 1 ? 'Cancele quando quiser' : <>equivale a <b>{real(porMes)}</b> por mês</>}</p>
                 {economia > 0 && <p className="vp-plano__economia">Você economiza {real(economia)}{p.meses === 12 ? `, menos de ${real(p.total / 365)} por dia` : ''}</p>}
                 <ul className="vp-plano__itens">
-                  <li><Icone nome="certo" tamanho={16} /> Questões ilimitadas todos os dias</li>
-                  <li><Icone nome="certo" tamanho={16} /> Tudo o que o gratuito já tem</li>
+                  <li><Icone nome="certo" tamanho={16} /> Questões sem limite</li>
+                  <li><Icone nome="certo" tamanho={16} /> Simulado Nacional todo mês</li>
+                  <li><Icone nome="certo" tamanho={16} /> Plano até a prova</li>
+                  <li><Icone nome="certo" tamanho={16} /> Turma, liga e relatório mensal</li>
                   <li><Icone nome="certo" tamanho={16} /> Garantia de 7 dias em cada cobrança</li>
                 </ul>
                 {!sessao
@@ -221,7 +238,7 @@ export function Assinatura() {
             )
           })}
         </div>
-        {!pagamentosHabilitados && <p className="vp-aviso"><Icone nome="calendario" tamanho={16} /> As assinaturas abrem em breve. Até lá, todo o acervo continua disponível no plano gratuito.</p>}
+        {!pagamentosHabilitados && <p className="vp-aviso"><Icone nome="calendario" tamanho={16} /> As assinaturas abrem em breve. Até lá, o acervo, os comentários e a revisão continuam disponíveis no gratuito.</p>}
         {mensagem && <p role="status" className="vp-aviso">{mensagem}</p>}
         <p className="vp-letras">Renovação automática na periodicidade escolhida, com valor e data da próxima cobrança mostrados no checkout antes de confirmar. Cancelamento por botão, sem justificativa.</p>
         <div className="vp-pagamento-seguro" role="note">
@@ -258,7 +275,9 @@ export function Assinatura() {
         <details><summary>Se eu cancelar o semestral após três meses, recebo os três restantes?</summary><p>Após os sete dias para reembolso integral, não há devolução proporcional automática. Você mantém o acesso até completar os seis meses pagos, e a assinatura não renova. A mesma regra vale para o plano anual. Seus direitos previstos em lei permanecem preservados. Consulte as <a href={href('/condicoes-assinatura')}>condições da assinatura</a> antes de comprar.</p></details>
         <details><summary>Como funciona a garantia?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pode pedir reembolso integral em Minha conta. Se a solicitação automática não for confirmada pelo Mercado Pago, use o canal de contato para atendimento manual. O acesso pago só é encerrado após confirmação do reembolso. Depois desse prazo não há reembolso proporcional por esta garantia.</p></details>
         <details><summary>O que acontece com meu histórico se eu cancelar?</summary><p>Nada. Respostas, revisões, favoritas, anotações e desempenho ficam guardados. Ao impedir a renovação, o acesso pago continua até o fim do período; após um reembolso confirmado, a conta volta ao limite gratuito.</p></details>
-        <details><summary>O plano muda as revisões ou os comentários?</summary><p>Não. Revisões, calendário e comentários são iguais no gratuito e no ilimitado. {limitesHabilitados ? 'O plano remove o limite diário de respostas.' : 'Nesta fase, o acesso gratuito também não tem limite diário.'}</p></details>
+        <details><summary>O que o assinante tem a mais?</summary><p>Questões sem limite{limitesHabilitados ? '' : ' (nesta fase, o gratuito também não tem limite)'} e cinco recursos exclusivos: o Simulado Nacional mensal com posição e relatório de prontidão, o plano até a prova, como a turma respondeu cada questão (com os filtros pela turma no Treinar), a liga da residência e o relatório do mês por e-mail. Revisões, calendário e comentários são iguais para todos.</p></details>
+        <details><summary>Como funciona o Simulado Nacional?</summary><p>No começo de cada mês sai uma edição nova: a mesma prova, com 50 questões de TEOT e TARO e duas horas de tempo, para todos os assinantes. Você faz quando quiser dentro do mês, numa tentativa só. A correção sai na hora, com a sua posição entre quem entregou no tempo e o acerto por tema comparado à média.</p></details>
+        <details><summary>Meus colegas precisam assinar para entrar na liga?</summary><p>Sim. A liga da residência é um recurso do assinante: quem cria e quem entra precisam do plano. Quem recebe o convite sem o plano vê o nome da liga e pode assinar para entrar.</p></details>
         <details><summary>Qual plano vale mais a pena?</summary><p>Se você está a mais de seis meses da prova, o anual sai pela metade do preço do mensal. Para uma reta final curta, o mensal ou o semestral resolvem sem compromisso longo.</p></details>
       </section>
 
@@ -278,8 +297,8 @@ export function Assinatura() {
 
       <section className="vp-final">
         <div>
-          <h2>A próxima questão pode ser a que cai na prova</h2>
-          <p>Comece no gratuito hoje. Quando quiser acelerar, o ilimitado está aqui.</p>
+          <h2>Chegue à prova sabendo onde você está</h2>
+          <p>Simulado todo mês, plano do dia e a turma como referência. Comece hoje.</p>
         </div>
         <div className="linha linha--empilha-celular">
           <a className="botao botao--claro botao--grande" href="#planos" onClick={(e) => { e.preventDefault(); document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' }) }}>Escolher meu plano</a>

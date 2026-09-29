@@ -151,18 +151,19 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
         </section>
 
         <section className="paywall__oferta" aria-label="Assinatura">
-          <p className="paywall__rotulo">Apoie e estude sem limite</p>
+          <p className="paywall__rotulo">Assine e estude sem limite</p>
           <ul className="paywall__beneficios">
             <li><Icone nome="certo" tamanho={16} /><span><b>Questões sem limite diário.</b> Resolva quantas quiser, no ritmo que a sua prova pede.</span></li>
-            <li><Icone nome="certo" tamanho={16} /><span><b>Simulados e sessões longas sem interrupção.</b> Ideal para a reta final.</span></li>
-            <li><Icone nome="certo" tamanho={16} /><span><b>Você passa a manter o projeto vivo.</b> Provas novas e comentários revisados chegam por causa de quem apoia.</span></li>
+            <li><Icone nome="certo" tamanho={16} /><span><b>Simulado Nacional todo mês.</b> Sua nota, sua posição e o relatório de prontidão por tema.</span></li>
+            <li><Icone nome="certo" tamanho={16} /><span><b>Plano até a prova.</b> A meta de cada dia e os temas de cada semana, até o TEOT.</span></li>
+            <li><Icone nome="certo" tamanho={16} /><span><b>Como a turma respondeu, liga da residência e relatório mensal.</b> Estude com referência, e com o seu serviço.</span></li>
           </ul>
           <p className="paywall__preco">
             <span>A partir de</span>
             <b className="numerico">{real(CUSTO_POR_DIA)}<small>/dia</small></b>
             <span className="paywall__preco-nota">Menos que um cafezinho. No plano {PLANO_MAIS_EM_CONTA.nome.toLowerCase()}, {real(PLANO_MAIS_EM_CONTA.total)} cobrados uma vez por ano.</span>
           </p>
-          <a className="botao botao--principal botao--grande paywall__cta" href={href('/assinatura')}>Quero apoiar e continuar</a>
+          <a className="botao botao--principal botao--grande paywall__cta" href={href('/assinatura')}>Assinar e continuar</a>
           <p className="paywall__garantia"><Icone nome="certo" tamanho={14} /> Garantia de 7 dias em cada cobrança · cancele quando quiser</p>
         </section>
 

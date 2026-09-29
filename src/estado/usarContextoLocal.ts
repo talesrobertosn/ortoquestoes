@@ -5,6 +5,8 @@ import { carregarBusca, type ContextoLocal } from '../dados/acervo'
 import { usarFavoritos } from './sessao'
 import { usarRitmoRevisao } from './preferencias'
 import { idsRevisaoHoje } from './planoRevisao'
+import { usarPremium } from '../conta/premium'
+import { carregarTurmaAcervo } from '../dados/turma'
 
 /**
  * Reúne o que este navegador sabe sobre quem estuda — o que já foi respondido
@@ -12,8 +14,17 @@ import { idsRevisaoHoje } from './planoRevisao'
  * palavras. Esse índice pesa e a maioria das visitas nunca busca, então ele é
  * baixado sob demanda.
  */
-export function usarContextoLocal(busca: string) {
+export function usarContextoLocal(busca: string, comTurma = false) {
   const { favoritos } = usarFavoritos()
+  // "Como a turma respondeu", para os filtros do Treinar. Só assinantes recebem.
+  const { premium } = usarPremium()
+  const [turma, definirTurma] = useState<ContextoLocal['turma']>(null)
+  useEffect(() => {
+    if (!comTurma || !premium) { definirTurma(null); return }
+    let vivo = true
+    carregarTurmaAcervo().then((mapa) => { if (vivo) definirTurma(mapa) })
+    return () => { vivo = false }
+  }, [comTurma, premium])
   const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
   const [textos, definirTextos] = useState<Map<string, string> | null>(null)
   const precisa = busca.trim().length > 0
@@ -35,8 +46,8 @@ export function usarContextoLocal(busca: string) {
     [respondidas, chaveRitmo],
   )
   const contexto: ContextoLocal = useMemo(
-    () => ({ respondidas, favoritos, textos, revisaoHoje }),
-    [respondidas, favoritos, textos, revisaoHoje],
+    () => ({ respondidas, favoritos, textos, revisaoHoje, turma }),
+    [respondidas, favoritos, textos, revisaoHoje, turma],
   )
 
   return { contexto, carregandoBusca: precisa && !textos }

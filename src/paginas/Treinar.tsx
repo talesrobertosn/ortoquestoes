@@ -1,10 +1,13 @@
 import { useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
-import { arvoreAssuntos, contar, montarSessao } from '../dados/acervo'
+import { arvoreAssuntos, contar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
+import { usarPremium } from '../conta/premium'
+import { ConvitePremium } from '../componentes/Premium'
 import {
   FILTROS_VAZIOS,
   ROTULO_DIFICULDADE,
   ROTULO_SITUACAO,
+  SITUACOES_TURMA,
   type Dificuldade,
   type Filtros,
   type Situacao,
@@ -26,7 +29,7 @@ const PROVAS_TEOT_TARO = ['TEOT/TARO', 'TEOT', 'TARO']
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
 const LIMITES = [5, 10, 20, 30, 50, 100]
-const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'erradas', 'acertadas', 'favoritas', 'revisarHoje', 'incertas', 'dominadas']
+const SITUACOES: Situacao[] = ['todas', 'naoRespondidas', 'erradas', 'acertadas', 'favoritas', 'revisarHoje', 'incertas', 'dominadas', 'turmaErra', 'turmaAcertaVoceErrou']
 /** O que cada situação seleciona, dito por extenso: o rótulo curto sozinho gerava dúvida. */
 const DESCRICAO_SITUACAO: Record<Situacao, string> = {
   todas: 'Todas as questões do recorte, respondidas ou não. Revisões, novas e já acertadas vêm intercaladas.',
@@ -37,6 +40,8 @@ const DESCRICAO_SITUACAO: Record<Situacao, string> = {
   revisarHoje: 'As que o seu ritmo de revisão separou para hoje.',
   incertas: 'As que você marcou como chute ou dúvida ao responder.',
   dominadas: 'As que você acertou em todas as revisões programadas.',
+  turmaErra: `As que menos de ${LIMITE_TURMA_ERRA}% da turma acerta de primeira, começando pelas mais erradas. É onde mora a pegadinha.`,
+  turmaAcertaVoceErrou: `As que ${LIMITE_TURMA_ACERTA}% ou mais da turma acerta e você errou da última vez: lacunas que custam ponto fácil na prova.`,
 }
 const DURACOES: Array<[number, string]> = [
   [60, '1 hora'],
@@ -72,7 +77,14 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     }
   }, [filtros])
 
-  const { contexto, carregandoBusca } = usarContextoLocal(filtros.busca)
+  const { contexto, carregandoBusca } = usarContextoLocal(filtros.busca, true)
+  const { premium, carregado: premiumCarregado, logado } = usarPremium()
+  const semTurma = (!logado || premiumCarregado) && !premium
+  const [conviteTurma, definirConviteTurma] = useState(false)
+  // Link compartilhado com filtro da turma, aberto por quem não assina.
+  useEffect(() => {
+    if (semTurma && SITUACOES_TURMA.includes(filtros.situacao)) { definirConviteTurma(true); definirFiltros((f) => ({ ...f, situacao: 'todas' })) }
+  }, [semTurma, filtros.situacao])
   const { mostrarEtiquetas, definirEtiquetas } = usarEtiquetas()
   const contagens = useMemo(
     () => (indice ? contar(indice, filtros, contexto) : null),
@@ -180,7 +192,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     filtros.dificuldades.length ? filtros.dificuldades.map((d) => ROTULO_DIFICULDADE[d].toLowerCase()).join(', ') : '',
   ].filter(Boolean).join(' · ')
   const opcoesAtivas = [filtros.comImagem, filtros.comComentario, filtros.incluirAnuladas, !filtros.embaralhar, !mostrarEtiquetas].filter(Boolean).length
-  const situacoesVisiveis = SITUACOES.filter((s) => s === 'todas' || s === filtros.situacao || (contagens?.porSituacao[s] ?? 0) > 0)
+  const situacoesVisiveis = SITUACOES.filter((s) => !SITUACOES_TURMA.includes(s) && (s === 'todas' || s === filtros.situacao || (contagens?.porSituacao[s] ?? 0) > 0))
   return (
     <div className="empilha-2 treinar-pagina">
       <section className="tr-heroi">
@@ -261,8 +273,35 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             </button>
           ))}
         </div>
+        <div className="tr-turma" role="group" aria-labelledby="tr-turma-titulo">
+          <p className="tr-turma__titulo" id="tr-turma-titulo"><Icone nome="grupo" tamanho={16} /> Pelo que a turma responde <span className="pg-selo"><Icone nome="coroa" tamanho={12} /> Assinante</span></p>
+          <div className="tr-pilulas">
+            {SITUACOES_TURMA.map((situacao) => (
+              <button
+                key={situacao}
+                type="button"
+                className={'tr-pilula tr-pilula--turma' + (semTurma ? ' tr-pilula--bloqueada' : '')}
+                aria-pressed={filtros.situacao === situacao}
+                onClick={() => semTurma ? definirConviteTurma(true) : atualizar({ situacao: filtros.situacao === situacao ? 'todas' : situacao })}
+              >
+                {semTurma && <Icone nome="cadeado" tamanho={14} />}
+                {ROTULO_SITUACAO[situacao]}
+                {!semTurma && <span className="numerico">{contexto.turma ? contagens?.porSituacao[situacao] ?? 0 : '…'}</span>}
+              </button>
+            ))}
+          </div>
+          {conviteTurma && semTurma && (
+            <ConvitePremium
+              variante="faixa"
+              icone="grupo"
+              titulo="Estude pelo que a turma erra"
+              texto={<p>Monte sessões com as questões que a maioria erra de primeira e com as que quase todo mundo acerta, mas você errou. Depois de cada resposta, veja quantos marcaram cada alternativa.</p>}
+            />
+          )}
+        </div>
         <p className="tr-dica">
           {DESCRICAO_SITUACAO[filtros.situacao]}
+          {SITUACOES_TURMA.includes(filtros.situacao) && contexto.turma && (contagens?.porSituacao[filtros.situacao] ?? 0) === 0 && ' Ainda não há questões assim no seu recorte: a turma precisa de pelo menos 3 respostas por questão.'}
           {filtros.situacao === 'favoritas' && <> <a href={href('/favoritas')}>Ver a lista das favoritas</a></>}
           {filtros.situacao === 'revisarHoje' && <> <a href={href('/revisao')}>Ajustar o ritmo</a></>}
         </p>

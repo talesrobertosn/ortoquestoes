@@ -1,0 +1,178 @@
+import type { Indice } from './tipos'
+
+/**
+ * Plano até a prova. Tudo é recalculado a cada dia a partir do que a pessoa
+ * já respondeu: atrasou, a meta sobe um pouco; adiantou, ela desce. A última
+ * semana antes da prova fica reservada para a reta final (erros e simulado).
+ */
+
+export type Intensidade = 'leve' | 'firme' | 'completo'
+export interface PlanoSalvo {
+  data_prova: string
+  intensidade: Intensidade
+  folgas: number[]
+  prova: string
+  base_respondidas: number
+  criado_em: string
+}
+
+export const COBERTURA: Record<Intensidade, number> = { leve: 0.5, firme: 0.8, completo: 1 }
+export const ROTULO_INTENSIDADE: Record<Intensidade, { nome: string; texto: string }> = {
+  leve: { nome: 'Leve', texto: 'Metade das questões que faltam. Para quem concilia com plantão pesado.' },
+  firme: { nome: 'Firme', texto: '80% das questões que faltam. O equilíbrio para a maioria.' },
+  completo: { nome: 'Completo', texto: 'Todas as questões que faltam. Para quem quer ver o acervo inteiro.' },
+}
+export const DIAS_RETA_FINAL = 7
+const DIA = 86_400_000
+
+/** Meia-noite local de uma data "AAAA-MM-DD". */
+export function dataLocal(iso: string): Date {
+  const [a, m, d] = iso.slice(0, 10).split('-').map(Number)
+  return new Date(a, m - 1, d)
+}
+const meiaNoite = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate())
+const diasEntre = (a: Date, b: Date) => Math.round((meiaNoite(b).getTime() - meiaNoite(a).getTime()) / DIA)
+
+/** Dias de estudo em [inicio, fim), sem os dias da semana de folga. */
+export function diasDeEstudo(inicio: Date, fim: Date, folgas: number[]): number {
+  let n = 0
+  for (let d = meiaNoite(inicio); d < meiaNoite(fim); d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1)) {
+    if (!folgas.includes(d.getDay())) n++
+  }
+  return n
+}
+
+export interface RegistroMinimo { c: boolean | null; q?: number; historico?: Array<{ em: number; correta: boolean | null }> }
+
+export interface TemaPlano { slug: string; nome: string; faltam: number; acerto: number | null; respondidas: number; reforcado: boolean }
+export interface SemanaPlano { inicio: Date; fim: Date; diasEstudo: number; temas: Array<{ slug: string; nome: string; n: number }>; total: number; atual: boolean }
+export interface CalculoPlano {
+  diasAteProva: number
+  diasEstudoRestantes: number
+  inicioRetaFinal: Date
+  alvo: number
+  feitas: number
+  restante: number
+  metaDiaria: number
+  feitasHoje: number
+  faltaHoje: number
+  esperadoAteHoje: number
+  /** Positivo = adiantado, em % do esperado. */
+  ritmo: number
+  temas: TemaPlano[]
+  semanas: SemanaPlano[]
+  hoje: { slug: string; nome: string; n: number } | null
+  naRetaFinal: boolean
+  provaPassou: boolean
+}
+
+export function calcularPlano(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora = new Date()): CalculoPlano {
+  const hoje = meiaNoite(agora)
+  const prova = dataLocal(plano.data_prova)
+  const criado = meiaNoite(new Date(plano.criado_em))
+  const inicioRetaFinal = new Date(prova.getFullYear(), prova.getMonth(), prova.getDate() - DIAS_RETA_FINAL)
+  const fimEstudo = inicioRetaFinal > hoje ? inicioRetaFinal : prova
+
+  // Acervo por tema: quantas faltam e o acerto de cada um.
+  const porTema = new Map<number, { faltam: number; certas: number; erradas: number; respondidas: number }>()
+  let elegiveis = 0, respondidasNoAcervo = 0
+  for (const q of indice.questoes) {
+    if (q.dup || q.an === 1) continue
+    elegiveis++
+    const t = porTema.get(q.t) ?? { faltam: 0, certas: 0, erradas: 0, respondidas: 0 }
+    const r = respondidas[q.id]
+    if (!r) t.faltam++
+    else {
+      respondidasNoAcervo++; t.respondidas++
+      if (r.c === true) t.certas++
+      else if (r.c === false) t.erradas++
+    }
+    porTema.set(q.t, t)
+  }
+  const certasTotal = [...porTema.values()].reduce((s, t) => s + t.certas, 0)
+  const validasTotal = [...porTema.values()].reduce((s, t) => s + t.certas + t.erradas, 0)
+  const media = validasTotal ? (certasTotal / validasTotal) * 100 : null
+
+  const temas: TemaPlano[] = [...porTema.entries()].map(([i, t]) => {
+    const tema = indice.temas[i]
+    const validas = t.certas + t.erradas
+    const acerto = validas >= 10 ? Math.round((t.certas / validas) * 100) : null
+    return { slug: tema?.slug ?? String(i), nome: tema?.nome ?? String(i), faltam: t.faltam, acerto, respondidas: t.respondidas, reforcado: acerto !== null && media !== null && acerto < media - 5 }
+  })
+
+  const alvo = Math.max(0, Math.ceil((elegiveis - Math.min(plano.base_respondidas, elegiveis)) * COBERTURA[plano.intensidade]))
+  const feitas = Math.max(0, respondidasNoAcervo - plano.base_respondidas)
+  const restante = Math.max(0, alvo - feitas)
+
+  // Primeira resposta de hoje (não conta revisão de questão já vista).
+  const feitasHoje = Object.values(respondidas).filter((r) => {
+    const primeira = r.historico?.[0]?.em ?? r.q
+    return primeira !== undefined && primeira >= hoje.getTime()
+  }).length
+
+  const diasEstudoRestantes = diasDeEstudo(hoje, fimEstudo, plano.folgas)
+  // A meta de hoje soma o que já foi feito hoje ao restante: responder não baixa a meta do próprio dia.
+  const metaDiaria = diasEstudoRestantes > 0 ? Math.ceil((restante + feitasHoje) / diasEstudoRestantes) : restante
+  const faltaHoje = Math.max(0, metaDiaria - feitasHoje)
+
+  const totalDiasPlano = Math.max(1, diasDeEstudo(criado, inicioRetaFinal > criado ? inicioRetaFinal : prova, plano.folgas))
+  const decorridos = Math.min(totalDiasPlano, diasDeEstudo(criado, hoje, plano.folgas))
+  const esperadoAteHoje = Math.round((alvo * decorridos) / totalDiasPlano)
+  const feitasAntesDeHoje = feitas - feitasHoje
+  const ritmo = esperadoAteHoje > 0 ? Math.round(((feitasAntesDeHoje - esperadoAteHoje) / esperadoAteHoje) * 100) : 0
+
+  // Distribuição: cada tema pesa pelo que falta, com reforço para os fracos.
+  const fator = (t: TemaPlano) => 1 + (t.acerto !== null && media !== null ? Math.min(1.5, Math.max(0, ((media - t.acerto) / 100) * 4)) : 0)
+  const pesos = temas.filter((t) => t.faltam > 0).map((t) => ({ t, peso: t.faltam * fator(t) }))
+  const somaPesos = pesos.reduce((s, p) => s + p.peso, 0)
+  const cotas = pesos
+    .map(({ t, peso }) => ({ t, n: Math.min(t.faltam, Math.round((restante * peso) / (somaPesos || 1))) }))
+    .filter((c) => c.n > 0)
+    // Os mais fracos primeiro: dá tempo de revisar o que foi aprendido neles.
+    .sort((a, b) => fator(b.t) - fator(a.t) || b.n - a.n)
+
+  const semanas: SemanaPlano[] = []
+  const segunda = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
+  const fila = cotas.map((c) => ({ ...c }))
+  for (let inicio = segunda; inicio < fimEstudo && semanas.length < 80; inicio = new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate() + 7)) {
+    const fimSemana = new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate() + 7)
+    const de = inicio < hoje ? hoje : inicio
+    const ate = fimSemana > fimEstudo ? fimEstudo : fimSemana
+    const dias = diasDeEstudo(de, ate, plano.folgas)
+    let capacidade = dias * metaDiaria - (inicio <= hoje && hoje < fimSemana ? feitasHoje : 0)
+    const temasSemana: SemanaPlano['temas'] = []
+    while (capacidade > 0 && fila.length) {
+      const atual = fila[0]
+      const n = Math.min(atual.n, capacidade)
+      temasSemana.push({ slug: atual.t.slug, nome: atual.t.nome, n })
+      atual.n -= n; capacidade -= n
+      if (atual.n <= 0) fila.shift()
+    }
+    // O tema que não coube inteiro vai para o fim da fila: as semanas alternam
+    // os temas em vez de passar um mês inteiro no mesmo.
+    if (fila.length > 1 && temasSemana.length && fila[0].t.slug === temasSemana[temasSemana.length - 1].slug) fila.push(fila.shift()!)
+    semanas.push({ inicio: de, fim: new Date(ate.getTime() - DIA), diasEstudo: dias, temas: temasSemana, total: temasSemana.reduce((s, t) => s + t.n, 0), atual: de <= hoje && hoje < fimSemana })
+  }
+
+  const primeiraSemana = semanas.find((s) => s.atual && s.temas.length)
+  const hojeTarefa = primeiraSemana && faltaHoje > 0 ? { slug: primeiraSemana.temas[0].slug, nome: primeiraSemana.temas[0].nome, n: Math.min(faltaHoje, 100) } : null
+
+  return {
+    diasAteProva: diasEntre(hoje, prova),
+    diasEstudoRestantes, inicioRetaFinal, alvo, feitas, restante, metaDiaria, feitasHoje, faltaHoje,
+    esperadoAteHoje, ritmo, temas, semanas, hoje: hojeTarefa,
+    naRetaFinal: hoje >= inicioRetaFinal && hoje < prova,
+    provaPassou: hoje >= prova,
+  }
+}
+
+/** Linha de base do plano: questões do acervo (sem cópias nem anuladas) já respondidas. */
+export function respondidasNoAcervo(indice: Indice, respondidas: Record<string, unknown>): number {
+  return indice.questoes.filter((q) => !q.dup && q.an !== 1 && respondidas[q.id]).length
+}
+
+/** Meta diária que um plano novo teria, para mostrar ao escolher a intensidade. */
+export function simularMeta(indice: Indice, respondidas: Record<string, RegistroMinimo>, dataProva: string, intensidade: Intensidade, folgas: number[]): number {
+  const base = respondidasNoAcervo(indice, respondidas)
+  return calcularPlano(indice, respondidas, { data_prova: dataProva, intensidade, folgas, prova: '', base_respondidas: base, criado_em: new Date().toISOString() }).metaDiaria
+}

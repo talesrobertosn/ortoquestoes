@@ -8,7 +8,7 @@ const planos = {
 // A primeira é a vigente; as seguintes continuam aceitas por algum tempo para
 // quem abriu a página de planos antes da atualização. O aceite registra a versão
 // que a pessoa de fato viu.
-const versoesCondicoesAceitas = ['2026-09-28', '2026-09-27']
+const versoesCondicoesAceitas = ['2026-09-30', '2026-09-28', '2026-09-27']
 
 async function contaTesteAtiva(idUsuario: string) {
   const resposta = await banco(`contas_teste?id_usuario=eq.${encodeURIComponent(idUsuario)}&ativa=eq.true&select=id_usuario`)

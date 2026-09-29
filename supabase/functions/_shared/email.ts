@@ -43,11 +43,15 @@ async function hmac(texto: string) {
   const assinatura = new Uint8Array(await crypto.subtle.sign('HMAC', chave, new TextEncoder().encode(texto)))
   return [...assinatura].map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 40)
 }
-export async function linkDescadastro(idUsuario: string) {
-  return `${site()}#/emails?u=${idUsuario}&t=${await hmac(`descadastro:${idUsuario}`)}`
+/** Qual e-mail o link desliga. Os links antigos (sem tipo) são de conquistas. */
+export type TipoDescadastro = 'conquistas' | 'relatorio'
+const textoAssinado = (idUsuario: string, tipo: TipoDescadastro) => tipo === 'conquistas' ? `descadastro:${idUsuario}` : `descadastro:${tipo}:${idUsuario}`
+
+export async function linkDescadastro(idUsuario: string, tipo: TipoDescadastro = 'conquistas') {
+  return `${site()}#/emails?u=${idUsuario}&t=${await hmac(textoAssinado(idUsuario, tipo))}${tipo === 'conquistas' ? '' : `&tipo=${tipo}`}`
 }
-export async function tokenDescadastroValido(idUsuario: string, token: string) {
-  const esperado = await hmac(`descadastro:${idUsuario}`)
+export async function tokenDescadastroValido(idUsuario: string, token: string, tipo: TipoDescadastro = 'conquistas') {
+  const esperado = await hmac(textoAssinado(idUsuario, tipo))
   if (esperado.length !== token.length) return false
   let diferenca = 0
   for (let i = 0; i < esperado.length; i++) diferenca |= esperado.charCodeAt(i) ^ token.charCodeAt(i)

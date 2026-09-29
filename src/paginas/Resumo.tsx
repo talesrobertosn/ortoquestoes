@@ -1,7 +1,9 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
-import type { Questao, Resposta } from '../dados/tipos'
+import type { EstadoSessao, Questao, Resposta } from '../dados/tipos'
+import type { ResultadoNacional } from '../dados/simuladoNacional'
+import { entregarSessaoNacional } from '../dados/entregaNacional'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { Medalha } from '../componentes/Medalha'
@@ -50,6 +52,28 @@ function manchete(pct: number | null, nome: string): { titulo: string; texto: st
   if (pct >= 70) return { titulo: `Muito bem${voce}!`, texto: 'Resultado sólido. Revise os erros abaixo enquanto a questão ainda está fresca na memória.' }
   if (pct >= 50) return { titulo: `Bom treino${voce}.`, texto: 'Você está no caminho. Os erros de hoje viram as revisões de amanhã — é assim que a porcentagem sobe.' }
   return { titulo: `Sessão de aprendizado${voce}.`, texto: 'Errar aqui é o que evita errar na prova. Leia os comentários das erradas com calma e refaça em seguida.' }
+}
+
+/** Simulado Nacional: entrega no servidor e leva ao resultado (nota, posição, prontidão). */
+function EntregaNacional({ sessao }: { sessao: EstadoSessao }) {
+  const [estado, definirEstado] = useState<'enviando' | 'ok' | 'erro'>('enviando')
+  const [resultado, definirResultado] = useState<ResultadoNacional | null>(null)
+  const enviar = useCallback(() => {
+    definirEstado('enviando')
+    entregarSessaoNacional(sessao).then((r) => { definirResultado(r); definirEstado('ok') }).catch(() => definirEstado('erro'))
+  }, [sessao])
+  useEffect(() => { enviar() }, [enviar])
+  return (
+    <section className={`sn-entrega sn-entrega--${estado}`} role="status">
+      <Icone nome={estado === 'ok' ? 'trofeu' : estado === 'erro' ? 'alerta' : 'relogio'} tamanho={22} />
+      <div>
+        <strong>{estado === 'ok' ? `Simulado Nacional entregue: ${resultado?.acertos ?? 0} de ${resultado?.total ?? 0}` : estado === 'erro' ? 'A entrega não chegou ao servidor' : 'Entregando o Simulado Nacional…'}</strong>
+        <span>{estado === 'ok' ? 'Veja sua posição, o relatório de prontidão e o top 10 da edição.' : estado === 'erro' ? 'Suas respostas estão guardadas neste aparelho. Confira a conexão e tente de novo.' : 'Corrigindo com o gabarito da edição.'}</span>
+      </div>
+      {estado === 'ok' && <a className="botao botao--ouro" href={href('/simulado-nacional')}>Ver meu resultado</a>}
+      {estado === 'erro' && <button type="button" className="botao" onClick={enviar}>Tentar de novo</button>}
+    </section>
+  )
 }
 
 export function Resumo() {
@@ -219,6 +243,7 @@ export function Resumo() {
 
   return (
     <article className="empilha-2 rs">
+      {sessao.nacional && sessao.concluidaEm && <EntregaNacional sessao={sessao} />}
       <section className="rs-heroi">
         <div className="rs-heroi__texto">
           <p className="rs-heroi__selo">

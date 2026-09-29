@@ -5,6 +5,7 @@ import { App } from './App'
 import './estilos/tokens.css'
 import './estilos/base.css'
 import './estilos/premium.css'
+import './estilos/recursos.css'
 import './estilos/impressao.css'
 import { registrarServiceWorker } from './util/instalacao'
 

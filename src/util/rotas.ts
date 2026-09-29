@@ -66,6 +66,8 @@ const SITUACOES: Situacao[] = [
   'revisarHoje',
   'dominadas',
   'incertas',
+  'turmaErra',
+  'turmaAcertaVoceErrou',
 ]
 
 export function filtrosParaConsulta(filtros: Filtros): string {

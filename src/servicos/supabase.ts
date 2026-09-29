@@ -42,6 +42,15 @@ async function buscarComPrazo(endereco: string, opcoes: RequestInit, prazoMs = 8
   }
 }
 
+/**
+ * Falha de RPC. A mensagem continua a de sempre (com o status entre
+ * parênteses); `codigo` traz o motivo levantado pela função no banco, como
+ * "premium_necessario" ou "ja_entregue", para a tela decidir o que mostrar.
+ */
+export class ErroRpc extends Error {
+  constructor(mensagem: string, readonly status: number, readonly codigo: string) { super(mensagem) }
+}
+
 export async function chamarRpc<T>(nome: string, corpo: Record<string, unknown>): Promise<T> {
   if (!clienteConta) throw new Error('Servidor não configurado.')
   const enviar = async (forcarLeitura: boolean) => {
@@ -56,9 +65,15 @@ export async function chamarRpc<T>(nome: string, corpo: Record<string, unknown>)
   let resposta = await enviar(false)
   // Token recusado (expirou entre a leitura e o envio): tenta uma vez com a sessão relida.
   if (resposta.status === 401) resposta = await enviar(true)
-  if (!resposta.ok) throw new Error(`O servidor não pôde validar a resposta (${resposta.status}).`)
+  if (!resposta.ok) {
+    const detalhe = await resposta.json().then((d: { message?: string }) => d.message ?? '').catch(() => '')
+    throw new ErroRpc(`O servidor não pôde validar a resposta (${resposta.status}).`, resposta.status, detalhe)
+  }
   return await resposta.json() as T
 }
+
+/** O motivo que a função do banco levantou, ou '' quando a falha foi de rede. */
+export const codigoErro = (falha: unknown) => falha instanceof ErroRpc ? falha.codigo : ''
 
 /** Mensagem UTF-8 lida como Latin-1 ("pÃ¡gina"): devolve a acentuação certa. */
 function repararAcentos(texto?: string): string | undefined {

@@ -173,7 +173,7 @@ export interface Indice {
  * e sim do histórico de quem está estudando — por isso mora aqui e não no
  * índice do acervo.
  */
-export type Situacao = 'todas' | 'naoRespondidas' | 'erradas' | 'acertadas' | 'favoritas' | 'revisarHoje' | 'dominadas' | 'incertas'
+export type Situacao = 'todas' | 'naoRespondidas' | 'erradas' | 'acertadas' | 'favoritas' | 'revisarHoje' | 'dominadas' | 'incertas' | 'turmaErra' | 'turmaAcertaVoceErrou'
 
 export const ROTULO_SITUACAO: Record<Situacao, string> = {
   todas: 'Todas',
@@ -184,7 +184,12 @@ export const ROTULO_SITUACAO: Record<Situacao, string> = {
   revisarHoje: 'Revisar hoje',
   dominadas: 'Dominadas',
   incertas: 'Chute ou dúvida',
+  turmaErra: 'As que a turma mais erra',
+  turmaAcertaVoceErrou: 'A turma acerta, você errou',
 }
+
+/** Situações que dependem de "como a turma respondeu": só para assinantes. */
+export const SITUACOES_TURMA: Situacao[] = ['turmaErra', 'turmaAcertaVoceErrou']
 
 /** Filtros de montagem de sessão. */
 export interface Filtros {
@@ -251,6 +256,8 @@ export interface EstadoSessao {
   simulado?: boolean
   /** Tempo total do simulado. O relógio corre no mundo, não na aba aberta. */
   limiteSegundos?: number | null
+  /** Edição do Simulado Nacional ("2026-10"). Entregar manda as letras para a correção no servidor. */
+  nacional?: string
 }
 
 /** Quanto falta, em segundos. Negativo quando o tempo acabou. */

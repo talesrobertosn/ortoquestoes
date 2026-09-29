@@ -29,6 +29,9 @@ const Assinatura = lazy(() => import('./paginas/Assinatura').then(({ Assinatura 
 const Conta = lazy(() => import('./paginas/Conta').then(({ Conta }) => ({ default: Conta })))
 const DetalhesAssinatura = lazy(() => import('./paginas/DetalhesAssinatura').then(({ DetalhesAssinatura }) => ({ default: DetalhesAssinatura })))
 const Emails = lazy(() => import('./paginas/Emails').then(({ Emails }) => ({ default: Emails })))
+const SimuladoNacional = lazy(() => import('./paginas/SimuladoNacional').then(({ SimuladoNacional }) => ({ default: SimuladoNacional })))
+const PlanoEstudo = lazy(() => import('./paginas/PlanoEstudo').then(({ PlanoEstudo }) => ({ default: PlanoEstudo })))
+const Ligas = lazy(() => import('./paginas/Ligas').then(({ Ligas }) => ({ default: Ligas })))
 const AdminAssinaturas = lazy(() => import('./paginas/AdminAssinaturas').then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
 
 const TITULOS: Record<string, string> = {
@@ -54,6 +57,9 @@ const TITULOS: Record<string, string> = {
   '/admin/assinaturas': 'Painel do administrador — OrtoQuestões',
   '/entrar': 'Entrar ou criar conta — OrtoQuestões',
   '/emails': 'E-mails de conquistas — OrtoQuestões',
+  '/simulado-nacional': 'Simulado Nacional — OrtoQuestões',
+  '/plano-de-estudo': 'Plano até a prova — OrtoQuestões',
+  '/ligas': 'Liga da residência — OrtoQuestões',
 }
 
 export function App() {
@@ -138,6 +144,15 @@ export function App() {
       break
     case 'entrar':
       pagina = <Conta consulta={rota.consulta} />
+      break
+    case 'simulado-nacional':
+      pagina = <SimuladoNacional consulta={rota.consulta} />
+      break
+    case 'plano-de-estudo':
+      pagina = <PlanoEstudo />
+      break
+    case 'ligas':
+      pagina = <Ligas key={rota.consulta.toString()} consulta={rota.consulta} />
       break
     default:
       pagina = <NaoEncontrada />

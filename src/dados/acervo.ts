@@ -1,6 +1,7 @@
 import { dominada, revisarHoje, type RegistroQuestao } from '../estado/revisao'
 import { recurso } from '../config'
 import type { Filtros, Indice, ItemIndice, Progresso, Questao } from './tipos'
+import { embaralhar } from './embaralhar'
 
 const INDICE_VAZIO: Indice = {
   versao: 1,
@@ -120,6 +121,24 @@ export interface ContextoLocal {
   textos: Map<string, string> | null
   /** O que o ritmo de revisão reserva para hoje. Sem ele, vale a data de cada questão. */
   revisaoHoje?: Set<string>
+  /** Acerto de primeira da turma por questão (só assinantes recebem). */
+  turma?: Map<string, { respondentes: number; acerto: number }> | null
+}
+
+/** Acerto de primeira da turma abaixo disso: "as que a turma mais erra". */
+export const LIMITE_TURMA_ERRA = 50
+/** Acerto de primeira da turma a partir disso: errar uma dessas é sinal de lacuna. */
+export const LIMITE_TURMA_ACERTA = 80
+
+/** A turma erra mais da metade de primeira. */
+function turmaErra(id: string, contexto: ContextoLocal): boolean {
+  const t = contexto.turma?.get(id)
+  return !!t && t.acerto < LIMITE_TURMA_ERRA
+}
+/** Quase todo mundo acerta, e a pessoa errou da última vez. */
+function turmaAcertaVoceErrou(id: string, contexto: ContextoLocal): boolean {
+  const t = contexto.turma?.get(id)
+  return !!t && t.acerto >= LIMITE_TURMA_ACERTA && contexto.respondidas[id]?.c === false
 }
 
 export const CONTEXTO_VAZIO: ContextoLocal = {
@@ -192,6 +211,8 @@ function aplicaUm(
     if (filtros.situacao === 'acertadas' && registro?.c !== true) return false
     if (filtros.situacao === 'favoritas' && !contexto.favoritos.includes(item.id)) return false
     if (filtros.situacao === 'incertas' && (!registro || (registro.confianca !== 'duvida' && registro.confianca !== 'chute'))) return false
+    if (filtros.situacao === 'turmaErra' && !turmaErra(item.id, contexto)) return false
+    if (filtros.situacao === 'turmaAcertaVoceErrou' && !turmaAcertaVoceErrou(item.id, contexto)) return false
   }
 
   if (ignorar !== 'busca' && filtros.busca.trim()) {
@@ -271,6 +292,8 @@ export function contar(
       if (registro && (registro.confianca === 'duvida' || registro.confianca === 'chute')) {
         contagens.porSituacao.incertas = (contagens.porSituacao.incertas ?? 0) + 1
       }
+      if (turmaErra(item.id, contexto)) contagens.porSituacao.turmaErra = (contagens.porSituacao.turmaErra ?? 0) + 1
+      if (turmaAcertaVoceErrou(item.id, contexto)) contagens.porSituacao.turmaAcertaVoceErrou = (contagens.porSituacao.turmaAcertaVoceErrou ?? 0) + 1
     }
 
     if (aplicaUm(indice, item, filtros, contexto, 'assunto')) {
@@ -297,20 +320,7 @@ export function contar(
   return contagens
 }
 
-/** Embaralhamento determinístico (Fisher-Yates com gerador semeado). */
-export function embaralhar<T>(lista: T[], semente: number): T[] {
-  const copia = lista.slice()
-  let estado = semente >>> 0 || 1
-  for (let i = copia.length - 1; i > 0; i--) {
-    estado ^= estado << 13
-    estado ^= estado >>> 17
-    estado ^= estado << 5
-    estado >>>= 0
-    const j = estado % (i + 1)
-    ;[copia[i], copia[j]] = [copia[j], copia[i]]
-  }
-  return copia
-}
+export { embaralhar } from './embaralhar'
 
 /** Monta a lista de ids de uma sessão a partir dos filtros. */
 export function montarSessao(
@@ -322,6 +332,13 @@ export function montarSessao(
   const itens = filtrar(indice, filtros, contexto)
   let ids = itens.map((i) => i.id)
   if (filtros.embaralhar) ids = embaralhar(ids, semente)
+  // "As que a turma mais erra" começa pelas mais erradas; o embaralhamento
+  // acima só desempata. Com limite, a sessão fica com as mais difíceis.
+  if (filtros.situacao === 'turmaErra') {
+    const acerto = (id: string) => contexto.turma?.get(id)?.acerto ?? 100
+    ids = [...ids].sort((a, b) => acerto(a) - acerto(b))
+    if (filtros.limite && filtros.embaralhar) ids = embaralhar(ids.slice(0, filtros.limite), semente)
+  }
   // No treino amplo, alterna uma revisão/erro, uma questão nova e uma já
   // acertada. A sessão fica mais sustentável sem esconder a prioridade de
   // revisão e os filtros explícitos continuam sendo respeitados integralmente.

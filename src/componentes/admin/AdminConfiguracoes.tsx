@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { chamarRpc } from '../../servicos/supabase'
 import { dataHora, erroDoPainel, motivoFalhaEmail } from './formatos'
+import { AdminRecursosPagos } from './AdminRecursosPagos'
 
 interface ConfigComercial { paywall_ativo: boolean; limite_diario_gratis: number; pagamentos_ativos: boolean; atualizado_em: string }
 interface Aviso { id: number; texto: string; link: string | null; rotulo_link: string | null; tom: 'info' | 'destaque' | 'alerta'; ativo: boolean; fim: string | null; criado_em: string }
@@ -9,7 +10,7 @@ interface EmailEnviado { id: number; tipo: string; marco: number | null; assunto
 
 const MIGRACAO = '202609290200_painel_admin_2.sql'
 const TOM: Record<Aviso['tom'], string> = { destaque: 'Verde (novidade)', info: 'Neutro', alerta: 'Amarelo (atenção)' }
-const TIPO_EMAIL: Record<string, string> = { marco: 'Parabéns automático', parabens: 'Parabéns enviado por você', alerta_admin: 'Alerta para você' }
+const TIPO_EMAIL: Record<string, string> = { marco: 'Parabéns automático', parabens: 'Parabéns enviado por você', alerta_admin: 'Alerta para você', relatorio: 'Relatório mensal' }
 
 export function AdminConfiguracoes() {
   const [comercial, definirComercial] = useState<ConfigComercial | null>(null)
@@ -69,6 +70,8 @@ export function AdminConfiguracoes() {
 
   return <div className="empilha-2">
     {mensagem && <p role="status" className="adm-nota adm-mensagem">{mensagem}</p>}
+
+    <AdminRecursosPagos />
 
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-comercial">
       <div><h2 id="adm-titulo-comercial">Limite gratuito e pagamentos</h2><p>Vale na hora para todo mundo. Última mudança em {dataHora(comercial?.atualizado_em)}.</p></div>

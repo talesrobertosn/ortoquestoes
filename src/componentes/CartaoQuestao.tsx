@@ -14,6 +14,7 @@ import { usarEtiquetas } from '../estado/preferencias'
 import { usarComentarioIA } from '../dados/comentarios'
 import { usarIndice } from '../dados/usarIndice'
 import { RelatarErro } from './RelatarErro'
+import { ComoATurma } from './ComoATurma'
 
 interface Props {
   questao: Questao
@@ -457,7 +458,10 @@ export function CartaoQuestao({
             </span>
           </div>
         ) : !modoLeitura && (
-          <Resultado questao={questao} resposta={resposta!} />
+          <>
+            <Resultado questao={questao} resposta={resposta!} />
+            <ComoATurma questao={questao} resposta={resposta!} />
+          </>
         )}
 
         {mostrarGabarito && (

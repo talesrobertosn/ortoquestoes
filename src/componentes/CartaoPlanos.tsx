@@ -15,7 +15,7 @@ export function CartaoPlanos() {
       <span className="inicio-planos-atalho__icone"><Icone nome="medalha" tamanho={20} /></span>
       <span className="inicio-planos-atalho__texto">
         <strong>{assinante ? 'Sua assinatura' : 'Planos e assinatura'}</strong>
-        <small>{assinante ? 'Plano, renovação e pagamentos em um só lugar.' : 'O gratuito segue com 20 questões por dia. Veja como funciona estudar sem limite.'}</small>
+        <small>{assinante ? 'Plano, renovação e pagamentos em um só lugar.' : 'Simulado Nacional, plano até a prova, liga da residência e questões sem limite.'}</small>
       </span>
       <span className="inicio-planos-atalho__acao">{assinante ? 'Ver detalhes' : 'Conhecer os planos'} <Icone nome="direita" tamanho={16} /></span>
     </a>
