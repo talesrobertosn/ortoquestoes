@@ -11,19 +11,19 @@ import { Icone } from './Icone'
 import { Degustacao, SeloAssinante } from './Premium'
 import { NivelCobranca } from './NivelCobranca'
 
-/** Início: as duas caixas do assinante, lado a lado. Quem não assina vê o começo. */
+/** Início: o cronograma em destaque e, abaixo, os temas que mais caem. Quem não assina vê o começo. */
 export function CaixasAssinante() {
   return (
-    <div className="cx-duas">
-      <CaixaTemas />
+    <div className="empilha cx-bloco">
       <CaixaCronograma />
+      <CaixaTemas />
     </div>
   )
 }
 
 function CaixaTemas() {
   const { premium } = usarPremium()
-  const visiveis = premium ? 5 : 2
+  const visiveis = premium ? 6 : 2
   return (
     <section className="cx cx--temas" aria-labelledby="cx-temas-titulo">
       <header className="cx__cabeca">
@@ -57,6 +57,12 @@ function CaixaTemas() {
   )
 }
 
+const COMO_FUNCIONA = [
+  { icone: 'calendario' as const, titulo: 'Você diz a data da prova', texto: 'E quantos dias por semana consegue estudar.' },
+  { icone: 'fogo' as const, titulo: 'Ele monta o caminho', texto: 'A meta de cada dia e o tema de cada semana, começando pelo que mais cai.' },
+  { icone: 'reiniciar' as const, titulo: 'E se ajusta sozinho', texto: 'Atrasou, a meta sobe um pouco; adiantou, alivia. A última semana é de reta final.' },
+]
+
 function CaixaCronograma() {
   const { premium, logado } = usarPremium()
   const { indice } = usarIndice()
@@ -71,64 +77,53 @@ function CaixaCronograma() {
   }, [premium])
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
 
-  const cabeca = (
-    <header className="cx__cabeca">
-      <span className="cx__icone cx__icone--verde" aria-hidden="true"><Icone nome="rota" tamanho={20} /></span>
-      <div>
-        <p className="meta">CRONOGRAMA</p>
-        <h2 id="cx-crono-titulo">{calculo ? (calculo.provaPassou ? 'A prova chegou' : `Faltam ${calculo.diasAteProva} dias`) : 'Seu estudo até a prova'}</h2>
-      </div>
-      {!premium && <SeloAssinante />}
-    </header>
+  const titulo = (
+    <div className="cr-destaque__texto">
+      <p className="cr-destaque__selo"><Icone nome="rota" tamanho={15} /> {premium ? 'Seu estudo até a prova' : 'Novo para assinantes'}</p>
+      <h2 id="cr-destaque-titulo" className="cr-destaque__nome">Cronograma</h2>
+      <p className="cr-destaque__lide">{calculo
+        ? (calculo.provaPassou ? 'A prova chegou. Boa sorte!' : <>Faltam <strong>{calculo.diasAteProva} dias</strong> para a sua prova. Siga a meta de hoje e o cronograma cuida do resto.</>)
+        : 'Um plano de estudo até o dia da sua prova: quanto fazer por dia e qual tema em cada semana, começando pelo que mais cai no TEOT e no TARO.'}</p>
+    </div>
   )
 
-  // Assinante com cronograma: o dia de hoje.
+  // Assinante com cronograma: o dia de hoje em destaque.
   if (premium && calculo) {
     const pct = calculo.metaDiaria ? Math.min(100, Math.round((calculo.feitasHoje / calculo.metaDiaria) * 100)) : 100
     return (
-      <section className="cx cx--crono" aria-labelledby="cx-crono-titulo">
-        {cabeca}
-        <div className="cx-meta">
-          <div><strong className="numerico">{calculo.feitasHoje}</strong><span>de {calculo.metaDiaria} hoje</span></div>
-          <span className="cx-meta__barra"><span style={{ width: `${pct}%` }} /></span>
+      <section className="cr-destaque" aria-labelledby="cr-destaque-titulo">
+        {titulo}
+        <div className="cr-destaque__painel">
+          <span className="cr-destaque__rotulo">Meta de hoje</span>
+          <div className="cr-destaque__meta"><strong className="numerico">{calculo.feitasHoje}</strong><span>de {calculo.metaDiaria} questões</span></div>
+          <span className="cr-destaque__barra"><span style={{ width: `${pct}%` }} /></span>
+          <p>{calculo.naRetaFinal ? 'Reta final: erros, dúvidas e simulado.' : calculo.hoje ? <>Hoje: <strong>{calculo.hoje.nome}</strong>{calculo.hoje.focos[0] ? `, começando por ${calculo.hoje.focos[0].toLowerCase()}` : ''}.</> : 'Meta de hoje cumprida. Bom trabalho!'}</p>
+          <a className="botao botao--claro botao--grande" href={href('/cronograma')}>{calculo.hoje && calculo.faltaHoje ? 'Continuar o cronograma' : 'Abrir o cronograma'}</a>
         </div>
-        <p className="cx__texto">{calculo.naRetaFinal ? 'Reta final: erros, dúvidas e simulado.' : calculo.hoje ? <>Hoje: <strong>{calculo.hoje.nome}</strong>{calculo.hoje.focos[0] ? `, começando por ${calculo.hoje.focos[0].toLowerCase()}` : ''}.</> : 'Meta de hoje cumprida. Bom trabalho!'}</p>
-        <a className="botao botao--principal cx__botao" href={href('/cronograma')}>{calculo.hoje && calculo.faltaHoje ? 'Continuar o cronograma' : 'Abrir o cronograma'}</a>
       </section>
     )
   }
 
-  // Assinante sem cronograma ainda.
-  if (premium) {
-    return (
-      <section className="cx cx--crono" aria-labelledby="cx-crono-titulo">
-        {cabeca}
-        <p className="cx__texto">Três perguntas e ele fica pronto, com a meta de cada dia e os temas de cada semana, começando pelo que mais cai.</p>
-        <ol className="cx-passos">
-          <li><span className="numerico">1</span>Data da prova</li>
-          <li><span className="numerico">2</span>Intensidade: leve, firme ou completo</li>
-          <li><span className="numerico">3</span>Dias de folga</li>
-        </ol>
-        <a className="botao botao--principal cx__botao" href={href('/cronograma')}>Montar meu cronograma</a>
-      </section>
-    )
-  }
-
-  // Quem não assina: um exemplo, e a prévia do próprio cronograma na página.
+  // Assinante sem cronograma, ou quem não assina: como funciona e o convite.
   return (
-    <section className="cx cx--crono" aria-labelledby="cx-crono-titulo">
-      {cabeca}
-      <div className="cx-exemplo" aria-label="Exemplo de cronograma">
-        <span className="cx-exemplo__selo">Exemplo</span>
-        <div className="cx-meta"><div><strong className="numerico">45</strong><span>questões hoje · faltam 87 dias</span></div><span className="cx-meta__barra"><span style={{ width: '40%' }} /></span></div>
-        <ol className="cx-semanas">
-          <li><b>Esta semana</b><span>Trauma adulto</span></li>
-          <li><b>Próxima</b><span>Ombro e cotovelo</span></li>
-          <li className="cx-semanas__oculta"><b>Depois</b><span>Guardado</span></li>
-        </ol>
+    <section className="cr-destaque" aria-labelledby="cr-destaque-titulo">
+      {titulo}
+      <ol className="cr-destaque__passos">
+        {COMO_FUNCIONA.map((p, i) => (
+          <li key={p.titulo}>
+            <span className="cr-destaque__passo-num numerico">{i + 1}</span>
+            <span><strong>{p.titulo}</strong><small>{p.texto}</small></span>
+          </li>
+        ))}
+      </ol>
+      <div className="cr-destaque__acoes">
+        {premium
+          ? <a className="botao botao--claro botao--grande" href={href('/cronograma')}>Montar meu cronograma</a>
+          : <>
+            <a className="botao botao--ouro botao--grande" href={href(logado ? '/cronograma' : '/conta?modo=entrar')}>{logado ? 'Ver a prévia do meu cronograma' : 'Entrar e ver o meu cronograma'}</a>
+            <span className="cr-destaque__nota"><SeloAssinante /> A prévia é grátis; seguir o cronograma é do assinante.</span>
+          </>}
       </div>
-      <p className="cx__texto">Coloque a data da sua prova e veja a prévia do seu cronograma, montado pelo que mais cai.</p>
-      <a className="botao botao--ouro cx__botao" href={href(logado ? '/cronograma' : '/conta?modo=entrar')}>{logado ? 'Ver o meu cronograma' : 'Entrar e ver o meu'}</a>
     </section>
   )
 }

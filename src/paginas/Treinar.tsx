@@ -279,7 +279,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           ))}
         </div>
         <div className="tr-turma" role="group" aria-labelledby="tr-turma-titulo">
-          <p className="tr-turma__titulo" id="tr-turma-titulo"><Icone nome="grupo" tamanho={16} /> Pelo que a turma responde <span className="pg-selo"><Icone nome="coroa" tamanho={12} /> Assinante</span></p>
+          <p className="tr-turma__titulo" id="tr-turma-titulo"><Icone nome="grupo" tamanho={16} /> Pelo que a turma responde <SeloAssinante /></p>
           <div className="tr-pilulas">
             {SITUACOES_TURMA.map((situacao) => (
               <button

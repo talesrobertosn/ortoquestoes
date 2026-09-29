@@ -4,6 +4,7 @@ import { lerRespondidas } from '../estado/sessao'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { usarIndice } from '../dados/usarIndice'
 import { Icone, type NomeIcone } from '../componentes/Icone'
+import { Simbolo } from '../marca/Simbolo'
 import { Painel } from '../componentes/Painel'
 import { VERSAO_CONDICOES_ANTERIOR, VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { href } from '../util/rotas'
@@ -21,7 +22,7 @@ const RECURSOS: { icone: NomeIcone; titulo: string; texto: string; itens: string
   { icone: 'trofeu', titulo: 'Simulado Nacional, todo mês', texto: 'Uma prova igual para todos os assinantes do Brasil, com 50 questões de TEOT e TARO em duas horas. Corrigida na hora, com a sua posição e um relatório de prontidão por tema.', itens: ['Nota, posição e percentil', 'Pronto, no caminho ou reforçar', 'Top 10 da edição'], destino: '/simulado-nacional', largo: true },
   { icone: 'fogo', titulo: 'Temas que mais caem', texto: 'O ranking das áreas e dos assuntos mais cobrados. Um toque em qualquer assunto e começa o treino dele.', itens: ['20 assuntos campeões', '12 áreas, assunto por assunto'], destino: '/temas-que-mais-caem' },
   { icone: 'grupo', titulo: 'Como a turma respondeu', texto: 'Depois de cada questão, quantos marcaram cada alternativa e qual é a pegadinha. E sessões com as que a turma mais erra.', itens: ['"68% marcaram B"', 'Filtros pela turma'], destino: '/treinar' },
-  { icone: 'coroa', titulo: 'Liga da residência', texto: 'Um ranking privado do seu serviço. Crie a liga, mande o link no grupo e veja quem mais estuda.', itens: ['Convite pelo WhatsApp', 'Geral e da semana'], destino: '/ligas' },
+  { icone: 'medalha', titulo: 'Liga da residência', texto: 'Um ranking privado do seu serviço. Crie a liga, mande o link no grupo e veja quem mais estuda.', itens: ['Convite pelo WhatsApp', 'Geral e da semana'], destino: '/ligas' },
   { icone: 'correio', titulo: 'Relatório do mês', texto: 'Todo dia 1º, no seu e-mail: quantas questões, acerto, temas que subiram e caíram e o próximo passo.', itens: ['Evolução mês a mês', 'Próximo passo sugerido'], destino: '/conta' },
 ]
 
@@ -84,7 +85,7 @@ export function Assinatura() {
     <div className="empilha-2 vp">
       <section className="vp-heroi">
         <div className="vp-heroi__texto">
-          <p className="vp-heroi__selo"><Icone nome="coroa" tamanho={16} /> Plano do assinante</p>
+          <p className="vp-heroi__selo"><Simbolo tamanho={16} /> Plano do assinante</p>
           <h1>Tudo o que você precisa para chegar pronto na prova.</h1>
           <p className="vp-heroi__lide">
             {nome ? `${nome}, questões` : 'Questões'} {limitesHabilitados ? 'sem limite diário' : 'sem limite'} e o que só o assinante tem: um cronograma até a prova montado pelo que mais cai, o Simulado Nacional todo mês, o ranking dos temas mais cobrados, como a turma respondeu, a liga da residência e o relatório mensal.

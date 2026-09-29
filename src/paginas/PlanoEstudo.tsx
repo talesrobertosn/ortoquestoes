@@ -102,7 +102,7 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar }: { plano: PlanoSa
   return <>
     <section className="pe-heroi">
       <div className="pe-heroi__texto">
-        <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> {aberto ? 'Seu cronograma' : 'Prévia do seu cronograma'} · {plano.prova}</p>
+        <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> {aberto ? 'Cronograma' : 'Prévia do seu cronograma'} · {plano.prova}</p>
         <h1>{calculo.provaPassou ? 'A prova chegou. Boa sorte!' : <>Faltam <span className="numerico">{calculo.diasAteProva}</span> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
         <p>Prova em {longa(plano.data_prova)}. Intensidade {ROTULO_INTENSIDADE[plano.intensidade].nome.toLowerCase()}{plano.folgas.length ? `, folga ${plano.folgas.map((d) => DIAS_SEMANA[d]).join(', ')}` : ''}.</p>
         <p className={`pe-ritmo pe-ritmo--${ritmoTexto.classe}`}><Icone nome={ritmoTexto.classe === 'atras' ? 'baixo' : ritmoTexto.classe === 'frente' ? 'cima' : 'certo'} tamanho={15} /> {ritmoTexto.texto}</p>
@@ -163,6 +163,17 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar }: { plano: PlanoSa
       </section>
     </div>}
 
+    <details className="cartao cartao__corpo pe-entenda">
+      <summary><Icone nome="interrogacao" tamanho={18} /> Como o cronograma funciona</summary>
+      <ul>
+        <li><strong>Meta de hoje:</strong> questões novas (que você ainda não fez) para hoje. As revisões do dia são à parte, na página Revisão.</li>
+        <li><strong>Semana a semana:</strong> quais temas entram em cada semana e quantas questões de cada um. As áreas que mais caem vêm antes e ganham mais espaço; os temas em que você está abaixo da média também.</li>
+        <li><strong>À frente ou atrás:</strong> compara o que você fez com o esperado até hoje. Atrasou, a meta dos próximos dias sobe um pouco; adiantou, ela alivia.</li>
+        <li><strong>Reta final:</strong> a última semana antes da prova não tem conteúdo novo. É para refazer os erros, as marcadas com dúvida e fazer um simulado.</li>
+        <li><strong>Intensidade:</strong> leve cobre metade das questões que faltam, firme 80% e completo todas. Dá para mudar em "Ajustar o cronograma".</li>
+      </ul>
+    </details>
+
     <a className="pe-incidencia" href={href('/temas-que-mais-caem')}>
       <span className="pe-incidencia__icone" aria-hidden="true"><Icone nome="fogo" tamanho={20} /></span>
       <span><strong>O cronograma segue os temas que mais caem</strong><small>As áreas que mais caem ganham mais espaço, e cada dia começa pelos assuntos mais cobrados. Veja o ranking.</small></span>
@@ -189,6 +200,22 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar }: { plano: PlanoSa
       )}
     </section>
   </>
+}
+
+/** O que o cronograma faz, em três passos. */
+function ComoFunciona() {
+  const passos = [
+    { titulo: 'Você diz a data da prova', texto: 'E os dias da semana em que não estuda (plantão, descanso).' },
+    { titulo: 'Ele monta o caminho', texto: 'Divide as questões que faltam pelos dias até a prova, começando pelas áreas e assuntos que mais caem e reforçando os seus temas fracos.' },
+    { titulo: 'E se ajusta sozinho, todo dia', texto: 'Atrasou, a meta sobe um pouco; adiantou, alivia. A última semana fica reservada para a reta final: erros, dúvidas e simulado.' },
+  ]
+  return (
+    <ol className="cr-destaque__passos pe-como">
+      {passos.map((p, i) => (
+        <li key={p.titulo}><span className="cr-destaque__passo-num numerico">{i + 1}</span><span><strong>{p.titulo}</strong><small>{p.texto}</small></span></li>
+      ))}
+    </ol>
+  )
 }
 
 /** Não assinante: preenche como o assinante e vê o começo do próprio cronograma. */
@@ -249,15 +276,13 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
 
   return (
     <div className="empilha-2 pe">
-      <section className="pe-heroi pe-heroi--convite">
-        <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> Cronograma até a prova</p>
-        <h1>{atual ? 'Ajustar o cronograma' : 'Saiba exatamente o que estudar até o dia da prova'}</h1>
-        <p>Três perguntas e o OrtoQuestões monta o resto: a meta de cada dia, os temas de cada semana na ordem do que mais cai na prova e reforço nos seus pontos fracos.{previa ? ' Preencha e veja a prévia do seu.' : ''}</p>
-        {previa && <ul className="pe-heroi__fatos">
-          <li><Icone nome="fogo" tamanho={15} /> Primeiro o que mais cai</li>
-          <li><Icone nome="calendario" tamanho={15} /> Meta de cada dia</li>
-          <li><Icone nome="reiniciar" tamanho={15} /> Se ajusta sozinho</li>
-        </ul>}
+      <section className="pe-heroi pe-heroi--convite pe-heroi--form">
+        <div>
+          <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> {atual ? 'Ajustar' : 'Seu estudo até a prova'}</p>
+          <h1 className="pe-heroi__nome">Cronograma</h1>
+          <p>Um plano de estudo até o dia da sua prova. Você responde três perguntas e ele diz <strong>quantas questões fazer por dia</strong> e <strong>qual tema estudar em cada semana</strong>, começando pelo que mais cai no TEOT e no TARO.{previa ? ' Preencha abaixo e veja a prévia do seu.' : ''}</p>
+        </div>
+        <ComoFunciona />
       </section>
       <section className="cartao cartao__corpo pe-form">
         <div className="pe-form__passo">

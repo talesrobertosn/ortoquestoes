@@ -7,7 +7,7 @@ import { SeloAssinante } from './Premium'
 
 const RECURSOS: Array<{ icone: NomeIcone; titulo: string; texto: (mes: string) => string; destino: string }> = [
   { icone: 'trofeu', titulo: 'Simulado Nacional', texto: (mes) => `A prova de ${mes}: nota, posição e o que falta para você estar pronto.`, destino: '/simulado-nacional' },
-  { icone: 'coroa', titulo: 'Liga da residência', texto: () => 'O ranking privado do seu serviço, com convite pelo WhatsApp.', destino: '/ligas' },
+  { icone: 'medalha', titulo: 'Liga da residência', texto: () => 'O ranking privado do seu serviço, com convite pelo WhatsApp.', destino: '/ligas' },
   { icone: 'alvo', titulo: 'Como a turma respondeu', texto: () => 'Estude pelas questões que a maioria erra e pelas que você não pode errar.', destino: '/treinar?situacao=turmaErra&limite=20' },
   { icone: 'correio', titulo: 'Relatório do mês', texto: () => 'Todo dia 1º, sua evolução, os temas que subiram e o próximo passo.', destino: '/conta' },
 ]

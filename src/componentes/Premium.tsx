@@ -2,10 +2,11 @@ import type { ReactNode } from 'react'
 import { usarPremium } from '../conta/premium'
 import { href } from '../util/rotas'
 import { Icone, type NomeIcone } from './Icone'
+import { Simbolo } from '../marca/Simbolo'
 
 /** Selo discreto "Assinante" ao lado do nome de um recurso do plano pago. */
 export function SeloAssinante({ texto = 'Assinante' }: { texto?: string }) {
-  return <span className="pg-selo"><Icone nome="coroa" tamanho={13} /> {texto}</span>
+  return <span className="pg-selo"><span className="pg-selo__q"><Simbolo tamanho={13} /></span>{texto}</span>
 }
 
 interface PropsConvite {
