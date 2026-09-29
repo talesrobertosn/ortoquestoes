@@ -73,7 +73,10 @@ async function enviarEmail(para, assunto, html, texto, descadastro) {
       ...descadastro ? { headers: { "List-Unsubscribe": `<${descadastro}>` } } : {}
     })
   });
-  if (!resposta.ok) throw new Error(`envio_recusado_${resposta.status}`);
+  if (!resposta.ok) {
+    const motivo = await resposta.json().then((d) => d.message ?? "").catch(() => "");
+    throw new Error(`envio_recusado_${resposta.status}${motivo ? `: ${motivo}` : ""}`.slice(0, 300));
+  }
 }
 function site() {
   return (Deno.env.get("APP_ORIGIN") ?? "https://ortoquestoes.com.br").replace(/\/+$/, "") + "/";

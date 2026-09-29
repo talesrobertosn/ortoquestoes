@@ -25,7 +25,11 @@ export async function enviarEmail(para: string | string[], assunto: string, html
       ...(descadastro ? { headers: { 'List-Unsubscribe': `<${descadastro}>` } } : {}),
     }),
   })
-  if (!resposta.ok) throw new Error(`envio_recusado_${resposta.status}`)
+  if (!resposta.ok) {
+    // A mensagem do Resend diz o motivo (ex.: domínio não verificado); vai para o painel.
+    const motivo = await resposta.json().then((d: { message?: string }) => d.message ?? '').catch(() => '')
+    throw new Error(`envio_recusado_${resposta.status}${motivo ? `: ${motivo}` : ''}`.slice(0, 300))
+  }
 }
 
 export function site() {

@@ -238,7 +238,10 @@ async function enviarEmail(para, assunto, html, texto, descadastro) {
       ...descadastro ? { headers: { "List-Unsubscribe": `<${descadastro}>` } } : {}
     })
   });
-  if (!resposta.ok) throw new Error(`envio_recusado_${resposta.status}`);
+  if (!resposta.ok) {
+    const motivo2 = await resposta.json().then((d) => d.message ?? "").catch(() => "");
+    throw new Error(`envio_recusado_${resposta.status}${motivo2 ? `: ${motivo2}` : ""}`.slice(0, 300));
+  }
 }
 function site() {
   return (Deno.env.get("APP_ORIGIN") ?? "https://ortoquestoes.com.br").replace(/\/+$/, "") + "/";
@@ -312,6 +315,7 @@ async function montar(id, marco, recado) {
   });
   return { dados, marco: m, email };
 }
+var motivo = (falha) => (falha instanceof Error ? falha.message : String(falha)).slice(0, 300);
 async function registrar(corpo) {
   return banco("emails_enviados", { method: "POST", body: JSON.stringify(corpo) });
 }
@@ -341,15 +345,23 @@ Deno.serve(async (req) => {
       if (!marco) return json({ resultado: "ainda_nao" }, 200, req);
       if (Number(dados.respondidas) > marco.minimo + folga(marco)) return json({ resultado: "longe_do_marco", marco: marco.minimo }, 200, req);
       const reserva = await registrar({ id_usuario: usuario.id, tipo: "marco", marco: marco.minimo, status: "enviando" });
-      if (!reserva.ok) return json({ resultado: "ja_enviado", marco: marco.minimo }, 200, req);
-      const [linha] = await reserva.json();
+      let linha;
+      if (reserva.ok) [linha] = await reserva.json();
+      else {
+        const retomada = await banco(`emails_enviados?id_usuario=eq.${usuario.id}&tipo=eq.marco&marco=eq.${marco.minimo}&status=eq.falhou`, {
+          method: "PATCH",
+          body: JSON.stringify({ status: "enviando", erro: null, enviado_em: (/* @__PURE__ */ new Date()).toISOString() })
+        });
+        if (retomada.ok) [linha] = await retomada.json();
+      }
+      if (!linha) return json({ resultado: "ja_enviado", marco: marco.minimo }, 200, req);
       const pronto = await montar(usuario.id, marco);
       try {
         await enviarEmail(pronto.dados.email, pronto.email.assunto, pronto.email.html, pronto.email.texto, await linkDescadastro(usuario.id));
         await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "enviado", assunto: pronto.email.assunto }) });
         return json({ resultado: "enviado", marco: marco.minimo }, 200, req);
       } catch (falha) {
-        await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "falhou", erro: String(falha).slice(0, 200) }) });
+        await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "falhou", erro: motivo(falha) }) });
         return json({ resultado: "falhou" }, 200, req);
       }
     }
@@ -380,8 +392,8 @@ Deno.serve(async (req) => {
         await registrar({ id_usuario: corpo.id_usuario, tipo: "parabens", marco: pronto.marco.minimo, assunto: pronto.email.assunto, enviado_por: usuario.id });
         return json({ resultado: "enviado" }, 200, req);
       } catch (falha) {
-        await registrar({ id_usuario: corpo.id_usuario, tipo: "parabens", marco: pronto.marco.minimo, assunto: pronto.email.assunto, status: "falhou", erro: String(falha).slice(0, 200), enviado_por: usuario.id });
-        return json({ erro: "envio_falhou" }, 502, req);
+        await registrar({ id_usuario: corpo.id_usuario, tipo: "parabens", marco: pronto.marco.minimo, assunto: pronto.email.assunto, status: "falhou", erro: motivo(falha), enviado_por: usuario.id });
+        return json({ erro: motivo(falha) }, 502, req);
       }
     }
     return json({ erro: "acao_invalida" }, 400, req);

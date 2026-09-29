@@ -18,8 +18,9 @@ export async function verificarMarcoEmail(totalRespondidas: number) {
   ultimaTentativa = Date.now()
   try {
     const { resultado } = await chamarFuncao<{ resultado: string }>('enviar-email', { acao: 'marco' })
-    // "ainda_nao": o servidor ainda não recebeu as respostas; tenta de novo depois.
-    if (resultado !== 'ainda_nao') gravar(CHAVE, marco.minimo)
+    // "ainda_nao": o servidor ainda não recebeu as respostas; "falhou": o envio não saiu
+    // (Resend fora ou mal configurado). Nos dois casos tenta de novo mais tarde.
+    if (resultado !== 'ainda_nao' && resultado !== 'falhou') gravar(CHAVE, marco.minimo)
   } catch { /* função não publicada ou sem rede: tenta mais tarde */ }
 }
 

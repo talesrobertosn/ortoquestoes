@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { chamarRpc } from '../../servicos/supabase'
-import { dataHora, erroDoPainel } from './formatos'
+import { dataHora, erroDoPainel, motivoFalhaEmail } from './formatos'
 
 interface ConfigComercial { paywall_ativo: boolean; limite_diario_gratis: number; pagamentos_ativos: boolean; atualizado_em: string }
 interface Aviso { id: number; texto: string; link: string | null; rotulo_link: string | null; tom: 'info' | 'destaque' | 'alerta'; ativo: boolean; fim: string | null; criado_em: string }
@@ -106,7 +106,7 @@ export function AdminConfiguracoes() {
       <p className="adm-nota">Para mandar parabéns a alguém agora, com um recado seu, abra a pessoa na aba Usuários.</p>
       <h3 className="adm-subtitulo">Últimos envios{falhas > 0 && <span className="adm-selo adm-selo--ruim">{falhas} com falha</span>}</h3>
       {!enviados?.length ? <p className="adm-vazio">Nenhum e-mail enviado ainda.</p> : <ul className="adm-mini">
-        {enviados.slice(0, 30).map(e => <li key={e.id}><span className="adm-mini__nome">{e.assunto ?? TIPO_EMAIL[e.tipo]}<small>{TIPO_EMAIL[e.tipo] ?? e.tipo}{e.usuario ? ` · ${e.usuario}` : ''}{e.erro ? ` · ${e.erro}` : ''}</small></span><span className={'adm-selo ' + (e.status === 'enviado' ? 'adm-selo--ok' : e.status === 'falhou' ? 'adm-selo--ruim' : 'adm-selo--neutro')}>{e.status === 'enviado' ? dataHora(e.enviado_em) : e.status}</span></li>)}
+        {enviados.slice(0, 30).map(e => <li key={e.id}><span className="adm-mini__nome">{e.assunto ?? TIPO_EMAIL[e.tipo]}<small>{TIPO_EMAIL[e.tipo] ?? e.tipo}{e.usuario ? ` · ${e.usuario}` : ''}</small>{e.status === 'falhou' && <small className="adm-erro-email">{motivoFalhaEmail(e.erro)}</small>}</span><span className={'adm-selo ' + (e.status === 'enviado' ? 'adm-selo--ok' : e.status === 'falhou' ? 'adm-selo--ruim' : 'adm-selo--neutro')}>{e.status === 'enviado' ? dataHora(e.enviado_em) : e.status}</span></li>)}
       </ul>}
     </section>
   </div>

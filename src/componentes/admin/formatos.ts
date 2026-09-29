@@ -66,6 +66,21 @@ export function nomeErro(codigo: string | null): string {
   return texto.charAt(0).toUpperCase() + texto.slice(1) + '.'
 }
 
+/** Motivo de um e-mail que não saiu, em português, com o texto do Resend quando houver. */
+export function motivoFalhaEmail(bruto: string | null | undefined): string {
+  const texto = (bruto ?? '').replace(/^Error: /, '').trim()
+  const [, status, detalhe] = texto.match(/^envio_recusado_(\d+)(?::\s*(.*))?$/) ?? []
+  const doResend = detalhe ? ` Resposta do Resend: "${detalhe}"` : ''
+  if (texto === 'email_nao_configurado') return 'Faltam segredos no Supabase (Edge Functions › Secrets): RESEND_API_KEY, EMAIL_REMETENTE e EMAIL_SEGREDO, com esses nomes exatos.'
+  if (texto === 'pessoa_nao_quer_emails') return 'Esta pessoa desligou os e-mails de conquistas em Minha conta.'
+  if (status === '401') return 'O Resend não reconheceu a chave. Confira o segredo RESEND_API_KEY (começa com re_).' + doResend
+  if (status === '403') return 'O Resend recusou o remetente: o domínio ortoquestoes.com.br ainda não está "Verified" no Resend, ou o EMAIL_REMETENTE usa outro domínio.' + doResend
+  if (status === '422') return 'O Resend achou algum dado inválido, quase sempre o formato do EMAIL_REMETENTE. Use: OrtoQuestões <contato@ortoquestoes.com.br>.' + doResend
+  if (status === '429') return 'Limite de envios do Resend atingido. Tente de novo mais tarde.' + doResend
+  if (status) return `O Resend recusou o envio (código ${status}).` + doResend
+  return texto || 'Motivo não registrado.'
+}
+
 export const porcentagem = (parte: number, todo: number) => todo > 0 ? Math.round((parte / todo) * 100) : null
 
 /** Mensagem única para uma função do painel que ainda não existe no banco. */

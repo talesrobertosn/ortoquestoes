@@ -45,6 +45,8 @@ async function montar(id: string, marco: Marco | null, recado?: string | null) {
   return { dados, marco: m, email }
 }
 
+const motivo = (falha: unknown) => (falha instanceof Error ? falha.message : String(falha)).slice(0, 300)
+
 async function registrar(corpo: Record<string, unknown>) {
   return banco('emails_enviados', { method: 'POST', body: JSON.stringify(corpo) })
 }
@@ -78,15 +80,24 @@ Deno.serve(async (req) => {
       if (Number(dados.respondidas) > marco.minimo + folga(marco)) return json({ resultado: 'longe_do_marco', marco: marco.minimo }, 200, req)
       // A trava do banco (um e-mail por marco) evita duplicata com dois pedidos juntos.
       const reserva = await registrar({ id_usuario: usuario.id, tipo: 'marco', marco: marco.minimo, status: 'enviando' })
-      if (!reserva.ok) return json({ resultado: 'ja_enviado', marco: marco.minimo }, 200, req)
-      const [linha] = await reserva.json() as Array<{ id: number }>
+      let linha: { id: number } | undefined
+      if (reserva.ok) [linha] = await reserva.json() as Array<{ id: number }>
+      else {
+        // Já existe registro deste marco. Se o envio anterior falhou, retoma o mesmo registro
+        // (o filtro status=falhou garante que só um pedido consegue).
+        const retomada = await banco(`emails_enviados?id_usuario=eq.${usuario.id}&tipo=eq.marco&marco=eq.${marco.minimo}&status=eq.falhou`, {
+          method: 'PATCH', body: JSON.stringify({ status: 'enviando', erro: null, enviado_em: new Date().toISOString() }),
+        })
+        if (retomada.ok) [linha] = await retomada.json() as Array<{ id: number }>
+      }
+      if (!linha) return json({ resultado: 'ja_enviado', marco: marco.minimo }, 200, req)
       const pronto = await montar(usuario.id, marco)
       try {
         await enviarEmail(pronto!.dados.email!, pronto!.email.assunto, pronto!.email.html, pronto!.email.texto, await linkDescadastro(usuario.id))
         await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'enviado', assunto: pronto!.email.assunto }) })
         return json({ resultado: 'enviado', marco: marco.minimo }, 200, req)
       } catch (falha) {
-        await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: String(falha).slice(0, 200) }) })
+        await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: motivo(falha) }) })
         return json({ resultado: 'falhou' }, 200, req)
       }
     }
@@ -118,8 +129,8 @@ Deno.serve(async (req) => {
         await registrar({ id_usuario: corpo.id_usuario, tipo: 'parabens', marco: pronto.marco.minimo, assunto: pronto.email.assunto, enviado_por: usuario.id })
         return json({ resultado: 'enviado' }, 200, req)
       } catch (falha) {
-        await registrar({ id_usuario: corpo.id_usuario, tipo: 'parabens', marco: pronto.marco.minimo, assunto: pronto.email.assunto, status: 'falhou', erro: String(falha).slice(0, 200), enviado_por: usuario.id })
-        return json({ erro: 'envio_falhou' }, 502, req)
+        await registrar({ id_usuario: corpo.id_usuario, tipo: 'parabens', marco: pronto.marco.minimo, assunto: pronto.email.assunto, status: 'falhou', erro: motivo(falha), enviado_por: usuario.id })
+        return json({ erro: motivo(falha) }, 502, req)
       }
     }
 

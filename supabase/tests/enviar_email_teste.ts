@@ -6,7 +6,7 @@ Deno.env.set('SUPABASE_URL', 'https://banco.teste'); Deno.env.set('SUPABASE_ANON
 Deno.env.set('RESEND_API_KEY', 're_teste'); Deno.env.set('EMAIL_REMETENTE', 'OrtoQuestões <contato@ortoquestoes.com.br>'); Deno.env.set('EMAIL_SEGREDO', 'segredo-de-teste-bem-longo')
 
 const ANA = '00000000-0000-0000-0000-00000000000b', ADM = '00000000-0000-0000-0000-00000000000a'
-const estado = { respondidas: 510, quer: true, marcosEnviados: new Set<number>(), enviados: [] as Array<{ to: string[]; subject: string }>, prefs: [] as unknown[] }
+const estado = { respondidas: 510, quer: true, marcosEnviados: new Set<number>(), enviados: [] as Array<{ to: string[]; subject: string }>, prefs: [] as unknown[], resendFalha: false, linhas: new Map<number, string>(), ultimoErro: '' }
 globalThis.fetch = async (entrada: RequestInfo | URL, opcoes: RequestInit = {}) => {
   const url = String(entrada), metodo = opcoes.method ?? 'GET'
   const corpo = opcoes.body ? JSON.parse(String(opcoes.body)) : null
@@ -15,6 +15,7 @@ globalThis.fetch = async (entrada: RequestInfo | URL, opcoes: RequestInit = {}) 
     const auth = new Headers(opcoes.headers).get('authorization')
     return auth === 'Bearer ana' ? j({ id: ANA, email: 'ana@x.com' }) : auth === 'Bearer adm' ? j({ id: ADM, email: 'admin@x.com' }) : j({}, 401)
   }
+  if (url.includes('api.resend.com') && estado.resendFalha) return j({ statusCode: 403, message: 'The ortoquestoes.com.br domain is not verified.' }, 403)
   if (url.includes('api.resend.com')) { estado.enviados.push({ to: corpo.to, subject: corpo.subject }); return j({ id: 'x' }) }
   if (url.includes('configuracao_emails')) return j([{ marcos_automaticos: true, alertas_admin: true }])
   if (url.includes('rpc/dados_email_usuario')) return j([{ email: 'ana@x.com', nome: 'Ana Paula', respondidas: estado.respondidas, acertos: 370, erros: 130, respondidas_7d: 80, dias_de_conta: 20, quer_conquistas: estado.quer }])
@@ -23,10 +24,16 @@ globalThis.fetch = async (entrada: RequestInfo | URL, opcoes: RequestInit = {}) 
   if (url.includes('avaliacoes_comentario')) return j([{ observacao: 'Não entendi a inervação', motivo: 'confuso', atualizado_em: new Date().toISOString() }])
   if (url.includes('emails_enviados?tipo=eq.alerta_admin')) return j([])
   if (url.includes('emails_enviados') && metodo === 'POST') {
-    if (corpo.tipo === 'marco') { if (estado.marcosEnviados.has(corpo.marco)) return j({ code: '23505' }, 409); estado.marcosEnviados.add(corpo.marco) }
-    return j([{ id: 1 }], 201)
+    if (corpo.tipo === 'marco') { if (estado.marcosEnviados.has(corpo.marco)) return j({ code: '23505' }, 409); estado.marcosEnviados.add(corpo.marco); estado.linhas.set(corpo.marco, corpo.status) }
+    if (corpo.status === 'falhou') estado.ultimoErro = corpo.erro
+    return j([{ id: corpo.marco ?? 1 }], 201)
   }
-  if (url.includes('emails_enviados') && metodo === 'PATCH') return j([], 200)
+  if (url.includes('emails_enviados') && metodo === 'PATCH') {
+    const retomar = url.match(/marco=eq\.(\d+)&status=eq\.falhou/), porId = url.match(/id=eq\.(\d+)$/)
+    if (retomar) { const m = Number(retomar[1]); if (estado.linhas.get(m) !== 'falhou') return j([]); estado.linhas.set(m, corpo.status); return j([{ id: m }]) }
+    if (porId) { estado.linhas.set(Number(porId[1]), corpo.status); if (corpo.erro) estado.ultimoErro = corpo.erro }
+    return j([], 200)
+  }
   if (url.includes('preferencias_email')) { estado.prefs.push(corpo); return new Response(null, { status: 201 }) }
   throw new Error('fetch inesperado: ' + url)
 }
@@ -68,3 +75,15 @@ const { linkDescadastro } = await import('../functions/_shared/email.ts')
 const t = new URL((await linkDescadastro(ANA)).replace('#/emails', 'emails')).searchParams.get('t')!
 r = await chamar(null, { acao: 'descadastrar', u: ANA, t })
 confere('descadastro com link verdadeiro', r.status === 200 && (estado.prefs[0] as { conquistas: boolean }).conquistas === false, r)
+
+estado.respondidas = 2010; estado.resendFalha = true
+r = await chamar('ana', { acao: 'marco' })
+confere('falha do Resend fica registrada com o motivo', r.dados.resultado === 'falhou' && estado.linhas.get(2000) === 'falhou' && estado.ultimoErro.startsWith('envio_recusado_403: The ortoquestoes.com.br domain is not verified'), estado.ultimoErro)
+estado.resendFalha = false
+r = await chamar('ana', { acao: 'marco' })
+confere('marco que falhou é reenviado depois', r.dados.resultado === 'enviado' && estado.linhas.get(2000) === 'enviado', r)
+r = await chamar('ana', { acao: 'marco' })
+confere('e não duplica depois de enviado', r.dados.resultado === 'ja_enviado', r)
+estado.resendFalha = true
+r = await chamar('adm', { acao: 'parabens', id_usuario: ANA })
+confere('parabéns que falha devolve o motivo', r.status === 502 && String(r.dados.erro).startsWith('envio_recusado_403:'), r)

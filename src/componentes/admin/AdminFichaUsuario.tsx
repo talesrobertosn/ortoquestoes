@@ -5,7 +5,7 @@ import { usarIndice } from '../../dados/usarIndice'
 import { Icone } from '../Icone'
 import { BarrasHorizontais } from './AdminGraficos'
 import type { LinhaUsuario } from './AdminUsuarios'
-import { PLANOS, data, dataHora, haQuanto, porcentagem } from './formatos'
+import { PLANOS, data, dataHora, haQuanto, motivoFalhaEmail, porcentagem } from './formatos'
 
 interface Detalhe {
   respostas: Array<{ id: string; c: string | null; primeira: string | null }>
@@ -66,7 +66,7 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
   async function acao(rotulo: string, fazer: () => Promise<unknown>, sucesso: string) {
     if (ocupado) return
     definirOcupado(true); definirAviso('')
-    try { await fazer(); definirAviso(sucesso); await carregar() } catch (f) { definirAviso(`${rotulo}: ${String(f).replace(/^Error: /, '')}`) } finally { definirOcupado(false) }
+    try { await fazer(); definirAviso(sucesso); await carregar() } catch (f) { const texto = String(f).replace(/^Error: /, ''); definirAviso(`${rotulo}: ${rotulo === 'Envio' ? motivoFalhaEmail(texto) : texto}`) } finally { definirOcupado(false) }
   }
 
   const nome = usuario.nome ?? usuario.email?.split('@')[0] ?? 'Sem nome'
@@ -156,7 +156,7 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
 
         {detalhe.emails.length > 0 && <section className="empilha">
           <h3 className="adm-subtitulo">E-mails enviados</h3>
-          <ul className="adm-mini">{detalhe.emails.map((e, i) => <li key={i}><span className="adm-mini__nome">{e.assunto ?? e.tipo}<small>{e.tipo === 'marco' ? 'automático' : 'enviado por você'}</small></span><span className={'adm-selo ' + (e.status === 'enviado' ? 'adm-selo--ok' : 'adm-selo--ruim')}>{e.status === 'enviado' ? data(e.em) : e.status}</span></li>)}</ul>
+          <ul className="adm-mini">{detalhe.emails.map((e, i) => <li key={i}><span className="adm-mini__nome">{e.assunto ?? (e.tipo === 'marco' && e.marco ? `Emblema de ${e.marco} questões` : e.tipo)}<small>{e.tipo === 'marco' ? 'automático' : 'enviado por você'}{e.status === 'falhou' ? ' · não saiu; o motivo aparece em Ajustes › E-mails' : ''}</small></span><span className={'adm-selo ' + (e.status === 'enviado' ? 'adm-selo--ok' : 'adm-selo--ruim')}>{e.status === 'enviado' ? data(e.em) : e.status}</span></li>)}</ul>
         </section>}
       </div>}
     </div>
