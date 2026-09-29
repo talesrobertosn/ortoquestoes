@@ -161,7 +161,7 @@ function EntrarLiga({ codigo }: { codigo: string }) {
           icone="grupo"
           titulo={`Assine para entrar na ${previa.nome}`}
           texto={<p>A liga da residência é exclusiva para assinantes. Com o plano, você entra nesta liga, cria as suas e ainda leva todos os outros recursos.</p>}
-          itens={['Ranking privado com os colegas', 'Simulado Nacional todo mês', 'Como a turma respondeu cada questão', 'Plano até a prova']}
+          itens={['Ranking privado com os colegas', 'Simulado Nacional todo mês', 'Temas que mais caem e plano até a prova', 'Como a turma respondeu cada questão']}
         />
       )}
     </div>

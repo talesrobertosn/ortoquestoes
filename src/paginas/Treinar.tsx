@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { arvoreAssuntos, contar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
 import { usarPremium } from '../conta/premium'
-import { ConvitePremium } from '../componentes/Premium'
+import { ConvitePremium, SeloAssinante } from '../componentes/Premium'
 import {
   FILTROS_VAZIOS,
   ROTULO_DIFICULDADE,
@@ -234,6 +234,11 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           porSubtema={contagens?.porSubtema ?? {}}
           aoMudar={(temas, subtemas) => atualizar({ temas, subtemas })}
         />
+        <a className="tr-incidencia" href={href('/temas-que-mais-caem')}>
+          <Icone nome="fogo" tamanho={16} />
+          <span>Não sabe por onde começar? <b>Veja os temas que mais caem</b></span>
+          {!premium && <SeloAssinante />}
+        </a>
         <div className="tr-busca">
           <Icone nome="busca" tamanho={18} />
           <label className="so-leitor" htmlFor="busca-acervo">Buscar no texto das questões</label>

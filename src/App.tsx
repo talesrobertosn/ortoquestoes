@@ -31,6 +31,7 @@ const DetalhesAssinatura = lazy(() => import('./paginas/DetalhesAssinatura').the
 const Emails = lazy(() => import('./paginas/Emails').then(({ Emails }) => ({ default: Emails })))
 const SimuladoNacional = lazy(() => import('./paginas/SimuladoNacional').then(({ SimuladoNacional }) => ({ default: SimuladoNacional })))
 const PlanoEstudo = lazy(() => import('./paginas/PlanoEstudo').then(({ PlanoEstudo }) => ({ default: PlanoEstudo })))
+const TemasQueMaisCaem = lazy(() => import('./paginas/TemasQueMaisCaem').then(({ TemasQueMaisCaem }) => ({ default: TemasQueMaisCaem })))
 const Ligas = lazy(() => import('./paginas/Ligas').then(({ Ligas }) => ({ default: Ligas })))
 const AdminAssinaturas = lazy(() => import('./paginas/AdminAssinaturas').then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
 
@@ -60,6 +61,7 @@ const TITULOS: Record<string, string> = {
   '/simulado-nacional': 'Simulado Nacional — OrtoQuestões',
   '/plano-de-estudo': 'Plano até a prova — OrtoQuestões',
   '/ligas': 'Liga da residência — OrtoQuestões',
+  '/temas-que-mais-caem': 'Temas que mais caem — OrtoQuestões',
 }
 
 export function App() {
@@ -150,6 +152,9 @@ export function App() {
       break
     case 'plano-de-estudo':
       pagina = <PlanoEstudo />
+      break
+    case 'temas-que-mais-caem':
+      pagina = <TemasQueMaisCaem />
       break
     case 'ligas':
       pagina = <Ligas key={rota.consulta.toString()} consulta={rota.consulta} />

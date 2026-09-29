@@ -1,9 +1,13 @@
 import type { Indice } from './tipos'
+import { embaralhar } from './embaralhar'
+import { AREAS, idsDoFoco, nivelPorQuestao, pesoIncidenciaDoTema, type Nivel } from './incidencia'
 
 /**
  * Plano até a prova. Tudo é recalculado a cada dia a partir do que a pessoa
  * já respondeu: atrasou, a meta sobe um pouco; adiantou, ela desce. A última
  * semana antes da prova fica reservada para a reta final (erros e simulado).
+ * Os temas que mais caem na prova ganham mais espaço e vêm antes, e dentro de
+ * cada tema o dia começa pelos assuntos mais cobrados.
  */
 
 export type Intensidade = 'leve' | 'firme' | 'completo'
@@ -44,8 +48,8 @@ export function diasDeEstudo(inicio: Date, fim: Date, folgas: number[]): number 
 
 export interface RegistroMinimo { c: boolean | null; q?: number; historico?: Array<{ em: number; correta: boolean | null }> }
 
-export interface TemaPlano { slug: string; nome: string; faltam: number; acerto: number | null; respondidas: number; reforcado: boolean }
-export interface SemanaPlano { inicio: Date; fim: Date; diasEstudo: number; temas: Array<{ slug: string; nome: string; n: number }>; total: number; atual: boolean }
+export interface TemaPlano { slug: string; nome: string; faltam: number; acerto: number | null; respondidas: number; reforcado: boolean; incidencia: number }
+export interface SemanaPlano { inicio: Date; fim: Date; diasEstudo: number; temas: Array<{ slug: string; nome: string; n: number; focos: string[] }>; total: number; atual: boolean }
 export interface CalculoPlano {
   diasAteProva: number
   diasEstudoRestantes: number
@@ -61,7 +65,7 @@ export interface CalculoPlano {
   ritmo: number
   temas: TemaPlano[]
   semanas: SemanaPlano[]
-  hoje: { slug: string; nome: string; n: number } | null
+  hoje: { slug: string; nome: string; n: number; focos: string[] } | null
   naRetaFinal: boolean
   provaPassou: boolean
 }
@@ -97,8 +101,10 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     const tema = indice.temas[i]
     const validas = t.certas + t.erradas
     const acerto = validas >= 10 ? Math.round((t.certas / validas) * 100) : null
-    return { slug: tema?.slug ?? String(i), nome: tema?.nome ?? String(i), faltam: t.faltam, acerto, respondidas: t.respondidas, reforcado: acerto !== null && media !== null && acerto < media - 5 }
+    const slug = tema?.slug ?? String(i)
+    return { slug, nome: tema?.nome ?? String(i), faltam: t.faltam, acerto, respondidas: t.respondidas, reforcado: acerto !== null && media !== null && acerto < media - 5, incidencia: pesoIncidenciaDoTema(slug) }
   })
+  const focosPendentes = focosQueFaltam(indice, respondidas)
 
   const alvo = Math.max(0, Math.ceil((elegiveis - Math.min(plano.base_respondidas, elegiveis)) * COBERTURA[plano.intensidade]))
   const feitas = Math.max(0, respondidasNoAcervo - plano.base_respondidas)
@@ -121,14 +127,15 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const feitasAntesDeHoje = feitas - feitasHoje
   const ritmo = esperadoAteHoje > 0 ? Math.round(((feitasAntesDeHoje - esperadoAteHoje) / esperadoAteHoje) * 100) : 0
 
-  // Distribuição: cada tema pesa pelo que falta, com reforço para os fracos.
-  const fator = (t: TemaPlano) => 1 + (t.acerto !== null && media !== null ? Math.min(1.5, Math.max(0, ((media - t.acerto) / 100) * 4)) : 0)
+  // Distribuição: cada tema pesa pelo que falta, com reforço para os fracos
+  // e para os que mais caem na prova.
+  const fator = (t: TemaPlano) => (1 + (t.acerto !== null && media !== null ? Math.min(1.5, Math.max(0, ((media - t.acerto) / 100) * 4)) : 0)) * t.incidencia
   const pesos = temas.filter((t) => t.faltam > 0).map((t) => ({ t, peso: t.faltam * fator(t) }))
   const somaPesos = pesos.reduce((s, p) => s + p.peso, 0)
   const cotas = pesos
     .map(({ t, peso }) => ({ t, n: Math.min(t.faltam, Math.round((restante * peso) / (somaPesos || 1))) }))
     .filter((c) => c.n > 0)
-    // Os mais fracos primeiro: dá tempo de revisar o que foi aprendido neles.
+    // Os mais fracos e os que mais caem primeiro: dá tempo de revisar o que foi aprendido neles.
     .sort((a, b) => fator(b.t) - fator(a.t) || b.n - a.n)
 
   const semanas: SemanaPlano[] = []
@@ -144,7 +151,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     while (capacidade > 0 && fila.length) {
       const atual = fila[0]
       const n = Math.min(atual.n, capacidade)
-      temasSemana.push({ slug: atual.t.slug, nome: atual.t.nome, n })
+      temasSemana.push({ slug: atual.t.slug, nome: atual.t.nome, n, focos: focosPendentes.get(atual.t.slug) ?? [] })
       atual.n -= n; capacidade -= n
       if (atual.n <= 0) fila.shift()
     }
@@ -155,7 +162,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   }
 
   const primeiraSemana = semanas.find((s) => s.atual && s.temas.length)
-  const hojeTarefa = primeiraSemana && faltaHoje > 0 ? { slug: primeiraSemana.temas[0].slug, nome: primeiraSemana.temas[0].nome, n: Math.min(faltaHoje, 100) } : null
+  const hojeTarefa = primeiraSemana && faltaHoje > 0 ? { slug: primeiraSemana.temas[0].slug, nome: primeiraSemana.temas[0].nome, n: Math.min(faltaHoje, 100), focos: primeiraSemana.temas[0].focos } : null
 
   return {
     diasAteProva: diasEntre(hoje, prova),
@@ -175,4 +182,37 @@ export function respondidasNoAcervo(indice: Indice, respondidas: Record<string, 
 export function simularMeta(indice: Indice, respondidas: Record<string, RegistroMinimo>, dataProva: string, intensidade: Intensidade, folgas: number[]): number {
   const base = respondidasNoAcervo(indice, respondidas)
   return calcularPlano(indice, respondidas, { data_prova: dataProva, intensidade, folgas, prova: '', base_respondidas: base, criado_em: new Date().toISOString() }).metaDiaria
+}
+
+/**
+ * Por tema do acervo, os assuntos mais cobrados (os que caem muito ou com
+ * frequência) que ainda têm questão por fazer, do mais para o menos cobrado.
+ */
+export function focosQueFaltam(indice: Indice, respondidas: Record<string, unknown>, maximo = 3): Map<string, string[]> {
+  const porTema = new Map<string, Array<{ nome: string; nivel: Nivel }>>()
+  for (const area of AREAS) {
+    for (const foco of area.focos) {
+      if (foco.nivel < 3) continue
+      if (!idsDoFoco(indice, area, foco).some((id) => !respondidas[id])) continue
+      const lista = porTema.get(area.slug) ?? []
+      if (!lista.some((f) => f.nome === foco.nome)) lista.push({ nome: foco.nome, nivel: foco.nivel })
+      porTema.set(area.slug, lista)
+    }
+  }
+  const resultado = new Map<string, string[]>()
+  for (const [slug, lista] of porTema) resultado.set(slug, lista.sort((a, b) => b.nivel - a.nivel).slice(0, maximo).map((f) => f.nome))
+  return resultado
+}
+
+/**
+ * As questões de hoje dentro de um tema: só as que ainda não foram feitas,
+ * começando pelos assuntos que mais caem (sorteadas dentro de cada nível).
+ */
+export function idsDoDia(indice: Indice, slug: string, respondidas: Record<string, unknown>, n: number, semente: number): string[] {
+  const tema = indice.temas.findIndex((t) => t.slug === slug)
+  if (tema < 0) return []
+  const niveis = nivelPorQuestao(indice)
+  const livres = indice.questoes.filter((q) => q.t === tema && !q.dup && q.an !== 1 && !respondidas[q.id]).map((q) => q.id)
+  const porNivel = [4, 3, 2, 1, 0].map((nivel) => embaralhar(livres.filter((id) => (niveis.get(id) ?? 0) === nivel), semente))
+  return porNivel.flat().slice(0, Math.max(0, n))
 }

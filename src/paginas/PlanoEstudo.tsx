@@ -3,12 +3,10 @@ import { chamarRpc, codigoErro } from '../servicos/supabase'
 import { usarPremium } from '../conta/premium'
 import { usarIndice } from '../dados/usarIndice'
 import { FILTROS_VAZIOS } from '../dados/tipos'
-import { montarSessao } from '../dados/acervo'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { usarSessao } from '../estado/sessao'
-import { usarContextoLocal } from '../estado/usarContextoLocal'
-import { calcularPlano, dataLocal, respondidasNoAcervo, ROTULO_INTENSIDADE, simularMeta, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { calcularPlano, dataLocal, idsDoDia, respondidasNoAcervo, ROTULO_INTENSIDADE, simularMeta, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
 import { Carregando } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { ConvitePremium, SeloAssinante } from '../componentes/Premium'
@@ -28,7 +26,6 @@ export function PlanoEstudo() {
   const { premium, logado, carregado } = usarPremium()
   const { indice } = usarIndice()
   const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
-  const { contexto } = usarContextoLocal('')
   const { sessao, iniciar } = usarSessao()
   const [plano, definirPlano] = useState<PlanoSalvo | null | undefined>(undefined)
   const [editando, definirEditando] = useState(false)
@@ -52,13 +49,13 @@ export function PlanoEstudo() {
         <section className="pe-heroi pe-heroi--convite">
           <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> Plano até a prova</p>
           <h1>Saiba exatamente o que estudar até o dia da prova</h1>
-          <p>Você informa a data do TEOT. O OrtoQuestões monta a meta de cada dia, distribui os temas nas semanas que faltam e reforça os seus pontos fracos.</p>
+          <p>Você informa a data do TEOT. O OrtoQuestões monta a meta de cada dia, distribui os temas nas semanas que faltam, começa pelos assuntos que mais caem na prova e reforça os seus pontos fracos.</p>
         </section>
         <ConvitePremium
           icone="rota"
           titulo="Chega de decidir o que estudar"
           texto={<p>O plano se ajusta sozinho todo dia: se você atrasar, a meta sobe um pouco; se adiantar, ela alivia. E mostra se você está à frente ou atrás do ritmo.</p>}
-          itens={['Meta diária calculada até a prova', 'Temas distribuídos semana a semana', 'Reforço automático nos temas fracos', 'Última semana reservada para a reta final']}
+          itens={['Meta diária calculada até a prova', 'Prioridade para os temas que mais caem', 'Reforço automático nos temas fracos', 'Última semana reservada para a reta final']}
         />
       </div>
     )
@@ -69,7 +66,7 @@ export function PlanoEstudo() {
     if (!indice || !calculo?.hoje) return
     if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
     const filtros = { ...FILTROS_VAZIOS, temas: [calculo.hoje.slug], situacao: 'naoRespondidas' as const, embaralhar: true, limite: calculo.hoje.n }
-    iniciar(filtros, montarSessao(indice, filtros, Date.now(), contexto))
+    iniciar(filtros, idsDoDia(indice, calculo.hoje.slug, respondidas, calculo.hoje.n, Date.now()))
     navegar('/sessao')
   }
 
@@ -110,7 +107,7 @@ export function PlanoEstudo() {
           {calculo.naRetaFinal ? (
             <><h2>Semana da reta final</h2><p className="texto-2">Nada de conteúdo novo: refaça os erros e as marcadas com dúvida, e faça um simulado cronometrado.</p></>
           ) : calculo.hoje ? (
-            <><h2>{calculo.hoje.n} questões de {calculo.hoje.nome}</h2><p className="texto-2">Questões que você ainda não fez. Depois, passe pela revisão do dia.</p></>
+            <><h2>{calculo.hoje.n} questões de {calculo.hoje.nome}</h2><p className="texto-2">{calculo.hoje.focos.length ? <>Começando pelo que mais cai: {calculo.hoje.focos.join(', ')}. </> : 'Questões que você ainda não fez. '}Depois, passe pela revisão do dia.</p></>
           ) : calculo.restante === 0 ? (
             <><h2>Você cumpriu o plano inteiro</h2><p className="texto-2">Mantenha a revisão em dia e faça o Simulado Nacional do mês.</p></>
           ) : (
@@ -149,6 +146,12 @@ export function PlanoEstudo() {
         </section>
       </div>
 
+      <a className="pe-incidencia" href={href('/temas-que-mais-caem')}>
+        <span className="pe-incidencia__icone" aria-hidden="true"><Icone nome="fogo" tamanho={20} /></span>
+        <span><strong>O plano segue os temas que mais caem</strong><small>As áreas que mais caem ganham mais espaço, e cada dia começa pelos assuntos mais cobrados. Veja o ranking completo.</small></span>
+        <Icone nome="direita" tamanho={18} />
+      </a>
+
       <section className="cartao cartao__corpo pe-semanas" aria-labelledby="pe-semanas-titulo">
         <header className="pe-semanas__cabeca">
           <h2 id="pe-semanas-titulo">Semana a semana</h2>
@@ -159,7 +162,8 @@ export function PlanoEstudo() {
             <li key={i} className={'pe-semana' + (s.atual ? ' pe-semana--atual' : '')}>
               <span className="pe-semana__data">{curta(s.inicio)} – {curta(s.fim)}{s.atual && <em>esta semana</em>}</span>
               <div className="pe-semana__temas">
-                {s.temas.length ? s.temas.map((t) => <span key={t.slug} className="pe-chip">{t.nome}<b className="numerico">{t.n}</b></span>) : <span className="texto-2">Folga do plano: revisão e questões livres.</span>}
+                {s.temas.length ? s.temas.map((t) => <span key={t.slug} className="pe-chip" title={t.focos.length ? `Foco: ${t.focos.join(', ')}` : undefined}>{t.nome}<b className="numerico">{t.n}</b></span>) : <span className="texto-2">Folga do plano: revisão e questões livres.</span>}
+                {s.atual && s.temas[0]?.focos.length > 0 && <span className="pe-semana__foco"><Icone nome="fogo" tamanho={13} /> Foco: {s.temas.flatMap((t) => t.focos.slice(0, 2)).slice(0, 4).join(' · ')}</span>}
               </div>
               <span className="pe-semana__total numerico">{s.total}</span>
             </li>
@@ -218,7 +222,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar }: {
       <section className="pe-heroi pe-heroi--convite">
         <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> Plano até a prova</p>
         <h1>{atual ? 'Ajustar o plano' : 'Monte seu plano até a prova'}</h1>
-        <p>Três perguntas e o OrtoQuestões faz o resto: meta do dia, temas por semana e reforço nos pontos fracos.</p>
+        <p>Três perguntas e o OrtoQuestões faz o resto: meta do dia, temas por semana na ordem do que mais cai e reforço nos pontos fracos.</p>
       </section>
       <section className="cartao cartao__corpo pe-form">
         <div className="pe-form__passo">
