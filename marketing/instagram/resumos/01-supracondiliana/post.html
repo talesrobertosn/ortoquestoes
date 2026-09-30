@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Carrossel de feed (1080×1350) em folha de caderno: resumo de estudo sobre a fratura
+     supracondiliana do úmero na criança. Gerar: node marketing/instagram/gerar.mjs <este arquivo> -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+:root {
+  --papel: #fffdf6; --linha: rgba(74, 128, 196, .28); --margem: rgba(214, 70, 70, .55);
+  --tinta: #16211f; --tinta-2: #5a5d58; --caneta: #1f4f9e; --vermelho: #c8412f;
+  --verde: #0f4f49; --verde-2: #14655e; --ouro: #e0a72e; --ouro-2: #f7d57f; --postit: #fde68a;
+}
+* { box-sizing: border-box; margin: 0; }
+body { background: #555; font-family: Inter, sans-serif; color: var(--tinta); }
+
+.slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; margin-bottom: 40px;
+  background:
+    radial-gradient(ellipse at 60% 40%, transparent 55%, rgba(120, 100, 60, .10)),
+    repeating-linear-gradient(180deg, transparent 0 62px, var(--linha) 62px 64px),
+    var(--papel); }
+.slide::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 150px; background: var(--papel); }
+.slide::after { content: ''; position: absolute; top: 0; bottom: 0; left: 176px; width: 12px;
+  border-left: 3px solid var(--margem); border-right: 2px solid var(--margem); opacity: .9; }
+.espiral { position: absolute; left: 0; top: 0; bottom: 0; width: 120px; z-index: 5; }
+.espiral i { position: absolute; left: 44px; width: 30px; height: 30px; border-radius: 50%; background: #2f3431; box-shadow: inset 0 3px 5px rgba(0,0,0,.6); }
+.espiral b { position: absolute; left: -6px; width: 72px; height: 22px; border-radius: 12px;
+  background: linear-gradient(180deg, #f4f5f6, #9da3a8 45%, #e6e8ea 60%, #7d8388); box-shadow: 0 3px 4px rgba(0,0,0,.28); transform: rotate(-14deg); }
+
+.topo { position: absolute; top: 60px; left: 230px; right: 70px; display: flex; justify-content: space-between; align-items: center; z-index: 2; }
+.marca { display: flex; align-items: center; gap: 12px; font-family: Jakarta; font-size: 32px; }
+.marca svg { width: 40px; height: 40px; } .marca b { font-weight: 800; }
+.pagina { font: 700 40px Caveat; color: var(--tinta-2); }
+.conteudo { position: absolute; left: 230px; right: 70px; top: 180px; z-index: 2; }
+h1 { font: 800 92px/1 Jakarta; letter-spacing: -.035em; text-wrap: balance; }
+h2 { font: 800 66px/1.04 Jakarta; letter-spacing: -.03em; text-wrap: balance; }
+.marcador { background: linear-gradient(transparent 55%, var(--ouro-2) 55%, var(--ouro-2) 92%, transparent 92%); padding: 0 6px; margin: 0 -6px; }
+.sub { font-size: 34px; line-height: 1.45; color: var(--tinta-2); margin-top: 24px; text-wrap: pretty; }
+.sub b { color: var(--tinta); }
+.mao { font-family: Caveat; font-weight: 700; color: var(--caneta); line-height: 1.05; }
+.verm { color: var(--vermelho); }
+.fita { position: absolute; width: 160px; height: 48px; background: rgba(233, 214, 160, .72); box-shadow: 0 2px 4px rgba(0,0,0,.08); z-index: 4; }
+.postit { position: absolute; padding: 30px 30px; background: var(--postit); box-shadow: 0 20px 34px rgba(120, 90, 0, .25); z-index: 4; font: 700 44px/1.05 Caveat; color: #5b3d00; }
+.etiqueta-prova { display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; border-radius: 999px; background: var(--verde); color: var(--ouro-2); font: 800 22px Jakarta; letter-spacing: .08em; text-transform: uppercase; }
+.desenho path, .desenho circle, .desenho line { fill: none; stroke: var(--tinta); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+.desenho .guia { stroke: var(--vermelho); stroke-dasharray: 14 12; stroke-width: 5; }
+.desenho .osso { fill: #fff; }
+.desenho .azul { stroke: var(--caneta); }
+
+/* cartões de anotação */
+.nota { background: rgba(255,255,255,.93); border-radius: 24px; box-shadow: 0 14px 30px rgba(20,32,30,.08); padding: 28px 32px; }
+.nota h3 { font: 800 38px/1.1 Jakarta; letter-spacing: -.02em; display: flex; align-items: center; gap: 16px; }
+.nota p { font-size: 29px; line-height: 1.42; color: var(--tinta-2); margin-top: 10px; }
+.nota p b { color: var(--tinta); }
+.tipo { display: grid; grid-template-columns: 170px 1fr; gap: 26px; align-items: center; }
+.tipo + .tipo { margin-top: 18px; }
+.num-tipo { font: 700 58px/1 Caveat; white-space: nowrap; color: var(--vermelho); }
+
+.grade { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 34px; }
+.mao-card { text-align: center; padding: 26px 20px; }
+.mao-card .gesto { font: 700 58px/1 Caveat; color: var(--caneta); }
+.mao-card strong { display: block; font: 800 34px Jakarta; margin-top: 10px; }
+.mao-card span { display: block; font-size: 25px; color: var(--tinta-2); margin-top: 6px; line-height: 1.35; }
+
+.cta { position: absolute; left: 230px; right: 70px; border-radius: 30px; padding: 46px 48px; background: var(--verde); color: #fff; box-shadow: 0 30px 60px rgba(15,79,73,.3); z-index: 3; }
+.cta p { font-size: 32px; line-height: 1.42; color: rgba(255,255,255,.85); }
+.cta strong { color: var(--ouro-2); }
+.cta .site { display: inline-block; margin-top: 22px; padding: 18px 30px; border-radius: 16px; background: #fff; color: var(--verde); font: 800 34px Jakarta; }
+</style></head><body>
+<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9.6" stroke="currentColor" stroke-width="3.3"/><path d="M14.37 16.63 16.63 14.37 24.63 22.37 26.2 26.2 22.37 24.63Z" fill="currentColor"/></svg></template>
+
+<!-- 1. Capa -->
+<section class="slide" id="s1">
+  <div class="topo"><div class="marca"></div><span class="pagina">resumo de caderno</span></div>
+  <div class="conteudo">
+    <span class="etiqueta-prova">Cai muito · trauma pediátrico</span>
+    <h1 style="margin-top: 34px">Fratura <span class="marcador">supracondiliana</span> do úmero na criança</h1>
+    <p class="sub">A cola que eu faria antes da prova: <b>Gartland, raio X, nervos, pulso</b> e a complicação que sempre cai.</p>
+  </div>
+  <div class="fita" style="left: 330px; top: 812px; transform: rotate(-5deg)"></div>
+  <svg class="desenho" style="position: absolute; left: 230px; top: 830px; z-index: 3" width="400" height="470" viewBox="0 0 400 470">
+    <rect x="6" y="6" width="388" height="458" rx="26" fill="#fff" stroke="none" style="filter: drop-shadow(0 18px 30px rgba(20,32,30,.14))"/>
+    <!-- úmero distal em perfil: posterior à esquerda, anterior à direita -->
+    <path class="osso" d="M140 36 L140 230 C 138 280, 128 318, 150 350 C 168 376, 196 380, 214 366 L 232 300 C 240 270, 250 250, 250 230 L250 36"/>
+    <!-- a "gota" (fossas olecraniana e coronoide) -->
+    <path d="M188 258 C 166 286, 166 324, 186 338 C 206 326, 210 290, 188 258 Z"/>
+    <!-- capítulo, à frente -->
+    <circle class="osso" cx="262" cy="352" r="44"/>
+    <!-- linha umeral anterior -->
+    <line class="guia" x1="250" y1="40" x2="266" y2="440"/>
+  </svg>
+  <p class="mao" style="position: absolute; left: 660px; top: 900px; font-size: 50px; transform: rotate(-4deg); z-index: 4; width: 340px">linha umeral anterior<br><span style="color: var(--tinta-2); font-size: 42px">tem que cruzar o terço médio do capítulo</span></p>
+  <svg class="seta" style="position: absolute; left: 560px; top: 1110px; z-index: 4; color: var(--caneta)" width="160" height="90" viewBox="0 0 160 90"><path d="M150 12 C 110 20, 70 50, 22 72 M44 56 L22 72 L48 84" style="fill: none; stroke: currentColor; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round"/></svg>
+  <p class="mao" style="position: absolute; left: 660px; top: 1190px; font-size: 44px; transform: rotate(-4deg); z-index: 4; color: var(--vermelho)">passou à frente?<br>desviou</p>
+</section>
+
+<!-- 2. Gartland -->
+<section class="slide" id="s2">
+  <div class="topo"><div class="marca"></div><span class="pagina">2/6</span></div>
+  <div class="conteudo">
+    <h2>Gartland <span class="marcador">(tipo extensão)</span></h2>
+    <p class="sub" style="margin-top: 14px">É o tipo de <b>95 a 98%</b> dos casos. Flexão é rara.</p>
+    <div class="nota" style="margin-top: 30px">
+      <div class="tipo"><span class="num-tipo">Tipo I</span><div><h3>Sem desvio</h3><p>Às vezes só o <b>coxim gorduroso posterior</b>. Gesso em flexão, cerca de 3 semanas.</p></div></div>
+      <div class="tipo"><span class="num-tipo">Tipo II</span><div><h3>Cortical posterior íntegra</h3><p>A linha umeral anterior passa <b>à frente</b> do capítulo. IIB tem rotação: fixar.</p></div></div>
+      <div class="tipo"><span class="num-tipo">Tipo III</span><div><h3>Desvio completo</h3><p>Sem contato entre as corticais. <b>Redução fechada e fios percutâneos.</b></p></div></div>
+      <div class="tipo"><span class="num-tipo">Tipo IV</span><div><h3>Instável em tudo</h3><p>Instável em flexão e em extensão. Visto <b>na hora da redução</b>, sob fluoroscopia.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Raio X -->
+<section class="slide" id="s3">
+  <div class="topo"><div class="marca"></div><span class="pagina">3/6</span></div>
+  <div class="conteudo">
+    <h2>No raio X, <span class="marcador">olhe três coisas</span></h2>
+    <div class="nota" style="margin-top: 36px"><h3><span class="num-tipo" style="font-size: 56px">1</span> Linha umeral anterior</h3><p>No perfil, cruza o <b>terço médio do capítulo</b>. Se passa à frente dele, o fragmento distal foi para trás.</p></div>
+    <div class="nota" style="margin-top: 20px"><h3><span class="num-tipo" style="font-size: 56px">2</span> Coxim gorduroso posterior</h3><p>Visível no perfil = derrame articular. Na criança, pense em <b>fratura oculta</b> até provar o contrário.</p></div>
+    <div class="nota" style="margin-top: 20px"><h3><span class="num-tipo" style="font-size: 56px">3</span> Ângulo de Baumann</h3><p>No AP, avalia o alinhamento em <b>varo ou valgo</b>. Compare com o outro cotovelo.</p></div>
+  </div>
+  <div class="postit" style="right: 60px; top: 1110px; transform: rotate(4deg); width: 330px">perfil verdadeiro, senão engana</div>
+</section>
+
+<!-- 4. Nervos: pedra, papel, tesoura, OK -->
+<section class="slide" id="s4">
+  <div class="topo"><div class="marca"></div><span class="pagina">4/6</span></div>
+  <div class="conteudo">
+    <h2>Exame dos nervos: <span class="marcador">pedra, papel, tesoura e OK</span></h2>
+    <div class="grade">
+      <div class="nota mao-card"><div class="gesto">pedra</div><strong>Mediano</strong><span>fechar a mão</span></div>
+      <div class="nota mao-card"><div class="gesto">papel</div><strong>Radial</strong><span>abrir e estender punho e dedos</span></div>
+      <div class="nota mao-card"><div class="gesto">tesoura</div><strong>Ulnar</strong><span>abrir e cruzar os dedos</span></div>
+      <div class="nota mao-card" style="outline: 5px solid var(--vermelho); outline-offset: -5px"><div class="gesto verm">OK</div><strong>Interósseo anterior</strong><span>pinça de ponta: polegar e indicador</span></div>
+    </div>
+    <div class="nota" style="margin-top: 22px">
+      <p style="margin: 0"><b>Mais lesado na extensão:</b> interósseo anterior. <b>Desvio posteromedial:</b> radial. <b>Tipo flexão</b> e <b>fio medial</b>: ulnar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Pulso e complicações -->
+<section class="slide" id="s5">
+  <div class="topo"><div class="marca"></div><span class="pagina">5/6</span></div>
+  <div class="conteudo">
+    <h2>Sem pulso: <span class="marcador">olhe a cor da mão</span></h2>
+    <div class="nota" style="margin-top: 32px"><h3>Rosada e sem pulso</h3><p>Reduzir e fixar com urgência. Se continuar <b>rosada e perfundida</b>, observar internado.</p></div>
+    <div class="nota" style="margin-top: 20px; border: 4px solid var(--vermelho)"><h3 class="verm">Pálida e sem pulso</h3><p>Reduzir já. Se continuar <b>pálida depois da redução</b>, explorar a artéria braquial.</p></div>
+    <h2 style="margin-top: 50px; font-size: 54px">E as que sempre caem</h2>
+    <div class="nota" style="margin-top: 20px"><p style="margin: 0"><b>Cúbito varo</b> (deformidade em "coronha de fuzil"): a complicação tardia mais comum. Vem da <b>consolidação viciosa</b>, não de lesão da fise.</p></div>
+    <div class="nota" style="margin-top: 16px"><p style="margin: 0"><b>Síndrome compartimental</b> do antebraço: dor ao estender os dedos passivamente. Se passa, vira <b>contratura de Volkmann</b>.</p></div>
+  </div>
+</section>
+
+<!-- 6. Chamada -->
+<section class="slide" id="s6">
+  <div class="topo"><div class="marca"></div><span class="pagina">6/6</span></div>
+  <div class="conteudo">
+    <h1>Agora <span class="marcador">treine.</span></h1>
+    <p class="sub">Resumo ajuda, mas o que fixa é <b>errar a questão antes da prova</b>, e não na prova.</p>
+  </div>
+  <div class="postit" style="left: 600px; top: 520px; transform: rotate(-4deg); width: 360px">salva este post pra revisar depois</div>
+  <div class="fita" style="left: 520px; top: 790px; transform: rotate(3deg)"></div>
+  <div class="cta" style="top: 810px">
+    <p>No OrtoQuestões, as questões de <strong>fratura do cotovelo na criança</strong> das provas anteriores do TEOT e do TARO, com comentário em cada alternativa.</p>
+    <span class="site">ortoquestoes.com.br</span>
+  </div>
+</section>
+
+<script>
+const s = document.getElementById('simbolo').innerHTML
+document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p><b>Orto</b>Questões</p>')
+document.querySelectorAll('.slide').forEach(st => {
+  const e = document.createElement('div'); e.className = 'espiral'
+  for (let y = 30; y < 1340; y += 70) e.insertAdjacentHTML('beforeend', `<i style="top:${y}px"></i><b style="top:${y + 2}px"></b>`)
+  st.prepend(e)
+})
+</script>
+</body></html>

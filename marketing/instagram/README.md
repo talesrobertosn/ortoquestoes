@@ -107,3 +107,15 @@ Outras candidatas: `pediatria-0102` (osteocondrose: Köhler), `pediatria-0194`
 > #ortopedia #TEOT #residenciamedica #ortopediapediatrica #traumatologia
 
 **Stories do Cronograma:** sem legenda; no último, figurinha de link para o site.
+
+## Resumos de caderno (feed, 1080×1350)
+
+Carrosséis de estudo no mesmo caderno pautado dos stories do Cronograma. Cada um em
+`resumos/NN-tema/post.html`, com a legenda em `LEGENDA.md`:
+
+```
+node marketing/instagram/gerar.mjs marketing/instagram/resumos/01-supracondiliana/post.html
+```
+
+- **01 Supracondiliana do úmero na criança** (pronto): Gartland, raio X, nervos (pedra, papel,
+  tesoura e OK), mão sem pulso, complicações e chamada para treinar.
