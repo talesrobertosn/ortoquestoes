@@ -4460,59 +4460,60 @@
   "conferido": false
  },
  "ombro-cotovelo-0463": {
-  "conceito": "### Prótese reversa do ombro\n- Indicações: artropatia do manguito, rupturas irreparáveis com pseudoparalisia, fraturas do idoso, revisão de artroplastia.\n- Contraindicações:\n  - **deltoide lesado** ou axilar paralisado (é o deltoide que eleva o braço);\n  - estoque ósseo insuficiente na glenoide para fixar a base;\n  - infecção ativa.\n- Em pacientes de **alta demanda** e jovens, cautela pela durabilidade.\n- Uma ==deficiência neurológica leve== que preserve o deltoide não impede o procedimento.\n\n> **Na prova:** reversa depende de ==deltoide funcionante== e de glenoide com osso.",
-  "correta": "**Deficiência neurológica leve.**",
   "incorretas": {
-   "A": "**Lesão do deltoide** contraindica a reversa.",
-   "B": "**Alta demanda** é contraindicação relativa.",
-   "D": "Glenoide **sem osso** impede fixar a base."
+   "A": "**Lesão importante do deltoide compromete o motor da reversa.** Nesse cenário, a prótese pode não produzir elevação ativa adequada.",
+   "B": "**Grande demanda funcional exige cautela.** Não é uma indicação da reversa; pode influenciar a escolha pela durabilidade e pelo perfil de complicações.",
+   "D": "**Falta de suporte glenoidal impede fixação convencional.** Defeitos passíveis de reconstrução são outra situação, mas a deficiência grave de estoque ósseo não é indicação por si só."
   },
+  "alerta": "O gabarito C é a melhor opção entre as oferecidas, mas deficiência neurológica leve, por si só, não é indicação de artroplastia reversa. A cirurgia precisa de outra indicação, como artropatia do manguito, e de função deltoidea suficiente. Além disso, perda óssea glenoidal nem sempre a inviabiliza, pois algumas deformidades podem ser reconstruídas.",
+  "conceito": "**Por que a prótese reversa depende do deltoide.** Ao inverter a geometria glenoumeral, a artroplastia melhora o braço de alavanca do deltoide e permite elevar o ombro mesmo com manguito insuficiente. Indicações incluem artropatia do manguito, certas rupturas irreparáveis com pseudoparalisia, fraturas complexas selecionadas e revisões. Se o deltoide ou o nervo axilar não funcionam de modo útil, esse mecanismo perde sua base.\n\n**O que precisa ser avaliado.** O componente glenoidal necessita de fixação óssea confiável; perda óssea importante pode exigir enxerto, componentes especiais ou outra estratégia. Pacientes de grande demanda funcional exigem conversa sobre desgaste e complicações, mas demanda isolada não define uma contraindicação absoluta. Uma alteração neurológica leve que preserve o deltoide não impede a operação quando há indicação ortopédica independente. Esse é o sentido limitado da alternativa C.",
+  "correta": "**C: deficiência neurológica leve, no contexto da banca.** Se o deltoide conserva função suficiente e existe uma indicação articular real, a alteração neurológica leve não exclui a prótese reversa.",
   "referencias": [
    "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 509 (referência indicada na prova TARO 2013, questão 72)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "ombro-cotovelo-0464": {
-  "conceito": "### Classificação de Bennett (instabilidade do bíceps)\n- **Tipo 1:** lesão intra-articular do subescapular; LCU medial íntegro.\n- **Tipo 2:** lesão da porção medial do LCU; subescapular íntegro.\n- **Tipo 3:** ==lesão do subescapular e da porção medial do ligamento coracoumeral==, com subluxação/luxação medial do bíceps.\n- **Tipo 4:** lesão da porção lateral do LCU, com bíceps anterior ao subescapular.\n- **Tipo 5:** lesão de todas as estruturas.\n\n> **Na prova:** subescapular + LCU medial = ==Bennett 3==.",
-  "correta": "**III.**",
   "incorretas": {
-   "A": "**II** tem subescapular íntegro.",
-   "C": "**IV** é lesão da porção **lateral** do LCU.",
-   "D": "**V** envolve todas as estruturas."
+   "A": "**Tipo II envolve a banda medial isoladamente.** O acréscimo da lesão do subescapular desloca a classificação para III.",
+   "C": "**Tipo IV envolve a banda lateral.** Associa-se a lesão da borda do subescapular e a outro padrão de deslocamento do bíceps.",
+   "D": "**Tipo V representa comprometimento amplo da polia.** É mais extenso do que a combinação medial descrita na pergunta."
   },
+  "conceito": "**A polia segura o bíceps.** A cabeça longa do bíceps muda de direção ao entrar no sulco bicipital. A banda medial do ligamento coracoumeral e fibras do subescapular formam parte importante da contenção nessa passagem. Quando ambas falham, o tendão pode deslocar-se medialmente para dentro da articulação. Essa combinação corresponde ao tipo III de Bennett.\n\n**Os cinco padrões.** No tipo I há lesão intra-articular do subescapular; no II, incompetência isolada da banda medial do coracoumeral; no III, ambas estão comprometidas. O IV envolve a banda lateral e a borda superior do subescapular, podendo deslocar o bíceps anteriormente ao tendão. O V representa lesão extensa dos componentes da polia. Reconhecer exatamente quais estruturas estão rompidas é mais seguro do que memorizar apenas o número.",
+  "correta": "**B: tipo III.** A combinação de lesão do subescapular com a banda medial do coracoumeral define esse grau na classificação de Bennett.",
   "referencias": [
    "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 2944 (referência indicada na prova TARO 2013, questão 81)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "ombro-cotovelo-0465": {
-  "conceito": "### Classificação de Mason (cabeça do rádio)\n- **I:** fratura sem desvio (menor que 2 mm).\n- **II:** ==fratura marginal (parcial) com desvio==.\n- **III:** cominutiva, envolvendo toda a cabeça.\n- **IV (Johnston):** associada a luxação do cotovelo.\n\n> **Na prova:** marginal desviada = ==Mason II==.",
-  "correta": "**II.**",
   "incorretas": {
-   "A": "**I** não tem desvio.",
-   "C": "**III** é cominutiva.",
-   "D": "**IV** tem luxação associada."
+   "A": "**Mason I não apresenta desvio significativo.** O fragmento marginal deslocado do enunciado supera essa categoria.",
+   "C": "**Mason III é cominutiva e mais extensa.** Não descreve apenas um setor marginal com desvio.",
+   "D": "**Mason IV exige luxação do cotovelo associada.** O enunciado não traz essa informação."
   },
+  "conceito": "**Mason descreve padrão e desvio.** A fratura tipo I da cabeça do rádio é fissura ou fragmento marginal sem desvio significativo. A tipo II é uma fratura de parte da superfície articular, classicamente um setor marginal com desvio. A tipo III é cominutiva e compromete a cabeça de forma mais extensa. Johnston acrescentou o tipo IV para fratura associada a luxação do cotovelo, que pode coexistir com diferentes desenhos do fragmento radial.\n\n**Por que classificar.** O número orienta a busca de bloqueio mecânico à rotação e de instabilidade do cotovelo, mas não decide sozinho a cirurgia. Uma tipo II sem bloqueio e com cotovelo estável pode seguir caminho diferente de uma tipo II com fragmento que impede o movimento. Na pergunta, “marginal” mais “desvio” são os elementos suficientes para escolher II.",
+  "correta": "**B: Mason II.** É a fratura marginal deslocada, envolvendo parte da cabeça radial.",
   "referencias": [
    "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 3419 (referência indicada na prova TARO 2013, questão 94)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "ombro-cotovelo-0466": {
-  "conceito": "### Uma vírgula que aponta para o tendão perdido\n\nQuando o ==subescapular== se rompe e retrai, a sua borda superolateral fica presa ao complexo formado pelo ligamento glenoumeral superior e pelo coracoumeral, a polia do bíceps. Visto pela artroscopia, esse remanescente tem o formato de uma vírgula, que desce até a borda do tendão retraído.\n\nO sinal tem valor prático: seguindo a vírgula, o cirurgião encontra o subescapular mesmo quando ele está escondido medialmente sob o **processo coracoide**, libera as aderências e traz o tendão de volta ao tubérculo menor. Rupturas do subescapular costumam acompanhar instabilidade medial da cabeça longa do bíceps.\n\n> **Na prova:** sinal da vírgula é marca de ruptura retraída do subescapular.",
-  "correta": "**Correta.** O sinal da vírgula é o remanescente da polia do bíceps preso à borda superolateral do subescapular retraído.",
   "incorretas": {
-   "A": "**Errada: tendão posterior.** O infraespinal não tem relação com a polia do bíceps que forma a vírgula.",
-   "B": "**Errada: não forma a vírgula.** As rupturas do supraespinal são as mais comuns, mas o sinal é do subescapular.",
-   "D": "**Errada: raramente se rompe.** O redondo menor é o tendão do manguito menos acometido."
+   "A": "**Infraespinal ocupa a parte posterior do manguito.** Não forma a polia anterior do bíceps responsável pela vírgula.",
+   "B": "**Supraespinal pode ter lesão associada.** A vírgula, porém, marca a borda do subescapular retraído, não uma ruptura isolada do supraespinal.",
+   "D": "**Redondo menor também é posterior.** Seu trajeto não produz o sinal artroscópico descrito na região da polia do bíceps."
   },
+  "conceito": "**Uma pista para achar o subescapular.** Numa ruptura retraída, o tendão do subescapular pode desaparecer da visão artroscópica habitual ao migrar medialmente. Um remanescente da polia do bíceps, formado sobretudo por fibras dos ligamentos coracoumeral e glenoumeral superior, permanece preso à borda superolateral do tendão e desenha uma vírgula. Seguir esse tecido ajuda a localizar o coto para liberá-lo e avaliar a possibilidade de reparo no tubérculo menor.\n\n**A polia e o bíceps devem ser examinados juntos.** A lesão do subescapular frequentemente compromete a contenção da cabeça longa do bíceps, que pode subluxar ou luxar medialmente. O sinal não indica uma ruptura isolada do supraespinal ou dos tendões posteriores do manguito; sua utilidade específica é apontar para o subescapular retraído.",
+  "correta": "**C: subescapular.** O sinal da vírgula é o tecido da polia preso à sua borda superolateral, visível mesmo quando o tendão está retraído.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 52"
   ],
-  "geradoEm": "2026-09-26",
+  "geradoEm": "2026-09-30",
   "conferido": false
  }
 }
