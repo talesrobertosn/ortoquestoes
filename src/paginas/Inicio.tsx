@@ -23,6 +23,7 @@ import { planoRevisao } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
 import { calcularStreak } from '../estado/streak'
 import { FUSO_DIA, chaveDia } from '../estado/limiteDiario'
+import '../estilos/paginas/Inicio.css'
 
 // A maior parte do acervo ainda não distingue TEOT de TARO (prova genérica
 // "TEOT/TARO"); enquanto isso não é resolvido, as três provas são somadas

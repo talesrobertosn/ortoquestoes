@@ -8,6 +8,7 @@ import { FILTROS_VAZIOS } from '../dados/tipos'
 import { navegar } from '../util/rotas'
 import { INTERVALOS } from '../estado/revisao'
 import { Icone, type NomeIcone } from '../componentes/Icone'
+import '../estilos/paginas/Revisao.css'
 
 const DIA = 86400000
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']

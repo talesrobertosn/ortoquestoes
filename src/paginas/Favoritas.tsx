@@ -8,6 +8,7 @@ import { usarFavoritos, usarSessao } from '../estado/sessao'
 import { usarEtiquetas } from '../estado/preferencias'
 import { href, navegar } from '../util/rotas'
 import { usarConta } from '../conta/ContextoConta'
+import '../estilos/paginas/Favoritas.css'
 
 /**
  * As favoritas precisavam de um lugar. A estrela existia em toda questão e

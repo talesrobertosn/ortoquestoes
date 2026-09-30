@@ -1,0 +1,55 @@
+/* Estilos usados só por TextoEditorial (e o que vem junto no mesmo pedaço do site).
+   Saíram do CSS global para não descer em toda página. */
+.texto-editorial { line-height: 1.72; }
+.texto-editorial p { margin-bottom: 0.85em; }
+.texto-editorial strong { color: var(--texto); font-weight: 700; }
+.referencias-comentario { margin-top: 1rem; padding-top: 0.75rem; border-top: var(--borda); color: var(--texto-2); font-size: var(--meta); }
+.referencias-comentario summary { cursor: pointer; font-weight: 650; color: var(--verdete); }
+.referencias-comentario ol { margin: 0.625rem 0 0; display: grid; gap: 0.4rem; }
+.texto-editorial { max-width: 68ch; line-height: 1.8; overflow-wrap: anywhere; }
+.texto-editorial p { margin: 0 0 1rem; white-space: pre-line; }
+.texto-editorial p:last-child { margin-bottom: 0; }
+.texto-editorial strong { font-weight: 750; color: var(--texto); }
+.texto-editorial ul { margin: 0 0 1rem; padding-left: 1.4rem; }
+.texto-editorial ul:last-child { margin-bottom: 0; }
+.texto-editorial li { margin-bottom: .5rem; }
+.texto-editorial li:last-child { margin-bottom: 0; }
+.texto-editorial li::marker { color: var(--verdete); }
+.pagina--compacta .texto-editorial { line-height: 1.55; }
+.cm .texto-editorial { max-width: none; font-size: 1.02rem; line-height: 1.72; }
+.cm .texto-editorial > p { margin: 0 0 0.8rem; }
+.cm .texto-editorial > :last-child { margin-bottom: 0.6rem; }
+.cm .texto-editorial strong { font-weight: 750; color: var(--texto); }
+.cm .texto-editorial ul, .cm .texto-editorial ol { margin: 0 0 0.9rem; padding-left: 1.25rem; display: grid; gap: 0.4rem; }
+.cm .texto-editorial li::marker { color: var(--verdete); font-weight: 800; }
+.te-titulo {
+  display: flex; align-items: center; gap: 0.5rem; margin: 1.35rem 0 0.55rem; font-size: 1.06rem; font-weight: 800; color: var(--texto); letter-spacing: -0.01em;
+}
+.te-titulo::before { content: ""; width: 0.35rem; height: 1.05rem; border-radius: 999px; background: var(--verdete); flex: 0 0 auto; }
+.texto-editorial > .te-titulo:first-child { margin-top: 0.15rem; }
+.te-destaque { padding: 0.05em 0.3em; border-radius: 0.3em; background: color-mix(in srgb, #f5df72 55%, transparent); color: inherit; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+:root[data-tema="escuro"] .te-destaque { background: color-mix(in srgb, #e0b862 22%, transparent); color: #f6dc93; box-shadow: inset 0 -1px 0 color-mix(in srgb, #e0b862 45%, transparent); }
+.te-nota {
+  position: relative; margin: 0.9rem 0 0.6rem; padding: 0.85rem 1rem 0.85rem 2.9rem; border-radius: 14px;
+  background: var(--ouro-veu); border: 1px solid color-mix(in srgb, var(--ouro) 35%, transparent);
+}
+.te-nota::before {
+  content: "!"; position: absolute; left: 0.85rem; top: 0.85rem; display: inline-flex; align-items: center; justify-content: center;
+  width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--ouro); color: #fff; font-weight: 900; font-size: 0.85rem;
+}
+.te-nota p { margin: 0; }
+.te-tabela { margin: 0.3rem 0 1rem; overflow-x: auto; border: 1px solid color-mix(in srgb, var(--verdete) 30%, transparent); border-radius: 12px; }
+.te-tabela table { width: 100%; border-collapse: collapse; font-size: 0.92em; line-height: 1.45; }
+.te-tabela th, .te-tabela td { padding: 0.5rem 0.7rem; text-align: left; vertical-align: top; border-bottom: 1px solid color-mix(in srgb, var(--verdete) 18%, transparent); overflow-wrap: normal; word-break: normal; }
+.te-tabela th { font-weight: 800; color: var(--verdete); background: color-mix(in srgb, var(--verdete) 8%, transparent); }
+.te-tabela tr:last-child td { border-bottom: 0; }
+.te-tabela td:first-child { font-weight: 650; }
+@media (max-width: 40rem) { .te-tabela table { font-size: 0.86em; } }
+@media (max-width: 40rem) { .te-tabela th, .te-tabela td { padding: 0.45rem 0.5rem; } }
+.te-nota p + p { margin-top: 0.4rem; }
+@media (max-width: 40rem) {
+  .cm .texto-editorial { font-size: 0.98rem; line-height: 1.65; }
+}
+@media (max-width: 40rem) {
+  .te-nota { padding-left: 2.6rem; }
+}

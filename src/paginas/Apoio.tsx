@@ -13,6 +13,7 @@ import { usarIndice } from '../dados/usarIndice'
 import { conquistaAtual, proximaConquista } from '../estado/conquistas'
 import { Medalha } from '../componentes/Medalha'
 import { chaveDia, inicioDia } from '../estado/planoRevisao'
+import '../estilos/paginas/Apoio.css'
 
 const BIBLIOGRAFIA = [
   "Campbell's Operative Orthopaedics",

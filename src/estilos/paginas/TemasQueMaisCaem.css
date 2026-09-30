@@ -1,0 +1,68 @@
+/* Estilos usados só por TemasQueMaisCaem (e o que vem junto no mesmo pedaço do site).
+   Saíram do CSS global para não descer em toda página. */
+.ti-heroi {
+  position: relative; overflow: hidden; isolation: isolate;
+  padding: clamp(1.5rem, 4.5vw, 2.75rem); border-radius: 24px; color: var(--sobre-heroi); box-shadow: var(--sombra-media);
+  background: radial-gradient(circle at 90% 8%, rgba(232, 120, 79, 0.32), transparent 45%), radial-gradient(circle at 70% 110%, rgba(232, 179, 79, 0.22), transparent 50%), var(--heroi);
+}
+.ti-heroi h1 { margin: 0 0 0.5rem; color: var(--sobre-heroi); font-size: clamp(1.9rem, 5vw, 2.9rem); letter-spacing: -0.02em; line-height: 1.05; max-width: 20ch; }
+.ti-heroi > p:not(.ti-heroi__selo) { margin: 0; max-width: 58ch; color: var(--sobre-heroi-2); }
+.ti-heroi__selo {
+  display: inline-flex; align-items: center; gap: 0.4rem; margin: 0 0 1rem; padding: 0.3rem 0.8rem; border-radius: 999px;
+  background: rgba(232, 120, 79, 0.2); border: 1px solid rgba(255, 196, 163, 0.4); color: #ffd6b8; font-size: var(--meta); font-weight: 700; letter-spacing: 0.03em;
+}
+.ti-heroi__legenda { list-style: none; margin: 1.25rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.ti-heroi__previa { display: inline-flex; align-items: center; gap: 0.4rem; margin: 1rem 0 0 !important; padding: 0.35rem 0.8rem; border-radius: 999px; background: var(--heroi-vidro); border: 1px solid var(--heroi-traco); font-size: var(--corpo-menor); color: #ffe3a3 !important; }
+.ti-degustacao { margin-top: 0.5rem; }
+.ti-area__falso { display: grid; grid-template-columns: 3rem minmax(0, 1fr); align-items: center; gap: 0.85rem; padding: 0.9rem 1.1rem; }
+.ti-area__guardado { display: flex; align-items: center; gap: 0.4rem; margin: 0; padding: 0.55rem 0.8rem; border-radius: 12px; background: var(--ouro-veu); color: var(--ouro-texto); font-size: var(--corpo-menor); font-weight: 650; }
+.ti-secao__cabeca { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; }
+.ti-secao__cabeca h2 { margin: 0 0 0.25rem; font-size: 1.25rem; }
+.ti-secao__cabeca p { margin: 0; }
+.ti-secao__cabeca--solta { padding: 0 0.25rem 0.75rem; }
+.ti-botao { min-height: 2.4rem; padding: 0.35rem 0.9rem; font-size: var(--corpo-menor); }
+.ti-top__lista { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: 0.5rem 1rem; }
+.ti-top__item { display: grid; grid-template-columns: 2.2rem minmax(0, 1fr) auto; align-items: center; gap: 0.7rem; padding: 0.55rem 0.6rem 0.55rem 0.5rem; border-radius: 14px; border: var(--borda); background: var(--superficie); }
+.ti-top__posicao { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 10px; font-weight: 850; background: var(--superficie-2); color: var(--texto-2); }
+.ti-top__item:nth-child(-n + 3) .ti-top__posicao { background: linear-gradient(135deg, #e8784f, #c2412f); color: #fff; }
+.ti-top__item:nth-child(n + 4):nth-child(-n + 10) .ti-top__posicao { background: #fdf0e3; color: #c05f14; }
+:root[data-tema="escuro"] .ti-top__item:nth-child(n + 4):nth-child(-n + 10) .ti-top__posicao { background: #37241a; color: #ffb67a; }
+.ti-top__nome { display: grid; min-width: 0; }
+.ti-top__nome strong { font-size: 0.95rem; line-height: 1.25; }
+.ti-top__nome small { color: var(--texto-2); font-size: var(--meta); }
+.ti-top__sem { font-size: var(--meta); color: var(--texto-2); }
+.ti-areas__lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+.ti-area { border-radius: var(--raio-grande); border: var(--borda); background: var(--superficie); box-shadow: var(--sombra-media); overflow: hidden; }
+.ti-area > summary { list-style: none; display: grid; grid-template-columns: 3rem minmax(0, 1fr) auto; align-items: center; gap: 0.85rem; padding: 0.9rem 1.1rem; cursor: pointer; min-height: 44px; }
+.ti-area > summary::-webkit-details-marker { display: none; }
+.ti-area > summary > svg { color: var(--texto-2); transition: transform 0.2s ease; }
+.ti-area[open] > summary > svg { transform: rotate(180deg); }
+.ti-area__posicao { font-size: 1.35rem; font-weight: 850; color: var(--texto-2); letter-spacing: -0.02em; }
+li:nth-child(-n + 3) > .ti-area .ti-area__posicao { color: #c2412f; }
+:root[data-tema="escuro"] li:nth-child(-n + 3) > .ti-area .ti-area__posicao { color: #ff9b85; }
+.ti-area__nome { display: grid; gap: 0.3rem; min-width: 0; }
+.ti-area__nome strong { font-size: 1.08rem; }
+.ti-area__nome small { color: var(--texto-2); font-size: var(--meta); }
+.ti-area__peso { display: block; height: 0.45rem; border-radius: 999px; background: var(--superficie-2); overflow: hidden; max-width: 24rem; }
+.ti-area__peso span { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #e8b34f, #e8784f 60%, #c2412f); }
+.ti-area__corpo { display: grid; gap: 0.9rem; padding: 0.25rem 1.1rem 1.1rem 4.95rem; }
+.ti-grupo { display: grid; gap: 0.45rem; justify-items: start; }
+.ti-grupo__focos { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.ti-foco { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 2.25rem; padding: 0.3rem 0.75rem; border-radius: 999px; border: var(--borda); background: var(--superficie-2); color: var(--texto); font: inherit; font-size: var(--corpo-menor); font-weight: 650; cursor: pointer; text-align: left; transition: border-color 0.15s ease, background 0.15s ease; }
+.ti-foco small { padding: 0.05rem 0.4rem; border-radius: 999px; background: var(--superficie); color: var(--texto-2); font-size: 0.72rem; font-weight: 750; }
+.ti-foco:hover { border-color: var(--verdete); background: var(--verdete-veu); }
+.ti-foco--feito { color: var(--acerto); }
+.ti-foco--feito svg { flex: none; }
+.ti-foco--sem { cursor: default; color: var(--texto-2); background: transparent; border-style: dashed; }
+.ti-foco--sem:hover { border-color: var(--traco); background: transparent; }
+.ti-area__treinar { justify-self: start; }
+.ti-nota { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); max-width: 72ch; }
+@media (max-width: 40rem) {
+  .ti-area > summary { grid-template-columns: 2.2rem minmax(0, 1fr) auto; gap: 0.6rem; padding: 0.85rem 0.9rem; }
+}
+@media (max-width: 40rem) {
+  .ti-area__corpo { padding: 0.25rem 0.9rem 1rem; }
+}
+@media (max-width: 40rem) {
+  .ti-secao__cabeca .pg-selo { display: none; }
+}

@@ -10,6 +10,7 @@ import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href, navegar } from '../util/rotas'
+import '../estilos/paginas/SimuladoNacional.css'
 
 const ROTULO_PRONTIDAO: Record<Prontidao, string> = { pronto: 'Pronto', caminho: 'No caminho', reforcar: 'Reforçar' }
 

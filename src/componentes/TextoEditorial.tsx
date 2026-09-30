@@ -1,4 +1,5 @@
 import { href } from '../util/rotas'
+import '../estilos/paginas/TextoEditorial.css'
 
 /** Negrito (**texto**) e destaque (==texto==) dentro de uma linha. */
 function formatarLinha(linha: string) {

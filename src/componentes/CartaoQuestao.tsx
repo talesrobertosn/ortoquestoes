@@ -15,6 +15,7 @@ import { usarComentarioIA } from '../dados/comentarios'
 import { usarIndice } from '../dados/usarIndice'
 import { RelatarErro } from './RelatarErro'
 import { ComoATurma } from './ComoATurma'
+import '../estilos/paginas/CartaoQuestao.css'
 
 interface Props {
   questao: Questao

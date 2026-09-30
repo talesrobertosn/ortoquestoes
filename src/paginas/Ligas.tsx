@@ -5,6 +5,7 @@ import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { ConvitePremium, Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href, navegar } from '../util/rotas'
+import '../estilos/paginas/Ligas.css'
 
 interface MinhaLiga { id: string; nome: string; codigo: string; sou_dono: boolean; membros: number; minha_posicao: number | null; lider: string | null }
 interface LinhaLiga { posicao: number; apelido: string; total: number; total_geral: number; eh_voce: boolean; eh_dono: boolean; membro: string | null }

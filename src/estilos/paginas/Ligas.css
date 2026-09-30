@@ -1,0 +1,33 @@
+/* Estilos usados só por Ligas (e o que vem junto no mesmo pedaço do site).
+   Saíram do CSS global para não descer em toda página. */
+.lg-heroi { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 22rem); gap: 1.5rem 2rem; align-items: end; }
+.lg-heroi__texto > p:not(.lg-heroi__selo) { margin: 0; max-width: 50ch; }
+.lg-criar, .lg-convidar { display: grid; gap: 0.6rem; padding: 1.1rem; border-radius: 18px; background: var(--heroi-vidro); border: 1px solid var(--heroi-traco); }
+.lg-criar .campo { color: var(--sobre-heroi); }
+.lg-convidar__rotulo { color: #ffe3a3; font-weight: 750; font-size: var(--corpo-menor); }
+.lg-convidar__acoes { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.lg-convidar small { color: var(--sobre-heroi-2); }
+.botao.lg-convidar__copiar { background: transparent; color: var(--sobre-heroi); border-color: var(--heroi-traco); }
+.botao.lg-convidar__copiar:hover { background: rgba(255, 255, 255, 0.1); }
+@media (max-width: 46rem) { .lg-heroi { grid-template-columns: 1fr; } }
+.lg-cartoes { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+.lg-cartao { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; gap: 0.9rem; align-items: center; padding: 1rem 1.1rem; border-radius: var(--raio-grande); background: var(--superficie); border: var(--borda); box-shadow: var(--sombra-media); color: var(--texto); text-decoration: none; transition: border-color 0.15s ease, transform 0.15s ease; }
+.lg-cartao:hover { border-color: var(--verdete); transform: translateY(-1px); }
+.lg-cartao__avatar, .lg-convite__avatar { display: inline-flex; align-items: center; justify-content: center; width: 3rem; height: 3rem; border-radius: 14px; background: linear-gradient(135deg, #0b3a35, #14655e); color: #ffe3a3; font-weight: 800; }
+.lg-cartao__corpo { display: grid; gap: 0.15rem; min-width: 0; }
+.lg-cartao__corpo strong { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+.lg-cartao__corpo small { color: var(--texto-2); }
+.lg-cartao__posicao { display: grid; text-align: right; font-size: 1.4rem; font-weight: 800; color: var(--verdete); }
+.lg-cartao__posicao small { font-size: 0.7rem; font-weight: 600; color: var(--texto-2); }
+.lg-dono { display: inline-flex; padding: 0.05rem 0.45rem; border-radius: 999px; background: var(--ouro-veu); color: var(--ouro-texto); font-size: 0.68rem; font-weight: 750; margin-left: 0.35rem; }
+.lg-convite { display: grid; justify-items: center; text-align: center; gap: 0.4rem; }
+.lg-convite__avatar { width: 4.5rem; height: 4.5rem; border-radius: 22px; font-size: 1.4rem; background: rgba(255, 255, 255, 0.12); border: 1px solid var(--heroi-traco); }
+.lg-convite .botao { margin-top: 0.6rem; }
+.lg-convite__erro { color: #ffd4cf !important; margin: 0; }
+.lg-lista .lg-linha--1 .rk-linha__posicao { color: var(--ouro); }
+.lg-lista .lg-linha--2 .rk-linha__posicao { color: var(--prata); }
+.lg-lista .lg-linha--3 .rk-linha__posicao { color: var(--bronze); }
+.lg-remover { display: inline-flex; align-items: center; justify-content: center; width: 1.6rem; height: 1.6rem; margin-left: 0.35rem; vertical-align: middle; border-radius: 50%; border: 1px solid var(--traco); background: var(--superficie); color: var(--texto-2); cursor: pointer; }
+.lg-remover:hover { background: var(--erro-veu); color: var(--erro); }
+.lg-rodape p { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin: 0 0 0.75rem; }
+.lg-sair { color: var(--erro); margin-left: auto; }

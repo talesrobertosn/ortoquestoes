@@ -2,6 +2,9 @@ import { ProvedorConta } from './conta/ContextoConta'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { App } from './App'
+// CSS global: só o que várias páginas usam. O que é de uma página só mora em
+// estilos/paginas/ e é importado pela própria página, para descer junto com
+// ela e não em toda visita (a inicial usava menos de 10% do CSS antigo).
 import './estilos/tokens.css'
 import './estilos/base.css'
 import './estilos/premium.css'

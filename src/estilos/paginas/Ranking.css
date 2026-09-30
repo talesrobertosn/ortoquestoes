@@ -1,0 +1,170 @@
+/* Estilos usados só por Ranking (e o que vem junto no mesmo pedaço do site).
+   Saíram do CSS global para não descer em toda página. */
+.rk-heroi {
+  position: relative; overflow: hidden; isolation: isolate;
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; align-items: center;
+  padding: clamp(1.75rem, 4.5vw, 3rem);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(232, 179, 79, 0.28), transparent 45%),
+    var(--heroi);
+  color: var(--sobre-heroi);
+  box-shadow: var(--sombra-media);
+}
+.rk-heroi::before {
+  content: ""; position: absolute; z-index: -1;
+  width: 30rem; height: 30rem; left: -12rem; bottom: -20rem; border-radius: 50%;
+  border: 1px solid var(--heroi-traco);
+  box-shadow: 0 0 0 3rem rgba(255, 255, 255, 0.02), 0 0 0 6rem rgba(255, 255, 255, 0.015);
+}
+.rk-heroi__selo {
+  display: inline-flex; align-items: center; gap: 0.4rem; margin: 0 0 1rem;
+  padding: 0.3rem 0.8rem; border-radius: 999px;
+  background: rgba(232, 179, 79, 0.18); border: 1px solid rgba(255, 227, 163, 0.35);
+  color: #ffe3a3; font-size: var(--meta); font-weight: 700; letter-spacing: 0.03em;
+}
+.rk-heroi h1 { margin: 0 0 0.5rem; color: var(--sobre-heroi); font-size: clamp(2.2rem, 5vw, 3.2rem); letter-spacing: -0.02em; line-height: 1.05; }
+.rk-heroi__texto p:not(.rk-heroi__selo) { margin: 0; max-width: 46ch; color: var(--sobre-heroi-2); }
+.rk-heroi__cartao {
+  display: grid; justify-items: center; gap: 0.35rem; text-align: center;
+  min-width: 15rem; padding: 1.25rem 1.5rem;
+  border-radius: 18px; background: var(--heroi-vidro); border: 1px solid var(--heroi-traco);
+  backdrop-filter: blur(6px);
+}
+.rk-heroi__rotulo { color: var(--sobre-heroi-2); font-size: var(--corpo-menor); }
+.rk-heroi__posicao { font-size: 3rem; line-height: 1; font-weight: 800; color: #ffe3a3; letter-spacing: -0.02em; }
+.rk-heroi__cartao .botao { width: 100%; margin-top: 0.4rem; }
+.rk-heroi__link { color: var(--sobre-heroi-2); font-size: var(--meta); }
+.rk-heroi__link:hover { color: var(--sobre-heroi); }
+@media (max-width: 46rem) { .rk-heroi { grid-template-columns: 1fr; } }
+@media (max-width: 46rem) { .rk-heroi__cartao { min-width: 0; } }
+.rk-podio {
+  list-style: none; margin: 0.5rem 0 0; padding: 0;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; align-items: end;
+}
+.rk-podio__lugar {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center; gap: 0.35rem; text-align: center;
+  padding: 1.25rem 0.75rem 0;
+  border-radius: 20px 20px 14px 14px;
+  background: var(--superficie); border: var(--borda); box-shadow: var(--sombra-media);
+  overflow: hidden;
+}
+.rk-podio__lugar--1 { padding-top: 1.75rem; border-color: color-mix(in srgb, var(--ouro) 50%, var(--traco)); background: linear-gradient(180deg, var(--ouro-veu), var(--superficie) 70%); }
+.rk-podio__lugar--2 { background: linear-gradient(180deg, var(--prata-veu), var(--superficie) 70%); }
+.rk-podio__lugar--3 { background: linear-gradient(180deg, var(--bronze-veu), var(--superficie) 70%); }
+.rk-podio__avatar {
+  position: relative;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 4rem; height: 4rem; border-radius: 50%;
+  font-weight: 800; font-size: 1.2rem; color: #fff;
+  background: linear-gradient(135deg, #cfd8db, var(--prata));
+  box-shadow: 0 0 0 4px var(--superficie), 0 6px 16px rgba(18, 24, 26, 0.18);
+}
+.rk-podio__lugar--1 .rk-podio__avatar { width: 5rem; height: 5rem; font-size: 1.5rem; background: linear-gradient(135deg, #ffe3a3, var(--ouro)); color: #5c3f06; }
+.rk-podio__lugar--3 .rk-podio__avatar { background: linear-gradient(135deg, #f0c29b, var(--bronze)); }
+.rk-podio__posicao {
+  position: absolute; right: -4px; bottom: -4px;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: var(--grafite); color: var(--porcelana); font-size: 0.8rem; font-weight: 800;
+  border: 2px solid var(--superficie);
+}
+.rk-podio__nome { margin-top: 0.4rem; font-size: 1rem; line-height: 1.25; overflow-wrap: anywhere; }
+.rk-podio__total { color: var(--texto-2); font-size: var(--meta); }
+.rk-podio__total b { color: var(--texto); font-size: 1.1rem; }
+.rk-referencia { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: .35rem 1rem; color: var(--texto-2); font-size: var(--corpo-menor); }
+.rk-referencia > span { display: inline-flex; align-items: center; gap: .35rem; }
+.rk-referencia small { flex-basis: 100%; font-size: .75rem; opacity: .85; }
+.rk-legenda { display: inline-grid; place-items: center; min-width: 1.35rem; height: 1.35rem; padding: 0 .3rem; border-radius: 999px; font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
+.rk-legenda--subiu { color: var(--acerto); background: var(--acerto-veu); }
+.rk-legenda--desceu { color: var(--erro); background: var(--erro-veu); }
+.rk-legenda--fogo, .rk-movimento.rk-movimento--fogo { color: #fff; background: linear-gradient(135deg, #ffb13b, #f2542d); }
+.rk-legenda--novo, .rk-movimento.rk-movimento--novo { color: #5c3f06; background: linear-gradient(135deg, #ffe3a3, var(--ouro)); }
+.rk-movimento--novo { text-transform: uppercase; letter-spacing: .05em; font-size: .66rem; }
+.rk-movimento--parado { color: var(--texto-2); background: var(--superficie-2); min-width: 1.5rem; }
+.rk-movimento--fogo { box-shadow: 0 0 0 0 rgba(242, 84, 45, .45); animation: rk-brasa 2.4s ease-in-out infinite; }
+.rk-movimento--fogo svg:last-child { animation: rk-chama 1.2s ease-in-out infinite alternate; transform-origin: 50% 90%; }
+@media (prefers-reduced-motion: reduce) { .rk-movimento--fogo, .rk-movimento--fogo svg:last-child { animation: none; } }
+.rk-alta { display: grid; gap: .6rem; padding: .9rem 1rem 1rem; border-radius: var(--raio-grande, 18px); border: 1px solid color-mix(in srgb, #f2542d 28%, var(--traco)); background: linear-gradient(135deg, color-mix(in srgb, #ffb13b 14%, var(--superficie)), var(--superficie) 65%); }
+.rk-alta__titulo { margin: 0; display: inline-flex; align-items: center; gap: .4rem; font-size: var(--meta); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #d9481f; }
+.rk-alta__lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: .5rem; }
+.rk-alta__item { display: flex; align-items: center; gap: .6rem; min-width: 0; padding: .55rem .7rem; border-radius: 14px; background: var(--superficie); border: 1px solid var(--traco); }
+.rk-alta__item--voce { border-color: var(--verdete); background: var(--verdete-veu); }
+.rk-alta__avatar { flex: none; display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 999px; background: linear-gradient(135deg, #ffb13b, #f2542d); color: #fff; font-weight: 800; font-size: .8rem; }
+.rk-alta__nome { display: grid; min-width: 0; flex: 1; line-height: 1.2; }
+.rk-alta__nome strong { font-size: var(--corpo-menor); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rk-alta__nome small { color: var(--texto-2); font-size: .75rem; }
+.rk-missao { display: flex; align-items: flex-start; text-align: left; gap: .4rem; margin-top: .35rem; padding: .55rem .7rem; border-radius: 12px; background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .16); color: var(--sobre-heroi); font-size: var(--corpo-menor); line-height: 1.35; }
+.rk-missao svg { flex: none; margin-top: .1rem; color: #ffe3a3; }
+.rk-missao b { color: #ffe3a3; }
+.rk-movimento { display: inline-flex; align-items: center; justify-content: center; gap: .12rem; width: fit-content; border-radius: 999px; padding: .18rem .45rem; font-size: .76rem; font-weight: 800; line-height: 1; white-space: nowrap; }
+.rk-movimento--subiu { color: var(--acerto); background: var(--acerto-veu); }
+.rk-movimento--desceu { color: var(--erro); background: var(--erro-veu); }
+.rk-movimento > span[aria-hidden="true"] { display: inline-flex; align-items: center; gap: .12rem; }
+.rk-movimento__sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.rk-podio__lugar .rk-movimento { margin-top: .15rem; }
+.rk-podio__base {
+  display: flex; align-items: center; justify-content: center; align-self: stretch;
+  margin: 0.6rem -0.75rem 0; height: 2.6rem;
+  font-weight: 800; font-size: 1.15rem; color: var(--texto-2);
+  background: var(--superficie-2); border-top: var(--borda);
+}
+.rk-podio__lugar--1 .rk-podio__base { height: 4rem; background: color-mix(in srgb, var(--ouro) 18%, var(--superficie)); color: var(--ouro); }
+.rk-podio__lugar--2 .rk-podio__base { height: 3rem; }
+.rk-podio__lugar--voce { outline: 2px solid var(--verdete); outline-offset: 2px; }
+.rk-emblema { display: inline-flex; vertical-align: middle; margin-left: 0.3rem; }
+.rk-podio__lugar .rk-emblema { margin: 0; }
+@media (max-width: 34rem) {
+  .rk-podio { gap: 0.4rem; }
+}
+@media (max-width: 34rem) {
+  .rk-podio__lugar { padding-inline: 0.4rem; }
+}
+@media (max-width: 34rem) {
+  .rk-podio__avatar { width: 3.1rem; height: 3.1rem; font-size: 1rem; }
+}
+@media (max-width: 34rem) {
+  .rk-podio__lugar--1 .rk-podio__avatar { width: 3.8rem; height: 3.8rem; }
+}
+@media (max-width: 34rem) {
+  .rk-podio__nome { font-size: var(--corpo-menor); }
+}
+@media (max-width: 34rem) {
+  .rk-podio__base { margin-inline: -0.4rem; }
+}
+.rk-linha > .rk-movimento { grid-column: 2; }
+.rk-fora { margin: 0; padding: 0.9rem 1rem; border-radius: 14px; background: var(--verdete-veu); color: var(--texto); }
+.rk-emblemas { border-radius: var(--raio-grande); box-shadow: var(--sombra-media); }
+.rk-emblemas__topo { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem 2rem; }
+.rk-emblemas__topo h2 { margin: 0.2rem 0 0.3rem; }
+.rk-emblemas__topo p { margin: 0; }
+.rk-progresso { display: grid; gap: 0.35rem; min-width: min(100%, 16rem); }
+.rk-progresso__barra { height: 10px; border-radius: 999px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); overflow: hidden; }
+.rk-progresso__barra span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #ffe3a3, var(--ouro)); }
+.rk-progresso small { color: var(--texto-2); text-align: right; font-family: var(--fonte-texto); }
+.rk-emblemas__familia { margin: 1.5rem 0 0.75rem; font-size: var(--corpo-menor); color: var(--texto-2); text-transform: uppercase; letter-spacing: 0.06em; }
+.rk-grade { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr)); gap: 0.6rem; }
+.rk-grade__item {
+  display: flex; flex-direction: column; align-items: center; gap: 0.3rem; text-align: center;
+  padding: 0.9rem 0.5rem 0.8rem; border-radius: 14px; border: 1px dashed var(--traco-forte); background: var(--superficie-2);
+}
+.rk-grade__item--tem { border-style: solid; border-color: var(--traco); background: var(--superficie); box-shadow: var(--sombra-media); }
+.rk-grade__item strong { font-size: var(--corpo-menor); line-height: 1.25; }
+.rk-grade__item small { color: var(--texto-2); font-size: 0.75rem; }
+.rk-grade__item--tem small { color: var(--acerto); font-weight: 600; }
+.rk-regras { border-radius: var(--raio-grande); }
+.rk-regras h2 { margin: 0 0 0.75rem; }
+.rk-regras ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 1.5rem; }
+@media (max-width: 46rem) { .rk-regras ul { grid-template-columns: 1fr; } }
+.rk-regras li { display: flex; gap: 0.75rem; align-items: flex-start; font-size: var(--corpo-menor); color: var(--texto-2); }
+.rk-regras li strong { color: var(--texto); }
+.rk-regras li > span {
+  display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto;
+  width: 2.2rem; height: 2.2rem; border-radius: 10px; background: var(--verdete-veu); color: var(--verdete);
+}
+.rk-referencia--inicio { flex-wrap: nowrap; align-items: flex-start; gap: .45rem; padding: .7rem .9rem; border-radius: 12px; background: var(--superficie-2); }
+.rk-referencia--inicio svg { margin-top: .12rem; color: var(--verdete); }
+.rk-topo-abas { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.75rem; }
+.rk-liga { display: inline-flex; align-items: center; gap: 0.45rem; min-height: 44px; padding: 0 1rem; border-radius: 999px; background: var(--superficie); border: 1px solid color-mix(in srgb, var(--ouro) 35%, var(--traco)); box-shadow: var(--sombra-media); color: var(--texto); font-weight: 700; text-decoration: none; }
+.rk-liga:hover { border-color: var(--ouro); }

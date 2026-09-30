@@ -23,6 +23,7 @@ import { conquistaAtual } from '../estado/conquistas'
 import { ResumoAssinatura } from '../componentes/ResumoAssinatura'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { APELIDO_MAXIMO, usarPerfilRanking } from '../conta/perfilRanking'
+import '../estilos/paginas/Conta.css'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',

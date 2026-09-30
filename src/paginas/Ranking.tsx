@@ -11,6 +11,7 @@ import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking } from '../conta/perfilRanking'
+import '../estilos/paginas/Ranking.css'
 
 type Periodo = 'geral' | 'semana'
 type LinhaRanking = {

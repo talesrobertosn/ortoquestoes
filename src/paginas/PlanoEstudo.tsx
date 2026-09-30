@@ -12,6 +12,7 @@ import { Carregando } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href, navegar } from '../util/rotas'
+import '../estilos/paginas/PlanoEstudo.css'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const ROTULO_COBRANCA: Record<number, string> = { 4: 'cai muito', 3: 'cai com frequência', 2: 'cai às vezes', 1: 'cai pouco', 0: 'fora do ranking' }

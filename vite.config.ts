@@ -93,7 +93,9 @@ function preCargaPorRota(): Plugin {
           const arquivos = arquivosDe(modulo)
           if (arquivos) mapa[rota] = arquivos
         }
-        const script = `<script>(function(){try{var m=${JSON.stringify(mapa)};var r=(location.hash.replace(/^#\\/?/,'').split(/[/?]/)[0])||'';var a=m[r];if(!a)return;var b=document.baseURI;a.js.forEach(function(f){var l=document.createElement('link');l.rel='modulepreload';l.crossOrigin='';l.href=new URL(f,b).href;document.head.appendChild(l)});a.css.forEach(function(f){var l=document.createElement('link');l.rel='preload';l.as='style';l.href=new URL(f,b).href;document.head.appendChild(l)})}catch(e){}})()</script>`
+        const script = `<script>(function(){try{var m=${JSON.stringify(mapa)};var r=(location.hash.replace(/^#\\/?/,'').split(/[/?]/)[0])||'';var a=m[r];if(!a)return;var b=document.baseURI;a.js.forEach(function(f){var l=document.createElement('link');l.rel='modulepreload';l.crossOrigin='';l.href=new URL(f,b).href;document.head.appendChild(l)});a.css.forEach(function(f){var l=document.createElement('link');l.rel='preload';l.as='style';l.crossOrigin='';l.href=new URL(f,b).href;document.head.appendChild(l)})}catch(e){}})()</script>`
+        // O crossOrigin vazio igual ao do carregador do Vite: sem ele, o navegador
+        // não reaproveita a pré-carga e baixa o CSS da página de novo.
         // Antes do CSS: script em linha depois de uma folha de estilo espera a
         // folha chegar, e a pré-carga perderia justamente o tempo que quer ganhar.
         return html.replace('<script type="module"', script + '\n    <script type="module"')

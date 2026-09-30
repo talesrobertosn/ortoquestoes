@@ -21,6 +21,7 @@ import { usarEtiquetas } from '../estado/preferencias'
 import { href } from '../util/rotas'
 import { usarConta } from '../conta/ContextoConta'
 import { Icone, type NomeIcone } from '../componentes/Icone'
+import '../estilos/paginas/Treinar.css'
 
 // A maior parte do acervo ainda traz a prova genérica "TEOT/TARO" (sem
 // diferenciar as duas), então por enquanto as três formas aparecem como uma

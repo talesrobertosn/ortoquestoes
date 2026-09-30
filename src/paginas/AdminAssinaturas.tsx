@@ -11,6 +11,7 @@ import { usarLidos } from '../componentes/admin/lidos'
 import {
   PLANOS, STATUS_ASSINATURA, STATUS_EVENTO, TIPOS_EVENTO, baixarCsv, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
 } from '../componentes/admin/formatos'
+import '../estilos/paginas/AdminAssinaturas.css'
 
 interface LinhaAssinatura {
   id_usuario: string

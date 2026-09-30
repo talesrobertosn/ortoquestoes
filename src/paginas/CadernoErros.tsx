@@ -9,6 +9,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { usarSessao } from '../estado/sessao'
 import type { RegistroQuestao } from '../estado/revisao'
 import { filtrosParaConsulta, href, navegar } from '../util/rotas'
+import '../estilos/paginas/CadernoErros.css'
 
 type Situacao = 'abertos' | 'corrigidos' | 'todos'
 type Ordem = 'recentes' | 'frequentes'

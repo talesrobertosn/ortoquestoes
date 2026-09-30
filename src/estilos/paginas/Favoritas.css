@@ -1,0 +1,61 @@
+/* Estilos usados só por Favoritas (e o que vem junto no mesmo pedaço do site).
+   Saíram do CSS global para não descer em toda página. */
+.distribuicao {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.distribuicao__item {
+  border-top: var(--borda);
+}
+.distribuicao__item:first-child {
+  border-top: 0;
+}
+@media (min-width: 60rem) {
+  .distribuicao {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 3rem;
+  }
+}
+@media (min-width: 60rem) {
+  .distribuicao__item:nth-child(-n + 2) {
+    border-top: 0;
+  }
+}
+.distribuicao__link {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  padding: 0.625rem 0.25rem;
+  min-height: var(--toque);
+  text-decoration: none;
+  color: var(--texto);
+  border-radius: var(--raio-pequeno);
+}
+.distribuicao__link:hover {
+  background: var(--superficie-2);
+  color: var(--texto);
+}
+.distribuicao__quantidade {
+  font-family: var(--fonte-dados);
+  font-variant-numeric: tabular-nums;
+  font-size: var(--corpo-menor);
+  color: var(--texto-2);
+}
+.distribuicao__trilho {
+  grid-column: 1 / -1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--traco);
+  overflow: hidden;
+}
+.distribuicao__parte {
+  display: block;
+  height: 100%;
+  background: var(--verdete);
+  opacity: 0.55;
+}

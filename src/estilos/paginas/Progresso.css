@@ -1,0 +1,64 @@
+/* Estilos usados só por Progresso (e o que vem junto no mesmo pedaço do site).
+   Saíram do CSS global para não descer em toda página. */
+.rolagem-x {
+  overflow-x: auto;
+}
+.painel-progresso {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 40rem) {
+  .painel-progresso {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.cartao-progresso {
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  padding: 1.25rem;
+}
+.cartao-progresso__rotulo {
+  font-size: var(--meta);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--texto-2);
+}
+.cartao-progresso__valor {
+  margin-top: 0.35rem;
+  font-size: clamp(2.25rem, 1.5rem + 3vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-variant-numeric: proportional-nums;
+}
+.cartao-progresso__apoio {
+  margin-top: 0.15rem;
+  font-size: var(--corpo-menor);
+  color: var(--texto-2);
+}
+.cartao-progresso .barra-cobertura {
+  margin-top: 0.9rem;
+}
+.barra-cobertura {
+  display: block;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--superficie-2);
+  border: 1px solid var(--traco);
+  overflow: hidden;
+}
+.barra-cobertura__parte {
+  display: block;
+  height: 100%;
+  background: var(--verdete);
+  border-radius: 0 999px 999px 0;
+}
+.tabela--progresso td .barra-cobertura {
+  min-width: 6rem;
+  margin-bottom: 0.3rem;
+}
+.barra-cobertura__valor {
+  font-size: var(--meta);
+  color: var(--texto-2);
+}

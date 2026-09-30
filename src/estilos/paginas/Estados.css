@@ -1,0 +1,15 @@
+/* Estilos usados só por Estados (e o que vem junto no mesmo pedaço do site).
+   Saíram do CSS global para não descer em toda página. */
+.esqueleto {
+  background: linear-gradient(
+    90deg,
+    var(--superficie-2) 25%,
+    var(--traco) 37%,
+    var(--superficie-2) 63%
+  );
+  background-size: 400% 100%;
+  animation: brilho 1.4s ease-in-out infinite;
+  border-radius: var(--raio-pequeno);
+  height: 1rem;
+  margin-bottom: 0.5rem;
+}

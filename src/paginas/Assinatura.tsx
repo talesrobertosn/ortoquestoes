@@ -9,6 +9,7 @@ import { Painel } from '../componentes/Painel'
 import { VERSAO_CONDICOES_ANTERIOR, VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { href } from '../util/rotas'
 import { MENSAL, PLANOS, real } from '../dados/planos'
+import '../estilos/paginas/Assinatura.css'
 
 const pagamentosHabilitados = import.meta.env.VITE_PAGAMENTOS_HABILITADOS === 'true'
 const limitesHabilitados = import.meta.env.VITE_LIMITES_HABILITADOS === 'true'

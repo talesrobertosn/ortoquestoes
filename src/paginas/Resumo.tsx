@@ -17,6 +17,7 @@ import { href, navegar } from '../util/rotas'
 import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
 import { ConviteCompartilhar } from '../componentes/ConviteCompartilhar'
 import { lerBloqueioDiario } from '../estado/limiteDiario'
+import '../estilos/paginas/Resumo.css'
 
 type Confianca = NonNullable<Resposta['confianca']>
 type Situacao = 'certa' | 'errada' | 'anulada' | 'pulada'

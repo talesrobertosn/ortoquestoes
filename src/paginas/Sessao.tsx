@@ -20,6 +20,7 @@ import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 import { href, navegar } from '../util/rotas'
 import { gerarId } from '../util/id'
 import { gravar, ler } from '../estado/armazenamento'
+import '../estilos/paginas/Sessao.css'
 
 export function Sessao() {
   const { indice } = usarIndice()

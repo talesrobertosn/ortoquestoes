@@ -12,6 +12,7 @@ import { Icone } from '../componentes/Icone'
 import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { NivelCobranca } from '../componentes/NivelCobranca'
 import { href, navegar } from '../util/rotas'
+import '../estilos/paginas/TemasQueMaisCaem.css'
 
 const QUESTOES_POR_TREINO = 20
 type Respondidas = Record<string, RegistroQuestao>

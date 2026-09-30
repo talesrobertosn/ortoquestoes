@@ -4,6 +4,7 @@ import { carregarProgresso } from '../dados/acervo'
 import { href } from '../util/rotas'
 import { Carregando } from '../componentes/Estados'
 import type { Progresso as DadosProgresso } from '../dados/tipos'
+import '../estilos/paginas/Progresso.css'
 
 /** Porcentagem com uma casa, ou "0" quando ainda não há nada. */
 function pct(parte: number, todo: number) {

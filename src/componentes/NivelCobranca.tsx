@@ -1,4 +1,5 @@
 import { ROTULO_NIVEL, type Nivel } from '../dados/incidencia'
+import '../estilos/paginas/NivelCobranca.css'
 
 /** Chama cheia, desenhada aqui para ter preenchimento (o ícone da biblioteca é só traço). */
 function Chama() {

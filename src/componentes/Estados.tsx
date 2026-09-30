@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import '../estilos/paginas/Estados.css'
 
 /** Carregando: esqueleto com a forma do conteúdo que vem, sem texto de espera. */
 export function Carregando({ linhas = 4, rotulo = 'Carregando questões' }: { linhas?: number; rotulo?: string }) {
