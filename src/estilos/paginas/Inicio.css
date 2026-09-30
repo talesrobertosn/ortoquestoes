@@ -281,22 +281,6 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
 }
 .cartao-streak { border-radius: var(--raio-grande); box-shadow: var(--sombra-media); }
 .cartao-streak--marco { background: linear-gradient(135deg, var(--ouro-veu), var(--superficie)); border-color: color-mix(in srgb, var(--ouro) 45%, var(--traco)); }
-.instalar-app {
-  display: flex; align-items: center; gap: 1.1rem; flex-wrap: wrap;
-  padding: 1.25rem 1.4rem; border-radius: var(--raio-grande);
-  background: var(--heroi); color: var(--sobre-heroi); box-shadow: var(--sombra-media);
-}
-.instalar-app__icone { width: 3.5rem; height: 3.5rem; border-radius: 22%; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(0, 0, 0, .25); }
-.instalar-app__texto { flex: 1 1 18rem; min-width: 0; }
-.instalar-app__texto h2 { margin: 0 0 .25rem; color: inherit; font-size: 1.15rem; }
-.instalar-app__texto p { margin: 0; opacity: .85; }
-.instalar-app__passos { margin: .35rem 0 0; padding-left: 1.2rem; display: grid; gap: .3rem; }
-.instalar-app__passos svg { vertical-align: -3px; }
-.instalar-app__acoes { display: flex; gap: .5rem; flex-wrap: wrap; }
-.instalar-app .botao--principal { background: #fff; color: #0f3d38; border-color: #fff; }
-.instalar-app .botao--fantasma { color: inherit; border-color: var(--heroi-traco); }
-@media (max-width: 560px) { .instalar-app__acoes { width: 100%; } }
-@media (max-width: 560px) { .instalar-app__acoes .botao { flex: 1 1 auto; justify-content: center; } }
 .inicio-grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr)); gap: 1rem; align-items: stretch; }
 .inicio-hoje, .inicio-foco, .inicio-semana, .inicio-grade > .cartao-streak {
   display: flex; flex-direction: column; gap: .55rem; margin: 0;

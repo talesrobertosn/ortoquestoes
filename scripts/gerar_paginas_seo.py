@@ -209,8 +209,8 @@ def topo(titulo: str, descricao: str, caminho: str, extra: str = "", raiz: str =
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#14655e">
-<link rel="icon" href="{raiz}favicon.svg" type="image/svg+xml">
-<link rel="icon" href="{raiz}favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="{raiz}favicon.svg?v=2" type="image/svg+xml">
+<link rel="icon" href="{raiz}favicon-32.png?v=2" type="image/png" sizes="32x32">
 <style>{ESTILO}</style>
 {extra}
 </head>

@@ -11,7 +11,6 @@ import { CartaoStreak } from '../componentes/CartaoStreak'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
 import { CaixasAssinante } from '../componentes/CaixasAssinante'
 import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
-import { InstalarApp } from '../componentes/InstalarApp'
 import { CartaoCompartilhar } from '../componentes/CartaoCompartilhar'
 import { CartaoPlanos } from '../componentes/CartaoPlanos'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
@@ -416,7 +415,6 @@ export function Inicio() {
             <CartaoPlanos />
           </div>
 
-          <InstalarApp />
         </>
       )}
     </div>

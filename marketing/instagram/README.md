@@ -25,6 +25,18 @@ npm run build && npx vite preview --port 4175   # em outro terminal
 node marketing/instagram/telas.mjs '' treinar dados revisao ranking
 ```
 
+## Marca (`marca.html`)
+
+Foto de perfil (escura e clara) e a prévia do link (`saida/previa.jpg`, copiada para `public/` com
+nome novo a cada troca). O nome é escrito por extenso, "Orto Questões"; o símbolo são três
+alternativas com a certa em dourado. Não usar letra dentro de círculo.
+
+## Relançamento (`relancamento/posts.html`)
+
+Três posts de feed, cada um num estilo, para variar a grade: A apresentação (editorial claro),
+B questão comentada (quiz escuro, Maisonneuve) e C contagem até a prova (dourado). Legendas e
+ordem de postagem em `relancamento/LEGENDAS.md`.
+
 ## Stories de cadastro (`cadastro.html`)
 
 2 stories (1080×1920) para levar a pessoa a criar a conta:
