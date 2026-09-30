@@ -2,6 +2,7 @@
 # Formato do lote:
 #   @@ id-da-questao
 #   ## alerta            (opcional; só quando o gabarito oficial é duvidoso)
+#   ## sem-alerta        (opcional; retira um alerta antigo após confirmar a resposta)
 #   texto
 #   ## conceito
 #   **Título.** parágrafo...
@@ -17,7 +18,7 @@ RAIZ = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 R = os.path.join(RAIZ, 'public', 'acervo')
 arq = sys.argv[1]; seco = '--seco' in sys.argv
 txt = open(arq, encoding='utf-8').read()
-lote = {}; erros = []
+lote = {}; erros = []; sem_alerta = set()
 for bloco in re.split(r'^@@\s*', txt, flags=re.M)[1:]:
     qid, resto = bloco.split('\n', 1)
     qid = qid.strip()
@@ -28,6 +29,7 @@ for bloco in re.split(r'^@@\s*', txt, flags=re.M)[1:]:
         if nome == 'conceito': c['conceito'] = corpo
         elif nome == 'correta': c['correta'] = corpo
         elif nome == 'alerta': c['alerta'] = corpo
+        elif nome == 'sem-alerta': sem_alerta.add(qid)
         else: c['incorretas'][nome] = corpo
     con = c.get('conceito', '')
     pars = [p for p in con.split('\n\n') if p.strip()]
@@ -51,6 +53,7 @@ for qid, c in lote.items():
     tema = re.sub(r'-\d+$', '', qid)
     ant = json.load(open(os.path.join(R, 'comentarios', f'{tema}.json'), encoding='utf-8')).get(qid, {})
     for k in ('alerta', 'referencias'):
+        if k == 'alerta' and qid in sem_alerta: continue
         if k not in c and ant.get(k): c[k] = ant[k]
 saida = arq.rsplit('.', 1)[0] + '.json'
 json.dump(lote, open(saida, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
