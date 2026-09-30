@@ -7,7 +7,7 @@
       "id": "joelho-0001",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -50,7 +50,7 @@
       "id": "joelho-0002",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -93,7 +93,7 @@
       "id": "joelho-0003",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -136,7 +136,7 @@
       "id": "joelho-0004",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -179,7 +179,7 @@
       "id": "joelho-0005",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -222,7 +222,7 @@
       "id": "joelho-0006",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TARO",
       "ano": 2019,
@@ -265,7 +265,7 @@
       "id": "joelho-0007",
       "tema": "Joelho",
       "subtemas": [
-        "Menisco discoide"
+        "Meniscos"
       ],
       "prova": "TARO",
       "ano": 2019,
@@ -297,7 +297,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 4,
@@ -308,7 +308,7 @@
       "id": "joelho-0008",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2019,
@@ -351,7 +351,7 @@
       "id": "joelho-0009",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2019,
@@ -393,7 +393,9 @@
     {
       "id": "joelho-0010",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TARO",
       "ano": 2019,
       "dificuldade": null,
@@ -435,7 +437,7 @@
       "id": "joelho-0011",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2018,
@@ -477,7 +479,9 @@
     {
       "id": "joelho-0012",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Meniscos"
+      ],
       "prova": "TARO",
       "ano": 2018,
       "dificuldade": null,
@@ -519,7 +523,7 @@
       "id": "joelho-0013",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2018,
@@ -562,7 +566,7 @@
       "id": "joelho-0014",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TARO",
       "ano": 2018,
@@ -605,7 +609,7 @@
       "id": "joelho-0015",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TARO",
       "ano": 2018,
@@ -648,7 +652,7 @@
       "id": "joelho-0016",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2021,
@@ -691,7 +695,9 @@
     {
       "id": "joelho-0017",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Meniscos"
+      ],
       "prova": "TARO",
       "ano": 2021,
       "dificuldade": null,
@@ -734,7 +740,7 @@
       "id": "joelho-0018",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2021,
@@ -778,7 +784,7 @@
       "id": "joelho-0019",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2021,
@@ -822,7 +828,7 @@
       "id": "joelho-0020",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2017,
@@ -865,7 +871,7 @@
       "id": "joelho-0021",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TARO",
       "ano": 2017,
@@ -908,7 +914,7 @@
       "id": "joelho-0022",
       "tema": "Joelho",
       "subtemas": [
-        "Menisco discoide"
+        "Meniscos"
       ],
       "prova": "TARO",
       "ano": 2017,
@@ -940,7 +946,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 6,
@@ -950,7 +956,9 @@
     {
       "id": "joelho-0023",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TARO",
       "ano": 2017,
       "dificuldade": null,
@@ -992,7 +1000,7 @@
       "id": "joelho-0024",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TARO",
       "ano": 2017,
@@ -1035,7 +1043,7 @@
       "id": "joelho-0025",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TARO",
       "ano": 2017,
@@ -1078,8 +1086,8 @@
       "id": "joelho-0026",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Lesão do LCP"
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2016,
@@ -1111,7 +1119,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 7,
@@ -1122,7 +1130,7 @@
       "id": "joelho-0027",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2016,
@@ -1165,7 +1173,7 @@
       "id": "joelho-0028",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2016,
@@ -1207,7 +1215,9 @@
     {
       "id": "joelho-0029",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TARO",
       "ano": 2016,
       "dificuldade": null,
@@ -1249,7 +1259,7 @@
       "id": "joelho-0030",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2016,
@@ -1292,7 +1302,7 @@
       "id": "joelho-0031",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2015,
@@ -1335,7 +1345,7 @@
       "id": "joelho-0032",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TARO",
       "ano": 2015,
@@ -1377,7 +1387,9 @@
     {
       "id": "joelho-0033",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TARO",
       "ano": 2015,
       "dificuldade": null,
@@ -1419,7 +1431,7 @@
       "id": "joelho-0034",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TARO",
       "ano": 2015,
@@ -1462,7 +1474,7 @@
       "id": "joelho-0035",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2015,
@@ -1505,7 +1517,7 @@
       "id": "joelho-0036",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2015,
@@ -1548,7 +1560,7 @@
       "id": "joelho-0037",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TARO",
       "ano": 2014,
@@ -1591,8 +1603,8 @@
       "id": "joelho-0038",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Lesão do LCP"
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2014,
@@ -1624,7 +1636,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 9,
@@ -1635,7 +1647,7 @@
       "id": "joelho-0039",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2014,
@@ -1678,7 +1690,7 @@
       "id": "joelho-0040",
       "tema": "Joelho",
       "subtemas": [
-        "Menisco discoide"
+        "Meniscos"
       ],
       "prova": "TARO",
       "ano": 2014,
@@ -1710,7 +1722,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 9,
@@ -1720,7 +1732,9 @@
     {
       "id": "joelho-0041",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TARO",
       "ano": 2014,
       "dificuldade": null,
@@ -1762,7 +1776,7 @@
       "id": "joelho-0042",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2014,
@@ -1805,7 +1819,7 @@
       "id": "joelho-0043",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2014,
@@ -1848,7 +1862,7 @@
       "id": "joelho-0044",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT",
       "ano": 2022,
@@ -1898,8 +1912,8 @@
       "id": "joelho-0045",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico",
-        "Lesão do LCP"
+        "Exame físico e imagem do joelho",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT",
       "ano": 2022,
@@ -1949,7 +1963,7 @@
       "id": "joelho-0046",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT",
       "ano": 2022,
@@ -1999,7 +2013,7 @@
       "id": "joelho-0047",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT",
       "ano": 2022,
@@ -2049,7 +2063,7 @@
       "id": "joelho-0048",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT",
       "ano": 2022,
@@ -2098,7 +2112,9 @@
     {
       "id": "joelho-0049",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Meniscos"
+      ],
       "prova": "TEOT",
       "ano": 2022,
       "dificuldade": null,
@@ -2147,8 +2163,8 @@
       "id": "joelho-0050",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Lesão do LCP"
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT",
       "ano": 2022,
@@ -2187,7 +2203,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 16,
@@ -2198,8 +2214,8 @@
       "id": "joelho-0051",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Lesão do LCP"
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT",
       "ano": 2022,
@@ -2238,7 +2254,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 16,
@@ -2249,8 +2265,8 @@
       "id": "joelho-0052",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho",
-        "Anatomia"
+        "Artrose, osteotomias e artroplastia do joelho",
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT",
       "ano": 2022,
@@ -2294,7 +2310,7 @@
       "id": "joelho-0053",
       "tema": "Joelho",
       "subtemas": [
-        "Menisco discoide"
+        "Meniscos"
       ],
       "prova": "TEOT",
       "ano": 2022,
@@ -2333,7 +2349,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 17,
@@ -2344,7 +2360,7 @@
       "id": "joelho-0054",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -2388,7 +2404,7 @@
       "id": "joelho-0055",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT",
       "ano": 2023,
@@ -2439,7 +2455,7 @@
       "id": "joelho-0056",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT",
       "ano": 2022,
@@ -2482,7 +2498,7 @@
       "id": "joelho-0057",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão Osteocondral de Joelho"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT",
       "ano": 2022,
@@ -2525,7 +2541,7 @@
       "id": "joelho-0058",
       "tema": "Joelho",
       "subtemas": [
-        "Artroscopia de joelho"
+        "Artroscopia e vias de acesso do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -2568,8 +2584,8 @@
       "id": "joelho-0059",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Lesão do LCP"
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -2601,7 +2617,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 20,
@@ -2612,7 +2628,7 @@
       "id": "joelho-0060",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -2655,7 +2671,7 @@
       "id": "joelho-0061",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -2705,7 +2721,7 @@
       "id": "joelho-0062",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2021,
@@ -2749,7 +2765,7 @@
       "id": "joelho-0063",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2022,
@@ -2800,8 +2816,8 @@
       "id": "joelho-0064",
       "tema": "Joelho",
       "subtemas": [
-        "Biomecânica",
-        "Exame Físico"
+        "Anatomia e biomecânica do joelho",
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TARO",
       "ano": 2022,
@@ -2845,7 +2861,7 @@
       "id": "joelho-0065",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2022,
@@ -2889,7 +2905,7 @@
       "id": "joelho-0066",
       "tema": "Joelho",
       "subtemas": [
-        "Artroscopia de joelho"
+        "Artroscopia e vias de acesso do joelho"
       ],
       "prova": "TARO",
       "ano": 2022,
@@ -2933,8 +2949,8 @@
       "id": "joelho-0067",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Lesão do LCP"
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2022,
@@ -2966,7 +2982,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 23,
@@ -2978,8 +2994,8 @@
       "id": "joelho-0068",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Lesão do LCP"
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2022,
@@ -3011,7 +3027,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 23,
@@ -3023,7 +3039,7 @@
       "id": "joelho-0069",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2022,
@@ -3067,7 +3083,7 @@
       "id": "joelho-0070",
       "tema": "Joelho",
       "subtemas": [
-        "Biomecânica"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3099,7 +3115,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 24,
@@ -3109,7 +3125,9 @@
     {
       "id": "joelho-0071",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Ligamento cruzado anterior"
+      ],
       "prova": "TEOT/TARO",
       "ano": null,
       "dificuldade": null,
@@ -3151,7 +3169,7 @@
       "id": "joelho-0072",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3194,7 +3212,7 @@
       "id": "joelho-0073",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3237,7 +3255,7 @@
       "id": "joelho-0074",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3280,7 +3298,7 @@
       "id": "joelho-0075",
       "tema": "Joelho",
       "subtemas": [
-        "Osteonecrose"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3323,7 +3341,7 @@
       "id": "joelho-0076",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3366,8 +3384,7 @@
       "id": "joelho-0077",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho",
-        "Osteotomias"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3410,7 +3427,7 @@
       "id": "joelho-0078",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3452,7 +3469,9 @@
     {
       "id": "joelho-0079",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Meniscos"
+      ],
       "prova": "TEOT/TARO",
       "ano": null,
       "dificuldade": null,
@@ -3494,7 +3513,7 @@
       "id": "joelho-0080",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3536,7 +3555,9 @@
     {
       "id": "joelho-0081",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TEOT/TARO",
       "ano": null,
       "dificuldade": null,
@@ -3585,7 +3606,7 @@
       "id": "joelho-0082",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3628,7 +3649,7 @@
       "id": "joelho-0083",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3671,8 +3692,7 @@
       "id": "joelho-0084",
       "tema": "Joelho",
       "subtemas": [
-        "Biomecânica",
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3715,7 +3735,7 @@
       "id": "joelho-0085",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3758,7 +3778,7 @@
       "id": "joelho-0086",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3801,7 +3821,7 @@
       "id": "joelho-0087",
       "tema": "Joelho",
       "subtemas": [
-        "Menisco discoide"
+        "Meniscos"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3845,7 +3865,7 @@
       "id": "joelho-0088",
       "tema": "Joelho",
       "subtemas": [
-        "Tendinite patelar"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3888,7 +3908,7 @@
       "id": "joelho-0089",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3931,7 +3951,7 @@
       "id": "joelho-0090",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -3974,7 +3994,7 @@
       "id": "joelho-0091",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4017,8 +4037,8 @@
       "id": "joelho-0092",
       "tema": "Joelho",
       "subtemas": [
-        "Ortopedia pediátrica",
-        "Menisco discoide"
+        "Joelho na criança",
+        "Meniscos"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4062,7 +4082,7 @@
       "id": "joelho-0093",
       "tema": "Joelho",
       "subtemas": [
-        "Miscelânea"
+        "Meniscos"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4106,7 +4126,7 @@
       "id": "joelho-0094",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4149,7 +4169,7 @@
       "id": "joelho-0095",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4193,7 +4213,7 @@
       "id": "joelho-0096",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT",
       "ano": 2023,
@@ -4237,7 +4257,7 @@
       "id": "joelho-0097",
       "tema": "Joelho",
       "subtemas": [
-        "Biomecânica"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT",
       "ano": 2023,
@@ -4281,7 +4301,7 @@
       "id": "joelho-0098",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT",
       "ano": 2023,
@@ -4325,7 +4345,7 @@
       "id": "joelho-0099",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT",
       "ano": 2023,
@@ -4376,7 +4396,7 @@
       "id": "joelho-0100",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT",
       "ano": 2023,
@@ -4420,7 +4440,7 @@
       "id": "joelho-0101",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT",
       "ano": 2023,
@@ -4470,7 +4490,7 @@
       "id": "joelho-0102",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4514,7 +4534,7 @@
       "id": "joelho-0103",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4558,7 +4578,7 @@
       "id": "joelho-0104",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4608,8 +4628,8 @@
       "id": "joelho-0105",
       "tema": "Joelho",
       "subtemas": [
-        "Radiologia do joelho",
-        "Anatomia"
+        "Exame físico e imagem do joelho",
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4659,8 +4679,8 @@
       "id": "joelho-0106",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia",
-        "Vias de acesso"
+        "Anatomia e biomecânica do joelho",
+        "Artroscopia e vias de acesso do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4710,8 +4730,8 @@
       "id": "joelho-0107",
       "tema": "Joelho",
       "subtemas": [
-        "Radiologia do joelho",
-        "Anatomia"
+        "Exame físico e imagem do joelho",
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4761,8 +4781,7 @@
       "id": "joelho-0108",
       "tema": "Joelho",
       "subtemas": [
-        "Quadril",
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4813,7 +4832,7 @@
       "id": "joelho-0109",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4863,8 +4882,8 @@
       "id": "joelho-0110",
       "tema": "Joelho",
       "subtemas": [
-        "Radiologia do joelho",
-        "Anatomia"
+        "Exame físico e imagem do joelho",
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4915,8 +4934,8 @@
       "id": "joelho-0111",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia",
-        "Radiologia do joelho"
+        "Anatomia e biomecânica do joelho",
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -4966,8 +4985,8 @@
       "id": "joelho-0112",
       "tema": "Joelho",
       "subtemas": [
-        "Radiologia do joelho",
-        "Anatomia"
+        "Exame físico e imagem do joelho",
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5018,7 +5037,7 @@
       "id": "joelho-0113",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5068,7 +5087,7 @@
       "id": "joelho-0114",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5118,8 +5137,7 @@
       "id": "joelho-0115",
       "tema": "Joelho",
       "subtemas": [
-        "Quadril",
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5170,7 +5188,7 @@
       "id": "joelho-0116",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2023,
@@ -5214,7 +5232,7 @@
       "id": "joelho-0117",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2023,
@@ -5258,7 +5276,7 @@
       "id": "joelho-0118",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2023,
@@ -5302,8 +5320,8 @@
       "id": "joelho-0119",
       "tema": "Joelho",
       "subtemas": [
-        "Menisco discoide",
-        "Anatomia"
+        "Meniscos",
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2023,
@@ -5347,8 +5365,7 @@
       "id": "joelho-0120",
       "tema": "Joelho",
       "subtemas": [
-        "Ortopedia pediátrica",
-        "Miscelânea"
+        "Joelho na criança"
       ],
       "prova": "TARO",
       "ano": 2023,
@@ -5392,7 +5409,7 @@
       "id": "joelho-0121",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TARO",
       "ano": 2023,
@@ -5436,8 +5453,8 @@
       "id": "joelho-0122",
       "tema": "Joelho",
       "subtemas": [
-        "Trauma Adulto",
-        "Lesões do Mecanismo Extensor"
+        "Luxação e trauma do joelho",
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2023,
@@ -5481,7 +5498,7 @@
       "id": "joelho-0123",
       "tema": "Joelho",
       "subtemas": [
-        "Artroscopia de joelho"
+        "Artroscopia e vias de acesso do joelho"
       ],
       "prova": "TARO",
       "ano": 2023,
@@ -5525,7 +5542,7 @@
       "id": "joelho-0124",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5572,7 +5589,7 @@
       "id": "joelho-0125",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5619,7 +5636,7 @@
       "id": "joelho-0126",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5662,7 +5679,7 @@
       "id": "joelho-0127",
       "tema": "Joelho",
       "subtemas": [
-        "Miscelânea"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5704,7 +5721,9 @@
     {
       "id": "joelho-0128",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Meniscos"
+      ],
       "prova": "TEOT/TARO",
       "ano": null,
       "dificuldade": null,
@@ -5746,7 +5765,7 @@
       "id": "joelho-0129",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão Osteocondral de Joelho"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5789,7 +5808,7 @@
       "id": "joelho-0130",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5832,7 +5851,7 @@
       "id": "joelho-0131",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5875,7 +5894,7 @@
       "id": "joelho-0132",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5918,8 +5937,8 @@
       "id": "joelho-0133",
       "tema": "Joelho",
       "subtemas": [
-        "Luxação do Joelho",
-        "Exame Físico"
+        "Luxação e trauma do joelho",
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5963,8 +5982,8 @@
       "id": "joelho-0134",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Lesão do LCP"
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -5996,7 +6015,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 47,
@@ -6007,8 +6026,8 @@
       "id": "joelho-0135",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico",
-        "Lesão do LCA"
+        "Exame físico e imagem do joelho",
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT",
       "ano": 2024,
@@ -6052,8 +6071,8 @@
       "id": "joelho-0136",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP",
-        "Anatomia"
+        "Ligamento cruzado posterior e canto posterolateral",
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT",
       "ano": 2024,
@@ -6096,7 +6115,9 @@
     {
       "id": "joelho-0137",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TEOT",
       "ano": 2024,
       "dificuldade": null,
@@ -6139,7 +6160,7 @@
       "id": "joelho-0138",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT",
       "ano": 2024,
@@ -6183,7 +6204,7 @@
       "id": "joelho-0139",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT",
       "ano": 2024,
@@ -6227,7 +6248,7 @@
       "id": "joelho-0140",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT",
       "ano": 2024,
@@ -6271,8 +6292,8 @@
       "id": "joelho-0141",
       "tema": "Joelho",
       "subtemas": [
-        "Ortopedia pediátrica",
-        "Menisco discoide"
+        "Joelho na criança",
+        "Meniscos"
       ],
       "prova": "TEOT",
       "ano": 2024,
@@ -6316,7 +6337,7 @@
       "id": "joelho-0142",
       "tema": "Joelho",
       "subtemas": [
-        "Artroscopia de joelho"
+        "Artroscopia e vias de acesso do joelho"
       ],
       "prova": "TEOT",
       "ano": 2024,
@@ -6359,8 +6380,8 @@
       "id": "joelho-0143",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia",
-        "Radiologia do joelho"
+        "Anatomia e biomecânica do joelho",
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -6410,7 +6431,7 @@
       "id": "joelho-0144",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -6460,7 +6481,7 @@
       "id": "joelho-0145",
       "tema": "Joelho",
       "subtemas": [
-        "Miscelânea"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -6510,7 +6531,7 @@
       "id": "joelho-0146",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -6560,7 +6581,7 @@
       "id": "joelho-0147",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -6610,8 +6631,7 @@
       "id": "joelho-0148",
       "tema": "Joelho",
       "subtemas": [
-        "Quadril",
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -6662,8 +6682,8 @@
       "id": "joelho-0149",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia",
-        "Radiologia do joelho"
+        "Anatomia e biomecânica do joelho",
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -6713,7 +6733,7 @@
       "id": "joelho-0150",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -6763,9 +6783,8 @@
       "id": "joelho-0151",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia",
-        "Biomecânica",
-        "Exame Físico"
+        "Anatomia e biomecânica do joelho",
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -6815,7 +6834,7 @@
       "id": "joelho-0152",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -6865,7 +6884,7 @@
       "id": "joelho-0153",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -6915,8 +6934,7 @@
       "id": "joelho-0154",
       "tema": "Joelho",
       "subtemas": [
-        "Quadril",
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -6966,8 +6984,7 @@
       "id": "joelho-0155",
       "tema": "Joelho",
       "subtemas": [
-        "Quadril",
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -7011,7 +7028,7 @@
       "id": "joelho-0156",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2024,
@@ -7055,7 +7072,7 @@
       "id": "joelho-0157",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TARO",
       "ano": 2024,
@@ -7099,7 +7116,7 @@
       "id": "joelho-0158",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TARO",
       "ano": 2024,
@@ -7143,7 +7160,7 @@
       "id": "joelho-0159",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2024,
@@ -7187,7 +7204,7 @@
       "id": "joelho-0160",
       "tema": "Joelho",
       "subtemas": [
-        "Miscelânea"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2024,
@@ -7230,7 +7247,9 @@
     {
       "id": "joelho-0161",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TARO",
       "ano": 2024,
       "dificuldade": null,
@@ -7273,7 +7292,7 @@
       "id": "joelho-0162",
       "tema": "Joelho",
       "subtemas": [
-        "Osteotomias"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2024,
@@ -7317,7 +7336,7 @@
       "id": "joelho-0163",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2024,
@@ -7361,9 +7380,7 @@
       "id": "joelho-0164",
       "tema": "Joelho",
       "subtemas": [
-        "Conceitos básicos",
-        "Radiologia do joelho",
-        "Exames de imagem"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TARO",
       "ano": 2024,
@@ -7407,8 +7424,7 @@
       "id": "joelho-0165",
       "tema": "Joelho",
       "subtemas": [
-        "Osteotomias",
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2024,
@@ -7452,8 +7468,8 @@
       "id": "joelho-0166",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia",
-        "Lesão do LCA"
+        "Anatomia e biomecânica do joelho",
+        "Ligamento cruzado anterior"
       ],
       "prova": "TARO",
       "ano": 2024,
@@ -7506,7 +7522,7 @@
       "id": "joelho-0167",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -7549,7 +7565,7 @@
       "id": "joelho-0168",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -7592,7 +7608,7 @@
       "id": "joelho-0169",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -7642,8 +7658,8 @@
       "id": "joelho-0170",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Lesão do LCP"
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -7675,7 +7691,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 64,
@@ -7686,7 +7702,7 @@
       "id": "joelho-0171",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -7729,7 +7745,7 @@
       "id": "joelho-0172",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -7772,7 +7788,7 @@
       "id": "joelho-0173",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -7815,7 +7831,7 @@
       "id": "joelho-0174",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -7858,7 +7874,7 @@
       "id": "joelho-0175",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -7900,7 +7916,9 @@
     {
       "id": "joelho-0176",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TEOT/TARO",
       "ano": null,
       "dificuldade": null,
@@ -7942,7 +7960,7 @@
       "id": "joelho-0177",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -7985,7 +8003,7 @@
       "id": "joelho-0178",
       "tema": "Joelho",
       "subtemas": [
-        "Osteotomias"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -8028,7 +8046,7 @@
       "id": "joelho-0179",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT",
       "ano": 2025,
@@ -8071,7 +8089,7 @@
       "id": "joelho-0180",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT",
       "ano": 2025,
@@ -8114,7 +8132,7 @@
       "id": "joelho-0181",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT",
       "ano": 2025,
@@ -8157,7 +8175,7 @@
       "id": "joelho-0182",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT",
       "ano": 2025,
@@ -8200,7 +8218,7 @@
       "id": "joelho-0183",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -8243,7 +8261,7 @@
       "id": "joelho-0184",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -8286,7 +8304,7 @@
       "id": "joelho-0185",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -8336,7 +8354,7 @@
       "id": "joelho-0186",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT",
       "ano": 2025,
@@ -8379,7 +8397,7 @@
       "id": "joelho-0187",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -8429,7 +8447,7 @@
       "id": "joelho-0188",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT",
       "ano": 2025,
@@ -8472,8 +8490,8 @@
       "id": "joelho-0189",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Lesão do LCP"
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT",
       "ano": 2025,
@@ -8512,7 +8530,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 70,
@@ -8523,7 +8541,7 @@
       "id": "joelho-0190",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT",
       "ano": 2025,
@@ -8566,9 +8584,7 @@
       "id": "joelho-0191",
       "tema": "Joelho",
       "subtemas": [
-        "Conceitos básicos",
-        "Artrose e Artroplastia de Joelho",
-        "Infecções"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT",
       "ano": 2025,
@@ -8610,7 +8626,9 @@
     {
       "id": "joelho-0192",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TEOT/TARO",
       "ano": null,
       "dificuldade": null,
@@ -8652,7 +8670,7 @@
       "id": "joelho-0193",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -8694,7 +8712,9 @@
     {
       "id": "joelho-0194",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TEOT/TARO",
       "ano": null,
       "dificuldade": null,
@@ -8736,8 +8756,8 @@
       "id": "joelho-0195",
       "tema": "Joelho",
       "subtemas": [
-        "Ortopedia pediátrica",
-        "Menisco discoide"
+        "Joelho na criança",
+        "Meniscos"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -8780,7 +8800,7 @@
       "id": "joelho-0196",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -8830,7 +8850,7 @@
       "id": "joelho-0197",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -8873,7 +8893,7 @@
       "id": "joelho-0198",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2025,
@@ -8917,8 +8937,7 @@
       "id": "joelho-0199",
       "tema": "Joelho",
       "subtemas": [
-        "Infecções",
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2025,
@@ -8962,7 +8981,7 @@
       "id": "joelho-0200",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2025,
@@ -9006,7 +9025,7 @@
       "id": "joelho-0201",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TARO",
       "ano": 2025,
@@ -9050,8 +9069,8 @@
       "id": "joelho-0202",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP",
-        "Exame Físico"
+        "Ligamento cruzado posterior e canto posterolateral",
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TARO",
       "ano": 2025,
@@ -9095,7 +9114,7 @@
       "id": "joelho-0203",
       "tema": "Joelho",
       "subtemas": [
-        "Biomecânica"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2025,
@@ -9139,8 +9158,8 @@
       "id": "joelho-0204",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Lesão do LCP"
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2025,
@@ -9172,7 +9191,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 73,
@@ -9184,7 +9203,7 @@
       "id": "joelho-0205",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2025,
@@ -9228,7 +9247,7 @@
       "id": "joelho-0206",
       "tema": "Joelho",
       "subtemas": [
-        "Radiologia do joelho"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TARO",
       "ano": 2025,
@@ -9280,7 +9299,9 @@
     {
       "id": "joelho-0207",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Meniscos"
+      ],
       "prova": "TARO",
       "ano": 2012,
       "dificuldade": null,
@@ -9322,7 +9343,7 @@
       "id": "joelho-0208",
       "tema": "Joelho",
       "subtemas": [
-        "Biomecânica"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2012,
@@ -9365,7 +9386,7 @@
       "id": "joelho-0209",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2012,
@@ -9408,7 +9429,7 @@
       "id": "joelho-0210",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2012,
@@ -9451,7 +9472,7 @@
       "id": "joelho-0211",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2012,
@@ -9494,7 +9515,7 @@
       "id": "joelho-0212",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2012,
@@ -9537,9 +9558,9 @@
       "id": "joelho-0213",
       "tema": "Joelho",
       "subtemas": [
-        "Ortopedia pediátrica",
-        "Osteocondrite Dissecante",
-        "Menisco discoide"
+        "Joelho na criança",
+        "Cartilagem, osteocondrite e osteonecrose do joelho",
+        "Meniscos"
       ],
       "prova": "TARO",
       "ano": 2012,
@@ -9583,7 +9604,7 @@
       "id": "joelho-0214",
       "tema": "Joelho",
       "subtemas": [
-        "Biomecânica"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2012,
@@ -9626,7 +9647,7 @@
       "id": "joelho-0215",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2012,
@@ -9669,7 +9690,7 @@
       "id": "joelho-0216",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TARO",
       "ano": 2012,
@@ -9712,7 +9733,7 @@
       "id": "joelho-0217",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2011,
@@ -9755,7 +9776,7 @@
       "id": "joelho-0218",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2011,
@@ -9797,7 +9818,9 @@
     {
       "id": "joelho-0219",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TARO",
       "ano": 2011,
       "dificuldade": null,
@@ -9839,7 +9862,7 @@
       "id": "joelho-0220",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TARO",
       "ano": 2011,
@@ -9882,8 +9905,8 @@
       "id": "joelho-0221",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Lesão do LCP"
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2011,
@@ -9915,7 +9938,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 77,
@@ -9926,7 +9949,7 @@
       "id": "joelho-0222",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TARO",
       "ano": 2011,
@@ -9969,8 +9992,8 @@
       "id": "joelho-0223",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Lesão do LCP"
+        "Ligamento cruzado anterior",
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10002,7 +10025,7 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": true,
+      "subtemasPendentes": false,
       "origem": {
         "arquivo": "joelho-questoes.pdf",
         "pagina": 77,
@@ -10013,7 +10036,7 @@
       "id": "joelho-0224",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10056,7 +10079,7 @@
       "id": "joelho-0225",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10099,7 +10122,7 @@
       "id": "joelho-0226",
       "tema": "Joelho",
       "subtemas": [
-        "Radiologia do joelho"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10142,7 +10165,7 @@
       "id": "joelho-0227",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10185,7 +10208,7 @@
       "id": "joelho-0228",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10228,7 +10251,7 @@
       "id": "joelho-0229",
       "tema": "Joelho",
       "subtemas": [
-        "Osteonecrose"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10271,7 +10294,7 @@
       "id": "joelho-0230",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10314,7 +10337,7 @@
       "id": "joelho-0231",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10356,7 +10379,9 @@
     {
       "id": "joelho-0232",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Exame físico e imagem do joelho"
+      ],
       "prova": "TEOT/TARO",
       "ano": null,
       "dificuldade": null,
@@ -10397,7 +10422,9 @@
     {
       "id": "joelho-0233",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TEOT/TARO",
       "ano": null,
       "dificuldade": null,
@@ -10439,7 +10466,7 @@
       "id": "joelho-0234",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10489,7 +10516,7 @@
       "id": "joelho-0235",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10539,7 +10566,7 @@
       "id": "joelho-0236",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10582,8 +10609,7 @@
       "id": "joelho-0237",
       "tema": "Joelho",
       "subtemas": [
-        "Osteotomias",
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10626,7 +10652,7 @@
       "id": "joelho-0238",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10676,8 +10702,8 @@
       "id": "joelho-0239",
       "tema": "Joelho",
       "subtemas": [
-        "Fratura da Patela",
-        "Artrose e Artroplastia de Joelho"
+        "Patela e aparelho extensor",
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10720,7 +10746,7 @@
       "id": "joelho-0240",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10770,7 +10796,7 @@
       "id": "joelho-0241",
       "tema": "Joelho",
       "subtemas": [
-        "Menisco discoide"
+        "Meniscos"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10813,7 +10839,7 @@
       "id": "joelho-0242",
       "tema": "Joelho",
       "subtemas": [
-        "Artroscopia de joelho"
+        "Artroscopia e vias de acesso do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10856,7 +10882,7 @@
       "id": "joelho-0243",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10906,7 +10932,7 @@
       "id": "joelho-0244",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10949,7 +10975,7 @@
       "id": "joelho-0245",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -10992,7 +11018,7 @@
       "id": "joelho-0248",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT",
       "ano": 2022,
@@ -11035,8 +11061,8 @@
       "id": "joelho-0249",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA",
-        "Exame Físico"
+        "Ligamento cruzado anterior",
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -11079,7 +11105,7 @@
       "id": "joelho-0250",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -11122,7 +11148,7 @@
       "id": "joelho-0251",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2016,
@@ -11165,7 +11191,7 @@
       "id": "joelho-0252",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -11208,7 +11234,7 @@
       "id": "joelho-0253",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -11251,7 +11277,7 @@
       "id": "joelho-0254",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -11294,7 +11320,7 @@
       "id": "joelho-0255",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -11338,7 +11364,7 @@
       "id": "joelho-0256",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -11381,8 +11407,8 @@
       "id": "joelho-0257",
       "tema": "Joelho",
       "subtemas": [
-        "Ortopedia pediátrica",
-        "Menisco discoide"
+        "Joelho na criança",
+        "Meniscos"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -11425,7 +11451,9 @@
     {
       "id": "joelho-0258",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Meniscos"
+      ],
       "prova": "TEOT/TARO",
       "ano": null,
       "dificuldade": null,
@@ -11467,7 +11495,7 @@
       "id": "joelho-0259",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -11510,7 +11538,7 @@
       "id": "joelho-0260",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TEOT/TARO",
       "ano": null,
@@ -11552,7 +11580,9 @@
     {
       "id": "joelho-0261",
       "tema": "Joelho",
-      "subtemas": [],
+      "subtemas": [
+        "Patela e aparelho extensor"
+      ],
       "prova": "TARO",
       "ano": 2026,
       "dificuldade": null,
@@ -11595,7 +11625,7 @@
       "id": "joelho-0262",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2026,
@@ -11639,7 +11669,7 @@
       "id": "joelho-0263",
       "tema": "Joelho",
       "subtemas": [
-        "Osteotomias"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2026,
@@ -11683,7 +11713,7 @@
       "id": "joelho-0264",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2026,
@@ -11727,7 +11757,7 @@
       "id": "joelho-0265",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2026,
@@ -11778,7 +11808,7 @@
       "id": "joelho-0266",
       "tema": "Joelho",
       "subtemas": [
-        "Exame Físico"
+        "Exame físico e imagem do joelho"
       ],
       "prova": "TARO",
       "ano": 2026,
@@ -11822,7 +11852,7 @@
       "id": "joelho-0267",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2026,
@@ -11873,8 +11903,7 @@
       "id": "joelho-0268",
       "tema": "Joelho",
       "subtemas": [
-        "Artroscopia de tornozelo",
-        "Artroscopia de joelho"
+        "Artroscopia e vias de acesso do joelho"
       ],
       "prova": "TARO",
       "ano": 2026,
@@ -11918,7 +11947,7 @@
       "id": "joelho-0269",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCP"
+        "Ligamento cruzado posterior e canto posterolateral"
       ],
       "prova": "TARO",
       "ano": 2013,
@@ -11961,7 +11990,7 @@
       "id": "joelho-0270",
       "tema": "Joelho",
       "subtemas": [
-        "Osteocondrite Dissecante"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TARO",
       "ano": 2013,
@@ -12004,8 +12033,7 @@
       "id": "joelho-0271",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia",
-        "Biomecânica"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2013,
@@ -12048,7 +12076,7 @@
       "id": "joelho-0272",
       "tema": "Joelho",
       "subtemas": [
-        "Artrose e Artroplastia de Joelho"
+        "Artrose, osteotomias e artroplastia do joelho"
       ],
       "prova": "TARO",
       "ano": 2013,
@@ -12091,7 +12119,7 @@
       "id": "joelho-0273",
       "tema": "Joelho",
       "subtemas": [
-        "Lesões do Mecanismo Extensor"
+        "Patela e aparelho extensor"
       ],
       "prova": "TARO",
       "ano": 2013,
@@ -12134,7 +12162,7 @@
       "id": "joelho-0274",
       "tema": "Joelho",
       "subtemas": [
-        "Osteonecrose"
+        "Cartilagem, osteocondrite e osteonecrose do joelho"
       ],
       "prova": "TARO",
       "ano": 2013,
@@ -12177,7 +12205,7 @@
       "id": "joelho-0275",
       "tema": "Joelho",
       "subtemas": [
-        "Anatomia"
+        "Anatomia e biomecânica do joelho"
       ],
       "prova": "TARO",
       "ano": 2013,
@@ -12220,7 +12248,7 @@
       "id": "joelho-0276",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TARO",
       "ano": 2013,
@@ -12263,7 +12291,7 @@
       "id": "joelho-0277",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do LCA"
+        "Ligamento cruzado anterior"
       ],
       "prova": "TARO",
       "ano": 2014,

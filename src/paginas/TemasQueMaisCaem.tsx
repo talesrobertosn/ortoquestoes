@@ -3,7 +3,7 @@ import { usarPremium } from '../conta/premium'
 import { usarIndice } from '../dados/usarIndice'
 import { embaralhar } from '../dados/embaralhar'
 import { FILTROS_VAZIOS, type Indice } from '../dados/tipos'
-import { AREAS, TOP_ASSUNTOS, areaPorId, idsDoFoco, type AreaIncidencia, type Foco, type Nivel } from '../dados/incidencia'
+import { AREAS, BASE_CONTAGEM, TOP_ASSUNTOS, areaPorId, idsDoFoco, type AreaIncidencia, type Foco, type Nivel } from '../dados/incidencia'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { usarSessao } from '../estado/sessao'
@@ -75,7 +75,7 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
       <section className="ti-heroi">
         <p className="ti-heroi__selo"><Icone nome="fogo" tamanho={15} /> Temas que mais caem</p>
         <h1>Estude primeiro o que a prova mais cobra</h1>
-        <p>O ranking das áreas e dos assuntos que mais caem no TEOT e no TARO, das provas anteriores. Cada assunto abre um treino com as questões dele, começando pelas que você ainda não fez.</p>
+        <p>Contamos, uma a uma, as questões das provas oficiais do acervo (TEOT, TARO, TECOC e ENARE) e somamos por área e por assunto. O resultado é o ranking abaixo, com o número de questões de cada assunto. Cada um abre um treino, começando pelas que você ainda não fez.</p>
         {!aberto && <p className="ti-heroi__previa"><Icone nome="cadeado" tamanho={14} /> Você está vendo uma prévia. O ranking completo é do assinante.</p>}
         <ul className="ti-heroi__legenda" aria-label="Legenda">
           {([4, 3, 2, 1] as Nivel[]).map((n) => <li key={n}><NivelCobranca nivel={n} /></li>)}
@@ -85,8 +85,8 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
       <section className="cartao cartao__corpo ti-top" aria-labelledby="ti-top-titulo">
         <header className="ti-secao__cabeca">
           <div>
-            <h2 id="ti-top-titulo">Os 20 assuntos campeões</h2>
-            <p className="texto-2">Somando todas as áreas, do mais cobrado para o menos. Se o tempo está curto, comece por aqui.</p>
+            <h2 id="ti-top-titulo">Os {TOP_ASSUNTOS.length} assuntos com mais questões de prova</h2>
+            <p className="texto-2">Somando todas as áreas, do mais frequente para o menos. Se o tempo está curto, comece por aqui.</p>
           </div>
           {!aberto && <SeloAssinante />}
         </header>
@@ -99,7 +99,7 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
             return (
               <li key={`${t.area}-${t.nome}`} className="ti-top__item">
                 <span className="ti-top__posicao numerico">{i + 1}</span>
-                <span className="ti-top__nome"><strong>{t.rotulo}</strong><small>{area.nome}{ids.length ? ` · ${m.feitas} de ${m.total} feitas${m.acerto !== null ? ` · ${m.acerto}% de acerto` : ''}` : ''}</small></span>
+                <span className="ti-top__nome"><strong>{t.rotulo}</strong><small>{area.nome} · {t.n} {t.n === 1 ? 'questão' : 'questões'} de prova{ids.length ? ` · você fez ${m.feitas}${m.acerto !== null ? `, ${m.acerto}% de acerto` : ''}` : ''}</small></span>
                 {!aberto
                   ? <a className="botao ti-botao" href={href('/assinatura')}><Icone nome="cadeado" tamanho={14} /> Treinar</a>
                   : ids.length > 0
@@ -126,7 +126,7 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
         <header className="ti-secao__cabeca ti-secao__cabeca--solta">
           <div>
             <h2 id="ti-areas-titulo">Ranking das áreas</h2>
-            <p className="texto-2">Da área que mais cai para a que menos cai. Abra uma área para ver os assuntos em ordem.</p>
+            <p className="texto-2">Da área com mais questões de prova para a com menos. Abra uma área para ver os assuntos em ordem, com a contagem de cada um.</p>
           </div>
         </header>
         <ol className="ti-areas__lista">
@@ -141,8 +141,8 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
                     <span className="ti-area__posicao numerico">{i + 1}º</span>
                     <span className="ti-area__nome">
                       <strong>{area.nome}</strong>
-                      <span className="ti-area__peso" aria-label={`Peso na prova: ${area.peso} de 10`}><span style={{ width: `${area.peso * 10}%` }} /></span>
-                      <small>{m.total ? `${m.feitas} de ${m.total} questões feitas${m.acerto !== null ? ` · ${m.acerto}% de acerto` : ''}` : 'Sem questões no acervo ainda'}</small>
+                      <span className="ti-area__peso" aria-label={`${area.pct ?? 0}% das questões de prova`}><span style={{ width: `${area.peso * 10}%` }} /></span>
+                      <small>{area.pct !== undefined ? `${area.pct.toLocaleString('pt-BR')}% das questões de prova · ` : ''}{m.total ? `você fez ${m.feitas} de ${m.total}${m.acerto !== null ? `, ${m.acerto}% de acerto` : ''}` : 'Sem questões no acervo ainda'}</small>
                     </span>
                     <Icone nome="baixo" tamanho={18} />
                   </summary>
@@ -155,12 +155,13 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
                             const ids = dados.focos.get(f.nome) ?? []
                             const mf = marca(ids, respondidas)
                             const completo = ids.length > 0 && mf.feitas === ids.length
-                            if (!aberto) return <span key={f.nome} className="ti-foco">{f.nome}</span>
+                            const conta = f.n ? <span className="ti-foco__n numerico">{f.n}</span> : null
+                            if (!aberto) return <span key={f.nome} className="ti-foco">{f.nome}{conta}</span>
                             return ids.length
-                              ? <button key={f.nome} type="button" className={'ti-foco' + (completo ? ' ti-foco--feito' : '')} onClick={() => treinar(area, f)} title={`Você fez ${mf.feitas} de ${mf.total} questões deste assunto no acervo`}>
-                                  {completo && <Icone nome="certo" tamanho={13} />}{f.nome}
+                              ? <button key={f.nome} type="button" className={'ti-foco' + (completo ? ' ti-foco--feito' : '')} onClick={() => treinar(area, f)} title={`${f.n ?? 0} questões de prova · você fez ${mf.feitas} de ${mf.total}`}>
+                                  {completo && <Icone nome="certo" tamanho={13} />}{f.nome}{conta}
                                 </button>
-                              : <span key={f.nome} className="ti-foco ti-foco--sem">{f.nome}</span>
+                              : <span key={f.nome} className="ti-foco ti-foco--sem">{f.nome}{conta}</span>
                           })}
                         </div>
                       </div>
@@ -186,7 +187,7 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
       </section>
 
       <p className="ti-nota">
-        Toque em um assunto para treinar as questões dele; o sinal de visto marca os que você já fez inteiros. O ranking vem da frequência dos assuntos em provas anteriores e serve para priorizar o estudo; não é previsão do que vai cair. O <a href={href('/cronograma')}>cronograma</a> já usa esta ordem.
+        Toque em um assunto para treinar as questões dele; o sinal de visto marca os que você já fez inteiros. O número ao lado de cada assunto é quantas questões de prova oficial dele há no acervo ({BASE_CONTAGEM.toLocaleString('pt-BR')} contadas no total, sem cópias, anuladas ou questões autorais). Os níveis dividem os assuntos de cada área em quatro partes iguais, do mais frequente ao menos frequente. O ranking serve para priorizar o estudo; não é previsão do que vai cair. O <a href={href('/cronograma')}>cronograma</a> já usa esta ordem.
       </p>
     </div>
   )
