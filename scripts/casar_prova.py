@@ -64,7 +64,10 @@ def ler_questoes(pdf: Path) -> list[dict]:
                 lidas = questoes + ([atual] if atual else [])
                 if sum(1 for q in lidas if len(q["alternativas"]) >= 2) < len(lidas) / 2:
                     questoes, atual, esperado = [], None, 1
-            if m and int(m.group(1)) == esperado and (m.group(2) or "").strip() != "" or (m and int(m.group(1)) == esperado and esperado > 1 and atual and len(atual["alternativas"]) >= 2):
+            # Número sozinho na linha também abre questão (o texto vem na linha seguinte),
+            # desde que a anterior já tenha fechado as alternativas.
+            sozinho = m and not (m.group(2) or "").strip()
+            if m and int(m.group(1)) == esperado and (not sozinho or esperado == 1 or (atual and len(atual["alternativas"]) >= 2)):
                 if atual:
                     questoes.append(atual)
                 atual = {"numero": esperado, "pagina": numero_pagina, "enunciado": (m.group(2) or "").strip(), "alternativas": []}
