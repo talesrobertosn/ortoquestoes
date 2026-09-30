@@ -6,6 +6,7 @@ import { AvisoSite } from './componentes/AvisoSite'
 import { SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
 import { ErroDePagina } from './componentes/ErroDePagina'
+import { ExigeConta } from './componentes/ExigeConta'
 
 // Cada página é carregada apenas ao ser visitada. Além de reduzir o JavaScript
 // inicial, isso evita baixar o acervo completo para rotas administrativas,
@@ -164,6 +165,11 @@ export function App() {
       break
     default:
       pagina = <NaoEncontrada />
+  }
+
+  // Páginas que mostram questões: por enquanto, só com conta (ver config.ts).
+  if (['treinar', 'sessao', 'resumo', 'questao', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '')) {
+    pagina = <ExigeConta caminho={rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')}>{pagina}</ExigeConta>
   }
 
   const estreita = ['sessao', 'questao'].includes(primeiro ?? '')

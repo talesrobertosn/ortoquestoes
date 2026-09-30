@@ -34,5 +34,13 @@ export const SITE = {
  */
 export const ROTULO_SIMULADOS = 'OrtoQuestões Simulados'
 
+/**
+ * Por enquanto, ver questões e montar sessões de treino exige conta. As páginas
+ * com questões (treinar, sessão, questão, revisão, favoritas, caderno de erros,
+ * resumo e simulado nacional) mostram o convite para criar a conta a quem não
+ * entrou. Para liberar de novo, trocar para false.
+ */
+export const EXIGIR_CONTA_PARA_QUESTOES = true
+
 /** Prefixo de todas as chaves gravadas no localStorage. */
 export const PREFIXO_ARMAZENAMENTO = 'ortoquestoes:'

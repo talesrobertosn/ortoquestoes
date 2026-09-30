@@ -45,6 +45,12 @@ DIR_COMENTARIOS = DIR_ACERVO / "comentarios"
 # celular sem ganhar nada: o buscador já entendeu do que ela trata.
 POR_PAGINA = 25
 
+# Por enquanto as questões só aparecem para quem tem conta: sem páginas por
+# questão e sem a vitrine com comentários nas páginas de assunto. Estas ficam
+# só com a apresentação do assunto, os subtemas e o convite para criar a conta.
+# Para voltar a publicar as questões para o Google, basta trocar para True.
+PAGINAS_DE_QUESTAO = False
+
 ESTILO = """
 :root {
   --fundo: #f1f3f2; --superficie: #fff; --superficie-2: #f7f9f8; --texto: #12181a; --texto-2: #5b686c;
@@ -428,33 +434,44 @@ def principal() -> int:
         if pasta.exists():
             shutil.rmtree(pasta)
         pasta.mkdir(parents=True)
-        for i, questao in enumerate(publicaveis):
+        for i, questao in enumerate(publicaveis if PAGINAS_DE_QUESTAO else []):
             anterior = publicaveis[i - 1] if i > 0 else None
             proxima = publicaveis[i + 1] if i + 1 < len(publicaveis) else None
             (pasta / f"{questao['id']}.html").write_text(
                 pagina_questao(questao, comentarios[questao["id"]], tema, anterior, proxima), encoding="utf-8"
             )
-        total_paginas += len(publicaveis)
+        if PAGINAS_DE_QUESTAO:
+            total_paginas += len(publicaveis)
 
         # Vitrine: as primeiras questões completas, sem figura, na página do assunto.
-        vitrine = [q for q in publicaveis if not q.get("imagens")][:POR_PAGINA]
+        vitrine = [q for q in publicaveis if not q.get("imagens")][:POR_PAGINA] if PAGINAS_DE_QUESTAO else []
         itens = [(q, comentarios[q["id"]]) for q in vitrine]
         titulo = f"{titulo_pagina} comentadas | OrtoQuestões"
         caminho = f"questoes/{slug}.html"
 
-        corpo = [topo(titulo, resumo, caminho, dados_estruturados(itens))]
+        corpo = [topo(titulo, resumo, caminho, dados_estruturados(itens) if itens else "")]
         corpo.append(f"<h1>{esc(titulo_pagina)} comentadas</h1>")
         corpo.append(f"<p>{esc(abertura)}</p>")
-        corpo.append(
-            f'<p>O acervo tem <strong>{sum(1 for q in dados["questoes"] if not q.get("duplicataDe"))}</strong> questões de '
-            f"{esc(tema['nome']).lower()}, e <strong>{len(publicaveis)}</strong> têm página própria "
-            "com gabarito e conceito-chave. Abaixo, "
-            f"{len(vitrine)} delas com o comentário completo e, no fim, a lista de todas.</p>"
-        )
-        corpo.append(
-            f'<a class="acao" href="../#/treinar?temas={slug}">'
-            f"Treinar {esc(tema['nome']).lower()} no site</a>"
-        )
+        if PAGINAS_DE_QUESTAO:
+            corpo.append(
+                f'<p>O acervo tem <strong>{sum(1 for q in dados["questoes"] if not q.get("duplicataDe"))}</strong> questões de '
+                f"{esc(tema['nome']).lower()}, e <strong>{len(publicaveis)}</strong> têm página própria "
+                "com gabarito e conceito-chave. Abaixo, "
+                f"{len(vitrine)} delas com o comentário completo e, no fim, a lista de todas.</p>"
+            )
+            corpo.append(
+                f'<a class="acao" href="../#/treinar?temas={slug}">'
+                f"Treinar {esc(tema['nome']).lower()} no site</a>"
+            )
+        else:
+            corpo.append(
+                "<p>As questões, com o gabarito da banca e o comentário de cada alternativa, "
+                "ficam no site, para quem tem conta. Criar a conta é grátis e leva menos de um minuto.</p>"
+            )
+            corpo.append(
+                f'<a class="acao" href="../#/entrar?modo=criar&amp;voltar=/treinar?temas={slug}">'
+                f"Criar conta grátis e treinar {esc(tema['nome']).lower()}</a>"
+            )
         corpo.append(
             '<div class="aviso"><p style="margin:0">As questões são transcritas das provas '
             "originais, sem reescrita, e o gabarito é o da própria banca. Os comentários se baseiam "
@@ -470,20 +487,27 @@ def principal() -> int:
             )
             + "</p></div>"
         )
-        corpo.append(f"<h2>{len(vitrine)} questões comentadas</h2>")
-        for questao, comentario in itens:
-            corpo.append(montar_questao(questao, comentario))
-        corpo.append(f"<h2>Todas as questões de {esc(tema['nome'].lower())}</h2>")
         por_subtema: dict[str, list[dict]] = {}
         for questao in publicaveis:
             por_subtema.setdefault((questao.get("subtemas") or ["Outros"])[0], []).append(questao)
-        for subtema in sorted(por_subtema, key=lambda s: s.lower()):
-            corpo.append(f"<h3>{esc(subtema)} <span class=\"meta\">· {len(por_subtema[subtema])}</span></h3>")
+        if PAGINAS_DE_QUESTAO:
+            corpo.append(f"<h2>{len(vitrine)} questões comentadas</h2>")
+            for questao, comentario in itens:
+                corpo.append(montar_questao(questao, comentario))
+            corpo.append(f"<h2>Todas as questões de {esc(tema['nome'].lower())}</h2>")
+            for subtema in sorted(por_subtema, key=lambda s: s.lower()):
+                corpo.append(f"<h3>{esc(subtema)} <span class=\"meta\">· {len(por_subtema[subtema])}</span></h3>")
+                corpo.append('<ul class="lista-questoes">')
+                for questao in por_subtema[subtema]:
+                    corpo.append(
+                        f'<li><a href="./{slug}/{esc(questao["id"])}.html">{esc(resumir(questao["enunciado"], 140))}</a></li>'
+                    )
+                corpo.append("</ul>")
+        else:
+            corpo.append(f"<h2>Assuntos de {esc(tema['nome'].lower())} no acervo</h2>")
             corpo.append('<ul class="lista-questoes">')
-            for questao in por_subtema[subtema]:
-                corpo.append(
-                    f'<li><a href="./{slug}/{esc(questao["id"])}.html">{esc(resumir(questao["enunciado"], 140))}</a></li>'
-                )
+            for subtema in sorted(por_subtema, key=lambda s: s.lower()):
+                corpo.append(f"<li>{esc(subtema)}</li>")
             corpo.append("</ul>")
         corpo.append("<h2>Outros assuntos</h2>")
         corpo.append('<p><a href="./">Todos os assuntos do acervo</a></p>')
@@ -507,7 +531,10 @@ def principal() -> int:
         "percorre as alternativas. No site dá para treinar com filtros, revisar no momento "
         "certo e acompanhar o desempenho.</p>"
     )
-    corpo.append('<a class="acao" href="../#/treinar">Começar a treinar</a>')
+    corpo.append(
+        '<a class="acao" href="../#/treinar">Começar a treinar</a>' if PAGINAS_DE_QUESTAO
+        else '<a class="acao" href="../#/entrar?modo=criar&amp;voltar=/treinar">Criar conta grátis e começar a treinar</a>'
+    )
     corpo.append("<h2>Assuntos</h2>")
     corpo.append('<ul class="temas">')
     for slug, nome, publicadas, total in gerados:
@@ -515,7 +542,8 @@ def principal() -> int:
         corpo.append(
             f'<li><a href="./{slug}.html"><strong>{esc(nome)}</strong></a>'
             f'<br><span class="meta">{esc(resumo_tema)} '
-            f"{total} questões no acervo, {publicadas} com página própria.</span></li>"
+            + (f"{total} questões no acervo, {publicadas} com página própria." if PAGINAS_DE_QUESTAO else "")
+            + "</span></li>"
         )
     corpo.append("</ul>")
     corpo.append(rodape())

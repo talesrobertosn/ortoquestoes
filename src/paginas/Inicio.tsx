@@ -18,6 +18,8 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
+import { contasDisponiveis } from '../conta/supabase'
+import { EXIGIR_CONTA_PARA_QUESTOES } from '../config'
 import { planoRevisao } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
 import { calcularStreak } from '../estado/streak'
@@ -71,6 +73,8 @@ export function Inicio() {
   const { indice, carregando } = usarIndice()
   const { iniciar } = usarSessao()
   const { sessao: conta } = usarConta()
+  // Sem conta, as questões ficam fechadas (ver config.ts): o botão principal leva ao cadastro.
+  const pedeConta = EXIGIR_CONTA_PARA_QUESTOES && contasDisponiveis && !conta
   const [sessao] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
 
   const { contexto } = usarContextoLocal('')
@@ -195,7 +199,11 @@ export function Inicio() {
           <p className="inicio-heroi__sub">{cabecalhoDoDia.incentivo}</p>
           {indice && contagens && indice.total > 0 && (
             <div className="inicio-heroi__acoes">
-              {sessaoEmAndamento ? (
+              {pedeConta ? (
+                <a className="botao botao--claro botao--grande" href={href('/conta?modo=criar&voltar=%2Ftreinar')}>
+                  <Icone nome="raio" tamanho={18} /> Criar conta grátis e treinar
+                </a>
+              ) : sessaoEmAndamento ? (
                 <a className="botao botao--claro botao--grande" href={href('/sessao')}>
                   <Icone nome="raio" tamanho={18} /> Continuar sessão · {Object.keys(sessao!.respostas).length}/{sessao!.ids.length}
                 </a>
@@ -204,7 +212,7 @@ export function Inicio() {
                   <Icone nome="raio" tamanho={18} /> {textoDoDia.acao}
                 </button>
               )}
-              <a className="botao botao--vidro botao--grande" href={href('/treinar')}>Montar minha sessão</a>
+              {!pedeConta && <a className="botao botao--vidro botao--grande" href={href('/treinar')}>Montar minha sessão</a>}
             </div>
           )}
         </div>

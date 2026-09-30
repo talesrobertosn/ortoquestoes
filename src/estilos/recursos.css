@@ -259,3 +259,18 @@
 
 /* ---- Sessão: deslizar para trocar de questão ------------------------------ */
 @keyframes dica-deslizar { 0% { opacity: 0; transform: translate(-50%, 8px); } 8%, 88% { opacity: 1; transform: translate(-50%, 0); } 100% { opacity: 0; transform: translate(-50%, 4px); } }
+
+/* ---- Convite para criar conta nas páginas com questões ------------------- */
+.exige-conta {
+  max-width: 34rem; margin: 2.5rem auto; padding: 2.2rem 1.8rem; text-align: center;
+  background: var(--superficie); border: 1px solid var(--traco); border-radius: var(--raio-grande); box-shadow: var(--sombra-media);
+}
+.exige-conta__simbolo { display: inline-flex; margin-bottom: 1rem; }
+.exige-conta h1 { margin: 0 0 .6rem; font-size: clamp(1.4rem, 3.4vw, 1.8rem); line-height: 1.15; letter-spacing: -0.02em; text-wrap: balance; }
+.exige-conta > p { margin: 0 auto 1.2rem; max-width: 30rem; color: var(--texto-2); }
+.exige-conta__lista { list-style: none; padding: 0; margin: 0 auto 1.5rem; display: grid; gap: .5rem; justify-content: center; text-align: left; }
+.exige-conta__lista li { display: flex; align-items: center; gap: .55rem; color: var(--texto); }
+.exige-conta__lista svg { color: var(--verdete); flex: none; }
+.exige-conta__acoes { display: flex; flex-direction: column; gap: .6rem; }
+.exige-conta__acoes .botao { justify-content: center; }
+@media (max-width: 30rem) { .exige-conta { margin: 1rem auto; padding: 1.6rem 1.1rem; } }
