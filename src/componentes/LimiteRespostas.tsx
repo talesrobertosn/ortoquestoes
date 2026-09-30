@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { EVENTO_DADOS } from '../estado/armazenamento'
-import { LIMITES_HABILITADOS, lerBloqueioDiario, limparBloqueioDiario, type EstadoLimite } from '../estado/limiteDiario'
+import { LIMITES_HABILITADOS, conviteLimiteJaVisto, lerBloqueioDiario, limparBloqueioDiario, marcarConviteLimiteVisto, type EstadoLimite } from '../estado/limiteDiario'
 import { formatarDuracao } from '../dados/tipos'
 import { chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
@@ -89,22 +89,16 @@ export function AvisoBloqueioDiario({ caminho, variante = 'faixa' }: { caminho: 
   }
   // No resumo da sessão o dia cumprido já aparece em um cartão próprio.
   if (recolhida || caminho === '/resumo') return null
-  const blocos: [number, string][] = [[Math.floor(faltam / 3600), 'h'], [Math.floor((faltam % 3600) / 60), 'min'], [faltam % 60, 's']]
+  const horas = Math.floor(faltam / 3600), minutos = Math.floor((faltam % 3600) / 60)
+  const tempo = horas > 0 ? `${horas}h ${String(minutos).padStart(2, '0')}min` : `${Math.max(1, minutos)}min`
   return <aside className="aviso-bloqueio-topo" aria-label="Limite diário de respostas">
     <div className="conteudo aviso-bloqueio-topo__interno">
-      <span className="aviso-bloqueio-topo__selo" aria-hidden="true"><b className="numerico">20</b><small>de 20</small></span>
+      <Icone nome="relogio" tamanho={16} />
       <span className="aviso-bloqueio-topo__texto">
-        <strong>Meta gratuita de hoje cumprida.</strong>
-        <span>Continue agora sem limite e apoie o projeto.</span>
-      </span>
-      <span className="aviso-bloqueio-topo__relogio">
-        <span className="aviso-bloqueio-topo__rotulo">Grátis de novo em</span>
-        <time className="numerico" dateTime={liberaEm} aria-live="off" aria-label={formatarDuracao(faltam)}>
-          {blocos.map(([valor, unidade]) => <span key={unidade} className="aviso-bloqueio-topo__bloco"><b>{String(valor).padStart(2, '0')}</b><small>{unidade}</small></span>)}
-        </time>
+        Suas 20 questões grátis de hoje acabaram. Voltam em <time className="numerico" dateTime={liberaEm} aria-label={formatarDuracao(faltam)}>{tempo}</time>.
       </span>
       <a className="aviso-bloqueio-topo__cta" href={href('/assinatura')}>Continuar sem limite</a>
-      <button type="button" className="aviso-bloqueio-topo__fechar" aria-label="Recolher aviso" title="Recolher aviso" onClick={() => definirRecolhidaAte(liberaEm)}><Icone nome="fechar" tamanho={16} /></button>
+      <button type="button" className="aviso-bloqueio-topo__fechar" aria-label="Recolher aviso" title="Recolher aviso" onClick={() => definirRecolhidaAte(liberaEm)}><Icone nome="fechar" tamanho={14} /></button>
     </div>
   </aside>
 }
@@ -216,4 +210,24 @@ export function DiaCumprido({ erradas = 0 }: { erradas?: number }) {
       </p>
     </div>
   </section>
+}
+
+/**
+ * Abre o convite do limite uma vez por dia, sozinho, quando as 20 grátis de
+ * hoje já acabaram e a pessoa ainda não o viu (por exemplo, ao voltar para a
+ * página inicial ou ao chegar no resumo).
+ */
+export function ConviteLimiteDoDia() {
+  const { sessao } = usarConta()
+  const assinante = usarAssinante(sessao)
+  const [liberaEm] = useState(() => (LIMITES_HABILITADOS ? lerBloqueioDiario() : null))
+  const [aberto, definirAberto] = useState(false)
+  useEffect(() => {
+    if (!sessao || assinante || !liberaEm || conviteLimiteJaVisto(liberaEm)) return
+    const t = window.setTimeout(() => { marcarConviteLimiteVisto(liberaEm); definirAberto(true) }, 700)
+    return () => window.clearTimeout(t)
+  }, [sessao, assinante, liberaEm])
+  if (!liberaEm) return null
+  const estado: EstadoLimite = { permitido: false, paywallAtivo: true, ilimitado: false, consumidas: 20, limite: 20, restantes: 0, liberaEm, sequencia: 0 }
+  return <PainelLimite estado={estado} aberto={aberto} aoFechar={() => definirAberto(false)} />
 }

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type TouchEvent } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type TouchEvent } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
 import type { Questao } from '../dados/tipos'
@@ -12,7 +12,7 @@ import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { usarConta } from '../conta/ContextoConta'
 import { usarFavoritos, usarSessao } from '../estado/sessao'
-import { saldoGratuitoHoje, usarLimiteDiario } from '../estado/limiteDiario'
+import { marcarConviteLimiteVisto, saldoGratuitoHoje, usarLimiteDiario } from '../estado/limiteDiario'
 import { usarAssinante } from '../conta/plano'
 import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 import { href, navegar } from '../util/rotas'
@@ -31,6 +31,8 @@ export function Sessao() {
   const inicioToque = useRef<number | null>(null)
   const { estado: estadoLimite, autorizar } = usarLimiteDiario()
   const [limiteAberto, definirLimiteAberto] = useState(false)
+  // Depois da 20ª, fechar o convite leva ao resumo da sessão.
+  const [resumoAoFechar, definirResumoAoFechar] = useState(false)
   const chavesResposta = useRef(new Map<string, string>())
   const assinante = usarAssinante(conta)
   const [avisoSaldoFechado, definirAvisoSaldoFechado] = useState(false)
@@ -74,6 +76,19 @@ export function Sessao() {
     return () => window.clearInterval(relogio)
   }, [sessao])
 
+  // Acabou a cota grátis de hoje: seguir para uma questão ainda não respondida
+  // abre o convite; fechar leva ao resumo da sessão.
+  const limiteZerado = !!(estadoLimite?.paywallAtivo && !estadoLimite.ilimitado && estadoLimite.restantes === 0)
+  const irAdiante = useCallback(() => {
+    if (!sessao) return
+    const proxima = sessao.ids[posicao + 1]
+    if (limiteZerado && (!proxima || !sessao.respostas[proxima])) {
+      if (estadoLimite) marcarConviteLimiteVisto(estadoLimite.liberaEm)
+      definirResumoAoFechar(true); definirLimiteAberto(true); return
+    }
+    irPara(posicao + 1)
+  }, [sessao, posicao, limiteZerado, estadoLimite, irPara])
+
   useEffect(() => {
     if (!sessao || painelAberto) return
     function aoTeclar(evento: KeyboardEvent) {
@@ -83,7 +98,7 @@ export function Sessao() {
       const tecla = evento.key.toLowerCase()
       if (evento.key === 'ArrowRight' || tecla === 'n') {
         evento.preventDefault()
-        irPara(posicao + 1)
+        irAdiante()
       } else if (evento.key === 'ArrowLeft' || tecla === 'p') {
         evento.preventDefault()
         irPara(posicao - 1)
@@ -97,7 +112,7 @@ export function Sessao() {
     }
     document.addEventListener('keydown', aoTeclar)
     return () => document.removeEventListener('keydown', aoTeclar)
-  }, [sessao, posicao, irPara, painelAberto])
+  }, [sessao, posicao, irPara, irAdiante, painelAberto])
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' })
@@ -153,6 +168,7 @@ export function Sessao() {
   )
 
   function avancar() {
+    if (limiteZerado) { irAdiante(); return }
     if (posicao + 1 < total) irPara(posicao + 1)
     else concluir()
   }
@@ -185,7 +201,7 @@ export function Sessao() {
       <button
         type="button"
         className="seta-lateral seta-lateral--direita nao-imprime"
-        onClick={() => irPara(posicao + 1)}
+        onClick={irAdiante}
         disabled={posicao + 1 >= total}
         aria-label="Próxima questão"
         title="Próxima questão (→)"
@@ -268,7 +284,7 @@ export function Sessao() {
               if (!permissao.permitido) {
                 // Com respostas na sessão, o limite vira fechamento: o resumo
                 // mostra o dia cumprido em vez de um painel no meio da questão.
-                if (permissao.paywallAtivo && !permissao.falhaValidacao && respondidas > 0) { concluir(); return }
+                if (permissao.paywallAtivo && !permissao.falhaValidacao) { marcarConviteLimiteVisto(permissao.liberaEm); definirResumoAoFechar(respondidas > 0) }
                 definirLimiteAberto(true); return
               }
               responder(questaoAtual.id, letra, correta, segundos, confianca)
@@ -353,7 +369,7 @@ export function Sessao() {
       </Painel>
 
       <PortaoConta aberto={portaoContaAberto} aoFechar={() => definirPortaoContaAberto(false)} />
-      <PainelLimite estado={estadoLimite} aberto={limiteAberto} aoFechar={() => definirLimiteAberto(false)} />
+      <PainelLimite estado={estadoLimite} aberto={limiteAberto} aoFechar={() => { definirLimiteAberto(false); if (resumoAoFechar) { definirResumoAoFechar(false); concluir() } }} />
     </div>
   )
 }

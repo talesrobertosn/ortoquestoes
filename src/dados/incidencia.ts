@@ -192,14 +192,40 @@ export function pesoIncidenciaDoTema(slug: string): number {
  * Nível de incidência de cada questão do acervo, pelo subtema mais cobrado
  * que ela tem dentro do próprio tema. Questões sem subtema mapeado ficam de fora.
  */
-export function nivelPorQuestao(indice: Indice): Map<string, Nivel> {
-  const niveis = new Map<string, Nivel>()
-  const subir = (id: string, nivel: Nivel) => { if (nivel > (niveis.get(id) ?? 0)) niveis.set(id, nivel) }
+export interface FocoDaQuestao { nome: string; nivel: Nivel | 0; ordem: number }
+
+const cacheFocos = new WeakMap<Indice, Map<string, FocoDaQuestao>>()
+/**
+ * O assunto principal de cada questão: o mais cobrado entre os subtemas dela
+ * (desempate pela ordem do ranking). Sem assunto mapeado, fica o primeiro
+ * subtema da questão, com nível 0. Calculado uma vez por acervo.
+ */
+export function focoPorQuestao(indice: Indice): Map<string, FocoDaQuestao> {
+  const pronto = cacheFocos.get(indice)
+  if (pronto) return pronto
+  const mapa = new Map<string, FocoDaQuestao>()
+  const melhor = (id: string, novo: FocoDaQuestao) => {
+    const atual = mapa.get(id)
+    if (!atual || novo.nivel > atual.nivel || (novo.nivel === atual.nivel && novo.ordem < atual.ordem)) mapa.set(id, novo)
+  }
+  let ordem = 0
   for (const area of AREAS) {
     // Recorte inteiro que já é muito cobrado (trauma pediátrico): nível mínimo 3.
-    if (area.subtema) for (const id of idsDoFoco(indice, area)) subir(id, 3)
-    for (const foco of area.focos) for (const id of idsDoFoco(indice, area, foco)) subir(id, foco.nivel)
+    if (area.subtema) { const o = ordem++; for (const id of idsDoFoco(indice, area)) melhor(id, { nome: area.subtema, nivel: 3, ordem: o + 500 }) }
+    for (const foco of area.focos) { const o = ordem++; for (const id of idsDoFoco(indice, area, foco)) melhor(id, { nome: foco.nome, nivel: foco.nivel, ordem: o }) }
   }
+  for (const q of indice.questoes) {
+    if (mapa.has(q.id)) continue
+    const primeiro = q.s.length ? indice.subtemas[q.s[0]] : null
+    mapa.set(q.id, { nome: primeiro ?? 'Outros assuntos', nivel: 0, ordem: 100000 })
+  }
+  cacheFocos.set(indice, mapa)
+  return mapa
+}
+
+export function nivelPorQuestao(indice: Indice): Map<string, Nivel> {
+  const niveis = new Map<string, Nivel>()
+  for (const [id, f] of focoPorQuestao(indice)) if (f.nivel) niveis.set(id, f.nivel)
   return niveis
 }
 

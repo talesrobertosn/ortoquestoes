@@ -14,7 +14,7 @@ import type { RegistroQuestao } from '../estado/revisao'
 import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
 import { proximaConquista } from '../estado/conquistas'
 import { href, navegar } from '../util/rotas'
-import { DiaCumprido } from '../componentes/LimiteRespostas'
+import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
 import { ConviteCompartilhar } from '../componentes/ConviteCompartilhar'
 import { lerBloqueioDiario } from '../estado/limiteDiario'
 
@@ -303,6 +303,7 @@ export function Resumo() {
       </section>
 
       <DiaCumprido erradas={dados.erradas.length} />
+      <ConviteLimiteDoDia />
       {/* Sessão que foi bem, sem o limite do dia na mesma tela: um convite, no máximo. */}
       <ConviteCompartilhar ativo={!emAndamento && dados.respondidas.length >= 5 && pct !== null && pct >= 60 && !lerBloqueioDiario()} />
 

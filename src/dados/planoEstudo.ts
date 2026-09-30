@@ -1,6 +1,5 @@
 import type { Indice } from './tipos'
-import { embaralhar } from './embaralhar'
-import { AREAS, idsDoFoco, nivelPorQuestao, pesoIncidenciaDoTema, type Nivel } from './incidencia'
+import { AREAS, focoPorQuestao, idsDoFoco, pesoIncidenciaDoTema, type Nivel } from './incidencia'
 
 /**
  * Cronograma até a prova. Tudo é recalculado a cada dia a partir do que a pessoa
@@ -49,7 +48,9 @@ export function diasDeEstudo(inicio: Date, fim: Date, folgas: number[]): number 
 export interface RegistroMinimo { c: boolean | null; q?: number; historico?: Array<{ em: number; correta: boolean | null }> }
 
 export interface TemaPlano { slug: string; nome: string; faltam: number; acerto: number | null; respondidas: number; reforcado: boolean; incidencia: number }
-export interface SemanaPlano { inicio: Date; fim: Date; diasEstudo: number; temas: Array<{ slug: string; nome: string; n: number; focos: string[] }>; total: number; atual: boolean }
+/** Um assunto dentro do tema da semana: quantas questões dele entram e quanto ele cai. */
+export interface AssuntoSemana { nome: string; n: number; nivel: Nivel | 0 }
+export interface SemanaPlano { inicio: Date; fim: Date; diasEstudo: number; temas: Array<{ slug: string; nome: string; n: number; focos: string[]; assuntos: AssuntoSemana[] }>; total: number; atual: boolean }
 export interface CalculoPlano {
   diasAteProva: number
   diasEstudoRestantes: number
@@ -140,6 +141,38 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
 
   const semanas: SemanaPlano[] = []
   const segunda = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
+  // As questões de cada tema na ordem em que o cronograma vai passar por elas
+  // (a mesma da sessão do dia), para dizer quais assuntos entram em cada semana.
+  const focos = focoPorQuestao(indice)
+  const livresPorTema = new Map<string, string[]>()
+  const usadasPorTema = new Map<string, number>()
+  for (const q of indice.questoes) {
+    if (q.dup || q.an === 1 || respondidas[q.id]) continue
+    const slug = indice.temas[q.t]?.slug ?? String(q.t)
+    const lista = livresPorTema.get(slug) ?? []
+    lista.push(q.id)
+    livresPorTema.set(slug, lista)
+  }
+  const assuntosDe = (slug: string, n: number): AssuntoSemana[] => {
+    let lista = livresPorTema.get(slug)
+    if (!lista) return []
+    if (!(lista as string[] & { ordenada?: boolean }).ordenada) {
+      lista = ordenarPorFoco(lista, focos)
+      ;(lista as string[] & { ordenada?: boolean }).ordenada = true
+      livresPorTema.set(slug, lista)
+    }
+    const inicio = usadasPorTema.get(slug) ?? 0
+    usadasPorTema.set(slug, inicio + n)
+    const contagem = new Map<string, AssuntoSemana>()
+    for (const id of lista.slice(inicio, inicio + n)) {
+      const f = focos.get(id)
+      const nome = f?.nome ?? 'Outros assuntos'
+      const item = contagem.get(nome) ?? { nome, n: 0, nivel: f?.nivel ?? 0 }
+      item.n++
+      contagem.set(nome, item)
+    }
+    return [...contagem.values()]
+  }
   const fila = cotas.map((c) => ({ ...c }))
   for (let inicio = segunda; inicio < fimEstudo && semanas.length < 80; inicio = new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate() + 7)) {
     const fimSemana = new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate() + 7)
@@ -151,7 +184,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     while (capacidade > 0 && fila.length) {
       const atual = fila[0]
       const n = Math.min(atual.n, capacidade)
-      temasSemana.push({ slug: atual.t.slug, nome: atual.t.nome, n, focos: focosPendentes.get(atual.t.slug) ?? [] })
+      temasSemana.push({ slug: atual.t.slug, nome: atual.t.nome, n, focos: focosPendentes.get(atual.t.slug) ?? [], assuntos: assuntosDe(atual.t.slug, n) })
       atual.n -= n; capacidade -= n
       if (atual.n <= 0) fila.shift()
     }
@@ -204,15 +237,36 @@ export function focosQueFaltam(indice: Indice, respondidas: Record<string, unkno
   return resultado
 }
 
+/** Semente estável a partir do id, para sortear sempre na mesma ordem. */
+function hashId(id: string): number {
+  let h = 2166136261
+  for (let i = 0; i < id.length; i++) { h ^= id.charCodeAt(i); h = Math.imul(h, 16777619) }
+  return h >>> 0
+}
+
+/**
+ * Ordem fixa das questões de um tema no cronograma: primeiro os assuntos que
+ * mais caem, um assunto de cada vez (na ordem do ranking), e dentro de cada
+ * assunto uma ordem sorteada, mas sempre a mesma.
+ */
+export function ordenarPorFoco(ids: string[], focos: Map<string, { nivel: number; ordem: number }>): string[] {
+  return [...ids].sort((a, b) => {
+    const fa = focos.get(a), fb = focos.get(b)
+    return (fb?.nivel ?? 0) - (fa?.nivel ?? 0) || (fa?.ordem ?? 1e6) - (fb?.ordem ?? 1e6) || hashId(a) - hashId(b)
+  })
+}
+
+function ordemDoTema(indice: Indice, livres: string[]): string[] {
+  return ordenarPorFoco(livres, focoPorQuestao(indice))
+}
+
 /**
  * As questões de hoje dentro de um tema: só as que ainda não foram feitas,
  * começando pelos assuntos que mais caem (sorteadas dentro de cada nível).
  */
-export function idsDoDia(indice: Indice, slug: string, respondidas: Record<string, unknown>, n: number, semente: number): string[] {
+export function idsDoDia(indice: Indice, slug: string, respondidas: Record<string, unknown>, n: number): string[] {
   const tema = indice.temas.findIndex((t) => t.slug === slug)
   if (tema < 0) return []
-  const niveis = nivelPorQuestao(indice)
   const livres = indice.questoes.filter((q) => q.t === tema && !q.dup && q.an !== 1 && !respondidas[q.id]).map((q) => q.id)
-  const porNivel = [4, 3, 2, 1, 0].map((nivel) => embaralhar(livres.filter((id) => (niveis.get(id) ?? 0) === nivel), semente))
-  return porNivel.flat().slice(0, Math.max(0, n))
+  return ordemDoTema(indice, livres).slice(0, Math.max(0, n))
 }

@@ -27,6 +27,7 @@ export interface OpcoesSessao {
   nacional?: string
   /** Início vindo do servidor, para o cronômetro bater em qualquer aparelho. */
   criadaEm?: number
+  origem?: 'cronograma'
 }
 
 export function novaSessao(
@@ -47,6 +48,7 @@ export function novaSessao(
     simulado: opcoes.simulado ?? false,
     limiteSegundos: opcoes.limiteSegundos ?? null,
     ...(opcoes.nacional ? { nacional: opcoes.nacional } : {}),
+    ...(opcoes.origem ? { origem: opcoes.origem } : {}),
   }
 }
 

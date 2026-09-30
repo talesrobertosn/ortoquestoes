@@ -2887,3 +2887,6 @@ a.rs-marco:hover { color: var(--texto); border-color: var(--traco-forte); }
 .jc__caixa.pw .jc__fechar { background: rgba(255, 255, 255, 0.9); color: #0d2623; }
 .pw-oferta__cta, .pw-oferta__cta:visited { color: #fff !important; }
 .pw-oferta__preco b { font-variant-numeric: tabular-nums; }
+.rodape-grade { grid-template-columns: 1.4fr 1fr 1fr 1fr; }
+.rodape-coluna a.rodape-coluna__destaque { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 800; color: var(--verdete); }
+@media (max-width: 52rem) { .rodape-grade { grid-template-columns: 1fr 1fr; } .rodape-marca { grid-column: 1 / -1; } }

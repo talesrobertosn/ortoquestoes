@@ -671,3 +671,39 @@ li:nth-child(-n + 3) > .ti-area .ti-area__posicao { color: #c2412f; }
 .pe-entenda summary svg { color: var(--verdete); }
 .pe-entenda ul { margin: 0.5rem 0 0; padding-left: 1.1rem; display: grid; gap: 0.5rem; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.55; }
 .pe-entenda strong { color: var(--texto); }
+
+/* ---- Cronograma: semanas que abrem com os assuntos, e retomar a sessão -------- */
+.pe-semana.pe-semana--detalhe { display: block; padding: 0.35rem 0 0.35rem 1.4rem; }
+.pe-semana--detalhe > details > summary { list-style: none; cursor: pointer; }
+.pe-semana--detalhe > details > summary::-webkit-details-marker { display: none; }
+.pe-semana__linha { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr) 3.6rem; gap: 0.75rem; align-items: center; min-height: 44px; padding: 0.4rem 0.4rem 0.4rem 0; border-radius: 12px; }
+.pe-semana__linha:hover { background: var(--superficie-2); }
+.pe-semana__total { display: inline-flex; align-items: center; justify-content: flex-end; gap: 0.25rem; }
+.pe-semana__total svg { color: var(--texto-2); transition: transform 0.15s ease; }
+.pe-semana--detalhe details[open] .pe-semana__total svg { transform: rotate(180deg); }
+.pe-semana__corpo { display: grid; gap: 0.8rem; margin: 0.3rem 0 0.6rem; padding: 0.9rem 1rem; border-radius: 14px; background: var(--superficie-2); border: var(--borda); }
+.pe-semana__explica { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.5; }
+.pe-semana__tema { display: grid; gap: 0.45rem; }
+.pe-semana__tema-nome { display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem; margin: 0; }
+.pe-semana__tema-nome span { color: var(--texto-2); font-size: var(--corpo-menor); font-weight: 700; }
+.pe-assuntos { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.3rem; }
+.pe-assunto { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 0.6rem; padding: 0.4rem 0.65rem; border-radius: 10px; background: var(--superficie); border: var(--borda); font-size: var(--corpo-menor); }
+.pe-assunto small { padding: 0.05rem 0.45rem; border-radius: 999px; font-size: 0.7rem; font-weight: 800; background: var(--ouro-veu); color: var(--ouro-texto); }
+.pe-assunto--4 small { background: linear-gradient(135deg, var(--ouro), #c9962f); color: #fff; }
+.pe-assunto b { min-width: 2.2rem; text-align: right; color: var(--verdete); }
+.pe-assunto--resto { color: var(--texto-2); background: transparent; border-style: dashed; }
+@media (max-width: 40rem) {
+  .pe-semana__linha { grid-template-columns: minmax(0, 1fr) auto; }
+  .pe-semana__linha .pe-semana__temas { grid-column: 1 / -1; grid-row: 2; }
+  .pe-assunto { grid-template-columns: minmax(0, 1fr) auto; }
+  .pe-assunto small { display: none; }
+}
+.pe-retomar { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1rem; padding: 1rem 1.2rem; border-radius: var(--raio-grande); background: linear-gradient(135deg, var(--ouro-veu), var(--superficie) 75%); border: 1px solid color-mix(in srgb, var(--ouro) 45%, var(--traco)); box-shadow: var(--sombra-media); }
+.pe-retomar__icone { display: grid; place-items: center; width: 2.8rem; height: 2.8rem; border-radius: 14px; background: linear-gradient(135deg, #c9962f, var(--ouro)); color: #fff; }
+.pe-retomar div { display: grid; gap: 0.25rem; }
+.pe-retomar small { color: var(--texto-2); }
+.pe-retomar__barra { display: block; height: 0.45rem; margin-top: 0.2rem; border-radius: 999px; background: var(--superficie-2); overflow: hidden; }
+.pe-retomar__barra span { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #f2c14e, var(--ouro)); }
+@media (max-width: 40rem) { .pe-retomar { grid-template-columns: auto minmax(0, 1fr); } .pe-retomar .botao { grid-column: 1 / -1; justify-content: center; } }
+.cr-destaque__link { justify-self: start; color: var(--sobre-heroi); font-size: var(--corpo-menor); font-weight: 700; }
+.pe-semanas__dica { margin: 0.2rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }

@@ -90,7 +90,8 @@ export function usarLimiteDiario() {
       if (normalizado.paywallAtivo) registrarAssinante(normalizado.ilimitado)
       if (normalizado.paywallAtivo && !normalizado.ilimitado && normalizado.restantes !== null) gravar(CHAVE_SALDO, { dia: chaveDia(), restantes: normalizado.restantes, limite: normalizado.limite })
       else if (!normalizado.paywallAtivo || normalizado.ilimitado) gravar(CHAVE_SALDO, null)
-      if (!normalizado.permitido && !normalizado.falhaValidacao && normalizado.paywallAtivo) registrarBloqueioDiario(normalizado.liberaEm)
+      // A 20ª resposta já fecha o dia: o aviso e o convite aparecem sem esperar a 21ª tentativa.
+      if ((!normalizado.permitido && !normalizado.falhaValidacao && normalizado.paywallAtivo) || (normalizado.permitido && normalizado.paywallAtivo && !normalizado.ilimitado && normalizado.restantes === 0)) registrarBloqueioDiario(normalizado.liberaEm)
       else if (normalizado.permitido && (normalizado.ilimitado || !normalizado.paywallAtivo || (normalizado.restantes ?? 0) > 0)) limparBloqueioDiario()
       definirEstado(normalizado)
       return normalizado
@@ -103,4 +104,13 @@ export function usarLimiteDiario() {
     } finally { definirValidando(false) }
   }, [])
   return { estado, definirEstado, autorizar, validando }
+}
+
+const CHAVE_CONVITE = 'limite:convite-visto'
+/** O convite do limite aparece uma vez por dia bloqueado, sozinho; depois só quando a pessoa tenta responder. */
+export function conviteLimiteJaVisto(liberaEm: string): boolean {
+  return ler<string | null>(CHAVE_CONVITE, null) === liberaEm
+}
+export function marcarConviteLimiteVisto(liberaEm: string): void {
+  gravar(CHAVE_CONVITE, liberaEm)
 }

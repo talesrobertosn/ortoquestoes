@@ -6,6 +6,8 @@ import { TOP_ASSUNTOS, areaPorId } from '../dados/incidencia'
 import { calcularPlano, type PlanoSalvo } from '../dados/planoEstudo'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
+import { CHAVE_SESSAO } from '../estado/sessao'
+import type { EstadoSessao } from '../dados/tipos'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
 import { Degustacao, SeloAssinante } from './Premium'
@@ -68,6 +70,9 @@ function CaixaCronograma() {
   const { indice } = usarIndice()
   const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
   const [plano, definirPlano] = useState<PlanoSalvo | null | undefined>(undefined)
+  const [sessaoLocal] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
+  const pendente = sessaoLocal && !sessaoLocal.concluidaEm && sessaoLocal.origem === 'cronograma' && Object.keys(sessaoLocal.respostas).length < sessaoLocal.ids.length
+    ? { feitas: Object.keys(sessaoLocal.respostas).length, total: sessaoLocal.ids.length } : null
 
   useEffect(() => {
     if (!premium) { definirPlano(null); return }
@@ -98,7 +103,10 @@ function CaixaCronograma() {
           <div className="cr-destaque__meta"><strong className="numerico">{calculo.feitasHoje}</strong><span>de {calculo.metaDiaria} questões</span></div>
           <span className="cr-destaque__barra"><span style={{ width: `${pct}%` }} /></span>
           <p>{calculo.naRetaFinal ? 'Reta final: erros, dúvidas e simulado.' : calculo.hoje ? <>Hoje: <strong>{calculo.hoje.nome}</strong>{calculo.hoje.focos[0] ? `, começando por ${calculo.hoje.focos[0].toLowerCase()}` : ''}.</> : 'Meta de hoje cumprida. Bom trabalho!'}</p>
-          <a className="botao botao--claro botao--grande" href={href('/cronograma')}>{calculo.hoje && calculo.faltaHoje ? 'Continuar o cronograma' : 'Abrir o cronograma'}</a>
+          {pendente
+            ? <a className="botao botao--claro botao--grande" href={href('/sessao')}>Continuar de onde parei · {pendente.feitas}/{pendente.total}</a>
+            : <a className="botao botao--claro botao--grande" href={href('/cronograma')}>{calculo.hoje && calculo.faltaHoje ? 'Começar a meta de hoje' : 'Abrir o cronograma'}</a>}
+          {pendente && <a className="cr-destaque__link" href={href('/cronograma')}>Ver o cronograma completo</a>}
         </div>
       </section>
     )

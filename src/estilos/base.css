@@ -2378,3 +2378,12 @@ kbd {
 .aviso-saldo span { flex: 1; }
 .aviso-saldo__fechar { flex: none; display: grid; place-items: center; width: 1.75rem; height: 1.75rem; margin: -.15rem -.2rem 0 0; border: 0; border-radius: 999px; background: transparent; color: var(--texto-2); cursor: pointer; }
 .aviso-saldo__fechar:hover { background: var(--superficie); color: var(--texto); }
+
+/* Faixa do limite diário, versão discreta: uma linha só. */
+.aviso-bloqueio-topo .aviso-bloqueio-topo__interno { display: flex !important; align-items: center; gap: .6rem; padding-block: .4rem; font-size: var(--meta); }
+.aviso-bloqueio-topo__interno > svg { flex: none; color: #ffe3a3; }
+.aviso-bloqueio-topo .aviso-bloqueio-topo__texto { display: block; flex: 1; min-width: 0; padding-right: 0; font-size: var(--meta); color: rgba(255, 255, 255, .82); }
+.aviso-bloqueio-topo__texto time { font-weight: 800; color: #fff; }
+.aviso-bloqueio-topo .aviso-bloqueio-topo__cta { flex: none; padding: .3rem .8rem; min-height: 0; font-size: var(--meta); border-radius: 999px; box-shadow: none; }
+.aviso-bloqueio-topo .aviso-bloqueio-topo__fechar { position: static; width: 1.8rem; height: 1.8rem; }
+@media (max-width: 40rem) { .aviso-bloqueio-topo .aviso-bloqueio-topo__cta { display: none; } }

@@ -11,6 +11,13 @@ const ESTUDAR = [
   ['/dados', 'Seu desempenho'],
   ['/ranking', 'Ranking'],
 ] as const
+/** Recursos do assinante: o cronograma em primeiro, porque é o que mais ajuda quem está perto da prova. */
+const ASSINANTE = [
+  ['/cronograma', 'Cronograma'],
+  ['/temas-que-mais-caem', 'Temas que mais caem'],
+  ['/simulado-nacional', 'Simulado Nacional'],
+  ['/ligas', 'Liga da residência'],
+] as const
 const PROJETO = [
   ['/sobre', 'O projeto'],
   ['/contato', 'Suporte e contato'],
@@ -41,6 +48,10 @@ export function Rodape() {
           <nav className="rodape-coluna" aria-label="Estudar">
             <p className="rodape-coluna__titulo">Estudar</p>
             {ESTUDAR.map(([destino, rotulo]) => <a key={destino} href={href(destino)}>{rotulo}</a>)}
+          </nav>
+          <nav className="rodape-coluna" aria-label="Recursos do assinante">
+            <p className="rodape-coluna__titulo">Assinante</p>
+            {ASSINANTE.map(([destino, rotulo], i) => <a key={destino} href={href(destino)} className={i === 0 ? 'rodape-coluna__destaque' : undefined}>{i === 0 && <Icone nome="rota" tamanho={15} />}{rotulo}</a>)}
           </nav>
           <nav className="rodape-coluna" aria-label="Projeto">
             <p className="rodape-coluna__titulo">Projeto</p>

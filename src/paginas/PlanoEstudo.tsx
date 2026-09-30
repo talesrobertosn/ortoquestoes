@@ -6,6 +6,7 @@ import { FILTROS_VAZIOS, type Indice } from '../dados/tipos'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { usarSessao } from '../estado/sessao'
+import type { EstadoSessao } from '../dados/tipos'
 import { calcularPlano, dataLocal, idsDoDia, respondidasNoAcervo, ROTULO_INTENSIDADE, simularMeta, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
 import { Carregando } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
@@ -59,7 +60,7 @@ export function PlanoEstudo() {
     if (!indice || !calculo?.hoje) return
     if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
     const filtros = { ...FILTROS_VAZIOS, temas: [calculo.hoje.slug], situacao: 'naoRespondidas' as const, embaralhar: true, limite: calculo.hoje.n }
-    iniciar(filtros, idsDoDia(indice, calculo.hoje.slug, respondidas, calculo.hoje.n, Date.now()))
+    iniciar(filtros, idsDoDia(indice, calculo.hoje.slug, respondidas, calculo.hoje.n), { origem: 'cronograma' })
     navegar('/sessao')
   }
 
@@ -71,7 +72,7 @@ export function PlanoEstudo() {
   return (
     <div className="empilha-2 pe">
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
-      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={comecarHoje} />
+      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={comecarHoje} pendente={sessaoPendente(sessao)} />
       <div className="linha">
         <button type="button" className="botao" onClick={() => definirEditando(true)}><Icone nome="lapis" tamanho={16} /> Ajustar o cronograma</button>
       </div>
@@ -79,7 +80,16 @@ export function PlanoEstudo() {
   )
 }
 
-function VisaoCronograma({ plano, calculo, aberto, aoComecar }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void }) {
+/** Sessão do cronograma que ficou pela metade (a pessoa fechou o site no meio). */
+function sessaoPendente(sessao: EstadoSessao | null): { feitas: number; total: number; tema: string } | null {
+  if (!sessao || sessao.concluidaEm || sessao.origem !== 'cronograma') return null
+  const feitas = Object.keys(sessao.respostas).length
+  if (feitas >= sessao.ids.length) return null
+  return { feitas, total: sessao.ids.length, tema: sessao.filtros.temas[0] ?? '' }
+}
+
+function VisaoCronograma({ plano, calculo, aberto, aoComecar, pendente = null }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; pendente?: { feitas: number; total: number; tema: string } | null }) {
+  const nomeTemaPendente = pendente ? calculo.temas.find((t) => t.slug === pendente.tema)?.nome ?? 'o tema do dia' : ''
   const ritmoTexto = !aberto || Math.abs(calculo.ritmo) <= 5 || calculo.esperadoAteHoje < 20
     ? { classe: 'em-dia', texto: aberto ? 'Em dia com o cronograma' : 'Começando hoje' }
     : calculo.ritmo > 0 ? { classe: 'frente', texto: `${calculo.ritmo}% à frente do cronograma` } : { classe: 'atras', texto: `${-calculo.ritmo}% atrás do cronograma` }
@@ -89,13 +99,34 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar }: { plano: PlanoSa
   const visiveis = aberto ? semanas : semanas.slice(0, SEMANAS_PREVIA)
 
   const linhaSemana = (s: CalculoPlano['semanas'][number], i: number) => (
-    <li key={i} className={'pe-semana' + (s.atual ? ' pe-semana--atual' : '')}>
-      <span className="pe-semana__data">{curta(s.inicio)} – {curta(s.fim)}{s.atual && <em>esta semana</em>}</span>
-      <div className="pe-semana__temas">
-        {s.temas.length ? s.temas.map((t) => <span key={t.slug} className="pe-chip" title={t.focos.length ? `Foco: ${t.focos.join(', ')}` : undefined}>{t.nome}<b className="numerico">{t.n}</b></span>) : <span className="texto-2">Folga do cronograma: revisão e questões livres.</span>}
-        {(s.atual || !aberto) && s.temas[0]?.focos.length > 0 && <span className="pe-semana__foco"><Icone nome="fogo" tamanho={13} /> Foco: {s.temas.flatMap((t) => t.focos.slice(0, 2)).slice(0, 4).join(' · ')}</span>}
-      </div>
-      <span className="pe-semana__total numerico">{s.total}</span>
+    <li key={i} className={'pe-semana pe-semana--detalhe' + (s.atual ? ' pe-semana--atual' : '')}>
+      <details open={s.atual && aberto}>
+        <summary className="pe-semana__linha">
+          <span className="pe-semana__data">{curta(s.inicio)} – {curta(s.fim)}{s.atual && <em>esta semana</em>}</span>
+          <span className="pe-semana__temas">
+            {s.temas.length ? s.temas.map((t) => <span key={t.slug} className="pe-chip">{t.nome}<b className="numerico">{t.n}</b></span>) : <span className="texto-2">Folga do cronograma: revisão e questões livres.</span>}
+          </span>
+          <span className="pe-semana__total numerico">{s.total}<Icone nome="baixo" tamanho={14} /></span>
+        </summary>
+        {s.temas.length > 0 && <div className="pe-semana__corpo">
+          <p className="pe-semana__explica">{s.diasEstudo} {s.diasEstudo === 1 ? 'dia' : 'dias'} de estudo, cerca de {Math.round(s.total / Math.max(1, s.diasEstudo))} questões por dia. Os assuntos entram nesta ordem, do que mais cai para o que menos cai:</p>
+          {s.temas.map((t) => (
+            <div key={t.slug} className="pe-semana__tema">
+              <p className="pe-semana__tema-nome"><strong>{t.nome}</strong><span className="numerico">{t.n} questões</span></p>
+              <ul className="pe-assuntos">
+                {t.assuntos.slice(0, 8).map((a) => (
+                  <li key={a.nome} className={a.nivel ? `pe-assunto pe-assunto--${a.nivel}` : 'pe-assunto'}>
+                    <span>{a.nome}</span>
+                    {a.nivel >= 3 && <small>{a.nivel === 4 ? 'cai muito' : 'cai bastante'}</small>}
+                    <b className="numerico">{a.n}</b>
+                  </li>
+                ))}
+                {t.assuntos.length > 8 && <li className="pe-assunto pe-assunto--resto"><span>e mais {t.assuntos.length - 8} assuntos</span><b className="numerico">{t.assuntos.slice(8).reduce((soma, a) => soma + a.n, 0)}</b></li>}
+              </ul>
+            </div>
+          ))}
+        </div>}
+      </details>
     </li>
   )
 
@@ -115,6 +146,18 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar }: { plano: PlanoSa
         <small>{calculo.faltaHoje ? `${calculo.feitasHoje} feitas · faltam ${calculo.faltaHoje}` : 'Meta de hoje cumprida'}</small>
       </div>
     </section>
+
+    {aberto && pendente && (
+      <section className="pe-retomar" aria-label="Sessão em andamento">
+        <span className="pe-retomar__icone" aria-hidden="true"><Icone nome="raio" tamanho={22} /></span>
+        <div>
+          <strong>Você parou no meio: {pendente.feitas} de {pendente.total} questões de {nomeTemaPendente}</strong>
+          <small>Continue de onde parou. As que você já respondeu ficam salvas.</small>
+          <span className="pe-retomar__barra"><span style={{ width: `${Math.round((pendente.feitas / pendente.total) * 100)}%` }} /></span>
+        </div>
+        <a className="botao botao--principal botao--grande" href={href('/sessao')}>Continuar de onde parei</a>
+      </section>
+    )}
 
     <section className="pe-hoje">
       <div>
@@ -136,7 +179,7 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar }: { plano: PlanoSa
           <a className="botao botao--principal botao--grande" href={href('/treinar?situacao=erradas')}>Refazer os erros</a>
           <a className="botao" href={href('/simulado-nacional')}>Simulado Nacional</a>
         </> : calculo.hoje ? (
-          <button type="button" className="botao botao--principal botao--grande" onClick={aoComecar}>Começar agora</button>
+          <button type="button" className={'botao botao--grande ' + (pendente ? '' : 'botao--principal')} onClick={aoComecar}>{pendente ? 'Começar uma nova' : 'Começar agora'}</button>
         ) : (
           <a className="botao botao--principal" href={href('/revisao')}>Ir para a revisão</a>
         )}
@@ -182,7 +225,7 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar }: { plano: PlanoSa
 
     <section className="cartao cartao__corpo pe-semanas" aria-labelledby="pe-semanas-titulo">
       <header className="pe-semanas__cabeca">
-        <h2 id="pe-semanas-titulo">Semana a semana</h2>
+        <div><h2 id="pe-semanas-titulo">Semana a semana</h2><p className="pe-semanas__dica">Toque numa semana para ver quais assuntos entram nela.</p></div>
         <SeloAssinante />
       </header>
       <ol className="pe-linha">
