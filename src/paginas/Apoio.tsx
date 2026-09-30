@@ -108,7 +108,8 @@ export function Sobre() {
           <span className="pj-cartao__icone"><Icone nome="mapa" tamanho={20} /></span>
           <h2>O acervo</h2>
           <p>
-            As questões são transcritas das provas sem reescrita nem correção do enunciado. O
+            As questões são transcritas dos cadernos oficiais, sem reescrita nem correção do enunciado; os
+            do TARO estão na página pública da <a href="https://sbot.org.br/comissoes/sobre-a-sbot-comissao-ensino-treinamento/taro/" target="_blank" rel="noopener noreferrer">Comissão de Ensino e Treinamento da SBOT</a>. O
             gabarito vem da própria prova ou, quando a banca não publica um oficial, de uma resposta
             justificada e sinalizada como tal. Anuladas ficam marcadas e não contam no desempenho.
           </p>
