@@ -33,8 +33,11 @@ if (!economia) {
   const quandoOcioso = (tarefa: () => void) =>
     typeof window.requestIdleCallback === 'function' ? window.requestIdleCallback(tarefa, { timeout: 6000 }) : setTimeout(tarefa, 3000)
   window.addEventListener('load', () => quandoOcioso(() => {
-    void import('./paginas/Treinar')
-    void import('./paginas/Sessao')
-    void import('./paginas/Resumo')
+    // Falhar aqui não é problema: é só adiantamento (e a página, quando for
+    // aberta de verdade, trata o erro).
+    const ignorar = () => undefined
+    import('./paginas/Treinar').catch(ignorar)
+    import('./paginas/Sessao').catch(ignorar)
+    import('./paginas/Resumo').catch(ignorar)
   }), { once: true })
 }

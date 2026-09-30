@@ -5,6 +5,7 @@ import { Rodape } from './componentes/Rodape'
 import { AvisoSite } from './componentes/AvisoSite'
 import { SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
+import { ErroDePagina } from './componentes/ErroDePagina'
 
 // Cada página é carregada apenas ao ser visitada. Além de reduzir o JavaScript
 // inicial, isso evita baixar o acervo completo para rotas administrativas,
@@ -176,9 +177,11 @@ export function App() {
       {primeiro !== 'sessao' && <AvisoSite />}
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
+          <ErroDePagina caminho={rota.caminho}>
           <Suspense fallback={<p className="estado" role="status">Carregando…</p>}>
             {pagina}
           </Suspense>
+          </ErroDePagina>
         </div>
       </main>
       {/* Durante a sessão, nada abaixo da questão: foco no estudo. */}
