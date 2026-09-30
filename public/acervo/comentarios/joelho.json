@@ -1495,58 +1495,59 @@
   "conferido": false
  },
  "joelho-0128": {
-  "conceito": "### O'Connor: padrões de lesão meniscal\nClassificação morfológica artroscópica (padrões longitudinal, horizontal, oblíquo/retalho, radial e as variações complexas). Na sequência cobrada pela banca, as lesões ==degenerativas== (complexas, de tecido desgastado) correspondem ao ==tipo V==.\n\n### A lesão degenerativa\n- Paciente **acima de 40 a 50 anos**, sem trauma importante.\n- Padrão **complexo**, horizontal, com superfície fibrilada.\n- Frequentemente com **artrose** associada.\n\n### O que a evidência diz\nEm lesões degenerativas **sem bloqueio mecânico**, a **meniscectomia artroscópica** não supera a **fisioterapia** (vários ensaios randomizados). Primeiro, tratamento conservador.\n\n### Quando operar\nBloqueio verdadeiro, fragmento instável que trava, falha do conservador.\n\n> **Na prova:** O'Connor degenerativa = ==tipo V== (pela banca).",
-  "correta": "**V.**",
   "incorretas": {
-   "B": "**Outro padrão.**",
-   "C": "**Outro padrão.**",
-   "D": "**Outro padrão.**"
+   "B": "**Tipo IV não é o rótulo degenerativo pedido.** A morfologia e a qualidade do tecido precisam ser descritas, mas o número cobrado para degeneração é V.",
+   "C": "**Tipo III representa outra categoria morfológica nessa sequência.** Não corresponde ao padrão degenerativo identificado pela questão.",
+   "D": "**Tipo II também não é a categoria degenerativa.** Evite escolher o número pela idade do paciente sem reconhecer a convenção específica da classificação."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O tipo V é o degenerativo na classificação cobrada.** A classificação de O'Connor organiza lesões meniscais por morfologia, e a banca associa o padrão degenerativo ao tipo V. O rótulo numérico é útil para a questão, mas o raciocínio clínico exige descrever também localização, extensão, padrão do traço, qualidade do tecido e estabilidade do fragmento.\n\n**Como reconhecer a degeneração.** Em pessoas de meia-idade ou mais velhas, o menisco pode apresentar tecido desgastado e ruptura complexa ou horizontal sem um trauma único importante. É comum coexistir osteoartrose, que também pode explicar a dor. Uma alteração meniscal na ressonância não prova, por si só, que ela seja a fonte dos sintomas.\n\n**Tratamento não é sinônimo de meniscectomia.** Sem bloqueio verdadeiro por fragmento deslocado, o manejo inicial costuma priorizar exercícios terapêuticos e controle da artrose associada. Cirurgia é ponderada em situações selecionadas, como bloqueio mecânico persistente ou falha de tratamento conservador bem conduzido, sempre buscando preservar o máximo de menisco possível.",
+  "correta": "**Tipo V.** É o código atribuído à lesão meniscal degenerativa na classificação de O'Connor adotada pela banca.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0129": {
-  "conceito": "### Fatores de pior prognóstico no reparo cartilaginoso/osteocondral\n- **Idade** acima de ~40 a 50 anos.\n- **Perda meniscal** no mesmo compartimento.\n- **Tabagismo**.\n- **Obesidade**.\n- **Desalinhamento** (varo/valgo) não corrigido.\n- **Instabilidade** ligamentar.\n- Lesões **múltiplas**, bipolares (\"kissing\"), com artrose.\n- Sintomas de longa duração, cirurgias prévias.\n\n### O tamanho\nO tamanho orienta a **técnica**, mas o limiar de pior prognóstico é bem maior que 1 cm:\n- Pequenas (até ~2 cm²): microfratura, mosaicoplastia.\n- Grandes (acima de 2 a 4 cm²): **ACI/MACI**, aloenxerto osteocondral.\n\nPor isso ==lesão maior que 1 cm==, isoladamente, é a opção que **não** piora o prognóstico.\n\n> **Na prova:** entre as opções, não piora o prognóstico = ==lesão >1 cm==.",
-  "correta": "**Lesão maior que 1 cm.**",
   "incorretas": {
-   "A": "**Piora.**",
-   "B": "**Piora.**",
-   "C": "**Piora.**"
+   "A": "**Idade acima de 50 anos pode reduzir o potencial de reparo.** Também aumenta a chance de artrose difusa, situação diferente de uma lesão focal em joelho preservado.",
+   "B": "**Perda meniscal aumenta a carga na cartilagem.** Sem restaurar ou compensar essa proteção, a superfície reparada permanece sob sobrecarga.",
+   "C": "**Tabagismo é fator desfavorável modificável.** Seus efeitos sobre vascularização e cicatrização justificam considerá-lo no planejamento cirúrgico."
   },
-  "geradoEm": "2026-09-23",
+  "alerta": "O gabarito oficial é D, mas “lesão maior que 1 cm” não informa se a medida é diâmetro ou área, nem estabelece limite superior. Lesões muito grandes podem piorar resultados de procedimentos específicos. A leitura defensável é que ultrapassar apenas 1 cm, isoladamente, não é fator prognóstico desfavorável consistente como os demais itens.",
+  "conceito": "**Reparo de cartilagem depende do ambiente articular.** Uma lesão focal pode ser tratada com técnicas diferentes conforme profundidade, área, idade e demanda do paciente. Contudo, o procedimento tem menor chance de êxito duradouro quando persiste sobrecarga do compartimento, por exemplo após perda meniscal, desalinhamento ou instabilidade não corrigidos.\n\n**Fatores do paciente também contam.** Idade acima de 50 anos frequentemente se associa a menor potencial reparador e a doença articular mais difusa. Tabagismo pode prejudicar cicatrização e é fator desfavorável modificável. Esses achados não funcionam como proibições absolutas, mas pesam mais na avaliação prognóstica que um diâmetro pouco acima de 1 cm.\n\n**Tamanho orienta técnica, não um único sim ou não.** Pequenas lesões podem receber reparo medular ou transplante osteocondral conforme indicação; defeitos maiores podem exigir enxertos ou terapias celulares. A medida deve ser expressa em área, geralmente cm², e interpretada junto com osso subcondral e integridade do compartimento.",
+  "correta": "**Lesão maior que 1 cm, tomada isoladamente.** O ponto de corte citado é pequeno e mal especificado para ser, sozinho, fator de pior prognóstico comparável aos demais.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0130": {
-  "conceito": "### Aloenxerto no LCA\n**Vantagens (verdadeiras):**\n- **Menor tempo** cirúrgico (sem coleta).\n- Sem **morbidade da área doadora**: melhor **cosmese**, preserva o **mecanismo extensor** e os flexores.\n- Útil em **revisões** e multiligamentares.\n\n**A falsa:** ==\"maior sucesso em atletas\"==.\n- Em **jovens e atletas**, o aloenxerto tem **taxa de rerruptura** várias vezes maior que o autoenxerto (sobretudo aloenxertos **irradiados** ou quimicamente processados).\n- Incorporação mais **lenta**; menor resistência inicial após esterilização.\n\n### Quando é boa escolha\nPaciente **mais velho**, menos demanda, revisão, lesões multiligamentares.\n\n> **Na prova:** falso sobre aloenxerto do LCA = ==maior sucesso em atletas== (é o contrário).",
-  "correta": "**Maior sucesso em atletas.**\n- É a falsa: nesse grupo o aloenxerto falha mais.",
   "incorretas": {
-   "B": "**Verdadeira.**",
-   "C": "**Verdadeira.**",
-   "D": "**Verdadeira.**"
+   "B": "**Melhor efeito cosmético é vantagem possível.** Não há incisão adicional para retirada de tendão no paciente, embora a técnica principal ainda deixe cicatrizes.",
+   "C": "**Menor tempo cirúrgico é plausível.** O cirurgião não precisa colher e preparar um enxerto autólogo, apesar de o tempo total variar com o procedimento.",
+   "D": "**O mecanismo extensor pode ser preservado.** O aloenxerto evita retirar o tendão patelar do próprio joelho, diferentemente do autoenxerto osso-tendão-osso."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Aloenxerto evita a retirada no próprio paciente.** Na reconstrução do LCA, isso elimina a morbidade de uma área doadora, pode reduzir o tempo de cirurgia e poupar o tendão patelar ou os flexores. A ausência de incisão para coleta também pode melhorar o resultado cosmético. É uma alternativa útil em reconstruções multiligamentares e algumas revisões.\n\n**O benefício logístico não equivale a melhor resultado esportivo.** Estudos em pacientes jovens e fisicamente exigentes identificaram maior risco de falha com aloenxerto que com autoenxerto, especialmente em cenários de alta demanda e conforme processamento do tecido. Incorporação biológica, tipo de enxerto, esterilização e retorno ao esporte influenciam o risco. Assim, afirmar sucesso superior em atletas inverte a preocupação principal.\n\n**Escolha individualizada.** Idade, nível de atividade, enxertos disponíveis, cirurgias prévias e preferências do paciente entram na decisão. “Preservar o mecanismo extensor” é vantagem particularmente clara quando a comparação é com retirada do tendão patelar autólogo, não uma promessa de ausência de qualquer complicação.",
+  "correta": "**“Maior sucesso em atletas” é a afirmação falsa.** Jovens com alta demanda esportiva tendem a apresentar maior risco de falha com aloenxerto do que com autoenxerto.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0131": {
-  "conceito": "### O que muda a evolução da artrose\n==Perda de peso== em quem tem sobrepeso ou obesidade:\n- Cada quilo perdido reduz várias vezes a carga no joelho a cada passo.\n- Perda de ~5 a 10% do peso melhora **dor e função** e associa-se a menor progressão estrutural.\n- Somada a **exercício** (fortalecimento, aeróbico), é a base do tratamento.\n\n### O que é sintomático, com evidência limitada\n- **Ácido hialurônico** intra-articular: efeito modesto sobre a dor.\n- **Glucosamina e condroitina:** evidência inconsistente.\n- **Acupuntura:** benefício pequeno, possivelmente inespecífico.\n- **Corticoide intra-articular:** alívio de curto prazo.\n\n### Nenhum fármaco\nAinda não há droga comprovadamente **modificadora** da doença.\n\n> **Na prova:** o que melhora a evolução da artrose = ==perda de peso== (IMC >25).",
-  "correta": "**Perda de peso em paciente com IMC acima de 25.**",
   "incorretas": {
-   "A": "**Sintomático.**",
-   "C": "**Evidência inconsistente.**",
-   "D": "**Sintomático.**"
+   "A": "**Ácido hialurônico é intervenção sintomática de benefício incerto ou modesto.** Não há comprovação consistente de que altere a progressão estrutural da artrose.",
+   "C": "**Glucosamina e condroitina têm evidência heterogênea.** Não substituem controle de peso e exercícios como medidas centrais de tratamento.",
+   "D": "**Acupuntura pode ser usada para sintomas em contextos selecionados.** Não é a opção com evidência de alterar a evolução da osteoartrose."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Peso corporal é carga repetida sobre o joelho.** Em pessoa com IMC acima de 25, reduzir peso diminui a exigência mecânica a cada passo e pode melhorar dor, função e capacidade de exercício. Associar alimentação adequada e fortalecimento torna o tratamento mais sustentável. Entre as opções da pergunta, é a intervenção com melhor fundamento para influenciar favoravelmente o curso clínico da artrose.\n\n**Não prometa regeneração da cartilagem.** Melhora de sintomas é bem demonstrada; redução de progressão estrutural é mais difícil de provar e depende de intensidade e manutenção da perda ponderal. Nenhuma das alternativas deve ser apresentada como cura ou como medicamento comprovadamente modificador da osteoartrose.\n\n**As demais têm papel diferente.** Ácido hialurônico e acupuntura são propostos para alívio sintomático, com magnitude de benefício variável e sem demonstração consistente de proteção estrutural. Glucosamina e condroitina têm resultados heterogêneos, sem evidência robusta de mudança na evolução da doença. Exercício, educação e manejo de comorbidades continuam centrais mesmo após a perda de peso.",
+  "correta": "**Perda de peso quando há excesso ponderal.** Reduz carga articular e oferece benefício clínico sustentado quando integrada a exercícios e manutenção de hábitos.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0132": {
-  "conceito": "### O índice de Insall-Salvati\nComprimento do **tendão patelar** (do polo inferior da patela à tuberosidade) ÷ **maior comprimento diagonal da patela**, na radiografia em perfil (joelho a ~30° de flexão).\n- **Normal:** ~0,8 a 1,2.\n- ==Acima de 1,2==: **patela alta**. Após trauma, com perda da extensão, sugere **ruptura do tendão patelar**.\n- Abaixo de 0,8: **patela baixa** (ruptura do **quadricipital**, fibrose pós-cirúrgica).\n\n### Outros índices\n- **Caton-Deschamps:** distância do polo inferior da **superfície articular** da patela à tíbia ÷ comprimento da superfície articular. Alta acima de 1,2; útil após osteotomia da TAT.\n- **Blackburne-Peel.**\n- **Insall-Salvati modificado.**\n\n### Patela alta crônica\nFator de **instabilidade patelar** (engata tarde na tróclea); pode indicar distalização da TAT.\n\n> **Na prova:** Insall-Salvati ==acima de 1,2== = patela alta, sugere lesão do tendão patelar.",
-  "correta": "**1,2.**",
   "incorretas": {
-   "A": "**Exagerado.**",
-   "B": "**Exagerado.**",
-   "C": "**Limite inferior.**\n- Abaixo disso, patela baixa."
+   "B": "**Índice acima de 2 seria muito elevado.** Não é necessário aguardar essa magnitude para reconhecer patela alta ou suspeitar de ruptura.",
+   "C": "**Valor de 0,8 fica próximo ao limite inferior normal.** Relações abaixo disso sugerem patela baixa, não a ascensão esperada na ruptura patelar.",
+   "A": "**Índice de 1,5 também indica patela alta, mas ultrapassa o ponto de corte pedido.** O limite clássico começa acima de 1,2."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O índice de Insall-Salvati compara dois comprimentos.** Na radiografia lateral, mede-se o comprimento do tendão patelar entre o polo inferior da patela e a tuberosidade tibial e divide-se pelo maior comprimento da patela. Valores em torno de 0,8 a 1,2 são usuais; relação superior a 1,2 indica patela alta.\n\n**Patela alta não é sinônimo de ruptura.** Após trauma com incapacidade de extensão ativa, ascensão aguda da patela sugere ruptura do tendão patelar, que perdeu sua contenção distal. Contudo, patela alta também pode ser variação prévia e fator de risco para instabilidade femoropatelar. Comparação com o lado oposto, palpação do defeito e, se necessário, ultrassom ou ressonância esclarecem o diagnóstico.\n\n**O contraste ajuda a memorizar.** Ruptura do tendão quadricipital pode deixar a patela mais baixa, embora outras causas de patela baixa existam. O índice é uma medida de posição, não exame capaz de identificar sozinho qual estrutura rompeu.",
+  "correta": "**Acima de 1,2.** Esse valor define patela alta pelo índice clássico e, no contexto traumático adequado, levanta suspeita de ruptura do tendão patelar.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0133": {
@@ -1561,14 +1562,14 @@
   "conferido": false
  },
  "joelho-0134": {
-  "conceito": "### Lesões meniscais no jovem\n- Tipo mais comum: ==longitudinal== (vertical), por trauma, muitas vezes periférica e associada ao LCA.\n- A longitudinal extensa pode virar **alça de balde** (bloqueio).\n- **Menisco discoide** lateral é causa frequente de lesão na criança.\n\n### No adulto mais velho\nDegenerativas, horizontais, complexas.\n\n### Por que isso é boa notícia\nLesões longitudinais **periféricas** em crianças e adolescentes têm **ótimo potencial de cicatrização** (menisco mais vascularizado na criança): a regra é **suturar**, evitando meniscectomia (que leva a artrose precoce).\n\n> **Na prova:** lesão meniscal mais comum no jovem = ==longitudinal==.",
-  "correta": "**Longitudinal.**",
   "incorretas": {
-   "A": "**Menos frequente.**",
-   "C": "**Variante da longitudinal.**",
-   "D": "**Menos frequente.**"
+   "A": "**Ruptura radial não é o padrão mais frequente cobrado.** Ela atravessa as fibras circunferenciais e pode comprometer muito a função mesmo quando pequena.",
+   "C": "**Alça de balde é uma ruptura longitudinal deslocada.** Pode causar bloqueio mecânico, mas não substitui o padrão longitudinal como categoria básica da resposta.",
+   "D": "**Traço oblíquo pode formar um retalho instável.** Não é a morfologia mais habitual indicada para essa faixa etária."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O padrão do jovem é predominantemente traumático.** Em crianças e adolescentes, o menisco costuma ter tecido preservado e a ruptura típica é longitudinal, paralela às fibras circunferenciais. Lesões periféricas podem ter boa capacidade de cicatrização pelo suprimento vascular, especialmente quando tratadas cedo e com estabilidade ligamentar adequada.\n\n**Uma alça de balde não é categoria independente de origem.** Ela resulta de uma lesão longitudinal extensa cujo fragmento central se desloca para a incisura e pode bloquear a extensão. Portanto, a presença dessa forma grave não muda qual é o padrão básico mais frequente perguntado. Lesões radiais e oblíquas existem, mas não são a resposta epidemiológica clássica nessa faixa etária.\n\n**Preservar o menisco importa ainda mais no jovem.** Quando a localização, o tecido e o padrão permitem, o reparo é preferido à retirada, pois a meniscectomia eleva a pressão de contato e favorece artrose precoce. No menisco discoide lateral, especialmente relevante na infância, o tratamento pode envolver regularização com preservação de borda e sutura de instabilidades.",
+  "correta": "**Lesão longitudinal.** É o padrão de ruptura meniscal mais associado ao trauma em crianças e adolescentes nesta classificação.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0135": {
