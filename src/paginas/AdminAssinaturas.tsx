@@ -7,6 +7,7 @@ import { AdminConteudo, type VistaConteudo } from '../componentes/admin/AdminCon
 import { AdminCrescimento } from '../componentes/admin/AdminCrescimento'
 import { AdminConfiguracoes } from '../componentes/admin/AdminConfiguracoes'
 import { AdminUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
+import { usarLidos } from '../componentes/admin/lidos'
 import {
   PLANOS, STATUS_ASSINATURA, STATUS_EVENTO, TIPOS_EVENTO, baixarCsv, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
 } from '../componentes/admin/formatos'
@@ -78,6 +79,7 @@ export function AdminAssinaturas() {
   const [erroNovo, definirErroNovo] = useState('')
   const [pendenciasConteudo, definirPendenciasConteudo] = useState<number | null>(null)
   const [atualizadoEm, definirAtualizadoEm] = useState<Date | null>(null)
+  const lidosPagamento = usarLidos('pagamento')
 
   const carregar = useCallback(async () => {
     if (!sessao) return
@@ -113,7 +115,7 @@ export function AdminAssinaturas() {
 
   if (!sessao) return <article className="empilha limite-leitura"><h1>Painel do administrador</h1><p>Entre na sua conta para continuar.</p><a className="botao" href={href('/conta')}>Entrar</a></article>
 
-  const errosPagamento = eventos?.filter(ev => ev.status_processamento === 'erro').length ?? 0
+  const errosPagamento = eventos?.filter(ev => ev.status_processamento === 'erro' && !lidosPagamento.lidos.has(String(ev.id))).length ?? 0
   const contadores: Partial<Record<Aba, number>> = {
     usuarios: usuarios?.length, assinaturas: assinaturas?.filter(vigente).length,
     pagamentos: errosPagamento || undefined, conteudo: pendenciasConteudo || undefined,
@@ -141,7 +143,7 @@ export function AdminAssinaturas() {
       {aba === 'geral' && <VisaoGeral resumo={resumo} usuarios={usuarios} assinaturas={assinaturas} errosPagamento={errosPagamento} mensagens={pendenciasConteudo} irPara={trocarAba} />}
       {aba === 'usuarios' && usuarios && <AdminUsuarios usuarios={usuarios} />}
       {aba === 'assinaturas' && <Assinaturas linhas={assinaturas} />}
-      {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} recarregar={carregar} />}
+      {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} recarregar={carregar} lidos={lidosPagamento.lidos} marcar={lidosPagamento.marcar} />}
       {aba === 'crescimento' && <AdminCrescimento assinaturas={assinaturas} />}
       {aba === 'configuracoes' && <AdminConfiguracoes />}
       {/* Montada sempre (escondida fora da aba) para o contador de pendências aparecer na barra. */}
@@ -261,9 +263,11 @@ function Assinaturas({ linhas }: { linhas: LinhaAssinatura[] }) {
   </section>
 }
 
-function Pagamentos({ eventos, recarregar }: { eventos: LinhaEvento[]; recarregar: () => Promise<void> }) {
+function Pagamentos({ eventos, recarregar, lidos, marcar }: { eventos: LinhaEvento[]; recarregar: () => Promise<void>; lidos: Set<string>; marcar: (chaves: string[], lido?: boolean) => void }) {
   const [busca, definirBusca] = useState('')
-  const [status, definirStatus] = useState<'erro' | 'todos' | 'processado' | 'ignorado' | 'recebido'>(() => eventos.some(e => e.status_processamento === 'erro') ? 'erro' : 'todos')
+  const [status, definirStatus] = useState<'erro' | 'todos' | 'processado' | 'ignorado' | 'recebido'>(() => eventos.some(e => e.status_processamento === 'erro' && !lidos.has(String(e.id))) ? 'erro' : 'todos')
+  const [aberto, definirAberto] = useState<number | null>(null)
+  const naoVistos = eventos.filter(e => e.status_processamento === 'erro' && !lidos.has(String(e.id)))
   const [reprocessando, definirReprocessando] = useState<number | null>(null)
   const [aviso, definirAviso] = useState('')
 
@@ -295,20 +299,32 @@ function Pagamentos({ eventos, recarregar }: { eventos: LinhaEvento[]; recarrega
     </div>
     <label className="campo adm-busca__unica">Buscar por tipo, número ou erro<input className="entrada" type="search" value={busca} onChange={e => definirBusca(e.target.value)} /></label>
     {aviso && <p role="status" className="adm-nota">{aviso}</p>}
-    {visiveis.length === 0 ? <p className="adm-vazio">{status === 'erro' ? 'Nenhum pagamento com problema.' : 'Nenhum aviso neste filtro.'}</p> : <ul className="adm-cartoes">
-      {visiveis.map(e => <li key={e.id} className={'adm-cartao' + (e.status_processamento === 'erro' ? ' adm-cartao--ruim' : '')}>
-        <div className="adm-cartao__topo">
-          <div><strong>{TIPOS_EVENTO[e.tipo ?? ''] ?? 'Aviso do Mercado Pago'}</strong><span className="adm-usuario__email">{dataHora(e.recebido_em)}</span></div>
-          <span className={`adm-selo adm-estado--${e.status_processamento}`}>{STATUS_EVENTO[e.status_processamento] ?? e.status_processamento}</span>
-        </div>
-        {e.erro && <p className="adm-cartao__erro"><Icone nome="alerta" tamanho={15} /> {nomeErro(e.erro)}</p>}
-        <dl className="adm-cartao__dados">
-          <div><dt>Número no Mercado Pago</dt><dd className="numerico">{e.id_recurso ?? '—'}</dd></div>
-          <div><dt>Processado em</dt><dd>{dataHora(e.processado_em)}</dd></div>
-        </dl>
-        <details className="adm-tecnico"><summary>Códigos técnicos</summary><p>Evento {e.id_evento} · tipo {e.tipo ?? '—'}{e.erro ? ` · erro ${e.erro}` : ''}</p></details>
-        {e.status_processamento === 'erro' && <button className="botao" type="button" disabled={reprocessando !== null} onClick={() => void reprocessar(e.id)}>{reprocessando === e.id ? 'Reprocessando…' : 'Reprocessar'}</button>}
-      </li>)}
+    {status === 'erro' && naoVistos.length > 0 && <div className="adm-lidos__barra"><span>{naoVistos.length} {naoVistos.length === 1 ? 'problema não visto' : 'problemas não vistos'}</span><button type="button" className="botao botao--fantasma" onClick={() => marcar(naoVistos.map(e => String(e.id)))}><Icone nome="certo" tamanho={16} /> Marcar todos como vistos</button></div>}
+    {visiveis.length === 0 ? <p className="adm-vazio">{status === 'erro' ? 'Nenhum pagamento com problema.' : 'Nenhum aviso neste filtro.'}</p> : <ul className="adm-eventos">
+      {visiveis.map(e => {
+        const erro = e.status_processamento === 'erro'
+        const visto = lidos.has(String(e.id))
+        const expandido = aberto === e.id
+        return <li key={e.id} className={'adm-evento' + (erro && !visto ? ' adm-evento--ruim' : '') + (expandido ? ' adm-evento--aberto' : '')}>
+          <button type="button" className="adm-evento__linha" aria-expanded={expandido} onClick={() => definirAberto(expandido ? null : e.id)}>
+            <span className="adm-evento__quando">{dataHora(e.recebido_em)}</span>
+            <span className="adm-evento__tipo">{TIPOS_EVENTO[e.tipo ?? ''] ?? 'Aviso do Mercado Pago'}{erro && e.erro ? <small>{nomeErro(e.erro)}</small> : null}</span>
+            <span className={`adm-selo adm-estado--${e.status_processamento}`}>{erro && visto ? 'Visto' : STATUS_EVENTO[e.status_processamento] ?? e.status_processamento}</span>
+            <Icone nome="baixo" tamanho={16} />
+          </button>
+          {expandido && <div className="adm-evento__detalhe">
+            <dl>
+              <div><dt>Número no Mercado Pago</dt><dd className="numerico">{e.id_recurso ?? '—'}</dd></div>
+              <div><dt>Processado em</dt><dd>{dataHora(e.processado_em)}</dd></div>
+              <div><dt>Códigos técnicos</dt><dd className="adm-evento__codigo">evento {e.id_evento} · tipo {e.tipo ?? '—'}{e.erro ? ` · erro ${e.erro}` : ''}</dd></div>
+            </dl>
+            {erro && <div className="linha">
+              <button className="botao" type="button" disabled={reprocessando !== null} onClick={() => void reprocessar(e.id)}>{reprocessando === e.id ? 'Reprocessando…' : 'Reprocessar'}</button>
+              <button className="botao botao--fantasma" type="button" onClick={() => marcar([String(e.id)], !visto)}>{visto ? 'Marcar como não visto' : 'Marcar como visto'}</button>
+            </div>}
+          </div>}
+        </li>
+      })}
     </ul>}
   </section>
 }

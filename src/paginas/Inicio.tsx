@@ -315,19 +315,19 @@ export function Inicio() {
             {temaFragil && (() => {
               const acerto = Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)
               return <section className="inicio-foco" aria-labelledby="inicio-foco-titulo">
-                <p className="meta">ONDE VOCÊ MAIS GANHA AO REVISAR</p>
+                <p className="meta">SUA MAIOR PORCENTAGEM DE ERRO</p>
                 <h2 id="inicio-foco-titulo">{temaFragil[0]}</h2>
                 <div className="inicio-foco__medida">
-                  <span className="inicio-foco__valor numerico">{acerto}%</span>
-                  <span className="inicio-foco__rotulo">de acerto neste tema</span>
+                  <span className="inicio-foco__valor numerico">{100 - acerto}%</span>
+                  <span className="inicio-foco__rotulo">de erro neste tema ({acerto}% de acerto)</span>
                 </div>
-                <span className="inicio-foco__barra" role="img" aria-label={`${acerto}% de acerto`}><span style={{ width: `${Math.max(3, acerto)}%` }} /></span>
+                <span className="inicio-foco__barra inicio-foco__barra--erro" role="img" aria-label={`${100 - acerto}% de erro`}><span style={{ width: `${Math.max(3, 100 - acerto)}%` }} /></span>
                 <dl className="inicio-foco__numeros">
                   <div><dt>Respostas</dt><dd className="numerico">{temaFragil[1].tentativas.toLocaleString('pt-BR')}</dd></div>
                   <div><dt>Erros</dt><dd className="numerico">{(temaFragil[1].tentativas - temaFragil[1].acertos).toLocaleString('pt-BR')}</dd></div>
                   <div><dt>Revisões</dt><dd className="numerico">{temaFragil[1].pendentes.toLocaleString('pt-BR')}</dd></div>
                 </dl>
-                <p className="texto-2">É o tema com menor acerto entre os que você já treinou. Uma sessão curta aqui rende mais do que em qualquer outro.</p>
+                <p className="texto-2">De todos os temas que você já treinou, é onde você mais erra. Por isso é onde uma sessão curta rende mais pontos na prova.</p>
                 <a className="botao botao--principal" href={href(`/treinar?temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema <Icone nome="direita" tamanho={16} /></a>
               </section>
             })()}

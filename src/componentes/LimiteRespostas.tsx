@@ -6,6 +6,7 @@ import { formatarDuracao } from '../dados/tipos'
 import { chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
 import { Painel } from './Painel'
+import { JanelaCentral, usarTelaLarga } from './JanelaCentral'
 import { Icone } from './Icone'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CUSTO_POR_DIA, PLANO_MAIS_EM_CONTA, real } from '../dados/planos'
@@ -109,6 +110,7 @@ export function AvisoBloqueioDiario({ caminho, variante = 'faixa' }: { caminho: 
 }
 
 export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimite | null; aberto: boolean; aoFechar: () => void }) {
+  const telaLarga = usarTelaLarga()
   const [agora, definirAgora] = useState(Date.now())
   useEffect(() => {
     if (!aberto) return
@@ -131,52 +133,56 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
     )
   }
   const consumidas = estado?.consumidas ?? 20
+  const tempo = libera && faltam !== null ? { faltam, libera } : null
+  if (telaLarga) {
+    return (
+      <JanelaCentral aberta={aberto} aoFechar={aoFechar} rotulo="Suas 20 questões grátis de hoje acabaram" className="pw">
+        <OfertaLimite consumidas={consumidas} sequencia={estado?.sequencia ?? 0} tempo={tempo} aoFechar={aoFechar} larga />
+      </JanelaCentral>
+    )
+  }
   return (
-    <Painel titulo="Meta gratuita de hoje cumprida" aberto={aberto} aoFechar={aoFechar}>
-      <div className="paywall">
-        <div className="paywall__topo">
-          <span className="paywall__anel" aria-hidden="true"><b className="numerico">{consumidas}</b><small>de 20</small></span>
-          <div>
-            <p className="paywall__selo">Plano gratuito · hoje</p>
-            <h3 className="paywall__titulo">Você está no embalo. Não precisa parar agora.</h3>
-            <p className="paywall__sub">Você resolveu {consumidas} questões comentadas hoje.{estado && estado.sequencia > 0 && <> São <b>{estado.sequencia} {estado.sequencia === 1 ? 'dia' : 'dias'} seguidos</b> de estudo.</>}</p>
-          </div>
-        </div>
-
-        <section className="paywall__projeto">
-          <p className="paywall__projeto-titulo">Por que existe um limite?</p>
-          <p>O OrtoQuestões é um projeto independente, criado para que treinar para a prova não dependa de pagar caro.</p>
-          <p>Manter o site, incluir provas novas e revisar os comentários tem custo. As assinaturas cobrem essa estrutura, e é isso que permite manter <b>o plano gratuito generoso: 20 questões comentadas todos os dias, sem cartão</b>.</p>
-          <p className="paywall__projeto-fecho">Se o OrtoQuestões já te ajudou hoje, assinar é a forma de retribuir e de garantir que ele continue existindo.</p>
-        </section>
-
-        <section className="paywall__oferta" aria-label="Assinatura">
-          <p className="paywall__rotulo">Assine e estude sem limite</p>
-          <ul className="paywall__beneficios">
-            <li><Icone nome="certo" tamanho={16} /><span><b>Questões sem limite diário.</b> Resolva quantas quiser, no ritmo que a sua prova pede.</span></li>
-            <li><Icone nome="certo" tamanho={16} /><span><b>Simulado Nacional todo mês.</b> Sua nota, sua posição e o relatório de prontidão por tema.</span></li>
-            <li><Icone nome="certo" tamanho={16} /><span><b>Cronograma e temas que mais caem.</b> A meta de cada dia até o TEOT, na ordem do que a prova mais cobra.</span></li>
-            <li><Icone nome="certo" tamanho={16} /><span><b>Como a turma respondeu, liga da residência e relatório mensal.</b> Estude com referência, e com o seu serviço.</span></li>
-          </ul>
-          <p className="paywall__preco">
-            <span>A partir de</span>
-            <b className="numerico">{real(CUSTO_POR_DIA)}<small>/dia</small></b>
-            <span className="paywall__preco-nota">Menos que um cafezinho. No plano {PLANO_MAIS_EM_CONTA.nome.toLowerCase()}, {real(PLANO_MAIS_EM_CONTA.total)} cobrados uma vez por ano.</span>
-          </p>
-          <a className="botao botao--principal botao--grande paywall__cta" href={href('/assinatura')}>Assinar e continuar</a>
-          <p className="paywall__garantia"><Icone nome="certo" tamanho={14} /> Garantia de 7 dias em cada cobrança · cancele quando quiser</p>
-        </section>
-
-        {libera && faltam !== null && (
-          <div className="liberacao-limite">
-            <span>Prefere esperar? Novas questões grátis em</span>
-            <strong className="numerico">{formatarDuracao(faltam)}</strong>
-            <span className="meta">Liberação às {libera.toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' })}, horário de São Paulo. Comentários, desempenho, revisões e todo o seu histórico continuam abertos.</span>
-          </div>
-        )}
-        <button className="botao paywall__depois" type="button" onClick={aoFechar}>Volto amanhã pelo gratuito</button>
-      </div>
+    <Painel titulo="Suas 20 questões grátis de hoje acabaram" aberto={aberto} aoFechar={aoFechar}>
+      <OfertaLimite consumidas={consumidas} sequencia={estado?.sequencia ?? 0} tempo={tempo} aoFechar={aoFechar} />
     </Painel>
+  )
+}
+
+const POR_MES_ANUAL = PLANO_MAIS_EM_CONTA.total / PLANO_MAIS_EM_CONTA.meses
+
+/** O convite do limite diário: direto, com o preço e o que o assinante ganha. */
+function OfertaLimite({ consumidas, sequencia, tempo, aoFechar, larga = false }: {
+  consumidas: number; sequencia: number; tempo: { faltam: number; libera: Date } | null; aoFechar: () => void; larga?: boolean
+}) {
+  const beneficios: Array<[string, string]> = [
+    ['Questões sem limite', 'Resolva quantas quiser, todo dia.'],
+    ['Cronograma até a prova', 'A meta de cada dia, começando pelo que mais cai.'],
+    ['Simulado Nacional todo mês', 'Sua nota e sua posição entre os residentes.'],
+    ['Temas que mais caem', 'O ranking do que a prova mais cobra.'],
+  ]
+  return (
+    <div className={'pw-conteudo' + (larga ? ' pw-conteudo--larga' : '')}>
+      <section className="pw-lado">
+        <span className="pw-anel" aria-hidden="true"><b className="numerico">{consumidas}</b><small>de 20</small></span>
+        <p className="pw-lado__selo">Plano gratuito · hoje</p>
+        <h2 className="pw-lado__titulo">Você fez as 20 questões grátis de hoje.</h2>
+        <p className="pw-lado__texto">{sequencia > 0 ? <>São <b>{sequencia} {sequencia === 1 ? 'dia' : 'dias'} seguidos</b> de estudo. </> : null}Amanhã a cota volta inteira. Se quiser continuar agora, é só assinar.</p>
+        {tempo && <p className="pw-lado__relogio"><Icone nome="relogio" tamanho={16} /> Grátis de novo em <strong className="numerico">{formatarDuracao(tempo.faltam)}</strong></p>}
+      </section>
+
+      <section className="pw-oferta" aria-label="Assinatura">
+        <p className="pw-oferta__rotulo">Assine o OrtoQuestões</p>
+        <p className="pw-oferta__preco"><b>{real(POR_MES_ANUAL)}</b><span>por mês no plano anual</span></p>
+        <p className="pw-oferta__barato">Um dos bancos de questões de ortopedia mais baratos do Brasil: {real(PLANO_MAIS_EM_CONTA.total)} por ano, menos de {real(CUSTO_POR_DIA)} por dia.</p>
+        <ul className="pw-oferta__lista">
+          {beneficios.map(([titulo, texto]) => <li key={titulo}><Icone nome="certo" tamanho={18} /><span><b>{titulo}.</b> {texto}</span></li>)}
+        </ul>
+        <a className="botao botao--principal botao--grande pw-oferta__cta" href={href('/assinatura')}>Assinar por {real(POR_MES_ANUAL)}/mês</a>
+        <p className="pw-oferta__garantia"><Icone nome="certo" tamanho={14} /> Garantia de 7 dias · cancele quando quiser · também há plano mensal</p>
+        <p className="pw-oferta__projeto">O OrtoQuestões é um projeto independente: a assinatura paga o site e mantém o gratuito com 20 questões por dia para todo mundo.</p>
+        <button className="pw-oferta__depois" type="button" onClick={aoFechar}>Volto amanhã pelo gratuito</button>
+      </section>
+    </div>
   )
 }
 

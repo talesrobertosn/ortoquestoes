@@ -2,14 +2,17 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { chamarRpc } from '../../servicos/supabase'
 import { href } from '../../util/rotas'
 import { usarIndice } from '../../dados/usarIndice'
+import { Icone } from '../Icone'
 import { carregarQuestoes } from '../../dados/acervo'
 import { corresponde, dataHora, erroDoPainel, normalizar } from './formatos'
+import { usarLidos } from './lidos'
 
 interface LinhaAvaliacao { id_questao: string; util: boolean; motivo: string | null; observacao: string | null; atualizado_em: string; usuario: string | null }
 interface InfoQuestao { titulo: string; trecho: string }
 
 const MOTIVOS: Record<string, string> = { confuso: 'Ficou confuso', raso: 'Faltou profundidade', errado: 'Parece ter erro', outro: 'Outro motivo' }
 type Vista = 'ler' | 'questoes' | 'todas'
+const chaveDe = (l: LinhaAvaliacao) => `${l.id_questao}|${l.usuario ?? ''}|${l.atualizado_em}`
 
 /** "Coluna · TEOT 2024 · nº 28" a partir do id e do que já se sabe da questão. */
 function tituloPadrao(id: string) {
@@ -29,17 +32,21 @@ export function AdminAvaliacoes({ aoCarregar }: { aoCarregar?: (pendentes: numbe
   const [vista, definirVista] = useState<Vista>('ler')
   const [busca, definirBusca] = useState('')
   const [info, definirInfo] = useState<Map<string, InfoQuestao>>(new Map())
+  const { lidos, marcar } = usarLidos('avaliacao')
 
   const carregar = useCallback(async () => {
     try {
       const dados = await chamarRpc<LinhaAvaliacao[]>('listar_avaliacoes_comentario_admin', {})
       definirLinhas(dados); definirErro('')
-      aoCarregar?.(dados.filter(l => !l.util && l.observacao?.trim()).length)
     } catch (falha) {
       definirErro(erroDoPainel(falha, '202609280200_avaliacoes_comentario_admin.sql'))
     }
   }, [aoCarregar])
   useEffect(() => { void carregar() }, [carregar])
+  // O aviso na aba conta só as mensagens ainda não lidas.
+  useEffect(() => {
+    if (linhas) aoCarregar?.(linhas.filter(l => !l.util && l.observacao?.trim() && !lidos.has(chaveDe(l))).length)
+  }, [linhas, lidos, aoCarregar])
 
   // Nome das questões: tema, prova e começo do enunciado, em vez do código.
   useEffect(() => {
@@ -66,7 +73,8 @@ export function AdminAvaliacoes({ aoCarregar }: { aoCarregar?: (pendentes: numbe
   const termo = normalizar(busca.trim())
   const filtradas = useMemo(() => (linhas ?? []).filter(l => corresponde([l.id_questao, info.get(l.id_questao)?.titulo, info.get(l.id_questao)?.trecho, l.observacao, l.usuario], termo)), [linhas, info, termo])
 
-  const paraLer = filtradas.filter(l => !l.util && l.observacao?.trim())
+  const comMensagem = filtradas.filter(l => !l.util && l.observacao?.trim())
+  const paraLer = comMensagem.filter(l => !lidos.has(chaveDe(l)))
   const placar = useMemo(() => {
     const porQuestao = new Map<string, { id: string; ajudou: number; naoAjudou: number; motivos: Map<string, number>; mensagens: number }>()
     for (const l of filtradas) {
@@ -111,13 +119,15 @@ export function AdminAvaliacoes({ aoCarregar }: { aoCarregar?: (pendentes: numbe
       </div>
       <label className="campo adm-busca__unica">Buscar por tema, trecho, mensagem ou e-mail<input className="entrada" type="search" value={busca} onChange={e => definirBusca(e.target.value)} /></label>
 
-      {vista === 'ler' && (paraLer.length === 0 ? <p className="adm-vazio">Nenhuma mensagem nova. Quando alguém disser que não ajudou e escrever o porquê, aparece aqui.</p> : <ul className="adm-avaliacoes">
-        {paraLer.map(l => <li key={`${l.id_questao}:${l.usuario}:${l.atualizado_em}`} className="adm-avaliacao">
+      {vista === 'ler' && (paraLer.length === 0 ? <p className="adm-vazio">Nenhuma mensagem nova. Quando alguém disser que não ajudou e escrever o porquê, aparece aqui.{comMensagem.length ? ` As ${comMensagem.length} já lidas ficam em "Todas".` : ''}</p> : <>
+        <div className="adm-lidos__barra"><span>{paraLer.length} {paraLer.length === 1 ? 'mensagem não lida' : 'mensagens não lidas'}</span><button type="button" className="botao botao--fantasma" onClick={() => marcar(paraLer.map(chaveDe))}><Icone nome="certo" tamanho={16} /> Marcar todas como lidas</button></div>
+        <ul className="adm-avaliacoes">
+        {paraLer.map(l => <li key={chaveDe(l)} className="adm-avaliacao">
           <div className="adm-avaliacao__topo"><Cabeca id={l.id_questao} /><span className="adm-selo adm-selo--ruim">{MOTIVOS[l.motivo ?? ''] ?? 'Não ajudou'}</span></div>
           <blockquote className="adm-avaliacao__texto">{l.observacao}</blockquote>
-          <small>{l.usuario ?? 'conta removida'} · {dataHora(l.atualizado_em)}</small>
+          <div className="adm-avaliacao__rodape"><small>{l.usuario ?? 'conta removida'} · {dataHora(l.atualizado_em)}</small><button type="button" className="adm-link" onClick={() => marcar([chaveDe(l)])}>Marcar como lida</button></div>
         </li>)}
-      </ul>)}
+      </ul></>)}
 
       {vista === 'questoes' && (placar.length === 0 ? <p className="adm-vazio">Nenhuma avaliação neste filtro.</p> : <ul className="adm-avaliacoes">
         {placar.map(item => <li key={item.id} className={'adm-avaliacao' + (item.naoAjudou === 0 ? ' adm-avaliacao--boa' : '')}>
@@ -132,7 +142,8 @@ export function AdminAvaliacoes({ aoCarregar }: { aoCarregar?: (pendentes: numbe
         {filtradas.map(l => <li key={`${l.id_questao}:${l.usuario}:${l.atualizado_em}`} className={'adm-avaliacao' + (l.util ? ' adm-avaliacao--boa' : '')}>
           <div className="adm-avaliacao__topo"><Cabeca id={l.id_questao} /><span className={'adm-selo ' + (l.util ? 'adm-selo--ok' : 'adm-selo--ruim')}>{l.util ? 'Ajudou' : MOTIVOS[l.motivo ?? ''] ?? 'Não ajudou'}</span></div>
           {l.observacao?.trim() && <blockquote className="adm-avaliacao__texto">{l.observacao}</blockquote>}
-          <small>{l.usuario ?? 'conta removida'} · {dataHora(l.atualizado_em)}</small>
+          <div className="adm-avaliacao__rodape"><small>{l.usuario ?? 'conta removida'} · {dataHora(l.atualizado_em)}{l.observacao?.trim() && !l.util && lidos.has(chaveDe(l)) ? ' · lida' : ''}</small>
+            {l.observacao?.trim() && !l.util && lidos.has(chaveDe(l)) && <button type="button" className="adm-link" onClick={() => marcar([chaveDe(l)], false)}>Marcar como não lida</button>}</div>
         </li>)}
       </ul>)}
     </>}
