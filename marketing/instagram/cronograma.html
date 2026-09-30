@@ -49,6 +49,21 @@ h2 { font-family: Jakarta; font-weight: 800; font-size: 80px; line-height: 1.02;
 .seta { position: absolute; z-index: 4; color: var(--caneta); }
 .seta path { fill: none; stroke: currentColor; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
 
+/* ---- a função em destaque ------------------------------------------- */
+.funcao { display: inline-flex; align-items: center; gap: 12px; padding: 12px 24px 12px 18px; border-radius: 999px; background: var(--verde); color: var(--ouro-2);
+  font: 800 26px Jakarta; letter-spacing: .1em; text-transform: uppercase; box-shadow: 0 10px 22px rgba(15,79,73,.28); }
+.funcao svg { width: 32px; height: 32px; }
+.chamada { display: flex; align-items: flex-end; gap: 14px; min-height: 74px; margin-bottom: 0; padding-bottom: 12px; font: 800 24px/1.25 Inter; letter-spacing: .08em; text-transform: uppercase; color: var(--verde-2); }
+.chamada b { font: 700 64px/.8 Caveat; letter-spacing: 0; text-transform: none; color: var(--vermelho); }
+.produto { position: relative; margin-top: 44px; padding: 46px 48px 44px; border-radius: 36px; color: #fff; overflow: hidden;
+  background: radial-gradient(circle at 92% 8%, rgba(242,193,78,.38), transparent 42%), radial-gradient(circle at 0% 100%, rgba(29,138,124,.5), transparent 55%), #0d3f3a;
+  box-shadow: 0 30px 60px rgba(15,79,73,.3); }
+.produto__selo { display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; border-radius: 999px; background: rgba(242,193,78,.18); border: 2px solid rgba(255,227,138,.45); color: #ffe38a; font: 800 22px Jakarta; letter-spacing: .1em; text-transform: uppercase; }
+.produto__nome { font: 800 112px/.95 Jakarta; letter-spacing: -.045em; margin-top: 22px; }
+.produto p { font-size: 34px; line-height: 1.4; color: rgba(255,255,255,.82); margin-top: 16px; }
+.produto p b { color: #ffe38a; }
+.botao-site { display: inline-flex; align-items: center; gap: 14px; margin-top: 28px; padding: 22px 36px; border-radius: 18px; background: #fff; color: var(--verde); font: 800 34px Jakarta; }
+
 /* ---- 1: página de calendário + post-it -------------------------------- */
 .folha { position: absolute; width: 560px; border-radius: 26px; background: #fff; box-shadow: 0 30px 60px rgba(20,32,30,.2); overflow: hidden; z-index: 3; }
 .folha__topo { background: var(--vermelho); color: #fff; font: 800 38px Jakarta; letter-spacing: .14em; text-transform: uppercase; text-align: center; padding: 26px 0; }
@@ -108,6 +123,13 @@ h2 { font-family: Jakarta; font-weight: 800; font-size: 80px; line-height: 1.02;
 .semanas .prova .tema { color: var(--vermelho); font-size: 52px; }
 .circulo { position: absolute; z-index: 4; border: 5px solid var(--vermelho); border-radius: 50%; transform: rotate(-8deg); }
 
+/* anotações presas ao item que marcam */
+.lista li, .semanas .tema, .lista b { position: relative; }
+.circulado { position: absolute; left: -22px; right: -22px; top: -14px; bottom: -14px; border: 5px solid var(--vermelho); border-radius: 50%; transform: rotate(-6deg); pointer-events: none; }
+.lista .circulado { left: -18px; right: -6px; top: -12px; bottom: -8px; }
+.semanas .circulado { left: -18px; right: -18px; top: -4px; bottom: -6px; }
+.ao-lado { position: absolute; left: calc(100% + 40px); top: 4px; white-space: nowrap; font-size: 52px; font-style: normal; transform: rotate(-6deg); }
+
 /* ---- 8: chamada ------------------------------------------------------- */
 .ficha { position: absolute; left: 230px; right: 80px; border-radius: 30px; padding: 56px 56px 50px; background: var(--verde); color: #fff; box-shadow: 0 40px 80px rgba(15,79,73,.35); z-index: 3; }
 .ficha p { font-size: 34px; line-height: 1.42; color: rgba(255,255,255,.82); }
@@ -122,7 +144,7 @@ h2 { font-family: Jakarta; font-weight: 800; font-size: 80px; line-height: 1.02;
 
 <!-- 1. A data oficial -->
 <section class="story" id="k1">
-  <div class="topo"><div class="marca"></div><span class="etiqueta">TEOT 2027</span></div>
+  <div class="topo"><div class="marca"></div><span class="funcao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Cronograma</span></div>
   <div class="fita" style="left: 470px; top: 372px; transform: rotate(-4deg)"></div>
   <div class="folha" style="left: 300px; top: 400px; transform: rotate(-3deg)">
     <div class="folha__topo">Janeiro 2027</div>
@@ -132,36 +154,40 @@ h2 { font-family: Jakarta; font-weight: 800; font-size: 80px; line-height: 1.02;
   <div class="postit" style="left: 660px; top: 860px; transform: rotate(6deg)">faltam<strong data-faltam>102</strong>dias</div>
   <p class="mao" style="position: absolute; left: 225px; top: 1000px; font-size: 54px; transform: rotate(-5deg); z-index: 4">prova online!</p>
   <svg class="seta" style="left: 250px; top: 900px" width="120" height="100" viewBox="0 0 120 100"><path d="M30 92 C 20 50, 40 22, 96 12 M74 4 L96 12 L80 30"/></svg>
-  <div class="conteudo" style="top: 1250px">
-    <h2>A data saiu.<br><span class="marcador">E o seu plano?</span></h2>
-    <p class="sub">A prova teórica online do <b>TEOT</b> e do <b>TEPOT 2027</b> da SBOT é no dia <b>10 de janeiro de 2027</b>.</p>
+  <div class="conteudo" style="top: 1230px">
+    <h2>A data saiu.<br><span class="marcador">O site monta o seu estudo até lá.</span></h2>
+    <p class="sub">A prova teórica online do <b>TEOT</b> e do <b>TEPOT 2027</b> da SBOT é em <b>10 de janeiro de 2027</b>. O <b>Cronograma do OrtoQuestões</b> monta o que estudar em cada dia até ela, pelos temas que mais caem.</p>
     <p class="fonte">Data oficial divulgada pela SBOT.</p>
   </div>
 </section>
 
 <!-- 2. O que é, em três passos -->
 <section class="story" id="k2">
-  <div class="topo"><div class="marca"></div><span class="etiqueta">Cronograma</span></div>
+  <div class="topo"><div class="marca"></div><span class="funcao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Cronograma</span></div>
   <div class="conteudo">
-    <h1>Um plano <span class="marcador">até 10 de janeiro.</span></h1>
-    <p class="sub">Quantas questões fazer <b>por dia</b> e qual tema estudar <b>em cada semana</b>. Pronto, sem planilha.</p>
-    <ol class="passos">
-      <li><span class="n">1</span><div><strong>Você coloca a data</strong><span>E os dias em que não estuda: plantão, descanso.</span><em>10/01/2027</em></div></li>
-      <li><span class="n">2</span><div><strong>Ele monta o caminho</strong><span>Começando pelo que mais cai no TEOT e no TARO. Nos próximos stories: como.</span></div></li>
-      <li><span class="n">3</span><div><strong>E se ajusta sozinho</strong><span>Atrasou, a meta do dia sobe um pouco. Adiantou, alivia.</span></div></li>
+    <h2>Conheça <span class="marcador">o Cronograma.</span></h2>
+    <div class="produto">
+      <span class="produto__selo"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Uma função do OrtoQuestões</span>
+      <div class="produto__nome">Cronograma</div>
+      <p>O site <b>monta o seu estudo até a prova</b>: quantas questões por dia e qual tema em cada semana, <b>pelos temas que mais caem</b>.</p>
+    </div>
+    <ol class="passos" style="margin-top: 40px; gap: 22px">
+      <li style="padding: 28px 34px"><span class="n">1</span><div><strong>Você coloca a data</strong><span>10/01/2027 e os dias em que não estuda.</span></div></li>
+      <li style="padding: 28px 34px"><span class="n">2</span><div><strong>O site monta o caminho</strong><span>Pelas áreas e assuntos que mais caem.</span></div></li>
+      <li style="padding: 28px 34px"><span class="n">3</span><div><strong>E ajusta sozinho</strong><span>Atrasou, a meta sobe. Adiantou, alivia.</span></div></li>
     </ol>
   </div>
 </section>
 
 <!-- 3. Primeiro as áreas que mais caem -->
 <section class="story" id="k3">
-  <div class="topo"><div class="marca"></div><span class="etiqueta">Como ele escolhe</span></div>
+  <div class="topo"><div class="marca"></div><span class="funcao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Cronograma</span></div>
   <div class="conteudo">
-    <span class="num">1.</span>
+    <p class="chamada"><b>1.</b>Como o Cronograma monta o seu estudo</p>
     <h2>Primeiro, <span class="marcador">as áreas que mais caem.</span></h2>
     <p class="sub">As semanas seguem o <b>ranking das áreas mais cobradas</b> no TEOT e no TARO.</p>
     <ul class="lista">
-      <li><b>1º</b><div><strong>Trauma adulto</strong><small>cai muito</small></div><span class="chamas" data-chamas="3"></span></li>
+      <li class="comeca"><b>1º<i class="circulado"></i></b><div><strong>Trauma adulto</strong><small>cai muito</small></div><span class="chamas" data-chamas="3"></span><em class="mao ao-lado" style="left: 470px; top: 18px; font-size: 44px">começa<br>por aqui</em></li>
       <li><b>2º</b><div><strong>Ombro e cotovelo</strong><small>cai muito</small></div><span class="chamas" data-chamas="3"></span></li>
       <li><b>3º</b><div><strong>Mão e punho</strong><small>cai muito</small></div><span class="chamas" data-chamas="3"></span></li>
       <li class="oculto"><b>4º</b><div><strong>Área guardada</strong><small>cai com frequência</small></div><span class="chamas" data-chamas="2"></span></li>
@@ -169,15 +195,14 @@ h2 { font-family: Jakarta; font-weight: 800; font-size: 80px; line-height: 1.02;
     </ul>
     <p class="cadeado"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6.5 10.5h11v10h-11zM8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg> O ranking completo fica no site, para assinantes</p>
   </div>
-  <div class="circulo" style="left: 252px; top: 764px; width: 118px; height: 100px"></div>
-  <p class="mao" style="position: absolute; left: 700px; top: 762px; font-size: 44px; transform: rotate(-5deg); z-index: 4">começa<br>por aqui</p>
+
 </section>
 
 <!-- 4. Dentro da área, os assuntos que mais caem -->
 <section class="story" id="k4">
-  <div class="topo"><div class="marca"></div><span class="etiqueta">Como ele escolhe</span></div>
+  <div class="topo"><div class="marca"></div><span class="funcao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Cronograma</span></div>
   <div class="conteudo">
-    <span class="num">2.</span>
+    <p class="chamada"><b>2.</b>Como o Cronograma monta o seu estudo</p>
     <h2>Dentro da área, <span class="marcador">os assuntos que mais caem.</span></h2>
     <p class="sub">Cada área tem o seu ranking de assuntos. O cronograma <b>desce essa lista</b>: do mais cobrado para o menos.</p>
     <div class="cartao-area">
@@ -196,10 +221,10 @@ h2 { font-family: Jakarta; font-weight: 800; font-size: 80px; line-height: 1.02;
 
 <!-- 5. A semana explica o porquê (tela de verdade) -->
 <section class="story" id="k5">
-  <div class="topo"><div class="marca"></div><span class="etiqueta">Semana a semana</span></div>
+  <div class="topo"><div class="marca"></div><span class="funcao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Cronograma</span></div>
   <p class="nota">Tela ilustrativa</p>
   <div class="conteudo">
-    <span class="num">3.</span>
+    <p class="chamada"><b>3.</b>Como o Cronograma monta o seu estudo</p>
     <h2>Toda semana diz <span class="marcador">o que entra e por quê.</span></h2>
   </div>
   <div class="fita" style="left: 905px; top: 716px; width: 140px; transform: rotate(12deg)"></div>
@@ -214,10 +239,10 @@ h2 { font-family: Jakarta; font-weight: 800; font-size: 80px; line-height: 1.02;
 
 <!-- 6. E pesa o seu erro -->
 <section class="story" id="k6">
-  <div class="topo"><div class="marca"></div><span class="etiqueta">Como ele escolhe</span></div>
+  <div class="topo"><div class="marca"></div><span class="funcao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Cronograma</span></div>
   <p class="nota">Tela ilustrativa</p>
   <div class="conteudo">
-    <span class="num">4.</span>
+    <p class="chamada"><b>4.</b>Como o Cronograma monta o seu estudo</p>
     <h2>E pesa <span class="marcador">o seu erro.</span></h2>
     <p class="sub">Tema em que você <b>erra mais</b> ganha mais questões. O que você já domina, menos. Tudo contando até o dia da prova.</p>
   </div>
@@ -231,37 +256,37 @@ h2 { font-family: Jakarta; font-weight: 800; font-size: 80px; line-height: 1.02;
 
 <!-- 7. Do hoje até a prova -->
 <section class="story" id="k7">
-  <div class="topo"><div class="marca"></div><span class="etiqueta">Até a prova</span></div>
+  <div class="topo"><div class="marca"></div><span class="funcao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Cronograma</span></div>
   <p class="nota">Exemplo</p>
   <div class="conteudo">
-    <h2>De hoje <span class="marcador">até 10 de janeiro.</span></h2>
+    <h2 style="font-size: 72px">O Cronograma monta <span class="marcador">cada semana até 10/01.</span></h2>
     <ol class="semanas">
       <li class="atual"><span class="quando">Semana 1<em>esta semana</em></span><span><span class="tema">Trauma adulto</span><span class="foco">Fratura do cotovelo, coluna toracolombar, antebraço</span></span></li>
       <li><span class="quando">Semana 2</span><span><span class="tema">Ombro e cotovelo</span><span class="foco">Anatomia, manguito rotador, instabilidade</span></span></li>
       <li><span class="quando">Semana 3</span><span><span class="tema">Mão e punho</span><span class="foco">Anatomia, síndromes compressivas</span></span></li>
       <li><span class="quando">…</span><span><span class="tema" style="color: var(--tinta-2)">e assim, área por área</span></span></li>
       <li class="final"><span class="quando">Última</span><span><span class="tema">Reta final</span><span class="foco">Seus erros, as dúvidas e um simulado</span></span></li>
-      <li class="prova"><span class="quando">10/01</span><span><span class="tema">Prova</span><span class="foco">TEOT e TEPOT 2027, online</span></span></li>
+      <li class="prova"><span class="quando">10/01</span><span><span class="tema">Prova<i class="circulado"></i><em class="mao ao-lado">sem improviso</em></span><span class="foco">TEOT e TEPOT 2027, online</span></span></li>
     </ol>
   </div>
-  <div class="circulo" style="left: 472px; top: 1266px; width: 196px; height: 80px"></div>
-  <p class="mao" style="position: absolute; left: 720px; top: 1290px; font-size: 54px; transform: rotate(-6deg); z-index: 4">sem improviso</p>
+    
 </section>
 
 <!-- 8. Chamada -->
 <section class="story" id="k8">
-  <div class="topo"><div class="marca"></div><span class="etiqueta">Teste agora</span></div>
+  <div class="topo"><div class="marca"></div><span class="funcao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Cronograma</span></div>
   <div class="conteudo">
-    <h1>Veja a prévia <span class="marcador">do seu cronograma.</span></h1>
-    <p class="sub">Coloque <b>10/01/2027</b> e veja o seu dia de hoje e as duas primeiras semanas. <b>De graça, sem cartão.</b></p>
+    <h1>Monte o seu <span class="marcador">Cronograma.</span></h1>
+    <p class="sub">No OrtoQuestões, abra o <b>Cronograma</b>, coloque <b>10/01/2027</b> e veja a prévia: o seu dia de hoje e as duas primeiras semanas. <b>De graça, sem cartão.</b></p>
+    <span class="botao-site" style="background: var(--verde); color: #fff; box-shadow: 0 16px 30px rgba(15,79,73,.3)"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Montar meu cronograma</span>
   </div>
-  <div class="fita" style="left: 520px; top: 900px; transform: rotate(-3deg)"></div>
-  <div class="ficha" style="top: 920px">
-    <p>Para seguir o cronograma completo, com o ranking dos temas que mais caem e o Simulado Nacional todo mês:</p>
+  <div class="fita" style="left: 520px; top: 1000px; transform: rotate(-3deg)"></div>
+  <div class="ficha" style="top: 1020px">
+    <p>Para seguir o Cronograma completo, com o ranking dos temas que mais caem e o Simulado Nacional todo mês:</p>
     <div class="preco"><b>R$ 19,99</b><span>por mês<br>no plano anual</span></div>
     <p style="margin-top: 16px; font-size: 29px">Garantia de 7 dias. Cancele quando quiser.</p>
   </div>
-  <p class="link" style="top: 1500px">ortoquestoes.com.br<small>toque no link aqui embaixo</small></p>
+  <p class="link" style="top: 1570px">ortoquestoes.com.br<small>toque no link aqui embaixo</small></p>
 </section>
 
 <script>

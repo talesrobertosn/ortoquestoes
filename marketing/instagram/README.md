@@ -26,12 +26,15 @@ node marketing/instagram/telas.mjs '' treinar dados revisao ranking
 ## Stories do Cronograma (`cronograma.html`)
 
 8 stories de venda (1080×1920) em folha de caderno pautado (linhas azuis, margem vermelha,
-espiral, anotações à mão em Caveat, fita adesiva e post-it):
+espiral, anotações à mão em Caveat, fita adesiva e post-it). Todos levam o selo verde
+"Cronograma" no topo, e os passos abrem com "Como o Cronograma monta o seu estudo", para ficar
+claro que a propaganda é de uma função do site:
 
-1. A data oficial: prova teórica online do TEOT e do TEPOT 2027 (SBOT) em 10/01/2027, com
+1. A data oficial (prova teórica online do TEOT e do TEPOT 2027, SBOT, 10/01/2027) e o gancho
+   "o site monta o seu estudo até lá", com
    post-it "faltam N dias". N é calculado no dia em que as imagens são geradas: gere de novo
    no dia de postar.
-2. O que é o cronograma, em três passos.
+2. "Conheça o Cronograma": a função do site em destaque e os três passos.
 3. Como ele escolhe (1): primeiro as áreas que mais caem (só as três primeiras visíveis).
 4. Como ele escolhe (2): dentro da área, os assuntos que mais caem (Trauma adulto, três visíveis).
 5. Como ele escolhe (3): toda semana diz o que entra e por quê (tela real da semana).
