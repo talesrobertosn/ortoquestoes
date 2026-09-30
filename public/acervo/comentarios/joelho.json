@@ -444,58 +444,60 @@
   "conferido": false
  },
  "joelho-0039": {
-  "conceito": "### Contraindicações absolutas\n- **Infecção** ativa.\n- ==Disfunção grave do mecanismo extensor==: sem extensão ativa, a prótese não traz função (o joelho não trava na marcha).\n- Recurvato por fraqueza muscular.\n\n### Relativas\n- **Artropatia neuropática** (Charcot): alto risco; se operar, prótese mais constrita.\n- **Doença arterial**: avaliar perfusão (índice tornozelo-braço), evitar garrote em calcificados.\n- **Patelectomia prévia:** pior resultado e maior instabilidade; prótese posteroestabilizada.\n- Obesidade mórbida.\n\n### Reconstruir o extensor\nNas rupturas crônicas, reconstrução com aloenxerto de mecanismo extensor ou tela sintética (Marlex) pode viabilizar a prótese.\n\n> **Na prova:** contraindicação absoluta = ==disfunção grave do extensor==.",
-  "correta": "**Disfunção grave do mecanismo extensor.**",
   "incorretas": {
-   "A": "**Relativa.**",
-   "B": "**Dificulta.**",
-   "C": "**Avaliar, não contraindica.**"
+   "A": "**Artropatia neuropática eleva muito o risco.** Pode ser contraindicação relativa ou exigir prótese constrita, mas não supera a falha extensora irrecuperável na comparação da banca.",
+   "B": "**Patelectomia prévia dificulta o funcionamento.** Se o paciente mantém extensão ativa, a ausência da patela não equivale necessariamente a mecanismo extensor inoperante.",
+   "C": "**A doença vascular precisa ser graduada.** Aterosclerose por si só não é proibição absoluta; perfusão inadequada não corrigível é um cenário mais grave e específico."
   },
-  "geradoEm": "2026-09-23",
+  "alerta": "A banca trata a disfunção grave do mecanismo extensor como contraindicação absoluta para a artroplastia total convencional. Em centros especializados, reconstruções do aparelho extensor podem, em casos selecionados, viabilizar uma prótese. Portanto, a proibição é mais precisa quando se refere à artroplastia sem capacidade de restaurar a extensão ativa, não a toda estratégia cirúrgica possível.",
+  "conceito": "**A prótese não substitui o quadríceps.** A artroplastia total troca superfícies articulares, mas o paciente ainda precisa do quadríceps, da patela e dos tendões quadricipital e patelar para estender ativamente o joelho e sustentá-lo na marcha. Se esse mecanismo estiver gravemente insuficiente e não puder ser reconstruído, corrigir a artrose não devolverá a função e poderá deixar um joelho instável.\n\n**Risco não é sempre proibição.** Artropatia neuropática produz instabilidade e sobrecarga, podendo exigir implantes especiais em casos selecionados. Patelectomia prévia prejudica a alavanca extensora e dificulta o resultado, mas não equivale automaticamente a ausência de extensão ativa. Doença arterial requer avaliação da perfusão, planejamento da incisão e cuidado com torniquete; isquemia grave não corrigível pode impedir uma cirurgia segura, mas a expressão genérica \"doença aterosclerótica\" não basta para isso. Infecção ativa é uma contraindicação inequívoca e não aparece nas opções.",
+  "correta": "**Disfunção grave do mecanismo extensor.** Sem extensão ativa recuperável, a artroplastia convencional não entrega um joelho funcional.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0040": {
-  "conceito": "### A saucerização\nRessecção parcial da ==porção central== do menisco discoide, remodelando-o em **crescente**, como um menisco normal.\n- Deixa uma **borda periférica** de cerca de **6 a 8 mm**.\n- Preserva a função de distribuição de carga.\n\n### Complementos\n- **Instável** (tipo Wrisberg ou periferia solta): **sutura** da periferia.\n- Lesões na borda remanescente: reparo quando possível.\n\n### Por que não retirar tudo\nA **meniscectomia total** na criança leva a **artrose lateral** precoce e osteocondrite do côndilo lateral.\n\n> **Na prova:** saucerização = ressecção da ==porção central==, preservando a periferia.",
-  "correta": "**Central.**",
   "incorretas": {
-   "B": "**Preservada.**",
-   "C": "**Não se limita à anterior.**",
-   "D": "**Não se limita à posterior.**"
+   "B": "**A periferia deve ser preservada e estabilizada.** É ela que mantém a continuidade das fibras circunferenciais e ajuda a distribuir a carga.",
+   "C": "**Não se trata de cortar apenas a parte anterior.** O alvo é a cobertura central excessiva, ajustada ao formato e às lesões encontradas.",
+   "D": "**Não se trata de cortar apenas a parte posterior.** Se o corno posterior estiver instável, pode precisar de reparo, que é diferente da saucerização central."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Remodelar, não retirar tudo.** O menisco discoide cobre uma porção anormalmente grande do platô tibial, quase sempre no lado lateral. Na saucerização artroscópica, retira-se tecido da porção central para criar novamente a abertura interna e um contorno em crescente. Procura-se preservar uma borda periférica estável, frequentemente em torno de 6 a 8 mm, para manter transmissão de carga e reduzir a área submetida a atrito.\n\n**A periferia tem outra função.** Depois de remodelar, o cirurgião testa a estabilidade da borda remanescente. Se houver desinserção periférica ou variante hipermóvel, pode ser necessária sutura; simplesmente retirar a periferia sacrifica as fibras circunferenciais que protegem a cartilagem. Um menisco discoide sem sintomas pode apenas ser observado. A meniscectomia total está associada a sobrecarga e artrose lateral mais precoces.",
+  "correta": "**Porção central.** Sua ressecção parcial transforma o disco em um menisco de contorno mais próximo do habitual, poupando a borda funcional.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0041": {
-  "conceito": "### Quando o LPFM isolado basta\nA reconstrução **isolada** do LPFM resolve a instabilidade quando **não há** fator ósseo maior que exija correção:\n- **TT-TG** acima de ~20 mm: considerar **medialização** da TAT.\n- **Patela alta** (Insall-Salvati acima de 1,2; Caton-Deschamps acima de 1,2): considerar **distalização**.\n- **Anteversão femoral** excessiva (acima de ~30 a 35°) ou torção tibial externa: **osteotomia derrotativa**.\n- **Displasia troclear grave** (Dejour B/D): considerar **trocleoplastia**.\n- Valgo importante: osteotomia varizante do fêmur.\n\n### A patela de Wiberg\nClassificação da **forma da patela** (facetas):\n- A: facetas iguais.\n- B: medial menor.\n- ==C==: medial muito pequena.\n\nÉ uma variação morfológica da patela que, **isolada**, não exige correção óssea: o LPFM isolado é adequado.\n\n> **Na prova:** LPFM isolado quando o único achado é ==Wiberg C== (sem TT-TG alto, patela alta ou torção).",
-  "correta": "**Displasia patelar tipo C de Wiberg.**",
   "incorretas": {
-   "A": "**Pede osteotomia da TAT.**",
-   "B": "**Patela alta.**\n- Pede distalização.",
-   "D": "**Pede derrotação.**"
+   "A": "**Distância TA-GT acima de 20 mm indica lateralização importante.** Pode exigir medialização da tuberosidade tibial associada ao tratamento ligamentar.",
+   "B": "**Insall-Salvati acima de 1,2 sugere patela alta.** O encaixe troclear tardio pode levar a considerar distalização da tuberosidade em pacientes selecionados.",
+   "D": "**Anteversão femoral acima de 35 graus altera o vetor patelar.** Deformidade rotacional relevante pode exigir planejamento de osteotomia derrotativa, não apenas LPFM."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O LPFM isolado tem um cenário.** Reconstruir o ligamento patelofemoral medial restaura o principal freio contra a translação lateral da patela perto da extensão. Na instabilidade recorrente sem grande desalinhamento ósseo, o procedimento pode bastar. A decisão requer examinar também tróclea, altura da patela, posição da tuberosidade tibial e torções femoral e tibial; nenhuma medida isolada deve determinar a operação.\n\n**Diferenciar patela de tróclea.** A classificação de Wiberg descreve as facetas da própria patela. No tipo C, a faceta medial é muito pequena; isso não é o mesmo que displasia troclear grave de Dejour. O achado patelar isolado não impõe uma osteotomia. Já distância tuberosidade tibial a sulco troclear acima de cerca de 20 mm, patela alta pelo índice de Insall-Salvati acima de aproximadamente 1,2 e anteversão femoral muito aumentada levam a considerar correções ósseas ou rotacionais associadas conforme o quadro.\n\n**Os limiares são guias.** Exame clínico, técnica de imagem, maturidade esquelética e gravidade dos sintomas importam. Um número acima do corte não significa automaticamente que toda pessoa precisará de osteotomia, mas torna menos segura a afirmação de que o LPFM isolado será suficiente.",
+  "correta": "**Patela tipo C de Wiberg.** Entre as opções, é o achado morfológico que, isolado, menos obriga a corrigir alinhamento ósseo além de reconstruir o LPFM.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0042": {
-  "conceito": "### O mecanismo\nContração ==excêntrica== do quadríceps ==com o pé apoiado== (cadeia cinética fechada):\n- Tropeço ou tentativa de **evitar a queda**: o joelho flete bruscamente enquanto o quadríceps contrai para frear.\n- Aterrissagem de salto.\n\nA força excêntrica sob carga supera a resistência de um tendão frequentemente **degenerado** (1 a 2 cm acima da patela).\n\n### Quem\nHomens acima de 40 anos, com fatores sistêmicos (renal, diabetes, corticoide).\n\n### O diagnóstico perdido\nAté um terço é inicialmente não diagnosticado. Pedir que o paciente **eleve a perna estendida**: não consegue.\n\n> **Na prova:** ruptura do quadricipital = ==excêntrica com o pé apoiado==.",
-  "correta": "**Excêntrica com apoio do pé.**",
   "incorretas": {
-   "B": "**Sem apoio não.**",
-   "C": "**Concêntrica não.**",
-   "D": "**Erra os dois.**"
+   "B": "**A contração excêntrica está certa, mas falta o apoio característico.** Com o pé livre, não se reproduz a mesma carga de sustentação do corpo descrita na questão.",
+   "C": "**O apoio está certo, o tipo de contração não.** Na fase concêntrica o quadríceps encurta para estender o joelho, em vez de resistir ao seu alongamento forçado.",
+   "D": "**Faltam os dois elementos clássicos.** Contração concêntrica sem o pé apoiado não expressa o mecanismo típico de queda ou aterrissagem."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O quadríceps tenta frear a flexão.** Na contração excêntrica, o músculo gera força enquanto se alonga. Se uma pessoa tropeça ou aterrissa com o pé apoiado, o peso do corpo flexiona o joelho ao mesmo tempo em que o quadríceps tenta sustentá-lo. A carga resultante pode superar a resistência do tendão quadricipital e rompê-lo, sobretudo se já houver degeneração.\n\n**Reconhecer a ruptura.** Dor suprapatelar súbita, defeito palpável e incapacidade de elevar a perna estendida apontam para interrupção do mecanismo extensor. O tendão quadricipital rompe com maior frequência depois dos 40 anos e em pessoas com diabetes, doença renal ou uso de corticoides. Rupturas completas costumam exigir reparo precoce; um retináculo ainda íntegro pode mascarar parte da perda de extensão e retardar o diagnóstico.",
+  "correta": "**Excêntrica com o pé apoiado.** O quadríceps freia o joelho que é forçado à flexão sob o peso do corpo.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0043": {
-  "conceito": "### LCP isolado: muitas vezes conservador\n- Graus I e II (gaveta posterior até ~10 mm, com o platô ainda anterior ou nivelado aos côndilos) isolados: **reabilitação com fortalecimento do quadríceps**, bons resultados.\n\n### Quando operar\n- **Lesão combinada**, sobretudo com o ==canto posterolateral==: **aumento da rotação externa** da tíbia a **30°** (dial test positivo; se também a 90°, LCP + CPL).\n- **Avulsão óssea** desviada da inserção tibial (fixação, fragmento suficientemente grande).\n- Grau III sintomático ou em atletas, ou com instabilidade persistente.\n- Luxação do joelho / multiligamentar.\n\n### O dial test\n- Aumento de ≥10° só a **30°**: canto posterolateral isolado.\n- A **30° e 90°**: CPL + LCP.\n\n> **Na prova:** indicação cirúrgica no LCP = ==rotação externa aumentada a 30°== (lesão do canto posterolateral associada).",
-  "correta": "**Aumento da rotação lateral em 30° de flexão.**",
   "incorretas": {
-   "A": "**Frouxidão leve.**",
-   "B": "**Fragmento pequeno.**\n- Não é a indicação clássica.",
-   "D": "**Grau II.**\n- Isolado, geralmente conservador."
+   "A": "**Valgo discreto avalia o lado medial.** Uma cruz isolada não demonstra instabilidade posterior grave nem lesão multiligamentar que exija cirurgia do LCP.",
+   "B": "**Fragmento pequeno não define a conduta.** Avulsão desviada ou instável pode precisar de fixação, independentemente de ser pequena; a redação não informa deslocamento.",
+   "D": "**Sete milímetros correspondem a frouxidão moderada.** Quando isolada, pode ser manejada inicialmente com reabilitação, conforme sintomas e demanda."
   },
-  "geradoEm": "2026-09-23",
+  "alerta": "O aumento da rotação lateral a 30 graus no teste de rotação externa sugere lesão do canto posterolateral, não prova isoladamente que o LCP precise ser reconstruído. Se também houver aumento a 90 graus, cresce a suspeita de lesão combinada, mas o teste deve ser correlacionado com gaveta posterior, varo, imagem e sintomas. A alternativa C é a melhor entre as oferecidas por apontar instabilidade associada relevante, sem constituir indicação cirúrgica automática.",
+  "conceito": "**LCP isolado nem sempre precisa de cirurgia.** Lesões parciais ou grau I e II isoladas frequentemente recebem reabilitação com fortalecimento do quadríceps e proteção da translação posterior. A decisão muda diante de avulsão óssea desviada, grande frouxidão posterior sintomática, luxação do joelho ou lesão multiligamentar. Uma gaveta posterior de 7 mm, sozinha, costuma ficar na faixa em que se pode iniciar tratamento conservador.\n\n**Por que girar a tíbia.** O teste de rotação externa, ou dial test, compara a rotação dos pés e tíbias dos dois lados a 30 e 90 graus de flexão. Assimetria acima de cerca de 10 graus a 30 graus sugere insuficiência posterolateral; se persistir a 90 graus, deve-se investigar lesão combinada, inclusive do LCP. Uma reconstrução do LCP feita sem corrigir instabilidade posterolateral importante pode ficar sobrecarregada e falhar.\n\n**Outros distratores.** Uma cruz de abertura ao estresse em valgo sugere lesão medial leve, não indicação de reconstrução do LCP. Avulsões pequenas exigem avaliar deslocamento e estabilidade; o tamanho isolado não decide a cirurgia.",
+  "correta": "**Rotação lateral aumentada a 30 graus.** Entre as alternativas, é a pista de lesão posterolateral associada que mais altera o planejamento cirúrgico.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0044": {
