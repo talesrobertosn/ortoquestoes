@@ -10,6 +10,66 @@ de prova de título em ortopedia (TEOT, TARO, TECOC, ENARE). Trabalhe SEMPRE na 
 `claude/pdfs-questoes-tp64dr`, faça commits pequenos e frequentes e dê push nela. Escreva tudo em português
 do Brasil.
 
+## O que já foi feito (histórico para você se situar)
+
+Este trabalho começou com o Claude Code. Até agora:
+
+- O formato "aula" foi definido e aprovado pelo dono do projeto (médico ortopedista) depois de ver o
+  resultado no celular. Não mude o formato.
+- **ombro-cotovelo**: todos os comentários crus foram reescritos no formato aula (cerca de 250 questões).
+- **trauma**: 288 questões reescritas no formato aula (de trauma-0257 até trauma-1050, na ordem da fila).
+- Comentários antigos que descreviam a IMAGEM errada foram corrigidos depois de abrir a figura:
+  trauma-0770 (era um descolamento epifisário do fêmur distal, não o úmero), trauma-0787 (haste umeral
+  GROSSA demais para o canal distal, e não fina), trauma-0912 (via posterior de Bosworth do fêmur),
+  trauma-0979 (pseudartrose do colo cirúrgico, Boileau 3), trauma-0980 (distâncias dos fios na banda de
+  tensão do olécrano) e trauma-1026 (semitendíneo e semimembranáceo). Isso mostra que vale a pena abrir
+  todas as imagens.
+- Foram acrescentados alertas quando o gabarito oficial parece discutível, por exemplo: trauma-1021
+  (regra de Coventry: a conta trigonométrica dá 57 mm, a banca diz 67 mm), trauma-0851 (placa de 95 graus
+  na subtrocantérica), trauma-0304 e trauma-0683 (supinação x pronação na via lateral do cotovelo),
+  trauma-0272 (die-punch como AO B3), trauma-0532 (MIPO do úmero), trauma-0723 (projétil como Gustilo IIIB),
+  trauma-1000 (meniscos). Os gabaritos foram mantidos.
+- Correção feita em trauma-0483: o grupo D de Herbert é D1 união fibrosa, D2 pseudartrose, D3 pseudartrose
+  esclerótica, D4 com necrose do polo proximal.
+
+Valores já usados nos comentários (mantenha a coerência com eles):
+- Escápula (critérios de Cole): medialização de 20 mm, angulação sagital de 45 graus, ângulo glenopolar de
+  22 graus ou menos, ou 15 mm com 29 graus.
+- TLICS (toracolombar): compressão 1, explosão 2, translação 3, distração 4; LCP indeterminado 2, roto 3;
+  raiz 2, medular completa 2, incompleta 3; 5 ou mais é cirúrgico.
+- SLIC (cervical): compressão 1, explosão 2, distração 3, rotação ou translação 4; discoligamentar 0, 1, 2;
+  raiz 1, completa 2, incompleta 3, mais 1 se compressão contínua; 5 ou mais é cirúrgico.
+- Denis (sacro): zona I cerca de 6% de lesão neurológica, II cerca de 28%, III acima de 50%.
+- Síndrome compartimental: delta P (diastólica menos compartimento) abaixo de 30 mmHg; lesão irreversível
+  a partir de cerca de 8 horas.
+- Fratura transtrocantérica: TAD abaixo de 25 mm; parede lateral de 20,5 mm ou menos é incompetente,
+  medida 3 cm abaixo do tubérculo inominado a 135 graus.
+- Hertel (úmero proximal): calcar de 8 mm ou menos e dobradiça medial rompida acima de 2 mm.
+
+Um cuidado técnico que já causou problema: os arquivos `public/acervo/comentarios/*.json` usam indentação
+de 1 espaço. Se algum dia precisar editar um desses arquivos por script próprio, grave com
+`json.dumps(dados, ensure_ascii=False, indent=1) + "\n"`; do contrário o diff vira o arquivo inteiro.
+
+## O que falta (situação no momento da passagem)
+
+| Etapa | Tema | Pendentes |
+|---|---|---|
+| 1. Crus (`fila.py TEMA`) | trauma | 27 (a partir de trauma-1051) |
+| 2. Tópicos antigos (`fila.py TEMA N 0 --topicos`) | pediatria | 564 |
+| | mao | 476 |
+| | quadril | 417 |
+| | pe-tornozelo | 255 |
+| | trauma | 243 |
+| | coluna | 238 |
+| | conceitos-basicos | 201 |
+| | joelho | 190 |
+| | ombro-cotovelo | 10 |
+| 3. Corrido antigo sem "Na prova" (`fila.py TEMA N 0 --corrido`) | trauma | 200 |
+| | ombro-cotovelo | 134 |
+
+Os temas `osteometabolicas` e `tumores` já estão completos. Confira os números atuais rodando o
+`fila.py` antes de começar, porque a fila é calculada a partir dos arquivos.
+
 ## Objetivo
 
 Reescrever os comentários das questões no formato "aula": quem lê o comentário deve sair como se tivesse
