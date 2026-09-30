@@ -40,7 +40,7 @@ DIR_IMAGENS = Path(__file__).resolve().parent.parent / "public" / "imagens"
 # sempre termina.
 CAUDA = re.compile(r"(?:(?:\d{1,4}|[A-E])(?:\s+|$)){8,}$")
 
-# As páginas finais do e-book saem sempre nestes tamanhos: a folha de bolhas,
+# As páginas finais do arquivo saem sempre nestes tamanhos: a folha de bolhas,
 # a página inteira digitalizada e o logotipo quadrado. Conferi que nenhuma
 # figura legítima do acervo tem qualquer um deles.
 TAMANHOS_DE_FOLHA = {(631, 895), (1728, 2464), (1241, 1754), (256, 256)}

@@ -95,7 +95,7 @@ PADRAO_CABECALHO_GABARITO = re.compile(
 )
 
 # A chave de respostas em texto puro nem sempre vem com cabeçalho: em vários
-# e-books ela começa direto, como uma parede de "101 126 151 176 …". Sem
+# PDFs ela começa direto, como uma parede de "101 126 151 176 …". Sem
 # reconhecê-la, a última questão do arquivo emenda a chave inteira dentro da
 # própria alternativa final — que costuma ser justamente a do gabarito.
 PADRAO_LINHA_DE_CHAVE = re.compile(r"^(?:(?:\d{1,4}|[A-E])(?:\s+|$)){8,}$")
@@ -729,7 +729,7 @@ def principal() -> int:
     if corte:
         alertas.append(f"Corpo do arquivo cortado antes da chave de respostas ({corte}).")
 
-    # Figura depois da última página de texto é página de fim de e-book: capa,
+    # Figura depois da última página de texto é página final do arquivo: capa,
     # folha de respostas, logotipo. Sem este corte elas viravam figuras da
     # última questão, que passava a ilustrar anatomia com folha de gabarito.
     if linhas_corpo:
