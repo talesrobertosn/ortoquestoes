@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { contasDisponiveis } from '../conta/supabase'
 import { usarConta } from '../conta/ContextoConta'
 import { MarcaHorizontal } from '../marca/Simbolo'
@@ -6,6 +7,7 @@ import { href } from '../util/rotas'
 import { Icone, type NomeIcone } from './Icone'
 import { AvisoBloqueioDiario } from './LimiteRespostas'
 import { usarAssinante } from '../conta/plano'
+import { MenuGeral } from './MenuGeral'
 
 // No celular (até 40rem) a barra de baixo já leva Início, Treinar, Revisão
 // e Desempenho, então estes links somem daqui e o nome da marca volta ao
@@ -23,6 +25,14 @@ export function Cabecalho({ caminho }: { caminho: string }) {
   // Quem já assina acessa a assinatura em Minha conta; o botão só ofereceria de novo.
   const assinante = usarAssinante(sessao)
   const inicial = String(sessao?.user.user_metadata?.nome ?? '').trim().charAt(0).toUpperCase()
+  // O menu com tudo: fecha sozinho ao trocar de página.
+  const [menuAberto, definirMenuAberto] = useState(false)
+  useEffect(() => { definirMenuAberto(false) }, [caminho])
+  const botaoMenu = (classe: string) => (
+    <button type="button" className={classe} onClick={() => definirMenuAberto(true)} aria-haspopup="dialog" aria-expanded={menuAberto}>
+      <Icone nome="menu" tamanho={classe.includes('nav-link') ? 18 : 20} /><span>Menu</span>
+    </button>
+  )
 
   return (
     <>
@@ -43,6 +53,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
               {link.rotulo}
             </a>
           ))}
+          {botaoMenu('nav-link nav-link--menu')}
         </nav>
         <div className="cabecalho__acoes">
           <AvisoBloqueioDiario caminho={caminho} variante="chip" />
@@ -76,7 +87,9 @@ export function Cabecalho({ caminho }: { caminho: string }) {
       <a href={href('/treinar')} aria-current={caminho.startsWith('/treinar') ? 'page' : undefined}><Icone nome="filtro" /><span>Treinar</span></a>
       <a href={href('/revisao')} aria-current={caminho.startsWith('/revisao') ? 'page' : undefined}><Icone nome="reiniciar" /><span>Revisar</span></a>
       <a href={href('/dados')} aria-current={caminho.startsWith('/dados') ? 'page' : undefined}><Icone nome="certo" /><span>Desempenho</span></a>
+      {botaoMenu('navegacao-mobile__menu')}
     </nav>
+    <MenuGeral aberto={menuAberto} aoFechar={() => definirMenuAberto(false)} caminho={caminho} />
     </>
   )
 }

@@ -441,9 +441,12 @@
   .nav-link--logado .avatar-mini { width: 1.75rem; height: 1.75rem; font-size: 0.8rem; }
 }
 @media (min-width: 75rem) {
-  .cabecalho__interno { position: relative; gap: 2rem; }
-  .cabecalho__nav-principal { position: absolute; left: 50%; transform: translateX(-50%); }
-  .cabecalho__nav-principal .nav-link { padding-inline: 1rem; }
+  /* Com o botão Menu dentro da pílula, centralizar em posição absoluta a fazia
+     encostar em Planos; no fluxo, ela fica no meio do espaço que sobra. */
+  .cabecalho__interno { gap: 1.5rem; }
+  .cabecalho__nav-principal { margin-inline: auto; }
+  .cabecalho__acoes { margin-left: 0; }
+  .cabecalho__nav-principal .nav-link { padding-inline: .9rem; }
   .nav-link__icone { display: inline-flex; opacity: .8; }
 }
 
