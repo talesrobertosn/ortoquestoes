@@ -12,14 +12,14 @@ import contagem from './incidencia.json'
  * para treinar exatamente aquele assunto.
  */
 
-/** 4 = cai muito · 3 = cai com frequência · 2 = cai às vezes · 1 = cai pouco (quartis dentro da área). */
+/** Prioridade de estudo pela contagem, em quartis dentro da área: 4 = máxima … 1 = baixa. */
 export type Nivel = 1 | 2 | 3 | 4
 
 export const ROTULO_NIVEL: Record<Nivel, string> = {
-  4: 'Cai muito',
-  3: 'Cai com frequência',
-  2: 'Cai às vezes',
-  1: 'Cai pouco',
+  4: 'Prioridade máxima',
+  3: 'Prioridade alta',
+  2: 'Prioridade média',
+  1: 'Prioridade baixa',
 }
 
 export interface Foco {

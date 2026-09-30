@@ -21,7 +21,7 @@ interface MetricasConta { respostas_total: number; sequencia: number; plano: str
 const RECURSOS: { icone: NomeIcone; titulo: string; texto: string; itens: string[]; destino: string; largo?: boolean }[] = [
   { icone: 'rota', titulo: 'Cronograma baseado no que mais cai', texto: 'Você diz a data da prova e o OrtoQuestões monta a meta de cada dia e os temas de cada semana, na ordem do que mais cai no TEOT e no TARO e com reforço nos seus pontos fracos. Atrasou ou adiantou, ele se ajusta sozinho.', itens: ['Meta de cada dia até a prova', 'Primeiro os assuntos mais cobrados', 'Reta final reservada na última semana'], destino: '/cronograma', largo: true },
   { icone: 'trofeu', titulo: 'Simulado Nacional, todo mês', texto: 'Uma prova igual para todos os assinantes do Brasil, com 50 questões de TEOT e TARO em duas horas. Corrigida na hora, com a sua posição e um relatório de prontidão por tema.', itens: ['Nota, posição e percentil', 'Pronto, no caminho ou reforçar', 'Top 10 da edição'], destino: '/simulado-nacional', largo: true },
-  { icone: 'fogo', titulo: 'Temas que mais caem', texto: 'O ranking das áreas e dos assuntos mais cobrados. Um toque em qualquer assunto e começa o treino dele.', itens: ['20 assuntos campeões', '12 áreas, assunto por assunto'], destino: '/temas-que-mais-caem' },
+  { icone: 'grafico', titulo: 'Temas que mais caem', texto: 'O ranking das áreas e dos assuntos mais cobrados. Um toque em qualquer assunto e começa o treino dele.', itens: ['20 assuntos campeões', '12 áreas, assunto por assunto'], destino: '/temas-que-mais-caem' },
   { icone: 'grupo', titulo: 'Como a turma respondeu', texto: 'Depois de cada questão, quantos marcaram cada alternativa e qual é a pegadinha. E sessões com as que a turma mais erra.', itens: ['"68% marcaram B"', 'Filtros pela turma'], destino: '/treinar' },
   { icone: 'medalha', titulo: 'Liga da residência', texto: 'Um ranking privado do seu serviço. Crie a liga, mande o link no grupo e veja quem mais estuda.', itens: ['Convite pelo WhatsApp', 'Geral e da semana'], destino: '/ligas' },
   { icone: 'correio', titulo: 'Relatório do mês', texto: 'Todo dia 1º, no seu e-mail: quantas questões, acerto, temas que subiram e caíram e o próximo passo.', itens: ['Evolução mês a mês', 'Próximo passo sugerido'], destino: '/conta' },
@@ -139,7 +139,7 @@ export function Assinatura() {
           <small>Sua nota e posição entre os residentes.</small>
         </a>
         <a className="vp-pergunta" href={href('/temas-que-mais-caem')}>
-          <span className="vp-pergunta__icone"><Icone nome="fogo" tamanho={22} /></span>
+          <span className="vp-pergunta__icone"><Icone nome="grafico" tamanho={22} /></span>
           <span className="vp-pergunta__q">O que a prova mais cobra?</span>
           <strong>Temas que mais caem</strong>
           <small>O ranking das áreas e dos assuntos.</small>
@@ -340,15 +340,15 @@ export function Assinatura() {
 /** Amostra do ranking (base do cronograma) na página de vendas: só as três primeiras áreas aparecem. */
 function RankingIlustrado() {
   const linhas: Array<[string, number, string]> = [
-    ['Trauma adulto', 100, 'Cai muito'],
-    ['Ombro e cotovelo', 72, 'Cai muito'],
-    ['Mão e punho', 62, 'Cai muito'],
-    ['██████ ██████████', 50, '███ █████'],
-    ['██████', 42, '███ █████'],
+    ['Trauma adulto', 100, '21,5% das questões'],
+    ['Ortopedia pediátrica', 75, '16,2% das questões'],
+    ['Mão e punho', 62, '13,4% das questões'],
+    ['██████ ██████████', 46, '█,█% ███ ████████'],
+    ['██████', 34, '█,█% ███ ████████'],
   ]
   return (
     <div className="vp-ranking" aria-hidden="true">
-      <span className="vp-ranking__rotulo"><Icone nome="fogo" tamanho={14} /> Ranking das áreas</span>
+      <span className="vp-ranking__rotulo">Ranking das áreas</span>
       <ol>
         {linhas.map(([nome, largura, nivel], i) => (
           <li key={i} className={i > 2 ? 'vp-ranking__oculto' : ''}>

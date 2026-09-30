@@ -3,13 +3,13 @@
 .ti-heroi {
   position: relative; overflow: hidden; isolation: isolate;
   padding: clamp(1.5rem, 4.5vw, 2.75rem); border-radius: 24px; color: var(--sobre-heroi); box-shadow: var(--sombra-media);
-  background: radial-gradient(circle at 90% 8%, rgba(232, 120, 79, 0.32), transparent 45%), radial-gradient(circle at 70% 110%, rgba(232, 179, 79, 0.22), transparent 50%), var(--heroi);
+  background: radial-gradient(circle at 90% 8%, rgba(61, 191, 170, 0.25), transparent 45%), var(--heroi);
 }
 .ti-heroi h1 { margin: 0 0 0.5rem; color: var(--sobre-heroi); font-size: clamp(1.9rem, 5vw, 2.9rem); letter-spacing: -0.02em; line-height: 1.05; max-width: 20ch; }
 .ti-heroi > p:not(.ti-heroi__selo) { margin: 0; max-width: 58ch; color: var(--sobre-heroi-2); }
 .ti-heroi__selo {
   display: inline-flex; align-items: center; gap: 0.4rem; margin: 0 0 1rem; padding: 0.3rem 0.8rem; border-radius: 999px;
-  background: rgba(232, 120, 79, 0.2); border: 1px solid rgba(255, 196, 163, 0.4); color: #ffd6b8; font-size: var(--meta); font-weight: 700; letter-spacing: 0.03em;
+  background: var(--heroi-vidro); border: 1px solid var(--heroi-traco); color: var(--sobre-heroi); font-size: var(--meta); font-weight: 700; letter-spacing: 0.03em;
 }
 .ti-heroi__legenda { list-style: none; margin: 1.25rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.45rem; }
 .ti-heroi__previa { display: inline-flex; align-items: center; gap: 0.4rem; margin: 1rem 0 0 !important; padding: 0.35rem 0.8rem; border-radius: 999px; background: var(--heroi-vidro); border: 1px solid var(--heroi-traco); font-size: var(--corpo-menor); color: #ffe3a3 !important; }
@@ -24,9 +24,9 @@
 .ti-top__lista { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: 0.5rem 1rem; }
 .ti-top__item { display: grid; grid-template-columns: 2.2rem minmax(0, 1fr) auto; align-items: center; gap: 0.7rem; padding: 0.55rem 0.6rem 0.55rem 0.5rem; border-radius: 14px; border: var(--borda); background: var(--superficie); }
 .ti-top__posicao { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 10px; font-weight: 850; background: var(--superficie-2); color: var(--texto-2); }
-.ti-top__item:nth-child(-n + 3) .ti-top__posicao { background: linear-gradient(135deg, #e8784f, #c2412f); color: #fff; }
-.ti-top__item:nth-child(n + 4):nth-child(-n + 10) .ti-top__posicao { background: #fdf0e3; color: #c05f14; }
-:root[data-tema="escuro"] .ti-top__item:nth-child(n + 4):nth-child(-n + 10) .ti-top__posicao { background: #37241a; color: #ffb67a; }
+.ti-top__item:nth-child(-n + 3) .ti-top__posicao { background: var(--verdete); color: #fff; }
+.ti-top__item:nth-child(n + 4):nth-child(-n + 10) .ti-top__posicao { background: var(--verdete-veu); color: var(--verdete); }
+:root[data-tema="escuro"] .ti-top__item:nth-child(n + 4):nth-child(-n + 10) .ti-top__posicao { background: var(--verdete-veu); color: var(--verdete); }
 .ti-top__nome { display: grid; min-width: 0; }
 .ti-top__nome strong { font-size: 0.95rem; line-height: 1.25; }
 .ti-top__nome small { color: var(--texto-2); font-size: var(--meta); }
@@ -38,13 +38,13 @@
 .ti-area > summary > svg { color: var(--texto-2); transition: transform 0.2s ease; }
 .ti-area[open] > summary > svg { transform: rotate(180deg); }
 .ti-area__posicao { font-size: 1.35rem; font-weight: 850; color: var(--texto-2); letter-spacing: -0.02em; }
-li:nth-child(-n + 3) > .ti-area .ti-area__posicao { color: #c2412f; }
-:root[data-tema="escuro"] li:nth-child(-n + 3) > .ti-area .ti-area__posicao { color: #ff9b85; }
+li:nth-child(-n + 3) > .ti-area .ti-area__posicao { color: var(--verdete); }
+:root[data-tema="escuro"] li:nth-child(-n + 3) > .ti-area .ti-area__posicao { color: var(--verdete); }
 .ti-area__nome { display: grid; gap: 0.3rem; min-width: 0; }
 .ti-area__nome strong { font-size: 1.08rem; }
 .ti-area__nome small { color: var(--texto-2); font-size: var(--meta); }
 .ti-area__peso { display: block; height: 0.45rem; border-radius: 999px; background: var(--superficie-2); overflow: hidden; max-width: 24rem; }
-.ti-area__peso span { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #e8b34f, #e8784f 60%, #c2412f); }
+.ti-area__peso span { display: block; height: 100%; border-radius: 999px; background: var(--verdete); }
 .ti-area__corpo { display: grid; gap: 0.9rem; padding: 0.25rem 1.1rem 1.1rem 4.95rem; }
 .ti-grupo { display: grid; gap: 0.45rem; justify-items: start; }
 .ti-grupo__focos { display: flex; flex-wrap: wrap; gap: 0.4rem; }

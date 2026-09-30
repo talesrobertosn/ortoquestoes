@@ -36,7 +36,7 @@ const GRUPOS: { titulo: string; itens: Item[] }[] = [
   {
     titulo: 'Rumo à prova',
     itens: [
-      { destino: '/temas-que-mais-caem', rotulo: 'Temas que mais caem', texto: 'O ranking do que o TEOT e o TARO mais cobram', icone: 'fogo', assinante: true },
+      { destino: '/temas-que-mais-caem', rotulo: 'Temas que mais caem', texto: 'A contagem dos assuntos nas provas oficiais', icone: 'grafico', assinante: true },
       { destino: '/simulado-nacional', rotulo: 'Simulado Nacional', texto: 'Uma prova por mês, com nota e posição', icone: 'alvo', assinante: true },
     ],
   },

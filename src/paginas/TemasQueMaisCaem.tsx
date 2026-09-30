@@ -73,7 +73,7 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
   return (
     <div className="empilha-2 ti">
       <section className="ti-heroi">
-        <p className="ti-heroi__selo"><Icone nome="fogo" tamanho={15} /> Temas que mais caem</p>
+        <p className="ti-heroi__selo">Temas que mais caem</p>
         <h1>Estude primeiro o que a prova mais cobra</h1>
         <p>Contamos, uma a uma, as questões das provas oficiais do acervo (TEOT, TARO, TECOC e ENARE) e somamos por área e por assunto. O resultado é o ranking abaixo, com o número de questões de cada assunto. Cada um abre um treino, começando pelas que você ainda não fez.</p>
         {!aberto && <p className="ti-heroi__previa"><Icone nome="cadeado" tamanho={14} /> Você está vendo uma prévia. O ranking completo é do assinante.</p>}
@@ -166,7 +166,7 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
                         </div>
                       </div>
                     ))}
-                    {!aberto && <p className="ti-area__guardado"><Icone nome="cadeado" tamanho={14} /> Os assuntos que caem com frequência, às vezes e pouco ficam guardados para assinantes.</p>}
+                    {!aberto && <p className="ti-area__guardado"><Icone nome="cadeado" tamanho={14} /> Os assuntos de prioridade alta, média e baixa ficam guardados para assinantes.</p>}
                     {aberto && m.total > 0 && <button type="button" className="botao ti-botao ti-area__treinar" onClick={() => treinar(area)}><Icone nome="raio" tamanho={15} /> Treinar {area.nome.toLowerCase()}</button>}
                   </div>
                 </details>
@@ -187,7 +187,7 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
       </section>
 
       <p className="ti-nota">
-        Toque em um assunto para treinar as questões dele; o sinal de visto marca os que você já fez inteiros. O número ao lado de cada assunto é quantas questões de prova oficial dele há no acervo ({BASE_CONTAGEM.toLocaleString('pt-BR')} contadas no total, sem cópias, anuladas ou questões autorais). Os níveis dividem os assuntos de cada área em quatro partes iguais, do mais frequente ao menos frequente. O ranking serve para priorizar o estudo; não é previsão do que vai cair. O <a href={href('/cronograma')}>cronograma</a> já usa esta ordem.
+        Toque em um assunto para treinar as questões dele; o sinal de visto marca os que você já fez inteiros. O número ao lado de cada assunto é quantas questões de prova oficial dele há no acervo ({BASE_CONTAGEM.toLocaleString('pt-BR')} contadas no total, sem cópias, anuladas ou questões autorais). A prioridade divide os assuntos de cada área em quatro partes iguais pela contagem: máxima para o quarto com mais questões, baixa para o quarto com menos. O ranking serve para priorizar o estudo; não é previsão do que vai cair. O <a href={href('/cronograma')}>cronograma</a> já usa esta ordem.
       </p>
     </div>
   )

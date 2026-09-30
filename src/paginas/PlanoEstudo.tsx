@@ -15,7 +15,7 @@ import { href, navegar } from '../util/rotas'
 import '../estilos/paginas/PlanoEstudo.css'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
-const ROTULO_COBRANCA: Record<number, string> = { 4: 'cai muito', 3: 'cai com frequência', 2: 'cai às vezes', 1: 'cai pouco', 0: 'fora do ranking' }
+const ROTULO_COBRANCA: Record<number, string> = { 4: 'prioridade máxima', 3: 'prioridade alta', 2: 'prioridade média', 1: 'prioridade baixa', 0: 'fora do ranking' }
 const PROVAS = ['TEOT', 'TARO', 'ENARE R4', 'Outra prova']
 /** Semanas que o não assinante vê na prévia do próprio cronograma. */
 const SEMANAS_PREVIA = 2
@@ -120,12 +120,12 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, pendente = null }:
             <div key={t.slug} className="pe-semana__tema">
               <div className="pe-semana__tema-cabeca">
                 <p className="pe-semana__tema-nome"><strong>{t.nome}</strong><span className="numerico">{t.n} questões</span></p>
-                {t.posicaoArea && <span className="pe-semana__area">{t.posicaoArea}ª área que mais cai</span>}
+                {t.posicaoArea && <span className="pe-semana__area">{t.posicaoArea}ª área em número de questões</span>}
               </div>
               <p className="pe-semana__porque">
-                <Icone nome="fogo" tamanho={15} /> <span>{t.assuntos.some((a) => a.nivel >= 3)
-                  ? <>Estas {t.n} questões são dos assuntos de {t.nome.toLowerCase()} que <b>mais caem no TEOT e no TARO</b>. O cronograma segue o ranking da área: começa pelo mais cobrado e desce.</>
-                  : <>Os assuntos que mais caem em {t.nome.toLowerCase()} já ficaram para trás: agora entram os que caem menos, para você cobrir a área inteira.</>}</span>
+                <span>{t.assuntos.some((a) => a.nivel >= 3)
+                  ? <>Estas {t.n} questões são dos assuntos de {t.nome.toLowerCase()} com <b>mais questões nas provas oficiais</b>. O cronograma segue a contagem da área: começa pelo assunto com mais questões e desce.</>
+                  : <>Os assuntos de prioridade máxima em {t.nome.toLowerCase()} já ficaram para trás: agora entram os de prioridade menor, para você cobrir a área inteira.</>}</span>
               </p>
               <ul className="pe-assuntos">
                 {t.assuntos.slice(0, 10).map((a) => (
@@ -234,8 +234,8 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, pendente = null }:
     </details>
 
     <a className="pe-incidencia" href={href('/temas-que-mais-caem')}>
-      <span className="pe-incidencia__icone" aria-hidden="true"><Icone nome="fogo" tamanho={20} /></span>
-      <span><strong>O cronograma segue os temas que mais caem</strong><small>As áreas que mais caem ganham mais espaço, e cada dia começa pelos assuntos mais cobrados. Veja o ranking.</small></span>
+      <span className="pe-incidencia__icone" aria-hidden="true"><Icone nome="grafico" tamanho={20} /></span>
+      <span><strong>O cronograma segue os temas que mais caem</strong><small>As áreas com mais questões nas provas ganham mais espaço, e cada dia começa pelos assuntos de prioridade máxima. Veja a contagem.</small></span>
       <Icone nome="direita" tamanho={18} />
     </a>
 

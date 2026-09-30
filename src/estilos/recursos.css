@@ -129,7 +129,7 @@
   position: relative; overflow: hidden; display: grid; gap: 0.8rem; align-content: start;
   padding: clamp(1.1rem, 3vw, 1.4rem); border-radius: var(--raio-grande); background: var(--superficie); border: var(--borda); box-shadow: var(--sombra-media);
 }
-.cx--temas { background: radial-gradient(circle at 100% 0%, color-mix(in srgb, var(--ouro) 16%, transparent), transparent 55%), var(--superficie); }
+.cx--temas { background: radial-gradient(circle at 100% 0%, color-mix(in srgb, var(--verdete) 10%, transparent), transparent 55%), var(--superficie); }
 .cx--crono { background: radial-gradient(circle at 100% 0%, color-mix(in srgb, var(--verdete) 14%, transparent), transparent 55%), var(--superficie); }
 .cx__cabeca { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.75rem; }
 .cx__cabeca .meta { margin: 0; }

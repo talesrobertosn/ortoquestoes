@@ -29,7 +29,7 @@ function CaixaTemas() {
   return (
     <section className="cx cx--temas" aria-labelledby="cx-temas-titulo">
       <header className="cx__cabeca">
-        <span className="cx__icone" aria-hidden="true"><Icone nome="fogo" tamanho={20} /></span>
+        <span className="cx__icone" aria-hidden="true"><Icone nome="grafico" tamanho={20} /></span>
         <div>
           <p className="meta">TEMAS QUE MAIS CAEM</p>
           <h2 id="cx-temas-titulo">O que a prova mais cobra</h2>
@@ -61,7 +61,7 @@ function CaixaTemas() {
 
 const COMO_FUNCIONA = [
   { icone: 'calendario' as const, titulo: 'Você diz a data da prova', texto: 'E quantos dias por semana consegue estudar.' },
-  { icone: 'fogo' as const, titulo: 'Ele monta o caminho', texto: 'A meta de cada dia e o tema de cada semana, começando pelo que mais cai.' },
+  { icone: 'rota' as const, titulo: 'Ele monta o caminho', texto: 'A meta de cada dia e o tema de cada semana, começando pelo que mais cai.' },
   { icone: 'reiniciar' as const, titulo: 'E se ajusta sozinho', texto: 'Atrasou, a meta sobe um pouco; adiantou, alivia. A última semana é de reta final.' },
 ]
 

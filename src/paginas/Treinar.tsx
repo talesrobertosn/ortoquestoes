@@ -236,7 +236,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           aoMudar={(temas, subtemas) => atualizar({ temas, subtemas })}
         />
         <a className="tr-incidencia" href={href('/temas-que-mais-caem')}>
-          <Icone nome="fogo" tamanho={16} />
+          <Icone nome="grafico" tamanho={16} />
           <span>Não sabe por onde começar? <b>Veja os temas que mais caem</b></span>
           {!premium && <SeloAssinante />}
         </a>

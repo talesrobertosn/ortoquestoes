@@ -65,12 +65,12 @@
 .pe-intensidade b { color: var(--verdete); font-size: var(--corpo-menor); }
 .pe-intensidade[aria-checked="true"] { border-color: var(--verdete); background: var(--verdete-veu); box-shadow: 0 0 0 1px var(--verdete); }
 .pe-form__apagar { margin-left: auto; color: var(--erro); }
-.pe-incidencia { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.9rem; padding: 0.9rem 1.1rem; border-radius: var(--raio-grande); text-decoration: none; color: var(--texto); background: linear-gradient(135deg, #fdf0e3, var(--superficie) 70%); border: 1px solid #f4d3b2; box-shadow: var(--sombra-media); }
+.pe-incidencia { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.9rem; padding: 0.9rem 1.1rem; border-radius: var(--raio-grande); text-decoration: none; color: var(--texto); background: linear-gradient(135deg, var(--verdete-veu), var(--superficie) 70%); border: 1px solid var(--traco); box-shadow: var(--sombra-media); }
 .pe-incidencia > span:nth-child(2) { display: grid; gap: 0.15rem; }
 .pe-incidencia small { color: var(--texto-2); }
-.pe-incidencia__icone { display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border-radius: 12px; color: #fff; background: linear-gradient(135deg, #e8784f, #c2412f); }
-.pe-incidencia:hover { border-color: #e8784f; }
-:root[data-tema="escuro"] .pe-incidencia { background: linear-gradient(135deg, #37241a, var(--superficie) 70%); border-color: #5a3a22; }
+.pe-incidencia__icone { display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border-radius: 12px; color: #fff; background: var(--verdete); }
+.pe-incidencia:hover { border-color: var(--verdete); }
+:root[data-tema="escuro"] .pe-incidencia { background: linear-gradient(135deg, var(--verdete-veu), var(--superficie) 70%); border-color: var(--traco); }
 .pe-semana__foco { flex-basis: 100%; display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.74rem; font-weight: 700; color: #c05f14; }
 :root[data-tema="escuro"] .pe-semana__foco { color: #ffb67a; }
 .pe-aviso-previa { display: flex; align-items: center; gap: 0.5rem; margin: 0; padding: 0.7rem 1rem; border-radius: 14px; background: var(--ouro-veu); color: var(--ouro-texto); border: 1px solid color-mix(in srgb, var(--ouro) 35%, transparent); font-weight: 650; font-size: var(--corpo-menor); }
@@ -105,7 +105,7 @@
 .pe-assuntos { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.3rem; }
 .pe-assunto { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 0.6rem; padding: 0.4rem 0.65rem; border-radius: 10px; background: var(--superficie); border: var(--borda); font-size: var(--corpo-menor); }
 .pe-assunto small { padding: 0.05rem 0.45rem; border-radius: 999px; font-size: 0.7rem; font-weight: 800; background: var(--ouro-veu); color: var(--ouro-texto); }
-.pe-assunto--4 small { background: linear-gradient(135deg, var(--ouro), #c9962f); color: #fff; }
+.pe-assunto--4 small { background: var(--verdete); color: #fff; }
 .pe-assunto b { min-width: 2.2rem; text-align: right; color: var(--verdete); }
 .pe-assunto--resto { color: var(--texto-2); background: transparent; border-style: dashed; }
 @media (max-width: 40rem) {
@@ -141,11 +141,11 @@
 .pe-semana__porque b { color: var(--texto); }
 .pe-assunto { grid-template-columns: 2.2rem minmax(0, 1fr) auto; }
 .pe-assunto__posicao { display: grid; place-items: center; width: 2rem; height: 1.7rem; border-radius: 8px; font-weight: 850; font-size: 0.8rem; background: var(--superficie-2); color: var(--texto-2); }
-.pe-assunto--4 .pe-assunto__posicao { background: linear-gradient(135deg, var(--ouro), #c9962f); color: #fff; }
-.pe-assunto--3 .pe-assunto__posicao { background: var(--ouro-veu); color: var(--ouro-texto); }
+.pe-assunto--4 .pe-assunto__posicao { background: var(--verdete); color: #fff; }
+.pe-assunto--3 .pe-assunto__posicao { background: var(--verdete-veu); color: var(--verdete); }
 .pe-assunto__nome { display: grid; min-width: 0; line-height: 1.3; }
 .pe-assunto__nome small { justify-self: start; margin-top: 0.1rem; padding: 0; background: none; color: var(--texto-2); font-size: 0.72rem; font-weight: 650; }
-.pe-assunto--4 .pe-assunto__nome small { color: var(--ouro-texto); font-weight: 800; }
+.pe-assunto--4 .pe-assunto__nome small { color: var(--verdete); font-weight: 800; }
 .pe-semana__legenda { margin: 0; font-size: 0.72rem; color: var(--texto-2); }
 .pe-semana__depois { display: flex; gap: 0.35rem; align-items: flex-start; margin: 0; font-size: var(--corpo-menor); color: var(--texto-2); }
 .pe-semana__depois svg { flex: none; margin-top: 0.2rem; color: var(--verdete); }

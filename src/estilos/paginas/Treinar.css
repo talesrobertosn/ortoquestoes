@@ -193,8 +193,8 @@
 .tr-turma { display: grid; gap: 0.6rem; padding-top: 0.9rem; border-top: 1px dashed var(--traco); }
 .tr-turma__titulo { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem; margin: 0; font-size: var(--meta); font-weight: 750; color: var(--texto-2); text-transform: uppercase; letter-spacing: 0.04em; }
 .tr-incidencia { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem; min-height: 44px; margin-top: 0.6rem; padding: 0.45rem 0.8rem; border-radius: 12px; font-size: var(--corpo-menor); color: var(--texto); text-decoration: none; background: #fdf0e3; border: 1px solid #f4d3b2; }
-.tr-incidencia > svg { color: #c2412f; }
+.tr-incidencia > svg { color: var(--verdete); }
 .tr-incidencia b { color: #c05f14; }
-.tr-incidencia:hover { border-color: #e8784f; }
+.tr-incidencia:hover { border-color: var(--verdete); }
 :root[data-tema="escuro"] .tr-incidencia { background: #37241a; border-color: #5a3a22; }
 :root[data-tema="escuro"] .tr-incidencia > svg, :root[data-tema="escuro"] .tr-incidencia b { color: #ffb67a; }
