@@ -25,14 +25,25 @@ node marketing/instagram/telas.mjs '' treinar dados revisao ranking
 
 ## Stories do Cronograma (`cronograma.html`)
 
-6 stories de venda (1080×1920), com visual claro de agenda, diferente do feed: contagem
-regressiva, o que é o cronograma em três passos, a tela real (celular), "primeiro o que mais
-cai" (só as três primeiras áreas visíveis), semana a semana com o ranking e a chamada para a
-prévia grátis com o preço do anual. As telas vêm de `telas.mjs` (conta de assinante com
-cronograma montado):
+8 stories de venda (1080×1920) em folha de caderno pautado (linhas azuis, margem vermelha,
+espiral, anotações à mão em Caveat, fita adesiva e post-it):
+
+1. A data oficial: prova teórica online do TEOT e do TEPOT 2027 (SBOT) em 10/01/2027, com
+   post-it "faltam N dias". N é calculado no dia em que as imagens são geradas: gere de novo
+   no dia de postar.
+2. O que é o cronograma, em três passos.
+3. Como ele escolhe (1): primeiro as áreas que mais caem (só as três primeiras visíveis).
+4. Como ele escolhe (2): dentro da área, os assuntos que mais caem (Trauma adulto, três visíveis).
+5. Como ele escolhe (3): toda semana diz o que entra e por quê (tela real da semana).
+6. Como ele escolhe (4): e pesa o seu erro (tela real com a contagem até 10/01).
+7. Linha do tempo de hoje até a prova (exemplo).
+8. Chamada para a prévia grátis, com o preço do anual.
+
+As telas vêm de `telas.mjs` (conta de assinante com cronograma até 10/01/2027; outra data com
+`DATA_PROVA=AAAA-MM-DD`):
 
 ```
-node marketing/instagram/telas.mjs cronograma ranking
+node marketing/instagram/telas.mjs cronograma semana
 node marketing/instagram/gerar.mjs marketing/instagram/cronograma.html
 ```
 

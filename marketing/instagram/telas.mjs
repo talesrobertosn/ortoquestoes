@@ -39,7 +39,7 @@ await p.route(/supabase\.co/, rota => {
   const u = rota.request().url()
   // Assinante com cronograma montado, para as telas dos recursos pagos.
   if (u.includes('obter_acesso_premium')) return rota.fulfill({ json: [{ premium: true, motivo: 'assinatura', recursos_exclusivos: true, pagamentos_ativos: true }] })
-  if (u.includes('obter_plano_estudo')) return rota.fulfill({ json: [{ data_prova: new Date(hojeMs + 87 * DIA).toISOString().slice(0, 10), intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: Object.keys(respondidas).length, criado_em: new Date(hojeMs).toISOString() }] })
+  if (u.includes('obter_plano_estudo')) return rota.fulfill({ json: [{ data_prova: process.env.DATA_PROVA ?? '2027-01-10', intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: Object.keys(respondidas).length, criado_em: new Date(hojeMs).toISOString() }] })
   if (u.includes('obter_ranking_com_movimento')) return rota.fulfill({ json: linhas })
   if (u.includes('minha_posicao_ranking')) return rota.fulfill({ json: [{ posicao: 4, total: 325, total_geral: 1497 }] })
   if (u.includes('obter_estado_conta')) return rota.fulfill({ json: [{ respostas_total: Object.keys(respondidas).length, sequencia: 23, plano: 'anual', status_assinatura: 'ativa', fim_periodo: '2027-03-01T00:00:00Z', ultima_cobranca_em: null, cancelar_ao_fim: false }] })
@@ -59,6 +59,14 @@ await p.addInitScript(([s, id, r, h]) => {
 }, [JSON.stringify(sessao), uid, respondidas, historico])
 const rotas = process.argv.slice(2).length ? process.argv.slice(2) : ['', 'treinar', 'progresso', 'revisao', 'ranking', 'erros']
 for (const r of rotas) {
+  // "semana": só o cartão da semana atual do cronograma, aberto, com os assuntos e o porquê.
+  if (r === 'semana') {
+    await p.goto(BASE + '#/cronograma'); await p.waitForTimeout(2200)
+    const semana = p.locator('li.pe-semana--atual').first()
+    await semana.scrollIntoViewIfNeeded()
+    await semana.screenshot({ path: `${PASTA}t-semana.png` })
+    console.log('semana'); continue
+  }
   await p.goto(BASE + '#/' + r); await p.waitForTimeout(1800); await p.addStyleTag({ content: '.dp-heroi__sync,.navegacao-mobile{display:none!important}' }); await p.waitForTimeout(200)
   const nome = (r || 'inicio').replace(/\//g, '_')
   await p.screenshot({ path: `${PASTA}t-${nome}.png`, fullPage: true })
