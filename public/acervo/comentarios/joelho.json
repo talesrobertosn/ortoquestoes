@@ -421,25 +421,26 @@
   "conferido": false
  },
  "joelho-0037": {
-  "conceito": "### OCD da patela\n- Rara; adolescentes com dor anterior.\n- Localização mais frequente: ==quadrante inferomedial== (metade distal da faceta medial/central), área de maior carga de contato na flexão.\n- Muitas vezes unilateral.\n\n### Imagem\n- Radiografia em perfil e axial (Merchant) podem mostrar a lesão.\n- **Ressonância**: estabilidade do fragmento, edema, líquido sob a lesão.\n\n### Tratamento\n- Estável, fise aberta: **conservador** (evitar impacto, fortalecimento).\n- Instável: fixação ou reparo cartilaginoso.\n- Resultados menos previsíveis que no côndilo femoral.\n\n> **Na prova:** OCD da patela = ==quadrante inferomedial==.",
-  "correta": "**Inferomedial.**",
   "incorretas": {
-   "A": "**Não é o mais frequente.**",
-   "C": "**Não é o mais frequente.**",
-   "D": "**Não é o mais frequente.**"
+   "A": "**A altura é inferior, mas o lado está trocado.** Inferolateral não é a localização clássica cobrada.",
+   "C": "**Troca altura e lado.** Superolateral pode abrigar outras alterações patelares, não o padrão inferomedial desta pergunta.",
+   "D": "**O lado é medial, mas a altura está errada.** O quadrante clássico é inferior, não superior."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Uma sede rara da osteocondrite.** A osteocondrite dissecante do joelho acomete principalmente o côndilo femoral medial; lesões da patela são menos frequentes. Entre as descrições patelares, a região inferior e medial é apontada como localização típica. A questão exige combinar os dois eixos da patela: inferior na altura e medial no lado.\n\n**O que avaliar além do quadrante.** Dor anterior, derrame e episódios de bloqueio podem sugerir instabilidade do fragmento. Radiografias em perfil e incidência axial mostram a articulação patelofemoral, enquanto a ressonância detalha osso subcondral, cartilagem e eventual separação. Uma lesão estável em paciente com fise aberta pode ser acompanhada; fragmento instável, corpo livre ou sintomas persistentes apesar de tratamento adequado favorecem intervenção.",
+  "correta": "**Quadrante inferomedial.** Reúne a metade inferior e a porção medial descritas como localização mais típica da lesão patelar.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0038": {
-  "conceito": "### Dor no lado oposto\nClassicamente, a lesão do ==corno posterior do menisco lateral== pode produzir dor referida no compartimento **medial**, confundindo o diagnóstico clínico.\n- Relaciona-se à biomecânica rotacional do joelho (screw-home) e à mobilidade maior do menisco lateral.\n\n### A lição\n- Não confiar só na localização da dor.\n- Somar exame (McMurray, Thessaly, palpação da interlinha), mecanismo e **ressonância**.\n\n### Lembretes sobre o menisco lateral\n- Mais **móvel** que o medial (inserções mais próximas, sem ligação ao LCL).\n- Lesões **radiais** e de **raiz posterior** associadas a lesão do LCA.\n- Mais importante na carga do compartimento lateral: meniscectomia lateral leva a artrose mais rápida.\n\n> **Na prova:** lesão com dor no compartimento oposto = ==corno posterior do menisco lateral==.",
-  "correta": "**Corno posterior do menisco lateral.**",
   "incorretas": {
-   "A": "**Não é o padrão.**",
-   "C": "**Não é o padrão.**",
-   "D": "**Não é o padrão.**"
+   "A": "**Corno anterior lateral não é a resposta oficial.** Uma lesão aí tende a provocar sintomas anteriores ou laterais, mas a topografia da dor isolada é pouco específica.",
+   "C": "**Corno anterior medial não é a associação cobrada.** Se estiver lesionado, espera-se mais frequentemente dor medial ou anterior, sem padrão obrigatório.",
+   "D": "**Corno posterior medial costuma causar dor medial ou posterior.** Dor lateral isolada não identifica nem exclui essa lesão; apenas não é a resposta escolhida."
   },
-  "geradoEm": "2026-09-23",
+  "alerta": "A alternativa B é o gabarito oficial, mas não encontrei evidência confiável de que rupturas do corno posterior do menisco lateral produzam frequentemente dor no compartimento medial oposto. A dor meniscal costuma localizar-se na interlinha do lado afetado, embora a apresentação clínica possa ser atípica e a localização isolada não feche diagnóstico. Evite transformar esta associação pontual da banca em regra anatômica.",
+  "conceito": "**Dor e localização nem sempre coincidem.** A maioria das lesões meniscais causa dor na interlinha do mesmo compartimento, mas sintomas podem ser difusos ou posteriores, sobretudo quando há derrame, lesão ligamentar ou outra alteração associada. O corno posterior do menisco lateral pode ser lesado em traumas rotacionais e em conjunto com a ruptura do LCA. A banca o escolhe como origem de dor contralateral, porém essa relação não é um sinal diagnóstico estabelecido.\n\n**Investigar o conjunto.** Mecanismo de trauma, bloqueio, derrame, palpação das duas interlinhas e manobras meniscais ajudam a formular a hipótese. Ressonância pode ser útil quando o exame é inconclusivo ou quando o resultado mudará a conduta. Se a dor está no lado oposto ao achado de imagem, considere também outras fontes de dor e a possibilidade de uma ruptura meniscal incidental; não atribua automaticamente todo sintoma ao menisco visto na ressonância.\n\n**Por que o corno posterior importa.** Lesões da raiz posterior ou rupturas radiais próximas dela comprometem as fibras circunferenciais que distribuem a carga. A decisão entre observação, reparo e ressecção limitada depende do padrão, da estabilidade, dos sintomas e do estado da cartilagem, não do lado em que o paciente aponta a dor.",
+  "correta": "**Corno posterior do menisco lateral, segundo a banca.** A associação com dor no compartimento oposto não deve ser tomada como característica clínica frequente comprovada.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0039": {
