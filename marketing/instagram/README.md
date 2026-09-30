@@ -10,7 +10,9 @@ Os PNGs saem em `saida/`, ao lado do HTML (fora do git). As fontes (Plus Jakarta
 Inter, licença OFL) estão em `fontes/`.
 
 Regras da marca: sem emoji; não mencionar IA nos posts (só nos Termos e no Sobre); telas
-com dados de exemplo levam a nota "Tela ilustrativa".
+com dados de exemplo levam a nota "Tela ilustrativa". Não citar o número total de questões do acervo:
+o destaque é serem as questões das provas oficiais, comentadas (o número só aparece na página
+de assinatura).
 
 ## Apresentação da plataforma (`apresentacao.html`)
 
@@ -21,6 +23,21 @@ o site com uma conta de exemplo (Supabase simulado) e salva capturas em `telas/`
 ```
 npm run build && npx vite preview --port 4175   # em outro terminal
 node marketing/instagram/telas.mjs '' treinar dados revisao ranking
+```
+
+## Stories de cadastro (`cadastro.html`)
+
+2 stories (1080×1920) para levar a pessoa a criar a conta:
+
+1. Contagem até a prova teórica do TEOT e do TEPOT 2027 (10/01/2027), "A prova está chegando.
+   Comece a treinar hoje." e a tela inicial no celular. O número de dias é calculado no dia em
+   que as imagens são geradas: gere de novo no dia de postar.
+2. Os quatro passos (entrar no site, criar a conta grátis, fazer a primeira sessão, conhecer as
+   funções e montar o Cronograma) e o endereço. Colocar a figurinha de link logo abaixo.
+
+```
+node marketing/instagram/telas.mjs ''
+node marketing/instagram/gerar.mjs marketing/instagram/cadastro.html
 ```
 
 ## Stories do Cronograma (`cronograma.html`)

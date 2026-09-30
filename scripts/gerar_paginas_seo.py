@@ -204,7 +204,7 @@ def topo(titulo: str, descricao: str, caminho: str, extra: str = "", raiz: str =
 <meta property="og:title" content="{html.escape(titulo, quote=True)}">
 <meta property="og:description" content="{html.escape(descricao, quote=True)}">
 <meta property="og:url" content="{SITE}{caminho}">
-<meta property="og:image" content="{SITE}previa-2026.jpg">
+<meta property="og:image" content="{SITE}previa-2027.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">

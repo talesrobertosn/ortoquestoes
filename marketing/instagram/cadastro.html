@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- 2 stories de cadastro (1080x1920). "Faltam N dias" é calculado na hora de gerar:
+     gere de novo no dia de postar. No story 2, colocar a figurinha de link no espaço
+     abaixo do endereço. -->
+<style>
+@font-face { font-family: Jakarta; src: url(fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --ouro: #f4cf7c; --ouro-claro: #ffe7b0; --branco: #fff; --suave: rgba(255,255,255,.78); --fraco: rgba(255,255,255,.55); --verde: #14655e; }
+* { box-sizing: border-box; margin: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: var(--branco); }
+.story { width: 1080px; height: 1920px; position: relative; overflow: hidden; margin-bottom: 40px;
+  background: radial-gradient(1200px 900px at 100% 0%, rgba(40,160,140,.35), transparent 60%),
+              radial-gradient(900px 900px at 0% 100%, rgba(244,207,124,.10), transparent 60%),
+              linear-gradient(160deg, #06201c 0%, #0b3a35 45%, #12594f 100%); }
+.story::before { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-radial-gradient(circle at 105% -5%, transparent 0 158px, rgba(255,255,255,.05) 158px 160px); }
+.marca { position: absolute; top: 210px; left: 90px; display: flex; align-items: center; gap: 18px; font-family: Jakarta; font-size: 40px; letter-spacing: -.01em; }
+.marca svg { width: 52px; height: 52px; color: var(--branco); }
+.marca b { font-weight: 800; } .marca span { font-weight: 400; }
+.num { position: absolute; top: 214px; right: 90px; font-family: Jakarta; font-weight: 700; font-size: 26px; color: var(--fraco); letter-spacing: .12em; }
+.nota { position: absolute; top: 262px; right: 90px; font-size: 22px; color: var(--fraco); }
+.conteudo { position: absolute; left: 90px; right: 90px; top: 330px; }
+.selo { display: inline-flex; align-items: center; gap: 12px; padding: 12px 26px; border-radius: 999px; background: rgba(244,207,124,.14); border: 2px solid rgba(244,207,124,.45);
+  color: var(--ouro-claro); font-family: Jakarta; font-weight: 700; font-size: 28px; letter-spacing: .08em; text-transform: uppercase; }
+h1 { font-family: Jakarta; font-weight: 800; font-size: 92px; line-height: 1.02; letter-spacing: -.022em; word-spacing: .04em; margin-top: 34px; text-wrap: balance; }
+h1 em { font-style: normal; color: var(--ouro); }
+.sub { text-wrap: pretty; font-size: 38px; line-height: 1.42; color: var(--suave); margin-top: 30px; max-width: 880px; }
+.sub b { color: var(--branco); font-weight: 650; }
+.rodape { position: absolute; left: 90px; right: 90px; bottom: 300px; display: flex; justify-content: space-between; align-items: center; font-size: 26px; color: var(--fraco); }
+.rodape strong { font-family: Jakarta; font-weight: 700; color: var(--suave); font-size: 30px; letter-spacing: .01em; }
+
+/* Celular */
+.cel { position: absolute; width: 600px; border-radius: 76px; padding: 16px; background: #0d1413;
+  box-shadow: 0 0 0 3px rgba(255,255,255,.14), 0 60px 120px rgba(0,0,0,.55), 0 20px 40px rgba(0,0,0,.35); }
+.cel__tela { position: relative; width: 568px; border-radius: 62px; overflow: hidden; background: #f1f3f2; }
+.cel__tela img { position: absolute; left: 0; width: 568px; }
+.cel__ilha { position: absolute; top: 30px; left: 50%; transform: translateX(-50%); width: 150px; height: 42px; border-radius: 30px; background: #0d1413; z-index: 2; }
+.cel__barra { position: absolute; top: 0; left: 0; right: 0; height: 84px; background: #fff; z-index: 1; }
+
+/* Cartões flutuantes */
+.flutua { position: absolute; background: #fff; color: #12181a; border-radius: 30px; padding: 28px 32px; box-shadow: 0 30px 70px rgba(0,0,0,.35); font-family: Inter; }
+.flutua small { display: block; font-size: 22px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #5b686c; }
+.flutua strong { text-wrap: balance; display: block; font-family: Jakarta; font-weight: 800; font-size: 40px; letter-spacing: -.02em; margin-top: 6px; }
+.flutua .ok { color: #1f7a4d; } .flutua .ruim { color: #b3423a; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 40px; }
+.chip { padding: 16px 28px; border-radius: 999px; background: rgba(255,255,255,.1); border: 2px solid rgba(255,255,255,.2); font-size: 30px; font-weight: 600; }
+.lista { list-style: none; padding: 0; margin-top: 44px; display: grid; gap: 26px; }
+.lista li { display: flex; gap: 22px; align-items: flex-start; font-size: 36px; line-height: 1.35; color: var(--suave); }
+.lista li b { color: var(--branco); font-weight: 650; }
+.lista i { flex: none; width: 46px; height: 46px; border-radius: 50%; background: var(--ouro); color: #0b3a35; display: grid; place-items: center; font-style: normal; font-weight: 800; font-size: 26px; font-family: Jakarta; margin-top: 2px; }
+
+/* Stories de cadastro */
+.contagem { display: flex; align-items: baseline; gap: 26px; margin-top: 40px; }
+.contagem strong { font-family: Jakarta; font-weight: 800; font-size: 250px; line-height: .86; letter-spacing: -.05em; color: var(--ouro); }
+.contagem span { font-family: Jakarta; font-weight: 700; font-size: 56px; line-height: 1.05; color: var(--branco); }
+.contagem span small { display: block; font-family: Inter; font-weight: 500; font-size: 30px; color: var(--fraco); margin-top: 8px; }
+.passos { list-style: none; padding: 0; margin-top: 44px; display: grid; gap: 18px; }
+.passos li { display: flex; gap: 28px; align-items: center; padding: 24px 34px; border-radius: 30px; background: rgba(255,255,255,.08); border: 2px solid rgba(255,255,255,.14); }
+.passos i { flex: none; width: 70px; height: 70px; border-radius: 50%; background: var(--ouro); color: #0b3a35; display: grid; place-items: center; font: normal 800 36px Jakarta; }
+.passos strong { display: block; font-family: Jakarta; font-weight: 800; font-size: 42px; letter-spacing: -.015em; }
+.passos span { display: block; font-size: 29px; line-height: 1.35; color: var(--suave); margin-top: 6px; }
+.link { margin-top: 40px; padding: 38px 46px; border-radius: 34px; background: #fff; color: #0b3a35; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 30px 70px rgba(0,0,0,.35); }
+.link b { font: 800 60px Jakarta; letter-spacing: -.02em; }
+</style></head><body>
+
+<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9.6" stroke="currentColor" stroke-width="3.3"/><path d="M14.37 16.63 16.63 14.37 24.63 22.37 26.2 26.2 22.37 24.63Z" fill="currentColor"/></svg></template>
+
+<!-- 1. A prova está chegando -->
+<section class="story" id="c1">
+  <div class="marca"></div><p class="nota" style="top: 226px">Tela ilustrativa</p>
+  <div class="conteudo">
+    <p class="selo">TEOT e TEPOT 2027 · 10 de janeiro</p>
+    <div class="contagem"><strong data-faltam>102</strong><span>dias<small>até a prova teórica</small></span></div>
+    <h1 style="font-size: 84px; margin-top: 44px">A prova está chegando. <em>Comece a treinar hoje.</em></h1>
+    <p class="sub">Questões das provas oficiais, comentadas alternativa por alternativa, e um plano que diz o que estudar em cada semana até lá.</p>
+  </div>
+  <div class="cel" style="left: 420px; top: 1270px; transform: rotate(-6deg);"><div class="cel__tela" style="height: 1150px"><div class="cel__barra"></div><div class="cel__ilha"></div><img src="telas/t-inicio.png" style="top: 84px"></div></div>
+  <div class="flutua" style="left: 80px; top: 1250px; width: 400px; transform: rotate(-3deg);"><small>Cada alternativa</small><strong>Por que está certa, <span style="color:#b3423a">por que está errada</span></strong></div>
+  <div class="flutua" style="left: 110px; top: 1500px; width: 360px; transform: rotate(2deg);"><small>Cronograma</small><strong style="color:#14655e">Até 10/01, pelos temas que mais caem</strong></div>
+</section>
+
+<!-- 2. Como começar -->
+<section class="story" id="c2">
+  <div class="marca"></div>
+  <div class="conteudo" style="top: 310px">
+    <p class="selo">Leva um minuto</p>
+    <h1 style="font-size: 80px; margin-top: 28px">Crie sua conta <em>e comece agora.</em></h1>
+    <ol class="passos">
+      <li><i>1</i><div><strong>Entre no site</strong><span>ortoquestoes.com.br, no celular ou no computador.</span></div></li>
+      <li><i>2</i><div><strong>Crie sua conta grátis</strong><span>O cadastro é gratuito e não pede cartão.</span></div></li>
+      <li><i>3</i><div><strong>Faça a primeira sessão hoje</strong><span>Um toque na inicial e você resolve 10 questões.</span></div></li>
+      <li><i>4</i><div><strong>Conheça o resto</strong><span>Revisão espaçada, caderno de erros, desempenho por tema, ranking e o Cronograma até a prova.</span></div></li>
+    </ol>
+    <div class="link"><b>ortoquestoes.com.br</b><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#14655e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+    <p class="sub" style="margin-top: 26px; text-align: center; color: var(--fraco); font-size: 30px">toque no link aqui embaixo</p>
+  </div>
+</section>
+
+<script>
+const s = document.getElementById('simbolo').innerHTML
+document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p><b>Orto</b><span>Questões</span></p>')
+const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
+const faltam = Math.round((new Date(2027, 0, 10) - hoje) / 864e5)
+document.querySelectorAll('[data-faltam]').forEach(el => el.textContent = faltam)
+</script>
+</body></html>
