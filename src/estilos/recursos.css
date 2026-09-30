@@ -707,3 +707,30 @@ li:nth-child(-n + 3) > .ti-area .ti-area__posicao { color: #c2412f; }
 @media (max-width: 40rem) { .pe-retomar { grid-template-columns: auto minmax(0, 1fr); } .pe-retomar .botao { grid-column: 1 / -1; justify-content: center; } }
 .cr-destaque__link { justify-self: start; color: var(--sobre-heroi); font-size: var(--corpo-menor); font-weight: 700; }
 .pe-semanas__dica { margin: 0.2rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+
+/* Cronograma: resumo sempre visível e o porquê de cada semana */
+.pe-semana__resumo { grid-column: 2 / -1; display: grid; gap: 0.15rem; font-size: var(--meta); line-height: 1.45; color: var(--texto-2); }
+.pe-semana__resumo b { color: var(--texto); font-weight: 750; }
+.pe-semana__resumo em { font-style: normal; font-weight: 700; color: var(--verdete); }
+.pe-semana--detalhe details[open] .pe-semana__resumo em { display: none; }
+.pe-semana__tema-cabeca { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.4rem 0.8rem; }
+.pe-semana__tema-cabeca .pe-semana__tema-nome { flex: 1; gap: 0.6rem; justify-content: flex-start; }
+.pe-semana__area { padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.72rem; font-weight: 800; background: var(--ouro-veu); color: var(--ouro-texto); border: 1px solid color-mix(in srgb, var(--ouro) 35%, transparent); }
+.pe-semana__porque { display: flex; gap: 0.45rem; align-items: flex-start; margin: 0; font-size: var(--corpo-menor); line-height: 1.5; color: var(--texto-2); }
+.pe-semana__porque svg { flex: none; margin-top: 0.2rem; color: var(--ouro); }
+.pe-semana__porque b { color: var(--texto); }
+.pe-assunto { grid-template-columns: 2.2rem minmax(0, 1fr) auto; }
+.pe-assunto__posicao { display: grid; place-items: center; width: 2rem; height: 1.7rem; border-radius: 8px; font-weight: 850; font-size: 0.8rem; background: var(--superficie-2); color: var(--texto-2); }
+.pe-assunto--4 .pe-assunto__posicao { background: linear-gradient(135deg, var(--ouro), #c9962f); color: #fff; }
+.pe-assunto--3 .pe-assunto__posicao { background: var(--ouro-veu); color: var(--ouro-texto); }
+.pe-assunto__nome { display: grid; min-width: 0; line-height: 1.3; }
+.pe-assunto__nome small { justify-self: start; margin-top: 0.1rem; padding: 0; background: none; color: var(--texto-2); font-size: 0.72rem; font-weight: 650; }
+.pe-assunto--4 .pe-assunto__nome small { color: var(--ouro-texto); font-weight: 800; }
+.pe-semana__legenda { margin: 0; font-size: 0.72rem; color: var(--texto-2); }
+.pe-semana__depois { display: flex; gap: 0.35rem; align-items: flex-start; margin: 0; font-size: var(--corpo-menor); color: var(--texto-2); }
+.pe-semana__depois svg { flex: none; margin-top: 0.2rem; color: var(--verdete); }
+@media (max-width: 40rem) {
+  .pe-semana__resumo { grid-column: 1 / -1; grid-row: 3; }
+  .pe-assunto { grid-template-columns: 2.2rem minmax(0, 1fr) auto; }
+  .pe-assunto small { display: block; }
+}

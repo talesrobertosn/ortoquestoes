@@ -1,5 +1,5 @@
 import type { Indice } from './tipos'
-import { AREAS, focoPorQuestao, idsDoFoco, pesoIncidenciaDoTema, type Nivel } from './incidencia'
+import { AREAS, focoPorQuestao, idsDoFoco, pesoIncidenciaDoTema, posicaoDaArea, type Nivel } from './incidencia'
 
 /**
  * Cronograma até a prova. Tudo é recalculado a cada dia a partir do que a pessoa
@@ -49,8 +49,9 @@ export interface RegistroMinimo { c: boolean | null; q?: number; historico?: Arr
 
 export interface TemaPlano { slug: string; nome: string; faltam: number; acerto: number | null; respondidas: number; reforcado: boolean; incidencia: number }
 /** Um assunto dentro do tema da semana: quantas questões dele entram e quanto ele cai. */
-export interface AssuntoSemana { nome: string; n: number; nivel: Nivel | 0 }
-export interface SemanaPlano { inicio: Date; fim: Date; diasEstudo: number; temas: Array<{ slug: string; nome: string; n: number; focos: string[]; assuntos: AssuntoSemana[] }>; total: number; atual: boolean }
+/** posicao: lugar do assunto no ranking da área (1 = o que mais cai); 0 fora do ranking. */
+export interface AssuntoSemana { nome: string; n: number; nivel: Nivel | 0; posicao: number }
+export interface SemanaPlano { inicio: Date; fim: Date; diasEstudo: number; temas: Array<{ slug: string; nome: string; n: number; focos: string[]; assuntos: AssuntoSemana[]; posicaoArea: number | null; depois: string[] }>; total: number; atual: boolean }
 export interface CalculoPlano {
   diasAteProva: number
   diasEstudoRestantes: number
@@ -153,9 +154,9 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     lista.push(q.id)
     livresPorTema.set(slug, lista)
   }
-  const assuntosDe = (slug: string, n: number): AssuntoSemana[] => {
+  const assuntosDe = (slug: string, n: number): { assuntos: AssuntoSemana[]; depois: string[] } => {
     let lista = livresPorTema.get(slug)
-    if (!lista) return []
+    if (!lista) return { assuntos: [], depois: [] }
     if (!(lista as string[] & { ordenada?: boolean }).ordenada) {
       lista = ordenarPorFoco(lista, focos)
       ;(lista as string[] & { ordenada?: boolean }).ordenada = true
@@ -167,11 +168,18 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     for (const id of lista.slice(inicio, inicio + n)) {
       const f = focos.get(id)
       const nome = f?.nome ?? 'Outros assuntos'
-      const item = contagem.get(nome) ?? { nome, n: 0, nivel: f?.nivel ?? 0 }
+      const item = contagem.get(nome) ?? { nome, n: 0, nivel: f?.nivel ?? 0, posicao: f?.posicao ?? 0 }
       item.n++
       contagem.set(nome, item)
     }
-    return [...contagem.values()]
+    // O que o tema ainda tem para as próximas semanas (os próximos assuntos da fila).
+    const depois: string[] = []
+    for (const id of lista.slice(inicio + n)) {
+      const nome = focos.get(id)?.nome ?? 'Outros assuntos'
+      if (!contagem.has(nome) && !depois.includes(nome)) depois.push(nome)
+      if (depois.length >= 4) break
+    }
+    return { assuntos: [...contagem.values()], depois }
   }
   const fila = cotas.map((c) => ({ ...c }))
   for (let inicio = segunda; inicio < fimEstudo && semanas.length < 80; inicio = new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate() + 7)) {
@@ -184,7 +192,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     while (capacidade > 0 && fila.length) {
       const atual = fila[0]
       const n = Math.min(atual.n, capacidade)
-      temasSemana.push({ slug: atual.t.slug, nome: atual.t.nome, n, focos: focosPendentes.get(atual.t.slug) ?? [], assuntos: assuntosDe(atual.t.slug, n) })
+      temasSemana.push({ slug: atual.t.slug, nome: atual.t.nome, n, focos: focosPendentes.get(atual.t.slug) ?? [], ...assuntosDe(atual.t.slug, n), posicaoArea: posicaoDaArea(atual.t.slug) })
       atual.n -= n; capacidade -= n
       if (atual.n <= 0) fila.shift()
     }

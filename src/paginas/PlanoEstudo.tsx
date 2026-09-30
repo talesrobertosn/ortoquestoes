@@ -14,6 +14,7 @@ import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href, navegar } from '../util/rotas'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
+const ROTULO_COBRANCA: Record<number, string> = { 4: 'cai muito', 3: 'cai com frequência', 2: 'cai às vezes', 1: 'cai pouco', 0: 'fora do ranking' }
 const PROVAS = ['TEOT', 'TARO', 'ENARE R4', 'Outra prova']
 /** Semanas que o não assinante vê na prévia do próprio cronograma. */
 const SEMANAS_PREVIA = 2
@@ -107,22 +108,36 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, pendente = null }:
             {s.temas.length ? s.temas.map((t) => <span key={t.slug} className="pe-chip">{t.nome}<b className="numerico">{t.n}</b></span>) : <span className="texto-2">Folga do cronograma: revisão e questões livres.</span>}
           </span>
           <span className="pe-semana__total numerico">{s.total}<Icone nome="baixo" tamanho={14} /></span>
+          {s.temas.length > 0 && <span className="pe-semana__resumo">
+            {s.temas.map((t) => <span key={t.slug}><b>{t.nome}:</b> {t.assuntos.slice(0, 3).map((a) => a.nome).join(', ')}{t.assuntos.length > 3 ? ` e mais ${t.assuntos.length - 3}` : ''}</span>)}
+            <em>Abra para ver por que estes e quanto cada um cai</em>
+          </span>}
         </summary>
         {s.temas.length > 0 && <div className="pe-semana__corpo">
-          <p className="pe-semana__explica">{s.diasEstudo} {s.diasEstudo === 1 ? 'dia' : 'dias'} de estudo, cerca de {Math.round(s.total / Math.max(1, s.diasEstudo))} questões por dia. Os assuntos entram nesta ordem, do que mais cai para o que menos cai:</p>
+          <p className="pe-semana__explica">{s.diasEstudo} {s.diasEstudo === 1 ? 'dia' : 'dias'} de estudo, cerca de <b>{Math.round(s.total / Math.max(1, s.diasEstudo))} questões por dia</b>.</p>
           {s.temas.map((t) => (
             <div key={t.slug} className="pe-semana__tema">
-              <p className="pe-semana__tema-nome"><strong>{t.nome}</strong><span className="numerico">{t.n} questões</span></p>
+              <div className="pe-semana__tema-cabeca">
+                <p className="pe-semana__tema-nome"><strong>{t.nome}</strong><span className="numerico">{t.n} questões</span></p>
+                {t.posicaoArea && <span className="pe-semana__area">{t.posicaoArea}ª área que mais cai</span>}
+              </div>
+              <p className="pe-semana__porque">
+                <Icone nome="fogo" tamanho={15} /> <span>{t.assuntos.some((a) => a.nivel >= 3)
+                  ? <>Estas {t.n} questões são dos assuntos de {t.nome.toLowerCase()} que <b>mais caem no TEOT e no TARO</b>. O cronograma segue o ranking da área: começa pelo mais cobrado e desce.</>
+                  : <>Os assuntos que mais caem em {t.nome.toLowerCase()} já ficaram para trás: agora entram os que caem menos, para você cobrir a área inteira.</>}</span>
+              </p>
               <ul className="pe-assuntos">
-                {t.assuntos.slice(0, 8).map((a) => (
+                {t.assuntos.slice(0, 10).map((a) => (
                   <li key={a.nome} className={a.nivel ? `pe-assunto pe-assunto--${a.nivel}` : 'pe-assunto'}>
-                    <span>{a.nome}</span>
-                    {a.nivel >= 3 && <small>{a.nivel === 4 ? 'cai muito' : 'cai bastante'}</small>}
+                    <span className="pe-assunto__posicao numerico">{a.posicao ? `${a.posicao}º` : '·'}</span>
+                    <span className="pe-assunto__nome">{a.nome}<small>{ROTULO_COBRANCA[a.nivel]}</small></span>
                     <b className="numerico">{a.n}</b>
                   </li>
                 ))}
-                {t.assuntos.length > 8 && <li className="pe-assunto pe-assunto--resto"><span>e mais {t.assuntos.length - 8} assuntos</span><b className="numerico">{t.assuntos.slice(8).reduce((soma, a) => soma + a.n, 0)}</b></li>}
+                {t.assuntos.length > 10 && <li className="pe-assunto pe-assunto--resto"><span className="pe-assunto__posicao">+</span><span className="pe-assunto__nome">e mais {t.assuntos.length - 10} assuntos</span><b className="numerico">{t.assuntos.slice(10).reduce((soma, a) => soma + a.n, 0)}</b></li>}
               </ul>
+              <p className="pe-semana__legenda">O número à esquerda é o lugar do assunto no ranking de {t.nome.toLowerCase()}; o da direita, quantas questões dele entram nesta semana.</p>
+              {t.depois.length > 0 && <p className="pe-semana__depois"><Icone nome="direita" tamanho={14} /> Nas próximas semanas de {t.nome.toLowerCase()}: {t.depois.join(', ')}.</p>}
             </div>
           ))}
         </div>}
@@ -225,7 +240,7 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, pendente = null }:
 
     <section className="cartao cartao__corpo pe-semanas" aria-labelledby="pe-semanas-titulo">
       <header className="pe-semanas__cabeca">
-        <div><h2 id="pe-semanas-titulo">Semana a semana</h2><p className="pe-semanas__dica">Toque numa semana para ver quais assuntos entram nela.</p></div>
+        <div><h2 id="pe-semanas-titulo">Semana a semana</h2><p className="pe-semanas__dica">Cada semana mostra os assuntos que entram nela. Toque para ver o porquê e quanto cada um cai.</p></div>
         <SeloAssinante />
       </header>
       <ol className="pe-linha">

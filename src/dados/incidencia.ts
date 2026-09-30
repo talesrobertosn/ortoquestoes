@@ -192,7 +192,8 @@ export function pesoIncidenciaDoTema(slug: string): number {
  * Nível de incidência de cada questão do acervo, pelo subtema mais cobrado
  * que ela tem dentro do próprio tema. Questões sem subtema mapeado ficam de fora.
  */
-export interface FocoDaQuestao { nome: string; nivel: Nivel | 0; ordem: number }
+/** posicao: lugar do assunto no ranking da própria área (1 = o que mais cai); 0 quando não está no ranking. */
+export interface FocoDaQuestao { nome: string; nivel: Nivel | 0; ordem: number; posicao: number }
 
 const cacheFocos = new WeakMap<Indice, Map<string, FocoDaQuestao>>()
 /**
@@ -211,13 +212,13 @@ export function focoPorQuestao(indice: Indice): Map<string, FocoDaQuestao> {
   let ordem = 0
   for (const area of AREAS) {
     // Recorte inteiro que já é muito cobrado (trauma pediátrico): nível mínimo 3.
-    if (area.subtema) { const o = ordem++; for (const id of idsDoFoco(indice, area)) melhor(id, { nome: area.subtema, nivel: 3, ordem: o + 500 }) }
-    for (const foco of area.focos) { const o = ordem++; for (const id of idsDoFoco(indice, area, foco)) melhor(id, { nome: foco.nome, nivel: foco.nivel, ordem: o }) }
+    if (area.subtema) { const o = ordem++; for (const id of idsDoFoco(indice, area)) melhor(id, { nome: area.subtema, nivel: 3, ordem: o + 500, posicao: 0 }) }
+    area.focos.forEach((foco, i) => { const o = ordem++; for (const id of idsDoFoco(indice, area, foco)) melhor(id, { nome: foco.nome, nivel: foco.nivel, ordem: o, posicao: i + 1 }) })
   }
   for (const q of indice.questoes) {
     if (mapa.has(q.id)) continue
     const primeiro = q.s.length ? indice.subtemas[q.s[0]] : null
-    mapa.set(q.id, { nome: primeiro ?? 'Outros assuntos', nivel: 0, ordem: 100000 })
+    mapa.set(q.id, { nome: primeiro ?? 'Outros assuntos', nivel: 0, ordem: 100000, posicao: 0 })
   }
   cacheFocos.set(indice, mapa)
   return mapa
@@ -239,4 +240,10 @@ export function idsDoFoco(indice: Indice, area: AreaIncidencia, foco?: Foco): st
   return indice.questoes
     .filter((q) => q.t === tema && !q.dup && q.an !== 1 && exigidos.every((alvo) => q.s.some((s) => minusculo(indice.subtemas[s] ?? '') === alvo)))
     .map((q) => q.id)
+}
+
+/** Lugar do tema do acervo no ranking das áreas (1 = a que mais cai), ou null. */
+export function posicaoDaArea(slug: string): number | null {
+  const i = AREAS.findIndex((a) => a.slug === slug && !a.subtema)
+  return i < 0 ? null : i + 1
 }
