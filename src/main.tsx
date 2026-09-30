@@ -2,6 +2,7 @@ import { ProvedorConta } from './conta/ContextoConta'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { App } from './App'
+import { ErroDePagina } from './componentes/ErroDePagina'
 // CSS global: só o que várias páginas usam. O que é de uma página só mora em
 // estilos/paginas/ e é importado pela própria página, para descer junto com
 // ela e não em toda visita (a inicial usava menos de 10% do CSS antigo).
@@ -16,7 +17,9 @@ const raiz = document.getElementById('raiz')
 if (raiz) {
   createRoot(raiz).render(
     <StrictMode>
-      <ProvedorConta><App /></ProvedorConta>
+      {/* Última rede: um erro fora da área da página (cabeçalho, conta) também
+          vira aviso com botão, nunca a tela toda em branco. */}
+      <ErroDePagina caminho=""><ProvedorConta><App /></ProvedorConta></ErroDePagina>
     </StrictMode>,
   )
 }
