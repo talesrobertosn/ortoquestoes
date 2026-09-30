@@ -925,69 +925,69 @@
   "conferido": false
  },
  "joelho-0081": {
-  "conceito": "### O que a imagem mostra\nTomografia com **sobreposição** de dois cortes axiais: o do **sulco troclear** (fundo da tróclea) e o da **tuberosidade anterior da tíbia**. Traça-se a linha dos **côndilos posteriores**, e duas perpendiculares a ela: uma pelo **fundo da tróclea** e outra pelo **centro da TAT**. A distância entre elas é o ==TA-GT== (TT-TG).\n\n### Valores\n- **Normal:** até ~15 mm (em média ~12).\n- **Limítrofe:** 15 a 20 mm.\n- ==Acima de 20 mm==: patológico; indica **medialização da TAT** (Elmslie-Trillat, Fulkerson) na instabilidade patelar.\n\n### Cuidados\n- Na **ressonância**, os valores tendem a ser um pouco **menores** que na tomografia.\n- O **TT-PCL** (TAT ao LCP) separa se o problema é da tróclea ou da tíbia.\n- Não medializar em excesso: aumenta a pressão femoropatelar medial.\n\n> **Na prova:** osteotomia da TAT com ==TA-GT acima de 20 mm==.",
-  "correta": "**Maior que 20 mm.**",
   "incorretas": {
-   "A": "**Normal.**",
-   "B": "**Limítrofe.**",
-   "D": "**Acima do limiar clássico.**"
+   "A": "**Mais de 10 mm é limiar baixo demais.** Valores nessa faixa podem ocorrer em joelhos sem lateralização patológica do mecanismo extensor.",
+   "B": "**Mais de 15 mm pode ser limítrofe na tomografia.** Não é o ponto de corte clássico solicitado para osteotomia da tuberosidade nessa modalidade.",
+   "D": "**Mais de 25 mm também é anormal, mas é um limite excessivamente tardio.** A banca procura o ponto a partir do qual se considera a correção, acima de 20 mm."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que a figura mede.** A imagem é uma tomografia axial com referências do sulco troclear e da tuberosidade anterior da tíbia projetadas no mesmo plano. Traça-se o eixo dos côndilos femorais posteriores; a distância entre as perpendiculares que passam pelo fundo da tróclea e pelo centro da tuberosidade é a distância TA-GT, também chamada TT-TG. Ela quantifica a lateralização do vetor do mecanismo extensor.\n\n**O limite depende do método.** Na tomografia, TA-GT acima de 20 mm é o ponto de corte clássico de lateralização excessiva e pode indicar medialização da tuberosidade em instabilidade patelar recorrente. Medidas em ressonância tendem a ser menores e não devem receber automaticamente o mesmo limite. A decisão também considera displasia troclear, altura patelar, alinhamento, maturidade esquelética e condição da cartilagem.\n\n**Correção não é simplesmente mover o máximo possível.** A osteotomia busca reduzir o vetor lateral sem sobrecarregar a faceta medial. Em pacientes com fise aberta, a osteotomia óssea da tuberosidade pode ameaçar a fise e exige outra estratégia.",
+  "correta": "**Mais de 20 mm na tomografia.** Esse é o limiar clássico de TA-GT patológico que sustenta a indicação de medialização da tuberosidade no contexto clínico apropriado.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0082": {
-  "conceito": "### Os cortes e os espaços\n- **Corte femoral distal:** perpendicular ao **eixo mecânico** (feito com guia intramedular a ~5 a 7° do eixo anatômico). Define o **espaço em extensão** (com o corte tibial).\n- **Cortes femorais posteriores:** definem o **espaço em flexão** e a **rotação** do componente.\n- **Corte tibial:** afeta os dois espaços.\n\n### A rotação do componente femoral\n- O côndilo **medial posterior** é mais proeminente: o eixo **transepicondilar** fica rodado externamente em relação ao eixo condilar posterior (~3°).\n- Cortar ==paralelo ao eixo epicondilar== resulta num componente ==levemente rodado externamente== em relação aos côndilos posteriores: o objetivo.\n\n### O erro\n**Rotação interna** do componente femoral: **lateraliza** a tróclea em relação à patela, causando mau tracking, dor anterior e instabilidade patelar.\n\n> **Na prova:** corte paralelo ao transepicondilar = componente ==levemente em rotação externa==.",
-  "correta": "**Paralelo ao eixo epicondilar resulta em leve rotação externa.**",
   "incorretas": {
-   "A": "**Eixo errado.**\n- Perpendicular ao eixo mecânico.",
-   "B": "**Espaço errado.**\n- Os posteriores definem o espaço em flexão.",
-   "C": "**O oposto.**\n- Rotação interna causa instabilidade patelar."
+   "A": "**O corte distal não deve ser perpendicular ao eixo anatômico no alinhamento mecânico convencional.** A referência é o eixo mecânico do fêmur.",
+   "B": "**Cortes femorais posteriores influenciam o espaço em flexão.** O espaço em extensão depende principalmente dos cortes distal femoral e proximal tibial.",
+   "C": "**Rotação interna pode piorar o trajeto patelar.** Ela favorece sobrecarga e instabilidade femoropatelar, em vez de protegê-las."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Dois eixos que não podem ser confundidos.** No alinhamento mecânico convencional da artroplastia total do joelho, o corte femoral distal é planejado perpendicularmente ao eixo mecânico, e não ao anatômico. Como os eixos diferem, a guia intramedular costuma empregar uma angulação em relação ao eixo anatômico, ajustada ao planejamento pré-operatório.\n\n**Cada corte influencia um espaço.** A ressecção femoral distal participa da definição do espaço em extensão. Os cortes posteriores e a rotação do componente femoral influenciam o espaço em flexão. O corte tibial participa de ambos. Um componente mal rodado pode produzir desequilíbrio em flexão e mau trajeto patelar, mesmo com o eixo coronal aceitável.\n\n**Referência rotacional.** O eixo transepicondilar é uma referência para posicionar o componente femoral. Em um joelho típico, orientar a ressecção paralelamente a esse eixo representa leve rotação externa, frequentemente aproximada por cerca de 3 graus em relação à linha dos côndilos posteriores. O valor não é universal: desgaste condilar e variação anatômica exigem conferir outras referências e o balanço ligamentar.",
+  "correta": "**A orientação paralela ao eixo epicondilar produz leve rotação externa relativa aos côndilos posteriores.** Essa é a referência rotacional clássica da artroplastia.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0083": {
-  "conceito": "### Tendão patelar x quadricipital\n- ==Patelar: abaixo de 40 anos==, atletas, tendinopatia prévia; polo inferior da patela.\n- **Quadricipital:** acima de 40 anos, fatores sistêmicos.\n\n### Corrigindo as outras\n- As rupturas associam-se com frequência a **fatores predisponentes** (doença renal, diabetes, corticoide, fluoroquinolonas, tendinopatia): não são típicas de pacientes totalmente hígidos.\n- A **marcha** fica alterada: sem extensão ativa, o joelho falseia; o paciente anda com o joelho rígido ou circundução.\n- **Bilateral:** mais associada ao **quadricipital**, em doença sistêmica.\n\n### O exame que não pode faltar\nElevação da **perna estendida** contra a gravidade: impossível na ruptura completa (a menos que o retináculo esteja íntegro, o que confunde).\n\n> **Na prova:** ruptura do tendão patelar = ==abaixo de 40 anos==.",
-  "correta": "**Ruptura do tendão patelar é mais comum abaixo dos 40 anos.**",
   "incorretas": {
-   "A": "**Fatores predisponentes.**",
-   "B": "**Marcha alterada.**",
-   "C": "**Bilateral é do quadricipital.**"
+   "A": "**Tendão saudável pode romper sob grande carga, mas fatores predisponentes são comuns.** Não se deve assumir que lesão do mecanismo extensor predominaria em indivíduos inteiramente hígidos.",
+   "B": "**Marcha normal não é esperada em ruptura completa.** A perda da extensão ativa provoca instabilidade ou marcha compensatória, embora lesões parciais possam ser menos evidentes.",
+   "C": "**Bilateralidade é particularmente associada à ruptura quadricipital.** Quando ocorre, deve motivar busca de fatores sistêmicos predisponentes."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O mecanismo extensor é uma cadeia.** Quadríceps, tendão quadricipital, patela e tendão patelar transmitem força para estender o joelho. Ruptura completa costuma provocar falha da extensão ativa e da elevação da perna estendida, embora retináculos preservados possam mascarar parcialmente o déficit. A marcha pode apresentar falseio ou compensações.\n\n**Patelar e quadricipital têm perfis diferentes.** A ruptura do tendão patelar predomina em pessoas mais jovens, classicamente abaixo de 40 anos, inclusive durante contração excêntrica em atividade esportiva. A ruptura quadricipital ocorre mais em pacientes mais velhos. Tendinopatia, doença renal, diabetes e exposição a corticosteroides ou fluoroquinolonas podem predispor a ambas; bilateralidade simultânea faz pensar especialmente em doença sistêmica e ruptura quadricipital.\n\n**Exame e imagem completam a distinção.** Palpar o defeito e observar a altura da patela ajudam: patela alta sugere ruptura patelar, enquanto patela baixa pode acompanhar ruptura quadricipital. Ultrassom ou ressonância são úteis quando o exame é duvidoso. Rupturas completas geralmente exigem reparo oportuno.",
+  "correta": "**Ruptura patelar é mais típica antes dos 40 anos.** A comparação etária clássica é com a ruptura do tendão quadricipital, mais frequente em pessoas mais velhas.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0084": {
-  "conceito": "### Rolamento e deslizamento\nNa flexão, os côndilos femorais ==rolam e deslizam== sobre o platô:\n- Só rolamento faria o fêmur \"cair\" para trás da tíbia (os côndilos são muito maiores que o platô).\n- Só deslizamento limitaria a flexão (impacto posterior).\n- A combinação produz o **roll-back** femoral (maior no côndilo lateral).\n- Os **cruzados** (mecanismo de quatro barras) guiam esse movimento.\n\n### Corrigindo as outras\n- **Extensão total:** o joelho **trava** pela rotação automática (**screw-home**): a tíbia roda externamente nos últimos graus. Não há rotação livre.\n- O menisco **lateral** é o mais **móvel** (~10 mm), não o medial (~5 mm).\n- A superfície articular do **fêmur** é bem mais longa que a da tíbia.\n\n### Na artroplastia\nPróteses **posteroestabilizadas** reproduzem o roll-back com o mecanismo poste-came.\n\n> **Na prova:** flexoextensão = ==rolamento + deslizamento==.",
-  "correta": "**Combinação de rolamento e deslizamento.**",
   "incorretas": {
-   "A": "**Trava em extensão.**\n- Screw-home.",
-   "B": "**O lateral é mais móvel.**",
-   "C": "**Fêmur muito maior.**"
+   "A": "**Não há rotação axial livre em extensão completa.** O joelho encontra-se relativamente travado pelo mecanismo de screw-home.",
+   "B": "**O menisco lateral é mais móvel.** Suas conexões permitem maior excursão que a do menisco medial durante o movimento.",
+   "C": "**As superfícies femoral e tibial não têm comprimentos equivalentes.** Essa desigualdade é uma das razões para a cinemática combinar rolamento e deslizamento."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**A flexão não é uma dobradiça pura.** As superfícies femoral e tibial têm comprimentos e curvaturas diferentes. Para percorrer grande arco sem perder contato posterior, os côndilos femorais combinam rolamento e deslizamento sobre os platôs tibiais. O deslocamento posterior relativo do fêmur durante a flexão é chamado de rollback; ligamentos cruzados, geometria e tecidos moles participam do controle desse movimento.\n\n**A rotação acompanha o arco.** Próximo da extensão completa, o mecanismo de travamento, ou screw-home, torna a rotação axial livre muito limitada. Ao iniciar a flexão, o joelho destrava e recupera mobilidade rotacional. Não se deve confundir a rotação automática do fim da extensão com permissão irrestrita para girar um joelho completamente estendido.\n\n**Os meniscos acompanham o movimento.** O menisco lateral se desloca mais que o medial, que é mais firmemente ligado à cápsula e ao ligamento colateral medial profundo. Essa diferença ajuda a entender a vulnerabilidade do menisco medial a certas torções.",
+  "correta": "**Flexoextensão combina rolamento e deslizamento.** A associação mantém a congruência enquanto permite amplo arco de movimento.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0085": {
-  "conceito": "### O canto posterolateral (CPL)\nEstruturas: **LCL**, **tendão do poplíteo**, **ligamento popliteofibular**, cápsula posterolateral, bíceps e trato iliotibial.\n\n### Os testes\n- ==Pivot shift reverso==: joelho fletido com rotação externa e valgo; ao estender, a tíbia subluxada posterolateralmente **reduz** com ressalto (~20 a 30°).\n- **Dial test:** **rotação externa aumentada** a 30° (CPL); a 30° e 90° (CPL + LCP).\n- **Gaveta posterolateral**, **recurvato-rotação externa**.\n- Estresse em **varo** a 30°.\n\n### Corrigindo as outras\n- Lesão **isolada** do CPL é **incomum**: geralmente associa-se ao LCP ou LCA.\n- Há **aumento** da rotação externa.\n- **LaPrade** descreveu a reconstrução **anatômica** (LCL, poplíteo, popliteofibular com dois enxertos).\n\n### Por que tratar\nCPL não tratado é a principal causa de **falha** das reconstruções do LCA e LCP.\n\n> **Na prova:** instabilidade posterolateral = ==pivot shift reverso== e dial test positivo.",
-  "correta": "**O pivot shift reverso está presente.**",
   "incorretas": {
-   "A": "**Isolada é incomum.**",
-   "C": "**Há aumento.**",
-   "D": "**Anatômica.**"
+   "A": "**Lesão isolada não é a apresentação mais comum.** Devem ser pesquisadas rupturas associadas dos ligamentos cruzados e alinhamento em varo.",
+   "C": "**A rotação externa costuma aumentar.** Esse é justamente um dos componentes da instabilidade avaliado no dial test.",
+   "D": "**LaPrade descreveu reconstrução anatômica.** A proposta é reproduzir os principais estabilizadores do canto posterolateral em seus pontos de inserção."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O canto posterolateral resiste ao varo e à rotação externa.** Ligamento colateral fibular, tendão poplíteo e ligamento popliteofibular são estabilizadores centrais, com contribuição da cápsula e de outras estruturas. A lesão frequentemente acompanha ruptura do LCP ou do LCA; por isso, um joelho com instabilidade combinada precisa de exame de todos os ligamentos.\n\n**Como reconhecer.** O teste de rotação externa comparativa, ou dial test, pode mostrar aumento a 30 graus de flexão em lesão posterolateral; aumento também a 90 graus levanta suspeita de lesão combinada do LCP, mas não é diagnóstico isolado. No pivot shift reverso, o platô tibial lateral, subluxado posteriormente em flexão, reduz ao estender o joelho, produzindo ressalto. O teste pode estar ausente apesar de lesão verdadeira e deve ser interpretado com os demais achados.\n\n**Reconstrução anatômica.** A técnica descrita por LaPrade procura recriar as inserções do colateral fibular, poplíteo e popliteofibular. Tratar uma lesão posterolateral importante é relevante também para proteger reconstruções associadas dos ligamentos cruzados.",
+  "correta": "**Pivot shift reverso pode estar presente.** O ressalto expressa a subluxação e redução dinâmica posterolateral descrita no teste.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0086": {
-  "conceito": "### Os testes do LCP\n- **Gaveta posterior** (o mais sensível).\n- **Sinal do afundamento** (Godfrey): quadril e joelho a 90°, a tíbia **cai** para trás.\n- ==Teste do quadríceps ativo==: joelho a ~70 a 90°, pé apoiado; ao contrair o quadríceps (deslizar o pé para a frente), a tíbia posteriorizada **anterioriza** (reduz). Característico da lesão do LCP.\n\n### Corrigindo as outras\n- **Avulsão da fíbula** (sinal arcuata): canto posterolateral.\n- **Slocum:** gaveta anterior com rotação: instabilidade **rotatória anterior** (LCA e cantos).\n- A lesão do LCP costuma ser **menos sintomática** que a do LCA: muitos toleram bem com reabilitação do quadríceps.\n\n### Evolução natural\nPode levar a **artrose femoropatelar** e do compartimento **medial** a longo prazo.\n\n> **Na prova:** lesão do LCP = ==teste do quadríceps ativo positivo==.",
-  "correta": "**Teste do quadríceps ativo presente.**",
   "incorretas": {
-   "A": "**Canto posterolateral.**",
-   "C": "**Instabilidade anterior.**",
-   "D": "**Menos sintomática.**"
+   "A": "**Avulsão fibular aponta para o canto posterolateral.** A avulsão óssea do LCP, quando presente, relaciona-se à sua inserção tibial posterior.",
+   "C": "**A gaveta de Slocum investiga instabilidade rotatória anterior.** Não é o teste característico de uma lesão isolada do LCP.",
+   "D": "**Laxidade grosseira do LCP não significa necessariamente sintomas maiores que os do LCA.** O déficit pode ser inicialmente tolerado, embora cause sobrecarga tardia."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O LCP impede translação posterior da tíbia.** Uma ruptura deixa a tíbia posteriorizada em relação ao fêmur, especialmente quando o joelho está fletido. Gaveta posterior e sinal do afundamento tibial ajudam a detectar essa posição; comparar com o lado oposto evita interpretar uma gaveta anterior aparente como lesão isolada do LCA.\n\n**Teste do quadríceps ativo.** Com joelho fletido e pé apoiado, pede-se contração do quadríceps como se o paciente tentasse deslizar o pé para a frente. Se a tíbia estava afundada posteriormente, ela se desloca para anterior durante a contração. Esse movimento de redução indica insuficiência do LCP. O examinador precisa observar a posição inicial da tíbia para interpretar o teste.\n\n**Lesões associadas importam.** Uma pequena avulsão da cabeça da fíbula, o sinal arcuato, sugere lesão do canto posterolateral, não é a avulsão óssea típica do LCP. Instabilidade posterolateral pode acompanhar ruptura do LCP e modifica a avaliação e o tratamento. Mesmo quando inicialmente menos sintomática que uma lesão do LCA, a deficiência crônica do LCP pode sobrecarregar os compartimentos medial e femoropatelar.",
+  "correta": "**Teste do quadríceps ativo positivo.** A contração anterioriza a tíbia que estava subluxada posteriormente pela insuficiência do LCP.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0087": {
