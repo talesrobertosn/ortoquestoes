@@ -223,7 +223,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const subtitulo = recuperacao ? 'Escolha a nova senha e confirme logo abaixo.' : modo === 'criar' ? 'Leva menos de um minuto. Depois é só confirmar o e-mail.' : modo === 'recuperar' ? 'Informe seu e-mail e enviaremos um link para criar uma nova senha.' : 'Continue de onde parou, em qualquer dispositivo.'
     return <div className="acesso">
       <aside className="acesso__vitrine">
-        <p className="acesso__marca"><span>Orto</span>Questões</p>
+        <p className="acesso__marca"><span>Orto</span> Questões</p>
         <h1>{modo === 'criar' ? 'Sua preparação, organizada do primeiro ao último dia.' : 'Que bom ter você de volta.'}</h1>
         <p className="acesso__lide">Questões das provas oficiais de TEOT, TARO, ENARE R4, TECOC (ombro e cotovelo) e outras provas, com comentário e referência.</p>
         <ul className="acesso__beneficios">

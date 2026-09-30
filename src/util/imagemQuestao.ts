@@ -1,5 +1,5 @@
 import type { Questao } from '../dados/tipos'
-import { FONTE, caminhoArredondado, desenharSelo } from './imagemStreak'
+import { FONTE, caminhoArredondado, carregarFonteMarca, desenharMarca } from './imagemStreak'
 
 const LARGURA = 1080
 const ALTURA = 1350
@@ -52,15 +52,7 @@ function fundo(ctx: CanvasRenderingContext2D) {
 }
 
 function topo(ctx: CanvasRenderingContext2D, etiqueta: string) {
-  desenharSelo(ctx, MARGEM, 66, 46, branco)
-  ctx.fillStyle = branco
-  ctx.textAlign = 'left'
-  ctx.textBaseline = 'middle'
-  ctx.font = `800 38px ${FONTE}`
-  ctx.fillText('Orto', MARGEM + 58, 90)
-  const w = ctx.measureText('Orto').width
-  ctx.font = `400 38px ${FONTE}`
-  ctx.fillText('Questões', MARGEM + 58 + w, 90)
+  desenharMarca(ctx, MARGEM, 90, branco)
   ctx.font = `700 24px ${FONTE}`
   const larg = ctx.measureText(etiqueta).width + 48
   caminhoArredondado(ctx, LARGURA - MARGEM - larg, 66, larg, 48, 24)
@@ -275,11 +267,13 @@ async function slideGabarito(q: Questao, conceito: string | null): Promise<Blob>
 }
 
 /** Imagem única (4:5): pergunta, alternativas e a correta marcada. */
-export function gerarImagemCompletaQuestao(q: Questao, dataTexto: string): Promise<Blob> {
+export async function gerarImagemCompletaQuestao(q: Questao, dataTexto: string): Promise<Blob> {
+  await carregarFonteMarca()
   return slidePergunta(q, dataTexto, true)
 }
 
 /** Carrossel para o Instagram (4:5): pergunta e gabarito comentado. */
 export async function gerarImagensQuestaoDoDia(q: Questao, conceito: string | null, dataTexto: string): Promise<Blob[]> {
+  await carregarFonteMarca()
   return [await slidePergunta(q, dataTexto), await slideGabarito(q, conceito)]
 }

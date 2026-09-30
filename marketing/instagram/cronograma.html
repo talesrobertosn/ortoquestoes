@@ -34,7 +34,7 @@ body { background: #555; font-family: Inter, sans-serif; color: var(--tinta); }
 
 .topo { position: absolute; top: 205px; left: 230px; right: 80px; display: flex; justify-content: space-between; align-items: center; z-index: 2; }
 .marca { display: flex; align-items: center; gap: 14px; font-family: Jakarta; font-size: 36px; color: var(--tinta); }
-.marca svg { width: 46px; height: 46px; } .marca b { font-weight: 800; }
+.marca svg { width: 46px; height: 46px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
 .etiqueta { font: 700 44px Caveat; color: var(--vermelho); transform: rotate(-3deg); }
 .conteudo { position: absolute; left: 230px; right: 80px; top: 320px; z-index: 2; }
 h1 { font-family: Jakarta; font-weight: 800; font-size: 100px; line-height: 1; letter-spacing: -.035em; text-wrap: balance; }
@@ -139,7 +139,8 @@ h2 { font-family: Jakarta; font-weight: 800; font-size: 80px; line-height: 1.02;
 .link { position: absolute; left: 230px; right: 80px; text-align: center; font: 800 44px Jakarta; letter-spacing: -.01em; z-index: 2; }
 .link small { display: block; font: 700 44px Caveat; color: var(--caneta); margin-top: 10px; }
 </style></head><body>
-<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9.6" stroke="currentColor" stroke-width="3.3"/><path d="M14.37 16.63 16.63 14.37 24.63 22.37 26.2 26.2 22.37 24.63Z" fill="currentColor"/></svg></template>
+<!-- Símbolo do Orto Questões: três alternativas, a certa em dourado. -->
+<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><circle cx="9" cy="10" r="2"/><rect x="13" y="8.4" width="11" height="3.2" rx="1.6"/></g><g fill="#F4CF7C"><circle cx="9" cy="16" r="2.6"/><rect x="13" y="14.4" width="12" height="3.2" rx="1.6"/></g><g fill="#FFFFFF" opacity=".55"><circle cx="9" cy="22" r="2"/><rect x="13" y="20.4" width="8" height="3.2" rx="1.6"/></g></svg></template>
 <template id="chama"><svg width="30" height="36" viewBox="0 0 12 14"><path fill="currentColor" d="M6.4 0c.4 1.9-.4 3-1.5 4.2C3.7 5.5 2.5 6.8 2.5 8.9 2.5 11.2 4.1 13 6 13s3.5-1.8 3.5-4c0-1-.3-1.8-.8-2.6 0 1.2-.5 1.9-1.1 2.2-.4-1.5-1.5-2.1-1.5-3.5 0-.8.4-1.4.9-2-.5.1-.9.4-1.2.8C5.6 3.6 6 2.2 6.4 0Z"/></svg></template>
 
 <!-- 1. A data oficial -->
@@ -156,7 +157,7 @@ h2 { font-family: Jakarta; font-weight: 800; font-size: 80px; line-height: 1.02;
   <svg class="seta" style="left: 250px; top: 900px" width="120" height="100" viewBox="0 0 120 100"><path d="M30 92 C 20 50, 40 22, 96 12 M74 4 L96 12 L80 30"/></svg>
   <div class="conteudo" style="top: 1230px">
     <h2>A data saiu.<br><span class="marcador">O site monta o seu estudo até lá.</span></h2>
-    <p class="sub">A prova teórica online do <b>TEOT</b> e do <b>TEPOT 2027</b> da SBOT é em <b>10 de janeiro de 2027</b>. O <b>Cronograma do OrtoQuestões</b> monta o que estudar em cada dia até ela, pelos temas que mais caem.</p>
+    <p class="sub">A prova teórica online do <b>TEOT</b> e do <b>TEPOT 2027</b> da SBOT é em <b>10 de janeiro de 2027</b>. O <b>Cronograma do Orto Questões</b> monta o que estudar em cada dia até ela, pelos temas que mais caem.</p>
     <p class="fonte">Data oficial divulgada pela SBOT.</p>
   </div>
 </section>
@@ -167,7 +168,7 @@ h2 { font-family: Jakarta; font-weight: 800; font-size: 80px; line-height: 1.02;
   <div class="conteudo">
     <h2>Conheça <span class="marcador">o Cronograma.</span></h2>
     <div class="produto">
-      <span class="produto__selo"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Uma função do OrtoQuestões</span>
+      <span class="produto__selo"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Uma função do Orto Questões</span>
       <div class="produto__nome">Cronograma</div>
       <p>O site <b>monta o seu estudo até a prova</b>: quantas questões por dia e qual tema em cada semana, <b>pelos temas que mais caem</b>.</p>
     </div>
@@ -277,7 +278,7 @@ h2 { font-family: Jakarta; font-weight: 800; font-size: 80px; line-height: 1.02;
   <div class="topo"><div class="marca"></div><span class="funcao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Cronograma</span></div>
   <div class="conteudo">
     <h1>Monte o seu <span class="marcador">Cronograma.</span></h1>
-    <p class="sub">No OrtoQuestões, abra o <b>Cronograma</b>, coloque <b>10/01/2027</b> e veja a prévia: o seu dia de hoje e as duas primeiras semanas. <b>De graça, sem cartão.</b></p>
+    <p class="sub">No Orto Questões, abra o <b>Cronograma</b>, coloque <b>10/01/2027</b> e veja a prévia: o seu dia de hoje e as duas primeiras semanas. <b>De graça, sem cartão.</b></p>
     <span class="botao-site" style="background: var(--verde); color: #fff; box-shadow: 0 16px 30px rgba(15,79,73,.3)"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 17H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>Montar meu cronograma</span>
   </div>
   <div class="fita" style="left: 520px; top: 1000px; transform: rotate(-3deg)"></div>
@@ -291,7 +292,7 @@ h2 { font-family: Jakarta; font-weight: 800; font-size: 80px; line-height: 1.02;
 
 <script>
 const s = document.getElementById('simbolo').innerHTML
-document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p><b>Orto</b>Questões</p>')
+document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p><b>Orto</b> <span>Questões</span></p>')
 const chama = document.getElementById('chama').innerHTML
 document.querySelectorAll('.chamas').forEach(c => c.innerHTML = chama.repeat(Number(c.dataset.chamas)))
 // Espiral do caderno em todas as folhas.

@@ -235,7 +235,6 @@ scripts/gabarito.py             leitura de gabarito em lista ou em folha de resp
 fixtures/gerar_pdf_teste.py     PDF sintético para exercitar o pipeline
 fixtures/verificacao.mjs        verificação de ponta a ponta no navegador
 fixtures/testar_deteccao.py     casos que o detector de figura ausente precisa acertar
-docs/logotipo.html              as três direções de logotipo, lado a lado
 ```
 
 ### Formato de uma questão
@@ -332,10 +331,11 @@ reimportação do PDF nunca apaga esse campo.
 
 ## Marca
 
-Três direções desenhadas em SVG estão em `docs/logotipo.html`, lado a lado em 16, 24 e 48 pixels e
-sobre fundo escuro. A escolhida por padrão é a **B — letra Q com cauda de fio de Kirschner**, por ser
-a única que continua legível a 16 pixels: o contorno do Q tem contraforma grande e a cauda é um
-traço único. Para trocar a marca do site inteiro, mude `DIRECAO_MARCA` em `src/marca/Simbolo.tsx`.
+O nome é escrito por extenso, **Orto Questões**, em Plus Jakarta Sans ("Orto" em 800 e
+"Questões" em 500; licença OFL, arquivo em `src/marca/`). O símbolo são três alternativas de uma
+questão, bolinha e linha, com a do meio, a certa, em dourado (`#F4CF7C`) sobre o verde `#14655E`.
+Não usar letra dentro de círculo como símbolo. O desenho vive em `src/marca/Simbolo.tsx` e em
+`public/favicon.svg`; depois de mudar o favicon, rode `python3 scripts/gerar_icones.py`.
 
 ## Licença
 

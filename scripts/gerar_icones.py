@@ -38,9 +38,10 @@ TAMANHOS_ICO = (16, 32, 48)
 # segura central (80%). Mesmo desenho do favicon, reduzido.
 MASCARAVEL = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <rect width="32" height="32" fill="#14655E"/>
-  <g fill="none" transform="translate(16 16) scale(0.66) translate(-15 -15)">
-    <circle cx="13.6" cy="13.6" r="7.9" stroke="#FFFFFF" stroke-width="3.4"/>
-    <path d="M13.9 16.4 16.2 14.1 22.9 20.8 24.4 24.4 20.8 22.9Z" fill="#FFFFFF"/>
+  <g transform="translate(16 16) scale(0.72) translate(-16.5 -16)">
+    <g fill="#FFFFFF" opacity=".55"><circle cx="9" cy="10" r="2"/><rect x="13" y="8.4" width="11" height="3.2" rx="1.6"/></g>
+    <g fill="#F4CF7C"><circle cx="9" cy="16" r="2.6"/><rect x="13" y="14.4" width="12" height="3.2" rx="1.6"/></g>
+    <g fill="#FFFFFF" opacity=".55"><circle cx="9" cy="22" r="2"/><rect x="13" y="20.4" width="8" height="3.2" rx="1.6"/></g>
   </g>
 </svg>""".encode()
 

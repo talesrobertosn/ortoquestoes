@@ -86,7 +86,7 @@ export function Assinatura() {
     <div className="empilha-2 vp">
       <section className="vp-heroi">
         <div className="vp-heroi__texto">
-          <p className="vp-heroi__selo"><Simbolo tamanho={16} /> Plano do assinante</p>
+          <p className="vp-heroi__selo"><Simbolo tamanho={16} variante="traco" /> Plano do assinante</p>
           <h1>Tudo o que você precisa para chegar pronto na prova.</h1>
           <p className="vp-heroi__lide">
             {nome ? `${nome}, questões` : 'Questões'} {limitesHabilitados ? 'sem limite diário' : 'sem limite'} e o que só o assinante tem: um cronograma até a prova montado pelo que mais cai, o Simulado Nacional todo mês, o ranking dos temas mais cobrados, como a turma respondeu, a liga da residência e o relatório mensal.

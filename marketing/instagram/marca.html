@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Identidade do Orto Questões: foto de perfil do Instagram e prévia do link (WhatsApp e redes).
+     node marketing/instagram/gerar.mjs marketing/instagram/marca.html
+     A prévia sai em saida/previa.jpg: copiar para public/ com nome novo a cada troca
+     (os aplicativos guardam a prévia pelo endereço) e atualizar index.html e
+     scripts/gerar_paginas_seo.py. -->
+<style>
+@font-face { font-family: Jakarta; src: url(fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+* { box-sizing: border-box; margin: 0; }
+body { background: #333; font-family: Jakarta, sans-serif; color: #fff; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; }
+.fundo { background: radial-gradient(900px 700px at 100% 0%, rgba(40,160,140,.35), transparent 60%),
+                     radial-gradient(700px 700px at 0% 100%, rgba(244,207,124,.10), transparent 60%),
+                     linear-gradient(160deg, #06201c 0%, #0b3a35 45%, #12594f 100%); }
+.nome b { font-weight: 800; } .nome span { font-weight: 500; }
+
+/* Foto de perfil: o Instagram recorta em círculo, então tudo fica no miolo. */
+.perfil { width: 1080px; height: 1080px; display: grid; place-items: center; text-align: center; }
+.perfil .nome { line-height: .98; letter-spacing: -.035em; }
+.perfil .nome b { display: block; font-size: 230px; }
+.perfil .nome span { display: block; font-size: 148px; letter-spacing: -.025em; margin-top: 6px; }
+.perfil .alternativas { display: flex; flex-direction: column; gap: 22px; align-items: flex-start; margin: 0 auto 64px; width: 250px; }
+.perfil .alternativas i { display: flex; align-items: center; gap: 26px; }
+.perfil .alternativas i::before { content: ''; width: 36px; height: 36px; border-radius: 50%; background: currentColor; }
+.perfil .alternativas i::after { content: ''; height: 30px; border-radius: 15px; background: currentColor; width: var(--l); }
+.perfil .alternativas i { color: rgba(255,255,255,.45); }
+.perfil .alternativas i.certa { color: #f4cf7c; }
+.perfil .alternativas i.certa::before { width: 46px; height: 46px; margin-left: -5px; margin-right: -5px; }
+.perfil--claro { background: #fbf6ea; color: #0b3a35; }
+.perfil--claro .nome span { color: #14655e; }
+.perfil--claro .alternativas i { color: rgba(11,58,53,.3); }
+.perfil--claro .alternativas i.certa { color: #d9a93f; }
+
+/* Prévia do link: 1200 x 630. */
+.previa { width: 1200px; height: 630px; padding: 58px 72px; }
+.marca { display: flex; align-items: center; gap: 16px; font-size: 32px; letter-spacing: -.02em; }
+.marca svg { width: 56px; height: 56px; }
+.previa h1 { margin-top: 40px; font-size: 50px; font-weight: 800; line-height: 1.06; letter-spacing: -.03em; max-width: 600px; }
+.previa h1 em { font-style: normal; color: #f4cf7c; }
+.previa .lide { margin-top: 18px; font: 400 22px/1.4 Jakarta; color: rgba(255,255,255,.78); max-width: 560px; }
+.chips { display: flex; gap: 10px; margin-top: 26px; }
+.chips span { padding: 9px 18px; border-radius: 999px; background: rgba(255,255,255,.1); border: 1.5px solid rgba(255,255,255,.22); font-size: 17px; font-weight: 600; }
+.endereco { position: absolute; left: 72px; bottom: 44px; font-size: 21px; font-weight: 700; color: rgba(255,255,255,.7); letter-spacing: .02em; }
+.cartao { position: absolute; right: 60px; top: 70px; width: 380px; background: #fff; color: #12181a; border-radius: 22px; padding: 22px 22px 18px; box-shadow: 0 30px 70px rgba(0,0,0,.4); transform: rotate(2deg); }
+.cartao small { font-size: 13px; font-weight: 700; letter-spacing: .1em; color: #5b686c; }
+.cartao strong { display: block; margin: 8px 0 14px; font-size: 19px; line-height: 1.3; font-weight: 700; }
+.alt { display: flex; align-items: center; gap: 12px; border: 1.5px solid #dce2e0; border-radius: 12px; padding: 10px 12px; margin-top: 8px; font: 500 16px Jakarta; }
+.alt b { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 7px; background: #eef1f0; font-size: 13px; }
+.alt.certa { border-color: #1f7a4d; background: #e8f4ec; font-weight: 700; } .alt.certa b { background: #1f7a4d; color: #fff; }
+.alt.errada { border-color: #e2b4ae; background: #fbeeec; } .alt.errada b { background: #b3423a; color: #fff; }
+.comentario { margin-top: 12px; padding: 12px 14px; border-radius: 12px; background: #e7f0ee; color: #14655e; font: 600 14px/1.35 Jakarta; }
+</style></head><body>
+
+<!-- Símbolo do Orto Questões: três alternativas, a certa em dourado. -->
+<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#FFFFFF" fill-opacity=".12"/><g fill="#FFFFFF" opacity=".55"><circle cx="9" cy="10" r="2"/><rect x="13" y="8.4" width="11" height="3.2" rx="1.6"/></g><g fill="#F4CF7C"><circle cx="9" cy="16" r="2.6"/><rect x="13" y="14.4" width="12" height="3.2" rx="1.6"/></g><g fill="#FFFFFF" opacity=".55"><circle cx="9" cy="22" r="2"/><rect x="13" y="20.4" width="8" height="3.2" rx="1.6"/></g></svg></template>
+
+<!-- Foto de perfil (principal) -->
+<section class="perfil fundo" id="perfil">
+  <div>
+    <div class="alternativas"><i style="--l: 150px"></i><i class="certa" style="--l: 180px"></i><i style="--l: 110px"></i></div>
+    <p class="nome"><b>Orto</b><span>Questões</span></p>
+  </div>
+</section>
+
+<!-- Foto de perfil (alternativa clara) -->
+<section class="perfil perfil--claro" id="perfil-claro">
+  <div>
+    <div class="alternativas"><i style="--l: 150px"></i><i class="certa" style="--l: 180px"></i><i style="--l: 110px"></i></div>
+    <p class="nome"><b>Orto</b><span>Questões</span></p>
+  </div>
+</section>
+
+<!-- Prévia do link -->
+<section class="previa fundo" id="previa" data-formato="jpg">
+  <div class="marca"></div>
+  <h1>Questões de ortopedia <em>comentadas</em> para TEOT, TARO e ENARE R4</h1>
+  <p class="lide">Provas anteriores por assunto, com a explicação de cada alternativa.</p>
+  <div class="chips"><span>Provas oficiais</span><span>Revisão espaçada</span><span>Cronograma até a prova</span></div>
+  <p class="endereco">ortoquestoes.com.br</p>
+  <div class="cartao">
+    <small>JOELHO · TEOT</small>
+    <strong>Na lesão do ligamento cruzado anterior, o teste mais sensível no exame físico é o…</strong>
+    <div class="alt"><b>A</b>Gaveta anterior</div>
+    <div class="alt certa"><b>B</b>Teste de Lachman</div>
+    <div class="alt errada"><b>C</b>Pivot shift</div>
+    <div class="alt"><b>D</b>McMurray</div>
+    <p class="comentario">Comentário: por que a B está certa e cada outra está errada.</p>
+  </div>
+</section>
+
+<script>
+const s = document.getElementById('simbolo').innerHTML
+document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p class="nome"><b>Orto</b> <span>Questões</span></p>')
+</script>
+</body></html>

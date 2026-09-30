@@ -17,7 +17,7 @@ body { background: #333; font-family: Inter, sans-serif; color: var(--branco); }
   background: repeating-radial-gradient(circle at 105% -5%, transparent 0 158px, rgba(255,255,255,.05) 158px 160px); }
 .marca { position: absolute; top: 210px; left: 90px; display: flex; align-items: center; gap: 18px; font-family: Jakarta; font-size: 40px; letter-spacing: -.01em; }
 .marca svg { width: 52px; height: 52px; color: var(--branco); }
-.marca b { font-weight: 800; } .marca span { font-weight: 400; }
+.marca b { font-weight: 800; } .marca span { font-weight: 500; }
 .num { position: absolute; top: 214px; right: 90px; font-family: Jakarta; font-weight: 700; font-size: 26px; color: var(--fraco); letter-spacing: .12em; }
 .nota { position: absolute; top: 262px; right: 90px; font-size: 22px; color: var(--fraco); }
 .conteudo { position: absolute; left: 90px; right: 90px; top: 330px; }
@@ -65,7 +65,8 @@ h1 em { font-style: normal; color: var(--ouro); }
 .link b { font: 800 60px Jakarta; letter-spacing: -.02em; }
 </style></head><body>
 
-<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9.6" stroke="currentColor" stroke-width="3.3"/><path d="M14.37 16.63 16.63 14.37 24.63 22.37 26.2 26.2 22.37 24.63Z" fill="currentColor"/></svg></template>
+<!-- Símbolo do Orto Questões: três alternativas, a certa em dourado. -->
+<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#FFFFFF" fill-opacity=".12"/><g fill="currentColor" opacity=".55"><circle cx="9" cy="10" r="2"/><rect x="13" y="8.4" width="11" height="3.2" rx="1.6"/></g><g fill="#F4CF7C"><circle cx="9" cy="16" r="2.6"/><rect x="13" y="14.4" width="12" height="3.2" rx="1.6"/></g><g fill="currentColor" opacity=".55"><circle cx="9" cy="22" r="2"/><rect x="13" y="20.4" width="8" height="3.2" rx="1.6"/></g></svg></template>
 
 <!-- 1. A prova está chegando -->
 <section class="story" id="c1">
@@ -100,7 +101,7 @@ h1 em { font-style: normal; color: var(--ouro); }
 
 <script>
 const s = document.getElementById('simbolo').innerHTML
-document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p><b>Orto</b><span>Questões</span></p>')
+document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p><b>Orto</b> <span>Questões</span></p>')
 const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
 const faltam = Math.round((new Date(2027, 0, 10) - hoje) / 864e5)
 document.querySelectorAll('[data-faltam]').forEach(el => el.textContent = faltam)

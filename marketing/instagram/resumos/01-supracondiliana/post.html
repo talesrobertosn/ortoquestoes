@@ -29,7 +29,7 @@ body { background: #555; font-family: Inter, sans-serif; color: var(--tinta); }
 
 .topo { position: absolute; top: 60px; left: 230px; right: 70px; display: flex; justify-content: space-between; align-items: center; z-index: 2; }
 .marca { display: flex; align-items: center; gap: 12px; font-family: Jakarta; font-size: 32px; }
-.marca svg { width: 40px; height: 40px; } .marca b { font-weight: 800; }
+.marca svg { width: 40px; height: 40px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
 .pagina { font: 700 40px Caveat; color: var(--tinta-2); }
 .conteudo { position: absolute; left: 230px; right: 70px; top: 180px; z-index: 2; }
 h1 { font: 800 92px/1 Jakarta; letter-spacing: -.035em; text-wrap: balance; }
@@ -67,7 +67,8 @@ h2 { font: 800 66px/1.04 Jakarta; letter-spacing: -.03em; text-wrap: balance; }
 .cta strong { color: var(--ouro-2); }
 .cta .site { display: inline-block; margin-top: 22px; padding: 18px 30px; border-radius: 16px; background: #fff; color: var(--verde); font: 800 34px Jakarta; }
 </style></head><body>
-<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9.6" stroke="currentColor" stroke-width="3.3"/><path d="M14.37 16.63 16.63 14.37 24.63 22.37 26.2 26.2 22.37 24.63Z" fill="currentColor"/></svg></template>
+<!-- Símbolo do Orto Questões: três alternativas, a certa em dourado. -->
+<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><circle cx="9" cy="10" r="2"/><rect x="13" y="8.4" width="11" height="3.2" rx="1.6"/></g><g fill="#F4CF7C"><circle cx="9" cy="16" r="2.6"/><rect x="13" y="14.4" width="12" height="3.2" rx="1.6"/></g><g fill="#FFFFFF" opacity=".55"><circle cx="9" cy="22" r="2"/><rect x="13" y="20.4" width="8" height="3.2" rx="1.6"/></g></svg></template>
 
 <!-- 1. Capa -->
 <section class="slide" id="s1">
@@ -161,14 +162,14 @@ h2 { font: 800 66px/1.04 Jakarta; letter-spacing: -.03em; text-wrap: balance; }
   <div class="postit" style="left: 600px; top: 520px; transform: rotate(-4deg); width: 360px">salva este post pra revisar depois</div>
   <div class="fita" style="left: 520px; top: 790px; transform: rotate(3deg)"></div>
   <div class="cta" style="top: 810px">
-    <p>No OrtoQuestões, as questões de <strong>fratura do cotovelo na criança</strong> das provas anteriores do TEOT e do TARO, com comentário em cada alternativa.</p>
+    <p>No Orto Questões, as questões de <strong>fratura do cotovelo na criança</strong> das provas anteriores do TEOT e do TARO, com comentário em cada alternativa.</p>
     <span class="site">ortoquestoes.com.br</span>
   </div>
 </section>
 
 <script>
 const s = document.getElementById('simbolo').innerHTML
-document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p><b>Orto</b>Questões</p>')
+document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p><b>Orto</b> <span>Questões</span></p>')
 document.querySelectorAll('.slide').forEach(st => {
   const e = document.createElement('div'); e.className = 'espiral'
   for (let y = 30; y < 1340; y += 70) e.insertAdjacentHTML('beforeend', `<i style="top:${y}px"></i><b style="top:${y + 2}px"></b>`)

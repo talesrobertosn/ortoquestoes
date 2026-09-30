@@ -12,7 +12,7 @@ body { background: #333; font-family: Inter, sans-serif; color: #fff; }
 .slide::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: repeating-radial-gradient(circle at 105% -5%, transparent 0 158px, rgba(255,255,255,.045) 158px 160px); }
 .topo { position: absolute; top: 64px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; }
 .marca { display: flex; align-items: center; gap: 14px; font-family: Jakarta; font-size: 32px; }
-.marca svg { width: 42px; height: 42px; } .marca b { font-weight: 800; }
+.marca svg { width: 42px; height: 42px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
 .arquivo { font-family: var(--mono); font-size: 22px; letter-spacing: .14em; color: rgba(255,255,255,.6); text-transform: uppercase; }
 .pag { position: absolute; bottom: 60px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-size: 24px; color: rgba(255,255,255,.6); }
 .pag .pontos { display: flex; gap: 10px; } .pag .pontos i { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,.25); }
@@ -47,7 +47,8 @@ h1 em, h2 em { font-style: normal; color: var(--ouro); }
 .lista li { display: flex; gap: 18px; font-size: 30px; line-height: 1.38; color: var(--tinta); }
 .lista li::before { content: ''; flex: none; width: 14px; height: 14px; margin-top: 14px; border-radius: 3px; background: var(--verde); transform: rotate(45deg); }
 </style></head><body>
-<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9.6" stroke="currentColor" stroke-width="3.3"/><path d="M14.37 16.63 16.63 14.37 24.63 22.37 26.2 26.2 22.37 24.63Z" fill="currentColor"/></svg></template>
+<!-- Símbolo do Orto Questões: três alternativas, a certa em dourado. -->
+<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#FFFFFF" fill-opacity=".12"/><g fill="currentColor" opacity=".55"><circle cx="9" cy="10" r="2"/><rect x="13" y="8.4" width="11" height="3.2" rx="1.6"/></g><g fill="#F4CF7C"><circle cx="9" cy="16" r="2.6"/><rect x="13" y="14.4" width="12" height="3.2" rx="1.6"/></g><g fill="currentColor" opacity=".55"><circle cx="9" cy="22" r="2"/><rect x="13" y="20.4" width="8" height="3.2" rx="1.6"/></g></svg></template>
 
 <!-- 1. Capa -->
 <section class="slide" id="c1">
@@ -226,7 +227,7 @@ h1 em, h2 em { font-style: normal; color: var(--ouro); }
 
 <script>
 const s = document.getElementById('simbolo').innerHTML
-document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p><b>Orto</b>Questões</p>')
+document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p><b>Orto</b> <span>Questões</span></p>')
 // Imagem da questão tumores-0065 (TEOT 2022) e o tamanho original dela, para os recortes data-crop.
 const IMAGEM = '../../../../public/imagens/tumores/tumores-0065-1.jpeg', W = 528, H = 442
 document.querySelectorAll('.foto').forEach(el => {

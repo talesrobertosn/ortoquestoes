@@ -1,28 +1,53 @@
+import { COR_DESTAQUE, LINHAS_SIMBOLO } from '../marca/Simbolo'
 import { SITE } from '../config'
 import { MARCOS_STREAK } from '../estado/streak'
 
 const LADO = 1080
 
-/** Símbolo do OrtoQuestões (direção B, ver src/marca/Simbolo.tsx) desenhado
- * direto no canvas: um círculo com um fio de Kirschner atravessando. */
+/** Símbolo do Orto Questões (ver src/marca/Simbolo.tsx) desenhado direto no
+ * canvas: três alternativas, com a do meio, a certa, em dourado. */
 export function desenharSelo(ctx: CanvasRenderingContext2D, x: number, y: number, tamanho: number, cor: string) {
   const escala = tamanho / 32
   ctx.save()
   ctx.translate(x, y)
   ctx.scale(escala, escala)
-  ctx.strokeStyle = cor
-  ctx.lineWidth = 3.3
-  ctx.beginPath()
-  ctx.arc(14, 14, 9.6, 0, Math.PI * 2)
-  ctx.stroke()
-  ctx.fillStyle = cor
-  ctx.fill(new Path2D('M14.37 16.63 16.63 14.37 24.63 22.37 26.2 26.2 22.37 24.63Z'))
+  for (const l of LINHAS_SIMBOLO) {
+    ctx.globalAlpha = l.certa ? 1 : 0.55
+    ctx.fillStyle = l.certa ? COR_DESTAQUE : cor
+    ctx.beginPath()
+    ctx.arc(l.cx, l.cy, l.r, 0, Math.PI * 2)
+    ctx.fill()
+    caminhoArredondado(ctx, l.x, l.y, l.largura, 3.2, 1.6)
+    ctx.fill()
+  }
   ctx.restore()
+}
+
+/** Garante a fonte do nome antes de desenhar; sem ela o canvas usa a do sistema. */
+export async function carregarFonteMarca() {
+  try { await Promise.all([document.fonts.load(`800 38px ${FONTE_MARCA}`), document.fonts.load(`500 38px ${FONTE_MARCA}`)]) } catch { /* segue com a fonte do sistema */ }
+}
+
+/** Símbolo e nome por extenso, alinhados pela linha do meio (yMeio). */
+export function desenharMarca(ctx: CanvasRenderingContext2D, x: number, yMeio: number, cor: string) {
+  caminhoArredondado(ctx, x, yMeio - 28, 56, 56, 14)
+  ctx.fillStyle = 'rgba(255,255,255,0.12)'
+  ctx.fill()
+  desenharSelo(ctx, x, yMeio - 28, 56, cor)
+  ctx.fillStyle = cor
+  ctx.textAlign = 'left'
+  ctx.textBaseline = 'middle'
+  ctx.font = `800 38px ${FONTE_MARCA}`
+  ctx.fillText('Orto', x + 74, yMeio)
+  const larguraOrto = ctx.measureText('Orto ').width
+  ctx.font = `500 38px ${FONTE_MARCA}`
+  ctx.fillText('Questões', x + 74 + larguraOrto, yMeio)
 }
 
 const LEGENDAS = ['Estudando ortopedia todos os dias', 'Questão por questão, dia após dia', 'Constância que vira resultado', 'Um pouco todo dia, sem pular nenhum']
 
 export const FONTE = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif'
+const FONTE_MARCA = `"Plus Jakarta Sans", ${FONTE}`
 
 /** Retângulo arredondado como caminho, para cápsulas e quadradinhos da semana. */
 export function caminhoArredondado(ctx: CanvasRenderingContext2D, x: number, y: number, l: number, a: number, r: number) {
@@ -42,6 +67,7 @@ export function caminhoArredondado(ctx: CanvasRenderingContext2D, x: number, y: 
  * embaixo a semana aparece em sete quadradinhos.
  */
 export async function gerarImagemStreak(dias: number): Promise<Blob> {
+  await carregarFonteMarca()
   const tela = document.createElement('canvas')
   tela.width = LADO
   tela.height = LADO
@@ -71,15 +97,7 @@ export async function gerarImagemStreak(dias: number): Promise<Blob> {
   ctx.fillRect(0, 0, LADO, LADO)
 
   // Topo: marca à esquerda, etiqueta à direita.
-  desenharSelo(ctx, 80, 78, 46, branco)
-  ctx.fillStyle = branco
-  ctx.textAlign = 'left'
-  ctx.textBaseline = 'middle'
-  ctx.font = `800 38px ${FONTE}`
-  ctx.fillText('Orto', 138, 102)
-  const larguraOrto = ctx.measureText('Orto').width
-  ctx.font = `400 38px ${FONTE}`
-  ctx.fillText('Questões', 138 + larguraOrto, 102)
+  desenharMarca(ctx, 80, 102, branco)
   ctx.font = `700 24px ${FONTE}`
   const etiqueta = 'SEQUÊNCIA DE ESTUDO'
   const larguraEtiqueta = ctx.measureText(etiqueta).width + 48
