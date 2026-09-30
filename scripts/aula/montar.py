@@ -6,7 +6,7 @@
 #   ## conceito
 #   **Título.** parágrafo...
 #
-#   **Na prova:** ...
+#   **Na prova:** ...      (opcional, apenas quando acrescentar algo)
 #   ## correta
 #   **Frase em negrito.** explicação
 #   ## A
@@ -31,10 +31,9 @@ for bloco in re.split(r'^@@\s*', txt, flags=re.M)[1:]:
         else: c['incorretas'][nome] = corpo
     con = c.get('conceito', '')
     pars = [p for p in con.split('\n\n') if p.strip()]
-    if len(pars) < 3: erros.append(f'{qid}: conceito com {len(pars)} parágrafos (mínimo 3)')
+    if not pars: erros.append(f'{qid}: conceito vazio')
     for p in pars:
         if not p.startswith('**'): erros.append(f'{qid}: parágrafo sem título em negrito: {p[:50]}')
-    if '**Na prova' not in con: erros.append(f'{qid}: falta o parágrafo **Na prova:**')
     todo = json.dumps(c, ensure_ascii=False)
     if '—' in todo or '–' in todo: erros.append(f'{qid}: tem travessão (proibido)')
     if '###' in con: erros.append(f'{qid}: tem título ### (proibido)')

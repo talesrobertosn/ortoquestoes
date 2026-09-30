@@ -2,7 +2,7 @@
 # Uso: python3 scripts/aula/fila.py TEMA [N] [PULAR] [--topicos]
 #   sem opção:   comentários "crus" (texto curto ou com listas de tópicos simples)  -> prioridade 1
 #   --topicos:   formato antigo com títulos "###" e tabelas                          -> prioridade 2
-#   --corrido:   texto corrido antigo, sem o parágrafo final "**Na prova:**"         -> prioridade 3
+#   --corrido:   texto corrido antigo, sem a estrutura editorial atual              -> prioridade 3
 # O total restante sai na saída de erro ("# restantes N").
 import json, sys, re, os
 RAIZ = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -20,8 +20,12 @@ def classe(v):
     con = v.get('conceito') or ''
     if '###' in con:
         return 'topicos'
+    partes = [p.strip() for p in con.split('\n\n') if p.strip()]
+    justificativas = [v.get('correta') or '', *(v.get('incorretas') or {}).values()]
+    if partes and all(p.startswith('**') for p in partes) and all(t.startswith('**') for t in justificativas):
+        return 'aula'
     if con.count('\n\n') >= 2 and '**' in con and not re.search(r'^\s*- ', con, re.M):
-        return 'aula' if '**Na prova' in con else 'corrido'
+        return 'corrido'
     return 'cru'
 
 alvo = 'topicos' if '--topicos' in sys.argv else 'corrido' if '--corrido' in sys.argv else 'cru'
