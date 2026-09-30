@@ -161,14 +161,15 @@
   "conferido": false
  },
  "joelho-0015": {
-  "conceito": "### Flexão exigida nas atividades (aproximadas)\n- **Caminhar:** ~60 a 70°.\n- **Subir escadas:** ~80 a 90°.\n- ==Descer escadas==: ~90° ou mais.\n- Sentar e levantar da cadeira: ~90 a 100°.\n- Amarrar o sapato, agachar: 105° a mais de 120°.\n\n### Por que descer é mais exigente\n- Maior flexão na fase de apoio.\n- **Controle excêntrico** do quadríceps.\n- Maior força **femoropatelar**: por isso a dor da artrose femoropatelar e da condromalácia piora ao descer.\n\n### Relevância\nAfter artroplastia, uma flexão abaixo de ~90° limita escadas e cadeira: meta mínima funcional.\n\n> **Na prova:** entre as opções, maior flexão = ==descer escadas==.",
-  "correta": "**Descer escadas.**",
   "incorretas": {
-   "A": "**Menor.**",
-   "B": "**A menor.**",
-   "C": "**Um pouco menor.**"
+   "A": "**Correr pode exigir muita flexão, sobretudo no balanço.** O pico depende da velocidade e da técnica; não é seguro afirmar que sempre fica abaixo da descida.",
+   "B": "**Caminhar em plano geralmente exige menos flexão.** É a comparação mais estável entre as atividades listadas.",
+   "C": "**Subir escadas também exige flexão considerável.** A diferença em relação à descida varia com a altura do degrau e a forma de medir o movimento."
   },
-  "geradoEm": "2026-09-23",
+  "alerta": "O gabarito D é compatível com alguns protocolos de marcha em escadas, mas não existe uma ordem universal de flexão máxima entre correr, subir e descer escadas. A altura dos degraus, velocidade e fase da passada mudam os ângulos; alguns estudos encontram maior demanda na subida ou na corrida. O comentário deve ensinar a dificuldade funcional da descida sem transformar o resultado desta prova em valor biomecânico fixo.",
+  "conceito": "**Flexão não é a mesma coisa que esforço.** A amplitude máxima do joelho e o momento exigido do quadríceps são medidas diferentes. Caminhar em plano costuma precisar de menos flexão que negociar degraus. Na descida, o membro de apoio flexiona enquanto o quadríceps freia o corpo de forma excêntrica; isso ajuda a explicar por que a tarefa costuma ser difícil para quem tem dor femoropatelar, fraqueza ou rigidez após cirurgia.\n\n**A resposta depende do cenário.** Ao comparar atividades, considere tamanho do degrau, cadência, fase de apoio ou balanço e se o estudo relata pico de flexão ou carga articular. Numa avaliação funcional, anotar apenas que o paciente consegue caminhar pode ocultar dificuldade importante para descer escadas. A banca escolheu essa atividade como a de maior flexão entre as quatro, mas a literatura não permite generalizar essa ordem a toda execução.",
+  "correta": "**Descer escadas, no enquadramento da banca.** A descida combina flexão sob carga e controle excêntrico, sendo uma tarefa funcional exigente.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0016": {
@@ -228,58 +229,59 @@
   "conferido": false
  },
  "joelho-0020": {
-  "conceito": "### A deformidade decide\n- **Osteotomia tibial alta (valgizante):** jovem ativo, artrose medial **isolada**, varo **moderado** (geralmente até ~15°), boa mobilidade, sem instabilidade grave.\n- **Artroplastia unicompartimental:** artrose isolada, deformidade **pequena e corrigível** (geralmente até ~10 a 15°), LCA íntegro, arco preservado.\n- ==Artroplastia total==: deformidade **grande** (como **25°**), artrose avançada, ou quando os outros limites são ultrapassados.\n\n### O caso\n50 anos, varo de **25°**: fora dos limites da osteotomia e da unicompartimental. Apesar da idade, a ATJ é a indicação.\n\n### Pontos-chave\n- Deformidades grandes costumam ter componente **femoral e tibial**, e não se corrigem por uma osteotomia tibial isolada sem gerar obliquidade da interlinha.\n\n> **Na prova:** artrose medial com varo de 25° = ==artroplastia total==.",
-  "correta": "**Artroplastia total do joelho.**",
   "incorretas": {
-   "B": "**Deformidade grande demais.**",
-   "C": "**Deformidade grande demais.**",
-   "D": "**Deformidade femoral em valgo.**\n- Não é o cenário."
+   "B": "**A correção tibial isolada seria grande demais.** Osteotomia de abertura medial é útil em varo moderado com artrose medial, não como escolha automática para 25 graus.",
+   "C": "**A deformidade limita a unicompartimental.** Ela requer seleção cuidadosa e varo corrigível, não uma correção extensa por meio do implante.",
+   "D": "**É uma osteotomia para outro padrão.** A subtração lateral femoral é empregada tipicamente para corrigir valgo de origem femoral e sobrecarga lateral."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Um varo de 25 graus muda a escolha.** A osteotomia tibial valgizante e a artroplastia unicompartimental funcionam melhor quando a artrose é realmente isolada e a deformidade é limitada e corrigível. Um varo de 25 graus é grande para ambas: tentar compensá-lo inteiramente numa osteotomia tibial pode produzir obliquidade excessiva da interlinha, enquanto uma prótese unicompartimental não foi concebida para corrigir deformidade fixa tão acentuada.\n\n**Por que artroplastia total apesar dos 50 anos.** A idade isolada favorece preservação articular quando possível, mas não supera uma deformidade severa. A artroplastia total permite tratar a superfície comprometida e balancear o joelho durante a correção. O planejamento deve identificar quanto do varo vem da tíbia, do fêmur ou da frouxidão ligamentar, avaliar se a deformidade é redutível e verificar o estado dos outros compartimentos. Em casos selecionados, há estratégias combinadas, mas não são a resposta padrão apresentada aqui.",
+  "correta": "**Artroplastia total do joelho.** O varo de 25 graus ultrapassa o cenário habitual da osteotomia isolada e da prótese unicompartimental, mesmo num paciente de 50 anos.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0021": {
-  "conceito": "### O que é a fratura de Segond\nPequena avulsão da ==margem lateral do platô tibial== (anterolateral), logo abaixo da interlinha, na inserção do **ligamento anterolateral**/cápsula lateral (e fibras da banda iliotibial).\n\n### Por que importa\nÉ um **marcador indireto** de lesão do **LCA** (associação na grande maioria dos casos) e frequentemente de lesão meniscal.\n- Mecanismo: **rotação interna** com varo.\n- Na radiografia AP, um fragmento elíptico lateral ao platô: pedir **ressonância**.\n\n### As outras avulsões\n- **Segond reverso:** margem **medial** da tíbia, associado a lesão do **LCP** e do LCM profundo.\n- **Arcuata:** ápice da cabeça da fíbula, lesão do **canto posterolateral**.\n- **Espinha tibial:** avulsão do LCA na eminência, típica da **criança**.\n\n> **Na prova:** Segond = avulsão da ==margem lateral da tíbia==, pista de LCA roto.",
-  "correta": "**Margem lateral da tíbia.**",
   "incorretas": {
-   "B": "**Segond reverso.**\n- Associado ao LCP.",
-   "C": "**Espinha tibial.**",
-   "D": "**Sinal arcuata.**\n- Canto posterolateral."
+   "B": "**Margem medial lembra Segond reverso.** Essa avulsão tem outra localização e exige investigação de um conjunto diferente de lesões associadas.",
+   "C": "**Eminência intercondilar é avulsão da inserção tibial do LCA.** A lesão costuma aparecer em pacientes esqueleticamente imaturos, não na borda lateral do platô.",
+   "D": "**Ápice fibular é o sinal arcuato.** Ele aponta para estruturas do canto posterolateral e não define Segond."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O fragmento é lateral e tibial.** A fratura de Segond é uma pequena avulsão na borda anterolateral da tíbia proximal, logo abaixo do platô. O complexo capsuloligamentar anterolateral e fibras relacionadas ao trato iliotibial participam da região de inserção; não se deve pressupor que um único ligamento explique todos os casos. Na radiografia frontal, o pequeno fragmento pode passar despercebido.\n\n**Por que procurá-la.** Segond é uma pista forte de lesão do LCA e de possível dano meniscal ou anterolateral associado. O mecanismo costuma combinar rotação interna e varo. Identificar a avulsão não substitui exame ligamentar nem ressonância quando indicada, mas impede que o caso seja tratado como simples fratura periférica sem investigar a estabilidade do joelho.\n\n**Três avulsões que confundem.** O Segond reverso sai da margem medial da tíbia e sugere investigar lesões mediais e do LCP, embora suas associações não sejam invariáveis. A avulsão da eminência intercondilar corresponde à inserção tibial do LCA, especialmente em crianças. Já um fragmento no ápice da cabeça fibular é o sinal arcuato, marcador de lesão do canto posterolateral.",
+  "correta": "**Margem lateral da tíbia.** Essa é a localização óssea que define a fratura de Segond.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0022": {
-  "conceito": "### Watanabe: menisco discoide lateral\n- **I, completo:** cobre todo o platô, inserções normais, **estável**.\n- **II, incompleto:** cobre parte do platô, estável.\n- ==III, Wrisberg==: **sem inserção posterior meniscotibial**, preso só pelo ligamento meniscofemoral de Wrisberg. **Hipermóvel**.\n\n### O snapping knee\nO tipo III subluxa em flexão e reduz em extensão com **estalido** alto e visível: o **\"joelho que estala\"** da criança pequena (2 a 3 anos), muitas vezes indolor.\n\n### Tratamento\n- Estáveis e assintomáticos: observar.\n- Sintomáticos: **saucerização** artroscópica.\n- Wrisberg: saucerização **com sutura** da periferia para estabilizar (não retirar tudo).\n\n### Não existe tipo IV na Watanabe original.\n\n> **Na prova:** snapping na criança de 2 a 3 anos = ==Watanabe III (Wrisberg)==.",
-  "correta": "**III.**\n- O tipo Wrisberg, instável.",
   "incorretas": {
-   "A": "**Estável.**",
-   "B": "**Estável.**",
-   "D": "**Não existe.**"
+   "A": "**Tipo I é completo.** Seu formato pode predispor a problemas, mas não define a hipermobilidade posterior clássica do ressalto descrito.",
+   "B": "**Tipo II é incompleto.** A cobertura parcial do platô não explica, por si só, o mecanismo típico de subluxação do tipo III.",
+   "D": "**Não integra a classificação original.** Watanabe descreve os tipos I, II e III."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Formato e fixação são perguntas distintas.** Na classificação de Watanabe, o tipo I é discoide completo e cobre praticamente todo o platô lateral. O tipo II é incompleto, com aumento parcial da cobertura. O tipo III é a variante de Wrisberg: faltam fixações posteriores usuais do menisco lateral, que fica hipermóvel, mesmo que seu formato não seja um disco completo. A classificação original não contém tipo IV.\n\n**O joelho que estala.** No tipo III, o segmento posterior pode deslocar-se durante a flexão e reduzir durante a extensão, produzindo ressalto lateral perceptível numa criança pequena. Tipos I e II também podem causar dor, estalidos ou bloqueio quando se rompem ou apresentam instabilidade periférica, mas a associação clássica entre ressalto espontâneo e menisco hipermóvel é a variante de Wrisberg.\n\n**Tratar sintomas preservando menisco.** Um achado assintomático pode ser observado. Para sintomas persistentes, a artroscopia permite estabilizar a periferia e, se houver excesso de tecido central, remodelar o menisco. Meniscectomia total sacrifica proteção cartilaginosa e deve ser evitada.",
+  "correta": "**Tipo III, variante de Wrisberg.** A falta de fixação posterior torna o menisco hipermóvel e explica o ressalto lateral característico.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0023": {
-  "conceito": "### A luxação intra-articular da patela\nRara, geralmente em **adolescentes**, por trauma direto sobre a patela com o joelho em flexão.\n- O polo superior se desprende do tendão quadricipital (avulsão) e a patela **roda** em torno do eixo horizontal.\n- Fica **encravada** entre o fêmur e a tíbia.\n\n### A posição típica\nRotação de ~90°: a superfície articular fica ==horizontalizada e voltada para a tíbia== (ou, menos comumente, para cima).\n\n### Na prática\n- Joelho bloqueado em extensão parcial, dor intensa.\n- Radiografia em perfil mostra a patela deitada na interlinha.\n- Redução fechada sob anestesia às vezes funciona; muitas vezes exige **redução aberta** e reparo do quadricipital.\n\n### Diferencial\nLuxação **vertical** (rotação no eixo longitudinal), com a patela de lado, encaixada no sulco troclear.\n\n> **Na prova:** luxação intra-articular da patela = superfície articular ==horizontal, voltada para a tíbia==.",
-  "correta": "**Horizontalizada e voltada para a tíbia.**",
   "incorretas": {
-   "B": "**É a posição normal.**",
-   "C": "**Verticalização é outra luxação.**",
-   "D": "**Verticalização é outra luxação.**"
+   "B": "**Também pode ocorrer após rotação no sentido oposto.** Superfície horizontal voltada para o fêmur não é necessariamente posição normal; por isso a questão é ambígua.",
+   "C": "**Descreve uma orientação lateral.** Ela sugere rotação em eixo longitudinal, não a apresentação horizontal escolhida pela banca.",
+   "D": "**Também desloca a discussão para o eixo longitudinal.** A superfície voltada para o côndilo medial não expressa a face inferior pedida no gabarito."
   },
-  "geradoEm": "2026-09-23",
+  "alerta": "Na luxação patelar intra-articular horizontal, a superfície articular pode voltar-se para baixo, em direção à tíbia, ou para cima, em direção ao fêmur. O gabarito A descreve uma apresentação, mas a direção não é universal. Além disso, a alternativa B combina \"horizontalizada\" com \"voltada para o fêmur\" e não deve ser descartada como simples posição normal da patela.",
+  "conceito": "**Uma luxação rara e bloqueada.** A luxação patelar intra-articular não é a luxação lateral habitual. Na variedade horizontal, a patela gira em torno do eixo transversal e um dos seus polos fica impactado na articulação. A superfície articular se horizontaliza; conforme o sentido da rotação, pode olhar para a tíbia ou para o fêmur. O joelho costuma ficar doloroso e bloqueado, e a radiografia de perfil ajuda a reconhecer a patela deitada.\n\n**Não confundir os eixos.** Na variedade vertical, a patela roda em torno de seu eixo longitudinal e fica de lado, com uma borda encravada. Dizer que a superfície está voltada para um dos côndilos laterais ou mediais não descreve a orientação inferior que a banca quer nesta pergunta.\n\n**Conduta individualizada.** Tentativa cuidadosa de redução fechada sob analgesia ou anestesia pode ser possível. Encarceramento, fratura osteocondral ou lesão do tendão quadricipital podem exigir redução aberta e reparo; manobras forçadas sem entender a orientação aumentam o risco de dano cartilaginoso.",
+  "correta": "**Horizontalizada e voltada para a tíbia, conforme o gabarito.** É uma orientação possível na luxação intra-articular horizontal, embora não seja a única descrita.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0024": {
-  "conceito": "### As manobras meniscais\n- ==McMurray==: flexão máxima, rotação da tíbia e extensão gradual; estalido doloroso na interlinha (rotação externa testa o medial; interna, o lateral).\n- ==Steinmann I==: dor na interlinha à **rotação forçada** da tíbia com o joelho fletido (externa = medial, interna = lateral).\n- **Steinmann II:** a dor à palpação da interlinha **migra para trás** com a flexão.\n- **Apley:** compressão e rotação em decúbito ventral.\n- **Thessaly:** apoio unipodal a 20° com rotações.\n- Palpação da interlinha: um dos achados mais úteis.\n\n### As outras manobras\n- **Godfrey:** sag posterior da tíbia com quadril e joelho a 90° (LCP).\n- **Clarke:** compressão da patela com contração do quadríceps (dor femoropatelar; muitos falsos positivos).\n\n> **Na prova:** meniscais = ==McMurray e Steinmann==; Godfrey = LCP; Clarke = femoropatelar.",
-  "correta": "**Steinmann e McMurray.**",
   "incorretas": {
-   "A": "**LCP e femoropatelar.**",
-   "B": "**Clarke é femoropatelar.**",
-   "C": "**Godfrey é LCP.**"
+   "A": "**Nenhum dos dois é teste meniscal principal.** Godfrey avalia queda tibial posterior no LCP; Clarke provoca dor femoropatelar.",
+   "B": "**Steinmann é meniscal, Clarke não.** O segundo teste investiga dor femoropatelar, com interpretação clínica cautelosa.",
+   "C": "**McMurray é meniscal, Godfrey não.** Godfrey mostra o afundamento posterior da tíbia na lesão do LCP."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Dois testes para o menisco.** McMurray combina flexão, rotação da tíbia e extensão progressiva enquanto o examinador observa dor ou ressalto na interlinha. No Steinmann I, a rotação tibial com o joelho fletido provoca dor na interlinha correspondente; no Steinmann II, o ponto de dor à palpação migra posteriormente com a flexão. Nenhum teste isolado confirma ou exclui ruptura, então mecanismo, derrame, sintomas mecânicos e exame conjunto importam.\n\n**O sentido da rotação.** Na descrição clássica, rotação externa da tíbia tensiona o menisco medial, enquanto rotação interna explora o lateral. Apley e Thessaly são outras manobras meniscais. A escolha de uma delas depende da tolerância do paciente, especialmente em lesão aguda dolorosa.\n\n**Dois distratores de outros diagnósticos.** Godfrey observa a queda posterior da tíbia com quadril e joelho fletidos a 90 graus, um sinal de insuficiência do LCP. Clarke comprime a patela durante a contração do quadríceps para provocar dor femoropatelar, mas tem baixa especificidade e pode ser positivo sem doença patelar relevante.",
+  "correta": "**Steinmann e McMurray.** Ambos exploram sintomas na interlinha durante movimentos que solicitam os meniscos.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "joelho-0025": {
