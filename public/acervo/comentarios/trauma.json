@@ -9148,87 +9148,88 @@
   "conferido": false
  },
  "trauma-1059": {
-  "conceito": "Na instabilidade patelar do adulto sem displasia troclear associada, a osteotomia de realinhamento distal (medialização da tuberosidade tibial) é indicada quando o índice tomográfico TA-GT (distância entre a tuberosidade anterior da tíbia e o sulco troclear) atinge um valor igual ou superior a 20 mm, considerado o limiar a partir do qual o desalinhamento do mecanismo extensor é significativo o suficiente para justificar a correção cirúrgica óssea.",
-  "correta": "C. A indicação de osteotomia de realinhamento distal nesse contexto ocorre com TA-GT igual ou superior a 20 mm.",
   "incorretas": {
-   "A": "O valor de 10 mm está dentro da faixa considerada normal ou próxima da normalidade, não justificando por si só a indicação cirúrgica.",
-   "B": "O valor de 15 mm ainda é considerado um valor limítrofe, inferior ao limiar de 20 mm usado como indicação de osteotomia nesse contexto.",
-   "D": "O valor de 25 mm excede o limiar mínimo estabelecido de 20 mm; embora também indicasse cirurgia, não corresponde ao valor mínimo citado na literatura como ponto de corte."
+   "A": "**10 mm é baixo para indicar osteotomia por TA-GT.** A medida próxima desse valor, isoladamente, não caracteriza a lateralização importante cobrada na questão.",
+   "B": "**15 mm é uma zona de atenção.** Pode ganhar relevância com outros fatores anatômicos, mas fica abaixo do corte clássico de 20 mm usado aqui.",
+   "D": "**25 mm também é anormal.** O erro é tratá-lo como limiar inicial: a banca pede o valor a partir do qual se considera o realinhamento."
   },
+  "conceito": "**O que mede o TA-GT.** Na tomografia, a distância entre a tuberosidade anterior da tíbia e o sulco troclear estima a lateralização do vetor do mecanismo extensor. Quanto maior a distância, maior a tendência de tração lateral da patela. Na instabilidade recorrente do adulto, o valor de 20 mm é o limiar clássico usado pela banca para considerar a medialização da tuberosidade.\n\n**Um número não opera sozinho.** A decisão real também depende de altura patelar, lesão do ligamento patelofemoral medial, alinhamento, torsões, cartilagem e displasia troclear. A medida muda com o método de imagem e a posição do joelho. A questão especifica ausência de displasia e pede o ponto de corte tomográfico, por isso 20 mm é a melhor resposta; 25 mm já ultrapassa esse limite, mas não é o valor mínimo.",
+  "correta": "**C: 20 mm.** Esse é o corte tomográfico clássico para considerar osteotomia de medialização da tuberosidade na instabilidade patelar descrita.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 47"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "trauma-1060": {
-  "conceito": "Os ligamentos meniscofemorais (ligamentos de Wrisberg e Humphry) conectam o côndilo femoral medial ao corno posterior do menisco lateral, correndo próximos à origem femoral do ligamento cruzado posterior. Atuam como restritores secundários da translação posterior da tíbia, complementando a função do LCP, especialmente quando este está insuficiente.",
-  "correta": "C. Os ligamentos meniscofemorais são restritores secundários da translação posterior da tíbia e se inserem no corno posterior do menisco lateral.",
   "incorretas": {
-   "A": "Os ligamentos meniscofemorais não restringem a translação anterior da tíbia; essa função é atribuída principalmente ao ligamento cruzado anterior.",
-   "B": "Além do erro quanto à direção da translação restringida, esses ligamentos se inserem no menisco lateral, não no menisco medial.",
-   "D": "Os ligamentos meniscofemorais se inserem no corno posterior do menisco lateral, não do menisco medial."
+   "A": "**Acerta o menisco, troca a direção.** A translação anterior é contida principalmente pelo LCA; a contribuição tradicionalmente atribuída aos meniscofemorais é posterior.",
+   "B": "**Erra direção e inserção.** O menisco medial tem outras estruturas de fixação; Humphry e Wrisberg partem do corno posterior do menisco lateral.",
+   "D": "**Acerta a direção cobrada, erra o menisco.** A inserção meniscal é lateral, mesmo que a fixação femoral se situe no côndilo medial."
   },
+  "alerta": "O gabarito C corresponde ao ensino anatômico tradicional. Contudo, a contribuição dos ligamentos meniscofemorais para conter a translação posterior da tíbia é discutida: um estudo biomecânico mais recente não encontrou restrição significativa sob as condições testadas. A inserção no menisco lateral é inequívoca; a função deve ser apresentada como contribuição proposta, não como efeito universal comprovado.",
+  "conceito": "**Do menisco ao fêmur.** Os ligamentos meniscofemorais unem o corno posterior do menisco lateral à face lateral do côndilo femoral medial e acompanham o LCP. O de Humphry passa pela frente do LCP; o de Wrisberg, por trás. Essa relação anatômica ajuda a reconhecê-los na ressonância e evita confundi-los com fragmentos meniscais deslocados.\n\n**A função cobrada e seu limite.** Tradicionalmente, eles são descritos como restritores secundários da translação posterior da tíbia, em cooperação com o LCP. Estudos biomecânicos, porém, não são concordantes quanto ao tamanho dessa contribuição. A conexão com o corno posterior do menisco lateral também participa da estabilidade dessa raiz e da distribuição de carga. Para resolver as alternativas, combine a direção **posterior** da translação ensinada pela banca com a inserção no menisco **lateral**.",
+  "correta": "**C: translação posterior e menisco lateral.** É a associação anatômica e funcional tradicional usada no gabarito, com a ressalva sobre a força desse efeito nos estudos experimentais.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "trauma-1062": {
-  "conceito": "Durante a marcha normal, a força resultante através da articulação do joelho chega a cerca de 2,5 a 3 vezes o peso corporal, distribuída de forma desigual entre os compartimentos, o compartimento medial suporta a maior parte dessa carga por estar mais próximo do eixo mecânico do membro.",
-  "correta": "B. A superfície articular do joelho suporta de 2,5 a 3 vezes o peso corporal, com maior carga no compartimento medial.",
   "incorretas": {
-   "A": "A magnitude está correta, mas o compartimento que recebe a maior carga na marcha normal é o medial, não o lateral.",
-   "C": "Esses valores mais altos são compatíveis com atividades de maior impacto (como subir escadas ou agachar), não com a marcha normal.",
-   "D": "O compartimento de maior carga está correto (medial), mas associado a uma magnitude de força mais alta do que a esperada na marcha normal."
+   "A": "**A magnitude é a da questão, o lado não.** O compartimento lateral pode ser sobrecarregado em joelho valgo, mas na marcha habitual a distribuição tende a favorecer o medial.",
+   "C": "**Muda os dois elementos.** Cargas de maior magnitude podem ocorrer conforme a atividade; lateral não é o compartimento predominante no cenário habitual da pergunta.",
+   "D": "**Acerta o compartimento, exagera a estimativa pedida.** A faixa de 4,5 a 6 vezes não é o valor didático de referência para a marcha apresentado nesta questão."
   },
+  "conceito": "**Força articular não é peso estático.** Durante a marcha, a reação do solo, a ação muscular e a geometria do membro somam forças sobre o joelho. A estimativa didática da questão é de pico de cerca de 2,5 a 3 vezes o peso corporal. O número real varia com velocidade, técnica de medida e momento da passada; não deve ser tomado como constante em toda atividade.\n\n**Por que o medial recebe mais.** Na marcha habitual, o momento externo de adução favorece a transferência de carga para o compartimento medial, que costuma suportar parcela maior da força tibiofemoral. Isso ajuda a entender a associação frequente entre varo, sobrecarga medial e artrose desse compartimento. Escadas, corrida e agachamento têm demandas diferentes da marcha usada como referência implícita pela banca.",
+  "correta": "**B: 2,5 a 3 vezes o peso corporal, predominantemente no medial.** É a combinação didática esperada para a carga tibiofemoral durante a marcha.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 9.3"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "trauma-1063": {
-  "conceito": "A fixação intramedular da clavícula depende de um canal relativamente reto e de um fragmento único com boa fixação rotacional; traços muito longos, segmentares ou multifragmentares perdem estabilidade rotacional com um implante intramedular isolado, sendo mais bem tratados com placa.",
-  "correta": "D. A haste intramedular é mais indicada nas fraturas com traço transverso ou oblíquo curto, que mantêm melhor controle rotacional com esse tipo de fixação.",
   "incorretas": {
-   "A": "Fraturas segmentares têm múltiplos focos de instabilidade, sendo mais bem controladas com placa.",
-   "B": "Fraturas multifragmentares perdem apoio cortical suficiente para o controle rotacional necessário com haste intramedular isolada.",
-   "C": "O traço oblíquo longo tende a rotar e encurtar sobre uma haste intramedular, sendo mais estável com fixação por placa."
+   "A": "**Fratura segmentar tem dois focos.** Controlar simultaneamente comprimento e rotação costuma favorecer fixação com placa.",
+   "B": "**A cominuição reduz o apoio cortical.** Quando não há contato suficiente entre fragmentos principais, a haste isolada controla pior o encurtamento.",
+   "C": "**O oblíquo longo pode deslizar.** A placa permite compressão e controle rotacional mais previsíveis nesse desenho de fratura."
   },
+  "conceito": "**O que a haste controla bem.** A fixação intramedular da diáfise clavicular funciona melhor quando há dois fragmentos principais, comprimento restabelecido e contato cortical suficiente para limitar rotação e encurtamento. Por isso, o traço transverso ou oblíquo curto é a indicação morfológica mais favorável entre as alternativas. A escolha do implante também considera desvio, canal medular e experiência cirúrgica.\n\n**Quando a placa oferece vantagem.** Um traço oblíquo longo tende a deslizar; fraturas segmentares e multifragmentares têm menor apoio para resistir ao encurtamento. Nesses padrões, a placa permite controlar melhor comprimento, rotação e fragmentos. Isso não significa que a haste seja impossível em qualquer fratura com fragmento adicional, e sim que ela deixa de ser a opção mais bem indicada na comparação proposta.",
+  "correta": "**D: traço transverso ou oblíquo curto.** O contato entre os fragmentos favorece a estabilidade necessária à fixação intramedular.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 33"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "trauma-1065": {
-  "conceito": "Na infecção aguda pós-artroplastia (precoce no pós-operatório ou hematogênica aguda), com implantes bem fixados, prioriza-se preservar os componentes: realiza-se limpeza cirúrgica extensa com troca do polietileno, o que permite melhor acesso às superfícies posteriores e reduz o biofilme, associada a antibioticoterapia prolongada.",
-  "correta": "B. A limpeza articular com troca do polietileno é o tratamento indicado na infecção aguda, permitindo desbridamento mais completo e preservando os componentes bem fixados.",
   "incorretas": {
-   "A": "A limpeza sem troca do polietileno dificulta o acesso às superfícies posteriores dos componentes e reduz a eficácia do desbridamento do biofilme.",
-   "C": "A revisão em um tempo é mais reservada para casos crônicos selecionados, com germe conhecido e sensível, não para a infecção aguda.",
-   "D": "A revisão em dois tempos é reservada para infecções crônicas ou falha do desbridamento com retenção do implante, não como primeira opção na infecção aguda."
+   "A": "**Limpeza isolada é incompleta.** Sem retirar o polietileno, superfícies de difícil acesso ficam menos bem desbridadas e o componente modular potencialmente colonizado permanece.",
+   "C": "**Revisão em um tempo pertence a outra seleção de casos.** Pode ser considerada quando a retenção não é apropriada, mas não é a resposta inicial esperada para infecção aguda com prótese estável.",
+   "D": "**Revisão em dois tempos é mais extensa.** Ganha espaço na infecção crônica, diante de componentes soltos ou após falha de estratégias de retenção."
   },
+  "conceito": "**Infecção aguda com prótese estável.** Se os sintomas começaram há pouco tempo, os componentes estão firmes e há condições de fazer desbridamento amplo, considera-se preservar os implantes fixos. O procedimento reúne abertura da articulação, coleta de amostras, remoção de tecido infectado, irrigação, troca do componente modular de polietileno e antibióticos direcionados. É a estratégia conhecida como desbridamento com retenção do implante.\n\n**Por que trocar o polietileno.** Sua retirada expõe áreas antes inacessíveis, melhora a limpeza das superfícies posteriores e remove um componente potencialmente colonizado por biofilme. Limpeza simples sem essa troca é menos completa. Se a prótese estiver solta, houver fístula ou a infecção for crônica, a indicação muda e pode exigir revisão. Assim, a palavra **aguda** na pergunta pressupõe também avaliação da estabilidade e do tempo de sintomas.",
+  "correta": "**B: limpeza com troca do polietileno.** Em infecção aguda selecionada, faz-se desbridamento amplo, troca do componente modular e tratamento antimicrobiano, preservando os componentes bem fixados.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 7"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "trauma-1066": {
-  "conceito": "A confecção segura do portal posteromedial no joelho depende da distensão hídrica da articulação, que desloca as estruturas neurovasculares posteriores para longe da cápsula e aumenta o espaço de trabalho, reduzindo o risco de lesão iatrogênica.",
-  "correta": "C. A distensão hídrica do joelho é necessária para afastar as estruturas neurovasculares posteriores e ampliar o espaço de trabalho ao confeccionar o portal posteromedial.",
   "incorretas": {
-   "A": "A rotação interna do joelho não é o elemento chave para a segurança desse portal.",
-   "B": "O uso ou não do garrote não é o fator determinante para a segurança do portal posteromedial.",
-   "D": "A extensão máxima do joelho reduz o espaço posterior; a posição recomendada é a flexão, não a extensão."
+   "A": "**Rotação interna pode ajustar a posição, mas não cria espaço.** O passo solicitado para estabelecer o portal com segurança é a distensão da articulação.",
+   "B": "**O garrote tem outra finalidade.** Usá-lo ou não depende da cirurgia e do controle de sangramento; sua ausência não substitui a distensão hídrica.",
+   "D": "**Extensão máxima é a posição oposta à usual.** O acesso posteromedial é feito com o joelho fletido, mantendo a trajetória do instrumental sob visão."
   },
+  "conceito": "**Criar o portal com visão e espaço.** O portal posteromedial é estabelecido com o joelho fletido e a articulação distendida por líquido. A distensão facilita visualizar a cápsula e controlar a entrada da agulha no compartimento posterior. A localização deve respeitar os marcos anatômicos e os ramos do nervo safeno, com transiluminação e visão direta quando disponíveis. Esses cuidados, juntos, reduzem a chance de lesão iatrogênica.\n\n**O que a pergunta diferencia.** Estado do garrote e rotação do membro não substituem a distensão hídrica. A extensão máxima reduz o acesso ao compartimento posterior; a flexão próxima de 90 graus é a posição usual para confeccionar esse portal.",
+  "correta": "**C: distensão hídrica do joelho.** É a medida entre as opções que amplia o espaço articular e permite introduzir o portal sob visualização controlada.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 51"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "trauma-1067": {
