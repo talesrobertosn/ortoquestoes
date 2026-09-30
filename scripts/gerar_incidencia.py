@@ -45,12 +45,12 @@ def principal() -> int:
         if not questoes:
             continue
         por_assunto = Counter(s for q in questoes for s in dict.fromkeys(q.get("subtemas") or []))
-        # Os assuntos "Outros temas de..." ficam no fim, sem disputar o ranking.
+        # Os assuntos de resto ("Outros temas de...", "Outras...") ficam no fim, sem disputar o ranking.
         ordenados = sorted(
             (s for s in tema["subtemas"] if por_assunto[s]),
-            key=lambda s: (s.startswith("Outros"), -por_assunto[s], s),
+            key=lambda s: (s.startswith("Outr"), -por_assunto[s], s),
         )
-        reais = [s for s in ordenados if not s.startswith("Outros")]
+        reais = [s for s in ordenados if not s.startswith("Outr")]
         focos = [
             {"nome": s, "nivel": nivel_por_posicao(reais.index(s), len(reais)) if s in reais else 1, "n": por_assunto[s]}
             for s in ordenados
@@ -65,7 +65,7 @@ def principal() -> int:
         area["pct"] = round(100 * area["n"] / total, 1)
 
     campeoes = sorted(
-        ({"area": a["id"], "nome": f["nome"], "n": f["n"]} for a in areas for f in a["focos"] if not f["nome"].startswith("Outros")),
+        ({"area": a["id"], "nome": f["nome"], "n": f["n"]} for a in areas for f in a["focos"] if not f["nome"].startswith("Outr")),
         key=lambda t: -t["n"],
     )[:TOP]
 
