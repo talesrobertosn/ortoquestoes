@@ -1,11 +1,11 @@
-import type { SupabaseClient } from '@supabase/supabase-js'
+import type { ClienteSupabase } from './supabase'
 import { EVENTO_DADOS, gravar, ler, limparTudo, usuarioLocal, type MudancaDados } from '../estado/armazenamento'
 import { deItens, ehTipoSync, estadoVazio, identificador, itens, receberDocumento, registrarAlteracoes, resolverConflito, TIPOS_SYNC, type Alteracao, type Documento, type EstadoSync, type TipoSync } from './modeloSync'
 import { gerarId } from '../util/id'
 
 export interface StatusSync { estado: 'sincronizando' | 'salvo' | 'offline' | 'erro' | 'conflito'; pendentes: number; conflitos: Documento[]; pronto: boolean; detalhe?: string; rejeitados: { id: string; tipo: TipoSync; item: string; erro: string; em: number }[] }
 /** Somente uma fila por conta/aba. Operações são idempotentes e conflitos nunca sobrescrevem dados silenciosamente. */
-export function iniciarSincronizacao(cliente: SupabaseClient, idUsuario: string, notificar: (s: StatusSync) => void) {
+export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string, notificar: (s: StatusSync) => void) {
   let estado = ler<EstadoSync>('sincronia:v1', estadoVazio())
   let ativo = true, executando = false, pronto = false
   const conhecidos = new Set<string>()

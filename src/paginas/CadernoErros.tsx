@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
-import { carregarComentarios } from '../dados/comentarios'
+import { carregarComentario } from '../dados/comentarios'
 import { FILTROS_VAZIOS, type ComentarioIA, type Indice, type Letra, type Questao } from '../dados/tipos'
 import { Icone } from '../componentes/Icone'
 import { TextoEditorial } from '../componentes/TextoEditorial'
@@ -227,7 +227,7 @@ function ItemErro({ erro, questao, indice, nota }: { erro: Erro; questao?: Quest
   useEffect(() => {
     if (!aberto || comentario !== undefined || !temaInfo) return
     let vivo = true
-    carregarComentarios(temaInfo.slug).then((arquivo) => vivo && definirComentario(arquivo[erro.id] ?? null))
+    carregarComentario(temaInfo.slug, erro.id).then((achado) => vivo && definirComentario(achado))
     return () => { vivo = false }
   }, [aberto, comentario, temaInfo, erro.id])
 

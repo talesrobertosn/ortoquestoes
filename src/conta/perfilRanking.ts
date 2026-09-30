@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import type { Session } from '@supabase/supabase-js'
+import type { Session } from '@supabase/auth-js'
 import { supabase } from './supabase'
 import { nomeNoRanking } from '../util/nomeRanking'
 

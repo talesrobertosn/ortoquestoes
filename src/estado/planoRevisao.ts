@@ -108,4 +108,5 @@ export function planoRevisao(indice: Indice, registros: Registros, dias = JANELA
   }
   return porDia
 }
-export function rotuloDia(data: number) { return new Intl.DateTimeFormat('pt-BR', { weekday: 'short', day: 'numeric', month: 'short' }).format(data) }
+const FORMATO_ROTULO = new Intl.DateTimeFormat('pt-BR', { weekday: 'short', day: 'numeric', month: 'short' })
+export function rotuloDia(data: number) { return FORMATO_ROTULO.format(data) }

@@ -799,3 +799,15 @@ li:nth-child(-n + 3) > .ti-area .ti-area__posicao { color: #c2412f; }
 
 .mn__rodape { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin-top: 0; padding: 1rem 0.7rem 0; border-top: var(--borda); font-size: 0.8rem; }
 .mn__rodape a { color: var(--texto-2); }
+
+/* ---- Sessão: deslizar para trocar de questão ------------------------------ */
+.dica-deslizar {
+  position: fixed; z-index: 45; left: 50%; bottom: calc(4.9rem + env(safe-area-inset-bottom)); transform: translateX(-50%);
+  display: inline-flex; align-items: center; gap: 0.4rem; margin: 0; padding: 0.55rem 0.95rem; border-radius: 999px;
+  background: color-mix(in srgb, var(--texto) 88%, transparent); color: var(--superficie); backdrop-filter: blur(6px);
+  font-size: 0.82rem; font-weight: 600; white-space: nowrap; pointer-events: none; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  animation: dica-deslizar 4.6s ease-in-out both;
+}
+@keyframes dica-deslizar { 0% { opacity: 0; transform: translate(-50%, 8px); } 8%, 88% { opacity: 1; transform: translate(-50%, 0); } 100% { opacity: 0; transform: translate(-50%, 4px); } }
+@media (min-width: 40.01rem) { .dica-deslizar { bottom: 1.5rem; } }
+@media (prefers-reduced-motion: reduce) { .dica-deslizar { animation: none; } }

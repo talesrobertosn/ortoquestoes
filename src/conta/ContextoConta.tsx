@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
-import type { Session } from '@supabase/supabase-js'
+import type { Session } from '@supabase/auth-js'
 import { definirUsuarioLocal, gravar, limparTudo } from '../estado/armazenamento'
 import { supabase, contasDisponiveis } from './supabase'
 import { iniciarSincronizacao, type StatusSync } from './sincronizacao'

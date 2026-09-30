@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { Indice } from '../dados/tipos'
-import { carregarComentarios } from '../dados/comentarios'
+import { carregarComentario } from '../dados/comentarios'
 import { usarQuestaoDoDia } from '../estado/questaoDoDia'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
@@ -37,7 +37,7 @@ export function CartaoQuestaoDoDia({ indice }: { indice: Indice }) {
       if (modo === 'unica') blobs = [await gerarImagemCompletaQuestao(questao, dataTexto)]
       else {
         const tema = indice.temas.find((t) => t.nome === questao.tema)
-        const conceito = tema ? (await carregarComentarios(tema.slug))[questao.id]?.conceito ?? null : null
+        const conceito = tema ? (await carregarComentario(tema.slug, questao.id))?.conceito ?? null : null
         blobs = await gerarImagensQuestaoDoDia(questao, conceito, dataTexto)
       }
       const arquivos = blobs.map((b, i) => new File([b], `questao-do-dia-${questao.id}${blobs.length > 1 ? `-${i + 1}` : ''}.png`, { type: 'image/png' }))

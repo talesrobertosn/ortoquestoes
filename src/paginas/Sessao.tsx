@@ -1,4 +1,6 @@
-import { useCallback, useEffect, useMemo, useRef, useState, type TouchEvent } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { usarDeslizar } from '../util/usarDeslizar'
+import { preCarregarComentario } from '../dados/comentarios'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
 import type { Questao } from '../dados/tipos'
@@ -17,6 +19,7 @@ import { usarAssinante } from '../conta/plano'
 import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 import { href, navegar } from '../util/rotas'
 import { gerarId } from '../util/id'
+import { gravar, ler } from '../estado/armazenamento'
 
 export function Sessao() {
   const { indice } = usarIndice()
@@ -28,7 +31,8 @@ export function Sessao() {
   const [atalhosAbertos, definirAtalhosAbertos] = useState(false)
   const [portaoContaAberto, definirPortaoContaAberto] = useState(false)
   const [erro, definirErro] = useState<string | null>(null)
-  const inicioToque = useRef<number | null>(null)
+  const areaGestos = useRef<HTMLDivElement>(null)
+  const palco = useRef<HTMLDivElement>(null)
   const { estado: estadoLimite, autorizar } = usarLimiteDiario()
   const [limiteAberto, definirLimiteAberto] = useState(false)
   // Depois da 20ª, fechar o convite leva ao resumo da sessão.
@@ -118,6 +122,41 @@ export function Sessao() {
     window.scrollTo({ top: 0, behavior: 'auto' })
   }, [posicao])
 
+  // O comentário desta questão e o da próxima descem enquanto a pessoa lê:
+  // ao responder, a explicação aparece na hora, mesmo com a rede fraca.
+  useEffect(() => {
+    if (!sessao || sessao.simulado || !questoes) return
+    preCarregarComentario(indice, questaoAtual)
+    const proxima = questoes.find((q) => q.id === sessao.ids[posicao + 1]) ?? null
+    const espera = window.setTimeout(() => preCarregarComentario(indice, proxima), 1500)
+    return () => window.clearTimeout(espera)
+  }, [indice, questoes, questaoAtual, sessao, posicao])
+
+  // Deslizar troca de questão. Na última, o cartão só resiste: encerrar a
+  // sessão continua sendo um toque de propósito, nunca um gesto sem querer.
+  const espiar = usarDeslizar({
+    area: areaGestos, palco, pronto: !!(sessao && questoes), ativo: !painelAberto,
+    podeAvancar: !!sessao && posicao + 1 < sessao.ids.length, podeVoltar: posicao > 0,
+    aoAvancar: irAdiante, aoVoltar: () => irPara(posicao - 1),
+  })
+  // Na primeira sessão pelo celular, uma vez só: o cartão espia para o lado
+  // e uma frase curta avisa do gesto. Some sozinha em poucos segundos.
+  const [dicaDeslizar, definirDicaDeslizar] = useState(false)
+  const espiarAtual = useRef(espiar)
+  espiarAtual.current = espiar
+  const temporizadoresDica = useRef<number[]>([])
+  useEffect(() => () => temporizadoresDica.current.forEach((t) => window.clearTimeout(t)), [])
+  const temVarias = !!sessao && sessao.ids.length > 1
+  useEffect(() => {
+    if (temporizadoresDica.current.length || !questoes || !temVarias || painelAberto) return
+    if (!window.matchMedia('(pointer: coarse)').matches || ler('dica:deslizar', false)) return
+    temporizadoresDica.current = [
+      window.setTimeout(() => { gravar('dica:deslizar', true); definirDicaDeslizar(true); espiarAtual.current() }, 1400),
+      window.setTimeout(() => definirDicaDeslizar(false), 6000),
+    ]
+  }, [questoes, temVarias, painelAberto])
+  useEffect(() => { if (posicao > 0) definirDicaDeslizar(false) }, [posicao])
+
   // Tempo esgotado encerra o simulado sozinho e leva ao resumo.
   useEffect(() => {
     if (restante === null || restante > 0) return
@@ -177,17 +216,9 @@ export function Sessao() {
     finalizar()
     navegar('/resumo')
   }
-  function iniciarGesto(evento: TouchEvent) { inicioToque.current = evento.changedTouches[0]?.clientX ?? null }
-  function concluirGesto(evento: TouchEvent) {
-    const inicio = inicioToque.current; const fim = evento.changedTouches[0]?.clientX
-    inicioToque.current = null
-    if (inicio === null || fim === undefined || Math.abs(fim - inicio) < 70 || painelAberto) return
-    if (fim < inicio) avancar()
-    else irPara(posicao - 1)
-  }
-
   return (
-    <div className="sessao-gestos" onTouchStart={iniciarGesto} onTouchEnd={concluirGesto}>
+    <div className="sessao-gestos" ref={areaGestos}>
+      {dicaDeslizar && <p className="dica-deslizar nao-imprime" role="status"><Icone nome="esquerda" tamanho={15} /> Deslize para trocar de questão <Icone nome="direita" tamanho={15} /></p>}
       <button
         type="button"
         className="seta-lateral seta-lateral--esquerda nao-imprime"
@@ -263,6 +294,7 @@ export function Sessao() {
           <button type="button" className="aviso-saldo__fechar" aria-label="Fechar aviso" onClick={() => definirAvisoSaldoFechado(true)}><Icone nome="fechar" tamanho={14} /></button>
         </p>
       )}
+      <div className="sessao-palco" ref={palco}>
       {questaoAtual ? (
         <><AvisoLimite estado={estadoLimite} /><CartaoQuestao
           questao={questaoAtual}
@@ -302,6 +334,7 @@ export function Sessao() {
           <p>Ela foi removida ou renomeada em uma atualização. Siga para a próxima.</p>
         </Estado>
       )}
+      </div>
 
       <nav className="nav-sessao nao-imprime" aria-label="Navegação da sessão">
         <button

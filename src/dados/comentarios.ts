@@ -39,6 +39,33 @@ export function carregarComentarios(slug: string): Promise<Arquivo> {
   return existente
 }
 
+const avulsos = new Map<string, Promise<ComentarioIA | null>>()
+
+/**
+ * O comentário de uma questão só. Busca acervo/c/<id>.json (1 a 3 KB) em vez
+ * do arquivo do tema inteiro; se o tema já veio, ou o arquivo avulso faltar,
+ * usa o do tema.
+ */
+export function carregarComentario(slug: string, id: string): Promise<ComentarioIA | null> {
+  const doTema = carregados.get(slug)
+  if (doTema) return doTema.then((arquivo) => arquivo[id] ?? null)
+  let existente = avulsos.get(id)
+  if (!existente) {
+    existente = fetch(recurso(`acervo/c/${encodeURIComponent(id)}.json`), { cache: 'no-cache' })
+      .then((r) => (r.ok ? (r.json() as Promise<ComentarioIA>) : Promise.reject(new Error(String(r.status)))))
+      .catch(() => carregarComentarios(slug).then((arquivo) => arquivo[id] ?? null))
+    avulsos.set(id, existente)
+  }
+  return existente
+}
+
+/** Adianta o comentário de uma questão que está na tela: ao responder, ele já chegou. */
+export function preCarregarComentario(indice: Indice | null, questao: Questao | null) {
+  if (!indice || !questao || questao.comentarioIA || !temComentario(indice, questao.id)) return
+  const slug = slugDoTema(indice, questao)
+  if (slug) void carregarComentario(slug, questao.id)
+}
+
 /** Slug do tema de uma questão, para achar o arquivo de comentários. */
 export function slugDoTema(indice: Indice | null, questao: Questao): string | null {
   return indice?.temas.find((t) => t.nome === questao.tema)?.slug ?? null
@@ -66,8 +93,8 @@ function temComentario(indice: Indice | null, id: string): boolean {
 }
 
 /**
- * Comentário de IA de uma questão. Busca o arquivo do tema na primeira vez que
- * alguém revela um gabarito daquele tema e reaproveita dali em diante.
+ * Comentário de IA de uma questão. Busca só o comentário daquela questão na
+ * primeira vez que alguém revela o gabarito e reaproveita dali em diante.
  */
 export function usarComentarioIA(questao: Questao, indice: Indice | null, ativo: boolean) {
   const [comentario, definir] = useState<ComentarioIA | null>(null)
@@ -88,9 +115,9 @@ export function usarComentarioIA(questao: Questao, indice: Indice | null, ativo:
     if (!temComentario(indice, questao.id)) return
     let vivo = true
     definirCarregando(true)
-    carregarComentarios(slug).then((arquivo) => {
+    carregarComentario(slug, questao.id).then((achado) => {
       if (!vivo) return
-      definir(arquivo[questao.id] ?? null)
+      definir(achado)
       definirCarregando(false)
     })
     return () => {

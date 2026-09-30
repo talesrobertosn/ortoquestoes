@@ -38,15 +38,23 @@ function registrarBloqueioDiario(liberaEm: string): void {
   }
 }
 
-export function chaveDia(data = new Date()): string {
-  return new Intl.DateTimeFormat('en-CA', { timeZone: FUSO_DIA, year: 'numeric', month: '2-digit', day: '2-digit' }).format(data)
+// Criar um Intl.DateTimeFormat custa caro (dezenas de microssegundos, mais no
+// celular) e chaveDia roda uma vez por resposta do histórico: um formato só,
+// criado na primeira vez, deixa a página inicial bem mais leve.
+let formatoDia: Intl.DateTimeFormat | null = null
+let formatoHora: Intl.DateTimeFormat | null = null
+
+export function chaveDia(data: Date | number = new Date()): string {
+  formatoDia ??= new Intl.DateTimeFormat('en-CA', { timeZone: FUSO_DIA, year: 'numeric', month: '2-digit', day: '2-digit' })
+  return formatoDia.format(data)
 }
 export function inicioDia(data = new Date()): Date {
   const [ano, mes, dia] = chaveDia(data).split('-').map(Number)
   const meiaNoiteUtc = Date.UTC(ano, mes - 1, dia)
   // Calcula o deslocamento real do fuso nessa data, sem cristalizar “UTC-3”.
   const referencia = new Date(Date.UTC(ano, mes - 1, dia, 12))
-  const partes = new Intl.DateTimeFormat('en-US', { timeZone: FUSO_DIA, year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit', hourCycle:'h23' }).formatToParts(referencia)
+  formatoHora ??= new Intl.DateTimeFormat('en-US', { timeZone: FUSO_DIA, year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit', hourCycle:'h23' })
+  const partes = formatoHora.formatToParts(referencia)
   const valor = (tipo: string) => Number(partes.find((p) => p.type === tipo)?.value)
   const comoUtc = Date.UTC(valor('year'), valor('month') - 1, valor('day'), valor('hour'), valor('minute'), valor('second'))
   const deslocamento = comoUtc - referencia.getTime()

@@ -70,18 +70,48 @@ export function carregarTema(slug: string): Promise<Questao[]> {
   return existente
 }
 
-/** Carrega as questões de uma lista de ids, baixando só os temas envolvidos. */
+/**
+ * Até este tanto de questões de um mesmo tema, vale mais buscar uma a uma
+ * (acervo/q/<id>.json, cerca de 1 KB cada) do que o tema inteiro (30 a 100 KB
+ * compactados). Acima disso, o arquivo do tema sai mais barato.
+ */
+const MAXIMO_AVULSAS_POR_TEMA = 30
+const avulsas = new Map<string, Promise<Questao | null>>()
+
+function carregarAvulsa(id: string): Promise<Questao | null> {
+  let existente = avulsas.get(id)
+  if (!existente) {
+    existente = fetch(recurso(`acervo/q/${encodeURIComponent(id)}.json`), { cache: 'no-cache' })
+      .then((r) => (r.ok ? (r.json() as Promise<Questao>) : null))
+      .catch(() => null)
+    avulsas.set(id, existente)
+    // Falhou (arquivo ainda não publicado, rede caiu): a próxima tentativa busca de novo.
+    existente.then((q) => { if (!q) avulsas.delete(id) })
+  }
+  return existente
+}
+
+async function questoesDoTema(slug: string, ids: string[]): Promise<Questao[]> {
+  if (temasCarregados.has(slug) || ids.length > MAXIMO_AVULSAS_POR_TEMA) return carregarTema(slug)
+  const lista = await Promise.all(ids.map(carregarAvulsa))
+  // Se alguma não veio, o arquivo do tema resolve de uma vez.
+  return lista.every((q) => q) ? (lista as Questao[]) : carregarTema(slug)
+}
+
+/** Carrega as questões de uma lista de ids, baixando só o necessário de cada tema. */
 export async function carregarQuestoes(indice: Indice, ids: string[]): Promise<Questao[]> {
   const temaPorId = new Map<string, number>()
   for (const item of indice.questoes) temaPorId.set(item.id, item.t)
 
-  const slugs = new Set<string>()
+  const porTema = new Map<string, string[]>()
   for (const id of ids) {
     const t = temaPorId.get(id)
-    if (t !== undefined && indice.temas[t]) slugs.add(indice.temas[t].slug)
+    if (t === undefined || !indice.temas[t]) continue
+    const slug = indice.temas[t].slug
+    porTema.set(slug, [...(porTema.get(slug) ?? []), id])
   }
 
-  const listas = await Promise.all([...slugs].map((slug) => carregarTema(slug)))
+  const listas = await Promise.all([...porTema].map(([slug, doTema]) => questoesDoTema(slug, doTema)))
   const porId = new Map<string, Questao>()
   for (const lista of listas) for (const q of lista) porId.set(q.id, q)
 

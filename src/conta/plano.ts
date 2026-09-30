@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import type { Session } from '@supabase/supabase-js'
+import type { Session } from '@supabase/auth-js'
 import { chamarRpc } from '../servicos/supabase'
 import { gravar } from '../estado/armazenamento'
 import { usarArmazenado } from '../estado/usarArmazenado'
