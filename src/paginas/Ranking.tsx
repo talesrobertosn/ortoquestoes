@@ -5,6 +5,7 @@ import { href } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { Medalha } from '../componentes/Medalha'
+import { SeloAssinante } from '../componentes/Premium'
 import { CONQUISTAS, CONQUISTAS_SEQUENCIA, conquistaAtual, proximaConquista, type Conquista } from '../estado/conquistas'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
@@ -232,7 +233,7 @@ export function Ranking() {
             <button key={p} type="button" role="tab" aria-selected={periodo === p} className="rk-aba" onClick={() => definirPeriodo(p)}>{ROTULOS_PERIODO[p]}</button>
           ))}
         </div>
-        <a className="rk-liga" href={href('/ligas')}><Icone nome="grupo" tamanho={16} /> Liga da residência <span className="pg-selo">Assinante</span></a>
+        <a className="rk-liga" href={href('/ligas')}><Icone nome="grupo" tamanho={16} /> Liga da residência <SeloAssinante /></a>
       </div>
 
       {linhas === null && !erro && <Carregando linhas={6} rotulo="Carregando ranking" />}

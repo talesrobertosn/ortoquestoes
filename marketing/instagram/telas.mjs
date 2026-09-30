@@ -26,7 +26,7 @@ const respondidas = {}
 let n = 0
 for (const [t, lista] of Object.entries(porTema)) {
   lista.slice(0, qtd[t] ?? 50).forEach((id, i) => {
-    const dia = hojeMs - ((n++ * 13) % 28) * DIA - 3600e3
+    const dia = hojeMs - (((n++ * 13) % 28) + 1) * DIA - 3600e3
     const certa = ((i * 37) % 100) / 100 < (taxa[t] ?? 0.7)
     respondidas[id] = { c: certa, q: dia, tentativas: 1, acertos: certa ? 1 : 0, erros: certa ? 0 : 1, sequencia: 1, proximaRevisao: certa ? hojeMs + ((i % 9) + 1) * DIA : hojeMs - (i % 3) * DIA, m: 'A', confianca: 'seguro', historico: [{ em: dia, correta: certa, confianca: 'seguro' }] }
   })
@@ -37,6 +37,9 @@ const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, deviceSc
 const p = await ctx.newPage()
 await p.route(/supabase\.co/, rota => {
   const u = rota.request().url()
+  // Assinante com cronograma montado, para as telas dos recursos pagos.
+  if (u.includes('obter_acesso_premium')) return rota.fulfill({ json: [{ premium: true, motivo: 'assinatura', recursos_exclusivos: true, pagamentos_ativos: true }] })
+  if (u.includes('obter_plano_estudo')) return rota.fulfill({ json: [{ data_prova: new Date(hojeMs + 87 * DIA).toISOString().slice(0, 10), intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: Object.keys(respondidas).length, criado_em: new Date(hojeMs).toISOString() }] })
   if (u.includes('obter_ranking_com_movimento')) return rota.fulfill({ json: linhas })
   if (u.includes('minha_posicao_ranking')) return rota.fulfill({ json: [{ posicao: 4, total: 325, total_geral: 1497 }] })
   if (u.includes('obter_estado_conta')) return rota.fulfill({ json: [{ respostas_total: Object.keys(respondidas).length, sequencia: 23, plano: 'anual', status_assinatura: 'ativa', fim_periodo: '2027-03-01T00:00:00Z', ultima_cobranca_em: null, cancelar_ao_fim: false }] })
@@ -56,7 +59,7 @@ await p.addInitScript(([s, id, r, h]) => {
 }, [JSON.stringify(sessao), uid, respondidas, historico])
 const rotas = process.argv.slice(2).length ? process.argv.slice(2) : ['', 'treinar', 'progresso', 'revisao', 'ranking', 'erros']
 for (const r of rotas) {
-  await p.goto(BASE + '#/' + r); await p.waitForTimeout(1800); await p.addStyleTag({ content: '.dp-heroi__sync{display:none!important}' }); await p.waitForTimeout(200)
+  await p.goto(BASE + '#/' + r); await p.waitForTimeout(1800); await p.addStyleTag({ content: '.dp-heroi__sync,.navegacao-mobile{display:none!important}' }); await p.waitForTimeout(200)
   const nome = (r || 'inicio').replace(/\//g, '_')
   await p.screenshot({ path: `${PASTA}t-${nome}.png`, fullPage: true })
   console.log(nome, await p.evaluate(() => document.documentElement.scrollHeight))

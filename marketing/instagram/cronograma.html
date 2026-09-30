@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Stories de venda do Cronograma. Visual claro, de agenda, diferente do feed.
+     Telas de telas/ (node marketing/instagram/telas.mjs cronograma ranking). -->
+<style>
+@font-face { font-family: Jakarta; src: url(fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --papel: #f7f2e7; --papel-2: #efe6d2; --tinta: #14201e; --tinta-2: #5c5a52; --verde: #0f4f49; --verde-2: #14655e; --ouro: #e0a72e; --ouro-2: #f6d27c; --vermelho: #c0452f; }
+* { box-sizing: border-box; margin: 0; }
+body { background: #444; font-family: Inter, sans-serif; color: var(--tinta); }
+.story { width: 1080px; height: 1920px; position: relative; overflow: hidden; margin-bottom: 40px; background: var(--papel); }
+/* grade de caderno e margem vermelha de agenda */
+.story::before { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background-image: linear-gradient(rgba(20,32,30,.055) 2px, transparent 2px), linear-gradient(90deg, rgba(20,32,30,.055) 2px, transparent 2px);
+  background-size: 60px 60px; }
+.story::after { content: ''; position: absolute; top: 0; bottom: 0; left: 64px; width: 3px; background: rgba(192,69,47,.35); }
+.topo { position: absolute; top: 200px; left: 110px; right: 90px; display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 14px; font-family: Jakarta; font-size: 36px; color: var(--tinta); }
+.marca svg { width: 46px; height: 46px; } .marca b { font-weight: 800; }
+.etiqueta { font-family: Jakarta; font-weight: 800; font-size: 24px; letter-spacing: .14em; text-transform: uppercase; color: var(--vermelho); }
+.conteudo { position: absolute; left: 110px; right: 90px; top: 330px; }
+h1 { font-family: Jakarta; font-weight: 800; font-size: 104px; line-height: .98; letter-spacing: -.035em; text-wrap: balance; }
+h1 .marcador { background: linear-gradient(transparent 58%, var(--ouro-2) 58%, var(--ouro-2) 92%, transparent 92%); padding: 0 6px; margin: 0 -6px; }
+h2 { font-family: Jakarta; font-weight: 800; font-size: 84px; line-height: 1; letter-spacing: -.03em; text-wrap: balance; }
+h2 .marcador { background: linear-gradient(transparent 58%, var(--ouro-2) 58%, var(--ouro-2) 92%, transparent 92%); padding: 0 6px; margin: 0 -6px; }
+.sub { font-size: 40px; line-height: 1.42; color: var(--tinta-2); margin-top: 34px; text-wrap: pretty; }
+.sub b { color: var(--tinta); font-weight: 700; }
+.nota { position: absolute; right: 90px; top: 250px; font-size: 22px; color: var(--tinta-2); }
+
+/* folha de calendário */
+.folha { position: absolute; width: 640px; border-radius: 34px; background: #fff; box-shadow: 0 40px 80px rgba(20,32,30,.18), 0 6px 0 var(--papel-2); overflow: hidden; }
+.folha__topo { background: var(--vermelho); color: #fff; font: 800 44px Jakarta; letter-spacing: .12em; text-transform: uppercase; text-align: center; padding: 26px 0; position: relative; }
+.folha__topo::before, .folha__topo::after { content: ''; position: absolute; top: -18px; width: 26px; height: 60px; border-radius: 13px; background: #2b2b2b; }
+.folha__topo::before { left: 150px; } .folha__topo::after { right: 150px; }
+.folha__num { font: 800 300px/1 Jakarta; letter-spacing: -.06em; text-align: center; padding: 40px 0 10px; color: var(--tinta); }
+.folha__rotulo { text-align: center; font: 700 40px Jakarta; color: var(--tinta-2); padding-bottom: 50px; }
+
+/* passos */
+.passos { list-style: none; padding: 0; display: grid; gap: 30px; margin-top: 60px; }
+.passos li { display: grid; grid-template-columns: 110px 1fr; gap: 30px; align-items: start; padding: 38px 40px; border-radius: 30px; background: #fff; box-shadow: 0 16px 34px rgba(20,32,30,.08); }
+.passos .n { width: 110px; height: 110px; border-radius: 50%; display: grid; place-items: center; font: 800 58px Jakarta; background: var(--verde); color: var(--ouro-2); }
+.passos li:nth-child(2) .n { background: var(--ouro); color: #fff; }
+.passos strong { display: block; font: 800 46px/1.1 Jakarta; letter-spacing: -.02em; }
+.passos span { display: block; font-size: 32px; line-height: 1.4; color: var(--tinta-2); margin-top: 10px; }
+
+/* celular */
+.cel { position: absolute; width: 600px; border-radius: 76px; padding: 16px; background: #121817; box-shadow: 0 50px 100px rgba(20,32,30,.35); }
+.cel__tela { position: relative; width: 568px; border-radius: 62px; overflow: hidden; background: #f1f3f2; }
+.cel__tela img { position: absolute; left: 0; width: 568px; }
+.cel__ilha { position: absolute; top: 30px; left: 50%; transform: translateX(-50%); width: 150px; height: 42px; border-radius: 30px; background: #121817; z-index: 2; }
+.balao { position: absolute; background: var(--tinta); color: #fff; border-radius: 26px; padding: 22px 28px; font: 700 30px/1.25 Jakarta; box-shadow: 0 20px 40px rgba(20,32,30,.25); max-width: 360px; }
+.balao small { display: block; font: 800 20px Inter; letter-spacing: .12em; text-transform: uppercase; color: var(--ouro-2); margin-bottom: 6px; }
+.balao::after { content: ''; position: absolute; width: 26px; height: 26px; background: var(--tinta); transform: rotate(45deg); }
+.balao.esq::after { right: -10px; top: 40px; } .balao.dir::after { left: -10px; top: 40px; }
+
+/* ranking das áreas */
+.areas { list-style: none; padding: 0; display: grid; gap: 22px; margin-top: 60px; }
+.areas li { display: grid; grid-template-columns: 110px 1fr auto; align-items: center; gap: 26px; padding: 30px 36px; border-radius: 28px; background: #fff; box-shadow: 0 16px 34px rgba(20,32,30,.08); }
+.areas b { font: 800 60px Jakarta; color: var(--vermelho); letter-spacing: -.03em; }
+.areas strong { font: 800 46px Jakarta; letter-spacing: -.02em; }
+.areas i { display: block; height: 14px; border-radius: 8px; margin-top: 12px; background: linear-gradient(90deg, var(--ouro-2), var(--ouro)); }
+.areas .chamas { display: inline-flex; gap: 2px; color: var(--ouro); }
+.areas li.oculto strong, .areas li.oculto .chamas, .areas li.oculto i { filter: blur(9px); }
+.areas li.oculto b { color: #b9b2a2; }
+.cadeado { display: inline-flex; align-items: center; gap: 14px; margin-top: 30px; font: 700 30px Jakarta; color: var(--tinta-2); }
+
+/* semanas */
+.semanas { list-style: none; padding: 0; margin-top: 56px; display: grid; gap: 0; position: relative; }
+.semanas li { position: relative; display: grid; grid-template-columns: 210px 1fr; gap: 30px; padding: 30px 0 30px 50px; border-left: 5px solid #d8cfbb; }
+.semanas li::before { content: ''; position: absolute; left: -17px; top: 44px; width: 28px; height: 28px; border-radius: 50%; background: var(--papel); border: 5px solid #bdb39c; }
+.semanas li.atual { border-left-color: var(--verde-2); } .semanas li.atual::before { background: var(--verde-2); border-color: var(--verde-2); }
+.semanas li.final::before { background: var(--vermelho); border-color: var(--vermelho); }
+.semanas .quando { font: 800 34px Jakarta; color: var(--tinta-2); }
+.semanas .quando em { display: block; font: 700 22px Inter; font-style: normal; color: var(--verde-2); letter-spacing: .08em; text-transform: uppercase; margin-top: 6px; }
+.semanas .tema { font: 800 42px/1.1 Jakarta; letter-spacing: -.02em; }
+.semanas .foco { display: block; margin-top: 10px; font-size: 27px; line-height: 1.35; color: var(--tinta-2); }
+.semanas .final .tema { color: var(--vermelho); }
+
+/* chamada final */
+.cartaz { position: absolute; left: 110px; right: 90px; border-radius: 40px; padding: 60px 60px 56px; background: var(--verde); color: #fff; box-shadow: 0 40px 80px rgba(15,79,73,.35); }
+.cartaz p { font-size: 36px; line-height: 1.4; color: rgba(255,255,255,.8); }
+.cartaz strong { color: var(--ouro-2); }
+.preco { display: flex; align-items: baseline; gap: 18px; margin-top: 18px; }
+.preco b { font: 800 130px/1 Jakarta; letter-spacing: -.04em; color: #fff; }
+.preco span { font-size: 34px; color: rgba(255,255,255,.75); }
+.link { position: absolute; left: 110px; right: 90px; text-align: center; font: 800 44px Jakarta; letter-spacing: -.01em; }
+.link small { display: block; font: 500 28px Inter; color: var(--tinta-2); margin-top: 12px; letter-spacing: 0; }
+</style></head><body>
+<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9.6" stroke="currentColor" stroke-width="3.3"/><path d="M14.37 16.63 16.63 14.37 24.63 22.37 26.2 26.2 22.37 24.63Z" fill="currentColor"/></svg></template>
+<template id="chama"><svg width="34" height="40" viewBox="0 0 12 14"><path fill="currentColor" d="M6.4 0c.4 1.9-.4 3-1.5 4.2C3.7 5.5 2.5 6.8 2.5 8.9 2.5 11.2 4.1 13 6 13s3.5-1.8 3.5-4c0-1-.3-1.8-.8-2.6 0 1.2-.5 1.9-1.1 2.2-.4-1.5-1.5-2.1-1.5-3.5 0-.8.4-1.4.9-2-.5.1-.9.4-1.2.8C5.6 3.6 6 2.2 6.4 0Z"/></svg></template>
+
+<!-- 1. Gancho: contagem regressiva -->
+<section class="story" id="k1">
+  <div class="topo"><div class="marca"></div><span class="etiqueta">TEOT</span></div>
+  <div class="folha" style="left: 220px; top: 400px; transform: rotate(-3deg)">
+    <div class="folha__topo">Faltam</div>
+    <div class="folha__num">87</div>
+    <div class="folha__rotulo">dias para a prova</div>
+  </div>
+  <div class="conteudo" style="top: 1130px">
+    <h2>E você sabe <span class="marcador">o que estudar hoje?</span></h2>
+    <p class="sub">Trauma? Ombro? Mão? Quantas questões? Se a resposta demora, você está perdendo dia de estudo.</p>
+  </div>
+</section>
+
+<!-- 2. A solução em três passos -->
+<section class="story" id="k2">
+  <div class="topo"><div class="marca"></div><span class="etiqueta">Novo</span></div>
+  <div class="conteudo">
+    <h1>Cronograma <span class="marcador">até a sua prova.</span></h1>
+    <p class="sub">Um plano de estudo pronto: <b>quantas questões por dia</b> e <b>qual tema em cada semana</b>.</p>
+    <ol class="passos">
+      <li><span class="n">1</span><div><strong>Você diz a data da prova</strong><span>E os dias em que não estuda: plantão, descanso.</span></div></li>
+      <li><span class="n">2</span><div><strong>Ele monta o caminho</strong><span>Começando pelo que mais cai no TEOT e no TARO.</span></div></li>
+      <li><span class="n">3</span><div><strong>E se ajusta sozinho</strong><span>Atrasou, a meta sobe um pouco. Adiantou, alivia.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 3. A tela de verdade -->
+<section class="story" id="k3">
+  <div class="topo"><div class="marca"></div><span class="etiqueta">Como fica</span></div>
+  <p class="nota">Tela ilustrativa</p>
+  <div class="conteudo">
+    <h2>Abriu o site, <span class="marcador">já sabe o que fazer.</span></h2>
+  </div>
+  <div class="cel" style="left: 440px; top: 620px"><div class="cel__tela" style="height: 1040px"><div class="cel__ilha"></div><img src="telas/t-cronograma.png" style="top: -92px"></div></div>
+  <div class="balao esq" style="left: 90px; top: 760px; max-width: 330px"><small>Contagem</small>Quantos dias faltam</div>
+  <div class="balao esq" style="left: 90px; top: 940px; max-width: 330px"><small>Ritmo</small>Em dia, à frente ou atrás</div>
+  <div class="balao esq" style="left: 90px; top: 1150px; max-width: 330px"><small>Meta de hoje</small>Quantas questões fazer</div>
+  <div class="balao esq" style="left: 90px; top: 1450px; max-width: 330px"><small>Tema do dia</small>Começando pelo que mais cai</div>
+</section>
+
+<!-- 4. Primeiro o que mais cai -->
+<section class="story" id="k4">
+  <div class="topo"><div class="marca"></div><span class="etiqueta">O segredo</span></div>
+  <div class="conteudo">
+    <h2>Primeiro <span class="marcador">o que mais cai.</span></h2>
+    <p class="sub">O cronograma segue o ranking das áreas e dos assuntos mais cobrados nas provas. Você não gasta semana em tema que quase não aparece.</p>
+    <ul class="areas">
+      <li><b>1º</b><div><strong>Trauma adulto</strong><i style="width: 100%"></i></div><span class="chamas" data-chamas="3"></span></li>
+      <li><b>2º</b><div><strong>Ombro e cotovelo</strong><i style="width: 72%"></i></div><span class="chamas" data-chamas="3"></span></li>
+      <li><b>3º</b><div><strong>Mão e punho</strong><i style="width: 62%"></i></div><span class="chamas" data-chamas="3"></span></li>
+      <li class="oculto"><b>4º</b><div><strong>Área guardada</strong><i style="width: 50%"></i></div><span class="chamas" data-chamas="2"></span></li>
+      <li class="oculto"><b>5º</b><div><strong>Outra área</strong><i style="width: 42%"></i></div><span class="chamas" data-chamas="2"></span></li>
+    </ul>
+    <p class="cadeado"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6.5 10.5h11v10h-11zM8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg> O ranking completo é do assinante</p>
+  </div>
+</section>
+
+<!-- 5. Semana a semana e o ranking de quem estuda -->
+<section class="story" id="k5">
+  <div class="topo"><div class="marca"></div><span class="etiqueta">Semana a semana</span></div>
+  <p class="nota">Exemplo</p>
+  <div class="conteudo">
+    <h2>Cada semana <span class="marcador">tem um foco.</span></h2>
+    <ol class="semanas">
+      <li class="atual"><span class="quando">Semana 1<em>esta semana</em></span><span><span class="tema">Trauma adulto</span><span class="foco">Fratura do cotovelo, coluna toracolombar, antebraço</span></span></li>
+      <li><span class="quando">Semana 2</span><span><span class="tema">Ombro e cotovelo</span><span class="foco">Anatomia, manguito rotador, instabilidade</span></span></li>
+      <li><span class="quando">Semana 3</span><span><span class="tema">Mão e punho</span><span class="foco">Síndromes compressivas, lesões tendíneas</span></span></li>
+      <li><span class="quando">…</span><span><span class="tema" style="color: var(--tinta-2)">e assim até a prova</span></span></li>
+      <li class="final"><span class="quando">Última</span><span><span class="tema">Reta final</span><span class="foco">Seus erros, as dúvidas e um simulado</span></span></li>
+    </ol>
+  </div>
+  <div class="cel" style="left: 560px; top: 1350px; width: 420px; border-radius: 56px; padding: 12px; transform: rotate(4deg)"><div class="cel__tela" style="width: 396px; height: 500px; border-radius: 46px"><img src="telas/t-ranking.png" style="top: -40px; width: 396px"></div></div>
+  <div class="balao esq" style="left: 110px; top: 1500px; max-width: 400px"><small>E tem ranking</small>Veja sua posição e quem você passa amanhã</div>
+</section>
+
+<!-- 6. Chamada -->
+<section class="story" id="k6">
+  <div class="topo"><div class="marca"></div><span class="etiqueta">Teste agora</span></div>
+  <div class="conteudo">
+    <h1>Veja a prévia <span class="marcador">do seu cronograma.</span></h1>
+    <p class="sub">Coloque a data da sua prova e veja o seu dia de hoje e as duas primeiras semanas. <b>De graça, sem cartão.</b></p>
+  </div>
+  <div class="cartaz" style="top: 900px">
+    <p>Para seguir o cronograma completo, com Simulado Nacional todo mês e o ranking dos temas que mais caem:</p>
+    <div class="preco"><b>R$ 19,99</b><span>por mês<br>no plano anual</span></div>
+    <p style="margin-top: 18px; font-size: 30px">Garantia de 7 dias. Cancele quando quiser.</p>
+  </div>
+  <p class="link" style="top: 1470px">ortoquestoes.com.br<small>Toque no link aqui embaixo</small></p>
+</section>
+
+<script>
+const s = document.getElementById('simbolo').innerHTML
+document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p><b>Orto</b>Questões</p>')
+const chama = document.getElementById('chama').innerHTML
+document.querySelectorAll('.chamas').forEach(c => c.innerHTML = chama.repeat(Number(c.dataset.chamas)))
+</script>
+</body></html>
