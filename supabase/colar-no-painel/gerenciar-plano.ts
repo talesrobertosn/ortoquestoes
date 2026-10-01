@@ -47,6 +47,38 @@ async function buscarUltimaFaturaAprovada(token, preapprovalId) {
   return faturas[0] ?? null;
 }
 
+// supabase/functions/_shared/pix.ts
+var PLANOS_PIX = {
+  mensal: { meses: 1, centavos: 3990 },
+  semestral: { meses: 6, centavos: 17990 },
+  anual: { meses: 12, centavos: 23990 }
+};
+function validarPagamentoPix(pedido, pagamento, ambiente) {
+  if (pagamento.external_reference !== `pix:${pedido.id}` || pagamento.payment_method_id !== "pix" || pagamento.currency_id !== "BRL" || Math.round(Number(pagamento.transaction_amount) * 100) !== pedido.valor_centavos || pagamento.live_mode !== (ambiente === "producao") || pedido.pagamento_id && String(pagamento.id) !== pedido.pagamento_id) throw new Error("pagamento_pix_divergente");
+  const plano = PLANOS_PIX[pedido.plano];
+  if (!plano || plano.centavos !== pedido.valor_centavos || plano.meses !== pedido.meses) throw new Error("pedido_pix_invalido");
+}
+async function sincronizarPix(pagamento) {
+  const referencia = String(pagamento.external_reference ?? "");
+  if (!/^pix:[0-9a-f-]{36}$/i.test(referencia)) throw new Error("referencia_pix_invalida");
+  const resposta = await banco(`pedidos_pix?id=eq.${encodeURIComponent(referencia.slice(4))}&select=*`);
+  if (!resposta.ok) throw new Error("consulta_pix_falhou");
+  const [pedido] = await resposta.json();
+  if (!pedido) throw new Error("pedido_pix_nao_encontrado");
+  validarPagamentoPix(pedido, pagamento, Deno.env.get("MERCADO_PAGO_AMBIENTE") ?? "");
+  const atualizacao = await banco("rpc/confirmar_pagamento_pix", {
+    method: "POST",
+    body: JSON.stringify({
+      p_pedido: pedido.id,
+      p_pagamento: String(pagamento.id),
+      p_status: pagamento.status,
+      p_aprovado_em: pagamento.date_approved ?? null
+    })
+  });
+  if (!atualizacao.ok) throw new Error("confirmacao_pix_falhou");
+  return { pedido, status: await atualizacao.json() };
+}
+
 // supabase/functions/gerenciar-plano/index.ts
 async function assinaturaDoUsuario(idUsuario, acao) {
   const filtro = acao === "cancelar" ? "status=eq.ativa" : "status=in.(ativa,cancelada,pendente,falha_pagamento,pausada)";
@@ -64,6 +96,13 @@ async function atualizarAssinatura(id, alteracao) {
   if (!resposta.ok) throw new Error("atualizacao_assinatura_falhou");
 }
 async function sincronizarCobranca(token, assinatura) {
+  if (assinatura.id_externo.startsWith("pix:")) {
+    if (!assinatura.ultima_cobranca_id) return false;
+    const pagamento2 = await consultarPagamento(token, assinatura.ultima_cobranca_id);
+    if (pagamento2.external_reference !== assinatura.id_externo) throw new Error("pagamento_pix_divergente");
+    await sincronizarPix(pagamento2);
+    return pagamento2.status === "approved";
+  }
   const fatura = await buscarUltimaFaturaAprovada(token, assinatura.id_externo);
   if (!fatura?.payment?.id) return false;
   const pagamento = await consultarPagamento(token, String(fatura.payment.id));
@@ -100,6 +139,9 @@ Deno.serve(async (req) => {
       const idade = Date.now() - new Date(assinatura.ultima_cobranca_em).getTime();
       if (!Number.isFinite(idade) || idade < 0 || idade > 7 * 864e5) return json({ erro: "prazo_de_garantia_encerrado" }, 409, req);
       const pagamento = await consultarPagamento(token, assinatura.ultima_cobranca_id);
+      if (assinatura.id_externo.startsWith("pix:") && (pagamento.external_reference !== assinatura.id_externo || pagamento.payment_method_id !== "pix")) {
+        return json({ erro: "pagamento_pix_divergente" }, 409, req);
+      }
       if (!["approved", "refunded"].includes(String(pagamento.status)) || String(pagamento.id) !== assinatura.ultima_cobranca_id || !pagamento.date_approved || Date.parse(pagamento.date_approved) !== Date.parse(assinatura.ultima_cobranca_em)) {
         return json({ erro: "cobranca_aprovada_nao_confirmada" }, 409, req);
       }
@@ -129,6 +171,12 @@ Deno.serve(async (req) => {
       }
     } else if (assinatura.status !== "ativa") {
       return json({ erro: "plano_ativo_nao_encontrado" }, 404, req);
+    }
+    if (assinatura.id_externo.startsWith("pix:")) {
+      if (acao === "reembolsar") {
+        await sincronizarPix(await consultarPagamento(token, assinatura.ultima_cobranca_id));
+      }
+      return json({ ok: true, garantia: acao === "reembolsar" }, 200, req);
     }
     const preapproval = await consultarMercadoPago(token, `preapproval/${encodeURIComponent(assinatura.id_externo)}`);
     if (preapproval.status !== "cancelled") {

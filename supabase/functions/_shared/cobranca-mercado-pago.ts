@@ -8,6 +8,12 @@ export interface FaturaMercadoPago {
 
 export interface PagamentoMercadoPago {
   id: number | string
+  external_reference?: string
+  payment_method_id?: string
+  transaction_amount?: number
+  currency_id?: string
+  live_mode?: boolean
+  point_of_interaction?: { transaction_data?: { ticket_url?: string } }
   status?: string
   date_approved?: string | null
   preapproval_id?: string

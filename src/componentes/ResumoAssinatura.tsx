@@ -66,12 +66,12 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
   }
 
   if (!sessao) return null
-  const ativo = estado?.status_assinatura === 'ativa'
+  const ativo = Boolean(estado?.status_assinatura === 'ativa' && (!estado.fim_periodo || new Date(estado.fim_periodo).getTime() > Date.now()))
   const statusAtual = estado?.status_assinatura ?? ''
   const descricao = mensagensStatus[statusAtual]
   const periodoPagoVigente = Boolean(estado?.fim_periodo && new Date(estado.fim_periodo).getTime() > Date.now())
   const renovacaoCancelada = (ativo && estado?.cancelar_ao_fim) || (statusAtual === 'cancelada' && periodoPagoVigente)
-  const statusExibido = renovacaoCancelada ? 'Renovação cancelada' : descricao?.titulo ?? 'Sem assinatura'
+  const statusExibido = renovacaoCancelada ? 'Sem renovação automática' : descricao?.titulo ?? 'Sem assinatura'
   const planoVisivel = estado?.plano && (ativo || (statusAtual === 'cancelada' && periodoPagoVigente))
     ? `Plano ${estado.plano}`
     : 'Plano gratuito'
@@ -93,7 +93,7 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
         <div><dt>Última cobrança</dt><dd>{data(estado?.ultima_cobranca_em ?? null)}</dd></div>
       </dl>
       <p className="ct-nota">{renovacaoCancelada
-        ? 'A renovação foi cancelada: não haverá nova cobrança desta assinatura. A cobrança já feita não foi reembolsada; você mantém o acesso ilimitado até o término indicado. Seu histórico permanece salvo.'
+        ? 'Este período não tem renovação automática: não haverá nova cobrança. A cobrança já feita não foi reembolsada; você mantém o acesso ilimitado até o término indicado. Seu histórico permanece salvo.'
         : descricao?.explicacao ?? 'Você está na modalidade gratuita. Pode continuar estudando normalmente.'}</p>
       {(garantia || (ativo && !estado?.cancelar_ao_fim)) && <div className="conta-assinatura__escolhas" aria-label="Opções da assinatura">
         {garantia && <section className="conta-assinatura__escolha">
@@ -123,3 +123,4 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
     {mensagem && <p role="status">{mensagem}</p>}
   </section>
 }
+

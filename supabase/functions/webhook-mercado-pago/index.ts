@@ -1,6 +1,7 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { consultarFatura, consultarPagamento, consultarMercadoPago, type PagamentoMercadoPago } from '../_shared/cobranca-mercado-pago.ts'
 import { alertarAdministradores } from '../_shared/email.ts'
+import { sincronizarPix } from '../_shared/pix.ts'
 
 const planos = {
   mensal: { frequency: 1, transaction_amount: 39.90 },
@@ -111,6 +112,10 @@ async function aplicarCobranca(idAssinatura: string, pagamento: PagamentoMercado
 async function processarPagamento(idRecurso: string, idEvento: string) {
   const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')!
   const pagamento = await consultarPagamento(token, idRecurso)
+  if (pagamento.payment_method_id === 'pix' && pagamento.external_reference?.startsWith('pix:')) {
+    await sincronizarPix(pagamento)
+    return marcarEvento(idEvento, 'processado')
+  }
   const idAssinatura = pagamento.preapproval_id ?? pagamento.metadata?.preapproval_id ?? pagamento.subscription_id
   if (!idAssinatura) return marcarEvento(idEvento, 'ignorado')
   await sincronizarPreapproval(String(idAssinatura))

@@ -6,13 +6,14 @@ import { usarIndice } from '../dados/usarIndice'
 import { Icone, type NomeIcone } from '../componentes/Icone'
 import { Simbolo } from '../marca/Simbolo'
 import { Painel } from '../componentes/Painel'
-import { VERSAO_CONDICOES_ANTERIOR, VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
+import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { href } from '../util/rotas'
 import { LIMITE_GRATIS_ATUAL } from '../config'
 import { MENSAL, PLANOS, real } from '../dados/planos'
 import '../estilos/paginas/Assinatura.css'
 
 const pagamentosHabilitados = import.meta.env.VITE_PAGAMENTOS_HABILITADOS === 'true'
+const pixHabilitado = pagamentosHabilitados
 const limitesHabilitados = import.meta.env.VITE_LIMITES_HABILITADOS === 'true'
 
 interface MetricasConta { respostas_total: number; sequencia: number; plano: string | null; status_assinatura: string | null; fim_periodo: string | null; ultima_cobranca_em: string | null; cancelar_ao_fim: boolean }
@@ -39,6 +40,9 @@ export function Assinatura() {
   const [planoEscolhido, definirPlanoEscolhido] = useState<(typeof PLANOS)[number] | null>(null)
   const [aceitouCondicoes, definirAceitouCondicoes] = useState(false)
   const [abrindoCheckout, definirAbrindoCheckout] = useState(false)
+  const [meioPagamento, definirMeioPagamento] = useState<'cartao' | 'pix'>(pixHabilitado ? 'pix' : 'cartao')
+  const [cpf, definirCpf] = useState('')
+  const [pix, definirPix] = useState<{ url: string; pedido_id: string; expira_em: string } | null>(null)
   const locais = useMemo(() => Object.values(lerRespondidas()), [])
   const nome = String(sessao?.user.user_metadata?.nome ?? '').trim()
   const comentadas = useMemo(() => (indice?.questoes ?? []).filter((q) => q.c === 1).length, [indice])
@@ -48,9 +52,38 @@ export function Assinatura() {
     chamarRpc<MetricasConta[]>('obter_estado_conta', {}).then((r) => definirMetricas(r[0] ?? null)).catch(() => definirMetricas(null))
   }, [sessao])
 
+  useEffect(() => {
+    if (!pix || !sessao) return
+    let encerrado = false
+    let consultando = false
+    const consultar = async () => {
+      if (consultando || encerrado) return
+      consultando = true
+      try {
+        const r = await chamarFuncao<{ status: string }>('criar-pix', { pedido_id: pix.pedido_id })
+        if (encerrado) return
+        if (r.status === 'approved') {
+          definirMetricas((await chamarRpc<MetricasConta[]>('obter_estado_conta', {}))[0] ?? null)
+          definirMensagem('Pagamento confirmado. Seu período de acesso está ativo.')
+          definirPix(null)
+          definirPlanoEscolhido(null)
+        } else if (['cancelled', 'rejected', 'expired', 'refunded', 'charged_back'].includes(r.status)) {
+          definirMensagem('Este Pix foi encerrado. Confira o pagamento no Mercado Pago antes de gerar outro.')
+          definirPix(null)
+        }
+      } catch { /* Mantém o link disponível; a confirmação vem do provedor. */ }
+      finally { consultando = false }
+    }
+    void consultar()
+    const timer = window.setInterval(() => void consultar(), 10000)
+    return () => { encerrado = true; window.clearInterval(timer) }
+  }, [pix, sessao])
+
   function escolher(plano: (typeof PLANOS)[number]) {
     if (!pagamentosHabilitados || !sessao) return
     definirPlanoEscolhido(plano)
+    definirPix(null)
+    definirCpf('')
     definirAceitouCondicoes(false)
     definirMensagem(null)
   }
@@ -59,20 +92,22 @@ export function Assinatura() {
     definirAbrindoCheckout(true)
     definirMensagem('Preparando checkout seguro…')
     try {
+      if (meioPagamento === 'pix') {
+        const r = await chamarFuncao<{ url: string; pedido_id: string; expira_em: string }>('criar-pix', {
+          plano: planoEscolhido.id, cpf, aceite_termos_versao: VERSAO_CONDICOES_ASSINATURA, aceite_confirmado: true,
+        })
+        definirCpf('')
+        definirPix(r)
+        definirMensagem('Pix gerado. Abra o Mercado Pago para pagar. O acesso será liberado após a confirmação.')
+        definirAbrindoCheckout(false)
+        return
+      }
       const pedir = (versao: string) => chamarFuncao<{ url: string }>('criar-checkout', {
         plano: planoEscolhido.id,
         aceite_termos_versao: versao,
         aceite_confirmado: true,
       })
-      let r: { url: string }
-      try {
-        r = await pedir(VERSAO_CONDICOES_ASSINATURA)
-      } catch (erro) {
-        // Servidor ainda na versão anterior das condições: não trava a compra.
-        // Só o começo sem acento, porque a mensagem pode chegar com a acentuação corrompida.
-        if (!(erro instanceof Error) || !/^Atualize a p/i.test(erro.message)) throw erro
-        r = await pedir(VERSAO_CONDICOES_ANTERIOR)
-      }
+      const r = await pedir(VERSAO_CONDICOES_ASSINATURA)
       location.assign(r.url)
     } catch (erro) {
       definirMensagem(erro instanceof Error ? erro.message : 'Não foi possível abrir o checkout.')
@@ -80,7 +115,7 @@ export function Assinatura() {
     }
   }
   const respondidasConta = metricas?.respostas_total ?? locais.length
-  const ativa = metricas?.status_assinatura === 'ativa'
+  const ativa = Boolean(metricas?.status_assinatura === 'ativa' && (!metricas.fim_periodo || new Date(metricas.fim_periodo).getTime() > Date.now()))
   const acessoPagoAteOFim = Boolean(metricas?.status_assinatura === 'cancelada' && metricas.fim_periodo && new Date(metricas.fim_periodo).getTime() > Date.now())
 
   return (
@@ -151,7 +186,7 @@ export function Assinatura() {
         <section className="vp-ativo">
           <span className="vp-ativo__icone"><Icone nome="certo" tamanho={22} /></span>
           <div>
-            <h2>{metricas.cancelar_ao_fim || acessoPagoAteOFim ? 'Renovação cancelada; acesso pago mantido' : `Seu plano ${metricas.plano} está ativo`}</h2>
+            <h2>{metricas.cancelar_ao_fim || acessoPagoAteOFim ? 'Acesso pago sem renovação automática' : `Seu plano ${metricas.plano} está ativo`}</h2>
             <p>{metricas.cancelar_ao_fim || acessoPagoAteOFim ? 'Não haverá nova cobrança desta assinatura. O período já pago não foi reembolsado.' : 'A próxima cobrança segue a periodicidade escolhida.'} Acesso ilimitado até {metricas.fim_periodo ? new Date(metricas.fim_periodo).toLocaleDateString('pt-BR') : 'o fim do período atual'}.</p>
             <div className="linha">
               <a className="botao" href={href('/conta/assinatura')}>Gerenciar renovação ou pedir reembolso</a>
@@ -268,10 +303,10 @@ export function Assinatura() {
         </div>
         {!pagamentosHabilitados && <p className="vp-aviso"><Icone nome="calendario" tamanho={16} /> As assinaturas abrem em breve. Até lá, o acervo, os comentários e a revisão continuam disponíveis no gratuito.</p>}
         {mensagem && <p role="status" className="vp-aviso">{mensagem}</p>}
-        <p className="vp-letras">Renovação automática na periodicidade escolhida, com valor e data da próxima cobrança mostrados no checkout antes de confirmar. Cancelamento por botão, sem justificativa.</p>
+        <p className="vp-letras">No cartão, renovação automática na periodicidade escolhida. No Pix, pagamento único pelo período completo, sem renovação automática. O acesso começa após a confirmação do pagamento.</p>
         <div className="vp-pagamento-seguro" role="note">
           <Icone nome="certo" tamanho={22} />
-          <p><strong>Pagamento protegido pelo Mercado Pago.</strong> Você conclui a compra no checkout externo do Mercado Pago: os dados do cartão são informados e processados lá, não no OrtoQuestões. Nós recebemos apenas o status e os identificadores necessários para acompanhar sua assinatura; não recebemos nem guardamos o número completo ou o código de segurança do cartão. <a href={href('/condicoes-assinatura')}>Leia as condições da assinatura.</a></p>
+          <p><strong>Pagamento protegido pelo Mercado Pago.</strong> Você conclui a compra no checkout externo do Mercado Pago: os dados do cartão são informados e processados lá, não no OrtoQuestões. No Pix, você recebe o QR Code e o código Copia e Cola no ambiente do Mercado Pago. Nós recebemos apenas o status e os identificadores necessários para acompanhar sua assinatura; não recebemos nem guardamos o número completo ou o código de segurança do cartão. <a href={href('/condicoes-assinatura')}>Leia as condições da assinatura.</a></p>
         </div>
       </section>
 
@@ -299,6 +334,7 @@ export function Assinatura() {
       <section className="vp-secao faq vp-faq">
         <header className="vp-secao__cabeca"><p className="vp-sobre">Dúvidas</p><h2>Perguntas frequentes</h2></header>
         <details><summary>Como funciona o limite do plano gratuito?</summary><p>{limitesHabilitados ? `O gratuito tem um número limitado de respostas novas por dia (hoje, ${LIMITE_GRATIS_ATUAL}), que se renova todos os dias à meia-noite, no horário de Brasília. O número pode mudar; a mudança é avisada no site.` : `O limite diário está desligado nesta fase, portanto o acesso gratuito também está sem limite de respostas. Se o limite for ativado futuramente, o patamar gratuito previsto é de ${LIMITE_GRATIS_ATUAL} respostas novas por dia.`} Comentários, revisões e desempenho continuam abertos.</p></details>
+        <details><summary>Posso pagar com Pix?</summary><p>Sim, quando a opção estiver disponível no checkout. Você paga o valor integral do período escolhido em um único Pix. Não há renovação automática; ao terminar o período, faça uma nova compra se quiser continuar. A garantia de sete dias também vale para Pix.</p></details>
         <details><summary>Como funciona o cancelamento?</summary><p>Em Minha conta, você escolhe entre impedir a próxima renovação ou, dentro de sete dias da última cobrança, pedir reembolso integral. Impedir a renovação não reembolsa a cobrança atual: o acesso pago continua até o fim do período. Se o Mercado Pago confirmar o reembolso, o acesso pago termina e sua conta volta ao gratuito.</p></details>
         <details><summary>Se eu cancelar o semestral após três meses, recebo os três restantes?</summary><p>Após os sete dias para reembolso integral, não há devolução proporcional automática. Você mantém o acesso até completar os seis meses pagos, e a assinatura não renova. A mesma regra vale para o plano anual. Seus direitos previstos em lei permanecem preservados. Consulte as <a href={href('/condicoes-assinatura')}>condições da assinatura</a> antes de comprar.</p></details>
         <details><summary>Como funciona a garantia?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pode pedir reembolso integral em Minha conta. Se a solicitação automática não for confirmada pelo Mercado Pago, use o canal de contato para atendimento manual. O acesso pago só é encerrado após confirmação do reembolso. Depois desse prazo não há reembolso proporcional por esta garantia.</p></details>
@@ -312,13 +348,20 @@ export function Assinatura() {
 
       <Painel titulo={planoEscolhido ? `Revisar assinatura ${planoEscolhido.nome.toLowerCase()}` : 'Revisar assinatura'} aberto={planoEscolhido !== null} aoFechar={() => { if (!abrindoCheckout) definirPlanoEscolhido(null) }}>
         {planoEscolhido && <div className="empilha">
-          <p><strong>{planoEscolhido.nome}: {real(planoEscolhido.total)}</strong> cobrados integralmente {planoEscolhido.meses === 1 ? 'a cada mês' : `a cada ${planoEscolhido.meses} meses`}, com renovação automática até o cancelamento.</p>
+          {pixHabilitado && <fieldset className="empilha" disabled={abrindoCheckout || Boolean(pix)}>
+            <legend>Como você prefere pagar?</legend>
+            <label className="campo campo--checkbox"><input type="radio" name="meio-pagamento" checked={meioPagamento === 'cartao'} onChange={() => { definirMeioPagamento('cartao'); definirAceitouCondicoes(false) }} /> <span>Cartão — renovação automática</span></label>
+            <label className="campo campo--checkbox"><input type="radio" name="meio-pagamento" checked={meioPagamento === 'pix'} onChange={() => { definirMeioPagamento('pix'); definirAceitouCondicoes(false) }} /> <span>Pix — pagamento único, sem renovação automática</span></label>
+          </fieldset>}
+          <p><strong>{planoEscolhido.nome}: {real(planoEscolhido.total)}</strong> {meioPagamento === 'pix' ? `em um único Pix por ${planoEscolhido.meses} mês(es) de acesso, sem renovação automática.` : `cobrados integralmente a cada ${planoEscolhido.meses} mês(es), com renovação automática até o cancelamento.`}</p>
+          {meioPagamento === 'pix' && !pix && <label className="campo"><span>CPF do pagador</span><input inputMode="numeric" autoComplete="off" maxLength={14} value={cpf} onChange={evento => definirCpf(evento.target.value)} /><small>Enviado ao Mercado Pago para gerar a cobrança; não é salvo no seu perfil.</small></label>}
+          {pix && <div className="empilha"><a className="botao botao--principal" href={pix.url} target="_blank" rel="noopener noreferrer">Abrir QR Code e Pix Copia e Cola</a><p>Validade: {new Date(pix.expira_em).toLocaleString('pt-BR')}. Aguarde aqui a confirmação do pagamento.</p></div>}
           <p>Nos primeiros sete dias após cada cobrança aprovada, você pode solicitar reembolso integral. Depois disso, cancelar interrompe as renovações e mantém o acesso até o fim do período pago, sem reembolso proporcional automático.</p>
           <p>O próximo passo abre o checkout hospedado pelo Mercado Pago. Você só paga se confirmar a compra lá; o OrtoQuestões não recebe dados completos do cartão.</p>
           <label className="campo campo--checkbox"><input type="checkbox" checked={aceitouCondicoes} onChange={evento => definirAceitouCondicoes(evento.target.checked)} /> <span>Li e aceito as <a href={href('/condicoes-assinatura')} target="_blank" rel="noopener noreferrer">Condições da Assinatura</a> (versão {VERSAO_CONDICOES_ASSINATURA}) e os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso</a> para este plano e este valor.</span></label>
           {mensagem && <p role="status" className="vp-aviso">{mensagem}</p>}
           <div className="linha linha--empilha-celular">
-            <button className="botao botao--principal" type="button" disabled={!aceitouCondicoes || abrindoCheckout} onClick={() => void confirmarCompra()}>{abrindoCheckout ? 'Abrindo checkout…' : 'Continuar para Mercado Pago'}</button>
+            <button className="botao botao--principal" type="button" disabled={!aceitouCondicoes || abrindoCheckout || Boolean(pix) || (meioPagamento === 'pix' && cpf.replace(/\D/g, '').length !== 11)} onClick={() => void confirmarCompra()}>{abrindoCheckout ? 'Preparando pagamento…' : meioPagamento === 'pix' ? 'Gerar Pix' : 'Continuar para Mercado Pago'}</button>
             <button className="botao" type="button" disabled={abrindoCheckout} onClick={() => definirPlanoEscolhido(null)}>Voltar aos planos</button>
           </div>
         </div>}

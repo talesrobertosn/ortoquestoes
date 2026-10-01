@@ -1,5 +1,6 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { buscarUltimaFaturaAprovada, consultarMercadoPago, consultarPagamento } from '../_shared/cobranca-mercado-pago.ts'
+import { sincronizarPix } from '../_shared/pix.ts'
 
 interface Assinatura {
   id: string
@@ -26,6 +27,13 @@ async function atualizarAssinatura(id: string, alteracao: Record<string, unknown
 }
 
 async function sincronizarCobranca(token: string, assinatura: Assinatura) {
+  if (assinatura.id_externo.startsWith('pix:')) {
+    if (!assinatura.ultima_cobranca_id) return false
+    const pagamento = await consultarPagamento(token, assinatura.ultima_cobranca_id)
+    if (pagamento.external_reference !== assinatura.id_externo) throw new Error('pagamento_pix_divergente')
+    await sincronizarPix(pagamento)
+    return pagamento.status === 'approved'
+  }
   const fatura = await buscarUltimaFaturaAprovada(token, assinatura.id_externo)
   if (!fatura?.payment?.id) return false
   const pagamento = await consultarPagamento(token, String(fatura.payment.id))
@@ -67,6 +75,9 @@ Deno.serve(async (req) => {
       const idade = Date.now() - new Date(assinatura.ultima_cobranca_em).getTime()
       if (!Number.isFinite(idade) || idade < 0 || idade > 7 * 864e5) return json({ erro: 'prazo_de_garantia_encerrado' }, 409, req)
       const pagamento = await consultarPagamento(token, assinatura.ultima_cobranca_id)
+      if (assinatura.id_externo.startsWith('pix:') && (pagamento.external_reference !== assinatura.id_externo || pagamento.payment_method_id !== 'pix')) {
+        return json({ erro: 'pagamento_pix_divergente' }, 409, req)
+      }
       if (!['approved', 'refunded'].includes(String(pagamento.status)) || String(pagamento.id) !== assinatura.ultima_cobranca_id
         || !pagamento.date_approved || Date.parse(pagamento.date_approved) !== Date.parse(assinatura.ultima_cobranca_em)) {
         return json({ erro: 'cobranca_aprovada_nao_confirmada' }, 409, req)
@@ -101,6 +112,12 @@ Deno.serve(async (req) => {
       return json({ erro: 'plano_ativo_nao_encontrado' }, 404, req)
     }
 
+    if (assinatura.id_externo.startsWith('pix:')) {
+      if (acao === 'reembolsar') {
+        await sincronizarPix(await consultarPagamento(token, assinatura.ultima_cobranca_id!))
+      }
+      return json({ ok: true, garantia: acao === 'reembolsar' }, 200, req)
+    }
     const preapproval = await consultarMercadoPago<{ status?: string }>(token, `preapproval/${encodeURIComponent(assinatura.id_externo)}`)
     if (preapproval.status !== 'cancelled') {
       const cancelamento = await fetch(`https://api.mercadopago.com/preapproval/${encodeURIComponent(assinatura.id_externo)}`, {
