@@ -3647,15 +3647,17 @@
   "conferido": false
  },
  "tumores-0347": {
+  "incorretas": {
+   "A": "**Certo só se a frase retirasse a invasão obrigatória.** A proximidade da superfície articular exige planejamento para preservá-la, mas uma lesão epifisária não equivale a tumor intra-articular."
+  },
+  "conceito": "**Localização típica.** Condroblastoma é uma neoplasia óssea benigna rara, de predileção por epífises e apófises de adolescentes e adultos jovens. A proximidade da cartilagem articular explica dor e limitação, mas não significa que toda lesão invada a cavidade da articulação.\n\n**Tratamento.** Curetagem intralesional cuidadosa, frequentemente com preenchimento do defeito, é uma opção habitual. A técnica deve buscar controle local sem lesar desnecessariamente a superfície articular ou a fise ainda aberta. Lesões extensas ou recorrentes podem demandar outra estratégia, inclusive ressecção em casos selecionados.\n\n**Onde está o erro.** A frase une duas ideias: localização epifisária e curetagem são compatíveis com o condroblastoma, mas progressão obrigatória para invasão articular não é sua evolução típica. Uma lesão agressiva pode ameaçar a articulação, e o tratamento também pode causar complicações articulares; essas possibilidades não autorizam afirmar invasão como regra.",
+  "correta": "**Errado.** O condroblastoma costuma ser epifisário e muitas vezes é tratado por curetagem, porém não evolui necessariamente com invasão da articulação.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 4ª edição, p. 443."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "tumores-0348": {
@@ -3737,15 +3739,17 @@
   "conferido": false
  },
  "tumores-0354": {
+  "incorretas": {
+   "B": "**Errado seria excluí-los da investigação inicial.** A origem precisa ser confirmada, mas pulmão e rim são fontes relevantes de lesões ósseas metastáticas detectadas antes do tumor primário."
+  },
+  "conceito": "**Metástase antes do primário.** Às vezes a primeira manifestação de uma neoplasia é uma lesão óssea. Nessa situação, a investigação deve confirmar histologicamente a natureza da lesão e procurar o tumor de origem, sem presumir que toda imagem destrutiva no osso seja metástase.\n\n**Pulmão e rim.** Cânceres de pulmão e rim são fontes importantes de metástases ósseas descobertas antes do diagnóstico do primário. Ambos podem produzir lesões predominantemente líticas. Entretanto, a frequência varia com a população estudada; mama, próstata, tireoide e outras origens continuam no diagnóstico diferencial. A dupla citada pela prova é uma orientação de probabilidade, não uma certeza para cada paciente.\n\n**Caminho diagnóstico.** História, exame físico, imagens do tórax e abdome, exames laboratoriais pertinentes e biópsia planejada em conjunto com a equipe de oncologia ajudam a localizar a origem. A biópsia deve vir antes de uma fixação definitiva de lesão solitária sem diagnóstico, pois um tumor ósseo primário pode exigir outra abordagem cirúrgica.",
+  "correta": "**Certo como associação clássica.** Pulmão e rim estão entre os primários a investigar com prioridade quando uma metástase óssea se apresenta sem origem conhecida, embora não sejam as únicas possibilidades.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 735."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "tumores-0355": {
@@ -3763,15 +3767,17 @@
   "conferido": false
  },
  "tumores-0356": {
+  "incorretas": {
+   "A": "**Certo dependeria de descrever outra ressecção.** Procedimentos modificados podem poupar segmentos conforme o tumor, mas preservar toda a escápula não corresponde à descrição clássica da técnica citada."
+  },
+  "conceito": "**O que a operação procura retirar.** A ressecção de Tikhoff-Linberg foi descrita para tumores extensos da cintura escapular como alternativa de preservação do membro à amputação interescapulotorácica. A versão clássica retira em bloco a escápula, o úmero proximal e a porção lateral da clavícula, com os tecidos comprometidos, preservando o feixe neurovascular quando oncologicamente possível.\n\n**O detalhe decisivo.** O enunciado afirma que a escápula é preservada. Isso inverte a descrição clássica: a escápula integra justamente a peça ressecada. Existem variantes conforme a extensão tumoral, mas não se deve usar uma modificação possível para redefinir o procedimento clássico sem especificá-la.\n\n**Planejamento.** Imagens de estadiamento local devem determinar comprometimento da glenoide, articulação, músculos e estruturas neurovasculares. A margem oncológica vem antes da reconstrução, que busca manter mão e cotovelo funcionais, ainda que a função do ombro possa permanecer limitada.",
+  "correta": "**Errado.** Na operação clássica de Tikhoff-Linberg, a escápula não é preservada: ela é ressecada com o úmero proximal e parte da clavícula.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 749."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "tumores-0357": {
@@ -3787,15 +3793,19 @@
   "conferido": false
  },
  "tumores-0358": {
+  "incorretas": {
+   "A": "**Mama e próstata são comuns no conjunto das metástases ósseas.** Ainda assim, não são a dupla esperada para esta apresentação específica de origem inicialmente desconhecida; a probabilidade individual depende do contexto clínico.",
+   "B": "**Tireoide pode metastatizar para osso.** A associação com estômago não constitui a dupla mais provável entre as opções, e a presença de metástase não permite dispensar investigação histológica.",
+   "C": "**Intestino e pâncreas podem causar metástases ósseas, mas são menos típicos.** A opção não representa a dupla mais associada a essa apresentação nas séries usadas para orientar a investigação."
+  },
+  "conceito": "**O problema clínico.** Uma metástase óssea pode ser descoberta antes de o câncer primário ser conhecido. A origem não é determinada apenas pelo aspecto da lesão: idade, sexo, história, distribuição das metástases, exames de imagem e anatomia patológica modificam a probabilidade.\n\n**Por que a alternativa D.** Pulmão e rim formam uma dupla importante entre os tumores que podem se manifestar inicialmente por lesão óssea, muitas vezes lítica. O pulmão é uma fonte frequente nas séries de metástase óssea com primário inicialmente desconhecido; o rim também merece busca dirigida. Isso não significa que cada caso venha obrigatoriamente de um desses órgãos.\n\n**Como diferenciar as outras duplas.** Mama e próstata são causas muito comuns de metástases ósseas em geral, sobretudo quando o primário já é conhecido, mas a questão enfoca a apresentação sem origem estabelecida. As duplas com estômago, intestino e pâncreas não são as associações clássicas mais prováveis para esse cenário. O diagnóstico final exige investigação e biópsia apropriadas.",
+  "correta": "**Pulmão e rim.** Entre as alternativas oferecidas, são as origens clássicas a priorizar na investigação de metástase óssea cujo primário ainda não foi identificado.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 848."
   ],
-  "geradoEm": null,
+  "provavel": "D",
+  "geradoEm": "2026-10-01",
   "conferido": false
  }
 }
