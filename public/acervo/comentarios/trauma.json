@@ -10934,15 +10934,17 @@
   "conferido": false
  },
  "trauma-1181": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "A": "**Certo seria defensável apenas com uma casuística que demonstrasse essa predominância específica.** A proximidade dos vasos poplíteos torna a região posterior importante no exame, mas não prova a distribuição das feridas abertas."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso a questão não conta no desempenho. A resposta provável é B. Também não encontrei dados que estabeleçam uma região universalmente mais frequente de exposição nas fraturas supracondilianas abertas do fêmur; a afirmação topográfica deve ser lida com cautela.",
+  "conceito": "**Fratura aberta é uma comunicação.** O achado decisivo é a comunicação entre o foco de fratura e o meio externo. A localização da ferida depende da direção do trauma, do deslocamento dos fragmentos e da lesão dos tecidos moles. Nem toda ferida fica exatamente sobre a linha da fratura, e um pequeno orifício pode representar uma lesão profunda.\n\n**No fêmur distal, a topografia não é fixa.** A afirmação escolhe a face póstero-medial como local de exposição mais frequente, mas essa preferência não decorre de uma regra anatômica confiável. Há relatos de fraturas supracondilianas abertas com fragmento exposto na face anteromedial. A região posterior merece atenção pela proximidade dos vasos poplíteos, não porque toda exposição óssea deva ocorrer ali.\n\n**A prioridade é avaliar o membro.** Examine perfusão, pulsos, sensibilidade e motricidade, documente a ferida e procure lesões associadas. A conduta inclui antibiótico precoce, profilaxia antitetânica conforme o caso, irrigação e desbridamento cirúrgico, estabilização e cobertura adequada. Não se deve inferir ausência de fratura aberta só porque a ferida está fora da região sugerida na frase.",
+  "correta": "**Errado: a região póstero-medial não é um padrão obrigatório nem comprovadamente o mais frequente.** A posição da ferida varia com o mecanismo e com o trajeto dos fragmentos; o diagnóstico se apoia na comunicação do foco com o exterior.",
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 2001. 5ª edição, p.1733."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1182": {
@@ -11016,15 +11018,17 @@
   "conferido": false
  },
  "trauma-1187": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado seria uma leitura excessiva se significasse retirar as duas placas juntas sem ponderar a refratura.** Pode haver casos em que a retirada simultânea seja planejada, mas a escolha deve ser individualizada, e não decidida por uma regra automática."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso a questão não conta no desempenho. Mantenho A como resposta provável, mas não localizei fundamento para tratar seis meses como intervalo obrigatório na retirada de duas placas ortogonais do fêmur. Recomendações de retirada sequencial com intervalo mínimo de seis meses encontradas na AO referem-se a placas nos dois ossos do antebraço, situação diferente.",
+  "conceito": "**Duas placas criam uma construção muito rígida.** Na osteossíntese ortogonal da diáfise femoral, placas em planos diferentes podem acrescentar estabilidade em fraturas complexas. A decisão sobre retirada de material, porém, não decorre apenas do arranjo das placas. Primeiro é preciso confirmar consolidação, investigar sintomas ou infecção e pesar o risco de uma nova operação.\n\n**Depois da retirada, o osso precisa suportar a carga.** Os orifícios dos parafusos e a mudança brusca da distribuição de tensões podem favorecer refratura, sobretudo no fêmur, que recebe cargas elevadas. Retirar os implantes em etapas preserva temporariamente parte do suporte e é uma estratégia biomecanicamente plausível em casos selecionados. Isso não transforma um intervalo fixo em regra universal.\n\n**A frase mistura princípio e prazo.** A cautela na retirada de placas duplas é compreensível, mas faltam dados para afirmar que toda construção ortogonal femoral deva ser removida em dois tempos exatamente separados por seis meses. Para o paciente, importam consolidação radiográfica, qualidade óssea, extensão do implante, sintomas e plano de proteção da carga após cada etapa.",
+  "correta": "**Certo é a resposta provável da questão, pela lógica de retirada cautelosa e escalonada.** O prazo de seis meses, contudo, não deve ser entendido como prescrição obrigatória para todo fêmur com placas ortogonais.",
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 2829."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1188": {
@@ -11042,15 +11046,17 @@
   "conferido": false
  },
  "trauma-1189": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado seria descartar toda fixação intramedular para fratura segmentar do rádio.** Ela tem indicações selecionadas, especialmente quando a placa é fortemente contraindicada pelas condições de partes moles; muitas vezes, porém, duas placas menores continuam possíveis."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso a questão não conta no desempenho. A resposta provável foi mantida em A, mas a indicação automática de haste apenas por faltar uma placa longa é discutível. A AO descreve duas placas mais curtas como alternativa para fratura segmentar do rádio e reserva a haste intramedular no adulto para situações selecionadas.",
+  "conceito": "**O rádio precisa recuperar sua forma.** A fratura segmentar tem duas linhas que isolam um fragmento intermediário. No antebraço adulto, restaurar comprimento, alinhamento, rotação e curvatura radial é essencial para a pronação e a supinação. A fixação deve controlar os dois focos sem perder a relação entre rádio, ulna e articulações radioulnares.\n\n**A placa é a solução de referência quando viável.** Uma placa longa pode abranger os dois focos e oferecer fixação estável. Se não houver uma placa suficientemente longa, duas placas menores podem ser usadas quando o fragmento intermediário permite fixação adequada. Portanto, a indisponibilidade de um implante específico não basta, sozinha, para impor a via intramedular.\n\n**A haste tem lugar restrito no adulto.** Ela pode ser considerada em fraturas segmentares selecionadas ou diante de lesão grave dos tecidos moles que torne a exposição para placas indesejável. Seu desafio é controlar a rotação e reproduzir a curvatura radial. Ao escolher esse método, o cirurgião deve avaliar desenho e bloqueio da haste, extensão dos fragmentos, estado das partes moles e estabilidade final da rotação do antebraço.",
+  "correta": "**Certo é a resposta provável se a frase for lida como uma possibilidade de resgate.** Na ausência de placa longa, a fixação intramedular pode ser cogitada, mas não é a única alternativa nem indicação automática.",
   "referencias": [
    "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, p. 1420."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1190": {
