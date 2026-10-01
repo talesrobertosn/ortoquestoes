@@ -3731,15 +3731,17 @@
   "conferido": false
  },
  "tumores-0353": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado seria ignorar a limitação terapêutica da cartilagem tumoral.** Ainda assim, uma ressecção com margens apropriadas pode controlar a doença; avascularidade não torna a recidiva inevitável."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta provável \"Certo\" acompanha a explicação clássica sobre baixa vascularização da matriz cartilaginosa e dificuldade de terapias adjuvantes. A literatura clínica, porém, aponta grau, localização e qualidade das margens cirúrgicas como determinantes mais diretos da recidiva local; não está demonstrado que a avascularidade isoladamente a determine.",
+  "conceito": "**A doença e a matriz.** O condrossarcoma é uma neoplasia maligna produtora de matriz cartilaginosa. A cartilagem tem vascularização limitada, e muitos condrossarcomas convencionais respondem pouco à quimioterapia e à radioterapia convencionais. Por isso, o controle local depende principalmente da cirurgia adequada ao grau e ao sítio da lesão.\n\n**O que realmente prevê recidiva.** Células tumorais que permanecem após uma ressecção de margem insuficiente podem originar novo crescimento. Estudos clínicos associam recidiva especialmente a margens, grau histológico e localização, como a pelve. A avascularidade é uma explicação biológica tradicional para limitações terapêuticas, mas não substitui esses fatores medidos no paciente.\n\n**A decisão cirúrgica.** Lesões cartilaginosas de baixo grau em locais selecionados podem admitir abordagem intralesional criteriosa; tumores de maior grau ou com extensão desfavorável exigem ressecção oncológica apropriada. Biópsia e estadiamento devem ser planejados pela equipe que tratará a lesão, evitando contaminação de planos que precisariam ser preservados.",
+  "correta": "**Certo no raciocínio clássico, com ressalva.** A matriz cartilaginosa pouco vascularizada ajuda a entender a baixa eficácia de terapias sistêmicas em muitos casos, mas a recidiva após cirurgia se relaciona mais diretamente às margens e ao comportamento do tumor.",
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 835."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "tumores-0354": {
@@ -3785,15 +3787,17 @@
   "conferido": false
  },
  "tumores-0357": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado como gabarito provável, mas a objeção é clinicamente válida.** Existem apresentações iniciais com fratura e pacientes com sobrevida variável; por isso a expressão absoluta do enunciado merece a ressalva acima."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta provável \"Certo\" reflete o prognóstico historicamente ruim do câncer de pulmão com metástase óssea e fratura. A expressão \"acontecem na fase terminal\" é excessivamente absoluta: fratura patológica pode ser a primeira manifestação de uma neoplasia pulmonar antes não diagnosticada, e a sobrevida varia entre pacientes.",
+  "conceito": "**Uma complicação de doença avançada.** Metástases pulmonares no esqueleto podem enfraquecer o osso por destruição lítica e causar fratura após trauma mínimo. Quando uma fratura patológica ocorre em paciente com câncer de pulmão disseminado, ela costuma indicar carga tumoral importante e está associada a prognóstico desfavorável.\n\n**O limite da regra.** Prognóstico ruim não significa que a fratura ocorra somente nos últimos dias ou que nada deva ser tratado. Há pacientes em que a lesão óssea ou a própria fratura revela o tumor primário; em outros, terapias sistêmicas permitem sobrevida mais longa. Estado funcional, número de metástases e opções oncológicas importam mais do que o rótulo isolado de \"fase terminal\".\n\n**Conduta ortopédica.** Dor e risco mecânico exigem avaliação de estabilização, radioterapia ou outras medidas locais em conjunto com oncologia, conforme expectativa de vida e objetivos do paciente. Quando a fixação é indicada, deve oferecer estabilidade durável e permitir mobilização precoce; deixar de tratar por presumir terminalidade pode prolongar sofrimento evitável.",
+  "correta": "**Certo apenas como generalização histórica.** Fratura por metástase de câncer de pulmão costuma acompanhar doença avançada e prognóstico ruim, mas não ocorre exclusivamente na fase terminal.",
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 849. 45"
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "tumores-0358": {
