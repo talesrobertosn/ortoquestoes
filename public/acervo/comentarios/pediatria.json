@@ -2953,6 +2953,18 @@
   "geradoEm": "2026-09-24",
   "conferido": false
  },
+ "pediatria-0257": {
+  "conceito": "**O menisco discoide instável.** O menisco discoide, quase sempre lateral, pode ser estável ou instável, e a instabilidade vem da **falta de fixação periférica** em algum segmento. A classificação clássica de Watanabe descreve o tipo Wrisberg, sem inserção posterior, e por muito tempo se ensinou que o problema era posterior. As séries artroscópicas mais recentes, porém, mostraram que, quando o menisco discoide é instável, o desprendimento periférico é mais frequente no **corno anterior**, seguido do posterior, e raro na porção média.\n\n**Por que isso muda a cirurgia.** Na saucerização, não basta aparar o centro: é preciso testar a borda em toda a volta e **reinserir** o segmento solto, sob pena de manter o estalido e a instabilidade.\n\n**Na prova:** a instabilidade do menisco discoide é mais comum na porção **anterior**.",
+  "correta": "**Anterior.** Nas séries artroscópicas, o desprendimento periférico do menisco discoide instável é mais frequente no corno anterior.",
+  "incorretas": {
+   "B": "**A menos acometida.** A porção média raramente é a sede da instabilidade.",
+   "C": "**Segunda em frequência.** O corno posterior também se solta, sobretudo no tipo Wrisberg, mas menos que o anterior.",
+   "D": "**Não é um segmento.** A instabilidade é justamente a perda de fixação periférica; a questão pergunta em qual porção ela predomina."
+  },
+  "geradoEm": "2026-09-28",
+  "conferido": false,
+  "formato": "corrido"
+ },
  "pediatria-0262": {
   "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n> **Na prova:** PC atetoide = ==extrapiramidal==.",
   "correta": "**Discinéticos: núcleos da base.**\n- Extrapiramidal.\n- Movimentos involuntários.",
@@ -3436,6 +3448,22 @@
   "geradoEm": "2026-09-24",
   "conferido": false
  },
+ "pediatria-0317": {
+  "conceito": "### Síndrome de Grisel: apresentação\n- **Quem:** criança após **infecção** de vias aéreas superiores ou **cirurgia** de orofaringe (adenoamigdalectomia).\n- **Quadro:** ==torcicolo doloroso== e **fixo** em \"**cock-robin**\" (pintarroxo):\n  - **inclinação lateral** da cabeça para um lado;\n  - **rotação do queixo** para o lado oposto à inclinação;\n  - leve flexão.\n- **Espasmo:** o **ECM do lado para onde o queixo aponta** fica tenso, tentando corrigir a deformidade (no torcicolo muscular, ao contrário, o ECM encurtado é a causa).\n- **Diagnóstico:** **TC** com rotação para os dois lados (TC dinâmica), que mostra C1-C2 \"travados\". Classificar por **Fielding e Hawkins**.\n\n### Tratamento\n- **Precoce** (menos de 1 semana): colar, anti-inflamatório, antibiótico.\n- **1 a 4 semanas:** tração (halter ou halo).\n- **Crônica, irredutível ou recidivante:** redução e **artrodese C1-C2**.\n\n### Sobre o lado do queixo\nA lateralidade depende da convenção usada para \"lado da lesão\" (ver o alerta). O dado robusto é o ==torcicolo doloroso e fixo==.\n\n> **Na prova:** Grisel = torcicolo ==doloroso== em cock-robin, após infecção.",
+  "correta": "**Com dor, inclinação lateral e queixo rodado para o lado da lesão** (gabarito).",
+  "incorretas": {
+   "A": "**Sem dor, queixo contralateral.**\n- O torcicolo de Grisel é **doloroso**.",
+   "B": "**Sem dor.**\n- Mesma objeção.",
+   "C": "**Com dor, queixo contralateral.**\n- Acerta a dor, mas usa a direção oposta à convenção do gabarito."
+  },
+  "alerta": "A direção do queixo varia conforme se denomina o lado da subluxação, da inclinação ou do espasmo muscular. O achado robusto é o torcicolo doloroso fixo; a lateralidade precisa ser conferida na figura ou fonte original.",
+  "referencias": [
+   "Fielding JW, Hawkins RJ. Atlanto-axial rotatory fixation. J Bone Joint Surg Am. 1977;59:37-44.",
+   "Tachdjian's Pediatric Orthopaedics. 6th ed. Elsevier; 2021."
+  ],
+  "geradoEm": "2026-09-23",
+  "conferido": false
+ },
  "pediatria-0318": {
   "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Fechamento da bolsa\n- Cirurgia nas ==primeiras 24 a 48 horas==: reduz ==infecção do SNC== (meningite, ventriculite).\n- Cobrir com compressa úmida estéril, decúbito ventral, ambiente livre de látex.\n- Hidrocefalia (80 a 90%): derivação ventriculoperitoneal conforme necessidade.\n- Correção intrauterina (MOMS): menos derivação, melhor função motora.\n\n> **Na prova:** fechamento da MMC = ==primeiras horas== (até 48 h)",
   "correta": "**Primeiras horas.**\n- Idealmente em 24 a 48 horas.\n- Reduz infecção do sistema nervoso.",
@@ -3788,6 +3816,18 @@
   "geradoEm": "2026-09-24",
   "conferido": false
  },
+ "pediatria-0349": {
+  "conceito": "**O ângulo de progressão do pé.** É o ângulo entre o eixo do pé e a linha de marcha, medido observando a criança andar. Por convenção, o valor é **positivo** quando o pé aponta **para fora** e **negativo** quando aponta **para dentro**. Ele resume, na marcha, a soma da versão femoral, da torção tibial e da forma do pé, e é o primeiro item do perfil rotacional de Staheli.\n\n**Na criança pequena, a variação é ampla.** Entre 1 e 4 anos, o ângulo normal oscila bastante, de cerca de **15 graus para dentro** (−15) até **25 graus para fora** (+25), e a faixa se estreita com o crescimento. Por isso, um pé que aponta um pouco para dentro nessa idade costuma ser variação normal, e não doença.\n\n**Na prova:** entre 1 e 4 anos, o ângulo de progressão do pé vai de **−15 a +25 graus**.",
+  "correta": "**Entre +25 e −15 graus.** É a faixa normal descrita para a criança pequena, com o sinal positivo para o pé voltado para fora.",
+  "incorretas": {
+   "A": "**Estreita demais.** Deixa de fora a marcha levemente para dentro, que é normal nessa idade.",
+   "B": "**Só para dentro.** Exclui a rotação externa, que é o padrão mais comum.",
+   "C": "**Faixa invertida.** Superestima a marcha para dentro e subestima a para fora."
+  },
+  "geradoEm": "2026-09-28",
+  "conferido": false,
+  "formato": "corrido"
+ },
  "pediatria-0350": {
   "conceito": "### Discrepância de membros inferiores\n| Mecanismo | Encurtamento | Alongamento (hipercrescimento) |\n|---|---|---|\n| congênito | DFFP, hemimelias, coxa vara | hemi-hipertrofia |\n| fise | infecção, trauma fisário, tumor | |\n| vascular | isquemia | ==aumento de fluxo==: fratura diafisária, AIJ, MAV, hemangioma |\n| neurológico | pólio, PC | |\n| síndromes | Ollier, NF1 | ==Proteus, Klippel-Trénaunay-Weber==, Beckwith-Wiedemann |\n\n### Pontos\n- ==Fratura de fêmur na criança causa hipercrescimento== (1 a 2 cm), não encurtamento.\n- Escanometria/panorâmica e idade óssea são ==essenciais== (Moseley, Paley multiplicador).\n\n### Conduta por discrepância prevista\n| Final | Conduta |\n|---|---|\n| < 2 cm | palmilha ou nada |\n| 2 a 5 cm | epifisiodese contralateral |\n| > 5 cm | alongamento |\n| > 15 a 20 cm | amputação/protetização |\n\n> **Na prova:** hipercrescimento generalizado = ==Proteus e Klippel-Trénaunay-Weber==",
   "correta": "**Proteus e Klippel-Trénaunay-Weber.**\n- Hipercrescimento de todo o membro.\n- Malformações vasculares e de tecidos.",
@@ -3906,6 +3946,19 @@
   "geradoEm": "2026-09-24",
   "conferido": false
  },
+ "pediatria-0359": {
+  "alerta": "O gabarito registrado (C) contraria a descrição clássica da macrodactilia, em que o tecido fibrogorduroso está aumentado, e não diminuído; pela bibliografia, a afirmação correta seria a D. Pode tratar-se de erro de gabarito ou de transcrição da prova.",
+  "conceito": "**O que é a macrodactilia.** É o crescimento excessivo e congênito de um ou mais dedos, em que **todas as estruturas** aumentam, sobretudo o **tecido fibrogorduroso** e os **nervos**, muitas vezes com infiltração lipomatosa do nervo que inerva o território. O **osso** também cresce, em **comprimento e em largura**, e costuma haver desvio angular. Em geral é **unilateral**, pode acometer a mão ou o pé e, com frequência, respeita o território de um nervo.\n\n**Por que não é só estética.** O dedo aumentado fica rígido, desviado, atrapalha a preensão e o uso de calçados, e pode haver compressão nervosa. O tratamento combina desbridamento de partes moles, epifisiodese, osteotomias e, em casos graves, amputação de raio.\n\n**Na prova:** macrodactilia é **aumento** de todos os tecidos, sobretudo fibrogorduroso, com osso maior em comprimento e largura.",
+  "correta": "**Gabarito oficial, com ressalva.** A alternativa C foi a indicada, mas a bibliografia descreve aumento, e não diminuição, do tecido fibrogorduroso. Veja o aviso no início do comentário.",
+  "incorretas": {
+   "A": "**Não é típico.** A macrodactilia costuma ser unilateral e acomete tanto a mão quanto o pé.",
+   "B": "**Afeta a função.** Rigidez, desvio e compressão nervosa tornam o tratamento funcional, e não só estético.",
+   "D": "**É a descrição clássica.** Pela bibliografia, esta seria a afirmação correta: osso maior em comprimento e largura, com excesso de tecido fibrogorduroso."
+  },
+  "geradoEm": "2026-09-28",
+  "conferido": false,
+  "formato": "corrido"
+ },
  "pediatria-0360": {
   "conceito": "### Padrões sagitais de marcha na diplegia (Rodda e Graham)\n| Padrão | Tornozelo | Joelho | Quadril |\n|---|---|---|---|\n| I equino verdadeiro | equino | estendido ou recurvado | estendido |\n| II marcha em salto (jump) | equino | fletido | fletido |\n| III equino aparente | neutro | fletido | fletido |\n| ==IV agachada (crouch)== | ==dorsiflexão excessiva== | ==fletido== | ==fletido== |\n\n### Marcha agachada\n- Causas: ==alongamento excessivo do tendão calcâneo== (sóleo fraco), isquiotibiais e psoas curtos, patela alta, deformidades de alavanca.\n- Consequências: dor anterior no joelho, fratura por estresse da patela, alto gasto energético.\n- Tratamento: órtese de reação ao solo, cirurgia multinível (extensão femoral distal, avanço patelar).\n\n### Lendo o gráfico de cinemática\n- ==Crouch==: joelho ==fletido em todo o apoio== (não chega a 0°), tornozelo em dorsiflexão, quadril fletido; ==bilateral== = diplegia.\n- Stiff knee: pico de flexão no balanço ==reduzido e tardio== (reto femoral ativo).\n- Hemiplegia: curvas assimétricas, lado sadio normal.\n\n> **Na prova:** joelho fletido no apoio bilateralmente = ==crouch no diplégico==",
   "correta": "**Crouch em diplégico.**\n- Flexão do joelho mantida no apoio.\n- Padrão bilateral.",
@@ -3916,6 +3969,18 @@
   },
   "geradoEm": "2026-09-24",
   "conferido": false
+ },
+ "pediatria-0361": {
+  "conceito": "**Mecanismo, idade e marcha.** A pergunta que orienta a suspeita de maus-tratos é se a fratura combina com a história e com a fase de desenvolvimento. Criança que já anda sofre fraturas de **baixa energia** no dia a dia; lactente que ainda não anda não tem como produzir sozinho fraturas de ossos longos ou de costelas.\n\n**Lendo as imagens.** Em **I** (3 anos), a fratura espiral da tíbia é a clássica **fratura do bebê que começa a andar**, por **torção** de baixa energia. Em **II** (9 meses), fraturas de **costelas** posteriores decorrem de **compressão anteroposterior** do tórax, típica de quem aperta a criança, e são altamente sugestivas de **maus-tratos**. Em **III** (5 anos), a fratura supracondiliana do úmero é a lesão típica da **queda com o braço estendido**, da própria altura. Em **IV** (4 meses), fratura de osso longo por **torção e compressão** num lactente que ainda não anda é, até prova em contrário, **maus-tratos**.\n\n**Na prova:** fratura de costela ou de osso longo em quem ainda não anda é sinal de alerta; espiral da tíbia em quem começou a andar costuma ser acidental.",
+  "correta": "**I-C, II-B, III-A, IV-D.** Torção de baixa energia na tíbia de quem anda; compressão torácica no lactente; queda da própria altura na supracondiliana; torção com compressão no lactente de 4 meses.",
+  "incorretas": {
+   "A": "**Nenhum par correto.** A espiral da tíbia aos 3 anos é torção de baixa energia, e as costelas do lactente vêm de compressão anteroposterior, não de torção.",
+   "C": "**Nenhum par correto.** A supracondiliana aos 5 anos é queda da própria altura, e a fratura de osso longo aos 4 meses é torção com compressão, não compressão torácica.",
+   "D": "**Troca II e III.** As costelas do lactente vêm de compressão anteroposterior, e a supracondiliana aos 5 anos, de queda da própria altura."
+  },
+  "geradoEm": "2026-09-28",
+  "conferido": false,
+  "formato": "corrido"
  },
  "pediatria-0362": {
   "conceito": "### Tipos de maus-tratos\n| Tipo | Frequência |\n|---|---|\n| ==negligência== | ==a mais comum== |\n| abuso físico | o mais visto pelo ortopedista |\n| emocional | frequente, coexistente |\n| sexual | subnotificado |\n\n### Fraturas suspeitas de abuso físico\n| Alta especificidade | Moderada |\n|---|---|\n| ==lesão metafisária clássica== (canto, alça de balde) | fraturas múltiplas em estágios diferentes |\n| ==costelas posteriores== | fratura de crânio complexa |\n| escápula, processos espinhosos, esterno | vértebras, dedos em não deambulante |\n\n### Alertas\n- Fratura de fêmur em criança que não anda.\n- História incompatível, atraso na busca de atendimento.\n- Conduta: ==inventário esquelético== (< 2 anos), fundo de olho, notificação obrigatória.\n\n### Lesão metafisária clássica (fratura do canto)\n- Fratura ==planar na zona de ossificação provisória==, por forças de tração e torção (sacudir o bebê).\n- Aspecto de ==canto== ou ==alça de balde== conforme a incidência.\n- Fêmur distal, tíbia proximal e distal, úmero proximal.\n- Em lactentes, ==altamente específica== de abuso.\n\n### Menos específicas\n- Diafisárias (espiral ou transversa) são comuns e só sugerem abuso pelo contexto (criança que não anda).\n\n> **Na prova:** alta especificidade = ==costela posterior, escápula, canto metafisário== (também esterno e espinhosos)",
@@ -4280,6 +4345,20 @@
   "geradoEm": "2026-09-24",
   "conferido": false
  },
+ "pediatria-0389": {
+  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Indicação cirúrgica\n| Parâmetro | Limite |\n|---|---|\n| ==ângulo HE== | ==> 60°== (ou 45 a 60° progressivo) |\n| ==cervicodiafisário== | ==< 100 a 110°== |\n| clínica | Trendelenburg, progressão |\n\n- Meta da osteotomia valgizante: HE < 38° e cervicodiafisário ≈ 140°.\n\n> **Na prova:** cirurgia na coxa vara = ==cervicodiafisário < 100° e HE > 60°==",
+  "correta": "**< 100° e > 60°.**\n- Colo muito varo.\n- Fise verticalizada.",
+  "incorretas": {
+   "A": "**HE < 60°.**\n- Tende a estabilizar.",
+   "C": "**Cervicodiafisário > 100°.**\n- Varo menos grave.",
+   "D": "**Invertido.**\n- Ambos fora do limite cirúrgico."
+  },
+  "referencias": [
+   "Surgical correction of coxa vara: Evaluation of neck shaft angle, Hilgenreiner-epiphyseal angle for indication of recurrence. PMCID: PMC6494758; PMID: 31061596."
+  ],
+  "geradoEm": "2026-09-24",
+  "conferido": false
+ },
  "pediatria-0390": {
   "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** sinovite transitória = pico entre ==5 e 6 anos== (faixa de 3 a 8)",
   "correta": "**5 a 6 anos.**\n- Pico dentro da faixa de 3 a 8.\n- Meninos, após virose.",
@@ -4416,6 +4495,18 @@
   "geradoEm": "2026-09-24",
   "conferido": false
  },
+ "pediatria-0413": {
+  "conceito": "**A classificação de Gschwind e Tonkin.** Orienta a cirurgia da contratura em pronação do antebraço na paralisia cerebral, com base na supinação **ativa** e **passiva**. No **grupo 1**, há supinação ativa além da posição neutra. No **grupo 2**, a supinação ativa chega até a neutra ou menos. No **grupo 3**, **não há supinação ativa**, mas a **supinação passiva é livre**. No **grupo 4**, até a supinação passiva está limitada, por contratura fixa.\n\n**Por que o grupo 3 recebe o redirecionamento.** Se o antebraço supina passivamente mas o paciente não consegue fazê-lo, falta um motor supinador. Redirecionar o **pronador redondo**, passando-o por trás do rádio, transforma o principal pronador em supinador. Nos grupos 1 e 2 bastam liberações menores; no grupo 4, a rigidez precisa ser tratada antes.\n\n**Na prova:** sem supinação ativa e com supinação passiva livre, **grupo 3**, redirecionamento do **pronador redondo**.",
+  "correta": "**Grupo 3.** Sem supinação ativa, mas com supinação passiva livre: o pronador redondo redirecionado passa a supinar.",
+  "incorretas": {
+   "A": "**Ainda supina ativamente.** No grupo 1 há supinação ativa além da neutra, e o redirecionamento não é necessário.",
+   "B": "**Liberações bastam.** No grupo 2 a supinação ativa chega à neutra, e o tratamento envolve liberações, não o redirecionamento.",
+   "D": "**Contratura fixa.** No grupo 4 a supinação passiva está limitada, e o redirecionamento isolado não resolve."
+  },
+  "geradoEm": "2026-09-28",
+  "conferido": false,
+  "formato": "corrido"
+ },
  "pediatria-0414": {
   "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Histologia por fase\n| Fase | Histologia |\n|---|---|\n| ==necrose== | ==lacunas vazias== ou osteócitos com ==núcleo picnótico==; medula necrótica |\n| fragmentação | revascularização, reabsorção osteoclástica, tecido fibrovascular |\n| reossificação | osso novo (woven) sobre trabéculas mortas |\n| remodelação/residual | osso lamelar |\n\n> **Na prova:** osteócitos ausentes ou picnóticos = fase de ==necrose==",
   "correta": "**Necrose.**\n- Lacunas vazias, núcleos picnóticos.\n- Antes da revascularização.",
@@ -4516,6 +4607,19 @@
   "geradoEm": "2026-09-24",
   "conferido": false
  },
+ "pediatria-0423": {
+  "alerta": "O gabarito registrado (A) contraria a associação clássica: a curvatura posteromedial congênita da tíbia se associa ao pé calcâneo valgo (alternativa D), enquanto a pseudartrose se associa à curvatura anterolateral. Pode tratar-se de erro de gabarito ou de transcrição da prova.",
+  "conceito": "**A direção da curvatura diz o prognóstico.** A **curvatura posteromedial** congênita da tíbia é, em geral, **benigna**: vem acompanhada de **pé calcâneo valgo**, com o dorso do pé quase encostado na perna, e tende a **corrigir espontaneamente** nos primeiros anos. O problema residual mais comum é a **discrepância de comprimento**, que pode exigir equalização.\n\n**A curvatura anterolateral** é a preocupante: associa-se à **neurofibromatose** e à **pseudartrose congênita da tíbia**, e não deve ser corrigida com osteotomia simples.\n\n**Na prova:** posteromedial lembra **calcâneo valgo** e discrepância; anterolateral lembra **neurofibromatose** e **pseudartrose**.",
+  "correta": "**Gabarito oficial, com ressalva.** A pseudartrose foi a alternativa indicada, mas ela se associa à curvatura anterolateral. Veja o aviso no início do comentário.",
+  "incorretas": {
+   "B": "**Sem relação.** A platispondilia é achado vertebral de displasias esqueléticas.",
+   "C": "**Curvatura anterolateral.** A neurofibromatose se associa à curvatura anterolateral, não à posteromedial.",
+   "D": "**É a associação clássica.** Pela bibliografia, a curvatura posteromedial acompanha o pé calcâneo valgo."
+  },
+  "geradoEm": "2026-09-28",
+  "conferido": false,
+  "formato": "corrido"
+ },
  "pediatria-0424": {
   "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n### Loder (1993)\n| Tipo | Definição | Necrose |\n|---|---|---|\n| estável | anda (com ou sem muletas) | cerca de ==0%== |\n| ==instável== | ==não consegue andar== | até ==47%== |\n\n- Melhor preditor de necrose que a cronologia (aguda/crônica) ou o grau de desvio.\n\n> **Na prova:** Loder = ==capacidade de apoio== (estável × instável)",
   "correta": "**Capacidade de apoio.**\n- Estável anda; instável não.\n- Instável: necrose em até 47%.",
@@ -4569,6 +4673,17 @@
    "D": "**Scheie.**\n- Sem retardo."
   },
   "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "pediatria-0429": {
+  "incorretas": {
+   "A": "**Renais não são a associação destacada aqui.** Anomalias renais podem surgir em síndromes de malformações múltiplas, mas não são a resposta específica cobrada para o fêmur curto congênito.",
+   "B": "**Hepáticas não definem essa investigação.** Doença do fígado pode fazer parte de outros quadros sistêmicos, sem ser a associação clássica indicada pela questão.",
+   "D": "**Encefálicas pedem outro contexto.** Anomalias do sistema nervoso central são possíveis em algumas síndromes complexas, mas não substituem a pesquisa de alterações cardíacas solicitada neste enunciado."
+  },
+  "conceito": "**Fêmur curto congênito não é apenas uma medida.** A deficiência femoral congênita abrange encurtamento de gravidade variável e pode incluir alterações da cabeça, do colo e da articulação do quadril. Também se examinam joelho, perna e pé, pois podem coexistir instabilidade e deficiência fibular. O planejamento funcional depende da anatomia de todo o membro, não só do comprimento femoral.\n\n**Pesquisar outras malformações.** Algumas crianças têm acometimento isolado; outras apresentam um quadro sindrômico ou malformações em outros sistemas. Entre as associações descritas estão cardiopatias congênitas, motivo para avaliação clínica cardiovascular e investigação dirigida quando houver achados. A associação não significa que toda criança com fêmur curto tenha cardiopatia.\n\n**O diagnóstico diferencial importa.** Encurtamento femoral na avaliação fetal ou ao nascimento também pode fazer parte de síndromes com alterações faciais, displasias esqueléticas ou deficiência de outros segmentos. Examinar as demais estruturas evita atribuir a uma deficiência femoral isolada um quadro sistêmico que exige cuidados próprios.",
+  "correta": "**Alterações cardíacas.** Cardiopatias congênitas são uma das associações descritas na deficiência femoral congênita e devem ser consideradas na avaliação global da criança.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "pediatria-0430": {
@@ -4762,6 +4877,18 @@
   "geradoEm": "2026-09-24",
   "conferido": false
  },
+ "pediatria-0447": {
+  "incorretas": {
+   "A": "**Lateral é uma posição posterior ao giro.** A massa extensora do membro superior passa a ocupar também a face lateral após a rotação, mas essa não é a alternativa assinalada para o embrião de seis semanas.",
+   "B": "**Medial não identifica os extensores.** No membro adulto, essa direção se relaciona mais com a face flexora e o lado ulnar, e não traduz a resposta temporal adotada pela questão.",
+   "D": "**Posterior é a anatomia final.** Essa posição descreve bem os extensores do antebraço após a rotação do membro superior, razão pela qual a questão pode confundir quem aplica diretamente a anatomia adulta ao embrião."
+  },
+  "alerta": "O gabarito informado é C, mas a posição descrita depende da idade embrionária exata e do referencial anatômico. As massas musculares são inicialmente ventral e dorsal; a rotação lateral do membro superior, descrita sobretudo na sétima semana, coloca os extensores na face lateral e posterior. Sem uma figura ou fonte original da banca, não é seguro apresentar \"anterior\" como orientação universal dos extensores do punho em toda a sexta semana.",
+  "conceito": "**O membro muda de orientação durante o desenvolvimento.** O broto do membro superior surge antes do inferior. Células musculares migram para o broto e formam massas ventral, predominantemente flexora, e dorsal, predominantemente extensora. Esses nomes descrevem a origem embrionária, não uma posição definitiva no corpo adulto.\n\n**A rotação explica a anatomia final.** Durante o desenvolvimento, o membro superior roda lateralmente. Depois dessa mudança, a musculatura extensora do antebraço ocupa principalmente as faces posterior e lateral, enquanto a flexora fica anterior. O membro inferior roda em sentido oposto e põe sua massa extensora na face anterior da perna. Confundir o estágio embrionário com a disposição final produz respostas aparentemente contraditórias.\n\n**O detalhe temporal é frágil.** Na sexta semana, a flexão do membro e o começo da reorganização espacial fazem a descrição depender de qual corte ou face se está observando. Por isso, o dado útil para a prática é reconhecer a massa extensora dorsal e a rotação subsequente; a palavra \"anteriormente\" nesta questão deve ser lida como convenção específica do enunciado, não como regra anatômica permanente.",
+  "correta": "**Anteriormente, segundo o gabarito informado.** A resposta refere-se à orientação embrionária indicada pela banca, antes de se completar a rotação que põe os extensores do membro superior na face posterior do antebraço adulto; a ressalva do alerta é importante.",
+  "geradoEm": "2026-09-30",
+  "conferido": false
+ },
  "pediatria-0448": {
   "conceito": "### Raquitismo: laboratório\n| Tipo | Ca | P | FA | PTH | Detalhe |\n|---|---|---|---|---|---|\n| nutricional (vit. D) | ↓/N | ↓ | ↑ | ↑ | 25-OH-D baixa |\n| hipofosfatêmico (vit. D resistente, ligado ao X) | N | ==↓↓== | ↑ | N | PHEX, FGF23 alto; perda renal de P |\n| vit. D dependente I | ↓ | ↓ | ↑ | ↑ | 1α-hidroxilase |\n| vit. D dependente II | ↓ | ↓ | ↑ | ↑ | receptor, alopecia |\n| ==osteodistrofia renal== | ↓ | ==↑== | ↑ | ↑↑ | rim ==não excreta fosfato== |\n\n### Ortopedia da osteodistrofia renal\n- Geno valgo, ==epifisiólise== (inclusive em locais atípicos), fraturas.\n- Controle metabólico antes de operar.\n\n> **Na prova:** fosfato alto no raquitismo = ==osteodistrofia renal==",
   "correta": "**Osteodistrofia renal.**\n- Rim retém fosfato.\n- Hiperparatireoidismo secundário.",
@@ -4870,6 +4997,18 @@
    "D": "**Discrepância.**\n- Consequência, não sinal principal; falha na bilateral."
   },
   "geradoEm": "2026-09-24",
+  "conferido": false
+ },
+ "pediatria-0459": {
+  "incorretas": {
+   "A": "**Claudicação sim, adução não é o achado típico.** A restrição esperada é sobretudo de abdução e rotação interna; a primeira metade desta opção, porém, descreve um sintoma comum.",
+   "B": "**Discrepância pode ocorrer, alta estatura não caracteriza.** O encurtamento do lado afetado é plausível, mas não há relação característica com aumento da estatura.",
+   "D": "**Trendelenburg é um achado importante.** O sinal pode ser positivo pela insuficiência dos abdutores, e por isso esta alternativa também parece defensável; a baixa estatura adicionada a ela não é obrigatória na forma isolada."
+  },
+  "alerta": "O gabarito informado é C, porém há contradição clínica: séries de coxa vara do desenvolvimento descrevem limitação de abdução e de rotação interna, não de rotação externa. Baixa estatura também não é característica obrigatória da forma isolada. A alternativa D contém o sinal de Trendelenburg, achado frequente, mas igualmente acrescenta baixa estatura. Mantemos C como gabarito, sem apresentá-la como descrição clínica segura.",
+  "conceito": "**A deformidade está no colo femoral.** Na coxa vara do desenvolvimento, o ângulo entre colo e diáfise diminui progressivamente, o colo encurta e o trocânter maior fica relativamente alto. Isso reduz o braço de alavanca dos abdutores e pode encurtar o membro. A criança costuma chegar com claudicação, muitas vezes sem dor.\n\n**O exame físico tem uma lógica mecânica.** A insuficiência dos abdutores provoca queda da pelve contralateral no apoio, o sinal de Trendelenburg. O quadril costuma perder abdução e rotação interna, enquanto a rotação externa pode estar preservada ou aumentada. A discrepância de comprimento é mais evidente nos casos unilaterais.\n\n**A radiografia confirma o mecanismo.** Procura-se diminuição do ângulo cervicodiafisário e verticalização da fise do colo. O ângulo epifisário de Hilgenreiner ajuda a estimar risco de progressão e a indicar osteotomia valgizante nos casos importantes. Baixa estatura pode sugerir displasia ou doença sistêmica associada, mas não define toda coxa vara do desenvolvimento.",
+  "correta": "**C é o gabarito registrado, com ressalva.** A limitação de abdução está de acordo com a doença; a menção a limitação de rotação externa e a baixa estatura como sinais mais observados não é sustentada de modo geral.",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "pediatria-0460": {
@@ -5004,6 +5143,18 @@
   "geradoEm": "2026-09-24",
   "conferido": false
  },
+ "pediatria-0473": {
+  "conceito": "**A deformidade de Sprengel.** É a elevação congênita da escápula, que não desce da região cervical para a torácica durante o desenvolvimento. A escápula fica alta, pequena e rodada, com limitação sobretudo da abdução. Associações frequentes incluem Klippel-Feil, escoliose congênita e anomalias costais.\n\n**O osso omovertebral.** É uma ponte, óssea, cartilaginosa ou fibrosa, entre o ângulo superomedial da escápula e os processos espinhosos, lâminas ou transversos da coluna cervical. Está presente em cerca de **um terço** dos pacientes e, quando existe, precisa ser ressecado na cirurgia para permitir o abaixamento da escápula.\n\n**Na prova:** o osso omovertebral aparece em **1/3** dos casos de Sprengel.",
+  "correta": "**Um terço.** O osso omovertebral está presente em cerca de um terço dos pacientes com deformidade de Sprengel.",
+  "incorretas": {
+   "A": "**Nem todos.** A ponte omovertebral é achado frequente, mas não obrigatório.",
+   "B": "**Superestima.** A frequência descrita é de cerca de um terço, não metade.",
+   "D": "**Subestima.** A ponte omovertebral é mais comum que um em seis casos."
+  },
+  "geradoEm": "2026-09-28",
+  "conferido": false,
+  "formato": "corrido"
+ },
  "pediatria-0474": {
   "conceito": "### A periferia da fise\n- **Zona de Ranvier:** células que fazem a fise crescer **em largura** (aposicional).\n- **Anel pericondral de LaCroix:** faixa fibrosa densa, contínua com o periósteo metafisário, que dá ==estabilidade mecânica à junção osso–cartilagem==.\n- **Processos mamilares:** interdigitações que ajudam a resistir ao cisalhamento, mas não são a estrutura de contenção periférica.\n- O **periósteo** espesso da criança também contribui, mas o anel de LaCroix é a resposta clássica.\n\n### Vascularização da fise\n| Região | Irrigação |\n|---|---|\n| epífise e zona germinativa | artérias epifisárias |\n| metáfise | nutrícia e metafisárias |\n| periferia | pericondrais |\n\n> **Na prova:** anel de LaCroix = ==estabilização mecânica da fise==",
   "correta": "**Fibrosa, prende epífise à metáfise.**\n- Contínua com o periósteo.\n- Resiste ao cisalhamento.",
@@ -5114,6 +5265,18 @@
   },
   "geradoEm": "2026-09-24",
   "conferido": false
+ },
+ "pediatria-0483": {
+  "conceito": "**As linhas da radiografia da displasia do quadril.** A **linha de Hilgenreiner** é **horizontal** e passa pelas **cartilagens trirradiadas** dos dois lados; é a referência a partir da qual se medem o índice acetabular e a altura da metáfise. A **linha de Perkins** é **vertical**, perpendicular à de Hilgenreiner, e passa pela borda lateral do teto acetabular; as duas formam os quadrantes de Ombrédanne, e o núcleo da cabeça femoral normal fica no quadrante inferomedial.\n\n**As outras.** O **arco de Shenton** é a curva contínua entre a borda inferior do colo femoral e a borda superior do forame obturado; quando se quebra, sugere subluxação. A **linha de Klein** corre pela borda superior do colo e serve para a **epifisiólise**, não para a displasia.\n\n**Na prova:** linha horizontal pelas trirradiadas é **Hilgenreiner**; vertical pela borda do acetábulo é **Perkins**.",
+  "correta": "**Hilgenreiner.** Linha horizontal que passa pelas cartilagens trirradiadas, base da medida do índice acetabular.",
+  "incorretas": {
+   "A": "**É a vertical.** A linha de Perkins desce pela borda lateral do acetábulo, perpendicular à de Hilgenreiner.",
+   "B": "**É um arco.** O arco de Shenton une colo femoral e forame obturado.",
+   "D": "**Outra doença.** A linha de Klein, pela borda superior do colo, é usada na epifisiólise."
+  },
+  "geradoEm": "2026-09-28",
+  "conferido": false,
+  "formato": "corrido"
  },
  "pediatria-0484": {
   "conceito": "### Neurofibromatoses\n| Tipo | Nome | Gene | Achados | Ortopedia |\n|---|---|---|---|---|\n| ==NF1== | ==periférica== (von Recklinghausen) | neurofibromina (17q) | café-com-leite, neurofibromas, Lisch, Crowe | ==frequente== |\n| NF2 | central | merlina (22q) | ==schwannoma vestibular bilateral==, meningiomas | rara |\n| schwannomatose | | SMARCB1, LZTR1 | schwannomas múltiplos dolorosos | |\n\n### NF1 na ortopedia\n| Manifestação | Detalhe |\n|---|---|\n| escoliose | a mais comum; distrófica (raio curto) |\n| pseudartrose congênita da tíbia | anterolateral |\n| hipertrofia de membro | elefantíase |\n| TMBNP | transformação do plexiforme |\n| deficiência de vitamina D, osteoporose | |\n\n- Herança dominante; metade mutação nova.\n\n> **Na prova:** NF1 = ==periférica, manifestações ortopédicas frequentes==.",
@@ -5323,6 +5486,18 @@
   "geradoEm": "2026-09-24",
   "conferido": false
  },
+ "pediatria-0501": {
+  "conceito": "**O risco do abaixamento da escápula.** Na correção cirúrgica da deformidade de Sprengel, como nas técnicas de Woodward e de Green, a escápula é levada para baixo. Esse abaixamento traciona o plexo braquial contra a clavícula e a primeira costela, e o risco de **lesão do plexo** cresce com a idade, porque as estruturas ficam menos complacentes.\n\n**A osteotomia da clavícula.** Para proteger o plexo, faz-se uma osteotomia ou morcelização de cerca de 2 cm no **terço médio da clavícula**, que dá folga ao espaço costoclavicular. A bibliografia da prova a indica preferencialmente nas crianças maiores, a partir de cerca de **8 anos**. Nas mais novas, o abaixamento costuma ser feito sem ela.\n\n**Na prova:** osteotomia da clavícula no Sprengel, para proteger o plexo, a partir dos **8 anos**.",
+  "correta": "**8 anos.** Nas crianças maiores, o abaixamento da escápula aumenta o risco de lesão do plexo, e a osteotomia da clavícula dá folga ao espaço costoclavicular.",
+  "incorretas": {
+   "A": "**Cedo demais.** Aos 2 anos o abaixamento costuma ser feito sem osteotomia da clavícula.",
+   "B": "**Cedo demais.** Aos 4 anos a osteotomia ainda não é indicada de rotina.",
+   "C": "**Ainda não é o marco.** A indicação preferencial descrita é a partir dos 8 anos."
+  },
+  "geradoEm": "2026-09-28",
+  "conferido": false,
+  "formato": "corrido"
+ },
  "pediatria-0502": {
   "conceito": "### Osteotomias pélvicas na DDQ\n| Tipo | Técnica | Característica |\n|---|---|---|\n| ==Salter== | osteotomia ==inominada completa== acima do acetábulo, cunha de ilíaco anterior | redireciona; ==não muda volume==; 18 meses a 6 anos |\n| Pemberton | pericapsular incompleta, dobradiça na trirradiada | reduz volume, acetábulo grande |\n| Dega | incompleta, posterior preservada | PC, displasia posterolateral |\n| Steel | ==tripla== (ílio, ísquio, púbis) | criança maior |\n| Ganz | ==periacetabular== (Bernese) | trirradiada fechada |\n| Chiari | salvamento, medializa | sem congruência |\n\n### Salter na imagem\n- Linha reta do ciático maior à espinha ilíaca anteroinferior.\n- Enxerto triangular da crista ilíaca, fixado com fios.\n- Pivô na sínfise púbica.\n\n### Steel (tripla)\n- Cortes no ==ílio (supra-acetabular), ísquio e púbis==, distantes do acetábulo.\n- Criança maior/adolescente com trirradiada aberta, quando Salter não basta.\n- Reorienta o acetábulo; o fragmento fica preso pelos ligamentos sacroespinhoso e sacrotuberoso (limita a correção).\n\n> **Na prova:** três cortes (ílio, ísquio, púbis) = ==Steel==",
   "correta": "**Steel.**\n- Osteotomia tripla.\n- Ílio, ísquio e púbis.",
@@ -5419,6 +5594,19 @@
   "geradoEm": "2026-09-24",
   "conferido": false
  },
+ "pediatria-0510": {
+  "incorretas": {
+   "A": "**Uma data não define todas as deformidades distais.** O pé e seus raios se diferenciam depois do surgimento do broto inferior; atribuir todo defeito distal ao 37º dia é específico demais.",
+   "C": "**O membro superior já está em formação no 31º dia.** Eventos nessa época podem afetá-lo, mas a gravidade e o segmento atingido não se deduzem apenas desse número, sem o mecanismo da lesão.",
+   "D": "**Cinco semanas é cedo demais para conclusão.** O membro inferior aparece depois do superior, e pé e dedos continuam a se organizar nas semanas seguintes.",
+   "E": "**O membro superior também não está completo em cinco semanas.** A placa da mão e os dedos ainda passam por etapas importantes de diferenciação após esse marco."
+  },
+  "alerta": "O gabarito informado é B, mas a cronologia publicada para desenvolvimento humano situa o aparecimento do broto do membro superior por volta do 26º dia após a fecundação e o do membro inferior por volta do 28º dia. Isso torna duvidosa a afirmação de que uma deficiência grave do membro inferior já se estabeleça no 26º dia. O intervalo de suscetibilidade varia conforme a estrutura e a forma de contar a idade; sem a fonte usada pela banca, mantemos a chave e registramos a divergência.",
+  "conceito": "**A sequência é craniocaudal.** Os brotos dos membros superiores surgem primeiro, em torno do 26º dia após a fecundação, e os inferiores aparecem poucos dias depois, aproximadamente no 28º. A crista ectodérmica apical sustenta o crescimento do membro; alterações muito precoces podem comprometer segmentos extensos, enquanto eventos posteriores tendem a atingir estruturas que ainda estão se diferenciando.\n\n**Proximal e distal não se formam de uma vez.** Braço e coxa tornam-se reconhecíveis antes de mão e pé. Placas de mão e pé aparecem por volta da sexta semana, seguidas da diferenciação dos raios digitais e da separação dos dedos. Portanto, cinco semanas não bastam para dizer que todas as partes de qualquer membro estejam essencialmente completas.\n\n**A idade precisa ser nomeada.** Dia após fecundação, idade embrionária e idade gestacional contada da última menstruação não são equivalentes. Mesmo com um calendário definido, datas isoladas são aproximações, não fronteiras biológicas abruptas. Na interpretação de uma deficiência, importa combinar momento do insulto, eixo do desenvolvimento afetado e padrão anatômico observado.",
+  "correta": "**B é a alternativa marcada pela banca, sob contestação.** Uma falha muito precoce pode causar deficiência extensa, mas o 26º dia para membro inferior precede o aparecimento do broto inferior descrito em referências embriológicas.",
+  "geradoEm": "2026-09-30",
+  "conferido": false
+ },
  "pediatria-0511": {
   "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n### Aplicando ao caso\n- Apoia o membro (com muletas) = ==estável== (Loder).\n- Diferença de 40° no ângulo = ==moderado== (Southwick: < 30 leve, 30 a 50 moderado, > 50 grave).\n\n> **Na prova:** apoia com muletas + 40° = ==estável e moderado==",
   "correta": "**Estável, moderado.**\n- Muletas não tornam instável.\n- 40° está entre 30 e 50°.",
@@ -5454,6 +5642,19 @@
   },
   "geradoEm": "2026-09-24",
   "conferido": false
+ },
+ "pediatria-0514": {
+  "conceito": "**O reflexo do susto (sobressalto).** É desencadeado por um **estímulo súbito**, como um barulho alto ou um **toque no esterno**, e produz **flexão** dos cotovelos e dos joelhos, com as mãos fechadas. Não deve ser confundido com o reflexo de Moro.\n\n**Como diferenciar.** O **Moro** é provocado pela perda súbita de apoio da cabeça e tem duas fases: primeiro **abdução e extensão** dos braços com abertura das mãos, depois adução, como num abraço. O **Galant** é a incurvação do tronco ao estimular a pele paravertebral. O reflexo de **paraquedas** surge mais tarde, por volta dos 8 a 9 meses, e persiste. A assimetria ou ausência desses reflexos ajuda no diagnóstico de lesão do plexo braquial, fratura da clavícula e doenças neurológicas.\n\n**Na prova:** toque no esterno com **flexão** de cotovelos e joelhos é o **reflexo do susto**; extensão e abdução dos braços é **Moro**.",
+  "correta": "**Reflexo do susto.** O toque no esterno provoca flexão de cotovelos e joelhos, diferente da extensão e abdução do Moro.",
+  "incorretas": {
+   "B": "**Braços em extensão.** O Moro, provocado pela queda da cabeça, começa com abdução e extensão dos braços.",
+   "C": "**Estímulo paravertebral.** O Galant é a incurvação do tronco ao estimular a pele ao lado da coluna.",
+   "D": "**Resposta a estímulo nocivo.** O reflexo de retirada é a flexão do membro estimulado, não a resposta global ao toque esternal.",
+   "E": "**Aparece mais tarde.** O paraquedas surge por volta dos 8 a 9 meses e não existe no neonato."
+  },
+  "geradoEm": "2026-09-28",
+  "conferido": false,
+  "formato": "corrido"
  },
  "pediatria-0515": {
   "conceito": "### Delbet (colo do fêmur na criança)\n| Tipo | Traço | Frequência | Necrose |\n|---|---|---|---|\n| ==I== | ==transepifisário== (IA sem luxação; ==IB com luxação== da epífise) | < 10% | ==até 100% no IB== |\n| II | transcervical | ==o mais comum== (40 a 50%) | cerca de 50% |\n| III | cervicotrocantérico | 25 a 35% | cerca de 25% |\n| IV | intertrocantérico | 10% | cerca de 10% |\n\n### Pontos\n- Alta energia; tipo I em < 2 anos sugere maus-tratos ou parto.\n- Tratamento: redução (fechada ou aberta) e fixação; descompressão capsular.\n- Complicações: necrose, coxa vara, fechamento fisário, pseudartrose.\n\n> **Na prova:** transfisária com luxação da epífise = ==Delbet IB==",
@@ -8069,159 +8270,6 @@
   ],
   "geradoEm": "2026-09-26",
   "conferido": false
- },
- "pediatria-0317": {
-  "conceito": "### Síndrome de Grisel: apresentação\n- **Quem:** criança após **infecção** de vias aéreas superiores ou **cirurgia** de orofaringe (adenoamigdalectomia).\n- **Quadro:** ==torcicolo doloroso== e **fixo** em \"**cock-robin**\" (pintarroxo):\n  - **inclinação lateral** da cabeça para um lado;\n  - **rotação do queixo** para o lado oposto à inclinação;\n  - leve flexão.\n- **Espasmo:** o **ECM do lado para onde o queixo aponta** fica tenso, tentando corrigir a deformidade (no torcicolo muscular, ao contrário, o ECM encurtado é a causa).\n- **Diagnóstico:** **TC** com rotação para os dois lados (TC dinâmica), que mostra C1-C2 \"travados\". Classificar por **Fielding e Hawkins**.\n\n### Tratamento\n- **Precoce** (menos de 1 semana): colar, anti-inflamatório, antibiótico.\n- **1 a 4 semanas:** tração (halter ou halo).\n- **Crônica, irredutível ou recidivante:** redução e **artrodese C1-C2**.\n\n### Sobre o lado do queixo\nA lateralidade depende da convenção usada para \"lado da lesão\" (ver o alerta). O dado robusto é o ==torcicolo doloroso e fixo==.\n\n> **Na prova:** Grisel = torcicolo ==doloroso== em cock-robin, após infecção.",
-  "correta": "**Com dor, inclinação lateral e queixo rodado para o lado da lesão** (gabarito).",
-  "incorretas": {
-   "A": "**Sem dor, queixo contralateral.**\n- O torcicolo de Grisel é **doloroso**.",
-   "B": "**Sem dor.**\n- Mesma objeção.",
-   "C": "**Com dor, queixo contralateral.**\n- Acerta a dor, mas usa a direção oposta à convenção do gabarito."
-  },
-  "alerta": "A direção do queixo varia conforme se denomina o lado da subluxação, da inclinação ou do espasmo muscular. O achado robusto é o torcicolo doloroso fixo; a lateralidade precisa ser conferida na figura ou fonte original.",
-  "referencias": [
-   "Fielding JW, Hawkins RJ. Atlanto-axial rotatory fixation. J Bone Joint Surg Am. 1977;59:37-44.",
-   "Tachdjian's Pediatric Orthopaedics. 6th ed. Elsevier; 2021."
-  ],
-  "geradoEm": "2026-09-23",
-  "conferido": false
- },
- "pediatria-0389": {
-  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Indicação cirúrgica\n| Parâmetro | Limite |\n|---|---|\n| ==ângulo HE== | ==> 60°== (ou 45 a 60° progressivo) |\n| ==cervicodiafisário== | ==< 100 a 110°== |\n| clínica | Trendelenburg, progressão |\n\n- Meta da osteotomia valgizante: HE < 38° e cervicodiafisário ≈ 140°.\n\n> **Na prova:** cirurgia na coxa vara = ==cervicodiafisário < 100° e HE > 60°==",
-  "correta": "**< 100° e > 60°.**\n- Colo muito varo.\n- Fise verticalizada.",
-  "incorretas": {
-   "A": "**HE < 60°.**\n- Tende a estabilizar.",
-   "C": "**Cervicodiafisário > 100°.**\n- Varo menos grave.",
-   "D": "**Invertido.**\n- Ambos fora do limite cirúrgico."
-  },
-  "referencias": [
-   "Surgical correction of coxa vara: Evaluation of neck shaft angle, Hilgenreiner-epiphyseal angle for indication of recurrence. PMCID: PMC6494758; PMID: 31061596."
-  ],
-  "geradoEm": "2026-09-24",
-  "conferido": false
- },
- "pediatria-0257": {
-  "conceito": "**O menisco discoide instável.** O menisco discoide, quase sempre lateral, pode ser estável ou instável, e a instabilidade vem da **falta de fixação periférica** em algum segmento. A classificação clássica de Watanabe descreve o tipo Wrisberg, sem inserção posterior, e por muito tempo se ensinou que o problema era posterior. As séries artroscópicas mais recentes, porém, mostraram que, quando o menisco discoide é instável, o desprendimento periférico é mais frequente no **corno anterior**, seguido do posterior, e raro na porção média.\n\n**Por que isso muda a cirurgia.** Na saucerização, não basta aparar o centro: é preciso testar a borda em toda a volta e **reinserir** o segmento solto, sob pena de manter o estalido e a instabilidade.\n\n**Na prova:** a instabilidade do menisco discoide é mais comum na porção **anterior**.",
-  "correta": "**Anterior.** Nas séries artroscópicas, o desprendimento periférico do menisco discoide instável é mais frequente no corno anterior.",
-  "incorretas": {
-   "B": "**A menos acometida.** A porção média raramente é a sede da instabilidade.",
-   "C": "**Segunda em frequência.** O corno posterior também se solta, sobretudo no tipo Wrisberg, mas menos que o anterior.",
-   "D": "**Não é um segmento.** A instabilidade é justamente a perda de fixação periférica; a questão pergunta em qual porção ela predomina."
-  },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
- },
- "pediatria-0349": {
-  "conceito": "**O ângulo de progressão do pé.** É o ângulo entre o eixo do pé e a linha de marcha, medido observando a criança andar. Por convenção, o valor é **positivo** quando o pé aponta **para fora** e **negativo** quando aponta **para dentro**. Ele resume, na marcha, a soma da versão femoral, da torção tibial e da forma do pé, e é o primeiro item do perfil rotacional de Staheli.\n\n**Na criança pequena, a variação é ampla.** Entre 1 e 4 anos, o ângulo normal oscila bastante, de cerca de **15 graus para dentro** (−15) até **25 graus para fora** (+25), e a faixa se estreita com o crescimento. Por isso, um pé que aponta um pouco para dentro nessa idade costuma ser variação normal, e não doença.\n\n**Na prova:** entre 1 e 4 anos, o ângulo de progressão do pé vai de **−15 a +25 graus**.",
-  "correta": "**Entre +25 e −15 graus.** É a faixa normal descrita para a criança pequena, com o sinal positivo para o pé voltado para fora.",
-  "incorretas": {
-   "A": "**Estreita demais.** Deixa de fora a marcha levemente para dentro, que é normal nessa idade.",
-   "B": "**Só para dentro.** Exclui a rotação externa, que é o padrão mais comum.",
-   "C": "**Faixa invertida.** Superestima a marcha para dentro e subestima a para fora."
-  },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
- },
- "pediatria-0359": {
-  "alerta": "O gabarito registrado (C) contraria a descrição clássica da macrodactilia, em que o tecido fibrogorduroso está aumentado, e não diminuído; pela bibliografia, a afirmação correta seria a D. Pode tratar-se de erro de gabarito ou de transcrição da prova.",
-  "conceito": "**O que é a macrodactilia.** É o crescimento excessivo e congênito de um ou mais dedos, em que **todas as estruturas** aumentam, sobretudo o **tecido fibrogorduroso** e os **nervos**, muitas vezes com infiltração lipomatosa do nervo que inerva o território. O **osso** também cresce, em **comprimento e em largura**, e costuma haver desvio angular. Em geral é **unilateral**, pode acometer a mão ou o pé e, com frequência, respeita o território de um nervo.\n\n**Por que não é só estética.** O dedo aumentado fica rígido, desviado, atrapalha a preensão e o uso de calçados, e pode haver compressão nervosa. O tratamento combina desbridamento de partes moles, epifisiodese, osteotomias e, em casos graves, amputação de raio.\n\n**Na prova:** macrodactilia é **aumento** de todos os tecidos, sobretudo fibrogorduroso, com osso maior em comprimento e largura.",
-  "correta": "**Gabarito oficial, com ressalva.** A alternativa C foi a indicada, mas a bibliografia descreve aumento, e não diminuição, do tecido fibrogorduroso. Veja o aviso no início do comentário.",
-  "incorretas": {
-   "A": "**Não é típico.** A macrodactilia costuma ser unilateral e acomete tanto a mão quanto o pé.",
-   "B": "**Afeta a função.** Rigidez, desvio e compressão nervosa tornam o tratamento funcional, e não só estético.",
-   "D": "**É a descrição clássica.** Pela bibliografia, esta seria a afirmação correta: osso maior em comprimento e largura, com excesso de tecido fibrogorduroso."
-  },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
- },
- "pediatria-0361": {
-  "conceito": "**Mecanismo, idade e marcha.** A pergunta que orienta a suspeita de maus-tratos é se a fratura combina com a história e com a fase de desenvolvimento. Criança que já anda sofre fraturas de **baixa energia** no dia a dia; lactente que ainda não anda não tem como produzir sozinho fraturas de ossos longos ou de costelas.\n\n**Lendo as imagens.** Em **I** (3 anos), a fratura espiral da tíbia é a clássica **fratura do bebê que começa a andar**, por **torção** de baixa energia. Em **II** (9 meses), fraturas de **costelas** posteriores decorrem de **compressão anteroposterior** do tórax, típica de quem aperta a criança, e são altamente sugestivas de **maus-tratos**. Em **III** (5 anos), a fratura supracondiliana do úmero é a lesão típica da **queda com o braço estendido**, da própria altura. Em **IV** (4 meses), fratura de osso longo por **torção e compressão** num lactente que ainda não anda é, até prova em contrário, **maus-tratos**.\n\n**Na prova:** fratura de costela ou de osso longo em quem ainda não anda é sinal de alerta; espiral da tíbia em quem começou a andar costuma ser acidental.",
-  "correta": "**I-C, II-B, III-A, IV-D.** Torção de baixa energia na tíbia de quem anda; compressão torácica no lactente; queda da própria altura na supracondiliana; torção com compressão no lactente de 4 meses.",
-  "incorretas": {
-   "A": "**Nenhum par correto.** A espiral da tíbia aos 3 anos é torção de baixa energia, e as costelas do lactente vêm de compressão anteroposterior, não de torção.",
-   "C": "**Nenhum par correto.** A supracondiliana aos 5 anos é queda da própria altura, e a fratura de osso longo aos 4 meses é torção com compressão, não compressão torácica.",
-   "D": "**Troca II e III.** As costelas do lactente vêm de compressão anteroposterior, e a supracondiliana aos 5 anos, de queda da própria altura."
-  },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
- },
- "pediatria-0413": {
-  "conceito": "**A classificação de Gschwind e Tonkin.** Orienta a cirurgia da contratura em pronação do antebraço na paralisia cerebral, com base na supinação **ativa** e **passiva**. No **grupo 1**, há supinação ativa além da posição neutra. No **grupo 2**, a supinação ativa chega até a neutra ou menos. No **grupo 3**, **não há supinação ativa**, mas a **supinação passiva é livre**. No **grupo 4**, até a supinação passiva está limitada, por contratura fixa.\n\n**Por que o grupo 3 recebe o redirecionamento.** Se o antebraço supina passivamente mas o paciente não consegue fazê-lo, falta um motor supinador. Redirecionar o **pronador redondo**, passando-o por trás do rádio, transforma o principal pronador em supinador. Nos grupos 1 e 2 bastam liberações menores; no grupo 4, a rigidez precisa ser tratada antes.\n\n**Na prova:** sem supinação ativa e com supinação passiva livre, **grupo 3**, redirecionamento do **pronador redondo**.",
-  "correta": "**Grupo 3.** Sem supinação ativa, mas com supinação passiva livre: o pronador redondo redirecionado passa a supinar.",
-  "incorretas": {
-   "A": "**Ainda supina ativamente.** No grupo 1 há supinação ativa além da neutra, e o redirecionamento não é necessário.",
-   "B": "**Liberações bastam.** No grupo 2 a supinação ativa chega à neutra, e o tratamento envolve liberações, não o redirecionamento.",
-   "D": "**Contratura fixa.** No grupo 4 a supinação passiva está limitada, e o redirecionamento isolado não resolve."
-  },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
- },
- "pediatria-0423": {
-  "alerta": "O gabarito registrado (A) contraria a associação clássica: a curvatura posteromedial congênita da tíbia se associa ao pé calcâneo valgo (alternativa D), enquanto a pseudartrose se associa à curvatura anterolateral. Pode tratar-se de erro de gabarito ou de transcrição da prova.",
-  "conceito": "**A direção da curvatura diz o prognóstico.** A **curvatura posteromedial** congênita da tíbia é, em geral, **benigna**: vem acompanhada de **pé calcâneo valgo**, com o dorso do pé quase encostado na perna, e tende a **corrigir espontaneamente** nos primeiros anos. O problema residual mais comum é a **discrepância de comprimento**, que pode exigir equalização.\n\n**A curvatura anterolateral** é a preocupante: associa-se à **neurofibromatose** e à **pseudartrose congênita da tíbia**, e não deve ser corrigida com osteotomia simples.\n\n**Na prova:** posteromedial lembra **calcâneo valgo** e discrepância; anterolateral lembra **neurofibromatose** e **pseudartrose**.",
-  "correta": "**Gabarito oficial, com ressalva.** A pseudartrose foi a alternativa indicada, mas ela se associa à curvatura anterolateral. Veja o aviso no início do comentário.",
-  "incorretas": {
-   "B": "**Sem relação.** A platispondilia é achado vertebral de displasias esqueléticas.",
-   "C": "**Curvatura anterolateral.** A neurofibromatose se associa à curvatura anterolateral, não à posteromedial.",
-   "D": "**É a associação clássica.** Pela bibliografia, a curvatura posteromedial acompanha o pé calcâneo valgo."
-  },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
- },
- "pediatria-0473": {
-  "conceito": "**A deformidade de Sprengel.** É a elevação congênita da escápula, que não desce da região cervical para a torácica durante o desenvolvimento. A escápula fica alta, pequena e rodada, com limitação sobretudo da abdução. Associações frequentes incluem Klippel-Feil, escoliose congênita e anomalias costais.\n\n**O osso omovertebral.** É uma ponte, óssea, cartilaginosa ou fibrosa, entre o ângulo superomedial da escápula e os processos espinhosos, lâminas ou transversos da coluna cervical. Está presente em cerca de **um terço** dos pacientes e, quando existe, precisa ser ressecado na cirurgia para permitir o abaixamento da escápula.\n\n**Na prova:** o osso omovertebral aparece em **1/3** dos casos de Sprengel.",
-  "correta": "**Um terço.** O osso omovertebral está presente em cerca de um terço dos pacientes com deformidade de Sprengel.",
-  "incorretas": {
-   "A": "**Nem todos.** A ponte omovertebral é achado frequente, mas não obrigatório.",
-   "B": "**Superestima.** A frequência descrita é de cerca de um terço, não metade.",
-   "D": "**Subestima.** A ponte omovertebral é mais comum que um em seis casos."
-  },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
- },
- "pediatria-0483": {
-  "conceito": "**As linhas da radiografia da displasia do quadril.** A **linha de Hilgenreiner** é **horizontal** e passa pelas **cartilagens trirradiadas** dos dois lados; é a referência a partir da qual se medem o índice acetabular e a altura da metáfise. A **linha de Perkins** é **vertical**, perpendicular à de Hilgenreiner, e passa pela borda lateral do teto acetabular; as duas formam os quadrantes de Ombrédanne, e o núcleo da cabeça femoral normal fica no quadrante inferomedial.\n\n**As outras.** O **arco de Shenton** é a curva contínua entre a borda inferior do colo femoral e a borda superior do forame obturado; quando se quebra, sugere subluxação. A **linha de Klein** corre pela borda superior do colo e serve para a **epifisiólise**, não para a displasia.\n\n**Na prova:** linha horizontal pelas trirradiadas é **Hilgenreiner**; vertical pela borda do acetábulo é **Perkins**.",
-  "correta": "**Hilgenreiner.** Linha horizontal que passa pelas cartilagens trirradiadas, base da medida do índice acetabular.",
-  "incorretas": {
-   "A": "**É a vertical.** A linha de Perkins desce pela borda lateral do acetábulo, perpendicular à de Hilgenreiner.",
-   "B": "**É um arco.** O arco de Shenton une colo femoral e forame obturado.",
-   "D": "**Outra doença.** A linha de Klein, pela borda superior do colo, é usada na epifisiólise."
-  },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
- },
- "pediatria-0501": {
-  "conceito": "**O risco do abaixamento da escápula.** Na correção cirúrgica da deformidade de Sprengel, como nas técnicas de Woodward e de Green, a escápula é levada para baixo. Esse abaixamento traciona o plexo braquial contra a clavícula e a primeira costela, e o risco de **lesão do plexo** cresce com a idade, porque as estruturas ficam menos complacentes.\n\n**A osteotomia da clavícula.** Para proteger o plexo, faz-se uma osteotomia ou morcelização de cerca de 2 cm no **terço médio da clavícula**, que dá folga ao espaço costoclavicular. A bibliografia da prova a indica preferencialmente nas crianças maiores, a partir de cerca de **8 anos**. Nas mais novas, o abaixamento costuma ser feito sem ela.\n\n**Na prova:** osteotomia da clavícula no Sprengel, para proteger o plexo, a partir dos **8 anos**.",
-  "correta": "**8 anos.** Nas crianças maiores, o abaixamento da escápula aumenta o risco de lesão do plexo, e a osteotomia da clavícula dá folga ao espaço costoclavicular.",
-  "incorretas": {
-   "A": "**Cedo demais.** Aos 2 anos o abaixamento costuma ser feito sem osteotomia da clavícula.",
-   "B": "**Cedo demais.** Aos 4 anos a osteotomia ainda não é indicada de rotina.",
-   "C": "**Ainda não é o marco.** A indicação preferencial descrita é a partir dos 8 anos."
-  },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
- },
- "pediatria-0514": {
-  "conceito": "**O reflexo do susto (sobressalto).** É desencadeado por um **estímulo súbito**, como um barulho alto ou um **toque no esterno**, e produz **flexão** dos cotovelos e dos joelhos, com as mãos fechadas. Não deve ser confundido com o reflexo de Moro.\n\n**Como diferenciar.** O **Moro** é provocado pela perda súbita de apoio da cabeça e tem duas fases: primeiro **abdução e extensão** dos braços com abertura das mãos, depois adução, como num abraço. O **Galant** é a incurvação do tronco ao estimular a pele paravertebral. O reflexo de **paraquedas** surge mais tarde, por volta dos 8 a 9 meses, e persiste. A assimetria ou ausência desses reflexos ajuda no diagnóstico de lesão do plexo braquial, fratura da clavícula e doenças neurológicas.\n\n**Na prova:** toque no esterno com **flexão** de cotovelos e joelhos é o **reflexo do susto**; extensão e abdução dos braços é **Moro**.",
-  "correta": "**Reflexo do susto.** O toque no esterno provoca flexão de cotovelos e joelhos, diferente da extensão e abdução do Moro.",
-  "incorretas": {
-   "B": "**Braços em extensão.** O Moro, provocado pela queda da cabeça, começa com abdução e extensão dos braços.",
-   "C": "**Estímulo paravertebral.** O Galant é a incurvação do tronco ao estimular a pele ao lado da coluna.",
-   "D": "**Resposta a estímulo nocivo.** O reflexo de retirada é a flexão do membro estimulado, não a resposta global ao toque esternal.",
-   "E": "**Aparece mais tarde.** O paraquedas surge por volta dos 8 a 9 meses e não existe no neonato."
-  },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
  },
  "pediatria-0713": {
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
