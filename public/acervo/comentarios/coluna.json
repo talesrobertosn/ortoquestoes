@@ -3588,75 +3588,87 @@
   "conferido": false
  },
  "coluna-0343": {
+  "incorretas": {
+   "A": "**Certo só caberia em uma série específica com esse rendimento.** Um serviço ou tipo de amostra pode ter resultado baixo, mas isso não define a sensibilidade geral da cultura na tuberculose da coluna."
+  },
+  "conceito": "**Onde começa a infecção.** A espondilite tuberculosa costuma iniciar-se no corpo vertebral por disseminação hematogênica. Pode alcançar vértebras contíguas e o disco, além de formar abscesso paravertebral ou epidural. O disco não é necessariamente o tecido com maior quantidade de bacilos, especialmente no início.\n\n**Como confirmar.** A coleta deve buscar tecido do foco mais representativo, por biópsia vertebral ou de coleção acessível, para histopatologia, cultura de micobactérias e testes moleculares quando disponíveis. O rendimento varia conforme local amostrado, volume, técnica, tratamento prévio e método laboratorial. Em séries contemporâneas de espondilite tuberculosa, a positividade da cultura de materiais de biópsia fica muito acima de 10%.\n\n**Erro do percentual.** O número de 10% não é uma taxa geral aceitável para cultura de material obtido em tuberculose vertebral. Uma amostra apenas discal pode render menos que tecido paravertebral, mas resultado negativo não exclui a doença e não autoriza fixar esse rendimento para todos os pacientes.",
+  "correta": "**Errado: a taxa proposta é excessivamente baixa como regra.** A cultura de material adequadamente coletado na espondilite tuberculosa pode ser positiva em proporção substancialmente maior; o rendimento depende do sítio e do método.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10 edição, p. 715."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "coluna-0344": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado pode ser defensável na leitura literal da frase.** Há estudos com diferença entre grupos para nódulos de Schmorl e para alguns subtipos de outras variantes, motivo pelo qual a resposta provável recebeu alerta."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. Mantivemos “Certo” como resposta provável para a ideia de que achados radiológicos não provam a causa da lombalgia. Contudo, a alegação conjunta de incidência semelhante é discutível: um estudo encontrou nódulos de Schmorl em 19% dos sintomáticos e 9,4% dos controles, e as associações de espinha bífida oculta e vértebra de transição variam conforme o estudo e o subtipo.",
+  "conceito": "**Achado não é diagnóstico causal.** Espinha bífida oculta é falha de fechamento do arco posterior; vértebra de transição é sacralização de L5 ou lombarização de S1; nódulo de Schmorl é herniação do disco através da placa terminal para o corpo vertebral. Os três podem aparecer em exames de pessoas sem dor.\n\n**Associações heterogêneas.** Estudos comparativos não mostram o mesmo comportamento para todas essas alterações. Certos tipos de vértebra de transição podem relacionar-se a dor, enquanto outros não; espinha bífida oculta costuma ser incidental, embora resultados variem. Nódulos de Schmorl também podem ser assintomáticos, mas algumas amostras os encontraram mais frequentemente em pacientes com lombalgia.\n\n**Leitura clínica.** O exame deve ser correlacionado com história, topografia, sinais neurológicos e outras causas de dor. A presença isolada de uma variante anatômica não prova que ela seja o gerador dos sintomas; por outro lado, dizer que todas têm incidência necessariamente igual em sintomáticos e assintomáticos simplifica evidências conflitantes.",
+  "correta": "**Certo é a resposta provável preservada, com ressalva epidemiológica.** Achados comuns em assintomáticos não devem ser tratados automaticamente como causa da lombalgia, embora as frequências não sejam sempre iguais.",
   "referencias": [
    "Weinstein SL, Buckwalter JA. Turek’s orthopaedics: principles and their application. Philadelphia: Lippincott/Manole. 5th Edition, p. 482."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "coluna-0345": {
+  "incorretas": {
+   "B": "**Errado confundiria discetomia ampla com excisão integral.** Conseguir limpeza suficiente para fusão não significa alcançar indistintamente todo o ânulo e todas as regiões do disco."
+  },
+  "conceito": "**PLIF é intersomática posterior.** Na posterior lumbar interbody fusion, o cirurgião acessa o espaço discal pela parte posterior, após descompressão e afastamento controlado das estruturas neurais. Remove grande parte do disco, prepara as placas terminais e insere enxerto ou espaçadores para obter fusão entre corpos vertebrais.\n\n**Limite do corredor.** Raízes nervosas e saco dural restringem o acesso ao espaço anterior e lateral. A discetomia pode ser extensa, mas não equivale à excisão anatômica de todo o ânulo e de cada porção do disco. Essa é uma desvantagem relativa da via posterior em comparação com o acesso anterior, que expõe mais diretamente o disco e permite implantes de maior área.\n\n**Vantagens e custos.** A via posterior permite combinar descompressão, fusão intersomática e fixação pedicular por uma incisão. Em contrapartida, exige manipulação neural e tem riscos de lesão dural e radicular. A escolha entre PLIF, TLIF, ALIF e outras técnicas depende da indicação, anatomia e objetivos de correção.",
+  "correta": "**Certo como limitação do acesso posterior.** A PLIF remove material discal e prepara o espaço, mas a exposição neural limitada impede garantir retirada anatômica de todo o disco.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Journal of the American Academy of Orthopaedics Surgeons. May / June 1995; vol. 3, nº 3, p. 135."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "coluna-0346": {
+  "incorretas": {
+   "B": "**Errado valeria se o formato fosse tomado como diagnóstico isolado.** Há pessoas com esse contorno sem sintomas; a estenose clínica depende da compressão real e do quadro apresentado."
+  },
+  "conceito": "**Formato do canal.** Em corte axial, o canal lombar pode ter contorno arredondado, triangular ou em trevo. A configuração em trevo reflete estreitamento central e reentrâncias próximas aos recessos laterais; pode fazer parte de uma anatomia de desenvolvimento com menor reserva de espaço.\n\n**Por que surgem sintomas.** Um canal constitucionalmente menor tolera pior as alterações adquiridas, como hipertrofia facetária, espessamento do ligamento amarelo e abaulamento discal. A compressão da cauda equina e das raízes pode produzir claudicação neurogênica, dor ou parestesias nas pernas, muitas vezes piores ao ficar em pé e aliviadas pela flexão.\n\n**Forma não basta.** O contorno em trevo aumenta a predisposição, mas não diagnostica estenose sintomática sozinho. Importam área efetiva do saco dural, recessos e forames, sinais clínicos e correlação com a imagem. A afirmação expressa uma associação anatômica, não que todo canal em trevo cause sintomas.",
+  "correta": "**Certo: há menor reserva anatômica.** O canal em trevo pode ter dimensões menores e favorecer compressão quando se somam alterações degenerativas.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Journal of the American Academy of Orthopaedics Surgeons. July / August 1999; vol. 7, nº 4, p. 139."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "coluna-0347": {
+  "incorretas": {
+   "A": "**Certo seria adequado sem a generalização biomecânica.** Dizer apenas que C5-C6 está entre os níveis cervicais mais afetados é defensável; acrescentar maior mobilidade coronal como causa exclusiva não é."
+  },
+  "conceito": "**Nível e raiz.** Hérnias cervicais são frequentes nos níveis inferiores, especialmente C5-C6 e C6-C7. Uma hérnia foraminal em C5-C6 tende a afetar a raiz C6, com dor irradiada e possíveis alterações sensitivas, reflexas ou motoras correspondentes. O nível mais frequente pode variar entre séries e faixas etárias.\n\n**Movimento não é igual em todos os planos.** C5-C6 participa intensamente da flexão e extensão cervical, mas o máximo de inclinação lateral e rotação pode ocorrer em níveis mais altos. Além disso, degeneração e carga cumulativa influenciam a distribuição das hérnias. Não se pode justificar o predomínio de C5-C6 afirmando que ali há necessariamente a maior mobilidade tanto sagital quanto coronal.\n\n**Pegadinha da frase composta.** A primeira parte é plausível, mas a explicação biomecânica universal no final a torna incorreta. Ao interpretar questão de certo ou errado, cada componente causal precisa ser válido.",
+  "correta": "**Errado pelo motivo atribuído.** C5-C6 é um nível muito acometido, porém não concentra obrigatoriamente a maior mobilidade em todos os planos citados.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 156."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "coluna-0348": {
+  "incorretas": {
+   "A": "**Certo pode valer em situações selecionadas.** Instabilidade demonstrada, deformidade ou outras condições do segmento podem justificar fusão associada, mas isso não é regra para toda hérnia operada."
+  },
+  "conceito": "**Objetivo da cirurgia.** Na hérnia discal lombar com radiculopatia persistente ou déficit neurológico relevante, a operação usual é retirar o fragmento que comprime a raiz, por discectomia ou microdiscectomia. O procedimento busca descompressão com preservação de estruturas sempre que possível.\n\n**Quando fundir.** Artrodese elimina movimento do segmento e acrescenta morbidade. Não é componente obrigatório da primeira cirurgia para hérnia simples. Pode entrar em discussão se houver instabilidade, deformidade, dor axial importante associada ou determinadas recidivas, sempre após avaliação individual.\n\n**Indicações urgentes.** Síndrome da cauda equina e déficit motor grave ou progressivo exigem avaliação cirúrgica rápida. Mesmo nesses casos, a urgência é descomprimir a estrutura neural; a necessidade de fusão depende da estabilidade e da técnica, não da simples presença da hérnia.",
+  "correta": "**Errado: artrodese não acompanha toda discectomia.** Na hérnia lombar primária sem instabilidade, retirar a hérnia e descomprimir a raiz geralmente é suficiente.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 159."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "coluna-0349": {
