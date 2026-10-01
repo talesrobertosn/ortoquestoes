@@ -132,8 +132,16 @@ Deno.serve(async (req) => {
     let pagamento;
     if (pedido.pagamento_id) pagamento = await consultarPagamento(token, pedido.pagamento_id);
     else {
-      const r = await fetch("https://api.mercadopago.com/v1/payments", { method: "POST", headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json", "X-Idempotency-Key": `pix-${pedido.id}` }, body: JSON.stringify({ transaction_amount: pedido.valor_centavos / 100, description: `OrtoQuest\xF5es ${pedido.plano} \u2014 ${pedido.meses} m\xEAs(es), sem renova\xE7\xE3o autom\xE1tica`, payment_method_id: "pix", external_reference: `pix:${pedido.id}`, date_of_expiration: pedido.expira_em, payer: { email, identification: { type: "CPF", number: body.cpf.replace(/\D/g, "") } } }) });
-      if (!r.ok) return json({ erro: "O Mercado Pago n\xE3o conseguiu gerar o Pix. Tente novamente." }, 502, req);
+      const r = await fetch("https://api.mercadopago.com/v1/payments", { method: "POST", headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json", "X-Idempotency-Key": `pix-${pedido.id}` }, body: JSON.stringify({ transaction_amount: pedido.valor_centavos / 100, description: `OrtoQuest\xF5es ${pedido.plano} \u2014 ${pedido.meses} m\xEAs(es), sem renova\xE7\xE3o autom\xE1tica`, payment_method_id: "pix", external_reference: `pix:${pedido.id}`, date_of_expiration: new Date(pedido.expira_em).toISOString(), payer: { email, identification: { type: "CPF", number: body.cpf.replace(/\D/g, "") } } }) });
+      if (!r.ok) {
+        const resposta = await r.json().catch(() => ({}));
+        const seguro = (valor) => (typeof valor === "string" || typeof valor === "number") && /^[a-z0-9_-]{1,80}$/i.test(String(valor)) ? String(valor) : null;
+        const codigo = seguro(resposta.error);
+        const causas = Array.isArray(resposta.cause) ? resposta.cause.map((item) => seguro(item.code)).filter(Boolean).slice(0, 5) : [];
+        console.error("mercado_pago_pix_recusado", { http_status: r.status, codigo, causas, pedido_id: pedido.id });
+        const referencia = [codigo, ...causas].filter(Boolean).join("/") || `HTTP ${r.status}`;
+        return json({ erro: `O Mercado Pago recusou a gera\xE7\xE3o do Pix (${referencia}). Nenhuma cobran\xE7a foi confirmada.` }, 502, req);
+      }
       pagamento = await r.json();
       const salvar = await banco(`pedidos_pix?id=eq.${pedido.id}&pagamento_id=is.null&status=eq.criando`, { method: "PATCH", body: JSON.stringify({ pagamento_id: String(pagamento.id), status: "pending" }) });
       if (!salvar.ok) throw new Error("registro_pix_falhou");
