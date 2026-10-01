@@ -10668,51 +10668,59 @@
   "conferido": false
  },
  "trauma-1162": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "A": "**Certo seria plausível em uma fratura metafisária instável específica.** Se o bloqueio for retirado antes de haver suporte ósseo adequado, encurtamento e sobrecarga dos implantes podem ocorrer; o enunciado não descreve essa condição."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta provável B rejeita a afirmação como regra geral. Há ressalva importante: em fraturas metafisárias instáveis, a dinamização pode causar encurtamento ou perda do alinhamento; relatos também relacionam falha por fadiga a implantes dinamizados em fraturas com consolidação tardia. Sem definir padrão, momento e técnica, não é possível afirmar aumento uniforme desses dois riscos.",
+  "conceito": "**Por que a metáfise é diferente.** Ao se alargar perto da articulação, o canal tibial oferece menos contato cortical à haste. Os parafusos de bloqueio passam a controlar grande parte da posição do fragmento curto. Se a fratura é cominutiva ou há falha medial, a estabilidade de comprimento e eixo depende ainda mais desse bloqueio.\n\n**O que significa dinamizar.** A técnica reduz a restrição axial, em geral modificando o bloqueio, para permitir compressão controlada do foco. Ela pode auxiliar a consolidação de fraturas selecionadas com contato e calo, mas não corrige falta de estabilidade rotacional, defeito ósseo relevante ou infecção. Em metáfise instável, liberar o movimento pode provocar encurtamento ou perda de redução.\n\n**Fadiga não tem causa única.** A quebra de parafuso ou haste resulta de cargas repetidas enquanto o osso não assume parte suficiente da carga. Tamanho do implante, padrão da fratura, persistência da pseudartrose e configuração do bloqueio interferem. A dinamização não causa necessariamente quebra e perda de redução em toda fratura metafisária; tampouco é isenta desses riscos. A decisão requer avaliação da estabilidade residual.",
+  "correta": "**Errado como regra geral.** A dinamização pode ser útil em casos selecionados, enquanto perda de redução e falha por fadiga dependem da estabilidade e da evolução da fratura.",
   "referencias": [
    "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. p. 174."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1163": {
+  "incorretas": {
+   "A": "**Certo seria para uma fratura parcial articular sagital da estiloide radial.** Esse é o padrão 23-B1, diferente da fratura de borda com deslocamento radiocárpico."
+  },
+  "conceito": "**O que é uma fratura de Barton.** Trata-se de fratura articular da borda do rádio distal associada a subluxação ou luxação radiocárpica, com o carpo acompanhando o fragmento de borda. A borda dorsal configura a Barton clássica; a borda volar é chamada Barton reversa em muitas classificações.\n\n**A lógica AO.** Na codificação antiga do rádio distal, 23 designa o segmento; B indica fratura parcialmente articular. O grupo 23-B1 corresponde à fratura sagital, frequentemente da estiloide radial. A fratura da borda dorsal é 23-B2, e a da borda volar é 23-B3. A nomenclatura atual AO/OTA emprega o prefixo 2R3, mas mantém a distinção anatômica entre os grupos B.\n\n**Por que a distinção importa.** O fragmento de borda sustenta o carpo. Se ele não for reduzido e contido, a articulação pode continuar subluxada apesar de parecer que parte do rádio foi alinhada. Radiografias em incidências adequadas e, quando necessário, tomografia ajudam a reconhecer tamanho, cominuição e direção do fragmento para planejar a fixação.",
+  "correta": "**Errado: Barton não é 23-B1.** A Barton dorsal pertence ao grupo 23-B2; a variante volar, chamada reversa, ao 23-B3.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. p. 71."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1164": {
+  "incorretas": {
+   "B": "**Errado seria incluir um quarto item na pontuação original.** Reatividade pupilar pode ser registrada em adaptações da avaliação neurológica, mas não substitui os três componentes da escala clássica."
+  },
+  "conceito": "**Três respostas observadas.** A escala de coma de Glasgow descreve o nível de consciência pela melhor abertura ocular, melhor resposta verbal e melhor resposta motora. Cada domínio deve ser registrado separadamente, além da soma, porque duas pessoas com a mesma pontuação total podem ter padrões neurológicos diferentes.\n\n**Como pontuar.** A resposta ocular varia de 1 a 4, a verbal de 1 a 5 e a motora de 1 a 6; a soma possível vai de 3 a 15. A resposta motora diferencia, por exemplo, obedecer a comandos, localizar a dor, retirar o membro, posturas anormais e ausência de resposta. Intubação pode impedir testar a fala: nesse caso, deve-se registrar a resposta verbal como não testável, não atribuir automaticamente o valor mínimo.\n\n**O que a escala não substitui.** Pupilas, lateralização motora, sedação, intoxicação e alterações hemodinâmicas exigem avaliação própria. A escala acompanha a evolução e comunica gravidade, mas não revela sozinha a causa do coma ou a necessidade de intervenção neurocirúrgica.",
+  "correta": "**Certo: olhos, fala e movimento compõem a escala.** São os três parâmetros usados para descrever o melhor nível de resposta observado.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 1996. 4th Edition, Chap. 2, Table 2-5, p. 129."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1165": {
+  "incorretas": {
+   "B": "**Errado seria descartá-la como achado sem importância no trauma pélvico.** Uma fratura transversa isolada por outro mecanismo não prova instabilidade, mas a avulsão nesse contexto merece atenção específica."
+  },
+  "conceito": "**O sinal de L5.** O ligamento iliolombar liga o processo transverso de L5 ao ilíaco e contribui para a estabilidade da transição lombossacra e da região posterior da pelve. Uma avulsão desse processo após trauma pélvico indica tração importante no ligamento e pode denunciar deslocamento do anel posterior.\n\n**Sinal de alerta, não diagnóstico isolado.** A fratura-avulsão deve levantar forte suspeita de lesão pélvica instável e motivar busca sistemática de diástase sacroilíaca, fratura sacral, lesões ligamentares posteriores e deslocamento vertical. Não se deve decidir a necessidade de fixação apenas pela presença de uma pequena fratura do processo transverso: mecanismo, exame, tomografia e padrão completo do anel são fundamentais.\n\n**Consequência prática.** Na avaliação inicial, proteger o paciente de novas perdas sanguíneas e estabilizar provisoriamente a pelve quando indicado precede a classificação definitiva. Uma avulsão de L5 pode ser discreta na radiografia simples, mas sua identificação na tomografia impede tratar uma lesão posterior grave como fratura isolada do ramo púbico.",
+  "correta": "**Certo: é um marcador de possível instabilidade pélvica.** A avulsão sugere lesão do ligamento iliolombar e exige investigação do anel posterior.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. p. 216."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1166": {
