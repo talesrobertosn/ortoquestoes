@@ -6203,6 +6203,17 @@
   "geradoEm": "2026-09-30",
   "conferido": false
  },
+ "trauma-0783": {
+  "incorretas": {
+   "A": "**O 2b ainda possui disco incompleto.** Pode ter configuração articular própria, mas não atende à condição explícita de ausência de disco.",
+   "B": "**O 3a não é o subtipo plano.** Ele pertence ao grupo sem disco, porém sua conformação articular é elipsoide.",
+   "C": "**O 3b também não é plano.** Assim como o 3a, carece de disco, mas a superfície tem caráter elipsoide, e não a configuração plana solicitada."
+  },
+  "conceito": "**A classificação de Emura é morfológica.** Ela descreve a articulação acromioclavicular pelo disco intra-articular e pelo formato das superfícies, não pela gravidade de uma luxação. No tipo 1, o disco é completo e separa toda a cavidade; no tipo 2, é incompleto; no tipo 3, o disco está ausente. Essa primeira separação já elimina qualquer subtipo 2 quando o enunciado diz que não há disco.\n\n**O formato distingue os subtipos sem disco.** Emura subdividiu o tipo 3 em 3a, 3b e 3c conforme a conformação das superfícies articulares. Os subtipos 3a e 3b têm caráter elipsoide; no 3c, as superfícies são planas. A configuração elipsoide limita parte da rotação axial da articulação, o que pode influenciar o movimento escapular durante a elevação do braço.\n\n**Não confundir com Rockwood.** Rockwood I a VI classifica a lesão traumática acromioclavicular pela integridade ligamentar e pelo sentido e magnitude do deslocamento. Emura descreve a anatomia da articulação, inclusive em pessoas sem luxação. O número 3 em uma classificação não corresponde ao grau III da outra.",
+  "correta": "**Tipo 3c.** O algarismo 3 indica ausência de disco; a letra c identifica as superfícies articulares planas na classificação morfológica de Emura.",
+  "geradoEm": "2026-09-30",
+  "conferido": false
+ },
  "trauma-0784": {
   "incorretas": {
    "A": "**É frequente.** A rigidez do cotovelo é uma complicação comum, pelas duas fraturas e pela imobilização.",
@@ -8437,6 +8448,19 @@
   "geradoEm": "2026-09-30",
   "conferido": false
  },
+ "trauma-1005": {
+  "incorretas": {
+   "A": "**Inverte a rotação da flexão.** A rotação externa da tíbia é associada à extensão terminal; na flexão inicial, o joelho destrava com rotação interna tibial relativa.",
+   "B": "**Inverte a rotação da extensão.** O mecanismo de travamento envolve rotação externa da tíbia em relação ao fêmur, não interna.",
+   "C": "**Os valores são plausíveis e amplamente citados.** Cerca de 67 graus no balanço e 83 graus para subir escadas correspondem a referências clássicas de arco funcional; esta alternativa não pode ser descartada com segurança na redação atual.",
+   "E": "**Troca o côndilo do menor deslocamento.** O valor próximo de 2 mm foi relatado para o côndilo medial; o lateral recuou cerca de 21 mm na flexão com carga dos joelhos normais estudados."
+  },
+  "alerta": "O gabarito cadastrado é D, mas o estudo original de Dennis e colaboradores (J Biomech. 2005;38:241-253, doi:10.1016/j.jbiomech.2004.02.042) relata, em joelhos normais durante a flexão com carga, translação posterior média de 21,07 mm do côndilo LATERAL e 1,94 mm do MEDIAL. A alternativa D troca os côndilos. A alternativa C também reproduz valores funcionais amplamente citados, cerca de 67 graus na fase de balanço e 83 graus para subir escadas. Mantemos o gabarito informado, mas a questão não apresenta resposta única confiável como está redigida.",
+  "conceito": "**Três planos, movimento acoplado.** O joelho combina flexão e extensão no plano sagital, rotação axial no transverso e pequenos movimentos em varo e valgo no frontal. Durante a flexão com carga, os côndilos femorais não rolam para trás de modo idêntico: o lateral recua mais, enquanto o medial se desloca pouco. Esse padrão costuma ser descrito como pivô medial, mas varia com tarefa, carga e integridade ligamentar.\n\n**Os números de Dennis precisam estar do lado certo.** No estudo fluoroscópico de joelhos normais, a translação posterior média foi de cerca de 21 mm no côndilo lateral e 2 mm no medial. Após deficiência do ligamento cruzado anterior, o deslocamento medial aumentou. A análise do eixo helicoidal descreve a mudança do eixo instantâneo do movimento, mas não autoriza inverter os valores dos dois côndilos.\n\n**Rotação e arco funcional.** Na extensão terminal, a tíbia roda externamente em relação ao fêmur no mecanismo de travamento; na flexão inicial, ocorre o movimento inverso para destravar. Valores clássicos de arco funcional citam aproximadamente 67 graus de flexão no balanço da marcha e 83 graus para subir escadas, embora a necessidade real varie com a pessoa e a tarefa. Assim, a direção da rotação e o lado do maior recuo condilar são mais úteis que decorar um número solto.",
+  "correta": "**D é a chave registrada, mas contém inversão.** O valor próximo de 21 mm aparece no estudo de Dennis para o côndilo lateral, não para o medial. Consulte o alerta antes de usar esta questão como parâmetro de desempenho.",
+  "geradoEm": "2026-09-30",
+  "conferido": false
+ },
  "trauma-1006": {
   "incorretas": {
    "A": "**Radiografia normal.** O estágio 1 só aparece na ressonância ou na cintilografia.",
@@ -8483,6 +8507,18 @@
   },
   "conceito": "**A inflamação após o trauma articular.** Um trauma do joelho (fratura intra-articular, lesão ligamentar, contusão da cartilagem) desencadeia uma resposta **inflamatória** no líquido sinovial e na cartilagem. As citocinas **pró-inflamatórias** estimulam condrócitos e sinoviócitos a produzir **metaloproteinases** (MMP-1, MMP-3, MMP-13) e **agrecanases** (ADAMTS), que degradam o colágeno tipo II e o agrecano da matriz. É o início da **artrose pós-traumática**, que pode aparecer anos depois mesmo com tratamento adequado.\n\n**A cronologia das citocinas.** A **interleucina-1 beta** (IL-1β) é a citocina liberada **mais precocemente** e em **maior nível** no **primeiro dia** após o trauma articular. Ela é o principal gatilho da cascata **catabólica** da cartilagem. O **TNF-alfa** também sobe cedo. A **IL-6** aumenta um pouco depois e se mantém; é o marcador sistêmico de gravidade no politrauma. A **IL-10** é **anti-inflamatória**. A **IL-12** está ligada à imunidade celular. As **quimiocinas** (como CCL-22) recrutam células inflamatórias.\n\n**Por que isso interessa.** A janela logo após o trauma é vista como uma oportunidade de **intervenção** para reduzir a artrose pós-traumática: antagonistas do receptor da IL-1 (como a anakinra intra-articular), aspiração da hemartrose, e outras terapias estão em estudo. O **sangue** intra-articular também é tóxico para a cartilagem.\n\n**Na clínica.** A artrose pós-traumática responde por uma parte importante das artroses do joelho e do tornozelo em jovens. Restaurar a **congruência** articular, a **estabilidade** (ligamentos, meniscos) e o **alinhamento** reduz o risco, mas não elimina o dano biológico inicial.\n\n**Na prova:** citocina em **maior nível no primeiro dia** após o trauma articular = **IL-1 beta**; IL-6 é o marcador de gravidade sistêmica no politrauma.",
   "correta": "**Interleucina 1 beta.** É a citocina liberada mais precocemente e em maior nível no primeiro dia, disparando a cascata catabólica da cartilagem.",
+  "geradoEm": "2026-09-30",
+  "conferido": false
+ },
+ "trauma-1010": {
+  "incorretas": {
+   "A": "**Na mão, a referência geral são os interósseos.** O compartimento tenar pode e deve ser medido se houver suspeita localizada nele, mas não é o sítio de rotina indicado pela tabela cobrada.",
+   "B": "**Na perna, a referência é o anterior.** A loja lateral deve ser avaliada se estiver sob suspeita, porém não substitui a anterior como ponto habitual de monitorização.",
+   "C": "**Na coxa, a referência é o anterior.** A loja posterior também pode adoecer e requerer medida dirigida, mas não é a recomendação geral apresentada na questão.",
+   "E": "**No antebraço, a referência é o flexor ou volar.** Mede-se a loja extensora quando o quadro sugere comprometimento dorsal, não como primeiro sítio universal."
+  },
+  "conceito": "**O cateter mede um compartimento, não um membro inteiro.** Na síndrome compartimental, a pressão deve ser aferida dentro da loja sob suspeita e, quando há fratura, perto da área de maior comprometimento. Uma leitura normal em compartimento não examinado não exclui pressão elevada em outro. A medida complementa a avaliação clínica, sobretudo quando a pessoa não consegue relatar dor ou o exame é pouco confiável.\n\n**Locais de referência.** Recomendações de monitorização usam a loja anterior como referência na perna e na coxa, a flexora ou volar no antebraço e os interósseos na mão e no pé. No pé com lesão do retropé, o compartimento calcâneo também merece atenção. Esses locais são pontos de partida, não uma proibição de medir outra loja clinicamente suspeita.\n\n**Interpretar perfusão, não só pressão absoluta.** A pressão de perfusão diferencial é a pressão arterial diastólica menos a pressão compartimental. Delta P inferior a aproximadamente 30 mmHg, especialmente se persistente e acompanhado de quadro compatível, sustenta a suspeita de isquemia e a necessidade de descompressão urgente. Não se deve atrasar fasciotomia evidente aguardando uma medida isolada, nem operar apenas por um número sem contexto.",
+  "correta": "**Pé, compartimentos interósseos.** Eles são o local de referência para monitorização no pé; em lesões do retropé, deve-se considerar também o compartimento calcâneo.",
   "geradoEm": "2026-09-30",
   "conferido": false
  },
@@ -10548,291 +10584,339 @@
   "conferido": false
  },
  "trauma-1156": {
+  "incorretas": {
+   "B": "**Errado seria imaginar que o método exige imobilização rígida completa.** Se não houver bom molde ou se a fratura perder o alinhamento, o tratamento funcional pode falhar, mas isso não nega seu mecanismo."
+  },
+  "conceito": "**A ideia da órtese funcional.** No método de Sarmiento, uma órtese circunferencial bem ajustada comprime a massa muscular e os demais tecidos moles ao redor da diáfise fraturada. O efeito de contenção distribui as forças e dificulta deslocamentos excessivos dos fragmentos, como um cilindro de tecidos moles sustentado pela órtese. Não é necessário engessar rigidamente as articulações vizinhas por todo o tratamento.\n\n**Movimento útil, instabilidade não.** A mobilização controlada das articulações próximas ajuda a preservar função e favorece estímulos mecânicos à consolidação. A órtese não substitui avaliação da redução, comprimento, rotação e alinhamento em radiografias seriadas. Edema inicial diminui com o tempo, por isso o ajuste precisa ser revisto para que a contenção não se perca.\n\n**Seleção importa.** A órtese funcional é particularmente conhecida no tratamento de fraturas diafisárias selecionadas do úmero; não serve indistintamente para fraturas instáveis, lesões vasculares, deformidades inaceitáveis ou pacientes que não conseguem acompanhamento. Sua eficácia depende de bom contato com os tecidos e vigilância da consolidação.",
+  "correta": "**Certo: a contenção dos tecidos moles é o princípio central.** A pressão exercida por órtese bem moldada ajuda a estabilizar os fragmentos enquanto permite função controlada.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 1378."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1157": {
+  "incorretas": {
+   "A": "**Certo só por coincidência geométrica.** Se o plano de uma fratura específica for paralelo ao eixo diafisário, a perpendicular à diáfise também será perpendicular à fratura; isso não torna a regra geral verdadeira."
+  },
+  "conceito": "**Compressão é perpendicular à fratura.** O parafuso de tração aproxima os fragmentos ao deslizar no fragmento próximo e prender as roscas no distante. Para maximizar a compressão normal à interface, seu eixo deve ser colocado, quando possível, perpendicular ao plano da fratura. O eixo da diáfise é outra referência geométrica e não determina, por si, a melhor direção.\n\n**Por que o plano muda tudo.** Em uma fratura oblíqua, um parafuso perpendicular à diáfise pode atravessar a linha de fratura em ângulo desfavorável e produzir mais componente de cisalhamento. O trajeto também precisa respeitar acesso seguro, comprimento de fragmentos e possibilidade de associação com placa de neutralização, pois o parafuso de tração isolado não controla todas as forças.\n\n**Condição técnica.** O orifício no fragmento próximo deve permitir deslizamento, e a rosca deve ficar inteiramente no fragmento distante. Se a rosca prende ambos, apertar o parafuso não aproxima adequadamente as superfícies. Esse detalhe é tão importante quanto a orientação do implante.",
+  "correta": "**Errado: a referência é o plano da fratura, não a diáfise.** O parafuso ideal cruza a interface aproximadamente a 90 graus para gerar compressão interfragmentária eficaz.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 187."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1158": {
+  "incorretas": {
+   "B": "**Errado seria descartar toda haste fresada em fratura exposta.** A resposta seria pertinente se a frase impusesse haste definitiva imediata para qualquer grau de contaminação ou instabilidade sistêmica."
+  },
+  "conceito": "**Fratura exposta não significa proibição de haste.** Na diáfise femoral, a haste intramedular bloqueada oferece fixação estável e preserva relativamente os tecidos ao redor do foco. A técnica fresada permite acomodar uma haste de maior calibre e é opção definitiva em fraturas expostas selecionadas, desde que o tratamento da ferida e o estado do paciente permitam.\n\n**Primeiro, controlar a contaminação.** Antibiótico precoce, avaliação vascular, desbridamento cirúrgico e planejamento da cobertura de partes moles são decisivos para prevenir infecção. Grau de contaminação, dano muscular, estabilidade clínica e possibilidade de desbridamento adequado definem se a haste pode ser colocada no mesmo tempo operatório ou se é preferível estabilização temporária, frequentemente com fixador externo.\n\n**A fresagem é uma escolha contextual.** Ela não autoriza negligenciar infecção ou cobertura e não é obrigatória em todas as fraturas abertas. Em lesões muito contaminadas ou em paciente instável, uma estratégia em etapas pode ser mais segura. O enunciado afirma que a haste fresada está indicada como possibilidade, não que seja universal.",
+  "correta": "**Certo: a haste fresada pode ser indicada.** Após desbridamento e seleção adequados, a exposição óssea por si só não a contraindica.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Journal of the American Academy of Orthopaedics Surgeons. May / June 2003; vol. 11, nº 3, p. 216."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1159": {
+  "incorretas": {
+   "A": "**Certo seria defender o bloqueio dinâmico em uma fratura estável selecionada.** O erro do enunciado é prescrevê-lo para todas as fraturas com base numa suposta desvantagem geral do estático."
+  },
+  "conceito": "**O que faz o bloqueio.** Na haste intramedular, parafusos proximais e distais controlam rotação e comprimento. O bloqueio estático restringe encurtamento e rotação em fraturas instáveis, cominutivas ou segmentares. O dinâmico permite certo deslizamento axial e pode promover contato entre fragmentos, desde que o padrão da fratura preserve comprimento e alinhamento.\n\n**Não existe obrigação de dinamizar.** A ideia antiga de que o bloqueio estático causaria inevitavelmente retardo de consolidação não se confirmou como regra. Hastes estaticamente bloqueadas têm altas taxas de união sem dinamização rotineira. Liberar deslizamento em uma fratura incapaz de sustentar a carga pode provocar encurtamento, desvio ou rotação.\n\n**Tratamento sob medida.** Padrão da fratura, estabilidade obtida, contato cortical e evolução do calo orientam a escolha inicial e eventuais revisões. A dinamização pode ser considerada em retardo de consolidação selecionado, depois de excluir infecção, falha mecânica e perda de redução; não é automaticamente superior ao bloqueio estático desde a cirurgia inicial.",
+  "correta": "**Errado: bloqueio estático não impõe maior risco de retardo de união como regra.** A estabilidade rotacional e de comprimento costuma ser prioritária em fraturas diafisárias femorais instáveis.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, p. 1967."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1160": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado é defensável para a frase completa.** Seria a resposta adequada se o examinador exigisse evidência de menor risco clínico, pois exposição direta e taxa de paralisia são desfechos diferentes."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta provável A descreve a exposição direta do nervo radial pela via posterior, mas a alegação de menor risco de paralisia não é universal: revisões observacionais encontraram risco de lesão iatrogênica semelhante ou até maior nessa via, com possível influência da seleção dos casos.",
+  "conceito": "**Trajeto do nervo radial.** O nervo radial percorre o sulco espiral na face posterior do úmero, junto à artéria braquial profunda, e atravessa o septo intermuscular lateral mais distalmente. Por isso, na abordagem posterior da diáfise, pode ser visto e protegido diretamente, especialmente quando é necessário trabalhar na face posterior ou explorar uma lesão neural.\n\n**Ver o nervo não elimina o risco.** Dissecção, afastadores, manipulação dos fragmentos e posição da placa ou dos parafusos podem causar neuropraxia ou lesão iatrogênica. Abordagens anterolaterais também permitem localizar o nervo conforme o nível da fratura. Comparações clínicas entre vias são influenciadas pela localização, gravidade e indicação de exploração.\n\n**Escolha da via.** O acesso deve corresponder ao traço, ao segmento a fixar, ao estado das partes moles e à necessidade de inspecionar o nervo. Registrar função radial antes e depois da cirurgia e identificar sua relação com a placa são medidas mais confiáveis do que supor que uma única via seja sempre a mais segura.",
+  "correta": "**Certo é a resposta provável pela exposição direta.** A via posterior facilita identificar o nervo radial, mas não há garantia de menor paralisia intraoperatória em comparação com todas as outras vias.",
   "referencias": [
    "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. Levine, p. 30."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1161": {
+  "incorretas": {
+   "B": "**Errado seria exigir redução anatômica de toda fratura diafisária umeral.** A ressalva é que um desvio de 30 graus no plano sagital já ultrapassa o limite habitualmente aceito."
+  },
+  "conceito": "**Por que o úmero tolera algum desvio.** O braço não suporta peso corporal como o membro inferior, e ombro e cotovelo compensam pequenas alterações do eixo. Isso permite tratamento não operatório de muitas fraturas diafisárias com órtese funcional, desde que haja contato, alinhamento aceitável e seguimento para confirmar consolidação.\n\n**Limites clássicos.** Na avaliação do alinhamento, costumam ser aceitos até 30 graus de varo ou valgo, aproximadamente 20 graus de angulação no plano sagital, até 15 graus de malrotação e encurtamento de até 3 cm. O enunciado agrupa o limite de 30 graus sem especificar plano: ele se refere sobretudo ao desvio coronal. Esses valores são referências clínicas, não metas desejáveis.\n\n**Quando não aceitar a deformidade.** Rotação e encurtamento podem ser mais difíceis de reconhecer apenas na radiografia. Dor persistente, perda progressiva de alinhamento, incapacidade funcional, pseudartrose ou situação que exige fixação por outros motivos mudam a conduta. A tolerância não deve ser extrapolada para fraturas articulares ou deformidade sagital de 30 graus.",
+  "correta": "**Certo, interpretando 30 graus como desvio coronal.** Os limites citados de 2 a 3 cm de encurtamento e 15 graus de rotação são os parâmetros clássicos de tolerância na diáfise umeral.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, p. 1542."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1162": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "A": "**Certo seria plausível em uma fratura metafisária instável específica.** Se o bloqueio for retirado antes de haver suporte ósseo adequado, encurtamento e sobrecarga dos implantes podem ocorrer; o enunciado não descreve essa condição."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta provável B rejeita a afirmação como regra geral. Há ressalva importante: em fraturas metafisárias instáveis, a dinamização pode causar encurtamento ou perda do alinhamento; relatos também relacionam falha por fadiga a implantes dinamizados em fraturas com consolidação tardia. Sem definir padrão, momento e técnica, não é possível afirmar aumento uniforme desses dois riscos.",
+  "conceito": "**Por que a metáfise é diferente.** Ao se alargar perto da articulação, o canal tibial oferece menos contato cortical à haste. Os parafusos de bloqueio passam a controlar grande parte da posição do fragmento curto. Se a fratura é cominutiva ou há falha medial, a estabilidade de comprimento e eixo depende ainda mais desse bloqueio.\n\n**O que significa dinamizar.** A técnica reduz a restrição axial, em geral modificando o bloqueio, para permitir compressão controlada do foco. Ela pode auxiliar a consolidação de fraturas selecionadas com contato e calo, mas não corrige falta de estabilidade rotacional, defeito ósseo relevante ou infecção. Em metáfise instável, liberar o movimento pode provocar encurtamento ou perda de redução.\n\n**Fadiga não tem causa única.** A quebra de parafuso ou haste resulta de cargas repetidas enquanto o osso não assume parte suficiente da carga. Tamanho do implante, padrão da fratura, persistência da pseudartrose e configuração do bloqueio interferem. A dinamização não causa necessariamente quebra e perda de redução em toda fratura metafisária; tampouco é isenta desses riscos. A decisão requer avaliação da estabilidade residual.",
+  "correta": "**Errado como regra geral.** A dinamização pode ser útil em casos selecionados, enquanto perda de redução e falha por fadiga dependem da estabilidade e da evolução da fratura.",
   "referencias": [
    "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. p. 174."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1163": {
+  "incorretas": {
+   "A": "**Certo seria para uma fratura parcial articular sagital da estiloide radial.** Esse é o padrão 23-B1, diferente da fratura de borda com deslocamento radiocárpico."
+  },
+  "conceito": "**O que é uma fratura de Barton.** Trata-se de fratura articular da borda do rádio distal associada a subluxação ou luxação radiocárpica, com o carpo acompanhando o fragmento de borda. A borda dorsal configura a Barton clássica; a borda volar é chamada Barton reversa em muitas classificações.\n\n**A lógica AO.** Na codificação antiga do rádio distal, 23 designa o segmento; B indica fratura parcialmente articular. O grupo 23-B1 corresponde à fratura sagital, frequentemente da estiloide radial. A fratura da borda dorsal é 23-B2, e a da borda volar é 23-B3. A nomenclatura atual AO/OTA emprega o prefixo 2R3, mas mantém a distinção anatômica entre os grupos B.\n\n**Por que a distinção importa.** O fragmento de borda sustenta o carpo. Se ele não for reduzido e contido, a articulação pode continuar subluxada apesar de parecer que parte do rádio foi alinhada. Radiografias em incidências adequadas e, quando necessário, tomografia ajudam a reconhecer tamanho, cominuição e direção do fragmento para planejar a fixação.",
+  "correta": "**Errado: Barton não é 23-B1.** A Barton dorsal pertence ao grupo 23-B2; a variante volar, chamada reversa, ao 23-B3.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. p. 71."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1164": {
+  "incorretas": {
+   "B": "**Errado seria incluir um quarto item na pontuação original.** Reatividade pupilar pode ser registrada em adaptações da avaliação neurológica, mas não substitui os três componentes da escala clássica."
+  },
+  "conceito": "**Três respostas observadas.** A escala de coma de Glasgow descreve o nível de consciência pela melhor abertura ocular, melhor resposta verbal e melhor resposta motora. Cada domínio deve ser registrado separadamente, além da soma, porque duas pessoas com a mesma pontuação total podem ter padrões neurológicos diferentes.\n\n**Como pontuar.** A resposta ocular varia de 1 a 4, a verbal de 1 a 5 e a motora de 1 a 6; a soma possível vai de 3 a 15. A resposta motora diferencia, por exemplo, obedecer a comandos, localizar a dor, retirar o membro, posturas anormais e ausência de resposta. Intubação pode impedir testar a fala: nesse caso, deve-se registrar a resposta verbal como não testável, não atribuir automaticamente o valor mínimo.\n\n**O que a escala não substitui.** Pupilas, lateralização motora, sedação, intoxicação e alterações hemodinâmicas exigem avaliação própria. A escala acompanha a evolução e comunica gravidade, mas não revela sozinha a causa do coma ou a necessidade de intervenção neurocirúrgica.",
+  "correta": "**Certo: olhos, fala e movimento compõem a escala.** São os três parâmetros usados para descrever o melhor nível de resposta observado.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 1996. 4th Edition, Chap. 2, Table 2-5, p. 129."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1165": {
+  "incorretas": {
+   "B": "**Errado seria descartá-la como achado sem importância no trauma pélvico.** Uma fratura transversa isolada por outro mecanismo não prova instabilidade, mas a avulsão nesse contexto merece atenção específica."
+  },
+  "conceito": "**O sinal de L5.** O ligamento iliolombar liga o processo transverso de L5 ao ilíaco e contribui para a estabilidade da transição lombossacra e da região posterior da pelve. Uma avulsão desse processo após trauma pélvico indica tração importante no ligamento e pode denunciar deslocamento do anel posterior.\n\n**Sinal de alerta, não diagnóstico isolado.** A fratura-avulsão deve levantar forte suspeita de lesão pélvica instável e motivar busca sistemática de diástase sacroilíaca, fratura sacral, lesões ligamentares posteriores e deslocamento vertical. Não se deve decidir a necessidade de fixação apenas pela presença de uma pequena fratura do processo transverso: mecanismo, exame, tomografia e padrão completo do anel são fundamentais.\n\n**Consequência prática.** Na avaliação inicial, proteger o paciente de novas perdas sanguíneas e estabilizar provisoriamente a pelve quando indicado precede a classificação definitiva. Uma avulsão de L5 pode ser discreta na radiografia simples, mas sua identificação na tomografia impede tratar uma lesão posterior grave como fratura isolada do ramo púbico.",
+  "correta": "**Certo: é um marcador de possível instabilidade pélvica.** A avulsão sugere lesão do ligamento iliolombar e exige investigação do anel posterior.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. p. 216."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1166": {
+  "incorretas": {
+   "B": "**Errado seria negar essas forças deformantes.** Uma fratura reduzida e estabilizada pode não apresentar varo final, mas isso resulta do tratamento, não da ausência de tração muscular."
+  },
+  "conceito": "**Os fragmentos não ficam em repouso.** Na fratura subtrocantérica, o fragmento proximal é puxado em flexão pelo iliopsoas, em abdução pelos glúteos médio e mínimo e em rotação externa pelos rotadores curtos. Já os adutores tracionam o fragmento distal medialmente, enquanto a musculatura da coxa favorece telescopagem e encurtamento.\n\n**De onde vem o varo.** A combinação de abdução proximal com adução distal produz desvio global em varo; a flexão proximal acrescenta deformidade no plano sagital. A região subtrocantérica suporta altas cargas e tem predomínio de osso cortical, por isso uma redução residual em varo concentra esforço no implante e favorece falha mecânica ou retardo de consolidação.\n\n**Reduzir antes de fixar.** Tração isolada nem sempre corrige a flexão e a abdução do fragmento proximal. Pinças, fios provisórios ou manobras percutâneas podem ser necessários antes da haste cefalomedular. O objetivo é restabelecer eixo, comprimento e contato medial, sem aceitar varo porque a haste entrou no canal.",
+  "correta": "**Certo: há tendência a encurtamento e varismo.** O enunciado resume o resultado da ação muscular, embora o padrão completo também inclua flexão e rotação externa do fragmento proximal.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 1996. 4th Edition, Chap. 26."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1167": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado é defensável se \"deve-se evitar\" for lido como regra absoluta.** Hastes menores existem, e a paralisia radial primária não exige obrigatoriamente inspeção do nervo em toda fratura fechada."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta provável A reflete cautela técnica histórica, mas não uma contraindicação absoluta atual: existem hastes umerais menores que 9 mm, e paralisia radial primária em fratura fechada não determina, sozinha, escolha de placa em vez de haste ou exploração imediata do nervo.",
+  "conceito": "**Canal estreito e haste.** A fixação intramedular exige que o implante passe sem forçar a cortical nem lesar estruturas ao cruzar o foco. Um canal muito estreito limita o diâmetro possível e pode dificultar bloqueio e resistência mecânica. A medida de 9 mm aparece em textos como referência para acomodar uma haste com pouca fresagem, mas a compatibilidade depende do desenho e do tamanho disponível; há sistemas com diâmetros menores.\n\n**Paralisia radial muda a avaliação.** Antes do tratamento, devem ser documentadas extensão do punho e dedos e sensibilidade radial. Uma paralisia primária em fratura fechada frequentemente recupera espontaneamente e não constitui, por si, indicação universal de exploração. Quando há suspeita de laceração, aprisionamento, fratura aberta ou necessidade de visualizar o nervo, a abordagem aberta com placa pode oferecer vantagem diagnóstica e terapêutica.\n\n**Escolha individual.** Padrão e nível da fratura, qualidade óssea, estado do ombro, largura real do canal e situação neural orientam a decisão. A haste evita maior dissecção do foco, mas pode causar morbidade do ombro; a placa permite redução e inspeção direta, ao custo de maior exposição. Nem o número de 9 mm nem a paralisia isolada substituem essa análise.",
+  "correta": "**Certo é a resposta provável como recomendação de cautela.** Canal muito estreito ou necessidade de explorar o nervo podem favorecer outra técnica, mas nenhum dos dois critérios é proibição universal de haste bloqueada.",
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 6ª edição, Chap. 30, p. 1138."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1168": {
+  "incorretas": {
+   "B": "**Errado seria excluir a neuropatia de toda avaliação.** Ela não é necessariamente o fator principal nem uma causa independente comprovada em cada paciente, mas pode integrar o conjunto causal."
+  },
+  "conceito": "**A pseudartrose raramente tem uma causa só.** A consolidação tibial depende de estabilidade, contato entre fragmentos, irrigação, tecidos moles e ausência de infecção. Fratura exposta de alta energia, perda óssea, desvio persistente, falha de fixação, tabagismo e infecção podem atuar ao mesmo tempo. Por isso, trocar apenas o implante sem investigar o ambiente biológico pode não resolver o problema.\n\n**Onde entra a neuropatia.** Perda de sensibilidade protetora e alteração da função muscular podem facilitar microtraumas repetidos, sobrecarga não percebida, feridas e dificuldade de proteção da extremidade. Neuropatia frequentemente coexiste com diabetes ou doença vascular, que também prejudicam o reparo. Não se deve atribuir automaticamente a ela toda pseudartrose: em algumas séries de fratura diafisária, outros fatores têm associação muito mais bem demonstrada.\n\n**Investigar antes de revisar.** Avaliam-se alinhamento, estabilidade, sinais de infecção, cobertura cutânea, perfusão, estado neurológico e condições sistêmicas. A reconstrução pode exigir revisão da fixação, correção do defeito, enxerto e controle de infecção ou doença de base. O tratamento acompanha as causas identificadas, não apenas o rótulo de pseudartrose.",
+  "correta": "**Certo: é uma condição multifatorial.** Neuropatia pode contribuir para um ambiente desfavorável, especialmente quando se associa a perda de proteção e outras comorbidades.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. p. 176."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1169": {
+  "incorretas": {
+   "B": "**Errado seria esperar apenas dormência extensa no dorso do pé.** Essa região é predominantemente do nervo fibular superficial; o sinal citado aponta para o compartimento anterior."
+  },
+  "conceito": "**Anatomia do compartimento anterior.** Na perna, o compartimento anterior contém tibial anterior, extensores dos dedos e do hálux, vasos tibiais anteriores e nervo fibular profundo. Esse nervo leva a sensibilidade de uma pequena área entre o primeiro e o segundo dedos do pé, o primeiro espaço interdigital dorsal.\n\n**O que a pressão provoca.** Aumento de pressão dentro da fáscia compromete perfusão muscular e neural. Dor desproporcional, especialmente à mobilização passiva dos músculos envolvidos, e tensão do compartimento levantam suspeita; parestesia ou redução da sensibilidade do primeiro espaço interdigital reforçam o comprometimento do nervo fibular profundo. A ausência desse déficit não exclui síndrome compartimental inicial.\n\n**Urgência e armadilha.** Déficit motor evidente e falta de pulso são achados tardios ou pouco confiáveis para esperar antes de agir. A avaliação é clínica, com medida de pressão quando o exame não é confiável, e suspeita forte exige descompressão cirúrgica urgente. Confundir o primeiro espaço interdigital com o dorso amplo do pé troca o nervo fibular profundo pelo superficial.",
+  "correta": "**Certo: a sensibilidade do primeiro espaço pode diminuir.** É o território cutâneo característico do nervo fibular profundo, localizado no compartimento anterior.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, vol. II, p. 2204."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1170": {
+  "incorretas": {
+   "A": "**Certo seria rejeitar a órtese se a redução fosse inaceitável ou instável.** Essa situação requer outra estratégia, mas o motivo não é automaticamente o limiar numérico citado."
+  },
+  "conceito": "**O que a órtese pode corrigir.** O tratamento funcional de Sarmiento usa uma órtese circunferencial para conter os tecidos moles e controlar a fratura durante mobilidade progressiva. Na tíbia, a indicação depende de encurtamento, angulação, rotação, contato entre os fragmentos, integridade da fíbula, partes moles e possibilidade de acompanhar a redução. A translação inicial isolada não resume a estabilidade.\n\n**Desvio não é sinônimo de retardo.** Uma fratura pode apresentar translação superior a um terço da largura da diáfise e ainda consolidar se houver contato e alinhamento aceitáveis após redução e manutenção da órtese. Por outro lado, uma fratura pouco transladada pode evoluir mal por lesão de partes moles, infecção ou instabilidade. O número de um terço não funciona como contraindicação automática baseada em suposto retardo de consolidação.\n\n**Acompanhamento decide.** Edema diminui, o molde pode afrouxar e o eixo pode mudar; por isso são necessárias reavaliações clínicas e radiográficas. Perda de redução, encurtamento progressivo, deformidade rotacional, dor persistente ou ausência de progressão da consolidação obrigam a reconsiderar o plano. Movimento funcional é permitido porque há contenção suficiente, não porque qualquer desvio seja irrelevante.",
+  "correta": "**Errado: não existe essa contraindicação isolada de um terço.** A escolha pela órtese depende da estabilidade e do alinhamento obtidos, não apenas da translação inicial.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, vol. II, p. 2223."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1171": {
+  "incorretas": {
+   "B": "**Errado seria equiparar tração esquelética prolongada a fixação estável.** A alternativa só faria sentido se o enunciado se referisse à tração como manobra breve durante redução, e não como tratamento da fratura."
+  },
+  "conceito": "**O objetivo no politrauma.** Em paciente fisiologicamente instável, a prioridade é controlar hemorragia, lesões associadas e dano às partes moles, com estabilização rápida da fratura. Para fratura proximal da tíbia, sobretudo periarticular e com edema importante, um fixador externo transarticular pode preservar comprimento e alinhamento até que haja condições para tratamento definitivo.\n\n**Por que a tração isolada é inadequada.** A tração transesquelética sustentada por pino não controla de maneira confiável angulação, rotação e superfície articular de uma fratura proximal da tíbia. Se o pino for colocado na própria região lesada, ainda pode atravessar tecidos comprometidos ou interferir em futura fixação. Prolongar imobilização em um politraumatizado também dificulta cuidados gerais e mobilização.\n\n**Não confundir uso de tração com tratamento por tração.** Tração pode ser uma manobra temporária de redução durante a colocação do fixador externo ou no centro cirúrgico. Isso não significa que manter o paciente apenas em tração esquelética seja um plano apropriado de estabilização para essa fratura. A palavra \"inaceitável\" deve ser lida no contexto de tratamento da lesão, não como proibição de toda aplicação momentânea de força axial.",
+  "correta": "**Certo no sentido de tratamento isolado.** No politrauma com fratura proximal da tíbia, a estabilização provisória costuma exigir controle mais confiável do alinhamento, frequentemente com fixador externo.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, vol. II, p. 2180."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1172": {
+  "incorretas": {
+   "A": "**Certo seria se o enunciado dissesse procurvato.** Recurvato pode aparecer em casos específicos, mas não é a deformidade mais comum associada a essa técnica."
+  },
+  "conceito": "**O desvio típico na tíbia proximal.** A haste intramedular encontra um canal metafisário amplo e um fragmento proximal curto, com pouca orientação cortical. A tração do mecanismo extensor e a técnica de entrada podem levar o fragmento proximal à flexão. O resultado habitual, se não for corrigido, é valgo no plano frontal e procurvato, ou ápice anterior, no plano sagital.\n\n**Procurvato não é recurvato.** Procurvato descreve a angulação com convexidade anterior; recurvato, com convexidade posterior. A questão troca justamente a direção do desvio sagital mais lembrado após haste de fratura proximal da tíbia. Varo ou outros desvios podem ocorrer em situações particulares, mas não alteram essa tendência clássica.\n\n**Como prevenir.** Ponto de entrada correto, joelho em posição apropriada, redução antes da passagem da haste e parafusos de bloqueio posicionados para estreitar o canal ajudam a controlar o fragmento proximal. A fluoroscopia precisa conferir tanto a incidência anteroposterior quanto a lateral antes e depois dos bloqueios.",
+  "correta": "**Errado: o padrão clássico é valgo e procurvato.** O termo recurvato inverte a deformidade sagital típica.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Clínica ortopédica. Rio de Janeiro: Medsi. Dezembro 2004. vol. 5/4, p. 932."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1173": {
+  "incorretas": {
+   "A": "**Certo seria apenas para uma comparação específica que demonstrasse essa diferença.** O enunciado generaliza um desfecho que não é consistentemente superior com placa."
+  },
+  "conceito": "**Duas estratégias válidas.** Fraturas metafisárias extra-articulares da tíbia podem ser fixadas com haste intramedular bloqueada ou placa, frequentemente aplicada de forma minimamente invasiva. A haste preserva partes moles próximas ao foco e compartilha carga, mas exige atenção à redução no canal alargado. A placa facilita controlar fragmentos curtos e o eixo, mas sua aplicação pode trazer problemas de ferida em região com cobertura cutânea limitada.\n\n**Pseudartrose não depende apenas do implante.** Exposição, contaminação, dano vascular, perda óssea, separação dos fragmentos, infecção e estabilidade final influenciam a união. Estudos comparativos de fraturas metafisárias não demonstram uma regra de maior incidência de pseudartrose com haste em relação à placa; os resultados variam com o nível da fratura e a técnica.\n\n**A troca de risco importante.** Na haste, pode haver mais dificuldade de alinhamento, especialmente na metáfise proximal ou distal, e dor anterior no joelho. Na placa, importa proteger os tecidos moles e evitar exposição desnecessária. A escolha se apoia no padrão da fratura, extensão articular, comprimento do fragmento, lesões associadas e qualidade da redução possível.",
+  "correta": "**Errado: a haste não causa mais pseudartrose como regra.** Ambos os métodos podem consolidar bem quando a indicação, a estabilidade e o manejo das partes moles são adequados.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. p. 176. 47"
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1174": {
+  "incorretas": {
+   "A": "**Certo seria para um padrão intertrocantérico estável com parede lateral preservada.** Nesse contexto, a placa com parafuso deslizante pode funcionar bem sem osteotomia."
+  },
+  "conceito": "**Por que a obliquidade reversa é instável.** No padrão intertrocantérico de obliquidade reversa, a linha de fratura compromete o apoio lateral que limita o deslizamento. Sob carga, o fragmento distal tende a migrar medialmente e a construção pode encurtar ou entrar em varo. Por isso, não se comporta como uma fratura intertrocantérica estável com parede lateral íntegra.\n\n**O limite do parafuso deslizante.** A placa com parafuso deslizante de 135 graus depende de compressão controlada e de um batente lateral competente. Na obliquidade reversa, o mecanismo de deslizamento pode aumentar o deslocamento em vez de estabilizar o foco. Uma haste cefalomedular é escolha frequente porque oferece suporte mais medial e melhor controle mecânico; sistemas de ângulo fixo também podem ser considerados conforme o traço e a técnica.\n\n**Osteotomia não é a distinção principal.** O erro está em afirmar que placa deslizante convencional, por si só, confere estabilidade. Isso não implica que toda fratura reversa exija osteotomia: redução anatômica e fixação estável podem dispensá-la. Osteotomia é recurso de reconstrução em situações selecionadas, não solução automática para compensar implante inadequado.",
+  "correta": "**Errado: o dispositivo deslizante convencional não estabiliza bem a obliquidade reversa.** A ausência de necessidade rotineira de osteotomia não salva a primeira parte da afirmação.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 1724."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1175": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado não seria universalmente incorreto.** Se a fratura baixa apresentar desvio ou instabilidade, a conduta operatória pode ser indicada; o enunciado omite esses dados."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta provável A descreve a possibilidade de tratar conservadoramente uma fratura baixa e estável da coluna anterior, fora da zona de carga. A localização baixa, isoladamente, não determina a conduta: desvio, incongruência ou instabilidade podem exigir cirurgia.",
+  "conceito": "**A altura da coluna muda a estabilidade.** A coluna anterior do acetábulo pode fraturar em níveis altos ou baixos. Um traço baixo costuma deixar maior parte do teto de carga intacta, permitindo que a cabeça femoral permaneça centrada e congruente. Essa característica torna o tratamento não operatório possível quando o deslocamento é pequeno e a articulação está estável.\n\n**Os critérios decisivos.** Radiografias e tomografia avaliam degrau articular, fragmentos dentro da articulação, congruência e participação do teto. Se houver luxação, instabilidade, incongruência relevante ou fragmento interposto, a simples descrição de fratura \"baixa\" não basta para escolher observação. O objetivo é preservar a superfície articular e evitar artrose pós-traumática.\n\n**Conservador não é ausência de tratamento.** Quando selecionado, inclui proteção da carga, analgesia, mobilização segura e imagens de controle para confirmar que não houve deslocamento secundário. Tração prolongada não é necessária em toda fratura estável e traz seus próprios riscos. A capacidade do paciente de seguir restrições também entra na decisão.",
+  "correta": "**Certo para a fratura baixa, congruente e estável.** Nessa situação o teto de carga costuma estar preservado, permitindo tratamento não cirúrgico com vigilância.",
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 1634."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1176": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado seria defensável pela justificativa causal.** Redução cuidadosa sem fixação prévia pode ser possível, e nenhum método elimina o risco de necrose determinado pelo trauma inicial."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta provável A provavelmente expressa a intenção de evitar deslocamento iatrogênico do colo durante a redução. Entretanto, fixação profilática antes de reduzir não comprovou prevenir necrose avascular da cabeça, que depende sobretudo da lesão vascular inicial e pode ocorrer mesmo com técnica cuidadosa. A sequência deve ser individualizada.",
+  "conceito": "**Uma associação delicada.** Fratura do colo anatômico com luxação do ombro coloca em risco os vasos que nutrem a cabeça umeral. Mesmo quando o traço parece sem desvio, manipulação vigorosa para reduzir a luxação pode separar a cabeça do restante do úmero, piorar a lesão vascular e transformar uma fratura alinhada em fratura-luxação deslocada.\n\n**Planejar antes da manobra.** Radiografias e, em padrões pouco claros, tomografia ajudam a reconhecer a fratura. Pode-se optar por redução cuidadosa sob anestesia adequada, redução aberta ou estabilização provisória da fratura antes de manipular a articulação, conforme o padrão e a equipe. O objetivo imediato é evitar deslocamento adicional e obter redução segura, não garantir viabilidade da cabeça.\n\n**Necrose não é totalmente prevenível.** A chance de isquemia aumenta quando há comprometimento do colo anatômico, perda da charneira medial e pouca extensão metafisária posteromedial aderida à cabeça, entre outros fatores. A fixação preserva alinhamento e pode proteger tecidos remanescentes, mas não reconstrói automaticamente artérias já rompidas. O seguimento deve pesquisar necrose e colapso mesmo após redução satisfatória.",
+  "correta": "**Certo é a resposta provável quanto à cautela antes da redução.** Estabilizar o traço pode evitar deslocamento iatrogênico; afirmar que isso previne necrose avascular é forte demais.",
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, vol. III, p. 2991."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1177": {
+  "incorretas": {
+   "A": "**Certo poderia ser em um paciente selecionado com fratura reconstruível.** Preservar a cabeça por fixação é objetivo razoável, mas não garante o melhor resultado em todos os casos."
+  },
+  "conceito": "**O que significa quatro partes.** Na classificação de Neer, cabeça, tubérculo maior, tubérculo menor e diáfise tornam-se segmentos deslocados. Esse padrão pode interromper a irrigação da cabeça e dificultar redução estável, sobretudo em osso osteoporótico. A classificação descreve a anatomia, mas não escolhe sozinha a operação.\n\n**Fixação tem limites.** Redução aberta e placa bloqueada podem preservar a cabeça em pacientes selecionados, especialmente mais jovens, com osso e fragmentos reconstruíveis. Porém, falha em varo, penetração dos parafusos, pseudartrose tubercular e necrose avascular prejudicam o resultado. Charneira medial comprometida e extensão metafisária posteromedial da cabeça menor que 8 mm aumentam preocupação com perfusão, conforme critérios de Hertel.\n\n**Alternativas conforme o paciente.** Em pacientes idosos com fratura irreconstruível ou baixa qualidade óssea, artroplastia reversa pode ser opção; outros casos permitem tratamento não operatório ou outra reconstrução. Estudos não sustentam a afirmação de que toda fratura em quatro partes obtém resultado superior com redução aberta e fixação interna. Função prévia, demanda, manguito rotador e risco cirúrgico precisam entrar na decisão.",
+  "correta": "**Errado: não há superioridade universal da fixação aberta.** O padrão em quatro partes tem alto risco de falha ou necrose e requer escolha individualizada.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, vol. III, p. 2992."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1178": {
+  "incorretas": {
+   "B": "**Errado seria negar o efeito da deformidade.** Uma fratura do colo consolidada com importante desvio pode comprometer a orientação glenoidal e a função do ombro; já uma fratura pouco desviada costuma preservar a mecânica e admitir tratamento conservador."
+  },
+  "conceito": "**O que muda no colo da escápula.** O colo sustenta a glenoide em relação ao corpo escapular. Quando uma fratura consolida com grande angulação, a orientação da superfície articular e a mecânica do ombro podem mudar, mesmo que a articulação glenoumeral não esteja fraturada.\n\n**Por que o manguito importa.** O manguito rotador ajuda a centrar a cabeça do úmero na glenoide por compressão. Uma glenoide muito inclinada altera a direção relativa dessa força e pode aumentar seu componente de cisalhamento. A frase da questão descreve essa consequência biomecânica, mas 40 graus não é uma fronteira rígida a partir da qual o efeito começa de repente.\n\n**Decisão clínica.** A maioria das fraturas pouco desviadas da escápula é tratada sem cirurgia. Nas fraturas extra-articulares, angulação acentuada, medialização da borda lateral, redução do ângulo glenopolar e dupla lesão desviada do complexo suspensor superior são parâmetros considerados em conjunto para discutir fixação. Séries associadas a Cole usam, entre outros critérios relativos, angulação de 45 graus ou mais, medialização de 20 mm ou mais e ângulo glenopolar de 22 graus ou menos. Esses números de indicação operatória não devem ser confundidos com o limiar biomecânico aproximado citado no enunciado.",
+  "correta": "**Certo, com ressalva sobre o número.** Grande angulação do colo pode transformar parte da força estabilizadora do manguito em cisalhamento; o valor de 40 graus é uma aproximação didática, não uma lei mecânica universal.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, vol. II, p. 1660."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1179": {
+  "incorretas": {
+   "B": "**Errado seria dizer que o desvio não importa.** Fraturas alinhadas e com contato cortical têm prognóstico diferente das completamente desviadas; ainda assim, o desvio não é o único determinante da consolidação."
+  },
+  "conceito": "**A clavícula como escora.** No terço médio, a clavícula mantém o ombro afastado do tórax. Após a fratura, as forças musculares e o peso do membro podem separar os fragmentos; quanto menor o contato cortical, menor a estabilidade disponível para a consolidação sem fixação.\n\n**O que prediz pseudartrose.** Desvio importante e cominuição elevam o risco de não união no tratamento conservador. Encurtamento, tabagismo, características do paciente e evolução clínica também contam. Por isso, o desvio inicial é um fator central, mas a palavra \"principalmente\" não dispensa avaliação do conjunto de riscos.\n\n**Tratamento e seguimento.** Fraturas pouco desviadas costumam ser imobilizadas com tipoia, analgesia e mobilização progressiva conforme a dor. Em fraturas muito desviadas, a cirurgia pode reduzir a chance de pseudartrose, mas acrescenta riscos próprios, como infecção, sintomas relacionados ao implante e eventual nova operação. Dor persistente e ausência de sinais de consolidação no acompanhamento exigem reavaliação.",
+  "correta": "**Certo.** Quanto maior o desvio inicial de uma fratura diafisária da clavícula tratada sem cirurgia, maior tende a ser o risco de pseudartrose, especialmente quando há perda de contato entre os fragmentos.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, vol. II, p. 1683."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1180": {
@@ -10860,39 +10944,45 @@
   "conferido": false
  },
  "trauma-1182": {
+  "incorretas": {
+   "A": "**Certo exigiria estabilidade fisiológica real.** Fixação definitiva precoce pode ser considerada quando perfusão, oxigenação e situação intracraniana estiverem adequadamente controladas, não pelo simples fato de a pressão intracraniana alta permanecer constante."
+  },
+  "conceito": "**Duas lesões, uma prioridade fisiológica.** No politrauma com traumatismo cranioencefálico grave, a estabilização das fraturas é importante, mas não pode agravar a lesão cerebral secundária. Hipotensão, hipóxia e elevação persistente da pressão intracraniana exigem controle antes de uma operação ortopédica longa.\n\n**O número que invalida a frase.** Pressão intracraniana de 30 a 40 mmHg representa hipertensão intracraniana importante, ainda que o monitor mostre um valor momentaneamente estável. Diretrizes de TCE grave recomendam tratar elevações sustentadas acima de 22 mmHg. Também se acompanha a pressão de perfusão cerebral, que depende da diferença entre a pressão arterial média e a intracraniana.\n\n**Controle de danos.** Quando a fisiologia é instável, a equipe pode optar por estabilização ortopédica temporária e por procedimentos mais curtos, com fixação definitiva depois do controle neurológico e sistêmico. A decisão depende da avaliação conjunta com neurocirurgia, anestesia e terapia intensiva; uma pressão intracraniana alta não se torna segura apenas por não oscilar.",
+  "correta": "**Errado.** Pressão intracraniana estável em 30 a 40 mmHg continua perigosamente elevada e não é critério para liberar osteossíntese definitiva dos ossos longos e da pelve.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 142."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1183": {
+  "incorretas": {
+   "A": "**Certo apenas em uma ferida que precise de nova avaliação.** Se restarem dúvidas sobre tecido desvitalizado ou contaminação, pode-se programar uma segunda exploração, mas a indicação decorre dos achados clínicos e operatórios, não só da classe de Gustilo."
+  },
+  "conceito": "**O que caracteriza o tipo III.** Na classificação de Gustilo e Anderson, a fratura exposta tipo III envolve alta energia, contaminação importante ou lesão extensa de partes moles. No IIIA ainda há cobertura óssea adequada; no IIIB há perda de cobertura com exposição óssea e necessidade frequente de retalho; no IIIC existe lesão arterial que requer reparo. Essa graduação deve ser confirmada após a exploração e o desbridamento.\n\n**Primeira operação.** Antibiótico precoce, avaliação neurovascular, estabilização e excisão cirúrgica dos tecidos inviáveis são medidas centrais. O desbridamento deve ser meticuloso, com plano de cobertura dos tecidos moles. A ferida não deve ficar aberta por um intervalo arbitrário apenas para cumprir uma rotina de nova cirurgia.\n\n**Quando revisar.** Uma segunda exploração pode ser útil se a viabilidade dos tecidos estiver incerta ou se houver contaminação residual, frequentemente após 24 a 48 horas. Isso é uma decisão individualizada, não uma obrigação automática em toda fratura tipo III nem uma janela fixa de 36 a 72 horas. A meta é obter tecido viável, estabilização e cobertura definitiva em tempo oportuno.",
+  "correta": "**Errado.** O segundo desbridamento não é obrigatório para toda fratura exposta tipo III, e a faixa de 36 a 72 horas não constitui regra universal; a reavaliação depende das condições da ferida.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, cap. 50, p. 2684."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1184": {
+  "incorretas": {
+   "A": "**Certo seria para ferida que exige exploração.** Se houver tecido inviável, contaminação relevante ou lesão associada que precise de cirurgia, o desbridamento profundo pode ser necessário, independentemente da velocidade presumida."
+  },
+  "conceito": "**Velocidade muda o padrão da ferida.** Lesão por projétil de baixa energia não se comporta obrigatoriamente como uma fratura exposta de grande destruição. Um trajeto pequeno, sem contaminação importante ou tecido desvitalizado, pode permitir tratamento da fratura sem abrir amplamente o foco apenas para limpar planos profundos.\n\n**A avaliação vem antes da regra.** É preciso examinar perfusão, nervos, entrada e saída do projétil, lesão articular e extensão das partes moles. Antibiótico e cuidados locais podem ser indicados conforme o caso. Contaminação grosseira, necrose, lesão vascular ou maior energia mudam a necessidade de exploração e desbridamento; o rótulo \"baixa energia\" não dispensa o exame da ferida.\n\n**A armadilha.** A palavra \"obrigatória\" torna a afirmação incorreta. Em séries selecionadas de fraturas femorais por arma de fogo de baixa velocidade, a fixação intramedular sem exposição cirúrgica e desbridamento profundo formal apresentou consolidação e baixas taxas de infecção. Isso não é licença para ignorar uma ferida com sinais de gravidade.",
+  "correta": "**Errado.** Limpeza cirúrgica dos planos profundos não é obrigatória em toda fratura femoral por projétil de baixa energia; a indicação depende de contaminação e lesão tecidual.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 321."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1185": {
@@ -10980,27 +11070,35 @@
   "conferido": false
  },
  "trauma-1192": {
+  "incorretas": {
+   "B": "**Ligamento colateral medial pode se romper.** Sua lesão deve ser procurada conforme o mecanismo e a estabilidade, mas não é a resposta mais frequente no conjunto das fraturas do planalto.",
+   "C": "**Ligamento colateral lateral também pode ser lesado.** O padrão posterolateral ou mecanismos em varo exigem atenção a ele, sem que isso o torne a associação geral mais comum.",
+   "D": "**Ligamento cruzado anterior pode sofrer ruptura ou avulsão.** É uma lesão importante para o planejamento, mas a alternativa não supera a frequência das lesões meniscais nesta pergunta."
+  },
+  "conceito": "**A fratura não é só óssea.** O planalto tibial constitui a superfície de carga da articulação do joelho. Compressão e cisalhamento capazes de fraturá-lo também podem lesar meniscos, ligamentos, cartilagem e estruturas neurovasculares. A análise inicial inclui pele, compartimentos, pulsos e alinhamento.\n\n**O menisco lidera as associações.** Entre as lesões de partes moles, as meniscais são muito frequentes, especialmente no compartimento lateral em alguns padrões de fratura por separação e depressão. Rupturas de ligamentos colaterais e cruzados também ocorrem, mas não superam os meniscos como resposta geral desta questão. A incidência exata varia conforme mecanismo, padrão ósseo e método usado para procurar a lesão.\n\n**Como isso muda a conduta.** Radiografias e tomografia descrevem os fragmentos e orientam a redução; a ressonância ou a visualização intraoperatória podem esclarecer lesões meniscais e ligamentares quando isso modifica o plano. Restaurar a superfície articular sem reconhecer um menisco interposto ou rompido pode deixar dor e disfunção persistentes.",
+  "correta": "**Lesão dos meniscos.** Entre as alternativas, é a associação de partes moles mais frequente na fratura do planalto tibial, com destaque para o menisco lateral.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 2000."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1193": {
+  "incorretas": {
+   "A": "**Tipo I é o menos deslocado.** A superfície articular permanece praticamente congruente, diferindo da fragmentação importante do tipo III.",
+   "B": "**Tipo II é desviado, mas sem cominuição acentuada.** É mais grave que o tipo I, porém não representa o padrão mais complexo da classificação.",
+   "D": "**Tipo IV não pertence à classificação original de Rüedi-Allgöwer.** Outras classificações de fratura do pilão usam esquemas diferentes, mas aqui os tipos vão de I a III."
+  },
+  "conceito": "**O que é o pilão.** A superfície distal da tíbia recebe a carga transmitida pelo tálus. Em uma fratura do pilão tibial, desvio e fragmentação dessa superfície dificultam restaurar congruência articular, estabilidade e partes moles adequadas.\n\n**Os três tipos de Rüedi-Allgöwer.** O tipo I tem fratura articular sem desvio significativo. O tipo II apresenta desvio e incongruência, mas pouca ou nenhuma cominuição. O tipo III acrescenta cominuição e impactação da superfície articular, geralmente representando lesão mais grave. A classificação original não possui tipo IV.\n\n**Por que o III preocupa.** Quanto maior a fragmentação, mais difícil reconstruir a articulação e maior a chance de incongruência residual, rigidez e artrose pós-traumática. O prognóstico individual também depende das partes moles, da redução obtida, de infecção e de outros fatores; a classe descreve o padrão ósseo, não prevê sozinha o desfecho. Fraturas de alta energia frequentemente requerem estabilização em etapas antes da fixação definitiva.",
+  "correta": "**Tipo III.** É o padrão com cominuição e impactação articular mais acentuadas entre os três tipos da classificação, por isso tem o pior prognóstico relativo.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., pg. 2743."
   ],
-  "geradoEm": null,
+  "provavel": "C",
+  "geradoEm": "2026-10-01",
   "conferido": false
  }
 }
