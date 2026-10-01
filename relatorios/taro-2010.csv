@@ -50,7 +50,7 @@ questao_no_pdf;situacao;id_no_site;semelhanca;gabarito_pdf;enunciado
 49;no site;osteometabolicas-0073;0.92;;Erosões das tuberosidades das falanges distais da mão (acrosteólise) são achados radiográficos sugestivos de artrite
 50;no site;pediatria-0430;1.00;;Na mielomeningocele, a malformação do tipo II de ARNOLD-CHIARI sintomática caracteriza-se por
 51;no site;coluna-0260;1.00;;O paciente com síndrome medular anterior decorrente de trauma raquimedular apresenta
-52;conferir;pediatria-0661;0.76;;A fratura da tuberosidade da tíbia na criança, do tipo I de OGDEN et al, caracteriza-se como SALTER- HARRIS do tipo
+52;no site;pediatria-0840;1.00;;A fratura da tuberosidade da tíbia na criança, do tipo I de OGDEN et al, caracteriza-se como SALTER- HARRIS do tipo
 53;no site;ombro-cotovelo-0354;1.00;;Na luxação traumática do ombro, o principal fator que determina a recidiva é
 54;no site;trauma-0883;1.00;;Na lesão do ligamento deltoide associada à lesão da sindesmose tibiofibular, o tálus desloca-se
 55;no site;tumores-0288;1.00;;Na doença de PAGET, o achado histológico é de padrão
@@ -59,7 +59,7 @@ questao_no_pdf;situacao;id_no_site;semelhanca;gabarito_pdf;enunciado
 58;no site;mao-0527;1.00;;O tratamento recomendado para a lesão aguda da fibrocartilagem triangular da classe 1B de PALMER é
 59;no site;conceitos-basicos-0230;1.00;;Na osteomielite hematogênica aguda tratada adequadamente, os valores de VHS e PCR se normalizam, respectivamente, em cerca de
 60;no site;pediatria-0431;1.00;;O anel pericondral de LACROIX é responsável
-61;falta no site;;0.62;;Na fratura supracondiliana do úmero na criança, do tipo III de GARTLAND, a posição do antebraço que confere maior estabilidade na redução do fragmento distal é 
+61;no site;pediatria-0722;1.00;;Na fratura supracondiliana do úmero na criança, do tipo III de GARTLAND, a posição do antebraço que confere maior estabilidade na redução do fragmento distal é 
 62;no site;ombro-cotovelo-0355;1.00;;Na capsulite adesiva, o objetivo da liberação artroscópica do intervalo dos rotadores é o aumento da
 63;no site;trauma-0886;1.00;;A ruptura do mecanismo extensor do joelho é mais frequentemente associada à luxação traumática
 64;no site;quadril-0210;1.00;;Na artrose do quadril, é contraindicação relativa para a osteotomia valgizante intertrocantérica a presença de
@@ -67,8 +67,8 @@ questao_no_pdf;situacao;id_no_site;semelhanca;gabarito_pdf;enunciado
 66;no site;trauma-0888;1.00;;Na fratura-luxação de LISFRANC, o parâmetro radiográfico da redução visto na incidência oblíqua do pé é o alinhamento da borda medial do
 67;no site;tumores-0289;1.00;;A deformidade do antebraço associada à osteocondromatose múltipla geralmente ocorre por
 68;no site;pediatria-0432;1.00;;Na tíbia vara de BLOUNT do tipo infantil, a incidência radiográfica ântero-posterior mostra
-69;conferir;coluna-0304;0.76;;A fratura da coluna cervical baixa em “gota de lágrima” corresponde, na classificação de ALLEN, ao tipo
-70;conferir;pediatria-0564;0.71;;Na sequela da fratura do colo do rádio na criança, o movimento mais afetado é a
+69;no site;coluna-0357;1.00;;A fratura da coluna cervical baixa em “gota de lágrima” corresponde, na classificação de ALLEN, ao tipo
+70;no site;pediatria-0841;1.00;;Na sequela da fratura do colo do rádio na criança, o movimento mais afetado é a
 71;no site;trauma-0889;1.00;;A fratura da extremidade proximal do úmero que mais frequentemente evolui para pseudartrose após tratamento não cirúrgico é a
 72;no site;joelho-0227;1.00;;Na reconstrução do ligamento cruzado anterior com dupla banda, os componentes ântero-medial e póstero-lateral são tensionados, respectivamente, em
 73;no site;quadril-0211;1.00;;Na osteonecrose da cabeça do fêmur, o sinal radiográfico patognomônico é o
@@ -77,7 +77,7 @@ questao_no_pdf;situacao;id_no_site;semelhanca;gabarito_pdf;enunciado
 76;no site;mao-0528;1.00;;A lesão do nervo interósseo anterior é caracterizada por paralisia dos músculos
 77;no site;conceitos-basicos-0231;1.00;;Na pseudartrose congênita da tíbia, o uso da proteína morfogenética óssea (BMP) tem a propriedade de
 78;no site;coluna-0261;0.93;;Na doença de SPRENGEL, a classificação de CAVENDISH baseia-se na
-79;falta no site;;0.49;;Na fratura em “galho verde” do rádio, o mecanismo de trauma com o antebraço em pronação produz angulação com ápice
+79;no site;pediatria-0723;1.00;;Na fratura em “galho verde” do rádio, o mecanismo de trauma com o antebraço em pronação produz angulação com ápice
 80;no site;ombro-cotovelo-0356;1.00;;Em relação à força de pronação do antebraço, a força de supinação é aproximadamente
 81;no site;joelho-0228;1.00;;A lesão do ligamento cruzado posterior acontece mais frequentemente com o joelho em
 82;no site;tumores-0290;1.00;;A célula característica do tumor de células gigantes tem aspecto semelhante ao
@@ -86,7 +86,7 @@ questao_no_pdf;situacao;id_no_site;semelhanca;gabarito_pdf;enunciado
 85;no site;mao-0529;1.00;;Na doença de KIENBÖCK, a alteração radiográfica que caracteriza o estágio IIIB de LICHTMAN é a
 86;no site;pediatria-0434;1.00;;Na sequela do pé torto congênito, o metatarso adulto tratado pela osteotomia da base dos metatarsais tem como complicação mais grave a
 87;no site;mao-0530;1.00;;Na paralisia obstétrica, o tipo II da classificação de NARAKAS apresenta lesão
-88;falta no site;;0.43;;Na fratura-luxação de MONTEGGIA na criança, do tipo II de BADO, a fratura da ulna é caracteristicamente
+88;no site;pediatria-0724;1.00;;Na fratura-luxação de MONTEGGIA na criança, do tipo II de BADO, a fratura da ulna é caracteristicamente
 89;no site;ombro-cotovelo-0357;1.00;;A artroplastia reversa do ombro é contraindicada na
 90;no site;joelho-0229;1.00;;A osteonecrose do côndilo do fêmur caracteriza-se pela presença de dor
 91;no site;tumores-0291;1.00;;O condrossarcoma de alto grau, quando diagnosticado na infância, tem como principal diagnóstico diferencial o
@@ -98,4 +98,4 @@ questao_no_pdf;situacao;id_no_site;semelhanca;gabarito_pdf;enunciado
 97;no site;pediatria-0435;1.00;;Na osteogênese imperfeita, o tipo IV de SILLENCE se caracteriza por apresentar colágeno do tipo I com defeito
 98;no site;ombro-cotovelo-0358;1.00;;Na luxação posterior inveterada do cotovelo, a limitação da pronação do antebraço é relacionada principalmente à tensão do músculo
 99;no site;joelho-0230;1.00;;Na lesão do ligamento patelar, o mecanismo de trauma mais comum é dado por uma contração muscular
-100;falta no site;;0.06;;Na síndrome do pronador, o local possível de compressão é a
+100;no site;mao-0531;1.00;;Na síndrome do pronador, o local possível de compressão é a

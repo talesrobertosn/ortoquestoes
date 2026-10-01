@@ -11194,8 +11194,8 @@
       "subtemas": [
         "Fraturas do tálus e do calcâneo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2008,
       "dificuldade": null,
       "enunciado": "Qual a fratura mais comumente associada à fratura do colo do tálus?",
       "imagens": [],
@@ -11224,7 +11224,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 6,
+        "numeroOriginal": 27
+      }
     },
     {
       "id": "trauma-0315",
@@ -33142,6 +33147,3502 @@
         "arquivo": "TEOT-2024-prova-branca.pdf",
         "pagina": 15,
         "numeroOriginal": 51
+      }
+    },
+    {
+      "id": "trauma-1110",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fraturas diafisárias do antebraço"
+      ],
+      "prova": "TARO",
+      "ano": 2020,
+      "dificuldade": null,
+      "enunciado": "Na fratura de GALEAZZI, são sinais radiográficos de instabilidade da articulação radiulnar distal, o traço de fratura a",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "mais de 7,5 cm da superfície articular distal do rádio e fratura da base do estiloide ulnar."
+        },
+        {
+          "letra": "B",
+          "texto": "mais de 7,5 cm da superfície articular distal do rádio e fratura do ápice do estiloide ulnar."
+        },
+        {
+          "letra": "C",
+          "texto": "menos de 7,5 cm da superfície articular distal do rádio e fratura da base do estiloide ulnar."
+        },
+        {
+          "letra": "D",
+          "texto": "menos de 7,5 cm da superfície articular distal do rádio e fratura do ápice do estiloide ulnar."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2020.pdf",
+        "pagina": 9,
+        "numeroOriginal": 23
+      }
+    },
+    {
+      "id": "trauma-1111",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2020,
+      "dificuldade": null,
+      "enunciado": "Na fratura do terço distal do fêmur decorrente de trauma de alta energia, a artéria poplítea apresenta maior risco de lesão quando associada à lesão",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "meniscal."
+        },
+        {
+          "letra": "B",
+          "texto": "ligamentar."
+        },
+        {
+          "letra": "C",
+          "texto": "do mecanismo extensor."
+        },
+        {
+          "letra": "D",
+          "texto": "do terço proximal da fíbula."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2020.pdf",
+        "pagina": 13,
+        "numeroOriginal": 36
+      }
+    },
+    {
+      "id": "trauma-1112",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Na fratura distal do fêmur do tipo C2 da classificação AO, os princípios a serem obedecidos na escolha do tratamento são de estabilidade",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "relativa na fratura articular e absoluta na fratura metafisária."
+        },
+        {
+          "letra": "B",
+          "texto": "absoluta na fratura articular e relativa na fratura metafisária."
+        },
+        {
+          "letra": "C",
+          "texto": "relativa em ambas as fraturas."
+        },
+        {
+          "letra": "D",
+          "texto": "absoluta em ambas as fraturas."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed, p. 117."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 4,
+        "numeroOriginal": 6
+      }
+    },
+    {
+      "id": "trauma-1113",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fraturas da coluna toracolombar"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Na fratura da coluna toracolombar causada por flexão- distração, o fulcro da flexão está situado",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "anteriormente ao ligamento longitudinal anterior."
+        },
+        {
+          "letra": "B",
+          "texto": "no ligamento longitudinal anterior."
+        },
+        {
+          "letra": "C",
+          "texto": "posteriormente ao ligamento longitudinal anterior."
+        },
+        {
+          "letra": "D",
+          "texto": "no ligamento longitudinal posterior."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1644."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 5,
+        "numeroOriginal": 8
+      }
+    },
+    {
+      "id": "trauma-1114",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Entre as fraturas abaixo, a de melhor indicação para o tratamento com fios de KIRSCHNER percutâneos é a do tipo AO 23",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "B3."
+        },
+        {
+          "letra": "B",
+          "texto": "C1."
+        },
+        {
+          "letra": "C",
+          "texto": "C2."
+        },
+        {
+          "letra": "D",
+          "texto": "C3."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed, p. 368-71."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 5,
+        "numeroOriginal": 11
+      }
+    },
+    {
+      "id": "trauma-1115",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fraturas diafisárias do antebraço"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Na lesão de GALEAZZI, o achado radiográfico que sugere ruptura da articulação radiulnar distal é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "a fratura da ponta do processo estilóide da ulna."
+        },
+        {
+          "letra": "B",
+          "texto": "a sobreposição da ulna distal com o rádio na incidência ântero-posterior."
+        },
+        {
+          "letra": "C",
+          "texto": "o encurtamento do rádio maior que 5 mm na incidência ântero-posterior."
+        },
+        {
+          "letra": "D",
+          "texto": "o desvio angular da diáfise do rádio na incidência em perfil."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª ed., p. 1438."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 6,
+        "numeroOriginal": 12
+      }
+    },
+    {
+      "id": "trauma-1116",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do colo do fêmur"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Na fratura do colo do fêmur fixada com placa e parafuso deslizante, para se alcançar estabilidade rotacional e melhor suporte, um parafuso adicional cranial deve ser inserido, especialmente quando houver fragmentação",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "inferior."
+        },
+        {
+          "letra": "B",
+          "texto": "anterior."
+        },
+        {
+          "letra": "C",
+          "texto": "superior."
+        },
+        {
+          "letra": "D",
+          "texto": "posterior."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed, p. 446."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 7,
+        "numeroOriginal": 15
+      }
+    },
+    {
+      "id": "trauma-1117",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Síndrome compartimental",
+        "Fraturas diafisárias do antebraço"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Na síndrome compartimental do antebraço, os músculos mais acometidos são os flexores",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "superficial dos dedos e radial do carpo."
+        },
+        {
+          "letra": "B",
+          "texto": "superficial dos dedos e longo do polegar."
+        },
+        {
+          "letra": "C",
+          "texto": "profundo dos dedos e longo do polegar."
+        },
+        {
+          "letra": "D",
+          "texto": "profundo dos dedos e radial do carpo."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., p. 984."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 7,
+        "numeroOriginal": 18
+      }
+    },
+    {
+      "id": "trauma-1118",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do úmero proximal"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Na fratura em duas partes do colo cirúrgico do úmero, a angulação anterior da fratura é causada pelo músculo",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "deltóide."
+        },
+        {
+          "letra": "B",
+          "texto": "grande dorsal."
+        },
+        {
+          "letra": "C",
+          "texto": "bíceps braquial."
+        },
+        {
+          "letra": "D",
+          "texto": "peitoral maior."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., vol. 1, p. 1181."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 8,
+        "numeroOriginal": 19
+      }
+    },
+    {
+      "id": "trauma-1119",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Na osteossíntese intramedular das fraturas diafisárias, o material de síntese com maior possibilidade de infecção é a haste",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "sólida em aço."
+        },
+        {
+          "letra": "B",
+          "texto": "canulada em aço."
+        },
+        {
+          "letra": "C",
+          "texto": "sólida em titânio."
+        },
+        {
+          "letra": "D",
+          "texto": "canulada em titânio."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Journal of the American Academy of Orthopaedics Surgeons. Vol. 8, nº 5, p. 285 a 291."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 8,
+        "numeroOriginal": 21
+      }
+    },
+    {
+      "id": "trauma-1120",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do anel pélvico"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Na lesão do anel pélvico, segundo a classificação de YOUNG-BURGESS, a fratura em crescente da asa do ilíaco corresponde ao mecanismo de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "compressão lateral, estágio I."
+        },
+        {
+          "letra": "B",
+          "texto": "compressão lateral, estágio II."
+        },
+        {
+          "letra": "C",
+          "texto": "compressão ântero-posterior, estágio I."
+        },
+        {
+          "letra": "D",
+          "texto": "compressão ântero-posterior, estágio II."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 1611."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 9,
+        "numeroOriginal": 23
+      }
+    },
+    {
+      "id": "trauma-1121",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da clavícula",
+        "Luxação acromioclavicular"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Na fratura da extremidade distal da clavícula, segundo a classificação de NEER e ROCKWOOD,",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o tipo I corresponde à manutenção dos ligamentos conóide e trapezóide no fragmento proximal."
+        },
+        {
+          "letra": "B",
+          "texto": "o tipo IIA corresponde à lesão do ligamento conóide, com o ligamento trapezóide preso ao fragmento distal."
+        },
+        {
+          "letra": "C",
+          "texto": "o tipo IIB corresponde à manutenção dos ligamentos conóide e trapezóide no fragmento distal."
+        },
+        {
+          "letra": "D",
+          "texto": "o tipo III corresponde a luxação acromioclavicular."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª ed., vol. II, p. 1673."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 10,
+        "numeroOriginal": 29
+      }
+    },
+    {
+      "id": "trauma-1122",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Na fratura do capítulo do úmero, a complicação mais freqüente é a",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "pseudartrose."
+        },
+        {
+          "letra": "B",
+          "texto": "limitação do movimento articular."
+        },
+        {
+          "letra": "C",
+          "texto": "consolidação viciosa."
+        },
+        {
+          "letra": "D",
+          "texto": "osteonecrose."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª ed., vol. II, p. 1513."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 12,
+        "numeroOriginal": 33
+      }
+    },
+    {
+      "id": "trauma-1123",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Luxação do joelho e lesões ligamentares"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Na luxação do joelho com ausência de pulsos distais após a redução, a conduta mais bem indicada é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "a exploração imediata para reparo vascular."
+        },
+        {
+          "letra": "B",
+          "texto": "fazer um DOPPLER do membro afetado na emergência."
+        },
+        {
+          "letra": "C",
+          "texto": "fazer arteriografia imediata do membro afetado."
+        },
+        {
+          "letra": "D",
+          "texto": "a observação clínica, considerando-se a alta probabilidade de espasmo vascular."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., p.2042."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 12,
+        "numeroOriginal": 34
+      }
+    },
+    {
+      "id": "trauma-1124",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da cabeça do rádio e instabilidade do cotovelo"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Nas fraturas cominutivas da cabeça do rádio no adulto, a ressecção isolada da cabeça está contra-indicada na presença de ruptura",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "da cápsula anterior."
+        },
+        {
+          "letra": "B",
+          "texto": "do ligamento colateral lateral radial."
+        },
+        {
+          "letra": "C",
+          "texto": "do ligamento colateral lateral ulnar."
+        },
+        {
+          "letra": "D",
+          "texto": "do ligamento colateral medial."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª ed., vol. II, p. 1463."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 14,
+        "numeroOriginal": 43
+      }
+    },
+    {
+      "id": "trauma-1125",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do olécrano"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Na fratura do olécrano, está contra-indicada a osteossíntese com banda de tensão se",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "a fratura for por avulsão."
+        },
+        {
+          "letra": "B",
+          "texto": "o traço de fratura for oblíquo."
+        },
+        {
+          "letra": "C",
+          "texto": "houver fratura associada do rádio."
+        },
+        {
+          "letra": "D",
+          "texto": "a superfície articular estiver multifragmentada."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed, p. 191."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 17,
+        "numeroOriginal": 53
+      }
+    },
+    {
+      "id": "trauma-1126",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do planalto tibial"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "No tratamento cirúrgico da fratura do planalto tibial, o controle radiográfico peroperatório na incidência em perfil deve mostrar",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "a linha do planalto lateral convexa e do medial côncava."
+        },
+        {
+          "letra": "B",
+          "texto": "a linha do planalto lateral côncava e do medial convexa."
+        },
+        {
+          "letra": "C",
+          "texto": "ambas as linhas dos planaltos convexas."
+        },
+        {
+          "letra": "D",
+          "texto": "ambas as linhas dos planaltos côncavas."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed, p. 502."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 18,
+        "numeroOriginal": 55
+      }
+    },
+    {
+      "id": "trauma-1127",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Durante a fixação de uma fratura trocantérica instável, existe maior possibilidade de desvio anterior do fragmento proximal no lado",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "direito, devido ao desenho da rosca do parafuso deslizante."
+        },
+        {
+          "letra": "B",
+          "texto": "direito, devido ao formato da placa."
+        },
+        {
+          "letra": "C",
+          "texto": "esquerdo, devido ao desenho da rosca do parafuso deslizante."
+        },
+        {
+          "letra": "D",
+          "texto": "esquerdo, devido ao formato da placa."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 1811."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 21,
+        "numeroOriginal": 66
+      }
+    },
+    {
+      "id": "trauma-1128",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da diáfise da tíbia"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Na osteossíntese intramedular de uma fratura diafisária da tíbia com diástase após a introdução da haste, segundo os princípios AO, a seqüência é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "bloqueio distal / redução da diástase / bloqueio proximal."
+        },
+        {
+          "letra": "B",
+          "texto": "bloqueio proximal / redução da diástase / bloqueio distal."
+        },
+        {
+          "letra": "C",
+          "texto": "redução da diástase / bloqueio proximal / bloqueio distal."
+        },
+        {
+          "letra": "D",
+          "texto": "redução da diástase / bloqueio distal / bloqueio proximal."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed, p. 209."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 22,
+        "numeroOriginal": 71
+      }
+    },
+    {
+      "id": "trauma-1129",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da escápula"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "No ombro flutuante, a fixação da fratura do colo da escápula deve ser realizada se houver desvio maior que:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "10 graus."
+        },
+        {
+          "letra": "B",
+          "texto": "20 graus."
+        },
+        {
+          "letra": "C",
+          "texto": "30 graus."
+        },
+        {
+          "letra": "D",
+          "texto": "40 graus."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 1237."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 23,
+        "numeroOriginal": 73
+      }
+    },
+    {
+      "id": "trauma-1130",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "A curvatura anterior do fêmur de um adulto é menor em",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "brancos."
+        },
+        {
+          "letra": "B",
+          "texto": "negros."
+        },
+        {
+          "letra": "C",
+          "texto": "asiáticos."
+        },
+        {
+          "letra": "D",
+          "texto": "índios."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 1851."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 27,
+        "numeroOriginal": 90
+      }
+    },
+    {
+      "id": "trauma-1131",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fraturas expostas"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Fratura exposta da diáfise tibial com perda de pele e síndrome de esmagamento com ampla zona de lesão, mas sem lesão neurovascular, é classificada pelo sistema de pontuação AO como:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "IO3-MT5-NV2."
+        },
+        {
+          "letra": "B",
+          "texto": "IO4-MT4-NV1."
+        },
+        {
+          "letra": "C",
+          "texto": "IO3-MT4-NV2."
+        },
+        {
+          "letra": "D",
+          "texto": "IO4-MT5-NV1."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed, p. 72."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 28,
+        "numeroOriginal": 91
+      }
+    },
+    {
+      "id": "trauma-1132",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2008,
+      "dificuldade": null,
+      "enunciado": "A fratura do capítulo do úmero corresponde, na classificação AO, ao tipo",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "C1."
+        },
+        {
+          "letra": "B",
+          "texto": "B1."
+        },
+        {
+          "letra": "C",
+          "texto": "B2."
+        },
+        {
+          "letra": "D",
+          "texto": "B3."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., p. 1071."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 3,
+        "numeroOriginal": 6
+      }
+    },
+    {
+      "id": "trauma-1133",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2008,
+      "dificuldade": null,
+      "enunciado": "Na fratura 13-C1, segundo a classificação AO, a fixação com duas placas promove maior estabilidade, com os planos entre elas em ângulo de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "0º."
+        },
+        {
+          "letra": "B",
+          "texto": "30º."
+        },
+        {
+          "letra": "C",
+          "texto": "60º."
+        },
+        {
+          "letra": "D",
+          "texto": "90º."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., vol. 1, p. 1083."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 3,
+        "numeroOriginal": 8
+      }
+    },
+    {
+      "id": "trauma-1134",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura subtrocantérica"
+      ],
+      "prova": "TARO",
+      "ano": 2008,
+      "dificuldade": null,
+      "enunciado": "Na fratura subtrocantérica do fêmur do adulto, o braço de alavanca sobre o implante é maior quando se utiliza dispositivo do tipo",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "centro-medular."
+        },
+        {
+          "letra": "B",
+          "texto": "côndilo-cefálico."
+        },
+        {
+          "letra": "C",
+          "texto": "céfalo-medular."
+        },
+        {
+          "letra": "D",
+          "texto": "placa-parafuso deslizante."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 4ª ed., vol. 2, p. 1747."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 4,
+        "numeroOriginal": 10
+      }
+    },
+    {
+      "id": "trauma-1135",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2008,
+      "dificuldade": null,
+      "enunciado": "Na fixação externa de fratura em ossos longos, a ocorrência de retardo de consolidação é mais freqüentemente associada com",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "afrouxamento dos pinos."
+        },
+        {
+          "letra": "B",
+          "texto": "excesso de rigidez da montagem."
+        },
+        {
+          "letra": "C",
+          "texto": "infecção."
+        },
+        {
+          "letra": "D",
+          "texto": "instabilidade."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 2708."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 4,
+        "numeroOriginal": 11
+      }
+    },
+    {
+      "id": "trauma-1136",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fraturas expostas"
+      ],
+      "prova": "TARO",
+      "ano": 2008,
+      "dificuldade": null,
+      "enunciado": "Na fratura exposta, o gás no subcutâneo pode ser produzido por Clostridium perfringens ou",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Pseudomonas aeruginosa."
+        },
+        {
+          "letra": "B",
+          "texto": "Azotobacter vinelandii."
+        },
+        {
+          "letra": "C",
+          "texto": "Bacilus antracis."
+        },
+        {
+          "letra": "D",
+          "texto": "Escherichia coli."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., p. 393."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 4,
+        "numeroOriginal": 12
+      }
+    },
+    {
+      "id": "trauma-1137",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do planalto tibial"
+      ],
+      "prova": "TARO",
+      "ano": 2008,
+      "dificuldade": null,
+      "enunciado": "O princípio da ligamentotaxia pode ser utilizado no tratamento da fratura",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "da diáfise do fêmur."
+        },
+        {
+          "letra": "B",
+          "texto": "do planalto tibial."
+        },
+        {
+          "letra": "C",
+          "texto": "do olécrano."
+        },
+        {
+          "letra": "D",
+          "texto": "do colo do tálus."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed. p. 224."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 4,
+        "numeroOriginal": 13
+      }
+    },
+    {
+      "id": "trauma-1138",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do úmero distal",
+        "Fratura do fêmur distal"
+      ],
+      "prova": "TARO",
+      "ano": 2008,
+      "dificuldade": null,
+      "enunciado": "Na fratura supracondiliana do fêmur, a consolidação viciosa ocorre mais freqüentemente com o fragmento distal em",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "flexão."
+        },
+        {
+          "letra": "B",
+          "texto": "extensão."
+        },
+        {
+          "letra": "C",
+          "texto": "valgo."
+        },
+        {
+          "letra": "D",
+          "texto": "varo."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª edição - pág.1964."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 4,
+        "numeroOriginal": 14
+      }
+    },
+    {
+      "id": "trauma-1139",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da clavícula"
+      ],
+      "prova": "TARO",
+      "ano": 2008,
+      "dificuldade": null,
+      "enunciado": "Na fratura do terço médio da clavícula, há indicação absoluta do tratamento cirúrgico",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "na associação com lesão nervosa."
+        },
+        {
+          "letra": "B",
+          "texto": "no ombro flutuante."
+        },
+        {
+          "letra": "C",
+          "texto": "na dissociação escápulo-torácica."
+        },
+        {
+          "letra": "D",
+          "texto": "na fratura bilateral."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. - 6ª ed., p 1226."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 4,
+        "numeroOriginal": 16
+      }
+    },
+    {
+      "id": "trauma-1140",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do acetábulo"
+      ],
+      "prova": "TARO",
+      "ano": 2008,
+      "dificuldade": null,
+      "enunciado": "Na fratura do acetábulo do tipo coluna anterior com hemitransversa posterior, a melhor via de acesso para o tratamento cirúrgico é a",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "de KOCHER-LANGENBECK."
+        },
+        {
+          "letra": "B",
+          "texto": "ilioinguinal."
+        },
+        {
+          "letra": "C",
+          "texto": "de SMITH-PETERSEN."
+        },
+        {
+          "letra": "D",
+          "texto": "de HUETER."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., vol. 2, p. 1690."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 5,
+        "numeroOriginal": 23
+      }
+    },
+    {
+      "id": "trauma-1141",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura transtrocantérica"
+      ],
+      "prova": "TARO",
+      "ano": 2008,
+      "dificuldade": null,
+      "enunciado": "Na fratura transtrocanteriana de traço reverso, é contra-indicada a utilização de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "placa-parafuso deslizante de 130°."
+        },
+        {
+          "letra": "B",
+          "texto": "placa angulada de 95°."
+        },
+        {
+          "letra": "C",
+          "texto": "haste intramedular céfalo-medular."
+        },
+        {
+          "letra": "D",
+          "texto": "placa-parafuso deslizante de 95°."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed. p. 444"
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 6,
+        "numeroOriginal": 24
+      }
+    },
+    {
+      "id": "trauma-1142",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Síndrome compartimental"
+      ],
+      "prova": "TARO",
+      "ano": 2008,
+      "dificuldade": null,
+      "enunciado": "Síndrome compartimental na perna, com diminuição da sensibilidade na região dorsolateral do pé sugere envolvimento do compartimento",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "anterior."
+        },
+        {
+          "letra": "B",
+          "texto": "lateral."
+        },
+        {
+          "letra": "C",
+          "texto": "posterior superficial."
+        },
+        {
+          "letra": "D",
+          "texto": "posterior profundo."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., p. 433"
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 8,
+        "numeroOriginal": 43
+      }
+    },
+    {
+      "id": "trauma-1143",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2008,
+      "dificuldade": null,
+      "enunciado": "A ocorrência de hérnia muscular é mais freqüente",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "no braço."
+        },
+        {
+          "letra": "B",
+          "texto": "no antebraço."
+        },
+        {
+          "letra": "C",
+          "texto": "na coxa."
+        },
+        {
+          "letra": "D",
+          "texto": "na perna."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 2484."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 8,
+        "numeroOriginal": 46
+      }
+    },
+    {
+      "id": "trauma-1144",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da escápula"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "Na escápula, a maior incidência de lesões associadas é encontrada na fratura",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "da espinha da escápula."
+        },
+        {
+          "letra": "B",
+          "texto": "do colo da escápula."
+        },
+        {
+          "letra": "C",
+          "texto": "do processo coracóide."
+        },
+        {
+          "letra": "D",
+          "texto": "do corpo da escápula."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 5ª ed., pg. 1100."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 3,
+        "numeroOriginal": 2
+      }
+    },
+    {
+      "id": "trauma-1145",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Politrauma e controle de danos"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "No politraumatizado, o melhor marcador sérico da resposta inflamatória sistêmica na fase aguda é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o fator de necrose tumoral-α."
+        },
+        {
+          "letra": "B",
+          "texto": "a interleucina-8."
+        },
+        {
+          "letra": "C",
+          "texto": "a interleucina-6."
+        },
+        {
+          "letra": "D",
+          "texto": "a proteína C-reativa."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Roberts C.S. - Journal of Bone & Joint Surgery. 87:434-49 2005."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 4,
+        "numeroOriginal": 10
+      }
+    },
+    {
+      "id": "trauma-1146",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fraturas por estresse"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "É considerado fator de risco para fratura de estresse em atletas",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "a diminuição da densidade óssea em homens."
+        },
+        {
+          "letra": "B",
+          "texto": "o aumento do índice de massa corpórea em mulheres."
+        },
+        {
+          "letra": "C",
+          "texto": "a diminuição da taxa de testosterona em homens."
+        },
+        {
+          "letra": "D",
+          "texto": "o distúrbio alimentar em mulheres."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 669."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 9,
+        "numeroOriginal": 38
+      }
+    },
+    {
+      "id": "trauma-1147",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura subtrocantérica"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "A fratura subtrocantérica, segundo RUSSELL & TAYLOR, é mais grave quando há",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "extensão do traço de fratura à fossa piriforme."
+        },
+        {
+          "letra": "B",
+          "texto": "acometimento da região póstero-medial do fêmur."
+        },
+        {
+          "letra": "C",
+          "texto": "extensão do traço de fratura para a diáfise femoral."
+        },
+        {
+          "letra": "D",
+          "texto": "fragmentação da cortical lateral do terço proximal do fêmur."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª ed., pg. 1883."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 9,
+        "numeroOriginal": 39
+      }
+    },
+    {
+      "id": "trauma-1148",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da clavícula",
+        "Fratura do úmero proximal"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "Na fratura lateral da clavícula do tipo II de NEER associada à fratura do processo coracóide, a melhor técnica cirúrgica é a",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "osteossíntese com placa."
+        },
+        {
+          "letra": "B",
+          "texto": "amarração coracoclavicular."
+        },
+        {
+          "letra": "C",
+          "texto": "de WEAVER-DUNN."
+        },
+        {
+          "letra": "D",
+          "texto": "osteossíntese com fio metálico."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 1229."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 10,
+        "numeroOriginal": 41
+      }
+    },
+    {
+      "id": "trauma-1149",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "A pseudartrose atrófica da diáfise do rádio, com defeito de 10mm e ulna intacta, tem como melhor indicação",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o transporte ósseo monofocal no rádio."
+        },
+        {
+          "letra": "B",
+          "texto": "o encurtamento da ulna com osteossíntese rígida de ambos os ossos."
+        },
+        {
+          "letra": "C",
+          "texto": "a excisão do fragmento distal do rádio e transferência da ulna para o defeito."
+        },
+        {
+          "letra": "D",
+          "texto": "a ressecção do tecido cicatricial, enxertia óssea e osteossíntese do rádio."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 9ª ed., pg. 2579."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 12,
+        "numeroOriginal": 52
+      }
+    },
+    {
+      "id": "trauma-1150",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do anel pélvico"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "Na lesão do anel pélvico do tipo C de TILE, com instabilidade hemodinâmica, o dispositivo ideal de fixação provisória é o",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "fixador externo supra-acetabular."
+        },
+        {
+          "letra": "B",
+          "texto": "clampe posterior."
+        },
+        {
+          "letra": "C",
+          "texto": "calção pneumático antichoque (PASG)."
+        },
+        {
+          "letra": "D",
+          "texto": "enfaixamento circunferencial com lençol (“fraldão”)."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª ed., pg. 1278."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 12,
+        "numeroOriginal": 54
+      }
+    },
+    {
+      "id": "trauma-1151",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da diáfise do úmero",
+        "Fixação externa e princípios de tratamento"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "Na montagem de um fixador externo, a principal medida para a obtenção de pré-tensionamento radial é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o emprego de pinos autoperfurantes."
+        },
+        {
+          "letra": "B",
+          "texto": "a realização de orifício ósseo com uma broca de menor diâmetro."
+        },
+        {
+          "letra": "C",
+          "texto": "a utilização de pinos com diâmetro superior a 30% da largura óssea."
+        },
+        {
+          "letra": "D",
+          "texto": "a colocação dos pinos de forma convergente nos fragmentos ósseos."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 257."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 14,
+        "numeroOriginal": 60
+      }
+    },
+    {
+      "id": "trauma-1152",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "Na fratura viciosamente consolidada da fratura em 3 partes do tubérculo maior do úmero, a cabeça sofre desvio em",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "rotação medial."
+        },
+        {
+          "letra": "B",
+          "texto": "rotação lateral."
+        },
+        {
+          "letra": "C",
+          "texto": "adução."
+        },
+        {
+          "letra": "D",
+          "texto": "abdução."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole Campbell. 11 ª ed. pg. 3499."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 15,
+        "numeroOriginal": 67
+      }
+    },
+    {
+      "id": "trauma-1153",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fraturas expostas",
+        "Síndrome compartimental"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "A síndrome compartimental associada à fratura da diáfise da tíbia é mais frequente quando a fratura é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "fechada."
+        },
+        {
+          "letra": "B",
+          "texto": "exposta grau I de GUSTILO & ANDERSON."
+        },
+        {
+          "letra": "C",
+          "texto": "exposta grau II de GUSTILO & ANDERSON."
+        },
+        {
+          "letra": "D",
+          "texto": "exposta grau III de GUSTILO & ANDERSON."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 2127."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 15,
+        "numeroOriginal": 68
+      }
+    },
+    {
+      "id": "trauma-1154",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura transtrocantérica"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "Na fratura transtrocanteriana do fêmur, a osteotomia de SARMIENTO é realizada com angulação de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "30º no fragmento distal."
+        },
+        {
+          "letra": "B",
+          "texto": "45º no fragmento proximal."
+        },
+        {
+          "letra": "C",
+          "texto": "45º no fragmento distal."
+        },
+        {
+          "letra": "D",
+          "texto": "30º no fragmento proximal."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed. pg. 2890."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 17,
+        "numeroOriginal": 76
+      }
+    },
+    {
+      "id": "trauma-1155",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fraturas expostas",
+        "Fratura do anel pélvico"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "O sinal clínico mais sugestivo de fratura exposta oculta da pelve é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o sangramento vaginal."
+        },
+        {
+          "letra": "B",
+          "texto": "a lesão de MORELL-LAVALLÉ."
+        },
+        {
+          "letra": "C",
+          "texto": "a hematúria macroscópica."
+        },
+        {
+          "letra": "D",
+          "texto": "o enfisema subcutâneo nos flancos."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 389."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 21,
+        "numeroOriginal": 99
+      }
+    },
+    {
+      "id": "trauma-1156",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "O tratamento funcional das fraturas pelo método de SARMIENTO baseia-se no princípio da pressão hidrostática gerada nas partes moles por meio de órteses bem moldadas.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 1378."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 3,
+        "numeroOriginal": 5
+      }
+    },
+    {
+      "id": "trauma-1157",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na osteossíntese interfragmentária, a maior força de compressão é obtida com a colocação do parafuso perpendicular à diáfise.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 187."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 4,
+        "numeroOriginal": 9
+      }
+    },
+    {
+      "id": "trauma-1158",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fraturas expostas"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "No tratamento da fratura exposta do fêmur, a haste intramedular fresada está indicada.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Journal of the American Academy of Orthopaedics Surgeons. May / June 2003; vol. 11, nº 3, p. 216."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 24,
+        "numeroOriginal": 139
+      }
+    },
+    {
+      "id": "trauma-1159",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da diáfise do fêmur"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "A fratura da diáfise do fêmur deve ser tratada com haste intramedular bloqueada dinâmica, pelo maior risco de retardo na consolidação, quando se utiliza o bloqueio estático.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, p. 1967."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 29,
+        "numeroOriginal": 176
+      }
+    },
+    {
+      "id": "trauma-1160",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da diáfise do úmero"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fixação da fratura diafisária do úmero com placa, a via de acesso posterior oferece exposição mais direta do nervo radial, com menos risco de paralisia intra-operatória.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. Levine, p. 30."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 30,
+        "numeroOriginal": 181
+      }
+    },
+    {
+      "id": "trauma-1161",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da diáfise do úmero"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "A consolidação viciosa da diáfise do úmero com desvio angular de até 30 graus, encurtamento de 2 a 3 cm e rotação de 15 graus, é bem tolerada, com um mínimo de comprometimento funcional.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, p. 1542."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 30,
+        "numeroOriginal": 183
+      }
+    },
+    {
+      "id": "trauma-1162",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fraturas por estresse"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fratura metafisária da tíbia tratada por haste bloqueada, a dinamização resulta em aumento da incidência de quebra por fadiga do material de síntese e da perda da redução da fratura.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. p. 174."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 31,
+        "numeroOriginal": 184
+      }
+    },
+    {
+      "id": "trauma-1163",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do rádio distal"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "A fratura de BARTON equivale ao tipo 23-B1 da classificação AO.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. p. 71."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 31,
+        "numeroOriginal": 185
+      }
+    },
+    {
+      "id": "trauma-1164",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "A escala GLASGOW para pacientes em coma usa como parâmetros a abertura dos olhos, a resposta motora e a resposta verbal.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 1996. 4th Edition, Chap. 2, Table 2-5, p. 129."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 31,
+        "numeroOriginal": 186
+      }
+    },
+    {
+      "id": "trauma-1165",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do anel pélvico"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "No traumatismo da pelve, a presença de fratura por avulsão do processo transverso de L5 é indicativa de lesão instável.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. p. 216."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 32,
+        "numeroOriginal": 191
+      }
+    },
+    {
+      "id": "trauma-1166",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura subtrocantérica"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fratura subtrocantérica do fêmur, a força resultante da ação muscular leva a encurtamento e varismo.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 1996. 4th Edition, Chap. 26."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 32,
+        "numeroOriginal": 192
+      }
+    },
+    {
+      "id": "trauma-1167",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da diáfise do úmero"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fratura da diáfise do úmero, deve-se evitar a fixação com haste intramedular bloqueada, quando o diâmetro da medular for menor que 9 mm ou na paralisia do nervo radial.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 6ª edição, Chap. 30, p. 1138."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 32,
+        "numeroOriginal": 195
+      }
+    },
+    {
+      "id": "trauma-1168",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "A pseudartrose de tíbia é com freqüência multifatorial, sendo a neuropatia um dos fatores causadores.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. p. 176."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 33,
+        "numeroOriginal": 201
+      }
+    },
+    {
+      "id": "trauma-1169",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Síndrome compartimental"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na síndrome compartimental anterior da perna, ocorre diminuição da sensibilidade no primeiro espaço interdigital.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, vol. II, p. 2204."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 33,
+        "numeroOriginal": 202
+      }
+    },
+    {
+      "id": "trauma-1170",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "O tratamento funcional dinâmico (SARMIENTO) é contra-indicado para fraturas da tíbia com desvio de mais de um terço do diâmetro da diáfise, devido ao retardo de consolidação.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, vol. II, p. 2223."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 33,
+        "numeroOriginal": 203
+      }
+    },
+    {
+      "id": "trauma-1171",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Politrauma e controle de danos"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "No paciente politraumatizado com fratura proximal da tíbia, a tração transesquelética é uma forma inaceitável de tratamento.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, vol. II, p. 2180."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 33,
+        "numeroOriginal": 204
+      }
+    },
+    {
+      "id": "trauma-1172",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "No tratamento da fratura do terço proximal da tíbia com haste intramedular, é comum ocorrer deformidade em valgo e recurvato.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Clínica ortopédica. Rio de Janeiro: Medsi. Dezembro 2004. vol. 5/4, p. 932."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 34,
+        "numeroOriginal": 205
+      }
+    },
+    {
+      "id": "trauma-1173",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "No tratamento da fratura metafisária da tíbia, a haste intramedular leva a maior incidência de pseudartrose do que a placa.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Atualização em conhecimentos ortopédicos: Trauma. AAOS/ SBOT. p. 176. 47"
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 34,
+        "numeroOriginal": 206
+      }
+    },
+    {
+      "id": "trauma-1174",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fratura intertrocantérica com obliqüidade reversa, a placa e o parafuso deslizante de 135 graus conferem estabilidade, sem necessidade de osteotomia.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 1724."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 34,
+        "numeroOriginal": 208
+      }
+    },
+    {
+      "id": "trauma-1175",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do acetábulo"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fratura distal (baixa) da coluna anterior do acetábulo, o tratamento é não cirúrgico.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 1634."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 34,
+        "numeroOriginal": 211
+      }
+    },
+    {
+      "id": "trauma-1176",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "A fratura do colo anatômico do úmero, sem desvio, associada à luxação, deve ser fixada profilaticamente antes da redução da articulação, pois isso previne a necrose avascular da cabeça umeral.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, vol. III, p. 2991."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 35,
+        "numeroOriginal": 217
+      }
+    },
+    {
+      "id": "trauma-1177",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "A fratura da extremidade proximal do úmero em quatro partes apresenta melhores resultados quando tratada por meio de redução aberta e fixação interna.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, vol. III, p. 2992."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 35,
+        "numeroOriginal": 218
+      }
+    },
+    {
+      "id": "trauma-1178",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da escápula"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fratura do colo da escápula, desvios angulares acima de 40 graus tendem a converter as forças compressivas exercidas pelo manguito rotador em forças de cisalhamento.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, vol. II, p. 1660."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 36,
+        "numeroOriginal": 219
+      }
+    },
+    {
+      "id": "trauma-1179",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da clavícula"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fratura do terço médio da clavícula tratada não cirurgicamente, a freqüência de pseudartrose depende principalmente do grau de desvio inicial.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, vol. II, p. 1683."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 36,
+        "numeroOriginal": 222
+      }
+    },
+    {
+      "id": "trauma-1180",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fratura da extremidade distal do rádio tratada pelo método de ULSON, o fio lateral deve ser introduzido no processo estilóide do rádio, e o medial, no tubérculo de LISTER.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Pardini A.Traumatismos da mão. Rio de Janeiro: Medsi. 3ª edição, p. 435."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 37,
+        "numeroOriginal": 227
+      }
+    },
+    {
+      "id": "trauma-1181",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do úmero distal"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fratura supracondiliana aberta do fêmur, a exposição óssea ocorre com maior freqüência na região póstero-medial da coxa.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 2001. 5ª edição, p.1733."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 37,
+        "numeroOriginal": 231
+      }
+    },
+    {
+      "id": "trauma-1182",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Politrauma e controle de danos",
+        "Fratura do anel pélvico"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Nos casos de politrauma com traumatismo crânio-encefálico grave, a osteossíntese dos ossos longos e da pelve está indicada se a pressão intracraniana estiver estável e entre 30 e 40 mmHg.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 142."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 38,
+        "numeroOriginal": 232
+      }
+    },
+    {
+      "id": "trauma-1183",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fraturas expostas"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "A fratura exposta do tipo III de GUSTILLO e ANDERSON deve ser submetida a um novo desbridamento 36 a 72 horas após o procedimento inicial.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, cap. 50, p. 2684."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 38,
+        "numeroOriginal": 234
+      }
+    },
+    {
+      "id": "trauma-1184",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fratura do fêmur por projétil de arma de fogo de baixa energia, a limpeza dos planos profundos é obrigatória.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 321."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 38,
+        "numeroOriginal": 235
+      }
+    },
+    {
+      "id": "trauma-1185",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "A amputação aberta circular é preferível à amputação com retalho cutâneo invertido por favorecer o fechamento secundário.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 544."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 38,
+        "numeroOriginal": 236
+      }
+    },
+    {
+      "id": "trauma-1186",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "A fratura provocada por projétil de arma de fogo de alta velocidade à “queima-roupa” deve ser submetida a lavagem, desbridamento, fixação provisória e fechamento de pele, postergando-se a osteossíntese definitiva.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, cap. 50, p. 2677."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 38,
+        "numeroOriginal": 237
+      }
+    },
+    {
+      "id": "trauma-1187",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da diáfise do fêmur"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fratura da diáfise do fêmur tratada com placas ortogonais, a retirada deve ser realizada em dois tempos, com seis meses de intervalo.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 2829."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 38,
+        "numeroOriginal": 238
+      }
+    },
+    {
+      "id": "trauma-1188",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da diáfise do fêmur"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na pseudartrose infectada da diáfise do fêmur com perda óssea, a utilização de apenas uma fíbula vascularizada apresenta alto risco de refratura.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 365."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 39,
+        "numeroOriginal": 239
+      }
+    },
+    {
+      "id": "trauma-1189",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Outros temas de trauma"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fratura segmentar do rádio, é indicada a fixação intramedular, quando não houver placa suficientemente longa para a osteossíntese.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, p. 1420."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 39,
+        "numeroOriginal": 240
+      }
+    },
+    {
+      "id": "trauma-1190",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fraturas diafisárias do antebraço"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na pseudartrose de um dos ossos do antebraço com perda de substância, o tratamento indicado é o encurtamento do osso íntegro e a osteossíntese de ambos.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 3157."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 39,
+        "numeroOriginal": 241
+      }
+    },
+    {
+      "id": "trauma-1191",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura da diáfise do fêmur"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na pseudartrose da diáfise do fêmur tratada com haste intramedular, a primeira indicação de tratamento é a sua troca por outra de diâmetro maior.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 3147."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 39,
+        "numeroOriginal": 242
+      }
+    },
+    {
+      "id": "trauma-1192",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do planalto tibial"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "Na fratura do planalto tibial, a lesão associada mais frequente é a",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "dos meniscos."
+        },
+        {
+          "letra": "B",
+          "texto": "do ligamento colateral medial."
+        },
+        {
+          "letra": "C",
+          "texto": "do ligamento colateral lateral."
+        },
+        {
+          "letra": "D",
+          "texto": "do ligamento cruzado anterior."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 2000."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 18,
+        "numeroOriginal": 83
+      }
+    },
+    {
+      "id": "trauma-1193",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do pilão tibial"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "Na fratura do pilão tibial, segundo a classificação de RÜEDI-ALLGÖWER, tem pior prognóstico o tipo",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "I."
+        },
+        {
+          "letra": "B",
+          "texto": "II."
+        },
+        {
+          "letra": "C",
+          "texto": "III."
+        },
+        {
+          "letra": "D",
+          "texto": "IV."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., pg. 2743."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 20,
+        "numeroOriginal": 95
       }
     }
   ]

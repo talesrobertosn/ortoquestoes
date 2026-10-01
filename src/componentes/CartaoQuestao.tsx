@@ -707,7 +707,9 @@ function ComentarioDaIA({
                   <span className="cm-selo cm-selo--certa"><Icone nome="certo" tamanho={13} /> {questao.gabarito ? 'Correta' : 'Resposta pela bibliografia'}</span>
                   {escolhida === referencia && <span className="cm-selo">Sua resposta</span>}
                 </header>
-                <TextoEditorial texto={semEco(comentario.correta, textoAlternativa(referencia))} />
+                {comentario.correta.trim()
+                  ? <TextoEditorial texto={semEco(comentario.correta, textoAlternativa(referencia))} />
+                  : <p className="comentario__pendente">O comentário desta questão está em preparação.</p>}
               </article>
             )}
 

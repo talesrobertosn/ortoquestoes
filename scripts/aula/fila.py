@@ -3,6 +3,7 @@
 #   sem opção:   comentários "crus" (texto curto ou com listas de tópicos simples)  -> prioridade 1
 #   --topicos:   formato antigo com títulos "###" e tabelas                          -> prioridade 2
 #   --corrido:   texto corrido antigo, sem a estrutura editorial atual              -> prioridade 3
+#   --pendentes: questão lançada só com a resposta, ainda sem comentário (TARO 2006...)
 # O total restante sai na saída de erro ("# restantes N").
 import json, sys, re, os
 RAIZ = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -17,6 +18,8 @@ Q = T.get('questoes', T)
 QD = {q['id']: q for q in Q}
 
 def classe(v):
+    if not (v.get('correta') or '').strip() and v.get('provavel'):
+        return 'pendente'
     con = v.get('conceito') or ''
     if '###' in con:
         return 'topicos'
@@ -28,15 +31,16 @@ def classe(v):
         return 'corrido'
     return 'cru'
 
-alvo = 'topicos' if '--topicos' in sys.argv else 'corrido' if '--corrido' in sys.argv else 'cru'
+alvo = ('topicos' if '--topicos' in sys.argv else 'corrido' if '--corrido' in sys.argv
+        else 'pendente' if '--pendentes' in sys.argv else 'cru')
 fila = [k for k, v in sorted(C.items())
         if k in QD and not QD[k].get('anulada') and not QD[k].get('duplicataDe')
-        and QD[k].get('gabarito') and classe(v) == alvo]
+        and (QD[k].get('gabarito') or v.get('provavel')) and classe(v) == alvo]
 print('# restantes', len(fila), file=sys.stderr)
 for k in fila[pular:pular + n]:
     q = QD[k]; v = C[k]
     imgs = [i['arquivo'] for i in (q.get('imagens') or [])]
-    print('=' * 10, k, '|', q.get('prova'), q.get('ano'), '|', q.get('subtemas'), '| gab', q['gabarito'],
+    print('=' * 10, k, '|', q.get('prova'), q.get('ano'), '|', q.get('subtemas'), '| gab', q['gabarito'] or f"{v['provavel']} (pela bibliografia, sem gabarito oficial)",
           ('| IMAGENS: ' + ', '.join('public/imagens/' + a for a in imgs)) if imgs else '')
     if v.get('alerta'):
         print('ALERTA:', v['alerta'])

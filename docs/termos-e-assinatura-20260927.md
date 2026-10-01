@@ -10,7 +10,7 @@ Este documento registra as decisões de produto e as fontes oficiais usadas na r
 - Depois desse prazo, o cancelamento impede a renovação e mantém o acesso até o fim do período já pago. Não há devolução proporcional automática dos meses restantes. Qualquer exceção deve ser tratada individualmente, sem promessa na interface.
 - O cartão é informado no checkout hospedado pelo Mercado Pago. O OrtoQuestões não recebe o número completo ou o código de segurança, mas recebe identificadores/status da operação para gerir a assinatura.
 - Um aceite separado, com versão, plano, valor e periodicidade, é registrado antes de abrir o checkout. O checkout continua exigindo confirmação de pagamento no Mercado Pago.
-- Comentários, revisão, caderno de erros e simulados permanecem acessíveis conforme as regras atuais; mudanças futuras exigem aviso e regras próprias. Conteúdos da SBQ e de quadril continuam acessíveis a todos, sem exclusividade de assinantes.
+- Comentários, revisão, caderno de erros e simulados permanecem acessíveis conforme as regras atuais; mudanças futuras exigem aviso e regras próprias. Conteúdos de Fellowship Quadril e de quadril continuam acessíveis a todos, sem exclusividade de assinantes.
 
 ## Fontes oficiais
 

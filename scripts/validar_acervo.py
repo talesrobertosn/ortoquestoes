@@ -96,6 +96,10 @@ def conferir_comentarios(
                 erros.append(f"{onde}: comenta uma questão que não existe no acervo")
                 continue
             if not str(comentario.get("correta") or "").strip():
+                # Questão lançada só com a resposta pela bibliografia: o texto vem depois.
+                if comentario.get("provavel") and not comentario.get("incorretas") and not comentario.get("conceito"):
+                    avisos.append(f"{onde}: só a resposta, comentário pendente")
+                    continue
                 erros.append(f"{onde}: sem explicação da alternativa correta")
 
             incorretas = comentario.get("incorretas") or {}

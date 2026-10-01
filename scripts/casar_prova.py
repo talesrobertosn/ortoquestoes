@@ -40,7 +40,7 @@ def normalizar(texto: str) -> str:
 
 INICIO = re.compile(r"^\s*(\d{1,3})\s*[.)\-–](?:\s+(.*))?$")
 ALTERNATIVA = re.compile(r"^\s*([A-Ea-e])\s*[)\.\-–]\s*(.*)$")
-FIM_DO_CADERNO = re.compile(r"(?i)^\s*(gabarito|refer[eê]ncias|bibliografia)\b")
+FIM_DO_CADERNO = re.compile(r"(?i)^\s*(gabarito|refer[eê]ncias?|bibliografia)\b")
 # Cabeçalho e rodapé de página que se misturam ao texto da questão.
 RUIDO = re.compile(r"(?i)^\s*(prova escrita|p[aá]g\.?\s*\d+|\d{1,3}\s*$)")
 
@@ -85,7 +85,17 @@ def ler_questoes(pdf: Path) -> list[dict]:
                     atual["enunciado"] += " " + linha.strip()
     if atual:
         questoes.append(atual)
+    for q in questoes:
+        q["alternativas"] = [sem_citacao(t) for t in q["alternativas"]]
     return questoes
+
+
+# Lista de referências sem título logo depois da última alternativa.
+CITACAO = re.compile(r"\s(REFER[EÊ]NCIAS?|Skeletal trauma|Campbell|Rockwood|Tachdjian|Lovell|Canale S\.?T)\b.*$", re.S)
+
+
+def sem_citacao(texto: str) -> str:
+    return CITACAO.sub("", texto).strip() if len(texto) > 200 else texto
 
 
 def sem_fonte(texto: str) -> str:

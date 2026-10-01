@@ -48,11 +48,11 @@ for bloco in re.split(r'^@@\s*', txt, flags=re.M)[1:]:
           ' '.join(f'{l}:{len(t)}' for l, t in c['incorretas'].items()))
 if erros:
     print('\n'.join(erros)); sys.exit(1)
-# Preserva alerta e referências que já existiam, se o lote não trouxer.
+# Preserva alerta, referências e a resposta pela bibliografia que já existiam, se o lote não trouxer.
 for qid, c in lote.items():
     tema = re.sub(r'-\d+$', '', qid)
     ant = json.load(open(os.path.join(R, 'comentarios', f'{tema}.json'), encoding='utf-8')).get(qid, {})
-    for k in ('alerta', 'referencias'):
+    for k in ('alerta', 'referencias', 'provavel'):
         if k == 'alerta' and qid in sem_alerta: continue
         if k not in c and ant.get(k): c[k] = ant[k]
 saida = arq.rsplit('.', 1)[0] + '.json'

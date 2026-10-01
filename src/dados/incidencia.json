@@ -1,42 +1,52 @@
 {
-  "geradoEm": "2026-09-30",
-  "base": 3565,
+  "geradoEm": "2026-10-01",
+  "base": 4118,
   "areas": [
     {
       "id": "trauma",
       "nome": "Trauma adulto",
       "slug": "trauma",
-      "n": 768,
+      "n": 852,
       "focos": [
         {
           "nome": "Fratura da cabeça do rádio e instabilidade do cotovelo",
           "nivel": 4,
-          "n": 58
+          "n": 59
         },
         {
           "nome": "Luxação do joelho e lesões ligamentares",
           "nivel": 4,
-          "n": 53
-        },
-        {
-          "nome": "Fraturas da coluna toracolombar",
-          "nivel": 4,
-          "n": 39
-        },
-        {
-          "nome": "Fratura do úmero proximal",
-          "nivel": 4,
-          "n": 37
+          "n": 54
         },
         {
           "nome": "Fraturas diafisárias do antebraço",
           "nivel": 4,
-          "n": 37
+          "n": 41
+        },
+        {
+          "nome": "Fraturas da coluna toracolombar",
+          "nivel": 4,
+          "n": 40
+        },
+        {
+          "nome": "Fratura do úmero proximal",
+          "nivel": 4,
+          "n": 39
         },
         {
           "nome": "Síndrome compartimental",
           "nivel": 4,
-          "n": 35
+          "n": 39
+        },
+        {
+          "nome": "Fratura da clavícula",
+          "nivel": 4,
+          "n": 29
+        },
+        {
+          "nome": "Fratura da escápula",
+          "nivel": 4,
+          "n": 29
         },
         {
           "nome": "Fratura do escafoide e do carpo",
@@ -45,16 +55,21 @@
         },
         {
           "nome": "Fraturas do tálus e do calcâneo",
-          "nivel": 4,
+          "nivel": 3,
           "n": 28
         },
         {
           "nome": "Fraturas dos metacarpos e falanges",
-          "nivel": 4,
+          "nivel": 3,
           "n": 28
         },
         {
-          "nome": "Fratura da escápula",
+          "nome": "Fraturas por estresse",
+          "nivel": 3,
+          "n": 27
+        },
+        {
+          "nome": "Fratura da diáfise do fêmur",
           "nivel": 3,
           "n": 26
         },
@@ -64,57 +79,57 @@
           "n": 26
         },
         {
-          "nome": "Fratura da clavícula",
-          "nivel": 3,
-          "n": 25
-        },
-        {
-          "nome": "Fraturas por estresse",
+          "nome": "Fratura do planalto tibial",
           "nivel": 3,
           "n": 25
         },
         {
           "nome": "Fratura do úmero distal",
           "nivel": 3,
-          "n": 23
+          "n": 25
+        },
+        {
+          "nome": "Fratura do anel pélvico",
+          "nivel": 3,
+          "n": 24
         },
         {
           "nome": "Fratura da diáfise da tíbia",
           "nivel": 3,
-          "n": 22
-        },
-        {
-          "nome": "Fratura da diáfise do fêmur",
-          "nivel": 3,
-          "n": 22
-        },
-        {
-          "nome": "Fratura do planalto tibial",
-          "nivel": 3,
-          "n": 22
+          "n": 23
         },
         {
           "nome": "Fratura do colo do fêmur",
-          "nivel": 3,
-          "n": 21
-        },
-        {
-          "nome": "Fratura do anel pélvico",
           "nivel": 2,
-          "n": 19
-        },
-        {
-          "nome": "Fratura do fêmur distal",
-          "nivel": 2,
-          "n": 19
+          "n": 22
         },
         {
           "nome": "Fratura subtrocantérica",
           "nivel": 2,
-          "n": 19
+          "n": 22
+        },
+        {
+          "nome": "Fraturas expostas",
+          "nivel": 2,
+          "n": 22
+        },
+        {
+          "nome": "Fratura do fêmur distal",
+          "nivel": 2,
+          "n": 20
+        },
+        {
+          "nome": "Fratura do rádio distal",
+          "nivel": 2,
+          "n": 18
         },
         {
           "nome": "Fraturas da coluna cervical alta",
+          "nivel": 2,
+          "n": 18
+        },
+        {
+          "nome": "Luxação acromioclavicular",
           "nivel": 2,
           "n": 18
         },
@@ -124,49 +139,34 @@
           "n": 18
         },
         {
-          "nome": "Fratura do rádio distal",
+          "nome": "Fratura do acetábulo",
           "nivel": 2,
           "n": 17
         },
         {
           "nome": "Fratura do tornozelo",
-          "nivel": 2,
-          "n": 17
-        },
-        {
-          "nome": "Luxação acromioclavicular",
-          "nivel": 2,
-          "n": 17
-        },
-        {
-          "nome": "Fraturas expostas",
-          "nivel": 2,
-          "n": 16
-        },
-        {
-          "nome": "Fratura do acetábulo",
           "nivel": 1,
-          "n": 15
+          "n": 17
         },
         {
           "nome": "Fratura transtrocantérica",
+          "nivel": 1,
+          "n": 17
+        },
+        {
+          "nome": "Fratura da diáfise do úmero",
           "nivel": 1,
           "n": 15
         },
         {
           "nome": "Fratura do pilão tibial",
           "nivel": 1,
-          "n": 12
-        },
-        {
-          "nome": "Fratura da diáfise do úmero",
-          "nivel": 1,
-          "n": 11
+          "n": 13
         },
         {
           "nome": "Politrauma e controle de danos",
           "nivel": 1,
-          "n": 10
+          "n": 13
         },
         {
           "nome": "Fraturas do mediopé e antepé",
@@ -181,117 +181,132 @@
         {
           "nome": "Fratura do olécrano",
           "nivel": 1,
-          "n": 2
+          "n": 3
+        },
+        {
+          "nome": "Fixação externa e princípios de tratamento",
+          "nivel": 1,
+          "n": 1
         },
         {
           "nome": "Outros temas de trauma",
           "nivel": 1,
-          "n": 9
+          "n": 37
         }
       ],
       "peso": 10,
-      "pct": 21.5
+      "pct": 20.7
     },
     {
       "id": "pediatria",
       "nome": "Ortopedia pediátrica",
       "slug": "pediatria",
-      "n": 578,
+      "n": 707,
       "focos": [
         {
           "nome": "Genuvaro, genuvalgo e torções",
           "nivel": 4,
-          "n": 66
+          "n": 77
         },
         {
           "nome": "Lesões fisárias",
           "nivel": 4,
-          "n": 54
-        },
-        {
-          "nome": "Displasia do desenvolvimento do quadril",
-          "nivel": 4,
-          "n": 36
+          "n": 74
         },
         {
           "nome": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
           "nivel": 4,
-          "n": 29
+          "n": 45
         },
         {
-          "nome": "Paralisia cerebral",
+          "nome": "Displasia do desenvolvimento do quadril",
           "nivel": 4,
-          "n": 29
-        },
-        {
-          "nome": "Marcha na criança",
-          "nivel": 4,
-          "n": 25
+          "n": 44
         },
         {
           "nome": "Displasias esqueléticas e síndromes",
           "nivel": 4,
-          "n": 24
+          "n": 36
+        },
+        {
+          "nome": "Fraturas do antebraço e punho na criança",
+          "nivel": 4,
+          "n": 35
+        },
+        {
+          "nome": "Paralisia cerebral",
+          "nivel": 4,
+          "n": 34
+        },
+        {
+          "nome": "Fraturas do fêmur e da perna na criança",
+          "nivel": 4,
+          "n": 29
         },
         {
           "nome": "Pé torto congênito",
           "nivel": 4,
-          "n": 24
+          "n": 27
         },
         {
-          "nome": "Tíbia vara (Blount)",
-          "nivel": 4,
-          "n": 23
-        },
-        {
-          "nome": "Fraturas do antebraço e punho na criança",
+          "nome": "Marcha na criança",
           "nivel": 3,
-          "n": 22
-        },
-        {
-          "nome": "Artrogripose e doenças neuromusculares",
-          "nivel": 3,
-          "n": 21
-        },
-        {
-          "nome": "Epifisiólise proximal do fêmur",
-          "nivel": 3,
-          "n": 19
-        },
-        {
-          "nome": "Doença de Legg-Calvé-Perthes",
-          "nivel": 3,
-          "n": 18
-        },
-        {
-          "nome": "Joelho da criança",
-          "nivel": 3,
-          "n": 18
-        },
-        {
-          "nome": "Fraturas do fêmur e da perna na criança",
-          "nivel": 3,
-          "n": 17
+          "n": 25
         },
         {
           "nome": "Ossificação e crescimento",
           "nivel": 3,
-          "n": 16
+          "n": 25
         },
         {
-          "nome": "Osteogênese imperfeita",
+          "nome": "Tíbia vara (Blount)",
           "nivel": 3,
-          "n": 15
+          "n": 25
         },
         {
-          "nome": "Mielomeningocele",
-          "nivel": 2,
-          "n": 14
+          "nome": "Artrogripose e doenças neuromusculares",
+          "nivel": 3,
+          "n": 24
+        },
+        {
+          "nome": "Epifisiólise proximal do fêmur",
+          "nivel": 3,
+          "n": 22
+        },
+        {
+          "nome": "Joelho da criança",
+          "nivel": 3,
+          "n": 22
+        },
+        {
+          "nome": "Doença de Legg-Calvé-Perthes",
+          "nivel": 3,
+          "n": 21
+        },
+        {
+          "nome": "Fraturas da pelve e do quadril na criança",
+          "nivel": 3,
+          "n": 20
         },
         {
           "nome": "Coluna e pescoço da criança",
           "nivel": 2,
-          "n": 13
+          "n": 17
+        },
+        {
+          "nome": "Mielomeningocele",
+          "nivel": 2,
+          "n": 16
+        },
+        {
+          "nome": "Osteogênese imperfeita",
+          "nivel": 2,
+          "n": 16
+        },
+        {
+          "nome": "Fraturas supracondilianas do úmero",
+          "nivel": 2,
+          "n": 14
         },
         {
           "nome": "Desenvolvimento neuropsicomotor",
@@ -304,59 +319,54 @@
           "n": 12
         },
         {
-          "nome": "Osteocondroses",
+          "nome": "Fraturas da clavícula e do úmero proximal na criança",
           "nivel": 2,
           "n": 11
         },
         {
-          "nome": "Fraturas da pelve e do quadril na criança",
+          "nome": "Fraturas do pé na criança",
           "nivel": 2,
-          "n": 10
-        },
-        {
-          "nome": "Sinovite transitória e artrite séptica do quadril",
-          "nivel": 2,
-          "n": 10
-        },
-        {
-          "nome": "Fraturas supracondilianas do úmero",
-          "nivel": 2,
-          "n": 9
+          "n": 11
         },
         {
           "nome": "Ombro e cotovelo da criança",
           "nivel": 2,
-          "n": 9
+          "n": 11
         },
         {
-          "nome": "Fraturas da clavícula e do úmero proximal na criança",
+          "nome": "Osteocondroses",
           "nivel": 1,
-          "n": 8
+          "n": 11
         },
         {
           "nome": "Pseudartrose congênita da tíbia e deformidades da perna",
           "nivel": 1,
-          "n": 8
+          "n": 11
         },
         {
-          "nome": "Fraturas do pé na criança",
+          "nome": "Sinovite transitória e artrite séptica do quadril",
           "nivel": 1,
-          "n": 7
-        },
-        {
-          "nome": "Fraturas do tornozelo na criança",
-          "nivel": 1,
-          "n": 7
+          "n": 11
         },
         {
           "nome": "Mão da criança",
           "nivel": 1,
-          "n": 6
+          "n": 10
+        },
+        {
+          "nome": "Fraturas do tornozelo na criança",
+          "nivel": 1,
+          "n": 8
         },
         {
           "nome": "Infecções e artrites na criança",
           "nivel": 1,
-          "n": 1
+          "n": 4
+        },
+        {
+          "nome": "Trauma da coluna na criança",
+          "nivel": 1,
+          "n": 3
         },
         {
           "nome": "Raquitismo e doenças metabólicas na criança",
@@ -364,14 +374,9 @@
           "n": 1
         },
         {
-          "nome": "Trauma da coluna na criança",
-          "nivel": 1,
-          "n": 1
-        },
-        {
           "nome": "Outras fraturas na criança",
           "nivel": 1,
-          "n": 84
+          "n": 97
         },
         {
           "nome": "Outras doenças congênitas",
@@ -390,53 +395,58 @@
         }
       ],
       "peso": 8,
-      "pct": 16.2
+      "pct": 17.2
     },
     {
       "id": "mao",
       "nome": "Mão e punho",
       "slug": "mao",
-      "n": 476,
+      "n": 535,
       "focos": [
         {
           "nome": "Anatomia da mão e punho",
           "nivel": 4,
-          "n": 75
+          "n": 85
         },
         {
           "nome": "Lesões dos tendões flexores",
           "nivel": 4,
-          "n": 51
+          "n": 57
         },
         {
           "nome": "Neuropatia ulnar e outras compressões",
           "nivel": 4,
-          "n": 51
-        },
-        {
-          "nome": "Exame físico da mão e punho",
-          "nivel": 4,
-          "n": 31
+          "n": 54
         },
         {
           "nome": "Lesões de nervos periféricos",
           "nivel": 4,
-          "n": 31
+          "n": 34
+        },
+        {
+          "nome": "Exame físico da mão e punho",
+          "nivel": 4,
+          "n": 33
         },
         {
           "nome": "Retalhos e cobertura cutânea",
           "nivel": 4,
-          "n": 24
+          "n": 28
+        },
+        {
+          "nome": "Lesões dos tendões extensores",
+          "nivel": 4,
+          "n": 27
         },
         {
           "nome": "Instabilidade do carpo",
           "nivel": 4,
-          "n": 23
+          "n": 26
         },
         {
           "nome": "Doença de Dupuytren",
           "nivel": 3,
-          "n": 22
+          "n": 25
         },
         {
           "nome": "Plexo braquial e paralisia obstétrica",
@@ -444,39 +454,39 @@
           "n": 21
         },
         {
-          "nome": "Mão reumatoide",
-          "nivel": 3,
-          "n": 18
-        },
-        {
           "nome": "Lesões ligamentares dos dedos",
           "nivel": 3,
-          "n": 16
+          "n": 20
+        },
+        {
+          "nome": "Mão reumatoide",
+          "nivel": 3,
+          "n": 20
         },
         {
           "nome": "Amputações e reimplantes",
           "nivel": 3,
-          "n": 15
-        },
-        {
-          "nome": "Lesões dos tendões extensores",
-          "nivel": 3,
-          "n": 15
+          "n": 16
         },
         {
           "nome": "Doença de Kienböck",
           "nivel": 3,
-          "n": 14
+          "n": 16
         },
         {
           "nome": "Rizartrose e artrose da mão",
-          "nivel": 2,
-          "n": 14
+          "nivel": 3,
+          "n": 16
         },
         {
           "nome": "Dedo em gatilho e outras tenossinovites",
           "nivel": 2,
-          "n": 13
+          "n": 15
+        },
+        {
+          "nome": "Deformidades dos dedos",
+          "nivel": 2,
+          "n": 14
         },
         {
           "nome": "Fibrocartilagem triangular e punho ulnar",
@@ -484,9 +494,19 @@
           "n": 12
         },
         {
-          "nome": "Deformidades dos dedos",
+          "nome": "Fraturas dos metacarpos e falanges",
           "nivel": 2,
           "n": 11
+        },
+        {
+          "nome": "Biomecânica da mão",
+          "nivel": 2,
+          "n": 10
+        },
+        {
+          "nome": "Síndrome do túnel do carpo",
+          "nivel": 2,
+          "n": 10
         },
         {
           "nome": "Artrose do punho e artroscopia",
@@ -494,24 +514,9 @@
           "n": 9
         },
         {
-          "nome": "Biomecânica da mão",
-          "nivel": 2,
-          "n": 8
-        },
-        {
-          "nome": "Fraturas dos metacarpos e falanges",
-          "nivel": 2,
-          "n": 7
-        },
-        {
-          "nome": "Síndrome do túnel do carpo",
-          "nivel": 1,
-          "n": 7
-        },
-        {
           "nome": "Fraturas do escafoide e do carpo",
-          "nivel": 1,
-          "n": 6
+          "nivel": 2,
+          "n": 9
         },
         {
           "nome": "Fratura do rádio distal",
@@ -521,7 +526,22 @@
         {
           "nome": "Sindactilia e polidactilia",
           "nivel": 1,
+          "n": 3
+        },
+        {
+          "nome": "Imagem da mão e punho",
+          "nivel": 1,
           "n": 2
+        },
+        {
+          "nome": "Tumores da mão",
+          "nivel": 1,
+          "n": 2
+        },
+        {
+          "nome": "Deficiências longitudinais e mão torta",
+          "nivel": 1,
+          "n": 1
         },
         {
           "nome": "Infecções da mão",
@@ -534,14 +554,9 @@
           "n": 1
         },
         {
-          "nome": "Tumores da mão",
-          "nivel": 1,
-          "n": 1
-        },
-        {
           "nome": "Outras malformações congênitas",
           "nivel": 1,
-          "n": 50
+          "n": 53
         },
         {
           "nome": "Outros temas da mão",
@@ -550,48 +565,53 @@
         }
       ],
       "peso": 6,
-      "pct": 13.4
+      "pct": 13.0
     },
     {
       "id": "ombro-cotovelo",
       "nome": "Ombro e cotovelo",
       "slug": "ombro-cotovelo",
-      "n": 354,
+      "n": 406,
       "focos": [
-        {
-          "nome": "Anatomia do ombro",
-          "nivel": 4,
-          "n": 51
-        },
         {
           "nome": "Lesões do manguito rotador",
           "nivel": 4,
-          "n": 47
+          "n": 54
+        },
+        {
+          "nome": "Anatomia do ombro",
+          "nivel": 4,
+          "n": 52
         },
         {
           "nome": "Omartrose e artroplastia do ombro",
           "nivel": 4,
-          "n": 43
+          "n": 47
         },
         {
           "nome": "Instabilidade anterior do ombro",
           "nivel": 4,
-          "n": 39
+          "n": 40
         },
         {
           "nome": "Instabilidade do cotovelo",
           "nivel": 4,
-          "n": 30
+          "n": 36
         },
         {
           "nome": "Lesões do bíceps",
           "nivel": 4,
-          "n": 29
+          "n": 31
         },
         {
           "nome": "Exame físico do ombro",
           "nivel": 4,
-          "n": 20
+          "n": 23
+        },
+        {
+          "nome": "Capsulite adesiva",
+          "nivel": 3,
+          "n": 18
         },
         {
           "nome": "Artroscopia e vias de acesso do ombro",
@@ -599,54 +619,54 @@
           "n": 17
         },
         {
-          "nome": "Capsulite adesiva",
+          "nome": "Imagem do ombro e cotovelo",
+          "nivel": 3,
+          "n": 15
+        },
+        {
+          "nome": "Rigidez do cotovelo",
           "nivel": 3,
           "n": 15
         },
         {
           "nome": "Epicondilite lateral e medial",
           "nivel": 3,
-          "n": 13
+          "n": 14
         },
         {
           "nome": "Lesões nervosas do ombro e cotovelo",
           "nivel": 3,
-          "n": 12
+          "n": 14
         },
         {
-          "nome": "Rigidez do cotovelo",
-          "nivel": 3,
-          "n": 12
-        },
-        {
-          "nome": "Tendinite calcária",
-          "nivel": 3,
-          "n": 11
-        },
-        {
-          "nome": "Artrose e artroplastia do cotovelo",
+          "nome": "Fraturas do cotovelo e antebraço",
           "nivel": 2,
-          "n": 10
+          "n": 13
         },
         {
           "nome": "Fraturas do úmero proximal e da escápula",
           "nivel": 2,
-          "n": 10
+          "n": 13
         },
         {
-          "nome": "Imagem do ombro e cotovelo",
+          "nome": "Tendinite calcária",
           "nivel": 2,
-          "n": 9
+          "n": 12
+        },
+        {
+          "nome": "Artrose e artroplastia do cotovelo",
+          "nivel": 2,
+          "n": 11
         },
         {
           "nome": "Peitoral maior e outras rupturas tendíneas",
           "nivel": 2,
-          "n": 8
+          "n": 9
         },
         {
           "nome": "Lesões SLAP e do lábio superior",
           "nivel": 2,
-          "n": 7
+          "n": 8
         },
         {
           "nome": "Anatomia do cotovelo",
@@ -654,14 +674,14 @@
           "n": 6
         },
         {
-          "nome": "Fraturas do cotovelo e antebraço",
-          "nivel": 2,
+          "nome": "Impacto subacromial e acromioplastia",
+          "nivel": 1,
           "n": 6
         },
         {
           "nome": "Luxação acromioclavicular e esternoclavicular",
           "nivel": 1,
-          "n": 5
+          "n": 6
         },
         {
           "nome": "Ossificação heterotópica",
@@ -674,11 +694,6 @@
           "n": 4
         },
         {
-          "nome": "Impacto subacromial e acromioplastia",
-          "nivel": 1,
-          "n": 4
-        },
-        {
           "nome": "Instabilidade posterior e multidirecional",
           "nivel": 1,
           "n": 3
@@ -686,12 +701,12 @@
         {
           "nome": "Lesão do subescapular",
           "nivel": 1,
-          "n": 2
+          "n": 3
         },
         {
           "nome": "Outros temas do ombro e cotovelo",
           "nivel": 1,
-          "n": 9
+          "n": 21
         }
       ],
       "peso": 5,
@@ -701,112 +716,112 @@
       "id": "pe-tornozelo",
       "nome": "Pé e tornozelo",
       "slug": "pe-tornozelo",
-      "n": 258,
+      "n": 304,
       "focos": [
         {
           "nome": "Pé plano adquirido do adulto",
           "nivel": 4,
-          "n": 56
+          "n": 59
         },
         {
           "nome": "Anatomia do pé e tornozelo",
           "nivel": 4,
-          "n": 45
+          "n": 50
         },
         {
           "nome": "Hálux valgo",
           "nivel": 4,
-          "n": 26
-        },
-        {
-          "nome": "Exame físico do pé e tornozelo",
-          "nivel": 4,
-          "n": 17
+          "n": 29
         },
         {
           "nome": "Pé diabético e neuroartropatia de Charcot",
           "nivel": 4,
+          "n": 21
+        },
+        {
+          "nome": "Exame físico do pé e tornozelo",
+          "nivel": 4,
+          "n": 18
+        },
+        {
+          "nome": "Coalizões tarsais",
+          "nivel": 4,
+          "n": 17
+        },
+        {
+          "nome": "Fraturas do tornozelo e do pilão tibial",
+          "nivel": 3,
           "n": 17
         },
         {
           "nome": "Tendões fibulares e outras tendinopatias",
-          "nivel": 4,
-          "n": 15
-        },
-        {
-          "nome": "Coalizões tarsais",
           "nivel": 3,
-          "n": 13
-        },
-        {
-          "nome": "Entorse e instabilidade lateral do tornozelo",
-          "nivel": 3,
-          "n": 13
+          "n": 16
         },
         {
           "nome": "Artrose do tornozelo, artrodese e artroplastia",
           "nivel": 3,
+          "n": 15
+        },
+        {
+          "nome": "Fraturas do retropé, mediopé e antepé",
+          "nivel": 3,
+          "n": 15
+        },
+        {
+          "nome": "Imagem do pé e tornozelo",
+          "nivel": 3,
+          "n": 15
+        },
+        {
+          "nome": "Entorse e instabilidade lateral do tornozelo",
+          "nivel": 3,
+          "n": 14
+        },
+        {
+          "nome": "Lesões osteocondrais do tálus",
+          "nivel": 2,
           "n": 12
         },
         {
           "nome": "Tendão calcâneo",
-          "nivel": 3,
+          "nivel": 2,
           "n": 12
         },
         {
           "nome": "Hálux rígido",
-          "nivel": 3,
-          "n": 10
+          "nivel": 2,
+          "n": 11
         },
         {
-          "nome": "Imagem do pé e tornozelo",
+          "nome": "Biomecânica e marcha",
           "nivel": 2,
           "n": 10
         },
         {
-          "nome": "Fraturas do tornozelo e do pilão tibial",
+          "nome": "Metatarsalgia e neuroma de Morton",
           "nivel": 2,
           "n": 9
         },
         {
-          "nome": "Lesões osteocondrais do tálus",
+          "nome": "Pé cavo",
           "nivel": 2,
           "n": 8
         },
         {
           "nome": "Pé reumatoide",
-          "nivel": 2,
-          "n": 7
-        },
-        {
-          "nome": "Artroscopia do tornozelo",
-          "nivel": 2,
-          "n": 6
-        },
-        {
-          "nome": "Biomecânica e marcha",
-          "nivel": 2,
-          "n": 6
+          "nivel": 1,
+          "n": 8
         },
         {
           "nome": "Fasciíte plantar e dor no calcanhar",
           "nivel": 1,
-          "n": 6
+          "n": 7
         },
         {
-          "nome": "Metatarsalgia e neuroma de Morton",
+          "nome": "Artroscopia do tornozelo",
           "nivel": 1,
           "n": 6
-        },
-        {
-          "nome": "Pé cavo",
-          "nivel": 1,
-          "n": 5
-        },
-        {
-          "nome": "Fraturas do retropé, mediopé e antepé",
-          "nivel": 1,
-          "n": 4
         },
         {
           "nome": "Dedos menores em garra e em martelo",
@@ -814,204 +829,89 @@
           "n": 3
         },
         {
-          "nome": "Outros temas do pé e tornozelo",
-          "nivel": 1,
-          "n": 8
-        }
-      ],
-      "peso": 3,
-      "pct": 7.2
-    },
-    {
-      "id": "tumores",
-      "nome": "Tumores ósseos e de partes moles",
-      "slug": "tumores",
-      "n": 242,
-      "focos": [
-        {
-          "nome": "Estadiamento, biópsia e margens",
-          "nivel": 4,
-          "n": 38
-        },
-        {
-          "nome": "Metástases ósseas",
-          "nivel": 4,
-          "n": 28
-        },
-        {
-          "nome": "Condrossarcoma",
-          "nivel": 4,
-          "n": 27
-        },
-        {
-          "nome": "Tumor de células gigantes",
-          "nivel": 4,
-          "n": 20
-        },
-        {
-          "nome": "Tumores benignos de partes moles",
-          "nivel": 4,
-          "n": 20
-        },
-        {
-          "nome": "Displasia fibrosa",
-          "nivel": 4,
-          "n": 19
-        },
-        {
-          "nome": "Osteossarcoma",
-          "nivel": 3,
-          "n": 19
-        },
-        {
-          "nome": "Cisto ósseo simples",
-          "nivel": 3,
-          "n": 13
-        },
-        {
-          "nome": "Sarcoma de Ewing",
-          "nivel": 3,
-          "n": 13
-        },
-        {
-          "nome": "Doença de Paget",
-          "nivel": 3,
-          "n": 12
-        },
-        {
-          "nome": "Histiocitose de células de Langerhans",
-          "nivel": 3,
-          "n": 12
-        },
-        {
-          "nome": "Mieloma múltiplo e plasmocitoma",
-          "nivel": 3,
-          "n": 10
-        },
-        {
-          "nome": "Sarcomas de partes moles",
-          "nivel": 2,
-          "n": 8
-        },
-        {
-          "nome": "Osteocondroma e exostoses múltiplas",
-          "nivel": 2,
-          "n": 6
-        },
-        {
-          "nome": "Condroblastoma",
-          "nivel": 2,
-          "n": 5
-        },
-        {
-          "nome": "Cordoma",
-          "nivel": 2,
-          "n": 5
-        },
-        {
-          "nome": "Encondroma e encondromatoses",
-          "nivel": 2,
-          "n": 5
-        },
-        {
-          "nome": "Cisto ósseo aneurismático",
-          "nivel": 2,
-          "n": 4
-        },
-        {
-          "nome": "Displasia osteofibrosa e adamantinoma",
-          "nivel": 1,
-          "n": 4
-        },
-        {
-          "nome": "Fibroma não ossificante e defeito fibroso cortical",
-          "nivel": 1,
-          "n": 4
-        },
-        {
-          "nome": "Osteoma osteoide",
-          "nivel": 1,
-          "n": 4
-        },
-        {
-          "nome": "Osteoblastoma",
-          "nivel": 1,
-          "n": 2
-        },
-        {
-          "nome": "Fibroma condromixoide",
+          "nome": "Lesão da sindesmose",
           "nivel": 1,
           "n": 1
         },
         {
-          "nome": "Outras lesões pseudotumorais",
+          "nome": "Outros temas do pé e tornozelo",
           "nivel": 1,
-          "n": 7
+          "n": 10
         }
       ],
-      "peso": 3,
-      "pct": 6.8
+      "peso": 4,
+      "pct": 7.4
     },
     {
       "id": "coluna",
       "nome": "Coluna",
       "slug": "coluna",
-      "n": 238,
+      "n": 281,
       "focos": [
         {
           "nome": "Anatomia da coluna",
           "nivel": 4,
-          "n": 31
+          "n": 41
         },
         {
           "nome": "Hérnia de disco lombar",
           "nivel": 4,
-          "n": 30
-        },
-        {
-          "nome": "Lesão medular e síndromes medulares",
-          "nivel": 4,
-          "n": 30
+          "n": 37
         },
         {
           "nome": "Escoliose idiopática",
           "nivel": 4,
-          "n": 29
+          "n": 34
         },
         {
-          "nome": "Exame neurológico e radiculopatias",
+          "nome": "Lesão medular e síndromes medulares",
           "nivel": 4,
-          "n": 26
+          "n": 33
         },
         {
           "nome": "Espondilólise e espondilolistese",
-          "nivel": 3,
-          "n": 23
+          "nivel": 4,
+          "n": 27
         },
         {
-          "nome": "Fraturas da coluna toracolombar",
+          "nome": "Exame neurológico e radiculopatias",
           "nivel": 3,
-          "n": 19
+          "n": 27
         },
         {
           "nome": "Hérnia de disco e mielopatia cervical",
           "nivel": 3,
-          "n": 17
+          "n": 24
+        },
+        {
+          "nome": "Fraturas da coluna toracolombar",
+          "nivel": 3,
+          "n": 22
+        },
+        {
+          "nome": "Fraturas da coluna cervical",
+          "nivel": 3,
+          "n": 16
         },
         {
           "nome": "Cifose e doença de Scheuermann",
           "nivel": 3,
-          "n": 12
+          "n": 14
         },
         {
           "nome": "Estenose do canal lombar",
-          "nivel": 3,
+          "nivel": 2,
+          "n": 14
+        },
+        {
+          "nome": "Infecções da coluna",
+          "nivel": 2,
           "n": 11
         },
         {
-          "nome": "Fraturas da coluna cervical",
+          "nome": "Imagem da coluna",
           "nivel": 2,
-          "n": 9
+          "n": 10
         },
         {
           "nome": "Lombalgia",
@@ -1019,19 +919,9 @@
           "n": 9
         },
         {
-          "nome": "Imagem da coluna",
-          "nivel": 2,
-          "n": 8
-        },
-        {
-          "nome": "Infecções da coluna",
-          "nivel": 2,
-          "n": 8
-        },
-        {
           "nome": "Vias de acesso à coluna",
           "nivel": 2,
-          "n": 8
+          "n": 9
         },
         {
           "nome": "Tumores da coluna",
@@ -1061,52 +951,322 @@
         {
           "nome": "Outros temas da coluna",
           "nivel": 1,
+          "n": 7
+        }
+      ],
+      "peso": 3,
+      "pct": 6.8
+    },
+    {
+      "id": "tumores",
+      "nome": "Tumores ósseos e de partes moles",
+      "slug": "tumores",
+      "n": 274,
+      "focos": [
+        {
+          "nome": "Estadiamento, biópsia e margens",
+          "nivel": 4,
+          "n": 38
+        },
+        {
+          "nome": "Metástases ósseas",
+          "nivel": 4,
+          "n": 35
+        },
+        {
+          "nome": "Condrossarcoma",
+          "nivel": 4,
+          "n": 30
+        },
+        {
+          "nome": "Osteossarcoma",
+          "nivel": 4,
+          "n": 22
+        },
+        {
+          "nome": "Tumor de células gigantes",
+          "nivel": 4,
+          "n": 22
+        },
+        {
+          "nome": "Tumores benignos de partes moles",
+          "nivel": 4,
+          "n": 21
+        },
+        {
+          "nome": "Displasia fibrosa",
+          "nivel": 3,
+          "n": 19
+        },
+        {
+          "nome": "Sarcoma de Ewing",
+          "nivel": 3,
+          "n": 15
+        },
+        {
+          "nome": "Cisto ósseo simples",
+          "nivel": 3,
+          "n": 14
+        },
+        {
+          "nome": "Mieloma múltiplo e plasmocitoma",
+          "nivel": 3,
+          "n": 14
+        },
+        {
+          "nome": "Doença de Paget",
+          "nivel": 3,
+          "n": 12
+        },
+        {
+          "nome": "Histiocitose de células de Langerhans",
+          "nivel": 3,
+          "n": 12
+        },
+        {
+          "nome": "Sarcomas de partes moles",
+          "nivel": 2,
+          "n": 10
+        },
+        {
+          "nome": "Osteocondroma e exostoses múltiplas",
+          "nivel": 2,
+          "n": 8
+        },
+        {
+          "nome": "Condroblastoma",
+          "nivel": 2,
+          "n": 7
+        },
+        {
+          "nome": "Encondroma e encondromatoses",
+          "nivel": 2,
+          "n": 6
+        },
+        {
+          "nome": "Cisto ósseo aneurismático",
+          "nivel": 2,
+          "n": 5
+        },
+        {
+          "nome": "Cordoma",
+          "nivel": 2,
+          "n": 5
+        },
+        {
+          "nome": "Displasia osteofibrosa e adamantinoma",
+          "nivel": 1,
+          "n": 5
+        },
+        {
+          "nome": "Osteoma osteoide",
+          "nivel": 1,
+          "n": 5
+        },
+        {
+          "nome": "Fibroma não ossificante e defeito fibroso cortical",
+          "nivel": 1,
           "n": 4
+        },
+        {
+          "nome": "Osteoblastoma",
+          "nivel": 1,
+          "n": 2
+        },
+        {
+          "nome": "Fibroma condromixoide",
+          "nivel": 1,
+          "n": 1
+        },
+        {
+          "nome": "Outras lesões pseudotumorais",
+          "nivel": 1,
+          "n": 10
         }
       ],
       "peso": 3,
       "pct": 6.7
     },
     {
+      "id": "joelho",
+      "nome": "Joelho",
+      "slug": "joelho",
+      "n": 235,
+      "focos": [
+        {
+          "nome": "Lesão do ligamento cruzado anterior",
+          "nivel": 4,
+          "n": 36
+        },
+        {
+          "nome": "Artroplastia total do joelho",
+          "nivel": 4,
+          "n": 31
+        },
+        {
+          "nome": "Anatomia do joelho",
+          "nivel": 4,
+          "n": 30
+        },
+        {
+          "nome": "Lesão do ligamento cruzado posterior",
+          "nivel": 4,
+          "n": 26
+        },
+        {
+          "nome": "Osteocondrite dissecante",
+          "nivel": 4,
+          "n": 18
+        },
+        {
+          "nome": "Ruptura dos tendões patelar e quadricipital",
+          "nivel": 4,
+          "n": 17
+        },
+        {
+          "nome": "Lesões meniscais",
+          "nivel": 4,
+          "n": 16
+        },
+        {
+          "nome": "Instabilidade femoropatelar",
+          "nivel": 3,
+          "n": 15
+        },
+        {
+          "nome": "Imagem do joelho",
+          "nivel": 3,
+          "n": 13
+        },
+        {
+          "nome": "Exame físico do joelho",
+          "nivel": 3,
+          "n": 10
+        },
+        {
+          "nome": "Gonartrose e osteotomias",
+          "nivel": 3,
+          "n": 10
+        },
+        {
+          "nome": "Menisco discoide",
+          "nivel": 3,
+          "n": 7
+        },
+        {
+          "nome": "Lesões condrais",
+          "nivel": 3,
+          "n": 6
+        },
+        {
+          "nome": "Biomecânica do joelho",
+          "nivel": 2,
+          "n": 5
+        },
+        {
+          "nome": "Osteonecrose do joelho",
+          "nivel": 2,
+          "n": 5
+        },
+        {
+          "nome": "Artroscopia do joelho",
+          "nivel": 2,
+          "n": 4
+        },
+        {
+          "nome": "Canto posterolateral",
+          "nivel": 2,
+          "n": 3
+        },
+        {
+          "nome": "Reconstrução do LCA: enxertos e túneis",
+          "nivel": 2,
+          "n": 3
+        },
+        {
+          "nome": "Vias de acesso ao joelho",
+          "nivel": 2,
+          "n": 3
+        },
+        {
+          "nome": "Artroplastia unicompartimental",
+          "nivel": 1,
+          "n": 2
+        },
+        {
+          "nome": "Fratura da patela",
+          "nivel": 1,
+          "n": 2
+        },
+        {
+          "nome": "Ligamento colateral medial",
+          "nivel": 1,
+          "n": 2
+        },
+        {
+          "nome": "Luxação do joelho",
+          "nivel": 1,
+          "n": 2
+        },
+        {
+          "nome": "Tendinopatias do aparelho extensor",
+          "nivel": 1,
+          "n": 2
+        },
+        {
+          "nome": "Joelho na criança",
+          "nivel": 1,
+          "n": 1
+        },
+        {
+          "nome": "Outros temas do joelho",
+          "nivel": 1,
+          "n": 7
+        }
+      ],
+      "peso": 3,
+      "pct": 5.7
+    },
+    {
       "id": "conceitos-basicos",
       "nome": "Conceitos básicos",
       "slug": "conceitos-basicos",
-      "n": 201,
+      "n": 226,
       "focos": [
         {
           "nome": "Osteomielite aguda",
           "nivel": 4,
-          "n": 33
+          "n": 36
         },
         {
           "nome": "Princípios de osteossíntese",
           "nivel": 4,
-          "n": 28
+          "n": 30
         },
         {
           "nome": "Pseudartrose e retardo de consolidação",
           "nivel": 4,
-          "n": 22
+          "n": 24
         },
         {
           "nome": "Dor e analgesia",
           "nivel": 4,
-          "n": 19
+          "n": 20
         },
         {
           "nome": "Artrite séptica",
           "nivel": 3,
-          "n": 16
+          "n": 17
+        },
+        {
+          "nome": "Lesões musculares",
+          "nivel": 3,
+          "n": 17
         },
         {
           "nome": "Consolidação óssea",
           "nivel": 3,
           "n": 15
-        },
-        {
-          "nome": "Lesões musculares",
-          "nivel": 3,
-          "n": 14
         },
         {
           "nome": "Amputações e próteses",
@@ -1131,12 +1291,12 @@
         {
           "nome": "Imagem em ortopedia",
           "nivel": 2,
-          "n": 5
+          "n": 6
         },
         {
           "nome": "Metodologia científica e estatística",
           "nivel": 1,
-          "n": 5
+          "n": 6
         },
         {
           "nome": "Osteomielite crônica",
@@ -1151,142 +1311,12 @@
         {
           "nome": "Outras infecções osteoarticulares",
           "nivel": 1,
-          "n": 11
+          "n": 23
         },
         {
           "nome": "Outros temas de conceitos básicos",
           "nivel": 1,
           "n": 4
-        }
-      ],
-      "peso": 3,
-      "pct": 5.6
-    },
-    {
-      "id": "joelho",
-      "nome": "Joelho",
-      "slug": "joelho",
-      "n": 196,
-      "focos": [
-        {
-          "nome": "Lesão do ligamento cruzado anterior",
-          "nivel": 4,
-          "n": 30
-        },
-        {
-          "nome": "Anatomia do joelho",
-          "nivel": 4,
-          "n": 29
-        },
-        {
-          "nome": "Artroplastia total do joelho",
-          "nivel": 4,
-          "n": 26
-        },
-        {
-          "nome": "Lesão do ligamento cruzado posterior",
-          "nivel": 4,
-          "n": 24
-        },
-        {
-          "nome": "Ruptura dos tendões patelar e quadricipital",
-          "nivel": 4,
-          "n": 17
-        },
-        {
-          "nome": "Osteocondrite dissecante",
-          "nivel": 4,
-          "n": 16
-        },
-        {
-          "nome": "Instabilidade femoropatelar",
-          "nivel": 3,
-          "n": 13
-        },
-        {
-          "nome": "Lesões meniscais",
-          "nivel": 3,
-          "n": 11
-        },
-        {
-          "nome": "Exame físico do joelho",
-          "nivel": 3,
-          "n": 10
-        },
-        {
-          "nome": "Imagem do joelho",
-          "nivel": 3,
-          "n": 9
-        },
-        {
-          "nome": "Gonartrose e osteotomias",
-          "nivel": 3,
-          "n": 7
-        },
-        {
-          "nome": "Menisco discoide",
-          "nivel": 3,
-          "n": 6
-        },
-        {
-          "nome": "Biomecânica do joelho",
-          "nivel": 2,
-          "n": 4
-        },
-        {
-          "nome": "Artroscopia do joelho",
-          "nivel": 2,
-          "n": 3
-        },
-        {
-          "nome": "Osteonecrose do joelho",
-          "nivel": 2,
-          "n": 3
-        },
-        {
-          "nome": "Lesões condrais",
-          "nivel": 2,
-          "n": 2
-        },
-        {
-          "nome": "Reconstrução do LCA: enxertos e túneis",
-          "nivel": 2,
-          "n": 2
-        },
-        {
-          "nome": "Tendinopatias do aparelho extensor",
-          "nivel": 2,
-          "n": 2
-        },
-        {
-          "nome": "Vias de acesso ao joelho",
-          "nivel": 1,
-          "n": 2
-        },
-        {
-          "nome": "Canto posterolateral",
-          "nivel": 1,
-          "n": 1
-        },
-        {
-          "nome": "Fratura da patela",
-          "nivel": 1,
-          "n": 1
-        },
-        {
-          "nome": "Joelho na criança",
-          "nivel": 1,
-          "n": 1
-        },
-        {
-          "nome": "Ligamento colateral medial",
-          "nivel": 1,
-          "n": 1
-        },
-        {
-          "nome": "Outros temas do joelho",
-          "nivel": 1,
-          "n": 3
         }
       ],
       "peso": 3,
@@ -1296,27 +1326,32 @@
       "id": "quadril",
       "nome": "Quadril",
       "slug": "quadril",
-      "n": 187,
+      "n": 218,
       "focos": [
         {
           "nome": "Anatomia do quadril",
           "nivel": 4,
-          "n": 49
+          "n": 51
         },
         {
           "nome": "Artroplastia total: componentes e fixação",
           "nivel": 4,
-          "n": 37
+          "n": 46
         },
         {
           "nome": "Osteonecrose da cabeça femoral",
           "nivel": 4,
-          "n": 16
+          "n": 20
         },
         {
           "nome": "Exame físico do quadril",
           "nivel": 4,
-          "n": 13
+          "n": 15
+        },
+        {
+          "nome": "Biomecânica e marcha",
+          "nivel": 4,
+          "n": 12
         },
         {
           "nome": "Dor peritrocantérica e tendinopatias",
@@ -1324,34 +1359,29 @@
           "n": 12
         },
         {
+          "nome": "Fraturas do quadril e do acetábulo",
+          "nivel": 3,
+          "n": 12
+        },
+        {
           "nome": "Impacto femoroacetabular",
+          "nivel": 3,
+          "n": 12
+        },
+        {
+          "nome": "Imagem do quadril",
           "nivel": 3,
           "n": 11
         },
         {
           "nome": "Vias de acesso ao quadril",
-          "nivel": 3,
+          "nivel": 2,
           "n": 11
-        },
-        {
-          "nome": "Biomecânica e marcha",
-          "nivel": 3,
-          "n": 10
-        },
-        {
-          "nome": "Fraturas do quadril e do acetábulo",
-          "nivel": 2,
-          "n": 10
-        },
-        {
-          "nome": "Imagem do quadril",
-          "nivel": 2,
-          "n": 9
         },
         {
           "nome": "Artroscopia do quadril e lesão labral",
           "nivel": 2,
-          "n": 8
+          "n": 9
         },
         {
           "nome": "Fraturas periprotéticas do quadril",
@@ -1360,8 +1390,13 @@
         },
         {
           "nome": "Osteotomias do quadril",
-          "nivel": 1,
-          "n": 6
+          "nivel": 2,
+          "n": 8
+        },
+        {
+          "nome": "Coxartrose",
+          "nivel": 2,
+          "n": 7
         },
         {
           "nome": "Pubalgia e osteíte púbica",
@@ -1369,64 +1404,79 @@
           "n": 6
         },
         {
-          "nome": "Coxartrose",
+          "nome": "Displasia do quadril no adulto",
           "nivel": 1,
-          "n": 2
+          "n": 1
         },
         {
-          "nome": "Displasia do quadril no adulto",
+          "nome": "Luxação e instabilidade da artroplastia",
+          "nivel": 1,
+          "n": 1
+        },
+        {
+          "nome": "Soltura, osteólise e revisão",
           "nivel": 1,
           "n": 1
         },
         {
           "nome": "Outros temas do quadril",
           "nivel": 1,
-          "n": 1
+          "n": 7
         }
       ],
-      "peso": 2,
-      "pct": 5.2
+      "peso": 3,
+      "pct": 5.3
     },
     {
       "id": "osteometabolicas",
       "nome": "Osteometabólicas",
       "slug": "osteometabolicas",
-      "n": 67,
+      "n": 80,
       "focos": [
         {
           "nome": "Osteoporose: diagnóstico",
           "nivel": 4,
-          "n": 19
-        },
-        {
-          "nome": "Tuberculose osteoarticular",
-          "nivel": 4,
-          "n": 15
+          "n": 20
         },
         {
           "nome": "Espondiloartrites e outras artrites",
+          "nivel": 4,
+          "n": 16
+        },
+        {
+          "nome": "Tuberculose osteoarticular",
           "nivel": 3,
-          "n": 13
+          "n": 15
+        },
+        {
+          "nome": "Osteoporose: tratamento",
+          "nivel": 3,
+          "n": 11
         },
         {
           "nome": "Raquitismo e osteomalácia",
           "nivel": 2,
-          "n": 9
-        },
-        {
-          "nome": "Osteoporose: tratamento",
-          "nivel": 2,
-          "n": 8
+          "n": 11
         },
         {
           "nome": "Hiperparatireoidismo e osteodistrofia renal",
+          "nivel": 2,
+          "n": 7
+        },
+        {
+          "nome": "Doença de Paget",
           "nivel": 1,
-          "n": 6
+          "n": 2
+        },
+        {
+          "nome": "Artrite reumatoide",
+          "nivel": 1,
+          "n": 1
         },
         {
           "nome": "Outros temas osteometabólicos",
           "nivel": 1,
-          "n": 7
+          "n": 9
         }
       ],
       "peso": 1,
@@ -1437,102 +1487,102 @@
     {
       "area": "mao",
       "nome": "Anatomia da mão e punho",
-      "n": 75
+      "n": 85
     },
     {
       "area": "pediatria",
       "nome": "Genuvaro, genuvalgo e torções",
-      "n": 66
-    },
-    {
-      "area": "trauma",
-      "nome": "Fratura da cabeça do rádio e instabilidade do cotovelo",
-      "n": 58
-    },
-    {
-      "area": "pe-tornozelo",
-      "nome": "Pé plano adquirido do adulto",
-      "n": 56
+      "n": 77
     },
     {
       "area": "pediatria",
       "nome": "Lesões fisárias",
-      "n": 54
+      "n": 74
     },
     {
       "area": "trauma",
-      "nome": "Luxação do joelho e lesões ligamentares",
-      "n": 53
+      "nome": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+      "n": 59
+    },
+    {
+      "area": "pe-tornozelo",
+      "nome": "Pé plano adquirido do adulto",
+      "n": 59
     },
     {
       "area": "mao",
       "nome": "Lesões dos tendões flexores",
-      "n": 51
+      "n": 57
+    },
+    {
+      "area": "trauma",
+      "nome": "Luxação do joelho e lesões ligamentares",
+      "n": 54
     },
     {
       "area": "mao",
       "nome": "Neuropatia ulnar e outras compressões",
-      "n": 51
-    },
-    {
-      "area": "ombro-cotovelo",
-      "nome": "Anatomia do ombro",
-      "n": 51
-    },
-    {
-      "area": "quadril",
-      "nome": "Anatomia do quadril",
-      "n": 49
+      "n": 54
     },
     {
       "area": "ombro-cotovelo",
       "nome": "Lesões do manguito rotador",
-      "n": 47
+      "n": 54
+    },
+    {
+      "area": "ombro-cotovelo",
+      "nome": "Anatomia do ombro",
+      "n": 52
+    },
+    {
+      "area": "quadril",
+      "nome": "Anatomia do quadril",
+      "n": 51
     },
     {
       "area": "pe-tornozelo",
       "nome": "Anatomia do pé e tornozelo",
-      "n": 45
+      "n": 50
     },
     {
       "area": "ombro-cotovelo",
       "nome": "Omartrose e artroplastia do ombro",
-      "n": 43
-    },
-    {
-      "area": "trauma",
-      "nome": "Fraturas da coluna toracolombar",
-      "n": 39
-    },
-    {
-      "area": "ombro-cotovelo",
-      "nome": "Instabilidade anterior do ombro",
-      "n": 39
-    },
-    {
-      "area": "tumores",
-      "nome": "Estadiamento, biópsia e margens",
-      "n": 38
-    },
-    {
-      "area": "trauma",
-      "nome": "Fratura do úmero proximal",
-      "n": 37
-    },
-    {
-      "area": "trauma",
-      "nome": "Fraturas diafisárias do antebraço",
-      "n": 37
+      "n": 47
     },
     {
       "area": "quadril",
       "nome": "Artroplastia total: componentes e fixação",
-      "n": 37
+      "n": 46
+    },
+    {
+      "area": "pediatria",
+      "nome": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+      "n": 45
     },
     {
       "area": "pediatria",
       "nome": "Displasia do desenvolvimento do quadril",
-      "n": 36
+      "n": 44
+    },
+    {
+      "area": "trauma",
+      "nome": "Fraturas diafisárias do antebraço",
+      "n": 41
+    },
+    {
+      "area": "coluna",
+      "nome": "Anatomia da coluna",
+      "n": 41
+    },
+    {
+      "area": "trauma",
+      "nome": "Fraturas da coluna toracolombar",
+      "n": 40
+    },
+    {
+      "area": "ombro-cotovelo",
+      "nome": "Instabilidade anterior do ombro",
+      "n": 40
     }
   ]
 }

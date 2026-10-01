@@ -53,11 +53,12 @@ def carregar_acervo() -> dict[str, tuple[str, dict]]:
 
 def conferir(qid: str, comentario: dict, questao: dict) -> list[str]:
     problemas: list[str] = []
-    gabarito = questao.get("gabarito")
+    # Sem gabarito oficial, vale a resposta pela bibliografia ("provavel").
+    gabarito = questao.get("gabarito") or comentario.get("provavel")
     letras = {a["letra"] for a in questao["alternativas"]}
 
     if not gabarito:
-        problemas.append(f"{qid}: questão sem gabarito — não dá para dizer qual está certa")
+        problemas.append(f"{qid}: questão sem gabarito nem resposta pela bibliografia — não dá para dizer qual está certa")
         return problemas
     if questao.get("anulada"):
         problemas.append(f"{qid}: questão anulada — comentar como se tivesse resposta engana")
