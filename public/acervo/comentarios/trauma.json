@@ -10944,27 +10944,31 @@
   "conferido": false
  },
  "trauma-1182": {
+  "incorretas": {
+   "A": "**Certo exigiria estabilidade fisiológica real.** Fixação definitiva precoce pode ser considerada quando perfusão, oxigenação e situação intracraniana estiverem adequadamente controladas, não pelo simples fato de a pressão intracraniana alta permanecer constante."
+  },
+  "conceito": "**Duas lesões, uma prioridade fisiológica.** No politrauma com traumatismo cranioencefálico grave, a estabilização das fraturas é importante, mas não pode agravar a lesão cerebral secundária. Hipotensão, hipóxia e elevação persistente da pressão intracraniana exigem controle antes de uma operação ortopédica longa.\n\n**O número que invalida a frase.** Pressão intracraniana de 30 a 40 mmHg representa hipertensão intracraniana importante, ainda que o monitor mostre um valor momentaneamente estável. Diretrizes de TCE grave recomendam tratar elevações sustentadas acima de 22 mmHg. Também se acompanha a pressão de perfusão cerebral, que depende da diferença entre a pressão arterial média e a intracraniana.\n\n**Controle de danos.** Quando a fisiologia é instável, a equipe pode optar por estabilização ortopédica temporária e por procedimentos mais curtos, com fixação definitiva depois do controle neurológico e sistêmico. A decisão depende da avaliação conjunta com neurocirurgia, anestesia e terapia intensiva; uma pressão intracraniana alta não se torna segura apenas por não oscilar.",
+  "correta": "**Errado.** Pressão intracraniana estável em 30 a 40 mmHg continua perigosamente elevada e não é critério para liberar osteossíntese definitiva dos ossos longos e da pelve.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 142."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1183": {
+  "incorretas": {
+   "A": "**Certo apenas em uma ferida que precise de nova avaliação.** Se restarem dúvidas sobre tecido desvitalizado ou contaminação, pode-se programar uma segunda exploração, mas a indicação decorre dos achados clínicos e operatórios, não só da classe de Gustilo."
+  },
+  "conceito": "**O que caracteriza o tipo III.** Na classificação de Gustilo e Anderson, a fratura exposta tipo III envolve alta energia, contaminação importante ou lesão extensa de partes moles. No IIIA ainda há cobertura óssea adequada; no IIIB há perda de cobertura com exposição óssea e necessidade frequente de retalho; no IIIC existe lesão arterial que requer reparo. Essa graduação deve ser confirmada após a exploração e o desbridamento.\n\n**Primeira operação.** Antibiótico precoce, avaliação neurovascular, estabilização e excisão cirúrgica dos tecidos inviáveis são medidas centrais. O desbridamento deve ser meticuloso, com plano de cobertura dos tecidos moles. A ferida não deve ficar aberta por um intervalo arbitrário apenas para cumprir uma rotina de nova cirurgia.\n\n**Quando revisar.** Uma segunda exploração pode ser útil se a viabilidade dos tecidos estiver incerta ou se houver contaminação residual, frequentemente após 24 a 48 horas. Isso é uma decisão individualizada, não uma obrigação automática em toda fratura tipo III nem uma janela fixa de 36 a 72 horas. A meta é obter tecido viável, estabilização e cobertura definitiva em tempo oportuno.",
+  "correta": "**Errado.** O segundo desbridamento não é obrigatório para toda fratura exposta tipo III, e a faixa de 36 a 72 horas não constitui regra universal; a reavaliação depende das condições da ferida.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, cap. 50, p. 2684."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1184": {
