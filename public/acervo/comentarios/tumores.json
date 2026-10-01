@@ -3689,27 +3689,31 @@
   "conferido": false
  },
  "tumores-0350": {
+  "incorretas": {
+   "A": "**Certo apenas se a frase descrevesse o tratamento sem generalizar o desfecho.** Há pacientes com controle prolongado, mas o prognóstico depende de risco e resposta individual, e recaídas continuam possíveis."
+  },
+  "conceito": "**Uma doença sistêmica da medula.** No mieloma múltiplo, plasmócitos clonais se acumulam na medula óssea e podem causar lesões líticas, anemia, insuficiência renal e hipercalcemia. O tratamento não se resume a uma lesão óssea isolada; exige avaliação hematológica da extensão, dos órgãos comprometidos e do risco biológico.\n\n**Tratamento ontem e hoje.** Esquemas citotóxicos fizeram parte do tratamento clássico, frequentemente associados ao transplante autólogo em pacientes elegíveis. Atualmente, combinações com inibidores de proteassoma, imunomoduladores e anticorpos também integram o cuidado. Fraturas e outras complicações ósseas podem exigir tratamento ortopédico e medidas de suporte, mas isso não substitui a terapia sistêmica.\n\n**A palavra problemática é prognóstico.** A sobrevida melhorou muito, e alguns pacientes convivem por anos com a doença controlada. Isso não permite afirmar de forma geral que o prognóstico é bom: o mieloma permanece, em regra, uma doença sujeita a recaídas, com evolução variável conforme estágio, citogenética, função renal e resposta ao tratamento. O enunciado mistura uma modalidade terapêutica verdadeira com uma conclusão excessivamente otimista.",
+  "correta": "**Errado.** Embora a terapia sistêmica inclua esquemas de quimioterapia, não se pode atribuir bom prognóstico uniforme ao mieloma múltiplo.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 846."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "tumores-0351": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "A": "**Certo se fosse apresentada como técnica histórica possível.** A ressecção em bloco pode curar quando inclui o nidus, mas sua extensão ao osso esclerótico não deve ser imposta como regra para todos os casos."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta provável é \"Errado\" porque a retirada ampla do osso esclerótico reacional não é necessária como recomendação geral. Contudo, a ressecção em bloco com osso adjacente foi uma técnica tradicional válida, especialmente em contextos históricos; o enunciado é ambíguo se lido apenas como descrição de uma opção cirúrgica.",
+  "conceito": "**Separe o nicho da reação.** O osteoma osteoide é uma lesão pequena cujo foco tumoral, chamado nicho ou nidus, pode estar envolto por esclerose reacional intensa. A dor, muitas vezes noturna e aliviada por anti-inflamatórios, vem da lesão ativa; a grande faixa esclerótica ao redor não é toda tumor.\n\n**O alvo do tratamento.** Quando é preciso intervir, o essencial é eliminar completamente o nidus. Retirar em bloco todo o osso esclerótico circundante pode criar defeito desnecessário, sobretudo em osso de carga, com risco de fratura e necessidade de enxerto ou fixação. Ressecção aberta foi usada historicamente e ainda pode ser apropriada em situações selecionadas, mas não é a única nem necessariamente a melhor técnica.\n\n**Opções atuais.** A tomografia localiza o nidus e permite planejar ablação percutânea, frequentemente por radiofrequência, quando há acesso seguro. Curetagem ou ressecção cirúrgica continuam alternativas conforme localização, proximidade de estruturas sensíveis, possibilidade de confirmação histológica e recursos disponíveis. Recidiva costuma indicar que o nidus não foi inteiramente eliminado.",
+  "correta": "**Errado como recomendação geral.** O tratamento precisa atingir todo o nicho, mas não exige remover em bloco a esclerose reacional ao redor; a técnica deve preservar osso saudável sempre que possível.",
   "referencias": [
    "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 777."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "tumores-0352": {
