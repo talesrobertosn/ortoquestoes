@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Funcionalidades: 1 post de feed (p1, 1080x1350) e 2 stories (s1, s2, 1080x1920).
+     node marketing/instagram/gerar.mjs marketing/instagram/funcionalidades/post.html  · legenda em LEGENDA.md -->
+<style>
+@font-face { font-family: Jakarta; src: url(../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --verde: #14655e; --tinta: #0b3a35; --noite: #071f1c; --ouro: #f4cf7c; --ouro2: #c9952f; --creme: #fbf6ea; --acerto: #1f7a4d; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; color: #fff;
+  background: radial-gradient(circle at 1px 1px, rgba(255,255,255,.06) 1.5px, transparent 1.6px) 0 0 / 36px 36px,
+              radial-gradient(1200px 800px at 85% -10%, rgba(244,207,124,.18), transparent 60%),
+              linear-gradient(165deg, var(--noite) 0%, var(--tinta) 55%, #115048 100%); }
+.feed { width: 1080px; height: 1350px; padding: 84px; }
+.story { width: 1080px; height: 1920px; padding: 120px 72px 0; }
+.marca { display: flex; align-items: center; gap: 16px; font: 34px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 56px; height: 56px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.rot { display: inline-block; padding: 12px 24px; border-radius: 999px; border: 2px solid rgba(244,207,124,.55); color: var(--ouro); font: 700 24px Jakarta; letter-spacing: .12em; text-transform: uppercase; }
+h1 { font: 800 104px/0.98 Jakarta; letter-spacing: -.045em; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+h2 { font: 800 70px/1.02 Jakarta; letter-spacing: -.035em; }
+.sub { font-size: 34px; line-height: 1.45; color: rgba(255,255,255,.78); }
+/* cartão de questão */
+.q { background: #fff; color: #12181a; border-radius: 34px; padding: 40px 42px; box-shadow: 0 40px 80px rgba(0,0,0,.35); }
+.q small { font: 700 21px Jakarta; letter-spacing: .1em; color: var(--verde); text-transform: uppercase; }
+.q p { margin-top: 14px; font: 600 30px/1.35 Jakarta; letter-spacing: -.01em; }
+.alt { margin-top: 14px; display: flex; gap: 18px; align-items: center; padding: 18px 22px; border-radius: 18px; background: #f1f3f2; font: 600 26px Jakarta; }
+.alt b { flex: none; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 12px; background: #fff; color: var(--tinta); font: 800 22px Jakarta; }
+.alt.certa { background: #e3f3e8; box-shadow: inset 0 0 0 3px var(--acerto); } .alt.certa b { background: var(--acerto); color: #fff; }
+.alt.apagada { opacity: .45; }
+.nota { font: 600 20px Inter; color: rgba(255,255,255,.5); }
+/* post */
+.p1 .q { position: absolute; right: 84px; top: 610px; width: 600px; transform: rotate(2.5deg); }
+.p1 .provas { position: absolute; left: 84px; top: 640px; display: grid; gap: 16px; }
+.p1 .provas span { display: block; width: 270px; padding: 20px 26px; border-radius: 20px; background: rgba(255,255,255,.08); border: 2px solid rgba(255,255,255,.14); font: 800 34px Jakarta; letter-spacing: -.01em; }
+.p1 .provas span i { display: block; font: 600 20px Inter; font-style: normal; color: rgba(255,255,255,.6); margin-top: 4px; }
+.rodape { position: absolute; left: 84px; right: 84px; bottom: 72px; display: flex; justify-content: space-between; align-items: center; font: 700 28px Jakarta; }
+.rodape .cta { padding: 22px 34px; border-radius: 999px; background: var(--ouro); color: var(--tinta); }
+/* stories */
+.grade { margin-top: 50px; display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.f { padding: 32px 30px; border-radius: 30px; background: rgba(255,255,255,.07); border: 2px solid rgba(255,255,255,.13); }
+.f.larga { grid-column: span 2; display: grid; grid-template-columns: 92px 1fr; gap: 26px; align-items: start; }
+.f .ic { width: 72px; height: 72px; border-radius: 20px; background: var(--ouro); color: var(--tinta); display: grid; place-items: center; font: 800 32px Jakarta; }
+.f.larga .ic { width: 92px; height: 92px; font-size: 40px; }
+.f h3 { margin-top: 20px; font: 800 36px/1.1 Jakarta; letter-spacing: -.02em; }
+.f.larga h3 { margin-top: 2px; }
+.f p { margin-top: 10px; font-size: 25px; line-height: 1.42; color: rgba(255,255,255,.78); }
+.f p b { color: #fff; }
+.pro { position: absolute; top: 28px; right: 28px; padding: 6px 14px; border-radius: 999px; background: rgba(244,207,124,.16); color: var(--ouro); font: 700 18px Jakarta; letter-spacing: .08em; }
+.f { position: relative; }
+.faixa { margin-top: 26px; padding: 30px 34px; border-radius: 30px; background: #fff; color: #12181a; display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.faixa div small { display: block; font: 700 20px Jakarta; letter-spacing: .1em; text-transform: uppercase; color: var(--verde); }
+.faixa div strong { display: block; margin-top: 8px; font: 800 32px/1.15 Jakarta; letter-spacing: -.02em; }
+.faixa div span { display: block; margin-top: 6px; font-size: 23px; line-height: 1.4; color: #4b5a5d; }
+.faixa div + div { border-left: 2px solid #e3e8e6; padding-left: 26px; }
+.link { position: absolute; left: 72px; right: 72px; bottom: 44px; height: 150px; border: 3px dashed rgba(244,207,124,.5); border-radius: 34px; display: grid; place-items: center; text-align: center; color: rgba(255,255,255,.7); font: 700 28px Jakarta; }
+.link b { display: block; color: var(--ouro); font-size: 40px; }
+.passo { position: absolute; left: 72px; bottom: 70px; font: 600 24px Inter; color: rgba(255,255,255,.55); }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- ============ POST ============ -->
+<section id="p1" class="feed p1">
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
+  <p class="rot" style="margin-top:70px">Prova de título em ortopedia</p>
+  <h1 style="margin-top:26px">Estude pelas <em>provas oficiais.</em></h1>
+  <p class="sub" style="margin-top:22px">E entenda o porquê de cada alternativa, certa e errada.</p>
+  <div class="provas">
+    <span>TEOT<i>teórica e anatomia</i></span>
+    <span>TARO<i>de 2006 a 2026</i></span>
+    <span>ENARE R4<i>ortopedia</i></span>
+    <span>TECOC<i>ombro e cotovelo</i></span>
+  </div>
+  <div class="q">
+    <small>TEOT · Trauma</small>
+    <p>Fratura de Maisonneuve: qual é o mecanismo?</p>
+    <div class="alt apagada"><b>A</b>Supinação e adução</div>
+    <div class="alt certa"><b>B</b>Pronação e rotação externa</div>
+    <div class="alt apagada"><b>C</b>Supinação e rotação externa</div>
+    <p style="margin-top:18px;font:500 22px/1.4 Inter;color:#4b5a5d">Comentário da certa e de cada errada, com referência.</p>
+  </div>
+  <div class="rodape"><span>ortoquestoes.com.br</span><span class="cta">Crie sua conta grátis</span></div>
+</section>
+
+<!-- ============ STORY 1 ============ -->
+<section id="s1" class="story">
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
+  <p class="rot" style="margin-top:56px">Como funciona · 1 de 2</p>
+  <h2 style="margin-top:24px">O seu dia de estudo, <em>do início ao fim.</em></h2>
+  <div class="grade">
+    <div class="f larga"><div class="ic">1</div><div><h3>Treinar</h3><p>Questões de provas anteriores do <b>TEOT, TARO, ENARE R4 e TECOC</b>. Filtre por <b>área, assunto, prova e ano</b>, só as inéditas ou só as que errou, e monte sessões do tamanho que quiser.</p></div></div>
+    <div class="f"><div class="ic">2</div><h3>Comentário completo</h3><p>Por que a certa está certa <b>e por que cada errada está errada</b>, com o conceito e a referência.</p></div>
+    <div class="f"><div class="ic">3</div><h3>Revisão espaçada</h3><p>O que você errou volta <b>no dia certo</b> para fixar. Você escolhe o limite diário e os dias de folga.</p></div>
+    <div class="f"><div class="ic">4</div><h3>Caderno de erros</h3><p>Todas as suas erradas num lugar só, com anotações e favoritas para a reta final.</p></div>
+    <div class="f"><div class="ic">5</div><h3>Desempenho</h3><p>Acerto por <b>área, assunto e prova</b>: você vê exatamente onde está fraco.</p></div>
+    <div class="f larga"><div class="ic">6</div><div><h3>Sequência, ranking e emblemas</h3><p>Dias seguidos de estudo, sua posição entre os residentes e conquistas pelo caminho. Funciona no celular e pode ser <b>instalado na tela inicial</b>.</p></div></div>
+  </div>
+  <div class="faixa">
+    <div><small>Gratuito</small><strong>Conta grátis</strong><span>Um número limitado de questões por dia, renovado todos os dias.</span></div>
+    <div><small>Sem cartão</small><strong>Menos de 1 minuto</strong><span>Crie a conta e já comece a sua primeira sessão.</span></div>
+  </div>
+  <p class="passo">Arraste para ver o que mais o site faz</p>
+</section>
+
+<!-- ============ STORY 2 ============ -->
+<section id="s2" class="story">
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
+  <p class="rot" style="margin-top:56px">Como funciona · 2 de 2</p>
+  <h2 style="margin-top:24px">Um plano até a prova, <em>guiado pelo que mais cai.</em></h2>
+  <div class="grade">
+    <div class="f larga"><span class="pro">ASSINANTE</span><div class="ic">7</div><div><h3>Cronograma até a prova</h3><p>Coloque a data (TEOT e TEPOT 2027: <b>10 de janeiro</b>) e o site monta a meta de cada semana, <b>começando pelas áreas e assuntos que mais caem</b> e pesando os temas em que você erra mais. Atrasou? Ele se recalcula.</p></div></div>
+    <div class="f"><span class="pro">ASSINANTE</span><div class="ic">8</div><h3>Temas que mais caem</h3><p>O ranking do que as provas mais cobram, contado nas questões oficiais.</p></div>
+    <div class="f"><span class="pro">ASSINANTE</span><div class="ic">9</div><h3>Simulado Nacional</h3><p>Todo mês, com <b>nota, posição</b> e relatório de prontidão por tema.</p></div>
+    <div class="f"><span class="pro">ASSINANTE</span><div class="ic">10</div><h3>Como a turma respondeu</h3><p>Veja o que os outros marcaram em cada questão e treine as que mais derrubam.</p></div>
+    <div class="f"><span class="pro">ASSINANTE</span><div class="ic">11</div><h3>Liga e relatório</h3><p>Dispute com a sua residência e receba o resumo do mês por e-mail.</p></div>
+  </div>
+  <div class="faixa">
+    <div><small>Planos</small><strong>Questões sem limite</strong><span>E todos os recursos acima. Anual por R$ 239,90, garantia de 7 dias.</span></div>
+    <div><small>Prévia grátis</small><strong>Veja o seu cronograma</strong><span>Antes de assinar, confira como ficaria o seu plano até a prova.</span></div>
+  </div>
+  <div class="link"><div><b>ortoquestoes.com.br</b>espaço para a figurinha de link</div></div>
+</section>
+</body></html>
