@@ -3063,75 +3063,87 @@
   "conferido": false
  },
  "conceitos-basicos-0303": {
+  "incorretas": {
+   "B": "**Errado caberia se a frase prometesse consolidação por si só.** A modulação celular não substitui correção mecânica nem tratamento de infecção quando esses são os fatores dominantes."
+  },
+  "conceito": "**O que é pseudartrose.** É a falha de consolidação de uma fratura após tempo suficiente para que a união fosse esperada, sem progresso radiográfico ou clínico. Antes de escolher um estímulo adicional, é preciso avaliar estabilidade, vascularização, tamanho do defeito, infecção e condições do paciente. Pseudartrose atrófica, com pouca atividade biológica, e hipertrófica, com calo exuberante mas instabilidade, pedem estratégias diferentes.\n\n**Estímulo elétrico.** Correntes aplicadas diretamente, por acoplamento capacitivo ou por campos eletromagnéticos pulsados procuram reproduzir sinais bioelétricos associados à reparação óssea. Estudos experimentais descrevem efeitos sobre proliferação e diferenciação celular, síntese de matriz e atividade osteoblástica. O efeito clínico depende da técnica e da seleção do caso; não é garantia de consolidação.\n\n**Limite do método.** Estímulo elétrico pode ser considerado como adjuvante em situações selecionadas, mas não corrige fixação instável, perda óssea importante nem infecção persistente. Nesses cenários, controle do foco, estabilidade e, quando necessário, enxertia ou reconstrução têm prioridade.",
+  "correta": "**Certo: há efeito biológico sobre a reparação.** A estimulação elétrica pode influenciar proliferação celular e formação de tecido ósseo, embora sua utilidade clínica dependa do contexto da pseudartrose.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 283."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "conceitos-basicos-0304": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado também encontra respaldo em determinados cenários.** Séries de trauma, em especial fraturas expostas, encontraram mais infecções em soropositivos assintomáticos; por isso a ressalva é indispensável."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta provável “Certo” foi preservada, mas não é válida como afirmação geral. Um estudo retrospectivo de trauma ortopédico encontrou infecção em 16,7% dos pacientes HIV-positivos assintomáticos versus 5,4% dos soronegativos; outras séries sugerem risco próximo sob tratamento e condições selecionadas. O risco deve ser individualizado, não inferido apenas da ausência de SIDA clínica.",
+  "conceito": "**Sorologia não resume o risco.** A infecção pelo HIV tem apresentações muito diferentes. Ausência de manifestações clínicas de SIDA não informa, sozinha, contagem de CD4, carga viral, uso de antirretrovirais, estado nutricional ou presença de outras infecções. Esses fatores, além do tipo de cirurgia, influenciam a probabilidade de infecção pós-operatória.\n\n**O que mostram as séries.** Estudos antigos de trauma, sobretudo com fraturas expostas, observaram risco maior mesmo em soropositivos sem sintomas. Em grupos tratados, com boa situação imunológica e procedimentos selecionados, a diferença pode ser pequena. Não se deve transportar uma taxa de cirurgia eletiva limpa para trauma contaminado nem o contrário.\n\n**Conduta prática.** Planejamento do implante, profilaxia indicada para o procedimento, cuidado com tecidos moles e otimização clínica continuam centrais. Quando possível, avaliar CD4 e carga viral ajuda a estratificar o paciente. HIV não é contraindicação automática à fixação necessária, mas também não autoriza pressupor risco idêntico ao de qualquer soronegativo.",
+  "correta": "**Certo permanece como resposta provável, sob condições favoráveis.** Pacientes sem imunossupressão importante e adequadamente tratados podem ter resultados comparáveis, mas a frase não serve como regra universal.",
   "referencias": [
    "Journal of the American Academy of Orthopaedics Surgeons. November / December 1996; vol. 4, nº 6, p. 299."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "conceitos-basicos-0305": {
+  "incorretas": {
+   "A": "**Certo seria aceitável apenas numa comparação delimitada.** O estudo combinado de gálio e cintilografia óssea pode aumentar a especificidade em certos contextos, sem tornar o gálio isolado específico para bactérias."
+  },
+  "conceito": "**Captação do gálio.** O gálio-67 circula ligado à transferrina e pode se concentrar em áreas de inflamação por aumento da permeabilidade vascular, ligação à lactoferrina de neutrófilos e interação com sideróforos bacterianos. Esses mecanismos explicam sua utilidade para localizar focos, mas nenhum é exclusivo de infecção bacteriana óssea.\n\n**Especificidade depende da comparação.** A cintilografia óssea convencional mede atividade osteoblástica e também se altera em fratura, tumor ou artrose. Associar gálio ao estudo ósseo pode melhorar a interpretação em alguns cenários, especialmente infecção vertebral. Já a captação de gálio isolada também ocorre em inflamação estéril e neoplasia; portanto não é um marcador específico de granulócitos ou bactérias.\n\n**Escolha do exame.** Imagem com leucócitos marcados, frequentemente combinada à imagem de medula, pode ser mais útil para osteomielite complicada fora da coluna. A ressonância avalia extensão anatômica e tecidos moles quando viável. O exame deve responder à situação clínica, não ser escolhido por uma suposta especificidade intrínseca do radiofármaco.",
+  "correta": "**Errado: a captação não é exclusiva de infecção.** Neutrófilos e bactérias participam da localização do gálio-67, mas processos inflamatórios não infecciosos e tumores também podem captá-lo.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, p. 570."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "conceitos-basicos-0306": {
+  "incorretas": {
+   "A": "**Certo poderia descrever outra organização tecidual.** Estruturas que resistem a distensão multidirecional podem exibir fibras em várias direções; esse não é o padrão predominante de um tendão de tração."
+  },
+  "conceito": "**Arquitetura do tendão.** O tendão transmite a força do músculo ao osso. Sua matriz contém sobretudo colágeno tipo I, organizado em fibrilas, fibras e fascículos com orientação predominantemente longitudinal. Esse arranjo confere grande resistência à tração no eixo principal do tendão.\n\n**Resposta à carga.** Em repouso, as fibras apresentam ondulação microscópica. A tração primeiro desfaz essa ondulação e depois alonga o tecido, produzindo a conhecida relação não linear entre tensão e deformação. A organização também se adapta ao ambiente mecânico; tendões submetidos a compressão ou cisalhamento em polias e inserções podem ter arranjo local mais complexo.\n\n**Erro da afirmação.** Disposição circular e independência da direção da força não descrevem o padrão funcional do tendão. Existe alguma variação entre regiões, mas o princípio dominante é o alinhamento das fibras com a transmissão longitudinal da carga muscular.",
+  "correta": "**Errado: as fibras não são predominantemente circulares.** O colágeno tendíneo se orienta sobretudo ao longo do eixo de tração, acompanhando a função de transmitir força.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 29."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "conceitos-basicos-0307": {
+  "incorretas": {
+   "A": "**Certo seria a obrigação de comunicar suspeitas e confirmações.** A alternativa só se sustentaria se retirasse “somente casos confirmados” e incluísse os casos suspeitos."
+  },
+  "conceito": "**Dever de comunicação.** O Estatuto da Criança e do Adolescente exige comunicação ao Conselho Tutelar tanto de suspeita quanto de confirmação de maus-tratos, castigo físico ou tratamento cruel ou degradante. O profissional de saúde não precisa produzir prova definitiva nem esperar conclusão policial ou judicial para acionar a proteção.\n\n**Atendimento e registro.** A prioridade clínica é cuidar da criança ou adolescente, documentar objetivamente achados e relato, preservar a segurança e articular a rede de proteção. Comunicação responsável não é acusação automática: separa-se o que foi observado, o que foi relatado e o que ainda depende de apuração.\n\n**Armadilha da frase.** A palavra “somente” inverte a regra legal. Exigir confirmação prévia atrasaria a intervenção justamente nos casos em que a suspeita fundamentada precisa ser investigada e a vítima protegida.",
+  "correta": "**Errado: a suspeita também deve ser comunicada.** O artigo 13 do ECA abrange expressamente suspeita ou confirmação de maus-tratos contra criança ou adolescente.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Código de Ética Médica. Artigo 102 e Estatuto da Criança e do Adolescente."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-09-30",
   "conferido": false
  },
  "conceitos-basicos-0308": {
+  "incorretas": {
+   "B": "**Errado seria adequado se a frase dissesse que estabilidade basta isoladamente.** Fixação estável, por si só, não esteriliza tecido necrótico nem substitui tratamento antimicrobiano e cirúrgico do foco."
+  },
+  "conceito": "**Dois problemas simultâneos.** Fratura ou pseudartrose infectada reúne instabilidade mecânica e foco infeccioso. Movimento excessivo perpetua lesão de tecidos, dificulta formação de calo e pode prejudicar a recuperação local. Por isso a estabilização é um dos pilares da estratégia, mesmo quando também será necessário retirar tecido desvitalizado.\n\n**Tratamento combinado.** Controle da infecção requer coleta de amostras profundas, desbridamento adequado, antibioticoterapia dirigida e cobertura de partes moles. A fixação precisa manter alinhamento e estabilidade; conforme tempo de infecção, consolidação e condição do implante, ele pode ser preservado, trocado ou substituído por outra montagem.\n\n**Estabilidade não é sinônimo de manter todo implante.** Material frouxo ou associado a falha de consolidação pode precisar de revisão. Por outro lado, retirar indiscriminadamente uma fixação estável de fratura ainda não consolidada pode piorar o problema mecânico. A decisão articula erradicação do foco e possibilidade real de união óssea.",
+  "correta": "**Certo: estabilidade é fator primordial.** Ela favorece a consolidação e integra o controle da infecção, sempre em conjunto com desbridamento, antibióticos e manejo de partes moles.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, vol. 3, p. 2707."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-09-30",
   "conferido": false
  }
 }
