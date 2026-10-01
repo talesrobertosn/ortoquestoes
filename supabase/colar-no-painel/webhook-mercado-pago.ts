@@ -106,6 +106,38 @@ async function alertarAdministradores(titulo, linhas, aba, referencia) {
   }
 }
 
+// supabase/functions/_shared/pix.ts
+var PLANOS_PIX = {
+  mensal: { meses: 1, centavos: 3990 },
+  semestral: { meses: 6, centavos: 17990 },
+  anual: { meses: 12, centavos: 23990 }
+};
+function validarPagamentoPix(pedido, pagamento, ambiente) {
+  if (pagamento.external_reference !== `pix:${pedido.id}` || pagamento.payment_method_id !== "pix" || pagamento.currency_id !== "BRL" || Math.round(Number(pagamento.transaction_amount) * 100) !== pedido.valor_centavos || pagamento.live_mode !== (ambiente === "producao") || pedido.pagamento_id && String(pagamento.id) !== pedido.pagamento_id) throw new Error("pagamento_pix_divergente");
+  const plano = PLANOS_PIX[pedido.plano];
+  if (!plano || plano.centavos !== pedido.valor_centavos || plano.meses !== pedido.meses) throw new Error("pedido_pix_invalido");
+}
+async function sincronizarPix(pagamento) {
+  const referencia = String(pagamento.external_reference ?? "");
+  if (!/^pix:[0-9a-f-]{36}$/i.test(referencia)) throw new Error("referencia_pix_invalida");
+  const resposta = await banco(`pedidos_pix?id=eq.${encodeURIComponent(referencia.slice(4))}&select=*`);
+  if (!resposta.ok) throw new Error("consulta_pix_falhou");
+  const [pedido] = await resposta.json();
+  if (!pedido) throw new Error("pedido_pix_nao_encontrado");
+  validarPagamentoPix(pedido, pagamento, Deno.env.get("MERCADO_PAGO_AMBIENTE") ?? "");
+  const atualizacao = await banco("rpc/confirmar_pagamento_pix", {
+    method: "POST",
+    body: JSON.stringify({
+      p_pedido: pedido.id,
+      p_pagamento: String(pagamento.id),
+      p_status: pagamento.status,
+      p_aprovado_em: pagamento.date_approved ?? null
+    })
+  });
+  if (!atualizacao.ok) throw new Error("confirmacao_pix_falhou");
+  return { pedido, status: await atualizacao.json() };
+}
+
 // supabase/functions/webhook-mercado-pago/index.ts
 var planos = {
   mensal: { frequency: 1, transaction_amount: 39.9 },
@@ -223,6 +255,10 @@ async function aplicarCobranca(idAssinatura, pagamento, idEvento) {
 async function processarPagamento(idRecurso, idEvento) {
   const token = Deno.env.get("MERCADO_PAGO_ACCESS_TOKEN");
   const pagamento = await consultarPagamento(token, idRecurso);
+  if (pagamento.payment_method_id === "pix" && pagamento.external_reference?.startsWith("pix:")) {
+    await sincronizarPix(pagamento);
+    return marcarEvento(idEvento, "processado");
+  }
   const idAssinatura = pagamento.preapproval_id ?? pagamento.metadata?.preapproval_id ?? pagamento.subscription_id;
   if (!idAssinatura) return marcarEvento(idEvento, "ignorado");
   await sincronizarPreapproval(String(idAssinatura));
