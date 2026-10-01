@@ -1,7 +1,9 @@
 # Lista as próximas questões cujo comentário ainda não está no formato "aula".
-# Uso: python3 scripts/aula/fila.py TEMA [N] [PULAR] [--sem-comentario|--pendentes|--topicos|--corrido] [--prova TARO]
+# Uso: python3 scripts/aula/fila.py TEMA [N] [PULAR] [--sem-comentario|--pendentes|--taro-breves|--topicos|--corrido] [--prova TARO]
 #   --sem-comentario: questões ainda sem entrada no JSON de comentários        -> prioridade máxima
 #   --pendentes: questões lançadas só com resposta provável, sem explicação    -> prioridade 1
+#   --taro-breves: TARO importadas com resposta provável e conceito de até 499 caracteres
+#                  (possuem texto, mas ainda não uma explicação completa)       -> prioridade 2
 #   sem opção:   comentários "crus" (texto curto ou com listas de tópicos simples)  -> prioridade 2
 #   --topicos:   formato antigo com títulos "###" e tabelas                          -> prioridade 3
 #   --corrido:   texto corrido antigo, sem a estrutura editorial atual              -> prioridade 4
@@ -36,13 +38,18 @@ def classe(v):
 
 alvo = ('sem-comentario' if '--sem-comentario' in sys.argv else
         'pendente' if '--pendentes' in sys.argv else
+        'taro-breve' if '--taro-breves' in sys.argv else
         'topicos' if '--topicos' in sys.argv else
         'corrido' if '--corrido' in sys.argv else 'cru')
 fila = [k for k, q in sorted(QD.items())
         if not q.get('anulada') and not q.get('duplicataDe')
         and (q.get('gabarito') or C.get(k, {}).get('provavel'))
         and (prova is None or q.get('prova') == prova)
-        and ((k not in C) if alvo == 'sem-comentario' else (k in C and classe(C[k]) == alvo))]
+        and ((k not in C) if alvo == 'sem-comentario' else
+             (k in C and not C[k].get('conferido') and q.get('prova') == 'TARO'
+              and C[k].get('provavel') and 0 < len(C[k].get('conceito') or '') < 500
+              and (C[k].get('correta') or '').strip()) if alvo == 'taro-breve' else
+             (k in C and classe(C[k]) == alvo))]
 print('# restantes', len(fila), file=sys.stderr)
 for k in fila[pular:pular + n]:
     q = QD[k]; v = C.get(k, {})
