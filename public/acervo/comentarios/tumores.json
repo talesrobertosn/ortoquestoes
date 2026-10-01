@@ -3577,15 +3577,17 @@
   "conferido": false
  },
  "tumores-0342": {
+  "incorretas": {
+   "B": "**Errado seria confiar num exame negativo para afastar mieloma ósseo.** A cintilografia pode evidenciar algumas fraturas ou áreas de remodelação, mas não tem sensibilidade suficiente para mapear isoladamente as lesões mielomatosas."
+  },
+  "conceito": "**O que a cintilografia convencional enxerga.** O exame ósseo com difosfonato marcado com tecnécio reflete sobretudo formação e remodelação óssea. Ele é útil em muitas metástases com resposta osteoblástica, mas não mostra diretamente cada foco de células tumorais.\n\n**Por que o mieloma engana.** As lesões do mieloma múltiplo são predominantemente osteolíticas e podem ter pouca reação osteoblástica. Assim, uma área de destruição óssea visível em outro exame pode ter captação baixa ou ausente na cintilografia convencional. Um exame negativo não exclui doença óssea mielomatosa.\n\n**Como investigar.** A avaliação atual privilegia métodos capazes de mostrar lise cortical, extensão medular ou atividade tumoral, conforme a pergunta clínica, como tomografia de corpo inteiro em baixa dose, ressonância magnética e PET/CT. É importante não confundir a cintilografia óssea convencional com técnicas que usam outros radiofármacos marcados com tecnécio e estudam a medula por mecanismos diferentes.",
+  "correta": "**Certo.** A cintilografia óssea convencional com tecnécio pode deixar de detectar lesões do mieloma porque depende de reação osteoblástica, frequentemente discreta nessas lesões líticas.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 735."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "tumores-0343": {
@@ -3613,15 +3615,17 @@
   "conferido": false
  },
  "tumores-0345": {
+  "incorretas": {
+   "A": "**Certo seria associar a transformação à capa cartilaginosa.** O osteossarcoma pode surgir como neoplasia óssea independente, mas não é o destino maligno típico de um osteocondroma."
+  },
+  "conceito": "**De onde surge o osteocondroma.** Trata-se de uma projeção óssea com capa cartilaginosa e continuidade da cortical e da medular com o osso de origem. Em geral aparece perto das metáfises de ossos longos e cresce enquanto a placa de crescimento está ativa.\n\n**A transformação mais típica.** Quando há transformação maligna, o tumor secundário mais característico é o condrossarcoma periférico, originado na capa cartilaginosa. Não é correto trocar esse nome por osteossarcoma, que é definido pela produção de osteoide pelas células malignas e tem outra biologia.\n\n**Sinais que pedem investigação.** Crescimento após a maturidade esquelética, dor nova sem explicação mecânica, massa progressiva e espessamento suspeito da capa cartilaginosa motivam reavaliação por imagem e equipe especializada. A ressonância ajuda a medir a capa e a analisar partes moles. A transformação é incomum no osteocondroma solitário, mas o risco é maior nas exostoses múltiplas hereditárias.",
+  "correta": "**Errado.** A malignização clássica do osteocondroma é para condrossarcoma periférico, não para osteossarcoma.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Atualização em conhecimentos ortopédicos. Ortopedia pediátrica. AAOS/SBOT. p. 66."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "tumores-0346": {
