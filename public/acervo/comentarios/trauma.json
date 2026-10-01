@@ -10920,15 +10920,17 @@
   "conferido": false
  },
  "trauma-1180": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado poderia ser defensável se \"no tubérculo de Lister\" fosse tomado literalmente.** A técnica exige apoio no fragmento dorsoulnar; a redação da prova não deve ser usada como orientação anatômica precisa sem conferência."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta provável cadastrada é \"Certo\", mas a descrição técnica publicada na Revista Brasileira de Ortopedia localiza o segundo fio na cortical dorsoulnar do rádio, não nomeia o tubérculo de Lister como seu ponto de entrada. O enunciado pode estar usando esse marco anatômico de modo impreciso; a equivalência exata não foi confirmada e merece conferência humana.",
+  "conceito": "**Como funciona o método.** A técnica de Ulson combina dois fios de Kirschner introduzidos percutaneamente e um minifixador externo que os une. Os fios atravessam fragmentos distais e seguem em direção ao canal medular do rádio, oferecendo suporte elástico e controle da redução.\n\n**Os dois lados.** O fio radial ou lateral entra pela cortical dorsolateral da estiloide radial. O segundo fio é descrito na publicação técnica como dorsal e ulnar, introduzido pela cortical dorsoulnar do rádio. Juntos, formam uma montagem convergente com base distal; o minifixador reduz a movimentação independente dos fios.\n\n**A dúvida anatômica da prova.** O tubérculo de Lister fica no dorso do rádio distal, mas citá-lo como ponto exato do fio medial não corresponde literalmente à descrição encontrada para o método. É mais seguro aprender a relação radial versus dorsoulnar e distinguir um marco de referência de uma instrução de punção precisa. Como o gabarito oficial não foi localizado, a resposta provável deve ser lida com a ressalva acima.",
+  "correta": "**Certo é a resposta provável cadastrada, com ressalva.** O fio lateral realmente entra pela estiloide radial; para o medial, a fonte técnica descreve a cortical dorsoulnar, sem confirmar o tubérculo de Lister como local exato.",
   "referencias": [
    "Pardini A.Traumatismos da mão. Rio de Janeiro: Medsi. 3ª edição, p. 435."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1181": {
@@ -11022,15 +11024,17 @@
   "conferido": false
  },
  "trauma-1188": {
+  "incorretas": {
+   "B": "**Errado seria supor que vascularização elimina o problema mecânico.** O enxerto vivo melhora a biologia, porém precisa suportar carga femoral; proteção ou reconstrução estrutural adicional pode ser necessária."
+  },
+  "conceito": "**Reconstruir osso e controlar infecção.** Uma pseudartrose infectada do fêmur com perda segmentar reúne dois problemas: tecido infectado que precisa ser tratado e um defeito estrutural em osso que suporta grandes cargas. A reconstrução exige planejamento de desbridamento, estabilidade, cobertura de partes moles e substituição óssea.\n\n**O papel da fíbula vascularizada.** Ela traz osso vivo com suprimento sanguíneo próprio e pode atravessar defeitos longos. Entretanto, uma fíbula isolada é muito mais estreita que a diáfise femoral. Antes de hipertrofiar sob carga, pode sofrer fratura por estresse ou falha da reconstrução se não houver proteção mecânica adequada.\n\n**Como reduzir o risco.** Fixação estável, progressão criteriosa de carga e estratégias de aumentar a seção resistente, como montagem em dupla barra ou associação com enxerto estrutural, podem ser consideradas conforme o defeito e os tecidos disponíveis. A presença de infecção exige controle específico; vascularização do enxerto não substitui desbridamento nem antibioticoterapia dirigida.",
+  "correta": "**Certo.** Uma única fíbula vascularizada pode unir o defeito, mas sua pequena seção em relação ao fêmur aumenta o risco de fratura por estresse antes da hipertrofia e da consolidação estrutural.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 365."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1189": {
@@ -11058,15 +11062,17 @@
   "conferido": false
  },
  "trauma-1191": {
+  "incorretas": {
+   "B": "**Errado seria excluir a troca de haste do tratamento.** Ela é útil em casos selecionados; a ressalva é que infecção, defeito ósseo e localização podem exigir outra técnica como primeira escolha."
+  },
+  "conceito": "**Primeiro, descubra por que não consolidou.** Na pseudartrose da diáfise femoral após haste, é preciso avaliar infecção, alinhamento, estabilidade, contato ósseo, tamanho do defeito e padrão biológico. Pseudartrose hipertrófica com haste fina e pouco controle de movimento sugere problema mecânico; atrofia ou perda óssea podem exigir estímulo biológico adicional.\n\n**Troca por haste maior.** Retirar a haste, fresar o canal e colocar outra mais grossa e bem bloqueada é uma estratégia clássica para pseudartrose asséptica diafisária, sobretudo ístmica. A haste de maior diâmetro aumenta a rigidez, enquanto a fresagem também fornece estímulo biológico. Não basta trocar por uma haste do mesmo diâmetro sem corrigir a causa da instabilidade.\n\n**Quando a regra não serve.** Infecção precisa de outra investigação e tratamento. Em pseudartrose não ístmica, grande defeito ou deformidade, placa de aumento, enxerto ou reconstrução diferente podem ser mais adequados. Portanto, \"primeira indicação\" descreve a abordagem clássica de um caso asséptico apropriado, não uma ordem universal para toda pseudartrose femoral com haste.",
+  "correta": "**Certo no cenário clássico asséptico.** A troca após fresagem por haste de maior diâmetro é opção inicial consagrada para pseudartrose diafisária com estabilidade insuficiente, desde que o padrão da lesão seja favorável.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 3147."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "trauma-1192": {
