@@ -3732,87 +3732,101 @@
   "conferido": false
  },
  "joelho-0310": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado seria defensável se “auxilia” significasse distinção conclusiva.** Captação cintilográfica isolada não identifica especificamente a osteocondrite nem exclui defeito dorsal patelar ativo."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta provável “Certo” foi mantida no sentido de que a cintilografia pode acrescentar informação funcional em caso duvidoso. Ela não distingue sozinha, com segurança, osteocondrite dissecante de defeito dorsal da patela: a localização, o aspecto da margem e a integridade da cartilagem na radiografia, tomografia ou ressonância têm maior valor anatômico.",
+  "conceito": "**Duas lesões diferentes.** O defeito dorsal da patela é uma variante benigna tipicamente arredondada, de borda esclerótica, na região superolateral posterior. A osteocondrite dissecante é uma lesão osteocondral que pode comprometer a superfície articular e formar fragmento instável. Ambas podem aparecer como área radiolúcida na patela, por isso entram no diagnóstico diferencial.\n\n**O que cada exame mostra.** Radiografias e tomografia definem localização e contorno ósseo; a ressonância avalia cartilagem, edema e eventual separação do fragmento. A cintilografia demonstra atividade óssea e perfusão, podendo ajudar a interpretar se uma lesão está metabolicamente ativa, mas captação aumentada não é específica de osteocondrite e não substitui a avaliação anatômica.\n\n**Conduta.** Um defeito dorsal típico e assintomático costuma exigir apenas reconhecimento e observação. Osteocondrite sintomática ou instável precisa de avaliação própria, considerando maturidade esquelética e estabilidade do fragmento. Evitar confundir uma variante benigna com lesão que ameaça a superfície articular é o objetivo da investigação.",
+  "correta": "**Certo como exame auxiliar, não definitivo.** A cintilografia pode agregar dado funcional quando a imagem convencional deixa dúvida entre as lesões, mas o diagnóstico depende da correlação anatômica.",
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 2003, p. 1159-1161."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "joelho-0311": {
+  "incorretas": {
+   "A": "**Certo seria possível em um caso individual.** A ruptura aguda pode vir com lesão longitudinal medial, mas não se deve apresentá-la como associação mais frequente de forma geral."
+  },
+  "conceito": "**Padrão da lesão aguda.** A ruptura recente do ligamento cruzado anterior costuma ocorrer por pivô e impactar o compartimento lateral, com contusões ósseas características. Entre as lesões meniscais associadas no momento agudo, o menisco lateral aparece com frequência igual ou maior que o medial em diversas séries.\n\n**O que muda com o tempo.** Num joelho cronicamente instável sem LCA, o menisco medial torna-se estabilizador secundário contra translação anterior e sofre cargas repetidas. Isso favorece lesões mediais, muitas vezes do corno posterior, em pacientes que seguem com episódios de falseio. A lesão periférica longitudinal medial, inclusive a lesão ramp, é importante, mas não é a associação mais frequente que se pode atribuir genericamente à ruptura aguda.\n\n**Implicação na cirurgia.** Ao reconstruir o LCA, examinam-se ambos os meniscos e suas inserções, inclusive a região posteromedial que pode esconder lesão ramp. Preservação ou reparo de lesões reparáveis reduz perda de função meniscal; a cronologia da lesão ajuda a orientar a suspeita, não dispensa inspeção completa.",
+  "correta": "**Errado: a descrição combina melhor com instabilidade crônica.** Na lesão aguda do LCA, o menisco lateral é frequentemente acometido; lesões mediais aumentam com o tempo de instabilidade.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 2003, p. 2255."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "joelho-0312": {
+  "incorretas": {
+   "A": "**Certo seria adequado para a ausência de indicação rotineira.** Na primeira luxação sem lesão osteocondral relevante, geralmente não se faz realinhamento distal imediato; a afirmação falha ao transformar isso em proibição por um único motivo."
+  },
+  "conceito": "**Primeira luxação patelar.** Após reduzir a patela, avaliam-se derrame, fratura osteocondral, lesão do ligamento patelofemoral medial e fatores anatômicos de risco. Muitos primeiros episódios sem fragmento deslocado são tratados inicialmente sem cirurgia, com reabilitação e recuperação progressiva do movimento.\n\n**Realinhamento distal.** Procedimentos na tuberosidade tibial mudam o vetor do tendão patelar. São reservados a indicações anatômicas específicas, como deformidade importante ou instabilidade recorrente em paciente com fise fechada; não são rotina para a luxação aguda isolada. Em criança com fise aberta, osteotomia da tuberosidade pode prejudicar o crescimento, motivo mais direto para evitá-la.\n\n**Por que a frase erra.** Limitação de mobilidade e artrofibrose são riscos de qualquer cirurgia e de imobilização excessiva, mas não constituem a razão única ou definidora para rejeitar realinhamento distal em todo caso agudo. Se houver grande fragmento osteocondral ou recorrência com anomalia anatômica, o plano pode ser diferente.",
+  "correta": "**Errado: a justificativa é excessiva e universal.** Realinhamento distal não é rotina na primeira luxação, mas sua indicação depende da anatomia e da maturidade esquelética, não apenas do risco de artrofibrose.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 1996. 4th Edition, Chap. 29."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "joelho-0313": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado seria possível se o ligamento cicatrizasse sem cirurgia.** Tratamento não operatório adequado também é tratamento; o problema do enunciado é deixar instabilidade sem abordagem."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. Mantivemos “Certo” no sentido de que instabilidade medial residual piora o resultado de fratura do planalto lateral. “Não tratada” não deve ser confundida com “não operada”: algumas lesões do ligamento colateral medial cicatrizam com imobilização funcional e reabilitação, sem sutura formal, se a estabilidade final for adequada.",
+  "conceito": "**Mecanismo e estruturas.** Uma força em valgo pode comprimir o planalto tibial lateral e tensionar o ligamento colateral medial. Assim, a fratura óssea e a lesão ligamentar podem coexistir. Reparar a superfície articular sem reconhecer frouxidão medial persistente deixa o joelho mecanicamente desequilibrado.\n\n**Como avaliar.** Além de caracterizar depressão e separação do planalto por radiografia e tomografia, examina-se estabilidade em valgo, preferencialmente após controle da dor e quando a fratura estiver estabilizada. Ressonância pode ajudar a definir a lesão ligamentar. Deve-se procurar também dano meniscal e outras lesões do complexo medial.\n\n**Tratamento combinado.** A fratura exige restauração de alinhamento, superfície e estabilidade óssea conforme o padrão. O colateral medial pode ser tratado conservadoramente se houver possibilidade de cicatrização e estabilidade suficiente; ruptura grave ou instabilidade persistente pode precisar de reparo ou reconstrução. O mau prognóstico decorre da instabilidade residual, não da ausência automática de cirurgia ligamentar.",
+  "correta": "**Certo se a lesão medial for deixada funcionalmente instável.** Valgo residual após tratar a fratura do planalto lateral compromete a mecânica e pode piorar o resultado.",
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, vol. 3, p. 2792."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "joelho-0314": {
+  "incorretas": {
+   "A": "**Certo seria trocar “posterior” por “anterior”.** A face anterior recebe a tração que a montagem procura neutralizar durante a flexão do joelho."
+  },
+  "conceito": "**Princípio da banda de tensão.** Na fratura transversa da patela, a força do quadríceps tende a abrir a face anterior durante a flexão. A banda metálica em oito fica anteriormente e busca converter essa tração em compressão no foco da fratura e na superfície articular posterior.\n\n**Posição dos fios.** Dois fios de Kirschner atravessam os fragmentos longitudinalmente, mantendo redução e servindo de apoio ao cerclagem. Eles são introduzidos dentro da patela, próximos à cortical anterior, sem penetrar a cartilagem da face articular posterior. O fio em oito percorre a superfície anterior, que é o lado de tensão.\n\n**Risco da frase.** Colocar fios na cortical posterior significa aproximá-los da cartilagem femoropatelar e pode causar penetração articular ou lesão condral. A redução da face posterior precisa ser verificada, mas isso não a transforma no local da banda de tensão.",
+  "correta": "**Errado: o lado de tensão é anterior.** A banda em oito e os fios de suporte ficam na região anterior da patela, preservando a superfície articular posterior.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 3ª edição, vol. 2, p. 1734."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "joelho-0315": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado poderia valer se a limitação fosse definitiva.** Lesões não abordadas na via vascular ainda exigem avaliação e eventual reconstrução planejada depois da reperfusão."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta provável “Certo” foi mantida como princípio de não ampliar uma cirurgia vascular urgente para reconstrução ligamentar extensa. Isso não é regra absoluta: estabilização temporária, reparos acessíveis e planejamento de reconstrução precoce ou tardia variam conforme isquemia, partes moles, instabilidade e equipe disponível.",
+  "conceito": "**Prioridade é reperfundir.** Luxação tibiofemoral pode lesar a artéria poplítea e ameaçar o membro. Na presença de isquemia ou lesão vascular confirmada, redução, avaliação vascular e reparo rápido têm precedência. A estabilização do joelho protege a anastomose ou enxerto; em alguns casos usa-se fixador externo transarticular temporário.\n\n**Ligamentos em outro tempo.** Reconstruir todos os ligamentos imediatamente pela via aberta para o vaso pode prolongar isquemia, agravar tecidos moles e atrapalhar cuidado vascular. Reparos simples de estruturas claramente expostas podem ser feitos, enquanto a reconstrução definitiva costuma ser planejada após assegurar perfusão, controlar edema e avaliar os padrões ligamentares.\n\n**Não confundir acessos.** A incisão vascular é escolhida para abordar a artéria, não para visualizar todas as estruturas do joelho. O objetivo da frase é limitar a cirurgia ligamentar concomitante ao que pode ser tratado com segurança, não proibir para sempre abordagens adicionais quando a condição clínica exigir.",
+  "correta": "**Certo como estratégia prudente na cirurgia vascular urgente.** Prioriza-se salvar o membro e evita-se reconstrução ligamentar extensa naquele ato; reparos visíveis e seguros podem ser realizados.",
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 2003, p. 2303."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "joelho-0316": {
+  "incorretas": {
+   "A": "**Certo descreveria apenas parte da reação celular.** Condrócitos podem proliferar e produzir alguma matriz local, mas não preenchem de modo eficaz a maioria dos defeitos traumáticos sem outro mecanismo reparador."
+  },
+  "conceito": "**Cartilagem hialina é pouco reparadora.** A cartilagem articular madura não tem vasos sanguíneos e contém condrócitos separados por matriz densa. Após um defeito limitado à cartilagem, não há chegada abundante de células e mediadores pelo sangue; a migração dos condrócitos através da matriz é muito restrita.\n\n**Agrupamentos não fecham necessariamente o defeito.** Células sobreviventes podem proliferar em pequenos agrupamentos e aumentar síntese local de matriz, mas isso é resposta limitada ao dano. A frase transforma essa reação em migração eficiente que preencheria a falha, algo que a cartilagem adulta não faz espontaneamente de modo confiável. Quando a lesão atravessa o osso subcondral, células medulares podem formar tecido reparador, geralmente fibrocartilagem, diferente da cartilagem hialina original.\n\n**Implicação terapêutica.** O manejo depende de profundidade, tamanho, localização, idade e sintomas. Procedimentos como microfraturas exploram o acesso à medula; transplantes osteocondrais ou técnicas celulares procuram restaurar melhor a superfície. Nenhuma dessas respostas deve ser confundida com reparo automático por migração de condrócitos nativos.",
+  "correta": "**Errado: a migração e o preenchimento espontâneo foram superestimados.** A cartilagem madura tem capacidade de reparo intrínseco limitada, mesmo quando condrócitos formam agrupamentos.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 2001. 5ª edição, cap. 8, p. 265."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  }
 }
