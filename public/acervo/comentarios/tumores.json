@@ -3633,15 +3633,17 @@
   "conferido": false
  },
  "tumores-0346": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
+  "incorretas": {
+   "B": "**Errado seria tratá-los como entidades sem vínculo molecular.** A translocação clássica ajudou a reuni-los na mesma família; a ressalva é que compartilhar a alteração típica não significa que todos os casos tenham cromossomos 11 e 22 envolvidos."
+  },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada é sustentada pela associação clássica entre sarcoma de Ewing, PNET periférico e t(11;22), mas a redação não deve ser lida como se todos os tumores desses grupos tivessem obrigatoriamente essa mesma translocação: existem fusões variantes.",
+  "conceito": "**Uma família de tumores.** Sarcoma de Ewing e o que historicamente se chamava PNET periférico foram agrupados por semelhanças morfológicas e moleculares. O aspecto de pequenas células redondas não basta para o diagnóstico, pois outras neoplasias podem se parecer com eles.\n\n**A fusão clássica.** A translocação t(11;22)(q24;q12) une EWSR1, no cromossomo 22, a FLI1, no cromossomo 11. A proteína de fusão altera a transcrição celular e é encontrada na maioria dos casos de sarcoma de Ewing. Ela também foi demonstrada nos tumores antes descritos como PNET periféricos, explicando a associação pedida pela questão.\n\n**A ressalva moderna.** Nem todo caso apresenta t(11;22): existem outras fusões, como EWSR1::ERG. A confirmação atual combina histologia, imunohistoquímica e testes moleculares adequados. O dado mais seguro para memorizar é a fusão EWSR1::FLI1 como a mais frequente, e não como requisito universal de todos os casos.",
+  "correta": "**Certo no sentido clássico da questão.** Ewing e PNET periférico compartilham a alteração t(11;22), que produz EWSR1::FLI1 na maioria dos casos, embora existam variantes moleculares.",
   "referencias": [
    "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 5ª edição, p. 542."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "tumores-0347": {
@@ -3709,15 +3711,17 @@
   "conferido": false
  },
  "tumores-0352": {
+  "incorretas": {
+   "A": "**Certo apenas se o enunciado dissesse que a disseminação é incomum.** Ausência absoluta de risco está incorreta: há séries de tumores de células gigantes benignos com lesões pulmonares confirmadas."
+  },
+  "conceito": "**Benigno não quer dizer inofensivo.** O tumor de células gigantes do osso costuma surgir na região epifisária de adultos jovens após o fechamento da fise. Embora seja classificado em geral como benigno, pode destruir osso, aproximar-se da superfície articular, fraturar e recidivar localmente.\n\n**A exceção decisiva.** Uma pequena parcela dos tumores de células gigantes histologicamente benignos produz implantes pulmonares. Isso não equivale automaticamente a transformação em sarcoma: as lesões no pulmão podem conservar a morfologia do tumor ósseo. Por essa razão, a frase \"sem risco de metástase\" torna o enunciado falso.\n\n**Tratamento e vigilância.** Curetagem ampliada com medidas locais e reconstrução é uma opção em casos selecionados; ressecção pode ser necessária conforme extensão e articulação envolvida. Acompanhamento local e pulmonar é importante, sobretudo após recidiva ou em lesões de comportamento agressivo. A conduta para doença pulmonar depende de número de focos, crescimento e possibilidade de ressecção.",
+  "correta": "**Errado.** O tumor de células gigantes é localmente agressivo e, apesar de geralmente benigno na histologia, pode produzir metástases pulmonares raras.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 813."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "tumores-0353": {
@@ -3745,15 +3749,17 @@
   "conferido": false
  },
  "tumores-0355": {
+  "incorretas": {
+   "B": "**Errado seria excluir o pulmão por causa da distância.** Embora metástases distais sejam raras, quando ocorrem o pulmão lidera as séries; rim, mama e trato gastrointestinal também entram no diagnóstico diferencial."
+  },
+  "conceito": "**Por que a localização chama atenção.** Metástases ósseas abaixo do cotovelo ou do joelho são raras em comparação com as do esqueleto axial e das porções proximais dos membros. Quando aparecem em mãos ou pés, são chamadas acrometástases e podem imitar infecção, artrite ou lesão traumática.\n\n**O primário mais associado.** Em séries de acrometástases, o câncer de pulmão é a origem mais frequente; rim também é causa importante. A disseminação hematogênica explica a possibilidade de depósitos distais, mas não permite diagnosticar a origem de um caso individual apenas pela radiografia.\n\n**Consequência clínica.** Dor, edema e destruição óssea de uma falange ou de outro osso distal em adulto com fatores de risco exigem investigação, mesmo sem neoplasia previamente conhecida. A lesão pode ser a primeira manifestação de um câncer oculto. A biópsia e o estadiamento devem ser planejados conforme a suspeita clínica e a extensão da doença.",
+  "correta": "**Certo.** Entre os tumores primários que produzem metástases nos ossos distais de mãos e pés, o câncer de pulmão é o mais frequentemente relatado.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 848."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "tumores-0356": {
