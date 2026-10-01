@@ -3756,37 +3756,44 @@
   "conferido": false
  },
  "coluna-0355": {
+  "incorretas": {
+   "B": "**Errado confundiria gravidade com completude.** Mesmo uma lesão clinicamente grave não é classificada como completa se houver preservação sacral demonstrada no exame adequado."
+  },
+  "conceito": "**O que é preservação sacral.** Após traumatismo raquimedular, encontrar sensibilidade ou função motora voluntária nos segmentos sacrais S4-S5 demonstra que ainda existe alguma condução através da medula lesionada. No exame padronizado, procuram-se tato e picada perianais, sensação de pressão anal profunda e contração anal voluntária.\n\n**Completa e incompleta.** Pela classificação neurológica internacional, lesão completa, AIS A, exige ausência de preservação sensitiva e motora sacral. Se há qualquer preservação sacral válida, a lesão é incompleta, mesmo que pernas e tronco abaixo do nível pareçam sem força ou sensibilidade. AIS B indica preservação sensitiva sem os critérios de lesão motora incompleta; AIS C e D distinguem a força dos músculos-chave abaixo do nível neurológico.\n\n**Cuidado na fase aguda.** Choque medular, sedação e dificuldade de cooperação podem atrapalhar a primeira avaliação. É necessário documentar o exame e repeti-lo; reflexo sacral isolado não substitui a demonstração de sensibilidade ou contração voluntária exigida pela classificação.",
+  "correta": "**Certo: preservação sacral significa lesão incompleta.** Função sensitiva ou motora voluntária em S4-S5 exclui a classificação de lesão medular completa AIS A.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, vol. II, p. 1598."
   ],
-  "geradoEm": null,
+  "provavel": "A",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "coluna-0356": {
+  "incorretas": {
+   "A": "**Certo seria mais próximo do subtipo IIA.** Nesse padrão de grande angulação e pouca translação, evita-se tração axial e pode-se considerar imobilização sem tração ou estabilização cirúrgica."
+  },
+  "conceito": "**Fratura do enforcado.** A espondilolistese traumática de C2 envolve fratura do arco do áxis, geralmente na região interarticular, com possível deslocamento de C2 sobre C3. A classificação de Levine e Edwards considera translação, angulação, disco C2-C3 e facetas. Tipo I tem pequeno deslocamento e tende a ser estável; tipo II apresenta translação e angulação; tipo IIA tem pouca translação, mas angulação importante por mecanismo de flexão-distração; tipo III acrescenta luxação das facetas C2-C3.\n\n**Tração não é proibida em todo tipo II.** No tipo II clássico, uma redução cuidadosa com tração pode preceder imobilização externa em casos selecionados; instabilidade maior pode exigir cirurgia. O halo foi usado historicamente, mas não é obrigatório para todos, especialmente quando um colar rígido adequado ou outra estratégia oferece melhor relação entre benefício e complicações.\n\n**A exceção crucial.** No tipo IIA, a tração axial pode aumentar a angulação e piorar o afastamento, sendo evitada. A banca transfere essa contraindicação do subtipo IIA para todo o tipo II, além de transformar uma opção de imobilização em obrigação universal.",
+  "correta": "**Errado: confundiu tipo II com tipo IIA.** Tração cervical pode ser considerada no tipo II clássico; a contraindicação conhecida refere-se principalmente ao IIA, e o haloveste não é único tratamento possível.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
   "referencias": [
    "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, vol. II, p. 1627."
   ],
-  "geradoEm": null,
+  "provavel": "B",
+  "geradoEm": "2026-10-01",
   "conferido": false
  },
  "coluna-0357": {
+  "incorretas": {
+   "A": "**Flexão-distração III produz luxação bifacetária.** É mecanismo de abertura posterior e translação anterior, não o cunhamento compressivo que origina a gota de lágrima.",
+   "B": "**Flexão-distração IV é ainda mais translacional.** Associa deslocamento anterior maior e falha ligamentar extensa, em vez da fragmentação anterior característica da compressão-flexão III.",
+   "C": "**Compressão-flexão II precede a gota de lágrima separada.** Há deformação e início de alteração no canto anteroinferior, mas o fragmento triangular destacado caracteriza o estágio seguinte."
+  },
+  "conceito": "**Mecanismo da gota de lágrima.** A fratura cervical baixa em gota de lágrima por flexão resulta de compressão axial combinada com flexão. Um fragmento triangular se separa da região anteroinferior do corpo vertebral. Ela não deve ser confundida com a pequena avulsão anterior produzida por extensão, cujo mecanismo e estabilidade podem ser diferentes.\n\n**Progressão de Allen e Ferguson.** Na categoria compressão-flexão, o estágio I mostra cunhamento anterior; o II acrescenta deformação do canto anteroinferior; o III apresenta fragmento ósseo triangular separado, a gota de lágrima. Nos estágios IV e V, o deslocamento posterior do corpo vertebral e a falha ligamentar são progressivamente maiores, aumentando a compressão medular.\n\n**Importância clínica.** Reconhecer o mecanismo permite procurar lesão posterior, retrolistese e déficit neurológico. A aparência do fragmento isolado não resume toda a instabilidade: tomografia e, quando indicada, ressonância avaliam elementos ósseos, disco e ligamentos antes da decisão de estabilização.",
+  "correta": "**Compressão-flexão, estágio III.** A separação do fragmento anteroinferior em gota de lágrima define esse estágio na sequência de Allen e Ferguson.",
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "D",
-  "conceito": null,
-  "correta": "",
-  "incorretas": {},
-  "referencias": [],
-  "geradoEm": null,
+  "geradoEm": "2026-10-01",
   "conferido": false
  }
 }
