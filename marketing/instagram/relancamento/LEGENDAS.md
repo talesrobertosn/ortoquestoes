@@ -9,7 +9,7 @@ apresentação abre o perfil.
 >
 > No Orto Questões você treina com questões de provas anteriores do TEOT, do TARO e do ENARE R4, organizadas por assunto, e cada uma tem o comentário da certa e das erradas.
 >
-> Crie sua conta grátis pelo link na bio.
+> Crie sua conta grátis pelo link na bio: todo dia você treina um número limitado de questões sem pagar nada, e os planos liberam sem limite.
 >
 > #ortopedia #TEOT #TARO #residenciamedica #traumatologia
 

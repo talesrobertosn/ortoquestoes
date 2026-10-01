@@ -42,5 +42,16 @@ export const ROTULO_SIMULADOS = 'OrtoQuestões Simulados'
  */
 export const EXIGIR_CONTA_PARA_QUESTOES = true
 
+/**
+ * Questões grátis por dia no momento. Quem decide de verdade é o painel
+ * (Configurações > Limite gratuito); este número só aparece nos Termos, nas
+ * Condições da Assinatura e na página de planos. Ao mudar no painel, mude aqui
+ * também. Os demais textos do site falam em "um número limitado por dia".
+ */
+export const LIMITE_GRATIS_ATUAL = 20
+
+/** Frase curta para convites: o que o gratuito dá e que os planos tiram o limite. */
+export const FRASE_GRATIS = 'A conta é grátis e libera um número limitado de questões por dia, renovado todos os dias. Para estudar sem limite, há os planos.'
+
 /** Prefixo de todas as chaves gravadas no localStorage. */
 export const PREFIXO_ARMAZENAMENTO = 'ortoquestoes:'

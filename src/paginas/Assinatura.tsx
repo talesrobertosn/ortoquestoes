@@ -8,6 +8,7 @@ import { Simbolo } from '../marca/Simbolo'
 import { Painel } from '../componentes/Painel'
 import { VERSAO_CONDICOES_ANTERIOR, VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { href } from '../util/rotas'
+import { LIMITE_GRATIS_ATUAL } from '../config'
 import { MENSAL, PLANOS, real } from '../dados/planos'
 import '../estilos/paginas/Assinatura.css'
 
@@ -185,7 +186,7 @@ export function Assinatura() {
         <header className="vp-secao__cabeca">
           <p className="vp-sobre">Gratuito ou assinante</p>
           <h2>{limitesHabilitados ? 'O gratuito é generoso. O assinante vai além.' : 'O acervo é de todos. O assinante vai além.'}</h2>
-          <p>{limitesHabilitados ? 'Vinte questões por dia bastam para muita gente manter a constância. O plano é para quem quer acelerar e saber exatamente onde está.' : 'Nesta fase, as questões não têm limite diário para ninguém. O plano libera os recursos exclusivos e garante o acesso ilimitado se o limite gratuito for ativado.'}</p>
+          <p>{limitesHabilitados ? 'Um número limitado de questões por dia, renovado todos os dias, basta para muita gente manter a constância. O plano é para quem quer acelerar e saber exatamente onde está.' : 'Nesta fase, as questões não têm limite diário para ninguém. O plano libera os recursos exclusivos e garante o acesso ilimitado se o limite gratuito for ativado.'}</p>
         </header>
         <div className="vp-comparativo" role="table" aria-label="Comparação entre gratuito e assinante">
           <div className="vp-comparativo__linha vp-comparativo__cabeca" role="row">
@@ -194,7 +195,7 @@ export function Assinatura() {
             <span role="columnheader" className="vp-comparativo__pro">Assinante</span>
           </div>
           {([
-            ['Questões por dia', limitesHabilitados ? '20 (as próximas liberam no dia seguinte)' : 'Sem limite nesta fase', 'Sem limite'],
+            ['Questões por dia', limitesHabilitados ? `Limitado (hoje, ${LIMITE_GRATIS_ATUAL}); renova todo dia` : 'Sem limite nesta fase', 'Sem limite'],
             ['Simulado de 50 ou 100 questões de uma vez', limitesHabilitados ? 'Em vários dias' : 'Na hora nesta fase', 'Na hora'],
             ['Simulado Nacional mensal, com posição e prontidão', false, true],
             ['Cronograma baseado no que mais cai', false, true],
@@ -297,7 +298,7 @@ export function Assinatura() {
 
       <section className="vp-secao faq vp-faq">
         <header className="vp-secao__cabeca"><p className="vp-sobre">Dúvidas</p><h2>Perguntas frequentes</h2></header>
-        <details><summary>Como funciona o limite do plano gratuito?</summary><p>{limitesHabilitados ? 'Você pode registrar até 20 respostas novas por dia. As próximas voltam no dia seguinte.' : 'O limite diário está desligado nesta fase, portanto o acesso gratuito também está sem limite de respostas. Se o limite for ativado futuramente, o patamar gratuito previsto é de 20 respostas novas por dia.'} Comentários, revisões e desempenho continuam abertos.</p></details>
+        <details><summary>Como funciona o limite do plano gratuito?</summary><p>{limitesHabilitados ? `O gratuito tem um número limitado de respostas novas por dia (hoje, ${LIMITE_GRATIS_ATUAL}), que se renova todos os dias à meia-noite, no horário de Brasília. O número pode mudar; a mudança é avisada no site.` : `O limite diário está desligado nesta fase, portanto o acesso gratuito também está sem limite de respostas. Se o limite for ativado futuramente, o patamar gratuito previsto é de ${LIMITE_GRATIS_ATUAL} respostas novas por dia.`} Comentários, revisões e desempenho continuam abertos.</p></details>
         <details><summary>Como funciona o cancelamento?</summary><p>Em Minha conta, você escolhe entre impedir a próxima renovação ou, dentro de sete dias da última cobrança, pedir reembolso integral. Impedir a renovação não reembolsa a cobrança atual: o acesso pago continua até o fim do período. Se o Mercado Pago confirmar o reembolso, o acesso pago termina e sua conta volta ao gratuito.</p></details>
         <details><summary>Se eu cancelar o semestral após três meses, recebo os três restantes?</summary><p>Após os sete dias para reembolso integral, não há devolução proporcional automática. Você mantém o acesso até completar os seis meses pagos, e a assinatura não renova. A mesma regra vale para o plano anual. Seus direitos previstos em lei permanecem preservados. Consulte as <a href={href('/condicoes-assinatura')}>condições da assinatura</a> antes de comprar.</p></details>
         <details><summary>Como funciona a garantia?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pode pedir reembolso integral em Minha conta. Se a solicitação automática não for confirmada pelo Mercado Pago, use o canal de contato para atendimento manual. O acesso pago só é encerrado após confirmação do reembolso. Depois desse prazo não há reembolso proporcional por esta garantia.</p></details>

@@ -20,6 +20,13 @@ export function saldoGratuitoHoje(): number | null {
   return saldo.dia === chaveDia() ? saldo.restantes : saldo.limite
 }
 
+/** Quantas questões grátis por dia a conta tinha na última resposta do servidor (o painel pode mudar). */
+export function limiteGratisConhecido(): number | null {
+  if (!LIMITES_HABILITADOS) return null
+  const saldo = ler<{ limite?: number } | null>(CHAVE_SALDO, null)
+  return typeof saldo?.limite === 'number' && saldo.limite > 0 ? saldo.limite : null
+}
+
 export function lerBloqueioDiario(): string | null {
   const registro = ler<{ liberaEm: string } | null>(CHAVE_BLOQUEIO, null)
   const instante = Date.parse(registro?.liberaEm ?? '')

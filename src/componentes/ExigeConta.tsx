@@ -23,7 +23,11 @@ export function ExigeConta({ caminho, children }: { caminho: string; children: R
       <h1 id="exige-conta-titulo">Crie sua conta para ver as questões</h1>
       <p>
         As questões das provas oficiais, com o comentário de cada alternativa, ficam disponíveis para quem tem conta.
-        É grátis, não pede cartão e leva menos de um minuto.
+        Criar a conta não pede cartão e leva menos de um minuto.
+      </p>
+      <p className="exige-conta__gratis">
+        <strong>A conta é grátis</strong> e libera um número limitado de questões por dia, renovado todos os dias.
+        Entre, pratique e aproveite. Para estudar sem limite, <a href={href('/assinatura')}>conheça os planos</a>.
       </p>
       <ul className="exige-conta__lista">
         <li><Icone nome="alvo" tamanho={18} /> Treino por tema, prova e ano</li>

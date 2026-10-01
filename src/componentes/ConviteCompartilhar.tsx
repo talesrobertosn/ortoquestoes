@@ -20,9 +20,9 @@ const ESPERA_ENTRADA = 1500
 const PAUSA_COMPARTILHOU = 90 * DIA
 
 // Texto que chega pronto no WhatsApp; *negrito* é a formatação do próprio app.
-export const MENSAGEM = `Olá! Quero indicar o *OrtoQuestões*, um banco de questões de ortopedia com acesso gratuito.
+export const MENSAGEM = `Olá! Quero indicar o *OrtoQuestões*, um banco de questões de ortopedia que dá para usar de graça.
 
-Reúne provas do TEOT, TARO, fellowships e R4, com comentário em cada alternativa e revisão das questões erradas. São 20 questões por dia sem custo.
+Reúne provas do TEOT, TARO, fellowships e R4, com comentário em cada alternativa e revisão das questões erradas. A conta é grátis e libera um número limitado de questões por dia, renovado todos os dias; os planos liberam sem limite.
 
 ${SITE.url}`
 
@@ -134,7 +134,7 @@ export function ConviteCompartilhar({ ativo }: { ativo: boolean }) {
       <div className="convite__conversa" aria-live="polite">
         {digitando ? <span className="convite__digitando" aria-label="digitando"><i /><i /><i /></span> : <>
           <p className="convite__balao">Que bom ter você estudando por aqui.</p>
-          <p className="convite__balao">Tem colegas de residência estudando para o TEOT ou fellowship? <b>Mande o banco para eles.</b> É grátis e é o que mais ajuda o projeto a crescer.</p>
+          <p className="convite__balao">Tem colegas de residência estudando para o TEOT ou fellowship? <b>Mande o banco para eles.</b> Dá para usar de graça todo dia, e é o que mais ajuda o projeto a crescer.</p>
         </>}
       </div>
       {!digitando && <div className="convite__acoes">

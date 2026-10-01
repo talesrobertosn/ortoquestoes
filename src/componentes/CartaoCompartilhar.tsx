@@ -15,7 +15,7 @@ export function CartaoCompartilhar() {
     <section className="inicio-compartilhar" aria-labelledby="inicio-compartilhar-titulo">
       <div className="inicio-compartilhar__texto">
         <h2 id="inicio-compartilhar-titulo">Está gostando do OrtoQuestões?</h2>
-        <p>Manda para quem está estudando com você. É de graça para eles, e cada colega que chega ajuda o projeto a crescer e a ganhar provas novas.</p>
+        <p>Manda para quem está estudando com você. Eles podem usar de graça, com um número limitado de questões por dia, e cada colega que chega ajuda o projeto a crescer e a ganhar provas novas.</p>
       </div>
       <div className="inicio-compartilhar__acoes">
         <a className="inicio-compartilhar__whatsapp" href={`https://wa.me/?text=${encodeURIComponent(MENSAGEM)}`} target="_blank" rel="noopener noreferrer">

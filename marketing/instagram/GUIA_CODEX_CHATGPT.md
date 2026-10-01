@@ -20,7 +20,8 @@ revisão das questões erradas, desempenho, ranking e um Cronograma que monta o 
 
 Fatos que podem aparecer nos posts (confira no site se mudaram):
 
-- É preciso criar conta (grátis) para responder questões. O gratuito tem 20 questões por dia.
+- É preciso criar conta (grátis) para responder questões. O gratuito libera um número limitado de questões
+  por dia, renovado todos os dias à meia-noite (hoje são 20, mas o número pode mudar). Sem limite, só nos planos.
 - Planos: mensal R$ 39,90, semestral R$ 179,90 e anual R$ 239,90 (cobrança integral por período).
 - Prova teórica online do TEOT e do TEPOT 2027 (SBOT): 10 de janeiro de 2027. Quando falar em "faltam N
   dias", calcule no dia em que a imagem for gerada.
@@ -60,12 +61,14 @@ abaixo é o resumo delas.
    deles. Não usar a sigla da sociedade de quadril: a prova se chama "Fellowship Quadril".
 5. Não sugerir vínculo com SBOT, ENARE, SBCOC ou qualquer banca. Pode citar o nome das provas (TEOT,
    TARO...) para dizer de qual prova é a questão, nada além disso.
-6. Não prometer aprovação nem resultado. Não inventar função que o site não tem; na dúvida, abra o site.
-7. Tela de celular com dados de exemplo leva a nota "Tela ilustrativa".
-8. Conteúdo médico: use o comentário da própria questão no site (`public/acervo/comentarios/<tema>.json`).
+6. "Grátis" sempre com o limite: a conta é grátis e dá um número limitado de questões por dia; para estudar
+   sem limite, há os planos. Não escreva "site grátis", "tudo grátis" nem o número exato de questões por dia.
+7. Não prometer aprovação nem resultado. Não inventar função que o site não tem; na dúvida, abra o site.
+8. Tela de celular com dados de exemplo leva a nota "Tela ilustrativa".
+9. Conteúdo médico: use o comentário da própria questão no site (`public/acervo/comentarios/<tema>.json`).
    Se estiver com `"conferido": false`, ou se a questão mostrar "Resposta pela bibliografia" (sem gabarito
    oficial), avise o dono do projeto para conferir antes de postar.
-9. Não usar imagens de terceiros (fotos de livros, de cursos, de bancos de imagem sem licença). As imagens
+10. Não usar imagens de terceiros (fotos de livros, de cursos, de bancos de imagem sem licença). As imagens
    das questões que já estão em `public/imagens/` podem ser usadas.
 
 ## 4. Como produzir

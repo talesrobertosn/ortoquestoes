@@ -232,7 +232,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <li><span><Icone nome="estrela" tamanho={18} /></span>Favoritas e anotações nas questões</li>
           <li><span><Icone nome="raio" tamanho={18} /></span>Sequência de dias, ranking e emblemas</li>
         </ul>
-        <p className="acesso__rodape">Comece grátis, sem cartão de crédito.</p>
+        <p className="acesso__rodape">Comece grátis, sem cartão de crédito: um número limitado de questões por dia, renovado todos os dias. Sem limite, nos planos.</p>
       </aside>
       <section className="acesso__cartao">
         {!recuperacao && modo !== 'recuperar' && <div className="acesso__abas" role="tablist">{(['entrar', 'criar'] as const).map(m => <button type="button" role="tab" aria-selected={modo === m} className="acesso__aba" onClick={() => trocarModo(m)} key={m}>{m === 'entrar' ? 'Entrar' : 'Criar conta'}</button>)}</div>}

@@ -1,5 +1,6 @@
 import { Painel } from './Painel'
 import { href } from '../util/rotas'
+import { FRASE_GRATIS } from '../config'
 
 /**
  * Painel exibido quando alguém sem conta tenta responder uma questão.
@@ -12,15 +13,8 @@ export function PortaoConta({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
   return (
     <Painel titulo="Crie sua conta para responder" aberto={aberto} aoFechar={aoFechar}>
       <div className="empilha">
-        <p>
-          O OrtoQuestões é gratuito — não cobramos nada para responder questões. Mas, para
-          responder, agora é preciso ter uma conta.
-        </p>
-        <p className="texto-2">
-          É rápido e continua sem custo: leva menos de um minuto para criar. Você pode continuar
-          navegando, montando sessões e vendo as questões livremente sem conta — só a resposta em
-          si exige login.
-        </p>
+        <p>Para responder, é preciso ter uma conta. Criar leva menos de um minuto e não pede cartão.</p>
+        <p className="texto-2">{FRASE_GRATIS}</p>
         <div className="linha linha--empilha-celular">
           <a className="botao botao--principal" href={href('/conta?modo=criar')}>
             Criar conta gratuita

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { EVENTO_DADOS } from '../estado/armazenamento'
-import { LIMITES_HABILITADOS, conviteLimiteJaVisto, lerBloqueioDiario, limparBloqueioDiario, marcarConviteLimiteVisto, type EstadoLimite } from '../estado/limiteDiario'
+import { LIMITES_HABILITADOS, conviteLimiteJaVisto, lerBloqueioDiario, limiteGratisConhecido, limparBloqueioDiario, marcarConviteLimiteVisto, type EstadoLimite } from '../estado/limiteDiario'
 import { formatarDuracao } from '../dados/tipos'
 import { chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
@@ -11,6 +11,14 @@ import { Icone } from './Icone'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CUSTO_POR_DIA, PLANO_MAIS_EM_CONTA, real } from '../dados/planos'
 import { registrarAssinante, usarAssinante } from '../conta/plano'
+
+/** "as 20 questões grátis" quando o número é conhecido (o painel pode mudá-lo); "as questões grátis" quando não é. */
+function asQuestoesGratis(limite: number | null | undefined): string {
+  return limite ? `as ${limite} questões grátis` : 'as questões grátis'
+}
+function suasQuestoesGratis(limite: number | null | undefined): string {
+  return limite ? `Suas ${limite} questões grátis` : 'Suas questões grátis'
+}
 
 export function AvisoLimite({ estado }: { estado: EstadoLimite | null }) {
   if (!estado?.permitido || estado.ilimitado || estado.restantes === null || estado.restantes > 3) return null
@@ -95,7 +103,7 @@ export function AvisoBloqueioDiario({ caminho, variante = 'faixa' }: { caminho: 
     <div className="conteudo aviso-bloqueio-topo__interno">
       <Icone nome="relogio" tamanho={16} />
       <span className="aviso-bloqueio-topo__texto">
-        Suas 20 questões grátis de hoje acabaram. Voltam em <time className="numerico" dateTime={liberaEm} aria-label={formatarDuracao(faltam)}>{tempo}</time>.
+        {suasQuestoesGratis(limiteGratisConhecido())} de hoje acabaram. Voltam em <time className="numerico" dateTime={liberaEm} aria-label={formatarDuracao(faltam)}>{tempo}</time>.
       </span>
       <a className="aviso-bloqueio-topo__cta" href={href('/assinatura')}>Continuar sem limite</a>
       <button type="button" className="aviso-bloqueio-topo__fechar" aria-label="Recolher aviso" title="Recolher aviso" onClick={() => definirRecolhidaAte(liberaEm)}><Icone nome="fechar" tamanho={14} /></button>
@@ -126,18 +134,20 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
       </Painel>
     )
   }
-  const consumidas = estado?.consumidas ?? 20
+  const limite = estado?.limite || limiteGratisConhecido()
+  const consumidas = estado?.consumidas ?? limite ?? 0
   const tempo = libera && faltam !== null ? { faltam, libera } : null
+  const titulo = `${suasQuestoesGratis(limite)} de hoje acabaram`
   if (telaLarga) {
     return (
-      <JanelaCentral aberta={aberto} aoFechar={aoFechar} rotulo="Suas 20 questões grátis de hoje acabaram" className="pw">
-        <OfertaLimite consumidas={consumidas} sequencia={estado?.sequencia ?? 0} tempo={tempo} aoFechar={aoFechar} larga />
+      <JanelaCentral aberta={aberto} aoFechar={aoFechar} rotulo={titulo} className="pw">
+        <OfertaLimite consumidas={consumidas} limite={limite} sequencia={estado?.sequencia ?? 0} tempo={tempo} aoFechar={aoFechar} larga />
       </JanelaCentral>
     )
   }
   return (
-    <Painel titulo="Suas 20 questões grátis de hoje acabaram" aberto={aberto} aoFechar={aoFechar}>
-      <OfertaLimite consumidas={consumidas} sequencia={estado?.sequencia ?? 0} tempo={tempo} aoFechar={aoFechar} />
+    <Painel titulo={titulo} aberto={aberto} aoFechar={aoFechar}>
+      <OfertaLimite consumidas={consumidas} limite={limite} sequencia={estado?.sequencia ?? 0} tempo={tempo} aoFechar={aoFechar} />
     </Painel>
   )
 }
@@ -145,8 +155,8 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
 const POR_MES_ANUAL = PLANO_MAIS_EM_CONTA.total / PLANO_MAIS_EM_CONTA.meses
 
 /** O convite do limite diário: direto, com o preço e o que o assinante ganha. */
-function OfertaLimite({ consumidas, sequencia, tempo, aoFechar, larga = false }: {
-  consumidas: number; sequencia: number; tempo: { faltam: number; libera: Date } | null; aoFechar: () => void; larga?: boolean
+function OfertaLimite({ consumidas, limite, sequencia, tempo, aoFechar, larga = false }: {
+  consumidas: number; limite: number | null; sequencia: number; tempo: { faltam: number; libera: Date } | null; aoFechar: () => void; larga?: boolean
 }) {
   const beneficios: Array<[string, string]> = [
     ['Questões sem limite', 'Resolva quantas quiser, todo dia.'],
@@ -157,10 +167,10 @@ function OfertaLimite({ consumidas, sequencia, tempo, aoFechar, larga = false }:
   return (
     <div className={'pw-conteudo' + (larga ? ' pw-conteudo--larga' : '')}>
       <section className="pw-lado">
-        <span className="pw-anel" aria-hidden="true"><b className="numerico">{consumidas}</b><small>de 20</small></span>
+        <span className="pw-anel" aria-hidden="true"><b className="numerico">{consumidas}</b>{limite ? <small>de {limite}</small> : null}</span>
         <p className="pw-lado__selo">Plano gratuito · hoje</p>
-        <h2 className="pw-lado__titulo">Você fez as 20 questões grátis de hoje.</h2>
-        <p className="pw-lado__texto">{sequencia > 0 ? <>São <b>{sequencia} {sequencia === 1 ? 'dia' : 'dias'} seguidos</b> de estudo. </> : null}Amanhã a cota volta inteira. Se quiser continuar agora, é só assinar.</p>
+        <h2 className="pw-lado__titulo">Você fez {asQuestoesGratis(limite)} de hoje.</h2>
+        <p className="pw-lado__texto">{sequencia > 0 ? <>São <b>{sequencia} {sequencia === 1 ? 'dia' : 'dias'} seguidos</b> de estudo. </> : null}A cota grátis se renova todo dia, à meia-noite. Se quiser continuar agora, é só assinar.</p>
         {tempo && <p className="pw-lado__relogio"><Icone nome="relogio" tamanho={16} /> Grátis de novo em <strong className="numerico">{formatarDuracao(tempo.faltam)}</strong></p>}
       </section>
 
@@ -173,7 +183,7 @@ function OfertaLimite({ consumidas, sequencia, tempo, aoFechar, larga = false }:
         </ul>
         <a className="botao botao--principal botao--grande pw-oferta__cta" href={href('/assinatura')}>Assinar por {real(POR_MES_ANUAL)}/mês</a>
         <p className="pw-oferta__garantia"><Icone nome="certo" tamanho={14} /> Garantia de 7 dias · cancele quando quiser · também há plano mensal</p>
-        <p className="pw-oferta__projeto">O OrtoQuestões é um projeto independente: a assinatura paga o site e mantém o gratuito com 20 questões por dia para todo mundo.</p>
+        <p className="pw-oferta__projeto">O OrtoQuestões é um projeto independente: a assinatura paga o site e mantém para todo mundo o gratuito, com um número limitado de questões por dia.</p>
         <button className="pw-oferta__depois" type="button" onClick={aoFechar}>Volto amanhã pelo gratuito</button>
       </section>
     </div>
@@ -203,7 +213,7 @@ export function DiaCumprido({ erradas = 0 }: { erradas?: number }) {
     <div className="dia-cumprido__texto">
       <p className="dia-cumprido__selo">Estudo gratuito de hoje</p>
       <h2>Dia cumprido. Bom trabalho!</h2>
-      <p>Você completou as 20 questões gratuitas de hoje e amanhã a cota volta inteira. Enquanto isso, comentários, revisões e desempenho seguem abertos{erradas > 0 ? ': vale reler os comentários das que você errou.' : '. E nesta sessão você não errou nenhuma.'}</p>
+      <p>Você completou {asQuestoesGratis(limiteGratisConhecido())} de hoje, e a cota se renova à meia-noite. Enquanto isso, comentários, revisões e desempenho seguem abertos{erradas > 0 ? ': vale reler os comentários das que você errou.' : '. E nesta sessão você não errou nenhuma.'}</p>
       <p className="dia-cumprido__rodape">
         <span><Icone nome="relogio" tamanho={14} /> Grátis de novo em {horas > 0 ? `${horas}h ${String(minutos).padStart(2, '0')}min` : `${minutos}min`}</span>
         <a href={href('/assinatura')}>Prefere continuar agora? Conheça a assinatura</a>
@@ -213,7 +223,7 @@ export function DiaCumprido({ erradas = 0 }: { erradas?: number }) {
 }
 
 /**
- * Abre o convite do limite uma vez por dia, sozinho, quando as 20 grátis de
+ * Abre o convite do limite uma vez por dia, sozinho, quando as questões grátis de
  * hoje já acabaram e a pessoa ainda não o viu (por exemplo, ao voltar para a
  * página inicial ou ao chegar no resumo).
  */
@@ -228,6 +238,7 @@ export function ConviteLimiteDoDia() {
     return () => window.clearTimeout(t)
   }, [sessao, assinante, liberaEm])
   if (!liberaEm) return null
-  const estado: EstadoLimite = { permitido: false, paywallAtivo: true, ilimitado: false, consumidas: 20, limite: 20, restantes: 0, liberaEm, sequencia: 0 }
+  const limite = limiteGratisConhecido() ?? 0
+  const estado: EstadoLimite = { permitido: false, paywallAtivo: true, ilimitado: false, consumidas: limite, limite, restantes: 0, liberaEm, sequencia: 0 }
   return <PainelLimite estado={estado} aberto={aberto} aoFechar={() => definirAberto(false)} />
 }
