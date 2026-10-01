@@ -418,7 +418,7 @@ export function DadosLocais() {
         </div>
       </section>
 
-      {!conta && <p className="aviso-ia">Crie uma conta gratuita para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
+      {!conta && <p className="aviso-ia">Crie uma conta gratuita (com um número limitado de questões por dia, renovado diariamente) para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
       {conta && !armazenamentoDisponivel() && (
         <div className="estado">
           <p className="estado__titulo">Este navegador está com o armazenamento bloqueado.</p>
