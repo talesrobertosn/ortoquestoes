@@ -6203,6 +6203,17 @@
   "geradoEm": "2026-09-30",
   "conferido": false
  },
+ "trauma-0783": {
+  "incorretas": {
+   "A": "**O 2b ainda possui disco incompleto.** Pode ter configuração articular própria, mas não atende à condição explícita de ausência de disco.",
+   "B": "**O 3a não é o subtipo plano.** Ele pertence ao grupo sem disco, porém sua conformação articular é elipsoide.",
+   "C": "**O 3b também não é plano.** Assim como o 3a, carece de disco, mas a superfície tem caráter elipsoide, e não a configuração plana solicitada."
+  },
+  "conceito": "**A classificação de Emura é morfológica.** Ela descreve a articulação acromioclavicular pelo disco intra-articular e pelo formato das superfícies, não pela gravidade de uma luxação. No tipo 1, o disco é completo e separa toda a cavidade; no tipo 2, é incompleto; no tipo 3, o disco está ausente. Essa primeira separação já elimina qualquer subtipo 2 quando o enunciado diz que não há disco.\n\n**O formato distingue os subtipos sem disco.** Emura subdividiu o tipo 3 em 3a, 3b e 3c conforme a conformação das superfícies articulares. Os subtipos 3a e 3b têm caráter elipsoide; no 3c, as superfícies são planas. A configuração elipsoide limita parte da rotação axial da articulação, o que pode influenciar o movimento escapular durante a elevação do braço.\n\n**Não confundir com Rockwood.** Rockwood I a VI classifica a lesão traumática acromioclavicular pela integridade ligamentar e pelo sentido e magnitude do deslocamento. Emura descreve a anatomia da articulação, inclusive em pessoas sem luxação. O número 3 em uma classificação não corresponde ao grau III da outra.",
+  "correta": "**Tipo 3c.** O algarismo 3 indica ausência de disco; a letra c identifica as superfícies articulares planas na classificação morfológica de Emura.",
+  "geradoEm": "2026-09-30",
+  "conferido": false
+ },
  "trauma-0784": {
   "incorretas": {
    "A": "**É frequente.** A rigidez do cotovelo é uma complicação comum, pelas duas fraturas e pela imobilização.",
@@ -8437,6 +8448,19 @@
   "geradoEm": "2026-09-30",
   "conferido": false
  },
+ "trauma-1005": {
+  "incorretas": {
+   "A": "**Inverte a rotação da flexão.** A rotação externa da tíbia é associada à extensão terminal; na flexão inicial, o joelho destrava com rotação interna tibial relativa.",
+   "B": "**Inverte a rotação da extensão.** O mecanismo de travamento envolve rotação externa da tíbia em relação ao fêmur, não interna.",
+   "C": "**Os valores são plausíveis e amplamente citados.** Cerca de 67 graus no balanço e 83 graus para subir escadas correspondem a referências clássicas de arco funcional; esta alternativa não pode ser descartada com segurança na redação atual.",
+   "E": "**Troca o côndilo do menor deslocamento.** O valor próximo de 2 mm foi relatado para o côndilo medial; o lateral recuou cerca de 21 mm na flexão com carga dos joelhos normais estudados."
+  },
+  "alerta": "O gabarito cadastrado é D, mas o estudo original de Dennis e colaboradores (J Biomech. 2005;38:241-253, doi:10.1016/j.jbiomech.2004.02.042) relata, em joelhos normais durante a flexão com carga, translação posterior média de 21,07 mm do côndilo LATERAL e 1,94 mm do MEDIAL. A alternativa D troca os côndilos. A alternativa C também reproduz valores funcionais amplamente citados, cerca de 67 graus na fase de balanço e 83 graus para subir escadas. Mantemos o gabarito informado, mas a questão não apresenta resposta única confiável como está redigida.",
+  "conceito": "**Três planos, movimento acoplado.** O joelho combina flexão e extensão no plano sagital, rotação axial no transverso e pequenos movimentos em varo e valgo no frontal. Durante a flexão com carga, os côndilos femorais não rolam para trás de modo idêntico: o lateral recua mais, enquanto o medial se desloca pouco. Esse padrão costuma ser descrito como pivô medial, mas varia com tarefa, carga e integridade ligamentar.\n\n**Os números de Dennis precisam estar do lado certo.** No estudo fluoroscópico de joelhos normais, a translação posterior média foi de cerca de 21 mm no côndilo lateral e 2 mm no medial. Após deficiência do ligamento cruzado anterior, o deslocamento medial aumentou. A análise do eixo helicoidal descreve a mudança do eixo instantâneo do movimento, mas não autoriza inverter os valores dos dois côndilos.\n\n**Rotação e arco funcional.** Na extensão terminal, a tíbia roda externamente em relação ao fêmur no mecanismo de travamento; na flexão inicial, ocorre o movimento inverso para destravar. Valores clássicos de arco funcional citam aproximadamente 67 graus de flexão no balanço da marcha e 83 graus para subir escadas, embora a necessidade real varie com a pessoa e a tarefa. Assim, a direção da rotação e o lado do maior recuo condilar são mais úteis que decorar um número solto.",
+  "correta": "**D é a chave registrada, mas contém inversão.** O valor próximo de 21 mm aparece no estudo de Dennis para o côndilo lateral, não para o medial. Consulte o alerta antes de usar esta questão como parâmetro de desempenho.",
+  "geradoEm": "2026-09-30",
+  "conferido": false
+ },
  "trauma-1006": {
   "incorretas": {
    "A": "**Radiografia normal.** O estágio 1 só aparece na ressonância ou na cintilografia.",
@@ -8483,6 +8507,18 @@
   },
   "conceito": "**A inflamação após o trauma articular.** Um trauma do joelho (fratura intra-articular, lesão ligamentar, contusão da cartilagem) desencadeia uma resposta **inflamatória** no líquido sinovial e na cartilagem. As citocinas **pró-inflamatórias** estimulam condrócitos e sinoviócitos a produzir **metaloproteinases** (MMP-1, MMP-3, MMP-13) e **agrecanases** (ADAMTS), que degradam o colágeno tipo II e o agrecano da matriz. É o início da **artrose pós-traumática**, que pode aparecer anos depois mesmo com tratamento adequado.\n\n**A cronologia das citocinas.** A **interleucina-1 beta** (IL-1β) é a citocina liberada **mais precocemente** e em **maior nível** no **primeiro dia** após o trauma articular. Ela é o principal gatilho da cascata **catabólica** da cartilagem. O **TNF-alfa** também sobe cedo. A **IL-6** aumenta um pouco depois e se mantém; é o marcador sistêmico de gravidade no politrauma. A **IL-10** é **anti-inflamatória**. A **IL-12** está ligada à imunidade celular. As **quimiocinas** (como CCL-22) recrutam células inflamatórias.\n\n**Por que isso interessa.** A janela logo após o trauma é vista como uma oportunidade de **intervenção** para reduzir a artrose pós-traumática: antagonistas do receptor da IL-1 (como a anakinra intra-articular), aspiração da hemartrose, e outras terapias estão em estudo. O **sangue** intra-articular também é tóxico para a cartilagem.\n\n**Na clínica.** A artrose pós-traumática responde por uma parte importante das artroses do joelho e do tornozelo em jovens. Restaurar a **congruência** articular, a **estabilidade** (ligamentos, meniscos) e o **alinhamento** reduz o risco, mas não elimina o dano biológico inicial.\n\n**Na prova:** citocina em **maior nível no primeiro dia** após o trauma articular = **IL-1 beta**; IL-6 é o marcador de gravidade sistêmica no politrauma.",
   "correta": "**Interleucina 1 beta.** É a citocina liberada mais precocemente e em maior nível no primeiro dia, disparando a cascata catabólica da cartilagem.",
+  "geradoEm": "2026-09-30",
+  "conferido": false
+ },
+ "trauma-1010": {
+  "incorretas": {
+   "A": "**Na mão, a referência geral são os interósseos.** O compartimento tenar pode e deve ser medido se houver suspeita localizada nele, mas não é o sítio de rotina indicado pela tabela cobrada.",
+   "B": "**Na perna, a referência é o anterior.** A loja lateral deve ser avaliada se estiver sob suspeita, porém não substitui a anterior como ponto habitual de monitorização.",
+   "C": "**Na coxa, a referência é o anterior.** A loja posterior também pode adoecer e requerer medida dirigida, mas não é a recomendação geral apresentada na questão.",
+   "E": "**No antebraço, a referência é o flexor ou volar.** Mede-se a loja extensora quando o quadro sugere comprometimento dorsal, não como primeiro sítio universal."
+  },
+  "conceito": "**O cateter mede um compartimento, não um membro inteiro.** Na síndrome compartimental, a pressão deve ser aferida dentro da loja sob suspeita e, quando há fratura, perto da área de maior comprometimento. Uma leitura normal em compartimento não examinado não exclui pressão elevada em outro. A medida complementa a avaliação clínica, sobretudo quando a pessoa não consegue relatar dor ou o exame é pouco confiável.\n\n**Locais de referência.** Recomendações de monitorização usam a loja anterior como referência na perna e na coxa, a flexora ou volar no antebraço e os interósseos na mão e no pé. No pé com lesão do retropé, o compartimento calcâneo também merece atenção. Esses locais são pontos de partida, não uma proibição de medir outra loja clinicamente suspeita.\n\n**Interpretar perfusão, não só pressão absoluta.** A pressão de perfusão diferencial é a pressão arterial diastólica menos a pressão compartimental. Delta P inferior a aproximadamente 30 mmHg, especialmente se persistente e acompanhado de quadro compatível, sustenta a suspeita de isquemia e a necessidade de descompressão urgente. Não se deve atrasar fasciotomia evidente aguardando uma medida isolada, nem operar apenas por um número sem contexto.",
+  "correta": "**Pé, compartimentos interósseos.** Eles são o local de referência para monitorização no pé; em lesões do retropé, deve-se considerar também o compartimento calcâneo.",
   "geradoEm": "2026-09-30",
   "conferido": false
  },
