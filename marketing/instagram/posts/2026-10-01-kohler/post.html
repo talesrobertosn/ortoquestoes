@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Köhler: questão ilustrada e stories Orto Questões</title>
+<style>
+@font-face{font-family:Jakarta;src:url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2');font-weight:200 800}
+@font-face{font-family:Inter;src:url(../../fontes/inter-latin-wght-normal.woff2) format('woff2');font-weight:100 900}
+:root{--verde:#14655E;--tinta:#0B3A35;--ouro:#F4CF7C;--creme:#FBF6EA;--texto:#12181A;--claro:#E5F1ED}
+*{box-sizing:border-box}body{margin:0;background:#393939;font-family:Inter,Arial,sans-serif}section{position:relative;overflow:hidden;margin:0 0 40px;width:1080px}
+.feed{height:1350px}.story{height:1920px}.escuro{color:#fff;background:radial-gradient(circle at 1px 1px,rgba(255,255,255,.065) 1.4px,transparent 1.5px) 0 0/34px 34px,linear-gradient(155deg,#061F1C,#0B3A35 57%,#14655E)}.claro{background:var(--creme);color:var(--tinta)}
+.pad{padding:78px 80px}.marca{display:flex;gap:16px;align-items:center;font:500 36px Jakarta;letter-spacing:-.03em;white-space:nowrap}.marca b{font-weight:800}.marca svg{height:52px;width:52px;flex:none}
+.badge{display:inline-block;padding:10px 22px;border:2px solid var(--ouro);border-radius:99px;color:var(--ouro);font:800 22px Jakarta;letter-spacing:.1em;text-transform:uppercase}.claro .badge{color:var(--verde);border-color:rgba(20,101,94,.35)}
+.top{display:flex;justify-content:space-between;align-items:center}.meta{font:800 25px Jakarta;letter-spacing:.11em;text-transform:uppercase;color:var(--ouro)}.claro .meta{color:var(--verde)}
+h1,h2,p{margin:0}h1,h2{font-family:Jakarta;letter-spacing:-.035em}h1{font-size:67px;line-height:1.08}h2{font-size:69px;line-height:1.08}.gold{color:var(--ouro)}.green{color:var(--verde)}
+.footer{position:absolute;left:80px;right:80px;bottom:63px;display:flex;justify-content:space-between;align-items:center;font:700 24px Inter;color:inherit}.dots{display:flex;gap:10px}.dots i{height:12px;width:12px;border-radius:50%;background:currentColor;opacity:.32}.dots i.on{opacity:1;width:36px;border-radius:10px}
+.xray{background:#080D0D;border:2px solid rgba(244,207,124,.5);border-radius:30px;overflow:hidden;display:grid;place-items:center}.xray img{display:block;width:100%;height:100%;object-fit:contain;image-rendering:auto}.xray small{position:absolute;bottom:13px;right:18px;color:#fff;background:rgba(0,0,0,.68);padding:7px 12px;border-radius:10px;font:600 17px Inter}
+.quiz h1{margin:75px 0 16px}.quiz .prompt{font-size:29px;line-height:1.35;color:rgba(255,255,255,.76)}.quiz .xray{position:relative;width:920px;height:485px;margin:28px 0 28px}.options{display:grid;grid-template-columns:1fr 1fr;gap:16px}.option{display:flex;align-items:center;gap:16px;border-radius:20px;background:#fff;color:var(--texto);padding:20px 22px;font:750 30px Jakarta}.option b{display:grid;place-items:center;width:54px;height:54px;flex:none;border-radius:15px;background:#E8EEEB;color:var(--tinta);font:800 27px Jakarta}.quiz .instruction{margin-top:30px;font-size:27px;color:rgba(255,255,255,.83)}
+.answer{padding:78px 80px}.answer h2{margin-top:50px;max-width:900px}.answer h2 .green{background:linear-gradient(transparent 66%,var(--ouro) 66%,var(--ouro) 91%,transparent 91%)}.answer .lede{margin-top:20px;font-size:32px;line-height:1.38;color:#405954;max-width:860px}.answer .xray{position:relative;width:590px;height:340px;margin:24px auto 22px;border-color:#C9952F}.answer .verdict{background:var(--tinta);color:#fff;border-radius:28px;padding:20px 32px;font:700 30px/1.35 Jakarta}.answer .verdict b{color:var(--ouro)}.answer .distractors{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px}.answer .distractors div{padding:12px 20px;border:2px solid #D8E6E0;border-radius:18px;font:500 24px/1.28 Inter}.answer .distractors strong{font-weight:800;color:var(--tinta)}
+.story-one h1{font-size:85px;margin:142px 0 30px}.story-one .sub{font-size:36px;line-height:1.38;color:rgba(255,255,255,.82);max-width:860px}.phone{width:770px;margin:76px auto 0;padding:35px;background:#fff;color:var(--texto);border-radius:52px;box-shadow:0 35px 85px rgba(0,0,0,.35);transform:rotate(-3deg)}.phone .bar{height:16px;width:150px;margin:0 auto 32px;background:#D3D8D6;border-radius:20px}.phone .label{font:800 21px Jakarta;color:var(--verde);letter-spacing:.09em}.phone h3{margin:15px 0 26px;font:800 38px/1.17 Jakarta}.phone .choice{padding:18px 20px;margin:12px 0;border:2px solid #DEE9E4;border-radius:17px;font:700 27px Jakarta}.phone .choice b{color:var(--verde);margin-right:18px}.phone .comment{margin-top:22px;padding:20px;border-radius:18px;background:#E4F2E9;color:var(--tinta);font:700 25px/1.3 Inter}.story-one .note{position:absolute;right:110px;top:1450px;font:600 19px Inter;color:rgba(255,255,255,.62)}.story-one .benefit{position:absolute;left:80px;right:80px;bottom:285px;font:700 34px/1.3 Jakarta}.story-one .benefit b{color:var(--ouro)}
+.story-two h1{font-size:85px;margin-top:150px}.story-two .sub{font:500 37px/1.4 Inter;color:#45615B;margin-top:34px;max-width:855px}.flow{margin-top:98px;display:grid;gap:27px}.step{display:grid;grid-template-columns:100px 1fr;gap:24px;align-items:center;padding:31px;border-radius:28px;background:#fff;border:2px solid #DDEBE5;box-shadow:0 12px 38px rgba(11,58,53,.06)}.step .num{width:94px;height:94px;border-radius:22px;background:var(--verde);color:var(--ouro);display:grid;place-items:center;font:800 48px Jakarta}.step strong{display:block;font:800 36px Jakarta}.step span{display:block;margin-top:7px;font:500 27px/1.3 Inter;color:#54706A}.split{margin-top:55px;border-radius:30px;padding:33px;background:var(--tinta);color:#fff}.split strong{font:800 37px Jakarta}.split p{margin-top:12px;font:500 29px/1.38 Inter;color:rgba(255,255,255,.85)}.split b{color:var(--ouro)}.cta{position:absolute;left:80px;right:80px;bottom:270px;padding:32px 40px;border-radius:25px;background:var(--ouro);color:var(--tinta);font:800 34px Jakarta;text-align:center}
+</style></head><body>
+<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><circle cx="9" cy="10" r="2"/><rect x="13" y="8.4" width="11" height="3.2" rx="1.6"/></g><g fill="#F4CF7C"><circle cx="9" cy="16" r="2.6"/><rect x="13" y="14.4" width="12" height="3.2" rx="1.6"/></g><g fill="#FFFFFF" opacity=".55"><circle cx="9" cy="22" r="2"/><rect x="13" y="20.4" width="8" height="3.2" rx="1.6"/></g></svg></template>
+
+<section class="feed escuro pad quiz" id="feed-01-pergunta">
+  <div class="top"><div class="marca"></div><span class="badge">Questão do acervo · TEOT/TARO</span></div>
+  <h1>Antes do epônimo,<br><span class="gold">ache o osso.</span></h1>
+  <p class="prompt">A osteocondrose mostrada na radiografia é a doença de quem?</p>
+  <div class="xray"><img src="../../../../public/imagens/pediatria/pediatria-0102-1.jpeg" alt="Radiografia dos pés da questão pediatria-0102"><small>Imagem da questão original</small></div>
+  <div class="options"><div class="option"><b>A</b>Iselin</div><div class="option"><b>B</b>Köhler</div><div class="option"><b>C</b>Panner</div><div class="option"><b>D</b>Freiberg</div></div>
+  <p class="instruction">Escolha uma letra antes de arrastar.</p>
+  <div class="footer"><span class="dots"><i class="on"></i><i></i></span><span>arraste para entender</span></div>
+</section>
+
+<section class="feed claro answer" id="feed-02-resposta">
+  <div class="top"><div class="marca"></div><span class="badge">A pista estava no osso</span></div>
+  <h2>É <span class="green">Köhler.</span></h2>
+  <p class="lede">O navicular do pé infantil fica <b>achatado, denso e irregular</b>. A resposta vem da anatomia, não da decoreba.</p>
+  <div class="xray"><img src="../../../../public/imagens/pediatria/pediatria-0102-1.jpeg" alt="Radiografia original dos pés"><small>pediatria-0102</small></div>
+  <div class="verdict"><b>B · Köhler</b> é a osteocondrose do navicular tarsal, geralmente autolimitada.</div>
+  <div class="distractors"><div><strong>A · Iselin</strong><br>Base do 5º metatarso.</div><div><strong>C · Panner</strong><br>Capítulo do úmero, no cotovelo.</div><div><strong>D · Freiberg</strong><br>Cabeça do 2º metatarso.</div><div><strong>Guarde isto</strong><br>Na imagem, localize o osso antes de escolher o nome.</div></div>
+  <div class="footer"><span class="dots"><i></i><i class="on"></i></span><span>Mais questões: ortoquestoes.com.br</span></div>
+</section>
+
+<section class="story escuro pad story-one" id="story-01-treinar">
+  <div class="top"><div class="marca"></div><span class="badge">Ortopedia em questões</span></div>
+  <h1>Você marca<br>uma letra.<br><span class="gold">Entende as quatro.</span></h1>
+  <p class="sub">No Orto Questões, treine questões de provas anteriores por tema, prova e ano. Depois da resposta, leia o motivo da certa e das erradas.</p>
+  <div class="phone"><div class="bar"></div><div class="label">QUESTÃO DE ORTOPEDIA</div><h3>Qual estrutura você identifica primeiro?</h3><div class="choice"><b>A</b> Uma alternativa</div><div class="choice"><b>B</b> Outra alternativa</div><div class="choice"><b>C</b> Sua escolha</div><div class="comment">Comentário: por que está certa e por que as outras não estão.</div></div>
+  <p class="note">Tela ilustrativa</p>
+  <p class="benefit">Crie sua conta grátis e responda <b>até 20 questões por dia.</b> As próximas liberam no dia seguinte.</p>
+  <div class="footer"><span>ortoquestoes.com.br</span><span>1 / 2</span></div>
+</section>
+
+<section class="story claro pad story-two" id="story-02-revisar">
+  <div class="top"><div class="marca"></div><span class="badge">Seu estudo continua</span></div>
+  <h1>Errou?<br><span class="green">Ela volta.</span></h1>
+  <p class="sub">O site guarda suas respostas e organiza a revisão. Você vê onde erra mais, acompanha sua evolução e volta ao que precisa fixar.</p>
+  <div class="flow"><div class="step"><div class="num">1</div><div><strong>Treine</strong><span>Escolha um tema ou faça uma sessão rápida.</span></div></div><div class="step"><div class="num">2</div><div><strong>Entenda</strong><span>Leia o comentário após responder.</span></div></div><div class="step"><div class="num">3</div><div><strong>Revise</strong><span>Erros e dúvidas voltam mais cedo.</span></div></div></div>
+  <div class="split"><strong>Quer estudar com direção?</strong><p>O plano acrescenta <b>Cronograma até a prova</b>, Simulado Nacional e questões sem limite diário.</p></div>
+  <div class="cta">Comece no gratuito · ortoquestoes.com.br</div>
+  <div class="footer"><span>@ortoquestoes</span><span>2 / 2</span></div>
+</section>
+<script>const svg=document.getElementById('simbolo').innerHTML;document.querySelectorAll('.marca').forEach(el=>{el.innerHTML=svg+'<div><b>Orto</b> <span>Questões</span></div>'})</script>
+</body></html>
