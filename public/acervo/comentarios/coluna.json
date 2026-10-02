@@ -2607,14 +2607,17 @@
   "conferido": false
  },
  "coluna-0230": {
-  "conceito": "### Tuberculose osteoarticular\n- **Frequência:** parte das formas **extrapulmonares**. A ==coluna== responde por ~**metade** dos casos osteoarticulares (mal de **Pott**), seguida de **quadril** e **joelho**.\n- **Na vértebra:** o foco inicial é a ==porção anterior do corpo== (paradiscal ou central), território das **artérias segmentares**.\n\n### Como se espalha\n- **Por baixo do ligamento longitudinal anterior**, até as vértebras vizinhas, com lesões em **salto** às vezes.\n- ==Poupa o disco== por mais tempo: o disco é avascular e o bacilo não tem enzimas proteolíticas como as bactérias piogênicas.\n- **Abscessos frios** grandes: no **psoas**, que podem descer até a coxa, e paravertebrais.\n- **Destruição anterior:** **cifose angular (giba)**, com risco de **paraplegia de Pott**, precoce (abscesso, sequestro) ou tardia (cifose).\n\n### Tuberculose × piogênica\n| | Tuberculose | Piogênica |\n|---|---|---|\n| Disco | preservado por mais tempo | destruído cedo |\n| Evolução | lenta, insidiosa | mais aguda |\n| Abscessos | grandes, frios, calcificados | menores |\n| Vértebras | várias, com salto | geralmente 2 contíguas |\n| Deformidade | cifose angular | menos |\n\n> **Na prova:** tuberculose óssea mais prevalente = ==elementos anteriores do corpo vertebral==.",
-  "correta": "**Elementos anteriores do corpo vertebral.**",
   "incorretas": {
-   "A": "**Bacia.**\n- Possível (sacroilíaca), mas muito menos frequente.",
-   "B": "**Fêmur.**\n- Pelo **quadril**, o segundo sítio.",
-   "D": "**Elementos posteriores.**\n- Acometidos em uma minoria."
+   "A": "A pelve pode ser acometida, principalmente na articulação sacroilíaca, mas com frequência muito menor que a coluna.",
+   "B": "O fêmur entra no quadro pela tuberculose do quadril, que é o segundo sítio mais comum, atrás da coluna.",
+   "D": "Os elementos posteriores da vértebra são acometidos numa minoria dos casos. O foco típico é anterior."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Quando a tuberculose sai do pulmão e vai para os ossos e articulações, a coluna é o destino preferido: responde por cerca de metade dos casos osteoarticulares, à frente do quadril e do joelho. Essa é a doença que Percivall Pott descreveu no século XVIII, por isso o nome mal de Pott.\n\nE dentro da vértebra, onde começa? Na **parte anterior do corpo vertebral**, perto do disco. É ali que chegam as artérias segmentares que irrigam a vértebra, e o bacilo chega pelo sangue. Os elementos posteriores (lâminas, processos espinhosos) são acometidos numa minoria.\n\nO comportamento depois disso é bem diferente da infecção por bactérias comuns. O bacilo da tuberculose não tem as enzimas que dissolvem o disco, então o disco é **poupado por bastante tempo**. Em vez de atravessá-lo, a infecção desliza por baixo do ligamento longitudinal anterior e alcança as vértebras vizinhas, às vezes pulando níveis. Forma grandes **abscessos frios**, chamados assim porque não têm o calor e a vermelhidão de um abscesso comum; o mais famoso desce dentro do músculo psoas e pode aparecer na virilha ou na coxa.\n\nA destruição da frente de várias vértebras faz a coluna desabar para a frente, formando uma corcunda angular, a **giba**. E a paraplegia de Pott pode vir cedo, pelo abscesso ou por pedaços de osso comprimindo a medula, ou anos depois, pela própria deformidade. A região preferida é a transição toracolombar.",
+  "correta": "Elementos anteriores do corpo vertebral. A coluna é o principal sítio da tuberculose óssea, e a infecção começa na porção anterior do corpo vertebral, irrigada pelas artérias segmentares.",
+  "referencias": [
+   "Garg RK, Somvanshi DS. Spinal tuberculosis: a review. J Spinal Cord Med. 2011;34(5):440-454."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0232": {
@@ -2662,61 +2665,73 @@
   "conferido": false
  },
  "coluna-0237": {
-  "conceito": "### Sinal de Hoffmann\n- **Manobra:** segurar o **dedo médio** e dar um **piparote** (resvalar) na **unha** / falange distal.\n- **Positivo:** ==flexão do polegar e do indicador==.\n- **Significado:** liberação de **neurônio motor superior**, com **mielopatia** cervical, sobretudo de **C5-C6 para cima** (o arco é C8-T1).\n\n### Sinais piramidais parecidos\n| Sinal | Onde | Resposta |\n|---|---|---|\n| **Hoffmann** | dedo médio | flexão do polegar e do indicador |\n| **Trömner** | percussão da polpa do médio | flexão dos dedos |\n| **Babinski** | planta do pé | extensão do hálux |\n| **Oppenheim** | crista da tíbia | extensão do hálux |\n| **Chaddock** | borda lateral do pé | extensão do hálux |\n\n### Não confundir\n- **L'Hermitte:** choque elétrico **referido** ao fletir o pescoço.\n- **Spurling:** dor **radicular** com extensão, rotação e compressão.\n\n> **Na prova:** piparote na unha do dedo médio = ==Hoffmann==.",
-  "correta": "**Sinal de Hoffmann.**",
   "incorretas": {
-   "B": "**L'Hermitte.**\n- Choque elétrico ao fletir o pescoço.",
-   "C": "**Spurling.**\n- Dor radicular à compressão com extensão e rotação.",
-   "D": "**Oppenheim.**\n- Equivalente do Babinski na **crista da tíbia**."
+   "B": "Lhermitte é a sensação de choque elétrico descendo pela coluna ao fletir o pescoço, típica da esclerose múltipla e da mielopatia.",
+   "C": "Spurling combina extensão, inclinação e rotação do pescoço com compressão, para reproduzir a dor radicular no braço.",
+   "D": "Oppenheim é pesquisado na perna, deslizando o dedo pela crista da tíbia; o hálux sobe como no Babinski."
   },
+  "conceito": "O nome é Hoffmann, e a manobra é tão simples que dá para fazer em qualquer consulta, em segundos. Segura-se o dedo médio do paciente, relaxado, e dá-se um peteleco na unha, resvalando a ponta do dedo para baixo e soltando. Se o polegar e o indicador fletem sozinhos, como se fossem fazer uma pinça, o sinal é positivo.\n\nO significado é o que interessa. Normalmente o cérebro e a medula mantêm um freio sobre esse reflexo. Quando a medula cervical está comprimida, por uma hérnia central, por osteófitos ou por um ligamento ossificado, o freio se perde e o reflexo aparece. É um sinal de liberação piramidal, de neurônio motor superior, que faz pensar em **mielopatia cervical**, especialmente quando a compressão está de C5-C6 para cima. Uma pequena parte das pessoas normais o tem, então ele se interpreta junto com o resto do exame.\n\nOs outros nomes da questão também são da semiologia neurológica, mas fazem coisas diferentes. O Lhermitte é o choque elétrico que desce pela coluna quando o paciente flete o pescoço. O Spurling é a manobra que fecha o forame cervical para reproduzir a dor de uma raiz no braço. O Oppenheim é um parente do Babinski: em vez de riscar a sola do pé, desliza-se o dedo com força pela crista da tíbia, de cima para baixo, e o hálux sobe se houver lesão piramidal.",
+  "correta": "Sinal de Hoffmann. O peteleco na unha do dedo médio provoca a flexão do polegar e do indicador quando a via piramidal está liberada, como na mielopatia cervical.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 4.1"
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0238": {
-  "conceito": "### Flexoextensão cervical por segmento\n- **Occipito-C1:** a maior parcela isolada (o movimento do \"sim\").\n- **Subaxial:** o pico está em ==C5-C6==, com valores próximos em ==C4-C5== (e C6-C7 um pouco menor).\n- **C2-C3:** relativamente **rígido**.\n- **C6-C7:** menor amplitude, pela transição **cervicotorácica**.\n\n### Consequência clínica\n**Mais movimento resulta em mais desgaste:**\n- **C5-C6** é o nível mais acometido por **espondilose**, **hérnia** e **mielopatia**, seguido de **C6-C7** e C4-C5;\n- são também os níveis mais **operados** (ACDF, artroplastia).\n\n### Rotação\nConcentrada em **C1-C2** (~50%).\n\n> **Na prova:** flexoextensão subaxial máxima = ==C4-C5 e C5-C6==.",
-  "correta": "**C4-C5 e C5-C6.**",
   "incorretas": {
-   "A": "**C2-C3 e C3-C4.**\n- C2-C3 é dos menos móveis.",
-   "B": "**C3-C4 e C4-C5.**\n- O par de maior amplitude está um nível abaixo.",
-   "D": "**C5-C6 e C6-C7.**\n- C6-C7 tem amplitude menor (transição cervicotorácica)."
+   "A": "C2-C3 está entre os segmentos menos móveis da coluna cervical. O par de maior movimento fica mais abaixo.",
+   "B": "Inclui C4-C5, mas C3-C4 move menos que C5-C6. O par de maior amplitude está um nível abaixo.",
+   "D": "Inclui C5-C6, mas C6-C7 tem menor amplitude, por estar perto da transição com a coluna torácica, mais rígida."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Se você fizer \"sim\" com a cabeça bem devagar, prestando atenção, vai notar que o movimento começa lá em cima, logo abaixo do crânio. A articulação entre o occipital e o atlas tem superfícies em forma de taça e é a maior responsável pelo aceno da cabeça. Mas o pescoço também se dobra e se estende ao longo de todo o seu comprimento, e aí a pergunta é qual parte da coluna cervical baixa trabalha mais.\n\nA resposta são os segmentos **C4-C5** e **C5-C6**, com o pico em C5-C6. O C2-C3 é relativamente rígido, e o C6-C7, já perto da transição para a coluna torácica, que é presa às costelas, se move menos.\n\nEssa distribuição tem uma consequência que você vê todos os dias nas ressonâncias: os segmentos que mais se movem são os que mais se desgastam. C5-C6 é o campeão de espondilose, hérnia de disco e mielopatia, seguido de C6-C7 e C4-C5. Também é o nível mais operado. E quando um desses segmentos é fundido, o movimento que ele fazia passa para os vizinhos, que tendem a degenerar mais cedo; é a doença do nível adjacente, uma das razões para existir a prótese de disco cervical.\n\nSó para não misturar: a rotação, o \"não\", é outra história, concentrada no par C1-C2, que faz cerca de metade de toda a rotação do pescoço.",
+  "correta": "C4-C5 e C5-C6. São os segmentos subaxiais com maior amplitude de flexão e extensão, com o máximo em C5-C6.",
+  "referencias": [
+   "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0239": {
-  "conceito": "### Prognóstico na SCIWORA\n- O fator **mais forte** é o ==estado neurológico inicial==:\n  - lesão **completa** na admissão: mau prognóstico;\n  - lesão **incompleta** (sobretudo leve): boa chance de recuperação total ou quase.\n- É a mesma regra da lesão medular em geral: **completa × incompleta** manda.\n\n### A RM ajuda a refinar\n| Achado na RM | Prognóstico |\n|---|---|\n| medula **normal** | excelente |\n| **edema** | bom a intermediário |\n| **hemorragia** / transecção | ruim |\n\nA RM é **complementar**, mas o exame **clínico** inicial continua sendo o preditor principal.\n\n### Idade e mecanismo\n- Crianças **menores** (abaixo de 8 anos) têm lesões **mais altas e mais graves**, o que influencia indiretamente.\n- O **mecanismo** explica a lesão, mas não prediz tanto a recuperação.\n\n> **Na prova:** prognóstico da SCIWORA = ==estado neurológico inicial==.",
-  "correta": "**Estado neurológico inicial.**",
   "incorretas": {
-   "A": "**Idade.**\n- Influencia o tipo e o nível da lesão, não é o principal preditor.",
-   "B": "**Mecanismo.**\n- Explica a lesão, não a recuperação.",
-   "D": "**Alterações na RM.**\n- Têm valor prognóstico, mas complementar."
+   "A": "A idade influencia o tipo e a altura da lesão, mas não é o principal preditor da recuperação.",
+   "B": "O mecanismo explica como a medula foi lesada, mas pouco diz sobre quanto ela vai se recuperar.",
+   "D": "A ressonância tem valor prognóstico importante, mas complementar. O exame neurológico inicial continua sendo o fator principal."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A família de uma criança com SCIWORA, a lesão medular sem alteração na radiografia, quer saber uma coisa: ela vai voltar a andar? A melhor resposta vem do exame neurológico feito logo na chegada.\n\nIsso vale para toda lesão medular, e não só para a da criança. O que mais prediz a recuperação é o **estado neurológico inicial**: se havia alguma função preservada abaixo da lesão (lesão incompleta) ou nenhuma (lesão completa). Crianças que chegam com déficit leve e incompleto costumam se recuperar totalmente ou quase. As que chegam com lesão completa têm prognóstico muito reservado.\n\nA ressonância ajuda a refinar essa previsão. Uma medula sem alteração de sinal costuma ir bem; edema isolado tem prognóstico intermediário; sangramento dentro da medula ou transecção indicam lesão grave. Mas a ressonância completa o exame clínico, não o substitui; a banca considera o estado neurológico inicial o fator determinante.\n\nA idade e o mecanismo explicam por que a lesão aconteceu e onde, e as crianças menores tendem a ter lesões mais altas e mais graves. Ainda assim, entre duas crianças da mesma idade, o que separa quem vai melhorar de quem não vai é o quadro neurológico de entrada.",
+  "correta": "Ao estado neurológico inicial. Lesões incompletas, sobretudo leves, na admissão costumam ter boa recuperação; lesões completas têm prognóstico ruim.",
+  "referencias": [
+   "Pang D. Spinal cord injury without radiographic abnormality in children, 2 decades later. Neurosurgery. 2004;55(6):1325-1343."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0240": {
-  "conceito": "### Marcadores de maturidade na escoliose\n**Sequência aproximada:**\n1. **Pico de velocidade de crescimento** (PHV). É o período de ==maior risco de progressão==.\n2. **Fechamento da cartilagem trirradiada** do acetábulo: ocorre ==por volta do pico== de crescimento (logo depois).\n3. **Menarca:** em geral ~1 ano após o pico, já na **desaceleração**. Costuma coincidir com **Risser 1**.\n4. **Risser 1 a 4:** ossificação da apófise ilíaca, de lateral para medial.\n5. **Risser 5:** fusão da apófise ao ílio, com fim do crescimento.\n\n### Por que a trirradiada importa\n**Trirradiada aberta** significa crescimento importante pela frente e alto risco. Curvas acima de ~30° com trirradiada aberta têm risco muito alto de chegar a nível cirúrgico.\n\n### Sanders\nA **classificação de Sanders** (radiografia da **mão**: falanges e metacarpos) é **mais precisa** para localizar o pico. O **Sanders 3** corresponde ao pico de crescimento.\n\n> **Na prova:** fechamento da trirradiada = ==pico da velocidade de crescimento==.",
-  "correta": "**Pico da velocidade de crescimento.**",
   "incorretas": {
-   "A": "**Início da adolescência.**\n- Anterior; a trirradiada ainda está aberta.",
-   "B": "**Menarca.**\n- Vem **depois** do pico (Risser ~1).",
-   "C": "**Final do crescimento da coluna.**\n- Muito depois: Risser 4-5, fusão das apófises anelares."
+   "A": "No início da adolescência a cartilagem trirradiada ainda está bem aberta; o fechamento vem mais tarde, junto com o pico de crescimento.",
+   "B": "A menarca costuma vir cerca de um ano depois do pico, já na fase de desaceleração, e coincide mais com o Risser 1.",
+   "C": "O fim do crescimento da coluna acontece muito depois, quando a apófise ilíaca se funde (Risser 4 e 5)."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na escoliose idiopática do adolescente, o maior perigo é o estirão. É durante o pico de velocidade de crescimento, aquele período de um ou dois anos em que o adolescente cresce muitos centímetros, que uma curva moderada pode virar cirúrgica. Por isso o ortopedista precisa saber em que ponto da adolescência o paciente está, e usa marcadores de maturidade para isso.\n\nUm deles fica no quadril. O acetábulo, a cavidade onde se encaixa a cabeça do fêmur, é formado por três ossos (ílio, ísquio e púbis) unidos por uma cartilagem em forma de Y, a **cartilagem trirradiada**. Ela se fecha por volta do **pico da velocidade de crescimento**. Enquanto está aberta, há muito crescimento pela frente e o risco de progressão é alto; curvas acima de uns 30 graus com trirradiada aberta têm grande chance de chegar à faixa cirúrgica.\n\nA ordem dos acontecimentos nas meninas ajuda a fixar: primeiro o pico de crescimento, com o fechamento da trirradiada logo ao redor dele; cerca de um ano depois vem a menarca, quando o crescimento já desacelera, em geral junto com o Risser 1 (o início da ossificação da apófise da crista ilíaca); e só no fim, com o Risser 4 e 5, a coluna para de crescer.\n\nHoje muitos serviços usam também a classificação de Sanders, feita na radiografia da mão, porque ela localiza o pico com mais precisão. O estágio 3 de Sanders corresponde ao pico.",
+  "correta": "Ao pico da velocidade do crescimento. A cartilagem trirradiada do acetábulo se fecha por volta do estirão, o período de maior risco de progressão da curva.",
+  "referencias": [
+   "Sanders JO, Khoury JG, Kishan S et al. Predicting scoliosis progression from skeletal maturity: a simplified classification during adolescence. J Bone Joint Surg Am. 2008;90(3):540-553."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0241": {
-  "conceito": "### Mielopatia cervical: quais sinais vêm primeiro\nÉ uma síndrome de **neurônio motor superior**. Os sinais de **liberação piramidal** aparecem **antes** da fraqueza:\n- ==hiper-reflexia== abaixo do nível;\n- ==clônus== (aquileu, patelar);\n- **Hoffmann**;\n- perda de **destreza** fina da mão (abotoar, escrever), \"mão mielopática\".\n\n**Mais tarde:**\n- **marcha** atáxica de base alargada, **desequilíbrio**;\n- **Babinski**;\n- **fraqueza** dos membros inferiores;\n- alteração da **propriocepção** (colunas posteriores);\n- **esfíncteres**, tardiamente.\n\n### Classificação funcional\n**mJOA** (Japanese Orthopaedic Association modificada):\n- **leve:** 15 a 17;\n- **moderada:** 12 a 14;\n- **grave:** 11 ou menos.\n\nA mielopatia **moderada ou grave** tem indicação de **descompressão cirúrgica**, pela história natural de piora em degraus.\n\n> **Na prova:** sinais mais precoces da mielopatia = ==hiper-reflexia e clônus==.",
-  "correta": "**Clônus sustentado e reflexos hiperativos.**",
   "incorretas": {
-   "B": "**Propriocepção e sensibilidade térmica.**\n- Surgem em fase mais avançada.",
-   "C": "**Fraqueza dos MMII e desequilíbrio.**\n- Manifestações tardias.",
-   "D": "**Babinski e fraqueza.**\n- O Babinski costuma vir depois da hiper-reflexia, e a fraqueza é tardia."
+   "B": "A perda da propriocepção e da sensibilidade térmica aparece em fases mais avançadas, quando a compressão já atinge os tratos sensitivos.",
+   "C": "Fraqueza nas pernas e desequilíbrio são manifestações mais tardias da mielopatia.",
+   "D": "O Babinski costuma surgir depois da hiper-reflexia, e a fraqueza dos membros inferiores é tardia."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A mielopatia cervical costuma ser silenciosa no começo. O paciente não reclama de fraqueza; ele diz que a letra piorou, que está difícil abotoar a camisa, que tropeça mais. Quem a descobre cedo é quem examina os reflexos.\n\nA explicação está no papel da medula. Além de levar comandos, ela mantém um freio permanente sobre os reflexos dos segmentos de baixo. Uma compressão discreta já é suficiente para soltar esse freio, muito antes de destruir fibras a ponto de tirar força. Por isso os primeiros sinais objetivos são de **liberação**: **reflexos hiperativos** abaixo do nível da compressão e **clônus sustentado** (contrações rítmicas que não param quando se estica bruscamente o tornozelo ou a patela). Junto vem o Hoffmann e a perda de destreza fina nas mãos.\n\nCom a progressão aparecem as manifestações mais grosseiras: a marcha de base alargada e insegura, o Babinski, a perda da propriocepção (o paciente não sabe onde estão os pés sem olhar), a fraqueza nas pernas e, por último, o comprometimento da bexiga.\n\nIsso importa porque a mielopatia tende a piorar em degraus e o que se perde nem sempre volta. A escala usada para medir a gravidade é a mJOA, da associação japonesa de ortopedia: mielopatia moderada ou grave tem indicação de cirurgia de descompressão, e quanto mais cedo, maior a chance de preservar função.",
+  "correta": "O clônus sustentado e os reflexos hiperativos. A compressão inicial já libera os reflexos abaixo do nível, antes de causar fraqueza ou perda sensitiva.",
+  "referencias": [
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0242": {
