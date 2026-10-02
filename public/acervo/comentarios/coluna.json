@@ -418,69 +418,90 @@
   "conferido": false
  },
  "coluna-0030": {
-  "conceito": "### Tabela de Lonstein e Carlson\nRisco de progressão da escoliose idiopática do adolescente pelo **Cobb** e pelo **Risser**:\n| Cobb | Risser 0 a 1 | Risser 2 a 4 |\n|---|---|---|\n| 5° a 19° | ==~22%== | ~1,6% |\n| 20° a 29° | ~68% | ~23% |\n\n### Lição\nO risco não é o tamanho isolado da curva, mas **curva × crescimento restante**:\n- a mesma curva de 10° com Risser 1 tem risco ~14 vezes maior que com Risser 3;\n- curvas de 20° a 29° com esqueleto imaturo progridem na **maioria** dos casos. É a faixa em que se considera o **colete**, a partir de 25°.\n\n### Outros marcadores de maturidade\n- **Menarca:** o pico de crescimento costuma precedê-la.\n- **Sanders** (radiografia da mão), cada vez mais usado.\n- **Cartilagem trirradiada:** se aberta, há grande potencial de crescimento.\n\n> **Na prova:** curva abaixo de 20° com Risser 0 a 1 = ==~22%==; 20° a 29° com Risser 0 a 1 = ~68%.",
-  "correta": "**~22%.**",
   "incorretas": {
-   "A": "**18%.**\n- Não é o valor da tabela.",
-   "C": "**26%.**\n- Não é o valor da tabela.",
-   "D": "**30%.**\n- Superestima para curva abaixo de 20°."
+   "A": "**Não corresponde à tabela.** O valor descrito para essa faixa é 22%. Os números da tabela são poucos e precisam ser memorizados: 22 e 1,6 para curvas pequenas, 68 e 23 para curvas de 20 a 29 graus.",
+   "C": "**Não corresponde à tabela.** 26% fica próximo de 23%, valor das curvas de 20 a 29 graus em esqueleto mais maduro, Risser 2 a 4, outra combinação.",
+   "D": "**Superestima o risco.** Uma curva de 10 graus está na faixa de menor tamanho, e o risco com Risser 1 é 22%. Valores maiores aparecem nas curvas de 20 a 29 graus."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Os dois números da pergunta.** O **ângulo de Cobb** mede o tamanho da escoliose: traçam-se linhas pelas placas das vértebras mais inclinadas nas pontas da curva e mede-se o ângulo entre elas. O **sinal de Risser** mede a maturidade do esqueleto pela ossificação da apófise da crista ilíaca, a borda de crescimento no alto do osso do quadril, que ossifica de fora para dentro: Risser 0 é nenhuma ossificação (muito crescimento pela frente), 1 a 4 são etapas sucessivas e 5 é a apófise fundida (crescimento terminado).\n\n**Por que os dois juntos.** A escoliose idiopática do adolescente piora principalmente enquanto a criança cresce. Uma curva pequena num esqueleto imaturo tem muito tempo para crescer; a mesma curva num esqueleto quase maduro, não. Por isso o risco de progressão depende do cruzamento entre o tamanho da curva e o crescimento que resta.\n\n**A tabela de Lonstein e Carlson.** Em 1984 eles acompanharam curvas não tratadas e calcularam o risco de progressão. Curvas de **5 a 19 graus** progridem em cerca de **22%** com Risser 0 a 1 e em apenas cerca de 1,6% com Risser 2 a 4. Curvas de **20 a 29 graus** progridem em cerca de **68%** com Risser 0 a 1 e em cerca de 23% com Risser 2 a 4. A questão traz 10 graus com Risser 1: primeira faixa, esqueleto imaturo, 22%.\n\n**A lição clínica.** A mesma curva de 10 graus tem risco mais de dez vezes maior com Risser 1 do que com Risser 3. E curvas de 20 a 29 graus com esqueleto imaturo progridem na maioria das vezes, por isso essa é a fase de vigilância próxima e, a partir de 25 graus, de colete. Outros marcadores de maturidade completam a avaliação: a menarca, que vem depois do pico de crescimento das meninas, a cartilagem trirradiada da pelve aberta e a classificação de Sanders, feita na radiografia da mão.\n\n**Na prova:** curva abaixo de 20 graus com Risser 0 a 1 progride em cerca de 22%; de 20 a 29 graus com Risser 0 a 1, cerca de 68%.",
+  "correta": "**22%.** É o risco de progressão descrito por Lonstein e Carlson para curvas de 5 a 19 graus em esqueleto imaturo, Risser 0 ou 1.",
+  "referencias": [
+   "Lonstein JE, Carlson JM. The prediction of curve progression in untreated idiopathic scoliosis during growth. J Bone Joint Surg Am. 1984;66(7):1061-1071."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0031": {
-  "conceito": "### As duas formas de Scheuermann\n| | Torácica (clássica) | Toracolombar |\n|---|---|---|\n| Ápice | ==T7 a T9== | T10 a L2 |\n| Frequência | **mais comum** | menos comum |\n| Clínica | cifose rígida, queixa estética, dor moderada | **mais dor**, progride mais na vida adulta |\n| Associações | hiperlordose lombar compensatória | às vezes, história de sobrecarga (atletas, carregadores) |\n\n### Diagnóstico (Sörensen)\nAcunhamento de 5° ou mais em **3 vértebras adjacentes**, com placas irregulares, nódulos de **Schmorl** e estreitamento discal.\n\n### Diferencial com a cifose postural\nA postural corrige em **hiperextensão** e na posição prona. No teste de Adams visto de lado, ela forma uma curva suave, enquanto o Scheuermann mostra **angulação** no ápice.\n\n> **Na prova:** ápice da forma torácica clássica = ==T7 a T9==.",
-  "correta": "**T7 a T9.**",
   "incorretas": {
-   "A": "**T5 a T7.**\n- Mais alto que o ápice típico.",
-   "C": "**T9 a T11.**\n- Aproxima-se da forma **toracolombar**.",
-   "D": "**T11 a L1.**\n- Território da forma **toracolombar**, a menos frequente."
+   "A": "**Alto demais.** Um ápice entre T5 e T7 é mais alto do que o típico da Scheuermann torácica, que fica no meio da coluna torácica, entre T7 e T9.",
+   "C": "**Já se aproxima da forma toracolombar.** A partir de T10 a curva passa a ser considerada toracolombar, variante menos comum e mais dolorosa.",
+   "D": "**É território da forma toracolombar.** Ápice na transição entre a coluna torácica e a lombar define a variante toracolombar, não a clássica."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é a doença de Scheuermann.** É uma cifose rígida do adolescente causada por acunhamento de vértebras. Cifose é a curva da coluna com a convexidade para trás; um pouco dela é normal na coluna torácica. Na Scheuermann a placa terminal, a cartilagem de crescimento das faces das vértebras, funciona mal, a frente das vértebras cresce menos e elas viram cunhas, aumentando a curvatura.\n\n**O ápice da curva.** O ápice é a vértebra ou o disco mais afastado da linha da coluna, o ponto mais saliente da corcunda. Na forma **torácica clássica**, que é a mais comum, o ápice fica **entre T7 e T9**, no meio da coluna torácica. É a corcunda arredondada no alto das costas, com hiperlordose lombar compensatória abaixo.\n\n**A forma toracolombar.** Menos frequente, tem o ápice mais baixo, entre T10 e L2. Costuma doer mais, é mais ligada a sobrecarga física (atletas, trabalhadores braçais) e progride mais na vida adulta. Por isso a localização do ápice ajuda a classificar a doença e prever sintomas.\n\n**O diagnóstico.** Pelos critérios de Sörensen, exige acunhamento de 5 graus ou mais em três vértebras adjacentes no ápice, acompanhado de placas terminais irregulares, nódulos de Schmorl (o disco que penetrou no osso) e estreitamento discal. A cifose é rígida: não corrige quando o adolescente se estende, ao contrário da má postura. Vista de lado, na inclinação para a frente, a Scheuermann faz um ângulo agudo no ápice, e a postural, uma curva suave.\n\n**Na prova:** Scheuermann torácica clássica tem ápice entre T7 e T9; a toracolombar, menos comum, entre T10 e L2.",
+  "correta": "**T7 a T9.** É a localização do ápice na forma torácica clássica, a apresentação mais frequente da doença.",
+  "referencias": [
+   "Lowe TG. Scheuermann disease. J Bone Joint Surg Am. 1990;72(6):940-945.",
+   "Sørensen KH. Scheuermann's juvenile kyphosis: clinical appearances, radiography, aetiology and prognosis. Copenhagen: Munksgaard; 1964."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0032": {
-  "conceito": "### Brown-Séquard (hemissecção medular)\nDeduz-se pelo **ponto de cruzamento** de cada trato:\n| Trato | Função | Onde cruza | Déficit na hemissecção |\n|---|---|---|---|\n| Corticoespinhal lateral | motor | bulbo | ==ipsilateral== |\n| Colunas posteriores | propriocepção, vibração, tato fino | bulbo | ==ipsilateral== |\n| Espinotalâmico | dor e temperatura | **na medula**, 1 a 2 níveis acima da entrada | ==contralateral==, começando alguns segmentos abaixo |\n\n### Causas\n- Ferimento **penetrante** (arma branca): clássica.\n- Hérnia discal lateral, tumor, fratura com fragmento lateral.\n- Muitas vezes, o quadro real é \"**Brown-Séquard-plus**\", misto com centromedular.\n\n### Prognóstico\n**O melhor** entre as síndromes incompletas: a grande maioria volta a **deambular**.\n\n> **Na prova:** Brown-Séquard = motor + propriocepção ==do mesmo lado==; dor e temperatura ==do lado oposto==.",
-  "correta": "**Motor e propriocepção ipsilaterais; dor e temperatura contralaterais.**",
   "incorretas": {
-   "A": "**Lados invertidos.**\n- A propriocepção é ipsilateral e a dor contralateral.",
-   "C": "**Térmico contralateral e dor ipsilateral.**\n- Dor e temperatura correm juntas no espinotalâmico; não se separam.",
-   "D": "**Térmico ipsilateral, propriocepção contralateral.**\n- Mesma objeção, e a propriocepção se perde do lado **da lesão**."
+   "A": "**Lados invertidos.** A propriocepção viaja nas colunas posteriores do mesmo lado e se perde junto com o motor, ipsilateral. Dor e temperatura, que cruzaram, se perdem do lado oposto.",
+   "C": "**Separa o que anda junto.** Dor e temperatura viajam no mesmo trato, o espinotalâmico, e se perdem juntas, do mesmo lado. E esse lado é o oposto ao da lesão, não o mesmo.",
+   "D": "**Mistura funções de tratos diferentes.** A temperatura anda com a dor no espinotalâmico e se perde do lado oposto. A propriocepção anda nas colunas posteriores e se perde do mesmo lado da lesão."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é a síndrome de Brown-Séquard.** É a lesão de **metade da medula**, direita ou esquerda, chamada hemissecção. A causa clássica é o ferimento por arma branca nas costas, mas também ocorre por hérnia de disco lateral, tumor ou fragmento de fratura deslocado para um lado.\n\n**A chave: onde cada trato cruza.** Os tratos são feixes de fibras com uma função, e alguns trocam de lado ao longo do caminho. O **corticoespinhal**, que leva o comando motor, cruza no bulbo, lá em cima no tronco cerebral; na medula, ele já está do mesmo lado do músculo que comanda. As **colunas posteriores**, que levam propriocepção (a noção da posição do corpo), vibração e tato fino, também sobem do mesmo lado e só cruzam no bulbo. O **espinotalâmico**, que leva dor e temperatura, cruza logo que entra na medula, um ou dois segmentos acima, e sobe do lado oposto.\n\n**Aplicando à hemissecção.** Ao cortar metade da medula, perdem-se as fibras motoras e de propriocepção que ainda não cruzaram, então **força e propriocepção somem do mesmo lado da lesão** (ipsilateral). As fibras de dor e temperatura cortadas ali já vieram do outro lado do corpo, então **dor e temperatura somem do lado oposto** (contralateral), começando alguns segmentos abaixo da lesão.\n\n**Prognóstico.** É o melhor entre as síndromes medulares incompletas: a grande maioria dos pacientes volta a andar. Na prática, muitos casos são mistos, com componentes de outras síndromes.\n\n**Na prova:** Brown-Séquard é motor e propriocepção do mesmo lado e dor e temperatura do lado oposto.",
+  "correta": "**Déficit motor e proprioceptivo ipsilateral, com perda contralateral de dor e temperatura.** Motor e propriocepção correm do mesmo lado na medula e cruzam só no bulbo; dor e temperatura já cruzaram ao entrar na medula.",
+  "referencias": [
+   "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546.",
+   "McKinley W, Santos K, Meade M, Brooke K. Incidence and outcomes of spinal cord injury clinical syndromes. J Spinal Cord Med. 2007;30(3):215-224."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0033": {
-  "conceito": "### Raiz de C6 (disco C5-C6)\n- **Força:** ==bíceps== (flexão do cotovelo) e **extensores radiais do carpo** (extensão do punho).\n- **Reflexo:** **braquiorradial** (estilorradial).\n- **Sensibilidade:** face lateral do antebraço, **polegar e indicador**.\n\n### Radiculopatia × mielopatia\n- **Radiculopatia:** dor irradiada no território da raiz, déficit **segmentar**, reflexo **diminuído**.\n- **Mielopatia:** compressão da **medula**, com sinais de **neurônio motor superior**:\n  - **Hoffmann** positivo;\n  - hiper-reflexia, clônus, Babinski;\n  - marcha de base alargada;\n  - perda de destreza (\"mão mielopática\").\n\n### Vizinhos para comparar\n- **C5:** deltoide, reflexo bicipital, face lateral do braço.\n- **C7:** tríceps, reflexo **tricipital**, dedo médio.\n- **C8:** flexores dos dedos, dedo **mínimo**.\n\n> **Na prova:** C6 = ==bíceps + extensores do punho + braquiorradial + polegar==.",
-  "correta": "**Fraqueza do bíceps.**",
   "incorretas": {
-   "A": "**Hoffmann positivo.**\n- Sinal de **mielopatia**, não de radiculopatia isolada.",
-   "C": "**Hipoestesia do dedo mínimo.**\n- Território de **C8**.",
-   "D": "**Reflexo tricipital diminuído.**\n- Reflexo de **C7**."
+   "A": "**Hoffmann é sinal de mielopatia.** Ele aparece quando a medula está comprimida e os reflexos ficam liberados. A compressão isolada de uma raiz não o produz.",
+   "C": "**O dedo mínimo é território de C8.** A C8 também comanda os flexores dos dedos. A hipoestesia da C6 fica no polegar e no indicador.",
+   "D": "**O reflexo tricipital depende de C7.** A raiz C7, comprimida pelo disco C6-C7, controla o tríceps e esse reflexo. A C6 altera o braquiorradial."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Radiculopatia e mielopatia.** A hérnia de disco cervical pode comprimir duas coisas diferentes. Se aperta uma **raiz nervosa** no forame, causa **radiculopatia**: dor que desce pelo braço e perda de sensibilidade, força e reflexo no território daquela raiz, com o reflexo **diminuído**. Se aperta a **medula** no centro do canal, causa **mielopatia**: perda de destreza nas mãos, marcha desequilibrada e sinais de neurônio motor superior, com reflexos **exaltados**, clônus, Babinski e Hoffmann.\n\n**Qual disco comprime C6.** Na coluna cervical cada raiz sai acima da vértebra de mesmo número. A raiz C6 sai entre C5 e C6 e é comprimida pela hérnia do disco C5-C6.\n\n**O território de C6.** **Força**: bíceps, que flete o cotovelo, e extensores radiais do punho. **Reflexo**: braquiorradial, pesquisado batendo no rádio perto do punho. **Sensibilidade**: face lateral do antebraço, polegar e indicador. A fraqueza do bíceps é, portanto, um achado de C6 (o bíceps também recebe C5).\n\n**Os vizinhos.** **C5**: deltoide, reflexo bicipital, face lateral do braço. **C7**: tríceps, reflexo tricipital, dedo médio. **C8**: flexores dos dedos, dedo mínimo, sem reflexo próprio.\n\n**O sinal de Hoffmann.** Dá-se um peteleco na unha do dedo médio; se o polegar e o indicador fletem, o sinal é positivo. Indica que o freio da medula sobre os reflexos foi perdido, ou seja, mielopatia. Não faz parte da radiculopatia de uma raiz.\n\n**Na prova:** raiz C6 é bíceps, extensores do punho, braquiorradial e polegar.",
+  "correta": "**Fraqueza do bíceps.** O bíceps recebe fibras de C5 e C6, e sua fraqueza, junto com o reflexo braquiorradial e a alteração no polegar, é a marca da compressão de C6.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0034": {
-  "conceito": "### Divisão de trabalho na coluna cervical\n- **Occipito-C1:** ~metade da **flexoextensão** cervical (o \"sim\"); quase **sem rotação**.\n- ==C1-C2 (atlantoaxial)==: ~==50%== da **rotação** axial (o \"não\"), em torno de 40° a 45° para cada lado. O pivô é o **dente** com o ligamento transverso, e as facetas são quase **horizontais**.\n- **C3 a C7:** o restante da rotação e da flexoextensão, além da **inclinação lateral** (acoplada à rotação).\n\n### Consequências clínicas\n- **Artrodese C1-C2:** perda de cerca de **metade** da rotação cervical. É preciso avisar o paciente.\n- **Subluxação rotatória atlantoaxial** (Fielding) na criança: **torcicolo** em \"postura de galo\" (cock-robin) após infecção de via aérea (síndrome de **Grisel**) ou trauma.\n- **Artrite reumatoide:** instabilidade C1-C2 (distância atlanto-dental acima de 3 mm no adulto).\n\n> **Na prova:** C1-C2 = ==~50% da rotação== cervical.",
-  "correta": "**~50%.**",
   "incorretas": {
-   "A": "**10%.**\n- Subestima muito.",
-   "B": "**25%.**\n- Subestima.",
-   "D": "**75%.**\n- Superestima; a cervical baixa contribui com a outra metade."
+   "A": "**Subestima muito.** 10% não condiz com a anatomia de pivô de C1-C2, desenhada para girar.",
+   "B": "**Ainda subestima.** A participação de C1-C2 é cerca de metade da rotação, e não um quarto.",
+   "D": "**Superestima.** A coluna cervical de C3 a C7 contribui com a outra metade da rotação; C1-C2 não faz três quartos sozinha."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**A coluna cervical divide o trabalho.** O pescoço faz três movimentos: flexão e extensão (o gesto de dizer sim), rotação (o gesto de dizer não) e inclinação lateral. Cada segmento contribui de forma diferente, conforme o formato das suas articulações.\n\n**Occipício com C1.** A articulação entre a base do crânio e o atlas (C1) tem superfícies em forma de taça, que permitem acenar com a cabeça. Ela responde por boa parte da flexoextensão da cabeça e quase não gira.\n\n**C1 com C2: o pivô da rotação.** A articulação atlantoaxial, entre o atlas e o áxis (C2), é feita para girar. O **dente do áxis**, uma projeção que sobe do corpo de C2, funciona como eixo, preso contra o arco anterior do atlas pelo ligamento transverso. As facetas entre C1 e C2 são quase horizontais e deslizam com facilidade. Resultado: C1-C2 responde por cerca de **50% da rotação** total da coluna cervical, em torno de 40 a 45 graus para cada lado.\n\n**C3 a C7.** A coluna cervical baixa responde pela outra metade da rotação e por grande parte da flexoextensão e da inclinação lateral. Nela, rotação e inclinação lateral vêm acopladas, pela inclinação das facetas.\n\n**Consequências clínicas.** Fundir C1 e C2 numa artrodese tira cerca de metade da rotação do pescoço, e o paciente precisa ser avisado. Na criança, a subluxação rotatória atlantoaxial causa torcicolo com a cabeça inclinada para um lado e girada para o outro, após infecção de garganta (síndrome de Grisel) ou trauma. Na artrite reumatoide, a instabilidade entre C1 e C2 é preocupação frequente.\n\n**Na prova:** C1-C2 faz cerca de metade da rotação cervical; occipício-C1 faz a flexoextensão da cabeça.",
+  "correta": "**50%.** A articulação atlantoaxial gira em torno do dente do áxis e responde por cerca de metade da rotação axial do pescoço.",
+  "referencias": [
+   "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0035": {
-  "conceito": "### Choque neurogênico em uma tabela\n| Sinal | Neurogênico | Hemorrágico |\n|---|---|---|\n| FC | ==bradicardia== | taquicardia |\n| Diurese | ==normal== | baixa |\n| Pele | quente, corada | fria, pálida |\n| PA | baixa | baixa |\n\n### Por que a diurese ajuda\nNo hipotenso, **diurese preservada** sugere perfusão renal mantida, o que fala contra **hipovolemia** significativa. Ainda assim, **procure sangramento**: os dois choques podem coexistir e a bradicardia pode mascarar a hemorragia.\n\n### Tratamento\n- **Volume** com moderação.\n- **Vasopressor alfa e beta** (noradrenalina, dopamina).\n- **Atropina** para bradicardia sintomática.\n- **Alvo clássico:** PAM de 85 a 90 mmHg nos primeiros dias.\n\n> **Na prova:** choque neurogênico = ==bradicardia + diurese normal==.",
-  "correta": "**Bradicardia e débito urinário normal.**",
   "incorretas": {
-   "A": "**Taquicardia e oligúria.**\n- Padrão do choque **hemorrágico**.",
-   "B": "**Taquicardia e diurese normal.**\n- A taquicardia contradiz a perda simpática.",
-   "C": "**Bradicardia e oligúria.**\n- Oligúria sugere componente **hipovolêmico** associado."
+   "A": "**É o choque hemorrágico.** Taquicardia e oligúria mostram o simpático ativo compensando a perda de sangue, o contrário da lesão medular.",
+   "B": "**A taquicardia contradiz a perda do simpático.** Sem o simpático o coração desacelera. Taquicardia no traumatizado medular sugere sangramento associado.",
+   "C": "**A oligúria aponta para hipovolemia.** A bradicardia está certa, mas pouca urina indica rim mal perfundido por falta de volume, sugerindo sangramento junto com a lesão medular."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é choque neurogênico.** É a queda da pressão arterial causada por lesão da medula que desliga o sistema nervoso simpático. O simpático mantém os vasos contraídos e acelera o coração; suas fibras saem da medula entre T1 e L2, e as do coração entre T1 e T4. Lesões acima de cerca de T6 interrompem esse comando.\n\n**Por que bradicardia.** O coração recebe dois comandos: o simpático acelera e o nervo vago freia. Com o simpático desligado, o vago age sozinho e a frequência cai. Hipotensão com **bradicardia** é a assinatura do choque neurogênico, porque em quase todo outro choque o coração acelera para compensar.\n\n**Por que a diurese é normal.** Nos vasos sem tônus, o sangue se espalha pela periferia, mas o volume total não foi perdido. No início, o rim continua recebendo fluxo suficiente e produz urina normalmente. A pele fica quente e corada.\n\n**O contraste com o choque hemorrágico.** Na perda de sangue o simpático trabalha no máximo: taquicardia, pele fria e pálida e **oligúria**, porque o rim reduz a urina para poupar volume. Diurese baixa num traumatizado hipotenso fala a favor de hipovolemia.\n\n**Cuidado no politrauma.** Os dois choques podem coexistir, e a bradicardia pode esconder a taquicardia da hemorragia. Sempre se procura sangramento antes de atribuir tudo à medula. O tratamento do neurogênico é volume com moderação, vasopressor com ação alfa e beta (como a noradrenalina), atropina para bradicardia sintomática e alvo de pressão arterial média elevada nos primeiros dias para perfundir a medula.\n\n**Na prova:** choque neurogênico é bradicardia com diurese normal; choque hemorrágico é taquicardia com oligúria.",
+  "correta": "**Bradicardia e débito urinário normal.** A perda do simpático deixa o vago sem oposição e dilata os vasos sem tirar volume, de modo que o rim segue produzindo urina no início.",
+  "referencias": [
+   "American College of Surgeons. Advanced Trauma Life Support (ATLS) Student Course Manual. 10th ed. Chicago: American College of Surgeons; 2018.",
+   "Kwon BK, Tetreault LA, Martin AR et al. A Clinical Practice Guideline for the Management of Patients With Acute Spinal Cord Injury: Recommendations on Hemodynamic Management. Global Spine J. 2024;14(3 Suppl):187S-211S."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0036": {
