@@ -10070,19 +10070,20 @@
   "conferido": false
  },
  "trauma-1124": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Ressecção da cabeça do rádio.** A cabeça do rádio é estabilizador secundário ao valgo. Com lesão do ligamento colateral medial ou da membrana interóssea (Essex-Lopresti), a ressecção isolada leva a instabilidade; deve-se fixar ou substituir a cabeça.\n\n**Na prova:** cominuta com colateral medial roto pede prótese, não ressecção.",
-  "correta": "**Do ligamento colateral medial.** Sem o colateral medial, a ressecção causa instabilidade em valgo.",
   "incorretas": {
-   "A": "**Da cápsula anterior.** A cápsula anterior não impede a ressecção.",
-   "B": "**Do ligamento colateral lateral radial.** Não é o estabilizador ao valgo.",
-   "C": "**Do ligamento colateral lateral ulnar.** Sua lesão causa instabilidade posterolateral, mas a contraindicação clássica é o colateral medial."
+   "A": "**A cápsula anterior contribui para estabilidade, sobretudo em extensão.** Sua lesão isolada não demonstra, por si, a dupla perda de contenção ao valgo cobrada na alternativa D; se houver instabilidade global, a ressecção isolada também pode ser inadequada.",
+   "B": "**O ligamento colateral radial integra o complexo lateral.** Sua ruptura pode participar de instabilidade em varo ou posterolateral, razão pela qual não se deve tratar a ressecção isolada como segura sem testar todo o cotovelo.",
+   "C": "**O ligamento colateral ulnar lateral resiste à instabilidade rotatória posterolateral.** Se estiver rompido e o cotovelo instável, também há motivo para preservar ou substituir a cabeça radial e reparar os estabilizadores."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso a questão não conta no desempenho. A alternativa provável D ilustra a perda do estabilizador primário contra o valgo, mas a redação é ambígua: a ressecção isolada da cabeça radial também é contraindicada quando outras lesões ligamentares tornam o cotovelo instável, inclusive do complexo lateral. A AO não restringe a contraindicação ao colateral medial.",
+  "conceito": "**A cabeça do rádio não é apenas uma superfície de contato.** Ela participa da estabilidade do cotovelo e impede migração proximal do rádio quando a membrana interóssea e a articulação radioulnar distal estão lesionadas. Numa fratura cominutiva impossível de reconstruir, retirar a cabeça pode parecer simples, mas a consequência depende de tudo que foi rompido ao redor.\n\n**Valgo explica a resposta provável.** O ligamento colateral medial é a principal resistência à abertura do lado interno do cotovelo sob força em valgo. A cabeça radial fornece suporte secundário. Se o ligamento medial está rompido e a cabeça é retirada, desaparecem os dois mecanismos de contenção, aumentando muito a instabilidade. Em modelos biomecânicos, fixar ou substituir a cabeça preserva melhor esse controle que a ressecção.\n\n**Olhe o cotovelo e o antebraço inteiro.** Lesões do colateral lateral, do processo coronoide ou da membrana interóssea também podem contraindicar a ressecção isolada. A combinação de lesão da cabeça radial, membrana interóssea e articulação radioulnar distal é a lesão de Essex-Lopresti. A avaliação inclui estabilidade em varo e valgo, articulação radioulnar distal e comprimento radial. Se a cabeça não puder ser fixada, uma prótese pode ser necessária como parte da reconstrução, junto ao reparo ligamentar indicado.",
+  "correta": "**Ruptura do ligamento colateral medial.** Ele é o principal estabilizador ao valgo; retirar também a cabeça radial, seu apoio secundário, deixa o cotovelo especialmente vulnerável.",
   "referencias": [
-   "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª ed., vol. II, p. 1463."
+   "AO Surgery Reference, Radial head excision: https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-forearm/radius-complete-articular/radial-head-excision",
+   "Morrey BF et al. Valgus stability of the elbow: https://pubmed.ncbi.nlm.nih.gov/2009657/"
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "provavel": "D",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "trauma-1125": {
@@ -10102,19 +10103,20 @@
   "conferido": false
  },
  "trauma-1126": {
+  "incorretas": {
+   "B": "**A opção troca a geometria típica entre os lados.** A concavidade mais evidente é medial; o lateral apresenta convexidade global, ainda que sua área central possa ser quase plana.",
+   "C": "**O planalto medial não é globalmente convexo.** Uma imagem com duas linhas aparentemente arqueadas para cima pode refletir obliquidade da incidência ou redução inadequada e precisa ser conferida.",
+   "D": "**O planalto lateral não é globalmente côncavo.** A alternativa ignora a assimetria que ajuda a distinguir as duas superfícies no perfil."
+  },
+  "conceito": "**Os dois planaltos não são espelhos.** O planalto tibial medial oferece uma superfície óssea predominantemente côncava no perfil sagital. O lateral tem contorno global mais convexo, embora a pequena área de contato central possa parecer relativamente plana. Essa diferença faz parte da geometria normal do joelho e ajuda a interpretar as duas linhas subcondrais sobrepostas numa radiografia de perfil.\n\n**O controle durante a cirurgia procura restaurar a superfície original.** Depois de elevar um fragmento deprimido e fixar a fratura, a fluoroscopia em perfil permite procurar degraus, afundamento residual e perda da inclinação posterior. As incidências frontal e oblíquas, e às vezes tomografia, complementam o exame: uma projeção isolada pode esconder uma depressão posterior ou atribuir a linha de um côndilo ao outro.\n\n**Forma e inclinação são perguntas diferentes.** Concavidade ou convexidade descreve o arco da superfície; inclinação tibial posterior, ou slope, descreve sua orientação em relação à diáfise. Não se deve confundir o planalto lateral convexo com uma inclinação anterior obrigatória. Em ambas as faces, há variação individual, de modo que a imagem deve ser interpretada com o padrão de fratura e com o lado contralateral quando necessário.",
+  "correta": "**Lateral convexa e medial côncava.** Essa é a descrição geral dos contornos ósseos dos dois planaltos no perfil, útil como referência para julgar a redução.",
+  "referencias": [
+   "Hashemi J et al. The geometry of the tibial plateau and its influence on biomechanics: https://pubmed.ncbi.nlm.nih.gov/19047719/",
+   "Nam JH et al. Morphology of the convex lateral tibial plateau: https://pubmed.ncbi.nlm.nih.gov/34485524/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "A",
-  "conceito": "**Planalto tibial no perfil.** O planalto medial é côncavo e o lateral é convexo; no perfil, isso ajuda a distinguir e a conferir a redução da superfície articular.\n\n**Na prova:** medial côncavo, lateral convexo.",
-  "correta": "**A linha do planalto lateral convexa e do medial côncava.** É a anatomia normal dos dois planaltos no perfil.",
-  "incorretas": {
-   "B": "**A linha do planalto lateral côncava e do medial convexa.** Inverte a anatomia.",
-   "C": "**Ambas as linhas dos planaltos convexas.** O medial é côncavo.",
-   "D": "**Ambas as linhas dos planaltos côncavas.** O lateral é convexo."
-  },
-  "referencias": [
-   "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed, p. 502."
-  ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "trauma-1127": {
@@ -10198,19 +10200,20 @@
   "conferido": false
  },
  "trauma-1132": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Úmero distal na AO.** 13-B são articulares parciais: B1 sagital lateral, B2 sagital medial, B3 no plano frontal. A fratura do capítulo é coronal e por isso é B3.\n\n**Na prova:** capítulo e tróclea no plano frontal são 13-B3.",
-  "correta": "**B3.** A fratura frontal do capítulo é B3.",
   "incorretas": {
-   "A": "**C1.** C1 é articular completa simples.",
-   "B": "**B1.** B1 é sagital do lado lateral.",
-   "C": "**B2.** B2 é sagital do lado medial."
+   "A": "**C1 é articular completa e simples.** Nesse padrão, o bloco articular se separa da diáfise; não corresponde ao cisalhamento coronal parcial descrito pela resposta provável.",
+   "B": "**B1 é articular parcial lateral em plano sagital.** Pode envolver a região capitellar, mas o traço corre em outra orientação; é por isso que a palavra “capítulo” sozinha deixa a questão imprecisa.",
+   "C": "**B2 é articular parcial medial em plano sagital.** Seu território principal é a porção medial do úmero distal, diferente do cisalhamento coronal do capítulo."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso a questão não conta no desempenho. A resposta provável D pressupõe a fratura de cisalhamento coronal típica do capítulo. A palavra isolada “fratura do capítulo” não informa o plano do traço; a classificação AO também inclui fraturas laterais em plano sagital no grupo 13-B1.",
+  "conceito": "**O número 13 é o úmero distal.** Na classificação AO/OTA, A reúne fraturas extra-articulares, B fraturas articulares parciais, nas quais parte da superfície ainda permanece unida à diáfise, e C fraturas articulares completas, que separam todo o bloco articular da diáfise. Portanto, C1 não é simplesmente “fratura do capítulo”: descreve um padrão completo e simples.\n\n**Dentro das articulares parciais, o plano do traço decide.** B1 corresponde à fratura lateral em plano sagital, B2 à medial sagital e B3 à fratura no plano frontal ou coronal. O cisalhamento coronal isolado do capítulo é 13-B3.1; quando a tróclea entra no fragmento, a classificação detalhada muda dentro do grupo B3. Uma fratura lateral que atravessa o capítulo em plano sagital pode, por outro lado, ser B1.\n\n**A imagem precisa mostrar a extensão real.** A radiografia lateral costuma revelar o fragmento anterior deslocado. A tomografia pode identificar extensão para a tróclea, impactação posterior e fragmentos ocultos, dados importantes para escolher abordagem e fixação. A chave é imaginar o plano da fratura e perguntar se o restante da superfície articular continua ligado ao úmero.",
+  "correta": "**B3, para a fratura coronal típica do capítulo.** É uma fratura articular parcial no plano frontal, classificada mais especificamente como 13-B3.1 quando isolada.",
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., p. 1071."
+   "AO Surgery Reference, Partial articular fracture in frontal/coronal plane: https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-humerus/partial-articular-frontal-coronal-plane/definition",
+   "AO Surgery Reference, Partial articular lateral sagittal fracture: https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-humerus/partial-articular-lateral-sagittal/definition"
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "provavel": "D",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "trauma-1133": {
