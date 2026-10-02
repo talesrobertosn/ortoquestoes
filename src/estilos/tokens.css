@@ -47,6 +47,8 @@
     Arial, sans-serif;
   /* Nome da marca escrito por extenso (Plus Jakarta Sans, licença OFL). */
   --fonte-marca: "Plus Jakarta Sans", var(--fonte-texto);
+  /* Fonte pixel, só no ranking e nas conquistas (licença OFL, carregada nessas telas). */
+  --fonte-pixel: "Pixelify Sans", var(--fonte-marca);
   --fonte-dados: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Menlo,
     Consolas, monospace;
   --corpo: 1.0625rem; /* 17px */

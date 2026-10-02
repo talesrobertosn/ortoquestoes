@@ -45,9 +45,9 @@ export function Cabecalho({ caminho }: { caminho: string }) {
           {LINKS.map((link) => (
             <a
               key={link.destino}
-              className={'nav-link' + (link.ocultaCelular ? ' nav-link--oculta-celular' : '') + (link.destino === '/dados' ? ' nav-link--oculta-estreito' : '')}
+              className={'nav-link' + (link.ocultaCelular ? ' nav-link--oculta-celular' : '') + (link.destino === '/dados' ? ' nav-link--oculta-estreito' : '') + (link.destino === '/ranking' ? ' nav-link--ranking' : '')}
               href={href(link.destino)}
-              aria-current={caminho.startsWith(link.destino) ? 'page' : undefined}
+              aria-current={caminho.startsWith(link.destino) || (link.destino === '/ranking' && caminho.startsWith('/conquistas')) ? 'page' : undefined}
             >
               <span className="nav-link__icone"><Icone nome={link.icone} tamanho={17} /></span>
               {link.rotulo}
@@ -86,6 +86,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
       <a href={href('/')} aria-current={caminho === '/' ? 'page' : undefined}><Icone nome="mapa" /><span>Início</span></a>
       <a href={href('/treinar')} aria-current={caminho.startsWith('/treinar') ? 'page' : undefined}><Icone nome="filtro" /><span>Treinar</span></a>
       <a href={href('/revisao')} aria-current={caminho.startsWith('/revisao') ? 'page' : undefined}><Icone nome="reiniciar" /><span>Revisar</span></a>
+      <a className="navegacao-mobile__ranking" href={href('/ranking')} aria-current={caminho.startsWith('/ranking') || caminho.startsWith('/conquistas') ? 'page' : undefined}><Icone nome="trofeu" /><span>Ranking</span></a>
       <a href={href('/dados')} aria-current={caminho.startsWith('/dados') ? 'page' : undefined}><Icone nome="certo" /><span>Desempenho</span></a>
       {botaoMenu('navegacao-mobile__menu')}
     </nav>

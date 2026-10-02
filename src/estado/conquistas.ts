@@ -26,14 +26,14 @@ export interface Conquista {
 
 export type FamiliaId =
   | 'questoes' | 'sequencia' | 'dias' | 'acertos' | 'dominadas' | 'temas' | 'sessoes'
-  | 'maratona' | 'precisao' | 'redencao' | 'gabarito' | 'secretas'
+  | 'maratona' | 'precisao' | 'redencao' | 'gabarito' | 'mestre' | 'resistencia' | 'colecao' | 'anotacoes' | 'secretas'
 
 export interface Emblema extends Conquista {
   familia: FamiliaId
   /** O que é preciso fazer, escrito para quem ainda não conseguiu. */
   descricao: string
   /** Métrica que decide a conquista (cada família secreta usa a sua). */
-  metrica: keyof Metricas
+  metrica: MetricaNumerica
   /** Só se revela depois de desbloqueada. */
   secreta?: boolean
 }
@@ -54,12 +54,16 @@ export const FAMILIAS: readonly Familia[] = [
   { id: 'precisao', titulo: 'Precisão', unidade: (v) => `${v} acertos seguidos` },
   { id: 'redencao', titulo: 'Redenção', unidade: (v) => `${n(v)} erros corrigidos` },
   { id: 'gabarito', titulo: 'Gabarito', unidade: (v) => `${v} ${v === 1 ? 'sessão perfeita' : 'sessões perfeitas'}` },
+  { id: 'mestre', titulo: 'Mestres de tema', unidade: (v) => `${v} acertos no tema` },
+  { id: 'resistencia', titulo: 'Resistência', unidade: (v) => `${v} questões numa sessão` },
+  { id: 'colecao', titulo: 'Coleção', unidade: (v) => `${v} favoritas` },
+  { id: 'anotacoes', titulo: 'Caderno de campo', unidade: (v) => `${v} anotações` },
   { id: 'secretas', titulo: 'Secretas', unidade: () => 'secreta' },
 ]
 
 type Linha = [id: string, minimo: number, rotulo: string, curto: string, nivel: NivelMedalha, descricao: string]
 
-function familia(f: FamiliaId, metrica: keyof Metricas, linhas: Linha[], secreta = false): Emblema[] {
+function familia(f: FamiliaId, metrica: MetricaNumerica, linhas: Linha[], secreta = false): Emblema[] {
   return linhas.map(([id, minimo, rotulo, curto, nivel, descricao]) => ({ id, minimo, rotulo, curto, nivel, descricao, familia: f, metrica, secreta }))
 }
 
@@ -114,8 +118,8 @@ export const EMBLEMAS: readonly Emblema[] = [
   ...familia('sessoes', 'sessoes', [
     ['sessoes-1', 1, 'Primeira missão', '1', 'bronze', 'Conclua uma sessão de treino ou simulado.'],
     ['sessoes-10', 10, 'Missões em dia', '10', 'prata', 'Conclua 10 sessões.'],
-    ['sessoes-50', 50, 'Veterano de campanha', '50', 'ouro', 'Conclua 50 sessões.'],
-    ['sessoes-100', 100, 'Comandante', '100', 'esmeralda', 'Conclua 100 sessões.'],
+    ['sessoes-25', 25, 'Veterano de campanha', '25', 'ouro', 'Conclua 25 sessões.'],
+    ['sessoes-50', 50, 'Comandante', '50', 'esmeralda', 'Conclua 50 sessões.'],
   ]),
   ...familia('maratona', 'maratona', [
     ['maratona-50', 50, 'Maratonista', '50', 'prata', 'Responda 50 questões num mesmo dia.'],
@@ -136,6 +140,39 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['gabarito-1', 1, 'Gabaritou', '100%', 'prata', 'Acerte todas as questões de uma sessão com pelo menos 10.'],
     ['gabarito-10', 10, 'Mestre do gabarito', '10×', 'esmeralda', 'Gabarite 10 sessões com pelo menos 10 questões.'],
   ]),
+  ...familia('mestre', 'acertosTema', [
+    ['mestre-coluna', 50, 'Mestre da coluna', 'Col', 'ouro', 'Acerte 50 questões de coluna.'],
+    ['mestre-conceitos-basicos', 50, 'Mestre dos fundamentos', 'Fun', 'ouro', 'Acerte 50 questões de conceitos básicos.'],
+    ['mestre-joelho', 50, 'Mestre do joelho', 'Joe', 'ouro', 'Acerte 50 questões de joelho.'],
+    ['mestre-mao', 50, 'Mestre da mão', 'Mão', 'ouro', 'Acerte 50 questões de mão e punho.'],
+    ['mestre-ombro-cotovelo', 50, 'Mestre do ombro e cotovelo', 'Omb', 'ouro', 'Acerte 50 questões de ombro e cotovelo.'],
+    ['mestre-osteometabolicas', 50, 'Mestre do metabolismo ósseo', 'Ost', 'ouro', 'Acerte 50 questões de doenças osteometabólicas.'],
+    ['mestre-pe-tornozelo', 50, 'Mestre do pé e tornozelo', 'Pé', 'ouro', 'Acerte 50 questões de pé e tornozelo.'],
+    ['mestre-pediatria', 50, 'Mestre da pediatria', 'Ped', 'ouro', 'Acerte 50 questões de ortopedia pediátrica.'],
+    ['mestre-quadril', 50, 'Mestre do quadril', 'Qua', 'ouro', 'Acerte 50 questões de quadril.'],
+    ['mestre-trauma', 50, 'Mestre do trauma', 'Tra', 'ouro', 'Acerte 50 questões de trauma.'],
+    ['mestre-tumores', 50, 'Mestre dos tumores', 'Tum', 'ouro', 'Acerte 50 questões de tumores.'],
+  ]),
+  ...familia('resistencia', 'sessaoLonga', [
+    ['resistencia-30', 30, 'Fôlego de residente', '30', 'prata', 'Conclua uma sessão com pelo menos 30 questões.'],
+    ['resistencia-60', 60, 'Prova de fogo', '60', 'ouro', 'Conclua uma sessão com pelo menos 60 questões.'],
+    ['resistencia-100', 100, 'Simulado de titã', '100', 'esmeralda', 'Conclua uma sessão com pelo menos 100 questões.'],
+  ]),
+  ...familia('colecao', 'favoritas', [
+    ['colecao-10', 10, 'Colecionador', '10', 'bronze', 'Marque 10 questões como favoritas.'],
+    ['colecao-50', 50, 'Curador do acervo', '50', 'prata', 'Marque 50 questões como favoritas.'],
+  ]),
+  ...familia('anotacoes', 'notas', [
+    ['anotacoes-5', 5, 'Diário de bordo', '5', 'bronze', 'Escreva anotações em 5 questões.'],
+    ['anotacoes-25', 25, 'Caderno de campo', '25', 'prata', 'Escreva anotações em 25 questões.'],
+    ['anotacoes-100', 100, 'Tratado de ortopedia', '100', 'ouro', 'Escreva anotações em 100 questões.'],
+  ]),
+  ...familia('secretas', 'madrugador', [
+    ['secreta-madrugador', 10, 'Galo do plantão', '6h', 'prata', 'Responda 10 questões entre 5 e 7 da manhã.'],
+  ], true),
+  ...familia('secretas', 'sextou', [
+    ['secreta-sextou', 20, 'Sextou no plantão', 'sex', 'ouro', 'Responda 20 questões numa sexta-feira depois das 20h.'],
+  ], true),
   ...familia('secretas', 'madrugada', [
     ['secreta-madrugada', 1, 'Coruja de plantão', '3h', 'ouro', 'Responda uma questão entre meia-noite e 5 da manhã.'],
   ], true),
@@ -179,9 +216,20 @@ export interface Metricas {
   gabarito: number
   madrugada: number
   fimDeSemana: number
+  sessaoLonga: number
+  favoritas: number
+  notas: number
+  madrugador: number
+  sextou: number
+  /** Marcador das conquistas por tema: o valor real vem de porTema. */
+  acertosTema: number
+  porTema: Record<string, number>
 }
 
+type MetricaNumerica = Exclude<keyof Metricas, 'porTema'>
+
 interface SessaoConcluida { respondidas: number; acertos: number }
+export interface Extras { favoritas?: number; notas?: number }
 
 /**
  * Lê as métricas das respostas e das sessões. Os eventos por dia vêm do
@@ -189,14 +237,17 @@ interface SessaoConcluida { respondidas: number; acertos: number }
  * registros antigos, da data da última resposta; por isso dias, maratona e
  * acertos seguidos são estimativas que só crescem com o uso.
  */
-export function calcularMetricas(respondidas: Record<string, Partial<RegistroQuestao>>, sessoes: readonly SessaoConcluida[] = [], agora = Date.now()): Metricas {
+export function calcularMetricas(respondidas: Record<string, Partial<RegistroQuestao>>, sessoes: readonly SessaoConcluida[] = [], extras: Extras = {}, agora = Date.now()): Metricas {
   const temas = new Set<string>()
   const porDia = new Map<string, number>()
   const eventos: Array<{ em: number; correta: boolean | null }> = []
-  let acertos = 0, dominadasTotal = 0, redencao = 0, madrugada = 0, fimDeSemana = 0
+  let acertos = 0, dominadasTotal = 0, redencao = 0, madrugada = 0, fimDeSemana = 0, madrugador = 0
+  const porTema: Record<string, number> = {}
+  const sextaNoite = new Map<string, number>()
   for (const [id, registro] of Object.entries(respondidas)) {
-    temas.add(id.replace(/-\d+$/, ''))
-    if (registro.c === true) acertos++
+    const tema = id.replace(/-\d+$/, '')
+    temas.add(tema)
+    if (registro.c === true) { acertos++; porTema[tema] = (porTema[tema] ?? 0) + 1 }
     if (dominada(registro)) dominadasTotal++
     if (registro.c === true && ((registro.erros ?? 0) > 0 || registro.historico?.some((e) => e.correta === false))) redencao++
     const lista = registro.historico?.length ? registro.historico : registro.q ? [{ em: registro.q, correta: registro.c ?? null }] : []
@@ -206,6 +257,8 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
       porDia.set(chave, (porDia.get(chave) ?? 0) + 1)
       const data = new Date(evento.em)
       if (data.getHours() < 5) madrugada++
+      if (data.getHours() >= 5 && data.getHours() < 7) madrugador++
+      if (data.getDay() === 5 && data.getHours() >= 20) { const c = chaveDia(evento.em); sextaNoite.set(c, (sextaNoite.get(c) ?? 0) + 1) }
       if (data.getDay() === 0 || data.getDay() === 6) fimDeSemana++
     }
   }
@@ -230,7 +283,18 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     gabarito: sessoes.filter((s) => s.respondidas >= 10 && s.acertos === s.respondidas).length,
     madrugada,
     fimDeSemana,
+    sessaoLonga: Math.max(0, ...sessoes.map((s) => s.respondidas)),
+    favoritas: extras.favoritas ?? 0,
+    notas: extras.notas ?? 0,
+    madrugador,
+    sextou: Math.max(0, ...sextaNoite.values()),
+    acertosTema: 0,
+    porTema,
   }
 }
 
-export const desbloqueado = (emblema: Emblema, metricas: Metricas) => metricas[emblema.metrica] >= emblema.minimo
+/** Valor atual da métrica de um emblema; os de tema leem o acerto daquele tema. */
+export const valorDe = (emblema: Emblema, metricas: Metricas): number =>
+  emblema.familia === 'mestre' ? metricas.porTema[emblema.id.replace(/^mestre-/, '')] ?? 0 : metricas[emblema.metrica]
+
+export const desbloqueado = (emblema: Emblema, metricas: Metricas) => valorDe(emblema, metricas) >= emblema.minimo

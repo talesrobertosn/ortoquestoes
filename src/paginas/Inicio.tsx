@@ -24,6 +24,9 @@ import { planoRevisao } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
 import { calcularStreak } from '../estado/streak'
 import { FUSO_DIA, chaveDia } from '../estado/limiteDiario'
+import { usarConquistas } from '../estado/usarConquistas'
+import { recurso } from '../config'
+import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Inicio.css'
 
 // A maior parte do acervo ainda não distingue TEOT de TARO (prova genérica
@@ -73,6 +76,7 @@ export function Inicio() {
   const { indice, carregando } = usarIndice()
   const { iniciar } = usarSessao()
   const { sessao: conta } = usarConta()
+  const { conquistadas, total: totalConquistas, streak: sequenciaViva } = usarConquistas()
   // Sem conta, as questões ficam fechadas (ver config.ts): o botão principal leva ao cadastro.
   const pedeConta = EXIGIR_CONTA_PARA_QUESTOES && contasDisponiveis && !conta
   const [sessao] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
@@ -269,6 +273,21 @@ export function Inicio() {
 
       {indice && contagens && indice.total > 0 && (
         <>
+          <section className="inicio-ranking" aria-label="Ranking e conquistas">
+            <img className="inicio-ranking__coroa" src={recurso('emblemas/podio-1.png')} alt="" width={72} height={72} />
+            <div className="inicio-ranking__texto">
+              <p className="inicio-ranking__selo">Ranking e conquistas</p>
+              <h2>{conta ? 'Suba no ranking e destrave emblemas' : 'Entre no ranking de quem mais estuda'}</h2>
+              <p>{conta
+                ? <>Você tem <b>{conquistadas}</b> de {totalConquistas} conquistas{sequenciaViva.atual >= 3 ? <> · <b>{sequenciaViva.atual} dias</b> seguidos</> : ''}. Exiba três no seu nome.</>
+                : 'Cada questão respondida conta pontos, destrava emblemas e acende a sua fogueira de dias seguidos.'}</p>
+            </div>
+            <div className="inicio-ranking__acoes">
+              <a className="botao botao--ouro" href={href('/ranking')}>Ver ranking</a>
+              <a className="botao inicio-ranking__secundario" href={href('/conquistas')}>Minhas conquistas</a>
+            </div>
+          </section>
+
           <nav className="inicio-atalhos" aria-label="Atalhos">
             <a className="inicio-atalho" href={href('/treinar')}>
               <span className="inicio-atalho__icone"><Icone nome="livro" tamanho={22} /></span>
