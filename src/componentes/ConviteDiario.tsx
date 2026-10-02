@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { SITE } from '../config'
 import { Icone } from './Icone'
-import { JanelaCentral } from './JanelaCentral'
+import { createPortal } from 'react-dom'
+import { recurso } from '../config'
+import '@fontsource/pixelify-sans/latin-700.css'
 import { IconeWhatsapp } from './ConviteCompartilhar'
 
 /**
@@ -96,34 +98,44 @@ export function ConviteDiario({ caminho }: { caminho: string }) {
     } catch { /* cancelou */ }
   }
 
-  return (
-    <JanelaCentral aberta={aberto} aoFechar={() => definirAberto(false)} rotulo="Ajude o site a crescer" className="cd">
-      <div className="cd__corpo">
-        <span className="cd__selo" aria-hidden="true"><Icone nome="grupo" tamanho={30} /></span>
-        <h2 className="cd__titulo">Ajude o {SITE.nome} a crescer</h2>
-        <p className="cd__texto">
-          O site é um projeto independente e cresce de boca em boca. Se ele está te ajudando, mande para os colegas da residência:
-          as questões gratuitas renovam todo dia, e estudar junto rende mais (e deixa o ranking mais disputado).
-        </p>
-        <div className="cd__acoes">
-          <a className="cd__botao cd__botao--whatsapp" href={`https://wa.me/?text=${encodeURIComponent(TEXTO_CONVITE)}`} target="_blank" rel="noopener noreferrer"
-            onClick={() => { compartilhou(); definirAberto(false) }}>
-            <IconeWhatsapp tamanho={22} /> Mandar no WhatsApp
-          </a>
-          <button type="button" className="cd__botao" onClick={() => copiar('texto')}>
-            <Icone nome={copiado === 'texto' ? 'certo' : 'copiar'} tamanho={18} />{copiado === 'texto' ? 'Mensagem copiada' : 'Copiar link com mensagem'}
-          </button>
-          <button type="button" className="cd__botao" onClick={() => copiar('link')}>
-            <Icone nome={copiado === 'link' ? 'certo' : 'link'} tamanho={18} />{copiado === 'link' ? 'Link copiado' : 'Copiar só o link'}
-          </button>
-          {outros && <button type="button" className="cd__botao" onClick={outrosApps}><Icone nome="compartilhar" tamanho={18} /> Outros apps</button>}
+  useEffect(() => {
+    if (!aberto) return
+    const tecla = (e: KeyboardEvent) => { if (e.key === 'Escape') definirAberto(false) }
+    window.addEventListener('keydown', tecla)
+    return () => window.removeEventListener('keydown', tecla)
+  }, [aberto])
+
+  if (!aberto) return null
+  // Não é modal: fica no canto (computador) ou sobe de baixo (celular) e a página continua usável.
+  return createPortal(
+    <aside className="cd nao-imprime" role="dialog" aria-modal="false" aria-labelledby="cd-titulo">
+      <button type="button" className="cd__fechar" onClick={() => definirAberto(false)} aria-label="Fechar"><Icone nome="fechar" tamanho={26} /></button>
+      <header className="cd__topo">
+        <img className="cd__carta" src={recurso('ranking/carta.png')} width={72} height={56} alt="" draggable={false} />
+        <div>
+          <p className="cd__selo">Nova missão</p>
+          <h2 className="cd__titulo" id="cd-titulo">Recrute sua guilda</h2>
         </div>
-        <details className="cd__previa">
-          <summary>Ver a mensagem</summary>
-          <p>{TEXTO_CONVITE}</p>
-        </details>
-        <button type="button" className="cd__depois" onClick={() => definirAberto(false)}>Agora não</button>
+      </header>
+      <p className="cd__texto">
+        Chame os colegas da residência para a jornada. As questões gratuitas renovam todo dia, e estudar em grupo rende mais.
+      </p>
+      <p className="cd__recompensa"><img src={recurso('ranking/chama.png')} width={18} height={18} alt="" /> <span><b>Recompensa:</b> rivais à altura no ranking e o {SITE.nome} crescendo.</span></p>
+      <div className="cd__acoes">
+        <a className="cd__botao cd__botao--whatsapp" href={`https://wa.me/?text=${encodeURIComponent(TEXTO_CONVITE)}`} target="_blank" rel="noopener noreferrer"
+          onClick={() => { compartilhou(); definirAberto(false) }}>
+          <IconeWhatsapp tamanho={20} /> Mandar no WhatsApp
+        </a>
+        <button type="button" className="cd__botao" onClick={() => copiar('texto')}>
+          <Icone nome={copiado === 'texto' ? 'certo' : 'copiar'} tamanho={16} />{copiado === 'texto' ? 'Copiado!' : 'Copiar convite'}
+        </button>
+        <button type="button" className="cd__botao" onClick={() => copiar('link')}>
+          <Icone nome={copiado === 'link' ? 'certo' : 'link'} tamanho={16} />{copiado === 'link' ? 'Copiado!' : 'Copiar link'}
+        </button>
+        {outros && <button type="button" className="cd__botao cd__botao--largo" onClick={outrosApps}><Icone nome="compartilhar" tamanho={16} /> Outros apps</button>}
       </div>
-    </JanelaCentral>
+      <button type="button" className="cd__depois" onClick={() => definirAberto(false)}>Fica para a próxima</button>
+    </aside>,
+    document.body,
   )
 }

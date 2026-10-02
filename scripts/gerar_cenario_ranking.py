@@ -174,7 +174,35 @@ def tachinha() -> None:
     ], {"k": "#3b1d0c", "f": "#b8733f", "w": "#f7d2ae", "d": "#7a4220"})
 
 
+def carta() -> None:
+    """Carta lacrada do convite para compartilhar (18x14)."""
+    W, H = 18, 14
+    linhas = [["."] * W for _ in range(H)]
+    for y in range(1, H - 1):
+        for x in range(1, W - 1):
+            linhas[y][x] = "p"
+    for x in range(W):
+        linhas[0][x] = linhas[H - 1][x] = "k"
+    for y in range(H):
+        linhas[y][0] = linhas[y][W - 1] = "k"
+    for i in range(8):  # aba do envelope, das pontas de cima até o meio
+        for x in (1 + i, W - 2 - i):
+            if 1 + i < H - 1:
+                linhas[1 + i][x] = "d"
+    for y in range(H - 4, H - 1):
+        for x in range(1, W - 1):
+            if linhas[y][x] == "p":
+                linhas[y][x] = "s"
+    selo = [(8, 7), (9, 7), (7, 8), (8, 8), (9, 8), (10, 8), (7, 9), (8, 9), (9, 9), (10, 9), (8, 10), (9, 10)]
+    for (x, y) in selo:
+        linhas[y][x] = "r"
+    linhas[8][8] = "w"
+    desenho("carta", ["".join(l) for l in linhas],
+            {"k": "#3b2410", "p": "#f6e9c6", "d": "#c9a86a", "s": "#ead7a6", "r": "#b3261e", "w": "#f07a6a"})
+
+
 if __name__ == "__main__":
+    carta()
     arena()
     tocha()
     chama()
