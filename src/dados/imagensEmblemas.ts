@@ -9,6 +9,7 @@ export const EMBLEMAS_COM_IMAGEM: ReadonlySet<string> = new Set<string>([
   'questoes-250',
   'questoes-500',
   'questoes-1000',
+  'questoes-3000',
   'fogueira',
   'sequencia-3',
 ])
