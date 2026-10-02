@@ -228,73 +228,74 @@
   "conferido": false
  },
  "coluna-0017": {
-  "conceito": "### Critérios de Sörensen (Scheuermann)\n- **Principal:** ==acunhamento anterior de mais de 5° em 3 vértebras adjacentes== no ápice da cifose.\n- **Associados:**\n  - ==irregularidade das placas terminais==;\n  - **nódulos de Schmorl**;\n  - **estreitamento discal**.\n\n### Scheuermann × cifose postural\n| | Scheuermann | Postural |\n|---|---|---|\n| Vértebras | **acunhadas** | normais |\n| Hiperextensão | **não corrige** (rígida) | corrige |\n| Adams, visto de lado | **angulação** aguda no ápice | curva suave |\n\n### Associações\n- **Escoliose leve:** comum, mas não é critério e **não é degenerativa**.\n- **Hiperlordose lombar:** compensatória.\n- **Isquiotibiais encurtados.**\n- **Espondilólise:** frequência aumentada.\n\n> **Na prova:** Sörensen = ==3 vértebras com mais de 5°== + placas irregulares.",
-  "correta": "**Acunhamento de mais de 5° em 3 vértebras + placas terminais irregulares.**",
   "incorretas": {
-   "A": "**Estreitamento discal e escoliose degenerativa.**\n- A escoliose degenerativa não é critério.",
-   "B": "**Estreitamento e hiperlordose rígida.**\n- A hiperlordose é **compensatória**, e em geral **flexível**.",
-   "C": "**Acunhamento e escoliose degenerativa.**\n- O acunhamento está certo, mas a escoliose degenerativa não entra."
+   "A": "**Escoliose degenerativa não tem relação.** É a curva do idoso por desgaste de discos e facetas. O estreitamento discal pode aparecer na Scheuermann, mas sem o acunhamento das três vértebras não há diagnóstico.",
+   "B": "**A hiperlordose é compensatória e geralmente flexível.** Ela surge para equilibrar a cifose acima, não é rígida e não faz parte dos critérios.",
+   "C": "**Metade certa.** O acunhamento de três vértebras é o critério central, mas a escoliose degenerativa é doença do idoso e não pertence à descrição de Sörensen."
   },
+  "conceito": "**O que é a doença de Scheuermann.** É uma cifose torácica rígida que aparece na adolescência. Cifose é a curvatura da coluna com a convexidade para trás. Até cerca de 40 a 45 graus de cifose torácica é normal; na Scheuermann ela aumenta porque algumas vértebras crescem menos na frente do que atrás e ficam em forma de cunha.\n\n**A doença está na placa terminal.** A placa terminal é a camada de cartilagem que cobre as faces superior e inferior do corpo vertebral e responde pelo seu crescimento em altura. Na Scheuermann ela é irregular e fraca. O disco atravessa a placa e se aloja dentro do osso (nódulo de Schmorl), o espaço do disco diminui e a frente do corpo vertebral cresce menos, gerando a cunha.\n\n**Os critérios de Sörensen.** O critério central é o **acunhamento anterior de mais de 5 graus em três vértebras adjacentes** no ápice da cifose. Acunhamento é medido pelo ângulo entre a placa superior e a inferior da mesma vértebra. A ele se somam os sinais da doença da placa: **irregularidade das placas terminais**, nódulos de Schmorl e estreitamento do espaço discal. A banca combina o acunhamento com a irregularidade das placas.\n\n**O que não é critério.** A **hiperlordose lombar** abaixo da cifose é compensação para manter o tronco equilibrado e costuma ser flexível. Uma **escoliose** leve pode acompanhar a Scheuermann, mas não define a doença; e o termo escoliose degenerativa se refere a outra doença, a curva lateral do idoso causada por desgaste de discos e facetas, sem relação com o adolescente.\n\n**Como diferenciar da cifose postural.** Na postural as vértebras são normais e a curva corrige quando o adolescente se estende; na Scheuermann a curva é rígida e, vista de lado no teste de inclinação para a frente, forma um ângulo agudo no ápice.\n\n**Na prova:** Sörensen é acunhamento de mais de 5 graus em três vértebras seguidas, com placas terminais irregulares.",
+  "correta": "**Acunhamento anterior maior que 5 graus em três vértebras adjacentes e irregularidade das placas terminais.** São o critério central e o principal achado associado, ambos ligados à doença da placa de crescimento vertebral.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 44"
+   "Sørensen KH. Scheuermann's juvenile kyphosis: clinical appearances, radiography, aetiology and prognosis. Copenhagen: Munksgaard; 1964."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0018": {
-  "conceito": "### Marcos dermatômicos\n| Dermátomo | Marco |\n|---|---|\n| C5 | face lateral do braço (deltoide) |\n| C6 | polegar |\n| C7 | dedo médio |\n| C8 | dedo mínimo |\n| T4 | linha dos **mamilos** |\n| T6 | apêndice **xifoide** |\n| ==T10== | ==cicatriz umbilical== |\n| T12 / L1 | região **inguinal** |\n| L4 | face medial da perna |\n| L5 | dorso do pé |\n| S1 | borda lateral do pé |\n| S3-S5 | região **perianal** (sela) |\n\n### Nível neurológico × nível ósseo\n- O **nível neurológico** é o segmento mais caudal com função normal (**ASIA**).\n- A medula é **mais curta** que o canal (termina em L1-L2). Por isso, na região torácica baixa, o **segmento medular** fica **acima** da vértebra de mesmo número. Uma lesão neurológica em T10 corresponde a uma fratura mais alta (em torno de T8).\n\n### Reflexo abdominal e sinal de Beevor\nNa lesão em T10, a porção **superior** do reto abdominal funciona e a **inferior** não. Ao tentar sentar, a **cicatriz umbilical sobe**: é o **sinal de Beevor**.\n\n> **Na prova:** nível sensitivo na cicatriz umbilical = ==T10==.",
-  "correta": "**T10.**\n- Dermátomo da cicatriz umbilical.",
   "incorretas": {
-   "A": "**T4.**\n- Linha dos **mamilos**.",
-   "B": "**T7.**\n- Entre o xifoide (T6) e a cicatriz umbilical.",
-   "D": "**T12.**\n- Região **inguinal**."
+   "A": "**T4 é a linha dos mamilos.** Uma lesão em T4 tiraria a sensibilidade muito acima do umbigo, desde o peito.",
+   "B": "**T7 fica entre o xifoide e o umbigo.** O nível sensitivo começaria acima da cicatriz umbilical, na parte alta do abdome.",
+   "D": "**T12 fica perto da região inguinal.** Uma lesão em T12 preservaria a sensibilidade do abdome e só a perderia a partir da parte mais baixa, junto da virilha."
   },
+  "conceito": "**O que é um dermátomo.** Cada raiz nervosa da medula recebe a sensibilidade de uma faixa de pele, chamada dermátomo. No tronco, os dermátomos torácicos formam faixas horizontais, como anéis empilhados. Conhecer alguns marcos permite descobrir o nível de uma lesão medular só pelo exame da sensibilidade.\n\n**Os marcos do tronco.** **T4** passa na linha dos mamilos. **T6** passa no apêndice xifoide, a ponta inferior do esterno. **T10** passa na **cicatriz umbilical**. **T12** passa logo acima da região inguinal, e **L1**, na virilha. Um paciente que não sente nada abaixo do umbigo e não move as pernas tem lesão medular no nível neurológico **T10**.\n\n**Nível neurológico e nível da vértebra.** O nível neurológico, pela padronização da ASIA (a associação norte-americana de lesão medular), é o segmento mais baixo da medula com sensibilidade e força normais. Ele não é obrigatoriamente o número da vértebra fraturada. A medula é mais curta do que a coluna e termina na altura de L1-L2; na coluna torácica baixa, o segmento medular fica cerca de dois níveis acima da vértebra de mesmo número. Por isso uma lesão neurológica em T10 costuma corresponder a uma fratura em torno de T8. A pergunta, porém, pede o nível da lesão pela sensibilidade.\n\n**Um sinal que confirma T10: Beevor.** Os músculos abdominais também são inervados em faixas. Na lesão em T10 a parte superior do reto abdominal funciona e a inferior não. Quando o paciente tenta levantar a cabeça deitado, a parte superior puxa e o umbigo sobe. É o sinal de Beevor.\n\n**Na prova:** umbigo é T10; mamilo é T4; xifoide é T6; região inguinal é T12 e L1.",
+  "correta": "**T10.** A cicatriz umbilical é o marco do dermátomo de T10, então a perda de sensibilidade a partir dela indica lesão nesse nível neurológico.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 41"
+   "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0019": {
-  "conceito": "### Neurofibromatose tipo 1 e o esqueleto\n- ==Escoliose==: a manifestação esquelética **mais frequente**, em uma parcela importante dos pacientes (as séries variam em torno de 10% a 30%).\n- **Pseudartrose congênita da tíbia:** fortemente associada (cerca de metade dos casos ocorre em portadores), mas **rara** entre os pacientes com NF1.\n- Outras: displasia da asa do esfenoide, hipertrofia de membro, lesões ósseas císticas.\n\n### Os dois tipos de escoliose\n| | Não distrófica | Distrófica |\n|---|---|---|\n| Comportamento | como a idiopática | **agressiva** |\n| Curva | longa | **curta, angulada**, poucos níveis, **cifoescoliose** |\n| Achados | nenhum especial | escalopamento vertebral, **costelas em lápis**, pedículos finos, forames alargados, **ectasia dural**, neurofibromas |\n| Órtese | pode funcionar | **não funciona** |\n| Cirurgia | como na idiopática | **precoce**, anterior + posterior; alto índice de **pseudartrose** |\n\nCurvas **não distróficas** podem \"**modular**\" para distróficas com o tempo, principalmente na criança pequena. Por isso, seguimento próximo.\n\n> **Na prova:** manifestação esquelética mais comum da NF1 = ==escoliose==.",
-  "correta": "**Escoliose.**",
   "incorretas": {
-   "B": "**Sinostose radioulnar.**\n- Não é manifestação característica da NF1.",
-   "C": "**Pseudartrose congênita da tíbia.**\n- Muito associada à NF1, mas **bem menos frequente** que a escoliose entre os pacientes.",
-   "D": "**Pseudartrose congênita da clavícula.**\n- Entidade independente, quase sempre à **direita**."
+   "B": "**Sinostose radioulnar não é marca da NF1.** É a fusão congênita entre rádio e ulna na parte proximal do antebraço, que impede a rotação. Pode ser isolada ou associada a síndromes cromossômicas, não à neurofibromatose.",
+   "C": "**Associada, mas rara.** Cerca de metade das pseudartroses congênitas da tíbia ocorre em pacientes com NF1, mas entre os portadores de NF1 ela é bem menos frequente que a escoliose.",
+   "D": "**Pseudartrose congênita da clavícula é outra entidade.** É uma falha na união dos dois núcleos de ossificação da clavícula, quase sempre à direita, sem associação com a neurofibromatose."
   },
+  "conceito": "**O que é a neurofibromatose tipo 1.** É uma doença genética autossômica dominante, causada por mutação no gene NF1, que regula o crescimento celular. Seus sinais mais conhecidos são as manchas café com leite na pele, os neurofibromas (tumores benignos dos nervos), as sardas nas axilas e virilhas e os nódulos de Lisch na íris. Ela também afeta o esqueleto de várias formas.\n\n**A escoliose é a manifestação esquelética mais frequente.** Escoliose é o desvio lateral da coluna com rotação das vértebras. Na NF1 aparece numa parcela importante dos pacientes, e por isso é a resposta. Existem dois tipos. A **não distrófica** se comporta como a escoliose idiopática do adolescente, com curva longa e tratamento semelhante. A **distrófica** é agressiva: curva curta e angulada em poucas vértebras, frequentemente com cifose, vértebras com a parede de trás escavada, costelas finas como lápis, pedículos finos, forames alargados e dilatação do saco dural (ectasia). Ela progride rápido, não responde ao colete e exige artrodese precoce, com alto risco de pseudartrose (falha da fusão). Uma curva não distrófica pode se transformar em distrófica com o tempo, fenômeno chamado modulação, especialmente em crianças pequenas.\n\n**A pseudartrose congênita da tíbia.** É uma fratura da tíbia que não consolida, presente desde o nascimento ou surgida no início da vida sobre um osso arqueado. Cerca de metade dos casos acontece em portadores de NF1, ou seja, a associação é forte. Mas, entre todos os pacientes com NF1, ela é rara. Essa diferença entre \"muito associada\" e \"muito frequente\" é a armadilha da questão.\n\n**Outras alterações ósseas.** Displasia da asa do esfenoide, crescimento exagerado de um membro e lesões ósseas císticas.\n\n**Na prova:** a manifestação esquelética mais comum da NF1 é a escoliose; a pseudartrose congênita da tíbia é muito associada, mas rara.",
+  "correta": "**Escoliose.** É a alteração esquelética mais frequente da neurofibromatose tipo 1, nas formas não distrófica e distrófica.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 9"
+   "Durrani AA, Crawford AH, Chouhdry SN, Saifuddin A, Morley TR. Modulation of spinal deformities in patients with neurofibromatosis type 1. Spine. 2000;25(1):69-75."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0020": {
-  "conceito": "### Procedimento de Gill\nNa espondilolistese **ístmica**, o defeito da pars separa o **arco posterior** de L5 do corpo:\n- o **corpo** escorrega para frente;\n- o **arco solto** fica para trás;\n- forma-se um **tecido fibrocartilaginoso** no defeito (\"calo de Gill\"), que comprime a **raiz de L5** no forame.\n\nO **procedimento de Gill** é a ==remoção do arco posterior solto de L5== (laminectomia) e do tecido fibroso do defeito, **descomprimindo** a raiz.\n\n### Limitação\nIsolado, remove a pouca contenção posterior restante, com risco de **progressão** do escorregamento, especialmente em jovens. Hoje, é feito **com artrodese** posterolateral e/ou intersomática, em geral instrumentada.\n\n### Outras técnicas\n- **Reparo direto da pars** (Buck, Scott, parafuso-gancho): para a **espondilólise** sem escorregamento significativo, em jovens com disco normal.\n- **Artrodese in situ** L5-S1 (ou L4-S1 no alto grau).\n\n> **Na prova:** Gill = ==laminectomia de L5== (remoção do arco solto).",
-  "correta": "**Laminectomia descompressiva de L5.**\n- Remove o arco posterior solto e o tecido do defeito.",
   "incorretas": {
-   "A": "**Artrodese posterolateral.**\n- É o **complemento** do Gill, não a técnica em si.",
-   "C": "**Laminectomia de S1.**\n- O elemento removido é o arco solto de **L5**.",
-   "D": "**Artrodese intersomática anterior.**\n- É outro procedimento (ALIF), com finalidade de fusão."
+   "A": "**A artrodese posterolateral é o complemento, não a técnica.** Ela funde L5 ao sacro pela lateral e é associada ao Gill justamente para evitar que o escorregamento progrida depois da descompressão.",
+   "C": "**O arco solto é o de L5, não o de S1.** O defeito da pars está em L5, e é o arco dessa vértebra que fica livre e comprime as raízes. O sacro mantém seus elementos posteriores.",
+   "D": "**A artrodese intersomática anterior é outro procedimento.** Nela o disco L5-S1 é retirado pela frente do abdome e substituído por enxerto ou espaçador para fundir as vértebras. O objetivo é a fusão, não a descompressão por retirada do arco."
   },
+  "conceito": "**O que acontece na espondilolistese ístmica.** A pars interarticularis é a ponte de osso que liga a parte da frente da vértebra (corpo e pedículos) à parte de trás (lâmina, processo espinhoso e faceta inferior). Na espondilolistese **ístmica** essa ponte tem um defeito, geralmente uma fratura por estresse em L5. A vértebra fica dividida em duas: o corpo escorrega para a frente sobre o sacro, e o arco posterior fica para trás, solto.\n\n**Por que a raiz de L5 sofre.** No local do defeito forma-se um tecido fibroso e cartilaginoso de reparo, que tenta unir os fragmentos sem conseguir. Esse tecido, junto com o arco solto e o forame deformado pelo escorregamento, comprime a **raiz de L5** quando ela sai pelo forame. O paciente tem dor ciática no território de L5.\n\n**O procedimento de Gill.** Descrito por Gill em 1955, consiste em retirar o **arco posterior solto de L5**, ou seja, uma **laminectomia de L5**, junto com o tecido fibroso do defeito, liberando as raízes. É uma cirurgia de descompressão, não de fusão.\n\n**O limite da técnica isolada.** Tirar o arco remove o pouco que restava de contenção posterior, e em pacientes jovens o escorregamento pode progredir. Por isso hoje o Gill raramente é feito sozinho: ele é combinado com artrodese, a fusão entre L5 e S1, posterolateral ou intersomática, em geral com parafusos.\n\n**Outras técnicas.** Na espondilólise sem escorregamento importante, em jovens com disco normal, pode-se reparar diretamente o defeito da pars (técnicas de Buck ou de Scott). No escorregamento, faz-se a artrodese in situ ou com redução parcial.\n\n**Na prova:** Gill é a retirada do arco solto de L5, uma laminectomia descompressiva de L5.",
+  "correta": "**Laminectomia descompressiva de L5.** O procedimento de Gill remove o arco posterior solto de L5 e o tecido fibroso do defeito da pars, descomprimindo as raízes.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 11"
+   "Gill GG, Manning JG, White HL. Surgical treatment of spondylolisthesis without spine fusion: excision of the loose lamina with decompression of the nerve roots. J Bone Joint Surg Am. 1955;37-A(3):493-520."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0021": {
-  "conceito": "### Qual raiz o disco cervical comprime\nNa cervical, a raiz sai **acima** da vértebra de mesmo número (há 8 raízes cervicais para 7 vértebras). O disco comprime a raiz de número da vértebra ==inferior==: o disco **C5-C6** comprime **C6**.\n\n### Mapa radicular cervical\n| Raiz | Sensibilidade | Força | Reflexo |\n|---|---|---|---|\n| C5 | face lateral do ombro e braço | deltoide (abdução), bíceps | bicipital |\n| ==C6== | ==polegar e indicador==, face radial do antebraço | ==bíceps==, extensores do punho | ==braquiorradial== |\n| C7 | dedo médio | tríceps, flexores do punho | tricipital |\n| C8 | dedo mínimo, face ulnar | flexores dos dedos | nenhum |\n| T1 | face medial do braço | intrínsecos da mão | nenhum |\n\n### Na prática\n- C6 é a radiculopatia **mais comum** junto com C7.\n- O **teste de Spurling** (extensão + rotação + compressão para o lado sintomático) reproduz a dor radicular.\n- O **sinal da abdução do ombro** (mão sobre a cabeça, que alivia a dor) sugere compressão radicular.\n\n> **Na prova:** polegar + bíceps + braquiorradial = ==C6== = disco ==C5-C6==.",
-  "correta": "**C5/C6 comprimindo C6.**",
   "incorretas": {
-   "A": "**C4/C5, raiz C4.**\n- O disco C4/C5 comprime **C5**, e o quadro não é de C4.",
-   "B": "**C4/C5, raiz C5.**\n- C5 altera o reflexo **bicipital** e o deltoide; a sensibilidade é na face lateral do braço.",
-   "C": "**C5/C6, raiz C5.**\n- O disco C5/C6 comprime **C6**."
+   "A": "**Disco e raiz não combinam.** O disco C4/C5 comprime a raiz C5, e não a C4. Além disso, a C4 não dá o quadro descrito: sua sensibilidade é na base do pescoço e no alto do ombro.",
+   "B": "**Descreve outra raiz.** O disco C4/C5 de fato comprime a C5, mas a C5 dá sensibilidade na face lateral do ombro e do braço, fraqueza do deltoide e reflexo bicipital, e não polegar com braquiorradial.",
+   "C": "**O disco certo, a raiz errada.** Pela regra cervical, o disco C5/C6 comprime a raiz C6, que sai entre essas vértebras. A C5 sai acima de C5, entre C4 e C5."
   },
+  "conceito": "**O que é radiculopatia cervical.** É a compressão de uma raiz nervosa no pescoço, geralmente por hérnia de disco lateral ou por osteófito. A raiz comprimida provoca dor que desce pelo braço e alterações em três funções que ela controla: a **sensibilidade** de uma faixa de pele (dermátomo), a **força** de alguns músculos (miótomo) e um **reflexo**. Juntando os três achados se descobre a raiz.\n\n**Qual raiz cada disco comprime.** A coluna cervical tem 7 vértebras e 8 raízes. A raiz C1 sai acima do atlas, e cada raiz cervical sai **acima** da vértebra de mesmo número. Assim, a raiz que sai entre C5 e C6 é a **C6**, e uma hérnia do disco **C5-C6** comprime a raiz C6. Regra prática: na cervical, o disco comprime a raiz com o número da vértebra de baixo.\n\n**O território de C6.** Sensibilidade no **polegar e no indicador**, seguindo pela face radial do antebraço. Força dos flexores do cotovelo, especialmente o **bíceps** e o braquiorradial, e dos extensores do punho. Reflexo **braquiorradial**, pesquisado batendo no rádio perto do punho. A questão descreve exatamente essa combinação.\n\n**Os vizinhos.** **C5**: face lateral do ombro e do braço, força do deltoide (abdução do ombro) e do bíceps, reflexo bicipital. **C7**: dedo médio, tríceps, reflexo tricipital. **C8**: dedo mínimo e flexores dos dedos, sem reflexo próprio. C5 e C6 dividem o bíceps; o que separa é a sensibilidade e o reflexo.\n\n**Exame complementar.** O teste de Spurling, inclinação e extensão do pescoço para o lado da dor com compressão da cabeça, fecha o forame e reproduz a dor no braço. Pôr a mão do lado afetado sobre a cabeça alivia a tensão da raiz e costuma aliviar a dor.\n\n**Na prova:** polegar, bíceps e braquiorradial é C6, comprimida pelo disco C5-C6.",
+  "correta": "**C5/C6 comprimindo a raiz de C6.** Polegar e indicador, bíceps e reflexo braquiorradial são o território de C6, que sai entre C5 e C6.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 38"
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977.",
+   "Spurling RG, Scoville WB. Lateral rupture of the cervical intervertebral discs: a common cause of shoulder and arm pain. Surg Gynecol Obstet. 1944;78:350-358."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0022": {
@@ -315,17 +316,18 @@
   "conferido": false
  },
  "coluna-0023": {
-  "conceito": "### A artéria vertebral em C1\n1. Sobe pelos **forames transversos** de C6 a C1 (segmento V2).\n2. Ao sair do forame transverso do atlas (segmento V3), curva-se **posteriormente e medialmente**.\n3. Corre **horizontalmente** no **sulco da artéria vertebral**, na face **superior** do arco posterior de C1.\n4. Perfura a membrana atlantoccipital e entra no crânio pelo forame magno (V4).\n\n### A regra de segurança\n- No acesso posterior, dissecar a face **superior** do arco de C1 até no máximo ==~1,5 cm da linha média== (as referências variam de 1,5 a 2 cm, e a distância é menor em crianças).\n- A face **inferior** do arco pode ser dissecada um pouco mais lateralmente.\n- Atenção ao **ponticulus posticus** (arco ósseo sobre a artéria): pode ser confundido com uma lâmina larga, levando o **parafuso de massa lateral** de C1 a entrar muito alto.\n\n### Outras estruturas\n- **C2** (nervo occipital maior): passa **abaixo** do arco de C1, sobre a massa lateral. Na fixação de Harms, costuma ser afastado ou sacrificado, com hipoestesia occipital.\n- **Plexo venoso** entre C1 e C2: sangra muito, mas é controlável.\n\n> **Na prova:** limite de ~1,5 cm na face superior do arco de C1 = proteger a ==artéria vertebral==.",
-  "correta": "**Artéria vertebral.**\n- Corre no sulco da face superior do arco posterior de C1.",
   "incorretas": {
-   "B": "**Raiz de C1.**\n- Pequena, predominantemente motora; lesão sem gravidade comparável.",
-   "C": "**Raiz de C2.**\n- Passa **abaixo** do arco de C1; sua lesão dá dor ou hipoestesia occipital, não hemorragia.",
-   "D": "**Gânglio de C2.**\n- Fica sobre a massa lateral C1-C2; não é o alvo da regra de 1,5 cm."
+   "B": "**A raiz de C1 não é o motivo da regra.** É uma raiz pequena, quase só motora, que acompanha a artéria no sulco. Sua lesão tem consequência mínima e não explica um limite de segurança.",
+   "C": "**A raiz de C2 passa abaixo do arco de C1.** Ela fica sobre a articulação entre C1 e C2, e não na face superior do arco. Sua lesão causa dor ou dormência occipital, não hemorragia grave.",
+   "D": "**O gânglio de C2 também está abaixo do arco.** Fica sobre a articulação entre C1 e C2 e é afastado ou, às vezes, sacrificado na fixação de C1-C2. Não é ele que limita a dissecção lateral da face superior do arco."
   },
+  "conceito": "**A anatomia do atlas.** C1, o atlas, não tem corpo nem processo espinhoso como as outras vértebras: é um anel formado por um arco anterior, um arco posterior e duas massas laterais que sustentam o crânio. No acesso cirúrgico posterior à coluna cervical alta, o cirurgião expõe o arco posterior de C1 a partir da linha média, afastando os músculos para os lados.\n\n**O trajeto da artéria vertebral.** A artéria vertebral sobe pelo pescoço dentro dos forames transversos, orifícios nos processos transversos de C6 até C1. Ao sair do forame transverso do atlas, ela faz uma curva para trás e para dentro e corre **horizontalmente sobre a face superior do arco posterior de C1**, num sulco próprio, antes de perfurar a membrana atlantoccipital e entrar no crânio pelo forame magno. É nesse trecho que ela fica exposta à lesão no acesso posterior.\n\n**A regra de segurança.** Na face superior do arco posterior de C1, a dissecção deve parar a cerca de **1,5 cm da linha média** (as referências variam de 1,5 a 2 cm, menos em crianças). Além disso a artéria fica no caminho, e uma lesão causa hemorragia grave e risco de isquemia do tronco encefálico e do cerebelo. A face inferior do arco pode ser dissecada um pouco mais para os lados. Uma variação a conhecer é o **ponticulus posticus**, uma ponte de osso sobre a artéria que pode parecer parte do arco e enganar quem coloca parafusos na massa lateral de C1.\n\n**As outras estruturas.** A raiz de **C2**, que forma o nervo occipital maior, passa **abaixo** do arco de C1, sobre a articulação entre C1 e C2; sua lesão provoca dormência ou dor na parte de trás da cabeça. Entre C1 e C2 há um plexo venoso que sangra bastante, mas é controlável.\n\n**Na prova:** na face superior do arco de C1, não passar de 1,5 cm da linha média, para proteger a artéria vertebral.",
+  "correta": "**A artéria vertebral.** Ela corre no sulco da face superior do arco posterior de C1, e o limite de 1,5 cm da linha média evita lesioná-la.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 47"
+   "Harms J, Melcher RP. Posterior C1-C2 fusion with polyaxial screw and rod fixation. Spine. 2001;26(22):2467-2471.",
+   "Hoppenfeld S, deBoer P, Buckley R. Surgical Exposures in Orthopaedics: The Anatomic Approach. 4th ed. Philadelphia: Lippincott Williams & Wilkins; 2009."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0024": {
