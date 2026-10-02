@@ -3,9 +3,9 @@
  "atualizadoEm": "2026-10-02",
  "baseCommit": "395a1b10cc0d45f06e9072d8820aa52e90613f3a",
  "branchTrabalho": "codex/enriquecer-comentarios-20261002",
- "pr": null,
- "estadoLote": "preparado_validado",
- "politica": "Primeiro sem comentário elegível; depois melhorar. Preservar revisão médica. Não alterar questões, gabaritos, pagamentos ou Supabase. Não repetir hashes concluídos. Reconstruir filas dos arquivos atuais em cada execução.",
+ "pr": 31,
+ "estadoLote": "em_pr",
+ "politica": "Primeiro sem comentário elegível; depois melhorar. Preservar revisão médica. Não alterar questões, gabaritos, pagamentos ou Supabase. Não repetir hashes concluídos. Reconstruir filas dos arquivos atuais em cada execução. Usuário autorizou em 2026-10-02 publicar blocos no site: após validações, incorporar PR e verificar deploy; continuar a rotina horária.",
  "baselineQuestoes": {
   "coluna-0001": "39f9ecc5dd050091ba72dd5854192a2dfaea7c000d3270ac15955a7b16446446",
   "coluna-0002": "0cce4c3c9e211a4d0038935b23b231c8a6e884625b7c0f7069d4215c50d570a3",
@@ -4724,35 +4724,38 @@
   "mao-0004": {
    "questaoSha256": "a16d7a0d30dabf935d55ad4625015844996f12b4f9da2b13f79719e9da2217fa",
    "comentarioSha256": "5b3ad79b4d178a3d0d832e50589ff5aafc629bea56ac05fa9e9425aa754c7e1e",
-   "estado": "preparado_validado",
+   "estado": "em_pr",
    "data": "2026-10-02",
    "fontes": [
     "Oberlin C et al. Nerve transfer to biceps muscle using a part of ulnar nerve for C5-C6 avulsion of the brachial plexus. J Hand Surg Am. 1994;19(2):232-237. DOI: 10.1016/0363-5023(94)90011-6. https://pubmed.ncbi.nlm.nih.gov/8201186/",
     "Teboul F et al. Transfer of fascicles from the ulnar nerve to the nerve to the biceps in the treatment of upper brachial plexus palsy. J Bone Joint Surg Am. 2004;86(7):1485-1490. DOI: 10.2106/00004623-200407000-00018. https://pubmed.ncbi.nlm.nih.gov/15252097/",
     "Bertelli JA, Ghizoni MF. Transfer of the accessory nerve to the suprascapular nerve in brachial plexus reconstruction. J Hand Surg Am. 2007;32(7):989-998. DOI: 10.1016/j.jhsa.2007.05.016. https://pubmed.ncbi.nlm.nih.gov/17826551/"
-   ]
+   ],
+   "pr": 31
   },
   "mao-0010": {
    "questaoSha256": "2f9c90749c066f80e01c3abae03ecb6169fdde03d54c21fb6995c49481e35c17",
    "comentarioSha256": "b3d4e1dc51459d0f066f64ac8827fb060421c549c4ad3dc5cd94604d928c4edc",
-   "estado": "preparado_validado",
+   "estado": "em_pr",
    "data": "2026-10-02",
    "fontes": [
     "Spontaneous Subclavian Vein Thrombosis in a Healthy Adolescent Cheerleader: A Case of Paget-Schroetter Syndrome. Relato de caso, PMID: 26855343. https://pubmed.ncbi.nlm.nih.gov/26855343/",
     "Brownie ER et al. False-negative upper extremity ultrasound in the initial evaluation of patients with suspected subclavian vein thrombosis due to thoracic outlet syndrome (Paget-Schroetter syndrome). J Vasc Surg Venous Lymphat Disord. 2020;8(1):118-126. DOI: 10.1016/j.jvsv.2019.08.011. https://pubmed.ncbi.nlm.nih.gov/31732483/",
     "Chun TT et al. Preoperative thrombolysis is associated with improved vein patency and functional outcomes after first rib resection in acute Paget-Schroetter syndrome. J Vasc Surg. 2022;76(3):806-813.e1. DOI: 10.1016/j.jvs.2022.03.893. https://pubmed.ncbi.nlm.nih.gov/35643200/"
-   ]
+   ],
+   "pr": 31
   },
   "mao-0011": {
    "questaoSha256": "4d51d45657ab56e8166110872d9144ae1c3fbdd071a402b140bcd8e8a093c3f9",
    "comentarioSha256": "e6965e4320eb8211cbf9791ced5c96b88385cef9023c98416c099a1dac67f6d7",
-   "estado": "preparado_validado",
+   "estado": "em_pr",
    "data": "2026-10-02",
    "fontes": [
     "Montechiarello S et al. The intersection syndrome: Ultrasound findings and their diagnostic value. J Ultrasound. 2010;13(2):70-73. DOI: 10.1016/j.jus.2010.07.009. https://pmc.ncbi.nlm.nih.gov/articles/PMC3552821/",
     "Pantukosit S, Petchkrua W, Stiens SA. Intersection syndrome in Buriram Hospital: a 4-yr prospective study. Am J Phys Med Rehabil. 2001;80(9):656-661. DOI: 10.1097/00002060-200109000-00005. https://pubmed.ncbi.nlm.nih.gov/11523968/",
     "Distal Intersection Syndrome Between Second and Third Dorsal Compartments of the Wrist. Cureus. 2023;15(3):e36919. DOI: 10.7759/cureus.36919. https://pmc.ncbi.nlm.nih.gov/articles/PMC10148692/"
-   ]
+   ],
+   "pr": 31
   }
  },
  "validacao": {
@@ -4762,7 +4765,12 @@
    "avisos": 2685
   },
   "lote": "montar.py e conferir: passou; integridade dos IDs e comentários fora do lote: passou",
-  "limitacao": "Validação completa de imagens e build não executados: snapshot de dados sem assets/código completo. Índice remoto anterior desatualizado. Nenhuma alteração de índice neste PR."
+  "limitacao": "Validação completa executada no GitHub Actions: typecheck, npm test, npm run validar, npm run build e git diff --check passaram no run 37000852362. A diferença entre total bruto e índice corresponde a duplicatas ocultas; índice correto.",
+  "ci": {
+   "runId": 37000852362,
+   "headSha": "31342cba5b10648a769794a38dea384e69df2e7d",
+   "resultado": "success"
+  }
  },
  "filasNoCheckpoint": {
   "contagens": {
@@ -10581,5 +10589,6 @@
    "id": "tumores-0358",
    "motivo": "sem_gabarito_oficial"
   }
- ]
+ ],
+ "proximoPasso": "Verificar PR 31, incorporar após CI do head atual e confirmar publicação. Próximo lote: primeiras questões elegíveis retornadas por estado.py. Reconciliar em_pr/incorporado/publicado pelos PRs e deploys reais, não por esta etiqueta isolada."
 }
