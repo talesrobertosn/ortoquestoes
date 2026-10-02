@@ -2062,45 +2062,46 @@
   "conferido": false
  },
  "coluna-0179": {
-  "conceito": "### SCIWORA (lesão medular sem anormalidade radiográfica)\n- **Quem:** principalmente **crianças** abaixo de ~8 anos.\n- **Por quê:** a coluna infantil é **elástica**:\n  - facetas horizontais;\n  - ligamentos frouxos;\n  - muita cartilagem;\n  - cabeça grande em relação ao corpo.\n  \n  A coluna pode se **deslocar e voltar** ao lugar, lesando a medula (que tolera bem menos estiramento) sem fratura visível.\n- **Diagnóstico:** radiografia e TC **normais**. A **RM** mostra o **edema/hemorragia medular** e lesões ligamentares.\n- **Tratamento:**\n  - ==imobilização== (colar) por semanas, em geral ~12 semanas;\n  - restrição de atividades esportivas;\n  - prevenir a **recorrência**, que ocorre em alguns casos no período vulnerável.\n  - **Não há o que descomprimir:** a compressão foi transitória.\n- **Cirurgia:** só se a RM mostrar **instabilidade ligamentar** franca ou compressão.\n- **Prognóstico:** depende da lesão na RM (sem sinal, edema ou hemorragia) e do déficit inicial.\n\n> **Na prova:** SCIWORA de baixa energia = ==imobilização==.",
-  "correta": "**Imobilização.**",
   "incorretas": {
-   "B": "**Descompressão.**\n- Não há compressão persistente.",
-   "C": "**Descompressão e artrodese.**\n- Excessivo, sem instabilidade estabelecida.",
-   "D": "**Sem imobilização.**\n- Expõe à **recorrência**."
+   "B": "Descompressão pressupõe algo comprimindo a medula. Na SCIWORA, a coluna voltou ao lugar e a imagem não mostra compressão persistente.",
+   "C": "Artrodese seria tratar uma instabilidade que, na grande maioria desses casos, não existe. Fica reservada às raras lesões ligamentares francas.",
+   "D": "Deixar sem imobilização expõe a criança a uma segunda lesão medular durante o período de vulnerabilidade, que pode ser mais grave que a primeira."
   },
+  "conceito": "SCIWORA é a sigla em inglês para lesão medular sem anormalidade radiográfica. O nome já conta a história: a criança chega com déficit neurológico, às vezes leve, às vezes grave, e a radiografia e a tomografia mostram uma coluna perfeitamente normal.\n\nComo isso é possível? A coluna de uma criança pequena é muito elástica. As facetas são mais horizontais, os ligamentos são frouxos, boa parte das vértebras ainda é cartilagem e a cabeça é grande e pesada para o pescoço. No trauma, a coluna se desloca, estica e volta para o lugar como um elástico. A medula, que tolera muito menos estiramento do que o esqueleto, é lesada nesse instante, e quando o médico faz a imagem a coluna já está alinhada de novo. Por isso o quadro é mais comum abaixo dos 8 anos.\n\nA ressonância é o exame que revela o problema: mostra edema ou sangramento dentro da medula e, às vezes, lesão de ligamentos. O tipo de alteração na ressonância também ajuda a prever a recuperação.\n\nE o tratamento? Não há fragmento comprimindo nada, porque a compressão foi momentânea; descomprimir não faz sentido. O que se faz é **imobilizar**, geralmente com colar por cerca de 12 semanas, e afastar a criança de esportes e brincadeiras de risco nesse período. O motivo é que existe uma janela em que a coluna ainda está vulnerável e uma segunda lesão, às vezes com trauma mínimo, pode acontecer e ser pior. A cirurgia fica para os poucos casos em que a ressonância mostra instabilidade ligamentar franca ou compressão.",
+  "correta": "Imobilização. A compressão foi transitória, não há o que descomprimir, e o colar protege a coluna no período em que uma nova lesão é mais provável.",
   "referencias": [
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 20"
+   "Pang D, Wilberger JE Jr. Spinal cord injury without radiographic abnormalities in children. J Neurosurg. 1982;57(1):114-129.",
+   "Pang D. Spinal cord injury without radiographic abnormality in children, 2 decades later. Neurosurgery. 2004;55(6):1325-1343."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0180": {
-  "conceito": "### Osteomielite vertebral (espondilodiscite)\n- **Frequência:** cerca de ==3% a 5%== de todas as osteomielites. Ainda assim, é a osteomielite **hematogênica mais comum do adulto** (sobretudo acima de 50 anos).\n- **Via:** **hematogênica arterial**, com instalação na metáfise junto à placa terminal e depois no **disco**.\n- **Germe:** **S. aureus** o mais comum.\n- **Local:** **lombar** mais que torácica mais que cervical.\n- **Clínica:**\n  - dor axial arrastada, noturna;\n  - **febre em parte** dos casos;\n  - **VHS e PCR elevadas** (a PCR é boa para seguimento);\n  - **diagnóstico tardio** é a regra (semanas a meses).\n- **Diagnóstico:** **RM com contraste**; **hemoculturas** e **biópsia** guiada (antes do antibiótico, se estável).\n- **Tratamento:**\n  - antibiótico por **6 semanas** ou mais;\n  - órtese para a dor;\n  - **cirurgia** em caso de déficit neurológico, abscesso epidural compressivo, instabilidade ou deformidade, ou falha clínica.\n\n> **Na prova:** coluna = ==3% a 5%== das osteomielites.",
-  "correta": "**3% a 5%.**",
   "incorretas": {
-   "B": "**6% a 8%.**\n- Superestima.",
-   "C": "**10% a 12%.**\n- Bem acima do relatado.",
-   "D": "**13% a 15%.**\n- Muito acima."
+   "B": "Superestima. Os valores de 6 a 8% não correspondem aos relatados nas grandes revisões.",
+   "C": "Bem acima do real. A coluna é uma parcela pequena do total de osteomielites.",
+   "D": "Muito acima. Se fosse tanto, a espondilodiscite não seria tão subdiagnosticada como é."
   },
+  "conceito": "É uma daquelas questões de número que só se resolve sabendo o número, mas dá para entender o contexto. A infecção da coluna, chamada osteomielite vertebral ou espondilodiscite, representa apenas cerca de **3 a 5%** de todas as infecções ósseas. Parece pouco, e é, se você somar tudo: as fraturas expostas infectadas, as infecções de prótese, o pé diabético, a osteomielite da criança nos ossos longos.\n\nO curioso é que, mesmo sendo uma fatia pequena do total, ela é a forma mais comum de osteomielite que chega **pelo sangue** no adulto, principalmente depois dos 50 anos. A bactéria, quase sempre o Staphylococcus aureus, se instala no osso junto ao disco, onde o fluxo de sangue é lento, e dali invade o próprio disco. A região lombar é a mais atingida.\n\nO grande problema dela é o atraso. A dor nas costas é arrastada, piora à noite, e só parte dos pacientes tem febre. Muitos passam semanas ou meses tratando uma \"lombalgia\" até alguém pedir uma VHS e uma PCR altas e, depois, uma ressonância com contraste. Antes de começar o antibiótico, sempre que o paciente estiver estável, tenta-se identificar o germe por hemocultura ou biópsia, porque o tratamento dura seis semanas ou mais e precisa estar certo. A cirurgia entra para déficit neurológico, abscesso comprimindo a medula, instabilidade ou falha do tratamento.",
+  "correta": "De 3 a 5%. É a proporção relatada da osteomielite vertebral entre todas as infecções ósseas.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 42"
+   "Zimmerli W. Vertebral osteomyelitis. N Engl J Med. 2010;362(11):1022-1029."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0181": {
-  "conceito": "### Raciocínio\n- **Hérnia foraminal sem compressão central:** ==radiculopatia==, **sem mielopatia**. Não há Hoffmann nem distúrbio de marcha.\n- **Nível C4-C5:** a raiz comprimida é ==C5== (na cervical, a raiz tem o número da vértebra de **baixo**).\n\n### Pacote de C5\n- **Sensibilidade:** face **lateral do ombro e do braço** (região do deltoide).\n- **Motor:** ==deltoide== (abdução do ombro), bíceps (junto com C6), supra e infraespinal.\n- **Reflexo:** ==bicipital==.\n\n### Diferencial importante\nA dor no ombro com fraqueza de abdução pode ser confundida com **lesão do manguito rotador**. Na radiculopatia C5:\n- a **sensibilidade** está alterada;\n- o **reflexo bicipital** está alterado;\n- a dor irradia do pescoço.\n\n> **Na prova:** C4-C5 foraminal = C5 = ==deltoide + reflexo bicipital==.",
-  "correta": "**Fraqueza do deltoide e alteração do reflexo bicipital.**",
   "incorretas": {
-   "A": "**Marcha e Hoffmann.**\n- Sinais de **mielopatia**; não há compressão central.",
-   "B": "**Dedo médio e tríceps.**\n- **C7** (disco C6-C7).",
-   "C": "**Ombro e reflexo tricipital.**\n- O ombro é C5, mas o tricipital é **C7**."
+   "A": "Dificuldade de marcha e Hoffmann são sinais de que a medula está sofrendo. O enunciado diz que não há compressão central.",
+   "B": "Dedo médio e tríceps são da raiz C7, que é comprimida pelo disco C6-C7, dois andares abaixo.",
+   "C": "Metade certa: o ombro é território de C5. Mas o reflexo tricipital pertence à C7; o de C5 é o bicipital."
   },
+  "conceito": "A questão dá duas informações que decidem tudo, e vale ler cada uma com calma.\n\n**\"Foraminal, sem compressão central.\"** A hérnia está no forame, a porta lateral por onde a raiz sai. Ela aperta uma raiz, e não a medula. Então o quadro é de **radiculopatia**: dor, formigamento, fraqueza e reflexo alterados no território de uma raiz. Sinais de compressão da medula, como alteração da marcha, Hoffmann positivo, reflexos exaltados, ficam de fora. Isso já elimina uma alternativa.\n\n**\"C4-C5.\"** No pescoço, cada raiz sai acima da vértebra com o seu número. A raiz que sai entre C4 e C5 é a **C5**.\n\nA C5 tem um território fácil de lembrar porque é todo do ombro. Ela dá a sensibilidade da face lateral do ombro e do braço, na região do deltoide, a força do **deltoide** (abrir o braço para o lado) e participa do bíceps. O reflexo dela é o **bicipital**.\n\nHá uma armadilha clínica aqui que vale ouro no consultório. Uma mulher jovem com dor no ombro e dificuldade de levantar o braço pode facilmente receber o diagnóstico de lesão do manguito rotador. O que separa as duas coisas é o exame neurológico: na radiculopatia de C5 a sensibilidade sobre o deltoide está alterada, o reflexo bicipital está diminuído e a dor muitas vezes vem do pescoço.",
+  "correta": "Fraqueza do deltoide e alteração do reflexo bicipital. É o retrato da raiz C5, que sai pelo forame C4-C5.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 38"
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0182": {
@@ -2118,18 +2119,19 @@
   "conferido": false
  },
  "coluna-0184": {
-  "conceito": "### Escoliose do adulto: duas entidades\n| | Idiopática do adulto | Degenerativa (**de novo**) |\n|---|---|---|\n| Origem | começou na **adolescência** e \"envelheceu\" | surge **após os 40 a 50 anos** em coluna **antes reta** |\n| Curva | longa, torácica ou toracolombar | **curta, lombar**, poucos níveis |\n| Achados | rotação estrutural, compensação | colapso discal assimétrico, **subluxação rotatória / lateral**, artrose facetária |\n| Queixa dominante | deformidade, dor axial, desequilíbrio | **estenose**: claudicação neurogênica, radiculopatia |\n| Cirurgia típica | correção longa, atenção ao equilíbrio sagital | descompressão ± fusão curta, ou longa se houver desequilíbrio |\n\n### Sobre o gabarito\nO enunciado descreve a escoliose **degenerativa / de novo**. O gabarito oficial, porém, marca ==idiopática do adulto== (ver o alerta).\n\n### Classificação SRS-Schwab (deformidade do adulto)\n**Tipo de curva** + **modificadores sagitais**: IP-LL, PT, SVA.\n\n> **Na prova:** gabarito oficial = ==D (idiopática do adulto)==; a literatura chama a curva descrita de ==de novo==.",
-  "correta": "**Idiopática do adulto** (gabarito oficial).\n- Ver o alerta: a curva descrita é a degenerativa (de novo).",
   "incorretas": {
-   "A": "**De novo.**\n- Termo que a literatura usa exatamente para a curva descrita; ver o alerta.",
-   "B": "**Metabólica.**\n- Não é categoria da classificação da escoliose do adulto.",
-   "C": "**Neuromuscular.**\n- Doença neurológica ou muscular de base, geralmente desde a infância."
+   "A": "É o termo que a literatura usa exatamente para o quadro descrito: curva nova, degenerativa, depois dos 40 anos. A banca não a aceitou, o que motiva o alerta.",
+   "B": "Metabólica não é uma categoria da escoliose do adulto. Doenças metabólicas do osso podem favorecer deformidade, mas não dão nome a esse tipo de curva.",
+   "C": "A escoliose neuromuscular depende de uma doença neurológica ou muscular de base, como paralisia cerebral ou distrofia, e geralmente começa na infância."
   },
-  "alerta": "Os dois termos existem e nomeiam coisas diferentes. Escoliose IDIOPÁTICA DO ADULTO é a curva que começou na adolescência e envelheceu junto com o paciente. Escoliose DEGENERATIVA, ou DE NOVO, é a que surge depois da quarta ou quinta década numa coluna que era reta, nasce da degeneração assimétrica do disco e da faceta, tem curva curta, geralmente lombar, com subluxação rotatória e estenose associada. O enunciado descreve exatamente essa segunda, e a alternativa que a nomeia é a A, marcada como errada. Se você respondeu \"de novo\", o erro não foi seu.",
+  "conceito": "Esta é uma questão em que a resposta oficial e a literatura não andam juntas, e vale entender por quê antes de qualquer coisa.\n\nEscoliose no adulto pode ter duas origens bem diferentes. A primeira é a **escoliose idiopática do adulto**: aquela que começou na adolescência, sem causa conhecida, e simplesmente continuou existindo. O paciente envelheceu e a curva envelheceu com ele. Geralmente é torácica ou toracolombar, longa, e às vezes progride lentamente ao longo da vida adulta.\n\nA segunda é a **escoliose degenerativa**, também chamada **de novo** (do latim, \"do zero\"). Ela nasce depois dos 40 ou 50 anos numa coluna que era reta. O desgaste assimétrico dos discos e das facetas faz a coluna lombar entortar, com curvas curtas, vértebras girando e escorregando de lado (subluxação rotatória) e estenose associada. O paciente costuma procurar o médico por dor nas pernas ao andar, mais do que pela deformidade.\n\nO enunciado descreve exatamente a segunda: curva que surgiu após os 40 anos numa coluna sem deformidade prévia. Esse é o conceito de escoliose de novo, que é a alternativa A. O gabarito oficial, porém, marcou idiopática do adulto. Por isso o alerta. Na prova, o que vale é a resposta da banca; no consultório e nos livros, a curva descrita se chama degenerativa ou de novo.\n\nA classificação usada hoje para a deformidade do adulto é a SRS-Schwab, que junta o tipo de curva a modificadores do alinhamento sagital, porque é o desequilíbrio sagital que mais explica a dor e a incapacidade desses pacientes.",
+  "correta": "Idiopática do adulto, segundo o gabarito oficial. Pela definição da literatura, porém, a curva que surge após os 40 anos numa coluna reta é a degenerativa, ou de novo; veja o alerta.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 39"
+   "Aebi M. The adult scoliosis. Eur Spine J. 2005;14(10):925-948.",
+   "Schwab F, Ungar B, Blondel B et al. Scoliosis Research Society-Schwab adult spinal deformity classification: a validation study. Spine. 2012;37(12):1077-1082."
   ],
-  "geradoEm": "2026-09-23",
+  "alerta": "Os dois termos existem e nomeiam coisas diferentes. Escoliose IDIOPÁTICA DO ADULTO é a curva que começou na adolescência e envelheceu junto com o paciente. Escoliose DEGENERATIVA, ou DE NOVO, é a que surge depois da quarta ou quinta década numa coluna que era reta, nasce da degeneração assimétrica do disco e da faceta, tem curva curta, geralmente lombar, com subluxação rotatória e estenose associada. O enunciado descreve exatamente essa segunda, e a alternativa que a nomeia é a A, marcada como errada. Se você respondeu \"de novo\", o erro não foi seu.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0186": {
@@ -2144,25 +2146,32 @@
   "conferido": false
  },
  "coluna-0187": {
-  "conceito": "### Equilíbrio sagital (SVA)\n- **Medida:** linha de prumo do **centro de C7**, com a distância horizontal até o **canto posterossuperior de S1**.\n- **Neutro:** dentro de ~±2 a 5 cm do canto posterossuperior de S1 (o critério varia com a idade).\n- ==Positivo==: a linha cai ==na frente do sacro==. O tronco está deslocado para frente.\n- **Negativo:** a linha cai **atrás** do sacro. É incomum, e pode ocorrer por hiperlordose ou pós-operatório.\n\n### Por que o positivo importa\n- Exige **esforço muscular contínuo** e compensações:\n  - **retroversão pélvica** (PT alto);\n  - flexão dos joelhos;\n  - hiperextensão de segmentos adjacentes.\n- Correlaciona-se com **dor** e **incapacidade** na deformidade do adulto (Glassman, Schwab).\n- **Causas:** perda de lordose (flatback iatrogênico, degeneração), cifose (fraturas, espondilite anquilosante), escoliose degenerativa.\n\n> **Na prova:** balanço sagital positivo = prumo de C7 ==na frente do sacro==.",
-  "correta": "**Na frente do sacro.**",
   "incorretas": {
-   "A": "**No canto posterossuperior de S1.**\n- É a referência do equilíbrio **neutro**.",
-   "B": "**No canto posterossuperior de L5.**\n- L5 não é a referência.",
-   "D": "**Atrás do sacro.**\n- Balanço **negativo**."
+   "A": "O canto posterossuperior de S1 é o ponto de referência do equilíbrio neutro. Uma linha passando ali descreve um tronco bem alinhado sobre a pelve.",
+   "B": "L5 não é o ponto de referência da medida. O SVA é sempre comparado com o canto posterossuperior de S1.",
+   "D": "Linha atrás do sacro é o balanço sagital negativo, o contrário do que se pergunta."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Para saber se um corpo está equilibrado de perfil, os cirurgiões de coluna usam uma ferramenta de pedreiro: o fio de prumo.\n\nNa radiografia de perfil da coluna inteira, com o paciente em pé, traça-se uma linha vertical a partir do centro do corpo da vértebra **C7**. Depois se olha onde ela cai em relação ao sacro, mais precisamente ao canto de trás e de cima de S1. A distância horizontal entre a linha e esse canto é o eixo vertical sagital, conhecido pela sigla SVA.\n\nSe a linha passa perto desse canto, a cabeça e o tronco estão empilhados em cima da pelve, e o corpo se mantém em pé quase sem esforço. Isso é o equilíbrio neutro. Se a linha cai **na frente do sacro**, o tronco está projetado para a frente: é o **balanço sagital positivo**. Se cai atrás do sacro, o balanço é negativo, situação incomum.\n\nO positivo é o que importa na clínica. Imagine carregar uma mochila pesada pendurada na frente do peito o dia inteiro. Os músculos das costas trabalham sem descanso, e o corpo busca compensações: gira a pelve para trás, flete os joelhos, estende ao máximo os segmentos da coluna que ainda se movem. Esses pacientes cansam ao ficar em pé, sentem dor, e a qualidade de vida deles acompanha de perto o tamanho desse desvio. As causas são as que roubam lordose ou criam cifose: desgaste dos discos, artrodeses lombares feitas retas, fraturas que cicatrizaram em cunha, espondilite anquilosante.",
+  "correta": "Na frente do sacro. Quando o prumo de C7 cai à frente do sacro, o tronco está deslocado para a frente, o que define o balanço sagital positivo.",
+  "referencias": [
+   "Glassman SD, Bridwell K, Dimar JR et al. The impact of positive sagittal balance in adult spinal deformity. Spine. 2005;30(18):2024-2029.",
+   "Schwab F, Patel A, Ungar B, Farcy JP, Lafage V. Adult spinal deformity: postoperative standing imbalance: how much can you tolerate? An overview of key parameters in assessing alignment and planning corrective surgery. Spine. 2010;35(25):2224-2231."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0188": {
-  "conceito": "### Indicação cirúrgica no Scheuermann\nA cirurgia é **exceção**. As indicações clássicas:\n- cifose ==acima de ~70° a 75°==, ==progressiva== (documentada em radiografias seriadas);\n- ==dor refratária== ao tratamento conservador bem feito;\n- menos frequentes:\n  - **déficit neurológico** (hérnia torácica, cisto, cifose angular);\n  - comprometimento **respiratório** raro;\n  - queixa estética importante, em casos selecionados.\n\nDeformidade grande, mas **estável e indolor**, é acompanhada.\n\n### Técnica atual\n- **Artrodese posterior** com parafusos pediculares e **osteotomias de Ponte / Smith-Petersen** em vários níveis. A liberação anterior é raramente necessária hoje.\n- **Correção** para ~40° a 50°: correção **excessiva** aumenta o risco de **cifose juncional**.\n- **Níveis:**\n  - **proximal:** incluir a vértebra terminal proximal da cifose;\n  - **distal:** incluir a **vértebra sagital estável** (a primeira lordótica tocada pela vertical de S1), para evitar a **cifose juncional distal**.\n\n> **Na prova:** cirurgia no Scheuermann = ==acima de 70°, progressivo e com dor refratária==.",
-  "correta": "**Progressivo de 70° ou mais, com dor refratária.**",
   "incorretas": {
-   "A": "**Estável com dor.**\n- A deformidade estável, por si só, não indica cirurgia; pesa a progressão.",
-   "B": "**Estável e indolor.**\n- Acompanhar.",
-   "D": "**Progressivo e indolor.**\n- Falta o segundo requisito (dor refratária)."
+   "A": "A dor sozinha, numa curva que não está progredindo, costuma ser tratada sem cirurgia. A progressão documentada é parte da indicação.",
+   "B": "Curva grande, estável e sem dor é acompanhada. Não há sintoma nem tendência de piora que justifiquem o risco cirúrgico.",
+   "D": "A progressão está presente, mas sem dor refratária falta o segundo requisito. O paciente indolor com progressão é acompanhado de perto e pode até usar colete se ainda estiver crescendo."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Operar uma cifose de Scheuermann é uma cirurgia grande: artrodese posterior de muitos níveis, osteotomias, risco neurológico e risco de a deformidade reaparecer logo acima ou abaixo da fusão. Por isso ela é a exceção, e a banca quer saber em que situação ela se justifica.\n\nOs critérios clássicos andam juntos. A curva precisa ser grande, em torno de **70 a 75 graus** ou mais. Precisa estar **progredindo**, documentado em radiografias seriadas, porque uma curva grande mas estável pode ser só acompanhada. E o paciente precisa ter **dor que não melhorou** com um tratamento conservador bem feito, com fisioterapia, fortalecimento e analgesia. Deformidade estável e indolor não se opera só pelo número. Mais raramente, a cirurgia é indicada por déficit neurológico, por comprometimento respiratório ou por queixa estética muito importante em casos selecionados.\n\nHoje a técnica habitual é a artrodese só por trás, com parafusos pediculares e osteotomias que encurtam a parte de trás da coluna em vários níveis (Ponte ou Smith-Petersen). A liberação anterior, comum no passado, raramente é necessária.\n\nDois cuidados evitam a complicação mais comum, a cifose juncional, que é a coluna dobrando logo acima ou abaixo da área fundida. Não corrigir demais: busca-se uma cifose em torno de 40 a 50 graus, e não uma coluna reta. E escolher bem os limites: em cima, incluir a vértebra que começa a cifose; embaixo, ir até a vértebra sagital estável, a primeira vértebra lordótica tocada por uma vertical que sobe do canto posterossuperior do sacro.",
+  "correta": "Curva progressiva de 70 graus ou mais, com dor que não alivia com o tratamento conservador. São as condições que, juntas, justificam uma cirurgia desse porte.",
+  "referencias": [
+   "Lowe TG, Line BG. Evidence based medicine: analysis of Scheuermann kyphosis. Spine. 2007;32(19 Suppl):S115-S119."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0189": {
