@@ -2735,173 +2735,214 @@
   "conferido": false
  },
  "coluna-0242": {
-  "conceito": "### Espondilolistese degenerativa\n- **Nível:** ==L4-L5== (bem mais que os outros), seguido de L3-L4.\n- **Sexo:** ==feminino==, várias vezes mais que o masculino, sobretudo após a **menopausa**.\n- **Idade:** acima de **50 anos**.\n\n**Por que L4-L5:**\n- **facetas sagitalizadas**, com pouca resistência ao deslizamento;\n- **L5 ancorada** pelos **ligamentos iliolombares**, deixando L4 como o segmento móvel acima;\n- **frouxidão ligamentar** (fatores hormonais).\n\n**Arco íntegro:** o canal se estreita, com **estenose** (central e de recesso, raiz de **L5**).\n\n### Comparação\n| | Degenerativa | Ístmica |\n|---|---|---|\n| Nível | L4-L5 | L5-S1 |\n| Sexo | feminino | masculino (a lise é mais comum em meninos) |\n| Pars | íntegra | defeito |\n| Canal | estreita | alarga (o arco fica para trás) |\n| Raiz comprimida | L5 (recesso) | L5 (forame) |\n\n> **Na prova:** degenerativa = ==L4-L5, mulher==.",
-  "correta": "**L4-L5, sexo feminino.**",
   "incorretas": {
-   "B": "**L5-S1, feminino.**\n- L5-S1 é da ístmica.",
-   "C": "**L4-L5, masculino.**\n- O predomínio é **feminino**.",
-   "D": "**L5-S1, masculino.**\n- Nível e sexo errados."
+   "B": "L5-S1 é o nível típico da espondilolistese ístmica, a que nasce de uma falha na pars interarticularis. Na degenerativa, esse nível é bem menos comum.",
+   "C": "O nível está certo, mas o sexo não: a forma degenerativa é várias vezes mais frequente em mulheres.",
+   "D": "Erra nas duas coisas. L5-S1 e predomínio masculino descrevem a espondilolistese ístmica, e não a degenerativa."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Espondilolistese é o escorregamento de uma vértebra sobre a de baixo. A palavra é a mesma para doenças muito diferentes, e a banca adora cobrar justamente a diferença entre a forma **degenerativa** e a forma **ístmica**.\n\nNa degenerativa, o arco posterior está inteiro. O que falha são as articulações facetárias e o disco, gastos pela idade: a faceta perde a capacidade de segurar a vértebra de cima, e ela desliza para a frente devagar, em geral pouco (raramente passa de 30% do corpo vertebral). É uma doença de gente acima dos 50 anos, e várias vezes mais comum em **mulheres**, principalmente depois da menopausa. Os hormônios e a maior frouxidão ligamentar são as explicações mais aceitas.\n\nO nível preferido é **L4-L5**, e há motivos anatômicos para isso. As facetas de L4-L5 tendem a ser mais **sagitais** (viradas de frente uma para a outra, como portas de um armário), o que oferece pouca resistência ao deslizamento para a frente. Além disso, L5 fica presa à pelve pelos fortes **ligamentos iliolombares**, então o segmento móvel logo acima, L4-L5, concentra o esforço.\n\nComo o arco vem junto com o corpo que escorrega, o canal **estreita**. O quadro clínico típico é o da estenose lombar: claudicação neurogênica, dor nas pernas que piora ao andar e melhora ao sentar ou inclinar o tronco, muitas vezes com a raiz de **L5** comprimida no recesso lateral.\n\nA ístmica é o contrário em quase tudo: falha da pars interarticularis (a espondilólise), nível **L5-S1**, mais comum no sexo masculino, começa na infância ou adolescência. E como o arco fica para trás, o canal central até alarga.",
+  "correta": "L4-L5 e sexo feminino. A espondilolistese degenerativa predomina nesse nível, pela orientação sagital das facetas e pela fixação de L5 na pelve, e é bem mais frequente em mulheres após a menopausa.",
+  "referencias": [
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0243": {
-  "conceito": "### Órtese e ápice da curva\n**TLSO (OTLS, tipo Boston):**\n- tem o apoio superior na altura da **axila**;\n- aplica força corretiva em curvas com ápice ==em T6-T7 ou abaixo==, ou seja, torácicas baixas, toracolombares e lombares.\n\n**CTLSO (Milwaukee):**\n- tem **anel cervical**;\n- para ápices **acima de ~T6-T7** (torácicos altos);\n- hoje é menos usado, pela aderência difícil.\n\n### Indicações do colete na escoliose idiopática do adolescente\n- Cobb de **25° a 40°/45°**.\n- **Esqueleto imaturo:** Risser 0 a 2, pré-menarca ou até 1 ano após.\n- **Uso de 18 h por dia ou mais.** O estudo **BrAIST** mostrou relação **dose-resposta**: mais horas, menos progressão.\n- **Objetivo:** **evitar a progressão** até a cirurgia; não \"corrigir\" definitivamente.\n\n### Coletes noturnos\n**Charleston, Providence** (hiperinclinação): alternativa em curvas **únicas lombares ou toracolombares** menores.\n\n> **Na prova:** TLSO para ápice ==abaixo de T6==.",
-  "correta": "**T6.**",
   "incorretas": {
-   "B": "**T5.**\n- Acima do alcance da TLSO; exige extensão cervical.",
-   "C": "**T4.**\n- Ápice alto, fora do alcance.",
-   "D": "**T3.**\n- Mais alto ainda."
+   "B": "T5 fica acima do limite: uma curva com ápice ali não é alcançada pela parte superior do TLSO.",
+   "C": "Com ápice em T4, a curva é torácica alta, fora do alcance do TLSO. Era indicação do colete de Milwaukee.",
+   "D": "T3 é ainda mais alto, totalmente fora da área em que o colete toracolombossacral consegue aplicar força."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O colete na escoliose idiopática do adolescente não endireita a coluna para sempre. Ele serve para **segurar a curva** enquanto o esqueleto ainda cresce, para que ela não chegue ao ponto de precisar de cirurgia. O grande estudo que provou isso, o BrAIST, mostrou ainda um efeito de dose: quanto mais horas por dia o colete é usado, menor a chance de progressão. A indicação clássica é uma curva entre 25 e 40 a 45 graus de Cobb num paciente com crescimento restante (Risser 0 a 2, antes ou logo depois da menarca).\n\nPara funcionar, o colete precisa empurrar a coluna exatamente no ápice da curva, que é a vértebra mais desviada e rodada. E aí entra a questão: até onde um colete consegue alcançar?\n\nO **TLSO** (sigla em inglês para órtese toracolombossacral; em português, OTLS) é o colete que começa embaixo das axilas, como o de Boston. Ele consegue aplicar força em curvas com ápice em **T7 ou abaixo**, ou seja, abaixo de T6: curvas torácicas baixas, toracolombares e lombares. Para curvas com ápice mais alto, a parte de cima do colete simplesmente não chega lá.\n\nPara essas curvas altas existia o **CTLSO**, o colete de Milwaukee, que tem um anel no pescoço com apoio no queixo e no occipício. Funciona, mas é muito mal tolerado por adolescentes e hoje é pouco usado. Há ainda os coletes noturnos de hiperinclinação, como o Charleston e o Providence, usados principalmente em curvas lombares ou toracolombares únicas.",
+  "correta": "T6. O colete do tipo TLSO, que começa na altura das axilas, só consegue atuar em curvas com ápice abaixo de T6. Curvas mais altas exigiam o colete de Milwaukee, com extensão cervical.",
+  "referencias": [
+   "Weinstein SL, Dolan LA, Wright JG, Dobbs MB. Effects of bracing in adolescents with idiopathic scoliosis. N Engl J Med. 2013;369(16):1512-1521."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0244": {
-  "conceito": "### Dedo médio = C7\n| Dedo | Raiz |\n|---|---|\n| polegar | C6 |\n| ==médio== | ==C7== |\n| mínimo | C8 |\n\n### Troncos do plexo braquial\n| Tronco | Raízes |\n|---|---|\n| superior | **C5 + C6** |\n| ==médio== | ==C7 sozinha== (a única raiz que forma um tronco sozinha) |\n| inferior | **C8 + T1** |\n\n### Resumo do plexo (Raízes, Troncos, Divisões, Fascículos, Ramos)\n- **5 raízes:** C5 a T1.\n- **3 troncos.**\n- **6 divisões:** anterior e posterior de cada tronco.\n- **3 fascículos:**\n  - **lateral:** divisões anteriores do superior e do médio;\n  - **medial:** divisão anterior do inferior;\n  - **posterior:** todas as divisões posteriores.\n- **5 ramos terminais:**\n  - **musculocutâneo** (lateral);\n  - **mediano** (lateral + medial);\n  - **ulnar** (medial);\n  - **axilar** e **radial** (posterior).\n\n### Relevância\n- **Lesão do tronco superior** (Erb, C5-C6): \"gorjeta de garçom\".\n- **Lesão do inferior** (Klumpke, C8-T1): mão em garra, às vezes com Horner.\n\n> **Na prova:** dedo médio = ==C7, que forma sozinha o tronco médio==.",
-  "correta": "**C7, tronco médio.**",
   "incorretas": {
-   "A": "**C6, tronco superior.**\n- C6 forma o tronco superior, mas o dermátomo de C6 é o **polegar**.",
-   "B": "**C6, tronco médio.**\n- Raiz e tronco errados.",
-   "C": "**C7, tronco superior.**\n- C7 forma o tronco **médio**; o superior é C5 + C6."
+   "A": "C6 participa do tronco superior, mas seu dermátomo na mão é o polegar, não o dedo médio.",
+   "B": "Erra a raiz e o tronco: o dedo médio não é de C6, e C6 forma o tronco superior junto com C5.",
+   "C": "A raiz está certa, mas o tronco superior é formado por C5 e C6. C7 forma o tronco médio."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Duas peças de anatomia se juntam nesta questão: os dermátomos da mão e a montagem do plexo braquial.\n\nO dermátomo é a faixa de pele que uma raiz nervosa inerva. Na mão, a regra prática é dividir pelos dedos: o **polegar** é de **C6**, o **dedo médio** é de **C7** e o **dedo mínimo** é de **C8**. Por isso, uma queixa de dormência no dedo médio aponta para a raiz C7, que é, aliás, a raiz mais comprometida na hérnia de disco cervical (pelo disco C6-C7). Junto com a alteração sensitiva costuma vir fraqueza do tríceps e do reflexo tricipital.\n\nAgora o plexo. As cinco raízes que formam o plexo braquial (C5, C6, C7, C8 e T1) se juntam logo depois de sair da coluna e formam três **troncos**. O **superior** nasce da união de C5 com C6. O **inferior**, da união de C8 com T1. E o **médio** é formado por **C7 sozinha**: é a única raiz que continua como um tronco inteiro sem se juntar a nenhuma outra.\n\nDaí para frente, cada tronco se divide em uma parte anterior e uma posterior, essas divisões se reagrupam em três fascículos (lateral, medial e posterior, nomeados pela posição em relação à artéria axilar) e os fascículos dão os nervos terminais: musculocutâneo, mediano, ulnar, axilar e radial. Na clínica, a lesão do tronco superior é a paralisia de Erb, com o braço em rotação interna como quem pede gorjeta; a do inferior é a de Klumpke, com a mão em garra.",
+  "correta": "C7, que forma o tronco médio. O dedo médio é o dermátomo de C7, e C7 é a única raiz que forma um tronco sozinha.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0251": {
-  "conceito": "### Síndrome medular central\n- **A mais comum** das incompletas.\n- **Idoso** com canal estreito (espondilose), trauma em **hiperextensão**, muitas vezes **sem fratura**.\n- ==Membros superiores mais fracos== que os inferiores, sobretudo as **mãos**, com preservação **sacral**.\n- **Explicações:** a clássica é a **somatotopia** do corticoespinhal (fibras cervicais mediais). A atual destaca o trato corticoespinhal como essencial para a **mão**, e a lesão da **substância cinzenta central**.\n- **Prognóstico:** bom para marcha; as mãos recuperam por último.\n\n### Paralisia cruzada de Bell\n- Lesão na **decussação das pirâmides** (junção bulbomedular), por fratura de C1-C2 ou do côndilo occipital.\n- Também dá **fraqueza maior nos MMSS**, às vezes cruzada (braço de um lado, perna do outro).\n- **Rara.** No trauma cervical típico, a resposta esperada é a **centromedular**.\n\n> **Na prova:** MMSS mais fracos que MMII no trauma cervical = ==medular central==.",
-  "correta": "**Síndrome medular central.**",
   "incorretas": {
-   "A": "**Paralisia cruzada de Bell.**\n- Também pode dar predomínio nos MMSS, mas é **rara** e da junção bulbomedular.",
-   "B": "**Medular anterior.**\n- Perde motor e dor/temperatura, sem esse gradiente; o pior prognóstico.",
-   "D": "**Brown-Séquard.**\n- O déficit se organiza **por lado**."
+   "A": "A paralisia cruzada de Bell também pode dar mais fraqueza nos braços, mas é uma lesão rara da decussação das pirâmides, na junção entre o bulbo e a medula, ligada a fraturas de C1, C2 ou do côndilo occipital. No trauma cervical comum, a resposta é a centromedular.",
+   "B": "A síndrome medular anterior tira a força e a sensibilidade de dor e temperatura abaixo da lesão, sem poupar os membros inferiores, e tem o pior prognóstico entre as incompletas.",
+   "D": "Na Brown-Séquard o déficit se organiza por lado do corpo: motor do mesmo lado da lesão, dor e temperatura do lado oposto. Não há predomínio dos braços sobre as pernas."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Imagine um senhor de 70 anos que cai da própria altura e bate a testa no chão. O pescoço vai para trás com força, em hiperextensão. Ele tem artrose cervical, com o canal já estreito por osteófitos e ligamento amarelo espesso, e nessa hiperextensão a medula é espremida entre a frente e o fundo do canal. Muitas vezes não há fratura nenhuma na radiografia. Ao exame, ele mexe as pernas razoavelmente, mas as mãos estão muito fracas.\n\nEsse é o retrato da **síndrome medular central**, a mais comum das lesões medulares incompletas. Sua marca é a **fraqueza maior nos membros superiores do que nos inferiores**, pior nas mãos, com sensibilidade sacral geralmente preservada.\n\nA explicação clássica era a organização do trato corticoespinhal lateral: as fibras para os braços ficariam mais perto do centro da medula e seriam atingidas primeiro. Hoje se dá mais peso ao fato de que esse trato é especialmente importante para a função fina da mão nos humanos, e de que a lesão da substância cinzenta central atinge os neurônios motores do nível cervical. Seja qual for a explicação, o padrão clínico é o mesmo. O prognóstico é relativamente bom: a maioria volta a andar, a bexiga costuma recuperar, e as mãos são as que recuperam por último e de forma mais incompleta.\n\nPara comparar: a síndrome **medular anterior** tira a força e a sensibilidade de dor e temperatura abaixo da lesão, poupando a propriocepção, e tem o pior prognóstico. A **Brown-Séquard** é a hemissecção da medula: fraqueza e perda de propriocepção do lado da lesão, perda de dor e temperatura do lado oposto.",
+  "correta": "Síndrome medular central. É a lesão incompleta mais comum e se caracteriza justamente pela fraqueza maior nos membros superiores, típica do idoso com canal estreito que sofre hiperextensão.",
+  "referencias": [
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0252": {
-  "conceito": "### Wiltse-Newman tipo I (displásica)\n- **Causa:** **congênita**. Facetas malformadas (hipoplásicas, orientadas no plano axial), **espinha bífida oculta**, sacro displásico.\n- **Arco posterior:** ==íntegro==. É a chave do risco:\n  - ao escorregar, o **arco acompanha** o corpo e é **puxado para dentro do canal**;\n  - **estrangula a cauda equina**.\n- **Riscos:** ==déficit neurológico== e ==progressão para alto grau== (espondiloptose).\n- **Epidemiologia:** meninas, L5-S1.\n\n### Por que a ístmica (II) é mais \"segura\"\nNa **lise da pars**, o arco **fica para trás** e o canal **alarga**: uma \"descompressão espontânea\". O risco neurológico é menor, embora exista radiculopatia de L5 no forame.\n\n### Os outros tipos\n- **III (degenerativa):** adulto com mais de 50 anos.\n- **IV (traumática):** fratura de elemento posterior que não a pars.\n- **V (patológica):** doença óssea.\n\n> **Na prova:** maior risco neurológico e de progressão na criança = ==Wiltse I (displásica)==.",
-  "correta": "**Tipo I.**",
   "incorretas": {
-   "B": "**Tipo II (ístmica).**\n- A mais comum na criança, mas a lise **alarga** o canal.",
-   "C": "**Tipo III (degenerativa).**\n- Doença do adulto.",
-   "D": "**Tipo IV (traumática).**\n- Depende do trauma."
+   "B": "A ístmica é a mais comum na criança e no adolescente, mas é menos perigosa: com a pars partida, o arco fica para trás e o canal alarga.",
+   "C": "A degenerativa é doença do adulto acima de 50 anos, causada pelo desgaste do disco e das facetas.",
+   "D": "A traumática decorre de fratura aguda de um elemento posterior que não a pars. É rara e não está ligada à progressão descrita na criança."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A classificação de Wiltse, Newman e Macnab divide a espondilolistese pela causa: tipo I **displásica**, II **ístmica** (falha da pars interarticularis), III **degenerativa**, IV **traumática** (fratura de um elemento posterior que não a pars) e V **patológica** (doença óssea que enfraquece o arco, como tumor ou osteogênese imperfeita). Depois se acrescentou a pós-cirúrgica.\n\nNa criança e no adolescente, as duas que importam são a I e a II, e a pergunta é qual delas é mais perigosa. A resposta parece contraintuitiva: é a displásica, mesmo sendo bem menos comum que a ístmica.\n\nNa **displásica**, a malformação é congênita. As facetas de L5-S1 são pequenas, mal formadas, viradas de um jeito que não segura nada, e muitas vezes há espinha bífida oculta e um sacro arredondado no topo. O detalhe que faz toda a diferença: o **arco posterior está inteiro**. Quando a vértebra escorrega, ela leva o arco junto, e esse arco é puxado para dentro do canal, apertando a cauda equina como um laço. Por isso o déficit neurológico aparece com escorregamentos menores, e a tendência é de **progredir** para graus altos, às vezes até a espondiloptose (a vértebra cai totalmente na frente do sacro).\n\nNa **ístmica**, a pars está partida. O corpo escorrega para a frente, mas o arco fica para trás, e o canal até **alarga**. É como uma descompressão natural. Pode haver dor na raiz de L5 pelo estreitamento do forame, mas a compressão da cauda equina é bem menos frequente.\n\nA degenerativa e a traumática não são doenças típicas dessa faixa etária.",
+  "correta": "Tipo I, displásica. Como o arco posterior está íntegro, ele acompanha a vértebra no escorregamento e comprime a cauda equina, e a falta de contenção facetária favorece a progressão para graus altos.",
+  "referencias": [
+   "Wiltse LL, Newman PH, Macnab I. Classification of spondylolisis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0253": {
-  "conceito": "### Medida de Mehta\n- Na **vértebra apical**, o **ângulo costovertebral** (AVC) é o ângulo entre a **perpendicular ao platô** e o **eixo do colo/cabeça da costela**.\n- Mede-se nos **dois lados**, côncavo e convexo.\n- ==DACV = AVC côncavo menos AVC convexo==.\n\n**Leitura:**\n- **DACV acima de 20°:** risco **alto** de progressão;\n- abaixo de 20°: tende a regredir.\n\n**Complemento:** a **fase da costela** (fase II = cabeça da costela sobreposta ao corpo) também indica progressão.\n\n### Por que o ângulo isolado não serve\nO que importa é a **assimetria** entre os lados, que reflete a **rotação** vertebral. Um ângulo isolado não tem significado prognóstico.\n\n> **Na prova:** progressão na escoliose infantil = ==diferença côncavo menos convexo acima de 20°==.",
-  "correta": "**Diferença entre os ângulos da concavidade e da convexidade acima de 20°.**",
   "incorretas": {
-   "A": "**\"Ângulo de Mehta\" acima de 20°.**\n- Nomeia sem definir; a medida é a **diferença** entre os lados.",
-   "B": "**Ângulo da concavidade acima de 20°.**\n- Isolado, não classifica.",
-   "C": "**Ângulo da convexidade acima de 20°.**\n- Idem."
+   "A": "A expressão \"ângulo de Mehta\" não define uma medida. O que Mehta descreveu como preditor foi a diferença entre os ângulos dos dois lados, e não um ângulo isolado.",
+   "B": "O ângulo do lado côncavo, sozinho, não tem valor prognóstico. Ele só ganha sentido quando comparado com o do lado convexo.",
+   "C": "O mesmo vale para o ângulo do lado convexo isolado: o preditor é a diferença entre os lados, não um dos ângulos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A escoliose idiopática **infantil** é a que aparece antes dos 3 anos de idade. Ela tem uma particularidade que a separa da escoliose do adolescente: muitas curvas **regridem sozinhas**. O desafio do ortopedista é distinguir, já na primeira radiografia, a curva que vai sumir daquela que vai progredir e precisar de tratamento com gesso ou colete.\n\nFoi para isso que Min Mehta, nos anos 1970, propôs medir a relação entre as costelas e a vértebra no ápice da curva. O **ângulo costovertebral** (em inglês, rib-vertebra angle) é medido na vértebra apical, dos dois lados: traça-se uma linha perpendicular ao platô vertebral e outra ao longo do colo e da cabeça da costela, e mede-se o ângulo entre elas.\n\nNa curva que vai progredir, a vértebra roda e as costelas do lado convexo ficam \"caídas\" em relação ao corpo vertebral, enquanto as do lado côncavo ficam mais horizontais. Por isso, o número que importa não é o ângulo de um lado só, e sim a **diferença** entre eles: o ângulo do lado côncavo menos o do lado convexo (a sigla em inglês é RVAD). Uma diferença **acima de 20 graus** indica alto risco de progressão. Abaixo disso, a chance de a curva resolver é grande.\n\nMehta também descreveu a **fase da costela**: na fase 1, a cabeça da costela convexa não se sobrepõe ao corpo vertebral; na fase 2, ela fica sobreposta. A fase 2 indica progressão independentemente do valor da diferença.",
+  "correta": "A diferença entre o ângulo costovertebral da concavidade e o da convexidade acima de 20 graus. É essa diferença, proposta por Mehta, que reflete a rotação apical e prevê a progressão da escoliose infantil.",
+  "referencias": [
+   "Mehta MH. The rib-vertebra angle in the early diagnosis between resolving and progressive infantile scoliosis. J Bone Joint Surg Br. 1972;54(2):230-243."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0254": {
-  "conceito": "### O que o bulbocavernoso informa\n- **Reflexo:** arco **sacral** (S2 a S4, nervo pudendo). Apertar a glande ou o clitóris, ou tracionar a sonda, provoca **contração do esfíncter anal**.\n- **Choque medular:** arreflexia completa abaixo da lesão, que **impede classificar** a lesão.\n- **Retorno do bulbocavernoso:** marca o ==fim do choque medular== (em geral em 24 a 48 h).\n\n### Depois do retorno\nO exame neurológico (ASIA) passa a valer:\n- **sem nenhuma função sacral** (sensibilidade perianal, contração anal voluntária) = lesão **completa (ASIA A)**, com prognóstico de recuperação distal muito ruim;\n- **com preservação sacral** = **incompleta**, com prognóstico melhor.\n\n### O reflexo em si não é prognóstico\nUm paciente pode ter o bulbocavernoso **presente** e a lesão **completa**. O que prediz a recuperação é o exame **após** o fim do choque.\n\n**Exceção:** lesões do **cone** ou da **cauda equina** podem abolir o próprio arco.\n\n> **Na prova:** bulbocavernoso presente = ==fim do choque medular==.",
-  "correta": "**Fim do choque medular.**",
   "incorretas": {
-   "B": "**Bom prognóstico motor.**\n- Não prediz a recuperação motora.",
-   "C": "**Bom prognóstico sensitivo.**\n- Também não prediz.",
-   "D": "**Bom prognóstico motor e sensitivo.**\n- Somar as funções não muda o raciocínio."
+   "B": "O reflexo não prediz a recuperação motora. Um paciente pode ter o bulbocavernoso presente e uma lesão completa, com prognóstico motor ruim.",
+   "C": "Também não prediz a recuperação sensitiva. O que tem valor prognóstico é o exame feito depois do fim do choque, principalmente a preservação sacral.",
+   "D": "Somar as duas funções não muda o raciocínio: o bulbocavernoso apenas marca o fim do choque, sem informar o prognóstico."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Logo depois de uma lesão grave da medula, tudo abaixo do nível lesado pode ficar completamente \"desligado\": sem força, sem sensibilidade e sem nenhum reflexo, nem os que dependem apenas de circuitos locais. Esse estado temporário de arreflexia é o **choque medular**. Enquanto ele dura, não dá para saber se a lesão é completa ou incompleta, porque até a parte da medula que sobreviveu está silenciosa.\n\nO sinal mais usado para saber que o choque acabou é o **reflexo bulbocavernoso**. Ele é um arco reflexo simples, que passa pelos segmentos sacrais S2 a S4 através do nervo pudendo: aperta-se a glande ou o clitóris (ou se traciona levemente a sonda vesical) e o esfíncter anal contrai. Esse reflexo é um dos primeiros a voltar, em geral nas primeiras 24 a 48 horas. Quando ele reaparece, o choque medular terminou e o exame neurológico passa a valer.\n\nE aí sim vem a informação de prognóstico. Se, com o bulbocavernoso presente, o paciente não tem nenhuma função sacral (nenhuma sensibilidade perianal, nenhuma contração anal voluntária), a lesão é **completa**, ASIA A, e a chance de recuperar função abaixo do nível é muito pequena. Se há qualquer preservação sacral, a lesão é **incompleta** e o horizonte é bem melhor.\n\nOu seja, o reflexo em si não diz se o paciente vai melhorar. Ele diz que agora é possível examinar. Uma ressalva: em lesões do cone medular ou da cauda equina, o próprio arco sacral pode estar destruído, e o reflexo pode não voltar mesmo sem choque.",
+  "correta": "Fim do choque medular. O retorno do bulbocavernoso mostra que os reflexos sacrais voltaram e que o exame neurológico já pode classificar a lesão.",
+  "referencias": [
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0255": {
-  "conceito": "### Raiz mais comprimida na estenose lombar: L5\n- **Nível mais acometido:** **L4-L5**, o de maior mobilidade e sobrecarga facetária, e o da espondilolistese degenerativa.\n- **Em L4-L5:**\n  - no **canal central** e no **recesso lateral**, a raiz que passa é a ==L5== (vai sair em L5-S1);\n  - no **forame** L4-L5, está a L4 (menos frequente).\n- **L5 pode ser comprimida em mais de um ponto:** recesso L4-L5 **e** forame L5-S1 (\"double crush\" lombar).\n\n### Clínica de L5\n- Dor na face **lateral** da perna e no **dorso do pé**.\n- Fraqueza do **extensor longo do hálux**, do tibial anterior e do **glúteo médio**.\n- **Sem reflexo** próprio confiável.\n\n### Comparação\n- **L4:** forame L4-L5, estenose foraminal, hérnia foraminal.\n- **S1:** típica da **hérnia** L5-S1.\n- **L3:** estenose alta, menos comum.\n\n> **Na prova:** raiz mais envolvida na estenose lombar = ==L5==.",
-  "correta": "**L5.**",
   "incorretas": {
-   "A": "**L3.**\n- Estenose alta (L3-L4), bem menos frequente.",
-   "B": "**L4.**\n- A segunda; foraminal em L4-L5.",
-   "D": "**S1.**\n- Típica da **hérnia** L5-S1."
+   "A": "L3 só é comprimida em estenoses mais altas, em L2-L3 ou L3-L4, que são bem menos frequentes.",
+   "B": "L4 é atingida no forame L4-L5, na estenose foraminal desse nível, que é menos comum que a compressão central e de recesso que atinge L5.",
+   "D": "S1 é a raiz típica da hérnia de disco L5-S1. Na estenose degenerativa, o nível L5-S1 é menos acometido que L4-L5."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Para acertar qual raiz sofre na estenose lombar, é preciso primeiro entender como as raízes andam dentro do canal, porque a lógica não é a mesma da coluna cervical.\n\nNa coluna lombar, cada raiz desce um trecho dentro do canal antes de sair pelo forame que fica **abaixo** da vértebra de mesmo número. A raiz L5, por exemplo, sai pelo forame entre L5 e S1. Para chegar lá, ela passa pela altura do disco L4-L5 ainda dentro do canal, encostada na parede lateral, numa região chamada **recesso lateral** (o cantinho do canal logo abaixo da faceta articular). Já a raiz L4, nesse mesmo nível, está saindo pelo forame L4-L5.\n\nA estenose degenerativa é causada pela soma de disco abaulado, faceta hipertrofiada e ligamento amarelo espesso, e o nível mais acometido é **L4-L5**, o segmento que mais se move e mais sofre sobrecarga, e o mesmo da espondilolistese degenerativa. Nesse nível, quem fica espremida no canal central e no recesso lateral é a **L5**. Ela ainda pode ser comprimida uma segunda vez, no forame L5-S1, se ali também houver estreitamento.\n\nClinicamente, a raiz L5 dá dor e formigamento na face lateral da perna e no dorso do pé até o hálux, e fraqueza da extensão do hálux (extensor longo do hálux), do tibial anterior e do glúteo médio. Não há um reflexo próprio confiável para L5. Na estenose, os sintomas costumam piorar ao andar e ficar em pé e melhorar ao sentar ou inclinar o corpo para a frente.",
+  "correta": "L5. A estenose predomina em L4-L5, e nesse nível é a raiz L5 que passa pelo canal central e pelo recesso lateral, os locais onde a compressão é maior.",
+  "referencias": [
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0256": {
-  "conceito": "### Escoliose na neurofibromatose tipo 1\n| | Não distrófica | ==Distrófica== |\n|---|---|---|\n| Curva | **raio longo**, como a idiopática | ==raio curto==, angulada, 4 a 6 vértebras |\n| Topografia | variável | ==alta: torácica / cervicotorácica== |\n| Sinais | ausentes | escalopamento, costelas em lápis, pedículos finos, forames alargados, **ectasia dural** |\n| Evolução | como a idiopática | **rápida**; frequente **cifose** associada |\n| Colete | pode funcionar | ineficaz |\n| Cirurgia | como na idiopática | precoce, **circunferencial**; risco de **pseudartrose** e **déficit** |\n\n### Na questão\nEntre as opções (cervicotorácica ou toracolombar), a topografia **alta** (cervicotorácica) com **raio curto** corresponde à forma distrófica.\n\n### Cuidados\n- **RM pré-operatória:** neurofibromas **intracanal** e ectasia dural.\n- **Cifose cervical** também pode ocorrer na NF1, sobretudo **após laminectomia**.\n\n> **Na prova:** NF1 distrófica = ==raio curto, alta (cervicotorácica / torácica)==.",
-  "correta": "**Cervicotorácica de raio curto.**",
   "incorretas": {
-   "B": "**Cervicotorácica de raio longo.**\n- Raio longo é da forma **não distrófica**.",
-   "C": "**Toracolombar de raio curto.**\n- O raio curto está certo; a topografia típica é **alta**.",
-   "D": "**Toracolombar de raio longo.**\n- Os dois itens estão errados."
+   "B": "Raio longo é característica da forma não distrófica, que se comporta como a escoliose idiopática.",
+   "C": "O raio curto está certo, mas a curva distrófica típica é torácica, com tendência a ser alta, e não toracolombar.",
+   "D": "Erra nas duas características: a curva distrófica não é longa nem tipicamente toracolombar."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A neurofibromatose tipo 1 é uma doença genética que, entre manchas café com leite, neurofibromas e nódulos de Lisch na íris, mexe também com o osso. A escoliose é a manifestação esquelética mais comum, e aparece de duas formas que precisam ser diferenciadas, porque o comportamento é completamente diferente.\n\nA forma **não distrófica** se parece com a escoliose idiopática do adolescente: curva longa, de raio amplo, e é tratada de maneira semelhante.\n\nA forma **distrófica** é a que cai em prova. A curva é **curta**, de **raio curto**, envolvendo poucos segmentos (em geral 4 a 6 vértebras), muito angulada, quase sempre **torácica** e com tendência a ser **alta**, e frequentemente acompanhada de cifose. Nas radiografias aparecem os sinais de distrofia óssea: costelas finas como lápis (o chamado penciling), corpos vertebrais escavados nas bordas (scalloping), forames alargados, vértebras em cunha e com muita rotação. Essas alterações vêm, em boa parte, de ectasia da dura-máter e de neurofibromas encostados no osso.\n\nO que torna a distrófica temível é a progressão rápida e agressiva, inclusive depois de uma artrodese que parecia bem-sucedida. Por isso a conduta é mais precoce e geralmente cirúrgica, com artrodese anterior e posterior em muitos casos. A ressonância antes da operação é obrigatória: neurofibromas dentro do canal e ectasia dural mudam o planejamento e o risco de lesão neurológica.\n\nUma curva distrófica pode ainda começar como não distrófica e ir ganhando os sinais de distrofia com o tempo, o que se chama de modulação.",
+  "correta": "Cervicotorácica de raio curto. A escoliose distrófica da neurofibromatose é uma curva curta e angulada, de poucos segmentos, localizada na coluna torácica, com tendência a ser alta.",
+  "referencias": [
+   "Crawford AH, Herrera-Soto J. Scoliosis associated with neurofibromatosis. Orthop Clin North Am. 2007;38(4):553-562."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0257": {
-  "conceito": "### Quadro clínico da espondilolistese degenerativa\n- **Quem:** predomínio ==feminino== (~4 a 6:1), acima de 50 anos, em **L4-L5**.\n- **Escorregamento:** geralmente **grau I** (arco íntegro).\n- **Sintoma principal:** ==claudicação neurogênica==, em **mais da metade** dos sintomáticos. Pela **estenose** central e de recesso, com raiz de **L5**:\n  - dor, peso e parestesia nas pernas ao **andar** e ficar **em pé**;\n  - **alívio ao sentar e ao fletir** o tronco (carrinho de supermercado, subir ladeira);\n  - a **hiperextensão piora**.\n- **Outros:** lombalgia mecânica; radiculopatia de L5.\n- **Esfíncteres:** alterações são **raras e tardias**. Aguda, pensar em **cauda equina** (emergência).\n\n### Tratamento\n- **Conservador** inicialmente.\n- **Cirurgia:** **descompressão + artrodese** quando a claudicação limita ou há déficit.\n\n> **Na prova:** espondilolistese degenerativa = ==claudicação neurogênica em mais da metade==.",
-  "correta": "**Claudicação neurogênica em mais da metade.**",
   "incorretas": {
-   "A": "**Predomínio masculino.**\n- O predomínio é **feminino**.",
-   "C": "**Esfíncteres precoces.**\n- Raro e tardio.",
-   "D": "**Alívio com hiperextensão.**\n- A extensão **piora**; a flexão alivia."
+   "A": "O predomínio é feminino, várias vezes maior que o masculino, sobretudo após a menopausa.",
+   "C": "O comprometimento esfincteriano é raro e tardio. Se aparece de forma aguda, deve levantar a suspeita de síndrome da cauda equina.",
+   "D": "A hiperextensão estreita ainda mais o canal e piora a dor. O que alivia é a flexão do tronco."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Quem tem espondilolistese degenerativa raramente chega ao consultório reclamando de dor nas costas como queixa principal. A história típica é de uma senhora acima dos 60 anos que diz que não consegue mais andar distâncias que andava antes: depois de alguns minutos caminhando, as pernas pesam, doem ou formigam, e ela precisa parar e sentar. Sentada ou inclinada para a frente, melhora. No supermercado, apoiada no carrinho, consegue andar bem mais.\n\nEsse é o quadro de **claudicação neurogênica**, e ele aparece em **mais da metade** dos pacientes sintomáticos. A explicação é mecânica: o escorregamento, quase sempre em L4-L5 e de pequeno grau, estreita o canal, porque o arco posterior está inteiro e acompanha o corpo vertebral. Quando a pessoa fica em pé e estende a coluna, o ligamento amarelo pregueia para dentro e o canal estreita ainda mais. Quando ela flete o tronco, o canal ganha espaço e as raízes respiram.\n\nPor isso a hiperextensão **piora** os sintomas, e não alivia. Esse detalhe também ajuda a diferenciar da claudicação vascular, que melhora só de parar, sem precisar sentar ou fletir o tronco, e que vem com pulsos fracos.\n\nAlterações esfincterianas são raras e tardias na estenose crônica. Quando aparecem de forma aguda, é preciso pensar em síndrome da cauda equina, uma emergência cirúrgica. O predomínio é feminino, várias vezes maior que o masculino.\n\nO tratamento começa conservador. A cirurgia, com descompressão e geralmente artrodese, entra quando a claudicação limita a vida do paciente ou há déficit progressivo.",
+  "correta": "Apresentar claudicação neurogênica em mais da metade dos pacientes. O estreitamento do canal causado pelo escorregamento provoca dor e peso nas pernas ao andar, que melhoram ao sentar ou fletir o tronco.",
+  "referencias": [
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0258": {
-  "conceito": "### Raiz de S1\n- **Motor:** ==tríceps sural== (flexão plantar). O paciente não fica na **ponta do pé** (elevação repetida do calcanhar em apoio unipodal). Também fibulares (eversão) e glúteo máximo.\n- **Reflexo:** **aquileu** diminuído ou abolido.\n- **Sensibilidade:** borda **lateral** e **planta** do pé, 5º dedo.\n- **Causa típica:** hérnia **posterolateral L5-S1**.\n\n### Comparação com as vizinhas\n| Raiz | Motor | Reflexo | Sensibilidade |\n|---|---|---|---|\n| L4 | tibial anterior | **patelar** | face **medial** da perna |\n| L5 | extensor do hálux, glúteo médio; **pé caído** nos casos graves | nenhum | dorso do pé, hálux |\n| ==S1== | ==tríceps sural== | **aquileu** | borda lateral e planta |\n\n### Marcha escarvante (pé caído)\nFalha da **dorsiflexão**. Causas: **L5** (L4) ou o **nervo fibular comum**. Não é S1.\n\n> **Na prova:** S1 = ==tríceps sural== + aquileu.",
-  "correta": "**Alteração motora do tríceps sural.**",
   "incorretas": {
-   "A": "**Borda medial da perna.**\n- **L4.**",
-   "B": "**Reflexo patelar.**\n- **L4.**",
-   "D": "**Marcha escarvante.**\n- **L5** / fibular comum."
+   "A": "A sensibilidade da borda medial da perna é do dermátomo de L4, e não de S1, que corresponde à borda lateral e à planta do pé.",
+   "B": "O reflexo patelar depende de L4. Na compressão de S1, o reflexo alterado é o aquileu.",
+   "D": "A marcha escarvante com pé caído é falha da dorsiflexão, ligada a L5, L4 ou ao nervo fibular comum. S1 faz o movimento oposto, a flexão plantar."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A hérnia de disco lombar típica é posterolateral, e ela comprime a raiz que está **passando** por aquele nível, não a que está saindo. Assim, a hérnia L5-S1 comprime a raiz **S1**, e a hérnia L4-L5 comprime a L5. Saber o que cada raiz faz permite descobrir o nível só com o exame físico.\n\nA raiz **S1** é responsável principalmente pela **flexão plantar** do tornozelo, feita pelo **tríceps sural** (gastrocnêmio e sóleo). O teste mais sensível é pedir para o paciente ficar na ponta de um pé só, várias vezes seguidas: com S1 comprometida, ele cansa ou não consegue. S1 também ajuda na eversão do pé (fibulares) e na extensão do quadril (glúteo máximo). O reflexo correspondente é o **aquileu**, que fica diminuído ou abolido. A sensibilidade alterada fica na **borda lateral** do pé, na planta e no quinto dedo.\n\nPara as raízes vizinhas, a lógica se repete. **L4** dá a sensibilidade da **face medial** da perna, a força do quadríceps e do tibial anterior, e o reflexo **patelar**. **L5** dá a sensibilidade do dorso do pé e da face lateral da perna e a força do extensor longo do hálux, sem reflexo próprio confiável.\n\nO **pé caído**, com marcha escarvante (a pessoa levanta muito o joelho para o pé não arrastar no chão), é falha da dorsiflexão. Vem de L5 ou L4, ou de lesão do nervo fibular comum no joelho. Não é sinal de S1.",
+  "correta": "Alteração motora do tríceps sural. A raiz S1 comanda a flexão plantar, e sua compressão causa fraqueza da panturrilha e diminuição do reflexo aquileu.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0259": {
-  "conceito": "### Escoliose idiopática infantil (0 a 3 anos)\n- **Sexo:** predomínio **masculino**.\n- **Curva:** **torácica à esquerda**, com frequência.\n- **Associações:** plagiocefalia, displasia do quadril, ser prematuro, dormir em prona (hipóteses posturais).\n- **Evolução:**\n  - a **maioria regride** espontaneamente;\n  - um **subgrupo progride** intensamente, com DACV acima de 20° e/ou costela em fase II.\n  - O gabarito escolhe ==progressão da deformidade==, referindo-se a esse subgrupo (ver o alerta).\n- **Investigação:** **RM** do neuroeixo nas curvas acima de ~20°, pela prevalência de anomalias (Chiari, siringomielia, tumor).\n\n### Tratamento das progressivas\n- **Gessos seriados de Mehta** (EDF), que podem **curar** curvas pequenas quando iniciados cedo.\n- **Colete.**\n- **Hastes de crescimento** nas graves.\n\n### Por que as outras estão erradas\n- **Sexo feminino e curva torácica direita:** padrão da escoliose do **adolescente**.\n- **Malformações cardíacas:** sugerem escoliose **congênita** ou sindrômica.\n\n> **Na prova:** gabarito = ==progressão== (no subgrupo progressivo).",
-  "correta": "**Progressão da deformidade** (gabarito).\n- Refere-se ao subgrupo progressivo; muitas curvas regridem (ver o alerta).",
   "incorretas": {
-   "A": "**Sexo feminino.**\n- A infantil predomina em **meninos**.",
-   "B": "**Torácica direita.**\n- A infantil tende a ser torácica **esquerda**.",
-   "D": "**Malformações cardíacas.**\n- Sugerem forma **congênita** ou sindrômica."
+   "A": "A escoliose idiopática infantil predomina em meninos. O predomínio feminino é da forma do adolescente.",
+   "B": "A curva típica da infantil é torácica à esquerda. A torácica direita é o padrão do adolescente.",
+   "D": "Malformações cardíacas sugerem escoliose congênita ou sindrômica, e não fazem parte do quadro da idiopática."
   },
-  "alerta": "A progressão não é frequente em toda a escoliose infantil: muitas curvas resolvem. C deve ser entendida como referência ao subgrupo progressivo; ângulo costovertebral e evolução seriada definem prognóstico.",
+  "conceito": "A escoliose idiopática é dividida pela idade em que aparece, e cada faixa tem personalidade própria. A **infantil** começa antes dos 3 anos, a **juvenil** entre 3 e 10, e a **do adolescente**, a mais comum, a partir dos 10.\n\nA infantil é quase o espelho da do adolescente. Predomina em **meninos**, e a curva típica é **torácica à esquerda**, enquanto no adolescente a regra é menina com curva torácica à direita. Ela aparece mais em bebês prematuros, com plagiocefalia ou displasia do quadril, e já se suspeitou do hábito de dormir de bruços, o que fez alguns autores pensarem em um componente postural.\n\nA grande peculiaridade é a evolução. Muitas curvas infantis **regridem sozinhas**. Outras, porém, progridem de forma agressiva, e é sobre esse grupo que a banca está falando quando coloca a progressão como característica marcante. Para separar uma da outra usa-se a medida de Mehta: diferença entre os ângulos costovertebrais do lado côncavo e do convexo acima de 20 graus, ou a costela convexa sobreposta ao corpo vertebral (fase 2), indicam alto risco.\n\nComo curvas infantis de maior magnitude se associam a alterações do neuroeixo (malformação de Chiari, siringomielia, tumores), a ressonância é recomendada a partir de cerca de 20 graus. As curvas progressivas são tratadas com **gessos seriados** de Mehta, que, iniciados cedo, conseguem até corrigir a curva, seguidos de colete e, nas graves, de hastes de crescimento.\n\nMalformações cardíacas não fazem parte da idiopática; elas sugerem escoliose congênita (vértebras malformadas) ou associada a síndromes.",
+  "correta": "A progressão da deformidade. O gabarito destaca o comportamento progressivo, que é o que preocupa e define o tratamento, lembrando que parte das curvas infantis regride sozinha.",
   "referencias": [
-   "Mehta MH. The rib-vertebra angle in early diagnosis between resolving and progressive infantile scoliosis. J Bone Joint Surg Br. 1972;54:230-243.",
-   "Tachdjian's Pediatric Orthopaedics. 6th ed. Elsevier; 2021."
+   "Mehta MH. The rib-vertebra angle in the early diagnosis between resolving and progressive infantile scoliosis. J Bone Joint Surg Br. 1972;54(2):230-243."
   ],
-  "geradoEm": "2026-09-23",
+  "alerta": "A progressão não é frequente em toda a escoliose infantil: muitas curvas resolvem. C deve ser entendida como referência ao subgrupo progressivo; ângulo costovertebral e evolução seriada definem prognóstico.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0260": {
-  "conceito": "### Síndrome medular anterior\n- **Território:** **2/3 anteriores** da medula (artéria espinal anterior).\n- **Perde:**\n  - ==motricidade== (corticoespinhal), em grau variável, com paraplegia ou tetraplegia;\n  - **dor e temperatura** (espinotalâmico).\n- **Preserva:** ==propriocepção==, vibração e tato fino (colunas posteriores, irrigadas pelas espinais posteriores).\n- **Causas:**\n  - **compressão anterior** (fragmento, hérnia) em lesões em **flexão**;\n  - **isquemia** (aorta, hipotensão).\n- **Prognóstico:** o **pior** das incompletas.\n\n### Contrastes\n| Síndrome | Marca |\n|---|---|\n| Centromedular | **MMSS mais afetados** que os MMII |\n| Brown-Séquard | déficit **unilateral** motor e proprioceptivo, com dor e temperatura contralaterais |\n| Posterior | perde **propriocepção**, preserva a força |\n\n> **Na prova:** medular anterior = ==déficit motor com propriocepção preservada==.",
-  "correta": "**Déficit motor variável com propriocepção preservada.**",
   "incorretas": {
-   "A": "**MMII mais afetados que os MMSS.**\n- Não é o padrão; o gradiente MMSS mais afetados é da **central**.",
-   "B": "**Motor e propriocepção unilaterais.**\n- É o **Brown-Séquard**.",
-   "D": "**Perda tátil com motor preservado.**\n- Seria síndrome **posterior**."
+   "A": "Na síndrome anterior não há o gradiente entre membros superiores e inferiores. O padrão de diferença entre membros é o da síndrome central, e com os braços mais fracos.",
+   "B": "Perda motora e proprioceptiva de um lado só é a síndrome de Brown-Séquard, a hemissecção da medula.",
+   "D": "Perder o tato fino e manter a força seria a síndrome medular posterior, rara, que é o oposto da anterior."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Cada síndrome medular incompleta faz sentido quando se olha para um corte transversal da medula e se pergunta: que parte foi atingida e o que passa por ali?\n\nNa frente e dos lados ficam os tratos **corticoespinhais** (que levam o comando motor) e os **espinotalâmicos** (que levam dor e temperatura). Atrás ficam as **colunas posteriores**, que levam propriocepção (saber a posição das articulações sem olhar), vibração e tato fino. A irrigação acompanha essa divisão: uma única **artéria espinal anterior** nutre os dois terços anteriores da medula, e duas artérias espinais posteriores nutrem o terço posterior.\n\nA **síndrome medular anterior** é a lesão dos dois terços anteriores. Ela pode vir de uma compressão pela frente, como um fragmento ósseo ou um disco que entra no canal numa fratura em flexão, ou de isquemia da artéria espinal anterior (após cirurgia de aorta ou hipotensão grave). O resultado é perda **motora** abaixo do nível, que pode ir de fraqueza a paralisia completa, e perda da sensibilidade de **dor e temperatura**. O que sobra, e é a chave do diagnóstico, é a **propriocepção** e a vibração, porque as colunas posteriores foram poupadas.\n\nDas síndromes incompletas, é a de **pior prognóstico** motor. Para contrastar: a síndrome central dá fraqueza maior nos braços que nas pernas, e tem bom prognóstico; a Brown-Séquard divide o déficit por lado; e a rara síndrome posterior faz perder a propriocepção com a força preservada.",
+  "correta": "Comprometimento motor variável com preservação da propriocepção. A lesão atinge os tratos motores e espinotalâmicos da parte anterior da medula e poupa as colunas posteriores.",
+  "referencias": [
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0261": {
-  "conceito": "### Deformidade de Sprengel\n- **O que é:** falha na **descida da escápula** durante a vida embrionária. A escápula fica **alta**, pequena, **medializada** e **rodada** (ângulo inferior voltado medialmente).\n- **Osso omovertebral:** em ~1/3 dos casos, uma ponte (óssea, cartilaginosa ou fibrosa) entre a escápula e a **coluna cervical**.\n- **Associações:**\n  - **Klippel-Feil;**\n  - escoliose e costelas anômalas;\n  - anomalias **renais**;\n  - espinha bífida.\n\n### Classificação de Cavendish (clínica, estética)\nBaseada na ==altura da escápula== e na visibilidade da deformidade:\n| Grau | Descrição |\n|---|---|\n| I | muito leve; ombros nivelados; **invisível vestido** |\n| II | leve; quase nivelados, mas com saliência visível na base do pescoço |\n| III | moderado; ombro **2 a 5 cm** mais alto |\n| IV | grave; escápula muito alta, com o ângulo superior perto do **occipital** |\n\n### Tratamento\n- **Graus I e II:** observação.\n- **Graus III e IV:** cirurgia, idealmente entre ~3 e 8 anos:\n  - **Woodward** (reinserção do trapézio e dos romboides mais abaixo);\n  - **Green;**\n  - ressecção do osso omovertebral.\n- **Risco:** lesão do **plexo braquial**. Considerar **osteotomia da clavícula**.\n\n> **Na prova:** Cavendish = ==altura da escápula== (grau estético).",
-  "correta": "**Altura da escápula.**",
   "incorretas": {
-   "A": "**Rotação.**\n- Faz parte da deformidade, mas não é a base de Cavendish.",
-   "B": "**Forma.**\n- Idem.",
-   "D": "**Mobilidade.**\n- Pesa na indicação cirúrgica, não na classificação."
+   "A": "A escápula de Sprengel é de fato rodada, mas a rotação não é o critério usado por Cavendish para graduar a deformidade.",
+   "B": "A escápula é pequena e de forma alterada, mas a forma também não entra na classificação de Cavendish.",
+   "D": "A mobilidade, limitada principalmente pelo osso omovertebral, pesa na decisão cirúrgica, mas não define os graus de Cavendish."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Durante a vida embrionária, a escápula se forma lá em cima, na altura do pescoço, e vai descendo até sua posição definitiva nas costas do tórax. Na **deformidade de Sprengel**, essa descida não se completa. A escápula fica **alta**, pequena, mais perto da coluna e rodada, com o ângulo inferior apontando para dentro. Em cerca de um terço dos casos existe ainda o **osso omovertebral**, uma ponte de osso, cartilagem ou tecido fibroso que prende o ângulo superior da escápula à coluna cervical e trava o movimento.\n\nÉ a malformação congênita mais comum do ombro e raramente vem sozinha: associa-se com frequência à síndrome de Klippel-Feil (fusões de vértebras cervicais), escoliose, costelas anômalas, espinha bífida e anomalias renais, que merecem ser procuradas.\n\nA classificação de **Cavendish** é puramente **clínica e estética**, e se baseia em **quanto a escápula está alta** e em quanto isso aparece. No grau I, a deformidade é muito leve, os ombros estão nivelados e ela fica invisível com a criança vestida. No grau II, os ombros ainda estão quase nivelados, mas se vê uma saliência na base do pescoço. No grau III, o ombro está de 2 a 5 cm mais alto, deformidade visível com facilidade. No grau IV, a escápula está tão alta que o ângulo superior fica perto do occipício.\n\nOs graus I e II costumam ser só observados. Nos graus III e IV, a cirurgia (como a de Woodward, que reposiciona a origem do trapézio e dos romboides mais abaixo, ou a de Green) é feita de preferência entre os 3 e os 8 anos, com cuidado com o plexo braquial, que pode ser estirado ao descer a escápula.",
+  "correta": "Altura da escápula. A classificação de Cavendish gradua a deformidade de Sprengel pela elevação da escápula e por quanto ela é visível, de I (imperceptível vestido) a IV (ângulo superior perto do occipício).",
+  "referencias": [
+   "Cavendish ME. Congenital elevation of the scapula. J Bone Joint Surg Br. 1972;54(3):395-408."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0262": {
-  "conceito": "### Artéria de Adamkiewicz (radicular magna)\n- **Localização:** em cerca de 80% dos indivíduos, entre ==T9 e T11==, do lado ==esquerdo==. Pode surgir de T5 a L2.\n- **Por que à esquerda:** a **aorta** fica à esquerda, e as intercostais / lombares esquerdas são mais curtas e diretas.\n- **Função:** principal reforço da **artéria espinal anterior** na medula **toracolombar** (cone), região com pouca redundância.\n\n### Risco cirúrgico\n- Na **toracotomia / toracoabdominal**, na ligadura de segmentares, na cirurgia de **aorta** e nas embolizações: risco de **isquemia medular**.\n- **Prevenção:**\n  - acesso pela **direita** quando possível;\n  - ligar as segmentares no **meio do corpo** vertebral, longe do forame;\n  - **angiografia medular** pré-operatória em casos de risco;\n  - teste de oclusão com **neuromonitorização**.\n- **Lesão:** **síndrome medular anterior**, com paraplegia e perda de dor e temperatura, e **propriocepção preservada**.\n\n> **Na prova:** Adamkiewicz = ==T9 a T11, à esquerda==.",
-  "correta": "**T9 a T11, à esquerda.**",
   "incorretas": {
-   "A": "**T7 a T9, à direita.**\n- Nível e lado errados.",
-   "B": "**T7 a T9, à esquerda.**\n- O lado está certo, mas o nível é mais baixo.",
-   "C": "**T9 a T11, à direita.**\n- O nível está certo; o lado é o **esquerdo**."
+   "A": "Erra o nível e o lado. A artéria costuma entrar mais abaixo, entre T9 e T11, e do lado esquerdo.",
+   "B": "O lado esquerdo está certo, mas o nível é baixo demais: T7 a T9 é mais alto que a faixa habitual de T9 a T11.",
+   "C": "O nível está certo, mas a artéria de Adamkiewicz entra pela esquerda na grande maioria das pessoas."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A medula não é irrigada por um tubo único que desce do cérebro. A **artéria espinal anterior**, que nutre os dois terços anteriores da medula, recebe reforços ao longo do caminho de artérias que entram junto com as raízes nervosas, as **artérias radiculomedulares**. Na região torácica média, esses reforços são poucos, e a irrigação é mais pobre.\n\nA maior e mais importante delas é a **artéria de Adamkiewicz**, também chamada de artéria radicular magna. É ela que garante a maior parte do sangue para a medula toracolombar e o cone medular. Em cerca de **80%** das pessoas, ela entra pelo lado **esquerdo**, entre **T9 e T11** (variando, no total, de T5 a L2). O lado esquerdo tem lógica: a aorta fica à esquerda da coluna, e as artérias intercostais e lombares desse lado são mais curtas e diretas.\n\nPor que isso cai em prova de ortopedia? Porque cirurgias da coluna torácica e toracolombar por via anterior, assim como cirurgias de aorta e embolizações, podem lesar essa artéria. O resultado é isquemia da medula na distribuição da espinal anterior: a **síndrome medular anterior**, com paraplegia e perda de dor e temperatura, mas com a propriocepção preservada.\n\nAlgumas precauções reduzem o risco: preferir o acesso pela direita quando a doença permite, ligar os vasos segmentares no meio do corpo vertebral, longe do forame onde a artéria radicular entra, e, em casos de risco alto, estudar a anatomia com angiografia medular antes da cirurgia.",
+  "correta": "Entre T9 e T11, à esquerda. É a localização da artéria de Adamkiewicz em cerca de 80% das pessoas, acompanhando a posição da aorta à esquerda da coluna.",
+  "referencias": [
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0264": {
@@ -2935,79 +2976,91 @@
   "conferido": false
  },
  "coluna-0266": {
-  "conceito": "### Síndrome medular central (centromedular)\n- **Frequência:** a **mais comum** das lesões medulares incompletas.\n- **Perfil típico:** idoso com **espondilose cervical** (canal estreito) e trauma em ==hiperextensão== (queda da própria altura, batendo a face), muitas vezes **sem fratura**.\n- **Clínica:**\n  - déficit motor ==MMSS mais que MMII==, pior nas **mãos**;\n  - sensibilidade variável abaixo da lesão;\n  - **esfíncteres** variáveis, frequentemente retenção.\n\n### Por que os MMSS pioram mais\n- Lesão da **substância cinzenta central** (hemorragia, edema), que atinge os neurônios motores do segmento cervical.\n- O **trato corticoespinhal lateral** tem somatotopia com as fibras cervicais (mãos) mais **mediais**, mais perto do centro lesado. Essa explicação clássica é hoje **discutida**: há estudos que atribuem o padrão à lesão do próprio trato corticoespinhal, mais importante para a mão.\n\n### Prognóstico\n- **Relativamente bom.**\n- **Ordem de recuperação:** MMII, depois **bexiga**, depois MMSS proximais, e por último, de forma incompleta, as **mãos**.\n- Pior em idosos.\n\n### Contrastes\n| Síndrome | Marca |\n|---|---|\n| ==Central== | **MMSS mais que MMII**, mãos |\n| Anterior | motor + dor e temperatura; **propriocepção preservada**; pior prognóstico |\n| Posterior | perde **propriocepção**, preserva a força; rara |\n| Brown-Séquard | motor e proprioceptivo **ipsilaterais**, dor e temperatura **contralaterais**; melhor prognóstico |\n\n> **Na prova:** déficit predominante nos MMSS (mãos) = ==síndrome medular central==.",
-  "correta": "**Síndrome medular central.**",
   "incorretas": {
-   "B": "**Medular anterior.**\n- Motor + dor e temperatura, **sem** o gradiente entre MMSS e MMII.\n- Propriocepção preservada.",
-   "C": "**Medular posterior.**\n- Perde propriocepção e mantém a força.\n- Rara.",
-   "D": "**Hemissecção (Brown-Séquard).**\n- Déficit dividido por **lado**, não entre membros superiores e inferiores."
+   "B": "A síndrome medular anterior tira a força e a sensibilidade de dor e temperatura abaixo da lesão, sem predomínio dos braços, e poupa a propriocepção.",
+   "C": "A síndrome medular posterior, rara, faz perder a propriocepção e preserva a força. O enunciado descreve o contrário.",
+   "D": "A hemissecção lateral (Brown-Séquard) divide o déficit por lado: motor e propriocepção do mesmo lado da lesão, dor e temperatura do lado oposto, sem predomínio dos membros superiores."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O enunciado entrega a pista que importa: **mãos e braços muito mais fracos que as pernas**. Esse é o retrato da **síndrome medular central**, a mais comum das lesões medulares incompletas.\n\nO paciente clássico é um idoso com artrose cervical. Osteófitos na frente, ligamento amarelo espesso atrás, e um canal já apertado. Numa queda, o pescoço vai para trás com força, em hiperextensão, e a medula é espremida entre essas estruturas. Muitas vezes a radiografia não mostra fratura nenhuma. Na queda de altura do enunciado, o mecanismo pode ser outro, mas o padrão neurológico é o mesmo e é ele que define o diagnóstico.\n\nPor que os braços sofrem mais? A explicação clássica dizia que, no trato corticoespinhal lateral, as fibras para as mãos ficam mais perto do centro da medula, onde a lesão é maior. Hoje se dá mais peso a dois outros fatos: a lesão da substância cinzenta central atinge os neurônios motores do próprio segmento cervical, que comandam os membros superiores, e o trato corticoespinhal é especialmente importante para os movimentos finos da mão. Seja qual for a explicação, o resultado clínico é o descrito. A sensibilidade e a bexiga ficam alteradas em graus variáveis.\n\nO prognóstico é relativamente bom. A recuperação costuma seguir uma ordem: primeiro as pernas, depois a bexiga, depois os braços, e as mãos por último, muitas vezes de forma incompleta. A idade avançada piora o resultado.\n\nAs outras síndromes têm marcas diferentes: a anterior tira força e sensibilidade de dor e temperatura e poupa a propriocepção; a posterior faz o contrário; e a Brown-Séquard divide o déficit por lado do corpo.",
+  "correta": "Medular central. O déficit motor predominante nos membros superiores, principalmente nas mãos, com sensibilidade e esfíncteres comprometidos em grau variável, é o padrão dessa síndrome.",
+  "referencias": [
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0268": {
-  "conceito": "### SCOR: Spinal Cord Occupation Ratio\n- **O que é:** razão entre a **área da medula** e a **área do canal** no corte **axial** de RM, geralmente no nível de maior estreitamento.\n- **Quanto maior**, menos **espaço liquórico de reserva** e maior o risco de lesão medular com traumas mínimos ou hiperextensão (por exemplo, neuropraxia medular em atletas).\n- **Ponto de corte cobrado:** ==SCOR de 80%== ou mais confirma estenose cervical congênita (ver o alerta sobre a variação entre estudos).\n\n### Outras medidas de canal cervical estreito\n| Medida | Estreito |\n|---|---|\n| Diâmetro sagital do canal (radiografia) | menor que **~13 mm** (absoluto; menos de 10 mm, grave) |\n| **Razão de Torg-Pavlov** (canal / corpo) | menor que ==0,8== |\n| SCOR (RM axial) | ==80%== ou mais (gabarito) |\n\n- **Limitação de Torg-Pavlov:** tem **baixo valor preditivo positivo**. Corpos vertebrais grandes (atletas) dão razão baixa com canal adequado. A RM (reserva liquórica, SCOR) é mais fiel.\n\n> **Na prova:** SCOR para estenose congênita = ==80%== (gabarito).",
-  "correta": "**80%.**\n- É o ponto de corte adotado pelo gabarito para confirmar estenose cervical congênita pela SCOR.",
   "incorretas": {
-   "A": "**50%.**\n- Ocupação bem menor; não confirma estenose pelo critério da questão.",
-   "B": "**58,3%.**\n- Também abaixo do limite proposto.",
-   "C": "**75%.**\n- Próximo de limiares de alguns estudos, mas não é o valor cobrado."
+   "A": "Com 50% de ocupação, a medula ainda tem uma reserva de líquor ampla em volta. Não caracteriza estenose.",
+   "B": "58,3% também está bem abaixo do ponto de corte. O número pode confundir por parecer preciso, mas não é o critério de estenose.",
+   "C": "75% está próximo, mas abaixo do valor adotado pela questão para confirmar a estenose congênita."
   },
+  "conceito": "O canal cervical estreito por constituição (congênito) é importante porque tira da medula a sua margem de segurança. Num canal normal, a medula fica cercada por uma camada de líquor que funciona como amortecedor. Num canal estreito, essa camada é mínima, e traumas pequenos, como uma hiperextensão num jogo de futebol americano ou uma queda simples, podem causar lesão medular, inclusive neuropraxia transitória com tetraparesia que desaparece em minutos.\n\nA primeira forma de medir isso foi na radiografia em perfil. O diâmetro sagital do canal abaixo de cerca de 13 mm é considerado estreito, e abaixo de 10 mm, gravemente estreito. Como a ampliação da radiografia varia, criou-se a **razão de Torg-Pavlov**: o diâmetro do canal dividido pelo diâmetro do corpo vertebral no mesmo nível, sendo abaixo de **0,8** sugestivo de estenose. O problema é que atletas grandes têm corpos vertebrais grandes, e a razão sai baixa mesmo com canal adequado. Ou seja, muitos falsos positivos.\n\nA ressonância resolve isso ao mostrar diretamente quanto espaço sobra em volta da medula. A **relação de ocupação da medula** (SCOR, do inglês spinal cord occupation ratio) é a área da medula dividida pela área do canal, medida no corte axial. Quanto maior a porcentagem, menos líquor de reserva. Pelo critério adotado nesta questão, uma ocupação de **80%** ou mais confirma a estenose cervical congênita.\n\nVale lembrar que os pontos de corte variam entre estudos e técnicas, e que a medida deve ser lida junto com o quadro clínico e com as outras medidas do canal.",
+  "correta": "80%. É o ponto de corte adotado pela banca: quando a medula ocupa 80% ou mais da área do canal no corte axial, a reserva de líquor é mínima e a estenose congênita fica confirmada.",
   "alerta": "Os pontos de corte variam entre técnicas e estudos; SCOR não deve ser interpretada sem medidas do canal, nível avaliado e correlação clínica.",
   "referencias": [
    "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022.",
    "Morishita Y et al. The relationship between the cervical spinal canal diameter and pathological changes in the cervical spine. Eur Spine J. 2009;18:877-883."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0270": {
-  "conceito": "### Escore de Tokuhashi revisado (0 a 15 pontos)\n**Seis itens:**\n1. Estado geral (**Karnofsky**).\n2. Número de metástases ósseas **extraespinhais**.\n3. Número de **vértebras** acometidas.\n4. Metástases em **vísceras** (pulmão, fígado, cérebro).\n5. **Sítio do tumor primário** (o item de maior peso, de 0 a 5).\n6. Estado **neurológico** (Frankel).\n\n### Leitura\n| Pontos | Sobrevida esperada | Conduta |\n|---|---|---|\n| 0 a 8 | **menos de 6 meses** | conservadora, ou paliativa mínima |\n| ==9 a 11== | ==6 meses ou mais== | ==cirurgia paliativa== (descompressão + estabilização) |\n| 12 a 15 | **1 ano ou mais** | cirurgia **excisional** |\n\n### Sítio primário (item 5)\n- **Pior:** pulmão, estômago, esôfago, bexiga, pâncreas, osteossarcoma.\n- **Melhor:** tireoide, **mama**, próstata, carcinoide.\n\n### Na prática\n- O Tokuhashi convive hoje com o **NOMS**, o **SINS** (instabilidade), o **Bilsky** (compressão epidural) e a **SBRT**.\n- A **radiossensibilidade** do tumor pesa muito na decisão.\n\n> **Na prova:** 10 pontos = ==mais de 6 meses, cirurgia paliativa==.",
-  "correta": "**Sobrevida superior a 6 meses e cirurgia paliativa.**",
   "incorretas": {
-   "A": "**Menos de 6 meses e conservador.**\n- Faixa de **0 a 8 pontos**.",
-   "B": "**Menos de 6 meses e paliativa.**\n- Com 10 pontos a sobrevida esperada **passa** de 6 meses.",
-   "D": "**Mais de 6 meses e excisional.**\n- A cirurgia excisional é para **12 pontos ou mais** (sobrevida acima de 1 ano)."
+   "A": "Sobrevida menor que 6 meses com tratamento conservador corresponde à faixa de 0 a 8 pontos.",
+   "B": "Com 10 pontos, a sobrevida esperada já passa de 6 meses. A combinação de sobrevida curta com cirurgia não corresponde a nenhuma faixa do escore.",
+   "D": "A cirurgia excisional fica reservada para 12 a 15 pontos, quando a expectativa de vida passa de 1 ano."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Diante de um paciente com metástase na coluna, a primeira pergunta não é técnica, é de prognóstico: quanto tempo essa pessoa provavelmente ainda vai viver? Uma cirurgia grande, com recuperação longa, não faz sentido para quem tem poucas semanas de vida; e um tratamento tímido pode ser insuficiente para quem ainda tem anos pela frente.\n\nO **escore de Tokuhashi**, na versão revisada de 2005, foi criado para essa estimativa. Ele soma pontos em seis itens: o estado geral pelo índice de Karnofsky, o número de metástases ósseas fora da coluna, o número de vértebras acometidas, a presença de metástases em vísceras (pulmão, fígado, cérebro), o **sítio do tumor primário** (o item de maior peso, já que tumores de tireoide, mama e próstata vivem bem mais que os de pulmão, estômago ou pâncreas) e o estado neurológico pela escala de Frankel. O total vai de 0 a 15.\n\nA leitura é feita em três faixas. De **0 a 8 pontos**, a sobrevida esperada é **menor que 6 meses**, e a conduta é conservadora ou uma intervenção paliativa mínima. De **9 a 11 pontos**, a sobrevida esperada é de **6 meses ou mais**, e a indicação é a **cirurgia paliativa**: descompressão e estabilização, para aliviar dor e preservar a marcha. De **12 a 15 pontos**, a expectativa passa de **1 ano**, e se considera a **cirurgia excisional**, com ressecção da lesão.\n\nCom 10 pontos, o paciente está na faixa do meio. Hoje o Tokuhashi convive com outras ferramentas, como o SINS (instabilidade), a escala de Bilsky (compressão epidural) e o sistema NOMS, e com a radioterapia estereotáxica, que mudou o papel da cirurgia para tumores radiossensíveis.",
+  "correta": "Expectativa de vida superior a 6 meses e cirurgia paliativa. Dez pontos ficam na faixa de 9 a 11 do Tokuhashi revisado, que prevê sobrevida de 6 meses ou mais e indica descompressão e estabilização paliativas.",
+  "referencias": [
+   "Tokuhashi Y, Matsuzaki H, Oda H, Oshima M, Ryu J. A revised scoring system for preoperative evaluation of metastatic spine tumor prognosis. Spine. 2005;30(19):2186-2191."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0272": {
-  "conceito": "### Inervação da faceta lombar\n- **Divisão do ramo dorsal** de cada nervo espinhal lombar:\n  - ==ramo medial==;\n  - ramo intermediário;\n  - ramo lateral.\n- **O ramo medial:**\n  - inerva a **articulação facetária** e o **multífido**;\n  - passa na junção entre o **processo transverso** e o **articular superior**, sob o **ligamento mamiloacessório**. É o alvo da agulha.\n- **Inervação dupla:** cada faceta recebe o ramo medial **do seu nível e do nível acima**. Por exemplo, a faceta L4-L5 recebe os ramos mediais de L3 e L4. Por isso bloqueiam-se **dois ramos** por articulação.\n- **Exceção em L5:** o que se bloqueia é o próprio **ramo dorsal** de L5, na asa sacral.\n\n### Diagnóstico e tratamento\n- **Bloqueio anestésico do ramo medial:** teste diagnóstico da dor facetária. Muitos protocolos exigem **dois bloqueios** positivos, pela taxa de falso-positivos.\n- **Denervação por radiofrequência** do ramo medial: tratamento.\n\n### Nervo sinuvertebral (de Luschka)\n- Recorrente, formado a partir do **ramo ventral** com contribuição simpática.\n- Inerva o **ânulo posterior** e o **LLP**.\n- É o nervo da dor **discogênica**.\n\n> **Na prova:** faceta = ==ramo medial do ramo dorsal==.",
-  "correta": "**Ramo medial.**",
   "incorretas": {
-   "A": "**Lateral.**\n- Pele e iliocostal; não inerva a faceta.",
-   "C": "**Sinuvertebral.**\n- Ânulo posterior e LLP: dor **discogênica**.",
-   "D": "**Intermediário.**\n- Longuíssimo; não é o alvo do bloqueio facetário."
+   "A": "O ramo lateral do ramo dorsal vai para o músculo iliocostal e para a pele, e não inerva a faceta.",
+   "C": "O nervo sinuvertebral inerva a parte posterior do disco e o ligamento longitudinal posterior. Está ligado à dor discogênica, não à facetária.",
+   "D": "O ramo intermediário vai para o músculo longuíssimo e não é o alvo do bloqueio facetário."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "As articulações facetárias, pequenas articulações entre os arcos posteriores das vértebras, são uma fonte real de dor lombar crônica, principalmente em pessoas mais velhas. É uma dor que costuma piorar com a extensão e a rotação do tronco e que não segue o trajeto de uma raiz. O problema é que nem o exame físico nem a imagem conseguem provar que a dor vem dali. Por isso o diagnóstico é feito bloqueando o nervo da faceta e vendo se a dor some.\n\nPara saber que nervo bloquear, é preciso acompanhar o nervo espinhal. Logo depois de sair do forame, ele se divide em um **ramo ventral**, grande, que vai formar os plexos e os nervos das pernas, e um **ramo dorsal**, que volta para trás. O ramo dorsal, por sua vez, se divide em três: **lateral**, que vai para o músculo iliocostal e para a pele; **intermediário**, para o longuíssimo; e **medial**, que inerva a **articulação facetária** e o músculo multífido.\n\nO **ramo medial** passa por um ponto constante, no encontro do processo transverso com o processo articular superior, sob um pequeno ligamento (o mamiloacessório). É ali que a agulha é posicionada. Cada faceta recebe ramos de dois níveis, o do seu nível e o do nível de cima, por isso o bloqueio é feito em dois ramos por articulação. Como um único bloqueio dá muitos falsos positivos, costuma-se exigir dois bloqueios com resposta antes de partir para o tratamento, que é a **denervação por radiofrequência** do ramo medial.\n\nNão confundir com o **nervo sinuvertebral**, que nasce perto do ramo ventral, volta para dentro do canal e inerva a parte posterior do disco e o ligamento longitudinal posterior. Ele é o nervo da dor discogênica.",
+  "correta": "Medial. O ramo medial do ramo dorsal inerva a articulação facetária e é o alvo do bloqueio diagnóstico e da denervação por radiofrequência.",
+  "referencias": [
+   "Bogduk N, Wilson AS, Tynan W. The human lumbar dorsal rami. J Anat. 1982;134(Pt 2):383-397."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0273": {
-  "conceito": "### SCIWORA\n- **O que é:** Spinal Cord Injury WithOut Radiographic Abnormality, isto é, déficit medular traumático **sem fratura nem desalinhamento** na radiografia ou na TC.\n- **Quem:** quase só **crianças**, sobretudo **menores de 8 anos**.\n- **Mecanismo:** coluna infantil muito **elástica**, com ligamentos frouxos, facetas horizontais e cabeça grande. A coluna se desloca transitoriamente e **volta**, mas a medula, menos elástica, se lesa.\n\n### Topografia\n- A literatura aponta ==predomínio cervical== (ver o alerta).\n- O gabarito registrou **torácica**.\n\n### Hoje\n- A **RM** mostra alterações (edema, hemorragia, lesão ligamentar) na maioria.\n- Muitos preferem o termo **SCIWONA** (sem anormalidade neuroimagem) quando a RM também é normal.\n- **Pode haver déficit tardio** (até dias). Conduta:\n  - imobilização por ~12 semanas;\n  - evitar esportes de contato.\n\n> **Na prova:** SCIWORA = criança, sem fratura, com déficit, e a literatura aponta a ==cervical== (gabarito oficial: torácica).",
-  "correta": "O gabarito registra **B, torácica**.\n- A literatura sistemática aponta predomínio **cervical** (ver o alerta).",
   "incorretas": {
-   "A": "**Cervical.**\n- **Provavelmente a resposta correta** pela literatura: revisões relatam cerca de 87% dos casos nessa região.",
-   "C": "**Transição toracolombar.**\n- Menos frequente.",
-   "D": "**Lombar.**\n- Rara."
+   "A": "Pela literatura, é a localização mais frequente da SCIWORA, especialmente em crianças pequenas. A banca, no entanto, registrou a coluna torácica como resposta.",
+   "C": "A transição toracolombar pode ser acometida, mas é uma localização menos frequente da SCIWORA.",
+   "D": "A coluna lombar é a localização mais rara, até porque a medula termina no nível de L1 e L2."
   },
+  "conceito": "A sigla SCIWORA vem do inglês e quer dizer lesão medular sem anormalidade radiográfica. É o quadro em que a criança tem um déficit neurológico depois de um trauma, mas a radiografia e a tomografia não mostram fratura nem desalinhamento. Foi descrita por Pang e Wilberger em 1982 e é quase exclusiva da infância, principalmente abaixo dos 8 anos.\n\nA explicação está na diferença de elasticidade. A coluna da criança pequena é muito flexível: ligamentos e cápsulas frouxos, facetas mais horizontais, corpos vertebrais em forma de cunha, cabeça proporcionalmente grande e musculatura do pescoço fraca. No trauma, ela pode se deslocar ou se alongar bastante e voltar sozinha para o lugar. A medula não tem essa elasticidade e se lesa no caminho. Quando a imagem é feita, a coluna já está alinhada.\n\nQuanto à localização, as grandes séries pediátricas mostram predomínio da **coluna cervical**, em especial nas crianças menores, em que o fulcro de movimento do pescoço fica mais alto. Lesões torácicas existem, muitas vezes ligadas a traumas de alta energia, e tendem a ser mais graves, mas são menos frequentes. Por isso este gabarito, que marcou a coluna torácica, merece a ressalva do alerta.\n\nHoje a ressonância mostra alguma alteração (edema, sangramento na medula, lesão de ligamentos ou de disco) na maioria desses pacientes, e alguns autores reservam o termo para quando até a ressonância é normal. Dois cuidados práticos: o déficit pode aparecer de forma tardia, horas ou dias depois do trauma, e a conduta inclui imobilização por cerca de 12 semanas e afastamento de esportes de contato.",
+  "correta": "Coluna torácica, segundo o gabarito oficial. A literatura pediátrica, porém, aponta a coluna cervical como a localização mais comum da SCIWORA, como explicado no alerta.",
   "alerta": "**Provável erro de gabarito.** Revisões pediátricas identificam a coluna cervical como o local mais comum de SCIWORA; a alternativa A deve ser conferida e provavelmente substituir B.",
   "referencias": [
    "Pediatric Cervical Spine Injuries and SCIWORA: WFNS Spine Committee Recommendations. Neurospine. 2020;17:797-808. https://pmc.ncbi.nlm.nih.gov/articles/PMC7788416/",
    "Carroll T et al. Spinal cord injuries without radiologic abnormality in children: systematic review. Spinal Cord. 2015;53:842-848."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0274": {
-  "conceito": "### Glúteo médio e L5\n- **Nervo:** glúteo superior (L4, L5, S1), com ==predomínio de L5==.\n- **Função:** principal **abdutor** do quadril e **estabilizador da pelve** no apoio unipodal.\n- **Déficit:** **Trendelenburg**, marcha em báscula. Por isso a radiculopatia L5 pode dar Trendelenburg, não só pé caído.\n\n### Diferenciar L5 do nervo fibular (pé caído)\n| | Radiculopatia L5 | Nervo fibular |\n|---|---|---|\n| Dorsiflexão / hálux | fraca | fraca |\n| **Inversão** (tibial posterior, L5 via tibial) | ==fraca== | **preservada** |\n| **Abdução do quadril** (glúteo médio) | ==fraca== | preservada |\n| Dor lombar ou ciatalgia | sim | não |\n\n### Miótomos\n| Raiz | Motor | Reflexo |\n|---|---|---|\n| L3 | flexão do quadril, extensão do joelho | patelar (parcial) |\n| L4 | quadríceps, **tibial anterior** | **patelar** |\n| ==L5== | ==glúteo médio==, **extensor longo do hálux**, tibial anterior | nenhum |\n| S1 | **tríceps sural**, glúteo máximo, fibulares | **aquileu** |\n\n> **Na prova:** glúteo médio = ==L5==.",
-  "correta": "**L5.**",
   "incorretas": {
-   "A": "**L3.**\n- Flexão do quadril e extensão do joelho.",
-   "B": "**L4.**\n- Contribui, mas o miótomo característico é o **quadríceps / tibial anterior**, com o **patelar**.",
-   "D": "**S1.**\n- Tríceps sural, **glúteo máximo** e aquileu."
+   "A": "A raiz L3 atua principalmente na flexão do quadril e na extensão do joelho, e não na abdução do quadril.",
+   "B": "L4 contribui para o nervo glúteo superior, mas o músculo característico de L4 é o quadríceps (junto com o tibial anterior), com o reflexo patelar. O predomínio no glúteo médio é de L5.",
+   "D": "S1 está ligada ao tríceps sural, aos fibulares e ao glúteo máximo, o extensor do quadril, além do reflexo aquileu."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O glúteo médio é o músculo que segura a pelve quando a gente apoia o peso numa perna só. A cada passo, quando um pé sai do chão, o glúteo médio do lado que ficou apoiado contrai e impede que o quadril do lado oposto caia. Se ele está fraco, a pelve despenca para o lado sem apoio, e a pessoa compensa jogando o tronco para o lado fraco. Esse é o sinal de **Trendelenburg**, e a marcha que resulta é a marcha em báscula.\n\nO glúteo médio é inervado pelo **nervo glúteo superior**, que recebe fibras de L4, L5 e S1, com **predomínio de L5**. Por isso, uma radiculopatia de L5 pode dar fraqueza para abduzir o quadril e um Trendelenburg discreto, e não apenas o famoso pé caído.\n\nIsso tem uma utilidade clínica muito prática. Um paciente que chega com pé caído pode ter uma compressão da raiz L5 na coluna ou uma lesão do nervo fibular comum no joelho (por exemplo, por cruzar as pernas por muito tempo ou por um gesso apertado). Nos dois casos, a dorsiflexão do tornozelo e a extensão do hálux ficam fracas. A diferença está nos músculos que não dependem do nervo fibular: o glúteo médio (glúteo superior) e o tibial posterior, responsável pela inversão (nervo tibial). Se a abdução do quadril e a inversão do pé também estão fracas, a lesão é da **raiz L5**, porque só ela está em comum a todos esses músculos.\n\nPara lembrar os vizinhos: L3 e L4 movem o quadríceps e dão o reflexo patelar; S1 move o tríceps sural e o glúteo máximo e dá o reflexo aquileu.",
+  "correta": "L5. O glúteo médio é inervado pelo nervo glúteo superior, com predomínio da raiz L5, e sua fraqueza produz o sinal de Trendelenburg.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0276": {
@@ -3022,25 +3075,31 @@
   "conferido": false
  },
  "coluna-0277": {
-  "conceito": "### Síndrome centromedular no idoso\n- **Cenário:** idoso com **espondilose cervical** (osteófitos, disco abaulado, **canal estreito**) que cai **batendo a face ou a testa**.\n- **Mecanismo:** ==hiperextensão==. A medula é **pinçada** entre:\n  - os **osteófitos / disco** anteriores;\n  - o **ligamento amarelo** que pregueia para dentro, posteriormente.\n- **Imagem:** frequentemente **sem fratura nem luxação** (\"lesão medular sem fratura\" do adulto).\n- **Clínica:** tetraparesia com ==MMSS mais afetados que os MMII==, pior nas **mãos**. Sensibilidade e esfíncteres variáveis.\n- **Pista de exame:** **escoriação na testa ou no rosto** sugere mecanismo de hiperextensão.\n\n### Conduta\n- **Conservador inicialmente**, com PAM elevada e reabilitação.\n- **Descompressão** se houver compressão persistente, instabilidade ou platô de recuperação. O momento (precoce ou tardio) é **discutido**, e há tendência a descomprimir mais cedo.\n\n> **Na prova:** centromedular do idoso = ==hiperextensão + MMSS mais que MMII==.",
-  "correta": "**Hiperextensão, com tetraparesia que afeta mais os membros superiores.**",
   "incorretas": {
-   "A": "**Hiperflexão com MMSS.**\n- A distribuição está certa; o mecanismo está errado.",
-   "B": "**Hiperflexão com MMII.**\n- Os dois itens estão errados.",
-   "D": "**Hiperextensão com MMII.**\n- O mecanismo está certo; a distribuição está errada."
+   "A": "A distribuição do déficit está certa, mas o mecanismo não: a síndrome centromedular do idoso decorre de hiperextensão, e não de hiperflexão.",
+   "B": "Erra o mecanismo e a distribuição. A síndrome centromedular vem da hiperextensão e afeta mais os membros superiores.",
+   "D": "O mecanismo está certo, mas a síndrome centromedular afeta mais os membros superiores, e não os inferiores."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O cenário é tão típico que vale guardar a cena. Uma pessoa idosa tropeça e cai de frente, batendo a testa ou o rosto no chão. Na emergência, há uma escoriação na testa, e ela não consegue fechar as mãos direito, embora mexa as pernas.\n\nA escoriação na testa conta o mecanismo: o pescoço foi jogado para trás, em **hiperextensão**. Esse idoso tem espondilose cervical, com osteófitos e disco abaulado na frente do canal. Quando o pescoço se estende, o ligamento amarelo, que fica atrás da medula, pregueia e se projeta para dentro do canal. A medula fica pinçada entre a frente e o fundo, como num alicate. Muitas vezes a radiografia não mostra fratura nem luxação.\n\nO dano se concentra no centro da medula, e o resultado é a **síndrome centromedular**: tetraparesia que afeta **mais os membros superiores** que os inferiores, pior nas mãos, com sensibilidade e bexiga alteradas em graus variáveis. É a síndrome medular incompleta mais comum.\n\nO tratamento começa, na maioria das vezes, sem cirurgia: imobilização, manutenção de uma pressão arterial média mais alta nos primeiros dias para proteger a medula, e reabilitação. A descompressão cirúrgica é indicada quando há compressão persistente, instabilidade ou quando a recuperação para de evoluir, e há uma tendência atual de operar mais cedo. O prognóstico é relativamente bom para a marcha, mas as mãos costumam ficar com alguma sequela.\n\nA flexão não é o mecanismo dessa síndrome. Lesões em flexão com compressão da frente da medula tendem a produzir a síndrome medular anterior.",
+  "correta": "Hiperextensão, com tetraparesia que afeta mais os membros superiores. No idoso com canal estreito, a hiperextensão pinça a medula entre osteófitos e ligamento amarelo e lesa sua porção central.",
+  "referencias": [
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0278": {
-  "conceito": "### Espondilolistese de alto grau no adolescente\n**Contexto:** geralmente **ístmica / displásica** em **L5-S1**, com Meyerding **III ou mais** e **cifose lombossacra** (ângulo de deslizamento aumentado).\n\n### Pelve\n- A pelve ==gira para trás (retroversão)== para compensar o desequilíbrio sagital: **pelve vertical**.\n- **Parâmetros:** PT (versão pélvica) aumentado, SS (inclinação sacral) diminuída. A **IP** (incidência pélvica) é **alta** (fator predisponente).\n\n### Postura e exame\n- **Isquiotibiais encurtados** (retesados): pouca flexão do tronco, **SLR limitado**. É frequentemente o que leva à consulta.\n- **Quadris e joelhos fletidos:** **marcha agachada** (\"crouch\"), passos curtos.\n- **Tronco encurtado**, com **prega abdominal** transversa.\n- **Degrau palpável** nos espinhosos (L5 fica \"atrás\", pois o arco não escorrega).\n- **Nádegas planas** e sacro vertical.\n- **Radiculopatia L5** possível.\n\n### Tratamento\nAlto grau é **cirúrgico**: artrodese L4 (ou L5) a S1, com ou sem redução.\n\n> **Na prova:** espondilolistese grave do adolescente = ==retroversão pélvica==, com isquiotibiais **encurtados** e quadris e joelhos **fletidos**.",
-  "correta": "**Aumento da retroversão pélvica.**",
   "incorretas": {
-   "B": "**Alongamento dos isquiotibiais.**\n- É o contrário: **encurtamento**.",
-   "C": "**Extensão do quadril.**\n- O quadril fica **fletido** (marcha agachada).",
-   "D": "**Pé calcâneo.**\n- Não faz parte do quadro."
+   "B": "Os isquiotibiais ficam encurtados e tensos, e não alongados. Esse encurtamento limita a flexão do tronco e altera a marcha.",
+   "C": "O quadril fica fletido, junto com os joelhos, na marcha agachada que compensa o desequilíbrio. A extensão não faz parte do quadro.",
+   "D": "O pé calcâneo não é achado da espondilolistese grave do adolescente."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na espondilolistese de alto grau do adolescente, L5 escorregou muito sobre o sacro (grau III de Meyerding ou mais, ou seja, mais da metade do corpo vertebral). Quase sempre é a forma ístmica ou a displásica em L5-S1. E quanto mais L5 escorrega, mais ela também tomba para a frente sobre o topo arredondado do sacro, criando uma **cifose lombossacra**. O corpo inteiro passa a pender para a frente.\n\nPara não cair para a frente, o adolescente precisa reequilibrar o tronco, e a principal manobra é **girar a pelve para trás**: a **retroversão pélvica**. O sacro fica vertical, as nádegas parecem achatadas, e os parâmetros pélvicos mostram uma versão pélvica aumentada e uma inclinação sacral menor. Essa compensação tem limite, e a seguir vêm os quadris e os joelhos **fletidos**, numa marcha agachada, com passos curtos.\n\nOs **isquiotibiais** ficam **encurtados**, tensos, e muitas vezes é isso que traz o adolescente ao consultório: ele não consegue encostar as mãos no chão e anda de um jeito estranho, com o teste de elevação da perna estendida muito limitado. O tronco parece curto, pode aparecer uma prega transversal na barriga, e ao palpar a coluna sente-se um degrau entre os processos espinhosos de L4 e L5.\n\nO pé calcâneo (pé em dorsiflexão permanente) não faz parte do quadro, embora a raiz L5 possa ser comprimida e causar dor ou fraqueza.\n\nA espondilolistese de alto grau sintomática no adolescente é de tratamento cirúrgico, com artrodese de L4 ou L5 até S1, com ou sem redução do escorregamento.",
+  "correta": "Aumento da retroversão pélvica. A pelve gira para trás para compensar o deslocamento do tronco para a frente causado pelo escorregamento e pela cifose lombossacra.",
+  "referencias": [
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0279": {
@@ -3055,14 +3114,17 @@
   "conferido": false
  },
  "coluna-0280": {
-  "conceito": "### Por que a SCIWORA acontece\nA coluna da criança é **elástica** e a medula **não**:\n- **ligamentos frouxos** e cápsulas elásticas;\n- **facetas horizontalizadas;**\n- **uncinados** ainda não formados;\n- corpos vertebrais em cunha anterior;\n- **cabeça grande** e musculatura cervical fraca.\n\n### Mecanismo\n- A coluna **alonga e se desloca** além do que a medula tolera, e depois **volta ao lugar**. Radiografia e TC ficam normais.\n- **Mecanismo cobrado:** ==flexão-distração==. Estudos experimentais mostram que a coluna infantil pode alongar **vários centímetros**, e a medula rompe com **poucos milímetros**.\n- **Ressalva:** **Pang** descreveu mais de um mecanismo (hiperflexão, **hiperextensão**, distração e isquemia), que se sobrepõem nas séries.\n\n### Contrastes com o adulto\n- **Hiperextensão sem fratura no idoso:** síndrome **centromedular** (canal espondilótico). Não é SCIWORA.\n- **Compressão axial:** fratura por explosão, visível na imagem.\n- **Rotação:** lesão facetária ou luxação, visível na imagem.\n\n> **Na prova:** SCIWORA = mecanismo de ==flexão-distração== (coluna elástica, medula não).",
-  "correta": "**Flexão-distração.**",
   "incorretas": {
-   "B": "**Extensão.**\n- É o mecanismo clássico da **centromedular do idoso**.\n- Pang também a lista na SCIWORA, mas não é o mecanismo cobrado.",
-   "C": "**Compressão.**\n- Produz **fratura** (explosão), visível na imagem.",
-   "D": "**Rotação.**\n- Produz lesão facetária ou luxação, visível na imagem."
+   "B": "A extensão é o mecanismo clássico da lesão medular sem fratura no idoso com canal estreito, a síndrome centromedular. Pode participar da SCIWORA, mas não é o mecanismo cobrado.",
+   "C": "A compressão axial produz fraturas, como a explosão do corpo vertebral, que aparecem na imagem e fogem da definição de SCIWORA.",
+   "D": "A rotação costuma causar lesões facetárias e luxações, também visíveis nos exames de imagem."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A SCIWORA, lesão medular sem anormalidade radiográfica, é uma lesão quase exclusiva da criança pequena, e para entender o mecanismo é preciso comparar a elasticidade da coluna com a da medula.\n\nA coluna infantil é feita para se dobrar: ligamentos e cápsulas frouxos, facetas articulares mais horizontais (que deslizam com facilidade), processos uncinados ainda pouco desenvolvidos, corpos vertebrais em cunha e uma cabeça grande apoiada num pescoço de musculatura fraca. Estudos experimentais clássicos mostraram que a coluna de uma criança pode se alongar vários centímetros sem romper, enquanto a medula se rompe com poucos milímetros de estiramento.\n\nO mecanismo cobrado é a **flexão com distração**. No trauma, a coluna flexível dobra e se alonga além do que a medula tolera, e depois volta para o lugar. A imagem, feita depois, mostra uma coluna alinhada e sem fratura, mas a medula já foi lesada. Pang, que descreveu a síndrome, reconheceu que outros mecanismos também participam (a hiperextensão, a distração pura e até a isquemia), mas o modelo didático é o da coluna que alonga em flexão.\n\nVale contrastar com o idoso. Lá, a lesão medular sem fratura acontece por **hiperextensão** num canal estreitado por artrose, e o resultado é a síndrome centromedular. Não é SCIWORA no sentido original. Já a compressão axial e a rotação tendem a produzir fraturas e luxações, que aparecem na imagem e, portanto, não entram na definição.",
+  "correta": "Flexão-distração. A coluna elástica da criança se alonga e se desloca além do limite da medula e depois volta ao lugar, deixando a lesão medular sem alteração na radiografia.",
+  "referencias": [
+   "Pang D, Wilberger JE Jr. Spinal cord injury without radiographic abnormalities in children. J Neurosurg. 1982;57(1):114-129."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0281": {
@@ -3082,17 +3144,17 @@
   "conferido": false
  },
  "coluna-0282": {
-  "conceito": "### Indicações de radiografia na lombalgia aguda (AHCPR, 1994)\n**Clínicas:**\n- idade acima de **50 anos**;\n- **trauma** significativo;\n- **febre**, **perda de peso**, **câncer** prévio;\n- **déficit neurológico**;\n- uso de **corticoide**;\n- suspeita de **espondilite anquilosante**.\n\n**Psicossociais** (presentes na lista clássica):\n- abuso de **álcool ou drogas**;\n- ==busca de compensação== pela dor lombar (litígio, perícia, acidente de trabalho).\n\n### Por que a compensação entra\nNão é por suspeita de doença grave. O contexto **médico-legal** exige **documentação** do caso.\n\n### Observação\nDiretrizes mais recentes enfatizam as **bandeiras vermelhas clínicas**. O item de compensação é da lista **clássica** usada nesta questão (Campbell).\n\n> **Na prova:** entre as opções, a indicação é a ==busca de compensação==.",
-  "correta": "**Busca de compensação por dor lombar.**",
   "incorretas": {
-   "A": "**Atleta.**\n- Não é indicação por si só.\n- A exceção seria suspeita de lise da pars.",
-   "B": "**Artrite reumatoide.**\n- Na coluna, o problema da AR é a **atlantoaxial** (cervical).\n- A espondiloartrite da lista é a **anquilosante**.",
-   "D": "**Crises anuais que melhoram sozinhas.**\n- Lombalgia mecânica benigna: justamente quando **não** se pede imagem."
+   "A": "Ser atleta, por si só, não indica radiografia. A investigação seria pensada se houvesse suspeita específica, como a espondilólise no jovem que faz hiperextensão repetida.",
+   "B": "A artrite reumatoide acomete principalmente a coluna cervical, na região atlantoaxial. Na lombalgia aguda, não é indicação de imagem; a espondiloartrite que entra na lista é a espondilite anquilosante.",
+   "D": "Crises de dor uma vez por ano que melhoram sozinhas descrevem justamente a lombalgia mecânica benigna, em que a imagem não está indicada."
   },
+  "conceito": "A dor lombar aguda é uma das queixas mais comuns da medicina, e a imensa maioria dos casos é mecânica, benigna e melhora sozinha em poucas semanas. Por isso as diretrizes insistem em não pedir radiografia de rotina: ela não muda a conduta, expõe o paciente à radiação e costuma mostrar alterações degenerativas que não explicam a dor e só aumentam a preocupação.\n\nA exceção são as **bandeiras vermelhas**, sinais que sugerem uma causa grave por trás da dor: idade acima de 50 anos, trauma significativo, febre, perda de peso inexplicada, história de câncer, uso prolongado de corticoide, déficit neurológico, suspeita de infecção ou de espondilite anquilosante. Nesses casos, a imagem se justifica.\n\nA diretriz clássica da agência americana AHCPR, de 1994, a base desta questão, trazia também critérios que não são sobre a doença, e sim sobre o contexto. Um deles é o paciente que **busca compensação** pela dor lombar: perícia, acidente de trabalho, processo judicial. A imagem, nesse caso, entra pela necessidade de **documentação** médico-legal, e não por suspeita de doença grave. A mesma lista incluía abuso de álcool ou drogas.\n\nAs diretrizes mais novas dão menos peso a esses critérios psicossociais e se concentram nas bandeiras vermelhas clínicas, mas a pergunta se baseia na lista clássica. Entre as opções, é a única que constava como indicação.",
+  "correta": "Busca compensação por dor lombar. Na lista clássica da AHCPR, o contexto de compensação ou litígio era indicação de radiografia, pela necessidade de documentação médico-legal.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 46"
+   "Bigos SJ, Bowyer OR, Braen GR, et al. Acute Low Back Problems in Adults. Clinical Practice Guideline No. 14. AHCPR Publication No. 95-0642. Rockville (MD): Agency for Health Care Policy and Research; 1994."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0283": {
@@ -3112,36 +3174,34 @@
   "conferido": false
  },
  "coluna-0284": {
-  "conceito": "### Classificação de Schroth (método de Katharina Schroth / Lehnert-Schroth)\n- **Modelo:** o tronco é dividido em **blocos** que se deslocam e rodam uns em relação aos outros:\n  - **pélvico;**\n  - **lombar;**\n  - **torácico;**\n  - **cervical / ombros.**\n- **Padrões** (Weiss e outros):\n  - **3C:** curva torácica principal, com a pelve deslocada para o lado **côncavo**;\n  - **3CP:** idem, com a pelve deslocada para o lado **convexo**;\n  - **4C:** curva dupla, com a lombar importante;\n  - **4CP:** 4C com componente pélvico.\n- **Base:** ==localização das curvas e combinação dos blocos deformados==. **Não** é a magnitude do Cobb (ver o alerta).\n- **Uso:** orienta os **exercícios específicos** (fisioterapia de escoliose) e também o desenho de **coletes** (Chêneau).\n\n### O que é cada coisa\n- **Cobb:** magnitude, que indica observação, colete ou cirurgia.\n- **Risser / Sanders:** maturidade, que indica risco de progressão.\n- **Lenke / King:** classificações **cirúrgicas**.\n\n> **Na prova:** o gabarito oficial é o Cobb, mas a literatura descreve Schroth por ==blocos e padrões de curva==.",
-  "correta": "O gabarito registra **A, ângulo de Cobb**.\n- Essa não é a base da classificação de Schroth (ver o alerta).",
   "incorretas": {
-   "B": "**Direção da curva e relação com a pelve.**\n- Faz parte do raciocínio de Schroth (3C versus 3CP), mas é incompleta.",
-   "C": "**Maturidade esquelética.**\n- Influencia o tratamento, não o tipo de Schroth.",
-   "D": "**Localização das curvas e combinação dos blocos.**\n- É a descrição **mais compatível** com a classificação."
+   "B": "A direção da curva e a posição da pelve participam do raciocínio de Schroth, por exemplo para separar os padrões com pelve deslocada para cada lado, mas descrevem apenas parte da classificação.",
+   "C": "A maturidade esquelética, pelo Risser ou pela radiografia da mão, mede o risco de progressão e influencia o tratamento, mas não define o padrão de Schroth.",
+   "D": "É a descrição mais fiel da classificação de Schroth, baseada na localização das curvas e na combinação dos blocos deformados do tronco. A banca, contudo, marcou a alternativa A."
   },
+  "conceito": "Katharina Schroth era uma professora alemã com escoliose que, nos anos 1920, desenvolveu um método de exercícios para tratar a própria curva. O método cresceu e virou uma escola de fisioterapia específica para escoliose, hoje usada no mundo todo, inclusive junto com o colete.\n\nA ideia central é olhar o tronco como uma pilha de **blocos** empilhados: o bloco pélvico, o lombar, o torácico e o dos ombros e pescoço. Na escoliose, esses blocos não estão só inclinados; eles se deslocam para os lados e rodam uns em relação aos outros, como uma pilha de caixas que escorregou. Os exercícios usam correções posturais específicas e uma respiração direcionada para \"desrodar\" e realinhar cada bloco.\n\nA classificação de Schroth, aprimorada por Lehnert-Schroth e depois por Weiss, descreve **padrões de curva** a partir da **localização das curvas e da forma como os blocos se combinam**. Os mais conhecidos são o padrão de três curvas (3C), em que a curva torácica domina e a pelve se desloca para o lado da concavidade, e o de quatro curvas (4C), em que há uma curva lombar importante junto com a torácica, com variações conforme a posição da pelve. Cada padrão pede exercícios diferentes e orienta também o desenho de coletes como o de Chêneau.\n\nO ângulo de Cobb mede a magnitude da curva e decide entre observar, usar colete ou operar, mas não é o critério que define o padrão de Schroth. Por isso o gabarito, que marcou o Cobb, merece a ressalva do alerta: a descrição da alternativa D é a que corresponde à classificação.",
+  "correta": "O valor angular da curva medido pelo ângulo de Cobb, segundo o gabarito oficial. A literatura, porém, descreve a classificação de Schroth pelos padrões de curva e pela combinação dos blocos do tronco, como explicado no alerta.",
   "alerta": "**Provável erro de gabarito.** A literatura descreve a classificação Schroth pelos padrões tridimensionais e blocos corporais; a alternativa D é superior a A.",
   "referencias": [
    "Algorithm for Schroth-Curve-Type Classification. Healthcare (Basel). 2023;11:869. https://pmc.ncbi.nlm.nih.gov/articles/PMC10047876/",
    "Weiss HR. The method of Katharina Schroth. Scoliosis. 2011;6:17.",
    "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, 6ª edição, Cap. 152"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0285": {
-  "conceito": "### Pars interarticularis (istmo)\n- **Onde fica:** a porção do arco posterior **entre a faceta articular superior e a inferior**, contínua com a **lâmina** (e daí com o espinhoso).\n- **Em ¾ oblíquo:** é o \"**pescoço do cachorrinho**\" de **Lachapelle**. A lise aparece como uma \"**coleira**\".\n- **Por que falha:** é o ponto de concentração de estresse em **hiperextensão e rotação** repetidas (ginastas, esportes de arremesso, levantamento). É uma **fratura por estresse**, mais comum em **L5**.\n\n### Wiltse (Wiltse, Newman e Macnab, 1976)\n| Tipo | Nome |\n|---|---|\n| I | displásica (congênita) |\n| ==II== | ==ístmica==: **A** lise (fratura por fadiga), **B** pars alongada e íntegra, **C** fratura aguda |\n| III | degenerativa (L4-L5; arco íntegro) |\n| IV | traumática (fora da pars) |\n| V | patológica |\n| VI | pós-cirúrgica (iatrogênica) |\n\n> **Na prova:** istmo = ==liga as facetas superior e inferior à lâmina / espinhoso==.",
-  "correta": "**Conecta as facetas articulares superior e inferior à lâmina e ao processo espinhoso.**",
   "incorretas": {
-   "B": "**Pedículo e transverso.**\n- Não delimitam a pars.",
-   "C": "**Pedículo e faceta superior.**\n- Descrição anatômica imprecisa.",
-   "D": "**Transverso e corpo vertebral.**\n- Não definem a pars."
+   "B": "O pedículo e o processo transverso ficam na frente e ao lado da pars, ligando o arco ao corpo vertebral. Não são as estruturas que o istmo conecta.",
+   "C": "O pedículo não faz parte dessa conexão. O istmo fica entre as facetas superior e inferior, e não entre o pedículo e a lâmina.",
+   "D": "O processo transverso e o corpo vertebral não são ligados pelo istmo. Essa descrição mistura partes da vértebra que não definem a pars."
   },
+  "conceito": "Para entender a espondilólise, vale montar mentalmente uma vértebra lombar vista de trás. Do corpo vertebral saem para trás os dois **pedículos**, como pilares. Atrás dos pedículos fica o arco, que fecha o canal: dos dois lados, ele tem uma faceta articular **superior** (que se encaixa na vértebra de cima) e uma **inferior** (que se encaixa na de baixo), e as duas **lâminas** se unem no meio para formar o **processo espinhoso**.\n\nO **istmo**, ou **pars interarticularis**, é a ponte de osso entre a faceta articular superior e a inferior de cada lado. Ele faz a ligação das facetas com a lâmina e, por ela, com o processo espinhoso. É uma faixa estreita, que recebe uma concentração enorme de esforço quando a coluna se estende e roda.\n\nNa radiografia oblíqua da coluna lombar, a vértebra forma a famosa figura do **cachorrinho de Lachapelle**: o processo transverso é o focinho, o pedículo é o olho, a faceta superior é a orelha, a faceta inferior é a pata da frente, e o istmo é o **pescoço**. Quando há espondilólise, o cachorrinho aparece com uma **coleira**.\n\nA lise do istmo é, na maioria das vezes, uma fratura por estresse, causada por hiperextensão repetida (ginástica, balé, vôlei, levantamento de peso) e mais comum em L5. Na classificação de Wiltse, a espondilolistese **ístmica** é o tipo II, com três subtipos: IIA, a lise por fadiga, a mais comum; IIB, a pars alongada mas inteira, por microfraturas que consolidaram; e IIC, a fratura aguda da pars.",
+  "correta": "A faceta articular superior e a inferior à lâmina e ao processo espinhoso. O istmo é a ponte óssea entre as duas facetas, contínua com a lâmina, que se une ao espinhoso.",
   "referencias": [
-   "Wiltse LL, Newman PH, Macnab I. Classification of spondylolysis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29.",
-   "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020.",
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 4.11"
+   "Wiltse LL, Newman PH, Macnab I. Classification of spondylolisis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0286": {
@@ -3161,112 +3221,118 @@
   "conferido": false
  },
  "coluna-0287": {
-  "conceito": "### Weinstein-Boriani-Biagini (WBB)\n- **Para quê:** mapa cirúrgico dos **tumores primários** da coluna, para planejar a **ressecção em bloco**.\n- **Plano axial como relógio:** ==12 setores==, numerados em sentido **horário**.\n- **Camadas concêntricas:** ==5==, de fora para dentro:\n  - **A:** partes moles extraósseas;\n  - **B:** intraóssea superficial;\n  - **C:** intraóssea profunda;\n  - **D:** extraóssea **extradural** (epidural);\n  - **E:** extraóssea **intradural**.\n- **Extensão longitudinal:** número de vértebras.\n\n### Tipos de ressecção pela WBB\n- **Vertebrectomia (corpo):** tumor nos setores **4 a 8** ou **5 a 9**, com um pedículo livre.\n- **Ressecção sagital:** tumor excêntrico (setores 3 a 5 ou 8 a 10).\n- **Arco posterior:** setores **10 a 3**.\n\n### As outras\n| Sistema | Uso |\n|---|---|\n| **Tomita** | 7 tipos de extensão; orienta a **espondilectomia total em bloco** |\n| **Enneking** | estadiamento oncológico musculoesquelético (benignos 1 a 3; malignos I a III, A/B) |\n| **SINS** | instabilidade **neoplásica** (0 a 18); para metástase |\n| Tokuhashi / Tomita (escore) | **prognóstico** de metástase |\n\n> **Na prova:** 12 setores + 5 camadas = ==WBB==.",
-  "correta": "**Weinstein-Boriani-Biagini.**",
   "incorretas": {
-   "A": "**Tomita.**\n- 7 tipos de extensão, para a espondilectomia em bloco.\n- Não usa setores nem camadas.",
-   "B": "**Enneking.**\n- Estadiamento biológico e compartimental, não a geometria da vértebra.",
-   "D": "**SINS.**\n- Responde \"é instável?\", não \"onde está o tumor?\"."
+   "A": "Tomita descreve 7 tipos de extensão do tumor e orienta a espondilectomia total em bloco, sem usar setores nem camadas.",
+   "B": "Enneking é um estadiamento oncológico baseado na biologia do tumor e no compartimento, e não um mapa da vértebra.",
+   "D": "O SINS avalia a instabilidade da coluna com metástase. Ele responde se a coluna está instável, e não onde o tumor está."
   },
+  "conceito": "Quando se fala em tumor da coluna, há várias classificações com nomes parecidos, e cada uma responde a uma pergunta diferente. Separar as perguntas é o caminho para acertar esse tipo de questão.\n\nA **classificação de Weinstein, Boriani e Biagini** (WBB) responde à pergunta **\"onde exatamente está o tumor dentro da vértebra?\"**. Ela é usada nos **tumores primários**, em que o objetivo muitas vezes é tirar a lesão inteira, em bloco, com margem. No corte axial, a vértebra é dividida como um relógio em **12 setores**, numerados no sentido horário. Do lado de fora para o de dentro, há **5 camadas** concêntricas, de A a E: A são as partes moles fora do osso; B, o osso superficial; C, o osso profundo; D, o espaço fora do osso mas dentro do canal, fora da dura (epidural); e E, dentro da dura. A extensão no sentido do comprimento da coluna é dada pelo número de vértebras acometidas. Com esse mapa, o cirurgião decide se é possível uma vertebrectomia, uma ressecção sagital ou a ressecção do arco posterior.\n\nAs outras respondem a outras perguntas. **Enneking** faz o estadiamento oncológico dos tumores do sistema musculoesquelético, pela agressividade biológica e pelo compartimento, e não pela geometria da vértebra. **Tomita** descreve 7 tipos de extensão do tumor na vértebra e orienta a espondilectomia total em bloco, mas não usa setores e camadas. E o **SINS** pergunta outra coisa: se a coluna com metástase está **instável**, com uma pontuação de 0 a 18.",
+  "correta": "Weinstein-Boriani-Biagini. É a classificação que divide a vértebra em 12 setores no plano axial e 5 camadas concêntricas, para planejar a ressecção dos tumores primários da coluna.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 49"
+   "Boriani S, Weinstein JN, Biagini R. Primary bone tumors of the spine. Terminology and surgical staging. Spine. 1997;22(9):1036-1044."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0288": {
-  "conceito": "### Prognóstico na síndrome medular central\n**1. Idade (o fator mais consistente)**\n- Pacientes com **menos de ~50 anos** recuperam **marcha independente** em proporção muito maior.\n- As séries clássicas sugerem **cerca de 80%** contra **cerca de 40%** nos idosos (valores aproximados, variáveis entre estudos).\n\n**2. Tratamento**\n- Havendo **compressão medular persistente** (canal estreito, hérnia, instabilidade), a tendência atual favorece a **descompressão**, cada vez mais **precoce**.\n- A evidência é de qualidade **moderada a baixa**.\n\n**Melhor combinação:** ==jovem, operado==.\n\n### Outros fatores favoráveis\n- Lesão menos grave na admissão (**ASIA** alto).\n- **Sem** sinal medular extenso na RM.\n- **Função esfincteriana** preservada.\n- **Espasticidade** leve.\n\n### Padrão de recuperação\nMMII, depois **bexiga**, depois MMSS proximais, e por último as **mãos** (pior e incompleto).\n\n> **Na prova:** melhor prognóstico = ==jovem + cirúrgico== (a idade pesa mais).",
-  "correta": "**Jovens, com tratamento cirúrgico.**",
   "incorretas": {
-   "A": "**Jovens, não cirúrgico.**\n- A idade favorece.\n- Deixar compressão persistente, porém, desperdiça potencial.",
-   "C": "**Idosos, não cirúrgico.**\n- A idade é o principal fator adverso.",
-   "D": "**Idosos, cirúrgico.**\n- Operar ajuda, mas não anula o efeito da idade."
+   "A": "Ser jovem favorece, mas deixar sem tratamento uma compressão medular persistente desperdiça parte do potencial de recuperação, segundo o raciocínio adotado.",
+   "C": "A idade avançada é o principal fator de pior prognóstico na síndrome medular central.",
+   "D": "A cirurgia pode ajudar o idoso, mas não compensa o peso da idade sobre a recuperação."
   },
+  "conceito": "A síndrome medular central é a lesão medular incompleta mais comum: fraqueza maior nos braços que nas pernas, principalmente nas mãos, quase sempre depois de uma hiperextensão cervical num canal estreito. Em geral, o prognóstico é melhor que o das outras síndromes incompletas, mas varia muito de paciente para paciente, e a banca quer saber o que pesa nessa variação.\n\nO fator mais consistente é a **idade**. Os pacientes mais jovens recuperam a marcha independente, o controle da bexiga e a função das mãos em proporção bem maior que os idosos. As séries clássicas mostram diferenças grandes: algo como a grande maioria dos jovens voltando a andar, contra uma parte bem menor dos idosos, com números que variam de estudo para estudo. A medula do idoso tem menos reserva, e ele costuma ter outras doenças que atrapalham a reabilitação.\n\nO segundo ponto é o tratamento. Por muitos anos a síndrome central foi tratada quase sempre sem cirurgia. Hoje, quando há uma **compressão persistente** da medula (canal estreito, hérnia, instabilidade), a tendência é **descomprimir**, e cada vez mais cedo, porque os estudos sugerem melhor recuperação neurológica. A qualidade da evidência ainda é moderada, mas é esse o raciocínio da questão. Juntando os dois fatores, a melhor combinação é o paciente **jovem e operado**.\n\nOutros sinais de bom prognóstico são uma lesão menos grave na chegada, pouca alteração de sinal na ressonância e esfíncteres preservados. A recuperação costuma seguir uma ordem: pernas, bexiga, braços, e as mãos por último.",
+  "correta": "Jovens, com tratamento cirúrgico. A idade jovem é o fator de melhor prognóstico mais consistente, e a descompressão da medula comprimida tende a melhorar a recuperação.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.3"
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0289": {
-  "conceito": "### Marchetti e Bartolozzi\nDivide a espondilolistese em **dois grandes grupos**, com foco no **prognóstico**.\n| Grupo | Subtipos |\n|---|---|\n| **Desenvolvimental** (displasia de base) | **alto grau displásico** (com lise ou com alongamento da pars); **baixo grau displásico** (com lise ou com alongamento) |\n| ==Adquirida== (coluna normal que sofreu uma agressão) | ==traumática== (fratura aguda ou **por estresse**); **pós-cirúrgica** (direta ou indireta); **patológica** (local ou sistêmica); **degenerativa** |\n\n### Por que importa\n- As **desenvolvimentais de alto grau displásico** (sacro em cúpula, L5 trapezoidal, arco displásico) têm **maior risco de progressão**.\n- Na Wiltse, a **ístmica por fadiga** fica isolada. Aqui, a lise pode aparecer tanto numa displasia (desenvolvimental) quanto como fratura de estresse (**adquirida traumática**).\n\n> **Na prova:** adquirida em Marchetti-Bartolozzi = ==traumática== (e pós-cirúrgica, patológica, degenerativa).",
-  "correta": "**Traumática.**",
   "incorretas": {
-   "B": "**Alto grau displásico.**\n- Grupo **desenvolvimental**.\n- É o de maior risco de progressão.",
-   "C": "**Baixo grau displásico.**\n- Também **desenvolvimental**.",
-   "D": "**Alongamento da pars.**\n- Forma de apresentação dentro do grupo **desenvolvimental**."
+   "B": "O alto grau displásico pertence ao grupo desenvolvimental, de coluna com displasia de base, e é o de maior risco de progressão.",
+   "C": "O baixo grau displásico também faz parte do grupo desenvolvimental, e não do adquirido.",
+   "D": "O alongamento da pars é uma das formas em que o defeito aparece dentro do grupo desenvolvimental, tanto no alto quanto no baixo grau."
   },
+  "conceito": "A classificação de Wiltse, a mais antiga e mais conhecida, separa a espondilolistese por causa (displásica, ístmica, degenerativa, traumática, patológica). Marchetti e Bartolozzi propuseram outra lógica, pensando em **prognóstico e tratamento**: a primeira pergunta é se a coluna **já nasceu com um defeito** ou se era normal e **sofreu uma agressão**.\n\nO grupo **desenvolvimental** reúne os casos em que há uma displasia de base, ou seja, a coluna lombossacra se formou mal. Ele se divide em **alto grau displásico** e **baixo grau displásico**, conforme a intensidade da displasia (sacro arredondado no topo, L5 em forma de trapézio, arco posterior malformado). Dentro de cada um, o defeito pode aparecer como uma lise ou como um alongamento da pars. Os casos de alto grau displásico são os que mais tendem a progredir.\n\nO grupo **adquirido** reúne as colunas que eram normais e foram lesadas depois: a forma **traumática** (por fratura aguda ou por fratura de estresse da pars), a **pós-cirúrgica** (depois de uma descompressão que tirou estabilidade, por exemplo), a **patológica** (doença óssea local ou sistêmica) e a **degenerativa**.\n\nUma diferença interessante em relação a Wiltse: a lise ístmica, que em Wiltse é um tipo só, aqui pode cair em grupos diferentes. Se ela acontece numa coluna displásica, é desenvolvimental; se é uma fratura de estresse numa coluna normal, é adquirida, do tipo traumático.",
+  "correta": "Traumática. Na classificação de Marchetti e Bartolozzi, ela pertence ao grupo adquirido, junto com as formas pós-cirúrgica, patológica e degenerativa.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 4.11"
+   "Marchetti PG, Bartolozzi P. Classification of spondylolisthesis as a guideline for treatment. In: Bridwell KH, DeWald RL (eds). The Textbook of Spinal Surgery. 2nd ed. Philadelphia: Lippincott-Raven; 1997. p. 1211-1254."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0290": {
-  "conceito": "### Classificação de cifose baseada nas colunas\n**Estratifica pelo:**\n- estado das colunas **anterior** e **posterior**;\n- **flexibilidade** dos espaços discais;\n- **magnitude** da curva.\n\n**Objetivo:** escolher a **osteotomia** adequada.\n\n### Lógica (conforme o gabarito; ver o alerta)\n| Tipo | Situação |\n|---|---|\n| I (A / B) | sem deficiência estrutural relevante; curvas **flexíveis** |\n| II A | deficiência da coluna **anterior** |\n| ==II B== | deficiência da coluna ==posterior== |\n| III | deficiência de **ambas** |\n\n### Osteotomias em ordem crescente de correção\n| Osteotomia | Correção aproximada por nível | Exige |\n|---|---|---|\n| **Smith-Petersen / Ponte** (colunas posteriores) | ~10° | disco **móvel** (dobradiça anterior) |\n| **Subtração pedicular (PSO)** | ~30° a 40° | nenhum (fecha pelas três colunas; serve para curvas **rígidas**) |\n| **VCR** (ressecção de coluna vertebral) | acima de 40° | nenhum (deformidades graves e angulares; maior risco neurológico) |\n\n> **Na prova:** deficiência da coluna posterior = ==II B== (gabarito).",
-  "correta": "**II B.**\n- Na lógica adotada pelo gabarito, a deficiência isolada da coluna posterior é o tipo II B.",
   "incorretas": {
-   "A": "**I A.**\n- Tipo I: sem deficiência estrutural relevante (curvas flexíveis).",
-   "B": "**I B.**\n- Também do grupo sem deficiência estrutural predominante.",
-   "C": "**II A.**\n- Deficiência da coluna **anterior**.",
-   "E": "**III.**\n- Deficiência de **ambas** as colunas; exige osteotomias mais extensas."
+   "A": "O tipo I corresponde às cifoses sem deficiência estrutural relevante, geralmente mais flexíveis.",
+   "B": "O I B também pertence ao grupo sem deficiência estrutural predominante das colunas.",
+   "C": "O II A descreve a deficiência da coluna anterior, e não da posterior.",
+   "E": "O tipo III corresponde à deficiência das duas colunas, a situação que exige as osteotomias mais extensas."
   },
+  "conceito": "Corrigir uma cifose rígida exige escolher a osteotomia certa, e essa escolha depende de saber onde está o problema estrutural da coluna. Por isso surgiram classificações que olham para as **colunas da vértebra**: a coluna **anterior** (corpo vertebral e disco) e a **posterior** (arco, facetas e ligamentos de trás). A classificação cobrada na questão combina esse dado com a **flexibilidade** dos discos, a **magnitude** da curva e a necessidade de osteotomia.\n\nPela lógica adotada no gabarito, o tipo I agrupa as cifoses sem deficiência estrutural importante, mais flexíveis. O tipo II separa a deficiência de uma coluna só: **II A** quando o problema está na coluna **anterior** e **II B** quando está na coluna **posterior**. O tipo III é a deficiência das duas.\n\nNa prática, isso conversa com as osteotomias. Quando os discos ainda se movem, osteotomias que retiram só elementos posteriores, como a de **Smith-Petersen** ou a de **Ponte**, fecham a parte de trás usando o disco como dobradiça e ganham cerca de 10 graus por nível. Quando a curva é rígida, entra a **osteotomia de subtração pedicular**, que remove uma cunha das três colunas e corrige em torno de 30 a 40 graus num nível só. Nas deformidades mais graves e angulares, a **ressecção de coluna vertebral** (VCR) remove um segmento inteiro, com maior correção e maior risco neurológico.\n\nComo as definições de cada subtipo dessa classificação variam entre as referências, vale ler o alerta e conferir a tabela do material usado na preparação.",
+  "correta": "II B. Na lógica do gabarito, a cifose com deficiência isolada da coluna posterior é classificada como II B.",
   "alerta": "A definição exata de cada subtipo (I A, I B, II A, II B, III) dessa classificação de cifose baseada nas colunas pode variar um pouco conforme a referência consultada, mantivemos aqui a lógica mais consistente com o gabarito oficial (deficiência posterior isolada = II B), mas vale conferir a tabela específica do material que você está usando para a prova.",
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0291": {
-  "conceito": "### Tuberculose osteoarticular versus infecção piogênica\n| | Tuberculose | Piogênica |\n|---|---|---|\n| Sítio mais comum | ==coluna== (**Pott**), cerca de metade dos casos esqueléticos; depois **quadril** e **joelho** | metáfise de ossos longos (criança) |\n| Articular | geralmente ==monoarticular== | monoarticular |\n| Enzimas proteolíticas | ==ausentes / pouco relevantes== | presentes |\n| Espaço articular | **preservado por muito tempo** | reduz **cedo** |\n| Destruição da cartilagem | ==periférica / marginal==; centro relativamente poupado | **central** |\n| Fise | ==barreira fraca==: cruza para a epífise | barreira relativa |\n| Evolução | **lenta**, insidiosa | aguda |\n\n### Tríade de Phemister (artrite tuberculosa)\n1. **Osteoporose justa-articular.**\n2. **Erosões ósseas periféricas** (marginais).\n3. **Redução gradual** do espaço articular.\n\n### Pott\n- **Vértebras:** torácica baixa e lombar alta.\n- **Disco:** relativamente **preservado** no início.\n- **Abscessos frios** (psoas) e **cifose angular (giba)**.\n\n> **Na prova:** TB osteoarticular = epífise / metáfise, e a ==fise não barra a infecção==.",
-  "correta": "**A osteomielite tuberculosa afeta mais a epífise ou a metáfise, e a fise oferece pouca barreira à propagação.**",
   "incorretas": {
-   "A": "**Poliarticular.**\n- Classicamente **monoarticular**, embora quadril e joelho sejam os mais afetados.",
-   "B": "**Enzimas proteolíticas e redução precoce do espaço.**\n- É o contrário: o espaço fica **preservado** por muito tempo.",
-   "C": "**Ordem de frequência.**\n- A coluna vem primeiro, mas a sequência citada não é a clássica.\n- Depois da coluna vêm geralmente o **quadril** e o joelho.",
-   "D": "**Destruição central.**\n- O pannus tuberculoso destrói mais a **periferia**, poupando o centro."
+   "A": "A tuberculose articular é tipicamente monoarticular. Quadril e joelho estão entre as articulações mais afetadas, mas o acometimento de várias articulações não é a regra.",
+   "B": "É o oposto: o bacilo não tem enzimas proteolíticas relevantes, e por isso o espaço articular fica preservado por bastante tempo, diferentemente da infecção piogênica.",
+   "C": "A coluna é de fato o local mais comum, mas a sequência apresentada não é a clássica: depois da coluna, os sítios mais frequentes costumam ser o quadril e o joelho.",
+   "D": "O pannus tuberculoso destrói a cartilagem pela periferia, nas margens da articulação, poupando relativamente o centro. A destruição central é típica da infecção piogênica."
   },
+  "conceito": "A tuberculose osteoarticular quase sempre vem de um foco pulmonar, às vezes antigo e silencioso, de onde o bacilo chega ao osso pelo sangue. O que a banca quer saber é o que torna essa infecção tão diferente da infecção por bactérias comuns, como o estafilococo.\n\nA primeira diferença é o ritmo. O bacilo da tuberculose cresce devagar e **não produz as enzimas proteolíticas** que as bactérias piogênicas usam para digerir tecido. Por isso, numa articulação, a cartilagem é destruída tarde, e o **espaço articular fica preservado por muito tempo**. O que destrói a articulação é o **pannus**, um tecido inflamatório que cresce a partir da sinovial e avança pelas **margens** da cartilagem, poupando o centro, que fica apoiado no osso. Na radiografia, isso aparece como a tríade de Phemister: osteoporose em volta da articulação, erosões nas bordas e redução lenta do espaço. Na infecção piogênica é o contrário: as enzimas destroem a cartilagem rápido, começando pelo centro de carga.\n\nA segunda diferença é anatômica. Nos ossos longos da criança, a placa de crescimento (fise) funciona como uma barreira relativa contra a osteomielite piogênica, que fica na metáfise. A tuberculose **ignora essa barreira**: costuma afetar a epífise ou a metáfise e atravessa a fise com facilidade, chegando à articulação.\n\nSobre a distribuição: a **coluna** é o local mais comum, com cerca de metade dos casos, seguida pelo quadril e pelo joelho. A forma articular é tipicamente **monoarticular**.",
+  "correta": "A osteomielite tuberculosa afeta mais a epífise ou a metáfise, e a placa fisária oferece pouca barreira à propagação. Diferente da infecção piogênica, a tuberculose atravessa a fise com facilidade.",
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0292": {
-  "conceito": "### Escala ASIA (AIS)\n| Grau | Definição |\n|---|---|\n| A | **completa**: nada sensitivo nem motor em **S4-S5** |\n| ==B== | incompleta ==só sensitiva==: sensibilidade preservada abaixo do nível, **incluindo S4-S5**, **sem motor** |\n| C | motor preservado abaixo do nível; **mais da metade** dos músculos-chave com força **menor que 3** |\n| D | motor preservado; **metade ou mais** dos músculos-chave com força **de 3 ou mais** |\n| E | normal (com déficit prévio) |\n\n### Detalhes que caem\n- **Preservação sacral** (sensibilidade em S4-S5, pressão anal profunda ou contração anal voluntária) é o que separa **completa de incompleta**.\n- **B:** a revisão atual acrescenta que não pode haver motor preservado **mais de 3 níveis abaixo** do nível motor, de cada lado.\n- **C ou D** exigem **contração anal voluntária** ou **preservação sensitiva sacral com motor abaixo** (mais de 3 níveis abaixo do nível motor).\n- **Prognóstico:** B com **dor preservada** (pinprick) recupera marcha bem mais que B só com tato.\n\n### O caso\nSensibilidade preservada, incluindo S4-S5, e **nenhum motor** abaixo do nível: ==ASIA B==.\n\n> **Na prova:** sensitivo sacral presente e motor ausente = ==ASIA B==.",
-  "correta": "**Grau B.**\n- Incompleta: sensibilidade preservada incluindo S4-S5, sem função motora abaixo do nível.",
   "incorretas": {
-   "A": "**Grau A.**\n- Exigiria ausência total em S4-S5; aqui há sensibilidade sacral.",
-   "C": "**Grau C.**\n- Exige função **motora** preservada abaixo do nível.",
-   "D": "**Grau D.**\n- Motor preservado, com força de 3 ou mais na maioria.",
-   "E": "**Grau E.**\n- Função normal."
+   "A": "O grau A exige ausência total de função sensitiva e motora em S4-S5. Aqui há sensibilidade sacral, e a lesão é incompleta.",
+   "C": "O grau C exige alguma função motora preservada abaixo do nível, com a maioria dos músculos-chave abaixo de força 3. A paciente não tem nenhuma função motora abaixo do nível.",
+   "D": "O grau D exige função motora preservada, com pelo menos metade dos músculos-chave com força 3 ou mais.",
+   "E": "O grau E corresponde a sensibilidade e força normais, o que não é o caso."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A escala da ASIA (associação americana de lesão medular) classifica a lesão medular em cinco graus, de A a E, e o ponto de partida de toda a classificação é uma região pequena: os segmentos sacrais mais baixos, **S4 e S5**, que correspondem à pele em volta do ânus e ao esfíncter anal.\n\nA lógica é que esses segmentos são os mais distantes da lesão. Se ainda existe qualquer sinal de comunicação entre o cérebro e S4-S5, alguma fibra atravessou a lesão inteira, e ela é **incompleta**. Essa preservação sacral pode ser sensitiva (sentir o toque leve ou a picada na região perianal, ou a pressão anal profunda no toque retal) ou motora (contrair o ânus voluntariamente).\n\nCom isso, os graus ficam assim. **A**: lesão completa, sem nenhuma função sensitiva ou motora em S4-S5. **B**: incompleta só sensitiva, com sensibilidade preservada abaixo do nível, incluindo S4-S5, mas **sem função motora** abaixo do nível (pela revisão atual, sem motor preservado mais de três níveis abaixo do nível motor de cada lado). **C**: há função motora abaixo do nível, mas mais da metade dos músculos-chave abaixo dele têm força menor que 3, ou seja, não vencem a gravidade. **D**: há função motora e pelo menos metade dos músculos-chave tem força 3 ou mais. **E**: sensibilidade e força normais num paciente que tinha déficit.\n\nA paciente do enunciado sente abaixo do nível, inclusive em S4-S5, e não tem força nenhuma abaixo dele: é ASIA **B**. Um detalhe de prognóstico: no grau B, quem preserva a sensibilidade à picada tem chance bem maior de voltar a andar do que quem preserva só o toque.",
+  "correta": "Grau B. A lesão é incompleta, porque há sensibilidade preservada em S4-S5, mas não há nenhuma função motora abaixo do nível neurológico.",
+  "referencias": [
+   "Kirshblum SC, Burns SP, Biering-Sorensen F, et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0293": {
-  "conceito": "### Terminologia da SRS\n**Curvas pelo ápice:**\n| Curva | Ápice |\n|---|---|\n| Cervical | C1 a C6 |\n| Cervicotorácica | C7 a T1 |\n| **Torácica** | ==T2 ao disco T11-T12== |\n| Toracolombar | T12 a L1 |\n| **Lombar** | ==disco L1-L2 a L4== |\n| Lombossacra | L5 ou abaixo |\n\n**Padrões:**\n- **Curva dupla (double curve):** **duas curvas estruturais**, não só duas curvas presentes.\n- **Dupla maior (double major):** duas curvas estruturais de **tamanho e rotação semelhantes** (geralmente torácica + lombar).\n- ==Torácica dupla (double thoracic)==:\n  - torácica **superior estrutural**;\n  - torácica **inferior maior e mais deformante**;\n  - **lombar não estrutural**.\n  - É o padrão Lenke **2** (e King **V**).\n\n### Estrutural versus não estrutural\n- **Estrutural:** não corrige nas **inclinações laterais** (bending).\n- **Lenke:** curva menor estrutural se Cobb no bending **≥ 25°**, ou cifose regional **≥ 20°**.\n\n> **Na prova:** torácica dupla = ==torácica alta estrutural + torácica baixa maior + lombar não estrutural==.",
-  "correta": "**Curva torácica dupla:** torácica superior estrutural, torácica inferior maior e mais deformante, e lombar relativamente não estrutural.",
   "incorretas": {
-   "A": "**Torácica com ápice T5 a T7.**\n- Pela SRS, o ápice vai de **T2 ao disco T11-T12**.",
-   "B": "**Lombar com ápice L2 a L3.**\n- O ápice vai do **disco L1-L2 a L4**.",
-   "C": "**Curvatura dupla.**\n- Omite que as duas curvas precisam ser **estruturais**.",
-   "D": "**Dupla significativa.**\n- As curvas têm tamanho e rotação **semelhantes**, não diferentes."
+   "A": "Pela SRS, a curva torácica tem ápice entre T2 e o disco T11-T12. A faixa de T5 a T7 é estreita demais.",
+   "B": "A curva lombar tem ápice entre o disco L1-L2 e L4, e não apenas entre L2 e L3.",
+   "C": "A definição está incompleta: na curva dupla, as duas curvas precisam ser estruturais, e não apenas estar presentes.",
+   "D": "Na dupla maior, as duas curvas estruturais têm tamanho e rotação semelhantes, e não diferentes."
   },
+  "conceito": "A escoliose tem um vocabulário próprio, organizado pela Scoliosis Research Society (SRS), e boa parte das questões de terminologia se resolve com duas ideias: onde fica o **ápice** da curva e se a curva é **estrutural** ou não.\n\nO ápice é a vértebra ou o disco mais desviado e mais rodado da curva, e é ele que dá o nome. Pela SRS, a curva **torácica** tem ápice entre **T2 e o disco T11-T12**; a **toracolombar**, em T12 ou L1; a **lombar**, entre o **disco L1-L2 e L4**. Faixas mais estreitas, como T5 a T7 ou L2 a L3, não são a definição.\n\nUma curva **estrutural** é rígida: não se corrige quando o paciente se inclina para o lado da convexidade, na radiografia em inclinação lateral (bending). A não estrutural, ou compensatória, se corrige. Na classificação de Lenke, uma curva menor é considerada estrutural quando continua com 25 graus ou mais no bending, ou quando há cifose regional de 20 graus ou mais.\n\nCom isso, os padrões ganham sentido. **Curva dupla** é uma escoliose com **duas curvas estruturais**, e não apenas duas curvas quaisquer. **Dupla maior** é quando essas duas curvas estruturais, geralmente uma torácica e uma lombar, têm tamanho e rotação **semelhantes**. E a **torácica dupla** é um padrão específico: uma curva torácica alta estrutural, uma torácica baixa maior e mais deformante, e uma curva lombar relativamente não estrutural. Corresponde ao tipo 2 de Lenke e ao tipo V de King, e é importante porque a curva torácica alta precisa entrar na artrodese para não deixar os ombros desnivelados.",
+  "correta": "Curva torácica dupla: curva torácica superior estrutural, curva torácica inferior maior e mais deformante, e curva lombar relativamente não estrutural. É a definição da SRS para esse padrão, correspondente ao Lenke 2.",
   "referencias": [
    "Scoliosis Research Society, terminologia de classificação de curvas"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0294": {
-  "conceito": "### Disfagia após artrodese cervical anterior\n- **Frequência:** complicação **muito comum** do acesso anterior, sobretudo nos primeiros dias a semanas. A incidência varia muito entre séries.\n- **Fatores de risco:**\n  - **múltiplos níveis** e níveis **altos** (C3-C4);\n  - **tempo de retração**;\n  - **perfil da placa**;\n  - sexo feminino;\n  - edema de partes moles pré-vertebrais.\n\n### Corticoide local retrofaríngeo\n- **Uso:** aplicado sobre o espaço pré-vertebral (metilprednisolona ou triancinolona, por exemplo) antes do fechamento.\n- **Efeito:** reduz o **edema pré-vertebral** e, com isso, ==a disfagia== pós-operatória. É o efeito estudado nos ensaios.\n- **Ressalvas:**\n  - há **preocupação teórica** com a **fusão** e com **infecção**;\n  - a maioria dos estudos não mostrou aumento significativo de pseudartrose;\n  - há relatos pontuais de complicações.\n\n### Outras medidas\n- **Minimizar a retração** (tempo e pressão; desinsuflar o balonete do tubo após posicionar o afastador).\n- **Placas de baixo perfil** ou dispositivos **stand-alone**.\n- Corticoide **sistêmico** perioperatório.\n\n> **Na prova:** corticoide local no ACDF = ==menos disfagia==.",
-  "correta": "**Redução da disfagia pós-operatória.**",
   "incorretas": {
-   "A": "**Aumento de infecção.**\n- Não é o efeito principal descrito nem o estudado.",
-   "B": "**Redução da dor.**\n- O alvo é o **edema** e a **disfagia**.",
-   "C": "**Pseudartrose.**\n- É preocupação teórica, sem aumento significativo na maioria dos estudos.",
-   "E": "**Retardo de consolidação.**\n- Mesma observação da pseudartrose."
+   "A": "O risco de infecção é uma preocupação teórica com o uso de corticoide, mas não é o efeito descrito nos estudos sobre essa técnica.",
+   "B": "O objetivo do corticoide local é reduzir o edema pré-vertebral e a disfagia. A dor pós-operatória não é o desfecho associado a essa medida.",
+   "C": "A pseudartrose é uma preocupação teórica, mas a maioria dos estudos não mostrou aumento significativo com o corticoide local.",
+   "E": "O retardo de consolidação segue a mesma lógica da pseudartrose: preocupação teórica, sem aumento significativo demonstrado na maioria dos estudos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A artrodese cervical anterior (descompressão pela frente do pescoço e fusão com enxerto ou dispositivo, geralmente com placa) é uma das cirurgias de coluna mais feitas e mais bem-sucedidas. Para chegar à coluna, porém, o cirurgião passa ao lado do esôfago e da traqueia e os afasta durante a cirurgia. A consequência mais frequente disso é a **disfagia**, dificuldade e dor para engolir, muito comum nos primeiros dias e semanas.\n\nA causa principal é o **edema** dos tecidos na frente da coluna (o espaço pré-vertebral ou retrofaríngeo), provocado pela manipulação e pela pressão dos afastadores. O risco é maior quando a cirurgia envolve vários níveis, quando os níveis são altos (como C3-C4), quando o afastamento dura muito, quando a placa tem perfil mais alto e em mulheres.\n\nUma das medidas estudadas para reduzir esse edema é aplicar **corticoide local**, como metilprednisolona ou triancinolona, no espaço pré-vertebral antes de fechar o acesso. Ensaios clínicos mostraram **menos edema e menos disfagia** no pós-operatório. A preocupação teórica é que o corticoide atrapalhe a fusão ou aumente o risco de infecção, mas a maioria dos estudos não mostrou aumento significativo de pseudartrose, embora existam relatos isolados de complicações.\n\nOutras medidas ajudam: diminuir o tempo e a pressão dos afastadores, esvaziar e reinsuflar o balonete do tubo traqueal depois de posicionar o afastador, e usar placas de baixo perfil ou dispositivos sem placa.",
+  "correta": "A redução da disfagia pós-operatória. O corticoide aplicado no espaço pré-vertebral diminui o edema causado pela manipulação do esôfago e da traqueia, que é a principal causa da disfagia.",
+  "referencias": [
+   "Jeyamohan SB, Kenning TJ, Petronis KA, Feustel PJ, Drazin D, DiRisio DJ. Effect of steroid use in anterior cervical discectomy and fusion: a randomized controlled trial. J Neurosurg Spine. 2015;23(2):137-143."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0295": {
@@ -3284,31 +3350,31 @@
   "conferido": false
  },
  "coluna-0296": {
-  "conceito": "### Fratura da apófise anular posterior\n- **Nomes:** \"slipped vertebral apophysis\" ou fratura do **anel apofisário**.\n- **Mecanismo:** na coluna imatura, a **apófise anular** (anel de ossificação na borda do corpo) ainda não se fundiu, pois a fusão ocorre por volta de 18 a 25 anos. Sob **carga axial + flexão**, um fragmento **osteocartilaginoso** da borda **posteroinferior** (ou superior) se desloca para o canal, junto com o disco.\n- **Quem:** ==adolescentes== e adultos jovens, sobretudo **meninos**, em **levantamento de peso** e esportes.\n- **Onde:** **L4-L5 / L5-S1**, geralmente na borda **inferior de L4** ou **superior de S1**.\n- **Clínica:** **idêntica à hérnia discal** (ciatalgia, Lasègue), às vezes com quadro de **estenose** aguda.\n- **Imagem:** a **TC** mostra o fragmento ósseo, que a RM pode subestimar.\n- **Tratamento:** a cirurgia exige **ressecar o fragmento ósseo**, não só o disco. Discectomia isolada falha.\n\n> **Na prova:** fratura da apófise posterior = ==adolescente==, que simula hérnia.",
-  "correta": "**Adolescentes.**",
   "incorretas": {
-   "A": "**Recém-nascidos.**\n- Não têm a carga que produz a lesão.",
-   "B": "**2 a 4 anos.**\n- Fora da faixa típica.",
-   "C": "**5 a 9 anos.**\n- A faixa típica é a adolescência, perto do estirão."
+   "A": "O recém-nascido não está exposto às cargas axiais com flexão que produzem essa fratura.",
+   "B": "Crianças de 2 a 4 anos estão fora da faixa típica: nessa idade não há o padrão de esforço que arranca a apófise.",
+   "C": "Dos 5 aos 9 anos a lesão também é rara. A faixa típica é a adolescência, quando o esforço físico aumenta e o anel ainda não se fundiu."
   },
+  "conceito": "Na borda de cima e de baixo de cada corpo vertebral existe um anel de osso que se forma separado e só se funde ao resto da vértebra no fim da adolescência ou no início da vida adulta: é a **apófise anular**. As fibras mais externas do disco se prendem nesse anel. Enquanto ele não se fundiu, existe uma linha de cartilagem entre ele e o corpo vertebral, e essa linha é um ponto fraco.\n\nNum esforço com carga axial e flexão do tronco, como levantar um peso grande ou num esporte de impacto, o disco pode puxar um pedaço desse anel, geralmente da borda **posterior**, e empurrá-lo para dentro do canal junto com o próprio disco. É a **fratura da apófise anular posterior**. Ela é típica de **adolescentes** e adultos jovens, mais em meninos que treinam força ou esportes, e costuma acontecer nos níveis L4-L5 e L5-S1, na borda inferior de L4 ou na superior de S1.\n\nO quadro clínico é idêntico ao de uma hérnia de disco: dor lombar e ciática, com o teste de elevação da perna estendida positivo. Às vezes, como o fragmento é largo, o quadro é de estenose do canal. A tomografia é o melhor exame para enxergar o fragmento ósseo, que a ressonância pode subestimar.\n\nIsso muda a cirurgia. Se o cirurgião retirar apenas o disco, como numa hérnia comum, o fragmento de osso continua comprimindo a raiz e os sintomas persistem. É preciso **remover o fragmento ósseo**.\n\nA criança pequena não faz esse tipo de esforço, e o recém-nascido não tem nem a carga nem a apófise madura para que a lesão aconteça.",
+  "correta": "Adolescentes. É nessa faixa que a apófise anular ainda não está fundida e que esforços com carga axial e flexão, como levantar peso e praticar esportes, são frequentes.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 12.2"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0297": {
-  "conceito": "### Teardrop de flexão (cervical baixa)\n- **Mecanismo:** ==flexão + compressão axial==, por exemplo em **mergulho em água rasa**.\n- **Lesão:**\n  - **fragmento triangular anteroinferior** do corpo (a \"lágrima\");\n  - o **restante do corpo** é deslocado para **trás**, para o canal;\n  - **ruptura** do disco e do **complexo ligamentar posterior**.\n  - É uma lesão das **três colunas**, **muito instável**.\n- **Neurologia:** alta taxa de lesão medular, classicamente a **síndrome medular anterior**.\n- **Classificação:** estágios finais da **flexão-compressão** de **Allen-Ferguson**.\n- **Tratamento:** **cirúrgico**, geralmente com **corpectomia** anterior + artrodese, com ou sem fixação posterior.\n\n### Não confundir: teardrop de extensão (C2)\n| | Flexão (C3 a C7) | Extensão (geralmente C2) |\n|---|---|---|\n| Mecanismo | flexão-compressão | **hiperextensão** (avulsão pelo **LLA**) |\n| Fragmento | anteroinferior, com retropulsão do corpo | anteroinferior pequeno, **mais alto que largo** |\n| Estabilidade | **instável** | geralmente **estável** |\n| Perfil | jovem, mergulho | **idoso**, queda |\n\n> **Na prova:** teardrop cervical baixa = ==flexão-compressão==.",
-  "correta": "**Flexão-compressão.**",
   "incorretas": {
-   "A": "**Flexão-distração.**\n- Luxações facetárias e lesões tipo Chance.",
-   "C": "**Extensão-distração.**\n- Lesões em extensão: ruptura do disco ou avulsões (\"teardrop de extensão\").",
-   "D": "**Extensão-compressão.**\n- Fraturas dos elementos posteriores (lâmina, massa articular)."
+   "A": "A flexão-distração produz as luxações facetárias uni e bilaterais da coluna cervical baixa, e não a fratura teardrop.",
+   "C": "A extensão-distração rompe o disco e o ligamento longitudinal anterior e pode arrancar pequenos fragmentos, como na teardrop de extensão de C2, que é outra lesão, geralmente estável.",
+   "D": "A extensão-compressão fratura os elementos posteriores, como a lâmina, a massa articular e o processo espinhoso."
   },
+  "conceito": "O nome **teardrop** (lágrima, em inglês) vem do fragmento triangular que se solta do canto anteroinferior do corpo vertebral e que, na radiografia em perfil, lembra uma gota. Mas existem duas lesões com esse nome, e elas são quase opostas em gravidade.\n\nA **teardrop de flexão** da coluna cervical baixa (C3 a C7) é a que a questão pergunta. O mecanismo é **flexão com compressão axial**: o exemplo clássico é o mergulho em água rasa, em que a cabeça bate no fundo com o pescoço dobrado. A vértebra é esmagada pela frente, solta o fragmento triangular anteroinferior, e o **restante do corpo vertebral é empurrado para trás**, para dentro do canal. O disco e os ligamentos de trás se rompem. É uma lesão das três colunas, **muito instável**, com alta taxa de lesão medular, classicamente a síndrome medular anterior. Na classificação de Allen e Ferguson, corresponde aos estágios mais graves da flexão-compressão. O tratamento é cirúrgico, em geral com retirada do corpo vertebral (corpectomia) por via anterior e artrodese, às vezes associada a fixação posterior.\n\nA **teardrop de extensão**, típica de C2, é outra lesão: na hiperextensão, o ligamento longitudinal anterior arranca um pequeno fragmento da borda anteroinferior, geralmente mais alto que largo. Costuma acontecer em idosos que caem e é, em geral, estável.\n\nAs outras combinações de mecanismo produzem lesões diferentes: a flexão-distração causa luxações facetárias; a extensão-compressão fratura os elementos posteriores, como lâmina e massa articular.",
+  "correta": "Flexão-compressão. A carga axial com o pescoço fletido esmaga a frente do corpo vertebral, solta o fragmento anteroinferior e empurra o restante do corpo para dentro do canal.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 47"
+   "Allen BL Jr, Ferguson RL, Lehmann TR, O'Brien RP. A mechanistic classification of closed, indirect fractures and dislocations of the lower cervical spine. Spine. 1982;7(1):1-27."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0298": {

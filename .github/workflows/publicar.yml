@@ -3,8 +3,10 @@ name: Publicar no GitHub Pages
 on:
   push:
     # O repositório ainda não tem branch principal: enquanto não tiver, a
-    # publicação sai da branch de trabalho. Ao criar a main, ela assume.
-    branches: [main, master, "claude/**"]
+    # publicação sai da branch do site. Ao criar a main, ela assume. As outras
+    # branches de trabalho chegam ao site por pull request (não publicam
+    # sozinhas, o que só gerava falhas e e-mails de erro).
+    branches: [main, master, "claude/pdfs-questoes-tp64dr"]
   workflow_dispatch:
 
 permissions:
