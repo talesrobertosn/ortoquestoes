@@ -81,6 +81,13 @@ node marketing/instagram/gerar.mjs marketing/instagram/cronograma.html
 
 No último story, colocar a figurinha de link para o site no espaço abaixo do endereço.
 
+## Ranking e conquistas (`ranking/post.html`)
+
+Carrossel de 3 slides no feed e os mesmos 3 em story, no visual pixel art da arena do
+ranking (fonte Pixelify Sans, OFL, em `fontes/`): a novidade, como funciona (ranking, fogueira,
+emblemas) e por que a constância ajuda. Telas, legenda e ordem em `ranking/LEGENDA.md`.
+Para capturar uma tela de celular rolada até um elemento, `telas.mjs` aceita `nome=rota@seletor`.
+
 ## Série "Caso para detetive"
 
 Uma questão com imagem vira investigação: 4 alternativas = 4 suspeitos, cada pista

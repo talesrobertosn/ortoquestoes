@@ -1,6 +1,6 @@
 // Captura telas do site com uma conta de exemplo (Supabase simulado) para usar nos posts.
 // Precisa do site rodando: npm run build && npx vite preview --port 4175
-// Uso: node marketing/instagram/telas.mjs [rota ...]   (salva em marketing/instagram/telas/)
+// Uso: node marketing/instagram/telas.mjs [rota ...] [nome=rota@seletor ...]   (salva em marketing/instagram/telas/)
 import { chromium } from 'playwright'
 import { mkdirSync } from 'fs'
 const PASTA = new URL('./telas/', import.meta.url).pathname
@@ -14,7 +14,10 @@ const sessao = { access_token: jwt, token_type: 'bearer', expires_in: 36000, exp
 const nomes = ['Rafael M.', 'Beatriz C.', 'Thiago A.', 'Marina S.', 'Pedro H.', 'Camila R.', 'Gustavo L.', 'Larissa P.', 'Felipe D.', 'Juliana F.']
 const mov = [[0, 1, false], [1, 2, false], [-1, -1, false], [2, 4, false], [-1, 0, false], [0, -2, false], [null, null, true], [1, 1, false], [-2, -3, false], [0, 0, false]]
 const ontem = new Date(Date.now() - 864e5).toISOString().slice(0, 10)
-const linhas = nomes.map((apelido, i) => ({ posicao: i + 1, apelido, total: 412 - i * 29, total_geral: 1890 - i * 131, eh_voce: i === 3, variacao: mov[i][0], variacao_semana: mov[i][1], novo: mov[i][2], referencia_em: mov[i][2] ? null : ontem }))
+// Vitrine de emblemas e fogueira (dias seguidos) de cada nome, para as telas do ranking.
+const vitrines = [['questoes-2000', 'dias-30', 'acertos-1000'], ['questoes-500', 'mestre-joelho'], ['questoes-500'], ['questoes-1000', 'mestre-trauma', 'precisao-25'], [], ['questoes-250', 'dias-30'], [], ['questoes-100']]
+const fogueiras = [12, 0, 5, 9, 0, 31, 0, 4, 0, 0]
+const linhas = nomes.map((apelido, i) => ({ emblemas: vitrines[i] ?? [], sequencia: fogueiras[i], posicao: i + 1, apelido, total: 412 - i * 29, total_geral: 1890 - i * 131, eh_voce: i === 3, variacao: mov[i][0], variacao_semana: mov[i][1], novo: mov[i][2], referencia_em: mov[i][2] ? null : ontem }))
 const BASE = 'http://localhost:4175/'
 const indice = await (await fetch(BASE + 'acervo/indice.json')).json()
 const porTema = {}
@@ -44,6 +47,7 @@ await p.route(/supabase\.co/, rota => {
   if (u.includes('minha_posicao_ranking')) return rota.fulfill({ json: [{ posicao: 4, total: 325, total_geral: 1497 }] })
   if (u.includes('obter_estado_conta')) return rota.fulfill({ json: [{ respostas_total: Object.keys(respondidas).length, sequencia: 23, plano: 'anual', status_assinatura: 'ativa', fim_periodo: '2027-03-01T00:00:00Z', ultima_cobranca_em: null, cancelar_ao_fim: false }] })
   if (u.includes('/auth/v1/user')) return rota.fulfill({ json: user })
+  if (u.includes('perfis_publicos')) return rota.fulfill({ json: { apelido: 'Marina S.', participa_ranking: true, emblemas: vitrines[3] } })
   if (u.includes('registrar_aparelho') || u.includes('sinal_aparelho')) return rota.fulfill({ json: true })
   if (u.includes('obter_aviso_site')) return rota.fulfill({ json: [] })
   return rota.fulfill({ json: [] })
@@ -66,6 +70,17 @@ for (const r of rotas) {
     await semana.scrollIntoViewIfNeeded()
     await semana.screenshot({ path: `${PASTA}t-semana.png` })
     console.log('semana'); continue
+  }
+  // "nome=rota@seletor": uma tela de celular (390x844) rolada até o seletor, sem a barra de baixo.
+  const ancora = r.match(/^([a-z0-9-]+)=([a-z0-9/-]*)@(.+)$/)
+  if (ancora) {
+    const [, nome, rota, seletor] = ancora
+    await p.goto(BASE + '#/' + rota); await p.waitForTimeout(2000)
+    await p.addStyleTag({ content: '.navegacao-mobile{display:none!important}' })
+    await p.evaluate((sel) => { const el = document.querySelector(sel); if (el) scrollTo(0, el.getBoundingClientRect().top + scrollY - 70) }, seletor)
+    await p.waitForTimeout(400)
+    await p.screenshot({ path: `${PASTA}t-${nome}.png` })
+    console.log(nome); continue
   }
   await p.goto(BASE + '#/' + r); await p.waitForTimeout(1800); await p.addStyleTag({ content: '.dp-heroi__sync,.navegacao-mobile{display:none!important}' }); await p.waitForTimeout(200)
   const nome = (r || 'inicio').replace(/\//g, '_')
