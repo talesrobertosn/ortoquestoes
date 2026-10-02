@@ -918,69 +918,92 @@
   "conferido": false
  },
  "coluna-0065": {
-  "conceito": "### Intervalo atlanto-dental anterior (IAD / ADI)\nDistância, no **perfil**, entre a face posterior do arco anterior de C1 e a face anterior do dente de C2.\n- **Adulto:** até ==3 mm==.\n- **Criança:** até **5 mm** (frouxidão ligamentar maior).\n\n### Quando aumenta\nIndica insuficiência do **ligamento transverso**:\n- **trauma**: ruptura do transverso (Dickman) ou fratura de Jefferson com afastamento das massas laterais, pela regra de Spence, acima de ~7 mm somados;\n- **artrite reumatoide**;\n- **síndrome de Down**;\n- **mucopolissacaridoses**, displasias.\n\n### Intervalo posterior (espaço disponível para a medula)\nNa **artrite reumatoide**, o **IAD posterior** prediz melhor o risco neurológico que o anterior:\n- **abaixo de 14 mm:** alto risco de mielopatia e indicação de cirurgia;\n- **acima de ~14 mm:** margem de segurança maior.\n\n### Regra dos terços de Steel\nO canal em C1 comporta **1/3 dente, 1/3 medula e 1/3 espaço livre**.\n\n> **Na prova:** IAD normal no adulto = ==até 3 mm== (criança, até 5 mm).",
-  "correta": "**3 mm.**",
   "incorretas": {
-   "A": "**1 mm.**\n- Mais estreito que o limite fisiológico.",
-   "C": "**5 mm.**\n- Limite da **criança**.",
-   "D": "**7 mm.**\n- Insuficiência franca do transverso."
+   "A": "**Restritivo demais.** O intervalo normal do adulto pode chegar a 3 mm; adotar 1 mm como limite faria considerar anormais pessoas saudáveis.",
+   "C": "**É o limite da criança.** Até 5 mm é aceito na infância, pela maior frouxidão ligamentar. No adulto, 5 mm já indica lesão do transverso.",
+   "D": "**Indica insuficiência franca.** Intervalos dessa ordem significam que o ligamento transverso e os estabilizadores secundários falharam, e o canal da medula está ameaçado."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**A articulação entre o atlas e o dente.** O atlas (C1) é um anel que sustenta o crânio. O áxis (C2) tem uma projeção vertical, o **dente** (ou processo odontoide), que sobe por dentro do anel do atlas e se apoia atrás do seu arco anterior. O que mantém o dente encostado no arco é o **ligamento transverso**, uma faixa forte que passa por trás do dente de uma massa lateral do atlas à outra. Se o transverso falha, o atlas desliza para a frente sobre o dente e o canal da medula estreita.\n\n**O intervalo atlanto-dental anterior.** Na radiografia de perfil, mede-se a distância entre a face posterior do arco anterior do atlas e a face anterior do dente. É o intervalo atlanto-dental anterior, ou ADI (da sigla em inglês). No **adulto**, o normal é até **3 mm**. Na **criança**, por causa da frouxidão natural dos ligamentos, aceita-se até **5 mm**. Valores maiores indicam insuficiência do ligamento transverso.\n\n**Quando ele aumenta.** No trauma, por ruptura do ligamento transverso, inclusive em algumas fraturas do anel do atlas (Jefferson) com grande afastamento das massas laterais. Na **artrite reumatoide**, a inflamação destrói o ligamento. Na **síndrome de Down** e em algumas displasias, há frouxidão ligamentar.\n\n**O intervalo posterior.** Medido do dente até o arco posterior do atlas, é o espaço que sobra para a medula. Na artrite reumatoide ele prevê melhor o risco de lesão neurológica do que o anterior: abaixo de cerca de 14 mm, o risco de mielopatia é alto e a cirurgia é indicada. A regra dos terços de Steel resume a anatomia: no nível de C1, o canal tem um terço ocupado pelo dente, um terço pela medula e um terço de espaço livre.\n\n**Na prova:** intervalo atlanto-dental anterior normal é até 3 mm no adulto e até 5 mm na criança.",
+  "correta": "**3 mm.** É o limite superior normal do intervalo atlanto-dental anterior no adulto; acima disso, suspeita-se de insuficiência do ligamento transverso.",
+  "referencias": [
+   "Fielding JW, Cochran GV, Lawsing JF 3rd, Hohl M. Tears of the transverse ligament of the atlas: a clinical and biomechanical study. J Bone Joint Surg Am. 1974;56(8):1683-1691.",
+   "Boden SD, Dodge LD, Bohlman HH, Rechtine GR. Rheumatoid arthritis of the cervical spine: a long-term analysis with predictors of paralysis and recovery. J Bone Joint Surg Am. 1993;75(9):1282-1297."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0066": {
-  "conceito": "### Os reflexos profundos\n| Reflexo | Raiz |\n|---|---|\n| ==Bicipital== | ==C5== |\n| Braquiorradial (estilorradial) | C6 |\n| ==Tricipital== | ==C7== |\n| Patelar | L4 |\n| ==Aquileu (calcaneano)== | ==S1== |\n\n### Sem reflexo próprio confiável\n**C8, T1 e L5.**\n- Para **L5**, o diagnóstico é pela **força** (extensor longo do hálux, abdução do quadril) e pelo **dermátomo** (dorso do pé).\n- O reflexo do **tibial posterior** (L5) existe, mas é **inconstante**.\n\n### Hiper-reflexia\nIndica **neurônio motor superior** (mielopatia), sobretudo quando acompanhada de:\n- clônus;\n- Hoffmann;\n- Babinski;\n- reflexo **escapuloumeral** (lesão acima de C3).\n\n> **Na prova:** bicipital C5, tricipital C7, aquileu ==S1==.",
-  "correta": "**C5, C7 e S1.**",
   "incorretas": {
-   "A": "**C5, C6 e L5.**\n- O tricipital é **C7**, e L5 não tem reflexo próprio.",
-   "B": "**C5, C7 e L5.**\n- O calcaneano é **S1**.",
-   "C": "**C5, C6 e S1.**\n- O tricipital é **C7**."
+   "A": "**Duas raízes erradas.** O tricipital é C7, e não C6 (C6 é o braquiorradial). E o calcaneano é S1; L5 não tem reflexo próprio confiável.",
+   "B": "**O calcaneano está errado.** Bicipital C5 e tricipital C7 estão certos, mas o reflexo calcaneano, ou aquileu, depende de S1, não de L5.",
+   "C": "**O tricipital está errado.** Bicipital C5 e calcaneano S1 estão certos, mas o tricipital é C7. C6 corresponde ao braquiorradial."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é um reflexo profundo.** Quando o examinador bate com o martelo num tendão, o músculo é esticado de repente e se contrai sozinho. Esse circuito passa por um segmento da medula: o nervo leva o estímulo até a medula e volta ao músculo pela raiz correspondente. Por isso cada reflexo testa uma raiz específica, e um reflexo diminuído ajuda a localizar a raiz comprimida.\n\n**Os reflexos e suas raízes.** **Bicipital**: bate-se no tendão do bíceps, na dobra do cotovelo, e o cotovelo flete; raiz **C5**. **Braquiorradial** (ou estilorradial): bate-se no rádio perto do punho; raiz **C6**. **Tricipital**: bate-se no tendão do tríceps, atrás do cotovelo, e ele se estende; raiz **C7**. **Patelar**: abaixo da patela, o joelho se estende; raiz **L4**. **Aquileu**, também chamado **calcaneano**: bate-se no tendão de Aquiles e o pé faz flexão plantar; raiz **S1**.\n\n**Raízes sem reflexo próprio confiável.** **C8 e T1** não têm reflexo de rotina. **L5** também não tem um reflexo confiável: existe o reflexo do tibial posterior, mas ele é inconstante até em pessoas normais. A raiz L5 é avaliada pela força do extensor longo do hálux (o músculo que levanta o dedão) e da abdução do quadril, e pela sensibilidade do dorso do pé.\n\n**Reflexo diminuído e reflexo aumentado.** Na compressão de uma raiz, o reflexo correspondente diminui ou some. Quando a medula está comprimida, os reflexos abaixo do nível ficam aumentados, com clônus, Hoffmann e Babinski: sinais de mielopatia.\n\n**Na prova:** bicipital C5, braquiorradial C6, tricipital C7, patelar L4, aquileu (calcaneano) S1.",
+  "correta": "**C5, C7 e S1.** O bicipital testa a raiz C5, o tricipital a C7 e o calcaneano, que é o aquileu, a S1.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0067": {
-  "conceito": "### Eixo vertical sagital (SVA)\n- **Medida:** linha de prumo a partir do **centro do corpo de C7**, na panorâmica em perfil. Mede-se a distância horizontal até o **canto posterossuperior de S1**.\n- **Normal:** a linha passa ==atrás do promontório==, a poucos centímetros do canto posterossuperior de S1. Em geral, considera-se SVA dentro de **±2 a 5 cm**, conforme o critério e a idade.\n- **Desequilíbrio sagital positivo:** a linha cai **à frente** do sacro.\n  - Exige esforço muscular contínuo e mecanismos compensatórios: **retroversão pélvica** (pelve verticalizada), flexão dos joelhos, hiperextensão dos quadris.\n  - Tem forte correlação com **dor e incapacidade** na deformidade do adulto.\n\n### Parâmetros pélvicos (Schwab/SRS)\n- **Incidência pélvica (IP):** fixa, anatômica.\n- **Versão pélvica (PT):** compensação; normal abaixo de ~20°.\n- **Inclinação sacral (SS).**\n- **Metas:** lordose lombar ≈ IP ± 10°; PT abaixo de 20°; SVA abaixo de 5 cm.\n\n> **Na prova:** prumo de C7 no equilíbrio = ==posterior ao promontório== (junto a S1).",
-  "correta": "**Posterior ao promontório.**",
   "incorretas": {
-   "A": "**Anterior ao sacro.**\n- Desequilíbrio sagital **positivo**.",
-   "B": "**Através de L4.**\n- A referência é o **sacro**.",
-   "C": "**Anterior a L5.**\n- Tronco deslocado para frente."
+   "A": "**É o desequilíbrio sagital positivo.** Com a linha caindo à frente do sacro, o tronco está deslocado para a frente, o que exige esforço muscular contínuo e compensações.",
+   "B": "**A referência não é L4.** A medida usa o sacro, o ponto fixo de apoio da coluna. Uma linha passando por L4 já estaria bem à frente de S1.",
+   "C": "**Indica tronco à frente.** A linha passando anterior a L5 está deslocada para a frente do sacro, outro retrato do desequilíbrio positivo."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é o equilíbrio sagital.** Visto de lado (plano sagital), o corpo em pé precisa manter a cabeça e o tronco alinhados em cima da pelve, com o menor gasto de energia possível. As curvaturas da coluna (lordose cervical, cifose torácica e lordose lombar) se compensam para isso. Quando o tronco cai para a frente, os músculos das costas precisam trabalhar o tempo todo para segurá-lo, e aparecem dor e cansaço.\n\n**Como se mede: a linha de prumo de C7.** Numa radiografia panorâmica de perfil, com o paciente em pé, traça-se uma linha vertical (de prumo) a partir do centro do corpo da vértebra C7. Mede-se a distância horizontal entre essa linha e o canto posterossuperior do sacro (S1). Essa distância é o eixo vertical sagital, ou **SVA**.\n\n**O que é normal.** No alinhamento equilibrado a linha cai **atrás do promontório**, junto ao canto posterossuperior de S1, a poucos centímetros dele. O promontório é a borda anterior e superior do sacro. Em geral, considera-se aceitável um SVA de até cerca de 5 cm.\n\n**O desequilíbrio sagital positivo.** Quando a linha cai à frente do sacro, o tronco está deslocado para a frente. O paciente compensa girando a pelve para trás (retroversão), estendendo os quadris e fletindo os joelhos. Esse desequilíbrio é o parâmetro radiográfico que mais se relaciona com dor e incapacidade na deformidade da coluna do adulto, e as cirurgias de correção miram um SVA abaixo de 5 cm, uma lordose lombar proporcional à incidência pélvica (o ângulo anatômico fixo da pelve) e uma versão pélvica abaixo de cerca de 20 graus.\n\n**Na prova:** no equilíbrio sagital, o prumo de C7 passa atrás do promontório, junto ao canto posterossuperior de S1.",
+  "correta": "**Posterior ao promontório.** A linha de prumo do centro de C7 cai junto ao canto posterossuperior de S1, atrás do promontório, quando o alinhamento sagital está equilibrado.",
+  "referencias": [
+   "Schwab F, Patel A, Ungar B, Farcy JP, Lafage V. Adult spinal deformity: postoperative standing imbalance: how much can you tolerate? An overview of key parameters in assessing alignment and planning corrective surgery. Spine. 2010;35(25):2224-2231.",
+   "Glassman SD, Bridwell K, Dimar JR et al. The impact of positive sagittal balance in adult spinal deformity. Spine. 2005;30(18):2024-2029."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0068": {
-  "conceito": "### Zonas de Lee (trajeto da raiz lombar)\n| Zona | Limites | Causa típica de compressão |\n|---|---|---|\n| ==Entrada== (recesso lateral) | ==processo articular superior== (atrás) e ==pedículo== (lateral) | **hipertrofia facetária** |\n| Média | abaixo da pars e do pedículo | osteófito da pars, tecido fibroso (espondilólise) |\n| Saída (forame) | forame propriamente dito | hérnia foraminal, osteófito, perda de altura discal |\n\n### Classificação etiológica da estenose\n- **Congênita/do desenvolvimento:** canal **central** estreito, com pedículos **curtos** e lâminas espessas. Exemplos: **acondroplasia**, estenose idiopática.\n- **Adquirida:**\n  - **degenerativa**, a mais comum;\n  - espondilolistese;\n  - pós-operatória;\n  - pós-traumática;\n  - metabólica: **doença de Paget**, fluorose, acromegalia.\n\n### Clínica\nA **ciatalgia** (dor radicular) é **comum**, sobretudo nas formas de recesso lateral e foraminal. A central dá claudicação neurogênica bilateral.\n\n> **Na prova:** zona de entrada de Lee = ==processo articular superior + pedículo==.",
-  "correta": "**Zona de entrada: processo articular superior e pedículo.**",
   "incorretas": {
-   "A": "**Ciatalgia incomum.**\n- É **comum**, sobretudo nas formas laterais.",
-   "B": "**Congênita foraminal.**\n- A congênita é **central** (pedículos curtos).",
-   "C": "**Paget congênita.**\n- O Paget é causa **adquirida** (metabólica)."
+   "A": "**A ciatalgia é frequente.** Nas estenoses de recesso lateral e foraminal, a compressão de uma raiz produz dor descendo pela perna com frequência.",
+   "B": "**A estenose congênita é central.** Pedículos curtos e lâminas grossas diminuem o canal como um todo, e não especificamente o forame.",
+   "C": "**Paget é causa adquirida.** A doença de Paget é uma doença metabólica do osso que surge na vida adulta; ela entra entre as estenoses adquiridas, não entre as congênitas."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O caminho da raiz lombar.** Cada raiz nervosa lombar sai do saco dural, desce pelo canto do canal e deixa a coluna pelo forame. Lee e colaboradores dividiram esse trajeto em três zonas, porque cada uma tem causas típicas de compressão e uma forma de descompressão.\n\n**As zonas de Lee.** A **zona de entrada**, que corresponde ao recesso lateral, começa onde a raiz deixa o saco dural e é limitada atrás pelo **processo articular superior** (a parte da faceta que sobe da vértebra de baixo) e ao lado pelo **pedículo**. A causa típica de compressão ali é a artrose da faceta. A **zona média** fica abaixo da pars interarticularis e do pedículo; ali comprimem osteófitos e o tecido fibroso da espondilólise. A **zona de saída** é o forame propriamente dito, apertado por hérnia foraminal, osteófitos e perda da altura do disco.\n\n**A classificação pela causa.** A estenose **congênita** ou do desenvolvimento é um canal estreito desde o nascimento, com pedículos curtos e lâminas grossas; ela estreita o canal **central**, e o exemplo clássico é a acondroplasia. A estenose **adquirida** é a grande maioria: degenerativa (a mais comum), por espondilolistese, após cirurgia, após trauma e por doenças metabólicas, como a **doença de Paget**, em que o osso remodelado e aumentado invade o canal.\n\n**A ciatalgia é comum.** Ciatalgia é a dor que desce pela perna pela compressão de uma raiz. Ela é frequente na estenose, sobretudo nas formas de recesso lateral e foraminal. A estenose central dá, além disso, a claudicação neurogênica bilateral.\n\n**Na prova:** zona de entrada de Lee é o recesso lateral, entre o processo articular superior e o pedículo.",
+  "correta": "**A zona de entrada de Lee tem como referência o processo articular superior e o pedículo.** É o recesso lateral, limitado atrás pelo processo articular superior e ao lado pelo pedículo, onde a artrose facetária costuma comprimir a raiz.",
+  "referencias": [
+   "Lee CK, Rauschning W, Glenn W. Lateral lumbar spinal canal stenosis: classification, pathologic anatomy and surgical decompression. Spine. 1988;13(3):313-320.",
+   "Arnoldi CC, Brodsky AE, Cauchoix J et al. Lumbar spinal stenosis and nerve root entrapment syndromes: definition and classification. Clin Orthop Relat Res. 1976;(115):4-5."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0069": {
-  "conceito": "### Fatores de progressão da escoliose idiopática do adolescente\n**Crescimento restante:**\n- **Risser baixo** (0 a 1), Sanders baixo;\n- idade menor;\n- pré-menarca;\n- trirradiada aberta.\n\n**Sexo:** **feminino** (risco várias vezes maior).\n\n**Curva:**\n- ==curvas torácicas== e **duplas** progridem mais que as lombares e toracolombares isoladas;\n- **magnitude** maior no diagnóstico;\n- rotação apical maior.\n\n### Após a maturidade\nCurvas **torácicas acima de ~50°** continuam progredindo (~1° por ano). As **lombares** progridem mais se houver translação ou rotação importante. Curvas abaixo de 30° raramente progridem.\n\n### Por que a torácica importa\nAlém de progredir mais, curvas torácicas grandes (acima de ~80° a 100°) comprometem a **função pulmonar**, com padrão restritivo.\n\n> **Na prova:** fator de progressão = ==curva torácica== (+ feminino, Risser baixo, curva grande).",
-  "correta": "**Curva torácica.**",
   "incorretas": {
-   "B": "**Gênero masculino.**\n- Fator de **menor** risco.",
-   "C": "**Risser maior.**\n- Menos crescimento restante, portanto menor risco.",
-   "D": "**Curva lombar simples.**\n- Progride **menos** que a torácica."
+   "B": "**O sexo masculino tem menor risco.** Com a mesma curva, os meninos progridem bem menos que as meninas.",
+   "C": "**Risser maior protege.** Ele indica esqueleto mais maduro e menos crescimento pela frente, portanto menos chance de progressão.",
+   "D": "**A curva lombar simples progride menos.** Curvas lombares isoladas tendem a ser mais estáveis do que as torácicas e as duplas."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que se pergunta.** Na escoliose idiopática do adolescente, desvio lateral da coluna com rotação das vértebras sem causa conhecida, a questão é quais características fazem a curva aumentar com o tempo (progressão).\n\n**O tipo de curva importa.** As curvas são nomeadas pela região do ápice. As **torácicas** e as **duplas** (duas curvas principais) progridem mais do que as lombares e toracolombares isoladas. Além disso, curvas torácicas grandes, acima de cerca de 80 a 100 graus, deformam a caixa torácica e reduzem a capacidade pulmonar, o que torna essa progressão ainda mais relevante.\n\n**O crescimento restante.** A curva piora sobretudo enquanto o esqueleto cresce. O **sinal de Risser** mede a maturidade pela ossificação da apófise da crista ilíaca, de 0 (imaturo) a 5 (maduro). Risser baixo, idade menor, antes da menarca e cartilagem trirradiada da pelve aberta significam mais crescimento pela frente e mais risco. Um Risser **maior** significa menos crescimento e menos risco.\n\n**Outros fatores.** O sexo **feminino** progride várias vezes mais que o masculino com a mesma curva. Curvas maiores no diagnóstico e com mais rotação no ápice também progridem mais.\n\n**Depois da maturidade.** Curvas abaixo de 30 graus raramente progridem. Curvas torácicas acima de cerca de 50 graus seguem aumentando em média 1 grau por ano na vida adulta; as lombares progridem mais quando há translação ou rotação importante.\n\n**Na prova:** progridem mais as curvas torácicas, em meninas, com Risser baixo e curva grande.",
+  "correta": "**Curva torácica.** Curvas com ápice torácico progridem mais do que as lombares isoladas, tanto durante o crescimento quanto, se grandes, na vida adulta.",
+  "referencias": [
+   "Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537.",
+   "Lonstein JE, Carlson JM. The prediction of curve progression in untreated idiopathic scoliosis during growth. J Bone Joint Surg Am. 1984;66(7):1061-1071."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0070": {
-  "conceito": "### Wiltse (etiologia)\n- **I:** displásica.\n- **II:** ístmica (A: lise; B: alongamento; C: fratura aguda).\n- ==III: degenerativa==. É a forma **mais prevalente** na população **adulta**, sobretudo em mulheres com mais de 50 anos, em L4-L5.\n- **IV:** traumática.\n- **V:** patológica.\n- **(VI:** pós-cirúrgica, acrescentada depois).\n\n### Meyerding (grau), medida no ==perfil==\n| Grau | Escorregamento |\n|---|---|\n| I | até 25% |\n| II | 26% a 50% |\n| III | 51% a 75% |\n| IV | 76% a 100% |\n| V | **espondiloptose** (mais de 100%) |\n\n### Observação\n- Nos **jovens**, a forma **ístmica** predomina, e a espondilólise é frequente em atletas de hiperextensão (ginástica, lutas, futebol americano).\n- **Graus baixos** (I e II) são a maioria. **Alto grau** (III ou mais) é mais comum nas formas displásica e ístmica em crianças.\n\n> **Na prova:** Wiltse **III** (degenerativa) é a mais comum; ptose = Meyerding **V**; mede-se no **perfil**.",
-  "correta": "**Wiltse III é o mais comum.**\n- A degenerativa predomina na população adulta.",
   "incorretas": {
-   "B": "**Meyerding IV = ptose.**\n- A ptose é o grau **V**.",
-   "C": "**Meyerding III até 50%.**\n- O III vai de **51 a 75%**; até 50% é o II.",
-   "D": "**Medida em AP.**\n- O escorregamento anterior se mede no **perfil**."
+   "B": "**A ptose é o grau V.** O grau IV de Meyerding vai de 76 a 100% de escorregamento; a espondiloptose, com a vértebra além do sacro, é o grau V.",
+   "C": "**Até 50% é o grau II.** O grau III de Meyerding corresponde a 51 a 75% de escorregamento.",
+   "D": "**O deslocamento se mede no perfil.** O escorregamento é para a frente, e só a radiografia lateral o mostra. Na incidência AP ele não pode ser quantificado."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Duas classificações com funções diferentes.** A espondilolistese, o escorregamento de uma vértebra sobre a de baixo, tem duas classificações clássicas que a banca mistura de propósito. A de **Wiltse** diz a **causa**. A de **Meyerding** diz o **grau** do escorregamento.\n\n**Wiltse, pela causa.** **Tipo I, displásica**: malformação congênita das facetas de L5 e S1. **Tipo II, ístmica**: defeito da pars interarticularis, a ponte óssea entre a frente e o arco da vértebra (IIA lise por fratura de estresse, IIB pars alongada, IIC fratura aguda). **Tipo III, degenerativa**: desgaste do disco e artrose das facetas no adulto, com pars íntegra, típica de mulheres acima dos 50 anos em L4-L5. **Tipo IV, traumática**. **Tipo V, patológica**, por tumor ou doença óssea. Na população adulta, a **degenerativa** é considerada a forma mais comum, e é a resposta da banca; nos jovens, predomina a ístmica.\n\n**Meyerding, pelo grau.** Mede-se na radiografia de **perfil**, onde se vê o deslocamento para a frente. Divide-se a face superior do sacro em quatro partes e vê-se até onde a vértebra de cima avançou. **Grau I**: até 25%. **Grau II**: 26 a 50%. **Grau III**: 51 a 75%. **Grau IV**: 76 a 100%. **Grau V**: mais de 100%, a vértebra caiu inteira à frente do sacro, a **espondiloptose**.\n\n**Por que o perfil.** A radiografia de frente (AP) mostra a coluna de frente e não deixa ver o deslocamento anteroposterior; o escorregamento só pode ser medido na incidência lateral.\n\n**Na prova:** Wiltse III, degenerativa, é a mais comum no adulto; Meyerding se mede no perfil e o grau V é a espondiloptose.",
+  "correta": "**O tipo III de Wiltse é o mais comum.** A espondilolistese degenerativa é a forma mais prevalente na população adulta, sobretudo em mulheres acima dos 50 anos.",
+  "referencias": [
+   "Wiltse LL, Newman PH, Macnab I. Classification of spondylolisis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29.",
+   "Meyerding HW. Spondylolisthesis. Surg Gynecol Obstet. 1932;54:371-377."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0071": {
