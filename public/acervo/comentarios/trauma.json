@@ -10152,19 +10152,20 @@
   "conferido": false
  },
  "trauma-1129": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Ombro flutuante.** Fratura do colo da escápula com fratura da clavícula. Fixa-se o colo quando há desvio significativo: angulação acima de 40 graus ou medialização acima de 1 cm.\n\n**Na prova:** colo da escápula com angulação acima de 40 graus é cirúrgico.",
-  "correta": "**40 graus.** É o limite de angulação para fixar.",
   "incorretas": {
-   "A": "**10 graus.** Abaixo do limite.",
-   "B": "**20 graus.** Abaixo do limite.",
-   "C": "**30 graus.** Abaixo do limite."
+   "A": "**Dez graus indicam deformidade pequena para o critério angular isolado.** Não se deve confundir esse número com 10 mm de translação, medida linear que pode ter relevância em dupla ruptura.",
+   "B": "**Vinte graus não é o corte angular clássico cobrado.** O número próximo de 20 a 22 graus aparece em outro parâmetro, o ângulo glenopolar baixo, que avalia a orientação da glenoide.",
+   "C": "**Trinta graus podem importar quando associados a translação relevante em alguns algoritmos.** Como limite isolado da angulação no enunciado, a alternativa mais compatível com o critério clássico é 40 graus."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso a questão não conta no desempenho. Mantemos D como resposta provável: angulação acima de 40 graus é um critério clássico para considerar fixação do colo da escápula. Não é indicação universal ou isolada em todo ombro flutuante; publicações usam limites distintos e consideram translação, ângulo glenopolar e estabilidade do complexo suspensor.",
+  "conceito": "**Ombro flutuante é uma dupla ruptura da sustentação do ombro.** Em geral há fratura da clavícula ipsilateral associada à fratura do colo da escápula, interrompendo dois pontos do complexo suspensor superior. Esse anel ósseo-ligamentar mantém a glenoide orientada em relação ao tórax. A gravidade não depende só da presença das duas fraturas: o desvio e a estabilidade residual importam.\n\n**O colo da escápula pode desviar e mudar a posição da glenoide.** A angulação é medida entre os segmentos na radiografia adequada ou na tomografia; outros parâmetros são a translação ou medialização da borda lateral e o ângulo glenopolar, que descreve a orientação da glenoide em relação ao corpo escapular. Angulação maior que 40 graus é um dos limites clássicos para considerar fixação. Um desvio linear importante, por exemplo acima de 10 mm em alguns critérios de dupla ruptura, também pesa na decisão.\n\n**A operação é individualizada.** Fixar a clavícula pode restaurar parte do alinhamento da cintura escapular, mas não corrige necessariamente um colo escapular muito deformado. O exame de imagem deve ser revisto após a redução ou fixação clavicular quando essa estratégia é escolhida. Lesões torácicas, neurológicas e vasculares associadas ao trauma de alta energia também podem mudar a prioridade e o momento do tratamento.",
+  "correta": "**40 graus.** Entre os valores oferecidos, é o limite clássico de angulação importante do colo escapular usado para considerar fixação no ombro flutuante.",
   "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 1237."
+   "Oh CW et al. Clinical outcome of ipsilateral scapular neck and clavicular fracture: https://pmc.ncbi.nlm.nih.gov/articles/PMC4314750/",
+   "Cole PA et al. Management of scapular fractures: https://pubmed.ncbi.nlm.nih.gov/22382285/"
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "provavel": "D",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "trauma-1130": {
@@ -10184,19 +10185,19 @@
   "conferido": false
  },
  "trauma-1131": {
+  "incorretas": {
+   "A": "**IO3 não codifica a perda cutânea extensa e NV2 indica lesão nervosa isolada.** Apenas MT5 corresponde ao esmagamento amplo citado; dois dos três componentes estão trocados.",
+   "B": "**IO4 e NV1 estão compatíveis, mas MT4 descreve defeito ou laceração muscular e tendínea.** O enunciado explicita síndrome de esmagamento com área ampla, característica de MT5.",
+   "C": "**IO3, MT4 e NV2 apontam para outra combinação de lesões.** Faltam o grau de perda cutânea e o de esmagamento, e há uma lesão nervosa que a questão nega."
+  },
+  "conceito": "**A pontuação AO descreve tecidos diferentes separadamente.** Em fratura exposta, IO significa lesão do tegumento aberto, MT descreve músculo e tendão, e NV descreve estruturas neurológicas e vasculares. O código é uma fotografia da lesão de partes moles, não substitui a avaliação da fratura óssea nem equivale automaticamente ao grau de Gustilo-Anderson.\n\n**Perda de pele define o primeiro componente.** IO1 representa pequena perfuração de dentro para fora; IO2, ferida externa menor e com contusão limitada; IO3, lesão maior com bordas desvitalizadas; IO4, perda cutânea ou grande descolamento e contusão profunda. Nesta questão, a expressão “perda de pele” aponta para IO4. O tamanho exato e a viabilidade são confirmados após inspeção e desbridamento, não apenas pela aparência inicial.\n\n**Esmagamento extenso e ausência de lesão vascular ou nervosa completam o código.** MT5 inclui síndrome de esmagamento, síndrome compartimental ou ampla zona de dano muscular. MT4 é defeito muscular ou tendíneo extenso, mas não traduz tão bem o esmagamento descrito. NV1 significa ausência de lesão neurovascular; graus superiores registram lesão neurológica isolada, vascular ou combinada. A combinação dos três achados é IO4-MT5-NV1. Mesmo com NV1, pulsos, sensibilidade e função motora devem ser documentados e reavaliados.",
+  "correta": "**IO4-MT5-NV1.** Há perda de pele, esmagamento com zona ampla de lesão e nenhuma lesão neurovascular descrita.",
+  "referencias": [
+   "AO soft-tissue injury grading, resumo da classificação: https://pmc.ncbi.nlm.nih.gov/articles/PMC4519576/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "D",
-  "conceito": "**Classificação AO de partes moles.** Pele: IO4 perda de pele. Músculo e tendão: MT5 síndrome de esmagamento com ampla zona de lesão. Neurovascular: NV1 sem lesão.\n\n**Na prova:** IO é pele aberta, MT músculo, NV neurovascular; NV1 é sem lesão.",
-  "correta": "**IO4-MT5-NV1.** Perda de pele, esmagamento e sem lesão neurovascular.",
-  "incorretas": {
-   "A": "**IO3-MT5-NV2.** IO3 é laceração sem perda de pele, e NV2 tem lesão.",
-   "B": "**IO4-MT4-NV1.** MT4 não descreve esmagamento.",
-   "C": "**IO3-MT4-NV2.** IO3, MT4 e NV2 não correspondem."
-  },
-  "referencias": [
-   "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed, p. 72."
-  ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "trauma-1132": {
@@ -10233,19 +10234,20 @@
   "conferido": false
  },
  "trauma-1134": {
+  "incorretas": {
+   "A": "**O dispositivo centro-medular está próximo ao eixo da diáfise.** Essa posição reduz o braço de alavanca em comparação com uma placa lateral, embora estabilidade dependa também do bloqueio e da redução.",
+   "B": "**O côndilo-cefálico, exemplificado pela haste de Ender, também é intramedular.** Seu ponto de entrada distal não o transforma em uma placa lateral extramedular.",
+   "C": "**A haste céfalo-medular ocupa o canal e alcança o segmento proximal da cabeça femoral.** O componente diafisário central tem braço de alavanca menor que a placa lateral."
+  },
+  "conceito": "**Braço de alavanca é distância até a linha de carga.** O momento de flexão aplicado ao implante cresce quando a força atua mais longe dele. Na região subtrocantérica do fêmur, as cargas são altas e o fragmento proximal recebe forças musculares que dificultam a redução. Por isso, a posição do material em relação ao eixo do osso tem importância mecânica, além da qualidade da redução e do contato cortical.\n\n**Placa lateral fica fora do canal.** Na placa com parafuso deslizante, a porção longitudinal do implante acompanha a face lateral do fêmur, mais afastada do eixo mecânico. O braço de alavanca é, portanto, maior que o de uma haste dentro do canal. Em um foco sem apoio medial adequado, essa distância aumenta o momento de flexão suportado pela montagem. Isso não significa que a placa falhe sempre: padrão de fratura, redução e suporte ósseo continuam decisivos.\n\n**Os nomes dos outros dispositivos não mudam sua posição central.** Uma haste centro-medular ocupa o canal femoral. A céfalo-medular entra proximalmente e acrescenta fixação na cabeça; a côndilo-cefálica, como a haste de Ender, parte da região distal e também percorre o canal. Todas ficam mais próximas do eixo que a placa lateral. A comparação pedida é geométrica, não uma afirmação de que um implante intramedular produza sempre melhor resultado clínico.",
+  "correta": "**Placa-parafuso deslizante.** Sua placa lateral extramedular fica mais distante do eixo de carga e cria o maior braço de alavanca entre as opções.",
+  "referencias": [
+   "Kummer FJ et al. Intramedullary versus extramedullary fixation of subtrochanteric fractures: https://pubmed.ncbi.nlm.nih.gov/9930101/",
+   "Ender nailing of intertrochanteric and subtrochanteric fractures: https://pubmed.ncbi.nlm.nih.gov/6991504/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "D",
-  "conceito": "**Braço de alavanca no subtrocantérico.** Implantes intramedulares ficam mais perto do eixo mecânico e sofrem menor momento de flexão. A placa lateral fica longe do eixo, com braço de alavanca maior e mais risco de falha.\n\n**Na prova:** intramedular reduz o braço de alavanca; placa aumenta.",
-  "correta": "**Placa-parafuso deslizante.** A placa lateral tem o maior braço de alavanca.",
-  "incorretas": {
-   "A": "**Centro-medular.** Fica no eixo do osso.",
-   "B": "**Côndilo-cefálico.** Ender também é intramedular.",
-   "C": "**Céfalo-medular.** A haste cefalomedular tem braço de alavanca menor."
-  },
-  "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 4ª ed., vol. 2, p. 1747."
-  ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "trauma-1135": {
