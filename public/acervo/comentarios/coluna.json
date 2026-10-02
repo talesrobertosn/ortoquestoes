@@ -1552,72 +1552,88 @@
   "conferido": false
  },
  "coluna-0113": {
-  "conceito": "### O quadro clássico\n- **Tipo:** síndrome ==medular central==. Os membros superiores são mais afetados que os inferiores, com as **mãos** mais comprometidas.\n- **Mecanismo:** ==hiperextensão==. A medula é pinçada entre os osteófitos e o ligamento amarelo pregueado.\n- **Faixa etária:** ==idosos== com espondilose e canal estreito, em queda da própria altura.\n\n### Detalhes\n- É a **mais comum** das lesões incompletas.\n- Frequentemente **sem fratura** (RM com edema medular).\n- A explicação clássica é a laminação do trato corticoespinhal (fibras dos MMSS mais mediais); a atual destaca a importância do trato corticoespinhal para a **mão**.\n- **Prognóstico:** bom para marcha, pior para as mãos e em idosos.\n\n### Síndrome medular anterior (para contrastar)\n- **Mecanismo:** flexão ou isquemia.\n- **Clínica:** paralisia com perda de dor e temperatura, **propriocepção preservada**, sem predomínio nos MMSS.\n- **Prognóstico:** o pior.\n\n> **Na prova:** MMSS mais fracos = ==central, hiperextensão, idoso==.",
-  "correta": "**Medular central, hiperextensão, idosos.**",
   "incorretas": {
-   "A": "**Anterior, hiperflexão, idosos.**\n- A anterior não tem predomínio nos MMSS.",
-   "B": "**Anterior, hiperflexão, jovens.**\n- Tipo, mecanismo e idade errados.",
-   "D": "**Central, hiperextensão, jovens.**\n- Tipo e mecanismo certos, mas o típico é o **idoso**."
+   "A": "**A síndrome anterior não poupa as pernas.** Ela causa paralisia sem predomínio nos membros superiores, preservando apenas a propriocepção, e ocorre por flexão ou isquemia.",
+   "B": "**Tipo, mecanismo e idade errados.** A fraqueza predominante nos braços não é da síndrome anterior, e o perfil típico do quadro descrito é o idoso com hiperextensão.",
+   "D": "**Tipo e mecanismo certos, idade não.** A centromedular por hiperextensão é típica do idoso com espondilose; em jovens ela é menos frequente."
   },
+  "conceito": "**Lendo o enunciado.** Tetraparesia é a fraqueza nos quatro membros; o enunciado diz que os **membros superiores** são mais afetados que os inferiores. Esse padrão, braços mais fracos que pernas, é a assinatura de uma síndrome medular incompleta específica: a **centromedular**.\n\n**O tipo: síndrome medular central.** É a lesão da parte central da medula cervical e a mais comum das lesões incompletas (aquelas em que alguma função abaixo da lesão é preservada). A fraqueza predomina nos braços, sobretudo nas mãos. A explicação clássica é que, no trato corticoespinhal (o feixe motor), as fibras dos braços ficam mais perto do centro e as das pernas mais na periferia; estudos mais recentes destacam que esse trato é especialmente importante para os movimentos finos da mão.\n\n**O mecanismo: hiperextensão.** O pescoço é jogado para trás, como numa queda com batida do queixo ou da testa. Num canal já estreito, os osteófitos (bicos de osso) da frente e o ligamento amarelo, que se dobra para dentro por trás, pinçam a medula. O dano se concentra no centro, com edema e sangramento, e muitas vezes não há fratura.\n\n**A faixa etária: idosos.** O paciente típico é o idoso com espondilose cervical, o desgaste da coluna que estreita o canal. Uma queda da própria altura basta. Em jovens, a mesma síndrome pode acontecer em traumas de alta energia, mas não é o perfil mais comum.\n\n**O contraste com a síndrome medular anterior.** A anterior ocorre por flexão ou por isquemia da artéria espinhal anterior. Causa paralisia com perda de dor e temperatura, mas preserva a propriocepção, e não tem predomínio nos braços. É a de pior prognóstico. A centromedular tem bom prognóstico para a marcha, mas as mãos recuperam por último e de forma incompleta.\n\n**Na prova:** braços mais fracos que pernas é síndrome centromedular, por hiperextensão, em idosos.",
+  "correta": "**Medular central por hiperextensão em idosos.** É o retrato clássico: idoso com canal estreito que hiperestende o pescoço e desenvolve fraqueza maior nos braços que nas pernas.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 41"
+   "Schneider RC, Cherry G, Pantek H. The syndrome of acute central cervical spinal cord injury; with special reference to the mechanisms involved in hyperextension injuries of cervical spine. J Neurosurg. 1954;11(6):546-577."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0115": {
-  "conceito": "### Marcos de superfície do pescoço\n| Estrutura | Nível vertebral aproximado |\n|---|---|\n| Palato duro | C1 |\n| Ângulo da mandíbula | C2-C3 |\n| ==Osso hioide== | ==C3 (C3-C4)== |\n| Cartilagem tireóidea | C4-C5 |\n| Cartilagem cricoide | C6 |\n| Tubérculo carotídeo (Chassaignac) | C6 |\n| Proeminência de C7 | C7 (processo espinhoso palpável posteriormente) |\n\n### Uso no acesso anterior (Smith-Robinson)\n- A incisão transversa é posicionada na altura do nível-alvo, usando esses marcos.\n- A confirmação é sempre feita por **radioscopia** com agulha no disco antes da discectomia, para **evitar o nível errado**.\n- **C6** (cricoide) também marca o início da **traqueia** e do **esôfago**.\n\n> **Na prova:** hioide = ==C3-C4==.",
-  "correta": "**C3-C4.**",
   "incorretas": {
-   "B": "**C4-C5.**\n- Cartilagem **tireóidea**.",
-   "C": "**C5-C6.**\n- Próximo da **cricoide** e do tubérculo carotídeo (C6).",
-   "D": "**C7-T1.**\n- Base do pescoço."
+   "B": "**C4-C5 é a cartilagem tireóidea.** O pomo de adão fica logo abaixo do hioide, um nível mais baixo.",
+   "C": "**C5-C6 fica perto da cricoide.** A cartilagem cricoide e o tubérculo carotídeo marcam C6, bem abaixo do hioide.",
+   "D": "**C7-T1 é a base do pescoço.** Fica perto da transição para o tórax, muito abaixo do hioide."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Por que os marcos do pescoço importam.** No acesso cirúrgico anterior à coluna cervical, a incisão é transversal e precisa ficar na altura do disco a ser operado. Antes de abrir, o cirurgião usa estruturas que se palpam na frente do pescoço para estimar o nível vertebral; depois, confirma com radioscopia.\n\n**O osso hioide.** É um osso em forma de U que fica logo acima da cartilagem tireóidea (o pomo de adão), na transição entre o pescoço e o assoalho da boca. Ele não se articula com nenhum outro osso: fica suspenso por músculos e ligamentos e sustenta a língua. Está na altura da vértebra **C3**, correspondendo ao espaço **C3-C4**.\n\n**Os outros marcos, de cima para baixo.** O ângulo da mandíbula fica em C2-C3. O **hioide**, em C3-C4. A **cartilagem tireóidea**, em C4-C5. A **cartilagem cricoide**, anel logo abaixo da tireóidea, e o **tubérculo carotídeo** (o tubérculo anterior do processo transverso de C6), em **C6**; nesse nível também começam a traqueia e o esôfago. Na nuca, o processo espinhoso de C7 é o mais saliente e se palpa facilmente.\n\n**A confirmação é obrigatória.** Os marcos variam de pessoa para pessoa, conforme o comprimento do pescoço e a postura. Por isso, antes de retirar o disco, coloca-se uma agulha no espaço discal e faz-se radioscopia para confirmar o nível e evitar operar o disco errado.\n\n**Na prova:** hioide em C3-C4, tireóidea em C4-C5, cricoide e tubérculo carotídeo em C6.",
+  "correta": "**C3-C4.** O osso hioide fica na altura de C3, o que corresponde ao espaço entre C3 e C4.",
+  "referencias": [
+   "Hoppenfeld S, deBoer P, Buckley R. Surgical Exposures in Orthopaedics: The Anatomic Approach. 4th ed. Philadelphia: Lippincott Williams & Wilkins; 2009.",
+   "Standring S (ed). Gray's Anatomy: The Anatomical Basis of Clinical Practice. 41st ed. London: Elsevier; 2016."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0116": {
-  "conceito": "### Mobilidade cervical por segmento\n- ==Rotação==: **C1-C2**, cerca de metade de toda a rotação cervical (pivô do dente, facetas horizontais).\n- ==Flexoextensão==:\n  - **Occipito-C1** contribui muito (o \"sim\").\n  - Na **cervical subaxial**, o segmento de maior amplitude é ==C5-C6==, seguido de C4-C5 e C6-C7.\n\n### Consequência clínica\nAmplitude somada a carga resulta em **degeneração**:\n- **C5-C6** é o nível mais acometido por **espondilose**, **hérnia** e **mielopatia**, seguido de **C6-C7**;\n- também é o nível mais operado (ACDF).\n\n### Após artrodese\nA fusão de um segmento transfere movimento aos vizinhos, o que favorece a **doença do nível adjacente**. Essa é uma das motivações da **artroplastia** cervical.\n\n> **Na prova:** rotação = ==C1-C2==; flexoextensão subaxial = ==C5-C6==.",
-  "correta": "**C1-C2 para rotação; C5-C6 para flexoextensão.**",
   "incorretas": {
-   "A": "**Invertido.**\n- C5-C6 não é o de maior rotação.",
-   "C": "**C6-C7 na rotação.**\n- A rotação máxima é em C1-C2.",
-   "D": "**Occipito-C1 na rotação.**\n- O occipito-C1 é de **flexoextensão**."
+   "A": "**Ordem invertida.** C5-C6 não é o segmento de maior rotação, e C1-C2 não é o de maior flexoextensão; cada um se destaca no movimento oposto ao proposto.",
+   "C": "**C6-C7 não lidera a rotação.** A rotação máxima é em C1-C2. A articulação occipital-C1 contribui para a flexoextensão, mas a alternativa erra a rotação.",
+   "D": "**A occipital-C1 quase não gira.** Ela é especializada em flexão e extensão da cabeça; o pivô da rotação é C1-C2."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Cada segmento cervical tem uma vocação.** O pescoço faz rotação (o gesto do não), flexão e extensão (o gesto do sim) e inclinação lateral. Os segmentos não contribuem igualmente: o formato das articulações define o que cada um faz melhor.\n\n**A rotação: C1-C2.** A articulação entre o atlas (C1) e o áxis (C2) é um pivô. O dente do áxis, uma projeção óssea vertical, fica dentro do anel do atlas, preso pelo ligamento transverso, e o atlas gira em volta dele. Não há disco entre C1 e C2, e as facetas são quase horizontais. Resultado: **C1-C2 responde por cerca de metade de toda a rotação** do pescoço.\n\n**A flexoextensão.** A articulação entre a base do crânio e C1 (occipital-C1) contribui bastante para o aceno da cabeça. Na coluna cervical abaixo de C2 (subaxial), o segmento de **maior amplitude** de flexão e extensão é **C5-C6**, seguido de C4-C5 e C6-C7. A pergunta compara os segmentos da lista, e a combinação correta é C1-C2 para rotação e C5-C6 para flexoextensão.\n\n**Por que isso importa: movimento gera desgaste.** Os segmentos que mais se movem e carregam peso são os que mais degeneram. **C5-C6** é o nível mais acometido por espondilose (desgaste), hérnia de disco e mielopatia, seguido de C6-C7, e é o nível mais operado. Quando um segmento é fundido numa artrodese, o movimento se transfere para os vizinhos, que tendem a degenerar mais cedo (doença do nível adjacente); essa é uma das razões para as próteses de disco cervical.\n\n**Na prova:** rotação em C1-C2; flexoextensão subaxial máxima em C5-C6, o nível que mais degenera.",
+  "correta": "**C1-C2 para rotação e C5-C6 para flexoextensão.** O pivô atlantoaxial concentra a rotação, e C5-C6 é o segmento subaxial com maior arco de flexão e extensão.",
+  "referencias": [
+   "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0117": {
-  "conceito": "### Raiz de C8 (disco ou forame C7-T1)\n- **Sensibilidade:** ==face medial (ulnar) da mão== e do antebraço, dedos **anular e mínimo**.\n- **Motor:**\n  - **flexores profundos** dos dedos;\n  - **intrínsecos** da mão (com T1);\n  - dificuldade de preensão, de pinça e de abotoar.\n- **Reflexo:** nenhum próprio.\n\n### Os erros das alternativas\n- **Tríceps:** C7.\n- **Reflexo bicipital:** C5.\n- **Extensores dos dedos:** **C7** (pelo interósseo posterior, ramo do radial).\n\n### Diferenciais\n- **Ulnar no cotovelo:** poupa a face medial do **antebraço** (cutâneo medial, C8-T1) e os tenares do mediano.\n- **Desfiladeiro torácico:** sintomas posicionais.\n- **Pancoast:** com Horner.\n\n> **Na prova:** C8 = ==face medial da mão==, dedo mínimo, flexores dos dedos.",
-  "correta": "**Perda da sensibilidade da face medial da mão.**",
   "incorretas": {
-   "A": "**Tríceps.**\n- **C7.**",
-   "B": "**Reflexo bicipital.**\n- **C5.**",
-   "D": "**Extensores dos dedos.**\n- **C7**, pelo interósseo posterior."
+   "A": "**O tríceps depende de C7.** A fraqueza para estender o cotovelo e o reflexo tricipital diminuído indicam a raiz C7, um nível acima.",
+   "B": "**O reflexo bicipital é de C5.** Ele avalia a raiz C5, muito acima de C8.",
+   "D": "**Os extensores dos dedos são de C7.** O nervo interósseo posterior, que os inerva, recebe principalmente fibras de C7. A C8 comanda os flexores dos dedos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Qual disco ou forame afeta C8.** A coluna cervical tem 7 vértebras e 8 raízes, e cada raiz cervical sai acima da vértebra de mesmo número. A **C8** é a última raiz cervical e sai entre C7 e T1. A estenose (estreitamento) do forame C7-T1, ou uma hérnia desse disco, comprime a C8.\n\n**O território sensitivo de C8.** A **face medial da mão**, o lado do dedo mínimo, com os dedos anular e mínimo, subindo pela face medial do antebraço. A perda de sensibilidade nessa região é o achado esperado.\n\n**O território motor de C8.** Os **flexores profundos dos dedos**, que fecham a ponta dos dedos, e, junto com T1, os **músculos intrínsecos** da mão (interósseos, hipotênares, adutor do polegar). O paciente tem dificuldade para apertar objetos, fazer pinça e abotoar a roupa. A C8 **não tem reflexo próprio**.\n\n**Por que as outras alternativas falham.** O **tríceps**, que estende o cotovelo, é comandado principalmente por **C7**. O **reflexo bicipital** depende de **C5**. Os **extensores dos dedos**, que abrem a mão, são inervados pelo nervo interósseo posterior (ramo do radial) com raiz principal **C7**.\n\n**Diferenciais.** A compressão do nervo ulnar no cotovelo também tira a sensibilidade do mínimo, mas poupa a face medial do antebraço (inervada pelo nervo cutâneo medial do antebraço, que vem direto do plexo) e os músculos da base do polegar que dependem do mediano. Sintomas que mudam com a posição do braço sugerem síndrome do desfiladeiro torácico; dor no ombro com síndrome de Horner sugere tumor do ápice do pulmão (Pancoast).\n\n**Na prova:** C8 é a face medial da mão e o dedo mínimo, com fraqueza dos flexores dos dedos e sem reflexo próprio.",
+  "correta": "**Perda da sensibilidade da face medial da mão.** É o dermátomo de C8, que cobre o lado do dedo mínimo da mão e do antebraço.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0118": {
-  "conceito": "### Lesão \"no nível\" × \"abaixo do nível\"\nNa mielopatia, o segmento lesado e o que fica abaixo dele se comportam de modo diferente:\n- **No nível da lesão:** a substância cinzenta (corno anterior) e o arco reflexo daquele segmento são lesados. O resultado é um padrão de **neurônio motor inferior**: fraqueza, atrofia, hipoestesia e **reflexo diminuído**.\n- **Abaixo do nível:** o trato corticoespinhal é interrompido. O resultado é um padrão de **neurônio motor superior**: espasticidade, hiper-reflexia, clônus, Babinski.\n\n### Por que o Hoffmann não é esperado aqui\n- O arco do **Hoffmann** passa por ==C8-T1==.\n- Com a lesão **em C8**, o arco é lesado, e o reflexo tende a **não se exaltar**.\n- O Hoffmann positivo indica mielopatia **acima** do arco (C5-C6 ou acima).\n\n### O que se espera em uma lesão em C8\n- **Fraqueza dos interósseos** (C8-T1): neurônio motor inferior no nível.\n- **Hipoestesia** no território de C8-T1, na face medial do antebraço e do braço.\n- **Fraqueza e espasticidade** nos membros inferiores (**quadríceps**), abaixo do nível.\n\n> **Na prova:** mielopatia em C8 = ==Hoffmann não esperado==.",
-  "correta": "**Hoffmann positivo** (não esperado).\n- O arco do Hoffmann (C8-T1) é lesado no próprio nível.",
   "incorretas": {
-   "B": "**Fraqueza dos interósseos.**\n- **Esperada:** neurônio motor inferior no nível de C8-T1.",
-   "C": "**Fraqueza do quadríceps.**\n- **Esperada:** neurônio motor superior abaixo da lesão.",
-   "D": "**Hipoestesia da face medial do braço.**\n- **Esperada** pelo nível acometido."
+   "B": "**É esperada.** Os interósseos dependem de C8 e T1, e a lesão no nível produz fraqueza e atrofia do tipo neurônio motor inferior.",
+   "C": "**É esperada.** O quadríceps fica muito abaixo da lesão e perde o comando do trato corticoespinhal, com fraqueza e sinais de neurônio motor superior.",
+   "D": "**É esperada.** A face medial do braço e do antebraço está no território de C8 e T1, e a lesão nesse nível reduz sua sensibilidade."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Mielopatia: dois padrões ao mesmo tempo.** Mielopatia é a lesão da medula, aqui por compressão cervical. Ela produz sinais diferentes no próprio nível lesado e abaixo dele. Entender isso resolve a questão.\n\n**No nível da lesão: neurônio motor inferior.** A medula tem, no centro, a substância cinzenta, onde ficam os neurônios que saem para os músculos daquele segmento (corno anterior) e os circuitos dos reflexos. Quando a lesão destrói esse segmento, os músculos que ele comanda ficam **fracos e atrofiados**, a sensibilidade daquela faixa diminui e os reflexos daquele segmento **diminuem**. É o padrão de neurônio motor inferior, o mesmo de uma lesão de nervo.\n\n**Abaixo da lesão: neurônio motor superior.** O feixe motor que desce do cérebro (corticoespinhal) é interrompido. Os segmentos abaixo perdem o freio e os reflexos ficam **exaltados**: espasticidade, clônus, Babinski. Por isso as pernas, muito abaixo, ficam fracas e espásticas.\n\n**Aplicando ao segmento C8.** **Esperado no nível**: fraqueza dos **interósseos** da mão (dependem de C8 e T1) e diminuição da sensibilidade na face medial do braço e do antebraço (território de C8 e T1). **Esperado abaixo**: fraqueza do **quadríceps**, com sinais de neurônio motor superior nas pernas. **Não esperado**: o **Hoffmann** (o polegar e o indicador fletem ao se dar um peteleco na unha do dedo médio). O arco desse reflexo passa justamente pelos segmentos C8 e T1. Lesado no próprio nível, o arco não funciona e o reflexo não se exalta. O Hoffmann positivo é típico de mielopatias **acima** do arco, de C5-C6 para cima.\n\n**Na prova:** mielopatia em C8 não exalta o Hoffmann, cujo arco está lesado; espera-se fraqueza dos interósseos no nível e das pernas abaixo.",
+  "correta": "**Teste de Hoffmann positivo (não esperado).** O arco reflexo do Hoffmann passa por C8 e T1; com a lesão nesse nível, o arco é destruído e o reflexo não se exalta.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0119": {
-  "conceito": "### Escoliose antálgica e posição do fragmento\n| Fragmento em relação à raiz | Nome | Alívio ao inclinar |\n|---|---|---|\n| ==Lateral== (\"de ombro\") | a mais comum | ==para o lado oposto à dor== |\n| Medial (\"de axila\") | menos comum | para o **mesmo** lado da dor |\n\n### Por que\n- Com o fragmento **lateral**, inclinar para o lado **oposto** faz a raiz deslizar **medialmente**, para longe do fragmento.\n- Inclinar para o lado da dor a empurraria **contra** ele.\n\n### Hérnia lateral ao gânglio\nSe o fragmento está **lateral ao gânglio** da raiz de L4 (zona **foraminal ou extraforaminal**), por exemplo numa hérnia **extraforaminal L4-L5**, a raiz comprimida é **L4**, a que sai naquele nível.\n- **Clínica:** dor **intensa** na face anterior da coxa ou medial da perna, com déficit do reflexo **patelar**.\n- **Acesso cirúrgico:** frequentemente paraespinhal, pela via de **Wiltse**.\n\n> **Na prova:** fragmento **lateral** à raiz = alívio ao inclinar ==para o lado oposto==.",
-  "correta": "**Flexão (inclinação) para o outro lado da dor.**",
   "incorretas": {
-   "A": "**Flexão anterior.**\n- Aumenta a tensão na raiz.",
-   "B": "**Extensão.**\n- Estreita o forame e o recesso.",
-   "C": "**Para o mesmo lado.**\n- Alivia o fragmento **medial** (axilar)."
+   "A": "**A flexão anterior aumenta a tensão na raiz.** Curvar o tronco para a frente estica a raiz sobre o disco e tende a piorar a dor.",
+   "B": "**A extensão fecha o forame.** Numa hérnia que já ocupa a região do forame, estender a coluna reduz ainda mais o espaço da raiz.",
+   "C": "**Esse é o alívio da hérnia de axila.** Inclinar para o lado da dor afasta a raiz quando o fragmento está por dentro dela; com o fragmento lateral, essa inclinação empurra a raiz contra a hérnia."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**A hérnia e a raiz.** Quando o disco lombar hernia, o fragmento pode ficar de lados diferentes em relação à raiz que comprime. Isso muda a posição em que o paciente sente alívio e é cobrado pela banca.\n\n**O que é o gânglio sensitivo.** Cada raiz tem, junto ao forame, um alargamento chamado gânglio da raiz dorsal, onde ficam os corpos dos neurônios sensitivos. Uma hérnia **lateral ao gânglio** está na zona do forame ou fora dele (foraminal ou extraforaminal). No nível L4-L5, essa hérnia comprime a raiz **L4**, que está saindo por aquele forame, diferente da hérnia posterolateral comum desse disco, que pega L5. O quadro é dor intensa na face anterior da coxa e medial da perna, com o reflexo patelar diminuído.\n\n**O fragmento lateral e a escoliose antálgica.** O paciente com hérnia inclina o tronco, sem perceber, para a posição que tira a raiz de cima do fragmento; é a escoliose antálgica. Com o fragmento **lateral** à raiz (hérnia de ombro), inclinar o tronco **para o lado oposto** à dor faz a raiz deslizar para dentro, longe do fragmento, e alivia. Inclinar para o lado da dor empurra a raiz contra o fragmento e piora. Com o fragmento **medial** (hérnia de axila), o raciocínio é o inverso.\n\n**Por que flexão e extensão não aliviam.** A flexão para a frente estica a raiz sobre o disco e aumenta a tensão. A extensão estreita o forame, o que é especialmente ruim numa hérnia foraminal.\n\n**Na cirurgia.** Hérnias foraminais e extraforaminais costumam ser abordadas por uma via paraespinhal, entre os músculos ao lado da coluna (via de Wiltse), chegando ao forame por fora sem desestabilizar a faceta.\n\n**Na prova:** fragmento lateral à raiz alivia inclinando para o lado oposto à dor; fragmento medial, para o mesmo lado.",
+  "correta": "**Flexão para o outro lado da dor.** Com o fragmento por fora da raiz, inclinar para o lado oposto desloca a raiz para dentro, longe da hérnia.",
+  "referencias": [
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0134": {
