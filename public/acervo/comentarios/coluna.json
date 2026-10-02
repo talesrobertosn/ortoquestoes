@@ -680,25 +680,33 @@
   "conferido": false
  },
  "coluna-0048": {
-  "conceito": "### O forame cervical\n- **À frente:** articulação **uncovertebral** (Luschka) e disco.\n- **Atrás:** **faceta** articular.\n- **Em cima e embaixo:** pedículos.\n\nA ==extensão== reduz a altura e a área do forame: as facetas deslizam, e o ligamento amarelo e a cápsula se pregueiam. A **inclinação** e a **rotação** para o lado sintomático acrescentam compressão.\n\n### Testes derivados\n- **Spurling:** extensão + inclinação + rotação para o lado da dor, com compressão axial. Reproduz a dor radicular; **específico**, pouco sensível.\n- **Sinal da abdução do ombro** (Bakody): a mão apoiada sobre a cabeça **alivia** a dor, ao relaxar a raiz.\n- **Tração cervical manual:** alivia.\n\n### Na prática\nPacientes com radiculopatia cervical evitam olhar para cima: pendurar roupa, dirigir olhando o retrovisor.\n\n> **Na prova:** o que fecha o forame cervical = ==extensão== (base do Spurling).",
-  "correta": "**Extensão.**",
   "incorretas": {
-   "A": "**Flexão.**\n- **Abre** o forame e alivia.",
-   "C": "**Flexão lateral.**\n- Piora quando dirigida ao lado sintomático, mas o movimento definidor é a extensão.",
-   "D": "**Rotação lateral.**\n- Contribui, sem ser o movimento definidor."
+   "A": "**A flexão abre o forame.** Inclinar a cabeça para a frente aumenta o espaço por onde a raiz sai e tende a aliviar a dor radicular.",
+   "C": "**Contribui, mas não é o movimento definidor.** A inclinação para o lado da dor fecha o forame daquele lado e entra no Spurling, porém o componente que mais reduz o forame é a extensão.",
+   "D": "**Também é coadjuvante.** A rotação para o lado sintomático soma compressão, mas sozinha fecha menos o forame do que a extensão."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é o forame e o que é estenose foraminal.** O forame intervertebral é a abertura lateral por onde cada raiz nervosa sai da coluna. No pescoço, ele é limitado na frente pelo disco e pela articulação uncovertebral (de Luschka, uma pequena articulação própria da coluna cervical entre os corpos vertebrais), atrás pela faceta articular, e em cima e embaixo pelos pedículos. Na **estenose foraminal**, osteófitos dessas articulações e o disco desgastado estreitam essa porta, e a raiz fica apertada, causando **dor radicular**: dor que desce pelo braço no território da raiz.\n\n**Por que a extensão piora.** Quando o pescoço se estende (olhar para cima), as facetas deslizam uma sobre a outra, a altura do forame diminui e a cápsula e o ligamento amarelo se dobram para dentro. A área do forame cai, e uma raiz que já estava no limite passa a ser comprimida. A **extensão** é, portanto, o movimento que mais exacerba a dor. Inclinar e girar o pescoço para o lado da dor somam compressão, porque fecham o forame daquele lado.\n\n**O teste que nasce disso: Spurling.** O examinador estende o pescoço, inclina e gira para o lado sintomático e aplica uma leve compressão na cabeça. Se a dor desce pelo braço, o teste é positivo. É bastante específico para radiculopatia, embora pouco sensível.\n\n**O que alivia.** A **flexão** abre o forame. Apoiar a mão do lado afetado sobre a cabeça (sinal da abdução do ombro) diminui a tensão da raiz e costuma aliviar. A tração do pescoço também alivia. No dia a dia, esses pacientes se queixam de dor ao olhar para cima, pendurar roupa ou olhar o retrovisor.\n\n**Na prova:** a extensão fecha o forame cervical e piora a radiculopatia; é a base do teste de Spurling.",
+  "correta": "**Extensão.** Estender o pescoço reduz a altura e a área do forame e espreme a raiz já estreitada pela estenose.",
+  "referencias": [
+   "Spurling RG, Scoville WB. Lateral rupture of the cervical intervertebral discs: a common cause of shoulder and arm pain. Surg Gynecol Obstet. 1944;78:350-358.",
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0049": {
-  "conceito": "### Choque medular\n**O que é:** perda **transitória** de toda a função medular abaixo da lesão: paralisia **flácida**, **arreflexia**, anestesia. **Não** é choque hemodinâmico.\n\n**Fim do choque medular:** marcado pelo ==retorno do reflexo bulbocavernoso==, em geral em ==24 a 48 horas==. Os demais reflexos e a espasticidade reaparecem ao longo de dias a semanas.\n\n### Por que importa\n**Enquanto dura**, não se classifica a lesão como **completa**. Uma lesão que parece completa pode ser incompleta. Após o retorno do bulbocavernoso:\n- **sem nenhuma função sacral** (ASIA A) = lesão **completa**, com prognóstico de recuperação motora distal muito reservado;\n- **qualquer preservação sacral** (sensibilidade perianal, contração anal voluntária) = **incompleta**, com prognóstico melhor.\n\n### O reflexo bulbocavernoso\n- **Como se pesquisa:** apertar a glande ou o clitóris, ou tracionar a sonda vesical, e sentir a **contração do esfíncter anal**.\n- **Arco:** S2-S4.\n- **Exceção:** em lesões do **cone medular** ou da **cauda equina**, o próprio arco pode estar lesado, e o reflexo pode não voltar.\n\n> **Na prova:** choque medular termina em ==24 a 48 h==, com o retorno do ==bulbocavernoso==.",
-  "correta": "**24 a 48 horas.**\n- Marcado pelo retorno do bulbocavernoso.",
   "incorretas": {
-   "A": "**6 a 12 horas.**\n- Cedo demais.",
-   "B": "**12 a 24 horas.**\n- Ainda aquém do intervalo clássico.",
-   "D": "**48 a 72 horas.**\n- Além do intervalo usual para o retorno do bulbocavernoso."
+   "A": "**Cedo demais.** Nas primeiras 6 a 12 horas a medula abaixo da lesão costuma estar ainda totalmente silenciosa, e o bulbocavernoso ainda não voltou.",
+   "B": "**Ainda aquém do intervalo clássico.** O retorno pode começar perto de 24 horas, mas a janela usualmente citada é de 24 a 48 horas.",
+   "D": "**Além do usual.** Dois a três dias ultrapassa o intervalo esperado para o bulbocavernoso. Nesse período já se espera poder classificar a lesão."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é choque medular.** Logo após uma lesão grave da medula, toda a função abaixo do nível lesado desaparece: paralisia flácida (músculos moles), ausência de reflexos e perda da sensibilidade. Esse estado é o **choque medular**. Ele é neurológico, não tem a ver com pressão arterial (isso é o choque neurogênico, que é outra coisa), e é **transitório**: com o tempo, os reflexos abaixo da lesão voltam, mesmo que a lesão seja completa.\n\n**O marcador do fim: o reflexo bulbocavernoso.** É pesquisado apertando a glande ou o clitóris, ou tracionando a sonda vesical, e sentindo com o dedo no reto a contração do esfíncter anal. O arco desse reflexo usa os segmentos sacrais S2 a S4. Seu retorno, que costuma acontecer **entre 24 e 48 horas** após o trauma, marca o fim do choque medular. Os demais reflexos e a espasticidade reaparecem ao longo de dias a semanas.\n\n**Por que isso importa.** Enquanto dura o choque medular, não se pode afirmar que a lesão é completa, porque tudo está desligado. Depois que o bulbocavernoso volta, faz-se a classificação: sem nenhuma função sacral (nenhuma sensibilidade em volta do ânus e nenhuma contração voluntária do esfíncter) a lesão é **completa** (ASIA A), com chance muito pequena de recuperação motora distal; qualquer preservação sacral torna a lesão **incompleta**, com prognóstico melhor.\n\n**A exceção.** Nas lesões do cone medular (a ponta final da medula) ou da cauda equina, o próprio arco do reflexo pode estar destruído, e o bulbocavernoso pode não voltar.\n\n**Na prova:** choque medular termina em 24 a 48 horas, com o retorno do reflexo bulbocavernoso.",
+  "correta": "**24 e 48 horas.** É o intervalo usual de retorno do reflexo bulbocavernoso, que marca o fim do choque medular.",
+  "referencias": [
+   "Ditunno JF, Little JW, Tessler A, Burns AS. Spinal shock revisited: a four-phase model. Spinal Cord. 2004;42(7):383-395.",
+   "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0050": {
@@ -717,36 +725,46 @@
   "conferido": false
  },
  "coluna-0051": {
-  "conceito": "### Quem faz o quê na coluna cervical\n| Segmento | Movimento principal |\n|---|---|\n| Occipito-C1 | ~**metade da flexoextensão** (\"sim\") |\n| ==C1-C2== | ==~50% da rotação axial== (\"não\"), cerca de 40° a 45° para cada lado |\n| C3 a C7 | o restante da rotação e da flexoextensão, e a **inclinação lateral** (acoplada à rotação) |\n\n### Por que C1-C2 roda tanto\n- **Pivô** do dente do áxis contido pelo **ligamento transverso**.\n- Facetas **quase horizontais**, que deslizam em rotação.\n- Ausência de disco entre C1 e C2.\n\n### Consequências práticas\n- **Artrodese C1-C2** (Magerl, Harms, Gallie, Brooks): o paciente **perde cerca de metade** da rotação cervical. É preciso explicar antes.\n- **Subluxação rotatória C1-C2** em crianças (Fielding): torcicolo em \"cock-robin\" após infecção de via aérea (**Grisel**) ou trauma.\n\n> **Na prova:** C1-C2 = ==50%== da rotação cervical.",
-  "correta": "**50%.**",
   "incorretas": {
-   "A": "**15%.**\n- Subestima muito.",
-   "B": "**30%.**\n- Subestima.",
-   "D": "**65%.**\n- Superestima; a cervical baixa faz a outra metade."
+   "A": "**Subestima muito.** 15% ignora o desenho de pivô da articulação atlantoaxial, que existe justamente para girar.",
+   "B": "**Ainda subestima.** A contribuição de C1-C2 é cerca de metade da rotação, não menos de um terço.",
+   "D": "**Superestima.** A coluna cervical de C3 a C7 faz a outra metade; C1-C2 não chega a dois terços."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Os movimentos do pescoço.** A coluna cervical faz flexão e extensão (o gesto do sim), rotação (o gesto do não) e inclinação lateral. Cada segmento contribui de um jeito, conforme o desenho das suas articulações.\n\n**O atlas e o áxis.** C1, o atlas, é um anel sem corpo vertebral que sustenta o crânio. C2, o áxis, tem uma projeção vertical, o **dente**, que sobe por dentro do anel do atlas e fica preso contra o arco anterior pelo ligamento transverso. Entre C1 e C2 não há disco, e as facetas são quase horizontais.\n\n**Por que C1-C2 gira tanto.** Esse conjunto funciona como um pivô: o atlas, levando o crânio, gira em torno do dente do áxis, e as facetas horizontais deslizam livremente. Por isso a articulação atlantoaxial responde por **cerca de 50% de toda a rotação** do pescoço, em torno de 40 a 45 graus para cada lado. A articulação entre o occipício e C1, por outro lado, faz grande parte da flexoextensão da cabeça e quase não gira. De C3 a C7 fica a outra metade da rotação, junto com flexoextensão e inclinação lateral, que nessa região vêm acopladas.\n\n**Consequências práticas.** Uma artrodese entre C1 e C2, feita por instabilidade ou fratura, tira do paciente cerca de metade da rotação do pescoço, o que precisa ser explicado antes da cirurgia. Na criança, a subluxação rotatória atlantoaxial causa torcicolo com a cabeça inclinada para um lado e girada para o outro, depois de infecção de garganta (síndrome de Grisel) ou trauma.\n\n**Na prova:** C1-C2 faz cerca de metade da rotação cervical.",
+  "correta": "**50%.** O pivô entre o atlas e o dente do áxis, sem disco e com facetas horizontais, concentra cerca de metade da rotação do pescoço.",
+  "referencias": [
+   "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0052": {
-  "conceito": "### Qual raiz sofre na espondilolistese ístmica L5-S1\nA raiz comprimida é a que ==sai pelo forame L5-S1==: **L5**.\n1. O corpo de L5 escorrega para frente e **reduz a altura do forame**.\n2. O tecido fibrocartilaginoso do defeito da pars (**calo de Gill**) ocupa o forame.\n3. A raiz fica **presa contra o pedículo**, na zona foraminal.\n\n**Clínica:**\n- dor radicular de **L5** (face lateral da perna, dorso do pé);\n- fraqueza do **extensor longo do hálux**.\n\n### Compare com a hérnia\n- **Hérnia posterolateral L5-S1:** comprime **S1**, a raiz que atravessa o disco rumo ao forame de baixo.\n- **Hérnia foraminal L5-S1:** comprime **L5**.\n\n### Tratamento cirúrgico\n**Descompressão foraminal de L5** (remoção do tecido fibroso, Gill) + **artrodese** L5-S1.\n\n> **Na prova:** espondilolistese ístmica L5-S1 comprime ==L5== (foraminal).",
-  "correta": "**L5.**\n- A raiz que sai pelo forame L5-S1.",
   "incorretas": {
-   "A": "**L3.**\n- Sai muito acima.",
-   "B": "**L4.**\n- Sai pelo forame L4-L5.",
-   "D": "**S1.**\n- É a raiz da **hérnia** posterolateral L5-S1."
+   "A": "**L3 sai muito acima.** A raiz L3 deixa a coluna pelo forame entre L3 e L4, longe do segmento que escorregou.",
+   "B": "**L4 sai pelo forame de cima.** Ela passa pelo forame L4-L5, que não é o deformado na espondilolistese de L5 sobre o sacro.",
+   "D": "**S1 é a raiz da hérnia, não da listese.** A hérnia posterolateral L5-S1 comprime S1, que passa por trás do disco. Na espondilolistese ístmica o problema é o forame de saída de L5."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é espondilolistese ístmica.** É o escorregamento de uma vértebra para a frente por um defeito na pars interarticularis, a ponte de osso entre a parte da frente e a parte de trás da vértebra. Na grande maioria das vezes acontece em **L5 sobre o sacro**. O corpo de L5 vai para a frente e o arco posterior, solto, fica para trás.\n\n**Por que a raiz L5 sofre.** Cada raiz lombar sai pelo forame abaixo da vértebra de mesmo número: a raiz L5 sai pelo forame entre L5 e S1. Na espondilolistese ístmica de L5, esse é exatamente o forame deformado. O escorregamento reduz a altura do forame, e o tecido fibroso e cartilaginoso que se forma no defeito da pars, tentando consolidá-lo, ocupa o espaço. A raiz **L5** fica presa contra o pedículo. O paciente tem dor na face lateral da perna e no dorso do pé e pode ter fraqueza do extensor longo do hálux (o músculo que levanta o dedão).\n\n**Não confundir com a hérnia de disco.** A hérnia posterolateral do disco L5-S1, a mais comum, comprime a raiz que passa por trás do disco descendo para o forame de baixo, a **S1**. Só a hérnia foraminal L5-S1 comprime a L5. Na espondilolistese ístmica, a compressão é foraminal, e por isso a raiz é L5.\n\n**Outro detalhe.** Na forma ístmica o arco fica para trás, então o canal central tende a se alargar, e a cauda equina raramente é comprimida no centro. Na displásica é o contrário: o arco inteiro acompanha a vértebra e estreita o canal.\n\n**Tratamento cirúrgico.** Descompressão do forame de L5, com retirada do tecido fibroso e do arco solto (procedimento de Gill), associada a artrodese entre L5 e S1.\n\n**Na prova:** espondilolistese ístmica de L5 comprime a raiz L5 no forame; hérnia posterolateral L5-S1 comprime S1.",
+  "correta": "**L5.** A raiz L5 sai pelo forame L5-S1, que é estreitado pelo escorregamento e pelo tecido fibroso do defeito da pars.",
+  "referencias": [
+   "Gill GG, Manning JG, White HL. Surgical treatment of spondylolisthesis without spine fusion: excision of the loose lamina with decompression of the nerve roots. J Bone Joint Surg Am. 1955;37-A(3):493-520.",
+   "Wiltse LL, Newman PH, Macnab I. Classification of spondylolisis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0053": {
-  "conceito": "### Escoliose idiopática infantil (0 a 3 anos)\n- Mais comum em **meninos**, com curva **torácica à esquerda**, associada a plagiocefalia.\n- A **maioria regride** espontaneamente. O desafio é identificar as **progressivas**.\n\n### Critérios de Mehta, medidos no ápice\n- **DACV** (diferença do ângulo costovertebral): ângulo costovertebral do lado **côncavo** menos o do **convexo**.\n  - **Abaixo de 20°:** tende a **regredir**.\n  - ==Acima de 20°==: tende a **progredir**.\n- **Fase da costela** (lado convexo):\n  - **Fase I:** a cabeça da costela **não se sobrepõe** ao corpo vertebral.\n  - ==Fase II==: a cabeça da costela **sobrepõe-se** ao corpo, indicando **rotação** estabelecida. Indica **progressão**, independentemente do DACV.\n\n### Tratamento das progressivas\n- **Gessos seriados de Mehta** (EDF), que podem até **curar** curvas pequenas em lactentes.\n- Depois, colete.\n- Nas graves, **hastes de crescimento** (growing rods, VEPTR).\n- Sempre fazer **RM** da neuroaxis nas curvas progressivas ou acima de 20°: há alta prevalência de anomalias (Chiari, siringomielia).\n\n> **Na prova:** progressiva = ==DACV acima de 20°== e/ou ==costela em fase II==.",
-  "correta": "**DACV acima de 20° e fase II.**",
   "incorretas": {
-   "A": "**Acima de 20° e fase I.**\n- A fase I é o achado das curvas **resolutivas**.",
-   "C": "**Abaixo de 20° e fase I.**\n- Padrão da curva que **regride**.",
-   "D": "**Abaixo de 20° e fase II.**\n- A fase II indica progressão, mas o DACV citado como marcador é **acima** de 20°."
+   "A": "**A fase I é da curva que tende a regredir.** DACV acima de 20 graus é sinal de alerta, mas a costela sem sobreposição ao corpo vertebral é o achado das curvas resolutivas.",
+   "C": "**É o padrão da curva que regride.** DACV abaixo de 20 graus com costela em fase I é o quadro tranquilizador, em que a maioria das curvas desaparece sozinha.",
+   "D": "**Mistura sinais.** A fase II indica progressão, mas a DACV que caracteriza a curva progressiva é acima de 20 graus, não abaixo."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é escoliose idiopática infantil.** É a escoliose sem causa conhecida que aparece nos três primeiros anos de vida. Diferente da do adolescente, é mais comum em **meninos**, a curva costuma ser torácica com a convexidade para a **esquerda**, e a **maioria regride sozinha**. O desafio é separar, cedo, as curvas que vão regredir das que vão progredir.\n\n**Os critérios de Mehta.** Em 1972, Mehta descreveu duas medidas feitas na radiografia, na vértebra do ápice da curva, que fazem essa separação.\n\n**A diferença do ângulo costovertebral (DACV).** O ângulo costovertebral é o ângulo entre o eixo da costela e o eixo do corpo vertebral. Mede-se de um lado e do outro do ápice: do lado da concavidade e do lado da convexidade. A diferença entre eles é a DACV. Quando a curva vai progredir, a vértebra roda e as costelas se inclinam de forma assimétrica, e a diferença aumenta. **DACV acima de 20 graus** sugere progressão; abaixo de 20 graus, a curva tende a regredir.\n\n**A fase da costela.** Olha-se a costela do lado convexo. Na **fase I**, a cabeça da costela não se sobrepõe ao corpo vertebral na radiografia. Na **fase II**, a cabeça da costela se sobrepõe ao corpo, sinal de que a rotação vertebral já está estabelecida. A fase II indica progressão por si só.\n\n**Tratamento das progressivas.** Gessos seriados aplicados sob anestesia (técnica de Mehta), que podem corrigir curvas pequenas em lactentes; depois colete; nas graves, hastes de crescimento. Toda curva progressiva deve ter ressonância de todo o neuroeixo, porque é comum encontrar malformação de Chiari ou siringomielia.\n\n**Na prova:** curva infantil progressiva tem DACV acima de 20 graus e costela em fase II.",
+  "correta": "**DACV maior que 20 graus e fase II da costela.** As duas medidas indicam rotação vertebral estabelecida e assimetria das costelas, marcas da curva que vai progredir.",
+  "referencias": [
+   "Mehta MH. The rib-vertebra angle in the early diagnosis between resolving and progressive infantile scoliosis. J Bone Joint Surg Br. 1972;54(2):230-243."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0054": {
@@ -765,17 +783,18 @@
   "conferido": false
  },
  "coluna-0055": {
-  "conceito": "### Acesso lateral transpsoas (XLIF/DLIF)\nIntersomática pelo flanco, **atravessando o psoas**.\n\n### O plexo lombar dentro do psoas\n- As raízes entram no psoas pela parte **posterior** e, descendo, migram para **anterior**.\n- Quanto **mais baixo** o nível, mais o plexo invade a zona \"segura\" do disco.\n- Em ==L4-L5==, o plexo, sobretudo o **femoral**, está mais **anterior**, e o nervo **genitofemoral** corre na face anterior do músculo. É o nível de **maior risco** neurológico.\n- **L5-S1:** geralmente **inacessível** pela crista ilíaca e pelos vasos ilíacos.\n\n### Complicações típicas\n- **Fraqueza de flexão do quadril** (por trauma do psoas): frequente e transitória.\n- **Parestesia na coxa** (genitofemoral, cutâneo femoral lateral).\n- **Lesão do femoral**, com fraqueza do quadríceps: rara, mas grave.\n\n**Prevenção:** **neuromonitorização** contínua e dilatação progressiva, com o retrator posicionado no **meio ou no terço anterior** do disco.\n\n> **Na prova:** XLIF, maior risco ao plexo = ==L4-L5==.",
-  "correta": "**L4/L5.**\n- O plexo está mais anteriorizado dentro do psoas.",
   "incorretas": {
-   "A": "**L2/L3.**\n- O plexo ainda é posterior; janela ampla.",
-   "B": "**L3/L4.**\n- Risco intermediário.",
-   "D": "**L5/S1.**\n- Não é acessível pela via lateral (crista ilíaca)."
+   "A": "**L2/L3 é o nível mais seguro.** Ali o plexo ainda fica na parte posterior do psoas, e a janela de passagem no meio do disco é ampla.",
+   "B": "**L3/L4 tem risco intermediário.** Os nervos já avançaram um pouco para a frente, mas menos do que em L4-L5.",
+   "D": "**L5/S1 não é acessível por essa via.** A crista ilíaca bloqueia o caminho lateral e os vasos ilíacos estão à frente; esse nível costuma ser abordado por via anterior ou posterior."
   },
+  "conceito": "**O que é o XLIF.** É uma artrodese intersomática feita pelo lado do corpo: com o paciente deitado de lado, o cirurgião entra pelo flanco, passa por trás do peritônio, **atravessa o músculo psoas** e chega à lateral do disco, que é retirado e substituído por um espaçador grande. A sigla vem do inglês, fusão intersomática lombar extrema lateral. A vantagem é não abrir o abdome pela frente nem a musculatura das costas.\n\n**O problema: o plexo lombar mora dentro do psoas.** O plexo lombar é a rede de nervos formada pelas raízes de L1 a L4, que dá origem ao nervo femoral (comanda o quadríceps, que estende o joelho), ao obturatório e a nervos sensitivos da coxa e da virilha. Essas raízes entram no psoas pela parte de trás e, à medida que descem, migram para a frente dentro do músculo.\n\n**Por que o risco cresce para baixo.** Nos níveis altos, como L2-L3, o plexo está na parte posterior do psoas e sobra uma janela segura grande no meio do disco. Descendo, os nervos avançam sobre essa janela. Em **L4-L5** o plexo, principalmente o femoral, está mais anterior e a zona segura é a menor de todas, por isso é o nível de **maior risco**. O nervo genitofemoral ainda corre na face anterior do músculo. O nível L5-S1 em geral nem é acessível por essa via, porque a crista ilíaca bloqueia o caminho e os vasos ilíacos estão na frente.\n\n**Complicações e prevenção.** Fraqueza para fletir o quadril, pelo trauma no psoas, é comum e passageira. Dormência na coxa, pelo genitofemoral ou cutâneo femoral lateral, também. A lesão do femoral, com fraqueza do quadríceps, é rara e grave. Usam-se monitorização neurofisiológica contínua, dilatação progressiva e posicionamento do afastador no meio do disco.\n\n**Na prova:** no XLIF, o maior risco ao plexo lombar é em L4-L5, onde ele está mais anterior dentro do psoas.",
+  "correta": "**L4/L5.** Nesse nível o plexo lombar, em especial o nervo femoral, está mais anterior dentro do psoas, e a zona segura de passagem é a menor.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 37"
+   "Ozgur BM, Aryan HE, Pimenta L, Taylor WR. Extreme Lateral Interbody Fusion (XLIF): a novel surgical technique for anterior lumbar interbody fusion. Spine J. 2006;6(4):435-443.",
+   "Uribe JS, Arredondo N, Dakwar E, Vale FL. Defining the safe working zones using the minimally invasive lateral retroperitoneal transpsoas approach: an anatomical study. J Neurosurg Spine. 2010;13(2):260-266."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0056": {
