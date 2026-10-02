@@ -331,69 +331,90 @@
   "conferido": false
  },
  "coluna-0024": {
-  "conceito": "### Decisão na escoliose idiopática do adolescente\nDepende de **tamanho da curva × crescimento restante**:\n| Cobb | Esqueleto imaturo (Risser 0 a 2, pré-menarca ou até ~1 ano após) | Perto da maturidade |\n|---|---|---|\n| abaixo de 25° | observação | observação |\n| 25° a 40-45° | ==colete== | ==observação== |\n| acima de 45-50° | cirurgia | cirurgia |\n\n### O caso\nMenina de 14 anos com **menarca há 2 anos**: já passou do pico de crescimento. O **Risser** provavelmente está alto e a velocidade de crescimento é baixa.\n- O **colete** só funciona enquanto há crescimento (estudo **BrAIST**). Aqui, pouco a oferecer.\n- **35°** está abaixo do limiar cirúrgico.\n- A conduta é **observar com radiografias** até a maturidade.\n\n### Por que não dar alta\nCurvas acima de ~30° podem **progredir na vida adulta**: cerca de **1° por ano** nas curvas torácicas acima de 50°, e menos nas menores. Merecem acompanhamento a longo prazo.\n\n> **Na prova:** 35° perto da maturidade = ==observação==, sem colete.",
-  "correta": "**Observação com radiografias seriadas.**",
   "incorretas": {
-   "A": "**Alta.**\n- Curvas acima de ~30° podem progredir mesmo na vida adulta.",
-   "C": "**Colete de Milwaukee.**\n- O colete age durante o crescimento; aqui resta pouco.\n- O Milwaukee é usado hoje sobretudo em curvas torácicas altas.",
-   "D": "**Artrodese.**\n- 35° está abaixo do limiar de 45 a 50°."
+   "A": "**Alta é precoce.** Curvas acima de cerca de 30 graus podem progredir mesmo depois do fim do crescimento, então a paciente precisa de seguimento.",
+   "C": "**O colete só age durante o crescimento.** Ele mantém a curva enquanto a coluna cresce; com o crescimento terminado não traz benefício. O Milwaukee, que inclui um anel cervical, é reservado hoje a curvas torácicas altas.",
+   "D": "**35 graus está abaixo do limiar cirúrgico.** A artrodese é indicada a partir de 45 a 50 graus, faixa em que a curva tende a progredir na vida adulta e a deformidade é maior."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é a escoliose idiopática do adolescente.** Escoliose é o desvio lateral da coluna com rotação das vértebras. Idiopática quer dizer sem causa conhecida, e a forma do adolescente aparece a partir dos 10 anos, sobretudo em meninas. O tamanho da curva é medido pelo **ângulo de Cobb**: traçam-se linhas ao longo das vértebras mais inclinadas nas pontas da curva e mede-se o ângulo entre elas. Abaixo de 10 graus não se fala em escoliose.\n\n**A regra de decisão: curva contra crescimento.** A curva progride principalmente enquanto a criança cresce. Por isso a conduta cruza dois dados: o tamanho da curva e quanto crescimento ainda resta. O crescimento restante é estimado pela **menarca** (o pico de crescimento nas meninas ocorre antes dela, e depois dela o crescimento desacelera, terminando em cerca de dois anos), pela idade e pelo **sinal de Risser**, a ossificação da apófise da crista ilíaca, graduada de 0 (imaturo) a 5 (maturo).\n\n**As faixas de conduta.** Curvas abaixo de 25 graus são **observadas**. Entre 25 e 40 a 45 graus, em esqueleto ainda imaturo, indica-se **colete**, que segura a curva durante o crescimento; o estudo BrAIST mostrou que o colete reduz a progressão até a faixa cirúrgica. Acima de 45 a 50 graus, a indicação é **cirurgia**, a artrodese, que funde as vértebras da curva.\n\n**Aplicando ao caso.** A paciente tem 14 anos e menstrua há dois anos: o crescimento está praticamente terminado. O colete não tem mais o que fazer, porque age só enquanto há crescimento. A curva de 35 graus está abaixo do limiar cirúrgico. A conduta é **observar com radiografias seriadas** até a maturidade completa.\n\n**Por que não dar alta.** Curvas acima de cerca de 30 graus podem continuar progredindo lentamente na vida adulta, em especial as maiores que 50 graus, que crescem em média 1 grau por ano. Uma curva de 35 graus merece acompanhamento a longo prazo.\n\n**Na prova:** curva de 25 a 45 graus com crescimento restante leva colete; sem crescimento restante e abaixo de 45 a 50 graus, observação.",
+  "correta": "**Observação com radiografias seriadas.** Dois anos após a menarca o crescimento quase terminou, o colete perde a função e 35 graus não é curva cirúrgica, mas ainda pode progredir e precisa ser acompanhada.",
+  "referencias": [
+   "Weinstein SL, Dolan LA, Wright JG, Dobbs MB. Effects of bracing in adolescents with idiopathic scoliosis. N Engl J Med. 2013;369(16):1512-1521.",
+   "Weinstein SL, Ponseti IV. Curve progression in idiopathic scoliosis. J Bone Joint Surg Am. 1983;65(4):447-455."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0025": {
-  "conceito": "### Choque neurogênico × hemorrágico\n| | Neurogênico | Hemorrágico |\n|---|---|---|\n| FC | ==bradicardia== | taquicardia |\n| Pele | ==quente, corada== | fria, pálida, pegajosa |\n| Débito urinário | ==normal== (no início) | baixo |\n| Mecanismo | perda simpática: vasodilatação e vago sem oposição | perda de volume |\n| Tratamento | volume moderado + **vasopressor alfa e beta** | **sangue**, controle do sangramento |\n\n### Atenção\n- No politraumatizado, os dois **podem coexistir**. A bradicardia pode \"mascarar\" a taquicardia da hemorragia. **Procure sangramento** (FAST, pelve, tórax) antes de atribuir a hipotensão à medula.\n- O choque neurogênico ocorre em lesões **acima de T6**.\n\n### Não confundir com choque medular\nPerda transitória dos **reflexos** abaixo da lesão, com paralisia flácida. Termina com o retorno do **bulbocavernoso**; só então se classifica a lesão como completa ou incompleta.\n\n> **Na prova:** neurogênico = ==bradicardia + pele quente + diurese preservada==.",
-  "correta": "**Bradicardia, débito urinário normal e extremidades quentes.**",
   "incorretas": {
-   "A": "**Bradicardia, oligúria, pele fria.**\n- Oligúria e pele fria sugerem **hipovolemia**.",
-   "B": "**Taquicardia, oligúria, pele fria.**\n- Quadro do choque **hemorrágico**.",
-   "D": "**Taquicardia, diurese normal, pele quente.**\n- A taquicardia contradiz a perda simpática."
+   "A": "**Mistura os dois choques.** A bradicardia é neurogênica, mas oligúria e extremidades frias indicam vasoconstrição e falta de volume, típicas da hemorragia.",
+   "B": "**É o choque hemorrágico.** Taquicardia, pele fria e pouca urina mostram o simpático no máximo tentando compensar a perda de sangue, o oposto do que acontece na lesão medular.",
+   "D": "**A taquicardia contradiz a perda do simpático.** Sem o simpático o coração fica sob ação do vago e desacelera. Taquicardia num traumatizado medular deve levantar a suspeita de sangramento associado."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é choque.** Choque é a falta de oxigênio para os tecidos porque a circulação falhou. No traumatizado há duas causas principais a separar: o **choque hemorrágico**, por perda de sangue, e o **choque neurogênico**, por lesão da medula que desliga o sistema nervoso simpático.\n\n**O papel do simpático.** O sistema simpático mantém os vasos contraídos (tônus vascular) e acelera o coração. Suas fibras saem da medula entre T1 e L2, e as que aceleram o coração saem de T1 a T4. Uma lesão medular acima de cerca de T6 interrompe esse comando.\n\n**O quadro do choque neurogênico.** Sem o simpático, os vasos da periferia dilatam: a pressão cai, mas a pele fica **quente e corada**, porque o sangue vai para a pele. O nervo vago, que freia o coração, age sem oposição e causa **bradicardia**. No início, o rim continua recebendo sangue e o **débito urinário** costuma estar **preservado**. Resumo: hipotensão com bradicardia, extremidades quentes e diurese normal.\n\n**O quadro do choque hemorrágico.** A perda de volume ativa o simpático ao máximo: o coração acelera (**taquicardia**), os vasos da pele fecham (**extremidades frias**, pálidas e úmidas) e o rim reduz a produção de urina (**oligúria**) para poupar líquido.\n\n**A armadilha.** No politraumatizado os dois podem coexistir, e a bradicardia neurogênica pode mascarar a taquicardia da hemorragia. Sempre se procura sangramento (tórax, abdome com ultrassom, pelve, ossos longos) antes de atribuir a hipotensão à medula. O tratamento do neurogênico é volume com critério e vasopressor com ação alfa e beta, como a noradrenalina.\n\n**Não confundir com choque medular.** É a perda transitória dos reflexos abaixo da lesão, sem relação com a pressão, que termina com o retorno do reflexo bulbocavernoso.\n\n**Na prova:** choque neurogênico é bradicardia, pele quente e diurese normal; hemorrágico é taquicardia, pele fria e oligúria.",
+  "correta": "**Bradicardia, débito urinário normal e extremidades quentes.** É o retrato da perda do simpático: vagal sem oposição, vasos periféricos dilatados e rim ainda perfundido no início.",
+  "referencias": [
+   "American College of Surgeons. Advanced Trauma Life Support (ATLS) Student Course Manual. 10th ed. Chicago: American College of Surgeons; 2018.",
+   "Walters BC, Hadley MN, Hurlbert RJ et al. Guidelines for the management of acute cervical spine and spinal cord injuries: 2013 update. Neurosurgery. 2013;60(Suppl 1):82-91."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0026": {
-  "conceito": "### Bíceps: duas raízes\n- Inervado pelo **musculocutâneo**, com fibras de ==C5 e C6==.\n- Na cervical, o disco comprime a raiz da vértebra **inferior**:\n  - **C4-C5:** comprime C5;\n  - **C5-C6:** comprime C6.\n- Portanto, ==C4-C5 ou C5-C6== podem enfraquecer a flexão do cotovelo.\n\n### Como separar\n| | C5 (disco C4-C5) | C6 (disco C5-C6) |\n|---|---|---|\n| Força | **deltoide** (abdução) + bíceps | bíceps + **extensores do punho** |\n| Reflexo | **bicipital** | **braquiorradial** |\n| Sensibilidade | face lateral do ombro/braço | **polegar e indicador** |\n\n### Diferenciais\n- **Paralisia de C5 pós-operatória:** fraqueza do deltoide e bíceps após descompressão cervical, em geral por tração da raiz. É transitória na maioria.\n- **Parsonage-Turner** (neuralgia amiotrófica): dor intensa seguida de fraqueza.\n\n> **Na prova:** bíceps fraco = ==C4-C5 ou C5-C6==.",
-  "correta": "**C4-C5 ou C5-C6.**\n- Os discos que comprimem C5 e C6.",
   "incorretas": {
-   "A": "**C3-C4 ou C4-C5.**\n- C3-C4 comprime **C4**, que não inerva o bíceps.",
-   "C": "**C5-C6 ou C6-C7.**\n- C6-C7 comprime **C7**, que é a raiz do tríceps.",
-   "D": "**C6-C7 ou C7-T1.**\n- C7 e C8 não inervam o bíceps."
+   "A": "**C3-C4 comprime a raiz C4.** A C4 não inerva o bíceps: ela participa da inervação do diafragma e da sensibilidade do pescoço e do topo do ombro. Só metade da alternativa serve.",
+   "C": "**C6-C7 comprime a raiz C7.** A C7 é a raiz do tríceps, que estende o cotovelo, e do reflexo tricipital. O disco C5-C6 está certo, mas o par está incompleto.",
+   "D": "**Raízes erradas.** C6-C7 comprime a C7 e C7-T1 comprime a C8, que controlam o tríceps e os flexores dos dedos. Nenhuma delas inerva o bíceps."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Quem inerva o bíceps.** O bíceps braquial flexiona o cotovelo e supina o antebraço. É inervado pelo nervo **musculocutâneo**, que recebe fibras das raízes **C5 e C6**. Por isso a compressão de qualquer uma dessas duas raízes pode enfraquecer o bíceps.\n\n**Qual disco comprime qual raiz.** A coluna cervical tem 7 vértebras e 8 raízes; cada raiz cervical sai acima da vértebra de mesmo número. A raiz C5 sai entre C4 e C5, e a C6 sai entre C5 e C6. Uma hérnia de disco lateral comprime a raiz que sai naquele espaço. Logo, o disco **C4-C5** comprime **C5**, e o disco **C5-C6** comprime **C6**. Os dois podem afetar o bíceps.\n\n**Como separar C5 de C6 no exame.** A **C5** dá fraqueza do deltoide (o paciente não consegue abduzir o ombro) além do bíceps, reflexo **bicipital** diminuído e alteração da sensibilidade na face lateral do ombro e do braço. A **C6** dá fraqueza do bíceps e dos extensores do punho, reflexo **braquiorradial** diminuído e alteração da sensibilidade no polegar e no indicador.\n\n**As raízes que não têm a ver com o bíceps.** A **C4** inerva principalmente o diafragma (junto com C3 e C5) e a pele da base do pescoço e do topo do ombro. A **C7** é a raiz do tríceps e do reflexo tricipital. A **C8** controla os flexores dos dedos.\n\n**Diferenciais.** Fraqueza de deltoide e bíceps também aparece na paralisia de C5 que pode surgir após cirurgias de descompressão cervical, geralmente transitória, e na neuralgia amiotrófica (Parsonage-Turner), em que uma dor intensa no ombro é seguida de fraqueza.\n\n**Na prova:** bíceps fraco aponta para C5 ou C6, ou seja, disco C4-C5 ou C5-C6.",
+  "correta": "**C4-C5 ou C5-C6.** São os discos que comprimem as raízes C5 e C6, as duas que formam a inervação do bíceps pelo musculocutâneo.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0027": {
-  "conceito": "### Artéria de Adamkiewicz (radicular magna)\n- **Principal** artéria radicular que reforça a **artéria espinhal anterior** na medula torácica baixa e lombar (a zona de irrigação mais **crítica**).\n- **Origem:** de uma artéria **intercostal ou lombar**, ramo da aorta.\n- **Localização mais frequente:** entre ==T9 e T11== e à ==esquerda==, em cerca de 3/4 dos casos. Pode estar entre T5 e L2.\n\n### Consequências práticas\n- **Acesso anterior** à coluna torácica: por isso a toracotomia costuma ser feita pela **direita**, quando a patologia permite. A **ligadura** dos vasos segmentares é feita no **meio do corpo** vertebral, longe do forame, onde fica a anastomose.\n- **Cirurgia da aorta**, embolizações e ligaduras podem lesá-la.\n- **Lesão:** isquemia da medula anterior, com **síndrome medular anterior**: paraplegia e perda de dor e temperatura, com **propriocepção preservada**.\n\n> **Na prova:** Adamkiewicz = ==T9 a T11, à esquerda==.",
-  "correta": "**T9 a T11, à esquerda.**",
   "incorretas": {
-   "A": "**T7 a T9, à direita.**\n- Nível e lado errados.",
-   "B": "**T9 a T11, à direita.**\n- O nível está certo, mas o lado é o **esquerdo**.",
-   "C": "**T7 a T9, à esquerda.**\n- O lado está certo, mas o nível mais frequente é **T9 a T11**."
+   "A": "**Nível e lado errados.** A faixa mais frequente é mais baixa, de T9 a T11, e o lado predominante é o esquerdo, acompanhando a aorta.",
+   "B": "**O nível está certo, o lado não.** A artéria nasce à direita numa minoria das pessoas; o predomínio é esquerdo.",
+   "C": "**O lado está certo, o nível não.** T7 a T9 está dentro da faixa possível, mas a posição mais frequente é entre T9 e T11."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Como a medula é irrigada.** A medula recebe sangue de três artérias longitudinais: uma **artéria espinhal anterior**, que corre pela frente e nutre os dois terços anteriores, e duas posteriores. Sozinhas, elas não dão conta de toda a extensão; recebem reforço de **artérias radiculares**, ramos que entram pelos forames junto com as raízes, vindos das artérias intercostais e lombares, que por sua vez saem da aorta.\n\n**A artéria de Adamkiewicz.** É a maior dessas artérias radiculares, também chamada artéria radicular magna. Ela reforça a espinhal anterior na medula torácica baixa e lombar, região de irrigação mais frágil, porque ali há poucos vasos de reforço. Na maioria das pessoas ela nasce **entre T9 e T11** (a faixa possível vai de T5 a L2) e do **lado esquerdo**, em cerca de três quartos dos casos, o que acompanha a posição da aorta, que desce à esquerda da coluna.\n\n**Por que isso importa.** Se a Adamkiewicz for lesada ou ligada, a parte anterior da medula fica sem sangue e surge a **síndrome medular anterior**: paraplegia e perda de dor e temperatura, com propriocepção preservada. Isso pode acontecer em cirurgias da aorta, embolizações e acessos anteriores à coluna toracolombar.\n\n**Consequências na cirurgia.** No acesso anterior à coluna torácica, muitos cirurgiões preferem entrar pela **direita** quando a doença permite, para ficar longe da artéria. Ao ligar os vasos segmentares que cruzam os corpos vertebrais, faz-se a ligadura no meio do corpo, longe do forame, onde fica a ligação com a circulação da medula.\n\n**Na prova:** Adamkiewicz fica mais frequentemente entre T9 e T11, à esquerda; sua lesão causa síndrome medular anterior.",
+  "correta": "**Entre T9 e T11, à esquerda.** É a posição mais frequente da artéria radicular magna, encontrada à esquerda em cerca de três quartos das pessoas.",
+  "referencias": [
+   "Standring S (ed). Gray's Anatomy: The Anatomical Basis of Clinical Practice. 41st ed. London: Elsevier; 2016. Capítulo da medula espinal e sua irrigação."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0028": {
-  "conceito": "### S1 e o tríceps sural\n- **Tríceps sural** (gastrocnêmio + sóleo): flexão plantar, pelo nervo **tibial**, raiz ==S1== (com S2).\n- A flexão plantar é **muito forte**: o teste manual contra resistência detecta mal a fraqueza. O teste sensível é a **elevação repetida do calcanhar em apoio unipodal** (10 a 20 repetições); quem tem S1 comprometida se cansa antes.\n- **Acompanham:**\n  - reflexo **aquileu** diminuído ou abolido;\n  - hipoestesia na **borda lateral do pé** e na **planta**;\n  - fraqueza do **glúteo máximo** (marcha e subida de escada) e dos **fibulares** (eversão).\n\n### Qual disco\n- Hérnia **posterolateral L5-S1:** comprime **S1**.\n- Hérnia **foraminal L5-S1:** comprime **L5**.\n\n### Mapa lombar baixo\n- **L4:** dorsiflexão, reflexo patelar.\n- **L5:** extensão do hálux, abdução do quadril.\n- ==S1==: flexão plantar, reflexo aquileu.\n\n> **Na prova:** tríceps sural fraco = ==S1==.",
-  "correta": "**S1.**",
   "incorretas": {
-   "A": "**L4.**\n- Dorsiflexão do tornozelo e reflexo patelar.",
-   "B": "**L5.**\n- Extensão do hálux e abdução do quadril.",
-   "D": "**S2.**\n- Participa da flexão dos dedos e das funções esfincterianas, não da flexão plantar principal."
+   "A": "**L4 controla outros músculos.** É a raiz do tibial anterior, que levanta o pé (dorsiflexão), e do reflexo patelar. Ela não comanda a panturrilha.",
+   "B": "**L5 é a raiz da extensão do hálux.** Ela comanda o extensor longo do hálux e os abdutores do quadril, e dá sensibilidade no dorso do pé. A flexão plantar não depende dela.",
+   "D": "**S2 tem papel secundário.** Contribui para a flexão dos dedos e para as funções da bexiga, do intestino e sexual, mas a raiz principal da flexão plantar é S1. Hérnia lombar raramente isola S2."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é o tríceps sural.** É o conjunto da panturrilha: os dois ventres do gastrocnêmio e o sóleo, que se unem no tendão calcâneo (de Aquiles). Ele faz a **flexão plantar**, o movimento de ficar na ponta dos pés e de empurrar o chão ao andar. É inervado pelo nervo tibial, com fibras principalmente da raiz **S1** (e de S2).\n\n**Como a raiz S1 se manifesta.** A compressão de S1 dá fraqueza da flexão plantar, reflexo **aquileu** diminuído ou abolido (o reflexo do tendão de Aquiles depende de S1) e alteração da sensibilidade na **borda lateral e na planta do pé**. Pode haver fraqueza do glúteo máximo e dos fibulares, que fazem a eversão do pé.\n\n**Como examinar.** A flexão plantar é um movimento muito forte, e o examinador raramente vence o paciente com a mão. O teste sensível é pedir que ele suba na ponta de um pé só, repetidamente, 10 a 20 vezes: quem tem S1 comprometida cansa antes do outro lado.\n\n**Qual hérnia comprime S1.** A hérnia **posterolateral L5-S1**, a mais comum nesse disco, comprime a raiz que desce para o forame de baixo, a **S1**. Uma hérnia foraminal L5-S1 comprimiria a L5, que sai naquele forame.\n\n**O mapa das raízes vizinhas.** **L4**: face medial da perna, dorsiflexão do tornozelo (tibial anterior) e reflexo patelar. **L5**: dorso do pé, extensão do hálux e abdução do quadril, sem reflexo confiável. **S1**: borda lateral do pé, flexão plantar e reflexo aquileu.\n\n**Na prova:** tríceps sural fraco com aquileu alterado é S1, geralmente por hérnia L5-S1.",
+  "correta": "**S1.** O tríceps sural é inervado principalmente por S1, a raiz responsável também pelo reflexo aquileu e pela sensibilidade da borda lateral do pé.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977.",
+   "Tarulli AW, Raynor EM. Lumbosacral radiculopathy. Neurol Clin. 2007;25(2):387-405."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0029": {
-  "conceito": "### Estenose central × lateral/foraminal\n| | Central | Recesso lateral / foraminal |\n|---|---|---|\n| O que comprime | **saco dural** (várias raízes) | **uma** raiz |\n| Lado | ==bilateral== | unilateral |\n| Padrão | ==sem dermátomo definido==: peso, cansaço, queimação nas pernas | **dermatomérico** (radicular) |\n| Relação com marcha | **claudicação neurogênica** | dor também em **repouso** |\n| Exame | muitas vezes normal em repouso | sinais radiculares (Lasègue, déficit) |\n\n### Por que \"não dermatomérico\"\nA compressão central é **difusa** e **variável** com a postura. Afeta várias raízes da cauda equina ao mesmo tempo e de forma parcial. O resultado são sintomas **mal delimitados**, que não seguem uma raiz única.\n\n### Na prática\nEstenose central com sintomas **esfincterianos** ou déficit progressivo indica **descompressão**, sem esperar.\n\n> **Na prova:** estenose central = ==bilateral, sem dermátomo==.",
-  "correta": "**Bilaterais, sem respeitar o dermátomo.**",
   "incorretas": {
-   "A": "**Bilaterais, dermatoméricos.**\n- O padrão dermatomérico é da compressão radicular isolada.",
-   "C": "**Unilaterais, dermatoméricos.**\n- Padrão da estenose **foraminal ou de recesso lateral**.",
-   "D": "**Unilaterais, não dermatoméricos.**\n- A compressão do saco dural é bilateral."
+   "A": "**Bilateral sim, dermatomérico não.** Seguir o dermátomo é sinal de uma raiz comprimida isoladamente. A compressão central atinge várias raízes de modo difuso.",
+   "C": "**É o padrão da estenose foraminal ou do recesso lateral.** Nessas, uma raiz é comprimida de um lado, e os sintomas seguem o seu dermátomo.",
+   "D": "**A compressão central não é unilateral.** O saco dural contém raízes dos dois lados, e os sintomas aparecem nas duas pernas."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Onde fica a compressão.** O canal vertebral lombar pode estreitar em três regiões. O **canal central**, no meio, contém o saco dural com todas as raízes da cauda equina. O **recesso lateral**, no canto do canal, é por onde uma raiz desce antes de sair. O **forame**, ao lado, é a porta de saída de cada raiz. A estenose central aperta o saco inteiro; a lateral e a foraminal apertam uma raiz.\n\n**O que é dermátomo.** Cada raiz recebe a sensibilidade de uma faixa de pele definida, o dermátomo: L4 na face medial da perna, L5 no dorso do pé, S1 na borda lateral do pé. Sintoma que respeita o dermátomo é sintoma de uma raiz só.\n\n**Por que a estenose central é bilateral.** O saco dural comprimido no meio do canal contém raízes dos dois lados, então os sintomas aparecem nas duas pernas, simultâneos ou alternando.\n\n**Por que não respeita dermátomo.** A compressão central é difusa e parcial: atinge várias raízes ao mesmo tempo, um pouco cada uma, e varia com a postura. O paciente descreve peso, cansaço, queimação ou dormência nas pernas, sem desenhar a faixa de uma raiz. Os sintomas aparecem ao andar e ficar em pé e aliviam ao sentar ou fletir o tronco: é a claudicação neurogênica. O exame em repouso muitas vezes é normal.\n\n**O contraste com a estenose lateral ou foraminal.** Comprimindo uma raiz, ela dá dor **unilateral** que segue o dermátomo, pode doer também em repouso e mostra sinais radiculares, como Lasègue positivo ou déficit de uma raiz.\n\n**Sinais de urgência.** Alteração da bexiga ou do intestino, anestesia em sela ou déficit motor progressivo indicam descompressão sem demora.\n\n**Na prova:** estenose central é bilateral e não dermatomérica; estenose foraminal ou de recesso é unilateral e dermatomérica.",
+  "correta": "**Bilaterais, não respeitando o dermátomo.** A compressão do saco dural afeta várias raízes dos dois lados de forma parcial, produzindo sintomas difusos nas duas pernas.",
+  "referencias": [
+   "Katz JN, Harris MB. Lumbar spinal stenosis. N Engl J Med. 2008;358(8):818-825."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0030": {
