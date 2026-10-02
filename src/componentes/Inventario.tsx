@@ -135,7 +135,7 @@ export function Inventario({ metricas, nome, vitrine, salvarVitrine, podeEscolhe
         })}
       </span>
       <Fogueira dias={metricas.sequencia} tamanho={22} comTexto />
-      {podeEscolher && <small className="inv-jogador__dica">Toque para escolher os {VITRINE_MAXIMO} emblemas que aparecem no ranking</small>}
+      <small className="inv-jogador__dica">{podeEscolher ? `Toque para escolher os ${VITRINE_MAXIMO} emblemas que aparecem no ranking` : 'Em breve você vai poder escolher 3 emblemas para aparecer ao lado do seu nome.'}</small>
     </button>
 
     {FAMILIAS.map((f) => {
