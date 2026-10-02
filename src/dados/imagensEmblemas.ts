@@ -5,5 +5,10 @@
  * incluir o id aqui.
  */
 export const EMBLEMAS_COM_IMAGEM: ReadonlySet<string> = new Set<string>([
+  'questoes-100',
+  'questoes-250',
   'questoes-500',
+  'questoes-1000',
+  'fogueira',
+  'sequencia-3',
 ])
