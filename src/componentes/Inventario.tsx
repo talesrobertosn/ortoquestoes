@@ -5,7 +5,7 @@ import { JanelaCentral } from './JanelaCentral'
 import { EMBLEMAS_COM_IMAGEM } from '../dados/imagensEmblemas'
 import { recurso } from '../config'
 import {
-  EMBLEMAS, FAMILIAS, VITRINE_MAXIMO, conquistaAtual, desbloqueado, emblemaPorId, podeIrParaVitrine,
+  EMBLEMAS, FAMILIAS, VITRINE_MAXIMO, conquistaAtual, desbloqueado, valorDe, emblemaPorId, podeIrParaVitrine,
   type Emblema, type Metricas,
 } from '../estado/conquistas'
 import { META_STREAK_DIARIA } from '../estado/streak'
@@ -71,7 +71,7 @@ function ItemInventario({ emblema, metricas, naVitrine }: { emblema: Emblema; me
     </span>
     <strong>{oculta ? 'Conquista secreta' : emblema.rotulo}</strong>
     <small className="inv-item__descricao">{oculta ? 'Continue estudando para descobrir.' : emblema.descricao}</small>
-    {tem ? <small className="inv-item__ok">Conquistado</small> : !oculta && <Progresso valor={metricas[emblema.metrica]} meta={emblema.minimo} />}
+    {tem ? <small className="inv-item__ok">Conquistado</small> : !oculta && <Progresso valor={valorDe(emblema, metricas)} meta={emblema.minimo} />}
   </li>
 }
 

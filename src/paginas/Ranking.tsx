@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, supabase } from '../conta/supabase'
 import { href } from '../util/rotas'
@@ -6,13 +6,23 @@ import { recurso } from '../config'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { EmblemasDoNome, Fogueira, Inventario } from '../componentes/Inventario'
+
+/** Abas entre o ranking e o inventário de conquistas. */
+function AbasRanking({ atual, conquistadas, total }: { atual: 'ranking' | 'conquistas'; conquistadas: number; total: number }) {
+  return <nav className="rk-secoes" aria-label="Ranking e conquistas">
+    <a className="rk-secoes__aba" href={href('/ranking')} aria-current={atual === 'ranking' ? 'page' : undefined}><Icone nome="trofeu" tamanho={18} /> Ranking</a>
+    <a className="rk-secoes__aba" href={href('/conquistas')} aria-current={atual === 'conquistas' ? 'page' : undefined}><Icone nome="medalha" tamanho={18} /> Conquistas <span className="rk-secoes__contador numerico">{conquistadas}/{total}</span></a>
+  </nav>
+}
 import { SeloAssinante } from '../componentes/Premium'
-import { calcularMetricas, conquistaAtual } from '../estado/conquistas'
-import { lerHistorico } from '../estado/sessao'
+import { conquistaAtual, emblemaPorId, VITRINE_MAXIMO } from '../estado/conquistas'
+import { usarConquistas } from '../estado/usarConquistas'
+import { Medalha } from '../componentes/Medalha'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
-import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
+import { META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking, usarPublicarSequencia } from '../conta/perfilRanking'
+import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Ranking.css'
 
 type Periodo = 'geral' | 'semana'
@@ -86,7 +96,10 @@ function iniciais(apelido: string): string {
 function Podio({ linhas, periodo }: { linhas: LinhaRanking[]; periodo: Periodo }) {
   const ordem = [linhas[1], linhas[0], linhas[2]].filter(Boolean)
   return (
-    <section className="rk-arena" aria-label="Três primeiros colocados">
+    <section className="rk-arena" aria-label="Três primeiros colocados" style={{ backgroundImage: `url(${recurso('ranking/arena.png')})` }}>
+      <img className="rk-arena__tocha rk-arena__tocha--esq" src={recurso('ranking/tocha.png')} alt="" width={24} height={48} draggable={false} />
+      <img className="rk-arena__tocha rk-arena__tocha--dir" src={recurso('ranking/tocha.png')} alt="" width={24} height={48} draggable={false} />
+      <p className="rk-arena__titulo">Salão dos campeões</p>
       <ol className="rk-podio">
         {ordem.map((linha) => (
           <li key={linha.posicao} className={`rk-podio__lugar rk-podio__lugar--${linha.posicao}${linha.eh_voce ? ' rk-podio__lugar--voce' : ''}`}>
@@ -123,9 +136,8 @@ export function Ranking() {
   const [comMovimento, definirComMovimento] = useState(false)
 
   const meuTotal = Object.keys(contexto.respondidas).length
-  const { perfil: perfilRanking, carregado: perfilCarregado, nomeExibido, salvarVitrine, comVitrine } = usarPerfilRanking(sessao)
-  const streak = useMemo(() => calcularStreak(contexto.respondidas), [contexto.respondidas])
-  const metricas = useMemo(() => calcularMetricas(contexto.respondidas, lerHistorico()), [contexto.respondidas])
+  const { perfil: perfilRanking, carregado: perfilCarregado, nomeExibido } = usarPerfilRanking(sessao)
+  const { streak, conquistadas, total: totalConquistas } = usarConquistas()
   usarPublicarSequencia(sessao, streak.atual, streak.ateDia)
 
   useEffect(() => {
@@ -206,6 +218,23 @@ export function Ranking() {
       )}
     </section>
 
+    <AbasRanking atual="ranking" conquistadas={conquistadas} total={totalConquistas} />
+
+    <a className="rk-bau" href={href('/conquistas')}>
+      <img className="rk-bau__arte" src={recurso('emblemas/podio-1.png')} alt="" width={56} height={56} />
+      <span className="rk-bau__texto">
+        <strong>Suas conquistas</strong>
+        <span><b className="numerico">{conquistadas}</b> de {totalConquistas} desbloqueadas{streak.atual >= 3 ? ` · sequência de ${streak.atual} dias` : ''}</span>
+      </span>
+      <span className="rk-bau__vitrine" aria-hidden="true">
+        {Array.from({ length: VITRINE_MAXIMO }, (_, i) => {
+          const e = perfilRanking.emblemas[i] ? emblemaPorId(perfilRanking.emblemas[i]) : undefined
+          return <span key={i} className={'inv-slot' + (e ? ' inv-slot--cheio' : '')}>{e ? <Medalha conquista={e} tamanho={36} /> : <span className="inv-slot__vazio">+</span>}</span>
+        })}
+      </span>
+      <span className="rk-bau__seta" aria-hidden="true"><Icone nome="direita" tamanho={20} /></span>
+    </a>
+
     {!sessao ? (
       <Estado titulo="Entre na sua conta para ver o ranking" acoes={<a className="botao botao--principal" href={href('/conta?modo=entrar')}>Entrar ou criar conta</a>}>
         <p>O ranking reúne quem mais respondeu questões entre todas as contas com pelo menos 5 questões respondidas.</p>
@@ -267,8 +296,6 @@ export function Ranking() {
       )}
     </>}
 
-    {sessao && <Inventario metricas={metricas} nome={nomeExibido} vitrine={perfilRanking.emblemas} salvarVitrine={salvarVitrine} podeEscolher={perfilCarregado && comVitrine} />}
-
     <section className="cartao cartao__corpo rk-regras">
       <h2>Como funciona</h2>
       <ul>
@@ -278,5 +305,29 @@ export function Ranking() {
         <li><span><Icone nome="medalha" tamanho={18} /></span><div><strong>Conquistas e vitrine.</strong> As conquistas ficam no seu inventário para sempre, e você escolhe até três para aparecer ao lado do nome. A fogueira mostra a sua sequência de dias seguidos com pelo menos {META_STREAK_DIARIA} questões: se a sequência acabar, ela some e recomeça do zero.</div></li>
       </ul>
     </section>
+  </div>
+}
+
+/** Página das conquistas: o inventário completo e a escolha da vitrine. */
+export function Conquistas() {
+  const { sessao } = usarConta()
+  const { perfil, carregado, nomeExibido, salvarVitrine, comVitrine } = usarPerfilRanking(sessao)
+  const { metricas, streak, conquistadas, total } = usarConquistas()
+  usarPublicarSequencia(sessao, streak.atual, streak.ateDia)
+  return <div className="empilha-2 rk">
+    <section className="rk-heroi rk-heroi--conquistas">
+      <div className="rk-heroi__texto">
+        <p className="rk-heroi__selo"><Icone nome="medalha" tamanho={16} /> Inventário</p>
+        <h1>Conquistas</h1>
+        <p>Cada questão, cada dia de estudo e cada acerto destravam emblemas. Escolha três para aparecer ao lado do seu nome no ranking.</p>
+      </div>
+      <div className="rk-heroi__cartao">
+        <img src={recurso('emblemas/podio-1.png')} alt="" width={64} height={64} className="medalha--arte" />
+        <strong className="rk-heroi__posicao">{conquistadas}<small>/{total}</small></strong>
+        <span className="rk-heroi__rotulo">conquistas desbloqueadas</span>
+      </div>
+    </section>
+    <AbasRanking atual="conquistas" conquistadas={conquistadas} total={total} />
+    <Inventario metricas={metricas} nome={sessao ? nomeExibido : 'Você'} vitrine={perfil.emblemas} salvarVitrine={salvarVitrine} podeEscolher={!!sessao && carregado && comVitrine} />
   </div>
 }

@@ -190,19 +190,29 @@
 
 /* ---------- Pódio em arena ---------- */
 .rk-arena {
-  position: relative; isolation: isolate;
-  margin-top: 0.5rem; padding: 1.25rem clamp(0.6rem, 2.5vw, 1.5rem) 0;
-  border-radius: 24px;
-  background:
-    radial-gradient(circle at 50% 0%, rgba(244, 207, 124, 0.35), transparent 55%),
-    radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px) 0 0 / 14px 14px,
-    linear-gradient(180deg, #071f1c, #0b3a35 60%, #0e4a43);
-  box-shadow: var(--sombra-media);
+  position: relative; isolation: isolate; overflow: hidden;
+  margin-top: 0.5rem; padding: 0.9rem clamp(2rem, 6vw, 4rem) 0;
+  background-color: #0b1630; background-position: center bottom; background-size: cover; background-repeat: no-repeat;
+  image-rendering: pixelated;
+  border: 4px solid #c99a3b; border-radius: 0;
+  box-shadow: 0 0 0 4px #1b1208, inset 0 0 0 4px #1b1208, var(--sombra-media);
+  margin-inline: 4px;
 }
+.rk-arena::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(5, 10, 25, 0.05), rgba(5, 10, 25, 0.25) 70%, rgba(5, 10, 25, 0.55)); }
+.rk-arena__titulo {
+  margin: 0 0 0.4rem; text-align: center; font-family: var(--fonte-pixel); font-weight: 700;
+  font-size: clamp(0.85rem, 2.6vw, 1.15rem); letter-spacing: 0.08em; text-transform: uppercase;
+  color: #ffe08a; text-shadow: 2px 2px 0 #1b1208, -1px -1px 0 #1b1208;
+}
+.rk-arena__tocha { position: absolute; top: 38%; image-rendering: pixelated; z-index: 0; width: 24px; height: 48px; animation: rk-tocha 0.9s steps(2) infinite; filter: drop-shadow(0 0 10px rgba(255, 170, 60, 0.85)); }
+.rk-arena__tocha--esq { left: clamp(0.3rem, 1.5vw, 1rem); }
+.rk-arena__tocha--dir { right: clamp(0.3rem, 1.5vw, 1rem); transform: scaleX(-1); animation-delay: 0.45s; }
+@keyframes rk-tocha { 50% { filter: drop-shadow(0 0 16px rgba(255, 190, 80, 1)) brightness(1.15); } }
+@media (prefers-reduced-motion: reduce) { .rk-arena__tocha { animation: none; } }
 .rk-podio { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(0.4rem, 2vw, 1rem); align-items: end; }
 .rk-podio__lugar {
   --metal: #b9c4c8; --metal-escuro: #6f7d82; --metal-claro: #f4f7f8;
-  position: relative; display: flex; flex-direction: column; align-items: center; gap: 0.4rem; text-align: center;
+  position: relative; display: flex; flex-direction: column; align-items: center; gap: 0.3rem; text-align: center;
   padding: 0.5rem 0.5rem 0; color: #fff; min-width: 0;
 }
 .rk-podio__lugar--1 { --metal: #e8b34f; --metal-escuro: #a8761a; --metal-claro: #fff1c2; }
@@ -218,20 +228,24 @@
   box-shadow: 0 0 0 3px #071f1c, 0 0 0 5px var(--metal), 0 0 22px color-mix(in srgb, var(--metal) 55%, transparent);
 }
 .rk-podio__lugar--1 .rk-podio__avatar { width: 5.2rem; height: 5.2rem; font-size: 1.6rem; }
-.rk-podio__nome { margin-top: 0.25rem; font-size: 1rem; line-height: 1.2; overflow-wrap: anywhere; color: #fff; }
+.rk-podio__nome { margin-top: 0.25rem; font-family: var(--fonte-pixel); font-weight: 700; font-size: 1.05rem; line-height: 1.15; overflow-wrap: anywhere; color: #fff; text-shadow: 2px 2px 0 #1b1208; }
 .rk-podio__nome .rk-voce { margin-left: 0.3rem; }
 .rk-podio__emblemas { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.2rem; max-width: 100%; min-height: 2.4rem; }
 .rk-podio__emblemas .emblemas-nome, .rk-podio__emblemas .dica { margin: 0; }
 .rk-podio__emblemas .fogueira { margin: 0; }
-.rk-podio__total { color: rgba(255, 255, 255, 0.75); font-size: var(--meta); }
-.rk-podio__total b { color: var(--metal-claro); font-size: 1.15rem; }
+.rk-podio__total { display: flex; flex-direction: column; line-height: 1.1; color: rgba(255, 255, 255, 0.85); font-size: var(--meta); text-shadow: 1px 1px 0 #1b1208; }
+.rk-podio__total b { font-family: var(--fonte-pixel); color: var(--metal-claro); font-size: 1.25rem; }
 .rk-podio__lugar .rk-movimento { margin-top: 0.1rem; }
 .rk-podio__base {
   align-self: stretch; display: grid; place-items: center; margin-top: 0.5rem; height: 3rem;
-  border-radius: 12px 12px 0 0;
-  font-family: var(--fonte-marca); font-weight: 800; font-size: 1.35rem; color: #071f1c;
-  background: linear-gradient(180deg, var(--metal-claro), var(--metal) 45%, var(--metal-escuro));
-  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.6), inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+  font-family: var(--fonte-pixel); font-weight: 700; font-size: 1.5rem; color: #1b1208;
+  text-shadow: 1px 1px 0 var(--metal-claro);
+  background:
+    repeating-linear-gradient(90deg, transparent 0 22px, rgba(0, 0, 0, 0.18) 22px 24px),
+    repeating-linear-gradient(180deg, transparent 0 14px, rgba(0, 0, 0, 0.18) 14px 16px),
+    linear-gradient(180deg, var(--metal-claro) 0 6px, var(--metal) 6px 60%, var(--metal-escuro));
+  box-shadow: inset 4px 0 0 rgba(255, 255, 255, 0.35), inset -4px 0 0 rgba(0, 0, 0, 0.25);
+  clip-path: polygon(0 6px, 6px 6px, 6px 0, calc(100% - 6px) 0, calc(100% - 6px) 6px, 100% 6px, 100% 100%, 0 100%);
 }
 .rk-podio__lugar--1 .rk-podio__base { height: 4.5rem; font-size: 1.7rem; }
 .rk-podio__lugar--2 .rk-podio__base { height: 3.6rem; }
@@ -276,3 +290,34 @@
   .dica__balao { position: fixed; bottom: calc(1rem + env(safe-area-inset-bottom)); left: 50%; max-width: calc(100vw - 2rem); width: 18rem; }
   .dica__balao::after { display: none; }
 }
+
+/* ---------- Abas Ranking / Conquistas ---------- */
+.rk-secoes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; padding: 0.35rem; border-radius: 16px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); }
+.rk-secoes__aba {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; min-height: var(--toque);
+  border-radius: 12px; color: var(--texto-2); font-weight: 750; text-decoration: none;
+}
+.rk-secoes__aba:hover { color: var(--texto); background: var(--superficie); }
+.rk-secoes__aba[aria-current="page"] { color: #fff; background: linear-gradient(135deg, #0b3a35, #14655e); box-shadow: inset 0 0 0 2px rgba(244, 207, 124, 0.55); }
+.rk-secoes__contador { padding: 0.05rem 0.45rem; border-radius: 999px; background: rgba(244, 207, 124, 0.25); color: inherit; font-size: 0.75rem; }
+
+/* ---------- Atalho para as conquistas ---------- */
+.rk-bau {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; align-items: center; gap: 0.75rem 1rem;
+  padding: 0.85rem 1rem; border-radius: 18px; color: #fff; text-decoration: none;
+  background: radial-gradient(circle at 10% 50%, rgba(244, 207, 124, 0.28), transparent 45%), linear-gradient(135deg, #071f1c, #0b3a35 60%, #14655e);
+  box-shadow: inset 0 0 0 2px rgba(244, 207, 124, 0.5), var(--sombra-media);
+}
+.rk-bau:hover { box-shadow: inset 0 0 0 2px #f4cf7c, var(--sombra-media); }
+.rk-bau__arte { image-rendering: pixelated; }
+.rk-bau__texto { display: grid; gap: 0.1rem; min-width: 0; }
+.rk-bau__texto strong { font-family: var(--fonte-pixel, var(--fonte-marca)); font-size: 1.05rem; color: #f4cf7c; }
+.rk-bau__texto span { color: rgba(255, 255, 255, 0.82); font-size: var(--corpo-menor); }
+.rk-bau__vitrine { display: inline-flex; gap: 0.3rem; }
+.rk-bau__seta { color: #f4cf7c; }
+@media (max-width: 34rem) {
+  .rk-bau { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .rk-bau__vitrine { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; }
+}
+.rk-heroi--conquistas .rk-heroi__cartao img { image-rendering: pixelated; }
+.rk-heroi__posicao small { font-size: 1.3rem; opacity: 0.7; }

@@ -25,6 +25,7 @@ const CadernoErros = lazy(() => import('./paginas/CadernoErros').then(({ Caderno
 const Progresso = lazy(() => import('./paginas/Progresso').then(({ Progresso }) => ({ default: Progresso })))
 const Revisao = lazy(() => import('./paginas/Revisao').then(({ Revisao }) => ({ default: Revisao })))
 const Ranking = lazy(() => import('./paginas/Ranking').then(({ Ranking }) => ({ default: Ranking })))
+const Conquistas = lazy(() => import('./paginas/Ranking').then(({ Conquistas }) => ({ default: Conquistas })))
 const Termos = lazy(() => import('./paginas/Termos').then(({ Termos }) => ({ default: Termos })))
 const CondicoesAssinatura = lazy(() => import('./paginas/CondicoesAssinatura').then(({ CondicoesAssinatura }) => ({ default: CondicoesAssinatura })))
 const Assinatura = lazy(() => import('./paginas/Assinatura').then(({ Assinatura }) => ({ default: Assinatura })))
@@ -53,6 +54,7 @@ const TITULOS: Record<string, string> = {
   '/progresso': 'Progresso dos comentários — OrtoQuestões',
   '/revisao': 'Sua revisão — OrtoQuestões',
   '/ranking': 'Ranking — OrtoQuestões',
+  '/conquistas': 'Conquistas — OrtoQuestões',
   '/termos': 'Termos de Uso e Privacidade — OrtoQuestões',
   '/condicoes-assinatura': 'Condições da assinatura — OrtoQuestões',
   '/assinatura': 'Planos — OrtoQuestões',
@@ -130,6 +132,9 @@ export function App() {
       break
     case 'ranking':
       pagina = <Ranking />
+      break
+    case 'conquistas':
+      pagina = <Conquistas />
       break
     case 'termos':
       pagina = <Termos />

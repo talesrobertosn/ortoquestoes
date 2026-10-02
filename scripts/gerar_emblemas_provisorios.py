@@ -293,6 +293,74 @@ def medalha(t: Tela, nivel: str, degrau: int) -> None:
         t.pintar(circulo(x + 0.5, y + 0.5, 1.4), "#fff8e6")
 
 
+CORES_TEMA = ["#b3423a", "#2b5fa8", "#1f7a4d", "#c9952f", "#7b3fa0", "#d06a1f", "#14655e", "#c2417a", "#3a6ea5", "#8a5226", "#4b5563"]
+
+
+def estandarte(t: Tela, nivel: str, degrau: int) -> None:
+    cor = CORES_TEMA[degrau % len(CORES_TEMA)]
+    escura = _hex(misturar(hexa(cor), hexa("#000000"), 0.45))
+    clara = _hex(misturar(hexa(cor), hexa("#ffffff"), 0.35))
+    t.camada(retangulo(6, 3, 7, 30), MADEIRA)
+    t.camada(circulo(6.5, 3, 2), METAIS["ouro"])
+    t.camada(poligono([(8, 5), (27, 5), (27, 24), (17.5, 19), (8, 24)]), [escura, escura, cor, clara, clara])
+    osso = linha(13, 9, 22, 16, 1.6) | linha(22, 9, 13, 16, 1.6)
+    t.pintar(osso, "#fff8e6")
+    for (x, y) in ((13, 9), (22, 9), (13, 16), (22, 16)):
+        t.pintar(circulo(x + 0.5, y + 0.5, 1.3), "#fff8e6")
+    t.camada(retangulo(8, 4, 27, 5), METAIS[nivel])
+
+
+def ampulheta(t: Tela, nivel: str, degrau: int) -> None:
+    t.camada(retangulo(7, 3, 24, 5) | retangulo(7, 26, 24, 28), MADEIRA)
+    t.camada(poligono([(9, 6), (22, 6), (17, 15.5), (22, 25), (9, 25), (14, 15.5)]), ["#2f3a3e", "#9fc3d6", "#cfe6f2", "#eef8fd", "#ffffff"])
+    areia = ["#7a4a12", "#c98a2e", "#e8b34f", "#f5d58a", "#fff1c2"]
+    t.camada(poligono([(11, 8), (20, 8), (16.5, 13), (14.5, 13)]), areia, contorno=False)
+    altura = 3 + degrau * 2
+    t.camada(poligono([(15.5, 24.5 - altura), (21, 24.5), (10, 24.5)]), areia, contorno=False)
+    t.pintar(retangulo(15, 15, 16, 22), "#e8b34f")
+    t.camada(retangulo(7, 6, 8, 25) | retangulo(23, 6, 24, 25), METAIS[nivel])
+
+
+def estrela(t: Tela, nivel: str, degrau: int) -> None:
+    pts = []
+    for i in range(10):
+        a = -math.pi / 2 + i * math.pi / 5
+        r = 14 if i % 2 == 0 else 6
+        pts.append((16 + math.cos(a) * r, 17 + math.sin(a) * r))
+    t.camada(poligono(pts), METAIS[nivel] if nivel != "bronze" else ["#3b1d0c", "#a3502a", "#e07a3f", "#f5a56b", "#ffe1c4"])
+    t.brilho(12, 12)
+
+
+def pena(t: Tela, nivel: str, degrau: int) -> None:
+    t.camada(retangulo(4, 14, 22, 28), PERGAMINHO)
+    for y in (17, 20, 23):
+        t.pintar(linha(7, y, 19, y, 0.6), "#9c7a45")
+    t.camada(poligono([(27, 2), (30, 5), (17, 20), (14, 21), (15, 18)]), ["#3a3a3a", "#d4dde0", "#f4f7f8", "#ffffff", "#ffffff"])
+    t.pintar(linha(28, 3.5, 15.5, 19.5, 0.6), "#9eacb1")
+    t.camada(retangulo(4, 12, 22, 13) | retangulo(4, 28, 22, 29), METAIS[nivel])
+
+
+def alvorada(t: Tela, nivel: str, degrau: int) -> None:
+    t.camada(circulo(16, 16, 14), ["#3b1d0c", "#d06a1f", "#f59e0b", "#fbbf24", "#fef3c7"])
+    t.camada(circulo(16, 21, 7) & retangulo(0, 0, 31, 21), METAIS["ouro"], contorno=False)
+    t.pintar(retangulo(3, 21, 28, 22), "#7a4220")
+    t.camada(retangulo(3, 23, 28, 27) & circulo(16, 16, 13.4), ["#0d5247", "#0d5247", "#23907a", "#5cc9ad", "#d2fbef"], contorno=False)
+    for i in range(5):
+        a = math.pi + i * math.pi / 4
+        t.pintar(linha(16 + math.cos(a) * 9, 21 + math.sin(a) * 9, 16 + math.cos(a) * 12, 21 + math.sin(a) * 12, 1), "#fff4cf")
+
+
+def lanterna(t: Tela, nivel: str, degrau: int) -> None:
+    t.camada(circulo(16, 17, 14), NOITE)
+    t.camada(linha(16, 3, 16, 7, 1.2), METAIS["prata"])
+    t.camada(retangulo(11, 7, 20, 9) | retangulo(11, 24, 20, 26), METAIS[nivel])
+    t.camada(retangulo(12, 10, 19, 23), ["#7c2d12", "#f59e0b", "#fbbf24", "#fde68a", "#fffbeb"])
+    t.pintar(retangulo(15, 13, 16, 20), "#fffbeb")
+    t.camada(retangulo(11, 10, 11, 23) | retangulo(20, 10, 20, 23), METAIS[nivel], contorno=False)
+    for (x, y) in ((6, 9), (25, 12), (8, 24)):
+        t.brilho(x, y, "#fff4cf")
+
+
 def coroa(t: Tela, nivel: str, lugar: int) -> None:
     """Coroa do pódio: ouro para o 1º, prata para o 2º, bronze para o 3º."""
     corpo = poligono([(4, 12), (10, 19), (16, 8), (22, 19), (28, 12), (26, 26), (6, 26)])
@@ -313,6 +381,8 @@ FORMAS = {
     "questoes": medalha, "sequencia": chama, "dias": calendario, "acertos": escudo, "dominadas": cristal,
     "temas": mapa, "sessoes": espadas, "maratona": raio, "precisao": alvo, "redencao": coracao,
     "gabarito": trofeu, "secreta-madrugada": lua, "secreta-fim-de-semana": sol,
+    "mestre": estandarte, "resistencia": ampulheta, "colecao": estrela, "anotacoes": pena,
+    "secreta-madrugador": alvorada, "secreta-sextou": lanterna,
 }
 
 
