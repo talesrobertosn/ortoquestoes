@@ -9,7 +9,8 @@ import { IconeWhatsapp } from './ConviteCompartilhar'
 /**
  * Convite para compartilhar o site, no máximo uma vez por dia: aparece depois
  * de 5 minutos de uso de verdade no dia (aba visível e alguém mexendo) e não
- * volta mais até o dia seguinte. Nunca interrompe uma sessão de questões nem
+ * volta mais até o dia seguinte. Além disso, reaparece a cada hora de uso
+ * contínuo (uma pausa de mais de 10 minutos zera essa conta). Nunca interrompe uma sessão de questões nem
  * telas de login e pagamento: espera a pessoa sair delas. Quem compartilha
  * fica um mês sem ver.
  */
@@ -21,6 +22,9 @@ const PASSO = 10
 /** Sem toque, clique, tecla ou rolagem há mais que isto, o tempo não conta. */
 const OCIOSO = 90_000
 const PAUSA_COMPARTILHOU = 30 * 86_400_000
+/** Uso contínuo que traz o mensageiro de novo, e a pausa que zera essa conta. */
+const USO_CONTINUO = 60 * 60
+const PAUSA_ZERA = 10 * 60_000
 const ROTAS_PROTEGIDAS = ['sessao', 'entrar', 'assinatura', 'condicoes-assinatura', 'admin', 'emails']
 
 const LINK = SITE.url.replace(/\/$/, '')
@@ -59,6 +63,7 @@ export function ConviteDiario({ caminho }: { caminho: string }) {
   const [copiado, definirCopiado] = useState<'' | 'link' | 'texto'>('')
   const [letras, definirLetras] = useState(0)
   const atividade = useRef(Date.now())
+  const continuo = useRef(0)
   const rota = useRef(caminho)
   rota.current = caminho
 
@@ -67,16 +72,21 @@ export function ConviteDiario({ caminho }: { caminho: string }) {
     const eventos = ['pointerdown', 'keydown', 'scroll', 'touchstart'] as const
     eventos.forEach((e) => window.addEventListener(e, mexeu, { passive: true }))
     const relogio = window.setInterval(() => {
-      if (document.visibilityState !== 'visible' || Date.now() - atividade.current > OCIOSO) return
+      const parado = Date.now() - atividade.current
+      if (parado > PAUSA_ZERA) continuo.current = 0
+      if (document.visibilityState !== 'visible' || parado > OCIOSO) return
       const estado = ler()
-      if (estado.mostrado || (estado.pausaAte ?? 0) > Date.now()) return
-      estado.segundos += PASSO
-      gravar(estado)
-      if (estado.segundos < USO_NECESSARIO) return
+      if ((estado.pausaAte ?? 0) > Date.now()) return
+      continuo.current += PASSO
+      if (!estado.mostrado) { estado.segundos += PASSO; gravar(estado) }
+      const diario = !estado.mostrado && estado.segundos >= USO_NECESSARIO
+      const deHora = continuo.current >= USO_CONTINUO
+      if (!diario && !deHora) return
       const primeiro = rota.current.replace(/^\//, '').split('/')[0]
       // Espera a pessoa sair da sessão (ou do login/pagamento) e de qualquer outra janela aberta.
-      if (ROTAS_PROTEGIDAS.includes(primeiro) || document.querySelector('.jc')) return
+      if (ROTAS_PROTEGIDAS.includes(primeiro) || document.querySelector('.jc, .cd')) return
       gravar({ ...estado, mostrado: true })
+      continuo.current = 0
       definirAberto(true)
     }, PASSO * 1000)
     return () => {
