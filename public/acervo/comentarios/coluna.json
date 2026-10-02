@@ -505,69 +505,91 @@
   "conferido": false
  },
  "coluna-0036": {
-  "conceito": "### Imagem na lombalgia aguda\n**Regra:** sem sinais de alarme, a radiografia inicial **não muda a conduta**. Ela expõe à radiação e revela **achados incidentais** (discopatia, artrose) que geram ansiedade e mais exames.\n\n### Quando pedir imagem\n**Bandeiras vermelhas:**\n- trauma significativo (ou trauma leve no idoso ou osteoporótico);\n- idade **acima de 50** ou **abaixo de 20** anos;\n- **febre**, perda de peso, história de **câncer**;\n- imunossupressão, uso de **corticoide**, uso de drogas injetáveis;\n- dor **noturna** ou em repouso;\n- **déficit neurológico** progressivo;\n- **cauda equina**: anestesia em sela, retenção urinária. Nesse caso, **RM de urgência**.\n\n**Evolução fora do esperado:** dor que **não melhora** em ~4 a 6 semanas, ou ==retorno pelo mesmo motivo== em pouco tempo. É o critério da questão.\n\n### Na prática\n- **Radiografia:** triagem de fratura, deformidade, lise.\n- **RM:** exame de escolha para suspeita de infecção, tumor, compressão neurológica, ou para planejamento cirúrgico.\n\n> **Na prova:** radiografia na lombalgia aguda = bandeira vermelha ou ==retorno precoce pela mesma dor==.",
-  "correta": "**Segunda consulta em menos de 30 dias pelo mesmo motivo.**\n- Dor fora do curso benigno esperado.",
   "incorretas": {
-   "A": "**Dor acima de 5 na EVA.**\n- A intensidade da dor não prediz doença estrutural.",
-   "B": "**Parestesia nos membros superiores.**\n- Não vem da coluna lombar; se for o caso, investigar a **cervical**.",
-   "C": "**Artrite reumatoide na família.**\n- Não é bandeira vermelha."
+   "A": "**Intensidade da dor não indica gravidade.** Uma lombalgia mecânica comum pode doer muito, e uma metástase pode doer pouco no início. A nota na escala de dor não está entre as bandeiras vermelhas.",
+   "B": "**Parestesia nos braços não vem da coluna lombar.** As raízes lombares inervam as pernas. Formigamento nos membros superiores sugere problema cervical ou neurológico central, que se investiga por outro caminho.",
+   "C": "**História familiar de artrite reumatoide não é bandeira vermelha.** A artrite reumatoide raramente acomete a coluna lombar, e o antecedente na família não muda a probabilidade de uma causa grave para a dor aguda."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**A lombalgia aguda é quase sempre benigna.** Dor lombar aguda é a dor nas costas, na região lombar, com menos de seis semanas. Em cerca de nove em cada dez pacientes ela é inespecífica, ou seja, não há uma lesão estrutural identificável que mude o tratamento, e melhora em poucas semanas.\n\n**Por que não pedir radiografia para todos.** Sem sinais de alarme, a radiografia não muda a conduta. Ela expõe à radiação e mostra achados que existem em muitas pessoas sem dor, como desgaste de disco e artrose, que assustam o paciente e levam a mais exames e tratamentos desnecessários. As diretrizes recomendam não fazer imagem de rotina na lombalgia aguda inespecífica.\n\n**As bandeiras vermelhas.** São sinais de que a dor pode ter causa grave e indicam investigação: trauma importante (ou trauma leve em idoso ou osteoporótico, pelo risco de fratura), idade acima de 50 anos, história de câncer, febre ou perda de peso sem explicação (infecção ou tumor), imunossupressão, uso de corticoide ou de drogas injetáveis, dor noturna ou em repouso e déficit neurológico progressivo. A síndrome da cauda equina, com anestesia em sela e retenção urinária, exige ressonância de urgência.\n\n**A evolução fora do esperado.** Mesmo sem bandeira vermelha, a dor que não segue o curso benigno merece reavaliação: a que não melhora em quatro a seis semanas ou a que faz o paciente **voltar ao médico em pouco tempo pelo mesmo motivo**. A banca adota esse critério: segunda consulta em menos de 30 dias pela mesma dor indica radiografia. A radiografia serve para triagem de fratura, deformidade e lesão óssea; a ressonância é o exame para suspeita de infecção, tumor ou compressão neurológica.\n\n**Na prova:** imagem na lombalgia aguda só com bandeira vermelha ou evolução fora do esperado, como o retorno precoce pela mesma dor.",
+  "correta": "**Segunda visita ao médico em menos de 30 dias pelo mesmo motivo.** O retorno precoce mostra que a dor não está seguindo o curso benigno esperado e justifica a radiografia.",
+  "referencias": [
+   "Chou R, Qaseem A, Owens DK, Shekelle P. Diagnostic imaging for low back pain: advice for high-value health care from the American College of Physicians. Ann Intern Med. 2011;154(3):181-189.",
+   "Chou R, Qaseem A, Snow V et al. Diagnosis and treatment of low back pain: a joint clinical practice guideline from the American College of Physicians and the American Pain Society. Ann Intern Med. 2007;147(7):478-491."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0037": {
-  "conceito": "### Síndrome centromedular\n- **A lesão medular incompleta mais comum.**\n- **Cenário típico:** ==idoso com espondilose== e canal estreito, **queda da própria altura** com trauma no queixo ou na face, causando ==hiperextensão==. Muitas vezes **sem fratura**.\n- **Mecanismo:** a medula é pinçada entre os **osteófitos** anteriores e o **ligamento amarelo** pregueado posteriormente. O dano é **central** (edema, hemorragia).\n- **Clínica:** déficit ==maior nos membros superiores== (sobretudo nas mãos) do que nos inferiores. Às vezes há disfunção vesical e hipoestesia variável. A explicação clássica é a laminação do corticoespinhal (fibras dos braços mais mediais); a explicação atual valoriza a importância do trato para a **mão**.\n- **Prognóstico:** a maioria recupera a **marcha**; as **mãos** recuperam por último e menos. Pior em idosos.\n\n### Tratamento\n- Clínico inicial: PAM, colar cervical.\n- **Descompressão** para compressão persistente ou déficit que não melhora, com tendência a operar mais cedo nas séries recentes.\n\n> **Na prova:** idoso + hiperextensão = centromedular, com ==membros superiores mais afetados==.",
-  "correta": "**Hiperextensão, com predomínio nos membros superiores.**",
   "incorretas": {
-   "A": "**Hiperflexão.**\n- O mecanismo é de **hiperextensão**.",
-   "C": "**Hiperflexão e membros inferiores.**\n- Mecanismo e distribuição errados.",
-   "D": "**Hiperextensão e membros inferiores.**\n- O mecanismo está certo, mas o déficit predomina nos **membros superiores**."
+   "A": "**O mecanismo está errado.** A distribuição nos membros superiores está certa, mas a centromedular nasce da hiperextensão do idoso, que fecha o canal por trás. Hiperflexão lembra a síndrome medular anterior.",
+   "C": "**Mecanismo e distribuição errados.** A centromedular é por hiperextensão e poupa relativamente as pernas. Fraqueza predominante nos membros inferiores não é o seu padrão.",
+   "D": "**O mecanismo está certo, a distribuição não.** A hiperextensão é a causa, mas o déficit predomina nos braços. Pernas mais fracas que braços não combinam com lesão central."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é a síndrome centromedular.** É a lesão da parte central da medula cervical, a mais comum das lesões medulares incompletas (aquelas em que alguma função abaixo da lesão é preservada).\n\n**O paciente típico.** Idoso com **espondilose cervical**: discos desgastados, bicos de osso (osteófitos) na frente do canal e ligamento amarelo espessado atrás. O canal já é estreito. Ele cai da própria altura e bate o queixo ou a testa, jogando o pescoço para trás em **hiperextensão**. Muitas vezes não há fratura nenhuma na radiografia.\n\n**O mecanismo.** Na hiperextensão o ligamento amarelo se dobra para dentro do canal por trás, enquanto os osteófitos empurram pela frente. A medula é pinçada entre os dois. O dano se concentra no centro da medula, com edema e sangramento, e poupa a periferia.\n\n**Por que os braços sofrem mais.** O trato corticoespinhal leva o comando motor e, segundo a explicação clássica, tem as fibras dos braços mais perto do centro e as das pernas mais na periferia; a lesão central pega primeiro as dos braços. Estudos mais recentes acrescentam que esse trato é especialmente importante para os movimentos finos da mão. De todo modo, o resultado é uma **tetraparesia** (fraqueza nos quatro membros) **maior nos membros superiores**, sobretudo nas mãos, do que nos inferiores. Pode haver alteração da bexiga e da sensibilidade.\n\n**Prognóstico e tratamento.** A maioria volta a andar; as mãos recuperam por último e de forma incompleta, e a idade avançada piora o resultado. O tratamento inicial é imobilização e manutenção da pressão arterial; a descompressão cirúrgica é indicada quando há compressão persistente ou o déficit não melhora.\n\n**Na prova:** idoso com espondilose e hiperextensão faz centromedular, com fraqueza maior nos braços que nas pernas.",
+  "correta": "**Hiperextensão, com tetraparesia que afeta mais os membros superiores.** A medula é pinçada entre osteófitos e ligamento amarelo, e a lesão central atinge mais as fibras que controlam braços e mãos.",
+  "referencias": [
+   "Schneider RC, Cherry G, Pantek H. The syndrome of acute central cervical spinal cord injury; with special reference to the mechanisms involved in hyperextension injuries of cervical spine. J Neurosurg. 1954;11(6):546-577."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0038": {
-  "conceito": "### Lombalgia aguda inespecífica\nA **maioria melhora** em poucas semanas, qualquer que seja o tratamento. O objetivo é aliviar a dor e **manter a pessoa ativa**.\n\n### Pilares\n- **Orientação:** explicar a boa evolução, evitar medo do movimento (cinesiofobia) e **manter-se ativo** dentro do tolerável.\n- **Analgesia:** anti-inflamatório por curto prazo. Relaxante muscular por poucos dias em casos selecionados. O paracetamol isolado tem efeito pequeno.\n- **Repouso no leito:** as diretrizes atuais **desaconselham** o repouso como tratamento, porque atrasa a recuperação. Se usado, que seja ==muito curto (1 a 3 dias)==, com **progressão para atividade e exercícios**. É a alternativa que a questão considera correta.\n- **Calor superficial:** pequeno benefício.\n\n### O que não fazer\n- **Corticoide sistêmico:** sem benefício na lombalgia inespecífica.\n- **Opioides:** evitar como primeira linha.\n- **Afastamento prolongado** e fisioterapia passiva isolada: pioram o prognóstico.\n\n> **Na prova:** lombalgia aguda = analgesia + ==pouco (ou nenhum) repouso + retorno às atividades e exercícios==.",
-  "correta": "**Repouso de 1 a 3 dias e progressão para exercícios.**\n- Das opções, a única alinhada ao princípio de retorno precoce à atividade.",
   "incorretas": {
-   "A": "**Corticoides.**\n- Sem benefício demonstrado na lombalgia inespecífica.",
-   "B": "**Tricíclicos e opioides.**\n- Manejo da dor **crônica** ou refratária, não da aguda.",
-   "C": "**Calor profundo e 2 semanas de afastamento.**\n- O afastamento prolongado **atrasa** a recuperação."
+   "A": "**Corticoide não traz benefício.** Na lombalgia inespecífica, o corticoide sistêmico não melhora a dor nem a função, e expõe a efeitos adversos. Analgésicos isolados podem ser usados, mas a combinação proposta não é a conduta.",
+   "B": "**São opções da dor crônica ou refratária.** Tricíclicos são usados em dor crônica e opioides não são primeira linha pelo risco de dependência. Não são o tratamento inicial da dor aguda.",
+   "C": "**Afastamento de duas semanas atrasa a recuperação.** Ficar longe das atividades aumenta o risco de cronificação. Calor profundo e fisioterapia passiva isolada não mudam o curso natural."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é lombalgia aguda inespecífica.** É a dor na região lombar com menos de seis semanas, sem causa grave identificada e sem sinais de alarme (fratura, infecção, tumor, cauda equina, déficit neurológico progressivo). Ela é extremamente comum e tem evolução favorável: a maioria dos pacientes melhora em poucas semanas, com ou sem tratamento.\n\n**O princípio do tratamento: manter-se ativo.** Por muito tempo se recomendou repouso prolongado na cama. Os estudos mostraram o contrário: quem é orientado a se manter ativo dentro do que a dor permite melhora igual ou mais rápido, e o repouso prolongado atrasa a recuperação, enfraquece a musculatura e favorece a cronificação. Se houver repouso, ele deve ser **muito curto, de 1 a 3 dias**, seguido de **retorno progressivo às atividades e aos exercícios**. Das opções da questão, é a única que respeita esse princípio.\n\n**O que ajuda.** Explicar ao paciente que a dor é benigna e vai passar, para evitar o medo de se mexer. Calor superficial. Anti-inflamatório por pouco tempo, quando não há contraindicação, e relaxante muscular por poucos dias em casos selecionados.\n\n**O que não ajuda.** **Corticoide sistêmico** não mostrou benefício na lombalgia inespecífica. **Opioides** não são primeira linha, pelo risco de dependência e efeitos adversos. **Antidepressivos tricíclicos** têm lugar na dor crônica, não na aguda. **Afastamento prolongado** do trabalho e tratamentos passivos isolados pioram o prognóstico.\n\n**Na prova:** lombalgia aguda sem sinais de alarme se trata com analgesia, repouso mínimo ou nenhum e retorno precoce às atividades e exercícios.",
+  "correta": "**Repouso no leito por 1 a 3 dias e progressão para exercícios.** Repouso curto, se necessário, seguido de retorno à atividade é a única opção alinhada ao princípio de manter o paciente ativo.",
+  "referencias": [
+   "Qaseem A, Wilt TJ, McLean RM, Forciea MA. Noninvasive treatments for acute, subacute, and chronic low back pain: a clinical practice guideline from the American College of Physicians. Ann Intern Med. 2017;166(7):514-530.",
+   "Dahm KT, Brurberg KG, Jamtvedt G, Hagen KB. Advice to rest in bed versus advice to stay active for acute low-back pain and sciatica. Cochrane Database Syst Rev. 2010;(6):CD007612."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0039": {
-  "conceito": "### O \"pacote\" de C6\n- **Força:** ==bíceps== e ==extensores radiais do carpo==.\n- **Reflexo:** ==braquiorradial / estilorradial==.\n- **Sensibilidade:** face lateral do antebraço, **polegar** e **indicador**.\n- **Disco:** C5-C6 (posterolateral).\n\n### Tabela para comparar\n| Raiz | Músculo-chave | Reflexo | Dermátomo |\n|---|---|---|---|\n| C5 | deltoide | bicipital | face lateral do braço |\n| ==C6== | ==bíceps, extensores do punho== | ==braquiorradial== | ==polegar== |\n| C7 | tríceps, flexores do punho | tricipital | dedo médio |\n| C8 | flexores dos dedos | nenhum | dedo mínimo |\n| T1 | intrínsecos (interósseos) | nenhum | face medial do braço |\n\n> **Na prova:** bíceps + extensores radiais do carpo + estilorradial = ==C6==.",
-  "correta": "**C6.**",
   "incorretas": {
-   "A": "**C5.**\n- Deltoide e reflexo **bicipital**, face lateral do braço.",
-   "C": "**C7.**\n- **Tríceps** e reflexo tricipital, dedo médio.",
-   "D": "**C8.**\n- Flexores dos dedos e dedo mínimo, sem reflexo próprio."
+   "A": "**C5 tem outro reflexo e outro músculo-chave.** Ela comanda o deltoide e também o bíceps, mas seu reflexo é o bicipital, não o estilorradial, e ela não é a raiz dos extensores do punho.",
+   "C": "**C7 é a raiz do tríceps.** Ela controla o tríceps e os flexores do punho e responde pelo reflexo tricipital e pela sensibilidade do dedo médio.",
+   "D": "**C8 controla os flexores dos dedos.** Dá sensibilidade no dedo mínimo e na borda ulnar da mão e não tem reflexo próprio."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Como se descobre a raiz lesada.** Cada raiz nervosa cervical controla três coisas: um grupo de músculos (miótomo), uma faixa de pele (dermátomo) e, em geral, um reflexo. Quando uma raiz é comprimida, por hérnia de disco ou osteófito, os três sinais mudam juntos. Combinar força, reflexo e sensibilidade aponta a raiz.\n\n**O conjunto da raiz C6.** **Força**: bíceps braquial, que flete o cotovelo, e **extensores radiais do carpo**, que estendem o punho para o lado do polegar. **Reflexo**: o **braquiorradial**, também chamado estilorradial, pesquisado batendo no rádio perto do punho; a resposta é a flexão do cotovelo. **Sensibilidade**: face lateral do antebraço, polegar e indicador. A questão descreve exatamente esse conjunto.\n\n**Qual disco comprime C6.** Na cervical cada raiz sai acima da vértebra de mesmo número; a C6 sai entre C5 e C6 e é comprimida pela hérnia posterolateral do disco C5-C6.\n\n**As raízes vizinhas, para comparar.** **C5**: deltoide (abdução do ombro), reflexo **bicipital**, face lateral do braço. O bíceps também recebe C5, mas o reflexo de C5 é o bicipital e o deltoide é o músculo característico. **C7**: tríceps, flexores do punho, reflexo **tricipital**, dedo médio. **C8**: flexores dos dedos, dedo mínimo, sem reflexo próprio. **T1**: músculos intrínsecos da mão, face medial do braço.\n\n**Na prova:** bíceps, extensores radiais do carpo e reflexo estilorradial formam o quadro de C6.",
+  "correta": "**C6.** Bíceps, extensores radiais do carpo e reflexo estilorradial são o miótomo e o reflexo característicos da raiz C6.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0040": {
-  "conceito": "### Fatores de progressão na escoliose idiopática do adolescente\n**Crescimento restante:**\n- **idade** menor;\n- **Risser** 0 a 1 ou Sanders baixo;\n- **pré-menarca**;\n- cartilagem trirradiada aberta.\n\n**Curva:**\n- **magnitude** maior no diagnóstico;\n- curvas **duplas** progridem mais que as simples;\n- curvas **torácicas** progridem mais que as lombares.\n\n**Sexo:** o ==feminino== é fator **independente**. As meninas progridem várias vezes mais que os meninos com a mesma curva. Por isso, a proporção entre os sexos é equilibrada nas curvas pequenas e passa a ~**8:1 feminino** nas curvas que precisam de tratamento.\n\n### O que não é fator de progressão\n- **História familiar:** aumenta a chance de **ter** escoliose, mas não é preditor estabelecido de **progressão**.\n- **Relação peso-altura.**\n- **Cifose aumentada:** a escoliose idiopática torácica tem tipicamente **hipocifose**. Uma cifose aumentada deve levantar suspeita de causa **não idiopática** (siringomielia, entre outras).\n\n> **Na prova:** preditor de progressão = ==sexo feminino== (+ crescimento restante + curva maior).",
-  "correta": "**Sexo feminino.**",
   "incorretas": {
-   "A": "**História familiar.**\n- Aumenta o risco de **ter** escoliose, não o de progressão.",
-   "B": "**Cifose aumentada.**\n- A idiopática torácica cursa com **hipocifose**; cifose sugere outra causa.",
-   "D": "**Relação altura-peso.**\n- Não é preditor estabelecido."
+   "A": "**História familiar se liga a ter escoliose, não à progressão.** Parentes afetados aumentam o risco de a criança desenvolver a curva, mas não indicam que ela vá piorar.",
+   "B": "**Cifose aumentada sugere outra doença.** A escoliose idiopática torácica cursa com hipocifose. Cifose aumentada levanta suspeita de causa neurológica ou congênita e não é fator de progressão da idiopática.",
+   "D": "**A relação altura-peso não é preditor.** Ela não entra nos fatores reconhecidos de progressão, que são crescimento restante, tamanho e tipo da curva e sexo feminino."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é progressão.** Na escoliose idiopática do adolescente, desvio lateral da coluna com rotação das vértebras sem causa conhecida, progressão é o aumento do ângulo de Cobb com o tempo. Saber quem vai piorar define quem precisa de vigilância próxima, colete ou cirurgia.\n\n**Fatores ligados ao crescimento.** A curva piora sobretudo enquanto a criança cresce. Por isso progridem mais as curvas em crianças mais novas, com **Risser** baixo (a apófise da crista ilíaca ainda não ossificou), antes da **menarca** e com a cartilagem trirradiada da pelve ainda aberta.\n\n**Fatores ligados à curva.** Curvas maiores no diagnóstico progridem mais. Curvas duplas progridem mais que as simples, e as torácicas mais que as lombares.\n\n**O sexo feminino.** Meninas e meninos têm curvas pequenas em proporção parecida. Mas, com a mesma curva, as meninas progridem várias vezes mais. Por isso, entre as curvas grandes que precisam de tratamento, a proporção chega a cerca de oito meninas para cada menino. O **sexo feminino** é um fator de risco independente de progressão.\n\n**O que não é fator de progressão.** A **história familiar** aumenta a chance de a criança ter escoliose, mas não prevê que a curva vá piorar. A relação entre peso e altura não é preditor estabelecido. E a **cifose aumentada** não combina com a idiopática: a curva torácica idiopática costuma vir com hipocifose, a coluna torácica mais reta de perfil. Escoliose com cifose aumentada deve levantar suspeita de causa não idiopática, como siringomielia, e indicar ressonância.\n\n**Na prova:** progressão na idiopática do adolescente se associa a sexo feminino, crescimento restante e curva maior.",
+  "correta": "**Acometimento no sexo feminino.** Com a mesma curva, meninas progridem várias vezes mais que meninos, o que faz do sexo feminino um fator de risco independente de progressão.",
+  "referencias": [
+   "Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537.",
+   "Lonstein JE, Carlson JM. The prediction of curve progression in untreated idiopathic scoliosis during growth. J Bone Joint Surg Am. 1984;66(7):1061-1071."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0041": {
-  "conceito": "### Mapa sensitivo do membro superior\n| Raiz | Território |\n|---|---|\n| C5 | face lateral do braço (região do deltoide) |\n| ==C6== | face lateral do antebraço, ==polegar e indicador== |\n| C7 | dedo **médio** |\n| C8 | dedos **anular e mínimo**, face ulnar da mão |\n| T1 | face **medial** do antebraço e do braço |\n\n### C6 completo\n- **Motor:** bíceps, extensores radiais do carpo.\n- **Reflexo:** braquiorradial.\n- **Disco:** C5-C6.\n\n### Dica para não confundir\nFaça \"**6**\" com a mão: polegar e indicador estendidos formam o 6 do C6. O **médio** é o dedo do \"meio\" (C7), e o mínimo fica com C8.\n\n### Diferenciais periféricos\n- **Túnel do carpo** (mediano): polegar, indicador, médio e metade do anular, **sem** o antebraço e sem alterar reflexos.\n- **Nervo radial superficial:** dorso radial da mão.\n\n> **Na prova:** C6 = ==polegar e indicador==.",
-  "correta": "**Indicador** (com o polegar).",
   "incorretas": {
-   "A": "**Anular.**\n- **C8** (com o mínimo).",
-   "B": "**Médio.**\n- **C7.**",
-   "C": "**Mínimo.**\n- **C8.**"
+   "A": "**O anular pertence a C8.** A raiz C8 dá sensibilidade ao anular e ao mínimo e à borda ulnar da mão.",
+   "B": "**O dedo médio é de C7.** A C7, comprimida pelo disco C6-C7, também controla o tríceps e o reflexo tricipital.",
+   "C": "**O mínimo é o dedo de C8.** É o território mais ulnar da mão, junto com o anular."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é dermátomo.** É a faixa de pele cuja sensibilidade é levada por uma única raiz nervosa. No membro superior os dermátomos se distribuem em faixas do ombro aos dedos, e cada dedo tem uma raiz dominante. Quando uma hérnia de disco cervical comprime uma raiz, o paciente sente formigamento ou dormência naquela faixa.\n\n**O mapa da mão.** **C6**: face lateral do antebraço, **polegar e indicador**. **C7**: **dedo médio**. **C8**: **anular e mínimo**, com a borda ulnar da mão. **C5** fica mais acima, na face lateral do braço, e **T1** na face medial do antebraço e do braço. Um truque: com polegar e indicador abertos, a mão desenha um 6, lembrando C6; o médio é o dedo do meio, C7; o mínimo fica com C8.\n\n**O conjunto completo de C6.** Além da sensibilidade, a C6 comanda o bíceps e os extensores radiais do punho e responde pelo reflexo braquiorradial. É comprimida pela hérnia do disco C5-C6, porque na cervical cada raiz sai acima da vértebra de mesmo número.\n\n**Não confundir com nervos periféricos.** O **túnel do carpo** comprime o nervo mediano no punho e dá formigamento no polegar, indicador, médio e metade do anular, sem alterar o antebraço, a força do bíceps ou os reflexos. Isso ajuda a separar uma compressão no pescoço de uma no punho, que podem até coexistir.\n\n**Na prova:** C6 é polegar e indicador; C7 é o médio; C8 é anular e mínimo.",
+  "correta": "**Indicador.** Junto com o polegar, ele está no dermátomo de C6, que desce pela face lateral do antebraço até esses dedos.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977.",
+   "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0042": {
