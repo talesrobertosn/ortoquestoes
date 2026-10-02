@@ -1966,19 +1966,18 @@
   "formato": "corrido"
  },
  "tumores-0190": {
-  "conceito": "**O item local do Mirels** tem só três valores, pela carga mecânica da região. O **membro superior** vale 1, porque úmero e antebraço não sustentam o peso do corpo; o **membro inferior** vale 2, porque fêmur e tíbia sustentam o peso a cada passo, e a **extremidade distal do fêmur** está aqui; a região **peritrocantérica** vale 3, porque concentra as maiores forças do esqueleto, com braços de alavanca que multiplicam a carga.\n\nOs outros itens seguem a mesma lógica de 1 a 3: a **dor** vale 1 se leve, 2 se moderada e 3 se funcional; a **lesão** vale 1 se blástica, 2 se mista e 3 se lítica; o **tamanho** vale 1 abaixo de um terço do diâmetro, 2 entre um e dois terços e 3 acima de dois terços. O total vai de 4 a 12: até 7 pontos, radioterapia e observação; 8, zona cinzenta; **9 ou mais**, fixação profilática.\n\n**Na prova:** fêmur distal no Mirels vale **2 pontos**; só a região peritrocantérica vale 3.",
-  "correta": "**2 pontos.** A extremidade distal do fêmur é membro inferior, fora da região peritrocantérica.",
   "incorretas": {
-   "A": "**Membro superior.** Um ponto é para lesões no membro superior.",
-   "C": "**Peritrocantérica.** Três pontos são reservados à região peritrocantérica.",
-   "D": "**Não existe.** Cada item do Mirels vai de 1 a 3."
+   "A": "Um ponto é atribuído às lesões do membro superior, que não suporta o peso do corpo.",
+   "C": "Três pontos ficam reservados para a região peritrocantérica do fêmur, onde as forças são maiores. O fêmur distal não está nessa região.",
+   "D": "Nenhum item da escala de Mirels vale 4 pontos: cada um vai de 1 a 3."
   },
+  "conceito": "Quando um paciente com câncer tem uma metástase num osso longo, uma pergunta muito prática aparece: esse osso vai quebrar? Fixar o osso antes da fratura é uma cirurgia menor, com recuperação mais rápida e menos complicações do que operar depois que ele quebra. Mas fixar todas as lesões seria exagero. Em 1989, Hilton Mirels propôs uma escala simples para ajudar nessa decisão.\n\nA **escala de Mirels** soma quatro itens, cada um valendo de 1 a 3 pontos. O primeiro é a **localização**, e a lógica é a carga que aquela região suporta. O **membro superior** vale 1, porque o úmero e o antebraço não sustentam o peso do corpo. O **membro inferior** vale **2**, porque fêmur e tíbia recebem o peso a cada passo, e a extremidade distal do fêmur entra aqui. A **região peritrocantérica** do fêmur vale 3, porque é onde se concentram as maiores forças do esqueleto, com um braço de alavanca que multiplica a carga.\n\nOs outros itens seguem a mesma escala. A **dor** vale 1 se leve, 2 se moderada e 3 se funcional, ou seja, se piora ao usar o membro, um sinal de que o osso já está falhando mecanicamente. O **tipo de lesão** vale 1 se blástica (que forma osso), 2 se mista e 3 se lítica (que destrói osso). O **tamanho** vale 1 se ocupa menos de um terço do diâmetro do osso, 2 entre um e dois terços e 3 se passa de dois terços.\n\nO total vai de 4 a 12. Até 7 pontos, o risco de fratura é baixo, e a conduta é radioterapia e observação. Com 8 pontos, a decisão é individual. Com **9 ou mais**, o risco é alto e a indicação é a fixação profilática.",
+  "correta": "2 pontos. A extremidade distal do fêmur pertence ao membro inferior, que vale 2 pontos no item de localização da escala de Mirels. Só a região peritrocantérica vale 3.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 3.7"
+   "Mirels H. Metastatic disease in long bones. A proposed scoring system for diagnosing impending pathologic fractures. Clin Orthop Relat Res. 1989;(249):256-264."
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-10-02",
+  "conferido": false
  },
  "tumores-0191": {
   "conceito": "**Frente e trás da vértebra.** Na coluna, a posição dentro da vértebra é um dos melhores filtros diagnósticos. Nos **elementos posteriores** (pedículo, lâmina e processos) ficam o osteoma osteoide, o osteoblastoma, o cisto ósseo aneurismático e o osteocondroma, lesões benignas de jovens. No **corpo vertebral**, nos elementos anteriores, ficam o **tumor de células gigantes**, o hemangioma, o granuloma eosinofílico (vértebra plana), o cordoma, o mieloma, o linfoma e as metástases, em sua maioria de adultos. A regra prática é que lesão posterior em jovem tende a ser benigna, e lesão do corpo em adulto tende a ser maligna.\n\n**A exceção do grupo anterior** é o tumor de células gigantes: benigno, mas localmente agressivo, acomete o corpo vertebral e sobretudo o **sacro**, entre 20 e 40 anos, podendo destruir muito osso; quando irressecável, usa-se o denosumabe.\n\n**Na prova:** entre as opções, o tumor dos elementos anteriores é o **tumor de células gigantes**.",
