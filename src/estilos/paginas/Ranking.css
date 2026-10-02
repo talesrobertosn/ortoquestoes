@@ -38,41 +38,6 @@
 .rk-heroi__link:hover { color: var(--sobre-heroi); }
 @media (max-width: 46rem) { .rk-heroi { grid-template-columns: 1fr; } }
 @media (max-width: 46rem) { .rk-heroi__cartao { min-width: 0; } }
-.rk-podio {
-  list-style: none; margin: 0.5rem 0 0; padding: 0;
-  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; align-items: end;
-}
-.rk-podio__lugar {
-  position: relative;
-  display: flex; flex-direction: column; align-items: center; gap: 0.35rem; text-align: center;
-  padding: 1.25rem 0.75rem 0;
-  border-radius: 20px 20px 14px 14px;
-  background: var(--superficie); border: var(--borda); box-shadow: var(--sombra-media);
-  overflow: hidden;
-}
-.rk-podio__lugar--1 { padding-top: 1.75rem; border-color: color-mix(in srgb, var(--ouro) 50%, var(--traco)); background: linear-gradient(180deg, var(--ouro-veu), var(--superficie) 70%); }
-.rk-podio__lugar--2 { background: linear-gradient(180deg, var(--prata-veu), var(--superficie) 70%); }
-.rk-podio__lugar--3 { background: linear-gradient(180deg, var(--bronze-veu), var(--superficie) 70%); }
-.rk-podio__avatar {
-  position: relative;
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 4rem; height: 4rem; border-radius: 50%;
-  font-weight: 800; font-size: 1.2rem; color: #fff;
-  background: linear-gradient(135deg, #cfd8db, var(--prata));
-  box-shadow: 0 0 0 4px var(--superficie), 0 6px 16px rgba(18, 24, 26, 0.18);
-}
-.rk-podio__lugar--1 .rk-podio__avatar { width: 5rem; height: 5rem; font-size: 1.5rem; background: linear-gradient(135deg, #ffe3a3, var(--ouro)); color: #5c3f06; }
-.rk-podio__lugar--3 .rk-podio__avatar { background: linear-gradient(135deg, #f0c29b, var(--bronze)); }
-.rk-podio__posicao {
-  position: absolute; right: -4px; bottom: -4px;
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 1.6rem; height: 1.6rem; border-radius: 50%;
-  background: var(--grafite); color: var(--porcelana); font-size: 0.8rem; font-weight: 800;
-  border: 2px solid var(--superficie);
-}
-.rk-podio__nome { margin-top: 0.4rem; font-size: 1rem; line-height: 1.25; overflow-wrap: anywhere; }
-.rk-podio__total { color: var(--texto-2); font-size: var(--meta); }
-.rk-podio__total b { color: var(--texto); font-size: 1.1rem; }
 .rk-referencia { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: .35rem 1rem; color: var(--texto-2); font-size: var(--corpo-menor); }
 .rk-referencia > span { display: inline-flex; align-items: center; gap: .35rem; }
 .rk-referencia small { flex-basis: 100%; font-size: .75rem; opacity: .85; }
@@ -103,36 +68,6 @@
 .rk-movimento--desceu { color: var(--erro); background: var(--erro-veu); }
 .rk-movimento > span[aria-hidden="true"] { display: inline-flex; align-items: center; gap: .12rem; }
 .rk-movimento__sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-.rk-podio__lugar .rk-movimento { margin-top: .15rem; }
-.rk-podio__base {
-  display: flex; align-items: center; justify-content: center; align-self: stretch;
-  margin: 0.6rem -0.75rem 0; height: 2.6rem;
-  font-weight: 800; font-size: 1.15rem; color: var(--texto-2);
-  background: var(--superficie-2); border-top: var(--borda);
-}
-.rk-podio__lugar--1 .rk-podio__base { height: 4rem; background: color-mix(in srgb, var(--ouro) 18%, var(--superficie)); color: var(--ouro); }
-.rk-podio__lugar--2 .rk-podio__base { height: 3rem; }
-.rk-podio__lugar--voce { outline: 2px solid var(--verdete); outline-offset: 2px; }
-.rk-emblema { display: inline-flex; vertical-align: middle; margin-left: 0.3rem; }
-.rk-podio__lugar .rk-emblema { margin: 0; }
-@media (max-width: 34rem) {
-  .rk-podio { gap: 0.4rem; }
-}
-@media (max-width: 34rem) {
-  .rk-podio__lugar { padding-inline: 0.4rem; }
-}
-@media (max-width: 34rem) {
-  .rk-podio__avatar { width: 3.1rem; height: 3.1rem; font-size: 1rem; }
-}
-@media (max-width: 34rem) {
-  .rk-podio__lugar--1 .rk-podio__avatar { width: 3.8rem; height: 3.8rem; }
-}
-@media (max-width: 34rem) {
-  .rk-podio__nome { font-size: var(--corpo-menor); }
-}
-@media (max-width: 34rem) {
-  .rk-podio__base { margin-inline: -0.4rem; }
-}
 .rk-linha > .rk-movimento { grid-column: 2; }
 .rk-fora { margin: 0; padding: 0.9rem 1rem; border-radius: 14px; background: var(--verdete-veu); color: var(--texto); }
 .rk-regras { border-radius: var(--raio-grande); }
@@ -153,12 +88,9 @@
 
 /* ---------- Conquistas: emblemas ao lado do nome e fogueira ---------- */
 .emblemas-nome { display: inline-flex; align-items: center; gap: 0.15rem; vertical-align: middle; margin-left: 0.35rem; }
-.rk-podio__emblemas { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.25rem; max-width: 100%; }
-.rk-podio__emblemas .fogueira { margin: 0; }
 .rk-linha__selos { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem; min-height: 0; }
 .rk-linha__selos:empty { display: none; }
 .rk-linha__selos .emblemas-nome, .rk-linha__selos .fogueira { margin: 0; }
-.rk-podio__emblemas .emblemas-nome { margin: 0; }
 .fogueira {
   display: inline-flex; align-items: center; gap: 0.15rem; vertical-align: middle; margin-left: 0.35rem;
   padding: 0.05rem 0.4rem 0.05rem 0.2rem; border-radius: 999px;
@@ -195,7 +127,7 @@
 .inv-jogador__dica { grid-column: 1 / -1; color: rgba(255, 255, 255, 0.75); font-size: var(--meta); }
 
 .inv-slot {
-  display: inline-grid; place-items: center; width: 2.9rem; height: 2.9rem;
+  display: inline-grid; place-items: center; width: 3.4rem; height: 3.4rem;
   border-radius: 10px; background: rgba(255, 255, 255, 0.08);
   box-shadow: inset 0 0 0 2px rgba(244, 207, 124, 0.35);
 }
@@ -254,4 +186,93 @@
 @media (max-width: 30rem) {
   .inv-jogador { grid-template-columns: 1fr; }
   .inv-grade { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ---------- Pódio em arena ---------- */
+.rk-arena {
+  position: relative; isolation: isolate;
+  margin-top: 0.5rem; padding: 1.25rem clamp(0.6rem, 2.5vw, 1.5rem) 0;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(244, 207, 124, 0.35), transparent 55%),
+    radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px) 0 0 / 14px 14px,
+    linear-gradient(180deg, #071f1c, #0b3a35 60%, #0e4a43);
+  box-shadow: var(--sombra-media);
+}
+.rk-podio { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(0.4rem, 2vw, 1rem); align-items: end; }
+.rk-podio__lugar {
+  --metal: #b9c4c8; --metal-escuro: #6f7d82; --metal-claro: #f4f7f8;
+  position: relative; display: flex; flex-direction: column; align-items: center; gap: 0.4rem; text-align: center;
+  padding: 0.5rem 0.5rem 0; color: #fff; min-width: 0;
+}
+.rk-podio__lugar--1 { --metal: #e8b34f; --metal-escuro: #a8761a; --metal-claro: #fff1c2; }
+.rk-podio__lugar--3 { --metal: #c07a45; --metal-escuro: #8a4f25; --metal-claro: #f3c9a3; }
+.rk-podio__coroa { image-rendering: pixelated; margin-bottom: -0.9rem; z-index: 1; filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.45)); }
+.rk-podio__lugar--1 .rk-podio__coroa { animation: rk-coroa 3s ease-in-out infinite; }
+@keyframes rk-coroa { 50% { transform: translateY(-3px); } }
+@media (prefers-reduced-motion: reduce) { .rk-podio__lugar--1 .rk-podio__coroa { animation: none; } }
+.rk-podio__avatar {
+  display: grid; place-items: center; width: 4.2rem; height: 4.2rem; border-radius: 50%;
+  font-weight: 800; font-size: 1.25rem; color: #0b3a35;
+  background: radial-gradient(circle at 35% 30%, var(--metal-claro), var(--metal) 60%, var(--metal-escuro));
+  box-shadow: 0 0 0 3px #071f1c, 0 0 0 5px var(--metal), 0 0 22px color-mix(in srgb, var(--metal) 55%, transparent);
+}
+.rk-podio__lugar--1 .rk-podio__avatar { width: 5.2rem; height: 5.2rem; font-size: 1.6rem; }
+.rk-podio__nome { margin-top: 0.25rem; font-size: 1rem; line-height: 1.2; overflow-wrap: anywhere; color: #fff; }
+.rk-podio__nome .rk-voce { margin-left: 0.3rem; }
+.rk-podio__emblemas { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.2rem; max-width: 100%; min-height: 2.4rem; }
+.rk-podio__emblemas .emblemas-nome, .rk-podio__emblemas .dica { margin: 0; }
+.rk-podio__emblemas .fogueira { margin: 0; }
+.rk-podio__total { color: rgba(255, 255, 255, 0.75); font-size: var(--meta); }
+.rk-podio__total b { color: var(--metal-claro); font-size: 1.15rem; }
+.rk-podio__lugar .rk-movimento { margin-top: 0.1rem; }
+.rk-podio__base {
+  align-self: stretch; display: grid; place-items: center; margin-top: 0.5rem; height: 3rem;
+  border-radius: 12px 12px 0 0;
+  font-family: var(--fonte-marca); font-weight: 800; font-size: 1.35rem; color: #071f1c;
+  background: linear-gradient(180deg, var(--metal-claro), var(--metal) 45%, var(--metal-escuro));
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.6), inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+}
+.rk-podio__lugar--1 .rk-podio__base { height: 4.5rem; font-size: 1.7rem; }
+.rk-podio__lugar--2 .rk-podio__base { height: 3.6rem; }
+.rk-podio__lugar--voce .rk-podio__avatar { box-shadow: 0 0 0 3px #071f1c, 0 0 0 5px var(--metal), 0 0 0 8px #5cc9ad, 0 0 22px rgba(92, 201, 173, 0.6); }
+@media (max-width: 34rem) {
+  .rk-podio__avatar { width: 3.2rem; height: 3.2rem; font-size: 1rem; }
+  .rk-podio__lugar--1 .rk-podio__avatar { width: 4rem; height: 4rem; font-size: 1.2rem; }
+  .rk-podio__coroa { width: 40px; height: 40px; }
+  .rk-podio__lugar--1 .rk-podio__coroa { width: 52px; height: 52px; }
+  .rk-podio__nome { font-size: var(--corpo-menor); }
+}
+
+/* ---------- Dica dos emblemas ---------- */
+.dica { position: relative; display: inline-flex; }
+.dica__alvo {
+  display: inline-grid; place-items: center; padding: 0; margin: 0; border: 0; background: none; color: inherit;
+  font: inherit; cursor: help; border-radius: 8px; line-height: 0;
+}
+.dica__alvo:focus-visible { outline: 2px solid #f4cf7c; outline-offset: 2px; }
+.dica__alvo:hover .medalha { transform: translateY(-2px) scale(1.08); }
+.dica .medalha { transition: transform 0.15s ease; }
+.dica__balao {
+  position: absolute; z-index: 20; bottom: calc(100% + 0.5rem); left: 50%;
+  display: grid; justify-items: center; gap: 0.25rem; width: max-content; max-width: min(15rem, 80vw);
+  padding: 0.75rem 0.85rem; border-radius: 12px; text-align: center;
+  background: #071f1c; color: #fff; font-size: var(--meta); line-height: 1.35; font-weight: 500;
+  box-shadow: 0 0 0 1px rgba(244, 207, 124, 0.55), 0 12px 28px rgba(0, 0, 0, 0.35);
+  opacity: 0; visibility: hidden; transform: translate(-50%, 4px); transition: opacity 0.12s ease, transform 0.12s ease, visibility 0.12s;
+  pointer-events: none; white-space: normal;
+}
+.dica__balao::after {
+  content: ""; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+  border: 6px solid transparent; border-top-color: #071f1c;
+}
+.dica__balao strong { color: #f4cf7c; font-size: var(--corpo-menor); }
+.dica__arte { display: grid; place-items: center; }
+.dica:hover .dica__balao, .dica__alvo:focus-visible + .dica__balao, .dica__alvo:focus + .dica__balao {
+  opacity: 1; visibility: visible; transform: translate(-50%, 0);
+}
+/* No celular, a dica vira um cartão fixo no rodapé: não escapa pelas bordas da tela. */
+@media (max-width: 40rem) {
+  .dica__balao { position: fixed; bottom: calc(1rem + env(safe-area-inset-bottom)); left: 50%; max-width: calc(100vw - 2rem); width: 18rem; }
+  .dica__balao::after { display: none; }
 }

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, supabase } from '../conta/supabase'
 import { href } from '../util/rotas'
+import { recurso } from '../config'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { EmblemasDoNome, Fogueira, Inventario } from '../componentes/Inventario'
@@ -85,18 +86,21 @@ function iniciais(apelido: string): string {
 function Podio({ linhas, periodo }: { linhas: LinhaRanking[]; periodo: Periodo }) {
   const ordem = [linhas[1], linhas[0], linhas[2]].filter(Boolean)
   return (
-    <ol className="rk-podio" aria-label="Três primeiros colocados">
-      {ordem.map((linha) => (
-        <li key={linha.posicao} className={`rk-podio__lugar rk-podio__lugar--${linha.posicao}${linha.eh_voce ? ' rk-podio__lugar--voce' : ''}`}>
-          <span className="rk-podio__avatar">{iniciais(linha.apelido)}<span className="rk-podio__posicao">{linha.posicao}</span></span>
-          <strong className="rk-podio__nome">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</strong>
-          <span className="rk-podio__emblemas"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={26} /><Fogueira dias={linha.sequencia ?? 0} tamanho={18} /></span>
-          <span className="rk-podio__total"><b className="numerico">{linha.total.toLocaleString('pt-BR')}</b> {periodo === 'semana' ? 'na semana' : 'questões'}</span>
-          <Movimento linha={linha} />
-          <span className="rk-podio__base" aria-hidden="true">{linha.posicao}º</span>
-        </li>
-      ))}
-    </ol>
+    <section className="rk-arena" aria-label="Três primeiros colocados">
+      <ol className="rk-podio">
+        {ordem.map((linha) => (
+          <li key={linha.posicao} className={`rk-podio__lugar rk-podio__lugar--${linha.posicao}${linha.eh_voce ? ' rk-podio__lugar--voce' : ''}`}>
+            <img className="rk-podio__coroa" src={recurso(`emblemas/podio-${linha.posicao}.png`)} alt="" width={linha.posicao === 1 ? 64 : 48} height={linha.posicao === 1 ? 64 : 48} draggable={false} />
+            <span className="rk-podio__avatar">{iniciais(linha.apelido)}</span>
+            <strong className="rk-podio__nome">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</strong>
+            <span className="rk-podio__emblemas"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={36} /><Fogueira dias={linha.sequencia ?? 0} tamanho={20} /></span>
+            <span className="rk-podio__total"><b className="numerico">{linha.total.toLocaleString('pt-BR')}</b> {periodo === 'semana' ? 'na semana' : 'questões'}</span>
+            <Movimento linha={linha} />
+            <span className="rk-podio__base" aria-hidden="true">{linha.posicao}º</span>
+          </li>
+        ))}
+      </ol>
+    </section>
   )
 }
 
@@ -250,7 +254,7 @@ export function Ranking() {
             <span className="rk-linha__avatar">{iniciais(linha.apelido)}</span>
             <span className="rk-linha__nome">
               <span className="rk-linha__apelido">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</span>
-              <span className="rk-linha__selos"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} /></span>
+              <span className="rk-linha__selos"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={32} /><Fogueira dias={linha.sequencia ?? 0} /></span>
               <span className="rk-linha__barra" aria-hidden="true"><span style={{ width: `${Math.max(3, (linha.total / lider) * 100)}%` }} /></span>
             </span>
             <span className="rk-linha__total numerico">{linha.total.toLocaleString('pt-BR')}</span>

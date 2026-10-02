@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useId, useMemo, useState, type ReactNode } from 'react'
 import { Medalha } from './Medalha'
 import { Icone } from './Icone'
 import { JanelaCentral } from './JanelaCentral'
@@ -8,18 +8,37 @@ import {
   EMBLEMAS, FAMILIAS, VITRINE_MAXIMO, conquistaAtual, desbloqueado, emblemaPorId, podeIrParaVitrine,
   type Emblema, type Metricas,
 } from '../estado/conquistas'
+import { META_STREAK_DIARIA } from '../estado/streak'
+
+/**
+ * Dica de um emblema: ao passar o mouse, ao focar pelo teclado ou ao tocar,
+ * mostra a arte maior, o nome e o que foi preciso fazer para ganhá-lo.
+ */
+export function Dica({ titulo, texto, arte, children }: { titulo: string; texto: string; arte?: ReactNode; children: ReactNode }) {
+  const id = useId()
+  return <span className="dica">
+    <button type="button" className="dica__alvo" aria-describedby={id} aria-label={titulo} onClick={(e) => e.currentTarget.focus()}>{children}</button>
+    <span className="dica__balao" role="tooltip" id={id}>
+      {arte && <span className="dica__arte">{arte}</span>}
+      <strong>{titulo}</strong>
+      <span>{texto}</span>
+    </span>
+  </span>
+}
 
 /** A fogueira da sequência viva: aparece sozinha ao lado do nome a partir de 3 dias. */
 export function Fogueira({ dias, tamanho = 20, comTexto = false }: { dias: number; tamanho?: number; comTexto?: boolean }) {
   if (dias < 3) return null
   const rotulo = `${dias} dias seguidos`
-  return <span className="fogueira" title={rotulo}>
+  const desenho = <span className="fogueira" title={comTexto ? rotulo : undefined}>
     {EMBLEMAS_COM_IMAGEM.has('fogueira')
       ? <img src={recurso('emblemas/fogueira.png')} width={tamanho} height={tamanho} alt="" className="medalha--arte" draggable={false} />
       : <Icone nome="fogo" tamanho={tamanho} />}
     {comTexto ? <span>{rotulo}</span> : <span className="fogueira__numero">{dias}</span>}
-    {!comTexto && <span className="rk-movimento__sr">{rotulo}</span>}
   </span>
+  if (comTexto) return desenho
+  return <Dica titulo={`Sequência de ${dias} dias`} texto={`Estudou pelo menos ${META_STREAK_DIARIA} questões por dia, ${dias} dias seguidos. Se a sequência acabar, a fogueira apaga.`}
+    arte={EMBLEMAS_COM_IMAGEM.has('fogueira') ? <img src={recurso('emblemas/fogueira.png')} width={64} height={64} alt="" className="medalha--arte" /> : undefined}>{desenho}</Dica>
 }
 
 /** Os emblemas que alguém mostra ao lado do nome: a vitrine escolhida ou, sem ela, o de questões. */
@@ -28,7 +47,9 @@ export function EmblemasDoNome({ ids, totalGeral, tamanho = 22 }: { ids: readonl
   const lista = escolhidos.length ? escolhidos : [conquistaAtual(totalGeral)].filter(Boolean) as Emblema[]
   if (!lista.length) return null
   return <span className="emblemas-nome">
-    {lista.map((e) => <Medalha key={e.id} conquista={e} tamanho={tamanho} titulo={e.rotulo} />)}
+    {lista.map((e) => <Dica key={e.id} titulo={e.rotulo} texto={e.descricao} arte={<Medalha conquista={e} tamanho={64} />}>
+      <Medalha conquista={e} tamanho={tamanho} />
+    </Dica>)}
   </span>
 }
 
@@ -45,7 +66,7 @@ function ItemInventario({ emblema, metricas, naVitrine }: { emblema: Emblema; me
   const oculta = emblema.secreta && !tem
   return <li className={'inv-item' + (tem ? ' inv-item--tem' : '') + (oculta ? ' inv-item--secreta' : '') + ` inv-item--${emblema.nivel}`}>
     <span className="inv-item__arte">
-      {oculta ? <span className="inv-item__misterio" aria-hidden="true">?</span> : <Medalha conquista={emblema} tamanho={56} bloqueada={!tem} />}
+      {oculta ? <span className="inv-item__misterio" aria-hidden="true">?</span> : <Medalha conquista={emblema} tamanho={72} bloqueada={!tem} />}
       {naVitrine && <span className="inv-item__vitrine" title="Na sua vitrine"><Icone nome="estrela" tamanho={12} /></span>}
     </span>
     <strong>{oculta ? 'Conquista secreta' : emblema.rotulo}</strong>
@@ -131,7 +152,7 @@ export function Inventario({ metricas, nome, vitrine, salvarVitrine, podeEscolhe
       <span className="inv-jogador__vitrine">
         {Array.from({ length: VITRINE_MAXIMO }, (_, i) => {
           const e = vitrine[i] ? emblemaPorId(vitrine[i]) : undefined
-          return <span key={i} className={'inv-slot' + (e ? ' inv-slot--cheio' : '')}>{e ? <Medalha conquista={e} tamanho={36} titulo={e.rotulo} /> : <span className="inv-slot__vazio" aria-hidden="true">+</span>}</span>
+          return <span key={i} className={'inv-slot' + (e ? ' inv-slot--cheio' : '')}>{e ? <Medalha conquista={e} tamanho={44} titulo={e.rotulo} /> : <span className="inv-slot__vazio" aria-hidden="true">+</span>}</span>
         })}
       </span>
       <Fogueira dias={metricas.sequencia} tamanho={22} comTexto />
