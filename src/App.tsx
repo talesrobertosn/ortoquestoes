@@ -7,6 +7,7 @@ import { SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
 import { ErroDePagina } from './componentes/ErroDePagina'
 import { ExigeConta } from './componentes/ExigeConta'
+import { ConviteDiario } from './componentes/ConviteDiario'
 
 // Cada página é carregada apenas ao ser visitada. Além de reduzir o JavaScript
 // inicial, isso evita baixar o acervo completo para rotas administrativas,
@@ -197,6 +198,7 @@ export function App() {
       </main>
       {/* Durante a sessão, nada abaixo da questão: foco no estudo. */}
       {primeiro !== 'sessao' && <Rodape />}
+      <ConviteDiario caminho={rota.caminho} />
     </div>
   )
 }
