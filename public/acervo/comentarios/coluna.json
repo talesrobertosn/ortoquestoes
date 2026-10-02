@@ -1333,17 +1333,17 @@
   "conferido": false
  },
  "coluna-0094": {
-  "conceito": "### Endoscopia lombar: qual acesso\n| | Transforaminal | Interlaminar |\n|---|---|---|\n| Entrada | pelo **forame** (triângulo de Kambin), trajetória oblíqua lateral | pela **janela interlaminar**, por trás, afastando a raiz |\n| Melhor para | hérnias **foraminais / extraforaminais** e posterolaterais de **L1 a L5** | hérnias em ==L5-S1==, sobretudo **posterolaterais** e axilares |\n| Limitações | em L5-S1, a **crista ilíaca alta** e o forame estreito dificultam | janelas pequenas nos níveis altos |\n\n### Por que L5-S1\nA **janela interlaminar de L5-S1** é a **mais ampla** da coluna lombar, e a crista ilíaca atrapalha o acesso transforaminal nesse nível. Pela via interlaminar, afasta-se a raiz de **S1** e remove-se o fragmento.\n\n### Evidência\nA endoscopia apresenta resultados **comparáveis** à microdiscectomia em estudos e metanálises, com recuperação mais rápida, mas **curva de aprendizado** longa.\n\n> **Na prova:** endoscopia interlaminar = hérnia ==posterolateral L5-S1==.",
-  "correta": "**Posterolateral L5/S1.**",
   "incorretas": {
-   "A": "**Central L4/L5.**\n- Em L4-L5, a janela é menor; prefere-se a via transforaminal.",
-   "B": "**Posterolateral L4/L5.**\n- Mesma razão quanto ao nível.",
-   "C": "**Central L5/S1.**\n- Exige manipulação medial ampla da dura; não é a indicação preferencial."
+   "A": "**Hérnia central em L4/L5 não é a indicação.** A janela interlaminar de L4-L5 é menor, e uma hérnia central exigiria grande manipulação do saco dural.",
+   "B": "**O nível favorece a via transforaminal.** Em L4-L5 a crista ilíaca não atrapalha e a janela interlaminar é menor, então o acesso pelo forame costuma ser preferido.",
+   "C": "**Hérnia central exige afastar demais a dura.** O nível L5-S1 é o certo para a via interlaminar, mas o fragmento central fica atrás do saco dural e é mais arriscado de alcançar por esse caminho."
   },
+  "conceito": "**O que é a cirurgia endoscópica da coluna.** É a retirada da hérnia de disco por um tubo fino com câmera (endoscópio), através de uma incisão de menos de 1 cm, com o cirurgião operando pela tela. Existem dois caminhos principais até o disco, e cada nível da coluna favorece um deles.\n\n**O acesso transforaminal.** Entra-se pela lateral, numa trajetória oblíqua, através do **forame** (a porta de saída da raiz), passando por uma zona segura chamada triângulo de Kambin. É ótimo para hérnias foraminais e extraforaminais e funciona bem de L1 a L5. Em **L5-S1**, porém, a crista ilíaca, a borda alta do osso do quadril, fica no caminho e o forame é estreito, o que dificulta muito esse acesso.\n\n**O acesso interlaminar.** Entra-se por trás, pela **janela interlaminar**, o espaço entre as lâminas de duas vértebras vizinhas, coberto pelo ligamento amarelo. Abre-se o ligamento, afasta-se a raiz com cuidado e retira-se o fragmento, como numa microdiscectomia. O nível ideal é **L5-S1**, porque ali a janela interlaminar é a **mais larga** da coluna lombar; nos níveis mais altos as janelas são pequenas.\n\n**Por que posterolateral.** A hérnia **posterolateral** fica ao lado da raiz, no caminho natural de quem entra pela janela, e é retirada afastando-se a raiz de S1. Uma hérnia **central** exigiria afastar muito o saco dural, com mais risco, e por isso não é a indicação preferencial.\n\n**Resultados.** A endoscopia tem resultados comparáveis aos da microdiscectomia nos estudos, com recuperação mais rápida, mas exige uma curva de aprendizado longa.\n\n**Na prova:** endoscopia interlaminar é para hérnia posterolateral em L5-S1; nos níveis altos, prefere-se a via transforaminal.",
+  "correta": "**Posterolateral L5/S1.** A janela interlaminar de L5-S1 é a mais ampla, a crista ilíaca dificulta o acesso transforaminal nesse nível, e a hérnia posterolateral é alcançada afastando a raiz de S1.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 39"
+   "Ruetten S, Komp M, Merk H, Godolias G. Full-endoscopic interlaminar and transforaminal lumbar discectomy versus conventional microsurgical technique: a prospective, randomized, controlled study. Spine. 2008;33(9):931-939."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0095": {
@@ -1449,70 +1449,76 @@
   "conferido": false
  },
  "coluna-0104": {
-  "conceito": "### Raiz de T1\n- **Sensibilidade:** face ==medial do braço e do cotovelo==.\n- **Motor:** ==musculatura intrínseca da mão== (interósseos, lumbricais, hipotenar, adutor do polegar), com contribuição de C8.\n- **Disco:** **T1-T2**, raro.\n\n### C8 × T1\n| | C8 | T1 |\n|---|---|---|\n| Sensibilidade | face medial do **antebraço**, dedos anular e mínimo | face medial do **braço / cotovelo** |\n| Motor | **flexores profundos** dos dedos | **intrínsecos** da mão |\n| Disco | C7-T1 | T1-T2 |\n\n### Diferenciais obrigatórios\n- **Tumor de Pancoast** (ápice pulmonar): dor no ombro e na face medial do braço, atrofia dos intrínsecos e **síndrome de Horner** (T1 simpático).\n- **Desfiladeiro torácico** (costela cervical, banda fibrosa): tronco inferior do plexo (C8-T1), sintomas posicionais, atrofia tenar (mão de **Gilliatt-Sumner**).\n- **Nervo ulnar no cotovelo:** poupa a face medial do braço e do antebraço.\n\n> **Na prova:** face medial do cotovelo + interósseos = ==T1==.",
-  "correta": "**T1.**",
   "incorretas": {
-   "A": "**C6.**\n- Polegar e indicador, bíceps.",
-   "B": "**C7.**\n- Dedo médio, tríceps.",
-   "C": "**C8.**\n- Face medial do **antebraço** e da mão, flexores dos dedos; não o cotovelo."
+   "A": "**C6 fica do lado do polegar.** Seu território é a face lateral do antebraço, o polegar e o indicador, com força do bíceps e dos extensores do punho.",
+   "B": "**C7 é o dedo médio.** Ela comanda o tríceps e os extensores dos dedos e responde pelo reflexo tricipital; não alcança a face medial do cotovelo.",
+   "C": "**C8 fica mais abaixo.** Seu dermátomo é a face medial do antebraço e os dedos anular e mínimo, e sua força principal são os flexores dos dedos. A face medial do cotovelo já é T1."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Como localizar a raiz pelo exame.** Cada raiz nervosa tem uma faixa de pele (dermátomo) e um grupo de músculos que dependem dela. Combinando onde está a dormência com qual músculo está fraco, descobre-se a raiz comprimida.\n\n**O território de T1.** **Sensibilidade**: a face **medial do braço**, na altura do **cotovelo**, do lado de dentro. **Força**: os **músculos intrínsecos da mão**, pequenos músculos que ficam dentro da mão: os **interósseos** (afastam e aproximam os dedos), os lumbricais, os músculos hipotênares e o adutor do polegar. A C8 também contribui para os intrínsecos, mas a combinação com a face medial do cotovelo aponta para **T1**. A hérnia que comprime T1 é a do disco T1-T2, rara.\n\n**C8 e T1 lado a lado.** A **C8** dá sensibilidade na face medial do **antebraço** e nos dedos anular e mínimo, e sua força principal são os **flexores profundos** dos dedos. A **T1** sobe um pouco mais: face medial do **braço e do cotovelo**, com força nos intrínsecos. É a altura da dormência que separa as duas.\n\n**Diferenciais que não podem ser esquecidos.** O **tumor de Pancoast**, câncer no ápice do pulmão, invade C8 e T1 e causa dor no ombro e na face medial do braço, atrofia dos músculos da mão e síndrome de Horner (pálpebra caída e pupila pequena, porque T1 leva fibras simpáticas ao olho). A **síndrome do desfiladeiro torácico**, compressão do plexo por uma costela cervical ou banda fibrosa, dá sintomas que variam com a posição do braço. A compressão do **nervo ulnar** no cotovelo enfraquece os interósseos, mas não altera a sensibilidade da face medial do braço.\n\n**Na prova:** dormência na face medial do cotovelo com fraqueza dos interósseos é T1.",
+  "correta": "**T1.** A face medial do braço e do cotovelo é o dermátomo de T1, e os interósseos dependem principalmente dessa raiz.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977.",
+   "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0107": {
-  "conceito": "### Abscesso epidural espinhal\n- **Fatores de risco:**\n  - diabetes;\n  - drogas injetáveis;\n  - imunossupressão;\n  - procedimentos espinhais;\n  - bacteremia (**S. aureus**, o mais comum).\n- **Clínica, em sequência clássica:**\n  1. dor axial;\n  2. dor radicular;\n  3. **déficit** motor, sensitivo ou esfincteriano;\n  4. **paralisia**.\n  - A **febre** nem sempre está presente.\n- **Diagnóstico:** **RM com gadolínio**. VHS e PCR elevadas; hemoculturas.\n\n### Tratamento\n**Padrão:** **descompressão cirúrgica + antibiótico**, sobretudo com **déficit neurológico**.\n\n**Tratamento clínico isolado** (antibiótico e vigilância neurológica estreita) é possível em casos selecionados:\n- sem déficit;\n- germe identificado;\n- de preferência **lombar baixo**;\n- risco cirúrgico alto.\n\n**Na** ==cervical==, a cirurgia é preferencial:\n- o canal tem **pouca reserva**;\n- a deterioração pode ser **rápida**, levando a **tetraplegia e falência respiratória**;\n- há maior taxa de **falha** do tratamento clínico.\n\n**Fatores de falha do tratamento clínico:** diabetes, PCR alta, bacteremia, idade acima de 65 anos, localização cervical ou torácica.\n\n> **Na prova:** abscesso epidural, cirurgia preferencial = ==cervical==.",
-  "correta": "**Cervical.**\n- Pouca reserva no canal, com deterioração rápida e grave.",
   "incorretas": {
-   "B": "**Torácica.**\n- Canal estreito, mas o risco cervical é maior (quatro membros e respiração).",
-   "C": "**Toracolombar.**\n- Não é a região de indicação preferencial.",
-   "D": "**Lombar baixa.**\n- Há cauda equina e mais espaço; o tratamento clínico é mais viável."
+   "B": "**O risco torácico é real, mas menor que o cervical.** O canal torácico também é estreito, e o abscesso ali pede atenção, mas a lesão cervical compromete os quatro membros e a respiração.",
+   "C": "**A transição toracolombar não é a região preferencial.** A indicação cirúrgica depende do déficit e de outros fatores de risco, mas a região em que a cirurgia é preferida por si só é a cervical.",
+   "D": "**Na lombar baixa há mais espaço.** Abaixo do fim da medula o canal contém a cauda equina, que tolera melhor a compressão; é a região em que o tratamento clínico é mais viável."
   },
+  "conceito": "**O que é o abscesso epidural.** O espaço epidural fica dentro do canal vertebral, entre o osso e a dura-máter, a membrana que envolve a medula. No abscesso epidural, pus se acumula nesse espaço e comprime a medula ou as raízes. A bactéria mais comum é o Staphylococcus aureus, que chega pelo sangue ou por extensão de uma espondilodiscite.\n\n**Quem tem e como se apresenta.** Os fatores de risco são diabetes, uso de drogas injetáveis, imunossupressão, procedimentos na coluna e infecções na corrente sanguínea. A evolução clássica segue quatro passos: dor nas costas, depois dor radicular, depois déficit (fraqueza, perda de sensibilidade, alteração da bexiga) e, por fim, paralisia. A febre falta com frequência. O diagnóstico é pela ressonância com contraste; VHS e PCR estão elevados e as hemoculturas ajudam a achar o germe.\n\n**O tratamento.** O padrão é a **descompressão cirúrgica com antibiótico**, principalmente quando já há déficit neurológico. O antibiótico isolado, com vigilância neurológica muito próxima, pode ser tentado em casos escolhidos: sem déficit, germe identificado, risco cirúrgico alto e, de preferência, abscesso **lombar baixo**, onde há a cauda equina e mais espaço no canal.\n\n**Por que a cervical vai para a cirurgia.** Na coluna **cervical** o canal tem pouca reserva de espaço em volta da medula. O abscesso pode piorar em horas, causando **tetraplegia** e insuficiência respiratória, porque a medula cervical comanda os quatro membros e o diafragma. Além disso, o tratamento só com antibiótico falha mais nessa região. Por isso a cirurgia é preferencial. Também predizem falha do tratamento clínico o diabetes, PCR muito alta, bacteremia e idade acima de 65 anos.\n\n**Na prova:** abscesso epidural cervical tem indicação preferencial de cirurgia; o lombar baixo é o que mais admite tratamento clínico.",
+  "correta": "**Cervical.** O canal cervical tem pouca reserva, a piora pode ser rápida e levar a tetraplegia e falência respiratória, e o antibiótico isolado falha mais nessa região.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 42"
+   "Darouiche RO. Spinal epidural abscess. N Engl J Med. 2006;355(19):2012-2020.",
+   "Patel AR, Alton TB, Bransford RJ, Lee MJ, Bellabarba CB, Chapman JR. Spinal epidural abscesses: risk factors, medical versus surgical management, a retrospective review of 128 cases. Spine J. 2014;14(2):326-330."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0108": {
-  "conceito": "### Inervação da faceta lombar\nCada faceta recebe ==dupla inervação==:\n- ramo dorsal **medial do mesmo nível**;\n- ramo dorsal medial do **nível acima**.\n\nA faceta **L4-L5** é inervada pelos ramos mediais de ==L3 e L4==. O ramo medial de **L4** cruza a base do processo transverso de **L5**, e o de **L3**, a base do transverso de L4.\n\n### Bloqueio do ramo medial\n- **Alvo:** junção do **processo transverso** com o **processo articular superior**, sob radioscopia.\n- **Diagnóstico:** alívio importante após o bloqueio (idealmente em **bloqueios duplos**, para reduzir falsos positivos).\n- **Terapêutico:** **radiofrequência** dos mesmos ramos, com alívio de meses.\n- **Exceção em L5-S1:** bloqueia-se o **ramo dorsal de L5**, que corre no sulco entre a asa do sacro e o processo articular de S1, e o ramo medial de **L4**.\n\n> **Na prova:** faceta L4-L5 = ramos mediais de ==L3 e L4==.",
-  "correta": "**Ramos dorsais mediais de L3 e L4.**",
   "incorretas": {
-   "A": "**Só L4.**\n- Deixa metade da inervação intacta.",
-   "B": "**Só L5.**\n- Não cobre a faceta L4-L5.",
-   "D": "**L4 e L5.**\n- A regra é o **mesmo nível e o de cima**: L3 e L4."
+   "A": "**Só L4 deixa metade da inervação.** O ramo medial de L3 também chega à faceta L4-L5; sem bloqueá-lo, a articulação continua sentindo dor e o teste pode falhar.",
+   "B": "**L5 não inerva a faceta L4-L5.** O ramo medial de L5 vai para a faceta de baixo, L5-S1.",
+   "D": "**Um nível abaixo do correto.** Os ramos de L4 e L5 inervam a faceta L5-S1 (com a particularidade do ramo dorsal de L5). Para L4-L5, são L3 e L4."
   },
+  "conceito": "**O que é a síndrome facetária.** As facetas são as pequenas articulações posteriores entre duas vértebras, uma de cada lado em cada nível. Com a artrose, podem ser fonte de dor lombar, que costuma piorar em pé e na extensão e aliviar sentado. O diagnóstico é confirmado bloqueando os nervos da faceta com anestésico: se a dor some, a faceta era a origem.\n\n**Os nervos da faceta.** Ao sair do forame, cada raiz lombar dá um ramo para trás, o **ramo dorsal**, que se divide em ramos menores. O **ramo medial** do ramo dorsal é o que inerva as facetas. Ele corre num ponto fixo: a junção entre o processo transverso e o processo articular superior da vértebra **de baixo**. Por exemplo, o ramo medial de L4 passa sobre a base do processo transverso de L5.\n\n**A dupla inervação.** Cada faceta recebe dois ramos mediais: o do **mesmo nível** e o do **nível de cima**. A faceta L4-L5 é inervada pelos ramos mediais de **L3 e L4**. Para anestesiar completamente essa articulação, é preciso bloquear os dois. Bloquear um só deixa metade da inervação ativa e pode dar um teste falsamente negativo.\n\n**A exceção do último nível.** Na faceta L5-S1, bloqueia-se o ramo medial de L4 e o **ramo dorsal de L5**, que passa no sulco entre a asa do sacro e o processo articular de S1.\n\n**Do diagnóstico ao tratamento.** O bloqueio é feito com radioscopia, de preferência repetido em duas ocasiões para reduzir falsos positivos. Quem responde bem pode ser tratado com **radiofrequência** desses mesmos ramos, que interrompe a condução da dor por meses.\n\n**Na prova:** a faceta L4-L5 é inervada pelos ramos mediais de L3 e L4; a regra é o mesmo nível e o de cima.",
+  "correta": "**Ramos dorsais mediais de L3 e L4.** A faceta L4-L5 recebe o ramo medial do próprio nível superior da articulação (L4) e o do nível acima (L3), e os dois precisam ser bloqueados.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 39"
+   "Bogduk N. The innervation of the lumbar spine. Spine. 1983;8(3):286-293.",
+   "Cohen SP, Raja SN. Pathogenesis, diagnosis, and treatment of lumbar zygapophysial (facet) joint pain. Anesthesiology. 2007;106(3):591-614."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0109": {
-  "conceito": "### Método de Nash e Moe (rotação vertebral)\nAvalia, no **AP**, a posição do **pedículo do lado convexo** em relação ao corpo:\n| Grau | Achado |\n|---|---|\n| 0 | pedículos **simétricos**, sem rotação |\n| I | o pedículo convexo desloca-se levemente para o centro; o côncavo começa a sumir |\n| II | o pedículo convexo chega ao **2º terço**; o côncavo desaparece |\n| III | o pedículo convexo fica no **centro** do corpo |\n| IV | o pedículo convexo **passa do centro**, para o lado côncavo |\n\n### Por que medir a ==rotação==\n- É a rotação que produz a **giba costal** (a deformidade estética mais incômoda).\n- A **vértebra neutra**, sem rotação, é usada para definir os níveis de artrodese.\n- **Método de Perdriolle** (torsiômetro): quantifica a rotação em graus. A **TC** é o padrão-ouro.\n\n> **Na prova:** Nash-Moe = ==rotação vertebral== pelos pedículos.",
-  "correta": "**Rotação vertebral.**",
   "incorretas": {
-   "B": "**Perfil sagital torácico.**\n- Medido pelo Cobb no **perfil**.",
-   "C": "**Ângulo da vértebra neutra.**\n- A vértebra neutra é identificada pela rotação, mas Nash-Moe não mede ângulo.",
-   "D": "**Modificador sagital lombar.**\n- Termo de **Lenke** (o modificador sagital é torácico)."
+   "B": "**O perfil sagital se mede de outra forma.** A cifose torácica é medida pelo ângulo de Cobb na radiografia de perfil, não pela posição dos pedículos no AP.",
+   "C": "**A vértebra neutra não é um ângulo.** Ela é a vértebra sem rotação, identificada por métodos como o de Nash e Moe, mas o método não mede um ângulo dela.",
+   "D": "**O modificador sagital pertence à classificação de Lenke.** Ele descreve a cifose torácica (hipo, normal ou hiper) e não tem relação com o método de Nash e Moe."
   },
+  "conceito": "**A escoliose é tridimensional.** Além do desvio lateral, que se mede pelo ângulo de Cobb, as vértebras da escoliose **giram** em torno do próprio eixo, com o corpo vertebral virando para o lado convexo da curva. Essa rotação levanta as costelas de um lado e produz a **giba costal**, a saliência nas costas que aparece quando o paciente se inclina para a frente e que é a deformidade estética mais incômoda.\n\n**O método de Nash e Moe.** É uma forma simples de graduar a rotação vertebral na radiografia de frente (AP), olhando a posição dos pedículos. Pedículos são as colunas de osso que ligam o corpo ao arco posterior; na radiografia aparecem como dois ovais, um de cada lado do corpo. Quando a vértebra gira, o pedículo do lado convexo se desloca para o centro do corpo e o do lado côncavo some atrás dele. Divide-se o corpo vertebral em segmentos e gradua-se: **grau 0**, pedículos simétricos, sem rotação; **grau I**, o pedículo convexo se desloca um pouco para o centro; **grau II**, ele chega ao segundo segmento e o côncavo desaparece; **grau III**, o pedículo convexo está no centro do corpo; **grau IV**, ele passa do centro para o lado côncavo.\n\n**Outros métodos.** O de Perdriolle usa uma régua transparente (torsiômetro) para estimar a rotação em graus. A tomografia é o método mais preciso. A **vértebra neutra**, a que não tem rotação, é identificada justamente por esses métodos e ajuda a definir até onde a artrodese deve ir.\n\n**O que não é Nash e Moe.** O perfil sagital se mede pelo Cobb na radiografia de perfil. O modificador sagital da classificação de Lenke se refere à cifose torácica.\n\n**Na prova:** Nash e Moe avalia a rotação vertebral pela posição dos pedículos na radiografia AP.",
+  "correta": "**A rotação vertebral.** O método gradua a rotação de 0 a IV pela migração do pedículo do lado convexo em direção ao centro do corpo vertebral.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 9"
+   "Nash C Jr, Moe JH. A study of vertebral rotation. J Bone Joint Surg Am. 1969;51(2):223-229."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0110": {
-  "conceito": "### Marcos dermatômicos do tronco\n| Marco | Dermátomo |\n|---|---|\n| ==Mamilos== | ==T4== |\n| ==Processo xifoide== | ==T6-T7== (a tabela ASIA usa **T6**; a questão usa **T7**) |\n| ==Cicatriz umbilical== | ==T10== |\n| Região inguinal | T12 / L1 |\n\n### Por que a alternativa B\nÉ a única que acerta os marcos **mais consagrados**: **T4** nos mamilos e **T10** na cicatriz umbilical. O xifoide fica entre T6 e T7, conforme a referência.\n\n### Nível neurológico × nível ósseo\nA medula termina em **L1-L2**, e os segmentos medulares ficam **acima** das vértebras de mesmo número, sobretudo na região torácica baixa e lombar. Uma lesão neurológica em T10 costuma corresponder a uma fratura mais alta.\n\n> **Na prova:** mamilo ==T4==, cicatriz umbilical ==T10==.",
-  "correta": "**T4, T7 e T10.**\n- Mamilo T4 e cicatriz umbilical T10; o xifoide fica entre T6 e T7.",
   "incorretas": {
-   "A": "**T3, T6, T9.**\n- Mamilo e cicatriz umbilical errados.",
-   "C": "**T5, T8, T11.**\n- Um nível abaixo nos três.",
-   "D": "**T6, T9, T12.**\n- Dois níveis abaixo."
+   "A": "**Erra o mamilo e o umbigo.** T3 está acima da linha dos mamilos e T9 acima do umbigo; os marcos estão todos um nível acima.",
+   "C": "**Um nível abaixo em todos.** T5, T8 e T11 deslocam os três marcos para baixo: o mamilo é T4 e o umbigo é T10.",
+   "D": "**Dois níveis abaixo.** T6 é o xifoide, não o mamilo, e T12 já é a região inguinal, longe do umbigo."
   },
+  "conceito": "**Os dermátomos do tronco.** Dermátomo é a faixa de pele cuja sensibilidade é levada por uma raiz nervosa. No tronco, os dermátomos torácicos formam faixas horizontais, empilhadas de cima para baixo. Alguns marcos fáceis de achar no corpo permitem localizar o nível de uma lesão medular só testando onde a sensibilidade termina.\n\n**Os marcos.** O **mamilo** está na faixa de **T4**. O **processo xifoide**, a ponta de baixo do esterno, está entre T6 e T7: a padronização da ASIA (associação norte-americana de lesão medular) usa T6, e a banca usa T7. A **cicatriz umbilical** está em **T10**. A região inguinal, junto à virilha, fica entre T12 e L1.\n\n**Como resolver a questão.** Os dois marcos mais consagrados e estáveis entre as fontes são **T4 no mamilo** e **T10 no umbigo**. Só uma alternativa acerta os dois, e ela traz o xifoide em T7, dentro da faixa aceita. As outras deslocam todos os marcos para cima ou para baixo.\n\n**Nível neurológico e nível da vértebra.** O nível encontrado pela sensibilidade é o nível da medula, não necessariamente o número da vértebra lesada. A medula é mais curta que a coluna e termina em L1-L2; na coluna torácica baixa, os segmentos medulares ficam um a dois níveis acima das vértebras de mesmo número. Uma perda de sensibilidade a partir do umbigo (T10) costuma corresponder a uma fratura mais alta.\n\n**Na prova:** mamilo T4, xifoide T6 a T7, umbigo T10, região inguinal T12 e L1.",
+  "correta": "**T4, T7 e T10.** Mamilo em T4 e umbigo em T10 são os marcos consagrados, e o xifoide fica entre T6 e T7.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 4"
+   "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0111": {
