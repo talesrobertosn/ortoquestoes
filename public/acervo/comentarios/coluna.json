@@ -1653,82 +1653,106 @@
   "geradoEm": "2026-09-13"
  },
  "coluna-0135": {
-  "conceito": "### Reflexos profundos por raiz\n| Raiz | Reflexo |\n|---|---|\n| C5 | bicipital |\n| C6 | braquiorradial (estilorradial) |\n| C7 | tricipital |\n| ==C8== | ==nenhum== |\n| T1 | nenhum |\n| L4 | patelar |\n| L5 | nenhum confiável (tibial posterior, inconstante) |\n| S1 | aquileu |\n\n### Como diagnosticar C8, então\n- **Sensibilidade:** face medial da mão, anular e **mínimo**.\n- **Força:** **flexores profundos** dos dedos (prensão) e **intrínsecos**.\n- **Imagem:** disco ou forame **C7-T1**.\n\n### Sobre as alternativas\n\"Estiloulnar\" não é um reflexo usado na propedêutica. O **reflexo flexor dos dedos** (Trömner/Hoffmann) avalia neurônio motor superior, não C8 como raiz.\n\n> **Na prova:** C8 ==não tem reflexo== próprio.",
-  "correta": "**Não há.**",
   "incorretas": {
-   "A": "**Bicipital.**\n- **C5.**",
-   "B": "**Tricipital.**\n- **C7.**",
-   "C": "**Estilorradial.**\n- **C6.**",
-   "D": "**Estiloulnar.**\n- Não é reflexo da propedêutica usual."
+   "A": "**O bicipital é de C5.** Testa a raiz que comanda também o deltoide, muito acima de C8.",
+   "B": "**O tricipital é de C7.** É o reflexo mais baixo do membro superior com raiz definida, um nível acima de C8.",
+   "C": "**O estilorradial é de C6.** Também chamado braquiorradial, testa a raiz do bíceps e dos extensores radiais do punho.",
+   "D": "**Não é reflexo usado na propedêutica.** O nome \"estiloulnar\" não corresponde a um reflexo padrão de raiz no exame da coluna cervical."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Para que servem os reflexos no exame da coluna.** O reflexo profundo é a contração automática de um músculo quando seu tendão é percutido com o martelo. O circuito passa por um segmento específico da medula, então cada reflexo testa uma raiz. Um reflexo diminuído de um lado aponta qual raiz está comprimida.\n\n**Os reflexos do membro superior.** **Bicipital**: percute-se o tendão do bíceps na dobra do cotovelo; raiz **C5**. **Estilorradial** (ou braquiorradial): percute-se o rádio perto do punho; raiz **C6**. **Tricipital**: percute-se o tendão do tríceps atrás do cotovelo; raiz **C7**. Para **C8** e **T1**, **não há reflexo** de rotina.\n\n**Como examinar C8 sem reflexo.** Pela sensibilidade, na face medial da mão e nos dedos anular e mínimo; e pela força dos flexores profundos dos dedos (apertar, fechar a ponta dos dedos) e dos músculos intrínsecos da mão. A imagem procura o disco ou o forame C7-T1, por onde a C8 sai.\n\n**Uma confusão a evitar.** Existe o reflexo de Hoffmann (peteleco na unha do dedo médio que faz o polegar fletir), que envolve os flexores dos dedos, mas ele não é usado para testar a raiz C8: é um sinal de compressão da medula (neurônio motor superior). \"Estiloulnar\" não é um reflexo da propedêutica habitual.\n\n**No membro inferior, para completar.** Patelar é L4, aquileu é S1, e L5 não tem reflexo confiável.\n\n**Na prova:** C8 não tem reflexo próprio; bicipital C5, estilorradial C6, tricipital C7.",
+  "correta": "**Não há.** A raiz C8 não tem reflexo profundo de rotina; ela é avaliada pela sensibilidade da borda ulnar da mão e pela força dos flexores dos dedos e dos intrínsecos.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0136": {
-  "conceito": "### Sinal de L'Hermitte\n- **Manobra:** paciente sentado, ==flexão do pescoço== (queixo ao tórax).\n- **Positivo:** sensação de **choque elétrico** descendo pela coluna e pelos membros.\n- **Significado:** irritação das **colunas posteriores** da medula cervical. É sinal **medular**, não radicular.\n- **Causas:**\n  - **esclerose múltipla**, a clássica;\n  - **mielopatia cervical espondilótica**;\n  - deficiência de **vitamina B12** (degeneração combinada subaguda);\n  - siringomielia;\n  - tumor intramedular;\n  - **mielopatia pós-radioterapia**.\n- **Conduta:** **RM** da medula cervical.\n\n### As outras manobras\n- **Valsalva:** aumenta a pressão intratecal; piora na hérnia ou no tumor.\n- **Distração cervical:** **alivia** a dor radicular.\n- **Spurling:** extensão + inclinação + rotação; reproduz a dor **radicular**.\n- **Abdução do ombro** (Bakody): a mão na cabeça **alivia** a radiculopatia.\n\n> **Na prova:** L'Hermitte = choque ao ==fletir o pescoço==.",
-  "correta": "**Fletir a cabeça contra o tórax.**",
   "incorretas": {
-   "B": "**Força com a respiração presa.**\n- Manobra de **Valsalva**.",
-   "C": "**Distração cervical.**\n- Teste de **alívio** radicular.",
-   "D": "**Inclinação lateral.**\n- Componente do **Spurling**.",
-   "E": "**Abdução do membro superior.**\n- Sinal de **alívio** pela abdução (radicular)."
+   "B": "**É a manobra de Valsalva.** Prender a respiração e fazer força aumenta a pressão no canal vertebral e piora a dor de hérnias ou tumores; não é o Lhermitte.",
+   "C": "**A distração cervical alivia.** Tracionar a cabeça para cima abre os forames e reduz a dor radicular; é um teste de alívio, não de provocação medular.",
+   "D": "**A inclinação lateral faz parte do Spurling.** Junto com extensão e rotação, fecha o forame e reproduz a dor de uma raiz, não o choque medular.",
+   "E": "**A abdução do braço alivia a dor radicular.** Apoiar a mão sobre a cabeça relaxa a raiz cervical comprimida; é o sinal de alívio pela abdução, sem relação com o Lhermitte."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é o sinal de Lhermitte.** Com o paciente sentado, o examinador **flete o pescoço**, levando o queixo em direção ao tórax. O sinal é positivo quando o paciente sente um **choque elétrico** descendo pela coluna e, às vezes, irradiando para os braços e as pernas.\n\n**O que ele significa.** A flexão do pescoço estica a medula cervical. Se as **colunas posteriores** da medula (os feixes que levam propriocepção e vibração, na parte de trás da medula) estão doentes, por desmielinização ou compressão, esse estiramento gera descargas anormais, sentidas como choque. É, portanto, um sinal de doença da **medula**, e não de uma raiz isolada.\n\n**As causas.** A clássica é a **esclerose múltipla**, doença que destrói a mielina (a capa isolante das fibras nervosas) no cérebro e na medula; por isso a questão o cita. Também aparece na mielopatia cervical por compressão degenerativa, na deficiência de vitamina B12 (que lesa as colunas posteriores), na siringomielia, em tumores dentro da medula e após radioterapia na região. A conduta é a ressonância da medula cervical.\n\n**As manobras das outras alternativas.** Prender a respiração e fazer força é a **manobra de Valsalva**, que aumenta a pressão dentro do canal e piora a dor de hérnia ou tumor. A **distração cervical** (puxar a cabeça para cima) alivia a dor radicular. A **inclinação lateral**, junto com extensão e rotação, faz parte do **Spurling**, que reproduz a dor de uma raiz. A **abdução do braço** com a mão sobre a cabeça alivia a dor radicular cervical.\n\n**Na prova:** Lhermitte é choque ao fletir o pescoço, sinal medular clássico da esclerose múltipla.",
+  "correta": "**Com o paciente sentado, fletir sua cabeça de encontro ao tórax.** A flexão do pescoço estica a medula cervical e provoca o choque elétrico quando as colunas posteriores estão doentes.",
+  "referencias": [
+   "Kanchandani R, Howe JG. Lhermitte's sign in multiple sclerosis: a clinical survey and review of the literature. J Neurol Neurosurg Psychiatry. 1982;45(4):308-312."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0140": {
-  "conceito": "### Raiz de L4\n- **Sensibilidade:** ==face medial da perna== (até o maléolo medial).\n- **Motor:** ==tibial anterior== (dorsiflexão e inversão do tornozelo).\n- **Reflexo:** **patelar**.\n- **Compressão:**\n  - hérnia **posterolateral L3-L4**;\n  - hérnia **foraminal / extraforaminal L4-L5**.\n\n### Comparação\n| Raiz | Sensibilidade | Motor | Reflexo |\n|---|---|---|---|\n| ==L4== | ==face medial da perna== | ==tibial anterior== | patelar |\n| L5 | dorso do pé, 1º espaço | **extensor longo do hálux**, glúteo médio | nenhum confiável |\n| S1 | borda lateral do pé, planta | tríceps sural, fibulares | aquileu |\n\n### Observação\nAs alternativas **C e D são idênticas** (L4; tibial anterior). O gabarito é C.\n\n> **Na prova:** L4 = ==face medial da perna + tibial anterior== + patelar.",
-  "correta": "**L4; tibial anterior.**",
   "incorretas": {
-   "A": "**L4; extensor do hálux.**\n- O extensor longo do hálux é **L5**.",
-   "B": "**L5; extensor do hálux.**\n- L5 é o dorso do pé, não a face medial da perna.",
-   "D": "**L4; tibial anterior** (idêntica à C).\n- A questão repete a opção; o gabarito é C."
+   "A": "**O músculo está errado.** A face medial da perna é de L4, mas o extensor do hálux é o músculo representativo de L5.",
+   "B": "**Raiz errada para a sensibilidade.** O extensor do hálux é de L5, mas a L5 dá sensibilidade no dorso do pé e na face lateral da perna, não na face medial.",
+   "D": "**Texto idêntico ao da alternativa C.** O conteúdo é correto, mas a questão repetiu a opção e o gabarito oficial considera a letra C."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Como reconhecer a raiz L4.** Cada raiz lombar tem uma faixa de pele (dermátomo), um músculo que a representa e, às vezes, um reflexo. A raiz **L4** dá sensibilidade na **face medial da perna**, descendo até o maléolo medial (o osso saliente do lado de dentro do tornozelo). Seu músculo representativo é o **tibial anterior**, na frente da perna, que levanta o pé (dorsiflexão) e o vira para dentro (inversão). Seu reflexo é o **patelar**.\n\n**Quem comprime L4.** A hérnia posterolateral do disco L3-L4 comprime a L4 na descida para o forame de baixo. A hérnia foraminal ou extraforaminal do disco L4-L5 também comprime a L4, que sai naquele forame.\n\n**As raízes vizinhas.** A **L5** dá sensibilidade na face lateral da perna e no **dorso do pé**, com o primeiro espaço entre os dedos, e seu músculo representativo é o **extensor longo do hálux**, que levanta o dedão; também comanda o glúteo médio. Não tem reflexo confiável. A **S1** dá sensibilidade na borda lateral e na planta do pé, comanda a panturrilha e os fibulares e tem o reflexo aquileu.\n\n**Como testar o tibial anterior.** Pede-se que o paciente ande apoiado nos calcanhares; quem tem fraqueza de L4 não consegue levantar a ponta do pé. Fraqueza intensa causa o pé caído.\n\n**Um detalhe da questão.** As alternativas C e D têm exatamente o mesmo texto. O conteúdo das duas está correto, e o gabarito oficial é C.\n\n**Na prova:** L4 é a face medial da perna, o tibial anterior e o reflexo patelar; L5 é o dorso do pé e o extensor do hálux.",
+  "correta": "**L4 e tibial anterior.** A face medial da perna é o dermátomo de L4, e o tibial anterior é o seu músculo representativo.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0141": {
-  "conceito": "### Teste de Adams (inclinação anterior)\n1. Paciente em pé, **inclina o tronco para frente** com os joelhos estendidos, os braços pendentes e as mãos juntas.\n2. O examinador olha **de trás** (curvas torácicas e lombares) e **de frente/cima**.\n3. Na curva estruturada, a **rotação vertebral** leva as costelas (ou a musculatura lombar) e forma a ==giba== de um lado.\n\n**Escoliômetro:** mede a rotação do tronco. **5° a 7°** costuma ser o limiar para pedir radiografia.\n\n### Por que é o mais sensível\n- A curva **estruturada** tem **rotação**, e a giba não desaparece.\n- A **postural** (por dor ou discrepância de membros) desaparece na inclinação, ou corrige ao compensar a discrepância com um calço.\n\n### Os outros\n- **Assimetria do talhe** (triângulo da cintura), dos ombros e das escápulas: sinais de inspeção, menos específicos.\n- **Linha de prumo de C7:** avalia **compensação** do tronco (coronal / sagital).\n- **Hoover:** simulação de paresia (pressão no calcanhar contralateral).\n\n> **Na prova:** rastreio da escoliose estruturada = ==teste de Adams==.",
-  "correta": "**Adams.**",
   "incorretas": {
-   "A": "**Talhe.**\n- Sinal de inspeção; não é específico da curva estruturada.",
-   "C": "**Linha de prumo.**\n- Avalia o **equilíbrio** do tronco.",
-   "D": "**Hoover.**\n- Pesquisa **simulação** de déficit motor."
+   "A": "**O talhe é sinal de inspeção.** A assimetria da cintura pode aparecer, mas é menos sensível e também ocorre em desvios posturais.",
+   "C": "**A linha de prumo avalia o equilíbrio.** Ela mostra se o tronco está deslocado em relação à pelve, não se a curva tem rotação.",
+   "D": "**Hoover pesquisa simulação.** É um teste para déficit motor simulado nas pernas, sem relação com o diagnóstico de escoliose."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Escoliose estruturada e não estruturada.** A escoliose **estruturada** é a verdadeira: além do desvio lateral, as vértebras **giram**, e a curva não desaparece com mudanças de posição. A **não estruturada**, ou postural, é um desvio sem rotação, causado por dor, espasmo ou diferença no comprimento das pernas; ela some ao deitar, ao inclinar para a frente ou ao nivelar a pelve com um calço.\n\n**O teste de Adams.** O paciente fica em pé, com os joelhos estendidos, e inclina o tronco para a frente, com os braços pendendo e as mãos juntas. O examinador olha por trás, na altura das costas. Na escoliose estruturada, a rotação das vértebras levanta as costelas de um lado (ou a musculatura lombar), formando uma **giba**, uma saliência assimétrica. Na postural, a giba não aparece.\n\n**Por que é o mais sensível.** O teste revela justamente a rotação, a característica que define a curva estruturada, e a torna visível mesmo em curvas pequenas. Por isso é o teste usado para rastreamento nas escolas e consultórios. Com um **escoliômetro**, uma régua com nível colocada sobre a giba, mede-se a rotação do tronco; de 5 a 7 graus costuma ser o limiar para pedir radiografia.\n\n**Os outros sinais.** A assimetria do **talhe** (o triângulo entre o braço e a cintura), dos ombros e das escápulas são sinais de inspeção úteis, mas menos sensíveis e menos específicos. A **linha de prumo** a partir de C7 avalia se o tronco está compensado sobre a pelve, não se a curva é estruturada. O **sinal de Hoover** pesquisa simulação de fraqueza nas pernas: ao tentar levantar a perna fraca, o paciente normalmente empurra o calcanhar oposto contra a mesa.\n\n**Na prova:** o teste mais sensível para escoliose estruturada é o de Adams, que mostra a giba da rotação.",
+  "correta": "**Adams.** A inclinação para a frente evidencia a giba causada pela rotação vertebral, marca da escoliose estruturada.",
+  "referencias": [
+   "Bunnell WP. An objective criterion for scoliosis screening. J Bone Joint Surg Am. 1984;66(9):1381-1387.",
+   "Karachalios T, Sofianos J, Roidis N et al. Ten-year follow-up evaluation of a school screening program for scoliosis: is the forward-bending test an accurate diagnostic criterion for the screening of scoliosis? Spine. 1999;24(22):2318-2324."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0146": {
-  "conceito": "### Complicações da artrodese cervical anterior (ACDF)\n| Complicação | Comentário |\n|---|---|\n| ==Disfagia== | **a mais comum**; frequente no pós-operatório imediato, por edema e afastamento; costuma regredir |\n| Disfonia / rouquidão | laríngeo recorrente, geralmente transitória |\n| Hematoma cervical | raro, mas pode **obstruir a via aérea**: emergência |\n| Pseudartrose | mais comum em fusões multinível e em tabagistas |\n| Doença do nível adjacente | tardia |\n| Horner | cadeia simpática; rara |\n| Lesão esofágica | rara, grave |\n| Infecção | rara, pela ótima vascularização |\n| Soltura / migração do implante | pouco frequente |\n\n### Por que não o torácico longo\nO **nervo torácico longo** (C5 a C7) corre na **parede lateral do tórax**, sobre o serrátil. Não está no trajeto do acesso anterior. Sua lesão (escápula alada) ocorre em cirurgias axilares e da parede torácica, e no trauma por tração.\n\n> **Na prova:** complicação mais comum da ACDF = ==disfagia==.",
-  "correta": "**Disfagia.**",
   "incorretas": {
-   "B": "**Infecção.**\n- Rara nessa via bem vascularizada.",
-   "C": "**Torácico longo.**\n- Fora do trajeto do acesso anterior.",
-   "D": "**Soltura do implante.**\n- Tardia e bem menos frequente."
+   "B": "**Infecção é rara.** A boa irrigação da região anterior do pescoço faz da infecção uma complicação incomum nessa via.",
+   "C": "**O torácico longo não está no caminho.** Ele corre na parede lateral do tórax, sobre o serrátil anterior; o acesso cervical anterior não passa por ali.",
+   "D": "**A soltura do implante é pouco frequente.** Pode ocorrer, sobretudo mais tarde e em fusões longas, mas está longe da frequência da disfagia."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é a fusão cervical anterior.** É a cirurgia em que se retira o disco cervical doente pela frente do pescoço e se coloca um enxerto ou espaçador, com ou sem placa, para fundir as duas vértebras. É conhecida pela sigla ACDF (do inglês, discectomia e fusão cervical anterior). O acesso passa entre a bainha carotídea, por fora, e a traqueia e o esôfago, por dentro, que são afastados para o lado.\n\n**A complicação mais comum: disfagia.** Disfagia é a dificuldade para engolir. Durante a cirurgia, o esôfago e a faringe ficam comprimidos pelo afastador; no pós-operatório incham. A dificuldade para engolir é muito frequente nos primeiros dias e costuma regredir; uma minoria mantém sintomas por mais tempo. Afastamento intermitente, menor pressão no balonete do tubo de intubação e placas de perfil baixo ajudam a reduzi-la.\n\n**As outras complicações.** Rouquidão, por lesão do nervo laríngeo recorrente, geralmente transitória. Hematoma no pescoço, raro mas perigoso porque pode comprimir a traqueia. Pseudartrose (falha da fusão), mais comum em fusões de vários níveis e em fumantes. Doença do nível adjacente, tardia. Síndrome de Horner e lesão do esôfago, raras.\n\n**Por que infecção e soltura são raras.** A região anterior do pescoço é muito bem irrigada e tem pouca gordura, e a **infecção** é incomum. A **soltura do implante** acontece, mas bem menos que a disfagia, e geralmente mais tarde.\n\n**O nervo torácico longo está longe.** Ele nasce das raízes C5 a C7 e desce pela parede lateral do tórax, sobre o músculo serrátil anterior. Sua lesão causa escápula alada e ocorre em cirurgias da axila e da parede torácica ou por tração, fora do trajeto do acesso cervical anterior.\n\n**Na prova:** a complicação mais comum da fusão cervical anterior é a disfagia.",
+  "correta": "**Disfagia.** O afastamento e o edema do esôfago e da faringe tornam a dificuldade para engolir a complicação mais frequente dessa cirurgia.",
+  "referencias": [
+   "Bazaz R, Lee MJ, Yoo JU. Incidence of dysphagia after anterior cervical spine surgery: a prospective study. Spine. 2002;27(22):2453-2458.",
+   "Fountas KN, Kapsalaki EZ, Nikolakakos LG et al. Anterior cervical discectomy and fusion associated complications. Spine. 2007;32(21):2310-2317."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0147": {
-  "conceito": "### Artroplastia de disco cervical\n**Objetivo:** preservar o **movimento** do segmento e reduzir a sobrecarga (e a doença) do **nível adjacente**.\n\n**Indicações:**\n- radiculopatia e/ou mielopatia por **hérnia mole** ou osteofitose discreta;\n- **1 a 2 níveis**, entre C3 e C7;\n- falha do tratamento conservador (~6 semanas ou mais), ou déficit progressivo;\n- adultos (as faixas estudadas vão de ~18 a 20 até ~60 a 70 anos).\n\n**Contraindicações:**\n- ==doença em 3 ou mais níveis== (contraindicação relativa, dependendo do implante e da evidência);\n- **instabilidade** ou espondilolistese;\n- **artrose facetária** importante;\n- disco **colapsado** (altura muito reduzida), segmento **sem movimento**;\n- **OLLP** (ossificação do ligamento longitudinal posterior);\n- **cifose** ou deformidade;\n- **osteoporose**, infecção, tumor, doença inflamatória.\n\n**Resultados:** comparáveis ou discretamente superiores à ACDF em estudos de 1 a 2 níveis, com menos reoperação no nível adjacente em algumas séries.\n\n> **Na prova:** contraindicação à artroplastia cervical = ==3 ou mais níveis==.",
-  "correta": "**Doença em três níveis.**",
   "incorretas": {
-   "A": "**20 a 70 anos.**\n- Faixa aceitável.",
-   "B": "**Falha de 6 semanas de tratamento.**\n- Faz parte da **indicação**.",
-   "D": "**Hérnia de núcleo pulposo.**\n- É a **indicação** clássica."
+   "A": "**É a faixa etária dos estudos.** Adultos entre cerca de 20 e 70 anos estão dentro do perfil em que a artroplastia foi avaliada; não é contraindicação.",
+   "B": "**É parte da indicação.** A falha de cerca de seis semanas de tratamento não cirúrgico é justamente o critério para considerar a cirurgia.",
+   "D": "**É a indicação clássica.** A hérnia de núcleo pulposo, a hérnia de disco mole, é a situação em que a prótese funciona melhor."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é a artroplastia de disco cervical.** É a substituição do disco cervical doente por uma prótese que se move, em vez de fundir as vértebras. O objetivo é **preservar o movimento** daquele segmento e, com isso, reduzir a sobrecarga sobre os discos vizinhos, que tendem a degenerar mais depressa depois de uma fusão (doença do nível adjacente).\n\n**Quando ela é indicada.** Radiculopatia (compressão de raiz, com dor e alteração no braço) ou mielopatia (compressão da medula) causada por **hérnia de disco mole** ou por poucos osteófitos, em **um ou dois níveis** entre C3 e C7, depois de falha do tratamento conservador por cerca de seis semanas ou mais, ou quando há déficit neurológico progressivo. Os estudos incluíram adultos de aproximadamente 18 a 20 até 60 a 70 anos.\n\n**Quando ela é contraindicada.** **Doença em três ou mais níveis**, para a qual há menos evidência e a artrodese é a escolha habitual. **Instabilidade** ou espondilolistese. **Artrose das facetas** importante, porque a prótese manteria o movimento em articulações já doloridas. **Disco colapsado**, com o segmento praticamente sem movimento. Ossificação do ligamento longitudinal posterior, cifose ou outras deformidades. **Osteoporose**, infecção, tumor ou doenças inflamatórias, que comprometem a fixação da prótese.\n\n**Resultados.** Em um e dois níveis, os ensaios clínicos mostraram resultados comparáveis ou pouco melhores que a artrodese, com menos reoperações no nível adjacente em algumas séries.\n\n**Na prova:** artroplastia cervical é para hérnia mole em um ou dois níveis; doença em três níveis é contraindicação.",
+  "correta": "**Doença acometendo três níveis.** A artroplastia foi estudada e é indicada para um ou dois níveis; doença em três ou mais níveis é contraindicação, e a artrodese é a opção habitual.",
+  "referencias": [
+   "Mummaneni PV, Burkus JK, Haid RW, Traynelis VC, Zdeblick TA. Clinical and radiographic analysis of cervical disc arthroplasty compared with allograft fusion: a randomized controlled clinical trial. J Neurosurg Spine. 2007;6(3):198-209."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0148": {
-  "conceito": "### Radiografia na dor lombar: quando pedir\n**Bandeiras vermelhas:**\n- idade **acima de 50** ou abaixo de 20;\n- **trauma**;\n- **câncer** (história pessoal), perda de peso;\n- **febre**, imunossupressão, drogas injetáveis, álcool;\n- ==uso crônico de corticoide==: risco de **fratura por insuficiência** (osteoporose induzida) e de **infecção**;\n- déficit neurológico, cauda equina.\n\n**Evolução fora do esperado:** falha após ~4 a 6 semanas, ou retorno precoce pela mesma dor.\n\n### Atenção às armadilhas\n- **Idade:** o corte é **50**, não 40.\n- **Esporte de impacto:** no **adolescente** com dor em **extensão**, pense em **espondilólise**. Mas isso, por si só, não é bandeira vermelha.\n\n> **Na prova:** entre as opções, indica radiografia o ==uso de corticoide==.",
-  "correta": "**Uso de corticosteroides.**",
   "incorretas": {
-   "A": "**Mais de 40 anos.**\n- O corte é **50**.",
-   "B": "**Esporte de impacto.**\n- Não é bandeira vermelha (atenção à espondilólise no jovem).",
-   "D": "**Retorno em menos de 3 meses.**\n- O critério de persistência mais citado é o retorno em **menos de 30 dias**."
+   "A": "**O corte de idade é 50 anos.** Acima dos 50 cresce a chance de câncer e de fratura osteoporótica; 40 anos, sozinho, não indica radiografia.",
+   "B": "**Esporte de impacto não é bandeira vermelha.** No adolescente com dor à extensão, ele levanta a suspeita de espondilólise, mas por si só não indica imagem na dor lombar comum.",
+   "D": "**O prazo citado é de menos de 30 dias.** O retorno precoce pela mesma dor é considerado quando ocorre em menos de um mês; três meses não é o critério usado."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Quando pedir radiografia na dor lombar.** A maioria das dores lombares é benigna e melhora em semanas. Sem sinais de alarme, a radiografia não muda a conduta e mostra achados comuns em pessoas sem dor, levando a exames e tratamentos desnecessários. A imagem fica reservada para as **bandeiras vermelhas**, sinais de possível causa grave.\n\n**As bandeiras vermelhas, por causa suspeita.** **Fratura**: trauma importante, ou trauma leve em idoso, osteoporótico ou usuário crônico de **corticoide**. **Câncer**: história pessoal de câncer, perda de peso sem explicação, dor noturna, idade acima de 50 anos. **Infecção**: febre, imunossupressão, drogas injetáveis, abuso de álcool. **Compressão neurológica**: déficit progressivo e síndrome da cauda equina (anestesia em sela, alteração da bexiga). Também se investiga a dor que não melhora após quatro a seis semanas ou que faz o paciente voltar em pouco tempo.\n\n**Por que o corticoide pesa.** O uso prolongado de corticoide causa **osteoporose**: o osso perde massa e uma vértebra pode fraturar com esforço mínimo (fratura por insuficiência). Além disso, o corticoide reduz a imunidade e aumenta o risco de infecção da coluna. Por isso, dor lombar num usuário crônico de corticoide indica radiografia.\n\n**As armadilhas da questão.** O corte de idade usado é **50 anos**, e não 40. O esporte de impacto, isoladamente, não é bandeira vermelha; no adolescente que dói ao estender a coluna, porém, deve-se pensar em espondilólise, a fratura por estresse da pars interarticularis. E o critério de retorno precoce mais citado é voltar em **menos de 30 dias** pela mesma dor, não em três meses.\n\n**Na prova:** entre as opções, o uso de corticoide indica radiografia, pelo risco de fratura osteoporótica e de infecção.",
+  "correta": "**Uso de corticosteroides.** O corticoide crônico enfraquece o osso e reduz a imunidade, aumentando o risco de fratura vertebral por insuficiência e de infecção.",
+  "referencias": [
+   "Chou R, Qaseem A, Snow V et al. Diagnosis and treatment of low back pain: a joint clinical practice guideline from the American College of Physicians and the American Pain Society. Ann Intern Med. 2007;147(7):478-491.",
+   "Chou R, Qaseem A, Owens DK, Shekelle P. Diagnostic imaging for low back pain: advice for high-value health care from the American College of Physicians. Ann Intern Med. 2011;154(3):181-189."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0149": {
@@ -1747,14 +1771,18 @@
   "conferido": false
  },
  "coluna-0150": {
-  "conceito": "### Parafusos pediculares na escoliose\n**Vantagens:**\n- fixação das **três colunas**, com ancoragem robusta;\n- ==melhor correção coronal== e **derrotação** vertebral direta (melhora da giba);\n- **menos níveis** instrumentados em alguns casos;\n- **menor perda de correção** e menos pseudartrose;\n- possibilidade de dispensar a liberação anterior em curvas rígidas moderadas.\n\n**Desvantagens:**\n- **custo** maior (mais implantes);\n- **mais radiação** intraoperatória (checagem das trajetórias), a menos que se use navegação;\n- risco de **mau posicionamento**, com lesão da **medula** (medial), da **aorta** (anterolateral esquerda na torácica) ou da **pleura**;\n- pedículos **finos** no lado côncavo torácico apical: técnica cuidadosa.\n\n**Segurança:**\n- **neuromonitorização** (potenciais evocados motores e somatossensitivos);\n- técnica **free-hand** com palpação;\n- **navegação** e robótica.\n\n> **Na prova:** vantagem dos parafusos pediculares = ==melhor correção coronal== (e rotacional).",
-  "correta": "**Melhor correção no plano coronal.**",
   "incorretas": {
-   "A": "**Menor custo.**\n- O custo é **maior**.",
-   "C": "**Menor radiação.**\n- A exposição tende a ser **maior**.",
-   "D": "**Sem risco medular.**\n- O risco existe; é a preocupação central da técnica."
+   "A": "**O custo aumenta.** O número de parafusos e o material encarecem a cirurgia em comparação com ganchos e fios.",
+   "C": "**A radiação tende a ser maior.** A checagem da trajetória dos parafusos exige mais imagens durante a cirurgia, salvo quando se usa navegação.",
+   "D": "**O risco medular existe.** Um parafuso desviado para dentro do canal pode lesar a medula; por isso se usa monitorização neurofisiológica e técnica cuidadosa."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Como se corrige a escoliose na cirurgia.** Na escoliose idiopática grave, faz-se uma artrodese posterior: as vértebras da curva são fixadas a duas hastes e fundidas. O que prende a haste à vértebra são os implantes de ancoragem: antigamente ganchos (que se prendem às lâminas e aos pedículos) e fios; hoje, principalmente **parafusos pediculares**, que atravessam o pedículo até o corpo vertebral.\n\n**Por que o parafuso corrige melhor.** O parafuso pedicular atravessa as três colunas da vértebra (o arco posterior, o pedículo e o corpo), oferecendo uma ancoragem muito mais firme que o gancho. Com ele, o cirurgião consegue empurrar e girar cada vértebra com mais força: obtém **melhor correção no plano coronal** (o desvio lateral, visto de frente) e consegue a **derrotação** direta das vértebras, o que diminui a giba das costelas. Outras vantagens: às vezes menos níveis fundidos, menor perda de correção ao longo do tempo, menos pseudartrose e menor necessidade de liberação anterior em curvas mais rígidas.\n\n**As desvantagens.** O **custo** é maior, porque são usados muitos implantes. A **exposição à radiação** durante a cirurgia tende a ser maior, para checar a posição dos parafusos, a menos que se use navegação. E o **risco** existe: um parafuso fora do pedículo pode lesar a medula (se desviar para dentro), a aorta (à frente e à esquerda, na coluna torácica) ou a pleura. Os pedículos do lado côncavo, no ápice da curva torácica, são finos e exigem técnica cuidadosa.\n\n**Como se reduz o risco.** Monitorização neurofisiológica durante toda a cirurgia, técnica de inserção com palpação do trajeto, navegação e, em alguns centros, robótica.\n\n**Na prova:** a vantagem do parafuso pedicular na escoliose é a melhor correção coronal e rotacional; custo e radiação são maiores, e o risco neurológico existe.",
+  "correta": "**Melhor correção no plano coronal.** A ancoragem nas três colunas permite forças de correção maiores e derrotação direta, corrigindo mais o desvio lateral e a giba.",
+  "referencias": [
+   "Suk SI, Lee CK, Kim WJ, Chung YJ, Park YB. Segmental pedicle screw fixation in the treatment of thoracic idiopathic scoliosis. Spine. 1995;20(12):1399-1405.",
+   "Kim YJ, Lenke LG, Cho SK, Bridwell KH, Sides B, Blanke K. Comparative analysis of pedicle screw versus hook instrumentation in posterior spinal fusion of adolescent idiopathic scoliosis. Spine. 2004;29(18):2040-2048."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0151": {
