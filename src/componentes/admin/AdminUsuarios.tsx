@@ -18,12 +18,18 @@ export interface LinhaUsuario {
   administrador: boolean
   online?: boolean
   aparelho?: string | null
+  // Da migração 202610031200 em diante.
+  situacao?: string | null
+  servico?: string | null
+  cidade?: string | null
+  uf?: string | null
 }
 
-type Filtro = 'todos' | 'online' | 'ativos' | 'assinantes' | 'parados'
+export type FiltroUsuarios = 'todos' | 'online' | 'hoje' | 'ativos' | 'novos' | 'novos_parados' | 'assinantes' | 'parados'
+type Filtro = FiltroUsuarios
 type Ordem = 'respondidas' | 'acerto' | 'semana' | 'atividade' | 'cadastro'
 
-const FILTROS: Array<[Filtro, string]> = [['todos', 'Todos'], ['online', 'Online agora'], ['ativos', 'Ativos na semana'], ['assinantes', 'Assinantes'], ['parados', 'Sem respostas']]
+const FILTROS: Array<[Filtro, string]> = [['todos', 'Todos'], ['online', 'Online agora'], ['hoje', 'Ativos hoje'], ['ativos', 'Ativos na semana'], ['novos', 'Recém-cadastrados'], ['novos_parados', 'Novos que pararam'], ['assinantes', 'Assinantes'], ['parados', 'Sem respostas']]
 const ORDENS: Array<[Ordem, string]> = [
   ['respondidas', 'Mais questões'], ['acerto', 'Maior acerto'], ['semana', 'Mais na semana'],
   ['atividade', 'Atividade mais recente'], ['cadastro', 'Cadastro mais recente'],
@@ -32,25 +38,32 @@ const ORDENS: Array<[Ordem, string]> = [
 const MINIMO_PARA_ACERTO = 20
 
 const ativo7d = (u: LinhaUsuario) => u.respondidas_7d > 0
+const diaSP = (d: Date | string) => new Date(d).toLocaleDateString('sv-SE', { timeZone: 'America/Sao_Paulo' })
+export const ativoHoje = (u: LinhaUsuario) => !!u.ultima_atividade && diaSP(u.ultima_atividade) === diaSP(new Date())
+/** Cadastro nos últimos 14 dias. */
+const novo = (u: LinhaUsuario) => Date.now() - new Date(u.criado_em).getTime() < 14 * 86_400_000
+/** Chegou há pelo menos 2 dias, nos últimos 30, fez menos de 10 questões e não estudou nos últimos 2 dias: pede um empurrão. */
+const novoParado = (u: LinhaUsuario) => {
+  const idade = Date.now() - new Date(u.criado_em).getTime()
+  const parado = !u.ultima_atividade || Date.now() - new Date(u.ultima_atividade).getTime() > 2 * 86_400_000
+  return idade > 2 * 86_400_000 && idade < 30 * 86_400_000 && u.respondidas < 10 && parado
+}
+const passaFiltro = (u: LinhaUsuario, f: Filtro) => f === 'todos' || (f === 'online' && !!u.online) || (f === 'hoje' && ativoHoje(u)) || (f === 'ativos' && ativo7d(u))
+  || (f === 'novos' && novo(u)) || (f === 'novos_parados' && novoParado(u)) || (f === 'assinantes' && !!u.plano_vigente) || (f === 'parados' && u.respondidas === 0)
+const SITUACAO: Record<string, string> = { residente: 'Residente', ortopedista: 'Ortopedista', outro: 'Outro' }
 const acertoDe = (u: LinhaUsuario) => porcentagem(u.acertos, u.acertos + u.erros)
 
 /**
  * Ranking privado: todas as contas (inclusive quem saiu do ranking público),
  * com total de questões, acerto e atividade. Só o administrador vê.
  */
-export function AdminUsuarios({ usuarios }: { usuarios: LinhaUsuario[] }) {
+export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios: LinhaUsuario[]; filtroInicial?: FiltroUsuarios }) {
   const [busca, definirBusca] = useState('')
-  const [filtro, definirFiltro] = useState<Filtro>('todos')
-  const [ordem, definirOrdem] = useState<Ordem>('respondidas')
+  const [filtro, definirFiltro] = useState<Filtro>(filtroInicial)
+  const [ordem, definirOrdem] = useState<Ordem>(filtroInicial === 'novos' || filtroInicial === 'novos_parados' ? 'cadastro' : filtroInicial === 'hoje' ? 'atividade' : 'respondidas')
   const [aberto, definirAberto] = useState<LinhaUsuario | null>(null)
 
-  const contagem: Record<Filtro, number> = useMemo(() => ({
-    todos: usuarios.length,
-    online: usuarios.filter(u => u.online).length,
-    ativos: usuarios.filter(ativo7d).length,
-    assinantes: usuarios.filter(u => u.plano_vigente).length,
-    parados: usuarios.filter(u => u.respondidas === 0).length,
-  }), [usuarios])
+  const contagem = useMemo(() => Object.fromEntries(FILTROS.map(([f]) => [f, usuarios.filter(u => passaFiltro(u, f)).length])) as Record<Filtro, number>, [usuarios])
 
   const totais = useMemo(() => {
     const acertos = usuarios.reduce((s, u) => s + u.acertos, 0)
@@ -60,9 +73,7 @@ export function AdminUsuarios({ usuarios }: { usuarios: LinhaUsuario[] }) {
 
   const visiveis = useMemo(() => {
     const termo = normalizar(busca.trim())
-    const lista = usuarios.filter(u =>
-      (filtro === 'todos' || (filtro === 'online' && !!u.online) || (filtro === 'ativos' && ativo7d(u)) || (filtro === 'assinantes' && !!u.plano_vigente) || (filtro === 'parados' && u.respondidas === 0))
-      && corresponde([u.nome, u.email], termo))
+    const lista = usuarios.filter(u => passaFiltro(u, filtro) && corresponde([u.nome, u.email, u.servico, u.cidade], termo))
     const tempo = (v: string | null) => v ? new Date(v).getTime() : 0
     const chave: Record<Ordem, (u: LinhaUsuario) => number> = {
       respondidas: u => u.respondidas,
@@ -88,11 +99,12 @@ export function AdminUsuarios({ usuarios }: { usuarios: LinhaUsuario[] }) {
       {FILTROS.map(([valor, rotulo]) => <button key={valor} type="button" className="adm-chip" aria-pressed={filtro === valor} onClick={() => definirFiltro(valor)}>{rotulo}<span>{contagem[valor]}</span></button>)}
     </div>
     <div className="adm-busca">
-      <label className="campo">Buscar por nome ou e-mail<input className="entrada" type="search" value={busca} onChange={e => definirBusca(e.target.value)} /></label>
+      <label className="campo">Buscar por nome, e-mail, serviço ou cidade<input className="entrada" type="search" value={busca} onChange={e => definirBusca(e.target.value)} /></label>
       <label className="campo">Ordenar por<select className="entrada" value={ordem} onChange={e => definirOrdem(e.target.value as Ordem)}>
         {ORDENS.map(([valor, rotulo]) => <option key={valor} value={valor}>{rotulo}</option>)}
       </select></label>
     </div>
+    {filtro === 'novos_parados' && <p className="adm-nota adm-dica">Chegaram nas últimas semanas, fizeram menos de 10 questões e não voltaram nos últimos 2 dias. Abra a ficha e use um modelo de e-mail de retorno: um recado pessoal costuma trazer de volta.</p>}
     {ordem === 'acerto' && <p className="adm-nota">Quem respondeu menos de {MINIMO_PARA_ACERTO} questões vai para o fim da lista: com poucas respostas o acerto ainda não diz muito.</p>}
     <div className="adm-linha-nota">
       <p className="adm-nota" role="status">Mostrando {visiveis.length} de {usuarios.length} conta(s). Toque numa pessoa para abrir a ficha.</p>
@@ -112,6 +124,7 @@ export function AdminUsuarios({ usuarios }: { usuarios: LinhaUsuario[] }) {
           <div className="adm-usuario__quem">
             <strong>{u.online && <span className="adm-online" title="Online agora" aria-label="Online agora" />}{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong>
             <span className="adm-usuario__email">{u.email ?? 'conta sem e-mail'}</span>
+            {(u.situacao || u.servico || u.cidade) && <span className="adm-usuario__servico"><Icone nome="bandeira" tamanho={13} />{[SITUACAO[u.situacao ?? ''] ?? u.situacao, u.servico, [u.cidade, u.uf].filter(Boolean).join('/')].filter(Boolean).join(' · ')}</span>}
             <span className="adm-usuario__selos">
               {u.plano_vigente && <span className="adm-selo adm-selo--ok">Assinante {PLANOS[u.plano_vigente]?.toLowerCase() ?? u.plano_vigente}</span>}
               {u.administrador && <span className="adm-selo">Administrador</span>}

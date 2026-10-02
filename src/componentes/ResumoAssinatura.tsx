@@ -1,3 +1,5 @@
+import { IconePixel } from './IconePixel'
+import { Icone } from './Icone'
 import { useCallback, useEffect, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
@@ -86,6 +88,11 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
         <div><dt>Plano</dt><dd>{planoVisivel}</dd></div>
         <div><dt>Status</dt><dd>{statusExibido}</dd></div>
       </dl>
+      {!ativo && !periodoPagoVigente && !detalhada && <a className="inicio-planos-atalho ct-planos" href={href('/assinatura')}>
+        <span className="inicio-planos-atalho__icone"><IconePixel nome="planos" tamanho={48} /></span>
+        <span className="inicio-planos-atalho__texto"><strong>Conheça os planos</strong><em>a partir de R$ 19,99/mês · Pix ou cartão</em><small>Cronograma pelo que mais cai, Simulado Nacional e questões sem limite.</small></span>
+        <span className="inicio-planos-atalho__acao">Ver planos <Icone nome="direita" tamanho={16} /></span>
+      </a>}
       {detalhada ? <>
       {estado?.plano && !ativo && <p className="ct-nota">Plano desta assinatura: {estado.plano}. Seu acesso atual é {planoVisivel.toLowerCase()}.</p>}
       <dl className="conta-assinatura__dados">

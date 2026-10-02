@@ -7,6 +7,7 @@ import { BarrasHorizontais } from './AdminGraficos'
 import type { LinhaUsuario } from './AdminUsuarios'
 import { PLANOS, data, dataHora, haQuanto, motivoFalhaEmail, porcentagem } from './formatos'
 import { escreverRecado } from './recado'
+import { MODELOS, gravarModelosSalvos, lerModelosSalvos, modeloSugerido, preencher, type DadosModelo, type ModeloSalvo } from './modelosEmail'
 
 interface Detalhe {
   respostas: Array<{ id: string; c: string | null; primeira: string | null }>
@@ -34,6 +35,8 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
   const [variante, definirVariante] = useState(0)
   const [cortesiaDias, definirCortesiaDias] = useState('90')
   const [cortesiaMotivo, definirCortesiaMotivo] = useState('')
+  const [salvos, definirSalvos] = useState<ModeloSalvo[]>(lerModelosSalvos)
+  const [modeloEscolhido, definirModeloEscolhido] = useState('')
 
   const carregar = useCallback(async () => {
     try { definirDetalhe(await chamarRpc<Detalhe>('detalhe_usuario_admin', { p_id: usuario.id_usuario })) }
@@ -74,6 +77,22 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
 
   const nome = usuario.nome ?? usuario.email?.split('@')[0] ?? 'Sem nome'
   const acertoGeral = porcentagem(usuario.acertos, usuario.acertos + usuario.erros)
+  const dadosModelo: DadosModelo = {
+    respondidas: usuario.respondidas, acerto: acertoGeral, semana: usuario.respondidas_7d,
+    diasParado: usuario.ultima_atividade ? Math.floor((Date.now() - new Date(usuario.ultima_atividade).getTime()) / 86_400_000) : null,
+    diasConta: Math.floor((Date.now() - new Date(usuario.criado_em).getTime()) / 86_400_000),
+    servico: detalhe?.perfil?.servico ?? usuario.servico ?? null, situacao: detalhe?.perfil?.situacao ?? usuario.situacao ?? null,
+    assinante: !!usuario.plano_vigente,
+  }
+  const sugerido = modeloSugerido(dadosModelo)
+  function usarModelo(id: string) {
+    definirModeloEscolhido(id)
+    const pronto = MODELOS.find(m => m.id === id)
+    const meu = salvos.find(m => m.id === id)
+    if (pronto) definirRecado(pronto.texto(dadosModelo).slice(0, 600))
+    else if (meu) definirRecado(preencher(meu.texto, dadosModelo).slice(0, 600))
+    if (pronto || meu) definirFormato('carta')
+  }
   const cortesiaVale = detalhe?.cortesia && (!detalhe.cortesia.ate || new Date(detalhe.cortesia.ate) > new Date())
 
   // No body: um ancestral com transform (animação de entrada da página) deslocava o position: fixed.
@@ -83,6 +102,10 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
         <div>
           <h2 id="adm-ficha-nome">{usuario.online && <span className="adm-online" aria-label="Online agora" />}{nome}</h2>
           <p>{usuario.email}</p>
+          {detalhe?.perfil && (detalhe.perfil.situacao || detalhe.perfil.servico || detalhe.perfil.cidade) && <p className="adm-ficha__servico">
+            <Icone nome="bandeira" tamanho={16} />
+            <span>{detalhe.perfil.situacao && <strong>{SITUACAO[detalhe.perfil.situacao] ?? detalhe.perfil.situacao}</strong>}{detalhe.perfil.servico && <> · {detalhe.perfil.servico}</>}{(detalhe.perfil.cidade || detalhe.perfil.uf) && <> · {[detalhe.perfil.cidade, detalhe.perfil.uf].filter(Boolean).join('/')}</>}</span>
+          </p>}
           <div className="adm-usuario__selos">
             {usuario.plano_vigente && <span className="adm-selo adm-selo--ok">Assinante {PLANOS[usuario.plano_vigente]?.toLowerCase()}</span>}
             {cortesiaVale && <span className="adm-selo adm-selo--ok">Cortesia{detalhe?.cortesia?.ate ? ` até ${data(detalhe.cortesia.ate)}` : ''}</span>}
@@ -106,16 +129,40 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
           <div><dt>Última atividade</dt><dd>{haQuanto(usuario.ultima_atividade)}</dd></div>
           <div><dt>Aparelho</dt><dd>{detalhe.aparelho?.descricao && detalhe.aparelho.descricao !== 'suporte' ? detalhe.aparelho.descricao : '—'}</dd></div>
         </dl>
-        {detalhe.perfil && (detalhe.perfil.situacao || detalhe.perfil.servico) && <p className="adm-nota">{[SITUACAO[detalhe.perfil.situacao ?? ''] ?? detalhe.perfil.situacao, detalhe.perfil.servico, [detalhe.perfil.cidade, detalhe.perfil.uf].filter(Boolean).join('/')].filter(Boolean).join(' · ')}</p>}
 
         <section className="empilha">
-          <h3 className="adm-subtitulo">Mandar parabéns por e-mail</h3>
+          <h3 className="adm-subtitulo">Mandar uma carta por e-mail</h3>
           {!detalhe.emails_conquistas ? <p className="adm-vazio">Esta pessoa desligou os e-mails de conquistas.</p> : <>
             <fieldset className="adm-formato">
               <legend>Formato</legend>
               <label className="caixa"><input type="radio" name="formato-email" checked={formato === 'carta'} onChange={() => definirFormato('carta')} /><span><strong>Carta pessoal</strong> · texto simples, assinado por você. Tem mais chance de ficar fora de Promoções no Gmail.</span></label>
               <label className="caixa"><input type="radio" name="formato-email" checked={formato === 'cartao'} onChange={() => definirFormato('cartao')} /><span><strong>Cartão com emblema</strong> · mais bonito, mas o Gmail tende a pôr em Promoções.</span></label>
             </fieldset>
+            {formato === 'carta' && <div className="adm-modelos">
+              <label className="campo">Começar de um modelo
+                <select className="entrada" value={modeloEscolhido} onChange={e => usarModelo(e.target.value)}>
+                  <option value="">Escolha um modelo…</option>
+                  {(['Retorno', 'Pessoal'] as const).map(g => <optgroup key={g} label={g === 'Retorno' ? 'Trazer de volta' : 'Pessoal'}>
+                    {MODELOS.filter(m => m.grupo === g).map(m => <option key={m.id} value={m.id}>{m.titulo}{m.id === sugerido ? ' (sugerido)' : ''}</option>)}
+                  </optgroup>)}
+                  {salvos.length > 0 && <optgroup label="Meus modelos">{salvos.map(m => <option key={m.id} value={m.id}>{m.titulo}</option>)}</optgroup>}
+                </select>
+              </label>
+              <div className="adm-modelos__atalhos">
+                {MODELOS.filter(m => m.id === sugerido).map(m => <button key={m.id} type="button" className="adm-chip adm-chip--sugerido" onClick={() => usarModelo(m.id)}><Icone nome="estrela" tamanho={14} /> Sugerido: {m.titulo}</button>)}
+                <button type="button" className="adm-chip" disabled={!recado.trim()} onClick={() => {
+                  const titulo = window.prompt('Nome do modelo (fica salvo neste navegador). Use {questoes}, {servico}, {dias} ou {prova} para preencher sozinho.')
+                  if (!titulo?.trim()) return
+                  const lista = [...salvos, { id: `meu-${Date.now()}`, titulo: titulo.trim().slice(0, 60), texto: recado }]
+                  definirSalvos(lista); gravarModelosSalvos(lista); definirAviso('Modelo salvo.')
+                }}><Icone nome="baixar" tamanho={14} /> Salvar como modelo</button>
+                {salvos.some(m => m.id === modeloEscolhido) && <button type="button" className="adm-chip" onClick={() => {
+                  if (!window.confirm('Apagar este modelo salvo?')) return
+                  const lista = salvos.filter(m => m.id !== modeloEscolhido)
+                  definirSalvos(lista); gravarModelosSalvos(lista); definirModeloEscolhido('')
+                }}><Icone nome="lixeira" tamanho={14} /> Apagar modelo</button>}
+              </div>
+            </div>}
             <label className="campo">{formato === 'carta' ? 'Texto da carta (se ficar vazio, vai um parabéns padrão)' : 'Recado seu (opcional, aparece destacado no e-mail)'}<textarea className="entrada" rows={formato === 'carta' ? 7 : 3} maxLength={600} value={recado} onChange={e => definirRecado(e.target.value)} placeholder="Ex.: Vi seu ritmo nas últimas semanas e fiquei feliz. Continue assim!" /></label>
             <div className="linha adm-recado__acoes">
               <button type="button" className="botao botao--fantasma" onClick={() => {

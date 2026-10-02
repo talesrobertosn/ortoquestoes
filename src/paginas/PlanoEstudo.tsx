@@ -17,6 +17,8 @@ import '../estilos/paginas/PlanoEstudo.css'
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const ROTULO_COBRANCA: Record<number, string> = { 4: 'prioridade máxima', 3: 'prioridade alta', 2: 'prioridade média', 1: 'prioridade baixa', 0: 'fora do ranking' }
 const PROVAS = ['TEOT', 'TARO', 'ENARE R4', 'Outra prova']
+/** Próxima prova teórica do TEOT e do TEPOT: vem preenchida por padrão. */
+const DATA_TEOT = '2027-01-10'
 /** Semanas que o não assinante vê na prévia do próprio cronograma. */
 const SEMANAS_PREVIA = 2
 const curta = (d: Date) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
@@ -66,6 +68,16 @@ export function PlanoEstudo() {
     navegar('/sessao')
   }
 
+  function adiantar(n: number) {
+    if (!indice || !calculo) return
+    const tema = proximoTema(calculo)
+    if (!tema) return
+    if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
+    const filtros = { ...FILTROS_VAZIOS, temas: [tema.slug], situacao: 'naoRespondidas' as const, embaralhar: true, limite: n }
+    iniciar(filtros, idsDoDia(indice, tema.slug, respondidas, n), { origem: 'cronograma' })
+    navegar('/sessao')
+  }
+
   if (editando || !plano || !calculo) {
     return <FormularioPlano indice={indice} respondidas={respondidas} atual={plano} aoCancelar={plano ? () => definirEditando(false) : undefined}
       aoSalvar={(novo) => { definirPlano(novo); definirEditando(false) }} />
@@ -74,12 +86,25 @@ export function PlanoEstudo() {
   return (
     <div className="empilha-2 pe">
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
-      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={comecarHoje} pendente={sessaoPendente(sessao)} />
+      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={comecarHoje} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} />
       <div className="linha">
         <button type="button" className="botao" onClick={() => definirEditando(true)}><Icone nome="lapis" tamanho={16} /> Ajustar o cronograma</button>
       </div>
     </div>
   )
+}
+
+/**
+ * O próximo tema da fila do cronograma, para quem quer fazer mais que a meta:
+ * o tema desta semana que ainda tem questões, ou o primeiro da semana seguinte.
+ */
+function proximoTema(calculo: CalculoPlano): { slug: string; nome: string; semana: Date; estaSemana: boolean } | null {
+  const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
+  for (const s of calculo.semanas) {
+    if (!s.temas.length || s.fim < hoje) continue
+    return { slug: s.temas[0].slug, nome: s.temas[0].nome, semana: s.inicio, estaSemana: s.atual }
+  }
+  return null
 }
 
 /** Sessão do cronograma que ficou pela metade (a pessoa fechou o site no meio). */
@@ -90,7 +115,10 @@ function sessaoPendente(sessao: EstadoSessao | null): { feitas: number; total: n
   return { feitas, total: sessao.ids.length, tema: sessao.filtros.temas[0] ?? '' }
 }
 
-function VisaoCronograma({ plano, calculo, aberto, aoComecar, pendente = null }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; pendente?: { feitas: number; total: number; tema: string } | null }) {
+function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, pendente = null }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string } | null }) {
+  const proximo = proximoTema(calculo)
+  const [explicacaoAberta] = useState(primeiraVisita)
+  const podeAdiantar = aberto && !!aoAdiantar && !!proximo && !calculo.naRetaFinal && !calculo.provaPassou && calculo.restante > 0
   const nomeTemaPendente = pendente ? calculo.temas.find((t) => t.slug === pendente.tema)?.nome ?? 'o tema do dia' : ''
   const ritmoTexto = !aberto || Math.abs(calculo.ritmo) <= 5 || calculo.esperadoAteHoje < 20
     ? { classe: 'em-dia', texto: aberto ? 'Em dia com o cronograma' : 'Começando hoje' }
@@ -185,7 +213,7 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, pendente = null }:
         ) : calculo.restante === 0 ? (
           <><h2>Você cumpriu o cronograma inteiro</h2><p className="texto-2">Mantenha a revisão em dia e faça o Simulado Nacional do mês.</p></>
         ) : (
-          <><h2>Meta de hoje cumprida</h2><p className="texto-2">Amanhã tem mais. Se sobrar fôlego, adiante a próxima.</p></>
+          <><h2>Meta de hoje cumprida</h2><p className="texto-2">Amanhã tem mais. Se sobrar fôlego, adiante as próximas logo abaixo.</p></>
         )}
       </div>
       <div className="pe-hoje__acoes">
@@ -201,6 +229,19 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, pendente = null }:
         )}
       </div>
     </section>
+
+    {podeAdiantar && proximo && <section className={'pe-adiantar' + (calculo.hoje ? '' : ' pe-adiantar--destaque')} aria-labelledby="pe-adiantar-titulo">
+      <span className="pe-adiantar__icone" aria-hidden="true"><Icone nome="raio" tamanho={22} /></span>
+      <div className="pe-adiantar__texto">
+        <h2 id="pe-adiantar-titulo">{calculo.hoje ? 'Terminou e quer mais?' : 'Meta de hoje feita. Quer adiantar?'}</h2>
+        <p>Puxe as próximas questões do cronograma: <b>{proximo.nome}</b>{proximo.estaSemana ? ', o próximo tema desta semana' : `, da semana de ${curta(proximo.semana)}`}. O que você adiantar hoje alivia a meta dos próximos dias.</p>
+      </div>
+      <div className="pe-adiantar__acoes">
+        <button type="button" className="botao" onClick={() => aoAdiantar!(10)}>+10 questões</button>
+        <button type="button" className="botao" onClick={() => aoAdiantar!(20)}>+20</button>
+        <button type="button" className={'botao ' + (calculo.hoje ? '' : 'botao--principal')} onClick={() => aoAdiantar!(Math.max(10, calculo.metaDiaria))}>Adiantar um dia ({Math.max(10, calculo.metaDiaria)})</button>
+      </div>
+    </section>}
 
     {aberto && <div className="pe-duas">
       <section className="cartao cartao__corpo pe-progresso">
@@ -222,7 +263,7 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, pendente = null }:
       </section>
     </div>}
 
-    <details className="cartao cartao__corpo pe-entenda">
+    <details className="cartao cartao__corpo pe-entenda" open={explicacaoAberta}>
       <summary><Icone nome="interrogacao" tamanho={18} /> Como o cronograma funciona</summary>
       <ul>
         <li><strong>Meta de hoje:</strong> questões novas (que você ainda não fez) para hoje. As revisões do dia são à parte, na página Revisão.</li>
@@ -230,6 +271,7 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, pendente = null }:
         <li><strong>À frente ou atrás:</strong> compara o que você fez com o esperado até hoje. Atrasou, a meta dos próximos dias sobe um pouco; adiantou, ela alivia.</li>
         <li><strong>Reta final:</strong> a última semana antes da prova não tem conteúdo novo. É para refazer os erros, as marcadas com dúvida e fazer um simulado.</li>
         <li><strong>Intensidade:</strong> leve cobre metade das questões que faltam, firme 80% e completo todas. Dá para mudar em "Ajustar o cronograma".</li>
+        <li><strong>Adiantar:</strong> terminou a meta e quer mais? Puxe as próximas questões do cronograma (inclusive da semana que vem). Elas contam como feitas e a meta dos próximos dias diminui.</li>
       </ul>
     </details>
 
@@ -259,6 +301,15 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, pendente = null }:
       )}
     </section>
   </>
+}
+
+/** A explicação do cronograma vem aberta só na primeira vez que a pessoa vê o próprio cronograma. */
+function primeiraVisita(): boolean {
+  try {
+    if (localStorage.getItem('ortoquestoes:cronograma-visto')) return false
+    localStorage.setItem('ortoquestoes:cronograma-visto', '1')
+    return true
+  } catch { return false }
 }
 
 /** O que o cronograma faz, em três passos. */
@@ -302,7 +353,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   /** Sem salvar no servidor: monta a prévia no próprio aparelho. */
   previa?: boolean
 }) {
-  const [data, definirData] = useState(atual?.data_prova ?? '')
+  const [data, definirData] = useState(atual?.data_prova ?? (dataLocal(DATA_TEOT) > new Date() ? DATA_TEOT : ''))
   const [prova, definirProva] = useState(atual?.prova ?? 'TEOT')
   const [intensidade, definirIntensidade] = useState<Intensidade>(atual?.intensidade ?? 'firme')
   const [folgas, definirFolgas] = useState<number[]>(atual?.folgas ?? [0])
@@ -352,12 +403,17 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
               <label className="campo">Prova<select className="entrada" value={PROVAS.includes(prova) ? prova : 'Outra prova'} onChange={(e) => definirProva(e.target.value)}>{PROVAS.map((p) => <option key={p}>{p}</option>)}</select></label>
               <label className="campo">Data da prova<input className="entrada" type="date" min={amanhaIso()} value={data} onChange={(e) => definirData(e.target.value)} /></label>
             </div>
+            {dataLocal(DATA_TEOT) > new Date() && <button type="button" className={'pe-data-atalho' + (data === DATA_TEOT ? ' pe-data-atalho--ativo' : '')} onClick={() => { definirData(DATA_TEOT); if (!PROVAS.slice(0, 2).includes(prova)) definirProva('TEOT') }}>
+              <Icone nome="calendario" tamanho={16} /> <span><strong>TEOT e TEPOT 2027</strong> · prova teórica em 10 de janeiro de 2027</span>{data === DATA_TEOT && <Icone nome="certo" tamanho={16} />}
+            </button>}
+            {dataValida && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Faltam <b>{Math.ceil((dataLocal(data).getTime() - Date.now()) / 86_400_000)} dias</b> até a prova.</p>}
           </div>
         </div>
         <div className="pe-form__passo">
           <span className="tr-etapa__numero">2</span>
           <div className="pe-form__campos">
             <h2>Qual intensidade?</h2>
+            <p className="texto-2">É quanto do acervo você quer cobrir até a prova. O número embaixo de cada opção é a sua meta de questões novas por dia; a revisão do dia é à parte. Dá para trocar depois, e quem termina a meta pode sempre adiantar.</p>
             <div className="pe-intensidades" role="radiogroup" aria-label="Intensidade">
               {(Object.keys(ROTULO_INTENSIDADE) as Intensidade[]).map((i) => (
                 <button key={i} type="button" role="radio" aria-checked={intensidade === i} className="pe-intensidade" onClick={() => definirIntensidade(i)}>

@@ -6,7 +6,8 @@ import { Icone, type NomeIcone } from '../componentes/Icone'
 import { AdminConteudo, type VistaConteudo } from '../componentes/admin/AdminConteudo'
 import { AdminCrescimento } from '../componentes/admin/AdminCrescimento'
 import { AdminConfiguracoes } from '../componentes/admin/AdminConfiguracoes'
-import { AdminUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
+import { AdminUsuarios, ativoHoje, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
+import { AdminFinanceiro } from '../componentes/admin/AdminFinanceiro'
 import { usarLidos } from '../componentes/admin/lidos'
 import {
   PLANOS, STATUS_ASSINATURA, STATUS_EVENTO, TIPOS_EVENTO, baixarCsv, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
@@ -48,10 +49,10 @@ interface Resumo {
   assinantes_vigentes: number
 }
 
-type Aba = 'geral' | 'usuarios' | 'conteudo' | 'crescimento' | 'assinaturas' | 'pagamentos' | 'configuracoes'
+type Aba = 'geral' | 'usuarios' | 'conteudo' | 'crescimento' | 'financeiro' | 'assinaturas' | 'pagamentos' | 'configuracoes'
 const ABAS: Array<[Aba, string, NomeIcone]> = [
   ['geral', 'Visão geral', 'grafico'], ['usuarios', 'Usuários', 'usuario'], ['conteudo', 'Conteúdo', 'livro'],
-  ['crescimento', 'Crescimento', 'raio'], ['assinaturas', 'Assinaturas', 'estrela'], ['pagamentos', 'Pagamentos', 'relogio'],
+  ['crescimento', 'Crescimento', 'raio'], ['financeiro', 'Financeiro', 'grafico'], ['assinaturas', 'Assinaturas', 'estrela'], ['pagamentos', 'Pagamentos', 'relogio'],
   ['configuracoes', 'Ajustes', 'filtro'],
 ]
 const MIGRACAO = '202609290100_painel_admin.sql'
@@ -81,6 +82,7 @@ export function AdminAssinaturas() {
   const [pendenciasConteudo, definirPendenciasConteudo] = useState<number | null>(null)
   const [atualizadoEm, definirAtualizadoEm] = useState<Date | null>(null)
   const lidosPagamento = usarLidos('pagamento')
+  const [filtroUsuarios, definirFiltroUsuarios] = useState<FiltroUsuarios>('todos')
 
   const carregar = useCallback(async () => {
     if (!sessao) return
@@ -107,6 +109,7 @@ export function AdminAssinaturas() {
     document.querySelector('.adm-aba[aria-selected="true"]')?.scrollIntoView({ inline: 'center', block: 'nearest' })
   }, [aba, assinaturas !== null])
 
+  function abrirUsuarios(filtro: FiltroUsuarios) { definirFiltroUsuarios(filtro); trocarAba('usuarios') }
   function trocarAba(nova: Aba) {
     definirAba(nova)
     const base = window.location.hash.split('?')[0] || '#/admin'
@@ -141,8 +144,9 @@ export function AdminAssinaturas() {
 
       {erroNovo && (aba === 'geral' || aba === 'usuarios') && <p role="alert" className="adm-alerta">{erroNovo} Sem ela, usuários ativos e o ranking privado não aparecem; assinaturas, pagamentos e avaliações continuam funcionando.</p>}
 
-      {aba === 'geral' && <VisaoGeral resumo={resumo} usuarios={usuarios} assinaturas={assinaturas} errosPagamento={errosPagamento} mensagens={pendenciasConteudo} irPara={trocarAba} />}
-      {aba === 'usuarios' && usuarios && <AdminUsuarios usuarios={usuarios} />}
+      {aba === 'geral' && <VisaoGeral resumo={resumo} usuarios={usuarios} assinaturas={assinaturas} errosPagamento={errosPagamento} mensagens={pendenciasConteudo} irPara={trocarAba} verUsuarios={abrirUsuarios} />}
+      {aba === 'usuarios' && usuarios && <AdminUsuarios key={filtroUsuarios} usuarios={usuarios} filtroInicial={filtroUsuarios} />}
+      {aba === 'financeiro' && <AdminFinanceiro assinaturas={assinaturas} usuarios={resumo?.usuarios ?? usuarios?.length ?? null} />}
       {aba === 'assinaturas' && <Assinaturas linhas={assinaturas} />}
       {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} recarregar={carregar} lidos={lidosPagamento.lidos} marcar={lidosPagamento.marcar} />}
       {aba === 'crescimento' && <AdminCrescimento assinaturas={assinaturas} />}
@@ -153,10 +157,12 @@ export function AdminAssinaturas() {
   </article>
 }
 
-function VisaoGeral({ resumo, usuarios, assinaturas, errosPagamento, mensagens, irPara }: {
+function VisaoGeral({ resumo, usuarios, assinaturas, errosPagamento, mensagens, irPara, verUsuarios }: {
   resumo: Resumo | null; usuarios: LinhaUsuario[] | null; assinaturas: LinhaAssinatura[]
-  errosPagamento: number; mensagens: number | null; irPara: (aba: Aba) => void
+  errosPagamento: number; mensagens: number | null; irPara: (aba: Aba) => void; verUsuarios: (filtro: FiltroUsuarios) => void
 }) {
+  const hoje = (usuarios ?? []).filter(ativoHoje).sort((a, b) => new Date(b.ultima_atividade ?? 0).getTime() - new Date(a.ultima_atividade ?? 0).getTime())
+  const novos = (usuarios ?? []).filter(u => Date.now() - new Date(u.criado_em).getTime() < 14 * 86_400_000).sort((a, b) => new Date(b.criado_em).getTime() - new Date(a.criado_em).getTime())
   const vigentes = assinaturas.filter(vigente)
   const novasAssinaturas = [...assinaturas].sort((a, b) => new Date(inicioDe(b)).getTime() - new Date(inicioDe(a)).getTime()).slice(0, 4)
   const semana = (usuarios ?? []).filter(u => u.respondidas_7d > 0).sort((a, b) => b.respondidas_7d - a.respondidas_7d).slice(0, 5)
@@ -165,14 +171,29 @@ function VisaoGeral({ resumo, usuarios, assinaturas, errosPagamento, mensagens, 
   return <div className="empilha-2">
     <section className="adm-kpis" aria-label="Números principais">
       <button type="button" className="adm-kpi adm-kpi--botao adm-kpi--online" onClick={() => irPara('usuarios')}><span><i className="adm-online" aria-hidden="true" /> Online agora</span><strong>{n(resumo?.online_agora)}</strong><small>com a conta aberta nos últimos 3 minutos</small></button>
-      <div className="adm-kpi adm-kpi--destaque"><span>Usuários cadastrados</span><strong>{n(resumo?.usuarios)}</strong><small>{resumo ? `+${resumo.novos_7d} nos últimos 7 dias` : 'rode a migração nova'}</small></div>
-      <div className="adm-kpi"><span>Ativos hoje</span><strong>{n(resumo?.ativos_hoje)}</strong><small>responderam ao menos 1 questão</small></div>
-      <div className="adm-kpi"><span>Ativos na semana</span><strong>{n(resumo?.ativos_7d)}</strong><small>{resumo ? `${n(resumo.ativos_30d)} nos últimos 30 dias` : ''}</small></div>
+      <button type="button" className="adm-kpi adm-kpi--botao adm-kpi--destaque" onClick={() => verUsuarios('novos')}><span>Usuários cadastrados</span><strong>{n(resumo?.usuarios)}</strong><small>{resumo ? `+${resumo.novos_7d} nos últimos 7 dias · ver quem chegou` : 'rode a migração nova'}</small></button>
+      <button type="button" className="adm-kpi adm-kpi--botao" onClick={() => verUsuarios('hoje')}><span>Ativos hoje</span><strong>{n(resumo?.ativos_hoje)}</strong><small>toque para ver os nomes</small></button>
+      <button type="button" className="adm-kpi adm-kpi--botao" onClick={() => verUsuarios('ativos')}><span>Ativos na semana</span><strong>{n(resumo?.ativos_7d)}</strong><small>{resumo ? `${n(resumo.ativos_30d)} nos últimos 30 dias · ver nomes` : ''}</small></button>
       <div className="adm-kpi"><span>Questões respondidas</span><strong>{n(resumo?.respondidas_hoje)}</strong><small>{resumo ? `hoje · ${n(resumo.respondidas_7d)} na semana` : 'hoje'}</small></div>
       <div className="adm-kpi"><span>Assinantes com acesso</span><strong>{vigentes.length}</strong><small>{assinaturas.length} assinatura(s) no histórico</small></div>
       <button type="button" className={'adm-kpi adm-kpi--botao' + (errosPagamento ? ' adm-kpi--alerta' : '')} onClick={() => irPara('pagamentos')}><span>Pagamentos com problema</span><strong>{errosPagamento}</strong><small>{errosPagamento ? 'toque para revisar' : 'tudo certo'}</small></button>
       <button type="button" className={'adm-kpi adm-kpi--botao' + (mensagens ? ' adm-kpi--alerta' : '')} onClick={() => irPara('conteudo')}><span>Conteúdo para revisar</span><strong>{mensagens ?? '—'}</strong><small>relatos de erro e "não ajudou" com texto</small></button>
     </section>
+
+    <div className="adm-duas">
+      <section className="adm-secao empilha">
+        <div className="adm-secao__cabeca"><h2>Estudaram hoje <span className="adm-contagem">{hoje.length}</span></h2><button type="button" className="adm-link" onClick={() => verUsuarios('hoje')}>Ver todos <Icone nome="direita" tamanho={14} /></button></div>
+        {!usuarios ? <p className="adm-vazio">Disponível depois da migração nova.</p> : hoje.length === 0 ? <p className="adm-vazio">Ninguém respondeu questões hoje ainda.</p> : <ol className="adm-mini">
+          {hoje.slice(0, 8).map(u => <li key={u.id_usuario}><span className="adm-mini__nome"><span>{u.online && <i className="adm-online" aria-label="Online agora" />}{u.nome ?? u.email}</span><small>{[u.servico, haQuanto(u.ultima_atividade)].filter(Boolean).join(' · ')}</small></span><span className="adm-mini__valor numerico">{u.respondidas_7d}<small>na semana</small></span></li>)}
+        </ol>}
+      </section>
+      <section className="adm-secao empilha">
+        <div className="adm-secao__cabeca"><h2>Recém-cadastrados <span className="adm-contagem">{novos.length}</span></h2><button type="button" className="adm-link" onClick={() => verUsuarios('novos_parados')}>Quem parou <Icone nome="direita" tamanho={14} /></button></div>
+        {!usuarios ? <p className="adm-vazio">Disponível depois da migração nova.</p> : novos.length === 0 ? <p className="adm-vazio">Ninguém se cadastrou nas últimas duas semanas.</p> : <ol className="adm-mini">
+          {novos.slice(0, 8).map(u => <li key={u.id_usuario}><span className="adm-mini__nome">{u.nome ?? u.email}<small>{[u.servico, `chegou ${haQuanto(u.criado_em)}`].filter(Boolean).join(' · ')}</small></span><span className={'adm-selo ' + (u.respondidas === 0 ? 'adm-selo--ruim' : u.respondidas < 10 ? 'adm-selo--neutro' : 'adm-selo--ok')}>{u.respondidas === 0 ? 'não começou' : `${u.respondidas} questões`}</span></li>)}
+        </ol>}
+      </section>
+    </div>
 
     <div className="adm-duas">
       <section className="adm-secao empilha">
