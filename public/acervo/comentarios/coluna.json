@@ -1886,56 +1886,60 @@
   "conferido": false
  },
  "coluna-0159": {
-  "conceito": "### Síndrome medular posterior\n- **Tratos lesados:** colunas posteriores (fascículos grácil e cuneiforme).\n- **Perde:** ==propriocepção==, vibração e tato discriminativo.\n- **Preserva:** ==força==, **dor e temperatura** (espinotalâmico) e tato grosseiro.\n- **Clínica:** **ataxia sensitiva**. O paciente anda com base alargada, olhando os pés, e piora no escuro. **Romberg positivo.**\n- **Causas:**\n  - rara no trauma (hiperextensão, compressão posterior);\n  - **deficiência de vitamina B12** (degeneração combinada subaguda);\n  - **tabes dorsalis** (sífilis);\n  - **óxido nitroso**;\n  - mielopatia por cobre.\n- **Prognóstico:** bom para a força.\n\n### Contraste com as outras\n- **Anterior:** perde motor, dor e temperatura; **preserva** a propriocepção.\n- **Central:** MMSS mais afetados que os MMII.\n- **Cone medular:** esfíncteres, anestesia em sela, disfunção sexual.\n\n> **Na prova:** só a propriocepção alterada = ==medular posterior==.",
-  "correta": "**Medular posterior.**",
   "incorretas": {
-   "A": "**Central.**\n- Déficit **motor** maior nos MMSS.",
-   "B": "**Anterior.**\n- O oposto: **poupa** a propriocepção.",
-   "C": "**Cone medular.**\n- Esfíncteres, sela, disfunção sexual."
+   "A": "Na síndrome central o problema é motor, e maior nos braços que nas pernas. O enunciado diz que a força está preservada.",
+   "B": "A anterior é o oposto exato do enunciado: perde força, dor e temperatura e mantém a propriocepção.",
+   "C": "O cone medular é a ponta final da medula. Sua lesão mexe com bexiga, intestino, função sexual e sensibilidade em sela, e não produz uma perda isolada de propriocepção com força normal."
   },
+  "conceito": "Feche os olhos e toque a ponta do nariz. Você acerta porque o cérebro sabe, o tempo todo, onde está cada parte do corpo, sem precisar olhar. Essa noção se chama **propriocepção**, e ela sobe pela medula por um caminho próprio: as **colunas posteriores**, dois feixes que ficam na parte de trás da medula e também levam a vibração e o tato fino.\n\nOs outros caminhos ficam mais à frente. O comando motor desce pelo trato corticoespinhal, nas laterais. A dor e a temperatura sobem pelo trato espinotalâmico, na parte anterolateral. Por isso uma lesão que pega só a parte de trás da medula produz um quadro muito particular: o paciente tem **força normal**, sente **dor e tato**, mas perde a noção de posição. Essa é a **síndrome medular posterior**.\n\nNa prática ele anda de pernas abertas, olhando para os pés, porque precisa da visão para substituir a informação que perdeu. No escuro ou de olhos fechados, desequilibra (Romberg positivo). Esse padrão tem nome: ataxia sensitiva.\n\nNo trauma ela é rara. Muito mais vezes, quem lesa as colunas posteriores é uma doença: a falta de vitamina B12, a sífilis tardia (tabes dorsalis), o uso abusivo de óxido nitroso, a falta de cobre. Vale guardar isso, porque essas causas aparecem em outras questões.\n\nEla é o espelho da síndrome medular anterior, que faz exatamente o contrário: tira força, dor e temperatura e preserva só a propriocepção.",
+  "correta": "A medular posterior. Só ela compromete as colunas posteriores isoladamente, deixando motor e espinotalâmico intactos, que é o quadro descrito.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 41"
+   "McKinley W, Santos K, Meade M, Brooke K. Incidence and outcomes of spinal cord injury clinical syndromes. J Spinal Cord Med. 2007;30(3):215-224."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0161": {
-  "conceito": "### O quadro de C6\n- **Sensibilidade:** ==face lateral do antebraço e polegar== (e indicador).\n- **Motor:** bíceps e ==extensores radiais do carpo== (extensão do punho).\n- **Reflexo:** braquiorradial.\n\n### O nível\n- Na cervical, a raiz tem o número da vértebra **inferior**: o disco ==C5-C6== comprime **C6**.\n- Isso vale tanto para a hérnia **posterolateral** quanto para a **foraminal**, porque a raiz C6 sai pelo forame C5-C6.\n- Na **lombar**, é diferente: a foraminal comprime a raiz que sai **naquele** nível (a de cima), e a posterolateral comprime a de baixo.\n\n### Comparação\n| Disco | Raiz | Sinais |\n|---|---|---|\n| C4-C5 | C5 | deltoide, bicipital, face lateral do braço |\n| ==C5-C6== | ==C6== | bíceps, extensores do punho, braquiorradial, polegar |\n| C6-C7 | C7 | tríceps, flexores do punho, tricipital, dedo médio |\n| C7-T1 | C8 | flexores dos dedos, dedo mínimo |\n\n> **Na prova:** polegar + extensor radial do carpo = ==C6, disco C5-C6==.",
-  "correta": "**C6 e C5-C6.**",
   "incorretas": {
-   "A": "**C5 e C4-C5.**\n- C5 é a face lateral do **braço** e o deltoide.",
-   "B": "**C5 e C5-C6.**\n- O disco C5-C6 comprime **C6**.",
-   "D": "**C6 e C6-C7.**\n- O disco C6-C7 comprime **C7**."
+   "A": "A C5 cuida da face lateral do braço e do deltoide, não do polegar nem do extensor do punho. O disco também combina, mas a raiz não é a do quadro.",
+   "B": "Mistura as coisas: o disco C5-C6 está certo, mas ele comprime a C6. A C5 sai um andar acima, entre C4 e C5.",
+   "D": "A raiz está certa, o disco não. O disco C6-C7 comprime a C7, a raiz do tríceps e do dedo médio."
   },
+  "conceito": "Três pistas, uma raiz. Formigamento na face lateral do antebraço e no polegar, mais fraqueza do extensor radial longo do carpo, o músculo que levanta o punho puxando para o lado do polegar. Tudo isso é território de **C6**. Para completar o quadro, faltaria só o reflexo braquiorradial diminuído e, às vezes, alguma fraqueza do bíceps.\n\nAgora o nível. Na coluna cervical existe uma raiz a mais do que vértebras (são oito raízes para sete vértebras), e cada raiz sai **acima** da vértebra que tem o seu número. A C6 sai entre C5 e C6. Então quem comprime a C6 é o disco **C5-C6**.\n\nAqui mora uma diferença com a coluna lombar que confunde muita gente. Na lombar, a hérnia posterolateral e a foraminal do mesmo disco pegam raízes diferentes: a posterolateral pega a raiz de baixo, que está descendo, e a foraminal pega a que está saindo naquele nível. No pescoço isso não acontece, porque as raízes cervicais saem quase na horizontal, logo no seu forame. Tanto faz se a hérnia C5-C6 é posterolateral ou foraminal: a raiz comprimida é a C6.\n\nPara comparar: a C5 dá dormência na face lateral do braço (acima do cotovelo) e enfraquece o deltoide; a C7 dá dormência no dedo médio e enfraquece o tríceps.",
+  "correta": "C6, pelo disco C5-C6. Polegar, face lateral do antebraço e extensor radial do carpo são C6, e é pelo forame C5-C6 que ela sai.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 38"
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0162": {
-  "conceito": "### Regra de Spence (fratura de Jefferson)\n- **Fratura de Jefferson:** fratura em explosão do **anel de C1** por carga axial. As massas laterais se afastam.\n- **Regra:** na radiografia **transoral** (AP com a boca aberta), soma-se o **deslocamento lateral** das duas massas laterais de C1 em relação ao corpo de C2.\n- **Soma acima de ~6,9 mm (≈7 mm):** presume-se ruptura do ==ligamento transverso==, e a fratura é **instável**.\n\n### Hoje\n- A **TC** mostra a fratura e eventual **avulsão óssea** do transverso.\n- A **RM** mostra a lesão ligamentar direta, que é o que classifica.\n- **Dickman:**\n  - **tipo I:** ruptura **intrassubstancial**; não cicatriza, e indica **artrodese C1-C2**;\n  - **tipo II:** **avulsão óssea** do tubérculo da massa lateral; pode consolidar com imobilização (**halo**).\n\n### Tratamento de Jefferson\n- **Transverso íntegro:** colar ou halo.\n- **Rompido:** halo ou tração para reduzir; artrodese (C1-C2, ou occipitocervical) conforme o caso. **Osteossíntese direta de C1** também é opção.\n\n> **Na prova:** Spence = ==transverso na fratura de C1==.",
-  "correta": "**Transverso, na fratura de C1.**",
   "incorretas": {
-   "A": "**Alar em C1.**\n- Os alares limitam a **rotação**; não são avaliados pela regra de Spence.",
-   "B": "**Alar em C2.**\n- Ligamento e osso errados.",
-   "D": "**Transverso em C2.**\n- O ligamento está certo, mas a fratura avaliada é a de **C1**."
+   "A": "Os ligamentos alares, que vão do dente aos côndilos do occipital, seguram a rotação da cabeça. A regra de Spence não fala deles.",
+   "B": "Ligamento e osso errados. A regra mede o atlas, não o áxis, e avalia o transverso, não os alares.",
+   "D": "O ligamento está certo, mas a fratura analisada é a do atlas (C1). A medida depende justamente do afastamento das massas laterais de C1."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A fratura de Jefferson é o atlas, a primeira vértebra cervical, estourando como um anel. Acontece quando uma carga cai de cima sobre a cabeça, num mergulho em água rasa ou num capotamento: o crânio empurra as duas massas laterais do atlas para baixo e para fora, e o anel quebra em dois ou mais pontos.\n\nA pergunta que decide o tratamento é se o **ligamento transverso** aguentou. Ele é a faixa que passa por trás do dente do áxis e o prende contra o arco anterior do atlas. Se ele se rompeu, o atlas pode escorregar para a frente sobre o dente e apertar a medula. A fratura deixa de ser estável.\n\nEm 1970, Spence e colaboradores propuseram uma forma de estimar isso numa radiografia simples, a de boca aberta, que mostra o atlas sentado sobre o áxis. Mede-se quanto cada massa lateral do atlas \"transborda\" para fora do áxis e somam-se os dois lados. Se a soma passa de cerca de **6,9 mm** (a turma arredonda para 7), presume-se que o transverso rompeu. Essa é a **regra de Spence**.\n\nHoje ela é mais história do que prática. A tomografia mostra se houve arrancamento ósseo onde o ligamento se prende, e a ressonância vê o ligamento diretamente. Dickman dividiu as lesões em ruptura no meio do ligamento, que não cicatriza e vai para artrodese entre C1 e C2, e arrancamento ósseo, que pode consolidar com halo. Mas na prova a regra continua aparecendo, e a resposta é sempre a mesma: transverso, na fratura de C1.",
+  "correta": "Transverso, na fratura de C1. A regra de Spence soma o deslocamento lateral das massas do atlas na fratura de Jefferson para inferir se o ligamento transverso se rompeu.",
+  "referencias": [
+   "Spence KF Jr, Decker S, Sell KW. Bursting atlantal fracture associated with rupture of the transverse ligament. J Bone Joint Surg Am. 1970;52(3):543-549.",
+   "Dickman CA, Greene KA, Sonntag VK. Injuries involving the transverse atlantal ligament: classification and treatment guidelines based upon experience with 39 injuries. Neurosurgery. 1996;38(1):44-50."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0163": {
-  "conceito": "### Distribuição da lordose lombar\n- A lordose se concentra **embaixo**.\n- ==L4-L5 e L5-S1== respondem por cerca de ==2/3 (~67%)== da lordose lombar total.\n- **L5-S1** sozinho contribui com ~40%.\n- Os níveis altos (L1 a L3) têm pouca lordose segmentar.\n\n### Consequência cirúrgica\n- Uma artrodese **L4-S1 retificada** (sem lordose) consome grande parte da lordose do paciente. O resultado é **perda de lordose**, com **desequilíbrio sagital positivo**, dor, fadiga e **doença do nível adjacente**, a chamada **síndrome do dorso plano iatrogênica** (flatback).\n- **Prevenção:**\n  - posicionar com os **quadris estendidos**;\n  - usar **cages lordóticos** (ALIF, TLIF com cage anterior);\n  - osteotomias (Smith-Petersen/Ponte);\n  - planejar a lordose de acordo com a **incidência pélvica** (LL ≈ IP ± 10°, com 2/3 dela em L4-S1).\n\n> **Na prova:** L4-L5 e L5-S1 = ~==67%== da lordose lombar.",
-  "correta": "**~67%.**",
   "incorretas": {
-   "A": "**32%.**\n- Subestima muito.",
-   "B": "**43%.**\n- Ainda abaixo (próximo da contribuição de L5-S1 isolado).",
-   "C": "**55%.**\n- Próximo, mas a referência é ~2/3."
+   "A": "Muito pouco. Um terço seria a contribuição de um segmento grande, não dos dois mais lordóticos juntos.",
+   "B": "Fica abaixo do real. É um valor próximo do que o L5-S1 faz sozinho, sem somar o L4-L5.",
+   "C": "Chega perto, mas a referência clássica é de dois terços, cerca de 67%."
   },
+  "conceito": "A lordose lombar, aquela curva para dentro na parte baixa das costas, não é distribuída igualmente entre as vértebras. Ela mora quase toda embaixo. Os dois últimos segmentos, **L4-L5** e **L5-S1**, respondem por cerca de **dois terços** da lordose lombar total, e o L5-S1 sozinho já faz algo perto de 40%. Lá em cima, de L1 a L3, a curva é suave.\n\nEsse número parece só curiosidade de anatomia até você estar na sala de cirurgia. Imagine uma artrodese de L4 a S1 feita com o paciente mal posicionado, com os quadris fletidos e os espaçadores sem inclinação. Os dois segmentos que guardavam a maior parte da lordose ficam fundidos retos. O paciente acorda com a coluna lombar sem curva, o tronco projetado para a frente, e passa a gastar energia o dia todo para se manter em pé. Ele cansa, sente dor, e os níveis acima degeneram mais rápido. É a chamada **síndrome do dorso plano** iatrogênica, ou flatback.\n\nPor isso a lordose é planejada antes da cirurgia: posiciona-se o paciente com os quadris estendidos, usam-se espaçadores intersomáticos com inclinação lordótica e, quando preciso, osteotomias. A meta é uma lordose proporcional à incidência pélvica do paciente, lembrando que a maior parte dela tem de estar justamente em L4-S1.",
+  "correta": "Cerca de 67%. Os dois segmentos mais baixos concentram aproximadamente dois terços da lordose lombar.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 39"
+   "Bernhardt M, Bridwell KH. Segmental analysis of the sagittal plane alignment of the normal thoracic and lumbar spines and thoracolumbar junction. Spine. 1989;14(7):717-721."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0164": {
@@ -2030,31 +2034,31 @@
   "conferido": false
  },
  "coluna-0177": {
-  "conceito": "### Síndromes medulares incompletas: frequência e prognóstico\n| Síndrome | Frequência | Prognóstico |\n|---|---|---|\n| ==Centromedular== | ==a mais comum== | bom (atrás só do Brown-Séquard) |\n| Brown-Séquard | pouco comum | o **melhor** |\n| Anterior | menos comum | o **pior** |\n| Posterior | **rara** | bom para a força |\n| Cone / cauda equina | associadas à transição toracolombar e abaixo | variável |\n\n### Centromedular\n- **Idoso** com espondilose e **hiperextensão**.\n- **MMSS** mais afetados que os MMII, sobretudo as **mãos**.\n- Frequentemente **sem fratura**.\n\n> **Na prova:** síndrome incompleta mais comum = ==centromedular==.",
-  "correta": "**Medular central.**",
   "incorretas": {
-   "B": "**Medular anterior.**\n- Menos frequente; o **pior** prognóstico.",
-   "C": "**Cone medular.**\n- Menos comum; transição toracolombar.",
-   "D": "**Medular posterior.**\n- **Rara.**"
+   "B": "A anterior acontece, mas bem menos. Ela é lembrada mais pelo péssimo prognóstico motor do que pela frequência.",
+   "C": "A do cone medular depende de lesão na ponta da medula, perto de T12 e L1, e é menos comum que a central.",
+   "D": "A posterior é rara no trauma; quem costuma lesar as colunas posteriores são doenças como a falta de vitamina B12."
   },
+  "conceito": "A síndrome medular central é, de longe, a lesão incompleta que mais aparece nos prontos-socorros, e o motivo é demográfico: a população envelheceu, e o paciente dela é justamente o idoso.\n\nA cena se repete. Um senhor de 75 anos, com o pescoço gasto pela artrose (bicos de osso na frente do canal, ligamento amarelo grosso atrás), tropeça e cai de frente, batendo o queixo ou a testa. O pescoço vai para trás com força. O canal, que já era apertado, fecha mais ainda, e a medula é espremida entre o osso da frente e o ligamento de trás. Muitas vezes a radiografia não mostra fratura nenhuma; a ressonância mostra o edema dentro da medula.\n\nO que ele sente é característico: os braços e principalmente as mãos ficam muito mais fracos que as pernas. Ele pode até andar, mas não consegue abotoar a camisa. A explicação está no centro da medula, onde a lesão se concentra e onde as fibras que comandam os movimentos finos da mão são mais vulneráveis.\n\nO prognóstico é razoável: a maioria volta a andar. As mãos são as últimas a melhorar, e às vezes não melhoram por completo, sobretudo nos mais velhos.\n\nPara situar as outras: a síndrome anterior é menos comum e tem o pior prognóstico; a posterior é rara; a de Brown-Séquard tem o melhor; e a do cone medular atinge a ponta da medula, na transição toracolombar.",
+  "correta": "A medular central. É a mais frequente das lesões medulares incompletas, típica do idoso com espondilose cervical que sofre hiperextensão.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 41"
+   "McKinley W, Santos K, Meade M, Brooke K. Incidence and outcomes of spinal cord injury clinical syndromes. J Spinal Cord Med. 2007;30(3):215-224."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0178": {
-  "conceito": "### O padrão tridimensional da escoliose idiopática do adolescente\n- **Coronal:** curva **torácica** com ==convexidade à direita== (o padrão mais comum).\n- **Axial:** **rotação** vertebral, com o corpo girando para a convexidade. Gera a **giba** costal à direita.\n- **Sagital:** ==hipocifose torácica==, o \"dorso plano\". A rotação e a lordose relativa do ápice achatam a cifose.\n\n### Por que isso importa\n- **Diagnóstico:** curva torácica à **esquerda** ou **cifose aumentada** fogem do padrão. Pedir **RM** do neuroeixo (siringomielia, Chiari, tumor).\n- **Cirurgia:** restaurar a **cifose torácica** durante a correção (derrotação, hastes pré-moldadas em cifose). Uma correção só no plano coronal deixa o paciente **plano**, com risco de desequilíbrio.\n\n> **Na prova:** escoliose idiopática torácica = convexidade à ==direita== + ==hipocifose==.",
-  "correta": "**Direita, com cifose diminuída.**",
   "incorretas": {
-   "B": "**Direita, com cifose acentuada.**\n- A cifose torácica **diminui**.",
-   "C": "**Esquerda, hipocifose.**\n- Curva à esquerda é atípica e merece investigação.",
-   "D": "**Esquerda, cifose acentuada.**\n- Lado e plano sagital errados."
+   "B": "O lado está certo, mas a cifose costuma estar diminuída, não acentuada. Cifose aumentada numa escoliose deve levantar suspeita de outra causa.",
+   "C": "Curva torácica com convexidade à esquerda é atípica no adolescente e é um dos sinais que indicam ressonância para procurar causa neurológica.",
+   "D": "Erra o lado e o perfil. Esse padrão, se aparecer, é motivo de investigação, não o quadro típico."
   },
+  "conceito": "A escoliose idiopática do adolescente tem um \"jeito\" de ser, e conhecer esse jeito é o que permite desconfiar quando algo foge dele.\n\nA curva típica é torácica, com a **convexidade voltada para a direita**: olhando o paciente de costas, a coluna faz uma barriga para o lado direito. Junto com o desvio, as vértebras giram, e o corpo vertebral roda para o lado da convexidade levando as costelas consigo. Daí nasce a giba do lado direito, que aparece quando o adolescente se inclina para a frente.\n\nO terceiro plano é o que mais se esquece. Visto de perfil, o adolescente com escoliose idiopática torácica costuma ter as costas **mais retas** do que o normal, com a cifose torácica diminuída (hipocifose). A rotação das vértebras e o crescimento maior da parte da frente da coluna, em relação à de trás, achatam a curvatura natural. Por isso se diz que a escoliose idiopática é uma deformidade tridimensional, e não só um desvio lateral.\n\nEsse padrão serve de alarme. Curva torácica para a **esquerda**, cifose **aumentada**, dor importante, progressão muito rápida ou alteração no exame neurológico não combinam com a forma idiopática e pedem ressonância de toda a coluna, à procura de siringomielia, malformação de Chiari ou tumor.\n\nE na cirurgia isso vira técnica: corrigir só o desvio lateral, sem devolver a cifose torácica, deixa o paciente com as costas planas. As hastes são moldadas em cifose e as vértebras são derrotadas para corrigir os três planos.",
+  "correta": "Direito, com a cifose torácica diminuída. É o padrão da escoliose idiopática torácica: convexidade à direita, rotação para a convexidade e hipocifose no perfil.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 44"
+   "Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0179": {
