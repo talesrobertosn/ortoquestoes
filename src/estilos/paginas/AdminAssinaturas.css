@@ -247,3 +247,23 @@
 }
 .adm-edicao-previa { padding: 0.8rem 1rem; border-radius: 12px; background: var(--superficie-2); }
 .adm-edicao-previa p { margin: 0; }
+
+/* ---------- Parte 3: nomes de hoje, recém-cadastrados, perfil, modelos e financeiro ---------- */
+.adm-contagem { display: inline-grid; place-items: center; min-width: 1.6rem; height: 1.6rem; margin-left: 0.3rem; padding: 0 0.4rem; border-radius: 999px; background: var(--verdete-veu); color: var(--verdete); font-size: 0.8rem; vertical-align: middle; }
+.adm-mini__valor small { display: block; color: var(--texto-2); font-size: 0.68rem; font-weight: 600; text-align: right; }
+.adm-mini .adm-online { margin-right: 0.35rem; }
+.adm-usuario__servico, .adm-ficha__servico {
+  display: inline-flex; align-items: center; gap: 0.35rem; width: fit-content; margin-top: 0.25rem; padding: 0.2rem 0.6rem; border-radius: 999px;
+  background: var(--ouro-veu); color: var(--ouro-texto); font-size: var(--meta); font-weight: 700;
+}
+.adm-ficha__servico { margin: 0.4rem 0; padding: 0.35rem 0.8rem; font-size: var(--corpo-menor); }
+.adm-ficha__servico strong { font-weight: 850; }
+.adm-dica { padding: 0.6rem 0.8rem; border-radius: 12px; background: var(--verdete-veu); }
+.adm-modelos { display: grid; gap: 0.5rem; padding: 0.8rem; border-radius: 14px; background: var(--superficie-2); border: var(--borda); }
+.adm-modelos__atalhos { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.adm-modelos__atalhos .adm-chip { display: inline-flex; align-items: center; gap: 0.3rem; }
+.adm-chip--sugerido { background: var(--ouro-veu); border-color: color-mix(in srgb, var(--ouro) 55%, transparent); color: var(--ouro-texto); font-weight: 750; }
+.adm-kpi--dinheiro strong { color: var(--acerto); }
+.adm-financeiro__previsto { margin: 0; font-size: var(--corpo-menor); color: var(--texto-2); }
+.adm-financeiro__previsto strong { font-size: 1.5rem; color: var(--texto); margin-right: 0.3rem; }
+.adm-mini__nome > .adm-online { display: inline-block; vertical-align: middle; }
