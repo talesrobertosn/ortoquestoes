@@ -1,7 +1,7 @@
 """Cenário em pixel art do pódio do ranking: céu noturno, montanhas, castelo e tochas.
 
 Gera public/ranking/arena.png (paisagem 160x80 ampliada 4x) e
-public/ranking/tocha.png (12x24 ampliada 4x). Uso: python3 scripts/gerar_cenario_ranking.py
+public/ranking/tocha.png (12x24 ampliada 4x), chama.png e tachinha.png (mural do "Subindo rápido"). Uso: python3 scripts/gerar_cenario_ranking.py
 """
 from __future__ import annotations
 
@@ -139,7 +139,44 @@ def tocha() -> None:
     gravar(PASTA / "tocha.png", px)
 
 
+def desenho(nome: str, linhas: list[str], cores: dict[str, str]) -> None:
+    px = [[hexa(cores[ch]) if ch in cores else (0, 0, 0, 0) for ch in linha] for linha in linhas]
+    gravar(PASTA / f"{nome}.png", px)
+
+
+def chama() -> None:
+    """Chama de quem está subindo rápido (12x12)."""
+    desenho("chama", [
+        "......k.....",
+        ".....kok....",
+        "....koork...",
+        "...kooork.k.",
+        "..koorrokkok",
+        ".kooryyrook.",
+        ".koryyyyrok.",
+        "korryyyyyrok",
+        "koryywwyyrok",
+        "koryywwyyrok",
+        ".koryyyyrok.",
+        "..kkkkkkkk..",
+    ], {"k": "#5a1a06", "o": "#c2410c", "r": "#f97316", "y": "#fbbf24", "w": "#fff7d6"})
+
+
+def tachinha() -> None:
+    """Prego que prende o pergaminho no mural (6x6)."""
+    desenho("tachinha", [
+        ".kkkk.",
+        "kffwfk",
+        "kffffk",
+        "kfffdk",
+        "kddddk",
+        ".kkkk.",
+    ], {"k": "#3b1d0c", "f": "#b8733f", "w": "#f7d2ae", "d": "#7a4220"})
+
+
 if __name__ == "__main__":
     arena()
     tocha()
+    chama()
+    tachinha()
     print("cenário gerado")

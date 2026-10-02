@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Ranking e conquistas: carrossel de 3 slides no feed (f1 a f3, 1080x1350) e os mesmos 3 em story (s1 a s3, 1080x1920).
+     node marketing/instagram/telas.mjs "rk-arena=ranking@.rk-arena" "rk-lista=ranking@.rk-lista" "cq-grade=conquistas@.inv-jogador"
+     node marketing/instagram/gerar.mjs marketing/instagram/ranking/post.html  · legenda em LEGENDA.md -->
+<style>
+@font-face { font-family: Jakarta; src: url(../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Pixel; src: url(../fontes/pixelify-sans-latin-700-normal.woff2) format('woff2'); font-weight: 700; }
+:root { --noite: #071f1c; --tinta: #0b3a35; --ouro: #f4cf7c; --ouro2: #c9952f; --brasa: #f97316; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; color: #fff; background: #0a1328; }
+/* Cenário: céu com estrelas e o castelo da arena do site embaixo */
+section::before { content: ""; position: absolute; inset: 0; z-index: 0;
+  background: url(../../../public/ranking/arena.png) center bottom / 100% auto no-repeat; image-rendering: pixelated; opacity: .55; }
+section::after { content: ""; position: absolute; inset: 0; z-index: 0;
+  background: linear-gradient(180deg, rgba(7, 12, 30, .96) 0%, rgba(7, 12, 30, .82) 45%, rgba(7, 12, 30, .25) 100%); }
+section > * { position: relative; z-index: 1; }
+.feed { width: 1080px; height: 1350px; padding: 80px 84px; }
+.story { width: 1080px; height: 1920px; padding: 120px 80px 0; }
+.marca { display: flex; align-items: center; gap: 16px; font: 34px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 56px; height: 56px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.rot { display: inline-flex; align-items: center; gap: 14px; padding: 12px 24px; border: 4px solid var(--ouro); background: rgba(27, 18, 8, .6);
+  color: var(--ouro); font: 700 30px Pixel; letter-spacing: .06em; text-transform: uppercase; box-shadow: 4px 4px 0 #1b1208; }
+.rot img { width: 40px; height: 40px; image-rendering: pixelated; }
+h1, h2 { font-family: Pixel; font-weight: 700; letter-spacing: .01em; text-shadow: 5px 5px 0 #1b1208; text-wrap: balance; }
+h1 { font-size: 112px; line-height: .98; }
+h2 { font-size: 82px; line-height: 1.02; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+.sub { font-size: 36px; line-height: 1.42; color: rgba(255, 255, 255, .82); text-wrap: pretty; }
+.sub b { color: #fff; }
+/* Celular */
+.cel { position: absolute; width: 540px; border-radius: 70px; padding: 15px; background: #0d1413;
+  box-shadow: 0 0 0 4px #c99a3b, 0 0 0 9px #1b1208, 0 60px 120px rgba(0, 0, 0, .6); }
+.cel__tela { position: relative; width: 510px; border-radius: 56px; overflow: hidden; background: #f1f3f2; }
+.cel__tela img { position: absolute; left: 0; top: 0; width: 510px; }
+.cel__ilha { position: absolute; top: 24px; left: 50%; transform: translateX(-50%); width: 136px; height: 38px; border-radius: 30px; background: #0d1413; z-index: 2; }
+/* Emblemas soltos em volta */
+.selo { position: absolute; display: grid; place-items: center; width: 150px; height: 150px; background: rgba(27, 18, 8, .75);
+  border: 5px solid var(--ouro); box-shadow: 6px 6px 0 #1b1208, inset 0 0 0 4px rgba(244, 207, 124, .25); }
+.selo img { width: 120px; height: 120px; image-rendering: pixelated; }
+.selo i { position: absolute; bottom: -26px; left: 50%; transform: translateX(-50%); white-space: nowrap; padding: 4px 12px; background: #1b1208; color: var(--ouro); font: 700 22px Pixel; font-style: normal; }
+/* Itens explicativos */
+.itens { display: grid; gap: 22px; }
+.item { display: grid; grid-template-columns: 104px 1fr; gap: 24px; align-items: center; padding: 22px 26px; background: rgba(10, 19, 40, .78);
+  border: 4px solid rgba(244, 207, 124, .7); box-shadow: 6px 6px 0 #1b1208; }
+.item img { width: 104px; height: 104px; image-rendering: pixelated; }
+.item h3 { font: 700 40px Pixel; color: var(--ouro); letter-spacing: .02em; }
+.item p { margin-top: 6px; font-size: 27px; line-height: 1.38; color: rgba(255, 255, 255, .84); }
+.item p b { color: #fff; }
+.rodape { position: absolute; left: 84px; right: 84px; bottom: 64px; display: flex; justify-content: space-between; align-items: center; font: 700 30px Jakarta; z-index: 2; }
+.cta { padding: 22px 34px; background: var(--ouro); color: #1b1208; font: 700 32px Pixel; letter-spacing: .03em; box-shadow: 6px 6px 0 #1b1208; }
+.nota { font: 600 20px Inter; color: rgba(255, 255, 255, .55); }
+.passo { position: absolute; left: 80px; bottom: 70px; font: 600 26px Inter; color: rgba(255, 255, 255, .6); }
+.link { position: absolute; left: 80px; right: 80px; bottom: 60px; height: 160px; border: 4px dashed rgba(244, 207, 124, .6); display: grid; place-items: center; text-align: center; color: rgba(255, 255, 255, .7); font: 700 28px Jakarta; background: rgba(10, 19, 40, .7); }
+.link b { display: block; color: var(--ouro); font: 700 44px Pixel; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- ============ FEED 1: capa ============ -->
+<section id="f1" class="feed">
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
+  <p class="rot" style="margin-top:56px"><img src="../../../public/emblemas/podio-1.png" alt="">Novo: ranking e conquistas</p>
+  <h1 style="margin-top:34px">Estudar virou <em>aventura.</em></h1>
+  <p class="sub" style="margin-top:24px;max-width:440px">Suba no ranking, mantenha a <b>fogueira acesa</b> e colecione emblemas a cada questão.</p>
+  <div class="selo" style="left:96px;top:930px"><img src="../../../public/emblemas/fogueira.png" alt=""><i>28 dias</i></div>
+  <div class="selo" style="left:290px;top:1050px"><img src="../../../public/emblemas/questoes-3000.png" alt=""><i>Chefe</i></div>
+  <div class="selo" style="left:140px;top:1160px;width:120px;height:120px"><img src="../../../public/emblemas/questoes-50.png" alt="" style="width:96px;height:96px"></div>
+  <div class="cel" style="left:500px;top:640px;transform:rotate(4deg)"><div class="cel__tela" style="height:1080px"><div class="cel__ilha"></div><img src="../telas/t-rk-arena.png" alt=""></div></div>
+  <p class="nota" style="position:absolute;left:84px;bottom:40px">Tela ilustrativa, nomes fictícios.</p>
+</section>
+
+<!-- ============ FEED 2: como funciona ============ -->
+<section id="f2" class="feed">
+  <p class="rot"><img src="../../../public/emblemas/sessoes-10.png" alt="">Como funciona</p>
+  <h2 style="margin-top:30px">Cada questão te leva <em>mais alto.</em></h2>
+  <div class="itens" style="margin-top:44px;width:560px">
+    <div class="item"><img src="../../../public/emblemas/podio-1.png" alt=""><div><h3>Ranking</h3><p>Geral e da semana. As setas mostram <b>quem subiu</b> desde ontem.</p></div></div>
+    <div class="item"><img src="../../../public/emblemas/fogueira.png" alt=""><div><h3>Fogueira</h3><p><b>5 questões por dia</b> mantêm a chama. Com 3 dias seguidos, ela aparece no seu nome. Parou, apaga.</p></div></div>
+    <div class="item"><img src="../../../public/emblemas/mestre-joelho.png" alt=""><div><h3>Emblemas</h3><p>Mais de 70 conquistas, algumas secretas. <b>Escolha 3</b> para exibir ao lado do nome.</p></div></div>
+  </div>
+  <div class="cel" style="left:672px;top:380px;width:400px;padding:12px;border-radius:56px;transform:rotate(-3deg)"><div class="cel__tela" style="width:376px;height:800px;border-radius:44px"><div class="cel__ilha" style="width:100px;height:28px;top:18px"></div><img src="../telas/t-rk-lista.png" alt="" style="width:376px"></div></div>
+  <p class="nota" style="position:absolute;left:84px;bottom:40px">Tela ilustrativa, nomes fictícios.</p>
+</section>
+
+<!-- ============ FEED 3: por que ajuda ============ -->
+<section id="f3" class="feed">
+  <p class="rot"><img src="../../../public/emblemas/sequencia-30.png" alt="">Por que isso funciona</p>
+  <h2 style="margin-top:30px">Constância <em>passa na prova.</em></h2>
+  <div class="itens" style="margin-top:44px;width:560px">
+    <div class="item"><img src="../../../public/emblemas/dias-30.png" alt=""><div><h3>Pouco, todo dia</h3><p>Estudar um pouco por dia fixa mais do que <b>maratonar na véspera</b>.</p></div></div>
+    <div class="item"><img src="../../../public/emblemas/redencao-10.png" alt=""><div><h3>O erro volta</h3><p>O que você erra reaparece na revisão <b>no dia certo</b>, até virar acerto.</p></div></div>
+    <div class="item"><img src="../../../public/emblemas/sessoes-25.png" alt=""><div><h3>A turma puxa</h3><p>Ver colegas subindo no ranking é o empurrão para <b>abrir o site hoje</b>.</p></div></div>
+  </div>
+  <div class="cel" style="left:672px;top:420px;width:400px;padding:12px;border-radius:56px;transform:rotate(3deg)"><div class="cel__tela" style="width:376px;height:800px;border-radius:44px"><div class="cel__ilha" style="width:100px;height:28px;top:18px"></div><img src="../telas/t-cq-grade.png" alt="" style="width:376px"></div></div>
+  <div class="rodape"><span>ortoquestoes.com.br</span><span class="cta">Crie sua conta grátis</span></div>
+</section>
+
+<!-- ============ STORY 1 ============ -->
+<section id="s1" class="story">
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
+  <p class="rot" style="margin-top:56px"><img src="../../../public/emblemas/podio-1.png" alt="">Novo: ranking e conquistas</p>
+  <h1 style="margin-top:34px">Estudar virou <em>aventura.</em></h1>
+  <p class="sub" style="margin-top:24px">Suba no ranking, mantenha a <b>fogueira acesa</b> e colecione emblemas a cada questão.</p>
+  <div class="selo" style="left:70px;top:1080px"><img src="../../../public/emblemas/fogueira.png" alt=""><i>28 dias</i></div>
+  <div class="selo" style="left:860px;top:1180px"><img src="../../../public/emblemas/questoes-3000.png" alt=""><i>Chefe</i></div>
+  <div class="selo" style="left:90px;top:1430px;width:120px;height:120px"><img src="../../../public/emblemas/questoes-50.png" alt="" style="width:96px;height:96px"></div>
+  <p class="nota" style="margin-top:22px">Tela ilustrativa, nomes fictícios.</p>
+  <div class="cel" style="left:270px;top:820px;transform:rotate(-3deg)"><div class="cel__tela" style="height:1080px"><div class="cel__ilha"></div><img src="../telas/t-rk-arena.png" alt=""></div></div>
+</section>
+
+<!-- ============ STORY 2 ============ -->
+<section id="s2" class="story">
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
+  <p class="rot" style="margin-top:56px"><img src="../../../public/emblemas/sessoes-10.png" alt="">Como funciona</p>
+  <h2 style="margin-top:30px">Cada questão te leva <em>mais alto.</em></h2>
+  <div class="itens" style="margin-top:44px">
+    <div class="item"><img src="../../../public/emblemas/podio-1.png" alt=""><div><h3>Ranking</h3><p>Geral e da semana. As setas mostram <b>quem subiu</b> desde ontem.</p></div></div>
+    <div class="item"><img src="../../../public/emblemas/fogueira.png" alt=""><div><h3>Fogueira</h3><p><b>5 questões por dia</b> mantêm a chama. Com 3 dias seguidos, ela aparece no seu nome. Parou, apaga.</p></div></div>
+    <div class="item"><img src="../../../public/emblemas/mestre-joelho.png" alt=""><div><h3>Emblemas</h3><p>Mais de 70 conquistas, algumas secretas. <b>Escolha 3</b> para exibir ao lado do nome.</p></div></div>
+  </div>
+  <p class="nota" style="margin-top:22px">Tela ilustrativa, nomes fictícios.</p>
+  <div class="cel" style="left:290px;top:1210px;transform:rotate(2deg)"><div class="cel__tela" style="height:900px"><div class="cel__ilha"></div><img src="../telas/t-rk-lista.png" alt=""></div></div>
+</section>
+
+<!-- ============ STORY 3 ============ -->
+<section id="s3" class="story">
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
+  <p class="rot" style="margin-top:56px"><img src="../../../public/emblemas/sequencia-30.png" alt="">Por que isso funciona</p>
+  <h2 style="margin-top:30px">Constância <em>passa na prova.</em></h2>
+  <div class="itens" style="margin-top:44px">
+    <div class="item"><img src="../../../public/emblemas/dias-30.png" alt=""><div><h3>Pouco, todo dia</h3><p>Estudar um pouco por dia fixa mais do que <b>maratonar na véspera</b>.</p></div></div>
+    <div class="item"><img src="../../../public/emblemas/redencao-10.png" alt=""><div><h3>O erro volta</h3><p>O que você erra reaparece na revisão <b>no dia certo</b>, até virar acerto.</p></div></div>
+    <div class="item"><img src="../../../public/emblemas/sessoes-25.png" alt=""><div><h3>A turma puxa</h3><p>Ver colegas subindo no ranking é o empurrão para <b>abrir o site hoje</b>.</p></div></div>
+  </div>
+  <p class="cta" style="position:absolute;left:80px;top:1250px">Crie sua conta grátis</p>
+  <p class="sub" style="position:absolute;left:80px;top:1370px;width:440px;font-size:30px">Sem cartão. Em menos de um minuto você já está no ranking.</p>
+  <div class="cel" style="left:600px;top:1110px;width:400px;padding:12px;border-radius:56px;transform:rotate(4deg)"><div class="cel__tela" style="width:376px;height:560px;border-radius:44px"><div class="cel__ilha" style="width:100px;height:28px;top:18px"></div><img src="../telas/t-cq-grade.png" alt="" style="width:376px"></div></div>
+  <div class="link" style="z-index:3"><div><b>ortoquestoes.com.br</b>espaço para a figurinha de link</div></div>
+</section>
+</body></html>

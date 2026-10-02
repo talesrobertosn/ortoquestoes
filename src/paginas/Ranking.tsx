@@ -62,7 +62,7 @@ function Movimento({ linha }: { linha: LinhaRanking }) {
   if (fogo) partes.push('em chamas')
   const descricao = partes.join(', ')
   return <span className={`rk-movimento rk-movimento--${subiu ? 'subiu' : 'desceu'}${fogo ? ' rk-movimento--fogo' : ''}`} title={descricao}>
-    <span aria-hidden="true">{quantidade > 0 && <><Icone nome={subiu ? 'cima' : 'baixo'} tamanho={15} />{quantidade}</>}{fogo && <Icone nome="fogo" tamanho={15} />}</span>
+    <span aria-hidden="true">{quantidade > 0 && <><Icone nome={subiu ? 'cima' : 'baixo'} tamanho={15} />{quantidade}</>}{fogo && <img className="rk-chama" src={recurso('ranking/chama.png')} width={15} height={15} alt="" draggable={false} />}</span>
     <span className="rk-movimento__sr">{descricao}</span>
   </span>
 }
@@ -75,10 +75,11 @@ function EmAlta({ linhas }: { linhas: LinhaRanking[] }) {
     .slice(0, 3)
   if (!subindo.length) return null
   return <section className="rk-alta" aria-label="Subindo rápido">
-    <p className="rk-alta__titulo"><Icone nome="fogo" tamanho={16} /> Subindo rápido</p>
+    <p className="rk-alta__titulo"><img src={recurso('ranking/chama.png')} width={24} height={24} alt="" draggable={false} />Subindo rápido<img src={recurso('ranking/chama.png')} width={24} height={24} alt="" draggable={false} /></p>
     <ol className="rk-alta__lista">
       {subindo.map(linha => (
         <li key={linha.posicao} className={'rk-alta__item' + (linha.eh_voce ? ' rk-alta__item--voce' : '')}>
+          <img className="rk-alta__prego" src={recurso('ranking/tachinha.png')} width={18} height={18} alt="" draggable={false} />
           <span className="rk-alta__avatar">{iniciais(linha.apelido)}</span>
           <span className="rk-alta__nome"><strong>{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</strong><small>agora em #{linha.posicao}</small></span>
           <Movimento linha={linha} />
@@ -270,7 +271,7 @@ export function Ranking() {
       {top && top.length > 0 && comMovimento && top.some(linha => linha.referencia_em || linha.novo) && <p className="rk-referencia">
         <span><b className="rk-legenda rk-legenda--subiu"><Icone nome="cima" tamanho={13} /></b> subiu</span>
         <span><b className="rk-legenda rk-legenda--desceu"><Icone nome="baixo" tamanho={13} /></b> desceu</span>
-        <span><b className="rk-legenda rk-legenda--fogo"><Icone nome="fogo" tamanho={13} /></b> {FOGO_NO_DIA}+ posições no dia ou {FOGO_NA_SEMANA}+ na semana</span>
+        <span><b className="rk-legenda rk-legenda--fogo"><img className="rk-chama" src={recurso('ranking/chama.png')} width={13} height={13} alt="" draggable={false} /></b> {FOGO_NO_DIA}+ posições no dia ou {FOGO_NA_SEMANA}+ na semana</span>
         <span><b className="rk-legenda rk-legenda--novo">novo</b> acabou de entrar</span>
         <small>Comparação com o último dia registrado, igual em todos os aparelhos.</small>
       </p>}

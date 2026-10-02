@@ -49,17 +49,47 @@
 .rk-movimento--novo { text-transform: uppercase; letter-spacing: .05em; font-size: .66rem; }
 .rk-movimento--parado { color: var(--texto-2); background: var(--superficie-2); min-width: 1.5rem; }
 .rk-movimento--fogo { box-shadow: 0 0 0 0 rgba(242, 84, 45, .45); animation: rk-brasa 2.4s ease-in-out infinite; }
-.rk-movimento--fogo svg:last-child { animation: rk-chama 1.2s ease-in-out infinite alternate; transform-origin: 50% 90%; }
-@media (prefers-reduced-motion: reduce) { .rk-movimento--fogo, .rk-movimento--fogo svg:last-child { animation: none; } }
-.rk-alta { display: grid; gap: .6rem; padding: .9rem 1rem 1rem; border-radius: var(--raio-grande, 18px); border: 1px solid color-mix(in srgb, #f2542d 28%, var(--traco)); background: linear-gradient(135deg, color-mix(in srgb, #ffb13b 14%, var(--superficie)), var(--superficie) 65%); }
-.rk-alta__titulo { margin: 0; display: inline-flex; align-items: center; gap: .4rem; font-size: var(--meta); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #d9481f; }
-.rk-alta__lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: .5rem; }
-.rk-alta__item { display: flex; align-items: center; gap: .6rem; min-width: 0; padding: .55rem .7rem; border-radius: 14px; background: var(--superficie); border: 1px solid var(--traco); }
-.rk-alta__item--voce { border-color: var(--verdete); background: var(--verdete-veu); }
-.rk-alta__avatar { flex: none; display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 999px; background: linear-gradient(135deg, #ffb13b, #f2542d); color: #fff; font-weight: 800; font-size: .8rem; }
-.rk-alta__nome { display: grid; min-width: 0; flex: 1; line-height: 1.2; }
-.rk-alta__nome strong { font-size: var(--corpo-menor); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.rk-alta__nome small { color: var(--texto-2); font-size: .75rem; }
+.rk-movimento--fogo .rk-chama { animation: rk-chama 1.2s ease-in-out infinite alternate; transform-origin: 50% 90%; }
+.rk-chama { image-rendering: pixelated; display: block; }
+@media (prefers-reduced-motion: reduce) { .rk-movimento--fogo, .rk-movimento--fogo .rk-chama { animation: none; } }
+/* "Subindo rápido": mural de taverna, com os nomes pregados em pergaminho */
+.rk-alta {
+  position: relative; display: grid; gap: 0.9rem; padding: 0.9rem 0.9rem 1.1rem; margin-inline: 4px;
+  background:
+    repeating-linear-gradient(180deg, transparent 0 30px, #2a1608 30px 33px),
+    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.06) 0 2px, transparent 2px 9px, rgba(255, 255, 255, 0.04) 9px 11px, transparent 11px 23px),
+    linear-gradient(180deg, #8a5226, #6e3f1b);
+  border: 4px solid #2a1608; box-shadow: 0 0 0 4px #b47a45, 0 0 0 8px #2a1608, var(--sombra-media);
+  image-rendering: pixelated;
+}
+.rk-alta__titulo {
+  justify-self: center; margin: -0.2rem 0 0; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.35rem 0.9rem;
+  font-family: var(--fonte-pixel); font-weight: 700; font-size: 1.15rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: #ffe08a; text-shadow: 2px 2px 0 #1b1208; background: #3a2210; border: 3px solid #1b1208; box-shadow: inset 0 0 0 2px #8a5226, 4px 4px 0 #1b1208;
+}
+.rk-alta__titulo img { image-rendering: pixelated; }
+.rk-alta__lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 0.9rem 0.7rem; }
+.rk-alta__item {
+  position: relative; display: flex; align-items: center; gap: 0.6rem; min-width: 0; padding: 0.85rem 0.75rem 0.6rem;
+  color: #3b2410; background: linear-gradient(180deg, #f6e9c6, #ead7a6);
+  box-shadow: inset 0 0 0 2px #c9a86a, inset 0 -4px 0 rgba(122, 74, 18, 0.18), 4px 4px 0 rgba(27, 18, 8, 0.55);
+  transform: rotate(-1.2deg);
+}
+.rk-alta__item:nth-child(2) { transform: rotate(0.9deg); }
+.rk-alta__item:nth-child(3) { transform: rotate(-0.4deg); }
+.rk-alta__item--voce { background: linear-gradient(180deg, #fff3cf, #f4dc9a); box-shadow: inset 0 0 0 2px #c99a3b, inset 0 -4px 0 rgba(122, 74, 18, 0.18), 4px 4px 0 rgba(27, 18, 8, 0.55); }
+.rk-alta__prego { position: absolute; top: -7px; left: 50%; transform: translateX(-50%); image-rendering: pixelated; }
+.rk-alta__avatar {
+  flex: none; display: grid; place-items: center; width: 2.4rem; height: 2.4rem;
+  font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.95rem; color: #fff7d6; text-shadow: 1px 1px 0 #5a1a06;
+  background: #c2410c; box-shadow: inset 0 0 0 2px #5a1a06, inset 3px 3px 0 #f97316;
+}
+.rk-alta__nome { display: grid; min-width: 0; flex: 1; line-height: 1.15; }
+.rk-alta__nome strong { font-family: var(--fonte-pixel); font-weight: 700; font-size: 1.05rem; color: #3b2410; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rk-alta__nome small { color: #7a5a30; font-size: 0.78rem; font-weight: 600; }
+.rk-alta .rk-movimento { border-radius: 0; font-family: var(--fonte-pixel); font-size: 0.9rem; padding: 0.25rem 0.45rem; box-shadow: 2px 2px 0 #1b1208; }
+.rk-alta .rk-movimento--fogo { background: #c2410c; color: #fff7d6; animation: none; }
+.rk-alta .rk-movimento--subiu:not(.rk-movimento--fogo) { background: #1f7a4d; color: #e9fff3; }
 .rk-missao { display: flex; align-items: flex-start; text-align: left; gap: .4rem; margin-top: .35rem; padding: .55rem .7rem; border-radius: 12px; background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .16); color: var(--sobre-heroi); font-size: var(--corpo-menor); line-height: 1.35; }
 .rk-missao svg { flex: none; margin-top: .1rem; color: #ffe3a3; }
 .rk-missao b { color: #ffe3a3; }
@@ -285,11 +315,28 @@
 .dica:hover .dica__balao, .dica__alvo:focus-visible + .dica__balao, .dica__alvo:focus + .dica__balao {
   opacity: 1; visibility: visible; transform: translate(-50%, 0);
 }
-/* No celular, a dica vira um cartão fixo no rodapé: não escapa pelas bordas da tela. */
-@media (max-width: 40rem) {
-  .dica__balao { position: fixed; bottom: calc(1rem + env(safe-area-inset-bottom)); left: 50%; max-width: calc(100vw - 2rem); width: 18rem; }
-  .dica__balao::after { display: none; }
+/* Em telas de toque, a dica abre como cartão por cima de tudo (portal no body), acima da barra de baixo. */
+@media (hover: none), (max-width: 40rem) {
+  .dica__balao { display: none; }
 }
+.dica-folha {
+  position: fixed; inset: 0; z-index: 1000; display: flex; align-items: flex-end; justify-content: center;
+  padding: 1rem 1rem calc(5.5rem + env(safe-area-inset-bottom)); background: rgba(4, 10, 20, 0.45);
+  animation: dica-fundo 0.15s ease;
+}
+.dica-folha__cartao {
+  display: grid; justify-items: center; gap: 0.35rem; width: min(20rem, 100%); padding: 1.1rem 1.1rem 0.9rem; text-align: center;
+  background: #0b1630; color: #fff; font-size: var(--corpo-menor); line-height: 1.4;
+  border: 3px solid #c99a3b; box-shadow: 0 0 0 3px #1b1208, 6px 6px 0 3px #1b1208, 0 20px 40px rgba(0, 0, 0, 0.45);
+  animation: dica-sobe 0.18s ease;
+}
+.dica-folha__arte { display: grid; place-items: center; }
+.dica-folha__arte .medalha, .dica-folha__arte img { width: 88px !important; height: 88px !important; }
+.dica-folha__cartao strong { font-family: var(--fonte-pixel); font-size: 1.25rem; color: #f4cf7c; letter-spacing: 0.02em; }
+.dica-folha__cartao small { margin-top: 0.2rem; color: rgba(255, 255, 255, 0.5); font-size: 0.72rem; }
+@keyframes dica-fundo { from { opacity: 0; } }
+@keyframes dica-sobe { from { transform: translateY(12px); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .dica-folha, .dica-folha__cartao { animation: none; } }
 
 /* ---------- Abas Ranking / Conquistas ---------- */
 .rk-secoes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; padding: 0.35rem; border-radius: 16px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); }
