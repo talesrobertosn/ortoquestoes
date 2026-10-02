@@ -4,19 +4,22 @@ import { contasDisponiveis, supabase } from '../conta/supabase'
 import { href } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
-import { Medalha } from '../componentes/Medalha'
+import { EmblemasDoNome, Fogueira, Inventario } from '../componentes/Inventario'
 import { SeloAssinante } from '../componentes/Premium'
-import { CONQUISTAS, CONQUISTAS_SEQUENCIA, conquistaAtual, proximaConquista, type Conquista } from '../estado/conquistas'
+import { calcularMetricas, conquistaAtual } from '../estado/conquistas'
+import { lerHistorico } from '../estado/sessao'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
-import { usarPerfilRanking } from '../conta/perfilRanking'
+import { usarPerfilRanking, usarPublicarSequencia } from '../conta/perfilRanking'
 import '../estilos/paginas/Ranking.css'
 
 type Periodo = 'geral' | 'semana'
 type LinhaRanking = {
   posicao: number; apelido: string; total: number; total_geral: number; eh_voce: boolean
   variacao: number | null; variacao_semana: number | null; novo: boolean; referencia_em: string | null
+  /** Vitrine escolhida pela pessoa e sequência viva (fogueira). Ausentes antes da migration. */
+  emblemas?: string[] | null; sequencia?: number | null
 }
 type MinhaPosicao = { posicao: number; total: number; total_geral: number } | null
 
@@ -79,13 +82,6 @@ function iniciais(apelido: string): string {
   return ((partes[0]?.[0] ?? '') + (partes.length > 1 ? partes[partes.length - 1][0] : '')).toUpperCase() || '?'
 }
 
-/** Emblema (se houver) do total histórico, para mostrar ao lado do nome. */
-function Emblema({ total, tamanho = 22 }: { total: number; tamanho?: number }) {
-  const conquista = conquistaAtual(total)
-  if (!conquista) return null
-  return <span className="rk-emblema"><Medalha conquista={conquista} tamanho={tamanho} titulo={`${conquista.rotulo} · ${total.toLocaleString('pt-BR')} questões no total`} /></span>
-}
-
 function Podio({ linhas, periodo }: { linhas: LinhaRanking[]; periodo: Periodo }) {
   const ordem = [linhas[1], linhas[0], linhas[2]].filter(Boolean)
   return (
@@ -94,7 +90,7 @@ function Podio({ linhas, periodo }: { linhas: LinhaRanking[]; periodo: Periodo }
         <li key={linha.posicao} className={`rk-podio__lugar rk-podio__lugar--${linha.posicao}${linha.eh_voce ? ' rk-podio__lugar--voce' : ''}`}>
           <span className="rk-podio__avatar">{iniciais(linha.apelido)}<span className="rk-podio__posicao">{linha.posicao}</span></span>
           <strong className="rk-podio__nome">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</strong>
-          <Emblema total={linha.total_geral} tamanho={26} />
+          <span className="rk-podio__emblemas"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={26} /><Fogueira dias={linha.sequencia ?? 0} tamanho={18} /></span>
           <span className="rk-podio__total"><b className="numerico">{linha.total.toLocaleString('pt-BR')}</b> {periodo === 'semana' ? 'na semana' : 'questões'}</span>
           <Movimento linha={linha} />
           <span className="rk-podio__base" aria-hidden="true">{linha.posicao}º</span>
@@ -112,23 +108,6 @@ function Missao({ eu, acima }: { eu: LinhaRanking; acima: LinhaRanking | null })
   return <span className="rk-missao"><Icone nome="alvo" tamanho={15} /><span>Faltam <b>{faltam.toLocaleString('pt-BR')}</b> {faltam === 1 ? 'questão' : 'questões'} para passar {acima.apelido} e subir para #{acima.posicao}</span></span>
 }
 
-function GradeEmblemas({ lista, valor, unidade }: { lista: readonly Conquista[]; valor: number; unidade: (n: number) => string }) {
-  return (
-    <ul className="rk-grade">
-      {lista.map((c) => {
-        const tem = valor >= c.minimo
-        return (
-          <li key={c.minimo} className={'rk-grade__item' + (tem ? ' rk-grade__item--tem' : '')}>
-            <Medalha conquista={c} tamanho={52} bloqueada={!tem} />
-            <strong>{c.rotulo}</strong>
-            <small>{tem ? 'Conquistado' : `${unidade(c.minimo)}`}</small>
-          </li>
-        )
-      })}
-    </ul>
-  )
-}
-
 export function Ranking() {
   const { sessao } = usarConta()
   const { contexto } = usarContextoLocal('')
@@ -140,8 +119,10 @@ export function Ranking() {
   const [comMovimento, definirComMovimento] = useState(false)
 
   const meuTotal = Object.keys(contexto.respondidas).length
-  const { perfil: perfilRanking, carregado: perfilCarregado, nomeExibido } = usarPerfilRanking(sessao)
-  const recordeSequencia = useMemo(() => calcularStreak(contexto.respondidas).recorde, [contexto.respondidas])
+  const { perfil: perfilRanking, carregado: perfilCarregado, nomeExibido, salvarVitrine, comVitrine } = usarPerfilRanking(sessao)
+  const streak = useMemo(() => calcularStreak(contexto.respondidas), [contexto.respondidas])
+  const metricas = useMemo(() => calcularMetricas(contexto.respondidas, lerHistorico()), [contexto.respondidas])
+  usarPublicarSequencia(sessao, streak.atual, streak.ateDia)
 
   useEffect(() => {
     if (!supabase || !sessao) return
@@ -164,6 +145,7 @@ export function Ranking() {
       const novasLinhas: LinhaRanking[] = (ranking.data ?? []).map((linha: LinhaRanking) => ({
         ...linha, variacao: linha.variacao ?? null, variacao_semana: linha.variacao_semana ?? null,
         novo: linha.novo ?? false, referencia_em: linha.referencia_em ?? null,
+        emblemas: linha.emblemas ?? null, sequencia: linha.sequencia ?? null,
       }))
       definirLinhas(novasLinhas)
       definirComMovimento(movimento)
@@ -181,9 +163,6 @@ export function Ranking() {
   }
 
   const meuEmblema = conquistaAtual(meuTotal)
-  const meuProximo = proximaConquista(meuTotal)
-  const anterior = meuEmblema?.minimo ?? 0
-  const progressoProximo = meuProximo ? Math.min(100, Math.round(((meuTotal - anterior) / (meuProximo.minimo - anterior)) * 100)) : 100
   // A RPC devolve a sua linha mesmo fora do top 50; ela alimenta o cartão, não a lista.
   const eu = linhas?.find(linha => linha.eh_voce) ?? null
   const top = linhas?.filter(linha => linha.posicao <= 50) ?? null
@@ -270,7 +249,8 @@ export function Ranking() {
             <Movimento linha={linha} />
             <span className="rk-linha__avatar">{iniciais(linha.apelido)}</span>
             <span className="rk-linha__nome">
-              <span className="rk-linha__apelido">{linha.apelido}<Emblema total={linha.total_geral} />{linha.eh_voce && <span className="rk-voce">você</span>}</span>
+              <span className="rk-linha__apelido">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</span>
+              <span className="rk-linha__selos"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} /></span>
               <span className="rk-linha__barra" aria-hidden="true"><span style={{ width: `${Math.max(3, (linha.total / lider) * 100)}%` }} /></span>
             </span>
             <span className="rk-linha__total numerico">{linha.total.toLocaleString('pt-BR')}</span>
@@ -283,23 +263,7 @@ export function Ranking() {
       )}
     </>}
 
-    <section className="cartao cartao__corpo rk-emblemas">
-      <div className="rk-emblemas__topo">
-        <div>
-          <p className="meta">SEUS EMBLEMAS</p>
-          <h2>{meuEmblema ? meuEmblema.rotulo : 'Seu primeiro emblema está perto'}</h2>
-          <p className="texto-2">{meuProximo ? <>Faltam <strong>{(meuProximo.minimo - meuTotal).toLocaleString('pt-BR')}</strong> questões para <strong>{meuProximo.rotulo}</strong>.</> : 'Você chegou ao emblema mais alto. Lenda.'}</p>
-        </div>
-        {meuProximo && <div className="rk-progresso" aria-label={`${progressoProximo}% até ${meuProximo.rotulo}`}>
-          <span className="rk-progresso__barra"><span style={{ width: `${progressoProximo}%` }} /></span>
-          <small className="numerico">{meuTotal.toLocaleString('pt-BR')} / {meuProximo.minimo.toLocaleString('pt-BR')}</small>
-        </div>}
-      </div>
-      <h3 className="rk-emblemas__familia">Questões respondidas</h3>
-      <GradeEmblemas lista={CONQUISTAS} valor={meuTotal} unidade={(n) => `${n.toLocaleString('pt-BR')} questões`} />
-      <h3 className="rk-emblemas__familia">Sequência de dias</h3>
-      <GradeEmblemas lista={CONQUISTAS_SEQUENCIA} valor={recordeSequencia} unidade={(n) => `${n} dias seguidos`} />
-    </section>
+    {sessao && <Inventario metricas={metricas} nome={nomeExibido} vitrine={perfilRanking.emblemas} salvarVitrine={salvarVitrine} podeEscolher={perfilCarregado && comVitrine} />}
 
     <section className="cartao cartao__corpo rk-regras">
       <h2>Como funciona</h2>
@@ -307,7 +271,7 @@ export function Ranking() {
         <li><span><Icone nome="grafico" tamanho={18} /></span><div><strong>Conta volume, não acerto.</strong> Cada questão diferente respondida soma um ponto. Refazer a mesma questão não soma de novo.</div></li>
         <li><span><Icone nome="calendario" tamanho={18} /></span><div><strong>Geral ou últimos 7 dias.</strong> O geral mostra o acumulado; a semana dá chance a quem começou agora.</div></li>
         <li><span><Icone nome="usuario" tamanho={18} /></span><div><strong>Todo mundo com conta participa.</strong> Entra quem respondeu pelo menos {MINIMO_RANKING} questões, com o apelido que escolher ou o nome do cadastro e a inicial do sobrenome. Em <a href={href('/conta')}>Minha conta</a> você troca o apelido ou sai do ranking. E-mail, telefone e cidade nunca aparecem.</div></li>
-        <li><span><Icone nome="medalha" tamanho={18} /></span><div><strong>Emblemas são para sempre.</strong> Os de questões aparecem ao lado do seu nome; os de sequência contam o seu recorde de dias seguidos com pelo menos {META_STREAK_DIARIA} questões.</div></li>
+        <li><span><Icone nome="medalha" tamanho={18} /></span><div><strong>Conquistas e vitrine.</strong> As conquistas ficam no seu inventário para sempre, e você escolhe até três para aparecer ao lado do nome. A fogueira mostra a sua sequência de dias seguidos com pelo menos {META_STREAK_DIARIA} questões: se a sequência acabar, ela some e recomeça do zero.</div></li>
       </ul>
     </section>
   </div>

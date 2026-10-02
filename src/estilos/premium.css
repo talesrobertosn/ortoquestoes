@@ -366,6 +366,9 @@
 .rk-linha__total { font-weight: 800; font-size: 1.05rem; font-family: var(--fonte-texto); }
 .medalha { flex: 0 0 auto; filter: drop-shadow(0 2px 3px rgba(18, 24, 26, 0.18)); }
 .medalha--bloqueada { filter: grayscale(1); opacity: 0.35; }
+/* Pixel art: sem suavização, para os pixels continuarem nítidos em qualquer tamanho. */
+.medalha--arte { image-rendering: pixelated; object-fit: contain; }
+.medalha--arte.medalha--bloqueada { filter: grayscale(1) brightness(0.9); opacity: 0.3; }
 .medalha-inline { display: inline-flex; vertical-align: -3px; margin-left: 0.35rem; }
 .rk-lista { margin-top: 0.75rem; }
 .rk .numerico { font-family: var(--fonte-texto); font-variant-numeric: tabular-nums; }

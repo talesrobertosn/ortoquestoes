@@ -1,22 +1,31 @@
 import { useId } from 'react'
 import type { Conquista, NivelMedalha } from '../estado/conquistas'
+import { EMBLEMAS_COM_IMAGEM } from '../dados/imagensEmblemas'
+import { recurso } from '../config'
 
 const METAIS: Record<NivelMedalha, [string, string, string]> = {
   bronze: ['#f3c9a3', '#c07a45', '#8a4f25'],
   prata: ['#f4f7f8', '#b9c4c8', '#7d8a8f'],
   ouro: ['#fff1c2', '#e8b34f', '#a8761a'],
   esmeralda: ['#bff0e2', '#2f9c86', '#0f4f49'],
+  lendario: ['#f1dcff', '#9b5de5', '#4b1d7a'],
 }
 
 /**
- * Medalha desenhada em SVG: disco metálico com fitas, anel interno e o marco
- * no centro. Bloqueada, aparece em cinza e translúcida.
+ * Medalha de uma conquista. Quando a conquista tem arte própria (pixel art em
+ * public/emblemas), mostra a imagem; senão, o disco metálico desenhado em SVG
+ * com o marco no centro. Bloqueada, aparece em cinza e translúcida.
  */
 export function Medalha({ conquista, tamanho = 48, bloqueada = false, titulo }: { conquista: Conquista; tamanho?: number; bloqueada?: boolean; titulo?: string }) {
   const id = useId().replace(/:/g, '')
+  if (EMBLEMAS_COM_IMAGEM.has(conquista.id)) {
+    return <img className={'medalha medalha--arte' + (bloqueada ? ' medalha--bloqueada' : '')} src={recurso(`emblemas/${conquista.id}.png`)}
+      width={tamanho} height={tamanho} alt={titulo ?? conquista.rotulo} title={titulo} loading="lazy" decoding="async" draggable={false} />
+  }
   const [claro, meio, escuro] = METAIS[conquista.nivel]
   const texto = conquista.curto
   const fonte = texto.length >= 4 ? 10.5 : texto.length === 3 ? 12.5 : 15
+  const escuroTexto = conquista.nivel === 'esmeralda' || conquista.nivel === 'lendario'
   return (
     <svg className={'medalha' + (bloqueada ? ' medalha--bloqueada' : '')} width={tamanho} height={tamanho * 56 / 48} viewBox="0 0 48 56" role="img" aria-label={titulo ?? conquista.rotulo}>
       {titulo && <title>{titulo}</title>}
@@ -37,7 +46,7 @@ export function Medalha({ conquista, tamanho = 48, bloqueada = false, titulo }: 
       <circle cx="24" cy="22" r="20" fill={`url(#b-${id})`} />
       <circle cx="24" cy="22" r="15" fill="none" stroke="#ffffff" strokeOpacity="0.55" strokeWidth="1.3" />
       <circle cx="24" cy="22" r="19.3" fill="none" stroke={escuro} strokeOpacity="0.35" strokeWidth="1.2" />
-      <text x="24" y="22" dy="0.36em" textAnchor="middle" fontSize={fonte} fontWeight="800" fill={conquista.nivel === 'esmeralda' ? '#ffffff' : escuro} fontFamily="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">{texto}</text>
+      <text x="24" y="22" dy="0.36em" textAnchor="middle" fontSize={fonte} fontWeight="800" fill={escuroTexto ? '#ffffff' : escuro} fontFamily="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">{texto}</text>
     </svg>
   )
 }

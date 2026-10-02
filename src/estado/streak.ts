@@ -16,6 +16,8 @@ export interface Streak {
   metaHojeAtingida: boolean
   /** Tinha sequência, ainda não respondeu hoje: precisa estudar para não zerar. */
   emRisco: boolean
+  /** Último dia (AAAA-MM-DD) incluído na sequência atual: hoje, se a meta já foi batida, ou ontem. */
+  ateDia: string
 }
 
 const numeroDoDia = (chave: string) => Math.floor(new Date(`${chave}T00:00:00Z`).getTime() / 86400000)
@@ -70,6 +72,7 @@ export function calcularStreak(
     hojeContagem,
     metaHojeAtingida,
     emRisco: !metaHojeAtingida && atual > 0,
+    ateDia: metaHojeAtingida ? hojeChave : chaveDia(agora - 86400000),
   }
 }
 
