@@ -1,4 +1,5 @@
-import { useId, useMemo, useState, type ReactNode } from 'react'
+import { useEffect, useId, useMemo, useState, type ReactNode } from 'react'
+import { createPortal } from 'react-dom'
 import { Medalha } from './Medalha'
 import { Icone } from './Icone'
 import { JanelaCentral } from './JanelaCentral'
@@ -14,15 +15,40 @@ import { META_STREAK_DIARIA } from '../estado/streak'
  * Dica de um emblema: ao passar o mouse, ao focar pelo teclado ou ao tocar,
  * mostra a arte maior, o nome e o que foi preciso fazer para ganhá-lo.
  */
+/** Telas de toque: a dica abre como um cartão por cima de tudo, fora da linha do ranking. */
+const TOQUE = '(hover: none), (max-width: 40rem)'
+
 export function Dica({ titulo, texto, arte, children }: { titulo: string; texto: string; arte?: ReactNode; children: ReactNode }) {
   const id = useId()
+  const [aberta, setAberta] = useState(false)
+  useEffect(() => {
+    if (!aberta) return
+    const fechar = () => setAberta(false)
+    const tecla = (e: KeyboardEvent) => { if (e.key === 'Escape') fechar() }
+    window.addEventListener('keydown', tecla)
+    window.addEventListener('scroll', fechar, { passive: true })
+    return () => { window.removeEventListener('keydown', tecla); window.removeEventListener('scroll', fechar) }
+  }, [aberta])
   return <span className="dica">
-    <button type="button" className="dica__alvo" aria-describedby={id} aria-label={titulo} onClick={(e) => e.currentTarget.focus()}>{children}</button>
+    <button type="button" className="dica__alvo" aria-describedby={id} aria-label={titulo} aria-expanded={aberta || undefined}
+      onClick={(e) => {
+        if (window.matchMedia(TOQUE).matches) { e.preventDefault(); e.stopPropagation(); setAberta((v) => !v) }
+        else e.currentTarget.focus()
+      }}>{children}</button>
     <span className="dica__balao" role="tooltip" id={id}>
       {arte && <span className="dica__arte">{arte}</span>}
       <strong>{titulo}</strong>
       <span>{texto}</span>
     </span>
+    {aberta && createPortal(
+      <div className="dica-folha" role="presentation" onClick={(e) => { e.stopPropagation(); setAberta(false) }}>
+        <div className="dica-folha__cartao" role="dialog" aria-label={titulo}>
+          {arte && <span className="dica-folha__arte">{arte}</span>}
+          <strong>{titulo}</strong>
+          <span>{texto}</span>
+          <small>Toque para fechar</small>
+        </div>
+      </div>, document.body)}
   </span>
 }
 
