@@ -2112,47 +2112,59 @@
   "conferido": false
  },
  "joelho-0180": {
-  "conceito": "### Padrões de contusão óssea na lesão do LCA\n- **Clássico (pivot shift):** **côndilo femoral lateral** (região do sulco terminal) + **platô tibial posterolateral**. É a \"marca\" da própria subluxação anterolateral.\n- **Contragolpe:** ==platô tibial posteromedial==. Quando a tíbia **reduz** após a subluxação, o compartimento medial posterior bate. Esse edema tem forte associação com a **lesão em rampa**, na junção meniscocapsular do corno posterior medial.\n\n### Por que isso importa\n- A lesão em rampa é **facilmente perdida** na RM e na artroscopia anterior.\n- Edema **posteromedial** na tíbia = procurar ativamente a rampa (ótica pelo intercôndilo, portal posteromedial).\n\n> **Na prova:** LCA + edema no ==platô tibial posteromedial== = pensar em **lesão em rampa**.",
-  "correta": "**Lesão em rampa.**\n- O edema posteromedial da tíbia (contragolpe) é o sinal indireto clássico.",
   "incorretas": {
-   "A": "**Raiz meniscal.**\n- A lesão da raiz **lateral** associa-se ao LCA, mas o sinal na RM é o truncamento da raiz, não o edema posteromedial.",
-   "C": "**LCM.**\n- Edema e descontinuidade no **próprio ligamento** e no côndilo/epicôndilo medial.",
-   "D": "**Própria lesão do LCA.**\n- A contusão típica do LCA é **lateral**: côndilo femoral lateral e platô tibial posterolateral."
+   "A": "A lesão da raiz meniscal, especialmente da raiz posterior do menisco lateral, também acompanha a lesão do LCA, mas seu sinal na ressonância é a interrupção da raiz, e não o edema posteromedial da tíbia.",
+   "C": "A lesão do ligamento colateral medial aparece como edema e descontinuidade no próprio ligamento e, às vezes, contusão no côndilo ou epicôndilo medial do fêmur.",
+   "D": "A contusão típica da própria lesão do LCA é lateral, no côndilo femoral lateral e no platô tibial posterolateral, e não no platô posteromedial."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Quando o ligamento cruzado anterior rompe, o osso costuma ficar marcado, e a ressonância consegue ler essas marcas como se fossem as pegadas do acidente. O edema ósseo (contusão) aparece onde um osso bateu no outro, e o lugar onde ele aparece conta como foi o movimento.\n\nO padrão clássico da lesão do LCA é **lateral**. No momento da ruptura, a tíbia escorrega para a frente e roda por dentro, num movimento de subluxação parecido com o do teste do pivot shift. A parte de trás do platô tibial lateral bate contra o meio do côndilo femoral lateral. Resultado: edema no **côndilo femoral lateral** e no **platô tibial posterolateral**. Essa é a contusão da própria lesão do LCA.\n\nLogo depois, a tíbia volta para o lugar, e nesse retorno o compartimento medial pode bater por trás, num contragolpe. Aí aparece o edema no **platô tibial posteromedial**. E esse edema tem uma associação importante com a **lesão em rampa**: uma ruptura na junção entre o corno posterior do menisco medial e a cápsula, ou nas fixações do menisco à tíbia.\n\nPor que isso cai em prova? Porque a lesão em rampa é muito fácil de deixar passar. Na ressonância ela pode não aparecer, e na artroscopia feita só pelos portais da frente ela fica escondida atrás do côndilo. Se não for reparada junto com a reconstrução do LCA, ela aumenta a instabilidade e a sobrecarga do enxerto. Por isso, edema posteromedial na tíbia de um paciente com LCA roto é um aviso: é preciso procurar a rampa, olhando pela passagem entre os côndilos ou por um portal posteromedial.",
+  "correta": "De lesão meniscal em rampa. O edema no platô tibial posteromedial, produzido no contragolpe da redução da tíbia, é o sinal indireto mais associado à lesão da junção meniscocapsular posterior do menisco medial.",
+  "referencias": [
+   "DePhillipo NN, Cinque ME, Chahla J, Geeslin AG, Engebretsen L, LaPrade RF. Incidence and detection of meniscal ramp lesions on magnetic resonance imaging in patients with anterior cruciate ligament reconstruction. Am J Sports Med. 2017;45(10):2233-2237."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0181": {
-  "conceito": "### Ruptura do tendão patelar × tendão quadricipital\n| | Tendão patelar | Tendão quadricipital |\n|---|---|---|\n| Idade | ==menos de 40 anos== | mais de 40 anos |\n| Local típico | polo inferior da patela | junção osteotendínea no polo superior |\n| Patela | **alta** | baixa |\n\n### Ruptura do tendão patelar\n- **Mecanismo:** contração **excêntrica** do quadríceps com o joelho fletido (aterrissagem).\n- **Fatores:** tendinopatia prévia, corticoide (local ou sistêmico), LES, AR, IRC, diabetes.\n- **Rupturas completas** geralmente **estendem-se aos retináculos**, levando à ==perda completa da extensão ativa==. Com retináculos íntegros, pode haver extensão ativa parcial, o que confunde o diagnóstico.\n\n### Tratamento\n- **Reparo cirúrgico precoce**, idealmente em até ~2 semanas.\n- Na forma crônica, há retração e aderências; exige reconstrução.\n\n> **Na prova:** tendão patelar = ==jovem (menos de 40)==, retináculo roto, sem extensão ativa, patela alta.",
-  "correta": "**Menos de 40 anos, retináculo roto, sem extensão ativa.**",
   "incorretas": {
-   "A": "**Mais de 40 anos.**\n- Faixa do **tendão quadricipital**.",
-   "C": "**Mais de 40, sem lesão retinacular.**\n- Idade errada, e o padrão típico é de lesão completa com perda da extensão.",
-   "D": "**Menos de 40, sem lesão retinacular.**\n- Idade certa, mas a ruptura típica estende-se aos retináculos com perda completa da extensão."
+   "A": "Acima dos 40 anos, o mais comum é a ruptura do tendão quadricipital, e não do patelar.",
+   "C": "Erra a idade e o padrão: a ruptura do tendão patelar predomina abaixo dos 40 anos e, tipicamente, atinge os retináculos com perda completa da extensão.",
+   "D": "A idade está certa, mas a ruptura típica é completa e se estende aos retináculos, levando à perda da extensão ativa."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O aparelho extensor do joelho é uma corrente: quadríceps, tendão quadricipital, patela, tendão patelar e tuberosidade da tíbia. Ele pode romper em dois pontos principais acima e abaixo da patela, e cada um tem um perfil de paciente.\n\nA ruptura do **tendão quadricipital** é do paciente **mais velho**, geralmente acima dos 40 anos, com tendão já degenerado. A do **tendão patelar** é do **mais jovem**, abaixo dos 40, quase sempre num esporte. O mecanismo é uma contração forte do quadríceps com o joelho dobrado, como ao aterrissar de um salto ou tentar frear uma queda: o músculo puxa enquanto o joelho está sendo dobrado à força (contração excêntrica), e o tendão não aguenta. Tendinopatia prévia (o joelho do saltador), infiltrações de corticoide e doenças sistêmicas, como lúpus, artrite reumatoide e insuficiência renal, aumentam o risco e podem até provocar rupturas dos dois lados.\n\nA ruptura típica acontece perto do **polo inferior da patela** e, por ser completa, costuma se **estender para os retináculos**, as expansões laterais do quadríceps que também ajudam a estender o joelho. Com os retináculos rompidos, o paciente **perde totalmente a extensão ativa**: não consegue levantar a perna esticada. Ao exame há um vazio palpável abaixo da patela, e a radiografia em perfil mostra a **patela alta**, puxada para cima pelo quadríceps. Se os retináculos estiverem preservados, ele ainda pode esticar a perna parcialmente, o que confunde e atrasa o diagnóstico.\n\nO tratamento é o reparo cirúrgico precoce, de preferência nas primeiras duas semanas. Depois disso, o tendão retrai e a cirurgia vira uma reconstrução bem mais difícil.",
+  "correta": "Menos de 40 anos, com extensão para o tecido retinacular e perda completa da extensão do joelho. É o perfil típico: paciente jovem, ruptura completa que atinge os retináculos e impede a extensão ativa.",
+  "referencias": [
+   "Azar FM, Beaty JH, Canale ST (eds). Campbell's Operative Orthopaedics. 13th ed. Philadelphia: Elsevier; 2017."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0182": {
-  "conceito": "### Sinal de Wilson\n**Manobra:**\n1. Paciente sentado, com o joelho a **90°** de flexão.\n2. Estende-se o joelho mantendo a tíbia em **rotação interna**.\n3. **Dor por volta de ~30°** de flexão, quando a **espinha tibial medial** comprime a lesão na face lateral do côndilo medial.\n4. A dor **alivia com rotação externa** da tíbia.\n\n**Na marcha:** o paciente anda com a tíbia em ==rotação externa== para evitar esse contato.\n\n**Limitação:** tem **baixa sensibilidade** e não substitui a imagem (radiografia em túnel e RM).\n\n### Os outros epônimos\n- **Slocum:** gaveta anterior com a tíbia em rotação (instabilidade rotatória).\n- **MacIntosh:** **pivot shift** (LCA).\n- **Drehmann:** rotação externa obrigatória ao fletir o quadril (**epifisiólise**).\n\n> **Na prova:** OCD + marcha em rotação externa da tíbia = ==Wilson==.",
-  "correta": "**Wilson.**\n- Dor na extensão com rotação interna da tíbia, que alivia com rotação externa.",
   "incorretas": {
-   "B": "**Slocum.**\n- Gaveta anterior com rotação da tíbia: instabilidade rotatória.",
-   "C": "**MacIntosh.**\n- Pivot shift: subluxação anterolateral na insuficiência do LCA.",
-   "D": "**Drehmann.**\n- Epifisiólise proximal do fêmur: o quadril roda externamente ao fletir."
+   "B": "O teste de Slocum é a gaveta anterior feita com a tíbia rodada, para avaliar instabilidade rotatória do joelho.",
+   "C": "O teste de MacIntosh é o pivot shift, que reproduz a subluxação anterolateral da tíbia na insuficiência do LCA.",
+   "D": "O sinal de Drehmann é do quadril: na epifisiólise proximal do fêmur, o quadril roda para fora quando é fletido."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A osteocondrite dissecante é uma lesão do osso logo abaixo da cartilagem, em que um fragmento de osso com cartilagem por cima vai se soltando do resto do côndilo. No joelho, o local clássico é a **face lateral do côndilo femoral medial**, aquela que fica de frente para o centro da articulação. O paciente típico é um adolescente ativo com dor vaga no joelho, às vezes com derrame e, nas lesões instáveis, travamento.\n\nEm 1967, J. N. Wilson descreveu um sinal que usa justamente essa localização. Com o paciente sentado e o joelho dobrado a 90 graus, o examinador estende o joelho devagar mantendo a **tíbia rodada para dentro**. Por volta de **30 graus** de flexão, a eminência tibial medial (a espinha da tíbia) encosta na lesão do côndilo medial, e o paciente sente dor. Quando a tíbia é rodada **para fora**, a espinha se afasta da lesão e a dor some.\n\nO mesmo raciocínio aparece na marcha: alguns pacientes andam com a perna em **rotação externa**, de forma inconsciente, para evitar esse contato doloroso. É esse padrão que a questão chama de sinal de Wilson.\n\nVale saber que o sinal tem sensibilidade baixa: muitos pacientes com a lesão têm o teste negativo. O diagnóstico é feito por imagem, com a radiografia em incidência de túnel (que mostra bem a região do intercôndilo) e a ressonância, que avalia se o fragmento está estável.\n\nOs outros nomes da questão são de testes de outras doenças: Slocum e MacIntosh avaliam a instabilidade do LCA, e Drehmann é um sinal do quadril.",
+  "correta": "Wilson. O paciente evita, rodando a tíbia para fora, o contato da espinha tibial medial com a lesão no côndilo femoral medial, que dói com a tíbia em rotação interna.",
+  "referencias": [
+   "Wilson JN. A diagnostic sign in osteochondritis dissecans of the knee. J Bone Joint Surg Am. 1967;49(3):477-480."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0183": {
-  "conceito": "### Paralisia do fibular após ATJ\n- Complicação **rara**, mais frequente na correção de ==valgo acentuado com contratura em flexão==.\n- A correção **alonga** o lado lateral (valgo) e o posterior (flexão), **estirando** o fibular comum, que já é fixo no colo da fíbula.\n- **Outros fatores:** anestesia peridural (analgesia prolongada), curativo compressivo, torniquete prolongado, neuropatia prévia.\n\n### Conduta quando aparece\n- **Retirar curativos** compressivos.\n- **Fletir o joelho** (~20° a 30°) para aliviar a tensão no nervo.\n- Órtese para o **pé caído**.\n- A maioria dos casos tem **recuperação parcial ou total**; se não houver recuperação, pode-se considerar descompressão ou transferências.\n\n### Prevenção\nNas deformidades graves em valgo e flexão, **liberação lateral cuidadosa** e vigilância neurológica no pós-operatório imediato. Alguns cirurgiões mantêm o joelho levemente fletido nas primeiras horas.\n\n> **Na prova:** paralisia do fibular após ATJ = ==valgo + flexão==.",
-  "correta": "**Valgo e flexão.**\n- A correção estira o nervo pelo lado lateral e posterior.",
   "incorretas": {
-   "A": "**Varo e flexão.**\n- A correção do varo **encurta** o lado lateral; o risco ao fibular é menor.",
-   "C": "**Varo e extensão.**\n- Não estira o fibular.",
-   "D": "**Valgo e extensão.**\n- O valgo conta, mas o estiramento máximo vem de corrigir **também a flexão**."
+   "A": "Na correção do varo, o lado lateral fica relativamente mais curto, e o nervo fibular não é estirado. O risco é bem menor.",
+   "C": "A combinação de varo com extensão não estira o nervo fibular.",
+   "D": "O valgo contribui, mas o maior estiramento vem de corrigir também a contratura em flexão, que alonga a parte posterior do joelho."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O nervo fibular comum é o nervo mais vulnerável do joelho. Ele desce pela face lateral, por trás da cabeça da fíbula, e então contorna o **colo da fíbula**, onde fica preso, quase sem folga. Qualquer coisa que estique o lado de fora e a parte de trás do joelho tensiona esse nervo como uma corda.\n\nNa artroplastia total do joelho, isso acontece de forma previsível na correção de um joelho com **valgo acentuado associado a contratura em flexão**. No joelho valgo, as estruturas laterais estão encurtadas há anos; na contratura em flexão, as posteriores também. Quando o cirurgião alinha a perna e estende o joelho, ele alonga de uma vez o lado lateral e o posterior, e o nervo, que se adaptou à posição antiga, é estirado.\n\nA paralisia do fibular após a prótese é rara, mas esse é o cenário clássico. Outros fatores aumentam o risco: analgesia peridural contínua (que esconde a dor e deixa a perna parada numa posição ruim), curativos apertados, tempo prolongado de garrote e neuropatia prévia.\n\nQuando o paciente acorda com o pé caído, as primeiras medidas são retirar curativos compressivos e **dobrar o joelho** em cerca de 20 a 30 graus, para tirar a tensão do nervo. Uma órtese mantém o pé em posição. Boa parte dos casos recupera total ou parcialmente; os que não melhoram podem precisar de descompressão do nervo ou transferência de tendão.\n\nNa correção do varo acontece o contrário: o lado lateral fica relativamente mais curto, e o nervo não é estirado.",
+  "correta": "Valgo e flexão. Corrigir as duas deformidades alonga ao mesmo tempo o lado lateral e o posterior do joelho e estira o nervo fibular, fixo no colo da fíbula.",
+  "referencias": [
+   "Idusuyi OB, Morrey BF. Peroneal nerve palsy after total knee arthroplasty. Assessment of predisposing and prognostic factors. J Bone Joint Surg Am. 1996;78(2):177-184."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0184": {
@@ -2179,14 +2191,17 @@
   "conferido": false
  },
  "joelho-0186": {
-  "conceito": "### Restritores da hiperextensão do joelho\n- **Primários:** **LCA** e **cápsula posterior** (incluindo o ligamento poplíteo oblíquo e as estruturas posterolaterais).\n- **Secundário:** o **LCP**, que só assume papel relevante ==depois da ruptura do LCA== (e da cápsula).\n\n### Sequência na hiperextensão traumática\n1. Rompe primeiro o **LCA**.\n2. Com a força continuando, rompem a **cápsula posterior** e o **LCP**.\n3. No extremo, **luxação anterior** do joelho, com risco à **artéria poplítea**.\n\n### Clínica\n- **Recurvato** assimétrico (teste do recurvato-rotação externa de Hughston) sugere lesão do **CPL**, muitas vezes com cruzados.\n- Hiperextensão com contusão **anteromedial** da tíbia: pensar em lesão **posterolateral**.\n\n> **Na prova:** o LCP restringe a hiperextensão ==só após a ruptura do LCA==.",
-  "correta": "**Após a ruptura do LCA.**\n- Restritor secundário da hiperextensão.",
   "incorretas": {
-   "A": "**Não age.**\n- Age, mas como restritor **secundário**.",
-   "B": "**Antes do LCA.**\n- O LCA é que é tensionado e rompe primeiro.",
-   "D": "**Simultaneamente ao LCA.**\n- Com o LCA íntegro, a contribuição do LCP é pequena."
+   "A": "O LCP atua na restrição da hiperextensão, mas como restritor secundário, e não como primário.",
+   "B": "É o LCA que é tensionado primeiro na hiperextensão e rompe antes. O LCP entra depois.",
+   "D": "Com o LCA íntegro, a contribuição do LCP para segurar a hiperextensão é pequena. Os dois não atuam em paralelo."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Cada ligamento do joelho tem uma função principal, mas quase todos ajudam em outras situações como reforço. A questão quer saber quem segura o joelho contra a **hiperextensão**, o movimento de esticar além do reto.\n\nOs restritores **primários** da hiperextensão são o **ligamento cruzado anterior** e a **cápsula posterior**, reforçada pelo ligamento poplíteo oblíquo e pelas estruturas do canto posterolateral. Com o joelho estendido, o LCA está tenso e funciona como um tirante que impede a tíbia de ir para a frente e o joelho de se dobrar ao contrário.\n\nO **ligamento cruzado posterior** tem como função principal impedir que a tíbia vá para trás. Na hiperextensão, ele é um restritor **secundário**: com o LCA inteiro, sua contribuição é pequena. Ele só passa a trabalhar de verdade **depois que o LCA rompe** e a hiperextensão continua.\n\nIsso explica a sequência de lesões numa hiperextensão violenta. Primeiro rompe o LCA. Se a força continua, rompem a cápsula posterior e o LCP. No extremo, o joelho luxa para a frente, e a artéria poplítea, presa atrás do joelho, corre risco. Por isso, toda hiperextensão grave com instabilidade multidirecional merece avaliação vascular cuidadosa.\n\nNa clínica, um recurvato maior que o do outro lado, especialmente quando a tíbia também roda para fora ao ser levantada pelo pé, sugere lesão do canto posterolateral, muitas vezes associada às dos cruzados. Uma contusão na parte anteromedial da tíbia, pelo impacto direto na hiperextensão, também deve fazer pensar em lesão posterolateral.",
+  "correta": "Age como restritor após ruptura do ligamento cruzado anterior. Na hiperextensão, o LCP é um restritor secundário, que passa a atuar quando o LCA e a cápsula posterior falham.",
+  "referencias": [
+   "Azar FM, Beaty JH, Canale ST (eds). Campbell's Operative Orthopaedics. 13th ed. Philadelphia: Elsevier; 2017."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0187": {
@@ -2224,69 +2239,78 @@
   "conferido": false
  },
  "joelho-0190": {
-  "conceito": "### Sinal de Pisani\n- **Cisto meniscal** palpável na interlinha (mais comum na **lateral**), **proeminente em extensão**.\n- ==Desaparece ou diminui em flexão== (~45° ou mais), porque o cisto é empurrado para dentro, sob o ligamento colateral e a cápsula.\n\n### Cisto meniscal\n- Associado quase sempre a lesão **horizontal** (clivagem) do menisco, que funciona como **válvula** para o líquido sinovial.\n- **Tratamento:** tratar a **lesão meniscal** (regularização ou sutura) e **descomprimir** o cisto, por via artroscópica ou aberta.\n- Ressecar só o cisto leva a **recidiva**.\n\n### Diferenciar\n- **Cisto de Baker:** fossa **poplítea posteromedial**, entre o gastrocnêmio medial e o semimembranáceo. Mais tenso em **extensão** e amolece em flexão (**sinal de Foucher**).\n- **Ganglion** do tibiofibular proximal ou do LCA.\n\n> **Na prova:** massa na interlinha que some ao fletir = ==cisto meniscal (Pisani)==.",
-  "correta": "**Cisto meniscal.**\n- Proeminente em extensão, desaparece em flexão.",
   "incorretas": {
-   "B": "**Cisto de Baker.**\n- Fossa poplítea posteromedial.\n- O sinal epônimo é o de **Foucher** (endurece em extensão).",
-   "C": "**Menisco discoide.**\n- Clínica de **ressalto** e limitação da extensão na criança.",
-   "D": "**Retináculo lateral tenso.**\n- Avaliado pelo **tilt passivo** da patela (não se consegue elevar a borda lateral)."
+   "B": "O cisto de Baker fica na fossa poplítea posteromedial. Seu sinal característico é o de Foucher: fica tenso em extensão e amolece em flexão.",
+   "C": "O menisco discoide se manifesta na criança com estalido (ressalto) e limitação da extensão, e não com uma massa na interlinha que some ao fletir.",
+   "D": "A tensão excessiva do retináculo lateral é avaliada pelo teste de inclinação passiva da patela, em que não se consegue elevar a borda lateral da patela."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O cisto meniscal é uma coleção de líquido sinovial que se forma ao lado do menisco, na linha da articulação, quase sempre por causa de uma **lesão horizontal** do menisco (uma lesão que separa o menisco em uma lâmina de cima e uma de baixo, como um livro aberto). Essa lesão funciona como uma **válvula**: a cada movimento, o líquido da articulação é empurrado para dentro da fenda e sai pela periferia do menisco, mas não volta. Com o tempo, forma-se um cisto do lado de fora da articulação. É mais comum no **menisco lateral**.\n\nO **sinal de Pisani** ajuda a reconhecer esse cisto no exame. Com o joelho **estendido**, o cisto aparece como uma massa palpável e às vezes visível na interlinha articular. Quando o joelho é **dobrado**, a partir de cerca de 45 graus, a massa **diminui ou desaparece**, porque o cisto é empurrado para dentro, para baixo do ligamento colateral e da cápsula.\n\nIsso também orienta o tratamento. Se o cirurgião retirar só o cisto, ele volta, porque a válvula continua lá. É preciso tratar a **lesão do menisco** (regularizar ou suturar) e descomprimir o cisto, por artroscopia ou por uma pequena incisão.\n\nO **cisto de Baker** é outra coisa: fica atrás do joelho, na fossa poplítea, do lado medial, entre o gastrocnêmio medial e o semimembranáceo. Ele fica mais tenso com o joelho estendido e amolece com a flexão, o que se chama sinal de Foucher. O menisco discoide e o retináculo lateral tenso têm sinais próprios, sem relação com o de Pisani.",
+  "correta": "Cisto meniscal. O sinal de Pisani é a massa na interlinha articular que fica evidente com o joelho estendido e desaparece ou diminui com a flexão.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0191": {
-  "conceito": "### Critérios MSIS (2011) para infecção periprotética\n**Maiores** (basta **um**):\n- ==fístula comunicando com a prótese==;\n- **duas culturas** positivas para o **mesmo** microrganismo.\n\n**Menores** (basta **4 de 6**):\n1. VHS **e** PCR elevadas;\n2. leucócitos no líquido sinovial elevados (ou fita de esterase leucocitária ++);\n3. porcentagem de neutrófilos sinoviais elevada;\n4. **purulência** na articulação;\n5. histologia com mais de 5 neutrófilos por campo de grande aumento, em 5 campos;\n6. **uma** cultura positiva.\n\n### Evolução dos critérios\n- **ICM 2013:** retirou a **purulência** (pode ocorrer em metalose/ARMD).\n- **ICM 2018:** sistema de **pontuação**, incluindo **alfa-defensina**, dímero-D, esterase leucocitária e PCR sinovial como critérios menores. As maiores continuam **fístula** e **duas culturas iguais**.\n\n> **Na prova:** critério maior de IPP = ==fístula== ou ==2 culturas com o mesmo germe==.",
-  "correta": "**Fístula.**\n- Comunicando com a prótese, basta sozinha para o diagnóstico.",
   "incorretas": {
-   "B": "**Alfa-defensina.**\n- Não estava nos critérios MSIS de 2011.\n- Entrou como critério **menor** no ICM 2018.",
-   "C": "**Purulência.**\n- Critério **menor** no MSIS 2011, retirado depois (falso-positivo na metalose).",
-   "D": "**Uma cultura positiva.**\n- Critério **menor** (pode ser contaminante); o maior exige **duas** com o mesmo germe."
+   "B": "A alfa-defensina não fazia parte dos critérios da MSIS de 2011. Ela entrou depois, em 2018, como critério menor.",
+   "C": "A purulência intraoperatória era um critério menor em 2011 e foi retirada nas revisões seguintes, por poder ocorrer em reações a partículas de metal.",
+   "D": "Uma única cultura positiva é critério menor, porque pode ser contaminação. O critério maior exige duas culturas com o mesmo microrganismo."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A infecção em volta de uma prótese é uma das complicações mais temidas da artroplastia, e seu diagnóstico nem sempre é simples: a bactéria pode viver numa película (biofilme) presa ao implante, as culturas podem dar negativas e os exames de sangue podem ficar alterados por outras causas. Para padronizar, a Sociedade de Infecção Musculoesquelética (MSIS) publicou em 2011 critérios divididos em maiores e menores.\n\nOs critérios **maiores** são dois, e **qualquer um deles sozinho** fecha o diagnóstico. O primeiro é uma **fístula** (um trajeto que sai da pele) **comunicando com a prótese**: se existe um caminho aberto entre o meio externo e o implante, ele está contaminado. O segundo são **duas culturas positivas para o mesmo microrganismo**, colhidas de amostras diferentes do tecido ou do líquido em volta da prótese.\n\nOs critérios **menores** são seis, e é preciso ter pelo menos quatro: velocidade de hemossedimentação e proteína C reativa elevadas; contagem de leucócitos no líquido sinovial elevada (ou fita de esterase leucocitária fortemente positiva); porcentagem de neutrófilos no líquido sinovial elevada; purulência na articulação; histologia do tecido mostrando muitos neutrófilos; e **uma única** cultura positiva, que sozinha pode ser contaminação.\n\nOs critérios foram revistos depois. Em 2013, a purulência saiu da lista, porque reações a partículas de metal podem formar um líquido turvo sem infecção. Em 2018, a reunião de consenso internacional criou um sistema de pontos que incluiu exames novos, como a **alfa-defensina** e o dímero-D, como critérios menores. Em todas as versões, a fístula e as duas culturas com o mesmo germe continuaram como critérios maiores.",
+  "correta": "Presença de fístula. Uma fístula comunicando com a prótese é critério maior da MSIS e, sozinha, estabelece o diagnóstico de infecção periprotética.",
+  "referencias": [
+   "Parvizi J, Zmistowski B, Berbari EF, et al. New definition for periprosthetic joint infection: from the Workgroup of the Musculoskeletal Infection Society. Clin Orthop Relat Res. 2011;469(11):2992-2994."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0192": {
-  "conceito": "### Como achar o ponto de Schöttle\nNo **perfil verdadeiro** (côndilos posteriores sobrepostos):\n1. Prolonga-se a **cortical posterior** do fêmur (linha 1).\n2. Traça-se uma perpendicular a ela pela **origem posterior do côndilo medial**.\n3. Traça-se outra perpendicular pelo **ponto mais posterior da linha de Blumensaat**.\n4. O ponto fica ~1 mm ==anterior à linha da cortical posterior==, ~2,5 mm distal à primeira perpendicular e **proximal** à perpendicular de Blumensaat.\n\n### A linguagem da questão\n\"**Anterior** à bissetriz de Blumensaat e à **borda posterior** do fêmur\" resume a ideia: o ponto está **logo à frente** da cortical posterior, na altura da parte posterior da linha de Blumensaat.\n\n### Por que é importante\n- **Túnel anterior ou proximal** demais deixa o enxerto tenso em flexão (dor, perda de flexão, sobrecarga medial).\n- **Túnel distal** demais deixa-o tenso em extensão.\n- Ainda assim, radiografia ajuda, mas **não substitui** a palpação anatômica entre o **tubérculo dos adutores** e o **epicôndilo medial**.\n\n> **Na prova:** Schöttle = ==logo à frente da cortical posterior==, na altura da parte posterior de Blumensaat.",
-  "correta": "**Anterior a Blumensaat e à borda posterior do fêmur.**\n- ~1 mm anterior ao prolongamento da cortical posterior.",
   "incorretas": {
-   "A": "**Borda anterior.**\n- A referência é a cortical **posterior**.",
-   "C": "**Posterior a Blumensaat, borda anterior.**\n- As duas referências estão erradas.",
-   "D": "**Posterior à cortical posterior.**\n- Ficaria **fora** do osso."
+   "A": "A referência do ponto de Schöttle é a cortical posterior do fêmur, e não a borda anterior.",
+   "C": "Erra as duas referências: o ponto fica à frente, e não atrás, da referência de Blumensaat, e a borda usada é a posterior.",
+   "D": "Um ponto atrás da cortical posterior ficaria fora do osso, o que não faz sentido para a fixação do enxerto."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **ligamento patelofemoral medial** (LPFM) é a principal estrutura que impede a patela de sair para o lado de fora nos primeiros graus de flexão. Na luxação da patela, ele quase sempre rompe, e a cirurgia mais usada para a instabilidade recorrente é a sua reconstrução com um enxerto de tendão, fixado de um lado na patela e do outro no fêmur.\n\nO ponto crítico da cirurgia é o local da fixação no fêmur. Se ele ficar longe do ponto anatômico, o enxerto muda de comprimento quando o joelho dobra: fica tenso demais em alguma fase do movimento, o que causa dor, perda de flexão e sobrecarga da cartilagem entre a patela e o fêmur, ou frouxo, o que deixa a instabilidade voltar.\n\nEm 2007, Schöttle descreveu como encontrar esse ponto numa radiografia de perfil verdadeiro do joelho, com os côndilos posteriores sobrepostos. Traça-se o prolongamento da **cortical posterior** do fêmur. Depois, uma linha perpendicular a ela passando pela origem do côndilo medial, e outra passando pelo ponto mais posterior da **linha de Blumensaat** (a linha que marca o teto do intercôndilo). O ponto de Schöttle fica cerca de 1 mm **à frente da cortical posterior**, entre essas duas perpendiculares, na altura da parte posterior da linha de Blumensaat. A questão resume isso dizendo que ele está anterior à referência de Blumensaat e à borda posterior do fêmur.\n\nA radiografia ajuda muito durante a cirurgia, com o intensificador de imagem, mas não substitui a anatomia: o ponto fica entre o **tubérculo dos adutores** e o **epicôndilo medial**, que podem ser palpados.",
+  "correta": "Anterior à bissetriz da linha de Blumensaat e à borda posterior do fêmur. O ponto de Schöttle fica cerca de 1 mm à frente do prolongamento da cortical posterior, na altura da parte posterior da linha de Blumensaat.",
+  "referencias": [
+   "Schöttle PB, Schmeling A, Rosenstiel N, Weiler A. Radiographic landmarks for femoral tunnel placement in medial patellofemoral ligament reconstruction. Am J Sports Med. 2007;35(5):801-804."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0193": {
-  "conceito": "### Lesões associadas ao LCA\n- **Ligamentar:** a associação mais comum é ==LCA + LCM==. O mecanismo é o **valgo com rotação externa** (pé fixo, mudança de direção), típico de futebol, basquete e esqui.\n- **Meniscal:**\n  - na lesão **aguda**, o menisco **lateral** é o mais lesado;\n  - na **crônica**, o **medial**, por sobrecarga do corno posterior, que é restritor secundário da translação anterior.\n- A \"**tríade infeliz**\" de O'Donoghue (LCA + LCM + menisco medial) é clássica, mas, no agudo, o **menisco lateral** é mais frequente.\n\n### Tratamento do LCA + LCM\n- LCM **grau I e II** (e muitos grau III): tratamento **conservador** com órtese por algumas semanas, recuperando o movimento. Depois, reconstrução do LCA.\n- Considera-se abordar o LCM se houver valgo residual, lesão distal (efeito Stener-like) ou lesão **posteromedial** associada.\n\n> **Na prova:** combinação ligamentar mais comum = ==LCA + LCM==.",
-  "correta": "**Ligamento colateral medial.**\n- Mecanismo em valgo com rotação externa, típico dos esportes de pivô.",
   "incorretas": {
-   "A": "**Banda iliotibial.**\n- Raramente lesada; pode avulsionar o tubérculo de Gerdy em traumas graves.",
-   "B": "**LCL.**\n- Menos frequente; mecanismo em **varo**, geralmente dentro de lesão do CPL.",
-   "D": "**LCP.**\n- LCA + LCP = lesão **multiligamentar**, muitas vezes luxação do joelho; bem menos comum."
+   "A": "A banda iliotibial raramente é lesada. Em traumas graves, pode arrancar o tubérculo de Gerdy, mas não é a associação mais comum com o LCA.",
+   "B": "O colateral lateral é lesado por mecanismo em varo, geralmente junto com outras estruturas do canto posterolateral. É bem menos frequente.",
+   "D": "A lesão de LCA com LCP é uma lesão multiligamentar, frequentemente uma luxação do joelho, e é muito menos comum."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O jogador de futebol que planta o pé no chão e muda de direção bruscamente, ou que leva uma pancada na face lateral do joelho, faz o joelho entrar em **valgo** (os joelhos se aproximam) enquanto a tíbia **roda para fora**. Esse é o mecanismo de lesão mais comum nos esportes com giro, e ele estira justamente duas estruturas: o **ligamento colateral medial**, que segura o valgo, e o **ligamento cruzado anterior**, que segura a rotação e a translação anterior da tíbia.\n\nPor isso, a **lesão combinada de LCA e LCM** é a associação ligamentar mais frequente do joelho do jovem atleta. Quando a força é ainda maior, pode somar-se uma lesão meniscal: a famosa tríade de O'Donoghue, com LCA, LCM e menisco medial. Hoje se sabe que, na lesão aguda, o menisco lesado com mais frequência é o **lateral**; o medial passa a predominar nos joelhos com LCA roto há muito tempo, porque o corno posterior do menisco medial passa a segurar a tíbia no lugar do ligamento e se desgasta.\n\nO tratamento costuma seguir uma sequência. O LCM tem boa capacidade de cicatrizar, e a maioria das lesões, inclusive muitas completas, cicatriza com órtese e reabilitação por algumas semanas. Depois que o joelho recupera o movimento, reconstrói-se o LCA. O LCM é abordado na cirurgia quando sobra valgo instável, quando a lesão é na inserção tibial com o ligamento deslocado ou quando há lesão importante do canto posteromedial.\n\nAs outras combinações existem, mas são bem menos comuns: o colateral lateral se lesa em varo, geralmente dentro de uma lesão do canto posterolateral, e LCA com LCP já é lesão multiligamentar, muitas vezes uma luxação do joelho.",
+  "correta": "Ligamento colateral medial. O mecanismo de valgo com rotação externa, típico dos esportes de giro, lesa ao mesmo tempo o LCA e o LCM.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0194": {
-  "conceito": "### Síndrome de Down e o joelho\nA **frouxidão ligamentar generalizada** e a **hipotonia** tornam a instabilidade patelar frequente. A prevalência cobrada é em torno de ==8%== (as séries variam).\n\n### Características\n- **Espectro:** da **subluxação** à **luxação habitual** e à luxação **permanente/irredutível**.\n- **Muitas vezes indolor**; a criança pode andar bem, com a marcha pouco afetada.\n- Associa-se a **geno valgo**, pés planos e torção tibial externa.\n\n### Tratamento\n- **Conservador** na maioria (fortalecimento, órteses), sobretudo se a função é boa.\n- **Cirurgia** quando há perda funcional ou quedas: realinhamento de **partes moles** proximal e distal, reconstrução do LPFM. Nos esqueleticamente maduros, eventualmente osteotomia da TAT.\n- **Recidiva** é mais alta que na população geral.\n\n### Outras associações ortopédicas da síndrome de Down\n- Instabilidade **atlantoaxial**.\n- Displasia e **instabilidade do quadril**.\n- **Epifisiólise**.\n- Pé plano, hálux valgo.\n- Escoliose.\n\n> **Na prova:** instabilidade patelar na síndrome de Down em torno de ==8%==.",
-  "correta": "**8%.**\n- Valor de referência da literatura.",
   "incorretas": {
-   "B": "**16%.**\n- Superestima.",
-   "C": "**24%.**\n- Superestima.",
-   "D": "**32%.**\n- Superestima."
+   "B": "16% é o dobro do valor descrito na literatura de referência.",
+   "C": "24% superestima bastante a prevalência de instabilidade patelar na síndrome de Down.",
+   "D": "32% está muito acima do valor encontrado nas séries publicadas."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A síndrome de Down tem uma marca que atravessa toda a ortopedia desses pacientes: a **frouxidão ligamentar generalizada**, junto com a **hipotonia muscular**. Ligamentos frouxos e músculos com pouco tônus deixam as articulações instáveis, e isso aparece em vários lugares do corpo: na coluna cervical (instabilidade entre o atlas e o áxis), no quadril (que pode luxar), nos pés (planos) e no joelho.\n\nNo joelho, a manifestação é a **instabilidade femoropatelar**. Na série clássica de Dugdale e Renshaw, ela esteve presente em cerca de **8%** dos pacientes com síndrome de Down, e é esse o valor cobrado. As séries variam um pouco, mas a ordem de grandeza é essa.\n\nA instabilidade vai de uma subluxação leve até a luxação habitual (a patela sai a cada flexão) e a luxação permanente, em que ela fica o tempo todo fora do sulco. Um detalhe que surpreende: muitas vezes ela é **pouco dolorosa**, e a criança anda razoavelmente bem, o que faz o problema passar despercebido. Joelho valgo, pés planos e torção externa da tíbia costumam acompanhar o quadro.\n\nO tratamento é conservador na maioria dos casos, com fortalecimento e órteses, principalmente quando a função é boa. A cirurgia entra quando há perda funcional, quedas ou piora da marcha, com realinhamento de partes moles, reconstrução do ligamento patelofemoral medial e, no esqueleto maduro, às vezes transferência da tuberosidade da tíbia. A taxa de recidiva é maior que na população geral, pela própria frouxidão.",
+  "correta": "8%. É a prevalência de instabilidade femoropatelar descrita na síndrome de Down na série clássica de Dugdale e Renshaw.",
+  "referencias": [
+   "Dugdale TW, Renshaw TS. Instability of the patellofemoral joint in Down syndrome. J Bone Joint Surg Am. 1986;68(3):405-413."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0195": {
-  "conceito": "### Menisco discoide\nQuase sempre **lateral**. Classificação de **Watanabe**:\n- **Completo:** cobre todo o platô; estável.\n- **Incompleto:** cobre parcialmente; estável.\n- **Tipo Wrisberg:** sem inserção **posterior** no platô, preso só pelo ligamento de Wrisberg; ==instável==.\n\n### Clínica por idade\n- **Criança pequena**, sobretudo no tipo Wrisberg ou com instabilidade periférica:\n  - **joelho em ressalto** (snapping knee), um **estalo audível/visível** na extensão;\n  - ==limitação da extensão== final.\n  - Muitas vezes **sem dor**.\n- **Criança maior / adolescente:** **dor**, derrame e bloqueio por **lesão** do menisco discoide.\n\n### Imagem\n- **Radiografia:** espaço articular lateral alargado, côndilo lateral achatado, platô lateral côncavo.\n- **RM:** \"**gravata-borboleta**\" contínua em **3 ou mais cortes sagitais** consecutivos de 4 a 5 mm.\n\n### Tratamento\n- **Assintomático:** observação.\n- **Sintomático:** **saucerização** artroscópica, deixando ~6 a 8 mm de borda, e **sutura** da instabilidade periférica.\n- Evitar meniscectomia total.\n\n> **Na prova:** criança pequena com discoide = ==ressalto + falta de extensão==.",
-  "correta": "**Ressalto e limitação da extensão.**\n- Quadro clássico do discoide instável na criança pequena.",
   "incorretas": {
-   "A": "**Dor e claudicação.**\n- Inespecíficos; não é o quadro típico da criança pequena.",
-   "B": "**Dor e bloqueio.**\n- Mais comuns na criança **maior** com o discoide **lesado**.",
-   "C": "**Ressalto e instabilidade.**\n- O ressalto está certo, mas o par clássico é com a **limitação da extensão**."
+   "A": "Dor e claudicação são sintomas inespecíficos e não descrevem o quadro típico do menisco discoide na criança pequena.",
+   "B": "Dor e bloqueio aparecem mais na criança maior ou no adolescente, quando o menisco discoide se rompe.",
+   "C": "O ressalto está certo, mas o sintoma que o acompanha classicamente é a limitação da extensão, e não a sensação de instabilidade do joelho."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O menisco normal tem forma de meia-lua, com o centro aberto. O **menisco discoide** é um menisco em forma de disco, mais largo e mais grosso, que cobre boa parte ou todo o platô tibial. É quase sempre **lateral** e muitas vezes acontece nos dois joelhos.\n\nA classificação de Watanabe separa três tipos. O **completo** cobre todo o platô; o **incompleto** cobre uma parte; os dois são presos normalmente à tíbia e, por isso, estáveis. O terceiro é o **tipo Wrisberg**, que não tem a fixação posterior na tíbia e fica preso atrás apenas pelo ligamento meniscofemoral de Wrisberg. Esse é **instável**: a cada movimento, o menisco se desloca para dentro e para fora da articulação.\n\nO quadro clínico depende da idade. Na **criança pequena**, o sintoma clássico é o **joelho em ressalto**: um estalo que se ouve e às vezes se vê quando o joelho estende, causado pelo menisco instável que pula de posição. Junto vem a **limitação da extensão** final, porque o menisco grosso e deslocado atrapalha o joelho de esticar completamente. Muitas vezes não há dor, e os pais trazem a criança por causa do barulho. Na **criança maior e no adolescente**, o menisco discoide, mais frágil que o normal, costuma **rasgar**, e aí os sintomas passam a ser dor, derrame e bloqueio.\n\nNa ressonância, o menisco aparece com a forma de gravata-borboleta em três ou mais cortes sagitais seguidos. Se não houver sintomas, apenas se observa. Se houver, a cirurgia é a **saucerização**: esculpir o disco por artroscopia até deixar uma borda com o formato de um menisco normal, e suturar a periferia se ela estiver instável. A retirada total do menisco é evitada, pelo risco de artrose precoce.",
+  "correta": "Ressalto e limitação da extensão. Na criança pequena, o menisco discoide instável pula de posição durante a extensão, causando o estalo, e impede o joelho de estender completamente.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0196": {
@@ -2301,14 +2325,14 @@
   "conferido": false
  },
  "joelho-0197": {
-  "conceito": "### Osgood-Schlatter\n**Apofisite por tração** da **tuberosidade anterior da tíbia**:\n- adolescentes em fase de estirão, esportistas (salto, corrida);\n- dor e aumento de volume na TAT, piora com ajoelhar e saltar;\n- **autolimitada**: melhora com o fechamento da apófise, e a maioria resolve com **tratamento conservador** (repouso relativo, gelo, alongamento).\n\n### Complicações\n- ==Ossículo não unido (pseudartrose da TAT)==: fragmento ossificado dentro do tendão patelar, com dor persistente na vida adulta. Trata-se com **ressecção** do ossículo, que tem bons resultados.\n- ==Geno recurvato==: por **fechamento precoce da porção anterior da fise tibial proximal**, com a posterior continuando a crescer. É raro e ocorre mais em quem teve **trauma ou imobilização**.\n- Outras: proeminência óssea residual, **patela alta** e, raramente, avulsão da TAT.\n\n> **Na prova:** complicações do Osgood = ==ossículo não unido + recurvato== (epifisiodese anterior).",
-  "correta": "**Geno recurvato e pseudartrose da TAT.**\n- Recurvato por fechamento precoce da fise anterior; ossículo não unido doloroso.",
   "incorretas": {
-   "A": "**Geno varo e instabilidade.**\n- Não são complicações do Osgood.",
-   "B": "**Geno valgo e instabilidade.**\n- O valgo pós-traumático clássico é o de **Cozen**, na fratura metafisária da tíbia proximal.",
-   "C": "**Geno flexo.**\n- Com o fechamento da fise **anterior**, a deformidade é em **hiperextensão** (recurvato), não em flexo."
+   "A": "Joelho varo e instabilidade não são complicações da doença de Osgood-Schlatter.",
+   "B": "O valgo pós-traumático clássico da tíbia proximal é o fenômeno de Cozen, depois de fraturas da metáfise, e não uma complicação do Osgood-Schlatter.",
+   "C": "Com o fechamento da parte anterior da fise, a deformidade é em hiperextensão (recurvato), e não em flexão. A pseudartrose está certa, mas a deformidade não."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A doença de **Osgood-Schlatter** é uma inflamação por tração na **tuberosidade anterior da tíbia**, onde o tendão patelar se prende. Durante o estirão de crescimento, essa região ainda é uma apófise, um centro de crescimento separado do resto da tíbia por cartilagem. O quadríceps, cada vez mais forte, puxa repetidamente o tendão patelar, especialmente em esportes com salto e corrida, e a apófise sofre microarrancamentos.\n\nO adolescente tem dor e um caroço na frente do joelho, logo abaixo da patela, que piora para ajoelhar, saltar e subir escadas. A doença é **autolimitada**: quando a apófise se funde ao resto da tíbia, no fim do crescimento, a dor some. O tratamento é conservador, com redução das atividades que causam dor, gelo e alongamento do quadríceps e dos isquiotibiais.\n\nAs complicações são poucas, mas existem. A mais conhecida é o **ossículo não unido**: um fragmento de osso que se formou dentro do tendão e nunca se juntou à tíbia. Ele funciona como uma **pseudartrose** da tuberosidade e pode doer por anos na vida adulta. O tratamento é retirar o ossículo, com bons resultados.\n\nA outra é o **joelho recurvato**, mais rara. Se a parte da frente da placa de crescimento da tíbia proximal se fecha antes da hora (o que acontece mais depois de trauma ou imobilização), a parte de trás continua crescendo, e a tíbia vai se inclinando para trás. O joelho passa a estender além do normal. Também podem ficar uma proeminência óssea residual e, menos frequentemente, uma patela alta.",
+  "correta": "Geno recurvato e pseudartrose da tuberosidade anterior da tíbia. O fechamento precoce da parte anterior da fise tibial causa o recurvato, e o ossículo não unido no tendão funciona como pseudartrose dolorosa.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0198": {
@@ -2438,69 +2462,78 @@
   "conferido": false
  },
  "joelho-0207": {
-  "conceito": "### Como o menisco suporta carga\n- As fibras de colágeno são sobretudo **circunferenciais**, ancoradas nas **raízes** anterior e posterior.\n- Sob carga axial, o menisco tende a ser **extruído** para a periferia. As fibras circunferenciais ficam **tracionadas** (**hoop stress**) e seguram o anel.\n- Assim, ele converte a ==compressão== axial em tensão circunferencial e distribui a carga por uma área maior.\n\n### Números aproximados\n- Os meniscos transmitem boa parte da carga do joelho: cerca de metade em extensão, mais em flexão.\n- O **menisco lateral** carrega proporcionalmente mais do seu compartimento (~70%) que o medial (~50%). Por isso, a meniscectomia **lateral** tem pior prognóstico.\n- A **meniscectomia total** aumenta muito o pico de pressão de contato. Uma lesão **radial completa** ou de **raiz** tem efeito semelhante.\n\n### O que o menisco tolera mal\nForças de **cisalhamento** e **rotação** sob carga, justamente o mecanismo de muitas lesões (pivô com o pé fixo).\n\n> **Na prova:** menisco = feito para ==compressão==, via hoop stress.",
-  "correta": "**Compressão.**\n- A carga axial é convertida em tensão circunferencial (hoop stress).",
   "incorretas": {
-   "A": "**Flexão.**\n- Não é a carga para a qual o menisco é especializado.",
-   "B": "**Rotação.**\n- Rotação sob carga é **mecanismo de lesão**.",
-   "D": "**Cisalhamento.**\n- Também é mecanismo de lesão, não a carga que ele suporta melhor."
+   "A": "A flexão não é o tipo de carga para o qual a estrutura do menisco é especializada.",
+   "B": "A rotação com o joelho carregado é justamente um dos mecanismos que lesam o menisco, e não a carga que ele melhor suporta.",
+   "D": "O cisalhamento também é mecanismo de lesão do menisco, e não a força que ele tolera melhor."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O menisco tem um trabalho difícil: ficar entre o fêmur arredondado e a tíbia quase plana e transformar um contato pequeno, numa área estreita, em um contato largo, que espalha a carga pela cartilagem. Para isso, ele foi construído de um jeito engenhoso.\n\nA maior parte das fibras de colágeno do menisco corre em **círculo**, acompanhando a forma de meia-lua, e as pontas desse anel estão firmemente presas à tíbia pelas **raízes** anterior e posterior. Quando o peso do corpo desce, o fêmur aperta o menisco, que, por ter forma de cunha, tende a ser espremido para fora da articulação. As fibras circulares resistem a esse escape, ficando tensas como os aros de metal que seguram as tábuas de um barril. Essa tensão em anel tem nome em inglês, **hoop stress**. O resultado é que a **compressão** vertical é transformada em tensão ao longo do anel, e o menisco aguenta muito bem esse tipo de carga.\n\nÉ por isso que algumas lesões são tão graves para o joelho. Uma lesão **radial** completa ou uma lesão da **raiz** corta o anel, e o menisco deixa de segurar a carga: o efeito na pressão sobre a cartilagem é parecido com o de retirar o menisco inteiro. Os meniscos transmitem uma parte grande da carga do joelho, e o lateral carrega proporcionalmente mais do seu compartimento que o medial, o que explica por que a retirada do menisco lateral leva mais rápido à artrose.\n\nO que o menisco tolera mal são as forças de **cisalhamento** e de **rotação** com o joelho carregado: o giro com o pé plantado no chão, que é o mecanismo de boa parte das lesões meniscais.",
+  "correta": "Compressão. As fibras circunferenciais, presas às raízes, convertem a carga compressiva em tensão ao longo do anel, permitindo ao menisco distribuir o peso por uma área maior.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0208": {
-  "conceito": "### As três estruturas-chave do canto posterolateral (CPL)\n| Estrutura | Trajeto | Função principal |\n|---|---|---|\n| **LCL** | epicôndilo lateral → cabeça da fíbula | restritor primário do **varo** |\n| **Tendão poplíteo** | côndilo lateral → músculo poplíteo | **rotação externa** (componente dinâmico + estático) |\n| ==Ligamento popliteofibular== | junção musculotendínea do poplíteo → **cabeça da fíbula** | estático contra **translação posterior, varo e rotação externa** |\n\n### Por que o popliteofibular\n- É uma estrutura **puramente estática**: liga o poplíteo à fíbula.\n- Contribui para os **três** vetores ao mesmo tempo: posterior, varo e rotação lateral.\n- Na reconstrução anatômica do CPL (LaPrade), refaz-se **LCL + poplíteo + popliteofibular**.\n\n### Os outros\n- **Trato iliotibial:** estabilizador **anterolateral**; na verdade, fica anterior ao eixo.\n- **Bíceps femoral:** estabilizador **dinâmico**; sua lesão acompanha as lesões graves.\n\n> **Na prova:** estabilizador **estático** do CPL contra posterior + varo + rotação externa = ==popliteofibular==.",
-  "correta": "**Ligamento popliteofibular.**\n- Estabilizador estático contra translação posterior, varo e rotação lateral.",
   "incorretas": {
-   "A": "**Tendão poplíteo.**\n- Tem componente **dinâmico** (músculo); o estabilizador estático puro é o popliteofibular.",
-   "B": "**Trato iliotibial.**\n- Estabilizador **anterolateral**, não do CPL.",
-   "D": "**LCL.**\n- Restritor primário do **varo**; tem papel menor na rotação e na translação posterior."
+   "A": "O tendão poplíteo controla a rotação externa, mas é a continuação de um músculo e tem um componente dinâmico. O estabilizador estático puro ligado a ele é o popliteofibular.",
+   "B": "O trato iliotibial atua como estabilizador anterolateral do joelho, e não como estrutura do canto posterolateral contra essas forças.",
+   "D": "O colateral lateral é o principal restritor do varo, mas contribui pouco para segurar a rotação lateral e a translação posterior."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O canto posterolateral do joelho é um conjunto de estruturas que, juntas, impedem o joelho de abrir em **varo**, a tíbia de **rodar para fora** e, em parte, de ir **para trás**. Por muito tempo foi chamado de \"lado escuro do joelho\", porque suas lesões eram pouco reconhecidas e mal tratadas. Os estudos anatômicos de LaPrade mostraram que três estruturas fazem quase todo o trabalho.\n\nO **ligamento colateral lateral** (ou colateral fibular) vai do epicôndilo lateral do fêmur à cabeça da fíbula. Ele é o principal restritor do **varo**, mas tem papel menor na rotação.\n\nO **tendão poplíteo** nasce no côndilo lateral do fêmur, passa por dentro da articulação e vira o músculo poplíteo atrás da tíbia. Ele controla a **rotação externa**, mas, por ser a continuação de um músculo, tem também um componente dinâmico.\n\nO **ligamento popliteofibular** sai da junção entre o músculo e o tendão poplíteo e vai até a **cabeça da fíbula**. É uma estrutura **puramente estática**, sem músculo, e seu trajeto faz com que ele trabalhe nos três sentidos ao mesmo tempo: resiste à translação **posterior**, ao **varo** e à **rotação lateral** da tíbia. É exatamente a descrição da questão.\n\nPor isso, a reconstrução anatômica do canto posterolateral refaz as três estruturas: o colateral lateral, o poplíteo e o popliteofibular. O trato iliotibial, por sua vez, fica mais à frente e é um estabilizador anterolateral, e o bíceps femoral é um estabilizador dinâmico, muscular.",
+  "correta": "Ligamento poplíteo fibular. Ele liga o complexo poplíteo à cabeça da fíbula e é um estabilizador estático contra a translação posterior, o varo e a rotação lateral da tíbia.",
+  "referencias": [
+   "LaPrade RF, Ly TV, Wentorf FA, Engebretsen L. The posterolateral attachments of the knee: a qualitative and quantitative morphologic analysis of the fibular collateral ligament, popliteus tendon, popliteofibular ligament, and lateral gastrocnemius tendon. Am J Sports Med. 2003;31(6):854-860."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0209": {
-  "conceito": "### Irrigação dos cruzados\n- ==Artéria genicular média==: ramo da **poplítea** que perfura a **cápsula posterior** e o ligamento poplíteo oblíquo. Entra no intercôndilo e irriga **LCA e LCP**, pela **sinóvia** que os envolve.\n- **Contribuição menor:** geniculares **inferiores**, via **coxim gorduroso infrapatelar**.\n- As **inserções ósseas** praticamente não contribuem.\n\n### Consequências\n- O LCA é intra-articular, mas **extrassinovial** (envolto por sinóvia). Rompido, o líquido sinovial impede a formação de coágulo estável, e a cicatrização espontânea é **ruim**.\n- O **enxerto** reconstruído passa por **necrose, revascularização e remodelação** (\"ligamentização\") ao longo de meses. Por isso a reabilitação protege o enxerto no período de menor resistência.\n\n> **Na prova:** irrigação do LCA = ==genicular média==.",
-  "correta": "**Genicular média.**\n- Ramo da poplítea que entra pela cápsula posterior e irriga os cruzados via sinóvia.",
   "incorretas": {
-   "B": "**Genicular lateral.**\n- As geniculares superior e inferior laterais irrigam cápsula, menisco lateral e partes moles periféricas.",
-   "C": "**Genicular inferior.**\n- Contribui pouco, pelo coxim gorduroso; não é a principal.",
-   "D": "**Genicular superior.**\n- Irriga a rede periarticular e a patela, não o LCA."
+   "B": "As geniculares laterais, superior e inferior, irrigam a cápsula, o menisco lateral e as partes moles da periferia do joelho, e não são a fonte principal do LCA.",
+   "C": "As geniculares inferiores contribuem pouco, pelo coxim gorduroso infrapatelar. Não são a artéria principal do LCA.",
+   "D": "As geniculares superiores participam da rede em volta do joelho e da irrigação da patela, mas não irrigam o LCA de forma relevante."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O ligamento cruzado anterior vive num lugar pouco irrigado. Ele fica dentro do joelho, no espaço entre os côndilos do fêmur, mas envolto por uma capa de membrana sinovial, como uma salsicha dentro da pele. Por isso se diz que ele é intra-articular, mas extrassinovial. E é exatamente por essa capa que chega quase todo o seu sangue.\n\nA artéria principal é a **genicular média**, um ramo da artéria poplítea que sai na parte de trás do joelho, atravessa a cápsula posterior e o ligamento poplíteo oblíquo e entra direto no intercôndilo. Lá, ela se ramifica na sinovial que cobre os dois cruzados e, dessa rede, pequenos vasos penetram nos ligamentos. Uma contribuição menor vem das geniculares inferiores, através do coxim gorduroso que fica atrás do tendão patelar. As inserções ósseas do ligamento quase não participam.\n\nEssa irrigação pobre ajuda a explicar dois fatos clínicos. Primeiro, o LCA rompido praticamente não cicatriza sozinho: ele está banhado em líquido sinovial, que impede a formação de um coágulo estável entre os cotos, e o sangue que chega é pouco. Segundo, quando o ligamento é reconstruído com um enxerto de tendão, esse enxerto passa meses morrendo em parte, sendo revascularizado e se remodelando até se parecer com um ligamento, processo chamado de ligamentização. É nessa fase que o enxerto fica mais fraco, e por isso a reabilitação respeita prazos antes do retorno ao esporte.\n\nAs geniculares superiores e inferiores, medial e lateral, formam uma rede em volta do joelho e irrigam a cápsula, os meniscos na periferia e a patela, mas não são a fonte principal dos cruzados.",
+  "correta": "Genicular média. Ramo da artéria poplítea, ela atravessa a cápsula posterior e irriga os cruzados pela sinovial que os envolve.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0210": {
-  "conceito": "### Onde rompe o mecanismo extensor\n| Estrutura | Local mais comum | Perfil |\n|---|---|---|\n| **Tendão patelar** | ==polo inferior da patela== (junção osteotendínea) | menos de 40 anos, atletas |\n| **Tendão quadricipital** | 1 a 2 cm acima do polo superior | mais de 40 anos, doença sistêmica |\n| **Avulsão da TAT** | tuberosidade tibial | adolescentes próximos da maturidade |\n\n### Ruptura do tendão patelar\n- **Onde rompe:** a junção **osteotendínea** proximal é o ponto fraco, e aí ocorrem as tendinopatias (jumper's knee). As rupturas **médias** e **distais** são menos comuns.\n- **Fatores:** tendinopatia prévia, infiltração de corticoide, doenças sistêmicas.\n- **Imagem:** patela **alta** (Insall-Salvati acima de 1,2).\n- **Reparo:** suturas **transósseas** pela patela ou **âncoras**, com cerclagem de proteção.\n\n### Na criança\nO equivalente é a **fratura em manga** (sleeve) do polo inferior da patela: pouco osso visível na radiografia, com grande fragmento cartilaginoso.\n\n> **Na prova:** tendão patelar rompe no ==polo inferior da patela==.",
-  "correta": "**Polo inferior da patela.**\n- A junção osteotendínea proximal é o ponto fraco.",
   "incorretas": {
-   "A": "**Porção média.**\n- Menos frequente; ocorre em trauma direto ou tendão muito degenerado.",
-   "B": "**Inserção tibial.**\n- Menos frequente que a proximal.",
-   "D": "**Avulsão óssea na tíbia.**\n- Padrão do **adolescente** (fratura da TAT, Ogden), não do adulto."
+   "A": "A ruptura no meio do tendão é menos frequente, geralmente ligada a trauma direto ou a um tendão muito degenerado.",
+   "B": "A ruptura na inserção tibial acontece, mas é menos comum que a proximal, junto à patela.",
+   "D": "A avulsão óssea na tíbia é o padrão do adolescente, a fratura da tuberosidade anterior da tíbia, e não do adulto."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O tendão que liga a patela à tíbia é chamado de tendão patelar ou ligamento patelar (como liga dois ossos, a nomenclatura anatômica prefere ligamento). Quando ele rompe, a pergunta é onde, e a resposta é quase sempre a mesma: perto do **polo inferior da patela**, na junção entre o tendão e o osso.\n\nEssa região é o ponto fraco do tendão por alguns motivos. É ali que a carga se concentra quando o quadríceps puxa com força, e é ali também que nascem as tendinopatias do esportista que salta, o chamado joelho do saltador. Um tendão já doente nesse ponto, ou enfraquecido por infiltrações de corticoide ou por doenças como lúpus, artrite reumatoide e insuficiência renal, rompe com mais facilidade. As rupturas no meio do tendão e na inserção na tíbia acontecem, mas são menos comuns, geralmente por trauma direto ou tendão muito degenerado.\n\nA ruptura típica é do adulto com menos de 40 anos, durante uma contração forte com o joelho dobrado. Ao exame, há um vazio abaixo da patela e o paciente não consegue estender o joelho contra a gravidade. Na radiografia em perfil, a patela está **alta**, puxada pelo quadríceps (o índice de Insall-Salvati, que compara o comprimento do tendão com o da patela, passa de 1,2). O reparo é feito cedo, com suturas passadas por túneis na patela ou com âncoras, protegidas por uma cerclagem.\n\nNo adolescente, o padrão muda: o ponto fraco passa a ser a própria tuberosidade da tíbia, que pode ser arrancada como fratura. Na criança, o equivalente da ruptura proximal é a fratura em manga do polo inferior da patela, que leva um grande pedaço de cartilagem com pouco osso visível.",
+  "correta": "No polo inferior da patela. A junção entre o tendão e o osso é o ponto de maior concentração de carga e de degeneração, e é ali que a maioria das rupturas acontece.",
+  "referencias": [
+   "Azar FM, Beaty JH, Canale ST (eds). Campbell's Operative Orthopaedics. 13th ed. Philadelphia: Elsevier; 2017."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0211": {
-  "conceito": "### Desbridamento artroscópico na artrose\nEnsaios clínicos bem conhecidos (Moseley, 2002; Kirkley, 2008) **não mostraram benefício** da lavagem ou do desbridamento em relação ao placebo ou ao tratamento clínico na **artrose em geral**. Diretrizes como as da AAOS **não recomendam** a artroscopia para a artrose primária.\n\n### Quando ainda pode ajudar\nFatores de **melhor prognóstico**:\n- ==sintomas mecânicos== verdadeiros: **bloqueio** ou corpo livre, flap meniscal instável, retalho condral;\n- sintomas de **início recente**;\n- **alinhamento normal**;\n- artrose **leve**, com espaço articular preservado na radiografia com carga.\n\n### Fatores de mau prognóstico\n- Dor **difusa, insidiosa, noturna** ou de repouso.\n- Desvio do eixo.\n- Artrose **avançada** (Kellgren-Lawrence 3 e 4).\n- Lesão meniscal **degenerativa** sem bloqueio verdadeiro.\n\n> **Na prova:** artroscopia na artrose só tem chance com ==sintoma mecânico== verdadeiro.",
-  "correta": "**Sintomas mecânicos.**\n- Bloqueio ou corpo livre sugerem uma lesão focal que a artroscopia resolve.",
   "incorretas": {
-   "A": "**Dor noturna.**\n- Sugere doença **avançada** ou inflamatória, com mau prognóstico.",
-   "B": "**Dor insidiosa.**\n- É a dor da própria artrose, que a artroscopia não trata.",
-   "D": "**Menisco degenerativo.**\n- Lesão degenerativa sem bloqueio: a meniscectomia parcial não supera a fisioterapia em ensaios clínicos."
+   "A": "A dor noturna sugere doença avançada ou componente inflamatório, e é fator de mau resultado da artroscopia.",
+   "B": "A dor de início insidioso é a dor típica da própria artrose, que o desbridamento artroscópico não trata.",
+   "D": "A lesão meniscal degenerativa, sem travamento verdadeiro, não melhora mais com a meniscectomia parcial do que com a fisioterapia, segundo ensaios clínicos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Durante anos, a artroscopia para \"limpar\" o joelho com artrose foi uma cirurgia muito feita: lavar a articulação, regularizar a cartilagem e os meniscos desgastados, retirar fragmentos soltos. A ideia parecia lógica. Até que estudos bem desenhados testaram isso.\n\nO ensaio de Moseley, em 2002, comparou a artroscopia com uma cirurgia simulada, em que o paciente recebia apenas pequenos cortes na pele sem nenhum procedimento dentro do joelho. Os resultados foram iguais. Outros estudos, como o de Kirkley em 2008, compararam com fisioterapia e tratamento clínico e também não mostraram benefício. Hoje, as diretrizes não recomendam a artroscopia para tratar a **artrose em si**.\n\nMas existe um grupo em que ela ainda pode ajudar: o paciente com **sintomas mecânicos verdadeiros**. É aquele cujo joelho trava de repente e depois destrava, que tem um corpo livre andando pela articulação, ou um retalho de menisco instável que se prende entre os ossos. Nesses casos, a dor não vem só do desgaste, mas de uma lesão específica, que a artroscopia consegue resolver. O resultado é melhor ainda se os sintomas são recentes, o alinhamento da perna é normal e a artrose é leve, com o espaço articular preservado na radiografia com carga.\n\nOs sinais de mau resultado são o oposto: dor difusa, que começou devagar, dor noturna ou em repouso, perna desalinhada, artrose avançada e lesão de menisco puramente degenerativa, sem travamento verdadeiro, situação em que a retirada parcial do menisco não se mostrou melhor que a fisioterapia.",
+  "correta": "Sintomas mecânicos. Travamento verdadeiro, corpo livre ou retalho meniscal instável indicam uma lesão específica que a artroscopia pode resolver, diferentemente da dor da artrose em si.",
+  "referencias": [
+   "Moseley JB, O'Malley K, Petersen NJ, et al. A controlled trial of arthroscopic surgery for osteoarthritis of the knee. N Engl J Med. 2002;347(2):81-88."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0212": {
-  "conceito": "### A assimetria dos platôs\n| | Platô medial | Platô lateral |\n|---|---|---|\n| Tamanho | **maior** | menor |\n| Forma (sagital) | **côncavo** | ==convexo== |\n| Altura | mais baixo | ==mais alto== |\n\n### Consequências biomecânicas\n- O côndilo **medial** fica \"encaixado\" no platô côncavo, mais **estável**. O **lateral** \"rola\" sobre um platô convexo, com mais **mobilidade** AP.\n- O fêmur roda sobre um **eixo medial** (pivô medial): na flexão, o côndilo lateral **translada posteriormente** mais que o medial (roll-back lateral). Isso participa do **screw-home**.\n- Próteses de **pivô medial** tentam reproduzir essa cinemática.\n- Na radiografia em **perfil**, distinguir os platôs ajuda a medir o **slope** (o medial é o côncavo) e a interpretar as fraturas.\n\n> **Na prova:** platô lateral = ==mais alto e convexo==; o medial é maior e côncavo.",
-  "correta": "**Mais alto e convexo.**",
   "incorretas": {
-   "B": "**Baixo e convexo.**\n- Convexo está certo, mas o lateral é mais **alto**.",
-   "C": "**Alto e côncavo.**\n- O côncavo é o **medial**.",
-   "D": "**Baixo e côncavo.**\n- Descreve o platô **medial**."
+   "B": "Convexo está certo, mas o platô lateral é mais alto, e não mais baixo, que o medial.",
+   "C": "Alto está certo, mas o platô côncavo é o medial.",
+   "D": "Baixo e côncavo descreve o platô medial, e não o lateral."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Os dois lados do joelho não são espelhos um do outro, e essa assimetria explica boa parte do jeito como ele se move.\n\nO **platô tibial medial** é **maior**, **mais baixo** e **côncavo**, como uma tigela rasa. O côndilo femoral medial se encaixa nessa tigela e fica relativamente estável, sem deslizar muito para a frente ou para trás.\n\nO **platô tibial lateral** é **menor**, **mais alto** e **convexo** no perfil, como o topo de uma bola. O côndilo femoral lateral apoia sobre essa superfície curva e tem muito mais liberdade para rolar para a frente e para trás.\n\nO resultado é que o joelho não dobra como uma dobradiça simples. Durante a flexão, o lado medial funciona quase como um pivô, e o côndilo lateral desliza bem mais para trás sobre seu platô convexo. Na extensão final, acontece o inverso, e a tíbia roda para fora sobre o fêmur, travando o joelho estendido: é o mecanismo de aparafusamento (screw-home). Algumas próteses de joelho, chamadas de pivô medial, tentam reproduzir essa cinemática com um componente medial mais encaixado.\n\nSaber essa diferença também ajuda a ler a radiografia em perfil. Os dois platôs se sobrepõem, e é preciso reconhecer qual é qual para medir a inclinação posterior da tíbia (que se mede no platô medial, o côncavo) e para entender as fraturas do planalto tibial.",
+  "correta": "Alto e convexo. Comparado ao medial, o platô lateral é mais alto e tem a superfície convexa no perfil, o que dá ao côndilo lateral maior mobilidade no sentido anteroposterior.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0213": {
@@ -2515,25 +2548,25 @@
   "conferido": false
  },
  "joelho-0214": {
-  "conceito": "### Carga femoropatelar\nA força de reação femoropatelar depende da **força do quadríceps** e do **ângulo de flexão**: quanto mais fletido o joelho sob carga, maior a compressão.\n\nValores aproximados, que variam entre os estudos:\n| Atividade | Carga femoropatelar |\n|---|---|\n| Marcha em plano | ~0,5 × o peso corporal |\n| Subir escadas | ~3,3 × o peso |\n| ==Descer escadas== | ==~3,5 × o peso== (valor da questão) |\n| Agachamento profundo | ~7 a 8 × o peso |\n\n### Aplicação clínica\n- Explica por que a **dor patelofemoral** e a condropatia pioram ao **descer escadas**, agachar, ficar muito tempo sentado com os joelhos fletidos (\"sinal do cinema\") e ajoelhar.\n- Na reabilitação, exercícios em **arcos de menor flexão** sob carga, ou em **cadeia fechada** com pouca flexão, reduzem a compressão.\n\n> **Na prova:** descer escadas ≈ ==3,5 × o peso corporal== na patelofemoral.",
-  "correta": "**3,5 vezes.**\n- Valor clássico citado para a descida de escadas.",
   "incorretas": {
-   "A": "**2,5 vezes.**\n- Subestima.",
-   "C": "**4,5 vezes.**\n- Superestima para escadas; cargas assim aparecem em flexão mais profunda.",
-   "D": "**5,5 vezes.**\n- Superestima; próximo do que se vê no agachamento."
+   "A": "2,5 vezes subestima a carga femoropatelar na descida de escadas.",
+   "C": "4,5 vezes superestima a carga das escadas. Valores dessa ordem e maiores aparecem em atividades com flexão mais profunda.",
+   "D": "5,5 vezes está mais perto das cargas de agachamentos profundos do que da descida de escadas."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A patela funciona como uma roldana: ela aumenta o braço de alavanca do quadríceps e permite que o joelho seja estendido com menos força muscular. O preço disso é que, enquanto o quadríceps puxa a patela para cima e o tendão patelar puxa para baixo, a patela é esmagada contra o fêmur. Essa compressão é a força de reação femoropatelar.\n\nEla depende de duas coisas. A primeira é a **força que o quadríceps precisa fazer**: quanto mais o joelho está dobrado e carregando peso, mais o músculo trabalha para não deixar o corpo cair. A segunda é o **ângulo de flexão**: com o joelho dobrado, o quadríceps e o tendão patelar formam um ângulo mais fechado, e a resultante que empurra a patela contra o fêmur fica maior.\n\nPor isso os números crescem conforme a atividade exige mais flexão sob carga. Os valores variam entre os estudos, mas a ordem de grandeza clássica é esta: na marcha em terreno plano, cerca de metade do peso corporal; ao subir escadas, cerca de 3,3 vezes; ao **descer escadas**, cerca de **3,5 vezes**, porque o quadríceps trabalha freando o corpo com o joelho dobrado; e no agachamento profundo, de 7 a 8 vezes o peso.\n\nIsso explica o padrão de queixas da dor femoropatelar e da condromalácia. A dor piora para descer escadas, agachar, ajoelhar e depois de ficar muito tempo sentado com o joelho dobrado, como no cinema. E orienta a reabilitação, que prefere exercícios com pouca flexão sob carga, para fortalecer o quadríceps sem esmagar a patela.",
+  "correta": "3,5 vezes. É o valor clássico da força de reação femoropatelar na descida de escadas, em que o quadríceps trabalha freando o corpo com o joelho fletido.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0215": {
-  "conceito": "### Nervos e compartimentos da perna\n| Nervo | Compartimento | Motora | Sensitiva |\n|---|---|---|---|\n| ==Fibular profundo== | **anterior**, com a artéria tibial anterior | tibial anterior, extensores longos, fibular terceiro | 1º espaço interdigital |\n| **Fibular superficial** | **lateral** | fibulares longo e curto | dorso do pé |\n| **Tibial** | **posterior profundo**, com os vasos tibiais posteriores | todo o compartimento posterior | planta do pé |\n| ==Sural== | **posterior superficial** (subcutâneo, junto à veia safena parva) | nenhuma | borda lateral do pé |\n\n### Relevância\n- **Síndrome compartimental:** o **primeiro sinal neurológico** do compartimento anterior é a hipoestesia do **1º espaço** (fibular profundo).\n- O **sural** corre junto à **safena parva**, na linha média posterior e depois lateral ao tendão calcâneo. Pode ser lesado em acessos ao **calcâneo** e ao **tendão de Aquiles**, e é usado como **enxerto de nervo**.\n\n> **Na prova:** fibular profundo = ==anterior==; sural = ==posterior superficial==.",
-  "correta": "**Anterior e posterior superficial.**",
   "incorretas": {
-   "A": "**Lateral e posterior profundo.**\n- Lateral é o **fibular superficial**; posterior profundo é o **tibial**.",
-   "B": "**Lateral e posterior superficial.**\n- O sural está certo, mas o fibular profundo é **anterior**.",
-   "C": "**Anterior e posterior profundo.**\n- O fibular profundo está certo, mas o sural é **superficial**."
+   "A": "O compartimento lateral é o do fibular superficial, e o posterior profundo é o do nervo tibial.",
+   "B": "O sural está certo, mas o fibular profundo fica no compartimento anterior, e não no lateral.",
+   "C": "O fibular profundo está certo, mas o sural é superficial, e não do compartimento posterior profundo."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A perna é dividida por paredes de fáscia em quatro compartimentos, e cada um tem seu nervo e seu grupo de músculos. Saber quem mora onde resolve questões de anatomia e é a base para entender a síndrome compartimental e as lesões nervosas.\n\nO **compartimento anterior** abriga os músculos que levantam o pé e os dedos: tibial anterior, extensor longo do hálux, extensor longo dos dedos e fibular terceiro. Seu nervo é o **fibular profundo**, que corre junto com a artéria tibial anterior. Ele dá a sensibilidade de uma área pequena e muito específica: o **primeiro espaço** entre o hálux e o segundo dedo, no dorso do pé.\n\nO **compartimento lateral** tem os fibulares longo e curto, que fazem a eversão do pé, e o nervo **fibular superficial**, que dá a sensibilidade da maior parte do dorso do pé.\n\nO **compartimento posterior profundo** tem o tibial posterior e os flexores longos dos dedos e do hálux, e o nervo **tibial**, junto com os vasos tibiais posteriores. Ele inerva os músculos da panturrilha e, já no pé, dá a sensibilidade da planta.\n\nO **compartimento posterior superficial** tem o gastrocnêmio e o sóleo. O nervo **sural** corre nessa região, logo abaixo da pele, junto com a veia safena parva, descendo pela linha média da panturrilha e depois por trás do maléolo lateral. Ele é só sensitivo e cuida da borda lateral do pé.\n\nDuas aplicações práticas: na síndrome compartimental anterior, o primeiro sinal neurológico costuma ser a perda de sensibilidade no primeiro espaço; e o sural pode ser lesado nas cirurgias do tendão calcâneo e do calcâneo, além de ser o nervo preferido para enxertos.",
+  "correta": "Anterior e posterior superficial. O fibular profundo acompanha a artéria tibial anterior no compartimento anterior, e o sural corre no plano superficial posterior, junto à veia safena parva.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0216": {
@@ -2548,191 +2581,206 @@
   "conferido": false
  },
  "joelho-0217": {
-  "conceito": "### ATJ no hemofílico\n**Artropatia hemofílica:** sinovite crônica por hemartroses de repetição, com destruição articular em **pacientes jovens**. Joelho rígido, com **contratura em flexão** e osso osteoporótico.\n\n**Cuidados cirúrgicos:**\n- **reposição do fator** deficiente (VIII ou IX) no perioperatório, com hematologista;\n- **sinovectomia** completa;\n- liberação de partes moles e, muitas vezes, abordagem extensa por rigidez.\n\n### Complicações\n- ==Infecção==: a mais comum e a mais temida. Taxa claramente **maior** que na população geral e ainda maior nos **HIV-positivos**, sobretudo com **CD4 baixo** (abaixo de ~200). Pode ser **tardia**, hematogênica.\n- **Hemorragia / hemartrose** pós-operatória: relevante, mas controlável com reposição adequada do fator.\n- **Soltura asséptica:** a longo prazo, em pacientes jovens e ativos.\n- **Rigidez.**\n- **TVP/TEP:** risco **baixo** no hemofílico (hipocoagulabilidade); tromboprofilaxia farmacológica geralmente não é usada.\n\n> **Na prova:** ATJ em hemofílico HIV+ = complicação mais comum ==infecção==.",
-  "correta": "**Infecção.**\n- Imunossupressão do HIV somada à hemartrose e à cirurgia extensa.",
   "incorretas": {
-   "A": "**Soltura asséptica.**\n- Complicação **tardia**, não a mais comum nesse grupo.",
-   "B": "**Hemorragia.**\n- Risco real, mas controlável com reposição do fator.",
-   "D": "**Tromboembolismo.**\n- Risco **baixo** no hemofílico."
+   "A": "A soltura asséptica é uma complicação tardia, ligada ao desgaste em pacientes jovens, e não a mais comum nesse grupo.",
+   "B": "O sangramento é um risco real, mas é controlado com a reposição adequada do fator de coagulação.",
+   "D": "O tromboembolismo é pouco frequente no hemofílico, que tem dificuldade para coagular."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na hemofilia, a falta de um fator de coagulação (o VIII na hemofilia A, o IX na B) faz as articulações sangrarem por dentro, às vezes sem trauma nenhum. Cada sangramento inflama a sinovial, que fica mais grossa e com mais vasos, sangra mais fácil, e o ciclo se repete. Com os anos, o ferro do sangue e a inflamação destroem a cartilagem: é a **artropatia hemofílica**. O joelho é a articulação mais atingida, e o paciente chega jovem à artrose, com joelho rígido, dobrado e osso fraco.\n\nA artroplastia total resolve a dor e melhora a função, mas é uma cirurgia de alto risco nesse grupo. Ela exige reposição do fator de coagulação antes, durante e depois da operação, com acompanhamento do hematologista, retirada da sinovial doente e, muitas vezes, liberações amplas para vencer a rigidez.\n\nEntre as complicações, a mais comum e a mais temida é a **infecção**. A taxa é bem maior que na população geral, e maior ainda nos pacientes que também têm **HIV**, muitos contaminados no passado por hemoderivados. A imunidade baixa, sobretudo com contagem de linfócitos CD4 reduzida, soma-se aos sangramentos e à cirurgia extensa. E a infecção pode aparecer tarde, anos depois, pelo sangue.\n\nAs outras complicações existem, mas ficam atrás. O sangramento pós-operatório é um risco real, porém controlável com a reposição adequada do fator. A soltura asséptica aparece a longo prazo, em pacientes jovens e ativos. E o tromboembolismo é **pouco frequente**, porque o próprio hemofílico tem dificuldade para coagular; a profilaxia com anticoagulante, comum em outras próteses, geralmente não é usada.",
+  "correta": "A infecção. A taxa de infecção da prótese é elevada no hemofílico e ainda maior quando há HIV, pela imunossupressão somada aos sangramentos e à cirurgia extensa.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0218": {
-  "conceito": "### Ruptura bilateral do quadricipital\n- Ocorre sobretudo em ==homens com mais de 40 anos== **com doença sistêmica** que enfraquece o tendão:\n  - **insuficiência renal crônica** e hiperparatireoidismo secundário;\n  - diabetes, gota, obesidade;\n  - LES, artrite reumatoide;\n  - **corticoide** e **fluoroquinolonas**.\n- **Mecanismo:** trauma **mínimo** (tropeço, contração excêntrica).\n- **Local:** zona hipovascular, **1 a 2 cm** acima do polo superior da patela.\n\n### Armadilha diagnóstica\nNa bilateral, o paciente \"não consegue levantar\" e pode ser confundido com **quadro neurológico**. Procure o **defeito palpável** suprapatelar e a **patela baixa** bilateral na radiografia.\n\n### Tratamento\n**Reparo cirúrgico precoce** bilateral e **investigação da doença de base**.\n\n> **Na prova:** quadricipital bilateral = ==homem com mais de 40 anos== com doença sistêmica.",
-  "correta": "**Homens com mais de 40 anos.**\n- Em geral com doença sistêmica ou uso de corticoide.",
   "incorretas": {
-   "B": "**Homens com menos de 40.**\n- Faixa da ruptura do **tendão patelar**, em geral unilateral.",
-   "C": "**Mulheres com mais de 40.**\n- O predomínio é **masculino**.",
-   "D": "**Mulheres de qualquer idade.**\n- Não há predomínio feminino."
+   "B": "Abaixo dos 40 anos, a ruptura mais comum do aparelho extensor é a do tendão patelar, geralmente de um lado só.",
+   "C": "A idade está certa, mas a ruptura do quadricipital, inclusive a bilateral, predomina no sexo masculino.",
+   "D": "Não há predomínio feminino nas rupturas do tendão quadricipital."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O tendão quadricipital é a parte de cima do aparelho extensor, que liga o quadríceps à patela. Sua ruptura é uma lesão do **adulto mais velho**, geralmente acima dos 40 anos, e bem mais frequente em **homens**. O ponto que rompe é uma faixa com pouca irrigação, cerca de 1 a 2 cm acima do polo superior da patela, onde o tendão vai degenerando com o tempo.\n\nA ruptura **bilateral**, dos dois joelhos ao mesmo tempo, é rara, e quase sempre tem uma explicação: uma **doença sistêmica** que enfraqueceu os tendões. As mais clássicas são a insuficiência renal crônica (com o hiperparatireoidismo que costuma acompanhá-la), o diabetes, a gota, a obesidade, o lúpus e a artrite reumatoide, além do uso de corticoide e de antibióticos do grupo das fluoroquinolonas. Com o tendão já fragilizado, basta um trauma pequeno, como um tropeço em que o quadríceps contrai com força para evitar a queda, para os dois romperem.\n\nO diagnóstico pode ser surpreendentemente difícil. Um paciente que de repente não consegue se levantar nem estender os joelhos pode ser confundido com um problema neurológico. A pista está no exame: um afundamento palpável logo acima das patelas, incapacidade de estender o joelho contra a gravidade e, na radiografia em perfil, as **patelas baixas**, porque o tendão patelar puxa para baixo sem oposição.\n\nO tratamento é o reparo cirúrgico precoce dos dois lados e, sempre, a investigação da doença de base, que pode estar sem diagnóstico.",
+  "correta": "Homens com idade superior a 40 anos. A ruptura bilateral do quadricipital acontece nesse grupo, quase sempre associada a uma doença sistêmica ou a medicamentos que enfraquecem os tendões.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0219": {
-  "conceito": "### Fatores de recidiva após luxação patelar\nA recidiva após o primeiro episódio é frequente (cerca de 1/3 dos casos, variando muito conforme os fatores de risco).\n\n**Partes moles:**\n- ==Incompetência do LPFM==: é o que o gabarito considera. O LPFM **rompe em praticamente todas** as luxações e costuma cicatrizar **alongado**, perdendo sua função de principal restritor (~50 a 60%).\n\n**Fatores anatômicos (Dejour):**\n- **displasia troclear**;\n- **patela alta**;\n- **TA-GT** acima de ~20 mm;\n- inclinação patelar aumentada.\n\n**Outros:**\n- **idade jovem** e fise aberta;\n- hiperfrouxidão;\n- episódio contralateral.\n\n### Tratamento\n- **Primeiro episódio** sem fragmento osteocondral: em geral **conservador**.\n- **Recidivante:** **reconstrução do LPFM**, associada a osteotomia da TAT (TA-GT alta ou patela alta) ou a trocleoplastia (displasia grave), conforme o caso.\n\n> **Na prova:** segundo o gabarito, o fator que mais predispõe à recidiva = ==LPFM incompetente==.",
-  "alerta": "Parte da literatura atual aponta a displasia troclear (junto com idade jovem, patela alta e TA-GT aumentada) como o preditor anatômico mais forte de recidiva, o que torna a alternativa A defensável. O gabarito oficial é D, porque o LPFM se rompe em praticamente todas as luxações e é o principal restritor de partes moles.",
-  "correta": "**Incompetência do LPFM.**\n- Lesado no primeiro episódio e cicatrizado alongado, deixa de conter a patela.",
   "incorretas": {
-   "A": "**Displasia troclear.**\n- Fator anatômico **muito importante**; ver o alerta.\n- O gabarito considera o LPFM.",
-   "B": "**Hipotrofia do VMO.**\n- Contribui **dinamicamente**, mas não é o principal fator.",
-   "C": "**Hipotrofia do vasto medial longo.**\n- Suas fibras são mais longitudinais e contribuem pouco para a contenção medial."
+   "A": "A displasia troclear é um fator anatômico muito importante de recidiva, e parte da literatura a considera o preditor mais forte, como explica o alerta. O gabarito oficial, porém, é a incompetência do LPFM.",
+   "B": "A hipotrofia do vasto medial oblíquo diminui a contenção dinâmica da patela, mas não é o principal fator de recidiva.",
+   "C": "As fibras do vasto medial longo são mais longitudinais e contribuem pouco para segurar a patela medialmente."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Depois da primeira luxação da patela, uma parte grande dos pacientes volta a luxar, e a chance varia muito conforme o perfil de cada um. Entender por que ela volta passa pelo **ligamento patelofemoral medial** (LPFM).\n\nO LPFM é uma faixa que vai da borda medial da patela até o fêmur, entre o tubérculo dos adutores e o epicôndilo medial. Ele é o principal restritor de partes moles contra o deslocamento lateral da patela, responsável por cerca de metade da força que a segura nos primeiros graus de flexão. Na luxação, ele **rompe em praticamente todos os casos**, e quando cicatriza costuma ficar **alongado**, frouxo, sem conseguir segurar a patela. É por isso que o gabarito aponta sua incompetência como o fator que mais predispõe à recidiva, e é também por isso que a reconstrução do LPFM virou a cirurgia central da instabilidade patelar.\n\nMas o LPFM não está sozinho. Dejour descreveu os **fatores anatômicos** que tornam a patela instável: a **displasia troclear** (o sulco do fêmur raso ou até achatado, que não encaixa a patela), a **patela alta** (que só entra no sulco tarde na flexão), a distância aumentada entre a tuberosidade da tíbia e o sulco troclear (TA-GT acima de cerca de 20 mm) e a inclinação lateral da patela. Idade jovem, placas de crescimento abertas, frouxidão ligamentar e luxação no outro joelho também aumentam o risco. Parte da literatura considera a displasia troclear o preditor anatômico mais forte, o que explica a ressalva do alerta.\n\nNo primeiro episódio, sem fragmento solto, o tratamento costuma ser conservador. Na recidiva, reconstrói-se o LPFM, associando osteotomia da tuberosidade ou trocleoplastia conforme os fatores anatômicos presentes.",
+  "correta": "Incompetência do ligamento patelofemoral medial. Rompido na primeira luxação e cicatrizado alongado, ele deixa de conter a patela, e o gabarito o considera o principal fator de recidiva.",
+  "alerta": "Parte da literatura atual aponta a displasia troclear (junto com idade jovem, patela alta e TA-GT aumentada) como o preditor anatômico mais forte de recidiva, o que torna a alternativa A defensável. O gabarito oficial é D, porque o LPFM se rompe em praticamente todas as luxações e é o principal restritor de partes moles.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0220": {
-  "conceito": "### Menisco e LCA: agudo × crônico\n- **Agudo:** o ==menisco lateral== é o mais lesado. No **pivot shift** do trauma, o compartimento lateral subluxa e impacta (é a mesma região das contusões: côndilo lateral e platô posterolateral).\n- **Crônico:** o **menisco medial** passa a predominar. O **corno posterior medial** é **restritor secundário** da translação anterior e, sem o LCA, sofre com cada episódio de falseio. Lesões em **alça de balde** medial são típicas do LCA crônico.\n\n### Consequência prática\nA reconstrução do LCA precoce, em pacientes ativos com instabilidade, **protege o menisco medial**. O atraso aumenta a taxa de lesões meniscais **irreparáveis**.\n\n### Associação ligamentar mais comum\nÉ o **LCM**, não o LCL.\n\n> **Na prova:** LCA **agudo** = ==menisco lateral==; **crônico** = menisco medial.",
-  "correta": "**Menisco lateral.**\n- No trauma agudo, o compartimento lateral é o que subluxa e impacta.",
   "incorretas": {
-   "A": "**Menisco medial.**\n- Predomina na insuficiência **crônica** do LCA.",
-   "B": "**Cartilagem da patela.**\n- Não é a associação típica; as lesões condrais agudas são mais no **côndilo lateral**.",
-   "D": "**LCL.**\n- A associação ligamentar mais comum é com o **LCM**."
+   "A": "O menisco medial passa a ser o mais lesado na insuficiência crônica do LCA, quando seu corno posterior assume a função de frear a tíbia.",
+   "B": "A lesão da cartilagem da patela não é a associação típica. As lesões condrais agudas do LCA aparecem mais no côndilo femoral lateral.",
+   "D": "A associação ligamentar mais comum com o LCA é com o colateral medial, e não com o lateral."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Quando o LCA rompe, raramente rompe sozinho. Os meniscos acompanham com frequência, e qual menisco é lesado depende do momento em que se olha: logo depois do trauma ou anos depois.\n\nNa **lesão aguda**, o menisco mais lesado é o **lateral**. No instante da ruptura, a tíbia escorrega para a frente e roda por dentro, e o compartimento **lateral** subluxa e bate com força: é o mesmo movimento do teste do pivot shift. As contusões ósseas típicas da lesão do LCA ficam exatamente ali, no côndilo femoral lateral e no platô tibial posterolateral, e o menisco lateral, preso no meio desse impacto, é o que mais sofre.\n\nNa **lesão crônica**, o quadro se inverte, e o **menisco medial** passa a ser o mais lesado. O motivo é funcional: o corno posterior do menisco medial é preso firmemente à tíbia e funciona como um calço que ajuda a impedir a tíbia de ir para a frente. Sem o LCA, ele vira o principal freio, e cada episódio de falseio o castiga. Com o tempo, ele rompe, e as lesões em alça de balde do menisco medial são típicas do joelho com LCA roto há muito tempo.\n\nIsso tem uma consequência prática importante: no paciente jovem e ativo com instabilidade, reconstruir o LCA sem atraso protege o menisco medial e aumenta a chance de que as lesões meniscais ainda sejam reparáveis.\n\nQuanto aos ligamentos, a associação mais comum com o LCA é a do colateral **medial**, pelo mecanismo de valgo com rotação externa.",
+  "correta": "Do menisco lateral. No trauma agudo, o compartimento lateral subluxa e sofre o impacto, e o menisco lateral é o mais frequentemente lesado.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0221": {
-  "conceito": "### Dor referida do menisco\nA dor meniscal costuma ser na **interlinha** do mesmo lado da lesão, mas há exceções. A descrição clássica cobrada é a de que as lesões do ==corno posterior do menisco lateral== podem causar dor referida no **lado medial** (contralateral) do joelho.\n\n### Por que isso importa\n- **Não confiar só na localização da dor.** Complete com os testes meniscais:\n  - **McMurray;**\n  - **Apley;**\n  - **Thessaly;**\n  - dor à palpação da interlinha **posterolateral**.\n- Confirme com **RM**.\n- A lesão do corno posterior lateral pode acompanhar a **lesão aguda do LCA**, e a da **raiz posterior lateral** também. Procure-as ativamente.\n\n> **Na prova:** dor no compartimento contralateral = lesão do ==corno posterior do menisco lateral==.",
-  "correta": "**Porção posterior do menisco lateral.**\n- Pode referir dor ao lado medial.",
   "incorretas": {
-   "A": "**Anterior do menisco lateral.**\n- Não é a associação descrita.",
-   "B": "**Anterior do menisco medial.**\n- Não é a associação descrita.",
-   "D": "**Posterior do menisco medial.**\n- Costuma doer na interlinha **posteromedial**, do mesmo lado."
+   "A": "A lesão do corno anterior do menisco lateral não é a associada classicamente à dor no compartimento oposto.",
+   "B": "A lesão do corno anterior do menisco medial também não tem essa associação, e costuma doer na interlinha anteromedial.",
+   "D": "A lesão do corno posterior do menisco medial costuma doer na interlinha posteromedial, do mesmo lado da lesão."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na maior parte das vezes, o menisco rompido dói onde está: o paciente aponta com o dedo a interlinha do lado da lesão, e a palpação desse ponto é um dos achados mais úteis do exame. Mas existem exceções, e a banca gosta de uma em particular.\n\nA descrição clássica, cobrada aqui, é a de que lesões do **corno posterior do menisco lateral** podem causar dor no **lado medial** do joelho, ou seja, no compartimento oposto ao da lesão. A explicação mais aceita é a de dor referida, já que a inervação da parte posterior do joelho é compartilhada e a percepção da dor nem sempre é precisa.\n\nA lição prática é não se basear só no lugar da dor para dizer qual menisco está lesado. O exame deve juntar várias informações: a palpação cuidadosa das duas interlinhas, inclusive da parte posterolateral; os testes meniscais, como o de McMurray (que roda e estende o joelho procurando um estalo doloroso), o de Apley (compressão e rotação com o paciente de bruços) e o de Thessaly (rotação em apoio sobre uma perna, com o joelho levemente dobrado); e, por fim, a ressonância.\n\nEssa lesão merece ainda atenção especial num contexto: o joelho com lesão aguda do LCA. O corno posterior do menisco lateral e sua raiz posterior são lesados com frequência no mesmo trauma, e uma lesão da raiz que passa despercebida compromete a função do menisco e a estabilidade da reconstrução. Por isso, ela deve ser procurada ativamente na ressonância e na artroscopia.",
+  "correta": "Porção posterior do menisco lateral. A descrição clássica é a de que suas lesões podem referir dor ao compartimento medial, o oposto ao da lesão.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0222": {
-  "conceito": "### Teste do dial a 90°\nRotação externa da perna comparada ao lado normal, em decúbito ventral:\n- **Mais de 10° só a 30°:** lesão **isolada do CPL**.\n- ==Mais de 10° também a 90°==: **LCP + CPL**. A 90°, o LCP íntegro limitaria a rotação externa.\n\n### Diferenciar do posteromedial\n- A lesão **posteromedial** (LCM + LOP) também pode aumentar a rotação externa. Nela, a tíbia gira **anteromedialmente**.\n- Na posterolateral, gira **posterolateralmente**.\n- Por isso, **palpe e observe** a direção da subluxação, ou faça o teste em decúbito dorsal.\n\n### Outros testes do CPL\n- **Gaveta posterolateral** (rotação externa a 30° e 90°).\n- **Recurvato-rotação externa.**\n- **Pivot shift reverso.**\n- Estresse em **varo** a 0° e 30°.\n\n> **Na prova:** rotação externa aumentada ==a 90°== = CPL + ==LCP==.",
-  "correta": "**LCP + canto posterolateral.**",
   "incorretas": {
-   "A": "**LCP + posteromedial.**\n- O dial reflete classicamente o **CPL**.\n- O posteromedial pode confundir, com a tíbia girando anteromedialmente.",
-   "C": "**LCA + posteromedial.**\n- A positividade a 90° depende do **LCP**.",
-   "D": "**LCA + posterolateral.**\n- Não explica a positividade a 90°."
+   "A": "A lesão do canto posteromedial pode aumentar a rotação externa e confundir o teste, mas nela a tíbia roda para a frente pelo lado medial. O padrão clássico do dial positivo a 90 graus é a lesão do LCP com o canto posterolateral.",
+   "C": "O LCA não explica a positividade do dial a 90 graus. Nessa flexão, quem reforça o controle da rotação externa é o LCP.",
+   "D": "O canto posterolateral está certo, mas a positividade também a 90 graus depende da lesão do LCP, e não do LCA."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **teste do dial** compara quanto cada perna roda para fora. Com o paciente de bruços (ou de barriga para cima, com os joelhos para fora da maca), o examinador segura os dois pés e roda as pernas para fora ao mesmo tempo, olhando o ângulo entre o pé e a coxa. Uma diferença de mais de **10 graus** entre os lados é considerada anormal. O teste é feito com os joelhos em **30 graus** e em **90 graus** de flexão, e a comparação entre os dois ângulos é o que dá o diagnóstico.\n\nO **canto posterolateral** (colateral lateral, tendão poplíteo e ligamento popliteofibular) é o principal freio da rotação externa da tíbia. Quando só ele está lesado, a rotação aumenta **a 30 graus**, mas a 90 graus a diferença diminui, porque nessa posição o **ligamento cruzado posterior** íntegro ajuda a segurar a rotação.\n\nSe a rotação externa está aumentada **também a 90 graus**, é sinal de que esse reforço também falhou: a lesão é do **canto posterolateral junto com o LCP**. É a resposta da questão.\n\nExiste uma armadilha. A lesão do **canto posteromedial** (colateral medial e ligamento posterior oblíquo) também pode aumentar a rotação externa no dial. A diferença está na direção em que a tíbia se move: na lesão posterolateral, o canto lateral da tíbia roda para trás; na posteromedial, o canto medial roda para a frente. Por isso, além de medir o ângulo, vale palpar a tíbia durante o teste.\n\nOutros testes do canto posterolateral completam a avaliação: a gaveta posterolateral, o recurvato com rotação externa, o pivot shift reverso e o estresse em varo a 0 e 30 graus.",
+  "correta": "Ligamento cruzado posterior com o canto posterolateral. O aumento da rotação externa também a 90 graus indica que, além do canto posterolateral, o LCP, que reforça o controle rotatório nessa flexão, está lesado.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0223": {
-  "conceito": "### Padrões de lesão por menisco\n**Menisco medial:**\n- **mais lesado** no geral (sobretudo no LCA crônico e nas lesões degenerativas);\n- lesões **longitudinais** do corno posterior, que podem evoluir para **alça de balde**.\n\n**Menisco lateral:**\n- mais **móvel** e menos preso à cápsula (hiato poplíteo);\n- mais atingido no **LCA agudo**;\n- segundo a referência da questão, a lesão traumática mais frequente é a ==transversa (radial) incompleta==, comum na junção do **terço médio com o anterior**;\n- também tem lesões de **raiz posterior** associadas ao LCA.\n\n### Por que a radial importa\n- Uma radial **incompleta** preserva parte das fibras circunferenciais.\n- Uma radial **completa**, até a cápsula, equivale funcionalmente à **meniscectomia**, porque o hoop stress é perdido.\n- Quando completa, deve ser **suturada**.\n\n> **Na prova:** menisco lateral traumático = ==transversa incompleta==; medial = longitudinal.",
-  "correta": "**Transversa (radial) incompleta.**",
   "incorretas": {
-   "B": "**Transversa completa.**\n- Menos frequente que a incompleta.",
-   "C": "**Longitudinal incompleta.**\n- Padrão típico do **menisco medial**.",
-   "D": "**Longitudinal completa.**\n- Evolui para **alça de balde**, mais típica do medial."
+   "B": "A lesão transversa completa existe e é grave, por cortar o anel do menisco, mas é menos frequente que a incompleta.",
+   "C": "A lesão longitudinal incompleta é o padrão típico do menisco medial, e não do lateral.",
+   "D": "A longitudinal completa pode evoluir para alça de balde, padrão mais típico do menisco medial."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Os dois meniscos têm personalidades diferentes, e isso se reflete nos tipos de lesão de cada um.\n\nO **menisco medial** é mais preso: ele está firmemente ligado à cápsula e ao ligamento colateral medial. Por ser menos móvel, é o mais lesado no geral, principalmente nas lesões degenerativas e no joelho com LCA roto há muito tempo. Suas lesões traumáticas típicas são **longitudinais**, no corno posterior, paralelas às fibras circulares, e podem crescer até virar uma alça de balde, em que um pedaço do menisco se desloca para o meio do joelho e trava a extensão.\n\nO **menisco lateral** é mais móvel. Ele tem menos fixação na cápsula e uma abertura por onde passa o tendão poplíteo (o hiato poplíteo). É o mais lesado na lesão aguda do LCA. Segundo a referência usada pela questão, sua lesão traumática mais frequente é a **transversa incompleta**, também chamada de radial: um corte que começa na borda livre, de dentro para fora, perpendicular às fibras circulares, muitas vezes na junção do terço médio com o anterior.\n\nA diferença entre a radial incompleta e a completa é enorme. Enquanto o corte não chega à periferia, parte das fibras circulares continua inteira e o menisco ainda segura a carga como um anel. Quando a lesão atravessa todo o menisco até a cápsula, o anel é cortado e o menisco perde a capacidade de conter a carga: na prática, é como se tivesse sido retirado. Por isso a radial completa deve ser **suturada** sempre que possível, e o mesmo raciocínio vale para as lesões de raiz.",
+  "correta": "Transversa incompleta. Segundo a referência da questão, a lesão radial incompleta, que parte da borda livre sem atingir a periferia, é a lesão traumática mais frequente do menisco lateral.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0224": {
-  "conceito": "### Referências para a rotação do componente femoral\n- ==Eixo transepicondilar== (epicôndilo lateral → sulco do epicôndilo medial): referência **anatômica** mais fiel ao eixo de flexão.\n- **Linha de Whiteside** (eixo AP): do fundo da tróclea ao centro do intercôndilo, **perpendicular** ao transepicondilar.\n- **Côndilos posteriores:** rodar ~3° externamente em relação a eles. Válido no joelho normal ou **varo**.\n- **Gap balancing:** rotação definida pelo espaço em flexão, com os ligamentos equilibrados.\n\n### Por que não os côndilos posteriores no valgo\nNo joelho **valgo**, o **côndilo lateral é hipoplásico**, sobretudo na parte posterior. Referenciar pelos côndilos posteriores leva o componente para **rotação interna**, com consequências:\n- **mau tracking patelar** (a patela lateraliza);\n- espaço em flexão **trapezoidal**.\n\nPor isso, usa-se o **eixo epicondilar** (ou a linha de Whiteside), com rotação externa maior que os 3° habituais.\n\n> **Na prova:** ATJ **valga**, rotação femoral pelo ==eixo epicondilar==.",
-  "correta": "**Eixo epicondilar.**\n- Referência estável, não afetada pela hipoplasia do côndilo lateral.",
   "incorretas": {
-   "A": "**Linha de Insall.**\n- Não é referência rotacional; o nome remete a índice patelar.",
-   "C": "**Cortical anterior.**\n- Referência de **tamanho** e para evitar o **notch**, não de rotação.",
-   "D": "**Côndilos posteriores.**\n- No valgo, o côndilo lateral hipoplásico leva a **rotação interna** do componente."
+   "A": "O nome de Insall está ligado ao índice de altura da patela (Insall-Salvati), e não a uma referência para a rotação do componente femoral.",
+   "C": "A cortical anterior do fêmur é referência para o tamanho do componente e para evitar entalhar o osso na frente, e não para a rotação.",
+   "D": "No joelho valgo, o côndilo lateral é hipoplásico, e a referência pelos côndilos posteriores leva o componente femoral para rotação interna."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na prótese total do joelho, não basta acertar o tamanho e o alinhamento do componente femoral; é preciso acertar também a sua **rotação**, ou seja, para onde ele \"aponta\" no plano horizontal. Se ele fica rodado para dentro, a patela tende a escapar para o lado de fora, o joelho dói na frente, e o espaço entre os ossos com o joelho dobrado fica desigual, mais apertado de um lado.\n\nHá várias referências para acertar essa rotação. O **eixo transepicondilar**, a linha que liga o epicôndilo lateral ao sulco do epicôndilo medial, é a que melhor representa o eixo em torno do qual o joelho dobra. A **linha de Whiteside**, do fundo da tróclea ao meio do intercôndilo, é perpendicular a ele e serve de conferência. A referência pelos **côndilos posteriores**, muito usada pela praticidade, consiste em rodar o componente cerca de 3 graus para fora em relação à linha que tangencia a parte de trás dos dois côndilos. E há a técnica de equilíbrio do espaço em flexão, que define a rotação pela tensão dos ligamentos.\n\nA referência pelos côndilos posteriores funciona bem no joelho normal ou varo. No **joelho valgo**, porém, o **côndilo lateral é pequeno** (hipoplásico), principalmente na parte de trás. Se o cirurgião usar a linha dos côndilos posteriores, que nesse caso está inclinada, o componente ficará **rodado para dentro**, com todas as consequências para a patela.\n\nPor isso, no valgo, a rotação é guiada pelo **eixo epicondilar** (conferido pela linha de Whiteside), que não depende do formato do côndilo lateral, geralmente com uma rotação externa maior que os 3 graus habituais.",
+  "correta": "O eixo epicondilar. Ele representa o eixo de flexão do joelho e não é afetado pela hipoplasia do côndilo lateral, típica do joelho valgo.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0225": {
-  "conceito": "### Sinal de Wilson: a manobra\n1. Paciente sentado ou em decúbito, joelho a ==90° de flexão==.\n2. **Rotação interna** da tíbia.\n3. **Estender** progressivamente, mantendo a rotação interna.\n4. **Positivo:** dor por volta de **30°** de flexão, quando a **espinha tibial medial** encosta na lesão da face lateral do **côndilo medial**.\n5. **Confirmação:** a dor **alivia com a rotação externa** da tíbia.\n\n### Na marcha\nO paciente pode andar com a perna em **rotação externa**, pela mesma razão.\n\n### Valor\n- Tem **baixa sensibilidade**: muitos pacientes com OCD têm Wilson **negativo**.\n- Serve de pista clínica. O diagnóstico é por **imagem**: radiografia com incidência do **túnel** e **RM**.\n\n> **Na prova:** Wilson começa ==a 90° com rotação interna==; a dor aparece a 30° e alivia com rotação externa.",
-  "correta": "**90° e rotação interna.**\n- Posição inicial; estende-se até a dor, por volta de 30°.",
   "incorretas": {
-   "B": "**30° e rotação interna.**\n- 30° é onde a dor **aparece**, não a posição inicial.",
-   "C": "**90° e rotação externa.**\n- A rotação **externa** é a que **alivia**.",
-   "D": "**30° e rotação externa.**\n- Descreve a posição de alívio, não a de teste."
+   "B": "30 graus é o ângulo em que a dor aparece durante a extensão, e não a posição inicial do teste.",
+   "C": "A rotação externa é a manobra que alivia a dor, afastando a espinha tibial da lesão. O teste é feito com rotação interna.",
+   "D": "30 graus com rotação externa descreve o momento de alívio, e não a posição de teste."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O sinal de Wilson foi descrito em 1967 para a osteocondrite dissecante na sua localização clássica: a **face lateral do côndilo femoral medial**, a parte do côndilo que fica voltada para o centro do joelho. A ideia é provocar o contato entre a lesão e uma estrutura óssea que fica bem em frente a ela, a **espinha tibial medial** (a eminência da tíbia).\n\nA manobra começa com o paciente sentado ou deitado e o joelho dobrado a **90 graus**. O examinador roda a tíbia **para dentro** e, mantendo essa rotação, vai **estendendo** o joelho aos poucos. Com a tíbia rodada para dentro, a espinha tibial medial se aproxima da face lateral do côndilo medial. Por volta de **30 graus** de flexão, ela encosta na lesão, e o paciente sente dor. Então o examinador roda a tíbia **para fora**: a espinha se afasta da lesão e a dor desaparece. Esse alívio com a rotação externa confirma o teste.\n\nO mesmo raciocínio explica por que alguns pacientes andam com a perna rodada para fora: é a forma inconsciente de evitar o contato doloroso.\n\nO sinal tem valor como pista, mas sensibilidade baixa: muitos pacientes com a doença têm o teste negativo. O diagnóstico depende da imagem, com radiografia em incidência de túnel (que mostra a região do intercôndilo, onde a lesão costuma estar) e ressonância, que mostra se o fragmento está estável.\n\nA questão pergunta a **posição inicial** da manobra: 90 graus com rotação interna. Os 30 graus são o ponto em que a dor aparece, e a rotação externa é a manobra que alivia.",
+  "correta": "90 graus e rotação interna da perna. É a posição em que o teste começa, antes de estender o joelho mantendo a rotação interna até a dor aparecer, por volta de 30 graus.",
+  "referencias": [
+   "Wilson JN. A diagnostic sign in osteochondritis dissecans of the knee. J Bone Joint Surg Am. 1967;49(3):477-480."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0226": {
-  "conceito": "### Segond × Segond reverso\n| | Segond | ==Segond reverso== |\n|---|---|---|\n| Local | tíbia proximal **lateral** (entre Gerdy e a fíbula) | tíbia proximal **medial** |\n| Estrutura avulsionada | cápsula lateral / **ligamento anterolateral** | LCM **profundo** (meniscotibial) |\n| Mecanismo | **rotação interna + varo** | **rotação externa + valgo** |\n| Lesão associada | **LCA** (e menisco lateral) | ==LCP== (e **menisco medial**) |\n\n### Outras avulsões marcadoras\n- **Arcuate sign:** avulsão da **cabeça da fíbula** (inserção do popliteofibular e do arqueado), marcador de **lesão do CPL**, muitas vezes com LCP.\n- **Avulsão do LCP na tíbia posterior:** fragmento ósseo que pode ser **fixado** (bons resultados).\n\n> **Na prova:** Segond = ==LCA==; Segond **reverso** = ==LCP==.",
-  "correta": "**LCP.**\n- A avulsão medial é marcador de lesão do LCP e do menisco medial.",
   "incorretas": {
-   "A": "**Menisco lateral.**\n- Associado ao Segond **clássico** (lateral), junto com o LCA.",
-   "B": "**LCL.**\n- A avulsão ligada ao CPL é o **arcuate sign** (cabeça da fíbula).",
-   "C": "**LCA.**\n- É a associação do Segond **clássico**, não do reverso."
+   "A": "O menisco lateral se associa à fratura de Segond clássica, lateral, junto com o LCA.",
+   "B": "A avulsão ligada às estruturas laterais do canto posterolateral é o sinal arqueado, na cabeça da fíbula, e não a Segond reversa.",
+   "C": "O LCA é a associação da fratura de Segond clássica, na borda lateral da tíbia."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Algumas pequenas avulsões ósseas na radiografia do joelho funcionam como bandeiras: o fragmento em si é pequeno, mas indica que um ligamento importante rompeu.\n\nA **fratura de Segond** clássica é um pequeno fragmento arrancado da borda **lateral** da tíbia, logo abaixo do platô, entre o tubérculo de Gerdy e a cabeça da fíbula. Ela acontece com rotação interna e varo, e quem arranca o osso é a cápsula lateral, com o ligamento anterolateral. Sua importância é a associação com a lesão do **LCA**, presente na grande maioria dos casos, muitas vezes com lesão do menisco lateral.\n\nA **fratura de Segond reversa** é a imagem em espelho: um fragmento arrancado da borda **medial** da tíbia proximal. O mecanismo é o oposto, valgo com rotação externa, e a estrutura que arranca o osso é a parte profunda do ligamento colateral medial, que prende o menisco à tíbia. Ela foi descrita associada à lesão do **ligamento cruzado posterior** e do menisco medial, e é esse o vínculo que a banca cobra.\n\nOutras avulsões completam esse grupo de bandeiras. O sinal arqueado (arcuate sign) é um fragmento arrancado da ponta da cabeça da fíbula, onde se prendem o ligamento popliteofibular e outras estruturas posterolaterais. Ele indica lesão do canto posterolateral, muitas vezes junto com o LCP. E o fragmento arrancado da parte de trás da tíbia pelo próprio LCP é uma avulsão que pode ser fixada com bons resultados.",
+  "correta": "Ligamento cruzado posterior. A avulsão da borda medial da tíbia proximal, a Segond reversa, é marcador de lesão do LCP e, com frequência, do menisco medial.",
+  "referencias": [
+   "Hall FM, Hochman MG. Medial Segond-type fracture: cortical avulsion off the medial tibial plateau associated with tears of the posterior cruciate ligament and medial meniscus. Skeletal Radiol. 1997;26(9):553-555."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0227": {
-  "conceito": "### As bandas do LCA nativo\nNomeadas pela inserção **tibial**:\n- **Anteromedial (AM):** fica ==tensa em flexão== e é a principal restritora da **gaveta anterior** a 90°.\n- **Posterolateral (PL):** fica ==tensa em extensão== e é importante para a estabilidade **rotacional** (pivot shift) perto da extensão.\n\nElas funcionam de modo **recíproco** ao longo do arco de movimento.\n\n### Na reconstrução em dupla banda\nCada enxerto é fixado na posição em que a sua banda nativa está tensa:\n- **AM** fixada em **flexão**, por volta de 45° a 60° (varia conforme a técnica);\n- **PL** fixada perto da **extensão** completa, por volta de 0° a 15°.\n\nFixar a PL em flexão a deixaria **frouxa em extensão** (perde a função rotacional). Fixar em extensão uma banda que tensiona em flexão pode **restringir** a flexão.\n\n### Na prática\nEnsaios clínicos não mostraram vantagem clínica consistente da dupla banda sobre a **banda única anatômica**. Esta última, associada ou não a um procedimento anterolateral, é a técnica mais usada.\n\n> **Na prova:** AM = ==flexão==; PL = ==extensão==.",
-  "correta": "**Flexão e extensão.**\n- Reproduz o comportamento recíproco das bandas nativas.",
   "incorretas": {
-   "A": "**Extensão e extensão.**\n- A AM fixada em extensão ficaria frouxa em flexão, perdendo o controle da gaveta.",
-   "B": "**Flexão e flexão.**\n- A PL fixada em flexão ficaria frouxa em extensão, perdendo o controle rotacional.",
-   "D": "**Extensão e flexão.**\n- Ordem invertida."
+   "A": "Fixar a banda anteromedial em extensão a deixaria frouxa em flexão, perdendo o controle da translação anterior a 90 graus.",
+   "B": "Fixar a banda posterolateral em flexão a deixaria frouxa em extensão, perdendo o controle rotacional perto da extensão.",
+   "D": "A ordem está invertida: a anteromedial é tensionada em flexão e a posterolateral em extensão."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O ligamento cruzado anterior não é um cordão único. Ele é formado por dois feixes, chamados de bandas e nomeados pelo lugar onde se prendem na **tíbia**: a banda **anteromedial** (AM) e a banda **posterolateral** (PL). Elas se enrolam uma na outra e trabalham em momentos diferentes do movimento.\n\nCom o joelho **estendido**, a banda **posterolateral** está esticada e a anteromedial relativamente frouxa. A PL é importante para o controle da **rotação** perto da extensão, justamente a posição em que acontece o pivot shift, o deslizamento rotatório que o paciente sente como falseio. Com o joelho **dobrado**, a situação se inverte: a PL afrouxa, e a banda **anteromedial** fica tensa, sendo a principal responsável por impedir a tíbia de ir para a frente a 90 graus (o teste da gaveta anterior). Esse revezamento se chama comportamento recíproco.\n\nA reconstrução em **dupla banda** tenta reproduzir isso com dois enxertos, um em cada posição anatômica. E a regra para fixá-los é simples: cada enxerto é fixado na posição em que a sua banda nativa está tensa. A **AM** é fixada com o joelho em **flexão** (algo em torno de 45 a 60 graus, conforme a técnica) e a **PL** perto da **extensão** completa. Se a PL fosse fixada em flexão, ficaria frouxa em extensão e perderia sua função rotacional; se a AM fosse fixada em extensão, ficaria frouxa em flexão.\n\nVale o contexto: apesar da lógica anatômica, os ensaios clínicos não mostraram vantagem consistente da dupla banda sobre a reconstrução anatômica com banda única, que é hoje a técnica mais usada, às vezes associada a um procedimento lateral.",
+  "correta": "Flexão e extensão. Cada enxerto é tensionado na posição em que sua banda nativa está tensa: a anteromedial em flexão e a posterolateral perto da extensão.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0228": {
-  "conceito": "### Mecanismos de lesão do LCP\n- **Painel (dashboard injury):** joelho ==fletido== em acidente automobilístico, com força **posterior** sobre a tíbia proximal. É o clássico.\n- **Queda sobre o joelho fletido** com o pé em **flexão plantar** (a tuberosidade bate no chão). Típico no **esporte**.\n- **Hiperflexão.**\n- **Hiperextensão** (em geral com LCA e cápsula posterior, às vezes na luxação do joelho).\n\n### Exame\n- **Gaveta posterior a 90°.** A mais sensível; atenção ao **degrau** tibial anterior perdido.\n- **Sinal de Godfrey (sag):** quadril e joelho a 90°, a tíbia \"cai\".\n- **Teste ativo do quadríceps.**\n- **Classificação** pela posição do platô medial em relação ao côndilo:\n  - grau I: 0 a 5 mm;\n  - grau II: 5 a 10 mm (o platô fica nivelado com o côndilo);\n  - grau III: mais de 10 mm (o platô fica atrás do côndilo). Sugere **lesão combinada**, especialmente do CPL.\n\n> **Na prova:** LCP = trauma na tíbia com o joelho ==fletido== (painel).",
-  "correta": "**Flexão.**\n- Força posterior sobre a tíbia com o joelho fletido.",
   "incorretas": {
-   "A": "**Varo.**\n- Mecanismo do **LCL/CPL**; pode acompanhar lesões combinadas.",
-   "B": "**Valgo.**\n- Mecanismo do **LCM**, frequentemente com o LCA.",
-   "D": "**Extensão.**\n- A hiperextensão lesa o LCP, mas não é o mecanismo mais frequente."
+   "A": "O varo lesa principalmente o colateral lateral e o canto posterolateral, que podem acompanhar o LCP em lesões combinadas.",
+   "B": "O valgo é o mecanismo do colateral medial, frequentemente associado à lesão do LCA.",
+   "D": "A hiperextensão pode romper o LCP, mas geralmente depois do LCA e da cápsula posterior, e não é o mecanismo mais frequente."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O ligamento cruzado posterior é o principal freio contra a tíbia ir para **trás** em relação ao fêmur. Ele é grosso e forte, e para rompê-lo é preciso uma força que empurre a tíbia para trás, principalmente com o joelho **dobrado**, posição em que o LCP é o restritor dominante.\n\nO exemplo clássico é a **lesão do painel**: num acidente de carro, o motorista ou passageiro está sentado com o joelho fletido, e na batida a parte da frente da tíbia bate contra o painel. A tíbia é empurrada para trás e o LCP rompe. No esporte, o mecanismo mais comum é a **queda sobre o joelho dobrado** com o pé em ponta (flexão plantar): a tuberosidade da tíbia bate direto no chão. Hiperflexão e hiperextensão também podem lesar o LCP, mas a hiperextensão geralmente rompe primeiro o LCA e a cápsula posterior, numa lesão mais complexa.\n\nNo exame, o teste mais sensível é a **gaveta posterior** a 90 graus. Normalmente, o platô tibial medial fica cerca de 1 cm à frente do côndilo femoral; na lesão do LCP, esse degrau diminui ou some. A gradação usa essa posição: no grau I, o platô continua à frente do côndilo; no grau II, fica nivelado com ele; no grau III, fica atrás. O grau III sugere lesão combinada, especialmente do canto posterolateral. O sinal de Godfrey mostra a tíbia \"afundando\" para trás com o quadril e o joelho a 90 graus, e o teste ativo do quadríceps mostra a tíbia voltando à frente quando o paciente contrai o músculo.\n\nAs outras posições levam a outras lesões: o valgo lesa o colateral medial, muitas vezes com o LCA; o varo lesa o colateral lateral e o canto posterolateral.",
+  "correta": "Flexão. O LCP rompe mais frequentemente quando a tíbia é empurrada para trás com o joelho fletido, como no trauma contra o painel do carro ou na queda sobre o joelho dobrado.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0229": {
-  "conceito": "### Osteonecrose espontânea do joelho (SONK)\n- **Perfil:** ==idosos==, sobretudo **mulheres com mais de 60 anos**, sem fatores de risco clássicos.\n- **Clínica:** dor de ==início súbito==, muitas vezes com data marcada, na face **medial**, pior à noite e com carga.\n- **Local:** zona de carga do **côndilo femoral medial**, em geral **unilateral**.\n- **Entendimento atual:** é uma **fratura por insuficiência subcondral** (SIFK). Frequentemente associa-se à **lesão da raiz do menisco medial**, que sobrecarrega o côndilo.\n- **Imagem:**\n  - radiografia **normal** no início;\n  - **RM** com edema extenso e linha subcondral hipointensa.\n- **Prognóstico:** lesões **pequenas** (menos de ~40% do côndilo na AP) tendem a evoluir bem com **tratamento conservador** (descarga, analgesia). As grandes evoluem para colapso, com **UKA** ou **ATJ**.\n\n### Osteonecrose secundária\n- Pacientes **mais jovens**.\n- Fatores de risco: **corticoide**, álcool, LES, anemia falciforme, doença de Gaucher.\n- Início **insidioso**.\n- **Multifocal**, frequentemente **bilateral**, acometendo também metáfise e diáfise.\n\n> **Na prova:** SONK = ==idosa + dor súbita== medial.",
-  "correta": "**Dor aguda em pacientes idosos.**\n- Início súbito, face medial, mulheres com mais de 60 anos.",
   "incorretas": {
-   "A": "**Aguda em jovens.**\n- A osteonecrose do jovem é a **secundária**, de início insidioso.",
-   "B": "**Crônica em jovens.**\n- Descreve melhor a osteonecrose **secundária** (corticoide, álcool).",
-   "D": "**Crônica em idosos.**\n- Idade certa, mas o início típico é **súbito**."
+   "A": "A osteonecrose do paciente jovem é a secundária, ligada a fatores de risco como corticoide e álcool, e costuma começar de forma insidiosa.",
+   "B": "Dor crônica em paciente jovem descreve melhor a osteonecrose secundária, e não a espontânea do côndilo femoral.",
+   "D": "A idade está certa, mas o início típico da osteonecrose espontânea é súbito, e não crônico."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A cena típica é de uma senhora acima dos 60 anos que conta o momento exato em que a dor começou: estava descendo uma escada, ou só andando, e sentiu uma dor forte e repentina na face **medial** do joelho. A dor piora ao apoiar e à noite. A radiografia é normal.\n\nEsse é o quadro clássico da **osteonecrose espontânea do joelho**, descrita por Ahlbäck em 1968. Ela acomete a zona de carga do **côndilo femoral medial**, quase sempre de um lado só, em pessoas mais velhas e sem os fatores de risco clássicos de necrose. Hoje se entende que, na maioria dos casos, não é uma necrose primária, e sim uma **fratura por insuficiência** do osso logo abaixo da cartilagem, num osso frágil. Ela se associa com frequência à **lesão da raiz posterior do menisco medial**, que, ao deixar de segurar a carga, sobrecarrega o côndilo.\n\nNo início, a radiografia é normal, e o diagnóstico vem da ressonância, que mostra um edema extenso no côndilo e uma linha escura logo abaixo da cartilagem. A evolução depende do tamanho: lesões pequenas costumam melhorar com tratamento conservador, tirando o peso do joelho por algumas semanas e controlando a dor. Lesões grandes tendem a colapsar a superfície e evoluir para artrose, tratada com prótese unicompartimental ou total.\n\nA osteonecrose **secundária** é outra doença: aparece em pessoas mais jovens com fatores de risco (corticoide, álcool, lúpus, anemia falciforme, doença de Gaucher), começa de forma insidiosa, é muitas vezes dos dois lados e atinge vários pontos do osso, inclusive a metáfise.",
+  "correta": "Aguda em pacientes idosos. A osteonecrose espontânea do côndilo femoral medial causa dor de início súbito, típica de pessoas acima dos 60 anos, especialmente mulheres.",
+  "referencias": [
+   "Ahlbäck S, Bauer GC, Bohne WH. Spontaneous osteonecrosis of the knee. Arthritis Rheum. 1968;11(6):705-733."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0230": {
-  "conceito": "### Contração excêntrica\nContração em que o músculo **se alonga enquanto contrai**: o quadríceps tenta frear a flexão do joelho sob carga. É o tipo de contração que gera **as maiores tensões** no tendão.\n\n### O mecanismo típico\n- Aterrissagem de salto, tropeço ou tentativa de evitar a queda, com o joelho ==fletido== (em torno de 60°), o quadríceps contraído e o peso do corpo forçando a flexão.\n- Com o joelho fletido, o **ângulo** do tendão patelar e a carga tornam a tensão máxima na junção **osteotendínea** do polo inferior da patela.\n\n### Fatores predisponentes\n- **Tendinopatia patelar** prévia.\n- **Infiltrações** de corticoide.\n- Doenças sistêmicas.\n- Uso de **fluoroquinolonas**.\n\n### O mesmo mecanismo em outros lugares\nÉ o mesmo mecanismo das rupturas do **quadricipital**, do **tendão calcâneo** e das lesões musculares excêntricas (isquiotibiais).\n\n> **Na prova:** ruptura do tendão patelar = contração ==excêntrica com o joelho fletido==.",
-  "correta": "**Excêntrica com o joelho fletido.**",
   "incorretas": {
-   "A": "**Excêntrica com o joelho estendido.**\n- Em extensão, a tensão no tendão é menor.",
-   "C": "**Isométrica com o joelho estendido.**\n- Gera tensão bem menor que a excêntrica.",
-   "D": "**Isométrica com o joelho fletido.**\n- O tipo de contração não é o clássico."
+   "A": "O tipo de contração está certo, mas com o joelho estendido a tensão sobre o tendão patelar é bem menor.",
+   "C": "A contração isométrica com o joelho estendido gera tensões muito menores que a excêntrica em flexão.",
+   "D": "Com o joelho fletido a posição favorece a lesão, mas o tipo de contração que gera as maiores tensões é a excêntrica, e não a isométrica."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O músculo pode contrair de três formas. Na contração **concêntrica**, ele encurta enquanto puxa, como o quadríceps ao estender o joelho para chutar. Na **isométrica**, ele faz força sem mudar de comprimento, como ao segurar uma posição parado. Na **excêntrica**, ele faz força enquanto é alongado por uma carga maior que ele, freando o movimento: é o quadríceps controlando a descida ao sentar devagar ou ao aterrissar de um salto.\n\nA contração excêntrica é a que gera as **maiores tensões** no músculo e no tendão. O músculo consegue produzir mais força ao ser alongado do que ao encurtar, e toda essa força passa pelo tendão.\n\nO mecanismo típico de ruptura do tendão patelar junta essa contração com uma posição desfavorável. O atleta aterrissa de um salto, tropeça ou tenta evitar uma queda: o peso do corpo força o joelho a **dobrar**, e o quadríceps contrai com força máxima tentando frear, ou seja, uma contração **excêntrica** com o joelho **fletido** (em torno de 60 graus). Nessa posição, o ângulo entre o tendão e a patela e a carga transmitida fazem a tensão se concentrar na junção do tendão com o polo inferior da patela, que é onde ele rompe.\n\nUm tendão já doente rompe com menos: tendinopatia patelar prévia, infiltrações de corticoide, doenças sistêmicas e o uso de antibióticos do grupo das fluoroquinolonas são fatores de risco. O mesmo mecanismo de contração excêntrica explica as rupturas do tendão quadricipital e do tendão calcâneo e muitas lesões musculares, como as dos isquiotibiais no corredor.",
+  "correta": "Excêntrica com o joelho fletido. O quadríceps contrai com força máxima enquanto o peso do corpo força a flexão, gerando a maior tensão possível no tendão patelar.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0231": {
-  "conceito": "### Isometria × anatomia\n- **Isometria:** posicionar os túneis para que a distância entre eles **não mude** ao longo do arco. Foi o objetivo das técnicas antigas (transtibiais, túnel femoral alto no \"teto\" do intercôndilo). Resultado: enxerto **vertical**, bom para gaveta, **ruim para rotação** (pivot shift residual).\n- **Reconstrução anatômica:** túneis no **centro das pegadas** nativas (femoral mais baixo na parede lateral, pelo portal anteromedial ou técnica fora-dentro). O enxerto fica mais **horizontal** e controla melhor a rotação.\n\n### O LCA nativo não é isométrico\n- A banda **AM** é quase isométrica, tensa em flexão.\n- A banda **PL** fica tensa em extensão e **frouxa em flexão**.\n\nPortanto, o enxerto anatômico também se comporta de forma ==não isométrica==, com ==tensões diferentes== nas porções que reproduzem as bandas.\n\n> **Na prova:** reconstrução anatômica = ==não isométrica, com bandas de tensões diferentes==.",
-  "correta": "**Não isométrica, com bandas de tensões diferentes.**\n- Reproduz o LCA nativo, cujas bandas se tensionam em momentos distintos.",
   "incorretas": {
-   "B": "**Não isométrica, com tensões iguais.**\n- As bandas se tensionam de forma **recíproca**, não igual.",
-   "C": "**Isométrica, com tensões diferentes.**\n- Isometria é o conceito das técnicas **não anatômicas**.",
-   "D": "**Isométrica, com tensões iguais.**\n- Nem o nativo nem o enxerto anatômico se comportam assim."
+   "B": "O enxerto anatômico é de fato não isométrico, mas suas porções não têm tensões iguais: elas se alternam ao longo do arco, como as bandas do ligamento normal.",
+   "C": "A isometria era o objetivo das técnicas não anatômicas, com túneis altos e enxerto vertical.",
+   "D": "Nem o LCA nativo nem o enxerto anatômico se comportam de forma isométrica com tensões iguais."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Durante muitos anos, o objetivo da reconstrução do LCA foi a **isometria**: posicionar os túneis no fêmur e na tíbia de modo que a distância entre eles não mudasse ao dobrar e esticar o joelho. Um enxerto isométrico teria sempre a mesma tensão, sem afrouxar nem esticar demais. Na prática, essa busca levou a túneis femorais altos, perto do teto do intercôndilo, feitos através do túnel da tíbia, e a enxertos muito **verticais**. Eles seguravam bem a gaveta anterior, mas controlavam mal a rotação, e muitos pacientes continuavam com o pivot shift.\n\nO problema é que o próprio LCA **não é isométrico**. A banda anteromedial é quase isométrica e fica tensa principalmente em flexão; a banda posterolateral fica tensa em extensão e afrouxa quando o joelho dobra. O ligamento normal, portanto, muda de comprimento e de tensão ao longo do movimento, e suas partes trabalham em momentos diferentes.\n\nA **reconstrução anatômica** abandonou a isometria como meta e passou a colocar os túneis no **centro das inserções originais** do ligamento, com o túnel femoral mais baixo na parede lateral do intercôndilo, feito pelo portal anteromedial ou de fora para dentro. O enxerto fica mais **horizontal** e controla melhor a rotação. E, como reproduz a anatomia, ele também se comporta como o ligamento nativo: de forma **não isométrica**, com **tensões diferentes** nas porções que correspondem a cada banda ao longo do arco de movimento.",
+  "correta": "Não isométrica, com bandas que apresentam diferentes tensões. O enxerto anatômico reproduz o LCA nativo, cujas bandas se tensionam em momentos diferentes do movimento.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0232": {
-  "conceito": "### Padrão de contusão na luxação lateral da patela\nNa luxação, a patela sai **lateralmente**. Na **redução**, que costuma ser espontânea, a **faceta medial** da patela bate contra a borda do **côndilo femoral lateral**. A RM mostra edema ósseo em espelho:\n- ==côndilo femoral lateral== (face anterolateral, **não de carga**);\n- ==faceta medial da patela== (e a região inferomedial).\n\n### Outros achados na RM\n- Lesão do **LPFM**, mais frequentemente na origem **femoral** ou na **patela**.\n- **Derrame / hemartrose.**\n- **Fraturas osteocondrais** e **corpos livres**, da faceta medial ou do côndilo lateral. Se grandes, indicam **cirurgia precoce** (fixação ou retirada + reparo do LPFM).\n- **Fatores predisponentes:** displasia troclear, patela alta, TA-GT.\n\n### Diferencial\nA contusão da **lesão do LCA** é no côndilo lateral também, mas na região do **sulco terminal (de carga)** e no **platô tibial posterolateral**, não na patela.\n\n> **Na prova:** luxação lateral da patela = contusão do ==côndilo lateral + faceta medial==.",
-  "correta": "**Côndilo femoral lateral e faceta patelar medial.**\n- Impacto em espelho no momento da redução.",
   "incorretas": {
-   "A": "**Côndilo medial e faceta lateral.**\n- Padrão invertido.",
-   "C": "**Côndilo lateral e faceta lateral.**\n- A faceta lateral não bate no côndilo lateral na redução.",
-   "D": "**Côndilo medial e faceta medial.**\n- O côndilo contundido é o **lateral**."
+   "A": "O padrão está invertido: na luxação lateral, o impacto é entre a faceta medial da patela e o côndilo lateral.",
+   "C": "O côndilo lateral está certo, mas quem bate nele na redução é a faceta medial da patela, e não a lateral.",
+   "D": "A faceta medial está certa, mas o côndilo contundido é o lateral, e não o medial."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na luxação lateral da patela, tudo acontece em dois tempos, e a ressonância registra os dois como pegadas.\n\nNo primeiro tempo, a patela sai do sulco do fêmur e vai para o lado de fora, geralmente com o joelho levemente dobrado e a coxa rodando para dentro sobre o pé apoiado (o atleta que gira o corpo com o pé plantado). O ligamento patelofemoral medial, que segura a patela por dentro, rompe nesse momento, mais frequentemente na origem no fêmur ou na inserção na patela.\n\nNo segundo tempo, a patela volta ao lugar, quase sempre sozinha, quando o joelho estende. E, ao voltar, ela bate: a **faceta medial da patela** se choca contra a borda da frente do **côndilo femoral lateral**. A ressonância mostra então um edema ósseo em espelho, nos dois pontos do choque: na **face anterolateral do côndilo femoral lateral** e na **faceta medial da patela**, muitas vezes na região inferomedial.\n\nEsse impacto também pode arrancar pedaços de cartilagem e osso, da faceta medial da patela ou do côndilo lateral, que viram corpos livres dentro do joelho. Um fragmento grande muda a conduta: indica cirurgia precoce, para fixar o fragmento ou retirá-lo, geralmente junto com o reparo ou a reconstrução do ligamento. A ressonância também ajuda a avaliar fatores que favorecem novas luxações, como a displasia da tróclea e a patela alta.\n\nNão confundir com a contusão da lesão do LCA, que também fica no côndilo lateral, mas na zona de carga, junto com o platô tibial posterolateral, e não envolve a patela.",
+  "correta": "Lateral e da faceta patelar medial. Quando a patela reduz, sua faceta medial bate contra a borda anterior do côndilo femoral lateral, deixando contusões em espelho nos dois pontos.",
+  "referencias": [
+   "Elias DA, White LM, Fithian DC. Acute lateral patellar dislocation at MR imaging: injury patterns of medial patellar soft-tissue restraints and osteochondral injuries of the inferomedial patella. Radiology. 2002;225(3):736-743."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0233": {
-  "conceito": "### Osteotomia de Fulkerson (anteromedialização da TAT)\nOsteotomia **oblíqua** da tuberosidade, que a desloca **medialmente** (corrige a TA-GT aumentada) e **anteriormente** (reduz a carga femoropatelar).\n\n### Onde ela descarrega\nAo anteriorizar e medializar a TAT, a carga de contato na patela migra para **proximal e medial**. Por isso, ela **alivia** o ==polo distal== e a ==faceta lateral==.\n\n### Resultados por localização da lesão (Pidoriano)\n- **Tipo I (polo distal) e II (faceta lateral):** bons resultados.\n- **Tipo III (faceta medial):** resultado pior, pois a osteotomia **aumenta** a carga ali.\n- **Tipo IV (polo proximal ou difusa):** resultado pior.\n- **Lesões da tróclea central:** também resultado menos previsível.\n\n### Indicação típica\nInstabilidade ou maltracking com **TA-GT aumentada** e **condropatia lateral/distal** sintomática. Muitas vezes é associada à reconstrução do LPFM.\n\n> **Na prova:** Fulkerson = anteromedialização para lesão ==lateral ou distal== da patela.",
-  "correta": "**Faceta lateral ou polo distal.**\n- As regiões que a anteromedialização descarrega.",
   "incorretas": {
-   "B": "**Faceta medial.**\n- A medialização **aumenta** a carga ali: é contraindicação relativa.",
-   "C": "**Polo proximal.**\n- A carga migra para **proximal**, o que piora essa região.",
-   "D": "**Medial ou proximal.**\n- São justamente as localizações com piores resultados."
+   "B": "Na faceta medial, a medialização aumenta a carga sobre a cartilagem doente, e os resultados são piores.",
+   "C": "A faceta lateral é uma boa indicação, mas o polo proximal passa a receber mais carga após a osteotomia, com piores resultados.",
+   "D": "A faceta medial e o polo proximal são exatamente as localizações com os piores resultados da osteotomia de Fulkerson."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **osteotomia de Fulkerson** é uma das cirurgias para o desalinhamento entre a patela e o sulco do fêmur. O cirurgião corta a tuberosidade da tíbia, onde se prende o tendão patelar, num plano **oblíquo**, e desliza o fragmento ao longo desse corte. Por causa da inclinação, a tuberosidade vai ao mesmo tempo para **dentro** (medialização) e para **a frente** (anteriorização). Daí o outro nome, anteromedialização da tuberosidade.\n\nCada um desses movimentos tem uma função. A **medialização** corrige a distância aumentada entre a tuberosidade e o sulco troclear (a TA-GT), que puxa a patela para fora. A **anteriorização** afasta o tendão do fêmur e diminui a força com que a patela é comprimida contra a tróclea.\n\nMas há um efeito colateral importante: ao mover a tuberosidade para a frente e para dentro, a área de contato da patela com o fêmur **muda de lugar**, migrando para a parte **proximal** e **medial** da patela. Isso significa que as regiões **distal** e **lateral** ficam aliviadas, e as regiões proximal e medial passam a receber mais carga.\n\nFoi isso que Pidoriano e Fulkerson mostraram ao comparar os resultados conforme o local da lesão de cartilagem: os pacientes com lesão no **polo distal** ou na **faceta lateral** da patela tiveram bons resultados, enquanto os com lesão na faceta medial, no polo proximal ou difusa evoluíram pior, porque a cirurgia sobrecarregou justamente a área doente. Por isso, a indicação típica é a patela com desalinhamento, TA-GT aumentada e lesão lateral ou distal sintomática, muitas vezes junto com a reconstrução do ligamento patelofemoral medial.",
+  "correta": "Lateral ou no polo distal da patela. A anteromedialização desloca o contato para proximal e medial, descarregando justamente essas regiões, onde os resultados são melhores.",
+  "referencias": [
+   "Pidoriano AJ, Weinstein RN, Buuck DA, Fulkerson JP. Correlation of patellar articular lesions with results from anteromedial tibial tubercle transfer. Am J Sports Med. 1997;25(4):533-537."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0234": {
@@ -2772,14 +2820,14 @@
   "formato": "corrido"
  },
  "joelho-0237": {
-  "conceito": "### Geometria da cunha\nA base da cunha é o cateto oposto de um triângulo retângulo:\n- **cateto adjacente** = largura (**diâmetro**) da tíbia no nível da osteotomia;\n- **ângulo** = ==correção desejada== (ângulo de abertura).\n\n**Base = diâmetro × tan(ângulo)**\n\n### Regra prática\n- Para uma tíbia de ~57 mm, **1 mm de base ≈ 1° de correção**, porque tan 1° × 57 ≈ 1.\n- Tíbias **maiores** exigem **mais milímetros por grau**, e tíbias menores, menos. Por isso, é melhor medir a largura real na radiografia calibrada.\n\n### Planejamento completo\n1. Medir o **eixo mecânico** na panorâmica com carga (método de **Miniaci** ou de Dugdale).\n2. Definir o ponto-alvo: ~**62%** da largura do platô a partir da borda medial (**ponto de Fujisawa**), conforme a escola e o grau de artrose.\n3. Calcular o **ângulo** de correção.\n4. Converter em **milímetros** com a largura da tíbia.\n\n> **Na prova:** base da cunha = ==diâmetro da tíbia × tangente do ângulo de correção==.",
-  "correta": "**Diâmetro da tíbia e ângulo de abertura.**\n- Base = largura × tangente do ângulo de correção.",
   "incorretas": {
-   "A": "**Diâmetro e inclinação articular.**\n- O slope entra no planejamento sagital, não no cálculo da base.",
-   "C": "**Ângulo tibiofemoral e inclinação.**\n- Nenhum dos dois dá a largura da base.",
-   "D": "**Ângulo tibiofemoral e abertura.**\n- Falta a **largura** da tíbia, sem a qual não se obtêm milímetros."
+   "A": "A inclinação articular (o slope) entra no planejamento do plano sagital, mas não no cálculo da base da cunha.",
+   "C": "Nem o ângulo tibiofemoral nem a inclinação articular fornecem a largura em milímetros da base.",
+   "D": "O ângulo de correção entra no cálculo, mas falta a largura da tíbia, sem a qual não é possível converter graus em milímetros."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na osteotomia tibial alta de **fechamento lateral**, usada para a artrose do compartimento medial no joelho varo, o cirurgião retira uma **cunha** de osso da face lateral da tíbia, logo abaixo do platô, e fecha o espaço. A perna passa de varo para um leve valgo, e a carga sai do compartimento medial gasto. A pergunta é: quantos milímetros deve ter a base dessa cunha para obter a correção planejada?\n\nA resposta é geometria de triângulo retângulo. Imagine o corte visto de frente: um dos lados do triângulo é a **largura da tíbia** no nível da osteotomia (o cateto adjacente); o ângulo do vértice, na face medial, onde fica a dobradiça, é a **correção desejada**, que a questão chama de ângulo de abertura; e a base da cunha, na face lateral, é o cateto oposto. Logo, a base é igual à largura da tíbia multiplicada pela tangente do ângulo de correção.\n\nDaí vem uma regra prática conhecida: numa tíbia com cerca de 57 mm de largura, cada milímetro de base corrige aproximadamente 1 grau, porque a tangente de 1 grau vezes 57 dá quase exatamente 1. Tíbias mais largas precisam de mais milímetros por grau, e tíbias mais estreitas, de menos. Por isso o ideal é medir a largura real na radiografia calibrada.\n\nO cálculo é a última etapa do planejamento. Antes, mede-se o eixo mecânico na radiografia panorâmica dos membros com carga, define-se o ponto por onde a nova linha de carga deve passar (classicamente cerca de 62% da largura do platô, a partir da borda medial, o ponto de Fujisawa) e calcula-se o ângulo necessário para chegar lá. Só então o ângulo é convertido em milímetros.",
+  "correta": "Diâmetro da tíbia e ângulo de abertura. A base da cunha é a largura da tíbia multiplicada pela tangente do ângulo de correção.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0238": {
@@ -2805,25 +2853,25 @@
   "conferido": false
  },
  "joelho-0241": {
-  "conceito": "### Sinais radiográficos indiretos de menisco discoide lateral\nA radiografia é muitas vezes **normal**, mas pode mostrar:\n- **alargamento** do espaço articular lateral (o menisco espesso afasta os ossos);\n- **côndilo femoral lateral achatado** (squaring);\n- **platô tibial lateral côncavo** (cupping);\n- ==hipoplasia da espinha tibial lateral==;\n- ==cabeça da fíbula alta==;\n- calcificação meniscal, em raros casos.\n\n### Confirmação por RM\n\"Gravata-borboleta\" contínua em **3 ou mais cortes sagitais** consecutivos (de 4 a 5 mm) e razão largura do menisco / largura do platô aumentada no coronal.\n\n> **Na prova:** discoide lateral na radiografia = ==espinha lateral hipoplásica + fíbula alta== + espaço lateral largo.",
-  "correta": "**Espinha tibial lateral hipoplásica e cabeça da fíbula alta.**",
   "incorretas": {
-   "B": "**Hiperplasia da espinha lateral.**\n- O achado é a **hipoplasia**.",
-   "C": "**Cabeça da fíbula baixa.**\n- A cabeça da fíbula é **alta**.",
-   "D": "**Hiperplasia e fíbula baixa.**\n- Os dois achados estão invertidos."
+   "B": "A cabeça da fíbula alta está certa, mas a espinha tibial lateral fica hipoplásica, e não hiperplásica.",
+   "C": "A hipoplasia da espinha está certa, mas a cabeça da fíbula fica alta, e não baixa.",
+   "D": "Os dois achados estão invertidos: a espinha lateral é hipoplásica e a cabeça da fíbula é alta."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O menisco discoide lateral é um menisco em forma de disco, mais largo e mais grosso que o normal, que cobre boa parte do platô lateral da tíbia. A ressonância é o exame que confirma o diagnóstico, mas a radiografia simples, embora muitas vezes normal, pode mostrar sinais indiretos, que aparecem porque o osso cresceu em volta de um menisco diferente.\n\nO mais intuitivo é o **alargamento do espaço articular lateral**: o menisco grosso afasta o fêmur da tíbia daquele lado. Junto com ele, o **côndilo femoral lateral** pode ficar achatado, mais quadrado, e o **platô tibial lateral** pode ficar escavado, côncavo, moldado pelo disco.\n\nDois outros sinais são os cobrados na questão. A **espinha tibial lateral** (a eminência do lado lateral, no centro da tíbia) fica **hipoplásica**, menor, já que o menisco largo ocupa a área onde ela se projetaria. E a **cabeça da fíbula** fica **alta**, mais próxima da articulação que o habitual. Raramente, o menisco pode apresentar calcificação.\n\nNenhum desses sinais fecha o diagnóstico sozinho. Na ressonância, o menisco normal, cortado no plano sagital, aparece como uma gravata-borboleta apenas na periferia, em um ou dois cortes. No discoide, essa gravata-borboleta continua em **três ou mais cortes sagitais seguidos**, e no plano coronal o menisco ocupa uma proporção grande da largura do platô.",
+  "correta": "Hipoplasia da espinha tibial lateral e cabeça fibular alta. São dois dos sinais indiretos do menisco discoide lateral na radiografia, junto com o espaço articular lateral alargado.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0242": {
-  "conceito": "### Ótica de 30° × 70°\nO ângulo da ótica é a **inclinação da ponta** em relação ao eixo da haste.\n\n| | 30° | 70° |\n|---|---|---|\n| Campo de visão total (girando a ótica) | ==menor== | maior |\n| Visão \"em frente\" (no eixo) | ==preservada== | **ponto cego central** |\n| Uso | **padrão** na artroscopia do joelho | ver \"ao redor da esquina\": compartimento posterior, rampa, recessos |\n\n### Na prática\n- A ótica de **30°** vê o que está à frente e, girando, amplia o campo. É a mais intuitiva.\n- A de **70°** olha muito para o lado. Girando, cobre áreas que a de 30° não alcança (por exemplo, o **corno posterior** pelo intercôndilo). Mas **não enxerga o que está diretamente à frente**, o que exige experiência para não desorientar.\n\n> **Na prova:** 30° = campo ==menor, sem ponto cego central==; 70° = maior, com ponto cego.",
-  "correta": "**Menor, sem área central cega.**",
   "incorretas": {
-   "A": "**Maior, com área cega.**\n- Descreve a ótica de **70°**.",
-   "B": "**Maior, sem área cega.**\n- O campo da 30° é **menor**.",
-   "D": "**Menor, com área cega.**\n- O ponto cego central é da **70°**."
+   "A": "Campo maior com área central cega descreve a ótica de 70 graus.",
+   "B": "A ótica de 30 graus não tem ponto cego central, mas seu campo é menor, e não maior, que o da ótica de 70 graus.",
+   "D": "O campo menor está certo, mas o ponto cego central é característica da ótica de 70 graus."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A ótica do artroscópio não olha necessariamente para a frente. A ponta é cortada em ângulo, e o número da ótica (0, 30, 70 graus) indica o quanto a direção de visão está inclinada em relação ao eixo da haste.\n\nA ótica de **30 graus** é a padrão na artroscopia do joelho. Ela olha um pouco para o lado, mas o centro do que está à frente da haste continua dentro do campo de visão. Girando a ótica em volta do próprio eixo, o cirurgião varre um cone em volta da ponta e amplia o que consegue ver. Mesmo assim, o campo total coberto é **menor** que o da ótica de 70 graus, e não há ponto cego no centro.\n\nA ótica de **70 graus** olha muito para o lado, quase de lado. Girando, ela varre um cone bem mais aberto e enxerga lugares que a de 30 graus não alcança: é a ótica para olhar em volta de uma esquina, como o compartimento posterior do joelho visto pelo intercôndilo, onde ficam o corno posterior do menisco medial e as lesões em rampa. O preço é que ela **não enxerga o que está diretamente à frente** da ponta, criando um ponto cego central. Isso torna a orientação menos intuitiva e exige experiência: o cirurgião precisa lembrar que o instrumento que entra em linha reta pode estar fora da imagem.\n\nEm resumo: a de 30 graus tem campo menor e sem ponto cego; a de 70 graus tem campo maior e com ponto cego central.",
+  "correta": "Menor, sem formação de uma área central cega. A ótica de 30 graus cobre um campo total menor que a de 70, mas mantém no campo o que está à frente da haste.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0243": {
@@ -2838,69 +2886,75 @@
   "conferido": false
  },
  "joelho-0244": {
-  "conceito": "### Pele do joelho e incisões prévias\n- A vascularização da pele anterior do joelho vem de uma rede **dérmica/subdérmica**, com contribuição predominantemente **medial** (safena, genicular descendente).\n- Os retalhos **laterais** são os mais vulneráveis à necrose.\n- Por isso, com várias cicatrizes, usa-se a ==mais lateral== que permita a artrotomia. Assim se evita criar um **retalho lateral** estreito e mal irrigado.\n\n### Outras regras\n- Incisões **transversas** antigas podem ser cruzadas **perpendicularmente**.\n- Incisões **longitudinais** paralelas muito próximas (ponte de pele estreita, menos de ~5 a 6 cm) são **perigosas**.\n- Descolar o retalho em plano **profundo** (subfascial), sem descolamentos extensos no subcutâneo.\n- **Pele muito comprometida** (radioterapia, queimadura, múltiplas cirurgias): planejar com a **cirurgia plástica**, com expansores ou retalho do **gastrocnêmio medial** para cobrir o aparelho extensor.\n\n> **Na prova:** várias cicatrizes = use a ==mais lateral==.",
-  "correta": "**A mais lateral.**\n- Evita um retalho lateral estreito e mal vascularizado.",
   "incorretas": {
-   "B": "**A mais medial.**\n- Deixa um grande retalho **lateral**, o mais vulnerável.",
-   "C": "**Central.**\n- Cria **pontes de pele** entre cicatrizes, com risco de necrose.",
-   "D": "**Nova incisão.**\n- Somar mais uma cicatriz multiplica as pontes de pele isquêmicas."
+   "B": "A incisão mais medial deixaria um grande retalho lateral, justamente a região de pele mais vulnerável à necrose.",
+   "C": "Uma incisão central entre cicatrizes cria pontes de pele entre elas, com risco de necrose.",
+   "D": "Uma nova incisão soma mais uma cicatriz e multiplica as pontes de pele mal irrigadas."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A pele da frente do joelho é fina, fica sobre um osso sem muito músculo por baixo e é irrigada de um jeito particular. O sangue não chega por vasos grandes que entram direto nela: ele vem por uma rede de pequenas artérias que corre logo abaixo da pele, alimentada principalmente pelo lado **medial** (ramos da genicular descendente e da safena). O resultado é que retalhos de pele do lado **lateral** são os mais vulneráveis à falta de sangue e à necrose.\n\nIsso vira uma regra prática na prótese de joelho em quem já operou antes. Quando há várias cicatrizes, a escolha é usar a **mais lateral** que permita fazer a artrotomia. Ao entrar pela cicatriz mais lateral, o cirurgião evita criar um retalho lateral estreito, entre a nova incisão e uma cicatriz antiga, que receberia pouco sangue. Uma incisão medial, nessa situação, deixaria justamente um grande retalho lateral mal irrigado.\n\nOutros cuidados completam o raciocínio. Cicatrizes transversas antigas podem ser cruzadas em ângulo reto com segurança. Cicatrizes longitudinais paralelas muito próximas, com uma ponte de pele estreita entre elas (menos de cerca de 5 a 6 cm), são perigosas. Os retalhos devem ser levantados em plano profundo, junto à fáscia, sem descolar a pele do tecido de baixo. E fazer uma nova incisão só aumenta o número de pontes de pele isquêmicas.\n\nQuando a pele está muito comprometida, por radioterapia, queimaduras ou muitas cirurgias, o planejamento é feito junto com a cirurgia plástica, às vezes com expansores de pele antes ou com um retalho do músculo gastrocnêmio medial para cobrir o joelho.",
+  "correta": "A mais lateral. Como a irrigação da pele do joelho vem principalmente do lado medial, usar a cicatriz mais lateral evita criar um retalho lateral estreito e mal vascularizado.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0245": {
-  "conceito": "### Joelho valgo e o côndilo lateral\nNo valgo, o ==côndilo femoral lateral é hipoplásico==, sobretudo na porção **distal e posterior**.\n\n### O erro da referência pelos côndilos posteriores\nA guia de referência posterior assume côndilos simétricos e acrescenta ~3° de rotação externa. Com o côndilo lateral posterior **\"curto\"**, a guia \"vê\" o fêmur como se já estivesse rodado internamente. O componente fica em ==rotação interna== em relação ao eixo transepicondilar.\n\n### Consequências da rotação interna femoral\n- **Maltracking patelar:** a patela tende a lateralizar, com dor, subluxação e necessidade de liberação lateral.\n- **Espaço em flexão assimétrico:** apertado lateral e frouxo medial.\n\n### Como evitar\n- Usar o **eixo transepicondilar** e/ou a **linha de Whiteside**.\n- Ou fazer **gap balancing**.\n- Acrescentar **mais rotação externa** que os 3° habituais.\n\n> **Na prova:** valgo + referência posterior = côndilo ==lateral hipoplásico== = ==rotação interna== indesejada.",
-  "correta": "**Côndilo lateral, rotação interna.**",
   "incorretas": {
-   "B": "**Lateral, rotação externa.**\n- O côndilo está certo, mas o erro gera rotação **interna**.",
-   "C": "**Medial, rotação interna.**\n- No valgo, o hipoplásico é o **lateral**.",
-   "D": "**Medial, rotação externa.**\n- Os dois itens estão errados."
+   "B": "O côndilo está certo, mas o erro produzido pela hipoplasia lateral é de rotação interna, e não externa.",
+   "C": "No joelho valgo, o côndilo hipoplásico é o lateral, e não o medial.",
+   "D": "Erra os dois pontos: o côndilo hipoplásico no valgo é o lateral, e o erro resultante é de rotação interna."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "No joelho valgo de longa data, o fêmur não é só desalinhado; ele é **deformado**. O **côndilo femoral lateral** é menor que o normal, hipoplásico, principalmente na parte de baixo (distal) e na parte de trás (posterior). Isso tem uma consequência direta numa etapa delicada da prótese total: a definição da **rotação** do componente femoral.\n\nUma das técnicas mais usadas para essa rotação toma como referência os **côndilos posteriores**. Um guia é apoiado na parte de trás dos dois côndilos, e o corte é feito com cerca de 3 graus de rotação externa em relação a essa linha. A técnica funciona porque, no joelho normal ou varo, os dois côndilos posteriores têm tamanho parecido, e 3 graus a partir deles costumam coincidir com o eixo transepicondilar, que representa o verdadeiro eixo de flexão.\n\nNo valgo grave, o côndilo lateral posterior é **curto**. A linha que tangencia os dois côndilos fica inclinada, e o guia \"entende\" que o fêmur está numa posição diferente da real. O resultado é um componente posicionado em **rotação interna** em relação ao eixo transepicondilar.\n\nE rotação interna do componente femoral traz problemas conhecidos. A tróclea da prótese fica virada para dentro, a patela tende a escapar para o lado de fora (com dor, subluxação e necessidade de liberação lateral), e o espaço entre os ossos com o joelho dobrado fica desigual, apertado de um lado e frouxo do outro.\n\nPara evitar isso no valgo, usa-se o eixo transepicondilar e a linha de Whiteside como referência, ou a técnica de equilíbrio do espaço em flexão, geralmente com mais rotação externa que os 3 graus habituais.",
+  "correta": "Lateral, que causa uma rotação interna indesejável. Com o côndilo lateral posterior curto, a referência pelos côndilos posteriores posiciona o componente femoral em rotação interna.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0248": {
-  "conceito": "### Irrigação da patela\nUm **anel anastomótico** peripatelar, formado por:\n- **geniculares** superior medial, superior lateral, inferior medial e inferior lateral;\n- ==genicular descendente==, ramo da **femoral** no canal dos adutores;\n- **recorrente tibial anterior**.\n\n### O que cada acesso sacrifica\n- **Parapatelar medial:** secciona os ramos **mediais**, incluindo a contribuição da **genicular descendente**, que corre com o vasto medial. Se a isso se somar uma **liberação lateral**, que corta a genicular superior lateral, a patela pode ficar mal irrigada, com risco de necrose ou fratura.\n- ==Subvasto==: entra **por baixo** do vasto medial, sem cortar o tendão do quadríceps nem o músculo. Preserva o vasto medial e a **genicular descendente**.\n  - **Vantagens:** recuperação mais rápida do quadríceps e melhor vascularização patelar.\n  - **Limitações:** exposição mais difícil em obesos, joelhos rígidos e revisões.\n- **Midvasto:** intermediário; divide o vasto medial no sentido das fibras.\n\n> **Na prova:** subvasto preserva a ==genicular descendente== (e o vasto medial).",
-  "correta": "**Artéria genicular descendente.**\n- Ramo da femoral que corre com o vasto medial, poupado ao entrar por baixo do músculo.",
   "incorretas": {
-   "A": "**Retinacular superior.**\n- Não é um vaso nomeado como poupado por esse acesso.",
-   "C": "**Ramo safeno da femoral.**\n- O ramo safeno é ramo **da própria genicular descendente**, que acompanha o nervo safeno; não é o vaso destacado.",
-   "D": "**Genicular superior medial.**\n- Ramo da **poplítea**, que corre junto ao côndilo; costuma ser lesado nos acessos mediais."
+   "A": "A artéria retinacular superior não é o vaso descrito como preservado pelo acesso subvasto.",
+   "C": "O ramo safeno é um ramo da própria genicular descendente, que acompanha o nervo safeno. O vaso destacado na preservação da irrigação patelar é a genicular descendente.",
+   "D": "A genicular superior medial é ramo da poplítea, corre junto ao côndilo medial e costuma ser lesada nos acessos mediais."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A patela recebe sangue de um **anel de artérias** que a circunda, formado pelas quatro artérias geniculares (superior medial, superior lateral, inferior medial e inferior lateral, ramos da poplítea), pela **artéria genicular descendente** (um ramo da artéria femoral que nasce no canal dos adutores e desce junto com o vasto medial) e pela recorrente tibial anterior. Cada acesso cirúrgico ao joelho interrompe uma parte desse anel.\n\nO acesso mais usado na prótese de joelho, o **parapatelar medial**, abre a articulação cortando o tendão do quadríceps e a cápsula ao lado da patela. Com isso, ele interrompe os ramos mediais, incluindo a contribuição da genicular descendente. Se, além disso, o cirurgião fizer uma liberação lateral, que corta a genicular superior lateral, a patela pode ficar com pouco sangue, aumentando o risco de necrose e fratura.\n\nO acesso **subvasto** entra de outro jeito: o cirurgião levanta o músculo vasto medial pela sua borda de baixo, sem cortar o tendão do quadríceps nem o próprio músculo. Como a genicular descendente corre junto com o vasto medial, ela é **preservada**, assim como a força do quadríceps. As vantagens descritas são recuperação mais rápida da extensão e melhor irrigação da patela. A limitação é a exposição mais difícil em pacientes obesos, em joelhos muito rígidos e nas revisões.\n\nO acesso **midvasto** é um meio-termo: divide o vasto medial no sentido das suas fibras.",
+  "correta": "A artéria genicular descendente. Ramo da femoral que acompanha o vasto medial, ela é poupada porque o acesso subvasto entra por baixo do músculo, sem seccioná-lo.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0249": {
-  "conceito": "### Os testes do LCA\n- ==Lachman==: joelho a **20° a 30°**, translação anterior da tíbia. É o **mais sensível**, sobretudo na lesão aguda: menos dor e menos contração dos isquiotibiais. Avalie o **deslocamento** e o **ponto final** (firme ou mole).\n- ==Gaveta anterior==: joelho a **90°**. Menos sensível no agudo: os isquiotibiais contraídos e o corno posterior do menisco medial \"calçam\" a tíbia.\n- ==Pivot shift==: valgo + rotação interna, da extensão para a flexão. Por volta de 20° a 30°, a tíbia subluxada **reduz com um ressalto**.\n  - É o mais **específico** e o que melhor se correlaciona com a **instabilidade funcional**.\n  - Difícil no paciente acordado; melhor **sob anestesia**.\n\n### Os outros testes (e o que avaliam)\n- **Gaveta posterior, Godfrey:** LCP.\n- **Dial test:** CPL (e LCP a 90°).\n- **McMurray:** menisco.\n- **Estresse em valgo:** LCM (a 30° isolado; a 0°, lesão associada de cruzado ou posteromedial).\n\n> **Na prova:** LCA = ==Lachman + gaveta anterior + pivot shift==.",
-  "correta": "**Lachman, gaveta anterior e pivot shift.**",
   "incorretas": {
-   "B": "**Com dial test.**\n- O dial avalia o **CPL**.",
-   "C": "**Gaveta posterior e dial.**\n- Testes de **LCP** e **CPL**.",
-   "D": "**McMurray e valgo.**\n- Avaliam **menisco** e **LCM**."
+   "B": "O Lachman e a gaveta anterior avaliam o LCA, mas o dial test avalia o canto posterolateral.",
+   "C": "A gaveta posterior avalia o LCP e o dial test, o canto posterolateral. Só o pivot shift é teste do LCA.",
+   "D": "O McMurray avalia o menisco e o estresse em valgo, o ligamento colateral medial. Só o Lachman é teste do LCA."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O ligamento cruzado anterior tem duas funções principais: impedir que a tíbia deslize para a **frente** em relação ao fêmur e controlar a **rotação** da tíbia, especialmente perto da extensão. Os três testes clássicos do LCA avaliam exatamente isso.\n\nO **teste de Lachman** é feito com o joelho dobrado a cerca de 20 a 30 graus. O examinador segura a coxa com uma mão e puxa a tíbia para a frente com a outra, avaliando quanto ela desliza e se há um ponto final firme ou mole. É o teste **mais sensível**, principalmente na lesão aguda, porque nessa posição o joelho dói menos e os isquiotibiais relaxam com mais facilidade.\n\nA **gaveta anterior** avalia o mesmo deslizamento, mas com o joelho a 90 graus. Na lesão aguda, é menos sensível: a dor faz os isquiotibiais contraírem, e o corno posterior do menisco medial funciona como um calço que segura a tíbia.\n\nO **pivot shift** testa a rotação. Com o joelho estendido, o examinador aplica valgo e roda a tíbia para dentro, e então dobra o joelho. Se o LCA está roto, a tíbia começa subluxada para a frente e, por volta de 20 a 30 graus, volta ao lugar com um ressalto. É o teste mais **específico** e o que melhor reproduz a sensação de falseio do paciente, mas é difícil de fazer no paciente acordado; sob anestesia, fica bem mais fácil.\n\nOs outros testes da questão avaliam outras estruturas: a gaveta posterior avalia o LCP; o dial, o canto posterolateral; o McMurray, o menisco; e o estresse em valgo, o colateral medial.",
+  "correta": "Lachman, gaveta anterior e pivot shift. Os dois primeiros avaliam a translação anterior da tíbia e o terceiro, a instabilidade rotatória, as duas funções do LCA.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0250": {
-  "conceito": "### A tríade de O'Donoghue\nDescrita em futebol americano: trauma em **valgo + rotação externa** com o pé fixo (golpe na face lateral do joelho). A sequência de lesão vai da **periferia para o centro**:\n1. ==LCM== (ligamento colateral tibial): tensionado primeiro pelo valgo.\n2. ==LCA==: com a força continuando.\n3. ==Menisco medial==: o corno posterior é preso ao LCM profundo.\n\n### O que se sabe hoje\n- No **LCA agudo** com LCM, estudos mostram lesão do **menisco lateral** mais frequente que a do medial (pelo contragolpe lateral).\n- O menisco **medial** predomina no LCA **crônico**.\n- A tríade continua sendo cobrada com a **sequência clássica**.\n\n### Tratamento\n1. LCM tratado primeiro com **órtese**, recuperando o movimento.\n2. Depois, **reconstrução do LCA**, abordando o menisco.\n3. Reconstrução do LCM só se houver instabilidade residual em valgo ou lesão **posteromedial** associada.\n\n> **Na prova:** tríade infeliz = ==LCM → LCA → menisco medial==.",
-  "correta": "**LCM, LCA e menisco medial.**\n- Da periferia para o centro, no trauma em valgo com rotação externa.",
   "incorretas": {
-   "A": "**LCA, LCM, menisco.**\n- O primeiro a lesar, no valgo, é o **LCM**.",
-   "B": "**Menisco, LCM, LCA.**\n- Ordem invertida.",
-   "D": "**LCA, LCL, menisco lateral.**\n- Descreve um trauma em **varo**, não a tríade clássica."
+   "A": "As estruturas estão certas, mas a ordem não: no valgo, o primeiro a romper é o colateral medial, e não o LCA.",
+   "B": "A ordem está invertida: o menisco medial é o último da sequência, e não o primeiro.",
+   "D": "O colateral fibular (lateral) e o menisco lateral seriam lesados num trauma em varo, que não corresponde à tríade de O'Donoghue."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Em 1950, Don O'Donoghue descreveu, a partir de lesões no futebol americano, uma combinação que ficou conhecida como **tríade infeliz**. O mecanismo é um golpe na face lateral do joelho com o pé fixo no chão: o joelho é empurrado para **valgo** e a tíbia **roda para fora**.\n\nA sequência de lesões segue o caminho da força, da periferia para o centro do joelho. O primeiro a ser estirado pelo valgo é o **ligamento colateral tibial**, que é o outro nome do colateral medial, porque ele vai do fêmur à tíbia. Se a força continua, o **ligamento cruzado anterior** rompe em seguida. E por fim o **menisco medial**, cujo corno posterior está preso à parte profunda do colateral medial e é arrastado e lesado junto. Essa é a sequência clássica cobrada em prova.\n\nO conhecimento evoluiu desde então. Estudos posteriores mostraram que, na lesão aguda de LCA com colateral medial, o menisco lesado com mais frequência é o **lateral**, pelo impacto do compartimento lateral no momento em que a tíbia subluxa. O menisco medial passa a predominar no LCA crônico. Mesmo assim, a tríade continua sendo cobrada com a formulação original.\n\nO tratamento costuma ser em etapas. O colateral medial cicatriza bem e é tratado primeiro com órtese, enquanto o joelho recupera o movimento. Depois, reconstrói-se o LCA e trata-se o menisco. O colateral medial só é reconstruído se sobrar instabilidade em valgo ou houver lesão importante do canto posteromedial.",
+  "correta": "Ligamento colateral tibial, ligamento cruzado anterior e menisco medial. É a sequência clássica de O'Donoghue no trauma em valgo com rotação externa, da periferia para o centro do joelho.",
+  "referencias": [
+   "O'Donoghue DH. Surgical treatment of fresh injuries to the major ligaments of the knee. J Bone Joint Surg Am. 1950;32(4):721-738."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0251": {
-  "conceito": "### Classificações de defeito ósseo na ATJ\nGraduam a perda óssea da **menor e contida** à **maior e não contida**. A questão atribui a classificação a **Rand**. A mais usada na literatura é a **AORI** (Engh), com lógica semelhante:\n\n| Tipo | Descrição | Tratamento típico |\n|---|---|---|\n| **1** | metáfise **íntegra**, defeitos pequenos | cimento, enxerto particulado |\n| ==2== | ==defeito metafisário extenso==, com ==cortical periférica preservada== (contido); **2A** um côndilo/platô, **2B** ambos | cimento com parafusos, enxerto, **cunhas/blocos metálicos**, hastes |\n| **3** | perda **metafisária segmentar**, com comprometimento cortical e, às vezes, das inserções dos **colaterais** | **cones/sleeves** metafisários, aloenxerto estrutural, próteses **constritas** ou de dobradiça |\n\n### Princípio\nQuanto **maior e menos contido** o defeito, maior a necessidade de:\n- **aumentos** metálicos;\n- **fixação metafisária/diafisária** (hastes, cones);\n- **constrição**.\n\n> **Na prova:** defeito metafisário **extenso com cortical íntegra** = ==tipo II==.",
-  "correta": "**Tipo II.**\n- Defeito metafisário grande, mas contido pela cortical.",
   "incorretas": {
-   "A": "**Tipo I.**\n- Defeitos **pequenos**, com metáfise íntegra.",
-   "C": "**Tipo III.**\n- Perda **segmentar**, com cortical comprometida (não contida).",
-   "D": "**Tipo IV.**\n- Não corresponde a um defeito contido como o descrito."
+   "A": "O tipo I descreve defeitos pequenos, com a metáfise praticamente íntegra.",
+   "C": "O tipo III corresponde à perda segmentar, com a cortical comprometida, ou seja, um defeito não contido.",
+   "D": "O tipo IV não corresponde ao defeito descrito, extenso mas contido pela cortical."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na revisão de uma prótese de joelho, e às vezes já na primeira cirurgia, o cirurgião encontra **falta de osso**: por soltura do implante, osteólise causada por partículas, infecção ou pela retirada do componente antigo. O tamanho e o tipo do defeito decidem o que vai ser usado para reconstruir o apoio da nova prótese, e por isso foram criadas classificações. A questão atribui a classificação a **Rand**; a mais usada na literatura é a AORI, de Engh, que segue a mesma lógica.\n\nO ponto central dessas classificações é a diferença entre um defeito **contido** e um **não contido**. No defeito contido, o osso perdido fica cercado por uma parede de **cortical íntegra**, como um buraco dentro de um copo: o enxerto ou o cimento colocados ali ficam presos pelas paredes. No não contido, a parede também se foi, e o material de preenchimento não tem onde se apoiar.\n\nOs graus vão do menor ao maior. No **tipo I**, os defeitos são **pequenos** e a metáfise está praticamente íntegra; cimento ou enxerto particulado resolvem. No **tipo II**, o defeito na **metáfise é extenso**, mas a **cortical em volta está preservada**; usam-se cimento reforçado com parafusos, enxerto, cunhas ou blocos metálicos e hastes. No **tipo III**, a perda é segmentar, com a cortical comprometida e às vezes as inserções dos ligamentos colaterais; aí entram os cones e luvas metafisárias, os enxertos estruturais e as próteses mais constritas, até as de dobradiça.\n\nA regra geral é que, quanto maior e menos contido o defeito, mais a reconstrução depende de aumentos metálicos, de fixação na metáfise e na diáfise e de constrição da prótese.",
+  "correta": "Tipo II. Corresponde ao defeito metafisário extenso, mas contido pela cortical íntegra em volta.",
+  "referencias": [
+   "Engh GA, Ammeen DJ. Bone loss with revision total knee arthroplasty: defect classification and alternatives for reconstruction. Instr Course Lect. 1999;48:167-175."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "joelho-0252": {
