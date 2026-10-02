@@ -12,6 +12,7 @@ import { VitrineAssinante } from '../componentes/VitrineAssinante'
 import { CaixasAssinante } from '../componentes/CaixasAssinante'
 import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
 import { CartaoCompartilhar } from '../componentes/CartaoCompartilhar'
+import { IconePixel } from '../componentes/IconePixel'
 import { CartaoPlanos } from '../componentes/CartaoPlanos'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
@@ -290,26 +291,27 @@ export function Inicio() {
 
           <nav className="inicio-atalhos" aria-label="Atalhos">
             <a className="inicio-atalho" href={href('/treinar')}>
-              <span className="inicio-atalho__icone"><Icone nome="livro" tamanho={22} /></span>
+              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="treinar" tamanho={44} /></span>
               <span className="inicio-atalho__titulo">Treinar</span>
               <span className="inicio-atalho__nota">Por tema, prova ou dificuldade</span>
             </a>
             <a className="inicio-atalho" href={href('/revisao')}>
-              <span className="inicio-atalho__icone"><Icone nome="calendario" tamanho={22} /></span>
+              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="revisao" tamanho={44} /></span>
               <span className="inicio-atalho__titulo">Revisão {revisarHoje > 0 && <span className="acao-rapida__contador">{revisarHoje}</span>}</span>
               <span className="inicio-atalho__nota">O que vence hoje e nos próximos dias</span>
             </a>
             <a className="inicio-atalho" href={href('/dados')}>
-              <span className="inicio-atalho__icone"><Icone nome="grafico" tamanho={22} /></span>
+              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="desempenho" tamanho={44} /></span>
               <span className="inicio-atalho__titulo">Desempenho</span>
               <span className="inicio-atalho__nota">Sua evolução por tema e por prova</span>
             </a>
             <a className="inicio-atalho inicio-atalho--ouro" href={href('/ranking')}>
-              <span className="inicio-atalho__icone"><Icone nome="trofeu" tamanho={22} /></span>
+              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="ranking" tamanho={44} /></span>
               <span className="inicio-atalho__titulo">Ranking</span>
               <span className="inicio-atalho__nota">{conta ? 'Sua posição e seus emblemas' : 'Quem mais estuda por aqui'}</span>
             </a>
           </nav>
+          <CartaoPlanos />
 
           <div className="inicio-grade">
             <section className="inicio-hoje" aria-labelledby="inicio-hoje-titulo">
@@ -439,7 +441,6 @@ export function Inicio() {
 
           <div className="inicio-grade inicio-grade--rodape">
             <CartaoCompartilhar />
-            <CartaoPlanos />
           </div>
 
         </>

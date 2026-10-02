@@ -285,3 +285,16 @@
 .nav-link--ranking .nav-link__icone { color: #c9952f; }
 :root[data-tema="escuro"] .nav-link--ranking { color: #f4cf7c; }
 @media (max-width: 22rem) { .navegacao-mobile a, .navegacao-mobile__menu { font-size: 0.6rem; } }
+
+/* Atalho dos planos no topo do menu (temporada pixel art). */
+.mn-planos {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.8rem; margin: 0 0 1rem; padding: 0.8rem 1rem;
+  border-radius: 18px; border: 2px solid color-mix(in srgb, var(--ouro) 70%, transparent); color: var(--texto); text-decoration: none;
+  background: radial-gradient(120% 160% at 0% 0%, var(--ouro-veu), transparent 60%), var(--superficie);
+}
+.mn-planos:hover { border-color: var(--ouro); color: var(--texto); }
+.mn-planos img { image-rendering: pixelated; }
+.mn-planos strong { display: block; font-size: 1.05rem; }
+.mn-planos small { display: block; color: var(--texto-2); font-size: var(--meta); line-height: 1.35; }
+.mn-planos__acao { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.45rem 0.8rem; border-radius: 999px; background: linear-gradient(135deg, #f4cf7c, #c9952f); color: #3b2604; font-weight: 800; font-size: var(--meta); white-space: nowrap; }
+@media (max-width: 30rem) { .mn-planos { grid-template-columns: auto minmax(0, 1fr); } .mn-planos__acao { grid-column: 1 / -1; justify-content: center; } }
