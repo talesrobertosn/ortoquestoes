@@ -361,6 +361,72 @@ def lanterna(t: Tela, nivel: str, degrau: int) -> None:
         t.brilho(x, y, "#fff4cf")
 
 
+def martelo(t: Tela, nivel: str, degrau: int) -> None:
+    """Primeiros passos: o martelo ortopédico, cabo de madeira e cabeça de aço."""
+    t.camada(linha(6, 28, 18, 14, 2.4), MADEIRA)
+    t.pintar(linha(7, 26, 16.5, 15, 0.5), "#b47a45")
+    t.camada(linha(4.5, 29.5, 7.5, 26.5, 3), ["#1f1206", "#3a2210", "#4f2e14", "#6b4220", "#8a5a30"])
+    ux, uy = 0.75, 0.66
+    vx, vy = -uy, ux
+    cx, cy, meia, larg = 20.5, 11.5, 9.5, 3.6
+    canto = lambda su, sv: (cx + ux * meia * su + vx * larg * sv, cy + uy * meia * su + vy * larg * sv)
+    t.camada(poligono([canto(-1, -1), canto(1, -1), canto(1, 1), canto(-1, 1)]), METAIS["prata"])
+    for su in (-1, 1):
+        f = 0.78 * su
+        t.camada(poligono([(cx + ux * meia * f + vx * larg * 1.15 * sv, cy + uy * meia * f + vy * larg * 1.15 * sv) for sv in (-1, 1)]
+                          + [(cx + ux * meia * su * 1.05 + vx * larg * 1.15 * sv, cy + uy * meia * su * 1.05 + vy * larg * 1.15 * sv) for sv in (1, -1)]),
+                 ["#232c30", "#4a565b", "#7d8b90", "#b7c3c7", "#ffffff"])
+    t.camada(circulo(18.3, 14.2, 2.2), METAIS["bronze"])
+    t.brilho(18, 8)
+    for (x, y) in ((5, 6), (27, 25)):
+        t.brilho(x, y, "#fff4cf")
+
+
+def louros(t: Tela, cx: float, cy: float, r: float) -> None:
+    folhas = ["#173d12", "#2f6b22", "#4f9a35", "#86c95a", "#d4f5b0"]
+    for lado in (-1, 1):
+        for i in range(7):
+            a = math.radians(100 + i * 22)
+            x, y = cx - lado * math.cos(a) * r, cy + math.sin(a) * r
+            t.camada(circulo(x, y, 1.15) | circulo(x - lado * 0.9, y - 0.9, 0.9), folhas)
+
+
+def preceptor(t: Tela, nivel: str, degrau: int) -> None:
+    """Preceptor: ouro, louros, três gemas e uma estrela no topo."""
+    verde, verde_escuro = "#1f7a4d", "#0d3b24"
+    fita = [verde_escuro, verde_escuro, verde, verde, "#5cc98a"]
+    t.camada(poligono([(8, 0), (13, 0), (16, 8), (12, 8)]), fita)
+    t.camada(poligono([(19, 0), (24, 0), (20, 8), (16, 8)]), fita)
+    t.pintar(retangulo(10, 0, 10, 4) | retangulo(21, 0, 21, 4), "#f5cd6b")
+    cx, cy = 16, 18.5
+    louros(t, cx, cy, 11.4)
+    t.camada(circulo(cx, cy, 8.8), METAIS["ouro"])
+    t.camada(circulo(cx, cy, 6.2), ["#3d2804", "#5c3d0d", "#6e4a14", "#8a5e17", "#b07a1c"], contorno=False)
+    t.pintar(circulo(cx, cy, 6.2) - circulo(cx, cy, 5.5), "#3d2804")
+    t.pintar(linha(12.8, 15.3, 19.2, 21.7, 1.3), "#fff8e6")
+    for (x, y) in ((12.3, 14.8), (19.7, 22.2)):
+        t.pintar(circulo(x, y, 1.2), "#fff8e6")
+    t.pintar(linha(19.4, 15.4, 13.4, 21.4, 0.9), "#d4dde0")
+    t.pintar(linha(19.6, 15.2, 18, 16.8, 0.6), "#ffffff")
+    for ang, c in ((150, "#2b5fa8"), (90, "#d33a3a"), (30, "#1f7a4d")):
+        x, y = cx + math.cos(math.radians(ang)) * 7.6, cy + math.sin(math.radians(ang)) * 7.6
+        escura = _hex(misturar(hexa(c), hexa("#000000"), 0.5))
+        clara = _hex(misturar(hexa(c), hexa("#ffffff"), 0.45))
+        t.camada(circulo(x, y, 1.7), [escura, escura, c, clara, clara])
+        t.ponto(round(x - 1), round(y - 1), hexa("#ffffff"))
+    pts = []
+    for i in range(10):
+        a = -math.pi / 2 + i * math.pi / 5
+        r = 5.8 if i % 2 == 0 else 2.6
+        pts.append((cx + math.cos(a) * r, 7.4 + math.sin(a) * r))
+    estrela_ = poligono(pts)
+    t.pintar({(x + dx, y + dy) for (x, y) in estrela_ for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1))}, "#3d2804")
+    t.camada(estrela_, ["#3d2804", "#d9a23a", "#f5cd6b", "#fff4cf", "#ffffff"], contorno=False)
+    t.brilho(12, 13, "#fff4cf")
+    for (x, y) in ((4, 6), (28, 5)):
+        t.brilho(x, y, "#fff4cf")
+
+
 def coroa(t: Tela, nivel: str, lugar: int) -> None:
     """Coroa do pódio: ouro para o 1º, prata para o 2º, bronze para o 3º."""
     corpo = poligono([(4, 12), (10, 19), (16, 8), (22, 19), (28, 12), (26, 26), (6, 26)])
@@ -383,6 +449,7 @@ FORMAS = {
     "gabarito": trofeu, "secreta-madrugada": lua, "secreta-fim-de-semana": sol,
     "mestre": estandarte, "resistencia": ampulheta, "colecao": estrela, "anotacoes": pena,
     "secreta-madrugador": alvorada, "secreta-sextou": lanterna,
+    "questoes-50": martelo, "questoes-2000": preceptor,
 }
 
 
