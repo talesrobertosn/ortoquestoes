@@ -2175,36 +2175,47 @@
   "conferido": false
  },
  "coluna-0189": {
-  "conceito": "### Espondilolistese degenerativa: a clínica\n- **Evolução ==lenta==** (anos): artrose facetária e degeneração discal permitem o deslizamento, geralmente até o **grau I-II**.\n- **Sequência típica:**\n  1. **lombalgia mecânica**, frequentemente o primeiro sintoma;\n  2. irradiação para as nádegas, as coxas e ==os membros inferiores==;\n  3. **claudicação neurogênica** pela estenose (central e de recesso, com raiz **L5** em L4-L5).\n\n### Sinais de alarme (fogem do padrão)\n- Déficit motor **rápido**.\n- **Cauda equina.**\n- Dor noturna ou em repouso intensa.\n- Sintomas sistêmicos.\n\nInvestigar **outra causa**: tumor, infecção, fratura.\n\n### Tratamento\n- **Conservador:** fisioterapia, analgesia, infiltração.\n- **Cirúrgico** (claudicação que limita, déficit): **descompressão + artrodese** (com ou sem instrumentação). O estudo SPORT e outros mostram benefício. A descompressão **isolada** fica para casos selecionados e estáveis.\n\n> **Na prova:** espondilolistese degenerativa = ==dor lombar irradiada, progressão lenta==.",
-  "correta": "**Dor lombar com irradiação e progressão lenta.**",
   "incorretas": {
-   "A": "**Estenose com progressão rápida.**\n- A estenose se instala **gradualmente**.",
-   "C": "**Claudicação com progressão rápida.**\n- Frequente, mas de instalação **lenta**.",
-   "D": "**Radicular sem lombalgia.**\n- A lombalgia mecânica costuma **abrir** o quadro."
+   "A": "A estenose dessa doença se instala devagar, acompanhando o desgaste. Piora rápida não é o padrão e deve levantar suspeita de outra causa.",
+   "C": "A claudicação neurogênica é frequente na espondilolistese degenerativa, mas aparece gradualmente, não de forma rápida.",
+   "D": "A lombalgia mecânica costuma ser justamente o primeiro sintoma. Dor radicular isolada, sem dor nas costas, não é o retrato típico."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A espondilolistese degenerativa não acontece de um dia para o outro. Ela é o resultado de anos de desgaste: o disco entre L4 e L5 perde altura, as facetas, que são as pequenas articulações de trás da coluna, desenvolvem artrose e deixam de segurar a vértebra, e L4 vai escorregando para a frente sobre L5, milímetro a milímetro. Raramente passa de um quarto ou metade do tamanho da vértebra.\n\nPor isso a história clínica também é lenta. Quase sempre começa com **dor lombar mecânica**, aquela que piora com esforço e ao ficar muito tempo em pé, e que a paciente (geralmente mulher, acima dos 50) convive durante bastante tempo. Com o passar dos meses e anos, como o arco da vértebra está inteiro e escorrega junto, o canal vai ficando estreito. A dor passa a **descer para as nádegas e as pernas**, e aparece a claudicação neurogênica: peso e dor nas pernas ao andar, que melhoram ao sentar ou ao se apoiar no carrinho do supermercado. A raiz mais apertada costuma ser a L5.\n\nO que não combina com esse quadro é a pressa. Déficit motor que se instala rápido, perda de controle da bexiga, dor noturna intensa, febre ou emagrecimento fazem pensar em outra coisa, como tumor, infecção ou fratura, e mudam a investigação.\n\nO tratamento começa sem cirurgia, com fisioterapia, analgesia e às vezes infiltração. Quando a claudicação limita a vida ou há déficit, a cirurgia de descompressão costuma ser associada à artrodese, e estudos como o SPORT mostraram benefício em relação ao tratamento conservador.",
+  "correta": "Dor lombar com irradiação para os membros inferiores e progressão lenta. É a evolução natural de um escorregamento que se forma ao longo de anos, primeiro doendo nas costas e depois nas pernas.",
+  "referencias": [
+   "Weinstein JN, Lurie JD, Tosteson TD et al. Surgical compared with nonoperative treatment for lumbar degenerative spondylolisthesis: four-year results in the Spine Patient Outcomes Research Trial (SPORT) randomized and observational cohorts. J Bone Joint Surg Am. 2009;91(6):1295-1304.",
+   "Rosenberg NJ. Degenerative spondylolisthesis: predisposing factors. J Bone Joint Surg Am. 1975;57(4):467-474."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0190": {
-  "conceito": "### Achados degenerativos em assintomáticos\nEstudos com **voluntários sem dor** (Boden, Jensen; revisão sistemática de Brinjikji, 2015) mostram que as alterações degenerativas são **muito comuns** e aumentam com a idade:\n- **degeneração discal** (disco \"escuro\" em T2): proporção grande já aos 30 anos, chegando a quase todos acima de 50 a 60 anos;\n- **abaulamentos e protrusões:** comuns em assintomáticos;\n- **fissuras anulares**, **Modic**, **artrose facetária:** frequentes.\n\nA questão usa o número extremo: ==praticamente 100% aos 50 anos ou mais==.\n\n### Lição clínica\n- A RM **não** deve ser pedida rotineiramente na lombalgia **sem bandeiras vermelhas**.\n- O achado de imagem **não prova** que ele cause a dor.\n- **Correlacionar** sempre a imagem com a **clínica** (território radicular, exame).\n- Evitar \"tratar a imagem\": cirurgia por achado incidental leva a maus resultados.\n\n> **Na prova:** alteração degenerativa na RM = praticamente ==universal a partir dos 50 anos==.",
-  "correta": "**~100% dos pacientes com 50 anos ou mais.**",
   "incorretas": {
-   "A": "**60% aos 60 anos.**\n- Subestima.",
-   "B": "**70% aos 40 anos.**\n- Abaixo do que os estudos mostram.",
-   "C": "**80% aos 70 anos.**\n- Subestima e desloca a idade."
+   "A": "Sessenta por cento aos 60 anos subestima o que os estudos com pessoas sem dor encontraram nessa faixa.",
+   "B": "Aos 40 anos a degeneração já é frequente, mas 70% não é o número que a questão usa, e a mensagem sobre a universalidade do achado se refere a idades maiores.",
+   "C": "Desloca a idade para mais tarde e subestima a frequência. Aos 70, a degeneração aparece em quase todos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Esta questão carrega uma das lições mais úteis de toda a ortopedia de coluna: a ressonância de quase todo adulto mais velho está \"alterada\", e isso não quer dizer que ele esteja doente.\n\nA ideia veio de estudos feitos com voluntários **sem dor nenhuma**. Boden, em 1990, fez ressonância da coluna lombar em pessoas assintomáticas e encontrou hérnias, abaulamentos e discos degenerados numa proporção enorme, especialmente acima dos 60 anos. Uma grande revisão de 2015, de Brinjikji, juntou dezenas de estudos e mostrou que a degeneração do disco aparece em cerca de um terço das pessoas sem dor aos 20 anos e vai subindo com a idade até atingir a grande maioria a partir dos 50 e quase todos aos 80. Abaulamentos, fissuras no anel do disco e artrose das facetas seguem a mesma curva.\n\nA banca escolheu o número extremo, praticamente **100% a partir dos 50 anos**. Os estudos mostram valores um pouco menores nessa faixa, mas a mensagem é a mesma: depois dos 50, encontrar desgaste na ressonância é a regra.\n\nPor que isso importa? Porque o paciente com lombalgia comum, sem sinais de alarme, não precisa de ressonância. E, quando ela é feita, o achado só tem valor se combinar com a clínica: uma hérnia em L5-S1 do lado esquerdo explica uma ciática à esquerda no território de S1, mas não explica uma dor lombar difusa. Operar a imagem em vez do paciente é uma das causas mais conhecidas de mau resultado em cirurgia de coluna.",
+  "correta": "Cerca de 100% dos pacientes com 50 anos ou mais. A banca adota o número extremo para transmitir a ideia de que, a partir dessa idade, alterações degenerativas na ressonância são praticamente universais.",
+  "referencias": [
+   "Brinjikji W, Luetmer PH, Comstock B et al. Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. AJNR Am J Neuroradiol. 2015;36(4):811-816.",
+   "Boden SD, Davis DO, Dina TS, Patronas NJ, Wiesel SW. Abnormal magnetic-resonance scans of the lumbar spine in asymptomatic subjects: a prospective investigation. J Bone Joint Surg Am. 1990;72(3):403-408."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0191": {
-  "conceito": "### Idade da hérnia de disco lombar\n**Pico:** ==3ª e 4ª décadas== (~30 a 50 anos).\n\n**Por quê:**\n- o **núcleo pulposo** ainda está **hidratado**, com pressão suficiente para herniar;\n- o **ânulo** já acumulou **fissuras**.\n\n**Em outras idades:**\n- **Jovens:** ânulo íntegro. A hérnia juvenil é rara e às vezes associada a **apofisária** (avulsão do anel).\n- **Idosos:** disco desidratado e colapsado. O problema passa a ser **estenose** (facetas, ligamento amarelo). Hérnias **foraminais** são relativamente mais comuns nos idosos.\n\n**Níveis:** **L4-L5 e L5-S1**, em ~90% a 95% dos casos.\n\n**História natural:**\n- grande parte melhora em **6 a 12 semanas**;\n- as **extrusões** e os **sequestros** reabsorvem com frequência.\n\n**Cirurgia (microdiscectomia):**\n- **síndrome da cauda equina** (urgência);\n- déficit motor **progressivo** ou grave;\n- dor radicular **refratária** após ~6 a 12 semanas.\n\n> **Na prova:** hérnia lombar = ==3ª e 4ª décadas==.",
-  "correta": "**3ª e 4ª décadas.**",
   "incorretas": {
-   "A": "**2ª e 3ª.**\n- Na 2ª década o ânulo é íntegro; a hérnia é incomum.",
-   "C": "**4ª e 5ª.**\n- Vai além do pico.",
-   "D": "**5ª e 6ª.**\n- Predomina a **estenose** degenerativa."
+   "A": "Na segunda década o anel ainda é íntegro, e a hérnia é pouco comum. O pico vem depois.",
+   "C": "A quinta década já entra na fase em que o disco começa a desidratar. O pico da hérnia ficou para trás.",
+   "D": "Na quinta e sexta décadas predomina a estenose degenerativa, e o disco seco raramente hernia como no adulto jovem."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Para um disco herniar, duas coisas precisam acontecer ao mesmo tempo: o anel fibroso que o envolve tem de estar enfraquecido, e o núcleo no centro ainda tem de estar cheio de água, com pressão suficiente para escapar por uma fissura. Essa combinação define a idade da hérnia.\n\nNa adolescência e no começo dos 20 anos, o anel está inteiro e resistente. A hérnia acontece, mas é incomum, e às vezes vem junto com um pedaço do osso da borda da vértebra (a hérnia apofisária). Depois dos 50 ou 60 anos, o núcleo já secou e o disco perdeu altura; não há mais pressão para empurrar material para fora. O problema típico dessa idade passa a ser a estenose, causada pelo desgaste das facetas e pelo ligamento amarelo grosso.\n\nEntre esses dois extremos, na **terceira e quarta décadas**, dos 30 aos 50 anos, o anel já acumulou fissuras e o núcleo ainda está hidratado. É a janela da hérnia lombar. Ela aparece quase sempre em L4-L5 ou L5-S1, os segmentos que mais se movem e carregam peso.\n\nA boa notícia é que a maioria melhora sozinha em 6 a 12 semanas, e os fragmentos grandes que escapam do disco costumam ser reabsorvidos pelo organismo. A cirurgia fica para a síndrome da cauda equina (urgência), para o déficit motor importante ou progressivo e para a dor na perna que não cede depois de algumas semanas de tratamento bem feito.",
+  "correta": "Na terceira e quarta décadas. É quando o anel fibroso já tem fissuras e o núcleo ainda tem água e pressão suficientes para herniar.",
+  "referencias": [
+   "Deyo RA, Mirza SK. Herniated lumbar intervertebral disk. N Engl J Med. 2016;374(18):1763-1772."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0192": {
@@ -2223,36 +2234,45 @@
   "conferido": false
  },
  "coluna-0193": {
-  "conceito": "### Teste de Spurling\n- **Manobra:** pescoço em **extensão**, **inclinação** e **rotação** para o lado sintomático, com **compressão axial** na cabeça.\n- **Positivo:** reproduz a **dor radicular** irradiada no dermátomo, não apenas dor cervical local.\n- **Acurácia:**\n  - **especificidade alta** (~90% ou mais): positivo, quase confirma;\n  - **sensibilidade** limitada (~30% a 60% nos estudos): negativo, não afasta.\n\nEntre as opções, é ==o único teste de radiculopatia== (cervicobraquialgia).\n\n### Outros testes de radiculopatia cervical\n- **Abdução do ombro** (Bakody): alívio.\n- **Distração cervical:** alívio.\n- **ULTT** (teste de tensão do membro superior): **sensível**.\n\n### Mielopatia (não radiculopatia)\n- **Hoffmann**, **L'Hermitte**, hiper-reflexia, clônus, Babinski.\n- **Sinal do escape do dedo mínimo.**\n- **Teste de preensão e soltura** (10 s).\n\n> **Na prova:** cervicobraquialgia = ==Spurling==.",
-  "correta": "**Spurling.**",
   "incorretas": {
-   "A": "**Hoffmann.**\n- Sinal de **mielopatia**.",
-   "B": "**L'Hermitte.**\n- Irritação **medular**.",
-   "D": "**Yamamoto.**\n- Não é teste consagrado da cervical."
+   "A": "O Hoffmann avalia a medula, não a raiz. Positivo, ele sugere mielopatia cervical, que é outra situação.",
+   "B": "O Lhermitte também é um sinal medular, ligado às colunas posteriores, clássico da esclerose múltipla e da mielopatia. Não serve para confirmar radiculopatia.",
+   "D": "Não é um teste consagrado do exame da coluna cervical."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Cervicobraquialgia é a dor que nasce no pescoço e desce pelo braço, geralmente porque uma raiz nervosa está apertada no forame, a porta lateral por onde ela sai. O exame físico tenta reproduzir essa compressão para confirmar que a dor do braço vem mesmo do pescoço.\n\nO **teste de Spurling** faz exatamente isso. O examinador estende o pescoço do paciente, inclina e gira a cabeça para o lado da dor e aplica uma pressão de cima para baixo. Essas três manobras juntas fecham o forame daquele lado. Se a dor desce pelo braço, no trajeto da raiz, o teste é positivo. Dor só no pescoço não conta.\n\nUm detalhe de honestidade sobre o enunciado: o Spurling é muito **específico**, ou seja, quando dá positivo, quase sempre há radiculopatia de verdade. Mas a **sensibilidade** dele é limitada nos estudos; muitos pacientes com radiculopatia têm o teste negativo. Por isso um Spurling negativo não afasta o diagnóstico. Mesmo assim, entre as opções, ele é o único teste feito para radiculopatia, e é a resposta.\n\nAs outras alternativas são de outra família. Hoffmann e Lhermitte procuram sofrimento da **medula**, não da raiz. O Hoffmann é o peteleco na unha do dedo médio que faz o polegar e o indicador fletirem; o Lhermitte é o choque elétrico que desce pela coluna quando se flete o pescoço. São sinais de mielopatia, outra doença, com outro tratamento.",
+  "correta": "Spurling. Ele fecha o forame cervical do lado sintomático e reproduz a dor radicular; é bastante específico, embora a sensibilidade seja modesta.",
+  "referencias": [
+   "Tong HC, Haig AJ, Yamakawa K. The Spurling test and cervical radiculopathy. Spine. 2002;27(2):156-159."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0194": {
-  "conceito": "### Escoliose e pulmão\nA repercussão depende da curva **torácica**, que deforma a **caixa torácica**.\n| Cobb torácico | Efeito |\n|---|---|\n| abaixo de ~60° | pouco efeito clínico |\n| ==acima de ~70°== | **restrição** mensurável e **clinicamente significativa** (capacidade vital cai) |\n| acima de ~100° a 120° | **hipoventilação**, **hipertensão pulmonar**, **cor pulmonale** |\n\n**Fatores que agravam:**\n- **hipocifose** torácica: reduz o diâmetro AP do tórax;\n- **início precoce** (antes dos 5 anos): o pulmão ainda está se desenvolvendo, com hipoplasia alveolar. É a **síndrome da insuficiência torácica**.\n\n**Curvas lombares** não afetam a função pulmonar.\n\n### Relevância\n- Curvas grandes: **espirometria** pré-operatória.\n- A cirurgia **estabiliza** e pode **melhorar discretamente** a função pulmonar em algumas séries.\n- A **toracoplastia** (ressecção de costelas da giba) pode **piorar** temporariamente a função.\n\n> **Na prova:** comprometimento pulmonar significativo a partir de ==70°==.",
-  "correta": "**70°.**",
   "incorretas": {
-   "A": "**50°.**\n- Limiar cirúrgico por progressão, ainda sem restrição significativa.",
-   "C": "**90°.**\n- O comprometimento já começou antes.",
-   "D": "**110°.**\n- Terreno do cor pulmonale."
+   "A": "Cinquenta graus é o limiar de indicação cirúrgica por risco de progressão. Nessa faixa, a função pulmonar costuma estar preservada.",
+   "C": "Em 90 graus o comprometimento já está estabelecido; ele começou antes.",
+   "D": "Curvas acima de 100 a 110 graus são o território da insuficiência respiratória grave e do cor pulmonale, não o início do problema."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A escoliose torácica não é só uma coluna torta: as costelas saem das vértebras torácicas, e quando a coluna desvia e gira, ela leva a caixa torácica junto. O tórax fica deformado, um lado colapsado e o outro aberto, e os pulmões perdem espaço para expandir. A função pulmonar passa a ter um padrão restritivo, com capacidade vital menor.\n\nIsso só se torna clinicamente relevante a partir de um certo tamanho. Em curvas torácicas de **cerca de 70 graus**, a perda de função pulmonar começa a ser significativa. Acima de 90 a 100 graus, a restrição pode ser grave, e nas curvas muito grandes surgem falta de ar aos esforços e, no extremo, sobrecarga do coração direito (cor pulmonale). Por isso o estudo de história natural de Weinstein, que acompanhou pacientes por 50 anos, encontrou falta de ar principalmente nos que tinham curvas torácicas grandes.\n\nDuas coisas pioram o quadro: a hipocifose torácica, porque a coluna reta de perfil diminui ainda mais o diâmetro do tórax, e o início muito precoce da escoliose, antes dos 5 anos, quando os pulmões ainda estão se formando. Curvas lombares não afetam a respiração.\n\nNa prática, isso explica por que curvas torácicas grandes fazem espirometria antes da cirurgia, e por que o limiar de 50 graus, usado para indicar cirurgia no adolescente, é pensado para impedir que a curva continue crescendo até a faixa em que o pulmão sofre.",
+  "correta": "Setenta graus. É a partir dessa magnitude de curva torácica que o comprometimento pulmonar começa a ser clinicamente significativo.",
+  "referencias": [
+   "Weinstein SL, Dolan LA, Spratt KF, Peterson KK, Spoonamore MJ, Ponseti IV. Health and function of patients with untreated idiopathic scoliosis: a 50-year natural history study. JAMA. 2003;289(5):559-567."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0195": {
-  "conceito": "### Colete de Milwaukee (CTLSO)\n**Componentes:**\n- **cesto pélvico**, a base;\n- **barras** metálicas (uma anterior e duas posteriores);\n- **anel cervical**, com apoio occipital e sob o queixo;\n- **almofadas** posteriores no ápice da cifose (ou torácicas laterais na escoliose).\n\n**Mecanismo:** ==correção dinâmica em três pontos==:\n- a almofada no **ápice** empurra para frente;\n- **pelve** e **anel cervical** seguram as extremidades;\n- o paciente se **estende ativamente** para aliviar o contato com o anel: é o componente **dinâmico**.\n\n**Indicação:** ápice **torácico alto** (acima de ~T7 a T8), que uma TLSO não alcança. Exige **colaboração**, uso prolongado (~23 h por dia) e crescimento restante.\n\n**Desvantagens:** estética (visível acima da roupa), aderência difícil. Hoje é pouco usado na escoliose, mas ainda é citado no **Scheuermann torácico**.\n\n> **Na prova:** Milwaukee = ==correção dinâmica em três pontos==.",
-  "correta": "**Correção dinâmica em três pontos.**",
   "incorretas": {
-   "B": "**Derrotação.**\n- Órtese não derrota a curva de forma significativa; isso é objetivo da cirurgia.",
-   "C": "**Alongamento da musculatura anterior.**\n- Parte da fisioterapia associada.",
-   "D": "**Guiar o crescimento.**\n- Descreve de forma vaga o efeito, não o mecanismo."
+   "B": "Derrotar vértebras é coisa de cirurgia, com parafusos pediculares e hastes. Nenhum colete faz uma derrotação significativa da coluna.",
+   "C": "Alongar a musculatura anterior, como os peitorais, é parte da fisioterapia que acompanha o tratamento, não o mecanismo do colete.",
+   "D": "Guiar o crescimento é uma descrição vaga do efeito final. O mecanismo pelo qual o colete age é a correção em três pontos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O Milwaukee é um colete diferente dos outros: além da parte que abraça a pelve, ele tem barras de metal que sobem pelas costas e pela frente até um anel em volta do pescoço, com apoio debaixo do queixo e na nuca. É o único jeito de um colete alcançar uma deformidade alta na coluna torácica.\n\nO princípio é o mesmo de endireitar uma vara torta com as mãos: três pontos de força. Uma almofada nas costas empurra o ápice da cifose para a frente. A pelve, embaixo, e o anel cervical, em cima, seguram as pontas. Assim, a curva é forçada a se estender.\n\nO \"dinâmico\" é a parte inteligente. O anel não foi feito para o paciente se apoiar nele. Ao contrário: quando ele relaxa e curva o tronco, o queixo e a nuca encostam no anel e incomodam, e o paciente se estica sozinho para fugir do contato. Ou seja, o colete induz o adolescente a usar os próprios músculos para se endireitar o dia todo. Por isso se fala em correção dinâmica em três pontos.\n\nO preço é alto: o colete aparece acima da roupa, precisa ser usado cerca de 23 horas por dia e exige muita colaboração. Hoje ele quase não é usado na escoliose, mas continua sendo a referência quando a cifose de Scheuermann tem ápice torácico alto, que os coletes mais curtos não alcançam, e enquanto ainda há crescimento pela frente.",
+  "correta": "Correção dinâmica em três pontos. A almofada no ápice, a pelve e o anel cervical formam os três pontos, e o anel estimula o paciente a se estender ativamente.",
+  "referencias": [
+   "Sachs B, Bradford D, Winter R, Lonstein J, Moe J, Willson S. Scheuermann kyphosis: follow-up of Milwaukee-brace treatment. J Bone Joint Surg Am. 1987;69(1):50-57."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0202": {
