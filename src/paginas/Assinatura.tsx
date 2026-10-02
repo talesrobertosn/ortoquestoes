@@ -2,14 +2,16 @@ import { useEffect, useMemo, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { lerRespondidas } from '../estado/sessao'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
-import { usarIndice } from '../dados/usarIndice'
 import { Icone, type NomeIcone } from '../componentes/Icone'
 import { Simbolo } from '../marca/Simbolo'
-import { Painel } from '../componentes/Painel'
+import { JanelaCentral } from '../componentes/JanelaCentral'
 import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { href } from '../util/rotas'
 import { LIMITE_GRATIS_ATUAL } from '../config'
 import { MENSAL, PLANOS, real } from '../dados/planos'
+
+/** Na página, o anual fica no meio: é o que queremos que salte aos olhos. */
+const ORDEM_PLANOS = [PLANOS[0], PLANOS[2], PLANOS[1]]
 import '../estilos/paginas/Assinatura.css'
 
 const pagamentosHabilitados = import.meta.env.VITE_PAGAMENTOS_HABILITADOS === 'true'
@@ -34,7 +36,6 @@ const INCLUI = ['Cronograma baseado no que mais cai na prova', 'Ranking dos tema
 
 export function Assinatura() {
   const { sessao } = usarConta()
-  const { indice } = usarIndice()
   const [metricas, definirMetricas] = useState<MetricasConta | null>(null)
   const [mensagem, definirMensagem] = useState<string | null>(null)
   const [planoEscolhido, definirPlanoEscolhido] = useState<(typeof PLANOS)[number] | null>(null)
@@ -45,7 +46,6 @@ export function Assinatura() {
   const [pix, definirPix] = useState<{ url: string; pedido_id: string; expira_em: string } | null>(null)
   const locais = useMemo(() => Object.values(lerRespondidas()), [])
   const nome = String(sessao?.user.user_metadata?.nome ?? '').trim()
-  const comentadas = useMemo(() => (indice?.questoes ?? []).filter((q) => q.c === 1).length, [indice])
 
   useEffect(() => {
     if (!sessao) return
@@ -154,13 +154,6 @@ export function Assinatura() {
         </div>
       </section>
 
-      <section className="vp-prova" aria-label="O acervo">
-        <div><strong>{indice ? indice.total.toLocaleString('pt-BR') : '3.800+'}</strong><span>questões de prova</span></div>
-        <div><strong>{comentadas ? comentadas.toLocaleString('pt-BR') : '3.800+'}</strong><span>com comentário</span></div>
-        <div><strong>{indice ? indice.temas.length : 11}</strong><span>temas da especialidade</span></div>
-        <div><strong>TEOT · TARO</strong><span>e ENARE R4</span></div>
-      </section>
-
       <section className="vp-perguntas" aria-label="O que o assinante resolve">
         <a className="vp-pergunta" href={href('/cronograma')}>
           <span className="vp-pergunta__icone"><Icone nome="rota" tamanho={22} /></span>
@@ -217,6 +210,62 @@ export function Assinatura() {
         </div>
       </section>
 
+      <section className="vp-secao vp-precos" id="planos">
+        <header className="vp-secao__cabeca vp-precos__cabeca">
+          <p className="vp-sobre">Planos</p>
+          <h2>Tudo liberado em qualquer plano. Você escolhe só o ritmo de pagamento.</h2>
+          <p>Os três planos têm exatamente os mesmos recursos. Quanto mais longo, menor o preço por mês.</p>
+          <ul className="vp-meios" aria-label="Formas de pagamento">
+            <li><IconePix /> Pix em todos os planos</li>
+            <li><IconeCartao /> Cartão de crédito</li>
+            <li><Icone nome="certo" tamanho={16} /> Garantia de 7 dias</li>
+          </ul>
+        </header>
+
+        <div className="vp-planos">
+          {ORDEM_PLANOS.map((p) => {
+            const porMes = p.total / p.meses
+            const cheio = MENSAL * p.meses
+            const economia = cheio - p.total
+            const desconto = Math.round((1 - porMes / MENSAL) * 100)
+            return (
+              <article key={p.id} className={'vp-plano' + (p.destaque ? ' vp-plano--destaque' : '')}>
+                {p.destaque && <span className="vp-plano__fita">Melhor custo-benefício</span>}
+                <header className="vp-plano__topo">
+                  <h3>{p.nome}</h3>
+                  {desconto > 0 && <span className="vp-plano__desconto">{desconto}% OFF</span>}
+                </header>
+                <p className="vp-plano__chamada">{p.chamada}</p>
+                <div className="vp-plano__preco">
+                  {p.meses > 1 && <span className="vp-plano__cheio">de {real(cheio)}</span>}
+                  <span className="vp-plano__mes"><small>R$</small><strong>{real(porMes).replace('R$', '').trim()}</strong><small>/mês</small></span>
+                  <span className="vp-plano__total">{p.meses === 1 ? 'cobrado todo mês' : <>{real(p.total)} {p.meses === 6 ? 'a cada 6 meses' : 'por ano'}</>}</span>
+                </div>
+                {economia > 0
+                  ? <p className="vp-plano__economia"><Icone nome="certo" tamanho={14} /> Você economiza {real(economia)}{p.meses === 12 ? ` · ${real(p.total / 365)} por dia` : ''}</p>
+                  : <p className="vp-plano__economia vp-plano__economia--neutra">Sem fidelidade, cancele quando quiser</p>}
+                <p className="vp-plano__pix"><IconePix /> Pix ou cartão</p>
+                {!sessao
+                  ? <a className={'botao botao--largo vp-plano__cta' + (p.destaque ? ' botao--principal' : '')} href={href('/conta?modo=criar')}>Criar conta para assinar</a>
+                  : <button className={'botao botao--largo vp-plano__cta' + (p.destaque ? ' botao--principal' : '')} type="button" disabled={!pagamentosHabilitados || ativa} onClick={() => escolher(p)}>{ativa ? 'Plano ativo' : pagamentosHabilitados ? `Assinar ${p.nome.toLowerCase()}` : 'Em breve'}</button>}
+                <details className="vp-plano__detalhes">
+                  <summary><span>Ver o que inclui</span><Icone nome="baixo" tamanho={16} /></summary>
+                  <ul className="vp-plano__itens">
+                    {INCLUI.map((item, i) => <li key={item} className={i === 0 ? 'vp-plano__item--destaque' : ''}><Icone nome={i === 0 ? 'rota' : 'certo'} tamanho={16} /> {item}</li>)}
+                  </ul>
+                </details>
+              </article>
+            )
+          })}
+        </div>
+        {!pagamentosHabilitados && <p className="vp-aviso"><Icone nome="calendario" tamanho={16} /> As assinaturas abrem em breve. Até lá, o acervo, os comentários e a revisão continuam disponíveis no gratuito.</p>}
+        {mensagem && !planoEscolhido && <p role="status" className="vp-aviso">{mensagem}</p>}
+        <div className="vp-pagamento-seguro" role="note">
+          <Icone nome="cadeado" tamanho={20} />
+          <p><strong>Pagamento protegido pelo Mercado Pago.</strong> No cartão, a renovação é automática na periodicidade escolhida; no Pix, é um pagamento único pelo período completo, sem renovação. Os dados do cartão ficam no Mercado Pago, nunca no OrtoQuestões. <a href={href('/condicoes-assinatura')}>Condições da assinatura</a></p>
+        </div>
+      </section>
+
       <section className="vp-secao">
         <header className="vp-secao__cabeca">
           <p className="vp-sobre">Gratuito ou assinante</p>
@@ -251,65 +300,6 @@ export function Assinatura() {
         </div>
       </section>
 
-      <section className="vp-secao" id="planos">
-        <header className="vp-secao__cabeca">
-          <p className="vp-sobre">Planos</p>
-          <h2>Escolha a periodicidade da assinatura</h2>
-          <p>Os três planos dão acesso a tudo: questões sem limite e todos os recursos do assinante. Muda só a periodicidade e o valor total.</p>
-        </header>
-
-        <div className="vp-economia" aria-label="Custo por mês em cada plano">
-          {PLANOS.map((p) => {
-            const porMes = p.total / p.meses
-            const desconto = Math.round((1 - porMes / MENSAL) * 100)
-            return (
-              <div key={p.id} className={'vp-economia__linha' + (p.destaque ? ' vp-economia__linha--destaque' : '')}>
-                <span className="vp-economia__nome">{p.nome}</span>
-                <span className="vp-economia__trilho"><span style={{ width: `${(porMes / MENSAL) * 100}%` }}><b>{real(porMes)}/mês</b></span></span>
-                <span className="vp-economia__desconto">{desconto > 0 ? `−${desconto}%` : 'base'}</span>
-              </div>
-            )
-          })}
-        </div>
-
-        <div className="vp-planos">
-          {PLANOS.map((p) => {
-            const porMes = p.total / p.meses
-            const cheio = MENSAL * p.meses
-            const economia = cheio - p.total
-            return (
-              <article key={p.id} className={'vp-plano' + (p.destaque ? ' vp-plano--destaque' : '')}>
-                {p.destaque && <span className="vp-plano__fita">Melhor custo · metade do preço</span>}
-                <h3>{p.nome}</h3>
-                <p className="vp-plano__chamada">{p.chamada}</p>
-                <p className="vp-plano__preco">
-                  {p.meses > 1 && <span className="vp-plano__cheio">{real(cheio)}</span>}
-                  <strong>{real(p.total)}</strong>
-                  <small>{p.meses === 1 ? 'por mês' : p.meses === 6 ? 'a cada 6 meses' : 'por ano'}</small>
-                </p>
-                <p className="vp-plano__mensal">{p.meses === 1 ? 'Cancele quando quiser' : <>equivale a <b>{real(porMes)}</b> por mês</>}</p>
-                {economia > 0 && <p className="vp-plano__economia">Você economiza {real(economia)}{p.meses === 12 ? `, menos de ${real(p.total / 365)} por dia` : ''}</p>}
-                {!p.destaque && <p className="vp-plano__resumo"><Icone nome="certo" tamanho={16} /> Tudo o que o anual tem, do cronograma pelo que mais cai ao Simulado Nacional</p>}
-                <p className="vp-plano__inclui">Inclui</p>
-                <ul className="vp-plano__itens">
-                  {INCLUI.map((item, i) => <li key={item} className={i === 0 ? 'vp-plano__item--destaque' : ''}><Icone nome={i === 0 ? 'rota' : 'certo'} tamanho={16} /> {item}</li>)}
-                </ul>
-                {!sessao
-                  ? <a className="botao botao--principal botao--largo" href={href('/conta?modo=criar')}>Criar conta para assinar</a>
-                  : <button className={'botao botao--largo' + (p.destaque ? ' botao--principal' : '')} type="button" disabled={!pagamentosHabilitados || ativa} onClick={() => escolher(p)}>{ativa ? 'Plano ativo' : pagamentosHabilitados ? `Assinar ${p.nome.toLowerCase()}` : 'Em breve'}</button>}
-              </article>
-            )
-          })}
-        </div>
-        {!pagamentosHabilitados && <p className="vp-aviso"><Icone nome="calendario" tamanho={16} /> As assinaturas abrem em breve. Até lá, o acervo, os comentários e a revisão continuam disponíveis no gratuito.</p>}
-        {mensagem && <p role="status" className="vp-aviso">{mensagem}</p>}
-        <p className="vp-letras">No cartão, renovação automática na periodicidade escolhida. No Pix, pagamento único pelo período completo, sem renovação automática. O acesso começa após a confirmação do pagamento.</p>
-        <div className="vp-pagamento-seguro" role="note">
-          <Icone nome="certo" tamanho={22} />
-          <p><strong>Pagamento protegido pelo Mercado Pago.</strong> Você conclui a compra no checkout externo do Mercado Pago: os dados do cartão são informados e processados lá, não no OrtoQuestões. No Pix, você recebe o QR Code e o código Copia e Cola no ambiente do Mercado Pago. Nós recebemos apenas o status e os identificadores necessários para acompanhar sua assinatura; não recebemos nem guardamos o número completo ou o código de segurança do cartão. <a href={href('/condicoes-assinatura')}>Leia as condições da assinatura.</a></p>
-        </div>
-      </section>
-
       <section className="vp-garantia">
         <div className="vp-garantia__selo" aria-hidden="true"><strong>7</strong><span>dias</span></div>
         <div>
@@ -334,7 +324,7 @@ export function Assinatura() {
       <section className="vp-secao faq vp-faq">
         <header className="vp-secao__cabeca"><p className="vp-sobre">Dúvidas</p><h2>Perguntas frequentes</h2></header>
         <details><summary>Como funciona o limite do plano gratuito?</summary><p>{limitesHabilitados ? `O gratuito tem um número limitado de respostas novas por dia (hoje, ${LIMITE_GRATIS_ATUAL}), que se renova todos os dias à meia-noite, no horário de Brasília. O número pode mudar; a mudança é avisada no site.` : `O limite diário está desligado nesta fase, portanto o acesso gratuito também está sem limite de respostas. Se o limite for ativado futuramente, o patamar gratuito previsto é de ${LIMITE_GRATIS_ATUAL} respostas novas por dia.`} Comentários, revisões e desempenho continuam abertos.</p></details>
-        <details><summary>Posso pagar com Pix?</summary><p>Sim, quando a opção estiver disponível no checkout. Você paga o valor integral do período escolhido em um único Pix. Não há renovação automática; ao terminar o período, faça uma nova compra se quiser continuar. A garantia de sete dias também vale para Pix.</p></details>
+        <details><summary>Posso pagar com Pix?</summary><p>Sim, em todos os planos: mensal, semestral e anual. Você paga o valor integral do período escolhido em um único Pix. Não há renovação automática; ao terminar o período, faça uma nova compra se quiser continuar. A garantia de sete dias também vale para Pix.</p></details>
         <details><summary>Como funciona o cancelamento?</summary><p>Em Minha conta, você escolhe entre impedir a próxima renovação ou, dentro de sete dias da última cobrança, pedir reembolso integral. Impedir a renovação não reembolsa a cobrança atual: o acesso pago continua até o fim do período. Se o Mercado Pago confirmar o reembolso, o acesso pago termina e sua conta volta ao gratuito.</p></details>
         <details><summary>Se eu cancelar o semestral após três meses, recebo os três restantes?</summary><p>Após os sete dias para reembolso integral, não há devolução proporcional automática. Você mantém o acesso até completar os seis meses pagos, e a assinatura não renova. A mesma regra vale para o plano anual. Seus direitos previstos em lei permanecem preservados. Consulte as <a href={href('/condicoes-assinatura')}>condições da assinatura</a> antes de comprar.</p></details>
         <details><summary>Como funciona a garantia?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pode pedir reembolso integral em Minha conta. Se a solicitação automática não for confirmada pelo Mercado Pago, use o canal de contato para atendimento manual. O acesso pago só é encerrado após confirmação do reembolso. Depois desse prazo não há reembolso proporcional por esta garantia.</p></details>
@@ -346,26 +336,54 @@ export function Assinatura() {
         <details><summary>Qual plano vale mais a pena?</summary><p>Se você está a mais de seis meses da prova, o anual sai pela metade do preço do mensal. Para uma reta final curta, o mensal ou o semestral resolvem sem compromisso longo.</p></details>
       </section>
 
-      <Painel titulo={planoEscolhido ? `Revisar assinatura ${planoEscolhido.nome.toLowerCase()}` : 'Revisar assinatura'} aberto={planoEscolhido !== null} aoFechar={() => { if (!abrindoCheckout) definirPlanoEscolhido(null) }}>
-        {planoEscolhido && <div className="empilha">
-          {pixHabilitado && <fieldset className="empilha" disabled={abrindoCheckout || Boolean(pix)}>
-            <legend>Como você prefere pagar?</legend>
-            <label className="campo campo--checkbox"><input type="radio" name="meio-pagamento" checked={meioPagamento === 'cartao'} onChange={() => { definirMeioPagamento('cartao'); definirAceitouCondicoes(false) }} /> <span>Cartão — renovação automática</span></label>
-            <label className="campo campo--checkbox"><input type="radio" name="meio-pagamento" checked={meioPagamento === 'pix'} onChange={() => { definirMeioPagamento('pix'); definirAceitouCondicoes(false) }} /> <span>Pix — pagamento único, sem renovação automática</span></label>
-          </fieldset>}
-          <p><strong>{planoEscolhido.nome}: {real(planoEscolhido.total)}</strong> {meioPagamento === 'pix' ? `em um único Pix por ${planoEscolhido.meses} mês(es) de acesso, sem renovação automática.` : `cobrados integralmente a cada ${planoEscolhido.meses} mês(es), com renovação automática até o cancelamento.`}</p>
-          {meioPagamento === 'pix' && !pix && <label className="campo"><span>CPF do pagador</span><input inputMode="numeric" autoComplete="off" maxLength={14} value={cpf} onChange={evento => definirCpf(evento.target.value)} /><small>Enviado ao Mercado Pago para gerar a cobrança; não é salvo no seu perfil.</small></label>}
-          {pix && <div className="empilha"><a className="botao botao--principal" href={pix.url} target="_blank" rel="noopener noreferrer">Abrir QR Code e Pix Copia e Cola</a><p>Validade: {new Date(pix.expira_em).toLocaleString('pt-BR')}. Aguarde aqui a confirmação do pagamento.</p></div>}
-          <p>Nos primeiros sete dias após cada cobrança aprovada, você pode solicitar reembolso integral. Depois disso, cancelar interrompe as renovações e mantém o acesso até o fim do período pago, sem reembolso proporcional automático.</p>
-          <p>O próximo passo abre o checkout hospedado pelo Mercado Pago. Você só paga se confirmar a compra lá; o OrtoQuestões não recebe dados completos do cartão.</p>
-          <label className="campo campo--checkbox"><input type="checkbox" checked={aceitouCondicoes} onChange={evento => definirAceitouCondicoes(evento.target.checked)} /> <span>Li e aceito as <a href={href('/condicoes-assinatura')} target="_blank" rel="noopener noreferrer">Condições da Assinatura</a> (versão {VERSAO_CONDICOES_ASSINATURA}) e os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso</a> para este plano e este valor.</span></label>
-          {mensagem && <p role="status" className="vp-aviso">{mensagem}</p>}
-          <div className="linha linha--empilha-celular">
-            <button className="botao botao--principal" type="button" disabled={!aceitouCondicoes || abrindoCheckout || Boolean(pix) || (meioPagamento === 'pix' && cpf.replace(/\D/g, '').length !== 11)} onClick={() => void confirmarCompra()}>{abrindoCheckout ? 'Preparando pagamento…' : meioPagamento === 'pix' ? 'Gerar Pix' : 'Continuar para Mercado Pago'}</button>
-            <button className="botao" type="button" disabled={abrindoCheckout} onClick={() => definirPlanoEscolhido(null)}>Voltar aos planos</button>
-          </div>
+      <JanelaCentral aberta={planoEscolhido !== null} aoFechar={() => { if (!abrindoCheckout) definirPlanoEscolhido(null) }} rotulo="Finalizar assinatura" className="ck">
+        {planoEscolhido && <div className="ck__corpo">
+          <header className="ck__resumo">
+            <span className="ck__selo"><Simbolo tamanho={18} variante="traco" /> Plano {planoEscolhido.nome.toLowerCase()}</span>
+            <p className="ck__preco"><strong>{real(planoEscolhido.total / planoEscolhido.meses)}</strong><small>/mês</small></p>
+            <p className="ck__total">{planoEscolhido.meses === 1 ? `${real(planoEscolhido.total)} por mês` : `${real(planoEscolhido.total)} ${planoEscolhido.meses === 6 ? 'a cada 6 meses' : 'por ano'}`}{planoEscolhido.meses > 1 && <> · economia de {real(MENSAL * planoEscolhido.meses - planoEscolhido.total)}</>}</p>
+            <ul className="ck__beneficios">
+              <li><Icone nome="certo" tamanho={14} /> Cronograma, Simulado Nacional e todos os recursos</li>
+              <li><Icone nome="certo" tamanho={14} /> Garantia de 7 dias: reembolso integral pelo botão</li>
+            </ul>
+          </header>
+
+          {pix ? (
+            <div className="ck__pix-pronto">
+              <span className="ck__pix-icone"><IconePix tamanho={34} /></span>
+              <h3>Seu Pix está pronto</h3>
+              <p>Abra o QR Code ou copie o código no Mercado Pago. Assim que o pagamento cair, o acesso é liberado aqui automaticamente.</p>
+              <a className="botao botao--principal botao--largo ck__cta" href={pix.url} target="_blank" rel="noopener noreferrer">Abrir QR Code e Pix Copia e Cola</a>
+              <p className="ck__aguardando"><span className="ck__girando" aria-hidden="true" /> Aguardando a confirmação · válido até {new Date(pix.expira_em).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })}</p>
+            </div>
+          ) : (
+            <>
+              <fieldset className="ck__meios" disabled={abrindoCheckout}>
+                <legend>Como você prefere pagar?</legend>
+                {pixHabilitado && <label className={'ck__meio' + (meioPagamento === 'pix' ? ' ck__meio--ativo' : '')}>
+                  <input type="radio" name="meio-pagamento" checked={meioPagamento === 'pix'} onChange={() => { definirMeioPagamento('pix'); definirAceitouCondicoes(false) }} />
+                  <span className="ck__meio-icone ck__meio-icone--pix"><IconePix tamanho={24} /></span>
+                  <span className="ck__meio-texto"><strong>Pix</strong><small>Pagamento único, liberado na hora em que cai. Sem renovação automática.</small></span>
+                  <span className="ck__meio-marca" aria-hidden="true"><Icone nome="certo" tamanho={14} /></span>
+                </label>}
+                <label className={'ck__meio' + (meioPagamento === 'cartao' ? ' ck__meio--ativo' : '')}>
+                  <input type="radio" name="meio-pagamento" checked={meioPagamento === 'cartao'} onChange={() => { definirMeioPagamento('cartao'); definirAceitouCondicoes(false) }} />
+                  <span className="ck__meio-icone"><IconeCartao tamanho={24} /></span>
+                  <span className="ck__meio-texto"><strong>Cartão de crédito</strong><small>Renovação automática a cada {planoEscolhido.meses === 1 ? 'mês' : `${planoEscolhido.meses} meses`}. Cancele quando quiser.</small></span>
+                  <span className="ck__meio-marca" aria-hidden="true"><Icone nome="certo" tamanho={14} /></span>
+                </label>
+              </fieldset>
+              {meioPagamento === 'pix' && <label className="campo ck__cpf"><span>CPF de quem vai pagar</span><input inputMode="numeric" autoComplete="off" maxLength={14} placeholder="000.000.000-00" value={cpf} onChange={evento => definirCpf(evento.target.value)} /><small>Só para o Mercado Pago gerar o Pix. Não fica salvo no seu perfil.</small></label>}
+              <label className="ck__aceite"><input type="checkbox" checked={aceitouCondicoes} onChange={evento => definirAceitouCondicoes(evento.target.checked)} /> <span>Li e aceito as <a href={href('/condicoes-assinatura')} target="_blank" rel="noopener noreferrer">Condições da Assinatura</a> (versão {VERSAO_CONDICOES_ASSINATURA}) e os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso</a> para este plano e este valor.</span></label>
+              <button className="botao botao--principal botao--largo ck__cta" type="button" disabled={!aceitouCondicoes || abrindoCheckout || (meioPagamento === 'pix' && cpf.replace(/\D/g, '').length !== 11)} onClick={() => void confirmarCompra()}>
+                {abrindoCheckout ? 'Preparando pagamento…' : meioPagamento === 'pix' ? <><IconePix tamanho={18} /> Gerar Pix de {real(planoEscolhido.total)}</> : <><Icone nome="cadeado" tamanho={16} /> Continuar para Mercado Pago</>}
+              </button>
+            </>
+          )}
+          {mensagem && <p role="status" className="ck__mensagem">{mensagem}</p>}
+          <p className="ck__seguro"><Icone nome="cadeado" tamanho={14} /> Checkout seguro do Mercado Pago. Você só paga se confirmar lá; o OrtoQuestões não recebe os dados do cartão. Após os 7 dias da garantia, cancelar interrompe as renovações e mantém o acesso até o fim do período pago.</p>
         </div>}
-      </Painel>
+      </JanelaCentral>
 
       <section className="vp-final">
         <div>
@@ -405,4 +423,13 @@ function RankingIlustrado() {
       <span className="vp-ranking__rodape"><Icone nome="cadeado" tamanho={12} /> As outras nove áreas e todos os assuntos, no plano</span>
     </div>
   )
+}
+
+/** Losango do Pix, desenhado em traço como os outros ícones. */
+function IconePix({ tamanho = 16 }: { tamanho?: number }) {
+  return <svg width={tamanho} height={tamanho} viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"><path d="M12 2.8 21.2 12 12 21.2 2.8 12z" /><path d="M7.6 9.2 10.4 12l-2.8 2.8M16.4 9.2 13.6 12l2.8 2.8" /></svg>
+}
+
+function IconeCartao({ tamanho = 16 }: { tamanho?: number }) {
+  return <svg width={tamanho} height={tamanho} viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5" /><path d="M2.5 9.5h19M6 15h4" /></svg>
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { SITE } from '../config'
-import { IconeWhatsapp, MENSAGEM } from './ConviteCompartilhar'
+import { SITE, recurso } from '../config'
+import { IconeWhatsapp } from './ConviteCompartilhar'
+import { TEXTO_CONVITE } from './ConviteDiario'
 import { Icone } from './Icone'
 
 /** Convite fixo na página inicial: sem pop-up, a pessoa usa quando quiser. */
@@ -13,12 +14,14 @@ export function CartaoCompartilhar() {
   }
   return (
     <section className="inicio-compartilhar" aria-labelledby="inicio-compartilhar-titulo">
+      <img className="inicio-compartilhar__mensageiro" src={recurso('ranking/mensageiro.png')} width={64} height={80} alt="" draggable={false} />
       <div className="inicio-compartilhar__texto">
+        <p className="inicio-compartilhar__selo">Missão: recrute seus amigos</p>
         <h2 id="inicio-compartilhar-titulo">Está gostando do OrtoQuestões?</h2>
-        <p>Manda para quem está estudando com você. Eles podem usar de graça, com um número limitado de questões por dia, e cada colega que chega ajuda o projeto a crescer e a ganhar provas novas.</p>
+        <p>O site cresce no boca a boca. Manda para quem está estudando com você: tem questões gratuitas todo dia, e cada colega que chega ajuda o projeto a crescer e a ganhar provas novas.</p>
       </div>
       <div className="inicio-compartilhar__acoes">
-        <a className="inicio-compartilhar__whatsapp" href={`https://wa.me/?text=${encodeURIComponent(MENSAGEM)}`} target="_blank" rel="noopener noreferrer">
+        <a className="inicio-compartilhar__whatsapp" href={`https://wa.me/?text=${encodeURIComponent(TEXTO_CONVITE)}`} target="_blank" rel="noopener noreferrer">
           <IconeWhatsapp tamanho={18} /> Enviar no WhatsApp
         </a>
         <button type="button" className="inicio-compartilhar__copiar" onClick={copiar}>
