@@ -1859,3 +1859,12 @@ kbd {
 .aviso-bloqueio-topo .aviso-bloqueio-topo__cta { flex: none; padding: .3rem .8rem; min-height: 0; font-size: var(--meta); border-radius: 999px; box-shadow: none; }
 .aviso-bloqueio-topo .aviso-bloqueio-topo__fechar { position: static; width: 1.8rem; height: 1.8rem; }
 @media (max-width: 40rem) { .aviso-bloqueio-topo .aviso-bloqueio-topo__cta { display: none; } }
+
+/*
+ * iPhone (Safari) dá zoom sozinho ao tocar num campo com letra menor que 16px
+ * e a página fica ampliada, com botões e barra cortados. Em telas de toque,
+ * todo campo de texto tem pelo menos 16px.
+ */
+@media (hover: none) and (pointer: coarse) {
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]), select, select.entrada, .campo select, textarea { font-size: 16px !important; }
+}
