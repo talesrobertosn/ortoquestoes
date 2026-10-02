@@ -392,3 +392,8 @@
 .ck__cpf input { width: 100%; min-height: 48px; padding: 0 0.9rem; border-radius: 12px; border: 2px solid var(--traco); background: var(--superficie); font: inherit; font-size: 1.05rem; letter-spacing: 0.03em; }
 .ck__cpf input:focus { border-color: var(--verdete); outline: none; }
 .ck__cpf small { color: var(--texto-2); font-size: var(--meta); }
+@media (max-width: 22rem) {
+  .vp-plano, .vp-plano--destaque { padding-inline: 1rem; min-width: 0; }
+  .vp-plano--destaque .vp-plano__mes strong { font-size: 2.6rem; }
+  .vp-meios li { white-space: normal; }
+}
