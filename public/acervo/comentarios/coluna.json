@@ -2523,69 +2523,87 @@
   "conferido": false
  },
  "coluna-0224": {
-  "conceito": "### Hemivértebras e progressão (McMaster)\n| Tipo | Discos / placas | Risco de progressão |\n|---|---|---|\n| ==Totalmente segmentada== | disco e placa de crescimento **acima e abaixo**, livres | ==o maior== entre as hemivértebras isoladas (~1° a 2° por ano, mais na junção toracolombar) |\n| Semissegmentada (parcial) | fundida de um lado | moderado |\n| Não segmentada | fundida às duas vizinhas | baixo |\n| Encarcerada | encaixada entre as vizinhas (que compensam) | **baixo** |\n\n**Duas hemivértebras totalmente segmentadas do mesmo lado:** risco ainda maior.\n\n**Barra unilateral com hemivértebra contralateral:** o **pior** de todos (combinação de falha de formação e de segmentação).\n\n### Tratamento\n- **Ressecção da hemivértebra** com fusão curta, idealmente **precoce** (antes da deformidade estruturar as curvas compensatórias). Na lombar e toracolombar, por via posterior isolada, com parafusos.\n- **Alternativas:** artrodese in situ, hemiepifisiodese convexa, hastes de crescimento.\n\n> **Na prova:** hemivértebra que mais progride = ==totalmente segmentada==.",
-  "correta": "**Totalmente segmentada.**",
   "incorretas": {
-   "A": "**Encarcerada.**\n- A de melhor prognóstico: as vizinhas compensam.",
-   "B": "**Não segmentada.**\n- Fundida às vizinhas, sem placa livre.",
-   "D": "**Parcialmente segmentada.**\n- Progride, mas menos que a totalmente segmentada."
+   "A": "A encarcerada tem o melhor prognóstico, porque as vértebras vizinhas se adaptam à sua forma e compensam a cunha.",
+   "B": "A não segmentada está fundida às vizinhas e não tem placas de crescimento livres, então quase não gera progressão.",
+   "D": "A parcialmente segmentada progride, mas menos, porque tem uma placa de crescimento a menos que a totalmente segmentada."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A hemivértebra é meia vértebra: só um lado do corpo vertebral se formou. Ela funciona como uma cunha enfiada na coluna, e o lado em que ela está cresce mais do que o outro. O que decide se essa cunha vai entortar muito a coluna é uma pergunta simples: **quanto ela cresce?**\n\nE o crescimento de uma vértebra depende das suas placas de crescimento, as cartilagens que ficam em cima e embaixo do corpo vertebral, separando-a das vizinhas por um disco. Daí a classificação pela segmentação, que é o grau de separação entre a hemivértebra e as vértebras ao lado.\n\nA hemivértebra **totalmente segmentada** tem disco e placa de crescimento normais em cima e embaixo. Ela cresce com toda a força, e do lado dela a coluna ganha altura ano após ano. É a que mais progride. Quando há duas delas do mesmo lado, o risco é ainda maior.\n\nA **parcialmente segmentada** está fundida à vizinha de um dos lados e tem uma placa a menos; cresce menos e progride menos. A **não segmentada** está fundida às duas vizinhas, sem placa livre, e quase não acrescenta deformidade. A **encarcerada** fica alojada entre vértebras vizinhas que se moldam em volta dela e compensam o seu formato, e costuma ter o melhor prognóstico.\n\nPara completar o quadro de McMaster: a pior combinação de todas não é uma hemivértebra isolada, e sim uma barra unilateral (um lado que não se separou e não cresce) com uma hemivértebra do lado oposto (um lado que cresce demais). A coluna fica presa de um lado e empurrada do outro.\n\nComo a progressão é previsível, o tratamento muitas vezes é precoce: ressecar a hemivértebra e fazer uma fusão curta antes que as curvas de compensação fiquem rígidas.",
+  "correta": "Totalmente segmentada. Com discos e placas de crescimento normais dos dois lados, ela cresce plenamente e empurra a coluna para o lado oposto a cada ano.",
+  "referencias": [
+   "McMaster MJ, Ohtsuka K. The natural history of congenital scoliosis: a study of two hundred and fifty-one patients. J Bone Joint Surg Am. 1982;64(8):1128-1147."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0225": {
-  "conceito": "### Reflexo cutâneo abdominal\n- **Técnica:** riscar a pele dos quatro quadrantes do abdome, de lateral para medial. A **cicatriz umbilical** desvia para o lado estimulado.\n- **Segmentos:** **T7 a T12**.\n- **Via:** reflexo superficial, que depende da via corticoespinhal. **Desaparece** nas lesões de **neurônio motor superior**.\n\n### Por que interessa ao ortopedista\nNa **escoliose** do adolescente, a ==assimetria ou ausência do reflexo abdominal== é sinal de alarme para **siringomielia** (frequentemente com **Chiari I**).\n\n**Outros alarmes que pedem RM do neuroeixo:**\n- curva torácica à **esquerda**;\n- **dor** importante;\n- **pé cavo** unilateral, assimetria de membros;\n- **déficit neurológico**, clônus;\n- progressão rápida, **cifose** associada;\n- início **juvenil** (antes dos 10 anos) com curva acima de 20°.\n\n**Tratamento:** o **tratamento da siringe** (descompressão de Chiari) pode **estabilizar ou melhorar** a curva em crianças pequenas.\n\n> **Na prova:** reflexo abdominal anormal na escoliose = ==siringomielia==.",
-  "correta": "**Siringomielia.**",
   "incorretas": {
-   "B": "**Pectus excavatum.**\n- Deformidade da parede anterior, sem efeito sobre reflexos.",
-   "C": "**Fêmur curto congênito.**\n- Dismetria, com escoliose postural sem alteração neurológica.",
-   "D": "**Paralisia braquial.**\n- Membro superior; não altera o reflexo abdominal."
+   "B": "O pectus excavatum é uma deformidade da parede anterior do tórax. Não lesa a medula nem altera o reflexo abdominal.",
+   "C": "O fêmur curto congênito causa diferença de comprimento entre as pernas e, no máximo, uma escoliose postural, sem alteração neurológica.",
+   "D": "A paralisia do plexo braquial afeta o membro superior. Os segmentos e a via do reflexo abdominal não são atingidos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "É um reflexo que muita gente esquece de pesquisar e que pode mudar o diagnóstico de uma escoliose. Com o paciente deitado, risca-se de leve a pele de cada quadrante do abdome, de fora para dentro. A resposta normal é o umbigo desviar para o lado estimulado, porque a musculatura daquele quadrante se contrai. Esse é o **reflexo cutâneo abdominal**, que depende dos segmentos de T7 a T12 e de uma via que passa pela medula e pelo cérebro.\n\nQuando a medula está doente acima desses segmentos, o reflexo pode diminuir ou desaparecer, de um lado ou dos dois. E é aqui que entra o ortopedista. Uma das causas mais importantes de escoliose que parece idiopática mas não é, é a **siringomielia**: uma cavidade cheia de líquido dentro da medula, muitas vezes associada à malformação de Chiari (parte do cerebelo descendo pelo forame da base do crânio). A siringe distorce a medula e pode tanto causar a curva quanto apagar o reflexo abdominal. Assimetria desse reflexo numa criança com escoliose é sinal para pedir ressonância.\n\nEla faz parte de uma lista de sinais que tiram a escoliose da categoria idiopática: curva torácica com convexidade à esquerda, dor importante, pé cavo de um lado só, alteração no exame neurológico, progressão rápida, cifose associada e escoliose juvenil acima de 20 graus. Vale a pena porque, em crianças pequenas, tratar a siringe pode estabilizar ou até melhorar a curva.",
+  "correta": "Siringomielia. A cavidade dentro da medula pode abolir ou tornar assimétrico o reflexo abdominal, e esse achado numa escoliose aponta para a necessidade de ressonância.",
+  "referencias": [
+   "Zadeh HG, Sakka SA, Powell MP, Mehta MH. Absent superficial abdominal reflexes in children with scoliosis: an early indicator of syringomyelia. J Bone Joint Surg Br. 1995;77(5):762-767."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0226": {
-  "conceito": "### Espondilólise e espondilolistese: condutas\n**Conservador (a maioria):**\n- afastamento do **gesto lesivo** (esporte de hiperextensão);\n- **fisioterapia:** estabilização do tronco, alongamento dos isquiotibiais;\n- **órtese** em casos selecionados (lise aguda, dor importante);\n- retorno gradual em semanas a meses.\n\n**Cirurgia:**\n- ==dor persistente== apesar de tratamento conservador adequado (~6 meses ou mais);\n- ==escorregamento acima de 50%== (alto grau) ou **progressão** documentada. Na criança em crescimento, pode ser indicação **mesmo sem dor**;\n- **déficit neurológico**.\n\n**Técnicas:**\n- **reparo direto da pars** (baixo grau, disco saudável);\n- **artrodese** L5-S1 (ou L4-S1 no alto grau), com ou sem redução.\n\n### Por que as outras estão erradas\n- **Achado incidental** em assintomático: geralmente estável; seguimento.\n- **Dor na criança:** **axial**, lombar, piora em extensão. A radicular é rara e tardia.\n- **Gesso toracolombar com repouso no leito:** não é o tratamento inicial.\n\n> **Na prova:** cirurgia = ==escorregamento acima de 50%== ou ==dor persistente==.",
-  "correta": "**Escorregamento acima de 50% ou dor persistente.**",
   "incorretas": {
-   "A": "**Incidental, instável e crônica.**\n- Costuma ser **estável**.",
-   "B": "**Radicular típica na criança.**\n- A dor típica é **axial**.",
-   "D": "**Gesso e repouso no leito.**\n- O tratamento inicial é **ativo**."
+   "A": "A lesão encontrada por acaso, sem sintomas, é geralmente estável. Não há motivo para chamá-la de instável nem para tratá-la como problema ativo.",
+   "B": "Na criança, o sintoma típico é a dor lombar axial que piora com a extensão. A dor radicular é incomum e aparece mais tarde, em escorregamentos maiores.",
+   "D": "Gesso e repouso no leito não são o tratamento inicial. A base é afastar o gesto lesivo e fazer reabilitação ativa; órtese só em casos selecionados."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Esta questão é um teste de bom senso sobre espondilólise (a fratura por estresse da pars interarticularis, a ponte de osso atrás da vértebra) e espondilolistese (o escorregamento que pode vir depois). Vale ler cada afirmação com calma.\n\nQuase todos esses pacientes são tratados sem cirurgia. O adolescente para o esporte que provoca a dor (ginástica, balé, lutas, qualquer gesto de hiperextensão repetida), faz fisioterapia para estabilizar o tronco e alongar os músculos de trás da coxa e, em casos selecionados, como uma lise aguda muito dolorosa, usa colete por um tempo. Depois volta aos poucos.\n\nA cirurgia fica para três situações. Dor que persiste apesar de um tratamento conservador bem feito, geralmente depois de alguns meses. Escorregamento **acima de 50%**, o alto grau, ou progressão documentada, que numa criança em crescimento pode indicar cirurgia mesmo sem dor, porque a tendência é piorar. E déficit neurológico. As técnicas vão do reparo direto da pars, quando o escorregamento é pequeno e o disco está saudável, à artrodese de L5 com o sacro.\n\nAs outras afirmações têm erros clássicos. A lise encontrada por acaso, num paciente sem sintoma, costuma ser estável e só precisa de acompanhamento. Na criança, a dor típica é lombar, axial, que piora com a extensão; dor que desce pela perna é rara e tardia. E ninguém começa o tratamento com gesso toracolombar e repouso no leito: o tratamento moderno é ativo.",
+  "correta": "Progressão do escorregamento acima de 50% ou dor persistente são indicações de tratamento cirúrgico. São os critérios clássicos, ao lado do déficit neurológico.",
+  "referencias": [
+   "Hu SS, Tribus CB, Diab M, Ghanayem AJ. Spondylolisthesis and spondylolysis. J Bone Joint Surg Am. 2008;90(3):656-671."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0227": {
-  "conceito": "### SCIWORA: onde e em quem\n**Idade:** ==abaixo de 8 anos==.\n- **Cabeça grande** em relação ao corpo, o que desloca o **fulcro** do movimento para a **cervical alta** (C1 a C3).\n- **Facetas horizontais**, **ligamentos frouxos**, musculatura fraca.\n- **Cartilagem** abundante.\n- A coluna **alonga** sem fraturar, mas a **medula não acompanha**.\n\n**Local:** ==coluna cervical==, sobretudo a alta. Na torácica é menos comum (por exemplo, trauma de cinto de segurança). A lombar raramente apresenta esse padrão.\n\n**Acima de 8 anos:** a anatomia se aproxima da do adulto, o fulcro desce para **C5-C6**, e as lesões passam a ter **fratura ou luxação visível**.\n\n**Na era da RM:** muitas lesões antes chamadas de SCIWORA mostram alterações na **RM** (edema, lesão ligamentar). Alguns autores falam em SCIWONA (sem anormalidade neuroimagem) quando até a RM é normal.\n\n> **Na prova:** SCIWORA = ==cervical, abaixo de 8 anos==.",
-  "correta": "**Cervical, abaixo de 8 anos.**",
   "incorretas": {
-   "A": "**Lombar, acima de 8.**\n- Sítio e idade errados.",
-   "C": "**Lombar, abaixo de 8.**\n- A idade está certa, mas o sítio é **cervical**.",
-   "D": "**Cervical, acima de 8.**\n- Acima de 8 anos, predominam lesões com fratura visível."
+   "A": "Erra o local e a idade. Na lombar o padrão é raro, e depois dos 8 anos as lesões costumam deixar fratura visível.",
+   "C": "A idade está certa, mas o local típico é a coluna cervical, onde se concentra o movimento da criança pequena.",
+   "D": "O local está certo, mas acima dos 8 anos a coluna já se comporta como a do adulto e as lesões passam a aparecer na imagem."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A criança pequena não é um adulto em miniatura, e a coluna cervical é o melhor exemplo disso. Até por volta dos 8 anos, a cabeça é enorme em proporção ao corpo, os músculos do pescoço são fracos, os ligamentos são frouxos, as facetas são quase horizontais e grande parte das vértebras ainda é cartilagem. O pescoço funciona como uma haste flexível com um peso grande na ponta.\n\nNesse sistema, o ponto onde o movimento se concentra (o fulcro) fica alto, entre C1 e C3. Num trauma, essa coluna elástica se dobra, estica e volta ao lugar sem quebrar. A medula, que não estica junto, sofre. Resultado: lesão medular com radiografia e tomografia normais, a SCIWORA. Por isso ela é típica da **coluna cervical** em **crianças abaixo de 8 anos**.\n\nDepois dessa idade a anatomia vai ficando parecida com a do adulto. O fulcro desce para C5-C6, os ligamentos ficam firmes, e o trauma passa a produzir o que se vê no adulto: fraturas e luxações visíveis. A SCIWORA torácica existe, por exemplo na criança presa pelo cinto abdominal numa colisão, mas é bem menos comum, e na lombar o padrão é raro.\n\nUm comentário moderno: com a ressonância, muitas dessas lesões mostram edema na medula ou rotura de ligamentos. Alguns autores reservam um nome diferente para quando até a ressonância é normal. O conceito da prova, porém, continua o mesmo.",
+  "correta": "Coluna cervical, abaixo de 8 anos. É quando a desproporção entre a cabeça grande e o pescoço elástico permite que a coluna se deforme e volte ao lugar, lesando a medula sem fratura visível.",
+  "referencias": [
+   "Pang D. Spinal cord injury without radiographic abnormality in children, 2 decades later. Neurosurgery. 2004;55(6):1325-1343."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0228": {
-  "conceito": "### Escoliose distrófica da neurofibromatose tipo 1\n**Geometria:** curva ==torácica==, ==curta e angulada==, envolvendo ==4 a 6 vértebras==, frequentemente com **cifose** importante (cifoescoliose).\n\n**Sinais distróficos:**\n- **escalopamento** posterior (e anterior) dos corpos;\n- **costelas em lápis** (em fita);\n- **pedículos afilados**, forames alargados;\n- **ectasia dural**, meningocele;\n- **rotação apical** grave;\n- **luxação costal** para dentro do canal.\n\n**Comportamento:** progressão **rápida**; **colete ineficaz**; alto risco de **pseudartrose**.\n\n**Cirurgia:**\n- **precoce**, geralmente com artrodese **anterior + posterior**, com enxerto abundante, ou posterior isolada com instrumentação robusta;\n- **RM pré-operatória** obrigatória: neurofibromas intracanal e ectasia dural.\n\n### Forma não distrófica\nCurva **longa**, como a idiopática. Pode **modular** para distrófica.\n\n> **Na prova:** NF1 distrófica = ==torácica, curta, 4 a 6 vértebras==.",
-  "correta": "**Torácica de ângulo curto, 4 a 6 vértebras.**",
   "incorretas": {
-   "A": "**Torácica de ângulo longo.**\n- Ângulo longo é da forma **não distrófica**.",
-   "C": "**Toracolombar de ângulo longo.**\n- Localização e forma erradas.",
-   "D": "**Toracolombar curta.**\n- A curva curta está certa, mas a localização é **torácica**."
+   "A": "Ângulo longo é o padrão da forma não distrófica. Além disso, duas a quatro vértebras não correspondem à curva curta típica, que envolve quatro a seis.",
+   "C": "Erra a localização e a forma: a curva típica é torácica e curta, não toracolombar e longa.",
+   "D": "O ângulo curto e o número de vértebras estão certos, mas a localização típica é torácica."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A neurofibromatose tipo 1 deixa marcas na pele (manchas café com leite, neurofibromas) e no esqueleto, e a escoliose é a mais frequente delas. Mas existem duas escolioses diferentes nessa doença, e a questão quer a típica.\n\nUma é parecida com a escoliose idiopática do adolescente: curva longa, que se estende por muitas vértebras, sem alterações nos ossos. Chama-se não distrófica e se trata quase como a idiopática.\n\nA outra, a **distrófica**, é a que leva o nome da doença. A própria neurofibromatose deforma as vértebras: os corpos ficam escavados atrás, os pedículos ficam finos, os forames se alargam, as costelas afinam como lápis e o saco dural pode estar dilatado. A curva que resulta é **torácica**, **curta e angulada**, concentrada em **quatro a seis vértebras**, muitas vezes com cifose junto. Parece uma dobra, não um arco.\n\nEssa forma é traiçoeira. Progride rápido, não responde ao colete, e mesmo a cirurgia tem risco alto de a fusão não consolidar. Antes de operar, a ressonância é obrigatória, porque neurofibromas dentro do canal ou uma costela deslocada para dentro dele mudam completamente o plano. E uma curva que começou não distrófica pode ganhar essas características com o tempo, principalmente em crianças pequenas, por isso o acompanhamento é próximo.",
+  "correta": "Torácica de ângulo curto, envolvendo de quatro a seis vértebras. É o desenho da escoliose distrófica, a forma típica e agressiva da neurofibromatose.",
+  "referencias": [
+   "Durrani AA, Crawford AH, Chouhdry SN, Saifuddin A, Morley TR. Modulation of spinal deformities in patients with neurofibromatosis type 1. Spine. 2000;25(1):69-75."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0229": {
-  "conceito": "### Síndrome de Guillain-Barré\n- **O que é:** polirradiculoneuropatia **aguda**, **autoimune**, geralmente **pós-infecciosa** (Campylobacter, vírus).\n- **Clínica:**\n  - paralisia **flácida** ==ascendente==: começa nos membros inferiores e sobe;\n  - ==arreflexia== (ou hiporreflexia), por ser uma lesão de neurônio motor **inferior** (nervo periférico);\n  - parestesias distais, dor lombar e nos membros;\n  - **disautonomia**;\n  - pode comprometer a **musculatura respiratória**, exigindo vigilância da capacidade vital.\n- **Diagnóstico:**\n  - **líquor** com **dissociação albuminocitológica** (proteína alta, células normais);\n  - **eletroneuromiografia**.\n- **Tratamento:** **imunoglobulina** IV ou **plasmaférese**; suporte ventilatório.\n\n### Para o ortopedista\nÉ o diferencial da criança que **deixa de andar**:\n- **mielopatia compressiva:** **nível sensitivo**, hiper-reflexia, Babinski (neurônio motor superior);\n- **Guillain-Barré:** arreflexia, sem nível.\n\n**Botulismo:** paralisia **descendente** (começa por nervos cranianos).\n\n> **Na prova:** Guillain-Barré = paralisia flácida ==ascendente + arreflexia==.",
-  "correta": "**Ascendente e arreflexia.**",
   "incorretas": {
-   "B": "**Descendente.**\n- Padrão do **botulismo**.",
-   "C": "**Hiper-reflexia.**\n- Sinal de neurônio motor **superior**.",
-   "D": "**Descendente com hiper-reflexia.**\n- Direção e reflexos errados."
+   "B": "Paralisia descendente, começando pelos nervos da cabeça, é o padrão do botulismo, não do Guillain-Barré.",
+   "C": "A direção está certa, mas reflexos exaltados indicam lesão do neurônio motor superior, como na compressão da medula. No Guillain-Barré eles somem.",
+   "D": "Erra os dois pontos: a paralisia sobe, e os reflexos estão abolidos, não aumentados."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Uma criança que andava normalmente começa a tropeçar, depois não consegue subir escada, e em poucos dias não consegue ficar em pé. Muitas vezes, uma ou duas semanas antes, ela teve uma diarreia ou uma gripe. Esse é um cenário em que o ortopedista é chamado e precisa pensar em **Guillain-Barré**.\n\nA síndrome é uma reação autoimune que aparece depois de uma infecção (a bactéria Campylobacter, da diarreia, é um gatilho clássico). Os anticorpos produzidos contra o germe atacam por engano a mielina ou os axônios dos nervos periféricos e das raízes. A fraqueza costuma começar pelos pés e pernas e **subir**, alcançando o tronco, os braços e, nos casos graves, a musculatura da respiração. Como a lesão é no nervo periférico, ou seja, no neurônio motor inferior, a paralisia é **flácida** e os reflexos **desaparecem**. Pode haver formigamento, dor nas costas e nas pernas e instabilidade da pressão e do ritmo cardíaco.\n\nO exame do líquor mostra proteína alta com células normais, a chamada dissociação albuminocitológica, e a eletroneuromiografia confirma o comprometimento dos nervos. O tratamento é imunoglobulina na veia ou plasmaférese, com vigilância da capacidade respiratória, porque alguns pacientes precisam de ventilação.\n\nPara o ortopedista, a pergunta é: a fraqueza nas pernas vem da medula ou dos nervos? Uma compressão da medula dá um nível de sensibilidade no tronco, reflexos exaltados e Babinski. O Guillain-Barré dá reflexos abolidos e não tem nível. E se a paralisia começar de cima para baixo, pelos olhos, pela face e pela deglutição, pense em botulismo, que é descendente.",
+  "correta": "Ascendente e arreflexia. A fraqueza começa nas pernas e sobe, e como o problema está nos nervos periféricos, os reflexos desaparecem.",
+  "referencias": [
+   "Willison HJ, Jacobs BC, van Doorn PA. Guillain-Barré syndrome. Lancet. 2016;388(10045):717-727."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0230": {
