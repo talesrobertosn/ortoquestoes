@@ -1007,36 +1007,46 @@
   "conferido": false
  },
  "coluna-0071": {
-  "conceito": "### Bandeiras vermelhas na lombalgia aguda\nIndicam investigação por imagem e laboratório:\n- **Idade:** acima de **50** ou abaixo de **20** anos.\n- **Trauma** significativo (ou trauma leve no idoso ou osteoporótico).\n- **Câncer:** história **pessoal**, perda de peso inexplicada, dor noturna ou em repouso.\n- **Infecção:** febre, imunossupressão, ==uso de drogas injetáveis, abuso de álcool==, infecção recente.\n- **Uso de corticoide** (fratura por fragilidade, infecção).\n- **Neurológico:** déficit progressivo, **cauda equina** (anestesia em sela, retenção urinária, incontinência).\n- **Falha** do tratamento conservador após 4 a 6 semanas.\n\n### Por que álcool e drogas\n- **Drogas injetáveis:** bacteremia, com **espondilodiscite** e abscesso epidural.\n- **Álcool:** osteoporose, quedas, imunossupressão, com **fratura** e infecção.\n\n### Na prática\nSem bandeiras vermelhas, **não pedir imagem** nas primeiras semanas: orientar, analgesia, manter-se ativo.\n\n> **Na prova:** bandeira vermelha entre as opções = ==abuso de drogas ou álcool==.",
-  "correta": "**Abuso de drogas ou álcool.**",
   "incorretas": {
-   "A": "**Idade acima de 40.**\n- O corte usado é **50** anos.",
-   "B": "**História familiar de câncer.**\n- A bandeira é a história **pessoal**.",
-   "D": "**Uso de AINE.**\n- Não é bandeira vermelha; o **corticoide** é."
+   "A": "**O corte de idade é 50 anos.** Acima dos 50 cresce a chance de câncer e de fratura osteoporótica; 40 anos, isoladamente, não indica imagem.",
+   "B": "**A bandeira é a história pessoal de câncer.** Um paciente que já teve câncer pode ter metástase na coluna. A história de câncer na família não muda essa probabilidade de forma relevante.",
+   "D": "**Anti-inflamatório não é bandeira vermelha.** Ele é parte do tratamento da lombalgia. O medicamento que preocupa é o corticoide de uso prolongado, que enfraquece o osso e reduz a imunidade."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**A regra: lombalgia aguda dispensa imagem.** A maioria das dores lombares agudas é inespecífica e melhora em poucas semanas. Fazer radiografia em todos não muda a conduta, expõe à radiação e mostra achados comuns em pessoas sem dor (desgaste de disco, artrose), que levam a exames e tratamentos desnecessários.\n\n**As bandeiras vermelhas.** São dados da história e do exame que levantam suspeita de causa grave e indicam investigação. Pensando nas causas graves, elas se agrupam assim. **Fratura**: trauma importante, ou trauma leve em idoso, osteoporótico ou usuário de corticoide. **Câncer**: história pessoal de câncer, perda de peso sem explicação, dor noturna ou em repouso, idade acima de 50 anos. **Infecção**: febre, imunossupressão, infecção recente, **uso de drogas injetáveis e abuso de álcool**. **Compressão neurológica**: déficit progressivo e síndrome da cauda equina (anestesia em sela, retenção ou incontinência urinária). Também merece reavaliação a dor que não melhora após quatro a seis semanas.\n\n**Por que drogas e álcool.** Quem injeta drogas leva bactérias para o sangue, e elas podem se instalar no disco e nas vértebras (espondilodiscite) ou formar um abscesso no canal (abscesso epidural). O abuso de álcool enfraquece o osso, aumenta as quedas e reduz a imunidade, elevando o risco de fratura e de infecção. Por isso o abuso de drogas ou álcool está entre as bandeiras vermelhas.\n\n**O que fazer sem bandeira vermelha.** Não pedir imagem nas primeiras semanas, explicar a boa evolução, dar analgesia e manter o paciente ativo. Havendo bandeira vermelha, a radiografia é a triagem inicial, e a ressonância é o exame de escolha para infecção, tumor ou compressão neurológica.\n\n**Na prova:** entre as opções, a bandeira vermelha é o abuso de drogas ou álcool; a idade de corte é 50 anos e o câncer que conta é o pessoal.",
+  "correta": "**Abuso de drogas ou álcool.** É bandeira vermelha porque aumenta o risco de infecção da coluna, pela bacteremia das drogas injetáveis, e de fratura, pelo osso enfraquecido e pelas quedas.",
+  "referencias": [
+   "Chou R, Qaseem A, Snow V et al. Diagnosis and treatment of low back pain: a joint clinical practice guideline from the American College of Physicians and the American Pain Society. Ann Intern Med. 2007;147(7):478-491.",
+   "Chou R, Qaseem A, Owens DK, Shekelle P. Diagnostic imaging for low back pain: advice for high-value health care from the American College of Physicians. Ann Intern Med. 2011;154(3):181-189."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0072": {
-  "conceito": "### Espondilodiscite piogênica\n- **Via:** hematogênica **arterial**. O germe se instala na metáfise junto à placa terminal, de fluxo lento, e invade o **disco**, que é avascular no adulto.\n- **Localização:** ==lombar== (a mais comum), depois ==torácica==; a cervical é menos comum, e o sacro é raro.\n- **Germe:** **S. aureus** o mais comum. Gram-negativos em idosos com infecção urinária; **Salmonella** na anemia falciforme; **Pseudomonas** em usuários de drogas injetáveis.\n- **Clínica:** dor axial insidiosa, **noturna**, que não melhora com repouso. **Febre** em apenas parte dos casos. **VHS e PCR** elevados.\n- **Diagnóstico:** **RM com contraste**, mostrando disco e platôs vizinhos acometidos. Identificar o germe por **hemocultura** e/ou **biópsia guiada** antes do antibiótico, se o paciente estiver estável.\n- **Tratamento:** antibiótico por **6 semanas** ou mais. **Cirurgia** em caso de déficit neurológico, abscesso epidural com compressão, instabilidade ou deformidade, ou falha clínica.\n\n### Tuberculose (Pott)\n- **Torácica baixa / toracolombar.**\n- **Poupa o disco** no início e se espalha sob o ligamento longitudinal anterior.\n- Forma **abscessos frios** grandes (psoas) e **cifose angular** (giba).\n\n> **Na prova:** infecção piogênica = ==lombar e torácica==; tuberculose = toracolombar.",
-  "correta": "**Torácicas e lombares.**\n- Predomínio lombar.",
   "incorretas": {
-   "A": "**Junção lombossacra.**\n- Não é o sítio preferencial.",
-   "B": "**Junção toracolombar.**\n- Território clássico da **tuberculose** vertebral.",
-   "C": "**Lombares e sacrais.**\n- O sacro é sítio raro."
+   "A": "**A junção lombossacra não é o sítio preferencial.** A infecção pode chegar ali, mas a distribuição se concentra no conjunto da coluna lombar e torácica, não especificamente na transição com o sacro.",
+   "B": "**A junção toracolombar lembra a tuberculose.** O mal de Pott tem preferência pela transição entre a coluna torácica e a lombar. A piogênica se distribui pela coluna lombar e torácica como um todo.",
+   "C": "**O sacro é raramente acometido.** A coluna lombar é o sítio mais comum, mas o sacro é raro; o par correto com a lombar é a torácica."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é a infecção piogênica da coluna.** Piogênica quer dizer produtora de pus, causada por bactérias comuns, em contraste com a tuberculose. Na coluna do adulto ela se chama **espondilodiscite**, porque atinge ao mesmo tempo as vértebras (espôndilo) e o disco entre elas.\n\n**Como a bactéria chega.** Quase sempre pelo sangue, a partir de uma infecção em outro lugar (pele, urina, cateter, drogas injetáveis). A bactéria se instala no osso logo abaixo da placa terminal, onde o fluxo é lento, e invade o disco vizinho, que no adulto não tem vasos e se defende mal. Por isso a imagem típica mostra o disco e as duas vértebras ao redor acometidos.\n\n**Onde ela acontece.** A região mais comum é a **lombar**, seguida da **torácica**; a cervical é menos frequente e o sacro é raro. A distribuição acompanha o volume de osso e de irrigação de cada região. A resposta, portanto, são as vértebras torácicas e lombares, com predomínio lombar.\n\n**Os germes.** O **Staphylococcus aureus** é o mais comum. Bactérias gram-negativas aparecem em idosos com infecção urinária, a Salmonella em pacientes com anemia falciforme e a Pseudomonas em usuários de drogas injetáveis.\n\n**Quadro, diagnóstico e tratamento.** Dor nas costas progressiva, pior à noite e que não cede com repouso; a febre falta em boa parte dos casos. VHS e PCR (marcadores de inflamação no sangue) sobem. A ressonância com contraste é o exame de escolha. Identifica-se o germe por hemocultura ou biópsia antes de iniciar o antibiótico, se o paciente estiver estável. O antibiótico dura seis semanas ou mais; a cirurgia fica para déficit neurológico, abscesso comprimindo a medula, instabilidade, deformidade ou falha do tratamento.\n\n**A diferença com a tuberculose.** O mal de Pott prefere a transição toracolombar, poupa o disco no início, forma grandes abscessos frios (como no psoas) e causa cifose angular, a giba.\n\n**Na prova:** espondilodiscite piogênica é mais comum na lombar e na torácica; tuberculose prefere a transição toracolombar.",
+  "correta": "**As vértebras torácicas e lombares.** São as regiões mais acometidas pela infecção piogênica da coluna, com predomínio da lombar.",
+  "referencias": [
+   "Zimmerli W. Vertebral osteomyelitis. N Engl J Med. 2010;362(11):1022-1029."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0073": {
-  "conceito": "### Raiz de C6\n- **Sensibilidade:** ==face lateral do antebraço==, polegar e indicador.\n- **Reflexo:** ==braquiorradial== (estilorradial).\n- **Força:** bíceps, **extensores radiais do carpo**.\n- **Disco:** **C5-C6**.\n\n### Tabela de comparação\n| Raiz | Sensibilidade | Reflexo |\n|---|---|---|\n| C4 | base do pescoço, trapézio | nenhum |\n| C5 | face lateral do **braço** | bicipital |\n| ==C6== | face lateral do **antebraço**, polegar | ==braquiorradial== |\n| C7 | dedo médio | tricipital |\n| C8 | dedo mínimo, face ulnar do antebraço | nenhum |\n\n### Armadilha\n**Braço** (C5) × **antebraço** (C6). Leia com atenção: o enunciado diz \"antebraço\".\n\n> **Na prova:** face lateral do antebraço + braquiorradial = ==C6==.",
-  "correta": "**C6.**",
   "incorretas": {
-   "A": "**C4.**\n- Ombro e trapézio, sem reflexo próprio.",
-   "B": "**C5.**\n- Face lateral do **braço** e reflexo **bicipital**.",
-   "D": "**C7.**\n- Dedo médio e reflexo **tricipital**."
+   "A": "**C4 fica no pescoço e no ombro.** Dá sensibilidade na base do pescoço e no topo do ombro e não tem reflexo próprio. Não alcança o antebraço.",
+   "B": "**C5 é a face lateral do braço.** A C5 cobre o braço, acima do cotovelo, e seu reflexo é o bicipital. O antebraço e o braquiorradial pertencem à C6.",
+   "D": "**C7 é o dedo médio e o tríceps.** Seu reflexo é o tricipital, e sua sensibilidade fica no meio da mão, não na face lateral do antebraço."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Como localizar uma radiculopatia cervical.** Radiculopatia é a compressão de uma raiz nervosa, geralmente por hérnia de disco ou osteófito. Cada raiz cervical tem um território de pele (dermátomo), um grupo de músculos e, em geral, um reflexo. Cruzando a sensibilidade alterada com o reflexo alterado, encontra-se a raiz.\n\n**O território de C6.** **Sensibilidade**: a **face lateral do antebraço** (do lado do polegar), descendo até o polegar e o indicador. **Reflexo**: o **braquiorradial**, também chamado estilorradial, pesquisado batendo no rádio perto do punho, com resposta de flexão do cotovelo. **Força**: bíceps e extensores radiais do punho. A combinação do enunciado, face lateral do antebraço com reflexo braquiorradial, é a de C6.\n\n**Qual disco comprime C6.** Na cervical cada raiz sai acima da vértebra de mesmo número. A C6 sai entre C5 e C6, e a hérnia do disco C5-C6 a comprime.\n\n**A armadilha: braço ou antebraço.** C5 e C6 são vizinhas na face lateral do membro. A **C5** cobre a face lateral do **braço** (do ombro ao cotovelo, sobre o deltoide) e tem o reflexo **bicipital**. A **C6** cobre a face lateral do **antebraço** e tem o braquiorradial. Ler com atenção qual segmento o enunciado cita resolve a questão.\n\n**As outras raízes.** **C4**: base do pescoço e topo do ombro, sem reflexo próprio. **C7**: dedo médio, tríceps e reflexo tricipital. **C8**: dedo mínimo e face ulnar do antebraço, sem reflexo próprio.\n\n**Na prova:** face lateral do antebraço com reflexo braquiorradial é C6; face lateral do braço com bicipital é C5.",
+  "correta": "**C6.** A face lateral do antebraço é o dermátomo de C6, e o reflexo braquiorradial depende dessa raiz.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0074": {
@@ -1055,41 +1065,47 @@
   "conferido": false
  },
  "coluna-0075": {
-  "conceito": "### O que segura o parafuso pedicular\n- **Fator primário:** a ==densidade mineral óssea==. A rosca só segura o osso que existe. Há correlação direta entre a DMO (e as unidades Hounsfield na TC) e a **força de arrancamento**.\n- **Fatores secundários:**\n  - **diâmetro** do parafuso: o mais importante dos fatores de implante, ocupando bem o **istmo** do pedículo;\n  - **comprimento** e **trajetória**: bicortical (sacro), trajetória cortical;\n  - desenho da **rosca**, parafusos **cônicos**;\n  - **triangulação** entre os parafusos.\n\n### No osso osteoporótico\n- **Aumento com cimento** (PMMA), parafusos **fenestrados**.\n- Parafusos de **maior diâmetro**, trajetória **cortical**.\n- **Ganchos** ou fios sublaminares associados.\n- **Mais níveis** instrumentados.\n- **Otimizar o osso antes:** teriparatida ou romosozumabe, vitamina D.\n- Avaliar as **UH na TC** pré-operatória: valores baixos indicam alto risco de soltura.\n\n> **Na prova:** fixação do parafuso depende primariamente da ==densidade óssea==.",
-  "correta": "**Densidade mineral óssea.**",
   "incorretas": {
-   "A": "**Localização da vértebra.**\n- Muda a anatomia e a técnica, não é o determinante primário.",
-   "B": "**Tipo de rosca.**\n- Influencia, mas atua sobre o osso disponível.",
-   "C": "**Ângulo de fixação.**\n- Importa para a segurança e para o comprimento útil, não como fator primário."
+   "A": "**A localização muda a técnica, não o determinante.** O tamanho do pedículo e a anatomia variam entre as regiões, mas em qualquer vértebra o que segura a rosca é a qualidade do osso.",
+   "B": "**A rosca influencia, mas depende do osso.** Um desenho de rosca melhor ganha alguma resistência, mas não compensa um osso de baixa densidade.",
+   "C": "**O ângulo importa para segurança e comprimento.** A angulação define se o parafuso fica dentro do pedículo e quanto osso ele percorre, mas não é o fator primário da força de fixação."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**O que é uma artrodese instrumentada.** Artrodese é a fusão de duas ou mais vértebras para eliminar o movimento entre elas. Para segurar a coluna enquanto o enxerto ósseo consolida, usam-se implantes, principalmente **parafusos pediculares**: parafusos que entram pelo pedículo (a ponte de osso entre o arco posterior e o corpo vertebral) até o corpo da vértebra, ligados a hastes.\n\n**O que segura o parafuso.** A rosca do parafuso só prende no osso que existe à sua volta. Por isso o fator primário da fixação é a **densidade mineral óssea**: quanto mais denso o osso, maior a força necessária para arrancar o parafuso. Estudos mecânicos mostraram correlação direta entre a densidade óssea e essa força de arrancamento. Na prática, a densidade pode ser estimada antes da cirurgia pelas unidades Hounsfield da tomografia; valores baixos indicam alto risco de soltura.\n\n**Os fatores secundários.** Entre os fatores do implante, o mais importante é o **diâmetro** do parafuso, ocupando bem o pedículo. Contam também o **comprimento** e a **trajetória** (parafusos que pegam duas corticais, ou a trajetória cortical, que busca o osso mais denso), o desenho da **rosca** e a **triangulação**, isto é, parafusos convergentes que se travam. Todos eles atuam sobre o osso disponível; nenhum compensa um osso muito frágil.\n\n**No paciente osteoporótico.** Reforço do parafuso com cimento ósseo, parafusos fenestrados (com furos para o cimento), parafusos mais grossos, trajetória cortical, ganchos ou fios associados, mais níveis instrumentados e, sempre que possível, tratar a osteoporose antes da cirurgia.\n\n**Na prova:** a fixação do parafuso depende primariamente da densidade mineral óssea.",
+  "correta": "**Densidade mineral óssea do corpo vertebral.** A rosca só prende no osso existente, e a força de arrancamento acompanha diretamente a densidade óssea.",
+  "referencias": [
+   "Halvorson TL, Kelley LA, Thomas KA, Whitecloud TS 3rd, Cook SD. Effects of bone mineral density on pedicle screw fixation. Spine. 1994;19(21):2415-2420."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0076": {
-  "conceito": "### Conferindo as afirmações\n- **Corticoide em alta dose (NASCIS):** **não** é mais protocolo. O benefício foi marginal e controverso, e as complicações claras: infecção, pneumonia, sangramento digestivo. Algumas diretrizes admitem considerá-lo em casos selecionados e muito precoces (dentro de 8 h), mas não é rotina.\n- **Choque neurogênico:** hipotensão, **bradicardia** e **hipotermia** (poiquilotermia), **não** hipertermia.\n- ==Síndrome centromedular==: paresia **maior nos membros superiores** (mãos). É a afirmação correta.\n- **Síndrome medular posterior:** perda de **propriocepção e vibração**, com dor e temperatura **preservadas**. É rara.\n\n### Síndromes incompletas: resumo\n| Síndrome | Marca |\n|---|---|\n| Centromedular | MMSS mais afetados que os MMII; idoso com hiperextensão; a mais comum |\n| Anterior | propriocepção preservada; a de pior prognóstico |\n| Brown-Séquard | motor e propriocepção ipsilaterais, dor e temperatura contralaterais; a de melhor prognóstico |\n| Posterior | só propriocepção e vibração; rara |\n\n> **Na prova:** centromedular = ==membros superiores mais fracos==.",
-  "correta": "**Centromedular: paresia maior nos membros superiores.**",
   "incorretas": {
-   "A": "**Corticoide em alta dose.**\n- Não integra mais o protocolo inicial.",
-   "B": "**Hipertermia.**\n- O choque neurogênico cursa com **hipotermia**.",
-   "D": "**Posterior com perda de dor e temperatura.**\n- Perde **propriocepção e vibração**; dor e temperatura ficam preservadas."
+   "A": "**Corticoide em alta dose não é mais protocolo.** O benefício dos estudos NASCIS foi marginal e as complicações, como infecção e sangramento digestivo, foram significativas. As diretrizes atuais não o recomendam de rotina.",
+   "B": "**O erro é a hipertermia.** O choque neurogênico cursa com hipotensão, bradicardia e hipotermia, porque a perda do simpático impede a regulação da temperatura do corpo.",
+   "D": "**A síndrome posterior preserva dor e temperatura.** Ela lesa as colunas posteriores, que levam propriocepção e vibração. Dor e temperatura viajam no espinotalâmico, na parte anterior, e ficam intactas."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**As síndromes medulares incompletas.** Quando a medula é lesada mas sobra alguma função abaixo da lesão, o padrão do que se perde depende de qual parte foi atingida. Três feixes de fibras (tratos) explicam tudo: o **corticoespinhal**, motor; o **espinotalâmico**, que leva dor e temperatura; e as **colunas posteriores**, que levam propriocepção (a noção da posição do corpo) e vibração.\n\n**A síndrome centromedular.** É a mais comum. Ocorre no idoso com artrose cervical e canal estreito que cai e hiperestende o pescoço; a medula é pinçada e a lesão se concentra no centro. A fraqueza é **maior nos membros superiores**, sobretudo nas mãos, do que nos inferiores. É a afirmação correta.\n\n**A síndrome medular posterior.** É rara. Lesa as colunas posteriores: perde-se **propriocepção e vibração**, e o paciente anda inseguro, mas **dor e temperatura ficam preservadas**, porque o espinotalâmico está na frente.\n\n**O choque neurogênico.** É a queda de pressão por perda do sistema simpático nas lesões acima de cerca de T6. Os vasos dilatam, o coração desacelera pela ação do vago sem oposição, e o paciente perde a capacidade de regular a temperatura, tendendo a **hipotermia**, não a hipertermia. O quadro é hipotensão, bradicardia e hipotermia.\n\n**O corticoide em alta dose.** Os estudos NASCIS, nos anos 1990, propuseram metilprednisolona em altas doses no trauma raquimedular. O benefício foi pequeno e discutido, e as complicações foram claras: infecção, pneumonia e sangramento digestivo. As diretrizes atuais não o recomendam como rotina; algumas admitem considerá-lo apenas em casos selecionados, nas primeiras 8 horas.\n\n**Na prova:** centromedular tem braços mais fracos que pernas; posterior perde propriocepção; choque neurogênico é bradicardia com hipotermia; corticoide não é protocolo.",
+  "correta": "**Na síndrome medular central, a paresia é mais acentuada nos membros superiores.** A lesão central atinge mais as fibras que comandam braços e mãos, e o paciente tem mais fraqueza nos braços do que nas pernas.",
+  "referencias": [
+   "Walters BC, Hadley MN, Hurlbert RJ et al. Guidelines for the management of acute cervical spine and spinal cord injuries: 2013 update. Neurosurgery. 2013;60(Suppl 1):82-91.",
+   "Bracken MB, Shepard MJ, Collins WF et al. A randomized, controlled trial of methylprednisolone or naloxone in the treatment of acute spinal-cord injury: results of the Second National Acute Spinal Cord Injury Study. N Engl J Med. 1990;322(20):1405-1411."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0077": {
-  "conceito": "### Conferindo cada afirmação\n- **Lordose na fase aguda:** o que ocorre é **retificação** (espasmo antálgico), muitas vezes com escoliose antálgica. Não há acentuação da lordose.\n- **Semi-Fowler** (decúbito dorsal com quadris e joelhos fletidos): **relaxa** a raiz e reduz a tensão ciática. Costuma **aliviar**; afirmação clinicamente verdadeira.\n- ==Hérnia torácica==: rara (menos de 1% das hérnias). Mais comum em **T8 a T12**, com pico em **T11-T12**, onde a mobilidade é maior. A dor radicular em faixa segue o dermátomo; o gabarito aponta o **T10** como o mais envolvido.\n- **Radiculopatia L5:** parestesia na face **anterolateral/posterolateral** da perna até o **dorso do pé e o hálux**. Também é descrição clínica aceita.\n\n### Hérnia torácica: pontos-chave\n- **Clínica:** dor axial ou **radicular em faixa** (pode simular dor visceral: cardíaca, biliar, renal) e **mielopatia**.\n- **Imagem:** frequentemente **calcificada** na TC.\n- **Cirurgia:** por via **lateral / anterior** (toracotomia, costotransversectomia, toracoscopia). A **laminectomia** isolada é contraindicada, pelo alto risco de piora neurológica ao manipular a medula.\n\n> **Na prova:** gabarito oficial = ==C (T10)==; ver o alerta.",
-  "correta": "**C: T10 como dermátomo mais envolvido na hérnia torácica** (gabarito oficial).\n- Ver o alerta: B e D também descrevem fatos clínicos aceitos.",
   "incorretas": {
-   "A": "**Acentuação da lordose.**\n- Há **retificação** antálgica.",
-   "B": "**Semi-Fowler alivia.**\n- Clinicamente verdadeira; ver o alerta.",
-   "D": "**L5 até o dorso do pé e o hálux.**\n- Compatível com L5; também verdadeira. Ver o alerta."
+   "A": "**Na fase aguda a lordose se retifica.** O espasmo muscular de proteção deixa a coluna lombar reta e, às vezes, desviada para o lado (escoliose antálgica). Não há aumento da lordose.",
+   "B": "**Afirmação clinicamente aceita.** A posição semi-Fowler relaxa a raiz e reduz a tensão do nervo ciático, e muitos pacientes se aliviam assim. A banca não a escolheu; veja o alerta.",
+   "D": "**Descrição compatível com L5.** A raiz L5 dá parestesia pela face lateral da perna até o dorso do pé e o hálux. Também é verdadeira, o que motiva o alerta."
   },
-  "alerta": "**Questão com múltiplas alternativas defensáveis.** B e D são descrições clínicas aceitas. C depende de uma distribuição epidemiológica específica e não deveria ser a única correta sem fonte ou qualificação adicional.",
+  "conceito": "**O que é a hérnia de disco torácica.** A coluna torácica tem pouco movimento, porque está presa às costelas, e por isso a hérnia de disco nessa região é rara, menos de 1% de todas as hérnias. Ela ocorre principalmente na parte baixa, entre **T8 e T12**, onde a coluna torácica já se move mais, com pico em T11-T12. Muitas são calcificadas e aparecem na tomografia.\n\n**Como ela se manifesta.** Pode dar dor nas costas, **dor radicular em faixa** em volta do tórax ou do abdome, seguindo o dermátomo da raiz comprimida, e, por ser o canal torácico estreito, **mielopatia** (compressão da medula). A dor em faixa pode imitar doenças do coração, da vesícula ou do rim. O dermátomo T10 passa na altura do umbigo, e a banca considera T10 o mais envolvido na dor radicular dessas hérnias.\n\n**Por que não se opera por trás.** A medula torácica não pode ser afastada para alcançar uma hérnia que está na frente dela. A laminectomia isolada é contraindicada, pelo alto risco de piorar a lesão neurológica. A cirurgia é feita por via lateral ou anterior: toracotomia, costotransversectomia ou toracoscopia.\n\n**As outras afirmações.** Na hérnia lombar aguda, o espasmo da musculatura **retifica** a lordose (a coluna fica reta) e pode criar uma escoliose antálgica; não há acentuação da lordose. A posição semi-Fowler, deitado de barriga para cima com quadris e joelhos fletidos, relaxa a raiz e costuma aliviar. A raiz L5 dá parestesia na face lateral da perna até o dorso do pé e o hálux. Por isso há o alerta: B e D também descrevem fatos clínicos aceitos.\n\n**Na prova:** o gabarito oficial é a alternativa sobre T10 na hérnia torácica; conheça também as demais afirmações.",
+  "correta": "**O dermátomo T10 é o mais envolvido na dor radicular da hérnia torácica (gabarito oficial).** As hérnias torácicas se concentram na coluna torácica baixa, e a banca adota T10 como o dermátomo mais acometido. Veja o alerta sobre as alternativas B e D.",
   "referencias": [
-   "North American Spine Society. Lumbar Disc Herniation With Radiculopathy Clinical Guideline.",
-   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022."
+   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
   ],
-  "geradoEm": "2026-09-23",
+  "alerta": "**Questão com múltiplas alternativas defensáveis.** B e D são descrições clínicas aceitas. C depende de uma distribuição epidemiológica específica e não deveria ser a única correta sem fonte ou qualificação adicional.",
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0078": {
