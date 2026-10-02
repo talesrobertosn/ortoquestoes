@@ -3,6 +3,7 @@
 #   @@ id-da-questao
 #   ## alerta            (opcional; só quando o gabarito oficial é duvidoso)
 #   ## sem-alerta        (opcional; retira um alerta antigo após confirmar a resposta)
+#   ## referencias       (opcional; uma referência por linha, substitui as antigas)
 #   texto
 #   ## conceito
 #   **Título.** parágrafo...
@@ -30,6 +31,7 @@ for bloco in re.split(r'^@@\s*', txt, flags=re.M)[1:]:
         elif nome == 'correta': c['correta'] = corpo
         elif nome == 'alerta': c['alerta'] = corpo
         elif nome == 'sem-alerta': sem_alerta.add(qid)
+        elif nome == 'referencias': c['referencias'] = [l.strip() for l in corpo.splitlines() if l.strip()]
         else: c['incorretas'][nome] = corpo
     con = c.get('conceito', '')
     pars = [p for p in con.split('\n\n') if p.strip()]
@@ -58,4 +60,17 @@ for qid, c in lote.items():
 saida = arq.rsplit('.', 1)[0] + '.json'
 json.dump(lote, open(saida, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 args = [sys.executable, os.path.join(RAIZ, 'scripts', 'aplicar_comentarios.py'), saida] + (['--seco'] if seco else [])
-sys.exit(subprocess.call(args))
+codigo = subprocess.call(args)
+if codigo == 0 and not seco:
+    # Registra o lote no checkpoint com os fingerprints do que foi gravado.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import estado as E, datetime
+    cp = E.CHECKPOINT; d = json.loads(cp.read_text())
+    for qid in lote:
+        tema = re.sub(r'-\d+$', '', qid)
+        q = next(x for x in json.load(open(os.path.join(R, 'temas', f'{tema}.json'), encoding='utf-8'))['questoes'] if x['id'] == qid)
+        c = json.load(open(os.path.join(R, 'comentarios', f'{tema}.json'), encoding='utf-8'))[qid]
+        d.setdefault('concluidos', {})[qid] = {'questaoSha256': E.questao_fingerprint(q), 'comentarioSha256': E.fingerprint(c),
+                                               'estado': 'na_branch', 'data': datetime.date.today().isoformat(), 'fontes': c.get('referencias', [])}
+    cp.write_text(json.dumps(d, ensure_ascii=False, indent=1) + '\n')
+sys.exit(codigo)
