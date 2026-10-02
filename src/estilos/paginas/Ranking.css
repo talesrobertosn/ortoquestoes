@@ -368,3 +368,17 @@
 }
 .rk-heroi--conquistas .rk-heroi__cartao img { image-rendering: pixelated; }
 .rk-heroi__posicao small { font-size: 1.3rem; opacity: 0.7; }
+
+/* ---------- Escolher emblemas: deixar óbvio que dá para escolher ---------- */
+.inv-jogador__cta {
+  grid-column: 1 / -1; justify-self: start; display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.55rem 1rem;
+  border-radius: 999px; background: linear-gradient(135deg, #f4cf7c, #c9952f); color: #3b2604; font-weight: 850; font-size: var(--corpo-menor);
+  box-shadow: 0 6px 16px rgba(201, 149, 47, 0.4);
+}
+.inv-jogador:hover .inv-jogador__cta { filter: brightness(1.06); }
+.inv-slot__vazio { animation: inv-chama 1.6s ease-in-out infinite; }
+@keyframes inv-chama { 50% { opacity: 0.45; transform: scale(0.9); } }
+.rk-bau__cta { display: inline-block; margin-top: 0.3rem; padding: 0.2rem 0.6rem; border-radius: 999px; background: rgba(244, 207, 124, 0.18); color: #ffe08a; font-style: normal; font-weight: 800; font-size: var(--meta); }
+.rk-escolher { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.2rem 0.55rem; border-radius: 999px; border: 1px dashed color-mix(in srgb, var(--ouro) 70%, transparent); background: var(--ouro-veu); color: var(--ouro-texto); font-size: 0.72rem; font-weight: 800; text-decoration: none; white-space: nowrap; }
+.rk-escolher:hover { border-style: solid; }
+@media (prefers-reduced-motion: reduce) { .inv-slot__vazio { animation: none; } }

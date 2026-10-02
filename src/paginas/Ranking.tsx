@@ -221,11 +221,12 @@ export function Ranking() {
 
     <AbasRanking atual="ranking" conquistadas={conquistadas} total={totalConquistas} />
 
-    <a className="rk-bau" href={href('/conquistas')}>
+    <a className="rk-bau" href={href(perfilRanking.emblemas.length ? '/conquistas' : '/conquistas?escolher=1')}>
       <img className="rk-bau__arte" src={recurso('emblemas/podio-1.png')} alt="" width={56} height={56} />
       <span className="rk-bau__texto">
         <strong>Suas conquistas</strong>
         <span><b className="numerico">{conquistadas}</b> de {totalConquistas} desbloqueadas{streak.atual >= 3 ? ` · sequência de ${streak.atual} dias` : ''}</span>
+        <em className="rk-bau__cta">{perfilRanking.emblemas.length ? 'Trocar os emblemas do meu nome' : 'Toque e escolha 3 emblemas para o seu nome'}</em>
       </span>
       <span className="rk-bau__vitrine" aria-hidden="true">
         {Array.from({ length: VITRINE_MAXIMO }, (_, i) => {
@@ -284,7 +285,7 @@ export function Ranking() {
             <span className="rk-linha__avatar">{iniciais(linha.apelido)}</span>
             <span className="rk-linha__nome">
               <span className="rk-linha__apelido">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</span>
-              <span className="rk-linha__selos"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={32} /><Fogueira dias={linha.sequencia ?? 0} /></span>
+              <span className="rk-linha__selos"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={32} /><Fogueira dias={linha.sequencia ?? 0} />{linha.eh_voce && <a className="rk-escolher" href={href('/conquistas?escolher=1')}><Icone nome="estrela" tamanho={13} /> {linha.emblemas?.length ? 'Trocar' : 'Escolher emblemas'}</a>}</span>
               <span className="rk-linha__barra" aria-hidden="true"><span style={{ width: `${Math.max(3, (linha.total / lider) * 100)}%` }} /></span>
             </span>
             <span className="rk-linha__total numerico">{linha.total.toLocaleString('pt-BR')}</span>
@@ -310,7 +311,7 @@ export function Ranking() {
 }
 
 /** Página das conquistas: o inventário completo e a escolha da vitrine. */
-export function Conquistas() {
+export function Conquistas({ escolher = false }: { escolher?: boolean } = {}) {
   const { sessao } = usarConta()
   const { perfil, carregado, nomeExibido, salvarVitrine, comVitrine } = usarPerfilRanking(sessao)
   const { metricas, streak, conquistadas, total } = usarConquistas()
@@ -329,6 +330,6 @@ export function Conquistas() {
       </div>
     </section>
     <AbasRanking atual="conquistas" conquistadas={conquistadas} total={total} />
-    <Inventario metricas={metricas} nome={sessao ? nomeExibido : 'Você'} vitrine={perfil.emblemas} salvarVitrine={salvarVitrine} podeEscolher={!!sessao && carregado && comVitrine} />
+    <Inventario metricas={metricas} nome={sessao ? nomeExibido : 'Você'} vitrine={perfil.emblemas} salvarVitrine={salvarVitrine} podeEscolher={!!sessao && carregado && comVitrine} abrirEscolha={escolher} />
   </div>
 }

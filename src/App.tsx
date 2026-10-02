@@ -135,7 +135,7 @@ export function App() {
       pagina = <Ranking />
       break
     case 'conquistas':
-      pagina = <Conquistas />
+      pagina = <Conquistas escolher={rota.consulta?.get('escolher') === '1'} />
       break
     case 'termos':
       pagina = <Termos />

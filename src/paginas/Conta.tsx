@@ -400,7 +400,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
             </> : <button className="botao botao--principal" type="button" onClick={() => void alterarParticipacao(true)} disabled={salvandoRanking}>Voltar ao ranking</button>}
             <a className="botao botao--fantasma" href={href('/ranking')}>Ver ranking</a>
           </div>
-          <a className="ct-vitrine" href={href('/conquistas')}>
+          <a className="ct-vitrine" href={href('/conquistas?escolher=1')}>
             <span className="ct-vitrine__slots">{[0, 1, 2].map((i) => { const e = emblemaPorId(perfilRanking.emblemas[i] ?? ''); return <span key={i} className="ct-vitrine__slot">{e ? <Medalha conquista={e} tamanho={32} /> : <Icone nome="estrela" tamanho={16} />}</span> })}</span>
             <span><strong>{perfilRanking.emblemas.length ? 'Trocar os emblemas do meu nome' : 'Escolher 3 emblemas para o meu nome'}</strong><small>Eles aparecem ao lado do seu nome no ranking.</small></span>
             <Icone nome="direita" tamanho={16} />

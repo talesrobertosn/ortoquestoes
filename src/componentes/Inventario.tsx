@@ -156,10 +156,12 @@ function EscolherVitrine({ aberta, aoFechar, metricas, atuais, salvar }: {
  * Inventário de conquistas: o cartão do jogador (toque no nome para montar a
  * vitrine) e todas as conquistas por família, com progresso das que faltam.
  */
-export function Inventario({ metricas, nome, vitrine, salvarVitrine, podeEscolher }: {
-  metricas: Metricas; nome: string; vitrine: string[]; salvarVitrine: (ids: string[]) => Promise<string | null>; podeEscolher: boolean
+export function Inventario({ metricas, nome, vitrine, salvarVitrine, podeEscolher, abrirEscolha = false }: {
+  metricas: Metricas; nome: string; vitrine: string[]; salvarVitrine: (ids: string[]) => Promise<string | null>; podeEscolher: boolean; abrirEscolha?: boolean
 }) {
   const [escolhendo, definirEscolhendo] = useState(false)
+  // Vindo de um atalho "escolher emblemas" (ranking, conta), a janela já abre.
+  useEffect(() => { if (abrirEscolha && podeEscolher) definirEscolhendo(true) }, [abrirEscolha, podeEscolher])
   const conquistadas = useMemo(() => EMBLEMAS.filter((e) => desbloqueado(e, metricas)).length, [metricas])
   const total = EMBLEMAS.length
   return <section className="cartao cartao__corpo inv" aria-labelledby="inv-titulo">
@@ -182,7 +184,10 @@ export function Inventario({ metricas, nome, vitrine, salvarVitrine, podeEscolhe
         })}
       </span>
       <Fogueira dias={metricas.sequencia} tamanho={22} comTexto />
-      <small className="inv-jogador__dica">{podeEscolher ? `Toque para escolher os ${VITRINE_MAXIMO} emblemas que aparecem no ranking` : 'Em breve você vai poder escolher 3 emblemas para aparecer ao lado do seu nome.'}</small>
+      {podeEscolher
+        ? <span className="inv-jogador__cta"><Icone nome="estrela" tamanho={16} /> {vitrine.length ? 'Trocar os emblemas do meu nome' : `Escolher meus ${VITRINE_MAXIMO} emblemas`}</span>
+        : <small className="inv-jogador__dica">Em breve você vai poder escolher 3 emblemas para aparecer ao lado do seu nome.</small>}
+      {podeEscolher && <small className="inv-jogador__dica">Eles aparecem ao lado do seu nome no ranking, para todo mundo ver.</small>}
     </button>
 
     {FAMILIAS.map((f) => {
