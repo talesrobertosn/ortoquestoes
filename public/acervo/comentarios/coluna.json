@@ -2276,14 +2276,17 @@
   "conferido": false
  },
  "coluna-0202": {
-  "conceito": "### Teste de Adson (síndrome do desfiladeiro torácico)\n1. Paciente sentado; o examinador **palpa o pulso radial**.\n2. O braço fica em **abdução e rotação externa** (ou ao lado do corpo, conforme a descrição).\n3. O paciente faz **inspiração profunda** e **prende a respiração**.\n4. **Estende o pescoço** e **roda a cabeça** para o lado testado (ou o oposto, conforme o autor).\n5. **Positivo:** **diminuição ou ausência do pulso**, com reprodução dos sintomas.\n\n**O que avalia:** compressão da **artéria subclávia** no **triângulo dos escalenos** (escalenos anterior e médio, 1ª costela).\n\n**Limitação:** **muitos falsos positivos** em assintomáticos. Não fecha o diagnóstico sozinho.\n\n### Outros testes do desfiladeiro\n- **Roos** (EAST): braços a 90°/90°, abrindo e fechando as mãos por 3 min.\n- **Wright:** hiperabdução.\n- **Costoclavicular** (militar): ombros para trás e para baixo.\n\n### Os outros nomes\n- **Adams:** escoliose.\n- **Apley:** menisco; \"coçar as costas\" no ombro.\n- **Hoover:** simulação.\n\n> **Na prova:** pulso radial que some com rotação da cabeça e respiração presa = ==Adson==.",
-  "correta": "**Adson.**",
   "incorretas": {
-   "A": "**Adams.**\n- Inclinação anterior; **escoliose**.",
-   "C": "**Apley.**\n- Menisco; ombro.",
-   "D": "**Hoover.**\n- **Simulação** de déficit motor."
+   "A": "Adams é o teste de inclinação anterior para rastrear escoliose, procurando a giba das costelas. Nada a ver com pulso.",
+   "C": "Apley é usado no joelho, para meniscos, e no ombro, como teste de amplitude. Não avalia a artéria subclávia.",
+   "D": "O sinal de Hoover avalia se a fraqueza de uma perna é real ou simulada, observando a força que o paciente faz com o calcanhar oposto."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na base do pescoço existe um corredor apertado por onde passam juntos a artéria subclávia e os troncos do plexo braquial a caminho do braço. Esse corredor é limitado por dois músculos, os escalenos anterior e médio, e embaixo pela primeira costela. Se ele estreita, por uma costela cervical extra, por uma banda fibrosa ou por músculos hipertrofiados, o que passa por ali é comprimido. É a **síndrome do desfiladeiro torácico**, que causa dormência, peso e dor no braço, muitas vezes piores com o braço elevado.\n\nEm 1927 Adson descreveu uma manobra para flagrar a compressão da artéria. O examinador palpa o pulso radial do paciente, coloca o braço em abdução e rotação externa, pede que ele encha o peito e prenda a respiração e que gire e estenda a cabeça. Inspirar levanta a primeira costela e tensiona os escalenos; girar a cabeça estica o escaleno anterior. Se o pulso enfraquece ou some, e os sintomas aparecem, o **teste de Adson** é positivo.\n\nVale saber a limitação: muita gente sem sintoma nenhum perde o pulso nessa posição, então o teste sozinho não fecha diagnóstico. Ele soma com a história e com outras manobras, como o teste de Roos, em que o paciente abre e fecha as mãos com os braços elevados por três minutos.\n\nAs outras opções são nomes que parecem iguais de propósito. Adams é a inclinação para a frente que mostra a giba da escoliose. Apley é teste de menisco no joelho (e também o \"coçar as costas\" no exame do ombro). Hoover serve para desmascarar simulação de fraqueza nas pernas.",
+  "correta": "Adson. É a manobra que comprime a subclávia no triângulo dos escalenos, com respiração presa e rotação da cabeça, buscando a queda do pulso radial.",
+  "referencias": [
+   "Adson AW, Coffey JR. Cervical rib: a method of anterior approach for relief of symptoms by division of the scalenus anticus. Ann Surg. 1927;85(6):839-857."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0203": {
@@ -2303,25 +2306,31 @@
   "conferido": false
  },
  "coluna-0204": {
-  "conceito": "### Escoliose congênita\n**Origem:** falha de **formação** (hemivértebra, cunha) e/ou de **segmentação** (barra, bloco) entre a **4ª e a 6ª a 8ª semanas** de gestação. É o mesmo período de formação do **tubo neural**, do **coração** e do **trato geniturinário**.\n\n### Malformações associadas (a tríade)\n| Sistema | Frequência aproximada | Exemplos |\n|---|---|---|\n| ==Neuroeixo== | ~1/3 | **diastematomielia**, **medula presa**, siringomielia, Chiari |\n| ==Geniturinário== | ~20% a 30% | agenesia renal, rim em ferradura, duplicação ureteral |\n| ==Cardíaco== | ~10% a 25% | comunicações septais, entre outros |\n\n**Investigação obrigatória:**\n- **RM de todo o neuroeixo;**\n- **ultrassom renal;**\n- **ecocardiograma.**\n\n### Associações sindrômicas\n- **VACTERL:** vertebral, anal, cardíaca, traqueoesofágica, renal, membros.\n- **Klippel-Feil:** fusão cervical, com Sprengel e surdez.\n- **Goldenhar;** **Alagille;** **Jarcho-Levin** (espondilocostal).\n\n> **Na prova:** escoliose congênita = pesquisar ==neuroeixo, coração e geniturinário==.",
-  "correta": "**Neuroeixo, cardíacas e geniturinárias.**",
   "incorretas": {
-   "A": "**Fístula traqueoesofágica, renal e membros.**\n- Espectro **VACTERL**.",
-   "C": "**Cardíaca, ânus imperfurado, membros.**\n- Também **VACTERL**.",
-   "D": "**Sprengel, neuroeixo, fístula.**\n- Sprengel pode coexistir (Klippel-Feil), mas não integra a tríade."
+   "A": "Fístula traqueoesofágica, rim e membros fazem parte do espectro VACTERL. Podem acompanhar, mas não são o conjunto mais frequente que se investiga em toda escoliose congênita.",
+   "C": "Coração, ânus imperfurado e membros também são componentes da associação VACTERL, e não o trio clássico. Falta o neuroeixo, o mais importante para o cirurgião de coluna.",
+   "D": "Sprengel aparece junto com Klippel-Feil e a fístula traqueoesofágica com VACTERL. Apenas o neuroeixo pertence ao trio clássico."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A escoliose congênita nasce de vértebras mal formadas: uma metade de vértebra que não se formou (hemivértebra) ou duas vértebras que não se separaram de um lado (barra). O erro acontece muito cedo, entre a quarta e a oitava semana de gestação, e esse detalhe de calendário é a chave da questão.\n\nNessas mesmas semanas o embrião está formando outros órgãos ao mesmo tempo: o **tubo neural**, que vai virar medula, o **coração** e os **rins e vias urinárias**. Um problema que atrapalha o desenvolvimento da coluna nesse período tem boa chance de ter atrapalhado também algum desses vizinhos de calendário. Por isso a regra prática é: toda criança com escoliose congênita precisa ser investigada nesses três sistemas.\n\nNa prática isso vira três exames. **Ressonância de toda a medula**, porque são comuns a medula presa, a diastematomielia (medula dividida por um septo) e a siringomielia, alterações que podem exigir neurocirurgia antes de qualquer correção da coluna. **Ultrassom dos rins**, porque agenesia ou rim em ferradura são frequentes. **Ecocardiograma**, pelas cardiopatias congênitas.\n\nAs outras alternativas misturam malformações que realmente aparecem em associações específicas, como a VACTERL (vertebral, anal, cardíaca, traqueoesofágica, renal e de membros) ou a síndrome de Klippel-Feil (fusão de vértebras cervicais, às vezes com escápula alta de Sprengel). Elas existem, mas o trio que se investiga em toda escoliose congênita é neuroeixo, coração e trato geniturinário.",
+  "correta": "Do neuroeixo, cardíacas e do sistema geniturinário. São os órgãos formados no mesmo período da coluna, e por isso todos os pacientes com escoliose congênita fazem ressonância da medula, ecocardiograma e ultrassom renal.",
+  "referencias": [
+   "Basu PS, Elsebaie H, Noordeen MH. Congenital spinal deformity: a comprehensive assessment at presentation. Spine. 2002;27(20):2255-2259."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0205": {
-  "conceito": "### Espondilólise / espondilolistese na criança e no adolescente\n- **Manifestação inicial mais comum:** ==dor lombar== baixa, axial, que **piora com a extensão** e com o esporte:\n  - ginástica, balé;\n  - lutas;\n  - futebol americano;\n  - mergulho;\n  - levantamento de peso;\n  - críquete.\n- **Exame:**\n  - dor à **hiperextensão** lombar, especialmente em apoio **unipodal** (teste da **cegonha**);\n  - **isquiotibiais encurtados**, frequentemente.\n- **Mais tarde / alto grau:**\n  - radiculopatia de **L5**;\n  - **alteração da marcha** (Phalen-Dickson);\n  - deformidade lombossacra, com degrau palpável.\n- **Imagem:**\n  - radiografia (oblíquas);\n  - **TC** (defeito);\n  - **RM** (edema na lesão aguda, sem radiação).\n- **Tratamento:**\n  - **baixo grau:** conservador (repouso esportivo, fisioterapia, colete em lesões agudas);\n  - **alto grau ou refratário:** cirurgia (reparo da pars ou artrodese).\n\n> **Na prova:** manifestação inicial = ==dor lombar==.",
-  "correta": "**Dor lombar.**",
   "incorretas": {
-   "A": "**Deformidade lombossacra.**\n- Só nos casos de alto grau.",
-   "B": "**Alteração de marcha.**\n- Também de alto grau.",
-   "C": "**Radiculopatia.**\n- Surge mais tarde, com estreitamento foraminal."
+   "A": "A deformidade lombossacra só aparece quando o escorregamento já é grande. Não é como a doença costuma começar.",
+   "B": "A marcha alterada, com quadris e joelhos fletidos, é um achado dos casos de alto grau, tardio.",
+   "C": "A radiculopatia surge quando o escorregamento estreita o forame de L5, o que também é mais tardio e menos frequente do que a dor lombar."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Pense numa ginasta de 13 anos que treina todos os dias. Ela passa horas arqueando as costas para trás: pontes, flic-flacs, aberturas. Cada extensão concentra carga numa pequena ponte de osso atrás da vértebra, a pars interarticularis de L5. Com a repetição, essa ponte racha por estresse, como um clipe dobrado muitas vezes. É a espondilólise. Se a vértebra depois escorrega para a frente, vira espondilolistese.\n\nO que leva essa menina ao consultório quase sempre é **dor lombar baixa**, que piora com o esporte e com a extensão do tronco e melhora com repouso. No exame, ficar em pé numa perna só e inclinar o tronco para trás (o teste da cegonha) reproduz a dor, e é comum encontrar os músculos de trás da coxa encurtados. Esportes de extensão repetida, como ginástica, balé, lutas, mergulho e levantamento de peso, são os clássicos.\n\nOs outros achados da questão existem, mas chegam mais tarde e nos casos graves. Quando o escorregamento é grande, aparecem o degrau palpável na lombar, a deformidade lombossacra, a marcha com quadris e joelhos fletidos e a compressão da raiz L5. São marcas do alto grau, não da apresentação inicial.\n\nA investigação começa com radiografia. A tomografia mostra bem o defeito ósseo, e a ressonância, sem radiação, flagra o edema da fratura de estresse ainda no começo, quando ela pode consolidar. Nos casos de baixo grau, afastamento do esporte, fisioterapia e às vezes colete resolvem; cirurgia fica para o alto grau ou para a dor que não cede.",
+  "correta": "Dor lombar. É a queixa que leva a maioria das crianças e adolescentes ao médico, geralmente ligada a esportes com extensão repetida da coluna.",
+  "referencias": [
+   "Hu SS, Tribus CB, Diab M, Ghanayem AJ. Spondylolisthesis and spondylolysis. J Bone Joint Surg Am. 2008;90(3):656-671."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0206": {
@@ -2340,36 +2349,45 @@
   "conferido": false
  },
  "coluna-0207": {
-  "conceito": "### Disco C6-C7 comprime C7\n- **Sensibilidade:** **dedo médio**.\n- **Motor:**\n  - **tríceps** (extensão do cotovelo);\n  - **flexores do punho**;\n  - **extensores dos dedos**.\n- **Reflexo:** ==tricipital==.\n\n### Por que as outras estão erradas\n- **Face lateral do braço:** C5.\n- **Bíceps:** C5 e C6.\n- **Região tenar:** território sensitivo do **mediano** (C6 na raiz). Hipoestesia isolada sugere **túnel do carpo**, e não radiculopatia.\n\n### Frequência\nC7 (disco C6-C7) e C6 (disco C5-C6) são as radiculopatias cervicais **mais comuns**.\n\n> **Na prova:** C6-C7 = C7 = ==reflexo tricipital== + tríceps + dedo médio.",
-  "correta": "**Diminuição do reflexo tricipital.**",
   "incorretas": {
-   "A": "**Face lateral do braço.**\n- **C5.**",
-   "B": "**Fraqueza do bíceps.**\n- **C5 e C6.**",
-   "D": "**Região tenar.**\n- Mediano (C6); sugere compressão **distal**."
+   "A": "A face lateral do braço é o território de C5, comprimida pelo disco C4-C5.",
+   "B": "O bíceps depende de C5 e C6. A raiz C7 trabalha do lado oposto, no tríceps.",
+   "D": "A região tenar é território do nervo mediano na mão. Alteração isolada ali sugere túnel do carpo, não uma hérnia C6-C7."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O raciocínio tem dois passos. Primeiro, descobrir qual raiz o disco C6-C7 aperta. No pescoço, cada raiz sai acima da vértebra com o seu número, porque existe uma raiz C8 sem vértebra C8. A raiz que sai entre C6 e C7 é a **C7**.\n\nSegundo, lembrar o que a C7 faz. Ela comanda o **tríceps**, que estende o cotovelo, e participa dos flexores do punho e dos extensores dos dedos. Seu território de pele é o **dedo médio**. E o reflexo que depende dela é o **tricipital**, pesquisado batendo no tendão do tríceps logo acima do cotovelo. Na compressão da raiz, esse reflexo diminui.\n\nC7 e C6 são as radiculopatias cervicais mais comuns, porque os discos C5-C6 e C6-C7 são os que mais se movem e mais se desgastam.\n\nUma das alternativas merece atenção especial. Dormência na região tenar, a parte carnuda da base do polegar, é território do nervo mediano na mão. Se ela aparece isolada, sem dor no pescoço e sem outros sinais de raiz, pense primeiro em compressão do nervo no punho, a síndrome do túnel do carpo. Radiculopatia não costuma se apresentar assim.",
+  "correta": "Diminuição do reflexo tricipital. O disco C6-C7 comprime a raiz C7, responsável pelo tríceps e por esse reflexo.",
+  "referencias": [
+   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0208": {
-  "conceito": "### A faceta dita o movimento\n| Região | Orientação das facetas | Movimento favorecido | Movimento limitado |\n|---|---|---|---|\n| Cervical | **oblíqua** (~45°) | todos (flexoextensão, rotação, inclinação acoplada) | pouco |\n| Torácica | **coronal** | **rotação** | flexoextensão (também pelas costelas) |\n| ==Lombar== | ==sagital== | ==flexoextensão== | **rotação** |\n\n### Consequências\n- Na lombar, a faceta sagital **trava a rotação**. Forças rotacionais excessivas sobrecarregam o **disco** (fissuras anulares).\n- **Facetas mais sagitalizadas em L4-L5** predispõem à **espondilolistese degenerativa**.\n- Assimetria facetária (**tropismo**) associa-se à degeneração discal em alguns estudos.\n- A **junção toracolombar**, onde as facetas mudam de coronal para sagital, concentra **tensões**: é a região mais fraturada.\n\n> **Na prova:** lombar flete e estende bem pela ==orientação sagital das facetas==.",
-  "correta": "**Orientação das facetas articulares.**",
   "incorretas": {
-   "A": "**Discos mais altos.**\n- Influenciam a amplitude, não a direção.",
-   "B": "**Ausência de costelas.**\n- Retira uma restrição, mas quem define a direção é a faceta.",
-   "C": "**Musculatura abdominal.**\n- Move e estabiliza; não define a direção articular."
+   "A": "A altura do disco influencia quanto a coluna se move, mas não em que direção. Quem define a direção são as facetas.",
+   "B": "A ausência das costelas tira uma restrição importante da coluna torácica, mas não explica por que a lombar flete e estende bem e gira pouco.",
+   "C": "Os músculos abdominais movem e estabilizam o tronco, mas não determinam a direção em que as articulações deslizam."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Entre duas vértebras existem três articulações: o disco na frente e duas facetas atrás, uma de cada lado. O disco é flexível em quase todas as direções. Quem decide para onde a coluna pode ir são as **facetas**, pequenas superfícies articulares que deslizam uma sobre a outra. Elas funcionam como trilhos: o movimento acontece no sentido em que os trilhos deixam.\n\nNa coluna lombar as facetas são orientadas quase no **plano sagital**, ou seja, de frente para trás, como duas paredes paralelas que olham uma para a outra. Esse desenho deixa deslizar bem na flexão e na extensão e trava a rotação: quando você tenta girar o tronco, a faceta de um lado bate na do outro. Na coluna torácica é o contrário. As facetas ficam no plano coronal, como telhas sobrepostas, e permitem rotação, enquanto as costelas e o esterno limitam a flexão e a extensão.\n\nAlgumas consequências clínicas vêm direto disso. A transição toracolombar, onde as facetas mudam de orientação, concentra tensão e é a região da coluna que mais fratura. Como a faceta lombar trava a rotação, forças de torção sobrecarregam o disco e favorecem fissuras no seu anel. E facetas excessivamente sagitais em L4-L5 deixam a vértebra escorregar para a frente mais facilmente, um dos fatores da espondilolistese degenerativa.",
+  "correta": "Orientação das facetas articulares. Na lombar elas ficam quase no plano sagital e guiam o movimento de flexão e extensão, ao mesmo tempo em que limitam a rotação.",
+  "referencias": [
+   "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0209": {
-  "conceito": "### Nutrição do disco intervertebral\n- O disco do adulto é a **maior estrutura avascular** do corpo.\n- **Terço externo do ânulo:** recebe vasos **perianulares**.\n- **Núcleo pulposo e ânulo interno:** nutridos por ==difusão através das placas terminais== cartilaginosas, a partir do **leito capilar subcondral** do corpo vertebral.\n- **Bombeamento:** a difusão depende da **carga cíclica**. Com a compressão, o disco expulsa água e metabólitos; na descarga, embebe nutrientes. O repouso prolongado e a carga estática são prejudiciais.\n\n### Consequências\n- **Capacidade de reparo** muito baixa.\n- **Fatores que aceleram a degeneração:**\n  - **tabagismo** (vasoconstrição);\n  - **aterosclerose** das artérias segmentares;\n  - **diabetes**;\n  - **calcificação / esclerose da placa terminal** com a idade, que fecha a porta de entrada.\n- **Gradiente:** o centro do núcleo tem pouco oxigênio e pH ácido, o que favorece a morte celular e a degeneração.\n\n> **Na prova:** nutrição do disco = ==difusão pelas placas terminais==.",
-  "correta": "**Difusão pelos platôs (placas terminais).**",
   "incorretas": {
-   "B": "**Vasos perianulares.**\n- Irrigam só o **terço externo** do ânulo.",
-   "C": "**Vasos dentro dos platôs.**\n- No adulto, não há vasos entrando no disco; eles regridem na infância.",
-   "D": "**Artéria vertebral anterior.**\n- A vertebral irriga a cervical e o tronco encefálico, não os discos."
+   "B": "Os vasos perianulares existem, mas só irrigam o terço externo do anel fibroso. O núcleo e o anel interno dependem da difusão.",
+   "C": "No adulto não há vasos dentro dos platôs entrando no disco; eles regridem na infância. Os capilares ficam no osso subcondral, e o que atravessa a placa é a difusão.",
+   "D": "A artéria vertebral sobe pelo pescoço para irrigar o tronco encefálico e parte do cérebro. Não é responsável pela nutrição dos discos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O disco intervertebral do adulto é a maior estrutura do corpo sem vasos sanguíneos. Na infância ainda entram alguns vasos pelas placas terminais, mas eles desaparecem cedo. A partir daí, o núcleo pulposo e a parte interna do anel vivem de **difusão**: nutrientes e oxigênio saem dos capilares que ficam no osso logo acima e logo abaixo do disco, atravessam a **placa terminal** cartilaginosa e caminham pela matriz até as células. Apenas o terço mais externo do anel recebe vasos pequenos da periferia.\n\nA difusão tem um motor curioso: o próprio movimento. Quando a coluna recebe carga, o disco é espremido e expulsa água e restos do metabolismo; quando a carga sai, ele se reidrata como uma esponja e puxa nutrientes. Carga que vai e volta, como caminhar, ajuda a nutrir. Carga estática por horas ou repouso absoluto prejudicam.\n\nEsse sistema é frágil, e isso explica muito da degeneração do disco. As células do centro estão longe da fonte, vivem com pouco oxigênio e num ambiente ácido. Qualquer coisa que reduza o sangue nos capilares do osso ou que feche a placa terminal piora tudo: o cigarro, que contrai os vasos; a aterosclerose das artérias que irrigam as vértebras; o diabetes; e a própria calcificação da placa terminal com a idade. Com pouca nutrição, as células morrem, a matriz perde água e o disco degenera, com quase nenhuma capacidade de se reparar.",
+  "correta": "Por difusão através dos platôs vertebrais. Os nutrientes saem dos capilares do osso e atravessam a placa terminal cartilaginosa até alcançar as células do disco.",
+  "referencias": [
+   "Urban JP, Smith S, Fairbank JC. Nutrition of the intervertebral disc. Spine. 2004;29(23):2700-2709."
+  ],
+  "geradoEm": "2026-10-02",
   "conferido": false
  },
  "coluna-0210": {
