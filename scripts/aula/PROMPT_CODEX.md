@@ -10,6 +10,29 @@ de prova de título em ortopedia (TEOT, TARO, TECOC, ENARE). Trabalhe SEMPRE na 
 `claude/pdfs-questoes-tp64dr`, faça commits pequenos e frequentes e dê push nela. Escreva tudo em português
 do Brasil.
 
+## Diretriz do dono do projeto (02/10/2026): cada questão é uma aula isolada
+
+Vale para todo comentário novo ou reescrito, acima de qualquer regra de tamanho deste arquivo:
+
+- Sempre explicar o MOTIVO da resposta. Nunca assumir que quem lê já conhece o tema.
+- Todo conceito, sigla, classificação, epônimo ou sinal citado é explicado na primeira vez em que
+  aparece, em linguagem simples, como se o leitor nunca tivesse ouvido falar dele.
+- Explicar tudo o que a questão exige: definição, anatomia ou mecanismo, classificação completa,
+  números de corte, conduta e armadilhas da banca.
+- Para CADA alternativa errada, dizer o que ela é, a que situação ela pertence e por que não responde
+  a esta pergunta. Uma linha curta do tipo "fecha antes" não basta.
+- O comentário precisa funcionar sozinho: quem cair direto nesta questão sai sabendo o tema, sem
+  depender de outra questão do acervo.
+- O tamanho segue a necessidade da explicação.
+- Forma livre: nenhum molde fixo. Cada comentário é uma peça única, escrita como um professor humano
+  escreveria para aquela questão. Títulos em negrito no começo de cada parágrafo, o fecho "Na prova:",
+  listas ou tabelas só entram quando fazem sentido para aquela questão, nunca por obrigação. Repetir a
+  mesma estrutura em todas fica artificial; varie a abertura, o ritmo e a organização.
+  Esta diretriz substitui as regras de formato das seções abaixo (títulos obrigatórios, "Na prova",
+  proibição de listas); continua valendo não usar travessão.
+- Referências: na seção `## referencias` do lote (uma por linha). Só citar referência conferida; sem
+  DOI quando ele não puder ser conferido.
+
 ## O que já foi feito (histórico para você se situar)
 
 Este trabalho começou com o Claude Code. Até agora:

@@ -3,8 +3,8 @@
  "atualizadoEm": "2026-10-02",
  "baseCommit": "395a1b10cc0d45f06e9072d8820aa52e90613f3a",
  "branchTrabalho": "codex/enriquecer-comentarios-20261002",
- "pr": 31,
- "estadoLote": "em_pr",
+ "pr": null,
+ "estadoLote": "na_branch",
  "politica": "Primeiro sem comentário elegível; depois melhorar. Preservar revisão médica. Não alterar questões, gabaritos, pagamentos ou Supabase. Não repetir hashes concluídos. Reconstruir filas dos arquivos atuais em cada execução. Usuário autorizou em 2026-10-02 publicar blocos no site: após validações, incorporar PR e verificar deploy; continuar a rotina horária.",
  "baselineQuestoes": {
   "coluna-0001": "39f9ecc5dd050091ba72dd5854192a2dfaea7c000d3270ac15955a7b16446446",
@@ -4724,7 +4724,7 @@
   "mao-0004": {
    "questaoSha256": "a16d7a0d30dabf935d55ad4625015844996f12b4f9da2b13f79719e9da2217fa",
    "comentarioSha256": "5b3ad79b4d178a3d0d832e50589ff5aafc629bea56ac05fa9e9425aa754c7e1e",
-   "estado": "em_pr",
+   "estado": "incorporado",
    "data": "2026-10-02",
    "fontes": [
     "Oberlin C et al. Nerve transfer to biceps muscle using a part of ulnar nerve for C5-C6 avulsion of the brachial plexus. J Hand Surg Am. 1994;19(2):232-237. DOI: 10.1016/0363-5023(94)90011-6. https://pubmed.ncbi.nlm.nih.gov/8201186/",
@@ -4736,7 +4736,7 @@
   "mao-0010": {
    "questaoSha256": "2f9c90749c066f80e01c3abae03ecb6169fdde03d54c21fb6995c49481e35c17",
    "comentarioSha256": "b3d4e1dc51459d0f066f64ac8827fb060421c549c4ad3dc5cd94604d928c4edc",
-   "estado": "em_pr",
+   "estado": "incorporado",
    "data": "2026-10-02",
    "fontes": [
     "Spontaneous Subclavian Vein Thrombosis in a Healthy Adolescent Cheerleader: A Case of Paget-Schroetter Syndrome. Relato de caso, PMID: 26855343. https://pubmed.ncbi.nlm.nih.gov/26855343/",
@@ -4748,7 +4748,7 @@
   "mao-0011": {
    "questaoSha256": "4d51d45657ab56e8166110872d9144ae1c3fbdd071a402b140bcd8e8a093c3f9",
    "comentarioSha256": "e6965e4320eb8211cbf9791ced5c96b88385cef9023c98416c099a1dac67f6d7",
-   "estado": "em_pr",
+   "estado": "incorporado",
    "data": "2026-10-02",
    "fontes": [
     "Montechiarello S et al. The intersection syndrome: Ultrasound findings and their diagnostic value. J Ultrasound. 2010;13(2):70-73. DOI: 10.1016/j.jus.2010.07.009. https://pmc.ncbi.nlm.nih.gov/articles/PMC3552821/",
@@ -4756,6 +4756,1398 @@
     "Distal Intersection Syndrome Between Second and Third Dorsal Compartments of the Wrist. Cureus. 2023;15(3):e36919. DOI: 10.7759/cureus.36919. https://pmc.ncbi.nlm.nih.gov/articles/PMC10148692/"
    ],
    "pr": 31
+  },
+  "coluna-0001": {
+   "questaoSha256": "39f9ecc5dd050091ba72dd5854192a2dfaea7c000d3270ac15955a7b16446446",
+   "comentarioSha256": "9e9c133309a4b1adf8f8216bd9806f3e47134d34d753bc11f86b3060d3ccbac3",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Walters BC, Hadley MN, Hurlbert RJ et al. Guidelines for the management of acute cervical spine and spinal cord injuries: 2013 update. Neurosurgery. 2013;60(Suppl 1):82-91. DOI: 10.1227/01.neu.0000430319.32247.7f",
+    "Kwon BK, Tetreault LA, Martin AR et al. A Clinical Practice Guideline for the Management of Patients With Acute Spinal Cord Injury: Recommendations on Hemodynamic Management. Global Spine J. 2024;14(3 Suppl):187S-211S. DOI: 10.1177/21925682231202348. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10964888/"
+   ]
+  },
+  "coluna-0003": {
+   "questaoSha256": "ff188fc0a2ca7e514e2518a7bbdbec4ea1395abd629358c393969764bc4c4505",
+   "comentarioSha256": "98cd5f060a94765ae78dcc1d73e91981a7956c316ccdcf51bdf07aa3b403999f",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Wiltse LL, Newman PH, Macnab I. Classification of spondylolisis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29. https://pubmed.ncbi.nlm.nih.gov/1277669/",
+    "Kalichman L, Kim DH, Li L, Guermazi A, Berkin V, Hunter DJ. Spondylolysis and spondylolisthesis: prevalence and association with low back pain in the adult community-based population. Spine. 2009;34(2):199-205. DOI: 10.1097/BRS.0b013e31818edcfd"
+   ]
+  },
+  "coluna-0005": {
+   "questaoSha256": "85485c8044f51457778dfcb5af2e225652e56435e5ec8c70932e4f1e3e02b2b0",
+   "comentarioSha256": "13e3d9d5b2bdb46275a07b7d814c4d84b4c5455995c51c61f056cdccc2226331",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546. DOI: 10.1179/204577211X13207446293695. https://pubmed.ncbi.nlm.nih.gov/22330108/",
+    "Tarulli AW, Raynor EM. Lumbosacral radiculopathy. Neurol Clin. 2007;25(2):387-405. DOI: 10.1016/j.ncl.2007.01.008"
+   ]
+  },
+  "coluna-0006": {
+   "questaoSha256": "fee863101227a6d7e129ccb1899c1d1724da63baa2401baa1be37da5d89358a7",
+   "comentarioSha256": "c9b0613088f01317e5eca5ff43d0c6354b4ffe957961924bfa5e4ca7e4f905e3",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Katz JN, Harris MB. Lumbar spinal stenosis. N Engl J Med. 2008;358(8):818-825."
+   ]
+  },
+  "coluna-0007": {
+   "questaoSha256": "3ce32ebcdbd84aa70309406d14b9dfb0ddee052656bafe41e72765ced7cf0d3e",
+   "comentarioSha256": "19733563edfdf347e9ed1eecb5bf142e2b8971cbcdb200e1cb9ab18eeabaf8c4",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Wiltse LL, Newman PH, Macnab I. Classification of spondylolisis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29.",
+    "Wynne-Davies R, Scott JH. Inheritance and spondylolisthesis: a radiographic family survey. J Bone Joint Surg Br. 1979;61-B(3):301-305."
+   ]
+  },
+  "coluna-0008": {
+   "questaoSha256": "4cfd0e7a5f291b6417c9a2418510aab85cc1bd8bd5a72969096534ba2450641c",
+   "comentarioSha256": "f93a8ff46949cc3d53e8e73603c138b954aba8b4eac262050fa115e370039220",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Sørensen KH. Scheuermann's juvenile kyphosis: clinical appearances, radiography, aetiology and prognosis. Copenhagen: Munksgaard; 1964."
+   ]
+  },
+  "coluna-0009": {
+   "questaoSha256": "92e3af8ac59302d46e128657b6a3ca1628c7c4ceddaaffccb3c40a40029484b3",
+   "comentarioSha256": "9ffc15b2897695e3f3fa1a18b07b14b4a307a0bfa6f70997ab065e9c5a0fbe6a",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Tator CH, Fehlings MG. Review of the secondary injury theory of acute spinal cord trauma with emphasis on vascular mechanisms. J Neurosurg. 1991;75(1):15-26.",
+    "Fehlings MG, Vaccaro A, Wilson JR et al. Early versus delayed decompression for traumatic cervical spinal cord injury: results of the Surgical Timing in Acute Spinal Cord Injury Study (STASCIS). PLoS One. 2012;7(2):e32037."
+   ]
+  },
+  "coluna-0010": {
+   "questaoSha256": "83b7910fa13cb519ef0c0dd987ecc4687e237a3d55d99fd1c3f011575d8d8aa4",
+   "comentarioSha256": "090545681c7a542ca57487af84951ff5b54fcb975a43c936cfed23547ae71881",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Weinstein SL, Flynn JM (eds). Lovell and Winter's Pediatric Orthopaedics. 7th ed. Philadelphia: Lippincott Williams & Wilkins; 2014. Capítulo de crescimento e desenvolvimento da coluna."
+   ]
+  },
+  "coluna-0011": {
+   "questaoSha256": "1dcbcdfaa627e26ba75fa35191281d4979b17ffc9f244661857884b96cd7e4a4",
+   "comentarioSha256": "f06d6958ee3020ec73f2add9778b12235f799a8a86dd6da9f802ca974f5fc6c4",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Macrae IF, Wright V. Measurement of back movement. Ann Rheum Dis. 1969;28(6):584-589."
+   ]
+  },
+  "coluna-0012": {
+   "questaoSha256": "a7fb45c755db6e24bd07ed0340f7646739ea4142f54d74efdaf30d07dc2c9b34",
+   "comentarioSha256": "9451340a9ed9cbaffc15cd16a8873a2ced3fc02e2aaac38fa2c3bef793f48e57",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Braun J, Sieper J. Ankylosing spondylitis. Lancet. 2007;369(9570):1379-1390.",
+    "Resnick D, Niwayama G. Radiographic and pathologic features of spinal involvement in diffuse idiopathic skeletal hyperostosis (DISH). Radiology. 1976;119(3):559-568."
+   ]
+  },
+  "coluna-0013": {
+   "questaoSha256": "337d9ed8f5c366b9a24a5701e5fecb2888b8f1be8a679455714759d50217af61",
+   "comentarioSha256": "3981b6d26222f904aaaf8db70ffcaa30f731cc021c8b80cff0d03b51450b319f",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Katz JN, Harris MB. Lumbar spinal stenosis. N Engl J Med. 2008;358(8):818-825.",
+    "Weinstein JN, Tosteson TD, Lurie JD et al. Surgical versus nonsurgical therapy for lumbar spinal stenosis. N Engl J Med. 2008;358(8):794-810."
+   ]
+  },
+  "coluna-0014": {
+   "questaoSha256": "c312a0a5270587fe2b1505e818bee32b03b4d14cf199233ed939140507646d31",
+   "comentarioSha256": "eb328cd7deefa431217f6596718f90a564177f73669a5fa18b37c58c2b35a1b0",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Meyerding HW. Spondylolisthesis. Surg Gynecol Obstet. 1932;54:371-377.",
+    "Wiltse LL, Newman PH, Macnab I. Classification of spondylolisis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29."
+   ]
+  },
+  "coluna-0015": {
+   "questaoSha256": "fcb119e5d27b6449805e4892645bf7c98e5b562eba5ac0321827f4f33c8375f4",
+   "comentarioSha256": "83b3adbe7e5b71ecdce14fef981ec036081804b3ac1c489645c92e3729675df9",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546.",
+    "Schneider RC. The syndrome of acute anterior spinal cord injury. J Neurosurg. 1955;12(2):95-122."
+   ]
+  },
+  "coluna-0016": {
+   "questaoSha256": "50578d8faa39c1c1143dc9e0b09b02cfede4547ca7fad82ab697d134b7c1c64c",
+   "comentarioSha256": "c70885845e468f66040eb51cfa31737e57fae0dbd24563f3395ecbb737659209",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977.",
+    "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+   ]
+  },
+  "coluna-0017": {
+   "questaoSha256": "cdb9aed4278d6db68623c2154a9eb45996b6cf491f424432713ddf28ca197d8f",
+   "comentarioSha256": "2601733e048e6a3681b300b47e55e6adc47593762aa9aa2c69d9e9ebca925b3c",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Sørensen KH. Scheuermann's juvenile kyphosis: clinical appearances, radiography, aetiology and prognosis. Copenhagen: Munksgaard; 1964."
+   ]
+  },
+  "coluna-0018": {
+   "questaoSha256": "04fbe301695a53832729580aa80794c53b76143267c1c205b8a82cd904717981",
+   "comentarioSha256": "d3e8d2d6cc1571d45f0fcfe41815c590a5c168f0645b56ea0a59d83c2250ca4c",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+   ]
+  },
+  "coluna-0019": {
+   "questaoSha256": "ad1365a00068b72e1e71837a70a41e59beb29245afe065c6adcdac16664e6a81",
+   "comentarioSha256": "14cb50106cdbf00c0579f0949b7ac1a28702e33515c9b4132747cba415a26fcd",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Durrani AA, Crawford AH, Chouhdry SN, Saifuddin A, Morley TR. Modulation of spinal deformities in patients with neurofibromatosis type 1. Spine. 2000;25(1):69-75."
+   ]
+  },
+  "coluna-0020": {
+   "questaoSha256": "d1c1aa6b18fd70fa714f843ba6efe6ddb1af065969c435aa5bbd1365c494296e",
+   "comentarioSha256": "2de1604e38c158fdce5de753fc7ca51b92b7acfe63fb17151877df207b642a9a",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Gill GG, Manning JG, White HL. Surgical treatment of spondylolisthesis without spine fusion: excision of the loose lamina with decompression of the nerve roots. J Bone Joint Surg Am. 1955;37-A(3):493-520."
+   ]
+  },
+  "coluna-0021": {
+   "questaoSha256": "a41f4183c8049ce59712f92e806a917b709d8b98a7ff8a35dec491a7c8d996f5",
+   "comentarioSha256": "fdf68ceb8fa57f70f0e8b7bc67dc974ed55e88d5b4dede62f5435a51b7f1cf3c",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977.",
+    "Spurling RG, Scoville WB. Lateral rupture of the cervical intervertebral discs: a common cause of shoulder and arm pain. Surg Gynecol Obstet. 1944;78:350-358."
+   ]
+  },
+  "coluna-0023": {
+   "questaoSha256": "510565cb61b508d945088b2ec4150512ebe7f6e392ccd67471f3f4a83d445eea",
+   "comentarioSha256": "fe6a28cf46aeacb8c19d76723349c9a8ed82f8eaaf1b76f28a27ce2641f611d9",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Harms J, Melcher RP. Posterior C1-C2 fusion with polyaxial screw and rod fixation. Spine. 2001;26(22):2467-2471.",
+    "Hoppenfeld S, deBoer P, Buckley R. Surgical Exposures in Orthopaedics: The Anatomic Approach. 4th ed. Philadelphia: Lippincott Williams & Wilkins; 2009."
+   ]
+  },
+  "coluna-0024": {
+   "questaoSha256": "4e8496479920026812db79bf95372ef4ae18997aae24b4c9263ffc9ed5c6a8cf",
+   "comentarioSha256": "3a57b92c0fb1b20b4d7dc7b27cf28dd28264f60479732b2e494101fa75bbeebf",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Weinstein SL, Dolan LA, Wright JG, Dobbs MB. Effects of bracing in adolescents with idiopathic scoliosis. N Engl J Med. 2013;369(16):1512-1521.",
+    "Weinstein SL, Ponseti IV. Curve progression in idiopathic scoliosis. J Bone Joint Surg Am. 1983;65(4):447-455."
+   ]
+  },
+  "coluna-0025": {
+   "questaoSha256": "6e901b73ef8241f5dc705df09d563080aa597188f8fe4f1a8c90b7485eb55269",
+   "comentarioSha256": "d8f99245968e7845c96ac8ffbb2d5ea6ef3f9c2335c9dac003a83a0b594f696a",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "American College of Surgeons. Advanced Trauma Life Support (ATLS) Student Course Manual. 10th ed. Chicago: American College of Surgeons; 2018.",
+    "Walters BC, Hadley MN, Hurlbert RJ et al. Guidelines for the management of acute cervical spine and spinal cord injuries: 2013 update. Neurosurgery. 2013;60(Suppl 1):82-91."
+   ]
+  },
+  "coluna-0026": {
+   "questaoSha256": "2d6864a69d5a170a0d73fe140f431a2d56e75e8de8e6c8c22787eae003b2c753",
+   "comentarioSha256": "d92dd927089efaea70f5b7b582d92729b7191775bafdb5000f2978ec895ff036",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0027": {
+   "questaoSha256": "deab90cd5c063346e4f50dc96a0616c7d74e42be77e46960a02ee1e01d50c7d6",
+   "comentarioSha256": "8bccb14f8d21878ee6116020f026de56a82c6c6278bd46463e40ad5b2886c95f",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Standring S (ed). Gray's Anatomy: The Anatomical Basis of Clinical Practice. 41st ed. London: Elsevier; 2016. Capítulo da medula espinal e sua irrigação."
+   ]
+  },
+  "coluna-0028": {
+   "questaoSha256": "8ce5dae02c0c004ff2db4e7250356769f3d5cb1fa0349e76852f01f09b34c2a4",
+   "comentarioSha256": "b10a13f81dfc426270bd5fe803fcf3f65fc1c9b4bcf8338826096cffa9d28904",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977.",
+    "Tarulli AW, Raynor EM. Lumbosacral radiculopathy. Neurol Clin. 2007;25(2):387-405."
+   ]
+  },
+  "coluna-0029": {
+   "questaoSha256": "fcb9f0df4fb5802126869141cf5e26dd1061aaadd0da8aab05e4e553c66a0327",
+   "comentarioSha256": "0dfd459069eb920656d44df772230f6c1192a200a53b37ab58c063ddf3799e19",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Katz JN, Harris MB. Lumbar spinal stenosis. N Engl J Med. 2008;358(8):818-825."
+   ]
+  },
+  "coluna-0030": {
+   "questaoSha256": "59ef3721f80df2369c1db6ed4c2028625d839eb8f11795320cd2f124f423c8bb",
+   "comentarioSha256": "b772de1bc2210f54da1692c01ffbcd2696f2f6582e04dddfc864350e53ee03f0",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Lonstein JE, Carlson JM. The prediction of curve progression in untreated idiopathic scoliosis during growth. J Bone Joint Surg Am. 1984;66(7):1061-1071."
+   ]
+  },
+  "coluna-0031": {
+   "questaoSha256": "8e6ac1dee69a6a367e10a638be6ce4371c3fc0f80605b65fb9a77f0676461c55",
+   "comentarioSha256": "419306645308d28804f214f5325aa9173f39018c4c19e7de1bfbdee7fa1bb02a",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Lowe TG. Scheuermann disease. J Bone Joint Surg Am. 1990;72(6):940-945.",
+    "Sørensen KH. Scheuermann's juvenile kyphosis: clinical appearances, radiography, aetiology and prognosis. Copenhagen: Munksgaard; 1964."
+   ]
+  },
+  "coluna-0032": {
+   "questaoSha256": "421057b1c9c9c1194c0161613256725f452c1a0572e39f20fca5f195106dbd13",
+   "comentarioSha256": "434b7b6714b8c955d0f09011e0f0e91c2827df236ba5d0bec3265a177efd3508",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546.",
+    "McKinley W, Santos K, Meade M, Brooke K. Incidence and outcomes of spinal cord injury clinical syndromes. J Spinal Cord Med. 2007;30(3):215-224."
+   ]
+  },
+  "coluna-0033": {
+   "questaoSha256": "37c9dabd04794d5edc5e1a5a904473fd8b5f5b1272cc4dd9f5c1c7c5513526e5",
+   "comentarioSha256": "317d827fdb6bff0efcbc8b8b0dbdc6829c0aa695c4bec9d3b8316d15e6843c1b",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0034": {
+   "questaoSha256": "06355a891b80b7d4cffb427e90ecdaa50d3a85fdaa6b019f48f30f6332d4cec2",
+   "comentarioSha256": "c39dd86403b6054424fdb4d7a9274916f838c4bda466be1f3e25a9f73f77ec6a",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+   ]
+  },
+  "coluna-0035": {
+   "questaoSha256": "60ec5e1e5f77e30fb5c486c902fb5131c9dcaf2a40af88be5ee293233c601110",
+   "comentarioSha256": "c85685b1bcd8a381e610829d1b98705c231de5384e1eb89c1fbf6d4d2231e313",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "American College of Surgeons. Advanced Trauma Life Support (ATLS) Student Course Manual. 10th ed. Chicago: American College of Surgeons; 2018.",
+    "Kwon BK, Tetreault LA, Martin AR et al. A Clinical Practice Guideline for the Management of Patients With Acute Spinal Cord Injury: Recommendations on Hemodynamic Management. Global Spine J. 2024;14(3 Suppl):187S-211S."
+   ]
+  },
+  "coluna-0036": {
+   "questaoSha256": "f3c0e8f11cd8b530d0cfff6461a42c53c30706fc9d571543b9abd6c7775546f6",
+   "comentarioSha256": "b42c8fd531974c9891187936bd1947c4a44efffcede2f19402221929860f110d",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Chou R, Qaseem A, Owens DK, Shekelle P. Diagnostic imaging for low back pain: advice for high-value health care from the American College of Physicians. Ann Intern Med. 2011;154(3):181-189.",
+    "Chou R, Qaseem A, Snow V et al. Diagnosis and treatment of low back pain: a joint clinical practice guideline from the American College of Physicians and the American Pain Society. Ann Intern Med. 2007;147(7):478-491."
+   ]
+  },
+  "coluna-0037": {
+   "questaoSha256": "cc00505172eda6b7f41e2db9530a226d1c916cc75f5c4af4fa0c6209ed6b7c07",
+   "comentarioSha256": "6dd612bdd42361079f9e74a0cd90245d9d3bcb769130d24d40dd65daf088428c",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Schneider RC, Cherry G, Pantek H. The syndrome of acute central cervical spinal cord injury; with special reference to the mechanisms involved in hyperextension injuries of cervical spine. J Neurosurg. 1954;11(6):546-577."
+   ]
+  },
+  "coluna-0038": {
+   "questaoSha256": "2c723e60f0ba9821834a82070ae4257f21aebad3b988b49258758807e94548fe",
+   "comentarioSha256": "62435561a85bd65b2041cd495d5b127c12405a239d75d3a56325069137aa4a22",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Qaseem A, Wilt TJ, McLean RM, Forciea MA. Noninvasive treatments for acute, subacute, and chronic low back pain: a clinical practice guideline from the American College of Physicians. Ann Intern Med. 2017;166(7):514-530.",
+    "Dahm KT, Brurberg KG, Jamtvedt G, Hagen KB. Advice to rest in bed versus advice to stay active for acute low-back pain and sciatica. Cochrane Database Syst Rev. 2010;(6):CD007612."
+   ]
+  },
+  "coluna-0039": {
+   "questaoSha256": "262f60f55f3fa3910a8933fdeaa6aa1ea365e1d5859ac485cb0d4385da58d657",
+   "comentarioSha256": "c9f57e322b47b1ce1deeb0538ea43b9293230e344b0ce8af59491247611bc4b2",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0040": {
+   "questaoSha256": "31ef4708a65d9c1632ec394ebd6cfa3b6b4632c0a4d1a4669134ee724af50e14",
+   "comentarioSha256": "11adc8ff9bb1a8c764d1f8c42e1a0d767c5546bd319efd84bf7926cc593a2adb",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537.",
+    "Lonstein JE, Carlson JM. The prediction of curve progression in untreated idiopathic scoliosis during growth. J Bone Joint Surg Am. 1984;66(7):1061-1071."
+   ]
+  },
+  "coluna-0041": {
+   "questaoSha256": "1006c540def8983c1b18ffa0c7a079da5b0ae850045357af7c209aee26a87526",
+   "comentarioSha256": "9733233ad22fbfbaac42c2f31741364484460520e0229010f4040d0705b54577",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977.",
+    "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+   ]
+  },
+  "coluna-0042": {
+   "questaoSha256": "cd900aa6b3ce9014b333214bb833e11f5a01213ec28123feedb64159f200532b",
+   "comentarioSha256": "121ced17db283fc8b821698a29ddaa978829a9b9d216b834320490292e71f946",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Lowe TG. Scheuermann disease. J Bone Joint Surg Am. 1990;72(6):940-945."
+   ]
+  },
+  "coluna-0043": {
+   "questaoSha256": "3499f5765c0766725003ba309d9357c1be8e1ce7e4bd2ec14c3f476de2fc3ccb",
+   "comentarioSha256": "c62d3d927c324d9256f671f86233f90f041722a7f2f86683a7c1ba260e8809af",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546.",
+    "McKinley W, Santos K, Meade M, Brooke K. Incidence and outcomes of spinal cord injury clinical syndromes. J Spinal Cord Med. 2007;30(3):215-224."
+   ]
+  },
+  "coluna-0044": {
+   "questaoSha256": "855384c51096843afae7c1f244ab32fcc3c0da015d9588533abd5fe7168afa27",
+   "comentarioSha256": "094079040cd9e620aa4a4fa826ec750d1a6c0c09673089399ec3d7a7ab97e797",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Arnoldi CC, Brodsky AE, Cauchoix J et al. Lumbar spinal stenosis and nerve root entrapment syndromes: definition and classification. Clin Orthop Relat Res. 1976;(115):4-5.",
+    "Katz JN, Harris MB. Lumbar spinal stenosis. N Engl J Med. 2008;358(8):818-825."
+   ]
+  },
+  "coluna-0045": {
+   "questaoSha256": "c2584d213d83d4eb04b653960f211d95761a8367ee1a083be096fa4c62329b44",
+   "comentarioSha256": "dc29e65ff9f0ea4a905f770e9521feee3d071d4b0692e4755dea2f49105ec2d4",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "O'Sullivan PB, Phyty GD, Twomey LT, Allison GT. Evaluation of specific stabilizing exercise in the treatment of chronic low back pain with radiologic diagnosis of spondylolysis or spondylolisthesis. Spine. 1997;22(24):2959-2967."
+   ]
+  },
+  "coluna-0046": {
+   "questaoSha256": "0cf57573380f80e2691771c55f5d5868b28d656989114a1624249fd172919988",
+   "comentarioSha256": "37ff531d00074cc98d7cc94ed890eb677fefb7b7673b06034caffce36bf7dcba",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Sadler TW. Langman's Medical Embryology. 14th ed. Philadelphia: Wolters Kluwer; 2019.",
+    "MRC Vitamin Study Research Group. Prevention of neural tube defects: results of the Medical Research Council Vitamin Study. Lancet. 1991;338(8760):131-137."
+   ]
+  },
+  "coluna-0047": {
+   "questaoSha256": "22656d1f22c52bfafeaf780a6598853c777fe1232a71618d144846c45aed6cf1",
+   "comentarioSha256": "3e356d6a9d58e23003c932f48b0bc8d6cb4bb6222b102392eae8fb86d28e5900",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Cohen SP, Raja SN. Pathogenesis, diagnosis, and treatment of lumbar zygapophysial (facet) joint pain. Anesthesiology. 2007;106(3):591-614."
+   ]
+  },
+  "coluna-0048": {
+   "questaoSha256": "aea39aaa9582aa24414b5157354c719d065458436eb3e7d039cf69174a41236f",
+   "comentarioSha256": "77072bc5abe61134e1fce91192530f2bc556504932216160a497382a5db01f84",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Spurling RG, Scoville WB. Lateral rupture of the cervical intervertebral discs: a common cause of shoulder and arm pain. Surg Gynecol Obstet. 1944;78:350-358.",
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0049": {
+   "questaoSha256": "622ceeee5805bee8ee89187fb1214a56b168d5d80cc2f99d1fa5856ed04a62c9",
+   "comentarioSha256": "c617e579e27c7c0f04581fdd52baecfd0deae33c27c0d52c32225db3320d0eb9",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Ditunno JF, Little JW, Tessler A, Burns AS. Spinal shock revisited: a four-phase model. Spinal Cord. 2004;42(7):383-395.",
+    "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+   ]
+  },
+  "coluna-0051": {
+   "questaoSha256": "1eaf07cab52b1bcabe050e4b676f49392c72ceadbf2a10e5192a6a7c108332e9",
+   "comentarioSha256": "da06f37c755f172e10964bb0dc1cfb36aec299c65c8ad2df0a5ff6a5584dc1e8",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+   ]
+  },
+  "coluna-0052": {
+   "questaoSha256": "9ea307ed8fa5421d85884900f10c4b548ba12eb0f02aa194741f550c60560120",
+   "comentarioSha256": "11a9dda6c5402af38505f514c33243d9f1199d5e638d6bab0396d17e1048e080",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Gill GG, Manning JG, White HL. Surgical treatment of spondylolisthesis without spine fusion: excision of the loose lamina with decompression of the nerve roots. J Bone Joint Surg Am. 1955;37-A(3):493-520.",
+    "Wiltse LL, Newman PH, Macnab I. Classification of spondylolisis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29."
+   ]
+  },
+  "coluna-0053": {
+   "questaoSha256": "9c95ba97eef06f1322249ec7598500e27d96d073b3a1f49546e45e256ec4314d",
+   "comentarioSha256": "d75cbcf375f7cd5a833c1ff288bc58c3cd110bef7afd49a0e8ae2c0432b4ca6e",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Mehta MH. The rib-vertebra angle in the early diagnosis between resolving and progressive infantile scoliosis. J Bone Joint Surg Br. 1972;54(2):230-243."
+   ]
+  },
+  "coluna-0055": {
+   "questaoSha256": "b4b055ced4e8fcd530d9f39f631ef62f2efb7a82eae8021ecf46aa856951e23a",
+   "comentarioSha256": "771b036c1f98a6167a971f0919da43122f93260fb515b5b3a7eaf7c1461e4fc3",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Ozgur BM, Aryan HE, Pimenta L, Taylor WR. Extreme Lateral Interbody Fusion (XLIF): a novel surgical technique for anterior lumbar interbody fusion. Spine J. 2006;6(4):435-443.",
+    "Uribe JS, Arredondo N, Dakwar E, Vale FL. Defining the safe working zones using the minimally invasive lateral retroperitoneal transpsoas approach: an anatomical study. J Neurosurg Spine. 2010;13(2):260-266."
+   ]
+  },
+  "coluna-0057": {
+   "questaoSha256": "0d327b230130e6624745a0aad59edfebdd48aad8b201bb36cd66adc04b8e70c6",
+   "comentarioSha256": "48339ae23a81b4a5a5d39268ac718f90d7c00254e6af3a953f1cf7e98478847e",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0058": {
+   "questaoSha256": "4cfbd00dd096e78d45e25c5ef949e3598f605672b02ed3c8c2455c8782114ed4",
+   "comentarioSha256": "fb9f82f46ca18da3f1fdc693e40c0e279162bc97883b40f4221ae4ee40514f7f",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+   ]
+  },
+  "coluna-0059": {
+   "questaoSha256": "6575d07c15eb9581e731016463514afa814494a970126530597467b2c7fd65ad",
+   "comentarioSha256": "8b318b643a9e6566d7dcc1e0d05cf168534b06f785ff97523fdf98240f637946",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Gill GG, Manning JG, White HL. Surgical treatment of spondylolisthesis without spine fusion: excision of the loose lamina with decompression of the nerve roots. J Bone Joint Surg Am. 1955;37-A(3):493-520.",
+    "Wiltse LL, Newman PH, Macnab I. Classification of spondylolisis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29."
+   ]
+  },
+  "coluna-0060": {
+   "questaoSha256": "bbeb16f012b1c72e4cc9415a51012fe9b09226bbc5bf52e0c295cdcdca594e17",
+   "comentarioSha256": "eefc433c998b1d9191b5199ff47c4aa65cd9dc0238b3fe0fc532192c6e82a901",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0062": {
+   "questaoSha256": "dc33a13ff16cfbf6098841716e95efb5536e96fe17f8de7d712900508e979a53",
+   "comentarioSha256": "cca061ab5cefc3a435736b816b2082d5543605cd3cb7c345461dca5725599f02",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Fielding JW, Hawkins RJ. Atlanto-axial rotatory fixation (fixed rotatory subluxation of the atlanto-axial joint). J Bone Joint Surg Am. 1977;59(1):37-44."
+   ]
+  },
+  "coluna-0064": {
+   "questaoSha256": "6147ed56555f88197bfadcba4a6b57a5edc11c6cd2338a7ed2f434d97599e3f2",
+   "comentarioSha256": "073bf19329eaffd61b353e72931d62f74c9d40ca0d949f7d49ae665f50d86bf8",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Bazaz R, Lee MJ, Yoo JU. Incidence of dysphagia after anterior cervical spine surgery: a prospective study. Spine. 2002;27(22):2453-2458.",
+    "Fountas KN, Kapsalaki EZ, Nikolakakos LG et al. Anterior cervical discectomy and fusion associated complications. Spine. 2007;32(21):2310-2317."
+   ]
+  },
+  "coluna-0065": {
+   "questaoSha256": "779371b0f81800bd553cb66896d505c30e539984a901c30c0d4b80f1369ddd3a",
+   "comentarioSha256": "870bbd9fe47f9d3381b1d5b68e0e046c35919873fe664a04179ea07b1730afc8",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Fielding JW, Cochran GV, Lawsing JF 3rd, Hohl M. Tears of the transverse ligament of the atlas: a clinical and biomechanical study. J Bone Joint Surg Am. 1974;56(8):1683-1691.",
+    "Boden SD, Dodge LD, Bohlman HH, Rechtine GR. Rheumatoid arthritis of the cervical spine: a long-term analysis with predictors of paralysis and recovery. J Bone Joint Surg Am. 1993;75(9):1282-1297."
+   ]
+  },
+  "coluna-0066": {
+   "questaoSha256": "6cee9f193ab55b47da6ed185256cb502a0a1dca325618f81bb4377ad27a411ee",
+   "comentarioSha256": "9d62a07c67dfee50f58ee217545669a987f7b7bf7b1580b26431ca3f20e52461",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0067": {
+   "questaoSha256": "84ede39668203517d78d2a5c6fdbd23ed6d7d937fe1be3b328ae1a0e5af41f05",
+   "comentarioSha256": "c843f59d126b5e95c0969d08486af9316ec60c549fe02e37be0ef44c6691274e",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Schwab F, Patel A, Ungar B, Farcy JP, Lafage V. Adult spinal deformity: postoperative standing imbalance: how much can you tolerate? An overview of key parameters in assessing alignment and planning corrective surgery. Spine. 2010;35(25):2224-2231.",
+    "Glassman SD, Bridwell K, Dimar JR et al. The impact of positive sagittal balance in adult spinal deformity. Spine. 2005;30(18):2024-2029."
+   ]
+  },
+  "coluna-0068": {
+   "questaoSha256": "579fdf61d795770197ad12a89993281dc309f3bcc9fba2f19fd9cd97e5d47c39",
+   "comentarioSha256": "1b9b2ae4b5e54d2ba93c48649b3fc938ba666f701906153884c5ba02f4957d34",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Lee CK, Rauschning W, Glenn W. Lateral lumbar spinal canal stenosis: classification, pathologic anatomy and surgical decompression. Spine. 1988;13(3):313-320.",
+    "Arnoldi CC, Brodsky AE, Cauchoix J et al. Lumbar spinal stenosis and nerve root entrapment syndromes: definition and classification. Clin Orthop Relat Res. 1976;(115):4-5."
+   ]
+  },
+  "coluna-0069": {
+   "questaoSha256": "09d7364d67dbd8bb26e24c2f39c60c625961ccbd4e29520d7bdf1176b7c2c68b",
+   "comentarioSha256": "cc47d4a33071ae84bc01c16b9961ad545b1d64b3d004a72d48590d673cee2f73",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537.",
+    "Lonstein JE, Carlson JM. The prediction of curve progression in untreated idiopathic scoliosis during growth. J Bone Joint Surg Am. 1984;66(7):1061-1071."
+   ]
+  },
+  "coluna-0070": {
+   "questaoSha256": "7161b6e40990454246b1ba460e509d434cfc128cdd521ca6b0352779ce196b16",
+   "comentarioSha256": "b2c5b4a74ad85d6181c4fb5c35051c1b13a0d74d1f2f5740eb4a88e0c6aa1e1e",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Wiltse LL, Newman PH, Macnab I. Classification of spondylolisis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29.",
+    "Meyerding HW. Spondylolisthesis. Surg Gynecol Obstet. 1932;54:371-377."
+   ]
+  },
+  "coluna-0071": {
+   "questaoSha256": "fa73fc023ece9ecad29e518743c7dd4df5ecb8a8625639dc52d2686e022cc056",
+   "comentarioSha256": "29cb8c608cc568703671108478a4f3113cf5f88035927d801501a1c56f26424e",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Chou R, Qaseem A, Snow V et al. Diagnosis and treatment of low back pain: a joint clinical practice guideline from the American College of Physicians and the American Pain Society. Ann Intern Med. 2007;147(7):478-491.",
+    "Chou R, Qaseem A, Owens DK, Shekelle P. Diagnostic imaging for low back pain: advice for high-value health care from the American College of Physicians. Ann Intern Med. 2011;154(3):181-189."
+   ]
+  },
+  "coluna-0072": {
+   "questaoSha256": "f918d6ccc95b6a14d694ebff0345c888e1d8cad5706fa7105ca7ce02995bd5ea",
+   "comentarioSha256": "7f4df10cf61ef16010df5a6feff25cc7224e2d9218ad7a8013ccab9fe7a80502",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Zimmerli W. Vertebral osteomyelitis. N Engl J Med. 2010;362(11):1022-1029."
+   ]
+  },
+  "coluna-0073": {
+   "questaoSha256": "2ebe1415ddb41ef58cddc0fb81e11cd9045f2f2818ce4cab55318d16849f9ea3",
+   "comentarioSha256": "3d05b46ac4ec54632e4e91f6b4a1944ebc62c2cd46e059708fb8848b067aca5b",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0075": {
+   "questaoSha256": "e8ce9972c0c7a394fa4e12905b9f582c2251434dfc5a6f6ecd2890e3b86ced71",
+   "comentarioSha256": "827b52cf48699788076bda6ef5f95ef6d87d6492e9f4ecdfe2b015705c961fbb",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Halvorson TL, Kelley LA, Thomas KA, Whitecloud TS 3rd, Cook SD. Effects of bone mineral density on pedicle screw fixation. Spine. 1994;19(21):2415-2420."
+   ]
+  },
+  "coluna-0076": {
+   "questaoSha256": "4458abe711cd397027c525fa4c83414212c111b89aa86c335e5fec81fce4e77c",
+   "comentarioSha256": "50ea24ae2b12b15f5bbb3286b055b8de09d1d5a53e03d8bb1716d21e6d7c8dde",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Walters BC, Hadley MN, Hurlbert RJ et al. Guidelines for the management of acute cervical spine and spinal cord injuries: 2013 update. Neurosurgery. 2013;60(Suppl 1):82-91.",
+    "Bracken MB, Shepard MJ, Collins WF et al. A randomized, controlled trial of methylprednisolone or naloxone in the treatment of acute spinal-cord injury: results of the Second National Acute Spinal Cord Injury Study. N Engl J Med. 1990;322(20):1405-1411."
+   ]
+  },
+  "coluna-0077": {
+   "questaoSha256": "09e390e174b3e340005d2ac5c08769a47f7ef90d704ea939c188a08c98ddce27",
+   "comentarioSha256": "3181f013448c4d4c7a90a71108edeabbf63c2b821eccc5f27894e49265700865",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+   ]
+  },
+  "coluna-0079": {
+   "questaoSha256": "02fb48a2216d440113361a20f69f9bcdd2683c1c08cf8a51a2f61e0da25f5a9f",
+   "comentarioSha256": "018eaaf7d780102fcbeaefaf93753b51f9095260e9cc7a9394055ff7d99b4d4e",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Sachs B, Bradford D, Winter R, Lonstein J, Moe J, Willson S. Scheuermann kyphosis: follow-up of Milwaukee-brace treatment. J Bone Joint Surg Am. 1987;69(1):50-57.",
+    "Lowe TG. Scheuermann disease. J Bone Joint Surg Am. 1990;72(6):940-945."
+   ]
+  },
+  "coluna-0080": {
+   "questaoSha256": "28b7d3e1c9f7c8cd00a2876aebaf048b81b0913bb12219c727a07d3a2f3c9b85",
+   "comentarioSha256": "4c0a52f8ad8f73504d7759e4101e7cb112a46bd9577a961818cddca9757bb4a1",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Weinstein SL, Flynn JM (eds). Lovell and Winter's Pediatric Orthopaedics. 7th ed. Philadelphia: Lippincott Williams & Wilkins; 2014. Capítulo de escoliose neuromuscular."
+   ]
+  },
+  "coluna-0081": {
+   "questaoSha256": "1dddb09bbb99275c1b92728e8cf1839a027379108abfad0a8c74f1fab1a6d0a7",
+   "comentarioSha256": "1d9625534bbddc6cc67ebdd038f02bc7bafede0da5f5f591e2deb31624642263",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hresko MT, Labelle H, Roussouly P, Berthonnaud E. Classification of high-grade spondylolistheses based on pelvic version and spine balance: possible rationale for reduction. Spine. 2007;32(20):2208-2213."
+   ]
+  },
+  "coluna-0082": {
+   "questaoSha256": "a4878a320449df081a46887b78b6654ebe3cd031414f8a3bf89b43aaa9d71fd5",
+   "comentarioSha256": "d07c32811a266428f30ba9926533b36511b210ed474dc25a47c9cd912b736a21",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Physical Examination of the Spine and Extremities. New York: Appleton-Century-Crofts; 1976."
+   ]
+  },
+  "coluna-0083": {
+   "questaoSha256": "5ed1643ccc0230c4ef18864005f9c4178333f2959f4ff5860d9fc20aeb9877d7",
+   "comentarioSha256": "865a0ba5bfa6500f3f015aa72a1bd8fedbdd484d9a901569db40eb87e9c3c6f1",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0085": {
+   "questaoSha256": "b143771012043b76a9b35e3cb3ee1a55f5fe923c2f25026b7203d2f63940159e",
+   "comentarioSha256": "9bb2c4be3984c532a9a83d6b3076fb6c0d1de8cbead03450f273bd0192a1eba7",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S, deBoer P, Buckley R. Surgical Exposures in Orthopaedics: The Anatomic Approach. 4th ed. Philadelphia: Lippincott Williams & Wilkins; 2009.",
+    "Standring S (ed). Gray's Anatomy: The Anatomical Basis of Clinical Practice. 41st ed. London: Elsevier; 2016."
+   ]
+  },
+  "coluna-0086": {
+   "questaoSha256": "1b99077535a93e6e1d2607c66dbf6780d7f4fe6e0171d1bf1b93bb613dfeaaa5",
+   "comentarioSha256": "31292dfd8dbc6b7ff9b49bbdabd14e6fa6e745a163923d01d1a40c4ed9ca699f",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Lowe TG. Scheuermann disease. J Bone Joint Surg Am. 1990;72(6):940-945.",
+    "Weinstein SL, Flynn JM (eds). Lovell and Winter's Pediatric Orthopaedics. 7th ed. Philadelphia: Lippincott Williams & Wilkins; 2014."
+   ]
+  },
+  "coluna-0089": {
+   "questaoSha256": "069e7e9d82c096d6a6fc9274769df4407d9914fa12051a0703232d042800a68a",
+   "comentarioSha256": "a87136a90f7d93afbda5122670f8e92cff242980e2d5400af0ca4747130ba8aa",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Carette S, Fehlings MG. Cervical radiculopathy. N Engl J Med. 2005;353(4):392-399.",
+    "Spurling RG, Scoville WB. Lateral rupture of the cervical intervertebral discs: a common cause of shoulder and arm pain. Surg Gynecol Obstet. 1944;78:350-358."
+   ]
+  },
+  "coluna-0090": {
+   "questaoSha256": "88bc0b505631a1447bf18f2fe21e5a9ddff089c82cdbebf03f927eacec605eb5",
+   "comentarioSha256": "46993ec47db24c89215b96e699739a8a5c7aa3297d4f2c42ed7af9e4cd834df8",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Rosenberg NJ. Degenerative spondylolisthesis: predisposing factors. J Bone Joint Surg Am. 1975;57(4):467-474.",
+    "Wiltse LL, Newman PH, Macnab I. Classification of spondylolisis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29."
+   ]
+  },
+  "coluna-0091": {
+   "questaoSha256": "3a39f25ab3d4a63d128df358b869d38bb08ee9f3500534387d1f681f89f6cfa5",
+   "comentarioSha256": "3a89b20ab4838f44aa466a22c26e2ef5a309ccb62f2351deed37c77e4b0775d2",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Sachs B, Bradford D, Winter R, Lonstein J, Moe J, Willson S. Scheuermann kyphosis: follow-up of Milwaukee-brace treatment. J Bone Joint Surg Am. 1987;69(1):50-57."
+   ]
+  },
+  "coluna-0092": {
+   "questaoSha256": "d2ae9aeff963c12b14a948caf212ee935e7933b0f2e182dc31ade83de48c966c",
+   "comentarioSha256": "b9d8bf71d6204fdaaa9de865002971e993b5330dc2fff16dd2b32498200de2c1",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Norenberg MD, Smith J, Marcillo A. The pathology of human spinal cord injury: defining the problems. J Neurotrauma. 2004;21(4):429-440.",
+    "Tator CH, Fehlings MG. Review of the secondary injury theory of acute spinal cord trauma with emphasis on vascular mechanisms. J Neurosurg. 1991;75(1):15-26."
+   ]
+  },
+  "coluna-0093": {
+   "questaoSha256": "e7b77e630e6d81b8adfd5f463670d73e19df4da868c98c24c8872372c14be4a2",
+   "comentarioSha256": "a28d450ed7b57a74f3ec78191a025d819016ab809a918ff943955ac2ace3f8a8",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Durrani AA, Crawford AH, Chouhdry SN, Saifuddin A, Morley TR. Modulation of spinal deformities in patients with neurofibromatosis type 1. Spine. 2000;25(1):69-75."
+   ]
+  },
+  "coluna-0094": {
+   "questaoSha256": "91cf081c40f9350a2f454c53f8cb2fba235e0b64a4cf7deef0e472252c725b6b",
+   "comentarioSha256": "aab910fa1d2e101b2bdcdc1a2aff9fda882fa2d48f7bb96b9fa2bd41ee467f75",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Ruetten S, Komp M, Merk H, Godolias G. Full-endoscopic interlaminar and transforaminal lumbar discectomy versus conventional microsurgical technique: a prospective, randomized, controlled study. Spine. 2008;33(9):931-939."
+   ]
+  },
+  "coluna-0104": {
+   "questaoSha256": "fa05e7b6db01b8380ee172f581f874c8556ffc7ee3e3f920d4bcb15cab6d0e71",
+   "comentarioSha256": "7b2f2dab490922c9b955a9988c905681ce9a9180f918979339f1469a065ab1a7",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977.",
+    "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+   ]
+  },
+  "coluna-0107": {
+   "questaoSha256": "63f119b3175ae5756b94aa867bca8f10e46f021f6fdf1d23dfd28c272a7cf898",
+   "comentarioSha256": "21a1cd2adc2b2ae9fde726d0bbde10ec72dafd844c54a7b290c956e820d53e8a",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Darouiche RO. Spinal epidural abscess. N Engl J Med. 2006;355(19):2012-2020.",
+    "Patel AR, Alton TB, Bransford RJ, Lee MJ, Bellabarba CB, Chapman JR. Spinal epidural abscesses: risk factors, medical versus surgical management, a retrospective review of 128 cases. Spine J. 2014;14(2):326-330."
+   ]
+  },
+  "coluna-0108": {
+   "questaoSha256": "7f108c28b634cb5cb20cbc6bf4a525245f197c88a05d5661bff502392774e07d",
+   "comentarioSha256": "e2ee96772f96439a9272ec59f0715cec05cd558a9238c6cfbfdd11a476cc9ca3",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Bogduk N. The innervation of the lumbar spine. Spine. 1983;8(3):286-293.",
+    "Cohen SP, Raja SN. Pathogenesis, diagnosis, and treatment of lumbar zygapophysial (facet) joint pain. Anesthesiology. 2007;106(3):591-614."
+   ]
+  },
+  "coluna-0109": {
+   "questaoSha256": "f5d06d1720ca275f71faca1d3483ebf85ecaf6fe4a206c9c3a999e4509017810",
+   "comentarioSha256": "0127810e7db1ae1df440dcfd766d19ed0bba304ef30213edbc9990ded94afbc3",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Nash C Jr, Moe JH. A study of vertebral rotation. J Bone Joint Surg Am. 1969;51(2):223-229."
+   ]
+  },
+  "coluna-0110": {
+   "questaoSha256": "a6737bed7f1512348c80fd4c818c45367fdece4dec0a66ae052d5ee27070ff71",
+   "comentarioSha256": "5f0c84fa1876dadb3f7c20cfda0cad0b6be60c4c1245d28c5000e99da47736a6",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+   ]
+  },
+  "coluna-0113": {
+   "questaoSha256": "eb5d683a12dd61aadd167e8bcb5c8603a7a1b8482fe5c6467afb1caf1ae0b870",
+   "comentarioSha256": "997a31f1f30688f9c2200327d3f2954dce17c1e17d32997c525c91cb8fb969e2",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Schneider RC, Cherry G, Pantek H. The syndrome of acute central cervical spinal cord injury; with special reference to the mechanisms involved in hyperextension injuries of cervical spine. J Neurosurg. 1954;11(6):546-577."
+   ]
+  },
+  "coluna-0115": {
+   "questaoSha256": "36465fcdecee5738b4d4cd0ed39fcb1d1590aa4298fb8280ad2c146e483afaf4",
+   "comentarioSha256": "2335478e9af33c86102804deffc823ae4409571dfdf88bb5b27f427f45e5d558",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S, deBoer P, Buckley R. Surgical Exposures in Orthopaedics: The Anatomic Approach. 4th ed. Philadelphia: Lippincott Williams & Wilkins; 2009.",
+    "Standring S (ed). Gray's Anatomy: The Anatomical Basis of Clinical Practice. 41st ed. London: Elsevier; 2016."
+   ]
+  },
+  "coluna-0116": {
+   "questaoSha256": "ca83c3618133b768f1f9ff1b620a2908d0c41344097c044195aea50f12380efb",
+   "comentarioSha256": "9fa5811db995302c2cecd8032d43dcc24df1b5f1af611348817b542bc1a76b34",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+   ]
+  },
+  "coluna-0117": {
+   "questaoSha256": "c11bea9b6bf1bcbce9ca7b151cf239ab83144cc6851670786a19fe9293c6eed9",
+   "comentarioSha256": "015e218738b8d04547e74fe5c08e5ed707dc6689bf6ea73c342cc23faf8014f9",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0118": {
+   "questaoSha256": "e3b278e3f8f8d7c431000faa9c26a944eebddeb40f7a8f4b2b95253f8643bce8",
+   "comentarioSha256": "793389a4fbba02c8762d80ee86d40153bb127466e3a272648ad9f571f6e16086",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0119": {
+   "questaoSha256": "ddfe1a9103303ec27613306415e7d2cff94cc813d4b10cbb54bae80c6c18f1c9",
+   "comentarioSha256": "d82bda752206d1bfe7eaf542af9eb9af33883c51182dc015f24828abd09c2f34",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+   ]
+  },
+  "coluna-0135": {
+   "questaoSha256": "4895d9f150e489ee105424ee9c3e38501ae297a71b86f6b249911ddf23a9b0e2",
+   "comentarioSha256": "ff60622277035a9f87b4ad98b01ab698719429e084034765f0012c66803ab58f",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0136": {
+   "questaoSha256": "6d9a4efbcc118ab5e46f4a00c8af080070139758c0488c93ec916ef7e4ff5150",
+   "comentarioSha256": "a718d3156b61e0e43cd83a716c544679958c27a04a082f14f319e107c327bdc5",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Kanchandani R, Howe JG. Lhermitte's sign in multiple sclerosis: a clinical survey and review of the literature. J Neurol Neurosurg Psychiatry. 1982;45(4):308-312."
+   ]
+  },
+  "coluna-0140": {
+   "questaoSha256": "f72f335c39b3fbea1a020f6040c58a0dcb553628e3a916da126fdb553b284990",
+   "comentarioSha256": "da2ae81b966ef119c65235338fed96d442d355e3e11f03b88cb6c7be351d649f",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0141": {
+   "questaoSha256": "986f935f8329bb95a12b212cdb380f9fe320a99328f0de14952366e0d0e82398",
+   "comentarioSha256": "3a0d30e1e04f7236b87e38be76cb4915224d654c4035597f5210360c0e0607cd",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Bunnell WP. An objective criterion for scoliosis screening. J Bone Joint Surg Am. 1984;66(9):1381-1387.",
+    "Karachalios T, Sofianos J, Roidis N et al. Ten-year follow-up evaluation of a school screening program for scoliosis: is the forward-bending test an accurate diagnostic criterion for the screening of scoliosis? Spine. 1999;24(22):2318-2324."
+   ]
+  },
+  "coluna-0146": {
+   "questaoSha256": "41454090660a6c8f89eae7c8b3ec67173f0dbac392235ce7230ed05abc2b67b4",
+   "comentarioSha256": "077147788f9177d4613e3069795bc276d2e4cb1edb0f1bca569d29d8df05e48d",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Bazaz R, Lee MJ, Yoo JU. Incidence of dysphagia after anterior cervical spine surgery: a prospective study. Spine. 2002;27(22):2453-2458.",
+    "Fountas KN, Kapsalaki EZ, Nikolakakos LG et al. Anterior cervical discectomy and fusion associated complications. Spine. 2007;32(21):2310-2317."
+   ]
+  },
+  "coluna-0147": {
+   "questaoSha256": "986ed2f7e2c38ad1ad5d596a5e04f27b913c06a73e99004eec8b66313c75e6f8",
+   "comentarioSha256": "e889b9e9a55261163d14cf42f8e21cb7271fc51add4234fc4017ede2a1869287",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Mummaneni PV, Burkus JK, Haid RW, Traynelis VC, Zdeblick TA. Clinical and radiographic analysis of cervical disc arthroplasty compared with allograft fusion: a randomized controlled clinical trial. J Neurosurg Spine. 2007;6(3):198-209."
+   ]
+  },
+  "coluna-0148": {
+   "questaoSha256": "a1e05727d991b0c66f6d1d888cc15bba33c756b5c9c0bf8e3f84970c1d91628e",
+   "comentarioSha256": "df36b064374125ea8214cc478ca81d1b6ce6e7918ea5092655c4a276dbe6962d",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Chou R, Qaseem A, Snow V et al. Diagnosis and treatment of low back pain: a joint clinical practice guideline from the American College of Physicians and the American Pain Society. Ann Intern Med. 2007;147(7):478-491.",
+    "Chou R, Qaseem A, Owens DK, Shekelle P. Diagnostic imaging for low back pain: advice for high-value health care from the American College of Physicians. Ann Intern Med. 2011;154(3):181-189."
+   ]
+  },
+  "coluna-0150": {
+   "questaoSha256": "114d170d31efec13f4a4d199d406560dc1088a66be4d201c5792f822ba7363bd",
+   "comentarioSha256": "342131f9a8ac1fc4910cc4de64b8acd9739779bd2036bbd8c98d090b97193d86",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Suk SI, Lee CK, Kim WJ, Chung YJ, Park YB. Segmental pedicle screw fixation in the treatment of thoracic idiopathic scoliosis. Spine. 1995;20(12):1399-1405.",
+    "Kim YJ, Lenke LG, Cho SK, Bridwell KH, Sides B, Blanke K. Comparative analysis of pedicle screw versus hook instrumentation in posterior spinal fusion of adolescent idiopathic scoliosis. Spine. 2004;29(18):2040-2048."
+   ]
+  },
+  "coluna-0151": {
+   "questaoSha256": "e7dc7c5b2bce6c758715f6a71f37c321bdfba683384f4b7c0cd1ef20048d7665",
+   "comentarioSha256": "dfd6761146f1fa91164980fe2b1553124f159431282e5eb9e0fecf2e730d5d83",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Morrissy RT, Goldsmith GS, Hall EC, Kehl D, Cowie GH. Measurement of the Cobb angle on radiographs of patients who have scoliosis. J Bone Joint Surg Am. 1990;72(3):320-327."
+   ]
+  },
+  "coluna-0152": {
+   "questaoSha256": "3d7e23772558c131c3ad7b39aedf804b302207175928a4c2693cfdc4a7625c80",
+   "comentarioSha256": "30c0dd399e4a4756d2bf55afc8e6d61712db2c43fd8db999d7a54c3383fa3cda",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Reid DC, Henderson R, Saboe L, Miller JD. Etiology and clinical course of missed spine fractures. J Trauma. 1987;27(9):980-986."
+   ]
+  },
+  "coluna-0153": {
+   "questaoSha256": "9dd97921b7830cb0957056286eac36512a6f28866d62904716f9bb7708ae41bb",
+   "comentarioSha256": "ab89252751768b78101b49cf6d235b424588c7541000b0ebfeebfbf60c52272b",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977.",
+    "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+   ]
+  },
+  "coluna-0155": {
+   "questaoSha256": "4c3a157bab1ac80cb4ed272adc7d372fed228cca021021a24bc65479900abc97",
+   "comentarioSha256": "854d72dc8930248bd18e41d3f957aae27e8f4d26875538675962f85023539e2e",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Walters BC, Hadley MN, Hurlbert RJ et al. Guidelines for the management of acute cervical spine and spinal cord injuries: 2013 update. Neurosurgery. 2013;60(Suppl 1):82-91."
+   ]
+  },
+  "coluna-0156": {
+   "questaoSha256": "5df15fcea806995765455b10475cb7b0966733f7c92d7087068437ec2355eec9",
+   "comentarioSha256": "71ec3d67faa80a5c6aea9d03a74208507eff41436678b1d95f29129966000d34",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Aebi M. The adult scoliosis. Eur Spine J. 2005;14(10):925-948."
+   ]
+  },
+  "coluna-0157": {
+   "questaoSha256": "b339b4db61131ef1ed21327dade42ce40c06dce7addfee1ba9a897568e528744",
+   "comentarioSha256": "7781b779f56bf50a87495dab116402821a48eb6ee215f72fbeb266dd37f75020",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Zimmerli W. Vertebral osteomyelitis. N Engl J Med. 2010;362(11):1022-1029."
+   ]
+  },
+  "coluna-0159": {
+   "questaoSha256": "b937fafaa57a37c00ac57bfc319bf568c4052ba29ca4db9ede9b2502b904ce0b",
+   "comentarioSha256": "af868afb8287e8f5e97ae13e5c50b8bc6620d92614a6580d13b270cc162082bf",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "McKinley W, Santos K, Meade M, Brooke K. Incidence and outcomes of spinal cord injury clinical syndromes. J Spinal Cord Med. 2007;30(3):215-224."
+   ]
+  },
+  "coluna-0161": {
+   "questaoSha256": "b10c198a391a310cd063f1bacca04574bf9a8b4711a1896b13dda6e991ac89fd",
+   "comentarioSha256": "eeca433a6b472770aadfb2356dcad71b9202e866b542e02b0281ee3081ad48f3",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0162": {
+   "questaoSha256": "cbd8bd6fbc24230b41bcdb92813a7ce57279d210b9062183d6657d219fb5ed47",
+   "comentarioSha256": "c6d7e3e75e0b8c888ab8cc13bfb6d9334df0f1e7b880acec8090dc2bd6203ca8",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Spence KF Jr, Decker S, Sell KW. Bursting atlantal fracture associated with rupture of the transverse ligament. J Bone Joint Surg Am. 1970;52(3):543-549.",
+    "Dickman CA, Greene KA, Sonntag VK. Injuries involving the transverse atlantal ligament: classification and treatment guidelines based upon experience with 39 injuries. Neurosurgery. 1996;38(1):44-50."
+   ]
+  },
+  "coluna-0163": {
+   "questaoSha256": "bdedc4a7d60bd00da46c6092d0961e19e90f376fff787311ac0ef9a3a3fca38e",
+   "comentarioSha256": "af140828727c42e990ac938cdfe71c650de242cceac3f05cebbfc1c9321ccced",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Bernhardt M, Bridwell KH. Segmental analysis of the sagittal plane alignment of the normal thoracic and lumbar spines and thoracolumbar junction. Spine. 1989;14(7):717-721."
+   ]
+  },
+  "coluna-0177": {
+   "questaoSha256": "30b990cf446cafd15c16d6e38069ab64366924f5e9cd84048d08deb4d436ed34",
+   "comentarioSha256": "bb5c54a542ee971dce14837c6b247f193197c6a25bd0cb5d2cbcdb7d3d3c8ba3",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "McKinley W, Santos K, Meade M, Brooke K. Incidence and outcomes of spinal cord injury clinical syndromes. J Spinal Cord Med. 2007;30(3):215-224."
+   ]
+  },
+  "coluna-0178": {
+   "questaoSha256": "5d524991f70e2fe208154ffe5a06e38d434c67510f2c0606a68ef4c12083a783",
+   "comentarioSha256": "a4cdbfb7bc8a14190e04e2cbbf1c0ac98653d1b00bdc02cb82d58fe69b1f333b",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537."
+   ]
+  },
+  "coluna-0179": {
+   "questaoSha256": "997474d5d447334def618bc1244045aa814530c2295a33e46172b88ce32f3cb8",
+   "comentarioSha256": "d6759d85064fd903555502475ab9df08457b76c52501451485a5bc6e96c5b31b",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Pang D, Wilberger JE Jr. Spinal cord injury without radiographic abnormalities in children. J Neurosurg. 1982;57(1):114-129.",
+    "Pang D. Spinal cord injury without radiographic abnormality in children, 2 decades later. Neurosurgery. 2004;55(6):1325-1343."
+   ]
+  },
+  "coluna-0180": {
+   "questaoSha256": "c56f625b8a3aa95162ed99cf4f6af1e723959085e660f71c95ac2aab7d50f6b8",
+   "comentarioSha256": "2279ec221a48c43ad9f173267103dc11b4dd8eb113b8a23c20374369e0f2fc19",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Zimmerli W. Vertebral osteomyelitis. N Engl J Med. 2010;362(11):1022-1029."
+   ]
+  },
+  "coluna-0181": {
+   "questaoSha256": "2668483cadc1d3d5217c0736098e29953ae6227a5686a62d60f52473fa2f1dbe",
+   "comentarioSha256": "df5d49ee973744410f1748b29977de3d19d22a2cfb6de01220888e89860beaab",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0184": {
+   "questaoSha256": "dae097b1180354e798ca01546786d39346054e8c7ab4b7145f20b478cc2b568b",
+   "comentarioSha256": "2e61e11912ff391ddadcba4aeecb828c8b8a1fd8d8cae27d8d2b605b1700899d",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Aebi M. The adult scoliosis. Eur Spine J. 2005;14(10):925-948.",
+    "Schwab F, Ungar B, Blondel B et al. Scoliosis Research Society-Schwab adult spinal deformity classification: a validation study. Spine. 2012;37(12):1077-1082."
+   ]
+  },
+  "coluna-0187": {
+   "questaoSha256": "792d98d9759072db71c1ddb9e1ec7c847d2ac2178f075333563cede2946459da",
+   "comentarioSha256": "d6638b0218ec66a8835e01190a49021c44fdf0da584e3dabc69e2a2cc8cc2ccd",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Glassman SD, Bridwell K, Dimar JR et al. The impact of positive sagittal balance in adult spinal deformity. Spine. 2005;30(18):2024-2029.",
+    "Schwab F, Patel A, Ungar B, Farcy JP, Lafage V. Adult spinal deformity: postoperative standing imbalance: how much can you tolerate? An overview of key parameters in assessing alignment and planning corrective surgery. Spine. 2010;35(25):2224-2231."
+   ]
+  },
+  "coluna-0188": {
+   "questaoSha256": "cdfb67a112cc3a6e398191874dca42884f1be6b7b67ee5e407a895054eb4a479",
+   "comentarioSha256": "a9f37b1d09bbc68653d1e739d719707c5ef8c7d9a715b897639a45a8aaa172bb",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Lowe TG, Line BG. Evidence based medicine: analysis of Scheuermann kyphosis. Spine. 2007;32(19 Suppl):S115-S119."
+   ]
+  },
+  "coluna-0189": {
+   "questaoSha256": "cf0faabed450b9a3cadc8fdad2a589a366cdebe3eb4f0ee08cba0546691892ed",
+   "comentarioSha256": "f3eac6399b7872bbe4c738758e8736c40ab18475a39ebf2ffb416ec2b39d8208",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Weinstein JN, Lurie JD, Tosteson TD et al. Surgical compared with nonoperative treatment for lumbar degenerative spondylolisthesis: four-year results in the Spine Patient Outcomes Research Trial (SPORT) randomized and observational cohorts. J Bone Joint Surg Am. 2009;91(6):1295-1304.",
+    "Rosenberg NJ. Degenerative spondylolisthesis: predisposing factors. J Bone Joint Surg Am. 1975;57(4):467-474."
+   ]
+  },
+  "coluna-0190": {
+   "questaoSha256": "c05f3c8fec627832c10344d25c8a550ae2a1918e77e090e90bfabddacbf342c8",
+   "comentarioSha256": "e46ad37e38b676d4d69aaaea2f3640291e58de3d61038db530e3b48c16357836",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Brinjikji W, Luetmer PH, Comstock B et al. Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. AJNR Am J Neuroradiol. 2015;36(4):811-816.",
+    "Boden SD, Davis DO, Dina TS, Patronas NJ, Wiesel SW. Abnormal magnetic-resonance scans of the lumbar spine in asymptomatic subjects: a prospective investigation. J Bone Joint Surg Am. 1990;72(3):403-408."
+   ]
+  },
+  "coluna-0191": {
+   "questaoSha256": "9568e389d788bff1e430aa7abdd13729a196449b52be8f71478ed382cc008620",
+   "comentarioSha256": "a6440b09a1abe4d1477f8c3f0c1fe2c602eac9c881f38e7fba310cfad2965656",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Deyo RA, Mirza SK. Herniated lumbar intervertebral disk. N Engl J Med. 2016;374(18):1763-1772."
+   ]
+  },
+  "coluna-0193": {
+   "questaoSha256": "e31477b051f2587a4002769f563eb39da08c9e6445453f059d9caa2f87b146ea",
+   "comentarioSha256": "825efc4b59e861257ab50562dfa6c1354099862c295cd91772a0d534e6db5e12",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Tong HC, Haig AJ, Yamakawa K. The Spurling test and cervical radiculopathy. Spine. 2002;27(2):156-159."
+   ]
+  },
+  "coluna-0194": {
+   "questaoSha256": "4134854b0fa8738682e2b5c7a456ca8ed0a2deeb009eacbd801366fc2e434878",
+   "comentarioSha256": "b88f5b474c9c023a62a63115450fe2ce8cd808d6fa2057028b32151a5881d616",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Weinstein SL, Dolan LA, Spratt KF, Peterson KK, Spoonamore MJ, Ponseti IV. Health and function of patients with untreated idiopathic scoliosis: a 50-year natural history study. JAMA. 2003;289(5):559-567."
+   ]
+  },
+  "coluna-0195": {
+   "questaoSha256": "a4393e435adf19c0b95b93d3d1c49a2b1966360f933c08fa65d48849c23f4232",
+   "comentarioSha256": "26b5e0fe1cb99d5aeb750bb320bc36536a56ef0d0b64f9155cc0af8ac516096b",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Sachs B, Bradford D, Winter R, Lonstein J, Moe J, Willson S. Scheuermann kyphosis: follow-up of Milwaukee-brace treatment. J Bone Joint Surg Am. 1987;69(1):50-57."
+   ]
+  },
+  "coluna-0202": {
+   "questaoSha256": "a8420e0cc7b0d838f1696361a801adda9cc81354402545f1cfba27cddcbd5f26",
+   "comentarioSha256": "93585b5f8cb5aab6a8b5ff0387a89630c77778d850179e4239cca89769791277",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Adson AW, Coffey JR. Cervical rib: a method of anterior approach for relief of symptoms by division of the scalenus anticus. Ann Surg. 1927;85(6):839-857."
+   ]
+  },
+  "coluna-0204": {
+   "questaoSha256": "d5647f1884b194e5d364a75c1eeb9071925feec38c05d9876a177e8a4b4e4d6a",
+   "comentarioSha256": "5ae2729192c6eb4c9ea6035f25720f2b76247cb7af8f0b0c90ae3056cd615925",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Basu PS, Elsebaie H, Noordeen MH. Congenital spinal deformity: a comprehensive assessment at presentation. Spine. 2002;27(20):2255-2259."
+   ]
+  },
+  "coluna-0205": {
+   "questaoSha256": "fda710003aa01c7a4285e3c1742f8a156a36eac030e021fdff047cef71bda14d",
+   "comentarioSha256": "3aa882e0977493a6c7d99a60d6edd54bf490d78a531c8141d5cf126505d65bb2",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hu SS, Tribus CB, Diab M, Ghanayem AJ. Spondylolisthesis and spondylolysis. J Bone Joint Surg Am. 2008;90(3):656-671."
+   ]
+  },
+  "coluna-0207": {
+   "questaoSha256": "4bb211d5af16f3e47fc0717e52d631169f124a8c9c4f57739ffcbbe5defc7f8d",
+   "comentarioSha256": "33390bff5a706cfa0fbac3c338a98774bacb87f15f3f4d7444f4e587025d7651",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0208": {
+   "questaoSha256": "50550c6d6d160fb5f944cb655de3142e62bf6ac71535a27e5f934a9f17d17027",
+   "comentarioSha256": "2ae47eb21f505344cb036486daaff25279de297e2dab25172f268fdeced5b7d5",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+   ]
+  },
+  "coluna-0209": {
+   "questaoSha256": "ff9b3de3a9772006b1093e2d7d48f4f320ce7445c27cbdd20a7fea1079b0c532",
+   "comentarioSha256": "c2f780a38ed045648e48f637105aa3189347cd03cc6d47269026e7eafdd4e47b",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Urban JP, Smith S, Fairbank JC. Nutrition of the intervertebral disc. Spine. 2004;29(23):2700-2709."
+   ]
+  },
+  "coluna-0210": {
+   "questaoSha256": "0c7dc22c6fecf859ac81b79804eaadc9c231fb85a24695ae74d3e316aec13714",
+   "comentarioSha256": "273f3a6b8623d1df1d4885be88b0d7f5b0775a59d3215320466df96c56cc4dad",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Fielding JW, Hawkins RJ. Atlanto-axial rotatory fixation (fixed rotatory subluxation of the atlanto-axial joint). J Bone Joint Surg Am. 1977;59(1):37-44."
+   ]
+  },
+  "coluna-0211": {
+   "questaoSha256": "ef49f809391b5641ef55529290fdc579c4a4b49dc073b6e7287fb7443a231732",
+   "comentarioSha256": "9ab0db60de741ac6f02c77c373a96ada56ff4cc244e467c2b9c30cc638f198ac",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Pang D, Wilberger JE Jr. Spinal cord injury without radiographic abnormalities in children. J Neurosurg. 1982;57(1):114-129."
+   ]
+  },
+  "coluna-0212": {
+   "questaoSha256": "22e312b637cf762435f69b8c81f2fdf34e0c8a041c1937c6b51bce8ef0b39924",
+   "comentarioSha256": "3e6f7fbf4059d1e47f7df5e3cade0db7b28921506b7c0369f1a532653029eee1",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Katz JN, Harris MB. Lumbar spinal stenosis. N Engl J Med. 2008;358(8):818-825."
+   ]
+  },
+  "coluna-0219": {
+   "questaoSha256": "4ccf5ed7dc8dc3d1794d567d22078084e6e7e9956be7c04f67e562a65f8d9290",
+   "comentarioSha256": "de3cb78418d771668835e19f5b7b2c2f827d5c07910efe53c313a525c57cd1b9",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Denno JJ, Meadows GR. Early diagnosis of cervical spondylotic myelopathy: a useful clinical sign. Spine. 1991;16(12):1353-1355.",
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0221": {
+   "questaoSha256": "1de2d30e0a95d7c0cbaaea7409029e486b0be8ba55d9e40b6da777a218aee76c",
+   "comentarioSha256": "6420c75c3e6422cfcc783f1bf88b87ed42975158d3f882cf6061f49ac0505479",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Darouiche RO. Spinal epidural abscess. N Engl J Med. 2006;355(19):2012-2020."
+   ]
+  },
+  "coluna-0223": {
+   "questaoSha256": "46963fc8631dbb7a4e460656be3e5a71e64e534ff0e800c8a64dbf29a14e67d0",
+   "comentarioSha256": "1a2305fcdbf0601dcd2b099f540b9c0109c7fa174061d851fff94248affaa4d0",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Lowe TG. Scheuermann disease. J Bone Joint Surg Am. 1990;72(6):940-945."
+   ]
+  },
+  "coluna-0224": {
+   "questaoSha256": "7bf106828a43299049f70422896e7d6e216c36e5b070b7a18bf4c07016973cdc",
+   "comentarioSha256": "0a39931158ba7338c4ea6305d83c14ba2c3ff98efc802979da0f7cbd77bb48ca",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "McMaster MJ, Ohtsuka K. The natural history of congenital scoliosis: a study of two hundred and fifty-one patients. J Bone Joint Surg Am. 1982;64(8):1128-1147."
+   ]
+  },
+  "coluna-0225": {
+   "questaoSha256": "8c22dfcefb525a636c4413aaa56fb120ab0b349843ad0f9a184e9e94dbb887d6",
+   "comentarioSha256": "424a24744299fc14cafa7d0536f7710d6015869c2078c2254622a8f4770a0822",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Zadeh HG, Sakka SA, Powell MP, Mehta MH. Absent superficial abdominal reflexes in children with scoliosis: an early indicator of syringomyelia. J Bone Joint Surg Br. 1995;77(5):762-767."
+   ]
+  },
+  "coluna-0226": {
+   "questaoSha256": "9063e9322d9c40a9c6c8f7c1a7b40253ee37799c30cec68e0d1e268f88afffcb",
+   "comentarioSha256": "dc4553b6142d0eef8e30c7c9d646a142ab3ba1ed02b48c39a8a1beed3cf8d9fd",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hu SS, Tribus CB, Diab M, Ghanayem AJ. Spondylolisthesis and spondylolysis. J Bone Joint Surg Am. 2008;90(3):656-671."
+   ]
+  },
+  "coluna-0227": {
+   "questaoSha256": "2bf1416b787c240617da3e33a79134f6095596f921efe02ce8fa02a68bda3ea9",
+   "comentarioSha256": "a751f2596b0ab7c786aec264695071c1c46b9ead117c2da37719956ac2ccb123",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Pang D. Spinal cord injury without radiographic abnormality in children, 2 decades later. Neurosurgery. 2004;55(6):1325-1343."
+   ]
+  },
+  "coluna-0228": {
+   "questaoSha256": "e19ff3e857f72fb7007aebd3dadea31da10c4c01907fb7c2e489a50e87f2906b",
+   "comentarioSha256": "8be7cea7edb5b83e87f594873f48368583ad689b7d9d03fef21f241a13c5a008",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Durrani AA, Crawford AH, Chouhdry SN, Saifuddin A, Morley TR. Modulation of spinal deformities in patients with neurofibromatosis type 1. Spine. 2000;25(1):69-75."
+   ]
+  },
+  "coluna-0229": {
+   "questaoSha256": "43c41d72ce1f419bb02b508cf7ae4c071b8d594006d61ac387583707667e0b64",
+   "comentarioSha256": "9b3c2dc1b5d9e5f6a771a9d0946a0e7adc2cb1c9e6386ff5cf053d1e1311655a",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Willison HJ, Jacobs BC, van Doorn PA. Guillain-Barré syndrome. Lancet. 2016;388(10045):717-727."
+   ]
+  },
+  "coluna-0230": {
+   "questaoSha256": "3b50e31165d74e9fdc86b1cc3b462ebc58a26e32de81e87620d2f7d106a2be8c",
+   "comentarioSha256": "f04aa115bbb49a543a1cc1ff11bff0b710da08697c332452828ed6af20f4964b",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Garg RK, Somvanshi DS. Spinal tuberculosis: a review. J Spinal Cord Med. 2011;34(5):440-454."
+   ]
+  },
+  "coluna-0237": {
+   "questaoSha256": "bcd6930f2277204c4fae5e010c150610cb71027cd0ec4ea4741d1dc879c237d5",
+   "comentarioSha256": "ae5afe5aabdd9f692f72fe64374d338ca59bbd01032e58fb3451cfb1c0a6ae76",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   ]
+  },
+  "coluna-0238": {
+   "questaoSha256": "291c61450133bbdfc4d6dfb849e3e6a9b28b33261eb8d96d99c57a7b87148011",
+   "comentarioSha256": "a0fb22f7fee78e1e276a487f8879bea60633587272ab0ba2d81f538ebcafbf18",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+   ]
+  },
+  "coluna-0239": {
+   "questaoSha256": "2c0ab5c29cad424a7858468bc58185e492debe49e954e092657c2b280f7eff16",
+   "comentarioSha256": "8f7aa6a3c82d6737cbe8fbcfb9491fb36ac0b6ee50fee4212a15eaf7601b72f9",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Pang D. Spinal cord injury without radiographic abnormality in children, 2 decades later. Neurosurgery. 2004;55(6):1325-1343."
+   ]
+  },
+  "coluna-0240": {
+   "questaoSha256": "7689d0afb50e3212cc744a3d3d0d5efa6d16663873a91470f3eca7fce008eac9",
+   "comentarioSha256": "ff726a78fa0559267adec75495d286b65da6473ba05757546e913ef30755fe28",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Sanders JO, Khoury JG, Kishan S et al. Predicting scoliosis progression from skeletal maturity: a simplified classification during adolescence. J Bone Joint Surg Am. 2008;90(3):540-553."
+   ]
+  },
+  "coluna-0241": {
+   "questaoSha256": "3e47b8a45cd3068be99be80e6287a564a2590df4326fb3f86ec1f062641a532c",
+   "comentarioSha256": "0bfd2278522361a8f299e1902132feccc929c82ee73d2646fac53c275b569aaf",
+   "estado": "na_branch",
+   "data": "2026-10-02",
+   "fontes": [
+    "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+   ]
   }
  },
  "validacao": {
@@ -10590,5 +11982,5 @@
    "motivo": "sem_gabarito_oficial"
   }
  ],
- "proximoPasso": "Verificar PR 31, incorporar após CI do head atual e confirmar publicação. Próximo lote: primeiras questões elegíveis retornadas por estado.py. Reconciliar em_pr/incorporado/publicado pelos PRs e deploys reais, não por esta etiqueta isolada."
+ "proximoPasso": "Lote coluna-0001/0003/0005 gravado na branch claude/sleepy-dirac-4sernd, aguardando aprovação do dono para incorporar. Lote do PR 31 (mao-0004/0010/0011) foi incorporado em 05e206e. Próximo lote: primeiras questões elegíveis retornadas por estado.py."
 }

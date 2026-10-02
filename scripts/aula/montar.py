@@ -1,8 +1,10 @@
-# Converte um lote em texto simples para o JSON de comentários, valida o formato "aula" e aplica.
+# Converte um lote em texto simples para o JSON de comentários e aplica.
+# A forma é livre (diretriz do dono, 02/10/2026): cada comentário é escrito do jeito que a questão pede.
 # Formato do lote:
 #   @@ id-da-questao
 #   ## alerta            (opcional; só quando o gabarito oficial é duvidoso)
 #   ## sem-alerta        (opcional; retira um alerta antigo após confirmar a resposta)
+#   ## referencias       (opcional; uma referência por linha, substitui as antigas)
 #   texto
 #   ## conceito
 #   **Título.** parágrafo...
@@ -30,19 +32,15 @@ for bloco in re.split(r'^@@\s*', txt, flags=re.M)[1:]:
         elif nome == 'correta': c['correta'] = corpo
         elif nome == 'alerta': c['alerta'] = corpo
         elif nome == 'sem-alerta': sem_alerta.add(qid)
+        elif nome == 'referencias': c['referencias'] = [l.strip() for l in corpo.splitlines() if l.strip()]
         else: c['incorretas'][nome] = corpo
     con = c.get('conceito', '')
-    pars = [p for p in con.split('\n\n') if p.strip()]
-    if not pars: erros.append(f'{qid}: conceito vazio')
-    for p in pars:
-        if not p.startswith('**'): erros.append(f'{qid}: parágrafo sem título em negrito: {p[:50]}')
+    if not con.strip(): erros.append(f'{qid}: conceito vazio')
     todo = json.dumps(c, ensure_ascii=False)
     if '—' in todo or '–' in todo: erros.append(f'{qid}: tem travessão (proibido)')
-    if '###' in con: erros.append(f'{qid}: tem título ### (proibido)')
-    if re.search(r'^\s*[-*] ', con, re.M): erros.append(f'{qid}: marcador de lista no conceito (proibido)')
-    if not c.get('correta', '').startswith('**'): erros.append(f'{qid}: correta sem abertura em negrito')
+    if not c.get('correta', '').strip(): erros.append(f'{qid}: correta vazia')
     for l, t in c['incorretas'].items():
-        if not t.startswith('**'): erros.append(f'{qid}/{l}: alternativa sem abertura em negrito')
+        if not t.strip(): erros.append(f'{qid}/{l}: alternativa vazia')
     lote[qid] = c
     print(f'{qid}: conceito {len(con)} | correta {len(c.get("correta", ""))} | ' +
           ' '.join(f'{l}:{len(t)}' for l, t in c['incorretas'].items()))
@@ -58,4 +56,17 @@ for qid, c in lote.items():
 saida = arq.rsplit('.', 1)[0] + '.json'
 json.dump(lote, open(saida, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 args = [sys.executable, os.path.join(RAIZ, 'scripts', 'aplicar_comentarios.py'), saida] + (['--seco'] if seco else [])
-sys.exit(subprocess.call(args))
+codigo = subprocess.call(args)
+if codigo == 0 and not seco:
+    # Registra o lote no checkpoint com os fingerprints do que foi gravado.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import estado as E, datetime
+    cp = E.CHECKPOINT; d = json.loads(cp.read_text())
+    for qid in lote:
+        tema = re.sub(r'-\d+$', '', qid)
+        q = next(x for x in json.load(open(os.path.join(R, 'temas', f'{tema}.json'), encoding='utf-8'))['questoes'] if x['id'] == qid)
+        c = json.load(open(os.path.join(R, 'comentarios', f'{tema}.json'), encoding='utf-8'))[qid]
+        d.setdefault('concluidos', {})[qid] = {'questaoSha256': E.questao_fingerprint(q), 'comentarioSha256': E.fingerprint(c),
+                                               'estado': 'na_branch', 'data': datetime.date.today().isoformat(), 'fontes': c.get('referencias', [])}
+    cp.write_text(json.dumps(d, ensure_ascii=False, indent=1) + '\n')
+sys.exit(codigo)
