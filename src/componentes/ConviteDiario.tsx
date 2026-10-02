@@ -29,6 +29,8 @@ export const TEXTO_CONVITE = `Tô usando o ${SITE.nome} pra estudar pra prova de
 
 ${LINK}`
 
+const FALA = 'Psst! Cheguei com uma carta para você.'
+
 type Estado = { dia: string; segundos: number; mostrado: boolean; pausaAte?: number }
 
 function hoje(): string {
@@ -55,6 +57,7 @@ export function conviteDiarioMostradoHoje(): boolean {
 export function ConviteDiario({ caminho }: { caminho: string }) {
   const [aberto, definirAberto] = useState(false)
   const [copiado, definirCopiado] = useState<'' | 'link' | 'texto'>('')
+  const [letras, definirLetras] = useState(0)
   const atividade = useRef(Date.now())
   const rota = useRef(caminho)
   rota.current = caminho
@@ -98,6 +101,15 @@ export function ConviteDiario({ caminho }: { caminho: string }) {
     } catch { /* cancelou */ }
   }
 
+  // A fala do mensageiro aparece letra a letra, como num diálogo de RPG (toque para pular).
+  useEffect(() => {
+    if (!aberto) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { definirLetras(FALA.length); return }
+    definirLetras(0)
+    const t = window.setInterval(() => definirLetras((n) => { if (n >= FALA.length) { window.clearInterval(t); return n } return n + 1 }), 32)
+    return () => window.clearInterval(t)
+  }, [aberto])
+
   useEffect(() => {
     if (!aberto) return
     const tecla = (e: KeyboardEvent) => { if (e.key === 'Escape') definirAberto(false) }
@@ -109,16 +121,21 @@ export function ConviteDiario({ caminho }: { caminho: string }) {
   // Não é modal: fica no canto (computador) ou sobe de baixo (celular) e a página continua usável.
   return createPortal(
     <aside className="cd nao-imprime" role="dialog" aria-modal="false" aria-labelledby="cd-titulo">
+      <img className="cd__mensageiro" src={recurso('ranking/mensageiro.png')} width={72} height={90} alt="" draggable={false} />
       <button type="button" className="cd__fechar" onClick={() => definirAberto(false)} aria-label="Fechar"><Icone nome="fechar" tamanho={26} /></button>
+      <p className="cd__quem">Mensageiro do {SITE.nome}</p>
+      <p className="cd__fala" aria-label={FALA} onClick={() => definirLetras(FALA.length)}>
+        <span aria-hidden="true">{FALA.slice(0, letras)}</span>{letras < FALA.length && <i className="cd__cursor" aria-hidden="true" />}
+      </p>
       <header className="cd__topo">
-        <img className="cd__carta" src={recurso('ranking/carta.png')} width={72} height={56} alt="" draggable={false} />
+        <img className="cd__carta" src={recurso('ranking/carta.png')} width={45} height={35} alt="" draggable={false} />
         <div>
           <p className="cd__selo">Nova missão</p>
-          <h2 className="cd__titulo" id="cd-titulo">Recrute sua guilda</h2>
+          <h2 className="cd__titulo" id="cd-titulo">Recrute seus amigos</h2>
         </div>
       </header>
       <p className="cd__texto">
-        Chame os colegas da residência para a jornada. As questões gratuitas renovam todo dia, e estudar em grupo rende mais.
+        O {SITE.nome} cresce no <b>boca a boca</b>. Chame os colegas da residência para estudar com você: tem <b>questões gratuitas todo dia</b>, e estudar junto rende mais.
       </p>
       <p className="cd__recompensa"><img src={recurso('ranking/chama.png')} width={18} height={18} alt="" /> <span><b>Recompensa:</b> rivais à altura no ranking e o {SITE.nome} crescendo.</span></p>
       <div className="cd__acoes">

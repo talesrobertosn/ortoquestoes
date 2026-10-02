@@ -201,7 +201,80 @@ def carta() -> None:
             {"k": "#3b2410", "p": "#f6e9c6", "d": "#c9a86a", "s": "#ead7a6", "r": "#b3261e", "w": "#f07a6a"})
 
 
+def mensageiro() -> None:
+    """Mensageiro da guilda segurando a carta do convite (24x30), com contorno automático."""
+    W, H = 24, 30
+    g: list[list[str | None]] = [[None] * W for _ in range(H)]
+
+    def ret(x0: int, y0: int, x1: int, y1: int, c: str) -> None:
+        for y in range(y0, y1 + 1):
+            for x in range(x0, x1 + 1):
+                g[y][x] = c
+
+    # pena do chapéu
+    for (x, y) in ((17, 0), (18, 0), (16, 1), (17, 1), (15, 2), (16, 2), (15, 3)):
+        g[y][x] = "#d33a3a"
+    g[0][19] = "#f07a6a"
+    # chapéu
+    ret(8, 3, 15, 7, "#2f6b22")
+    ret(9, 3, 14, 3, "#4f9a35")
+    ret(8, 4, 8, 7, "#4f9a35")
+    ret(6, 8, 17, 8, "#1f4d18")
+    # cabelo e rosto
+    ret(7, 9, 16, 9, "#6b3d1c")
+    ret(8, 10, 15, 14, "#f2c08a")
+    ret(7, 10, 7, 12, "#6b3d1c")
+    ret(16, 10, 16, 12, "#6b3d1c")
+    for (x, y) in ((10, 11), (13, 11)):
+        g[y][x] = "#1b1208"
+    for (x, y) in ((9, 13), (14, 13)):
+        g[y][x] = "#f08a7a"
+    g[13][11] = g[13][12] = "#8a3a20"
+    ret(8, 10, 15, 10, "#e3a26b")
+    # túnica, cinto e alça da bolsa
+    ret(7, 15, 16, 22, "#2b5fa8")
+    ret(7, 15, 7, 22, "#4a7fd0")
+    ret(7, 21, 16, 21, "#5c3415")
+    g[21][11] = g[21][12] = "#e8b34f"
+    for i in range(6):
+        g[15 + i][9 + i] = "#8a5226"
+    ret(16, 18, 19, 22, "#8a5226")
+    ret(16, 18, 19, 18, "#b47a45")
+    # braço esquerdo
+    ret(4, 16, 6, 20, "#2b5fa8")
+    ret(4, 21, 6, 22, "#f2c08a")
+    # carta na frente, segura pelas mãos
+    ret(8, 16, 15, 20, "#f6e9c6")
+    for i in range(3):
+        g[16 + i][8 + i] = "#c9a86a"
+        g[16 + i][15 - i] = "#c9a86a"
+    ret(11, 18, 12, 19, "#b3261e")
+    ret(7, 18, 7, 19, "#f2c08a")
+    ret(16, 17, 16, 18, "#f2c08a")
+    # pernas e botas
+    ret(8, 23, 10, 26, "#5c3415")
+    ret(13, 23, 15, 26, "#5c3415")
+    ret(7, 27, 10, 28, "#3a2210")
+    ret(13, 27, 16, 28, "#3a2210")
+
+    cheio = {(x, y) for y in range(H) for x in range(W) if g[y][x]}
+    px = []
+    for y in range(H):
+        linha = []
+        for x in range(W):
+            c = g[y][x]
+            if c:
+                linha.append(hexa(c))
+            elif any((x + dx, y + dy) in cheio for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1))):
+                linha.append(hexa("#1b1208"))
+            else:
+                linha.append((0, 0, 0, 0))
+        px.append(linha)
+    gravar(PASTA / "mensageiro.png", px)
+
+
 if __name__ == "__main__":
+    mensageiro()
     carta()
     arena()
     tocha()
