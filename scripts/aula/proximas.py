@@ -27,6 +27,10 @@ for qid in fila[pular:pular + n]:
     q, c = cache[t][0][qid], cache[t][1].get(qid, {})
     print(f"===== {qid} | {q.get('prova')} {q.get('ano')} | {', '.join(q.get('subtemas') or [])} | gabarito {q.get('gabarito')}")
     print(q['enunciado'])
+    for im in q.get('imagens') or []:
+        print(f"[imagem] public/imagens/{im['arquivo']}")
+    if q.get('anulada'):
+        print('[ANULADA]')
     for a in q['alternativas']:
         print(f"{a['letra']}) {a['texto']}")
     if c.get('alerta'):
