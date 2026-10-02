@@ -1,4 +1,5 @@
-# Converte um lote em texto simples para o JSON de comentários, valida o formato "aula" e aplica.
+# Converte um lote em texto simples para o JSON de comentários e aplica.
+# A forma é livre (diretriz do dono, 02/10/2026): cada comentário é escrito do jeito que a questão pede.
 # Formato do lote:
 #   @@ id-da-questao
 #   ## alerta            (opcional; só quando o gabarito oficial é duvidoso)
@@ -34,17 +35,12 @@ for bloco in re.split(r'^@@\s*', txt, flags=re.M)[1:]:
         elif nome == 'referencias': c['referencias'] = [l.strip() for l in corpo.splitlines() if l.strip()]
         else: c['incorretas'][nome] = corpo
     con = c.get('conceito', '')
-    pars = [p for p in con.split('\n\n') if p.strip()]
-    if not pars: erros.append(f'{qid}: conceito vazio')
-    for p in pars:
-        if not p.startswith('**'): erros.append(f'{qid}: parágrafo sem título em negrito: {p[:50]}')
+    if not con.strip(): erros.append(f'{qid}: conceito vazio')
     todo = json.dumps(c, ensure_ascii=False)
     if '—' in todo or '–' in todo: erros.append(f'{qid}: tem travessão (proibido)')
-    if '###' in con: erros.append(f'{qid}: tem título ### (proibido)')
-    if re.search(r'^\s*[-*] ', con, re.M): erros.append(f'{qid}: marcador de lista no conceito (proibido)')
-    if not c.get('correta', '').startswith('**'): erros.append(f'{qid}: correta sem abertura em negrito')
+    if not c.get('correta', '').strip(): erros.append(f'{qid}: correta vazia')
     for l, t in c['incorretas'].items():
-        if not t.startswith('**'): erros.append(f'{qid}/{l}: alternativa sem abertura em negrito')
+        if not t.strip(): erros.append(f'{qid}/{l}: alternativa vazia')
     lote[qid] = c
     print(f'{qid}: conceito {len(con)} | correta {len(c.get("correta", ""))} | ' +
           ' '.join(f'{l}:{len(t)}' for l, t in c['incorretas'].items()))

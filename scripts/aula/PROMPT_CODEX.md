@@ -23,7 +23,13 @@ Vale para todo comentário novo ou reescrito, acima de qualquer regra de tamanho
   a esta pergunta. Uma linha curta do tipo "fecha antes" não basta.
 - O comentário precisa funcionar sozinho: quem cair direto nesta questão sai sabendo o tema, sem
   depender de outra questão do acervo.
-- O tamanho segue a necessidade da explicação; o conceito costuma ficar entre 1.800 e 3.000 caracteres.
+- O tamanho segue a necessidade da explicação.
+- Forma livre: nenhum molde fixo. Cada comentário é uma peça única, escrita como um professor humano
+  escreveria para aquela questão. Títulos em negrito no começo de cada parágrafo, o fecho "Na prova:",
+  listas ou tabelas só entram quando fazem sentido para aquela questão, nunca por obrigação. Repetir a
+  mesma estrutura em todas fica artificial; varie a abertura, o ritmo e a organização.
+  Esta diretriz substitui as regras de formato das seções abaixo (títulos obrigatórios, "Na prova",
+  proibição de listas); continua valendo não usar travessão.
 - Referências: na seção `## referencias` do lote (uma por linha). Só citar referência conferida; sem
   DOI quando ele não puder ser conferido.
 
