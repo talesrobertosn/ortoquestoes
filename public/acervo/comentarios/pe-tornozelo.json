@@ -22,91 +22,91 @@
   "conferido": false
  },
  "pe-tornozelo-0004": {
-  "conceito": "### Charcot-Marie-Tooth (neuropatia sensitivo-motora hereditária)\n- **Padrão:** neuropatia **distal** e **simétrica** (CMT1A: duplicação do PMP22, desmielinizante).\n\n### Pé cavovaro\nÉ um desequilíbrio muscular:\n| Fraco | Forte |\n|---|---|\n| **tibial anterior** | **fibular longo**, que plantiflete o 1º raio |\n| **fibular curto** | **tibial posterior**, que inverte e aduz |\n| intrínsecos (garra dos dedos) | extrínsecos |\n\n**Sequência:** 1º raio plantifletido, antepé **pronado**, retropé **varo** (inicialmente flexível), depois rígido.\n\n### Teste de Coleman\nBloco sob a borda lateral com o 1º raio livre:\n- **se o varo corrige**, o retropé é **flexível** e a cirurgia fica no **antepé** (osteotomia do 1º metatarso, transferência do fibular longo para o curto, fáscia plantar);\n- **se não corrige**, soma-se osteotomia do **calcâneo**.\n\n### Outros achados\n- **Atrofia distal:** \"garrafa de champanhe invertida\" (perna de cegonha).\n- **Mãos intrínsecas.**\n- **Displasia do quadril** (vale rastrear).\n- **Escoliose:** em parte dos pacientes, geralmente ==leve==.\n\n> **Na prova:** CMT = escoliose ==leve==, ==atrofia== da panturrilha e pé ==equinocavo== (cavovaro).",
-  "correta": "**Escoliose leve, atrofia da panturrilha e pé equinocavo.**",
   "incorretas": {
-   "B": "**Grave, atrofia e planovalgo.**\n- O pé é **cavo**, e a escoliose costuma ser leve.",
-   "C": "**Leve, hipertrofia e planovalgo.**\n- **Pseudo-hipertrofia** é da **Duchenne**.\n- O pé também está errado.",
-   "D": "**Grave, hipertrofia e equinocavo.**\n- Acerta só o pé."
+   "B": "A atrofia está certa, mas o pé na CMT é cavo, e não plano, e a escoliose costuma ser leve.",
+   "C": "A panturrilha grossa (pseudo-hipertrofia) é da distrofia de Duchenne, e o pé na CMT é cavo.",
+   "D": "O pé equinocavo está certo, mas a escoliose costuma ser leve e há atrofia, e não hipertrofia, da panturrilha."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **doença de Charcot-Marie-Tooth** (CMT) é uma doença hereditária dos nervos periféricos, também chamada de neuropatia sensitivo-motora hereditária. Ela afeta primeiro os nervos mais longos, então os sintomas começam nos pés e nas pernas, de forma simétrica, e só depois chegam às mãos. A forma mais comum (CMT1A) é causada por uma duplicação do gene PMP22, que prejudica a bainha de mielina dos nervos.\n\nO achado mais típico é o **pé cavo**, com o arco muito alto, geralmente **cavovaro** (com o calcanhar virado para dentro) e às vezes em **equino**. Ele resulta de um **desequilíbrio muscular**: alguns músculos enfraquecem antes de outros. O tibial anterior e o fibular curto ficam fracos, enquanto o fibular longo e o tibial posterior continuam fortes. O fibular longo puxa a cabeça do primeiro metatarso para baixo, o antepé fica \"pronado\", e o calcanhar vira para dentro para o pé conseguir apoiar. Os pequenos músculos do pé também enfraquecem, e os dedos ficam em garra.\n\nOutros achados:\n\n**Atrofia** dos músculos da perna, que fica fina na parte de baixo, com o aspecto de \"garrafa de champanhe invertida\" ou \"perna de cegonha\".\n\nFraqueza dos pequenos músculos das mãos.\n\n**Escoliose** em parte dos pacientes, geralmente **leve**.\n\nDisplasia do quadril, que vale procurar.\n\nA panturrilha grossa (pseudo-hipertrofia) é característica de outra doença, a distrofia muscular de Duchenne.",
+  "correta": "Leve, atrofia da panturrilha e pé equinocavo. A CMT causa escoliose geralmente leve, perna fina por atrofia e pé cavo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0005": {
-  "conceito": "### Nomenclatura das tendinopatias do Aquiles\n| Termo | O que é | Inflamação | Reversível |\n|---|---|---|---|\n| **Paratendinite** | inflamação do **paratendão** | sim | sim |\n| ==Tendinose== | **degeneração intratendínea** | ==não== | ==não (espontaneamente)== |\n| Paratendinite + tendinose | as duas | no paratendão | parcialmente |\n\n### Histologia da tendinose\n- Colágeno **desorganizado**, com mais **tipo III**.\n- **Neovascularização** com nervos associados, que explica a dor.\n- Aumento de **mucopolissacarídeos** (degeneração mucoide).\n- Hipercelularidade **sem** células inflamatórias.\n\n### Consequência terapêutica\n- **Anti-inflamatório** tem papel limitado.\n- **Exercício excêntrico** (protocolo de **Alfredson**) estimula a remodelação. É a base do tratamento.\n- Outras opções: ondas de choque; nos refratários, **debridamento** com ou sem transferência do **flexor longo do hálux**.\n\n### Topografia\n- **Não insercional:** 2 a 6 cm da inserção, na zona hipovascular.\n- **Insercional:** com Haglund e bursite retrocalcânea. Excêntrico **sem dorsiflexão** abaixo do neutro.\n\n> **Na prova:** tendinose = ==irreversível e sem inflamação==.",
-  "correta": "**Lesão irreversível e sem processo inflamatório.**",
   "incorretas": {
-   "A": "**Reversível com inflamação.**\n- É a **paratendinite**.",
-   "B": "**Reversível sem inflamação.**\n- Não corresponde a nenhuma entidade: a tendinose é degeneração estabelecida.",
-   "C": "**Irreversível com inflamação.**\n- A **ausência** de inflamação define a tendinose."
+   "A": "Uma lesão reversível com inflamação descreve a paratendinite, a inflamação da membrana que envolve o tendão.",
+   "B": "Não corresponde à tendinose, que é uma degeneração estabelecida e não reverte sozinha.",
+   "C": "A tendinose é irreversível, mas o que a define é justamente a ausência de inflamação."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "As doenças do **tendão calcâneo** (tendão de Aquiles) recebem nomes diferentes conforme o que está acontecendo no tecido, e cada nome indica um tratamento diferente:\n\n**Paratendinite**: inflamação do **paratendão**, a membrana fina que envolve o tendão por fora. Há inflamação de verdade, e o quadro pode ser revertido.\n\n**Tendinose**: **degeneração** dentro do próprio tendão, **sem inflamação**. É uma lesão estabelecida, que **não volta ao normal** sozinha.\n\nAs duas podem coexistir.\n\nAo microscópio, a tendinose mostra colágeno desorganizado (com mais colágeno tipo III, mais fraco), vasos novos e imaturos acompanhados de terminações nervosas (o que explica a dor), uma substância gelatinosa (degeneração mucoide) e muitas células, mas **nenhuma célula inflamatória**.\n\nIsso tem consequência direta no tratamento. Como não há inflamação, os anti-inflamatórios ajudam pouco. A base do tratamento é o **exercício excêntrico**: o paciente fica na ponta dos pés e desce o calcanhar devagar, com o tendão fazendo força enquanto se alonga (protocolo de Alfredson). Esse estímulo ajuda o tendão a se reorganizar. Outras opções incluem ondas de choque e, nos casos que não melhoram, cirurgia para retirar o tecido doente.\n\nA tendinose pode ser **não insercional**, a 2 a 6 cm do calcanhar, numa região com pouco sangue, ou **insercional**, junto ao osso do calcanhar.",
+  "correta": "Irreversível sem processo inflamatório. A tendinose é uma degeneração estabelecida dentro do tendão, sem células inflamatórias.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0006": {
-  "conceito": "### Face anterior do tornozelo\nTendões, de **medial para lateral**:\n1. **Tibial anterior.**\n2. **Extensor longo do hálux (ELH).**\n3. **Extensor longo dos dedos (ELD).**\n4. **Fibular terceiro.**\n\n### Feixe neurovascular\n- **Componentes:** artéria **tibial anterior** (vira **dorsal do pé**) + **nervo fibular profundo**.\n- **Posição:** corre profundo, entre o **ELH e o ELD** no nível da articulação. Mais distalmente, cruza por baixo do ELH.\n\n### Acesso entre tibial anterior e ELH\n- O feixe fica **lateral** ao plano de dissecção.\n- É afastado ==lateralmente==, junto com os extensores laterais (ELH e ==ELD==).\n- É o acesso usado na **artroplastia total** e em fraturas do pilão.\n- **Cuidados:**\n  - abrir a bainha do **tibial anterior** o mínimo possível, para evitar deiscência sobre o tendão;\n  - proteger o **nervo fibular superficial** (ramo cutâneo dorsal medial), no subcutâneo.\n\n### Outro intervalo\nNo acesso **entre ELH e ELD** (Hoppenfeld), o feixe é afastado **medialmente com o ELH**.\n\n> **Na prova:** intervalo tibial anterior / ELH = feixe afastado ==lateralmente, com os extensores (ELD)==.",
-  "correta": "**Lateralmente, com o tendão extensor longo dos dedos.**",
   "incorretas": {
-   "A": "**Lateralmente com o tibial anterior.**\n- O tibial anterior é o tendão mais **medial**.",
-   "B": "**Medialmente com o tibial anterior.**\n- O feixe fica do outro lado do intervalo.",
-   "D": "**Medialmente com o ELD.**\n- O ELD é lateral; não se afasta medialmente."
+   "A": "O tibial anterior é o tendão mais medial, e o feixe não é afastado junto com ele.",
+   "B": "O feixe fica do lado de fora do plano de dissecção, e não do lado do tibial anterior.",
+   "D": "O extensor longo dos dedos fica do lado de fora e não é afastado para dentro."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na frente do tornozelo, passam quatro tendões que estendem o pé e os dedos. Da parte de dentro (medial) para a de fora (lateral), eles são:\n\n**Tibial anterior**, o mais grosso e o mais medial.\n\n**Extensor longo do hálux**, que estende o dedão.\n\n**Extensor longo dos dedos**, que estende os outros dedos.\n\n**Fibular terceiro**, o mais lateral, nem sempre presente.\n\nJunto a eles passa o **feixe neurovascular** da frente do tornozelo: a **artéria tibial anterior** (que depois vira a artéria dorsal do pé, aquela cujo pulso se sente no peito do pé) e o **nervo fibular profundo**. No nível da articulação, o feixe corre por baixo, entre o extensor longo do hálux e o extensor longo dos dedos.\n\nO acesso anterior ao tornozelo, usado em próteses e em fraturas do pilão tibial, passa **entre o tibial anterior e o extensor longo do hálux**. Nesse caminho, o feixe neurovascular fica do lado de **fora** do plano de dissecção. Por isso, ele é afastado **lateralmente**, junto com os tendões extensores que ficam desse lado, incluindo o **extensor longo dos dedos**.\n\nDois cuidados nesse acesso: abrir o mínimo possível a bainha do tibial anterior, para não deixar o tendão exposto se a ferida abrir, e proteger um ramo do nervo fibular superficial que passa logo abaixo da pele.\n\nSe o acesso for feito entre o extensor longo do hálux e o extensor longo dos dedos, o feixe fica do outro lado e é afastado para dentro, com o extensor do hálux.",
+  "correta": "Lateralmente com o tendão extensor longo dos dedos. No acesso entre o tibial anterior e o extensor do hálux, o feixe fica do lado de fora e é afastado junto com os extensores laterais.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0007": {
-  "conceito": "### Pé plano flexível\nDeformidade **tridimensional**, em que o antepé compensa o retropé:\n| Segmento | Deformidade |\n|---|---|\n| Retropé | ==valgo== (eversão do calcâneo) |\n| Médio-pé | colapso do arco; **abdução** (descobertura talonavicular) |\n| Antepé | ==supinação== (antepé **varo** / supinatus), para a cabeça do 1º metatarso tocar o chão |\n\n### Flexível versus rígido\n- **Flexível:** o arco **reaparece** na ponta dos pés (**Jack**, extensão do hálux). Na ponta dos pés, o calcâneo **inverte**.\n- **Rígido:** sem esse comportamento. Pensar em **coalizão tarsal**, tálus vertical ou artrite.\n\n### Por que o supinatus importa\n- Corrigido só o retropé (osteotomia medializante do calcâneo, alongamento do calcâneo), o supinatus **fixo** deixa a borda medial elevada.\n- Nesse caso é preciso **Cotton** (cunha de adição no 1º cuneiforme, que plantiflete) ou artrodese do 1º raio.\n\n### Pé cavovaro, o oposto\nRetropé **varo** e antepé **pronado** (1º raio plantifletido).\n\n> **Na prova:** pé plano = retropé ==valgo== + antepé ==supinado==.",
-  "correta": "**Valgismo do retropé e supinação do antepé.**",
   "incorretas": {
-   "A": "**Varismo e pronação.**\n- É o **pé cavovaro**.",
-   "B": "**Varismo e supinação.**\n- Acerta o antepé, erra o retropé.",
-   "C": "**Valgismo e pronação.**\n- Acerta o retropé, erra o antepé."
+   "A": "Varismo do retropé com pronação do antepé é o padrão do pé cavovaro, o oposto.",
+   "B": "A supinação do antepé está certa, mas no pé plano o retropé está em valgo, e não em varo.",
+   "C": "O valgo do retropé está certo, mas o antepé está em supinação, e não em pronação."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **pé plano flexível** é uma deformidade em três dimensões, em que cada parte do pé muda de posição:\n\n**Retropé** (o calcanhar): fica em **valgo**, ou seja, o calcâneo vira para fora (eversão). Olhando o paciente por trás, o calcanhar aparece inclinado para fora.\n\n**Médio-pé**: o arco desaba, e a parte da frente do pé se desvia para fora (abdução).\n\n**Antepé** (a parte da frente): fica em **supinação**, com a borda de dentro elevada. Isso acontece como **compensação**: com o calcanhar virado para fora, o pé precisa girar a parte da frente para que a cabeça do primeiro metatarso consiga tocar o chão.\n\nO pé plano é chamado de **flexível** quando o arco **reaparece** ao ficar na ponta dos pés ou ao estender o dedão (teste de Jack), e o calcanhar volta para dentro. Quando isso não acontece, é **rígido**, e é preciso pensar em outras causas, como uma ponte entre os ossos do tarso (coalizão tarsal).\n\nA supinação do antepé importa na cirurgia. Se, com o tempo, ela ficar fixa, corrigir só o calcanhar deixa a borda de dentro do pé elevada. Nesse caso, é preciso também abaixar o primeiro raio, por exemplo com uma osteotomia de Cotton (uma cunha que plantiflete o primeiro cuneiforme).\n\nO **pé cavovaro** é o oposto: calcanhar virado para dentro (varo) e antepé pronado.",
+  "correta": "Valgismo e supinação. O calcanhar vira para fora, e a parte da frente do pé gira em supinação para compensar.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0008": {
-  "conceito": "### Ângulo de Kite no AP com apoio\n- **Normal:** aproximadamente **15° a 30°** no adulto (valores variam entre referências).\n- **Tendendo a zero** (eixos do tálus e do calcâneo **paralelos**): ==retropé varo==. O calcâneo roda para baixo do tálus.\n- **Aumentado:** retropé **valgo** (pé plano, tálus vertical).\n\n### Outros sinais radiográficos do pé cavovaro\n- **Meary** (tálus versus 1º metatarso, no perfil) com **ápice dorsal**.\n- **Pitch do calcâneo** acima de ~30° (cavo posterior).\n- **Seio do tarso** visível, com **fíbula posteriorizada** (perfil do retropé rodado).\n- **Sobreposição dos metatarsos** reduzida no AP.\n\n### Atenção\nA **pronação do antepé** (1º raio plantifletido) é a **causa** do varo no pé cavo flexível (teste de Coleman). Mas o Kite é uma **medida do retropé**.\n\n> **Na prova:** Kite tendendo a zero = ==varo do retropé==.",
-  "correta": "**Varismo do retropé.**",
   "incorretas": {
-   "B": "**Pronação do antepé.**\n- Existe no pé cavo, mas não é o que o Kite mede.",
-   "C": "**Valgismo do retropé.**\n- **Aumentaria** o ângulo.",
-   "D": "**Supinação do antepé.**\n- Compensação do pé **plano**; o Kite não a mede."
+   "B": "A pronação do antepé existe no pé cavo, mas o ângulo de Kite mede o retropé.",
+   "C": "O valgismo do retropé aumentaria o ângulo de Kite, e não o diminuiria.",
+   "D": "A supinação do antepé é a compensação do pé plano, e o ângulo de Kite não a mede."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **ângulo de Kite** é medido na radiografia do pé de frente (AP), com o paciente em pé, apoiando o peso. Traça-se o eixo do **tálus** e o eixo do **calcâneo**, e mede-se o ângulo entre eles. Ele avalia o **retropé** (o calcanhar).\n\nNo pé normal do adulto, os dois eixos formam um ângulo de cerca de 15 a 30 graus, com pequenas variações entre referências.\n\nQuando o ângulo **diminui e tende a zero**, os eixos do tálus e do calcâneo ficam quase **paralelos**. Isso acontece porque o calcâneo gira para baixo do tálus, como ocorre no **retropé varo** (calcanhar virado para dentro). É o padrão do pé cavovaro.\n\nQuando o ângulo **aumenta**, os eixos se afastam, como no **retropé valgo** (calcanhar virado para fora), típico do pé plano.\n\nOutros sinais radiográficos do pé cavovaro: o ângulo de Meary (entre o tálus e o primeiro metatarso, no perfil) com o vértice para cima; o calcâneo mais inclinado (pitch aumentado); e, no perfil do tornozelo, a fíbula mais para trás.\n\nAtenção a uma pegadinha: no pé cavo flexível, a **pronação do antepé** (o primeiro metatarso mais baixo) é a causa do varo do calcanhar. Mas o ângulo de Kite mede o **retropé**, e não o antepé.",
+  "correta": "Varismo do retropé. Com o calcanhar virado para dentro, o calcâneo gira para baixo do tálus, e os eixos ficam quase paralelos.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0009": {
-  "conceito": "### AAMD alto no hálux valgo\n- **AAMD / DMAA** (ângulo articular metatarsal distal): inclinação da superfície articular da cabeça do 1º metatarso. Normal até **~10° a 15°**.\n- **Quando alto:** corrigir só o intermetatarsal deixa a articulação **congruente, porém inclinada**, e o dedo **volta ao valgo**.\n\n### Opções\n- **Correção na origem** (metatarso):\n  - osteotomia distal **biplanar** (Chevron biplanar), com cunha de subtração medial;\n  - osteotomias de **dupla** ou tripla correção.\n- ==Akin==:\n  - cunha de subtração **medial** na base da **falange proximal**;\n  - dá **correção adicional** do valgismo do dedo;\n  - útil com **AAMD alto** e com hálux valgo **interfalângico**.\n  - É o que a questão pede.\n\n### Quando usar cada osteotomia do metatarso (orientação geral)\n| Deformidade | Osteotomia |\n|---|---|\n| Leve a moderada (IM até ~13° a 15°) | **Chevron** (distal) |\n| Moderada a grave | diafisária (**Scarf**, **Ludloff**) ou **proximal** |\n| Grave com hipermobilidade do 1º raio | **Lapidus** (artrodese da 1ª cuneometatarsal) |\n| Artrose | artrodese da 1ª MTF |\n\n> **Na prova:** correção **adicional** do valgismo = ==Akin== (falange proximal).",
-  "correta": "**Akin.**\n- Osteotomia da falange proximal, complementar à correção metatarsal.",
   "incorretas": {
-   "B": "**Ludloff.**\n- Diafisária oblíqua do metatarso; corrige o **IM** grande.",
-   "C": "**Chevron.**\n- Distal do metatarso.\n- Na versão biplanar atua no AAMD, mas não é a osteotomia \"adicional\" da falange.",
-   "D": "**Mitchell.**\n- Distal do metatarso.\n- Pouco usada pelo risco de encurtamento e metatarsalgia de transferência."
+   "B": "A Ludloff é uma osteotomia do corpo do metatarso, usada para corrigir o afastamento grande entre os metatarsos.",
+   "C": "O Chevron é uma osteotomia da ponta do metatarso. Em versão modificada atua no ângulo articular, mas não é a correção adicional na falange.",
+   "D": "A Mitchell é uma osteotomia da ponta do metatarso, hoje pouco usada pelo risco de encurtamento e sobrecarga dos outros metatarsos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "No **hálux valgo** (joanete), o dedão se desvia para fora e o primeiro metatarso se afasta para dentro. A cirurgia precisa corrigir os vários componentes da deformidade.\n\nUm deles é o **ângulo articular metatarsal distal** (AAMD): a inclinação da superfície articular da cabeça do primeiro metatarso em relação ao eixo do osso. Normalmente, essa superfície é quase reta, com até cerca de 10 a 15 graus de inclinação. Quando esse ângulo é **alto**, a superfície está inclinada para fora. Se o cirurgião corrigir só o afastamento entre os metatarsos, o dedão continua apoiado numa superfície inclinada e tende a voltar ao valgo.\n\nDuas estratégias resolvem isso:\n\nCorrigir a inclinação **na própria cabeça do metatarso**, com osteotomias que também retiram uma pequena cunha (como o Chevron biplanar).\n\nFazer uma correção **adicional no dedo**, com a **osteotomia de Akin**: retira-se uma pequena cunha da parte de dentro da base da **falange proximal** do dedão, endireitando o dedo. Ela também é útil quando o desvio está entre as falanges do dedão.\n\nAs outras osteotomias citadas atuam no metatarso:\n\n**Chevron**: corte em V na ponta do metatarso, para deformidades leves a moderadas.\n\n**Ludloff**: corte oblíquo longo no corpo do metatarso, para deformidades maiores.\n\n**Mitchell**: osteotomia da ponta do metatarso, hoje pouco usada porque encurta o osso e pode sobrecarregar os metatarsos vizinhos.",
+  "correta": "Akin. A osteotomia da falange proximal do dedão dá uma correção adicional do valgismo quando o ângulo articular está alto.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0010": {
-  "conceito": "### Metatarso varo (aduto)\n- **Onde está a deformidade:** ==antepé== aduzido nas **tarsometatársicas**.\n- **Retropé normal:** sem equino, sem varo fixo. Isso **diferencia do pé torto**.\n- **Frequência:** a deformidade do pé **mais comum** no recém-nascido.\n- **Classificação de Bleck:** pela linha bissetriz do calcanhar (normal passando entre o 2º e o 3º dedo; leve, moderado e grave conforme se desloca lateralmente) e pela flexibilidade.\n- **Evolução:** a maioria **flexível** melhora sozinha ou com alongamento. As **rígidas** vão para **gesso seriado**.\n\n### Técnica do gesso\n- **Estabilizar** o retropé em **neutro** (ou leve varo), sem deixar valgizar.\n- **Abduzir** o antepé com o contra-apoio (fulcro) no ==cuboide / base dos metatarsos laterais==, isto é, na **cuboideometatarsal**.\n- **Erro:** usar a **cabeça do tálus** como fulcro (Ponseti) empurra o retropé para **valgo** e cria **pé em serpentina (skewfoot)**.\n\n### Comparação\n| | Metatarso varo | Pé torto (Ponseti) |\n|---|---|---|\n| Deformidade | antepé | antepé + médio-pé + **retropé** (CAVE) |\n| Fulcro | ==cuboide / cuboideometatarsal== | **cabeça do tálus** (lateral) |\n\n> **Na prova:** fulcro no metatarso varo = ==cuboideometatarsal==.",
-  "correta": "**Articulação cuboideometatarsal.**",
   "incorretas": {
-   "A": "**Talonavicular.**\n- Fulcro do **pé torto** (cabeça do tálus).",
-   "B": "**Talocalcaneana.**\n- Retropé, que está normal no metatarso varo.",
-   "C": "**Calcaneocuboídea.**\n- Proximal ao ponto certo; deixaria o segmento a corrigir do lado errado do fulcro."
+   "A": "A talonavicular, na cabeça do tálus, é o fulcro do pé torto; no metatarso varo, empurraria o retropé para valgo.",
+   "B": "A talocalcaneana fica no retropé, que é normal no metatarso varo.",
+   "C": "A calcaneocuboídea fica antes do ponto da deformidade, que está nas articulações com os metatarsos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **metatarso varo** (ou metatarso aduto) é a deformidade do pé mais comum no recém-nascido. A parte da **frente do pé** (antepé) fica virada para dentro, desviada nas articulações entre o tarso e os metatarsos. O **retropé é normal**: não há pé apontado para baixo (equino) nem calcanhar virado para dentro de forma fixa. Isso o diferencia do pé torto congênito.\n\nA gravidade pode ser avaliada pela classificação de Bleck, que observa por onde passa uma linha que divide o calcanhar ao meio: no pé normal, ela passa entre o segundo e o terceiro dedos; quanto mais ela se desloca para fora, maior a deformidade. A flexibilidade também é avaliada.\n\nA maioria dos casos flexíveis melhora sozinha ou com alongamentos. Os **rígidos** são tratados com **gesso seriado**, e a técnica tem um detalhe essencial: o ponto de apoio (fulcro) usado para empurrar o antepé para fora deve ficar no **cuboide**, na **articulação cuboideometatarsal**, que é onde a deformidade está. O retropé é mantido em posição neutra.\n\nO erro clássico é usar como fulcro a **cabeça do tálus**, como se faz no pé torto (técnica de Ponseti). No metatarso varo, isso empurra o calcanhar, que era normal, para valgo, e cria uma deformidade nova, o **pé em serpentina** (*skewfoot*), com o antepé para dentro e o retropé para fora.",
+  "correta": "Cuboideometatarsal. É onde está a deformidade do antepé, e o fulcro ali corrige sem empurrar o retropé para valgo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0011": {
-  "conceito": "### Pé cavovaro: a sequência\n1. **Começa no antepé:** o **fibular longo** (forte) vence o **tibial anterior** (fraco) e **plantiflete o 1º raio**.\n2. O 1º metatarso mais baixo que os outros deixa o ==antepé pronado== em relação ao retropé.\n3. Para o pé apoiar, o retropé compensa em ==inversão (varo)==. Colabora o **tibial posterior** forte contra o **fibular curto** fraco.\n4. Com o tempo, o varo fica **rígido**.\n\n### Teste de Coleman (bloco)\n- **Como se faz:** bloco sob a borda **lateral** do pé e o 1º raio **pendendo** para fora do bloco.\n- **Varo corrige:** retropé **flexível**, secundário ao antepé. Tratar o **antepé**:\n  - osteotomia de **dorsiflexão do 1º metatarso**;\n  - **fibular longo para o curto**;\n  - fáscia plantar.\n- **Não corrige:** varo **fixo**. Somar osteotomia do **calcâneo** (Dwyer ou deslizamento lateral) ou artrodese.\n\n### Na criança\n- **Cavovaro unilateral**, ou que progride, exige investigar causa **neurológica**:\n  - **medula ancorada**, **diastematomielia**, tumor;\n  - **CMT** (o mais comum dos bilaterais);\n  - Friedreich, sequela de poliomielite.\n- **RM do neuroeixo** e ENMG.\n\n> **Na prova:** cavovaro = retropé em ==inversão== + antepé ==pronado==.",
-  "correta": "**Retropé em inversão e antepé pronado em relação ao retropé.**",
   "incorretas": {
-   "A": "**Eversão e antepé pronado.**\n- Eversão do retropé é do pé **plano**.",
-   "C": "**Inversão e antepé supinado.**\n- O antepé está **pronado** (1º raio para baixo).",
-   "D": "**Eversão e antepé supinado.**\n- É o padrão do **pé plano** (valgo + supinatus)."
+   "A": "O antepé pronado está certo, mas o retropé está em inversão; eversão do calcanhar é do pé plano.",
+   "C": "O retropé em inversão está certo, mas o antepé está pronado, e não supinado.",
+   "D": "Retropé em eversão com antepé supinado é o padrão do pé plano, o oposto."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "No **pé cavovaro**, o arco é alto e o calcanhar fica virado para dentro. A deformidade costuma **começar na frente do pé** e se propagar para trás:\n\nO músculo **fibular longo**, que continua forte, vence o **tibial anterior**, que está fraco, e puxa a cabeça do **primeiro metatarso para baixo** (plantiflexão do primeiro raio).\n\nCom o primeiro metatarso mais baixo que os outros, a parte da frente do pé fica **pronada** em relação ao retropé.\n\nPara o pé apoiar no chão de forma estável, o calcanhar compensa virando para dentro, em **inversão** (varo). O tibial posterior forte, contra o fibular curto fraco, também ajuda nesse desvio.\n\nCom o tempo, o varo do calcanhar, que no início era só uma compensação, fica **rígido**.\n\nO **teste de Coleman** separa essas fases. Coloca-se um bloco sob a borda de fora do pé, deixando o primeiro metatarso livre para cair. Se o calcanhar se corrige, o varo ainda é flexível e secundário ao antepé, e a cirurgia é feita no antepé. Se não se corrige, o varo já é fixo, e é preciso também uma osteotomia do calcâneo.\n\nNa **criança**, um pé cavovaro de um só lado ou que piora exige investigar uma causa **neurológica**: medula presa, malformações da medula, tumores ou doenças como Charcot-Marie-Tooth (a causa mais comum quando é dos dois lados). A ressonância da coluna e a eletroneuromiografia ajudam.",
+  "correta": "Inversão e o antepé pronado em relação ao retropé. O primeiro metatarso abaixado prona o antepé, e o calcanhar compensa em varo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0012": {
