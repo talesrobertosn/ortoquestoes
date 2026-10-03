@@ -5225,92 +5225,92 @@
   "conferido": false
  },
  "mao-0525": {
-  "conceito": "### Fases histológicas de Luck (Dupuytren)\n| Fase | Histologia | Colágeno III/I |\n|---|---|---|\n| I: proliferativa | fibroblastos e miofibroblastos abundantes, nódulos | ==alta== |\n| II: involutiva | miofibroblastos alinhados na linha de tração | intermediária |\n| ==III: residual== | ==tecido acelular, pouco vascularizado (corda madura)== | ==cerca de 20%== (próximo da fáscia normal) |\n\n### Implicações\n- Doença ativa (nódulos, colágeno III alto): **mais recidiva** após cirurgia.\n- Preferir operar cordas maduras.\n- Corticoide injetável atua nos nódulos ativos.\n\n### Biologia\n- **Miofibroblasto** com actina de músculo liso: gera a contração.\n- TGF-β, via Wnt, genética.\n\n### Tipos de colágeno\n| Tipo | Onde |\n|---|---|\n| I | fáscia normal, tendão, osso, cicatriz madura |\n| II | cartilagem hialina |\n| ==III== | ==cicatriz recente, Dupuytren (excesso)== |\n| IV | membrana basal |\n\n### Fasciotomia percutânea (agulha)\n- Rompe a corda sem abrir a pele.\n- Ideal: ==corda madura== (fase residual), MF, idoso ou com comorbidades.\n- Recidiva maior que a fasciectomia a longo prazo.\n\n> **Na prova:** fasciotomia subcutânea funciona melhor na fase ==residual==",
-  "correta": "**Residual.**\n- Corda madura, acelular e bem definida.\n- Menor recidiva precoce.\n- Indicação típica: MF com corda pré-tendínea.",
   "incorretas": {
-   "A": "**Não existe.**\n- Luck não tem fase hiperplásica.",
-   "B": "**Nódulo ativo.**\n- Recidiva rápida.",
-   "C": "**Intermediária.**\n- Miofibroblastos ativos."
+   "A": "A classificação de Luck não tem fase hiperplásica.",
+   "B": "Na fase proliferativa há nódulos ativos, e a recidiva é rápida.",
+   "C": "Na fase involutiva os miofibroblastos ainda estão ativos, e o resultado é inferior ao da fase residual."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **doença de Dupuytren**, a fáscia doente passa por três fases histológicas, descritas por **Luck**:\n\n**proliferativa**: muitos fibroblastos e miofibroblastos formando **nódulos**; colágeno tipo III alto e desorganizado;\n\n**involutiva**: os miofibroblastos se **alinham** na direção da tração, e a contratura aumenta;\n\n**residual**: tecido **acelular**, pouco vascularizado; é a **corda madura**, bem definida, com colágeno parecido com o da fáscia normal.\n\n**A regra prática**: a doença **ativa** (nódulos) recidiva mais depois de qualquer tratamento. Por isso, os procedimentos funcionam melhor na fase **residual**.\n\n**A fasciotomia subcutânea (percutânea, por agulha)**: a agulha corta a corda em vários pontos **sem abrir a pele**. Funciona melhor quando a corda é **madura, bem definida e palpável** (fase residual), sobretudo na **metacarpofalângica**, com corda pré-tendínea. É boa para idosos e pessoas com comorbidades. A recidiva a longo prazo é maior que a da fasciectomia.\n\n**Lembrete**: não existe fase \"hiperplásica\" na classificação de Luck.\n\n**Na prova**: fasciotomia subcutânea = melhor na fase **residual**.",
+  "correta": "Na fase residual a corda é madura, acelular e bem definida, o que favorece a secção percutânea e reduz a recidiva precoce.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0526": {
-  "conceito": "### Estadiamento de Garcia-Elias (instabilidade escafossemilunar)\n| Estágio | Ligamento | Alinhamento | Cartilagem | Tratamento |\n|---|---|---|---|---|\n| 1 | lesão parcial | normal | íntegra | pinagem (artroscópica), capsulodese |\n| 2 | completo, **reparável** | normal | íntegra | **reparo ligamentar** + pinagem |\n| 3 | irreparável, estabilizadores secundários íntegros | normal | íntegra | tenodese/capsulodese |\n| ==4== | ==irreparável== | ==subluxação rotatória redutível== | ==íntegra== | ==tenodese triligamentar== |\n| 5 | irreparável | subluxação **irredutível** | íntegra | artrodese parcial (STT, escafossemilunocapitato) |\n| 6 | irreparável | irredutível | **lesada** (SLAC) | fileira proximal, **quatro esquinas** |\n\n### Tenodese triligamentar\n- Tira do **FRC** passada pelo escafoide (volar → dorsal), ancorada no **semilunar** e fixada ao **piramidal** (ligamento radiopiramidal dorsal).\n- Impede a flexão do escafoide, une-o ao semilunar e amarra ao lado ulnar.\n\n### Brunelli × Garcia-Elias\n| Técnica | Trajeto do FRC | Ancoragem |\n|---|---|---|\n| ==Brunelli== | túnel no escafoide volar → dorsal | ==rádio distal== (perde movimento) |\n| Garcia-Elias (triligamentar) | idem | ==semilunar e piramidal== (preserva movimento) |\n\n> **Na prova:** Brunelli = ==flexor radial do carpo==",
-  "correta": "**Flexor radial do carpo.**\n- Tira presa na base do 2º MC, passada pelo escafoide.\n- Garcia-Elias modificou a ancoragem para semilunar e piramidal.",
   "incorretas": {
-   "A": "**Extensor puro.**\n- Indispensável.",
-   "B": "**Indispensável.**\n- Estende o punho na paralisia do NIP.",
-   "D": "**Base do polegar.**\n- Usado em outras reconstruções."
+   "A": "O extensor radial curto é o extensor principal do punho e não é o tendão da técnica.",
+   "B": "O extensor radial longo é importante para a extensão do punho e não é usado na técnica de Brunelli.",
+   "D": "O abdutor longo do polegar é usado em outras reconstruções, como na rizartrose, não na de Brunelli."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **instabilidade escafossemilunar** crônica, quando o ligamento não pode mais ser reparado mas o escafoide ainda é **redutível** e a cartilagem está **boa**, faz-se uma **tenodese** para segurar o escafoide e impedir que ele flita.\n\n**A técnica de Brunelli**: usa uma tira do **flexor radial do carpo**, que fica presa distalmente na base do 2º metacarpo. A tira passa por um **túnel no polo distal do escafoide**, de volar para dorsal, e é fixada no **rádio distal**. Assim, ela puxa o escafoide para cima e impede a flexão. O preço é **perda de movimento**, porque a tira cruza a radiocarpal.\n\n**A modificação de Garcia-Elias (tenodese triligamentar)**: a mesma tira do flexor radial do carpo passa pelo escafoide, mas é ancorada no **semilunar** e amarrada ao **piramidal** (pelo ligamento radiopiramidal dorsal), sem prender ao rádio. Corrige a flexão do escafoide, une-o ao semilunar e **preserva mais movimento**.\n\n**Quando usar**: estágio **4** de Garcia-Elias (ligamento irreparável, subluxação rotatória redutível, cartilagem íntegra). Com subluxação irredutível ou artrose (SLAC), passa-se a artrodeses parciais ou à ressecção da fileira proximal.\n\n**Na prova**: Brunelli = **flexor radial do carpo**.",
+  "correta": "A técnica de Brunelli usa uma tira do flexor radial do carpo, passada pelo escafoide de volar para dorsal.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0527": {
-  "conceito": "### Palmer classe 1 e o tratamento\n| Tipo | Local da lesão | Tratamento |\n|---|---|---|\n| 1A | perfuração central (avascular) | desbridamento |\n| 1B | avulsão **ulnar** (fóvea, estiloide) | reinserção na **ulna** |\n| 1C | avulsão **distal** (ulnossemilunar, ulnopiramidal) | reparo ulnocarpal |\n| ==1D== | ==avulsão radial== (incisura sigmoide) | ==reinserção no rádio== (ou desbridamento em lesões pequenas) |\n\n### Por que o rádio na 1D\n- A borda solta é a **radial**: reancora-se o disco na borda da incisura sigmoide (túneis transósseos ou âncoras), artroscópico ou aberto.\n\n### Instabilidade da RUD\n- Mais associada à **1B** (lesão foveal dos ligamentos radioulnares).\n- Teste do **balote** radioulnar em pronação, neutro e supinação.\n\n- Memória: ==centro, ulnar, distal, radial== (A, B, C, D).\n\n### Classe 2 (degenerativa)\n| Tipo | Achado |\n|---|---|\n| 2A | desgaste do CFCT |\n| 2B | + condromalácia do semilunar ou ulna |\n| 2C | + perfuração do CFCT |\n| 2D | + lesão lunopiramidal |\n| 2E | + artrose ulnocarpal |\n\n### Palmer 1B aguda\n| Situação | Conduta |\n|---|---|\n| ==sem instabilidade da RUD== | ==imobilização 4 a 6 semanas== (Munster/gesso longo, bloqueia pronossupinação) |\n| instável ou falha do conservador | reparo (artroscópico ou aberto) |\n| crônica irreparável instável | reconstrução (Adams) |\n\n> **Na prova:** 1B aguda estável = ==imobilização gessada==",
-  "correta": "**Imobilização gessada.**\n- Borda ulnar vascularizada cicatriza.\n- Bloquear a pronossupinação por 4 a 6 semanas.\n- Reparo se RUD instável ou falha.",
   "incorretas": {
-   "B": "**Lesões avasculares.**\n- 1A e degenerativas.",
-   "C": "**Segunda linha.**\n- Instabilidade ou falha.",
-   "D": "**Crônica irreparável.**\n- Enxerto tendíneo."
+   "B": "O desbridamento é para a perfuração central avascular (1A) e para as lesões degenerativas.",
+   "C": "O reparo é a segunda linha, para a radioulnar distal instável ou a falha da imobilização.",
+   "D": "A reconstrução com enxerto é para a lesão crônica, irreparável e instável."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A lesão **Palmer 1B** é a **avulsão ulnar** da fibrocartilagem triangular, da **fóvea** ou da **estiloide** da ulna. Ela fica na **periferia vascularizada**, então pode **cicatrizar** se for bem imobilizada.\n\n**A pergunta que decide a conduta**: a **radioulnar distal está estável**? Testa-se com o **balote** (ou teste do piano), em pronação, neutro e supinação, comparando com o outro lado.\n\n**O tratamento**:\n\n**aguda e estável**: **imobilização gessada** por 4 a 6 semanas, com gesso que **bloqueia a pronossupinação** (axilopalmar ou tipo Munster);\n\n**instável ou falha do conservador**: **reparo**, artroscópico ou aberto, reinserindo na fóvea;\n\n**crônica, irreparável e instável**: **reconstrução** com enxerto de tendão (técnica de Adams).\n\n**O desbridamento** é para as lesões **avasculares**, como a perfuração central (1A), e para as degenerativas.\n\n**Na prova**: Palmer 1B aguda (estável) = **imobilização gessada**.",
+  "correta": "Na lesão 1B aguda sem instabilidade da radioulnar distal, a periferia vascularizada cicatriza com imobilização que bloqueie a pronossupinação por 4 a 6 semanas.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0528": {
-  "conceito": "### Nervo interósseo anterior (NIA)\n- Ramo **motor puro** do mediano, sai logo abaixo do pronador redondo.\n- Desce sobre a **membrana interóssea** com a artéria interóssea anterior.\n\n| Músculo inervado | Função testada |\n|---|---|\n| flexor longo do polegar | flexão da IF do polegar |\n| ==flexor profundo do indicador e do médio== | ==flexão da IFD== desses dedos |\n| pronador quadrado | pronação com cotovelo fletido |\n\n### O que fica preservado\n| Músculo | Nervo |\n|---|---|\n| flexor superficial dos dedos | mediano (acima do NIA) |\n| pronador redondo, FRC, palmar longo | mediano |\n| tenar, lumbricais 1 e 2 | mediano na mão |\n| extensores | radial (NIP) |\n\n### Sinal do O\n- Polpa contra polpa achatada; IFP do indicador flete normalmente (FSD preservado).\n- Sensibilidade **normal**.\n\n> **Na prova:** compressão do NIA enfraquece os ==flexores profundos do indicador e médio==.",
-  "correta": "**FLP e FPD do indicador e médio.**\n- Sinal do círculo.\n- Pronador quadrado também, compensado pelo redondo.\n- Motor puro.",
   "incorretas": {
-   "A": "**Ambos preservados.**\n- Ramos proximais do mediano.",
-   "B": "**FRC preservado.**\n- FPD certo.",
-   "C": "**FSD preservado.**\n- O erro clássico."
+   "A": "O flexor radial do carpo e o flexor superficial recebem ramos do mediano acima do interósseo anterior e ficam preservados.",
+   "B": "O flexor profundo está certo, mas o flexor radial do carpo é inervado por ramo proximal do mediano.",
+   "C": "O flexor longo do polegar está certo, mas o flexor superficial é inervado pelo mediano antes do interósseo anterior."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **nervo interósseo anterior** é o ramo **motor puro** do mediano que sai logo abaixo do pronador redondo e desce sobre a membrana interóssea. Ele inerva:\n\n**flexor longo do polegar**: flexão da interfalângica do polegar;\n\n**flexor profundo do indicador e do médio**: flexão da interfalangiana distal desses dedos;\n\n**pronador quadrado**: pronação com o cotovelo fletido (a pronação geral é compensada pelo pronador redondo).\n\n**O quadro**: a pessoa não faz o **\"O\"** com o polegar e o indicador; as polpas encostam achatadas. A **sensibilidade é normal**, porque o nervo não tem ramos para a pele.\n\n**O que fica preservado** (o erro clássico): o **flexor superficial dos dedos**, o **flexor radial do carpo**, o palmar longo e o pronador redondo recebem ramos do mediano **acima** do interósseo anterior. Por isso, a interfalangiana proximal do indicador flete normal.\n\n**Na prova**: lesão do interósseo anterior = **flexor longo do polegar** e **flexor profundo do indicador e do médio**.",
+  "correta": "O interósseo anterior inerva o flexor longo do polegar e o flexor profundo do indicador e do médio, que ficam paralisados.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0529": {
-  "conceito": "### Classificação de Lichtman (Kienböck)\n| Estágio | Achado |\n|---|---|\n| I | radiografia normal; RM alterada |\n| II | ==esclerose== do semilunar, sem colapso |\n| IIIA | colapso/fragmentação do semilunar, **alinhamento carpal preservado** |\n| ==IIIB== | colapso + ==rotação fixa do escafoide em flexão== (anel cortical), ângulo radioescafoide > 60°, migração proximal do capitato |\n| IIIC | fratura coronal crônica do semilunar |\n| IV | artrose radiocarpal ou mediocarpal |\n\n### Conduta por estágio (resumo)\n| Estágio | Opções |\n|---|---|\n| I a IIIA, ulna minus | encurtamento do rádio, osteotomia de nivelamento |\n| I a IIIA, ulna neutra/plus | encurtamento do capitato, enxerto vascularizado |\n| ==IIIB== | ==artrodese escafotrapeziotrapezoide ou escafocapitato, ressecção da fileira proximal== |\n| IV | artrodese total, artroplastia, denervação |\n\n> **Na prova:** Lichtman IIIB = ==rotação fixa do escafoide==.",
-  "correta": "**Rotação do escafoide.**\n- Rotação fixa em flexão, sinal do anel.\n- Capitato migra, altura carpal cai.\n- Muda a conduta para salvamento.",
   "incorretas": {
-   "A": "**Todo o estágio III.**\n- Não separa A de B.",
-   "B": "**Estágio II.**\n- Sem colapso.",
-   "D": "**Estágio IV.**\n- Artrose vizinha."
+   "A": "A fragmentação do semilunar está presente em todo o estágio III e não separa o IIIA do IIIB.",
+   "B": "A esclerose sem colapso caracteriza o estágio II.",
+   "D": "A artrose das articulações vizinhas caracteriza o estágio IV."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **doença de Kienböck** é a necrose avascular do **semilunar**. A classificação de **Lichtman** segue a evolução do osso e do carpo:\n\n**I**: radiografia **normal**, RM alterada;\n\n**II**: **esclerose** do semilunar, sem colapso;\n\n**IIIA**: **colapso e fragmentação** do semilunar, com o **alinhamento do carpo preservado**;\n\n**IIIB**: colapso com **rotação fixa do escafoide em flexão** (sinal do **anel cortical**, ângulo radioescafoide maior que 60°), migração proximal do capitato e queda da altura do carpo;\n\n**IIIC**: fratura coronal crônica do semilunar;\n\n**IV**: **artrose** radiocarpal ou mediocarpal.\n\n**O que separa IIIA de IIIB**: os dois têm colapso; a diferença é o **escafoide**. Quando ele roda e trava em flexão, o carpo perdeu o alinhamento, e a conduta muda para procedimentos de **salvamento**: artrodese escafotrapeziotrapezoide ou escafocapitato, ou ressecção da fileira proximal. Nos estágios iniciais (I a IIIA), tenta-se descarregar o semilunar com encurtamento do rádio (se ulna minus), encurtamento do capitato ou enxerto vascularizado.\n\n**Na prova**: Lichtman IIIB = **rotação fixa do escafoide**.",
+  "correta": "O que define o estágio IIIB é a rotação fixa do escafoide em flexão, com perda do alinhamento do carpo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0530": {
-  "conceito": "### Narakas e prognóstico\n| Grupo | Raízes | Recuperação espontânea |\n|---|---|---|\n| ==I== | ==C5-C6== | ==completa em cerca de 90%==, muitas vezes ==nas primeiras 1 a 8 semanas== |\n| II | C5-C7 | cerca de 65%; mais lenta, frequentemente incompleta |\n| III | C5-T1 sem Horner | pouca; sequelas |\n| IV | C5-T1 com Horner | a pior; lesão pré-ganglionar |\n\n### Marcos de acompanhamento\n- **Bíceps** contra a gravidade aos 3 meses (Gilbert e Tassin): se ausente, considerar cirurgia.\n- **Teste do biscoito** (Toronto): levar o biscoito à boca aos 9 meses.\n- **Escala de Toronto** e escala de movimento ativo (AMS).\n\n### Fatores de pior prognóstico\n- Horner, lesão total, ausência de recuperação do bíceps até 3 meses, avulsões (pré-ganglionares).\n\n> **Na prova:** Narakas II = ==C5, C6 e C7== (Erb + punho caído).",
-  "correta": "**C5, C6 e C7.**\n- Erb com punho e dedos caídos.\n- Prognóstico intermediário.",
   "incorretas": {
-   "A": "**Grupos 3 e 4.**\n- Completa sem ou com Horner.",
-   "B": "**Grupo 1.**\n- Erb clássico.",
-   "D": "**Klumpke.**\n- Rara ao nascer; fora da escala."
+   "A": "A lesão completa do plexo corresponde aos grupos III (sem Horner) e IV (com Horner).",
+   "B": "C5 e C6 isoladas são o grupo I, o Erb clássico.",
+   "D": "A lesão isolada das raízes inferiores (Klumpke) é rara ao nascimento e não faz parte da escala de Narakas."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **classificação de Narakas** separa a paralisia obstétrica do plexo braquial pelas raízes envolvidas, e o grupo prevê a chance de recuperação espontânea:\n\n**grupo I**: **C5 e C6** (Erb clássico): ombro e flexão do cotovelo fracos; recuperação completa em cerca de 90%, muitas vezes nas primeiras semanas;\n\n**grupo II**: **C5, C6 e C7**: o mesmo quadro de Erb, com **punho e dedos caídos** pela perda de C7; recuperação mais lenta e muitas vezes incompleta (cerca de 65%);\n\n**grupo III**: **C5 a T1**, lesão **completa sem Horner**: mão flácida, pouca recuperação;\n\n**grupo IV**: **C5 a T1 com Horner**: a pior; sugere avulsão pré-ganglionar.\n\n**Os marcos de acompanhamento**: o **bíceps** contra a gravidade até os **3 meses** (Gilbert e Tassin); se não volta, considera-se cirurgia. O **teste do biscoito** (levar o biscoito à boca aos 9 meses) e a **escala de Toronto** também ajudam a decidir.\n\n**A paralisia de Klumpke** isolada (C8-T1) é rara ao nascimento e não é um grupo de Narakas.\n\n**Na prova**: Narakas II = **C5, C6 e C7**.",
+  "correta": "O grupo II de Narakas envolve C5, C6 e C7: Erb com punho e dedos caídos.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0531": {
-  "conceito": "### Compressão do mediano no cotovelo\n| Ponto | Manobra provocativa |\n|---|---|\n| ligamento de Struthers (processo supracondilar) | RX: esporão supracondilar |\n| lacerto fibroso | flexão resistida do cotovelo em supinação |\n| ==pronador redondo== (entre as cabeças) | ==pronação resistida com extensão do cotovelo==; ==compressão proximal e lateral do ventre== |\n| arcada do flexor superficial | flexão resistida da IFP do dedo médio |\n\n### Síndrome do pronador\n- Dor no antebraço proximal, parestesia no território do mediano ==incluindo a eminência tenar== (ramo cutâneo palmar).\n- Sem sintoma noturno típico; Phalen negativo.\n- ENMG frequentemente normal.\n\n### Teste de compressão\n- Polegar na porção ==proximal e lateral== do pronador, por cerca de 30 s.\n- Positivo: parestesia no mediano.\n\n### Não confundir os Struthers\n| Estrutura | Nervo |\n|---|---|\n| ==ligamento== de Struthers (processo supracondiliano) | ==mediano== |\n| ==arcada== de Struthers (septo intermuscular medial) | ==ulnar== |\n\n> **Na prova:** ponto de compressão na síndrome do pronador = ==arcada do flexor superficial== (entre outros).",
-  "correta": "**Arcada do flexor superficial.**\n- Ponto mais distal dos quatro.\n- Flexão resistida da IFP do médio reproduz a parestesia.",
   "incorretas": {
-   "A": "**Túnel cubital.**\n- Nervo ulnar.",
-   "C": "**Nervo ulnar.**\n- Arcada ≠ ligamento de Struthers.",
-   "D": "**Não existe.**\n- É o lacerto fibroso que comprime."
+   "A": "A cabeça umeral do flexor ulnar do carpo forma o túnel cubital, onde se comprime o nervo ulnar.",
+   "C": "A arcada de Struthers, no septo intermuscular medial, comprime o ulnar; o mediano é comprimido pelo ligamento de Struthers.",
+   "D": "O bíceps comprime o mediano pelo lacerto fibroso, e não por uma cabeça medial."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **síndrome do pronador** é a compressão do **mediano** no cotovelo e no antebraço proximal. Ela tem quatro pontos possíveis, de proximal para distal:\n\n**ligamento de Struthers**: liga um **processo supracondilar** do úmero ao epicôndilo medial; a radiografia mostra o esporão;\n\n**lacerto fibroso** (aponeurose bicipital): dor à flexão resistida do cotovelo em supinação;\n\n**entre as cabeças do pronador redondo**: dor à pronação resistida com o cotovelo estendido;\n\n**arcada aponeurótica do flexor superficial dos dedos**: dor à **flexão resistida da IFP do dedo médio**.\n\n**O quadro**: dor no antebraço proximal e parestesia no território do mediano, **incluindo a eminência tenar** (o ramo cutâneo palmar sai antes do túnel do carpo). Não há o sintoma noturno típico do túnel do carpo, o Phalen é negativo, e a eletroneuromiografia muitas vezes é normal.\n\n**Não confundir os dois Struthers**: o **ligamento** de Struthers comprime o **mediano**; a **arcada** de Struthers, no septo intermuscular medial, comprime o **ulnar**. A cabeça umeral do flexor ulnar do carpo forma o **túnel cubital**, também do ulnar.\n\n**Na prova**: ponto de compressão na síndrome do pronador = **arcada do flexor superficial dos dedos** (entre os quatro).",
+  "correta": "A arcada aponeurótica do flexor superficial dos dedos é um dos pontos de compressão do mediano na síndrome do pronador.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0532": {
-  "conceito": "### Fáscia palmar normal → corda patológica\n| Estrutura normal | Orientação | Corda | Efeito |\n|---|---|---|---|\n| banda pré-tendínea | longitudinal | pré-tendínea (central na palma) | flexão da MF |\n| ==ligamento natatório== | ==transversa, nas comissuras== | ==natatória== | ==fecha a comissura, limita abdução== |\n| banda espiral + lâmina digital lateral + Grayson | espiral | ==corda espiral== | flexão da IFP, desloca o feixe |\n| lâmina digital lateral | longitudinal no dedo | lateral | flexão da IFP e IFD |\n| fibras transversas (lig. palmar transverso) | transversa proximal | ==poupada== | |\n| ligamento de Cleland | dorsal ao feixe | ==poupado== | |\n\n### Memória\n- Pré-tendínea limita ==extensão== do dedo.\n- Natatória limita ==abertura== entre os dedos.\n\n### Qual corda, qual articulação\n| Corda | Contratura | Risco cirúrgico |\n|---|---|---|\n| ==pré-tendínea== | ==MF== | baixo (linha média, longe do feixe); corrige bem |\n| espiral | IFP | ==alto==: feixe deslocado para o centro e superfície |\n| central (digital) | IFP | moderado |\n| natatória | comissura | |\n| abdutor do mínimo | IFP do mínimo | |\n\n| retrovascular | IFD (residual) | dorsal ao feixe |\n\n> **Na prova:** corda da IFP = ==espiral== (em flexão; veja o alerta).",
-  "correta": "**Espiral, com reserva.**\n- Responsável pela deformidade da IFP, mas em flexão.\n- Puxa o feixe para o centro e a superfície.\n- Dissecar do proximal para o distal (veja o alerta).",
   "incorretas": {
-   "A": "**Também IFP.**\n- Mas não desloca o feixe para o centro.",
-   "C": "**MF.**\n- Linha média, segura.",
-   "D": "**IFD.**\n- Contratura residual distal."
+   "A": "A corda lateral também pode fletir a IFP, mas não é a clássica nem desloca o feixe para o centro.",
+   "C": "A corda central também flete a IFP, mas não é a corda clássica dessa deformidade nem desloca o feixe como a espiral.",
+   "D": "A corda retrovascular, dorsal ao feixe, está ligada à contratura residual da IFD."
   },
+  "conceito": "Na **doença de Dupuytren**, cada faixa normal da fáscia vira uma **corda** que puxa uma articulação específica. A doença sempre produz contraturas em **flexão**: o dedo fecha e não abre.\n\n**As cordas e o que cada uma faz**:\n\n**pré-tendínea** (na palma, sobre o tendão): contratura em flexão da **MF**; corrige bem e fica longe do feixe;\n\n**espiral**: formada pela banda espiral, pela lâmina digital lateral e pelo ligamento de Grayson; causa contratura em **flexão da IFP** e **desloca o feixe neurovascular** para o centro e para a superfície, o que torna a dissecção perigosa;\n\n**central (digital)**: continuação da pré-tendínea no dedo; flexão da **IFP**;\n\n**lateral**: flexão da IFP e às vezes da IFD;\n\n**natatória**: fecha a **comissura** e limita a abertura entre os dedos;\n\n**retrovascular**: dorsal ao feixe, ligada à contratura residual da **IFD**.\n\n**O que não adoece**: o ligamento de **Cleland** e as fibras transversas do ligamento palmar.\n\n**A questão**: o enunciado fala em **hiperextensão** da IFP, mas a doença causa **flexão** da IFP; a hiperextensão que pode aparecer é da IFD, secundária. A corda que o gabarito pede é a **espiral**, a mais ligada à deformidade da IFP.\n\n**Na prova**: corda espiral = contratura da **IFP** (em flexão) e feixe deslocado.",
+  "correta": "O gabarito oficial é a corda espiral, a responsável clássica pela deformidade da IFP, mas essa deformidade é em flexão, e não em hiperextensão.",
   "alerta": "A doença de Dupuytren produz contratura em FLEXÃO da interfalângica proximal, e não hiperextensão, o dedo fecha bem e não abre. A hiperextensão que aparece na doença é da interfalângica distal, secundária, e a corda ligada à distal é a retrovascular. Leia o enunciado com reserva e guarde qual corda produz o quê.",
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0533": {
