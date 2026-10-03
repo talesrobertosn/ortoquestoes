@@ -17,6 +17,7 @@ const ASSINANTE = [
   ['/temas-que-mais-caem', 'Temas que mais caem'],
   ['/simulado-nacional', 'Simulado Nacional'],
   ['/ligas', 'Liga da residência'],
+  ['/indicar', 'Indique e ganhe'],
 ] as const
 const PROJETO = [
   ['/sobre', 'O projeto'],
