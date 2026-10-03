@@ -558,7 +558,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             {desempenhoAnterior !== null ? ` · seu acerto: ${desempenhoAnterior}%` : ''}
           </span>
         </div>
-        <a className="botao botao--ouro tr-barra__cronograma" href={href('/cronograma')} title={rotuloCronograma}><Icone nome="rota" tamanho={18} /><span>{rotuloCronograma}</span></a>
+        <a className="botao botao--ouro tr-barra__cronograma" href={href('/cronograma')} title={rotuloCronograma} aria-label={rotuloCronograma}><Icone nome="rota" tamanho={18} /><span>{rotuloCronograma}</span></a>
         <button type="button" className="botao botao--fantasma tr-barra__limpar" onClick={() => definirFiltros({ ...FILTROS_VAZIOS, limite: 10 })}>Limpar</button>
         <button type="button" className="botao botao--principal botao--grande" disabled={total === 0 || carregandoBusca} onClick={comecar}>
           {total === 0 ? 'Ajuste os filtros' : simulado ? (

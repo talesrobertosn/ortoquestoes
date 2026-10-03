@@ -122,6 +122,9 @@ textarea {
 
 .pagina {
   min-height: 100dvh;
+  /* Nada pode alargar a página no celular: o que passar da tela é cortado
+     (clip não cria rolagem, então barras fixas e sticky continuam valendo). */
+  overflow-x: clip;
   display: flex;
   flex-direction: column;
 }
