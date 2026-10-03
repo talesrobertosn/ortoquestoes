@@ -340,6 +340,20 @@ exceto onde o nome já aparece ao lado (favicon, ícone do aplicativo).
 Não usar letra dentro de círculo como símbolo. O desenho vive em `src/marca/Simbolo.tsx` e em
 `public/favicon.svg`; depois de mudar o favicon, rode `python3 scripts/gerar_icones.py`.
 
+### Temporadas
+
+O site tem duas camadas de identidade:
+
+- **Base, fixa:** o verde e o dourado, o símbolo da coluna, o nome por extenso em Plus Jakarta e a
+  fonte do sistema no texto das questões.
+- **Temporada, rotativa:** a arte, a fonte de destaque e os acentos de cada fase do site. A temporada
+  atual é a **RPG pixel art**: ícones de `public/pixel/`, mensageiro, baú, coroa, emblemas, arena do
+  ranking e a fonte Pixelify Sans (`--fonte-pixel`). Depois virão outras, como Halloween, Natal,
+  Carnaval, festa junina e reta final da prova.
+
+A temporada é parte central da identidade. Mudanças de design nunca tiram a arte nem a fonte da
+temporada em vigor; elas só saem quando a próxima temporada entra no lugar.
+
 ## Licença
 
 Os enunciados pertencem às bancas das provas originais e estão reproduzidos para fins de estudo. O
