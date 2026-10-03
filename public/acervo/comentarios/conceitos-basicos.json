@@ -1002,14 +1002,14 @@
   "conferido": false
  },
  "conceitos-basicos-0089": {
-  "conceito": "### Kocher pela soma\nCritérios: febre acima de 38,5 °C, **não apoio**, VHS acima de 40 mm/h, **leucócitos acima de 12.000**.\n\n### Probabilidade (série original)\n- 1 critério: ~3%.\n- ==2 critérios: ~40%==.\n- 3 critérios: acima de 90%.\n- 4 critérios: ~99%.\n\n### O caso\nNão apoia + leucócitos de 13.000 = **dois critérios**.\n\n### Nessa faixa\nNão se pode tranquilizar nem operar às cegas:\n- **Ultrassom** para derrame.\n- **Punção** guiada.\n- PCR ajuda (Caird).\n\n> **Na prova:** Kocher ==2 critérios = ~40%==; 4 = ~99%.",
-  "correta": "**Cerca de 40%.**\n- Dois critérios presentes.",
   "incorretas": {
-   "A": "**Um critério.**\n- Próximo do patamar de um critério (~3%).",
-   "C": "**Sem patamar.**",
-   "D": "**Quatro critérios.**"
+   "A": "10% está mais próximo da probabilidade com apenas um critério, que fica em torno de 3%.",
+   "C": "Não há um patamar de 70% na série original; com três critérios, a probabilidade já passa de 90%.",
+   "D": "Cerca de 99% corresponde aos quatro critérios presentes, e a criança tem dois."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A criança que manca e não quer apoiar a perna pode ter **artrite séptica** do quadril, uma infecção que exige drenagem urgente, ou **sinovite transitória**, uma inflamação leve que passa sozinha. Para estimar a chance de ser infecção, usam-se os quatro **critérios de Kocher**:\n\n**Febre** acima de 38,5 graus.\n\n**Não apoiar** o peso no membro.\n\n**VHS** acima de 40 mm/h.\n\n**Leucócitos** no sangue acima de 12.000 por mm³.\n\nO que importa é quantos critérios estão presentes. Na série original de Kocher, a probabilidade de artrite séptica foi de cerca de 3% com um critério, cerca de **40% com dois**, mais de 90% com três e cerca de 99% com os quatro.\n\nNesta questão, a criança **não apoia** o membro e tem **leucócitos de 13.000**. São dois critérios, e a probabilidade fica em torno de **40%**.\n\nCom essa probabilidade intermediária, não dá para tranquilizar a família e mandar para casa, nem operar sem mais informação. O próximo passo é um **ultrassom** para ver se há líquido no quadril e a **punção** guiada, para analisar o líquido. A PCR elevada, acrescentada como critério por Caird, também ajuda a decidir.",
+  "correta": "40%. Não apoiar o membro e leucócitos acima de 12.000 somam dois critérios de Kocher, o que corresponde a cerca de 40% de probabilidade.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0090": {
@@ -1024,134 +1024,134 @@
   "conferido": false
  },
  "conceitos-basicos-0091": {
-  "conceito": "### Strain = movimento ÷ tamanho da falha\n\n### Multifragmentar\n- **Muitas fendas**: o movimento total se distribui.\n- Cada fenda sofre uma fração pequena: deformação local **baixa**.\n- ==Toleram mais movimento== e formam calo com facilidade.\n- Aceitam e preferem **estabilidade relativa** (haste, placa em ponte).\n\n### Transversa (o oposto)\n- Fenda **única e estreita**.\n- Micromovimento = deformação **alta**.\n- Exige **compressão** e estabilidade absoluta.\n\n### O erro a evitar\nEstabilidade absoluta forçada numa fratura cominutiva (desnudando fragmentos para comprimir cada um) destrói a biologia.\n\n> **Na prova:** multifragmentar ==tolera mais movimento==.",
-  "correta": "**Toleram mais movimento.**\n- O movimento se distribui entre várias fendas.",
   "incorretas": {
-   "A": "**Não é igual.**\n- A geometria muda a deformação.",
-   "C": "**Toda fratura precisa.**\n- O ponto é que ela admite estabilidade relativa.",
-   "D": "**Invertido.**\n- Quem tolera menos é a fenda única."
+   "A": "A tolerância não é igual: a geometria da fratura muda a deformação em cada fenda.",
+   "C": "Toda fratura instável precisa de fixação. O ponto é que a multifragmentar aceita estabilidade relativa, com algum movimento.",
+   "D": "É o contrário: quem tolera menos movimento é a fratura com uma única fenda estreita."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Perren** explicou a consolidação usando o conceito de **deformação** (*strain*): a variação do tamanho de uma fenda entre fragmentos dividida pelo tamanho original dessa fenda. Cada tecido tolera uma deformação máxima, e o osso tolera muito pouca. Se a deformação numa fenda é alta demais, o osso não consegue se formar ali.\n\nNuma **fratura multifragmentar**, há **várias fendas** entre vários fragmentos. Quando o membro se move, o movimento total entre as pontas principais se **divide** entre essas fendas. Cada uma sofre só uma pequena parte, e a deformação em cada fenda é **baixa**. Por isso, essas fraturas **toleram mais movimento** e formam calo com facilidade. Elas aceitam e se beneficiam da **estabilidade relativa**, como a haste intramedular ou a placa em ponte, que permitem algum movimento controlado.\n\nA **fratura transversa** é o oposto: tem uma única fenda, estreita. Um pequeno movimento já representa uma deformação enorme nessa fenda. Ela precisa de **estabilidade absoluta**, com compressão que elimina o movimento.\n\nUm erro a evitar: tentar dar estabilidade absoluta a uma fratura cominutiva, descolando cada fragmento para comprimi-lo um a um. Isso tira o sangue dos fragmentos e destrói a biologia da consolidação.",
+  "correta": "Toleram mais movimento entre os fragmentos. O movimento se divide entre várias fendas, e a deformação em cada uma fica baixa.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0092": {
-  "conceito": "### Os três estágios clássicos\n- ==Estágio I, agudo== (até ~3 meses): dor desproporcional, **edema** mole, pele quente e **avermelhada** (hiperemia, vasodilatação), sudorese aumentada, crescimento acelerado de pelos e unhas.\n- **Estágio II, distrófico:** vasoconstrição. Pele **fria, cianótica e úmida**, edema endurecido, rigidez, início de atrofia.\n- **Estágio III, atrófico:** pele fina, seca, **pálida** e brilhante, contraturas fixas, **osteopenia** difusa.\n\n### Hoje\nDiagnóstico pelos **critérios de Budapeste**; os estágios são didáticos.\n\n> **Na prova:** estágio I = ==edema e hiperemia==.",
-  "correta": "**Edema e hiperemia.**\n- A fase vasodilatadora inicial.",
   "incorretas": {
-   "B": "**Estágios avançados.**",
-   "C": "**Tardio.**\n- A osteopenia é tardia; o vasoespasmo marca a virada para o II.",
-   "D": "**Vasoconstrição.**\n- Estágios II e III."
+   "B": "A fibrose e a rigidez aparecem nos estágios mais avançados.",
+   "C": "A osteopenia é um achado tardio, e o vasoespasmo marca a passagem para o estágio II.",
+   "D": "A cianose aparece no estágio II, e a palidez, no estágio III, quando os vasos estão contraídos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **síndrome dolorosa regional complexa** é uma complicação que pode surgir depois de uma fratura, cirurgia ou trauma, com dor desproporcional ao machucado e alterações da circulação, do suor e da pele. Ela é classicamente descrita em **três estágios**:\n\n**Estágio I, agudo** (primeiros meses): além da dor desproporcional, há **edema** (inchaço) mole e **hiperemia**, com a pele quente e avermelhada, porque os vasos estão dilatados. O suor aumenta, e pelos e unhas podem crescer mais rápido.\n\n**Estágio II, distrófico**: os vasos passam a se contrair. A pele fica fria, arroxeada (cianótica) e úmida, o inchaço endurece, e começam a rigidez e a atrofia.\n\n**Estágio III, atrófico**: a pele fica fina, seca, brilhante e pálida, aparecem contraturas fixas, e o osso fica rarefeito na radiografia (**osteopenia**).\n\nHoje, o diagnóstico é feito pelos **critérios de Budapeste**, que reúnem sinais sensoriais, de cor e temperatura, de suor e inchaço, e motores e tróficos. Os estágios continuam úteis para estudar e para entender a evolução.",
+  "correta": "Edema e hiperemia. No estágio I, os vasos estão dilatados, e a pele fica inchada, quente e avermelhada.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0093": {
-  "conceito": "### O tempo diz o germe\n- **Precoce** (primeiras semanas): germes **virulentos** por contaminação intraoperatória ou da ferida. ==S. aureus e bacilos gram-negativos==.\n- **Tardia** (meses): germes de **baixa virulência** com biofilme maduro. Coagulase-negativos, Cutibacterium acnes.\n\n### Na conduta\n- **Precoce:** desbridamento, antibiótico e **manutenção do implante** se estável, até consolidar.\n- **Tardia:** em geral, **remover** o implante.\n\n### Coleta\nMúltiplas amostras de **tecido profundo** (não swab de fístula), antes do antibiótico quando possível; sonicação do implante retirado aumenta o rendimento.\n\n> **Na prova:** infecção precoce pós-osteossíntese = ==S. aureus e BGN==.",
-  "correta": "**S. aureus e BGN.**",
   "incorretas": {
-   "A": "**Estreptococo não é o par clássico.**",
-   "C": "**Tardia.**",
-   "D": "**Tardia.**"
+   "A": "O *S. aureus* está certo, mas o estreptococo não é o par clássico da infecção precoce pós-osteossíntese.",
+   "C": "O estafilococo coagulase-negativo, de baixa virulência, é típico da infecção tardia.",
+   "D": "Os gram-negativos aparecem na infecção precoce, mas o coagulase-negativo é típico da tardia."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Quando a infecção aparece depois de uma osteossíntese (cirurgia com placa, haste ou parafusos), o **tempo** até o início dos sintomas indica o tipo de germe mais provável.\n\nNa infecção **precoce**, nas primeiras semanas, a contaminação acontece durante a cirurgia ou pela ferida, e os germes são **virulentos**, capazes de causar infecção rápida e intensa. Os mais comuns são o *Staphylococcus aureus* e os **BGN**, bacilos gram-negativos (bactérias como *Pseudomonas*, *E. coli* e *Enterobacter*, comuns em fraturas expostas e no ambiente hospitalar).\n\nNa infecção **tardia**, meses depois, predominam germes de **baixa virulência**, que crescem devagar protegidos pelo biofilme, como os estafilococos coagulase-negativos (da pele) e o *Cutibacterium acnes*.\n\nO tempo também muda a conduta. Na infecção precoce, o biofilme ainda não amadureceu, e é possível fazer limpeza cirúrgica e antibiótico mantendo o implante, se ele estiver firme, até a fratura consolidar. Na tardia, em geral é preciso retirar o implante.\n\nPara identificar o germe, o ideal é colher várias amostras de **tecido profundo** durante a cirurgia, de preferência antes do antibiótico. Colher secreção da pele ou da fístula com cotonete (swab) é pouco confiável, porque pega germes da superfície.",
+  "correta": "Aureus e BGN. Na infecção precoce predominam germes virulentos, como o *S. aureus* e os bacilos gram-negativos.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0094": {
-  "conceito": "### As cinco fases\n- **Transdução:** estímulo vira potencial de ação no nociceptor.\n- **Condução:** o impulso viaja pela fibra periférica.\n- **Transmissão:** sinapse no corno posterior e subida pelos tratos espinotalâmicos.\n- **Percepção:** experiência consciente no córtex.\n- ==Modulação==: vias que **descem** do tronco encefálico (periaquedutal, núcleo magno da rafe) até o corno posterior.\n\n### A modulação\n- Libera opioides endógenos, **serotonina** e **noradrenalina**.\n- Amplifica ou reduz o sinal.\n- É onde agem **opioides** e **antidepressivos** (duais, tricíclicos) na dor crônica.\n\n> **Na prova:** vias descendentes até a medula = ==modulação==.",
-  "correta": "**Modulação.**",
   "incorretas": {
-   "A": "**Ascendente periférica.**",
-   "B": "**Cortical.**",
-   "D": "**Ascendente medular.**"
+   "A": "A condução é a viagem do sinal pela fibra periférica até a medula, num sentido que sobe.",
+   "B": "A percepção é a etapa final, no córtex, quando a dor se torna consciente.",
+   "D": "A transmissão é a passagem do sinal na medula e sua subida até o cérebro."
   },
+  "conceito": "O processamento da dor passa por cinco fases, e cada uma é alvo de tratamentos diferentes:\n\n**Transdução**: o estímulo que machuca é transformado em sinal elétrico nas terminações nervosas da dor (nociceptores). Os anti-inflamatórios agem aqui.\n\n**Condução**: o sinal viaja pelas fibras nervosas até a medula. Os anestésicos locais bloqueiam essa etapa.\n\n**Transmissão**: na medula, o sinal passa para outro neurônio e sobe até o cérebro.\n\n**Percepção**: o córtex cerebral transforma o sinal na experiência consciente da dor.\n\n**Modulação**: o cérebro também manda sinais **de volta**, por vias que **descem** do tronco encefálico até a medula. Essas vias liberam substâncias como as endorfinas (opioides naturais do corpo), a serotonina e a noradrenalina, que podem **diminuir ou aumentar** a passagem do sinal de dor na medula. É por isso que emoções, atenção e estresse mudam tanto a intensidade da dor.\n\nOs opioides e alguns antidepressivos usados na dor crônica, como os tricíclicos e os duais (que aumentam serotonina e noradrenalina), agem reforçando essa modulação.",
+  "correta": "Modulação. É a fase em que vias descem do tronco encefálico até a medula, inibindo ou facilitando o sinal de dor.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 1.8"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0095": {
-  "conceito": "### O que é o CORA\nO ponto onde o **eixo proximal** e o **eixo distal** se cruzam.\n\n### A regra da coerência\n- Pode-se usar **eixo anatômico** dos dois lados, ou **eixo mecânico** dos dois lados.\n- ==Nunca misturar==: anatômico com mecânico gera um ponto que não corresponde a CORA nenhum.\n\n### Na tíbia\nOs eixos anatômico e mecânico da tíbia são **praticamente paralelos e próximos**, por isso na prática se usa qualquer um, desde que do mesmo tipo. No **fêmur** eles divergem (cerca de 6 a 7°), e a regra pesa mais.\n\n### Depois de achar o CORA\nOsteotomia no nível do CORA, com dobradiça nele: corrige sem translação.\n\n> **Na prova:** CORA = cruzamento dos ==eixos do mesmo tipo== (mecânico com mecânico).",
-  "correta": "**Onde os eixos mecânicos proximal e distal se encontram.**",
   "incorretas": {
-   "A": "**Ápice aparente.**\n- Só coincide com o CORA sem translação.",
-   "C": "**Mistura eixos.**\n- A intersecção não é um CORA.",
-   "D": "**Mistura eixos.**"
+   "A": "O ponto mais convexo da cortical só coincide com o CORA quando não há translação associada.",
+   "C": "Mistura eixo mecânico com eixo anatômico, e esse cruzamento não corresponde a um CORA.",
+   "D": "Também mistura os dois tipos de eixo, o que não é permitido."
   },
+  "conceito": "O **CORA** (do inglês *center of rotation of angulation*, centro de rotação da angulação) é o ponto em que se cruzam o **eixo do segmento de cima** e o **eixo do segmento de baixo** de um osso deformado. É a referência para planejar a correção.\n\nExistem dois tipos de eixo:\n\nO **eixo anatômico**, que passa pelo meio da diáfise do osso.\n\nO **eixo mecânico**, que liga o centro de uma articulação ao centro da outra.\n\nA regra é de **coerência**: pode-se usar o eixo anatômico dos dois lados ou o eixo mecânico dos dois lados, mas **nunca misturar** os dois tipos. O cruzamento de um eixo anatômico com um mecânico gera um ponto que não corresponde a nenhum CORA real.\n\nNa **tíbia**, os eixos anatômico e mecânico são praticamente iguais (paralelos e muito próximos), então, na prática, qualquer um serve, desde que seja do mesmo tipo dos dois lados. No **fêmur**, eles se separam por alguns graus, e a regra pesa mais.\n\nO ponto mais saliente (convexo) da cortical, o \"vértice\" visível da curva, só coincide com o CORA quando a deformidade é uma angulação pura, sem deslocamento lateral.\n\nDepois de achar o CORA, a osteotomia feita nele, com a dobradiça nele, corrige o ângulo sem criar desvio lateral.",
+  "correta": "No ponto em que os eixos mecânicos proximal e distal se encontram. O CORA é o cruzamento de dois eixos do mesmo tipo.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 30"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0096": {
-  "conceito": "### Uma emergência\n- O pus **digere a cartilagem** em horas.\n- A pressão intra-articular comprime os **vasos retinaculares**: risco de **necrose** da cabeça femoral.\n\n### A via preferida: ==anterior==\nEntre o sartório e o tensor da fáscia lata (Smith-Petersen ou variante):\n- Expõe bem a **cápsula anterior**.\n- Drenagem ampla.\n- **Mantém distância dos vasos** posterossuperiores (ramos da circunflexa femoral medial), que sustentam a cabeça.\n\n### As outras\n- **Medial (Ludloff):** usada sobretudo no lactente.\n- **Posterior:** evitada, pelo risco vascular.\n- **Lateral:** atravessa o aparelho abdutor sem vantagem.\n\n### Após a drenagem\nAntibiótico dirigido, reavaliação clínica e da PCR; nova drenagem se não melhorar.\n\n> **Na prova:** drenagem da séptica do quadril na criança = ==via anterior==.",
-  "correta": "**Anterior.**\n- Exposição ampla longe dos vasos retinaculares posteriores.",
   "incorretas": {
-   "A": "**Sem vantagem.**\n- Atravessa o aparelho abdutor.",
-   "B": "**Lactente.**\n- Não é a preferencial na criança maior.",
-   "D": "**Risco vascular.**\n- Ameaça os vasos da cabeça femoral."
+   "A": "A via lateral atravessa os músculos abdutores e não oferece vantagem para a drenagem.",
+   "B": "A via medial é usada principalmente em bebês, mas não é a preferencial na criança maior.",
+   "D": "A via posterior passa perto dos vasos que irrigam a cabeça do fêmur e aumenta o risco de necrose."
   },
+  "conceito": "A **artrite séptica do quadril** na criança é uma emergência, por dois motivos. O pus contém enzimas que **destroem a cartilagem** em poucas horas. E a pressão do pus dentro da articulação comprime os pequenos vasos que sobem pelo colo do fêmur até a cabeça (vasos retinaculares), podendo causar **necrose** da cabeça do fêmur.\n\nO tratamento é a **drenagem cirúrgica** urgente, e a via preferida é a **anterior**. O cirurgião entra pela frente do quadril, entre os músculos sartório e tensor da fáscia lata (a via de Smith-Petersen ou uma variação dela). Essa via tem duas vantagens: expõe bem a cápsula da frente, permitindo uma drenagem ampla, e fica **longe dos vasos** que irrigam a cabeça do fêmur, que correm principalmente por trás e por cima do colo (ramos da artéria circunflexa femoral medial).\n\nAs outras vias têm desvantagens:\n\nA **posterior** passa justamente perto desses vasos e aumenta o risco de necrose da cabeça.\n\nA **lateral** atravessa os músculos abdutores sem oferecer vantagem.\n\nA **medial** (de Ludloff) é usada em algumas situações, principalmente em bebês, mas não é a preferencial na criança maior.\n\nDepois da drenagem, a criança recebe antibiótico dirigido ao germe e é acompanhada pela evolução clínica e pela PCR. Se não melhorar, pode ser necessária nova drenagem.",
+  "correta": "Anterior. Dá boa exposição da cápsula para drenar e fica longe dos vasos posteriores que irrigam a cabeça do fêmur.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 22"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0097": {
-  "conceito": "### As propriedades\n- **Osteogênese:** células vivas (autólogo fresco).\n- **Osteoindução:** sinalização (BMPs, matriz desmineralizada).\n- ==Osteocondução==: arcabouço sobre o qual o osso cresce.\n\n### O vidro bioativo\n- Material **inorgânico** (sílica, cálcio, sódio, fósforo), sem célula e sem fator de crescimento.\n- Propriedade essencial: **osteocondução**.\n- Particularidade: forma na superfície uma camada de **hidroxiapatita carbonatada** que se liga **quimicamente** ao osso (bioatividade).\n- Atribui-se a ele algum estímulo celular pelos íons liberados, mas não é osteoindutor no sentido clássico.\n- Alguns têm efeito **antibacteriano** local (pH alcalino), usados em osteomielite.\n\n> **Na prova:** vidro bioativo = ==osteocondutor==.",
-  "correta": "**Osteocondutora.**",
   "incorretas": {
-   "A": "**Sem células.**",
-   "B": "**Não é a essencial.**\n- Há algum estímulo celular, mas a propriedade essencial é a condução.",
-   "C": "**Não existe.**"
+   "A": "A propriedade osteogênica exige células vivas, que o vidro bioativo não tem.",
+   "B": "Os íons liberados podem estimular um pouco as células, mas a propriedade essencial do vidro bioativo é a osteocondução.",
+   "C": "Osteoinibitória não é uma propriedade usada para classificar substitutos ósseos."
   },
+  "conceito": "Os **substitutos ósseos** são materiais usados para preencher falhas no osso. Eles são classificados pelas propriedades que têm:\n\n**Osteogênese**: trazer células vivas que formam osso. Só o osso do próprio paciente, colhido na hora, tem essa propriedade.\n\n**Osteoindução**: trazer sinais químicos (como as BMPs) que transformam as células do paciente em células formadoras de osso.\n\n**Osteocondução**: servir de andaime, uma estrutura por onde o osso do paciente cresce.\n\nO **vidro bioativo** é um material sintético inorgânico, feito de sílica, cálcio, sódio e fósforo. Ele não tem células nem fatores de crescimento. Sua propriedade **essencial** é a **osteocondução**.\n\nEle tem uma característica especial: em contato com os líquidos do corpo, forma na sua superfície uma camada de hidroxiapatita (o mineral do osso), que se liga **quimicamente** ao osso. É isso que lhe dá o nome de \"bioativo\". Os íons que ele libera podem estimular um pouco as células, mas isso não o torna osteoindutor no sentido clássico.\n\nAlguns tipos de vidro bioativo também têm efeito **antibacteriano** local, porque deixam o ambiente alcalino, e por isso são usados no tratamento de osteomielite.",
+  "correta": "Osteocondutora. O vidro bioativo é um andaime mineral, sem células nem fatores de crescimento, que se liga quimicamente ao osso.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 53"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0098": {
-  "conceito": "### O manguito rotador do quadril\nRupturas do **glúteo médio** (e mínimo) na inserção trocantérica:\n- **Degenerativas**.\n- Perfil de ==mulheres acima dos 50 anos==, como a tendinopatia do ombro.\n\n### O quadro\n- Dor **lateral** no trocanter, pior ao **deitar sobre o lado** e ao subir escadas.\n- Fraqueza de **abdução**, sinal de **Trendelenburg** nos casos maiores.\n- Muitas vezes tratada por anos como **bursite trocantérica**, quando a lesão está no tendão.\n\n### Diagnóstico\nRessonância ou ultrassom.\n\n### Tratamento\n- Fisioterapia com fortalecimento dos abdutores; evitar posições de compressão.\n- **Reparo** (endoscópico ou aberto) em rupturas sintomáticas com fraqueza.\n- Cuidado com infiltrações repetidas de corticoide.\n\n> **Na prova:** lesão do glúteo médio = ==mulher acima de 50 anos==.",
-  "correta": "**Mulheres com mais de 50 anos.**",
   "incorretas": {
-   "A": "**Sexo errado.**",
-   "C": "**Erra os dois.**",
-   "D": "**Idade errada.**"
+   "A": "A idade está certa, mas as lesões são mais frequentes em mulheres.",
+   "C": "Erra os dois: são mais comuns em mulheres e acima dos 50 anos.",
+   "D": "O sexo está certo, mas as lesões são degenerativas e predominam acima dos 50 anos."
   },
+  "conceito": "Os tendões do **glúteo médio** e do **glúteo mínimo** se prendem no trocanter maior, a saliência óssea do lado de fora do quadril. Eles são os principais **abdutores** do quadril, os músculos que afastam a perna e, sobretudo, que mantêm a bacia nivelada quando apoiamos o peso numa perna só, ao andar. Por terem função e comportamento parecidos com os tendões do ombro, são chamados de \"manguito rotador do quadril\".\n\nAs lesões desses tendões são, na maioria, **degenerativas**: o tendão vai se desgastando com o tempo até se romper parcial ou totalmente na inserção. O perfil típico é de **mulheres acima dos 50 anos**, assim como acontece com o manguito rotador do ombro.\n\nA queixa é dor do lado de fora do quadril, sobre o trocanter, pior ao **deitar sobre o lado** dolorido e ao subir escadas. Nos casos maiores, há fraqueza para afastar a perna e o **sinal de Trendelenburg**: ao apoiar só na perna doente, a bacia cai do outro lado, porque os abdutores não seguram.\n\nMuitas vezes essa dor é tratada por anos como \"bursite trocantérica\", quando o problema real está no tendão. A ressonância ou o ultrassom mostram a lesão.\n\nO tratamento começa com fisioterapia para fortalecer os abdutores e com a orientação de evitar posições que comprimam o tendão. Nas roturas com dor e fraqueza que não melhoram, faz-se o reparo cirúrgico, aberto ou por endoscopia. Infiltrações repetidas de corticoide devem ser evitadas, porque podem enfraquecer ainda mais o tendão.",
+  "correta": "Mulheres com mais de 50 anos. As lesões do glúteo médio são degenerativas e predominam nesse grupo, como as do manguito rotador do ombro.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 48"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0099": {
-  "conceito": "### O que a questão cobra\nUm resultado de **estudos de qualidade de vida** em pseudartroses de ossos longos (veja o alerta).\n\n### Por que o antebraço pesa tanto\nA perda de alinhamento entre **rádio e ulna** compromete ao mesmo tempo:\n- **Pronação e supinação**.\n- **Posicionamento da mão** no espaço.\n- Atividades básicas da vida diária.\n\nNa comparação cobrada, a pseudartrose do ==antebraço== teve o menor escore.\n\n### A mensagem geral\nPseudartroses de ossos longos têm impacto **devastador** na qualidade de vida, comparável a doenças crônicas graves. O **fêmur** também aparece com impacto muito grande em outros estudos.\n\n> **Na prova:** pior escore de qualidade de vida na série cobrada = ==antebraço==.",
-  "correta": "**Antebraço.**\n- Na comparação cobrada, o menor escore.",
   "incorretas": {
-   "A": "**Não foi o pior.**\n- Dor e limitação relevantes, mas não o menor escore da série.",
-   "C": "**Não foi o pior na série.**\n- Compromete marcha e carga; em outros estudos também é devastador.",
-   "D": "**Não foi a resposta.**\n- Frequente e difícil, mas não o menor escore."
+   "A": "A pseudartrose do úmero também causa dor e limitação importantes, mas não teve o menor escore na comparação cobrada.",
+   "C": "A do fêmur compromete a marcha e é muito incapacitante em outros estudos, mas não foi a de menor escore nessa comparação.",
+   "D": "A da tíbia é frequente e difícil de tratar, mas não teve o menor escore na comparação cobrada."
   },
+  "conceito": "A **pseudartrose** (não consolidação) de um osso longo tem um impacto grande na vida do paciente. Estudos que mediram a **qualidade de vida** dessas pessoas, com questionários padronizados, mostraram escores comparáveis aos de doenças crônicas graves: dor persistente, limitação de movimentos, afastamento do trabalho e múltiplas cirurgias.\n\nEsta questão cobra o resultado de uma comparação específica entre os ossos. Nela, a pseudartrose do **antebraço** teve o **menor escore** de qualidade de vida.\n\nUma explicação razoável está na função do antebraço. Ele é formado por dois ossos, o rádio e a ulna, que trabalham juntos para girar a mão (pronação e supinação, o movimento de virar a palma para baixo e para cima). Uma pseudartrose de um deles compromete esse giro, o posicionamento da mão no espaço e, com isso, quase todas as atividades do dia a dia, como comer, se vestir, escrever e trabalhar.\n\nVale entender a questão como o resultado daquele estudo, e não como regra absoluta. O fêmur e a tíbia, por exemplo, comprometem a marcha e o apoio do peso, e aparecem com impacto muito grande em outros estudos. Por isso a questão tem um aviso.",
+  "correta": "Antebraço. Na comparação cobrada, a pseudartrose do antebraço teve o menor escore de qualidade de vida, pelo impacto no giro e no uso da mão.",
   "alerta": "A resposta expressa o resultado de uma comparação observacional específica; não significa que toda pseudoartrose do antebraço produza pior qualidade de vida do que qualquer pseudoartrose do membro inferior.",
   "referencias": [
    "Brinker MR, Trivedi A, O'Connor DP. Debilitating effects of femoral nonunion on health-related quality of life. J Orthop Trauma. 2017;31(2):e37-e42.",
    "Schottel PC et al. Time trade-off as a measure of health-related quality of life: long bone nonunions have a devastating impact. J Bone Joint Surg Am. 2015;97(17):1406-1410.",
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 29"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0109": {
-  "conceito": "### A zona segura dos pinos anteriores do halo\n- **1 cm acima da margem orbitária**.\n- **Terço lateral** da órbita (acima dos dois terços laterais da sobrancelha).\n- **Abaixo da maior circunferência** do crânio (para o pino não escorregar para cima).\n\n### O que se lesa fora dela\n- **Medial demais:** nervos ==supraorbital e supratroclear==, que emergem pelas incisuras. Resultado: anestesia da fronte e dor neuropática. Também o seio frontal.\n- **Lateral demais:** fossa **temporal**, osso fino e músculo temporal, cuja contração ao mastigar **afrouxa** o pino.\n\n### Outras regras\n- Pinos posteriores diametralmente opostos aos anteriores.\n- Paciente de **olhos fechados** ao apertar (para não fixar a pele da pálpebra aberta).\n- Torque adequado (em adultos, na faixa de 6 a 8 polegadas-libra) e reaperto nas primeiras 24 a 48 h.\n- Na criança: mais pinos com torque menor.\n\n> **Na prova:** pino anterior do halo = risco ao ==supraorbital e supratroclear==.",
-  "correta": "**Supraorbital e supratroclear.**",
   "incorretas": {
-   "B": "**Não existe.**\n- \"Supraciliar\" não é nervo nomeado.",
-   "C": "**Intraorbital.**\n- O óptico não é alcançado acima da margem.",
-   "D": "**Intraorbital.**"
+   "B": "O supraorbital está certo, mas \"supraciliar\" não é um nervo com esse nome.",
+   "C": "O nervo óptico fica dentro da órbita e não é alcançado por um pino colocado acima da borda.",
+   "D": "O supratroclear está certo, mas o nervo óptico, dentro da órbita, não está em risco."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **halo craniano** é um anel metálico fixado ao crânio por pinos, usado para imobilizar a coluna cervical. Os pinos são colocados dois na frente e dois atrás, e a posição dos **pinos anteriores** exige atenção, porque a testa tem nervos e estruturas delicadas.\n\nA **zona segura** para os pinos da frente fica:\n\nCerca de **1 cm acima da borda da órbita** (a borda óssea de cima do olho).\n\nSobre o **terço lateral** da órbita, ou seja, acima da parte de fora da sobrancelha.\n\nAbaixo da maior circunferência do crânio, para o anel não escorregar para cima.\n\nSe o pino for colocado **muito para o meio** (perto do nariz), ele pode lesar os **nervos supraorbital e supratroclear**, que saem por pequenos orifícios e entalhes na borda de cima da órbita e dão sensibilidade à testa. O resultado é dormência ou dor crônica na testa. Também pode atingir o seio frontal.\n\nSe for colocado **muito para o lado**, cai na região da têmpora, onde o osso é fino e o músculo temporal se contrai ao mastigar, afrouxando o pino.\n\nOutros cuidados: apertar os pinos com o paciente de **olhos fechados**, para não prender a pele da pálpebra numa posição que impeça fechá-los depois, e reapertar nos primeiros dias. Na criança, usam-se mais pinos com menos força de aperto.",
+  "correta": "Nervos supraorbital e supratroclear. Eles emergem na borda de cima da órbita, na parte mais medial, e são lesados por pinos colocados muito para o meio.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0114": {
@@ -1169,31 +1169,31 @@
   "conferido": false
  },
  "conceitos-basicos-0115": {
-  "conceito": "### Por que Salmonella na falciforme\n- **Infartos ósseos** repetidos criam territórios desvitalizados onde a bactéria se aloja.\n- **Asplenia funcional**: opsonização deficiente contra germes encapsulados.\n- Microinfartos intestinais facilitam a bacteremia por germes entéricos.\n\n### Onde\nEnquanto a osteomielite hematogênica comum é **metafisária**, a da falcemia acomete preferencialmente a ==diáfise== dos ossos longos, onde ocorreram os infartos. Pode ser **multifocal** e simétrica.\n\n### O problema clínico\nDiferenciar de **crise vaso-oclusiva** (muito mais comum):\n- Febre persistente, dor localizada que não melhora, PCR muito alta.\n- Ultrassom com coleção subperiosteal, ressonância.\n- **Punção/aspiração** com cultura quando há dúvida.\n\nO **S. aureus** também é frequente; a cobertura empírica deve incluir os dois.\n\n> **Na prova:** Salmonella = ==hemoglobinopatia, diáfise==.",
-  "correta": "**Hemoglobinopatias, predominantemente diafisário.**",
   "incorretas": {
-   "A": "**Doença errada.**\n- No diabético a osteomielite é por contiguidade no pé, polimicrobiana.",
-   "B": "**Doença errada.**",
-   "D": "**Local errado.**\n- Na falcemia é diafisária."
+   "A": "No diabetes, a osteomielite costuma vir de feridas do pé, por contiguidade, com vários germes. Não é a associação da *Salmonella*.",
+   "B": "O diabetes não é a doença associada à osteomielite por *Salmonella*.",
+   "D": "A associação com hemoglobinopatias está certa, mas nelas a infecção predomina na diáfise, e não na metáfise."
   },
+  "conceito": "A bactéria ***Salmonella*** é a associação clássica de osteomielite em pacientes com **hemoglobinopatias**, especialmente a **anemia falciforme**. Três fatores explicam essa ligação:\n\nOs pacientes com anemia falciforme têm **infartos ósseos** repetidos: as hemácias deformadas entopem pequenos vasos, e áreas de osso morrem. Esse osso desvitalizado é um bom lugar para a bactéria se instalar.\n\nO baço desses pacientes deixa de funcionar ao longo da vida (asplenia funcional), e o corpo fica mais vulnerável a certas bactérias.\n\nPequenos infartos no intestino facilitam a passagem de bactérias intestinais, como a *Salmonella*, para o sangue.\n\nA localização também é diferente. A osteomielite comum, que chega pelo sangue, começa na **metáfise**. Na anemia falciforme, ela acomete preferencialmente a **diáfise** dos ossos longos, onde ocorreram os infartos, e pode atingir vários ossos ao mesmo tempo.\n\nO grande desafio é diferenciar a infecção de uma **crise de dor por infarto ósseo** (crise vaso-oclusiva), muito mais comum. Febre que persiste, dor localizada que não melhora e PCR muito alta sugerem infecção. O ultrassom pode mostrar pus embaixo do periósteo, e a punção com cultura esclarece.\n\nO *Staphylococcus aureus* também é frequente nesses pacientes, então o antibiótico inicial deve cobrir os dois.",
+  "correta": "Hemoglobinopatias, com comprometimento predominantemente diafisário. Os infartos ósseos da anemia falciforme acontecem na diáfise, onde a *Salmonella* se instala.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 21"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0116": {
-  "conceito": "### Os dois radiofármacos\n- **Tecnécio (MDP):** marca atividade **osteoblástica**. Capta em tudo que remodela (fratura, tumor, artrose, cirurgia recente): **sensível e pouco específico**.\n- **Gálio-67:** liga-se à transferrina e lactoferrina; concentra-se em **inflamação e leucócitos**.\n\n### A leitura é comparativa\n- ==Gálio maior que tecnécio== (ou distribuição diferente): **positivo** para infecção.\n- Gálio **menor** que tecnécio e mesma distribuição: remodelação **sem** infecção.\n- Congruentes e de intensidade semelhante: **inconclusivo**.\n\n### Hoje\nMais usados: **leucócitos marcados** (com medula de controle), **ressonância** e **PET-CT com FDG**, conforme o cenário.\n\n> **Na prova:** combinado positivo quando ==gálio supera o tecnécio==.",
-  "correta": "**Positivo quando o gálio supera o tecnécio no local.**",
   "incorretas": {
-   "A": "**Não é esse o critério.**\n- A leitura é comparativa; esse padrão é atípico.",
-   "B": "**Sem infecção.**\n- Tecnécio positivo com gálio negativo é remodelação.",
-   "C": "**Invertido.**\n- Tecnécio maior fala contra infecção."
+   "A": "A leitura é comparativa entre os dois. Tecnécio negativo com gálio positivo é um padrão atípico e não é o critério do exame.",
+   "B": "Tecnécio positivo com gálio negativo indica osso se remodelando sem infecção.",
+   "C": "É o contrário: quando o tecnécio capta mais que o gálio, o exame fala contra infecção."
   },
+  "conceito": "A cintilografia usa substâncias radioativas que se acumulam em determinados tecidos. Na suspeita de **osteomielite**, dois materiais podem ser combinados:\n\nO **tecnécio-99m ligado ao MDP** se fixa onde há **formação de osso** (atividade osteoblástica). Ele \"acende\" em qualquer osso que esteja se remodelando: fraturas, tumores, artrose, cirurgias recentes e também infecção. É muito sensível, mas pouco específico.\n\nO **gálio-67** se acumula onde há **inflamação e glóbulos brancos**, porque se liga a proteínas que chegam a essas áreas.\n\nA leitura do exame combinado é **comparativa**:\n\nSe o **gálio capta mais que o tecnécio** naquele local (ou tem uma distribuição diferente), há mais inflamação do que simples remodelação óssea: o exame é **positivo** para infecção.\n\nSe o gálio capta menos que o tecnécio e no mesmo lugar, o osso está se remodelando por outro motivo, sem infecção.\n\nSe os dois captam de forma semelhante e no mesmo lugar, o resultado é inconclusivo.\n\nHoje, outros exames são mais usados nessa situação, como a cintilografia com **leucócitos marcados**, a **ressonância** e o **PET-CT**, escolhidos conforme o caso.",
+  "correta": "O estudo combinado é positivo quando a concentração de gálio-67 no local é maior que a do MDP-tecnécio-99m. Mais inflamação do que remodelação sugere infecção.",
   "referencias": [
    "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 34"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0117": {
@@ -1211,45 +1211,45 @@
   ]
  },
  "conceitos-basicos-0118": {
-  "conceito": "### Cortes muito mais baixos que na articulação nativa\nNa articulação nativa séptica se fala em mais de 50.000 células. Na prótese, o líquido é diferente e os cortes são bem menores.\n\n### Infecção crônica (após ~6 semanas da cirurgia)\nNos valores adotados pela fonte da questão:\n- ==Joelho: mais de 1.100 células/µL== (com PMN acima de ~64%).\n- ==Quadril: mais de 3.000 células/µL== (com PMN acima de ~80%).\n\nOs consensos mais recentes usam cortes próximos (em torno de 3.000 para crônica, com PMN acima de 70 a 80%) e sistema de **pontuação**.\n\n### Infecção aguda (pós-operatório recente)\nOs limiares são **muito mais altos** (na casa de 10.000 no joelho), porque a cirurgia recente eleva a contagem.\n\n### Outros testes do líquido\nEsterase leucocitária, alfa-defensina, PCR sinovial, cultura.\n\n> **Na prova:** leucócitos na infecção periprotética crônica = ==joelho >1.100, quadril >3.000==.",
-  "correta": "**Joelho acima de 1.100 e quadril acima de 3.000.**",
   "incorretas": {
-   "A": "**Quadril baixo demais.**",
-   "C": "**Joelho alto demais.**",
-   "D": "**Erra os dois.**"
+   "A": "O limite do joelho está certo, mas o do quadril é 3.000, e não 2.000.",
+   "C": "O limite do quadril está certo, mas o do joelho é 1.100, e não 2.100.",
+   "D": "Erra os dois: joelho acima de 1.100 e quadril acima de 3.000."
   },
+  "conceito": "Na articulação **natural** com infecção bacteriana, a contagem de leucócitos no líquido costuma passar de 50.000 por µL. Numa **prótese**, o líquido se comporta de forma diferente, e os limites que sugerem infecção são **muito mais baixos**. Um líquido com poucas células a mais do que o esperado já pode indicar infecção ao redor da prótese.\n\nPara a **infecção crônica** (que aparece semanas ou meses depois da cirurgia), os valores adotados pela fonte da questão, segundo os critérios da **MSIS** (Musculoskeletal Infection Society), são:\n\n**Joelho**: mais de **1.100** leucócitos por µL, com predomínio de neutrófilos.\n\n**Quadril**: mais de **3.000** leucócitos por µL, com predomínio de neutrófilos.\n\nEsse é um dos critérios menores. Os consensos mais recentes usam valores próximos e passaram a somar pontos de vários critérios.\n\nNo **pós-operatório recente**, os limites são bem mais altos, porque a própria cirurgia aumenta a contagem de células no líquido.\n\nAlém da contagem, outros testes do líquido ajudam no diagnóstico: a porcentagem de neutrófilos, a fita de esterase leucocitária, a alfa-defensina e a cultura.",
+  "correta": "Mais de 1.100 céls/µL para joelho e mais de 3.000 céls/µL para quadril. São os limites adotados como critério menor para infecção crônica.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 28"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0119": {
-  "conceito": "### Os quatro critérios de Kocher\n- **Febre** acima de 38,5 °C.\n- ==Impossibilidade de apoio== do membro: a criança **se recusa** a pôr o pé no chão. Claudicar não basta.\n- ==VHS acima de 40 mm/h==.\n- **Leucócitos** acima de 12.000.\n\n### Probabilidade (série original)\n1 critério ~3%; 2 ~40%; 3 acima de 90%; 4 ~99%.\n\n### Caird\nAcrescentou a **PCR acima de 2 mg/dL**; a febre foi o melhor preditor isolado.\n\n### As pegadinhas\n- **Claudicar x não apoiar.**\n- **40**, não 20, no VHS.\n\n> **Na prova:** Kocher = ==não apoia + VHS >40==, febre >38,5, leucócitos >12.000.",
-  "correta": "**Impossibilidade de apoio e VHS acima de 40 mm/h.**",
   "incorretas": {
-   "A": "**Erra os dois.**",
-   "B": "**Claudicar não basta.**",
-   "C": "**Corte errado.**\n- VHS acima de 40."
+   "A": "Erra os dois: claudicar não basta, e o corte do VHS é 40.",
+   "B": "O VHS acima de 40 está certo, mas claudicar não é critério. O critério é não apoiar o membro.",
+   "C": "Não apoiar está certo, mas o corte do VHS é 40 mm/h, e não 20."
   },
+  "conceito": "Os quatro **critérios de Kocher** ajudam a separar a **artrite séptica** do quadril (infecção, que exige drenagem urgente) da **sinovite transitória** (inflamação leve que passa sozinha) na criança:\n\n**Febre** acima de 38,5 graus.\n\n**Impossibilidade de apoiar** o peso no membro.\n\n**VHS** acima de **40 mm/h**.\n\n**Leucócitos** no sangue acima de 12.000 por mm³.\n\nQuanto mais critérios, maior a chance de infecção: na série original, cerca de 3% com um critério, 40% com dois, mais de 90% com três e cerca de 99% com quatro. Depois, Caird acrescentou a PCR elevada como quinto critério.\n\nDuas pegadinhas aparecem nesta questão:\n\n**Claudicar não é o mesmo que não apoiar.** A criança que manca, mas ainda coloca o pé no chão, não preenche o critério. O critério é a **recusa** em apoiar.\n\n**O corte do VHS é 40**, e não 20.",
+  "correta": "Impossibilidade de apoio do membro e VHS acima de 40 mm/h. São dois dos quatro critérios de Kocher.",
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 22"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0120": {
-  "conceito": "### O princípio\nA banda de tensão converte **tração em compressão**: precisa estar do lado que **traciona**.\n\n### No osso longo\nCarga excêntrica: um lado comprime, o outro traciona. A face ==convexa== é a tracionada.\n- Placa na convexidade: a carga que abriria o foco passa a **fechá-lo**.\n- Placa na concavidade: foco abre do outro lado, placa falha por **fadiga**.\n\n### Exigência\n**Cortical oposta íntegra** para suportar a compressão. Se houver cominuição do lado oposto, a placa trabalha em ponte, não em banda de tensão.\n\n### Exemplos\nFêmur (face lateral), olécrano (dorsal), patela (anterior).\n\n> **Na prova:** banda de tensão = ==face convexa==.",
-  "correta": "**Face convexa.**",
   "incorretas": {
-   "A": "**Referência anatômica.**\n- A face de tração varia com o osso e a carga.",
-   "B": "**Mesma razão.**",
-   "D": "**Já comprimida.**"
+   "A": "\"Volar\" é um nome anatômico. O princípio é mecânico: a placa vai na face que sofre tração, que varia conforme o osso e a carga.",
+   "B": "Pelo mesmo motivo, \"dorsal\" não define a face de tração. O que importa é o lado convexo.",
+   "D": "A face côncava já está comprimida. A placa ali não impede que o outro lado se abra e tende a falhar por fadiga."
   },
+  "conceito": "O princípio da **banda de tensão** transforma uma força que abriria a fratura numa força que a **comprime**. Para funcionar, o implante precisa ficar do lado do osso que sofre **tração**.\n\nQuando um osso longo recebe carga fora do centro, o que é a regra, ele tende a se curvar. O lado de dentro da curva (côncavo) é **comprimido**, e o lado de fora (**convexo**) é **tracionado**, esticado. Numa fratura, essa tração tende a abrir o foco do lado convexo.\n\nSe a placa for colocada no lado **convexo**, ela impede que esse lado se abra. A força que abriria a fratura passa a comprimir a cortical do outro lado. É como segurar com a mão o lado de fora de uma vara que está sendo dobrada.\n\nSe a placa for colocada no lado côncavo, ela fica onde o osso já está comprimido. O lado convexo abre a cada carga, e a placa acaba quebrando por fadiga.\n\nUma condição importante: a cortical do lado oposto precisa estar **inteira**, para receber a compressão. Se houver fragmentos soltos desse lado, a placa não funciona como banda de tensão e passa a trabalhar em ponte.\n\nExemplos clássicos: no fêmur, a face lateral; no olécrano, a face posterior; na patela, a face anterior.",
+  "correta": "Convexa. É a face que sofre tração; a placa colocada ali transforma essa tração em compressão no foco.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 53"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0121": {
