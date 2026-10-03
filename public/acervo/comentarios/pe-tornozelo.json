@@ -755,47 +755,47 @@
   "conferido": false
  },
  "pe-tornozelo-0069": {
-  "conceito": "### Eichenholtz (história natural do Charcot)\n| Estágio | Nome | Clínica | Radiografia | Conduta |\n|---|---|---|---|---|\n| 0 (Shibata / Yu) | prodrômico | pé **quente**, edemaciado | **normal** (RM com edema ósseo) | **imobilizar já** (janela de ouro) |\n| 1 | **fragmentação** | quente, instável | fragmentação, fraturas, luxações | **gesso de contato total**, sem carga ou com carga protegida |\n| 2 | **coalescência** | calor e edema **diminuindo** | absorção de debris; esclerose; união inicial | gesso / órtese |\n| ==3== | ==consolidação== (reconstrução) | pé **frio**, estável | **consolidado** e remodelado; deformidade **fixa** | **calçado / órtese**; cirurgia **reconstrutiva** se houver deformidade ou úlcera |\n\n### Monitorar a atividade\n- **Diferença de temperatura** entre os pés: abaixo de ~**2 °C** sugere inatividade.\n- Controle **radiográfico** seriado.\n\n### Transição\n- Do gesso para **CROW** (Charcot Restraint Orthotic Walker).\n- Depois, calçado **extraprofundo** com palmilha moldada.\n\n### Tendência atual\nCirurgia **mais precoce** em deformidades **instáveis** graves, com superconstruções, em casos selecionados.\n\n> **Na prova:** consolidação óssea = ==Eichenholtz 3==.",
-  "correta": "**Estágio 3.**",
   "incorretas": {
-   "A": "**Estágio 0.**\n- Inflamatório inicial, com radiografia normal.",
-   "B": "**Estágio 1.**\n- **Fragmentação** e destruição.",
-   "C": "**Estágio 2.**\n- **Coalescência**: esfriando, mas ainda sem consolidação."
+   "A": "O estágio 0 é a fase inicial, com o pé quente e a radiografia ainda normal.",
+   "B": "O estágio 1 é a fase de fragmentação, com destruição dos ossos e das articulações.",
+   "C": "O estágio 2 é a coalescência, com o pé esfriando e o osso começando a se unir, mas ainda sem consolidação."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **artropatia de Charcot** do pé diabético passa por fases previsíveis, descritas por **Eichenholtz**. Conhecer a fase ajuda a decidir o tratamento:\n\n**Estágio 0** (acrescentado depois por outros autores): o pé fica **quente e inchado**, mas a radiografia ainda é **normal**; a ressonância já mostra edema nos ossos. É a melhor hora para imobilizar e evitar a destruição.\n\n**Estágio 1, fragmentação**: o pé continua quente e fica instável. A radiografia mostra ossos se fragmentando, fraturas e luxações. O tratamento é o **gesso de contato total**, sem apoio ou com apoio protegido.\n\n**Estágio 2, coalescência**: o calor e o inchaço começam a **diminuir**. Os fragmentos menores são reabsorvidos, o osso fica mais denso (esclerose) e começa a se unir.\n\n**Estágio 3, consolidação**: o pé fica **frio** e estável. Os ossos estão **consolidados** e remodelados, mas a deformidade que se formou fica **fixa**.\n\nPara acompanhar a atividade da doença, compara-se a **temperatura** dos dois pés: quando a diferença fica pequena, a fase ativa está terminando. A radiografia também é repetida ao longo do tempo.\n\nDepois do gesso, o paciente passa para uma bota de proteção e, por fim, para um calçado especial com palmilha moldada. A cirurgia reconstrutiva é indicada quando, depois da consolidação, sobra uma deformidade que causa feridas ou impede o pé de apoiar bem. Em casos selecionados de deformidades muito instáveis, tem-se indicado cirurgia mais cedo.",
+  "correta": "Estágio 3. É a fase de consolidação, com o pé frio e estável e os ossos unidos, embora a deformidade fique fixa.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0070": {
-  "conceito": "### Nervo de Baxter\n- **O que é:** o 1º ramo do ==nervo plantar lateral==, nervo do **abdutor do 5º dedo**.\n- **Onde comprime:** entre a **fáscia profunda do abdutor do hálux** e a borda medial do **quadrado plantar**. Contribuem **esporão** e fáscia espessada.\n\n### Diferenças da fasceíte plantar\n| | Fasceíte | Baxter |\n|---|---|---|\n| Local da dor | tubérculo **medial**, plantar | **medial**, um pouco **mais proximal**; pode irradiar **lateralmente** |\n| Primeiros passos da manhã | **típico** | menos típico; dor com a **atividade** |\n| Sinais neurológicos | não | parestesia; **fraqueza / atrofia do abdutor do 5º** (a RM pode mostrar **infiltração gordurosa**) |\n\n- Responde por uma parcela importante da **dor crônica no calcanhar** e é causa de fasceíte \"refratária\". A frequência exata varia entre séries.\n- **Tratamento cirúrgico:** **liberação** da fáscia do abdutor do hálux, com ou sem fasciotomia parcial.\n\n### Outros diferenciais\n- **Túnel do tarso:** Tinel **retromaleolar**.\n- **Fratura de estresse do calcâneo:** **squeeze** positivo.\n- **Atrofia do coxim.**\n- **Neuroma** dos ramos calcâneos mediais.\n- **Espondiloartrite.**\n- **Nervo plantar medial:** \"**jogger's foot**\", no **arco** medial.\n\n> **Na prova:** diferencial da dor plantar no retropé = ==1º ramo do plantar lateral (Baxter)==.",
-  "correta": "**Primeiro ramo do nervo plantar lateral (nervo de Baxter).**",
   "incorretas": {
-   "A": "**Ramo calcâneo medial do tibial.**\n- Sensitivo cutâneo.\n- Neuroma causa dor superficial; não é o diferencial clássico.",
-   "C": "**1º ramo do plantar medial.**\n- O plantar medial comprimido dá o \"jogger's foot\", no **arco medial**.",
-   "D": "**Ramo calcâneo do safeno.**\n- O safeno não inerva o calcanhar plantar."
+   "A": "O ramo calcâneo medial do nervo tibial é sensitivo, da pele do calcanhar, e não é o diferencial clássico.",
+   "C": "A compressão do nervo plantar medial causa dor no arco do pé, e não no retropé.",
+   "D": "O nervo safeno não inerva a planta do calcanhar."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A causa mais comum de dor embaixo do calcanhar é a **fasciíte plantar**, mas existe um diagnóstico diferencial importante, muitas vezes esquecido: a compressão do **nervo de Baxter**.\n\nO nervo de Baxter é o **primeiro ramo do nervo plantar lateral**. Ele passa perto do calcanhar e vai inervar o músculo **abdutor do quinto dedo**, que afasta o dedo mínimo. No caminho, ele pode ser **comprimido** entre a fáscia do músculo abdutor do hálux e outro músculo da planta (o quadrado plantar). O esporão e a fáscia espessada também contribuem.\n\nAlgumas diferenças ajudam a separar as duas condições:\n\nNa **fasciíte**, a dor fica embaixo e do lado de dentro do calcanhar, e é típica nos **primeiros passos da manhã**.\n\nNa compressão do **nervo de Baxter**, a dor fica do lado de dentro, um pouco mais acima, pode irradiar para o lado de fora e piora com a **atividade**. Pode haver formigamento e **fraqueza ou atrofia do abdutor do quinto dedo**, que a ressonância às vezes mostra como músculo infiltrado por gordura.\n\nEssa compressão explica parte das dores crônicas no calcanhar e das \"fasciítes que não melhoram\". Quando o tratamento sem cirurgia falha, a cirurgia libera o nervo.\n\nOutros diagnósticos diferenciais incluem a síndrome do túnel do tarso, a fratura de estresse do calcâneo, a atrofia da almofada de gordura e a compressão do nervo plantar medial, que causa dor no arco do pé em corredores.",
+  "correta": "Primeiro ramo do nervo plantar lateral. É o nervo de Baxter, cuja compressão causa dor no calcanhar e pode ser confundida com fasciíte plantar.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0071": {
-  "conceito": "### Queilectomia no hálux rígido\n- **O que é:** ressecção do **osteófito dorsal** + **25% a 30%** da porção dorsal da cabeça do 1º metatarso.\n- **Efeito:**\n  - **tira o impacto dorsal** e devolve dorsiflexão;\n  - **não trata** a cartilagem perdida.\n\n### O que decide o resultado: o grau articular\n| Coughlin-Shurnas | Queilectomia |\n|---|---|\n| 1 e 2 | ==bons resultados==, duradouros |\n| 3 (arco médio indolor) | aceitável em casos selecionados |\n| 4 (dor no arco médio) | **falha** frequente; preferir **artrodese** |\n\n### Sobre a idade\n- O enunciado usa o corte de **60 anos**. A lógica é a **menor demanda** do paciente mais velho.\n- **Porém:** é o número da **banca**. A parte sólida da resposta é o ==envolvimento articular leve==.\n\n### Complementos\n- **Moberg:** osteotomia de **dorsiflexão da falange** proximal. Transfere o arco disponível para a dorsiflexão funcional.\n- **Liberação capsular** / sinovectomia.\n\n> **Na prova:** queilectomia vai melhor no envolvimento articular ==leve== (banca: mais de 60 anos).",
-  "correta": "**Maiores de 60 anos e envolvimento articular leve.**",
   "incorretas": {
-   "B": "**Menores de 60 anos, leve.**\n- O grau leve está certo; a banca adotou a faixa acima de 60.\n- No jovem de alta demanda, a queilectomia pode ser procedimento **intermediário**.",
-   "C": "**Maiores de 60 anos, grave.**\n- No grave a queilectomia **falha**.",
-   "D": "**Menores de 60 anos, grave.**\n- Os dois itens estão errados."
+   "B": "O envolvimento leve está certo, mas a banca adotou a faixa acima de 60 anos.",
+   "C": "Com envolvimento grave, a cartilagem está comprometida em toda a articulação, e a queilectomia falha.",
+   "D": "Erra os dois: o envolvimento grave tem maus resultados, e a banca considera a faixa acima de 60 anos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **hálux rígido** é a artrose da articulação da base do dedão. A **queilectomia** é uma cirurgia que retira o **bico de osso** (osteófito) que se forma em cima da articulação e uma parte de cima da cabeça do primeiro metatarso. Isso **acaba com o choque** entre os ossos quando o dedão sobe e devolve parte do movimento.\n\nO ponto principal é que a queilectomia **não recupera** a cartilagem que já se perdeu. Ela resolve o problema da parte de cima da articulação. Por isso, o que mais decide o resultado é **o quanto a articulação está comprometida**:\n\nNos casos com **envolvimento leve** (graus 1 e 2 da classificação de Coughlin e Shurnas), os resultados são bons e duradouros.\n\nNo grau 3, pode ser tentada se o paciente não tiver dor no meio do arco de movimento.\n\nNo grau 4, com dor no meio do arco, a cartilagem está comprometida em toda a articulação, e a queilectomia costuma falhar. Prefere-se a **artrodese**.\n\nA banca usa também um corte de idade, **acima de 60 anos**, com a ideia de que pacientes mais velhos têm menor demanda. Esse é um dado da questão; o que realmente pesa na indicação é o **grau leve** da artrose.\n\nA queilectomia pode ser combinada com uma osteotomia da falange (Moberg), que inclina o dedão para cima e aproveita melhor o movimento que sobrou.",
+  "correta": "Maiores de 60 anos de idade e com envolvimento articular leve, segundo o gabarito. O que mais pesa no resultado é o grau leve da artrose.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0072": {
-  "conceito": "### Pé reumatoide: valgo em cima e embaixo\n| Segmento | Deformidade | Mecanismo |\n|---|---|---|\n| **Antepé** | ==hálux valgo==; MTF menores **luxadas dorsalmente**; **dedos em garra**; cabeças metatarsais plantares | sinovite das MTF distende a cápsula e a **placa plantar** |\n| **Retropé** | ==valgo==, com colapso do arco e abdução | sinovite subtalar / talonavicular + falência do **tibial posterior** |\n| **Tornozelo** | acometido mais tarde; pode surgir **valgo** tibiotalar | |\n\n### Cirurgia clássica do antepé\n- **Artrodese da 1ª MTF.**\n- **Ressecção das cabeças** dos metatarsos menores (Hoffmann, Clayton, Fowler).\n- Com a doença controlada por DMARDs e biológicos: **preservação articular** (osteotomias de Weil, Scarf).\n\n### Retropé\n- **Talonavicular isolada** (casos precoces).\n- **Tríplice** (casos estabelecidos).\n\n### Hálux varo na AR\n**Raro**; geralmente **iatrogênico** (hipercorreção).\n\n> **Na prova:** AR = ==hálux valgo + retropé valgo==.",
-  "correta": "**Hálux valgo e retropé valgo.**",
   "incorretas": {
-   "A": "**Hálux varo e retropé varo.**\n- Nenhum dos dois é o padrão da AR.",
-   "B": "**Hálux varo e retropé valgo.**\n- Hálux varo é raro e geralmente iatrogênico.",
-   "C": "**Hálux valgo e retropé varo.**\n- O retropé cai em **valgo** (falência do tibial posterior)."
+   "A": "Nem o hálux varo nem o retropé varo fazem parte do padrão da artrite reumatoide.",
+   "B": "O retropé valgo está certo, mas o hálux varo é raro e geralmente causado por cirurgia.",
+   "C": "O hálux valgo está certo, mas o retropé cai em valgo, e não em varo."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na **artrite reumatoide**, o pé costuma ficar deformado em **valgo** tanto na parte da frente quanto no calcanhar.\n\n**Na parte da frente (antepé)**: a inflamação das articulações da base dos dedos distende a cápsula e a placa plantar. Aparecem o **hálux valgo** (dedão desviado para fora), a luxação para cima das bases dos dedos menores, os **dedos em garra** e as cabeças dos metatarsos salientes na planta, que causam calos dolorosos.\n\n**No calcanhar (retropé)**: a inflamação atinge a subtalar e a talonavicular e, principalmente, o **tendão tibial posterior**, que sustenta o arco. Quando ele falha, o arco desaba e o calcanhar vira para fora: **retropé valgo**.\n\nO tornozelo é acometido mais tarde e também pode desviar em valgo.\n\nNo tratamento cirúrgico clássico do antepé reumatoide, faz-se a fusão da articulação da base do dedão e a retirada das cabeças dos metatarsos menores. Com os remédios modernos, que controlam melhor a doença, cada vez mais se tenta preservar as articulações com osteotomias. No retropé, conforme o caso, faz-se a fusão da talonavicular ou a tríplice artrodese.\n\nO **hálux varo** (dedão desviado para dentro) é raro na artrite reumatoide e, quando aparece, geralmente é consequência de uma cirurgia que corrigiu demais.",
+  "correta": "Valgo e retropé valgo. O antepé reumatoide tem hálux valgo, e o retropé desaba em valgo pela falência do tibial posterior.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0073": {
@@ -810,31 +810,31 @@
   "conferido": false
  },
  "pe-tornozelo-0074": {
-  "conceito": "### Ângulos do hálux valgo (AP com carga)\n| | HVA (metatarsofalângico) | IM I-II |\n|---|---|---|\n| **Normal** | ==até 15°== | até 9° |\n| Leve | 15° a 20° | 9° a 11° |\n| Moderado | 20° a 40° | 11° a 16° |\n| Grave | acima de 40° | acima de 16° |\n\n- **Limite superior da normalidade do HVA:** ==15°==.\n- A alternativa **\"15 a 20°\"** contém esse limite: 15° é o corte, e até 20° é deformidade **leve**.\n\n### Outros parâmetros\n- **AAMD:** normal até ~10° a 15°.\n- **HVI** (interfalângico): normal até ~10°.\n- **Sesamoides:** posição (Hardy-Clapham, graus 1 a 7).\n- **Congruência** da MTF e **forma da cabeça**.\n\n> **Na prova:** normalidade do valgismo do hálux = até ==15°== (alternativa 15 a 20°).",
-  "correta": "**Entre 15 e 20 graus.**\n- O corte da normalidade é 15°; até 20° é deformidade leve.",
   "incorretas": {
-   "A": "**0 a 5 graus.**\n- Muito abaixo: um hálux com 10° de valgo ainda é normal.",
-   "B": "**7 a 12 graus.**\n- Ordem de grandeza do ângulo **intermetatarsal**.",
-   "D": "**25 a 30 graus.**\n- Já é deformidade **moderada**."
+   "A": "De 0 a 5 graus está muito abaixo: um dedão com 10 graus de valgo ainda é normal.",
+   "B": "De 7 a 12 graus corresponde à ordem de grandeza do ângulo intermetatarsal, e não do metatarsofalângico.",
+   "D": "De 25 a 30 graus já é uma deformidade moderada, e não o limite da normalidade."
   },
+  "conceito": "O **hálux valgo** é avaliado na radiografia do pé de frente, com o paciente em pé. Duas medidas são as principais:\n\n**Ângulo metatarsofalângico** (também chamado ângulo do hálux valgo): é o ângulo entre o eixo do primeiro metatarso e o eixo da falange do dedão. Mostra o quanto o dedão está desviado para fora.\n\n**Ângulo intermetatarsal**: é o ângulo entre o primeiro e o segundo metatarsos. Mostra o quanto o primeiro metatarso se afastou para dentro.\n\nO **limite superior da normalidade** do ângulo metatarsofalângico é de cerca de **15 graus**. Até aí, o desvio é considerado normal. Entre 15 e 20 graus, a deformidade é **leve**. De 20 a 40 graus, moderada. Acima de 40 graus, grave.\n\nPara o ângulo intermetatarsal, o normal vai até cerca de 9 graus.\n\nPor isso, a alternativa correta é a faixa de 15 a 20 graus: ela contém o limite da normalidade, 15 graus.\n\nOutras medidas complementam a avaliação: o ângulo articular metatarsal distal (a inclinação da superfície da cabeça do metatarso), o ângulo entre as falanges do dedão, a posição dos sesamoides e se a articulação está encaixada (congruente) ou não.",
+  "correta": "Entre 15 e 20 graus. O limite da normalidade do ângulo metatarsofalângico é de cerca de 15 graus.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 82"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0075": {
-  "conceito": "### O que decide o tratamento da lesão osteocondral do tálus\n**Fatores da lesão:**\n- ==tamanho==: o fator isolado mais importante. A fronteira habitual fica em ~**1 a 1,5 cm²** de área, ou ~15 mm de diâmetro (varia entre estudos);\n- **profundidade** e **cisto subcondral**;\n- **estabilidade** do fragmento (líquido na interface na RM);\n- **cronicidade**, localização (ombro do tálus, *shoulder lesion*, pior);\n- **falha** de tratamento prévio.\n\n### Algoritmo geral\n| Lesão | Opção |\n|---|---|\n| Assintomática ou estável, pouco sintomática | **conservador** (3 a 6 meses) |\n| Pequena, sintomática | **debridamento + microfratura** / perfurações (estimulação medular) |\n| Fragmento grande, viável | **fixação** |\n| Grande, cística ou falha da microfratura | **enxerto osteocondral autólogo** (OATS / mosaicoplastia), **aloenxerto**, **condrócitos autólogos (ACI / MACI)** |\n| Cisto profundo, lesão intacta | **perfuração retrógrada** com enxerto |\n\n> **Na prova:** fator decisivo = ==tamanho da lesão==.",
-  "correta": "**Tamanho da lesão.**",
   "incorretas": {
-   "A": "**Sexo.**\n- Não altera a indicação.",
-   "B": "**Genética.**\n- Sem papel estabelecido na escolha.",
-   "D": "**IMC.**\n- Pesa no resultado geral, mas não define a técnica."
+   "A": "O sexo do paciente não muda a indicação do tratamento.",
+   "B": "A genética não tem papel estabelecido na escolha do tratamento.",
+   "D": "O índice de massa corpórea pode influenciar o resultado geral, mas não define a técnica."
   },
+  "conceito": "A **lesão osteocondral do tálus** é uma lesão da cartilagem e do osso logo abaixo dela, na parte de cima do tálus. O tratamento depende de vários fatores ligados à própria lesão:\n\nO **tamanho** é o fator isolado mais importante. Lesões pequenas costumam responder bem a técnicas simples; lesões grandes precisam de técnicas mais complexas.\n\nA **profundidade** e a presença de **cistos** embaixo da lesão.\n\nA **estabilidade** do fragmento: na ressonância, líquido entre o fragmento e o osso embaixo indica que ele está solto.\n\nO tempo de evolução, a localização (lesões na borda do tálus, o \"ombro\", têm pior resultado) e a falha de tratamentos anteriores.\n\nCom base nisso, o tratamento segue uma lógica:\n\nLesões estáveis e com poucos sintomas: tratamento **sem cirurgia** por alguns meses.\n\nLesões **pequenas** com sintomas: limpeza e **microfraturas** (pequenos furos no osso que provocam a formação de um tecido de reparo).\n\n**Fragmento grande** e com osso viável: **fixação** do fragmento.\n\nLesões **grandes**, com cistos ou que falharam após microfratura: enxerto de osso com cartilagem retirado do joelho do próprio paciente, enxerto de doador ou técnicas de cultura de células de cartilagem.\n\nSexo, genética e peso do paciente não são os fatores que definem a técnica.",
+  "correta": "Tamanho da lesão. É o fator isolado mais importante para escolher entre as técnicas de tratamento.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0076": {
@@ -849,103 +849,103 @@
   "conferido": false
  },
  "pe-tornozelo-0077": {
-  "conceito": "### Pé plano flexível infantil\n- **Na grande maioria:** variação da **normalidade**, assintomática.\n- **Sinais de flexibilidade:**\n  - o arco **reaparece** na **ponta dos pés** e no **teste de Jack** (dorsiflexão do hálux);\n  - o calcâneo **inverte** na ponta dos pés.\n- **Não precisa** de palmilha nem de calçado especial, que não mudam a evolução natural.\n\n### O que o torna doloroso\n==Encurtamento do tríceps sural== (gastrocnêmio, com ou sem sóleo):\n- sem dorsiflexão no tornozelo, o pé busca movimento no **médio-pé**;\n- o arco **colapsa** mais;\n- a **fáscia** é sobrecarregada;\n- surgem **dor no arco**, no médio-pé, no calcanhar e **calosidade** sob a cabeça do tálus.\n\n### Avaliação obrigatória\n**Silfverskiöld:** dorsiflexão com o joelho **estendido** e **fletido**, com a **subtalar em neutro** (travada), para não mascarar pela pronação.\n\n### Tratamento do pé plano flexível doloroso\n1. **Alongamento** do gastrocnêmio, palmilha **de conforto**, atividade.\n2. **Cirurgia** se refratário:\n   - recessão do gastrocnêmio / alongamento do Aquiles;\n   - **alongamento da coluna lateral** (Evans / Mosca);\n   - artrorrise.\n\n> **Na prova:** pé plano flexível doloroso = contratura do ==tríceps sural==.",
-  "correta": "**Tríceps sural.**",
   "incorretas": {
-   "A": "**Fibular longo.**\n- Contraturado, plantiflete o 1º raio: **pé cavo**.",
-   "C": "**Tibial anterior.**\n- Contraído no **tálus vertical**.",
-   "D": "**Tibial posterior.**\n- No pé plano está **insuficiente**, não contraído."
+   "A": "O fibular longo contraído abaixa o primeiro metatarso, o que está ligado ao pé cavo.",
+   "C": "O tibial anterior fica contraído no tálus vertical congênito.",
+   "D": "No pé plano, o tibial posterior tende a estar insuficiente, e não contraído."
   },
+  "conceito": "O **pé plano flexível** é muito comum em crianças e, na grande maioria das vezes, é uma **variação do normal**, sem sintomas. Ele é chamado de flexível porque o arco **reaparece** quando a criança fica na ponta dos pés ou quando se estende o dedão (teste de Jack), e o calcanhar vira para dentro. Esse pé **não precisa** de palmilha nem de calçado especial, que não mudam a evolução.\n\nO que pode tornar um pé plano flexível **doloroso** é o **encurtamento do tríceps sural**, o conjunto do gastrocnêmio e do sóleo, que forma o tendão de Aquiles.\n\nA explicação é mecânica. Durante a marcha, o tornozelo precisa subir (dorsiflexão) para o corpo passar por cima do pé. Se o tríceps está encurtado e o tornozelo não sobe o suficiente, o pé busca esse movimento **no médio-pé**. O arco desaba ainda mais, a fáscia plantar é sobrecarregada, e aparecem dor no arco, no médio-pé e no calcanhar, além de calo sob a cabeça do tálus.\n\nPor isso, toda criança com pé plano deve ser examinada com o **teste de Silfverskiöld**: mede-se quanto o tornozelo sobe com o joelho esticado e com o joelho dobrado, mantendo a subtalar travada em posição neutra. Se melhora ao dobrar o joelho, o encurtado é o gastrocnêmio.\n\nO tratamento do pé plano flexível doloroso começa com alongamento do tríceps e palmilhas de conforto. Se não melhorar, a cirurgia pode incluir o alongamento do gastrocnêmio ou do tendão de Aquiles e outras correções do pé.",
+  "correta": "Tríceps sural. O encurtamento limita a dorsiflexão do tornozelo, e o pé compensa no médio-pé, desabando o arco e doendo.",
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 19"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0078": {
-  "conceito": "### Turf toe\n- **Estrutura lesada:** ==placa plantar== (complexo **capsuloligamentar plantar**) da **1ª MTF**. Os **sesamoides** estão embutidos nesse complexo.\n- **Mecanismo:** **carga axial** com o antepé apoiado e o hálux em ==hiperdorsiflexão== (o atleta é empurrado ou cai sobre o calcanhar do pé fixo).\n- **Fatores:** **grama sintética** e **calçado flexível**.\n- **Esportes:** futebol americano, futebol.\n\n### Classificação (Anderson / Clanton)\n| Grau | Lesão | Conduta |\n|---|---|---|\n| I | estiramento | RICE; palmilha rígida (Morton); retorno rápido |\n| II | ruptura **parcial** | imobilização; afastamento de semanas |\n| III | ruptura **completa**; **migração proximal dos sesamoides**; possível fratura / diástase | frequentemente **cirúrgico** (reparo da placa) |\n\n### Imagem\n- **Radiografia comparativa** com carga ou estresse em dorsiflexão: sesamoides **migrados proximalmente** indicam ruptura completa.\n- **RM.**\n\n### Mecanismo inverso: sand toe\n**Hiperflexão plantar** do hálux (lesão dorsal), típica do vôlei de praia.\n\n> **Na prova:** turf toe = ==placa plantar, hiperdorsiflexão com carga axial==.",
-  "correta": "**Placa plantar, por carga axial com o antepé em dorsiflexão** (hiperextensão do hálux).",
   "incorretas": {
-   "A": "**Sesamoide, dorsiflexão.**\n- O mecanismo está certo.\n- A lesão que define o turf toe é a **placa plantar**; os sesamoides podem ser acometidos junto.",
-   "B": "**Sesamoide, flexão plantar.**\n- Os dois itens estão errados.\n- Flexão plantar forçada é o **sand toe**.",
-   "D": "**Placa plantar, flexão plantar.**\n- A estrutura está certa; o mecanismo, errado."
+   "A": "O mecanismo está certo, mas a estrutura que define o turf toe é a placa plantar; os sesamoides podem ser acometidos junto.",
+   "B": "Erra os dois: a lesão é da placa plantar, e a flexão plantar forçada causa o sand toe.",
+   "D": "A placa plantar está certa, mas o mecanismo é a hiperdorsiflexão, e não a flexão plantar."
   },
+  "conceito": "O **turf toe** é uma lesão do atleta na **articulação da base do dedão** (a primeira metatarsofalângica). A estrutura lesada é a **placa plantar**, o conjunto de cápsula e ligamentos que fica embaixo dessa articulação e onde estão embutidos os dois ossos sesamoides.\n\nO mecanismo é uma **carga axial** sobre o pé apoiado com o dedão em **hiperdorsiflexão** (dobrado para cima ao extremo). Acontece, por exemplo, quando o atleta está com a ponta do pé fixa no chão e alguém cai sobre a parte de trás da sua perna, ou quando ele cai sobre o calcanhar com os dedos presos. A grama sintética, que dá muita aderência, e chuteiras com sola flexível aumentam o risco. É comum no futebol americano e no futebol.\n\nA lesão é graduada:\n\n**Grau I**: estiramento. Tratamento com gelo, repouso e uma palmilha rígida, com retorno rápido.\n\n**Grau II**: ruptura parcial. Imobilização e afastamento por algumas semanas.\n\n**Grau III**: ruptura completa, com os sesamoides **migrando para trás** (puxados pelos tendões, sem a placa para segurá-los). Muitas vezes precisa de cirurgia para reparar a placa.\n\nUma radiografia comparando com o outro pé, às vezes com o dedão forçado para cima, mostra a migração dos sesamoides. A ressonância avalia a extensão da lesão.\n\nO mecanismo oposto, com o dedão forçado para baixo, causa uma lesão do lado de cima da articulação chamada *sand toe*, típica do vôlei de praia.",
+  "correta": "Na placa plantar e o mecanismo de lesão é a carga axial com antepé em dorsiflexão. A hiperdorsiflexão do dedão sob carga rompe a placa plantar.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 89"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0079": {
-  "conceito": "### Testes do complexo lateral\n| Ligamento | Função | Teste |\n|---|---|---|\n| ==Talofibular anterior== (LTFA) | resiste à **translação anterior** e à inversão em **flexão plantar** | ==gaveta anterior== (tornozelo em ~10° a 20° de flexão plantar; tracionar o calcâneo para frente; comparar com o outro lado) |\n| Calcaneofibular (LCF) | resiste à inversão em **neutro / dorsiflexão** | **inclinação talar** (talar tilt), estresse em varo |\n| Talofibular posterior | o mais **forte** | raramente rompe (só em luxação) |\n\n### Gaveta\n- **Sinal da sucção** (\"sulco\" anterolateral) reforça a positividade.\n- Translação **acima de ~3 a 5 mm** em relação ao outro lado, ou acima de 10 mm absoluta, sugere lesão (valores variam).\n- **Gaveta anterolateral** (rotação interna): mais sensível que a clássica.\n\n### Ordem de lesão\nLTFA (o mais frequente, cerca de 2/3 isolado), depois **LCF**. O **LTFP** é raramente lesado.\n\n### Exame tardio\n**4 a 7 dias** após a entorse, menos dor e edema e **mais acurácia** (van Dijk).\n\n> **Na prova:** gaveta anterior = ==talofibular anterior==.",
-  "correta": "**Fibulotalar anterior.**",
   "incorretas": {
-   "A": "**Fibulocalcâneo.**\n- Testado pela **inclinação talar** (varo).",
-   "C": "**Fibulotalar posterior.**\n- O mais resistente; lesado só em luxações.",
-   "D": "**Deltoide anterior.**\n- Complexo **medial**; eversão e rotação externa."
+   "A": "O fibulocalcâneo (calcaneofibular) segura a inversão com o tornozelo em neutro. Ele é testado pela inclinação talar, não pela gaveta.",
+   "C": "O fibulotalar posterior é o mais resistente do complexo lateral e quase só rompe em luxações. Ele não impede o deslizamento anterior do tálus.",
+   "D": "O deltoide é o ligamento do lado de dentro (medial) do tornozelo, lesado em mecanismos de eversão e rotação externa. A gaveta anterior da entorse em inversão avalia o lado lateral."
   },
+  "conceito": "A entorse comum do tornozelo acontece quando o pé \"vira para dentro\", num movimento de **inversão** com o pé apontado para baixo (**flexão plantar**). Quem sofre são os ligamentos do lado de fora, o chamado **complexo ligamentar lateral**, formado por três ligamentos que saem da fíbula (o osso fino da perna, cuja ponta forma o maléolo lateral):\n\n**Talofibular anterior**, também chamado **fibulotalar anterior**: liga a fíbula ao tálus pela frente. É o mais fraco e o primeiro a romper, sendo lesado na grande maioria das entorses. Sua função principal é impedir que o tálus **escorregue para frente** dentro do encaixe do tornozelo, sobretudo com o pé em flexão plantar.\n\n**Calcaneofibular**, ou **fibulocalcâneo**: liga a fíbula ao calcâneo. Rompe nas entorses mais fortes, depois do talofibular anterior. Ele segura a **inversão** com o tornozelo em posição neutra.\n\n**Talofibular posterior**: o mais forte dos três. Só rompe em traumas graves, como a luxação do tornozelo.\n\n**Como se faz a gaveta anterior**: com o paciente sentado e a perna relaxada, o examinador segura a tíbia com uma mão e, com a outra, puxa o calcanhar para frente, com o pé em leve flexão plantar. Se o tálus avança mais do que no lado sadio, o teste é positivo. Às vezes aparece uma pequena depressão na pele da frente e de lado do tornozelo, o **sinal da sucção**. Como a gaveta testa justamente o deslizamento anterior do tálus, ela avalia o **talofibular anterior**.\n\nJá o calcaneofibular é avaliado pelo **teste da inclinação talar** (talar tilt), em que se força o calcanhar em varo (para dentro) e se observa se o tálus \"abre\" dentro do encaixe.\n\n**Na prova**: gaveta anterior positiva é lesão do talofibular anterior; inclinação talar aumentada sugere lesão associada do calcaneofibular. Um detalhe prático: logo depois da entorse, a dor e o inchaço atrapalham o exame. Reexaminar alguns dias depois dá um resultado mais confiável.",
+  "correta": "Fibulotalar anterior, o mesmo talofibular anterior. É o ligamento que impede o tálus de deslizar para frente, exatamente o movimento que a gaveta anterior provoca.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 90"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0080": {
-  "conceito": "### Osteotomia de Cotton\n- **Técnica:** cunha de **adição** com **abertura dorsal** no **cuneiforme medial**.\n- **Efeito:** empurra a coluna medial para baixo:\n  - ==flexão plantar da cabeça do 1º metatarso==;\n  - ==pronação do antepé==.\n- **Indicação:** **supinatus (antepé varo) residual** após a correção do retropé no **pé plano**. A borda medial fica **elevada** depois de medializar o calcâneo e alongar a coluna lateral.\n- **Requisito:** 1ª TMT **estável**. Se houver instabilidade ou artrose, fazer **artrodese** (1ª TMT ou naviculocuneiforme).\n\n### Par oposto: osteotomia dorsiflexora da base do 1º metatarso\n- Cunha de **subtração dorsal**.\n- **Eleva** a cabeça do 1º metatarso e **supina** o antepé.\n- Usada no **pé cavo** (1º raio plantifletido).\n\n| Osteotomia | 1º raio | Antepé | Pé |\n|---|---|---|---|\n| ==Cotton== (adição dorsal no cuneiforme) | ==flexão plantar== | ==pronação== | plano |\n| Dorsiflexora da base do 1º metatarso | dorsiflexão | supinação | cavo |\n\n> **Na prova:** Cotton = ==flexão plantar do 1º raio + pronação do antepé==.",
-  "correta": "**Flexão plantar da cabeça do primeiro metatarso e pronação do antepé.**",
   "incorretas": {
-   "A": "**Dorsal e pronação.**\n- A dorsiflexão do 1º raio é o efeito da osteotomia do **pé cavo**.",
-   "B": "**Dorsal e supinação.**\n- Os dois efeitos estão invertidos.",
-   "D": "**Plantar e supinação.**\n- Baixar a borda medial é **pronar** o antepé."
+   "A": "Abrir a cunha no cuneiforme abaixa a cabeça do metatarso, não a levanta. Levantar o 1º raio (dorsiflexão) é o objetivo das osteotomias do pé cavo.",
+   "B": "Os dois efeitos estão invertidos. Dorsiflexão do 1º raio com supinação do antepé é o que se busca no pé cavo, o oposto da Cotton.",
+   "D": "A flexão plantar está certa, mas abaixar a borda medial do antepé é pronação. Supinação é justamente a deformidade que a Cotton corrige."
   },
+  "conceito": "Para entender a osteotomia de Cotton, é preciso primeiro entender o problema que ela resolve.\n\nNo **pé plano do adulto**, o retropé cai em valgo (o calcanhar vira para fora) e o arco desaba. Com o tempo, o antepé se adapta: a borda de dentro do pé, do lado do hálux, fica **levantada** em relação à borda de fora. Esse giro do antepé é chamado de **supinação do antepé**, ou **antepé varo**. Quando o cirurgião corrige o calcanhar (por exemplo, com uma osteotomia que desloca o calcâneo para medial), essa supinação fica evidente: o pé apoia na borda de fora e a cabeça do 1º metatarso não encosta no chão.\n\nA **osteotomia de Cotton** corrige isso. O cirurgião corta o **cuneiforme medial**, o osso do mediopé que fica atrás do 1º metatarso, e **abre** o corte por cima, encaixando ali uma cunha de osso (enxerto). Abrir em cima faz a frente do osso descer. Com isso, o 1º metatarso inteiro é inclinado para baixo:\n\na cabeça do 1º metatarso faz **flexão plantar** (desce em direção ao chão);\n\no antepé gira com a borda medial para baixo, o que se chama **pronação**.\n\nO resultado é um tripé de apoio de novo equilibrado: calcanhar, cabeça do 1º metatarso e cabeça do 5º metatarso.\n\nUm requisito importante: a articulação entre o cuneiforme medial e o 1º metatarso precisa estar **estável**. Se ela estiver frouxa ou com artrose, o mais indicado é fundi-la (artrodese), e não fazer a Cotton.\n\nVale conhecer o raciocínio oposto. No **pé cavo**, o 1º metatarso está apontado demais para baixo, e a correção é uma osteotomia na base dele que retira uma cunha de cima, **levantando** a cabeça do metatarso (dorsiflexão) e supinando o antepé.\n\n**Na prova**: Cotton é cunha de abertura no cuneiforme medial, que causa flexão plantar do 1º raio e pronação do antepé, para tratar a supinação residual do pé plano.",
+  "correta": "Flexão plantar da cabeça do primeiro metatarso e pronação do antepé. A cunha aberta em cima abaixa o 1º raio e gira a borda medial do antepé para baixo, corrigindo a supinação do pé plano.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 83"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0082": {
-  "conceito": "### Teste de McBride\n- **Manobra:** ==varizar== o hálux passivamente, tentando trazê-lo ao eixo do 1º metatarso.\n- **Pergunta que responde:** o hálux valgo é **redutível**?\n\n### Se não alinha\n**Estruturas laterais encurtadas:**\n- ==cápsula lateral==;\n- ligamento **metatarsossesamoide lateral**;\n- **adutor do hálux**.\n\n**Consequência cirúrgica:** é preciso **liberação lateral**, feita por via dorsal no 1º espaço ou transarticular. Sem ela, a correção tende a **recidivar**.\n\n### Cuidado\n- **Liberação excessiva** (sobretudo a excisão do **sesamoide lateral**, do McBride original) leva a **hálux varo** iatrogênico.\n- Hoje a liberação é **mais conservadora**.\n\n### Distratores\n- **Sesamoides lateralizados:** achado **radiográfico** (Hardy-Clapham).\n- **Artrose da MTF:** dor e perda de arco.\n- **Abdutor do hálux:** traciona para **medial**.\n\n> **Na prova:** McBride = ==varizar o hálux==; não alinhar indica ==retração capsular lateral==.",
-  "correta": "**Varização do hálux; a falta de alinhamento indica retração capsular lateral.**",
   "incorretas": {
-   "A": "**Varização; luxação sesamoidal.**\n- A manobra está certa.\n- A posição dos sesamoides é avaliada na **radiografia**.",
-   "C": "**Valgização; artrose.**\n- Valgizar **acentua** a deformidade.\n- Artrose dá dor e perda de arco.",
-   "D": "**Valgização; espasmo do abdutor.**\n- O abdutor puxa para **medial** (hálux varo)."
+   "A": "A manobra está certa, mas a posição dos sesamoides não se avalia com esse teste. O deslocamento dos sesamoides é visto na radiografia, e a resistência à correção vem das partes moles laterais retraídas.",
+   "C": "Valgizar o hálux seria acentuar a deformidade, não testar se ela corrige. E a artrose da articulação se manifesta com dor e perda do movimento, não com falta de alinhamento nesse teste.",
+   "D": "A manobra está errada (o teste variza, não valgiza) e o músculo também: o abdutor do hálux puxa o dedo para dentro, então não seria ele a impedir a correção de um desvio para fora."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "No **hálux valgo** (o popular \"joanete\"), o dedão desvia para fora, na direção do segundo dedo. Antes de operar, o cirurgião quer saber: essa deformidade ainda é **flexível** ou já ficou **presa**? O **teste de McBride** responde a essa pergunta.\n\n**Como se faz**: o examinador segura o hálux e o empurra passivamente para dentro, ou seja, faz uma **varização**, tentando alinhá-lo com o eixo do 1º metatarso.\n\n**Como interpretar**: se o hálux alinha com facilidade, a deformidade é redutível. Se ele **não alinha**, algo do lado de fora (lateral) da articulação está encurtado e segurando o dedo desviado. Com o tempo de deformidade, as estruturas laterais da articulação metatarsofalângica do hálux se retraem:\n\na **cápsula articular lateral**, o envoltório da articulação;\n\no ligamento que liga o metatarso ao **sesamoide lateral** (os sesamoides são dois ossinhos embaixo da cabeça do 1º metatarso, dentro dos tendões);\n\no músculo **adutor do hálux**, que puxa o dedão para fora.\n\nA consequência cirúrgica é que essas estruturas precisam ser **liberadas** durante a correção (a chamada liberação lateral). Sem isso, a deformidade tende a voltar. O nome do teste vem de McBride, autor de uma cirurgia clássica de partes moles para o hálux valgo que fazia essa liberação. Liberar demais, porém, pode levar ao problema oposto, o **hálux varo**, com o dedo desviado para dentro.\n\n**Na prova**: McBride é varizar o hálux; se não alinha, há retração das partes moles laterais, principalmente da cápsula.",
+  "correta": "Varização do hálux; a falta de alinhamento indica retração capsular lateral. As partes moles do lado de fora, encurtadas pela deformidade antiga, impedem que o dedo volte ao eixo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0083": {
-  "conceito": "### Face anterior do tornozelo, de medial para lateral\n1. **Tibial anterior.**\n2. **Extensor longo do hálux** (ELH).\n3. **Feixe neurovascular:** artéria tibial anterior + nervo **fibular profundo**.\n4. **Extensor longo dos dedos** (ELD).\n5. Fibular terceiro.\n\n(O feixe cruza **por baixo** do ELH perto da interlinha; mais distalmente fica entre o ELH e o 1º tendão do ELD.)\n\n### Janela tibial anterior / ELH\n- O plano fica **medial** ao feixe.\n- O feixe vai ==para lateral==, com o ELH e o ==ELD==.\n- **Usos:** **artroplastia total** e **pilão**.\n- **Cuidados:**\n  - preservar a **bainha do tibial anterior**, para não expor o tendão se a ferida abrir;\n  - proteger o **fibular superficial** no subcutâneo.\n\n### Janela ELH / ELD\nO feixe é afastado **medialmente**, com o ELH.\n\n> **Na prova:** janela tibial anterior / ELH = feixe ==lateral, com o ELD==.",
-  "correta": "**Lateralmente, com o tendão extensor longo dos dedos.**",
   "incorretas": {
-   "A": "**Lateralmente com o tibial anterior.**\n- O tibial anterior é o tendão mais **medial**.",
-   "B": "**Medialmente com o tibial anterior.**\n- O feixe fica **lateral** à janela.",
-   "D": "**Medialmente com o ELD.**\n- O ELD é lateral ao feixe."
+   "A": "O tibial anterior é o tendão mais medial. Ele é afastado para medial, e o feixe não pode ir junto com ele para o lado de fora.",
+   "B": "O tibial anterior vai para medial, mas o feixe não o acompanha: o feixe está do lado de fora da janela e é afastado para lateral.",
+   "D": "O extensor longo dos dedos fica lateral ao feixe, então os dois são afastados para lateral, não para medial."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Para entender qualquer acesso pela frente do tornozelo, basta memorizar a ordem das estruturas que passam ali, de dentro (medial) para fora (lateral):\n\n1. tendão do **tibial anterior**, o mais grosso e o mais medial;\n2. tendão do **extensor longo do hálux**, que levanta o dedão;\n3. o **feixe neurovascular**: a artéria tibial anterior (que no pé vira a artéria dorsal do pé, aquela do pulso pedioso) e o **nervo fibular profundo**;\n4. tendões do **extensor longo dos dedos**, que levantam os outros dedos;\n5. o fibular terceiro, quando presente.\n\nUma frase ajuda a lembrar: \"**Tom, Harry, And Nervous Dick**\" (Tibial, Hallucis, Artéria, Nervo, Digitorum).\n\nNo **acesso anteromedial** descrito na questão, o cirurgião entra pela janela entre o **tibial anterior** e o **extensor longo do hálux**. Como o feixe neurovascular fica do lado de fora dessa janela, a dissecção avança medialmente a ele, e o feixe é **afastado para lateral**, junto com o extensor longo do hálux e o **extensor longo dos dedos**. Assim ele fica protegido o tempo todo.\n\nEsse acesso anterior é usado, por exemplo, em **artroplastia total do tornozelo** e em fraturas da tíbia distal. Dois cuidados práticos: preservar a bainha do tibial anterior, para que o tendão não fique exposto se a ferida abrir, e proteger o **nervo fibular superficial**, que passa no tecido logo abaixo da pele.\n\nSe a janela fosse entre o extensor longo do hálux e o extensor longo dos dedos, o raciocínio inverteria: o feixe estaria perto, e normalmente é afastado para medial.\n\n**Na prova**: na janela tibial anterior e extensor longo do hálux, o feixe vai para lateral, com o extensor longo dos dedos.",
+  "correta": "Lateralmente, com o tendão extensor longo dos dedos. O feixe fica do lado de fora da janela, então é levado para lateral junto com os extensores.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0085": {
-  "conceito": "### Acesso de Gatellier e Chastang\n- **O que é:** via **posterolateral transfibular**.\n  1. **Osteotomia da fíbula distal.**\n  2. O fragmento é **rebatido** com os ligamentos inseridos.\n  3. Exposição ampla da porção **posterolateral** da tróclea do ==tálus== e da tíbia distal.\n  4. Ao final, a fíbula é **reduzida e fixada**.\n- **Usos clássicos:**\n  - **lesão osteocondral** posterolateral do tálus, de difícil alcance;\n  - fraturas do **maléolo posterior**.\n\n### Hoje\nCompete com vias menos agressivas:\n- **artroscopia posterior** (portais posterolateral e posteromedial, de van Dijk);\n- **acesso posterolateral** sem osteotomia;\n- osteotomia do **maléolo medial**, para lesões **mediais**.\n\n### Acesso às lesões do tálus por localização\n| Lesão | Opções |\n|---|---|\n| Anterior (lateral ou medial) | artroscopia anterior; artrotomia anterior |\n| Posteromedial (profunda) | artroscopia; **osteotomia do maléolo medial** |\n| Posterolateral | artroscopia posterior; **Gatellier-Chastang** (transfibular) |\n\n> **Na prova:** Gatellier-Chastang = acesso ao ==tálus== (transfibular).",
-  "correta": "**Tálus.**",
   "incorretas": {
-   "B": "**Fêmur.**\n- A via não alcança o fêmur.",
-   "C": "**Joelho.**\n- A osteotomia é da fíbula **distal**.",
-   "D": "**Calcâneo.**\n- Acessado pela via lateral estendida, pelo seio do tarso ou por vias mediais."
+   "B": "O acesso é feito no tornozelo, cortando a ponta da fíbula. Ele não chega ao fêmur, que fica na coxa.",
+   "C": "O joelho fica longe do campo dessa via. A osteotomia é da fíbula distal, junto ao tornozelo, e não da parte de cima da perna.",
+   "D": "O calcâneo, o osso do calcanhar, é abordado por outras vias, como a lateral pelo seio do tarso. A via transfibular expõe o tálus, que fica acima do calcâneo."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **osteocondrite dissecante**, hoje mais chamada de **lesão osteocondral**, é uma lesão da cartilagem e do osso logo abaixo dela, em que um fragmento pode se soltar parcialmente ou por completo. No tornozelo, ela acontece na cúpula do **tálus**, o osso que se encaixa entre a tíbia e a fíbula.\n\nO problema é o acesso. A cúpula do tálus fica escondida dentro do encaixe formado pelos dois maléolos, e as lesões da parte **posterior** são especialmente difíceis de alcançar pela frente.\n\nO **acesso de Gatellier e Chastang** é uma via **posterolateral** que resolve isso de forma clássica: o cirurgião faz uma **osteotomia da fíbula distal** (corta a ponta da fíbula) e a rebate, ainda presa aos ligamentos. Isso abre uma janela ampla para a parte posterolateral do tálus e da tíbia. No final, a fíbula é recolocada e fixada. Além da lesão osteocondral, a via também foi usada para fraturas do maléolo posterior.\n\nHoje, muitas dessas lesões são tratadas por **artroscopia** (cirurgia por pequenos portais com câmera), inclusive pela parte de trás do tornozelo. Lesões da parte medial e posterior do tálus que não podem ser alcançadas de outra forma podem exigir a osteotomia do **maléolo medial**. Mas o nome Gatellier-Chastang segue ligado ao tálus e à fíbula distal.\n\n**Na prova**: Gatellier e Chastang é acesso transfibular ao tálus.",
+  "correta": "Tálus. A osteotomia da fíbula distal expõe a cúpula posterolateral do tálus, onde ficam lesões osteocondrais de difícil alcance.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0086": {
-  "conceito": "### Fratura do pilão tibial: acessos\n**Princípio:** primeiro as **partes moles**. **Fixador externo em ponte** (com ou sem fixação da fíbula), depois fixação definitiva em ~**7 a 21 dias**, quando surgem as rugas na pele (\"**sinal da ruga**\").\n\n| Acesso | Exposição | Prós e contras |\n|---|---|---|\n| ==Anteromedial== | ==maior área== da superfície articular | pele **fina**, subcutânea; **deiscência** e exposição do implante |\n| Anterolateral | Chaput (anterolateral), superfície central | **melhor cobertura**; risco ao **fibular superficial** |\n| Posteromedial | fragmento posteromedial | janela restrita; feixe tibial posterior |\n| Posterolateral | fragmento de **Volkmann** e fíbula | janela restrita |\n\n### Fragmentos típicos\n- **Medial.**\n- **Anterolateral (Chaput).**\n- **Posterolateral (Volkmann).**\n\n### Classificações\n- **Rüedi-Allgöwer** (I a III).\n- **AO 43.**\n\n### Ponte cutânea\nA recomendação clássica é de **7 cm** entre incisões; hoje se aceita menos com bom planejamento.\n\n> **Na prova:** maior exposição da tíbia distal = ==anteromedial==.",
-  "correta": "**Anteromedial.**",
   "incorretas": {
-   "A": "**Anterolateral.**\n- Melhor cobertura, mas expõe menos e alcança mal o fragmento medial.",
-   "C": "**Posteromedial.**\n- Janela restrita ao fragmento posteromedial.",
-   "D": "**Posterolateral.**\n- Volkmann e fíbula; exposição limitada."
+   "A": "O anterolateral tem melhor cobertura de partes moles e é bom para o fragmento de Chaput, mas alcança mal a parte medial e expõe uma área menor.",
+   "C": "O posteromedial dá acesso apenas aos fragmentos de trás e de dentro, com uma janela pequena para a superfície articular.",
+   "D": "O posterolateral serve ao fragmento posterolateral (Volkmann) e à fíbula, mas também tem visão limitada da superfície articular."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **fratura do pilão tibial** é a fratura da parte de baixo da tíbia que inclui a **superfície articular** que apoia sobre o tálus, o \"teto\" do tornozelo. Ela costuma acontecer por **carga axial** de alta energia, como queda de altura ou acidente de carro, quando o tálus é empurrado para cima como um pilão socando a tíbia.\n\nO grande problema dessa fratura são as **partes moles**. A pele da frente do tornozelo é fina e incha muito. Por isso o tratamento costuma ser feito em etapas: primeiro um **fixador externo** que mantém o comprimento e o alinhamento, e só depois de a pele melhorar (quando volta a enrugar, o chamado **sinal da ruga**) faz-se a fixação definitiva com placas.\n\nA escolha do acesso depende de onde estão os fragmentos, e os principais são:\n\n**Anteromedial**: passa ao lado do tibial anterior. Oferece a **maior exposição** da superfície articular da tíbia distal, e permite ver e reconstruir tanto a parte medial quanto boa parte da central. A desvantagem é que a pele ali é fina, colada ao osso, e corre risco de abrir e expor a placa.\n\n**Anterolateral**: dá acesso ao fragmento da frente e de fora (o fragmento de **Chaput**) e tem melhor cobertura de partes moles, mas o **nervo fibular superficial** passa ali.\n\n**Posteromedial** e **posterolateral**: servem para fragmentos de trás, como o posterolateral (fragmento de **Volkmann**), e para a fíbula, mas a janela para a superfície articular é limitada.\n\nNa prática, muitas vezes se combinam acessos, respeitando uma boa distância (uma \"ponte de pele\") entre as incisões para não comprometer a circulação da pele.\n\n**Na prova**: maior área visível da tíbia distal é o acesso anteromedial.",
+  "correta": "Anteromedial. É a via que expõe a maior parte da superfície articular da tíbia distal, ao preço de uma pele mais frágil.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0087": {
@@ -960,25 +960,26 @@
   "conferido": false
  },
  "pe-tornozelo-0088": {
-  "conceito": "### Articulação de Lisfranc (tarsometatársica)\n**A ausência que importa:** ==não existe ligamento intermetatarsal entre a base do 1º e a do 2º metatarso==.\n\n### Estabilidade\n- **Base do 2º metatarso encaixada** (recuada) entre os cuneiformes medial e lateral: a \"**pedra angular**\" do arco transverso.\n- **Ligamento de Lisfranc:**\n  - vai do **cuneiforme medial** à base do **2º metatarso**;\n  - é **plantar-interósseo** e o **mais forte** do complexo.\n\n### Colunas\n| Coluna | Ossos | Mobilidade |\n|---|---|---|\n| Medial | **cuneiforme medial + 1º metatarso** | pequena |\n| Intermédia | cuneiformes intermédio e lateral + **2º e 3º** metatarsos | **mínima** (a mais rígida) |\n| Lateral | **cuboide + 4º e 5º** metatarsos | **móvel**; não se deve artrodesar (fixar temporariamente) |\n\n### Lesão\n- **Sinais:**\n  - **equimose plantar** no médio-pé;\n  - **diástase** entre o 1º e o 2º metatarso;\n  - **sinal do floco** (fleck sign): avulsão do ligamento de Lisfranc.\n- **Imagem:** radiografia **com carga** comparativa, TC.\n\n> **Na prova:** Lisfranc = ==sem ligamento intermetatarsal entre o 1º e o 2º metatarso==.",
-  "correta": "**Não existe ligamento intermetatarsal entre o primeiro e o segundo metatarso.**",
   "incorretas": {
-   "A": "**Coluna lateral = cuboide + 5º metatarso.**\n- Inclui também o **4º** metatarso.",
-   "C": "**Ligamento do cuneiforme intermédio ao 1º metatarso.**\n- Vai do cuneiforme **medial** ao **2º** metatarso.",
-   "D": "**Coluna medial com o 1º e o 2º metatarsos.**\n- A medial é só o cuneiforme medial + 1º metatarso."
+   "A": "A coluna lateral é formada pelo cuboide com o 4º e o 5º metatarsos. A alternativa esquece o 4º metatarso.",
+   "C": "O ligamento de Lisfranc vai do cuneiforme medial à base do 2º metatarso. A alternativa troca os dois ossos.",
+   "D": "A coluna medial é só o cuneiforme medial com o 1º metatarso. O 2º metatarso e o cuneiforme intermédio pertencem à coluna intermédia."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **articulação de Lisfranc** é o conjunto das articulações **tarsometatársicas**, onde os cinco metatarsos se encaixam nos ossos do mediopé (os três cuneiformes e o cuboide).\n\n**O detalhe anatômico mais cobrado**: os metatarsos do 2º ao 5º são unidos entre si, na base, por ligamentos intermetatarsais. Mas **entre a base do 1º e a do 2º metatarso não existe esse ligamento**. É exatamente esse \"ponto fraco\" que explica por que a lesão de Lisfranc aparece como um afastamento (diástase) entre o 1º e o 2º metatarso.\n\nQuem fecha essa brecha é o **ligamento de Lisfranc**, um ligamento forte que vai do **cuneiforme medial** à base do **2º metatarso**, passando por dentro e por baixo (é um ligamento interósseo e plantar). Ele é o mais forte desse complexo.\n\nOutro elemento de estabilidade: a base do **2º metatarso** fica recuada, encaixada como uma chave entre os cuneiformes medial e lateral. É a \"pedra angular\" do arco transverso do pé.\n\n**As três colunas** ajudam a entender a mobilidade e a cirurgia:\n\n**Medial**: cuneiforme medial e 1º metatarso.\n\n**Intermédia**: cuneiformes intermédio e lateral, com o 2º e o 3º metatarsos. É a mais rígida.\n\n**Lateral**: cuboide com o 4º e o 5º metatarsos. É a mais móvel e importante para a acomodação do pé, por isso não se costuma fundi-la.\n\nA lesão de Lisfranc pode passar despercebida. Sinais de alerta são a **equimose (mancha roxa) na planta do mediopé**, o afastamento entre o 1º e o 2º metatarso na radiografia **com carga** e o **sinal do floco** (fleck sign), um pequeno fragmento de osso arrancado pelo ligamento.\n\n**Na prova**: não há ligamento intermetatarsal entre o 1º e o 2º metatarso; o ligamento de Lisfranc vai do cuneiforme medial ao 2º metatarso.",
+  "correta": "Não existe ligamento intermetatarsal entre o primeiro e o segundo metatarso. Essa ausência é o ponto frágil da região, compensado pelo ligamento de Lisfranc.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0089": {
-  "conceito": "### Clanton e McGarvey\nClassificação da instabilidade lateral do tornozelo com **dois eixos**:\n- **Tipo (I, II, III):** gravidade **mecânica**, da instabilidade só funcional até a instabilidade mecânica importante.\n- **Grupo (1 ou 2):** **demanda** do paciente. **Grupo 1:** não atleta / recreativo. **Grupo 2:** **atleta** competitivo.\n\n### O caso da questão\n==\"II grupo 1\"== = tornozelo com **instabilidade** (tipo II) em paciente **não atleta**. É a única alternativa com a leitura coerente dos dois eixos.\n\n### Para que serve\nIndividualizar a conduta. A mesma instabilidade pesa mais para a **reconstrução** no atleta (grupo 2) que no sedentário.\n\n### Instabilidade crônica: conceitos gerais\n- **Mecânica:** frouxidão objetiva (gaveta, inclinação talar).\n- **Funcional:** sensação de falseio, **déficit proprioceptivo** e fibular, mesmo sem frouxidão.\n- **Tratamento:**\n  - **reabilitação** (propriocepção, fibulares) primeiro;\n  - na falha, **Broström-Gould**;\n  - **reconstrução com enxerto** nos casos de tecido ruim, revisão ou hiperfrouxidão.\n- **Investigar lesões associadas:**\n  - lesão osteocondral;\n  - **fibulares**;\n  - impacto;\n  - **cavovaro** (osteotomia de Dwyer, se presente).\n\n> **Na prova:** \"II grupo 1\" = ==instável, não atleta==.",
-  "correta": "**\"II grupo 1\": tornozelo instável em paciente não atleta.**",
   "incorretas": {
-   "A": "**\"I grupo 2\" como estável em atleta.**\n- O tipo I não é um tornozelo simplesmente estável; envolve queixa funcional.",
-   "B": "**\"I grupo 1\" como estável em não atleta.**\n- Idem: o tipo I ainda implica instabilidade funcional.",
-   "D": "**\"III grupo 2\" em não atleta.**\n- O grupo **2** é o do **atleta**."
+   "A": "O grupo 2 é mesmo o do atleta, mas a classificação descreve tornozelos com instabilidade. Nenhum tipo corresponde a um tornozelo simplesmente estável.",
+   "B": "O grupo 1 é o não atleta, mas, de novo, o tipo I não descreve um tornozelo estável. É uma classificação de instabilidade, em que o tipo I é a forma mais leve.",
+   "D": "O grupo 2 é o do atleta, não o do não atleta. A alternativa erra a leitura do grupo."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Depois de uma entorse, parte dos pacientes fica com o tornozelo **instável**, com a sensação de que o pé \"falseia\" ou vira com facilidade. Essa instabilidade pode ser de dois tipos:\n\n**Mecânica**: existe frouxidão objetiva, que o médico consegue demonstrar no exame (gaveta anterior, inclinação talar) ou em radiografias com estresse.\n\n**Funcional**: o paciente sente o falseio, mas sem frouxidão evidente, por falha do controle muscular e da propriocepção (a percepção da posição da articulação).\n\nA **classificação de Clanton e McGarvey** organiza esses pacientes em dois eixos ao mesmo tempo, combinados na forma \"tipo e grupo\":\n\n**Tipo**, em algarismo romano (I, II, III): indica o grau da instabilidade, do mais leve ao mais grave.\n\n**Grupo**, em número arábico (1 ou 2): indica a **demanda** do paciente. O **grupo 1** é o paciente **não atleta**, e o **grupo 2** é o **atleta**.\n\nA ideia é que a conduta não depende só do grau da lesão, mas também de quem é o paciente. A mesma instabilidade pesa muito mais para um atleta competitivo do que para alguém sedentário, e isso influencia a decisão de operar.\n\nNa questão, \"II grupo 1\" é um tornozelo **instável** em paciente **não atleta**, a única leitura coerente dos dois eixos.\n\nSobre o tratamento da instabilidade crônica em geral: começa-se com **reabilitação** (fortalecimento dos fibulares e treino de propriocepção). Se falhar, a cirurgia mais usada é o reparo anatômico dos ligamentos (técnica de **Broström**, reforçada pela modificação de **Gould**). Reconstrução com enxerto fica para tecidos ruins ou revisões. Também é preciso procurar problemas associados, como lesão osteocondral do tálus, lesão dos tendões fibulares e pé cavovaro.",
+  "alerta": "A classificação de Clanton e McGarvey é pouco citada nos livros-texto, e as definições exatas de cada tipo variam entre as fontes. O gabarito oficial foi mantido; o ponto seguro para a prova é que o grupo 1 é o não atleta e o grupo 2 é o atleta.",
+  "correta": "\"II grupo 1\": tornozelo instável em paciente não atleta. O tipo II indica instabilidade e o grupo 1 indica um paciente sem demanda esportiva.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "pe-tornozelo-0090": {
