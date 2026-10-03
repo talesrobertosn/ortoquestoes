@@ -1,4 +1,4 @@
-import { useEffect, useId, useMemo, useState, type ReactNode } from 'react'
+import { useEffect, useId, useState, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { Medalha } from './Medalha'
 import { Icone } from './Icone'
@@ -162,18 +162,7 @@ export function Inventario({ metricas, nome, vitrine, salvarVitrine, podeEscolhe
   const [escolhendo, definirEscolhendo] = useState(false)
   // Vindo de um atalho "escolher emblemas" (ranking, conta), a janela já abre.
   useEffect(() => { if (abrirEscolha && podeEscolher) definirEscolhendo(true) }, [abrirEscolha, podeEscolher])
-  const conquistadas = useMemo(() => EMBLEMAS.filter((e) => desbloqueado(e, metricas)).length, [metricas])
-  const total = EMBLEMAS.length
-  return <section className="cartao cartao__corpo inv" aria-labelledby="inv-titulo">
-    <div className="inv__topo">
-      <div>
-        <p className="meta">INVENTÁRIO</p>
-        <h2 id="inv-titulo">Conquistas</h2>
-        <p className="texto-2"><strong className="numerico">{conquistadas}</strong> de {total} desbloqueadas</p>
-      </div>
-      <span className="inv__total" aria-hidden="true"><span style={{ width: `${Math.round((conquistadas / total) * 100)}%` }} /></span>
-    </div>
-
+  return <section className="cartao cartao__corpo inv" aria-label="Seus emblemas">
     <button type="button" className="inv-jogador" onClick={() => definirEscolhendo(true)} disabled={!podeEscolher}
       aria-label={podeEscolher ? `${nome}: escolher emblemas da vitrine` : nome}>
       <span className="inv-jogador__nome">{nome}</span>

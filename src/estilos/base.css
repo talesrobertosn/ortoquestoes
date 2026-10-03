@@ -1869,3 +1869,5 @@ kbd {
 @media (hover: none) and (pointer: coarse) {
   input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]), select, select.entrada, .campo select, textarea { font-size: 16px !important; }
 }
+.backup-progresso__restaurar { cursor: pointer; }
+.backup-progresso__restaurar:focus-within { outline: 2px solid var(--verdete); outline-offset: 2px; }

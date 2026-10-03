@@ -98,38 +98,6 @@ export function Revisao() {
         <div><dt>Mais revisões em</dt><dd className="rv-heroi__tema">{temaFragil?.[0] ?? 'nenhum tema'}</dd></div>
       </dl>
     </section>
-    <section className="cartao cartao__corpo rv-ritmo" aria-labelledby="rv-ritmo-titulo">
-      <div className="rv-ritmo__cabeca">
-        <h2 id="rv-ritmo-titulo">Seu ritmo</h2>
-        <p>Quando vencem mais revisões do que cabem no dia, o excedente passa para os próximos dias, começando pelas que você errou. Nenhuma se perde.</p>
-      </div>
-      <div className="rv-ritmo__grupo">
-        <span className="tr-grupo__rotulo">Revisões por dia</span>
-        <div className="tr-pilulas">{TETOS.map(limite => <button key={String(limite)} type="button" className="tr-pilula" aria-pressed={ritmo.limite === limite} onClick={() => definirRitmo({ ...ritmo, limite })}>{limite === null ? 'Sem teto' : `até ${limite}`}</button>)}</div>
-      </div>
-      <div className="rv-ritmo__grupo">
-        <span className="tr-grupo__rotulo">Dias sem revisão</span>
-        <div className="tr-pilulas">{DIAS_SEMANA.map((d, i) => <button key={d} type="button" className="tr-pilula" aria-pressed={ritmo.folgas.includes(i)} onClick={() => alternarFolga(i)}>{d}</button>)}</div>
-        <p className="rv-ritmo__nota">Bom para os dias de plantão. O que venceria neles passa para o dia seguinte.</p>
-      </div>
-    </section>
-    <section className="cartao cartao__corpo rv-regra">
-      <div className="rv-regra__cabeca">
-        <h2>Quando cada questão volta</h2>
-        <p>Depende de como você respondeu. Acertou também na última revisão? Ela sai da fila.</p>
-      </div>
-      <div className="rv-escadas">{ESCADAS.map(e => <div key={e.rotulo} className={`rv-escada rv-escada--${e.nivel}`}>
-        <div className="rv-escada__topo">
-          <span className="rv-escada__icone"><Icone nome={e.icone} tamanho={16} /></span>
-          <strong>{e.rotulo}</strong>
-          <small>{e.nota}</small>
-        </div>
-        <ol className="rv-escada__trilha" aria-label={`Volta em ${e.dias.join(', ')} dias`}>{e.dias.map(d => <li key={d}><span aria-hidden="true" /><em>{rotuloIntervalo(d)}</em></li>)}</ol>
-      </div>)}</div>
-      <p className="rv-regra__erro"><Icone nome="reiniciar" tamanho={16} /> <span><strong>Errou?</strong> Ela volta hoje e o ciclo recomeça.</span></p>
-      {incertas > 0 && <a className="rv-regra__link" href="#/treinar?situacao=incertas">Refazer as {incertas} que respondi com dúvida ou chute <Icone nome="direita" tamanho={16} /></a>}
-      <a className="rv-regra__link" href="#/erros">Abrir meu caderno de erros <Icone nome="direita" tamanho={16} /></a>
-    </section>
     <section className="cartao cartao__corpo">
       <div className="entre">
         <div><p className="meta">CALENDÁRIO DE CARGA</p><h2>{capitalizar(FORMATO_MES.format(mesExibido))}</h2></div>
@@ -154,5 +122,40 @@ export function Revisao() {
       </div>
     </section>
     <section className="cartao cartao__corpo revisao-detalhe"><p className="meta">{rotuloDia(selecionado)}</p><h2>{dia?.ids.length ? `${dia.ids.length} questões programadas` : 'Nenhuma revisão programada'}</h2>{dia?.ids.length ? <><p>{dia.inicio === hoje && dia.atrasadas ? `${dia.atrasadas} vencidas foram trazidas para hoje. ` : dia.inicio > hoje && dia.redistribuidas ? `${dia.redistribuidas} vieram de dias anteriores pelo seu ritmo. ` : ''}Acerto histórico: {dia.tentativas ? Math.round(dia.acertos/dia.tentativas*100) : 0}%.</p><div className="chips">{[...dia.temas.entries()].sort((a,b)=>b[1]-a[1]).map(([tema,n])=><span key={tema}>{tema} · {n}</span>)}</div><div className="linha"><button className="botao botao--principal" onClick={()=>iniciarIds(dia.ids)}>Revisar este dia</button><button className="botao" onClick={()=>iniciarIds(dia.ids.slice(0,10))}>Dia leve · 10</button></div></> : <p className="texto-2">Escolha outro dia no calendário ou avance com novas questões.</p>}</section>
+    <details className="cartao cartao__corpo rv-ritmo rv-recolhivel">
+      <summary className="rv-ritmo__cabeca">
+        <span><h2>Seu ritmo</h2>
+        <p>{ritmo.limite === null ? 'Sem teto diário' : `Até ${ritmo.limite} por dia`} · {ritmo.folgas.length ? `folga ${ritmo.folgas.map(i => DIAS_SEMANA[i]).join(', ')}` : 'sem dias de folga'}</p></span>
+        <Icone nome="baixo" tamanho={18} />
+      </summary>
+      <p className="rv-ritmo__nota">Quando vencem mais revisões do que cabem no dia, o excedente passa para os próximos dias, começando pelas que você errou. Nenhuma se perde.</p>
+      <div className="rv-ritmo__grupo">
+        <span className="tr-grupo__rotulo">Revisões por dia</span>
+        <div className="tr-pilulas">{TETOS.map(limite => <button key={String(limite)} type="button" className="tr-pilula" aria-pressed={ritmo.limite === limite} onClick={() => definirRitmo({ ...ritmo, limite })}>{limite === null ? 'Sem teto' : `até ${limite}`}</button>)}</div>
+      </div>
+      <div className="rv-ritmo__grupo">
+        <span className="tr-grupo__rotulo">Dias sem revisão</span>
+        <div className="tr-pilulas">{DIAS_SEMANA.map((d, i) => <button key={d} type="button" className="tr-pilula" aria-pressed={ritmo.folgas.includes(i)} onClick={() => alternarFolga(i)}>{d}</button>)}</div>
+        <p className="rv-ritmo__nota">Bom para os dias de plantão. O que venceria neles passa para o dia seguinte.</p>
+      </div>
+    </details>
+    <details className="cartao cartao__corpo rv-regra rv-recolhivel">
+      <summary className="rv-regra__cabeca">
+        <span><h2>Quando cada questão volta</h2>
+        <p>Depende de como você respondeu. Acertou também na última revisão? Ela sai da fila.</p></span>
+        <Icone nome="baixo" tamanho={18} />
+      </summary>
+      <div className="rv-escadas">{ESCADAS.map(e => <div key={e.rotulo} className={`rv-escada rv-escada--${e.nivel}`}>
+        <div className="rv-escada__topo">
+          <span className="rv-escada__icone"><Icone nome={e.icone} tamanho={16} /></span>
+          <strong>{e.rotulo}</strong>
+          <small>{e.nota}</small>
+        </div>
+        <ol className="rv-escada__trilha" aria-label={`Volta em ${e.dias.join(', ')} dias`}>{e.dias.map(d => <li key={d}><span aria-hidden="true" /><em>{rotuloIntervalo(d)}</em></li>)}</ol>
+      </div>)}</div>
+      <p className="rv-regra__erro"><Icone nome="reiniciar" tamanho={16} /> <span><strong>Errou?</strong> Ela volta hoje e o ciclo recomeça.</span></p>
+      {incertas > 0 && <a className="rv-regra__link" href="#/treinar?situacao=incertas">Refazer as {incertas} que respondi com dúvida ou chute <Icone nome="direita" tamanho={16} /></a>}
+      <a className="rv-regra__link" href="#/erros">Abrir meu caderno de erros <Icone nome="direita" tamanho={16} /></a>
+    </details>
   </div>
 }

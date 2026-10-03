@@ -28,7 +28,7 @@ const RECURSOS: { icone: NomeIcone; titulo: string; texto: string; destino: stri
   { icone: 'grafico', titulo: 'Temas que mais caem', texto: 'O ranking das áreas e dos assuntos mais cobrados. Um toque em qualquer assunto e começa o treino dele.', destino: '/temas-que-mais-caem' },
   { icone: 'grupo', titulo: 'Como a turma respondeu', texto: 'Depois de cada questão, quantos marcaram cada alternativa e qual é a pegadinha. E sessões com as que a turma mais erra.', destino: '/treinar' },
   { icone: 'medalha', titulo: 'Liga da residência', texto: 'Um ranking privado do seu serviço. Crie a liga, mande o link no grupo e veja quem mais estuda.', destino: '/ligas' },
-  { icone: 'correio', titulo: 'Relatório do mês', texto: 'Todo dia 1º, no seu e-mail: quantas questões, acerto, temas que subiram e caíram e o próximo passo.', destino: '/conta' },
+  { icone: 'correio', titulo: 'Relatório do mês', texto: 'Todo dia 1º, no seu e-mail: quantas questões, acerto, temas que subiram e caíram e o próximo passo.', destino: '/conta?secao=estudo' },
 ]
 
 /** O que vem com qualquer plano, listado embaixo do preço. */

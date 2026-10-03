@@ -511,7 +511,8 @@ export function DadosLocais() {
 
       <BackupProgresso />
 
-      {conta && <section className="zona-risco cartao__corpo empilha">
+      {/* O reinício está sendo refeito: o bloco só aparece se houver um reinício pendente de sincronizar. */}
+      {conta && reinicioPendente && <section className="zona-risco cartao__corpo empilha">
         <p className="meta"><Icone nome="alerta" tamanho={15} /> ZONA DE RISCO</p>
         <h2>Começar do zero <span className="dp-embreve">Em breve</span></h2>
         <p className="texto-2">Esta opção está sendo refeita e volta em breve. Enquanto isso, use o <strong>Período</strong> lá em cima para acompanhar só a fase atual do seu estudo: o acerto, os temas e a confiança passam a contar a partir da data que você escolher, sem apagar nada.</p>

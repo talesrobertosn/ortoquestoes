@@ -30,9 +30,16 @@ const ROTULOS_STATUS = {
   erro: 'Não foi possível sincronizar agora. Seu progresso continua neste navegador; tente novamente.', conflito: 'Há alterações simultâneas para conferir abaixo.',
 }
 const ROTULOS_TIPO = { respondidas: 'Resposta', notas: 'Anotação', favoritos: 'Favorita', historico: 'Sessão' }
+const SECOES_CONTA = [['perfil', 'usuario', 'Perfil'], ['assinatura', 'medalha', 'Assinatura'], ['estudo', 'livro', 'Estudo'], ['ranking', 'trofeu', 'Ranking'], ['seguranca', 'cadeado', 'Segurança'], ['dados', 'baixar', 'Dados']] as const
+type SecaoConta = (typeof SECOES_CONTA)[number][0]
+
 export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const { sessao, recuperacao, encerrarRecuperacao, status, sincronizar, resolver, reenviarRejeitados, descartarRejeitados } = usarConta()
   const modoInicial = consulta?.get('modo')
+  const [secao, definirSecao] = useState<SecaoConta>(() => {
+    const pedida = consulta?.get('secao')
+    return SECOES_CONTA.some(([id]) => id === pedida) ? pedida as SecaoConta : 'perfil'
+  })
   const [modo, definirModo] = useState<'entrar' | 'criar' | 'recuperar'>(
     modoInicial === 'criar' || modoInicial === 'recuperar' ? modoInicial : 'entrar',
   )
@@ -350,13 +357,14 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     </section>}
 
     <div className="ct-corpo">
+    {/* Uma seção por vez: a navegação troca o que aparece, em vez de rolar uma página longa. */}
     <nav className="ct-nav" aria-label="Seções da conta">
-      {([['perfil', 'usuario', 'Perfil'], ['assinatura', 'medalha', 'Assinatura'], ['estudo', 'livro', 'Estudo'], ['ranking', 'trofeu', 'Ranking'], ['seguranca', 'cadeado', 'Segurança'], ['dados', 'baixar', 'Dados']] as const).map(([id, icone, rotulo]) => (
-        <a key={id} href={`#ct-${id}`} onClick={(e) => { e.preventDefault(); document.getElementById(`ct-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}><Icone nome={icone} tamanho={16} /> {rotulo}</a>
+      {SECOES_CONTA.map(([id, icone, rotulo]) => (
+        <a key={id} href={href(`/conta?secao=${id}`)} aria-current={secao === id ? 'page' : undefined} onClick={(e) => { e.preventDefault(); definirSecao(id) }}><Icone nome={icone} tamanho={16} /> {rotulo}</a>
       ))}
     </nav>
     <div className="ct-grade">
-      <section id="ct-perfil" className="ct-cartao ct-cartao--largo">
+      {secao === 'perfil' && <section id="ct-perfil" className="ct-cartao ct-cartao--largo">
         <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="usuario" tamanho={18} /></span><div><h2>Meu perfil</h2><p>Personaliza sua experiência. Seu contato nunca é exibido publicamente.</p></div></header>
         <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} /></label><label className="campo">Sobrenome<input className="entrada" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
         <div className="linha-campos linha-campos--2"><label className="campo">Data de nascimento<input className="entrada" type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label><label className="campo">Você é <select className="entrada" value={situacao} onChange={e => definirSituacao(e.target.value)}><option value="">Escolha uma opção</option><option value="residente">Residente de ortopedia</option><option value="ortopedista">Ortopedista</option><option value="outro">Outro profissional ou estudante</option></select></label></div>
@@ -365,9 +373,9 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         <div className="linha-campos linha-campos--2"><label className="campo"><span>UF <span className="meta">(opcional)</span></span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'].map(sigla => <option key={sigla}>{sigla}</option>)}</select></label><label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o OrtoQuestões</label></div>
         <p className="texto-2">WhatsApp, cidade e UF são opcionais. Usamos seus dados de perfil para personalizar sua experiência e nunca exibimos seu contato publicamente.</p>
         <button className="botao botao--principal" type="button" onClick={salvarPerfil} disabled={salvandoPerfil}>{salvandoPerfil ? 'Salvando…' : 'Salvar perfil'}</button>
-      </section>
-      <div id="ct-assinatura" className="ct-ancora"><ResumoAssinatura /></div>
-      <section id="ct-estudo" className="ct-cartao">
+      </section>}
+      {secao === 'assinatura' && <div id="ct-assinatura" className="ct-ancora"><ResumoAssinatura /></div>}
+      {secao === 'estudo' && <section id="ct-estudo" className="ct-cartao">
         <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="livro" tamanho={18} /></span><div><h2>Preferências de estudo</h2><p>Leitura, tema e meta de revisão.</p></div></header>
         <div className="ct-opcao"><span className="ct-opcao__rotulo">Revisões por dia</span><div className="ct-seg" aria-label="Revisões por dia">{([15, 20, 30, 50, null] as const).map(limite => <button type="button" key={String(limite)} aria-pressed={ritmo.limite === limite} onClick={() => definirRitmo({ ...ritmo, limite })}>{limite === null ? 'Sem teto' : `${limite}/dia`}</button>)}</div></div>
         <div className="ct-opcao"><span className="ct-opcao__rotulo">Densidade da leitura</span><div className="ct-seg">{([['confortavel', 'Confortável'], ['compacta', 'Compacta'], ['foco', 'Foco']] as const).map(([valor, rotulo]) => <button key={valor} type="button" aria-pressed={densidade === valor} onClick={() => definirDensidade(valor)}>{rotulo}</button>)}</div></div>
@@ -376,8 +384,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         <label className="ct-interruptor"><input type="checkbox" checked={mostrarEtiquetas} onChange={e => definirEtiquetas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Mostrar a etiqueta do assunto antes de responder</span></label>
         {emailsConquistas !== null && <label className="ct-interruptor"><input type="checkbox" checked={emailsConquistas} onChange={e => void trocarEmailsConquistas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber e-mail de parabéns quando eu desbloquear um emblema</span></label>}
         {relatorioMensal !== null && <label className="ct-interruptor"><input type="checkbox" checked={relatorioMensal} onChange={e => void trocarRelatorioMensal(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber o relatório do mês por e-mail (evolução, temas que subiram e caíram, próximo passo)</span></label>}
-      </section>
-      <section id="ct-ranking" className="ct-cartao">
+      </section>}
+      {secao === 'ranking' && <section id="ct-ranking" className="ct-cartao">
         <header className="ct-cartao__cabeca"><span className="ct-icone ct-icone--ouro"><Icone nome="trofeu" tamanho={18} /></span><div><h2>Ranking</h2><p>Conta questões respondidas, não acerto.</p></div></header>
         {!rankingCarregado ? <p className="texto-2">Carregando…</p> : <>
           <div className={'ct-status' + (perfilRanking.participa && respondidasConta >= MINIMO_RANKING ? ' ct-status--ativo' : '')}>
@@ -407,8 +415,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           </a>
           <p className="ct-nota">Deixe o apelido em branco para aparecer com o seu nome e a inicial do sobrenome. E-mail, WhatsApp e cidade nunca aparecem.</p>
         </>}
-      </section>
-      <section id="ct-seguranca" className="ct-cartao">
+      </section>}
+      {secao === 'seguranca' && <section id="ct-seguranca" className="ct-cartao">
         <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="alerta" tamanho={18} /></span><div><h2>Segurança</h2><p>Trocar o e-mail exige confirmação pelo novo endereço.</p></div></header>
         <form className="empilha" onSubmit={e => void trocarSenha(e)}>
           <label className="campo">Nova senha<input className="entrada" type="password" autoComplete="new-password" minLength={8} required value={novaSenha} onChange={e => definirNovaSenha(e.target.value)} /></label>
@@ -419,12 +427,12 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         <label className="campo">Novo e-mail<input className="entrada" type="email" value={novoEmail} onChange={e => definirNovoEmail(e.target.value)} placeholder="novo@email.com" /></label>
         <div className="linha"><button className="botao botao--principal" type="button" onClick={() => void trocarEmail()} disabled={ocupado || !novoEmail.trim()}>Trocar e-mail</button></div>
         <p className="ct-nota">Conta criada em {new Date(sessao.user.created_at).toLocaleDateString('pt-BR')}. Quer apagar tudo? <a href={href('/contato?assunto=exclusao-conta')}>Solicitar exclusão da conta</a>.</p>
-      </section>
-      <section id="ct-dados" className="ct-cartao">
+      </section>}
+      {secao === 'dados' && <section id="ct-dados" className="ct-cartao">
         <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="baixar" tamanho={18} /></span><div><h2>Dados e backup</h2><p>Exporte seu progresso ou comece do zero.</p></div></header>
         <p className="texto-2">Respostas, revisões, favoritas, anotações e histórico ficam na sua conta e acompanham você em qualquer aparelho. A sessão em andamento fica neste dispositivo.</p>
         <div className="linha"><a className="botao" href={href('/dados')}>Desempenho e backup</a><a className="botao botao--fantasma" href={href('/revisao')}>Minha revisão</a></div>
-      </section>
+      </section>}
     </div>
     </div>
 
