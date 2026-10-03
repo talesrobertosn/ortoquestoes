@@ -8,6 +8,7 @@ import { navegar } from '../util/rotas'
 import { gerarId } from '../util/id'
 import { retornoAuth, definirAvisoConta, textoErroLink, validarRetornoUmaVez } from './retornoAuth'
 import { concluirGoogle, textoErroGoogle } from './google'
+import { aplicarConviteRecebido, conferirMinhaIndicacao } from './indicacao'
 import { esquecerRegistroAparelho, vigiarAparelho } from './aparelho'
 import { verificarMarcoEmail } from './emailsMarco'
 import { ler } from '../estado/armazenamento'
@@ -110,8 +111,17 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
   // Tudo enviado ao servidor: é a hora de ver se um emblema novo pede e-mail de parabéns.
   useEffect(() => {
     if (!sessao?.user.id || status.estado !== 'salvo' || status.pendentes > 0) return
-    void verificarMarcoEmail(Object.keys(ler<Record<string, unknown>>('respondidas', {})).length)
+    const respondidas = Object.keys(ler<Record<string, unknown>>('respondidas', {})).length
+    void verificarMarcoEmail(respondidas)
+    void conferirMinhaIndicacao(sessao.user.id, respondidas)
   }, [sessao?.user.id, status.estado, status.pendentes])
+  // Convite de indicação guardado antes de criar a conta: usa assim que entrar.
+  useEffect(() => {
+    if (!sessao?.user.id) return
+    void aplicarConviteRecebido().then((r) => {
+      if (r === 'ok') definirAvisoConta('Convite aceito. Responda 20 questões e você e quem te convidou ganham 7 dias do plano completo.')
+    })
+  }, [sessao?.user.id])
   // Uma conta, um aparelho por vez: ver conta/aparelho.ts.
   useEffect(() => {
     const cliente = supabase
